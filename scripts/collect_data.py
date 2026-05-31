@@ -506,14 +506,28 @@ def enrich_with_dart(results):
                 equity       = get_amount("자본총계")
                 liabilities  = get_amount("부채총계")
 
-                # 진단: 삼성전자 재무제표 전체 행 덤프
+                # 진단: 삼성전자 분기별 순이익 (TTM 계산용)
                 if ticker == "005930":
-                    debug_info["samsung_finstate"] = [
-                        {"nm": str(r["account_nm"]),
-                         "thstrm": str(r.get("thstrm_amount", "")),
-                         "frmtrm": str(r.get("frmtrm_amount", ""))}
-                        for _, r in fs.iterrows()
-                    ]
+                    def ni_of(yr, reprt):
+                        try:
+                            q = dart.finstate(ticker, yr, reprt)
+                            if q is None or q.empty:
+                                return None
+                            r = q[q["account_nm"].str.contains("당기순이익", na=False)]
+                            if r.empty:
+                                return None
+                            return int(str(r.iloc[0].get("thstrm_amount", "0")).replace(",", "") or 0)
+                        except Exception:
+                            return None
+                    cur_y = datetime.date.today().year
+                    debug_info["samsung_quarterly"] = {
+                        "FY연간(2025,11011)_총NI": net_income,
+                        f"Q1({cur_y},11013)": ni_of(cur_y, "11013"),
+                        f"반기({cur_y},11012)": ni_of(cur_y, "11012"),
+                        f"Q1({cur_y-1},11013)": ni_of(cur_y - 1, "11013"),
+                        f"반기({cur_y-1},11012)": ni_of(cur_y - 1, "11012"),
+                        f"3Q({cur_y-1},11014)": ni_of(cur_y - 1, "11014"),
+                    }
 
             roe  = round(net_income / equity * 100, 1) if equity > 0 else 0.0
             opm  = round(op_profit / revenue * 100, 1) if revenue > 0 else 0.0
