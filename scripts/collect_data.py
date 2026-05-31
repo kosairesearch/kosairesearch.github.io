@@ -427,24 +427,34 @@ def get_dart_controlling_equity(dart, ticker, debug_info, dump=False):
             fa = dart.finstate_all(ticker, yr, reprt, fs_div="CFS")
             if fa is None or fa.empty:
                 return 0
-            best = 0
+            controlling = 0   # 지배기업 소유주지분 (직접 행)
+            equity_total = 0  # 자본총계 (정확히 일치)
+            noncontrol = 0    # 비지배지분
             for _, r in fa.iterrows():
-                nm = str(r.get("account_nm", ""))
+                nm = str(r.get("account_nm", "")).strip()
                 sj = str(r.get("sj_div", ""))
-                if sj == "BS" and "지배" in nm and "소유" in nm:
-                    v = safe_int(r.get("thstrm_amount", 0))
-                    if dump:
-                        debug_info.setdefault("equity_cands", []).append(
-                            {"yr": yr, "reprt": reprt, "nm": nm, "amt": str(r.get("thstrm_amount", ""))})
-                    best = max(best, v)
-            # 지배지분 행이 없으면 자본총계(BS) 사용
-            if best == 0:
-                for _, r in fa.iterrows():
-                    nm = str(r.get("account_nm", ""))
-                    sj = str(r.get("sj_div", ""))
-                    if sj == "BS" and "자본총계" in nm:
-                        best = max(best, safe_int(r.get("thstrm_amount", 0)))
-            return best
+                if sj != "BS":
+                    continue
+                v = safe_int(r.get("thstrm_amount", 0))
+                nm_compact = nm.replace(" ", "")
+                if "지배" in nm and "소유" in nm:           # 지배기업 소유주지분
+                    controlling = max(controlling, v)
+                elif "비지배" in nm:                         # 비지배지분
+                    noncontrol = max(noncontrol, v)
+                elif nm_compact == "자본총계":               # 자본총계(정확히) — 부채와자본총계 제외
+                    equity_total = max(equity_total, v)
+            # 우선순위: 지배지분 직접 행 > (자본총계 - 비지배지분) > 자본총계
+            if controlling > 0:
+                result = controlling
+            elif equity_total > 0:
+                result = equity_total - noncontrol
+            else:
+                result = 0
+            if dump:
+                debug_info.setdefault("equity_calc", []).append(
+                    {"yr": yr, "reprt": reprt, "controlling": controlling,
+                     "equity_total": equity_total, "noncontrol": noncontrol, "result": result})
+            return result
         except Exception as e:
             if "equity_error" not in debug_info:
                 debug_info["equity_error"] = f"{type(e).__name__}: {e}"
