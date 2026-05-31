@@ -439,36 +439,55 @@ def collect_pykrx(date):
 
 
 def get_dart_shares(dart, ticker, debug_info):
-    """DART 주식총수 현황에서 보통주 발행주식총수(상장주식수)를 가져옵니다."""
+    """DART 주식총수 현황 API를 직접 호출해 보통주 발행주식총수(상장주식수)를 가져옵니다."""
+    import requests
+
+    corp_code = dart.find_corp_code(ticker)
+    if not corp_code:
+        if "share_no_corp" not in debug_info:
+            debug_info["share_no_corp"] = ticker
+        return 0
+
+    # 사업보고서(11011) → 3분기(11014) → 반기(11012) → 1분기(11013) 순으로 시도
     for year in (datetime.date.today().year - 1, datetime.date.today().year - 2):
-        try:
-            df = dart.report(ticker, "주식총수", year)
-            if df is None or df.empty:
-                continue
+        for reprt in ("11011", "11014", "11012", "11013"):
+            try:
+                url = "https://opendart.fss.or.kr/api/stockTotqySttus.json"
+                params = {
+                    "crtfc_key": DART_API_KEY,
+                    "corp_code": corp_code,
+                    "bsns_year": str(year),
+                    "reprt_code": reprt,
+                }
+                jo = requests.get(url, params=params, timeout=20).json()
 
-            if "share_cols" not in debug_info:
-                debug_info["share_cols"] = [str(c) for c in df.columns]
-                debug_info["share_sample"] = [
-                    {str(k): str(v) for k, v in df.iloc[i].items()} for i in range(min(3, len(df)))
-                ]
+                if "first_status" not in debug_info:
+                    debug_info["first_status"] = {
+                        "ticker": ticker, "year": year, "reprt": reprt,
+                        "status": jo.get("status"), "message": jo.get("message"),
+                    }
 
-            # 보통주식 행 우선, 없으면 합계 행
-            sel = df[df["se"].astype(str).str.contains("보통", na=False)] if "se" in df.columns else df
-            if sel.empty and "se" in df.columns:
-                sel = df[df["se"].astype(str).str.contains("합계", na=False)]
-            if sel.empty:
-                sel = df
+                if jo.get("status") != "000" or "list" not in jo:
+                    continue
 
-            row = sel.iloc[0]
-            # 발행주식총수 컬럼 후보 순서대로 시도
-            for col in ("istc_totqy", "isu_stock_totqy", "now_to_isu_stock_totqy", "distb_stock_co"):
-                if col in row.index:
-                    val = safe_int(row[col])
-                    if val > 0:
-                        return val
-        except Exception as e:
-            if "share_error" not in debug_info:
-                debug_info["share_error"] = f"{type(e).__name__}: {e}"
+                rows = jo["list"]
+                if "share_cols" not in debug_info and rows:
+                    debug_info["share_cols"] = list(rows[0].keys())
+                    debug_info["share_sample"] = rows[:3]
+
+                # 보통주 행 우선
+                common = [r for r in rows if "보통" in str(r.get("se", ""))]
+                total  = [r for r in rows if "합계" in str(r.get("se", ""))]
+                sel_rows = common or total or rows
+
+                for r in sel_rows:
+                    for col in ("istc_totqy", "isu_stock_totqy", "now_to_isu_stock_totqy", "distb_stock_co"):
+                        val = safe_int(r.get(col, 0))
+                        if val > 0:
+                            return val
+            except Exception as e:
+                if "share_error" not in debug_info:
+                    debug_info["share_error"] = f"{type(e).__name__}: {e}"
     return 0
 
 
