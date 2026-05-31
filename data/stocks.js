@@ -1,6 +1,6 @@
 // KOS ai — 자동 생성 데이터 파일. 직접 수정하지 마세요.
 window.KOS_LIVE_DATA = {
-  "lastUpdated": "2026-05-31 23:53",
+  "lastUpdated": "2026-06-01 00:27",
   "dataDate": "20260529",
   "stocks": [
     {
@@ -298,12 +298,12 @@ window.KOS_LIVE_DATA = {
       "change": 1.53,
       "volume": 1016209,
       "trading_value": 196026716100,
-      "mcap": 41.86,
-      "shares": 216993223,
+      "mcap": 44.55,
+      "shares": 230960969,
       "per": 33.5,
-      "pbr": 2.37,
+      "pbr": 2.52,
       "eps": 5761,
-      "bps": 81435,
+      "bps": 76510,
       "div": 0.39,
       "roe": 5.9,
       "rev": 17.0,
@@ -972,6 +972,28 @@ window.KOS_LIVE_DATA = {
       "rank": 44
     },
     {
+      "ticker": "323410",
+      "name": "카카오뱅크",
+      "market": "코스피",
+      "sector": "IT 서비스",
+      "price": 22400,
+      "change": 4.67,
+      "volume": 3705193,
+      "trading_value": 82996323200,
+      "mcap": 10.69,
+      "shares": 477011437,
+      "per": 20.1,
+      "pbr": 1.58,
+      "eps": 1113,
+      "bps": 14150,
+      "div": 2.05,
+      "roe": 7.1,
+      "rev": 4.8,
+      "opm": 21.0,
+      "debt": 1032.0,
+      "rank": 45
+    },
+    {
       "ticker": "028050",
       "name": "삼성E&A",
       "market": "코스피",
@@ -991,7 +1013,7 @@ window.KOS_LIVE_DATA = {
       "rev": -9.4,
       "opm": 8.8,
       "debt": 125.8,
-      "rank": 45
+      "rank": 46
     },
     {
       "ticker": "352820",
@@ -1013,7 +1035,7 @@ window.KOS_LIVE_DATA = {
       "rev": 17.5,
       "opm": 1.9,
       "debt": 54.5,
-      "rank": 46
+      "rank": 47
     },
     {
       "ticker": "001440",
@@ -1035,7 +1057,7 @@ window.KOS_LIVE_DATA = {
       "rev": 10.5,
       "opm": 3.5,
       "debt": 114.0,
-      "rank": 47
+      "rank": 48
     },
     {
       "ticker": "161390",
@@ -1057,7 +1079,7 @@ window.KOS_LIVE_DATA = {
       "rev": 125.3,
       "opm": 8.7,
       "debt": 87.6,
-      "rank": 48
+      "rank": 49
     },
     {
       "ticker": "000990",
@@ -1079,7 +1101,7 @@ window.KOS_LIVE_DATA = {
       "rev": 23.5,
       "opm": 19.8,
       "debt": 33.4,
-      "rank": 49
+      "rank": 50
     },
     {
       "ticker": "058470",
@@ -1101,7 +1123,7 @@ window.KOS_LIVE_DATA = {
       "rev": 33.9,
       "opm": 47.5,
       "debt": 8.3,
-      "rank": 50
+      "rank": 51
     },
     {
       "ticker": "032640",
@@ -1123,7 +1145,7 @@ window.KOS_LIVE_DATA = {
       "rev": 5.7,
       "opm": 5.8,
       "debt": 117.1,
-      "rank": 51
+      "rank": 52
     },
     {
       "ticker": "000100",
@@ -1145,7 +1167,29 @@ window.KOS_LIVE_DATA = {
       "rev": 5.7,
       "opm": 4.8,
       "debt": 36.3,
-      "rank": 52
+      "rank": 53
+    },
+    {
+      "ticker": "066970",
+      "name": "엘앤에프",
+      "market": "코스피",
+      "sector": "2차전지",
+      "price": 168300,
+      "change": -0.53,
+      "volume": 1022438,
+      "trading_value": 172076315400,
+      "mcap": 6.77,
+      "shares": 40238914,
+      "per": 11.7,
+      "pbr": 10.13,
+      "eps": 14429,
+      "bps": 16615,
+      "div": 0.0,
+      "roe": 79.0,
+      "rev": 13.0,
+      "opm": 7.3,
+      "debt": 363.1,
+      "rank": 54
     },
     {
       "ticker": "128940",
@@ -1167,7 +1211,7 @@ window.KOS_LIVE_DATA = {
       "rev": 3.5,
       "opm": 16.7,
       "debt": 50.2,
-      "rank": 53
+      "rank": 55
     },
     {
       "ticker": "036570",
@@ -1189,7 +1233,7 @@ window.KOS_LIVE_DATA = {
       "rev": -4.5,
       "opm": 1.1,
       "debt": 28.6,
-      "rank": 54
+      "rank": 56
     },
     {
       "ticker": "004020",
@@ -1211,7 +1255,7 @@ window.KOS_LIVE_DATA = {
       "rev": -2.1,
       "opm": 1.0,
       "debt": 73.6,
-      "rank": 55
+      "rank": 57
     },
     {
       "ticker": "240810",
@@ -1233,7 +1277,7 @@ window.KOS_LIVE_DATA = {
       "rev": 21.6,
       "opm": 8.1,
       "debt": 20.1,
-      "rank": 56
+      "rank": 58
     },
     {
       "ticker": "271560",
@@ -1255,7 +1299,7 @@ window.KOS_LIVE_DATA = {
       "rev": 7.3,
       "opm": 16.8,
       "debt": 17.5,
-      "rank": 57
+      "rank": 59
     },
     {
       "ticker": "004170",
@@ -1277,7 +1321,7 @@ window.KOS_LIVE_DATA = {
       "rev": 5.5,
       "opm": 6.9,
       "debt": 140.9,
-      "rank": 58
+      "rank": 60
     },
     {
       "ticker": "251270",
@@ -1299,7 +1343,7 @@ window.KOS_LIVE_DATA = {
       "rev": 6.4,
       "opm": 12.4,
       "debt": 47.4,
-      "rank": 59
+      "rank": 61
     },
     {
       "ticker": "011170",
@@ -1321,7 +1365,7 @@ window.KOS_LIVE_DATA = {
       "rev": -7.1,
       "opm": 5.1,
       "debt": 76.5,
-      "rank": 60
+      "rank": 62
     },
     {
       "ticker": "097950",
@@ -1343,7 +1387,7 @@ window.KOS_LIVE_DATA = {
       "rev": 0.4,
       "opm": 4.5,
       "debt": 157.5,
-      "rank": 61
+      "rank": 63
     },
     {
       "ticker": "357780",
@@ -1365,7 +1409,7 @@ window.KOS_LIVE_DATA = {
       "rev": 7.0,
       "opm": 14.5,
       "debt": 30.2,
-      "rank": 62
+      "rank": 64
     },
     {
       "ticker": "263750",
@@ -1387,7 +1431,7 @@ window.KOS_LIVE_DATA = {
       "rev": 6.8,
       "opm": 4.1,
       "debt": 43.8,
-      "rank": 63
+      "rank": 65
     },
     {
       "ticker": "006360",
@@ -1409,7 +1453,7 @@ window.KOS_LIVE_DATA = {
       "rev": -3.2,
       "opm": 3.5,
       "debt": 234.2,
-      "rank": 64
+      "rank": 66
     },
     {
       "ticker": "069960",
@@ -1431,7 +1475,7 @@ window.KOS_LIVE_DATA = {
       "rev": 1.0,
       "opm": 8.9,
       "debt": 78.3,
-      "rank": 65
+      "rank": 67
     },
     {
       "ticker": "011210",
@@ -1453,7 +1497,7 @@ window.KOS_LIVE_DATA = {
       "rev": 3.7,
       "opm": 2.4,
       "debt": 72.8,
-      "rank": 66
+      "rank": 68
     },
     {
       "ticker": "139480",
@@ -1475,7 +1519,7 @@ window.KOS_LIVE_DATA = {
       "rev": -0.2,
       "opm": 1.1,
       "debt": 144.6,
-      "rank": 67
+      "rank": 69
     },
     {
       "ticker": "282330",
@@ -1497,7 +1541,7 @@ window.KOS_LIVE_DATA = {
       "rev": 4.2,
       "opm": 2.8,
       "debt": 170.8,
-      "rank": 68
+      "rank": 70
     },
     {
       "ticker": "035900",
@@ -1519,7 +1563,7 @@ window.KOS_LIVE_DATA = {
       "rev": 36.6,
       "opm": 18.9,
       "debt": 36.2,
-      "rank": 69
+      "rank": 71
     },
     {
       "ticker": "322000",
@@ -1541,7 +1585,7 @@ window.KOS_LIVE_DATA = {
       "rev": 16.6,
       "opm": 8.4,
       "debt": 27.0,
-      "rank": 70
+      "rank": 72
     },
     {
       "ticker": "041510",
@@ -1563,7 +1607,7 @@ window.KOS_LIVE_DATA = {
       "rev": 18.7,
       "opm": 15.6,
       "debt": 47.8,
-      "rank": 71
+      "rank": 73
     },
     {
       "ticker": "069620",
@@ -1585,7 +1629,7 @@ window.KOS_LIVE_DATA = {
       "rev": 10.4,
       "opm": 12.5,
       "debt": 108.2,
-      "rank": 72
+      "rank": 74
     },
     {
       "ticker": "073240",
@@ -1607,7 +1651,7 @@ window.KOS_LIVE_DATA = {
       "rev": 3.7,
       "opm": 12.2,
       "debt": 147.4,
-      "rank": 73
+      "rank": 75
     },
     {
       "ticker": "000080",
@@ -1629,7 +1673,7 @@ window.KOS_LIVE_DATA = {
       "rev": -3.9,
       "opm": 6.9,
       "debt": 186.5,
-      "rank": 74
+      "rank": 76
     },
     {
       "ticker": "185750",
@@ -1651,7 +1695,7 @@ window.KOS_LIVE_DATA = {
       "rev": 6.7,
       "opm": 4.8,
       "debt": 78.9,
-      "rank": 75
+      "rank": 77
     },
     {
       "ticker": "036830",
@@ -1673,7 +1717,7 @@ window.KOS_LIVE_DATA = {
       "rev": 28.3,
       "opm": 1.6,
       "debt": 36.5,
-      "rank": 76
+      "rank": 78
     },
     {
       "ticker": "293490",
@@ -1695,7 +1739,7 @@ window.KOS_LIVE_DATA = {
       "rev": -25.9,
       "opm": 8.5,
       "debt": 123.4,
-      "rank": 77
+      "rank": 79
     },
     {
       "ticker": "122870",
@@ -1717,7 +1761,7 @@ window.KOS_LIVE_DATA = {
       "rev": 49.4,
       "opm": 13.1,
       "debt": 28.9,
-      "rank": 78
+      "rank": 80
     },
     {
       "ticker": "336370",
@@ -1739,7 +1783,7 @@ window.KOS_LIVE_DATA = {
       "rev": 7.9,
       "opm": 11.9,
       "debt": 128.5,
-      "rank": 79
+      "rank": 81
     },
     {
       "ticker": "272290",
@@ -1761,7 +1805,7 @@ window.KOS_LIVE_DATA = {
       "rev": 4.0,
       "opm": 18.6,
       "debt": 108.3,
-      "rank": 80
+      "rank": 82
     },
     {
       "ticker": "009290",
@@ -1783,7 +1827,7 @@ window.KOS_LIVE_DATA = {
       "rev": 1.1,
       "opm": 1.9,
       "debt": 85.5,
-      "rank": 81
+      "rank": 83
     },
     {
       "ticker": "000020",
@@ -1805,7 +1849,7 @@ window.KOS_LIVE_DATA = {
       "rev": 6.8,
       "opm": 0.1,
       "debt": 60.0,
-      "rank": 82
+      "rank": 84
     },
     {
       "ticker": "088390",
@@ -1827,50 +1871,6 @@ window.KOS_LIVE_DATA = {
       "rev": 5.2,
       "opm": 11.0,
       "debt": 55.8,
-      "rank": 83
-    },
-    {
-      "ticker": "323410",
-      "name": "카카오뱅크",
-      "market": "코스피",
-      "sector": "IT 서비스",
-      "price": 22400,
-      "change": 4.67,
-      "volume": 3705193,
-      "trading_value": 82996323200,
-      "mcap": 0.0,
-      "shares": 0,
-      "per": 20.1,
-      "pbr": 0.0,
-      "eps": 1113,
-      "bps": 0,
-      "div": 2.05,
-      "roe": 7.1,
-      "rev": 4.8,
-      "opm": 21.0,
-      "debt": 1032.0,
-      "rank": 84
-    },
-    {
-      "ticker": "066970",
-      "name": "엘앤에프",
-      "market": "코스피",
-      "sector": "2차전지",
-      "price": 168300,
-      "change": -0.53,
-      "volume": 1022438,
-      "trading_value": 172076315400,
-      "mcap": 0.0,
-      "shares": 0,
-      "per": 0.0,
-      "pbr": 0.0,
-      "eps": 0,
-      "bps": 0,
-      "div": 0.0,
-      "roe": 79.0,
-      "rev": 13.0,
-      "opm": 7.3,
-      "debt": 363.1,
       "rank": 85
     }
   ]
