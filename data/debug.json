@@ -16,6 +16,18 @@
     "등락률": "5.843071786310518"
   },
   "dart": {
+    "div_cols": [
+      "rcept_no",
+      "corp_cls",
+      "corp_code",
+      "corp_name",
+      "se",
+      "stock_knd",
+      "thstrm",
+      "frmtrm",
+      "lwfr",
+      "stlm_dt"
+    ],
     "first_status": {
       "year": 2025,
       "reprt": "11011",
@@ -38,18 +50,6 @@
       "istc_totqy",
       "tesstk_co",
       "distb_stock_co",
-      "stlm_dt"
-    ],
-    "div_cols": [
-      "rcept_no",
-      "corp_cls",
-      "corp_code",
-      "corp_name",
-      "se",
-      "stock_knd",
-      "thstrm",
-      "frmtrm",
-      "lwfr",
       "stlm_dt"
     ],
     "samsung_finstate": [
