@@ -1,41 +1,5 @@
 DART_KEY_SET=true (len=40)
-=== 스크립트 시작 Sun May 31 09:15:36 UTC 2026 ===
-Traceback (most recent call last):
-  File "/home/runner/work/kosairesearch.github.io/kosairesearch.github.io/scripts/collect_data.py", line 162, in collect_pykrx_bulk
-    cap = krx.get_market_cap_by_ticker(date, market=market_code)
-          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/opt/hostedtoolcache/Python/3.11.15/x64/lib/python3.11/site-packages/pykrx/stock/stock_api.py", line 32, in wrapper
-    return func(*args, **kwargs)
-           ^^^^^^^^^^^^^^^^^^^^^
-  File "/opt/hostedtoolcache/Python/3.11.15/x64/lib/python3.11/site-packages/pykrx/stock/stock_api.py", line 425, in get_market_cap_by_ticker
-    holiday = (df[["종가", "시가총액", "거래량", "거래대금"]] == 0).all(axis=None)
-               ~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/opt/hostedtoolcache/Python/3.11.15/x64/lib/python3.11/site-packages/pandas/core/frame.py", line 4119, in __getitem__
-    indexer = self.columns._get_indexer_strict(key, "columns")[1]
-              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/opt/hostedtoolcache/Python/3.11.15/x64/lib/python3.11/site-packages/pandas/core/indexes/base.py", line 6212, in _get_indexer_strict
-    self._raise_if_missing(keyarr, indexer, axis_name)
-  File "/opt/hostedtoolcache/Python/3.11.15/x64/lib/python3.11/site-packages/pandas/core/indexes/base.py", line 6261, in _raise_if_missing
-    raise KeyError(f"None of [{key}] are in the [{axis_name}]")
-KeyError: "None of [Index(['종가', '시가총액', '거래량', '거래대금'], dtype='object')] are in the [columns]"
-Traceback (most recent call last):
-  File "/home/runner/work/kosairesearch.github.io/kosairesearch.github.io/scripts/collect_data.py", line 162, in collect_pykrx_bulk
-    cap = krx.get_market_cap_by_ticker(date, market=market_code)
-          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/opt/hostedtoolcache/Python/3.11.15/x64/lib/python3.11/site-packages/pykrx/stock/stock_api.py", line 32, in wrapper
-    return func(*args, **kwargs)
-           ^^^^^^^^^^^^^^^^^^^^^
-  File "/opt/hostedtoolcache/Python/3.11.15/x64/lib/python3.11/site-packages/pykrx/stock/stock_api.py", line 425, in get_market_cap_by_ticker
-    holiday = (df[["종가", "시가총액", "거래량", "거래대금"]] == 0).all(axis=None)
-               ~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/opt/hostedtoolcache/Python/3.11.15/x64/lib/python3.11/site-packages/pandas/core/frame.py", line 4119, in __getitem__
-    indexer = self.columns._get_indexer_strict(key, "columns")[1]
-              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/opt/hostedtoolcache/Python/3.11.15/x64/lib/python3.11/site-packages/pandas/core/indexes/base.py", line 6212, in _get_indexer_strict
-    self._raise_if_missing(keyarr, indexer, axis_name)
-  File "/opt/hostedtoolcache/Python/3.11.15/x64/lib/python3.11/site-packages/pandas/core/indexes/base.py", line 6261, in _raise_if_missing
-    raise KeyError(f"None of [{key}] are in the [{axis_name}]")
-KeyError: "None of [Index(['종가', '시가총액', '거래량', '거래대금'], dtype='object')] are in the [columns]"
+=== 스크립트 시작 Sun May 31 09:23:50 UTC 2026 ===
 =======================================================
   KOS ai 데이터 수집 시작
 =======================================================
@@ -43,190 +7,13 @@ KRX 로그인 실패: KRX_ID 또는 KRX_PW 환경 변수가 설정되지 않았�
   기준일: 20260529
 
 ## KOS ai 데이터 수집 — 20260529
-  [pykrx] 20260529 데이터 수집 중...
-    [코스피] 시가총액 조회...
-Error occurred in get_market_cap_by_ticker: Expecting value: line 1 column 1 (char 0)
-    [코스피] 오류: "None of [Index(['종가', '시가총액', '거래량', '거래대금'], dtype='object')] are in the [columns]"
-    [코스닥] 시가총액 조회...
-Error occurred in get_market_cap_by_ticker: Expecting value: line 1 column 1 (char 0)
-    [코스닥] 오류: "None of [Index(['종가', '시가총액', '거래량', '거래대금'], dtype='object')] are in the [columns]"
-  [pykrx] 벌크 수집 결과: 0개 (가격 유효: 0개)
-  [pykrx] 벌크 수집 실패 → 폴백 수집 시작
-  [폴백] 개별 종목 수집 시도 중...
-Error occurred in get_market_cap_by_date: Expecting value: line 1 column 1 (char 0)
-Error occurred in get_market_fundamental_by_date: Expecting value: line 1 column 1 (char 0)
-Error occurred in get_market_cap_by_date: Expecting value: line 1 column 1 (char 0)
-Error occurred in get_market_fundamental_by_date: Expecting value: line 1 column 1 (char 0)
-Error occurred in get_market_cap_by_date: Expecting value: line 1 column 1 (char 0)
-Error occurred in get_market_fundamental_by_date: Expecting value: line 1 column 1 (char 0)
-Error occurred in get_market_cap_by_date: Expecting value: line 1 column 1 (char 0)
-Error occurred in get_market_fundamental_by_date: Expecting value: line 1 column 1 (char 0)
-Error occurred in get_market_cap_by_date: Expecting value: line 1 column 1 (char 0)
-Error occurred in get_market_fundamental_by_date: Expecting value: line 1 column 1 (char 0)
-Error occurred in get_market_cap_by_date: Expecting value: line 1 column 1 (char 0)
-Error occurred in get_market_fundamental_by_date: Expecting value: line 1 column 1 (char 0)
-Error occurred in get_market_cap_by_date: Expecting value: line 1 column 1 (char 0)
-Error occurred in get_market_fundamental_by_date: Expecting value: line 1 column 1 (char 0)
-Error occurred in get_market_cap_by_date: Expecting value: line 1 column 1 (char 0)
-Error occurred in get_market_fundamental_by_date: Expecting value: line 1 column 1 (char 0)
-Error occurred in get_market_cap_by_date: Expecting value: line 1 column 1 (char 0)
-Error occurred in get_market_fundamental_by_date: Expecting value: line 1 column 1 (char 0)
-Error occurred in get_market_cap_by_date: Expecting value: line 1 column 1 (char 0)
-Error occurred in get_market_fundamental_by_date: Expecting value: line 1 column 1 (char 0)
-Error occurred in get_market_cap_by_date: Expecting value: line 1 column 1 (char 0)
-Error occurred in get_market_fundamental_by_date: Expecting value: line 1 column 1 (char 0)
+  [pykrx] 20260529 OHLCV 데이터 수집 중...
+  [폴백] 개별 종목 OHLCV 수집 중...
 Error occurred in get_stock_name: 'NoneType' object is not subscriptable
     [102780] 오류: The truth value of a DataFrame is ambiguous. Use a.empty, a.bool(), a.item(), a.any() or a.all().
-Error occurred in get_market_cap_by_date: Expecting value: line 1 column 1 (char 0)
-Error occurred in get_market_fundamental_by_date: Expecting value: line 1 column 1 (char 0)
-Error occurred in get_market_cap_by_date: Expecting value: line 1 column 1 (char 0)
-Error occurred in get_market_fundamental_by_date: Expecting value: line 1 column 1 (char 0)
-Error occurred in get_market_cap_by_date: Expecting value: line 1 column 1 (char 0)
-Error occurred in get_market_fundamental_by_date: Expecting value: line 1 column 1 (char 0)
-Error occurred in get_market_cap_by_date: Expecting value: line 1 column 1 (char 0)
-Error occurred in get_market_fundamental_by_date: Expecting value: line 1 column 1 (char 0)
-Error occurred in get_market_cap_by_date: Expecting value: line 1 column 1 (char 0)
-Error occurred in get_market_fundamental_by_date: Expecting value: line 1 column 1 (char 0)
-Error occurred in get_market_cap_by_date: Expecting value: line 1 column 1 (char 0)
-Error occurred in get_market_fundamental_by_date: Expecting value: line 1 column 1 (char 0)
-Error occurred in get_market_cap_by_date: Expecting value: line 1 column 1 (char 0)
-Error occurred in get_market_fundamental_by_date: Expecting value: line 1 column 1 (char 0)
-Error occurred in get_market_cap_by_date: Expecting value: line 1 column 1 (char 0)
-Error occurred in get_market_fundamental_by_date: Expecting value: line 1 column 1 (char 0)
-Error occurred in get_market_cap_by_date: Expecting value: line 1 column 1 (char 0)
-Error occurred in get_market_fundamental_by_date: Expecting value: line 1 column 1 (char 0)
-Error occurred in get_market_cap_by_date: Expecting value: line 1 column 1 (char 0)
-Error occurred in get_market_fundamental_by_date: Expecting value: line 1 column 1 (char 0)
-Error occurred in get_market_cap_by_date: Expecting value: line 1 column 1 (char 0)
-Error occurred in get_market_fundamental_by_date: Expecting value: line 1 column 1 (char 0)
-Error occurred in get_market_cap_by_date: Expecting value: line 1 column 1 (char 0)
-Error occurred in get_market_fundamental_by_date: Expecting value: line 1 column 1 (char 0)
-Error occurred in get_market_cap_by_date: Expecting value: line 1 column 1 (char 0)
-Error occurred in get_market_fundamental_by_date: Expecting value: line 1 column 1 (char 0)
-Error occurred in get_market_cap_by_date: Expecting value: line 1 column 1 (char 0)
-Error occurred in get_market_fundamental_by_date: Expecting value: line 1 column 1 (char 0)
-Error occurred in get_market_cap_by_date: Expecting value: line 1 column 1 (char 0)
-Error occurred in get_market_fundamental_by_date: Expecting value: line 1 column 1 (char 0)
-Error occurred in get_market_cap_by_date: Expecting value: line 1 column 1 (char 0)
-Error occurred in get_market_fundamental_by_date: Expecting value: line 1 column 1 (char 0)
-Error occurred in get_market_cap_by_date: Expecting value: line 1 column 1 (char 0)
-Error occurred in get_market_fundamental_by_date: Expecting value: line 1 column 1 (char 0)
-Error occurred in get_market_cap_by_date: Expecting value: line 1 column 1 (char 0)
-Error occurred in get_market_fundamental_by_date: Expecting value: line 1 column 1 (char 0)
-Error occurred in get_market_cap_by_date: Expecting value: line 1 column 1 (char 0)
-Error occurred in get_market_fundamental_by_date: Expecting value: line 1 column 1 (char 0)
-Error occurred in get_market_cap_by_date: Expecting value: line 1 column 1 (char 0)
-Error occurred in get_market_fundamental_by_date: Expecting value: line 1 column 1 (char 0)
-Error occurred in get_market_cap_by_date: Expecting value: line 1 column 1 (char 0)
-Error occurred in get_market_fundamental_by_date: Expecting value: line 1 column 1 (char 0)
-Error occurred in get_market_cap_by_date: Expecting value: line 1 column 1 (char 0)
-Error occurred in get_market_fundamental_by_date: Expecting value: line 1 column 1 (char 0)
-Error occurred in get_market_cap_by_date: Expecting value: line 1 column 1 (char 0)
-Error occurred in get_market_fundamental_by_date: Expecting value: line 1 column 1 (char 0)
-Error occurred in get_market_cap_by_date: Expecting value: line 1 column 1 (char 0)
-Error occurred in get_market_fundamental_by_date: Expecting value: line 1 column 1 (char 0)
-Error occurred in get_market_cap_by_date: Expecting value: line 1 column 1 (char 0)
-Error occurred in get_market_fundamental_by_date: Expecting value: line 1 column 1 (char 0)
-Error occurred in get_market_cap_by_date: Expecting value: line 1 column 1 (char 0)
-Error occurred in get_market_fundamental_by_date: Expecting value: line 1 column 1 (char 0)
-Error occurred in get_market_cap_by_date: Expecting value: line 1 column 1 (char 0)
-Error occurred in get_market_fundamental_by_date: Expecting value: line 1 column 1 (char 0)
-Error occurred in get_market_cap_by_date: Expecting value: line 1 column 1 (char 0)
-Error occurred in get_market_fundamental_by_date: Expecting value: line 1 column 1 (char 0)
-Error occurred in get_market_cap_by_date: Expecting value: line 1 column 1 (char 0)
-Error occurred in get_market_fundamental_by_date: Expecting value: line 1 column 1 (char 0)
-Error occurred in get_market_cap_by_date: Expecting value: line 1 column 1 (char 0)
-Error occurred in get_market_fundamental_by_date: Expecting value: line 1 column 1 (char 0)
-Error occurred in get_market_cap_by_date: Expecting value: line 1 column 1 (char 0)
-Error occurred in get_market_fundamental_by_date: Expecting value: line 1 column 1 (char 0)
-Error occurred in get_market_cap_by_date: Expecting value: line 1 column 1 (char 0)
-Error occurred in get_market_fundamental_by_date: Expecting value: line 1 column 1 (char 0)
-Error occurred in get_market_cap_by_date: Expecting value: line 1 column 1 (char 0)
-Error occurred in get_market_fundamental_by_date: Expecting value: line 1 column 1 (char 0)
-Error occurred in get_market_cap_by_date: Expecting value: line 1 column 1 (char 0)
-Error occurred in get_market_fundamental_by_date: Expecting value: line 1 column 1 (char 0)
-Error occurred in get_market_cap_by_date: Expecting value: line 1 column 1 (char 0)
-Error occurred in get_market_fundamental_by_date: Expecting value: line 1 column 1 (char 0)
-Error occurred in get_market_cap_by_date: Expecting value: line 1 column 1 (char 0)
-Error occurred in get_market_fundamental_by_date: Expecting value: line 1 column 1 (char 0)
-Error occurred in get_market_cap_by_date: Expecting value: line 1 column 1 (char 0)
-Error occurred in get_market_fundamental_by_date: Expecting value: line 1 column 1 (char 0)
-Error occurred in get_market_cap_by_date: Expecting value: line 1 column 1 (char 0)
-Error occurred in get_market_fundamental_by_date: Expecting value: line 1 column 1 (char 0)
-Error occurred in get_market_cap_by_date: Expecting value: line 1 column 1 (char 0)
-Error occurred in get_market_fundamental_by_date: Expecting value: line 1 column 1 (char 0)
-Error occurred in get_market_cap_by_date: Expecting value: line 1 column 1 (char 0)
-Error occurred in get_market_fundamental_by_date: Expecting value: line 1 column 1 (char 0)
-Error occurred in get_market_cap_by_date: Expecting value: line 1 column 1 (char 0)
-Error occurred in get_market_fundamental_by_date: Expecting value: line 1 column 1 (char 0)
-Error occurred in get_market_cap_by_date: Expecting value: line 1 column 1 (char 0)
-Error occurred in get_market_fundamental_by_date: Expecting value: line 1 column 1 (char 0)
-Error occurred in get_market_cap_by_date: Expecting value: line 1 column 1 (char 0)
-Error occurred in get_market_fundamental_by_date: Expecting value: line 1 column 1 (char 0)
-Error occurred in get_market_cap_by_date: Expecting value: line 1 column 1 (char 0)
-Error occurred in get_market_fundamental_by_date: Expecting value: line 1 column 1 (char 0)
-Error occurred in get_market_cap_by_date: Expecting value: line 1 column 1 (char 0)
-Error occurred in get_market_fundamental_by_date: Expecting value: line 1 column 1 (char 0)
-Error occurred in get_market_cap_by_date: Expecting value: line 1 column 1 (char 0)
-Error occurred in get_market_fundamental_by_date: Expecting value: line 1 column 1 (char 0)
-Error occurred in get_market_cap_by_date: Expecting value: line 1 column 1 (char 0)
-Error occurred in get_market_fundamental_by_date: Expecting value: line 1 column 1 (char 0)
-Error occurred in get_market_cap_by_date: Expecting value: line 1 column 1 (char 0)
-Error occurred in get_market_fundamental_by_date: Expecting value: line 1 column 1 (char 0)
-Error occurred in get_market_cap_by_date: Expecting value: line 1 column 1 (char 0)
-Error occurred in get_market_fundamental_by_date: Expecting value: line 1 column 1 (char 0)
-Error occurred in get_market_cap_by_date: Expecting value: line 1 column 1 (char 0)
-Error occurred in get_market_fundamental_by_date: Expecting value: line 1 column 1 (char 0)
-Error occurred in get_market_cap_by_date: Expecting value: line 1 column 1 (char 0)
-Error occurred in get_market_fundamental_by_date: Expecting value: line 1 column 1 (char 0)
-Error occurred in get_market_cap_by_date: Expecting value: line 1 column 1 (char 0)
-Error occurred in get_market_fundamental_by_date: Expecting value: line 1 column 1 (char 0)
-Error occurred in get_market_cap_by_date: Expecting value: line 1 column 1 (char 0)
-Error occurred in get_market_fundamental_by_date: Expecting value: line 1 column 1 (char 0)
-Error occurred in get_market_cap_by_date: Expecting value: line 1 column 1 (char 0)
-Error occurred in get_market_fundamental_by_date: Expecting value: line 1 column 1 (char 0)
-Error occurred in get_market_cap_by_date: Expecting value: line 1 column 1 (char 0)
-Error occurred in get_market_fundamental_by_date: Expecting value: line 1 column 1 (char 0)
-Error occurred in get_market_cap_by_date: Expecting value: line 1 column 1 (char 0)
-Error occurred in get_market_fundamental_by_date: Expecting value: line 1 column 1 (char 0)
-Error occurred in get_market_cap_by_date: Expecting value: line 1 column 1 (char 0)
-Error occurred in get_market_fundamental_by_date: Expecting value: line 1 column 1 (char 0)
-Error occurred in get_market_cap_by_date: Expecting value: line 1 column 1 (char 0)
-Error occurred in get_market_fundamental_by_date: Expecting value: line 1 column 1 (char 0)
-Error occurred in get_market_cap_by_date: Expecting value: line 1 column 1 (char 0)
-Error occurred in get_market_fundamental_by_date: Expecting value: line 1 column 1 (char 0)
-Error occurred in get_market_cap_by_date: Expecting value: line 1 column 1 (char 0)
-Error occurred in get_market_fundamental_by_date: Expecting value: line 1 column 1 (char 0)
-Error occurred in get_market_cap_by_date: Expecting value: line 1 column 1 (char 0)
-Error occurred in get_market_fundamental_by_date: Expecting value: line 1 column 1 (char 0)
-Error occurred in get_market_cap_by_date: Expecting value: line 1 column 1 (char 0)
-Error occurred in get_market_fundamental_by_date: Expecting value: line 1 column 1 (char 0)
-Error occurred in get_market_cap_by_date: Expecting value: line 1 column 1 (char 0)
-Error occurred in get_market_fundamental_by_date: Expecting value: line 1 column 1 (char 0)
-Error occurred in get_market_cap_by_date: Expecting value: line 1 column 1 (char 0)
-Error occurred in get_market_fundamental_by_date: Expecting value: line 1 column 1 (char 0)
-Error occurred in get_market_cap_by_date: Expecting value: line 1 column 1 (char 0)
-Error occurred in get_market_fundamental_by_date: Expecting value: line 1 column 1 (char 0)
-Error occurred in get_market_cap_by_date: Expecting value: line 1 column 1 (char 0)
-Error occurred in get_market_fundamental_by_date: Expecting value: line 1 column 1 (char 0)
-Error occurred in get_market_cap_by_date: Expecting value: line 1 column 1 (char 0)
-Error occurred in get_market_fundamental_by_date: Expecting value: line 1 column 1 (char 0)
-Error occurred in get_market_cap_by_date: Expecting value: line 1 column 1 (char 0)
-Error occurred in get_market_fundamental_by_date: Expecting value: line 1 column 1 (char 0)
-Error occurred in get_market_cap_by_date: Expecting value: line 1 column 1 (char 0)
-Error occurred in get_market_fundamental_by_date: Expecting value: line 1 column 1 (char 0)
-Error occurred in get_market_cap_by_date: Expecting value: line 1 column 1 (char 0)
-Error occurred in get_market_fundamental_by_date: Expecting value: line 1 column 1 (char 0)
-Error occurred in get_market_cap_by_date: Expecting value: line 1 column 1 (char 0)
-Error occurred in get_market_fundamental_by_date: Expecting value: line 1 column 1 (char 0)
-Error occurred in get_market_cap_by_date: Expecting value: line 1 column 1 (char 0)
-Error occurred in get_market_fundamental_by_date: Expecting value: line 1 column 1 (char 0)
-Error occurred in get_market_cap_by_date: Expecting value: line 1 column 1 (char 0)
-Error occurred in get_market_fundamental_by_date: Expecting value: line 1 column 1 (char 0)
-Error occurred in get_market_cap_by_date: Expecting value: line 1 column 1 (char 0)
-Error occurred in get_market_fundamental_by_date: Expecting value: line 1 column 1 (char 0)
   [폴백] 85개 종목 수집 완료
   [디버그] data/debug.json 저장 완료
+  [pykrx] 수집 결과: 85개 (가격 유효: 85개)
 - pykrx 수집: 85개 종목
   [DART] 85개 종목 재무·주식수 수집 중...
     1/85 완료...
@@ -236,6 +23,6 @@ Error occurred in get_market_fundamental_by_date: Expecting value: line 1 column
     61/85 완료...
     76/85 완료...
   [DART] 재무·주식수 보강 완료
-✅ data/stocks.js 생성 완료 — 85개 종목 (2026-05-31 18:19 KST)
+✅ data/stocks.js 생성 완료 — 85개 종목 (2026-05-31 18:27 KST)
 - 최종 출력: 85개 종목
 =======================================================
