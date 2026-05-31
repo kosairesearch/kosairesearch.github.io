@@ -357,7 +357,7 @@ def collect_pykrx(date):
 CORP_CLS_MARKET = {"Y": "코스피", "K": "코스닥", "N": "코넥스", "E": "기타"}
 
 
-def get_dart_shares(dart, corp_code, debug_info):
+def get_dart_shares(dart, corp_code, debug_info, dump=False):
     """DART 주식총수 현황 API로 발행주식수와 시장구분을 가져옵니다.
 
     반환: (common:int, total:int, market:str|None)
@@ -391,6 +391,11 @@ def get_dart_shares(dart, corp_code, debug_info):
 
                 rows = jo["list"]
                 market = CORP_CLS_MARKET.get(str(rows[0].get("corp_cls", "")).upper()) if rows else None
+
+                if dump:
+                    debug_info["share_dump"] = [
+                        {"se": str(r.get("se", "")), "istc": str(r.get("istc_totqy", "")),
+                         "isu": str(r.get("isu_stock_totqy", ""))} for r in rows]
 
                 common = 0
                 total = 0
@@ -428,6 +433,9 @@ def get_dart_controlling_equity(dart, ticker, debug_info, dump=False):
                 sj = str(r.get("sj_div", ""))
                 if sj == "BS" and "지배" in nm and "소유" in nm:
                     v = safe_int(r.get("thstrm_amount", 0))
+                    if dump:
+                        debug_info.setdefault("equity_cands", []).append(
+                            {"yr": yr, "reprt": reprt, "nm": nm, "amt": str(r.get("thstrm_amount", ""))})
                     best = max(best, v)
             # 지배지분 행이 없으면 자본총계(BS) 사용
             if best == 0:
@@ -606,7 +614,7 @@ def enrich_with_dart(results):
 
             # 상장주식수·시장구분 → 시총·BPS·PBR 계산
             #   common = 보통주(시총용), total = 보통+우선(주당지표 분모, 네이버 방식)
-            common_sh, total_sh, market = get_dart_shares(dart, corp_code, debug_info)
+            common_sh, total_sh, market = get_dart_shares(dart, corp_code, debug_info, dump=(ticker == "105560"))
             if market:
                 results[ticker]["market"] = market
             if common_sh > 0:
@@ -615,7 +623,7 @@ def enrich_with_dart(results):
 
             # BPS·PBR: 최근 분기 지배주주지분 / 총발행주식수 (네이버 방식)
             ctrl_equity = get_dart_controlling_equity(dart, ticker, debug_info,
-                                                       dump=(ticker in ("000660", "005380")))
+                                                       dump=(ticker == "105560"))
             denom = total_sh if total_sh > 0 else common_sh
             if ctrl_equity > 0 and denom > 0:
                 bps = round(ctrl_equity / denom)
