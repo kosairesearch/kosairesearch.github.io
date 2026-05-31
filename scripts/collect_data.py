@@ -226,12 +226,38 @@ def collect_pykrx_bulk(date):
     return results
 
 
+def safe_int(val, default=0):
+    """문자열/숫자를 안전하게 int로 변환합니다."""
+    try:
+        return int(float(str(val).replace(",", "").strip()))
+    except Exception:
+        return default
+
+
+def safe_float(val, default=0.0):
+    """문자열/숫자를 안전하게 float로 변환합니다."""
+    try:
+        return float(str(val).replace(",", "").strip())
+    except Exception:
+        return default
+
+
+def find_col(columns, *keywords):
+    """컬럼 목록에서 키워드를 포함하는 첫 번째 컬럼을 반환합니다."""
+    for kw in keywords:
+        for c in columns:
+            if kw in str(c):
+                return c
+    return None
+
+
 def collect_pykrx_fallback(date):
     """개별 종목 조회 폴백 — SECTOR_MAP 종목만 수집합니다."""
     from pykrx import stock as krx
 
     print("  [폴백] 개별 종목 수집 시도 중...")
     results = {}
+    debug_logged = False
 
     for ticker, sector in SECTOR_MAP.items():
         try:
@@ -244,36 +270,63 @@ def collect_pykrx_fallback(date):
             if not name:
                 continue
 
+            # 처음 성공한 종목의 컬럼명 출력 (디버그)
+            if not debug_logged:
+                print(f"  [디버그] ohlcv 컬럼: {list(df_ohlcv.columns)}")
+                print(f"  [디버그] ohlcv 첫 행: {dict(row)}")
+                debug_logged = True
+
+            # 종가 컬럼 감지
+            close_col = find_col(df_ohlcv.columns, "종가")
+            chg_col   = find_col(df_ohlcv.columns, "등락률", "등락")
+            vol_col   = find_col(df_ohlcv.columns, "거래량")
+            tvol_col  = find_col(df_ohlcv.columns, "거래대금")
+
+            price = safe_int(row[close_col]) if close_col else 0
+            if price == 0:
+                # 위치 기반 접근 (종가는 보통 4번째 컬럼)
+                try:
+                    price = safe_int(row.iloc[3])
+                except Exception:
+                    pass
+
             # 시가총액 조회
             df_cap = krx.get_market_cap_by_date(date, date, ticker)
             mcap_won = 0
             shares = 0
             if df_cap is not None and not df_cap.empty:
                 cap_row = df_cap.iloc[0]
-                # 컬럼명 감지
-                mcap_col = next((c for c in df_cap.columns if "시가총액" in c), None)
-                sh_col   = next((c for c in df_cap.columns if "상장주식수" in c), None)
-                if mcap_col:
-                    mcap_won = int(cap_row[mcap_col])
-                if sh_col:
-                    shares = int(cap_row[sh_col])
+                if not debug_logged or ticker == "005930":
+                    print(f"  [디버그] cap 컬럼({ticker}): {list(df_cap.columns)}")
+                    print(f"  [디버그] cap 첫 행: {dict(cap_row)}")
 
-            # 종가 컬럼 감지
-            close_col = next((c for c in df_ohlcv.columns if "종가" in c), "종가")
-            chg_col   = next((c for c in df_ohlcv.columns if "등락률" in c), "등락률")
-            vol_col   = next((c for c in df_ohlcv.columns if "거래량" in c), "거래량")
-            tvol_col  = next((c for c in df_ohlcv.columns if "거래대금" in c), "거래대금")
+                # 이름 기반 → 위치 기반 순으로 시도
+                mcap_col = find_col(df_cap.columns, "시가총액", "시총", "Mkt", "mkt", "cap")
+                sh_col   = find_col(df_cap.columns, "상장주식수", "주식수", "shares", "Shares")
+
+                if mcap_col:
+                    mcap_won = safe_int(cap_row[mcap_col])
+                elif len(df_cap.columns) >= 1:
+                    # 첫 번째 컬럼을 시가총액으로 가정 (pykrx 표준 순서)
+                    v = safe_int(cap_row.iloc[0])
+                    if v > 1e10:  # 최소 100억 이상이어야 시총으로 유효
+                        mcap_won = v
+
+                if sh_col:
+                    shares = safe_int(cap_row[sh_col])
+                elif len(df_cap.columns) >= 4:
+                    shares = safe_int(cap_row.iloc[3])
 
             results[ticker] = {
                 "ticker":  ticker,
                 "name":    name,
                 "market":  "코스피",
                 "sector":  sector,
-                "price":   int(row.get(close_col, 0)),
-                "change":  round(float(row.get(chg_col, 0)), 2),
-                "volume":       int(row.get(vol_col, 0)),
-                "trading_value":int(row.get(tvol_col, 0)),
-                "mcap":  round(mcap_won / 1e12, 1),
+                "price":   price,
+                "change":  round(safe_float(row[chg_col]) if chg_col else 0.0, 2),
+                "volume":       safe_int(row[vol_col]) if vol_col else 0,
+                "trading_value":safe_int(row[tvol_col]) if tvol_col else 0,
+                "mcap":  round(mcap_won / 1e12, 2),
                 "shares":shares,
                 "per":  0.0,
                 "pbr":  0.0,
@@ -373,12 +426,18 @@ def enrich_with_dart(results):
 
 def build_output(results, date):
     """웹사이트용 JS 파일을 생성합니다."""
-    stocks = sorted(results.values(), key=lambda x: x["mcap"], reverse=True)
-    stocks = [s for s in stocks if s["price"] > 0][:100]
+    valid = [s for s in results.values() if s["price"] > 0]
 
-    # 가격이 0인 종목도 있으면 포함 (mcap 기준)
-    if len(stocks) < 10:
-        stocks = sorted(results.values(), key=lambda x: x["mcap"], reverse=True)[:100]
+    # mcap이 모두 0이면 거래대금으로 정렬
+    if valid and all(s["mcap"] == 0 for s in valid):
+        print("  [경고] 시가총액 0 — 거래대금 기준으로 정렬")
+        stocks = sorted(valid, key=lambda x: x["trading_value"], reverse=True)[:100]
+    else:
+        stocks = sorted(valid, key=lambda x: x["mcap"], reverse=True)[:100]
+
+    if len(stocks) < 5:
+        # 가격 0 포함해서라도 채움
+        stocks = sorted(results.values(), key=lambda x: x["mcap"] + x["trading_value"], reverse=True)[:100]
 
     for i, s in enumerate(stocks):
         s["rank"] = i + 1
