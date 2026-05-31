@@ -259,6 +259,9 @@ def collect_pykrx_fallback(date):
     results = {}
     debug_info = {}
 
+    # 시총·펀더멘털 조회용 날짜 범위 (단일일자 쿼리가 빈 값을 반환하는 경우 대비)
+    start_dt = (datetime.datetime.strptime(date, "%Y%m%d") - datetime.timedelta(days=14)).strftime("%Y%m%d")
+
     for ticker, sector in SECTOR_MAP.items():
         try:
             df_ohlcv = krx.get_market_ohlcv_by_date(date, date, ticker)
@@ -289,34 +292,33 @@ def collect_pykrx_fallback(date):
             volume = safe_int(row[vol_col])   if vol_col  else 0
             tvol   = safe_int(row[tvol_col])  if tvol_col else 0
 
-            # 위치 기반 폴백 (pykrx 표준: 시가0 고가1 저가2 종가3 거래량4 거래대금5 등락률6)
+            # 위치 기반 폴백 (실측 컬럼: 시가0 고가1 저가2 종가3 거래량4 등락률5 — 거래대금 없음)
             if price == 0 and len(cols) > 3:
                 price = safe_int(row.iloc[3])
             if volume == 0 and len(cols) > 4:
                 volume = safe_int(row.iloc[4])
-            if tvol == 0 and len(cols) > 5:
-                tvol = safe_int(row.iloc[5])
-            if change == 0.0 and len(cols) > 6:
-                change = safe_float(row.iloc[6])
+            if change == 0.0 and len(cols) > 5:
+                change = safe_float(row.iloc[5])
 
-            # 시가총액 조회 (에러를 디버그에 기록)
+            # 시가총액 조회 — 날짜 범위로 시도 (단일일자가 빈 값이면 마지막 행 사용)
             mcap_won = 0
             shares = 0
             df_cap = None
             try:
-                df_cap = krx.get_market_cap_by_date(date, date, ticker)
+                df_cap = krx.get_market_cap_by_date(start_dt, date, ticker)
             except Exception as ce:
                 if "cap_error" not in debug_info:
                     debug_info["cap_error"] = f"{type(ce).__name__}: {ce}"
 
             if df_cap is not None and not df_cap.empty:
-                cap_row = df_cap.iloc[0]
+                cap_row = df_cap.iloc[-1]
                 cap_cols = list(df_cap.columns)
 
                 if "cap_cols" not in debug_info:
                     debug_info["cap_cols"] = [str(c) for c in cap_cols]
                     debug_info["cap_sample"] = {str(k): str(v) for k, v in cap_row.items()}
                     debug_info["cap_by_pos"] = [str(cap_row.iloc[i]) for i in range(len(cap_row))]
+                    debug_info["cap_rows"] = len(df_cap)
 
                 # 이름 기반
                 mcap_col = find_col(cap_cols, "시가총액", "시총", "Mkt", "mkt")
@@ -347,21 +349,29 @@ def collect_pykrx_fallback(date):
             if not mcap_won and shares > 0 and price > 0:
                 mcap_won = price * shares
 
-            # 펀더멘털(PER/PBR/EPS/BPS/DIV) 개별 조회
+            # 거래대금 근사: ohlcv에 없으므로 가격 × 거래량으로 추정
+            if tvol == 0 and price > 0 and volume > 0:
+                tvol = price * volume
+
+            # 펀더멘털(PER/PBR/EPS/BPS/DIV) 개별 조회 — 날짜 범위로 시도
             per = pbr = div = 0.0
             eps = bps = 0
             try:
-                df_fund = krx.get_market_fundamental_by_date(date, date, ticker)
+                df_fund = krx.get_market_fundamental_by_date(start_dt, date, ticker)
                 if df_fund is not None and not df_fund.empty:
-                    f_row = df_fund.iloc[0]
+                    f_row = df_fund.iloc[-1]
                     if "fund_cols" not in debug_info:
                         debug_info["fund_cols"] = [str(c) for c in df_fund.columns]
                         debug_info["fund_sample"] = {str(k): str(v) for k, v in f_row.items()}
+                        debug_info["fund_rows"] = len(df_fund)
                     per = round(safe_float(f_row.get("PER", 0)), 1)
                     pbr = round(safe_float(f_row.get("PBR", 0)), 1)
                     eps = safe_int(f_row.get("EPS", 0))
                     bps = safe_int(f_row.get("BPS", 0))
                     div = round(safe_float(f_row.get("DIV", 0)), 1)
+                else:
+                    if "fund_empty" not in debug_info:
+                        debug_info["fund_empty"] = f"df_fund empty for {ticker}"
             except Exception as fe:
                 if "fund_error" not in debug_info:
                     debug_info["fund_error"] = f"{type(fe).__name__}: {fe}"
