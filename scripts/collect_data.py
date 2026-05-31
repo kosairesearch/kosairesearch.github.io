@@ -528,6 +528,20 @@ def enrich_with_dart(results):
             year = datetime.date.today().year - 1
             fs = dart.finstate(ticker, year)
 
+            # 진단: SK하이닉스·현대차 자본 관련 행 전체 덤프
+            if ticker in ("000660", "005380") and fs is not None and not fs.empty:
+                key = "cap_" + ticker
+                debug_info[key] = {"cols": list(fs.columns), "rows": []}
+                for _, r in fs.iterrows():
+                    nm = str(r.get("account_nm", ""))
+                    if any(k in nm for k in ["자본", "지배"]):
+                        debug_info[key]["rows"].append({
+                            "nm": nm,
+                            "fs_div": str(r.get("fs_div", "")),
+                            "sj_div": str(r.get("sj_div", "")),
+                            "thstrm": str(r.get("thstrm_amount", "")),
+                        })
+
             revenue = revenue_prev = op_profit = net_income = equity = liabilities = 0
             if fs is not None and not fs.empty:
                 def get_amount(account_name, field="thstrm_amount"):
