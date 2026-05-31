@@ -299,10 +299,16 @@ def collect_pykrx_fallback(date):
             if change == 0.0 and len(cols) > 6:
                 change = safe_float(row.iloc[6])
 
-            # 시가총액 조회
-            df_cap = krx.get_market_cap_by_date(date, date, ticker)
+            # 시가총액 조회 (에러를 디버그에 기록)
             mcap_won = 0
             shares = 0
+            df_cap = None
+            try:
+                df_cap = krx.get_market_cap_by_date(date, date, ticker)
+            except Exception as ce:
+                if "cap_error" not in debug_info:
+                    debug_info["cap_error"] = f"{type(ce).__name__}: {ce}"
+
             if df_cap is not None and not df_cap.empty:
                 cap_row = df_cap.iloc[0]
                 cap_cols = list(df_cap.columns)
@@ -315,6 +321,7 @@ def collect_pykrx_fallback(date):
                 # 이름 기반
                 mcap_col = find_col(cap_cols, "시가총액", "시총", "Mkt", "mkt")
                 sh_col   = find_col(cap_cols, "상장주식수", "주식수", "Shares")
+                tval_col = find_col(cap_cols, "거래대금")
 
                 if mcap_col:
                     mcap_won = safe_int(cap_row[mcap_col])
@@ -329,6 +336,36 @@ def collect_pykrx_fallback(date):
                 if not shares and len(cap_cols) >= 4:
                     shares = safe_int(cap_row.iloc[3])
 
+                # 시가총액 조회에서 거래대금도 보충 (ohlcv에 없으므로)
+                if tval_col and tvol == 0:
+                    tvol = safe_int(cap_row[tval_col])
+            else:
+                if "cap_empty" not in debug_info:
+                    debug_info["cap_empty"] = f"df_cap empty for {ticker}"
+
+            # 시가총액 폴백: price × shares (cap 조회 실패 시)
+            if not mcap_won and shares > 0 and price > 0:
+                mcap_won = price * shares
+
+            # 펀더멘털(PER/PBR/EPS/BPS/DIV) 개별 조회
+            per = pbr = div = 0.0
+            eps = bps = 0
+            try:
+                df_fund = krx.get_market_fundamental_by_date(date, date, ticker)
+                if df_fund is not None and not df_fund.empty:
+                    f_row = df_fund.iloc[0]
+                    if "fund_cols" not in debug_info:
+                        debug_info["fund_cols"] = [str(c) for c in df_fund.columns]
+                        debug_info["fund_sample"] = {str(k): str(v) for k, v in f_row.items()}
+                    per = round(safe_float(f_row.get("PER", 0)), 1)
+                    pbr = round(safe_float(f_row.get("PBR", 0)), 1)
+                    eps = safe_int(f_row.get("EPS", 0))
+                    bps = safe_int(f_row.get("BPS", 0))
+                    div = round(safe_float(f_row.get("DIV", 0)), 1)
+            except Exception as fe:
+                if "fund_error" not in debug_info:
+                    debug_info["fund_error"] = f"{type(fe).__name__}: {fe}"
+
             results[ticker] = {
                 "ticker":  ticker,
                 "name":    name,
@@ -340,11 +377,11 @@ def collect_pykrx_fallback(date):
                 "trading_value":tvol,
                 "mcap":  round(mcap_won / 1e12, 2),
                 "shares":shares,
-                "per":  0.0,
-                "pbr":  0.0,
-                "eps":  0,
-                "bps":  0,
-                "div":  0.0,
+                "per":  per,
+                "pbr":  pbr,
+                "eps":  eps,
+                "bps":  bps,
+                "div":  div,
                 "roe":  0.0,
                 "rev":  0.0,
                 "opm":  0.0,
