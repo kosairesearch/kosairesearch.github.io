@@ -438,8 +438,42 @@ def collect_pykrx(date):
     return results
 
 
+def get_dart_shares(dart, ticker, debug_info):
+    """DART 주식총수 현황에서 보통주 발행주식총수(상장주식수)를 가져옵니다."""
+    for year in (datetime.date.today().year - 1, datetime.date.today().year - 2):
+        try:
+            df = dart.report(ticker, "주식총수", year)
+            if df is None or df.empty:
+                continue
+
+            if "share_cols" not in debug_info:
+                debug_info["share_cols"] = [str(c) for c in df.columns]
+                debug_info["share_sample"] = [
+                    {str(k): str(v) for k, v in df.iloc[i].items()} for i in range(min(3, len(df)))
+                ]
+
+            # 보통주식 행 우선, 없으면 합계 행
+            sel = df[df["se"].astype(str).str.contains("보통", na=False)] if "se" in df.columns else df
+            if sel.empty and "se" in df.columns:
+                sel = df[df["se"].astype(str).str.contains("합계", na=False)]
+            if sel.empty:
+                sel = df
+
+            row = sel.iloc[0]
+            # 발행주식총수 컬럼 후보 순서대로 시도
+            for col in ("istc_totqy", "isu_stock_totqy", "now_to_isu_stock_totqy", "distb_stock_co"):
+                if col in row.index:
+                    val = safe_int(row[col])
+                    if val > 0:
+                        return val
+        except Exception as e:
+            if "share_error" not in debug_info:
+                debug_info["share_error"] = f"{type(e).__name__}: {e}"
+    return 0
+
+
 def enrich_with_dart(results):
-    """DART API로 재무비율(ROE, 매출성장률, 영업이익률, 부채비율)을 보완합니다."""
+    """DART API로 상장주식수·재무비율을 보완하고 시총·PER·PBR을 계산합니다."""
     if not DART_API_KEY:
         print("  [DART] API 키 없음, 재무비율 생략")
         return results
@@ -451,46 +485,77 @@ def enrich_with_dart(results):
         print(f"  [DART] 초기화 실패: {e}")
         return results
 
-    top50 = sorted(results.values(), key=lambda x: x["mcap"], reverse=True)[:50]
+    debug_info = {}
+    # 거래대금 기준 정렬(시총 미정 상태)로 최대 90개 종목 보강
+    targets = sorted(results.values(), key=lambda x: x["trading_value"], reverse=True)[:90]
 
-    print(f"  [DART] 상위 50개 종목 재무비율 수집 중...")
-    for i, stock in enumerate(top50):
+    print(f"  [DART] {len(targets)}개 종목 재무·주식수 수집 중...")
+    for i, stock in enumerate(targets):
         ticker = stock["ticker"]
+        price = stock["price"]
         try:
             year = datetime.date.today().year - 1
             fs = dart.finstate(ticker, year)
-            if fs is None or fs.empty:
-                continue
 
-            def get_amount(account_name):
-                row = fs[fs["account_nm"].str.contains(account_name, na=False)]
-                if row.empty:
-                    return 0
-                val = row.iloc[0].get("thstrm_amount", "0")
-                return int(str(val).replace(",", "").replace("-", "0") or 0)
+            revenue = op_profit = net_income = equity = liabilities = 0
+            if fs is not None and not fs.empty:
+                def get_amount(account_name):
+                    row = fs[fs["account_nm"].str.contains(account_name, na=False)]
+                    if row.empty:
+                        return 0
+                    val = row.iloc[0].get("thstrm_amount", "0")
+                    return int(str(val).replace(",", "").replace("-", "0") or 0)
 
-            revenue   = get_amount("매출액")
-            op_profit = get_amount("영업이익")
-            net_income= get_amount("당기순이익")
-            equity    = get_amount("자본총계")
-            liabilities = get_amount("부채총계")
+                revenue     = get_amount("매출액")
+                op_profit   = get_amount("영업이익")
+                net_income  = get_amount("당기순이익")
+                equity      = get_amount("자본총계")
+                liabilities = get_amount("부채총계")
 
-            roe  = round(net_income / equity * 100, 1) if equity > 0 else 0
-            opm  = round(op_profit / revenue * 100, 1) if revenue > 0 else 0
-            debt = round(liabilities / equity * 100, 1) if equity > 0 else 0
+            roe  = round(net_income / equity * 100, 1) if equity > 0 else 0.0
+            opm  = round(op_profit / revenue * 100, 1) if revenue > 0 else 0.0
+            debt = round(liabilities / equity * 100, 1) if equity > 0 else 0.0
 
             results[ticker]["roe"]  = roe
             results[ticker]["opm"]  = opm
             results[ticker]["debt"] = debt
 
-            if i % 10 == 0:
-                print(f"    {i+1}/50 완료...")
-            time.sleep(0.3)
+            # 상장주식수 → 시총·EPS·BPS·PER·PBR 계산
+            shares = get_dart_shares(dart, ticker, debug_info)
+            if shares > 0:
+                results[ticker]["shares"] = shares
+                results[ticker]["mcap"]   = round(price * shares / 1e12, 2)
+                if net_income != 0:
+                    eps = round(net_income / shares)
+                    results[ticker]["eps"] = eps
+                    if eps > 0:
+                        results[ticker]["per"] = round(price / eps, 1)
+                if equity > 0:
+                    bps = round(equity / shares)
+                    results[ticker]["bps"] = bps
+                    if bps > 0:
+                        results[ticker]["pbr"] = round(price / bps, 2)
 
-        except Exception:
-            pass
+            if i % 15 == 0:
+                print(f"    {i+1}/{len(targets)} 완료...")
+            time.sleep(0.25)
 
-    print("  [DART] 재무비율 보강 완료")
+        except Exception as e:
+            if "enrich_error" not in debug_info:
+                debug_info["enrich_error"] = f"{ticker}: {type(e).__name__}: {e}"
+
+    # DART 디버그 정보를 기존 debug.json에 병합
+    try:
+        dbg_path = Path("data/debug.json")
+        existing = {}
+        if dbg_path.exists():
+            existing = json.loads(dbg_path.read_text(encoding="utf-8"))
+        existing["dart"] = debug_info
+        dbg_path.write_text(json.dumps(existing, ensure_ascii=False, indent=2), encoding="utf-8")
+    except Exception:
+        pass
+
+    print("  [DART] 재무·주식수 보강 완료")
     return results
 
 
