@@ -386,6 +386,12 @@ def get_dart_shares(dart, corp_code, debug_info, dump=False):
                 }
                 jo = requests.get(url, params=params, timeout=20).json()
 
+                if dump:
+                    debug_info.setdefault("share_attempts", []).append(
+                        {"year": year, "reprt": reprt, "status": jo.get("status"),
+                         "msg": jo.get("message"),
+                         "ses": [str(r.get("se", "")) for r in jo.get("list", [])]})
+
                 if jo.get("status") != "000" or "list" not in jo:
                     continue
 
@@ -637,7 +643,7 @@ def enrich_with_dart(results):
 
             # 상장주식수·시장구분 → 시총·BPS·PBR 계산
             #   common = 보통주(시총용), total = 보통+우선(주당지표 분모, 네이버 방식)
-            common_sh, total_sh, market = get_dart_shares(dart, corp_code, debug_info, dump=(ticker == "105560"))
+            common_sh, total_sh, market = get_dart_shares(dart, corp_code, debug_info, dump=(ticker == "066970"))
             if market:
                 results[ticker]["market"] = market
             if common_sh > 0:
