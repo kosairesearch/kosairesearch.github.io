@@ -358,11 +358,20 @@ CORP_CLS_MARKET = {"Y": "코스피", "K": "코스닥", "N": "코넥스", "E": "�
 
 
 def get_dart_shares(dart, corp_code, debug_info):
-    """DART 주식총수 현황 API로 보통주 발행주식총수(상장주식수)와 시장구분을 가져옵니다.
+    """DART 주식총수 현황 API로 발행주식수와 시장구분을 가져옵니다.
 
-    반환: (shares:int, market:str|None)
+    반환: (common:int, total:int, market:str|None)
+      common = 보통주 발행주식총수 (시가총액 계산용)
+      total  = 보통주 + 우선주 발행주식총수 (주당지표 분모용, 네이버 방식)
     """
     import requests
+
+    def istc(r):
+        for col in ("istc_totqy", "isu_stock_totqy", "now_to_isu_stock_totqy", "distb_stock_co"):
+            v = safe_int(r.get(col, 0))
+            if v > 0:
+                return v
+        return 0
 
     # 사업보고서(11011) → 3분기(11014) → 반기(11012) → 1분기(11013) 순으로 시도
     for year in (datetime.date.today().year - 1, datetime.date.today().year - 2):
@@ -377,35 +386,70 @@ def get_dart_shares(dart, corp_code, debug_info):
                 }
                 jo = requests.get(url, params=params, timeout=20).json()
 
-                if "first_status" not in debug_info:
-                    debug_info["first_status"] = {
-                        "year": year, "reprt": reprt,
-                        "status": jo.get("status"), "message": jo.get("message"),
-                    }
-
                 if jo.get("status") != "000" or "list" not in jo:
                     continue
 
                 rows = jo["list"]
-                if "share_cols" not in debug_info and rows:
-                    debug_info["share_cols"] = list(rows[0].keys())
-
                 market = CORP_CLS_MARKET.get(str(rows[0].get("corp_cls", "")).upper()) if rows else None
 
-                # 보통주 행 우선
-                common = [r for r in rows if "보통" in str(r.get("se", ""))]
-                total  = [r for r in rows if "합계" in str(r.get("se", ""))]
-                sel_rows = common or total or rows
+                common = 0
+                total = 0
+                for r in rows:
+                    se = str(r.get("se", ""))
+                    if "보통" in se:
+                        common = istc(r)
+                        total += common
+                    elif "우선" in se:
+                        total += istc(r)
 
-                for r in sel_rows:
-                    for col in ("istc_totqy", "isu_stock_totqy", "now_to_isu_stock_totqy", "distb_stock_co"):
-                        val = safe_int(r.get(col, 0))
-                        if val > 0:
-                            return val, market
+                if common > 0:
+                    return common, (total if total >= common else common), market
             except Exception as e:
                 if "share_error" not in debug_info:
                     debug_info["share_error"] = f"{type(e).__name__}: {e}"
-    return 0, None
+    return 0, 0, None
+
+
+def get_dart_controlling_equity(dart, ticker, debug_info, dump=False):
+    """DART 전체재무제표(연결)에서 최근 분기 지배주주지분(원)을 가져옵니다.
+
+    네이버 PBR은 최근 분기 지배주주지분 기준이므로 연간이 아닌 최근 분기를 씁니다.
+    """
+    cur = datetime.date.today().year
+
+    def extract(yr, reprt):
+        try:
+            fa = dart.finstate_all(ticker, yr, reprt, fs_div="CFS")
+            if fa is None or fa.empty:
+                return 0
+            best = 0
+            for _, r in fa.iterrows():
+                nm = str(r.get("account_nm", ""))
+                sj = str(r.get("sj_div", ""))
+                if sj == "BS" and "지배" in nm and "소유" in nm:
+                    v = safe_int(r.get("thstrm_amount", 0))
+                    best = max(best, v)
+            # 지배지분 행이 없으면 자본총계(BS) 사용
+            if best == 0:
+                for _, r in fa.iterrows():
+                    nm = str(r.get("account_nm", ""))
+                    sj = str(r.get("sj_div", ""))
+                    if sj == "BS" and "자본총계" in nm:
+                        best = max(best, safe_int(r.get("thstrm_amount", 0)))
+            return best
+        except Exception as e:
+            if "equity_error" not in debug_info:
+                debug_info["equity_error"] = f"{type(e).__name__}: {e}"
+            return 0
+
+    # 최근 분기 우선: 3분기 → 반기 → 1분기 (당해), 없으면 전년 사업보고서
+    for yr, reprt in [(cur, "11014"), (cur, "11012"), (cur, "11013"), (cur - 1, "11011")]:
+        eq = extract(yr, reprt)
+        if eq > 0:
+            if dump:
+                debug_info["equity_pick"] = {"yr": yr, "reprt": reprt, "equity": eq}
+            return eq
+    return 0
 
 
 def get_dart_pershare(dart, corp_code, debug_info, dump=False):
@@ -528,25 +572,6 @@ def enrich_with_dart(results):
             year = datetime.date.today().year - 1
             fs = dart.finstate(ticker, year)
 
-            # 진단: SK하이닉스·현대차 최근분기 전체재무제표(연결)에서 지배지분 확인
-            if ticker in ("000660", "005380"):
-                key = "fa_" + ticker
-                debug_info[key] = {}
-                cur_y = datetime.date.today().year
-                for yr, reprt in [(cur_y, "11013"), (cur_y - 1, "11011")]:
-                    try:
-                        fa = dart.finstate_all(ticker, yr, reprt, fs_div="CFS")
-                        if fa is None or fa.empty:
-                            continue
-                        rows = []
-                        for _, r in fa.iterrows():
-                            nm = str(r.get("account_nm", ""))
-                            if ("자본" in nm and "총계" in nm) or "지배" in nm:
-                                rows.append({"nm": nm, "amt": str(r.get("thstrm_amount", ""))})
-                        debug_info[key][f"{yr}_{reprt}"] = rows
-                    except Exception as e:
-                        debug_info[key][f"{yr}_{reprt}_err"] = str(e)
-
             revenue = revenue_prev = op_profit = net_income = equity = liabilities = 0
             if fs is not None and not fs.empty:
                 def get_amount(account_name, field="thstrm_amount"):
@@ -579,23 +604,28 @@ def enrich_with_dart(results):
             eps_official = ps["eps"]
             dps = ps["dps"]
 
-            # 상장주식수·시장구분 → 시총·EPS·BPS·PER·PBR 계산
-            shares, market = get_dart_shares(dart, corp_code, debug_info)
+            # 상장주식수·시장구분 → 시총·BPS·PBR 계산
+            #   common = 보통주(시총용), total = 보통+우선(주당지표 분모, 네이버 방식)
+            common_sh, total_sh, market = get_dart_shares(dart, corp_code, debug_info)
             if market:
                 results[ticker]["market"] = market
-            if shares > 0:
-                results[ticker]["shares"] = shares
-                results[ticker]["mcap"]   = round(price * shares / 1e12, 2)
-                # BPS = 자본총계 / 상장주식수
-                if equity > 0:
-                    bps = round(equity / shares)
-                    results[ticker]["bps"] = bps
-                    if bps > 0:
-                        results[ticker]["pbr"] = round(price / bps, 2)
+            if common_sh > 0:
+                results[ticker]["shares"] = common_sh
+                results[ticker]["mcap"]   = round(price * common_sh / 1e12, 2)
+
+            # BPS·PBR: 최근 분기 지배주주지분 / 총발행주식수 (네이버 방식)
+            ctrl_equity = get_dart_controlling_equity(dart, ticker, debug_info,
+                                                       dump=(ticker in ("000660", "005380")))
+            denom = total_sh if total_sh > 0 else common_sh
+            if ctrl_equity > 0 and denom > 0:
+                bps = round(ctrl_equity / denom)
+                results[ticker]["bps"] = bps
+                if bps > 0:
+                    results[ticker]["pbr"] = round(price / bps, 2)
 
             # EPS·PER: 네이버처럼 최근 4분기(TTM) 기준
             # EPS(TTM) = 공식 연간 EPS × (TTM순이익 / 연간순이익)
-            eps_base = eps_official if eps_official > 0 else (round(net_income / shares) if shares > 0 and net_income != 0 else 0)
+            eps_base = eps_official if eps_official > 0 else (round(net_income / total_sh) if total_sh > 0 and net_income != 0 else 0)
             if eps_base > 0:
                 ttm_ratio = get_ttm_ratio(dart, ticker, net_income, debug_info, dump=(ticker == "005930"))
                 eps = round(eps_base * ttm_ratio)
