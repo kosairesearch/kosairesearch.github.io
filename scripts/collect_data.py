@@ -461,6 +461,44 @@ def get_dart_pershare(dart, corp_code, debug_info, dump=False):
     return {"eps": 0, "dps": 0}
 
 
+def get_ttm_ratio(dart, ticker, total_annual_ni, debug_info, dump=False):
+    """TTM(최근 4분기) 순이익 / 연간 순이익 비율을 구합니다.
+
+    네이버 EPS는 최근 4분기 합산(TTM) 기준이므로,
+    EPS(TTM) = 연간공식EPS × (TTM순이익/연간순이익) 로 환산합니다.
+    분기 데이터가 없으면 1.0(연간 그대로)을 반환합니다.
+    """
+    if total_annual_ni <= 0:
+        return 1.0
+
+    def q_ni(yr, reprt):
+        try:
+            q = dart.finstate(ticker, yr, reprt)
+            if q is None or q.empty:
+                return None
+            r = q[q["account_nm"].str.contains("당기순이익", na=False)]
+            if r.empty:
+                return None
+            return int(str(r.iloc[0].get("thstrm_amount", "0")).replace(",", "") or 0)
+        except Exception:
+            return None
+
+    cur = datetime.date.today().year
+    # 최근 분기보고서 우선: 3분기(11014) → 반기(11012) → 1분기(11013)
+    for reprt in ("11014", "11012", "11013"):
+        cq = q_ni(cur, reprt)
+        pq = q_ni(cur - 1, reprt)
+        if cq and pq:
+            ttm = total_annual_ni + cq - pq
+            ratio = ttm / total_annual_ni
+            if dump:
+                debug_info["ttm"] = {"reprt": reprt, "cur_q": cq, "prev_q": pq,
+                                     "ttm": ttm, "ratio": round(ratio, 3)}
+            if 0.1 < ratio < 10:  # 비정상 값 방어
+                return ratio
+    return 1.0
+
+
 def enrich_with_dart(results):
     """DART API로 상장주식수·재무비율을 보완하고 시총·PER·PBR을 계산합니다."""
     if not DART_API_KEY:
@@ -506,28 +544,6 @@ def enrich_with_dart(results):
                 equity       = get_amount("자본총계")
                 liabilities  = get_amount("부채총계")
 
-                # 진단: 삼성전자 분기별 순이익 (TTM 계산용)
-                if ticker == "005930":
-                    def ni_of(yr, reprt):
-                        try:
-                            q = dart.finstate(ticker, yr, reprt)
-                            if q is None or q.empty:
-                                return None
-                            r = q[q["account_nm"].str.contains("당기순이익", na=False)]
-                            if r.empty:
-                                return None
-                            return int(str(r.iloc[0].get("thstrm_amount", "0")).replace(",", "") or 0)
-                        except Exception:
-                            return None
-                    cur_y = datetime.date.today().year
-                    debug_info["samsung_quarterly"] = {
-                        "FY연간(2025,11011)_총NI": net_income,
-                        f"Q1({cur_y},11013)": ni_of(cur_y, "11013"),
-                        f"반기({cur_y},11012)": ni_of(cur_y, "11012"),
-                        f"Q1({cur_y-1},11013)": ni_of(cur_y - 1, "11013"),
-                        f"반기({cur_y-1},11012)": ni_of(cur_y - 1, "11012"),
-                        f"3Q({cur_y-1},11014)": ni_of(cur_y - 1, "11014"),
-                    }
 
             roe  = round(net_income / equity * 100, 1) if equity > 0 else 0.0
             opm  = round(op_profit / revenue * 100, 1) if revenue > 0 else 0.0
@@ -558,11 +574,15 @@ def enrich_with_dart(results):
                     if bps > 0:
                         results[ticker]["pbr"] = round(price / bps, 2)
 
-            # EPS·PER: 공식 (연결)주당순이익 우선, 없으면 순이익/주식수로 계산
-            eps = eps_official if eps_official > 0 else (round(net_income / shares) if shares > 0 and net_income != 0 else 0)
-            if eps > 0:
-                results[ticker]["eps"] = eps
-                results[ticker]["per"] = round(price / eps, 1)
+            # EPS·PER: 네이버처럼 최근 4분기(TTM) 기준
+            # EPS(TTM) = 공식 연간 EPS × (TTM순이익 / 연간순이익)
+            eps_base = eps_official if eps_official > 0 else (round(net_income / shares) if shares > 0 and net_income != 0 else 0)
+            if eps_base > 0:
+                ttm_ratio = get_ttm_ratio(dart, ticker, net_income, debug_info, dump=(ticker == "005930"))
+                eps = round(eps_base * ttm_ratio)
+                if eps > 0:
+                    results[ticker]["eps"] = eps
+                    results[ticker]["per"] = round(price / eps, 1)
 
             # 배당수익률 = 주당 현금배당금 / 현재가 × 100 (네이버 방식)
             if dps > 0 and price > 0:
