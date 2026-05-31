@@ -634,6 +634,9 @@ def enrich_with_dart(results):
             # BPS·PBR: 최근 분기 지배주주지분 / 총발행주식수 (네이버 방식)
             ctrl_equity = get_dart_controlling_equity(dart, ticker, debug_info,
                                                        dump=(ticker == "105560"))
+            # 최근분기 추출 실패 시 주요계정 연간 자본총계로 폴백
+            if ctrl_equity <= 0 and equity > 0:
+                ctrl_equity = equity
             denom = total_sh if total_sh > 0 else common_sh
             if ctrl_equity > 0 and denom > 0:
                 bps = round(ctrl_equity / denom)
