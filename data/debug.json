@@ -134,10 +134,20 @@
         "isu": "정관상"
       }
     ],
+    "equity_calc": [
+      {
+        "yr": 2026,
+        "reprt": "11013",
+        "controlling": 0,
+        "equity_total": 61140136000000,
+        "noncontrol": 1791191000000,
+        "result": 59348945000000
+      }
+    ],
     "equity_pick": {
       "yr": 2026,
       "reprt": "11013",
-      "equity": 829740827000000
+      "equity": 59348945000000
     }
   }
 }
