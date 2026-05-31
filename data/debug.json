@@ -24,5 +24,88 @@
     "5.843071786310518"
   ],
   "cap_empty": "df_cap empty for 005930",
-  "fund_empty": "df_fund empty for 005930"
+  "fund_empty": "df_fund empty for 005930",
+  "dart": {
+    "first_status": {
+      "ticker": "000660",
+      "year": 2025,
+      "reprt": "11011",
+      "status": "000",
+      "message": "정상"
+    },
+    "share_cols": [
+      "rcept_no",
+      "corp_cls",
+      "corp_code",
+      "corp_name",
+      "se",
+      "isu_stock_totqy",
+      "now_to_isu_stock_totqy",
+      "now_to_dcrs_stock_totqy",
+      "redc",
+      "profit_incnr",
+      "rdmstk_repy",
+      "etc",
+      "istc_totqy",
+      "tesstk_co",
+      "distb_stock_co",
+      "stlm_dt"
+    ],
+    "share_sample": [
+      {
+        "rcept_no": "20260317000635",
+        "corp_cls": "Y",
+        "corp_code": "00164779",
+        "corp_name": "SK하이닉스",
+        "se": "보통주",
+        "isu_stock_totqy": "9,000,000,000",
+        "now_to_isu_stock_totqy": "5,721,980,209",
+        "now_to_dcrs_stock_totqy": "4,993,977,844",
+        "redc": "4,990,449,799",
+        "profit_incnr": "3,528,045",
+        "rdmstk_repy": "-",
+        "etc": "-",
+        "istc_totqy": "728,002,365",
+        "tesstk_co": "26,310,845",
+        "distb_stock_co": "701,691,520",
+        "stlm_dt": "2025-12-31"
+      },
+      {
+        "rcept_no": "20260317000635",
+        "corp_cls": "Y",
+        "corp_code": "00164779",
+        "corp_name": "SK하이닉스",
+        "se": "우선주",
+        "isu_stock_totqy": "-",
+        "now_to_isu_stock_totqy": "-",
+        "now_to_dcrs_stock_totqy": "-",
+        "redc": "-",
+        "profit_incnr": "-",
+        "rdmstk_repy": "-",
+        "etc": "-",
+        "istc_totqy": "-",
+        "tesstk_co": "-",
+        "distb_stock_co": "-",
+        "stlm_dt": "2025-12-31"
+      },
+      {
+        "rcept_no": "20260317000635",
+        "corp_cls": "Y",
+        "corp_code": "00164779",
+        "corp_name": "SK하이닉스",
+        "se": "합계",
+        "isu_stock_totqy": "9,000,000,000",
+        "now_to_isu_stock_totqy": "5,721,980,209",
+        "now_to_dcrs_stock_totqy": "4,993,977,844",
+        "redc": "4,990,449,799",
+        "profit_incnr": "3,528,045",
+        "rdmstk_repy": "-",
+        "etc": "-",
+        "istc_totqy": "728,002,365",
+        "tesstk_co": "26,310,845",
+        "distb_stock_co": "701,691,520",
+        "stlm_dt": "2025-12-31"
+      }
+    ]
+  }
 }
