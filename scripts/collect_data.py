@@ -403,15 +403,26 @@ def get_dart_shares(dart, corp_code, debug_info, dump=False):
                         {"se": str(r.get("se", "")), "istc": str(r.get("istc_totqy", "")),
                          "isu": str(r.get("isu_stock_totqy", ""))} for r in rows]
 
+                # se 표기: '보통주'/'우선주' 또는 '의결권이 있는 주식'/'의결권이 없는 주식'
                 common = 0
                 total = 0
+                total_row = 0
                 for r in rows:
                     se = str(r.get("se", ""))
-                    if "보통" in se:
-                        common = istc(r)
-                        total += common
-                    elif "우선" in se:
-                        total += istc(r)
+                    v = istc(r)
+                    if "합계" in se:
+                        total_row = max(total_row, v)
+                    elif "보통" in se or "의결권이 있는" in se:
+                        common = v
+                        total += v
+                    elif "우선" in se or "의결권이 없는" in se:
+                        total += v
+
+                # 보통주 행을 못 찾으면 합계 행으로 폴백
+                if common == 0:
+                    common = total_row
+                if total < common:
+                    total = total_row or common
 
                 if common > 0:
                     return common, (total if total >= common else common), market
@@ -595,19 +606,6 @@ def enrich_with_dart(results):
 
             year = datetime.date.today().year - 1
             fs = dart.finstate(ticker, year)
-
-            # 진단: 카카오뱅크·엘앤에프
-            if ticker in ("323410", "066970"):
-                info = {"fs_empty": (fs is None or fs.empty)}
-                if fs is not None and not fs.empty:
-                    info["accounts"] = sorted({str(x) for x in fs["account_nm"]})
-                # year-2도 시도
-                try:
-                    fs2 = dart.finstate(ticker, year - 1)
-                    info["fs2_empty"] = (fs2 is None or fs2.empty)
-                except Exception as e:
-                    info["fs2_err"] = str(e)
-                debug_info.setdefault("missing", {})[ticker] = info
 
             revenue = revenue_prev = op_profit = net_income = equity = liabilities = 0
             if fs is not None and not fs.empty:
