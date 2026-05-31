@@ -616,9 +616,24 @@ def main():
     print("=" * 55)
 
     if count == 0:
-        print("[오류] 수집된 종목이 없습니다. 스크립트를 종료합니다.")
-        sys.exit(1)
+        print("[오류] 수집된 종목이 없습니다.")
 
 
 if __name__ == "__main__":
-    main()
+    try:
+        # 이전 에러 로그 제거
+        Path("data").mkdir(exist_ok=True)
+        err_path = Path("data/error.log")
+        if err_path.exists():
+            err_path.unlink()
+        main()
+    except Exception:
+        import traceback
+        tb = traceback.format_exc()
+        print(tb)
+        try:
+            Path("data").mkdir(exist_ok=True)
+            Path("data/error.log").write_text(tb, encoding="utf-8")
+        except Exception:
+            pass
+        # exit 0으로 종료해 커밋 단계가 실행되도록 함 (error.log 확인용)
