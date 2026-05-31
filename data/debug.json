@@ -16,6 +16,57 @@
     "등락률": "5.843071786310518"
   },
   "dart": {
+    "cap_000660": {
+      "cols": [
+        "rcept_no",
+        "reprt_code",
+        "bsns_year",
+        "corp_code",
+        "stock_code",
+        "fs_div",
+        "fs_nm",
+        "sj_div",
+        "sj_nm",
+        "account_nm",
+        "thstrm_nm",
+        "thstrm_dt",
+        "thstrm_amount",
+        "frmtrm_nm",
+        "frmtrm_dt",
+        "frmtrm_amount",
+        "bfefrmtrm_nm",
+        "bfefrmtrm_dt",
+        "bfefrmtrm_amount",
+        "ord",
+        "currency"
+      ],
+      "rows": [
+        {
+          "nm": "자본금",
+          "fs_div": "CFS",
+          "sj_div": "BS",
+          "thstrm": "3,657,652,000,000"
+        },
+        {
+          "nm": "자본총계",
+          "fs_div": "CFS",
+          "sj_div": "BS",
+          "thstrm": "120,666,751,000,000"
+        },
+        {
+          "nm": "자본금",
+          "fs_div": "OFS",
+          "sj_div": "BS",
+          "thstrm": "3,657,652,000,000"
+        },
+        {
+          "nm": "자본총계",
+          "fs_div": "OFS",
+          "sj_div": "BS",
+          "thstrm": "117,318,562,000,000"
+        }
+      ]
+    },
     "div_cols": [
       "rcept_no",
       "corp_cls",
@@ -135,6 +186,57 @@
       "prev_q": 8222878000000,
       "ttm": 84209199000000,
       "ratio": 1.863
+    },
+    "cap_005380": {
+      "cols": [
+        "rcept_no",
+        "reprt_code",
+        "bsns_year",
+        "corp_code",
+        "stock_code",
+        "fs_div",
+        "fs_nm",
+        "sj_div",
+        "sj_nm",
+        "account_nm",
+        "thstrm_nm",
+        "thstrm_dt",
+        "thstrm_amount",
+        "frmtrm_nm",
+        "frmtrm_dt",
+        "frmtrm_amount",
+        "bfefrmtrm_nm",
+        "bfefrmtrm_dt",
+        "bfefrmtrm_amount",
+        "ord",
+        "currency"
+      ],
+      "rows": [
+        {
+          "nm": "자본금",
+          "fs_div": "CFS",
+          "sj_div": "BS",
+          "thstrm": "1,488,993,000,000"
+        },
+        {
+          "nm": "자본총계",
+          "fs_div": "CFS",
+          "sj_div": "BS",
+          "thstrm": "127,648,237,000,000"
+        },
+        {
+          "nm": "자본금",
+          "fs_div": "OFS",
+          "sj_div": "BS",
+          "thstrm": "1,488,993,000,000"
+        },
+        {
+          "nm": "자본총계",
+          "fs_div": "OFS",
+          "sj_div": "BS",
+          "thstrm": "69,968,561,000,000"
+        }
+      ]
     }
   }
 }
