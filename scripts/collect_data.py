@@ -354,15 +354,15 @@ def collect_pykrx(date):
     return results
 
 
-def get_dart_shares(dart, ticker, debug_info):
-    """DART 주식총수 현황 API를 직접 호출해 보통주 발행주식총수(상장주식수)를 가져옵니다."""
-    import requests
+CORP_CLS_MARKET = {"Y": "코스피", "K": "코스닥", "N": "코넥스", "E": "기타"}
 
-    corp_code = dart.find_corp_code(ticker)
-    if not corp_code:
-        if "share_no_corp" not in debug_info:
-            debug_info["share_no_corp"] = ticker
-        return 0
+
+def get_dart_shares(dart, corp_code, debug_info):
+    """DART 주식총수 현황 API로 보통주 발행주식총수(상장주식수)와 시장구분을 가져옵니다.
+
+    반환: (shares:int, market:str|None)
+    """
+    import requests
 
     # 사업보고서(11011) → 3분기(11014) → 반기(11012) → 1분기(11013) 순으로 시도
     for year in (datetime.date.today().year - 1, datetime.date.today().year - 2):
@@ -379,7 +379,7 @@ def get_dart_shares(dart, ticker, debug_info):
 
                 if "first_status" not in debug_info:
                     debug_info["first_status"] = {
-                        "ticker": ticker, "year": year, "reprt": reprt,
+                        "year": year, "reprt": reprt,
                         "status": jo.get("status"), "message": jo.get("message"),
                     }
 
@@ -389,7 +389,8 @@ def get_dart_shares(dart, ticker, debug_info):
                 rows = jo["list"]
                 if "share_cols" not in debug_info and rows:
                     debug_info["share_cols"] = list(rows[0].keys())
-                    debug_info["share_sample"] = rows[:3]
+
+                market = CORP_CLS_MARKET.get(str(rows[0].get("corp_cls", "")).upper()) if rows else None
 
                 # 보통주 행 우선
                 common = [r for r in rows if "보통" in str(r.get("se", ""))]
@@ -400,11 +401,51 @@ def get_dart_shares(dart, ticker, debug_info):
                     for col in ("istc_totqy", "isu_stock_totqy", "now_to_isu_stock_totqy", "distb_stock_co"):
                         val = safe_int(r.get(col, 0))
                         if val > 0:
-                            return val
+                            return val, market
             except Exception as e:
                 if "share_error" not in debug_info:
                     debug_info["share_error"] = f"{type(e).__name__}: {e}"
-    return 0
+    return 0, None
+
+
+def get_dart_dividend(dart, corp_code, debug_info):
+    """DART 배당 리포트(alotMatter)에서 현금배당수익률(%)을 가져옵니다."""
+    import requests
+
+    for year in (datetime.date.today().year - 1, datetime.date.today().year - 2):
+        try:
+            url = "https://opendart.fss.or.kr/api/alotMatter.json"
+            params = {
+                "crtfc_key": DART_API_KEY,
+                "corp_code": corp_code,
+                "bsns_year": str(year),
+                "reprt_code": "11011",
+            }
+            jo = requests.get(url, params=params, timeout=20).json()
+            if jo.get("status") != "000" or "list" not in jo:
+                continue
+
+            if "div_cols" not in debug_info and jo["list"]:
+                debug_info["div_cols"] = list(jo["list"][0].keys())
+                debug_info["div_sample"] = jo["list"][:6]
+
+            # 보통주 현금배당수익률 행 탐색
+            for r in jo["list"]:
+                se = str(r.get("se", ""))
+                if "현금배당수익률" in se and ("보통" in se or "주식" not in se):
+                    val = safe_float(r.get("thstrm", 0))
+                    if val > 0:
+                        return round(val, 1)
+            # 보통주 한정 못 찾으면 첫 현금배당수익률
+            for r in jo["list"]:
+                if "현금배당수익률" in str(r.get("se", "")):
+                    val = safe_float(r.get("thstrm", 0))
+                    if val > 0:
+                        return round(val, 1)
+        except Exception as e:
+            if "div_error" not in debug_info:
+                debug_info["div_error"] = f"{type(e).__name__}: {e}"
+    return 0.0
 
 
 def enrich_with_dart(results):
@@ -429,34 +470,43 @@ def enrich_with_dart(results):
         ticker = stock["ticker"]
         price = stock["price"]
         try:
+            corp_code = dart.find_corp_code(ticker)
+            if not corp_code:
+                continue
+
             year = datetime.date.today().year - 1
             fs = dart.finstate(ticker, year)
 
-            revenue = op_profit = net_income = equity = liabilities = 0
+            revenue = revenue_prev = op_profit = net_income = equity = liabilities = 0
             if fs is not None and not fs.empty:
-                def get_amount(account_name):
+                def get_amount(account_name, field="thstrm_amount"):
                     row = fs[fs["account_nm"].str.contains(account_name, na=False)]
                     if row.empty:
                         return 0
-                    val = row.iloc[0].get("thstrm_amount", "0")
+                    val = row.iloc[0].get(field, "0")
                     return int(str(val).replace(",", "").replace("-", "0") or 0)
 
-                revenue     = get_amount("매출액")
-                op_profit   = get_amount("영업이익")
-                net_income  = get_amount("당기순이익")
-                equity      = get_amount("자본총계")
-                liabilities = get_amount("부채총계")
+                revenue      = get_amount("매출액")
+                revenue_prev = get_amount("매출액", "frmtrm_amount")  # 전기 매출액
+                op_profit    = get_amount("영업이익")
+                net_income   = get_amount("당기순이익")
+                equity       = get_amount("자본총계")
+                liabilities  = get_amount("부채총계")
 
             roe  = round(net_income / equity * 100, 1) if equity > 0 else 0.0
             opm  = round(op_profit / revenue * 100, 1) if revenue > 0 else 0.0
             debt = round(liabilities / equity * 100, 1) if equity > 0 else 0.0
+            rev  = round((revenue - revenue_prev) / revenue_prev * 100, 1) if revenue_prev > 0 else 0.0
 
             results[ticker]["roe"]  = roe
             results[ticker]["opm"]  = opm
             results[ticker]["debt"] = debt
+            results[ticker]["rev"]  = rev
 
-            # 상장주식수 → 시총·EPS·BPS·PER·PBR 계산
-            shares = get_dart_shares(dart, ticker, debug_info)
+            # 상장주식수·시장구분 → 시총·EPS·BPS·PER·PBR 계산
+            shares, market = get_dart_shares(dart, corp_code, debug_info)
+            if market:
+                results[ticker]["market"] = market
             if shares > 0:
                 results[ticker]["shares"] = shares
                 results[ticker]["mcap"]   = round(price * shares / 1e12, 2)
@@ -471,9 +521,14 @@ def enrich_with_dart(results):
                     if bps > 0:
                         results[ticker]["pbr"] = round(price / bps, 2)
 
+            # 배당수익률
+            div = get_dart_dividend(dart, corp_code, debug_info)
+            if div > 0:
+                results[ticker]["div"] = div
+
             if i % 15 == 0:
                 print(f"    {i+1}/{len(targets)} 완료...")
-            time.sleep(0.25)
+            time.sleep(0.2)
 
         except Exception as e:
             if "enrich_error" not in debug_info:
