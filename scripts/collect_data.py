@@ -408,8 +408,8 @@ def get_dart_shares(dart, corp_code, debug_info):
     return 0, None
 
 
-def get_dart_dividend(dart, corp_code, debug_info):
-    """DART 배당 리포트(alotMatter)에서 현금배당수익률(%)을 가져옵니다."""
+def get_dart_dividend(dart, corp_code, debug_info, dump=False):
+    """DART 배당 리포트(alotMatter)에서 주당 현금배당금(원)을 가져옵니다."""
     import requests
 
     for year in (datetime.date.today().year - 1, datetime.date.today().year - 2):
@@ -427,25 +427,30 @@ def get_dart_dividend(dart, corp_code, debug_info):
 
             if "div_cols" not in debug_info and jo["list"]:
                 debug_info["div_cols"] = list(jo["list"][0].keys())
-                debug_info["div_sample"] = jo["list"][:6]
+            if dump:
+                debug_info["samsung_div"] = [
+                    {"se": str(r.get("se", "")), "knd": str(r.get("stock_knd", "")),
+                     "thstrm": str(r.get("thstrm", ""))}
+                    for r in jo["list"]
+                ]
 
-            # 보통주 현금배당수익률 행 탐색
+            # 주당 현금배당금(원) 행 탐색 (보통주 우선)
+            dps = 0
             for r in jo["list"]:
                 se = str(r.get("se", ""))
-                if "현금배당수익률" in se and ("보통" in se or "주식" not in se):
-                    val = safe_float(r.get("thstrm", 0))
-                    if val > 0:
-                        return round(val, 1)
-            # 보통주 한정 못 찾으면 첫 현금배당수익률
-            for r in jo["list"]:
-                if "현금배당수익률" in str(r.get("se", "")):
-                    val = safe_float(r.get("thstrm", 0))
-                    if val > 0:
-                        return round(val, 1)
+                if "주당" in se and "현금배당금" in se:
+                    knd = str(r.get("stock_knd", ""))
+                    if knd in ("-", "") or "보통" in knd:
+                        v = safe_int(r.get("thstrm", 0))
+                        if v > 0:
+                            dps = v
+                            break
+            if dps > 0:
+                return dps  # 원 단위 DPS 반환 (수익률은 호출부에서 가격으로 계산)
         except Exception as e:
             if "div_error" not in debug_info:
                 debug_info["div_error"] = f"{type(e).__name__}: {e}"
-    return 0.0
+    return 0
 
 
 def enrich_with_dart(results):
@@ -493,6 +498,15 @@ def enrich_with_dart(results):
                 equity       = get_amount("자본총계")
                 liabilities  = get_amount("부채총계")
 
+                # 진단: 삼성전자 재무제표 전체 행 덤프
+                if ticker == "005930":
+                    debug_info["samsung_finstate"] = [
+                        {"nm": str(r["account_nm"]),
+                         "thstrm": str(r.get("thstrm_amount", "")),
+                         "frmtrm": str(r.get("frmtrm_amount", ""))}
+                        for _, r in fs.iterrows()
+                    ]
+
             roe  = round(net_income / equity * 100, 1) if equity > 0 else 0.0
             opm  = round(op_profit / revenue * 100, 1) if revenue > 0 else 0.0
             debt = round(liabilities / equity * 100, 1) if equity > 0 else 0.0
@@ -521,10 +535,10 @@ def enrich_with_dart(results):
                     if bps > 0:
                         results[ticker]["pbr"] = round(price / bps, 2)
 
-            # 배당수익률
-            div = get_dart_dividend(dart, corp_code, debug_info)
-            if div > 0:
-                results[ticker]["div"] = div
+            # 배당수익률 = 주당 현금배당금 / 현재가 × 100 (네이버 방식)
+            dps = get_dart_dividend(dart, corp_code, debug_info, dump=(ticker == "005930"))
+            if dps > 0 and price > 0:
+                results[ticker]["div"] = round(dps / price * 100, 2)
 
             if i % 15 == 0:
                 print(f"    {i+1}/{len(targets)} 완료...")
