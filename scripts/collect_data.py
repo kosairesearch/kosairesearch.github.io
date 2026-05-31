@@ -255,12 +255,9 @@ def collect_pykrx_fallback(date):
     """개별 종목 조회 폴백 — SECTOR_MAP 종목만 수집합니다."""
     from pykrx import stock as krx
 
-    print("  [폴백] 개별 종목 수집 시도 중...")
+    print("  [폴백] 개별 종목 OHLCV 수집 중...")
     results = {}
     debug_info = {}
-
-    # 시총·펀더멘털 조회용 날짜 범위 (단일일자 쿼리가 빈 값을 반환하는 경우 대비)
-    start_dt = (datetime.datetime.strptime(date, "%Y%m%d") - datetime.timedelta(days=14)).strftime("%Y%m%d")
 
     for ticker, sector in SECTOR_MAP.items():
         try:
@@ -273,26 +270,22 @@ def collect_pykrx_fallback(date):
             if not name:
                 continue
 
-            # 첫 종목의 컬럼 및 값 디버그 저장
+            # 첫 종목의 컬럼 구조 디버그 저장
             if not debug_info:
                 debug_info["ohlcv_cols"] = [str(c) for c in df_ohlcv.columns]
                 debug_info["ohlcv_sample"] = {str(k): str(v) for k, v in row.items()}
-                debug_info["ohlcv_by_pos"] = [str(row.iloc[i]) for i in range(len(row))]
 
             # 컬럼 감지 (이름 기반 우선, 위치 기반 폴백)
             cols = list(df_ohlcv.columns)
             close_col = find_col(cols, "종가")
             chg_col   = find_col(cols, "등락률", "등락")
             vol_col   = find_col(cols, "거래량")
-            tvol_col  = find_col(cols, "거래대금")
 
-            # 이름 기반 접근
             price  = safe_int(row[close_col]) if close_col else 0
             change = safe_float(row[chg_col]) if chg_col else 0.0
             volume = safe_int(row[vol_col])   if vol_col  else 0
-            tvol   = safe_int(row[tvol_col])  if tvol_col else 0
 
-            # 위치 기반 폴백 (실측 컬럼: 시가0 고가1 저가2 종가3 거래량4 등락률5 — 거래대금 없음)
+            # 위치 기반 폴백 (실측 컬럼: 시가0 고가1 저가2 종가3 거래량4 등락률5)
             if price == 0 and len(cols) > 3:
                 price = safe_int(row.iloc[3])
             if volume == 0 and len(cols) > 4:
@@ -300,82 +293,10 @@ def collect_pykrx_fallback(date):
             if change == 0.0 and len(cols) > 5:
                 change = safe_float(row.iloc[5])
 
-            # 시가총액 조회 — 날짜 범위로 시도 (단일일자가 빈 값이면 마지막 행 사용)
-            mcap_won = 0
-            shares = 0
-            df_cap = None
-            try:
-                df_cap = krx.get_market_cap_by_date(start_dt, date, ticker)
-            except Exception as ce:
-                if "cap_error" not in debug_info:
-                    debug_info["cap_error"] = f"{type(ce).__name__}: {ce}"
+            # 거래대금 근사: ohlcv에 거래대금 컬럼이 없으므로 가격 × 거래량으로 추정
+            tvol = price * volume if (price > 0 and volume > 0) else 0
 
-            if df_cap is not None and not df_cap.empty:
-                cap_row = df_cap.iloc[-1]
-                cap_cols = list(df_cap.columns)
-
-                if "cap_cols" not in debug_info:
-                    debug_info["cap_cols"] = [str(c) for c in cap_cols]
-                    debug_info["cap_sample"] = {str(k): str(v) for k, v in cap_row.items()}
-                    debug_info["cap_by_pos"] = [str(cap_row.iloc[i]) for i in range(len(cap_row))]
-                    debug_info["cap_rows"] = len(df_cap)
-
-                # 이름 기반
-                mcap_col = find_col(cap_cols, "시가총액", "시총", "Mkt", "mkt")
-                sh_col   = find_col(cap_cols, "상장주식수", "주식수", "Shares")
-                tval_col = find_col(cap_cols, "거래대금")
-
-                if mcap_col:
-                    mcap_won = safe_int(cap_row[mcap_col])
-                if not mcap_won and len(cap_cols) >= 1:
-                    # 위치 기반: 첫 컬럼이 보통 시총
-                    v = safe_int(cap_row.iloc[0])
-                    if v > 1e10:
-                        mcap_won = v
-
-                if sh_col:
-                    shares = safe_int(cap_row[sh_col])
-                if not shares and len(cap_cols) >= 4:
-                    shares = safe_int(cap_row.iloc[3])
-
-                # 시가총액 조회에서 거래대금도 보충 (ohlcv에 없으므로)
-                if tval_col and tvol == 0:
-                    tvol = safe_int(cap_row[tval_col])
-            else:
-                if "cap_empty" not in debug_info:
-                    debug_info["cap_empty"] = f"df_cap empty for {ticker}"
-
-            # 시가총액 폴백: price × shares (cap 조회 실패 시)
-            if not mcap_won and shares > 0 and price > 0:
-                mcap_won = price * shares
-
-            # 거래대금 근사: ohlcv에 없으므로 가격 × 거래량으로 추정
-            if tvol == 0 and price > 0 and volume > 0:
-                tvol = price * volume
-
-            # 펀더멘털(PER/PBR/EPS/BPS/DIV) 개별 조회 — 날짜 범위로 시도
-            per = pbr = div = 0.0
-            eps = bps = 0
-            try:
-                df_fund = krx.get_market_fundamental_by_date(start_dt, date, ticker)
-                if df_fund is not None and not df_fund.empty:
-                    f_row = df_fund.iloc[-1]
-                    if "fund_cols" not in debug_info:
-                        debug_info["fund_cols"] = [str(c) for c in df_fund.columns]
-                        debug_info["fund_sample"] = {str(k): str(v) for k, v in f_row.items()}
-                        debug_info["fund_rows"] = len(df_fund)
-                    per = round(safe_float(f_row.get("PER", 0)), 1)
-                    pbr = round(safe_float(f_row.get("PBR", 0)), 1)
-                    eps = safe_int(f_row.get("EPS", 0))
-                    bps = safe_int(f_row.get("BPS", 0))
-                    div = round(safe_float(f_row.get("DIV", 0)), 1)
-                else:
-                    if "fund_empty" not in debug_info:
-                        debug_info["fund_empty"] = f"df_fund empty for {ticker}"
-            except Exception as fe:
-                if "fund_error" not in debug_info:
-                    debug_info["fund_error"] = f"{type(fe).__name__}: {fe}"
-
+            # 시총·주식수·PER·PBR·EPS·BPS는 enrich_with_dart()에서 DART로 채움
             results[ticker] = {
                 "ticker":  ticker,
                 "name":    name,
@@ -385,19 +306,19 @@ def collect_pykrx_fallback(date):
                 "change":  round(change, 2),
                 "volume":       volume,
                 "trading_value":tvol,
-                "mcap":  round(mcap_won / 1e12, 2),
-                "shares":shares,
-                "per":  per,
-                "pbr":  pbr,
-                "eps":  eps,
-                "bps":  bps,
-                "div":  div,
+                "mcap":  0.0,
+                "shares":0,
+                "per":  0.0,
+                "pbr":  0.0,
+                "eps":  0,
+                "bps":  0,
+                "div":  0.0,
                 "roe":  0.0,
                 "rev":  0.0,
                 "opm":  0.0,
                 "debt": 0.0,
             }
-            time.sleep(0.1)
+            time.sleep(0.05)
 
         except Exception as e:
             print(f"    [{ticker}] 오류: {e}")
@@ -418,23 +339,18 @@ def collect_pykrx_fallback(date):
 
 
 def collect_pykrx(date):
-    """pykrx로 시세·지표 데이터를 수집합니다 (벌크 실패 시 폴백)."""
-    from pykrx import stock as krx
+    """pykrx로 시세 데이터를 수집합니다.
 
-    print(f"  [pykrx] {date} 데이터 수집 중...")
+    KRX 전종목 벌크 API(get_market_*_by_ticker)와 시총/펀더멘털 API는
+    GitHub Actions 환경에서 차단되어 빈 값을 반환하므로, 작동이 확인된
+    개별 종목 OHLCV 조회(get_market_ohlcv_by_date)만 사용합니다.
+    시총·PER·PBR 등은 enrich_with_dart()에서 DART로 채웁니다.
+    """
+    print(f"  [pykrx] {date} OHLCV 데이터 수집 중...")
+    results = collect_pykrx_fallback(date)
 
-    # 1차: 벌크 수집
-    results = collect_pykrx_bulk(date)
-
-    # 벌크 수집 결과에서 가격이 있는 종목만 체크
     valid = [v for v in results.values() if v["price"] > 0]
-    print(f"  [pykrx] 벌크 수집 결과: {len(results)}개 (가격 유효: {len(valid)}개)")
-
-    # 2차: 벌크가 실패했으면 폴백
-    if len(valid) == 0:
-        print("  [pykrx] 벌크 수집 실패 → 폴백 수집 시작")
-        results = collect_pykrx_fallback(date)
-
+    print(f"  [pykrx] 수집 결과: {len(results)}개 (가격 유효: {len(valid)}개)")
     return results
 
 
