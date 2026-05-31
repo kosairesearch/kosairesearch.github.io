@@ -1,0 +1,997 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>KOS ai — 한국 상장사 AI 리서치</title>
+<style>
+@font-face{font-family:"Pretendard";font-weight:400;font-style:normal;font-display:swap;
+  src:url("fonts/Pretendard-Regular.otf") format("opentype")}
+@font-face{font-family:"Pretendard";font-weight:500;font-style:normal;font-display:swap;
+  src:url("fonts/Pretendard-Medium.otf") format("opentype")}
+@font-face{font-family:"Pretendard";font-weight:600;font-style:normal;font-display:swap;
+  src:url("fonts/Pretendard-SemiBold.otf") format("opentype")}
+@font-face{font-family:"Pretendard";font-weight:700;font-style:normal;font-display:swap;
+  src:url("fonts/Pretendard-Bold.otf") format("opentype")}
+@font-face{font-family:"Pretendard";font-weight:800;font-style:normal;font-display:swap;
+  src:url("fonts/Pretendard-ExtraBold.otf") format("opentype")}
+</style>
+<script src="data/stocks.js"></script>
+<style>
+/* ============================================================
+   DesignCode UI tokens (subset, inlined for single-file use)
+   ============================================================ */
+:root{
+  --n-10:#fafbfb; --n-20:#f5f6f7; --n-30:#ebedf0; --n-40:#dfe2e6;
+  --n-50:#c2c7d0; --n-200:#6b788e; --n-400:#505f79; --n-900:#091e42;
+
+  --brand-blue:rgb(13,105,212);
+  --brand-violet:rgb(151,71,255);
+  --brand-cyan:rgb(95,197,255);
+
+  --bg-1:rgb(242,243,250);
+  --fg-1:rgb(0,0,0);
+  --fg-2:rgba(0,0,0,0.7);
+  --fg-3:rgba(0,0,0,0.5);
+  --border-2:rgba(0,0,0,0.1);
+
+  /* Korean market convention: 상승=빨강, 하락=파랑 */
+  --up:#e5383b;
+  --down:rgb(13,105,212);
+  --flat:rgba(0,0,0,0.45);
+
+  --shadow-1:0 1px 0 rgba(0,0,0,.05),0 4px 4px rgba(0,0,0,.05);
+  --shadow-2:0 1px 0 rgba(0,0,0,.05),0 4px 4px rgba(0,0,0,.05),0 10px 20px rgba(0,0,0,.08);
+  --shadow-glow:0 6px 24px rgba(48,131,255,.45),inset 0 1px 0 rgba(255,255,255,.4);
+
+  --radius-sm:8px; --radius-md:12px; --radius-lg:16px; --radius-xl:20px; --pill:9999px;
+
+  --font-sans:"Pretendard",-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;
+  --font-mono:"Pretendard",-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;
+
+  /* screen padding scales by breakpoint */
+  --pad:20px;
+}
+
+/* ---------- Dark mode ---------- */
+:root[data-theme="dark"]{
+  --fg-1:rgb(255,255,255);
+  --fg-2:rgba(255,255,255,0.72);
+  --fg-3:rgba(255,255,255,0.5);
+  --border-2:rgba(255,255,255,0.12);
+  --up:#ff5b5e;
+  --down:#5fa8ff;
+  --flat:rgba(255,255,255,0.5);
+  --shadow-2:0 1px 0 rgba(0,0,0,.2),0 10px 24px rgba(0,0,0,.4);
+}
+
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{
+  margin:0;
+  font-family:var(--font-sans);
+  color:var(--fg-1);
+  background:#eef1ff;
+  -webkit-font-smoothing:antialiased;
+  min-height:100vh;
+  position:relative;
+}
+/* signature wallpaper — cooler/finance variant */
+body::after{
+  content:"";position:fixed;inset:0;z-index:-2;
+  background:
+    radial-gradient(ellipse 50% 38% at 10% -2%, rgba(120,157,255,.50), transparent 62%),
+    radial-gradient(ellipse 52% 42% at 96% 6%, rgba(151,71,255,.40), transparent 64%),
+    radial-gradient(ellipse 80% 55% at 50% 104%, rgba(95,197,255,.32), transparent 70%),
+    linear-gradient(180deg,#eef1ff 0%, #e2e7fb 48%, #d5dbf6 100%);
+  background-attachment:fixed;
+}
+:root[data-theme="dark"] body{background:#0e0e16}
+:root[data-theme="dark"] body::after{
+  background:
+    radial-gradient(ellipse 50% 38% at 10% -2%, rgba(120,157,255,.32), transparent 62%),
+    radial-gradient(ellipse 52% 42% at 96% 6%, rgba(151,71,255,.30), transparent 64%),
+    radial-gradient(ellipse 80% 55% at 50% 104%, rgba(48,90,180,.30), transparent 70%),
+    linear-gradient(180deg,#10121d 0%, #0d0e18 60%, #0a0b13 100%);
+}
+/* faint grid overlay */
+body::before{
+  content:"";position:fixed;inset:0;z-index:-1;pointer-events:none;
+  background-image:
+    linear-gradient(to right, rgba(255,255,255,.06) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(255,255,255,.06) 1px, transparent 1px);
+  background-size:48px 48px;
+}
+
+/* ============================================================
+   Glass surface
+   ============================================================ */
+.glass{
+  background:rgba(255,255,255,0.62);
+  border:1px solid rgba(255,255,255,0.55);
+  box-shadow:var(--shadow-2),inset 0 1px 0 rgba(255,255,255,0.6);
+  -webkit-backdrop-filter:blur(20px);
+  backdrop-filter:blur(20px);
+  border-radius:var(--radius-xl);
+}
+:root[data-theme="dark"] .glass{
+  background:rgba(28,30,42,0.62);
+  border-color:rgba(255,255,255,0.10);
+  box-shadow:var(--shadow-2),inset 0 1px 0 rgba(255,255,255,0.08);
+}
+
+/* ============================================================
+   Buttons
+   ============================================================ */
+.btn{display:inline-flex;align-items:center;gap:6px;font:600 14px/1 var(--font-sans);
+  border-radius:var(--radius-sm);cursor:pointer;border:0;transition:transform .12s ease,filter .15s ease,background .15s ease;white-space:nowrap}
+.btn:active{transform:scale(.98)}
+.btn-primary{background:#000;color:#fff;padding:10px 16px;box-shadow:var(--shadow-1)}
+:root[data-theme="dark"] .btn-primary{background:#fff;color:#000}
+.search-go{height:44px;flex:0 0 auto;padding:0 24px;border-radius:var(--pill);border:0;cursor:pointer;
+  display:inline-flex;align-items:center;justify-content:center;background:#000;color:#fff;
+  font:600 16px var(--font-sans);box-shadow:var(--shadow-1);transition:transform .12s ease,filter .15s ease}
+.search-go:hover{filter:brightness(1.12)}
+.search-go:active{transform:scale(.96)}
+.search-go svg{width:19px;height:19px}
+:root[data-theme="dark"] .search-go{background:#fff;color:#000}
+.btn-ghost{background:transparent;color:var(--fg-2);padding:9px 12px}
+.btn-ghost:hover{background:rgba(0,0,0,.06);color:var(--fg-1)}
+:root[data-theme="dark"] .btn-ghost:hover{background:rgba(255,255,255,.08)}
+
+/* ============================================================
+   Layout shell
+   ============================================================ */
+.wrap{max-width:1200px;margin:0 auto;padding-left:var(--pad);padding-right:var(--pad)}
+
+/* ---------- Top nav ---------- */
+.nav{position:sticky;top:12px;z-index:50;margin:12px auto 0;max-width:1200px;
+  width:calc(100% - 2*var(--pad));
+  display:flex;align-items:center;gap:16px;
+  padding:10px 12px 10px 16px;border-radius:var(--radius-lg)}
+.brand{display:flex;align-items:center;gap:10px;text-decoration:none;color:var(--fg-1)}
+.brand-mark{width:32px;height:32px;border-radius:9px;flex:0 0 auto;
+  background:linear-gradient(150deg,#3083ff,#7a4ff0);
+  display:flex;align-items:center;justify-content:center;
+  box-shadow:0 4px 12px rgba(48,131,255,.4),inset 0 1px 0 rgba(255,255,255,.4)}
+.brand-name{font:700 19px/1 var(--font-sans);letter-spacing:-.02em;color:var(--fg-1)}
+.nav-links{display:flex;gap:2px;margin-left:8px}
+.nav-links a{font:500 14px var(--font-sans);color:var(--fg-2);text-decoration:none;
+  padding:8px 13px;border-radius:var(--radius-sm);transition:background .15s,color .15s;white-space:nowrap}
+.nav-links a:hover{color:var(--fg-1);background:rgba(0,0,0,.05)}
+:root[data-theme="dark"] .nav-links a:hover{background:rgba(255,255,255,.08)}
+.nav-links a.active{color:var(--fg-1);background:rgba(0,0,0,.07);font-weight:600}
+:root[data-theme="dark"] .nav-links a.active{background:rgba(255,255,255,.10)}
+.nav-spacer{flex:1}
+.nav-right{display:flex;align-items:center;gap:8px}
+.icon-btn{width:38px;height:38px;border-radius:var(--radius-sm);border:0;background:transparent;
+  display:inline-flex;align-items:center;justify-content:center;cursor:pointer;color:var(--fg-2);
+  transition:background .15s}
+.icon-btn:hover{background:rgba(0,0,0,.06);color:var(--fg-1)}
+:root[data-theme="dark"] .icon-btn:hover{background:rgba(255,255,255,.08)}
+.icon-btn svg{width:19px;height:19px}
+.menu-btn{display:none}
+
+/* mobile dropdown panel */
+.mobile-menu{display:none;position:fixed;top:70px;left:var(--pad);right:var(--pad);z-index:49;
+  padding:8px;border-radius:var(--radius-lg);flex-direction:column;gap:2px}
+.mobile-menu.open{display:flex}
+.mobile-menu a{font:600 16px var(--font-sans);color:var(--fg-1);text-decoration:none;
+  padding:13px 14px;border-radius:var(--radius-sm)}
+.mobile-menu a:hover,.mobile-menu a.active{background:rgba(0,0,0,.06)}
+:root[data-theme="dark"] .mobile-menu a:hover,:root[data-theme="dark"] .mobile-menu a.active{background:rgba(255,255,255,.08)}
+
+/* ============================================================
+   Hero
+   ============================================================ */
+.hero{text-align:center;padding:72px 0 56px;display:flex;flex-direction:column;align-items:center;gap:22px}
+.eyebrow{display:inline-flex;align-items:center;gap:7px;font:600 12px/1 var(--font-sans);
+  letter-spacing:.01em;color:var(--fg-2);white-space:nowrap;
+  background:rgba(255,255,255,.6);padding:7px 14px;border-radius:var(--pill);
+  border:1px solid rgba(255,255,255,.55);box-shadow:var(--shadow-1)}
+:root[data-theme="dark"] .eyebrow{background:rgba(255,255,255,.08);border-color:rgba(255,255,255,.12)}
+.eyebrow .dot{width:6px;height:6px;border-radius:50%;background:var(--fg-3)}
+.hero h1{margin:0;font-size:clamp(36px,6.4vw,64px);font-weight:600;line-height:1.04;
+  letter-spacing:-.045em;text-wrap:balance}
+.hero h1 .accent{color:var(--fg-1)}
+.hero .sub{max-width:600px;margin:0;font:400 18px/1.6 var(--font-sans);color:var(--fg-2);text-wrap:pretty}
+
+.searchbar{display:flex;align-items:center;gap:8px;width:100%;
+  padding:8px 8px 8px 18px;border-radius:var(--pill)}
+.searchbar svg{width:20px;height:20px;color:var(--fg-3);flex:0 0 auto}
+.searchbar input{flex:1;min-width:0;border:0;outline:none;background:transparent;
+  font:400 16px var(--font-sans);color:var(--fg-1);padding:8px 0}
+.searchbar input::placeholder{color:var(--fg-3)}
+/* autocomplete */
+.search-wrap{position:relative;width:100%;max-width:680px;margin-top:4px}
+.ac{position:absolute;top:calc(100% + 8px);left:0;right:0;z-index:40;padding:6px;
+  border-radius:18px;max-height:380px;overflow-y:auto;display:none;text-align:left}
+.ac.show{display:block}
+.ac-item{display:flex;align-items:center;gap:12px;padding:11px 12px;border-radius:12px;
+  cursor:pointer;text-decoration:none;color:var(--fg-1)}
+.ac-item.active,.ac-item:hover{background:rgba(0,0,0,.05)}
+:root[data-theme="dark"] .ac-item.active,:root[data-theme="dark"] .ac-item:hover{background:rgba(255,255,255,.07)}
+.ac-tk{font:600 12px var(--font-sans);color:var(--fg-2);background:rgba(0,0,0,.05);
+  padding:4px 8px;border-radius:6px;flex:0 0 auto;min-width:60px;text-align:center}
+:root[data-theme="dark"] .ac-tk{background:rgba(255,255,255,.08)}
+.ac-nm{font:700 15px var(--font-sans);letter-spacing:-.01em;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.ac-nm mark{background:transparent;color:var(--brand-blue);font-weight:800;padding:0}
+:root[data-theme="dark"] .ac-nm mark{color:var(--brand-cyan)}
+.ac-sec{font:500 12.5px var(--font-sans);color:var(--fg-3);margin-left:auto;flex:0 0 auto;white-space:nowrap}
+.ac-empty{padding:18px 14px;font:500 14px var(--font-sans);color:var(--fg-3);text-align:center}
+.hero-chips{display:flex;gap:8px;justify-content:center;flex-wrap:wrap}
+.chip{display:inline-flex;align-items:center;gap:6px;font:500 13px var(--font-sans);
+  color:var(--fg-2);background:rgba(255,255,255,.55);border:1px solid rgba(255,255,255,.5);
+  padding:7px 13px;border-radius:var(--pill);cursor:pointer;text-decoration:none;
+  box-shadow:var(--shadow-1);transition:transform .12s,color .15s}
+.chip:hover{transform:translateY(-1px);color:var(--fg-1)}
+:root[data-theme="dark"] .chip{background:rgba(255,255,255,.07);border-color:rgba(255,255,255,.12)}
+.chip .mono{font:600 12px var(--font-mono);color:var(--brand-blue)}
+:root[data-theme="dark"] .chip .mono{color:var(--brand-cyan)}
+
+/* ============================================================
+   Section heads
+   ============================================================ */
+section.block{padding:36px 0}
+.sec-head{display:flex;justify-content:space-between;align-items:flex-end;gap:16px;margin-bottom:22px;flex-wrap:wrap}
+.sec-head h2{margin:0;font-size:clamp(24px,3.4vw,30px);font-weight:600;letter-spacing:-.03em;line-height:1.1}
+.sec-head .sec-sub{margin:6px 0 0;font:400 15px var(--font-sans);color:var(--fg-3)}
+.more-link{display:inline-flex;align-items:center;gap:5px;font:600 14px var(--font-sans);
+  color:var(--fg-1);text-decoration:none;white-space:nowrap}
+.more-link:hover{text-decoration:underline}
+.more-link svg{width:16px;height:16px}
+
+/* ============================================================
+   Reusable Stock Card  (.kos-card — reuse across pages)
+   ============================================================ */
+.card-grid{display:grid;grid-template-columns:1fr;gap:16px}
+.kos-price,.kos-change,.kos-metric .v,.kos-ticker,.mover-rank{font-variant-numeric:tabular-nums;font-feature-settings:"tnum" 1}
+
+.kos-card{display:flex;flex-direction:column;gap:11px;padding:18px;
+  text-decoration:none;color:var(--fg-1);
+  transition:transform .14s ease,box-shadow .14s ease;cursor:pointer}
+.kos-card:hover{transform:translateY(-3px);
+  box-shadow:0 1px 0 rgba(0,0,0,.05),0 8px 16px rgba(0,0,0,.10),0 18px 36px rgba(0,0,0,.10),inset 0 1px 0 rgba(255,255,255,.6)}
+:root[data-theme="dark"] .kos-card:hover{box-shadow:0 14px 34px rgba(0,0,0,.5),inset 0 1px 0 rgba(255,255,255,.08)}
+
+.kos-card__top{display:flex;align-items:center;gap:8px}
+.kos-ticker{font:600 12px var(--font-mono);letter-spacing:.04em;color:var(--fg-2);
+  background:rgba(0,0,0,.05);padding:3px 8px;border-radius:6px}
+:root[data-theme="dark"] .kos-ticker{background:rgba(255,255,255,.08)}
+.kos-sector{font:500 12px var(--font-sans);color:var(--fg-3)}
+.kos-card__name{font:700 19px/1.2 var(--font-sans);letter-spacing:-.02em;margin:1px 0 0}
+
+.kos-price-row{display:flex;align-items:baseline;justify-content:space-between;gap:8px}
+.kos-price{font:600 22px/1 var(--font-mono);letter-spacing:-.01em}
+.kos-change{font:600 14px/1 var(--font-mono);display:inline-flex;align-items:center;gap:3px}
+.kos-change.up{color:var(--up)}
+.kos-change.down{color:var(--down)}
+.kos-change.flat{color:var(--flat)}
+.kos-change .arw{font-size:10px}
+
+/* metric strip: PER 9.2배 · PBR 1.3배 · 배당 2.1% */
+.kos-metrics{display:flex;flex-wrap:wrap;gap:6px 0;padding-top:2px;
+  border-top:1px solid var(--border-2)}
+.kos-metric{flex:1 1 0;min-width:0;display:flex;flex-direction:column;gap:2px;padding-top:9px}
+.kos-metric+.kos-metric{border-left:1px solid var(--border-2);padding-left:12px;margin-left:0}
+.kos-metric .k{font:500 11px var(--font-sans);color:var(--fg-3);letter-spacing:.02em}
+.kos-metric .v{font:600 14px var(--font-mono);color:var(--fg-1)}
+
+.kos-ai{display:flex;flex-direction:column;gap:5px;flex:1}
+.kos-ai__label{display:inline-flex;align-items:center;gap:5px;font:600 10.5px var(--font-mono);
+  letter-spacing:.06em;text-transform:uppercase;color:var(--fg-3)}
+.kos-ai__label svg{width:12px;height:12px}
+.kos-ai p{margin:0;font:400 13px/1.55 var(--font-sans);color:var(--fg-2);text-wrap:pretty}
+
+.kos-card__foot{display:flex;justify-content:space-between;align-items:center;
+  font:500 12px var(--font-mono);color:var(--fg-3);margin-top:auto}
+.kos-card__foot .read{display:inline-flex;align-items:center;gap:3px;color:var(--fg-2)}
+
+/* ============================================================
+   Industry movers
+   ============================================================ */
+.tabs{display:flex;gap:8px;overflow-x:auto;padding-bottom:4px;margin-bottom:18px;
+  scrollbar-width:none}
+.tabs::-webkit-scrollbar{display:none}
+.tab{font:500 14px var(--font-sans);color:var(--fg-2);background:rgba(255,255,255,.55);
+  border:1px solid rgba(255,255,255,.5);padding:8px 15px;border-radius:var(--pill);
+  cursor:pointer;white-space:nowrap;transition:background .15s,color .15s,transform .12s;box-shadow:var(--shadow-1)}
+.tab:hover{transform:translateY(-1px);color:var(--fg-1)}
+:root[data-theme="dark"] .tab{background:rgba(255,255,255,.07);border-color:rgba(255,255,255,.12)}
+.tab.active{background:#000;color:#fff;border-color:#000}
+:root[data-theme="dark"] .tab.active{background:#fff;color:#000;border-color:#fff}
+
+.mover-row{display:flex;gap:14px;overflow-x:auto;padding:4px 4px 16px;scroll-snap-type:x mandatory;
+  scrollbar-width:thin}
+.mover-row::-webkit-scrollbar{height:8px}
+.mover-row::-webkit-scrollbar-thumb{background:rgba(0,0,0,.18);border-radius:99px}
+.mover-card{flex:0 0 248px;scroll-snap-align:start;display:flex;flex-direction:column;gap:9px;padding:16px;
+  text-decoration:none;color:var(--fg-1);transition:transform .14s,box-shadow .14s;cursor:pointer}
+.mover-card:hover{transform:translateY(-3px)}
+.mover-card .mover-rank{font:600 11px var(--font-mono);color:var(--fg-3)}
+.mv-spark{height:38px;width:100%}
+
+/* ============================================================
+   Footer
+   ============================================================ */
+.foot{margin-top:40px;padding:44px 0 28px}
+.foot-inner{border-radius:var(--radius-xl);padding:36px 32px 26px}
+.foot-grid{display:grid;grid-template-columns:1.8fr 1fr 1fr 1fr;gap:28px}
+.foot-brand .brand{margin-bottom:12px}
+.foot-brand p{margin:0;font:400 14px/1.55 var(--font-sans);color:var(--fg-2);max-width:260px}
+.foot-col h4{margin:0 0 12px;font:600 11px var(--font-mono);letter-spacing:.07em;
+  text-transform:uppercase;color:var(--fg-3)}
+.foot-col ul{list-style:none;margin:0;padding:0;display:flex;flex-direction:column;gap:9px}
+.foot-col a{font:400 14px var(--font-sans);color:var(--fg-2);text-decoration:none}
+.foot-col a:hover{color:var(--fg-1)}
+.disclaimer{margin-top:28px;padding:16px 18px;border-radius:var(--radius-md);
+  background:rgba(0,0,0,.04);border:1px solid var(--border-2);
+  font:400 13px/1.6 var(--font-sans);color:var(--fg-2)}
+:root[data-theme="dark"] .disclaimer{background:rgba(255,255,255,.04)}
+.disclaimer b{color:var(--fg-1)}
+.foot-bottom{display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap;
+  margin-top:22px;padding-top:18px;border-top:1px solid var(--border-2);
+  font:500 12px var(--font-mono);color:var(--fg-3)}
+
+.empty-msg{padding:40px 0;text-align:center;font:500 15px var(--font-sans);color:var(--fg-3);display:none}
+
+/* ============================================================
+   Responsive
+   ============================================================ */
+/* Tablet 768–1023 → 2 columns, pad 24 */
+@media (min-width:768px){
+  :root{--pad:24px}
+  .card-grid{grid-template-columns:repeat(2,1fr);gap:18px}
+}
+/* Desktop 1024+ → 3 columns, pad 96 */
+@media (min-width:1024px){
+  :root{--pad:40px}
+  .card-grid{grid-template-columns:repeat(3,1fr);gap:20px}
+  .hero{padding:96px 0 64px}
+}
+@media (min-width:1280px){
+  :root{--pad:0px}
+  .nav{width:100%}
+}
+
+/* Mobile < 768 → 1 col, collapse nav */
+@media (max-width:767px){
+  .nav-links{display:none}
+  .menu-btn{display:inline-flex}
+  .hero{padding:48px 0 40px}
+  .foot-grid{grid-template-columns:1fr 1fr;gap:24px}
+  .foot-brand{grid-column:1 / -1}
+  .foot-bottom{flex-direction:column;gap:8px}
+  .sec-head{align-items:flex-start}
+}
+@media (max-width:480px){
+  .kos-metric .v{font-size:13px}
+  .brand-name{font-size:17px}
+}
+</style>
+<script>
+/* ============================================================
+   KOS ai — lightweight in-place i18n (KO ⇄ EN)
+   Text-node level translation: dictionary keyed by visible
+   Korean text (whitespace-normalized). No reload, reversible.
+   - Injects a KO/EN toggle to the left of #themeBtn
+   - localStorage('kos-lang')
+   - Pages: KOSi18n.register(dict, onChange)
+   - Dynamic (JS-rendered) regions: mark container [data-i18n-skip]
+     and re-render with KOSi18n.t() inside the onChange callback.
+   - Placeholders: add attribute data-i18n-ph to the input.
+   ============================================================ */
+(function(){
+  const KEY='kos-lang';
+  const dict={};                 // normalized KO -> EN
+  const listeners=[];
+  const txtOrig=new WeakMap();   // textNode -> original nodeValue
+  const phOrig=new WeakMap();    // element  -> original placeholder
+  const blockOrig=new WeakMap(); // element  -> {html, key}
+  let lang='ko';
+
+  function getLang(){ try{ return localStorage.getItem(KEY)||'ko'; }catch(e){ return 'ko'; } }
+  function norm(s){ return s.replace(/\s+/g,' ').trim(); }
+
+  function translateText(orig){
+    const m=orig.match(/^(\s*)([\s\S]*?)(\s*)$/);
+    const lead=m[1], core=norm(m[2]), trail=m[3];
+    if(!core) return orig;
+    const en=dict[core];
+    return (en!=null)? (lead+en+trail) : orig;
+  }
+
+  function walk(node){
+    if(node.nodeType===1){ // element
+      const tag=node.tagName;
+      if(tag==='SCRIPT'||tag==='STYLE'||tag==='NOSCRIPT') return;
+      if(node.hasAttribute('data-i18n-skip')) return;
+      if(node.hasAttribute('data-i18n-ph')){
+        if(!phOrig.has(node)) phOrig.set(node, node.getAttribute('placeholder')||'');
+        const ko=phOrig.get(node);
+        node.setAttribute('placeholder', lang==='en' ? (dict[norm(ko)]||ko) : ko);
+      }
+      if(node.hasAttribute('data-i18n-block')){
+        if(!blockOrig.has(node)) blockOrig.set(node, {html:node.innerHTML, key:norm(node.textContent||'')});
+        const rec=blockOrig.get(node);
+        if(lang==='en'){
+          let en=dict[rec.key];
+          if(en==null){
+            // try with leading bull/bear marker stripped ("▲ X" / "▼ X" → "X")
+            const stripped=rec.key.replace(/^[▲▼]\s*/,'');
+            if(stripped!==rec.key && dict[stripped]!=null){
+              const mk=rec.key.slice(0,1);
+              en=mk+' '+dict[stripped];
+            }
+          }
+          if(en!=null) node.textContent=en;
+          else node.innerHTML=rec.html;
+        } else {
+          node.innerHTML=rec.html;
+        }
+        return;
+      }
+      for(let c=node.firstChild;c;c=c.nextSibling) walk(c);
+    }else if(node.nodeType===3){ // text
+      const v=node.nodeValue;
+      if(!v || !v.trim()) return;
+      if(!txtOrig.has(node)) txtOrig.set(node, v);
+      const orig=txtOrig.get(node);
+      node.nodeValue = (lang==='en') ? translateText(orig) : orig;
+    }
+  }
+
+  function apply(){
+    document.documentElement.setAttribute('lang', lang);
+    if(document.body) walk(document.body);
+    updateToggle();
+  }
+
+  function setLang(l){
+    lang=l;
+    try{ localStorage.setItem(KEY,l); }catch(e){}
+    listeners.forEach(fn=>{ try{ fn(lang); }catch(e){} });  // let pages re-render dynamic parts first
+    apply();
+  }
+
+  function t(ko){ return lang==='en' ? (dict[norm(ko)]!=null?dict[norm(ko)]:ko) : ko; }
+
+  function register(d, onChange){
+    if(d){ for(const k in d){ dict[norm(k)]=d[k]; } }
+    if(onChange){ listeners.push(onChange); try{ onChange(lang); }catch(e){} }
+    apply();
+  }
+
+  /* ---- toggle UI ---- */
+  function buildToggle(){
+    const theme=document.getElementById('themeBtn');
+    if(!theme || document.getElementById('langToggle')) return;
+    const wrap=document.createElement('div');
+    wrap.id='langToggle';
+    wrap.setAttribute('role','group');
+    wrap.setAttribute('aria-label','Language');
+    wrap.innerHTML='<button type="button" data-l="ko">KO</button><button type="button" data-l="en">EN</button>';
+    theme.parentNode.insertBefore(wrap, theme);
+    wrap.addEventListener('click',e=>{ const b=e.target.closest('button'); if(b) setLang(b.dataset.l); });
+    if(!document.getElementById('langToggleStyle')){
+      const st=document.createElement('style'); st.id='langToggleStyle';
+      st.textContent=`
+        #langToggle{display:inline-flex;gap:2px;padding:3px;border-radius:9999px;
+          background:rgba(0,0,0,.05);margin-right:2px}
+        :root[data-theme="dark"] #langToggle{background:rgba(255,255,255,.08)}
+        #langToggle button{border:0;background:transparent;cursor:pointer;
+          font:700 12px/1 var(--font-sans,"Pretendard",sans-serif);letter-spacing:.02em;
+          color:var(--fg-3);padding:7px 10px;border-radius:9999px;transition:background .15s,color .15s}
+        #langToggle button:hover{color:var(--fg-1)}
+        #langToggle button.on{background:#000;color:#fff}
+        :root[data-theme="dark"] #langToggle button.on{background:#fff;color:#000}`;
+      document.head.appendChild(st);
+    }
+  }
+  function updateToggle(){
+    const wrap=document.getElementById('langToggle'); if(!wrap) return;
+    wrap.querySelectorAll('button').forEach(b=>b.classList.toggle('on', b.dataset.l===lang));
+  }
+
+  function autoMarkBlocks(){
+    // Treat each visually-distinct prose unit as a single translation block,
+    // so inline <b>/<strong>/<span> highlights don't split text into pieces
+    // the dictionary can't match.
+    const sel='.prose p,.factor p,.tldr p,.kpoints li,.risk .body,.wrapup p,.lead,.desc,.sec-lead';
+    document.querySelectorAll(sel).forEach(el=>{
+      if(!el.hasAttribute('data-i18n-block')) el.setAttribute('data-i18n-block','');
+    });
+  }
+
+  function init(){ lang=getLang(); buildToggle(); autoMarkBlocks(); listeners.forEach(fn=>{ try{ fn(lang); }catch(e){} }); apply(); }
+  if(document.readyState==='loading') document.addEventListener('DOMContentLoaded',init);
+  else init();
+
+  window.KOSi18n={ register, t, setLang, get lang(){return lang;}, apply };
+})();
+
+</script>
+<script>
+/* Shared chrome translations (nav + footer + disclaimer) for every page. */
+KOSi18n.register({
+  // brand / nav
+  "KOS ai":"KOS ai",
+  "홈":"Home",
+  "스크리너":"Screener",
+  "업종별":"Industries",
+  "리포트":"Reports",
+  "워치리스트":"Watchlist",
+  // footer headings
+  "서비스":"Services",
+  "회사":"Company",
+  "정책":"Legal",
+  // footer links
+  "About":"About",
+  "문의하기":"Contact",
+  "피드백":"Feedback",
+  "이용약관":"Terms of Service",
+  "개인정보처리방침":"Privacy Policy",
+  // brand tagline
+  "한국 상장사를 위한 AI 투자 리서치. 데이터와 분석을 한 페이지에.":
+    "AI investment research for Korean public companies — data and analysis on a single page.",
+  // disclaimer
+  "면책 조항":"Disclaimer",
+  "· 본 사이트의 모든 AI 분석·리포트는 투자 참고용 정보이며, 투자 권유나 추천이 아닙니다. 투자 판단과 그 결과에 대한 책임은 전적으로 이용자 본인에게 있습니다. 데이터는 지연될 수 있으며 오류가 포함될 수 있습니다.":
+    "· All AI analyses and reports on this site are reference information only — not investment solicitation or a recommendation. You alone are responsible for your investment decisions and their outcomes. Data may be delayed and may contain errors.",
+  // footer bottom
+  "© 2026 KOS ai — All rights reserved.":"© 2026 KOS ai — All rights reserved.",
+  "대표 · 사업자등록번호 · 주소 · 연락처":"CEO · Business Reg. No. · Address · Contact"
+});
+
+</script>
+<style id="en-updown">
+/* English/Western convention: 상승=green, 하락=red (flips KO red/blue when lang=en) */
+:root[lang="en"]{--up:#1f9d57;--down:#e5383b;--up-soft:rgba(31,157,87,0.10);--down-soft:rgba(229,56,59,0.10)}
+:root[lang="en"][data-theme="dark"]{--up:#3ddc84;--down:#ff5b5e;--up-soft:rgba(61,220,132,0.12);--down-soft:rgba(255,91,94,0.12)}
+</style>
+</head>
+<body>
+
+<!-- ============== TOP NAV ============== -->
+<nav class="nav glass" data-screen-label="01 Home · Nav">
+  <a class="brand" href="Home.html">
+    <span class="brand-name">KOS ai</span>
+  </a>
+  <div class="nav-links">
+    <a href="Home.html" class="active">홈</a>
+    <a href="Screener.html">스크리너</a>
+    <a href="Industry v2.html">업종별</a>
+    <a href="Reports.html">리포트</a>
+    <a href="Watchlist.html">워치리스트</a>
+  </div>
+  <div class="nav-spacer"></div>
+  <div class="nav-right">
+    <button class="icon-btn" id="themeBtn" aria-label="테마 전환" title="라이트/다크 전환">
+      <svg id="themeIcon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"/></svg>
+    </button>
+    <button class="icon-btn menu-btn" id="menuBtn" aria-label="메뉴">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M3 6h18M3 12h18M3 18h18"/></svg>
+    </button>
+  </div>
+</nav>
+
+<div class="mobile-menu glass" id="mobileMenu">
+  <a href="Home.html" class="active">홈</a>
+  <a href="Screener.html">스크리너</a>
+  <a href="Industry v2.html">업종별</a>
+  <a href="Reports.html">리포트</a>
+  <a href="Watchlist.html">워치리스트</a>
+</div>
+
+<div class="wrap">
+
+  <!-- ============== HERO ============== -->
+  <header class="hero">
+    <span class="eyebrow"><span class="dot"></span> 매일 업데이트 · 코스피 · 코스닥</span>
+    <h1>한국 상장사,<br><span class="accent">AI 리서치</span>로 한눈에.</h1>
+    <p class="sub">재무·뉴스·밸류에이션을 한 페이지에. 매일 갱신되는 AI 종목 분석으로 시장을 빠르게 파악하세요.</p>
+
+    <div class="search-wrap">
+      <div class="searchbar glass">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="11" cy="11" r="7"/><path d="M21 21l-3.5-3.5"/></svg>
+        <input id="searchInput" data-i18n-ph placeholder="티커 · 종목명 · 업종 검색  (예: 005930, 삼성전자, 반도체)" autocomplete="off" role="combobox" aria-expanded="false" aria-controls="acList" />
+        <button class="search-go" type="button" id="searchBtn" aria-label="검색">검색</button>
+      </div>
+      <div class="ac glass" id="acList" role="listbox" data-i18n-skip></div>
+    </div>
+  </header>
+
+  <!-- ============== LATEST AI REPORTS ============== -->
+  <section class="block" id="reports">
+    <div class="sec-head">
+      <div>
+        <h2>최신 AI 리포트</h2>
+        <p class="sec-sub">검색어로 실시간 필터됩니다</p>
+      </div>
+      <a class="more-link" href="Reports.html">전체 리포트 보기
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+      </a>
+    </div>
+    <div class="card-grid" id="reportGrid" data-i18n-skip></div>
+    <div class="empty-msg" id="reportEmpty">검색 결과가 없습니다.</div>
+  </section>
+
+  <!-- ============== INDUSTRY MOVERS ============== -->
+  <section class="block">
+    <div class="sec-head">
+      <div>
+        <h2>업종별 주목 종목</h2>
+        <p class="sec-sub">업종을 선택해 비교해 보세요</p>
+      </div>
+      <a class="more-link" href="Industry v2.html">업종별 페이지로
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+      </a>
+    </div>
+    <div class="tabs" id="tabs" data-i18n-skip></div>
+    <div class="mover-row" id="moverRow" data-i18n-skip></div>
+  </section>
+
+</div>
+
+<!-- ============== FOOTER ============== -->
+<footer class="foot">
+  <div class="wrap">
+    <div class="foot-inner glass">
+      <div class="foot-grid">
+        <div class="foot-brand">
+          <a class="brand" href="Home.html">
+            <span class="brand-name">KOS ai</span>
+          </a>
+          <p>한국 상장사를 위한 AI 투자 리서치. 데이터와 분석을 한 페이지에.</p>
+        </div>
+        <div class="foot-col">
+          <h4>서비스</h4>
+          <ul>
+            <li><a href="Home.html">홈</a></li>
+            <li><a href="Screener.html">스크리너</a></li>
+            <li><a href="Industry v2.html">업종별</a></li>
+            <li><a href="Reports.html">리포트</a></li>
+            <li><a href="Watchlist.html">워치리스트</a></li>
+          </ul>
+        </div>
+        <div class="foot-col">
+          <h4>회사</h4>
+          <ul>
+            <li><a href="About.html">About</a></li>
+            <li><a href="Contact.html">문의하기</a></li>
+            <li><a href="Feedback.html">피드백</a></li>
+          </ul>
+        </div>
+        <div class="foot-col">
+          <h4>정책</h4>
+          <ul>
+            <li><a href="#">이용약관</a></li>
+            <li><a href="#">개인정보처리방침</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="disclaimer">
+        <b>면책 조항</b> · 본 사이트의 모든 AI 분석·리포트는 투자 참고용 정보이며, 투자 권유나 추천이 아닙니다. 투자 판단과 그 결과에 대한 책임은 전적으로 이용자 본인에게 있습니다. 데이터는 지연될 수 있으며 오류가 포함될 수 있습니다.
+      </div>
+
+      <div class="foot-bottom">
+        <span>© 2026 KOS ai — All rights reserved.</span>
+        <span>대표 · 사업자등록번호 · 주소 · 연락처</span>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<!-- ============================================================
+     Data + reusable renderers
+     ============================================================ -->
+<script>
+/* ---- format helpers (PER 9.2배 · 등락률 21.7% 식) ---- */
+const EN = () => (window.KOSi18n && KOSi18n.lang==='en');
+const KOS = {
+  won: n => EN() ? '₩'+n.toLocaleString('en-US') : n.toLocaleString('ko-KR') + '원',
+  ratio: n => EN() ? n.toFixed(1)+'×' : n.toFixed(1) + '배',
+  pct: n => (n > 0 ? '+' : '') + n.toFixed(2) + '%',
+  pctPlain: n => n.toFixed(1) + '%',
+  T: s => (window.KOSi18n ? KOSi18n.t(s) : s),
+};
+
+/* ---- Reusable Stock Card component ----
+   Reuse on other pages: copy the .kos-card CSS block + this function,
+   then call KOS.stockCard(data). Returns an HTML string. ---- */
+KOS.stockCard = (d) => {
+  const dir = d.change > 0 ? 'up' : d.change < 0 ? 'down' : 'flat';
+  const arw = d.change > 0 ? '▲' : d.change < 0 ? '▼' : '–';
+  return `
+  <a class="kos-card glass" href="Ticker Detail v2.html"
+     data-name="${d.name}" data-ticker="${d.ticker}" data-sector="${d.sector}">
+    <div class="kos-card__top">
+      <span class="kos-ticker">${d.ticker}</span>
+      <span class="kos-sector">${KOS.T(d.sector)}</span>
+    </div>
+    <h3 class="kos-card__name">${KOS.T(d.name)}</h3>
+    <div class="kos-price-row">
+      <span class="kos-price">${KOS.won(d.price)}</span>
+      <span class="kos-change ${dir}"><span class="arw">${arw}</span>${KOS.pct(d.change)}</span>
+    </div>
+    <div class="kos-metrics">
+      <div class="kos-metric"><span class="k">PER</span><span class="v">${KOS.ratio(d.per)}</span></div>
+      <div class="kos-metric"><span class="k">PBR</span><span class="v">${KOS.ratio(d.pbr)}</span></div>
+      <div class="kos-metric"><span class="k">${KOS.T('배당')}</span><span class="v">${KOS.pctPlain(d.div)}</span></div>
+    </div>
+    <div class="kos-ai">
+      <p>${KOS.T(d.ai)}</p>
+    </div>
+    <div class="kos-card__foot">
+      <span>${d.date}</span>
+    </div>
+  </a>`;
+};
+
+/* ---- Compact mover card (industry rail) ---- */
+KOS.moverCard = (d, rank) => {
+  const dir = d.change > 0 ? 'up' : d.change < 0 ? 'down' : 'flat';
+  const arw = d.change > 0 ? '▲' : d.change < 0 ? '▼' : '–';
+  const col = d.change > 0 ? 'var(--up)' : d.change < 0 ? 'var(--down)' : 'var(--flat)';
+  return `
+  <a class="mover-card glass" href="Ticker Detail v2.html">
+    <span class="mover-rank">#${rank}</span>
+    <div class="kos-card__top">
+      <span class="kos-ticker">${d.ticker}</span>
+      <span class="kos-sector">${KOS.T(d.sector)}</span>
+    </div>
+    <h3 class="kos-card__name" style="font-size:16px">${KOS.T(d.name)}</h3>
+    ${spark(d.change, col)}
+    <div class="kos-price-row">
+      <span class="kos-price" style="font-size:18px">${KOS.won(d.price)}</span>
+      <span class="kos-change ${dir}"><span class="arw">${arw}</span>${KOS.pct(d.change)}</span>
+    </div>
+  </a>`;
+};
+
+/* tiny deterministic sparkline */
+function spark(change, color){
+  const up = change >= 0;
+  const seed = Math.abs(change*100)|0;
+  let pts = [], y = 20;
+  for(let i=0;i<14;i++){
+    const r = ((seed*(i+3)*9301+49297)%233280)/233280 - .5;
+    y += r*9 + (up?-0.9:0.9);
+    y = Math.max(5, Math.min(33, y));
+    pts.push((i/13*100).toFixed(1)+','+y.toFixed(1));
+  }
+  return `<svg class="mv-spark" viewBox="0 0 100 38" preserveAspectRatio="none">
+    <polyline points="${pts.join(' ')}" fill="none" stroke="${color}" stroke-width="1.8"
+      stroke-linecap="round" stroke-linejoin="round" opacity=".85"/></svg>`;
+}
+
+/* ---- Data ---- */
+const REPORTS_DEFAULT = [
+  {ticker:'005930',name:'삼성전자',sector:'반도체',price:78400,change:1.55,per:14.2,pbr:1.4,div:2.1,date:'2026-05-25',ai:'HBM 매출 비중 확대에 따른 분기 영업이익률 회복 흐름이 관찰되며, 메모리 가격 사이클은 상승 국면이 지속되고 있다.'},
+  {ticker:'000660',name:'SK하이닉스',sector:'반도체',price:196000,change:2.84,per:9.2,pbr:1.9,div:1.2,date:'2026-05-25',ai:'HBM3E 12단 양산 진입과 AI 가속기 수요 확대로 분기 실적 가시성이 비교적 높은 수준으로 평가된다.'},
+  {ticker:'035420',name:'NAVER',sector:'IT 서비스',price:214500,change:0.94,per:21.7,pbr:1.3,div:0.6,date:'2026-05-24',ai:'AI 검색 개편과 광고 매출 회복이 동행하는 흐름이며, 커머스 부문은 안정적인 마진 구조를 유지하고 있다.'},
+  {ticker:'373220',name:'LG에너지솔루션',sector:'2차전지',price:412500,change:-0.62,per:38.4,pbr:3.1,div:0.3,date:'2026-05-24',ai:'북미 IRA 보조금 의존도가 점진적으로 축소되는 가운데, 신규 수주 잔고는 견조한 수준으로 평가된다.'},
+  {ticker:'005380',name:'현대차',sector:'자동차',price:238500,change:1.28,per:5.6,pbr:0.7,div:5.2,date:'2026-05-24',ai:'하이브리드 차종 비중 확대와 미국 시장 ASP 안정세가 분기 영업이익률에 우호적으로 작용하는 모습이다.'},
+  {ticker:'068270',name:'셀트리온',sector:'바이오',price:186400,change:-0.32,per:42.1,pbr:2.4,div:0.4,date:'2026-05-23',ai:'바이오시밀러 미국 시장 진입 일정과 신규 파이프라인 가시성이 분기별로 점진적으로 개선되는 흐름이다.'},
+];
+const REPORTS = window.KOS_LIVE_DATA?.stocks?.slice(0,6) || REPORTS_DEFAULT;
+
+
+const MOVERS = [
+  {ticker:'042700',name:'한미반도체',sector:'반도체',price:147200,change:1.12,per:33.8,pbr:8.1,div:0.5,ai:''},
+  {ticker:'035720',name:'카카오',sector:'IT 서비스',price:48250,change:-0.82,per:28.4,pbr:1.2,div:0.2,ai:''},
+  {ticker:'207940',name:'삼성바이오로직스',sector:'바이오',price:968000,change:0.86,per:55.2,pbr:6.3,div:0.0,ai:''},
+  {ticker:'003670',name:'포스코퓨처엠',sector:'2차전지',price:285500,change:1.68,per:61.0,pbr:4.2,div:0.3,ai:''},
+  {ticker:'105560',name:'KB금융',sector:'금융',price:78200,change:-0.34,per:6.1,pbr:0.5,div:4.8,ai:''},
+  {ticker:'035900',name:'JYP Ent.',sector:'엔터',price:62400,change:1.94,per:18.9,pbr:4.6,div:0.7,ai:''},
+  {ticker:'010140',name:'삼성중공업',sector:'조선·방산',price:11250,change:2.45,per:24.3,pbr:1.8,div:0.0,ai:''},
+];
+
+const TAB_SECTORS = ['전체','반도체','2차전지','바이오','자동차','IT 서비스','금융','엔터','조선·방산'];
+
+/* ---- Render reports (with search filter) ---- */
+const grid = document.getElementById('reportGrid');
+const emptyMsg = document.getElementById('reportEmpty');
+function renderReports(q=''){
+  const t = q.trim().toLowerCase();
+  const list = REPORTS.filter(d =>
+    !t || d.name.toLowerCase().includes(t) || d.ticker.includes(t) || d.sector.toLowerCase().includes(t)
+    || KOS.T(d.name).toLowerCase().includes(t) || KOS.T(d.sector).toLowerCase().includes(t));
+  grid.innerHTML = list.map(KOS.stockCard).join('');
+  emptyMsg.style.display = list.length ? 'none' : 'block';
+}
+renderReports();
+
+/* ---- Render industry tabs + movers ---- */
+const tabsEl = document.getElementById('tabs');
+const moverRow = document.getElementById('moverRow');
+let activeTab = '전체';
+tabsEl.innerHTML = TAB_SECTORS.map(s =>
+  `<button class="tab${s===activeTab?' active':''}" data-sector="${s}">${KOS.T(s)}</button>`).join('');
+function renderMovers(){
+  const list = activeTab==='전체' ? MOVERS : MOVERS.filter(m=>m.sector===activeTab);
+  moverRow.innerHTML = list.length
+    ? list.map((m,i)=>KOS.moverCard(m,i+1)).join('')
+    : `<div class="empty-msg" style="display:block;width:100%">${KOS.T('해당 업종 종목이 없습니다.')}</div>`;
+}
+renderMovers();
+tabsEl.addEventListener('click', e=>{
+  const b = e.target.closest('.tab'); if(!b) return;
+  activeTab = b.dataset.sector;
+  [...tabsEl.children].forEach(c=>c.classList.toggle('active', c===b));
+  renderMovers();
+});
+
+/* ---- Search index (종목 자동완성) ---- */
+const SEARCH_INDEX = (()=>{
+  const extra = [
+    {ticker:'006400',name:'삼성SDI',sector:'2차전지'},
+    {ticker:'009150',name:'삼성전기',sector:'전자부품'},
+    {ticker:'028260',name:'삼성물산',sector:'지주·상사'},
+    {ticker:'032830',name:'삼성생명',sector:'보험'},
+    {ticker:'018260',name:'삼성에스디에스',sector:'IT 서비스'},
+    {ticker:'000270',name:'기아',sector:'자동차'},
+    {ticker:'012330',name:'현대모비스',sector:'자동차'},
+    {ticker:'005490',name:'POSCO홀딩스',sector:'철강·소재'},
+    {ticker:'051910',name:'LG화학',sector:'2차전지'},
+    {ticker:'066570',name:'LG전자',sector:'가전'},
+    {ticker:'055550',name:'신한지주',sector:'금융'},
+    {ticker:'086790',name:'하나금융지주',sector:'금융'},
+    {ticker:'323410',name:'카카오뱅크',sector:'금융'},
+    {ticker:'247540',name:'에코프로비엠',sector:'2차전지'},
+    {ticker:'196170',name:'알테오젠',sector:'바이오'},
+    {ticker:'012450',name:'한화에어로스페이스',sector:'조선·방산'},
+    {ticker:'329180',name:'HD현대중공업',sector:'조선·방산'},
+    {ticker:'259960',name:'크래프톤',sector:'게임'},
+    {ticker:'036570',name:'엔씨소프트',sector:'게임'},
+    {ticker:'352820',name:'하이브',sector:'엔터'},
+    {ticker:'017670',name:'SK텔레콤',sector:'통신'},
+    {ticker:'030200',name:'KT',sector:'통신'},
+    {ticker:'034020',name:'두산에너빌리티',sector:'기계·중공업'},
+    {ticker:'010140',name:'삼성중공업',sector:'조선·방산'},
+  ];
+  const seen = {}, out = [];
+  [...REPORTS, ...MOVERS, ...extra].forEach(s=>{
+    if(seen[s.ticker]) return; seen[s.ticker]=1;
+    out.push({ticker:s.ticker, name:s.name, sector:s.sector});
+  });
+  return out;
+})();
+
+function searchStocks(q){
+  const t=q.trim().toLowerCase(); if(!t) return [];
+  return SEARCH_INDEX.map(s=>{
+    const nm=s.name.toLowerCase();
+    const en=(window.KOSi18n?KOSi18n.t(s.name):s.name).toLowerCase();
+    const esec=(window.KOSi18n?KOSi18n.t(s.sector):s.sector).toLowerCase();
+    let score=-1;
+    if(nm.startsWith(t)||en.startsWith(t)) score=0;
+    else if(s.ticker.startsWith(t)) score=1;
+    else if(nm.includes(t)||en.includes(t)) score=2;
+    else if(s.ticker.includes(t)) score=3;
+    else if(s.sector.toLowerCase().includes(t)||esec.includes(t)) score=4;
+    return {s,score};
+  }).filter(x=>x.score>=0)
+    .sort((a,b)=>a.score-b.score || a.s.name.localeCompare(b.s.name,'ko'))
+    .slice(0,8).map(x=>x.s);
+}
+function hl(name,q){
+  const t=q.trim(); if(!t) return name;
+  const i=name.toLowerCase().indexOf(t.toLowerCase());
+  if(i<0) return name;
+  return name.slice(0,i)+'<mark>'+name.slice(i,i+t.length)+'</mark>'+name.slice(i+t.length);
+}
+
+/* ---- Search wiring + autocomplete ---- */
+const input = document.getElementById('searchInput');
+const acList = document.getElementById('acList');
+let acItems = [], acActive = -1;
+
+function renderAC(){
+  const q=input.value;
+  acItems = searchStocks(q);
+  acActive = -1;
+  if(!q.trim()){ closeAC(); return; }
+  if(acItems.length===0){
+    acList.innerHTML = `<div class="ac-empty">"${q.trim()}" ${KOS.T('검색 결과가 없습니다')}</div>`;
+  } else {
+    acList.innerHTML = acItems.map((s,i)=>
+      `<a class="ac-item" href="Ticker Detail v2.html" data-i="${i}" role="option">
+        <span class="ac-tk">${s.ticker}</span>
+        <span class="ac-nm">${hl(KOS.T(s.name),q)}</span>
+        <span class="ac-sec">${KOS.T(s.sector)}</span>
+      </a>`).join('');
+  }
+  acList.classList.add('show'); input.setAttribute('aria-expanded','true');
+}
+function closeAC(){ acList.classList.remove('show'); input.setAttribute('aria-expanded','false'); acActive=-1; }
+function setActive(n){
+  const els=[...acList.querySelectorAll('.ac-item')]; if(!els.length) return;
+  acActive=(n+els.length)%els.length;
+  els.forEach((el,i)=>el.classList.toggle('active', i===acActive));
+  els[acActive].scrollIntoView({block:'nearest'});
+}
+
+input.addEventListener('input', ()=>{ renderReports(input.value); renderAC(); });
+input.addEventListener('focus', ()=>{ if(input.value.trim()) renderAC(); });
+input.addEventListener('keydown', e=>{
+  if(!acList.classList.contains('show')) return;
+  if(e.key==='ArrowDown'){ e.preventDefault(); setActive(acActive+1); }
+  else if(e.key==='ArrowUp'){ e.preventDefault(); setActive(acActive-1); }
+  else if(e.key==='Enter'){
+    if(acActive>=0 && acItems[acActive]){ e.preventDefault(); window.location.href='Ticker Detail v2.html'; }
+  } else if(e.key==='Escape'){ closeAC(); }
+});
+document.addEventListener('click', e=>{ if(!e.target.closest('.search-wrap')) closeAC(); });
+
+document.getElementById('searchBtn').addEventListener('click', ()=>{
+  renderReports(input.value);
+  closeAC();
+  document.getElementById('reports').scrollIntoView({behavior:'smooth',block:'start'});
+});
+
+/* ---- Mobile menu ---- */
+const menuBtn = document.getElementById('menuBtn');
+const mobileMenu = document.getElementById('mobileMenu');
+menuBtn.addEventListener('click', ()=>mobileMenu.classList.toggle('open'));
+mobileMenu.querySelectorAll('a').forEach(a=>a.addEventListener('click',()=>mobileMenu.classList.remove('open')));
+
+/* ---- Theme toggle (light/dark) ---- */
+const root = document.documentElement;
+const themeBtn = document.getElementById('themeBtn');
+const sunSVG = '<circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"/>';
+const moonSVG = '<path d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8z"/>';
+function applyTheme(t){
+  root.setAttribute('data-theme', t);
+  document.getElementById('themeIcon').innerHTML = t==='dark' ? sunSVG : moonSVG;
+  try{ localStorage.setItem('kos-theme', t); }catch(e){}
+}
+let saved='light'; try{ saved = localStorage.getItem('kos-theme')||'light'; }catch(e){}
+applyTheme(saved);
+themeBtn.addEventListener('click', ()=>applyTheme(root.getAttribute('data-theme')==='dark'?'light':'dark'));
+
+/* ---- i18n: Home dictionary + dynamic re-render ---- */
+const HOME_DICT = {
+  "매일 업데이트 · 코스피 · 코스닥":"Updated daily · KOSPI · KOSDAQ",
+  "한국 상장사,":"Korean equities,",
+  "AI 리서치":"AI research",
+  "로 한눈에.":" at a glance.",
+  "재무·뉴스·밸류에이션을 한 페이지에. 매일 갱신되는 AI 종목 분석으로 시장을 빠르게 파악하세요.":"Financials, news, and valuation on one page. Stay on top of the market with daily-updated AI stock analysis.",
+  "최신 AI 리포트":"Latest AI Reports",
+  "검색어로 실시간 필터됩니다":"Filters in real time as you type",
+  "전체 리포트 보기":"View all reports",
+  "업종별 주목 종목":"Notable Stocks by Industry",
+  "업종을 선택해 비교해 보세요":"Pick an industry to compare",
+  "업종별 페이지로":"Go to Industries",
+  "검색 결과가 없습니다.":"No results found.",
+  "검색 결과가 없습니다":"No results found",
+  "검색":"Search",
+  "배당":"Yield",
+  "전체":"All",
+  "해당 업종 종목이 없습니다.":"No stocks in this industry.",
+  "티커 · 종목명 · 업종 검색  (예: 005930, 삼성전자, 반도체)":"Search ticker · name · industry (e.g. 005930, Samsung Electronics, semiconductors)",
+  // sectors
+  "반도체":"Semiconductors","IT 서비스":"IT Services","2차전지":"Batteries","자동차":"Automotive","바이오":"Biotech","금융":"Finance","엔터":"Entertainment","조선·방산":"Shipbuilding & Defense","전자부품":"Electronic Components","지주·상사":"Holdings & Trading","보험":"Insurance","철강·소재":"Steel & Materials","가전":"Home Appliances","게임":"Games","통신":"Telecom","기계·중공업":"Machinery & Heavy Ind.",
+  // companies
+  "삼성전자":"Samsung Electronics","SK하이닉스":"SK Hynix","NAVER":"NAVER","LG에너지솔루션":"LG Energy Solution","현대차":"Hyundai Motor","셀트리온":"Celltrion","한미반도체":"Hanmi Semiconductor","카카오":"Kakao","삼성바이오로직스":"Samsung Biologics","포스코퓨처엠":"POSCO Future M","KB금융":"KB Financial","JYP Ent.":"JYP Ent.","삼성중공업":"Samsung Heavy Industries","삼성SDI":"Samsung SDI","삼성전기":"Samsung Electro-Mechanics","삼성물산":"Samsung C&T","삼성생명":"Samsung Life","삼성에스디에스":"Samsung SDS","기아":"Kia","현대모비스":"Hyundai Mobis","POSCO홀딩스":"POSCO Holdings","LG화학":"LG Chem","LG전자":"LG Electronics","신한지주":"Shinhan Financial","하나금융지주":"Hana Financial","카카오뱅크":"KakaoBank","에코프로비엠":"EcoPro BM","알테오젠":"Alteogen","한화에어로스페이스":"Hanwha Aerospace","HD현대중공업":"HD Hyundai Heavy","크래프톤":"Krafton","엔씨소프트":"NCsoft","하이브":"HYBE","SK텔레콤":"SK Telecom","KT":"KT","두산에너빌리티":"Doosan Enerbility",
+  // AI summaries
+  "HBM 매출 비중 확대에 따른 분기 영업이익률 회복 흐름이 관찰되며, 메모리 가격 사이클은 상승 국면이 지속되고 있다.":"Quarterly operating margins are recovering as the HBM revenue mix expands, and the memory price cycle remains in an upswing.",
+  "HBM3E 12단 양산 진입과 AI 가속기 수요 확대로 분기 실적 가시성이 비교적 높은 수준으로 평가된다.":"Entry into HBM3E 12-layer mass production and rising AI-accelerator demand give the quarter relatively high earnings visibility.",
+  "AI 검색 개편과 광고 매출 회복이 동행하는 흐름이며, 커머스 부문은 안정적인 마진 구조를 유지하고 있다.":"An AI search revamp and an ad-revenue recovery are moving in tandem, while the commerce segment keeps a stable margin structure.",
+  "북미 IRA 보조금 의존도가 점진적으로 축소되는 가운데, 신규 수주 잔고는 견조한 수준으로 평가된다.":"Reliance on North American IRA subsidies is gradually easing, while the new-order backlog is assessed as solid.",
+  "하이브리드 차종 비중 확대와 미국 시장 ASP 안정세가 분기 영업이익률에 우호적으로 작용하는 모습이다.":"A richer hybrid model mix and stable U.S. ASPs are working in favor of the quarter's operating margin.",
+  "바이오시밀러 미국 시장 진입 일정과 신규 파이프라인 가시성이 분기별로 점진적으로 개선되는 흐름이다.":"The U.S. biosimilar launch timeline and new-pipeline visibility are improving gradually quarter by quarter."
+};
+if(window.KOSi18n){
+  KOSi18n.register(HOME_DICT, function(){
+    tabsEl.innerHTML = TAB_SECTORS.map(s => `<button class="tab${s===activeTab?' active':''}" data-sector="${s}">${KOS.T(s)}</button>`).join('');
+    renderReports(input.value);
+    renderMovers();
+    if(input.value.trim()) renderAC();
+  });
+}
+</script>
+
+</body>
+</html>
