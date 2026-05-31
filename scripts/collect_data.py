@@ -257,7 +257,7 @@ def collect_pykrx_fallback(date):
 
     print("  [폴백] 개별 종목 수집 시도 중...")
     results = {}
-    debug_logged = False
+    debug_info = {}
 
     for ticker, sector in SECTOR_MAP.items():
         try:
@@ -270,25 +270,34 @@ def collect_pykrx_fallback(date):
             if not name:
                 continue
 
-            # 처음 성공한 종목의 컬럼명 출력 (디버그)
-            if not debug_logged:
-                print(f"  [디버그] ohlcv 컬럼: {list(df_ohlcv.columns)}")
-                print(f"  [디버그] ohlcv 첫 행: {dict(row)}")
-                debug_logged = True
+            # 첫 종목의 컬럼 및 값 디버그 저장
+            if not debug_info:
+                debug_info["ohlcv_cols"] = [str(c) for c in df_ohlcv.columns]
+                debug_info["ohlcv_sample"] = {str(k): str(v) for k, v in row.items()}
+                debug_info["ohlcv_by_pos"] = [str(row.iloc[i]) for i in range(len(row))]
 
-            # 종가 컬럼 감지
-            close_col = find_col(df_ohlcv.columns, "종가")
-            chg_col   = find_col(df_ohlcv.columns, "등락률", "등락")
-            vol_col   = find_col(df_ohlcv.columns, "거래량")
-            tvol_col  = find_col(df_ohlcv.columns, "거래대금")
+            # 컬럼 감지 (이름 기반 우선, 위치 기반 폴백)
+            cols = list(df_ohlcv.columns)
+            close_col = find_col(cols, "종가")
+            chg_col   = find_col(cols, "등락률", "등락")
+            vol_col   = find_col(cols, "거래량")
+            tvol_col  = find_col(cols, "거래대금")
 
-            price = safe_int(row[close_col]) if close_col else 0
-            if price == 0:
-                # 위치 기반 접근 (종가는 보통 4번째 컬럼)
-                try:
-                    price = safe_int(row.iloc[3])
-                except Exception:
-                    pass
+            # 이름 기반 접근
+            price  = safe_int(row[close_col]) if close_col else 0
+            change = safe_float(row[chg_col]) if chg_col else 0.0
+            volume = safe_int(row[vol_col])   if vol_col  else 0
+            tvol   = safe_int(row[tvol_col])  if tvol_col else 0
+
+            # 위치 기반 폴백 (pykrx 표준: 시가0 고가1 저가2 종가3 거래량4 거래대금5 등락률6)
+            if price == 0 and len(cols) > 3:
+                price = safe_int(row.iloc[3])
+            if volume == 0 and len(cols) > 4:
+                volume = safe_int(row.iloc[4])
+            if tvol == 0 and len(cols) > 5:
+                tvol = safe_int(row.iloc[5])
+            if change == 0.0 and len(cols) > 6:
+                change = safe_float(row.iloc[6])
 
             # 시가총액 조회
             df_cap = krx.get_market_cap_by_date(date, date, ticker)
@@ -296,25 +305,28 @@ def collect_pykrx_fallback(date):
             shares = 0
             if df_cap is not None and not df_cap.empty:
                 cap_row = df_cap.iloc[0]
-                if not debug_logged or ticker == "005930":
-                    print(f"  [디버그] cap 컬럼({ticker}): {list(df_cap.columns)}")
-                    print(f"  [디버그] cap 첫 행: {dict(cap_row)}")
+                cap_cols = list(df_cap.columns)
 
-                # 이름 기반 → 위치 기반 순으로 시도
-                mcap_col = find_col(df_cap.columns, "시가총액", "시총", "Mkt", "mkt", "cap")
-                sh_col   = find_col(df_cap.columns, "상장주식수", "주식수", "shares", "Shares")
+                if "cap_cols" not in debug_info:
+                    debug_info["cap_cols"] = [str(c) for c in cap_cols]
+                    debug_info["cap_sample"] = {str(k): str(v) for k, v in cap_row.items()}
+                    debug_info["cap_by_pos"] = [str(cap_row.iloc[i]) for i in range(len(cap_row))]
+
+                # 이름 기반
+                mcap_col = find_col(cap_cols, "시가총액", "시총", "Mkt", "mkt")
+                sh_col   = find_col(cap_cols, "상장주식수", "주식수", "Shares")
 
                 if mcap_col:
                     mcap_won = safe_int(cap_row[mcap_col])
-                elif len(df_cap.columns) >= 1:
-                    # 첫 번째 컬럼을 시가총액으로 가정 (pykrx 표준 순서)
+                if not mcap_won and len(cap_cols) >= 1:
+                    # 위치 기반: 첫 컬럼이 보통 시총
                     v = safe_int(cap_row.iloc[0])
-                    if v > 1e10:  # 최소 100억 이상이어야 시총으로 유효
+                    if v > 1e10:
                         mcap_won = v
 
                 if sh_col:
                     shares = safe_int(cap_row[sh_col])
-                elif len(df_cap.columns) >= 4:
+                if not shares and len(cap_cols) >= 4:
                     shares = safe_int(cap_row.iloc[3])
 
             results[ticker] = {
@@ -323,9 +335,9 @@ def collect_pykrx_fallback(date):
                 "market":  "코스피",
                 "sector":  sector,
                 "price":   price,
-                "change":  round(safe_float(row[chg_col]) if chg_col else 0.0, 2),
-                "volume":       safe_int(row[vol_col]) if vol_col else 0,
-                "trading_value":safe_int(row[tvol_col]) if tvol_col else 0,
+                "change":  round(change, 2),
+                "volume":       volume,
+                "trading_value":tvol,
                 "mcap":  round(mcap_won / 1e12, 2),
                 "shares":shares,
                 "per":  0.0,
@@ -341,9 +353,20 @@ def collect_pykrx_fallback(date):
             time.sleep(0.1)
 
         except Exception as e:
-            pass  # 개별 종목 오류는 무시
+            print(f"    [{ticker}] 오류: {e}")
 
     print(f"  [폴백] {len(results)}개 종목 수집 완료")
+
+    # 디버그 정보 파일로 저장 (GitHub API로 확인 가능)
+    try:
+        Path("data").mkdir(exist_ok=True)
+        Path("data/debug.json").write_text(
+            json.dumps(debug_info, ensure_ascii=False, indent=2), encoding="utf-8"
+        )
+        print(f"  [디버그] data/debug.json 저장 완료")
+    except Exception:
+        pass
+
     return results
 
 
