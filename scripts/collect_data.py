@@ -590,6 +590,19 @@ def enrich_with_dart(results):
             year = datetime.date.today().year - 1
             fs = dart.finstate(ticker, year)
 
+            # 진단: 카카오뱅크·엘앤에프
+            if ticker in ("323410", "066970"):
+                info = {"fs_empty": (fs is None or fs.empty)}
+                if fs is not None and not fs.empty:
+                    info["accounts"] = sorted({str(x) for x in fs["account_nm"]})
+                # year-2도 시도
+                try:
+                    fs2 = dart.finstate(ticker, year - 1)
+                    info["fs2_empty"] = (fs2 is None or fs2.empty)
+                except Exception as e:
+                    info["fs2_err"] = str(e)
+                debug_info.setdefault("missing", {})[ticker] = info
+
             revenue = revenue_prev = op_profit = net_income = equity = liabilities = 0
             if fs is not None and not fs.empty:
                 def get_amount(account_name, field="thstrm_amount"):
