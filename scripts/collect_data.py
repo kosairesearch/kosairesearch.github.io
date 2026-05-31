@@ -408,8 +408,12 @@ def get_dart_shares(dart, corp_code, debug_info):
     return 0, None
 
 
-def get_dart_dividend(dart, corp_code, debug_info, dump=False):
-    """DART 배당 리포트(alotMatter)에서 주당 현금배당금(원)을 가져옵니다."""
+def get_dart_pershare(dart, corp_code, debug_info, dump=False):
+    """DART 배당 리포트(alotMatter)에서 공식 주당지표를 가져옵니다.
+
+    반환: {"eps": (연결)주당순이익(원), "dps": 주당현금배당금(원, 보통주)}
+    네이버·FnGuide가 표시하는 것과 동일한 공식 수치입니다.
+    """
     import requests
 
     for year in (datetime.date.today().year - 1, datetime.date.today().year - 2):
@@ -434,23 +438,27 @@ def get_dart_dividend(dart, corp_code, debug_info, dump=False):
                     for r in jo["list"]
                 ]
 
-            # 주당 현금배당금(원) 행 탐색 (보통주 우선)
-            dps = 0
+            eps = dps = 0
             for r in jo["list"]:
-                se = str(r.get("se", ""))
-                if "주당" in se and "현금배당금" in se:
-                    knd = str(r.get("stock_knd", ""))
-                    if knd in ("-", "") or "보통" in knd:
-                        v = safe_int(r.get("thstrm", 0))
-                        if v > 0:
-                            dps = v
-                            break
-            if dps > 0:
-                return dps  # 원 단위 DPS 반환 (수익률은 호출부에서 가격으로 계산)
+                se  = str(r.get("se", ""))
+                knd = str(r.get("stock_knd", ""))
+                is_common = knd in ("-", "") or "보통" in knd
+                # (연결)주당순이익 → 공식 EPS
+                if "주당순이익" in se and eps == 0:
+                    v = safe_int(r.get("thstrm", 0))
+                    if v > 0:
+                        eps = v
+                # 주당 현금배당금 (보통주)
+                if "주당" in se and "현금배당금" in se and is_common and dps == 0:
+                    v = safe_int(r.get("thstrm", 0))
+                    if v > 0:
+                        dps = v
+            if eps > 0 or dps > 0:
+                return {"eps": eps, "dps": dps}
         except Exception as e:
             if "div_error" not in debug_info:
                 debug_info["div_error"] = f"{type(e).__name__}: {e}"
-    return 0
+    return {"eps": 0, "dps": 0}
 
 
 def enrich_with_dart(results):
@@ -517,6 +525,11 @@ def enrich_with_dart(results):
             results[ticker]["debt"] = debt
             results[ticker]["rev"]  = rev
 
+            # 공식 주당지표(EPS·DPS) — 네이버/FnGuide와 동일
+            ps = get_dart_pershare(dart, corp_code, debug_info, dump=(ticker == "005930"))
+            eps_official = ps["eps"]
+            dps = ps["dps"]
+
             # 상장주식수·시장구분 → 시총·EPS·BPS·PER·PBR 계산
             shares, market = get_dart_shares(dart, corp_code, debug_info)
             if market:
@@ -524,19 +537,20 @@ def enrich_with_dart(results):
             if shares > 0:
                 results[ticker]["shares"] = shares
                 results[ticker]["mcap"]   = round(price * shares / 1e12, 2)
-                if net_income != 0:
-                    eps = round(net_income / shares)
-                    results[ticker]["eps"] = eps
-                    if eps > 0:
-                        results[ticker]["per"] = round(price / eps, 1)
+                # BPS = 자본총계 / 상장주식수
                 if equity > 0:
                     bps = round(equity / shares)
                     results[ticker]["bps"] = bps
                     if bps > 0:
                         results[ticker]["pbr"] = round(price / bps, 2)
 
+            # EPS·PER: 공식 (연결)주당순이익 우선, 없으면 순이익/주식수로 계산
+            eps = eps_official if eps_official > 0 else (round(net_income / shares) if shares > 0 and net_income != 0 else 0)
+            if eps > 0:
+                results[ticker]["eps"] = eps
+                results[ticker]["per"] = round(price / eps, 1)
+
             # 배당수익률 = 주당 현금배당금 / 현재가 × 100 (네이버 방식)
-            dps = get_dart_dividend(dart, corp_code, debug_info, dump=(ticker == "005930"))
             if dps > 0 and price > 0:
                 results[ticker]["div"] = round(dps / price * 100, 2)
 
