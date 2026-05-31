@@ -528,19 +528,24 @@ def enrich_with_dart(results):
             year = datetime.date.today().year - 1
             fs = dart.finstate(ticker, year)
 
-            # 진단: SK하이닉스·현대차 자본 관련 행 전체 덤프
-            if ticker in ("000660", "005380") and fs is not None and not fs.empty:
-                key = "cap_" + ticker
-                debug_info[key] = {"cols": list(fs.columns), "rows": []}
-                for _, r in fs.iterrows():
-                    nm = str(r.get("account_nm", ""))
-                    if any(k in nm for k in ["자본", "지배"]):
-                        debug_info[key]["rows"].append({
-                            "nm": nm,
-                            "fs_div": str(r.get("fs_div", "")),
-                            "sj_div": str(r.get("sj_div", "")),
-                            "thstrm": str(r.get("thstrm_amount", "")),
-                        })
+            # 진단: SK하이닉스·현대차 최근분기 전체재무제표(연결)에서 지배지분 확인
+            if ticker in ("000660", "005380"):
+                key = "fa_" + ticker
+                debug_info[key] = {}
+                cur_y = datetime.date.today().year
+                for yr, reprt in [(cur_y, "11013"), (cur_y - 1, "11011")]:
+                    try:
+                        fa = dart.finstate_all(ticker, yr, reprt, fs_div="CFS")
+                        if fa is None or fa.empty:
+                            continue
+                        rows = []
+                        for _, r in fa.iterrows():
+                            nm = str(r.get("account_nm", ""))
+                            if ("자본" in nm and "총계" in nm) or "지배" in nm:
+                                rows.append({"nm": nm, "amt": str(r.get("thstrm_amount", ""))})
+                        debug_info[key][f"{yr}_{reprt}"] = rows
+                    except Exception as e:
+                        debug_info[key][f"{yr}_{reprt}_err"] = str(e)
 
             revenue = revenue_prev = op_profit = net_income = equity = liabilities = 0
             if fs is not None and not fs.empty:
