@@ -717,7 +717,9 @@ def enrich_with_dart(results):
                 eps = round(jibae_frac * ttm_total / total_sh)
                 if eps != 0:
                     results[ticker]["eps"] = eps
-                    results[ticker]["per"] = round(price / eps, 1)
+                    # 적자(eps<=0)는 PER 미산정 → 화면에서 '-'로 표시 (토스/네이버와 동일 관행)
+                    if eps > 0:
+                        results[ticker]["per"] = round(price / eps, 1)
 
             # 배당수익률 = 주당 현금배당금 / 현재가 × 100 (네이버 방식)
             if dps > 0 and price > 0:

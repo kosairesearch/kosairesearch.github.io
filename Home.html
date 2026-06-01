@@ -734,7 +734,7 @@ KOSi18n.register({
 const EN = () => (window.KOSi18n && KOSi18n.lang==='en');
 const KOS = {
   won: n => EN() ? '₩'+n.toLocaleString('en-US') : n.toLocaleString('ko-KR') + '원',
-  ratio: n => EN() ? n.toFixed(1)+'×' : n.toFixed(1) + '배',
+  ratio: n => (n==null||n<=0) ? '-' : (EN() ? n.toFixed(1)+'×' : n.toFixed(1) + '배'),
   pct: n => (n > 0 ? '+' : '') + n.toFixed(2) + '%',
   pctPlain: n => n.toFixed(1) + '%',
   T: s => (window.KOSi18n ? KOSi18n.t(s) : s),

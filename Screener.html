@@ -740,7 +740,7 @@ function rowHtml(s){
     <td>${KOS.won(s.price)}</td>
     <td><span class="chg ${dir}"><span class="a">${arw}</span> ${KOS.pct(s.change)}</span></td>
     <td><b>${KOS.mcap(s.mcap)}</b></td>
-    <td>${s.per.toFixed(1)}${EN()?'×':'배'}</td>
+    <td>${s.per>0?s.per.toFixed(1)+(EN()?'×':'배'):'-'}</td>
     <td>${s.pbr.toFixed(1)}${EN()?'×':'배'}</td>
     <td>${s.roe.toFixed(1)}%</td>
     <td>${s.div.toFixed(1)}%</td>
