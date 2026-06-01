@@ -300,6 +300,7 @@ def collect_pykrx_fallback(date):
             results[ticker] = {
                 "ticker":  ticker,
                 "name":    name,
+                "name_en": "",   # 영문 종목명 (enrich_with_dart에서 DART로 채움)
                 "market":  "코스피",
                 "sector":  sector,
                 "price":   price,
@@ -605,6 +606,17 @@ def enrich_with_dart(results):
             corp_code = dart.find_corp_code(ticker)
             if not corp_code:
                 continue
+
+            # 영문 종목명 (영어 모드 표시용)
+            try:
+                info = dart.company(corp_code)
+                name_en = ""
+                if info is not None:
+                    name_en = (info.get("corp_name_eng") if hasattr(info, "get") else "") or ""
+                if name_en:
+                    results[ticker]["name_en"] = name_en.strip()
+            except Exception:
+                pass
 
             year = datetime.date.today().year - 1
             fs = dart.finstate(ticker, year)
