@@ -456,7 +456,8 @@ tbody tr:first-child td{border-top:1px solid var(--border-2)}
     "검색 결과가 없습니다":"No results found",
     "다른 종목명·티커·업종으로 검색해 보세요.":"Try a different name, ticker, or sector.",
     "해당 업종 종목이 없습니다.":"No stocks in this sector.",
-    "관심 종목":"Watchlist","관심종목":"Watchlist"
+    "관심 종목":"Watchlist","관심종목":"Watchlist",
+    "코스피":"KOSPI","코스닥":"KOSDAQ","코넥스":"KONEX"
   });
   function cleanEn(s){
     s=(s||'').trim();
@@ -718,7 +719,7 @@ const state={q:'',filters:{},sortKey:'mcap',sortDir:-1,page:1,pageSize:10};
 /* ===== filtering ===== */
 function passes(s){
   const q=state.q.trim().toLowerCase();
-  if(q && !(s.name.toLowerCase().includes(q)||s.ticker.includes(q)||s.sector.toLowerCase().includes(q))) return false;
+  if(q && !(s.name.toLowerCase().includes(q)||s.ticker.includes(q)||s.sector.toLowerCase().includes(q)||T(s.name).toLowerCase().includes(q)||T(s.sector).toLowerCase().includes(q))) return false;
   for(const k in state.filters){
     const f=FIELDS[k],v=state.filters[k];
     if(f.type==='segment'){ if(v!=='전체'&&s.market!==v) return false; }

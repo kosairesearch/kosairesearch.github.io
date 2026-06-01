@@ -348,7 +348,8 @@ body::before{content:"";position:fixed;inset:0;z-index:-1;pointer-events:none;
     "검색 결과가 없습니다":"No results found",
     "다른 종목명·티커·업종으로 검색해 보세요.":"Try a different name, ticker, or sector.",
     "해당 업종 종목이 없습니다.":"No stocks in this sector.",
-    "관심 종목":"Watchlist","관심종목":"Watchlist"
+    "관심 종목":"Watchlist","관심종목":"Watchlist",
+    "코스피":"KOSPI","코스닥":"KOSDAQ","코넥스":"KONEX"
   });
   function cleanEn(s){
     s=(s||'').trim();
@@ -577,7 +578,7 @@ function rowHtml(r,i){
   return `<a class="rl-row" href="Ticker Detail v2.html" data-tk="${r.ticker}">
     <span class="c-rank">${i+1}</span>
     <div class="c-nm"><div class="nm">${T(r.name)}</div>
-      <div class="id"><span class="tk">${r.ticker}</span><span class="dot">·</span><span>${r.market}</span><span class="dot">·</span><span>${T(r.sector)}</span></div></div>
+      <div class="id"><span class="tk">${r.ticker}</span><span class="dot">·</span><span>${T(r.market)}</span><span class="dot">·</span><span>${T(r.sector)}</span></div></div>
     <div class="c-price"><div class="px">${KOS.won(r.price)}</div><div class="ch ${dir}"><span style="font-size:10px">${arw}</span> ${KOS.pct(r.change)}</div></div>
     <p class="c-ai">${T(r.ai)}</p>
     <div class="c-date">${r.date || (window.KOS_LIVE_DATA && window.KOS_LIVE_DATA.dataDate ? window.KOS_LIVE_DATA.dataDate.replace(/(\d{4})(\d{2})(\d{2})/,'$1-$2-$3') : '')}</div>
