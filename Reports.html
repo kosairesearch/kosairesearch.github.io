@@ -564,7 +564,7 @@ function getList(){
   const t=state.q.trim().toLowerCase();
   let l=REPORTS.filter(r=>{
     if(state.sector!=='전체'&&r.sector!==state.sector)return false;
-    if(t&&!(r.name.toLowerCase().includes(t)||r.ticker.includes(t)||r.sector.toLowerCase().includes(t)))return false;
+    if(t&&!(r.name.toLowerCase().includes(t)||r.ticker.includes(t)||r.sector.toLowerCase().includes(t)||T(r.name).toLowerCase().includes(t)||T(r.sector).toLowerCase().includes(t)))return false;
     return true;
   });
   if(state.sort==='mcap')l.sort((a,b)=>b.mcap-a.mcap);
