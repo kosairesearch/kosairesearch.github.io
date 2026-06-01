@@ -450,16 +450,10 @@ def detect_latest_quarter(dart):
 
 
 def get_dart_controlling_equity(dart, ticker, q_year, q_reprt, debug_info, dump=False):
-    """DART 전체재무제표(연결)에서 지배주주지분 및 지배주주 순이익을 가져옵니다.
+    """DART 전체재무제표(연결)에서 최근 분기 지배주주지분(원)을 가져옵니다.
 
-    반환 dict: {
-      "equity":       최근 분기 지배주주지분(원, PBR용),
-      "jibae_ni":     당기 지배주주 순이익(분기 누적),
-      "jibae_ni_prev":전년동기 지배주주 순이익(분기 누적),
-      "is_quarter":   분기보고서 여부(아니면 연간)
-    }
-    네이버 PER/PBR은 지배주주 기준이므로 연결 전체가 아닌 지배주주 수치를 씁니다.
-    (속도 최적화: finstate_all 1회로 지분+순이익 동시 추출, 별도 분기 조회 불필요)
+    네이버 PBR은 최근 분기 지배주주지분 기준이므로 연간이 아닌 최근 분기를 씁니다.
+    (속도 최적화: 탐지된 최근 분기 1개만 조회, 실패 시 전년 사업보고서로 폴백)
     """
     cur = datetime.date.today().year
 
@@ -467,46 +461,48 @@ def get_dart_controlling_equity(dart, ticker, q_year, q_reprt, debug_info, dump=
         try:
             fa = dart.finstate_all(ticker, yr, reprt, fs_div="CFS")
             if fa is None or fa.empty:
-                return None
-            controlling = equity_total = noncontrol = 0
-            jibae_ni = jibae_ni_prev = None
+                return 0
+            controlling = 0   # 지배기업 소유주지분 (직접 행)
+            equity_total = 0  # 자본총계 (정확히 일치)
+            noncontrol = 0    # 비지배지분
             for _, r in fa.iterrows():
                 nm = str(r.get("account_nm", "")).strip()
                 sj = str(r.get("sj_div", ""))
+                if sj != "BS":
+                    continue
                 v = safe_int(r.get("thstrm_amount", 0))
-                if sj == "BS":
-                    nm_compact = nm.replace(" ", "")
-                    if "지배" in nm and "소유" in nm:
-                        controlling = max(controlling, v)
-                    elif "비지배" in nm:
-                        noncontrol = max(noncontrol, v)
-                    elif nm_compact == "자본총계":
-                        equity_total = max(equity_total, v)
-                elif sj in ("IS", "CIS"):
-                    # 지배기업 소유주 귀속 당기순이익
-                    if "지배" in nm and "소유" in nm and ("순이익" in nm or "귀속" in nm) and "비지배" not in nm:
-                        if jibae_ni is None:   # 손익계산서(IS) 우선, 첫 행 사용
-                            jibae_ni = v
-                            jibae_ni_prev = safe_int(r.get("frmtrm_amount", 0))
-            equity = controlling if controlling > 0 else (equity_total - noncontrol if equity_total > 0 else 0)
+                nm_compact = nm.replace(" ", "")
+                if "지배" in nm and "소유" in nm:           # 지배기업 소유주지분
+                    controlling = max(controlling, v)
+                elif "비지배" in nm:                         # 비지배지분
+                    noncontrol = max(noncontrol, v)
+                elif nm_compact == "자본총계":               # 자본총계(정확히) — 부채와자본총계 제외
+                    equity_total = max(equity_total, v)
+            # 우선순위: 지배지분 직접 행 > (자본총계 - 비지배지분) > 자본총계
+            if controlling > 0:
+                result = controlling
+            elif equity_total > 0:
+                result = equity_total - noncontrol
+            else:
+                result = 0
             if dump:
-                debug_info.setdefault("ce_calc", []).append(
-                    {"yr": yr, "reprt": reprt, "equity": equity,
-                     "jibae_ni": jibae_ni, "jibae_ni_prev": jibae_ni_prev})
-            if equity > 0 or jibae_ni is not None:
-                return {"equity": equity, "jibae_ni": jibae_ni,
-                        "jibae_ni_prev": jibae_ni_prev, "is_quarter": (reprt != "11011")}
-            return None
+                debug_info.setdefault("equity_calc", []).append(
+                    {"yr": yr, "reprt": reprt, "controlling": controlling,
+                     "equity_total": equity_total, "noncontrol": noncontrol, "result": result})
+            return result
         except Exception as e:
             if "equity_error" not in debug_info:
                 debug_info["equity_error"] = f"{type(e).__name__}: {e}"
-            return None
+            return 0
 
+    # 탐지된 최근 분기 1개만 조회, 실패 시 전년 사업보고서로 폴백
     for yr, reprt in [(q_year, q_reprt), (cur - 1, "11011")]:
-        res = extract(yr, reprt)
-        if res:
-            return res
-    return {"equity": 0, "jibae_ni": None, "jibae_ni_prev": None, "is_quarter": False}
+        eq = extract(yr, reprt)
+        if eq > 0:
+            if dump:
+                debug_info["equity_pick"] = {"yr": yr, "reprt": reprt, "equity": eq}
+            return eq
+    return 0
 
 
 def get_dart_pershare(dart, corp_code, debug_info, dump=False):
@@ -692,33 +688,36 @@ def enrich_with_dart(results):
                 results[ticker]["shares"] = common_sh
                 results[ticker]["mcap"]   = round(price * common_sh / 1e12, 2)
 
-            # 지배주주지분 + 지배주주 순이익(분기) 1회 조회 (네이버 기준)
-            ce = get_dart_controlling_equity(dart, ticker, q_year, q_reprt, debug_info,
-                                             dump=(ticker in ("105560", "086520", "005930", "373220")))
-            ctrl_equity = ce["equity"]
-            if ctrl_equity <= 0 and equity > 0:        # 폴백: 주요계정 연간 자본총계
+            # BPS·PBR: 최근 분기 지배주주지분 / 총발행주식수 (네이버 방식)
+            ctrl_equity = get_dart_controlling_equity(dart, ticker, q_year, q_reprt, debug_info,
+                                                       dump=(ticker == "105560"))
+            # 최근분기 추출 실패 시 주요계정 연간 자본총계로 폴백
+            if ctrl_equity <= 0 and equity > 0:
                 ctrl_equity = equity
             denom = total_sh if total_sh > 0 else common_sh
-
-            # BPS·PBR: 지배주주지분 / 총발행주식수
             if ctrl_equity > 0 and denom > 0:
                 bps = round(ctrl_equity / denom)
                 results[ticker]["bps"] = bps
                 if bps > 0:
                     results[ticker]["pbr"] = round(price / bps, 2)
 
-            # EPS·PER: 네이버처럼 지배주주 최근 4분기(TTM) 기준
-            #   TTM지배순이익 = 전년연간 지배순이익 + 당기분기누적 - 전년동기누적
-            if denom > 0:
-                annual_jibae = eps_official * total_sh if eps_official != 0 else net_income  # 전년 연간 지배순이익
-                if ce["is_quarter"] and ce["jibae_ni"] is not None and ce["jibae_ni_prev"] is not None:
-                    ttm_jibae = annual_jibae + ce["jibae_ni"] - ce["jibae_ni_prev"]
-                else:
-                    ttm_jibae = annual_jibae
-                eps = round(ttm_jibae / denom) if denom else 0
+            # EPS·PER: 네이버처럼 최근 4분기(TTM) 기준.
+            #   EPS(TTM) = 지배비중 × TTM총순이익 / 총발행주식수  (적자는 음수)
+            #   ※ 공식EPS×비율 방식은 연간순이익이 0에 가까운 종목(LG엔솔 등)에서
+            #     지배/총 순이익 부호 불일치로 PER 부호가 틀어져서, 직접 계산으로 변경.
+            if total_sh > 0 and net_income != 0:
+                ttm_ratio = get_ttm_ratio(dart, ticker, net_income, q_year, q_reprt, debug_info, dump=(ticker in ("005930", "373220", "003670")))
+                ttm_total = ttm_ratio * net_income            # TTM 총순이익
+                annual_jibae = eps_official * total_sh if eps_official != 0 else net_income
+                jibae_frac = 0.95                              # 기본 지배지분 비중
+                if net_income != 0 and annual_jibae != 0:
+                    f = annual_jibae / net_income
+                    if 0.5 <= f <= 1.1:
+                        jibae_frac = f
+                eps = round(jibae_frac * ttm_total / total_sh)
                 if eps != 0:
                     results[ticker]["eps"] = eps
-                    # 적자(eps<=0)는 PER 미산정 → 화면에서 '-' (토스/네이버 관행)
+                    # 적자(eps<=0)는 PER 미산정 → 화면에서 '-'로 표시 (토스/네이버와 동일 관행)
                     if eps > 0:
                         results[ticker]["per"] = round(price / eps, 1)
 
