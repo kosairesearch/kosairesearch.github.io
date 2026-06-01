@@ -1,13 +1,13 @@
 DART_KEY_SET=true (len=40)
-=== 스크립트 시작 Sun May 31 14:55:10 UTC 2026 ===
+=== 스크립트 시작 Mon Jun  1 00:42:29 UTC 2026 ===
 =======================================================
   KOS ai 데이터 수집 시작
 =======================================================
 KRX 로그인 실패: KRX_ID 또는 KRX_PW 환경 변수가 설정되지 않았습니다.
-  기준일: 20260529
+  기준일: 20260601
 
-## KOS ai 데이터 수집 — 20260529
-  [pykrx] 20260529 OHLCV 데이터 수집 중...
+## KOS ai 데이터 수집 — 20260601
+  [pykrx] 20260601 OHLCV 데이터 수집 중...
   [폴백] 개별 종목 OHLCV 수집 중...
 Error occurred in get_stock_name: 'NoneType' object is not subscriptable
     [102780] 오류: The truth value of a DataFrame is ambiguous. Use a.empty, a.bool(), a.item(), a.any() or a.all().
@@ -90,10 +90,6 @@ reprt_code='11012', fs_div='CFS' (반기보고서, 연결제무제표)'
 {'status': '013', 'message': '조회된 데이타가 없습니다.'}
 
 reprt_code='11013', fs_div='CFS' (1분기보고서, 연결제무제표)'
-{'status': '013', 'message': '조회된 데이타가 없습니다.'}
-
-{'status': '013', 'message': '조회된 데이타가 없습니다.'}
-
 reprt_code='11014', fs_div='CFS' (3분기보고서, 연결제무제표)'
 {'status': '013', 'message': '조회된 데이타가 없습니다.'}
 
@@ -134,10 +130,6 @@ reprt_code='11012', fs_div='CFS' (반기보고서, 연결제무제표)'
 {'status': '013', 'message': '조회된 데이타가 없습니다.'}
 
 reprt_code='11013', fs_div='CFS' (1분기보고서, 연결제무제표)'
-{'status': '013', 'message': '조회된 데이타가 없습니다.'}
-
-{'status': '013', 'message': '조회된 데이타가 없습니다.'}
-
 reprt_code='11014', fs_div='CFS' (3분기보고서, 연결제무제표)'
 {'status': '013', 'message': '조회된 데이타가 없습니다.'}
 
@@ -256,10 +248,35 @@ reprt_code='11012', fs_div='CFS' (반기보고서, 연결제무제표)'
 {'status': '013', 'message': '조회된 데이타가 없습니다.'}
 
 reprt_code='11013', fs_div='CFS' (1분기보고서, 연결제무제표)'
+reprt_code='11014', fs_div='CFS' (3분기보고서, 연결제무제표)'
+{'status': '013', 'message': '조회된 데이타가 없습니다.'}
+
+reprt_code='11012', fs_div='CFS' (반기보고서, 연결제무제표)'
+{'status': '013', 'message': '조회된 데이타가 없습니다.'}
+
+reprt_code='11013', fs_div='CFS' (1분기보고서, 연결제무제표)'
 {'status': '013', 'message': '조회된 데이타가 없습니다.'}
 
 {'status': '013', 'message': '조회된 데이타가 없습니다.'}
 
+reprt_code='11014', fs_div='CFS' (3분기보고서, 연결제무제표)'
+{'status': '013', 'message': '조회된 데이타가 없습니다.'}
+
+reprt_code='11012', fs_div='CFS' (반기보고서, 연결제무제표)'
+{'status': '013', 'message': '조회된 데이타가 없습니다.'}
+
+reprt_code='11013', fs_div='CFS' (1분기보고서, 연결제무제표)'
+{'status': '013', 'message': '조회된 데이타가 없습니다.'}
+
+{'status': '013', 'message': '조회된 데이타가 없습니다.'}
+
+reprt_code='11014', fs_div='CFS' (3분기보고서, 연결제무제표)'
+{'status': '013', 'message': '조회된 데이타가 없습니다.'}
+
+reprt_code='11012', fs_div='CFS' (반기보고서, 연결제무제표)'
+{'status': '013', 'message': '조회된 데이타가 없습니다.'}
+
+reprt_code='11013', fs_div='CFS' (1분기보고서, 연결제무제표)'
 reprt_code='11014', fs_div='CFS' (3분기보고서, 연결제무제표)'
 {'status': '013', 'message': '조회된 데이타가 없습니다.'}
 
@@ -322,43 +339,6 @@ reprt_code='11012', fs_div='CFS' (반기보고서, 연결제무제표)'
 {'status': '013', 'message': '조회된 데이타가 없습니다.'}
 
 reprt_code='11013', fs_div='CFS' (1분기보고서, 연결제무제표)'
-{'status': '013', 'message': '조회된 데이타가 없습니다.'}
-
-{'status': '013', 'message': '조회된 데이타가 없습니다.'}
-
-reprt_code='11014', fs_div='CFS' (3분기보고서, 연결제무제표)'
-{'status': '013', 'message': '조회된 데이타가 없습니다.'}
-
-reprt_code='11012', fs_div='CFS' (반기보고서, 연결제무제표)'
-{'status': '013', 'message': '조회된 데이타가 없습니다.'}
-
-reprt_code='11013', fs_div='CFS' (1분기보고서, 연결제무제표)'
-{'status': '013', 'message': '조회된 데이타가 없습니다.'}
-
-{'status': '013', 'message': '조회된 데이타가 없습니다.'}
-
-reprt_code='11014', fs_div='CFS' (3분기보고서, 연결제무제표)'
-{'status': '013', 'message': '조회된 데이타가 없습니다.'}
-
-reprt_code='11012', fs_div='CFS' (반기보고서, 연결제무제표)'
-{'status': '013', 'message': '조회된 데이타가 없습니다.'}
-
-reprt_code='11013', fs_div='CFS' (1분기보고서, 연결제무제표)'
-{'status': '013', 'message': '조회된 데이타가 없습니다.'}
-
-{'status': '013', 'message': '조회된 데이타가 없습니다.'}
-
-reprt_code='11014', fs_div='CFS' (3분기보고서, 연결제무제표)'
-{'status': '013', 'message': '조회된 데이타가 없습니다.'}
-
-reprt_code='11012', fs_div='CFS' (반기보고서, 연결제무제표)'
-{'status': '013', 'message': '조회된 데이타가 없습니다.'}
-
-reprt_code='11013', fs_div='CFS' (1분기보고서, 연결제무제표)'
-{'status': '013', 'message': '조회된 데이타가 없습니다.'}
-
-{'status': '013', 'message': '조회된 데이타가 없습니다.'}
-
     31/85 완료...
 reprt_code='11014', fs_div='CFS' (3분기보고서, 연결제무제표)'
 {'status': '013', 'message': '조회된 데이타가 없습니다.'}
@@ -455,65 +435,6 @@ reprt_code='11012', fs_div='CFS' (반기보고서, 연결제무제표)'
 {'status': '013', 'message': '조회된 데이타가 없습니다.'}
 
 reprt_code='11013', fs_div='CFS' (1분기보고서, 연결제무제표)'
-{'status': '013', 'message': '조회된 데이타가 없습니다.'}
-
-{'status': '013', 'message': '조회된 데이타가 없습니다.'}
-
-reprt_code='11014', fs_div='CFS' (3분기보고서, 연결제무제표)'
-{'status': '013', 'message': '조회된 데이타가 없습니다.'}
-
-reprt_code='11012', fs_div='CFS' (반기보고서, 연결제무제표)'
-{'status': '013', 'message': '조회된 데이타가 없습니다.'}
-
-reprt_code='11013', fs_div='CFS' (1분기보고서, 연결제무제표)'
-{'status': '013', 'message': '조회된 데이타가 없습니다.'}
-
-{'status': '013', 'message': '조회된 데이타가 없습니다.'}
-
-reprt_code='11014', fs_div='CFS' (3분기보고서, 연결제무제표)'
-{'status': '013', 'message': '조회된 데이타가 없습니다.'}
-
-reprt_code='11012', fs_div='CFS' (반기보고서, 연결제무제표)'
-{'status': '013', 'message': '조회된 데이타가 없습니다.'}
-
-reprt_code='11013', fs_div='CFS' (1분기보고서, 연결제무제표)'
-{'status': '013', 'message': '조회된 데이타가 없습니다.'}
-
-{'status': '013', 'message': '조회된 데이타가 없습니다.'}
-
-reprt_code='11014', fs_div='CFS' (3분기보고서, 연결제무제표)'
-{'status': '013', 'message': '조회된 데이타가 없습니다.'}
-
-reprt_code='11012', fs_div='CFS' (반기보고서, 연결제무제표)'
-{'status': '013', 'message': '조회된 데이타가 없습니다.'}
-
-reprt_code='11013', fs_div='CFS' (1분기보고서, 연결제무제표)'
-{'status': '013', 'message': '조회된 데이타가 없습니다.'}
-
-{'status': '013', 'message': '조회된 데이타가 없습니다.'}
-
-reprt_code='11014', fs_div='CFS' (3분기보고서, 연결제무제표)'
-{'status': '013', 'message': '조회된 데이타가 없습니다.'}
-
-reprt_code='11012', fs_div='CFS' (반기보고서, 연결제무제표)'
-{'status': '013', 'message': '조회된 데이타가 없습니다.'}
-
-reprt_code='11013', fs_div='CFS' (1분기보고서, 연결제무제표)'
-{'status': '013', 'message': '조회된 데이타가 없습니다.'}
-
-{'status': '013', 'message': '조회된 데이타가 없습니다.'}
-
-reprt_code='11014', fs_div='CFS' (3분기보고서, 연결제무제표)'
-{'status': '013', 'message': '조회된 데이타가 없습니다.'}
-
-reprt_code='11012', fs_div='CFS' (반기보고서, 연결제무제표)'
-{'status': '013', 'message': '조회된 데이타가 없습니다.'}
-
-reprt_code='11013', fs_div='CFS' (1분기보고서, 연결제무제표)'
-{'status': '013', 'message': '조회된 데이타가 없습니다.'}
-
-{'status': '013', 'message': '조회된 데이타가 없습니다.'}
-
 reprt_code='11014', fs_div='CFS' (3분기보고서, 연결제무제표)'
 {'status': '013', 'message': '조회된 데이타가 없습니다.'}
 
@@ -526,6 +447,57 @@ reprt_code='11013', fs_div='CFS' (1분기보고서, 연결제무제표)'
 reprt_code='11011', fs_div='CFS' (사업보고서, 연결제무제표)'
 {'status': '013', 'message': '조회된 데이타가 없습니다.'}
 
+{'status': '013', 'message': '조회된 데이타가 없습니다.'}
+
+{'status': '013', 'message': '조회된 데이타가 없습니다.'}
+
+reprt_code='11014', fs_div='CFS' (3분기보고서, 연결제무제표)'
+{'status': '013', 'message': '조회된 데이타가 없습니다.'}
+
+reprt_code='11012', fs_div='CFS' (반기보고서, 연결제무제표)'
+{'status': '013', 'message': '조회된 데이타가 없습니다.'}
+
+reprt_code='11013', fs_div='CFS' (1분기보고서, 연결제무제표)'
+{'status': '013', 'message': '조회된 데이타가 없습니다.'}
+
+{'status': '013', 'message': '조회된 데이타가 없습니다.'}
+
+reprt_code='11014', fs_div='CFS' (3분기보고서, 연결제무제표)'
+{'status': '013', 'message': '조회된 데이타가 없습니다.'}
+
+reprt_code='11012', fs_div='CFS' (반기보고서, 연결제무제표)'
+{'status': '013', 'message': '조회된 데이타가 없습니다.'}
+
+reprt_code='11013', fs_div='CFS' (1분기보고서, 연결제무제표)'
+{'status': '013', 'message': '조회된 데이타가 없습니다.'}
+
+{'status': '013', 'message': '조회된 데이타가 없습니다.'}
+
+reprt_code='11014', fs_div='CFS' (3분기보고서, 연결제무제표)'
+{'status': '013', 'message': '조회된 데이타가 없습니다.'}
+
+reprt_code='11012', fs_div='CFS' (반기보고서, 연결제무제표)'
+{'status': '013', 'message': '조회된 데이타가 없습니다.'}
+
+reprt_code='11013', fs_div='CFS' (1분기보고서, 연결제무제표)'
+{'status': '013', 'message': '조회된 데이타가 없습니다.'}
+
+{'status': '013', 'message': '조회된 데이타가 없습니다.'}
+
+reprt_code='11014', fs_div='CFS' (3분기보고서, 연결제무제표)'
+{'status': '013', 'message': '조회된 데이타가 없습니다.'}
+
+reprt_code='11012', fs_div='CFS' (반기보고서, 연결제무제표)'
+{'status': '013', 'message': '조회된 데이타가 없습니다.'}
+
+reprt_code='11013', fs_div='CFS' (1분기보고서, 연결제무제표)'
+reprt_code='11014', fs_div='CFS' (3분기보고서, 연결제무제표)'
+{'status': '013', 'message': '조회된 데이타가 없습니다.'}
+
+reprt_code='11012', fs_div='CFS' (반기보고서, 연결제무제표)'
+{'status': '013', 'message': '조회된 데이타가 없습니다.'}
+
+reprt_code='11013', fs_div='CFS' (1분기보고서, 연결제무제표)'
 {'status': '013', 'message': '조회된 데이타가 없습니다.'}
 
 {'status': '013', 'message': '조회된 데이타가 없습니다.'}
@@ -584,11 +556,6 @@ reprt_code='11012', fs_div='CFS' (반기보고서, 연결제무제표)'
 reprt_code='11013', fs_div='CFS' (1분기보고서, 연결제무제표)'
 {'status': '013', 'message': '조회된 데이타가 없습니다.'}
 
-reprt_code='11011', fs_div='CFS' (사업보고서, 연결제무제표)'
-{'status': '013', 'message': '조회된 데이타가 없습니다.'}
-
-{'status': '013', 'message': '조회된 데이타가 없습니다.'}
-
 {'status': '013', 'message': '조회된 데이타가 없습니다.'}
 
 reprt_code='11014', fs_div='CFS' (3분기보고서, 연결제무제표)'
@@ -620,10 +587,6 @@ reprt_code='11012', fs_div='CFS' (반기보고서, 연결제무제표)'
 {'status': '013', 'message': '조회된 데이타가 없습니다.'}
 
 reprt_code='11013', fs_div='CFS' (1분기보고서, 연결제무제표)'
-{'status': '013', 'message': '조회된 데이타가 없습니다.'}
-
-{'status': '013', 'message': '조회된 데이타가 없습니다.'}
-
 reprt_code='11014', fs_div='CFS' (3분기보고서, 연결제무제표)'
 {'status': '013', 'message': '조회된 데이타가 없습니다.'}
 
@@ -653,10 +616,6 @@ reprt_code='11012', fs_div='CFS' (반기보고서, 연결제무제표)'
 {'status': '013', 'message': '조회된 데이타가 없습니다.'}
 
 reprt_code='11013', fs_div='CFS' (1분기보고서, 연결제무제표)'
-{'status': '013', 'message': '조회된 데이타가 없습니다.'}
-
-{'status': '013', 'message': '조회된 데이타가 없습니다.'}
-
 reprt_code='11014', fs_div='CFS' (3분기보고서, 연결제무제표)'
 {'status': '013', 'message': '조회된 데이타가 없습니다.'}
 
@@ -722,8 +681,53 @@ reprt_code='11012', fs_div='CFS' (반기보고서, 연결제무제표)'
 reprt_code='11013', fs_div='CFS' (1분기보고서, 연결제무제표)'
 {'status': '013', 'message': '조회된 데이타가 없습니다.'}
 
+reprt_code='11011', fs_div='CFS' (사업보고서, 연결제무제표)'
 {'status': '013', 'message': '조회된 데이타가 없습니다.'}
 
+{'status': '013', 'message': '조회된 데이타가 없습니다.'}
+
+{'status': '013', 'message': '조회된 데이타가 없습니다.'}
+
+reprt_code='11014', fs_div='CFS' (3분기보고서, 연결제무제표)'
+{'status': '013', 'message': '조회된 데이타가 없습니다.'}
+
+reprt_code='11012', fs_div='CFS' (반기보고서, 연결제무제표)'
+{'status': '013', 'message': '조회된 데이타가 없습니다.'}
+
+reprt_code='11013', fs_div='CFS' (1분기보고서, 연결제무제표)'
+{'status': '013', 'message': '조회된 데이타가 없습니다.'}
+
+{'status': '013', 'message': '조회된 데이타가 없습니다.'}
+
+reprt_code='11014', fs_div='CFS' (3분기보고서, 연결제무제표)'
+{'status': '013', 'message': '조회된 데이타가 없습니다.'}
+
+reprt_code='11012', fs_div='CFS' (반기보고서, 연결제무제표)'
+{'status': '013', 'message': '조회된 데이타가 없습니다.'}
+
+reprt_code='11013', fs_div='CFS' (1분기보고서, 연결제무제표)'
+{'status': '013', 'message': '조회된 데이타가 없습니다.'}
+
+{'status': '013', 'message': '조회된 데이타가 없습니다.'}
+
+reprt_code='11014', fs_div='CFS' (3분기보고서, 연결제무제표)'
+{'status': '013', 'message': '조회된 데이타가 없습니다.'}
+
+reprt_code='11012', fs_div='CFS' (반기보고서, 연결제무제표)'
+{'status': '013', 'message': '조회된 데이타가 없습니다.'}
+
+reprt_code='11013', fs_div='CFS' (1분기보고서, 연결제무제표)'
+{'status': '013', 'message': '조회된 데이타가 없습니다.'}
+
+{'status': '013', 'message': '조회된 데이타가 없습니다.'}
+
+reprt_code='11014', fs_div='CFS' (3분기보고서, 연결제무제표)'
+{'status': '013', 'message': '조회된 데이타가 없습니다.'}
+
+reprt_code='11012', fs_div='CFS' (반기보고서, 연결제무제표)'
+{'status': '013', 'message': '조회된 데이타가 없습니다.'}
+
+reprt_code='11013', fs_div='CFS' (1분기보고서, 연결제무제표)'
 reprt_code='11014', fs_div='CFS' (3분기보고서, 연결제무제표)'
 {'status': '013', 'message': '조회된 데이타가 없습니다.'}
 
@@ -775,54 +779,6 @@ reprt_code='11012', fs_div='CFS' (반기보고서, 연결제무제표)'
 {'status': '013', 'message': '조회된 데이타가 없습니다.'}
 
 reprt_code='11013', fs_div='CFS' (1분기보고서, 연결제무제표)'
-{'status': '013', 'message': '조회된 데이타가 없습니다.'}
-
-{'status': '013', 'message': '조회된 데이타가 없습니다.'}
-
-reprt_code='11014', fs_div='CFS' (3분기보고서, 연결제무제표)'
-{'status': '013', 'message': '조회된 데이타가 없습니다.'}
-
-reprt_code='11012', fs_div='CFS' (반기보고서, 연결제무제표)'
-{'status': '013', 'message': '조회된 데이타가 없습니다.'}
-
-reprt_code='11013', fs_div='CFS' (1분기보고서, 연결제무제표)'
-{'status': '013', 'message': '조회된 데이타가 없습니다.'}
-
-{'status': '013', 'message': '조회된 데이타가 없습니다.'}
-
-reprt_code='11014', fs_div='CFS' (3분기보고서, 연결제무제표)'
-{'status': '013', 'message': '조회된 데이타가 없습니다.'}
-
-reprt_code='11012', fs_div='CFS' (반기보고서, 연결제무제표)'
-{'status': '013', 'message': '조회된 데이타가 없습니다.'}
-
-reprt_code='11013', fs_div='CFS' (1분기보고서, 연결제무제표)'
-{'status': '013', 'message': '조회된 데이타가 없습니다.'}
-
-{'status': '013', 'message': '조회된 데이타가 없습니다.'}
-
-reprt_code='11014', fs_div='CFS' (3분기보고서, 연결제무제표)'
-{'status': '013', 'message': '조회된 데이타가 없습니다.'}
-
-reprt_code='11012', fs_div='CFS' (반기보고서, 연결제무제표)'
-{'status': '013', 'message': '조회된 데이타가 없습니다.'}
-
-reprt_code='11013', fs_div='CFS' (1분기보고서, 연결제무제표)'
-{'status': '013', 'message': '조회된 데이타가 없습니다.'}
-
-{'status': '013', 'message': '조회된 데이타가 없습니다.'}
-
-reprt_code='11014', fs_div='CFS' (3분기보고서, 연결제무제표)'
-{'status': '013', 'message': '조회된 데이타가 없습니다.'}
-
-reprt_code='11012', fs_div='CFS' (반기보고서, 연결제무제표)'
-{'status': '013', 'message': '조회된 데이타가 없습니다.'}
-
-reprt_code='11013', fs_div='CFS' (1분기보고서, 연결제무제표)'
-{'status': '013', 'message': '조회된 데이타가 없습니다.'}
-
-{'status': '013', 'message': '조회된 데이타가 없습니다.'}
-
 reprt_code='11014', fs_div='CFS' (3분기보고서, 연결제무제표)'
 {'status': '013', 'message': '조회된 데이타가 없습니다.'}
 
@@ -930,10 +886,6 @@ reprt_code='11012', fs_div='CFS' (반기보고서, 연결제무제표)'
 {'status': '013', 'message': '조회된 데이타가 없습니다.'}
 
 reprt_code='11013', fs_div='CFS' (1분기보고서, 연결제무제표)'
-{'status': '013', 'message': '조회된 데이타가 없습니다.'}
-
-{'status': '013', 'message': '조회된 데이타가 없습니다.'}
-
 reprt_code='11014', fs_div='CFS' (3분기보고서, 연결제무제표)'
 {'status': '013', 'message': '조회된 데이타가 없습니다.'}
 
@@ -968,6 +920,6 @@ reprt_code='11013', fs_div='CFS' (1분기보고서, 연결제무제표)'
 {'status': '013', 'message': '조회된 데이타가 없습니다.'}
 
   [DART] 재무·주식수 보강 완료
-✅ data/stocks.js 생성 완료 — 85개 종목 (2026-06-01 00:27 KST)
+✅ data/stocks.js 생성 완료 — 85개 종목 (2026-06-01 09:55 KST)
 - 최종 출력: 85개 종목
 =======================================================
