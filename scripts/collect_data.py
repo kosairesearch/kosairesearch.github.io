@@ -666,13 +666,12 @@ def enrich_with_dart(results):
                 if bps > 0:
                     results[ticker]["pbr"] = round(price / bps, 2)
 
-            # EPS·PER: 네이버처럼 최근 4분기(TTM) 기준
-            # EPS(TTM) = 공식 연간 EPS × (TTM순이익 / 연간순이익)
-            eps_base = eps_official if eps_official > 0 else (round(net_income / total_sh) if total_sh > 0 and net_income != 0 else 0)
-            if eps_base > 0:
+            # EPS·PER: 네이버처럼 최근 4분기(TTM) 기준. 적자는 음수 EPS·음수 PER로 표시
+            eps_base = eps_official if eps_official != 0 else (round(net_income / total_sh) if total_sh > 0 and net_income != 0 else 0)
+            if eps_base != 0:
                 ttm_ratio = get_ttm_ratio(dart, ticker, net_income, debug_info, dump=(ticker == "005930"))
                 eps = round(eps_base * ttm_ratio)
-                if eps > 0:
+                if eps != 0:
                     results[ticker]["eps"] = eps
                     results[ticker]["per"] = round(price / eps, 1)
 
