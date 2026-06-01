@@ -296,7 +296,7 @@ def collect_pykrx_fallback(date):
             # 거래대금 근사: ohlcv에 거래대금 컬럼이 없으므로 가격 × 거래량으로 추정
             tvol = price * volume if (price > 0 and volume > 0) else 0
 
-            # 시총·주식수·PER·PBR·EPS·BPS는 enrich_with_dart()에서 DART로 채움
+            # 시총·주식수·영문명은 enrich_with_dart()에서 DART로 채움
             results[ticker] = {
                 "ticker":  ticker,
                 "name":    name,
@@ -309,15 +309,6 @@ def collect_pykrx_fallback(date):
                 "trading_value":tvol,
                 "mcap":  0.0,
                 "shares":0,
-                "per":  0.0,
-                "pbr":  0.0,
-                "eps":  0,
-                "bps":  0,
-                "div":  0.0,
-                "roe":  0.0,
-                "rev":  0.0,
-                "opm":  0.0,
-                "debt": 0.0,
             }
             time.sleep(0.05)
 
@@ -598,9 +589,13 @@ def get_ttm_ratio(dart, ticker, total_annual_ni, q_year, q_reprt, debug_info, du
 
 
 def enrich_with_dart(results):
-    """DART API로 상장주식수·재무비율을 보완하고 시총·PER·PBR을 계산합니다."""
+    """DART API로 영문 종목명·상장주식수(시가총액)·시장구분만 보완합니다.
+
+    PER/PBR/배당/ROE 등 계산형 지표는 사이트에서 제공하지 않습니다
+    (사이트별 산정방식 차이로 외부값과 불일치가 잦아 제거). 핵심 시세만 유지.
+    """
     if not DART_API_KEY:
-        print("  [DART] API 키 없음, 재무비율 생략")
+        print("  [DART] API 키 없음, 보강 생략")
         return results
 
     try:
@@ -611,15 +606,9 @@ def enrich_with_dart(results):
         return results
 
     debug_info = {}
-    # 최근 분기보고서를 1회만 탐지 (종목마다 없는 분기를 조회하는 낭비 제거 → 속도 대폭 개선)
-    q_year, q_reprt = detect_latest_quarter(dart)
-    print(f"  [DART] 최근 분기보고서: {q_year}년 {q_reprt}")
-    debug_info["latest_quarter"] = {"year": q_year, "reprt": q_reprt}
-
-    # 거래대금 기준 정렬(시총 미정 상태)로 최대 90개 종목 보강
     targets = sorted(results.values(), key=lambda x: x["trading_value"], reverse=True)[:90]
+    print(f"  [DART] {len(targets)}개 종목 영문명·주식수(시총) 수집 중...")
 
-    print(f"  [DART] {len(targets)}개 종목 재무·주식수 수집 중...")
     for i, stock in enumerate(targets):
         ticker = stock["ticker"]
         price = stock["price"]
@@ -631,109 +620,28 @@ def enrich_with_dart(results):
             # 영문 종목명 (영어 모드 표시용)
             try:
                 info = dart.company(corp_code)
-                name_en = ""
-                if info is not None:
-                    name_en = (info.get("corp_name_eng") if hasattr(info, "get") else "") or ""
+                name_en = (info.get("corp_name_eng") if (info is not None and hasattr(info, "get")) else "") or ""
                 if name_en:
                     results[ticker]["name_en"] = name_en.strip()
             except Exception:
                 pass
 
-            year = datetime.date.today().year - 1
-            fs = dart.finstate(ticker, year)
-
-            revenue = revenue_prev = op_profit = net_income = equity = liabilities = 0
-            if fs is not None and not fs.empty:
-                def get_amount(account_name, field="thstrm_amount"):
-                    row = fs[fs["account_nm"].str.contains(account_name, na=False)]
-                    if row.empty:
-                        return 0
-                    val = str(row.iloc[0].get(field, "0")).replace(",", "").strip()
-                    if val in ("", "-", "nan", "None"):
-                        return 0
-                    try:
-                        return int(float(val))   # 음수(적자) 부호 유지
-                    except ValueError:
-                        return 0
-
-                revenue      = get_amount("매출액")
-                revenue_prev = get_amount("매출액", "frmtrm_amount")  # 전기 매출액
-                op_profit    = get_amount("영업이익")
-                net_income   = get_amount("당기순이익")
-                equity       = get_amount("자본총계")
-                liabilities  = get_amount("부채총계")
-
-
-            roe  = round(net_income / equity * 100, 1) if equity > 0 else 0.0
-            opm  = round(op_profit / revenue * 100, 1) if revenue > 0 else 0.0
-            debt = round(liabilities / equity * 100, 1) if equity > 0 else 0.0
-            rev  = round((revenue - revenue_prev) / revenue_prev * 100, 1) if revenue_prev > 0 else 0.0
-
-            results[ticker]["roe"]  = roe
-            results[ticker]["opm"]  = opm
-            results[ticker]["debt"] = debt
-            results[ticker]["rev"]  = rev
-
-            # 공식 주당지표(EPS·DPS) — 네이버/FnGuide와 동일
-            ps = get_dart_pershare(dart, corp_code, debug_info, dump=(ticker == "005930"))
-            eps_official = ps["eps"]
-            dps = ps["dps"]
-
-            # 상장주식수·시장구분 → 시총·BPS·PBR 계산
-            #   common = 보통주(시총용), total = 보통+우선(주당지표 분모, 네이버 방식)
-            common_sh, total_sh, market = get_dart_shares(dart, corp_code, debug_info, dump=(ticker == "066970"))
+            # 상장주식수·시장구분 → 시가총액(가격 × 보통주 발행주식수)
+            common_sh, total_sh, market = get_dart_shares(dart, corp_code, debug_info)
             if market:
                 results[ticker]["market"] = market
             if common_sh > 0:
                 results[ticker]["shares"] = common_sh
                 results[ticker]["mcap"]   = round(price * common_sh / 1e12, 2)
 
-            # BPS·PBR: 최근 분기 지배주주지분 / 총발행주식수 (네이버 방식)
-            ctrl_equity = get_dart_controlling_equity(dart, ticker, q_year, q_reprt, debug_info,
-                                                       dump=(ticker == "105560"))
-            # 최근분기 추출 실패 시 주요계정 연간 자본총계로 폴백
-            if ctrl_equity <= 0 and equity > 0:
-                ctrl_equity = equity
-            denom = total_sh if total_sh > 0 else common_sh
-            if ctrl_equity > 0 and denom > 0:
-                bps = round(ctrl_equity / denom)
-                results[ticker]["bps"] = bps
-                if bps > 0:
-                    results[ticker]["pbr"] = round(price / bps, 2)
-
-            # EPS·PER: 네이버처럼 최근 4분기(TTM) 기준.
-            #   EPS(TTM) = 지배비중 × TTM총순이익 / 총발행주식수  (적자는 음수)
-            #   ※ 공식EPS×비율 방식은 연간순이익이 0에 가까운 종목(LG엔솔 등)에서
-            #     지배/총 순이익 부호 불일치로 PER 부호가 틀어져서, 직접 계산으로 변경.
-            if total_sh > 0 and net_income != 0:
-                ttm_ratio = get_ttm_ratio(dart, ticker, net_income, q_year, q_reprt, debug_info, dump=(ticker in ("005930", "373220", "003670")))
-                ttm_total = ttm_ratio * net_income            # TTM 총순이익
-                annual_jibae = eps_official * total_sh if eps_official != 0 else net_income
-                jibae_frac = 0.95                              # 기본 지배지분 비중
-                if net_income != 0 and annual_jibae != 0:
-                    f = annual_jibae / net_income
-                    if 0.5 <= f <= 1.1:
-                        jibae_frac = f
-                eps = round(jibae_frac * ttm_total / total_sh)
-                if eps != 0:
-                    results[ticker]["eps"] = eps
-                    # 적자(eps<=0)는 PER 미산정 → 화면에서 '-'로 표시 (토스/네이버와 동일 관행)
-                    if eps > 0:
-                        results[ticker]["per"] = round(price / eps, 1)
-
-            # 배당수익률 = 주당 현금배당금 / 현재가 × 100 (네이버 방식)
-            if dps > 0 and price > 0:
-                results[ticker]["div"] = round(dps / price * 100, 2)
-
-            if i % 15 == 0:
+            if i % 20 == 0:
                 print(f"    {i+1}/{len(targets)} 완료...")
-            time.sleep(0.2)
+            time.sleep(0.15)
 
         except Exception as e:
             if "enrich_error" not in debug_info:
                 debug_info["enrich_error"] = f"{ticker}: {type(e).__name__}: {e}"
 
-    # DART 디버그 정보를 기존 debug.json에 병합
     try:
         dbg_path = Path("data/debug.json")
         existing = {}
@@ -744,8 +652,9 @@ def enrich_with_dart(results):
     except Exception:
         pass
 
-    print("  [DART] 재무·주식수 보강 완료")
+    print("  [DART] 영문명·시총 보강 완료")
     return results
+
 
 
 def build_output(results, date):
