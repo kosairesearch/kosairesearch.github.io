@@ -433,10 +433,27 @@ def get_dart_shares(dart, corp_code, debug_info, dump=False):
     return 0, 0, None
 
 
-def get_dart_controlling_equity(dart, ticker, debug_info, dump=False):
+def detect_latest_quarter(dart):
+    """현재 연도에서 가장 최근 제출된 분기보고서를 1회 탐지합니다.
+
+    반환: (year, reprt_code). 분기보고서가 아직 없으면 (전년, 사업보고서).
+    """
+    cur = datetime.date.today().year
+    for reprt in ("11014", "11012", "11013"):   # 3분기 → 반기 → 1분기
+        try:
+            q = dart.finstate("005930", cur, reprt)
+            if q is not None and not q.empty:
+                return cur, reprt
+        except Exception:
+            pass
+    return cur - 1, "11011"
+
+
+def get_dart_controlling_equity(dart, ticker, q_year, q_reprt, debug_info, dump=False):
     """DART 전체재무제표(연결)에서 최근 분기 지배주주지분(원)을 가져옵니다.
 
     네이버 PBR은 최근 분기 지배주주지분 기준이므로 연간이 아닌 최근 분기를 씁니다.
+    (속도 최적화: 탐지된 최근 분기 1개만 조회, 실패 시 전년 사업보고서로 폴백)
     """
     cur = datetime.date.today().year
 
@@ -478,8 +495,8 @@ def get_dart_controlling_equity(dart, ticker, debug_info, dump=False):
                 debug_info["equity_error"] = f"{type(e).__name__}: {e}"
             return 0
 
-    # 최근 분기 우선: 3분기 → 반기 → 1분기 (당해), 없으면 전년 사업보고서
-    for yr, reprt in [(cur, "11014"), (cur, "11012"), (cur, "11013"), (cur - 1, "11011")]:
+    # 탐지된 최근 분기 1개만 조회, 실패 시 전년 사업보고서로 폴백
+    for yr, reprt in [(q_year, q_reprt), (cur - 1, "11011")]:
         eq = extract(yr, reprt)
         if eq > 0:
             if dump:
@@ -541,19 +558,21 @@ def get_dart_pershare(dart, corp_code, debug_info, dump=False):
     return {"eps": 0, "dps": 0}
 
 
-def get_ttm_ratio(dart, ticker, total_annual_ni, debug_info, dump=False):
+def get_ttm_ratio(dart, ticker, total_annual_ni, q_year, q_reprt, debug_info, dump=False):
     """TTM(최근 4분기) 순이익 / 연간 순이익 비율을 구합니다.
 
     네이버 EPS는 최근 4분기 합산(TTM) 기준이므로,
     EPS(TTM) = 연간공식EPS × (TTM순이익/연간순이익) 로 환산합니다.
-    분기 데이터가 없으면 1.0(연간 그대로)을 반환합니다.
+    (속도 최적화: 탐지된 최근 분기 1개만 조회)
     """
     if total_annual_ni <= 0:
         return 1.0
+    if q_reprt == "11011":   # 분기보고서 없음 → 연간 그대로
+        return 1.0
 
-    def q_ni(yr, reprt):
+    def q_ni(yr):
         try:
-            q = dart.finstate(ticker, yr, reprt)
+            q = dart.finstate(ticker, yr, q_reprt)
             if q is None or q.empty:
                 return None
             r = q[q["account_nm"].str.contains("당기순이익", na=False)]
@@ -563,21 +582,18 @@ def get_ttm_ratio(dart, ticker, total_annual_ni, debug_info, dump=False):
         except Exception:
             return None
 
-    cur = datetime.date.today().year
-    # 최근 분기보고서 우선: 3분기(11014) → 반기(11012) → 1분기(11013)
-    for reprt in ("11014", "11012", "11013"):
-        cq = q_ni(cur, reprt)
-        pq = q_ni(cur - 1, reprt)
-        if cq is not None and pq is not None:
-            ttm = total_annual_ni + cq - pq
-            ratio = ttm / total_annual_ni
-            if dump:
-                debug_info.setdefault("ttm", {})[ticker] = {
-                    "reprt": reprt, "cur_q": cq, "prev_q": pq,
-                    "annual": total_annual_ni, "ttm": ttm, "ratio": round(ratio, 3)}
-            # 음수(TTM 적자) 허용. 극단값만 방어 (분기 데이터 오류 대비)
-            if ratio != 0 and abs(ratio) < 200:
-                return ratio
+    cq = q_ni(q_year)
+    pq = q_ni(q_year - 1)
+    if cq is not None and pq is not None:
+        ttm = total_annual_ni + cq - pq
+        ratio = ttm / total_annual_ni
+        if dump:
+            debug_info.setdefault("ttm", {})[ticker] = {
+                "reprt": q_reprt, "cur_q": cq, "prev_q": pq,
+                "annual": total_annual_ni, "ttm": ttm, "ratio": round(ratio, 3)}
+        # 음수(TTM 적자) 허용. 극단값만 방어 (분기 데이터 오류 대비)
+        if ratio != 0 and abs(ratio) < 200:
+            return ratio
     return 1.0
 
 
@@ -595,6 +611,11 @@ def enrich_with_dart(results):
         return results
 
     debug_info = {}
+    # 최근 분기보고서를 1회만 탐지 (종목마다 없는 분기를 조회하는 낭비 제거 → 속도 대폭 개선)
+    q_year, q_reprt = detect_latest_quarter(dart)
+    print(f"  [DART] 최근 분기보고서: {q_year}년 {q_reprt}")
+    debug_info["latest_quarter"] = {"year": q_year, "reprt": q_reprt}
+
     # 거래대금 기준 정렬(시총 미정 상태)로 최대 90개 종목 보강
     targets = sorted(results.values(), key=lambda x: x["trading_value"], reverse=True)[:90]
 
@@ -668,7 +689,7 @@ def enrich_with_dart(results):
                 results[ticker]["mcap"]   = round(price * common_sh / 1e12, 2)
 
             # BPS·PBR: 최근 분기 지배주주지분 / 총발행주식수 (네이버 방식)
-            ctrl_equity = get_dart_controlling_equity(dart, ticker, debug_info,
+            ctrl_equity = get_dart_controlling_equity(dart, ticker, q_year, q_reprt, debug_info,
                                                        dump=(ticker == "105560"))
             # 최근분기 추출 실패 시 주요계정 연간 자본총계로 폴백
             if ctrl_equity <= 0 and equity > 0:
@@ -685,7 +706,7 @@ def enrich_with_dart(results):
             #   ※ 공식EPS×비율 방식은 연간순이익이 0에 가까운 종목(LG엔솔 등)에서
             #     지배/총 순이익 부호 불일치로 PER 부호가 틀어져서, 직접 계산으로 변경.
             if total_sh > 0 and net_income != 0:
-                ttm_ratio = get_ttm_ratio(dart, ticker, net_income, debug_info, dump=(ticker in ("005930", "373220", "003670")))
+                ttm_ratio = get_ttm_ratio(dart, ticker, net_income, q_year, q_reprt, debug_info, dump=(ticker in ("005930", "373220", "003670")))
                 ttm_total = ttm_ratio * net_income            # TTM 총순이익
                 annual_jibae = eps_official * total_sh if eps_official != 0 else net_income
                 jibae_frac = 0.95                              # 기본 지배지분 비중

@@ -43,4 +43,8 @@ jobs:
           git config --global user.name "KOS ai Bot"
           git add -A data/
           git commit --allow-empty -m "📊 데이터 업데이트 $(TZ='Asia/Seoul' date +'%Y-%m-%d %H:%M KST')"
-          git push
+          # 원격이 앞서간 경우(동시 커밋) rebase 후 재시도
+          for i in 1 2 3 4 5; do
+            git pull --rebase origin main && git push origin main && break
+            echo "push 재시도 $i..."; sleep $((i*3))
+          done
