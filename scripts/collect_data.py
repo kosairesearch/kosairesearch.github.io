@@ -522,17 +522,17 @@ def get_dart_pershare(dart, corp_code, debug_info, dump=False):
                 se  = str(r.get("se", ""))
                 knd = str(r.get("stock_knd", ""))
                 is_common = knd in ("-", "") or "보통" in knd
-                # (연결)주당순이익 → 공식 EPS
+                # (연결)주당순이익 → 공식 EPS (적자는 음수)
                 if "주당순이익" in se and eps == 0:
                     v = safe_int(r.get("thstrm", 0))
-                    if v > 0:
+                    if v != 0:
                         eps = v
                 # 주당 현금배당금 (보통주)
                 if "주당" in se and "현금배당금" in se and is_common and dps == 0:
                     v = safe_int(r.get("thstrm", 0))
                     if v > 0:
                         dps = v
-            if eps > 0 or dps > 0:
+            if eps != 0 or dps > 0:
                 return {"eps": eps, "dps": dps}
         except Exception as e:
             if "div_error" not in debug_info:
@@ -567,13 +567,15 @@ def get_ttm_ratio(dart, ticker, total_annual_ni, debug_info, dump=False):
     for reprt in ("11014", "11012", "11013"):
         cq = q_ni(cur, reprt)
         pq = q_ni(cur - 1, reprt)
-        if cq and pq:
+        if cq is not None and pq is not None:
             ttm = total_annual_ni + cq - pq
             ratio = ttm / total_annual_ni
             if dump:
-                debug_info["ttm"] = {"reprt": reprt, "cur_q": cq, "prev_q": pq,
-                                     "ttm": ttm, "ratio": round(ratio, 3)}
-            if 0.1 < ratio < 10:  # 비정상 값 방어
+                debug_info.setdefault("ttm", {})[ticker] = {
+                    "reprt": reprt, "cur_q": cq, "prev_q": pq,
+                    "annual": total_annual_ni, "ttm": ttm, "ratio": round(ratio, 3)}
+            # 음수(TTM 적자) 허용. 극단값만 방어 (분기 데이터 오류 대비)
+            if ratio != 0 and abs(ratio) < 200:
                 return ratio
     return 1.0
 
@@ -669,7 +671,7 @@ def enrich_with_dart(results):
             # EPS·PER: 네이버처럼 최근 4분기(TTM) 기준. 적자는 음수 EPS·음수 PER로 표시
             eps_base = eps_official if eps_official != 0 else (round(net_income / total_sh) if total_sh > 0 and net_income != 0 else 0)
             if eps_base != 0:
-                ttm_ratio = get_ttm_ratio(dart, ticker, net_income, debug_info, dump=(ticker == "005930"))
+                ttm_ratio = get_ttm_ratio(dart, ticker, net_income, debug_info, dump=(ticker in ("005930", "373220", "003670")))
                 eps = round(eps_base * ttm_ratio)
                 if eps != 0:
                     results[ticker]["eps"] = eps
