@@ -680,11 +680,20 @@ def enrich_with_dart(results):
                 if bps > 0:
                     results[ticker]["pbr"] = round(price / bps, 2)
 
-            # EPS·PER: 네이버처럼 최근 4분기(TTM) 기준. 적자는 음수 EPS·음수 PER로 표시
-            eps_base = eps_official if eps_official != 0 else (round(net_income / total_sh) if total_sh > 0 and net_income != 0 else 0)
-            if eps_base != 0:
+            # EPS·PER: 네이버처럼 최근 4분기(TTM) 기준.
+            #   EPS(TTM) = 지배비중 × TTM총순이익 / 총발행주식수  (적자는 음수)
+            #   ※ 공식EPS×비율 방식은 연간순이익이 0에 가까운 종목(LG엔솔 등)에서
+            #     지배/총 순이익 부호 불일치로 PER 부호가 틀어져서, 직접 계산으로 변경.
+            if total_sh > 0 and net_income != 0:
                 ttm_ratio = get_ttm_ratio(dart, ticker, net_income, debug_info, dump=(ticker in ("005930", "373220", "003670")))
-                eps = round(eps_base * ttm_ratio)
+                ttm_total = ttm_ratio * net_income            # TTM 총순이익
+                annual_jibae = eps_official * total_sh if eps_official != 0 else net_income
+                jibae_frac = 0.95                              # 기본 지배지분 비중
+                if net_income != 0 and annual_jibae != 0:
+                    f = annual_jibae / net_income
+                    if 0.5 <= f <= 1.1:
+                        jibae_frac = f
+                eps = round(jibae_frac * ttm_total / total_sh)
                 if eps != 0:
                     results[ticker]["eps"] = eps
                     results[ticker]["per"] = round(price / eps, 1)
