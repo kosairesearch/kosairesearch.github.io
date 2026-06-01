@@ -170,7 +170,7 @@ main{flex:1;padding:8px 0 64px}
   let lang='ko';
 
   function getLang(){ try{ return localStorage.getItem(KEY)||'ko'; }catch(e){ return 'ko'; } }
-  function norm(s){ return s.replace(/\s+/g,' ').trim(); }
+  function norm(s){ return (s==null?'':String(s)).replace(/\s+/g,' ').trim(); }
 
   function translateText(orig){
     const m=orig.match(/^(\s*)([\s\S]*?)(\s*)$/);
@@ -233,7 +233,7 @@ main{flex:1;padding:8px 0 64px}
     apply();
   }
 
-  function t(ko){ return lang==='en' ? (dict[norm(ko)]!=null?dict[norm(ko)]:ko) : ko; }
+  function t(ko){ if(ko==null) return ''; return lang==='en' ? (dict[norm(ko)]!=null?dict[norm(ko)]:ko) : ko; }
 
   function register(d, onChange){
     if(d){ for(const k in d){ dict[norm(k)]=d[k]; } }

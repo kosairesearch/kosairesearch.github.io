@@ -391,7 +391,7 @@ section.block{padding:36px 0}
   let lang='ko';
 
   function getLang(){ try{ return localStorage.getItem(KEY)||'ko'; }catch(e){ return 'ko'; } }
-  function norm(s){ return s.replace(/\s+/g,' ').trim(); }
+  function norm(s){ return (s==null?'':String(s)).replace(/\s+/g,' ').trim(); }
 
   function translateText(orig){
     const m=orig.match(/^(\s*)([\s\S]*?)(\s*)$/);
@@ -454,7 +454,7 @@ section.block{padding:36px 0}
     apply();
   }
 
-  function t(ko){ return lang==='en' ? (dict[norm(ko)]!=null?dict[norm(ko)]:ko) : ko; }
+  function t(ko){ if(ko==null) return ''; return lang==='en' ? (dict[norm(ko)]!=null?dict[norm(ko)]:ko) : ko; }
 
   function register(d, onChange){
     if(d){ for(const k in d){ dict[norm(k)]=d[k]; } }
@@ -766,7 +766,7 @@ KOS.stockCard = (d) => {
       <p>${KOS.T(d.ai)}</p>
     </div>
     <div class="kos-card__foot">
-      <span>${d.date}</span>
+      <span>${d.date || (window.KOS_LIVE_DATA && window.KOS_LIVE_DATA.dataDate ? window.KOS_LIVE_DATA.dataDate.replace(/(\d{4})(\d{2})(\d{2})/,'$1-$2-$3') : '')}</span>
     </div>
   </a>`;
 };

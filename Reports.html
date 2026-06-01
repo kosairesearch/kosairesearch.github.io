@@ -214,7 +214,7 @@ body::before{content:"";position:fixed;inset:0;z-index:-1;pointer-events:none;
   let lang='ko';
 
   function getLang(){ try{ return localStorage.getItem(KEY)||'ko'; }catch(e){ return 'ko'; } }
-  function norm(s){ return s.replace(/\s+/g,' ').trim(); }
+  function norm(s){ return (s==null?'':String(s)).replace(/\s+/g,' ').trim(); }
 
   function translateText(orig){
     const m=orig.match(/^(\s*)([\s\S]*?)(\s*)$/);
@@ -277,7 +277,7 @@ body::before{content:"";position:fixed;inset:0;z-index:-1;pointer-events:none;
     apply();
   }
 
-  function t(ko){ return lang==='en' ? (dict[norm(ko)]!=null?dict[norm(ko)]:ko) : ko; }
+  function t(ko){ if(ko==null) return ''; return lang==='en' ? (dict[norm(ko)]!=null?dict[norm(ko)]:ko) : ko; }
 
   function register(d, onChange){
     if(d){ for(const k in d){ dict[norm(k)]=d[k]; } }
@@ -580,7 +580,7 @@ function rowHtml(r,i){
       <div class="id"><span class="tk">${r.ticker}</span><span class="dot">·</span><span>${r.market}</span><span class="dot">·</span><span>${T(r.sector)}</span></div></div>
     <div class="c-price"><div class="px">${KOS.won(r.price)}</div><div class="ch ${dir}"><span style="font-size:10px">${arw}</span> ${KOS.pct(r.change)}</div></div>
     <p class="c-ai">${T(r.ai)}</p>
-    <div class="c-date">${r.date}</div>
+    <div class="c-date">${r.date || (window.KOS_LIVE_DATA && window.KOS_LIVE_DATA.dataDate ? window.KOS_LIVE_DATA.dataDate.replace(/(\d{4})(\d{2})(\d{2})/,'$1-$2-$3') : '')}</div>
     <span class="c-chev"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 6l6 6-6 6"/></svg></span>
   </a>`;
 }
