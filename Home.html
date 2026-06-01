@@ -825,6 +825,14 @@ tabsEl.addEventListener('click', e=>{
 
 /* ---- Search index (종목 자동완성) ---- */
 const SEARCH_INDEX = (()=>{
+  // 라이브 데이터가 있으면 전체 종목을 검색 대상으로 사용
+  const live = window.KOS_LIVE_DATA?.stocks;
+  if (live && live.length) {
+    const seen0 = {}, out0 = [];
+    live.forEach(s=>{ if(seen0[s.ticker]) return; seen0[s.ticker]=1;
+      out0.push({ticker:s.ticker, name:s.name, sector:s.sector}); });
+    return out0;
+  }
   const extra = [
     {ticker:'006400',name:'삼성SDI',sector:'2차전지'},
     {ticker:'009150',name:'삼성전기',sector:'전자부품'},
