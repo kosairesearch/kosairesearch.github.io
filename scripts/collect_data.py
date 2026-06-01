@@ -613,8 +613,13 @@ def enrich_with_dart(results):
                     row = fs[fs["account_nm"].str.contains(account_name, na=False)]
                     if row.empty:
                         return 0
-                    val = row.iloc[0].get(field, "0")
-                    return int(str(val).replace(",", "").replace("-", "0") or 0)
+                    val = str(row.iloc[0].get(field, "0")).replace(",", "").strip()
+                    if val in ("", "-", "nan", "None"):
+                        return 0
+                    try:
+                        return int(float(val))   # 음수(적자) 부호 유지
+                    except ValueError:
+                        return 0
 
                 revenue      = get_amount("매출액")
                 revenue_prev = get_amount("매출액", "frmtrm_amount")  # 전기 매출액
