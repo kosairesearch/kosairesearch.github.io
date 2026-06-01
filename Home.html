@@ -526,7 +526,8 @@ section.block{padding:36px 0}
     "다른 종목명·티커·업종으로 검색해 보세요.":"Try a different name, ticker, or sector.",
     "해당 업종 종목이 없습니다.":"No stocks in this sector.",
     "관심 종목":"Watchlist","관심종목":"Watchlist",
-    "코스피":"KOSPI","코스닥":"KOSDAQ","코넥스":"KONEX"
+    "코스피":"KOSPI","코스닥":"KOSDAQ","코넥스":"KONEX",
+    "시가총액":"Market Cap","거래대금":"Turnover","거래량":"Volume"
   });
   function cleanEn(s){
     s=(s||'').trim();
@@ -737,6 +738,10 @@ const KOS = {
   ratio: n => (n==null||n<=0) ? '-' : (EN() ? n.toFixed(1)+'×' : n.toFixed(1) + '배'),
   pct: n => (n > 0 ? '+' : '') + n.toFixed(2) + '%',
   pctPlain: n => n.toFixed(1) + '%',
+  mcap: n => !n ? '-' : (EN() ? '₩'+n.toFixed(1)+'T' : n.toFixed(1)+'조'),
+  amt: n => !n ? '-' : (n>=1e12 ? (EN()?'₩'+(n/1e12).toFixed(1)+'T':(n/1e12).toFixed(1)+'조')
+                                 : (EN()?'₩'+Math.round(n/1e8).toLocaleString('en-US')+'00M':Math.round(n/1e8).toLocaleString('ko-KR')+'억')),
+  vol: n => !n ? '-' : (EN() ? Math.round(n/1e4).toLocaleString('en-US')+'K주' : Math.round(n/1e4).toLocaleString('ko-KR')+'만주'),
   T: s => (window.KOSi18n ? KOSi18n.t(s) : s),
 };
 
@@ -759,9 +764,9 @@ KOS.stockCard = (d) => {
       <span class="kos-change ${dir}"><span class="arw">${arw}</span>${KOS.pct(d.change)}</span>
     </div>
     <div class="kos-metrics">
-      <div class="kos-metric"><span class="k">PER</span><span class="v">${KOS.ratio(d.per)}</span></div>
-      <div class="kos-metric"><span class="k">PBR</span><span class="v">${KOS.ratio(d.pbr)}</span></div>
-      <div class="kos-metric"><span class="k">${KOS.T('배당')}</span><span class="v">${KOS.pctPlain(d.div)}</span></div>
+      <div class="kos-metric"><span class="k">${KOS.T('시가총액')}</span><span class="v">${KOS.mcap(d.mcap)}</span></div>
+      <div class="kos-metric"><span class="k">${KOS.T('거래대금')}</span><span class="v">${KOS.amt(d.trading_value)}</span></div>
+      <div class="kos-metric"><span class="k">${KOS.T('거래량')}</span><span class="v">${KOS.vol(d.volume)}</span></div>
     </div>
     <div class="kos-ai">
       <p>${KOS.T(d.ai)}</p>
