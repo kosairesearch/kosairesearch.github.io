@@ -1,0 +1,29 @@
+=== 리포트 생성 시작 Tue Jun  2 03:26:54 UTC 2026 ===
+## 🤖 AI 리포트 생성 — 2026-06-02 12:26 KST
+- 모델: `claude-sonnet-4-6` · 대상: 시총 상위 5개
+
+### [1/5] 삼성전자 (005930)
+- ⚠️ 시도 1 실패: JSONDecodeError: Expecting value: line 1 column 1 (char 0)
+- ⚠️ 시도 2 실패: JSONDecodeError: Expecting value: line 1 column 1 (char 0)
+- ❌ 삼성전자 리포트 생성 실패 — 건너뜀
+
+### [2/5] SK하이닉스 (000660)
+- ⚠️ 시도 1 실패: JSONDecodeError: Expecting ',' delimiter: line 61 column 101 (char 9112)
+- ⚠️ 시도 2 실패: RateLimitError: Error code: 429 - {'type': 'error', 'error': {'type': 'rate_limit_error', 'message': "This request would exceed your organization's rate limit of 30,000 input tokens per minute (org: 894d8910-099a-472d-803b-67618a94e2bb, model: claude-sonnet-4-6). For details, refer to: https://docs.claude.com/en/api/rate-limits. You can see the response headers for current usage. Reduce the prompt length or the maximum tokens requested, or try again later. View your current limits at https://console.anthropic.com/settings/limits. To raise this limit, purchase credits to advance to the next usage tier at https://console.anthropic.com/settings/billing."}, 'request_id': 'req_011CbdjRJMDg1wD1Uh8dbeUN'}
+- ❌ SK하이닉스 리포트 생성 실패 — 건너뜀
+
+### [3/5] 현대차 (005380)
+- ⚠️ 시도 1 실패: RateLimitError: Error code: 429 - {'type': 'error', 'error': {'type': 'rate_limit_error', 'message': "This request would exceed your organization's rate limit of 30,000 input tokens per minute (org: 894d8910-099a-472d-803b-67618a94e2bb, model: claude-sonnet-4-6). For details, refer to: https://docs.claude.com/en/api/rate-limits. You can see the response headers for current usage. Reduce the prompt length or the maximum tokens requested, or try again later. View your current limits at https://console.anthropic.com/settings/limits. To raise this limit, purchase credits to advance to the next usage tier at https://console.anthropic.com/settings/billing."}, 'request_id': 'req_011CbdjRRrR2vc8T7DYiqTfK'}
+- ⚠️ 시도 2 실패: JSONDecodeError: Expecting ',' delimiter: line 75 column 103 (char 10825)
+- ❌ 현대차 리포트 생성 실패 — 건너뜀
+
+### [4/5] LG에너지솔루션 (373220)
+- ⚠️ 시도 1 실패: RateLimitError: Error code: 429 - {'type': 'error', 'error': {'type': 'rate_limit_error', 'message': "This request would exceed your organization's rate limit of 30,000 input tokens per minute (org: 894d8910-099a-472d-803b-67618a94e2bb, model: claude-sonnet-4-6). For details, refer to: https://docs.claude.com/en/api/rate-limits. You can see the response headers for current usage. Reduce the prompt length or the maximum tokens requested, or try again later. View your current limits at https://console.anthropic.com/settings/limits. To raise this limit, purchase credits to advance to the next usage tier at https://console.anthropic.com/settings/billing."}, 'request_id': 'req_011CbdjhHWp2MaUbpJyLj8ZQ'}
+- ⚠️ 시도 2 실패: JSONDecodeError: Expecting value: line 1 column 1 (char 0)
+- ❌ LG에너지솔루션 리포트 생성 실패 — 건너뜀
+
+### [5/5] 삼성생명 (032830)
+- ⚠️ 시도 1 실패: RateLimitError: Error code: 429 - {'type': 'error', 'error': {'type': 'rate_limit_error', 'message': "This request would exceed your organization's rate limit of 30,000 input tokens per minute (org: 894d8910-099a-472d-803b-67618a94e2bb, model: claude-sonnet-4-6). For details, refer to: https://docs.claude.com/en/api/rate-limits. You can see the response headers for current usage. Reduce the prompt length or the maximum tokens requested, or try again later. View your current limits at https://console.anthropic.com/settings/limits. To raise this limit, purchase credits to advance to the next usage tier at https://console.anthropic.com/settings/billing."}, 'request_id': 'req_011CbdjzGtaVDrQn5j9D4FEP'}
+- ⚠️ 시도 2 실패: RateLimitError: Error code: 429 - {'type': 'error', 'error': {'type': 'rate_limit_error', 'message': "This request would exceed your organization's rate limit of 30,000 input tokens per minute (org: 894d8910-099a-472d-803b-67618a94e2bb, model: claude-sonnet-4-6). For details, refer to: https://docs.claude.com/en/api/rate-limits. You can see the response headers for current usage. Reduce the prompt length or the maximum tokens requested, or try again later. View your current limits at https://console.anthropic.com/settings/limits. To raise this limit, purchase credits to advance to the next usage tier at https://console.anthropic.com/settings/billing."}, 'request_id': 'req_011CbdjznM8AbegEdh75Y8YP'}
+- ❌ 삼성생명 리포트 생성 실패 — 건너뜀
+❌ 생성된 리포트가 없습니다.
