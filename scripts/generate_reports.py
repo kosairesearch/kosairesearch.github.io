@@ -267,7 +267,12 @@ def parse_report(text):
     start, end = chunk.find("{"), chunk.rfind("}")
     if start >= 0 and end > start:
         chunk = chunk[start:end + 1]
-    return json.loads(chunk)
+    try:
+        return json.loads(chunk)
+    except Exception:
+        # LLM이 만든 깨진 JSON(따옴표·콤마 누락 등) 자동 복구
+        from json_repair import repair_json
+        return repair_json(chunk, return_objects=True)
 
 
 def generate_one(client, stock, as_of, dart_block=""):

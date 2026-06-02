@@ -12,6 +12,15 @@ on:
         description: '이번 실행 최대 생성 개수 (분할 백필, 0=제한없음)'
         type: string
         default: '20'
+      tickers:
+        description: '특정 종목만 생성 (쉼표구분 6자리코드, 비우면 top_n 사용)'
+        type: string
+        default: ''
+      force:
+        description: '이미 있는 리포트도 강제 재생성'
+        type: choice
+        default: 'no'
+        options: ['no', 'yes']
 
 jobs:
   reports:
@@ -46,6 +55,8 @@ jobs:
           REPORT_MODEL: ${{ vars.REPORT_MODEL || 'claude-sonnet-4-6' }}
           REPORT_TOP_N: ${{ inputs.top_n || '100' }}
           REPORT_LIMIT: ${{ inputs.limit || '20' }}
+          REPORT_TICKERS: ${{ inputs.tickers || '' }}
+          REPORT_FORCE: ${{ inputs.force == 'yes' && '1' || '' }}
         run: |
           set -o pipefail
           mkdir -p data
