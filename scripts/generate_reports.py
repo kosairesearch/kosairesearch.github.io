@@ -388,6 +388,7 @@ def main():
                     "ticker": tk, "name": nm,
                     "name_en": st.get("name_en", nm),
                     "sector": st.get("sector", ""),
+                    "categories": st.get("categories", []),
                     "market": st.get("market", ""),
                     "reportDate": report_date,
                     "dataDate": data.get("dataDate", ""),

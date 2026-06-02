@@ -156,7 +156,8 @@ def collect(cl, as_of):
             rep.update({
                 "ticker": tk, "name": st.get("name", tk),
                 "name_en": st.get("name_en", st.get("name", tk)),
-                "sector": st.get("sector", ""), "market": st.get("market", ""),
+                "sector": st.get("sector", ""), "categories": st.get("categories", []),
+                "market": st.get("market", ""),
                 "reportDate": report_date, "dataDate": data.get("dataDate", ""),
             })
             reports[tk] = rep
