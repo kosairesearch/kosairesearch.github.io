@@ -854,7 +854,7 @@ KOSi18n.register({
     var mk=u.mk, metrics=[
       [mk.price, won(STOCK.price), tname(STOCK.market)+' · '+tname(STOCK.sector)],
       [mk.chg, '<span class="d '+cc+'">'+sign+chg.toFixed(2)+'%</span>', ''],
-      [mk.mcap, mcap(STOCK.mcap), STOCK.rank?(Ln==='en'?('Cap rank #'+STOCK.rank):('시총 '+STOCK.rank+'위')):''],
+      [mk.mcap, mcap(STOCK.mcap), ''],
       [mk.amt, amt(STOCK.trading_value), ''],
       [mk.vol, vol(STOCK.volume), ''],
       [mk.shares, shN(STOCK.shares), ''],
