@@ -163,6 +163,48 @@ SECTOR_MAP = {
     "010130": "철강",        # 고려아연
 }
 
+# ── 한국표준산업분류(KSIC) 코드 → 읽기 좋은 업종명 ──────────────────────
+# DART 기업개황의 induty_code(공식 업종코드)를 사용자 친화적 이름으로 변환.
+# 3자리 우선(세분류), 없으면 2자리(대분류). 모르면 기존 SECTOR_MAP 값 유지.
+KSIC3 = {
+    "261": "반도체", "262": "전자·부품", "263": "전자·부품", "264": "전자·부품",
+    "271": "의료기기", "272": "정밀기기",
+    "281": "전기장비", "282": "전기장비", "283": "전기장비", "284": "2차전지",
+    "301": "자동차", "302": "자동차", "303": "자동차",
+    "311": "조선", "312": "철도차량", "313": "항공·방산",
+    "351": "전기·에너지", "352": "전기·에너지",
+    "581": "출판·미디어", "582": "게임·IT", "591": "엔터·미디어", "601": "엔터·미디어",
+    "642": "금융", "649": "금융", "651": "보험", "652": "보험", "661": "금융",
+    "711": "지주", "715": "지주",
+}
+KSIC2 = {
+    "10": "식품", "11": "식품", "12": "식품",
+    "13": "섬유", "14": "의류", "15": "가죽·신발", "16": "목재", "17": "제지", "18": "인쇄",
+    "19": "정유", "20": "화학", "21": "바이오/제약", "22": "고무·플라스틱",
+    "23": "비금속광물", "24": "철강·금속", "25": "금속가공",
+    "26": "전자·반도체", "27": "정밀기기", "28": "전기장비",
+    "29": "기계", "30": "자동차", "31": "운송장비", "32": "가구", "33": "기타제조",
+    "35": "전기·가스", "36": "수도", "37": "환경", "38": "환경",
+    "41": "건설", "42": "건설",
+    "45": "유통·소비재", "46": "유통·소비재", "47": "유통·소비재",
+    "49": "운송", "50": "운송", "51": "운송", "52": "물류",
+    "55": "숙박", "56": "음식료",
+    "58": "IT 서비스", "59": "엔터·미디어", "60": "엔터·미디어",
+    "61": "통신", "62": "IT 서비스", "63": "IT 서비스",
+    "64": "금융", "65": "보험", "66": "금융",
+    "68": "부동산", "70": "지주·연구", "71": "지주·서비스", "72": "엔지니어링", "73": "엔지니어링",
+}
+
+
+def ksic_name(code, fallback="기타"):
+    """KSIC 업종코드 → 친화적 업종명. 모르는 코드는 fallback(기존 분류) 유지."""
+    digits = "".join(ch for ch in str(code) if ch.isdigit())
+    if len(digits) >= 3 and digits[:3] in KSIC3:
+        return KSIC3[digits[:3]]
+    if len(digits) >= 2 and digits[:2] in KSIC2:
+        return KSIC2[digits[:2]]
+    return fallback
+
 
 def get_latest_trading_date():
     """가장 최근 영업일을 반환합니다."""
@@ -637,7 +679,7 @@ def enrich_with_dart(results):
         return results
 
     debug_info = {}
-    targets = sorted(results.values(), key=lambda x: x["trading_value"], reverse=True)[:90]
+    targets = sorted(results.values(), key=lambda x: x["trading_value"], reverse=True)[:130]
     print(f"  [DART] {len(targets)}개 종목 영문명·주식수(시총) 수집 중...")
 
     for i, stock in enumerate(targets):
@@ -648,12 +690,17 @@ def enrich_with_dart(results):
             if not corp_code:
                 continue
 
-            # 영문 종목명 (영어 모드 표시용)
+            # 영문 종목명(영어 모드 표시용) + 업종코드(induty_code, 한국표준산업분류)
             try:
                 info = dart.company(corp_code)
-                name_en = (info.get("corp_name_eng") if (info is not None and hasattr(info, "get")) else "") or ""
-                if name_en:
-                    results[ticker]["name_en"] = name_en.strip()
+                if info is not None and hasattr(info, "get"):
+                    name_en = info.get("corp_name_eng") or ""
+                    if name_en:
+                        results[ticker]["name_en"] = name_en.strip()
+                    induty = (info.get("induty_code") or "").strip()
+                    if induty:
+                        results[ticker]["induty_code"] = induty
+                        results[ticker]["sector"] = ksic_name(induty, results[ticker].get("sector", "기타"))
             except Exception:
                 pass
 
