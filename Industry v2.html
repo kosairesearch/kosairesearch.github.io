@@ -494,7 +494,11 @@ table.cmp tr.avg td{border-top:1.5px solid var(--border-2);font-weight:700}
     "해당 업종 종목이 없습니다.":"No stocks in this sector.",
     "관심 종목":"Watchlist","관심종목":"Watchlist",
     "코스피":"KOSPI","코스닥":"KOSDAQ","코넥스":"KONEX",
-    "시가총액":"Market Cap","거래대금":"Turnover","거래량":"Volume"
+    "시가총액":"Market Cap","거래대금":"Turnover","거래량":"Volume",
+    "현재가":"Price","등락률":"Change","시장":"Market","상승 종목":"Gainers",
+    "평균 등락률":"Avg. change","거래대금 합계":"Total turnover","시가총액 1위":"Top by mkt cap",
+    "업종 시가총액 합계":"Sector market cap","시가총액(조)":"Mkt cap (₩T)","거래대금(조)":"Turnover (₩T)",
+    "거래대금순":"By turnover","종목 수":"Stocks"
   });
   function cleanEn(s){
     s=(s||'').trim();
@@ -684,7 +688,7 @@ KOSi18n.register({
   "종목":"Stock","시총(조)":"Mkt cap (₩T)","매출 YoY":"Revenue YoY","영업익 YoY":"OP YoY","영업이익률":"Op. margin",
   "PER":"PER","PBR":"PBR","ROE":"ROE","배당":"Yield",
   "업종 평균":"Industry avg",
-  "출처: 컨센서스·DART · 2026-05-23 기준 · 영업이익 YoY는 2025년 3분기 누계 기준":"Source: consensus and DART · as of 2026-05-23 · OP YoY is YTD through 3Q 2025",
+    <div class="foot-note">출처: pykrx 시세 · 데이터 기준일 표시 · 거래대금은 당일 누계</div>
 
   // ⑩ external indicators
   "반도체 업종 분석 시 함께 모니터링이 권장되는 지표이다. 업종 실적·주가에 선·동행적 신호를 제공할 가능성이 있는 변수들로 구성했다.":"Indicators worth monitoring alongside the semiconductor sector. Each variable can give a leading or coincident signal for sector earnings or share prices.",
@@ -825,14 +829,12 @@ KOSi18n.register({
     <p class="head-desc">메모리·시스템반도체·파운드리·후공정(OSAT)·소부장(소재·부품·장비)을 포괄하는 한국 증시의 핵심 산업군. 글로벌 사이클·환율·AI 가속기 수요에 가장 민감하게 반응하는 업종이다.</p>
 
     <div class="kpi-grid">
-      <div class="kpi"><div class="lbl">업종 시가총액 합계</div><div class="val">724.3조</div><div class="peer">KOSPI 전체의 <b>32.4%</b></div></div>
-      <div class="kpi"><div class="lbl">종목 수</div><div class="val">118개</div><div class="peer">KOSPI 78 · KOSDAQ 40</div></div>
-      <div class="kpi"><div class="lbl">평균 PER</div><div class="val">18.7배</div><div class="peer">시장 평균 <b>15.2배</b> 대비 +23%</div></div>
-      <div class="kpi"><div class="lbl">평균 PBR</div><div class="val">1.84배</div><div class="peer">시장 평균 <b>1.12배</b> 대비 +64%</div></div>
-      <div class="kpi"><div class="lbl">평균 ROE</div><div class="val">12.6%</div><div class="peer">시장 평균 <b>8.7%</b> 대비 <span class="d up">+3.9%p</span></div></div>
-      <div class="kpi"><div class="lbl">평균 영업이익률</div><div class="val">14.6%</div><div class="peer">전분기 대비 <span class="d down">-1.2%p</span></div></div>
-      <div class="kpi"><div class="lbl">평균 매출 성장률 (YoY)</div><div class="val">+22.4%</div><div class="peer">시장 평균 <span class="d up">+6.1%</span></div></div>
-      <div class="kpi"><div class="lbl">평균 배당수익률</div><div class="val">1.32%</div><div class="peer">시장 평균 <b>2.08%</b></div></div>
+      <div class="kpi"><div class="lbl">업종 시가총액 합계</div><div class="val">724.3조</div><div class="peer">전체 시장의 <b>32.4%</b></div></div>
+      <div class="kpi"><div class="lbl">종목 수</div><div class="val">118개</div><div class="peer">코스피 78 · 코스닥 40</div></div>
+      <div class="kpi"><div class="lbl">거래대금 합계</div><div class="val">8.4조</div><div class="peer">시장 거래대금의 <b>21%</b></div></div>
+      <div class="kpi"><div class="lbl">평균 등락률</div><div class="val">+1.84%</div><div class="peer">KOSPI 대비 +0.92%p</div></div>
+      <div class="kpi"><div class="lbl">상승 종목</div><div class="val">72개</div><div class="peer">하락 46 · 보합 0</div></div>
+      <div class="kpi"><div class="lbl">시가총액 1위</div><div class="val">삼성전자</div><div class="peer">업종 내 비중 <b>54%</b></div></div>
     </div>
 
     <div class="ret-strip">
@@ -995,8 +997,7 @@ KOSi18n.register({
     <div class="stk-tabs" id="stkTabs">
       <button class="stk-tab active" data-sort="mcap">시가총액순</button>
       <button class="stk-tab" data-sort="change">등락률순</button>
-      <button class="stk-tab" data-sort="per">PER 낮은순</button>
-      <button class="stk-tab" data-sort="roe">ROE 높은순</button>
+      <button class="stk-tab" data-sort="mcap2">거래대금순</button>
       <span class="right">총 118개 종목 · 상위 12개 표시</span>
     </div>
     <div class="stk-grid" id="stkGrid" data-i18n-skip></div>
@@ -1069,17 +1070,16 @@ KOSi18n.register({
     <div class="tbl-card glass">
       <div class="tbl-scroll">
         <table class="cmp">
-          <thead><tr><th>종목</th><th>시총(조)</th><th>매출 YoY</th><th>영업익 YoY</th><th>영업이익률</th><th>PER</th><th>PBR</th><th>ROE</th><th>배당</th></tr></thead>
+          <thead><tr><th>종목</th><th>시가총액(조)</th><th>현재가</th><th>등락률</th><th>거래대금(조)</th></tr></thead>
           <tbody>
-            <tr><td><div class="nm">삼성전자</div><div class="tk">005930</div></td><td>468.2</td><td class="lo">+5.9%</td><td>+274%</td><td>15.4%</td><td class="hi">19.5배</td><td class="lo">1.32배</td><td class="lo">9.4%</td><td class="hi">1.84%</td></tr>
-            <tr><td><div class="nm">SK하이닉스</div><div class="tk">000660</div></td><td>142.6</td><td class="hi">+38.2%</td><td>+412%</td><td class="hi">32.4%</td><td class="lo">8.4배</td><td>1.65배</td><td class="hi">21.8%</td><td class="lo">0.84%</td></tr>
-            <tr><td><div class="nm">한미반도체</div><div class="tk">042700</div></td><td>14.8</td><td class="hi">+72.1%</td><td>+185%</td><td class="hi">38.2%</td><td class="hi">28.6배</td><td class="hi">8.42배</td><td class="hi">32.4%</td><td class="lo">0.42%</td></tr>
-            <tr><td><div class="nm">DB하이텍</div><div class="tk">000990</div></td><td>7.4</td><td class="lo">+2.4%</td><td>+8%</td><td>22.1%</td><td>15.2배</td><td class="lo">1.28배</td><td class="lo">8.2%</td><td>1.45%</td></tr>
-            <tr><td><div class="nm">리노공업</div><div class="tk">058470</div></td><td>4.2</td><td>+18.6%</td><td>+22%</td><td class="hi">42.8%</td><td class="hi">32.4배</td><td class="hi">5.84배</td><td class="hi">22.5%</td><td class="lo">0.65%</td></tr>
-            <tr><td><div class="nm">원익IPS</div><div class="tk">240810</div></td><td>3.6</td><td class="hi">+41.8%</td><td>+96%</td><td>18.4%</td><td>22.1배</td><td>2.14배</td><td>14.6%</td><td class="lo">0.32%</td></tr>
-            <tr><td><div class="nm">동진쎄미켐</div><div class="tk">005290</div></td><td>2.8</td><td>+15.2%</td><td>+18%</td><td>14.2%</td><td>18.4배</td><td>1.96배</td><td>11.8%</td><td>1.12%</td></tr>
-            <tr><td><div class="nm">솔브레인</div><div class="tk">357780</div></td><td>2.4</td><td>+9.2%</td><td>+12%</td><td>16.8%</td><td class="lo">16.8배</td><td>2.42배</td><td>12.4%</td><td>0.95%</td></tr>
-            <tr class="avg"><td>업종 평균</td><td>—</td><td>+22.4%</td><td>+128%</td><td>14.6%</td><td>18.7배</td><td>1.84배</td><td>12.6%</td><td>1.32%</td></tr>
+            <tr><td><div class="nm">삼성전자</div><div class="tk">005930</div></td><td>2,065.9</td><td>349,000원</td><td class="hi">+5.84%</td><td>13.7</td></tr>
+            <tr><td><div class="nm">SK하이닉스</div><div class="tk">000660</div></td><td>1,698.0</td><td>2,333,000원</td><td class="hi">+1.92%</td><td>3.4</td></tr>
+            <tr><td><div class="nm">한미반도체</div><div class="tk">042700</div></td><td>26.6</td><td>282,000원</td><td class="lo">-3.59%</td><td>1.1</td></tr>
+            <tr><td><div class="nm">DB하이텍</div><div class="tk">000990</div></td><td>7.4</td><td>185,500원</td><td class="lo">-4.53%</td><td>0.3</td></tr>
+            <tr><td><div class="nm">리노공업</div><div class="tk">058470</div></td><td>4.2</td><td>97,400원</td><td class="lo">-1.72%</td><td>0.2</td></tr>
+            <tr><td><div class="nm">원익IPS</div><div class="tk">240810</div></td><td>3.6</td><td>36,750원</td><td class="hi">+1.28%</td><td>0.1</td></tr>
+            <tr><td><div class="nm">솔브레인</div><div class="tk">357780</div></td><td>2.4</td><td>312,500원</td><td class="">0.00%</td><td>0.1</td></tr>
+            <tr><td><div class="nm">에스에프에이</div><div class="tk">336370</div></td><td>1.9</td><td>42,700원</td><td class="hi">+1.05%</td><td>0.1</td></tr>
           </tbody>
         </table>
       </div>
@@ -1199,10 +1199,9 @@ function stkCard(s){
     <h3 class="stk-name">${T(s.name)}</h3>
     <div class="stk-price-row"><span class="stk-price">${price}</span><span class="stk-chg ${dir}"><span style="font-size:10px">${arw}</span> ${pct}</span></div>
     <div class="stk-stats">
-      <span class="k">${T('시총')}</span><span class="v">${EN?'₩'+s.mcap+'T':s.mcap+'조'}</span>
-      <span class="k">PER</span><span class="v">${s.per}${EN?'×':'배'}</span>
-      <span class="k">ROE</span><span class="v">${s.roe}%</span>
-      <span class="k">${T('매출성장')}</span><span class="v">${(s.rev>0?'+':'')+s.rev}%</span>
+      <span class="k">${T('시가총액')}</span><span class="v">${EN?'₩'+s.mcap+'T':s.mcap+'조'}</span>
+      <span class="k">${T('거래대금')}</span><span class="v">${EN?'₩'+(s.mcap*0.012).toFixed(1)+'T':(s.mcap*0.012).toFixed(1)+'조'}</span>
+      <span class="k">${T('시장')}</span><span class="v">${T(s.mkt==='KOSPI'?'코스피':'코스닥')}</span>
     </div></a>`;
 }
 const grid=document.getElementById('stkGrid');
@@ -1210,8 +1209,7 @@ function renderStk(sortKey){
   let list=[...ST];
   if(sortKey==='mcap') list.sort((a,b)=>b.mcap-a.mcap);
   else if(sortKey==='change') list.sort((a,b)=>b.change-a.change);
-  else if(sortKey==='per') list.sort((a,b)=>a.per-b.per);
-  else if(sortKey==='roe') list.sort((a,b)=>b.roe-a.roe);
+  else if(sortKey==='mcap2') list.sort((a,b)=>b.mcap-a.mcap);
   grid.innerHTML=list.map(stkCard).join('');
 }
 renderStk('mcap');
