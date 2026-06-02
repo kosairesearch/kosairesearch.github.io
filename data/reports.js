@@ -1,6 +1,6 @@
 // KOS ai — AI 리서치 리포트 (자동 생성). 직접 수정하지 마세요.
 window.KOS_REPORTS = {
-  "lastUpdated": "2026-06-03 04:17",
+  "lastUpdated": "2026-06-03 04:46",
   "model": "claude-sonnet-4-6",
   "reports": {
     "005930": {
@@ -334,164 +334,176 @@ window.KOS_REPORTS = {
     },
     "005380": {
       "lead": {
-        "ko": "미국 관세 15% 확정과 보스턴다이나믹스 IPO 기대감이 맞물리며, 현대차는 전통 완성차 기업을 넘어 '피지컬 AI' 복합 모빌리티 기업으로 밸류에이션 재정립 국면에 진입했다.",
-        "en": "With the US-Korea automotive tariff reduction locked in at 15% and a Boston Dynamics Nasdaq IPO decision imminent, Hyundai Motor is entering a valuation re-rating phase as a Physical AI-driven mobility conglomerate beyond its legacy automaker identity."
+        "ko": "현대차는 2026년 1분기 역대 최대 매출을 기록했으나, 미국 관세 부담·원가 상승·환율 충격이 복합 작용하며 수익성이 크게 악화되는 '성장-수익성 괴리' 국면에 처해 있으며, HMGMA 하이브리드 생산 개시와 HEV 믹스 개선이 하반기 수익성 회복의 핵심 변수로 부상하고 있다.",
+        "en": "Hyundai Motor posted an all-time record Q1 2026 revenue yet faces a widening growth-profitability gap as U.S. tariff costs, raw-material inflation, and FX swings converge, with HMGMA hybrid ramp-up and record HEV mix emerging as the pivotal levers for second-half margin recovery."
       },
       "desc": {
-        "ko": "현대차(005380)는 2025년 미국 25% 관세 역풍에도 불구하고 사상 최고 연간 매출(186.3조원)을 달성하며 구조적 체질 개선 능력을 입증했다. 2026년 들어 관세 환경 개선, HMGMA 가동률 회복, 로보틱스 신사업 모멘텀이 동시에 부각되며 주가는 연중 최고 수준으로 상승했다.",
-        "en": "Hyundai Motor (005380) achieved a record annual revenue of KRW 186.3 trillion in 2025, demonstrating structural resilience despite a 25% US tariff headwind. In 2026, converging tailwinds from the trade deal, HMGMA utilization recovery, and a robotics growth narrative have pushed the stock to its year-to-date high."
+        "ko": "현대자동차(005380)는 코스피 자동차 업종 시가총액 1위로, DART 공시 기준 2025년 연결 매출 186.3조 원, 글로벌 도매 판매 약 400만 대 수준의 완성차 대형주다. 2025년 연간 및 2026년 1분기 모두 매출은 성장 기조를 유지했으나, 미국 상호관세 부과와 원자재 가격 상승이 겹치면서 영업이익이 큰 폭으로 감소하는 이익 역성장 구간을 통과 중이다. 본 리포트는 DART 공시 확정 재무, 경영진 컨퍼런스콜, 업종 동향 및 최신 뉴스를 종합해 현대차의 현황과 전망을 균형 있게 서술한다.",
+        "en": "Hyundai Motor (005380) is the largest-cap company in the KOSPI automotive sector, with DART-confirmed FY2025 consolidated revenue of KRW 186.3 trillion and global wholesale volume of approximately 4 million units. While top-line growth has remained intact, operating profit has contracted materially in both FY2025 and Q1 2026 as U.S. auto tariffs and rising input costs take a significant toll on margins. This report synthesizes DART-confirmed financials, management conference-call disclosures, industry data, and the latest news to provide a balanced assessment of Hyundai Motor's current standing and forward outlook."
       },
       "keypoints": [
         {
-          "ko": "2025년 매출 186.3조원(+6.3% YoY) 사상 최고치 달성, 미국 시장 창사 최초 연간 100만 대 돌파",
-          "en": "Record FY2025 revenue of KRW 186.3 trillion (+6.3% YoY); first-ever annual US wholesale milestone of 1 million units"
+          "ko": "2026년 1분기 매출액 45.9조 원으로 역대 1분기 최대를 달성했으나, 관세 비용 8,600억 원 등을 포함한 복합 비용 압박으로 영업이익은 30.8% 급감(2.5조 원, OPM 5.5%)",
+          "en": "Q1 2026 revenue of KRW 45.9 trillion set an all-time quarterly record, but operating profit plunged 30.8% YoY to KRW 2.5 trillion (OPM 5.5%), with KRW 860 billion in tariff-related costs alone as the single largest drag"
         },
         {
-          "ko": "한미 자동차 관세 15% 확정 → 증권가 추정 현대차 단독 연간 영업이익 약 2.4조원 개선 효과 기대",
-          "en": "US-Korea auto tariff fixed at 15%; sell-side estimates suggest approximately KRW 2.4 trillion in annual operating profit uplift for Hyundai alone"
+          "ko": "글로벌 자동차 산업 수요가 7.2% 역성장한 환경에서도 현대차 글로벌 시장점유율 4.6%→4.9%, 미국 점유율 5.6%→6.0%로 상승하며 경쟁력 유지 확인",
+          "en": "Hyundai outperformed a 7.2% contraction in global industry demand, growing its global market share to 4.9% and U.S. market share to 6.0%, demonstrating sustained competitive resilience"
         },
         {
-          "ko": "보스턴다이나믹스 나스닥 IPO 결정 시한 2026년 6월 도래, Physical AI·SDV 사업 가치 독립 인정 여부가 핵심 변수",
-          "en": "Boston Dynamics Nasdaq IPO decision expected by June 2026; independent market recognition of Physical AI and SDV business value is the pivotal near-term catalyst"
+          "ko": "1분기 하이브리드 판매 17.4만 대로 분기 역대 최대, 전체 판매 대비 HEV 비중 17.8%(미국 시장 24.8%)로 고부가가치 믹스 개선 지속",
+          "en": "Q1 HEV sales hit a record 173,977 units, comprising 17.8% of total sales globally (24.8% in the U.S.), reflecting a clear and accelerating shift toward higher-margin powertrain mix"
+        },
+        {
+          "ko": "미국 조지아 HMGMA 공장이 2026년 하이브리드 생산을 추가 개시하며 현지화 전략 강화; 미국 내 기존 공장 포함 연산 100만 대 체제 완성으로 관세 구조 완충 기반 마련",
+          "en": "HMGMA in Georgia began hybrid vehicle production in 2026, reinforcing U.S. localization strategy; combined with legacy plants, Hyundai's U.S. annual production capacity now reaches 1 million units, providing a structural tariff buffer"
+        },
+        {
+          "ko": "경영진이 2026년 연간 OPM 가이던스 6.3~7.3%를 공식 제시하며 1분기 저점 통과를 시사; 컨틴전시 플랜 및 비용 원점 재검토를 통한 하반기 수익성 회복 전략 가동",
+          "en": "Management officially guided FY2026 OPM of 6.3-7.3%, signaling Q1 as an earnings trough, with a zero-based cost review and contingency plan already activated to drive second-half profitability recovery"
         }
       ],
       "business": {
-        "ko": "현대자동차는 1967년 설립된 글로벌 완성차 기업으로, 완성차 판매·금융서비스·철도차량 등 종합 모빌리티 사업을 영위하며 주요 매출은 완성차에서 발생하고 금융 부문이 보완하는 구조다. 제네시스 브랜드 및 대형 SUV 라인업을 통한 프리미엄 믹스 전략이 핵심 수익 축이며, 2025년에는 하이브리드 차량(HEV) 비중을 글로벌 판매의 16% 이상으로 끌어올려 수익성을 방어했다. 2026년에는 HEV·EREV 친환경차 확대, SDV(소프트웨어 중심 차량) 전환을 위해 R&D 7.4조원, 설비투자 9조원, 전략투자 1.4조원 등 총 17.8조원을 투자할 계획이다. 자회사 보스턴다이나믹스의 휴머노이드 로봇 '아틀라스'와 42dot의 자율주행 플랫폼을 통해 차량·공장·로봇 데이터를 통합하는 Physical AI 생태계 구축도 병행하고 있다.",
-        "en": "Hyundai Motor, established in 1967, is a global automaker operating across vehicle sales, financial services, and rail transportation, with vehicle sales as the primary revenue driver supplemented by a growing financial services segment. The premium Genesis brand and large-SUV lineup anchor the company's mix-improvement strategy, and in 2025, HEV models exceeded 16% of global sales, enabling meaningful margin defense. For 2026, the company has committed KRW 17.8 trillion in total investment—KRW 7.4 trillion in R&D, KRW 9 trillion in capex, and KRW 1.4 trillion in strategic investments—targeting HEV/EREV electrification and SDV transformation. Subsidiary Boston Dynamics' humanoid robot Atlas and 42dot's autonomous driving platform are central pillars of the group's Physical AI ecosystem, integrating data across vehicles, factories, and robots."
+        "ko": "현대자동차는 완성차 제조를 핵심 사업으로 하는 글로벌 자동차 그룹으로, 현대·제네시스 브랜드를 중심으로 세단, SUV, 상용차, 전기차(EV), 하이브리드(HEV) 등 광범위한 라인업을 운영하고 있다. 2026년 1분기 매출 구성 기준으로 자동차 부문이 34.5조 원(매출 비중 약 75%)을 차지하고, 금융 서비스 부문이 8.99조 원(약 20%), 기타 부문이 2.41조 원(약 5%)을 기여하며 금융 서비스 부문의 비중이 점진적으로 확대되는 추세다. 지역별로는 미국 시장이 실적의 핵심 축으로, 2025년 기준 현대·기아 합산 미국 시장 점유율이 역대 최고 수준인 11.3%를 기록하며 전략 우선 시장으로서의 위상을 공고히 했다. 제네시스 브랜드는 프리미엄 세그먼트에서 단가 및 이익률 제고의 핵심 수단으로 기능하며, SUV·제네시스·상용 비중이 1분기 기준 전체의 66.6%를 차지해 고부가가치 믹스가 꾸준히 개선되고 있다. 전동화 전략 측면에서는 순수 전기차뿐 아니라 HEV·PHEV 등 멀티 파워트레인 전략을 채택해 전기차 전환 속도가 더딘 시장 환경에서도 탄력적 대응이 가능하다. 미국 조지아주 HMGMA(현대차그룹 메타플랜트 아메리카)는 연간 30만 대 생산능력의 전동화 전용 스마트 공장으로, 2026년 하이브리드 생산을 추가하며 현지화 범위를 확대했으며, 향후 50만 대까지 증설 가능한 구조를 갖추고 있다. 경쟁 구도상 현대차는 Toyota, GM, Stellantis 등 글로벌 완성차 대형사와 경쟁하며, PER·PBR 기준 밸류에이션이 글로벌 동종 그룹 대비 상대적으로 낮은 코리아 디스카운트 구간에 위치하고 있다. 보스턴 다이내믹스를 통한 휴머노이드 로봇 사업화, 자율주행, 소프트웨어 정의 차량(SDV) 등 미래 모빌리티 분야로의 포트폴리오 확장도 중장기 성장 동력으로 부각되고 있다.",
+        "en": "Hyundai Motor is a global automotive conglomerate centered on vehicle manufacturing under the Hyundai and Genesis brands, offering a broad lineup spanning sedans, SUVs, commercial vehicles, BEVs, and HEVs. In Q1 2026, the automotive segment contributed KRW 34.5 trillion (approximately 75% of revenue), financial services KRW 8.99 trillion (~20%), and other segments KRW 2.41 trillion (~5%), with the financial services division steadily gaining revenue share. The U.S. is the single most important market; combined Hyundai-Kia U.S. market share reached a record 11.3% in 2025, cementing the region's status as the group's strategic priority. The Genesis premium brand serves as a primary lever for unit pricing and margin improvement, while SUV, Genesis, and commercial vehicles comprised 66.6% of Q1 2026 sales mix, reflecting continued migration toward higher-value products. On electrification, the company has adopted a multi-powertrain strategy—BEV, HEV, PHEV—enabling flexible adaptation to markets where pure-EV uptake remains gradual. HMGMA in Ellabell, Georgia, a 300,000-unit annual-capacity smart factory that added hybrid production in 2026, is expandable to 500,000 units, further reinforcing U.S. localization strategy. Competitively, Hyundai contends with Toyota, GM, and Stellantis globally; its PER and PBR valuations remain below the global auto peer average, reflecting a persistent Korea discount. The company is also extending its portfolio into humanoid robotics via Boston Dynamics, autonomous driving, and software-defined vehicles as medium-to-long-term growth catalysts."
       },
       "recent": {
-        "ko": "2025년 연간 실적은 매출 186.3조원(+6.3% YoY, 사상 최고)을 기록했으나, 25% 미국 관세 및 일회성 비용 영향으로 영업이익은 11.5조원(-19.5%), 영업이익률은 6.2%에 그쳤다. 미국 시장에서는 SUV·하이브리드 호조에 힘입어 창사 최초 연간 100만 대를 돌파했으며, 글로벌 친환경차 판매는 전년 대비 27% 증가한 약 96만 대를 기록했다. 2026년 1분기에는 분기 사상 최대 매출 45.9조원(+3.4% YoY)을 달성했으나, 관세 비용 8,600억원 포함 각종 비용 증가로 영업이익이 2.5조원(-30.8%)으로 시장 기대치를 하회했다. 주가는 보스턴다이나믹스 IPO 기대감과 한미 관세 합의 모멘텀을 반영하며 5월 초 60만원대에서 6월 2일 75만원대로 단기 급등했다.",
-        "en": "FY2025 results delivered record revenue of KRW 186.3 trillion (+6.3% YoY), though operating profit fell 19.5% to KRW 11.47 trillion and the operating margin compressed to 6.2%, weighed down by the 25% US tariff and one-off costs. In the US market, powered by SUV and hybrid strength, Hyundai crossed 1 million annual wholesale units for the first time in its history, while global eco-friendly vehicle sales rose approximately 27% year-on-year to around 960,000 units. Q1 2026 revenue reached an all-time quarterly record of KRW 45.94 trillion (+3.4% YoY), but operating profit declined sharply to KRW 2.51 trillion (-30.8%), with tariff-related costs alone amounting to KRW 860 billion in the quarter. The share price surged from the KRW 600,000 range in early May to KRW 750,000 by June 2, reflecting enthusiasm over the US-Korea tariff deal and the imminent Boston Dynamics IPO decision."
+        "ko": "DART 공시 기준 2025년 연간 실적은 매출액 186.3조 원(전기대비 +6.3%), 영업이익 11.5조 원(-19.5%), 당기순이익 10.4조 원(-21.7%)으로, 외형 성장이 지속된 반면 미국 관세 부담(연간 약 4.1조 원 추산)과 원가 상승이 수익성을 크게 압박했다. 2026년 1분기 매출액은 45.9조 원으로 역대 1분기 최대를 기록했으나, 영업이익은 2.5조 원으로 전년 동기 대비 30.8% 급감하며 영업이익률이 5.5%까지 하락했다. 영업이익 감소의 주된 요인은 관세 8,600억 원, 매출원가율 상승(79.8%→82.5%), 기말 환율 급등에 따른 판매보증충당부채 추가 전입(약 2,700억 원), 팰리세이드 생산 차질 관련 일회성 비용 등이 복합 작용한 결과다. 부문별로는 자동차 영업이익이 1.8조 원(-37.5% YoY, OPM 5.2%)으로 대폭 감소한 반면, 금융 부문은 5,790억 원(+1.4% YoY, OPM 6.4%)으로 안정적 성장을 이어가 수익 완충 역할을 했다. 글로벌 도매 판매량은 97만 6,219대로 전년 동기 대비 2.5% 소폭 감소했으나, 전 세계 자동차 산업 수요가 7.2% 감소한 환경임을 감안하면 상대적으로 선방한 결과다. 글로벌 시장점유율은 4.6%→4.9%, 미국 점유율은 5.6%→6.0%로 확대됐으며, 1분기 하이브리드 판매는 17.4만 대로 분기 역대 최대를 기록했고 친환경차 전체(EV 포함)는 전년 동기 대비 14.2% 증가한 24.3만 대에 달했다. 당기순이익은 2.6조 원으로 전년 동기 대비 23.6% 감소했으나 전분기 대비로는 큰 폭의 회복세를 나타냈다. 주가 흐름을 보면, 2026년 4월 초 관세 불확실성 극대화 국면에서 44만5천 원대까지 하락했다가 1분기 실적 발표 이후 급반등해 6월 초 기준 72만9천 원 수준까지 회복됐으며, 이는 2026년 4월 말 기준 국내 주요 증권사 평균 목표주가(약 60만 원)를 이미 상회하는 수준이다.",
+        "en": "Per DART-confirmed financials, Hyundai Motor reported FY2025 consolidated revenue of KRW 186.3 trillion (+6.3% YoY), operating profit of KRW 11.5 trillion (-19.5%), and net profit of KRW 10.4 trillion (-21.7%), as an estimated KRW 4.1 trillion in full-year U.S. tariff costs weighed heavily on margins despite solid top-line growth. In Q1 2026, revenue reached an all-time quarterly record of KRW 45.9 trillion (+3.4% YoY), while operating profit collapsed 30.8% YoY to KRW 2.5 trillion, driving OPM down to 5.5%. Key earnings headwinds included KRW 860 billion in tariff costs, a cost-of-revenue ratio rising to 82.5% from 79.8%, a one-time KRW 270 billion warranty provision triggered by year-end FX appreciation, and production disruptions related to the Palisade. Segment-wise, the automotive division's OPM fell to 5.2% (operating profit KRW 1.8 trillion, -37.5% YoY), while financial services held steady at 6.4% OPM (KRW 579 billion, +1.4% YoY), serving as a meaningful earnings buffer. Wholesale volume of 976,219 units declined 2.5% YoY, yet this compared favorably against a 7.2% contraction in global industry demand. Global market share improved from 4.6% to 4.9%, U.S. market share rose from 5.6% to 6.0%, and Q1 eco-friendly vehicle sales rose 14.2% YoY to 242,612 units, with HEV alone reaching a record 173,977 units. Net profit of KRW 2.6 trillion declined 23.6% YoY but recovered sharply on a sequential basis. Following a trough near KRW 445,000 in early April 2026, the stock rebounded dramatically to approximately KRW 729,000 by early June, already surpassing the late-April sell-side consensus target of approximately KRW 600,000."
       },
       "outlook": {
-        "ko": "2026년 하반기에는 미국 조지아주 HMGMA의 HEV 모델 투입 본격화로 가동률(2026년 1분기 38% 수준)이 개선되고 고정비 부담이 완화될 것으로 기대된다. 한미 관세율 15% 적용이 안정화될 경우 증권가는 현대차 단독 기준으로 연간 약 2.4조원의 영업이익 개선 효과를 전망하며, 2026년 하반기부터 이익 방향성이 성장으로 전환될 가능성이 높다. 보스턴다이나믹스의 나스닥 IPO 결정이 6월 중 예상되며, 2028년까지 연 3만 대 아틀라스 생산 체제 구축 계획이 구체화됨에 따라 로보틱스 사업 가치의 독립적 인정이 추가 밸류에이션 모멘텀으로 부각될 수 있다. 다만 USMCA 원산지 규정 강화 협상(미국산 부품 비중 50% 요구 추진 중), 전기차 캐즘 지속, 보스턴다이나믹스 지속 적자 등이 중장기 불확실성으로 남아 있다.",
-        "en": "In H2 2026, HMGMA's utilization rate—at just 38% in Q1 2026—is expected to improve materially as HEV model production commences, alleviating the facility's fixed cost drag. Should the 15% US tariff rate stabilize, sell-side consensus anticipates roughly KRW 2.4 trillion in annual operating profit uplift for Hyundai, with the earnings trajectory turning positive from H2 2026 onwards. A Boston Dynamics Nasdaq IPO decision is expected by June 2026, and with a formal plan to build a 30,000-unit annual Atlas production facility by 2028, independent market recognition of the robotics business could serve as a further valuation re-rating catalyst. Nevertheless, USMCA renegotiation (with the US reportedly seeking a 50% American parts content requirement), persistent EV demand softness, and Boston Dynamics' continued operating losses represent material medium-term uncertainties."
+        "ko": "경영진은 2026년 연간 OPM 가이던스를 6.3~7.3%로 공식 제시하며 1분기를 실적 저점으로 공식화했고, 사업 계획·예산·비용 집행 전반을 원점에서 재검토하는 컨틴전시 플랜을 본격 가동하고 있다. 하반기 수익성 회복의 핵심 촉매는 HMGMA 하이브리드 생산 확대에 따른 현지 생산 비율 상승·관세 비용 절감, 하이브리드 판매 믹스 개선에 따른 ASP 상승, 환율 안정화 시 판매보증충당부채 환입 가능성 등이다. 미국이 한국산 자동차에 15% 관세를 적용하는 반면 유럽산에는 25%를 유지 또는 강화하는 기조가 이어진다면, 제네시스·팰리세이드 등 고가 차종에서 경쟁력이 부각될 수 있다는 분석이 제기된다. 인도 시장 성장세(1분기 +8.5%), 하이브리드 라인업 18종 이상으로의 확대, 2026~2030년 77.3조 원 규모의 투자 계획이 중장기 성장 동력을 뒷받침한다. 보스턴 다이내믹스 아틀라스의 공장 투입 로드맵, 스마트카 데모카 하반기 출시 계획, SDV 상용화는 장기 밸류에이션 재평가 논의를 촉발할 잠재적 모멘텀이다. 다만 관세의 구조적 잔존 여부, 글로벌 자동차 수요 회복 속도, 중국 로컬 OEM의 공격적 확장이라는 불확실성 요인은 전망의 방향성과 속도를 제약할 수 있어 지속적인 모니터링이 필요하다.",
+        "en": "Management officially guided FY2026 OPM of 6.3-7.3%, designating Q1 as the earnings trough, and has already activated a zero-based cost review spanning business planning, budgeting, and spending execution as a contingency plan. Key H2 recovery catalysts include rising HMGMA utilization and hybrid production reducing per-unit tariff exposure, ASP uplift from ongoing HEV mix improvement, and potential warranty provision reversal if the KRW/USD rate stabilizes. Should the U.S. continue to apply a 15% tariff on Korean vehicles while maintaining or raising the 25% rate on European imports, Genesis and high-value nameplates like the Palisade are positioned to gain pricing advantage over European luxury brands. India market growth (+8.5% YoY in Q1 2026), a hybrid lineup expanding to more than 18 models, and a KRW 77.3 trillion investment plan for 2026-2030 underpin medium-to-long-term structural growth. The planned deployment of Boston Dynamics' Atlas humanoid robot in manufacturing facilities and H2 2026 smart-car demo launch serve as longer-dated catalysts for potential valuation re-rating. However, the durability of tariff relief, the pace of global auto demand recovery, and the aggressive global expansion of Chinese OEMs remain meaningful uncertainties that require ongoing monitoring."
       },
       "bull": [
         {
           "title": {
-            "ko": "관세 인하 효과 본격화",
-            "en": "US Tariff Cut Earnings Tailwind"
+            "ko": "하이브리드 수요 급증과 고부가가치 믹스 개선",
+            "en": "Surging Hybrid Demand & High-Value Product Mix Upgrade"
           },
           "body": {
-            "ko": "한미 관세협상을 통해 자동차 품목관세가 25%에서 15%로 인하됨에 따라, 증권가는 현대차 단독 기준으로 연간 약 2.4조원의 영업이익 개선을 전망한다. 2026년 하반기부터 효과가 실적에 본격 반영되며 이익 회복세가 가속화될 것으로 기대된다.",
-            "en": "With the US-Korea automotive tariff reduced from 25% to 15%, sell-side analysts project roughly KRW 2.4 trillion in annual operating profit improvement for Hyundai Motor alone. The earnings benefit is expected to accelerate from H2 2026, reversing the prolonged profit compression driven by tariff headwinds."
+            "ko": "2026년 1분기 하이브리드 판매는 17.4만 대로 분기 역대 최대를 기록하며 전체 판매의 17.8%(미국 시장은 24.8%)를 차지했다. 중동 지정학적 갈등과 고유가가 미국 하이브리드 수요를 자극하고 있으며, 현대차는 이 수요를 정확히 포착하고 있다. SUV·제네시스 비중 확대(전체의 66.6%)와 맞물린 ASP 상승은 판매 대수 감소를 상쇄하며 매출 성장을 견인하는 구조다. 하이브리드 라인업을 18종 이상으로 확대하는 전략이 구체화되고 있어 이 수혜는 일시적이 아닌 구조적으로 지속될 공산이 크다.",
+            "en": "Q1 2026 HEV sales reached a record 173,977 units, accounting for 17.8% of global sales and 24.8% of U.S. sales. Middle East geopolitical tensions and elevated oil prices are stimulating U.S. hybrid demand, and Hyundai is well-positioned to capture this shift. ASP expansion driven by the growing share of SUVs and Genesis (66.6% of total sales mix) offsets volume declines, making revenue growth structurally resilient. With the hybrid lineup slated to expand beyond 18 models, this tailwind is structural rather than transitory."
           }
         },
         {
           "title": {
-            "ko": "HMGMA 가동률 상승 + HEV 믹스 개선",
-            "en": "HMGMA Ramp-Up and HEV Mix Shift"
+            "ko": "HMGMA 현지화로 관세 리스크 구조적 완충",
+            "en": "HMGMA Localization as a Structural Tariff Hedge"
           },
           "body": {
-            "ko": "미국 조지아주 HMGMA의 2026년 1분기 가동률은 38%에 그쳤으나, 하반기 HEV 모델 투입이 본격화되면 고정비 부담이 크게 줄어들 전망이다. HEV는 BEV 대비 대당 인센티브 부담이 적어 수익성 방어에 유리하며, 2025년 미국 시장에서 이미 하이브리드 비중이 22%를 상회했다.",
-            "en": "HMGMA's utilization rate of just 38% in Q1 2026 is set to improve substantially as HEV model production ramps up in H2, reducing fixed cost burdens. HEV vehicles carry significantly lower per-unit incentive costs than BEVs, and with US hybrid mix already exceeding 22% in 2025, the profitability profile of the American business should improve meaningfully."
+            "ko": "미국 조지아주 HMGMA는 연간 30만 대 생산능력의 전동화 전용 스마트 공장으로, 2026년 하이브리드 생산을 개시하며 현지화 범위를 확대했다. 현대차 CEO는 관세 극복의 해법이 '현지화'임을 공식화했으며, 기존 앨라배마·조지아 공장과 합산해 미국 내 연산 100만 대 체제가 완성됐다. 향후 50만 대까지 추가 증설이 가능한 구조로, 현지 생산 비율 상승은 관세 비용을 구조적으로 낮추는 직접 효과를 제공한다. 더불어 IRA 세액공제 수혜 가능성도 높아지며 북미 수익성 개선의 중장기 기반이 마련되고 있다.",
+            "en": "HMGMA, a 300,000-unit annual-capacity smart factory in Ellabell, Georgia, began hybrid production in 2026, broadening the scope of U.S.-made vehicles. CEO Jose Muñoz formalized the localization approach as the primary solution to tariff headwinds; combined with legacy Alabama and Georgia plants, U.S. annual production capacity now reaches 1 million units. The facility can be expanded to 500,000 units, with rising local production structurally lowering per-unit tariff costs. This also enhances IRA tax-credit eligibility, laying medium-to-long-term foundations for improved North American profitability."
           }
         },
         {
           "title": {
-            "ko": "보스턴다이나믹스 IPO 및 Physical AI 밸류에이션 재평가",
-            "en": "Boston Dynamics IPO and Physical AI Re-rating"
+            "ko": "밸류에이션 저평가 및 주주환원 신뢰성",
+            "en": "Valuation Discount & Credible Shareholder Return"
           },
           "body": {
-            "ko": "소프트뱅크와의 풋옵션 시한(2026년 6월)을 계기로 보스턴다이나믹스의 나스닥 IPO 여부가 결정될 전망이다. CES 2026에서 공개된 아틀라스 양산형 모델, 2028년까지 연 3만 대 생산 공장 건설 계획이 가시화되며, 성공적 IPO 시 로보틱스 사업 가치가 독립적으로 인정받아 그룹 전반의 밸류에이션 멀티플 확장이 기대된다.",
-            "en": "The expiration of SoftBank's put option by June 2026 is expected to force a definitive decision on a Boston Dynamics Nasdaq IPO. With the Atlas production-ready model unveiled at CES 2026 and plans for an annual 30,000-unit factory by 2028 now formalized, a successful IPO could trigger independent market recognition of robotics value and drive a meaningful group-level P/E multiple expansion."
+            "ko": "2026년 기준 PBR 약 0.93배, PER 약 10.84배 수준으로 글로벌 완성차 동종 그룹 대비 현저히 낮은 밸류에이션에 거래되고 있어 이익 정상화 시 밸류에이션 리레이팅 여지가 존재한다. 현대차는 밸류업 프로그램에 의거해 분기 배당 2,500원을 유지하며 주주환원 정책 이행에 강한 의지를 보이고 있다. 향후 3년간 4조 원 규모의 자사주 매입·소각 계획은 주주가치를 제고하는 동시에 주가의 구조적 하방을 지지하는 역할을 한다. 실적 정상화가 확인될 경우 배당수익률과 함께 밸류에이션 멀티플 확장이 동시에 작용하는 시나리오를 기대할 수 있다.",
+            "en": "Trading at approximately 0.93x PBR and 10.84x PER for 2026E, Hyundai is materially cheaper than global auto peers on virtually every valuation metric, suggesting re-rating potential upon earnings normalization. The company maintains a KRW 2,500 quarterly dividend under its Value-Up program, demonstrating consistent commitment to shareholder returns. A KRW 4 trillion three-year buyback-and-cancellation plan supports a structural floor for the stock while enhancing per-share value. If earnings normalization materializes, investors could benefit simultaneously from dividend yield and multiple expansion."
           }
         }
       ],
       "bear": [
         {
           "title": {
-            "ko": "USMCA 원산지 규정 강화 리스크",
-            "en": "USMCA Parts Content Rule Tightening Risk"
+            "ko": "미국 관세 지속 및 수익성 구조적 훼손",
+            "en": "Persistent U.S. Tariffs Structurally Eroding Profitability"
           },
           "body": {
-            "ko": "미국이 USMCA 개정 협상에서 자동차 무관세 혜택 조건으로 미국산 부품 비중 50% 이상을 요구할 것으로 보도됐다. 멕시코 생산 거점을 활용해 온 현대차·기아는 이 요건이 현실화될 경우 공급망 재편 비용 증가와 보급형 모델 수익성 악화가 불가피할 전망이다.",
-            "en": "Reports indicate the US may demand a 50% American parts content threshold in USMCA renegotiations as a condition for tariff-free vehicle access. Should this requirement materialize, Hyundai and Kia's Mexico-based production strategy would face significant supply chain restructuring costs and meaningful margin pressure on entry-level models."
+            "ko": "2026년 1분기 단일 분기에만 관세 비용이 8,600억 원에 달했으며, 2025년 연간 기준으로는 약 4.1조 원의 관세 부담이 발생한 것으로 추산된다. 미국 관세율이 25%에서 15%로 인하됐으나 이는 한국산 자동차 수출의 구조적 비용 증가를 완전히 해소하지 못하며, HMGMA가 완전 가동 수준에 이르기 전까지는 비용 부담이 불가피하다. 증권사 분석에 따르면 관세와 인센티브 증가는 단순 일회성 요인이 아닌 구조적 수익성 과제로 잔존할 수 있다는 우려가 있다. 협상 결과에 따라 관세율이 재차 변동할 가능성도 배제할 수 없어 실적 가시성이 제한된다.",
+            "en": "Tariff-related costs totaled KRW 860 billion in Q1 2026 alone, with estimated full-year 2025 U.S. tariff costs of approximately KRW 4.1 trillion. Although the tariff rate on Korean autos was reduced from 25% to 15%, it has not fully eliminated the structural cost burden, and until HMGMA reaches sufficient utilization, near-term tariff exposure remains unavoidable. Analyst commentary warns that tariff costs and rising incentives may not be purely transitory but represent structural profitability challenges. The possibility of tariff rate renegotiation introduces an additional layer of uncertainty that limits near-term earnings visibility."
           }
         },
         {
           "title": {
-            "ko": "전기차 캐즘 및 글로벌 수요 둔화",
-            "en": "EV Demand Slump and Global Auto Slowdown"
+            "ko": "글로벌 자동차 수요 위축 및 경쟁 심화",
+            "en": "Contracting Global Auto Demand & Intensifying Competition"
           },
           "body": {
-            "ko": "전기차 수요 정체(캐즘) 속에 글로벌 자동차 판매 성장이 전반적으로 둔화되고 있으며, 2026년 1분기 현대차의 글로벌 판매량은 전년 대비 2.5% 감소했다. 경쟁 심화에 따른 인센티브 비용 증가 압박이 지속될 수 있으며, 대규모 EV 투자는 수익화 시점이 지연될수록 재무 부담으로 작용한다.",
-            "en": "Global auto demand growth is broadly decelerating amid an EV demand slump, with Hyundai's Q1 2026 global unit sales declining 2.5% year-on-year. Intensifying competition is increasing incentive spending pressure, and the company's substantial EV investment commitments become a growing financial burden if the revenue payback timeline extends."
+            "ko": "2026년 1분기 전 세계 자동차 산업 수요는 전년 동기 대비 7.2% 감소했으며, 거시경제 불확실성·지정학적 리스크·무역 갈등이 복합적으로 작용해 단기 수요 회복이 더딜 것으로 전망된다. 중국 전기차 업체들의 공격적인 가격 정책과 글로벌 확장이 중저가 세그먼트에서 현대차의 경쟁 부담을 가중시키고 있다. 현대차의 글로벌 도매 판매는 97.6만 대로 산업 대비 선방했으나, 수요 약세가 장기화될 경우 고정비 커버 능력이 저하되고 인센티브 증가 압력이 이익률을 추가로 훼손할 수 있다. 유럽·중국 등 주요 시장에서 경쟁 심화와 가격 전쟁이 지속되면 ASP 방어도 쉽지 않다.",
+            "en": "Global auto industry demand contracted 7.2% YoY in Q1 2026, and macro uncertainty, geopolitical risks, and trade tensions are expected to keep a lid on near-term volume recovery. Aggressive pricing by Chinese EV brands and their expanding global footprint create escalating competitive pressure in the mass market. While Hyundai's Q1 volume outperformed the industry, a prolonged demand contraction would erode fixed-cost absorption and escalate incentive pressure, further compressing margins. Intensifying price wars in Europe and China also make it increasingly difficult to defend ASP levels."
           }
         },
         {
           "title": {
-            "ko": "보스턴다이나믹스 '더블카운팅' 우려 및 지속 적자",
-            "en": "Boston Dynamics 'Double-Counting' Concern and Persistent Losses"
+            "ko": "원가 상승 및 환율 변동성",
+            "en": "Rising Input Costs & FX Volatility"
           },
           "body": {
-            "ko": "현대차 주가에는 로보틱스 사업 가치가 이미 상당 부분 반영됐다는 '더블카운팅' 논란이 제기되고 있으며, IPO 시 중복 평가 부담이 부각될 수 있다. 보스턴다이나믹스가 지속적으로 적자를 기록하고 있어 로봇 사업의 수익화 시점 불확실성이 프리미엄 밸류에이션의 지속 가능성에 의문을 남긴다.",
-            "en": "There is a growing 'double-counting' debate around whether robotics value is already priced into Hyundai Motor's shares, which could dilute the IPO's incremental re-rating impact. Boston Dynamics' persistent operating losses introduce meaningful execution risk and cast doubt on the sustainability of the current premium valuation until a credible path to profitability is demonstrated."
+            "ko": "2026년 1분기 매출원가율이 82.5%로 전년 동기(79.8%) 대비 2.7%포인트 상승했으며, 원자재 가격 상승이 주요 원인으로 지목됐다. 기말 원·달러 환율 급등(1,516원)이 외화 표시 판매보증충당부채를 약 2,700억 원 추가 전입시키는 일회성 비용을 발생시켰으며, 환율 재변동 시 재차 손익에 영향을 줄 수 있는 구조다. 글로벌 달러 강세가 지속될 경우 비용 부담이 이어지며, 반대로 환율 변동이 급격하게 이루어질 때도 충당부채 재평가 손실이 발생하는 양방향 리스크가 내재되어 있다. 이처럼 외부 변수에 대한 민감도가 높아 실적의 분기별 가시성이 제한적이라는 점은 투자 불확실성을 높이는 요소다.",
+            "en": "The Q1 2026 cost-of-revenue ratio rose to 82.5% from 79.8% a year earlier, with raw-material inflation cited as the primary driver. A spike in the KRW/USD exchange rate to 1,516 at quarter-end triggered an additional KRW 270 billion warranty provision, a potentially recurring cost item in volatile FX environments. Sustained USD strength would keep cost pressure elevated, while sudden FX swings in either direction introduce warranty revaluation losses, creating bilateral FX risk. This elevated sensitivity to exogenous variables limits near-term earnings visibility and raises the bar for confident quarterly forecasting."
           }
         }
       ],
       "risks": [
         {
           "cat": {
-            "ko": "거시·통상 리스크",
-            "en": "Macro / Trade Risk"
+            "ko": "거시·무역 리스크",
+            "en": "Macro & Trade Risk"
           },
           "body": {
-            "ko": "USMCA 원산지 규정 강화, 추가 관세 조치 가능성, 원/달러 환율 변동, 원자재 가격 상승이 수익성에 복합적으로 영향을 미칠 수 있다. 2026년 1분기에만 관세 비용이 8,600억원에 달했으며, 현대차·기아 합산 1분기 관세 비용은 1.6조원을 초과했다.",
-            "en": "USMCA content rule tightening, potential additional tariff measures, KRW/USD volatility, and rising raw material costs pose compound risks to profitability. Tariff-related costs alone reached KRW 860 billion in Q1 2026 for Hyundai Motor, with Hyundai and Kia combined exceeding KRW 1.6 trillion in Q1 tariff expenditures."
+            "ko": "미국의 자동차 관세 정책은 현재 한국산에 15%가 적용되고 있으나, 트럼프 행정부의 통상 정책 변동성이 높아 추가 인상 가능성을 완전히 배제할 수 없다. 글로벌 경기 침체 우려, 중동 지정학적 갈등, 미·중 무역 갈등 재화 등이 자동차 수요에 복합적 압박을 가하고 있다. 미국 외 주요 시장인 유럽·인도·한국에서도 경기 둔화 또는 특수 관세 리스크가 잠재하며, 현대차의 글로벌 포트폴리오 전반에 영향을 미칠 수 있다. 보호무역 기조의 확산은 공급망 재편 비용 증가와 수익성 예측 불확실성 확대를 초래한다.",
+            "en": "Korean auto imports currently face a 15% U.S. tariff rate, but the Trump administration's high trade policy volatility leaves open the possibility of further escalation. Global recession concerns, Middle East geopolitical conflicts, and potential re-escalation of U.S.-China trade tensions collectively weigh on auto demand. Cyclical slowdowns and sector-specific tariff risks in key non-U.S. markets such as Europe, India, and Korea pose additional headwinds to Hyundai's globally diversified portfolio. An accelerating protectionist trend worldwide increases supply-chain restructuring costs and reduces earnings predictability."
           }
         },
         {
           "cat": {
-            "ko": "전동화 전환 리스크",
-            "en": "EV Transition Risk"
+            "ko": "전동화 전환 및 기술 경쟁 리스크",
+            "en": "Electrification Transition & Technology Competition Risk"
           },
           "body": {
-            "ko": "전기차 캐즘이 지속되는 가운데 경쟁사(중국 BYD 등)의 공세적 가격 전략이 글로벌 시장 점유율 경쟁을 심화시키고 있다. 대규모 EV 플랫폼 및 배터리 투자가 집행되는 시점에 수요 회복이 지연될 경우 투자 효율성 저하와 재무 부담이 확대될 수 있다.",
-            "en": "Persistent EV demand softness coincides with aggressive pricing strategies from competitors such as BYD, intensifying global market share competition. Should EV demand recovery lag behind the company's large-scale platform and battery investment cycle, return on capital could deteriorate and balance sheet pressure could mount."
+            "ko": "전기차 수요가 예상보다 빠르게 성장하거나 특정 시장에서 급격히 둔화될 경우, HEV 중심 전략이 시장 수요와 괴리될 위험이 있다. 중국 BYD 등 현지 전기차 브랜드의 급부상은 아시아 및 신흥 시장에서 현대차의 가격 경쟁력을 위협하고 있으며, 이들의 빠른 기술 발전은 제품 경쟁력 측면에서도 도전이 되고 있다. HMGMA와 같은 대규모 고정 투자 이후 수요 패턴이 예상과 크게 다를 경우 고정비 부담이 중장기 수익성을 훼손할 수 있다. 또한 SDV·자율주행 등 소프트웨어 역량 확보 경쟁이 심화되면서 R&D 비용 부담도 중장기적으로 증가할 전망이다.",
+            "en": "If EV adoption accelerates faster—or stalls more sharply—than anticipated in key markets, Hyundai's HEV-centric powertrain strategy could misalign with demand. The rapid rise of Chinese OEMs such as BYD threatens Hyundai's pricing power in Asian and emerging markets, and their accelerating technological progress challenges product competitiveness. Large-scale fixed investments like HMGMA could become a margin drag if actual demand patterns diverge materially from projections. Additionally, intensifying competition in SDV and autonomous driving capabilities will likely increase R&D spending burdens over the medium to long term."
           }
         },
         {
           "cat": {
-            "ko": "신사업 실현 불확실성",
-            "en": "New Business Execution Risk"
+            "ko": "환율·원자재·공급망 리스크",
+            "en": "FX, Commodity & Supply-Chain Risk"
           },
           "body": {
-            "ko": "보스턴다이나믹스의 지속 적자 구조와 SDV 수익화 시점 불투명성은 현재 주가에 반영된 미래 사업 프리미엄의 지속 가능성에 불확실성을 더한다. IPO가 이뤄지더라도 시장이 로봇 사업 가치를 현대차 본체와 분리 평가할 경우 그룹 차원의 밸류에이션 희석 가능성도 배제할 수 없다.",
-            "en": "Boston Dynamics' persistent losses and an unclear SDV monetization timeline add uncertainty to the sustainability of the future-business premium embedded in the current share price. Even if an IPO is executed, a market decision to value the robotics business separately from the core automotive entity could result in group-level valuation dilution."
+            "ko": "원·달러 환율 변동은 영업이익과 판매보증충당부채 모두에 직접 영향을 미치며, 2026년 1분기 기말 환율 급등이 실증적으로 보여줬듯 예측하기 어려운 비용 변동을 초래할 수 있다. 철강·희토류·배터리 소재 등 주요 원자재 가격 상승은 원가율 구조를 훼손하며, 지정학적 공급망 단절 시 생산 차질로 이어질 수 있다. 글로벌 공급망 복잡도 증가와 반도체 수급 불안은 자동차 업종 전반의 구조적 취약성으로 남아 있으며, 이민 단속 등에 따른 HMGMA 현지 노동력 공급 불확실성도 생산 일정에 잠재 리스크로 작용할 수 있다. 이러한 다중 공급망 리스크는 단기 비용 통제 노력의 효과를 제한하는 변수로 작용한다.",
+            "en": "KRW/USD fluctuations directly affect both operating profit and warranty provisions, as Q1 2026's rate spike vividly demonstrated, introducing hard-to-predict cost swings. Rising prices for steel, rare-earth metals, and battery materials structurally erode the cost structure, and geopolitical supply-chain disruptions can translate into production outages. Growing supply-chain complexity and persistent semiconductor availability issues remain structural vulnerabilities across the auto industry, while immigration enforcement actions affecting HMGMA's local workforce supply represent a potential production schedule risk. These overlapping supply-chain risks constrain the effectiveness of near-term cost-control efforts."
           }
         }
       ],
       "verdict": {
         "stance": {
-          "ko": "긍정적",
-          "en": "Constructive"
+          "ko": "중립",
+          "en": "Neutral"
         },
         "body": {
-          "ko": "현대차는 2025년 역대 최고 매출을 달성하며 관세 충격 속에서도 구조적 체질 개선 능력을 입증했다. 2026년 하반기에는 미국 관세 인하 효과 본격 반영, HMGMA 가동률 회복, 보스턴다이나믹스 IPO 모멘텀이 동시에 부각되며 실적과 밸류에이션 양면에서 상승 여력이 존재한다. 다만 USMCA 재협상, 전기차 수요 불확실성, 로보틱스 사업 수익화 시점 불투명 등 복합 리스크가 상존하며, 이미 단기 급등한 주가 수준에서는 실적 가시성 확보 여부를 지속적으로 모니터링할 필요가 있다.",
-          "en": "Hyundai Motor proved its structural resilience in 2025 by posting record revenues despite significant tariff headwinds. In H2 2026, the convergence of US tariff tailwinds, HMGMA utilization recovery, and Boston Dynamics IPO momentum offers credible upside to both earnings and valuation. However, USMCA renegotiation risk, EV transition uncertainties, and the unproven robotics monetization timeline are material residual risks that warrant close monitoring, particularly given the sharp near-term share price appreciation."
+          "ko": "현대차는 2026년 1분기 역대 최대 매출을 달성했으나, 미국 관세·원자재·환율이라는 삼중 역풍으로 수익성이 크게 악화되는 이분화된 실적 양상을 보이고 있다. 경영진이 연간 OPM 6.3~7.3% 가이던스를 유지하고 HMGMA 하이브리드 생산·하이브리드 믹스 확대·컨틴전시 플랜 등 구체적 회복 전략을 제시한 점은 긍정적으로 평가된다. 미국 시장점유율 상승, HEV 판매 역대 최대, 글로벌 수요 역성장 대비 상대적 선방 등은 현대차의 구조적 경쟁력이 훼손되지 않았음을 보여주는 중요한 시그널이다. 그러나 현재 주가(729,000원)는 2026년 4월 말 기준 주요 증권사 평균 목표주가(약 60만 원)를 이미 상회하는 수준으로, 1분기 저점 통과 및 하반기 수익성 회복 기대감이 상당 부분 주가에 반영된 것으로 판단된다. 실질적인 수익성 정상화 여부, 관세 협상 향방, HMGMA 가동률 상승 속도를 확인하며 단계적으로 접근하는 신중한 시각이 현 시점에서는 적절해 보인다.",
+          "en": "Hyundai Motor delivered record quarterly revenue in Q1 2026 yet experienced a sharp earnings deterioration, creating a bifurcated top-line growth/profitability contraction dynamic driven by a triple headwind of U.S. tariffs, raw-material inflation, and FX volatility. Management's retention of a 6.3-7.3% FY2026 OPM guidance, combined with concrete recovery levers—HMGMA hybrid ramp-up, HEV mix improvement, and a zero-based contingency cost review—is encouraging. Rising U.S. market share, record HEV sales, and relative volume outperformance versus a contracting industry all confirm that Hyundai's structural competitiveness remains fundamentally intact. However, with the current share price (KRW 729,000) already well above the late-April sell-side average consensus target of approximately KRW 600,000, a substantial portion of the earnings recovery narrative appears to be priced in. A measured, evidence-based approach—monitoring actual earnings normalization, tariff negotiation outcomes, and HMGMA utilization progress—appears prudent at current levels."
         }
       },
       "sources": [
-        "https://seonamtoday.com/m/view.php?idx=45850&mcode=",
-        "https://www.hyundaimotorgroup.com/en/news/CONT0000000000201587",
+        "https://www.hyundaimotorgroup.com/ko/news/CONT0000000000209808",
         "https://www.tradingkey.com/kr/analysis/stocks/more/261814271-hyundai-car-q1-profit-interest-tariff-tradingkey",
-        "https://www.mt.co.kr/industry/2026/05/07/2026050715474871183",
-        "https://www.newsspace.kr/news/article.html?no=13851",
-        "https://www.hellot.net/mobile/article.html?no=112876",
-        "https://www.fnnews.com/news/202605300444229200",
-        "https://www.mt.co.kr/world/2026/05/30/2026052923550023114",
-        "https://www.buffettlab.co.kr/news/view.php?idx=54331",
-        "https://www.ezyeconomy.com/news/articleView.html?idxno=231544"
+        "https://www.kfenews.co.kr/news/articleView.html?idxno=657365",
+        "https://www.hankyung.com/article/202604281801i",
+        "https://www.issueon.co.kr/news/articleView.html?idxno=12984",
+        "https://news.nate.com/view/20260504n20383",
+        "https://www.etoday.co.kr/news/view/2550942",
+        "https://www.hyundaimotorgroup.com/ko/article/hmgma",
+        "https://www.etnews.com/20260509000103",
+        "https://m.thinkpool.com/breakingNews/cont/258905"
       ],
       "ticker": "005380",
       "name": "현대차",
       "name_en": "HYUNDAI MOTOR CO",
       "sector": "자동차",
+      "categories": [
+        "자동차",
+        "자율주행·전기차"
+      ],
       "market": "코스피",
-      "reportDate": "2026-06-02",
-      "dataDate": "20260601"
+      "reportDate": "2026-06-03",
+      "dataDate": "20260602"
     },
     "373220": {
       "lead": {
@@ -1477,100 +1489,108 @@ window.KOS_REPORTS = {
     },
     "012330": {
       "lead": {
-        "ko": "현대모비스는 2025년 역대 최대 실적을 달성한 데 이어 로봇 액추에이터·SDV라는 신성장 동력을 통해 전통 자동차 부품사에서 테크 플랫폼 기업으로의 체질 전환을 공식화하고 있다.",
-        "en": "Hyundai Mobis delivered record-high 2025 results and is formalizing its transformation from a traditional auto-parts supplier into a tech-platform company, driven by robot actuators and software-defined vehicle (SDV) initiatives."
+        "ko": "현대모비스는 고수익 A/S 부문의 견조한 현금 창출력을 기반으로 전동화·로보틱스 신사업 도약을 가속화하며, '자동차 부품사'에서 '피지컬 AI 밸류체인 플랫폼'으로 사업 외연을 확장하는 구조적 전환점에 서 있다.",
+        "en": "Hyundai Mobis is leveraging the robust cash generation of its high-margin A/S segment to accelerate expansion into electrification and robotics, positioning itself at a structural inflection point as it transitions from a traditional auto parts supplier toward a physical AI value-chain platform."
       },
       "desc": {
-        "ko": "본 리포트는 DART 공시 확정 재무(2025년 연간·2026년 1분기)와 최신 뉴스·증권사 분석을 종합하여 현대모비스(012330)의 사업 구조, 실적 흐름, 투자 포인트 및 리스크를 균형 있게 정리한 정보 제공용 자료입니다.",
-        "en": "This report synthesizes audited DART financials (FY2025 and Q1 2026) with the latest news and broker research to provide a balanced overview of Hyundai Mobis (012330) covering its business model, earnings trajectory, investment highlights, and key risks."
+        "ko": "현대모비스(012330)는 국내 최대 자동차 부품 기업으로, 모듈·핵심부품 제조(매출 비중 약 81.6%)와 A/S용 부품 공급(약 18.4%)의 이중 사업 구조를 갖추고 있다. DART 공시 확정 기준 2025년 연결 매출 61.1조 원(+6.8%), 영업이익 3.4조 원(+9.2%)으로 외형과 이익 모두 성장세를 이어갔으며, 2026년 1분기에도 매출 15.6조 원(+5.5%), 영업이익 8,026억 원(+3.3%)의 견조한 실적을 유지하고 있다. 2026년 1월 CES에서 보스턴다이내믹스 액추에이터 공급 계약 및 퀄컴 SDV·ADAS MOU 체결로 시장 재평가 국면에 본격 진입했으며, 52주 저점 대비 주가는 약 3배 이상 급등한 상황이다.",
+        "en": "Hyundai Mobis (012330) is Korea's largest automotive parts company, operating a dual-segment structure of module and component manufacturing (approximately 81.6% of revenue) and afterservice parts supply (approximately 18.4%). Based on DART-confirmed consolidated financials, 2025 revenue reached KRW 61.1 trillion (+6.8% YoY) and operating income grew to KRW 3.4 trillion (+9.2% YoY), with the growth trend continuing into Q1 2026 at KRW 15.6 trillion (+5.5%) and KRW 802.6 billion (+3.3%), respectively. A strategic actuator supply agreement with Boston Dynamics and a Qualcomm SDV/ADAS MOU formalized at CES 2026 in January have triggered a significant re-rating of the company's long-term growth profile, with the share price rallying approximately three-fold from its 52-week low."
       },
       "keypoints": [
         {
-          "ko": "2025년 연결 매출 61.1조원·영업이익 3.4조원으로 창사 이래 최대 실적 달성",
-          "en": "FY2025 consolidated revenue of KRW 61.1 trillion and operating profit of KRW 3.4 trillion mark all-time company records"
+          "ko": "DART 공시 확정 기준 2025년 영업이익 3.4조 원(+9.2%), 2026년 1분기 영업이익 8,026억 원(+3.3%)으로 핵심 영업 이익의 성장세 지속",
+          "en": "DART-confirmed 2025 operating income of KRW 3.4 trillion (+9.2% YoY) and Q1 2026 operating income of KRW 802.6 billion (+3.3% YoY) demonstrate sustained core earnings growth"
         },
         {
-          "ko": "보스턴다이내믹스 아틀라스向 전동식 액추에이터 전량 공급 계약 체결로 로봇 부품사 재평가 국면 진입",
-          "en": "Exclusive actuator supply agreement for Boston Dynamics' Atlas humanoid robot triggers a sector re-rating as a robotics parts supplier"
+          "ko": "OPM 약 22~23%의 A/S 부문이 전체 영업이익의 절대적 비중을 담당하며 모듈 부문 마진 부진을 구조적으로 상쇄하는 캐시카우",
+          "en": "The A/S segment, operating at approximately 22–23% OPM, generates the vast majority of consolidated operating profit, structurally offsetting margin weakness in the module segment"
         },
         {
-          "ko": "미국 관세 부담·전동화 부문 초기 비용으로 단기 순이익 압박 지속, 상저하고 실적 패턴 예상",
-          "en": "U.S. tariff costs and EV manufacturing ramp-up expenses weigh on near-term net profit, pointing to a first-half-soft, second-half-recovery earnings pattern"
+          "ko": "CES 2026에서 보스턴다이내믹스 아틀라스 로봇용 액추에이터 전량 공급 계약 체결, 신사업 로보틱스 분야 첫 공식 고객 확보",
+          "en": "Actuator supply agreement for Boston Dynamics' Atlas humanoid robot formalized at CES 2026 secures the company's first official robotics client and opens a new high-growth revenue avenue"
+        },
+        {
+          "ko": "160kW·250kW급 PE(파워일렉트릭) 시스템 독자 개발 완료(2026년 5월 기준)로 전동화 기술 내재화 및 비(非)계열 글로벌 고객 수주 기반 확보",
+          "en": "In-house completion of 160kW and 250kW Power Electric (PE) systems (as of May 2026) internalizes EV drivetrain technology and lays groundwork for non-captive global OEM orders"
+        },
+        {
+          "ko": "2025~2026년 1분기 당기순이익 연속 감소(-9.7%, -14.4%)와 모듈 부문 영업손실은 단기 이익 변동성 요인으로 모니터링 필요",
+          "en": "Consecutive net income declines of -9.7% (2025) and -14.4% (Q1 2026) alongside module segment operating losses warrant close monitoring as near-term earnings volatility factors"
         }
       ],
       "business": {
-        "ko": "현대모비스는 1977년 설립된 국내 1위 자동차 부품 기업으로, 모듈 조립·부품 제조(전체 매출의 약 78%)와 A/S 부품 공급(약 22%)을 양대 축으로 영위한다. 2025년 기준 제조 부문 매출은 47조 8,001억원(전기대비 +5.9%), A/S 부문은 13조 3,180억원(+10.2%)을 기록했다. 미국·유럽·아시아 등 전 세계 생산·판매 법인을 보유하고 있으며, 최근에는 슬로바키아 전동화 구동 부품(PE 시스템) 공장을 가동하고 스페인 배터리 시스템(BSA) 공장 양산을 준비 중이다. CES 2026에서는 보스턴다이내믹스와 전동식 액추에이터 공급 계약을, 퀄컴과는 SDV·ADAS 공동 개발 MOU를 체결하며 피지컬 AI·로봇 부품 기업으로의 전환을 공식화했다.",
-        "en": "Hyundai Mobis, established in 1977, is South Korea's leading auto-parts company, operating two core segments: module assembly and parts manufacturing (~78% of revenue) and after-sales (A/S) parts (~22%). In FY2025, manufacturing revenue reached KRW 47.8 trillion (+5.9% YoY) while A/S revenue hit KRW 13.3 trillion (+10.2%). The company operates production and sales subsidiaries globally, including in the U.S., Europe, and Asia, with a Slovakia EV powertrain (PE system) plant now in production and a Spain battery system (BSA) plant approaching launch. At CES 2026, the company signed an actuator supply agreement with Boston Dynamics and an SDV/ADAS co-development MOU with Qualcomm, formally marking its pivot toward physical-AI and robotics."
+        "ko": "현대모비스는 1977년 설립되어 현대차그룹의 핵심 부품 계열사로 기능하며 국내 1위 자동차 부품 기업의 지위를 유지하고 있다. 사업은 ①모듈 및 부품제조 사업부문(매출 비중 약 81.6%)과 ②A/S용 부품 사업부문(약 18.4%)으로 구분된다. 모듈 부문은 섀시모듈·칵핏모듈·프런트엔드모듈(FEM)의 3대 핵심 모듈과 전동화 부품(구동모터·인버터·배터리시스템·수소연료전지 부품 포함), ADAS, 차량용 반도체·소프트웨어 등 고부가가치 제품을 현대차·기아 등 완성차에 납품하는 구조다. A/S 부문은 전 세계 운행 중인 현대차·기아 차량 약 5,844만 대를 대상으로 약 193개 차종·240만여 품목의 보수용 부품을 공급하며, 전체 영업이익의 대부분을 창출하는 구조적 캐시카우다. 수익성 측면에서 A/S 부문의 OPM은 약 22~23%(2025년 4분기 기준 22.7%), 반면 모듈 부문은 북미 전기차 수요 둔화와 신규 생산라인 초기 비용 부담으로 손익분기점 내외 또는 소폭 적자 상태다. 지리적으로는 미국(앨라배마), 캐나다, 멕시코, 브라질, 중국, 유럽 등 전 세계에 생산·판매법인을 두고 있으며, 현대차·기아 의존도는 약 77~80% 수준으로, 일본 동종업체 덴소(도요타 의존도 약 49%)보다 높은 편이다. 2024년 7월 조직 개편에서 기존 6개 사업 BU를 전동화모듈·섀시안전·램프·전장·서비스부품의 5개 BU로 재편하며 전동화 사업에 모듈 인력과 노하우를 집결시켜 미래차 전환에 대한 실행 역량을 높였다. 2026년 5월에는 160kW급 범용 전기차 PE 시스템 독자 개발을 완료하고, 상반기 내 120kW급까지 추가 구축해 소형부터 고성능 전기차까지 대응 가능한 구동계 풀 라인업을 갖출 계획이다. 글로벌 경쟁사로는 독일 보쉬·콘티넨탈, 일본 덴소·아이신, 미국 BorgWarner 등이 있으나, 현대차그룹의 독점적 내부 납품 관계와 광범위한 A/S 물류 인프라는 단기간 내 복제가 어려운 경쟁 우위 요인으로 평가된다.",
+        "en": "Hyundai Mobis, founded in 1977, serves as the core automotive parts affiliate of Hyundai Motor Group and maintains its status as Korea's largest auto parts company. The business is broadly divided into two segments: (1) Module and Component Manufacturing (approximately 81.6% of revenue) and (2) Afterservice Parts (approximately 18.4%). The module segment supplies Hyundai Motor and Kia with three key assembly modules — chassis, cockpit, and front-end module (FEM) — alongside electrification components (drive motors, inverters, battery systems, fuel cell parts), ADAS systems, and automotive semiconductors and software, covering the full spectrum of high-value-added automotive technologies. The A/S segment is the company's structural cash cow, supplying approximately 2.4 million part numbers across some 193 model lines to roughly 58.44 million Hyundai and Kia vehicles in global service, and generating the bulk of consolidated operating profit. From a profitability perspective, the A/S segment operates at approximately 22–23% OPM (22.7% in Q4 2025 per research reports), while the module segment has been operating near or below breakeven due to softening North American EV demand and initial ramp-up costs at new European electrification production lines. Geographically, the company operates manufacturing and sales subsidiaries in the U.S. (Alabama), Canada, Mexico, Brazil, China, and Europe, with revenue dependence on Hyundai/Kia at approximately 77–80%, materially higher than Japanese peer Denso's approximately 49% exposure to Toyota. In July 2024, the company restructured from six to five business units (EV Module, Chassis Safety, Lamps, Electronics, Service Parts), consolidating the electrification and module divisions to concentrate human capital and operational expertise on the EV transition. In May 2026, the company announced completion of an in-house 160kW universal EV Power Electric (PE) system, with a 120kW variant planned within H1 2026, covering compact to high-performance EVs with a full drivetrain lineup. Global competitors include Bosch and Continental (Germany), Denso and Aisin (Japan), and BorgWarner (U.S.), though Hyundai Mobis's captive supply relationship with Hyundai Motor Group and its entrenched A/S logistics infrastructure represent competitive moats that are difficult to replicate in the near term."
       },
       "recent": {
-        "ko": "DART 공시 기준 2025년 연간 매출은 61.1조원(전기대비 +6.8%), 영업이익은 3.4조원(+9.2%)으로 창사 최대치이나, 당기순이익은 3.7조원(-9.7%)으로 감소했다. 2026년 1분기 매출 15.6조원(+5.5%), 영업이익 8,026억원(+3.3%)으로 외형 성장세는 유지됐으나, 당기순이익은 8,831억원(-14.4%)으로 미국 관세 비용 반영과 전동화 공장 램프업 초기 비용이 순이익을 압박했다. 증권가에 따르면 1분기 A/S 부문 영업이익률은 약 26.3%의 고수익성을 유지한 반면, 모듈·핵심부품 부문은 관세 비용 및 원자재 상승으로 수익성이 악화됐다. 주가는 2026년 5월 8일 보스턴다이내믹스 IPO 기대감에 전일대비 15.29% 급등했고, 5월 28일 장중 74만 9,000원 신고가를 경신하는 등 2026년 들어 강한 주가 모멘텀을 이어가고 있다.",
-        "en": "Per DART disclosures, FY2025 revenue reached KRW 61.1 trillion (+6.8% YoY) and operating profit KRW 3.4 trillion (+9.2%), both all-time highs; however, net income of KRW 3.7 trillion declined 9.7% due to non-operating factors. Q1 2026 showed continued top-line growth—revenue KRW 15.6 trillion (+5.5% YoY), operating profit KRW 802.6 billion (+3.3%)—while net income of KRW 883.1 billion fell 14.4% as U.S. tariff costs and EV factory ramp-up expenses weighed. Broker analysis indicates the A/S segment maintained a ~26.3% operating margin in Q1 2026, while the module and core-parts segment experienced margin deterioration from tariffs and raw-material cost increases. The stock surged 15.3% on May 8 on Boston Dynamics IPO speculation and hit a 52-week intraday high of KRW 749,000 on May 28, reflecting robust price momentum year-to-date."
+        "ko": "DART 공시 확정 기준으로 2025년 연결 매출은 61.1조 원(전기대비 +6.8%), 영업이익은 3.4조 원(+9.2%)으로 완성차 생산물량 증가와 A/S 부문의 안정적 수익 기여가 이익 성장을 견인했다. 다만 당기순이익은 3.7조 원으로 전기대비 9.7% 감소했으며, 이는 핵심 영업에서의 부진이 아닌 지분법 관련 투자 이익 감소 등 영업외 요인에 주로 기인하는 것으로 분석된다. 2026년 1분기(연결) 매출 15.6조 원(+5.5%), 영업이익 8,026억 원(+3.3%), 당기순이익 8,831억 원(-14.4%)으로 영업 이익은 시장 기대치에 부합하며 성장세를 유지했으나 순이익 감소세는 지속됐다. 세부적으로 최근 보도에 따르면 2026년 1분기 A/S 부문 영업이익은 전기대비 약 5.4% 증가한 약 9,239억 원을 기록한 반면, 모듈·핵심부품 부문은 약 -1,213억 원의 영업손실을 시현했다. 모듈 부문 손실의 주요 원인으로는 완성차 생산물량 감소에 따른 고정비 부담, 북미 전기차 수요 둔화로 인한 현지 전동화 법인 가동률 저하, 유럽 신규 전동화 생산라인 초기 비용 발생 등이 지목되며, 메모리 반도체 가격 상승에 따른 약 300억 원 규모의 원가 부담도 영향을 미쳤다는 분석이 있다. 주가 측면에서는 2026년 1월 CES 보스턴다이내믹스 계약 발표 이후 상승세가 가팔라져, 52주 저점(245,000원)에서 고가(822,000원)까지 약 3배 이상의 시장 재평가가 진행됐다(인베스팅닷컴 기준). 2026년 5월 28일에는 신한투자증권이 목표주가를 90만 원으로, 삼성증권이 95만 원으로 잇따라 상향하며 52주 신고가(장중 749,000원)를 경신했으며, 2026년 6월 3일 현재 주가는 759,000원, 시가총액은 68.9조 원이다. 최근 한 달간 수급 동향은 기관이 약 114.8만 주를 순매수한 반면 외국인이 약 337.2만 주를 순매도하는 엇갈린 흐름이 관찰되어 향후 수급 변화에 주목이 필요하다.",
+        "en": "Based on DART-confirmed consolidated financials, 2025 revenue reached KRW 61.1 trillion (+6.8% YoY) and operating income grew to KRW 3.4 trillion (+9.2% YoY), driven by increased OEM production volumes and stable A/S segment profit contributions. However, net income declined 9.7% YoY to KRW 3.7 trillion, attributed primarily to non-operating factors including a reduction in equity-method investment income from affiliates rather than any deterioration in core business operations. In Q1 2026, consolidated revenue was KRW 15.6 trillion (+5.5% YoY), operating income was KRW 802.6 billion (+3.3% YoY), and net income was KRW 883.1 billion (-14.4% YoY), broadly in line with consensus on an operating basis while the net income decline continued. At the segment level, per recent media reports, Q1 2026 A/S operating income rose approximately 5.4% YoY to around KRW 923.9 billion, while the module and core component segment recorded an operating loss of approximately KRW 121.3 billion. Key drivers of the module segment loss include lower OEM production volumes elevating fixed-cost burdens, subdued North American EV demand compressing capacity utilization at local electrification plants, initial ramp-up costs at new European EV production lines, and an estimated KRW 30 billion cost headwind from higher memory semiconductor prices. On the equity side, the stock has rallied approximately three-fold from its 52-week low of KRW 245,000 to a high of KRW 822,000, fueled by the CES 2026 Boston Dynamics partnership announcement (per Investing.com data). On May 28, 2026, Shinhan Investment Securities raised its target price to KRW 900,000 and Samsung Securities set a target of KRW 950,000, each citing the company's expanded role in physical AI; the stock touched an intraday 52-week high of KRW 749,000 that session before settling lower. As of June 3, 2026, the share price stands at KRW 759,000 with a market capitalization of KRW 68.9 trillion; over the past month, institutions net-bought approximately 1.148 million shares while foreign investors net-sold approximately 3.372 million shares, reflecting divergent views on the pace of further re-rating."
       },
       "outlook": {
-        "ko": "복수의 국내 증권사는 현대모비스의 2026년 실적이 '상저하고' 패턴을 보일 것으로 전망하며, 하반기 HMGMA(현대차그룹 메타플랜트 아메리카) 가동률 상승과 유럽 전기차 판매 회복이 핵심 회복 촉매로 제시된다. 중장기적으로는 2027년부터 아틀라스 액추에이터 매출이 본격화되고, 2028년 연 3만 대 양산 체제를 목표로 하는 현대차그룹 로봇 사업 확대가 신규 성장 축으로 부각된다. 또한 연간 2조원을 처음 초과하는 R&D 투자와 글로벌 전동화 거점 확대가 중장기 원가 경쟁력과 비계열 수주 확대의 토대가 될 전망이다.",
-        "en": "Multiple domestic brokers project a first-half-soft, second-half-recovery earnings trajectory for Hyundai Mobis in 2026, with the key catalysts being improved HMGMA utilization rates and a recovery in European EV sales. Over the medium-to-long term, Atlas actuator revenues are expected to commence in 2027, with Hyundai Motor Group targeting annual production of 30,000 robots by 2028, establishing robotics as a meaningful new earnings contributor. The company's first-ever R&D spend exceeding KRW 2 trillion and the phased expansion of global electrification facilities are expected to underpin long-term cost competitiveness and non-captive order growth."
+        "ko": "단기적으로는 2026년 하반기 완성차 생산물량 회복 여부가 모듈 부문 수익성 개선의 핵심 변수로 작용할 전망이며, 주요 증권사는 전동화 라인의 가동률 정상화와 A/S 부문 판가 인상 효과가 하반기 중 순차적으로 가시화될 것으로 기대하고 있다. A/S 부문은 현대차·기아 누적 운행 대수가 지속 증가하는 구조와 글로벌 판가 인상, 우호적 환율 효과 등이 맞물려 안정적인 이익 성장세를 유지할 것으로 전망된다. 로보틱스 사업에서는 현대차그룹이 향후 수년간 수만 대 규모의 로봇 생산·운영을 계획하고 있어, 아틀라스 액추에이터 공급 규모도 단계적으로 확대될 가능성이 높으며, 핸드그리퍼·센서·제어기·배터리팩 등으로 연구개발 범위도 확장될 예정이다. 전동화 부문에서는 160kW·250kW·120kW 풀 라인업의 PE 시스템 독자 개발 완료를 토대로 현대차그룹 외 글로벌 비계열 고객사 수주 경쟁력이 중장기적으로 강화될 것으로 기대되며, 퀄컴과의 SDV·ADAS 공동 개발은 신흥시장 수주 확대의 또 다른 경로로 평가된다. 글로벌 로봇 시장은 현재 약 75조 원 규모에서 연평균 약 17% 성장해 2040년 약 800조 원 수준으로 확대될 것으로 전망돼 중장기 성장 모멘텀으로서의 잠재력이 크다. 다만 미국 관세 정책의 지속, 글로벌 전기차 수요의 불확실성, 현재의 높은 주가 수준에서 로보틱스 기대감이 실제 이익 기여로 전환되는 속도에 대한 면밀한 모니터링이 필요하다. 2026년 2분기 실적 발표(잠정 7월 24일)가 하반기 방향성 판단의 핵심 기준점이 될 전망이다.",
+        "en": "In the near term, the trajectory of OEM production volumes in H2 2026 will be the pivotal variable for module segment margin recovery; leading research houses expect improved capacity utilization in electrification lines and the pass-through of A/S pricing increases to become visible in the second half of the year. The A/S segment is structurally positioned for continued profit growth as the cumulative Hyundai/Kia vehicle parc expands globally, with global price increases and favorable currency tailwinds providing additional support. In robotics, Hyundai Motor Group's plans to produce and deploy tens of thousands of robots over the coming years underpin a progressive expansion of Hyundai Mobis's actuator supply volumes, with planned R&D scope expansion into grippers, sensors, controllers, and battery packs expected to further diversify the robotics component portfolio over the medium term. On the electrification front, the completion of a full PE system lineup (120kW, 160kW, 250kW) provides a technology foundation for capturing non-captive global OEM orders over the medium-to-long term, with the Qualcomm SDV/ADAS MOU offering an additional pathway for emerging-market order expansion. The global robotics market, estimated at approximately KRW 75 trillion currently, is projected to grow at roughly 17% CAGR to approximately KRW 800 trillion by 2040, representing a substantial long-term growth vector. Nevertheless, the persistence of U.S. tariff policies, uncertainty in global EV demand trajectories, and the company's already elevated valuation level call for careful monitoring of how quickly robotics-driven expectations translate into tangible earnings contributions. The Q2 2026 earnings release (tentatively July 24, 2026) will serve as a critical milestone for gauging second-half business momentum."
       },
       "bull": [
         {
           "title": {
-            "ko": "로봇 액추에이터: 구조적 신성장 축 부상",
-            "en": "Robot Actuators: Structural New Growth Engine"
+            "ko": "A/S 부문의 구조적 고수익성과 이익 하단 지지력",
+            "en": "Structural High-Margin A/S Franchise as Valuation Floor"
           },
           "body": {
-            "ko": "현대모비스는 CES 2026에서 보스턴다이내믹스 아틀라스 전동식 액추에이터 전량 공급 계약을 체결했으며, 아틀라스용 핵심 부품 5종 추가 공급 요청도 확인됐다. 액추에이터는 휴머노이드 로봇 원가의 약 50~60%를 차지하는 핵심 부품으로, 아틀라스가 연 3만 대 양산 체제에 진입할 경우 현대모비스의 관련 매출이 1조 5,000억원 이상에 달할 것이라는 증권사 추정이 다수 제시됐다. 세계 로봇 액추에이터 시장은 2032년까지 약 400억 달러 규모로 성장이 예상되며, 현대모비스는 자동차 부품 가공 설비를 활용한 조기 흑자 구조도 갖춘 것으로 분석된다.",
-            "en": "Hyundai Mobis signed an exclusive actuator supply contract for Boston Dynamics' Atlas at CES 2026, with five additional core parts subsequently requested. Actuators account for an estimated 50–60% of humanoid robot hardware costs, and multiple brokers project Atlas-related actuator revenue exceeding KRW 1.5 trillion once Atlas reaches annual production of 30,000 units. The global robot actuator market is projected to grow to approximately USD 40 billion by 2032, and Hyundai Mobis is seen as capable of an early break-even by leveraging existing auto-parts machining facilities."
+            "ko": "A/S 부문은 2025년 4분기 기준 OPM 약 22.7%로, 전 세계 약 5,844만 대의 현대차·기아 차량을 대상으로 약 240만 품목의 보수용 부품을 독점에 가까운 구조로 공급하며 높은 진입 장벽을 갖추고 있다. 완성차 판매가 누적될수록 보수용 부품 수요가 자연스럽게 확대되는 구조적 성장성 덕분에 경기 변동에 대한 방어력이 상당하며, 2026년 1분기에도 미국 관세라는 악재 속에서 A/S 영업이익이 전기대비 약 5.4% 증가한 것으로 보도됐다. 신한투자증권 분석에 따르면 A/S 부문은 밸류에이션 하단을 지지하는 핵심 현금창출원으로서 전장·자율주행·로봇 등 신사업 투자 여력을 지속 공급하는 선순환 구조를 형성하고 있다. 글로벌 판가 인상과 우호적 환율 효과가 단기 관세 충격을 상쇄하고 있어, 해당 부문의 이익 기여는 중기적으로도 견조하게 유지될 가능성이 높다.",
+            "en": "The A/S segment operated at approximately 22.7% OPM in Q4 2025, supplying roughly 2.4 million part numbers to approximately 58.44 million Hyundai/Kia vehicles globally in a near-captive structure with high barriers to competitive entry. The segment's structural growth dynamic — whereby rising accumulated vehicle sales naturally expand afterservice demand — provides substantial resilience against economic cycles, as demonstrated by an approximately 5.4% YoY increase in A/S operating income in Q1 2026 even amid U.S. tariff headwinds. Shinhan Investment Securities identified the A/S division as the core cash generator that anchors the company's valuation floor and continuously funds new business investment in electronics, autonomous driving, and robotics. Global price increases and favorable currency tailwinds are offsetting near-term tariff impacts, suggesting that A/S profit contributions will remain robust over the medium term."
           }
         },
         {
           "title": {
-            "ko": "고수익 A/S 사업부: 견고한 현금창출 버팀목",
-            "en": "High-Margin A/S Division: Resilient Cash Engine"
+            "ko": "로보틱스 신사업: 아틀라스 액추에이터 전량 공급",
+            "en": "Robotics New Business: Full Actuator Supply for Atlas"
           },
           "body": {
-            "ko": "A/S 부품 부문은 2026년 1분기 기준 약 26.3%의 영업이익률을 시현하며 전사 이익을 방어하고 있다. 글로벌 차량 평균 차령 상승과 우호적 환율 효과, 판매 단가 인상이 구조적 수요 성장을 뒷받침하며, 관세 비용의 상당 부분은 가격 전가를 통해 흡수되고 있다. 한 증권사는 2026년 연간 A/S 부문 매출을 약 14조 3,000억원(+7.4% YoY)으로 추정하며 안정적 현금창출 기반이 장기 투자를 가능하게 한다고 분석했다.",
-            "en": "The A/S division maintained approximately 26.3% operating margin in Q1 2026, anchoring overall profitability. Structural demand growth is driven by rising global average vehicle age, favorable forex tailwinds, and ASP increases that largely offset tariff headwinds. One broker estimates FY2026 A/S revenues at approximately KRW 14.3 trillion (+7.4% YoY), providing the cash foundation to fund long-term growth investments."
+            "ko": "현대모비스는 2026년 1월 CES에서 보스턴다이내믹스와 전략적 협력을 공식화하고, 차세대 휴머노이드 로봇 아틀라스에 탑재되는 액추에이터(로봇 재료비의 약 60% 비중)를 양산 시점에 공급하기로 합의했으며, 핵심 액추에이터 31개를 전량 수주했다는 보도가 나왔다. 보스턴다이내믹스는 현대모비스의 부품 설계 기술, 신뢰성 기반 평가 체계, 글로벌 수준의 양산 경험을 높이 평가했으며, 현대차그룹이 향후 수년간 수만 대 규모의 로봇 생산·운영을 계획하고 있어 수요 기반이 가시적이다. 삼성증권은 이를 반영해 적용 PER을 기존 13.7배에서 18.4배로 상향하며 목표가 95만 원을 제시했으며, 글로벌 로봇 시장은 2040년 약 800조 원 규모의 블루오션으로 성장할 것으로 전망된다. 액추에이터 공급을 시작으로 핸드그리퍼·센서·제어기·배터리팩 등 로봇 핵심 부품 전반으로 R&D 범위를 확대할 계획이어서 중장기 수익 다각화 효과가 기대된다.",
+            "en": "At CES 2026 in January, Hyundai Mobis formalized a strategic partnership with Boston Dynamics to supply actuators — components accounting for approximately 60% of a humanoid robot's material cost — for the next-generation Atlas robot at the time of mass production, with reports indicating a full order for all 31 key actuators. Boston Dynamics valued Hyundai Mobis's parts design expertise, reliability-based evaluation framework, and global mass-production track record, and the supply arrangement has a visible demand anchor in Hyundai Motor Group's plan to produce and operate tens of thousands of robots in coming years. Samsung Securities incorporated this development by raising its applied P/E multiple from 13.7x to 18.4x and setting a KRW 950,000 target price, while the global robotics market is projected to expand to approximately KRW 800 trillion by 2040. The company plans to extend its R&D scope from actuators to grippers, sensors, controllers, and battery packs, suggesting meaningful medium-to-long-term revenue diversification potential."
           }
         },
         {
           "title": {
-            "ko": "주주환원 강화 및 SDV·전동화 기술 전환 가속",
-            "en": "Enhanced Shareholder Returns and Accelerating SDV/EV Tech Transition"
+            "ko": "전동화 기술 내재화와 비계열 수주 경쟁력 강화",
+            "en": "Electrification Technology Internalization and Non-Captive Order Competitiveness"
           },
           "body": {
-            "ko": "2025년 총주주수익률(TSR) 32.8%를 실제 집행했으며, 현금 배당(주당 6,500원)과 자사주 매입·소각을 병행하며 주주환원 정책의 일관성을 입증했다. R&D 투자는 처음으로 연간 2조원을 초과했으며, 퀄컴과의 SDV·ADAS 공동 개발, 슬로바키아·스페인 전동화 공장 가동은 중장기 제품 경쟁력을 높이는 핵심 요소다. 사업 포트폴리오 재편(램프·범퍼 사업부 매각 검토)을 통한 선택과 집중도 기업 체질 개선에 기여할 전망이다.",
-            "en": "The company delivered a TSR of 32.8% in 2025, combining a KRW 6,500 per-share dividend with share buybacks and cancellations, demonstrating consistent capital-return discipline. Annual R&D spending exceeded KRW 2 trillion for the first time, while the Qualcomm SDV/ADAS collaboration and new EV facilities in Slovakia and Spain support long-term product competitiveness. Portfolio rationalization—including the potential divestiture of lamp and bumper divisions—is expected to sharpen strategic focus and improve capital efficiency."
+            "ko": "2026년 5월 현대모비스는 범용 전기차용 160kW급 PE(파워일렉트릭) 시스템의 독자 개발을 완료했으며, 기존 250kW급에 이어 상반기 내 120kW급을 추가 구축해 소형 전기차부터 고성능 모델까지 대응 가능한 구동계 풀 라인업을 갖출 계획이다. 이는 기존 배터리시스템 중심의 전동화 사업을 구동시스템 전반으로 확장하는 핵심 이정표로, 현대차그룹 외 글로벌 비계열 완성차 고객 수주 경쟁력을 크게 높이는 기반이 된다. 퀄컴과의 SDV·ADAS 공동 개발 MOU 체결은 신흥시장 중심 통합 솔루션 수주라는 또 다른 성장 경로를 열어준다. 비계열 고객 다변화는 현재 약 77~80% 수준인 그룹사 의존도를 낮추어 밸류에이션 디스카운트 해소에 기여하는 중요한 중장기 촉매가 될 것으로 평가된다.",
+            "en": "In May 2026, Hyundai Mobis announced the completion of an in-house 160kW universal EV Power Electric (PE) system, with a 120kW variant to be added within H1 2026, complementing the existing 250kW product and completing a full drivetrain lineup from compact to high-performance EVs. This marks a key milestone in expanding the company's electrification business from battery systems into complete drivetrain systems, forming a robust technological foundation for winning orders from non-captive global OEM customers. The Qualcomm MOU for SDV/ADAS co-development opens an additional growth pathway centered on integrated solutions for emerging-market customers. Non-captive customer diversification, if achieved at meaningful scale, could reduce the approximately 77–80% group revenue dependency and serve as an important medium-to-long-term catalyst for closing the conglomerate-dependency valuation discount."
           }
         }
       ],
       "bear": [
         {
           "title": {
-            "ko": "미국 관세 지속: 부품 원가·A/S 마진 이중 압박",
-            "en": "Persistent U.S. Tariffs: Dual Pressure on Parts Costs and A/S Margins"
+            "ko": "모듈 부문의 수익성 부진 지속",
+            "en": "Persistent Module Segment Profitability Headwinds"
           },
           "body": {
-            "ko": "2025년 4분기 영업이익은 전년 동기대비 5.6% 감소했으며, 2026년 1분기에도 미국 관세 비용(약 870억원)과 품질 비용(약 600억원)이 순이익을 14.4% 끌어내렸다. 2026년 2분기부터는 15% 관세의 본격 반영이 예상되어 수익성 회복 시점이 지연될 수 있으며, 메모리 반도체 가격 상승으로 연간 약 2,000억원의 추가 비용 부담 가능성도 거론된다. 글로벌 통상 환경의 불확실성이 Non-Captive 수주 협상 지연 리스크를 함께 높이고 있다.",
-            "en": "Q4 2025 operating profit fell 5.6% YoY, and Q1 2026 net income declined 14.4% as approximately KRW 87 billion in U.S. tariff costs and KRW 60 billion in quality costs hit simultaneously. From Q2 2026 onward, a full 15% tariff pass-through is expected, potentially delaying margin recovery, with rising memory chip prices adding an estimated KRW ~200 billion in annual incremental costs. Global trade uncertainty also elevates the risk of delays in non-captive order negotiations."
+            "ko": "최근 보도에 따르면 2026년 1분기 모듈·핵심부품 부문의 영업이익은 약 -1,213억 원으로 영업손실을 기록했으며, 완성차 생산물량 감소에 따른 고정비 부담, 북미 전기차 수요 둔화로 인한 전동화 법인 가동률 저하, 유럽 신규 생산라인 초기 비용 발생이 복합적으로 작용했다. 매출의 약 81.6%를 차지하는 모듈 부문이 수익에 기여하지 못하는 구조적 불균형은 전체 영업이익률(2025년 기준 약 5.5%)의 실질적 개선을 제약하는 핵심 요인이다. 전기차 전환 속도의 불확실성이 지속되는 한 가동률 회복과 수익성 개선 시점 예측이 어렵고, 중국계 저가 경쟁사의 진입 가능성도 중장기 가격 압력 요인으로 잠재해 있다.",
+            "en": "Per recent media reports, the module and core component segment recorded an operating loss of approximately KRW 121.3 billion in Q1 2026, reflecting a combination of lower OEM production volumes elevating fixed-cost burdens, subdued North American EV demand compressing capacity utilization at electrification subsidiaries, and initial ramp-up costs at new European production lines. The structural imbalance where the segment accounting for roughly 81.6% of revenues contributes negligibly to profits is a key constraint on further meaningful improvement in consolidated OPM (approximately 5.5% in 2025). Ongoing uncertainty in the global EV adoption pace makes it difficult to forecast when capacity utilization will normalize, and the potential entry of low-cost Chinese competitors represents a latent medium-to-long-term pricing pressure."
           }
         },
         {
           "title": {
-            "ko": "전동화 부문 초기 비용 부담 및 손익 개선 지연",
-            "en": "EV Division Ramp-Up Costs and Delayed Profitability Recovery"
+            "ko": "당기순이익 감소세와 비영업 손익 변동성",
+            "en": "Declining Net Income Trend and Non-Operating Income Volatility"
           },
           "body": {
-            "ko": "슬로바키아 PE 시스템 공장 가동과 스페인 BSA 공장 양산 준비에 따른 초기 감가상각·고정비 부담이 2026년 상반기 모듈·핵심부품 부문 수익성을 억누르고 있다. 복수의 증권사는 해당 부문의 1분기 영업손실 가능성을 제기했으며, 전동화 물량 증가가 이익으로 전환되기까지는 시간이 소요될 것으로 봤다. 미국 전기차 수요 둔화와 완성차 출하 부진이 전방 수요 회복을 지연시키는 추가 변수로 작용한다.",
-            "en": "Initial depreciation and fixed-cost overheads from the new Slovakia PE system plant and the upcoming Spain BSA facility are suppressing module and core-parts segment margins in H1 2026. Multiple brokers flagged the risk of operating losses in that segment for Q1 2026, noting that meaningful profit conversion from higher EV volumes will take time. Softening U.S. EV demand and subdued OEM shipments represent additional headwinds to a near-term volume recovery."
+            "ko": "DART 공시 확정 기준 당기순이익은 2025년 3.7조 원(-9.7% YoY), 2026년 1분기 8,831억 원(-14.4% YoY)으로 2개 연속 감소세를 나타내고 있다. 영업이익은 증가하고 있음에도 순이익이 감소하는 구조는 현대차·기아 등 지분법 피투자기업의 이익 변동 및 투자자산 관련 손익의 영향을 강하게 받고 있음을 시사한다. 이러한 비영업 손익의 변동성은 보고 이익의 예측 가능성을 낮추며, 밸류에이션 산정 시 순이익 기반 지표(PER)의 신뢰도 저하라는 부수적 문제를 야기한다.",
+            "en": "Based on DART-confirmed financials, net income fell 9.7% YoY to KRW 3.7 trillion in 2025 and declined a further 14.4% YoY to KRW 883.1 billion in Q1 2026, marking two consecutive periods of contraction. The divergence between growing operating income and falling net income suggests that the bottom line is heavily influenced by volatility in equity-method investment income from Hyundai/Kia affiliates and gains/losses on investment assets. This non-operating income volatility reduces the predictability of reported earnings and introduces additional uncertainty in net income-based valuation metrics such as P/E ratio."
           }
         },
         {
           "title": {
-            "ko": "로봇·미래 사업 상업화 타임라인 불확실성",
-            "en": "Uncertain Commercialization Timeline for Robotics and Future Businesses"
+            "ko": "현대차그룹 고객 집중도와 수직 계열 구조 리스크",
+            "en": "High Hyundai Motor Group Revenue Concentration Risk"
           },
           "body": {
-            "ko": "아틀라스 액추에이터 매출은 2027년부터 발생이 예상되며, 현대차그룹의 연 3만 대 로봇 양산 목표 달성 시점(2028년)에도 불확실성이 내재한다. 보스턴다이내믹스의 IPO 일정 및 상장 후 기업가치 실현 여부가 현재 주가에 선반영된 상태여서 기대 미충족 시 주가 변동성이 확대될 수 있다. 현대차·기아 의존도가 높은 수익 구조(비계열 매출 비중 약 20%)도 계열사 경영 여건에 따른 수익 변동 리스크를 내포한다.",
-            "en": "Atlas actuator revenues are not expected until 2027, with uncertainty surrounding Hyundai Motor Group's 30,000-units-per-year robot production target by 2028. The potential Boston Dynamics Nasdaq IPO and associated valuation realization appear partially priced in, creating downside risk if expectations are unmet. High captive-customer concentration—with non-captive revenues comprising approximately 20% of the total—also means earnings remain sensitive to changes in Hyundai Motor and Kia's operating conditions."
+            "ko": "현대모비스의 현대차그룹 매출 의존도는 약 77~80% 수준으로, 글로벌 동종사 덴소의 도요타 의존도(약 49%)에 비해 현저히 높아 그룹사 생산 정책 변화나 수요 부진의 영향을 직접적으로 받는 구조다. 현대차·기아의 전동화 전환 전략, 차종 포트폴리오 조정, 생산 거점 변화 등이 현대모비스의 수익성에 직결되므로 독립적인 사업 리스크 관리에 한계가 존재한다. 비계열 고객 수주 확대가 중장기 과제로 추진되고 있으나, 실질적 매출 비중 다변화까지는 상당한 시간이 소요될 것으로 예상된다.",
+            "en": "Hyundai Mobis derives approximately 77–80% of its revenue from Hyundai Motor Group, markedly higher than peer Denso's approximately 49% exposure to Toyota, making the company's financial performance directly and immediately sensitive to changes in group production policies and demand conditions. Hyundai/Kia's electrification transition strategy, model portfolio adjustments, and production footprint decisions directly impact Hyundai Mobis's profitability, constraining the degree of independent risk management the company can exercise. While non-captive customer diversification is a stated medium-to-long-term objective, meaningful diversification of actual revenue mix is expected to take considerable time to materialize."
           }
         }
       ],
@@ -1578,31 +1598,31 @@ window.KOS_REPORTS = {
         {
           "cat": {
             "ko": "거시·통상 리스크",
-            "en": "Macro / Trade Risk"
+            "en": "Macro and Trade Policy Risk"
           },
           "body": {
-            "ko": "미국의 자동차 및 부품 관세 정책 변화가 실적에 직접적 영향을 준다. 현대차그룹의 글로벌 판매 둔화나 환율 역전이 발생할 경우 현대모비스의 매출 성장성과 A/S 부문 환율 수혜가 동시에 약화될 수 있다.",
-            "en": "Changes in U.S. tariff policy on automotive parts have a direct earnings impact. A slowdown in Hyundai Motor Group's global sales or an adverse currency reversal could simultaneously erode Hyundai Mobis's revenue growth and the forex tailwind benefiting the A/S division."
+            "ko": "미국의 자동차 및 부품에 대한 관세 정책이 지속되며 북미 A/S 부문의 원가 구조에 압박이 이어지고 있다. 모듈 부문은 완성차와의 협상을 통해 관세 영향을 일부 회수했으나, A/S 부문은 판가 인상을 통한 전가 과정에서 시차가 발생해 단기 수익성 변동 요인으로 잔존한다. 글로벌 무역 환경의 추가 악화, 원·달러 및 원·유로 환율 변동, 메모리 반도체를 포함한 원자재 가격 변화도 원가 구조에 영향을 미치는 주요 외부 변수다.",
+            "en": "The continuation of U.S. tariff policies on automobiles and auto parts sustains cost structure pressure on the North American A/S segment. While the module segment has partially recovered tariff impacts through OEM price negotiations, the A/S segment faces a time lag in passing costs through via price increases, creating ongoing short-term profitability variability. Potential further deterioration in the global trade environment, KRW/USD and KRW/EUR exchange rate fluctuations, and changes in raw material costs — including memory semiconductor prices — represent key external variables affecting the company's cost structure."
           }
         },
         {
           "cat": {
-            "ko": "전동화 전환 리스크",
-            "en": "Electrification Transition Risk"
+            "ko": "전동화·EV 전환 속도 리스크",
+            "en": "EV Transition Pace Risk"
           },
           "body": {
-            "ko": "글로벌 전기차 수요 성장 둔화가 현대모비스의 북미·유럽 전동화 공장 가동률과 수주 확대에 부정적으로 작용할 수 있다. 전동화 부문 투자 회임 기간이 길어질수록 단기 수익성 회복이 지연될 위험이 있다.",
-            "en": "Slower-than-expected global EV demand growth could weigh on capacity utilization at Hyundai Mobis's North American and European electrification plants and impair order pipeline growth. A prolonged payback period for EV investments raises the risk of delayed short-term profitability recovery."
+            "ko": "글로벌 전기차 수요 회복이 시장 기대를 하회할 경우, 북미·유럽 전동화 생산 법인의 가동률 저하와 고정비 부담이 모듈 부문의 손익 개선을 지연시킬 수 있다. 내연기관에서 전기차로의 전환 과정에서 ADAS·전동화 부품에 대한 투자 집행 시점과 실제 매출화 사이의 시차가 단기 재무 부담으로 작용할 수 있다. 전동화 부품 시장의 경쟁 심화와 중국계 경쟁사의 공격적인 가격 전략은 중장기 수익성 압박 요인으로 잠재해 있다.",
+            "en": "If global EV demand recovery falls short of market expectations, reduced capacity utilization at North American and European electrification subsidiaries will delay operating leverage improvement in the module segment. The time lag between capital deployment into ADAS and electrification components and actual revenue generation during the ICE-to-EV transition could create near-term financial pressure. Intensifying competition in the electrification components market and aggressive pricing strategies from Chinese competitors represent latent medium-to-long-term profitability risks."
           }
         },
         {
           "cat": {
-            "ko": "밸류에이션 및 신사업 기대 리스크",
-            "en": "Valuation and New-Business Expectation Risk"
+            "ko": "로보틱스 실행·재평가 리스크",
+            "en": "Robotics Execution and Valuation Re-Rating Risk"
           },
           "body": {
-            "ko": "로봇 액추에이터 사업과 보스턴다이내믹스 IPO에 대한 높은 시장 기대가 주가에 상당 부분 반영된 상태로, 상업화 속도가 기대를 하회할 경우 밸류에이션 프리미엄 축소가 불가피하다. 글로벌 빅테크 로봇 업체들과의 기술 경쟁 심화도 중장기 공급자 지위를 위협할 수 있다.",
-            "en": "High market expectations for the robot actuator business and a Boston Dynamics IPO appear substantially priced into the stock; any shortfall in commercialization pace could compress the current valuation premium. Intensifying competition from global tech-driven robotics players poses a medium-to-long-term risk to Hyundai Mobis's position as a preferred supplier."
+            "ko": "보스턴다이내믹스 액추에이터 공급은 로보틱스 신사업 진출의 중요한 신호탄이지만, 현재 시점의 실질적 재무 기여는 아직 초기 단계에 불과하다. 주가에는 이미 상당한 로보틱스 프리미엄이 선반영되어 있어, 양산 일정 지연·단가 하회·경쟁사 진입 등 실행 리스크가 현실화될 경우 밸류에이션 조정 가능성이 존재한다. 자동차 부품 사업과 로봇 부품 사업은 고객 요구사항·인증 절차·설계 기준이 상이할 수 있어, 기술 역량 내재화에 추가적인 시간과 자원 투자가 필요할 수 있다.",
+            "en": "While the Boston Dynamics actuator supply agreement is a significant strategic milestone, the tangible financial contribution at this stage remains limited. With the stock having already priced in a considerable robotics premium, execution risks — including production schedule delays, unit prices below initial projections, or competitive entry — could trigger valuation corrections. The automotive and robotics components businesses differ in customer requirements, certification processes, and design standards, meaning technology capability internalization may require additional time and capital investment beyond initial expectations."
           }
         }
       ],
@@ -1612,26 +1632,36 @@ window.KOS_REPORTS = {
           "en": "Constructive"
         },
         "body": {
-          "ko": "현대모비스는 2025년 역대 최대 실적을 달성했고, 고마진 A/S 사업부가 안정적인 이익 기반을 제공하는 가운데 로봇 액추에이터·SDV라는 중장기 성장 스토리가 투자자들의 재평가를 이끌고 있다. 미국 관세와 전동화 공장 초기 비용이라는 단기 역풍은 실재하지만, 복수의 증권사가 2026년 하반기 실적 개선을 전망하고 있어 본업의 안정성과 신사업 기대감이 공존하는 구도다. 다만 로봇 사업의 본격적인 실적 기여는 이르면 2027년부터이며, 현재의 높은 주가 프리미엄이 상업화 불확실성을 완충하는지에 대한 지속적인 모니터링이 필요하다. 본 의견은 투자 권유가 아닌 정보 제공을 목적으로 한다.",
-          "en": "Hyundai Mobis delivered record FY2025 results, with its high-margin A/S segment underpinning earnings stability while the robot actuator and SDV narrative drives a fundamental re-rating. Near-term headwinds—U.S. tariffs and EV factory ramp-up costs—are real, but multiple brokers project H2 2026 improvement, creating a backdrop where core-business resilience and new-business optionality coexist. That said, meaningful robotics revenue contributions are not expected before 2027 at the earliest, and the elevated valuation premium warrants ongoing scrutiny of commercialization progress. This assessment is provided for informational purposes only and does not constitute investment advice."
+          "ko": "현대모비스는 고마진 A/S 사업이라는 견고한 이익 기반 위에서 전동화와 로보틱스라는 차세대 성장 동력을 동시에 탑재하며 중장기 관점에서 긍정적 평가가 유효한 기업이다. DART 공시 확정 기준 2025년 매출·영업이익이 각각 +6.8%, +9.2% 성장했고 2026년 1분기에도 성장 기조를 이어간 것은 핵심 영업 실행력이 양호하다는 증거다. CES 2026에서의 보스턴다이내믹스 액추에이터 전량 공급 계약과 퀄컴 SDV·ADAS MOU, 그리고 2026년 5월 PE 시스템 독자 개발 완료 등은 '자동차 부품사'의 프레임을 넘어 '피지컬 AI 밸류체인'으로 재정의될 논리적 근거가 축적되고 있음을 보여준다. 다만 2025~2026년 1분기 연속된 당기순이익 감소, 모듈 부문 영업손실 지속, 전기차 수요 불확실성 및 미국 관세 환경은 단기 이익 변동성 요인이며, 주가가 이미 52주 저점 대비 약 3배 급등한 현 시점에서 로보틱스 기대감의 실제 이익 기여 속도와 모듈 수익성 회복 타이밍에 대한 면밀한 추적 관찰이 필요하다. 본 보고서는 투자 권유가 아닌 정보 제공을 목적으로 작성되었으며, 투자 결정 시 개인의 위험 허용 범위와 별도의 심층 분석을 종합적으로 고려해야 한다.",
+          "en": "Hyundai Mobis merits a constructive assessment from a medium-to-long-term perspective, as the company is layering high-growth electrification and robotics engines onto the solid foundation of its high-margin A/S franchise. DART-confirmed 2025 revenue and operating income growth of +6.8% and +9.2%, respectively, continuing into Q1 2026, demonstrate sound core business execution. The concrete strategic outcomes from CES 2026 — the full Atlas actuator supply agreement with Boston Dynamics, the Qualcomm SDV/ADAS MOU — together with the May 2026 in-house PE system completion, are building a logical framework for re-rating the company from 'auto parts supplier' to 'physical AI value-chain platform.' However, consecutive net income declines in 2025 and Q1 2026, ongoing module segment operating losses, EV demand uncertainty, and the U.S. tariff environment are genuine sources of near-term earnings volatility, and with the share price already having surged approximately three-fold from its 52-week low on robotics momentum, close monitoring of the pace at which robotics translates into tangible earnings contributions — and the timing of module segment profitability recovery — will be decisive for the stock's next directional move. This report is prepared solely for informational purposes and does not constitute investment advice; individual risk tolerance and independent in-depth analysis should be comprehensively considered in any investment decision."
         }
       },
       "sources": [
-        "https://mauto.danawa.com/news/?Tab=N1&p=&NewsGroup=M%27%5D&pcUse=n&Work=detail&no=5961375",
-        "https://www.ezyeconomy.com/news/articleView.html?idxno=231378",
-        "https://www.cartvnews.com/news/articleView.html?idxno=700606",
-        "https://news.nate.com/view/20260528n10016",
-        "https://www.hankyung.com/article/2026060219196",
-        "https://www.mt.co.kr/stock/2026/06/02/2026060207543722587",
-        "https://www.g-enews.com/article/Global-Biz/2026/05/2026051921390487112bd56fbc3c_1",
-        "https://www.thelec.kr/news/articleView.html?idxno=53635",
-        "https://www.hankyung.com/article/202604295530i",
-        "https://m.thinkpool.com/stockDiscuss/012330/cont/11884801"
+        "https://autowein.com/3069231/",
+        "https://www.eugenefn.com/common/files/amail//20260129_012330_leejaeil_1230.pdf",
+        "https://alphasquare.co.kr/home/stock-summary?code=012330",
+        "https://www.hyundaimotorgroup.com/ko/group/CONT0000000000000670",
+        "https://www.mobis.com/kr/aboutus/aboutus.do",
+        "https://www.mobis.com/kr/tech/tech.do",
+        "https://www.autoelectronics.co.kr/article/articleView.asp?idx=6613",
+        "https://www.hyundaimotorgroup.com/ko/news/hyundai-mobis-ai-robotics-sdv-ces-partnership",
+        "https://v.daum.net/v/20260528093208166",
+        "https://www.etoday.co.kr/news/view/2588504",
+        "https://v.daum.net/v/XnZFA93GXV",
+        "https://www.hankyung.com/article/202605283395L",
+        "https://www.investing.com/equities/hyundai-mobis",
+        "https://m.thinkpool.com/compDiscuss/cont/1026012",
+        "https://ybstock.co.kr/hyundai-mobis-deep-dive-analysis-2026/",
+        "https://msale.mimint.co.kr/bbs/view/news/S1N11/5385678"
       ],
       "ticker": "012330",
       "name": "현대모비스",
       "name_en": "HYUNDAI MOBIS CO.,LTD",
       "sector": "자동차",
+      "categories": [
+        "자동차",
+        "자율주행·전기차"
+      ],
       "market": "코스피",
       "reportDate": "2026-06-03",
       "dataDate": "20260602"
@@ -1799,163 +1829,172 @@ window.KOS_REPORTS = {
     },
     "009150": {
       "lead": {
-        "ko": "삼성전기(009150)는 창사 이래 첫 분기 매출 3조 원 돌파, 1.55조 원 규모 실리콘 캐패시터 수주라는 두 가지 변곡점을 등에 업고 단순 전자부품 공급사에서 'AI 부품 토털 솔루션' 기업으로 재평가받는 전환기에 있다.",
-        "en": "Samsung Electro-Mechanics (009150) is at a structural inflection point, crossing KRW 3 trillion in quarterly revenue for the first time in company history and securing a KRW 1.55 trillion silicon capacitor supply contract, catalyzing a re-rating from a conventional component maker to an AI total-solution provider."
+        "ko": "삼성전기는 MLCC 가격 인상 사이클 진입·FC-BGA 공급 병목 심화·실리콘 커패시터 첫 대형 수주(1.5조원)가 동시에 가시화되며 AI 인프라 핵심 부품 토털 솔루션 공급사로 빠르게 재평가받고 있으나, 연초 대비 수배 급등한 주가와 6월 초 하루 -9.6% 급락이 단기 변동성 확대를 경고하고 있다.",
+        "en": "Samsung Electro-Mechanics is rapidly being re-rated as a total-solution AI infrastructure components provider, catalyzed by an MLCC price hike cycle, acute FC-BGA supply shortages, and a landmark KRW 1.5 trillion silicon capacitor contract win — yet a parabolic share price rally from the start of 2026 and a -9.6% single-day correction in early June signal elevated near-term volatility that warrants close monitoring."
       },
       "desc": {
-        "ko": "본 리포트는 DART 공시 확정 재무 데이터 및 최근 공개 보도를 근거로 삼성전기의 사업 구조·실적·성장 동인과 리스크를 균형 있게 분석하며, 투자 권유 없이 정보 제공 목적으로 작성되었다.",
-        "en": "This report provides a balanced analysis of Samsung Electro-Mechanics' business structure, financial performance, growth drivers, and key risks, based on DART-confirmed financials and recent public disclosures, and is intended for informational purposes only, not as investment advice."
+        "ko": "삼성전기(KOSPI·009150)는 MLCC(적층세라믹커패시터)·반도체 패키지 기판(FC-BGA)·카메라 모듈을 3대 축으로 하는 코스피 대형 전자부품사로, 2026년 AI 서버 및 전장 수요 수혜와 제품 가격 인상이 맞물리며 주가가 연초 대비 수배 급등하였다. DART 공시 확정 재무 기준, 2025년 연결 매출 11.3조원·영업이익 9,133억원에 이어 2026년 1분기에는 사상 첫 분기 매출 3조원 돌파와 영업이익 전년 동기 대비 +39.9% 성장을 기록하며 실적 가속도를 증명했다. 본 리포트는 DART 확정 재무와 최신 보도를 근거로 사업 구조·성장 동인·리스크를 균형 있게 분석한 정보 제공 목적의 리서치 리포트이다.",
+        "en": "Samsung Electro-Mechanics (KOSPI: 009150) is a large-cap Korean electronic components manufacturer whose three core pillars are MLCC, FC-BGA semiconductor package substrates, and camera modules; from early 2026, its shares have surged multifold as AI server and automotive demand tailwinds intersected with a broad-based component price hike cycle. Based on DART-confirmed consolidated financials, the company posted 2025 full-year revenue of KRW 11.3 trillion and operating profit of KRW 913.3 billion, then crossed a milestone first-ever KRW 3 trillion quarterly revenue threshold in Q1 2026 with operating profit growing +39.9% year-over-year. This report analyzes Samsung Electro-Mechanics' business structure, growth catalysts, and risks in a balanced manner based on DART-confirmed financials and the latest publicly available news, for informational purposes only."
       },
       "keypoints": [
         {
-          "ko": "2026년 1분기 창사 최초 분기 매출 3.2조 원 달성(전년비 +17.2%), 영업이익 2,806억 원(+39.9%)으로 AI·전장 수요가 전 사업부 실적을 동시에 견인",
-          "en": "Q1 2026 marked the company's first-ever quarterly revenue of KRW 3.2 trillion (+17.2% YoY) and operating profit of KRW 280.6 billion (+39.9% YoY), as AI server and automotive demand lifted all three business segments simultaneously."
+          "ko": "2026년 1분기(DART 공시 확정): 매출 3조 2,091억원(+17.2% YoY) — 창사 이래 첫 분기 3조원 돌파, 영업이익 2,806억원(+39.9%), 당기순이익 2,527억원(+78.4%)",
+          "en": "Q1 2026 DART-confirmed results: Revenue of KRW 3.2091 trillion (+17.2% YoY) — first-ever quarterly revenue above KRW 3 trillion — operating profit of KRW 280.6 billion (+39.9%), and net income of KRW 252.7 billion (+78.4%)"
         },
         {
-          "ko": "2026년 5월 글로벌 대형 기업과 약 1.55조 원 규모의 실리콘 캐패시터 2년 공급 계약 체결, MLCC·FC-BGA에 이은 제3의 AI 성장축 확보",
-          "en": "In May 2026, the company signed an approximately KRW 1.55 trillion, two-year silicon capacitor supply agreement with a global major client, establishing a third AI-driven growth pillar alongside MLCC and FC-BGA."
+          "ko": "FC-BGA 공급 부족 심화 — CEO 장덕현 사장 '수요가 생산능력 50% 이상 초과' 발언, 1Q 기판 매출 +45% YoY, 평균판매단가(ASP) +14%로 급등",
+          "en": "FC-BGA supply-demand tightening intensifies — CEO disclosed demand exceeds production capacity by 50%+; Q1 substrate revenue surged +45% YoY with ASP +14%, driving the segment's share of total operating profit from 11% to 20% year-over-year"
         },
         {
-          "ko": "MLCC 가동률이 90~95%에 근접한 가운데 가격 인상 사이클 초입 진입 여부가 하반기 수익성 확대의 핵심 변수로 부상",
-          "en": "With MLCC factory utilization approaching 90–95%, entry into a price-hike cycle is emerging as the pivotal variable for margin expansion in the second half of 2026."
+          "ko": "2026년 5월, 글로벌 대형 기업과 2027~2028년간 약 1조 5,000억원 규모 실리콘 커패시터 공급 계약 체결 — AI 신사업 첫 대형 수주, 팹리스 모델로 고ROIC 기대",
+          "en": "May 2026: KRW 1.5 trillion silicon capacitor supply agreement (2027–2028) signed with a global tech giant — the company's first major commercial win in AI power-stabilization components, leveraging a fabless model expected to generate superior ROIC"
+        },
+        {
+          "ko": "MLCC 가격 인상 사이클 초입 진입 — 최근 보도 기준 엔비디아향 고사양 제품 중심 공급 부족 가시화, 1Q ASP +8% YoY 기록하며 추가 인상 기대 고조",
+          "en": "MLCC entering early stage of a price hike cycle — supply tightness centering on high-spec AI server products (per recent analyst reports), with Q1 ASP already up +8% YoY and further price increases widely anticipated"
+        },
+        {
+          "ko": "MLCC·FC-BGA·실리콘 커패시터를 동시 보유한 글로벌 유일 포트폴리오 — KB증권 등 다수 증권사가 AI 인프라 IT부품 최선호주로 지목하며 목표주가 대폭 상향",
+          "en": "Globally unique portfolio spanning MLCC, FC-BGA, and silicon capacitors simultaneously — multiple brokerages including KB Securities have designated the stock as their top pick in IT components and have sharply raised price targets in recognition of this AI-infrastructure edge"
         }
       ],
       "business": {
-        "ko": "삼성전기는 1973년 설립된 전자부품 전문 기업으로, ①컴포넌트 솔루션(MLCC 중심 수동소자), ②광학통신 솔루션(카메라 모듈), ③패키지 솔루션(FC-BGA 반도체 기판) 3개 사업부로 구성된다. MLCC 글로벌 시장점유율 2위로 삼성전자·애플·엔비디아 생태계 등 주요 빅테크에 제품을 납품하며, 국내 수원·세종·부산과 중국·필리핀·베트남 등 글로벌 생산 거점을 운영한다. FC-BGA 분야에서는 2022년 국내 최초로 서버용 제품 양산에 성공했으며, 서버·AI·전장·네트워크 등 고부가 FC-BGA 비중을 2026년까지 50% 이상으로 확대한다는 중장기 목표를 추진 중이다. 중장기 신사업으로는 실리콘 캐패시터, 글라스 기판(Glass Core), 로봇 부품 등을 육성하고 있으며, 특히 실리콘 캐패시터는 2026년 5월 대규모 공급 계약 체결을 통해 AI 서버 밸류체인 내 존재감을 확인했다.",
-        "en": "Samsung Electro-Mechanics, founded in 1973, operates three core segments: (1) Component Solutions centered on MLCC passive components, (2) Optical Communication Solutions focused on camera modules, and (3) Package Solutions anchored by FC-BGA semiconductor substrates. Ranked second globally in MLCC market share, the company supplies key Big Tech customers including Samsung Electronics, Apple, and the Nvidia ecosystem, with manufacturing footprints in Suwon, Sejong, Busan, and overseas sites in China, the Philippines, and Vietnam. In the FC-BGA segment, the company became the first Korean manufacturer to achieve mass production of server-grade substrates in 2022, targeting a 50%-plus share of high-value FC-BGA products by 2026. On the new-business front, silicon capacitors, glass-core substrates, and robotics components are being cultivated as next-generation growth pillars, with the silicon capacitor business notably securing its first large-scale supply contract in May 2026."
+        "ko": "삼성전기의 사업 부문은 ①컴포넌트(MLCC 중심 수동소자), ②패키지솔루션(반도체 패키지 기판), ③광학솔루션(카메라 모듈)의 세 축으로 구성된다. 2026년 1분기 기준 컴포넌트 부문 매출은 약 1조 4,085억원(전사 매출의 약 44%)으로 MLCC가 회사의 핵심 캐시카우이자 기술 경쟁력의 원천이며, MLCC Non-IT(전장·AI 서버) 비중이 꾸준히 상승세를 보이고 있어 사이클 의존도가 구조적으로 낮아지고 있다. 패키지솔루션 부문은 1분기 약 7,250억원(전사의 약 23%)으로, AI 가속기·서버 CPU·네트워크용 고부가 FC-BGA 중심으로 비중이 빠르게 높아지고 있으며, 최근 보도에 따르면 2026년 FC-BGA 매출에서 서버 비중이 36%에 달할 것으로 전망된다. 광학솔루션 부문은 1분기 약 1조 756억원(전사의 약 34%)으로, 2억 화소 카메라 모듈·슬림 폴디드줌 등 프리미엄 제품과 전장용 글로벌 EV 향 공급 확대, 휴머노이드 로봇용 부품이 신규 성장축으로 부상하고 있다. 경쟁 구도를 보면, MLCC 글로벌 1위는 일본 무라타제작소이며 삼성전기는 TDK·야교 등과 함께 2~3위권이나, AI 서버·전장용 고사양 제품에서는 기술 선도업체로 평가받는다. FC-BGA에서는 일본 이비덴·신코전기공업이 글로벌 시장을 주도하는 가운데, 삼성전기는 국내 1위이자 AMD·엔비디아·빅테크 ASIC향 주요 글로벌 공급사 지위를 확보하고 있다. 최근 보도에 따르면 삼성전기는 베트남·국내 공장 증설을 통해 FC-BGA 생산능력을 두 배로 늘리는 계획을 추진 중이며, 동시에 2027년 하반기부터 유리 기판(Glass Substrate) 양산에도 진입할 예정이다. 실리콘 커패시터는 AI 서버용 GPU·HBM 패키지 내부의 전력 안정화 핵심 부품으로, 소수 기업 중심의 높은 기술 장벽을 가진 시장이며, 삼성전기는 MLCC 초미세 공정 역량을 바탕으로 이 시장 진입에 성공했다. 이처럼 삼성전기는 단일 제품 의존도를 낮추고 AI·전장·로봇 등 고성장 시장으로의 포트폴리오 다변화를 본격화하며 AI 인프라 토털 솔루션 공급사로의 전환을 가속화하고 있다.",
+        "en": "Samsung Electro-Mechanics operates across three core divisions: ① Component (primarily MLCC passive components), ② Package Solutions (semiconductor package substrates), and ③ Optical Solutions (camera modules). In Q1 2026, the Component segment generated approximately KRW 1.4085 trillion in revenue (roughly 44% of total), with MLCC serving as the company's primary cash cow and competitive moat, and the share of Non-IT MLCC (automotive and AI server) steadily rising to reduce structural cyclicality. The Package Solutions segment recorded approximately KRW 725.0 billion in Q1 (roughly 23% of total), with its share rising rapidly on AI accelerator, server CPU, and high-end network-grade FC-BGA demand; per recent reports, the server segment is expected to account for 36% of FC-BGA revenue in 2026. The Optical Solutions segment contributed approximately KRW 1.0756 trillion in Q1 (roughly 34%), driven by premium 200-megapixel modules, slim folded-zoom designs, expanded supply to global EV manufacturers, and an emerging presence in humanoid robot components. In MLCC, Japan's Murata Manufacturing holds the global #1 position, with Samsung Electro-Mechanics ranking alongside TDK and Yageo in the second-to-third tier globally — but regarded as a leading technical player in high-specification AI server and automotive grades. In FC-BGA, Japan's Ibiden and Shinko Electric dominate globally, while Samsung Electro-Mechanics leads the domestic Korean market and serves major AI infrastructure customers including AMD, NVIDIA, and big-tech ASIC clients. Per recent news, the company is pursuing plans to double FC-BGA production capacity through Vietnam and domestic factory expansions, while also preparing to enter glass substrate mass production in H2 2027. Silicon capacitors — ultra-compact, high-performance components for power stabilization inside AI server GPU and HBM packages — represent a high-barrier, oligopolistic market that Samsung Electro-Mechanics has successfully entered by leveraging its ultra-fine MLCC process expertise. Taken together, Samsung Electro-Mechanics is accelerating its portfolio transformation from a single-product cyclical parts maker into a total-solution AI infrastructure provider spanning MLCC, FC-BGA, silicon capacitors, camera modules, and emerging next-generation platforms."
       },
       "recent": {
-        "ko": "DART 공시 기준 2025년 연간 매출은 11.3조 원(+9.9%), 영업이익 9,133억 원(+24.3%), 당기순이익 7,310억 원(+3.9%)을 기록했다. 2026년 1분기에는 창사 최초로 분기 매출 3조 원 벽을 돌파(3조 2,091억 원, +17.2%)했으며, 영업이익 2,806억 원(+39.9%)은 714억 원의 일회성 비용을 포함한 수치로 이를 제외하면 실질 이익 규모는 더 크다. 주가는 2026년 연초 이후 급격히 상승해 5월 중순 100만 원대, 5월 하순 이후 200만 원 돌파 국면까지 진입하며 연간 기준 수백 퍼센트 상승률을 기록했고, 2026년 6월 2일에는 전일대비 -9.58%를 기록하며 차익 실현 및 단기 변동성이 부각되는 모습이다.",
-        "en": "Per DART-confirmed filings, full-year 2025 revenue reached KRW 11.3 trillion (+9.9% YoY), operating profit KRW 913.3 billion (+24.3%), and net income KRW 731.0 billion (+3.9%). In Q1 2026, the company crossed the KRW 3 trillion quarterly revenue threshold for the first time in its history (KRW 3.2091 trillion, +17.2%), while the reported operating profit of KRW 280.6 billion (+39.9%) already absorbed KRW 71.4 billion in one-time costs, implying underlying earnings momentum was even stronger. The share price surged dramatically through 2026, crossing the KRW 2 million level by late May, before pulling back sharply by -9.58% on June 2, reflecting profit-taking and short-term volatility after an extraordinary YTD rally."
+        "ko": "DART 공시 확정 재무에 따르면, 삼성전기의 2025년 연간 연결 매출은 11.3조원(전기대비 +9.9%), 영업이익 9,133억원(+24.3%), 당기순이익 7,310억원(+3.9%)으로, 매출 성장 대비 영업이익 성장이 두드러진 레버리지 개선이 나타났다. 2026년 1분기(DART 공시 확정)에는 매출 3조 2,091억원(+17.2% YoY)으로 창사 최초 분기 3조원 돌파를 달성하였고, 영업이익은 2,806억원(+39.9%), 당기순이익은 2,527억원(+78.4%)을 기록했다. 최근 보도에 따르면, 동 분기에는 714억원 규모의 일회성 비용이 반영되었음에도 불구하고 영업이익이 시장 기대치를 상회했으며, 일회성 비용을 제거한 실질 수익력은 더욱 높은 수준으로 분석된다. 부문별로는 컴포넌트(MLCC) 1조 4,085억원(+16% YoY), 패키지솔루션(반도체 기판) 7,250억원(+45% YoY), 광학솔루션 1조 756억원(+5% YoY)을 기록했으며, 패키지솔루션의 전사 영업이익 기여 비중이 전년 동기 11%에서 20%로 크게 확대되었다. 최근 보도에 따르면, 반도체 기판 ASP는 전년 동기 대비 14%, MLCC ASP는 8%, 카메라 모듈 ASP는 2% 각각 상승했으며, 생산실적도 기판 +26%, MLCC +12% 증가하여 물량·가격 동시 호조가 확인된다. 주가 측면에서는 2026년 1월 이후 AI 수혜 기대감이 폭발적으로 반영되며 급등을 거듭했고, 최근 보도에 따르면 5월 29일에는 장중 212만원 부근의 52주 신고가를 경신하며 시가총액이 코스피 4위(현대차 추월)로 올라서는 극적 장면이 연출되었다. 그러나 2026년 6월 3일 기준 현재가는 1,813,000원(전일대비 -9.58%)으로, 신고가 대비 약 15% 내외의 단기 조정이 진행 중이다. 시가총액은 135.4조원, 당일 거래대금은 3.5조원으로 시장의 높은 관심이 지속되고 있으며, 이날의 급락은 고점 인근의 차익 실현 매물 출회와 글로벌 매크로 불확실성이 맞물린 결과로 분석된다.",
+        "en": "Per DART-confirmed consolidated financials, Samsung Electro-Mechanics reported 2025 full-year revenue of KRW 11.3 trillion (+9.9% YoY), operating profit of KRW 913.3 billion (+24.3% YoY), and net income of KRW 731.0 billion (+3.9% YoY), with operating profit growth substantially outpacing revenue growth to reflect clear operating leverage improvement. In Q1 2026 (DART confirmed), the company surpassed KRW 3 trillion in quarterly revenue for the first time in its history at KRW 3.2091 trillion (+17.2% YoY), while operating profit reached KRW 280.6 billion (+39.9% YoY) and net income surged to KRW 252.7 billion (+78.4% YoY). Per recent reports, these results were achieved despite the absorption of approximately KRW 71.4 billion in one-time charges, suggesting underlying operating earnings power was even stronger than the reported headline figures. By segment, Component (MLCC) came in at KRW 1.4085 trillion (+16% YoY), Package Solutions (substrates) at KRW 725.0 billion (+45% YoY), and Optical Solutions at KRW 1.0756 trillion (+5% YoY); notably, Package Solutions' contribution to total operating profit expanded from 11% to 20% year-over-year. According to recent filings and reports, average selling prices rose year-over-year by 14% for substrates, 8% for MLCC, and 2% for camera modules in Q1, while production volumes increased 26% for substrates and 12% for MLCC — confirming simultaneous volume and price tailwinds. On the equity side, the stock's parabolic rally continued through late May 2026, with recent reports indicating shares hit a 52-week high of approximately KRW 2,126,000 on May 29, briefly catapulting Samsung Electro-Mechanics above Hyundai Motor to become the 4th-largest company on the KOSPI by market cap. As of June 3, 2026, the stock trades at KRW 1,813,000 (-9.58% from the prior session), representing a roughly 15% pullback from the recent high, with market cap at KRW 135.4 trillion and daily trading turnover of KRW 3.5 trillion. The sharp single-day correction is interpreted as profit-taking following an extremely compressed rally combined with elevated global macro uncertainties."
       },
       "outlook": {
-        "ko": "AI 데이터센터 투자 확대와 전장화 가속에 힘입어 하반기에도 MLCC 및 FC-BGA 수급 타이트화가 지속될 전망이며, 가격 인상 사이클이 본격화될 경우 수익성이 추가로 확대될 여지가 있다. 2026년 CAPEX는 전년 대비 2배 이상 증가가 예상되며, 베트남 FC-BGA 신공장과 세종·부산 생산라인 증설이 중장기 캐파 확보의 핵심 축이다. 실리콘 캐패시터 공급(2027~2028년)과 글라스 기판(2027년 이후 양산 목표)이 중장기 성장 모멘텀을 추가로 뒷받침할 전망이나, 대규모 설비 투자에 따른 감가상각 부담 증가와 AI 투자 사이클 변동성은 모니터링이 필요한 변수다.",
-        "en": "Sustained tightness in MLCC and FC-BGA supply-demand dynamics, driven by continued AI data center build-out and accelerating automotive electrification, is expected through the second half of 2026, with the potential for meaningful margin expansion if the MLCC price-hike cycle gains traction. Capital expenditure is projected to more than double year-on-year in 2026, with the Vietnam FC-BGA greenfield facility and domestic line additions in Sejong and Busan serving as the cornerstones of longer-term capacity. Silicon capacitor supply beginning in 2027–2028 and glass-core substrate commercialization targeted for post-2027 provide additional medium-term growth levers, though rising depreciation from aggressive CAPEX and potential volatility in the AI investment cycle warrant ongoing monitoring."
+        "ko": "삼성전기는 2026년 2분기 이후 AI 서버·네트워크·전장 수요 강세가 지속되는 가운데 MLCC와 FC-BGA의 타이트한 수급 심화, 추가 가격 인상, 장기공급계약 확대 효과가 하반기에 더 큰 폭의 실적 성장으로 이어질 것으로 전망하고 있다. 최근 보도에 따르면, KB증권은 2분기 영업이익을 전년 동기 대비 91% 증가한 약 4,073억원으로 추정하고 있으며, 다수 증권사가 2026년 연간 영업이익을 1.4조~1.6조원 수준으로 전망하고 있다. 2027년부터는 FC-BGA 생산능력 두 배 확대(베트남·국내 증설) 효과, 유리 기판 양산 개시, 실리콘 커패시터 1.5조원 계약의 본격 매출 인식이 동시에 가동되며 중기 성장 모멘텀이 강화될 것으로 예상된다. 시장조사업체 프리스마크에 따르면 FC-BGA는 2025~2030년 연평균 15% 이상의 성장이 전망되는 고성장 품목이며, 이는 삼성전기의 생산능력 확장 투자 논리를 뒷받침한다. 2026년 하반기부터는 휴머노이드 로봇용 부품 양산 개시도 예정되어 있어 AI·로봇 공급망으로의 외연 확장이 가속화될 전망이다. 다만, 급격한 주가 상승에 따른 높은 기대치 선반영, 대형 Capex 집행에 따른 단기 자유현금흐름(FCF) 압박, 글로벌 매크로 불확실성은 하방 리스크로 지속 모니터링이 필요하다.",
+        "en": "Samsung Electro-Mechanics expects continued strength in AI server, network, and automotive demand through Q2 2026 and beyond, with tightening supply conditions for both MLCC and FC-BGA expected to drive further ASP increases, expanded long-term agreements, and meaningfully larger earnings growth in the second half of the year. Per recent analyst reports, KB Securities estimates Q2 2026 operating profit at approximately KRW 407.3 billion (+91% YoY), with multiple brokerages projecting full-year 2026 operating profit in the range of KRW 1.4–1.6 trillion. Looking into 2027, a convergence of structural growth catalysts is anticipated: the doubling of FC-BGA production capacity from Vietnam and domestic expansions, the commencement of glass substrate mass production, and the start of revenue recognition under the KRW 1.5 trillion silicon capacitor supply contract. According to market research firm Prismark, FC-BGA is forecast to grow at an annual compound rate of 15%+ from 2025 to 2030, underpinning the investment rationale behind Samsung Electro-Mechanics' capacity expansion plans. From H2 2026, humanoid robot component mass production is also slated to begin, broadening the company's footprint in the AI and robotics supply chain. Key near-term downside risks to monitor include the degree to which elevated consensus expectations are already priced in, free cash flow pressure from the ongoing large-scale capex cycle, and global macroeconomic uncertainty that could affect customer investment pacing."
       },
       "bull": [
         {
           "title": {
-            "ko": "AI 수요 구조적 성장 — MLCC·FC-BGA 이중 수혜",
-            "en": "Structural AI Demand — Dual Beneficiary in MLCC and FC-BGA"
+            "ko": "MLCC·FC-BGA 동시 가격 인상 사이클 — AI 공급망 최대 병목 부품사",
+            "en": "Simultaneous MLCC & FC-BGA Price Hike Cycle — Bottleneck Beneficiary in AI Supply Chain"
           },
           "body": {
-            "ko": "AI 서버 1대에 수만 개의 MLCC가 소요되는 반면 스마트폰은 약 1,000개 수준에 불과해, AI 인프라 투자 확대는 단순한 출하 증가를 넘어 ASP·수익성의 구조적 개선을 의미한다. FC-BGA 역시 AI 반도체 고도화에 따라 기판 면적과 층수가 빠르게 확대되고 있어 단위당 부가가치가 상승하는 추세다. MLCC와 FC-BGA를 동시에 보유한 글로벌 유일의 포트폴리오라는 점에서 차별적 경쟁우위가 인정된다.",
-            "en": "AI servers require tens of thousands of MLCC units versus roughly 1,000 for smartphones, meaning the AI infrastructure capex wave translates into structural ASP and margin improvement beyond mere volume gains. FC-BGA substrate area and layer counts are also rapidly expanding as AI chip complexity grows, driving higher value-add per unit. Samsung Electro-Mechanics' status as the only global company simultaneously supplying both MLCC and FC-BGA underpins a differentiated competitive moat."
+            "ko": "최근 보도에 따르면, MLCC와 FC-BGA는 AI 공급망에서 가장 병목이 심한 부품으로 지목되고 있으며, 고객사들의 선제적 물량 확보 움직임이 가격 인상을 가속화하고 있다. 삼성전기는 이미 2026년 1분기에 MLCC ASP +8%, FC-BGA ASP +14%를 기록하였으며, 2분기 이후 추가 가격 인상이 예상된다. MLCC와 FC-BGA를 동시에 최상위 역량으로 보유한 글로벌 유일의 포트폴리오를 갖춘 삼성전기는 AI 인프라 투자 사이클이 지속되는 한 구조적 수혜가 이어지는 포지셔닝이다.",
+            "en": "Per recent industry reports, MLCC and FC-BGA are identified as the most acutely constrained bottleneck components in the AI supply chain, with customers proactively securing inventory and thereby accelerating price hikes across the board. Samsung Electro-Mechanics already recorded MLCC ASP +8% and FC-BGA ASP +14% year-over-year in Q1 2026, with additional price increases expected from Q2 onward. As the only global company simultaneously holding top-tier capabilities in both MLCC and FC-BGA, Samsung Electro-Mechanics is structurally positioned to benefit as long as AI infrastructure investment cycles remain intact."
           }
         },
         {
           "title": {
-            "ko": "MLCC 가격 인상 사이클 진입 및 수급 타이트",
-            "en": "MLCC Price-Hike Cycle Onset Amid Tight Supply"
+            "ko": "실리콘 커패시터 첫 대형 수주 — 차세대 고ROIC 신성장 동력 가시화",
+            "en": "First Major Silicon Capacitor Contract — Next-Generation High-ROIC Growth Driver Crystallizes"
           },
           "body": {
-            "ko": "2026년 보도에 따르면 MLCC 가동률이 90~95%에 근접한 가운데, 업계 1위 무라타도 가격 협상 국면 진입을 시사했다. AI 서버용 MLCC 시장은 2026년에도 20% 이상 성장이 예상되는 반면 증설 효과는 제한적이어서 과점 공급자인 삼성전기의 가격 결정력이 강화될 여지가 크다. 과거 2018년 MLCC 슈퍼 사이클 당시 해당 사업부 영업이익률이 40%를 넘었다는 점은 이번 사이클의 수익성 잠재력을 가늠케 한다.",
-            "en": "Recent reports indicate MLCC factory utilization is approaching 90–95%, and leading global player Murata has signaled entry into price negotiation mode. With AI server MLCC demand expected to grow 20%-plus in 2026 while capacity additions remain constrained, Samsung Electro-Mechanics' position as a duopoly supplier gives it meaningful pricing power. Notably, the MLCC division's operating margin exceeded 40% during the 2018 super-cycle, illustrating the profitability potential of the current upcycle."
+            "ko": "2026년 5월, 삼성전기는 글로벌 대형 기업과 2027~2028년간 약 1조 5,000억원 규모의 실리콘 커패시터 공급 계약을 체결하며 AI 신사업의 첫 대형 상업적 성과를 기록했다. 실리콘 커패시터는 팹리스 사업 모델로, 대규모 설비투자 없이 파운드리 발주 확대만으로 수요에 대응할 수 있어 기존 MLCC·FC-BGA 대비 구조적으로 높은 자본수익률(ROIC)이 기대된다. 최근 보도에 따르면, 업계는 실리콘 커패시터 시장이 높은 기술 장벽과 소수 공급자 구조로 형성되어 있어 삼성전기의 초미세 공정 역량이 강력한 진입 장벽으로 작용한다고 평가하고 있다.",
+            "en": "In May 2026, Samsung Electro-Mechanics secured a landmark approximately KRW 1.5 trillion silicon capacitor supply contract (2027–2028) with a global technology giant, marking the company's first large-scale commercial milestone in its AI power-stabilization components business. The silicon capacitor division operates on a fabless model, enabling flexible demand response through expanded foundry outsourcing without significant direct capital expenditure, which is expected to generate structurally superior returns on invested capital relative to the legacy MLCC and FC-BGA businesses. Per recent industry analysis, the silicon capacitor market is characterized by high technology barriers and an oligopolistic supply structure, meaning Samsung Electro-Mechanics' ultra-fine process expertise constitutes a formidable competitive moat in this nascent but high-growth segment."
           }
         },
         {
           "title": {
-            "ko": "실리콘 캐패시터 수주로 'AI 토털 솔루션' 지위 공고화",
-            "en": "Silicon Capacitor Win Solidifies 'AI Total Solution' Positioning"
+            "ko": "전장·AI·로봇으로의 포트폴리오 다변화 — 스마트폰 주기 의존도 구조적 탈피",
+            "en": "Portfolio Diversification into Automotive, AI, and Robotics — Structural Decoupling from Smartphone Cycle"
           },
           "body": {
-            "ko": "2026년 5월 삼성전기는 글로벌 대형 기업과 약 1.55조 원 규모의 실리콘 캐패시터 2년 공급 계약을 체결했다. 이 제품은 AI GPU와 HBM 패키지 내에서 전력 공급을 안정화하는 차세대 부품으로, 기술 장벽이 높아 소수 기업이 과점하는 시장이다. MLCC·FC-BGA·실리콘 캐패시터를 통합 공급하는 '턴키 솔루션' 역량이 강화되면서 고객사의 공급망 단순화 수요와 맞물려 수주 확대와 프리미엄 가격 책정의 선순환이 기대된다.",
-            "en": "In May 2026, Samsung Electro-Mechanics signed an approximately KRW 1.55 trillion, two-year silicon capacitor supply agreement with a global major client. Silicon capacitors stabilize power delivery inside AI GPU and HBM packages and represent a high-barrier, oligopolistic market. The company's ability to provide an integrated turnkey solution covering MLCC, FC-BGA, and silicon capacitors aligns with customers' supply-chain simplification needs, potentially enabling a virtuous cycle of order wins and premium pricing."
+            "ko": "삼성전기는 과거 IT 세트·스마트폰 중심 사업 구조에서 벗어나 전장용 MLCC·카메라 모듈, AI 서버향 FC-BGA·MLCC, 휴머노이드 로봇용 부품으로 응용처를 빠르게 다변화하며 사이클 변동성 완충 역량을 높이고 있다. 최근 보도에 따르면, 자율주행 시스템은 기존 차량 대비 카메라 탑재량이 크게 증가하는 구조로 중장기 수요 성장성이 높으며, 삼성전기는 북미 완성차 고객 대응을 위한 멕시코 공장 증설을 추진하고 있는 것으로 전해진다. MLCC Non-IT 비중의 꾸준한 상승은 IT 업황 사이클에 대한 실적 민감도를 구조적으로 낮추는 핵심 요인으로 작용하고 있다.",
+            "en": "Samsung Electro-Mechanics is rapidly diversifying away from its historical dependence on IT and smartphone end-markets by expanding into automotive-grade MLCC and camera modules, AI server-grade FC-BGA and MLCC, and humanoid robot components, thereby structurally reducing earnings cyclicality. Per recent reports, autonomous driving systems require significantly more cameras per vehicle than conventional automobiles, providing strong long-term demand visibility in automotive optics, and the company is reportedly pursuing manufacturing capacity expansion in Mexico to serve North American OEM customers. The steady increase in Non-IT MLCC share represents a structural shift that reduces the company's sensitivity to the consumer IT demand cycle and enhances earnings quality."
           }
         }
       ],
       "bear": [
         {
           "title": {
-            "ko": "가파른 주가 상승에 따른 밸류에이션 부담",
-            "en": "Valuation Overhang Following Extraordinary Share Price Surge"
+            "ko": "급등 후 높아진 밸류에이션과 단기 변동성 확대",
+            "en": "Elevated Valuation Following Parabolic Rally and Heightened Near-Term Volatility"
           },
           "body": {
-            "ko": "2026년 연초 이후 주가가 수백 퍼센트 급등하며 증권사들이 목표주가를 잇따라 상향(최근 보도 기준 최저 1.79만 원에서 최대 2.3만 원 수준)하는 상황에서도 추가 상승 여력에 대한 논쟁이 불가피하다. 2026년 6월 2일 현재가 1,813,000원 기준 135.4조 원의 시가총액은 실적 개선의 상당 부분이 이미 주가에 반영되었을 가능성을 시사한다. 단기 차익 실현 매물과 변동성 확대 국면에서 투자심리가 빠르게 바뀔 수 있다는 점은 유의가 필요하다.",
-            "en": "Following a multi-hundred-percent YTD rally, the market cap of KRW 135.4 trillion at the current price of KRW 1,813,000 (as of June 2, 2026) raises questions about how much of the earnings improvement cycle is already priced in. While securities firms have raised targets to a range reportedly from KRW 1.79 million to KRW 2.3 million, the stock's sharp -9.58% decline on June 2 highlights the risk that profit-taking and sentiment shifts can rapidly compress multiples."
+            "ko": "삼성전기의 주가는 2026년 연초 대비 수배 급등한 후 6월 3일 기준 1,813,000원(전일대비 -9.58%)에 거래되며 시가총액 135.4조원을 형성하고 있어, 과거 실적 대비 높은 프리미엄 멀티플이 내재된 상황이다. 단기간의 급등은 향후 실적 개선 기대치를 상당 부분 이미 선반영하였을 가능성이 높으며, MLCC 가격 인상 속도 둔화나 2분기 실적 기대 미달 시 밸류에이션 재조정이 빠르게 진행될 수 있다. 6월 3일 하루에만 -9.58% 급락한 사실은 이러한 단기 변동성 위험을 직접적으로 시사한다.",
+            "en": "Samsung Electro-Mechanics' stock surged multifold from early 2026 before pulling back to KRW 1,813,000 (-9.58% day-on-day) as of June 3, implying a market cap of KRW 135.4 trillion that embeds a substantial premium multiple relative to historical earnings. Such a parabolic move likely already reflects a significant portion of forward earnings improvement expectations, making the stock vulnerable to rapid valuation de-rating should MLCC price hike velocity decelerate or Q2 results fall short of elevated consensus estimates. The -9.58% single-session correction on June 3 is direct evidence of the heightened short-term volatility risk embedded in the current share price."
           }
         },
         {
           "title": {
-            "ko": "대규모 CAPEX 확대에 따른 재무 부담 및 실행 리스크",
-            "en": "Financial Burden and Execution Risk From Aggressive CAPEX Ramp"
+            "ko": "일본 선두 경쟁사의 공격적 증설 및 중국 업체의 범용 시장 잠식",
+            "en": "Aggressive Capacity Ramp by Japanese Leaders and Chinese Encroachment on Commodity Segments"
           },
           "body": {
-            "ko": "2026년 CAPEX는 전년 대비 2배 이상 증가가 예상되며, 향후 3년간 투자 규모도 큰 폭으로 확대될 전망이다. 베트남 FC-BGA 신공장 및 세종·부산 생산라인 증설에 따른 감가상각비 부담이 단기 이익률을 압박할 수 있다. 증설 사이클과 수요 사이클의 타이밍 미스매치가 발생할 경우, 과거 MLCC 하락 사이클과 같이 설비 과잉에 따른 수익성 급락 위험이 존재한다.",
-            "en": "CAPEX in 2026 is expected to more than double year-on-year, with investment scales projected to increase substantially over the following three years. The resulting depreciation ramp from Vietnam FC-BGA greenfield construction and domestic line additions could weigh on near-term operating margins. Should a timing mismatch emerge between capacity additions and demand cycles — as seen in past MLCC downturns — the risk of profitability compression from overcapacity cannot be ruled out."
+            "ko": "최근 보도에 따르면, MLCC 글로벌 1위 무라타제작소는 2026회계연도 매출을 전년 대비 7% 성장으로 전망하며 AI·전장 대응 역량을 강화 중이고, FC-BGA 1위 이비덴은 같은 기간 영업이익이 45% 급증할 것으로 전망되는 등 일본 경쟁사들의 설비 투자와 시장 대응이 가속화되고 있다. 중국 로컬 MLCC 업체들은 범용 제품을 중심으로 가격 경쟁을 심화시키고 있어, 중저가 MLCC 부문에서의 마진 압박이 지속될 수 있다. 고사양 AI·전장 제품과 범용 제품 간 수익성 격차가 기대보다 빠르게 좁혀질 경우 전사 영업이익률 개선 속도가 하회할 위험이 있다.",
+            "en": "Per recent reports, Murata Manufacturing (global MLCC #1) is projecting 7% revenue growth in FY2026 while accelerating AI and automotive capacity investments, while Ibiden (FC-BGA #1) forecasts a 45% surge in operating profit in FY2026, indicating that Japanese rivals are investing aggressively to defend and expand their leading positions. Chinese domestic MLCC producers continue to intensify price competition in commodity-grade segments, posing an ongoing margin pressure risk in lower-specification MLCC. If the profitability spread between high-specification AI/automotive products and commodity grades narrows faster than expected, the pace of overall operating margin expansion at Samsung Electro-Mechanics could fall short of market expectations."
           }
         },
         {
           "title": {
-            "ko": "IT 세트 수요 약세 및 중저가 MLCC 양극화",
-            "en": "Weak Consumer IT Demand and MLCC Market Polarization"
+            "ko": "대형 Capex 사이클에 따른 현금흐름 부담 및 감가상각 증가",
+            "en": "Free Cash Flow Pressure and Rising Depreciation from Major Capex Cycle"
           },
           "body": {
-            "ko": "최근 보도에 따르면 미국 관세 부과에 따른 원자재 가격 상승과 계절적 요인으로 가전·PC 등 IT 디바이스용 MLCC 수요는 위축되고 있으며, AI 고부가품과 중저가 제품 간 수급 양극화가 심화되는 양상이다. 광학솔루션(카메라 모듈) 부문은 AI 수혜가 상대적으로 제한적이어서 전사 수익성 개선폭을 다소 희석시킬 수 있다. 주요 고객인 삼성전자 의존도가 높은 매출 구조 역시 거래처 집중 리스크로 작용한다.",
-            "en": "Recent reports indicate that consumer electronics and PC MLCC demand has weakened due to rising raw material costs from U.S. tariffs and seasonal factors, intensifying a polarization between AI-grade high-value and mass-market MLCC products. The Optical Solutions segment (camera modules) benefits less directly from AI tailwinds, potentially diluting overall margin improvement. Heavy revenue concentration toward Samsung Electronics as a key customer also represents ongoing counterparty concentration risk."
+            "ko": "FC-BGA 생산능력 두 배 확대(베트남·국내 증설)와 유리 기판 양산 투자, 실리콘 커패시터 파운드리 위탁 확대가 동시에 진행되면서 수년간의 대형 투자 사이클에 따른 자유현금흐름(FCF) 부담이 커질 전망이다. 설비 증설에 따른 감가상각비 증가는 중단기적으로 영업이익률 개선 속도를 제약하는 요인으로 작용하며, 실제로 1분기 원재료 매입액이 전년 동기 대비 23% 급증하는 등 비용 상승 압력도 가시화되고 있다. 수요 둔화나 고객사 주문 취소 시 가동률 하락과 함께 고정비 부담이 급격히 확대될 수 있어, 고Capex 고성장 사이클의 이면에 내재된 하방 위험으로 모니터링이 필요하다.",
+            "en": "The simultaneous pursuit of FC-BGA capacity doubling (Vietnam and domestic), glass substrate production investment, and expanded silicon capacitor fabless outsourcing creates a multi-year capital expenditure cycle that will pressure free cash flow for the foreseeable future. Rising depreciation from facility expansions structurally caps the pace of operating margin improvement in the medium term; the 23% year-over-year surge in raw material procurement costs in Q1 2026 also illustrates the underlying cost inflation pressure. Any unexpected deceleration in customer demand or order cancellations could trigger rapid operating leverage reversal under the high fixed-cost structure associated with large-scale capex-intensive manufacturing, representing a key downside risk embedded in the high-growth, high-investment cycle."
           }
         }
       ],
       "risks": [
         {
           "cat": {
-            "ko": "거시 및 무역 리스크",
-            "en": "Macro and Trade Risk"
+            "ko": "거시·통상 리스크",
+            "en": "Macro & Trade Policy Risk"
           },
           "body": {
-            "ko": "미국의 관세 정책 변화와 글로벌 경기 둔화는 IT 전방 수요를 억제해 MLCC·카메라 모듈 사업부의 물량과 가격에 부정적 영향을 줄 수 있다. 원자재(금, 구리, T-glass 등) 가격 상승도 원가 부담을 높이는 변수다.",
-            "en": "Changes in U.S. tariff policy and a global economic slowdown could suppress downstream IT demand, negatively impacting MLCC and camera module volumes and pricing. Rising input costs — including gold, copper, and T-glass — also pose upward pressure on cost of goods sold."
+            "ko": "미·중 무역 갈등의 재심화와 미국의 전자·반도체 부품에 대한 관세 강화 움직임은 삼성전기가 납품하는 글로벌 빅테크 고객사들의 Capex 집행을 지연시킬 수 있다. 글로벌 경기 침체 우려가 현실화될 경우 IT·전장 전반의 수요 둔화로 MLCC와 FC-BGA의 가격 인상 사이클이 조기 종료될 가능성도 존재한다. 원/달러 환율의 급등락 역시 원재료 수입 비용과 수출 매출 간 손익에 직접 영향을 미치며, 당사의 글로벌 생산 네트워크(베트남·멕시코·중국 등)에 대한 지정학적 리스크도 고려해야 한다.",
+            "en": "Escalating US-China trade tensions and potential tariff actions targeting electronics and semiconductor components could delay capital expenditure pacing at Samsung Electro-Mechanics' key global technology customers. If global macroeconomic conditions deteriorate materially, broad-based demand weakness across IT and automotive markets could prematurely truncate the ongoing MLCC and FC-BGA price hike cycles. Sharp KRW/USD exchange rate swings directly affect the net economics between imported raw material costs and export revenues, while geopolitical risks affecting the company's global manufacturing network spanning Vietnam, Mexico, and China also warrant close monitoring."
           }
         },
         {
           "cat": {
-            "ko": "경쟁 및 기술 리스크",
-            "en": "Competitive and Technology Risk"
+            "ko": "기술 전환·경쟁 리스크",
+            "en": "Technology Disruption & Competition Risk"
           },
           "body": {
-            "ko": "MLCC 글로벌 1위 무라타를 비롯한 일본 경쟁사와의 기술 격차 유지가 핵심이며, FC-BGA 시장에서 LG이노텍 등 국내외 경쟁사의 캐파 확장도 중장기적 가격 압력 요인이다. 글라스 기판 등 차세대 기술에서 선행 업체에 뒤처질 경우 시장 선점 기회를 놓칠 수 있다.",
-            "en": "Maintaining a technology gap versus Murata and other Japanese MLCC peers is critical, while growing FC-BGA capacity additions from domestic competitors such as LG Innotek could introduce medium-term pricing pressure. Falling behind in next-generation technologies such as glass-core substrates could risk losing first-mover advantages in emerging high-value markets."
+            "ko": "AI 반도체 패키징 기술은 빠르게 진화하고 있으며, 칩렛 아키텍처 및 HBM 통합 혁신이 가속화될 경우 FC-BGA의 역할이 차세대 기판 기술로 대체될 중장기 리스크가 내재되어 있다. 실리콘 커패시터 시장은 현재 높은 기술 장벽으로 소수 공급자 구조를 유지하고 있으나, 글로벌 반도체 대기업의 내재화 시도나 새로운 공급자 진입이 현실화될 경우 장기 마진 구조가 훼손될 수 있다. 최근 보도에 따르면 유리 기판(Glass Substrate) 양산 타이밍이 경쟁사 대비 지연될 경우 차세대 기판 시장에서의 점유율 확보에 차질이 생길 가능성도 있다.",
+            "en": "AI semiconductor packaging technology is evolving rapidly, and the accelerating adoption of chiplet architectures and HBM integration presents a medium-to-long-term risk that FC-BGA could be displaced by next-generation packaging platforms. The silicon capacitor market currently benefits from high technical barriers and an oligopolistic supply structure, but vertical integration attempts by major global semiconductor companies or new entrant competition could erode long-term pricing power and margin profiles. Per recent reports, if the timing of glass substrate mass production falls behind key competitors, Samsung Electro-Mechanics could face challenges in securing a leading market share position in the next-generation substrate segment that is expected to succeed FC-BGA in the longer term."
           }
         },
         {
           "cat": {
-            "ko": "AI 수요 사이클 리스크",
-            "en": "AI Demand Cycle Risk"
+            "ko": "수요 집중·재고 조정 리스크",
+            "en": "Demand Concentration & Inventory Correction Risk"
           },
           "body": {
-            "ko": "현재 삼성전기의 밸류에이션은 AI 데이터센터 투자 강세가 지속된다는 전제에 상당 부분 의존하고 있어, 글로벌 빅테크의 AI 설비 투자 속도 조절 또는 지연이 발생할 경우 주가 변동성이 크게 확대될 수 있다. 또한 실리콘 캐패시터 공급 시작(2027년)까지 해당 수주가 실적으로 연결되지 않는다는 점도 단기 관점에서 유의해야 한다.",
-            "en": "The company's current valuation is substantially predicated on sustained growth in AI data center investment; any slowdown or delay in Big Tech AI capex could materially amplify share price volatility. Additionally, because the silicon capacitor supply contract does not begin contributing to revenue until 2027, investors should note the gap between the contract announcement and its actual earnings impact."
+            "ko": "삼성전기의 실적은 소수 대형 고객사(삼성전자 포함 글로벌 빅테크)의 Capex 집행과 재고 사이클에 상당 부분 의존하고 있어, 주요 고객의 투자 계획 변경이나 재고 조정이 발생할 경우 매출 변동성이 급격히 확대될 수 있다. AI 서버 투자 사이클이 빅테크 수익성 검토나 규제 환경 변화로 둔화될 경우 FC-BGA와 AI용 MLCC 수요가 예상보다 빠르게 꺾일 수 있다. 과거 반도체·전자부품 업황에서 반복적으로 나타난 '공급 부족→과잉 투자→가격 급락' 패턴이 이번 AI 수요 사이클에서도 재현될 경우, 현재의 고수익성 구조가 훼손될 위험을 배제할 수 없다.",
+            "en": "Samsung Electro-Mechanics' earnings are materially exposed to capital expenditure decisions and inventory cycle adjustments at a concentrated group of key customers — including Samsung Electronics and global AI infrastructure companies — meaning any shifts in investment plans or inventory destocking at major accounts could trigger sharp revenue volatility. A deceleration in AI server investment cycles driven by big-tech profitability reviews or regulatory changes could cause FC-BGA and AI-grade MLCC demand to inflect downward faster than consensus anticipates. The historically recurring 'supply shortage → over-investment → price correction' pattern in semiconductor and electronic components markets remains a structural risk that could undermine the current high-profitability environment if AI demand cycle dynamics shift unexpectedly."
           }
         }
       ],
       "verdict": {
         "stance": {
-          "ko": "중립",
-          "en": "Neutral"
+          "ko": "긍정적",
+          "en": "Constructive"
         },
         "body": {
-          "ko": "삼성전기는 MLCC·FC-BGA·실리콘 캐패시터라는 세 가지 AI 성장 동인을 동시에 보유한 전자부품 업종 최선호주 지위를 확보하고 있으며, 2026년 1분기 창사 최초 분기 매출 3조 원 달성과 대형 수주 공시는 구조적 성장 국면의 증거로 평가된다. 다만 2026년 연초 대비 수백 퍼센트에 달하는 주가 상승으로 상당한 기대치가 이미 반영되어 있고, 6월 2일 -9.58%의 급락은 단기 변동성 확대와 밸류에이션 부담을 환기시키고 있다. 하반기 MLCC 가격 인상의 실적 반영 여부, FC-BGA 신규 캐파 가동률 추이, 그리고 AI 데이터센터 투자의 지속성이 향후 주가 방향성을 결정할 핵심 모니터링 포인트로 판단된다. 본 의견은 정보 제공 목적이며 투자 권유가 아니다.",
-          "en": "Samsung Electro-Mechanics holds a leading position among electronic component peers by simultaneously leveraging three AI growth engines — MLCC, FC-BGA, and silicon capacitors — and Q1 2026's historic revenue milestone combined with the high-profile supply contract reinforces the case for a structural growth phase. However, the stock's extraordinary YTD advance has already embedded significant positive expectations, and the sharp -9.58% decline on June 2 is a reminder of the elevated valuation risk and near-term volatility. Key monitoring variables include the extent to which MLCC price increases materialize in actual earnings during H2 2026, the ramp of new FC-BGA capacity utilization, and the durability of global AI infrastructure investment. This assessment is provided for informational purposes and does not constitute investment advice."
+          "ko": "삼성전기는 MLCC 가격 인상 사이클 진입, FC-BGA 공급 병목 심화, 실리콘 커패시터 첫 대형 수주(1.5조원)라는 세 가지 강력한 모멘텀이 동시에 가시화되어 있어, 중기적 실적 성장의 방향성 자체는 긍정적으로 평가된다. DART 확정 기준 2025년 영업이익 9,133억원에서, 최근 보도 기준 복수 증권사 추정으로 2026년 1.4조~1.6조원 수준의 영업이익 달성이 기대되며, 하반기 추가 가격 인상이 현실화될 경우 컨센서스 상향 여지도 존재한다. 중장기적으로는 2027년부터 FC-BGA 생산능력 두 배 확대, 유리 기판 진입, 실리콘 커패시터 본격 매출 인식이 동시 발현되며 구조적 성장 엔진이 다층화될 전망이다. 그러나 2026년 연초 대비 수배 급등 후 6월 3일 하루 -9.58% 급락하는 극단적 변동성은 단기 밸류에이션 부담과 기대치 선반영 정도를 재인식하게 만드는 신호이다. 경쟁사 대비 포트폴리오 차별성(MLCC+FC-BGA+실리콘 커패시터 동시 보유)은 프리미엄 기업가치 재평가의 근거가 되나, 대형 Capex 집행에 따른 단기 FCF 압박, 글로벌 매크로 불확실성, 재고 조정 리스크는 균형 있게 인식해야 한다.",
+          "en": "Samsung Electro-Mechanics is navigating a confluence of three powerful simultaneous catalysts — MLCC price hike cycle entry, acute FC-BGA supply shortages, and a landmark KRW 1.5 trillion silicon capacitor contract win — that collectively underpin a constructive medium-term earnings growth trajectory. Based on DART-confirmed 2025 operating profit of KRW 913.3 billion, multiple brokerages are projecting 2026 full-year operating profit in the range of KRW 1.4–1.6 trillion, with upside risk to consensus should H2 price hike momentum across MLCC and FC-BGA materialize as expected. Looking into 2027 and beyond, the convergence of FC-BGA capacity doubling, glass substrate market entry, and silicon capacitor contract revenue recognition is expected to multi-layer the company's structural growth engines. However, the parabolic share price advance followed by a -9.58% single-session correction on June 3 serves as a clear signal of elevated near-term valuation risk and the degree to which forward expectations are already priced in. The company's globally differentiated portfolio — the only entity simultaneously holding world-class MLCC, FC-BGA, and silicon capacitor capabilities in AI infrastructure — provides a sound basis for a long-term premium valuation, but short-term FCF pressure from the large-scale capex cycle, global macroeconomic uncertainties, and inventory correction risks warrant balanced risk recognition alongside the compelling structural bull case."
         }
       },
       "sources": [
-        "https://file.alphasquare.co.kr/media/pdfs/company-report/20260430154331577_0_ko.pdf",
-        "https://stock1.brokdam.com/%EC%82%BC%EC%84%B1%EC%A0%84%EA%B8%B0009150-2026-q1-%EC%8B%A4%EC%A0%81-%EB%B6%84%EC%84%9D-%EB%A7%A4%EC%B6%9C-3%EC%A1%B0-%EB%8F%8C%ED%8C%8C-%ED%9B%84-%EC%A3%BC%EA%B0%80-%EC%96%B4%EB%94%94/",
         "https://news.nate.com/view/20260430n16517",
-        "https://www.sisajournal-e.com/news/articleView.html?idxno=419067",
+        "https://zdnet.co.kr/view/?no=20260516150942",
         "https://www.mt.co.kr/stock/2026/05/29/2026052910392859417",
+        "https://www.mt.co.kr/stock/2026/05/27/2026052708064011199",
+        "https://news.nate.com/view/20260527n05042",
         "https://m.samsungsem.com/kr/newsroom/news/view.do?id=10309",
-        "https://www.smartbizn.com/news/articleView.html?idxno=144951",
-        "https://www.hankyung.com/article/2026052705176",
         "https://news.nate.com/view/20260521n04734",
-        "https://v.daum.net/v/20260526100203037",
-        "https://m.samsungsem.com/kr/newsroom/news/view.do?id=8381",
-        "https://kbthink.com/securities-view.html?docId=20260430102250880K"
+        "https://v.daum.net/v/Zzx6LJUZYU",
+        "https://jasoseol.com/companies/138/insights",
+        "https://m.ibks.com/iko/IKO01/download.do?seq=12105&menuCode=IKO010201&attatchCd=ATTATCH1"
       ],
       "ticker": "009150",
       "name": "삼성전기",
       "name_en": "SAMSUNG ELECTRO-MECHANICS CO.,LTD",
       "sector": "전자·부품",
+      "categories": [
+        "전자·부품"
+      ],
       "market": "코스피",
       "reportDate": "2026-06-03",
       "dataDate": "20260602"
@@ -2123,100 +2162,108 @@ window.KOS_REPORTS = {
     },
     "329180": {
       "lead": {
-        "ko": "HD현대중공업은 HD현대미포 흡수합병과 MASGA 방산 협력을 바탕으로 상선·방산·엔진 3개 축이 동시에 성장하며 실적 사이클 최상단을 향해 가속하고 있다.",
-        "en": "HD Hyundai Heavy Industries is accelerating toward the peak of its earnings cycle, driven by the simultaneous growth of three pillars — commercial shipbuilding, naval defense, and engine machinery — underpinned by the absorption merger of HD Hyundai Mipo and the Korea-U.S. MASGA defense cooperation framework."
+        "ko": "HD현대중공업은 HD현대미포 합병 이후 역대급 실적 성장세를 이어가며, LNG 발주 붐·방산 확장이라는 이중 모멘텀을 바탕으로 글로벌 조선 슈퍼사이클의 최대 수혜주로 부각되고 있다.",
+        "en": "Following its absorption of HD Hyundai Mipo, HD Hyundai Heavy Industries is delivering record-breaking earnings growth, emerging as the primary beneficiary of the global shipbuilding super-cycle underpinned by a dual catalyst of an LNG ordering boom and accelerating defense expansion."
       },
       "desc": {
-        "ko": "본 리포트는 DART 공시 확정 재무(연결 기준)와 2026년 6월 기준 공시·언론 보도를 바탕으로 HD현대중공업(329180)의 사업 현황, 최근 실적, 향후 전망, 강·약세 요인 및 주요 리스크를 종합적으로 분석한 정보 제공 목적의 리서치 리포트입니다.",
-        "en": "This report provides a balanced analysis of HD Hyundai Heavy Industries (329180), drawing on DART-filed consolidated financials and news as of June 2026, covering business structure, recent results, forward outlook, bull/bear factors, and key risks, for informational purposes only."
+        "ko": "HD현대중공업(329180)은 DART 공시 기준 2025년 연결 영업이익 2.0조원(전년대비 +188.9%)을 기록하며 조선업 수익성 회복을 주도했고, 2025년 12월 HD현대미포를 흡수합병해 단일 조선사 기준 국내 최대 규모의 통합 법인으로 재편됐다. 2026년 1분기에도 영업이익 9,054억원(전년동기대비 +108.7%)을 달성하는 등 실적 모멘텀이 가속화되고 있으며, 수주잔고 기반의 강력한 매출 가시성과 LNG선·방산 부문의 중장기 성장 동력이 시장의 주목을 받고 있다.",
+        "en": "HD Hyundai Heavy Industries (329180) led the recovery in Korean shipbuilding profitability, reporting a DART-confirmed consolidated operating profit of KRW 2.0 trillion in 2025 (+188.9% YoY), and completed the absorption of HD Hyundai Mipo in December 2025 to become the largest single shipbuilding entity in Korea. Earnings momentum has accelerated into Q1 2026 with operating profit of KRW 905.4 billion (+108.7% YoY), supported by a multi-year order backlog, an imminent LNG carrier ordering cycle, and expanding defense revenues."
       },
       "keypoints": [
         {
-          "ko": "2025년 영업이익 2.0조원(+188.9%), 2026년 1Q 영업이익률 15.3% — 고선가 물량 인도 확대로 수익성 변곡점 통과",
-          "en": "2025 operating profit KRW 2.0T (+188.9%); 2026 Q1 OPM 15.3% — profitability inflection point cleared as high-priced backlog flows into revenue"
+          "ko": "2026년 1분기 영업이익률 약 15% 달성: 고선가 선박 인도 확대와 HD현대미포 합병 효과가 맞물려 수익성 구조적 개선이 진행 중",
+          "en": "Q1 2026 operating margin reached approximately 15%, driven by accelerating deliveries of higher-priced vessels contracted since 2022–2023 and the consolidation impact from the HD Hyundai Mipo merger"
         },
         {
-          "ko": "2025년 말 HD현대미포 합병 완료, 2026년 연간 수주 목표 204억 달러(약 30조원) — 방산(함정) 비중 전년 대비 2배 확대 목표",
-          "en": "Merger with HD Hyundai Mipo completed in late 2025; 2026 order target set at USD 20.4B (~KRW 30T), targeting ~2x growth in naval defense orders year-on-year"
+          "ko": "2026년 1분기 누계 수주 61억 달러(+29.6% YoY): 조선 부문 단독 49억 달러(+51.5%)로 선별 고부가 수주 전략이 효력을 발휘 중",
+          "en": "Q1 2026 cumulative orders totaled USD 6.12 billion (+29.6% YoY), with the shipbuilding segment alone securing USD 4.92 billion (+51.5%), validating the company's strategy of prioritizing high-value contracts"
         },
         {
-          "ko": "미 해군 MRO 수주 연속 성공 및 데이터센터용 중속엔진 신시장 진입으로 방산·엔진 부문 장기 성장 모멘텀 확보",
-          "en": "Consecutive U.S. Navy MRO contract wins and entry into the data center medium-speed engine market provide long-term growth momentum beyond traditional shipbuilding"
+          "ko": "HD현대미포 합병(2025.12.1) 완료로 조선·방산 역량 통합: 2035년 매출 37조원, 방산 매출 10조원이라는 명확한 중장기 목표 제시",
+          "en": "The completed merger with HD Hyundai Mipo (Dec. 1, 2025) consolidates shipbuilding and defense capabilities, with management setting ambitious 2035 targets of KRW 37 trillion in total revenue and KRW 10 trillion in defense revenue"
+        },
+        {
+          "ko": "LNG 발주 붐 본격화 전망: 미국발 LNG 수출 확대·카타르 선단 교체로 2026~2027년 LNGC 발주 급증 예상, 한국 조선사 점유율 약 66%로 직접 수혜",
+          "en": "An LNG carrier ordering boom is anticipated in 2026–2027, driven by U.S. LNG export expansion and Qatar fleet renewal demand, directly benefiting Korean yards that hold approximately 66% of global LNG carrier market share"
+        },
+        {
+          "ko": "MASGA 미국 방산 협력 및 동남아 Sea Belt(베트남·필리핀) 거점 전략: 미 HII와의 차세대 호위함 협력 검토 등 글로벌 방산 시장 진입 가속화",
+          "en": "The MASGA (Make America Shipbuilding Great Again) partnership with U.S. defense shipbuilder HII, and a Southeast Asian 'Sea Belt' manufacturing footprint in Vietnam (HVS) and the Philippines (HHIP), are accelerating the company's entry into global defense markets"
         }
       ],
       "business": {
-        "ko": "HD현대중공업은 VLCC·컨테이너선·LNG운반선 등 고부가 상선 건조를 핵심으로 하는 조선 사업부, 해양플랜트를 담당하는 해양 사업부, 그리고 선박용·산업용 엔진을 생산하는 엔진기계 사업부로 구성된 국내 최대 종합 조선사다. 2025년 12월 HD현대미포를 흡수합병해 함정·중형선사업부가 공식 출범했으며, 기존 함정 건조 기술에 HD현대미포의 도크·설비·인적 자원이 결합되어 방산 경쟁력이 대폭 강화됐다. 회사가 공시한 2026년 수주 목표는 총 204억 달러로, 조선 145억 달러, 해양 36억 달러, 엔진기계 27억 달러로 구성되며 함정 부문 단독으로 약 30억 달러 수주를 목표로 한다. 엔진기계 부문은 최근 미국 데이터센터향 20MW급 중속엔진 수주에도 성공하며 신규 시장으로 사업 영역을 확장하고 있다.",
-        "en": "HD Hyundai Heavy Industries is Korea's largest integrated shipbuilder, organized around a Shipbuilding division focused on high-value vessels (VLCCs, containerships, LNG carriers), an Offshore division, and an Engine & Machinery division. In December 2025, the company completed the absorption merger of HD Hyundai Mipo, formally launching a dedicated Naval & Midsize Vessel division that combines legacy warship construction expertise with the dock capacity, facilities, and workforce of the former subsidiary. The company's announced 2026 order target stands at USD 20.4B, comprising shipbuilding USD 14.5B, offshore USD 3.6B, and engine/machinery USD 2.7B, with the naval segment alone targeting approximately USD 3.0B. The Engine & Machinery division is additionally expanding into new markets, having recently secured an order for 33 medium-speed engines for a U.S. data center operator."
+        "ko": "HD현대중공업은 HD현대그룹의 조선 핵심 계열사로, 중간지주사 HD한국조선해양 체계 하에서 2025년 12월 1일 HD현대미포를 흡수합병해 통합 법인으로 출범했다. 보도에 따르면 통합 법인은 2035년까지 세계 1위 조선업체 위상을 공고히 하겠다는 목표를 세웠다. 주요 사업부문은 조선(대형 상선), 해양에너지(해양플랜트), 엔진기계(선박용 엔진·기자재), 특수선(함정·방산)으로 구성되며, 합병으로 구 HD현대미포의 중형선(MR탱커·PC선·중형 컨테이너선) 건조 역량이 추가돼 선종 커버리지가 대폭 확장됐다. 조선 부문은 10,000TEU 이상 초대형 컨테이너선, VLCC(초대형 원유운반선), VLGC(초대형 LPG운반선), LNG 운반선 등 고부가 대형 선종에 집중하며, 독 14개를 보유한 울산 단일 조선소 기준으로 국내 최대 규모를 자랑한다. 엔진기계 부문은 대형 2행정 선박용 디젤엔진과 LNG·암모니아 이중연료 엔진을 공급하며, IMO 환경규제 강화에 따른 친환경 추진 수요 증가로 이중연료 엔진 비중과 수익성이 빠르게 높아지고 있다. 해양에너지 부문은 과거 매출의 상당 비중을 차지했으나 2014년 유가 전쟁의 직격탄을 맞은 이후 장기 부진했으며, 최근 유가 안정과 카타르 해상유전 현대화 사업 등 신규 수요로 흑자 전환에 성공해 실적 기여도가 회복되고 있다. 특수선 부문은 합병 이후 기존 특수선사업부 독 2기(국내 방산 집중)와 구 미포의 독 2기(해외 방산 전용 재배정)를 활용해 글로벌 함정 건조 역량을 대폭 강화할 계획이다. 국내 경쟁사로는 삼성중공업·한화오션(빅3)이 있으며, 글로벌로는 중국 CSSC·DSIC 등이 규모면에서 앞서는 경쟁자로 꼽힌다. 2025년 기준 글로벌 신조 시장에서 중국이 점유율 51%, 한국이 27%, 일본이 11%를 차지하는 가운데, 한국은 LNG선 등 고부가 선종에서 약 66%의 압도적 점유율을 유지하며 HD현대중공업은 이 고부가 영역에서 기술적 초격차와 수익성 중심의 선별 수주 전략을 이어가고 있다.",
+        "en": "HD Hyundai Heavy Industries is the core shipbuilding subsidiary of the HD Hyundai Group, operating under the intermediate holding company HD Korea Shipbuilding & Offshore Engineering (HD KSOE), and became a combined entity following the absorption of HD Hyundai Mipo, which was completed on December 1, 2025. According to company announcements, the integrated entity has set an objective to solidify its position as the world's leading shipbuilder by 2035. The four primary business segments are Shipbuilding (large commercial vessels), Marine & Energy (offshore plants), Engine & Machinery (marine engines and components), and Special Vessels/Defense (naval vessels), with the merger adding the former HD Hyundai Mipo's mid-size vessel competencies—MR tankers, PC tankers, and mid-range container ships—substantially broadening vessel-type coverage. The Shipbuilding segment focuses on high-value, large vessel types including ultra-large container ships (10,000+ TEU), VLCCs, VLGCs, and LNG carriers, anchored by the largest single shipyard in Korea by capacity with 14 docks in Ulsan. The Engine & Machinery segment supplies large two-stroke marine diesel engines and dual-fuel (LNG, ammonia) engines, benefiting from accelerating demand for eco-friendly propulsion systems under tightening IMO environmental regulations, which is lifting both the segment's revenue mix and profitability. The Marine & Energy segment, once a major revenue contributor, suffered severely from the 2014 oil price downturn but has successfully returned to profitability, supported by oil price stabilization and new offshore projects such as Qatar's field modernization program. In the Special Vessels/Defense segment, the post-merger plan allocates two existing dedicated naval docks for domestic demand and repurposes two former Mipo docks for overseas defense markets, significantly expanding global naval vessel construction capability. Domestic competitors include Samsung Heavy Industries and Hanwha Ocean (Korean Big 3), while globally, Chinese state-backed shipbuilders such as CSSC and DSIC are the primary volume competitors. Per 2025 Clarkson data, China holds approximately 51% of the global newbuild market by CGT versus Korea's 27% and Japan's 11%; however, Korea maintains an approximately 66% share in LNG carriers and other high-value segments, where HD Hyundai Heavy Industries holds a clear technology leadership position underpinned by a disciplined, high-margin selective ordering strategy."
       },
       "recent": {
-        "ko": "DART 공시 기준, 2025년 연결 매출액은 17.6조원(전기대비 +21.4%), 영업이익은 2.0조원(+188.9%), 당기순이익은 1.4조원(+127.7%)으로 수익성 도약을 확인했다. 2026년 1분기에도 매출액 5.9조원(YoY +54.8%), 영업이익 9,054억원(+108.7%, OPM 15.3%)을 기록하며 증권사 컨센서스를 13.6% 상회했다. 2026년 5월에는 KSS해운과 VLGC 3척(5,048억원), 아시아 선사와 컨테이너선 6척(1.8조원), 오세아니아 선사와 VLGC 2척(3,521억원) 계약을 연달아 공시했으며, 미 해군 군수지원함 MRO도 연속 수주하는 등 수주 모멘텀이 가속화되고 있다. 주가는 52주 저가 37만원대에서 2026년 6월 기준 67만원 내외로 대폭 상승했으며, 증권가 평균 목표주가는 약 86만원 수준으로 형성돼 있다.",
-        "en": "Per DART consolidated filings, the company delivered KRW 17.6T in 2025 revenue (+21.4% YoY), operating profit of KRW 2.0T (+188.9%), and net income of KRW 1.4T (+127.7%). This momentum continued into 2026 Q1, with revenue of KRW 5.9T (+54.8% YoY), operating profit of KRW 905.4B (+108.7%, OPM 15.3%), beating analyst consensus by approximately 13.6%. In May 2026, the company disclosed a series of new orders: three VLGCs with KSS Shipping (KRW 504.8B), six containerships with an Asian operator (KRW 1.8T), and two VLGCs with an Oceanian operator (KRW 352.1B), alongside successive U.S. Navy MRO contracts. The share price has recovered substantially from a 52-week low near KRW 370,000 to around KRW 673,000 as of June 2, 2026, with the sell-side consensus target averaging approximately KRW 861,000."
+        "ko": "DART 공시 확정 재무 기준, 2025년 연간 연결 매출액은 17.6조원(전년대비 +21.4%), 영업이익은 2.0조원(+188.9%), 당기순이익은 1.4조원(+127.7%)을 기록하며 조선업 수익성 회복을 상징하는 결산을 마쳤다. 저가 수주 물량의 소진과 2022~2023년 이후 고선가로 체결된 계약의 인도가 본격화된 결과로, 영업이익률은 약 11%대까지 상승했다. 2026년 1분기(누적, DART 기준)에는 매출액 5.9조원(전년동기대비 +54.8%), 영업이익 9,054억원(+108.7%), 당기순이익 7,738억원(+172.2%)을 달성해 실적 가속화가 뚜렷하다. 1분기 영업이익률은 약 15%대로, 전년동기 대비 뚜렷한 수익성 개선이 확인된다. 매출액 급증의 배경에는 2025년 12월 HD현대미포 합병 이후 통합 법인 기준 최초 전 분기 실적이 반영된 기저 효과가 포함돼 있어 YoY 비교 시 참고가 필요하다. 수주 측면에서는 2026년 1분기 누계 수주액이 61억 1,900만 달러로 전년동기대비 29.56% 증가했으며, 조선 부문 단독으로 49억 1,900만 달러(+51.54%)의 강한 수주를 보였다. 수주 내역을 보면 아시아 선사의 컨테이너선 6척(약 1.8조원), 오세아니아 선사의 VLGC 2척(3,521억원) 등 대형 계약이 연속 체결됐다. 주가는 기준일(2026년 6월 3일) 기준 67만 3,000원으로, 52주 저가(37만원) 대비 80% 이상 상승했으며, 52주 고가는 76만 5,000원이다. 시가총액은 70.6조원으로 국내 조선 빅3 중 최대 규모이며, 일 거래대금 4,424억원이 지속되며 기관·외국인의 관심이 이어지고 있다.",
+        "en": "Based on DART-confirmed consolidated financials, full-year 2025 revenue was KRW 17.6 trillion (+21.4% YoY), operating profit KRW 2.0 trillion (+188.9% YoY), and net income KRW 1.4 trillion (+127.7% YoY), marking a landmark profitability recovery as low-margin legacy contracts were completed and higher-priced orders signed in 2022–2023 entered the delivery phase. The 2025 operating margin is estimated at approximately 11%, a substantial step-up from prior-year levels. Q1 2026 cumulative figures (DART-confirmed) showed revenue of KRW 5.9 trillion (+54.8% YoY), operating profit KRW 905.4 billion (+108.7% YoY), and net income KRW 773.8 billion (+172.2% YoY), with the quarterly operating margin advancing to approximately 15%, reflecting the twin effects of high-value vessel deliveries and the first full-quarter consolidation of the former HD Hyundai Mipo following the December 2025 merger—an important factor to note when interpreting the magnitude of YoY comparisons. On the order side, Q1 2026 cumulative orders totaled USD 6.119 billion (+29.56% YoY per company disclosure), with the shipbuilding segment contributing USD 4.919 billion (+51.54% YoY); notable contracts include six container vessels from an Asian shipping company (approximately KRW 1.8 trillion) and two VLGCs from an Oceanian operator (KRW 352.1 billion). As of the reference date (June 3, 2026), the stock trades at KRW 673,000, more than 80% above its 52-week low of KRW 370,000, with a 52-week high of KRW 765,000. The company's market capitalization of KRW 70.6 trillion is the largest among the Korean Big 3 shipbuilders, and daily trading value of KRW 442.4 billion reflects sustained institutional and foreign investor interest."
       },
       "outlook": {
-        "ko": "회사는 기업가치 제고 공시를 통해 2027년 연결 매출 목표를 25.9조원으로 제시했으며, ROE 15% 이상 유지와 주주환원율 30% 이상을 장기 정책으로 공표했다. 방산 부문의 경우, 2035년 매출 목표 10조원을 제시한 가운데 미 해군 MRO 수주가 연속 성사되고 있고 캐나다 잠수함 신조, 사우디 차기 호위함 등 해외 방산 수주 파이프라인도 가시화되고 있다. 다만 한국수출입은행 해외경제연구소 보고서에 따르면 2026년 세계 신조선 발주량은 전년 대비 약 14.6% 감소한 3,500만 CGT 수준이 될 것으로 전망되어, 향후 신규 수주 기반 유지가 중기 실적의 주요 변수로 작용할 전망이다.",
-        "en": "Through its corporate value enhancement disclosure, HD Hyundai HI has set a 2027 consolidated revenue target of KRW 25.9T, alongside long-term commitments to ROE above 15% and a shareholder return ratio above 30%. In the defense segment, the company's 2035 revenue target of KRW 10T is being underpinned by accelerating U.S. Navy MRO wins, while defense order pipelines for Canadian submarine construction and a Saudi next-generation frigate program are taking shape. However, according to a Korea Eximbank research report, global new ship orders are projected to decline approximately 14.6% year-on-year to around 35M CGT in 2026, making sustained new order momentum a critical variable for medium-term earnings."
+        "ko": "HD현대중공업은 2026년 연간 수주 목표를 204억 2,000만 달러로 제시했으며, 이 중 조선 부문만 144억 9,000만 달러로 전년 실수주(115억 달러) 대비 대폭 상향됐다. 2026~2027년에는 미국발 LNG 수출 프로젝트 확대, 카타르의 대규모 선단 교체 수요, 노후선대 갱신 수요가 맞물려 LNG 운반선 발주가 급증할 것으로 전망되며, 이는 LNG 고부가 선종에서 기술 우위를 보유한 HD현대중공업에 직접적인 수혜 요인이다. 한국 조선업계는 이미 3.5년치의 수주잔고를 확보한 상황으로 2028년까지 인도 물량이 꽉 차 있으며, 2029년 이후 인도 슬롯을 두고 선주 경쟁이 치열해지면서 신조 선가 추가 상승도 기대된다. 방산 부문에서는 합병 이후 독 배정을 통해 2035년 방산 매출 10조원을 목표로 하며, 미국 HII와의 차세대 호위함 2야드 투자 검토 및 MASGA 내 MRO 수주 확대가 중기 성장 촉매로 기대된다. 동남아 Sea Belt(베트남 HVS, 필리핀 HHIP) 거점을 활용한 중형선 시장 저원가 공략도 장기적으로 중국의 시장 잠식을 일부 차단하는 전략적 역할을 할 것으로 기대된다. 다만 미국 관세 정책 변화에 따른 교역량 둔화, 중국 조선업의 고부가 시장 침투 가속화, 후판 등 원자재 가격 상승은 지속적인 모니터링이 필요한 변수다.",
+        "en": "Management has set a 2026 full-year order target of USD 20.42 billion, with the shipbuilding segment alone targeting USD 14.49 billion—a significant step-up from the approximately USD 11.5 billion actually received in 2025. The order pipeline is supported by an anticipated LNG carrier ordering boom in 2026–2027, fueled by U.S. LNG export expansion, large-scale Qatar fleet renewal, and aging vessel replacement demand; with Korean yards holding roughly 66% of the LNG carrier market, HD Hyundai Heavy Industries is positioned to capture a disproportionate share of this demand. Korea's major shipbuilders already hold approximately 3.5 years of backlog with docks full through 2028, and intensifying competition among shipowners for post-2028 delivery slots points to continued newbuild price appreciation that should further support operating margins. On the defense front, the 2035 target of KRW 10 trillion in defense revenue is backed by concrete post-merger dock reallocation, exploratory cooperation with U.S. shipbuilder HII on a second-yard investment for next-generation frigates, and growing MRO orders under the MASGA framework. The Southeast Asian 'Sea Belt' manufacturing footprint in Vietnam (HVS) and the Philippines (HHIP) provides a cost-competitive production platform for mid-size vessels, partially counterbalancing Chinese pricing pressure in that market segment. Key risks to the constructive outlook include a global trade slowdown from U.S. tariff escalation, accelerating Chinese penetration into high-value vessel segments, and potential steel plate and labor cost inflation."
       },
       "bull": [
         {
           "title": {
-            "ko": "고선가 수주 물량의 본격 인도",
-            "en": "High-Priced Backlog Entering Delivery Phase"
+            "ko": "수주잔고 기반 실적 가시성 및 선가 상승 선순환",
+            "en": "Robust Backlog Providing High Earnings Visibility with Newbuild Price Tailwind"
           },
           "body": {
-            "ko": "2022~2024년 선가 상승기에 확보한 고선가 물량이 2026년 이후 본격 매출로 인식되고 있으며, 이로 인해 영업이익률은 2025년 11.6%에서 2026년 1분기 15.3%로 가파르게 상승했다. 업계에서는 이 고마진 물량의 비중이 2026년 상반기 최대치에 도달할 것으로 분석한다.",
-            "en": "High-priced orders secured during the 2022-2024 vessel price upcycle are now flowing through to reported revenue, driving the operating margin from 11.6% in FY2025 to 15.3% in Q1 2026. Industry analysts expect the high-margin order mix to peak in H1 2026, supporting continued OPM expansion."
+            "ko": "한국 조선업계는 이미 3.5년치 이상의 수주잔고를 확보해 2028년까지 도크가 꽉 찬 상태이며, 2029년 이후 인도 슬롯을 두고 선주들의 경쟁이 치열해지면서 신조 선가가 지속 상승하는 선순환 구조가 형성되고 있다. 2023년 이후 고선가로 수주된 선박들이 2026~2027년에 집중 인도되면서 영업이익률의 추가 개선이 기대되며, 이미 Q1 2026에서 약 15%의 영업이익률을 달성한 바 있다. 수주잔고 기반의 장기 매출 가시성은 조선업 특유의 경기 민감성을 부분적으로 완충하며 실적 예측 안정성을 높이는 핵심 요인이다. 여기에 LNG 운반선 등 고부가 선종 수주 비중이 높아지면서 매출 질적 개선도 동반되고 있어 구조적 수익성 향상이 뒷받침된다.",
+            "en": "Korea's major shipyards have secured over 3.5 years of backlog with docks effectively full through 2028, and intensifying competition among shipowners for post-2028 delivery slots is feeding a virtuous cycle of continued newbuild price appreciation. Higher-priced orders contracted in 2023 and beyond are set to be recognized as revenue in 2026–2027, supporting further operating margin expansion from the already elevated approximately 15% level reached in Q1 2026. The long-duration nature of the backlog partially insulates earnings from near-term demand shocks, providing unusually high earnings visibility for what is typically a cyclical industry. The growing proportion of high-value vessel types—particularly LNG carriers and special vessels—is simultaneously enhancing revenue quality and underpinning structural margin improvement."
           }
         },
         {
           "title": {
-            "ko": "방산·MASGA를 통한 신성장축 구축",
-            "en": "Defense & MASGA as a New Structural Growth Engine"
+            "ko": "LNG 발주 붐 및 친환경 전환 수요 직접 수혜",
+            "en": "Direct Beneficiary of the LNG Ordering Boom and Green Propulsion Transition"
           },
           "body": {
-            "ko": "HD현대미포 합병으로 방산 도크 역량이 확대됐고, 미 해군 MRO 수주가 연속 성사되며 MASGA 협력의 실질적 성과가 나타나고 있다. 회사는 현재 약 1조원 수준인 방산 매출을 2035년 10조원까지 끌어올린다는 목표를 제시했으며, 캐나다·필리핀·사우디 등 다각적 방산 수주 파이프라인이 구체화되는 단계다.",
-            "en": "The merger with HD Hyundai Mipo has significantly expanded naval dock capacity, and successive U.S. Navy MRO contract wins demonstrate tangible MASGA cooperation progress. The company targets defense revenue growth from the current ~KRW 1T to KRW 10T by 2035, with defense order pipelines from Canada, Philippines, and Saudi Arabia at various stages of advancement."
+            "ko": "미국발 LNG 수출 프로젝트 확대, 카타르 선단 교체, 노후 선박 갱신 수요가 맞물려 2026~2027년 LNG 운반선 발주가 대폭 증가할 것으로 전망되며, 한국 조선사의 LNG선 시장 점유율은 약 66%로 압도적이다. IMO 환경규제 강화에 따른 이중연료 엔진(LNG·암모니아) 수요 증가는 엔진기계 부문의 추가 성장도 견인한다. HD현대중공업은 암모니아 이중연료 엔진 선급 승인 시험을 완료하는 등 차세대 친환경 기술 분야에서 선두 위치를 확보하고 있다. 합병 후 통합된 R&D 역량을 통해 액화이산화탄소(LCO₂) 운반선, 수소 추진선 등 미래 선종 개발에서도 선제적 투자를 이어가고 있어 중장기 기술 경쟁력 유지가 기대된다.",
+            "en": "A convergence of U.S. LNG export expansion, large-scale Qatari fleet renewal, and aging vessel replacement demand is expected to drive a substantial surge in LNG carrier orders in 2026–2027, and Korean yards collectively hold approximately 66% of this high-value market—positioning HD Hyundai Heavy Industries to capture a disproportionate share. Tightening IMO environmental regulations are simultaneously boosting demand for dual-fuel (LNG, ammonia) marine engines, directly benefiting the Engine & Machinery segment's growth and profitability. The company has completed class approval trials for its ammonia dual-fuel engine, securing a technology leadership position in next-generation eco-friendly propulsion systems. Post-merger consolidated R&D capabilities are also being directed toward future vessel types such as liquid CO₂ (LCO₂) carriers and hydrogen-fueled vessels, building early-mover advantages in segments expected to gain significant traction over the next decade."
           }
         },
         {
           "title": {
-            "ko": "엔진기계 부문의 데이터센터 신시장 진입",
-            "en": "Engine Division's Entry into the Data Center Market"
+            "ko": "HD현대미포 합병 시너지 및 방산 중장기 성장 동력",
+            "en": "Merger Synergies with HD Hyundai Mipo and Long-Term Defense Growth Engine"
           },
           "body": {
-            "ko": "최근 보도에 따르면, 회사는 미국 데이터센터 운영사에 20MW급 중속엔진 33대를 수주하며 신시장 진입에 성공했다. 국내 유일의 중속엔진 IP 홀더로서 로열티 부담 없이 경쟁 우위를 확보하고 있으며, 현재 가동률이 120~140%에 달해 추가 수요 시 CAPA 증설로 이어질 가능성이 높다.",
-            "en": "According to recent reports, the company secured an order for 33 medium-speed 20MW engines from a U.S. data center operator, marking entry into a new growth market. As the only domestic holder of medium-speed engine IP, it competes without royalty burdens; with current capacity utilization at 120-140%, additional orders would likely trigger a capacity expansion decision."
+            "ko": "2025년 12월 HD현대미포 흡수합병 완료로 도크·설비·인력이 통합되어 생산 효율성 향상, 선종 커버리지 확대, R&D 역량 집중이라는 복합 시너지가 기대된다. 회사는 2035년까지 매출 37조원, 방산 부문 매출 10조원 달성이라는 명확한 중장기 목표를 제시했으며, 구 미포의 독 2기를 해외 방산 전용으로 재배정해 글로벌 함정 건조 역량을 대폭 강화할 계획이다. MASGA 프레임워크 내 미 해군 함정 MRO 수주 확대, 미 HII와의 차세대 호위함 협력 검토는 방산 부문의 구조적 성장 가능성을 높이는 촉매다. 중국·러시아 해군력 강화에 대응한 글로벌 함정 발주 사이클 도래는 방산 밸류에이션 리레이팅의 중장기 모멘텀으로 작용할 전망이다.",
+            "en": "The completed absorption of HD Hyundai Mipo in December 2025 integrates additional docks, facilities, and workforce, generating synergies across production efficiency, vessel-type coverage, and consolidated R&D capabilities including acceleration of green technology development. Management has articulated ambitious 2035 targets—KRW 37 trillion in total revenue and KRW 10 trillion in defense revenues—with two former Mipo docks specifically repurposed for overseas defense markets to materially scale up global naval vessel construction. Growing U.S. Navy MRO orders under the MASGA framework and exploratory cooperation with HII on a second-yard investment for next-generation frigates represent meaningful near-to-medium-term defense revenue catalysts. A global naval vessel ordering cycle driven by great-power competition—particularly efforts to counter China and Russia's expanding naval capabilities—provides a structural tailwind for a potential defense business re-rating over the medium term."
           }
         }
       ],
       "bear": [
         {
           "title": {
-            "ko": "글로벌 신조 발주량 감소 추세",
-            "en": "Declining Global New Ship Order Volume"
+            "ko": "중국 조선업의 고부가 시장 침투 가속화",
+            "en": "China's Accelerating Penetration into High-Value Shipbuilding Segments"
           },
           "body": {
-            "ko": "한국수출입은행 해외경제연구소 보고서에 따르면 2026년 세계 신조선 발주량은 전년 대비 약 14.6% 감소한 3,500만 CGT 수준이 예상된다. 미·중 무역 갈등, 탈탄소 규제 일정 불확실성, 선주사의 관망 심리가 복합적으로 작용하고 있으며 수주 공백이 이어질 경우 중기 실적에 하방 압력이 가해질 수 있다.",
-            "en": "According to the Korea Eximbank overseas research institute, global new vessel orders are expected to fall approximately 14.6% to around 35M CGT in 2026. U.S.-China trade tensions, uncertain IMO decarbonization timelines, and cautious shipowner sentiment are converging to suppress order activity, posing downside risk to medium-term earnings if the order gap persists."
+            "ko": "2025년 기준 글로벌 신조 시장에서 중국의 점유율은 51%로 한국(27%)을 크게 앞서며, 범용 컨테이너선 시장은 중국이 약 72%를 장악하고 있다. 중국 조선사들은 정부의 강력한 보조 지원과 원가 경쟁력을 바탕으로 LNG선 등 고부가 시장에서도 존재감을 강화하고 있어, 장기적으로 한국의 기술 우위가 희석될 리스크가 존재한다. 중국의 저가 수주 공세는 신조 선가 하방 압력으로 작용하며 장기적으로 HD현대중공업의 마진에도 영향을 줄 수 있다. HD현대중공업의 동남아 Sea Belt 전략이 이를 부분 상쇄하는 방향이지만, 실질적인 수익 기여까지는 상당한 시간이 필요하다.",
+            "en": "China holds approximately 51% of the global newbuild market (by CGT) in 2025, far exceeding Korea's 27%, and dominates the standard container ship market with roughly 72% share. Chinese shipbuilders are backed by substantial state support and low production costs, and are increasingly penetrating higher-value segments including LNG carriers, posing a long-term structural threat to Korea's technology premium and pricing power. Chinese price competition could exert persistent downward pressure on newbuild contract prices even for high-value vessel types, compressing industry-wide margins over time. While HD Hyundai Heavy Industries' Southeast Asian 'Sea Belt' strategy is designed to counterbalance Chinese cost advantages in the mid-size market, meaningful revenue contributions from these overseas operations will require several years to materialize."
           }
         },
         {
           "title": {
-            "ko": "LNG운반선 공급 과잉 및 발주 지연 우려",
-            "en": "LNG Carrier Supply Overhang and Order Delay Risk"
+            "ko": "글로벌 무역 불확실성에 따른 상선 발주 위축 가능성",
+            "en": "Risk of Commercial Vessel Order Weakening Amid Global Trade Uncertainty"
           },
           "body": {
-            "ko": "최근 보도에 따르면, 향후 5년 내 인도 예정인 LNG운반선이 현재 운영 선대의 약 45%에 달해 구조적 과잉 공급 우려가 제기되고 있다. 트럼프 행정부 출범 이후에도 LNG 신조 발주가 저조한 상황이며, 중장기적으로 LNG 수주 비중이 높은 HD현대중공업에 부정적 영향을 미칠 수 있다.",
-            "en": "Recent reports indicate that LNG carriers scheduled for delivery within five years represent approximately 45% of the current operating fleet, raising concerns about structural oversupply. New LNG carrier orders have remained subdued even following the start of the Trump administration, posing a potential headwind for HD Hyundai HI given its historically high LNG carrier order exposure."
+            "ko": "미국의 고율 관세 정책은 글로벌 해상 물동량을 구조적으로 축소시킬 수 있으며, 컨테이너선·탱커 등 교역 연동 상선의 발주 위축으로 이어질 리스크가 있다. 수주잔고 기반의 실적 가시성이 단기 충격을 완충하지만, 발주 감소가 장기화될 경우 2029년 이후 인도 슬롯 확보가 어려워지며 중장기 매출 성장세가 제약될 수 있다. 실제로 2025년 초 관세 불확실성 등으로 글로벌 선박 발주가 일부 감소·지연되는 현상이 관찰된 바 있다. LNG선과 방산 수요가 이를 부분 상쇄할 수 있지만, 전체적인 시황 위축 가능성을 완전히 배제하기는 어렵다.",
+            "en": "Elevated U.S. tariff policies risk a structural reduction in global seaborne trade volumes, potentially dampening new orders for standard commercial vessels such as container ships and tankers. While the existing backlog provides meaningful near-term earnings visibility, a prolonged reduction in new orders would progressively constrain the post-2028 delivery pipeline, limiting medium-term revenue growth. Evidence of this dynamic was already observed in early 2025, when trade policy uncertainty contributed to some decline and delay in vessel orders across global shipyards. Although LNG carrier and defense demand can partially offset a softening in commercial shipping, a broad market downturn scenario cannot be fully discounted in the near term."
           }
         },
         {
           "title": {
-            "ko": "미국 방산 시장 진입의 법적·제도적 장벽",
-            "en": "Legal and Regulatory Barriers to the U.S. Defense Market"
+            "ko": "원가 압박 및 수익성 지속성 리스크",
+            "en": "Input Cost Pressures and Margin Sustainability Risk"
           },
           "body": {
-            "ko": "미국의 존스법, 베리 개정법(Berry Amendment), ITAR 규정 등은 외국 기업의 미 해군 함정 건조·대규모 MRO 참여를 원칙적으로 제한하고 있다. MRO 수주 확대에는 성공하고 있으나, 신조 군함 수주 또는 대형 수리 계약으로의 전환에는 추가적인 제도적 장벽 해소가 선행 조건으로 작용한다.",
-            "en": "U.S. laws including the Jones Act, Berry Amendment, and ITAR regulations structurally limit foreign companies' participation in U.S. Navy vessel construction and large-scale MRO. While incremental MRO wins are being achieved, the transition to new-build naval contracts or large-scale repair work requires resolution of additional regulatory barriers."
+            "ko": "선박 건조 원가의 핵심인 후판(조선용 강판) 가격, 숙련 노동력 부족과 인건비 상승, 원/달러 환율 변동은 HD현대중공업의 수익성에 직접적인 영향을 미치는 변수다. 수주잔고에 포함된 선박은 계약 시점에 선가가 고정되기 때문에 건조 기간 중 원가가 급등할 경우 마진이 축소될 수 있는 구조적 취약성을 내포하고 있다. HD현대미포 합병 이후 통합 과정에서 예상치 못한 비용 발생이나 생산성 일시 저하가 단기 수익성에 부담이 될 수 있다. 또한 고금리 환경이 지속될 경우 선주의 신조 발주 의향이 위축될 수 있으며, 이는 수주 단가 협상력에도 영향을 줄 가능성이 있다.",
+            "en": "Key cost inputs—including shipbuilding steel plate prices, skilled labor shortages and wage inflation, and KRW/USD exchange rate movements—directly impact HD Hyundai Heavy Industries' profitability and are inherently difficult to fully hedge over multi-year contract periods. Because vessel contract prices in the backlog are fixed at the time of order, a sharp rise in input costs during the extended construction period can erode delivered margins, representing a structural vulnerability common to all long-cycle shipbuilders. Post-merger integration costs and potential short-term productivity disruptions from combining two large shipyard operations may also weigh on near-term margins beyond what is currently anticipated. A prolonged high-interest-rate environment globally may additionally dampen shipowners' willingness to commit to new orders, with potential knock-on effects on negotiated contract prices."
           }
         }
       ],
@@ -2227,28 +2274,28 @@ window.KOS_REPORTS = {
             "en": "Macro & Trade Risk"
           },
           "body": {
-            "ko": "미·중 무역 갈등이 심화되면 글로벌 해상 물동량이 위축되어 상선 발주 감소로 이어질 수 있다. 또한 조선업 결제는 대부분 달러화로 이루어지며 대금 회수까지 2~3년이 소요되어, 원·달러 환율 급변 시 수익성에 직접적 영향을 미칠 수 있다.",
-            "en": "An escalation of U.S.-China trade friction could suppress global shipping volumes and weaken commercial vessel order flow. Additionally, since most shipbuilding contracts are denominated in USD with proceeds received over a 2-3 year horizon, sharp won/dollar volatility can directly affect reported profitability."
+            "ko": "미국의 고율 관세 부과와 주요국의 보복 관세는 글로벌 교역량을 구조적으로 축소시킬 수 있으며, 이 경우 컨테이너선·탱커 등 교역 연동 선종의 중장기 발주 수요가 부진해질 수 있다. 글로벌 경기 침체로 에너지 수요가 둔화될 경우 LNG 운반선 발주 전망도 보수적으로 조정될 가능성을 배제할 수 없다. 조선업은 장주기 산업 특성상 현재의 풍부한 수주잔고로 단기 실적은 방어되더라도, 발주 공백이 장기화되면 중후기 실적에 미치는 파급이 크다는 점을 유의해야 한다.",
+            "en": "Elevated U.S. tariffs and retaliatory measures by trading partners risk a structural reduction in global trade volumes, potentially dampening medium-to-long-term demand for trade-linked vessel types such as container ships and tankers. If a global recession leads to softening energy demand, LNG carrier order forecasts may also be revised downward in a scenario where U.S. LNG export expansion stalls. Given shipbuilding's inherent long-cycle nature, while the existing backlog protects near-term earnings, a prolonged ordering gap would create a significant revenue headwind in later periods that cannot easily be offset in the short run."
           }
         },
         {
           "cat": {
-            "ko": "탈탄소·규제 리스크",
-            "en": "Decarbonization & Regulatory Risk"
+            "ko": "지정학·규제 리스크",
+            "en": "Geopolitical & Regulatory Risk"
           },
           "body": {
-            "ko": "IMO의 NZF(넷제로 프레임워크) 규정 개정안 채택이 최소 1년 이상 연기된 것으로 보도됐으며, 이에 따라 선주사들이 친환경 선박 교체 투자를 늦추고 관망하는 기조가 이어질 수 있다. 규제 일정 불확실성은 신조 발주 의사결정을 더욱 보수적으로 만드는 요인이다.",
-            "en": "Reports indicate that the IMO's Net Zero Framework (NZF) regulation amendment has been delayed by at least one year, leading shipowners to defer environmentally driven fleet renewal decisions. Prolonged regulatory timeline uncertainty drives increasingly conservative new-build ordering behavior across the industry."
+            "ko": "미국의 Jones Act 등 관련 규제는 미국 내 조선·방산 시장에 대한 한국 조선사의 직접 접근을 제한하고 있으며, MASGA 협력이 가시적 수주로 전환되기까지 수년의 시간이 소요될 수 있다. 미 의회의 관련 법안 개정이 이루어지지 않으면 HD현대중공업의 미국 함정 직접 건조는 여전히 제한될 수 있다. 중·미 간 지정학적 갈등 심화, 중동 지역 불안정, 러·우 전쟁 지속 등 지정학적 변수는 글로벌 발주 환경과 에너지 수요에 불확실성을 더하는 요인이다.",
+            "en": "U.S. regulations including the Jones Act and defense procurement laws limit Korean shipbuilders' direct access to the U.S. shipbuilding and naval market, and it could take several years before MASGA cooperation translates into tangible contract awards. Without amendments to relevant U.S. legislation, HD Hyundai Heavy Industries' ability to directly build U.S. naval vessels in American yards remains constrained, limiting the near-term realization of this growth narrative. Additionally, escalating U.S.-China geopolitical tensions, Middle Eastern instability, and the ongoing Russia-Ukraine conflict add layers of uncertainty to the global ordering environment and energy trade flows."
           }
         },
         {
           "cat": {
-            "ko": "경쟁·밸류에이션 리스크",
-            "en": "Competition & Valuation Risk"
+            "ko": "밸류에이션·사이클 리스크",
+            "en": "Valuation & Cycle Risk"
           },
           "body": {
-            "ko": "중국 조선사들이 저가 공세를 재개할 경우 수주 단가 하락 압력이 커질 수 있으며, 국내 방산 수주에서도 한화오션과의 경쟁(특히 KDDX 차기 구축함 사업)이 불확실성으로 작용한다. 현재 주가는 PBR 약 5.7배(2025년 기준)로 과거 평균을 크게 상회하는 수준이어서 기대치 하회 시 밸류에이션 조정 리스크가 존재한다.",
-            "en": "A resumption of aggressive low-price competition from Chinese shipbuilders could pressure order prices. Domestically, competition with Hanwha Ocean for key programs such as the KDDX next-generation destroyer adds execution uncertainty. The stock trades at approximately 5.7x P/B (FY2025 basis), well above historical averages, leaving it exposed to de-rating risk if results disappoint expectations."
+            "ko": "조선업은 대표적인 경기 민감 장주기 산업으로, 현재의 수주 호황이 구조적 추세인지 일시적 슈퍼사이클인지에 대한 시장 평가가 주가 멀티플의 핵심 변수다. 주가는 52주 저점(37만원) 대비 이미 80% 이상 상승해 상당한 기대치가 반영된 상태이며, 애널리스트 컨센서스 목표주가(평균 약 86만원)와의 괴리도 시장 내 시각 차이를 반영한다. 발주 사이클이 예상보다 이르게 꺾이거나, 원가 상승·환율 변동으로 실적이 기대에 못 미칠 경우 현재의 높은 밸류에이션이 빠르게 재조정될 위험이 있다. 합병 후 통합 과정에서의 예상치 못한 비용 및 운영 리스크도 단기 주가 변동성을 높이는 요인이 될 수 있다.",
+            "en": "Shipbuilding is a quintessentially cyclical, long-lead-time industry, and the market's judgment on whether the current order boom represents a structural multi-decade trend or a temporary super-cycle is the key determinant of valuation multiples. The stock has already appreciated more than 80% from its 52-week low of KRW 370,000 to the current KRW 673,000, implying that significant earnings improvement is already priced in; the reported average analyst price target of approximately KRW 864,000 also reflects the range of views on near-term upside. If the shipbuilding order cycle turns downward earlier than expected, or if cost overruns and exchange rate headwinds lead to earnings disappointments, the current elevated valuation could be subject to a rapid de-rating. Post-merger integration risks and unexpected operational disruptions may introduce near-term earnings volatility that amplifies stock price swings."
           }
         }
       ],
@@ -2258,27 +2305,32 @@ window.KOS_REPORTS = {
           "en": "Constructive"
         },
         "body": {
-          "ko": "HD현대중공업은 DART 공시 기준 2025년 영업이익률이 11.6%, 2026년 1분기 15.3%로 뚜렷한 수익성 상승 궤도에 있으며, 3년치 이상의 수주잔고와 방산·엔진 신규 성장축이 중장기 실적 가시성을 높이고 있다. HD현대미포 합병 이후 방산 도크 역량 확대와 미 해군 MRO 수주 연속 성사는 상선 사이클과 독립된 안정적 수익원 확보 가능성을 시사한다. 다만 글로벌 신조 발주량 감소 전망, LNG운반선 공급 과잉 우려, 미국 방산 시장 법적 장벽 등 구조적 리스크는 유효하며, 현 주가 수준에서는 방산·엔진 부문의 성장 시나리오가 상당 부분 반영되어 있음에 유의해야 한다. 본 리포트는 투자 권유가 아닌 정보 제공 목적임을 명시한다.",
-          "en": "HD Hyundai Heavy Industries is on a clear earnings trajectory, with OPM rising from 11.6% in FY2025 to 15.3% in Q1 2026 per DART filings, supported by a backlog exceeding three years of production and emerging defense and engine growth vectors. The post-merger expansion of naval dock capacity and successive U.S. Navy MRO wins point to a credible diversification away from pure commercial shipbuilding cycle dependency. However, structural risks remain material: a projected 14.6% decline in global new ship orders, potential LNG carrier oversupply, and U.S. regulatory barriers to defense market entry require monitoring. At current valuation levels, a meaningful portion of the defense and engine growth scenarios appears already priced in. This report is provided for informational purposes only and does not constitute an investment recommendation."
+          "ko": "HD현대중공업은 DART 공시 기준 2025년 영업이익 2.0조원(+188.9% YoY)으로 수익성 대전환을 확인한 데 이어, 2026년 1분기에도 영업이익률 약 15%를 기록하며 실적 모멘텀이 가속화되고 있다. HD현대미포 합병으로 생산 역량과 선종 커버리지가 확대됐으며, 2035년 매출 37조원·방산 매출 10조원이라는 명확한 중장기 목표가 투자자 신뢰를 뒷받침한다. LNG 발주 붐 본격화, 글로벌 함정 발주 사이클 도래, MASGA 방산 협력이라는 세 가지 성장 촉매가 동시에 작용하는 시점에서 동사의 펀더멘털 개선 방향성은 긍정적으로 판단된다. 다만 주가가 52주 저점 대비 80% 이상 상승해 상당한 기대치가 이미 반영된 상태이며, 미국 관세 정책에 따른 교역량 둔화, 중국 조선업의 고부가 시장 침투, 후판·인건비 상승 등 원가 리스크는 지속 관찰이 필요하다. 투자 정보 제공 관점에서 LNG 발주 동향, 방산 수주 가시성(MASGA 진전 여부), 분기별 영업이익률 추이, 후판 가격 흐름을 핵심 모니터링 지표로 삼을 것을 권고한다.",
+          "en": "HD Hyundai Heavy Industries has confirmed a structural profitability turnaround—DART-confirmed 2025 operating profit of KRW 2.0 trillion (+188.9% YoY)—and Q1 2026 data indicates the momentum is accelerating, with the operating margin advancing to approximately 15% in the first full quarter post-merger. The HD Hyundai Mipo integration expands production capacity, vessel-type coverage, and defense capabilities, while management's articulated 2035 targets of KRW 37 trillion in revenue and KRW 10 trillion in defense revenues provide a credible long-term growth narrative. Three structural catalysts are converging: an LNG carrier ordering boom, a global naval vessel ordering cycle driven by great-power competition, and the MASGA defense cooperation framework with the United States. Against this constructive fundamental backdrop, the primary caveat is that the stock has already appreciated more than 80% from its 52-week trough, implying that a substantial amount of the earnings recovery story is already reflected in the current price. Accordingly, key metrics for ongoing monitoring include LNG carrier order flow and pricing trends, MASGA and naval contract progress, quarterly operating margin trajectory relative to cost inputs such as steel plate prices, and the pace of post-merger integration synergy realization."
         }
       },
       "sources": [
+        "https://news.nate.com/view/20260420n33269",
+        "https://v.daum.net/v/20260103060218106",
+        "https://file.alphasquare.co.kr/media/pdfs/company-report/_260123_HHI_4Q25_Preview_%EC%9D%B4%EC%9E%AC%ED%98%81_223_Online%20report%20_%206_10p_HD%ED%98%84%EB%8C%80%EC%A4%91%EA%B3%B5%EC%97%85.pdf",
+        "https://www.khan.co.kr/article/202512012137005",
+        "http://money2.daishin.co.kr/e5/Pagelet/Board/Research/filedownload.aspx?gubun=0&rowid=5NLcXs71s2xZQ9mC5ST4kSSSXlv8Ma8z70lR1V4O6603033339XSeNaDvtGbxZeItxSpOVa9n53Biw4pJapwDfKjp9W8FsR2uR2P10&word=6riw7JeF67aE7ISd&searchtype=Research",
+        "https://namu.wiki/w/HD%ED%98%84%EB%8C%80%EC%A4%91%EA%B3%B5%EC%97%85",
+        "https://www.mirae-biz.com/news/articleView.html?idxno=105523",
+        "https://www.ceoscoredaily.com/page/view/2025122414560431342",
+        "https://hd-hhi.com//upload/irDataPt/HD%ED%98%84%EB%8C%80%EC%A4%91%EA%B3%B5%EC%97%85%20-%20HD%ED%98%84%EB%8C%80%EB%AF%B8%ED%8F%AC%20%ED%95%A9%EB%B3%91%20%EB%B0%8F%20%EC%82%AC%EC%97%85%20%EC%9E%AC%ED%8E%B8(KOR).pdf",
+        "https://www.investing.com/equities/hyundai-heavy-industries-co",
         "https://goinsider.kr/stock/01390344",
-        "https://news.nate.com/view/20260107n06111",
-        "https://www.mt.co.kr/stock/2026/01/23/2026012308313585067",
-        "https://news.nate.com/view/20260508n14346",
-        "https://www.digitaltoday.co.kr/news/articleView.html?idxno=662456",
-        "https://www.digitaltoday.co.kr/news/articleView.html?idxno=652024",
-        "https://m.ceoscoredaily.com/page/view/2026042009220037747",
-        "https://www.monthlymaritimekorea.com/news/articleView.html?idxno=55783",
-        "https://www.handmk.com/news/articleView.html?idxno=34522",
-        "https://naval-special.hhi.co.kr/ko/",
-        "http://money2.daishin.co.kr/e5/Pagelet/Board/Research/filedownload.aspx?gubun=0&rowid=5NLcXs71s2xZQ9mC5ST4kSSSXlv8Ma8z70lR1V4O6603033339XSeNaDvtGbxZeItxSpOVa9n53Biw4pJapwDfKjp9W8FsR2uR2P10&word=6riw7JeF67aE7ISd&searchtype=Research"
+        "https://comp.wisereport.co.kr/company/c1010001.aspx?cmp_cd=329180",
+        "https://samdoltrader.com/2026-hd-korea-shipbuilding-outlook/"
       ],
       "ticker": "329180",
       "name": "HD현대중공업",
       "name_en": "HD HYUNDAI HEAVY INDUSTRIES CO.,LTD.",
       "sector": "조선",
+      "categories": [
+        "조선"
+      ],
       "market": "코스피",
       "reportDate": "2026-06-03",
       "dataDate": "20260602"

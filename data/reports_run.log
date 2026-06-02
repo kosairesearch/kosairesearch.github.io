@@ -1,3 +1,78 @@
-=== 배치(collect) 시작 Tue Jun  2 19:17:57 UTC 2026 ===
+=== 배치(auto) 시작 Tue Jun  2 19:46:50 UTC 2026 ===
+## 🤖 Batch 제출 — 대상 10개 / 상위 10개 (최근 15개 건너뜀) · 모델 claude-sonnet-4-6
+{'status': '013', 'message': '조회된 데이타가 없습니다.'}
 
-✅ 회수 완료 · 성공 10/실패 0 · 총 보유 15개 → data/reports.js
+{'status': '013', 'message': '조회된 데이타가 없습니다.'}
+
+  · 준비 005930 삼성전자 (DART O)
+{'status': '013', 'message': '조회된 데이타가 없습니다.'}
+
+{'status': '013', 'message': '조회된 데이타가 없습니다.'}
+
+  · 준비 000660 SK하이닉스 (DART O)
+{'status': '013', 'message': '조회된 데이타가 없습니다.'}
+
+{'status': '013', 'message': '조회된 데이타가 없습니다.'}
+
+  · 준비 005380 현대차 (DART O)
+{'status': '013', 'message': '조회된 데이타가 없습니다.'}
+
+{'status': '013', 'message': '조회된 데이타가 없습니다.'}
+
+  · 준비 009150 삼성전기 (DART O)
+{'status': '013', 'message': '조회된 데이타가 없습니다.'}
+
+{'status': '013', 'message': '조회된 데이타가 없습니다.'}
+
+  · 준비 373220 LG에너지솔루션 (DART O)
+{'status': '013', 'message': '조회된 데이타가 없습니다.'}
+
+{'status': '013', 'message': '조회된 데이타가 없습니다.'}
+
+  · 준비 032830 삼성생명 (DART O)
+{'status': '013', 'message': '조회된 데이타가 없습니다.'}
+
+{'status': '013', 'message': '조회된 데이타가 없습니다.'}
+
+  · 준비 028260 삼성물산 (DART O)
+{'status': '013', 'message': '조회된 데이타가 없습니다.'}
+
+{'status': '013', 'message': '조회된 데이타가 없습니다.'}
+
+  · 준비 329180 HD현대중공업 (DART O)
+{'status': '013', 'message': '조회된 데이타가 없습니다.'}
+
+{'status': '013', 'message': '조회된 데이타가 없습니다.'}
+
+  · 준비 012330 현대모비스 (DART O)
+{'status': '013', 'message': '조회된 데이타가 없습니다.'}
+
+{'status': '013', 'message': '조회된 데이타가 없습니다.'}
+
+  · 준비 000270 기아 (DART O)
+- ✅ 배치 제출 완료: msgbatch_017Vz1GSK1UFkhZkVwtZwpzR (10건) → data/batch_state.json
+  · 상태 in_progress · 처리 10/성공 0/오류 0
+  · 상태 in_progress · 처리 10/성공 0/오류 0
+  · 상태 in_progress · 처리 10/성공 0/오류 0
+  · 상태 in_progress · 처리 10/성공 0/오류 0
+  · 상태 in_progress · 처리 10/성공 0/오류 0
+  · 상태 in_progress · 처리 10/성공 0/오류 0
+  · 상태 in_progress · 처리 10/성공 0/오류 0
+  · 상태 in_progress · 처리 10/성공 0/오류 0
+  · 상태 in_progress · 처리 10/성공 0/오류 0
+  · 상태 in_progress · 처리 10/성공 0/오류 0
+  · 상태 in_progress · 처리 10/성공 0/오류 0
+  · 상태 in_progress · 처리 10/성공 0/오류 0
+  · 상태 in_progress · 처리 10/성공 0/오류 0
+  · 상태 in_progress · 처리 10/성공 0/오류 0
+  · 상태 in_progress · 처리 10/성공 0/오류 0
+  · 상태 in_progress · 처리 10/성공 0/오류 0
+  · 상태 ended · 처리 0/성공 10/오류 0
+  · ⚠️ 000660 파싱 실패: JSONDecodeError: Expecting ',' delimiter: line 99 column 71 (char 21738)
+  · ⚠️ 005930 파싱 실패: JSONDecodeError: Expecting ',' delimiter: line 81 column 8 (char 15197)
+  · ⚠️ 373220 파싱 실패: JSONDecodeError: Expecting ',' delimiter: line 124 column 73 (char 23094)
+  · ⚠️ 000270 파싱 실패: JSONDecodeError: Expecting ',' delimiter: line 53 column 137 (char 13415)
+  · ⚠️ 032830 파싱 실패: JSONDecodeError: Expecting ',' delimiter: line 108 column 258 (char 23202)
+  · ⚠️ 028260 파싱 실패: JSONDecodeError: Expecting ',' delimiter: line 39 column 4 (char 9865)
+
+✅ 회수 완료 · 성공 4/실패 6 · 총 보유 15개 → data/reports.js
