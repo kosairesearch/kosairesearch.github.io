@@ -758,7 +758,7 @@ KOS.stockCard = (d) => {
   const dir = d.change > 0 ? 'up' : d.change < 0 ? 'down' : 'flat';
   const arw = d.change > 0 ? '▲' : d.change < 0 ? '▼' : '–';
   return `
-  <a class="kos-card glass" href="Ticker Detail v2.html"
+  <a class="kos-card glass" href="Ticker Detail v2.html?ticker=${d.ticker}"
      data-name="${d.name}" data-ticker="${d.ticker}" data-sector="${d.sector}">
     <div class="kos-card__top">
       <span class="kos-ticker">${d.ticker}</span>
@@ -789,7 +789,7 @@ KOS.moverCard = (d, rank) => {
   const arw = d.change > 0 ? '▲' : d.change < 0 ? '▼' : '–';
   const col = d.change > 0 ? 'var(--up)' : d.change < 0 ? 'var(--down)' : 'var(--flat)';
   return `
-  <a class="mover-card glass" href="Ticker Detail v2.html">
+  <a class="mover-card glass" href="Ticker Detail v2.html?ticker=${d.ticker}">
     <span class="mover-rank">#${rank}</span>
     <div class="kos-card__top">
       <span class="kos-ticker">${d.ticker}</span>
@@ -964,7 +964,7 @@ function renderAC(){
     acList.innerHTML = `<div class="ac-empty">"${q.trim()}" ${KOS.T('검색 결과가 없습니다')}</div>`;
   } else {
     acList.innerHTML = acItems.map((s,i)=>
-      `<a class="ac-item" href="Ticker Detail v2.html" data-i="${i}" role="option">
+      `<a class="ac-item" href="Ticker Detail v2.html?ticker=${s.ticker}" data-i="${i}" role="option">
         <span class="ac-tk">${s.ticker}</span>
         <span class="ac-nm">${hl(KOS.T(s.name),q)}</span>
         <span class="ac-sec">${KOS.T(s.sector)}</span>
@@ -987,7 +987,7 @@ input.addEventListener('keydown', e=>{
   if(e.key==='ArrowDown'){ e.preventDefault(); setActive(acActive+1); }
   else if(e.key==='ArrowUp'){ e.preventDefault(); setActive(acActive-1); }
   else if(e.key==='Enter'){
-    if(acActive>=0 && acItems[acActive]){ e.preventDefault(); window.location.href='Ticker Detail v2.html'; }
+    if(acActive>=0 && acItems[acActive]){ e.preventDefault(); window.location.href='Ticker Detail v2.html?ticker='+acItems[acActive].ticker; }
   } else if(e.key==='Escape'){ closeAC(); }
 });
 document.addEventListener('click', e=>{ if(!e.target.closest('.search-wrap')) closeAC(); });

@@ -535,7 +535,7 @@ function sorted(){
 }
 function rowHtml(s){
   const dir=s.change>0?'up':s.change<0?'down':'flat',arw=s.change>0?'▲':s.change<0?'▼':'–';
-  return `<a class="wl-row" href="Ticker Detail v2.html" data-tk="${s.ticker}">
+  return `<a class="wl-row" href="Ticker Detail v2.html?ticker=${s.ticker}" data-tk="${s.ticker}">
     <button class="minus" data-remove="${s.ticker}" title="제거" aria-label="제거"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"><path d="M5 12h14"/></svg></button>
     <div class="c-nm">
       <div class="nm">${T(s.name)}</div>

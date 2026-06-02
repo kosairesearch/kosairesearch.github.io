@@ -1,0 +1,49 @@
+name: 🤖 AI 리서치 리포트 생성
+
+on:
+  schedule:
+    # 매주 월요일 오전 7시 KST (= UTC 일요일 22:00)
+    - cron: '0 22 * * 0'
+  workflow_dispatch:
+    # 수동 실행 (GitHub 웹에서 버튼 클릭)
+
+jobs:
+  reports:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+
+    steps:
+      - name: 코드 가져오기
+        uses: actions/checkout@v4
+
+      - name: Python 설정
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+          cache: 'pip'
+
+      - name: 패키지 설치
+        run: pip install -r requirements.txt
+
+      - name: 리포트 생성
+        env:
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+          REPORT_MODEL: ${{ vars.REPORT_MODEL || 'claude-opus-4-8' }}
+          REPORT_TOP_N: ${{ vars.REPORT_TOP_N || '5' }}
+        run: |
+          mkdir -p data
+          echo "=== 리포트 생성 시작 $(date -u) ===" > data/reports_run.log
+          python scripts/generate_reports.py 2>&1 | tee -a data/reports_run.log
+
+      - name: 변경사항 커밋 & 푸시
+        if: always()
+        run: |
+          git config --global user.email "bot@kosairesearch.github.io"
+          git config --global user.name "KOS ai Bot"
+          git add -A data/
+          git commit --allow-empty -m "🤖 AI 리포트 업데이트 $(TZ='Asia/Seoul' date +'%Y-%m-%d %H:%M KST')"
+          for i in 1 2 3 4 5; do
+            git pull --rebase origin main && git push origin main && break
+            echo "push 재시도 $i..."; sleep $((i*3))
+          done

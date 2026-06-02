@@ -582,7 +582,7 @@ function getList(){
 }
 function rowHtml(r,i){
   const dir=r.change>0?'up':r.change<0?'down':'flat',arw=r.change>0?'▲':r.change<0?'▼':'–';
-  return `<a class="rl-row" href="Ticker Detail v2.html" data-tk="${r.ticker}">
+  return `<a class="rl-row" href="Ticker Detail v2.html?ticker=${r.ticker}" data-tk="${r.ticker}">
     <span class="c-rank">${i+1}</span>
     <div class="c-nm"><div class="nm">${T(r.name)}</div>
       <div class="id"><span class="tk">${r.ticker}</span><span class="dot">·</span><span>${T(r.market)}</span><span class="dot">·</span><span>${T(r.sector)}</span></div></div>

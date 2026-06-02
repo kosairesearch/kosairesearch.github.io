@@ -1198,7 +1198,7 @@ function stkCard(s){
   const T=s=>(window.KOSi18n?KOSi18n.t(s):s);
   const price=EN?'₩'+s.price.toLocaleString('en-US'):s.price.toLocaleString('ko-KR')+'원';
   const pct=(s.change>0?'+':'')+s.change.toFixed(2)+'%';
-  return `<a class="stk glass" href="Ticker Detail v2.html">
+  return `<a class="stk glass" href="Ticker Detail v2.html?ticker=${s.ticker}">
     <div class="stk-top"><span class="stk-tk">${s.ticker}</span><span>#${s.rank} · ${s.mkt}</span></div>
     <h3 class="stk-name">${T(s.name)}</h3>
     <div class="stk-price-row"><span class="stk-price">${price}</span><span class="stk-chg ${dir}"><span style="font-size:10px">${arw}</span> ${pct}</span></div>

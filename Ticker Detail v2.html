@@ -288,6 +288,8 @@ table.dt .pos{color:var(--up);font-weight:700}table.dt .neg{color:var(--down);fo
 @media (max-width:479px){.mgrid{grid-template-columns:1fr}.th-now{font-size:34px}}
 
 </style>
+<script src="data/stocks.js"></script>
+<script src="data/reports.js"></script>
 <script>
 /* ============================================================
    KOS ai — lightweight in-place i18n (KO ⇄ EN)
@@ -712,309 +714,45 @@ KOSi18n.register({
 </div>
 
 <!-- STICKY PRICE BAR -->
-<div class="stickybar" id="stickybar">
+<div class="stickybar" id="stickybar" data-i18n-skip>
   <div class="inner">
-    <span class="sb-name">삼성전자</span>
-    <span class="sb-tk">005930 · KOSPI</span>
-    <span class="sb-price">78,400원</span>
-    <span class="sb-chg up">▲ +1.55%</span>
+    <span class="sb-name" id="sbName"></span>
+    <span class="sb-tk" id="sbTk"></span>
+    <span class="sb-price" id="sbPrice"></span>
+    <span class="sb-chg" id="sbChg"></span>
     <span class="sb-spacer"></span>
-    <button class="watch-btn" id="watchBtnTop">워치리스트</button>
+    <button class="watch-btn" id="watchBtnTop"></button>
   </div>
 </div>
 
-<div class="wrap" data-screen-label="03 Ticker Detail">
+<div class="wrap" data-screen-label="03 Ticker Detail" data-i18n-skip>
 
-  <div class="crumb"><a href="Home.html">홈</a> / <a href="Industry v2.html">반도체</a> / <b>삼성전자 (005930)</b></div>
+  <div class="crumb" id="crumb"></div>
 
   <!-- ===== HEADER CARD ===== -->
   <header class="tk-head glass">
-    <!-- identity + price -->
     <div class="th-sec">
-      <div class="th-id-row">
-        <span>005930</span><span class="sep">·</span><span>KOSPI</span><span class="sep">·</span><span>반도체</span>
-      </div>
+      <div class="th-id-row" id="thId"></div>
       <div class="th-name-row">
-        <h1 class="th-name">삼성전자</h1>
-        <button class="watch-btn" id="watchBtn"><span id="watchTxt">워치리스트 추가</span></button>
+        <h1 class="th-name" id="thName"></h1>
+        <button class="watch-btn" id="watchBtn"><span id="watchTxt"></span></button>
       </div>
-      <div class="th-meta">Samsung Electronics Co., Ltd. · 결산월 12월 · 대표 한종희·전영현 · 상장일 1975-06-11</div>
-
+      <div class="th-meta" id="thMeta"></div>
       <div class="th-price" style="margin-top:22px">
-        <span class="th-now">78,400원</span>
-        <span class="th-chg up">▲ +1,200 (+1.55%)</span>
-        <div class="th-vol">
-          <div class="v"><span class="k">거래량</span><span class="n">8,920,154주</span></div>
-          <div class="v"><span class="k">거래대금</span><span class="n">1.42조원</span></div>
-        </div>
-        <span class="th-ts">
-</span>
+        <span class="th-now" id="thNow"></span>
+        <span class="th-chg" id="thChg"></span>
+        <div class="th-vol" id="thVol"></div>
       </div>
     </div>
-
-    <!-- 8 metrics -->
     <div class="th-sec">
-      <div class="mgrid">
-        <div class="m"><div class="k">현재가</div><div class="val">349,000원</div><div class="peer">코스피 · 반도체</div></div>
-        <div class="m"><div class="k">전일 대비</div><div class="val"><span class="d up">+5.84%</span></div><div class="peer">+19,300원</div></div>
-        <div class="m"><div class="k">시가총액</div><div class="val">2,066조원</div><div class="peer">코스피 <b>1위</b></div></div>
-        <div class="m"><div class="k">거래대금</div><div class="val">13.7조원</div><div class="peer">당일 누계</div></div>
-        <div class="m"><div class="k">거래량</div><div class="val">3,936만주</div><div class="peer">당일 누계</div></div>
-        <div class="m"><div class="k">상장주식수</div><div class="val">59.2억주</div><div class="peer">보통주</div></div>
-        <div class="m"><div class="k">52주 최고</div><div class="val">349,000원</div><div class="peer">현재가 부근</div></div>
-        <div class="m"><div class="k">52주 최저</div><div class="val">78,000원</div><div class="peer">+347%</div></div>
-      </div>
-    </div>
-
-    <!-- secondary + returns -->
-    <div class="th-sec">
-      <div class="th-grid2">
-        <div class="kv">
-          <div class="row"><span class="k">52주 최고/최저</span><span class="v">88,800 / 59,200원</span><span class="x">최고 -11.7% · 최저 +32.4%</span></div>
-          <div class="row"><span class="k">외국인 지분율</span><span class="v">53.42%</span><span class="x">1개월 +0.38%p</span></div>
-          <div class="row"><span class="k">주요주주</span>
-            <div class="holders">
-              <span class="h">이재용 외 특수관계인<b>20.78%</b></span>
-              <span class="h">국민연금<b>7.32%</b></span>
-              <span class="h">BlackRock<b>5.04%</b></span>
-            </div>
-          </div>
-        </div>
-        <div>
-          <div class="ret-label">수익률 · 절대 / KOSPI 대비</div>
-          <table class="ret-tbl">
-            <thead><tr><th></th><th>1M</th><th>3M</th><th>6M</th><th>12M</th></tr></thead>
-            <tbody>
-              <tr><td>절대</td><td class="up">+6.21%</td><td class="up">+14.85%</td><td class="down">-3.12%</td><td class="up">+22.40%</td></tr>
-              <tr><td>KOSPI 대비</td><td class="up">+2.84%</td><td class="up">+9.17%</td><td class="down">-7.65%</td><td class="up">+11.02%</td></tr>
-            </tbody>
-          </table>
-        </div>
-      </div>
+      <div class="mgrid" id="mgrid"></div>
     </div>
   </header>
 
-  <!-- ① 리포트 개요 -->
-  <section class="sec col overview">
-    <div class="sec-kicker"><span class="sec-num">01</span> · REPORT OVERVIEW</div>
-    <h2 class="sec-title">리포트 개요</h2>
-    <p class="lead">메모리 사이클 회복과 HBM 양산이 동사 실적의 핵심 변수로 작용</p>
-    <p class="desc">DRAM 가격 반등과 HBM3E 12단 양산 시점이 2026년 이익 가시성을 좌우하고 있다.</p>
-    <ol class="kpoints">
-      <li>2025년 3분기 영업이익 12.2조원으로 컨센서스(11.4조원)를 +7.0% 상회하며 메모리 회복 국면이 본격화되었다.</li>
-      <li>HBM3E 12단의 엔비디아향 퀄(qualification) 진행 속도가 2026년 점유율 회복의 핵심 변수로 부상하였다.</li>
-      <li>파운드리 부문은 2024년 약 4조원 적자에서 점진적 손익 개선이 진행 중이나 가동률 정상화 시점은 여전히 변수이다.</li>
-    </ol>
-    <div class="rep-meta">
-      <span><b>리포트 작성일</b>2026-05-25</span>
-      <span><b>데이터 기준일</b>2026-05-23</span>
-      <span><b>참고 출처</b>DART · 한국거래소 · 네이버금융</span>
-    </div>
-  </section>
+  <!-- ===== AI REPORT BODY (rendered) ===== -->
+  <div id="reportBody"></div>
 
-  <hr class="hairline" />
-
-  <!-- ② 핵심 요약 -->
-  <section class="sec col">
-    <div class="sec-kicker"><span class="sec-num">02</span> · SUMMARY</div>
-    <h2 class="sec-title">핵심 요약</h2>
-    <div class="tldr glass">
-      <p>동사는 메모리 반도체(DRAM·NAND), 시스템 반도체(파운드리·LSI), 모바일(MX), 가전(VD·DA), 전장(하만) 등 복합 사업구조를 보유하고 있다. 2025년 들어 메모리 가격 회복과 HBM 출하 확대로 실적은 회복 국면에 진입하였으며, 3분기 영업이익은 전년동기 대비 +274% y-y 증가한 12.2조원을 기록하였다. 다만 HBM 부문에서의 후발 주자 부담, 파운드리 부문의 적자 지속, 미·중 수출 규제 등은 여전한 변수로 남아 있다. 향후 실적은 메모리 사이클의 지속성, HBM3E 12단의 양산 안착 시점, 파운드리 가동률 회복 속도가 결정할 것으로 추정된다.</p>
-    </div>
-  </section>
-
-  <hr class="hairline" />
-
-  <!-- ③ 사업 구조 -->
-  <section class="sec col">
-    <div class="sec-kicker"><span class="sec-num">03</span> · BUSINESS</div>
-    <h2 class="sec-title">동사 사업 구조</h2>
-    <div class="prose">
-      <p>동사는 크게 5개 사업부문으로 구성된다. DS(Device Solutions, 반도체) 부문은 메모리(DRAM·NAND)와 시스템LSI·파운드리로 구분되며, 2024년 매출 기준 전사 매출의 약 38%를 차지한다. 메모리는 DRAM 시장점유율 약 42%, NAND 약 33%로 글로벌 1위 지위를 유지하고 있다.</p>
-      <p>MX(Mobile eXperience) 부문은 갤럭시 스마트폰·태블릿·웨어러블을 담당하며, 매출 비중은 약 30% 수준이다. 2024년 기준 글로벌 스마트폰 출하량은 약 2.2억 대로 시장점유율 1위를 기록하였다. 다만 프리미엄 시장에서의 애플 대비 격차, 중저가 시장에서의 중국 업체와의 경쟁 심화는 지속되는 변수이다.</p>
-      <p>VD(Visual Display)·DA(Digital Appliances) 부문은 TV·생활가전을 담당한다. 글로벌 TV 시장에서 19년 연속 1위를 유지하고 있으며, OLED·QLED 등 프리미엄 제품 비중 확대를 추진 중이다. 다만 글로벌 가전 수요 둔화와 패널 가격 변동성은 동 부문 마진의 핵심 변수로 작용한다.</p>
-      <p>하만(Harman) 부문은 차량용 인포테인먼트와 프리미엄 오디오를 담당한다. 2024년 기준 매출 약 14조원, 영업이익률 약 9% 수준으로, 전장 시장 성장의 직접적 수혜를 받고 있다. Network 부문은 5G 통신장비를 담당하며 매출 비중은 상대적으로 낮으나 6G 시대를 대비한 R&D 투자가 진행 중이다.</p>
-      <p>종합하면 동사는 메모리 사이클에 가장 큰 민감도를 가진 종목이나, MX·VD·하만 등 비메모리 사업의 안정적 현금 창출이 사이클 변동성을 일부 완충하는 구조이다. 그러나 영업이익의 절대 규모는 DS 부문이 좌우하며, 2025년 전사 영업이익의 약 70%가 메모리에서 발생한 것으로 추정된다.</p>
-    </div>
-    <div class="subhead">2024년 매출 구성</div>
-    <div class="tbl-card glass">
-      <div class="tbl-cap">단위: 조원 · 부문 간 거래 제거 전</div>
-      <div class="tbl-scroll">
-        <table class="dt">
-          <thead><tr><th>사업부문</th><th class="note" style="text-align:left">주요 제품·서비스</th><th>매출</th><th>비중</th></tr></thead>
-          <tbody>
-            <tr><td>DS (반도체)</td><td class="note">메모리 · 시스템LSI · 파운드리</td><td>115.6</td><td>38.4%</td></tr>
-            <tr><td>MX (모바일)</td><td class="note">갤럭시 스마트폰 · 태블릿 · 웨어러블</td><td>90.6</td><td>30.1%</td></tr>
-            <tr><td>VD·DA</td><td class="note">TV · 냉장고 · 에어컨 · 세탁기</td><td>53.5</td><td>17.8%</td></tr>
-            <tr><td>하만 (전장)</td><td class="note">차량용 인포테인먼트 · 프리미엄 오디오</td><td>25.6</td><td>8.5%</td></tr>
-            <tr><td>Network · 기타</td><td class="note">5G 통신장비 · 기타</td><td>15.6</td><td>5.2%</td></tr>
-            <tr class="total"><td>합계</td><td class="note"></td><td>300.9</td><td>100.0%</td></tr>
-          </tbody>
-        </table>
-      </div>
-    </div>
-    <div class="tbl-foot">출처: DART 사업보고서 · 매출 기준</div>
-  </section>
-
-  <hr class="hairline" />
-
-  <!-- ④ 최근 실적 -->
-  <section class="sec col">
-    <div class="sec-kicker"><span class="sec-num">04</span> · RECENT RESULTS</div>
-    <h2 class="sec-title">최근 실적</h2>
-    <div class="prose">
-      <p>동사의 2025년 3분기 매출은 79.1조원으로 전년동기 대비 +8.4% y-y, 영업이익은 12.2조원으로 +274% y-y 증가하며 시장 컨센서스(매출 78.3조원, 영업이익 11.4조원)를 상회하였다. 영업이익률은 15.4%로 전년동기 4.5% 대비 큰 폭의 개선이 진행되었다.</p>
-      <p>DS 부문 영업이익은 8.7조원으로 전년동기 3.9조원 대비 +123% y-y 증가하였다. 메모리 가격 상승과 HBM 출하 확대가 주효했으며, DRAM ASP 상승률은 +14% q-q, NAND는 +9% q-q를 기록하였다. 다만 파운드리 부문은 약 1.1조원 적자가 지속된 것으로 추정되며, 가동률은 60% 수준으로 정상화에 시간이 필요한 상황이다.</p>
-      <p>MX 부문 영업이익은 2.4조원으로 전년동기 대비 +12% y-y 증가하였다. 갤럭시 S25 시리즈의 견조한 판매와 평균판매가격(ASP) 개선이 주효했으나, 비메모리 부품 원가 상승은 부담 요인으로 작용하였다.</p>
-      <p>종합하면 3분기 실적은 메모리 회복이 견인한 결과로, 비메모리 사업부의 둔화가 일부 상쇄 요인으로 작용하였다. 컨센서스 상회의 핵심 동인은 메모리 ASP 상승률이 시장 예상치를 +3~5%p 상회한 데 있다.</p>
-    </div>
-    <div class="subhead">분기별 매출·영업이익 추이</div>
-    <div class="tbl-card glass">
-      <div class="tbl-cap">단위: 조원 · 2023년 1Q ~ 2025년 3Q</div>
-      <div class="tbl-scroll">
-        <table class="dt">
-          <thead><tr><th></th><th>1Q24</th><th>2Q24</th><th>3Q24</th><th>4Q24</th><th>1Q25</th><th>2Q25</th><th>3Q25</th></tr></thead>
-          <tbody>
-            <tr><td>매출액</td><td>71.9</td><td>74.1</td><td>79.1</td><td>75.8</td><td>74.6</td><td>76.4</td><td>79.1</td></tr>
-            <tr><td>영업이익</td><td>6.6</td><td>10.4</td><td>9.2</td><td>6.5</td><td>7.4</td><td>9.8</td><td>12.2</td></tr>
-            <tr class="sub"><td>영업이익률</td><td>9.2%</td><td>14.1%</td><td>11.6%</td><td>8.6%</td><td>9.9%</td><td>12.8%</td><td>15.4%</td></tr>
-          </tbody>
-        </table>
-      </div>
-    </div>
-    <div class="tbl-foot">출처: 동사 분기보고서 · 컨센서스는 FnGuide 24개 증권사 평균</div>
-  </section>
-
-  <hr class="hairline" />
-
-  <!-- ⑤ 전망 -->
-  <section class="sec col">
-    <div class="sec-kicker"><span class="sec-num">05</span> · OUTLOOK</div>
-    <h2 class="sec-title">다음 분기 및 연간 전망</h2>
-    <div class="prose">
-      <p>2025년 4분기 매출은 78.5조원, 영업이익은 13.1조원 수준으로 시장 컨센서스가 형성되어 있다. 메모리 비트그로스(bit growth)는 DRAM +5% q-q, NAND +7% q-q로 추정되며, ASP 상승률은 DRAM +8~10% q-q로 전망된다. HBM 출하 비중 확대로 메모리 부문 영업이익률은 30% 중반대까지 회복될 가능성이 거론되고 있다.</p>
-      <p>2026년 연간 매출 컨센서스는 332조원, 영업이익은 64조원 수준으로 추정된다. 이는 메모리 사이클의 연착륙과 HBM3E 12단 양산의 본격화를 가정한 수치이다. 다만 컨센서스 분포는 영업이익 기준 55조~78조원의 넓은 편차를 보이고 있어, 시장의 의견이 분기되고 있는 것으로 해석된다.</p>
-      <p>파운드리 부문은 2026년에도 적자가 지속될 가능성이 시장 컨센서스로 자리잡고 있으나, 적자폭은 2024년 4조원 대비 점진적으로 축소될 것으로 추정된다. 3나노 GAA 공정의 신규 고객 확보가 손익 개선의 핵심 변수로 거론된다.</p>
-    </div>
-    <div class="subhead">사업부별 매출·영업이익 추정</div>
-    <div class="tbl-card glass">
-      <div class="tbl-cap">단위: 조원 · 2024 실적 vs 2025E·2026E 컨센서스</div>
-      <div class="tbl-scroll">
-        <table class="dt">
-          <thead><tr><th></th><th>'24 매출</th><th>'24 영익</th><th>'25E 매출</th><th>'25E 영익</th><th>'26E 매출</th><th>'26E 영익</th></tr></thead>
-          <tbody>
-            <tr><td>DS (반도체)</td><td>115.6</td><td>15.1</td><td>132.4</td><td>34.2</td><td>148.0</td><td>42.5</td></tr>
-            <tr class="sub"><td>메모리</td><td>78.4</td><td>17.8</td><td>96.5</td><td>36.8</td><td>110.2</td><td>44.0</td></tr>
-            <tr class="sub"><td>시스템LSI·파운드리</td><td>37.2</td><td class="neg">-2.7</td><td>35.9</td><td class="neg">-2.6</td><td>37.8</td><td class="neg">-1.5</td></tr>
-            <tr><td>MX (모바일)</td><td>90.6</td><td>10.6</td><td>92.4</td><td>11.2</td><td>94.5</td><td>12.0</td></tr>
-            <tr><td>VD·DA</td><td>53.5</td><td>2.2</td><td>52.1</td><td>1.7</td><td>52.8</td><td>2.4</td></tr>
-            <tr><td>하만</td><td>25.6</td><td>2.4</td><td>26.8</td><td>2.5</td><td>28.1</td><td>2.7</td></tr>
-            <tr><td>Network · 기타</td><td>15.6</td><td>1.0</td><td>14.9</td><td>0.7</td><td>15.4</td><td>0.9</td></tr>
-            <tr class="total"><td>합계</td><td>300.9</td><td>32.7</td><td>318.6</td><td>50.3</td><td>338.8</td><td>60.5</td></tr>
-          </tbody>
-        </table>
-      </div>
-    </div>
-    <div class="tbl-foot">출처: 동사 IR 및 FnGuide 컨센서스 평균 (2026-05-23 기준)</div>
-  </section>
-
-  <hr class="hairline" />
-
-  <!-- ⑥ 강세 요인 -->
-  <section class="sec col">
-    <div class="sec-kicker"><span class="sec-num">06</span> · BULL FACTORS</div>
-    <h2 class="sec-title">강세 요인</h2>
-    <div class="factor bull"><p class="fh"><span class="mk">▲</span>HBM 수요 강세와 점유율 확보 여력</p><p>엔비디아·AMD의 AI 가속기 출하 확대에 따른 HBM3E 수요는 2026년에도 공급 부족 국면이 지속될 전망이다. 동사의 HBM3E 12단 양산이 2025년 4분기 본격화될 경우 점유율 격차 축소 여지가 존재한다. TrendForce는 동사 HBM 점유율이 2025년 32%에서 2026년 38% 수준까지 회복될 가능성을 제시하고 있다.</p></div>
-    <div class="factor bull"><p class="fh"><span class="mk">▲</span>메모리 가격 회복 사이클의 지속성</p><p>DRAM 현물가격은 2024년 4분기 이후 7개 분기 연속 상승세를 이어가고 있다. 글로벌 빅3 모두 CAPEX 절제 기조를 유지하고 있어, 2026년 상반기까지 수급 타이트 국면이 지속될 가능성이 거론된다. 이는 메모리 부문 영업이익률의 추가 개선 여지로 작용할 수 있다.</p></div>
-    <div class="factor bull"><p class="fh"><span class="mk">▲</span>파운드리 첨단 공정의 신규 고객 확보 가능성</p><p>3나노 GAA 공정의 수율이 60% 중반대까지 개선된 것으로 추정되며, 최근 신규 협력 논의가 시장에 거론되고 있다. 다만 실제 계약 체결과 양산 시점에 대한 가시성은 제한적이므로, 손익 기여는 빠르면 2026년 하반기부터 가시화될 가능성이 있다.</p></div>
-    <div class="factor bull"><p class="fh"><span class="mk">▲</span>자사주 매입·소각 정책의 안정성</p><p>동사는 2024년 발표한 10조원 규모 자사주 매입 프로그램을 진행 중이며, 매입분의 약 70%를 소각 처리하는 정책을 유지하고 있다. FCF 기준 주주환원율은 2024년 약 55% 수준으로 글로벌 메모리 피어 대비 안정적으로 평가된다.</p></div>
-    <div class="factor bull"><p class="fh"><span class="mk">▲</span>원/달러 환율의 우호적 환경</p><p>원/달러 환율은 1,380~1,420원 범위에서 횡보 중이며, 매출의 약 90%가 외화 표시인 점을 고려하면 영업 레버리지 효과가 지속되고 있다. 환율이 현 수준을 유지할 경우 2026년 영업이익에 약 3~5조원의 우호적 영향이 추정된다.</p></div>
-  </section>
-
-  <hr class="hairline" />
-
-  <!-- ⑦ 약세 요인 -->
-  <section class="sec col">
-    <div class="sec-kicker"><span class="sec-num">07</span> · BEAR FACTORS</div>
-    <h2 class="sec-title">약세 요인</h2>
-    <div class="factor bear"><p class="fh"><span class="mk">▼</span>HBM 시장에서의 후발 주자 부담</p><p>동사의 HBM3E 양산은 SK하이닉스 대비 약 6~9개월의 시차가 존재한다. 엔비디아향 HBM3E 12단 퀄이 지연될 경우 2026년 점유율 회복 시나리오의 실현이 어려워질 가능성이 있다. HBM4 세대에서도 경쟁사의 선제적 양산 발표가 부담 요인으로 작용하고 있다.</p></div>
-    <div class="factor bear"><p class="fh"><span class="mk">▼</span>메모리 사이클의 단기 피크 우려</p><p>DRAM 가격 상승률은 2025년 3분기를 정점으로 둔화 흐름이 일부 관찰되고 있다. 일부 시장 참가자는 2026년 2분기 이후 사이클 정점 가능성을 거론하고 있으며, 이 경우 영업이익은 컨센서스 대비 10~15% 하향 조정 압력을 받을 가능성이 있다.</p></div>
-    <div class="factor bear"><p class="fh"><span class="mk">▼</span>파운드리 부문의 구조적 적자 지속</p><p>2024년 파운드리 부문 적자는 약 4조원으로 추정되며, 가동률은 60% 수준으로 손익분기점(약 80%)에 미달하는 상황이 지속되고 있다. TSMC 대비 첨단 공정 격차가 1~2세대 수준으로 평가되며, 단기간 내 격차 축소에 대한 가시성은 제한적이다.</p></div>
-    <div class="factor bear"><p class="fh"><span class="mk">▼</span>중국 메모리 업체의 추격 가속화</p><p>CXMT는 2025년 DDR5 양산에 진입하였으며, YMTC는 232단 NAND 양산을 본격화한 것으로 알려져 있다. 중국 정부의 보조금 지원과 내수 수요를 기반으로 한 점유율 확대는 중장기적으로 동사 가격 결정력에 부담 요인으로 작용할 수 있다.</p></div>
-    <div class="factor bear"><p class="fh"><span class="mk">▼</span>미·중 수출 규제 강화 리스크</p><p>미국 상무부는 2025년 중국향 HBM 수출에 대한 추가 규제를 검토 중인 것으로 알려져 있다. 동사 매출에서 중국 비중은 약 30%로, 규제 강화 시 직접적 매출 영향이 발생할 수 있다.</p></div>
-  </section>
-
-  <hr class="hairline" />
-
-  <!-- ⑨ 리스크 -->
-  <section class="sec col">
-    <div class="sec-kicker"><span class="sec-num">09</span> · RISK</div>
-    <h2 class="sec-title">리스크 요인</h2>
-    <div class="risk">
-      <div class="cat">거시 리스크</div>
-      <div class="body">글로벌 경기 둔화 시 IT 수요 약세가 메모리·스마트폰·가전 전 사업부에 동시 영향을 미칠 수 있다. 미국 연준의 금리 정책 변화에 따른 환율·원자재 가격 변동, 중국 경기 회복 속도는 글로벌 매출의 약 90%를 외화로 인식하는 동사 구조에 직접적인 영향을 미친다.</div>
-      <div class="cat">산업 리스크</div>
-      <div class="body">메모리 사이클의 단기 변동성은 동사 이익 변동의 가장 큰 원인이다. DRAM·NAND 가격이 정점에서 하락 전환할 경우 분기 영업이익이 30~50% 감소하는 사례가 과거 다수 관찰되었다. 중국 CXMT·YMTC의 점유율 확대도 중장기 가격 결정력 약화 요인이다.</div>
-      <div class="cat">기업 고유</div>
-      <div class="body">파운드리 부문의 적자 지속과 가동률 부진은 손익 개선의 핵심 제약이다. 또한 동사의 지배구조 관련 이슈는 외국인 투자자의 밸류에이션 디스카운트 요인으로 거론되어 왔으며, 그룹 차원의 지배구조 개편 가능성은 잠재 변수로 남아 있다.</div>
-      <div class="cat">규제 리스크</div>
-      <div class="body">미국의 대중 첨단 반도체 수출 통제 강화와 HBM에 대한 추가 규제 검토는 매출 약 30%를 차지하는 중국향 비즈니스에 직접적 영향을 미친다. EU의 AI Act 등 규제 환경 변화도 잠재적 비용 증가 요인으로 작용할 수 있다.</div>
-    </div>
-  </section>
-
-  <hr class="hairline" />
-
-  <!-- ⑩ 재무 데이터 -->
-  <section class="sec col">
-    <div class="sec-kicker"><span class="sec-num">10</span> · FINANCIALS</div>
-    <h2 class="sec-title">재무 데이터 · 5개년</h2>
-    <div class="fin-tabs" id="finTabs">
-      <button class="fin-tab active" data-fin="income">포괄손익계산서</button>
-      <button class="fin-tab" data-fin="balance">재무상태표</button>
-      <button class="fin-tab" data-fin="cash">현금흐름표</button>
-    </div>
-    <div class="tbl-card glass">
-      <div class="tbl-cap" id="finCap">단위: 조원 · 연결 기준 · 2022~2024 실적, 2025E·2026E 컨센서스</div>
-      <div class="tbl-scroll">
-        <table class="dt">
-          <thead><tr><th></th><th>2022A</th><th>2023A</th><th>2024A</th><th>2025E</th><th>2026E</th></tr></thead>
-          <tbody id="finBody" data-i18n-skip></tbody>
-        </table>
-      </div>
-    </div>
-    <div class="tbl-foot">출처: DART 사업보고서 · 컨센서스는 FnGuide 기준 (2026-05-23) · A=Actual, E=Estimate</div>
-  </section>
-
-  <hr class="hairline" />
-
-  <!-- ⑪ 최근 동향 -->
-  <section class="sec col">
-    <div class="sec-kicker"><span class="sec-num">11</span> · NEWS</div>
-    <h2 class="sec-title">최근 동향 및 공시</h2>
-    <div class="timeline">
-      <div class="tl major"><div class="tl-date">2026-05-23 · 5일 전 <span class="badge">실적 발표</span></div><p>1분기 잠정실적 발표 — 매출 79.4조원, 영업이익 13.5조원으로 컨센서스(영업이익 12.8조원)를 +5.5% 상회하였다. 메모리 ASP가 시장 예상치를 +2~3%p 상회한 것이 주요 동인으로 분석되고 있다.</p></div>
-      <div class="tl"><div class="tl-date">2026-05-15 · 10일 전 <span class="badge">산업 뉴스</span></div><p>엔비디아 GTC 2026에서 차세대 AI 가속기 'Blackwell Ultra' 공개. 탑재 메모리로 HBM3E 12단이 채택되었으며, 동사와 SK하이닉스가 듀얼소싱 공급사로 거론되고 있다.</p></div>
-      <div class="tl"><div class="tl-date">2026-05-08 · 17일 전 <span class="badge">공시</span></div><p>자기주식 매입 진행 상황 공시 — 2024년 10월 발표한 10조원 자사주 매입 프로그램 중 누적 6.4조원 매입 완료. 잔여 3.6조원은 2026년 4분기까지 매입 완료 예정으로 안내되었다.</p></div>
-      <div class="tl major"><div class="tl-date">2026-04-22 · 1개월 전 <span class="badge">기술 동향</span></div><p>HBM3E 12단 엔비디아향 퀄 통과 보도 — 복수 외신을 통해 동사의 HBM3E 12단 제품이 엔비디아 퀄을 통과한 것으로 보도되었다. 공식 확인은 이루어지지 않았으나 양산 본격화 가능성이 시장에서 거론되고 있다.</p></div>
-      <div class="tl"><div class="tl-date">2026-04-10 · 1.5개월 전 <span class="badge">신제품</span></div><p>갤럭시 Z 폴드7·플립7 글로벌 출시 — 사전예약 물량은 전작 대비 +18% 증가한 것으로 집계되었다. 온디바이스 AI 기능 강화와 디스플레이 내구성 개선이 차별화 포인트로 마케팅되었다.</p></div>
-      <div class="tl"><div class="tl-date">2026-03-20 · 2개월 전 <span class="badge">규제</span></div><p>미국 상무부, 중국향 HBM 수출 통제 검토 보도 — HBM3 이상 제품의 중국향 수출에 대한 추가 규제 검토가 진행 중인 것으로 알려졌으며, 동사 매출에 대한 영향은 제한적이라는 시장 의견이 우세하다.</p></div>
-    </div>
-  </section>
-
-  <hr class="hairline" />
-
-  <!-- ⑫ 정리 -->
-  <section class="sec col">
-    <div class="sec-kicker"><span class="sec-num">12</span> · WRAP-UP</div>
-    <h2 class="sec-title">정리</h2>
-    <div class="wrapup glass">
-      <div class="label">관전 포인트</div>
-      <p>동사의 2026년 실적 가시성은 메모리 사이클의 지속성, HBM3E 12단의 엔비디아향 양산 안착 시점, 파운드리 부문의 가동률 회복 속도라는 세 가지 변수에 의해 결정될 것으로 추정된다.</p>
-      <p>주요 모니터링 지표는 ① 분기별 HBM 출하 비중, ② DRAM·NAND ASP 변동률, ③ 파운드리 부문 영업적자 축소 속도, ④ 원/달러 환율 흐름이다.</p>
-    </div>
-  </section>
-
-  <div class="disclaimer"><b>면책 조항</b> · 본 콘텐츠는 AI가 공시·시장 데이터를 분석한 정보 제공용이며, 투자 권유나 추천이 아닙니다. 투자 판단과 책임은 투자자 본인에게 있습니다. 본문의 컨센서스·전망치는 시장 평균을 정리한 것이며 결과를 보증하지 않습니다. 데이터는 지연될 수 있으며 오류가 포함될 수 있습니다.</div>
+  <div class="disclaimer" id="disclaimer"></div>
 
 </div>
 
@@ -1035,67 +773,138 @@ KOSi18n.register({
 </footer>
 
 <script>
-/* ===== finance tab data ===== */
-const FIN={
-  income:{cap:'단위: 조원 · 연결 기준 · 2022~2024 실적, 2025E·2026E 컨센서스',rows:[
-    {k:'매출액',v:['302.2','258.9','300.9','318.6','338.8']},
-    {k:'매출원가',v:['190.0','180.4','193.2','192.5','200.1']},
-    {k:'매출총이익',v:['112.2','78.5','107.7','126.1','138.7']},
-    {k:'매출총이익률',v:['37.1%','30.3%','35.8%','39.6%','40.9%'],sub:1},
-    {k:'판매비와관리비',v:['68.8','71.9','75.0','75.8','78.2']},
-    {k:'영업이익',v:['43.4','6.6','32.7','50.3','60.5']},
-    {k:'영업이익률',v:['14.4%','2.5%','10.9%','15.8%','17.9%'],sub:1},
-    {k:'법인세차감전이익',v:['45.4','8.0','34.5','52.4','62.9']},
-    {k:'당기순이익',v:['36.2','12.4','27.4','41.9','50.3'],total:1},
-  ]},
-  balance:{cap:'단위: 조원 · 연결 기준 · 2022~2024 실적, 2025E·2026E 추정',rows:[
-    {k:'자산총계',v:['448.4','455.9','470.2','502.1','540.3']},
-    {k:'유동자산',v:['218.4','195.9','218.8','235.0','255.4'],sub:1},
-    {k:'비유동자산',v:['230.0','260.0','251.4','267.1','284.9'],sub:1},
-    {k:'부채총계',v:['93.7','92.2','96.1','100.4','104.8']},
-    {k:'유동부채',v:['78.3','75.7','80.2','83.5','86.9'],sub:1},
-    {k:'비유동부채',v:['15.4','16.5','15.9','16.9','17.9'],sub:1},
-    {k:'자본총계',v:['354.7','363.7','374.1','401.7','435.5'],total:1},
-    {k:'부채비율',v:['26.4%','25.3%','25.7%','25.0%','24.1%'],sub:1},
-  ]},
-  cash:{cap:'단위: 조원 · 연결 기준 · 2022~2024 실적, 2025E·2026E 추정',rows:[
-    {k:'영업활동 현금흐름',v:['62.1','44.1','58.8','72.4','82.6']},
-    {k:'투자활동 현금흐름',v:['-31.6','-52.4','-42.8','-48.0','-52.0']},
-    {k:'재무활동 현금흐름',v:['-19.2','-12.6','-14.1','-16.5','-18.0']},
-    {k:'CAPEX',v:['-49.4','-53.1','-45.2','-50.0','-54.0'],sub:1},
-    {k:'잉여현금흐름 (FCF)',v:['12.7','-9.0','13.6','22.4','28.6'],total:1},
-  ]},
-};
-const finBody=document.getElementById('finBody'),finCap=document.getElementById('finCap');
-const T=s=>(window.KOSi18n?KOSi18n.t(s):s);
-function renderFin(key){
-  const d=FIN[key];finCap.textContent=T(d.cap);
-  finBody.innerHTML=d.rows.map(r=>{
-    const cls=r.total?'total':r.sub?'sub':'';
-    const neg=v=>/^-/.test(v)?`<span class="neg">${v}</span>`:v;
-    return `<tr class="${cls}"><td>${T(r.k)}</td>${r.v.map(v=>`<td>${neg(v)}</td>`).join('')}</tr>`;
-  }).join('');
-}
-renderFin('income');
-document.getElementById('finTabs').addEventListener('click',e=>{
-  const b=e.target.closest('.fin-tab');if(!b)return;
-  document.querySelectorAll('#finTabs .fin-tab').forEach(t=>t.classList.toggle('active',t===b));
-  renderFin(b.dataset.fin);
-});
+/* ===== AI report render ===== */
+(function(){
+  var LIVE=(window.KOS_LIVE_DATA&&window.KOS_LIVE_DATA.stocks)||[];
+  var REPORTS=(window.KOS_REPORTS&&window.KOS_REPORTS.reports)||{};
+  var RMETA=window.KOS_REPORTS||{};
+  function qp(n){ return new URLSearchParams(location.search).get(n); }
+  var TK=qp('ticker');
+  if(!TK){ var ks=Object.keys(REPORTS); TK=ks[0]||(LIVE[0]&&LIVE[0].ticker)||'005930'; }
+  var STOCK=null,i; for(i=0;i<LIVE.length;i++){ if(LIVE[i].ticker===TK){ STOCK=LIVE[i]; break; } }
+  var REP=REPORTS[TK]||null;
+  if(!STOCK){ STOCK={ ticker:TK, name:(REP?REP.name:TK), name_en:(REP?REP.name_en:TK),
+    market:(REP?REP.market:''), sector:(REP?REP.sector:''), price:null, change:0,
+    mcap:null, trading_value:null, volume:null, shares:null, rank:null }; }
 
-/* ===== watchlist toggle ===== */
-let watched=false;
-function syncWatch(){
-  const txt=document.getElementById('watchTxt');
-  document.getElementById('watchBtn').classList.toggle('on',watched);
-  document.getElementById('watchBtnTop').classList.toggle('on',watched);
-  if(txt)txt.textContent=T(watched?'워치리스트 추가됨':'워치리스트 추가');
-  try{localStorage.setItem('kos-watch-005930',watched?'1':'0')}catch(e){}
-}
-try{watched=localStorage.getItem('kos-watch-005930')==='1'}catch(e){}
-syncWatch();
-document.getElementById('watchBtn').addEventListener('click',()=>{watched=!watched;syncWatch();});
-document.getElementById('watchBtnTop').addEventListener('click',()=>{watched=!watched;syncWatch();});
+  function L(){ return (window.KOSi18n?KOSi18n.lang:'ko'); }
+  function tname(x){ return (window.KOSi18n?KOSi18n.t(x):x); }
+  function pk(o){ if(o==null)return ''; if(typeof o==='string')return o; return (L()==='en'?(o.en||o.ko):(o.ko||o.en))||''; }
+  function esc(x){ return String(x==null?'':x).replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;'); }
+
+  var UI={
+    ko:{ home:'홈', reports:'리포트', watch:'워치리스트 추가', watched:'워치리스트 추가됨', watchShort:'워치리스트',
+      mk:{price:'현재가',chg:'전일 대비',mcap:'시가총액',amt:'거래대금',vol:'거래량',shares:'상장주식수',market:'시장',sector:'업종'},
+      sec:{overview:'리포트 개요',business:'사업 구조',recent:'최근 실적·주가',outlook:'전망',bull:'강세 요인',bear:'약세 요인',risk:'리스크 요인',verdict:'종합 의견',sources:'참고 출처'},
+      reportDate:'리포트 작성일', dataDate:'데이터 기준일', model:'생성 모델', stance:'투자 의견',
+      discT:'면책 조항',
+      disc:'· 본 콘텐츠는 AI가 시장 데이터와 웹 검색 결과를 분석한 정보 제공용이며, 투자 권유나 추천이 아닙니다. 투자 판단과 그 책임은 투자자 본인에게 있습니다. 데이터는 지연되거나 오류가 포함될 수 있습니다.',
+      none:'이 종목의 AI 리포트는 아직 준비되지 않았습니다. 시가총액 상위 종목부터 순차적으로 생성하고 있습니다.' },
+    en:{ home:'Home', reports:'Reports', watch:'Add to watchlist', watched:'Added to watchlist', watchShort:'Watchlist',
+      mk:{price:'Price',chg:'Day change',mcap:'Market cap',amt:'Trading value',vol:'Volume',shares:'Shares out.',market:'Market',sector:'Sector'},
+      sec:{overview:'Report Overview',business:'Business',recent:'Recent Results & Price',outlook:'Outlook',bull:'Bull Factors',bear:'Bear Factors',risk:'Risk Factors',verdict:'Verdict',sources:'Sources'},
+      reportDate:'Report date', dataDate:'Data as of', model:'Model', stance:'Stance',
+      discT:'Disclaimer',
+      disc:'· This content is AI-generated analysis of market data and web search results, for information only — not investment solicitation or a recommendation. Investment decisions and their outcomes are your own responsibility. Data may be delayed or contain errors.',
+      none:'An AI report for this stock is not ready yet. We are generating them in order of market cap.' }
+  };
+  function U(){ return UI[L()]||UI.ko; }
+
+  function won(v){ if(v==null)return '-'; v=+v; var n=Math.round(v).toLocaleString('en-US'); return L()==='en'?'₩'+n:n+'원'; }
+  function mcap(v){ if(v==null)return '-'; v=+v; var n=v.toLocaleString('en-US',{maximumFractionDigits:0}); return L()==='en'?'₩'+n+'T':n+'조원'; }
+  function amt(v){ if(v==null)return '-'; v=+v;
+    if(L()==='en'){ if(v>=1e12)return '₩'+(v/1e12).toFixed(1)+'T'; if(v>=1e9)return '₩'+(v/1e9).toFixed(1)+'B'; if(v>=1e6)return '₩'+(v/1e6).toFixed(0)+'M'; return '₩'+Math.round(v).toLocaleString('en-US'); }
+    if(v>=1e12)return (v/1e12).toFixed(1)+'조원'; if(v>=1e8)return Math.round(v/1e8).toLocaleString('en-US')+'억원'; return Math.round(v).toLocaleString('en-US')+'원'; }
+  function vol(v){ if(v==null)return '-'; v=+v;
+    if(L()==='en'){ if(v>=1e6)return (v/1e6).toFixed(1)+'M'; if(v>=1e3)return (v/1e3).toFixed(0)+'K'; return ''+v; }
+    if(v>=1e8)return (v/1e8).toFixed(1)+'억주'; if(v>=1e4)return Math.round(v/1e4).toLocaleString('en-US')+'만주'; return v.toLocaleString('en-US')+'주'; }
+  function shN(v){ if(v==null)return '-'; v=+v;
+    if(L()==='en'){ if(v>=1e9)return (v/1e9).toFixed(2)+'B'; if(v>=1e6)return (v/1e6).toFixed(0)+'M'; return ''+v; }
+    if(v>=1e8)return (v/1e8).toFixed(1)+'억주'; if(v>=1e4)return Math.round(v/1e4).toLocaleString('en-US')+'만주'; return v.toLocaleString('en-US')+'주'; }
+
+  function prose(o){ var t=pk(o); if(!t)return ''; var ps=String(t).split(/\n\n+/); return '<div class="prose">'+ps.map(function(p){return '<p>'+esc(p)+'</p>';}).join('')+'</div>'; }
+  function factors(arr,cls,mk){ if(!arr||!arr.length)return ''; return arr.map(function(f){return '<div class="factor '+cls+'"><p class="fh"><span class="mk">'+mk+'</span>'+esc(pk(f.title))+'</p><p>'+esc(pk(f.body))+'</p></div>';}).join(''); }
+  function risksH(arr){ if(!arr||!arr.length)return ''; return '<div class="risk">'+arr.map(function(r){return '<div class="cat">'+esc(pk(r.cat))+'</div><div class="body">'+esc(pk(r.body))+'</div>';}).join('')+'</div>'; }
+  function pad(x){ return x<10?'0'+x:''+x; }
+  function secOpen(num,kick,title){ return '<section class="sec col"><div class="sec-kicker"><span class="sec-num">'+num+'</span> · '+kick+'</div><h2 class="sec-title">'+esc(title)+'</h2>'; }
+
+  var WKEY='kos-watch-'+TK, watched=false;
+  try{ watched=localStorage.getItem(WKEY)==='1'; }catch(e){}
+  function syncWatch(){ var u=U();
+    var b=document.getElementById('watchBtn'), bt=document.getElementById('watchBtnTop'), tx=document.getElementById('watchTxt');
+    if(b)b.classList.toggle('on',watched);
+    if(bt){ bt.classList.toggle('on',watched); bt.textContent=u.watchShort; }
+    if(tx)tx.textContent=watched?u.watched:u.watch;
+    try{ localStorage.setItem(WKEY,watched?'1':'0'); }catch(e){}
+  }
+
+  function render(){
+    var u=U(), Ln=L();
+    var up=(STOCK.change>=0), cc=up?'up':'down', sign=up?'+':'';
+    var chg=(STOCK.change==null?0:STOCK.change);
+
+    document.getElementById('crumb').innerHTML='<a href="Home.html">'+esc(u.home)+'</a> / <a href="Reports.html">'+esc(u.reports)+'</a> / <b>'+esc(tname(STOCK.name))+' ('+TK+')</b>';
+    document.getElementById('thId').innerHTML='<span>'+TK+'</span><span class="sep">·</span><span>'+esc(tname(STOCK.market))+'</span><span class="sep">·</span><span>'+esc(tname(STOCK.sector))+'</span>';
+    document.getElementById('thName').textContent=tname(STOCK.name);
+    document.getElementById('thMeta').textContent = REP ? (u.reportDate+' '+(REP.reportDate||'')+'  ·  '+u.model+' '+(RMETA.model||'')) : '';
+    document.getElementById('thNow').textContent=won(STOCK.price);
+    var tc=document.getElementById('thChg'); tc.className='th-chg '+cc; tc.textContent=(up?'▲ ':'▼ ')+sign+chg.toFixed(2)+'%';
+    document.getElementById('thVol').innerHTML='<div class="v"><span class="k">'+esc(u.mk.vol)+'</span><span class="n">'+vol(STOCK.volume)+'</span></div><div class="v"><span class="k">'+esc(u.mk.amt)+'</span><span class="n">'+amt(STOCK.trading_value)+'</span></div>';
+
+    var mk=u.mk, metrics=[
+      [mk.price, won(STOCK.price), tname(STOCK.market)+' · '+tname(STOCK.sector)],
+      [mk.chg, '<span class="d '+cc+'">'+sign+chg.toFixed(2)+'%</span>', ''],
+      [mk.mcap, mcap(STOCK.mcap), STOCK.rank?('№'+STOCK.rank):''],
+      [mk.amt, amt(STOCK.trading_value), ''],
+      [mk.vol, vol(STOCK.volume), ''],
+      [mk.shares, shN(STOCK.shares), ''],
+      [mk.market, tname(STOCK.market), ''],
+      [mk.sector, tname(STOCK.sector), '']
+    ];
+    document.getElementById('mgrid').innerHTML=metrics.map(function(m){return '<div class="m"><div class="k">'+esc(m[0])+'</div><div class="val">'+m[1]+'</div><div class="peer">'+esc(m[2])+'</div></div>';}).join('');
+
+    var rb=document.getElementById('reportBody');
+    if(!REP){
+      rb.innerHTML='<section class="sec col"><div class="tldr glass"><p>'+esc(u.none)+'</p></div></section>';
+    } else {
+      var h='', n=1;
+      h+=secOpen(pad(n++),'REPORT OVERVIEW',u.sec.overview);
+      h+='<p class="lead">'+esc(pk(REP.lead))+'</p>';
+      if(pk(REP.desc))h+='<p class="desc">'+esc(pk(REP.desc))+'</p>';
+      if(REP.keypoints&&REP.keypoints.length)h+='<ol class="kpoints">'+REP.keypoints.map(function(k){return '<li>'+esc(pk(k))+'</li>';}).join('')+'</ol>';
+      h+='<div class="rep-meta"><span><b>'+esc(u.reportDate)+'</b>'+esc(REP.reportDate||'')+'</span><span><b>'+esc(u.dataDate)+'</b>'+esc(REP.dataDate||'')+'</span><span><b>'+esc(u.model)+'</b>'+esc(RMETA.model||'')+'</span></div>';
+      h+='</section><hr class="hairline" />';
+      h+=secOpen(pad(n++),'BUSINESS',u.sec.business)+prose(REP.business)+'</section><hr class="hairline" />';
+      h+=secOpen(pad(n++),'RECENT',u.sec.recent)+prose(REP.recent)+'</section><hr class="hairline" />';
+      h+=secOpen(pad(n++),'OUTLOOK',u.sec.outlook)+prose(REP.outlook)+'</section><hr class="hairline" />';
+      h+=secOpen(pad(n++),'BULL CASE',u.sec.bull)+factors(REP.bull,'bull','▲')+'</section><hr class="hairline" />';
+      h+=secOpen(pad(n++),'BEAR CASE',u.sec.bear)+factors(REP.bear,'bear','▼')+'</section><hr class="hairline" />';
+      h+=secOpen(pad(n++),'RISK',u.sec.risk)+risksH(REP.risks)+'</section><hr class="hairline" />';
+      h+=secOpen(pad(n++),'VERDICT',u.sec.verdict);
+      var st=REP.verdict?pk(REP.verdict.stance):'';
+      h+='<div class="wrapup glass">'+(st?'<div class="label">'+esc(u.stance)+' · '+esc(st)+'</div>':'')+'<p>'+esc(REP.verdict?pk(REP.verdict.body):'')+'</p></div></section>';
+      if(REP.sources&&REP.sources.length){
+        h+='<hr class="hairline" />'+secOpen(pad(n++),'SOURCES',u.sec.sources);
+        h+='<div class="prose"><ul class="srclist">'+REP.sources.map(function(x){var url=esc(x);return '<li><a href="'+url+'" target="_blank" rel="noopener">'+url+'</a></li>';}).join('')+'</ul></div></section>';
+      }
+      rb.innerHTML=h;
+    }
+
+    document.getElementById('disclaimer').innerHTML='<b>'+esc(u.discT)+'</b> '+esc(u.disc);
+    document.getElementById('sbName').textContent=tname(STOCK.name);
+    document.getElementById('sbTk').textContent=TK+' · '+tname(STOCK.market);
+    document.getElementById('sbPrice').textContent=won(STOCK.price);
+    var sc=document.getElementById('sbChg'); sc.className='sb-chg '+cc; sc.textContent=(up?'▲ ':'▼ ')+sign+chg.toFixed(2)+'%';
+    document.title=(REP?(Ln==='en'?'AI Report':'AI 리포트')+' · ':'')+tname(STOCK.name)+' · KOS ai';
+    syncWatch();
+  }
+
+  render();
+  var wb=document.getElementById('watchBtn'), wbt=document.getElementById('watchBtnTop');
+  if(wb)wb.addEventListener('click',function(){ watched=!watched; syncWatch(); });
+  if(wbt)wbt.addEventListener('click',function(){ watched=!watched; syncWatch(); });
+  if(window.KOSi18n){ KOSi18n.register({}, render); }
+})();
 
 /* ===== sticky price bar ===== */
 const stickybar=document.getElementById('stickybar'),tkHead=document.querySelector('.tk-head');
@@ -1119,15 +928,6 @@ let saved='light';try{saved=localStorage.getItem('kos-theme')||'light'}catch(e){
 applyTheme(saved);
 themeBtn.addEventListener('click',()=>applyTheme(root.getAttribute('data-theme')==='dark'?'light':'dark'));
 
-/* re-render dynamic financials + watch label on language change */
-if(window.KOSi18n){
-  KOSi18n.register({}, ()=>{
-    const tabs=document.getElementById('finTabs');
-    const active=tabs && tabs.querySelector('.fin-tab.active');
-    if(active) renderFin(active.dataset.fin);
-    syncWatch();
-  });
-}
 </script>
 </body>
 </html>
