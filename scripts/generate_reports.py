@@ -112,15 +112,17 @@ def build_prompt(stock, as_of):
 5. 한국어(ko)와 영어(en) 두 버전을 모두 작성하세요. 영어 버전에 한국어가 섞이면 안 됩니다.
 6. 문체는 전문 애널리스트 리포트 톤. 투자 권유·매수/매도 추천 표현은 쓰지 마세요(정보 제공용).
 
-[출력 형식]
-조사를 마친 뒤, 최종 결과를 아래 스키마의 **JSON 하나**로만 출력하세요.
-반드시 `===JSON_START===` 와 `===JSON_END===` 마커 사이에 넣고, 마커 뒤에는 아무것도 쓰지 마세요.
+[출력 형식 — 매우 중요]
+- 검색이 끝나면 **머리말·설명·요약 없이** 곧바로 `===JSON_START===` 부터 출력하세요. 마커 앞에 어떤 문장도 쓰지 마세요(예: "아래는...", "조사를 완료했습니다" 금지).
+- 최종 결과는 아래 스키마의 **JSON 하나**이며, `===JSON_START===` 와 `===JSON_END===` 사이에 넣습니다. 마커 뒤에는 아무것도 쓰지 마세요.
+- 각 문단(business/recent/outlook)은 **3~4문장 이내**로 간결하게. ko/en 합쳐 분량이 과하지 않게 작성하세요.
+- JSON은 **반드시 완결**되어야 합니다(중간에 끊기지 않도록 분량을 조절).
 
 스키마:
 {SCHEMA_DESC}
 
 ===JSON_START===
-(여기에 JSON)
+(여기에 JSON, 마커 앞뒤에 다른 텍스트 금지)
 ===JSON_END==="""
 
 
@@ -150,7 +152,7 @@ def generate_one(client, stock, as_of):
     prompt = build_prompt(stock, as_of)
     with client.messages.stream(
         model=MODEL,
-        max_tokens=20000,
+        max_tokens=32000,
         system=SYSTEM,
         thinking={"type": "adaptive"},
         tools=[{"type": "web_search_20250305", "name": "web_search", "max_uses": 5,
@@ -194,15 +196,38 @@ def main():
     log(f"## 🤖 AI 리포트 생성 — {as_of} KST")
     log(f"- 모델: `{MODEL}` · 대상: 시총 상위 {TOP_N}개")
 
+    # ── 이어하기: 기존 리포트를 불러와 이미 만든 종목은 건너뛴다(비용 절약) ──
     reports = {}
+    force = os.getenv("REPORT_FORCE", "") == "1"
+    if REPORTS_JS.exists() and not force:
+        try:
+            raw = REPORTS_JS.read_text(encoding="utf-8")
+            prev = json.loads(raw[raw.find("{"): raw.rfind("}") + 1])
+            if "샘플" not in str(prev.get("model", "")):  # 샘플 파일은 무시
+                reports = prev.get("reports", {}) or {}
+                log(f"- 이어하기: 기존 리포트 {len(reports)}개 유지 ({list(reports.keys())})")
+        except Exception as e:
+            log(f"- (기존 리포트 로드 실패, 새로 생성) {e}")
+
     total_searches = 0
+    aborted = False
     # Tier 1 = 분당 입력 30,000 토큰 제한. 종목 사이 간격을 두어 한도를 피한다.
     GAP = int(os.getenv("REPORT_GAP_SEC", "60"))
-    MAX_ATTEMPTS = 4
+    PARSE_RETRY = 1   # 파싱/잘림 실패 시 재시도 횟수(비용 절약 위해 최소화)
+    RL_WAITS = 3      # 속도제한(429) 대기-재시도 횟수
+    last_gen = -1
     for i, st in enumerate(stocks, 1):
         tk, nm = st["ticker"], st["name"]
+        if tk in reports and not force:
+            log(f"\n### [{i}/{len(stocks)}] {nm} ({tk}) — 이미 존재, 건너뜀")
+            continue
         log(f"\n### [{i}/{len(stocks)}] {nm} ({tk})")
-        for attempt in range(1, MAX_ATTEMPTS + 1):
+
+        if last_gen >= 0:  # 직전에 실제 생성을 했다면 한도 회복 간격
+            time.sleep(GAP)
+
+        parse_tries, rl_waits = 0, 0
+        while True:
             try:
                 t0 = time.time()
                 rep, searches = generate_one(client, st, as_of)
@@ -219,21 +244,29 @@ def main():
                 log(f"- ✅ 완료 ({time.time()-t0:.0f}s · 검색 {searches}회)")
                 break
             except anthropic.RateLimitError:
-                wait = 70
-                log(f"- ⏳ 시도 {attempt} 속도제한(429) — {wait}초 대기 후 재시도")
-                if attempt == MAX_ATTEMPTS:
-                    log(f"- ❌ {nm} 리포트 생성 실패(속도제한) — 건너뜀")
-                else:
-                    time.sleep(wait)
+                rl_waits += 1
+                if rl_waits > RL_WAITS:
+                    log(f"- ❌ {nm} 실패(속도제한 지속) — 건너뜀")
+                    break
+                log(f"- ⏳ 속도제한(429) — 70초 대기 후 재시도 ({rl_waits}/{RL_WAITS})")
+                time.sleep(70)
+            except anthropic.BadRequestError as e:
+                if "credit balance" in str(e).lower():
+                    log("- ⛔ 크레딧 잔액 부족 — 생성을 중단합니다. console.anthropic.com 에서 충전 후 다시 실행하세요.")
+                    aborted = True
+                    break
+                log(f"- ⚠️ 요청 오류: {e}")
+                break
             except Exception as e:
-                log(f"- ⚠️ 시도 {attempt} 실패: {type(e).__name__}: {e}")
-                if attempt == MAX_ATTEMPTS:
+                parse_tries += 1
+                log(f"- ⚠️ 시도 실패: {type(e).__name__}: {e}")
+                if parse_tries > PARSE_RETRY:
                     log(f"- ❌ {nm} 리포트 생성 실패 — 건너뜀")
-                else:
-                    time.sleep(10)
-        # 다음 종목 전 분당 입력 토큰 한도 회복을 위해 간격
-        if i < len(stocks):
-            time.sleep(GAP)
+                    break
+                time.sleep(10)
+        last_gen = i
+        if aborted:
+            break
 
     if not reports:
         log("❌ 생성된 리포트가 없습니다.")
@@ -249,7 +282,10 @@ def main():
           "window.KOS_REPORTS = " + json.dumps(payload, ensure_ascii=False, indent=2) + ";\n")
     REPORTS_JS.write_text(js, encoding="utf-8")
 
-    log(f"\n✅ 총 {len(reports)}개 리포트 생성 · 웹검색 {total_searches}회 · → data/reports.js")
+    log(f"\n✅ 현재 리포트 {len(reports)}개 보유 · 이번 실행 웹검색 {total_searches}회 · → data/reports.js")
+    if aborted:
+        log("⛔ 크레딧 부족으로 일부 종목이 생성되지 않았습니다. 충전 후 워크플로를 다시 실행하면 남은 종목만 이어서 생성합니다.")
+        sys.exit(2)
 
 
 if __name__ == "__main__":
