@@ -62,6 +62,126 @@ def fmt_won(v):
     return f"{v:,.0f}원"
 
 
+# ── DART 공시 재무 (리포트 근거용 1차 데이터) ─────────────────────────
+DART_API_KEY = os.getenv("DART_API_KEY")
+_dart = None
+REPRT_NAME = {"11011": "사업보고서(연간)", "11013": "1분기", "11012": "반기", "11014": "3분기"}
+
+
+def get_dart():
+    global _dart
+    if _dart is None:
+        if not DART_API_KEY:
+            _dart = False
+        else:
+            try:
+                import OpenDartReader
+                _dart = OpenDartReader(DART_API_KEY)
+            except Exception as e:
+                log(f"- (DART 초기화 실패) {e}")
+                _dart = False
+    return _dart or None
+
+
+def _num(x):
+    try:
+        return int(str(x).replace(",", "").strip())
+    except Exception:
+        return None
+
+
+def _won_unit(v):
+    if v is None:
+        return "-"
+    a = abs(v)
+    if a >= 1e12:
+        return f"{v/1e12:.1f}조원"
+    if a >= 1e8:
+        return f"{v/1e8:,.0f}억원"
+    return f"{v:,}원"
+
+
+def _safe_finstate(dart, ticker, year, reprt):
+    try:
+        return dart.finstate(ticker, year, reprt)
+    except Exception:
+        return None
+
+
+def _extract_fin(df):
+    """finstate DF에서 매출액/영업이익/당기순이익(연결 CFS 우선)의 당기·전기 금액 추출."""
+    if df is None or getattr(df, "empty", True):
+        return None
+    out = {}
+    for _, r in df.iterrows():
+        nm = str(r.get("account_nm", "")).replace(" ", "")
+        fs = str(r.get("fs_div", ""))
+        cur = _num(r.get("thstrm_amount"))
+        prv = _num(r.get("frmtrm_amount"))
+        key = None
+        if ("매출액" in nm or nm == "수익(매출액)" or nm == "영업수익") and "원가" not in nm and "총이익" not in nm:
+            key = "매출액"
+        elif nm.startswith("영업이익"):
+            key = "영업이익"
+        elif "당기순이익" in nm:
+            key = "당기순이익"
+        if key and cur is not None:
+            prev = out.get(key)
+            if prev is None or (fs == "CFS" and prev.get("fs") != "CFS"):
+                out[key] = {"cur": cur, "prv": prv, "fs": fs}
+    return out or None
+
+
+def get_dart_financials(ticker):
+    """DART 요약재무제표에서 최근 연간·분기 매출/영업이익/순이익을 텍스트로 반환.
+    실패 시 빈 문자열(→ 웹검색만 사용)."""
+    dart = get_dart()
+    if not dart:
+        return ""
+    cur = datetime.date.today().year
+
+    annual, ann_year = None, None
+    for yr in (cur - 1, cur - 2):
+        d = _extract_fin(_safe_finstate(dart, ticker, yr, "11011"))
+        if d:
+            annual, ann_year = d, yr
+            break
+
+    quarter, q_label = None, None
+    for reprt in ("11014", "11012", "11013"):
+        d = _extract_fin(_safe_finstate(dart, ticker, cur, reprt))
+        if d:
+            quarter, q_label = d, f"{cur}년 {REPRT_NAME[reprt]}(누적)"
+            break
+
+    if not annual and not quarter:
+        return ""
+
+    def fmt(d, label):
+        if not d:
+            return None
+        parts = []
+        for k in ("매출액", "영업이익", "당기순이익"):
+            if k in d:
+                v = d[k]
+                s = _won_unit(v["cur"])
+                if v.get("prv"):
+                    try:
+                        yoy = (v["cur"] - v["prv"]) / abs(v["prv"]) * 100
+                        s += f" (전기대비 {yoy:+.1f}%)"
+                    except Exception:
+                        pass
+                parts.append(f"{k} {s}")
+        return f"- {label}: " + ", ".join(parts) if parts else None
+
+    lines = ["[DART 공시 확정 재무 — 아래 숫자는 공시 원문(연결 기준)이므로 '사실'로 사용하세요. "
+             "기사/추정값과 충돌하면 이 값을 우선합니다.]"]
+    for blk in (fmt(annual, f"{ann_year}년 연간"), fmt(quarter, q_label)):
+        if blk:
+            lines.append(blk)
+    return "\n".join(lines) if len(lines) > 1 else ""
+
+
 # ── 프롬프트 ──────────────────────────────────────────────────────────
 SCHEMA_DESC = """{
   "lead":      {"ko": "한 문장 핵심 메시지", "en": "one-sentence thesis"},
@@ -85,7 +205,7 @@ SYSTEM = (
 )
 
 
-def build_prompt(stock, as_of):
+def build_prompt(stock, as_of, dart_block=""):
     name = stock["name"]
     sector = stock.get("sector", "")
     market = stock.get("market", "")
@@ -95,6 +215,7 @@ def build_prompt(stock, as_of):
     trading_value = stock.get("trading_value")
 
     mcap_txt = f"{mcap_eok:,.1f}조원" if mcap_eok else "-"
+    dart_section = ("\n" + dart_block + "\n") if dart_block else ""
     return f"""다음 종목에 대한 기업 리서치 리포트를 작성하세요.
 
 [기준 데이터 — {as_of} KST]
@@ -103,10 +224,10 @@ def build_prompt(stock, as_of):
 - 현재가: {price:,}원 (전일대비 {change:+.2f}%)
 - 시가총액: {mcap_txt}
 - 거래대금: {fmt_won(trading_value)}
-
+{dart_section}
 [작성 지침]
 1. 먼저 web_search 도구로 이 기업의 최신 실적, 사업 현황, 업종 동향, 최근 뉴스를 조사하세요(한국어로 검색). 최소 2~4회 검색합니다.
-2. 검색으로 **확인된 사실과 수치만** 사용하세요. 확인되지 않은 구체적 숫자(영업이익, 점유율 등)는 추정하지 말고 정성적으로 서술하세요. 데이터를 지어내지 마세요.
+2. 재무 수치는 위 **[DART 공시 확정 재무]** 값을 최우선으로 사용하세요(공시 원문). 그 외 수치는 검색으로 **확인된 것만** 쓰고, 확인 안 된 구체적 숫자는 추정하지 말고 정성적으로 서술하세요. 데이터를 지어내지 마세요.
 3. 시점에 민감한 수치는 "최근 보도에 따르면", "2025년 기준" 처럼 출처/시점을 함께 밝히세요.
 4. 균형 있게: 강세 요인과 약세 요인을 모두 제시하세요.
 5. 한국어(ko)와 영어(en) 두 버전을 모두 작성하세요. 영어 버전에 한국어가 섞이면 안 됩니다.
@@ -148,8 +269,8 @@ def parse_report(text):
     return json.loads(chunk)
 
 
-def generate_one(client, stock, as_of):
-    prompt = build_prompt(stock, as_of)
+def generate_one(client, stock, as_of, dart_block=""):
+    prompt = build_prompt(stock, as_of, dart_block)
     with client.messages.stream(
         model=MODEL,
         max_tokens=32000,
@@ -237,11 +358,14 @@ def main():
         if last_gen >= 0:  # 직전에 실제 생성을 했다면 한도 회복 간격
             time.sleep(GAP)
 
+        dart_block = get_dart_financials(tk)
+        log(f"- DART 재무: {'확보' if dart_block else '없음(웹검색만)'}")
+
         parse_tries, rl_waits = 0, 0
         while True:
             try:
                 t0 = time.time()
-                rep, searches = generate_one(client, st, as_of)
+                rep, searches = generate_one(client, st, as_of, dart_block)
                 total_searches += searches
                 rep.update({
                     "ticker": tk, "name": nm,

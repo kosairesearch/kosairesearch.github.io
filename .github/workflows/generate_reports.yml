@@ -24,9 +24,17 @@ jobs:
       - name: 패키지 설치
         run: pip install -r requirements.txt
 
+      - name: 최신 시세 갱신 (리포트가 최신 종가를 쓰도록)
+        env:
+          DART_API_KEY: ${{ secrets.DART_API_KEY }}
+        run: |
+          mkdir -p data
+          python scripts/collect_data.py 2>&1 | tee data/run.log || echo "(시세 갱신 실패 — 기존 데이터로 진행)"
+
       - name: 리포트 생성
         env:
           ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+          DART_API_KEY: ${{ secrets.DART_API_KEY }}
           REPORT_MODEL: ${{ vars.REPORT_MODEL || 'claude-sonnet-4-6' }}
           REPORT_TOP_N: ${{ vars.REPORT_TOP_N || '5' }}
         run: |
