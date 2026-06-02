@@ -689,7 +689,7 @@ window.KOS_REPORTS = {
       },
       "outlook": {
         "ko": "2026년 삼성생명의 핵심 주가 모멘텀은 삼성전자의 특별배당 현실화 여부에 달려 있다. 삼성전자 주식을 약 8.4% 보유한 삼성생명은, 삼성전자 특별배당이 현실화할 경우 수조 원 규모의 추가 배당수익을 기대할 수 있으며 이는 중장기 주주환원 50% 목표 달성의 핵심 재원이 된다. 보험 본업에서는 2026년 신계약 CSM 3조2000억원 이상 목표와 함께, 예실차 관리·실손보험 손해율 개선이 하반기 실적 안정의 관건이다. 한편 정부의 밸류업·상법 개정 방향이 구체화되면 추가적인 자사주 소각·배당 확대 공시 가능성이 있어 하반기 재평가 모멘텀이 유지될 수 있다.",
-        "en": "Samsung Life's near-term share price catalyst hinges on the materialization of Samsung Electronics' potential special dividend. As the holder of approximately 8.4% of Samsung Electronics, Samsung Life stands to receive substantial additional dividend income that could serve as a key funding source for its medium-term 50% shareholder return target. On the insurance business front, meeting the 2026 new-contract CSM target of at least KRW 3.2tn and improving the experience variance (예실차) loss in health lines remain critical for second-half earnings stability. Should the government's corporate governance reform agenda and Commercial Act amendments gain legislative traction, further shareholder return announcements remain plausible, sustaining re-rating momentum into H2 2026."
+        "en": "Samsung Life's near-term share price catalyst hinges on the materialization of Samsung Electronics' potential special dividend. As the holder of approximately 8.4% of Samsung Electronics, Samsung Life stands to receive substantial additional dividend income that could serve as a key funding source for its medium-term 50% shareholder return target. On the insurance business front, meeting the 2026 new-contract CSM target of at least KRW 3.2tn and improving the experience variance loss in health lines remain critical for second-half earnings stability. Should the government's corporate governance reform agenda and Commercial Act amendments gain legislative traction, further shareholder return announcements remain plausible, sustaining re-rating momentum into H2 2026."
       },
       "bull": [
         {
@@ -773,7 +773,7 @@ window.KOS_REPORTS = {
           },
           "body": {
             "ko": "실손보험 4·5세대 개편, GA 수수료 규제(1200% 룰 등), 금감원 예실차 지도 강화 등 보험업 규제 환경이 빠르게 변화하고 있다. 특히 GA 채널의 시장 지배력 확대는 보험사의 판매비용 구조를 압박할 수 있다. 상법 개정 방향에 따라 자본 정책 재편이 불가피해질 가능성도 있다.",
-            "en": "The insurance regulatory landscape is evolving rapidly: real-money (실손) insurance overhaul, agency commission caps (1,200% rule), and intensified FSS guidance on experience variance adjustments all pose headwinds. Rising GA channel dominance threatens to inflate distribution costs, while the direction of Commercial Act amendments may compel capital policy changes."
+            "en": "The insurance regulatory landscape is evolving rapidly: indemnity health insurance overhaul, agency commission caps (1,200% rule), and intensified FSS guidance on experience variance adjustments all pose headwinds. Rising GA channel dominance threatens to inflate distribution costs, while the direction of Commercial Act amendments may compel capital policy changes."
           }
         },
         {
