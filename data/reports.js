@@ -1,6 +1,6 @@
 // KOS ai — AI 리서치 리포트 (자동 생성). 직접 수정하지 마세요.
 window.KOS_REPORTS = {
-  "lastUpdated": "2026-06-03 01:36",
+  "lastUpdated": "2026-06-03 03:02",
   "model": "claude-sonnet-4-6",
   "reports": {
     "005930": {
@@ -979,7 +979,7 @@ window.KOS_REPORTS = {
       "ticker": "012450",
       "name": "한화에어로스페이스",
       "name_en": "HANWHA AEROSPACE CO., LTD.",
-      "sector": "조선·방산",
+      "sector": "항공·방산",
       "market": "코스피",
       "reportDate": "2026-06-03",
       "dataDate": "20260602"
@@ -1140,7 +1140,7 @@ window.KOS_REPORTS = {
       "ticker": "028260",
       "name": "삼성물산",
       "name_en": "SAMSUNG C&T CORPORATION",
-      "sector": "건설",
+      "sector": "유통·소비재",
       "market": "코스피",
       "reportDate": "2026-06-03",
       "dataDate": "20260602"
@@ -1792,7 +1792,7 @@ window.KOS_REPORTS = {
       "ticker": "034020",
       "name": "두산에너빌리티",
       "name_en": "DOOSAN ENERBILITY CO., LTD.",
-      "sector": "기계·로봇",
+      "sector": "기계",
       "market": "코스피",
       "reportDate": "2026-06-03",
       "dataDate": "20260602"
@@ -2278,7 +2278,7 @@ window.KOS_REPORTS = {
       "ticker": "329180",
       "name": "HD현대중공업",
       "name_en": "HD HYUNDAI HEAVY INDUSTRIES CO.,LTD.",
-      "sector": "조선·방산",
+      "sector": "조선",
       "market": "코스피",
       "reportDate": "2026-06-03",
       "dataDate": "20260602"
