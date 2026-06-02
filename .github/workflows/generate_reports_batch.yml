@@ -1,0 +1,60 @@
+name: 🤖📦 AI 리포트 대량 생성 (Batch · 50%↓)
+
+on:
+  # 비용 발생 — 원할 때만 수동 실행
+  workflow_dispatch:
+    inputs:
+      mode:
+        description: '실행 모드 (auto=제출+회수 / submit=제출만 / collect=회수만)'
+        type: choice
+        default: auto
+        options: [auto, submit, collect]
+
+jobs:
+  batch:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Python 설정
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+          cache: 'pip'
+
+      - name: 패키지 설치
+        run: pip install -r requirements.txt
+
+      - name: 최신 시세 갱신 (collect 모드에서는 생략)
+        if: ${{ inputs.mode != 'collect' }}
+        env:
+          DART_API_KEY: ${{ secrets.DART_API_KEY }}
+        run: |
+          mkdir -p data
+          python scripts/collect_data.py 2>&1 | tee data/run.log || echo "(시세 갱신 실패 — 기존 데이터 사용)"
+
+      - name: 배치 실행
+        env:
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+          DART_API_KEY: ${{ secrets.DART_API_KEY }}
+          REPORT_MODEL: ${{ vars.REPORT_MODEL || 'claude-sonnet-4-6' }}
+          REPORT_TOP_N: ${{ vars.REPORT_TOP_N || '100' }}
+        run: |
+          set -o pipefail
+          mkdir -p data
+          echo "=== 배치(${{ inputs.mode }}) 시작 $(date -u) ===" > data/reports_run.log
+          python scripts/generate_reports_batch.py "${{ inputs.mode }}" 2>&1 | tee -a data/reports_run.log
+
+      - name: 변경사항 커밋 & 푸시
+        if: always()
+        run: |
+          git config --global user.email "bot@kosairesearch.github.io"
+          git config --global user.name "KOS ai Bot"
+          git add -A data/
+          git commit --allow-empty -m "🤖📦 AI 리포트 배치 ${{ inputs.mode }} $(TZ='Asia/Seoul' date +'%Y-%m-%d %H:%M KST')"
+          for i in 1 2 3 4 5; do
+            git pull --rebase origin main && git push origin main && break
+            echo "push 재시도 $i..."; sleep $((i*3))
+          done
