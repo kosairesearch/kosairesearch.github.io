@@ -1,6 +1,6 @@
 // KOS ai — AI 리서치 리포트 (자동 생성). 직접 수정하지 마세요.
 window.KOS_REPORTS = {
-  "lastUpdated": "2026-06-03 03:02",
+  "lastUpdated": "2026-06-03 04:17",
   "model": "claude-sonnet-4-6",
   "reports": {
     "005930": {
@@ -2116,7 +2116,7 @@ window.KOS_REPORTS = {
       "ticker": "066570",
       "name": "LG전자",
       "name_en": "LG ELECTRONICS INC.",
-      "sector": "전자·부품",
+      "sector": "전자·통신",
       "market": "코스피",
       "reportDate": "2026-06-03",
       "dataDate": "20260602"
