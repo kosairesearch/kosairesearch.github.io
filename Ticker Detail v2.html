@@ -450,7 +450,9 @@ table.dt .pos{color:var(--up);font-weight:700}table.dt .neg{color:var(--down);fo
     "현재가":"Price","등락률":"Change","시장":"Market","상승 종목":"Gainers",
     "평균 등락률":"Avg. change","거래대금 합계":"Total turnover","시가총액 1위":"Top by mkt cap",
     "업종 시가총액 합계":"Sector market cap","시가총액(조)":"Mkt cap (₩T)","거래대금(조)":"Turnover (₩T)",
-    "거래대금순":"By turnover","종목 수":"Stocks"
+    "거래대금순":"By turnover","종목 수":"Stocks",
+    "전일 대비":"Day change","상장주식수":"Shares out.","52주 최고":"52W high","52주 최저":"52W low",
+    "하락 종목":"Decliners","시장 비중":"Market weight"
   });
   function cleanEn(s){
     s=(s||'').trim();
@@ -753,12 +755,14 @@ KOSi18n.register({
     <!-- 8 metrics -->
     <div class="th-sec">
       <div class="mgrid">
-        <div class="m"><div class="k">현재가</div><div class="val">349,000원</div><div class="peer">전일 대비 <span class="d up">+5.84%</span></div></div>
-        <div class="m"><div class="k">시가총액</div><div class="val">2,066조원</div><div class="peer">코스피 <b>1위</b> · 발행 59.2억주</div></div>
+        <div class="m"><div class="k">현재가</div><div class="val">349,000원</div><div class="peer">코스피 · 반도체</div></div>
+        <div class="m"><div class="k">전일 대비</div><div class="val"><span class="d up">+5.84%</span></div><div class="peer">+19,300원</div></div>
+        <div class="m"><div class="k">시가총액</div><div class="val">2,066조원</div><div class="peer">코스피 <b>1위</b></div></div>
         <div class="m"><div class="k">거래대금</div><div class="val">13.7조원</div><div class="peer">당일 누계</div></div>
         <div class="m"><div class="k">거래량</div><div class="val">3,936만주</div><div class="peer">당일 누계</div></div>
-        <div class="m"><div class="k">시장</div><div class="val">코스피</div><div class="peer">반도체</div></div>
-        <div class="m"><div class="k">52주 범위</div><div class="val">78,000 ~ 349,000</div><div class="peer">현재 상단 부근</div></div>
+        <div class="m"><div class="k">상장주식수</div><div class="val">59.2억주</div><div class="peer">보통주</div></div>
+        <div class="m"><div class="k">52주 최고</div><div class="val">349,000원</div><div class="peer">현재가 부근</div></div>
+        <div class="m"><div class="k">52주 최저</div><div class="val">78,000원</div><div class="peer">+347%</div></div>
       </div>
     </div>
 
