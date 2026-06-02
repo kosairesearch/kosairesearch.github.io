@@ -29,7 +29,7 @@ jobs:
       - name: 리포트 생성
         env:
           ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
-          REPORT_MODEL: ${{ vars.REPORT_MODEL || 'claude-opus-4-8' }}
+          REPORT_MODEL: ${{ vars.REPORT_MODEL || 'claude-sonnet-4-6' }}
           REPORT_TOP_N: ${{ vars.REPORT_TOP_N || '5' }}
         run: |
           mkdir -p data
