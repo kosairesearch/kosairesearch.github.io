@@ -1,6 +1,6 @@
 // KOS ai — 자동 생성 데이터 파일. 직접 수정하지 마세요.
 window.KOS_LIVE_DATA = {
-  "lastUpdated": "2026-06-03 03:09",
+  "lastUpdated": "2026-06-03 03:15",
   "dataDate": "20260602",
   "stocks": [
     {
@@ -443,7 +443,7 @@ window.KOS_LIVE_DATA = {
       "name": "HD한국조선해양",
       "name_en": "HD KOREA SHIPBUILDING & OFFSHORE ENGINEERING CO., LTD.",
       "market": "코스피",
-      "sector": "금융",
+      "sector": "조선·방산",
       "price": 383500,
       "change": -5.19,
       "volume": 412671,
@@ -578,7 +578,7 @@ window.KOS_LIVE_DATA = {
       "name": "HD현대",
       "name_en": "HD HYUNDAI CO.,LTD.",
       "market": "코스피",
-      "sector": "금융",
+      "sector": "조선·방산",
       "price": 276500,
       "change": -1.6,
       "volume": 215747,
@@ -728,7 +728,7 @@ window.KOS_LIVE_DATA = {
       "name": "에코프로",
       "name_en": "ECOPRO CO.,LTD",
       "market": "코스닥",
-      "sector": "금융",
+      "sector": "2차전지",
       "price": 127600,
       "change": -2.15,
       "volume": 2079570,
@@ -1163,7 +1163,7 @@ window.KOS_LIVE_DATA = {
       "name": "OCI홀딩스",
       "name_en": "OCI Holdings Company Ltd.",
       "market": "코스피",
-      "sector": "금융",
+      "sector": "화학",
       "price": 316500,
       "change": -9.83,
       "volume": 341667,
