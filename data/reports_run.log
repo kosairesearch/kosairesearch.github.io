@@ -1,29 +1,35 @@
-=== 리포트 생성 시작 Tue Jun  2 03:26:54 UTC 2026 ===
-## 🤖 AI 리포트 생성 — 2026-06-02 12:26 KST
+=== 리포트 생성 시작 Tue Jun  2 03:45:34 UTC 2026 ===
+## 🤖 AI 리포트 생성 — 2026-06-02 12:45 KST
 - 모델: `claude-sonnet-4-6` · 대상: 시총 상위 5개
 
 ### [1/5] 삼성전자 (005930)
-- ⚠️ 시도 1 실패: JSONDecodeError: Expecting value: line 1 column 1 (char 0)
-- ⚠️ 시도 2 실패: JSONDecodeError: Expecting value: line 1 column 1 (char 0)
-- ❌ 삼성전자 리포트 생성 실패 — 건너뜀
+- ✅ 완료 (360s · 검색 4회)
 
 ### [2/5] SK하이닉스 (000660)
-- ⚠️ 시도 1 실패: JSONDecodeError: Expecting ',' delimiter: line 61 column 101 (char 9112)
-- ⚠️ 시도 2 실패: RateLimitError: Error code: 429 - {'type': 'error', 'error': {'type': 'rate_limit_error', 'message': "This request would exceed your organization's rate limit of 30,000 input tokens per minute (org: 894d8910-099a-472d-803b-67618a94e2bb, model: claude-sonnet-4-6). For details, refer to: https://docs.claude.com/en/api/rate-limits. You can see the response headers for current usage. Reduce the prompt length or the maximum tokens requested, or try again later. View your current limits at https://console.anthropic.com/settings/limits. To raise this limit, purchase credits to advance to the next usage tier at https://console.anthropic.com/settings/billing."}, 'request_id': 'req_011CbdjRJMDg1wD1Uh8dbeUN'}
-- ❌ SK하이닉스 리포트 생성 실패 — 건너뜀
+- ✅ 완료 (277s · 검색 4회)
 
 ### [3/5] 현대차 (005380)
-- ⚠️ 시도 1 실패: RateLimitError: Error code: 429 - {'type': 'error', 'error': {'type': 'rate_limit_error', 'message': "This request would exceed your organization's rate limit of 30,000 input tokens per minute (org: 894d8910-099a-472d-803b-67618a94e2bb, model: claude-sonnet-4-6). For details, refer to: https://docs.claude.com/en/api/rate-limits. You can see the response headers for current usage. Reduce the prompt length or the maximum tokens requested, or try again later. View your current limits at https://console.anthropic.com/settings/limits. To raise this limit, purchase credits to advance to the next usage tier at https://console.anthropic.com/settings/billing."}, 'request_id': 'req_011CbdjRRrR2vc8T7DYiqTfK'}
-- ⚠️ 시도 2 실패: JSONDecodeError: Expecting ',' delimiter: line 75 column 103 (char 10825)
+  · 파싱 실패 응답(앞 300자): '먼저 현대차에 대한 최신 정보를 검색하겠습니다. 좋습니다. 추가로 현대차의 미국 공장, 관세 리스크, 그리고 SDV/로보틱스 전략에 대해 더 조사하겠습니다. 충분한 데이터를 확보했습니다. 이제 최종 리포트를 JSON으로 출력합니다.  아래는 검색 결과로 확인된 핵심 데이터 근거입니다:  -  현대차는 2025년 연결 기준 매출액 186조 2,545억 원, 영업이익 11조 4,679억 원, 당기순이익 10조 3,648억 원을 기록했다.  -  매출은 전년 대비 6.3% 증가해 가이던스 범위를 웃돌았고, 영업이익은 미국 관세 영향과 글' · stop=max_tokens
+- ⚠️ 시도 1 실패: JSONDecodeError: Expecting ',' delimiter: line 51 column 8 (char 8426)
+  · 파싱 실패 응답(앞 300자): '먼저 현대차 관련 최신 정보를 다각도로 검색하겠습니다. 추가로 최신 업종 동향과 전기차·로보틱스 전략을 더 조사하겠습니다. 충분한 데이터를 수집했습니다. 이제 최종 리서치 리포트를 작성합니다.  아래는 수집된 데이터를 기반으로 한 리서치 리포트입니다.  ---   현대차는 2025년 연간 연결 기준 매출액 186조2,545억원, 영업이익 11조4,679억원을 기록하며 미국 관세 등 악재 속에서도 연간 가이던스를 달성했습니다.    다만 미국 관세 영향과 글로벌 인센티브 증가로 영업이익은 전년보다 19.5% 감소했습니다.    현대차' · stop=max_tokens
+- ⚠️ 시도 2 실패: JSONDecodeError: Expecting ',' delimiter: line 141 column 4 (char 15571)
+  · 파싱 실패 응답(앞 300자): '먼저 현대차에 대한 최신 정보를 수집하겠습니다. 추가 정보를 수집하겠습니다. 조사를 모두 완료했습니다. 수집된 데이터를 바탕으로 최종 리포트를 작성합니다.   2025년 12월 결산 기준 현대차의 최근 매출액은 186조 2,544억원(+6.29% YoY), 영업이익은 11조 4,678억원(-19.47% YoY)으로 확인되었습니다.   2026년 1분기 영업이익은 2조 5,100억원(-30.8% YoY)으로 시장 예상치 2조 8,100억원을 하회했으며, 해당 분기 관세 관련 비용만 8,600억원에 달했습니다.   한미 관세 협상으로 ' · stop=max_tokens
+- ⚠️ 시도 3 실패: JSONDecodeError: Expecting ',' delimiter: line 141 column 4 (char 15446)
+- ⚠️ 시도 4 실패: BadRequestError: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011CbdnbSCsnoZ1UsxSohZ18'}
 - ❌ 현대차 리포트 생성 실패 — 건너뜀
 
 ### [4/5] LG에너지솔루션 (373220)
-- ⚠️ 시도 1 실패: RateLimitError: Error code: 429 - {'type': 'error', 'error': {'type': 'rate_limit_error', 'message': "This request would exceed your organization's rate limit of 30,000 input tokens per minute (org: 894d8910-099a-472d-803b-67618a94e2bb, model: claude-sonnet-4-6). For details, refer to: https://docs.claude.com/en/api/rate-limits. You can see the response headers for current usage. Reduce the prompt length or the maximum tokens requested, or try again later. View your current limits at https://console.anthropic.com/settings/limits. To raise this limit, purchase credits to advance to the next usage tier at https://console.anthropic.com/settings/billing."}, 'request_id': 'req_011CbdjhHWp2MaUbpJyLj8ZQ'}
-- ⚠️ 시도 2 실패: JSONDecodeError: Expecting value: line 1 column 1 (char 0)
+- ⚠️ 시도 1 실패: BadRequestError: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011CbdnfsRYUiVLitwuoVJtE'}
+- ⚠️ 시도 2 실패: BadRequestError: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011CbdngcepFwFDANkF8hXDY'}
+- ⚠️ 시도 3 실패: BadRequestError: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011CbdnhNBwwjLxy8DUTeGtR'}
+- ⚠️ 시도 4 실패: BadRequestError: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011Cbdni7QyV3CCna1dteX5V'}
 - ❌ LG에너지솔루션 리포트 생성 실패 — 건너뜀
 
 ### [5/5] 삼성생명 (032830)
-- ⚠️ 시도 1 실패: RateLimitError: Error code: 429 - {'type': 'error', 'error': {'type': 'rate_limit_error', 'message': "This request would exceed your organization's rate limit of 30,000 input tokens per minute (org: 894d8910-099a-472d-803b-67618a94e2bb, model: claude-sonnet-4-6). For details, refer to: https://docs.claude.com/en/api/rate-limits. You can see the response headers for current usage. Reduce the prompt length or the maximum tokens requested, or try again later. View your current limits at https://console.anthropic.com/settings/limits. To raise this limit, purchase credits to advance to the next usage tier at https://console.anthropic.com/settings/billing."}, 'request_id': 'req_011CbdjzGtaVDrQn5j9D4FEP'}
-- ⚠️ 시도 2 실패: RateLimitError: Error code: 429 - {'type': 'error', 'error': {'type': 'rate_limit_error', 'message': "This request would exceed your organization's rate limit of 30,000 input tokens per minute (org: 894d8910-099a-472d-803b-67618a94e2bb, model: claude-sonnet-4-6). For details, refer to: https://docs.claude.com/en/api/rate-limits. You can see the response headers for current usage. Reduce the prompt length or the maximum tokens requested, or try again later. View your current limits at https://console.anthropic.com/settings/limits. To raise this limit, purchase credits to advance to the next usage tier at https://console.anthropic.com/settings/billing."}, 'request_id': 'req_011CbdjznM8AbegEdh75Y8YP'}
+- ⚠️ 시도 1 실패: BadRequestError: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011CbdnnYPFitJNLBg7kyShC'}
+- ⚠️ 시도 2 실패: BadRequestError: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011CbdnoHc2mJADT8qmnrgZm'}
+- ⚠️ 시도 3 실패: BadRequestError: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011Cbdnp2xzqY74bu23WMPRg'}
+- ⚠️ 시도 4 실패: BadRequestError: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011CbdnpnXcdBG3kHo6YRPzp'}
 - ❌ 삼성생명 리포트 생성 실패 — 건너뜀
-❌ 생성된 리포트가 없습니다.
+
+✅ 총 2개 리포트 생성 · 웹검색 8회 · → data/reports.js
