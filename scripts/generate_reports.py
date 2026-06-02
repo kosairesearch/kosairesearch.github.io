@@ -196,16 +196,27 @@ def main():
     log(f"## 🤖 AI 리포트 생성 — {as_of} KST")
     log(f"- 모델: `{MODEL}` · 대상: 시총 상위 {TOP_N}개")
 
-    # ── 이어하기: 기존 리포트를 불러와 이미 만든 종목은 건너뛴다(비용 절약) ──
+    # ── 이어하기: 기존 리포트를 불러온다. 최근(FRESH_DAYS일 이내) 리포트는
+    #    재생성하지 않고 유지(같은 날 재실행=복구). 오래된 것은 갱신(주간 자동실행). ──
     reports = {}
     force = os.getenv("REPORT_FORCE", "") == "1"
-    if REPORTS_JS.exists() and not force:
+    FRESH_DAYS = int(os.getenv("REPORT_FRESH_DAYS", "6"))
+    fresh = set()
+    if REPORTS_JS.exists():
         try:
             raw = REPORTS_JS.read_text(encoding="utf-8")
             prev = json.loads(raw[raw.find("{"): raw.rfind("}") + 1])
             if "샘플" not in str(prev.get("model", "")):  # 샘플 파일은 무시
                 reports = prev.get("reports", {}) or {}
-                log(f"- 이어하기: 기존 리포트 {len(reports)}개 유지 ({list(reports.keys())})")
+                today = now.date()
+                for tk, r in reports.items():
+                    try:
+                        d = datetime.date.fromisoformat(r.get("reportDate", ""))
+                        if (today - d).days <= FRESH_DAYS:
+                            fresh.add(tk)
+                    except Exception:
+                        pass
+                log(f"- 기존 리포트 {len(reports)}개 로드 · 최근({FRESH_DAYS}일내) {len(fresh)}개 유지")
         except Exception as e:
             log(f"- (기존 리포트 로드 실패, 새로 생성) {e}")
 
@@ -218,8 +229,8 @@ def main():
     last_gen = -1
     for i, st in enumerate(stocks, 1):
         tk, nm = st["ticker"], st["name"]
-        if tk in reports and not force:
-            log(f"\n### [{i}/{len(stocks)}] {nm} ({tk}) — 이미 존재, 건너뜀")
+        if tk in fresh and not force:
+            log(f"\n### [{i}/{len(stocks)}] {nm} ({tk}) — 최근 리포트 존재, 건너뜀")
             continue
         log(f"\n### [{i}/{len(stocks)}] {nm} ({tk})")
 
