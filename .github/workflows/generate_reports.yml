@@ -32,6 +32,7 @@ jobs:
           REPORT_MODEL: ${{ vars.REPORT_MODEL || 'claude-sonnet-4-6' }}
           REPORT_TOP_N: ${{ vars.REPORT_TOP_N || '5' }}
         run: |
+          set -o pipefail
           mkdir -p data
           echo "=== 리포트 생성 시작 $(date -u) ===" > data/reports_run.log
           python scripts/generate_reports.py 2>&1 | tee -a data/reports_run.log

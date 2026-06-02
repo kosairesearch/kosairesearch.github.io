@@ -150,10 +150,10 @@ def generate_one(client, stock, as_of):
     prompt = build_prompt(stock, as_of)
     with client.messages.stream(
         model=MODEL,
-        max_tokens=8000,
+        max_tokens=20000,
         system=SYSTEM,
         thinking={"type": "adaptive"},
-        tools=[{"type": "web_search_20250305", "name": "web_search", "max_uses": 6,
+        tools=[{"type": "web_search_20250305", "name": "web_search", "max_uses": 5,
                 "user_location": {"type": "approximate", "country": "KR",
                                   "timezone": "Asia/Seoul"}}],
         messages=[{"role": "user", "content": prompt}],
@@ -167,7 +167,13 @@ def generate_one(client, stock, as_of):
         pass
 
     text = extract_text(message)
-    report = parse_report(text)
+    try:
+        report = parse_report(text)
+    except Exception:
+        # 디버깅용: 파싱 실패 시 응답 앞부분을 남긴다
+        head = (text or "").strip()[:300].replace("\n", " ")
+        log(f"  · 파싱 실패 응답(앞 300자): {head!r} · stop={message.stop_reason}")
+        raise
     return report, searches
 
 
@@ -190,10 +196,13 @@ def main():
 
     reports = {}
     total_searches = 0
+    # Tier 1 = 분당 입력 30,000 토큰 제한. 종목 사이 간격을 두어 한도를 피한다.
+    GAP = int(os.getenv("REPORT_GAP_SEC", "60"))
+    MAX_ATTEMPTS = 4
     for i, st in enumerate(stocks, 1):
         tk, nm = st["ticker"], st["name"]
         log(f"\n### [{i}/{len(stocks)}] {nm} ({tk})")
-        for attempt in range(1, 3):
+        for attempt in range(1, MAX_ATTEMPTS + 1):
             try:
                 t0 = time.time()
                 rep, searches = generate_one(client, st, as_of)
@@ -209,12 +218,22 @@ def main():
                 reports[tk] = rep
                 log(f"- ✅ 완료 ({time.time()-t0:.0f}s · 검색 {searches}회)")
                 break
+            except anthropic.RateLimitError:
+                wait = 70
+                log(f"- ⏳ 시도 {attempt} 속도제한(429) — {wait}초 대기 후 재시도")
+                if attempt == MAX_ATTEMPTS:
+                    log(f"- ❌ {nm} 리포트 생성 실패(속도제한) — 건너뜀")
+                else:
+                    time.sleep(wait)
             except Exception as e:
                 log(f"- ⚠️ 시도 {attempt} 실패: {type(e).__name__}: {e}")
-                if attempt == 2:
+                if attempt == MAX_ATTEMPTS:
                     log(f"- ❌ {nm} 리포트 생성 실패 — 건너뜀")
                 else:
-                    time.sleep(5)
+                    time.sleep(10)
+        # 다음 종목 전 분당 입력 토큰 한도 회복을 위해 간격
+        if i < len(stocks):
+            time.sleep(GAP)
 
     if not reports:
         log("❌ 생성된 리포트가 없습니다.")
