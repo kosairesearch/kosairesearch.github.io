@@ -9,6 +9,10 @@ on:
         type: choice
         default: auto
         options: [auto, submit, collect]
+      top_n:
+        description: '대상 종목 수 (시총 상위 N개)'
+        type: string
+        default: '100'
 
 jobs:
   batch:
@@ -40,7 +44,7 @@ jobs:
           ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
           DART_API_KEY: ${{ secrets.DART_API_KEY }}
           REPORT_MODEL: ${{ vars.REPORT_MODEL || 'claude-sonnet-4-6' }}
-          REPORT_TOP_N: ${{ vars.REPORT_TOP_N || '100' }}
+          REPORT_TOP_N: ${{ inputs.top_n || '100' }}
         run: |
           set -o pipefail
           mkdir -p data
