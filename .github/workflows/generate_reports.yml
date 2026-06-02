@@ -1,11 +1,9 @@
 name: 🤖 AI 리서치 리포트 생성
 
 on:
-  schedule:
-    # 매주 월요일 오전 7시 KST (= UTC 일요일 22:00)
-    - cron: '0 22 * * 0'
+  # 자동 갱신 꺼짐 (비용 발생) — 원할 때만 수동 실행
   workflow_dispatch:
-    # 수동 실행 (GitHub 웹에서 버튼 클릭)
+    # 수동 실행 (GitHub 웹에서 버튼 클릭 또는 요청 시 실행)
 
 jobs:
   reports:
