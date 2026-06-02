@@ -1,9 +1,17 @@
 name: 🤖 AI 리서치 리포트 생성
 
 on:
-  # 자동 갱신 꺼짐 (비용 발생) — 원할 때만 수동 실행
+  # 비용 발생 — 원할 때만 수동 실행. 분할 백필용 (top_n 상위에서 limit개씩).
   workflow_dispatch:
-    # 수동 실행 (GitHub 웹에서 버튼 클릭 또는 요청 시 실행)
+    inputs:
+      top_n:
+        description: '대상: 시총 상위 N개 (이 중 아직 없는/오래된 것만 생성)'
+        type: string
+        default: '100'
+      limit:
+        description: '이번 실행 최대 생성 개수 (분할 백필, 0=제한없음)'
+        type: string
+        default: '20'
 
 jobs:
   reports:
@@ -36,7 +44,8 @@ jobs:
           ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
           DART_API_KEY: ${{ secrets.DART_API_KEY }}
           REPORT_MODEL: ${{ vars.REPORT_MODEL || 'claude-sonnet-4-6' }}
-          REPORT_TOP_N: ${{ vars.REPORT_TOP_N || '5' }}
+          REPORT_TOP_N: ${{ inputs.top_n || '100' }}
+          REPORT_LIMIT: ${{ inputs.limit || '20' }}
         run: |
           set -o pipefail
           mkdir -p data

@@ -308,14 +308,26 @@ def main():
 
     client = anthropic.Anthropic(api_key=api_key)
     data = load_stocks()
-    stocks = sorted(data["stocks"], key=lambda x: x.get("mcap", 0) or 0, reverse=True)[:TOP_N]
+    all_sorted = sorted(data["stocks"], key=lambda x: x.get("mcap", 0) or 0, reverse=True)
+
+    # REPORT_TICKERS 가 지정되면 그 종목만(쉼표 구분), 아니면 시총 상위 TOP_N
+    tickers_env = os.getenv("REPORT_TICKERS", "").replace(" ", "")
+    if tickers_env:
+        want = [t for t in tickers_env.split(",") if t]
+        by_tk = {s["ticker"]: s for s in data["stocks"]}
+        stocks = [by_tk[t] for t in want if t in by_tk]
+        log(f"## 🤖 AI 리포트 생성 — 지정 {len(stocks)}개 종목")
+    else:
+        stocks = all_sorted[:TOP_N]
+        log(f"## 🤖 AI 리포트 생성 — 시총 상위 {TOP_N}개")
 
     now = datetime.datetime.now(datetime.timezone(datetime.timedelta(hours=9)))
     as_of = now.strftime("%Y-%m-%d %H:%M")
     report_date = now.strftime("%Y-%m-%d")
 
-    log(f"## 🤖 AI 리포트 생성 — {as_of} KST")
-    log(f"- 모델: `{MODEL}` · 대상: 시총 상위 {TOP_N}개")
+    # 1회 실행당 신규 생성 최대 개수(분할 백필용). 0 또는 미설정이면 제한 없음.
+    limit = int(os.getenv("REPORT_LIMIT", "0") or "0")
+    log(f"- 모델: `{MODEL}`" + (f" · 1회 최대 {limit}개" if limit else ""))
 
     # ── 이어하기: 기존 리포트를 불러온다. 최근(FRESH_DAYS일 이내) 리포트는
     #    재생성하지 않고 유지(같은 날 재실행=복구). 오래된 것은 갱신(주간 자동실행). ──
@@ -348,11 +360,15 @@ def main():
     PARSE_RETRY = 1   # 파싱/잘림 실패 시 재시도 횟수(비용 절약 위해 최소화)
     RL_WAITS = 3      # 속도제한(429) 대기-재시도 횟수
     last_gen = -1
+    gen_count = 0
     for i, st in enumerate(stocks, 1):
         tk, nm = st["ticker"], st["name"]
         if tk in fresh and not force:
             log(f"\n### [{i}/{len(stocks)}] {nm} ({tk}) — 최근 리포트 존재, 건너뜀")
             continue
+        if limit and gen_count >= limit:
+            log(f"\n### 1회 최대 {limit}개 도달 — 나머지는 다음 실행에서 (이어하기)")
+            break
         log(f"\n### [{i}/{len(stocks)}] {nm} ({tk})")
 
         if last_gen >= 0:  # 직전에 실제 생성을 했다면 한도 회복 간격
@@ -376,6 +392,7 @@ def main():
                     "dataDate": data.get("dataDate", ""),
                 })
                 reports[tk] = rep
+                gen_count += 1
                 log(f"- ✅ 완료 ({time.time()-t0:.0f}s · 검색 {searches}회)")
                 break
             except anthropic.RateLimitError:
