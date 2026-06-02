@@ -197,9 +197,17 @@ KSIC2 = {
 }
 
 
+# 지주회사 등 업종이 모호한 코드 — 수동 분류(SECTOR_MAP)를 우선 사용
+#   64992 = 지주회사(금융·산업 지주 공통). 산업 지주사(에코프로·SK·두산 등)가
+#   '금융'으로 잘못 분류되는 것을 방지.
+KSIC_AMBIGUOUS = {"64992"}
+
+
 def ksic_name(code, fallback="기타"):
-    """KSIC 업종코드 → 친화적 업종명. 모르는 코드는 fallback(기존 분류) 유지."""
+    """KSIC 업종코드 → 친화적 업종명. 모르는/모호한 코드는 fallback(기존 분류) 유지."""
     digits = "".join(ch for ch in str(code) if ch.isdigit())
+    if digits in KSIC_AMBIGUOUS:
+        return fallback if fallback and fallback != "기타" else "지주"
     if len(digits) >= 3 and digits[:3] in KSIC3:
         return KSIC3[digits[:3]]
     if len(digits) >= 2 and digits[:2] in KSIC2:
