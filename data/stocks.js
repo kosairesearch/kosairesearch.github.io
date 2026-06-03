@@ -74,7 +74,8 @@ window.KOS_LIVE_DATA = {
       "shares": 74693696,
       "induty_code": "2622",
       "categories": [
-        "전자·부품"
+        "전자·부품",
+        "인공지능(AI)"
       ],
       "rank": 4
     },

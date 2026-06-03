@@ -2081,7 +2081,8 @@ window.KOS_REPORTS = {
       "name_en": "SAMSUNG ELECTRO-MECHANICS CO.,LTD",
       "sector": "전자·부품",
       "categories": [
-        "전자·부품"
+        "전자·부품",
+        "인공지능(AI)"
       ],
       "market": "코스피",
       "reportDate": "2026-06-03",
