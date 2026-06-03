@@ -559,7 +559,8 @@ const REPORTS_DEFAULT=[
 ];
 const REPORTS = window.KOS_LIVE_DATA?.stocks || REPORTS_DEFAULT;
 
-const SECTORS=['전체',...[...new Set(REPORTS.map(r=>r.sector))]];
+const rcats=r=>(r.categories&&r.categories.length?r.categories:[r.sector]);
+const SECTORS=['전체',...[...new Set(REPORTS.flatMap(rcats))]];
 
 const state={q:'',sector:'전체',sort:'mcap',expanded:false};
 const rowsEl=document.getElementById('rows'),rlEl=document.getElementById('rl'),emptyEl=document.getElementById('empty');
@@ -583,7 +584,7 @@ function repaintSort(){
 function getList(){
   const t=state.q.trim().toLowerCase();
   let l=REPORTS.filter(r=>{
-    if(state.sector!=='전체'&&r.sector!==state.sector)return false;
+    if(state.sector!=='전체'&&!rcats(r).includes(state.sector))return false;
     if(t&&!(r.name.toLowerCase().includes(t)||r.ticker.includes(t)||r.sector.toLowerCase().includes(t)||T(r.name).toLowerCase().includes(t)||T(r.sector).toLowerCase().includes(t)))return false;
     return true;
   });

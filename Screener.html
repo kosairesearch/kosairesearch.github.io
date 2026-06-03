@@ -704,7 +704,8 @@ const STOCKS_DEFAULT=[
 ];
 const STOCKS = window.KOS_LIVE_DATA?.stocks || STOCKS_DEFAULT;
 
-const SECTORS=[...new Set(STOCKS.map(s=>s.sector))].map(name=>({name,count:STOCKS.filter(s=>s.sector===name).length}));
+const scats=s=>(s.categories&&s.categories.length?s.categories:[s.sector]);
+const SECTORS=[...new Set(STOCKS.flatMap(scats))].map(name=>({name,count:STOCKS.filter(s=>scats(s).includes(name)).length}));
 
 /* ===== field definitions ===== */
 const FIELDS={
@@ -731,7 +732,7 @@ function passes(s){
   for(const k in state.filters){
     const f=FIELDS[k],v=state.filters[k];
     if(f.type==='segment'){ if(v!=='전체'&&s.market!==v) return false; }
-    else if(f.type==='multi'){ if(v.length&&!v.includes(s.sector)) return false; }
+    else if(f.type==='multi'){ if(v.length&&!scats(s).some(c=>v.includes(c))) return false; }
     else { const val=s[k]; if(v.min!=null&&val<v.min) return false; if(v.max!=null&&val>v.max) return false; }
   }
   return true;
