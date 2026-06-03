@@ -874,6 +874,11 @@ def main():
 
     results = enrich_with_dart(results)
 
+    # 수집 실패 가드: 종목이 너무 적으면 stocks.js를 덮어쓰지 않음(기존 100여 개 데이터 보존)
+    if len(results) < 50:
+        log_summary(f"❌ 수집 종목 {len(results)}개로 비정상(50 미만) — stocks.js 갱신 건너뜀, 기존 데이터 유지")
+        sys.exit(1)
+
     count = build_output(results, date)
     log_summary(f"- 최종 출력: {count}개 종목")
 
