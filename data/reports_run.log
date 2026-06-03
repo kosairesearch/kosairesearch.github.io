@@ -1,4 +1,6 @@
-=== 배치(collect) 시작 Wed Jun  3 15:13:08 UTC 2026 ===
-  · ⚠️ 207940 파싱 실패: AttributeError: 'str' object has no attribute 'update'
+=== 리포트 생성 시작 Wed Jun  3 15:22:01 UTC 2026 ===
+## 🤖 AI 리포트 생성 — 지정 0개 종목
+- 모델: `claude-sonnet-4-6`
+- 기존 리포트 20개 로드 · 최근(6일내) 20개 유지
 
-✅ 회수 완료 · 성공 9/실패 1 · 총 보유 20개 → data/reports.js
+✅ 현재 리포트 20개 보유 · 이번 실행 웹검색 0회 · → data/reports.js
