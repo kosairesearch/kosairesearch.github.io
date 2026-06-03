@@ -1,6 +1,6 @@
 // KOS ai — AI 리서치 리포트 (자동 생성). 직접 수정하지 마세요.
 window.KOS_REPORTS = {
-  "lastUpdated": "2026-06-04 01:34",
+  "lastUpdated": "2026-06-04 03:36",
   "model": "claude-sonnet-4-6",
   "reports": {
     "005930": {
@@ -3594,6 +3594,1611 @@ window.KOS_REPORTS = {
       "sector": "금융",
       "categories": [
         "금융"
+      ],
+      "market": "코스피",
+      "reportDate": "2026-06-04",
+      "dataDate": "20260602"
+    },
+    "009540": {
+      "title": {
+        "ko": "고선가 사이클 결실 구간—영업이익률 16%대 진입과 LNG 수주 재가속",
+        "en": "Supercycle at Peak: Record Margins and LNG Order Re-acceleration"
+      },
+      "lead": {
+        "ko": "고가 수주 물량의 본격 매출 인식, 생산성 향상, LNG선 발주 재개라는 세 축이 맞물리며 HD한국조선해양은 수익성과 수주 가시성이 동시에 개선되는 구간에 진입했다.",
+        "en": "With high-priced backlogs entering peak revenue recognition, productivity-driven margin expansion, and LNG carrier orders re-accelerating, HD KSOE has entered a phase where profitability and order visibility are improving simultaneously."
+      },
+      "desc": {
+        "ko": "HD한국조선해양(009540)은 HD현대 그룹의 조선·해양 부문 중간 지주사로, HD현대중공업·HD현대삼호·HD현대미포·HD현대마린솔루션 등 핵심 조선 계열사를 산하에 두고 있다. DART 공시 연결 기준 2025년 연간 영업이익은 3.9조원(전년 대비 +172.3%)을 기록하며 사상 최고 수준으로 도약했고, 2026년 1분기에는 영업이익률 16.7%로 2019년 물적분할 이후 역대 최고치를 경신했다. 2026년 6월 4일 기준 주가는 383,500원으로 52주 최고가(494,500원) 대비 약 22% 조정된 상태이며, 시장의 관심은 하반기 LNG선 대규모 수주 모멘텀과 한·미 조선 협력(MASGA) 사업의 구체화 여부에 집중되고 있다.",
+        "en": "HD Korea Shipbuilding & Offshore Engineering (009540) serves as the intermediate holding company for HD Hyundai's shipbuilding segment, overseeing key subsidiaries including HD Hyundai Heavy Industries, HD Hyundai Samho, HD Hyundai Mipo, and HD Hyundai Marine Solution. Per DART-confirmed consolidated financials, 2025 full-year operating income surged to KRW 3.9 trillion (+172.3% YoY), while Q1 2026 operating margin reached 16.7%—a record since the 2019 spin-off. As of June 4, 2026, the share price of KRW 383,500 sits approximately 22% below the 52-week high of KRW 494,500, with market focus turning to H2 LNG carrier order momentum and the progress of the Korea-U.S. MASGA shipbuilding cooperation initiative."
+      },
+      "keypoints": [
+        {
+          "ko": "DART 확정 2025년 영업이익 3.9조원(+172.3% YoY)·2026년 1분기 영업이익률 16.7%(물적분할 후 최고)로 수익성 구조적 도약 확인",
+          "en": "DART-confirmed 2025 operating income of KRW 3.9T (+172.3% YoY) and Q1 2026 OPM of 16.7% (record since spin-off) confirm a structural profitability step-change"
+        },
+        {
+          "ko": "2025년 수주 목표를 100.6% 초과 달성(181.6억 달러)했고, 2026년 조선·해양 부문 수주 목표는 전년 대비 29.1% 상향한 233.1억 달러—5월까지 53.8% 달성",
+          "en": "2025 order target exceeded at 100.6% ($18.16B); 2026 shipbuilding/offshore target set 29.1% higher at $23.31B, with 53.8% secured through May 2026"
+        },
+        {
+          "ko": "클락슨리서치 2026년 LNG운반선 발주 최대 150척 전망—2025년 34척 대비 약 4배 규모로 하반기 핵심 수주 모멘텀 부상",
+          "en": "Clarksons forecasts up to 150 LNG carrier orders for 2026—roughly four times the 34 vessels ordered in 2025—emerging as the key H2 order momentum catalyst"
+        },
+        {
+          "ko": "2025년 11월 기준 그룹 수주잔고 약 399억 달러(55.9조원)로 연간 매출 대비 약 2.5년치 일감 확보—중기 실적 안정성 뒷받침",
+          "en": "As of November 2025, group backlog of approximately $39.9B (KRW 55.9T) equals roughly 2.5 years of annual revenues, underpinning medium-term earnings stability"
+        },
+        {
+          "ko": "한·미 MASGA 협력 및 미 해군 MRO 사업 진출—상업 조선 사이클과 독립적인 방산·특수선 성장 축이 중장기 밸류에이션 재평가 요인으로 주목",
+          "en": "Korea-U.S. MASGA cooperation and U.S. Navy MRO market entry emerging as a defense/specialty vessel growth axis decoupled from the commercial shipbuilding cycle"
+        }
+      ],
+      "business": {
+        "ko": "HD한국조선해양은 HD현대 그룹 내 조선·해양 부문 중간 지주사로, HD현대중공업(지분율 100%), HD현대삼호(96.58%), HD현대미포(42.40%), HD현대마린솔루션, HD현대이엔티 등 핵심 조선 계열사를 지배하고 있다. 사업 구조는 크게 ▲선박 건조(컨테이너선·LNG운반선·VLCC·VLGC·암모니아 운반선 등 고부가 선종 중심) ▲해양플랜트(FPSO 등) ▲엔진기계(HiMSEN 엔진) ▲애프터마켓 서비스(HD현대마린솔루션)로 구성되며, 매출의 대부분은 HD현대중공업과 HD현대삼호의 선박 건조에서 창출된다. 최근 보도에 따르면 2026년 1분기 자회사 HD현대중공업 단독 매출은 5.9163조원(+54.8% YoY, 영업이익률 15.3%)에 달해 그룹 연결 매출(8.1409조원)의 약 70% 이상을 차지하는 핵심 사업 기둥임을 재확인시켰다. 선종 구성 측면에서 회사는 LNG·LPG·암모니아 운반선 등 에너지 운송선과 초대형 컨테이너선 중심의 선별 수주 전략을 유지하고 있으며, 이 같은 고부가 믹스 개선이 최근 기록적 이익률의 핵심 배경으로 작용하고 있다. 경쟁 구도는 국내 삼성중공업·한화오션과 함께 '조선 빅3' 체제를 형성하며, 2025년 국내 3사 합산 수주 실적은 359.3억 달러로 견조한 흐름을 이어갔다. 톤수(GT) 기준 글로벌 합산 시장 점유율은 약 13~14% 수준이나, 고부가 선종 금액 기준으로는 이를 상회하며 특히 LNG 운반선 분야에서 중국 대비 압도적 기술 우위를 보유하고 있다. HD현대마린솔루션은 선박 부품 공급·기술 서비스·친환경 개조·벙커링 등을 영위하는 애프터마켓 전문 계열사로, 2024년 5월 코스피에 상장해 안정적인 두 자릿수 영업이익률과 경기 비연동적 수익 구조를 통해 그룹의 사이클 리스크를 분산하는 역할을 담당하고 있다. 스마트야드 고도화(AI 기반 도크·블록·용접 자동화)와 LNG·암모니아·메탄올 이중연료 추진 선박 기술 개발이 중장기 기술 경쟁력의 핵심 축으로 자리잡고 있으며, 이는 IMO 환경 규제 강화에 따른 구조적 수혜와 직결된다.",
+        "en": "HD Korea Shipbuilding & Offshore Engineering (HD KSOE) serves as the intermediate holding company for HD Hyundai's shipbuilding segment, controlling key subsidiaries including HD Hyundai Heavy Industries (100% stake), HD Hyundai Samho (96.58%), HD Hyundai Mipo (42.40%), HD Hyundai Marine Solution, and HD Hyundai E&T. The business spans four main areas: vessel construction (focused on high-value segments such as LNG carriers, container ships, VLCCs, VLGCs, and ammonia carriers), offshore/marine plants (FPSO, etc.), engine machinery (HiMSEN engines), and aftermarket services (HD Hyundai Marine Solution). Per recent reports, HD Hyundai Heavy Industries generated standalone Q1 2026 revenue of KRW 5.9163 trillion (+54.8% YoY, 15.3% OPM), accounting for approximately 70%+ of the group's consolidated KRW 8.1409 trillion revenue and confirming its role as the single dominant earnings engine. The group pursues a selective, high-value-focused ordering strategy centered on LNG, LPG, and ammonia carriers alongside mega-container ships—a mix shift that directly underpins the record margins seen in recent quarters. The competitive landscape is defined by a domestic three-player structure alongside Samsung Heavy Industries and Hanwha Ocean; per recent industry data, the Korean Big-3 combined 2025 order intake reached $35.93 billion in a challenging environment. By tonnage, global market share stands at approximately 13–14%, but is materially higher on a vessel-value basis, with a dominant technological lead over Chinese yards in LNG carriers. HD Hyundai Marine Solution, listed on KOSPI in May 2024, provides ship parts, technical services, eco-friendly retrofits, and bunkering—delivering stable double-digit operating margins and counter-cyclical revenue characteristics that meaningfully diversify the group's commercial shipbuilding cycle exposure. Smart-yard advancement (AI-based dock, block, and welding automation) and eco-friendly dual-fuel propulsion development (LNG, ammonia, methanol) constitute the core pillars of long-term technological competitiveness, positioning the group as a direct structural beneficiary of tightening IMO environmental regulations."
+      },
+      "recent": {
+        "ko": "DART 공시 확정 연결 기준으로 HD한국조선해양의 2025년 연간 매출액은 29.9조원(전년 대비 +17.2%), 영업이익 3.9조원(+172.3%), 당기순이익 2.9조원(+101.3%)을 기록하며 사상 최고 수준으로 도약했다. 영업이익이 매출 대비 압도적으로 빠른 속도로 증가한 배경에는 2021~2022년 호황기에 고가 수주한 선박들이 본격 매출에 반영되면서 발생한 고선가 믹스 효과와 전반적인 생산성 향상이 복합적으로 작용했다. 2026년 1분기에는 매출 8.1409조원(+20.2% YoY), 영업이익 1.3560조원(+57.8% YoY)을 기록했으며, 영업이익률은 16.7%로 2019년 물적분할 이후 역대 최고치를 경신했다. 최근 보도에 따르면 1분기 매출과 영업이익은 시장 컨센서스를 각각 1.7%, 14.8% 상회하는 어닝 서프라이즈를 기록했으며, 계절적 조업일수 감소에도 불구하고 전분기와 유사한 매출을 시현했다는 점이 특히 주목할 만하다. 수주 측면에서는 2025년 연간 133척·181.6억 달러를 수주해 연간 목표(180.5억 달러)를 100.6% 초과 달성했으며, 2026년 들어서도 5월까지 누적 104척·125.4억 달러를 확보해 연간 목표(233.1억 달러)의 53.8%를 달성한 상태다. 직전 보도에 따르면 2026년 6월 초에는 아시아 선사로부터 VLGC 8척(계약금액 1조4161억원)을 추가 수주해 연간 목표 누적 달성률이 60%를 넘어선 것으로 전해진다. 주가는 2026년 6월 4일 기준 383,500원으로 52주 최고가(494,500원) 대비 약 22% 조정된 상태이며, 최근 급등에 따른 차익실현 매물과 외국인 수급 변화가 단기 변동성의 주된 원인으로 작용하고 있다.",
+        "en": "Per DART-confirmed consolidated financials, HD KSOE recorded 2025 full-year revenue of KRW 29.9 trillion (+17.2% YoY), operating income of KRW 3.9 trillion (+172.3% YoY), and net income of KRW 2.9 trillion (+101.3% YoY), achieving record levels across all key metrics. The outsized operating income growth relative to revenues reflects the compounding effect of high-priced vessel mix—as ships ordered at peak rates in 2021–2022 entered revenue recognition—alongside meaningful productivity improvements across operating subsidiaries. In Q1 2026, the company reported revenue of KRW 8.1409 trillion (+20.2% YoY), operating income of KRW 1.3560 trillion (+57.8% YoY), and an operating margin of 16.7%—the highest since the 2019 spin-off. Per recent reports, Q1 2026 results beat consensus estimates by 1.7% on revenue and 14.8% on operating income, a particularly notable beat given the seasonally fewer working days in the first quarter. On orders, the group ended 2025 having secured 133 vessels at $18.16 billion, exceeding its annual target of $18.05 billion by 0.6%; through May 2026, cumulative orders reached 104 vessels at $12.54 billion, representing 53.8% of the 2026 full-year target of $23.31 billion. According to recent reports, an additional order of 8 VLGCs worth KRW 1.4161 trillion from an Asian shipowner was disclosed in early June 2026, pushing cumulative 2026 order attainment above 60% of the annual target. The share price of KRW 383,500 as of June 4, 2026 sits approximately 22% below the 52-week high of KRW 494,500, with profit-taking after a sharp rally and shifts in foreign investor positioning identified as the primary drivers of near-term volatility."
+      },
+      "outlook": {
+        "ko": "2026년은 고선가 수주분의 매출 인식이 절정에 이르는 '결실의 원년'으로 평가되며, 이미 2026년 1분기 영업이익률이 16.7%를 기록한 점은 이 기조가 연중 지속될 수 있음을 시사한다. 2024~2025년 일시적 소강 상태였던 LNG운반선 발주가 미국·카타르 등 최종투자결정(FID) 완료 프로젝트를 기반으로 재개되고 있으며, 클락슨리서치가 2026년 LNG선 수요를 최대 150척으로 전망하는 만큼 하반기 수주 모멘텀의 핵심 촉매가 될 전망이다. 한·미 MASGA 프로젝트가 본격화되면서 미국 해군 함정 MRO 수주와 방산 특수선 확장이 중기 성장 동력으로 가시화되고 있어, 상업 조선 사이클과 독립적인 안정적 매출 기반 구축이 기대된다. IMO 환경 규제 강화와 노후선 교체 수요는 LNG·암모니아·메탄올 이중연료 추진 선박 발주를 구조적으로 지지하는 요인으로, 해당 기술 역량을 보유한 HD한국조선해양 그룹에 중장기 수혜가 예상된다. 한편 한국수출입은행 해외경제연구소는 2026년 글로벌 신조선 발주량이 전년 대비 약 14.6% 감소할 것으로 전망해, LNG선 이외 선종에서의 수주 둔화 가능성과 높아진 수주 목표 달성 여부가 향후 주가 방향성의 핵심 변수로 작용할 것으로 보인다. 2026년 하반기 수주 실적·LNG선 발주 현실화·MASGA 구체화 등 이벤트의 순차적 확인이 중기 펀더멘털 재확인의 기회가 될 것으로 판단된다.",
+        "en": "For HD KSOE, 2026 is characterized as the 'year of harvest' in which high-priced backlog vessels reach peak revenue recognition, and the Q1 2026 operating margin of 16.7% signals that this trajectory could sustain through the year. LNG carrier orders, temporarily subdued in 2024–2025, are re-accelerating as U.S. and Qatari LNG export projects with completed FIDs enter procurement phases; Clarkson Research's forecast of up to 150 LNG carrier orders for 2026 positions this segment as the pivotal H2 order catalyst. The Korea-U.S. MASGA project entering execution is creating tangible visibility for U.S. Navy vessel MRO revenue and defense/special-purpose vessel expansion as a medium-term growth axis structurally decoupled from the commercial cycle. IMO environmental tightening and aging fleet replacement demand provide structural support for eco-friendly vessel orders, with the HD KSOE group's LNG, ammonia, and methanol dual-fuel capabilities positioning it as a sustained long-term beneficiary. However, the Korea Export-Import Bank Research Institute's forecast of a roughly 14.6% decline in global new orders for 2026 implies potential headwinds in non-LNG segments, making the pace of order achievement and LNG order materialization critical variables for the stock's near-term direction. Sequential confirmation of H2 2026 order outcomes, LNG ordering activity, and MASGA contract specifics will serve as the key milestones for reaffirming medium-term fundamentals."
+      },
+      "bull": [
+        {
+          "title": {
+            "ko": "고선가 매출 인식과 영업이익률의 구조적 상향",
+            "en": "Structural Margin Uplift from High-Priced Backlog Recognition"
+          },
+          "body": {
+            "ko": "2021~2022년 조선 호황기에 고가 수주한 선박들이 2025~2026년 본격 매출에 인식되면서 이익률의 구조적 상향이 진행 중이다. DART 확정 기준 2025년 영업이익이 전년 대비 172.3% 급증한 데 이어, 2026년 1분기 영업이익률은 16.7%로 물적분할 이후 사상 최고치를 경신했으며 대형 조선사로서는 이례적인 '꿈의 수익성'으로 평가된다. 최근 보도에 따르면 1분기 실적은 시장 컨센서스를 영업이익 기준 14.8% 상회해 이익률 상승 궤도가 시장 예상을 앞서가고 있음을 시사한다. 2.5년치에 달하는 수주잔고가 이미 확보된 상황에서 고선가 건조분의 매출 인식이 이어지는 한, 이익률 개선 기조는 2026~2027년까지 구조적으로 지속될 여건이 갖춰져 있다.",
+            "en": "Vessels ordered at peak prices during the 2021–2022 shipbuilding boom are now entering revenue recognition in 2025–2026, driving a structural step-up in margins. DART-confirmed 2025 operating income grew 172.3% YoY, and Q1 2026 operating margin reached a record 16.7% since the 2019 spin-off—widely described as a near-unprecedented profitability level for a major shipbuilder. Per recent reports, Q1 results beat consensus operating income estimates by 14.8%, suggesting the margin expansion trajectory is running ahead of market expectations. With approximately 2.5 years' worth of revenue backlog already secured and high-priced builds continuing to roll into revenue, structural conditions for sustained margin improvement through 2026–2027 are firmly in place."
+          }
+        },
+        {
+          "title": {
+            "ko": "LNG 운반선 수주 재가속—슈퍼사이클 2막의 핵심 촉매",
+            "en": "LNG Carrier Order Re-acceleration — Catalyst for Supercycle Act II"
+          },
+          "body": {
+            "ko": "2024~2025년 약 34척에 그쳤던 LNG운반선 연간 발주량이 2026년 들어 미국·카타르 LNG 수출 프로젝트의 FID 완료와 함께 재가속되고 있다. 클락슨리서치는 2026년 LNG선 발주 수요를 최대 150척으로 전망하며, 이는 2025년 대비 약 4배 수준의 대규모 발주가 예상됨을 의미한다. 한국 조선 3사는 LNG 운반선 분야에서 중국 대비 압도적 기술 우위를 유지하고 있어 대규모 발주 현실화 시 HD한국조선해양 그룹이 최대 수혜자가 될 가능성이 높다. 업계 전문가들은 LNG선 수주와 한·미 MASGA 협력이 맞물리는 2026~2033년 구간을 조선 슈퍼사이클 2막의 핵심 국면으로 지목하고 있어 중장기 성장 스토리가 강화되고 있다.",
+            "en": "LNG carrier annual orders, which totaled approximately 34 vessels in 2025, are re-accelerating into 2026 as U.S. and Qatari LNG export projects complete their FIDs and enter vessel procurement. Clarkson Research forecasts 2026 LNG carrier demand at up to 150 vessels—approximately four times the 2025 level—implying a substantial volume opportunity materializing in the near term. Korean shipbuilders maintain a dominant technological edge over Chinese yards in LNG carriers, meaning large-scale ordering activity would disproportionately benefit the HD KSOE group. Industry analysts have identified the 2026–2033 period—when LNG carrier orders intersect with Korea-U.S. MASGA cooperation—as the defining chapter of Supercycle Act II, reinforcing the medium-to-long-term growth narrative."
+          }
+        },
+        {
+          "title": {
+            "ko": "MASGA·방산 확장—사이클 독립적 신성장 동력",
+            "en": "MASGA & Defense Expansion — Structural Growth Axis Decoupled from the Commercial Cycle"
+          },
+          "body": {
+            "ko": "한·미 조선 협력 프로젝트 MASGA가 본격화되면서 미국 해군 함정의 MRO 수주 및 군수지원함·잠수함 등 방산 특수선 분야로의 사업 확장 기반이 마련되고 있다. 방산·특수선 수주는 상업 조선 사이클과 독립적인 장기 계약 구조를 가지므로, 발주 환경 변화에 따른 실적 변동성을 흡수하는 안정적 매출원으로 기능할 수 있다. 글로벌 지정학적 리스크 증가와 함께 각국의 해군력 강화 기조가 지속되고 있어, 방산·특수선 수주 기회는 중장기적으로 확대될 전망이다. 2025년이 방산·MRO 사업 확장의 '원년'으로 평가받는 만큼, 이 축이 본격 성장 궤도에 오를 경우 주가 밸류에이션 재평가(리레이팅)의 잠재적 계기가 될 수 있다.",
+            "en": "The Korea-U.S. MASGA project is entering an execution phase, establishing the foundation for U.S. Navy vessel MRO contracts and expansion into defense special-purpose vessels such as support ships and submarines. Defense and special-purpose vessel orders carry long-term contract structures decoupled from commercial shipbuilding cycles, enabling them to function as a stabilizing revenue base that buffers earnings volatility. The global trend toward naval force expansion amid elevated geopolitical tensions creates an expanding medium-to-long-term pipeline for defense and special-purpose vessel orders. As 2025 is characterized as the inaugural year of defense/MRO business expansion, the full materialization of this growth axis could become a catalyst for a structural valuation re-rating."
+          }
+        }
+      ],
+      "bear": [
+        {
+          "title": {
+            "ko": "글로벌 발주량 둔화와 높아진 수주 목표—달성 불확실성",
+            "en": "Global Order Volume Slowdown and Elevated Target Risk"
+          },
+          "body": {
+            "ko": "한국수출입은행 해외경제연구소는 2026년 글로벌 신조선 발주량이 전년 대비 약 14.6% 감소할 것으로 전망했으며, 미국 관세 정책 불확실성과 IMO 환경 규제 유예 가능성이 단기 발주 심리를 억제하는 요인으로 작용할 수 있다. HD한국조선해양이 2026년 수주 목표를 전년 대비 29.1% 상향한 233.1억 달러로 설정한 만큼, 글로벌 발주 환경이 예상보다 위축될 경우 목표 달성 실패 리스크가 상존한다. 2025년에는 전 세계 발주량이 전년 대비 약 27% 감소하는 상황에서도 한국이 수주량을 오히려 8% 늘리는 선전을 했으나, 이는 선종 집중·선별 수주 전략의 결과여서 모든 환경에서의 반복 가능성을 낙관하기만은 어렵다.",
+            "en": "The Korea Export-Import Bank's Research Institute forecasts a roughly 14.6% decline in global newbuilding order volumes for 2026, and U.S. tariff policy uncertainty along with potential IMO regulation delays could further suppress near-term ordering sentiment. With the company's 2026 order target set at $23.31 billion—29.1% above 2025 actuals—a weaker-than-expected global ordering environment would create material target-miss risk. Although Korea's 2025 order intake actually grew 8% even as global volumes fell 27%—a remarkable achievement—this outperformance was driven by vessel-type specialization and selective ordering strategy, making its unconditional repeatability uncertain across all market environments."
+          }
+        },
+        {
+          "title": {
+            "ko": "원가 구조 압박—후판·노무비·환율 동시 변수",
+            "en": "Cost Structure Pressure — Steel Plates, Labor, and FX Headwinds"
+          },
+          "body": {
+            "ko": "조선업은 후판(선체 철강재)·노무비·하청 단가가 수익성에 직접 영향을 미치는 구조로, 현재의 고수익성은 고선가 믹스와 원가 안정 두 가지 요인에 동시에 의존하고 있다. 후판 가격이 재상승하거나 숙련 인력 부족에 따른 노무비 상승이 가속화될 경우, 현재의 두 자릿수 영업이익률이 압축될 가능성이 있다. 달러 표시 수주 계약 구조에서 원화 강세 국면이 지속되면 원화 환산 매출·이익에 역풍이 작용하며, 외국 인력 의존도 확대로 인한 생산 인력 수급 불균형도 공정 지연 리스크로 이어질 수 있다.",
+            "en": "Shipbuilding's cost structure—in which steel plate prices, labor, and subcontracting rates directly impact profitability—means that current record margins simultaneously depend on both a favorable vessel price mix and cost stability. A resurgence in steel plate prices or accelerating labor cost inflation amid skilled worker shortages could meaningfully compress the current double-digit operating margins. Sustained Korean won appreciation would generate an FX headwind on won-denominated revenues and earnings given the dollar-denominated contracting structure, while growing reliance on foreign production workers introduces a supply-side risk that could translate into schedule delays if workforce availability deteriorates."
+          }
+        },
+        {
+          "title": {
+            "ko": "지주사 할인·밸류에이션 부담—고점 대비 조정 지속",
+            "en": "Holdco Discount & Valuation Overhang — Correction from Cycle Peak"
+          },
+          "body": {
+            "ko": "HD한국조선해양은 HD현대중공업·HD현대마린솔루션 등 상장 자회사를 보유한 중간 지주사 구조여서, 자회사 직접 투자 대비 구조적 지주사 할인이 발생하는 경향이 있다. 현재 주가(383,500원)는 52주 최고가(494,500원) 대비 약 22% 조정된 상태로, 최근 급등 이후 차익실현 매물과 외국인 수급 변화가 단기 변동성의 주된 요인으로 작용하고 있다. 최근 보도에 따르면 일부 증권사가 글로벌 매크로 불확실성을 반영해 목표주가를 하향 조정한 사례가 있어, 대외 환경 악화 시 섹터 전반의 밸류에이션 프리미엄에 추가 하방 압력이 가해질 가능성이 있다.",
+            "en": "As an intermediate holding company with listed subsidiaries including HD Hyundai Heavy Industries and HD Hyundai Marine Solution, HD KSOE is structurally prone to a holding company discount relative to direct investment in its operating subsidiaries. The current share price of KRW 383,500 represents an approximately 22% pullback from the 52-week high of KRW 494,500, with post-rally profit-taking and shifts in foreign investor positioning serving as the primary near-term volatility drivers. According to recent reports, some brokerages have lowered their target prices to reflect global macro uncertainty, suggesting that a deterioration in the external environment could apply additional downward pressure on the valuation premium assigned to the broader shipbuilding sector."
+          }
+        }
+      ],
+      "risks": [
+        {
+          "cat": {
+            "ko": "거시·무역 리스크",
+            "en": "Macro & Trade Risk"
+          },
+          "body": {
+            "ko": "미국 관세 정책 강화와 글로벌 무역 분절화는 컨테이너선·탱커 발주 심리를 단기적으로 억제할 가능성이 있으며, 이는 수주 목표 달성에 불확실성을 더한다. 중동 지정학적 불안 재확대나 에너지 가격 급변은 LNG선 발주 사이클에 직접적 충격을 줄 수 있고, 러시아-우크라이나 전황 변화 역시 유럽 에너지 수급 구조에 영향을 미쳐 LNG 수요 전망에 변화를 야기할 수 있다. 글로벌 경기 침체 우려가 심화될 경우 선박 발주 전반이 예상보다 크게 둔화될 수 있으며, 이는 현재의 높은 수주잔고 프리미엄에 대한 재평가 압력으로 이어질 수 있다.",
+            "en": "Escalating U.S. tariff policies and global trade fragmentation could suppress near-term ordering sentiment for container ships and tankers, adding uncertainty to the order target. Geopolitical destabilization in the Middle East or sharp energy price swings could directly disrupt the LNG carrier ordering cycle, while evolving Russia-Ukraine dynamics may continue to reshape European energy supply, altering the LNG demand outlook. A deeper-than-expected global economic slowdown could broadly depress vessel ordering, potentially triggering a reappraisal of the premium attached to the current multi-year backlog."
+          }
+        },
+        {
+          "cat": {
+            "ko": "중국 조선업 경쟁 심화",
+            "en": "Chinese Shipbuilding Competition"
+          },
+          "body": {
+            "ko": "중국 조선사들은 글로벌 발주량의 절반 이상을 점유하며 LNG 운반선 등 고부가 선종 시장에도 기술·가격 경쟁력을 바탕으로 진입을 가속화하고 있다. 중국 주요 LNG 전문 조선소의 건조 역량이 점진적으로 향상되고 있어, 중장기적으로 한국의 기술 프리미엄이 축소될 가능성을 배제하기 어렵다. 중국 정부의 조선업 지원 정책이 강화되거나 저가 공세가 재개될 경우, 컨테이너선·탱커 등 범용 선종을 중심으로 수주 경쟁이 심화되어 한국 조선사의 수익성 개선 속도가 둔화될 위험이 있다.",
+            "en": "Chinese shipbuilders hold more than half of global order volumes and are accelerating entry into high-value segments including LNG carriers, leveraging both improving technical capabilities and price competitiveness. The gradual improvement in LNG carrier construction skills at major Chinese yards suggests that Korea's technical premium may gradually erode over the medium-to-long term, and this risk cannot be dismissed. Renewed Chinese government industrial support or an aggressive pricing push could intensify competition in more commoditized vessel types such as container ships and tankers, potentially slowing the pace of profitability improvement for Korean builders."
+          }
+        },
+        {
+          "cat": {
+            "ko": "원가·환율·프로젝트 리스크",
+            "en": "Cost, FX & Project Execution Risk"
+          },
+          "body": {
+            "ko": "조선용 후판 가격의 재상승, 숙련 노동력 부족에 따른 노무비·하청 단가 상승은 현재의 고수익성 구조를 침식할 수 있는 핵심 원가 변수로, 이러한 원가 압박이 선가 상승 속도를 초과할 경우 이익률은 압축될 수 있다. 달러 표시 수주 계약에서 원화 강세 국면이 지속되면 원화 환산 매출·이익에 역풍이 작용하며, 이는 재무 성과를 제한하는 환율 리스크로 이어진다. 해양플랜트·방산 특수선 등 복잡도가 높은 프로젝트에서는 설계 변경이나 공정 지연에 따른 추가 비용 발생 가능성이 상존하며, 이는 과거 조선업계가 반복적으로 경험한 대형 손실의 주요 원인 중 하나였다.",
+            "en": "A resurgence in steel plate prices or accelerating labor and subcontracting cost inflation amid skilled worker shortages remains the primary cost variable capable of eroding the current high-margin structure, particularly if cost pressures outpace vessel price increases. Sustained Korean won appreciation against the dollar would translate into a direct headwind on won-denominated revenues and earnings, given the dollar-denominated contracting structure. For high-complexity projects such as offshore plants and defense special-purpose vessels, the risk of cost overruns from design changes or schedule delays is ever-present—historically one of the key sources of large losses that periodically plagued the Korean shipbuilding industry."
+          }
+        }
+      ],
+      "verdict": {
+        "stance": {
+          "ko": "긍정적",
+          "en": "Constructive"
+        },
+        "body": {
+          "ko": "HD한국조선해양은 DART 확정 기준 2025년 영업이익 3.9조원(+172.3% YoY)과 2026년 1분기 영업이익률 16.7%(역대 최고)를 달성하며, 수익성의 구조적 도약이 단순한 반등이 아닌 고선가 믹스·생산성 향상에 기반한 지속 가능한 흐름임을 실증했다. 2.5년치에 달하는 수주잔고, 2026년 5월까지 연간 목표의 53.8% 이상을 달성한 수주 집행력, LNG 운반선 발주 재가속 기대감이 맞물리며 중기 실적 가시성은 국내 조선주 중 최고 수준으로 평가된다. 한·미 MASGA 협력과 방산·특수선 사업 확장이 본격화될 경우, 상업 조선 사이클과 독립적인 성장 동력이 추가되어 밸류에이션 리레이팅의 계기가 마련될 수 있다. 반면 글로벌 발주량 둔화 가능성, 중국 조선사의 기술 추격, 원가·환율 변동, 지주사 구조에 따른 할인 요인은 상쇄 리스크로 균형 있게 인식해야 한다. 현재 주가가 52주 최고가 대비 약 22% 조정된 수준에 있다는 점은 향후 LNG 수주 모멘텀과 실적 확인이 이루어질 경우 시장의 관심이 높아질 수 있는 가격 환경임을 시사하나, 본 리포트는 투자 권유나 매수·매도 추천을 목적으로 하지 않으며 정보 제공용으로만 활용되어야 한다.",
+          "en": "HD KSOE has demonstrated a structural profitability leap—DART-confirmed 2025 operating income of KRW 3.9 trillion (+172.3% YoY) and a record Q1 2026 operating margin of 16.7% confirm that the earnings improvement is underpinned by high-priced mix and productivity gains rather than being a temporary rebound. The combination of a roughly 2.5-year revenue backlog, demonstrated 53.8%-plus target achievement through May 2026, and expectations for LNG carrier order re-acceleration make medium-term earnings visibility among the strongest in the domestic shipbuilding sector. The materialization of Korea-U.S. MASGA cooperation and defense/specialty vessel expansion could add a structural growth driver decoupled from the commercial cycle, creating conditions for a valuation re-rating. Counterbalancing risks—including global order volume deceleration, Chinese technological catch-up, cost and FX headwinds, and structural holding company discount—warrant balanced recognition alongside the positive factors. The share price's approximately 22% pullback from the 52-week high suggests a price environment where improving LNG order momentum and earnings confirmation could attract heightened market interest; however, this report is for informational purposes only and should not be construed as investment advice or a buy/sell recommendation."
+        }
+      },
+      "sources": [
+        "https://m.joseilbo.com/news/view.htm?newsid=560184",
+        "https://www.ftoday.co.kr/news/articleView.html?idxno=359680",
+        "https://www.thirdanglenews.com/news/articleView.html?idxno=4910",
+        "https://www.haesanews.com/news/articleView.html?idxno=144744",
+        "https://www.etoday.co.kr/news/view/2589581",
+        "https://kbthink.com/securities-view.html?docId=20260507105115007K",
+        "https://www.finance-scope.com/article/view/scp202511040023",
+        "https://www.cbci.co.kr/news/articleView.html?idxno=575591",
+        "https://m.ceoscoredaily.com/page/view/2025122414560431342",
+        "https://www.sks.co.kr/data1/research/qna_file/20260104172224726_0_ko.pdf",
+        "https://www.investing.com/equities/hyundai-heavy-industries"
+      ],
+      "ticker": "009540",
+      "name": "HD한국조선해양",
+      "name_en": "HD KOREA SHIPBUILDING & OFFSHORE ENGINEERING CO., LTD.",
+      "sector": "조선",
+      "categories": [
+        "조선"
+      ],
+      "market": "코스피",
+      "reportDate": "2026-06-04",
+      "dataDate": "20260602"
+    },
+    "011070": {
+      "title": {
+        "ko": "실적 V자 반등과 AI기판 성장 서사 — 급등주 밸류에이션의 갈림길",
+        "en": "Earnings V-Rebound Meets AI Substrate Narrative: Valuation at a Crossroads After the Epic Rally"
+      },
+      "lead": {
+        "ko": "2026년 1분기 영업이익 136% 급반등으로 어닝 서프라이즈를 기록한 LG이노텍은 아이폰18 가변 조리개 도입과 FC-BGA 기반 AI 기판 사업 확대를 통한 구조적 이익 성장 국면에 진입하고 있으나, 연초 대비 수배 급등 후 급락한 주가는 펀더멘털 개선 속도와 밸류에이션 정당성에 대한 시장의 날선 검증을 요구받고 있다.",
+        "en": "LG Innotek's 1Q26 earnings surprise—operating income up 136% YoY—marks the company's entry into a structural earnings-growth phase via iPhone 18 variable aperture and FC-BGA AI substrate expansion, yet the stock's epic multi-fold surge followed by a sharp June correction places fundamental improvement speed and valuation justification squarely under market scrutiny."
+      },
+      "desc": {
+        "ko": "LG이노텍(011070)은 애플 아이폰용 카메라 모듈의 최대 공급사로 전체 매출의 약 80%를 애플에서 창출하는 코스피 상장 전자부품 기업이다. DART 확정 기준 2025년 연간 매출액 21조8,966억원(+3.3%), 영업이익 6,650억원(-5.8%), 당기순이익 3,413억원(-24.0%)으로 수익성 하락이 두드러졌으나, 2026년 1분기에는 매출 5조5,348억원(+11.1%), 영업이익 2,953억원(+136.0%)으로 급반등하며 연간 영업이익 1조원 복귀 기대가 고조됐다. FC-BGA 중심의 패키지솔루션 사업 구조 전환과 고부가 카메라 모듈 사양 업그레이드가 밸류에이션 재평가의 핵심 논거로 부각되고 있다.",
+        "en": "LG Innotek (011070), a KOSPI-listed electronic components manufacturer, derives approximately 80% of its revenue from Apple and is the dominant supplier of iPhone camera modules. Per DART-confirmed financials, FY2025 saw revenue of KRW 21.9 trillion (+3.3%), yet profitability deteriorated materially—operating income fell 5.8% to KRW 665.0 billion and net income dropped 24.0% to KRW 341.3 billion. However, 1Q26 staged a decisive recovery with revenue of KRW 5.53 trillion (+11.1%) and operating income of KRW 295.3 billion (+136.0%), fueling expectations of a return to the KRW 1 trillion operating income threshold for full-year 2026, with the pivot toward FC-BGA-led Package Solutions and higher-spec camera modules underpinning the market's structural re-rating thesis."
+      },
+      "keypoints": [
+        {
+          "ko": "2026년 1분기 영업이익 2,953억원(+136.0% YoY) — 전 사업부 동반 개선으로 연간 OP 1조원 클럽 복귀 기대 강화",
+          "en": "1Q26 operating income of KRW 295.3B (+136.0% YoY) — broad-based improvement across all segments raises full-year KRW 1 trillion operating income expectations"
+        },
+        {
+          "ko": "아이폰18 프로 가변 조리개(Variable Aperture) 최초 탑재 예상 — 카메라 모듈 ASP 10~20% 상승과 기술 진입장벽 강화 기대",
+          "en": "iPhone 18 Pro expected to debut variable aperture camera — projected 10–20% ASP uplift on camera modules and reinforced technical moat against Chinese rivals"
+        },
+        {
+          "ko": "패키지솔루션 부문(FC-BGA·RF-SiP), FY25 영업이익률이 광학솔루션(약 2.6%)의 약 3배 — AI 기판 성장으로 포트폴리오 다각화 가속",
+          "en": "Package Solutions (FC-BGA/RF-SiP) operating margin roughly 3× that of Optical Solutions in FY25 — AI substrate growth accelerates portfolio diversification away from iPhone dependency"
+        },
+        {
+          "ko": "테슬라 AI4용 FC-BGA 양산 승인 목표(2026년 2~3분기), 2026 ECTC에서 초대면적 기판 샘플 공개 — AI 서버 공급망 진입 본격화",
+          "en": "Targeting Tesla AI4 FC-BGA production approval in 2Q-3Q 2026; ultra-large-area substrate samples unveiled at 2026 ECTC — AI server supply chain penetration materializing"
+        },
+        {
+          "ko": "연초 대비 약 10배 급등 후 6월 들어 연속 급락(-18.17%, 6월 4일) — 극단적 밸류에이션과 단기 변동성이 공존하는 국면",
+          "en": "Stock surged nearly 10× from 52-week low before consecutive sharp declines in June (−18.17% on June 4) — extreme valuation premium and elevated near-term volatility now coexist"
+        }
+      ],
+      "business": {
+        "ko": "LG이노텍은 광학솔루션·패키지솔루션·모빌리티솔루션 3개 부문으로 구성된 코스피 전자부품 기업으로, 1970년대 설립 이후 부품 전문 기업으로 성장해왔다. 매출 비중상 광학솔루션(카메라 모듈)이 2025년 기준 약 84%를 차지하는 압도적 비중을 보이며, 패키지솔루션(반도체 기판) 약 8%, 모빌리티솔루션(전장부품) 약 8.5%가 나머지를 담당한다. 광학솔루션 부문의 핵심은 애플 아이폰용 카메라 모듈로, 후면 카메라 공급의 50% 이상을 담당하며 특히 고부가 폴디드줌(잠망경형)·ToF 모듈의 초도 물량에서 독점 또는 우선 공급 지위를 유지하고 있다. 애플이 전체 매출에서 약 80%를 차지하는 고객 집중 구조는 아이폰 수요 변동 및 가격 협상력 측면에서 구조적 리스크로 작용하며, 최근에는 공급망 다변화를 추진하는 애플의 전략이 이 집중도를 더욱 부각시키고 있다. 패키지솔루션 부문은 2018년 이후 RF-SiP(무선주파수 시스템인패키지) 분야에서 글로벌 점유율 1위를 유지하고 있으며, FC-CSP(모바일 반도체 기판)와 함께 2022년부터 FC-BGA 사업을 본격 추진하고 있다. 2025년 기준 패키지솔루션 부문의 영업이익률 약 7.5%는 광학솔루션 부문의 약 2.6%를 크게 상회하며, AI 수요 확대에 힘입어 반도체 기판 사업이 전사 실적 성장의 핵심 축으로 부상하고 있다. 모빌리티솔루션은 북미 고객사향 차량용 카메라 모듈 공급 확대와 제품 믹스 개선을 통해 흑자 기조를 회복하고 있다. 경쟁 측면에서 카메라 모듈은 중국 코웰전자·선니옵티컬 등의 저가 공세와 폭스콘의 내재화 전략이 점유율·ASP 압박 요인으로 작용하고 있으며, 반도체 기판 분야는 일본 이비덴·신코덴키, 대만 유니마이크론 등 글로벌 선도 기업과의 경쟁이 심화되고 있다.",
+        "en": "LG Innotek is a KOSPI-listed electronic components manufacturer organized into three segments—Optical Solutions (camera modules), Package Solutions (semiconductor substrates), and Mobility Solutions (automotive components)—having grown into a components specialist since its founding in the 1970s. By revenue, Optical Solutions represented approximately 84% of FY2025 sales, with Package Solutions at roughly 8% and Mobility Solutions at approximately 8.5%. The cornerstone of Optical Solutions is iPhone camera module supply, where LG Innotek holds over 50% of Apple's rear-camera volume and maintains a leading—often exclusive first-supply—position in high-value folded-zoom (periscope) and ToF modules. Apple accounts for approximately 80% of total revenue, creating a structural risk concentration around iPhone demand cycles and price negotiations, a vulnerability that Apple's ongoing supply-chain diversification strategy continues to highlight. In Package Solutions, LG Innotek has held the global #1 position in RF-SiP (Radio Frequency System-in-Package) substrates since 2018, and has been building out FC-BGA (Flip Chip Ball Grid Array) capacity since a KRW 413 billion initial investment in 2022. Package Solutions operating margins of approximately 7.5% in FY2025 significantly exceeded those of Optical Solutions at approximately 2.6%, positioning semiconductor substrates as the higher-quality earnings contributor as AI-driven demand accelerates. Mobility Solutions is recovering toward stable profitability, driven by expanding supply of vehicle camera modules to North American automakers and an improving product mix. On the competitive landscape, camera modules face margin pressure from Chinese entrants such as Cowell and Sunny Optical as well as Foxconn's vertical integration, while the FC-BGA market is dominated by Japanese incumbents Ibiden and Shinko Electric Industries and Taiwan's Unimicron, presenting a formidable barrier to high-end penetration."
+      },
+      "recent": {
+        "ko": "DART 공시 기준 2025년 연간 연결 매출액은 21조8,966억원(전기대비 +3.3%), 영업이익은 6,650억원(-5.8%), 당기순이익은 3,413억원(-24.0%)으로, 매출은 소폭 성장했으나 수익성은 뚜렷이 악화됐다. 수익성 하락의 주된 원인은 중국 경쟁사의 애플 공급망 진입에 대응하는 과정에서 카메라 모듈 ASP가 낮아진 데 있으며, 2025년 상반기 카메라 모듈 ASP는 전년 동기 대비 약 13.6% 하락한 것으로 파악된다. 패키지솔루션 부문은 2025년 연간 기준 영업이익이 전년 대비 82%가량 증가하며 광학솔루션의 부진을 상당 부분 상쇄했고, 반도체 기판 내 반도체 기판 매출 비중이 전년 대비 3%p 늘어난 73%로 확대됐다. 2025년 4분기는 아이폰17 시리즈 출시 효과로 매출 7조6,098억원(전년동기대비 +14.8%), 영업이익 3,247억원(+31.0%)을 기록하며 하반기 회복세가 확인됐다. 2026년 1분기는 DART 확정 기준 매출액 5조5,348억원(전기대비 +11.1%), 영업이익 2,953억원(+136.0%), 당기순이익 2,291억원(+167.6%)을 달성하며 전 사업 부문에서 강한 회복세가 나타났다. 아이폰17 시리즈의 견조한 판매 지속과 RF-SiP·FC-BGA 등 고부가 반도체 기판의 공급 호조가 어닝 서프라이즈의 핵심 동인으로 분석된다. 주가는 52주 저점 14만100원 수준에서 2026년 들어 가파르게 상승해 5월 말 52주 최고치 147만4,000원 부근까지 약 10배에 달하는 급등세를 보이며 FC-BGA 내러티브가 주가에 선반영됐다. 6월 4일 현재 125만2,000원으로 전일대비 -18.17%의 급락을 기록하며 단기 고점 대비 상당폭 조정이 진행 중이고, 당일 거래대금 1.4조원에 달해 변동성이 극도로 높아진 상태다.",
+        "en": "Per DART-confirmed consolidated financials, FY2025 revenue was KRW 21.9 trillion (+3.3% YoY), operating income KRW 665.0 billion (-5.8%), and net income KRW 341.3 billion (-24.0%), revealing a clear deterioration in profitability despite modest revenue growth. The primary drag was camera-module ASP compression: to defend market share against Chinese competitors entering Apple's supply chain, LG Innotek lowered pricing, with camera-module ASP reportedly declining approximately 13.6% in 1H25 versus the prior year period. Package Solutions served as a meaningful earnings buffer, with FY2025 segment operating income reportedly growing more than 80% year-on-year; the semiconductor substrate share within the segment expanded to approximately 73%, up roughly 3 percentage points YoY. The 4Q25 recovery was tangible—revenue of KRW 7.61 trillion (+14.8% YoY) and operating income of KRW 324.7 billion (+31.0%)—driven by the iPhone 17 Pro and Pro Max launch cycle. 1Q26 confirmed the recovery's durability, delivering DART-verified revenue of KRW 5.53 trillion (+11.1% YoY), operating income of KRW 295.3 billion (+136.0%), and net income of KRW 229.1 billion (+167.6%) across broad-based segment improvement. Continued iPhone 17 series sell-through and strong shipments of high-value RF-SiP and FC-BGA substrates were the key drivers of the earnings beat. From a share-price perspective, the stock rallied from a 52-week low of KRW 140,100 to a peak of KRW 1,474,000—a near-10× move—as the FC-BGA structural-growth narrative was priced in aggressively. As of June 4, 2026, the stock trades at KRW 1,252,000, down 18.17% on the day with daily turnover of KRW 1.4 trillion, confirming an extreme near-term volatility environment following the sharp post-peak correction."
+      },
+      "outlook": {
+        "ko": "2026년 하반기의 가장 강력한 실적 변수는 아이폰18 프로·프로맥스에 처음 탑재될 것으로 예상되는 가변 조리개(Variable Aperture) 카메라로, 적용 시 카메라 모듈 ASP가 10~20% 상승할 것으로 업계는 추정한다. 가변 조리개는 액추에이터·OIS·AF를 동일 모듈 두께 안에 정밀 집적해야 하는 고난도 기술을 요구해 선행 경험이 풍부한 LG이노텍의 공급망 내 지위 강화와 중국 경쟁사 진입 억제 효과가 기대된다. 패키지솔루션 부문은 2026년 연간 영업이익률이 약 12%대로 개선될 것으로 일부 증권사는 전망하며, 전체 영업이익 기여도 역시 20%를 상회할 수 있다는 분석이 나온다. 최근 보도에 따르면 테슬라 AI4용 FC-BGA 양산 승인을 2026년 2~3분기 내 획득하는 것을 목표로 추진 중이며, 2026 ECTC에서 85mm 대면적 및 면적 40% 확장 초대면적 FC-BGA 샘플을 공개해 글로벌 AI 서버 고객 확보에 속도를 내고 있다. 생산 효율화 측면에서는 베트남 생산 비중을 2025년 37%에서 2026년 50% 수준으로 확대하고, AI 기반 입고 검사 시스템 도입으로 불량 분석 시간을 90% 이상 단축하는 원가 개선이 진행 중이다. 회사의 밸류업 계획(2025년 11월 공시)에 따르면 2030년까지 패키지솔루션 매출 3조원 이상, 육성사업 매출 8조원 이상, ROE 15%를 장기 목표로 제시해 중장기 성장 로드맵이 구체화되고 있다. 단기적으로는 미국의 대베트남 관세 정책과 급등 이후 밸류에이션 부담이 변수로 남아 있으며, 6월 8~12일 애플 WWDC 2026의 AI 서비스 경쟁력 발표가 아이폰18 수요 기대와 LG이노텍 주가 모멘텀에 영향을 줄 핵심 단기 이벤트로 주목받고 있다.",
+        "en": "The most powerful H2 2026 earnings catalyst is the expected debut of variable aperture cameras in the iPhone 18 Pro and Pro Max lineup, which industry participants estimate would lift camera-module ASP by 10–20% while reinforcing LG Innotek's technical moat against lower-cost rivals due to the precision-optics manufacturing complexity involved. Variable aperture requires precise co-integration of actuator, OIS, and AF mechanisms within a fixed module thickness—a barrier that LG Innotek's accumulated experience makes difficult for Chinese competitors to clear quickly. In Package Solutions, some brokerage analysts project segment operating margins improving to approximately 12% for full-year 2026, with the segment's share of total operating income potentially exceeding 20%—a structural shift away from Optical Solutions dominance. Recent reporting indicates LG Innotek is targeting FC-BGA production qualification for Tesla's AI4 computing platform within 2Q-3Q 2026, and the company showcased 85mm large-area and ultra-large-area (approximately +40% area) FC-BGA substrate samples at the 2026 ECTC to accelerate engagement with global hyperscalers and AI semiconductor clients. On manufacturing cost efficiency, Vietnam's share of camera-module production is targeted to rise from 37% in 2025 to approximately 50% in 2026, while an AI-powered incoming materials inspection system reportedly cuts defect analysis time by over 90%. The company's November 2025 Valuation-Up disclosure targets KRW 3 trillion+ in Package Solutions revenue, KRW 8 trillion+ in strategic growth segment revenue, and 15% ROE—all by 2030. Near-term headwinds include US tariff policy affecting Vietnam-manufactured electronics and elevated valuation multiples post-rally, with Apple's WWDC 2026 (June 8–12) considered the most critical near-term event catalyst for iPhone 18 demand durability and LG Innotek's order momentum."
+      },
+      "bull": [
+        {
+          "title": {
+            "ko": "아이폰18 가변 조리개 — ASP 상승과 기술 해자의 재강화",
+            "en": "iPhone 18 Variable Aperture — ASP Uplift and Technological Moat Deepening"
+          },
+          "body": {
+            "ko": "아이폰18 프로 라인업에는 사상 최초로 가변 조리개가 탑재될 것으로 업계는 전망하고 있으며, 이는 카메라 모듈 평균판매단가를 10~20% 끌어올리는 핵심 수익성 레버로 기대된다. 가변 조리개 구현에는 액추에이터·OIS·AF를 동일한 모듈 두께 안에 정밀 집적하는 고난도 설계 역량이 필요해, 조리개·글라스 렌즈 양산 경험이 앞선 LG이노텍이 중국 후발 경쟁사 대비 기술 우위를 유지할 가능성이 높다. 아이폰17 시리즈 프로 라인업의 판매 비중이 전체의 약 70% 수준에 달할 것으로 추정되어 고부가 제품 공급이 중심인 LG이노텍에 특히 유리한 수요 환경이 조성되고 있으며, 모델 믹스가 유지된다면 가변 조리개 효과는 실적 개선의 강력한 레버리지로 작동할 것이다.",
+            "en": "The iPhone 18 Pro lineup is broadly expected to debut variable aperture technology for the first time in Apple's history, representing a 10–20% ASP uplift catalyst for camera modules and a meaningful boost to segment profitability. Variable aperture demands the precise integration of actuator, OIS, and AF mechanisms within a fixed module thickness—a technical difficulty that favors LG Innotek's established expertise in aperture and glass lens mass production over Chinese late-entrants. With the iPhone 17 Pro/Pro Max series reportedly accounting for roughly 70% of the lineup mix—creating a demand environment disproportionately favorable to LG Innotek as the premier high-specification supplier—any sustained Pro mix and the addition of variable aperture could create powerful earnings operating leverage in H2 2026."
+          }
+        },
+        {
+          "title": {
+            "ko": "FC-BGA AI 기판 사업 — 구조적 성장 국면 진입과 밸류에이션 리레이팅",
+            "en": "FC-BGA AI Substrate Business — Structural Growth Entry and Valuation Re-Rating"
+          },
+          "body": {
+            "ko": "AI 추론 수요 확대와 대면적화·고다층화 트렌드에 힘입어 FC-BGA 공급 부족이 장기화될 것이라는 공감대가 밸류체인 전반으로 확산되고 있으며, 다수의 빅테크 고객사가 메모리 반도체 계약 구조와 유사한 대규모 선수금 기반 장기공급계약을 LG이노텍에 제시하고 있는 것으로 최근 보도는 전한다. LG이노텍은 AI 서버향 FC-BGA에서 2026년 하반기 유의미한 매출을 내겠다고 밝혔으며, 글로벌 기판 피어 기업들의 PER이 50~60배 수준인 데 비해 LG이노텍은 현저히 낮은 멀티플로 거래되어 추가 리레이팅 여력이 있다는 분석이 나온다. 2030년 패키지솔루션 매출 3조원 이상을 공식 목표로 제시한 만큼, FC-BGA 사업 성과가 가시화될수록 단순 카메라 모듈 업체를 넘어선 종합 기판 플레이어로의 재평가 가능성이 지속적으로 높아진다.",
+            "en": "A growing industry consensus that FC-BGA supply shortages will be protracted—driven by AI inference demand and the trend toward larger panel sizes and higher layer counts—is underpinning LG Innotek's engagement with big-tech clients reportedly offering substantial prepayments modeled on memory semiconductor-style long-term supply agreements. Management has expressed confidence in generating material AI-server FC-BGA revenue in H2 2026, while LG Innotek still trades at a steep discount to global substrate peer group PER averages of 50–60×, suggesting meaningful re-rating headroom remains as the narrative is validated by revenue. With a publicly stated 2030 Package Solutions revenue target of KRW 3 trillion+, each successive FC-BGA customer win materially strengthens the thesis of re-rating from a niche camera-module supplier to a diversified, high-margin substrate platform."
+          }
+        },
+        {
+          "title": {
+            "ko": "AI 웨어러블 신시장 — 아이폰 교체 주기 의존성 완화와 광학솔루션 확장",
+            "en": "AI Wearables New Market — Reducing iPhone Cycle Dependency and Expanding Optical Solutions"
+          },
+          "body": {
+            "ko": "애플이 카메라를 탑재한 에어팟 프로, AI 펜던트 등 AI 웨어러블 기기 라인업을 개발하고 있는 것으로 알려지면서, LG이노텍의 광학솔루션 공급 기회가 아이폰을 넘어 신규 디바이스로 확대될 가능성이 커지고 있다. 전 세계 AI 웨어러블 시장은 시장조사업체 포춘비즈니스인사이트 기준 2025년 약 70조7,000억원 규모에서 연평균 27% 성장해 2032년 377조원에 달할 것으로 전망된다. LG이노텍이 이 시장의 주요 공급사로 자리잡으면, 아이폰 교체 주기에 종속된 실적 변동성을 구조적으로 완화하고 광학솔루션 사업의 장기 성장 기반을 확장할 수 있어, 최근 추진 중인 VR·보안·휴머노이드 로봇용 비전 센싱 모듈 사업과의 시너지도 기대된다.",
+            "en": "Reports that Apple is developing AI wearable devices—including camera-equipped AirPods Pro and an AI pendant—meaningfully expand LG Innotek's addressable optical module opportunity well beyond the iPhone upgrade cycle, leveraging its core sensing and camera-module competencies in new form factors. The global AI wearables market is estimated at approximately USD 48.8 billion in 2025 and projected to grow at a 27% CAGR to roughly USD 260 billion by 2032, implying a substantial new demand pool. Should LG Innotek secure meaningful supply positions in these devices, it would structurally reduce earnings volatility tied to iPhone replacement cycles while creating potential synergies with the company's emerging humanoid-robot vision-sensing module business targeting leading US robotics companies."
+          }
+        }
+      ],
+      "bear": [
+        {
+          "title": {
+            "ko": "애플 고객 집중 리스크 — 약 80% 의존도와 공급망 다변화 압력",
+            "en": "Apple Concentration Risk — ~80% Revenue Dependency and Supply Chain Diversification Pressure"
+          },
+          "body": {
+            "ko": "애플이 전체 매출의 약 80%를 차지하는 구조는 아이폰 수요 변동, 제품 사양 변경, 가격 협상 결과에 따라 LG이노텍 실적 전체가 큰 폭으로 흔들릴 수 있음을 의미하며, 이러한 구조적 취약성은 과거에도 여러 차례 현실화됐다. 더욱이 애플은 공급망 다변화 전략 차원에서 중국의 코웰전자·선니옵티컬·폭스콘 등으로부터의 카메라 모듈 조달 물량을 꾸준히 늘리고 있으며, 삼성전기의 애플 카메라 부품 공급망 진입도 공식화되면서 경쟁 강도가 높아지고 있다. LG이노텍이 단가 하락을 감수하거나 고사양 제품에서의 기술 우위를 지속적으로 증명하지 못할 경우, 점유율 추가 하락과 ASP 재압박의 악순환에 노출될 수 있다.",
+            "en": "Apple's approximately 80% share of LG Innotek's total revenue means that iPhone demand cycles, specification changes, and pricing negotiations can drive material swings in company-level earnings—a structural vulnerability that has manifested repeatedly in past cycles. Apple is actively diversifying its camera module supply chain, with Chinese suppliers such as Cowell, Sunny Optical, and Foxconn steadily gaining share, and Samsung Electro-Mechanics' formal entry into the Apple camera components supply chain now adding a credible new threat. Without sustained technical leadership—particularly in high-specification modules—LG Innotek risks re-entering a cycle of share loss, ASP compression, and eroding operating leverage as in 2024–2025."
+          }
+        },
+        {
+          "title": {
+            "ko": "FC-BGA 하이엔드 서버 진입 지연 가능성 — 기술 검증·고객 확보 불확실성",
+            "en": "FC-BGA High-End Server Entry Delays — Technology Qualification and Customer Acquisition Uncertainty"
+          },
+          "body": {
+            "ko": "LG이노텍의 FC-BGA 사업은 기술력은 검증되어 있으나, PC CPU급 및 서버·AI 가속기용 하이엔드 FC-BGA로의 대형 고객 진입은 아직 초기 단계로 불확실성이 상존한다. 반도체 기판의 특성상 신규 공급업체가 주요 CPU·GPU 고객사의 인증을 획득하는 데 통상 1~2년 이상이 소요되며, 경쟁사가 먼저 물량을 확보할 경우 LG이노텍의 시장 진입 기회가 제한될 수 있다. 서버용 FC-BGA 본격 양산을 위해서는 수조원 단위의 추가 투자가 필요한 것으로 알려져 있어, 투자 규모·타이밍에 대한 불확실성이 이익 예측 가시성을 제한하는 요인으로 남아 있다.",
+            "en": "While LG Innotek's substrate technology competence is acknowledged, its penetration into PC CPU-grade and AI server/accelerator-grade FC-BGA with large-volume customers remains at an early and uncertain stage. Semiconductor substrate qualification cycles with major CPU and GPU clients typically require one to two or more years, and if established competitors secure volume positions during this window, LG Innotek's market entry opportunity may be significantly constrained. Full-scale server-grade FC-BGA production is understood to require multi-trillion-won incremental capital expenditure, meaning timing and scale of future investment remain important variables that limit near-term earnings forecast precision and introduce execution risk."
+          }
+        },
+        {
+          "title": {
+            "ko": "급등 후 밸류에이션 부담 — 기대 과선반영과 눈높이 조정 리스크",
+            "en": "Post-Rally Valuation Burden — Risk of Elevated Expectations Already Priced In"
+          },
+          "body": {
+            "ko": "LG이노텍 주가는 2026년 들어 52주 저점 대비 약 10배 가까이 급등했으며, 이는 FC-BGA 내러티브와 어닝 서프라이즈에 대한 극단적 낙관론이 반영된 결과로, 주가가 이미 높은 수준의 미래 실적 성장을 선반영하고 있다. FC-BGA 고객 진입 일정이 지연되거나 아이폰 수요가 기대를 밑돌 경우, 컨센서스 추정치의 급격한 하향 조정과 멀티플 축소가 동시에 발생하는 '더블 디레이팅' 리스크에 노출된다. 6월 4일 기준 거래대금 1.4조원에 전일대비 -18.17%의 급락이 나타난 점은 시장 심리 반전의 속도와 변동성이 극단적 수준임을 보여주며, 증권사 평균 목표주가와 현 주가 사이의 괴리는 상당한 밸류에이션 위험을 내포한다.",
+            "en": "LG Innotek's stock surged nearly 10× from its 52-week low in 2026, reflecting extreme market optimism around the FC-BGA structural narrative and earnings recovery, meaning the share price already embeds highly optimistic forward assumptions about timing and scale. Any delay in FC-BGA customer onboarding, disappointing iPhone 18 demand, or deterioration in global AI investment sentiment could trigger a sharp reset in earnings estimates and multiple contraction simultaneously—a 'double de-rating' scenario. The June 4 session—featuring a -18.17% daily decline on KRW 1.4 trillion of turnover—confirms the stock's extreme volatility profile, and the divergence between the broader analyst price target consensus and current trading levels carries material valuation risk for investors entering at prevailing prices."
+          }
+        }
+      ],
+      "risks": [
+        {
+          "cat": {
+            "ko": "지정학·관세 리스크",
+            "en": "Geopolitical / Tariff Risk"
+          },
+          "body": {
+            "ko": "LG이노텍은 베트남 하이퐁 공장을 카메라 모듈의 핵심 생산 거점으로 운영하고 있어 미국의 대베트남 전자제품 관세 정책 변화에 직접 노출되어 있다. 미·중 무역 분쟁 심화와 애플의 베트남 생산 비중 확대 전략이 맞물리는 상황에서 관세 부과 또는 공급망 조정 압력이 가시화될 경우 단기 수익성과 물량에 부정적 영향이 불가피하다. 또한 애플이 중국 시장 점유율 방어를 위해 중국산 부품 채택을 확대해야 하는 압박을 받을 경우, LG이노텍의 공급망 내 비중이 추가로 잠식될 가능성도 배제할 수 없다.",
+            "en": "LG Innotek's core camera-module production is concentrated at its Haiphong, Vietnam facility, creating direct exposure to US tariff policy changes on Vietnamese electronics exports. The combination of an escalating US-China trade dispute and Apple's strategic shift toward Vietnam manufacturing amplifies the risk that tariff imposition or supply-chain adjustment pressure could materially impact near-term volumes and profitability. Additionally, any pressure on Apple to increase Chinese component content to protect its China market share could incrementally erode LG Innotek's position within the Apple supply chain, compounding the share-loss risk from Chinese camera-module competitors."
+          }
+        },
+        {
+          "cat": {
+            "ko": "고객 수요 사이클 리스크",
+            "en": "Key Customer Demand Cycle Risk"
+          },
+          "body": {
+            "ko": "애플의 아이폰 판매량은 경기 상황, 소비자 신뢰도, 교체 주기에 따라 해마다 상당한 변동폭을 보이며, 이는 LG이노텍 광학솔루션 부문의 매출과 영업이익에 직접 반영된다. 아이폰17 시리즈가 전작 대비 10% 이상 판매량이 증가하는 호조를 보이며 현재는 긍정적이나, 아이폰18에 대한 시장 기대감이 과도할 경우 실제 출하량이 예상을 밑돌 때 주가의 추가 조정이 나타날 수 있다. 스마트폰 시장 전반의 성장 둔화와 AI 스마트폰으로의 교체 수요 불확실성, 미·중 무역 분쟁에 따른 중국 내 아이폰 판매 제한 가능성도 중기적 리스크 요인으로 상존한다.",
+            "en": "Apple iPhone unit sales exhibit significant year-to-year variability driven by macroeconomic conditions, consumer confidence, and replacement cycle dynamics, directly translating into earnings volatility for LG Innotek's Optical Solutions segment, which accounts for over 80% of revenue. While the iPhone 17 series reportedly achieved over 10% unit growth—a strong current outcome—elevated iPhone 18 expectations mean any underperformance relative to consensus could precipitate a meaningful earnings and share-price reset. Broader structural deceleration in global smartphone markets, AI-smartphone upgrade cycle uncertainty, and the risk of Apple iPhone sales restrictions in China due to geopolitical tensions are additional medium-term risk vectors that could limit the magnitude of the earnings recovery."
+          }
+        },
+        {
+          "cat": {
+            "ko": "설비투자·재무 레버리지 리스크",
+            "en": "Capital Expenditure / Financial Leverage Risk"
+          },
+          "body": {
+            "ko": "FC-BGA 서버·AI 가속기 등급 제품의 본격 양산을 위해서는 업계 통상 수조원 규모의 대규모 추가 자본지출이 필요한 것으로 알려져 있으며, 이는 재무 부담 증가와 자유현금흐름 저하로 이어질 수 있다. 2025년 말 광학솔루션 신모델 대응을 위한 3,411억원 규모의 신규 설비 투자를 결정하는 등 연간 대규모 자본지출이 지속되고 있어, 공격적 투자 사이클 속에서 수익성 개선 이전에 재무 레버리지가 확대될 위험이 존재한다. 반도체 기판 업황이 예상보다 일찍 공급 과잉 국면에 진입하거나 고객 확보 일정이 지연될 경우, 투자 회수 기간 장기화와 이익 가시성 훼손이 동시에 발생할 수 있다.",
+            "en": "Full-scale production of server- and AI accelerator-grade FC-BGA is understood to require multi-trillion-won incremental capital expenditure, which could materially elevate financial leverage and compress free cash flow at an inopportune time. LG Innotek continues to execute large annual capex cycles—including a KRW 341.1 billion equipment investment for Optical Solutions in late 2025—meaning aggressive investment phases could precede profitability improvement and raise leverage concerns. If the semiconductor substrate cycle turns toward oversupply earlier than anticipated, or if customer qualification timelines slip meaningfully, the payback period on investments could extend, simultaneously reducing earnings visibility and increasing balance sheet risk."
+          }
+        }
+      ],
+      "verdict": {
+        "stance": {
+          "ko": "중립",
+          "en": "Neutral"
+        },
+        "body": {
+          "ko": "LG이노텍은 2026년 1분기 영업이익 136% 급반등을 통해 실적 회복의 실체를 확인시켜주었으며, 아이폰18 가변 조리개와 FC-BGA AI 기판이라는 두 가지 강력한 중장기 성장 촉매를 갖추고 있다는 점에서 펀더멘털 개선의 방향성 자체는 긍정적이다. 패키지솔루션 부문의 수익성 향상과 고객 다변화 진전은 단일 고객 집중 구조에서 탈피하는 구조적 변화를 반영하며, 빅테크 고객의 장기공급계약(LTA) 확대는 이익 가시성을 크게 높이는 요인이다. 다만 연초 대비 약 10배에 달하는 주가 급등 이후 6월 초 연속 급락이 나타나고 있어, 시장이 상당한 미래 성장을 이미 주가에 선반영했을 가능성이 높다. FC-BGA 서버·AI 가속기 시장 진입이 계획대로 진행될지, 아이폰18 사이클이 기대치를 충족할지에 대한 검증이 아직 완전히 이루어지지 않은 상태에서 기존 컨센서스를 크게 상회하는 멀티플이 적용되고 있다. 애플 관세 리스크, 중국 경쟁사의 공급망 진입 지속, 서버용 FC-BGA를 위한 추가 대규모 투자 부담 등 복수의 불확실성이 상존하는 가운데, 급등 후 단기 조정이 진행 중인 현 시점에서는 FC-BGA 고객 확보 가시화와 아이폰18 사양 확정 등 추가 실적 증거를 확인한 후 접근하는 신중한 스탠스가 적절하다고 판단된다.",
+          "en": "LG Innotek's 1Q26 operating income recovery of 136% YoY has validated the direction of fundamental improvement, and the company possesses two compelling medium-to-long-term growth catalysts—iPhone 18 variable aperture camera and FC-BGA AI substrate expansion—that support a constructive long-term thesis. The improving profitability trajectory in Package Solutions and the emergence of big-tech long-term supply agreements represent genuine structural progress away from single-customer concentration, substantially enhancing earnings predictability over a multi-year horizon. However, a near-10× share price appreciation from the 52-week low—followed by consecutive sharp daily declines in early June—suggests the market has already priced in a significant portion of the anticipated improvement at peak levels. Key assumptions underpinning the bull case—FC-BGA server/AI accelerator penetration proceeding on schedule and iPhone 18 demand meeting elevated expectations—remain to be validated, yet the stock has traded at multiples that already embed optimistic scenarios. With tariff risk, persistent Chinese competition in camera modules, and the requirement for substantial further FC-BGA capex all adding to the uncertainty stack, a neutral stance—pending further confirmation of FC-BGA customer ramp milestones and iPhone 18 specifications—is deemed appropriate for investors evaluating entry at current valuation levels."
+        }
+      },
+      "sources": [
+        "https://www.businesspost.co.kr/BP?command=article_view&num=427403",
+        "https://www.businesspost.co.kr/BP?command=article_view&num=430675",
+        "https://www.huffingtonpost.kr/article/256956",
+        "https://zdnet.co.kr/view/?no=20260408120116",
+        "https://www.economytribune.co.kr/news/articleView.html?idxno=3902830",
+        "https://www.etnews.com/20260106000363",
+        "https://www.mt.co.kr/stock/2026/05/29/2026052908344024120",
+        "https://news.nate.com/view/20260528n09045",
+        "https://file.alphasquare.co.kr/media/pdfs/company-report/20260126200412490_ko.pdf",
+        "https://file.hanaw.com/download/research/FileServer/WEB/industry/enterprise/2026/04/27/LGIT_260428.pdf",
+        "https://www.sisajournal-e.com/news/articleView.html?idxno=413842",
+        "https://v.daum.net/v/20260520130719308",
+        "https://www.etnews.com/20260527000282",
+        "https://m.thinkpool.com/stockDiscuss/011070/cont/11885194"
+      ],
+      "ticker": "011070",
+      "name": "LG이노텍",
+      "name_en": "LG INNOTEK CO., LTD.",
+      "sector": "전자·부품",
+      "categories": [
+        "전자·부품"
+      ],
+      "market": "코스피",
+      "reportDate": "2026-06-04",
+      "dataDate": "20260602"
+    },
+    "010130": {
+      "title": {
+        "ko": "핵심광물 허브로 도약하는 제련 챔피언, 지배구조 불확실성은 상존",
+        "en": "Smelting Champion Ascending the Critical Minerals Hierarchy — Governance Overhang Lingers"
+      },
+      "lead": {
+        "ko": "귀금속·핵심광물 가격 급등과 포트폴리오 다변화에 힘입어 2025년 사상 최대 실적에 이어 2026년 1분기에도 분기 최대 실적을 경신하였으나, 경영권 분쟁의 장기화·공정위 조사 본격화 및 대규모 미국 제련소 투자 부담이 중장기 핵심 변수로 부각되고 있다.",
+        "en": "Record-breaking earnings driven by surging precious and critical metals prices and a broadening product portfolio have continued into Q1 2026, yet the prolonged ownership dispute, an impending FTC enforcement proceeding, and the massive U.S. smelter investment commitment remain material overhangs."
+      },
+      "desc": {
+        "ko": "고려아연(010130)은 DART 공시 연결 기준 2025년 연간 매출액 16.6조원(+37.6%), 영업이익 1.2조원(+70.3%), 당기순이익 7,702억원(+295.4%)으로 44년 연속 영업흑자를 이어가며 창사 이래 최대 실적을 달성하였고, 2026년 1분기에는 매출 6.1조원(+58.4%), 영업이익 7,461억원(+175.2%)으로 분기 사상 최대치를 또 한 번 경신하였다. 현재 시가총액 약 27.6조원 규모이며, MBK파트너스·영풍과의 경영권 분쟁이 2년 이상 지속되는 가운데 미국 테네시주 통합 제련소 건설('프로젝트 크루서블')을 본격화하는 등 사업 방향성과 지배구조 양 측면 모두에서 중요한 분기점에 놓여 있다.",
+        "en": "Korea Zinc (010130) reported full-year 2025 revenue of KRW 16.6 trillion (+37.6%), operating profit of KRW 1.2 trillion (+70.3%), and net income of KRW 770.2 billion (+295.4%) under DART-confirmed consolidated figures, sustaining 44 consecutive years of annual operating profit and achieving all-time highs; Q1 2026 further broke records with revenue of KRW 6.1 trillion (+58.4%) and operating profit of KRW 746.1 billion (+175.2%). With a market cap of approximately KRW 27.6 trillion, the company stands at a strategic crossroads, advancing the large-scale U.S. smelter project (Project Crusoble) while the multi-year governance dispute with MBK Partners and Young Poong continues to evolve."
+      },
+      "keypoints": [
+        {
+          "ko": "2026년 1분기 영업이익률 12.3%로 전년 동기(7.1%) 대비 5.2%p 급상승 — 귀금속 가격 강세가 주 동인",
+          "en": "Q1 2026 operating margin surged 5.2pp to 12.3% vs. 7.1% a year earlier, driven primarily by precious metals price strength"
+        },
+        {
+          "ko": "글로벌 최상위권 은 생산기지: 2025년 2,090톤 생산·세계 점유율 약 6.7%, 은 가격 1달러 상승 시 연간 영업이익 약 100~120억원 증가",
+          "en": "World-class silver production: 2,090 tons output and ~6.7% global share in 2025; every USD 1/oz silver price increase adds KRW 10–12 billion to annual operating profit"
+        },
+        {
+          "ko": "미국 테네시주 통합 제련소 '프로젝트 크루서블' 본격화 — 총 74억달러 투자, FAST-41 패스트트랙 지정, 2026년 5월 '크루서블 징크' 출범",
+          "en": "Project Crusoble (U.S. integrated smelter in Tennessee) escalates — USD 7.4B total investment, FAST-41 fast-track designation secured, 'Crusoble Zinc' launched in May 2026"
+        },
+        {
+          "ko": "경영권 분쟁 2년 이상 지속 — 2026년 3월 주총 이후 이사회 9:5(또는 9:6) 구도로 재편, 공정위 순환출자 조사 행정 처분 절차 돌입 임박",
+          "en": "Governance contest persists beyond two years — post-March 2026 AGM board reconstituted to ~9:5 (or 9:6); FTC circular-ownership investigation nearing formal enforcement"
+        },
+        {
+          "ko": "트로이카 드라이브 신사업 가시화 — 페달포인트 2025년 첫 연간 흑자, 구리 생산능력 2026년 약 5만 톤으로 확대 추진",
+          "en": "Troika Drive new businesses gaining traction — Pedal Point turned its first annual profit in 2025; copper production capacity targeted to expand to ~50,000 tons in 2026"
+        }
+      ],
+      "business": {
+        "ko": "고려아연은 1974년 설립된 비철금속 종합 제련기업으로, 울산 온산제련소에서 연간 100만 톤 이상의 비철금속을 처리하는 세계 최대 단일 제련소 중 하나를 운영하고 있다. 주력 제품은 아연괴와 연(납)이며, 금·은·동 등 귀금속과 인듐·비스무트·안티모니·텔루륨 등 전략광물을 부산물 회수 공정을 통해 생산하는 고도화된 복합 제련 역량을 보유하고 있다. 2025년 기준 은 2,090톤을 생산하여 글로벌 시장점유율 약 6.7%를 확보하고 있으며, 이는 글로벌 최상위권 수준이다. 국내 유일의 전략광물 생산기지로서 미국 정부가 국가 및 경제안보 필수광물로 지정한 54종 중 14종을 생산할 수 있는 역량을 갖추고 있으며, 중국의 수출통제 이후 안티모니·인듐 등의 전략적 가치가 더욱 부각되고 있다. 해외 자회사로는 호주의 선메탈코퍼레이션(SMC, 아연·은 생산), 미국의 페달포인트(전자폐기물 전처리·자원순환), 아크에너지(신재생에너지·BESS) 등이 있으며 연결 실적 내 비중이 점진적으로 확대되고 있다. 사업 다각화 전략 '트로이카 드라이브'는 ① 신재생에너지·그린수소, ② 이차전지 소재, ③ 자원순환 세 축으로 구성되어 2025년부터 실적 기여가 본격화되기 시작하였다. 구리 부문은 2025년 생산능력 약 3만3,000톤에서 퓨머 전환 및 건식 제련 생산 추가를 통해 2026년 약 5만 톤으로 확대가 추진되어 포트폴리오 내 비중이 높아질 전망이다. 주요 글로벌 경쟁사로는 글렌코어(Glencore), 볼리덴(Boliden), 스미토모금속광산(Sumitomo Metal Mining) 등이 있으나, 고려아연은 단일 제련소의 규모·효율성과 전략광물 복합 회수 기술력에서 차별적 경쟁력을 확보하고 있다. 반도체용 황산 등 부산물 제품군도 반도체·이차전지 산업 수요 확대와 함께 별도 수익원으로 성장하고 있다.",
+        "en": "Korea Zinc, founded in 1974, operates one of the world's largest single non-ferrous metals smelters at its Onsan complex in Ulsan, processing over one million tons of non-ferrous metals annually. Core products are zinc ingot and lead, supplemented by precious metals (gold, silver, copper) and strategic minerals (indium, bismuth, antimony, tellurium, etc.) recovered through advanced multi-metal refining processes. In 2025, the company produced 2,090 tons of silver — a global top-tier output representing approximately 6.7% of world supply. As Korea's sole domestic producer of key strategic minerals, Korea Zinc can produce 14 of the 54 minerals the U.S. government designates as essential to national and economic security, a capability that has gained strategic premium following China's export controls. Overseas subsidiaries include Sun Metals Corporation (SMC) in Australia (zinc and silver), Pedal Point in the U.S. (e-waste pre-processing and resource recycling), and Arc Energy (renewable energy and BESS), all gradually expanding their contribution to consolidated results. The Troika Drive diversification strategy — centering on renewable energy & green hydrogen, secondary battery materials, and resource recycling — began making a meaningful earnings contribution in 2025. The copper segment is targeting a capacity expansion from approximately 33,000 tons in 2025 to around 50,000 tons in 2026 via fumer-unit conversion and dry smelting additions, lifting its intra-portfolio weight. Global peers include Glencore, Boliden, and Sumitomo Metal Mining, but Korea Zinc differentiates itself through integrated smelter scale and efficiency as well as proprietary multi-metal recovery technology. By-products including semiconductor-grade sulfuric acid are also growing as independent revenue streams alongside rising semiconductor and battery industry demand."
+      },
+      "recent": {
+        "ko": "DART 공시 연결 기준으로, 2025년 연간 매출액은 16조5,812억원(+37.6%), 영업이익은 1조2,324억원(+70.3%), 당기순이익은 7,702억원(+295.4%)으로 창사 이래 사상 최대 실적을 달성하였다. 연간 영업이익률은 7.4%로 전년 대비 1.4%p 개선되었으며, 44년 연속(자체 집계 기준) 연간 영업흑자 기록도 이어갔다. 2025년 실적 개선의 배경에는 안티모니·인듐 등 전략광물 회수율 확대와 판매 호조, 금·은 귀금속 가격 상승, 우호적인 원·달러 환율 등이 복합적으로 작용하였다. 2026년 1분기(DART 공시)에는 매출 6조720억원(+58.4%), 영업이익 7,461억원(+175.2%), 당기순이익 3,540억원(+117.9%)으로 분기 최대 실적을 재차 경신하였다. 1분기 영업이익률은 12.3%로 전년 동기(7.1%) 대비 5.2%p 상승하였으며, 지정학적 불확실성 확대로 안전자산 선호가 강화되면서 은 매출이 전기 약 7,470억원에서 2조2,300억원 수준으로 급증한 것이 핵심 동인이다. 2025년 별도 기준으로 귀금속(금·은·동) 합산 매출이 전체의 50%를 처음 넘어섰으며, 2026년 1분기에는 별도 귀금속 매출 비중이 65.7%까지 상승하였다. 호주 자회사 SMC도 홍수 관련 물류 차질에도 불구하고 아연·은 가격 상승과 저품위 연 정광 수익성 개선에 힘입어 1분기 영업이익이 전 분기 대비 두 배 가까이 개선되었다. 주가는 2026년 5월 초 보도 시점 기준 약 174만~175만원 수준까지 상승했으나, 귀금속 가격 조정 영향 등으로 2026년 6월 4일 기준 132만2,000원(전일 대비 -3.85%)으로 내려와 있으며, 시가총액은 약 27.6조원이다.",
+        "en": "Based on DART-confirmed consolidated financials, Korea Zinc posted full-year 2025 revenue of KRW 16.58 trillion (+37.6%), operating profit of KRW 1.23 trillion (+70.3%), and net income of KRW 770.2 billion (+295.4%) — all-time highs since founding. The annual operating margin expanded 1.4pp to 7.4%, and the company extended its uninterrupted run to 44 consecutive years of annual operating profit by its own count. The 2025 outperformance was driven by higher recovery rates and stronger demand for strategic minerals such as antimony and indium, rising precious metals prices, and favorable KRW/USD exchange rates. In Q1 2026, Korea Zinc again broke its own quarterly records per DART-confirmed consolidated figures: revenue of KRW 6.07 trillion (+58.4%), operating profit of KRW 746.1 billion (+175.2%), and net income of KRW 354.0 billion (+117.9%). The Q1 2026 operating margin reached 12.3%, up 5.2pp year-on-year, primarily because silver revenue surged approximately threefold — from roughly KRW 747 billion to approximately KRW 2.23 trillion — as geopolitical uncertainty amplified safe-haven demand. Precious metals (gold, silver, copper) collectively surpassed 50% of standalone revenue for the first time in 2025; in Q1 2026, the precious metals share within standalone revenue rose further to 65.7%. Australian subsidiary SMC roughly doubled its operating profit quarter-on-quarter despite flood-related logistics disruptions, supported by higher zinc and silver prices and improved profitability on low-grade lead concentrate. The share price rallied to approximately KRW 1,747,000 in early May 2026 before retracing to KRW 1,322,000 (-3.85% day-on-day) as of June 4, 2026, apparently reflecting a precious metals price correction, implying a market capitalization of roughly KRW 27.6 trillion."
+      },
+      "outlook": {
+        "ko": "최근 보도에 따르면 증권가에서는 2026년 연간 영업이익을 약 2조~2조5,000억원 수준으로 전망하고 있어 실적 모멘텀의 일정 기간 지속 가능성에 주목하고 있다. 귀금속 가격이 높은 수준을 유지하는 한 은 부문이 실적의 핵심 변수로 작용할 것이며, 고려아연은 은 가격 온스당 1달러 상승 시 연간 영업이익이 100억~120억원 늘어나는 구조라고 밝히고 있다. 구리 생산능력 확대(2025년 3.3만 톤 → 2026년 약 5만 톤 추정)가 실현될 경우 구리 부문 영업이익 기여도가 중기적으로 확대될 전망이다. 미국 테네시주 '프로젝트 크루서블'은 2026년 5월 크루서블 징크 출범과 FAST-41 패스트트랙 지정으로 본격화되어 2029년 완공을 목표로 하며, 중국의 전략광물 수출통제와 미국 주도 공급망 재편 흐름 속에서 고려아연의 전략적 위상이 강화될 것으로 분석된다. 반면 아연·연 기초금속은 글로벌 건설 경기 부진과 중국 내 제련 증설 등의 영향으로 가격 상방이 제한적일 수 있다. 공정거래위원회의 순환출자 조사 결과와 MBK파트너스·영풍 연합과의 분쟁 향방이 지배구조 관련 불확실성의 핵심 변수로 남아 있으며, 재무구조 정상화 속도와 프로젝트 크루서블의 실행 진척도도 중기 투자 관점의 중요 모니터링 포인트이다.",
+        "en": "Based on recent brokerage reports, the market consensus for Korea Zinc's 2026 full-year operating profit is approximately KRW 2.0–2.5 trillion, suggesting the earnings momentum may persist for some time. Silver will remain the primary swing factor: the company notes that every USD 1/oz increase in the silver price lifts annual operating profit by KRW 10–12 billion. If the planned copper capacity expansion to approximately 50,000 tons in 2026 materializes, the copper segment's earnings contribution should expand progressively over the medium term. Project Crusoble moved into execution with the launch of Crusoble Zinc in May 2026 and a FAST-41 designation that should streamline permitting; China's ongoing strategic mineral export restrictions and the broader U.S.-led supply chain realignment are enhancing Korea Zinc's strategic value as Korea's sole domestic critical minerals producer. On the downside, base metals prices — particularly zinc and lead — may face limited upside given construction sector weakness and expanding Chinese smelting capacity. The FTC investigation outcome, the ongoing governance dispute trajectory, the pace of balance sheet normalization, and Project Crusoble's execution progress are the key medium-term monitoring parameters for the investment case."
+      },
+      "bull": [
+        {
+          "title": {
+            "ko": "귀금속·핵심광물 가격의 구조적 강세",
+            "en": "Structural Strength in Precious and Critical Metal Prices"
+          },
+          "body": {
+            "ko": "은·금 가격은 안전자산 선호 강화, AI·데이터센터·태양광·전기차 등 산업 수요 확대로 구조적 상승 압력이 지속되고 있다. 고려아연은 2025년 기준 은 2,090톤을 생산하여 글로벌 점유율 약 6.7%를 확보한 최상위권 생산기업으로, 가격 민감도가 매우 높아 가격 상승분이 이익에 직결되는 구조를 갖추고 있다. 안티모니·인듐 등 전략광물은 중국의 수출통제 조치 이후 가격 강세가 지속되고 있으며, 국내 유일 생산기지인 고려아연의 프리미엄 가치가 높아지고 있다. 반도체·방위산업 등 수요처 다변화가 핵심광물 실적 기여를 중장기적으로 확대할 것으로 기대된다.",
+            "en": "Safe-haven demand, together with secular growth from AI data centers, solar panels, and electric vehicles, supports a structural upward bias for silver and gold. Korea Zinc produced 2,090 tons of silver in 2025 with ~6.7% global market share and is exceptionally price-levered: every USD 1/oz move in silver translates directly into incremental operating profit. Strategic minerals such as antimony and indium have seen sustained price strength following China's export controls, amplifying Korea Zinc's premium as Korea's only domestic producer. Broadening demand from semiconductor and defense industries is expected to structurally expand the earnings contribution from critical minerals over the medium term."
+          }
+        },
+        {
+          "title": {
+            "ko": "미국 핵심광물 공급망 핵심 파트너 위상 확보",
+            "en": "Cementing a Role as a Core U.S. Critical Minerals Supply Chain Partner"
+          },
+          "body": {
+            "ko": "미국 테네시주 통합 제련소 '프로젝트 크루서블'은 총 74억달러 규모의 투자로, 미국 정부의 FAST-41 패스트트랙 인허가 지정과 약 2억1,000만달러의 정부 보조금 지원을 받으며 추진되고 있다. 2026년 5월에는 테네시주 니어스타USA 제련소 인수와 함께 '크루서블 징크'를 출범시켜 착공을 알렸으며, 완공 이후 핵심광물 11종을 포함한 비철금속 13종과 반도체용 황산을 생산하는 통합 제련 허브가 될 전망이다. 미국 정부가 FORGE 이니셔티브와 120억달러 규모의 핵심광물 비축 사업(Project Vault)을 추진하는 등 공급망 안보 투자를 강화하는 기조 속에서 고려아연의 전략적 위상은 높아지고 있다. 한미 양국 정부 모두의 지원을 받는 구조는 장기적인 성장 기반으로 작용할 가능성이 크다.",
+            "en": "Project Crusoble — a USD 7.4B integrated smelter in Tennessee — progresses with FAST-41 fast-track permitting status and approximately USD 210 million in U.S. government grants. In May 2026, Korea Zinc acquired NyrStar's Tennessee smelter assets and launched the Crusoble Zinc subsidiary, marking formal execution; once completed, the facility is expected to produce 13 non-ferrous metals including 11 critical minerals plus semiconductor-grade sulfuric acid. The U.S. government's FORGE initiative and the USD 12B Project Vault critical minerals stockpiling program underscore the macro tailwind for domestic critical minerals production capacity. Support from both the U.S. and Korean governments positions Project Crusoble as a potentially transformative long-term growth platform."
+          }
+        },
+        {
+          "title": {
+            "ko": "트로이카 드라이브 신사업 이익 기여 가시화",
+            "en": "Troika Drive New Businesses Transitioning to Earnings Contributors"
+          },
+          "body": {
+            "ko": "자원순환 자회사 페달포인트는 2025년 첫 연간 흑자를 달성하며 신사업 성과 가시화의 상징적 사례가 되었고, 2026년 1분기에도 동 판매량 증가와 함께 실적 기여를 이어가고 있다. 구리 부문은 퓨머 설비 전환과 건식 제련 생산 추가를 통해 생산능력이 2026년 약 5만 톤 수준으로 확대될 것으로 추정되며, 이에 따른 이익 기여도 증가가 기대된다. 호주 아크에너지의 BESS 프로젝트는 뉴사우스웨일스 주정부와 장기에너지서비스계약(LTESA)을 체결하며 신재생에너지 부문의 실질적 성과를 입증하였다. 신사업 비중이 점진적으로 확대될수록 기초금속 가격 변동성에 대한 포트폴리오 방어력이 높아질 것으로 평가된다.",
+            "en": "Pedal Point, the U.S. resource recycling subsidiary, turned its first annual profit in 2025, symbolizing the new business segment's transition to genuine earnings contributor, and continued to support results in Q1 2026 alongside rising copper sales. The copper segment is expected to reach approximately 50,000 tons of production capacity in 2026 via fumer-unit conversion and dry smelting additions, lifting its earnings contribution. Arc Energy in Australia secured a long-term energy service contract (LTESA) with the New South Wales state government for its BESS project, providing tangible evidence of progress in the renewable energy pillar. As new business segments grow in scale, the overall portfolio will become progressively less sensitive to base metal price swings."
+          }
+        }
+      ],
+      "bear": [
+        {
+          "title": {
+            "ko": "장기화된 경영권 분쟁과 지배구조 불확실성",
+            "en": "Prolonged Ownership Dispute and Governance Uncertainty"
+          },
+          "body": {
+            "ko": "MBK파트너스·영풍 연합과의 경영권 분쟁은 2024년 9월 시작 이후 2년 이상 지속되고 있으며, 2026년 3월 정기 주총 이후 이사회 구도가 9:5(또는 9:6)으로 재편되어 최윤범 회장 측 우위는 유지되나 분쟁이 완전히 종결되지 않은 상태이다. 공정거래위원회가 2026년 5월 고려아연의 해외 계열사를 활용한 순환출자 구조에 대한 심사보고서 작성을 완료하고 행정 처분 절차에 돌입할 것으로 전망되어 추가적인 규제 리스크가 상존한다. 경영권 분쟁 장기화로 인한 전략적 의사결정 지연, 경영진 집중력 분산, 임직원 사기 저하 등 비가시적 비용도 우려 요인으로 꼽힌다. 국민연금이 2026년 주총에서 최 회장 관련 주요 안건에 의결권을 행사하지 않기로 하면서 향후 추가 주총 시 표 대결의 불확실성이 더해지고 있다.",
+            "en": "The ownership dispute with the MBK Partners–Young Poong coalition, which began in September 2024, has exceeded two years; while the Choi Yoon-bum faction retained board control after the March 2026 AGM at approximately a 9:5 ratio, the conflict remains unresolved. The Fair Trade Commission completed its investigation report on Korea Zinc's creation of a circular ownership structure via overseas subsidiaries in May 2026 and is expected to initiate formal administrative proceedings, adding a regulatory layer to governance risk. Less-visible costs include delayed strategic decision-making, management distraction, and potential employee morale erosion attributable to the protracted dispute. The National Pension Service's abstention on key Choi-related resolutions at the 2026 AGM further clouds the outcome of any future proxy contest."
+          }
+        },
+        {
+          "title": {
+            "ko": "경영권 방어 과정의 차입 확대로 훼손된 재무구조",
+            "en": "Elevated Leverage from Defensive Share Buybacks Strains the Balance Sheet"
+          },
+          "body": {
+            "ko": "경영권 분쟁 과정에서 전년도 당기순이익의 약 5배에 달하는 2조6,545억원을 차입하여 자사주를 매입하면서, 이전에 '현금부자' 기업으로 평가받던 재무구조가 크게 훼손되었다는 비판이 제기되고 있다. 이자비용 증가는 당기순이익 감소 요인으로 작용하며, 74억달러 규모의 프로젝트 크루서블 투자를 병행해야 하는 상황에서 재무적 유연성이 예전보다 제약되어 있다. 고려아연 측은 차입 구조를 장기·저금리 중심으로 재편해 이자비용을 줄이겠다는 계획을 밝혔으나, 이행 속도와 실현 가능성은 지속적인 확인이 필요하다. 자사주 소각(2025년 204만여 주)에도 불구하고 주주환원과 재무건전성 간 균형 유지가 중기적 과제로 남아 있다.",
+            "en": "During the governance dispute, Korea Zinc borrowed approximately KRW 2.65 trillion — roughly five times its prior-year net income — to fund defensive share buybacks, materially impairing a balance sheet that had been regarded as cash-rich. Higher interest expenses weigh on net income, and reduced financial flexibility complicates the simultaneous pursuit of the USD 7.4B Project Crusoble. Management has indicated plans to restructure borrowings toward longer maturities and lower-cost debt, but execution pace and feasibility warrant ongoing monitoring. Despite the cancellation of approximately 2.04 million treasury shares in 2025, balancing ongoing shareholder returns with the imperative to restore balance sheet health remains a medium-term challenge."
+          }
+        },
+        {
+          "title": {
+            "ko": "귀금속 가격 의존도 심화에 따른 이익 변동성 확대",
+            "en": "Rising Earnings Sensitivity to Precious Metals Prices Amplifies Downside Risk"
+          },
+          "body": {
+            "ko": "2026년 1분기 별도 기준 귀금속 매출 비중이 65.7%까지 상승하면서 은·금 가격 하락이 발생할 경우 이익 충격이 크게 확대될 수 있는 구조가 형성되었다. 실제로 주가는 2026년 5월 초 약 175만원대에서 6월 4일 기준 132만2,000원으로 약 한 달 사이 20% 이상 하락하여 귀금속 가격 조정 국면의 영향이 주가에 빠르게 반영되는 양상을 보이고 있다. 아연·연 기초금속의 경우에도 2026년에는 볼리덴의 타라 광산 재가동, 이반호 키푸시 프로젝트 생산 증가 등 공급 측 완화 요인과 건설 경기 부진이 맞물려 가격 상승이 제한될 수 있다는 전망이 있다. 귀금속·핵심광물 가격에 기반한 고성장이 지속 가능성을 갖추기 위해서는 신사업과 기초금속 포트폴리오의 안정적 성장이 동반되어야 한다.",
+            "en": "With precious metals accounting for 65.7% of standalone revenue in Q1 2026, any meaningful decline in silver or gold prices would translate into disproportionate earnings pressure. Indeed, the share price fell more than 20% from approximately KRW 1,747,000 in early May to KRW 1,322,000 on June 4, appearing to reflect a precious metals price correction swiftly discounted by the market. For base metals, zinc price upside in 2026 may be constrained by incremental supply — including Boliden's Tara mine restart and ramp-up of Ivanhoe's Kipushi project — combined with subdued construction demand. The high-growth trajectory driven by precious and critical metal price strength requires stable contributions from new businesses and the base metals portfolio to be genuinely sustainable."
+          }
+        }
+      ],
+      "risks": [
+        {
+          "cat": {
+            "ko": "금속 가격·거시경제 리스크",
+            "en": "Metal Price & Macro Risk"
+          },
+          "body": {
+            "ko": "글로벌 경기 둔화, 달러 강세 전환, 지정학적 긴장 완화 등이 복합적으로 작용할 경우 귀금속 가격이 고점 대비 크게 조정될 수 있으며, 이는 실적에 직결되는 핵심 위험 요인이다. 아연·연 기초금속 가격은 건설 부문 수요 회복 지연과 중국 내 신규 제련 용량 증가로 2026년 박스권 또는 하락 압력에 노출될 가능성이 있다. 원·달러 환율이 예상보다 빠르게 하락할 경우 달러 표시 제품 수익의 원화 환산 이익이 줄어들어 실적 감소 압력으로 작용한다.",
+            "en": "A global growth slowdown, a reversal to U.S. dollar strength, or an easing of geopolitical tensions could trigger a meaningful pullback in precious metals prices from currently elevated levels, directly impacting earnings given the portfolio's high leverage to silver and gold. Zinc and lead prices face downside risk from delayed recovery in construction demand and expanding Chinese smelting capacity, potentially capping the base metals segment in 2026. Faster-than-expected KRW appreciation against the USD would reduce the domestic-currency value of dollar-denominated product revenues, adding an additional headwind to reported results."
+          }
+        },
+        {
+          "cat": {
+            "ko": "지배구조·규제 리스크",
+            "en": "Governance & Regulatory Risk"
+          },
+          "body": {
+            "ko": "공정거래위원회가 고려아연의 해외 계열사를 활용한 순환출자 구조 형성에 대한 심사를 마치고 전원회의 제재 절차를 밟을 것으로 전망되며, 제재의 강도와 내용에 따라 지배구조 구도가 재편될 수 있다. MBK파트너스·영풍 연합이 이사회 내 입지를 지속적으로 강화하는 가운데, 향후 추가 주총이나 임시주총에서 표 대결이 재현될 경우 전략적 의사결정의 일관성이 흔들릴 가능성이 있다. 상법 개정(자사주 소각 의무화, 감사위원 분리선임 강화 등)에 따른 제도 변화도 지배구조 전반에 영향을 미칠 수 있는 변수로 작용하고 있다.",
+            "en": "The Fair Trade Commission finalized its investigation report on Korea Zinc's circular ownership structure via overseas subsidiaries in May 2026 and is expected to move the case to a full commission hearing; the severity of any sanctions could reshape the governance landscape. As the MBK–Young Poong bloc incrementally strengthens its boardroom presence, any future extraordinary or annual general meeting proxy contest could disrupt strategic continuity. Ongoing legislative changes — including mandatory treasury share cancellation requirements and enhanced audit committee appointment procedures under the revised Commercial Act — represent additional governance-related uncertainties."
+          }
+        },
+        {
+          "cat": {
+            "ko": "대규모 투자·실행 리스크",
+            "en": "Large-Scale Capital Deployment & Execution Risk"
+          },
+          "body": {
+            "ko": "미국 테네시주 '프로젝트 크루서블'은 총 74억달러 규모의 대형 투자로, 2029년 완공 목표까지 지속적인 자금 소요가 예상되어 이미 훼손된 재무구조에 추가 부담이 될 수 있다. FAST-41 패스트트랙 지정으로 인허가 리스크가 일부 완화되었으나, 건설 비용 초과, 공기 지연, 금속 가격 환경 변화 등 대형 프로젝트에 내재된 실행 리스크는 여전히 상존한다. 국내 온산제련소 고도화, 송도 R&D센터 건립 등 병행 국내 투자 계획까지 감안할 때, 투자 우선순위와 자금 조달 구조를 균형 있게 관리하는 것이 핵심 과제로 남아 있다.",
+            "en": "Project Crusoble's total investment of USD 7.4 billion entails substantial ongoing capital requirements through its targeted 2029 completion, adding further strain on a balance sheet already burdened by governance-related borrowings. While the FAST-41 designation reduces permitting risk, large-scale project risks — construction cost overruns, schedule delays, and shifts in the metals price environment — remain inherent. The concurrent pursuit of domestic investments, including the Onsan smelter upgrade and a new Songdo R&D center, will require disciplined capital allocation and carefully structured financing to maintain financial stability."
+          }
+        }
+      ],
+      "verdict": {
+        "stance": {
+          "ko": "긍정적",
+          "en": "Constructive"
+        },
+        "body": {
+          "ko": "고려아연은 2025년 사상 최대 실적 달성에 이어 2026년 1분기에도 분기 최대 실적을 경신하며 뚜렷한 이익 모멘텀을 입증하고 있다. 귀금속 가격의 구조적 강세, 전략광물 포트폴리오 확대, 미국 핵심광물 공급망 파트너로서의 위상 강화가 중장기 성장 기반으로 작용한다는 점에서 사업 펀더멘털은 긍정적으로 평가된다. 트로이카 드라이브 신사업도 실적에 기여하기 시작하여 포트폴리오 다변화 효과가 수익성 개선으로 가시화되고 있다. 다만 경영권 분쟁 장기화와 공정위 제재 절차 돌입에 따른 지배구조 불확실성, 경영권 방어 과정에서 훼손된 재무구조의 정상화 필요성, 그리고 74억달러 규모 미국 제련소 투자에 내재된 실행 리스크는 중요한 모니터링 대상이다. 귀금속 가격에 대한 실적 의존도가 높아진 현 구조에서는 귀금속 가격 조정 시 주가 변동성이 확대될 수 있음도 유의해야 한다. 본 리포트는 정보 제공 목적으로 작성된 것이며 투자 권유가 아님을 밝힌다.",
+          "en": "Korea Zinc has demonstrated compelling earnings momentum — extending record annual results in 2025 into another quarterly record in Q1 2026. The structural strength of precious metals prices, a broadening critical minerals portfolio, and the company's emerging role as a core partner in U.S. supply chain security all support a constructive view of the fundamental business outlook. Troika Drive new businesses are beginning to make incremental earnings contributions, with portfolio diversification materializing in improved profitability metrics. That said, the prolonged governance dispute — now compounded by an impending FTC enforcement proceeding — the need to repair a balance sheet strained by defensive share buybacks, and the inherent execution risks of the USD 7.4B U.S. smelter project are material factors warranting close monitoring. Given the elevated concentration of earnings in precious metals pricing, investors should also note the amplified share price sensitivity to a potential silver or gold correction. This report is provided for informational purposes only and does not constitute investment advice."
+        }
+      },
+      "sources": [
+        "https://www.koreazinc.co.kr/%EA%B3%A0%EB%A0%A4%EC%95%84%EC%97%B0-%EC%A7%80%EB%82%9C%ED%95%B4-%EC%82%AC%EC%83%81-%EC%B5%9C%EB%8C%80-%EC%8B%A4%EC%A0%81-%EB%8B%AC%EC%84%B1-44%EB%85%84-%EC%97%B0%EC%86%8D-%EC%98%81/",
+        "https://www.ajunews.com/view/20260209164939296",
+        "https://www.inthenews.co.kr/news/article.html?no=86562",
+        "https://www.econovill.com/news/articleView.html?idxno=739679",
+        "https://www.ferrotimes.com/news/articleView.html?idxno=46347",
+        "https://www.mt.co.kr/industry/2026/05/06/2026050617485355894",
+        "https://www.1conomynews.co.kr/news/articleView.html?idxno=48497",
+        "https://m.news.nate.com/view/20260511n03800",
+        "https://news.nate.com/view/20260526n32723",
+        "https://www.koreancenter.or.kr/news/articleView.html?idxno=1327726",
+        "https://www.newstopkorea.com/news/articleView.html?idxno=43907",
+        "https://ko.tradingeconomics.com/commodity/zinc"
+      ],
+      "ticker": "010130",
+      "name": "고려아연",
+      "name_en": "KOREA ZINC INC",
+      "sector": "철강·금속",
+      "categories": [
+        "철강·금속"
+      ],
+      "market": "코스피",
+      "reportDate": "2026-06-04",
+      "dataDate": "20260602"
+    },
+    "000810": {
+      "title": {
+        "ko": "손해율 고점 통과, CSM과 글로벌로 수익 재설계 중",
+        "en": "Past Peak Loss Ratio: Reengineering Earnings via CSM Accumulation and Global Expansion"
+      },
+      "lead": {
+        "ko": "2025년 자동차보험 적자와 예실차 손실이라는 이중 역풍을 딛고 2026년 1분기 반등을 확인한 삼성화재는, 손해율 정상화·CSM 누적·캐노피우스 공동경영이라는 세 축으로 중기 수익 재설계를 진행 중이다.",
+        "en": "Having weathered the dual headwinds of auto insurance losses and adverse loss development in 2025, Samsung Fire & Marine Insurance is reengineering medium-term earnings power through loss ratio normalization, CSM accumulation, and co-management of Lloyd's specialty insurer Canopius."
+      },
+      "desc": {
+        "ko": "삼성화재(000810)는 국내 손해보험 시장 1위 사업자로, DART 공시 기준 2025년 연간 영업이익 2.7조원(+0.4%)·당기순이익 2.0조원(-2.7%)을 기록했다. 2026년 1분기에는 보험손익과 투자손익이 동반 개선되며 영업이익 8,611억원(+8.7%)·당기순이익 6,352억원(+4.3%)으로 반등세를 확인했다. 자동차보험 손해율 부담이 잔존하는 가운데, 장기보험 포트폴리오 재편·요율 인상 효과와 캐노피우스 지분 확대(40.03%)에서 비롯되는 글로벌 성장 모멘텀이 중기 투자 핵심 논거를 형성하고 있다.",
+        "en": "Samsung Fire & Marine Insurance (000810), Korea's top non-life insurer, reported full-year 2025 operating profit of KRW 2.7 trillion (+0.4% YoY) and net profit of KRW 2.0 trillion (-2.7% YoY) on a consolidated DART basis. In Q1 2026, both insurance and investment income improved, lifting operating profit to KRW 861.1 billion (+8.7%) and net profit to KRW 635.2 billion (+4.3%), confirming an earnings rebound. While auto insurance loss ratio pressure persists, long-term insurance portfolio restructuring, rate hikes, and the expanded 40.03% stake in Lloyd's insurer Canopius constitute the central medium-term investment thesis."
+      },
+      "keypoints": [
+        {
+          "ko": "2026년 1분기 영업이익 8,611억원(+8.7%), 당기순이익 6,352억원(+4.3%)으로 시장 컨센서스 부합하며 반등 확인",
+          "en": "Q1 2026 operating profit of KRW 861.1 billion (+8.7%) and net profit of KRW 635.2 billion (+4.3%) confirmed an earnings rebound in line with sell-side consensus"
+        },
+        {
+          "ko": "보유 CSM 잔액 14.4조원(1Q26 기준)으로 안정 성장, 유지율 지표(25·37차월) 동반 개선",
+          "en": "CSM balance of KRW 14.47 trillion as of Q1 2026 on a stable growth trajectory, with 25th-month and 37th-month persistency ratios both improving"
+        },
+        {
+          "ko": "캐노피우스 지분 40.03% 확보(2025년 10월)로 연 700억 달러 규모 로이즈 시장 공동경영 진입",
+          "en": "Secured 40.03% stake in Canopius (October 2025), entering co-management of Lloyd's specialty insurance market estimated at ~USD 70 billion annually"
+        },
+        {
+          "ko": "K-ICS(킥스) 비율 약 262~267% 유지, 업종 최상위 자본건전성이 2028년 주주환원율 50% 로드맵을 뒷받침",
+          "en": "K-ICS ratio of ~262–267%, the highest among top-five non-life insurers, underpins the 50% shareholder payout ratio roadmap targeting 2028"
+        },
+        {
+          "ko": "신계약 CSM 전년比 10.7% 감소 및 자동차보험 구조적 적자는 핵심 단기 과제, 요율 인상 효과 가시화가 관건",
+          "en": "New-contract CSM declining 10.7% YoY and structural auto insurance underwriting losses are the key near-term challenges; the pace of rate-hike pass-through is the critical variable"
+        }
+      ],
+      "business": {
+        "ko": "삼성화재는 국내 손해보험 시장에서 장기보험·자동차보험·일반보험의 3대 축을 중심으로 운영하는 업계 1위 사업자로, 2025년 기준 5대 손보사 중 순이익 1위를 유지하고 있다. 장기보험은 건강보험·운전자보험·재물보험 등 다양한 보장성 상품 기반으로 IFRS17 체제 하에서 CSM 확충 전략의 핵심 영역이며, 2025년 말 보유 CSM 잔액 14조1,677억원에서 2026년 1분기 14조4,692억원으로 증가 추세를 이어가고 있다. 자동차보험은 '애니카' 브랜드를 앞세운 온라인·다이렉트 채널 중심 구조로 업계 최대 시장점유율을 유지하나, 고손해율로 인한 수익성 관리가 지속적인 과제다. 일반보험은 특종·해상·배상책임 보험 등으로 구성되며, 2026년 1분기 손해율이 53.6%까지 개선되는 등 고수익 세그먼트로 부각되고 있다. 글로벌 사업에서는 2025년 10월 약 8,000억원을 추가 투자해 영국 로이즈 보험사 캐노피우스 지분을 40.03%로 확대하며 실질적 공동경영 체계를 구축했고, 싱가포르 재보험법인 삼성리(Samsung Re)를 통해 아시아 재보험 거점도 운용하고 있다. 삼성그룹 계열사로서 삼성전자 지분을 보유하고 있어 지분가치 상승 및 삼성전자 주주환원 정책에 따른 특별배당 수취 가능성도 투자 심리에 영향을 미치는 요소다. 경쟁사로는 현대해상·DB손해보험·KB손해보험·메리츠화재가 있으며, 2025년 메리츠화재가 자동차보험 노출도가 상대적으로 낮아 순이익 2위로 부상하는 등 경쟁 지형에도 변화가 나타났다. 2030년 중장기 비전으로 세전이익 5조원·기업가치 30조원 달성을 제시하며, 국내 전 부문 1위 공고화와 글로벌 사업 수익화를 양대 성장 축으로 삼고 있다. 이 과정에서 사이버·신재생에너지·산업안전 등 신규 보험 시장 진출을 통한 일반보험 수익성 강화도 병행하고 있다.",
+        "en": "Samsung Fire & Marine Insurance operates across three major segments—long-term, auto, and general/commercial insurance—and maintained its position as Korea's top non-life insurer by net profit among the big five in 2025. The long-term segment, built on health, driver, and property products, serves as the primary CSM accumulation engine under IFRS17, with the balance growing from KRW 14.1677 trillion at year-end 2025 to KRW 14.4692 trillion by Q1 2026. The auto insurance segment commands the largest domestic market share via the 'Anycar' brand and online-channel distribution model, though elevated loss ratios have been a persistent profitability drag. General insurance—covering specialty, marine, and liability lines—has emerged as a high-margin segment, with the Q1 2026 loss ratio improving to 53.6%. On the global front, an approximately KRW 800 billion additional investment in October 2025 raised the Canopius stake to 40.03%, formalizing co-management rights alongside lead shareholder Fidentia Consortium; the Lloyd's specialty insurance market is estimated at approximately USD 70 billion annually. Singapore-based reinsurance subsidiary Samsung Re further anchors the company's Asian reinsurance strategy. As a Samsung Group affiliate holding Samsung Electronics shares, equity-method income and potential special dividend receipts represent supplementary earnings levers. Key competitors include Hyundai Marine & Fire, DB Insurance, KB Insurance, and Meritz Fire, with the competitive landscape shifting as Meritz's lower auto insurance exposure drove it to second place in 2025 industry net profit rankings. The company's 2030 Vision targets KRW 5 trillion in pre-tax profit and KRW 30 trillion in enterprise value, with domestic market leadership and global earnings diversification as its twin growth pillars."
+      },
+      "recent": {
+        "ko": "DART 공시 기준, 삼성화재의 2025년 연간 영업이익은 2조7,730억원(+0.4%)으로 사실상 보합 수준을 유지했으나, 당기순이익은 2조203억원(-2.7%)으로 소폭 감소했다. 보험손익은 1조5,077억원으로 전년 대비 4.4% 줄었는데, 자동차보험 적자(-1,590억원)와 장기보험 위험손해율 급등(97.2%, +9.5%p YoY)이 주된 하락 요인이었다. 반면 투자부문이익은 전년 대비 43.5% 급증한 1조2,133억원을 기록하며 실적의 하방을 지지했고, 지난해 말 기준 보유 CSM은 14조1,677억원으로 전년 말 대비 증가를 유지했다. 2026년 1분기에는 반등 흐름이 가시화됐다. 영업이익 8,611억원(+8.7%), 당기순이익 6,352억원(+4.3%)으로 시장 컨센서스에 부합했으며, 보험손익 및 투자손익이 모두 개선됐다는 점에서 수익 구조의 질적 회복 신호로 평가된다. 장기보험 손익은 4,400억원(+4.9%)으로 증가했고, 일반보험 손해율이 53.6%로 전년 동기 대비 9.9%p 개선되며 보험손익 1,047억원을 달성했다. 자동차보험은 1분기에 96억원의 소폭 적자를 기록했으나, 전년 동기 대비 손해율 흐름은 개선 추세에 있다. 운용자산 기준 투자이익은 8,537억원으로 전년 동기 대비 15.4% 증가하며 채권 운용 효율화와 삼성전자 배당 수취 효과가 반영됐다. 기준일(2026-06-04) 주가는 641,000원(전일 대비 +6.13%)으로 시가총액 29.5조원이며, 최근 보도에 따르면 증권사 평균 컨센서스 목표주가는 665,588원 수준으로 형성돼 있다.",
+        "en": "On a DART consolidated basis, Samsung Fire reported full-year 2025 operating profit of KRW 2.7730 trillion (+0.4% YoY) and net profit of KRW 2.0203 trillion (-2.7% YoY). Insurance profit fell 4.4% year-on-year to KRW 1.5077 trillion, with a KRW -159 billion auto insurance underwriting loss and a sharp rise in the long-term insurance risk loss ratio to 97.2% (+9.5 ppts) as the primary drivers. Investment profit, however, surged 43.5% to KRW 1.2133 trillion, providing significant earnings support, while the year-end CSM balance grew to KRW 14.1677 trillion. In Q1 2026, an earnings rebound materialized: operating profit reached KRW 861.1 billion (+8.7%) and net profit came in at KRW 635.2 billion (+4.3%), in line with sell-side consensus, with both insurance and investment income improving—a qualitative signal of earnings structure recovery. Long-term insurance profit rose 4.9% to KRW 440 billion, and general insurance profit improved sharply to KRW 104.7 billion as its loss ratio fell 9.9 ppts to 53.6%. Auto insurance recorded a modest KRW 9.6 billion Q1 underwriting loss, but the loss ratio trend is improving on a sequential basis. Investment income on managed assets grew 15.4% to KRW 853.7 billion, aided by bond portfolio optimization and Samsung Electronics dividend receipts. As of the reference date (June 4, 2026), the stock trades at KRW 641,000 (+6.13% day-on-day), implying a market cap of KRW 29.5 trillion; recent brokerage reports place the average consensus target price at approximately KRW 665,588."
+      },
+      "outlook": {
+        "ko": "삼성화재 경영진은 2025년을 장기보험 위험손해율의 고점으로 규정하며, 2026년부터 요율 인상·우량 담보 중심 포트폴리오 재편·과잉 청구 관리 강화 효과가 본격 반영될 것으로 전망하고 있다. 자동차보험 역시 2026년 1월 보험료 인상과 데이터 기반 언더라이팅 고도화를 통해 중기 흑자 구조 전환을 목표로 하나, 의료비 원가 상승 및 계절 변동성이 단기 수익화를 제약할 수 있다. CSM 측면에서는 신계약 CSM이 1분기 전년 대비 10.7% 감소했으며, 경영진은 연간 기준 전년 수준 유지를 목표로 제시했으나 일부 증권사는 감소세 지속을 우려하고 있어 하반기 신계약 흐름이 핵심 관찰 지표다. 캐노피우스 공동경영 체계(지분 40.03%) 구축으로 지분법 이익 증가와 재보험 협력 매출 확대가 기대되며, 2024년 기준 약 880억원 규모였던 지분법 이익은 향후 더 큰 이익 기여로 연결될 잠재력을 갖는다. 주주환원 측면에서는 2028년 환원율 50% 달성 및 자사주 비중 5% 이하 유지가 목표이며, DPS 점진적 상향이 지속될 것으로 예상된다. 삼성전자의 2024~2026년 3개년 주주환원 정책 마지막 해인 2026년에 추가 특별배당 수취 가능성이 투자이익 상방 요인으로 거론된다. 금리 추가 하락이 지속될 경우 K-ICS 비율 관리 부담과 투자이익 압축이 동시에 작용할 수 있어, 거시금리 환경의 지속적인 모니터링이 필요하다.",
+        "en": "Management has designated 2025 as the peak year for the long-term insurance risk loss ratio, expecting the compounded effects of premium rate hikes, a shift toward higher-quality risk portfolios, and stricter claims management to materialize meaningfully from 2026. Auto insurance profitability is targeted via January 2026 rate hikes and data-driven underwriting enhancements, though rising medical cost trends and seasonal loss volatility may delay near-term recovery. On the CSM front, new-contract CSM fell 10.7% YoY in Q1 2026; management targets flat performance for the full year, but several sell-side analysts expect the decline to persist, making second-half new-contract trends a critical observation point. The formalized Canopius co-management structure (40.03% stake) is expected to drive equity-method income above the approximately KRW 88 billion contribution recorded in 2024 and expand reinsurance cooperation revenues. The shareholder return roadmap targets a 50% payout ratio by 2028 with gradual DPS increases and continued buyback cancellations. As 2026 marks the final year of Samsung Electronics' 2024–2026 three-year shareholder return program, potential special dividend receipts remain a near-term upside earnings catalyst. A prolonged rate-cut environment could simultaneously pressure K-ICS ratios and compress reinvestment yields, making macroeconomic rate monitoring an essential watchpoint."
+      },
+      "bull": [
+        {
+          "title": {
+            "ko": "장기보험 손해율 정상화 가시화",
+            "en": "Long-term Insurance Loss Ratio Normalization Taking Shape"
+          },
+          "body": {
+            "ko": "삼성화재 경영진은 2025년 위험손해율(97.2%)을 고점으로 판단하며 2026년부터 점진적 하락을 전망했다. 2026년 1월 요율 인상 효과와 고손해율 담보의 영업 중단, 포트폴리오의 고수익 상품 중심 재편이 맞물리며 예실차도 개선 방향으로 전환 중이다. 2026년 1분기 유지율 지표(25차월 +7.1%p, 37차월 +5.0%p 개선)는 장기 계약 기반의 질적 향상을 뒷받침하는 신호다. 손해율 정상화가 가속화될 경우 보험손익의 구조적 개선이 CSM 추가 확충으로 이어지며 이익 선순환이 형성될 수 있다.",
+            "en": "Management designated 2025 as the peak year for the long-term insurance risk loss ratio (97.2%) and anticipates a gradual decline from 2026. The January 2026 premium rate hike, discontinuation of high-loss-ratio coverages, and portfolio repositioning toward higher-margin products are collectively beginning to improve adverse loss development trends. Q1 2026 persistency ratio gains (25th-month: +7.1 ppts; 37th-month: +5.0 ppts) further signal improving long-term contract quality. Accelerated loss ratio normalization could trigger structural insurance profit improvement, creating a virtuous cycle of further CSM accumulation."
+          }
+        },
+        {
+          "title": {
+            "ko": "캐노피우스 공동경영·글로벌 다변화 가속",
+            "en": "Canopius Co-management and Accelerating Global Diversification"
+          },
+          "body": {
+            "ko": "삼성화재는 2025년 10월 약 8,000억원을 추가 투자해 캐노피우스 지분을 40.03%로 확대, 실질적 공동경영 체계를 구축했다. 2024년 기준 약 3,000억원 규모의 재보험 협력 매출과 약 880억원의 지분법 이익을 창출했으며, 지분 확대에 따라 이익 기여도는 향후 더 커질 잠재력을 갖는다. 2024년 기준 연간 700억 달러(약 100조원) 규모로 추산되는 런던 로이즈 시장은 국내 성장 한계를 상쇄하는 중장기 수익 다변화 원천이다. 재보험 협력, 아시아 공동 마케팅, 이사회를 통한 선진 언더라이팅 역량 내재화는 단순 지분 투자를 넘어선 전략적 가치를 형성한다.",
+            "en": "Samsung Fire completed an approximately KRW 800 billion additional investment in October 2025, raising its Canopius stake to 40.03% and formalizing co-management. In 2024, the partnership generated approximately KRW 300 billion in reinsurance cooperation revenues and approximately KRW 88 billion in equity-method profit, both of which are expected to expand as the larger stake takes effect. The Lloyd's specialty insurance market—estimated at approximately USD 70 billion annually as of 2024—represents a substantial long-term diversification avenue beyond Korea's domestic growth ceiling. Reinsurance cooperation, joint Asian marketing, and board-level knowledge transfer from advanced underwriting practices create strategic value beyond the financial return on the stake alone."
+          }
+        },
+        {
+          "title": {
+            "ko": "업종 최상위 자본력 기반 주주환원 확대 로드맵",
+            "en": "Best-in-class Capital Strength Underpinning Shareholder Return Roadmap"
+          },
+          "body": {
+            "ko": "삼성화재의 K-ICS 비율은 2025년 말 262.9%, 2026년 1분기 266.6%로 금융당국 권고치(130%)를 두 배 이상 상회하며 업종 내 최상위를 기록하고 있다. 높은 자본 여력은 2028년 주주환원율 50% 달성, DPS 점진적 상향, 자사주 잔여 소각(보유 비중 5% 이하 목표)의 재원 기반을 제공한다. 2025년 DPS는 1만9,500원(+2.6%)으로 당기순이익 감소에도 환원 의지를 유지했으며, 삼성전자의 잠재적 특별배당 수취는 추가 주주 이익 가시화 요인으로 작용할 수 있다. 증권가 일각에서는 캐노피우스 지분법 이익 증가와 본업 수익성 회복이 맞물리면 2028년 DPS 목표치(약 2만4,000원 수준)에 대한 신뢰도가 높아질 것으로 평가한다.",
+            "en": "Samsung Fire's K-ICS ratio stood at 262.9% at year-end 2025 and rose to 266.6% in Q1 2026, more than twice the 130% regulatory guidance and the highest among the top five non-life insurers. This robust capital position underpins the shareholder return roadmap: a 50% payout ratio by 2028, gradual DPS increases, and buyback cancellations targeting treasury shares below 5% of outstanding shares. In 2025, DPS was raised 2.6% to KRW 19,500 even as net profit declined, demonstrating management's commitment to the return trajectory. Market observers note that converging Canopius equity-method income growth and core business profitability recovery could materially enhance confidence in the approximately KRW 24,000 DPS target for 2028."
+          }
+        }
+      ],
+      "bear": [
+        {
+          "title": {
+            "ko": "신계약 CSM 감소와 장기 성장 동력 약화 우려",
+            "en": "Declining New-contract CSM and Weakening Long-term Growth Engine"
+          },
+          "body": {
+            "ko": "2026년 1분기 신계약 CSM은 전년 동기 대비 10.7% 감소했으며, 신규 판매 물량 자체도 24.9% 줄었다. 이는 수익성 중심 포트폴리오 전략의 의도된 결과이기도 하지만, 신규 가입자 기반 축소는 중장기적으로 보유 CSM 성장 속도를 제약할 수 있다. 일부 증권사는 경영진의 '연간 전년 수준 유지' 목표와 달리 신계약 CSM 감소 흐름이 지속될 것으로 우려하고 있다. CSM 확충 속도가 기대치를 지속적으로 하회한다면, 중장기 보험손익 성장 서사에도 균열이 생길 수 있다.",
+            "en": "New-contract CSM fell 10.7% year-on-year in Q1 2026, with new business volume itself shrinking 24.9%. While this partly reflects the deliberate shift to a profitability-over-volume strategy, the contracting new business base could constrain the pace of CSM accumulation over the medium term. Several sell-side analysts expect the declining trend to persist, contrary to management's stated goal of maintaining full-year new-contract CSM at the prior-year level. If CSM growth continuously disappoints expectations, the structural earnings growth narrative for insurance profit could face meaningful headwinds."
+          }
+        },
+        {
+          "title": {
+            "ko": "자동차보험 구조적 적자와 해소 시점 불투명",
+            "en": "Structural Auto Insurance Underwriting Losses with Uncertain Timeline for Resolution"
+          },
+          "body": {
+            "ko": "삼성화재의 2025년 자동차보험 손익은 -1,590억원으로 합산비율이 102.9%까지 상승했고, 5대 손보사 전체로는 2025년 자동차보험 부문에서 4,585억원의 업계 전반 적자가 발생했다. 2026년 1월 보험료 인상과 데이터 기반 언더라이팅 강화가 이루어졌으나, 의료비 원가 상승·계절적 손해율 변동·경쟁사 간 요율 경쟁이 지속되면서 단기 흑자 전환이 용이하지 않은 상황이다. 자동차보험 비중이 높은 삼성화재 특성상, 구조적 손해율 개선이 지연될 경우 전체 보험손익 회복 폭을 제한하는 요인으로 작용한다. 일반적으로 자동차보험 적자 해소에는 요율 인상 누적 효과가 반영되기까지 수 분기의 시차가 필요하다는 점도 고려해야 한다.",
+            "en": "Samsung Fire's 2025 auto insurance underwriting result was KRW -159 billion, with the combined ratio rising to 102.9%, while the aggregate auto insurance loss across the big-five non-life insurers reached KRW 458.5 billion. January 2026 rate hikes and data-driven underwriting enhancements have been introduced, but rising medical cost trends, seasonal loss ratio volatility, and ongoing price competition make a near-term return to profitability challenging. Given Samsung Fire's relatively large auto insurance exposure, a delay in structural loss ratio improvement remains a key constraint on overall insurance profit recovery. There is typically a multi-quarter lag before cumulative rate hike effects are fully reflected in loss ratio improvement."
+          }
+        },
+        {
+          "title": {
+            "ko": "ROE 하락 추세와 주주환원 속도에 대한 시장 눈높이 부담",
+            "en": "Declining ROE Trend and Market Frustration over the Pace of Shareholder Returns"
+          },
+          "body": {
+            "ko": "삼성화재의 ROE는 2024년 약 12.1%에서 2027년 10.5% 수준으로 하락할 것으로 전망되며, 높은 K-ICS 비율이 자본 효율성 저하를 심화시킨다는 시장의 지적이 이어지고 있다. 262%를 상회하는 킥스 비율 대비 주주환원 속도가 느리다는 비판이 지속되며, 2025년 DPS 증가율 2.6%는 시장 기대치를 하회했다. 일부 애널리스트는 K-ICS 비율이 과도하게 높은 수준임에도 구체적인 자본 효율성 제고 방안이 부족하다고 지적한다. 글로벌 사업 투자 확대 전략이 단기 주주환원 속도를 제약하는 요인으로 해석될 경우, 밸류업 논거의 설득력 유지에 부담이 될 수 있다.",
+            "en": "Samsung Fire's ROE is projected to slide from approximately 12.1% in 2024 to around 10.5% by 2027, with the elevated K-ICS ratio exacerbating market concerns about capital efficiency. Criticism over the pace of shareholder returns relative to the 260%-plus solvency ratio persists, and the 2025 DPS growth of just 2.6% fell short of investor expectations. Some analysts argue that despite an excessively high K-ICS ratio, the company lacks sufficiently concrete capital efficiency enhancement measures. If the accelerating global investment strategy—particularly Canopius—is perceived as constraining near-term shareholder returns, the persuasiveness of the valuation enhancement thesis could be challenged."
+          }
+        }
+      ],
+      "risks": [
+        {
+          "cat": {
+            "ko": "거시금리 리스크",
+            "en": "Macroeconomic Interest Rate Risk"
+          },
+          "body": {
+            "ko": "보험사의 K-ICS 비율은 금리 변동에 민감하게 반응하며, 금리 1%p 하락 시 손보사 평균 킥스비율이 약 11%p 낮아지는 것으로 알려져 있다. 삼성화재는 2026년 1분기 금리 하락 환경에서도 킥스비율 266.6%를 방어했으나, 추가적인 금리 인하 사이클이 지속될 경우 자본 관리 부담이 높아질 수 있다. 금리 하락은 채권 재투자 수익률 하락과 ALM 부담 증가를 동시에 유발해 중장기 투자이익 기반에도 압력을 가하며, 투자이익의 실적 기여도가 컸던 2025년 이후 수익성 방어 역할이 약화될 수 있다.",
+            "en": "Non-life insurers' K-ICS ratios are highly sensitive to interest rate movements—industry data suggest that a 100 bps rate decline lowers average K-ICS ratios by approximately 11 ppts. While Samsung Fire defended a 266.6% K-ICS ratio in Q1 2026 despite a declining rate environment, a sustained rate-cut cycle could materially elevate capital management pressures. Lower rates also compress bond reinvestment yields and intensify ALM challenges, eroding the medium-to-long-term investment income base that contributed significantly to earnings cushioning in 2025."
+          }
+        },
+        {
+          "cat": {
+            "ko": "규제·회계 제도 리스크",
+            "en": "Regulatory and Accounting Policy Risk"
+          },
+          "body": {
+            "ko": "금융당국은 기본자본 중심의 K-ICS 자본의 질 관리 강화 방안을 추진 중으로, 보완자본 의존도가 낮은 삼성화재에는 상대적으로 유리하나 업계 전반의 규제 환경이 변화할 수 있다. IFRS17 적용 가정 변경(보험금 예실차, 위험률 조정 등)에 따른 회계적 변동성은 분기별 이익의 불확실성 요인으로 지속 작용할 수 있다. 실손의료보험 관련 제도 개편(4세대 실손 전환 속도, 청구 관리 규정 변화)이 장기보험 손해율 경로에 직접적인 영향을 미칠 수 있으며, 입법·감독 방향성에 따라 비용 부담이 확대될 수 있다.",
+            "en": "Financial regulators are advancing core (tier-1) capital quality enhancement measures under the K-ICS framework, which is broadly favorable for Samsung Fire given its low reliance on supplementary capital, but may reshape the industry-wide regulatory landscape. IFRS17 assumption volatility—particularly around claims development and risk rate adjustments—introduces ongoing quarterly earnings uncertainty. Reforms to Korea's indemnity health insurance system, including the pace of 4th-generation product conversion and claims management rule changes, could directly influence long-term insurance loss ratio trajectories and expand cost burdens depending on legislative and supervisory outcomes."
+          }
+        },
+        {
+          "cat": {
+            "ko": "경쟁·해외사업 리스크",
+            "en": "Competitive and Overseas Business Risk"
+          },
+          "body": {
+            "ko": "국내 손해보험 시장은 자동차보험 가격 경쟁, 장기보험 신계약 경쟁, 디지털·다이렉트 채널 확장이 동시에 진행되며 수익성 압박이 가중되고 있다. 헬스케어·사이버·신재생에너지 등 신규 보험 세그먼트에서 경쟁 강도가 상승하면서 일반보험의 높은 수익성도 중기적으로 압박을 받을 수 있다. 캐노피우스 등 해외 투자 확대 과정에서 환율 변동성·영국·미국 현지 감독 리스크·글로벌 재보험 사이클 변화가 추가 변수로 작용한다. 해외 투자의 성과 가시화에 시간이 소요될 경우, 대규모 자본 배치(약 8,000억원 추가 투자)가 단기적으로 자본 효율성 지표를 압박하는 요인이 될 수 있다.",
+            "en": "Korea's non-life insurance market faces simultaneous pressures from price competition in auto insurance, new-contract competition in long-term lines, and rapid digital/direct-channel expansion. Rising competition intensity in emerging segments such as healthcare, cyber, and renewable energy insurance may put medium-term pressure on the currently elevated general insurance margins. The overseas investment expansion—notably the approximately KRW 800 billion Canopius stake increase—introduces foreign exchange volatility, UK/US local regulatory risk, and global reinsurance cycle changes as additional variables. Should the payback period on overseas investments take longer than expected, the large capital deployment could weigh on near-term capital efficiency metrics."
+          }
+        }
+      ],
+      "verdict": {
+        "stance": {
+          "ko": "중립",
+          "en": "Neutral"
+        },
+        "body": {
+          "ko": "삼성화재는 2025년 자동차보험 적자(-1,590억원)와 장기보험 예실차 손실이라는 이중 역풍을 일정 부분 극복하며 2026년 1분기에 실적 반등(영업이익 +8.7%, 순이익 +4.3%)을 확인했고, 보험손익·투자손익의 동반 개선이 실적 신뢰를 회복했다. 국내 손보 1위의 브랜드력·CSM 잔액 14.4조원(2026년 1분기)·업종 최상위 K-ICS 비율(266%), 그리고 캐노피우스를 통한 글로벌 다변화 경로는 중기 투자 매력의 핵심 근거다. 다만 신계약 CSM 감소세(-10.7% YoY), 자동차보험 구조적 적자 해소 시점의 불확실성, 주주환원 속도에 대한 시장의 눈높이 부담은 단기 주가 모멘텀을 제약하는 복합 요인으로 작용한다. ROE의 하락 추세와 캐노피우스 투자 효과의 가시화 시점도 중기적으로 확인이 필요하다. 이러한 강세·약세 요인의 균형을 고려해 본 보고서는 중립 스탠스를 유지하며, 하반기 신계약 CSM 회복 여부와 장기보험 손해율 하락 속도를 향후 스탠스 재검토의 핵심 관찰 지표로 제시한다.",
+          "en": "Samsung Fire partially overcame the dual headwinds of a KRW -159 billion auto insurance underwriting loss and adverse long-term insurance loss development in 2025, confirming an earnings rebound in Q1 2026 (operating profit +8.7%, net profit +4.3%), with the simultaneous improvement of both insurance and investment income restoring market confidence. Domestic market leadership, a CSM balance of KRW 14.47 trillion, an industry-best K-ICS ratio of 266%, and the Canopius-driven global diversification pathway remain the core pillars of the medium-term investment case. That said, the declining new-contract CSM trend (-10.7% YoY), uncertainty around the timing of auto insurance structural loss resolution, and elevated market expectations on shareholder return pace represent a combination of constraints on near-term price momentum. The ROE decline trajectory and the timeline for Canopius investment payoffs also require continued monitoring over the medium term. Balancing these constructive and cautionary factors, this report maintains a Neutral stance, identifying second-half new-contract CSM recovery and the pace of long-term insurance loss ratio normalization as the key swing variables for a potential stance reassessment."
+        }
+      },
+      "sources": [
+        "https://alphabiz.co.kr/news/view/1065589046516744",
+        "https://www.news2day.co.kr/article/20260515500029",
+        "https://news.nate.com/view/20260518n10270",
+        "https://news.nate.com/view/20260515n04762",
+        "https://dealsite.co.kr/articles/157219",
+        "https://news.nate.com/view/20260225n03064",
+        "https://kr.investing.com/news/stock-market-news/article-1834780",
+        "https://www.bloter.net/news/articleView.html?idxno=654745",
+        "https://www.ezyeconomy.com/news/articleView.html?idxno=229340",
+        "https://www.munhwa.com/article/11511498",
+        "https://www.inthenews.co.kr/news/article.html?no=78408",
+        "https://www.datanews.co.kr/news/article.html?no=139553",
+        "https://v.daum.net/v/tr0q08rNAy",
+        "https://www.fntimes.com/html/view.php?ud=2025102715184235599efc5ce4ae_18"
+      ],
+      "ticker": "000810",
+      "name": "삼성화재",
+      "name_en": "SAMSUNG FIRE & MARINE INSURANCE CO.,LTD",
+      "sector": "보험",
+      "categories": [
+        "보험"
+      ],
+      "market": "코스피",
+      "reportDate": "2026-06-04",
+      "dataDate": "20260602"
+    },
+    "005490": {
+      "title": {
+        "ko": "철강 저점 확인·리튬 상업화 — 복합 성장 구조의 실적 정상화 국면",
+        "en": "Steel Floor Confirmed, Lithium Commercializing: POSCO Holdings at a Multi-Asset Earnings Inflection"
+      },
+      "lead": {
+        "ko": "2025년 대규모 일회성 비용으로 눌렸던 POSCO홀딩스가 아르헨티나 리튬 상업생산 개시와 자회사 구조조정 효과를 발판 삼아 2026년 본격적인 실적 정상화 국면에 진입하고 있다.",
+        "en": "After a 2025 burdened by outsized one-off charges, POSCO Holdings is entering a clear earnings normalization cycle in 2026, underpinned by the commercialization of its Argentina lithium operations and the dissipation of subsidiary restructuring costs."
+      },
+      "desc": {
+        "ko": "POSCO홀딩스(005490)는 코스피 상장 철강·소재 지주사로, 포스코(철강), 포스코퓨처엠(이차전지소재), 포스코인터내셔널(에너지·트레이딩), 포스코이앤씨(건설) 등 4개 핵심 자회사를 통해 철강·이차전지소재·인프라 에너지 등 7대 사업 포트폴리오를 운영한다. 2025년에는 포스코이앤씨 건설 사고 비용, 중국 장가항 공장 매각 손실, 리튬 공장 램프업 비용 등 복수의 일회성 요인이 이익을 압박했으나, 2026년 1분기부터 리튬 사업 흑자 전환 가시화, 인프라 부문 사상 최대 실적, 포스코이앤씨 흑자 전환이 동시에 나타나며 실적 구조 개선이 현실화되고 있다.",
+        "en": "POSCO Holdings (005490) is a KOSPI-listed steel and materials holding company operating through four core subsidiaries—POSCO (steel), POSCO Future M (battery materials), POSCO International (energy and trading), and POSCO E&C (construction)—across a seven-pillar business portfolio. While 2025 earnings were compressed by multiple one-off charges including POSCO E&C accident-related costs, China Zhangjiagang plant disposal losses, and lithium factory ramp-up expenses, Q1 2026 has opened with a clear structural earnings recovery: lithium operations nearing profitability, record infrastructure results, and POSCO E&C's return to profit all materializing simultaneously."
+      },
+      "keypoints": [
+        {
+          "ko": "2026년 1분기 영업이익 7,068억원(+24.3% YoY)으로 시장 컨센서스(약 5,950억원)를 20% 상회하는 어닝 서프라이즈 달성",
+          "en": "Q1 2026 operating profit of KRW 706.8bn (+24.3% YoY) beat market consensus of approximately KRW 595bn by roughly 20%, delivering a clear positive surprise"
+        },
+        {
+          "ko": "포스코아르헨티나 2026년 3월 월 기준 최초 흑자 기록, 2분기 첫 분기 흑자 전환 예상 — 이차전지소재 부문 영업적자가 1,570억원(4Q25)에서 70억원(1Q26)으로 급감",
+          "en": "POSCO Argentina posted its first monthly profit in March 2026, with a first quarterly profit expected in Q2; battery materials operating loss shrank from KRW 157bn in Q4 2025 to KRW 7bn in Q1 2026"
+        },
+        {
+          "ko": "2026년 4월 JSW스틸과 인도 오디샤주 조강 600만톤 일관제철소 합작투자계약(JVA) 체결, 2031년 준공 목표 — 글로벌 완결형 현지화 전략 가시화",
+          "en": "JVA signed with JSW Steel for a 6-million-ton integrated steel plant in Odisha, India (April 2026) targeting 2031 completion, materializing the group's localized global steel strategy"
+        },
+        {
+          "ko": "2026~2028년 중기 주주환원정책 신설 — 조정 지배지분순이익 기준 주주환원율 35~40% 목표, 자사주 매입·소각 병행",
+          "en": "New 2026–2028 shareholder return policy introduced, targeting a 35–40% payout ratio based on adjusted controlling-interest net income, with share buybacks and cancellations alongside dividends"
+        },
+        {
+          "ko": "광양 연산 250만톤 신규 전기로 2026년 6월 가동 예정 및 수소환원제철(HyREX) 부지 조성 승인 — 탈탄소 전환 인프라 본격 착수",
+          "en": "Gwangyang's new 2.5-million-ton electric arc furnace scheduled to start in June 2026, and HyREX hydrogen-reduction steelmaking site cleared for construction, advancing the decarbonization roadmap"
+        }
+      ],
+      "business": {
+        "ko": "POSCO홀딩스는 ①철강, ②이차전지소재, ③인프라 3축 포트폴리오로 구성되며, 매출 기준으로는 철강 부문이 압도적 비중을 차지한다. 핵심 자회사 포스코는 국내 조강 생산능력 기준 글로벌 3~4위권으로, 자동차강판·전기강판 등 고부가 제품 믹스 강화를 통해 수익성 방어에 집중하고 있으며, 인도네시아(크라카타우포스코), 베트남(포스코VNST), 멕시코 등 해외 법인 실적도 연결에 포함돼 분기 수익 변동성에 영향을 미친다. 이차전지소재 부문은 포스코퓨처엠(양극재·음극재), 포스코아르헨티나·포스코필바라리튬솔루션(PPLS) 등 리튬 제조·자원 법인으로 구성되며, 전체 이익 기여 비중은 아직 낮으나 2026년 흑자 전환이 가시화되는 핵심 성장 축이다. 인프라 부문의 포스코인터내셔널은 2023년 포스코에너지 합병 이후 LNG 트레이딩·세넥스 가스전 등으로 안정적인 분기 이익을 창출하며 그룹 전체의 실적 완충재 역할을 하고 있고, 포스코이앤씨는 2025년 일회성 충격에서 벗어나 2026년부터 이익 정상화에 진입 중이다. 경쟁 구도 측면에서 글로벌 철강 시장은 중국 바오우·HBIS, 일본 닛폰스틸, 유럽 아르셀로미탈 등과 대형사 간 경쟁이 치열하며, 국내에서는 현대제철과 양강 구도를 유지한다. 이차전지소재 분야에서는 에코프로비엠·엘앤에프(양극재), 음극재 분야에서는 국내외 다수 기업과 원가·품질 경쟁을 펼치는 상황이다. 그룹 전체 포트폴리오는 철강 사이클형 + 성장형 소재 + 완충형 인프라가 결합된 복합 구조로, 단일 철강사 대비 이익 변동성을 분산하는 구조적 장점을 내재한다. 2026년부터 회사가 추진하는 '완결형 현지화 전략'—인도·미국 합작 제철소—이 보호무역주의 확산에 대응하는 사업 구조 전환의 핵심으로 부상하고 있다.",
+        "en": "POSCO Holdings operates across three main pillars—steel, battery materials, and infrastructure—with the steel segment accounting for the overwhelming share of consolidated revenues. Core subsidiary POSCO, ranking among the world's top three to four steelmakers by capacity, focuses on improving margins through a richer product mix centered on automotive and electrical steel sheets; overseas subsidiaries including Krakatau POSCO (Indonesia), POSCO VNST (Vietnam), and Mexican operations are also consolidated, adding quarter-to-quarter variability. The battery materials segment encompasses POSCO Future M (cathode and anode materials) and lithium units including POSCO Argentina and POSCO-Pilbara Lithium Solutions (PPLS); while still a modest contributor to group profit, this is the primary growth engine turning profitable from 2026. The infrastructure segment's POSCO International—which absorbed POSCO Energy in 2023—derives a stable earnings base from LNG trading and the Senex gas fields in Australia, serving as the group's earnings buffer; POSCO E&C is normalizing after the 2025 one-off shock. Competitively, POSCO faces China's Baowu and HBIS, Japan's Nippon Steel, and ArcelorMittal globally, while maintaining a domestic duopoly with Hyundai Steel. In battery materials, it competes against EcoPro BM and L&F in cathode and multiple domestic and overseas players in anode materials. The diversified portfolio structure—cyclical steel, growth-stage materials, and buffer infrastructure—inherently reduces earnings volatility versus a pure-play steelmaker. From 2026, the group's 'complete localization strategy'—India and US joint-venture steelworks—is becoming the central pillar of structural adaptation to expanding global protectionism."
+      },
+      "recent": {
+        "ko": "DART 공시 확정 기준, 2025년 연간 연결 매출은 69.1조원(전기대비 -4.9%), 영업이익은 1.8조원(-15.9%), 당기순이익은 5,044억원(-46.8%)으로 실적 부진을 기록했다. 주요 원인은 포스코이앤씨의 신안산선 안전사고 관련 공사 중단·손실, 중국 장가항 공장 매각에 따른 직원 보상금 등 일시 비용, 리튬·전구체 신공장 램프업 비용이 하반기에 집중된 데 있으며, 4분기 연결 영업이익은 127억원에 그치며 연간 이익을 크게 끌어내렸다. 2026년 1분기에는 연결 기준 매출 17.9조원(+2.5% YoY), 영업이익 7,068억원(+24.3% YoY), 당기순이익 5,434억원(+57.9% YoY)을 기록하며 전 분기 대비 영업이익이 5,000% 이상 급반등하는 극적인 회복을 보였다. 세부 내용을 보면, 이차전지소재 부문 영업적자가 4분기 1,570억원에서 1분기 70억원으로 대폭 축소됐고, 포스코인터내셔널은 LNG 판매 호조로 포스코에너지 합병 이후 분기 최대 영업이익 3,575억원을 달성했다. 포스코이앤씨는 2025년 발생한 일회성 비용이 소멸되며 530억원 영업이익으로 흑자 전환에 성공했고, 해외 철강 법인도 4분기 1,110억원 적자에서 1분기 870억원 흑자로 반전했다. 다만 국내 포스코 철강 본체의 영업이익은 이란 사태로 촉발된 환율 상승에 따른 원료비 부담으로 전년 동기 대비 약 23.8% 감소해 연결 이익 회복에 제약을 가하는 요인으로 작용했다. 2026년 1분기 실적은 시장 컨센서스(약 5,950억원)를 약 20% 상회하는 어닝 서프라이즈로 평가되어, 이후 복수의 국내 증권사가 목표주가를 56만원에서 최고 74만원까지 상향 조정하며 재평가 움직임이 나타나고 있다.",
+        "en": "Per the finalized DART disclosure, FY2025 consolidated revenue was KRW 69.1tn (-4.9% YoY), operating profit KRW 1.8tn (-15.9%), and net income KRW 504.4bn (-46.8%), representing a difficult year driven by multiple one-off charges: POSCO E&C construction suspension and provisioning related to the Sinanseon safety incident, severance-related costs from the China Zhangjiagang plant divestiture, and lithium factory ramp-up expenses concentrated in H2. Q4 2025 operating profit collapsed to just KRW 12.7bn, severely depressing the full-year outcome. The Q1 2026 turnaround was dramatic: consolidated revenue reached KRW 17.9tn (+2.5% YoY), operating profit KRW 706.8bn (+24.3% YoY), and net income KRW 543.4bn (+57.9% YoY), with sequential operating profit surging over 5,000% from the depressed Q4 base. Battery materials operating loss shrank from KRW 157bn in Q4 2025 to KRW 7bn in Q1 2026; POSCO International posted a record quarterly operating profit of KRW 357.5bn since the POSCO Energy merger; POSCO E&C swung to KRW 53bn operating profit as prior-year exceptional costs dissipated; and overseas steel operations reversed from a KRW 111bn loss in Q4 2025 to KRW 87bn profit in Q1 2026. The domestic POSCO steel entity's operating profit declined approximately 23.8% year-over-year, weighed by higher raw material costs driven by Iran-related exchange rate depreciation. The Q1 2026 result constituted a roughly 20% beat versus the market consensus of approximately KRW 595bn, prompting a wave of analyst target price upgrades to a range of KRW 560,000–740,000."
+      },
+      "outlook": {
+        "ko": "2026년 하반기에는 철강과 리튬 사업이 동시에 개선 국면에 진입할 것으로 회사 측은 전망하고 있다. 철강 부문에서는 중국·일본산 열연강판 반덤핑 관세 효과로 저가 수입재 재고가 점차 소화되며 내수 가격 협상력이 회복되는 흐름이 나타나고 있고, 2026년 6월 가동 예정인 광양 연산 250만톤 전기로가 탈탄소 전환과 제품 포트폴리오 다변화에 기여할 것으로 기대된다. 리튬 사업에서는 포스코아르헨티나가 2분기 첫 분기 흑자 달성이 예상되며, 10월에는 2단계 공장(연산 2만5,000톤) 준공이 예정되어 연간 리튬 판매량 5만5,000~6만톤 목표 달성 가시성이 높아졌다. 최근 보도에 따르면 2026년 4월 기준 리튬 가격은 kg당 약 20.9달러로 전년 평균 대비 약 118% 상승한 상태이며, 포스코아르헨티나의 가동률은 현재 약 75% 수준에서 추가 상승 여력이 존재한다. 증권업계는 리튬 사업 회복과 일회성 비용 기저효과를 반영해 2026년 연간 영업이익이 2025년 대비 약 70% 이상 증가할 것으로 전망하고 있다. 중장기 성장 전략 측면에서는 인도 JSW스틸 합작(600만톤, 2031년 준공) 외에 미국 루이지애나 전기로 합작 투자도 가시화되어, 글로벌 보호무역주의 환경에서 '현지 생산-현지 판매' 구조로의 전환이 본격화될 전망이다. 다만 인도 합작법인의 총투자비가 약 10.75조원(포스코 부담분 약 5.4조원)에 달하고 HyREX 전환 중장기 CAPEX도 40조원 이상으로 추산되어, 자금 조달 계획과 재무 레버리지 변화가 중요한 모니터링 변수로 남아 있다.",
+        "en": "POSCO Holdings expects both steel and lithium segments to enter simultaneous improvement from H2 2026. In steel, anti-dumping duty effects on Chinese and Japanese hot-rolled coil are progressively clearing low-priced import inventories and restoring domestic pricing power; the Gwangyang electric arc furnace (2.5 million ton annual capacity, June 2026 start) is expected to advance decarbonization and diversify the product portfolio. In lithium, POSCO Argentina is on track for its first quarterly profit in Q2 2026, and the Phase 2 facility (25,000 tons/year) scheduled for October 2026 enhances visibility toward the 55,000–60,000-ton annual lithium sales target. Recent reports indicate lithium prices reached approximately USD 20.9/kg in late April 2026, up roughly 118% from the prior-year average, with POSCO Argentina's utilization rate at approximately 75% and scope for further improvement. The sell-side consensus anticipates full-year 2026 operating profit growth of over 70% versus 2025, reflecting the lithium recovery and one-off cost base effects. On the longer-term horizon, the India JSW JV (6 million tons, 2031 target) and the US Louisiana electric arc furnace investment are the twin pillars of a 'produce locally, sell locally' strategy against rising protectionism. However, the India JV's total investment of approximately KRW 10.75tn (POSCO share ~KRW 5.4tn) and the HyREX hydrogen-steelmaking transition exceeding KRW 40tn in long-term CAPEX make capital allocation and balance sheet management a critical monitoring variable."
+      },
+      "bull": [
+        {
+          "title": {
+            "ko": "리튬 사업의 구조적 흑자 전환 가시화",
+            "en": "Lithium Business Approaching Structural Profitability"
+          },
+          "body": {
+            "ko": "포스코아르헨티나가 2026년 3월 월 단위 최초 흑자를 기록했으며, 2분기 첫 분기 흑자 전환이 공식 전망됐다. 이차전지소재 부문 영업적자는 4분기 1,570억원에서 1분기 70억원으로 급감하며 그룹 전체 실적 회복의 핵심 기여 요인으로 부상했다. 10월 예정된 2단계 공장(연산 2만5,000톤) 준공 이후 판매 규모 추가 확대가 기대되며, 리튬 가격도 전년 평균 대비 약 118% 상승(2026년 4월 기준)해 생산 단가 하락과 판가 상승의 동시 효과가 이익 개선을 지지한다.",
+            "en": "POSCO Argentina recorded its first-ever monthly profit in March 2026, with a first quarterly profit formally projected for Q2. The battery materials segment's operating loss shrank from KRW 157bn in Q4 2025 to KRW 7bn in Q1 2026, emerging as a key driver of group-level earnings recovery. The Phase 2 plant (25,000 ton/year) scheduled for October 2026 completion is expected to further expand sales volumes, while lithium prices—up roughly 118% year-over-year as of April 2026—support simultaneous margin improvement from both falling unit costs and rising realized prices."
+          }
+        },
+        {
+          "title": {
+            "ko": "일회성 비용 해소에 따른 강력한 기저 효과",
+            "en": "Powerful Base-Effect Tailwind as One-Off Charges Dissipate"
+          },
+          "body": {
+            "ko": "2025년 실적을 압박했던 포스코이앤씨 신안산선 사고 관련 비용 및 충당금(연간 약 4,270억원 손실)은 2026년에는 반복되지 않는 구조로, 포스코이앤씨는 2026년 1분기 530억원 영업이익으로 흑자 전환에 성공하고 연간 1,200억원 목표를 제시했다. 중국 장가항 공장은 2025년 12월 기업결합 승인 완료 후 2026년 1분기 내 최종 매각이 마무리되어, 2025년에 발생했던 약 2,000억원 규모의 관련 손실이 2026년에는 재발하지 않는다. 이 두 가지 일회성 비용의 해소만으로도 연간 이익의 대폭 증익이 구조적으로 가능한 환경이 조성됐다.",
+            "en": "POSCO E&C accident-related charges and provisioning (approximately KRW 427bn in annual losses for 2025) will not recur in 2026: POSCO E&C swung to KRW 53bn operating profit in Q1 2026 and targets KRW 120bn for the full year. The Zhangjiagang plant sale was finalized in Q1 2026 after Chinese regulatory clearance in December 2025, eliminating the approximately KRW 200bn disposal-related losses from the 2026 earnings base. The dissipation of just these two one-off items creates a structural platform for substantial year-over-year operating profit improvement in 2026."
+          }
+        },
+        {
+          "title": {
+            "ko": "인도·미국 생산기지 확보로 보호무역 리스크 구조적 헤지",
+            "en": "India and US Capacity Footprint Providing Structural Protectionism Hedge"
+          },
+          "body": {
+            "ko": "2026년 4월 포스코는 인도 JSW스틸과 오디샤주 조강 600만톤 일관제철소 합작투자계약을 체결했으며, 인도 철강 수요는 현재 약 1억5,000만톤에서 2035년 2억5,000만톤 이상으로 성장이 예상되는 고성장 시장이다. 미국에서도 현대제철과의 루이지애나 전기로 합작 투자(20% 지분 참여)를 통해 미국 수입 장벽 내에서 현지 생산 체제를 구축하는 '완결형 현지화 전략'을 실행 중이다. 이 두 거점이 완성되면 POSCO그룹은 한국·인도·미국의 3각 생산 네트워크를 갖추게 되어 글로벌 보호무역주의 확산에 따른 수출 채산성 악화 리스크를 구조적으로 분산하는 효과를 기대할 수 있다.",
+            "en": "In April 2026, POSCO signed a JVA with JSW Steel for a 6-million-ton integrated steel plant in Odisha, India, a high-growth market where steel demand is projected to grow from approximately 150 million tons currently to over 250 million tons by 2035. In North America, POSCO is participating in a Louisiana electric arc furnace JV with Hyundai Steel (20% stake), establishing local production inside US tariff walls as part of its 'complete localization strategy.' Once both facilities come on stream, POSCO Group will operate a Korea–India–US triangular production network, structurally diversifying the risk of export margin erosion from escalating global protectionism."
+          }
+        }
+      ],
+      "bear": [
+        {
+          "title": {
+            "ko": "중동 지정학 리스크에 따른 원료비·원가 압박 지속",
+            "en": "Persistent Raw Material Cost Pressure from Middle East Geopolitical Risk"
+          },
+          "body": {
+            "ko": "미국-이란 전쟁 관련 에너지 공급망 불확실성으로 2026년 1분기 환율 상승, 유가 상승, LNG 가격 상승이 동시에 발생하며 포스코 철강 본체의 원료비와 운송비 부담이 확대됐다. 국내 포스코 철강 본체의 1분기 영업이익은 전년 동기 대비 약 23.8% 감소해 연결 전체 이익 회복에 제약 요인으로 작용하고 있으며, 회사 측은 중동 리스크가 완화될 경우 원가 반영 시차를 고려해 하반기부터 점진적 개선을 예상하고 있다. 지정학적 불확실성이 예상보다 장기화될 경우 원가 정상화 시점이 지연되며 2026년 연간 이익 개선 폭이 예상을 하회할 위험이 내재한다.",
+            "en": "Energy supply chain uncertainty related to the US–Iran conflict drove simultaneous rises in exchange rates, crude oil prices, and LNG prices in Q1 2026, materially widening raw material and freight cost burdens for POSCO's domestic steel operations. The domestic POSCO entity's operating profit declined approximately 23.8% year-over-year in Q1 2026, constraining group-level earnings recovery; management expects gradual H2 improvement once geopolitical risks ease and cost pass-through lags normalize. A prolonged conflict scenario could delay this timeline, resulting in a 2026 full-year earnings improvement that falls short of current consensus expectations."
+          }
+        },
+        {
+          "title": {
+            "ko": "인도·미국 합작 투자 및 HyREX CAPEX에 따른 재무 부담 가중",
+            "en": "Massive JV and HyREX CAPEX Pipeline Elevating Balance Sheet Risk"
+          },
+          "body": {
+            "ko": "인도 JSW 합작 제철소(총 투자비 약 10.75조원, 포스코 부담분 약 5.4조원), 미국 루이지애나 전기로 지분 투자(약 8,586억원), 수소환원제철(HyREX) 전환을 위한 중장기 CAPEX(40조원 이상)가 동시에 예정되어 있어 보유 현금 대비 투자 규모가 압도적으로 크다. 자금 조달을 위해 비핵심 자산 매각 및 외부 차입에 의존하는 구조가 불가피하며, 이 과정에서 재무 레버리지 상승과 이자 비용 증가 리스크가 존재한다. FCF(잉여현금흐름)가 중장기적으로 제약될 경우 35~40%를 목표로 하는 주주환원율의 지속 가능성에도 불확실성이 내재한다.",
+            "en": "The combined CAPEX pipeline—India JSW JV (~KRW 10.75tn total, POSCO share ~KRW 5.4tn), US Louisiana EAF (~KRW 859bn), and the HyREX hydrogen steelmaking transition (KRW 40tn+)—dramatically exceeds available cash on hand. Funding will unavoidably rely on non-core asset disposals and external borrowing, raising the risk of higher financial leverage and increased interest burden. If free cash flow remains constrained over the medium term, the sustainability of the 35–40% shareholder return target introduces material uncertainty."
+          }
+        },
+        {
+          "title": {
+            "ko": "글로벌 철강 수요 부진과 중국 공급 과잉 구조",
+            "en": "Sluggish Global Steel Demand and Structural Chinese Overcapacity"
+          },
+          "body": {
+            "ko": "글로벌 철강 시황은 중국의 구조적 공급 과잉과 부동산 경기 침체에 따른 내수 수요 약화로 여전히 불확실한 환경이 지속되고 있으며, 국내 시장에서도 반덤핑 관세 이전 대량 유입된 저가 수입재 재고가 완전히 소화되지 않은 상황에서 자동차·건설 수요 회복이 더디다. EU의 무관세 쿼터 축소 및 관세 인상 등 수출 시장의 보호무역 장벽도 수출 수익성에 부정적 요인으로 작용 중이며, 철강 스프레드(판가-원가) 회복 속도가 당초 기대보다 완만해질 수 있다. 중국 철강 감산 정책의 실효성 여부와 부동산 경기 회복 속도가 글로벌 스프레드 환경을 좌우하는 핵심 변수로 남아 있다.",
+            "en": "The global steel market continues to face headwinds from structural Chinese overcapacity and weakened domestic demand stemming from China's property sector downturn; in Korea, inventories of low-priced imports accumulated ahead of anti-dumping duty impositions have not fully cleared, while automotive and construction demand recovery has been slow. Protectionist barriers in export markets—including EU quota reductions and tariff increases—also weigh on export profitability, and the pace of steel spread (price minus cost) recovery may prove more gradual than currently assumed. The effectiveness of China's steel output reduction policies and the speed of its property sector recovery remain the key swing variables for the global spread environment."
+          }
+        }
+      ],
+      "risks": [
+        {
+          "cat": {
+            "ko": "지정학·에너지 가격 리스크",
+            "en": "Geopolitical & Energy Price Risk"
+          },
+          "body": {
+            "ko": "미국-이란 분쟁을 비롯한 중동 지역 긴장 고조는 에너지 가격과 환율 변동성을 증폭시켜 철강 원료비와 운송비를 직접 압박한다. 에너지 가격의 장기화된 상승은 전기로 가동 비용 및 전반적인 제조 OPEX를 통해 마진을 추가로 압축할 수 있다. 또한 지정학적 리스크가 인도 오디샤주 제철소 프로젝트의 공급망이나 인허가 환경에 간접적으로 영향을 미칠 가능성도 배제할 수 없다.",
+            "en": "Escalating tensions in the Middle East, including the US–Iran conflict, amplify energy price and currency volatility, directly pressuring raw material and freight costs for steel operations. Prolonged elevated energy prices would further compress margins through electric arc furnace operating costs and broader manufacturing OPEX. Additionally, geopolitical risks could indirectly affect supply chains or regulatory environments for the India Odisha steel project."
+          }
+        },
+        {
+          "cat": {
+            "ko": "리튬 가격 변동성 및 생산 램프업 리스크",
+            "en": "Lithium Price Volatility & Production Ramp-Up Risk"
+          },
+          "body": {
+            "ko": "리튬 사업의 수익성은 최근 가격 반등에 힘입어 개선 추세이지만, 리튬 가격은 과거 수년간 급등락을 반복해온 변동성이 높은 원자재다. 포스코아르헨티나의 가동률이 현재 약 75% 수준이며, 생산 공정 안정화와 고객사 품질 인증 완료가 판매 확대의 선결 조건으로 남아 있다. 광석 리튬(PPLS) 사업에서는 핵심 원재료인 스포듀민 가격이 수산화리튬 대비 더 가파르게 상승하며 원가 비중이 85%까지 확대되는 구조적 마진 압박도 주목해야 할 변수다.",
+            "en": "Although lithium prices have rebounded sharply, the commodity has a history of extreme cyclical swings, and a price reversal would disproportionately affect profitability given fixed production costs. POSCO Argentina's utilization rate stands at approximately 75%, and full-scale profitability depends on process stabilization and customer qualification milestones. In the spodumene-based lithium business (PPLS), structural margin pressure warrants attention as spodumene prices have risen faster than lithium hydroxide prices, pushing raw material cost intensity toward 85% of revenue."
+          }
+        },
+        {
+          "cat": {
+            "ko": "재무 레버리지 및 자본 배분 리스크",
+            "en": "Financial Leverage & Capital Allocation Risk"
+          },
+          "body": {
+            "ko": "인도·미국 합작 제철소 투자와 HyREX 탈탄소 전환 CAPEX를 병행하는 경우 향후 수년간 FCF가 투자 규모를 크게 하회할 가능성이 있다. 대규모 자금 조달을 위한 비핵심 자산 매각 또는 외부 차입 의존도 확대는 금리 환경 변화에 따른 이자 부담 증가 및 신용등급 하방 압력으로 연결될 수 있다. 미래 투자·주주환원·탈탄소 전환이라는 세 가지 재원 수요가 동시에 경합하는 구조에서 자본 배분의 우선순위 결정이 향후 기업가치 평가의 핵심 변수로 부상할 전망이다.",
+            "en": "Simultaneously executing the India and US JV steel investments alongside the HyREX decarbonization CAPEX could result in free cash flow significantly lagging total investment requirements for several years. Greater reliance on external funding or non-core asset disposals heightens sensitivity to interest rate movements and could exert downward pressure on credit metrics. With future growth investment, shareholder returns, and decarbonization transition all competing for capital simultaneously, capital allocation prioritization is set to become a central variable in the equity valuation debate."
+          }
+        }
+      ],
+      "verdict": {
+        "stance": {
+          "ko": "긍정적",
+          "en": "Constructive"
+        },
+        "body": {
+          "ko": "POSCO홀딩스는 2025년 누적된 일회성 비용과 이차전지소재 사업 적자 압박으로부터 벗어나, 2026년부터 뚜렷한 실적 회복 궤도에 진입하고 있다. 2026년 1분기의 시장 기대치 20% 상회, 리튬 사업 적자의 급격한 축소, 포스코이앤씨 흑자 전환, 포스코인터내셔널 분기 최대 이익이 동시에 실현된 점은 그룹 포트폴리오 분산 효과와 구조 개선이 현실화되고 있음을 방증한다. 하반기에는 철강 스프레드 점진적 개선과 아르헨티나 리튬의 분기 연속 흑자가 확인될 경우 실질적인 실적 모멘텀이 형성될 수 있다. 다만 중동 지정학 리스크에 따른 원가 압박, 글로벌 철강 수요 회복 속도 불확실성, 인도·미국 합작 및 HyREX CAPEX에 따른 재무 부담은 반드시 병행 모니터링해야 할 변수다. 현 주가(399,000원, 시가총액 32.3조원) 기준으로 복수 증권사가 목표주가를 56만~74만원 수준으로 상향한 상태이나, 실질적인 주가 리레이팅은 리튬 사업의 분기 연속 흑자 확인과 철강 스프레드의 가시적 개선 속도에 달려 있다. 장기적으로는 인도 고성장 철강 시장 진출과 리튬 자원 밸류체인 완성이 수익 구조 전환의 실질적 모멘텀이 될 것으로 판단된다.",
+          "en": "POSCO Holdings is emerging from the one-off cost burden and battery materials losses that defined 2025 and is entering a clear earnings recovery trajectory in 2026. The Q1 2026 operating profit beat of approximately 20% versus consensus, the sharp lithium loss reduction, the POSCO E&C turnaround, and POSCO International's record quarterly result collectively signal that the group's diversified portfolio is delivering meaningful earnings-buffer structure. In H2, confirmation of sequential quarterly lithium profitability and gradual steel spread improvement would reinforce earnings momentum. Key monitoring variables include the duration of Middle East-driven cost pressures, the pace of global steel demand recovery, and the capital allocation challenge of funding the India/US JV commitments alongside the HyREX transition. At the current price of KRW 399,000 (market cap KRW 32.3tn), with multiple sell-side houses having raised targets to KRW 560,000–740,000, a durable re-rating ultimately hinges on sequential confirmation of lithium profitability and the visible pace of steel spread normalization. Longer term, access to India's high-growth steel market and completion of the lithium value chain should serve as the genuine structural catalysts for earnings mix transformation."
+        }
+      },
+      "sources": [
+        "https://newsroom.posco.com/kr/%ED%8F%AC%EC%8A%A4%EC%BD%94%ED%99%80%EB%94%A9%EC%8A%A4-2026%EB%85%84-1%EB%B6%84%EA%B8%B0-%EC%8B%A4%EC%A0%81-%EB%B0%8F-3%EA%B0%9C%EB%85%84-%EC%A4%91%EA%B8%B0-%EC%A3%BC%EC%A3%BC%ED%99%98%EC%9B%90/",
+        "https://newsroom.posco.com/kr/%ED%8F%AC%EC%8A%A4%EC%BD%94-%EC%9D%B8%EB%8F%84-%EC%9D%BC%EA%B4%80%EC%A0%9C%EC%B2%A0%EC%86%8C-%ED%95%A9%EC%9E%91%ED%88%AC%EC%9E%90-%EA%B1%B4%EC%84%A4-%ED%95%B4%EC%99%B8-%EC%A0%9C%EC%B2%A0%EC%86%8C/",
+        "https://www.dkilbo.com/news/articleView.html?idxno=543298",
+        "https://www.thecommoditiesnews.com/news/articleView.html?idxno=11079",
+        "https://zdnet.co.kr/view/?no=20260430163315",
+        "https://www.s-journal.co.kr/news/articleView.html?idxno=41088",
+        "https://www.g-enews.com/article/General-News/2026/05/202605051320568770c5557f8da8_1",
+        "https://v.daum.net/v/20260507101504812",
+        "https://www.finance-scope.com/article/view/scp202602050019",
+        "https://www.fnnews.com/news/202604201616043175",
+        "https://www.topdaily.kr/articles/109769",
+        "https://news.nate.com/view/20260116n05566"
+      ],
+      "ticker": "005490",
+      "name": "POSCO홀딩스",
+      "name_en": "POSCO Holdings Inc.",
+      "sector": "철강·금속",
+      "categories": [
+        "철강·금속"
+      ],
+      "market": "코스피",
+      "reportDate": "2026-06-04",
+      "dataDate": "20260602"
+    },
+    "086790": {
+      "title": {
+        "ko": "사상 최대 이익·주주환원 50%, '환원하는 금융주'로 재정의",
+        "en": "All-Time Earnings High and 50% Return Target: Redefining Hana as a Capital-Returner"
+      },
+      "lead": {
+        "ko": "하나금융지주는 DART 공시 기준 2025년 역대 최대 연간 순이익(4.0조원)과 2026년 1분기 분기 기준 최대 실적을 연속 달성하며, 배당 확대·자사주 소각을 통한 주주환원율 50% 조기 달성을 현실화하고 있다.",
+        "en": "Hana Financial Group has posted back-to-back record profits—KRW 4.0 trillion in FY2025 and a new quarterly high in 1Q26—while rapidly materializing its commitment to 50%+ total shareholder return through rising dividends and accelerated buyback-and-cancellation programs."
+      },
+      "desc": {
+        "ko": "하나금융지주(086790)는 KB금융·신한금융과 함께 국내 3대 금융지주 중 하나로, 하나은행을 핵심으로 하나증권·하나카드·하나캐피탈·하나생명·하나자산신탁을 아우르는 종합 금융그룹이다. DART 확정 공시 기준 2025년 연결 영업이익 5.4조원(전기대비 +10.2%), 당기순이익 4.0조원(+7.1%)으로 창사 이래 최대 연간 실적을 기록한 데 이어, 2026년 1분기에도 영업이익 1.7조원(+11.1%)·당기순이익 1.2조원(+8.1%)으로 분기 최대치를 재경신했다. 주주환원율을 2024년 38%에서 2025년 47%로 대폭 높이며 50% 조기 달성 목표를 공표한 상황이어서, '사는 금융주'에서 '환원하는 금융주'로의 재평가 논의가 진행 중이다.",
+        "en": "Hana Financial Group (086790) is one of Korea's three major financial holding companies alongside KB Financial and Shinhan Financial, operating a diversified conglomerate centered on Hana Bank and spanning securities (Hana Securities), card (Hana Card), consumer finance (Hana Capital), life insurance (Hana Life), and asset trust (Hana Asset Trust). Per DART filings, consolidated operating profit reached KRW 5.4 trillion (+10.2% YoY) and net income KRW 4.0 trillion (+7.1% YoY) in FY2025, both group-record highs, with the momentum extending into 1Q26 with operating profit of KRW 1.7 trillion (+11.1%) and net income of KRW 1.2 trillion (+8.1%), setting a new quarterly record. Having raised its shareholder return rate from 38% in 2024 to 47% in 2025 and announcing an early attainment of the 50%+ target, the group is undergoing a re-rating debate as a structured capital-return vehicle in the Korean financial sector."
+      },
+      "keypoints": [
+        {
+          "ko": "DART 확정 기준 2025년 연간 당기순이익 4.0조원(+7.1%, 역대 최고), 2026년 1분기 영업이익 1.7조원(+11.1%)·당기순이익 1.2조원(+8.1%)으로 이익 성장세 3년 연속 지속",
+          "en": "DART-confirmed FY2025 net income of KRW 4.0 trillion (+7.1%, all-time high); 1Q26 operating profit KRW 1.7 trillion (+11.1%) and net income KRW 1.2 trillion (+8.1%) extend three consecutive years of earnings growth"
+        },
+        {
+          "ko": "최근 보도 기준 2026년 1분기 핵심이익(이자+수수료) 3.17조원(+13.6%), 그룹 NIM 1.82%, ROE 10.91%, 대손비용률 0.21%(-0.08%p)로 수익성·건전성 지표 동반 개선",
+          "en": "Per recent disclosures, 1Q26 core income (interest + fees) rose 13.6% to KRW 3.17 trillion; group NIM at 1.82%, ROE at 10.91%, and credit cost ratio improved to 0.21% (-0.08pp YoY), reflecting simultaneous profitability and asset quality gains"
+        },
+        {
+          "ko": "주주환원율 2024년 38% → 2025년 47%로 급상승, 2026년 50% 조기 달성 목표: 분기 균등배당(1Q26 DPS 1,145원, +11.6%), 연 4,000억원 자사주 매입·소각, 배당소득 분리과세 혜택 삼박자",
+          "en": "Shareholder return rate leapt from 38% in 2024 to 47% in 2025, with an early 50%+ target in 2026 underpinned by quarterly dividends (1Q26 DPS KRW 1,145, +11.6%), KRW 400 billion annual buyback-cancellation, and dividend income tax separation benefits"
+        },
+        {
+          "ko": "최근 보도에 따르면 하나증권 2026년 1분기 순이익 1,033억원(+37.1%)으로 비은행 회복 가시화, 하나카드 575억원·하나캐피탈 535억원으로 비은행 포트폴리오 전반 안정화",
+          "en": "Non-bank recovery visible: Hana Securities posted 1Q26 net income of KRW 103.3 billion (+37.1%), while Hana Card earned KRW 57.5 billion and Hana Capital KRW 53.5 billion, signaling broad-based non-bank stabilization"
+        },
+        {
+          "ko": "2026년 조직개편으로 '지속성장부문'(글로벌·WM·자본시장) 및 '투자/생산적금융부문' 신설, 전 세계 27개 지역 199개 네트워크를 통한 글로벌 이익 비중 확대 추진",
+          "en": "2026 restructuring created a 'Sustainable Growth Division' (Global, WM, Capital Markets) and 'Investment/Productive Finance Division,' supporting a global earnings diversification strategy across 199 offices in 27 countries"
+        }
+      ],
+      "business": {
+        "ko": "하나금융지주는 하나은행을 핵심 수익원으로 하는 종합 금융그룹으로, 그룹 이익의 압도적 비중을 은행 부문이 담당한다. 최근 보도에 따르면 2026년 1분기 하나은행 순이익은 1조1,042억원(+11.2%)으로 그룹 전체 연결 순이익의 약 90%를 점유하며 리딩뱅크 지위를 두고 KB금융·신한금융과 치열한 1~3위 경쟁을 이어가고 있다. 비은행 부문은 하나증권(WM·IB·S&T 중심)·하나카드·하나캐피탈·하나생명·하나자산신탁으로 구성되며, 증권 부문이 2026년 1분기 37.1%의 이익 급증으로 회복세를 가시화했다. 디지털 플랫폼 측면에서 하나원큐 가입자는 2025년 3분기 누적 1,730만명, 하나페이는 1,000만명을 돌파하며 비대면 고객 기반이 빠르게 확대되고 있다. 글로벌 사업은 공식 홈페이지 기준 전 세계 27개 지역 199개 네트워크를 보유해 국내 은행 최대 수준이며, 동남아·중동 등 신흥 시장 현지화를 통한 글로벌 이익 비중 확대가 중장기 핵심 전략이다. 퇴직연금 적립금이 은행권 최대 수준으로 성장하고 있으며, 외환·자산관리 수수료 강화와 함께 이자이익 의존도를 낮추는 비이자이익 다각화 전략을 지속 추진하고 있다. 2026년 조직개편에서는 '지속성장부문' 산하에 글로벌본부·WM본부·자본시장본부를 편제하고, '투자/생산적금융부문'을 신설해 투자금융본부와 기업금융본부를 분리·확대함으로써 비은행·글로벌 성장 축 강화에 속도를 내고 있다. 아울러 생산적 금융 84조원·포용금융 16조원 등 총 100조원 규모의 '하나 모두 성장 프로젝트'에 참여하며 기업대출 포트폴리오 확대와 사회적 금융 역할 수행을 병행하고 있다.",
+        "en": "Hana Financial Group is a comprehensive financial conglomerate with Hana Bank serving as the core earnings engine, with the bank dominating group profitability by a wide margin. According to recent disclosures, Hana Bank generated KRW 1.10 trillion in 1Q26 net income (+11.2%), representing roughly 90% of consolidated group earnings, and the bank continues a fierce one-to-three position rivalry with KB Financial and Shinhan Financial. The non-bank segment comprises Hana Securities (WM, IB, and S&T focus), Hana Card, Hana Capital, Hana Life, and Hana Asset Trust, with Hana Securities leading recovery in 1Q26 on a 37.1% earnings surge. On digital platforms, Hana OneQ had 17.3 million cumulative users as of 3Q25 and Hana Pay crossed 10 million, substantially expanding the non-face-to-face customer base. Globally, the group operates 199 offices across 27 regions per official disclosures—the largest footprint among Korean banks—with Southeast Asian and Middle Eastern market localization central to its long-term global income diversification strategy. Retirement pension fund growth at top-tier levels and strengthening FX/asset management fees form the structural pillars of the group's non-interest income diversification push, reducing reliance on net interest income. The 2026 reorganization established a 'Sustainable Growth Division' (Global, WM, Capital Markets HQs) and a new 'Investment/Productive Finance Division' (Investment Finance and Corporate Finance HQs), accelerating the buildout of non-bank and cross-border earnings drivers. The group is also participating in the government-backed 'Hana All Growth Project,' committing KRW 100 trillion across productive finance (KRW 84 trillion) and inclusive finance (KRW 16 trillion), simultaneously expanding corporate lending portfolios and fulfilling a public interest financial role."
+      },
+      "recent": {
+        "ko": "DART 공시 확정 기준 하나금융지주의 2025년 연간 연결 영업이익은 5.4조원(전기대비 +10.2%), 당기순이익은 4.0조원(+7.1%)으로 창사 이래 사상 최대 연간 실적을 기록했으며, 이자이익이 4.6% 증가하는 등 순영업수익이 6.5% 성장한 가운데 충당금 비용 증가가 2.8%에 그쳐 이익의 양과 질이 동반 개선됐다. 2026년 1분기에도 DART 기준 영업이익 1.7조원(+11.1%), 당기순이익 1.2조원(+8.1%)으로 2015년 하나·외환은행 공식 통합 이후 분기 최대 실적을 경신했다. 최근 보도에 따르면 1분기 핵심이익(이자이익 2.50조원+수수료이익 6,678억원)이 3.17조원으로 전년 동기 대비 13.6% 증가했고, 그룹 NIM은 1.82%, 은행 NIM은 1.58%로 집계됐다. ROE 10.91%, ROA 0.73%, 대손비용률 0.21%(-0.08%p)는 수익성과 건전성이 경영목표 내에서 안정적으로 관리되고 있음을 보여준다. 최근 보도에 따르면 하나은행(1조1,042억원, +11.2%)·하나증권(1,033억원, +37.1%)·하나카드(575억원)·하나캐피탈(535억원)이 고루 선전하며 비은행 부문의 회복세가 구체화됐다. 주주환원 측면에서 2025년 연간 주당배당금은 4,105원(+14%)에 달했으며, 2025년 자사주 매입 총액 0.75조원을 포함한 그룹 출범 이후 역대 최대 규모의 1.8조원 주주환원이 이루어졌다. 2026년 1분기에는 분기 배당 1,145원(+11.6%)과 함께 2,000억원 자사주 매입·소각을 결의하며 주주환원 이행 의지를 재확인했다. 2026년 6월 4일 기준 주가는 117,000원(전일대비 +2.72%), 시가총액 32.6조원이며, 최근 보도에 따르면 정부의 포용·생산적 금융 정책 부담 우려로 금융주가 연초 고점 이후 조정을 받고 있다는 분석이 제기되고 있다.",
+        "en": "Per DART-confirmed filings, Hana Financial's FY2025 consolidated operating profit reached KRW 5.4 trillion (+10.2% YoY) and net income KRW 4.0 trillion (+7.1% YoY), both all-time records; earnings quality improved concurrently as credit cost growth of 2.8% significantly lagged net revenue growth of 6.5%, with interest income alone rising 4.6%. Extending this momentum, 1Q26 DART-confirmed operating profit reached KRW 1.7 trillion (+11.1%) and net income KRW 1.2 trillion (+8.1%), setting a new quarterly record since the 2015 Hana-KEB merger. Recent disclosures indicate that 1Q26 core income (interest income KRW 2.50 trillion + fee income KRW 667.8 billion) rose 13.6% YoY to KRW 3.17 trillion, with group NIM at 1.82% and bank NIM at 1.58%. ROE of 10.91%, ROA of 0.73%, and a credit cost ratio of 0.21% (-0.08pp YoY) confirm that profitability and asset quality are both tracking within management targets. Subsidiary breadth was notable: Hana Bank earned KRW 1.10 trillion (+11.2%), Hana Securities KRW 103.3 billion (+37.1%), Hana Card KRW 57.5 billion, and Hana Capital KRW 53.5 billion, confirming broad-based non-bank recovery per recent reports. On capital returns, the FY2025 annual DPS of KRW 4,105 (+14%) and a record KRW 1.8 trillion in total returns including KRW 750 billion in buybacks elevated the shareholder return rate to 47%. In 1Q26, the group further declared a quarterly DPS of KRW 1,145 (+11.6%) and KRW 200 billion in buyback-cancellation, reaffirming return commitment. As of June 4, 2026, the stock trades at KRW 117,000 (+2.72% vs. prior close) with a market cap of KRW 32.6 trillion; recent reports suggest Korean financial holding stocks have been under pressure since early-2026 peaks amid concerns over government-mandated inclusive and productive finance policies."
+      },
+      "outlook": {
+        "ko": "2026년 하나금융지주의 핵심 과제는 주주환원율 50% 조기 달성과 비은행 수익성 회복의 가시화다. 수익성 측면에서는 최근 보도에 따르면 한국은행의 연내 기준금리 인상 가능성이 부각되며 그룹 NIM 개선 기대가 높아지고 있으나, 금리 인상에 따른 기업대출 부실화 가능성과 대손충당금 증가 리스크를 동시에 고려해야 한다. 비이자이익 다각화 측면에서는 최근 보도에 따르면 2026년 국내 은행권 대출 성장률이 3%대 후반으로 둔화 전망이어서, 하나증권 WM·IB 부문 성장세와 퇴직연금 적립금 확대가 비이자이익 증가의 핵심 동력이 될 전망이다. 정부의 '하나 모두 성장 프로젝트'(총 100조원 규모)는 단기적 비용 요인이지만, 기업대출 포트폴리오 확대 및 생산적 금융 분야 익스포저 강화를 통한 중장기 프랜차이즈 가치 제고 가능성도 내포한다. 2026년 상반기 4,000억원 자사주 매입·소각 프로그램 이행과 배당소득 분리과세 혜택 확대(향후 4분기 배당부터 비과세 적용)는 세후 주주환원율을 추가 제고하는 구조적 요인이다. 중기적으로 글로벌 27개국 199개 네트워크를 활용한 해외 이익 기여도 확대와 비은행 부문 턴어라운드 속도가 기업가치 재평가의 핵심 촉매가 될 것으로 판단된다.",
+        "en": "Hana Financial's two defining 2026 priorities are the early achievement of a 50%+ total shareholder return rate and visible progress in non-bank profitability recovery. On the revenue side, growing market expectations for Bank of Korea rate hikes within the year are improving NIM outlook, but the same tightening cycle raises corporate loan impairment risk and provisioning requirements that could partially offset margin gains. On non-interest income, recent industry research projects domestic bank loan growth decelerating to the high-3% range in 2026, reinforcing the importance of Hana Securities' WM/IB expansion and retirement pension fund growth as fee income drivers. The KRW 100 trillion 'Hana All Growth Project' represents a near-term cost commitment, but also positions the group for long-term franchise value through expanded corporate lending and productive sector exposure. The ongoing execution of the KRW 400 billion annual buyback-cancellation program and the imminent introduction of tax-exempt dividend treatment from the Q4 distribution onward structurally elevate the after-tax effective return rate. Over the medium term, monetizing the group's 199-office global network and demonstrating a durable non-bank earnings turnaround will serve as the critical catalysts for meaningful valuation re-rating."
+      },
+      "bull": [
+        {
+          "title": {
+            "ko": "연속 최대 이익: 양과 질의 동반 성장",
+            "en": "Consecutive Record Earnings: Quality and Quantity in Tandem"
+          },
+          "body": {
+            "ko": "DART 확정 기준 2025년 당기순이익 4.0조원(+7.1%)에 이어 2026년 1분기 당기순이익 1.2조원(+8.1%)으로 3년 연속 이익 성장세가 이어지고 있으며, 최근 보도에 따르면 1분기 핵심이익 성장률은 13.6%로 단순 이자마진 확대를 넘어 수수료이익 증가가 선명하다. 2025년 충당금 비용 증가(2.8%)가 순영업수익 성장(6.5%)을 크게 하회해 이익의 질적 개선도 확인됐으며, 2026년 1분기 대손비용률도 0.21%(-0.08%p)로 건전성이 안정화됐다. 최근 보도에 따르면 하나은행 비이자이익이 2025년 3분기까지 전년 동기 대비 43.4% 급증하는 등 수익 다각화의 효과가 가시화됐고, 하나증권도 WM·IB·S&T 중심의 회복으로 비은행 기여도가 높아지고 있다. 이처럼 이익 기반이 단일 이자마진에서 멀어지는 구조적 변화는 실적의 안정성과 지속성을 높이는 요소로 평가된다.",
+            "en": "Building on DART-confirmed FY2025 net income of KRW 4.0 trillion (+7.1%), 1Q26 net income of KRW 1.2 trillion (+8.1%) marks three consecutive years of earnings growth; recent disclosures show 1Q26 core income growth of 13.6% driven notably by fee income expansion beyond mere NIM widening. Earnings quality improved in 2025 as credit cost growth of 2.8% substantially lagged net revenue growth of 6.5%, with the 1Q26 credit cost ratio further improving to 0.21% (-0.08pp YoY). According to recent reports, Hana Bank's non-interest income surged 43.4% YoY through 3Q25 as revenue diversification becomes tangible, while Hana Securities' WM/IB/S&T recovery is gradually lifting non-bank contributions. This structural shift away from a single-lever interest margin model reinforces the stability and sustainability of the earnings base."
+          }
+        },
+        {
+          "title": {
+            "ko": "주주환원율 50% 목표: 구체적 실행과 세제 혜택의 시너지",
+            "en": "50% Return Target: Concrete Execution Backed by Tax Benefits"
+          },
+          "body": {
+            "ko": "2025년 주주환원율 47%는 2024년 38% 대비 9%p 급등한 수치이며, 2026년 상반기 4,000억원 자사주 매입·소각과 연간 1조원 현금배당(분기 균등)을 병행해 50% 조기 달성을 구체적으로 이행 중이다. 최근 보도에 따르면 2026년 1분기 주당 배당금은 1,145원으로 전년 평균 대비 11.6% 증가했으며, 향후 4분기 배당부터는 비과세 배당 적용으로 실질 세후 환원율이 추가 상승할 전망이다. 배당소득 분리과세 고배당 요건 충족으로 개인투자자의 세후 배당 수익률이 높아지는 구조이며, 이는 금융주에 대한 배당 투자 수요를 견조하게 유지하는 요인이다. 최근 보도에 따르면 증권사 컨센서스 목표주가가 현재가(117,000원) 대비 상당한 업사이드를 내포하고 있어, 주주환원 서사의 신뢰도 강화가 밸류에이션 재평가로 연결될 잠재력을 보유한다.",
+            "en": "The 2025 shareholder return rate of 47% represents a 9pp leap from 38% in 2024, with concrete 2026 execution underway via a KRW 400 billion H1 buyback-cancellation program and a fixed KRW 1 trillion annual cash dividend paid in quarterly tranches. According to recent reports, the 1Q26 DPS of KRW 1,145 was 11.6% above the prior-year average, and future Q4 dividend payments are to be fully tax-exempt, structurally raising the effective after-tax return ratio. Qualifying for dividend income tax separation status increases after-tax dividend yield for individual investors, supporting durable demand for Hana Financial as a dividend asset class. With sell-side consensus targets reportedly implying significant upside versus the current price of KRW 117,000, growing credibility in the shareholder return narrative has the potential to translate into meaningful valuation re-rating."
+          }
+        },
+        {
+          "title": {
+            "ko": "하나은행의 외환·WM·퇴직연금 프랜차이즈 경쟁력",
+            "en": "Hana Bank's Differentiated FX, WM, and Pension Franchise"
+          },
+          "body": {
+            "ko": "하나은행은 외환 및 무역금융 서비스에서 국내 은행권 최고 수준의 경쟁력을 보유하고 있으며, 최근 보도에 따르면 2026년 1분기에도 외환·자산관리 수수료 증가가 이익 성장의 핵심 기여 요인으로 작용했다. 퇴직연금 적립금은 은행권 최대 수준의 성장세를 기록하고 있어 중장기적으로 수수료 수익 기반을 안정적으로 강화하는 효과가 있다. 글로벌 네트워크(27개 지역 199개)는 국내 최대 수준으로, 해외 이익 기여도 확대가 향후 수익 다각화를 뒷받침하는 구조적 자산으로 기능한다. 2026년 조직개편에서 신설된 WM본부·투자금융본부·기업금융본부는 자산관리와 기업금융의 교차판매 시너지를 극대화해 비이자이익 확대를 가속화할 것으로 기대된다.",
+            "en": "Hana Bank holds a top-tier competitive position in FX and trade finance within Korean banking, with recent disclosures confirming that FX and asset management fee growth was again a core earnings driver in 1Q26. Retirement pension fund growth at the highest level in the banking sector is building a durable, fee-based income stream that will strengthen over the medium to long term. The group's 199-office global network across 27 regions is the most extensive among Korean banks, positioning overseas earnings growth as a structural asset supporting long-term revenue diversification. Newly established organizational units—including WM Headquarters, Investment Finance Headquarters, and Corporate Finance Headquarters—are expected to maximize cross-selling synergies between wealth management and corporate banking, accelerating non-interest income expansion."
+          }
+        }
+      ],
+      "bear": [
+        {
+          "title": {
+            "ko": "은행 이익 편중 구조와 비은행 회복 속도의 불확실성",
+            "en": "Bank Earnings Concentration and Uncertain Non-Bank Recovery Pace"
+          },
+          "body": {
+            "ko": "2026년 1분기 하나은행이 그룹 연결 순이익의 약 90%를 기여하는 구조가 지속되고 있어, 비은행 포트폴리오 수익성 개선은 여전히 중장기 과제로 남아 있다. 최근 보도에 따르면 하나캐피탈은 2025년 1분기 취약차주·자영업자 연체율 상승으로 순이익이 전년 대비 48% 급감하는 등 비은행 부문에서 변동성이 컸으며, 부동산 PF 관련 잠재 리스크도 완전히 해소되지 않은 상태다. 하나카드는 결제 수수료 규제 강화와 조달 비용 상승 압박 속에서 구조적 수익 개선 여지가 제한적이며, 비은행 실적 개선이 그룹 ROE 제고에 유의미하게 기여하려면 각 부문의 비용 효율화와 리스크 관리 고도화가 선행되어야 한다. 은행 편중 구조가 지속될 경우 대출 성장 둔화나 NIM 압박 국면에서 그룹 전체 실적의 하방 취약성이 높아질 수 있다.",
+            "en": "Hana Bank contributing approximately 90% of consolidated 1Q26 net income means earnings concentration risk persists, with non-bank profitability improvement remaining a medium-to-long-term execution challenge. Per recent reports, Hana Capital experienced a 48% YoY earnings drop in 1Q25 due to rising delinquencies among vulnerable and self-employed borrowers, and residual real estate PF risk has not been fully resolved. Hana Card faces structural revenue pressure from payment fee regulation and rising funding costs, limiting scope for significant earnings improvement; meaningful non-bank ROE contributions require demonstrated cost efficiency and risk management improvements across each subsidiary. The persistence of bank-centric earnings concentration increases the group's downside vulnerability to loan growth deceleration or NIM compression scenarios."
+          }
+        },
+        {
+          "title": {
+            "ko": "포용·생산적 금융 정책 비용과 충당금 불확실성",
+            "en": "Policy-Driven Cost Pressure from Inclusive and Productive Finance Mandates"
+          },
+          "body": {
+            "ko": "정부의 '하나 모두 성장 프로젝트'에 따라 84조원 생산적 금융과 16조원 포용금융 합산 100조원의 자금 공급 의무를 지고 있어, 저신용·취약차주 대출 확대에 따른 신용 비용 상승 압박이 상당하다. 최근 보도에 따르면 시장에서는 포용·생산적 금융 정책이 금융지주의 비용을 높이고 주주환원 여력을 제한할 것이라는 우려가 커지면서 외국인 투자자 매도세가 지속되고 있다고 분석된다. 기업대출 비중 확대가 금리 인상기와 맞물릴 경우 부실채권 비율 상승과 대손충당금 급증 리스크가 현실화될 수 있으며, 이는 이익 성장분을 부분적으로 상쇄할 가능성이 있다. 또한 당국의 가산금리 규제 압력으로 금리 인상의 수혜를 충분히 누리지 못하는 구조적 제약도 수익성 개선폭을 제한하는 요인으로 남아 있다.",
+            "en": "Obligatory KRW 100 trillion in combined productive (KRW 84 trillion) and inclusive finance (KRW 16 trillion) commitments under the 'Hana All Growth Project' creates direct credit cost pressure as lending to lower-credit and vulnerable borrowers expands materially. Recent media reports indicate that foreign investors have been sustained net sellers of Korean financial holding stocks as concerns mount that inclusive and productive finance mandates will raise costs and constrain capital return capacity. The coincidence of expanding corporate loan exposure with a rate-hiking environment could trigger rising NPL formation and a significant jump in provisioning requirements, partially negating net income growth. Regulatory pressure on loan spread pricing further constrains the ability to fully capture NIM benefits from monetary tightening, representing a structural ceiling on profitability improvement."
+          }
+        },
+        {
+          "title": {
+            "ko": "지속되는 PBR 저평가와 밸류업 실행 검증 부담",
+            "en": "Persistent PBR Discount and Execution Risk on Value-Up Commitments"
+          },
+          "body": {
+            "ko": "일부 보도에 따르면 하나금융지주 PBR은 0.38배 수준으로 사상 최대 이익과 괴리를 보이고 있어, 시장이 규제 리스크·성장 제약·ROE 수준 등을 이유로 여전히 상당한 디스카운트를 적용하고 있음을 시사한다. 최근 보도에 따르면 일부 경쟁사가 PBR 1배를 돌파하는 등 금융지주 간 밸류에이션 격차가 벌어지면서 하나금융의 상대적 저평가가 지속될 리스크도 존재한다. 중장기 목표로 제시된 주주환원율 50%·ROE 10% 이상의 달성 경로는 자본 관리 여력과 이익 성장의 균형을 필요로 하며, CET1 13% 이상 유지와 주주환원 확대를 동시에 추구하는 데 있어 트레이드오프가 발생할 수 있다. 밸류업 계획의 구체적 실행 여부를 시장이 점점 더 엄밀하게 검증하는 국면에서, 기대에 미치지 못하는 결과는 주가의 추가 하방 압력으로 이어질 가능성이 있다.",
+            "en": "Reports citing Hana Financial's PBR near 0.38x highlight a persistent disconnect from record earnings, suggesting the market is still applying a substantial discount due to regulatory risk, structural growth constraints, and the group's relative ROE levels. Recent media reports indicate some peers have crossed PBR 1x, and widening valuation gaps among Korean financial holding companies create the risk of Hana's relative discount persisting or deepening. Simultaneously targeting a 50%+ return rate and maintaining CET1 above 13% while continuing to grow the loan book creates potential capital efficiency trade-offs that management must navigate carefully. As the market applies increasingly rigorous scrutiny to the credibility and specificity of management's value-up execution, any shortfall in disclosed milestones could reintroduce downward pressure on the share price."
+          }
+        }
+      ],
+      "risks": [
+        {
+          "cat": {
+            "ko": "거시·금리 리스크",
+            "en": "Macro / Interest Rate Risk"
+          },
+          "body": {
+            "ko": "최근 보도에 따르면 한국은행의 연내 기준금리 인상 가능성이 부각되고 있으며, 금리 인상은 NIM 개선 기대와 기업대출 부실화 심화라는 양면적 효과를 동시에 내포한다. 금리 상승 국면에서 부동산 PF·자영업자·저신용차주 중심의 연체율 상승 리스크가 대손 비용 급증으로 연결될 경우 이익 개선 효과를 상쇄할 수 있다. 최근 보도에 따르면 2026년 1분기 환율 상승에 따른 외화환산손실이 823억원 발생하는 등 원/달러 환율 변동성이 분기 이익의 일회성 교란 요인으로 작용할 수 있다. 글로벌 경기 둔화 시 동남아·중동 등 해외 네트워크 건전성 악화 가능성도 외생적 리스크 요인으로 상존한다.",
+            "en": "Recent reports highlight growing market expectations for Bank of Korea rate hikes within the year; while rate increases support NIM improvement, the same environment heightens corporate loan impairment risk, creating a double-edged earnings dynamic. A deterioration in delinquencies among real estate PF, self-employed, and lower-credit borrowers in a rising-rate environment could generate a sharp jump in provisioning that offsets margin gains. Recent disclosures showed a KRW 82.3 billion FX translation loss in 1Q26 from won/dollar volatility, confirming that exchange rate fluctuations can be a recurring one-time earnings disruptor. Global macroeconomic deceleration also poses an exogenous risk to asset quality across the group's Southeast Asian and Middle Eastern networks."
+          }
+        },
+        {
+          "cat": {
+            "ko": "규제·정책 리스크",
+            "en": "Regulatory / Policy Risk"
+          },
+          "body": {
+            "ko": "정부의 포용금융·생산적 금융 확대 정책은 금융지주에 사실상 공공재 기능을 부여하며 비용 증가와 충당금 상방 압력을 동반한다. 가계대출 총량 규제 강화는 이자이익 성장의 구조적 상한선으로 작용하며, 기업대출 가산금리에 대한 당국 감시가 강화될 경우 금리 인상의 수혜를 충분히 내재화하지 못할 수 있다. 금융소비자 보호 규제 강화와 불완전판매 관련 분쟁 증가는 법적 비용 및 평판 리스크로 이어질 수 있으며, 상법 개정·지배구조 규제 변화 등 제도적 환경 변화도 지주 운영 구조에 영향을 미칠 수 있는 잠재 변수다.",
+            "en": "Government-driven inclusive and productive finance expansion assigns a quasi-public service function to financial holding companies, directly raising operating costs and provisioning pressure. Household loan volume caps act as a structural ceiling on interest income growth, and heightened regulatory scrutiny of corporate loan spreads could prevent the group from fully capturing margin benefits from rate hikes. Stricter financial consumer protection regulations and increased mis-selling disputes may generate legal costs and reputational risks; changes to commercial law and holding company governance regulations represent additional institutional risk factors that could affect operational flexibility."
+          }
+        },
+        {
+          "cat": {
+            "ko": "경쟁·구조 리스크",
+            "en": "Competitive / Structural Risk"
+          },
+          "body": {
+            "ko": "국내 금융지주 간 리딩뱅크 경쟁이 치열하며, 대출 성장 둔화 국면에서 기업여신 수주 경쟁이 격화되면 위험 대비 수익성이 하락하는 레이스투더바텀 문제가 발생할 수 있다. 최근 보도에 따르면 2026년 은행권 대출 성장률이 3%대 후반으로 둔화될 전망이어서 수신·여신 모두에서 경쟁 심화와 조달 비용 상승 압박이 동시에 작용하고 있다. 스테이블코인 확산과 디지털 결제 생태계 변화가 카드·지급결제 사업의 구조적 수익 기반을 장기적으로 잠식할 리스크를 내포한다. 인터넷전문은행·핀테크와의 리테일 고객 경쟁 심화도 하나원큐 등 디지털 플랫폼의 수익화 속도에 영향을 미칠 수 있는 구조적 변수다.",
+            "en": "Intense competition for the leading bank position among Korean financial holding companies means that in a decelerating loan growth environment, aggressive corporate lending competition risks driving risk-adjusted returns lower in a race-to-the-bottom dynamic. Recent industry research projects domestic bank loan growth slowing to the high-3% range in 2026, creating simultaneous pressures from intensified deposit competition and rising funding costs in both lending and deposit markets. The expansion of stablecoins and structural shifts in digital payment ecosystems pose long-term franchise erosion risks for card and payments businesses. Intensifying retail customer competition from internet-only banks and fintech companies represents a structural variable that could constrain the monetization pace of digital platforms such as Hana OneQ."
+          }
+        }
+      ],
+      "verdict": {
+        "stance": {
+          "ko": "긍정적",
+          "en": "Constructive"
+        },
+        "body": {
+          "ko": "하나금융지주는 DART 확정 공시 기준 2025년 역대 최대 연간 순이익(4.0조원, +7.1%)과 2026년 1분기 분기 최대 이익(1.2조원, +8.1%)을 연속 달성하며 이익의 지속성과 수익 다각화 성과를 뚜렷이 입증하고 있다. 주주환원율을 2024년 38%에서 2025년 47%로 끌어올린 데 이어 2026년 50% 조기 달성 목표를 선언하고 분기 균등배당·자사주 소각·배당소득 분리과세 혜택을 묶어 실행 중이어서, '환원하는 금융주'로서의 투자 서사가 점점 더 구체화되고 있다. CET1 13% 이상의 견조한 자본 구조와 0.21%의 낮은 대손비용률은 이익 성장과 주주환원의 지속 가능성을 뒷받침하는 핵심 근거이며, 하나증권의 회복세와 글로벌 네트워크 확장은 중장기 이익 다각화의 구조적 기반이다. 다만 포용·생산적 금융 정책 비용 증가 우려, 기업대출 부실화 가능성, 은행 편중 구조 지속, PBR 0.38배 수준의 저평가 상태가 주가 재평가의 속도를 제한하는 구조적 제약으로 남아 있다. 최근 보도에 따르면 정부 정책 부담과 비용 증가 우려로 외국인 매도세가 이어지고 있어 단기 주가 변동성에 유의해야 한다. 밸류업 계획의 구체적 실행력과 비은행 부문 수익성 개선의 가시화가 향후 주가 리레이팅 폭을 결정짓는 핵심 모니터링 포인트다.",
+          "en": "Hana Financial Group has delivered compelling evidence of earnings sustainability, posting DART-confirmed consecutive records—FY2025 net income of KRW 4.0 trillion (+7.1%) and a quarterly record of KRW 1.2 trillion (+8.1%) in 1Q26—alongside visible progress in revenue diversification through both interest and fee income channels. The shareholder return narrative is gaining structural credibility as the group approaches its 50% total return target through quarterly dividends, accelerated buyback-cancellations, and dividend income tax separation benefits, making a compelling 'income and return' investment case. A well-capitalized balance sheet (CET1 above 13%) and disciplined credit cost management (0.21% in 1Q26) provide the financial foundation for sustaining both earnings growth and capital return ambitions over the medium term, while Hana Securities' recovery and the group's extensive global network offer longer-term diversification optionality. However, government-mandated inclusive and productive finance cost pressures, potential corporate loan quality deterioration in a rising-rate environment, persistent bank earnings concentration, and a PBR near 0.38x remain structural constraints that moderate the pace of re-rating. Recent media reports indicate continued foreign investor selling on policy cost concerns, warranting attention to near-term share price volatility. The credibility and specificity of management's value-up execution and the durability of non-bank earnings recovery are the decisive monitoring variables that will ultimately determine the amplitude of any re-rating."
+        }
+      },
+      "sources": [
+        "https://www.handmk.com/news/articleView.html?idxno=38006",
+        "https://www.thefairnews.co.kr/news/articleView.html?idxno=75346",
+        "https://v.daum.net/v/GRNo4d5TuJ",
+        "https://weekly.cnbnews.com/news/article.html?no=175781",
+        "https://m.joseilbo.com/news/view.htm?newsid=555521",
+        "https://bbn.kiwoom.com/rfCR11868",
+        "https://www.eroun.net/news/articleView.html?idxno=69780",
+        "https://www.ziksir.com/news/articleView.html?idxno=118385",
+        "https://biz.newdaily.co.kr/site/data/html/2026/06/02/2026060200123.html",
+        "https://eiec.kdi.re.kr/policy/domesticView.do?ac=0000203213&pg=&pp=20&issus=M",
+        "https://www.hanafn.com/ir/subMain.do"
+      ],
+      "ticker": "086790",
+      "name": "하나금융지주",
+      "name_en": "Hana Financial Group Inc.",
+      "sector": "금융",
+      "categories": [
+        "금융"
+      ],
+      "market": "코스피",
+      "reportDate": "2026-06-04",
+      "dataDate": "20260602"
+    },
+    "042660": {
+      "title": {
+        "ko": "이익 급증을 증명한 뒤, 방산·MASGA로 뻗어가는 복합 성장 경로",
+        "en": "Profitability Proven — Defense and MASGA as the Next Growth Vectors"
+      },
+      "lead": {
+        "ko": "한화오션은 DART 공시 기준 2025년 영업이익 1조 2,000억 원(+390.8% YoY)으로 7년 만의 '1조 클럽' 복귀를 공식화한 데 이어, LNG 고선가 물량의 매출 인식 가속·방산 수주 파이프라인 확장·MASGA 기반 미국 시장 진입이라는 세 가지 축으로 이익 성장 사이클의 다음 국면을 열어가고 있다.",
+        "en": "Having confirmed a return to the ₩1 trillion operating profit club for the first time in seven years—backed by DART-verified FY2025 operating profit of ₩1.2 trillion (+390.8% YoY)—Hanwha Ocean is now pursuing the next leg of its earnings cycle through three growth vectors: accelerating high-price LNG carrier revenue recognition, a broadening defense orderbook, and early monetization of the U.S. MASGA partnership."
+      },
+      "desc": {
+        "ko": "2025년 연결 기준 매출 12.8조 원(+18.6%), 영업이익 1.2조 원(+390.8%), 당기순이익 1.2조 원(+135.9%)은 단순 경기 반등을 넘어 사업 구조의 질적 전환을 실증한 수치다. 2026년 1분기에도 영업이익 4,411억 원(+70.6%)으로 성장세가 지속되는 가운데, 방산·MASGA 관련 다수의 해외 수주 파이프라인이 연내 가시화를 앞두고 있다. 다만 2024년 10월 이후 진행 중인 신조선가 하락세와 특수선 역량 확충에 따른 고정비 부담, 중국발 지정학적 리스크는 균형 있게 모니터링할 필요가 있다.",
+        "en": "FY2025 consolidated revenue of ₩12.8 trillion (+18.6% YoY), operating profit of ₩1.2 trillion (+390.8% YoY), and net income of ₩1.2 trillion (+135.9% YoY) represent not merely a cyclical rebound but evidence of a structural earnings quality shift. With Q1 2026 operating profit of ₩441.1 billion (+70.6% YoY) continuing the momentum, multiple defense and MASGA-related pipeline events are expected to crystallize within the year. However, the newbuilding price decline trend since October 2024, rising fixed costs tied to defense capacity expansion, and China-related geopolitical risks warrant balanced monitoring."
+      },
+      "keypoints": [
+        {
+          "ko": "DART 공시 기준 2025년 영업이익 1.2조 원(+390.8% YoY) — 대우조선해양 시절 이후 7년 만에 '1조 클럽' 복귀, 실적 턴어라운드 공식화",
+          "en": "DART-confirmed FY2025 operating profit of ₩1.2 trillion (+390.8% YoY): formal return to the '₩1 trillion club' for the first time since the former Daewoo Shipbuilding era, validating the earnings turnaround"
+        },
+        {
+          "ko": "2025년 말 기준 대형 LNG선 수주잔고 65척, 전체 상선 수주잔고 대비 51.6% — 국내 주요 조선사 중 가장 높은 LNG 비중으로 중장기 마진 안정성 확보",
+          "en": "LNG carrier backlog of 65 vessels (51.6% of total merchant ship backlog as of end-2025): the highest LNG concentration among major Korean shipbuilders, underpinning medium-term margin visibility"
+        },
+        {
+          "ko": "MASGA 프로젝트의 핵심 파트너로 미 해군 MRO 3건 수주·진행 중, 필리조선소(지분 40%) 거점화를 통한 미국 방산 시장 진입 본격화",
+          "en": "Three U.S. Navy MRO contracts secured and underway as a key MASGA partner; Philly Shipyard (40% equity stake) established as the U.S. operational base for future defense and commercial vessel construction"
+        },
+        {
+          "ko": "캐나다 초계잠수함(CPSP), 태국 호위함, 에스토니아 OPV, 중동·글로벌 잠수함 등 다수의 해외 방산 수주 파이프라인이 2026년 내 결과 예상",
+          "en": "Multiple overseas defense order pipeline events—Canada CPSP, Thailand frigate, Estonia OPV, and global submarine opportunities—are expected to yield outcomes within 2026"
+        },
+        {
+          "ko": "2024년 10월 이후 신조선가 하락(LNGC 고점 대비 -3.4%), 중국 수주 점유율 상승, 산업은행 지분 오버행이 중기 밸류에이션의 주요 변수",
+          "en": "Newbuilding price softness since October 2024 (LNGC -3.4% from peak), rising Chinese order-market share, and potential KDB overhang are key swing factors for medium-term valuation"
+        }
+      ],
+      "business": {
+        "ko": "한화오션의 사업 구조는 크게 상선·해양플랜트·특수선(방산) 세 부문으로 구성되며, 주요 매출은 상선 부문에서 발생하고 있다. 상선 부문의 핵심은 LNG 운반선(LNGC)으로, 최근 보도에 따르면 2025년 말 기준 65척의 대형 LNG선 수주잔고를 보유하고 있으며 이는 전체 상선 수주잔고의 51.6%로 국내 주요 조선사 중 가장 높은 비중이다. LNG선은 높은 건조 난이도와 제한적인 도크 슬랏 특성상 15~20% 전후의 영업이익률이 기대되는 고수익 선종으로, 경쟁사 대비 집중도 높은 LNG 비중은 마진 안정성 측면에서 차별화 요인이다. 해양플랜트 부문은 FPSO 수주 파이프라인(브라질 페트로브라스·토탈에너지향)을 통한 반등을 준비하는 단계에 있으며, 2026년 2월에는 계열사로부터 역대 최대 규모인 7,687억 원의 초대형 해상풍력발전기 설치선(WTIV) 1척을 수주해 사업 다양성도 확대되고 있다. 특수선(방산) 부문은 잠수함·군함 프로젝트가 성장 동력으로, 최근 보도에 따르면 2026년 특수선 매출이 1조 7,430억 원 수준까지 확대될 것으로 전망된다. 경쟁 구도상 국내에서는 HD현대중공업·삼성중공업과 빅3 체제를 형성하고 있으나, LNG선 수주잔고 집중도와 방산 미국 시장 진입 속도에서 차별화된 포지션을 보이고 있다. 한화 그룹 차원의 시너지도 중요한 경쟁 우위로, 한화에어로스페이스·한화시스템과 함께 '육·해·공 통합 방산' 포트폴리오를 구성하고 있다. 한화엔진의 한화오션향 선박 엔진 공급 비중은 2024년 32.1%에서 2025년 41.0%로 확대되어 내부 조달을 통한 원가 안정성이 높아지는 추세다. 미국 필라델피아 소재 필리조선소(40% 지분)는 미 해군 MRO 및 신조 건조를 위한 현지 거점 역할을 하며, 현재 연간 1~1.5척 수준인 건조 능력을 2035년까지 10배 이상으로 끌어올리는 계획이 추진 중이다.",
+        "en": "Hanwha Ocean's business is organized into three main segments: merchant ships, offshore/marine plants, and special ships (defense), with merchant shipping generating the bulk of revenue. The core of the merchant ship segment is LNG carriers (LNGCs); per recent industry reports, the company held a backlog of 65 large LNG vessels as of end-2025, representing 51.6% of its total merchant ship backlog—the highest concentration among major Korean shipbuilders. LNG carriers are a high-margin vessel type—analysts estimate operating margins of approximately 15–20%—and this disproportionate LNG exposure differentiates the company from its peers in terms of margin visibility. The offshore/marine plant segment is in a recovery posture, with FPSO bid pipelines targeting Petrobras and TotalEnergies in Brazil; in February 2026, the company also booked a record-scale wind turbine installation vessel (WTIV) worth ₩768.7 billion from a Hanwha affiliate, expanding segment diversification. The defense/special ships segment is driven by submarine and naval vessel programs; recent analyst estimates project defense revenues growing to approximately ₩1.74 trillion in 2026. Domestically, the company competes in a 'Big Three' structure with HD Hyundai Heavy Industries and Samsung Heavy Industries, but differentiates itself through its LNG backlog concentration and the pace of its U.S. defense market entry. At the group level, integration with Hanwha Aerospace and Hanwha Systems creates an 'air-land-sea' unified defense portfolio, a meaningful competitive moat globally. Hanwha Engine's share of orders flowing to Hanwha Ocean rose from 32.1% in 2024 to 41.0% in 2025, contributing to procurement cost stability. The Philly Shipyard in Philadelphia (40% equity stake) serves as the U.S. operational base for Navy MRO and new construction, with a plan to scale capacity from the current ~1–1.5 ships per year to more than tenfold by 2035."
+      },
+      "recent": {
+        "ko": "DART 공시 기준, 2025년 연결 매출액은 12조 8,000억 원(전기대비 +18.6%), 영업이익은 1조 2,000억 원(+390.8%), 당기순이익은 1조 2,000억 원(+135.9%)으로 역대급 이익 성장을 달성하며 대우조선해양 이후 7년 만의 '1조 클럽' 복귀를 공식화했다. 최근 보도에 따르면 2025년 4분기 상선 부문 영업이익률은 약 14.8%로 대폭 개선됐으며, 이는 과거 저가 수주 물량이 소진되고 고선가에 계약된 LNG선 매출이 본격 반영된 결과다. 2026년 1분기에는 DART 공시 기준 매출액 3조 2,000억 원(+2.1% YoY), 영업이익 4,411억 원(+70.6% YoY), 당기순이익 5,000억 원(+131.8% YoY)을 기록하며 실적 개선 흐름을 이어갔다. 최근 보도에 따르면 1분기 LNG선 매출 비중이 약 70%에 달했으며, 수주 계약 당시 평균 환율(약 1,330원/달러) 대비 1분기 실제 평균 환율(약 1,464원/달러)의 차이가 마진 확대에 기여한 것으로 분석된다. 수주 흐름 역시 꾸준하다. 2026년 1월 7,383억 원 규모 LNGC 2척, 2월 7,687억 원 WTIV 1척, 4월 아프리카 선주로부터 VLAC 3척(5,074억 원), 5월에는 유럽 선주로부터 LNGC 1척(3,632억 원) 수주 계약을 연이어 공시했다. 주가는 2026년 2월 장중 154,800원이라는 52주 최고가를 기록한 이후, 3월 캐나다 잠수함 분할 수주 가능성 보도 및 지정학적 불확실성 확대 등을 계기로 급격히 조정받았다. 2026년 6월 4일 기준 현재가는 116,000원(-7.13%)으로, 52주 고점 대비 약 25%, 52주 저점(71,500원) 대비 약 62% 회복한 수준에서 높은 변동성을 보이고 있다. 5월 28일에는 지정학적 리스크 고조에 VI(변동성 완화 장치)가 발동되며 장중 약 10% 이상 급락한 사례도 있어, 특수선 수주 이벤트와 지정학적 재료에 대한 주가 민감도가 높은 상태다.",
+        "en": "Based on DART-confirmed financials, Hanwha Ocean achieved record earnings in FY2025: consolidated revenue of ₩12.8 trillion (+18.6% YoY), operating profit of ₩1.2 trillion (+390.8% YoY), and net income of ₩1.2 trillion (+135.9% YoY), formally confirming the company's return to the ₩1 trillion operating profit tier for the first time since the Daewoo Shipbuilding era. Recent industry reports indicate that Q4 2025 merchant ship operating margin improved sharply to approximately 14.8%, driven by the exhaustion of legacy low-priced orders and the full-scale recognition of high-contract-price LNG carrier revenue. In 2026 Q1, DART-confirmed figures show revenue of ₩3.2 trillion (+2.1% YoY), operating profit of ₩441.1 billion (+70.6% YoY), and net income of ₩500 billion (+131.8% YoY), sustaining the earnings improvement trajectory. Per recent analyst commentary, LNG carriers accounted for approximately 70% of Q1 revenue, and a favorable FX spread—contracts booked at roughly ₩1,330/USD versus an actual Q1 2026 average of approximately ₩1,464/USD—provided additional margin tailwind. The company has maintained active order intake: two LNGCs totaling ₩738.3 billion (January 2026), one WTIV for ₩768.7 billion (February 2026), three VLACs from an African owner for ₩507.4 billion (April 2026), and one LNGC from a European owner for ₩363.2 billion (May 2026). On the price front, the stock reached an intraday 52-week high of ₩154,800 in February 2026, then retreated sharply following reports of a potential split award in the Canada CPSP competition and rising geopolitical tensions. As of June 4, 2026, the share price stands at ₩116,000 (-7.13%), approximately 25% below the 52-week high and about 62% above the 52-week low of ₩71,500, with a volatility circuit breaker (VI) triggered intraday on May 28 during a spike in geopolitical risk, underscoring the stock's high sensitivity to defense order news flow."
+      },
+      "outlook": {
+        "ko": "최근 보도에 따른 증권사 컨센서스는 2026년 연간 매출액 13조 8,000억~14조 4,000억 원, 영업이익 1조 6,500억~1조 9,000억 원 수준으로 실적 성장 지속을 전망하고 있다. 2022~2024년에 체결된 고선가 LNG운반선·컨테이너선 계약이 2026년부터 매출 인식에 본격 반영되면서 상선 부문 이익률이 추가 개선될 가능성이 높다. 방산 측면에서는 캐나다 초계잠수함(CPSP) 사업자 선정 결과(2026년 상반기 예상), 태국 호위함, 에스토니아 OPV 등의 해외 수주 가시화 여부가 연간 특수선 실적의 중요한 업사이드 변수로 작용할 전망이다. MASGA 기반의 미국 시장 진출도 중장기 성장 동력이다. 한화오션은 이미 미 해군 MRO 3건을 수행 중이며, 최근 보도에 따르면 미국 내 추가 조선소 투자(M&A 포함) 검토도 이어지고 있다. 해양플랜트 부문은 2026년 중 브라질향 FPSO 2개 이상 프로젝트 수주 시 4분기부터 실적 턴어라운드가 기대된다는 분석도 있다. 다만 2024년 10월 이후 약세를 보이는 신조선가 흐름이 2027년 이후 매출 인식 단계에서 수익성에 영향을 줄 수 있으며, 중장기 이익률 지속 여부는 선가 반등 타이밍 및 방산·MASGA 수주 성과의 실현 속도에 달려 있다.",
+        "en": "Recent analyst consensus estimates project FY2026 consolidated revenue of approximately ₩13.8–14.4 trillion and operating profit of approximately ₩1.65–1.9 trillion, implying continued growth. High-priced LNG carrier and container ship contracts signed in 2022–2024 are scheduled to accelerate into revenue recognition from 2026, supporting further merchant ship margin improvement. On the defense front, the Canada CPSP award (expected by mid-2026), Thailand frigate, and Estonia OPV outcomes will be key upside variables for full-year special ship results. The MASGA-driven U.S. market expansion is a medium-to-long-term catalyst: with three Navy MRO contracts already underway, recent reports also indicate the company is actively evaluating additional U.S. shipyard investments, including potential M&A. The offshore/marine plant segment could see a Q4 2026 turnaround if two or more Brazilian FPSO projects are secured during the year, per analyst commentary. However, the newbuilding price softness since October 2024 poses a risk to post-2027 profitability, and the durability of the current earnings trajectory depends on the pace of shipbuilding price recovery alongside the speed at which defense and MASGA contracts convert into recognized revenue."
+      },
+      "bull": [
+        {
+          "title": {
+            "ko": "LNG 수주잔고의 질적 우위 — 고선가 인식 구간 진입",
+            "en": "LNG Backlog Quality Advantage — Entering the High-Price Recognition Phase"
+          },
+          "body": {
+            "ko": "2025년 말 기준 65척의 대형 LNG선 수주잔고(상선 전체의 51.6%)는 국내 빅3 조선사 중 가장 높은 LNG 집중도로, 15~20% 전후의 높은 영업이익률이 기대되는 고수익 선종 중심의 포트폴리오를 의미한다. 2022~2024년 고선가 계약 물량이 2026년부터 매출에 본격 반영되는 구간에 들어서면서 상선 부문 수익성의 추가 개선 가능성이 높다. 1분기 LNG선 매출 비중 약 70%, 우호적 환율 효과가 이미 수익성 개선을 가시화하고 있으며, 현 수주잔고 구성상 이 흐름은 당분간 지속될 것으로 평가된다. 고선가 수주잔고를 소진하는 과정에서의 이익률 안정성은 조선 사이클 변동성을 부분적으로 완충하는 역할을 한다.",
+            "en": "A backlog of 65 large LNG carriers (51.6% of total merchant ship backlog as of end-2025) represents the highest LNG concentration among Korea's Big Three, pointing to a portfolio centered on a vessel type with expected operating margins of approximately 15–20%. With high-price contracts signed in 2022–2024 entering full revenue recognition from 2026, further merchant ship margin improvement is a high-probability outcome. Q1 2026 already demonstrated this—with LNG carriers accounting for approximately 70% of revenue and favorable FX providing additional uplift—and the current backlog composition suggests this dynamic will persist in the near term. The margin stability derived from working through a high-price backlog acts as a partial buffer against broader shipbuilding cycle volatility."
+          }
+        },
+        {
+          "title": {
+            "ko": "방산·MASGA — 조선을 넘어 새로운 수익 스트림 개화",
+            "en": "Defense & MASGA — A New Revenue Stream Beyond Conventional Shipbuilding"
+          },
+          "body": {
+            "ko": "한화오션은 미 해군 군수지원함 MRO를 국내 최초로 수주한 이후 현재까지 3건의 MRO 계약을 수행 중이며, 미국 의회조사국은 미 해군이 향후 30년간 연평균 약 35.8억 달러를 신조 함정에 투입할 계획이라고 전망한 바 있다. 필리조선소를 미국 내 전진기지로 삼아 MRO에서 나아가 신조 함정 건조와 전략 수송 능력 재건 사업으로 사업 영역을 확장하고 있으며, MASGA 관련 법안이 진전될 경우 수혜 강도가 가장 큰 기업으로 평가받고 있다. 캐나다 잠수함(CPSP), 태국 호위함, 에스토니아 OPV, 중동·글로벌 잠수함 수주 파이프라인도 2026~2028년 특수선 성장 모멘텀을 다층적으로 뒷받침할 것으로 전망된다. 방산 수익은 상선의 경기 사이클 의존성을 낮추는 포트폴리오 다각화 효과도 제공한다.",
+            "en": "Hanwha Ocean was the first Korean shipyard to secure a U.S. Navy MRO contract and now has three active MRO projects, with the Congressional Research Service projecting the U.S. Navy will invest an average of approximately USD 35.8 billion per year in new ship construction over the next 30 years. Using the Philly Shipyard as a U.S. beachhead, the company is expanding from MRO into new vessel construction and strategic sealift capacity—and is widely regarded as the primary beneficiary if MASGA-enabling legislation advances. The Canadian CPSP, Thailand frigate, Estonia OPV, and global submarine pipeline provide a multi-layered set of defense order catalysts for the 2026–2028 horizon. Defense revenues also provide meaningful portfolio diversification, reducing the company's dependence on the inherent cyclicality of commercial shipbuilding."
+          }
+        },
+        {
+          "title": {
+            "ko": "한화 그룹 생태계 시너지 — '육·해·공 통합 방산'의 플랫폼 가치",
+            "en": "Hanwha Group Ecosystem — Platform Value of Integrated Land-Sea-Air Defense"
+          },
+          "body": {
+            "ko": "2023년 한화그룹 편입 이후 한화에어로스페이스·한화시스템과 함께 '육·해·공 통합 방산' 체계를 갖추게 되었으며, 이는 글로벌 방산 시장에서 단품 판매를 넘어 '통합 안보 솔루션' 제공자로 포지셔닝을 강화하는 기반이 된다. 한화엔진의 대(對)한화오션 선박 엔진 공급 비중이 2025년 기준 41.0%까지 상승하는 등 그룹 내부 조달 비율 확대를 통한 원가 경쟁력 강화도 진행 중이다. 한화그룹은 방산 3사 합산 자산 성장을 기반으로 2026년 재계 5위로 도약했으며, 이는 금융 조달 기반 강화와 글로벌 수주전에서의 신인도 제고에 긍정적인 환경을 조성한다.",
+            "en": "Since joining the Hanwha Group in 2023, Hanwha Ocean has become part of an integrated 'air-land-sea' defense portfolio alongside Hanwha Aerospace and Hanwha Systems, positioning the group as a provider of integrated security solutions rather than a single-product defense supplier in global markets. Internal procurement efficiencies are deepening—Hanwha Engine's share directed to Hanwha Ocean reached 41.0% in 2025, contributing to cost competitiveness. The Hanwha Group's ascent to Korea's 5th-largest conglomerate in 2026, driven by the combined asset growth of its three defense affiliates, creates a more favorable environment for capital raising and enhances corporate credibility in global defense procurement processes."
+          }
+        }
+      ],
+      "bear": [
+        {
+          "title": {
+            "ko": "신조선가 하락 — 2027년 이후 이익률 정점 논쟁",
+            "en": "Newbuilding Price Decline — Peak Earnings Debate Beyond 2027"
+          },
+          "body": {
+            "ko": "2024년 10월부터 하락으로 전환한 신조선가 지수는 최근 보도 기준으로 LNGC 고점 대비 -3.4%, VLCC -3.8%, 컨테이너선 -0.9%, LPGC -1.2% 등 주요 선종에 걸쳐 광범위하게 약세를 보이고 있다. 조선 전문 애널리스트들은 현 고선가 수주잔고가 2026년까지 실적을 뒷받침하지만, 선가 하락의 영향이 2027년부터 실적에 가시적으로 반영될 수 있다고 지적한다. 발주량 감소 추세가 지속될 경우 선가 하락폭이 확대되고 실적 피크아웃 시점이 앞당겨질 수 있어, 현재의 이익 성장세가 구조적인지 아니면 고선가 소진 효과에 한정되는지에 대한 점검이 필요하다.",
+            "en": "The global newbuilding price index has been declining since October 2024, with recent reports citing broad-based softness: LNGC -3.4% from peak, VLCC -3.8%, container ship -0.9%, and LPGC -1.2%. Shipbuilding analysts note that while the current high-price backlog supports earnings through 2026, the impact of lower contract prices could become visible in financials from 2027 onwards, with the downside risk amplified if new ordering volumes continue to trend lower. This raises the fundamental question of whether the current earnings growth trajectory is structural in nature or primarily a function of working through a high-price legacy backlog—an important distinction for assessing the medium-term investment case."
+          }
+        },
+        {
+          "title": {
+            "ko": "중국 수주 점유율 상승 및 대(對)한화 제재 리스크",
+            "en": "Rising Chinese Market Share and China Sanction Risk Against Hanwha"
+          },
+          "body": {
+            "ko": "중국의 전 세계 선박 수주 점유율이 지속적으로 증가하고 있으며, 이는 한국 조선업 전반의 중장기 가격 경쟁력에 압박 요인이 된다. 미·중 패권 경쟁 심화 과정에서 한화 미국 법인 계열사가 중국으로부터 한시적 제재를 받은 사례가 있으며, 한·미 조선 협력(MASGA)이 심화될수록 중국의 추가 보복 카드가 재가동될 수 있다. 한국 조선사들이 중국산 기자재 의존도를 단기간에 줄이기 어려운 공급망 구조를 감안할 때, 공급망 이중화 비용과 지정학적 불확실성은 지속적인 수익성 부담 요소로 잔존한다.",
+            "en": "China's global vessel order market share has been consistently expanding, placing growing long-term competitive pressure on Korean shipbuilders' pricing power. In the context of intensifying U.S.-China strategic rivalry, Hanwha's U.S. affiliate entities were temporarily sanctioned by China (subsequently suspended amid a U.S.-China trade truce), and further retaliation cannot be ruled out as Korea-U.S. shipbuilding cooperation deepens through MASGA. Given Korean shipbuilders' near-term difficulty in reducing reliance on Chinese components, supply chain duplication costs and geopolitical exposure remain persistent headwinds to profitability."
+          }
+        },
+        {
+          "title": {
+            "ko": "특수선 역량 확충 비용 및 수주 기대 대비 실행 리스크",
+            "en": "Defense Capacity Investment Costs and Execution Risk vs. Market Expectations"
+          },
+          "body": {
+            "ko": "특수선 사업 확대를 위한 도크 증설 및 인력 확충에 수반되는 고정비 증가는 단기적으로 특수선 부문의 마진 성장을 제한할 수 있다는 분석이 있다. 캐나다 잠수함(CPSP) 수주의 경우 한국과 독일 TKMS 간 분할 수주 방식으로 귀결될 가능성이 제기된 바 있으며, 이 경우 시장이 기대한 규모보다 수주 물량이 적어질 수 있다. 필리조선소의 2035년까지 건조 능력 10배 이상 확대 목표 또한 상당한 자본 지출과 장기 실행 리스크를 내포하고 있어, 단기 현금 흐름에 부담이 될 수 있다.",
+            "en": "The fixed-cost burden from drydock expansion and workforce ramp-up for the defense/special ships segment is expected to cap near-term margin growth in that business unit, per recent analyst commentary. For the Canada CPSP, market reports have raised the possibility of a split award between Korea and Germany's TKMS, which would result in a smaller contracted volume than the market had been pricing in. The Philly Shipyard's ambitious plan to scale capacity tenfold by 2035—from approximately 1–1.5 ships per year currently—also entails significant ongoing capital expenditure and long-dated execution risk, potentially weighing on near-term free cash flow generation."
+          }
+        }
+      ],
+      "risks": [
+        {
+          "cat": {
+            "ko": "거시·사이클 리스크",
+            "en": "Macro & Cycle Risk"
+          },
+          "body": {
+            "ko": "글로벌 교역량 위축 및 미국 관세 정책 변화는 LNG 수요 전망과 해상 물동량 변동성을 높여 선박 발주 심리에 간접적 영향을 미칠 수 있다. 신조선가 하락 사이클이 예상보다 가파를 경우 2027년 이후 실적 가시성이 낮아지면서 현재의 높은 성장 전망에 대한 조정 압력이 발생할 수 있다. 원달러 환율의 급격한 변동도 수주 당시 계약가와 실현 매출 간 편차를 야기해 분기별 실적 변동성을 높이는 요인이 된다.",
+            "en": "Weakening global trade volumes and shifts in U.S. tariff policy could indirectly dampen vessel ordering sentiment by elevating uncertainty around LNG demand and marine freight dynamics. A steeper-than-expected decline in the newbuilding price cycle would reduce earnings visibility beyond 2027 and could trigger downward revisions to current elevated growth projections. Sharp KRW/USD exchange rate swings also introduce variance between contracted order prices and realized revenues, adding to quarterly earnings volatility."
+          }
+        },
+        {
+          "cat": {
+            "ko": "정책·법제 리스크 (미국 입법 불확실성)",
+            "en": "Regulatory & Legislative Risk (U.S. Enabling Legislation)"
+          },
+          "body": {
+            "ko": "미국 내 외국 조선소의 미 해군 함정 신조를 제한하는 번스-톨리프슨법과 연안 화물 운반을 미국산 선박으로 제한하는 존스법이 현행대로 유지될 경우, 필리조선소를 통한 미 해군 신조 수주 접근성이 제한된다. MASGA 관련 법안의 의회 통과 지연은 시장이 기대하는 미국 방산·상선 신조 수주 수익화 시점을 유의미하게 늦출 수 있다. 트럼프 행정부의 정책 우선순위 변화나 의회 내 협상 교착 상태 발생 시, MASGA 시나리오에 대한 주가 재평가 위험이 존재한다.",
+            "en": "The Burns-Tolefson Act (prohibiting foreign shipyards from building U.S. Navy vessels) and the Jones Act (restricting domestic cargo to U.S.-built ships), if maintained in their current form, would limit Philly Shipyard's access to U.S. Navy new construction contracts. Delays in passing MASGA-enabling legislation in Congress could meaningfully defer the monetization timeline for U.S. defense and commercial new-build opportunities—a key component of the current long-term growth thesis. A shift in the Trump administration's policy priorities or a Congressional impasse could trigger a reassessment of the MASGA scenario premium embedded in the share price."
+          }
+        },
+        {
+          "cat": {
+            "ko": "오버행·밸류에이션 리스크",
+            "en": "Overhang & Valuation Risk"
+          },
+          "body": {
+            "ko": "한국산업은행이 보유 중인 한화오션 잔여 지분의 추가 매각 가능성은 펀더멘털과 무관하게 수급 부담으로 작용할 수 있다. 특수선 수주 지연, 신조선가 추가 하락, 고정비 증가가 동시에 현실화될 경우 증권사 컨센서스 실적 전망치 하향 조정 리스크가 있으며, 이는 현재 밸류에이션을 지지하는 이익 성장 시나리오에 압박이 된다. 주가의 52주 고점(154,800원) 대비 현재가(116,000원)는 약 25% 하락한 상태지만, 특수선 수주 및 MASGA 기대가 여전히 상당 부분 반영된 수준으로 평가되어 기대 대비 실적 미달 시 추가 조정 가능성을 배제하기 어렵다.",
+            "en": "The potential further disposal of KDB's (Korea Development Bank) residual stake in Hanwha Ocean represents a latent supply overhang that could pressure the share price irrespective of underlying fundamentals. Should defense order delays, further newbuilding price weakness, and fixed-cost pressures materialize simultaneously, consensus earnings estimates could be revised lower, undermining the profit-growth scenario that underpins the current valuation. Although the share price at ₩116,000 is approximately 25% below the 52-week high of ₩154,800, the stock is still considered to reflect a significant portion of the defense order and MASGA premium, meaning downside risk from an earnings miss should not be dismissed."
+          }
+        }
+      ],
+      "verdict": {
+        "stance": {
+          "ko": "긍정적",
+          "en": "Constructive"
+        },
+        "body": {
+          "ko": "한화오션은 DART 공시로 확인된 2025년 영업이익 1.2조 원(+390.8%), 2026년 1분기 영업이익 4,411억 원(+70.6%)이라는 수치를 통해 실적 턴어라운드가 일회성 효과가 아닌 구조적 수익성 개선임을 입증하고 있다. LNG 고선가 수주잔고의 매출 인식 가속이라는 단기 이익 엔진과, 방산·MASGA·해양플랜트 반등이라는 중장기 성장 옵션이 동시에 작동하는 복합 성장 스토리라는 점에서 기업 가치의 방향성은 긍정적으로 평가된다. 다만 2024년 10월 이후 진행 중인 신조선가 하락이 2027년 이후 이익률에 미칠 영향, 특수선 역량 확충 비용에 따른 단기 마진 압박, 캐나다 CPSP 등 방산 수주의 실현 규모 불확실성은 기대치를 조율하는 요인으로 작용할 수 있다. 2026년 내 핵심 촉매—방산 파이프라인 수주 결과, FPSO 수주 가시화, MASGA 관련 법안 진전—가 순차적으로 실현될 경우 추가적인 이익 성장이 뒷받침될 가능성이 높다. 이와 같은 복합 성장 스토리와 높은 기대 선반영을 함께 고려할 때, 실적 모멘텀과 수주 이벤트를 지속적으로 확인하면서 접근하는 균형 잡힌 시각이 적절하다.",
+          "en": "DART-confirmed metrics—FY2025 operating profit of ₩1.2 trillion (+390.8% YoY) and Q1 2026 operating profit of ₩441.1 billion (+70.6% YoY)—demonstrate that Hanwha Ocean's earnings turnaround reflects a structural improvement in profitability, not a one-off event. The company's compound growth story—combining a near-term engine of accelerating high-price LNG carrier revenue recognition with medium-to-long-term growth options in defense, MASGA, and offshore plant recovery—provides a constructive fundamental backdrop. However, three factors require ongoing calibration: the impact on post-2027 margins from the newbuilding price cycle that turned lower in October 2024; near-term margin pressure from defense capacity investment; and the uncertainty around the ultimate scale of CPSP and other pipeline defense awards. If key 2026 catalysts—defense pipeline award outcomes, FPSO order visibility, and U.S. MASGA legislative progress—materialize sequentially, the probability of sustained earnings growth remains high. Given the combination of a compelling long-term growth story and the degree of expectation already embedded in the share price, a disciplined, evidence-based approach—tracking earnings momentum alongside each successive order and policy event—is the appropriate analytical framework."
+        }
+      },
+      "sources": [
+        "https://www.digitaltoday.co.kr/news/articleView.html?idxno=664423",
+        "https://www.shippingnewsnet.com/news/articleView.html?idxno=69948",
+        "https://www.gukjenews.com/news/articleView.html?idxno=3598021",
+        "https://www.fnnews.com/news/202605290758039110",
+        "https://eureka.hankyung.com/insight/detail/16831",
+        "https://iissue.record-99.com/entry/%ED%95%9C%ED%99%94%EC%98%A4%EC%85%98-%EC%8B%A4%EC%A0%81-%EB%B6%84%EC%84%9D-%EB%B0%8F-%EC%B5%9C%EC%8B%A0-%EC%88%98%EC%A3%BC-%EC%A0%84%EB%A7%9D-%EC%88%98%EA%B8%89-%ED%98%84%ED%99%A9-%EB%B0%8F-%EB%B6%84%EC%84%9D%EC%9E%90%EB%A3%8C-%EA%B3%B5%EC%9C%A0",
+        "https://www.cbci.co.kr/news/articleView.html?idxno=572012",
+        "https://www.topdaily.kr/articles/109905",
+        "https://www.hdhy.co.kr/news/articleView.html?idxno=33859",
+        "https://kidd.co.kr/news/241025",
+        "https://www.handmk.com/news/articleView.html?idxno=36109",
+        "https://www.joongangenews.com/news/articleView.html?idxno=523260",
+        "https://www.topstarnews.net/news/articleView.html?idxno=16075615",
+        "https://m.g-enews.com/view.php?ud=202604282106365580fbbec65dfb_1",
+        "https://www.hankyung.com/article/202605120788i",
+        "https://www.achimgol.com/2026/05/Hanwha-Ocean-Stock-Price.html",
+        "https://upward-curve.co.kr/%ED%95%9C%ED%99%94%EC%98%A4%EC%85%98-%EC%A3%BC%EA%B0%80-%EC%A0%84%EB%A7%9D/",
+        "https://comp.fnguide.com/SVO2/ASP/SVD_Main.asp?gicode=A042660"
+      ],
+      "ticker": "042660",
+      "name": "한화오션",
+      "name_en": "Hanwha Ocean Co., Ltd.",
+      "sector": "조선",
+      "categories": [
+        "조선"
+      ],
+      "market": "코스피",
+      "reportDate": "2026-06-04",
+      "dataDate": "20260602"
+    },
+    "006800": {
+      "title": {
+        "ko": "사상 최대 실적과 글로벌 전환의 동시 점화",
+        "en": "Record Earnings and Global Structural Transformation Firing in Tandem"
+      },
+      "lead": {
+        "ko": "2025년 사상 최대 실적에 이어 2026년 1분기에도 영업이익이 전년 동기 대비 297% 급증하며, 미래에셋증권은 브로커리지·PI·해외법인이라는 세 엔진의 동시 가동으로 전통 증권업의 경계를 넘은 글로벌 투자 플랫폼으로의 구조적 전환을 실적으로 증명하고 있다.",
+        "en": "Following all-time record results in 2025, Mirae Asset Securities posted a staggering 297% year-on-year jump in Q1 2026 operating profit, demonstrating in hard numbers that its structural transformation into a global investment platform — powered by simultaneous growth in brokerage, principal investment, and overseas subsidiaries — is now firmly under way."
+      },
+      "desc": {
+        "ko": "미래에셋증권(006800)은 DART 공시 기준 2025년 영업이익 1.9조원(+61.2%)·당기순이익 1.6조원(+71.0%)으로 창사 이래 최대 실적을 달성했으며, 2026년 1분기에도 영업이익 1.4조원(+297.2%)이라는 전례 없는 분기 성과를 이어갔다. 스페이스X·x.AI 등 글로벌 혁신 비상장 기업에 대한 PI 투자, 전 금융업권 DC 연금 1위 달성, 해외법인 세전이익의 200% 급증이 실적 도약의 핵심 동인으로 확인됐다. 다만 PI 평가이익의 높은 변동성, 잔존하는 부동산 PF 리스크, 지정학적 불확실성은 지속적인 모니터링이 요구되는 약세 요인이다.",
+        "en": "Mirae Asset Securities (006800) delivered DART-reported record results in 2025 — operating profit of KRW 1.9 trillion (+61.2%) and net income of KRW 1.6 trillion (+71.0%) — and extended the momentum into Q1 2026 with unprecedented quarterly operating profit of KRW 1.4 trillion (+297.2%). The key drivers were PI gains from stakes in global innovators such as SpaceX and xAI, a rise to No. 1 in DC pension net inflows across all financial sectors, and a roughly 200% surge in overseas subsidiary pre-tax profit. Key risks requiring ongoing monitoring include the high mark-to-market volatility of PI assets, residual real estate project finance exposure, and geopolitical uncertainties that have already constrained IB deal flow."
+      },
+      "keypoints": [
+        {
+          "ko": "2025년 ROE 12.4% — 3분기 연속 두 자릿수 유지로 구조적 수익성 개선 확인",
+          "en": "2025 ROE of 12.4%, sustaining double-digit returns for three consecutive quarters, confirms structural profitability improvement"
+        },
+        {
+          "ko": "해외법인 세전이익 4,981억원(+200%), '2030년 목표 5,000억원' 목표에 1년여 만에 조기 근접",
+          "en": "Overseas subsidiary pre-tax profit of KRW 498.1 billion (+200% YoY), already near the self-imposed 2030 target of KRW 500 billion"
+        },
+        {
+          "ko": "PI 포트폴리오: 스페이스X·x.AI 등 투자로 4분기 연속 공정가치 흑자, 2026년 1분기 단독 8,040억원 평가이익",
+          "en": "PI portfolio delivering four consecutive quarters of fair-value gains; Q1 2026 alone produced approximately KRW 804 billion in fair-value appreciation"
+        },
+        {
+          "ko": "2025년 DC 연금 전 금융업권 1위 달성·연금자산 57.8조원(+35%), 장기 경상 수익원 확보",
+          "en": "Ranked No. 1 in DC pension net inflows across all financial sectors in 2025, with KRW 57.8 trillion in pension assets (+35%) providing durable recurring revenue"
+        },
+        {
+          "ko": "토큰증권·글로벌 MTS 등 '미래에셋 3.0' 신사업이 차기 성장 동력으로 구체화 진행 중",
+          "en": "New businesses under 'Mirae Asset 3.0' — including token securities (STO) and a global mobile trading system — are materializing as next-phase growth catalysts"
+        }
+      ],
+      "business": {
+        "ko": "미래에셋증권(006800)은 국내 최대 규모 증권사 중 하나로, 브로커리지(위탁매매)·자산관리(WM)·트레이딩·기업금융(IB)·자기자본투자(PI)·글로벌 비즈니스 등 6개 핵심 부문을 고루 영위하는 종합 투자전문기업이다. 매출 구조상 유가증권 평가·처분이익이 최대 비중을 차지하며, 수수료 수익(브로커리지·WM)과 이자 수익이 그 뒤를 잇는 다층적 수익 구조를 갖추고 있다. 2025년 기준 브로커리지 수수료 수익이 1조 110억원(+43%), 트레이딩 및 기타 금융손익이 1조 2,657억원(+14%), 금융상품 판매 수수료가 3,421억원(+21%)을 기록하며 핵심 3개 부문 모두 사상 최대를 경신했다. 연금 사업에서는 2025년 확정기여형(DC) 시장 전 금융업권 1위로 도약했으며, 57.8조원의 연금자산은 경기 사이클에 상대적으로 덜 민감한 장기 수익원 역할을 한다. 글로벌 측면에서는 2025년 말 기준 11개 지역·28개 거점에 약 5,000여 명의 인력을 운용하며 국내 증권사 중 최대 규모의 해외 네트워크를 구축하고 있다. 총 고객자산(AUM)은 2025년 말 602조원(국내 518조원, 해외 84조원)으로 1년 만에 약 120조원 증가했으며, 이는 경쟁사를 크게 상회하는 규모이다. PI 부문에서는 스페이스X·x.AI 등 해외 혁신 비상장 기업 투자를 통해 공정가치 평가이익 창출이 구조화되고 있으며, 한국금융지주·삼성증권·NH투자증권 등 경쟁 대형 증권사 대비 가장 뚜렷한 차별화 포인트로 부각된다. '미래에셋 3.0' 전략 아래 자산 토큰화·스테이블코인 등 디지털 자산과의 융합 신사업도 본격화하고 있으며, 홍콩법인의 디지털자산 리테일 라이선스 확보 및 2026년 6월 글로벌 MTS(모바일 트레이딩 시스템) 출시 준비가 차기 성장 동력으로 주목받고 있다.",
+        "en": "Mirae Asset Securities (006800) is one of Korea's largest brokerage firms, operating as a diversified investment specialist across six core segments: brokerage, wealth management (WM), trading, investment banking (IB), principal investment (PI), and global business. Revenue is led by securities valuation and disposal gains, supplemented by commission income from brokerage and WM and by interest income, creating a multi-layered earnings structure. In 2025, brokerage commission revenue reached KRW 1.011 trillion (+43% YoY), trading and other financial income KRW 1.266 trillion (+14%), and financial product sales fees KRW 342.1 billion (+21%), with all three core fee streams hitting all-time records. On the pension front, the firm rose to No. 1 in DC pension net inflows across all financial sectors in 2025, managing KRW 57.8 trillion in pension assets that serve as a relatively cycle-resilient recurring revenue base. In terms of global footprint, the firm operates 28 overseas bases across 11 regions with approximately 5,000 employees as of end-2025, the most extensive international network among Korean brokerages — ahead of Korea Investment Securities, NH Investment Securities, Samsung Securities, and KB Securities. Total customer assets (AUM) stood at KRW 602 trillion at year-end 2025 (KRW 518 trillion domestic, KRW 84 trillion overseas), a KRW 120 trillion increase in just one year. The PI segment, featuring stakes in global innovators such as SpaceX and xAI, has emerged as the most distinctive differentiator relative to domestic peers, generating consistent fair-value gains that elevate reported earnings well above those of traditional brokerage-focused competitors. Under its 'Mirae Asset 3.0' vision, the firm is advancing a digital-physical convergence strategy including asset tokenization and stablecoins, with the Hong Kong subsidiary having secured a digital asset retail license and preparing to launch a global mobile trading system (MTS) as early as June 2026, broadening its retail reach beyond existing markets."
+      },
+      "recent": {
+        "ko": "DART 공시 기준 2025년 연결 매출액은 29.3조원(전기 대비 +31.7%), 영업이익은 1조 9,150억원(+61.2%), 당기순이익은 1조 5,936억원(+71.0%)으로 창사 이래 사상 최대 실적을 달성했다. 연환산 자기자본이익률(ROE)은 12.4%로 3분기 연속 두 자릿수를 기록했으며, 세전이익도 2조 800억원으로 전년 대비 약 70% 증가했다. PI 투자자산이 4분기 연속 공정가치 흑자를 이어가며 약 6,450억원의 평가이익을 창출했고, 스페이스X·x.AI 등 해외 혁신기업 가치 상승이 직접 기여한 것으로 확인됐다. 해외법인 세전이익은 전년 대비 약 200% 급증한 4,981억원으로 전체 세전이익의 24%를 차지했으며, 뉴욕법인이 사상 최대인 2,142억원을 기록하는 등 선진·이머징 시장 모두에서 최고치를 경신했다. DART 공시 2026년 1분기(누적) 기준으로는 매출액 14.4조원(+138.4%), 영업이익 1.4조원(+297.2%), 당기순이익 1.0조원(+288.0%)이라는 전례 없는 수치를 시현했다. 2026년 1분기 컨퍼런스 콜에 따르면 PI 공정가치 평가이익이 분기 기준 약 8,040억원에 달하며 직전 분기의 최고치를 재차 경신했고, 해외법인 세전이익도 2,432억원으로 또 다시 사상 최대를 이어갔으며 세후 연환산 ROE 14%를 달성했다. 2026년 1분기에는 국내 증시의 급등락으로 거래대금이 전년 동기 대비 크게 늘어나면서 브로커리지 수익도 업계 전반에 걸쳐 강세를 보였으며, 대형 증권사들의 어닝 서프라이즈를 뒷받침했다. 현재 주가는 2026년 6월 4일 기준 57,800원(전일 대비 -5.09%)으로, 시가총액 약 32.8조원·당일 거래대금 1,960억원으로 투자자 관심이 지속되고 있다.",
+        "en": "On a DART-reported consolidated basis, Mirae Asset Securities achieved all-time record results in 2025: revenue of KRW 29.3 trillion (+31.7% YoY), operating profit of KRW 1.915 trillion (+61.2%), and net income of KRW 1.594 trillion (+71.0%). Annualized ROE reached 12.4%, maintaining a double-digit return for three consecutive quarters, while pre-tax profit hit KRW 2.08 trillion, up approximately 70% year-on-year. The PI book recorded four consecutive quarters of fair-value gains totaling approximately KRW 645 billion, primarily driven by valuation appreciation in stakes in SpaceX, xAI, and other overseas innovators. Overseas subsidiaries contributed KRW 498.1 billion in pre-tax profit (+200% YoY), accounting for 24% of consolidated pre-tax income, with the New York office posting a record KRW 214.2 billion — placing the firm within striking distance of its own 2030 target of KRW 500 billion, achieved years ahead of schedule. Q1 2026 DART-reported figures were equally striking: KRW 14.4 trillion in revenue (+138.4%), KRW 1.4 trillion in operating profit (+297.2%), and KRW 1.0 trillion in net income (+288.0%). According to the Q1 2026 earnings conference call, PI fair-value gains reached approximately KRW 804 billion in the single quarter — surpassing the prior record — while overseas subsidiaries generated a record pre-tax profit of KRW 243.2 billion, implying a 14% annualized after-tax ROE. Surging domestic equity trading volume in Q1 2026, significantly above the same period in 2025, simultaneously boosted brokerage revenue across the industry, with consensus for combined operating profit of Korea's five major brokerages exceeding KRW 3 trillion. As of June 4, 2026, the stock trades at KRW 57,800 (down 5.09% on the day), with a market capitalization of approximately KRW 32.8 trillion and daily turnover of KRW 196 billion."
+      },
+      "outlook": {
+        "ko": "향후 실적 전망의 최대 변수는 PI 포트폴리오 내 핵심 비상장 자산의 가치 실현 여부다. 스페이스X의 IPO가 현실화될 경우 대규모 실현 이익이 반영될 수 있어 PI 부문의 잠재적 업사이드는 여전히 유효하다. 해외법인은 선진·이머징 시장 모두에서 성장세를 이어가고 있으며, 홍콩법인의 글로벌 MTS 출시와 디지털자산 리테일 라이선스 활용이 리테일 접점 확장의 주요 촉매로 기능할 수 있다. 연금 자산은 이른바 '머니무브' 흐름과 DC 시장 1위 지위를 기반으로 장기 구조적 성장이 기대되며, AUM 증가에 따른 관리보수 수익도 꾸준히 확대될 전망이다. 디지털 자산 분야에서는 토큰증권(STO) 제도 정비가 진행됨에 따라 선도적인 컨소시엄 참여가 중장기 경쟁 우위로 전환될 가능성이 있으며, 보스턴컨설팅그룹 전망 기준 2030년 약 367조원에 달하는 STO 시장은 충분한 성장 기회를 내포하고 있다. 다만 PI 평가이익의 변동성은 분기 실적의 노이즈를 크게 확대할 수 있으며, 부동산 PF 리스크가 완전히 해소되지 않은 점과 지정학적 불확실성에 따른 IB 딜 감소 가능성이 성장 속도를 제약하는 요인으로 작용할 수 있다. 국내 브로커리지 환경은 개인 투자자 참여도와 거래대금에 민감하게 반응하므로, 지수 방향성 및 시장 환경 변화가 2026년 연간 실적의 핵심 변수로 부각될 것으로 판단된다.",
+        "en": "The most critical variable for forward earnings is the realization of value in core PI portfolio holdings. A potential SpaceX IPO, if it materializes, could translate large unrealized gains into recognized income, preserving a meaningful upside scenario for the PI segment. Overseas subsidiaries continue to expand in both developed and emerging markets, with the Hong Kong office's planned global MTS launch and digital asset retail license expected to serve as catalysts for broadening retail reach and cross-selling WM services. The pension business is structurally well-positioned to benefit from ongoing household asset allocation shifts ('money moves'), with DC market leadership providing a compounding base for fee income growth alongside expanding total AUM. On digital assets, the firm's early-mover position in STO consortia may translate into competitive advantage as Korea's token securities regulatory framework takes shape, with BCG estimating the global STO market could reach approximately KRW 367 trillion by 2030. Key risks to the outlook include the inherent mark-to-market volatility of unlisted PI assets — which can amplify quarterly earnings swings sharply in either direction — residual real estate PF credit risk, and geopolitical headwinds that dampened IB deal flow in Q1 2026. Domestic brokerage revenue remains highly sensitive to retail investor activity and trading volume levels, making index direction and market sentiment important swing factors for 2026 full-year estimates."
+      },
+      "bull": [
+        {
+          "title": {
+            "ko": "PI 포트폴리오의 구조적 가치 창출과 스페이스X IPO 옵션",
+            "en": "Structural PI Value Creation and the SpaceX IPO Option"
+          },
+          "body": {
+            "ko": "스페이스X·x.AI 등 글로벌 혁신 비상장 기업에 대한 선제 투자는 국내 경쟁 증권사에서 찾아볼 수 없는 차별화된 수익원으로, 2025년 4분기 연속 PI 공정가치 흑자와 함께 약 6,450억원의 평가이익이 발생했다. 2026년 1분기에는 분기 기준 약 8,040억원으로 기록이 재차 경신됐으며, 홍콩 상장기업 코너스톤 투자 등 포트폴리오 다변화도 진행 중이다. 스페이스X IPO와 같은 가치 실현 이벤트가 현실화될 경우, 실현 이익으로의 전환은 추가적인 대형 이익 인식 촉매로 작용해 당기 실적을 크게 끌어올릴 수 있다.",
+            "en": "Early-stage stakes in global innovators like SpaceX and xAI represent a uniquely differentiated income stream absent among domestic brokerage peers, generating approximately KRW 645 billion in fair-value gains across four consecutive profitable quarters in 2025. Q1 2026 saw that record surpassed at approximately KRW 804 billion in a single quarter, with portfolio diversification continuing through cornerstone investments in Hong Kong-listed companies such as MiniMax. A potential SpaceX IPO or similar value-realization event would convert accumulated unrealized appreciation into recognized income, potentially serving as a large incremental earnings catalyst."
+          }
+        },
+        {
+          "title": {
+            "ko": "해외법인의 가파른 성장과 선점된 글로벌 플랫폼",
+            "en": "Accelerating Overseas Subsidiary Growth and First-Mover Global Platform"
+          },
+          "body": {
+            "ko": "2025년 해외법인 세전이익이 전년 대비 약 200% 급증해 전체 세전이익의 24%를 차지하며 해외 사업이 실질적인 성장 기여 축으로 부상했다. 국내 증권사 중 가장 방대한 11개 지역·28개 거점 네트워크는 단기간 내 복제가 어려운 구조적 해자이며, 2026년 1분기에도 해외법인 세전이익 2,432억원으로 성장 모멘텀이 지속됨을 확인했다. 인도·베트남·인도네시아 등 이머징 WM 자산이 78조원으로 성장하는 가운데, 홍콩의 글로벌 MTS 출시는 리테일 고객 접점의 지리적 확장을 가속화할 잠재력을 지닌다.",
+            "en": "Overseas subsidiaries' pre-tax profit surged approximately 200% in 2025 to KRW 498.1 billion, accounting for 24% of total consolidated pre-tax income and cementing global operations as a genuine growth pillar. The firm's network of 28 bases across 11 regions — the largest among Korean brokerages — represents a structural moat that competitors cannot replicate quickly, and the Q1 2026 record of KRW 243.2 billion in overseas pre-tax profit confirms the momentum is sustaining. With emerging market WM assets in India, Vietnam, and Indonesia growing to KRW 78 trillion and the Hong Kong subsidiary preparing its global MTS launch, the firm has multiple levers to geographically expand its retail client footprint."
+          }
+        },
+        {
+          "title": {
+            "ko": "연금·AUM 복리 성장의 장기 수익 기반",
+            "en": "Compounding Pension and AUM Growth as a Durable Revenue Foundation"
+          },
+          "body": {
+            "ko": "2025년 전 금융업권 DC 시장 유입액 1위 달성과 연금자산 57.8조원(+35%)은 경상 수수료 수익의 장기 성장 기반을 더욱 공고히 하는 요인이다. 총 AUM 602조원은 자산관리 수익의 파이를 지속적으로 키우는 복리 효과를 창출하며, 연금 구조의 높은 이탈 저항성 덕분에 수익 가시성이 우수하다. '머니무브' 흐름이 지속됨에 따라 은행·보험에서 증권으로 이동하는 자금이 미래에셋증권의 AUM 성장을 구조적으로 지지하고 있어 장기적 수익 확장성이 높다.",
+            "en": "Achieving No. 1 in DC pension net inflows across all financial sectors in 2025 — and growing pension assets to KRW 57.8 trillion (+35%) — provides a durable and expanding base for recurring fee income that is relatively resilient to market cycles. Total AUM of KRW 602 trillion generates a compounding revenue effect, and the structurally captive nature of pension assets provides high earnings visibility even in weaker market environments. The ongoing 'money movement' trend from bank deposits and insurance products toward capital market solutions continues to structurally underpin AUM growth, offering strong long-term revenue scalability."
+          }
+        }
+      ],
+      "bear": [
+        {
+          "title": {
+            "ko": "PI 평가이익의 높은 변동성과 지속 가능성 불확실",
+            "en": "High Volatility and Uncertain Sustainability of PI Valuation Gains"
+          },
+          "body": {
+            "ko": "PI 평가이익은 미상장 자산의 공정가치 변동에 직접 연동되므로, 글로벌 시장 환경 악화 시 대규모 평가손실로 빠르게 반전될 수 있다. 과거 고금리 장기화 국면(2022~2023년)에서는 해외법인 세전이익이 2021년 2,432억원에서 2023년 485억원까지 급감한 전례가 있어 변동성의 크기를 가늠할 수 있다. 혁신 기업 가치 상승에 의존하는 현재 수익 구조는 시장 변동성 확대 국면에서 실적 예측 가능성을 크게 저하시키며, 이는 업종 내 피어 대비 밸류에이션 할인 요인으로 지속 작용할 수 있다.",
+            "en": "PI valuation gains are directly tied to fair-value movements of unlisted assets, making them susceptible to rapid and large reversals if global market conditions deteriorate. Historical precedent illustrates the scale of this risk: during the prolonged high-rate environment of 2022-2023, overseas subsidiary pre-tax profit collapsed from KRW 243.2 billion (2021) to just KRW 48.5 billion (2023). The current earnings structure's reliance on innovation-sector asset appreciation significantly reduces forward earnings predictability during periods of elevated market volatility, which may justify a persistent peer-relative valuation discount."
+          }
+        },
+        {
+          "title": {
+            "ko": "부동산 PF 잔존 리스크",
+            "en": "Residual Real Estate Project Finance Risk"
+          },
+          "body": {
+            "ko": "2026년 1분기 컨퍼런스 콜에 따르면 부동산 PF 시장은 부실 정리가 상당 부분 진행됐음에도 구조적 리스크가 여전히 잔존하고 있는 것으로 확인됐다. 1분기 신규 우량 사업장 공급 감소로 딜소싱 기회가 제한되었으며, 기업여신 수익은 전 분기 대비 감소했다. 금리 환경 악화 또는 주요 부동산 사업장의 재무적 어려움 심화 시 추가 충당금 적립이 불가피할 수 있으며, 이는 특정 분기 수익에 예상치 못한 부담으로 작용할 수 있다.",
+            "en": "The Q1 2026 conference call confirmed that while a significant portion of real estate PF distress has been resolved, structural risks remain present in the portfolio. In Q1, a reduction in quality new project supply limited deal sourcing opportunities, and corporate lending revenue declined quarter-over-quarter. Should the interest rate environment shift unfavorably or key development projects face further financial difficulty, additional provisioning requirements would be unavoidable, creating unexpected earnings headwinds in specific reporting periods."
+          }
+        },
+        {
+          "title": {
+            "ko": "국내 브로커리지 수익의 거래대금 의존도",
+            "en": "Domestic Brokerage Revenue Sensitivity to Market Trading Volume"
+          },
+          "body": {
+            "ko": "2026년 1분기 국내 증시 거래대금이 전년 동기 대비 크게 증가하며 브로커리지 수익이 급성장했으나, 이는 이례적인 급등락 장세라는 특수한 시장 환경에서 비롯된 측면이 크다. 지수 안정화 또는 하락 국면에서 개인 투자자 참여가 위축될 경우 브로커리지 수익은 빠르게 감소할 수 있다. 경쟁 심화에 따른 수수료 인하 압력은 구조적인 마진 하방 요인으로, 업계 전반의 브로커리지 수익률은 장기적으로 하향 압력을 받고 있어 이 부문 단독의 성장 지속성은 제한적이다.",
+            "en": "Brokerage revenue surged in Q1 2026 on the back of a significant increase in domestic equity trading volume, but much of this was driven by the highly unusual market environment of extreme index volatility. If conditions normalize or indices decline, reducing retail investor participation, brokerage revenue could contract rapidly. Structural commission compression from intensifying competition adds a longer-term headwind, as industry-wide brokerage yield margins face persistent downward pressure that limits sustainable growth from this segment alone."
+          }
+        }
+      ],
+      "risks": [
+        {
+          "cat": {
+            "ko": "거시경제 및 금융시장 리스크",
+            "en": "Macro and Financial Market Risk"
+          },
+          "body": {
+            "ko": "글로벌 금리 수준과 환율 변동은 해외 PI 자산의 공정가치와 해외법인 실적 양쪽에 직접 영향을 미친다. 원화 약세가 지속될 경우 해외 자산 평가 시 환손익 변동이 수반되며, 글로벌 금리의 급격한 상승은 비상장 혁신기업 밸류에이션 재조정으로 이어질 수 있다. 미국·중국 등 주요국의 경기 둔화 시나리오는 이머징 시장 해외법인의 브로커리지·WM 수익을 동반 약화시키면서 2025~2026년에 구축된 실적 성장의 선순환 구조를 교란시킬 수 있다.",
+            "en": "Global interest rate levels and currency movements directly affect both the fair value of overseas PI assets and the earnings contributions of international subsidiaries. Sustained Korean won weakness introduces foreign exchange noise into reported overseas income, while a sharp rise in global rates could trigger valuation resets for unlisted innovators in the PI book. An economic slowdown in major economies such as the U.S. and China would simultaneously weaken brokerage and WM revenues at emerging-market subsidiaries, potentially disrupting the virtuous earnings cycle established in 2025-2026."
+          }
+        },
+        {
+          "cat": {
+            "ko": "지정학적 리스크",
+            "en": "Geopolitical Risk"
+          },
+          "body": {
+            "ko": "2026년 1분기 컨퍼런스 콜에서 지정학적 리스크 확대에 따른 원자재 가격 상승이 딜 감소로 이어졌음이 직접 언급됐으며, IB 사업 실적이 전 분기 대비 감소했다. 중동·유럽의 지정학적 긴장과 미·중 무역 마찰은 글로벌 IB 딜 파이프라인과 투자심리에 지속적으로 부정적 영향을 미칠 수 있다. 11개 지역에 걸친 광범위한 해외 거점은 리스크 분산과 함께, 지역별 정치·법규 변화에 동시에 노출되는 구조이기도 해 관리 복잡도를 높인다.",
+            "en": "The Q1 2026 conference call explicitly cited rising commodity prices linked to escalating geopolitical risk as a factor that reduced deal activity and negatively impacted IB segment earnings sequentially. Ongoing geopolitical tensions in the Middle East and Europe, alongside U.S.-China trade friction, could persistently dampen global IB deal pipelines and investor sentiment going forward. The firm's broad exposure across 11 regions simultaneously provides diversification and exposes it to multi-jurisdictional political and regulatory risk, increasing management complexity."
+          }
+        },
+        {
+          "cat": {
+            "ko": "규제 및 디지털 신사업 리스크",
+            "en": "Regulatory and Digital New Business Risk"
+          },
+          "body": {
+            "ko": "토큰증권(STO)·디지털자산 등 신사업은 국내외 규제 정비 속도에 따라 사업화 일정이 지연되거나 수익화 시점이 불확실해질 수 있다. 홍콩법인의 디지털자산 리테일 라이선스 확보는 선도적 포지셔닝을 가능케 하지만, 디지털자산 시장의 높은 가격 변동성과 규제 리스크는 초기 운영 단계에서 손실 가능성을 내포한다. 국내 자본시장법 개편이나 금융감독 강화는 PI 한도·해외 신용공여 방식 등 성장 전략의 핵심 축에 영향을 줄 수 있어 규제 환경 모니터링이 필수적이다.",
+            "en": "New businesses such as token securities (STO) and digital assets are subject to regulatory development timelines domestically and internationally, creating uncertainty around commercialization schedules and the timing of meaningful revenue contributions. While the Hong Kong subsidiary's digital asset retail license enables a first-mover position, the inherent price volatility and regulatory uncertainty of digital asset markets carry early-stage loss risk during initial operations. Potential revisions to Korea's Capital Markets Act or tightening of financial supervision could constrain PI investment limits or overseas credit extension arrangements, affecting core pillars of the firm's growth strategy and requiring close ongoing monitoring."
+          }
+        }
+      ],
+      "verdict": {
+        "stance": {
+          "ko": "긍정적",
+          "en": "Constructive"
+        },
+        "body": {
+          "ko": "미래에셋증권은 브로커리지·WM·트레이딩 등 전통 사업 부문의 구조적 강세와 PI·해외법인이라는 차별화된 성장 엔진이 동시에 가동되며, 2025~2026년에 걸쳐 업계 최상위 수준의 실적 모멘텀을 이어가고 있다. 2025년 사상 최대 실적(ROE 12.4%)과 2026년 1분기의 폭발적인 영업이익 성장률(+297.2%)은 단순한 시황 수혜를 넘어 사업 구조 자체가 한 단계 고도화됐음을 시사한다. 연금 자산 DC 1위, 총 AUM 602조원, 해외법인 28개 거점 등 구조적 해자는 경쟁사 대비 실적 방어력과 중장기 성장 가시성을 동시에 제공한다. 다만 PI 평가이익의 높은 변동성이 분기 실적의 예측 가능성을 저해하고, 부동산 PF 잔존 리스크와 지정학적 불확실성이 완전히 해소되지 않은 점은 상시 점검이 필요한 약세 요인으로 남는다. 스페이스X IPO·글로벌 MTS 출시·STO 사업화 등 가시적인 중장기 촉매 요인이 다수 대기 중이며, 해외법인의 성장 궤적이 자기강화적 선순환 구조로 완전히 전환되는지 여부가 향후 밸류에이션 재평가의 핵심 트리거가 될 것으로 판단된다.",
+          "en": "Mirae Asset Securities is simultaneously benefiting from structural strength in traditional businesses — brokerage, WM, and trading — while two differentiated growth engines, PI and overseas subsidiaries, are delivering industry-leading earnings momentum across 2025 and into 2026. The 2025 all-time records (ROE 12.4%) and the Q1 2026 blowout (+297.2% operating profit growth) suggest that the business structure itself has advanced to a higher level, rather than merely reflecting a favorable market environment. Structural moats — including No. 1 DC pension position, KRW 602 trillion in total AUM, and 28 global bases across 11 regions — provide both earnings resilience and medium-to-long-term growth visibility that rivals struggle to match. That said, the high volatility of PI mark-to-market gains continues to reduce forward earnings predictability, and residual real estate PF risk alongside geopolitical uncertainties have not fully dissipated. Multiple concrete medium-term catalysts — a potential SpaceX IPO, the global MTS launch, and STO commercialization — remain in the pipeline, and whether the overseas subsidiary growth trajectory successfully transitions into a fully self-reinforcing virtuous cycle will likely be the key trigger for any further valuation re-rating."
+        }
+      },
+      "sources": [
+        "https://www.hankyung.com/article/202602093106P",
+        "https://www.hankyung.com/article/202602093112i",
+        "https://www.etnews.com/20260209000212",
+        "https://v.daum.net/v/zqbnY3V705",
+        "https://v.daum.net/v/20260209102543632",
+        "https://v.daum.net/v/20260315153900053",
+        "https://securities.miraeasset.com/newir/view/mobile/kr/business/global.jsp",
+        "https://datanews.co.kr/news/article.html?no=143417"
+      ],
+      "ticker": "006800",
+      "name": "미래에셋증권",
+      "name_en": "MIRAE ASSET SECURITIES CO.,LTD.",
+      "sector": "금융",
+      "categories": [
+        "금융"
+      ],
+      "market": "코스피",
+      "reportDate": "2026-06-04",
+      "dataDate": "20260602"
+    },
+    "000150": {
+      "title": {
+        "ko": "반도체 삼각편대 완성, 5조 인수 레버리지가 핵심 변수",
+        "en": "Semiconductor Triad Complete; ₩5 Trillion Acquisition Leverage Is the Critical Variable"
+      },
+      "lead": {
+        "ko": "SK실트론 인수로 CCL·웨이퍼·후공정 테스트를 잇는 반도체 수직계열화를 완성한 두산은 AI 소재·에너지 플랫폼으로의 4세대 전환에 방점을 찍었으나, 약 5조원 인수에 수반되는 대규모 레버리지 확대가 단기 핵심 리스크로 부상했다.",
+        "en": "Doosan has capped its fourth-generation transformation into an AI materials and energy platform by completing a semiconductor vertical chain—CCL, silicon wafer, and back-end testing—via the SK Siltron acquisition, yet the approximately ₩5 trillion deal and its associated leverage expansion have emerged as the critical near-term risk factor."
+      },
+      "desc": {
+        "ko": "두산(000150)은 1933년 설립된 코스피 상장 사업지주회사로, 두산에너빌리티·두산밥캣·두산로보틱스·두산퓨얼셀·두산테스나 등 24개 계열사를 거느리며 자체적으로 전자BG(CCL 소재)와 디지털이노베이션BU를 운영한다. 2026년 5월 SK와 SK실트론 지분 70.6%에 대한 주식매매계약(SPA)을 체결해 반도체 수직계열화를 완성했으며, DART 공시 기준 2026년 1분기 영업이익은 3,408억원(+71.7% YoY)을 기록해 강한 실적 개선세를 확인했다. 주가는 2026년 6월 1일 52주 신고가(2,489,000원) 직후 인수 재무 부담 우려로 6월 4일 기준 1,918,000원(-12.94%)까지 급락하며 높은 변동성을 시현하고 있다.",
+        "en": "Doosan (000150) is a KOSPI-listed operating holding company established in 1933, overseeing 24 affiliates including Doosan Enerbility, Doosan Bobcat, Doosan Robotics, Doosan Fuel Cell, and Doosan Tesna, while directly operating Electronics BG (CCL materials) and Digital Innovation BU. In May 2026, the company signed a share purchase agreement (SPA) with SK to acquire 70.6% of SK Siltron, completing its semiconductor vertical value chain. Per DART-confirmed data, Q1 2026 operating profit reached ₩340.8 billion (+71.7% YoY), affirming strong earnings momentum, while the share price plunged 12.94% to ₩1,918,000 by June 4, 2026—just days after hitting a 52-week high of ₩2,489,000 on June 1—reflecting mounting concerns over the financial burden of the large-scale acquisition."
+      },
+      "keypoints": [
+        {
+          "ko": "2026년 5월 SK실트론 지분 70.6% SPA 체결(약 5조원): CCL→웨이퍼→후공정 테스트 반도체 수직계열화 완성, 중공업 넘어 AI·반도체 기업으로 4세대 전환",
+          "en": "May 2026 SPA for 70.6% of SK Siltron (~₩5 trillion): completing a semiconductor vertical chain from CCL to wafer to back-end testing, marking Doosan's fourth-generation transformation into an AI/semiconductor company"
+        },
+        {
+          "ko": "DART 공시 2026년 1Q 영업이익 3,408억원(+71.7% YoY)·당기순이익 1,015억원(+799.1% YoY)으로 전 부문 실적 모멘텀 확인",
+          "en": "DART-confirmed Q1 2026 operating profit of ₩340.8 billion (+71.7% YoY) and net profit of ₩101.5 billion (+799.1% YoY) confirm broad-based earnings momentum"
+        },
+        {
+          "ko": "전자BG, 2026년 1Q 분기 최대 실적(매출 6,173억원·영업이익 1,856억원) 달성—연결 영업이익의 절반 이상 기여하는 핵심 수익원으로 부상",
+          "en": "Electronics BG recorded a quarterly earnings record in Q1 2026 (revenue ₩617.3 billion, OP ₩185.6 billion), now contributing over half of consolidated operating profit"
+        },
+        {
+          "ko": "태국 CCL 신공장(1,800억원·2028년 양산 목표)·두산테스나 평택 2공장 투자 재개(2,303억원)로 중장기 반도체 소재·테스트 생산능력 확대 추진",
+          "en": "New CCL factory in Thailand (₩180 billion, targeting H2 2028 production) and Doosan Tesna's Pyeongtaek Plant 2 investment restart (₩230.3 billion) underpin medium-term capacity expansion in semiconductor materials and testing"
+        },
+        {
+          "ko": "SK실트론 연결 편입 시 총부채 약 4조원·부채비율 약 189%(2026년 1Q 기준) 반영 예정—대규모 차입에 따른 재무 부담이 단기 핵심 과제",
+          "en": "SK Siltron's ~₩4 trillion total debt and ~189% debt-to-equity ratio (as of Q1 2026) will be consolidated upon acquisition completion, making de-leveraging the most pressing near-term financial challenge"
+        }
+      ],
+      "business": {
+        "ko": "㈜두산은 총수 일가(박정원 회장) → ㈜두산 → 주요 계열사로 이어지는 사업지주 구조의 정점에 위치하며, 공정거래위원회 기준 공정자산 약 28.2조원(2025년 5월 지정)으로 국내 18위 대기업집단을 구성하고 있다. 자체 사업으로는 전자BG와 디지털이노베이션BU(DI BU)를 직접 영위하는데, 전자BG는 AI 서버·통신장비·스마트폰의 핵심 기초소재인 동박적층판(CCL)과 연성동박적층판(FCCL)을 생산하며 엔비디아 AI 가속기용 네트워크 보드 CCL 공급사로 자리매김했다. DI BU는 IT 컨설팅·시스템 통합·클라우드·AI 솔루션을 기업 고객에게 제공하는 B2B 서비스 사업부이다. 연결 실적에는 두산에너빌리티(원전·가스터빈·SMR·담수설비), 두산밥캣(소형건설기계·농경장비), 두산로보틱스(협동로봇), 두산퓨얼셀(연료전지), 두산테스나(반도체 후공정 테스트) 등 24개 계열사 실적이 집계된다. 사업 포트폴리오는 ①에너지(두산에너빌리티 중심의 청정에너지), ②스마트머신(두산밥캣·두산로보틱스), ③반도체(전자BG·두산테스나·SK실트론)의 세 축으로 재편이 진행 중으로, 최근 보도에 따르면 그룹은 이를 기반으로 AI 솔루션 기업으로의 전환을 공식화하고 있다. 2026년 5월 SK실트론 지분 70.6% SPA를 체결함으로써 두산은 CCL 소재(전자BG) + 실리콘 웨이퍼(SK실트론, 글로벌 3위) + 후공정 테스트(두산테스나)를 연결하는 반도체 수직계열화를 완성했다. 경쟁구도 측면에서 CCL의 핵심 원재료인 유리섬유 공급사 일본 Nittobo의 생산능력이 업계 병목으로 지목되고 있으나 증설이 진행 중이며, SK실트론은 신에츠화학·섬코에 이어 300mm 실리콘 웨이퍼 글로벌 3위(점유율 약 17%) 사업자로 기술 경쟁력이 검증돼 있다. 다만 두산밥캣이 현재까지 두산에너빌리티의 자회사로 편입된 채 ㈜두산과 직접 연결되지 않는 지배구조상 비효율이 잔존하고 있어 중장기 구조 개편 과제로 남아 있다.",
+        "en": "Doosan serves as the apex of an operating holding company structure (controlling family → Doosan Corp. → key affiliates), constituting the 18th-largest Korean conglomerate by fair assets of approximately ₩28.2 trillion as designated by the Fair Trade Commission in May 2025. It directly operates two business units: Electronics BG and Digital Innovation BU (DI BU). Electronics BG produces copper-clad laminates (CCL) and flexible CCL (FCCL)—critical materials for AI servers, telecom equipment, and smartphones—and has secured a position as a network board CCL supplier to NVIDIA's AI accelerators. DI BU provides IT consulting, system integration, cloud, and AI-based solutions to enterprise clients on a B2B basis. On a consolidated basis, results from 24 affiliates are aggregated, including Doosan Enerbility (nuclear/gas turbine/SMR/desalination), Doosan Bobcat (compact construction equipment and agricultural machinery), Doosan Robotics (collaborative robots), Doosan Fuel Cell, and Doosan Tesna (semiconductor back-end testing). The portfolio is being reorganized around three pillars: ① Energy (Doosan Enerbility-led clean energy), ② Smart Machines (Bobcat, Robotics), and ③ Semiconductors (Electronics BG, Doosan Tesna, and newly acquired SK Siltron), with the group publicly targeting a repositioning as an AI solutions company. The May 2026 SPA for 70.6% of SK Siltron completed a semiconductor vertical integration spanning CCL materials (Electronics BG), silicon wafer manufacturing (SK Siltron, global #3 at ~17% market share in 300mm wafers), and back-end testing (Doosan Tesna). On the competitive landscape, Japan's Nittobo is a recognized bottleneck as a fiberglass supplier for CCL—though capacity additions are underway—while SK Siltron's technical credentials are well-established behind only Shin-Etsu Chemical and Sumco globally. A lingering structural inefficiency remains: Doosan Bobcat is still housed under Doosan Enerbility rather than directly under Doosan Corp., representing an unresolved governance simplification task."
+      },
+      "recent": {
+        "ko": "DART 공시 확정 재무 기준, 두산의 2025년 연결 매출액은 19.8조원(전기대비 +9.1%), 영업이익은 1.1조원(+5.9%)을 기록하며 외형 성장과 영업 수익성 개선을 동시에 달성했다. 다만 2025년 당기순이익은 2,495억원으로 전기대비 17.4% 감소했는데, 계열사 관련 비경상 항목 등이 영향을 미쳤을 가능성이 있으나 구체적 원인은 공시 세부 내역 확인이 필요하다. 2026년 1분기에는 매출 5.1조원(+17.7% YoY), 영업이익 3,408억원(+71.7%), 당기순이익 1,015억원(+799.1%)을 기록하며 전 지표에 걸친 뚜렷한 급반전을 시현했다. 자체 핵심 사업인 전자BG의 기여가 실적 개선을 주도했는데, 최근 보도에 따르면 전자BG는 2026년 1분기 매출 6,173억원·영업이익 1,856억원으로 분기 최대 실적을 경신했으며, 이는 연결 영업이익(3,408억원)의 절반을 넘는 수준이다. 2025년 연간 기준으로도 전자BG 매출은 1조8,757억원·영업이익 4,850억원으로 전년 대비 각각 +86%, +296%의 폭발적 성장을 기록했다(최근 보도 기준). 주가는 AI·반도체 밸류체인 재평가 기대감 속에 2025년 8월 20일 52주 최저 468,000원에서 2026년 6월 1일 52주 최고 2,489,000원까지 약 5.3배 급등하는 강세를 시현했다. 그러나 SK실트론 SPA 체결(2026년 5월 28일경) 이후 약 5조원 인수 자금 조달 부담과 SK실트론의 높은 부채비율에 대한 우려가 빠르게 확산되며 2026년 6월 4일 주가는 -12.94% 급락해 1,918,000원에 거래되고 있다. 2026년 3월 기준 증권사 평균 목표가는 약 1,397,000원으로 6개월 전 대비 67.6% 상향 조정됐으나, 현 주가는 이를 이미 37% 이상 상회하는 수준이어서 밸류에이션 부담이 현저히 확대된 상태다.",
+        "en": "Based on DART-confirmed consolidated financials, Doosan posted full-year 2025 revenue of ₩19.8 trillion (+9.1% YoY) and operating profit of ₩1.1 trillion (+5.9% YoY), achieving simultaneous top-line growth and operating margin improvement. However, net profit declined 17.4% YoY to ₩249.5 billion in 2025; while non-recurring items related to affiliates may have been a contributing factor, the specific causes require verification against detailed disclosure filings. In Q1 2026, the company delivered a sharp broad-based rebound: revenue of ₩5.1 trillion (+17.7% YoY), operating profit of ₩340.8 billion (+71.7%), and net profit of ₩101.5 billion (+799.1%). The directly-operated Electronics BG drove this improvement, recording a quarterly revenue record of ₩617.3 billion and operating profit of ₩185.6 billion in Q1 2026—accounting for over half of the consolidated operating profit of ₩340.8 billion (per recent media reports). On a full-year 2025 basis, Electronics BG posted revenue of ₩1,875.7 billion and operating profit of ₩485 billion, representing YoY growth of +86% and +296% respectively (per recent media). The share price surged approximately 5.3x from a 52-week low of ₩468,000 (August 20, 2025) to a 52-week high of ₩2,489,000 (June 1, 2026), driven by AI/semiconductor re-rating expectations. However, following the signing of the SK Siltron SPA (circa May 28, 2026), concern over the scale of acquisition financing and SK Siltron's elevated leverage spread rapidly, sending the stock down 12.94% to ₩1,918,000 on June 4, 2026. The sell-side consensus target price of approximately ₩1,397,000 as of March 2026 already represented a 67.6% upward revision from the prior six-month average, yet the current share price trades more than 37% above that level, signaling a markedly stretched valuation."
+      },
+      "outlook": {
+        "ko": "중장기 관점에서 AI 데이터센터 투자 확대에 따른 저유전·저손실 고성능 CCL의 수요 성장은 구조적 성격을 띠며, 전자BG의 핵심 성장 동력으로 지속될 것으로 판단된다. 두산은 2026년 4분기와 2027년 상반기에 각각 기존 대비 약 25%씩 단계적 생산능력 확대를 계획하고 있으며, 태국 신공장(2028년 하반기 양산 목표)이 완공될 경우 전자BG의 연간 생산능력은 약 1.6~1.7조원 수준까지 확대될 전망이다(2026년 3월 리서치 기준). SK실트론 인수가 최종 완료되면 SK그룹 울타리를 벗어나 TSMC·인텔 등 글로벌 신규 고객사 유치가 용이해지고, 업계에서는 12인치 웨이퍼 공급 부족 시점이 예상보다 앞당겨질 가능성이 있다고 보는 만큼 인수 이후 SK실트론의 영업 환경도 우호적으로 흐를 전망이다. 두산에너빌리티의 SMR 사업은 AI 데이터센터 급증하는 전력 수요와 맞물려 중장기 성장 모멘텀을 유지할 것으로 보이며, 경남 창원 SMR 전용 공장(8,068억원, 2031년 완공 목표)이 완성되면 연간 생산능력이 6기에서 20기로 확대되고, 현재까지 미국 고객사와 12기 가스터빈 수주도 기완료된 상태다. 반면 SK실트론의 연결 편입 시 반영될 총부채 약 4조원과 부채비율 약 189%(2026년 1Q 기준), 그리고 인수 자금 조달에 활용된 계열사 지분 담보 대출·PRS 등은 그룹 전체의 이자 비용과 차입금 규모를 큰 폭으로 늘릴 것으로 보인다. 증권업계에서는 전자BG가 2026년 연간 매출 약 2.5조원·영업이익 약 8,000억원 안팎을 기록할 수 있다는 전망을 내놓고 있으나(추정치로 확인 필요), 이를 실현하기 위해서는 고객사 다변화와 증설 일정의 차질 없는 이행이 선행 조건이다. 두산테스나의 평택 2공장 투자 재개(2,303억원, 2027년 11월 완공 목표)와 장비 도입(1,909억원) 등 후공정 역량 강화도 반도체 사업 포트폴리오 전반의 중장기 실적 기여를 높이는 방향으로 작용할 전망이다.",
+        "en": "From a medium-to-long-term perspective, demand growth for low-dielectric, low-loss high-performance CCL—driven by expanding AI data center investment—appears structural in nature and is expected to remain the core growth engine for Electronics BG. Doosan plans phased capacity additions of approximately 25% each in Q4 2026 and H1 2027; once the new Thailand factory (targeting H2 2028 production) comes online, Electronics BG's annual production capacity is projected to reach approximately ₩1.6–1.7 trillion (per a March 2026 research note). Following the final completion of SK Siltron's acquisition, freedom from the SK Group umbrella is expected to enable more aggressive pursuit of new global customers such as TSMC and Intel; industry observers also note that the 12-inch wafer supply shortage could materialize earlier than expected, creating a favorable operating environment for SK Siltron post-acquisition. Doosan Enerbility's SMR business is expected to maintain medium-to-long-term growth momentum aligned with surging AI data center power demand; the dedicated SMR factory in Changwon (₩806.8 billion, 2031 completion target) will expand annual capacity from 6 to 20 units, while 12 gas turbines have already been secured from U.S. clients. On the downside, SK Siltron's approximately ₩4 trillion total debt and roughly 189% debt-to-equity ratio (as of Q1 2026) will be consolidated onto Doosan's balance sheet, and the affiliate equity-backed loans and PRS instruments used for acquisition financing will substantially increase group-wide interest expense and gross borrowings. Sell-side analysts have estimated that Electronics BG could achieve full-year 2026 revenue of approximately ₩2.5 trillion and operating profit of around ₩800 billion (analyst estimates for reference only), contingent on customer diversification and on-schedule capacity execution. Doosan Tesna's resumed Pyeongtaek Plant 2 investment (₩230.3 billion, targeting November 2027 completion) and new equipment procurement (₩190.9 billion) are also expected to meaningfully enhance back-end testing capacity within the semiconductor business portfolio over the medium term."
+      },
+      "bull": [
+        {
+          "title": {
+            "ko": "AI 데이터센터 수요가 여는 CCL의 구조적 고성장",
+            "en": "Structural High-Growth in CCL Driven by AI Data Center Demand"
+          },
+          "body": {
+            "ko": "AI 가속기 서버 시장의 급성장은 신호 무결성이 요구되는 저유전·저손실 고성능 CCL에 대한 수요를 구조적으로 확대하고 있다. 두산 전자BG는 엔비디아 AI 가속기용 CCL 공급을 확보한 데 이어 AWS·구글 등 글로벌 클라우드 빅테크와도 추가 공급을 논의 중인 것으로 알려진다. 2026~2027년 단계적 증설과 태국 신공장(2028년 양산 목표)은 중장기 생산능력을 현재 약 1.1조원 수준에서 1.6~1.7조원으로 확대할 전망이며, 공급 병목인 Nittobo의 증설이 병행되면 신규 고객사 확보 가능성도 높아진다.",
+            "en": "The rapid expansion of the AI accelerator server market is structurally driving demand for high-performance, low-dielectric, low-loss CCL required by increasingly stringent signal integrity specifications. Doosan Electronics BG has secured CCL supply to NVIDIA's AI accelerators and is reportedly in discussions with global cloud hyperscalers including AWS and Google for additional supply contracts. Phased capacity expansions in 2026–2027 and the Thailand new plant (targeting 2028 production) are expected to lift annual production capacity from the current approximately ₩1.1 trillion to ₩1.6–1.7 trillion, and concurrent capacity additions by bottleneck supplier Nittobo could facilitate new customer acquisitions."
+          }
+        },
+        {
+          "title": {
+            "ko": "반도체 수직계열화 완성: SK실트론 고객 다변화·밸류체인 시너지",
+            "en": "Completed Semiconductor Vertical Integration: SK Siltron Customer Diversification and Value Chain Synergies"
+          },
+          "body": {
+            "ko": "SK실트론 인수로 두산은 웨이퍼(전공정 소재) → CCL(기판 소재) → 후공정 테스트를 아우르는 반도체 풀 밸류체인을 확보함으로써 AI 반도체 생태계 내 고부가 포지션을 선점했다. SK실트론은 300mm 실리콘 웨이퍼 글로벌 3위(점유율 약 17%)이나, SK그룹 계열이었던 시절에는 SK하이닉스와의 관계로 고객사 다변화에 제약이 있었고, 두산 편입 이후에는 TSMC·인텔 등 글로벌 반도체 제조사와 대등한 마케팅이 가능해질 전망이다. 업계에서는 12인치 웨이퍼 공급 부족 시점이 앞당겨질 수 있다는 전망이 나오는 만큼 인수 이후 SK실트론의 영업 환경도 우호적으로 흐를 가능성이 높다.",
+            "en": "With the SK Siltron acquisition, Doosan has secured a full semiconductor value chain spanning wafer manufacturing (front-end material) → CCL (substrate material) → back-end testing, establishing a high-value position within the AI semiconductor ecosystem. SK Siltron is the world's third-largest 300mm silicon wafer producer (~17% market share), but its customer diversification was constrained by its relationship with SK Hynix under the SK Group umbrella; under Doosan, it is expected to compete on equal footing with global chipmakers such as TSMC and Intel. Industry commentary suggests the 12-inch wafer supply shortage could materialize earlier than anticipated, pointing to a favorable operating environment for SK Siltron post-acquisition."
+          }
+        },
+        {
+          "title": {
+            "ko": "에너지 전환 수혜: SMR·가스터빈의 중장기 잠재력",
+            "en": "Energy Transition Beneficiary: SMR and Gas Turbine Long-Term Upside"
+          },
+          "body": {
+            "ko": "두산에너빌리티는 AI 데이터센터의 폭발적 전력 수요 증가에 대응하는 소형모듈원전(SMR) 분야에서 뉴스케일파워·엑스에너지·테라파워 등 글로벌 선도 기업과 파트너십을 맺고 주기기 제작의 핵심 파트너로 자리매김하고 있다. 경남 창원 SMR 전용 공장(8,068억원 투자, 2031년 완공 목표)이 완성되면 연간 생산능력이 6기에서 20기 수준으로 대폭 확대되며, 미국 고객사와 총 12기 가스터빈 수주를 기완료해 단기 수주잔고 기반도 견고하다. 탈탄소 흐름과 AI 전력 수요라는 쌍두마차가 원전·가스터빈 수주 파이프라인을 확장시키는 구조적 배경을 제공하고 있어, 두산에너빌리티의 중장기 수주잔고 성장은 연결 실적의 안정적 기반으로 작용할 전망이다.",
+            "en": "Doosan Enerbility has established itself as a core manufacturing partner in the small modular reactor (SMR) sector—which addresses surging AI data center power demand—through partnerships with global leaders including NuScale Power, X-energy, and TerraPower. Once the dedicated SMR plant in Changwon, South Korea (₩806.8 billion investment, 2031 completion target) is operational, annual production capacity will expand dramatically from 6 to 20 units; 12 gas turbines have already been secured from U.S. customers, providing a solid near-term order backlog foundation. The twin structural tailwinds of decarbonization and AI-driven power demand are broadening the nuclear and gas turbine order pipeline, making Doosan Enerbility's growing long-term backlog a stable pillar for consolidated earnings."
+          }
+        }
+      ],
+      "bear": [
+        {
+          "title": {
+            "ko": "SK실트론 인수 재무 부담: 차입금·부채비율 급증 리스크",
+            "en": "SK Siltron Acquisition: Surge in Debt and Leverage Risk"
+          },
+          "body": {
+            "ko": "약 5조원에 달하는 SK실트론 인수 대금 조달을 위해 두산은 계열사 지분 담보 대출, 주가수익스와프(PRS) 활용 등을 통해 인수 전 약 2.2조원의 유동성을 사전 확보했다. SK실트론의 2026년 1분기 기준 총부채 약 4조원·부채비율 약 189%가 연결 자회사로 편입될 경우 두산그룹 재무제표에 즉각적인 레버리지 증가가 반영된다. 고금리 환경이 지속될 경우 그룹 전반의 이자 비용 부담이 크게 늘어날 수 있으며, 두산퓨얼셀의 영업 적자와 맞물려 연결 순이익 개선 속도가 제한될 가능성이 있다.",
+            "en": "To finance the approximately ₩5 trillion SK Siltron acquisition, Doosan pre-arranged roughly ₩2.2 trillion in liquidity through affiliate equity-backed loans and price return swap (PRS) arrangements. SK Siltron's approximately ₩4 trillion total debt and ~189% debt-to-equity ratio as of Q1 2026 will immediately inflate group-level leverage upon consolidation onto Doosan's balance sheet. In a prolonged high-interest-rate environment, group-wide interest expense could surge meaningfully, and when combined with Doosan Fuel Cell's ongoing operating losses, the pace of consolidated net profit improvement may be constrained."
+          }
+        },
+        {
+          "title": {
+            "ko": "지배구조 복잡성과 홀딩컴퍼니 할인: 두산밥캣 구조 미완",
+            "en": "Governance Complexity and Holding Company Discount: Bobcat Structure Unresolved"
+          },
+          "body": {
+            "ko": "두산밥캣은 현재까지 ㈜두산의 직접 자회사가 아닌 두산에너빌리티의 자회사로 편입된 채 이중 지주 구조가 유지되고 있어, 지분 효율성 측면에서 지주사 디스카운트 요인으로 작용한다. 두산그룹은 중장기 사업 효율화를 위한 지배구조 재편을 추진하고 있으나, 두산밥캣 지배구조 정리는 현재까지 미완인 숙제로 남아 있다. 계열사 간 내부거래 및 자금 지원에 대한 시장의 모니터링도 지속되고 있어, 지배구조 단순화가 이루어지지 않으면 밸류에이션 재평가의 폭이 제한될 수 있다.",
+            "en": "Doosan Bobcat remains a subsidiary of Doosan Enerbility rather than a direct subsidiary of Doosan Corp., perpetuating a layered holding structure that contributes to a holding company discount in market valuation. While Doosan Group has been pursuing governance restructuring for long-term operational efficiency, the rationalization of Doosan Bobcat's ownership chain remains an unresolved task. Ongoing market scrutiny over inter-affiliate transactions and financial support arrangements further limits the scope for valuation re-rating in the absence of structural simplification."
+          }
+        },
+        {
+          "title": {
+            "ko": "고평가 부담: 극단적 P/E와 급락 후에도 목표가 상회",
+            "en": "Stretched Valuation: Extreme P/E and Share Price Still Above Consensus Target After Sharp Decline"
+          },
+          "body": {
+            "ko": "2026년 6월 4일 기준 주가 1,918,000원은 2026년 3월 기준 증권사 평균 목표가(약 1,397,000원)를 37% 이상 상회하며, 시장 데이터상 PER 520배 이상·PBR 25배 이상의 극단적 프리미엄 구간에 위치하고 있다. 52주 최고가(2,489,000원) 대비 약 23% 하락한 이후에도 이익·자산 지표 대비 밸류에이션 부담은 현저히 높은 수준이다. AI·반도체 테마 프리미엄이 부여된 국면에서 SK실트론 인수 재원 조달 리스크, 실적 변동성 확대 우려가 복합적으로 작용해 단기 주가 변동성이 지속될 가능성이 높다.",
+            "en": "As of June 4, 2026, the share price of ₩1,918,000 exceeds the sell-side consensus target of approximately ₩1,397,000 (as of March 2026) by over 37%, while market data place the stock at a trailing P/E exceeding 520x and a P/B above 25x—indicating extreme valuation territory. Even after a roughly 23% decline from the 52-week high of ₩2,489,000, the earnings and asset-based valuation premium remains markedly elevated. With AI/semiconductor theme re-rating compounding the acquisition financing risk and earnings volatility concerns, elevated near-term share price volatility is likely to persist."
+          }
+        }
+      ],
+      "risks": [
+        {
+          "cat": {
+            "ko": "거시·금융 리스크",
+            "en": "Macro and Financial Risk"
+          },
+          "body": {
+            "ko": "AI 데이터센터 투자가 예상 대비 둔화되거나 글로벌 빅테크의 설비투자(CapEx) 사이클이 꺾일 경우 CCL과 반도체 웨이퍼 수요가 동시에 타격을 받을 수 있다. 고금리 환경이 장기화될수록 SK실트론 인수에 수반된 대규모 차입에 대한 이자 부담이 늘어나 그룹 수익성에 압박이 가중되며, 글로벌 경기 침체 및 북미 건설기계 수요 둔화는 두산밥캣의 실적에 직접적 부정적 영향을 미쳐 연결 실적을 끌어내릴 수 있다. 환율 변동성 확대도 수출 비중이 높은 두산에너빌리티·두산밥캣의 매출 환산 가치에 영향을 미친다.",
+            "en": "A deceleration in AI data center investment or a downturn in big-tech capital expenditure cycles could simultaneously dampen demand for both CCL and silicon wafers. A prolonged high-interest-rate environment would amplify interest expense on the large-scale borrowings associated with the SK Siltron acquisition, pressuring group-level profitability, while a global economic slowdown and weakening North American construction equipment demand could directly impair Doosan Bobcat's earnings and drag down consolidated results. Heightened foreign exchange volatility would also affect the reported value of revenues from the heavily export-oriented Doosan Enerbility and Doosan Bobcat segments."
+          }
+        },
+        {
+          "cat": {
+            "ko": "사업 실행 리스크",
+            "en": "Execution Risk"
+          },
+          "body": {
+            "ko": "태국 CCL 신공장(1,800억원, 2028년 양산 목표)과 두산테스나 평택 2공장(2,303억원, 2027년 11월 완공 목표)의 증설 일정 지연은 수주 대응 능력과 고객사 신뢰도에 부정적 영향을 줄 수 있다. SK실트론 인수 후 기업결합 심사 등 후속 행정 절차가 예상보다 지연될 경우 연결 편입 시점과 시너지 실현이 모두 후퇴한다. 두산에너빌리티 SMR 전용 공장(2031년 완공)의 납기 리스크와 글로벌 SMR 인허가 일정의 불확실성도 중장기 실적 예측 가시성을 낮추는 요인이다.",
+            "en": "Construction delays at the Thailand CCL plant (₩180 billion, targeting 2028 production) and Doosan Tesna's Pyeongtaek Plant 2 (₩230.3 billion, targeting November 2027 completion) could impair order fulfillment capability and customer confidence. Post-acquisition regulatory reviews—including merger control filings—taking longer than expected would push back both the SK Siltron consolidation timeline and planned synergy realization. Schedule risks at Doosan Enerbility's dedicated SMR plant (2031 target) and uncertainty in global SMR licensing timelines further reduce medium-to-long-term earnings visibility."
+          }
+        },
+        {
+          "cat": {
+            "ko": "지정학·규제 리스크",
+            "en": "Geopolitical and Regulatory Risk"
+          },
+          "body": {
+            "ko": "미·중 반도체 갈등이 심화될 경우 CCL 및 실리콘 웨이퍼의 공급망·수출 규제가 두산의 핵심 사업 영역에 영향을 줄 수 있으며, 관련 규제 환경의 불확실성은 전략 실행을 복잡하게 만드는 요인이다. 원전·SMR 사업은 미국 NRC(원자력규제위원회)를 비롯한 각국 규제 기관의 인허가 일정에 민감하게 반응하며, 에너지 정책 전환 리스크도 중장기 수주 파이프라인에 영향을 줄 수 있다. 두산밥캣이 주력으로 영위하는 북미·유럽 건설장비 시장은 관세 정책 변화(미국 통상 환경 등)에 노출되어 있어, 수익성 및 경쟁 환경 변화에 따른 불확실성이 상존한다.",
+            "en": "An escalation of U.S.-China semiconductor tensions could subject CCL and silicon wafer supply chains to tightened export controls, adding operational complexity to Doosan's core semiconductor businesses. The nuclear and SMR business is highly sensitive to the licensing timelines of regulators including the U.S. Nuclear Regulatory Commission (NRC), and shifts in national energy policies represent a risk to the medium-to-long-term order pipeline. The North American and European construction equipment markets served by Doosan Bobcat are exposed to tariff policy changes—including U.S. trade policy developments—creating residual uncertainty around profitability and competitive dynamics."
+          }
+        }
+      ],
+      "verdict": {
+        "stance": {
+          "ko": "중립",
+          "en": "Neutral"
+        },
+        "body": {
+          "ko": "두산은 SK실트론 인수로 반도체 수직계열화를 완성하고, 전자BG의 CCL이 AI 서버용 핵심 소재로 자리매김하면서 사업 구조가 의미 있게 고도화되고 있다. DART 공시 기준 2026년 1분기 영업이익 3,408억원(+71.7%)은 실적 모멘텀의 강도를 확인시켜 주며, 에너지·반도체·스마트머신의 세 축을 갖춘 AI 인프라 플랫폼으로의 전환 내러티브는 중장기 성장 스토리로서 설득력이 있다. 다만 현재 주가(1,918,000원)는 52주 신고가(2,489,000원)에서 급락한 상태임에도 2026년 3월 기준 증권사 평균 목표가(약 1,397,000원)를 이미 37% 이상 상회하며, PER 520배 이상의 극단적 프리미엄 구간에 위치해 있다. SK실트론의 연결 편입에 따른 부채비율 급등, 대규모 인수 차입금에 따른 이자 비용 증가, 두산밥캣 지배구조 미완 등 근거리 리스크 요인이 복합적으로 잠재해 있다. 중장기 성장 잠재력은 구조적으로 유효하나, 인수 통합·재무 부담 해소·증설 일정 이행 등 실행력 검증 선행 없이는 현재의 밸류에이션 수준이 정당화되기 어렵다고 판단하며, 전반적으로 중립 관점이 적합하다.",
+          "en": "Doosan has meaningfully elevated its business structure by completing semiconductor vertical integration through SK Siltron, while Electronics BG's CCL has emerged as a critical AI server material. DART-confirmed Q1 2026 operating profit of ₩340.8 billion (+71.7% YoY) validates strong earnings momentum, and the group's three-pillar transformation into an AI infrastructure platform—spanning energy, semiconductors, and smart machines—presents a compelling medium-to-long-term growth narrative. However, despite a sharp pullback from the 52-week high of ₩2,489,000, the share price of ₩1,918,000 already trades more than 37% above the early-2026 consensus analyst target of approximately ₩1,397,000 and is positioned at an extreme trailing P/E exceeding 520x. Significant near-term headwinds include a material rise in leverage from SK Siltron's consolidation, increased group-level interest expense from acquisition borrowings, and unresolved governance complexity around Doosan Bobcat. While the medium-to-long-term growth thesis is structurally sound, the current valuation level is difficult to justify without prior validation of acquisition integration, de-leveraging progress, and on-schedule capacity execution, warranting an overall Neutral assessment at this stage."
+        }
+      },
+      "sources": [
+        "https://biz.heraldcorp.com/article/10757761",
+        "https://www.hankyung.com/article/2026051718931",
+        "https://v.daum.net/v/20260517211315278",
+        "https://www.etoday.co.kr/news/view/2583741",
+        "https://www.insightkorea.co.kr/news/articleView.html?idxno=246601",
+        "https://www.huffingtonpost.kr/article/257285",
+        "https://www.hanaw.com/download/research/FileServer/WEB/industry/enterprise/2026/03/16/Doosan_260317.pdf",
+        "https://m.finance.daum.net/quotes/A000150",
+        "https://news.nate.com/view/20260311n11638",
+        "https://www.thebell.co.kr/front/newsview.asp?key=202510201500409720107978",
+        "https://alphasquare.co.kr/home/stock-summary?code=000150"
+      ],
+      "ticker": "000150",
+      "name": "두산",
+      "name_en": "DOOSAN CO.,LTD",
+      "sector": "지주",
+      "categories": [
+        "지주"
       ],
       "market": "코스피",
       "reportDate": "2026-06-04",
