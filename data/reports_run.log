@@ -1,9 +1,14 @@
-=== 배치(collect) 시작 Tue Jun  2 20:04:36 UTC 2026 ===
-  · ⚠️ 000660 파싱 실패: JSONDecodeError: Expecting ',' delimiter: line 99 column 71 (char 21738)
-  · ⚠️ 005930 파싱 실패: JSONDecodeError: Expecting ',' delimiter: line 81 column 8 (char 15197)
-  · ⚠️ 373220 파싱 실패: JSONDecodeError: Expecting ',' delimiter: line 124 column 73 (char 23094)
-  · ⚠️ 000270 파싱 실패: JSONDecodeError: Expecting ',' delimiter: line 53 column 137 (char 13415)
-  · ⚠️ 032830 파싱 실패: JSONDecodeError: Expecting ',' delimiter: line 108 column 258 (char 23202)
-  · ⚠️ 028260 파싱 실패: JSONDecodeError: Expecting ',' delimiter: line 39 column 4 (char 9865)
+=== 리포트 생성 시작 Wed Jun  3 07:07:29 UTC 2026 ===
+## 🤖 AI 리포트 생성 — 지정 1개 종목
+- 모델: `claude-sonnet-4-6`
+- 기존 리포트 15개 로드 · 최근(6일내) 15개 유지
 
-✅ 회수 완료 · 성공 4/실패 6 · 총 보유 15개 → data/reports.js
+### [1/1] 삼성전자 (005930)
+{'status': '013', 'message': '조회된 데이타가 없습니다.'}
+
+{'status': '013', 'message': '조회된 데이타가 없습니다.'}
+
+- DART 재무: 확보
+- ✅ 완료 (572s · 검색 4회)
+
+✅ 현재 리포트 15개 보유 · 이번 실행 웹검색 4회 · → data/reports.js
