@@ -454,15 +454,27 @@ def build_universe(date):
                 dbg["dart_cc_cols"] = [str(c) for c in getattr(cc, "columns", [])]
                 dbg["dart_cc_rows"] = int(len(cc))
                 col = next((c for c in cc.columns if "stock" in str(c).lower()), None)
+                ncol = next((c for c in cc.columns if c == "corp_name"), None)
                 dbg["dart_stock_col"] = str(col)
                 n = 0
+                listed = {}
                 if col is not None:
-                    for sc in cc[col].dropna().astype(str):
-                        sc = sc.strip()
-                        if len(sc) == 6 and sc.isdigit():
-                            universe.setdefault(sc, SECTOR_MAP.get(sc, "기타"))
-                            n += 1
+                    sc_series = cc[col].astype(str).str.strip()
+                    mask = sc_series.str.fullmatch(r"\d{6}")
+                    sub = cc[mask]
+                    names = sub[ncol].astype(str).str.strip().tolist() if ncol else [""] * len(sub)
+                    for sc, nm in zip(sc_series[mask].tolist(), names):
+                        universe.setdefault(sc, SECTOR_MAP.get(sc, "기타"))
+                        listed[sc] = nm
+                        n += 1
                 dbg["dart_listed"] = n
+                # 전 상장사 티커→이름 목록을 파일로 덤프(정확한 종목 선별용)
+                try:
+                    Path("data").mkdir(exist_ok=True)
+                    Path("data/listed_universe.json").write_text(
+                        json.dumps(listed, ensure_ascii=False, indent=0), encoding="utf-8")
+                except Exception:
+                    pass
                 print(f"  [universe] DART corp_codes 상장사: {n}개 (누적 {len(universe)})")
         except Exception as e:
             import traceback as _tb
