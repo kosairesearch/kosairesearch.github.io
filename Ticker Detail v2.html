@@ -822,7 +822,25 @@ KOSi18n.register({
     if(L()==='en'){ if(v>=1e9)return (v/1e9).toFixed(2)+'B'; if(v>=1e6)return (v/1e6).toFixed(0)+'M'; return ''+v; }
     if(v>=1e8)return (v/1e8).toFixed(1)+'억주'; if(v>=1e4)return Math.round(v/1e4).toLocaleString('en-US')+'만주'; return v.toLocaleString('en-US')+'주'; }
 
-  function prose(o){ var t=pk(o); if(!t)return ''; var ps=String(t).split(/\n\n+/); return '<div class="prose">'+ps.map(function(p){return '<p>'+esc(p)+'</p>';}).join('')+'</div>'; }
+  function splitSentences(p){
+    // 문장 끝('다.'/'요.' 등 또는 .!?) + 공백 뒤에 구분자 삽입 후 분리.
+    // 소수점(13.5)은 뒤에 공백이 없어 분리되지 않음.
+    var SEP='⁣';
+    var m=String(p)
+      .replace(/([다요죠음함됨임]\.)\s+/g, '$1'+SEP)
+      .replace(/([.!?])\s+(?=[A-Z가-힣"'(])/g, '$1'+SEP);
+    return m.split(SEP).map(function(s){return s.trim();}).filter(Boolean);
+  }
+  function chunkPara(p, n){
+    var s=splitSentences(p);
+    if(s.length<=n+1) return [p];
+    var out=[],i; for(i=0;i<s.length;i+=n){ out.push(s.slice(i,i+n).join(' ')); }
+    return out;
+  }
+  function prose(o){ var t=pk(o); if(!t)return '';
+    var paras=[];
+    String(t).split(/\n\n+/).forEach(function(p){ chunkPara(p.trim(),3).forEach(function(c){ if(c)paras.push(c); }); });
+    return '<div class="prose">'+paras.map(function(p){return '<p>'+esc(p)+'</p>';}).join('')+'</div>'; }
   function factors(arr,cls,mk){ if(!arr||!arr.length)return ''; return arr.map(function(f){return '<div class="factor '+cls+'"><p class="fh"><span class="mk">'+mk+'</span>'+esc(pk(f.title))+'</p><p>'+esc(pk(f.body))+'</p></div>';}).join(''); }
   function risksH(arr){ if(!arr||!arr.length)return ''; return '<div class="risk">'+arr.map(function(r){return '<div class="cat">'+esc(pk(r.cat))+'</div><div class="body">'+esc(pk(r.body))+'</div>';}).join('')+'</div>'; }
   function pad(x){ return x<10?'0'+x:''+x; }
