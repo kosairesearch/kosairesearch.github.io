@@ -1,6 +1,6 @@
 // KOS ai — AI 리서치 리포트 (자동 생성). 직접 수정하지 마세요.
 window.KOS_REPORTS = {
-  "lastUpdated": "2026-06-04 04:43",
+  "lastUpdated": "2026-06-04 05:18",
   "model": "claude-sonnet-4-6",
   "reports": {
     "005930": {
@@ -8829,6 +8829,183 @@ window.KOS_REPORTS = {
       "market": "코스피",
       "reportDate": "2026-06-04",
       "reportTs": "2026-06-04 05:09",
+      "dataDate": "20260602"
+    },
+    "138040": {
+      "title": {
+        "ko": "3년 연속 '2조 클럽' — 수익성과 건전성 리스크의 교차로",
+        "en": "Three Consecutive Years in the '₩2T Club': Profitability and Asset Quality at a Crossroads"
+      },
+      "lead": {
+        "ko": "DART 공시 기준 2025년 역대 최대 당기순이익과 2026년 1분기 ROE 25.4%로 업계 최고 수익성을 재확인했으나, 그룹 전반의 부동산 익스포저 집중 및 연이은 법적·규제 이벤트가 밸류에이션 디스카운트 요인으로 상존하고 있다.",
+        "en": "Meritz Financial Group reaffirmed its industry-leading profitability with record-high FY2025 net income and a Q1 2026 ROE of 25.4%, yet concentrated real estate exposure across subsidiaries and a series of legal and regulatory events continue to weigh on valuation."
+      },
+      "desc": {
+        "ko": "메리츠금융지주(138040)는 메리츠화재(손해보험), 메리츠증권(IB·자산운용·리테일), 메리츠캐피탈(여신전문)을 완전자회사로 보유하는 코스피 금융지주로, 시가총액 18.6조원 규모다. 2025년 연결 당기순이익 2.4조원(전기 대비 +0.7%, DART 확정)으로 3년 연속 '2조 클럽'을 유지하였으며, 2026년 1분기에도 당기순이익 6,802억원(+9.6%, DART 확정)으로 성장 궤도를 이어갔다. 다만 그룹의 부동산·기업금융 익스포저 집중에 따른 건전성 부담과 2026년 초부터 이어진 사법·규제 리스크가 동시에 작용하고 있어, 수익성과 리스크 균형이 핵심 투자 판단 변수로 부각되고 있다.",
+        "en": "Meritz Financial Group (138040) is a KOSPI-listed financial holding company with a market capitalization of KRW 18.6 trillion, holding Meritz Fire & Marine Insurance, Meritz Securities, and Meritz Capital as wholly-owned subsidiaries. The group posted consolidated net income of KRW 2.4 trillion in FY2025 (+0.7% YoY, per DART filings), sustaining its '₩2T club' membership for a third consecutive year, with Q1 2026 net income of KRW 680.2 billion (+9.6% YoY, DART confirmed) reinforcing the growth trajectory. Nonetheless, concentrated real estate and corporate lending exposure and a succession of legal and regulatory developments in 2026 constitute material risk overlays that investors must weigh against the group's otherwise exceptional profitability profile."
+      },
+      "keypoints": [
+        {
+          "ko": "DART 확정 기준 2025년 영업이익 2.9조원(-9.9% YoY), 당기순이익 2.4조원(+0.7% YoY)으로 3년 연속 역대 최대 순이익 경신",
+          "en": "FY2025 operating profit of KRW 2.9 trillion (-9.9% YoY) and net income of KRW 2.4 trillion (+0.7% YoY, DART), marking record-high earnings for the third straight year"
+        },
+        {
+          "ko": "2026년 1분기 영업이익 8,548억원(+18.4%), 당기순이익 6,802억원(+9.6%), ROE 25.4%로 뚜렷한 분기 실적 반등 및 업계 최고 자본효율성 유지(DART 확정)",
+          "en": "Q1 2026 operating profit of KRW 854.8 billion (+18.4% YoY) and net income of KRW 680.2 billion (+9.6% YoY, DART), with ROE of 25.4% — best-in-class among domestic financial groups"
+        },
+        {
+          "ko": "연결 순이익 50% 주주환원 정책 유지 — 2024년 배당 2,407억원 + 자사주 순매입 8,583억원 집행, 2026년 예상 주주환원수익률 약 6.7%(키움증권 추정)",
+          "en": "50% shareholder return policy in effect — KRW 240.7 billion in dividends and KRW 858.3 billion in net buybacks executed in 2024; 2026 estimated total shareholder return yield of approximately 6.7% (Kiwoom Securities)"
+        },
+        {
+          "ko": "2025년 9월 말 그룹 총 부동산 익스포저 31.2조원(연결자본 대비 274%), 연결 고정이하여신비율 7.8%로 건전성 부담 가중",
+          "en": "Group real estate exposure of KRW 31.2 trillion (274% of consolidated equity) and consolidated fixed-credit NPL ratio of 7.8% as of September 2025, amplifying asset quality concerns"
+        },
+        {
+          "ko": "2026년 1월 검찰 압수수색(미공개 정보 이용 혐의), 5월 국세청 세무조사 등 복합적 법적·규제 리스크가 투자심리 억제 변수로 작용 중",
+          "en": "A January 2026 prosecutor raid (insider trading allegations) and a May 2026 tax authority investigation compound the legal and regulatory uncertainty weighing on investor sentiment"
+        }
+      ],
+      "business": {
+        "ko": "메리츠금융지주는 2011년 국내 최초 보험지주회사로 설립되었으며, 2023년 상반기 포괄적 주식교환을 통해 메리츠화재와 메리츠증권을 완전자회사로 편입하며 현재의 그룹 체계를 완성했다. 주요 계열사는 손해보험업을 영위하는 메리츠화재, 투자매매·중개·집합투자 및 IB·자산운용·리테일을 담당하는 메리츠증권, 여신전문금융을 맡는 메리츠캐피탈, 그리고 메리츠대체투자운용으로 구성된다. 그룹 이익의 핵심 축은 메리츠화재로, 장기 보장성보험 중심의 안정적 보험이익과 함께 운용자산의 약 56%를 대출채권으로 운용하는 고수익 투자 전략을 병행하고 있으며, 2025년 별도 기준 당기순이익은 1.6810조원(전년 대비 -1.7%)을 기록했다. 메리츠증권은 부동산금융 및 기업금융(IB) 특화 전략을 핵심 경쟁력으로 삼아, 2025년 별도 IB부문 영업순수익 약 8,000억원(전년 대비 +12%)을 기록하며 업계 내 차별화된 수익구조를 구축하고 있다. 다만 2025년 말 기준 메리츠증권의 부동산금융 익스포저는 약 9.6조원으로 자기자본 대비 127%에 달해, 이익 창출력에 비례하는 위험 부담이 상당하다. 메리츠캐피탈은 부동산PF 건전성 저하 영향으로 자산건전성이 일부 훼손되었으나, 그룹 차원의 자본지원과 적극적 부실채권 회수 노력을 통해 관리해 나가고 있다. 경쟁 구도 측면에서 메리츠화재는 삼성화재·현대해상 대비 절대 규모는 작으나 ROE 등 질적 지표에서 차별화된 경쟁력을 보유하며, 메리츠증권은 대형사 대비 고수익·고위험의 IB 특화 모델로 독자적 포지션을 유지하고 있다. 2026년 상반기 현재 그룹은 애큐온캐피탈과 애큐온저축은행 인수를 추진 중으로, 성사 시 여신전문금융 역량이 한층 확장될 전망이다. 최대주주인 조정호 외 특수관계인이 56.1%(2025년 9월 말 기준)의 지분을 보유하고 있어 지배구조 안정성은 높은 편이나, 지주사 이중레버리지비율(117.3%)과 부채비율(52.8%)이 금융지주사 평균(각각 116.0%, 35.1%)을 상회하는 재무 레버리지 수준은 지속 모니터링이 필요하다.",
+        "en": "Meritz Financial Group was established in 2011 as South Korea's first insurance-centered financial holding company and completed its current structure in the first half of 2023, when it converted Meritz Fire & Marine Insurance and Meritz Securities into wholly-owned subsidiaries via a comprehensive share exchange. The group's core operating entities consist of Meritz Fire (property and casualty insurance), Meritz Securities (brokerage, IB, asset management, and retail wealth management), Meritz Capital (leasing, installment finance, and technology finance), and Meritz Alternative Investment Management. Meritz Fire is the principal earnings engine, combining a long-term protection insurance franchise with an aggressive asset portfolio strategy in which loans receivable account for approximately 56% of invested assets; it reported standalone net income of KRW 1.68 trillion in FY2025 (-1.7% YoY). Meritz Securities has built a differentiated franchise anchored in real estate finance and corporate IB, recording approximately KRW 800 billion in IB segment operating revenue in FY2025 (+12% YoY), though its real estate finance exposure of approximately KRW 9.6 trillion (127% of equity) at end-2025 reflects a commensurate risk burden. Meritz Capital has experienced some asset quality deterioration from real estate PF headwinds but is managing its credit portfolio through group-level capital support and active NPL recovery efforts. In competitive terms, Meritz Fire is smaller than Samsung Fire & Marine and Hyundai Marine & Fire but commands differentiated quality metrics, while Meritz Securities occupies a distinctive niche among Korean brokerages with its high-yield, high-risk IB-specialist model. As of the first half of 2026, the group is actively pursuing the acquisition of Accuon Capital and Accuon Savings Bank, which — if completed — would meaningfully expand its specialty lending franchise. Controlling shareholder Chairman Cho Jung-ho and related parties hold 56.1% of shares (as of September 2025), providing governance stability, though the holding company's double-leverage ratio of 117.3% and debt ratio of 52.8% — both above the financial holding company averages of 116.0% and 35.1% — represent structural financial leverage risks requiring continued monitoring."
+      },
+      "recent": {
+        "ko": "DART 공시 확정 재무 기준으로, 2025년 연결 영업이익은 2.9조원(전기 대비 -9.9%), 당기순이익은 2.4조원(전기 대비 +0.7%)을 기록하여 3년 연속 역대 최대 순이익을 경신했으며, 순이익 '2조 클럽' 지위를 유지했다. 계열사별로는 메리츠화재가 별도 기준 당기순이익 1.6810조원(전년 대비 -1.7%)으로 소폭 감소하였으나, 메리츠증권의 별도 당기순이익 7,016억원(+11.3%)이 실적을 보완하며 그룹 전체 순이익 증가를 가능케 했다. 메리츠화재의 2025년 말 K-ICS비율(지급여력비율)은 237.4%로 안정적인 자본건전성을 확인했으며, 자산운용 투자이익률은 약 3.7% 수준을 기록했다. 2025년 말 연결 자기자본은 전년 말 대비 18.3% 증가한 8.1654조원으로, 수익 누적에 따른 자본 기반이 지속적으로 강화되었다. 2026년 1분기에는 DART 확정 기준 영업이익 8,548억원(전기 대비 +18.4%), 당기순이익 6,802억원(+9.6%)으로 뚜렷한 실적 반등을 달성했다. 1분기 말 총자산은 연초 대비 6.6% 증가한 144.4조원이었으며, ROE는 25.4%로 업계 최고 수준을 유지했다. 메리츠화재의 견조한 보험손익과 메리츠증권 IB부문의 딜 실적 개선 및 자산운용 수익 확대가 2026년 1분기 성장을 함께 이끌었으며, 메리츠증권 별도 1분기 당기순이익은 2,543억원으로 전년 동기 대비 35.7% 급증했다. 주가는 2026년 1월 검찰 압수수색 여파로 단일 거래일 6% 이상 급락하며 52주 최저가에 근접하였고, 이후 국세청 세무조사 등 추가 이벤트에도 기관 투자자의 꾸준한 순매수(최근 5일 연속 순매수 관찰)를 기반으로 2026년 6월 4일 현재 106,100원 수준에서 거래되고 있다.",
+        "en": "Per DART audited financials, FY2025 consolidated operating profit was KRW 2.9 trillion (-9.9% YoY) and net income was KRW 2.4 trillion (+0.7% YoY), representing record-high earnings and the third consecutive year of membership in the 'KRW 2 trillion net income club.' On a standalone basis, Meritz Fire reported net income of KRW 1.68 trillion (-1.7% YoY), while Meritz Securities contributed KRW 701.6 billion (+11.3% YoY), providing meaningful offset and enabling marginal group-level net income growth. Meritz Fire's year-end K-ICS solvency ratio of 237.4% confirmed solid capital adequacy, and its investment yield was approximately 3.7%. Year-end consolidated equity expanded 18.3% from the prior year-end to KRW 8.17 trillion, reflecting a strengthening capital base driven by earnings retention. In Q1 2026, DART filings confirm operating profit of KRW 854.8 billion (+18.4% YoY) and net income of KRW 680.2 billion (+9.6% YoY), marking a clear acceleration in earnings momentum. Quarter-end total assets grew 6.6% from year-start to KRW 144.4 trillion, and ROE of 25.4% placed Meritz at the top of the domestic financial sector. Meritz Fire's solid insurance earnings and Meritz Securities' recovering IB deal activity and expanding investment returns drove Q1 2026 outperformance; notably, Meritz Securities' standalone Q1 2026 net income surged 35.7% YoY to KRW 254.3 billion. Regarding the share price, a single-session drop of more than 6% following a January 2026 prosecutor's raid brought the stock near its 52-week low; despite additional legal events including a May 2026 tax authority audit, sustained institutional buying (five consecutive days of net purchases as of late May 2026) has stabilized the stock around KRW 106,100 as of June 4, 2026."
+      },
+      "outlook": {
+        "ko": "2026년 연간 실적과 관련해, 키움증권(2026년 2월)은 메리츠금융지주의 연결 당기순이익을 2.4804조원(전년 대비 +5.5%)으로 추정하였으며, 주주환원 규모는 약 1.55조원으로 예상했다. 메리츠화재는 '가치 총량 극대화' 전략을 기반으로 장기 보장성보험의 안정적 이익 흐름과 투자이익 확대를 이어갈 계획이며, 메리츠증권은 IB·자산운용·리테일 전 부문의 균형 성장을 통해 수익성을 극대화하는 방향을 유지할 방침이다. 부동산PF 시장은 최근 보도에 따르면 2025년 말 대비 금융권 위험 익스포저가 1년 새 30조원 감소하고 연체율도 개선세를 보이는 등 부분적 안정화 국면에 있으나, 정부는 2027년부터 전 금융권 PF 건전성 제도개선을 전면 시행할 예정으로 중장기 영업 환경 변화에 대한 선제적 대응이 요구된다. 2021~2022년에 실행된 부동산PF의 만기가 2025~2026년에 집중되어 있어, 추가적인 건전성 저하 여신 발생 가능성도 배제할 수 없으며 이에 대한 지속적인 모니터링이 필요하다. 메리츠증권의 발행어음 사업 인가가 최종 승인될 경우 안정적 자금조달 기반 확충과 리테일 수익 다각화 측면에서 구조적 기회가 열릴 수 있다. 애큐온캐피탈·저축은행 인수가 성사된다면 중금리 대출 및 여신전문금융 포트폴리오가 확대되며 사업 다각화 효과도 기대된다. 전반적으로 핵심 이익 창출력은 견고하나, 법적·규제 리스크의 해소 속도와 부동산 익스포저 관리 성과가 중기 주가 방향성을 좌우할 핵심 변수가 될 것이다.",
+        "en": "For FY2026 as a whole, Kiwoom Securities (February 2026) estimates Meritz Financial Group's consolidated net income at approximately KRW 2.48 trillion (+5.5% YoY), with total shareholder returns forecast at around KRW 1.55 trillion. Meritz Fire plans to sustain its 'value maximization' strategy, targeting stable insurance underwriting profits alongside expanded investment returns, while Meritz Securities is committed to balanced growth across IB, asset management, and retail segments. According to recent reports, the domestic real estate PF market is showing partial stabilization — with financial sector risk exposure declining by some KRW 30 trillion year-on-year and delinquency rates improving — but the government's full-scale PF soundness reform rollout planned for 2027 will necessitate proactive operational adaptation. The concentration of 2021–2022 vintage PF loan maturities in 2025–2026 warrants continued monitoring for potential incremental NPL generation. Regulatory approval for Meritz Securities' commercial paper issuance business, if granted, could meaningfully enhance funding diversification and retail competitiveness, opening a new structural earnings channel. A successful acquisition of Accuon Capital and Savings Bank would broaden the group's mid-rate lending and specialty finance franchise, adding portfolio diversification value. In summary, the group's core earnings power remains robust, but the pace of legal and regulatory risk resolution and the trajectory of real estate asset quality management will be the primary determinants of any medium-term re-rating."
+      },
+      "bull": [
+        {
+          "title": {
+            "ko": "3년 연속 역대 최대 순이익과 업계 최고 ROE로 이익 창출력 입증",
+            "en": "Three Consecutive Record Net Income Years and Industry-Leading ROE Demonstrate Earnings Power"
+          },
+          "body": {
+            "ko": "DART 공시 기준 메리츠금융지주는 2025년 연결 당기순이익 2.4조원(+0.7% YoY)으로 역대 최대 기록을 경신하며 3년 연속 '2조 클럽'을 유지하는 동시에, 2026년 1분기 ROE 25.4%로 업계 최고 자본효율성을 다시금 입증했다. 메리츠화재의 보험손익 안정성과 메리츠증권 IB부문의 딜 회복이 시너지를 이루며, 이익의 질적 다각화와 양적 성장이 함께 진행되고 있다. 2026년 1분기 총자산은 144.4조원으로 연초 대비 6.6% 증가하였고, 메리츠증권 별도 1분기 순이익은 전년 대비 35.7% 급증해 실적 모멘텀의 강도를 뒷받침하고 있다. 2025년 말 자기자본이 전년 말 대비 18.3% 증가한 8.2조원에 달해 자본 기반도 지속적으로 강화되고 있어, 미래 성장 투자 및 주주환원의 이중 재원 역할을 충분히 수행할 수 있다.",
+            "en": "Per DART filings, the group delivered a record-high consolidated net income of KRW 2.4 trillion in FY2025 (+0.7% YoY), maintaining '₩2T club' status for the third consecutive year, while Q1 2026 ROE of 25.4% reaffirms top-of-sector capital efficiency. The synergistic combination of Meritz Fire's stable insurance underwriting earnings and Meritz Securities' recovering IB deal flow demonstrates qualitative diversification alongside quantitative earnings growth. Q1 2026 total assets reached KRW 144.4 trillion (+6.6% year-to-date), and Meritz Securities' standalone Q1 net income surged 35.7% YoY, underscoring the strength of the current earnings momentum. Year-end consolidated equity expanded 18.3% to approximately KRW 8.2 trillion, providing a growing dual-purpose capital base capable of funding both growth investments and shareholder returns."
+          }
+        },
+        {
+          "title": {
+            "ko": "업종 최상위 주주환원 수익률 — 일관된 자사주 매입·소각 구조",
+            "en": "Top-of-Sector Shareholder Return Yield Backed by Systematic Buyback-and-Cancellation"
+          },
+          "body": {
+            "ko": "메리츠금융지주는 연결 순이익의 50%를 배당 및 자사주 매입·소각으로 환원하는 명시적 주주환원 정책을 유지하고 있으며, 2024년 배당 결의액 2,407억원과 자사주 순매입 8,583억원을 병행 집행하였고, 2025년에는 3분기 누적 자사주 순매입액이 이미 9,308억원에 달한다. 키움증권(2026년 2월)에 따르면 2026년 예상 주주환원수익률은 약 6.7%로, 금융업종 내 최상위 수준의 매력적인 지표다. 유통 주식 수의 지속적 감소는 주당 내재가치 향상에 직접 기여하며, 장기적인 주주가치 제고 효과를 구조적으로 강화한다. 높은 수익성을 기반으로 한 안정적인 현금 창출력이 이 정책의 지속 가능성을 뒷받침하고 있다.",
+            "en": "Meritz maintains an explicit 50% net-income shareholder return policy combining cash dividends and systematic buyback-and-cancellation programs; in 2024, KRW 240.7 billion in dividends and KRW 858.3 billion in net share repurchases were executed, with 2025 cumulative net buybacks already reaching KRW 930.8 billion through Q3 alone. Kiwoom Securities (February 2026) estimates the 2026 total shareholder return yield at approximately 6.7%, placing Meritz at the top of Korea's financial sector. The ongoing reduction in share count directly enhances per-share intrinsic value, creating a structurally self-reinforcing long-term value creation mechanism. The group's robust and consistent cash generation capacity underpins the sustainability of this return commitment."
+          }
+        },
+        {
+          "title": {
+            "ko": "메리츠화재 안정적 자본비율 + 메리츠증권 IB 경쟁력 고도화",
+            "en": "Meritz Fire's Solid Solvency Ratio and Meritz Securities' Deepening IB Franchise"
+          },
+          "body": {
+            "ko": "메리츠화재의 2025년 말 K-ICS비율은 237.4%로, 감독 당국 권고 기준을 여유 있게 상회하며 두꺼운 자본 완충력을 확보하고 있어 배당 가용성 및 그룹 내 자본 지원 능력이 충분하다. 메리츠증권은 IB·기업금융, 자산운용, 리테일 등 전 사업 부문에서 고른 성과를 거두며 2025년 IB부문 영업순수익 전년 대비 12% 성장을 통해 IB 경쟁력을 재확인했다. 발행어음 사업 인가가 최종 승인될 경우, 안정적 자금조달 기반 확충과 함께 경쟁사 대비 자금비용 절감 및 리테일 수익 다각화라는 새로운 성장 경로가 열릴 수 있다. 한신평에 따르면 메리츠증권의 부동산금융 익스포저 중 약 79%가 단일·선순위, 약 40%가 아파트로 구성되어 있어 질적 구성은 동종 업계 비교군 대비 우수한 수준으로 평가된다.",
+            "en": "Meritz Fire's K-ICS solvency ratio of 237.4% at end-2025 comfortably exceeds regulatory guidance, providing ample capital buffers that support both dividend capacity and potential group-level capital deployment. Meritz Securities is delivering broad-based performance across IB, asset management, and retail segments, with FY2025 IB segment operating revenue growing 12% YoY, reaffirming the franchise's competitive positioning. Approval of the commercial paper issuance license — if it materializes — would strengthen Meritz Securities' funding base, potentially lowering its funding cost relative to peers and unlocking a new retail revenue diversification pathway. According to Korea Ratings, approximately 79% of Meritz Securities' real estate finance exposure consists of senior and single-tranche positions, and approximately 40% is in apartments, indicating that the qualitative composition of its portfolio is superior to peer averages despite the high quantitative level."
+          }
+        }
+      ],
+      "bear": [
+        {
+          "title": {
+            "ko": "부동산 익스포저 집중과 악화된 건전성 지표",
+            "en": "Concentrated Real Estate Exposure and Deteriorating Asset Quality Metrics"
+          },
+          "body": {
+            "ko": "KIS신용평가(2026년 1월)에 따르면 2025년 9월 말 기준 그룹 총 부동산 익스포저(관련 잔액 및 미인출 약정한도 포함)는 31.2조원으로 연결자본 대비 274%에 달하며, 이는 계열사 공동투자 구조로 인한 영업실적 동조화 리스크도 내재하고 있다. 같은 기준시점 그룹 연결 고정이하여신비율은 7.8%로 전년 말 3.2% 대비 급등했으며, 홈플러스 관련 약 1.2조원 익스포저가 고정으로 분류된 영향이 컸다. 메리츠증권의 요주의이하자산은 2023년 말 8,827억원에서 2025년 말 1.9696조원으로 두 배 이상 증가했으며, 자기자본 대비 순요주의이하자산 비율도 10.3%에서 21.2%로 급등해 동종 업계 평균(8.3%)의 2.5배를 상회한다. 2021~2022년에 실행된 부동산PF의 만기가 2025~2026년에 집중됨에 따라 추가적인 건전성 저하 여신 발생 가능성도 배제할 수 없다.",
+            "en": "According to KIS Rating (January 2026), the group's total real estate exposure — including outstanding balances and undrawn commitments — stood at KRW 31.2 trillion at September 2025, equivalent to 274% of consolidated equity; the co-investment structure across subsidiaries also embeds a correlated earnings risk, where distress in a single large exposure simultaneously affects group-wide performance. The consolidated fixed-credit NPL ratio spiked from 3.2% at end-2024 to 7.8% by September 2025, largely driven by the classification of approximately KRW 1.2 trillion in Homeplus-related exposure as 'fixed.' At Meritz Securities, watchable-and-below assets more than doubled from KRW 882.7 billion at end-2023 to KRW 1.97 trillion at end-2025, with the net watchable-and-below ratio to equity jumping from 10.3% to 21.2% — 2.5 times the 8.3% peer average. With the maturity of 2021–2022 vintage PF loans concentrated in 2025–2026, incremental NPL generation remains a material risk."
+          }
+        },
+        {
+          "title": {
+            "ko": "사법·규제 복합 리스크 — 검찰 수사·세무조사·금감원 점검 동시 진행",
+            "en": "Multi-Front Legal and Regulatory Overhang — Prosecution, Tax Audit, and FSS Review Simultaneously Underway"
+          },
+          "body": {
+            "ko": "2026년 1월 검찰은 메리츠화재 전 사장 등의 미공개 정보 이용(내부자거래) 혐의와 관련해 메리츠금융지주 부회장 사무실 및 메리츠증권 본사를 압수수색했으며, 이 영향으로 주가는 6% 이상 급락했다. 2026년 5월에는 국세청 서울지방청 조사4국이 메리츠증권 본사를 방문해 비정기 세무조사를 실시하였고, 금융감독원도 메리츠증권의 부동산PF 관련 금융소비자보호법 위반 혐의를 점검 중이다. 메리츠증권의 발행어음 사업 인가도 동종 업계 경쟁사 대비 지연되고 있어 사업 다각화 속도에 제약이 되고 있다. 사법·규제 리스크의 구체적 귀결이 불명확한 상황에서 잠재적 과징금·제재·사업 제한 등의 영향은 현 단계에서 계량화가 어려워 투자 불확실성을 높이고 있다.",
+            "en": "In January 2026, prosecutors raided the vice chairman's office and Meritz Securities' headquarters in connection with alleged insider trading by former Meritz Fire executives, triggering a single-session share price drop of more than 6%. In May 2026, the National Tax Service dispatched investigators from Seoul's Regional Tax Office Investigation Unit 4 to conduct an unscheduled audit of Meritz Securities' headquarters, while the Financial Supervisory Service is also examining potential Financial Consumer Protection Act violations in connection with the securities subsidiary's real estate PF practices. Meritz Securities' pending commercial paper issuance license approval has been delayed relative to peers, constraining the speed of business diversification. As the ultimate outcomes of these legal and regulatory proceedings remain unresolved, the potential impact of fines, sanctions, or business restrictions is difficult to quantify at this stage, elevating overall investment uncertainty."
+          }
+        },
+        {
+          "title": {
+            "ko": "지주사 재무 레버리지 부담과 자회사 지원 의무 상존",
+            "en": "Holding Company Financial Leverage Burden and Ongoing Subsidiary Support Obligations"
+          },
+          "body": {
+            "ko": "KIS신용평가(2026년 1월) 기준으로 메리츠금융지주의 이중레버리지비율은 117.3%, 부채비율은 52.8%로 각각 금융지주사 평균(116.0%, 35.1%)을 상회하며, 회사채와 신종자본증권 잔액이 증가 추세에 있다. 지주사는 메리츠캐피탈에 최대 1.2조원 한도의 지급보증을 제공하고 있으며, 메리츠화재·증권이 발행한 신종자본증권을 총 6,123억원 보유하고 있어 계열사 지원 관련 재무부담이 지속되고 있다. 연결 순이익의 50% 주주환원 정책을 유지하면서 동시에 자회사 부실 확대 시 추가 자본 지원이 필요해질 경우, 지주사의 자본 배분 압박이 심화되어 환원 재원이 감소할 수 있다. 이러한 복합적 재무부담은 지주사 신용등급에 대한 하방 압력 요인으로 작용할 수 있으며, 차입비용 상승 시 지주사 이익을 잠식할 가능성도 있다.",
+            "en": "According to KIS Rating (January 2026), Meritz Financial Group's double-leverage ratio of 117.3% and debt ratio of 52.8% both exceed the financial holding company averages of 116.0% and 35.1%, with corporate bond and hybrid capital balances on an upward trend. The holding company provides a payment guarantee of up to KRW 1.2 trillion for Meritz Capital and holds KRW 612.3 billion in hybrid capital securities issued by Meritz Fire and Meritz Securities, adding ongoing contingent support obligations. Should further capital injections into subsidiaries become necessary due to credit deterioration, the tension between the 50% shareholder return commitment and capital support requirements could intensify, potentially compressing the available return pool. These compounding financial leverage risks represent potential downward pressure on the holding company's credit profile and introduce sensitivity to changes in borrowing costs."
+          }
+        }
+      ],
+      "risks": [
+        {
+          "cat": {
+            "ko": "부동산·거시 리스크",
+            "en": "Real Estate & Macro Risk"
+          },
+          "body": {
+            "ko": "국내 부동산 시장의 추가 침체 또는 상업용 부동산 가격 급락 시, 그룹 전반의 PF 및 대체투자 포트폴리오에서 추가 손실이 현실화될 위험이 있다. KIS신용평가에 따르면 계열사 공동투자 구조로 인해 단일 거액 익스포저의 부실이 그룹 전체 실적에 동시에 영향을 미치는 실적 동조화 리스크가 내재되어 있다. 금리 하락 사이클이 도래할 경우 메리츠화재의 대출채권 중심 투자이익이 감소할 수 있으며, 글로벌 상업용 부동산 가치 하락에 따른 해외 대체투자 부실화 위험도 상존한다. 정부의 PF 건전성 규제 강화가 2027년부터 전면 시행될 예정으로, 신규 딜 파이프라인이 위축되고 그룹의 핵심 수익 엔진인 부동산금융 영업이 중장기적으로 구조 변화를 맞이할 가능성이 있다.",
+            "en": "A further deterioration in the domestic real estate market or a sharp correction in commercial property values could crystallize additional losses across the group's PF and alternative investment portfolios. According to KIS Rating, the co-investment structure across subsidiaries creates inherent 'correlated performance risk,' where distress in a single large exposure simultaneously impacts group-wide results. A declining interest rate cycle could erode investment returns on Meritz Fire's loan-heavy portfolio, while overseas commercial real estate exposure introduces additional tail risk from global property market weakness. The government's PF soundness regulatory overhaul, planned for full implementation from 2027, could compress the new deal pipeline and force structural adaptation in the group's core real estate finance business over the medium term."
+          }
+        },
+        {
+          "cat": {
+            "ko": "규제·법적 리스크",
+            "en": "Regulatory & Legal Risk"
+          },
+          "body": {
+            "ko": "진행 중인 검찰 수사(미공개 정보 이용 혐의)와 국세청 세무조사의 결과에 따라 대규모 과징금, 주요 경영진 제재, 또는 사업 일부 제한 등의 시나리오가 현실화될 수 있으며, 이는 단기 재무 비용 및 경영진 집중력 분산으로 이어질 수 있다. 금융감독원의 메리츠증권 PF 관련 금융소비자보호법 위반 혐의 점검이 본격화될 경우, 추가 제재 및 충당금 부담, 영업관행 변경 요구 등이 복합적으로 수반될 수 있다. 메리츠증권의 발행어음 인가 지연이 장기화된다면 경쟁사 대비 자금조달 비용 열위와 리테일 사업 성장 기회 손실이 중기적으로 누적될 우려가 있다. 이러한 복합적 규제·법적 리스크는 경영진의 전략적 실행 역량을 제한하고 대외 신뢰도(평판 리스크)에도 부정적 영향을 미칠 수 있다.",
+            "en": "Depending on the outcomes of the ongoing prosecutor's investigation into alleged insider trading and the tax authority audit, scenarios involving significant fines, executive sanctions, or partial business restrictions could materialize, introducing near-term financial costs and management distraction. The FSS's active review of Meritz Securities' Financial Consumer Protection Act compliance could, if escalated, result in additional penalties, higher provisioning requirements, and compulsory changes to business practices. Continued delay in the commercial paper issuance license would extend Meritz Securities' competitive disadvantage relative to licensed peers in funding cost and retail business growth opportunity. Cumulatively, these legal and regulatory risks constrain management's capacity for strategic execution and could inflict meaningful reputational damage."
+          }
+        },
+        {
+          "cat": {
+            "ko": "자본 배분 및 주주환원 지속가능성 리스크",
+            "en": "Capital Allocation & Shareholder Return Sustainability Risk"
+          },
+          "body": {
+            "ko": "메리츠금융지주는 연결 순이익의 50% 주주환원 정책을 대외적으로 천명하고 있으나, 자회사 건전성 악화에 따른 추가 자본 지원 수요가 현실화될 경우 환원 가용 재원이 축소될 수 있다. 이중레버리지비율(117.3%)과 부채비율(52.8%)이 이미 업계 평균을 상회하는 상황에서 회사채·신종자본증권 추가 발행은 재무부담을 가중시킬 수 있으며, 금리 상승 또는 신용스프레드 확대 국면에서는 차입비용 증가가 지주사 이익을 잠식할 가능성도 있다. 주주환원 정책의 장기적 지속 가능성은 결국 그룹의 자산건전성 관리 성과와 안정적 자본비율 유지에 달려 있어, 부동산 익스포저 관련 리스크 해소가 선결 과제다. 시장이 환원 정책의 지속 가능성에 의구심을 갖게 될 경우, 현재 프리미엄 밸류에이션의 중요한 근거가 훼손될 수 있다.",
+            "en": "Meritz has publicly committed to a 50% consolidated net income shareholder return policy; however, if subsidiary credit deterioration requires additional capital injections, the available return pool could shrink. With the holding company's double-leverage ratio (117.3%) and debt ratio (52.8%) already above industry averages, further issuances of bonds or hybrid capital instruments would add to the financial burden, and a rising rate or widening spread environment could see increased borrowing costs erode holding company-level earnings. The long-term sustainability of the shareholder return policy ultimately depends on successful real estate exposure management and the maintenance of adequate capital ratios — making asset quality resolution a prerequisite. Should the market begin to question the sustainability of the return policy, one of the key pillars supporting the current valuation premium could be undermined."
+          }
+        }
+      ],
+      "verdict": {
+        "stance": {
+          "ko": "중립",
+          "en": "Neutral"
+        },
+        "body": {
+          "ko": "메리츠금융지주는 DART 공시 기준 3년 연속 역대 최대 순이익과 2026년 1분기 ROE 25.4%로 국내 금융업종 최상위 수준의 이익 창출력을 보유하고 있으며, 순이익의 50%를 배당·자사주 소각으로 환원하는 업종 내 최고 수준의 주주환원 정책은 구조적 매력 요인이다. 그러나 그룹 전반의 부동산 익스포저(연결자본 대비 274%)와 2025년 9월 말 기준 고정이하여신비율 7.8% 등 악화된 건전성 지표는 이익의 질적 측면에서 우려를 야기하고 있다. 2026년 초부터 이어진 검찰 압수수색, 국세청 세무조사 등의 복합적 법적·규제 리스크는 현 단계에서 그 귀결이 불투명하여 밸류에이션 디스카운트 요인으로 작용하고 있다. 부동산PF 시장의 점진적 안정화와 법적·규제 이벤트의 우호적 해소가 실현될 경우 이익 가시성이 높아지고 재평가 계기가 마련될 수 있으나, 현 국면에서는 구조적 이익 강점과 중첩된 리스크 요인 간의 균형을 고려해 '중립' 스탠스가 적절하다. 투자자는 자산건전성 관리 성과, 사법·규제 리스크의 귀결, 그리고 메리츠증권의 발행어음 인가 여부를 핵심 모니터링 지표로 추적해 나가야 할 것이다.",
+          "en": "Meritz Financial Group stands out as one of Korea's most profitable financial holding companies — delivering record-high net income per DART filings for the third consecutive year and a top-of-sector Q1 2026 ROE of 25.4% — and its 50% net-income shareholder return policy represents a structurally compelling attribute for value-oriented investors. However, the group's real estate exposure equivalent to 274% of consolidated equity and a fixed-credit NPL ratio of 7.8% at September 2025 raise meaningful concerns about the quality and durability of earnings. The series of legal and regulatory events unfolding since early 2026 — including a prosecutor's raid and a tax authority investigation — introduce an overhang of uncertain magnitude that constitutes a near-term valuation discount. Should the domestic PF market continue to stabilize and legal/regulatory overhangs resolve favorably, earnings visibility could improve substantially, serving as a catalyst for multiple expansion; at this juncture, however, the balance between the group's structural earnings strengths and the material risk overlays supports a Neutral stance. Investors should track asset quality management outcomes, the resolution of legal and regulatory proceedings, and the progress of Meritz Securities' commercial paper licensing as the primary indicators for any potential stance revision."
+        }
+      },
+      "sources": [
+        "https://www.joongangenews.com/news/articleView.html?idxno=495311",
+        "https://www.newspim.com/news/view/20260514001167",
+        "https://www.todaymild.com/news/articleView.html?idxno=32593",
+        "https://www.businesspost.co.kr/BP?command=article_view&num=430085",
+        "https://kisrating.com/fileDown.do?menuCd=R8&gubun=2&fileName=rs20260116-14.pdf",
+        "https://www.sedaily.com/NewsView/2K78I6FRYW",
+        "https://www.insight.co.kr/news/553694",
+        "https://news.bizwatch.co.kr/article/market/2026/04/03/0042",
+        "https://www.newspim.com/news/view/20260520000316",
+        "https://comp.fnguide.com/SVO2/ASP/SVD_Main.asp?gicode=A138040"
+      ],
+      "ticker": "138040",
+      "name": "메리츠금융지주",
+      "name_en": "MERITZ FINANCIAL GROUP INC.",
+      "sector": "금융",
+      "categories": [
+        "금융"
+      ],
+      "market": "코스피",
+      "reportDate": "2026-06-04",
+      "reportTs": "2026-06-04 05:31",
       "dataDate": "20260602"
     }
   }
