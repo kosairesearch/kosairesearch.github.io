@@ -668,7 +668,7 @@ const T=s=>(window.KOSi18n?KOSi18n.t(s):s);
 const UNIT=u=>EN()?(u==='조'?'₩T':u==='배'?'×':u):u;
 const KOS={
   won:n=>EN()?'₩'+n.toLocaleString('en-US'):n.toLocaleString('ko-KR')+'원',
-  mcap:jo=>!jo?'-':(EN()?'₩'+jo.toFixed(1)+'T':(jo>=1?jo.toFixed(1)+'조':Math.round(jo*10000).toLocaleString('ko-KR')+'억')),
+  mcap:jo=>!jo?'-':(EN()?'₩'+(+jo).toLocaleString('en-US',{maximumFractionDigits:1})+'T':(jo>=1?(+jo).toLocaleString('en-US',{maximumFractionDigits:1})+'조':Math.round(jo*10000).toLocaleString('ko-KR')+'억')),
   amt:n=>!n?'-':(n>=1e12?(EN()?'₩'+(n/1e12).toFixed(1)+'T':(n/1e12).toFixed(1)+'조'):(EN()?'₩'+Math.round(n/1e8).toLocaleString('en-US')+'00M':Math.round(n/1e8).toLocaleString('ko-KR')+'억')),
   pct:n=>(n>0?'+':'')+n.toFixed(2)+'%'
 };
