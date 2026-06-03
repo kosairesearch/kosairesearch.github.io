@@ -183,7 +183,8 @@ window.KOS_REPORTS = {
       "title": {
         "ko": "AI 메모리 슈퍼사이클의 핵심 수혜주",
         "en": "A core beneficiary of the AI memory super-cycle"
-      }
+      },
+      "reportTs": "2026-06-02 12:04"
     },
     "000660": {
       "lead": {
@@ -364,7 +365,8 @@ window.KOS_REPORTS = {
       "title": {
         "ko": "HBM 과점이 만든 창사 이래 최고 수익성",
         "en": "Record profitability built on HBM dominance"
-      }
+      },
+      "reportTs": "2026-06-02 12:04"
     },
     "005380": {
       "lead": {
@@ -541,7 +543,8 @@ window.KOS_REPORTS = {
       "title": {
         "ko": "성장과 수익성의 괴리",
         "en": "Growth-profit divergence"
-      }
+      },
+      "reportTs": "2026-06-02 12:04"
     },
     "373220": {
       "lead": {
@@ -717,7 +720,8 @@ window.KOS_REPORTS = {
       "title": {
         "ko": "실적 저점 통과, ESS가 쥔 반등의 열쇠",
         "en": "Past the trough — ESS holds the rebound key"
-      }
+      },
+      "reportTs": "2026-06-02 12:04"
     },
     "032830": {
       "lead": {
@@ -895,7 +899,8 @@ window.KOS_REPORTS = {
       "title": {
         "ko": "삼성전자 지분 효과와 밸류업 기대",
         "en": "Samsung stake effect meets value-up hopes"
-      }
+      },
+      "reportTs": "2026-06-02 12:04"
     },
     "012450": {
       "title": {
@@ -1072,7 +1077,8 @@ window.KOS_REPORTS = {
       ],
       "market": "코스피",
       "reportDate": "2026-06-04",
-      "dataDate": "20260602"
+      "dataDate": "20260602",
+      "reportTs": "2026-06-03 01:36"
     },
     "028260": {
       "lead": {
@@ -1253,7 +1259,8 @@ window.KOS_REPORTS = {
       "title": {
         "ko": "복합 대형주의 구조적 리레이팅",
         "en": "Structural re-rating of a diversified large cap"
-      }
+      },
+      "reportTs": "2026-06-03 01:36"
     },
     "207940": {
       "title": {
@@ -1436,7 +1443,8 @@ window.KOS_REPORTS = {
       ],
       "market": "코스피",
       "reportDate": "2026-06-04",
-      "dataDate": "20260602"
+      "dataDate": "20260602",
+      "reportTs": "2026-06-03 01:36"
     },
     "105560": {
       "title": {
@@ -1620,7 +1628,8 @@ window.KOS_REPORTS = {
       ],
       "market": "코스피",
       "reportDate": "2026-06-04",
-      "dataDate": "20260602"
+      "dataDate": "20260602",
+      "reportTs": "2026-06-03 01:36"
     },
     "012330": {
       "lead": {
@@ -1803,7 +1812,8 @@ window.KOS_REPORTS = {
       "title": {
         "ko": "부품사를 넘어 '피지컬 AI' 플랫폼으로",
         "en": "Beyond parts, toward a physical-AI platform"
-      }
+      },
+      "reportTs": "2026-06-03 01:36"
     },
     "034020": {
       "title": {
@@ -1982,7 +1992,8 @@ window.KOS_REPORTS = {
       ],
       "market": "코스피",
       "reportDate": "2026-06-04",
-      "dataDate": "20260602"
+      "dataDate": "20260602",
+      "reportTs": "2026-06-03 01:36"
     },
     "009150": {
       "lead": {
@@ -2158,7 +2169,8 @@ window.KOS_REPORTS = {
       "title": {
         "ko": "MLCC·FC-BGA·실리콘 커패시터, AI 부품 삼중 모멘텀",
         "en": "Triple momentum across MLCC, FC-BGA and silicon capacitors"
-      }
+      },
+      "reportTs": "2026-06-03 01:36"
     },
     "066570": {
       "title": {
@@ -2337,7 +2349,8 @@ window.KOS_REPORTS = {
       ],
       "market": "코스피",
       "reportDate": "2026-06-04",
-      "dataDate": "20260602"
+      "dataDate": "20260602",
+      "reportTs": "2026-06-03 01:36"
     },
     "329180": {
       "lead": {
@@ -2516,7 +2529,8 @@ window.KOS_REPORTS = {
       "title": {
         "ko": "조선 슈퍼사이클에 방산 모멘텀까지",
         "en": "Shipbuilding super-cycle plus defense momentum"
-      }
+      },
+      "reportTs": "2026-06-03 01:36"
     },
     "000270": {
       "lead": {
@@ -2698,7 +2712,8 @@ window.KOS_REPORTS = {
       "title": {
         "ko": "관세 역풍 속 중장기 체질 개선",
         "en": "Reshaping for the long run amid tariff headwinds"
-      }
+      },
+      "reportTs": "2026-06-03 01:36"
     },
     "034730": {
       "title": {
@@ -2874,7 +2889,8 @@ window.KOS_REPORTS = {
       ],
       "market": "코스피",
       "reportDate": "2026-06-04",
-      "dataDate": "20260602"
+      "dataDate": "20260602",
+      "reportTs": "2026-06-04 00:12"
     },
     "068270": {
       "title": {
@@ -3057,7 +3073,8 @@ window.KOS_REPORTS = {
       ],
       "market": "코스피",
       "reportDate": "2026-06-04",
-      "dataDate": "20260602"
+      "dataDate": "20260602",
+      "reportTs": "2026-06-04 00:12"
     },
     "035420": {
       "title": {
@@ -3237,7 +3254,8 @@ window.KOS_REPORTS = {
       ],
       "market": "코스피",
       "reportDate": "2026-06-04",
-      "dataDate": "20260602"
+      "dataDate": "20260602",
+      "reportTs": "2026-06-04 00:12"
     },
     "006400": {
       "title": {
@@ -3417,7 +3435,8 @@ window.KOS_REPORTS = {
       ],
       "market": "코스피",
       "reportDate": "2026-06-04",
-      "dataDate": "20260602"
+      "dataDate": "20260602",
+      "reportTs": "2026-06-04 00:12"
     },
     "055550": {
       "title": {
@@ -3597,7 +3616,8 @@ window.KOS_REPORTS = {
       ],
       "market": "코스피",
       "reportDate": "2026-06-04",
-      "dataDate": "20260602"
+      "dataDate": "20260602",
+      "reportTs": "2026-06-04 00:12"
     },
     "009540": {
       "title": {
@@ -3774,7 +3794,8 @@ window.KOS_REPORTS = {
       ],
       "market": "코스피",
       "reportDate": "2026-06-04",
-      "dataDate": "20260602"
+      "dataDate": "20260602",
+      "reportTs": "2026-06-04 03:52"
     },
     "011070": {
       "title": {
@@ -3954,7 +3975,8 @@ window.KOS_REPORTS = {
       ],
       "market": "코스피",
       "reportDate": "2026-06-04",
-      "dataDate": "20260602"
+      "dataDate": "20260602",
+      "reportTs": "2026-06-04 03:52"
     },
     "010130": {
       "title": {
@@ -4132,7 +4154,8 @@ window.KOS_REPORTS = {
       ],
       "market": "코스피",
       "reportDate": "2026-06-04",
-      "dataDate": "20260602"
+      "dataDate": "20260602",
+      "reportTs": "2026-06-04 03:52"
     },
     "000810": {
       "title": {
@@ -4312,7 +4335,8 @@ window.KOS_REPORTS = {
       ],
       "market": "코스피",
       "reportDate": "2026-06-04",
-      "dataDate": "20260602"
+      "dataDate": "20260602",
+      "reportTs": "2026-06-04 03:52"
     },
     "005490": {
       "title": {
@@ -4490,7 +4514,8 @@ window.KOS_REPORTS = {
       ],
       "market": "코스피",
       "reportDate": "2026-06-04",
-      "dataDate": "20260602"
+      "dataDate": "20260602",
+      "reportTs": "2026-06-04 03:52"
     },
     "086790": {
       "title": {
@@ -4667,7 +4692,8 @@ window.KOS_REPORTS = {
       ],
       "market": "코스피",
       "reportDate": "2026-06-04",
-      "dataDate": "20260602"
+      "dataDate": "20260602",
+      "reportTs": "2026-06-04 03:52"
     },
     "042660": {
       "title": {
@@ -4851,7 +4877,8 @@ window.KOS_REPORTS = {
       ],
       "market": "코스피",
       "reportDate": "2026-06-04",
-      "dataDate": "20260602"
+      "dataDate": "20260602",
+      "reportTs": "2026-06-04 03:52"
     },
     "006800": {
       "title": {
@@ -5025,7 +5052,8 @@ window.KOS_REPORTS = {
       ],
       "market": "코스피",
       "reportDate": "2026-06-04",
-      "dataDate": "20260602"
+      "dataDate": "20260602",
+      "reportTs": "2026-06-04 03:52"
     },
     "000150": {
       "title": {
@@ -5202,7 +5230,8 @@ window.KOS_REPORTS = {
       ],
       "market": "코스피",
       "reportDate": "2026-06-04",
-      "dataDate": "20260602"
+      "dataDate": "20260602",
+      "reportTs": "2026-06-04 03:52"
     },
     "267260": {
       "title": {
@@ -5380,7 +5409,8 @@ window.KOS_REPORTS = {
       ],
       "market": "코스피",
       "reportDate": "2026-06-04",
-      "dataDate": "20260602"
+      "dataDate": "20260602",
+      "reportTs": "2026-06-04 04:13"
     }
   }
 };
