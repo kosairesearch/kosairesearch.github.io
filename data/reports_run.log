@@ -1,4 +1,21 @@
-=== 배치(collect) 시작 Wed Jun  3 18:54:15 UTC 2026 ===
-  · ⚠️ 267260 불완전(잘림 의심) — 건너뜀, 기존 유지
+=== 배치(auto) 시작 Wed Jun  3 19:03:32 UTC 2026 ===
+## 🤖 Batch 제출 — 대상 1개 / 상위 100개 (최근 29개 건너뜀) · 모델 claude-sonnet-4-6
+{'status': '013', 'message': '조회된 데이타가 없습니다.'}
 
-✅ 회수 완료 · 성공 9/실패 1 · 총 보유 29개 → data/reports.js
+{'status': '013', 'message': '조회된 데이타가 없습니다.'}
+
+  · 준비 267260 HD현대일렉트릭 (DART O)
+- ✅ 배치 제출 완료: msgbatch_01UPp5G63gRY8n1wg1Xz1nUt (1건) → data/batch_state.json
+  · 상태 in_progress · 처리 1/성공 0/오류 0
+  · 상태 in_progress · 처리 1/성공 0/오류 0
+  · 상태 in_progress · 처리 1/성공 0/오류 0
+  · 상태 in_progress · 처리 1/성공 0/오류 0
+  · 상태 in_progress · 처리 1/성공 0/오류 0
+  · 상태 in_progress · 처리 1/성공 0/오류 0
+  · 상태 in_progress · 처리 1/성공 0/오류 0
+  · 상태 in_progress · 처리 1/성공 0/오류 0
+  · 상태 in_progress · 처리 1/성공 0/오류 0
+  · 상태 in_progress · 처리 1/성공 0/오류 0
+  · 상태 ended · 처리 0/성공 1/오류 0
+
+✅ 회수 완료 · 성공 1/실패 0 · 총 보유 30개 → data/reports.js
