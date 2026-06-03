@@ -294,6 +294,7 @@ table.dt .pos{color:var(--up);font-weight:700}table.dt .neg{color:var(--down);fo
 .src-card{display:flex;align-items:center;gap:11px;padding:11px 13px;border:1px solid var(--border-2);border-radius:12px;background:rgba(128,128,150,.06);text-decoration:none;transition:transform .12s ease,border-color .12s ease,box-shadow .12s ease}
 .src-card:hover{transform:translateY(-1px);border-color:#5b7cfa;background:rgba(128,128,150,.11);box-shadow:0 4px 14px rgba(0,0,0,.08)}
 .src-ico{flex:0 0 30px;width:30px;height:30px;border-radius:8px;display:flex;align-items:center;justify-content:center;font-weight:700;font-size:14px;color:#fff;background:linear-gradient(135deg,#5b7cfa,#8a5cf6)}
+.src-ico-base{background:rgba(91,124,250,.14);font-size:15px}
 .src-body{display:flex;flex-direction:column;min-width:0;flex:1}
 .src-host{font-size:13px;font-weight:600;color:var(--fg-1);white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
 .src-ttl{font-size:11.5px;color:var(--fg-3);white-space:nowrap;overflow:hidden;text-overflow:ellipsis;margin-top:1px}
@@ -814,6 +815,7 @@ KOSi18n.register({
       mk:{price:'현재가',chg:'전일 대비',mcap:'시가총액',amt:'거래대금',vol:'거래량',shares:'상장주식수',market:'시장',sector:'업종'},
       sec:{overview:'리포트 개요',business:'사업 구조',recent:'최근 실적·주가',outlook:'전망',bull:'강세 요인',bear:'약세 요인',risk:'리스크 요인',verdict:'종합 의견',sources:'참고 출처'},
       eyebrow:'AI 리서치 리포트', reportDate:'리포트 작성일', dataDate:'데이터 기준일', model:'생성 모델', stance:'투자 의견',
+      srcKRX:'한국거래소 (KRX)', srcKRXsub:'시세·시가총액 데이터', srcDART:'금융감독원 전자공시 (DART)', srcDARTsub:'재무·공시 원문',
       discT:'면책 조항',
       disc:'· 본 콘텐츠는 AI가 시장 데이터와 웹 검색 결과를 분석한 정보 제공용이며, 투자 권유나 추천이 아닙니다. 투자 판단과 그 책임은 투자자 본인에게 있습니다. 데이터는 지연되거나 오류가 포함될 수 있습니다.',
       none:'이 종목의 AI 리포트는 아직 준비되지 않았습니다. 시가총액 상위 종목부터 순차적으로 생성하고 있습니다.' },
@@ -821,6 +823,7 @@ KOSi18n.register({
       mk:{price:'Price',chg:'Day change',mcap:'Market cap',amt:'Trading value',vol:'Volume',shares:'Shares out.',market:'Market',sector:'Sector'},
       sec:{overview:'Report Overview',business:'Business',recent:'Recent Results & Price',outlook:'Outlook',bull:'Bull Factors',bear:'Bear Factors',risk:'Risk Factors',verdict:'Verdict',sources:'Sources'},
       eyebrow:'AI Research Report', reportDate:'Report date', dataDate:'Data as of', model:'Model', stance:'Stance',
+      srcKRX:'Korea Exchange (KRX)', srcKRXsub:'Price & market-cap data', srcDART:'DART (FSS e-disclosure)', srcDARTsub:'Financials & filings',
       discT:'Disclaimer',
       disc:'· This content is AI-generated analysis of market data and web search results, for information only — not investment solicitation or a recommendation. Investment decisions and their outcomes are your own responsibility. Data may be delayed or contain errors.',
       none:'An AI report for this stock is not ready yet. We are generating them in order of market cap.' }
@@ -875,12 +878,14 @@ KOSi18n.register({
 
   function srcHost(u){ try{ return new URL(u).hostname.replace(/^www\./,''); }catch(e){ return String(u).replace(/^https?:\/\//,'').split('/')[0]; } }
   function srcTitle(u){ try{ var p=new URL(u); var t=decodeURIComponent(p.pathname).replace(/[\/\-_]+/g,' ').replace(/\.(html?|php|aspx?)$/i,'').trim(); return t.length>4?t.slice(0,54):''; }catch(e){ return ''; } }
-  function srcCard(u){ var host=esc(srcHost(u)), url=esc(u), ttl=esc(srcTitle(u));
+  function srcCardL(host, ttl, url, ico){
+    host=esc(host); ttl=esc(ttl||''); url=esc(url);
     return '<a class="src-card" href="'+url+'" target="_blank" rel="noopener">'
-      +'<span class="src-ico">'+esc(host.charAt(0).toUpperCase())+'</span>'
+      +'<span class="src-ico'+(ico?' src-ico-base':'')+'">'+esc(ico||host.charAt(0).toUpperCase())+'</span>'
       +'<span class="src-body"><span class="src-host">'+host+'</span>'
       +(ttl?'<span class="src-ttl">'+ttl+'</span>':'')+'</span>'
       +'<svg class="src-ext" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17 17 7M17 7H9M17 7v8"/></svg></a>'; }
+  function srcCard(u){ return srcCardL(srcHost(u), srcTitle(u), u); }
   function render(){
     var u=U(), Ln=L();
     var up=(STOCK.change>=0), cc=up?'up':'down', sign=up?'+':'';
@@ -926,10 +931,14 @@ KOSi18n.register({
       h+=secOpen(pad(n++),'VERDICT',u.sec.verdict);
       var st=REP.verdict?pk(REP.verdict.stance):'';
       h+='<div class="wrapup glass">'+(st?'<div class="label">'+esc(u.stance)+' · '+esc(st)+'</div>':'')+'<p>'+esc(REP.verdict?pk(REP.verdict.body):'')+'</p></div></section>';
-      if(REP.sources&&REP.sources.length){
-        h+='<hr class="hairline" />'+secOpen(pad(n++),'SOURCES',u.sec.sources);
-        h+='<div class="srcgrid">'+REP.sources.map(srcCard).join('')+'</div></section>';
-      }
+      // 참고 출처: 기본(KRX·DART)을 항상 먼저, 그 뒤 웹 인용
+      var baseCards=[
+        srcCardL(u.srcKRX, u.srcKRXsub, 'https://data.krx.co.kr', '📊'),
+        srcCardL(u.srcDART, u.srcDARTsub, 'https://dart.fss.or.kr', '📄')
+      ];
+      var webCards=(REP.sources||[]).map(srcCard);
+      h+='<hr class="hairline" />'+secOpen(pad(n++),'SOURCES',u.sec.sources);
+      h+='<div class="srcgrid">'+baseCards.concat(webCards).join('')+'</div></section>';
       h+='<div class="col"><div class="rep-meta rep-meta-end"><span><b>'+esc(u.reportDate)+'</b>'+esc(REP.reportDate||'')+'</span></div></div>';
       rb.innerHTML=h;
     }
