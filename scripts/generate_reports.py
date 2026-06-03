@@ -291,11 +291,19 @@ def parse_report(text):
         return repair_json(chunk, return_objects=True)
 
 
+def valid_report(rep):
+    """필수 항목이 다 있는지(잘림/부분파싱 방지). 종합의견·리스크·핵심·본문 확인."""
+    if not isinstance(rep, dict):
+        return False
+    return bool(rep.get("verdict")) and len(rep.get("risks") or []) >= 2 \
+        and len(rep.get("keypoints") or []) >= 3 and bool(rep.get("business"))
+
+
 def generate_one(client, stock, as_of, dart_block=""):
     prompt = build_prompt(stock, as_of, dart_block)
     with client.messages.stream(
         model=MODEL,
-        max_tokens=32000,
+        max_tokens=48000,
         system=SYSTEM,
         thinking={"type": "adaptive"},
         tools=[{"type": "web_search_20250305", "name": "web_search", "max_uses": 5,
@@ -319,6 +327,8 @@ def generate_one(client, stock, as_of, dart_block=""):
         head = (text or "").strip()[:300].replace("\n", " ")
         log(f"  · 파싱 실패 응답(앞 300자): {head!r} · stop={message.stop_reason}")
         raise
+    if not valid_report(report):
+        raise ValueError(f"불완전한 리포트(잘림 의심, stop={message.stop_reason})")
     # 출처는 웹검색 인용에서 직접 채운다(모델이 sources를 비우는 경우 대비)
     srcs = collect_sources(message)
     if srcs:

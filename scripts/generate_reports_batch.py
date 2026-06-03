@@ -95,7 +95,7 @@ def submit(cl, as_of):
             custom_id=st["ticker"],
             params=MessageCreateParamsNonStreaming(
                 model=MODEL,
-                max_tokens=32000,
+                max_tokens=48000,
                 system=[{"type": "text", "text": g.SYSTEM, "cache_control": {"type": "ephemeral"}}],
                 thinking={"type": "adaptive"},
                 tools=TOOLS,
@@ -158,6 +158,10 @@ def collect(cl, as_of):
         try:
             text = g.extract_text(result.result.message)
             rep = g.parse_report(text)
+            if not g.valid_report(rep):
+                fail += 1
+                log(f"  · ⚠️ {tk} 불완전(잘림 의심) — 건너뜀, 기존 유지")
+                continue
             srcs = g.collect_sources(result.result.message)
             if srcs:
                 rep["sources"] = srcs[:18]
