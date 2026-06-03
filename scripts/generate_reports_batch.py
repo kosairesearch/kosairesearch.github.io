@@ -73,7 +73,13 @@ def load_existing():
 
 def submit(cl, as_of):
     data = g.load_stocks()
-    stocks = sorted(data["stocks"], key=lambda x: x.get("mcap", 0) or 0, reverse=True)[:TOP_N]
+    tickers_env = os.getenv("REPORT_TICKERS", "").replace(" ", "")
+    if tickers_env:
+        want = [t for t in tickers_env.split(",") if t]
+        by_tk = {s["ticker"]: s for s in data["stocks"]}
+        stocks = [by_tk[t] for t in want if t in by_tk]
+    else:
+        stocks = sorted(data["stocks"], key=lambda x: x.get("mcap", 0) or 0, reverse=True)[:TOP_N]
     _, fresh = load_existing()
     targets = [s for s in stocks if FORCE or s["ticker"] not in fresh]
     log(f"## 🤖 Batch 제출 — 대상 {len(targets)}개 / 상위 {TOP_N}개 (최근 {len(fresh)}개 건너뜀) · 모델 {MODEL}")

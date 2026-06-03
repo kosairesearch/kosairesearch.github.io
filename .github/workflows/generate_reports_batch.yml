@@ -13,6 +13,10 @@ on:
         description: '대상 종목 수 (시총 상위 N개)'
         type: string
         default: '100'
+      tickers:
+        description: '특정 종목만 (쉼표구분 6자리코드, 비우면 top_n 사용)'
+        type: string
+        default: ''
       force:
         description: '이미 있는 리포트도 강제 재생성 (분량/포맷 변경 반영용)'
         type: choice
@@ -50,6 +54,7 @@ jobs:
           DART_API_KEY: ${{ secrets.DART_API_KEY }}
           REPORT_MODEL: ${{ vars.REPORT_MODEL || 'claude-sonnet-4-6' }}
           REPORT_TOP_N: ${{ inputs.top_n || '100' }}
+          REPORT_TICKERS: ${{ inputs.tickers || '' }}
           REPORT_FORCE: ${{ inputs.force == 'yes' && '1' || '' }}
         run: |
           set -o pipefail
