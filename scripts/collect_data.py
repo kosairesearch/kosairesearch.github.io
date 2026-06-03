@@ -17,6 +17,11 @@ from dotenv import load_dotenv
 load_dotenv()
 DART_API_KEY = os.getenv("DART_API_KEY")
 
+# 전 종목(universe) 수집 모드. 미설정이면 기존 SECTOR_MAP 방식(daily cron 안전).
+FULL_UNIVERSE = os.getenv("FULL_UNIVERSE", "") == "1"
+# 0이면 무제한. 디버그/부분 수집용 상한.
+UNIVERSE_LIMIT = int(os.getenv("UNIVERSE_LIMIT", "0") or "0")
+
 # GitHub Actions Step Summary 지원
 STEP_SUMMARY = os.getenv("GITHUB_STEP_SUMMARY")
 
@@ -406,15 +411,74 @@ def find_col(columns, *keywords):
     return None
 
 
-def collect_pykrx_fallback(date):
-    """개별 종목 조회 폴백 — SECTOR_MAP 종목만 수집합니다."""
+def build_universe(date):
+    """수집 대상 티커 목록 {ticker: sector_default} 을 만듭니다.
+
+    기본: SECTOR_MAP(수기 목록).
+    FULL_UNIVERSE=1: 전 상장사. pykrx 전종목 티커목록을 우선 시도하고,
+    실패(Actions에서 차단)하면 DART corp_codes로, 그것도 안 되면 SECTOR_MAP으로
+    단계적으로 폴백합니다. SECTOR_MAP 값이 있으면 그 업종을 유지합니다.
+    """
+    if not FULL_UNIVERSE:
+        return dict(SECTOR_MAP)
+
+    universe = {}
+    # 1) pykrx 전종목 티커 목록 (현재 상장 종목만 — 가장 깔끔)
+    try:
+        from pykrx import stock as krx
+        for mkt in ("KOSPI", "KOSDAQ"):
+            try:
+                lst = krx.get_market_ticker_list(date, market=mkt) or []
+                for tk in lst:
+                    universe[str(tk)] = SECTOR_MAP.get(str(tk), "기타")
+                print(f"  [universe] pykrx {mkt}: {len(lst)}개")
+            except Exception as e:
+                print(f"  [universe] pykrx {mkt} 실패: {type(e).__name__}: {e}")
+    except Exception as e:
+        print(f"  [universe] pykrx 로드 실패: {e}")
+
+    # 2) pykrx가 비면 DART corp_codes(상장사=stock_code 6자리)로 폴백
+    if len(universe) < 200 and DART_API_KEY:
+        try:
+            import OpenDartReader
+            dart = OpenDartReader(DART_API_KEY)
+            cc = dart.corp_codes  # DataFrame: corp_code, corp_name, stock_code, modify_date
+            n = 0
+            for sc in cc["stock_code"].dropna().astype(str):
+                sc = sc.strip()
+                if len(sc) == 6 and sc.isdigit():
+                    universe.setdefault(sc, SECTOR_MAP.get(sc, "기타"))
+                    n += 1
+            print(f"  [universe] DART corp_codes 상장사: {n}개 (누적 {len(universe)})")
+        except Exception as e:
+            print(f"  [universe] DART corp_codes 실패: {type(e).__name__}: {e}")
+
+    # 3) 둘 다 실패하면 SECTOR_MAP
+    if len(universe) < 50:
+        print("  [universe] 전종목 목록 확보 실패 — SECTOR_MAP으로 폴백")
+        universe = dict(SECTOR_MAP)
+    else:
+        # SECTOR_MAP 종목은 항상 포함(업종 라벨 보존)
+        for tk, sec in SECTOR_MAP.items():
+            universe.setdefault(tk, sec)
+
+    if UNIVERSE_LIMIT and len(universe) > UNIVERSE_LIMIT:
+        universe = dict(list(universe.items())[:UNIVERSE_LIMIT])
+    print(f"  [universe] 최종 수집 대상: {len(universe)}개")
+    return universe
+
+
+def collect_pykrx_fallback(date, universe=None):
+    """개별 종목 OHLCV 수집(universe 목록 대상)."""
     from pykrx import stock as krx
 
-    print("  [폴백] 개별 종목 OHLCV 수집 중...")
+    if universe is None:
+        universe = dict(SECTOR_MAP)
+    print(f"  [폴백] 개별 종목 OHLCV 수집 중... (대상 {len(universe)}개)")
     results = {}
     debug_info = {}
 
-    for ticker, sector in SECTOR_MAP.items():
+    for ticker, sector in universe.items():
         try:
             df_ohlcv = krx.get_market_ohlcv_by_date(date, date, ticker)
             if df_ohlcv is None or df_ohlcv.empty:
@@ -494,7 +558,8 @@ def collect_pykrx(date):
     시총·PER·PBR 등은 enrich_with_dart()에서 DART로 채웁니다.
     """
     print(f"  [pykrx] {date} OHLCV 데이터 수집 중...")
-    results = collect_pykrx_fallback(date)
+    universe = build_universe(date)
+    results = collect_pykrx_fallback(date, universe)
 
     valid = [v for v in results.values() if v["price"] > 0]
     print(f"  [pykrx] 수집 결과: {len(results)}개 (가격 유효: {len(valid)}개)")
@@ -761,7 +826,9 @@ def enrich_with_dart(results):
         return results
 
     debug_info = {}
-    targets = sorted(results.values(), key=lambda x: x["trading_value"], reverse=True)[:130]
+    ranked = sorted(results.values(), key=lambda x: x["trading_value"], reverse=True)
+    # 전 종목 모드면 모두 보강(시총 채워야 가드 통과 + 순위 산정). 아니면 상위 130개.
+    targets = ranked if FULL_UNIVERSE else ranked[:130]
     print(f"  [DART] {len(targets)}개 종목 영문명·주식수(시총) 수집 중...")
 
     for i, stock in enumerate(targets):
@@ -823,16 +890,32 @@ def enrich_with_dart(results):
 
 
 
-def build_output(results, date):
-    """웹사이트용 JS 파일을 생성합니다."""
-    valid = [s for s in results.values() if s["price"] > 0]
+def load_existing_stocks():
+    """기존 data/stocks.js 를 {ticker: record} 로 읽습니다(병합용)."""
+    p = Path("data/stocks.js")
+    if not p.exists():
+        return {}
+    try:
+        raw = p.read_text(encoding="utf-8")
+        obj = json.loads(raw[raw.find("{"): raw.rfind("}") + 1])
+        return {s["ticker"]: s for s in obj.get("stocks", [])}
+    except Exception as e:
+        print(f"  [merge] 기존 stocks.js 로드 실패: {e}")
+        return {}
 
-    # mcap이 모두 0이면 거래대금으로 정렬
-    if valid and all(s["mcap"] == 0 for s in valid):
-        print("  [경고] 시가총액 0 — 거래대금 기준으로 정렬")
-        stocks = sorted(valid, key=lambda x: x["trading_value"], reverse=True)[:100]
+
+def build_output(results, date):
+    """웹사이트용 JS 파일을 생성합니다. (시총>0 종목 전부 보존 — 페이지네이션)"""
+    valid = [s for s in results.values() if s["price"] > 0]
+    with_mcap = [s for s in valid if (s.get("mcap") or 0) > 0]
+
+    # 시총 있는 종목이 충분하면 시총순 전체 보존(0조 종목은 출력 제외).
+    if with_mcap and len(with_mcap) >= 0.4 * len(valid):
+        stocks = sorted(with_mcap, key=lambda x: x["mcap"], reverse=True)
     else:
-        stocks = sorted(valid, key=lambda x: x["mcap"], reverse=True)[:100]
+        # 시총 대량 실패 시 거래대금 기준(기존 동작) — 상위 100개만.
+        print("  [경고] 시가총액 정보 부족 — 거래대금 기준 상위 100개")
+        stocks = sorted(valid, key=lambda x: x["trading_value"], reverse=True)[:100]
 
     if len(stocks) < 5:
         # 가격 0 포함해서라도 채움
@@ -874,17 +957,24 @@ def main():
 
     results = enrich_with_dart(results)
 
-    # 수집 실패 가드: 종목이 너무 적으면 stocks.js를 덮어쓰지 않음(기존 100여 개 데이터 보존)
+    # 수집 실패 가드: 이번에 새로 수집한 종목이 너무 적으면 갱신 건너뜀(기존 데이터 보존)
     if len(results) < 50:
         log_summary(f"❌ 수집 종목 {len(results)}개로 비정상(50 미만) — stocks.js 갱신 건너뜀, 기존 데이터 유지")
         sys.exit(1)
 
-    # 시총 가드: DART 상장주식수 수집이 실패하면 mcap=0이 되어 사이트가 깨짐.
-    # 시총>0 종목이 절반 미만이면 비정상으로 보고 갱신 건너뜀(기존 데이터 보존).
+    # 시총 가드: 이번 수집분의 시총>0 비율이 절반 미만이면 DART 실패로 보고 건너뜀
     mcap_ok = sum(1 for s in results.values() if (s.get("mcap") or 0) > 0)
     if mcap_ok < len(results) * 0.5:
         log_summary(f"❌ 시가총액>0 종목 {mcap_ok}/{len(results)}개로 비정상(DART 수집 실패 추정) — stocks.js 갱신 건너뜀, 기존 데이터 유지")
         sys.exit(1)
+
+    # 기존 universe와 병합: 새로 수집한 종목은 갱신하고, 이번에 안 건드린 종목은 보존.
+    # (SECTOR_MAP만 도는 일일 실행이 전체 universe를 100개로 줄이지 않도록)
+    existing = load_existing_stocks()
+    before = len(existing)
+    existing.update(results)
+    log_summary(f"- 병합: 기존 {before}개 + 신규수집 {len(results)}개 → {len(existing)}개")
+    results = existing
 
     count = build_output(results, date)
     log_summary(f"- 최종 출력: {count}개 종목")

@@ -8,6 +8,16 @@ on:
     - cron: '0 12 * * 1-5'   # 21:00 KST
   workflow_dispatch:
     # 수동으로도 실행 가능 (GitHub 웹에서 버튼 클릭)
+    inputs:
+      full_universe:
+        description: '전 상장사 수집(universe). 평소엔 no.'
+        type: choice
+        options: [no, yes]
+        default: no
+      universe_limit:
+        description: 'universe 수집 상한(0=무제한, 디버그용)'
+        type: string
+        default: '0'
 
 jobs:
   update:
@@ -32,6 +42,8 @@ jobs:
         env:
           DART_API_KEY: ${{ secrets.DART_API_KEY }}
           DART_KEY_SET: ${{ secrets.DART_API_KEY != '' }}
+          FULL_UNIVERSE: ${{ inputs.full_universe == 'yes' && '1' || '' }}
+          UNIVERSE_LIMIT: ${{ inputs.universe_limit || '0' }}
         run: |
           mkdir -p data
           echo "DART_KEY_SET=$DART_KEY_SET (len=${#DART_API_KEY})" > data/run.log
