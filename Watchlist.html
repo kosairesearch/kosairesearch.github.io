@@ -45,7 +45,7 @@ body::before{content:"";position:fixed;inset:0;z-index:-1;pointer-events:none;
   background-image:linear-gradient(to right, rgba(255,255,255,.06) 1px, transparent 1px),linear-gradient(to bottom, rgba(255,255,255,.06) 1px, transparent 1px);background-size:48px 48px}
 .glass{background:rgba(255,255,255,0.62);border:1px solid rgba(255,255,255,0.55);box-shadow:var(--shadow-2),inset 0 1px 0 rgba(255,255,255,0.6);-webkit-backdrop-filter:blur(20px);backdrop-filter:blur(20px);border-radius:var(--radius-xl)}
 :root[data-theme="dark"] .glass{background:rgba(28,30,42,0.62);border-color:rgba(255,255,255,0.10);box-shadow:var(--shadow-2),inset 0 1px 0 rgba(255,255,255,0.08)}
-.btn{display:inline-flex;align-items:center;justify-content:center;gap:6px;font:600 14px/1 var(--font-sans);border-radius:var(--radius-sm);cursor:pointer;border:0;transition:transform .12s,filter .15s,background .15s;white-space:nowrap}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:6px;font:600 14px/1 var(--font-sans);border-radius:var(--radius-sm);cursor:pointer;border:0;transition:transform .12s,filter .15s,background .15s;white-space:nowrap;text-decoration:none}
 .btn:active{transform:scale(.98)}
 .btn-primary{background:#000;color:#fff;padding:11px 18px;box-shadow:var(--shadow-1)}
 :root[data-theme="dark"] .btn-primary{background:#fff;color:#000}
@@ -491,12 +491,11 @@ KOSi18n.register({
 
   <!-- EMPTY -->
   <div class="empty" id="empty">
-    <div class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3l2.9 5.9 6.5.9-4.7 4.6 1.1 6.5L12 18.8 6.2 21.8l1.1-6.5L2.6 9.8l6.5-.9z"/></svg></div>
     <h2>관심 종목이 비어 있습니다</h2>
     <p>스크리너에서 조건에 맞는 종목을 찾거나, 종목 상세 페이지에서 워치리스트에 추가해 보세요.</p>
     <div class="cta-row">
       <a class="btn btn-primary" href="Screener.html">스크리너로 이동</a>
-      <a class="btn btn-soft" href="Home.html">인기 종목 보기</a>
+      <a class="btn btn-soft" href="Reports.html">리포트 둘러보기</a>
     </div>
   </div>
 
@@ -610,7 +609,7 @@ const WATCHLIST_DICT={
   "종목":"Stock","현재가":"Price","최근 AI 코멘트":"Latest AI Comment",
   "관심 종목이 비어 있습니다":"Your watchlist is empty",
   "스크리너에서 조건에 맞는 종목을 찾거나, 종목 상세 페이지에서 워치리스트에 추가해 보세요.":"Find stocks in the Screener that fit your criteria, or add them from their detail page.",
-  "스크리너로 이동":"Go to Screener","인기 종목 보기":"Browse popular stocks",
+  "스크리너로 이동":"Go to Screener","리포트 둘러보기":"Browse reports",
   "제거":"Remove",
   // sectors
   "반도체":"Semiconductors","IT 서비스":"IT Services","자동차":"Automotive","바이오":"Biotech",
