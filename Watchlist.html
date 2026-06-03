@@ -177,6 +177,7 @@ body::before{content:"";position:fixed;inset:0;z-index:-1;pointer-events:none;
 }
 </style>
 <script src="data/stocks.js"></script>
+<script src="data/reports.js"></script>
 <script>
 /* ============================================================
    KOS ai — lightweight in-place i18n (KO ⇄ EN)
@@ -530,7 +531,13 @@ let LIST_DEFAULT=[
   {name:'현대차',ticker:'005380',market:'KOSPI',sector:'자동차',price:238500,change:1.28,mcap:50.2,ai:'하이브리드 차종 비중 확대와 미국 시장 ASP 안정세가 분기 영업이익률에 우호적으로 작용하는 모습이다.'},
   {name:'셀트리온',ticker:'068270',market:'KOSPI',sector:'바이오',price:186400,change:-0.32,mcap:40.6,ai:'바이오시밀러 미국 시장 진입 일정과 신규 파이프라인 가시성이 분기별로 점진적으로 개선되는 흐름이다.'},
 ].map((s,i)=>({...s,added:i}));
-let LIST = (window.KOS_LIVE_DATA?.stocks?.length > 0) ? window.KOS_LIVE_DATA.stocks.slice(0,8).map((s,i)=>({...s,added:i})) : LIST_DEFAULT;
+function isWatched(tk){ try{ return localStorage.getItem('kos-watch-'+tk)==='1'; }catch(e){ return false; } }
+function repTitle(tk){ const R=window.KOS_REPORTS&&KOS_REPORTS.reports&&KOS_REPORTS.reports[tk]; if(!R||!R.title) return ''; return EN()?(R.title.en||R.title.ko||''):(R.title.ko||R.title.en||''); }
+function getWatched(){
+  const all=(window.KOS_LIVE_DATA&&window.KOS_LIVE_DATA.stocks)||[];
+  return all.filter(s=>isWatched(s.ticker)).map((s,i)=>({...s,added:i}));
+}
+let LIST = getWatched();
 
 let sortKey='change';
 const rowsEl=document.getElementById('rows'),wlEl=document.getElementById('wl'),emptyEl=document.getElementById('empty');
@@ -552,7 +559,7 @@ function rowHtml(s){
       <div class="id"><span class="tk">${s.ticker}</span><span class="dot">·</span><span>${T(s.market)}</span><span class="dot">·</span><span>${T(s.sector)}</span></div>
     </div>
     <div class="c-price"><div class="px">${KOS.won(s.price)}</div><div class="ch ${dir}"><span style="font-size:10px">${arw}</span> ${KOS.pct(s.change)}</div></div>
-    <p class="c-ai">${T(s.ai)}</p>
+    <p class="c-ai">${repTitle(s.ticker)||''}</p>
     <span class="c-chev"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 6l6 6-6 6"/></svg></span>
   </a>`;
 }
@@ -578,7 +585,7 @@ document.getElementById('editBtn').addEventListener('click',e=>{
 });
 rowsEl.addEventListener('click',e=>{
   const rm=e.target.closest('[data-remove]');
-  if(rm){e.preventDefault();LIST=LIST.filter(s=>s.ticker!==rm.dataset.remove);render();return;}
+  if(rm){e.preventDefault();try{localStorage.removeItem('kos-watch-'+rm.dataset.remove);}catch(e){}LIST=getWatched();render();return;}
 });
 
 /* mobile menu */
