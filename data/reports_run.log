@@ -1,75 +1,29 @@
-=== 배치(auto) 시작 Wed Jun  3 20:40:18 UTC 2026 ===
-## 🤖 Batch 제출 — 대상 47개 / 상위 100개 (최근 50개 건너뜀) · 모델 claude-sonnet-4-6
-- (DART 초기화 실패) HTTPSConnectionPool(host='opendart.fss.or.kr', port=443): Max retries exceeded with url: /api/corpCode.xml?crtfc_key=fe32f957e40b37428b0d5f4807aa495839506436 (Caused by ConnectTimeoutError(<HTTPSConnection(host='opendart.fss.or.kr', port=443) at 0x7f2dd21f6250>, 'Connection to opendart.fss.or.kr timed out. (connect timeout=None)'))
-  · 준비 024110 기업은행 (DART X)
-  · 준비 079550 LIG디펜스앤에어로스페이스 (DART X)
-  · 준비 000720 현대건설 (DART X)
-  · 준비 277810 레인보우로보틱스 (DART X)
-  · 준비 047810 한국항공우주 (DART X)
-  · 준비 030200 KT (DART X)
-  · 준비 071050 한국금융지주 (DART X)
-  · 준비 010950 S-Oil (DART X)
-  · 준비 259960 크래프톤 (DART X)
-  · 준비 454910 두산로보틱스 (DART X)
-  · 준비 047050 포스코인터내셔널 (DART X)
-  · 준비 323410 카카오뱅크 (DART X)
-  · 준비 028050 삼성E&A (DART X)
-  · 준비 047040 대우건설 (DART X)
-  · 준비 003490 대한항공 (DART X)
-  · 준비 352820 하이브 (DART X)
-  · 준비 161390 한국타이어앤테크놀로지 (DART X)
-  · 준비 034220 LG디스플레이 (DART X)
-  · 준비 001440 대한전선 (DART X)
-  · 준비 000990 DB하이텍 (DART X)
-  · 준비 036570 NC (DART X)
-  · 준비 058470 리노공업 (DART X)
-  · 준비 032640 LG유플러스 (DART X)
-  · 준비 326030 SK바이오팜 (DART X)
-  · 준비 000100 유한양행 (DART X)
-  · 준비 128940 한미약품 (DART X)
-  · 준비 090430 아모레퍼시픽 (DART X)
-  · 준비 241560 두산밥캣 (DART X)
-  · 준비 066970 엘앤에프 (DART X)
-  · 준비 010060 OCI홀딩스 (DART X)
-  · 준비 004170 신세계 (DART X)
-  · 준비 011790 SKC (DART X)
-  · 준비 271560 오리온 (DART X)
-  · 준비 004020 현대제철 (DART X)
-  · 준비 240810 원익IPS (DART X)
-  · 준비 023530 롯데쇼핑 (DART X)
-  · 준비 251270 넷마블 (DART X)
-  · 준비 051900 LG생활건강 (DART X)
-  · 준비 011170 롯데케미칼 (DART X)
-  · 준비 097950 CJ제일제당 (DART X)
-  · 준비 357780 솔브레인 (DART X)
-  · 준비 263750 펄어비스 (DART X)
-  · 준비 069960 현대백화점 (DART X)
-  · 준비 375500 DL이앤씨 (DART X)
-  · 준비 139480 이마트 (DART X)
-  · 준비 006360 GS건설 (DART X)
-  · 준비 011210 현대위아 (DART X)
-- ✅ 배치 제출 완료: msgbatch_01JFkSQQ8mRJogTSctMCvCRG (47건) → data/batch_state.json
-  · 상태 in_progress · 처리 47/성공 0/오류 0
-  · 상태 in_progress · 처리 47/성공 0/오류 0
-  · 상태 in_progress · 처리 47/성공 0/오류 0
-  · 상태 in_progress · 처리 47/성공 0/오류 0
-  · 상태 in_progress · 처리 47/성공 0/오류 0
-  · 상태 in_progress · 처리 47/성공 0/오류 0
-  · 상태 in_progress · 처리 47/성공 0/오류 0
-  · 상태 in_progress · 처리 47/성공 0/오류 0
-  · 상태 in_progress · 처리 47/성공 0/오류 0
-  · 상태 in_progress · 처리 47/성공 0/오류 0
-  · 상태 in_progress · 처리 47/성공 0/오류 0
-  · 상태 in_progress · 처리 47/성공 0/오류 0
-  · 상태 in_progress · 처리 47/성공 0/오류 0
-  · 상태 in_progress · 처리 47/성공 0/오류 0
-  · 상태 in_progress · 처리 47/성공 0/오류 0
-  · 상태 in_progress · 처리 47/성공 0/오류 0
-  · 상태 in_progress · 처리 47/성공 0/오류 0
-  · 상태 in_progress · 처리 47/성공 0/오류 0
-  · 상태 in_progress · 처리 47/성공 0/오류 0
-  · 상태 in_progress · 처리 47/성공 0/오류 0
-  · 상태 in_progress · 처리 47/성공 0/오류 0
-  · 상태 ended · 처리 0/성공 47/오류 0
+=== 배치(auto) 시작 Wed Jun  3 21:30:15 UTC 2026 ===
+## 🤖 Batch 제출 — 대상 3개 / 상위 100개 (최근 97개 건너뜀) · 모델 claude-sonnet-4-6
+{'status': '013', 'message': '조회된 데이타가 없습니다.'}
 
-✅ 회수 완료 · 성공 47/실패 0 · 총 보유 97개 → data/reports.js
+{'status': '013', 'message': '조회된 데이타가 없습니다.'}
+
+  · 준비 029780 삼성카드 (DART O)
+{'status': '013', 'message': '조회된 데이타가 없습니다.'}
+
+{'status': '013', 'message': '조회된 데이타가 없습니다.'}
+
+  · 준비 004990 롯데지주 (DART O)
+{'status': '013', 'message': '조회된 데이타가 없습니다.'}
+
+{'status': '013', 'message': '조회된 데이타가 없습니다.'}
+
+  · 준비 282330 BGF리테일 (DART O)
+- ✅ 배치 제출 완료: msgbatch_015AWykNXFquS4eZuapns7e9 (3건) → data/batch_state.json
+  · 상태 in_progress · 처리 3/성공 0/오류 0
+  · 상태 in_progress · 처리 3/성공 0/오류 0
+  · 상태 in_progress · 처리 3/성공 0/오류 0
+  · 상태 in_progress · 처리 3/성공 0/오류 0
+  · 상태 in_progress · 처리 3/성공 0/오류 0
+  · 상태 in_progress · 처리 3/성공 0/오류 0
+  · 상태 in_progress · 처리 3/성공 0/오류 0
+  · 상태 in_progress · 처리 3/성공 0/오류 0
+  · 상태 ended · 처리 0/성공 3/오류 0
+
+✅ 회수 완료 · 성공 3/실패 0 · 총 보유 100개 → data/reports.js
