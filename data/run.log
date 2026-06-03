@@ -1,5 +1,5 @@
 DART_KEY_SET=true (len=40)
-=== 스크립트 시작 Wed Jun  3 23:14:10 UTC 2026 ===
+=== 스크립트 시작 Wed Jun  3 23:24:24 UTC 2026 ===
 =======================================================
   KOS ai 데이터 수집 시작
 =======================================================
@@ -13,8 +13,8 @@ Error occurred in get_market_ticker_and_name: Expecting value: line 1 column 1 (
 Error occurred in get_market_ticker_and_name: Expecting value: line 1 column 1 (char 0)
   [universe] pykrx KOSDAQ: 0개
   [universe] DART corp_codes 상장사: 3920개 (누적 3920)
-  [universe] 최종 수집 대상: 400개
-  [폴백] 개별 종목 OHLCV 수집 중... (대상 400개)
+  [universe] 최종 수집 대상: 1개
+  [폴백] 개별 종목 OHLCV 수집 중... (대상 1개)
   [폴백] 0개 종목 수집 완료
   [디버그] data/debug.json 저장 완료
   [pykrx] 수집 결과: 0개 (가격 유효: 0개)
