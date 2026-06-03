@@ -1,6 +1,6 @@
 // KOS ai — AI 리서치 리포트 (자동 생성). 직접 수정하지 마세요.
 window.KOS_REPORTS = {
-  "lastUpdated": "2026-06-04 00:22",
+  "lastUpdated": "2026-06-04 00:35",
   "model": "claude-sonnet-4-6",
   "reports": {
     "005930": {
@@ -1256,170 +1256,186 @@ window.KOS_REPORTS = {
       }
     },
     "207940": {
+      "title": {
+        "ko": "캐파 글로벌 1위 CDMO, 파업·수주 공백이 만든 단기 변곡점",
+        "en": "World's Largest CDMO Capacity Leader at a Near-Term Inflection Point"
+      },
       "lead": {
-        "ko": "세계 최대 CDMO로서의 구조적 성장세를 실적으로 지속 증명하고 있으나, 창사 이래 최초 파업에서 비롯된 노사 갈등 장기화가 단기 주가·실적의 핵심 불확실성으로 부상했다.",
-        "en": "Samsung Biologics continues to validate its position as the world's largest CDMO through record-breaking results, yet a prolonged labor dispute arising from its first-ever strike has emerged as the pivotal near-term uncertainty for earnings and valuation."
+        "ko": "삼성바이오로직스는 1~5공장 풀가동과 미국 록빌 공장 인수로 세계 최대 생산 캐파(84.5만L)를 확보하며 구조적 성장세를 이어가고 있으나, 창사 첫 대규모 파업과 1분기 신규 수주 정체가 단기 주가 압박 요인으로 작용하고 있다.",
+        "en": "Samsung Biologics has secured the world's largest CDMO capacity of 845,000 liters through full operation of Plants 1–5 and the Rockville acquisition, sustaining a structural growth trajectory, yet the company's first major labor strike and tepid new order inflows in Q1 2026 are weighing on near-term sentiment."
       },
       "desc": {
-        "ko": "삼성바이오로직스(207940)는 DART 공시 기준 2025년 연간 매출 4.6조원(+30.3%)·영업이익 2.1조원(+56.6%)으로 사상 최대 실적을 경신했으며, 2026년 1분기에도 영업이익률 46.2%를 달성해 고수익 성장 체계를 유지 중이다. 다만 2026년 5월 창사 첫 전면 파업 이후 준법투쟁이 지속되며 주가는 52주 고점(198만7천원) 대비 약 31% 하락, 노사 갈등 해소 여부가 하반기 실적과 밸류에이션의 핵심 분기점이 될 전망이다.",
-        "en": "Samsung Biologics (207940) posted record FY2025 revenue of KRW 4.6 trillion (+30.3% YoY) and operating profit of KRW 2.1 trillion (+56.6% YoY) per DART disclosures, and sustained a 46.2% operating margin in Q1 2026. However, following the company's first-ever full strike in May 2026 and subsequent ongoing work-to-rule action, the share price has retreated roughly 31% from its 52-week high of KRW 1.987 million, making the resolution of labor tensions the key inflection point for H2 2026 earnings and valuation."
+        "ko": "삼성바이오로직스(207940)는 2025년 11월 삼성바이오에피스 인적분할 이후 순수 CDMO 전문기업으로 재편됐으며, DART 공시 기준 2025년 연간 매출 4.6조원(+30.3%), 영업이익 2.1조원(+56.6%)으로 사상 최대 실적을 경신했다. 2026년 1분기에도 매출 1.3조원(+25.8%), 영업이익 5,808억원(+35.0%)으로 시장 기대치에 부합하는 성장세를 이어갔으나, 주가는 노조 파업 장기화 우려와 수주 모멘텀 둔화로 1월 고점 대비 약 30% 조정을 받았다. 본 리포트는 공시 재무 데이터와 최신 뉴스를 토대로 사업 구조·실적·주가·리스크를 균형 있게 점검한다.",
+        "en": "Samsung Biologics (KRX: 207940) was reorganized as a pure CDMO following the November 2025 spin-off of Samsung Bioepis, and according to DART filings, delivered record annual revenue of KRW 4.6 trillion (+30.3%) and operating profit of KRW 2.1 trillion (+56.6%) in FY2025. In Q1 2026, the company continued to track in line with market expectations with revenue of KRW 1.3 trillion (+25.8%) and operating profit of KRW 580.8 billion (+35.0%), yet the share price has corrected roughly 30% from its January 2026 peak amid concerns over a prolonged labor dispute and slowing new order momentum. This report provides a balanced assessment of Samsung Biologics' business structure, financial performance, share price dynamics, and key risk factors."
       },
       "keypoints": [
         {
-          "ko": "DART 확정 실적 기준 2025년 영업이익률 45.4%, 2026년 1분기 46.2%로 글로벌 CDMO 최고 수준 수익성 지속",
-          "en": "DART-confirmed FY2025 OPM of 45.4% and Q1 2026 OPM of 46.2% sustain best-in-class profitability among global CDMOs"
+          "ko": "DART 공시 기준 2025년 영업이익률 45.4%, 2026년 1분기 46.2%로 캐파 확장 국면에서도 수익성 우상향 지속",
+          "en": "Operating margin expanded to 45.4% in FY2025 and 46.2% in Q1 2026 (DART), demonstrating consistent profitability improvement even amid capacity expansion"
         },
         {
-          "ko": "미국 록빌 공장 인수(6만리터, 약 3억5,300만 달러) 완료로 글로벌 총 생산능력 84만5천리터 세계 최대 수준 달성",
-          "en": "Completion of the Rockville, US facility acquisition (~USD 353M, 60,000L) brings global production capacity to 845,000L, the industry's largest"
+          "ko": "록빌 공장(6만L) 인수 완료로 총 캐파 84.5만L 달성 — 론자(약 78만L)를 제치고 글로벌 CDMO 생산능력 1위",
+          "en": "Completion of the Rockville facility acquisition (60,000L) brings total capacity to 845,000L, surpassing Lonza (~780,000L) as the world's largest CDMO by production volume"
         },
         {
-          "ko": "2026년 5월 창사 첫 전면 파업(5일) 및 준법투쟁 지속—삼성증권, 인건비 추정치 75% 상향·목표주가 210만→180만원 하향",
-          "en": "Company's first full 5-day strike in May 2026 and ongoing work-to-rule; Samsung Securities raised 2026 labor cost estimates by 75% and cut target price from KRW 2.1M to KRW 1.8M"
+          "ko": "창립 이래 누적 수주 총액 214억달러(2026년 1분기 기준), 회사 제시 2026년 연간 매출 가이던스는 전년 대비 +15~20% 성장",
+          "en": "Cumulative contract backlog reached USD 21.4 billion as of Q1 2026, with management guiding for +15–20% annual revenue growth in FY2026"
+        },
+        {
+          "ko": "생물보안법(Biosecurity Act) 미국 국방수권법 포함 발효 — 중국계 CDMO 배제 흐름 속 수주 수혜 기대감 고조",
+          "en": "U.S. biosecurity legislation enacted as part of the National Defense Authorization Act is expected to redirect CDMO demand away from Chinese rivals, benefiting Samsung Biologics"
+        },
+        {
+          "ko": "창사 첫 장기 파업(5월 전면 파업 + 준법투쟁)으로 약 1,500억원 매출 손실 추산, 노사 분쟁 장기화 여부가 핵심 단기 변수",
+          "en": "The company's first-ever large-scale strike (May full walkout + ongoing compliance action) is estimated to have caused ~KRW 150 billion in lost revenue, making labor dispute resolution the pivotal near-term variable"
         }
       ],
       "business": {
-        "ko": "삼성바이오로직스는 2025년 11월 삼성바이오에피스를 인적분할한 이후 순수 CDMO(위탁개발생산) 기업으로 전환했으며, 항체의약품 대량 생산에 특화된 사업 구조를 갖추고 있다. 인천 송도에 1~5공장(총 78만5천리터)을 운영하며, 2026년 1분기 말 미국 메릴랜드주 록빌 소재 GSK 자회사 생산시설(6만리터)을 약 3억5,300만 달러에 인수해 세계 최대 규모의 이원화 생산 네트워크를 완성했다. 사업 포트폴리오는 CMO(위탁생산) 중심에서 CDO(위탁개발)·ADC(항체약물접합체) 전용 생산·세포유전자치료제(CGT) 등 멀티 모달리티로 확장하는 CRDMO 체계로 고도화 중이다. UCB·일라이 릴리·로슈 등 글로벌 빅파마와의 장기 계약이 안정적 매출 기반을 제공하며, 창립 이래 누적 수주는 CMO 112건·CDO 169건, 총 214억 달러에 달한다.",
-        "en": "Following the spin-off of Samsung Bioepis in November 2025, Samsung Biologics operates as a pure-play CDMO focused on large-scale biopharmaceutical manufacturing. It runs five plants in Songdo, Korea (total 785,000L) and in Q1 2026 completed the acquisition of a GSK subsidiary facility in Rockville, Maryland (60,000L, ~USD 353M), establishing the world's largest dual-site production network at 845,000L. The portfolio is expanding from CMO into a CRDMO model encompassing CDO, a dedicated ADC facility, CGT, and organoids, while long-term contracts with Eli Lilly, Roche, UCB, and other global pharmaceutical companies underpin revenue visibility. Cumulative orders since inception total USD 21.4 billion across 112 CMO and 169 CDO contracts."
+        "ko": "삼성바이오로직스는 2025년 11월 삼성바이오에피스를 보유한 삼성에피스홀딩스를 인적분할한 이후, 바이오의약품 위탁개발(CDO)과 위탁생산(CMO)만을 전담하는 순수 CDMO 기업으로 재편됐다. 매출 구조는 CMO(상업용·임상 의약품 위탁생산)가 매출의 대부분을 차지하며, CDO(세포주 개발·공정 개발·임상 시료 제조)는 장기 CMO 수주로 이어지는 파이프라인 역할을 한다. 창립 이래 누적 수주 기준으로 CMO 112건, CDO 169건이 체결됐으며, 총 누적 수주액은 214억달러(2026년 1분기 기준)에 달한다. 생산 인프라 측면에서 인천 송도 제1바이오캠퍼스에 1~4공장(총 60.4만L)이 안정적으로 풀가동 중이고, 2025년 4월 가동을 개시한 5공장(18만L)이 램프업 단계에 있어 총 국내 캐파는 78.4만L에 이른다. 2026년 1분기 말에는 미국 메릴랜드주 록빌 생산시설을 3억5,300만달러에 인수 완료해 6만L를 추가함으로써 총 캐파가 84.5만L로 확대됐으며, 이는 글로벌 최대 경쟁사인 론자(약 78만L)를 상회하는 수준이다. 제2바이오캠퍼스에는 총 7조원을 투자해 6~8공장(각 18만L)을 순차 건설 중이며 2032년까지 총 132.4만L 체제 완성을 목표로 한다. 제3바이오캠퍼스 부지(인천 송도 18.7만㎡)도 이미 확보해 장기 증설 로드맵의 기반을 마련했다. 신규 모달리티 측면에서는 ADC(항체-약물 접합체), 세포·유전자 치료제를 포함한 서비스 다각화를 추진 중이며, 마스터세포은행(MCB) 생산과 벡터 제작 서비스를 내재화해 IND 제출까지 9개월 내 완료 가능한 엔드투엔드(E2E) 체계를 구축했다. 130여개 이상의 글로벌 고객사를 보유해 빅파마 의존도를 분산시킨 것도 포트폴리오 안정성을 높이는 요소다.",
+        "en": "Following the November 2025 spin-off of Samsung Epis Holdings (which holds Samsung Bioepis), Samsung Biologics was restructured as a pure CDMO, focusing exclusively on contract development (CDO) and contract manufacturing (CMO) of biopharmaceuticals. Revenue is predominantly driven by CMO operations covering commercial and clinical-stage drug substance manufacturing, while CDO services—spanning cell line development, process development, and clinical-stage production—function as a pipeline feeder into long-term CMO contracts. Since inception, the company has signed 112 CMO and 169 CDO contracts, with cumulative order value reaching USD 21.4 billion as of Q1 2026. On the infrastructure side, Plants 1–4 at the Songdo First Bio Campus (combined capacity 604,000L) are running at full utilization, with the newly commissioned Plant 5 (180,000L, operational since April 2025) in ramp-up mode, bringing total domestic capacity to 784,000L. In late Q1 2026, Samsung Biologics completed the acquisition of the Rockville, Maryland facility for approximately USD 353 million, adding 60,000L and lifting total global capacity to 845,000L—surpassing arch-rival Lonza at approximately 780,000L to claim the top position worldwide. Plants 6–8 (180,000L each) are under construction at the Second Bio Campus with a KRW 7 trillion total investment and a target of 1.324 million liters by 2032, while land for a Third Bio Campus in Songdo (187,427 m²) has already been secured. On the modality front, the company is actively pursuing ADC, cell and gene therapy manufacturing capabilities, and has internalized master cell bank production and vector manufacturing to offer an end-to-end service covering IND submission within nine months. With more than 130 global client relationships, customer concentration risk is meaningfully distributed."
       },
       "recent": {
-        "ko": "DART 공시 기준 2025년 연간 매출 4.6조원(+30.3%)·영업이익 2.1조원(+56.6%)·당기순이익 1.8조원(+64.7%)으로 모든 지표에서 사상 최대를 경신, 회사 제시 가이던스 상단(25~30%)을 초과 달성했다. 2026년 1분기도 매출 1.3조원(+25.8%)·영업이익 5,808억원(+35.0%)·당기순이익 4,692억원(+24.9%)으로 분기 기준 최대 실적을 갱신했으며, 영업이익률은 46.2%로 전년 동기 대비 3.2%p 개선됐다. 주가는 연초 약 199만원 고점에서 2026년 5월 파업 이후 136만원대까지 후퇴해 52주 고점 대비 약 31% 하락했으며, 삼성증권을 비롯한 여러 증권사가 인건비 상승과 파업 영향을 반영해 목표주가를 하향 조정하는 등 코스피 대형주 중 상대적 부진 흐름이 지속 중이다.",
-        "en": "Per DART filings, FY2025 set all-time highs across every metric: revenue KRW 4.6 trillion (+30.3% YoY), operating profit KRW 2.1 trillion (+56.6% YoY), and net income KRW 1.8 trillion (+64.7% YoY), surpassing the upper end of company guidance (25–30% growth). Q1 2026 likewise set quarterly records at revenue KRW 1.3 trillion (+25.8%), operating profit KRW 580.8 billion (+35.0%), and net income KRW 469.2 billion (+24.9%), with operating margin improving 3.2pp YoY to 46.2%. The share price declined from a peak of ~KRW 1.987 million in early 2026 to the KRW 1.367 million range as of early June 2026—roughly 31% below the 52-week high—as multiple brokerages trimmed target prices to reflect higher labor costs and strike-related revenue losses."
+        "ko": "DART 공시 확정 기준으로 2025년 연간 매출은 4.6조원(전기대비 +30.3%), 영업이익은 2.1조원(+56.6%), 당기순이익은 1.8조원(+64.7%)으로 창사 이래 최대 실적을 기록했으며, 회사 자체 연간 가이던스(25~30% 매출 성장)의 상단을 소폭 상회했다. 2026년 1분기(누적) 기준으로도 매출 1조2,571억원(+25.8%), 영업이익 5,808억원(+35.0%), 당기순이익 4,692억원(+24.9%)을 달성해 시장 컨센서스에 부합하는 성장세를 이어갔다. 1분기 영업이익률은 46.2%로 전년 동기(43%) 대비 3.2%p 개선됐으며, EBITDA는 6,753억원(마진 53.7%)을 기록해 생산 레버리지 효과가 본격화되고 있음을 확인했다. 실적의 배경은 1~4공장의 안정적 풀가동 지속과 2025년 4분기에서 이연된 일부 매출 인식이 맞물린 결과로, 업계는 2022년 1분기 대비 매출 2.5배·영업이익 3.3배 성장으로 매분기 수익성이 확대되는 구조적 개선을 높이 평가한다. 주가는 2026년 1월 15일 196.5만원까지 오른 뒤 현재 136.7만원 수준으로 고점 대비 약 30% 조정됐으며, 연초 대비로도 약 12% 하락한 상태다. 주가 약세의 직접 원인은 5월 1~5일 전면 파업(조합원 약 4,000명 중 2,800명 참여, 창사 첫 장기 파업)으로, 회사 측은 이로 인한 생산 손실 규모를 약 1,500억원으로 추산했다. 파업 이후에도 연장·휴일 근무 거부 형태의 준법투쟁이 지속되고 있으며 노사 간 협상이 명확한 합의에 이르지 못한 채 장기화 양상을 보이고 있다. 삼성증권은 파업 영향을 반영해 인건비 추정치를 상향하고 목표주가를 하향 조정했으며, 파업 관련 손실은 2026년 3분기 실적에 주로 반영될 것으로 전망된다. 1분기 누적 수주 증가가 200억달러대 초반에 그치며 시장이 기대하는 대규모 신규 수주 발표가 부재했다는 점도 투자심리를 냉각시키는 요인으로 작용했다.",
+        "en": "According to DART filings, FY2025 revenue reached KRW 4.6 trillion (+30.3% YoY), operating profit KRW 2.1 trillion (+56.6%), and net profit KRW 1.8 trillion (+64.7%), all-time records that marginally exceeded the company's own annual guidance of 25–30% revenue growth. In Q1 2026, the company reported revenue of KRW 1.2571 trillion (+25.8% YoY), operating profit of KRW 580.8 billion (+35.0%), and net profit of KRW 469.2 billion (+24.9%), in line with street consensus. Q1 2026 operating margin expanded to 46.2%, up 3.2 percentage points YoY from 43%, while EBITDA came in at KRW 675.3 billion with a margin of 53.7%, evidencing the meaningful operating leverage now embedded in the business. The underlying drivers were full utilization of Plants 1–4 and the recognition of certain deliveries deferred from Q4 2025 into Q1 2026; tracking Q1 data since 2022, revenue has grown approximately 2.5 times and operating profit over 3.3 times, underscoring the structural profitability improvement. The share price climbed to an all-time high of KRW 1,965,000 on January 15, 2026 before retreating to approximately KRW 1,367,000, a decline of roughly 30% from the peak and about 12% year-to-date. The immediate catalyst for the pullback was the company's first-ever major labor strike, with approximately 2,800 of 4,000 union members walking out from May 1–5; management estimates production losses of roughly KRW 150 billion from the walkout. The dispute has since continued in the form of an indefinite 'compliance action' (refusal of overtime and holiday work), with no substantive labor agreement reached as of the report date, and Samsung Securities lowered its target price while raising labor cost assumptions. Compounding the negative sentiment, new order inflows in Q1 2026 were modest, leaving cumulative CMO backlog at approximately USD 21.4 billion—only a marginal increase from the USD 21.2 billion recorded at end-2025."
       },
       "outlook": {
-        "ko": "회사의 2026년 매출 가이던스는 전년 대비 15~20% 성장이며, 주요 증권사들은 연간 매출 약 5.4~5.5조원을 추정하고 있다(단, 록빌 공장 기여 제외 베이스). 하반기에는 5공장 PPQ(상업용 시험생산) 확대와 미국 록빌 공장 매출의 3분기 이후 연결 반영이 추가 성장 동력으로 작용할 전망이며, 환율이 가이던스 가정(1,400원) 대비 높은 1,490원대를 유지할 경우 실적 업사이드 여력도 존재한다. 미국 생물보안법 발효(2025년 12월)에 따른 중국 CDMO 이탈 수요 유입, 6공장 착공 모멘텀도 중장기 성장 시나리오에 긍정적 요소로 작용한다. 단기 핵심 변수는 노사 갈등의 가시적 해소 여부와 2분기 파업 영향의 실적 반영 규모다.",
-        "en": "Management guides for 15–20% revenue growth in FY2026, with analyst consensus estimates converging near KRW 5.4–5.5 trillion (excluding Rockville contributions). Key H2 catalysts include the ramp-up of Plant 5's commercial production qualification and revenue contributions from the Rockville facility expected from Q3 2026; a KRW/USD rate well above the company's ~1,400 guidance assumption (~1,490 in April 2026) also provides earnings upside optionality. The Biosecurity Act (enacted December 2025) and a potential Plant 6 groundbreaking represent medium-to-long-term growth triggers. Near-term, the speed and completeness of labor dispute resolution and the Q2 earnings impact from the strike are the most critical variables."
+        "ko": "삼성바이오로직스는 2026년 연간 매출 가이던스로 전년 대비 15~20% 성장을 제시하고 있으며, 증권가 추정치(팜스탁 기준 약 5조4,579억원)는 가이던스 중단에 부합하는 수준이다. 현 가이던스에는 록빌 공장 캐파 기여분이 포함돼 있지 않아, 3분기부터 매출 인식이 본격화될 경우 가이던스 상향 여지가 있으며, 한 증권사는 미국 지역 서비스료 프리미엄을 감안한 추가 매출을 2,500~3,000억원 수준으로 추산했다. 5공장(18만L) 램프업은 현재 순조롭게 진행 중이며, 대부분의 증권사 전망은 2027년 2분기부터 본격적인 매출 인식이 이뤄질 것으로 본다. 6공장 착공 여부가 연내 핵심 모멘텀으로 거론되며, 충분한 수주 확보 시 착공 발표와 함께 중장기 성장 가시성이 한층 높아질 것으로 기대된다. 생물보안법이 2026년 미국 국방수권법에 포함돼 발효됨에 따라 신규 신약 개발 계약에서 중국계 CDMO를 배제하려는 글로벌 빅파마 움직임이 가속화될 가능성이 있으며, 이는 삼성바이오로직스의 수주 확대에 구조적 순풍으로 작용할 수 있다. 노사 협상 타결 여부가 2~3분기 생산 안정성과 글로벌 고객사 신뢰도에 직접 영향을 미칠 핵심 변수로, 이 불확실성이 해소되는 시점이 주가 재평가의 트리거가 될 수 있다. 2032년까지 총 132.4만L 캐파를 완성하는 중장기 로드맵이 유효한 만큼, 단기 노사 리스크를 넘어서면 구조적 성장 스토리는 여전히 훼손되지 않은 것으로 평가된다.",
+        "en": "Management has guided for FY2026 revenue growth of 15–20% YoY, with consensus estimates from the sell side broadly aligning with the midpoint of that range. Critically, the current guidance does not incorporate any contribution from the Rockville facility; if revenue recognition from Rockville commences in earnest in Q3 as expected, one securities firm estimated an additional KRW 250–300 billion in revenue, which could prompt a guidance upgrade at the Q3 earnings release. Plant 5 (180,000L) ramp-up is reported to be progressing on track, with the bulk of analysts expecting material revenue contribution to begin in Q2 2027. The potential for a Plant 6 groundbreaking announcement in 2026 is widely cited as a key re-rating catalyst; sufficient order visibility would be required before such a decision, and industry observers note that Samsung Biologics' construction lead times have been shortening with each successive plant. The enactment of U.S. biosecurity legislation as part of the NDAA introduces a structural tailwind, as global biopharmaceutical companies accelerate efforts to diversify CDMO supply chains away from Chinese providers under tightening regulatory pressure. Labor dispute resolution is the pivotal near-term variable for both production continuity and global client trust, and a definitive settlement would likely serve as a key trigger for share price re-rating. The long-term capacity roadmap toward 1.324 million liters by 2032 remains intact, suggesting the structural growth narrative is fundamentally unimpaired beyond the current near-term turbulence."
       },
       "bull": [
         {
           "title": {
-            "ko": "세계 최대 CDMO 생산 인프라 및 규모의 경제",
-            "en": "World's Largest CDMO Production Infrastructure & Economies of Scale"
+            "ko": "세계 최대 캐파와 지속적인 증설 로드맵",
+            "en": "World-Leading Capacity and Ongoing Expansion Roadmap"
           },
           "body": {
-            "ko": "미국 록빌 공장 인수 이후 글로벌 생산능력이 84만5천리터로 경쟁사를 압도한다. 5공장 가동률 확대에 따른 고정비 희석 효과가 이익률을 추가로 견인할 여지가 있으며, 2026년 내 착공을 목표로 하는 6공장은 2028년 이후 추가 생산 레버리지의 핵심 동인이다. 2032년까지 제2·3바이오캠퍼스 완성을 목표로 장기 성장 로드맵이 구체화되고 있다.",
-            "en": "Post-Rockville acquisition, global capacity of 845,000L provides an unrivaled scale advantage over peers. Fixed-cost dilution from Plant 5's ramp-up offers further margin upside, and the planned groundbreaking of Plant 6 in 2026 will serve as a key production leverage driver from 2028 onward. The long-term roadmap to complete Bio-Campuses 2 and 3 by 2032 provides multi-year growth visibility."
+            "ko": "삼성바이오로직스는 1~5공장(78.4만L)과 미국 록빌(6만L)을 합산한 84.5만L로 론자를 제치고 글로벌 CDMO 생산능력 1위에 올라섰다. 제2바이오캠퍼스 6~8공장(각 18만L) 순차 완공으로 2032년까지 132.4만L 체제를 구축할 계획이며, 제3바이오캠퍼스 부지도 이미 확보된 상태다. 대규모 캐파는 글로벌 제약사들이 중시하는 생산 안정성과 대량 생산 경험의 핵심 지표로, 빅파마 수주 경쟁에서 지속적인 우위를 제공한다. 캐파 확장과 함께 공장 건설 기간이 단축되고 있는 점도 미래 수익화 속도 측면에서 긍정적이다.",
+            "en": "Samsung Biologics has overtaken Lonza as the world's largest CDMO by production capacity, with 845,000L combining Plants 1–5 in Songdo (784,000L) and the newly acquired Rockville facility (60,000L). Plants 6–8 at the Second Bio Campus (each 180,000L) are under sequential construction, targeting a 1.324 million liter system by 2032, with land for a Third Bio Campus already secured. Large-scale, reliable production capacity is a critical vendor selection criterion for global biopharma companies, as any manufacturing disruption can derail drug commercialization timelines—placing Samsung Biologics structurally ahead in competitive tender processes. The shortening construction lead times for each successive plant further accelerate the timeline to revenue contribution."
           }
         },
         {
           "title": {
-            "ko": "생물보안법 수혜와 글로벌 수주 경쟁력 강화",
-            "en": "US Biosecurity Act Tailwind & Strengthened Global Order Pipeline"
+            "ko": "캐파 확장 국면에서도 개선되는 수익성",
+            "en": "Improving Profitability Despite Capacity Expansion"
           },
           "body": {
-            "ko": "2025년 12월 발효된 미국 생물보안법으로 중국 CDMO를 대체하려는 글로벌 제약사들의 수주 문의가 증가하고 있다. 미국 현지 생산거점 확보로 현지화 수요에도 대응 가능해졌으며, 2025년 연간 수주 총액은 49억 달러(전년 대비 +14%)를 기록했다. 한국투자증권은 생물보안법 시행이 삼성바이오로직스의 수주 경쟁력을 한층 강화하는 계기가 될 것으로 분석했다.",
-            "en": "The US Biosecurity Act (enacted December 2025) is prompting global pharma companies to diversify away from Chinese CDMOs, increasing inbound order inquiries. The Rockville facility positions Samsung Biologics to serve US localization demands directly, and FY2025 new orders reached USD 4.9 billion (+14% YoY). Korea Investment Securities noted the law represents a structural tailwind for Samsung Biologics' order competitiveness."
+            "ko": "DART 공시 기준 2025년 영업이익률은 45.4%, 2026년 1분기는 46.2%로 전년 동기 대비 3.2%p 개선됐다. 이는 과거 신규 공장 가동 초기에 발생했던 고정비 희석 우려를 불식시키는 성과다. 2022년 1분기 영업이익률 34.5% 대비 불과 4년 만에 10%p 이상 개선됐으며, 생산 레버리지 효과가 매출 성장에 비례해 수익성을 끌어올리는 구조가 정착했다. EBITDA 마진이 53%를 상회한다는 점에서 투자 여력과 이익 창출력이 동시에 높은 수준을 유지하고 있다.",
+            "en": "Operating margins expanded to 45.4% in FY2025 and 46.2% in Q1 2026 (DART), up 3.2 percentage points YoY, defying concerns that new factory fixed costs would dilute profitability. Comparing against the 34.5% Q1 2022 operating margin, profitability has improved more than 10 percentage points in four years, reflecting deepening operating leverage as the installed capacity base grows. EBITDA margins exceeding 53% underscore the company's superior cash generation capability relative to global CDMO peers, providing both re-investment capacity for further expansion and resilience against cyclical demand softness."
           }
         },
         {
           "title": {
-            "ko": "구조적 고수익성과 높은 실적 가시성",
-            "en": "Structural High Profitability & Strong Earnings Visibility"
+            "ko": "생물보안법·탈중국 수주 구조 변화의 수혜",
+            "en": "Structural Beneficiary of U.S. Biosecurity Legislation and De-China CDMO Trend"
           },
           "body": {
-            "ko": "글로벌 빅파마와의 장기 계약 구조로 실적 가시성이 높은 가운데, 2026년 1분기 영업이익률 46.2%는 외형 확장 중에도 비용 통제와 생산 효율이 동시에 작동함을 확인시켜 준다. 원/달러 환율이 회사 가이던스 가정(1,400원)을 상회하는 1,490원대(2026년 4월 기준)를 유지하고 있어 환율 효과에 따른 추가 실적 업사이드도 기대된다.",
-            "en": "Long-term contracts with global pharma majors provide high earnings visibility, and Q1 2026's 46.2% OPM confirms that cost discipline and production efficiency are functioning even during capacity expansion. With the KRW/USD rate at ~1,490 in April 2026—well above the company's ~1,400 guidance assumption—favorable FX provides an additional earnings cushion."
+            "ko": "2026년 미국 국방수권법(NDAA)에 생물보안법이 포함돼 발효됨에 따라, 신규 신약 개발 계약에서 중국계 CDMO(우시바이오 등)를 배제하려는 글로벌 빅파마의 공급망 재편이 가속화되고 있다. 삼성바이오로직스는 최근 미국 내 생산거점(록빌)까지 확보해 '비중국, 대규모 캐파, 미국 현지 생산' 3박자를 동시에 갖춘 몇 안 되는 CDMO로서 위상이 높아졌다. 최근 보도에 따르면 미국 관세 불확실성이 일부 해소되면서 빅파마와의 수주 협의가 재개·가속화되는 분위기라고 증권가는 평가하고 있다. 중장기적으로 생물보안법 발효는 수주 파이프라인 확대로 이어져 6공장 착공 결정을 앞당기는 트리거가 될 수 있다.",
+            "en": "The U.S. Biosecurity Act, enacted as part of the FY2026 National Defense Authorization Act, is accelerating global biopharmaceutical companies' efforts to restructure CDMO supply chains away from Chinese providers such as WuXi Bio. Samsung Biologics has positioned itself as one of the very few CDMOs simultaneously offering non-Chinese origin, world-scale production capacity, and U.S.-based manufacturing—three criteria increasingly demanded by Western pharma clients. Sell-side commentary from April 2026 indicates that as U.S. tariff-related uncertainty partially eased, negotiations with major global pharmaceutical companies have resumed and accelerated. Over the medium-to-long term, the biosecurity legislative framework serves as a structural demand driver that could widen Samsung Biologics' order pipeline and bring forward the decision to break ground on Plant 6."
           }
         }
       ],
       "bear": [
         {
           "title": {
-            "ko": "노사 갈등 장기화와 인건비 구조적 상승",
-            "en": "Prolonged Labor Dispute & Structural Labor Cost Escalation"
+            "ko": "창사 첫 대규모 파업과 노사 분쟁 장기화 리스크",
+            "en": "First-Ever Major Strike and Risk of Prolonged Labor Dispute"
           },
           "body": {
-            "ko": "2026년 5월 창사 첫 전면 파업(5일, 매출 차질 약 1,500억원 추산) 이후 무기한 준법투쟁이 지속 중이며 2차 파업 가능성도 열려 있다. 삼성증권은 2026년 인건비 추정치를 기존 대비 75% 상향 조정해 목표주가를 180만원으로 하향했으며, 임금 인상 기저가 매년 복리로 누적되는 구조적 비용 증가는 중장기 이익률에 지속적 압박 요인이 된다.",
-            "en": "Following the company's first 5-day full strike in May 2026 (estimated revenue loss ~KRW 150 billion), an indefinite work-to-rule action continues with a second strike remaining possible. Samsung Securities raised its 2026 labor cost estimate by 75% and cut the target price to KRW 1.8 million; compounding base wage increases represent a structural multi-year margin headwind."
+            "ko": "2026년 5월 1~5일 전면 파업(4,000명 조합원 중 약 2,800명 참여)으로 회사 측이 추산한 매출 손실 규모는 약 1,500억원에 달했으며, 이후 연장·휴일 근무 거부 형태의 준법투쟁이 무기한 지속되고 있다. 노조는 기본급 14.3% 인상, 영업이익의 20% 성과급 배분, 1인당 3,000만원 타결금 등 사측이 수용하기 어려운 요구안을 고수하고 있으며, 경영권 참여 요구도 갈등을 심화시키고 있다. 파업 관련 뉴스가 외신에도 보도되며 글로벌 고객사의 수주 신뢰도에 부정적 영향을 미칠 우려가 있고, 삼성증권은 연간 인건비 추정치를 대폭 상향 조정하며 목표주가를 하향했다. 사측은 필수 라인 쟁의행위금지 가처분 신청 및 노조 집행부 형사고소로 대응하고 있으나, 법적 공방이 장기화될수록 경영 불확실성은 지속된다.",
+            "en": "The five-day general strike in May 2026, in which approximately 2,800 of 4,000 union members participated, resulted in an estimated KRW 150 billion in production losses, followed by an open-ended 'compliance action' entailing refusal of overtime and holiday shifts. The union is demanding a 14.3% base salary increase, allocation of 20% of operating profit as performance bonus, and a KRW 30 million settlement payment per employee—demands viewed as fiscally aggressive by management and analysts alike, with requests for co-determination rights over personnel decisions further complicating negotiations. International press coverage of the dispute risks undermining confidence among global biopharmaceutical clients, and Samsung Securities sharply raised labor cost assumptions while cutting its target price. Management's responses—including an injunction application on essential production lines and criminal complaints against union leadership—may prolong legal proceedings and sustain elevated operational uncertainty."
           }
         },
         {
           "title": {
-            "ko": "미국 관세·정책 불확실성",
-            "en": "US Tariff & Regulatory Policy Uncertainty"
+            "ko": "신규 수주 모멘텀 둔화 및 빅파마 투자 보수화",
+            "en": "Slowing New Order Momentum and Big Pharma Capex Caution"
           },
           "body": {
-            "ko": "미국의 제약·바이오 관세 정책 변화에 따라 수주 구조가 재편될 가능성이 있으며, 삼성증권은 해당 영향이 불확실성이 높아 현재 추정치에 반영하지 않았다고 명시했다. 미국 내 생산거점이 일정 부분 헤지 역할을 하나, 정책 방향성에 따라 기존 계약 조건과 신규 수주 경쟁 구도가 변동될 수 있다.",
-            "en": "Potential changes to US tariff policy on pharmaceuticals/biologics could reshape the CDMO order landscape; Samsung Securities explicitly noted this risk is too uncertain to incorporate into current estimates. While the Rockville facility provides a partial hedge, policy-driven shifts could alter existing contract terms and new order dynamics."
+            "ko": "2026년 1분기 누적 CMO 수주금액이 214억달러로 2025년말(212억달러) 대비 소폭 증가에 그쳐, 시장이 기대했던 대규모 신규 수주 발표가 부재했다. 미국 관세 정책 불확실성이 고조됐던 시기 글로벌 빅파마들이 외부 위탁 결정을 보수적으로 접근하면서 수주 협의 속도가 지연된 것으로 보인다. 5공장 잔여 캐파(약 50%)에 대한 수주 채우기가 6공장 착공 결정의 전제 조건인 만큼, 수주 모멘텀 회복이 지연될 경우 중장기 성장 로드맵의 실행 시점도 밀릴 수 있다. 글로벌 빅파마의 포트폴리오 합리화(IRA 여파 등)에 따른 R&D 지출 재배분이 CDMO 수요 성장세를 제한할 가능성도 배제할 수 없다.",
+            "en": "Cumulative CMO order value grew only modestly from USD 21.2 billion at end-2025 to USD 21.4 billion in Q1 2026, falling short of market expectations for large new contract announcements. This likely reflects a period of deferred decision-making by global pharmaceutical companies as U.S. tariff policy uncertainty peaked, slowing the pace of outsourcing commitments. Since order visibility sufficient to fill the remaining ~50% capacity of Plant 5 is a prerequisite for breaking ground on Plant 6, a sustained lull in new orders could push back the medium-term expansion timeline. Additionally, portfolio rationalization among major global pharma companies—driven in part by the U.S. Inflation Reduction Act's impact on drug pricing dynamics—may constrain the pace of CDMO demand growth more broadly."
           }
         },
         {
           "title": {
-            "ko": "고밸류에이션과 주가 하방 압력 병존",
-            "en": "Elevated Valuation & Sustained Downward Price Pressure"
+            "ko": "신규 공장 및 록빌 인수에 따른 고정비 부담 확대",
+            "en": "Rising Fixed Costs from New Plants and Rockville Integration"
           },
           "body": {
-            "ko": "현재 주가 기준 PER은 약 31.8배(2026E 기준)로 글로벌 동종 CDMO 경쟁사 대비 프리미엄이 형성되어 있다. 52주 고점 대비 약 31% 하락한 현 주가 수준에서 노사 갈등 장기화·2분기 실적 타격·빅파마 발주 둔화 우려가 동시에 부각될 경우 추가 밸류에이션 디레이팅 압력이 발생할 수 있다.",
-            "en": "The stock trades at approximately 31.8x 2026E EPS, at a notable premium to global CDMO peers. At roughly 31% below its 52-week high, any combination of prolonged labor conflict, a Q2 earnings miss from strike-related disruptions, or a slowdown in big-pharma order activity could trigger further valuation de-rating."
+            "ko": "5공장 가동 초기 램프업 단계의 고정비와 3억5,300만달러를 투입한 록빌 공장 인수 후 통합 운영 비용이 단기적으로 수익성에 부담을 줄 수 있다. 록빌 공장의 매출 인식은 3분기부터 본격화될 예정이나, 미국 현지 인력 운영 비용·규제 대응 비용·기타 통합 비용이 추가로 발생할 가능성이 있다. 원/달러 환율이 매출 증가에 우호적으로 작용하는 반면, 달러 표시 운영 비용 증가 요인도 동반될 수 있어 순이익률에 미치는 영향은 양방향이다. 2025년 인적분할 관련 일회성 컨설팅 비용이 4분기 실적에 반영됐으며, 향후에도 추가 M&A나 설비 투자 시 유사한 비용이 발생할 수 있다.",
+            "en": "Fixed costs associated with Plant 5's early-stage ramp-up, combined with the integration of the Rockville facility acquired for USD 353 million, represent tangible near-term headwinds to profitability. While Rockville revenue is expected to start being recognized from Q3, U.S. local staffing costs, regulatory compliance expenses, and integration-related overheads add another layer of cost uncertainty. The weaker Korean won is a revenue tailwind given dollar-denominated contract invoicing, but it simultaneously raises the KRW-translated cost base for dollar-denominated U.S. operations, creating a mixed net impact on margin. The one-time consulting fees related to the November 2025 corporate spin-off already weighed on Q4 2025 profits, and future M&A or facility investments could generate similar episodic charges."
           }
         }
       ],
       "risks": [
         {
           "cat": {
-            "ko": "노사·운영 리스크",
-            "en": "Labor & Operational Risk"
+            "ko": "거시·정책 리스크",
+            "en": "Macro and Policy Risk"
           },
           "body": {
-            "ko": "납기 신뢰성과 공정 안정성은 CDMO 사업의 핵심 경쟁력으로, 노사 갈등에 따른 생산 차질이 장기화될 경우 글로벌 고객사의 신뢰 훼손과 수주 경쟁력 약화로 이어질 수 있다. 노조의 경영권 참여 요구가 단순 임금 협상을 넘어서 있어 합의 도출이 복잡한 구조이며, 법정 공방 병행으로 해소 일정이 불확실하다.",
-            "en": "Delivery reliability and process stability are core CDMO competencies; prolonged production disruptions risk undermining client trust and weakening contract renewal competitiveness. Union demands extend to governance rights beyond wage negotiations, complicating resolution, while concurrent legal proceedings add timeline uncertainty."
+            "ko": "미국 트럼프 행정부의 관세 정책 변화 및 바이오의약품 가격규제(인플레이션감축법 등)는 글로벌 빅파마의 R&D·아웃소싱 투자 계획에 영향을 미치며 CDMO 수요 성장 속도를 제약할 수 있다. 원/달러 환율은 매출에 긍정적이나, 급격한 환율 변동은 수주 협의 단계에서 고객사의 계약 단가 재협상 시도로 이어질 수 있다. 미국·유럽 등 주요 시장에서 바이오의약품 생산 관련 추가 규제(FDA 현장 실사 강화 등)가 시행될 경우 운영 비용 증가 및 승인 지연 리스크가 수반된다.",
+            "en": "Shifts in U.S. trade and tariff policy, combined with drug price regulation mechanisms such as the Inflation Reduction Act, could dampen global biopharma R&D and outsourcing budgets, moderating the pace of CDMO demand growth. While won/dollar exchange rate weakness is a near-term revenue tailwind, sharp currency volatility may prompt customers to renegotiate contract unit prices during order renewal phases. Intensified FDA manufacturing inspections or new regulatory frameworks in the U.S. and Europe could increase compliance costs and introduce approval timeline risk across Samsung Biologics' production lines."
           }
         },
         {
           "cat": {
-            "ko": "글로벌 빅파마 구조조정",
-            "en": "Big Pharma Restructuring & Spending Cuts"
+            "ko": "경쟁 리스크",
+            "en": "Competitive Risk"
           },
           "body": {
-            "ko": "노보 노디스크(전체 인력의 약 11% 감원 추진), 다케다(연말까지 약 4,500명 감원) 등 주요 고객사들이 대규모 구조조정에 나서고 있다. 빅파마의 R&D 예산 및 CMO 외주 지출 감소는 신규 수주 규모와 속도에 영향을 줄 수 있는 구조적 역풍이다.",
-            "en": "Key clients including Novo Nordisk (targeting ~11% workforce reduction) and Takeda (~4,500 job cuts by year-end) are undergoing major restructuring. Cuts to R&D budgets and CMO outsourcing spending represent a structural headwind that could dampen the pace and scale of new order activity."
+            "ko": "론자는 최근 로슈-제넨텍 바카빌 공장 인수로 캐파를 78만L 수준으로 끌어올렸으며, 우시바이오는 생물보안법 리스크에도 불구하고 아시아 지역 증설을 가속화해 43만L에서 58만L 이상으로 캐파 확장을 목표로 하고 있다. 후발 CDMO들의 공격적 증설로 글로벌 캐파 공급 과잉 우려가 커질 경우 계약 단가 하락 압력이 발생할 수 있다. 삼성바이오로직스가 순수 항체 중심 CMO 위주에서 ADC·세포유전자치료제 등 신규 모달리티로 포트폴리오를 확대하는 과정에서, 해당 분야의 선점 경쟁사들과 기술력 격차를 좁혀야 한다는 과제도 있다.",
+            "en": "Lonza has aggressively expanded its capacity to approximately 780,000L through acquisitions, including the Roche-Genentech Vacaville plant, while WuXi Bio is accelerating Asian expansions targeting over 580,000L despite biosecurity regulatory headwinds. If global CDMO capacity growth materially outstrips biopharmaceutical demand, contract pricing pressure could emerge across the industry. As Samsung Biologics diversifies its portfolio beyond antibody-centric CMO into ADC and cell/gene therapy manufacturing, it faces the challenge of bridging technology gaps with more established specialists in those modalities."
           }
         },
         {
           "cat": {
-            "ko": "환율 및 거시경제",
-            "en": "FX & Macroeconomic Risk"
+            "ko": "운영·법적 리스크",
+            "en": "Operational and Legal Risk"
           },
           "body": {
-            "ko": "매출의 대부분이 달러로 발생해 원화 강세 전환 시 실적 역풍이 불 수 있다. 현재는 원/달러 환율(2026년 4월 평균 약 1,490원)이 가이던스 가정(약 1,400원)을 상회해 우호적이나, 환율 하락 시 이익 레버리지 효과가 빠르게 감소할 수 있다.",
-            "en": "With revenue predominantly denominated in USD, a KRW appreciation cycle would act as a meaningful earnings headwind. The current rate of ~1,490 (April 2026 average) is favorable relative to the company's ~1,400 guidance assumption, but this cushion could erode quickly should the KRW strengthen materially."
+            "ko": "노조 파업과 준법투쟁이 장기화될 경우 생산 일정 차질이 고객사의 신약 상업화 타임라인에 연쇄적으로 영향을 미칠 수 있으며, 이는 계약 위약 조항 발동 및 향후 수주 손실로 이어질 수 있다. CDMO 사업의 특성상 배치 실패(batch failure), 품질 이탈(OOS) 등 생산 사고가 발생할 경우 고객사 신뢰도와 허가 일정에 치명적 영향을 미칠 수 있으며, 규모 확장에 따라 이러한 운영 리스크의 빈도와 영향도가 커질 수 있다. 노사 간 법적 분쟁(업무방해 형사고소, 가처분 소송 등)이 장기화될 경우 경영진과 조직의 역량이 분산되고, 삼성 브랜드 전반에 대한 대외 이미지에도 부정적 영향을 줄 수 있다.",
+            "en": "A prolonged labor dispute and ongoing compliance action could disrupt production schedules, cascading into clients' drug commercialization timelines and potentially triggering contract penalty clauses or loss of future contract renewals. Given the nature of CDMO operations, manufacturing incidents such as batch failures or out-of-specification events could have severe consequences for client approval timelines and Samsung Biologics' reputation, with the risk magnitude potentially growing proportionally with increasing facility scale. Extended legal confrontations between management and the union—including criminal complaints filed against union leadership and multiple injunction proceedings—risk diverting organizational attention and creating reputational overhang for the broader Samsung brand."
           }
         }
       ],
       "verdict": {
         "stance": {
-          "ko": "신중",
-          "en": "Cautious"
+          "ko": "중립",
+          "en": "Neutral"
         },
         "body": {
-          "ko": "삼성바이오로직스는 세계 최대 CDMO 생산 인프라와 40%대 영업이익률로 글로벌 위탁생산 시장의 구조적 승자임을 지속 증명하고 있다. DART 확정 실적 기준 2025년 사상 최대 실적 경신, 2026년 1분기의 견조한 성장세, 미국 생물보안법 수혜 가능성 및 미국 현지 생산거점 확보 등 중장기 성장 트리거는 여전히 유효하다. 그러나 창사 첫 파업에서 비롯된 노사 갈등이 정부 중재 종료 후에도 해소되지 않고 있으며, 인건비 구조적 상승과 2분기 매출 차질의 실적 반영이 하반기 이익 추정치 하향 압력으로 이어질 수 있다. 사업 펀더멘털의 구조적 우수성에 대한 긍정적 시각은 유지하되, 노사 갈등의 가시적 해소 신호가 확인될 때까지 단기 접근에 신중함이 요구되는 국면으로 판단된다.",
-          "en": "Samsung Biologics continues to validate its status as the structural winner in global contract biomanufacturing, evidenced by world-class production scale, a 40%+ operating margin, and record DART-confirmed FY2025 results. Medium-to-long-term growth catalysts—including Biosecurity Act tailwinds, the Rockville foothold, Plant 5 ramp-up, and a potential Plant 6 groundbreaking—remain intact. However, the company's first-ever labor dispute remains unresolved following government mediation, and the combined effect of structurally higher labor costs and strike-related Q2 revenue loss could drive downward revisions to H2 2026 earnings estimates. While the underlying franchise merits a constructive long-term view, a visible and durable resolution of the labor conflict is a prerequisite before adopting a more positive near-term stance."
+          "ko": "삼성바이오로직스는 DART 공시 기준 2025년 영업이익 2.1조원(+56.6%), 2026년 1분기 영업이익률 46.2%라는 업계 최고 수준의 수익성을 바탕으로 구조적 성장이 훼손되지 않았음을 확인했다. 세계 최대 캐파(84.5만L), 창립 이래 누적 수주 214억달러의 실적, 생물보안법 발효에 따른 비중국 CDMO 수요 전환 등 장기 성장 요인은 여전히 유효하다. 그러나 창사 첫 장기 파업과 이후 준법투쟁 지속은 2분기·3분기 실적 불확실성을 높이고 글로벌 고객사 신뢰도에 잠재적 손상을 줄 수 있는 단기 리스크다. 현 주가는 1월 고점 대비 약 30% 조정받아 밸류에이션 부담이 상당 부분 완화됐으나, 노사 협상 타결 시점과 록빌 공장 매출 본격 인식(3분기 추정), 6공장 착공 여부 등 세 가지 모멘텀이 확인될 때 비로소 주가 재평가가 이루어질 것으로 보인다. 주가의 추가 하락 여지는 제한적이지만, 노사 분쟁 해소 없이는 반등의 지속성을 담보하기 어렵다는 점에서 단기 촉매 실현 여부를 주시하는 것이 적절하다.",
+          "en": "Samsung Biologics has reaffirmed its structural growth credentials with industry-leading profitability—FY2025 operating profit of KRW 2.1 trillion (+56.6% YoY, per DART) and a Q1 2026 operating margin of 46.2%—confirming the durability of the business model. Long-term growth catalysts remain broadly intact: the world's largest CDMO capacity at 845,000L, a cumulative order backlog of USD 21.4 billion, and the structural demand shift away from Chinese CDMOs driven by U.S. biosecurity legislation all support a favorable multi-year revenue trajectory. However, the company's first major labor dispute introduces meaningful near-term earnings uncertainty for Q2 and Q3 2026 and carries latent risk to global client confidence in production reliability. The roughly 30% share price correction from the January 2026 high has absorbed much of the valuation premium, but a durable re-rating likely requires sequential confirmation of three catalysts: a labor settlement, Rockville revenue contribution recognition (expected Q3), and a Plant 6 groundbreaking announcement. Downside appears contained from current levels, but without labor resolution, the sustainability of any near-term share price recovery remains uncertain, warranting a watchful approach pending tangible progress on these key milestones."
         }
       },
       "sources": [
-        "https://www.kndaily.co.kr/news/articleView.html?idxno=308794",
+        "https://www.inthenews.co.kr/news/article.html?no=85968",
+        "https://bbn.kiwoom.com/rfSN3705",
         "http://m.pharmstock.co.kr/news/articleView.html?idxno=78080",
+        "https://www.mdtoday.co.kr/news/view/1065599938058595",
+        "https://www.kndaily.co.kr/news/articleView.html?idxno=308489",
+        "https://m.thebell.co.kr/m/newsview.asp?svccode=&newskey=202511260531536700104875",
+        "https://m.ceoscoredaily.com/page/view/2025122215242064428",
+        "https://www.thebell.co.kr/front/newsview.asp?key=202601050853510620103224",
         "https://www.bloter.net/news/articleView.html?idxno=660285",
-        "https://www.digitaltoday.co.kr/news/articleView.html?idxno=659427",
-        "https://news.nate.com/view/20260422n25297",
-        "https://www.inthenews.co.kr/mobile/article.html?no=85968",
-        "https://pharm.edaily.co.kr/news/read?newsId=06123766645421040",
-        "https://biz.heraldcorp.com/article/10742490",
-        "https://www.fnnews.com/news/202605290611195918",
-        "https://www.fnnews.com/news/202605141343162480",
-        "https://www.joongangenews.com/news/articleView.html?idxno=486027",
-        "https://www.hankyung.com/article/2026052076576",
-        "https://www.asiatime.co.kr/article/20260109500282",
-        "https://ceoscoredaily.com/page/view/2025011516320118381",
-        "https://www.mt.co.kr/thebio/2026/03/11/2026031115344563210",
-        "https://www.samsungpop.com/common.do?cmd=down&contentType=application%2Fpdf&inlineYn=Y&saveKey=research.pdf&fileName=2010%2F2026052016130572K_02_03.pdf"
+        "https://www.financialpost.co.kr/news/articleView.html?idxno=256479",
+        "https://biz.heraldcorp.com/article/10734272",
+        "https://www.joongangenews.com/news/articleView.html?idxno=516835",
+        "https://biz.newdaily.co.kr/site/data/html/2026/05/11/2026051100137.html",
+        "https://www.bizhankook.com/bk/article/32311",
+        "https://www.kndaily.co.kr/news/articleView.html?idxno=308794",
+        "https://www.biospectator.com/news/view/26394"
       ],
       "ticker": "207940",
       "name": "삼성바이오로직스",
       "name_en": "SAMSUNG BIOLOGICS CO.,LTD.",
-      "sector": "바이오/제약",
+      "sector": "바이오·제약",
+      "categories": [
+        "바이오·제약",
+        "바이오·신약"
+      ],
       "market": "코스피",
-      "reportDate": "2026-06-03",
+      "reportDate": "2026-06-04",
       "dataDate": "20260602"
     },
     "105560": {
@@ -1791,104 +1807,169 @@ window.KOS_REPORTS = {
     },
     "034020": {
       "title": {
-        "ko": "수주 슈퍼사이클 진입, 이제는 수익성 증명이 관건",
-        "en": "Record Backlog Anchors a Super-Cycle Entry — Profitability Delivery Now the Key Test"
+        "ko": "원전·가스터빈 두 날개로 이익 회복 사이클 진입",
+        "en": "Nuclear and Gas Turbine Dual Engines Power Doosan Enerbility's Earnings Recovery Cycle"
       },
       "lead": {
-        "ko": "역대 최대 수주잔고와 1분기 실적 서프라이즈로 성장 경로는 가시화됐으나, 자회사 부진 탈피와 연결 수익성 회복 속도가 투자 판단의 핵심 변수로 부상하고 있다.",
-        "en": "A record order backlog and a first-quarter earnings beat have clarified the growth runway, yet the pace of subsidiary rehabilitation and consolidated margin recovery remains the pivotal investment variable."
+        "ko": "2026년 1분기 연결 영업이익이 전년 대비 63.9% 급증하며 이익 회복이 수치로 입증됐고, 24.1조 원의 역대 최대 수주잔고와 북미 AI 데이터센터 향 터빈·SMR 수주 모멘텀이 중장기 실적 성장을 강하게 뒷받침한다.",
+        "en": "Q1 2026 consolidated operating profit surged 63.9% YoY, providing the first concrete earnings validation of the recovery thesis, while a record KRW 24.1 trillion order backlog and accelerating North American AI-data-center turbine and SMR order momentum underpin the medium-to-long-term growth trajectory."
       },
       "desc": {
-        "ko": "두산에너빌리티는 대형 원전 주기기, 국산 가스터빈, SMR 기자재 제작을 핵심 역량으로 한 글로벌 발전설비 전문 기업으로, 2025년 신규수주 14.7조원(역대 최대) 달성과 체코 두코바니 원전 5.6조원 본계약 확정을 통해 구조적 성장 국면에 진입했다는 평가를 받고 있다. DART 공시 기준 2026년 1분기 영업이익이 전년 동기 대비 63.9% 증가하며 수익성 반등의 변곡점이 확인됐으나, 2025년 연간 영업이익은 자회사 부진으로 25.0% 감소해 연결 수익성 안정화까지는 추가적인 시간이 필요하다. AI 전력 수요 급증·트럼프 행정부 원전 확대 정책·SMR 상용화 기대감 등 구조적 테마가 밸류에이션 리레이팅을 이끌고 있으나, 현 주가 수준은 2026년 이후 중장기 실적 개선 시나리오를 상당 부분 선반영하고 있어 실적 집행 능력에 대한 검증이 필요한 국면이다.",
-        "en": "Doosan Enerbility is a global power-equipment specialist whose core competencies span large-scale nuclear reactor main components, domestically developed gas turbines, and SMR equipment manufacturing. Record 2025 new orders of KRW 14.7 trillion and the landmark KRW 5.6 trillion Czech Dukovany final contract have reinforced the structural growth narrative. A 63.9% year-on-year surge in 1Q26 operating profit (per DART disclosure) confirmed a profitability inflection, yet the 25.0% decline in full-year 2025 operating profit—driven by subsidiary headwinds—highlights that consolidated margin stabilisation still requires time. Structural tailwinds including surging AI-driven power demand, the Trump administration's nuclear expansion policy, and SMR commercialisation expectations are fuelling valuation re-rating, yet the current share price arguably pre-discounts a significant portion of the medium-to-long-term earnings improvement scenario."
+        "ko": "두산에너빌리티는 2025년 연결 매출 17.1조 원(+5.1% YoY)을 달성했으나, 두산밥캣 사이클 부진과 두산퓨얼셀 적자 확대로 영업이익이 25.0% 감소한 7,627억 원에 그쳤다. 그러나 2026년 1분기를 기점으로 에너빌리티 자체 부문 이익 구조가 뚜렷하게 개선되고 있으며, 미국 AI 빅테크 향 가스터빈·스팀터빈 수주와 체코 원전 계약 효과가 수주잔고를 사상 최대 수준으로 끌어올렸다. 한국기업평가는 2026년 5월 동사 신용등급을 9년 만에 'A-'로 상향 조정하며 사업 펀더멘털의 구조적 개선을 공식 인정했다.",
+        "en": "Doosan Enerbility posted 2025 consolidated revenue of KRW 17.1 trillion (+5.1% YoY), but operating profit fell 25.0% to KRW 762.7 billion amid Doosan Bobcat's cyclical slump and widening losses at Doosan Fuel Cell. However, a decisive earnings inflection emerged in Q1 2026, driven by improving Enerbility-segment margins on nuclear and gas turbine equipment deliveries, with the order backlog reaching an all-time high on the back of U.S. AI-data-center turbine orders and the Czech nuclear contract. Korea Ratings' credit upgrade to A- in May 2026 — the first in nine years — formally recognized the structural improvement in the company's business fundamentals."
       },
       "keypoints": [
         {
-          "ko": "2026년 1분기 영업이익 2,335억원(+63.9% YoY)으로 시장 컨센서스를 약 18.5% 상회, 수익성 반등 변곡점 확인",
-          "en": "1Q26 operating profit of KRW 233.5 billion (+63.9% YoY) beat consensus by ~18.5%, marking a decisive profitability inflection point"
+          "ko": "2026년 1분기 연결 영업이익 2,335억 원(전년比 +63.9%), 당기순이익 602억 원(+384.7%) — 에너빌리티 부문 마진 회복이 본격화",
+          "en": "Q1 2026 consolidated operating profit of KRW 233.5B (+63.9% YoY) and net income of KRW 60.2B (+384.7% YoY) mark the start of a genuine Enerbility-segment margin recovery"
         },
         {
-          "ko": "2026년 1분기 말 수주잔고 24.1조원(+45.9% YoY), 분기 신규수주 2.8조원(+61.8%)으로 중장기 실적 가시성 크게 강화",
-          "en": "End-1Q26 order backlog of KRW 24.1 trillion (+45.9% YoY) with quarterly new orders of KRW 2.8 trillion (+61.8%) providing materially improved medium-term revenue visibility"
+          "ko": "2026년 1분기 말 수주잔고 24.1조 원(전년 동기比 +45.9%), 신규 수주 2.8조 원(+61.8%) — 역대 최대 수주 파이프라인 확보",
+          "en": "Order backlog of KRW 24.1343T (+45.9% YoY) and Q1 new orders of KRW 2.7857T (+61.8% YoY) at end-Q1 2026 represent an all-time record pipeline"
         },
         {
-          "ko": "체코 두코바니 5.6조원 본계약, xAI 연관 추정 스팀터빈 4기 계약 등 글로벌 원전·복합발전 수주 모멘텀 지속",
-          "en": "Landmark KRW 5.6 trillion Czech Dukovany contract and an xAI-linked steam turbine deal confirm sustained global nuclear and combined-cycle order momentum"
+          "ko": "일론 머스크 xAI 향 380MW급 가스터빈 5기 수주 및 미국 스팀터빈 첫 수출 — 북미 AI 전력 시장 교두보 확보",
+          "en": "Five 380MW gas turbines for Elon Musk's xAI plus the first-ever North American steam turbine contracts cement a critical U.S. AI power market beachhead"
         },
         {
-          "ko": "창원 공장 8,068억원 규모 SMR 전용 생산시설 투자 추진, 연 최대 20기 생산 체계 구축 목표",
-          "en": "KRW 806.8 billion investment in a dedicated SMR manufacturing facility at Changwon, targeting annual production capacity of up to 20 modules"
+          "ko": "창원 SMR 전용 공장(8,068억 원, 2026~2031년) 착공 — 연간 20기 생산 체계 구축으로 글로벌 SMR 파운드리 도약 기반 마련",
+          "en": "Launch of a dedicated SMR manufacturing facility in Changwon (KRW 806.8B, 2026–2031) targeting annual capacity of 20 SMR units positions the company as a global SMR foundry"
         },
         {
-          "ko": "2025년 연간 영업이익 7,627억원(-25.0%), 당기순이익 2,052억원(-48.0%)으로 자회사 부진이 연결 수익성 발목; 연결 마진 회복 속도가 핵심 모니터링 포인트",
-          "en": "Full-year 2025 operating profit of KRW 762.7 billion (-25.0%) and net profit of KRW 205.2 billion (-48.0%) underscore subsidiary drag; consolidated margin recovery trajectory is the key monitorable"
+          "ko": "2026년 5월 신용등급 9년 만에 A- 회복 — 재무 건전성 강화·조달 비용 절감으로 대규모 CAPEX 실행 기반 확충",
+          "en": "Credit rating restored to A- in May 2026 for the first time in nine years, reducing bond funding costs and strengthening the balance sheet for large-scale capex execution"
         }
       ],
       "business": {
-        "ko": "두산에너빌리티는 1962년 현대양행으로 설립돼 2001년 두산그룹에 편입된 후 2022년 현재의 사명으로 변경됐으며, 발전설비 전문 기업으로서 주조·단조 기반 기초 소재 생산부터 원전·복합화력 발전설비 설계·제작, 발전플랜트 EPC, 해상풍력 기자재까지 수직계열화된 포트폴리오를 보유하고 있다. 사업 구조는 에너빌리티 부문(연결 기준 매출 비중 약 42.8%), 건설기계·소형장비를 영위하는 두산밥캣, 연료전지 전문사 두산퓨얼셀로 구성되며, 연결 매출에서 두산밥캣의 비중이 절반 이상을 차지해 그룹 전체 이익이 Bobcat 업황에 크게 연동되는 구조적 특성이 있다. 에너빌리티 부문은 원자로·증기발생기·가압기 등 원전 핵심 주기기(NSSS·BOP·터빈), 국산화에 성공한 380MW급 가스터빈, 해상풍력·수소·담수 및 수처리 설비, 주단조품 등을 제작·공급하며 원전과 복합발전 가치사슬의 핵심 노드를 담당한다. 가스터빈 사업에서는 최근 5년(2021~2025년) 300MW 이상급 스팀터빈 글로벌 시장점유율 1위를 유지하고 있어, GE Vernova·Siemens Energy·MHI 등 글로벌 3강의 수주잔고가 5년 이상 적체된 상황에서 납기 경쟁력을 바탕으로 추가 수주를 확보할 유리한 입지를 갖고 있다. 원자력 사업에서는 체코 두코바니 원전(팀코리아 방식) 주기기 공급사로서 글로벌 원전 공급망의 핵심 파트너 지위를 확립했으며, 미국 웨스팅하우스 AP1000 기자재 공급망 참여 가능성도 구체화되고 있다. SMR 사업은 X-Energy·TerraPower·NuScale Power 등 미국 주요 SMR 개발사 세 곳과 협력 관계를 구축하고 있으며, 이미 X-Energy의 Xe-100 고온가스로 16기에 들어가는 핵심 단조품 공급 계약을 체결했다. 두산밥캣은 소형 건설기계(Compact Equipment) 시장에서 세계적 선도 지위를 보유하나, 2025년에는 글로벌 경기 회복 지연으로 수익성이 악화돼 그룹 연결 실적을 압박했다. 두산퓨얼셀은 연료전지 주기기 및 장기유지보수 서비스를 제공하나 현재까지 영업손실이 지속돼 연결 이익에 부정적 영향을 미치고 있다. 에너빌리티 부문의 고성장과 자회사군 부진 간 괴리가 연결 수익성을 제약하는 구조적 요인으로 작용하는 가운데, 두산밥캣을 두산로보틱스 산하로 편입시키는 분리 계획이 진행 중으로 완료 시 에너빌리티 핵심 사업에 집중하는 순수 에너지 기자재 기업으로의 전환이 기대된다.",
-        "en": "Doosan Enerbility was founded in 1962 as Hyundai Yanghaeng, joined the Doosan Group in 2001, and adopted its current name in 2022; it is a vertically integrated power equipment specialist spanning heavy forgings and castings through nuclear and combined-cycle power plant design and manufacturing, EPC contracting, and offshore wind turbine components. Its business comprises the Enerbility segment (approximately 42.8% of consolidated revenue), Doosan Bobcat (construction and compact equipment), and Doosan Fuel Cell (fuel cells), with Bobcat contributing more than half of consolidated revenue, making group-wide profitability materially sensitive to the compact equipment cycle. The Enerbility segment designs and manufactures nuclear reactor main components (NSSS, BOP, turbines), domestically developed 380 MW-class gas turbines, offshore wind turbines, hydrogen and desalination/water-treatment equipment, and heavy forgings—occupying critical nodes in both the nuclear and combined-cycle power value chains. In the gas turbine space, the company has held the No. 1 global market share in steam turbines above 300 MW for five consecutive years (2021–2025), giving it a delivery competitiveness advantage over the global 'Big 3'—GE Vernova, Siemens Energy, and MHI—whose backlogs are stretched by more than five years. In nuclear power, the company established itself as a core supply-chain partner by winning the Czech Dukovany main component contract under the Team Korea framework, and Westinghouse AP1000 equipment supply participation in the US is increasingly concrete. The SMR business is built around collaborative relationships with three leading US SMR developers—X-Energy, TerraPower, and NuScale Power—with a binding forging supply contract for 16 X-Energy Xe-100 high-temperature gas-cooled reactor modules already executed. Doosan Bobcat holds a world-leading position in compact equipment but experienced deteriorating profitability in 2025 due to delayed global demand recovery, weighing on consolidated results. Doosan Fuel Cell continues to generate operating losses from fuel cell main components and long-term maintenance services, exerting a persistent negative drag on group earnings. This structural divergence between Enerbility growth and subsidiary underperformance constrains consolidated margins; the ongoing plan to spin off Bobcat into the Doosan Robotics subsidiary signals a strategic pivot toward becoming a pure-play energy equipment company."
+        "ko": "두산에너빌리티는 1962년 설립된 한국의 대표 종합 발전설비 기업으로, 2022년 3월 두산중공업에서 현 사명으로 변경했으며 두산그룹 지배구조 핵심 축을 담당한다. 핵심 에너빌리티 부문은 원자력(NSSS·BOP·증기발생기·원자로·원자로냉각재펌프), 가스터빈·스팀터빈, 담수·수처리 설비, 주단조품 등으로 구성되며 연결 매출의 약 42.8%를 차지한다. 두산밥캣(북미 소형 건설기계 시장 선도)은 연결 매출에서 상당한 비중을 점하고 있으나, 2023년 하반기 이후 경기 회복 지연으로 수익성이 크게 악화된 상태다. 두산퓨얼셀은 연결 매출의 약 1.5%를 차지하며 현재 영업손실 상태가 지속되고 있어 연결 이익에 부담을 주고 있다. 원자력 분야에서 동사는 전신인 한국중공업 시절부터 국내 독보적 지위를 구축해 왔으며, 원자로·증기발생기·터빈 등 핵심 주기기 전 품목을 자체 제작하는 수직 통합 역량을 보유하고 있다. 글로벌 가스터빈 시장은 GE 버노바·지멘스·미쓰비시 3강이 지배하고 있으나, 동사는 약 1조 원의 연구개발 투자 끝에 2019년 세계 5번째 대형 가스터빈 자체 개발에 성공했으며, 기존 3사 대비 대폭 단축된 납기를 무기로 북미 시장에 진입하고 있다. 스팀터빈 분야에서는 최근 5년(2021~2025년) 300MW 이상급 글로벌 시장 점유율 1위를 유지하고 있는 것으로 보도됐다. SMR 영역에서는 뉴스케일파워·엑스에너지·테라파워 등 미국 주요 개발사와 전략적 협력 관계 및 지분 투자를 통해 장기 기자재 공급 파이프라인을 확보했고, 총 8,068억 원을 투입해 창원 공장에 전용 제조시설을 신설 중이다. 해외 포트폴리오는 체코 두코바니 5·6호기(팀코리아 컨소시엄), 웨스팅하우스 협력 프로젝트(불가리아·폴란드), 중동·동남아 복합발전, 미국 빅테크 향 터빈 수출 등으로 다변화된 구조를 갖추고 있다.",
+        "en": "Doosan Enerbility, established in 1962 and rebranded from Doosan Heavy Industries & Construction in March 2022, serves as the structural core of the Doosan Group and Korea's premier integrated power equipment company. The core Enerbility segment — covering nuclear NSSS/BOP, reactor vessels, steam generators, gas turbines, steam turbines, water treatment systems, and heavy forgings — accounts for approximately 42.8% of consolidated revenue. Doosan Bobcat, the North American compact construction machinery leader, contributes the majority of remaining consolidated revenue but has been a drag on profitability since its post-pandemic boom peaked in late 2023. Doosan Fuel Cell (roughly 1.5% of consolidated revenue) continues to generate operating losses, adding further pressure on the consolidated earnings profile. In nuclear power, the company inherits a decades-long unrivaled domestic position and possesses fully vertically integrated manufacturing capability spanning all primary components including reactor vessels, steam generators, turbines, and coolant pumps. The global large gas turbine market has historically been an oligopoly dominated by GE Vernova, Siemens, and Mitsubishi, but Doosan invested approximately KRW 1 trillion in R&D to independently develop large-scale gas turbines in 2019, becoming the world's fifth manufacturer and is now leveraging a substantially shorter delivery lead time to win North American market share from entrenched incumbents. In steam turbines, the company has reportedly held the No. 1 global market share in the 300MW-and-above segment for the past five consecutive years (2021–2025). In the SMR domain, strategic minority investments in U.S. developers NuScale Power, X-Energy, and TerraPower, combined with the KRW 806.8 billion Changwon dedicated SMR manufacturing facility (construction commenced 2026, targeting annual capacity of 20 units), position the company as a global SMR foundry. Overseas, the diversified order portfolio spans Czech Dukovany Units 5 & 6 under the Team Korea consortium, Westinghouse-led projects in Bulgaria and Poland, gas complex projects in the Middle East and Southeast Asia, and U.S. AI big-tech turbine export contracts."
       },
       "recent": {
-        "ko": "DART 공시 확정 기준으로, 2025년 연간 연결 매출액은 17.1조원(전기대비 +5.1%)으로 성장세를 이어갔으나 영업이익은 7,627억원(-25.0%), 당기순이익은 2,052억원(-48.0%)으로 수익성이 큰 폭 저하됐다. 이는 두산밥캣 부문의 글로벌 경기 회복 지연에 따른 수익성 하락, 두산퓨얼셀 영업손실 확대, 일부 해외 화력 EPC 프로젝트의 저마진 인식이 복합적으로 작용한 결과다. 수주 측면에서는 2025년 신규수주가 14.7조원으로 전년 대비 106.5% 증가해 역대 최대치를 달성했으며, 특히 원자력 부문이 6.8조원(+655.6%)으로 급증했고 가스·수소 부문도 1.3조원(+44.4%)으로 견조하게 성장했다. 2025년 12월에는 체코 두코바니 원전 주기기 공급계약(NSSS 4.9조원 + 터빈발전기 0.7조원 = 총 5.6조원)이 본계약으로 확정됐으며, 단일 해외 원전 기자재 계약으로는 역대 최대 규모다. 2026년 1분기(DART 공시 기준)에는 연결 매출 4.3조원(+13.7% YoY), 영업이익 2,335억원(+63.9% YoY), 당기순이익 602억원(전년 동기 당기순손실 211억원 대비 흑자전환)을 시현해 수익성 반등의 분명한 신호를 보냈다. 2026년 1분기 영업이익은 시장 컨센서스(약 1,930~1,970억원)를 약 18.5% 상회했으며, 에너빌리티 부문 매출이 전년 동기 대비 24.5% 성장하고 고마진 가스터빈·원전 기자재 비중이 확대된 점이 핵심 기여 요인으로 분석된다. 수주잔고는 2026년 1분기 말 기준 24.1조원으로 전년 동기 대비 45.9% 증가했고, 분기 신규수주도 2.8조원(+61.8%)을 기록해 중장기 실적 가시성이 크게 높아졌다. 주가 흐름 측면에서는 2025년 초 1만8,000원대에서 출발해 2026년 4~5월 최고 12만9,000원대까지 약 7배에 달하는 강세를 보였으나, 이후 조정이 이어져 2026년 6월 3일 기준 10만원(-6.45%)으로 하락하며 52주 최고가(13만9,200원) 대비 약 28% 조정된 상태다. 외국인 투자자는 2026년 들어 두산에너빌리티를 국내 코스피 시장 순매수 1위 종목으로 집중 매수해 왔으나, 최근 주가 급등에 따른 차익실현 흐름도 병행되는 양상이다.",
-        "en": "Per DART-confirmed financial disclosures, 2025 full-year consolidated revenue rose 5.1% YoY to KRW 17.1 trillion, maintaining top-line growth, but operating profit fell 25.0% to KRW 762.7 billion and net profit declined 48.0% to KRW 205.2 billion—reflecting a material profitability deterioration. The weakness was attributable to a combination of delayed global demand recovery for Doosan Bobcat, widening operating losses at Doosan Fuel Cell, and residual low-margin recognition on certain legacy overseas thermal EPC projects. On the order-intake front, 2025 new orders surged 106.5% YoY to a record KRW 14.7 trillion, with the nuclear segment alone soaring 655.6% to KRW 6.8 trillion, while the gas/hydrogen segment rose 44.4% to KRW 1.3 trillion. In December 2025, the final contract for Czech Dukovany nuclear main components was executed at KRW 5.6 trillion in total (NSSS KRW 4.9 trillion + turbine generator KRW 0.7 trillion), marking the largest single overseas nuclear equipment contract in the company's history. For 1Q26 (per DART disclosure), consolidated revenue grew 13.7% YoY to KRW 4.3 trillion, operating profit jumped 63.9% YoY to KRW 233.5 billion, and net profit reached KRW 60.2 billion—a turnaround from a net loss of KRW 21.2 billion in the year-earlier period—signalling a clear profitability inflection. The 1Q26 operating profit beat market consensus (approximately KRW 193–197 billion) by roughly 18.5%, driven by a 24.5% year-on-year revenue increase in the Enerbility segment as the mix shifted towards higher-margin gas turbine and nuclear equipment deliveries. The order backlog stood at KRW 24.1 trillion at end-1Q26 (+45.9% YoY), with quarterly new orders of KRW 2.8 trillion (+61.8%), materially improving medium-to-long-term revenue visibility. The share price rallied approximately seven-fold from around KRW 18,000 in early 2025 to a peak of about KRW 129,200 in April–May 2026 before retracing to KRW 100,000 on June 3, 2026—roughly 28% below the 52-week high of KRW 139,200. Foreign investors were the largest net buyers of the stock in the Korean equity market in 2026, though profit-taking has begun to emerge alongside the sharp price appreciation."
+        "ko": "DART 공시 기준, 두산에너빌리티는 2025년 연결 매출 17조 579억 원(전기 대비 +5.1%)을 기록하며 외형 성장을 이어갔다. 그러나 영업이익은 7,627억 원으로 전기 대비 25.0% 감소했고, 당기순이익은 2,052억 원으로 48.0% 급감했다. 실적 부진의 주된 원인은 두산밥캣의 경기 회복 지연에 따른 수익성 악화와 두산퓨얼셀의 영업손실 확대였으며, 가스터빈·중동 복합발전 수주 확대로 에너빌리티 본체 매출은 성장했음에도 연결 이익을 끌어올리기에는 역부족이었다. 전환점은 2026년 1분기에 나타났다. 1분기 연결 매출은 4.3조 원(전기 대비 +13.7%)으로 성장세를 이어갔고, 영업이익은 2,335억 원(+63.9%)으로 대폭 개선됐으며, 당기순이익은 602억 원으로 전기 대비 384.7% 급증하며 본격적인 이익 회복을 알렸다. 수주 측면에서는 2025년 에너빌리티 부문 신규 수주가 14.7조 원으로 전년 대비 두 배 이상 증가해 사상 최대치를 경신했으며, 2026년 1분기 말 기준 수주잔고는 24조 1,343억 원(전년 동기比 +45.9%)으로, 1분기 신규 수주 2조 7,857억 원도 전년 대비 61.8% 늘어났다. 한국기업평가는 2026년 5월 동사의 무보증사채 신용등급을 'BBB+(긍정적)'에서 'A-(안정적)'으로 상향 조정했는데, 이는 2017년 이후 9년 만의 A등급 복귀다. 주가는 2025년 초 1만 8,000원대에서 출발해 연말 7만 5,300원까지 4배 넘게 상승한 후, 2026년 들어 한국수력원자력과 팀코리아로 진행한 체코 두코바니 원전 수주 효과 및 xAI 가스터빈 계약 공개에 힘입어 5월 7일 13만 5,400원의 신고가를 경신했다. 이후 고점 대비 차익 실현 매물이 집중되며 2026년 6월 4일 기준 10만 원 수준(시가총액 64.1조 원)까지 약 26% 조정된 상태이며, 이날 하루에만 6.45% 하락했다.",
+        "en": "Based on DART-confirmed consolidated financials, Doosan Enerbility recorded 2025 full-year revenue of KRW 17.06 trillion (+5.1% YoY), demonstrating continued topline growth, yet operating profit contracted by 25.0% to KRW 762.7 billion and net income plunged 48.0% to KRW 205.2 billion. The earnings shortfall was driven primarily by a cyclical downturn at Doosan Bobcat amid sluggish North American construction equipment demand, compounded by widening operating losses at Doosan Fuel Cell; the core Enerbility segment itself achieved revenue growth on gas turbine and Middle Eastern power complex deliveries but could not fully offset the subsidiary drag. A decisive earnings inflection materialized in Q1 2026: consolidated revenue rose 13.7% YoY to KRW 4.3 trillion, while operating profit surged 63.9% YoY to KRW 233.5 billion and net income rebounded 384.7% YoY to KRW 60.2 billion, confirming that the Enerbility segment margin recovery is no longer just a forecast. On the order front, the Enerbility segment's 2025 full-year new orders reached a record KRW 14.7 trillion — more than double the prior year — while the Q1 2026-end backlog stood at KRW 24.1343 trillion (+45.9% YoY) with Q1 new orders of KRW 2.7857 trillion (+61.8% YoY). Korea Ratings upgraded the company's unsecured bond credit rating from BBB+ (Positive Outlook) to A- (Stable) in May 2026, marking the first A-level rating since 2017 and validating the structural nature of the business recovery. Shares quadrupled from the KRW 18,000 range at the start of 2025 to KRW 75,300 at year-end, then surged further to an all-time high of KRW 135,400 on May 7, 2026, driven by the Czech Dukovany contract win and the revelation of the xAI gas turbine deal. As of June 4, 2026, the stock has retraced approximately 26% from that peak to around KRW 100,000 (market cap KRW 64.1 trillion), falling 6.45% on the session alone amid profit-taking pressure."
       },
       "outlook": {
-        "ko": "최근 증권사 보고에 따르면 신한투자증권은 2026년 연결 매출 18.2조원(+6.5% YoY), 영업이익 1.2조원(+58.7% YoY, OPM 6.7%)을 전망하며 영업이익률이 2027년 8.3%, 2028년 9.7%까지 점진적으로 개선될 것으로 예상했다. 수주잔고는 증권가 컨센서스 기준 2026년 30조원, 2027년 42조원으로 증가할 것으로 예상되며, 삼성증권은 원자력·가스터빈 수요를 바탕으로 2030년까지 연간 10조원 이상의 신규 수주가 지속될 경우 수주잔고가 47.7조원에 달할 것으로 내다봤다. 원전 파이프라인 측면에서는 체코 테멜린 추가 물량, 웨스팅하우스가 추진하는 불가리아 코즐로두이 7·8호기(2026년 FID 예정), 폴란드(3기), 베트남 닌투언 2원전, 국내 신규 원전(11차 전기본 3+1기 제안) 등 다수의 후속 수주 기회가 가시화되고 있다. 가스터빈 부문은 AI 데이터센터용 전력 수요 급증과 글로벌 공급 병목이 겹치며 구조적 성장 국면에 진입했고, 2026년 5월에는 xAI(일론 머스크)와 연관된 것으로 추정되는 미국 기업에 370MW급 스팀터빈·발전기 각 4기를 2029년까지 공급하는 계약을 체결하는 등 빅테크 수요가 직접 수주로 이어지는 흐름이 확인됐다. SMR 부문에서는 창원 공장 내 8,068억원 전용 생산시설(연 20기 목표) 구축이 진행 중이며, 미국 NRC의 차세대 원전 인허가 규정 'Part 53' 발효가 상용화 일정을 앞당기는 촉매로 작용하고 있다. 영국 국립원자력연구원(NNL) 추산 기준 2035년 글로벌 SMR 시장은 약 5,000억달러(약 753조원) 규모로 성장할 것으로 전망되는 가운데, 두산에너빌리티는 X-Energy·TerraPower·NuScale Power 등 복수 고객사를 확보해 글로벌 SMR 제조 파운드리로의 도약을 도모하고 있다. 다만 SMR 매출의 본격 기여는 2027~2028년 이후로 예상되므로, 그 전까지는 대형원전과 가스터빈 중심의 실적 흐름이 주도할 것으로 전망된다.",
-        "en": "According to recent sell-side reports, Shinhan Investment Securities projected 2026 consolidated revenue of KRW 18.2 trillion (+6.5% YoY) and operating profit of KRW 1.2 trillion (+58.7% YoY, OPM 6.7%), with operating margins expected to improve progressively to 8.3% in 2027 and 9.7% in 2028. Consensus estimates project the order backlog to reach KRW 30 trillion in 2026 and KRW 42 trillion in 2027; Samsung Securities envisions annual new orders exceeding KRW 10 trillion through 2030—potentially lifting the backlog to KRW 47.7 trillion—based on sustained nuclear and gas turbine demand. The nuclear pipeline is becoming increasingly visible, with potential contracts in Czech Temelin (additional units), Bulgaria Kozloduy Units 7–8 (2026 FID targeted), Poland (three units, pre-work permit complete), Vietnam's Ninh Thuan 2 project, and new domestic units proposed under Korea's 11th Basic Energy Plan. The gas turbine segment has entered a structurally favourable cycle driven by surging AI data-centre power demand and a global supply bottleneck; in May 2026, the company executed a contract to supply four 370 MW-class steam turbines and generators to a US customer reportedly linked to xAI, with delivery through 2029. In SMR, a KRW 806.8 billion dedicated production facility at Changwon (targeting 20 modules per year) is under development, and the US NRC's newly enacted 'Part 53' next-generation licensing rules are expected to pull forward SMR commercialisation timelines. With the UK's National Nuclear Laboratory projecting the 2035 global SMR market at approximately USD 500 billion, Doosan Enerbility's multi-customer SMR partnerships position it for early market capture as a de facto global SMR foundry. However, material SMR revenue contributions are expected only from 2027–2028 onwards, meaning near-term results will be driven primarily by large nuclear and gas turbine deliveries."
+        "ko": "에프앤가이드 집계 기준 증권가 컨센서스는 2026년 연간 매출 약 18조 원, 영업이익 약 1.1조 원을 전망하며, 영업이익률이 2025년의 약 3.8%에서 5%대 중반으로 개선될 것으로 예상하고 있다. 수주잔고는 2026년 30조 원, 2027년 42조 원까지 확대될 것으로 증권가가 전망하고 있으며, 삼성증권은 원자력·가스터빈 수요를 근거로 2030년까지 연간 10조 원 이상의 신규 수주가 가능하다고 제시했다. 단기 이벤트로는 2026년 하반기 불가리아 코즐로두이 원전 7·8호기 최종투자결정(FID) 기대와 웨스팅하우스 협력 기자재 수주 가시화가 거론되고 있다. 가스터빈 시장에서는 기존 3사(GE 버노바·지멘스·미쓰비시)의 공급 병목 현상이 심화되고 GE 버노바의 2029년 생산분까지 예약이 완료된 것으로 알려지면서, 동사의 납기 경쟁력이 북미 빅테크·유틸리티 향 추가 수주를 이끌 것으로 관측된다. SMR 사업은 창원 전용 공장이 2031년 완공 예정이며, 뉴스케일·테라파워·엑스에너지의 프로젝트 구체화에 따라 기자재 공급 계약이 단계적으로 가시화될 전망이다. 국내에서는 정부가 신규 원전 2기 건설 및 SMR 건설 계획을 공식화함에 따라 두산에너빌리티의 주기기 수주 가시성이 높아졌으며, 경남 지역 340여 원전 기업과 함께 3조 원 이상의 수주 효과가 기대된다. 다만 두산밥캣의 경기 회복 시점 불확실성과 두산퓨얼셀의 적자 해소 여부가 연결 이익 개선 속도를 조율하는 핵심 변수로 남아 있다.",
+        "en": "Sell-side consensus compiled by FnGuide projects 2026 full-year revenue of approximately KRW 18 trillion and operating profit of approximately KRW 1.1 trillion, implying an operating margin recovery from roughly 3.8% in 2025 to the mid-5% range in 2026. The order backlog is broadly expected to expand to KRW 30 trillion in 2026 and KRW 42 trillion in 2027, while Samsung Securities projected that robust nuclear and gas turbine demand could sustain annual new orders in excess of KRW 10 trillion through 2030, with the total backlog potentially reaching KRW 47.7 trillion. In the near term, a Final Investment Decision for the Kozloduy Units 7 & 8 nuclear project in Bulgaria is expected in the second half of 2026, and Westinghouse-led equipment sourcing in Bulgaria and Poland is similarly expected to materialize progressively. Gas turbine visibility remains elevated as GE Vernova's order books are reported to be essentially fully booked through 2029, widening the window for Doosan's shorter-lead-time advantage to drive additional North American big-tech and utility wins. SMR commercialization is advancing, with the Changwon dedicated plant on track for 2031 completion, and partner projects at NuScale Power, TerraPower, and X-Energy are expected to generate phased equipment supply contracts as those developments move closer to commercial operation. Domestically, the Korean government's formal confirmation of two new reactor units and an SMR build-out program adds a well-defined long-term domestic pipeline for the country's sole primary-component manufacturer. The key swing variable for consolidated earnings momentum remains the timing of a Doosan Bobcat cyclical recovery and the rate at which Doosan Fuel Cell losses are brought under control."
       },
       "bull": [
         {
           "title": {
-            "ko": "AI 전력 수요가 여는 가스터빈 슈퍼사이클",
-            "en": "AI Power Demand Unleashing a Gas Turbine Super-Cycle"
+            "ko": "역대 최대 수주잔고와 폭발적 신규 수주 모멘텀",
+            "en": "Record-High Backlog and Explosive New Order Momentum"
           },
           "body": {
-            "ko": "글로벌 AI 데이터센터 확산에 따른 전력 수요 급증은 복합발전 설비 발주를 빠르게 끌어올리고 있다. 두산에너빌리티는 최근 5년간 300MW 이상급 스팀터빈 글로벌 시장에서 점유율 1위를 유지하고 있으며, GE Vernova·Siemens Energy 등 글로벌 3강의 수주잔고가 5년 이상 적체된 상황에서 납기 경쟁력을 앞세워 추가 수주를 확보하고 있다. 2026년 5월에는 xAI와 연관된 것으로 추정되는 미국 기업에 370MW급 스팀터빈·발전기 각 4기를 2029년까지 공급하는 계약을 체결하는 등 빅테크 수요가 직접 수주로 이어지고 있으며, 1분기 신규 수주 증가율은 61.8%에 달했다. 동일 부지에 가스발전과 SMR을 병행 구축하는 'Gas + Nuclear' 트렌드가 확산될 경우 가스터빈 수주 모멘텀이 더욱 강화될 것으로 전망된다.",
-            "en": "The rapid proliferation of AI data centres is driving a sharp acceleration in combined-cycle equipment orders globally. Doosan Enerbility has held the No. 1 global market share in steam turbines above 300 MW for five consecutive years, and with the Big 3's backlogs stretched beyond five years, the company's delivery competitiveness is generating incremental wins. In May 2026, it secured a contract to supply four 370 MW-class steam turbines and generators to a US customer reportedly linked to xAI for delivery through 2029, with 1Q26 quarterly new orders up 61.8% YoY. The expanding 'Gas + Nuclear' co-location trend for data centre sites could further amplify gas turbine order momentum in coming years."
+            "ko": "2026년 1분기 말 기준 수주잔고는 24조 1,343억 원으로 전년 동기 대비 45.9% 급증했으며, 1분기 신규 수주 2조 7,857억 원도 61.8% 증가했다. 에너빌리티 부문의 2025년 연간 신규 수주는 14조 7,280억 원으로 전년 대비 두 배 이상 증가하며 역대 최대치를 경신했다. 증권가는 수주잔고가 2027년 42조 원까지 확대될 것으로 전망하며, 수주가 매출로 순차 인식될 경우 2026~2028년 구간에 걸쳐 강한 이익 레버리지 효과가 발현될 것으로 분석하고 있다.",
+            "en": "The order backlog stood at KRW 24.1343 trillion at end-Q1 2026 (+45.9% YoY), with Q1 new orders of KRW 2.7857 trillion growing 61.8% YoY. The Enerbility segment alone secured KRW 14.7280 trillion in new orders in 2025, more than doubling year-over-year to set an all-time record. With the backlog expected to reach KRW 42 trillion by 2027 per sell-side projections, the progressive conversion of orders to revenue is widely expected to generate powerful earnings leverage across 2026 to 2028."
           }
         },
         {
           "title": {
-            "ko": "글로벌 원전 르네상스의 핵심 공급망 파트너",
-            "en": "Linchpin Supply-Chain Partner in the Global Nuclear Renaissance"
+            "ko": "미국 AI 전력 시장 선점 — xAI·빅테크 향 가스터빈·스팀터빈 수주 연속 달성",
+            "en": "U.S. AI Power Market Beachhead via xAI and Big-Tech Turbine Contracts"
           },
           "body": {
-            "ko": "트럼프 행정부는 미국 원전 발전 용량을 2050년까지 현재의 4배로 늘리는 목표를 천명하고 관련 규제 완화 행정명령에 서명했다. 미국이 지난 30년간 신규 원전 건설이 전무해 기자재 제조 역량을 상실한 상황에서 한국의 원전 공급망이 필수 파트너로 부상하고 있으며, 두산에너빌리티는 체코 두코바니 5.6조원 계약으로 글로벌 신뢰도를 확인받았다. 불가리아·폴란드·베트남·사우디 등 다수의 후속 원전 파이프라인이 구체화되고 있고, 웨스팅하우스 AP1000 기자재 공급망 참여 가능성도 열려 있어 원자력 부문의 수주 규모는 꾸준히 확대될 전망이다. 최근 증권가에서는 2030년까지 원자력 부문 연간 수주 4조원 이상이 가시화될 것으로 내다보고 있다.",
-            "en": "The Trump administration has committed to quadrupling US nuclear power capacity by 2050 and signed executive orders deregulating the nuclear sector. With the US having built no new nuclear plants for 30 years and losing much of its equipment manufacturing capability, Korean suppliers are indispensable, and Doosan Enerbility has validated its global credibility with the KRW 5.6 trillion Czech Dukovany contract. A growing pipeline of follow-on projects in Bulgaria, Poland, Vietnam, and Saudi Arabia is crystallising, and participation in the Westinghouse AP1000 equipment supply chain in the US is increasingly plausible. Recent sell-side estimates project nuclear segment annual new orders of over KRW 4 trillion per year through 2030."
+            "ko": "동사는 일론 머스크의 AI 스타트업 xAI로부터 380MW급 가스터빈 5기를 수주한 데 이어, 2026년 3월과 5월 두 차례에 걸쳐 370MW급 스팀터빈·발전기 총 6기 추가 공급 계약을 체결하며 북미 AI 데이터센터 전력 시장에서 빠르게 입지를 구축하고 있다. 기존 3사의 납기가 5년에 달하는 반면 동사는 훨씬 짧은 납기로 공급이 가능해 공급 병목 시장에서 구조적 우위를 점하고 있으며, GE 버노바는 2029년 생산분까지 예약이 완료된 것으로 알려졌다. 북미 시장에서 쌓이는 납품 레퍼런스는 향후 유틸리티·IPP 고객을 대상으로 한 추가 수주 확대의 발판이 되며, 미국 AI 인프라 투자 붐이 지속되는 한 구조적 수혜가 이어질 전망이다.",
+            "en": "Doosan secured orders for five 380MW gas turbines from Elon Musk's xAI and subsequently added contracts for a total of six 370MW steam turbines and generators across March and May 2026, rapidly establishing its footprint in the North American AI data center power market. With incumbents' average lead times stretching to approximately five years and GE Vernova's order books reportedly full through 2029, Doosan's significantly shorter delivery window provides a structural competitive advantage in a supply-constrained market. The growing North American delivery track record is expected to unlock additional utility and independent power producer opportunities, with the U.S. AI infrastructure investment boom serving as a durable structural tailwind."
           }
         },
         {
           "title": {
-            "ko": "SMR 파운드리 도약: 장기 성장 옵션의 가시화",
-            "en": "Emerging SMR Foundry: Long-Term Growth Option Becoming Tangible"
+            "ko": "신용등급 9년 만에 A 회복 — 재무 선순환의 시작",
+            "en": "A-Level Credit Restored After Nine Years — Start of a Financial Virtuous Cycle"
           },
           "body": {
-            "ko": "두산에너빌리티는 X-Energy, TerraPower, NuScale Power 등 미국 주요 SMR 개발사 복수와 협력 관계를 구축한 세계 유수의 SMR 기자재 제조사로 부상하고 있으며, 이미 X-Energy의 Xe-100 고온가스로 16기 주기기 계약을 체결한 상태다. 창원 공장에 8,068억원을 투자해 연 최대 20기 생산이 가능한 SMR 전용 공장을 구축하고 있으며, NRC의 'Part 53' 인허가 간소화 규정 발효와 X-Energy 텍사스 프로젝트 환경영향평가 조기 완료 등 규제 가속화가 상용화 일정을 앞당기고 있다. 영국 NNL은 2035년 글로벌 SMR 시장 규모를 약 5,000억달러로 추산하며, 두산에너빌리티가 이 시장에서 글로벌 파운드리 지위를 확립할 경우 현재 밸류에이션에 미반영된 추가 성장 프리미엄이 창출될 수 있다. 국내에서도 혁신형 SMR(i-SMR) 사업이 구체화되면 국내 수요 확대라는 추가 모멘텀도 기대된다.",
-            "en": "Doosan Enerbility is emerging as one of the world's foremost SMR equipment manufacturers, having built collaborative relationships with multiple leading US SMR developers—X-Energy, TerraPower, and NuScale Power—and already executed a binding supply contract for 16 X-Energy Xe-100 forging modules. A KRW 806.8 billion investment in a dedicated Changwon SMR facility targeting annual capacity of 20 modules is underway, supported by regulatory tailwinds including the US NRC's 'Part 53' licensing streamlining and the accelerated environmental review of X-Energy's Texas project. With the UK's NNL projecting the 2035 global SMR market at approximately USD 500 billion, establishing a 'global SMR foundry' position could unlock significant upside not yet embedded in current valuations. Additional domestic demand from Korea's own i-SMR programme could provide a further incremental growth catalyst."
+            "ko": "한국기업평가는 2026년 5월 두산에너빌리티의 무보증사채 신용등급을 'BBB+(긍정적)'에서 'A-(안정적)'으로 상향 조정했으며, 이는 2017년 경영 악화로 강등된 이후 9년 만의 A등급 복귀다. 신용등급 상향은 회사채 조달 금리 인하로 이어져, 8,068억 원 규모의 SMR 전용 공장 신설 등 대규모 CAPEX를 소화하면서도 재무 융통성을 유지할 수 있는 기반을 강화한다. 에너빌리티 본체 영업이익률이 2025년 약 3.8%에서 5%대 이상으로 개선될 것으로 관측되는 가운데, 신용도 회복은 이익 개선이 일시적이지 않음을 공식적으로 재확인한 시그널이다.",
+            "en": "Korea Ratings upgraded Doosan Enerbility's unsecured bond credit rating from BBB+ (Positive) to A- (Stable) in May 2026, marking the first A-level rating since the company was downgraded in 2017 amid severe financial stress. The upgrade lowers corporate bond funding costs, enhancing the financial capacity to simultaneously execute the KRW 806.8 billion SMR plant investment and other capacity expansion programs without excessive balance sheet strain. With the core Enerbility segment's operating margin expected to recover from approximately 3.8% in 2025 to the mid-5% range in 2026, the credit rating restoration formally validates the structural, rather than transitory, nature of the earnings improvement."
           }
         }
       ],
       "bear": [
         {
           "title": {
-            "ko": "자회사 부진으로 연결 수익성 개선 속도 제약",
-            "en": "Subsidiary Headwinds Constraining Consolidated Margin Recovery"
+            "ko": "두산밥캣 사이클 부진·퓨얼셀 적자, 연결 이익의 구조적 발목",
+            "en": "Doosan Bobcat Cyclical Slump and Fuel Cell Losses Structurally Constrain Consolidated Earnings"
           },
           "body": {
-            "ko": "DART 공시 기준 2025년 연결 영업이익 7,627억원(-25.0% YoY), 당기순이익 2,052억원(-48.0% YoY)으로, 에너빌리티 부문의 성장에도 불구하고 자회사 부진이 전체 수익성을 크게 끌어내렸다. 두산밥캣 부문은 글로벌 소형 건설기계 수요 침체로 영업이익이 감소했고, 두산퓨얼셀은 영업손실이 확대되며 연결 이익을 잠식했다. 두산밥캣 분리 절차가 진행 중이나 법적·지배구조상 절차 완료까지 시간이 소요되며, 그 전까지는 연결 실적이 자회사 변동성에 지속 노출된다. 에너빌리티 부문 단독 수익성 개선이 연결 수준에서 온전히 발현되기까지 구조적 시간이 필요하다는 점을 감안해야 한다.",
-            "en": "Full-year 2025 consolidated operating profit fell 25.0% YoY to KRW 762.7 billion and net profit plunged 48.0% to KRW 205.2 billion (per DART disclosure), as subsidiary underperformance materially offset strong Enerbility segment progress. Doosan Bobcat's earnings contracted amid a cyclically weak compact equipment market, while Doosan Fuel Cell's operating losses widened. Although the Bobcat separation process is underway, completing the legal and governance procedural requirements will take time, leaving consolidated results exposed to subsidiary volatility in the interim. A structural lag between Enerbility-level profitability improvement and its full reflection at the consolidated level must be factored into near-term earnings expectations."
+            "ko": "2025년 연결 영업이익이 전기 대비 25.0% 감소하고 당기순이익이 48.0% 급감한 핵심 원인은 두산밥캣의 소형 건설기계 수요 부진과 두산퓨얼셀의 영업손실 확대였다. 두산밥캣은 코로나 이후 호황을 누렸으나 2023년 하반기부터 북미·유럽 수요 위축이 현실화되며 수익성이 크게 악화됐고, 금리 고원 상태가 지속될 경우 회복 시점이 더 지연될 수 있다. 에너빌리티 본체의 이익 개선 속도가 자회사 부진을 충분히 상쇄하지 못할 경우, 연결 EPS 성장 경로가 증권가 컨센서스를 하회하는 결과로 이어질 수 있다.",
+            "en": "The 25.0% YoY contraction in 2025 consolidated operating profit and 48.0% plunge in net income were driven primarily by demand weakness in Doosan Bobcat's compact construction equipment business and expanding operating losses at Doosan Fuel Cell, underscoring the meaningful consolidated earnings drag from subsidiaries. Doosan Bobcat's post-pandemic boom turned into a protracted cyclical downturn from late 2023, and a persistent high interest rate environment in North America and Europe could delay the recovery further than currently anticipated. If improvements in the Enerbility segment's own profitability cannot fully offset the subsidiary headwinds, consolidated EPS growth is at risk of falling short of the sell-side consensus trajectory."
           }
         },
         {
           "title": {
-            "ko": "중장기 성장을 선반영한 과도한 밸류에이션 부담",
-            "en": "Premium Valuation Already Pre-Discounts Substantial Future Growth"
+            "ko": "고점 대비 26% 조정에도 남아있는 밸류에이션 부담",
+            "en": "Elevated Valuation Remains Despite the 26% Pullback from Peak"
           },
           "body": {
-            "ko": "2026년 예상 실적 기준 주가수익비율(PER)이 200배를 상회하고, 주가순자산비율(PBR) 역시 10배 이상으로 전통적 제조업 밸류에이션 기준을 크게 초과한다. 이는 시장이 원전·SMR 사업의 장기 이익 개선 시나리오를 현재 시점에 대폭 선반영하고 있다는 의미로, 수주 가이던스 미달·SMR 상용화 지연 등이 발생할 경우 주가 하방 리스크가 크다. 2026년 6월 3일 기준 10만원으로 5월 최고점 대비 20% 이상 조정됐음에도 밸류에이션 부담은 여전히 높은 수준이며, 에프앤가이드 기준 증권사 평균 목표주가(5월 12일 기준 15.2만원)와의 괴리가 상존한다. 향후 실적·수주 이벤트가 컨센서스를 반복적으로 상회해야만 현 밸류에이션 수준이 정당화될 수 있다.",
-            "en": "Based on 2026 consensus estimates, the stock trades at a price-to-earnings ratio well above 200x and a price-to-book ratio above 10x—far exceeding conventional manufacturing sector benchmarks. This implies the market has substantially pre-discounted the long-term earnings improvement scenario for nuclear and SMR businesses, creating meaningful downside risk if order guidance disappoints or SMR timelines slip. Even after the more-than-20% pullback from the May 2026 peak to KRW 100,000 on June 3, the valuation premium remains elevated, with the consensus average target price (KRW 152,214 as of May 12, per FnGuide) implying a still-substantial implied expectation gap. Sustaining the current valuation level requires consistently above-consensus order and earnings execution over multiple quarters."
+            "ko": "두산에너빌리티 주가는 2025년 초 대비 5배 이상 상승하는 과정에서 미래 수주와 이익 기대치를 상당 부분 선반영했으며, 신고가(13만 5,400원) 대비 약 26% 하락한 현 주가(약 10만 원)에서도 시가총액 64.1조 원은 2025년 연간 영업이익(7,627억 원) 대비 높은 배수를 형성하고 있다. 이는 SMR·원전 수주의 계획 대비 일정 지연이나 가스터빈 수주 성장 둔화, 두산밥캣 회복 지연 등이 발생할 경우 주가 하방 압력이 상당히 커질 수 있음을 의미한다. 외국인 순매수 1위(2026년 연초 이후)의 긍정적 수급에도 불구하고, 고점 이후 빠른 조정 흐름은 뉴스 플로우에 따른 변동성 확대 가능성을 시사한다.",
+            "en": "Following a more than fivefold surge from early 2025 levels, the stock has retraced approximately 26% from its May 7, 2026 all-time high of KRW 135,400 to around KRW 100,000, yet the current market capitalization of KRW 64.1 trillion still trades at a substantial premium relative to 2025 reported operating profit of KRW 762.7 billion, implying heavy reliance on flawless growth execution. Any delays in SMR or nuclear order timelines, a slowdown in gas turbine order cadence, or a deeper-than-expected Bobcat downcycle could trigger meaningful valuation compression from current levels. Despite favorable supply dynamics from foreign investor net buying (No. 1 on the KOSPI year-to-date in 2026), the sharp correction from the peak signals that the stock remains sensitive to changes in news flow and growth expectations."
+          }
+        },
+        {
+          "title": {
+            "ko": "해외 원전 프로젝트 지정학·인허가 리스크",
+            "en": "Geopolitical and Regulatory Risks in Overseas Nuclear Projects"
+          },
+          "body": {
+            "ko": "체코·불가리아·폴란드 등 유럽 원전 수주는 각국의 정치적 변수, 러시아-우크라이나 전쟁에 따른 지역 불확실성, 최종투자결정(FID) 지연 등 복잡한 외부 변수에 노출돼 있다. 미국 내 신규 원전 및 SMR 상용화는 NRC의 규제 일정, 연방·주정부 예산 확보, 부지 선정 등 다층적 행정 절차를 수반하며, 일정 지연 시 기자재 수주 매출 인식 시점도 후행된다. 웨스팅하우스 협력 프로젝트의 경우 수주 범위와 납기가 웨스팅하우스의 전략적 결정에 종속되어 있어 카운터파티 실행 리스크라는 구조적 취약점이 내재한다.",
+            "en": "Nuclear export projects across Czech Republic, Bulgaria, and Poland are exposed to complex geopolitical variables including domestic political dynamics, ongoing Russia-Ukraine conflict-related regional uncertainty, and the risk of Final Investment Decision delays that could push back revenue recognition timelines. U.S. new nuclear and SMR commercialization involves multi-layered regulatory procedures — NRC licensing, federal and state funding authorization, and site selection — meaning that timeline slippage at any stage would correspondingly defer equipment supply contracts and associated revenue. For Westinghouse-affiliated projects, Doosan's order scope and delivery schedules are structurally contingent on Westinghouse's strategic decisions, introducing counterparty execution risk that is largely outside the company's own control."
           }
         }
+      ],
+      "risks": [
+        {
+          "cat": {
+            "ko": "거시·금리 환경 리스크",
+            "en": "Macro: Interest Rate and Economic Cycle Risk"
+          },
+          "body": {
+            "ko": "글로벌 금리 환경과 주요국 경기 사이클은 두산밥캣의 수익 회복 시점과 복합발전 플랜트 신규 발주 규모에 직접적인 영향을 미친다. 특히 북미 건설기계 시장은 금리 수준에 민감하게 반응하며, 고금리 장기화 시 두산밥캣의 수익성 악화 심도가 예상보다 깊어질 수 있다. 반면 AI 인프라 투자 붐은 경기 사이클과 비교적 독립적인 전력 수요 증가를 유발하고 있어 에너빌리티 핵심 사업에 일정 부분 방어력을 제공하지만, 글로벌 경기 급랭 시 전반적인 자본지출 축소가 복합발전·원전 발주에도 영향을 미칠 수 있다.",
+            "en": "Global interest rate dynamics and major-market economic cycles directly influence both the recovery timeline for Doosan Bobcat's business and the pace of gas complex and power plant order placements globally. North American construction machinery demand is particularly interest-rate-sensitive, and a prolonged high-rate environment risks deepening the Bobcat cyclical downturn beyond consensus expectations. While the AI infrastructure investment boom is generating power demand relatively independent of conventional economic cycles — providing a partial buffer for the core Enerbility segment — a sharp global growth slowdown could curtail capital expenditure on power infrastructure broadly, including gas complex and nuclear projects."
+          }
+        },
+        {
+          "cat": {
+            "ko": "원전·에너지 정책 불확실성",
+            "en": "Nuclear and Energy Policy Risk"
+          },
+          "body": {
+            "ko": "미국 트럼프 행정부의 원전 르네상스 정책(2050년까지 원전 용량 현재의 4배 확대)은 긍정적이나, 실제 발주 일정은 행정명령의 구체적 실행 속도와 의회 예산 확보 여부에 달려 있다. 국내에서는 신규 원전 2기 및 SMR 건설 정책이 공식화됐으나, 입지 선정·주민 수용성·환경영향평가 등 행정 절차 지연 가능성이 상존한다. 에너지 정책의 정치적 민감성을 고려할 때, 향후 정권 교체나 의회 구성 변화가 중장기 수주 파이프라인에 의도하지 않은 영향을 미칠 수 있다.",
+            "en": "The Trump administration's nuclear renaissance policy — targeting a fourfold expansion of U.S. nuclear capacity by 2050 — provides a broadly favorable backdrop, but actual order timelines are contingent on the pace of regulatory implementation and Congressional budget allocations, which can be affected by legislative priorities or political gridlock. Domestically in Korea, the government's confirmation of two new reactors and SMR construction is positive, but administrative delays relating to site selection, community acceptance, and environmental impact assessments represent live execution risks. Given the political sensitivity of energy policy, future changes in administration or legislative composition in key markets could exert unintended effects on the medium-to-long-term order pipeline."
+          }
+        },
+        {
+          "cat": {
+            "ko": "대규모 수주 실행·환율 리스크",
+            "en": "Large-Scale Order Execution and Foreign Exchange Risk"
+          },
+          "body": {
+            "ko": "수주잔고가 24조 원을 초과하고 SMR 전용 공장 신설·기존 설비 증설 등 대규모 CAPEX가 동시 진행되는 상황에서, 제조 능력 확충 속도와 품질 유지가 중요한 실행 리스크로 부상한다. 납기 경쟁력이 핵심 차별화 요소인 만큼, 특정 프로젝트에서 납기 지연이 발생하면 평판 손상과 위약금 부담이 동시에 발생할 수 있다. 또한 달러·유로 기준으로 결제되는 해외 수주 비중이 증가함에 따라 원/달러·원/유로 환율 변동에 따른 손익 변동성도 지속적으로 관리가 필요한 리스크 요소다.",
+            "en": "With order backlog exceeding KRW 24 trillion and large simultaneous capital programs underway — including the SMR plant construction and factory capacity upgrades — the pace and quality of manufacturing ramp-up become critical execution risk factors. As short delivery lead time is the company's primary competitive differentiator, any notable delay or quality failure on high-profile projects could trigger reputational damage and contractual penalty costs simultaneously. Additionally, the growing proportion of overseas contracts denominated in USD and EUR introduces meaningful foreign exchange earnings variability, particularly if the Korean won strengthens materially against major currencies during the delivery period of backlogged orders."
+          }
+        }
+      ],
+      "verdict": {
+        "stance": {
+          "ko": "긍정적",
+          "en": "Constructive"
+        },
+        "body": {
+          "ko": "두산에너빌리티는 원전·가스터빈·SMR이라는 세 축이 동시에 성장하는 구조적 호황 사이클에 올라타 있으며, 2026년 1분기 실적은 에너빌리티 본체의 이익 회복이 본격화됐음을 수치로 확인시켜 주었다. 24.1조 원의 역대 최대 수주잔고와 연도별 순차적 매출 인식 구조는 향후 2~3년간 안정적인 이익 레버리지 기반을 제공하며, 9년 만의 신용등급 A 회복은 재무 체력이 구조적으로 개선됐음을 공식 인정한 신호다. 다만 시가총액 64.1조 원은 향후 수주 실행과 이익 레버리지가 계획대로 전개될 경우를 상당 부분 선반영한 가격이며, 두산밥캣 사이클 부진 장기화나 해외 원전 수주 일정 지연이 현실화될 경우 연결 이익 전망이 하향 조정될 여지가 존재한다. 고점 대비 약 26% 조정된 현 시점은 일부 과열이 해소된 상태이나, 완전한 밸류에이션 정상화를 위해서는 SMR 상용화 일정, 북미 가스터빈 추가 수주 확인, 두산밥캣 회복 신호 등 후속 검증이 병행되어야 한다. 구조적 성장 스토리의 실행 여부를 주시하며 접근하는 것이 합리적 방향이다.",
+          "en": "Doosan Enerbility is structurally positioned at the center of a multi-year growth cycle driven by the simultaneous expansion of nuclear power, gas turbines, and SMR, with Q1 2026 results providing the first concrete earnings confirmation that the Enerbility segment's recovery is genuine and underway. A record KRW 24.1 trillion order backlog and the sequential revenue recognition pattern underpin a visible and durable earnings leverage runway for the next two to three years, while the first A-level credit rating in nine years formally validates the structural — rather than cyclical — nature of the fundamental improvement. That said, the current market capitalization of KRW 64.1 trillion already prices in a substantial portion of the growth execution, leaving the stock exposed to downside risk if Doosan Bobcat's recovery is further delayed, overseas nuclear project timelines slip, or the gas turbine order cadence disappoints. The approximately 26% pullback from the all-time high has alleviated some technical froth, but a further re-rating of valuation multiples will likely require sequential confirmation of SMR commercialization milestones, continued North American turbine order momentum, and early signs of a Bobcat earnings trough. Monitoring the execution of the structural growth story — rather than extrapolating the order momentum in isolation — remains the critical framework for evaluating this company."
+        }
+      },
+      "sources": [
+        "https://v.daum.net/v/20260514070311488",
+        "https://www.topdaily.kr/news/articleView.html?idxno=665059",
+        "https://www.mt.co.kr/industry/2026/05/29/2026052814244420781",
+        "https://eureka.hankyung.com/insight/detail/16299",
+        "https://news.jkn.co.kr/post/904361",
+        "https://www.mt.co.kr/industry/2026/01/06/2026010615335978741",
+        "https://www.economytribune.co.kr/news/articleView.html?idxno=3902835",
+        "https://www.electimes.com/news/articleView.html?idxno=366149",
+        "https://www.newsis.com/view/NISX20251219_0003448152",
+        "https://news.nate.com/view/20260403n33925",
+        "https://comp.wisereport.co.kr/company/c1010001.aspx?cmp_cd=034020"
       ],
       "ticker": "034020",
       "name": "두산에너빌리티",
@@ -3115,13 +3196,173 @@ window.KOS_REPORTS = {
     },
     "006400": {
       "title": {
-        "ko": "ESS·전고체에 건 삼성SDI의 흑자 전환 승부수",
-        "en": "Samsung SDI's ESS-Led Turnaround: EV Recovery Remains the Make-or-Break Catalyst"
+        "ko": "적자 터널의 출구: ESS와 전고체 배터리가 그리는 흑자 전환 로드맵",
+        "en": "Exit from the Loss Tunnel: ESS and Solid-State Batteries Chart the Road to Profitability"
       },
       "lead": {
-        "ko": "삼성SDI는 AI 데이터센터 수요가 이끄는 ESS 구조적 성장과 AMPC 레버리지를 발판 삼아 2025년의 역대급 적자에서 빠르게 이탈 중이나, 전기차 부문의 회복 속도가 완전한 흑자 전환 시기를 결정할 최종 변수로 남아 있다.",
-        "en": "Samsung SDI is rapidly closing in on a return to profitability, leveraging structural ESS demand growth from AI data center build-outs and expanding AMPC benefits, but the pace of EV battery demand recovery remains the pivotal variable determining when full operating profitability is restored."
+        "ko": "6분기 연속 영업적자를 딛고 2026년 1분기 손실 64% 축소와 당기순이익 흑자 전환으로 실적 저점 통과를 시사했으나, 하반기 분기 흑자 전환 목표 달성까지의 실행 속도가 최대 변수다.",
+        "en": "Six consecutive quarters of operating losses are giving way to a Q1 2026 earnings trough signal—operating loss narrowed 64% and net income turned positive—yet the speed of execution toward a second-half quarterly profit remains the critical variable."
       },
+      "desc": {
+        "ko": "삼성SDI(006400)는 전기차 수요 부진과 중국 배터리 업체의 LFP 공세가 겹치며 2025년 연간 영업손실 1조 7,224억원(DART 공시 확정)을 기록, 2016년 이후 첫 연간 적자로 돌아섰다. 2026년 1분기에는 매출 3조 5,764억원(+12.6% YoY)·영업손실 1,556억원(-64.2% YoY)·당기순이익 561억원(흑자 전환)으로 뚜렷한 개선 신호를 보냈으며, 시장 컨센서스 대비 매출 3.0% 상회·영업손실 39.6% 하회의 어닝 서프라이즈를 달성했다. 회사는 2026년을 '턴어라운드 원년'으로 설정하고 ESS 수주 확대, AMPC 수혜 극대화, 2027년 전고체 배터리 양산을 삼각 축으로 하반기 분기 흑자 전환을 목표로 하고 있다.",
+        "en": "Samsung SDI (006400) posted its first annual operating loss since 2016, at KRW 1.72 trillion for 2025 (DART confirmed), hammered by sluggish EV demand and intensifying Chinese LFP competition. Q1 2026 brought a decisive improvement signal: revenue of KRW 3.58 trillion (+12.6% YoY), operating loss of KRW 155.6bn (-64.2% YoY), and a return to net income of KRW 56.1bn, beating consensus by 3.0% on revenue and 39.6% on the operating loss line. Management has designated 2026 its 'turnaround year,' anchored by three pillars—ESS order expansion, IRA AMPC maximization, and solid-state battery mass production targeted for 2027."
+      },
+      "keypoints": [
+        {
+          "ko": "2026년 1분기 영업손실 1,556억원(-64.2% YoY)·당기순이익 561억원 흑자 전환(DART 확정), 시장 컨센서스 대비 서프라이즈 달성",
+          "en": "Q1 2026 operating loss narrowed 64.2% YoY to KRW 155.6bn; net income turned positive at KRW 56.1bn—a confirmed DART beat versus consensus"
+        },
+        {
+          "ko": "비중국계 유일의 각형 배터리 제조사로서 미국 ESS 시장 내 AMPC 독점 수혜 중; 1Q26 AMPC 수혜금 805억원 반영(AMPC 제외 시 영업손실 2,361억원)",
+          "en": "As the sole non-Chinese prismatic battery maker, Samsung SDI captures unique US AMPC benefits; Q1 2026 AMPC was KRW 80.5bn (underlying loss ex-AMPC: KRW 236.1bn)"
+        },
+        {
+          "ko": "메르세데스-벤츠 다년 공급 계약 체결로 BMW·폭스바겐 그룹에 이어 독일 3대 프리미엄 OEM 전체 확보, EV 고객 기반 완성",
+          "en": "Multi-year supply agreement with Mercedes-Benz completes coverage of all three major German premium OEMs, solidifying the EV customer base"
+        },
+        {
+          "ko": "2027년 하반기 전고체 배터리 양산 목표(브랜드명: 솔리드스택), LG에너지솔루션·SK온 대비 약 3년 선행하는 업계 최고 수준의 일정",
+          "en": "Solid-state battery ('Solid Stack') mass production targeted for H2 2027—approximately three years ahead of domestic rivals LG Energy Solution and SK On"
+        },
+        {
+          "ko": "AI 데이터센터 ESS 수요, 2025년 9GWh → 2030년 40GWh+ (연평균 30%+ 성장); BBU 시장 2026년 8억달러(+70% 이상) 전망으로 소형 배터리도 고성장 사이클 진입",
+          "en": "AI data center ESS demand set to grow 30%+ CAGR from 9 GWh (2025) to 40+ GWh (2030); BBU market forecast at $800m in 2026, up 70%+, propelling the small battery segment into a high-growth cycle"
+        }
+      ],
+      "business": {
+        "ko": "삼성SDI의 사업은 배터리(2026년 1분기 기준 매출 비중 약 94%)와 전자재료(약 6%)로 구성된다. 배터리 부문은 다시 전기차용, ESS용, 소형 배터리로 분류되며, 전기차용 각형 배터리는 BMW·폭스바겐 그룹·메르세데스-벤츠 등 독일 프리미엄 OEM 중심의 NCM·NCA 셀이 주력으로, 헝가리 공장이 유럽 공급의 핵심 거점이다. ESS 부문에서는 세계 유일의 비중국계 각형 배터리 제조사라는 독점적 지위를 보유하며, NCA 기반 'SBB 1.7'과 LFP 기반 'SBB 2.0'의 이중 포트폴리오로 미국·유럽 시장을 공략하고 있다. 미국 인디애나주 스타플러스 에너지(스텔란티스 합작)에서 ESS용 NCA 배터리 현지 생산을 개시했으며, LFP 기반 SBB 2.0의 현지 양산 확대로 AMPC 수혜를 극대화하는 전략을 추진 중이다. 소형 배터리 부문은 원통형 셀 중심으로 전동공구·BBU(배터리 백업 유닛)·마이크로 모빌리티에 공급하며, AI 데이터센터 증설 수요에 따라 BBU용 고출력 원통형 배터리가 새로운 성장 엔진으로 부상했다. 전자재료 부문은 반도체 패키징·패터닝 소재와 OLED·디스플레이 소재로 구성되며, AI 서버 투자 확대에 힘입어 반도체 소재가 견조한 성장세를 유지하고 있다. 경쟁 구도 측면에서 CATL·BYD는 저가 LFP로 시장 점유율을 빠르게 잠식하고 있으며, LG에너지솔루션은 파우치·원통형, SK온은 파우치 중심으로 각각 경쟁한다. 삼성SDI는 '탈중국 공급망·프리미엄 삼원계 기술·전고체 배터리 선행'이라는 세 가지 차별화 요소로 포지셔닝하며, BMW와 전고체 배터리 공동개발 협약, 현대차·기아와 로봇 전용 배터리 공동 개발 MOU 등을 통해 미래 기술 생태계도 구축하고 있다.",
+        "en": "Samsung SDI's business is divided into the Battery segment (approximately 94% of Q1 2026 revenue) and Electronic Materials (approximately 6%). The Battery division spans EV, ESS, and small batteries; the EV portfolio centers on prismatic NCM/NCA cells for German premium OEMs—BMW, Volkswagen Group, and Mercedes-Benz—with the Hungary facility as the European supply hub. In ESS, Samsung SDI holds a uniquely advantaged position as the world's only non-Chinese prismatic battery manufacturer, operating a dual product portfolio of the NCA-based SBB 1.7 and LFP-based SBB 2.0, targeting the US and European markets. The company has commenced local production of NCA batteries for ESS at StarPlus Energy in Indiana (Stellantis JV) and is scaling up LFP-based SBB 2.0 local manufacturing to maximize IRA AMPC benefits. The small battery segment, focused on cylindrical cells for power tools, battery backup units (BBU), and micro-mobility, has found a new growth engine in high-output BBU cells driven by AI data center infrastructure build-outs. Electronic Materials—comprising semiconductor packaging and patterning materials and OLED/display materials—benefits from AI server investment tailwinds in its semiconductor materials line. In competitive terms, CATL and BYD are aggressively capturing share with low-cost LFP, while LG Energy Solution competes across pouch and cylindrical formats and SK On in pouches. Samsung SDI differentiates through a non-Chinese supply chain, premium NCM/NCA chemistry, and a solid-state battery head start, underscored by a co-development agreement with BMW and a robot battery joint development MOU with Hyundai and Kia."
+      },
+      "recent": {
+        "ko": "DART 공시 확정 기준, 2025년 연간 매출은 13조 2,667억원으로 전년 대비 20.0% 감소했으며, 영업손실 1조 7,224억원(전기대비 -574.1%)·당기순손실 5,849억원(전기대비 -201.6%)을 기록해 2016년 이후 첫 연간 영업적자로 돌아섰다. 주요 원인은 주요국 친환경 정책 변화, 미국 전략 고객사의 전기차 판매 급감, 소형 배터리 수요 회복 지연 등 복합적 전방 시장 부진이었다. 2026년 1분기(DART 확정)에는 매출 3조 5,764억원(+12.6% YoY)·영업손실 1,556억원(-64.2% YoY)·당기순이익 561억원을 기록, 6분기 연속 적자 흐름 속에서도 선명한 손실 축소 추세를 확인했다. 부문별로 보면 배터리 사업은 매출 3조 3,544억원(+12.5% YoY)·영업손실 1,766억원(-61.0% YoY), 전자재료 사업은 매출 2,220억원·영업이익 210억원을 각각 기록했다. ESS 수주 확대, AMPC 수혜금 805억원 반영, 고출력 원통형(BBU·전동공구) 판매 호조, 플래그십 스마트폰 판매 증가에 따른 디스플레이 소재 반등이 수익성 개선을 이끌었다. 다만 AMPC를 제외한 실질 영업손실은 약 2,361억원으로, 보조금 기여분을 제외한 자생적 수익성 기반이 아직 취약하다는 점은 모니터링 요소다. 1분기 실적은 시장 컨센서스 대비 매출 3.0% 상회, 영업손실 39.6% 하회(예상보다 호조)로 어닝 서프라이즈를 기록했다. 주가는 2026년 초 대비 큰 폭 반등해 4~5월 중 한때 70만원을 넘어서며 신고가를 경신했으나, 이후 업종 전반의 조정 및 차익 실현이 겹치며 2026년 6월 4일 기준 602,000원(전일 대비 -7.67%)으로 하락, 시가총액 48.5조원을 기록하고 있다.",
+        "en": "Per confirmed DART filings, 2025 full-year revenue declined 20.0% year-on-year to KRW 13.27 trillion, with an operating loss of KRW 1.72 trillion (-574.1% YoY) and a net loss of KRW 584.9bn (-201.6% YoY), marking the company's first annual operating deficit since 2016. The deterioration reflected a combination of policy shifts in major markets, a steep decline in EV sales by a key US customer, and a delayed recovery in small battery demand. In Q1 2026 (DART confirmed), revenue recovered to KRW 3.58 trillion (+12.6% YoY), the operating loss narrowed to KRW 155.6bn (-64.2% YoY), and net income turned positive at KRW 56.1bn — visible improvement within a sixth consecutive quarter of operating losses. By segment, the Battery division posted revenue of KRW 3.35 trillion (+12.5% YoY) and an operating loss of KRW 176.6bn (-61.0% YoY), while Electronic Materials delivered revenue of KRW 222bn and operating profit of KRW 21bn. Improvement drivers included ESS order expansion, KRW 80.5bn in IRA AMPC tax credits, strong cylindrical battery sales to BBU and power tool customers, and a rebound in display materials on flagship smartphone launches. However, the underlying operating loss excluding AMPC stands at approximately KRW 236.1bn, reflecting still-fragile self-sustaining profitability. The Q1 result outperformed consensus by 3.0% on revenue and 39.6% on the operating loss, constituting an earnings surprise. The share price staged a sharp rebound from early-2026 levels, briefly exceeding KRW 700,000 in April–May 2026, before retreating on sector-wide correction and profit-taking to close at KRW 602,000 on June 4, 2026 (-7.67%), with market capitalization at KRW 48.5 trillion."
+      },
+      "outlook": {
+        "ko": "삼성SDI는 2026년을 '턴어라운드 원년'으로 설정하고 하반기 중 분기 흑자 전환을 목표로 하고 있으며, 경영진은 1분기 컨퍼런스콜에서 전사 실적이 작년 3분기를 저점으로 추세 전환이 이뤄졌다고 밝혔다. ESS 부문에서는 AI 데이터센터용 ESS 수요가 2025년 9GWh에서 2030년 40GWh 이상으로 연평균 30% 이상 성장할 것으로 전망되며, 특히 온사이트 마이크로그리드 ESS는 2030년까지 연평균 60% 이상의 고성장이 예상된다. 미국 내 LFP 기반 SBB 2.0의 현지 양산 확대와 비중국 LFP 양극재 선제 확보(엘앤에프와 2027~2029년 1조 6,000억원 규모 장기 계약)를 통해 AMPC 수혜를 극대화할 계획이며, 대신증권은 삼성SDI의 AMPC 수령액이 2025년 2,750억원에서 2026년 6,730억원, 2027년 1조 7,000억원으로 급증할 것으로 추정했다. 전기차 배터리 부문은 2분기부터 헝가리 공장에서 유럽 볼륨 모델 신규 프로젝트 양산이 시작될 예정이며, 독일·프랑스 등 주요국의 보조금 확대와 내연기관차 TCO 상승이 유럽 EV 수요 회복을 뒷받침할 것으로 기대된다. 소형 배터리 부문은 BBU 시장의 2026년 70% 이상 확대, 탭리스 고출력 원통형 배터리 판매 확대로 수익성 개선이 전망되며, 전동공구용 탭리스 배터리는 전년 대비 30% 이상 판매 확대를 목표로 하고 있다. 중장기적으로는 2027년 하반기 전고체 배터리 양산이 핵심 모멘텀으로, 로봇·항공 등 피지컬 AI 시장을 첫 적용처로 삼아 전기차로 확장하는 전략을 추진 중이다. 다만 글로벌 거시 불확실성, 미국 무역 정책 변동, 중국 업체의 공세 등 외부 변수는 실적 개선 속도를 제약하는 요소로 남아 있다.",
+        "en": "Samsung SDI has set 2026 as its 'turnaround year,' targeting a quarterly operating profit in the second half; management stated on the Q1 2026 earnings call that the overall business reached its earnings trough in Q3 2025 and has been on an uptrend since. In the ESS segment, AI data center ESS demand is projected to grow at a 30%+ CAGR from 9 GWh in 2025 to over 40 GWh by 2030, with on-site microgrid ESS forecast to expand at 60%+ CAGR — creating a structural tailwind. The company plans to scale up LFP-based SBB 2.0 US local production and has secured non-Chinese LFP material supply through a KRW 1.6 trillion long-term contract with L&F (2027–2029); Daishin Securities estimates AMPC receipts rising from KRW 275bn in 2025 to KRW 673bn in 2026 and KRW 1.7 trillion in 2027 as US production ramps. In EV batteries, new European volume-model projects are set to commence at the Hungary plant from Q2 2026, supported by expanding subsidies in Germany and France and rising ICE total cost of ownership. The small battery segment should benefit from 70%+ BBU market growth in 2026 and a targeted 30%+ year-on-year expansion in tabless power tool battery sales. Longer term, H2 2027 solid-state battery mass production is the pivotal catalyst, with physical AI (robotics, aerospace) as the initial application before scaling to EVs. Global macro uncertainty, US trade policy shifts, and intensifying Chinese competition remain external variables that could temper the pace of improvement."
+      },
+      "bull": [
+        {
+          "title": {
+            "ko": "AI 인프라가 여는 ESS 고성장 사이클과 탈중국 독점 지위",
+            "en": "AI Infrastructure Unlocks a High-Growth ESS Cycle — Non-Chinese Monopoly Position"
+          },
+          "body": {
+            "ko": "AI 데이터센터 투자 확산에 따라 전력용 ESS, UPS, BBU 수요가 구조적으로 확대되고 있으며, 삼성SDI는 비중국계 유일의 각형 배터리 제조사로서 탈중국 공급망을 선호하는 미국 시장에서 경쟁자 없는 포지션을 점하고 있다. 2026년 BBU 시장 규모는 약 8억 달러로 전년 대비 70% 이상 확대될 것으로 예상되며, 클라우드 사업자들이 직접 배터리 물량을 확보하려는 움직임도 나타나 추가 시장 확대 가능성이 크다. ESS는 EV 셀 대비 kWh당 매출이 약 2배 높은 시스템 단위 사업이며, 여기에 kWh당 45달러의 AMPC 보조금이 더해져 강력한 이익 증폭 효과가 기대된다. 삼성SDI와 엘앤에프 간 비중국 LFP 양극재 장기 공급 계약(2027~2029년 1.6조원 규모)은 미국 PFE 규정에 선제 대응하는 공급망 안정성을 담보한다.",
+            "en": "AI data center investment is structurally expanding demand for grid-scale ESS, UPS, and BBU, and Samsung SDI occupies an uncontested position as the world's only non-Chinese prismatic battery maker in a US market that strongly prefers non-Chinese supply chains. The BBU market is estimated at approximately $800 million in 2026, expanding 70%+ year-on-year, with cloud hyperscalers directly seeking to secure battery volumes — pointing to further upside. ESS is a system-level business generating roughly 2x the kWh revenue of EV cells; combined with $45/kWh AMPC subsidies, the earnings leverage is formidable. A KRW 1.6 trillion long-term non-Chinese LFP cathode supply agreement with L&F (2027–2029) provides supply chain security against the US Prohibited Foreign Entity framework."
+          }
+        },
+        {
+          "title": {
+            "ko": "전고체 배터리 기술 선도: 경쟁사 대비 3년 빠른 양산 목표",
+            "en": "Solid-State Battery Technology Lead: Mass Production Target Three Years Ahead of Rivals"
+          },
+          "body": {
+            "ko": "삼성SDI는 2027년 하반기 전고체 배터리(브랜드: 솔리드스택) 양산을 목표로 하고 있으며, LG에너지솔루션·SK온이 2030년 전후를 목표로 하는 것에 비해 약 3년 선행하는 일정이다. 피지컬 AI(로봇·UAM 등)를 첫 적용처로 삼고 전기차로 확장하는 전략이며, BMW와 공동개발 협약, 현대차·기아와 로봇 전용 배터리 개발 MOU를 통해 미래 수요처와의 연대도 공고히 했다. 세계 전고체 배터리 시장은 2033년까지 4조원 이상 규모로 성장할 것으로 전망되며, 기술 선점 시 고부가 프리미엄 시장에서의 구조적 경쟁 우위가 형성된다. 인터배터리 2026에서 파우치형 전고체 배터리 샘플을 최초 공개하며 차세대 기술 경쟁력을 시장에 가시적으로 제시했다.",
+            "en": "Samsung SDI is targeting solid-state battery ('Solid Stack') mass production in H2 2027, approximately three years ahead of LG Energy Solution and SK On, which are targeting around 2030. The go-to-market strategy prioritizes physical AI applications—robotics and UAM—before expanding to EVs, and is backed by a co-development agreement with BMW and a robot-battery joint development MOU with Hyundai and Kia. The global solid-state battery market is projected to surpass KRW 4 trillion by 2033, offering structural competitive advantage and premium margins for the early mover. Samsung SDI publicly demonstrated a pouch-type solid-state battery sample for the first time at InterBattery 2026, providing visible evidence of its technology development progress."
+          }
+        },
+        {
+          "title": {
+            "ko": "독일 프리미엄 3사 고객 완성 및 EV 포트폴리오 다변화",
+            "en": "Completion of All-German Premium OEM Coverage and EV Portfolio Diversification"
+          },
+          "body": {
+            "ko": "2026년 1분기 메르세데스-벤츠와 다년 공급 계약을 체결함으로써 BMW, 폭스바겐 그룹에 이어 독일 3대 프리미엄 완성차 브랜드 전부를 고객사로 확보하며 유럽 프리미엄 EV 시장에서의 입지를 공고히 했다. HEV용 탭리스 원통형 배터리 수주로 제품 포트폴리오도 다변화됐으며, 2분기부터 헝가리 공장에서 유럽 볼륨 모델 신규 프로젝트 양산이 시작될 예정이어서 가동률 상승과 수익성 개선이 기대된다. 최근 보도에 따르면 유럽 주요 7개국 4월 EV 판매가 전년 동기 대비 50% 가까이 성장했으며, 고유가와 보조금 확대가 전기차 전환 속도를 가속하고 있어 삼성SDI의 헝가리 공장 수혜가 예상된다.",
+            "en": "The multi-year supply agreement with Mercedes-Benz signed in Q1 2026 completes coverage of all three major German premium brands alongside BMW and Volkswagen Group, cementing Samsung SDI's position in the European premium EV segment. A HEV tabless cylindrical battery win also broadened the product portfolio, while new European volume-model production ramp-ups scheduled at the Hungary plant from Q2 2026 are expected to drive utilization and profitability improvement. Recent reports indicate European major-market EV sales grew approximately 50% year-on-year in April, with high oil prices and expanded subsidies accelerating electrification — a direct tailwind for Samsung SDI's Hungary operations."
+          }
+        }
+      ],
+      "bear": [
+        {
+          "title": {
+            "ko": "6분기 연속 영업적자와 자생적 수익성 부재",
+            "en": "Six Consecutive Quarters of Operating Losses and Absent Self-Sustaining Profitability"
+          },
+          "body": {
+            "ko": "2025년 영업손실 1조 7,224억원은 2016년 이후 첫 연간 영업적자로, 구조적 공급과잉과 수요 둔화가 동시에 작용한 결과이며, 2026년 1분기에도 영업손실 기조가 유지됐다. AMPC 805억원을 제외한 실질 영업손실은 2,361억원 수준으로, AMPC를 제외한 자생적 수익성 기반은 여전히 취약하며 정책 변화에 따른 보조금 의존 리스크를 내포한다. 하반기 분기 흑자 전환 목표는 헝가리 가동률 회복, 미국 ESS 생산 확대, EV 수요 회복 등 복수의 실행 조건을 동시에 충족해야 가능해 불확실성이 상당히 높다.",
+            "en": "The 2025 operating loss of KRW 1.72 trillion — the first annual operating deficit since 2016 — reflected simultaneous structural overcapacity and demand weakness, and the operating deficit persisted through Q1 2026. Stripping out the KRW 80.5bn AMPC contribution, the underlying operating loss stands at approximately KRW 236.1bn, exposing fragile self-sustaining profitability and a meaningful reliance on policy-driven subsidies subject to political risk. The H2 2026 quarterly profit target requires the simultaneous satisfaction of multiple execution conditions — Hungary utilization recovery, US ESS production scaling, and EV demand improvement — leaving meaningful uncertainty around its achievability."
+          }
+        },
+        {
+          "title": {
+            "ko": "중국 배터리 업체의 LFP·전고체 공세와 가격 경쟁 심화",
+            "en": "Chinese Battery Makers' LFP and Solid-State Offensive Intensifies Competitive Pressure"
+          },
+          "body": {
+            "ko": "CATL·BYD는 저가 LFP 배터리로 전기차 및 ESS 시장 점유율을 빠르게 확대하고 있으며, 가격 경쟁 심화는 삼성SDI의 프리미엄 포지셔닝과 마진에 구조적인 하방 압력을 가하고 있다. 전고체 배터리 분야에서도 중국 완성차 계열 배터리 기업이 2026년 말 양산을 선언하는 등 공격적으로 상용화 시점을 앞당기고 있어, 삼성SDI가 기대하는 2027년 기술 선점 효과가 희석될 수 있다. LFP 전환 및 ESS 다변화 대응 속도에서 CATL·LG에너지솔루션 대비 다소 늦었다는 시장 평가도 있으며, 이는 중기적 시장 점유율 회복의 속도를 제약하는 요인으로 작용할 수 있다.",
+            "en": "CATL and BYD are rapidly expanding market share across EV and ESS segments with low-cost LFP batteries, placing structural downward pressure on Samsung SDI's premium positioning and margins. In solid-state batteries, a Chinese OEM-affiliated battery company has announced a 2026 year-end mass production target, potentially eroding the first-mover advantage that Samsung SDI's 2027 timeline is expected to generate. Market observers have also noted that Samsung SDI's pivot to LFP and ESS diversification lagged CATL and LG Energy Solution, a timing gap that may constrain the pace of mid-cycle market share recovery."
+          }
+        },
+        {
+          "title": {
+            "ko": "북미 JV 부진과 유럽·미국 전기차 수요 회복 지연",
+            "en": "North America JV Underperformance and Delayed EV Demand Recovery in Key Markets"
+          },
+          "body": {
+            "ko": "스텔란티스와 합작한 스타플러스 에너지는 2024년 4분기 가동 개시 이후에도 전기차 수요 급감으로 누적 손실을 기록 중이며, 북미 EV 시장의 회복 속도가 당초 기대를 하회하고 있다. 헝가리 공장 역시 수요 부진으로 가동률이 여전히 낮은 수준이며, 신규 프로젝트 양산이 예정대로 진행되더라도 고정비를 흡수하며 수익 기여가 가시화되기까지는 시간이 필요하다. 유럽의 CO2 배출 규제 완화 기조는 일부 OEM의 전기차 전환 속도를 늦추는 요인으로 작용했으며, 미국 IRA 보조금 정책의 불확실성도 북미 전기차용 배터리 수요의 변동성을 키우는 리스크다.",
+            "en": "StarPlus Energy, the Stellantis joint venture, has accumulated losses since its Q4 2024 ramp, reflecting weaker-than-expected North American EV demand. The Hungary plant also continues to operate at sub-optimal utilization; even as new project ramps are scheduled from Q2 2026, realizing visible revenue and margin contribution while absorbing fixed costs will take time. Europe's easing CO2 regulation stance has been a partial headwind for OEM EV transition pace, while ongoing uncertainty around US IRA subsidy policy amplifies the volatility of North American EV battery demand."
+          }
+        }
+      ],
+      "risks": [
+        {
+          "cat": {
+            "ko": "무역·보조금 정책 리스크",
+            "en": "Trade & Subsidy Policy Risk"
+          },
+          "body": {
+            "ko": "미국 IRA AMPC(첨단제조생산세액공제)는 삼성SDI의 ESS 수익성 개선의 핵심 기반이나, 미국 정권 교체 및 무역 정책 변화에 따른 축소·폐지 가능성은 중기 이익 전망에 직접적 하방 리스크다. 미국의 '금지외국기관(PFE) 규정'은 배터리 소재 공급망 재편을 강제하며 선제 대응 비용을 단기 수익성에 부담으로 전가할 수 있다. 유럽의 CO2 규제 완화 기조와 각국 보조금 정책의 변동성은 전기차 배터리 수요 예측을 어렵게 하는 구조적 불확실성으로 남아 있다.",
+            "en": "The US IRA AMPC subsidy is central to Samsung SDI's ESS profitability improvement trajectory, yet policy reversals under changing US administrations represent a direct downside risk to medium-term earnings. The US Prohibited Foreign Entity (PFE) framework compels supply chain reorganization and imposes near-term transition costs. Europe's CO2 regulation easing tendency and country-level subsidy policy volatility create structural uncertainty around EV battery demand forecasting."
+          }
+        },
+        {
+          "cat": {
+            "ko": "기술·실행 리스크",
+            "en": "Technology & Execution Risk"
+          },
+          "body": {
+            "ko": "전고체 배터리는 황화물계 고체 전해질 소재 비용이 액체 전해질 대비 50~60배 높아 초기 양산 단가가 매우 높으며, 수율 안정화·장기 내구 검증 등 복수의 기술적 관문이 남아 있다. 2027년 하반기 양산 목표 달성 이후에도 규모의 경제 확보까지는 추가 시간이 소요되며, 중국 업체들의 공격적 일정 제시는 기술 우위 기간을 단축할 위험이 있다. 탭리스 공법 도입·LFP 라인 전환 등 기존 설비 개조 과정에서의 일시적 생산 차질 및 비용 증가 가능성도 실행 리스크로 고려해야 한다.",
+            "en": "Solid-state batteries face steep near-term economics: sulfide-based solid electrolyte materials cost 50–60x more than liquid electrolytes, and yield stabilization and long-term durability validation remain uncleared technical hurdles. Even if the H2 2027 mass production target is met, achieving economies of scale requires additional time, and aggressive commercialization announcements from Chinese startups may shorten the window of technical advantage. Production line conversions to tabless architecture and LFP chemistry also carry risk of temporary output disruptions and incremental costs."
+          }
+        },
+        {
+          "cat": {
+            "ko": "거시경제·원자재 리스크",
+            "en": "Macro & Raw Material Risk"
+          },
+          "body": {
+            "ko": "전기차 캐즘의 장기화는 헝가리·북미 공장의 가동률 정상화를 지연시켜 고정비 부담을 장기화하고, 배터리 사업의 흑자 전환 시점을 뒤로 미룰 수 있는 최대 구조적 위협이다. 리튬·코발트·니켈 등 핵심 원자재 가격의 변동성은 원가 구조에 직접 영향을 미치며, 특히 리튬 가격의 재차 하락은 소재 재고 평가 손실을 유발할 수 있다. 글로벌 경기 둔화 시 AI 데이터센터 투자 속도 조절이 ESS·BBU 수요 성장세를 제약하는 하방 시나리오로 작용할 수 있으며, 지정학적 긴장 고조도 원자재 공급망과 수요 불확실성을 키우는 요소다.",
+            "en": "A prolonged EV demand trough remains the single most significant structural threat, keeping Hungary and North American plants underutilized and perpetuating fixed-cost drag that postpones the earnings turnaround timeline. Volatility in key raw material prices — lithium, cobalt, nickel — directly impacts cost structure, and a renewed lithium price decline could trigger inventory valuation losses. A global economic slowdown leading to moderation in AI data center capital expenditure represents a downside scenario for ESS and BBU demand growth, while escalating geopolitical tensions add uncertainty to both supply chains and end-market demand."
+          }
+        }
+      ],
+      "verdict": {
+        "stance": {
+          "ko": "신중",
+          "en": "Cautious"
+        },
+        "body": {
+          "ko": "삼성SDI는 2025년 연간 영업손실 1조 7,224억원이라는 혹독한 조정을 거친 뒤, 2026년 1분기 64.2%의 손실 폭 축소와 당기순이익 흑자 전환으로 실적 저점 탈출의 유의미한 신호를 제시했다. ESS·AI 데이터센터 수요의 구조적 성장, 세계 유일의 비중국계 각형 배터리 제조사로서의 AMPC 수혜 확대, 독일 프리미엄 3사 고객 기반의 완성, 전고체 배터리 업계 선두 일정은 중장기 긍정적 요소로 유효하다. 그러나 6분기 연속 영업적자가 이어지고 있고, AMPC 제외 시 자생적 수익성 기반이 여전히 취약하며, 하반기 분기 흑자 전환 달성이 복수의 실행 조건에 달려 있다는 점에서 현재 밸류에이션 수준에서의 신중한 접근이 요구된다. 중국 배터리 업체의 LFP·전고체 공세와 북미 전기차 수요 회복 지연, 미국 무역 정책 불확실성은 실적 개선 경로를 복잡하게 만드는 외부 변수로 상존한다. 향후 핵심 모니터링 지표로는 ① 2026년 3·4분기 분기 흑자 전환 여부, ② 2분기 헝가리 공장 유럽 볼륨 모델 양산 정상화 진행 상황, ③ AMPC 수혜액 확대 추이, ④ 전고체 배터리 개발 마일스톤 달성 여부를 제시한다.",
+          "en": "Following the harsh 2025 reset — an operating loss of KRW 1.72 trillion — Samsung SDI's Q1 2026 results, featuring a 64.2% year-on-year loss reduction and a return to net income, provide meaningful evidence that the earnings trough has passed. Structural growth in ESS and AI data center demand, expanding AMPC benefits uniquely available to the world's only non-Chinese prismatic battery maker, a completed German premium OEM customer trifecta, and an industry-leading solid-state battery timeline are constructive long-term factors. However, six consecutive quarters of operating losses, fragile self-sustaining profitability ex-AMPC, and a quarterly profit target contingent on multiple simultaneous execution milestones warrant a cautious stance at current valuation levels. Chinese LFP and solid-state competition, lingering North American EV demand weakness, and US trade policy uncertainty remain persistent complexities in the improvement path. Key monitoring metrics going forward include: ① whether a quarterly operating profit materializes in Q3 or Q4 2026; ② normalization of Hungary plant European volume-model production ramps from Q2; ③ the trajectory of AMPC benefit expansion; and ④ solid-state battery development milestone delivery."
+        }
+      },
+      "sources": [
+        "https://www.samsungsdi.co.kr/sdi-now/sdi-news/4887.html",
+        "https://www.samsungsdi.co.kr/sdi-now/sdi-news/4701.html",
+        "https://www.thelec.kr/news/articleView.html?idxno=55771",
+        "https://www.bloter.net/news/articleView.html?idxno=660732",
+        "https://www.ajunews.com/view/20260428085339805",
+        "https://www.huffingtonpost.kr/article/256876",
+        "https://news.nate.com/view/20260506n03694",
+        "https://news.nate.com/view/20260508n25384",
+        "https://www.fetv.co.kr/news/articleView.html?idxno=301627",
+        "https://www.batterynews.co.kr/news/articleView.html?idxno=685",
+        "https://www.g-enews.com/article/Global-Biz/2026/04/202604172303406502bd56fbc3c_1",
+        "https://www.businesspost.co.kr/BP?command=article_view&num=427112",
+        "https://www.samsungsdi.co.kr/sdi-now/sdi-news/4761.html",
+        "https://www.joongangenews.com/news/articleView.html?idxno=523257"
+      ],
       "ticker": "006400",
       "name": "삼성SDI",
       "name_en": "SAMSUNG SDI CO.,LTD",

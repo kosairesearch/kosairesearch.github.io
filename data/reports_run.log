@@ -1,6 +1,40 @@
-=== 리포트 생성 시작 Wed Jun  3 15:22:01 UTC 2026 ===
-## 🤖 AI 리포트 생성 — 지정 0개 종목
+=== 리포트 생성 시작 Wed Jun  3 15:35:30 UTC 2026 ===
+## 🤖 AI 리포트 생성 — 지정 4개 종목
 - 모델: `claude-sonnet-4-6`
 - 기존 리포트 20개 로드 · 최근(6일내) 20개 유지
 
-✅ 현재 리포트 20개 보유 · 이번 실행 웹검색 0회 · → data/reports.js
+### [1/4] 두산에너빌리티 (034020)
+{'status': '013', 'message': '조회된 데이타가 없습니다.'}
+
+{'status': '013', 'message': '조회된 데이타가 없습니다.'}
+
+- DART 재무: 확보
+- ✅ 완료 (464s · 검색 4회)
+
+### [2/4] LG전자 (066570)
+{'status': '013', 'message': '조회된 데이타가 없습니다.'}
+
+{'status': '013', 'message': '조회된 데이타가 없습니다.'}
+
+- DART 재무: 확보
+- ⚠️ 시도 실패: RemoteProtocolError: peer closed connection without sending complete message body (incomplete chunked read)
+- ⚠️ 시도 실패: RemoteProtocolError: peer closed connection without sending complete message body (incomplete chunked read)
+- ❌ LG전자 리포트 생성 실패 — 건너뜀
+
+### [3/4] 삼성SDI (006400)
+{'status': '013', 'message': '조회된 데이타가 없습니다.'}
+
+{'status': '013', 'message': '조회된 데이타가 없습니다.'}
+
+- DART 재무: 확보
+- ✅ 완료 (475s · 검색 4회)
+
+### [4/4] 삼성바이오로직스 (207940)
+{'status': '013', 'message': '조회된 데이타가 없습니다.'}
+
+{'status': '013', 'message': '조회된 데이타가 없습니다.'}
+
+- DART 재무: 확보
+- ✅ 완료 (306s · 검색 4회)
+
+✅ 현재 리포트 20개 보유 · 이번 실행 웹검색 12회 · → data/reports.js
