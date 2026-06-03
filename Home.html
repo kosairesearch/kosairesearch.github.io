@@ -283,7 +283,7 @@ section.block{padding:36px 0}
   letter-spacing:.06em;text-transform:uppercase;color:var(--fg-3)}
 .kos-ai__label svg{width:12px;height:12px}
 .kos-ai p{margin:0;font:400 13px/1.55 var(--font-sans);color:var(--fg-2);text-wrap:pretty}
-.kos-ai .kos-rep-title{font:650 15.5px/1.4 var(--font-sans);color:var(--fg-1);letter-spacing:-.01em;text-wrap:balance}
+.kos-rep-title{margin:-2px 0 2px;font:650 16px/1.38 var(--font-sans);color:var(--fg-1);letter-spacing:-.015em;text-wrap:balance;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden}
 
 .kos-card__foot{display:flex;justify-content:space-between;align-items:center;
   font:500 12px var(--font-mono);color:var(--fg-3);margin-top:auto}
@@ -779,6 +779,7 @@ KOS.stockCard = (d) => {
       <span class="kos-sector">${KOS.T(d.sector)}</span>
     </div>
     <h3 class="kos-card__name">${KOS.T(d.name)}</h3>
+    ${_title ? `<p class="kos-rep-title">${_title}</p>` : ''}
     <div class="kos-price-row">
       <span class="kos-price">${KOS.won(d.price)}</span>
       <span class="kos-change ${dir}"><span class="arw">${arw}</span>${KOS.pct(d.change)}</span>
@@ -787,9 +788,6 @@ KOS.stockCard = (d) => {
       <div class="kos-metric"><span class="k">${KOS.T('시가총액')}</span><span class="v">${KOS.mcap(d.mcap)}</span></div>
       <div class="kos-metric"><span class="k">${KOS.T('거래대금')}</span><span class="v">${KOS.amt(d.trading_value)}</span></div>
       <div class="kos-metric"><span class="k">${KOS.T('거래량')}</span><span class="v">${KOS.vol(d.volume)}</span></div>
-    </div>
-    <div class="kos-ai">
-      <p class="kos-rep-title">${_title}</p>
     </div>
     <div class="kos-card__foot">
       <span>${d.reportDate || d.date || ''}</span>
