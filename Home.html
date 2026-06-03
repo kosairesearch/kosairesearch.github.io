@@ -292,15 +292,13 @@ section.block{padding:36px 0}
 /* ============================================================
    Industry movers
    ============================================================ */
-.tabs{display:flex;gap:8px;overflow-x:auto;padding-bottom:4px;margin-bottom:18px;
-  scrollbar-width:none;
-  -webkit-mask:linear-gradient(to right,#000 calc(100% - 28px),transparent);
-  mask:linear-gradient(to right,#000 calc(100% - 28px),transparent)}
+.tabs{display:flex;flex-wrap:wrap;gap:8px;margin-bottom:18px}
 .tabs::-webkit-scrollbar{display:none}
 .tab{font:500 14px var(--font-sans);color:var(--fg-2);background:rgba(255,255,255,.55);
   border:1px solid rgba(255,255,255,.5);padding:8px 15px;border-radius:var(--pill);
   cursor:pointer;white-space:nowrap;transition:background .15s,color .15s,transform .12s;box-shadow:var(--shadow-1)}
 .tab:hover{transform:translateY(-1px);color:var(--fg-1)}
+.tab-more{border-style:dashed;color:var(--fg-3);box-shadow:none}
 :root[data-theme="dark"] .tab{background:rgba(255,255,255,.07);border-color:rgba(255,255,255,.12)}
 .tab.active{background:#000;color:#fff;border-color:#000}
 :root[data-theme="dark"] .tab.active{background:#fff;color:#000;border-color:#fff}
@@ -886,8 +884,17 @@ renderReports();
 const tabsEl = document.getElementById('tabs');
 const moverRow = document.getElementById('moverRow');
 let activeTab = '전체';
-tabsEl.innerHTML = TAB_SECTORS.map(s =>
-  `<button class="tab${s===activeTab?' active':''}" data-sector="${s}">${KOS.T(s)}</button>`).join('');
+const TAB_LIMIT = 10;
+let tabsExpanded = false;
+function renderTabs(){
+  const shown = tabsExpanded ? TAB_SECTORS : TAB_SECTORS.slice(0, TAB_LIMIT);
+  let html = shown.map(s=>`<button class="tab${s===activeTab?' active':''}" data-sector="${s}">${KOS.T(s)}</button>`).join('');
+  if(TAB_SECTORS.length > TAB_LIMIT){
+    html += `<button class="tab tab-more" data-more="1">${tabsExpanded ? KOS.T('접기') : '+'+(TAB_SECTORS.length-TAB_LIMIT)+' '+KOS.T('더보기')}</button>`;
+  }
+  tabsEl.innerHTML = html;
+}
+renderTabs();
 function renderMovers(){
   const list = (activeTab==='전체' ? MOVERS : MOVERS.filter(m=>m.sector===activeTab)).slice(0,12);
   moverRow.innerHTML = list.length
@@ -897,8 +904,9 @@ function renderMovers(){
 renderMovers();
 tabsEl.addEventListener('click', e=>{
   const b = e.target.closest('.tab'); if(!b) return;
+  if(b.dataset.more){ tabsExpanded=!tabsExpanded; renderTabs(); return; }
   activeTab = b.dataset.sector;
-  [...tabsEl.children].forEach(c=>c.classList.toggle('active', c===b));
+  renderTabs();
   renderMovers();
 });
 
@@ -1040,6 +1048,7 @@ themeBtn.addEventListener('click', ()=>applyTheme(root.getAttribute('data-theme'
 
 /* ---- i18n: Home dictionary + dynamic re-render ---- */
 const HOME_DICT = {
+  "더보기":"More","접기":"Less",
   "매일 업데이트 · 코스피 · 코스닥":"Updated daily · KOSPI · KOSDAQ",
   "한국 상장사,":"Korean equities,",
   "AI 리서치":"AI research",
@@ -1072,7 +1081,7 @@ const HOME_DICT = {
 };
 if(window.KOSi18n){
   KOSi18n.register(HOME_DICT, function(){
-    tabsEl.innerHTML = TAB_SECTORS.map(s => `<button class="tab${s===activeTab?' active':''}" data-sector="${s}">${KOS.T(s)}</button>`).join('');
+    renderTabs();
     renderReports(input.value);
     renderMovers();
     if(input.value.trim()) renderAC();
