@@ -1,6 +1,6 @@
 // KOS ai — AI 리서치 리포트 (자동 생성). 직접 수정하지 마세요.
 window.KOS_REPORTS = {
-  "lastUpdated": "2026-06-03 16:51",
+  "lastUpdated": "2026-06-03 17:06",
   "model": "claude-sonnet-4-6",
   "reports": {
     "005930": {
@@ -183,132 +183,140 @@ window.KOS_REPORTS = {
     },
     "000660": {
       "lead": {
-        "ko": "AI 메모리 슈퍼사이클의 절대 수혜자 SK하이닉스는 HBM 시장 과점적 지위를 바탕으로 2026년 1분기 분기 영업이익률 72%라는 전례 없는 수익성을 기록하며 실적 신기록 행진을 이어가고 있다.",
-        "en": "As the paramount beneficiary of the AI memory supercycle, SK Hynix has delivered an unprecedented quarterly operating margin of 72% in Q1 2026, underscored by its oligopolistic position in the HBM market and a streak of all-time financial records."
+        "ko": "AI 메모리 슈퍼사이클의 최대 수혜자로서 SK하이닉스는 2026년 1분기 영업이익률 72%·분기 매출 52.6조원으로 창사 이래 최고 수익성을 달성하였으며, HBM 과점 지위와 범용 D램·낸드 전방위 동반 성장이 맞물리며 중기 이익 확장 궤도에 진입한 상태다.",
+        "en": "As the foremost beneficiary of the AI-driven memory supercycle, SK Hynix posted a record 72% operating margin and KRW 52.6T in quarterly revenue in Q1 2026 — the highest in company history — underpinned by dominant HBM market share and a synchronized recovery across commodity DRAM and NAND, placing the company on a sustained medium-cycle earnings expansion trajectory."
       },
       "desc": {
-        "ko": "SK하이닉스(000660)는 HBM3E를 중심으로 엔비디아 AI 가속기 공급망 내 압도적 지위를 확보하고 있으며, 2026년 1분기 매출 52조6000억 원·영업이익 37조6000억 원으로 한국 기업 사상 최대 분기 실적을 경신했다. HBM4 세대 전환기 및 대규모 CAPEX 사이클 진입을 앞두고 기술 리더십의 지속 여부와 공급망 집중 리스크가 핵심 모니터링 포인트로 부상하고 있다.",
-        "en": "SK Hynix (000660) holds a commanding position in NVIDIA's AI accelerator supply chain through HBM3E, posting Q1 2026 revenue of KRW 52.6 trillion and operating profit of KRW 37.6 trillion—the largest quarterly results in Korean corporate history. With the HBM4 generational transition and an unprecedented CAPEX expansion cycle underway, the durability of its technology leadership and supply-chain concentration risk are the foremost variables to monitor."
+        "ko": "본 리포트는 SK하이닉스(코스피 000660)의 DART 공시 확정 재무, 2026년 1분기 실적 컨퍼런스콜, 국내외 증권사 리서치 및 업계 뉴스를 종합하여 사업 구조, 최근 실적, 향후 전망, 주요 리스크를 균형 있게 분석한 정보 제공용 리포트입니다. 재무 수치는 DART 공시 원문을 최우선으로 사용하며, 이외 추정치는 확인된 보도 및 증권사 리서치에 한해 인용합니다.",
+        "en": "This report provides a balanced analysis of SK Hynix (KOSPI: 000660), synthesizing DART-filed financial disclosures, Q1 2026 earnings conference call data, domestic and international broker research, and industry news to assess the company's business structure, recent performance, forward outlook, and key risks. Financial figures are sourced primarily from official DART filings; all other estimates are drawn exclusively from verified broker reports and media coverage."
       },
       "keypoints": [
         {
-          "ko": "2026년 1분기 분기 매출 52.6조·영업이익 37.6조·영업이익률 72%: AI 인프라 수요와 D램·낸드 전방위 가격 급등이 겹치며 한국 기업 역사상 최대 분기 실적 달성",
-          "en": "Q1 2026 revenue KRW 52.6T, operating profit KRW 37.6T, OPM 72%: Converging AI infrastructure demand and broad-based DRAM/NAND price surges combined to produce the largest quarterly earnings in South Korean corporate history"
+          "ko": "DART 공시 기준 2026년 1분기 매출 52.6조원(+198.1% YoY), 영업이익 37.6조원(+405.5% YoY), 당기순이익 40.3조원(+397.6% YoY) — 분기 기준 창사 이래 최고 실적, 영업이익률 72%",
+          "en": "Per DART filings, Q1 2026 revenue of KRW 52.6T (+198.1% YoY), operating profit of KRW 37.6T (+405.5% YoY), and net income of KRW 40.3T (+397.6% YoY) — all-time quarterly records with a 72% operating margin"
         },
         {
-          "ko": "HBM3E 시장 과점 지위 유지·HBM4 전환 본격화: 엔비디아 베라 루빈 플랫폼용 SOCAMM2 양산 개시 및 HBM4 품질 검증 순항, UBS는 HBM4 시장 점유율 약 70% 달성 예상",
-          "en": "HBM3E market dominance sustained and HBM4 ramp underway: SOCAMM2 for NVIDIA's Vera Rubin platform in production, HBM4 customer qualification on track—UBS forecasts ~70% HBM4 market share for SK Hynix"
+          "ko": "카운터포인트리서치 기준 HBM 출하량 점유율 60%대 유지(2025년 2분기 62~64%); 골드만삭스는 최소 2026년까지 SK하이닉스가 HBM 전체 시장 50% 이상을 유지할 것으로 분석",
+          "en": "Counterpoint Research data shows SK Hynix commanding 62–64% of global HBM shipments in Q2 2025; Goldman Sachs projects 50%+ HBM market share maintained through at least 2026"
         },
         {
-          "ko": "용인 클러스터 1기 팹 총 31조 원 투자 확정, 역대 최대 CAPEX 집행: 2027년 2월 클린룸 조기 오픈 목표로 중장기 생산 기반을 선점하는 동시에 재무 레버리지 증가에 유의 필요",
-          "en": "Yongin cluster Fab 1 total investment confirmed at KRW 31T with record-high CAPEX: First cleanroom targeted for February 2027 (pulled forward), establishing long-term production capacity while increasing financial leverage"
+          "ko": "HBM 초과 수요 지속 속 범용 D램·낸드까지 사실상 완판 — 에이전틱 AI·온디바이스 AI 확산으로 메모리 전방위 수요 구조적 확대",
+          "en": "Sold-out capacity across HBM, commodity DRAM, and NAND simultaneously — driven by structural demand expansion as AI transitions from training to real-time inference (agentic AI, on-device AI)"
+        },
+        {
+          "ko": "Q1 2026 말 현금성 자산 54.3조원·순현금 35조원 달성; 2025년 배당 2.1조원·자사주 소각 12.2조원에 이어 2026년 추가 주주환원 방안 연내 공표 예정",
+          "en": "KRW 54.3T in liquid assets and net cash of KRW 35T at end of Q1 2026; following KRW 2.1T dividends and KRW 12.2T treasury share cancellations in 2025, enhanced shareholder return framework to be announced within 2026"
+        },
+        {
+          "ko": "2025년 9월 세계 최초 HBM4 양산 체제 구축 완료; UBS는 엔비디아 차세대 루빈 플랫폼 HBM4 공급 중 약 70%를 SK하이닉스가 담당할 것으로 전망",
+          "en": "World's first HBM4 mass production system established in September 2025; UBS estimates SK Hynix will supply approximately 70% of HBM4 for NVIDIA's forthcoming Rubin platform"
         }
       ],
       "business": {
-        "ko": "SK하이닉스는 D램, 낸드플래시, 그리고 인텔 NAND 사업부 인수로 편입된 솔리다임의 eSSD를 주력으로 하는 메모리 반도체 전문 기업으로, 전체 매출은 반도체 단일 사업부에서 100% 창출된다. 사업 구조의 핵심은 D램이며, 특히 AI 가속기에 탑재되는 HBM(고대역폭메모리)이 수익성의 절대적 축을 형성한다. 2025년 기준 D램 출하량에서 HBM이 차지하는 비중은 20%대에 불과하지만, 영업이익 기여도는 전체의 절반을 넘는 것으로 분석된다. 낸드 부문에서는 솔리다임과 협력해 AI 데이터센터용 eSSD 라인업을 강화 중이며, 2026년 1분기에는 CTF 기반 321단 QLC 기술을 적용한 클라이언트 SSD 'PQC21' 공급을 개시했다. 제품 전략은 범용 D램과 낸드 비중을 줄이고 HBM·DDR5·고용량 eSSD 등 고부가가치 AI 메모리에 역량을 집중시키는 '선택과 집중' 기조를 유지하고 있다.",
-        "en": "SK Hynix is a pure-play memory semiconductor company whose entire revenue is generated from a single semiconductor division encompassing DRAM, NAND flash, and enterprise SSDs through its Solidigm subsidiary (acquired from Intel's NAND business). The business is anchored by DRAM, most critically HBM, which serves as the primary profit engine. As of 2025, HBM accounted for roughly 20% of total DRAM bit shipments but contributed more than half of operating profit, reflecting its substantially higher ASP and margin profile. On the NAND side, SK Hynix leverages Solidigm's expertise to strengthen its AI datacenter eSSD lineup; Q1 2026 saw the launch of 'PQC21,' a client SSD built on 321-layer QLC technology. The company's overarching product strategy remains one of disciplined focus—reducing legacy commodity DRAM and NAND exposure while concentrating resources on high-value AI memory products such as HBM, DDR5 high-capacity server modules, and enterprise SSDs."
+        "ko": "SK하이닉스는 1983년 현대전자로 설립되어 2012년 SK그룹에 편입된 글로벌 2위 메모리 반도체 기업으로, 2026년 6월 기준 시가총액 1,718조원으로 코스피 최상위권을 차지하고 있다. 사업은 크게 D램과 낸드플래시로 대분되며, D램이 매출의 약 75~80%를 차지하고 나머지는 낸드와 시스템반도체(CIS), 파운드리(키파운드리)로 구성된다. D램 내에서는 AI 가속기 핵심 부품인 HBM(고대역폭메모리)이 빠르게 비중을 높이고 있으며, 업계 추정에 따르면 2025~2026년 HBM이 D램 전체 영업이익의 37~43%를 차지하고 2027년에는 50%까지 확대될 전망이다. 낸드플래시 부문에서는 2021년 인텔로부터 약 90억 달러에 인수한 솔리다임과의 시너지를 통해 기업용 SSD(eSSD) 경쟁력을 강화하고 있으며, 인수 초기의 누적 순손실에도 불구하고 AI 데이터센터 스토리지 수요 확대와 함께 최근 흑자 전환에 성공했다. 경쟁 구도 측면에서는 삼성전자와 메모리 양강 체제를 형성하고 있으나, HBM 부문에서는 삼성 대비 현저한 기술적·점유율 우위를 보유하고 있다. 카운터포인트리서치에 따르면 SK하이닉스의 2025년 2분기 HBM 출하량 점유율은 62~64%로 압도적 1위이며, 매출 기준으로도 57%를 기록하고 있다. 3위 마이크론도 추격 중이나, 현세대 HBM3E에서의 기술 격차와 양산 경험 차이는 단기간에 좁히기 어렵다는 평가가 지배적이다. 핵심 생산 기반은 이천·청주·용인이며, 청주 M15X 팹 증설과 용인 반도체 클러스터(중장기 600조원 투자 계획)를 통해 급증하는 AI 수요에 대응하고 있다. 공정 기술 면에서도 세계 최초 10나노급 6세대(1c) D램 양산, HBM4 세계 최초 양산 체제 구축, 321단 QLC 낸드 양산 등 전 제품군에 걸친 기술 리더십을 유지하고 있다.",
+        "en": "SK Hynix was founded in 1983 as Hyundai Electronics and incorporated into the SK Group in 2012, making it the world's second-largest memory semiconductor company and one of the largest KOSPI constituents by market capitalization (KRW 1,718T as of June 2026). The business is broadly divided into DRAM and NAND Flash, with DRAM accounting for approximately 75–80% of revenue, the balance comprised of NAND, image sensors (CIS), and foundry (Key Foundry). Within DRAM, HBM — the critical component for AI accelerators — is rapidly expanding its profit contribution; industry estimates suggest HBM accounted for 37–43% of total DRAM operating profit in 2025–2026 and is expected to reach 50% by 2027. In the NAND segment, the company is leveraging its approximately $9 billion acquisition of Solidigm (formerly Intel's NAND division, 2021) to strengthen its enterprise SSD (eSSD) franchise; despite initial cumulative losses, the unit has returned to profitability as AI data-center storage demand accelerates. The competitive landscape features a duopoly with Samsung Electronics, though SK Hynix holds a decisive lead in HBM — Counterpoint Research data shows the company commanding 62–64% of global HBM shipments and 57% of revenue-based share in Q2–Q3 2025. Micron is a distant third, and the prevailing view is that the technology and yield gap in the current HBM3E generation is too wide to close quickly. Core production facilities are located in Icheon, Cheongju (M15X expansion underway), and Yongin (long-term KRW 600T cluster investment planned). SK Hynix also maintains process technology leadership across its entire product portfolio, having achieved the world's first mass production of 1c-nano (6th-gen 10nm-class) DRAM, world's first HBM4 mass production capability, and 321-layer QLC NAND manufacturing."
       },
       "recent": {
-        "ko": "SK하이닉스는 2026년 1분기 연결 기준 매출 52조5763억 원, 영업이익 37조6103억 원을 기록했다고 4월 23일 공시했으며, 전년 동기 대비 각각 198%, 405% 급증한 수치다. 통상 비수기인 1분기임에도 AI 인프라 투자 확대로 D램 ASP가 전분기 대비 60% 중반, 낸드 ASP가 70% 중반 급등하며 분기 기준 사상 최초로 매출 50조 원 벽을 돌파했다. 영업이익률 72%는 TSMC(47%)와 엔비디아(60%)를 상회하는 이례적 수치다. 2025년 연간으로는 매출 97조1000억 원, 영업이익 47조2000억 원(이익률 49%), 순이익 42조9000억 원으로 세 지표 모두 역대 최고치를 경신했다. 재무구조도 빠르게 개선되어 2026년 1분기 말 기준 현금성 자산 54조3000억 원, 차입금 19조3000억 원으로 35조 원의 순현금을 달성했다. 주가는 2026년 5월 이후 강세를 이어가며, 6월 2일 기준 2,363,000원을 기록 중이다. 증권가 컨센서스 목표주가는 평균 2,294,400원이며, 신한투자증권·미래에셋증권 등 일부 증권사는 3,800,000원의 공격적 목표가를 제시하고 있다. 다음 실적 발표는 2026년 7월 29일 예정이다.",
-        "en": "On April 23, 2026, SK Hynix reported Q1 2026 consolidated revenue of KRW 52.58 trillion and operating profit of KRW 37.61 trillion, surging 198% and 405% year-on-year, respectively. Despite the typically slow Q1 season, DRAM ASP rose roughly 60% and NAND ASP rose roughly 70% quarter-on-quarter, driven by persistent AI infrastructure demand, pushing quarterly revenue past the KRW 50 trillion mark for the first time in company history. The 72% operating margin surpassed those of both TSMC (47%) and NVIDIA (60%). For full-year 2025, SK Hynix posted record revenue of KRW 97.1 trillion, operating profit of KRW 47.2 trillion (49% margin), and net income of KRW 42.9 trillion. The balance sheet has strengthened markedly: as of end-Q1 2026, cash and cash equivalents stood at KRW 54.3 trillion against total borrowings of KRW 19.3 trillion, yielding a net cash position of approximately KRW 35 trillion. The stock has trended strongly higher since early May 2026, trading at KRW 2,363,000 as of June 2, 2026 (+1.29% on the day). The consensus analyst target price averages KRW 2,294,400, while aggressive estimates from certain brokerages reach KRW 3,800,000. The next earnings release is scheduled for July 29, 2026."
+        "ko": "DART 공시 기준 SK하이닉스는 2025년 연간 매출액 97.1조원(전기대비 +46.8%), 영업이익 47.2조원(+101.2%), 당기순이익 42.9조원(+116.9%)을 기록하며 창사 이래 최대 연간 실적을 달성했다. 이에 이어 2026년 1분기에는 매출액 52.6조원(전기대비 +198.1%), 영업이익 37.6조원(+405.5%), 당기순이익 40.3조원(+397.6%)을 기록하며 분기 기준 매출이 사상 처음으로 50조원을 돌파했다. 영업이익률은 72%로 엔비디아·TSMC를 상회하는 하드웨어 제조업 최고 수준이며, 매출·영업이익 모두 시장 컨센서스를 웃돌았다. 실적 배경으로는 AI 인프라 투자 확대에 따른 HBM·고용량 서버 D램 모듈·eSSD 등 고부가가치 제품 판매 확대가 꼽힌다. 회사 측은 컨퍼런스콜에서 \"1분기는 계절적 비수기임에도 AI 인프라 투자 확대로 수요 강세가 이어지며 타이트한 공급 환경이 지속됐다\"고 밝혔다. 2025년 연간 기준으로는 D램 부문에서 HBM 매출이 전년 대비 두 배 이상 성장하였으며, 낸드도 321단 QLC 제품 개발 완료와 eSSD 중심 수요 대응으로 연간 기준 최대 매출을 기록했다. 재무 건전성도 크게 개선되어 1분기 말 기준 현금성 자산 54.3조원, 차입금 19.3조원, 순현금 35조원을 달성했다. 주주환원 측면에서는 2025년 총 2.1조원 배당과 12.2조원 규모 자사주 소각을 실행하였으며, 2026년에는 추가 주주환원 방안을 연내 마련·공표할 계획이다. 주가는 강력한 실적과 다수 증권사의 목표주가 대폭 상향이 맞물리며 가파른 상승세를 보여 2026년 6월 3일 기준 2,360,000원, 시가총액 1,718.1조원을 기록 중이다.",
+        "en": "Based on DART-filed figures, SK Hynix reported record full-year 2025 revenue of KRW 97.1T (+46.8% YoY), operating profit of KRW 47.2T (+101.2% YoY), and net income of KRW 42.9T (+116.9% YoY). This was surpassed in Q1 2026, with revenue of KRW 52.6T (+198.1% YoY), operating profit of KRW 37.6T (+405.5% YoY), and net income of KRW 40.3T (+397.6% YoY) — the first time in company history that quarterly revenue exceeded KRW 50 trillion. The Q1 operating margin of 72% surpasses even NVIDIA and TSMC, representing extraordinary pricing power in high-value AI memory products; results beat market consensus on both revenue and operating profit. Management cited sustained demand strength through the seasonal off-season, driven by expanding AI infrastructure investment concentrated in HBM, high-capacity server DRAM modules, and eSSD. For full-year 2025, HBM revenue more than doubled year-over-year within the DRAM segment, while NAND posted its own annual revenue record, supported by 321-layer QLC product development and enterprise SSD demand. The balance sheet has strengthened materially, with KRW 54.3T in cash equivalents, KRW 19.3T in total debt, and net cash of KRW 35T at Q1-end. On capital returns, the company executed KRW 2.1T in dividends and KRW 12.2T in treasury share cancellations in 2025, with a formalized expanded shareholder return framework expected to be announced within 2026. The share price has surged sharply in the wake of record Q1 results and a wave of broker target price upgrades, reaching KRW 2,360,000 on June 3, 2026, for a market capitalization of KRW 1,718.1T."
       },
       "outlook": {
-        "ko": "SK하이닉스는 AI가 대규모 모델 학습에서 실시간 추론(에이전틱 AI) 단계로 진화하면서 HBM·서버 D램·eSSD 전반에 걸친 메모리 수요 기반이 구조적으로 확대될 것으로 전망한다. 2026년 하반기부터 HBM4 공급이 본격화될 예정이며, UBS는 엔비디아 베라 루빈 플랫폼용 HBM4 시장에서도 SK하이닉스의 점유율이 약 70%에 달할 것으로 예상한다. 세계반도체무역통계기구(WSTS)는 2026년 글로벌 반도체 시장이 전년비 25% 이상 성장해 약 9750억 달러에 이를 것으로 전망하며, 메모리 부문은 30%대 성장률로 전체를 상회할 것으로 내다본다. 노무라증권은 메모리 슈퍼사이클이 최소 2027년까지 지속될 것으로 분석했다. 용인 클러스터 1기 팹 클린룸 오픈이 2027년 2월로 앞당겨지며 중장기 생산 기반을 조기 확충 중이다. 다만 일부 기관은 HBM 가격이 경쟁 심화와 생산 능력 확대로 2026년 이후 조정 국면에 들어갈 가능성을 제기하고 있어, 수요 가시성과 공급 규율 유지가 향후 실적의 핵심 변수다.",
-        "en": "SK Hynix anticipates a structural expansion of memory demand across HBM, server DRAM, and eSSD, as AI evolves from large-scale model training to real-time inference in agentic AI environments. HBM4 shipments are expected to ramp meaningfully in H2 2026, with UBS projecting SK Hynix will capture roughly 70% of the HBM4 market for NVIDIA's Vera Rubin platform. WSTS forecasts the global semiconductor market to grow more than 25% year-on-year in 2026 to approximately $975 billion, with memory exceeding the overall growth rate at 30%-plus. Nomura Securities believes the memory supercycle will persist through at least 2027. On the capacity front, SK Hynix has advanced the first cleanroom opening at Yongin Cluster Fab 1 to February 2027, accelerating long-term production capacity ahead of demand. However, some research houses caution that intensifying HBM competition and capacity additions could push prices into a corrective phase beyond 2026, making sustained demand visibility and supply discipline the pivotal swing factors for future earnings trajectory."
+        "ko": "2026년 2분기에 대해 SK하이닉스는 공식 컨퍼런스콜에서 D램 출하량을 전분기 대비 한자리 수 후반 증가, 낸드는 321단 기반 제품과 eSSD 판매 확대로 10% 중반 증가를 예상한다고 밝혔다. 중기적으로는 AI가 대규모 학습에서 에이전틱 AI·온디바이스 AI 등 추론 단계로 전환됨에 따라 HBM뿐 아니라 서버용 DDR5 모듈, 낸드 eSSD 수요까지 광범위하게 확대되는 구조적 성장이 예상된다. WSTS는 2026년 글로벌 반도체 시장이 전년 대비 25% 이상 성장해 약 9,750억 달러에 달하고, 메모리 부문이 30%대 증가세로 전체를 상회할 것으로 전망한다. BofA는 2026년을 '1990년대 호황기와 유사한 슈퍼사이클'로 규정하며 D램 ASP +33%, 낸드 ASP +26%를 예측하고, SK하이닉스를 글로벌 메모리 업계 최대 수혜주(톱픽)로 선정했다. HBM4 전환도 순조로운 편으로, UBS는 엔비디아의 차세대 루빈 플랫폼에서 SK하이닉스가 HBM4 공급의 약 70%를 담당할 것으로 분석하여 기술 세대 간 리더십 연속성이 기대된다. 노무라증권(2026년 4월)은 2026년 영업이익 전망치를 상향하며, LTA(장기공급계약)를 통한 수익성 안정화가 중장기적으로 메모리 산업의 새로운 사업 모델로 정착될 수 있다고 평가했다. 일부 증권사는 하반기 CapEx 급증에 따른 FCF(-)전환 가능성과 AI 설비 투자 모멘텀의 점진적 둔화를 리스크 요인으로 지적하고 있어 균형 있는 모니터링이 필요하다.",
+        "en": "For Q2 2026, management guided for high-single-digit QoQ DRAM shipment growth and mid-teens NAND shipment growth — the latter driven by 321-layer-based products and enterprise SSD expansion — per the company's official earnings conference call. Over the medium term, the structural demand picture remains constructive: as AI evolves from large-scale model training toward real-time inference use cases (agentic AI, on-device AI), demand is expected to broaden well beyond HBM to encompass server DDR5 modules and NAND enterprise SSDs. WSTS projects 2026 global semiconductor market growth of more than 25% to approximately $975 billion, with the memory segment leading at over 30% growth. BofA characterizes 2026 as a 'supercycle reminiscent of the 1990s boom', forecasting 2026 DRAM ASP growth of 33% and NAND ASP growth of 26%, while designating SK Hynix as the top pick in global memory. The HBM4 roadmap appears on track, with UBS estimating SK Hynix will supply approximately 70% of HBM4 for NVIDIA's forthcoming Rubin platform, suggesting continuity of technology-generation leadership. Nomura Securities (April 2026) raised its operating profit estimates, noting that long-term supply agreements (LTAs) could solidify as a new, higher-quality business model for the memory industry over the medium term. Some analysts flag second-half free cash flow pressure from rising capex and a potential moderation in AI infrastructure investment momentum as balancing risk factors warranting continued monitoring."
       },
       "bull": [
         {
           "title": {
-            "ko": "HBM 기술 리더십 및 엔비디아 공급망 내 압도적 지위",
-            "en": "Unrivaled HBM Technology Leadership and NVIDIA Supply-Chain Primacy"
+            "ko": "HBM 과점적 지위와 차세대 전환 선점",
+            "en": "Dominant HBM Market Position and First-Mover Advantage in Next-Gen Transition"
           },
           "body": {
-            "ko": "카운터포인트리서치에 따르면 SK하이닉스의 HBM 시장점유율은 2025년 2분기 기준 62%(물량 기준)로 1위를 유지했으며, 2025년 연간 기준으로는 61%를 기록했다. HBM3E에서는 사실상 독점에 가까운 구조가 유지되고 있고, HBM4 세대에서도 엔비디아와의 협력 관계를 바탕으로 선두 유지 가능성이 높다는 분석이 지배적이다. UBS는 2026년 HBM4 시장에서 SK하이닉스가 약 70%의 점유율을 달성할 것으로 예상했으며, 구글 TPU v7 시리즈의 HBM3E 첫 번째 공급사로도 선정될 것으로 분석했다.",
-            "en": "According to Counterpoint Research, SK Hynix commanded a 62% share of global HBM shipments in Q2 2025, maintaining the top position with roughly 61% for the full year. Its near-monopoly position in HBM3E is well entrenched within NVIDIA's supply chain, and the consensus view holds that leadership will carry into the HBM4 generation. UBS projects SK Hynix will achieve approximately 70% market share in the HBM4 segment for NVIDIA's Vera Rubin platform and identified it as the primary HBM3E supplier for Google's TPU v7 series."
+            "ko": "카운터포인트리서치 기준 SK하이닉스의 2025년 HBM 출하량 점유율은 60%대로 압도적 1위이며, 골드만삭스는 최소 2026년까지 전체 HBM 시장 점유율 50% 이상이 지속될 것으로 분석했다. HBM 제품은 고객과의 장기공급계약(LTA) 중심으로 운영되어 가격 변동성이 범용 메모리 대비 낮고, 1c 나노 공정 기반의 원가 경쟁력까지 더해져 중기 이익 안정성이 높다. 2025년 9월 업계 최초로 HBM4 양산 체제를 구축하였으며, UBS는 엔비디아의 차세대 루빈 플랫폼 HBM4 공급의 약 70%를 SK하이닉스가 담당할 것으로 전망하여 기술 세대 간 리더십 연속성이 기대된다. 빅테크 고객(엔비디아, 구글, AWS 등)의 AI 인프라 투자가 구조적으로 확대되는 가운데, 회사 측은 2027년까지 HBM 공급이 수요에 미치지 못하는 초과 수요 상태가 지속될 것으로 전망하고 있다.",
+            "en": "SK Hynix commands over 60% of global HBM shipments (Counterpoint Research, 2025), with Goldman Sachs projecting the company will maintain 50%+ HBM market share through at least 2026. HBM is primarily sold under long-term supply agreements (LTAs) with anchor customers, providing pricing visibility and lower volatility relative to commodity memory; coupled with 1c-nano process cost efficiency, this supports medium-term earnings stability. Having established the world's first HBM4 mass production capability in September 2025, and with UBS estimating approximately 70% supply share for NVIDIA's Rubin-platform HBM4, SK Hynix is well positioned to sustain its technology-generation leadership. Management itself has guided that HBM supply will remain tight relative to demand through at least 2027, as hyperscaler AI infrastructure investment by NVIDIA, Google, and AWS continues to expand structurally."
           }
         },
         {
           "title": {
-            "ko": "AI 메모리 수요의 구조적 성장과 다각화된 제품 포트폴리오",
-            "en": "Structural AI Memory Demand Growth and Diversified Product Portfolio"
+            "ko": "전 포트폴리오 동반 성장: HBM·범용 D램·낸드 트리플 엔진",
+            "en": "Full-Portfolio Momentum: HBM, Commodity DRAM, and NAND All Firing"
           },
           "body": {
-            "ko": "AI가 에이전틱 단계로 진화하면서 HBM뿐만 아니라 서버용 DDR5, 고용량 eSSD까지 수요 기반이 전방위로 확대되고 있다. SK하이닉스는 2026년 1분기 세계 최초로 1cnm LPDDR6 개발을 완료하고, 192GB SOCAMM2 양산을 개시하는 등 제품 혁신을 지속하고 있다. 솔리다임과의 시너지를 통한 eSSD 경쟁력 강화로 'HBM 이후'를 대비한 다층적 성장 동력이 형성되고 있어 실적 변동성 완충 역할을 할 수 있다.",
-            "en": "As AI transitions into agentic inference stages, demand is expanding across the full memory stack—HBM, DDR5 high-capacity server modules, and enterprise SSDs—not just HBM alone. SK Hynix reinforced its product leadership in Q1 2026 by completing the world's first 1c-nm LPDDR6 development and commencing mass production of 192GB SOCAMM2 for NVIDIA's Vera Rubin platform. Synergies with Solidigm in the high-capacity eSSD segment create a multi-layered growth engine that can cushion earnings volatility beyond the HBM cycle."
+            "ko": "2026년 1분기 실적에서는 HBM 주도 성장에 범용 D램과 낸드까지 가세하는 '트리플 엔진' 구조가 확인됐으며, 이는 과거 HBM 단독 성장에 비해 이익의 질이 크게 향상된 것을 의미한다. 범용 D램(서버 DDR5)은 트렌드포스 기준 4월 계약 가격이 예상보다 강세를 보이고 있으며, 에이전틱 AI 확산으로 CPU용 메모리 수요도 확대되고 있다. 낸드 부문에서는 솔리다임 시너지 기반 eSSD 매출이 급증하고 321단 QLC cSSD 'PQC21' 공급이 개시됨에 따라 2025년 상반기까지 지속되던 낸드 영업 적자가 완전히 해소됐다. BofA는 2026년 글로벌 D램 ASP +33%, 낸드 ASP +26%를 전망하며 SK하이닉스의 전 제품군에 걸친 가격·출하량 동반 상승이 이익률 극대화로 이어질 것으로 예상했다.",
+            "en": "Q1 2026 results confirmed a 'triple-engine' structure for the first time in recent memory — HBM, commodity DRAM, and NAND all contributing positively simultaneously — representing a meaningful upgrade in earnings quality relative to prior periods of HBM-only driven results. Server DDR5 contract prices in April were stronger than expected (per TrendForce), and demand for CPU-associated conventional DRAM is expanding as agentic AI proliferates across server architectures. In NAND, eSSD revenue — powered by Solidigm synergies and the launch of the 321-layer QLC cSSD 'PQC21' — has surged, fully reversing the NAND operating losses that persisted through H1 2025. BofA forecasts 2026 global DRAM ASP growth of 33% and NAND ASP growth of 26%, suggesting that simultaneous price and volume gains across SK Hynix's entire product mix will further amplify profitability."
           }
         },
         {
           "title": {
-            "ko": "역대 최강의 재무구조와 주주환원 체계 강화",
-            "en": "Strongest-Ever Balance Sheet and Enhanced Shareholder Return Framework"
+            "ko": "철옹성 재무 체력과 주주환원 확대",
+            "en": "Fortress Balance Sheet and Expanding Shareholder Returns"
           },
           "body": {
-            "ko": "2026년 1분기 말 기준 현금성 자산 54조3000억 원, 차입금 19조3000억 원으로 35조 원의 순현금을 달성했으며, 차입금비율은 12%로 크게 낮아졌다. 영업활동 현금흐름은 26조4000억 원으로 강건한 자금 창출 능력을 입증했다. 회사는 2025년 임금협상에서 영업이익의 10%를 재원으로 하는 초과이익분배금(PS) 상한선을 폐지하는 등 주주환원 체계를 강화했으며, 미국 증권시장 상장(ADR/직접상장)도 연내 추진 중으로 글로벌 투자자 접근성 확대가 기대된다.",
-            "en": "As of end-Q1 2026, SK Hynix held KRW 54.3 trillion in cash and cash equivalents against KRW 19.3 trillion in total borrowings, achieving a net cash position of approximately KRW 35 trillion with a borrowings ratio of just 12%. Operating cash flow of KRW 26.4 trillion for the quarter underscores robust cash generation capability. The company also strengthened its shareholder return framework by removing the cap on its Profit-Sharing (PS) bonus pool—pegged at 10% of operating profit—during the 2025 wage negotiations. Additionally, the company is pursuing a US equity market listing within 2026, which could broaden access for global institutional investors."
+            "ko": "2026년 1분기 말 기준 현금성 자산 54.3조원, 차입금 19.3조원, 순현금 35조원을 달성하며 업계 최고 수준의 재무 건전성을 확보했다. 회사 측은 재무건전성 확보와 주주환원 확대를 충분히 병행할 수 있다고 강조하며, 2025년 총 2.1조원 배당과 12.2조원 자사주 소각에 이어 2026년 자사주 매입·소각을 포함한 추가 주주환원 방안을 연내 공표할 계획임을 밝혔다. 용인 클러스터에 중장기 600조원 규모 투자 계획이 있음에도 현재의 이익 창출 능력은 대규모 CapEx와 주주환원의 동시 병행을 충분히 뒷받침한다는 평가가 지배적이다. 재무 구조의 강화는 업황 하강 국면에서도 경쟁사 대비 유연한 전략적 대응을 가능케 하는 장기적 경쟁 우위 요소이기도 하다.",
+            "en": "SK Hynix had KRW 54.3T in cash and cash equivalents, KRW 19.3T in total debt, and net cash of KRW 35T at the end of Q1 2026, representing industry-leading financial strength. Management has explicitly stated its ability to pursue both financial soundness and enhanced shareholder returns simultaneously, pointing to 2025's KRW 2.1T in dividends and KRW 12.2T in treasury share cancellations, with further details on 2026 shareholder return measures — including buybacks and cancellations — expected to be announced within the year. Despite a long-term KRW 600T Yongin cluster investment plan, analysts broadly agree that current earnings generation capacity is more than sufficient to fund large-scale capex and capital returns concurrently. The fortified balance sheet also affords SK Hynix strategic flexibility during potential industry downturns — a structural competitive advantage over peers with more leveraged capital structures."
           }
         }
       ],
       "bear": [
         {
           "title": {
-            "ko": "HBM4 세대 경쟁 심화와 수익성 정점 논란",
-            "en": "Intensifying HBM4 Competition and Peak-Margin Concerns"
+            "ko": "삼성전자·마이크론의 HBM 추격과 점유율 하락 위험",
+            "en": "HBM Share Erosion Risk from Samsung and Micron"
           },
           "body": {
-            "ko": "HBM3E 시장에서 사실상 독점에 가까운 구조가 HBM4 세대부터 3사 경쟁 체제로 전환될 가능성이 높다. 대신증권은 HBM4 시장에서 SK하이닉스 55%, 삼성전자 28%, 마이크론 17%의 점유율 구도를 제시했다. 삼성전자가 HBM3E 때와 달리 HBM4 조기 참전에 나선다면, SK하이닉스가 HBM3E 단계에서 누렸던 72%의 영업이익률이 중기적으로 압축될 가능성이 있다. 골드만삭스는 HBM 공급 과잉으로 가격이 조정될 수 있다고 경고한 바 있다.",
-            "en": "The near-monopoly HBM3E market structure is likely to evolve into a three-way competitive dynamic from HBM4 onward. Daeshin Securities projects a HBM4 market share split of SK Hynix 55%, Samsung Electronics 28%, and Micron 17%. Should Samsung successfully execute an early entry into HBM4 production—unlike its delayed HBM3E effort—the extraordinary 72% operating margins SK Hynix enjoyed during the HBM3E era could face meaningful compression over the medium term. Goldman Sachs has cautioned that HBM oversupply could lead to price corrections."
+            "ko": "삼성전자는 2025년 3분기 HBM 점유율을 2분기의 17%에서 35%로 급등시키며 단일 분기 최대 상승 폭을 기록했고, HBM4 세대에서의 역전을 위해 1c 나노 기반 칩 개발을 완료한 것으로 알려졌다. 마이크론 역시 선단 공정 역량을 바탕으로 HBM3E 인증을 획득하고 점유율 확대를 추진하고 있다. 경쟁 심화는 중장기적으로 HBM의 고수익 구조를 희석시킬 수 있으며, 특히 HBM4 세대에서 삼성의 수율이 크게 개선될 경우 SK하이닉스의 고객 협상력이 약화될 가능성이 있다. 다만 현재로서는 고성능 HBM 분야의 기술 격차가 여전히 유의미하다는 평가가 지배적으로, 단기 내 시장 구도의 급격한 변화 가능성은 제한적이라는 것이 시장 컨센서스다.",
+            "en": "Samsung rapidly clawed back HBM market share from 17% in Q2 2025 to 35% in Q3 2025 — the largest single-quarter gain on record — and is reported to have completed 1c-nano die development in preparation for an HBM4 generation comeback. Micron has also secured HBM3E qualification and is expanding its share base using its advanced process capabilities. Intensifying competition could erode the premium margin structure of HBM over the medium term, particularly if Samsung achieves competitive HBM4 yields, potentially weakening SK Hynix's customer negotiating leverage. Near-term risk appears limited, however, as most analysts continue to characterize the technology gap in high-performance HBM as meaningful, with the prevailing consensus viewing an abrupt market share reversal as unlikely in the short term."
           }
         },
         {
           "title": {
-            "ko": "엔비디아 단일 고객 집중 리스크",
-            "en": "Single-Customer Concentration Risk Centered on NVIDIA"
+            "ko": "HBM4 세대 전환기 가격 조정 및 수율 리스크",
+            "en": "HBM4 Transition Pricing Pressure and Yield Risk"
           },
           "body": {
-            "ko": "SK하이닉스 사업보고서에 따르면 단일 고객사 매출이 전체의 약 24%를 차지하는 것으로 파악되며, HBM 공급 구조상 상당 부분이 엔비디아로 추정된다. 엔비디아의 AI 가속기 출하 일정 지연, 미국의 대중국 수출 규제 강화에 따른 엔비디아 제품 판매 제한, 또는 빅테크의 자체 ASIC 확대로 인한 엔비디아 의존도 축소가 현실화될 경우 SK하이닉스의 HBM 수요에 직접적 영향을 미칠 수 있다.",
-            "en": "SK Hynix's annual report indicates that a single customer accounts for approximately 24% of total revenue; given the HBM supply structure, this is widely attributed to NVIDIA. Any delay in NVIDIA's AI accelerator shipment schedule, incremental US export controls curbing NVIDIA product sales to China, or an accelerated shift by hyperscalers toward custom ASICs that reduce NVIDIA dependence could directly dampen SK Hynix's HBM demand outlook."
+            "ko": "차세대 HBM4는 D램 공정 기술뿐 아니라 TSV(실리콘관통전극) 패키징, TSMC와의 협업을 통한 어드밴스드 패키징 등 복잡한 기술 요소가 복합적으로 요구되어 초기 수율 압박이 수익성에 영향을 줄 가능성이 있다. 일부 시장조사기관은 경쟁 심화와 생산 능력 확대에 따라 HBM 가격이 2026년 이후 점진적 조정 국면에 진입할 가능성을 제기하고 있다. HBM3E에서 HBM4로의 전환 시점에 초기 비용 부담이 집중될 경우 단기적으로 영업이익률의 일부 하락이 나타날 수 있으며, 이는 현재의 높은 마진 기대를 낮출 수 있다. 긍정적으로는 SK하이닉스가 이미 2025년 9월 세계 최초로 HBM4 양산 체제를 구축하여 경쟁사 대비 선행 우위를 확보하고 있다는 점이 이 리스크를 일부 완충한다.",
+            "en": "HBM4 demands a complex integration of DRAM process technology, through-silicon via (TSV) packaging, and advanced packaging developed in collaboration with TSMC — creating potential for initial yield pressure that could weigh on near-term margins. Some market research firms have raised the possibility of HBM price normalization post-2026 as competition intensifies and production capacity expands industry-wide. The transition from HBM3E to HBM4 could temporarily front-load cost increases, leading to marginal operating margin compression during the transition quarters and potentially tempering the elevated margin expectations currently embedded in consensus estimates. Mitigating this risk is SK Hynix's first-mover advantage, having established the world's first HBM4 mass production capability in September 2025, providing a meaningful lead time over rivals."
           }
         },
         {
           "title": {
-            "ko": "사상 최대 CAPEX 집행에 따른 재무 레버리지 증가",
-            "en": "Rising Financial Leverage from Record-High CAPEX Commitments"
+            "ko": "대규모 CapEx에 따른 FCF 악화 및 밸류에이션 부담",
+            "en": "Heavy Capex Pressuring FCF and Elevated Valuation Premium"
           },
           "body": {
-            "ko": "SK하이닉스는 2026년 CAPEX가 전년 대비 크게 증가할 것이라고 가이던스를 제시했으며, 청주 M15X 램프업, 용인 클러스터(1기 팹 총 31조 원, 장비 비용 별도), 미국 인디애나 패키징 시설(약 5.6조 원, 2028년 가동 목표) 등 복수의 대형 프로젝트가 동시에 진행 중이다. 현재는 강건한 영업 현금흐름으로 투자를 소화할 수 있으나, 메모리 가격이 급격히 조정될 경우 과거 2018~2019년 사이클처럼 대규모 투자 이후 급격한 수익성 저하 구간에 진입할 위험이 있다.",
-            "en": "SK Hynix has guided for a substantial year-on-year increase in 2026 CAPEX, with multiple large-scale projects running concurrently: the Cheongju M15X ramp, the Yongin Cluster Fab 1 (KRW 31 trillion total, equipment costs separate), and the Indiana advanced packaging facility (~KRW 5.6 trillion, targeting 2028 operations). While current operating cash flows are capable of absorbing these outlays, a sharp memory price correction—similar to the 2018-2019 downcycle that followed peak margins—could expose the company to significant profitability deterioration precisely when capital commitments are heaviest."
+            "ko": "2026년 SK하이닉스의 반도체 관련 CapEx는 약 34조원으로 추정되어, 상반기 호실적에도 불구하고 하반기에는 잉여현금흐름(FCF)이 (-)로 전환될 가능성을 일부 증권사(BNK투자증권 등)가 지적하고 있다. 현재 주가(2,360,000원)는 사상 최대 분기 이익을 반영한 후에도 상당한 성장 프리미엄이 내재된 수준으로, 향후 실적 컨센서스 미달 시 주가 조정 폭이 확대될 수 있다. 일부 애널리스트는 메모리 사이클이 가격 상승에서 출하량 증가 중심으로 전환되는 변곡점에서는 주가의 모멘텀 성격이 약화될 수 있음을 경고하고 있다. 아울러 단일종목 레버리지 ETF 상장 이후 수급 쏠림에 따른 단기 변동성 확대 위험도 상존한다.",
+            "en": "SK Hynix's estimated 2026 semiconductor capex of approximately KRW 34T could push second-half free cash flow into negative territory despite the strong first-half performance — a risk flagged by several analysts including BNK Investment Securities. At the current share price of KRW 2,360,000, the stock embeds a significant growth premium even on record Q1 earnings, meaning any consensus shortfall could lead to meaningful price correction. A subset of analysts cautions that the inflection from price-driven to volume-driven memory cycle dynamics may characterize the next phase, potentially diminishing the momentum-driven share price behavior observed over the prior months. Additionally, the recent listing of single-stock leveraged ETFs on SK Hynix could amplify short-term volatility in both directions, adding to near-term price risk."
           }
         }
       ],
       "risks": [
         {
           "cat": {
-            "ko": "지정학·무역 리스크",
-            "en": "Geopolitical & Trade Risk"
+            "ko": "지정학·통상 리스크",
+            "en": "Geopolitical / Trade Policy Risk"
           },
           "body": {
-            "ko": "미중 반도체 갈등이 심화되는 가운데 미국 정부의 대중국 수출 규제 강화로 SK하이닉스 중국 내 팹 장비 수입 허가가 연간 갱신 체제로 전환됐다. 추가 수출 통제 또는 관세 정책 변화는 공급망 운영과 원가 구조에 부정적 영향을 줄 수 있다. 미국 기업인 마이크론은 관세 불확실성 없이 현지 고객사와 협상할 수 있다는 지위상 이점이 있어 상대적 경쟁력 리스크도 존재한다.",
-            "en": "Escalating US-China semiconductor tensions have placed SK Hynix's equipment import licenses for its China fabs under an annual renewal regime. Further export controls or tariff policy shifts could disrupt supply-chain operations and pressure cost structures. Micron, as a US-domiciled company, has a structural advantage in navigating tariff uncertainty with domestic customers, posing a relative competitive risk for SK Hynix in certain market segments."
+            "ko": "미국 트럼프 2기 행정부의 자국 우선주의 기조 하에 한국 반도체 기업에 대한 미국 내 직접 투자 압박이 강화될 경우, 현재 국내 생산기지(이천·청주·용인)에 집중된 CapEx 전략이 차질을 빚을 수 있다. 미국의 대중(對中) 반도체 수출 규제 강화가 확대될 경우 중국향 낸드·D램 매출에 간접적 영향이 미칠 수 있다. 국내 보도에 따르면 일부 증권가에서는 국내 반도체 주가가 실적 모멘텀보다 미국발 정책 뉴스에 더 민감하게 반응하는 '폴리틱스 드리븐(Politics-driven)' 장세가 이어질 수 있다고 경고하며, 이는 실적 이외의 외생 변수가 주가에 미치는 영향이 커졌음을 시사한다. 통상 협상 결과와 양국 정부 차원의 반도체 협력 구조화 여부가 중기 주가 및 실적의 핵심 외생 변수로 부상하고 있다.",
+            "en": "Under the Trump administration's 'America First' policy framework, escalating pressure on Korean semiconductor companies to invest directly in U.S. facilities could disrupt the current capex strategy concentrated in domestic plants (Icheon, Cheongju, Yongin). An expansion of U.S. export controls targeting China-bound semiconductors could also indirectly affect SK Hynix's China-destined NAND and DRAM revenue streams. Domestic analyst reports warn that Korean semiconductor equities may exhibit 'politics-driven' market behavior — reacting more to U.S. policy headlines than to earnings fundamentals — reflecting heightened sensitivity to exogenous variables beyond company-specific performance. The outcome of bilateral trade negotiations and the formalization of semiconductor cooperation frameworks between the U.S. and South Korea represent key exogenous variables for both medium-term share price performance and earnings visibility."
           }
         },
         {
           "cat": {
-            "ko": "메모리 수요 사이클 반전 리스크",
-            "en": "Memory Demand Cycle Reversal Risk"
+            "ko": "반도체 사이클 후반 전환 및 공급 과잉 리스크",
+            "en": "Late-Cycle Transition and Potential Oversupply Risk"
           },
           "body": {
-            "ko": "현재의 슈퍼사이클은 AI 인프라 투자 초기 단계에서 비롯된 측면이 있어, 빅테크의 AI CAPEX 지출이 예상보다 빠르게 둔화될 경우 HBM 및 범용 D램 수요가 신속히 조정될 수 있다. SK하이닉스 자신도 2026년 1분기 컨퍼런스콜에서 현물 시장 가격 하락을 '피크아웃 신호'가 아닌 일시적 현상으로 설명했으나, 수요 가시성이 낮아지는 국면에서 대규모 CAPEX가 과잉 공급으로 전환될 위험은 지속적으로 모니터링이 필요하다.",
-            "en": "The current supercycle has been partly driven by early-stage AI infrastructure build-out, which means any faster-than-expected moderation in Big Tech AI capex spending could trigger a rapid correction in both HBM and commodity DRAM demand. While management characterized recent spot-price softness as temporary in the Q1 2026 earnings call, the risk that massive capacity investments could tip into oversupply during a demand air pocket—as seen in prior memory downturns—warrants ongoing vigilance."
+            "ko": "현재 메모리 시장은 AI 수요가 촉발한 구조적 강세 국면에 있으나, 높아진 가격과 수익성이 업계 전반의 CapEx 확대로 이어지면서 2027년 이후 공급 과잉 전환 가능성이 제기된다. 일부 기관은 장단기 금리차 하락과 AI 설비 투자 모멘텀 둔화를 선행 지표로 들어 사이클 후반 진입 가능성을 경고하고 있다. KV 캐시 압축 등 메모리 효율화 기술의 확산이 절대적인 메모리 수요 성장률을 일부 제한할 수도 있다는 시각도 있다. 다만 SK하이닉스는 AI 서비스 규모 확대가 오히려 메모리 수요 증가를 유발하는 선순환 구조가 지속될 것이라는 반론을 제시하고 있어 실제 영향은 향후 AI 서비스 확산 속도에 달려 있다.",
+            "en": "While the memory market currently benefits from a structurally driven AI demand surge, rising prices and profitability are incentivizing broad industry capacity expansion, raising the possibility of an oversupply transition emerging post-2027. Some institutions cite a flattening/inversion of the yield curve and decelerating AI capex momentum as leading indicators of a potential late-cycle inflection. Memory efficiency technologies — such as KV-cache compression — could also partially limit the pace of absolute memory demand growth, though the net effect on total demand remains debated. Management counters that AI service scale expansion tends to create a virtuous cycle of additional memory demand, but the actual outcome will ultimately depend on the pace and breadth of AI service proliferation."
           }
         },
         {
           "cat": {
-            "ko": "기술 전환 및 경쟁자 추격 리스크",
-            "en": "Technology Transition & Competitive Catch-Up Risk"
+            "ko": "환율 리스크",
+            "en": "Foreign Exchange Risk"
           },
           "body": {
-            "ko": "1cnm 공정 전환과 HBM4 대규모 양산 과정에서 수율 문제나 일정 지연이 발생할 경우, 고객사 공급 약속 이행에 차질이 빚어질 수 있다. 또한 중국 CXMT(창신메모리)가 IPO를 재개하며 D램 생산 능력 확장에 나설 조짐을 보이고 있어, 범용 D램 시장에서의 가격 압박이 중기적으로 높아질 수 있다. HBM4 이후 세대(HBM5 등)에서도 지속적인 R&D 및 패키징 기술 혁신이 선두 유지의 전제 조건이다.",
-            "en": "Yield challenges or schedule slippage during the 1c-nm process transition and HBM4 mass-production ramp could jeopardize customer supply commitments. Additionally, China's CXMT (Changxin Memory Technologies) shows signs of accelerating its DRAM capacity expansion as it approaches an IPO resumption, which could intensify price pressure in the commodity DRAM market over the medium term. Sustained leadership beyond HBM4 into HBM5 and subsequent generations demands continuous R&D investment and advanced packaging innovation—a race in which today's lead affords no permanent guarantee."
+            "ko": "SK하이닉스는 매출의 대부분이 달러 기반으로 발생하는 구조이므로, 원화 강세는 원화 기준 매출 및 영업이익에 직접적인 하방 압력으로 작용한다. 노무라증권은 보고서에서 '원화가 달러 대비 강세를 보일 경우 원화 기준 매출은 분명히 하방 압력을 받을 것'이라고 명시하였다. 글로벌 달러 약세 국면이나 한국 경상수지 흑자 확대 시 원/달러 환율의 하락이 예상 이익 추정치를 하향 조정하는 요인이 될 수 있다. 반면 고환율 지속 시에는 원화 기준 이익이 추정치를 상회할 수 있어, 환율 방향성이 양방향 실적 변수로 작용하는 만큼 환헤지 전략과 환율 가정에 대한 지속적 모니터링이 요구된다.",
+            "en": "The majority of SK Hynix's revenue is denominated in U.S. dollars, making the company's KRW-denominated earnings highly sensitive to won-dollar exchange rate movements. Nomura Securities has explicitly stated that 'KRW-denominated revenue will face clear downward pressure if the won strengthens against the dollar.' A sustained period of USD weakness or an expanding Korean current account surplus could push the USD/KRW rate lower, compressing reported earnings below consensus estimates in KRW terms. Conversely, continued won weakness provides an upside buffer to reported financials; FX direction therefore functions as a bilateral earnings variable, making hedging strategy and exchange rate assumptions key inputs to monitor in ongoing financial modeling."
           }
         }
       ],
@@ -318,32 +326,37 @@ window.KOS_REPORTS = {
           "en": "Constructive"
         },
         "body": {
-          "ko": "SK하이닉스는 HBM 기술 리더십과 엔비디아 공급망 내 핵심적 지위를 바탕으로 2025~2026년 메모리 반도체 업계에서 독보적인 수익성 우위를 구현하고 있다. 2026년 1분기 영업이익률 72%와 35조 원의 순현금 달성은 현재 사이클에서 회사의 위상을 압축적으로 보여준다. AI 인프라 수요의 구조적 성장세가 지속되는 한, HBM4 전환과 수요 다각화를 통한 실적 모멘텀 유지 가능성은 높다고 판단된다. 다만, 현재 주가 수준(2,363,000원)은 상당 부분의 실적 기대와 밸류에이션 프리미엄을 반영하고 있어, HBM4 경쟁 심화에 따른 수익성 압축, 대규모 CAPEX에 따른 자금 부담, 메모리 사이클 반전 가능성, 지정학적 리스크 등 하방 요인을 균형 있게 점검하는 시각이 요구된다. 2026년 2분기 실적(7월 29일 발표 예정)에서 확인할 HBM4 물량 인식 속도, 가격 협상 결과, 그리고 빅테크 AI 인프라 투자의 지속성이 향후 주가 방향성을 가늠하는 핵심 지표가 될 것이다. 본 보고서는 정보 제공 목적으로 작성되었으며, 투자 권유나 매수·매도 추천을 의미하지 않는다.",
-          "en": "SK Hynix commands a singular profitability advantage in the memory semiconductor industry through its HBM technology leadership and entrenched position within NVIDIA's AI accelerator supply chain. A Q1 2026 operating margin of 72% and a net cash position of approximately KRW 35 trillion are hallmarks of the company's current cycle positioning. So long as structural AI infrastructure demand remains intact, the probability that SK Hynix can sustain earnings momentum through HBM4 adoption and portfolio diversification appears high. However, the current share price of KRW 2,363,000 already embeds substantial earnings optimism and a meaningful valuation premium, warranting a balanced assessment of downside risks: margin compression from intensifying HBM4 competition, financial leverage from the record-high CAPEX cycle, potential for a memory-cycle reversal, and geopolitical headwinds. The Q2 2026 earnings release (scheduled July 29, 2026) will be a critical data point—particularly HBM4 volume recognition, realized pricing trends, and visibility into Big Tech AI infrastructure spending—for gauging the next phase of the stock's trajectory. This report is prepared for informational purposes only and does not constitute an investment recommendation or a solicitation to buy or sell securities."
+          "ko": "SK하이닉스는 AI 메모리 수요라는 구조적 성장 동력의 최대 직접 수혜 기업으로서, DART 공시 기준 2025년 연간 및 2026년 1분기 모두 창사 이래 최대 실적을 경신하며 이익 창출력의 질적 도약을 증명했다. 특히 1분기 영업이익률 72%는 하드웨어 제조업 기준 이례적인 수준으로, HBM 과점 지위와 전 포트폴리오 동반 성장 구조가 결합된 결과다. 중기적으로도 HBM3E 수요 지속, HBM4 전환 선점, 에이전틱 AI 확산에 따른 범용 D램·낸드 수요 구조적 확대 등 복수의 성장 동력이 맞물려 있다. 다만 현재 주가는 사상 최대 분기 실적을 반영하며 상당한 프리미엄을 내재하고 있는 바, 미국 통상 정책 불확실성, 삼성·마이크론의 HBM4 추격, 사이클 후반 전환 신호 및 CapEx 과부하에 따른 FCF 압박 등 리스크 요인에 대한 지속적 모니터링이 필요하다. 장기 구조적 관점에서 AI 인프라 확장 추세와 SK하이닉스의 기술·점유율 우위가 여전히 유효하며, 강화된 재무 체력과 주주환원 정책의 병행이 투자 매력을 뒷받침하고 있다는 사실은 변함이 없다.",
+          "en": "SK Hynix stands as the most direct structural beneficiary of AI-driven memory demand, having demonstrated a step-change in earnings quality by posting record annual results in 2025 and record quarterly results in Q1 2026, per DART filings. The 72% Q1 operating margin is exceptional by any hardware manufacturing standard, reflecting the combined power of dominant HBM positioning and synchronized portfolio-wide strength in commodity DRAM and NAND. The medium-term demand picture remains broadly constructive, supported by HBM3E demand continuity, first-mover advantage in HBM4, and structural demand expansion across all memory segments as agentic AI proliferates. However, at current price levels, the stock already prices in a highly optimistic scenario, and investors should carefully monitor risks around U.S. trade policy developments, the pace of Samsung and Micron's HBM4 competitive ramp, late-cycle inflection signals, and second-half FCF pressure from rising capex. From a long-term structural perspective, the company's technology and market share leadership in AI memory remains intact, and the combination of fortress-level balance sheet strength and expanding shareholder return commitments continues to underpin the investment thesis."
         }
       },
       "sources": [
         "https://news.skhynix.co.kr/q1-2026-business-results/",
-        "https://www.greened.kr/news/articleView.html?idxno=339689",
-        "https://www.thelec.kr/news/articleView.html?idxno=55559",
-        "https://newtamsa.org/news/s7RkUo",
+        "https://news.skhynix.co.kr/2025-business-results/",
         "https://news.skhynix.co.kr/2026-market-outlook/",
-        "https://biz.newdaily.co.kr/site/data/html/2026/03/30/2026033000155.html",
-        "https://www.g-enews.com/article/Global-Biz/2026/01/202601011740189328fbbec65dfb_1",
-        "https://news.skhynix.co.kr/fact-04/",
-        "https://m.sedaily.com/amparticle/20012735",
+        "https://www.thelec.kr/news/articleView.html?idxno=55559",
+        "https://news.bizwatch.co.kr/article/market/2026/05/11/0003",
         "https://www.bizhankook.com/bk/article/32208",
-        "https://news.nate.com/view/20260528n08146",
-        "https://www.businesspost.co.kr/BP?command=article_view&num=424960",
-        "https://news.nate.com/view/20260108n35792"
+        "https://korea.counterpointresearch.com/global-dram-and-hbm-market-share-quarterly/",
+        "https://www.fntimes.com/html/view.php?ud=2026011916125554852a735e27af_18",
+        "https://news.nate.com/view/20260513n06365",
+        "https://zdnet.co.kr/view/?no=20251029100832",
+        "https://www.asiae.co.kr/article/2025102909505492166",
+        "https://www.g-enews.com/article/Global-Biz/2026/01/202601201808373567fbbec65dfb_1",
+        "https://www.huffingtonpost.kr/article/256814",
+        "https://alphasquare.co.kr/home/stock-summary?code=000660"
       ],
       "ticker": "000660",
       "name": "SK하이닉스",
       "name_en": "SK hynix Inc.",
       "sector": "반도체",
+      "categories": [
+        "반도체",
+        "인공지능(AI)"
+      ],
       "market": "코스피",
-      "reportDate": "2026-06-02",
-      "dataDate": "20260601"
+      "reportDate": "2026-06-03",
+      "dataDate": "20260602"
     },
     "005380": {
       "lead": {
@@ -520,133 +533,312 @@ window.KOS_REPORTS = {
     },
     "373220": {
       "lead": {
-        "ko": "EV 캐즘 속 2분기 연속 적자에도 불구하고, AI 데이터센터 연계 북미 ESS 대형 수주가 사업 구조 전환의 분수령이 될 가능성이 높다.",
-        "en": "Despite two consecutive quarters of operating losses amid the EV demand slump, landmark North American ESS contracts tied to AI data centers may prove a structural turning point for LG Energy Solution."
+        "ko": "LG에너지솔루션은 2026년 1분기 실적 저점 통과 기대감 속에서 ESS 구조적 성장과 46시리즈 원통형 수주잔고 급증을 중장기 반등 동력으로 삼고 있으나, IRA 정책 불확실성·재무 레버리지 심화·EV 수요 둔화 등 단기 복합 리스크가 상존한다.",
+        "en": "LG Energy Solution is positioning its structural ESS growth and rapidly expanding 46-series cylindrical backlog as the engines of a medium-to-long-term earnings recovery, even as near-term compound risks — IRA policy uncertainty, elevated financial leverage, and sustained EV demand weakness — persist beyond the Q1 2026 earnings trough."
       },
       "desc": {
-        "ko": "본 리포트는 2026년 6월 2일 기준 LG에너지솔루션(373220)의 최신 실적, ESS 사업 전략, 업종 동향 및 리스크 요인을 종합적으로 분석하여 투자자에게 균형 잡힌 시각을 제공하기 위해 작성되었다.",
-        "en": "This report provides a comprehensive analysis of LG Energy Solution's (373220) latest financial results, ESS business strategy, industry trends, and key risk factors as of June 2, 2026, to offer investors a balanced perspective."
+        "ko": "LG에너지솔루션(373220)은 2020년 12월 LG화학에서 물적분할로 출범한 국내 최대 2차전지 제조사로, 코스피에 상장되어 있으며 시가총액은 103.5조원(2026년 6월 3일 기준)이다. 전기차(EV)·에너지저장장치(ESS)·소형전지 세 사업부를 영위하며, DART 확정 기준 2025년 연간 매출 23.7조원·영업이익 1.3조원을 기록하였다. 2026년 1분기에는 북미 EV 수요 약세 지속·ESS 신규 설비 초기 비용 중첩으로 영업손실 2,078억원이 확정됐으나, 회사 측은 1분기를 실적 저점으로 판단하고 ESS 사업 중심의 본격 반등을 예고하고 있다.",
+        "en": "LG Energy Solution (373220) is South Korea's largest lithium-ion battery manufacturer, spun off from LG Chem in December 2020 and listed on the KOSPI with a market capitalization of KRW 103.5 trillion as of June 3, 2026. The company operates across EV batteries, energy storage systems (ESS), and small batteries, posting DART-confirmed FY2025 revenue of KRW 23.7 trillion and operating profit of KRW 1.3 trillion on a consolidated basis. In Q1 2026, overlapping headwinds from continued North American EV demand weakness and early ramp-up costs at new ESS production sites drove a confirmed operating loss of KRW 207.8 billion, though management has characterized Q1 2026 as the earnings trough and signaled an ESS-led recovery ahead."
       },
       "keypoints": [
         {
-          "ko": "2025년 연간 영업이익 1조3,461억 원(YoY +133.9%)으로 국내 배터리 3사 중 유일 흑자 달성 — 단, AMPC 의존도 높아 실질 본업 수익성은 여전히 회복 과제.",
-          "ko_cite": "2025 annual operating profit of KRW 1.3461 trillion (YoY +133.9%), the only domestic battery maker to stay in the black.",
-          "en": "FY2025 operating profit of KRW 1.3461 trillion (+133.9% YoY) made LG ES the only profitable battery company among Korea's Big 3 — though high dependence on AMPC highlights persistent underlying profitability challenges."
+          "ko": "DART 확정 기준 2026년 1분기 영업손실 2,078억원 — IRA 세액공제(AMPC) 1,898억원 제외 시 실질 손실은 3,975억원, 영업이익률 약 -6.1%",
+          "en": "Q1 2026 operating loss of KRW 207.8 billion (DART-confirmed); stripping out IRA AMPC credits of KRW 189.8 billion, the underlying operating loss widens to KRW 397.5 billion, implying an effective operating margin of approximately -6.1%"
         },
         {
-          "ko": "2026년 5월 말 미국 DTE에너지와 6GWh·약 2.4조 원 규모 ESS 공급 계약 체결 — AI 데이터센터(Oracle·OpenAI 연계) 전력 인프라 수요 직접 수혜.",
-          "en": "Late-May 2026 ESS supply agreement with DTE Energy (6GWh, ~KRW 2.4 trillion) directly links LG ES to AI data center power infrastructure demand tied to Oracle and OpenAI."
+          "ko": "ESS 매출 비중 전사 20% 중반까지 확대 — 연내 북미 5개 거점·50GWh 이상 생산능력 확보 목표로 포트폴리오 전환 가속",
+          "en": "ESS revenue share expanded to the mid-20% of total revenue in Q1 2026, with a target of securing 50+ GWh of North American ESS capacity across five production sites by year-end, marking an accelerating portfolio rebalancing"
         },
         {
-          "ko": "2026년 말까지 글로벌 ESS 생산능력을 60GWh 이상(북미 50GWh+)으로 확대 계획 — 중국산 배터리 배제 요건(FEOC) 충족 완료로 AMPC 수령 기반 확고.",
-          "en": "Plans to scale global ESS capacity to 60GWh+ (North America: 50GWh+) by end-2026, with FEOC compliance fully achieved to secure ongoing AMPC eligibility."
+          "ko": "46시리즈 원통형 수주잔고 440GWh 이상 — 1분기 100GWh 이상 신규 수주, 리비안·Chery·유럽 OEM향 출하 개시로 고객 다변화 본격화",
+          "en": "46-series cylindrical battery order backlog surpassed 440 GWh after securing over 100 GWh in new Q1 2026 orders alone, with initial shipments to Rivian, Chery, and European OEMs marking the beginning of meaningful customer diversification"
+        },
+        {
+          "ko": "2026년 5월 미국 DTE에너지와 6GWh·약 2.4조원 ESS 공급계약 체결 — 연중 ESS 신규 수주 90GWh 목표 가시화 신호",
+          "en": "In May 2026, the company signed a 6 GWh ESS supply agreement with U.S. utility DTE Energy valued at approximately KRW 2.4 trillion, signaling tangible progress toward its 2026 target of 90 GWh in new ESS orders"
+        },
+        {
+          "ko": "부채비율 140%(2026년 1분기 기준)로 재무 부담 가중 — 혼다 JV 건물 자산 처분(약 3.7조원)으로 단기 유동성 보강, 모회사 LG화학 오버행도 수급 부담 요인",
+          "en": "Debt ratio elevated to 140% as of Q1 2026; near-term liquidity has been partially bolstered by the disposal of Honda JV building assets for approximately KRW 3.7 trillion, while a potential LG Chem stake sale (79.4% ownership) continues to weigh as an overhang on near-term supply-demand dynamics"
         }
       ],
       "business": {
-        "ko": "LG에너지솔루션은 코스피 시가총액 상위 종목(기준일 약 106.5조 원)으로, EV용 중대형 전지, 소형전지(IT·로봇·모빌리티), ESS(에너지저장장치) 3개 사업부로 구성된다. 지리적으로는 북미(미시간·애리조나·테네시·오하이오 JV·캐나다 넥스트스타 등 5개 거점), 유럽(폴란드), 한국(오창·청주) 등 글로벌 생산 네트워크를 운영한다. 주요 고객사는 GM, 테슬라, 혼다, 현대차그룹, 메르세데스-벤츠 등이며, 2025년 말 기준 원통형 46시리즈 수주 잔고 300GWh 이상, ESS 누적 수주 잔고 140GWh 이상을 확보하고 있다. 2026년 회사는 EV 중심에서 ESS·소형전지 병행 전략으로 포트폴리오 전환을 가속화하며, 올해 ESS 매출 비중을 총매출의 30% 중반 이상으로 끌어올린다는 목표를 제시하였다.",
-        "en": "LG Energy Solution (KOSPI market cap ~KRW 106.5 trillion as of the reference date) operates three business segments: mid-to-large EV batteries, small-format batteries (IT, robotics, mobility), and energy storage systems (ESS). Its global production footprint spans five North American ESS hubs (Michigan Holland/Lansing, Tennessee Ultium Cells, Ohio Honda JV, Canada Nexstar), Poland (Europe), and Korea (Ochang/Cheongju). Key customers include GM, Tesla, Honda, Hyundai Motor Group, and Mercedes-Benz. As of end-2025, cylindrical 46-series backlog exceeded 300GWh, while cumulative ESS backlog surpassed 140GWh. For 2026, the company is accelerating its portfolio pivot toward ESS and small-format batteries, targeting ESS revenues at over 30% of total sales."
+        "ko": "LG에너지솔루션은 자동차(EV) 배터리, 에너지저장장치(ESS), 소형전지 세 개 사업부로 구성된다. 전통적으로 EV 배터리가 전체 매출의 절반 이상을 차지해왔으나, 2026년 들어 ESS 매출 비중이 1분기 기준 전사의 20% 중반 수준으로 빠르게 확대되며 사업 구조의 무게중심 이동이 본격화되고 있다. 소형전지 부문은 원통형 배터리(오창 에너지플랜트의 4695 포함)를 중심으로 분기 2조원 수준의 매출을 유지하는 것으로 파악된다. 제품 형태별로는 파우치형(EV 주력), 원통형(46시리즈 포함), 각형이 혼재하며, 특히 46시리즈는 고에너지 밀도·비용 경쟁력·열적 안정성을 앞세워 테슬라·리비안·BMW 등 주요 글로벌 OEM의 차세대 EV 프로젝트 배터리로 자리매김하고 있다. 생산거점은 국내(오창 에너지플랜트 등), 미국(얼티엄셀즈 GM JV·L-H Battery 혼다 JV·미시간 홀랜드·5개 ESS 거점·연내 가동 예정 애리조나 원통형 신공장), 유럽(폴란드)에 걸쳐 있으며, 2021년 이후 누적 설비투자 규모는 약 58조원 이상에 달한다. 경쟁 구도는 글로벌 1위 CATL과 BYD(중국), 국내 삼성SDI·SK온과의 경쟁이 심화되고 있으나, LG에너지솔루션은 국내 동종 업체 중 북미 현지 생산 거점을 가장 광범위하게 구축해 미국의 탈중국 정책 기조와 IRA AMPC 수혜 측면에서 상대적 우위를 보유한다. KB증권은 2026년 LG에너지솔루션의 ESS 출하량이 EV 출하량을 사상 처음으로 넘어설 것으로 분석하는 등, 사업 구조의 전환이 가속되고 있으며 AI 데이터센터 전력 수요 급증이 ESS 수요를 구조적으로 견인하는 새로운 성장 축으로 부상하고 있다.",
+        "en": "LG Energy Solution operates across three main business segments: automotive (EV) batteries, energy storage systems (ESS), and small batteries. While EV batteries have historically constituted more than half of total revenue, the ESS segment's share has expanded rapidly to roughly the mid-20% range as of Q1 2026, marking a decisive acceleration in portfolio rebalancing. The small battery segment — centered on cylindrical cells including the 4695 format produced at the Ochang Energy Plant — is understood to sustain quarterly revenue in the KRW 2 trillion range. Product types span pouch-type (primarily EV), cylindrical (including the 46-series), and prismatic formats; the 46-series in particular is gaining traction among major global OEMs including Tesla, Rivian, and BMW for next-generation EV programs, owing to its high energy density, cost competitiveness, and thermal stability. The company's production footprint spans South Korea (Ochang Energy Plant, etc.), the United States (Ultium Cells GM JV, L-H Battery Honda JV, Michigan Holland, five North American ESS production sites, and the upcoming Arizona cylindrical plant expected to begin operations by year-end), and Europe (Poland); cumulative capital expenditure since 2021 has reportedly exceeded KRW 58 trillion. The competitive landscape is intensifying against global leaders CATL and BYD from China as well as Korean peers Samsung SDI and SK On; however, LG Energy Solution holds a relative competitive advantage by virtue of its broader North American manufacturing footprint among Korean battery makers, positioning it to capture IRA Advanced Manufacturing Production Credits (AMPC) and benefit from U.S. de-China supply chain policies. KB Securities has analyzed that LG Energy Solution's ESS shipment volumes could surpass EV shipments for the first time in 2026, with surging AI data center electricity demand emerging as a structural new driver for ESS uptake."
       },
       "recent": {
-        "ko": "2025년 연간 매출은 23조6,718억 원(YoY -7.6%), 영업이익은 1조3,461억 원(YoY +133.9%)을 기록하였으며, 삼성SDI·SK온이 각각 1.7조·9,319억 원 영업손실을 낸 가운데 배터리 3사 중 유일하게 흑자를 유지하였다. 그러나 2026년 1분기에는 매출 6조5,550억 원, 영업손실 2,078억 원으로 2분기 연속 적자를 기록하였고, AMPC(첨단제조생산세액공제)가 전년 동기 대비 58.5% 감소한 1,898억 원에 그쳤다. GM 합작법인 얼티엄셀즈 가동 중단과 EV 수요 부진이 실적 부담으로 작용하였으며, 이를 제외한 실질 영업손실은 3,975억 원 규모로 추산된다. 주가는 2026년 5월 27일 DTE에너지와의 약 2.4조 원 ESS 계약 발표 이후 이틀간 급등하며 기준일 455,000원 수준에서 거래되고 있다.",
-        "en": "FY2025 revenues came in at KRW 23.6718 trillion (YoY -7.6%) and operating profit at KRW 1.3461 trillion (YoY +133.9%), making LG ES the sole profit-generating company among Korea's battery Big 3, while Samsung SDI and SK On posted operating losses of KRW 1.7224 trillion and KRW 931.9 billion, respectively. In Q1 2026, however, the company reported revenue of KRW 6.5550 trillion and an operating loss of KRW 207.8 billion — marking two consecutive quarters of deficit — as AMPC benefits shrank 58.5% YoY to KRW 189.8 billion, partly due to Ultium Cells JV production suspensions. The effective operating loss excluding AMPC is estimated at KRW 397.5 billion. The share price surged sharply following the announcement of the ~KRW 2.4 trillion DTE Energy ESS contract in late May 2026, and currently trades around KRW 455,000."
+        "ko": "DART 확정 기준, 2025년 연간 매출액은 23.7조원으로 전년 대비 7.6% 감소했으나 영업이익은 1.3조원으로 134.0% 증가하였다. 다만 이는 2024년 대규모 적자의 낮은 기저 효과가 반영된 수치이며, 당기순이익은 808억원으로 전년 대비 76.1% 감소해 수익성 개선이 제한적임을 보여준다. 분기별로는 2025년 4분기에 영업손실 1,220억원을 기록하며 하반기 흐름이 재차 꺾였고, 2026년 1분기에는 영업손실 2,078억원으로 2개 분기 연속 적자가 확정되었다. 매출액은 6.6조원(전년 동기 대비 -2.5%)으로 3분기 연속 전분기 대비 소폭 증가세를 이어갔으나, 전년 동기 영업이익 3,747억원 대비 적자 전환이 확인되었다. 2026년 1분기 당기순손실은 9,440억원에 달했는데, 이는 얼티엄셀즈(GM JV) 관련 손상차손 등 일회성 영업외비용이 집중 반영된 결과이다. IRA AMPC(1,898억원) 제외 시 실질 영업손실은 3,975억원으로 확대되며, 실질 영업이익률은 약 -6.1%에 달해 현재 수익성 구조의 취약성이 확인된다. 2026년 1분기 말 기준 총자산은 71.8조원, 부채는 41.9조원, 자본은 29.9조원으로 부채비율은 140%에 달하며, 이는 2022년 86% 대비 급격히 확대된 수치다. 주가는 2026년 5월 28일 DTE에너지 ESS 공급계약 발표를 계기로 단 하루에 13.43% 급등하며 ESS 수주 모멘텀에 민감하게 반응하였으며, 2026년 6월 3일 기준 442,500원으로 52주 최고가(527,000원) 대비 약 16% 낮은 수준에서 거래 중이다.",
+        "en": "Based on DART-confirmed consolidated figures, FY2025 revenue was KRW 23.7 trillion, down 7.6% year-on-year, while operating profit recovered to KRW 1.3 trillion (+134.0% YoY), largely reflecting a favorable base effect against 2024's deeply negative earnings; net income fell 76.1% YoY to KRW 80.8 billion, underscoring limited bottom-line improvement. On a quarterly basis, a Q4 2025 operating loss of KRW 122.0 billion broke a brief recovery and extended into Q1 2026, where an operating loss of KRW 207.8 billion was confirmed — representing a sharp deterioration from the year-ago operating profit of KRW 374.7 billion. Revenue of KRW 6.6 trillion in Q1 2026 (-2.5% YoY) extended a third consecutive quarter of modest sequential improvement, driven by ESS and cylindrical battery demand that partially offset North American EV softness. The net loss of KRW 944.0 billion in Q1 2026 was significantly amplified by one-time non-operating charges, most notably impairment losses tied to the Ultium Cells GM joint venture. Stripping out IRA AMPC credits of KRW 189.8 billion, the underlying operating loss expands to KRW 397.5 billion, with an effective operating margin of approximately -6.1%, underscoring the fragility of the current earnings structure. As of Q1 2026 end, total assets stood at KRW 71.8 trillion, total liabilities at KRW 41.9 trillion, and equity at KRW 29.9 trillion, with the debt ratio rising to 140% — a sharp increase from 86% in 2022. The share price surged 13.43% in a single session on May 28, 2026, following the announcement of the DTE Energy 6 GWh ESS supply agreement, reflecting the market's acute sensitivity to ESS order momentum; as of June 3, 2026, the stock trades at KRW 442,500, approximately 16% below the 52-week high of KRW 527,000."
       },
       "outlook": {
-        "ko": "회사는 2026년 연간 매출을 전년 대비 10% 중반~20% 성장 목표로 제시하였으며, ESS 사업이 성장 엔진 역할을 수행할 것으로 전망한다. 신한투자증권은 2026년 ESS 매출이 전년 대비 225% 증가하고 AMPC 연간 기여도가 1조2,000억 원 수준으로 확대될 것으로 내다봤다. NH투자증권은 하반기 ESS 70GWh 이상의 신규 수주 가능성과 ESS 부문 흑자 전환을 주요 촉매로 제시하였고, 다수 증권사는 2026년 2분기를 실적 저점으로 판단하며 하반기부터 점진적 개선을 전망하였다. 중장기적으로는 AI 데이터센터 전력 수요 증가와 재생에너지 확대에 따른 구조적 ESS 수요 성장이 배터리 업종의 밸류에이션 재평가 계기가 될 수 있다는 분석이 제기되고 있다.",
-        "en": "The company targets revenue growth of 15–20% in FY2026, with ESS as the primary growth engine. Shinhan Investment Securities forecasts a 225% YoY increase in ESS revenue, with annual AMPC contributions expanding to approximately KRW 1.2 trillion. NH Investment Securities highlights 70GWh+ of potential ESS orders in H2 2026 and an ESS segment profit turnaround as key catalysts, while the broader analyst consensus identifies Q2 2026 as the likely earnings trough. Over the medium to long term, structurally expanding ESS demand driven by AI data center power consumption and renewable energy integration could serve as a valuation re-rating catalyst for the battery sector."
+        "ko": "LG에너지솔루션은 2026년 연간 매출 가이던스로 전년 대비 10% 중반~20% 성장을 제시했으며, 2분기에는 전분기 대비 10% 이상의 매출 성장을 목표로 제시한 바 있다. 회복의 핵심 축은 북미 ESS 사업으로, 연내 5개 생산거점에서 50GWh 이상의 생산능력을 확보하고 ESS 매출을 전년 대비 세 배 이상 성장시키겠다는 방침이다. 최근 보도에 따르면 미래에셋증권은 ESS 매출 비중이 1분기 26%에서 4분기에는 47%까지 가파르게 오를 것으로 전망하며, 46시리즈 원통형 배터리는 2026년 말 애리조나 공장 양산 개시와 함께 4680부터 46120까지 다양한 사이즈 체제를 갖출 예정이다. 다수 증권사 애널리스트들은 2026년 하반기부터 얼티엄셀즈(GM JV) 공장 재가동, 북미 ESS 생산 안정화, 유럽 공장 가동률 회복을 통한 점진적 실적 개선을 전망하고 있으며, 2027년에는 영업이익이 2~5조원 수준으로 급등할 수 있다는 시나리오도 제시되고 있다. ESS 사업에서는 2028년부터 공급 예정인 차세대 LFP 제품(기존 대비 원가 15% 개선) 계약이 추가 체결되었으며, 전고체·소듐 배터리 개발도 병행되고 있어 중장기 기술 포트폴리오 확충이 진행 중이다. 다만 ESS 가동률 안정화 시점과 IRA 정책 방향성이 실적 반등의 속도를 결정하는 핵심 변수이며, 증권사별 추정치 편차가 크다는 점은 불확실성의 높이를 보여준다.",
+        "en": "Management has guided for FY2026 revenue growth of the mid-teens to 20% year-on-year, with Q2 2026 targeted to deliver at least 10% sequential revenue growth. The primary engine of recovery is the North American ESS business, with the company targeting over 50 GWh of production capacity across five sites by year-end and aiming to more than triple ESS revenue versus the prior year. Per recent analyst commentary, one securities firm projects that the ESS revenue share could rise from approximately 26% in Q1 to 47% by Q4 2026, while the 46-series Arizona facility is on track for mass production across multiple form factors from 4680 to 46120 by end-2026. Multiple brokerage analysts expect a gradual earnings recovery from H2 2026 onward, premised on the restart of the Ultium Cells GM JV, North American ESS ramp-up stabilization, and a recovery in European factory utilization; consensus scenarios for 2027 envision operating profit surging to KRW 2–5 trillion assuming full utilization of North American ESS capacity and normalization of 46-series production. On the technology front, next-generation LFP products offering approximately 15% cost improvement versus current generations are contracted for delivery from 2028, with parallel R&D on all-solid-state and sodium-ion batteries broadening the longer-term pipeline. However, the pace of ESS utilization stabilization and the trajectory of IRA policy remain the critical swing variables, and the wide dispersion in analyst estimates — ranging from KRW 766.0 billion to KRW 1.629 trillion in 2026 operating profit projections — underscores the degree of uncertainty ahead."
       },
       "bull": [
         {
           "title": {
-            "ko": "AI·데이터센터 연계 ESS 구조적 성장",
-            "en": "Structural ESS Growth Driven by AI & Data Center Demand"
+            "ko": "ESS 구조적 성장 — AI 데이터센터·전력망 수요 급증",
+            "en": "Structural ESS Growth Driven by AI Data Center and Grid-Scale Demand"
           },
           "body": {
-            "ko": "AI 데이터센터 전력 수요 급증을 배경으로 북미 ESS 시장이 구조적 성장 국면에 진입하였다. 미국 데이터센터 전력 소비는 2025년 180TWh에서 2030년 약 391TWh로 2배 이상 성장이 전망된다. LG에너지솔루션은 오라클·오픈AI 연계 DTE에너지와 약 16억 달러(약 2.4조 원) 규모 계약을 체결하는 등 AI 인프라 수요의 직접 수혜 기업으로 부상하고 있다.",
-            "en": "North America's ESS market has entered a phase of structural growth underpinned by surging AI data center power needs — U.S. data center electricity consumption is projected to nearly double from 180TWh in 2025 to ~391TWh by 2030. LG ES is becoming a direct beneficiary, as evidenced by its ~$1.6 billion (KRW ~2.4 trillion) ESS supply contract with DTE Energy linked to Oracle and OpenAI AI infrastructure projects."
+            "ko": "AI 데이터센터의 폭발적 전력 수요 증가와 에너지 안보 강화 기조는 ESS 시장의 구조적 수요를 견인하고 있으며, LG에너지솔루션은 국내 기업 중 북미 ESS 배터리 양산을 가장 먼저 시작한 선점 효과를 보유하고 있다. 최근 보도에 따르면 2026년 5월 DTE에너지와 6GWh·약 2.4조원 규모의 공급계약을 체결하며 ESS 수주 모멘텀을 재점화했고, 2026년 연중 신규 ESS 수주 90GWh 달성 계획도 유효하게 유지되고 있다. ESS 사업은 연간 200% 이상의 매출 성장이 전망되는 구조적 성장 사업부로, AI 데이터센터와 재생에너지 연계 전력망 수요 확대가 중장기 수주를 뒷받침하고 있다. 미국 탈중국 정책 기조와 IRA AMPC 혜택이 ESS에도 적용되는 만큼, LG에너지솔루션의 북미 현지 생산 역량이 하반기 손익 구조를 빠르게 바꿀 핵심 레버리지로 작용할 것으로 기대된다.",
+            "en": "Explosive electricity demand from AI data centers and heightened energy security concerns are generating structural tailwinds for the ESS market, and LG Energy Solution benefits from a first-mover advantage as the earliest Korean company to begin North American ESS battery mass production. Recent reporting highlights the May 2026 6 GWh supply agreement with DTE Energy valued at approximately KRW 2.4 trillion as a re-ignition of ESS order momentum, with the company's 2026 target of 90 GWh in new ESS orders remaining intact. The ESS segment is projected by multiple analysts to deliver annual revenue growth exceeding 200%, underpinned structurally by AI data center buildout and renewable energy-linked grid storage demand. With U.S. de-China supply chain policies and IRA AMPC benefits applicable to ESS, the company's North American production capability is expected to serve as a key earnings lever in the second half of 2026 and beyond."
           }
         },
         {
           "title": {
-            "ko": "북미 현지 생산 선점 및 AMPC 기반 강화",
-            "en": "First-Mover Advantage in North American Local Production & AMPC Underpinning"
+            "ko": "46시리즈 수주잔고 440GWh+ — 2027~2028년 실적 가시성 확보",
+            "en": "46-Series Backlog of 440+ GWh Provides Strong 2027–2028 Revenue Visibility"
           },
           "body": {
-            "ko": "LG에너지솔루션은 북미에 5개 ESS 생산 거점을 확보하며 연말까지 50GWh 이상의 현지 생산능력 구축을 목표로 한다. 탈중국 공급망 재편(FEOC 기준 충족 완료)으로 AMPC를 차질 없이 수령할 수 있는 구조를 갖췄으며, 시장 재편이 세액공제 적격성·현지 생산 능력 중심으로 이루어지고 있어 중국 경쟁사 대비 구조적 우위가 유효하다.",
-            "en": "LG ES targets over 50GWh of North American ESS production capacity by end-2026 across five domestic sites. Having completed FEOC compliance (eliminating Chinese-origin content), the company can receive AMPC benefits without interruption. As market competition shifts toward tax credit eligibility and local production capability, LG ES holds a structural advantage over Chinese peers."
+            "ko": "차세대 원통형 배터리인 46시리즈는 1분기에만 100GWh 이상의 신규 수주를 확보하며 수주잔고가 440GWh를 넘어섰고, 리비안·Chery 등 고객에 대한 출하가 이미 개시됐다. 유럽 OEM으로부터의 대규모 수주도 추가로 확보되며 고객 포트폴리오 다변화가 가속되고 있으며, 2026년 말 애리조나 공장에서 4680부터 46120까지 다양한 사이즈의 양산이 시작될 예정이다. 440GWh 수주잔고는 2027~2028년 실적에 대한 구조적 가시성을 제공하며, 주요 증권사는 46시리즈가 본격화되는 2027년에 영업이익이 2~5조원 수준으로 급등할 수 있다고 분석하고 있다. 고에너지 밀도·비용 경쟁력·열적 안정성에서 인정받은 46시리즈의 독보적인 양산 역량은 글로벌 완성차 업체들의 차세대 EV 프로젝트 배터리 선택 기준을 충족하고 있다.",
+            "en": "The 46-series next-generation cylindrical battery secured over 100 GWh in new orders in Q1 2026 alone, pushing the total backlog above 440 GWh, with initial shipments to Rivian and Chery already commenced. Large-scale orders from European OEMs have been additionally secured, accelerating customer portfolio diversification, while mass production of form factors from 4680 to 46120 at the Arizona facility is scheduled to begin by end-2026. The 440+ GWh backlog provides structural revenue visibility for 2027–2028, with multiple analysts projecting that operating profit could surge to a range of KRW 2–5 trillion in 2027 as the 46-series ramp normalizes. The 46-series' proven combination of high energy density, cost competitiveness, and thermal stability — alongside the company's demonstrated mass production capabilities — meets the key criteria global automakers apply when selecting batteries for next-generation EV programs."
           }
         },
         {
           "title": {
-            "ko": "46시리즈 원통형·로봇 배터리 등 신성장동력 가시화",
-            "en": "Emerging Growth Drivers: 46-Series Cylindrical & Robotics Batteries"
+            "ko": "북미 현지 생산 우위 — IRA AMPC 수혜 및 탈중국 수요 선점",
+            "en": "U.S. Local Manufacturing Advantage Maximizes IRA AMPC Benefits and Captures De-China Supply Chain Demand"
           },
           "body": {
-            "ko": "2025년 4분기 출하를 시작한 원통형 46시리즈는 연말 기준 수주 잔고 300GWh 이상을 확보하였으며, 2026년 말 애리조나 신규 공장 가동으로 공급 확대가 예정되어 있다. 또한 글로벌 로봇 선도 기업 6개사와 원통형 배터리 공급 및 차세대 모델 스펙을 협의 중인 것으로 알려져 있어 소형전지 부문의 새로운 수익원 다변화가 기대된다.",
-            "en": "The 46-series cylindrical battery, which began shipping in Q4 2025, had accumulated a backlog exceeding 300GWh by year-end, with an Arizona plant set to come online in late 2026 to expand supply. Discussions with six leading global robotics firms on cylindrical battery supply and next-generation specifications further diversify the small-format segment's revenue base."
+            "ko": "LG에너지솔루션은 미국 내 총 7개 공장(2026년 기준 3개 가동 중, 2개 추가 예정, 2027년 3개 추가 예정)을 보유한 국내 배터리 기업 중 최대 규모의 북미 생산 인프라를 구축하고 있다. 2025년 기준 IRA AMPC로 약 1.48조원의 혜택을 수령하였으며, 2026년 1분기에도 1,898억원의 AMPC가 적자를 일부 상쇄하는 버팀목 역할을 하고 있다. 미국의 탈중국 공급망 정책 기조가 구체화되고 고객의 현지 생산 기업 선호가 강화되는 가운데, LG에너지솔루션의 북미 선투자 우위는 중장기적으로 경쟁 차별화 요인으로 작용할 전망이다. 얼티엄셀즈 테네시 공장의 EV 라인 일부를 ESS로 전환하는 등 유연한 생산 전략도 수요 변화에 효과적으로 대응하는 역량으로 평가된다.",
+            "en": "LG Energy Solution holds the largest North American manufacturing infrastructure among Korean battery companies, with seven U.S. facilities — three currently operational, two set to add production in 2026, and three more potentially in 2027. The company received approximately KRW 1.48 trillion in IRA AMPC benefits in 2025, and the KRW 189.8 billion AMPC credit in Q1 2026 served as a meaningful partial offset to operating losses. As U.S. de-China supply chain policies take concrete shape and OEM preference for locally-manufactured cells intensifies, LG Energy Solution's early and extensive North American investment is expected to serve as a durable competitive differentiator. The company's flexible production strategy — including converting EV lines to ESS at the Ultium Cells Tennessee facility — further demonstrates an adaptive manufacturing approach that enables effective response to shifting demand patterns."
           }
         }
       ],
       "bear": [
         {
           "title": {
-            "ko": "EV 수요 회복 지연 및 AMPC 급감에 따른 수익성 취약",
-            "en": "Delayed EV Demand Recovery & Sharp AMPC Decline Pressure Profitability"
+            "ko": "EV 수요 구조적 둔화 — 북미·유럽 동시 부진과 가동률 하락",
+            "en": "Structural EV Demand Slowdown Weighing on Both North American and European Operations"
           },
           "body": {
-            "ko": "2026년 1분기 AMPC가 전년 동기 대비 58.5% 급감(4,577억 원→1,898억 원)하며 영업손실 2,078억 원을 기록하였다. 얼티엄셀즈 JV 가동 중단과 GM·포드의 EV 생산 계획 조정이 배터리 출하량을 압박하고 있으며, AMPC 제외 실질 손실 규모는 공표 수치보다 더 크다는 분석도 나온다.",
-            "en": "Q1 2026 AMPC collapsed 58.5% YoY (KRW 457.7 billion to KRW 189.8 billion), driving an operating loss of KRW 207.8 billion. Production suspensions at Ultium Cells JV and EV plan revisions by GM and Ford continue to weigh on battery shipment volumes, while the underlying operating loss excluding AMPC is estimated at KRW 397.5 billion — worse than the headline figure."
+            "ko": "북미 EV 수요는 2026년에도 약세가 지속되고 있으며, 주력 고객 GM의 EV 생산 계획 조정과 파우치형 물량 감소가 직접적인 실적 압박 요인으로 작용하고 있다. LG에너지솔루션의 공장 평균 가동률은 2023년 69.3%에서 2024년 57.8%, 2025년 3분기 50.7%까지 하락하였으며, 고정비 구조 아래 가동률 저하는 수익성을 구조적으로 압박한다. 유럽에서는 EU의 내연기관 금지 로드맵 완화로 EV 전환 속도가 더뎌질 전망이며, 중국 CATL·BYD 등의 저가 공세가 유럽 시장에서의 점유율 방어를 어렵게 만들고 있다. 얼티엄셀즈 JV 가동 중단이 2026년 1분기 대규모 손상차손의 주요 원인이 된 점은 JV 운영 리스크가 현실화될 경우의 잠재적 추가 손실 가능성을 시사한다.",
+            "en": "North American EV demand has remained soft throughout 2026, with production plan adjustments by key customer GM and a decline in pouch-format EV volumes directly compressing earnings. LG Energy Solution's average factory utilization rate fell from 69.3% in 2023 to 57.8% in 2024 and further to 50.7% by Q3 2025; under the company's high fixed-cost structure, sustained low utilization rates structurally weigh on profitability. In Europe, the relaxation of the EU's internal combustion engine phase-out roadmap is expected to slow EV adoption rates, while intensifying low-price competition from Chinese players CATL and BYD makes market share defense increasingly difficult. The Ultium Cells JV suspension having triggered the bulk of Q1 2026's large impairment charge signals the risk of further losses should JV operational challenges resurface."
           }
         },
         {
           "title": {
-            "ko": "ESS 초기 램프업 비용 및 중국 저가 공세",
-            "en": "ESS Ramp-Up Costs & Chinese Competitors' Price Pressure"
+            "ko": "재무 레버리지 심화 — 부채비율 140%와 자본 잠식 우려",
+            "en": "Elevated Financial Leverage — 140% Debt Ratio and Tail Risk of Capital Impairment"
           },
           "body": {
-            "ko": "5개 ESS 생산라인의 초기 가동에 따른 램프업 비용이 단기 수익성에 부담을 주고 있으며, CATL·BYD 등 중국 업체들의 ESS 저가 공세가 수익성 개선 속도를 제한할 수 있다. 특히 중국 업체들은 최근 LFP를 넘어 나트륨이온·삼원계·전고체 등 전방위 전략으로 영역을 확장하고 있어 장기적 경쟁 강도가 높아지는 국면이다.",
-            "en": "Initial ramp-up costs from five new ESS production lines are a near-term drag on profitability. CATL, BYD, and other Chinese players continue to exert aggressive price pressure in ESS, and they are expanding beyond LFP into sodium-ion, NCM, and solid-state chemistries — signaling intensifying competitive dynamics over the longer term."
+            "ko": "2026년 1분기 기준 부채비율은 140%로, 2022년 86% 대비 급격히 확대되었으며 차입금 규모도 2023년 14.9조원에서 2025년 기준 24~25조원 수준으로 두 배 가까이 불어난 것으로 파악된다. 2025년 기준 지배주주 이익잉여금은 3,320억원에 불과해 추가 적자가 지속될 경우 자본 잠식 가능성도 배제하기 어렵다. 혼다 JV 건물 자산 처분(약 3.7조원)으로 단기 유동성을 일부 보강했으나, 이는 임시방편이며 중장기 재무 안정성 회복을 위해서는 영업 수익성 회복이 필수적이다. 대규모 설비투자 이후 연간 감가상각 부담이 지속되는 가운데, EBITDA 기반 현금 창출력 강화가 최우선 과제로 부상하고 있다.",
+            "en": "As of Q1 2026, the debt ratio stood at 140%, sharply elevated from 86% in 2022, with total borrowings estimated to have nearly doubled from KRW 14.9 trillion in 2023 to approximately KRW 24–25 trillion by 2025. Retained earnings attributable to controlling shareholders were only approximately KRW 332 billion as of 2025, raising a tail risk of partial capital impairment should operating losses persist. While the disposal of Honda JV building assets for approximately KRW 3.7 trillion provided near-term liquidity reinforcement, this is a non-recurring measure, and sustainable financial stabilization ultimately depends on a return to operating profitability. Against an ongoing annual depreciation burden following years of large-scale capital investment, strengthening EBITDA-based cash generation has become the company's most pressing near-term financial priority."
           }
         },
         {
           "title": {
-            "ko": "대규모 설비투자에 따른 재무 부담 및 오버행 리스크",
-            "en": "CapEx-Driven Financial Strain & Overhang Risk"
+            "ko": "LG화학 오버행 — 지분 매각 가능성과 단기 수급 부담",
+            "en": "LG Chem Overhang — Potential Stake Disposal Weighs on Near-Term Share Dynamics"
           },
           "body": {
-            "ko": "최근 수년간 이어진 대규모 설비투자에 따른 현금흐름 부담이 과제로 지적된다. 또한 최대주주인 LG화학의 지분 매각 관련 오버행 이슈가 수급 부담으로 작용할 수 있으며, 2026년 1분기에는 얼티엄셀즈 관련 손상차손 반영으로 순손실이 9,440억 원에 달하였다.",
-            "en": "Years of aggressive capacity expansion have placed strain on the company's cash flows. The overhang risk from potential stake sales by major shareholder LG Chem adds to supply/demand pressure on the stock, while Q1 2026 net losses widened to KRW 944 billion due to impairment charges related to the Ultium Cells JV."
+            "ko": "모회사 LG화학은 LG에너지솔루션 지분 79.4%를 보유하고 있으며, LG화학 자체의 재무구조 개선 필요성으로 인해 일부 지분 매각 가능성이 시장의 오버행으로 작용하고 있다. 최근 보도에 따르면 교보증권은 '모회사 지분 매각 관련 오버행 우려'를 주가 상승 제한 요인으로 명시한 바 있으며, LG화학이 PRS 등 파생상품을 활용할 경우 사실상 차입금 성격으로 작동할 수 있다는 우려도 제기된다. 매각 방식·시기·규모가 불명확한 상황에서 잠재적 공급 물량 부담은 주가 상승 모멘텀을 지속적으로 제한하는 요인으로 작용할 수 있다.",
+            "en": "Parent company LG Chem holds a 79.4% stake in LG Energy Solution, and LG Chem's own balance sheet pressures have introduced the possibility of partial stake disposals, which the market views as an overhang on near-term supply-demand dynamics. Per recent broker commentary, Kyobo Securities specifically flagged parent stake sale concerns as a factor capping LG Energy Solution's share price upside, with additional concerns raised that use of derivatives such as Price Return Swaps could effectively constitute off-balance-sheet borrowing. With the method, timing, and scale of any potential disposal remaining unclear, the prospect of incremental supply overhang is expected to persistently constrain near-term share price momentum."
           }
         }
       ],
       "risks": [
         {
           "cat": {
-            "ko": "정책/규제 리스크",
-            "en": "Policy / Regulatory Risk"
+            "ko": "정책 리스크",
+            "en": "Policy Risk"
           },
           "body": {
-            "ko": "미국 IRA 정책 수정 또는 AMPC 축소 가능성이 동사의 최대 정책 리스크다. 현재 시장 컨센서스상 IRA 전면 폐지 가능성은 낮게 평가되나, 트럼프 행정부의 친화석연료 기조 하에서 세액공제 축소·조건 강화 가능성은 지속적으로 모니터링이 필요하다.",
-            "en": "Potential IRA revision or AMPC reduction by the U.S. administration is the company's foremost policy risk. While full IRA repeal is generally viewed as unlikely by market consensus, any tightening of tax credit terms or eligibility conditions under the current pro-fossil fuel administration warrants continuous monitoring."
+            "ko": "미국 트럼프 행정부의 IRA 첨단제조생산세액공제(AMPC) 축소 내지 조정 가능성은 LG에너지솔루션에게 가장 크고 직접적인 정책 리스크이다. IRA AMPC는 2025년 기준 약 1.48조원, 2026년 1분기에만 1,898억원이 영업이익에 반영될 만큼 수익성의 핵심 버팀목이며, 이를 제외하면 1분기 실질 영업손실은 3,975억원으로 확대된다. 회사 측은 북미 부사장을 통해 트럼프 행정부 관계자 및 의원들과 AMPC 유지를 위한 협의를 지속하고 있으나, 미국 OBBBA 법안 등 정치적 환경의 불확실성으로 정책 방향의 가시성이 낮다. EU 역시 내연기관 금지 로드맵을 완화하는 방향으로 수정 중이어서 유럽 EV 전환 속도 지연이 추가적인 수요 리스크로 작용할 수 있다.",
+            "en": "The most significant and direct policy risk for LG Energy Solution is the possibility that the Trump administration may reduce or restructure the IRA Advanced Manufacturing Production Credits (AMPC). The AMPC serves as a critical earnings pillar — approximately KRW 1.48 trillion was credited in 2025 and KRW 189.8 billion in Q1 2026 alone; stripping it out would have expanded the Q1 operating loss to KRW 397.5 billion. The company has been actively lobbying U.S. administration officials and legislators to advocate for AMPC preservation, but policy direction visibility remains low amid the uncertain U.S. political environment surrounding the OBBBA legislation. Additionally, the EU's softening of its ICE phase-out roadmap introduces the risk of a further deceleration in European EV adoption, compounding demand-side headwinds."
           }
         },
         {
           "cat": {
-            "ko": "거시/수요 리스크",
-            "en": "Macro / Demand Risk"
+            "ko": "수요·경쟁 리스크",
+            "en": "Demand & Competitive Risk"
           },
           "body": {
-            "ko": "글로벌 전기차 수요 둔화가 예상보다 장기화될 경우 EV 배터리 부문 매출 회복이 지연될 수 있다. 북미 EV 구매 보조금 일몰 등 정책 변화와 완성차 업체들의 EV 생산 계획 조정이 하반기 배터리 오더에 영향을 줄 수 있다.",
-            "en": "A prolonged global EV demand slump beyond current expectations could delay recovery in the EV battery segment. Policy changes such as the phase-out of North American EV purchase subsidies and production plan revisions by major automakers may directly affect H2 2026 battery order volumes."
+            "ko": "글로벌 EV 캐즘이 단기 조정을 넘어 구조적 국면으로 진화할 경우, 가동률 하락과 높은 고정비 구조의 결합이 실적 악화를 심화시킬 수 있다. 회사의 공장 평균 가동률은 2025년 3분기 기준 50.7%까지 하락하였으며, 계약 취소 등 추가 하락 압력도 존재하는 상황이다. 유럽 시장에서는 CATL·BYD 등 중국 업체들의 저가 공세가 점유율 방어 부담을 높이고 있으며, ESS 시장에서도 중국 업체들의 진입 가속화로 인한 가격 경쟁 심화 가능성이 제기된다. 배터리 평균판매단가(ASP)의 지속적 하락 압력은 매출 증가에도 불구하고 수익성 개선을 억제하는 구조적 요인으로 작용하고 있다.",
+            "en": "If the global EV demand trough evolves into a structural rather than cyclical phenomenon, declining factory utilization against a high fixed-cost base could materially worsen the earnings trajectory. Average factory utilization had already fallen to 50.7% as of Q3 2025, with additional downward pressure from contract cancellations reported in the recent past. In the European market, intensifying low-price competition from Chinese players CATL and BYD is increasing the pressure to defend market share, while accelerated Chinese manufacturer entry into the ESS market could trigger further price competition risks. Persistent battery average selling price (ASP) compression structurally suppresses margin improvement even when top-line volume recovers."
           }
         },
         {
           "cat": {
-            "ko": "환율/원자재 리스크",
-            "en": "FX / Raw Material Risk"
+            "ko": "지정학·거시 리스크",
+            "en": "Geopolitical & Macro Risk"
           },
           "body": {
-            "ko": "달러 강세 기조 변화 및 리튬·니켈·코발트 등 핵심 광물 가격 변동이 원가 구조에 영향을 미칠 수 있다. 최근 리튬 가격 약세는 비용 측면에서 유리하나, 글로벌 공급망 재편 과정에서 탈중국 원자재 조달 비용이 상승할 경우 수익성에 추가 부담이 될 수 있다.",
-            "en": "Fluctuations in the USD exchange rate and prices of key battery minerals (lithium, nickel, cobalt) directly affect the company's cost structure. While recent lithium price weakness provides some cost relief, rising procurement costs for non-Chinese raw materials amid supply chain diversification could add margin pressure."
+            "ko": "미국·이란 간 지정학적 갈등 장기화는 에너지 가격 상승과 물류비 증가로 이어져 원가 부담을 가중시킬 수 있다. 회사 측은 현지화된 공급망을 통해 직접적인 사업 영향은 제한적이라고 밝혔으나, 인플레이션 고착화와 SCM 정합화 비용이 단기 수익성에 지속적인 압박 요인으로 남아 있다. 리튬·니켈 등 핵심 원자재 가격의 변동성 및 공급망 불확실성도 배터리 ASP 하락과 맞물려 마진 관리를 복잡하게 만들 수 있다. 특히 원화 환율 변동은 해외 매출 비중이 높은 LG에너지솔루션의 원화 환산 실적에 추가적인 불확실성 요인으로 작용한다.",
+            "en": "The prolonged U.S.-Iran geopolitical tension could escalate energy prices and logistics costs, adding to overall cost pressures. The company has stated that its localized supply chains limit the direct operational impact, but persistent inflation and supply chain alignment costs are expected to remain ongoing near-term profitability headwinds. Volatility in key raw material prices — including lithium and nickel — combined with battery ASP compression could compound margin management challenges across business segments. Additionally, Korean won exchange rate fluctuations introduce further variability in the won-denominated results of a company with a high proportion of overseas revenue."
+          }
+        }
+      ],
+      "verdict": {
+        "stance": {
+          "ko": "신중",
+          "en": "Cautious"
+        },
+        "body": {
+          "ko": "LG에너지솔루션은 2026년 1분기를 실적 저점으로 판단하는 시장 컨센서스와, ESS 구조적 성장·46시리즈 수주잔고 가시화라는 중장기 성장 내러티브가 공존하는 변곡점에 서 있다. ESS 사업의 본격적인 물량 확대와 DTE에너지 계약 등 수주 모멘텀의 구체화는 긍정적 신호이나, AMPC 제외 기준 영업이익률 -6.1%라는 현재의 수익성 구조와 부채비율 140%의 재무 부담은 단기 불확실성이 여전히 높음을 보여준다. 다수의 증권사가 매수 의견과 시장 컨센서스 평균 목표주가 53만~60만원을 제시해 현 주가 대비 업사이드 여력이 시사되나, 이는 ESS 가동률 안정화·46시리즈 양산 정상화·IRA 정책 유지라는 세 가지 조건의 동시 충족을 전제로 한다. IRA 정책 불확실성·LG화학 오버행·글로벌 EV 수요 회복 지연이 단기 복합 리스크로 작용하는 만큼, 2026년 2분기 실적 발표를 통해 ESS 물량 확대와 흑자 전환 여부를 실증한 이후 방향성을 재평가하는 신중한 접근이 합리적인 시기다. 본 리포트는 투자 권유가 아닌 정보 제공 목적으로 작성되었으며, 구체적인 투자 결정은 개인의 투자 목적·위험 성향·재무 상황을 종합적으로 고려해 판단해야 한다.",
+          "en": "LG Energy Solution stands at a pivotal inflection point where a broad market consensus that Q1 2026 represents the earnings trough coexists with a compelling medium-to-long-term growth narrative anchored in structural ESS expansion and the 46-series order backlog. The DTE Energy contract and surging 46-series orders provide concrete positive signals, but the underlying operating margin of approximately -6.1% when excluding AMPC credits and a debt ratio of 140% underscore that near-term uncertainty remains elevated. Most brokerages maintain buy-equivalent ratings with consensus target prices averaging KRW 530,000–600,000, implying meaningful upside from current levels, but these targets are conditioned on the simultaneous realization of three key assumptions: ESS utilization stabilization, 46-series mass production normalization, and IRA policy continuity. Given the overlapping near-term risks of IRA policy uncertainty, the LG Chem overhang, and delayed global EV demand recovery, a cautious approach that re-evaluates the directional thesis after the Q2 2026 earnings report — which will provide the first tangible evidence of ESS volume acceleration and a potential return to profitability — is the more prudent posture. This report is provided solely for informational purposes and does not constitute investment advice; specific investment decisions should be made taking into account individual investment objectives, risk tolerance, and financial circumstances."
+        }
+      },
+      "sources": [
+        "https://www.thelec.kr/news/articleView.html?idxno=55904",
+        "https://news.nate.com/view/20260408n16011",
+        "https://www.hankyung.com/article/202604308732i",
+        "https://inside.lgensol.com/2026/04/lg%EC%97%90%EB%84%88%EC%A7%80%EC%86%94%EB%A3%A8%EC%85%98-2026%EB%85%84-1%EB%B6%84%EA%B8%B0-%EC%8B%A4%EC%A0%81%EB%B0%9C%ED%91%9C-%EB%A7%A4%EC%B6%9C-6%EC%A1%B05550%EC%96%B5-%EC%9B%90-%EC%98%81%EC%97%85/",
+        "https://needinfo.co.kr/lg-energysolution-26q1-analysis-target-price/",
+        "https://www.newsquest.co.kr/news/articleView.html?idxno=265784",
+        "https://www.huffingtonpost.kr/article/257523",
+        "https://stock1.brokdam.com/lg%EC%97%90%EB%84%88%EC%A7%80%EC%86%94%EB%A3%A8%EC%85%98-%EC%A3%BC%EA%B0%80-%EC%A0%84%EB%A7%9D-2025%EF%BD%9C-%EB%B0%B0%EB%8B%B9%EA%B8%88%C2%B7%EC%8B%A4%EC%A0%81%C2%B7%EC%88%98%EA%B8%89-%EC%B4%9D",
+        "https://m.thebell.co.kr/m/newsview.asp?svccode=00&newskey=202601211605225160107810",
+        "https://inside.lgensol.com/2026/06/%ED%95%9C%EA%B5%AD%EA%B3%BC-%EB%B6%81%EB%AF%B8%EB%A5%BC-%EC%9E%87%EB%8A%94-%EC%9B%90%ED%8C%80one-team-lg%EC%97%90%EB%84%88%EC%A7%80%EC%86%94%EB%A3%A8%EC%85%98-emoenergy-market-optimizer/"
+      ],
+      "ticker": "373220",
+      "name": "LG에너지솔루션",
+      "name_en": "LG ENERGY SOLUTION, LTD.",
+      "sector": "2차전지",
+      "categories": [
+        "2차전지"
+      ],
+      "market": "코스피",
+      "reportDate": "2026-06-03",
+      "dataDate": "20260602"
+    },
+    "032830": {
+      "lead": {
+        "ko": "삼성생명은 삼성전자 지분 효과로 2026년 1분기 투자손익이 폭발적으로 증가하며 분기 순이익 1.2조 원(YoY +83%)을 달성했고, 주가는 5월 이후 불과 한 달여 만에 90% 이상 급등해 시가총액 96조 원까지 치솟았다.",
+        "en": "Samsung Life Insurance delivered a record quarterly net profit of KRW 1.2 trillion in 1Q 2026 (+83% YoY), driven by a surge in investment income tied to its Samsung Electronics stake, propelling the share price more than 90% higher within roughly five weeks to a market capitalization of KRW 96 trillion."
+      },
+      "desc": {
+        "ko": "삼성생명(032830)은 1957년 설립된 국내 최대 생명보험사로, 총자산 기준 업계 점유율 약 30%를 유지하는 보험 본업과 삼성전자 지분 8.51% 보유에 따른 지분 투자 가치라는 두 축으로 수익 구조를 형성하고 있다. DART 공시 기준 2025년 연결 영업이익 2.6조 원(+3.2%), 당기순이익 2.5조 원(+8.5%)에 이어 2026년 1분기 영업이익 1.4조 원(+80.1%), 당기순이익 1.2조 원(+83.1%)으로 역대급 분기 실적을 달성했다. 보험 본업의 CSM(계약서비스마진) 고도화와 삼성전자 배당·처분이익이라는 두 모멘텀이 단기에 동시에 작동하면서, 주가는 2026년 6월 3일 기준 480,000원으로 전일 대비 +17.07%를 기록하며 시가총액 96조 원에 달하고 있다.",
+        "en": "Samsung Life Insurance (032830) is South Korea's largest life insurer, established in 1957, sustaining approximately 30% market share by total assets alongside an 8.51% stake in Samsung Electronics as a secondary profit driver. Per DART filings, FY2025 consolidated operating profit reached KRW 2.6 trillion (+3.2% YoY) and net profit KRW 2.5 trillion (+8.5%), followed by an exceptional 1Q 2026 with operating profit of KRW 1.4 trillion (+80.1%) and net profit of KRW 1.2 trillion (+83.1%). Dual momentum from CSM-driven insurance underwriting improvements and a surge in Samsung Electronics-related dividends and disposal gains has lifted the share price to KRW 480,000 as of June 3, 2026 (+17.07% on the day), taking market capitalization to KRW 96 trillion."
+      },
+      "keypoints": [
+        {
+          "ko": "2026년 1Q 투자손익 1.27조 원(+125.5%): 삼성전자 배당 확대 및 삼성증권·삼성자산운용 자회사 연결 이익 급증이 분기 실적을 전적으로 견인했다.",
+          "en": "1Q 2026 investment income surged 125.5% YoY to KRW 1.27 trillion, driven by higher Samsung Electronics dividends and strong consolidated earnings from subsidiaries Samsung Securities and Samsung Asset Management."
+        },
+        {
+          "ko": "CSM 잔액 13.6조 원 및 신계약 CSM 8,486억 원(QoQ +11%): 건강보험 중심의 판매 포트폴리오 재편이 미래 이익 가시성을 높이고 있으며, 전속 채널의 건강보험 비중은 2023년 45%에서 2025년 3분기 78%까지 상승했다.",
+          "en": "In-force CSM stood at KRW 13.6 trillion at end-1Q 2026, while new business CSM rose 11% QoQ to KRW 849 billion, underpinned by a portfolio shift toward higher-margin health products—health insurance's share of exclusive-channel protection sales climbed from 45% in 2023 to 78% by 3Q 2025."
+        },
+        {
+          "ko": "삼성전자 지분 8.51% 보유: 삼성전자 주가 급등으로 자기자본이 2024년 말 약 38조 원에서 2025년 말 약 64조 원으로 급증했으며, 지분 가치가 주가의 핵심 변수로 작동하고 있다.",
+          "en": "Samsung Life holds an 8.51% stake in Samsung Electronics; the rally in Samsung Electronics shares inflated Samsung Life's equity from approximately KRW 38 trillion at end-2024 to roughly KRW 64 trillion at end-2025, making the stake the dominant valuation swing factor."
+        },
+        {
+          "ko": "주주환원 강화 의지: 2028년까지 배당성향 50% 목표, 2026년 예상 배당성향 약 44%로 단계적 상향 기조를 유지하나, 삼성전자 특별배당 연계 구체안은 여전히 미확정 상태다.",
+          "en": "Management targets a 50% payout ratio by 2028, with FY2026 payout estimated at approximately 44%; however, specific details on passing Samsung Electronics special-dividend proceeds through to shareholders remain undisclosed, sustaining near-term ambiguity."
+        },
+        {
+          "ko": "보험 본업 과제: 1Q26 보험서비스손익 2,565억 원(YoY -7.7%)으로 예실차 손실이 확대되어, 2026년 보험이익 1조 원 목표 달성 여부가 수익 기반 안정성의 핵심 지표다.",
+          "en": "Insurance service margin contracted 7.7% YoY to KRW 257 billion in 1Q 2026 amid widening actuarial mismatch losses; achieving management's KRW 1 trillion full-year insurance profit target will be the critical test of underlying business resilience."
+        }
+      ],
+      "business": {
+        "ko": "삼성생명은 1957년 설립된 국내 최대 생명보험사로, 2025년 9월 말 기준 총자산 296조 원, 자기자본 33조 원을 보유하며 총자산 기준 시장점유율 30.3%, 보험수익 기준 시장점유율 27.3%로 업계 압도적 1위 지위를 유지하고 있다. 사업 구조는 크게 '국내 보험', '삼성카드(신용카드·할부금융·리스)', '해외' 세 부문으로 구성되어 있으며, 주요 매출원은 보험료수익이고 이자수익이 뒤를 잇는다. 보험 포트폴리오는 보장성 보험(건강·사망/종신 등)과 연금·저축성 보험으로 양분되는데, 최근 수년간 수익성 높은 건강보험 비중을 빠르게 높여왔다. 전속 설계사 채널에서 판매된 보장성 신계약 중 건강보험 비중은 2023년 45%에서 2025년 3분기 78%까지 상승했고, 2026년 1분기 기준 월별 건강보험 판매 금액도 2023년 67억 원 대비 두 배 이상인 월 140억 원 수준으로 확대됐다. 전속 설계사(2025년 2분기 기준 약 40,840명) 위주의 대면채널이 영업 핵심 축을 이루며, 외부 GA(대리점) 채널 의존도가 높은 경쟁사 대비 사업비 통제력이 상대적으로 안정적이라는 평가다. 자산운용은 ALM(자산부채관리) 중심으로 운용되며, 2026년 1분기 말 기준 운용자산은 265조 원이며 국공채·특수채(38%), 주식·출자금·관계회사투자(33%), 일반 대출채권(15%), 외화채권(9%) 등으로 분산 운용된다. 삼성전자 지분 8.51%는 운용자산 내 주식 항목의 핵심을 이루며 배당수익과 지분가치 변동이라는 이중 경로로 실적에 영향을 미친다. 동사는 2025년 삼성노블라이프를 설립해 시니어리빙 사업에 진출했으며, 삼성 금융 5개사 통합 플랫폼 '모니모'를 운영하는 등 비보험 신사업 다각화에도 나서고 있다. 경쟁 구도 측면에서 한화생명(2위·2025년 영업수익 27.4조 원)과 교보생명(3위·21.7조 원)이 주요 경쟁사이며, 삼성생명은 압도적 브랜드력과 전속 설계사 채널의 질적 우위를 바탕으로 최상위 시장 지위를 공고히 하고 있다.",
+        "en": "Samsung Life Insurance, founded in 1957, is South Korea's dominant life insurer with total assets of KRW 296 trillion and equity of KRW 33 trillion as of September 2025, commanding a 30.3% market share by assets and 27.3% by insurance revenue—the largest in the industry by both measures. The business is organized into three segments: Domestic Insurance, Samsung Card (credit card, installment financing, and leasing), and Overseas; insurance premium revenue is the primary income source, supplemented by interest income. The product mix spans protection insurance (health and life/whole-life) and savings/annuity products; the company has aggressively shifted toward high-margin health insurance, with health insurance's share of exclusive-channel new protection contracts rising from 45% in 2023 to 78% by 3Q 2025. Monthly health insurance sales more than doubled from KRW 6.7 billion in 2023 to approximately KRW 14 billion in 1Q 2026. The exclusive agent force—approximately 40,840 agents as of 2Q 2025—anchors distribution and gives Samsung Life superior cost control relative to peers more reliant on independent agency (GA) channels. The investment portfolio totals KRW 265 trillion, managed under an ALM framework with allocations across government and special bonds (38%), equities and affiliates (33%), general loans (15%), and foreign bonds (9%). The 8.51% Samsung Electronics stake is the dominant equity holding, influencing results through both dividend income and mark-to-market equity fluctuations. In 2025, Samsung Life launched Samsung Noble Life to enter the senior living sector and operates the integrated financial platform 'Monimo' across five Samsung financial affiliates, broadening revenue diversification beyond traditional insurance. Key competitors are Hanwha Life (No. 2, FY2025 revenue KRW 27.4 trillion) and Kyobo Life (No. 3, KRW 21.7 trillion); Samsung Life maintains a decisive advantage in brand equity and agency channel quality that underpins its market leadership."
+      },
+      "recent": {
+        "ko": "DART 공시 기준 2025년 연결 영업이익은 2.6조 원(전기대비 +3.2%), 당기순이익은 2.5조 원(+8.5%)으로 2년 연속 2조 원대 순이익을 기록하며 역대 최대 실적을 경신했다. 2025년 연간 영업수익은 37조1,383억 원으로 전년(33조7,860억 원) 대비 9.9% 증가했으며, 국내 500대 기업 순위에서 전년 25위에서 20위로 5계단 올라섰다. 2026년 1분기에는 DART 공시 기준 영업이익 1.4조 원(+80.1%), 당기순이익 1.2조 원(+83.1%)의 이례적 분기 실적을 달성했는데, 투자손익이 1조2,729억 원(+125.5%)으로 급증한 것이 결정적 요인이었다. 투자손익 급증은 삼성전자 배당수익 확대와 삼성증권·삼성자산운용 등 연결 자회사 실적 호조에 기인하며, 삼성전자 지분 일부 처분 이익도 반영된 것으로 알려졌다. 반면 보험서비스손익은 2,565억 원으로 전년 동기 대비 7.7% 감소했는데, 예실차(예상보험금과 실제 지급보험금 간 차이) 손실 확대가 주된 원인이다. 신계약 CSM은 8,486억 원으로 직전 분기 대비 11% 증가했고, 2025년 연간 신계약 CSM은 3조595억 원을 기록해 강건한 미래 이익 기반을 형성했다. 2025년 말 CSM 잔액은 13조2,000억 원(전년 말 12조9,000억 원 대비 약 2% 증가)이었으나, 2026년 1분기 말 기준으로는 13조6,000억 원으로 회복세를 이어갔다. 재무건전성 지표인 K-ICS 비율은 2026년 1분기 말 210%로 전년 말 대비 12%p 개선되어 내부 목표 수준(180%)을 크게 상회하고 있다. 주가는 삼성전자 역대급 실적 및 특별배당 기대감에 힘입어 5월 한 달간 약 54% 급등한 데 이어, 2026년 6월 3일 현재 480,000원(+17.07%)에 거래되며 시가총액 96조 원으로 금융주 시총 상위권을 형성 중이다.",
+        "en": "Per DART filings, FY2025 consolidated operating profit reached KRW 2.6 trillion (+3.2% YoY) and net profit KRW 2.5 trillion (+8.5%), marking a second consecutive year above KRW 2 trillion and a record high. Full-year 2025 revenue grew 9.9% YoY to KRW 37.1 trillion (vs. KRW 33.8 trillion in 2024), lifting Samsung Life five places to 20th in the domestic top-500 corporate ranking. In 1Q 2026, DART-confirmed operating profit was KRW 1.4 trillion (+80.1%) and net profit KRW 1.2 trillion (+83.1%), representing one of the strongest single-quarter results in the company's history. The exceptional result was driven by investment income surging 125.5% YoY to KRW 1.27 trillion, reflecting higher Samsung Electronics dividends, strong subsidiary earnings from Samsung Securities and Samsung Asset Management, and gains from a partial disposal of the Samsung Electronics stake. Insurance service margin declined 7.7% YoY to KRW 257 billion in 1Q 2026 as actual claims exceeded actuarial expectations, widening loss experience variances. New business CSM rose 11% QoQ to KRW 849 billion in 1Q 2026; full-year 2025 new business CSM totaled KRW 3.06 trillion, and the in-force CSM balance recovered to KRW 13.6 trillion by end-March after ending 2025 at KRW 13.2 trillion. The K-ICS solvency ratio improved 12 percentage points to 210% at end-1Q 2026, well above the 180% internal target. The share price surged approximately 54% through May on Samsung Electronics-related expectations, further extending to KRW 480,000 as of June 3, 2026 (+17.07% on the day) for a market capitalization of KRW 96 trillion."
+      },
+      "outlook": {
+        "ko": "2026년 경영 목표로 보험서비스이익 1조 원 이상 달성 및 신계약 CSM 3조2,000억 원 이상 확보를 제시했으며, 이는 2025년 실적인 보험이익 9,750억 원과 신계약 CSM 3조595억 원을 각각 상회하는 수준이다. 건강보험 판매 확대와 언더라이팅 강화, 손해율·사업비 가이드라인 준수를 통해 보험 본업 이익의 질적 개선을 도모하고 있으며, 하반기에는 즉시연금 관련 소송 승소에 따른 소송부채 환입(약 4,260억 원 추정)이 일회성 이익으로 반영될 가능성도 있다. 삼성전자 실적 호조와 밸류업 기대가 지속될 경우 투자손익 측면에서의 상방 요인이 유효하며, 삼성전자 특별배당 현실화 시 삼성생명 주주환원 재원도 추가적으로 확대될 수 있다. 배당 측면에서는 2028년까지 배당성향 50% 선형 목표를 재확인했고, 2026년 예상 배당성향은 약 44%로 단계적 상향 경로를 유지하고 있다. 중장기 신사업으로는 삼성노블라이프를 통한 시니어리빙 사업 확장, 해외 M&A, 자산운용 다변화 등에 잉여자본을 투입할 계획이다. 중기적으로 금리 방향성에 따른 역마진 리스크 완화 여부, CSM 잔액의 견조한 성장 지속, 그리고 삼성전자 지분 관련 규제 논의의 방향이 기업가치 재평가의 핵심 변수가 될 전망이다.",
+        "en": "Management has guided for FY2026 insurance profit exceeding KRW 1 trillion and new business CSM of at least KRW 3.2 trillion, both above the 2025 actuals of KRW 975 billion and KRW 3.06 trillion respectively. The company plans to improve insurance margin quality through expanded health insurance sales, tighter underwriting, and adherence to loss ratio and expense guidelines; a potential one-time gain from the reversal of approximately KRW 426 billion in litigation reserves (following a court victory in an immediate annuity lawsuit) could also emerge in the second half. Should Samsung Electronics' earnings momentum and value-up initiatives continue, investment income upside remains intact; realization of Samsung Electronics' special dividends could expand Samsung Life's own shareholder return capacity. On dividends, management has reiterated a linear 50% payout ratio target by 2028 with the 2026 payout estimated at approximately 44%. Samsung Life intends to deploy excess capital into Samsung Noble Life's senior living expansion, overseas M&A, and asset diversification. Over the medium term, three factors will determine valuation re-rating: mitigation of negative-spread risks in a declining rate environment, the sustainability of CSM balance growth, and the resolution of regulatory discussions around the Samsung Electronics stake."
+      },
+      "bull": [
+        {
+          "title": {
+            "ko": "삼성전자 지분 가치 상승 및 투자손익 급증",
+            "en": "Samsung Electronics Stake Appreciation and Surging Investment Income"
+          },
+          "body": {
+            "ko": "삼성생명은 삼성전자 지분 8.51%를 보유하고 있어, 삼성전자 주가 상승 시 지분가치 증가와 배당수익 확대라는 이중 효과가 발생한다. 실제로 2026년 1분기 투자손익은 1조2,729억 원으로 전년 동기 대비 125.5% 급증했으며, 이는 연간 순이익 규모를 감안할 때 이례적으로 높은 수준이다. 삼성전자의 밸류업 정책에 따른 특별배당이 현실화될 경우 삼성생명의 배당수익 및 주주환원 재원이 추가적으로 확대될 수 있으며, 1분기 삼성전자 지분 처분으로 세후 약 8,840억 원의 이익이 발생한 것으로 추정된다. 삼성전자 반도체 업황 개선 기조가 지속되는 한, 이 투자손익 모멘텀은 삼성생명의 단기 이익 창출력을 뒷받침할 것이다.",
+            "en": "Samsung Life holds 8.51% of Samsung Electronics, generating dual benefits of share price appreciation and rising dividend income whenever Samsung Electronics rallies. In 1Q 2026, investment income reached KRW 1.27 trillion, surging 125.5% YoY—an exceptional level relative to the company's earnings base. Should Samsung Electronics' value-up initiatives culminate in special dividends, Samsung Life's dividend income and shareholder return capacity would expand further; the partial Samsung Electronics stake disposal in 1Q 2026 is estimated to have generated approximately KRW 884 billion in after-tax gains. As long as Samsung Electronics' semiconductor recovery remains on track, this investment income momentum should continue to support Samsung Life's near-term earnings power."
+          }
+        },
+        {
+          "title": {
+            "ko": "건강보험 중심 CSM 고도화와 미래 이익 가시성",
+            "en": "Health Insurance-Driven CSM Improvement and Earnings Visibility"
+          },
+          "body": {
+            "ko": "전속 설계사 채널에서 판매된 보장성 신계약 중 건강보험 비중은 2023년 45%에서 2025년 3분기 78%까지 상승했으며, 월별 건강보험 판매 금액도 2023년 67억 원에서 2026년 1분기 140억 원으로 두 배 이상 확대됐다. 2026년 1분기 신계약 CSM은 8,486억 원으로 전분기 대비 11% 증가했고, IFRS17 체계에서 CSM 잔액은 향후 상각을 통해 보험이익으로 전환되는 수익 저수지 역할을 한다. 2025년 말 기준 CSM 잔액 13조2,000억 원, 2026년 1분기 말 13조6,000억 원으로 업계 최대 수준을 유지하고 있어 향후 보험이익 창출의 가시성이 높다. 2026년 신계약 CSM 목표(3조2,000억 원 이상)를 달성할 경우 CSM 잔액 성장세가 재가속되어 중기 이익 기반이 더욱 두터워질 것으로 기대된다.",
+            "en": "Health insurance's share of new protection contracts in the exclusive agency channel rose from 45% in 2023 to 78% by 3Q 2025, and monthly health insurance sales more than doubled from KRW 6.7 billion in 2023 to approximately KRW 14 billion in 1Q 2026. New business CSM increased 11% QoQ to KRW 849 billion in 1Q 2026; under IFRS17, the in-force CSM balance acts as a reservoir that is gradually amortized into insurance profit over future periods. With the CSM balance at an industry-high KRW 13.2 trillion at end-2025 and KRW 13.6 trillion at end-1Q 2026, future insurance profit visibility is strong. Achieving the FY2026 new business CSM target (KRW 3.2 trillion or more) would re-accelerate CSM balance growth and further deepen the medium-term earnings pipeline."
+          }
+        },
+        {
+          "title": {
+            "ko": "업계 최고 재무건전성과 단계적 주주환원 확대",
+            "en": "Industry-Leading Solvency and Progressive Shareholder Return Enhancement"
+          },
+          "body": {
+            "ko": "2026년 1분기 말 K-ICS 비율은 210%로 목표 수준(180%)을 대폭 상회하며, 2025년 말 기본자본비율도 157%로 2026년부터 도입된 규제 기준(50%)을 압도하는 수준이다. 풍부한 잉여자본을 바탕으로 2028년까지 배당성향 50% 달성이라는 구체적인 주주환원 경로를 제시했으며, 2026년 예상 배당성향은 약 44%로 점진적 상향 기조를 유지하고 있다. 삼성전자 지분 처분이익 등 비경상 이익도 배당 재원에 포함하겠다고 밝혀 추가 주주환원 기대를 열어두고 있다. 이는 동종 업계 경쟁사 대비 자본력 측면에서의 선도적 위치를 재확인시켜 주며 장기 투자자에게 안정성을 제공한다.",
+            "en": "The K-ICS solvency ratio reached 210% at end-1Q 2026, well above the 180% internal target, and the basic capital ratio stood at 157% at end-2025 versus the 50% regulatory threshold introduced in 2026. Abundant excess capital underpins the commitment to reach a 50% payout ratio by 2028, with FY2026 payout estimated at approximately 44%—maintaining a gradual upward glide path. Management has confirmed that non-recurring gains such as Samsung Electronics stake disposal proceeds will be included in the dividend base, keeping the door open for additional shareholder returns beyond the baseline payout. This solvency profile places Samsung Life at the forefront of its peer group in capital adequacy, providing a meaningful margin of safety for long-term investors."
+          }
+        }
+      ],
+      "bear": [
+        {
+          "title": {
+            "ko": "보험 본업 손익 악화 및 예실차 리스크",
+            "en": "Deteriorating Core Insurance Margins and Actuarial Mismatch Risk"
+          },
+          "body": {
+            "ko": "2026년 1분기 보험서비스손익은 2,565억 원으로 전년 동기 대비 7.7% 감소하며, 이번 실적 개선이 보험 본업이 아닌 투자손익에 전적으로 의존했다는 구조적 취약성을 드러냈다. 예실차 손실 확대, 고령화에 따른 의료비 증가, 의료 파업 정상화 후 실손보험 청구 급증 등이 맞물리면서 보험손익 압박이 중장기적으로 지속될 가능성이 있다. 2024년 보험이익이 5,420억 원으로 전년(1조4,490억 원) 대비 63% 급감한 전례가 있어, 일회성 충격에 취약한 구조임이 확인된 바 있다. 2026년 보험이익 1조 원 목표 달성 여부가 본업 회복의 핵심 가늠자이며, 목표 미달 시 이익 질에 대한 시장 우려가 재부각될 수 있다.",
+            "en": "Insurance service margin fell 7.7% YoY to KRW 257 billion in 1Q 2026, revealing that the headline earnings improvement was entirely investment-driven rather than underwriting-led. Persistent widening of actuarial assumption mismatches, rising healthcare costs tied to aging demographics, and a surge in insurance claims as the medical strike normalizes could sustain pressure on insurance margins over the medium term. There is a clear historical precedent: insurance profit collapsed 63% in FY2024 to KRW 542 billion from KRW 1.449 trillion in FY2023, confirming the business's vulnerability to adverse claim experience shocks. Whether the KRW 1 trillion full-year 2026 insurance profit target is met will be the key test of core business recovery; a miss could reignite market concerns about earnings quality."
+          }
+        },
+        {
+          "title": {
+            "ko": "삼성전자 지분 집중 리스크와 과도한 주가 민감도",
+            "en": "Concentrated Samsung Electronics Exposure and Excessive Share Price Sensitivity"
+          },
+          "body": {
+            "ko": "삼성생명 주가는 삼성전자 주가 흐름에 과도하게 연동되어 있으며, 5월 이후 약 90% 급등 과정에서 삼성전자 배당 기대가 상당 부분 선반영됐다는 시장 평가가 우세하다. 삼성전자 주가가 조정받거나 특별배당이 기대에 미치지 못할 경우 삼성생명 주가도 과잉 하락을 경험할 위험이 있으며, 실제로 보험 본업 펀더멘털이 이를 뒷받침하기에는 역부족이다. 규제 측면에서도 이른바 '삼성생명법'으로 불리는 보험업법 개정 논의가 삼성전자 지분의 강제 매각 가능성을 내포하고 있어 중장기 불확실성 요인으로 남아 있다. 삼성전자 반도체 업황이 악화되거나 밸류업 기대가 꺾일 경우, 투자손익 급감으로 삼성생명 실적 전반이 급격히 위축될 수 있다.",
+            "en": "Samsung Life's share price is disproportionately linked to Samsung Electronics' performance, and the 90%+ surge since early May has led many analysts to conclude that a substantial portion of dividend expectations is already priced in. If Samsung Electronics shares correct or the special dividend disappoints expectations, Samsung Life shares could face an outsized decline—one that core insurance fundamentals alone would be insufficient to cushion. Regulatory risk compounds this: proposed amendments to the Insurance Business Act (the so-called 'Samsung Life Act') could require forced divestiture of the Samsung Electronics stake, representing a persistent medium-to-long-term overhang. Any deterioration in Samsung Electronics' semiconductor cycle or fading of value-up expectations could sharply compress Samsung Life's investment income and overall earnings."
+          }
+        },
+        {
+          "title": {
+            "ko": "주주환원 구체안 부재와 다중 보험 규제 강화",
+            "en": "Lack of Concrete Shareholder Return Plan and Intensifying Regulatory Headwinds"
+          },
+          "body": {
+            "ko": "삼성생명은 2026년 1분기 컨퍼런스콜에서 중기 배당성향 50% 목표를 재확인했지만, 삼성전자 특별배당 연계 구체적 환원 방안에 대해서는 원론적 입장에 그쳤으며 주주환원율 목표 달성 시점과 방식에 대한 불확실성이 지속되고 있다. GA 수수료 규제 강화, 손해율·사업비 가이드라인 적용, 5세대 실손보험 출시에 따른 보험료 구조 변화 등 다중 규제가 동시에 적용되어 신계약 마진을 압박하고 있다. K-ICS 기본자본비율 규제가 2026년부터 시행되면서 자본 관리 부담도 중장기적으로 증가할 수 있다. 상법 개정 방향에 따라 자사주 소각이나 밸류업 공시 관련 추가 의무가 부과될 가능성도 배제할 수 없어, 현 주가 수준의 주주환원 프리미엄을 정당화하기가 쉽지 않다.",
+            "en": "At the 1Q 2026 earnings call, management reiterated the 50% medium-term payout ratio target but stopped short of providing a specific plan for channeling Samsung Electronics special-dividend proceeds to shareholders, reverting to principles-based language; key uncertainties around the return ratio timeline, the fraction of disposal gains earmarked for dividends, and DPS escalation pace remain unresolved. Regulatory headwinds are converging simultaneously: GA commission restrictions, loss ratio and expense guidelines, and the structural changes introduced by the fifth-generation loss insurance reform are collectively compressing new business margins. The implementation of the K-ICS basic capital ratio rule from 2026 adds a further layer of capital management constraint over the medium term. Potential obligations from Commercial Code amendments related to treasury share cancellation or value-up disclosures could impose additional requirements, making it difficult to fully justify the shareholder return premium currently embedded in the share price."
+          }
+        }
+      ],
+      "risks": [
+        {
+          "cat": {
+            "ko": "삼성전자 지분 규제 리스크",
+            "en": "Samsung Electronics Stake Regulatory Risk"
+          },
+          "body": {
+            "ko": "이른바 '삼성생명법'으로 불리는 보험업법 개정 논의는 삼성생명이 보유한 삼성전자 지분(8.51%)의 처분을 요구하는 방향으로 전개될 경우, 대규모 지분 강제 매각 가능성을 내포하고 있다. 삼성전자 지분은 삼성생명의 자본 규모 및 삼성그룹 지배구조의 핵심축으로, 지분 처분이 강제될 경우 그룹 전체 지배구조에도 파급 효과가 미칠 수 있다. 규제 입법화 시점과 범위는 불명확하지만, 시장에서는 이를 중장기 리스크로 지속적으로 주시하고 있다. 삼성전자 지분 가치 변동성이 삼성생명 주가에 미치는 영향이 과도한 구조 자체가 규제 당국의 관심 대상이기도 하다.",
+            "en": "The so-called 'Samsung Life Act'—proposed amendments to the Insurance Business Act—could require Samsung Life to divest its 8.51% stake in Samsung Electronics, with potentially major implications for Samsung Group's ownership structure. The Samsung Electronics holding is central both to Samsung Life's capital base and the Samsung Group governance framework; forced divestiture could generate ripple effects across the entire conglomerate. While the timing and scope of any such legislation remain unclear, the market treats this as a persistent medium-to-long-term overhang. The very fact that Samsung Electronics' share price movements exert an outsized impact on Samsung Life's valuation is itself an area of ongoing regulatory scrutiny."
+          }
+        },
+        {
+          "cat": {
+            "ko": "금리 및 역마진 리스크",
+            "en": "Interest Rate and Negative Spread Risk"
+          },
+          "body": {
+            "ko": "삼성생명의 보험료적립금 중 장기 고금리확정형(연 4.5% 이상, 만기 10년 이상) 비중은 2025년 9월 말 기준 26.3%에 달한다. 금리가 하락하거나 저금리 기조가 장기화될 경우 고금리 확정형 계약의 역마진 부담이 커지고 운용수익률과 보증이율 간 격차가 재확대될 위험이 있다. KIS 신용평가에 따르면 금리 충격 시나리오 적용 시 동사의 현행추정부채는 최대 10.6% 증가하고 순자산은 최대 8.4% 감소하는 것으로 추정된다. 운용자산 다변화와 해외채권 편입 등이 완충 역할을 하고 있으나, 금리 방향성이 역마진 리스크의 핵심 변수임은 변하지 않는다.",
+            "en": "Fixed-rate reserves with guaranteed rates of 4.5% or more and remaining tenors of 10 years or more accounted for 26.3% of total policy reserves as of September 2025. A sustained decline in market rates would widen the negative spread between guaranteed crediting rates and earned investment returns, increasing the reverse-margin burden. KIS Ratings estimates that under an interest rate stress scenario, Samsung Life's current-estimate insurance liabilities could rise by up to 10.6% and net assets could decline by up to 8.4%. Portfolio diversification and increased foreign bond allocation provide some buffer, but the trajectory of interest rates remains the decisive variable for negative-spread risk management."
+          }
+        },
+        {
+          "cat": {
+            "ko": "인구 구조 변화 및 보험시장 포화 리스크",
+            "en": "Demographic Headwinds and Market Saturation Risk"
+          },
+          "body": {
+            "ko": "한국의 저출산·고령화 추세가 심화됨에 따라 신규 고객 유입이 구조적으로 둔화되고 있으며, 생명보험 시장의 성장 여력 자체가 제한되고 있다. 고령화에 따른 의료비 급증과 실손보험 청구 증가는 보험금 지급 부담을 높여 보험손익 개선 여력을 압박하는 요인으로 작용한다. GA 채널의 급성장과 중소형 보험사들의 가격 경쟁이 신계약 마진을 지속적으로 압박하고 있으며, 업계 전반에서 보험손익 개선 여력이 점차 제한되고 있다는 평가가 나온다. 헬스케어·시니어리빙 등 비보험 신사업이 이러한 구조적 한계를 장기적으로 보완할 수 있는지가 핵심 관전 포인트다.",
+            "en": "South Korea's accelerating low birth rate and aging population structurally constrain new customer acquisition, capping the growth potential of the life insurance market. Rising healthcare costs and surging insurance claims driven by an aging policyholder base create upward pressure on claims outgo, limiting room for insurance margin improvement across the industry. The rapid expansion of the GA channel and price competition from smaller insurers continue to compress new business margins, and industry observers note increasingly limited capacity for insurance profit improvement. Whether non-insurance businesses—particularly healthcare services and senior living—can offset these structural constraints over the long term is a critical question for Samsung Life's growth trajectory."
           }
         }
       ],
@@ -656,195 +848,34 @@ window.KOS_REPORTS = {
           "en": "Neutral"
         },
         "body": {
-          "ko": "LG에너지솔루션은 EV 캐즘과 AMPC 급감이라는 단기 역풍 속에서도 국내 배터리 3사 중 유일하게 연간 흑자를 유지한 저력을 보유하고 있다. AI 데이터센터 전력 수요에 직결된 북미 ESS 대규모 수주, 46시리즈 원통형 배터리 수주 잔고 확대, FEOC 준수 완료에 따른 AMPC 기반 안정화는 중장기 성장 스토리를 뒷받침하는 핵심 요소다. 다만 2026년 2분기까지 적자 지속 가능성과 AMPC 감소 규모, 합작공장 재가동 타이밍, ESS 신규 라인 수익성 안정화 등 단기 불확실성이 상존하는 상황으로, 하반기 ESS 부문의 흑자 전환 여부 및 추가 대형 수주의 가시성이 확보될 때까지는 중립적 시각을 유지함이 적절한 것으로 판단된다. 본 리포트는 투자 권유를 목적으로 하지 않으며 정보 제공용으로만 활용되어야 한다.",
-          "en": "LG Energy Solution demonstrated its relative resilience by remaining the only profitable domestic battery maker in FY2025, even amid EV headwinds and AMPC volatility. Large-scale North American ESS orders tied to AI data center infrastructure, a growing 46-series cylindrical battery backlog, and secured FEOC compliance form the pillars of the company's medium-to-long-term growth narrative. However, near-term uncertainty persists — including the likelihood of continued operating losses into Q2 2026, the pace of AMPC recovery, JV plant restart timelines, and ESS ramp-up profitability. A Neutral stance is appropriate until clearer visibility emerges on H2 ESS profitability turnaround and additional large-scale order wins. This report is for informational purposes only and does not constitute investment advice."
+          "ko": "삼성생명은 업계 1위의 탄탄한 사업기반, 13.6조 원의 CSM 잔액, K-ICS 210%의 우수한 건전성을 바탕으로 중장기 이익 가시성이 양호한 기업이다. 2026년 1분기의 역대급 분기 실적(DART 공시 기준 영업이익 1.4조 원, 순이익 1.2조 원)은 삼성전자 투자이익이라는 특수한 요인에 크게 의존했으며, 보험서비스손익은 오히려 전년 대비 감소해 이익의 질적 균형에 대한 검토가 필요하다. 주가 측면에서는 2026년 5월 이후 약 90% 이상 급등해 현재 480,000원(시총 96조 원)에서 삼성전자 특별배당 기대가 이미 상당 부분 선반영된 것으로 판단되며, 추정 배당수익률 3%대는 현 밸류에이션 프리미엄을 완전히 정당화하기 어렵다. 삼성전자 지분 관련 규제 리스크, 주주환원 구체안 부재, 보험 본업의 구조적 도전이라는 세 가지 불확실성이 현 주가 수준에서의 추가 상승 여력을 제한하는 요인이다. 전반적으로 사업 펀더멘털은 견고하나, 삼성전자 모멘텀에 대한 과도한 의존 구조 및 단기간의 급격한 주가 상승을 감안해 현 시점에서는 중립적 관점이 적절하다고 판단한다.",
+          "en": "Samsung Life possesses strong fundamental credentials—industry-leading market position, KRW 13.6 trillion in in-force CSM, and a K-ICS ratio of 210%—underpinning solid medium-to-long-term earnings visibility. However, the record 1Q 2026 results (DART-confirmed operating profit KRW 1.4 trillion, net profit KRW 1.2 trillion) were driven predominantly by extraordinary Samsung Electronics-related investment income, while core insurance service margin actually declined year-over-year, raising questions about the quality and balance of near-term earnings. On valuation, the stock has surged more than 90% in roughly five weeks, and at the current price of KRW 480,000 (market cap KRW 96 trillion), a substantial portion of Samsung Electronics special-dividend expectations appears to be priced in; estimated dividend yields of approximately 3% provide insufficient compensation for the valuation premium at this level. Three key uncertainties constrain further upside from current levels: regulatory risk around the Samsung Electronics stake, the absence of a concrete shareholder return roadmap, and structural challenges facing the core insurance business. Overall, business fundamentals remain solid, but the disproportionate dependence on Samsung Electronics momentum—combined with the share price's sharp near-term re-rating—warrants a neutral assessment at present levels."
         }
       },
       "sources": [
-        "https://inside.lgensol.com/2026/01/lg%EC%97%90%EB%84%88%EC%A7%80%EC%86%94%EB%A3%A8%EC%85%98-2025%EB%85%84-%EC%97%B0%EA%B0%84-%EC%8B%A4%EC%A0%81%EB%B0%9C%ED%91%9C-%EB%A7%A4%EC%B6%9C-23%EC%A1%B06718%EC%96%B5-%EC%9B%90-%EC%98%81/",
-        "https://www.mt.co.kr/industry/2026/05/28/2026052808001595826",
-        "https://www.hankyung.com/article/202604308732i",
-        "https://datanews.co.kr/news/article.html?no=143373",
-        "https://needinfo.co.kr/lg-energysolution-26q1-analysis-target-price/",
-        "https://kbthink.com/news-list/view.html?newsId=20260531090013555",
-        "https://www.seoul.co.kr/news/economy/business-news/2026/05/27/20260527500088",
-        "https://www.asiae.co.kr/article/2026052816182754172",
-        "https://www.ebn.co.kr/news/articleView.html?idxno=1708558",
-        "https://www.mt.co.kr/industry/2026/03/20/2026031713492412090",
-        "https://econmingle.com/economy/lgenergysolution-q1-2026-operating-loss-ess/"
-      ],
-      "ticker": "373220",
-      "name": "LG에너지솔루션",
-      "name_en": "LG ENERGY SOLUTION, LTD.",
-      "sector": "2차전지",
-      "market": "코스피",
-      "reportDate": "2026-06-02",
-      "dataDate": "20260601"
-    },
-    "032830": {
-      "lead": {
-        "ko": "삼성생명은 역대 최대 연간 순이익(2조3028억원)과 2026년 1분기 89.5% 급증한 어닝 서프라이즈를 발판으로, 삼성전자 지분 가치 재평가·특별배당 기대·정부 밸류업 정책이 맞물리며 주가가 연중 최저점 대비 세 자릿수% 급등한 국내 보험 대장주다.",
-        "en": "Samsung Life Insurance has emerged as Korea's premier insurance bellwether, driven by record annual net profit of KRW 2.3 trillion, a Q1 2026 earnings surprise of +89.5% YoY, and a powerful re-rating catalyst from its ~8.4% Samsung Electronics stake amid government valuation-up policies."
-      },
-      "desc": {
-        "ko": "본 리포트는 2026년 6월 2일 기준 삼성생명(032830, 코스피 금융)의 최신 실적·사업 구조·시장 동향을 바탕으로 작성한 균형 잡힌 정보 제공용 기업 분석 자료이며, 투자 권유를 목적으로 하지 않습니다.",
-        "en": "This report is a balanced, informational research note on Samsung Life Insurance (032830, KOSPI Financials) as of June 2, 2026, based on publicly disclosed financials, regulatory filings, and recent media coverage. It does not constitute an investment recommendation."
-      },
-      "keypoints": [
-        {
-          "ko": "2025년 연결 지배주주 순이익 2조3028억원(YoY +9.3%) — 2년 연속 2조원대 달성, 역대 최대 기록; 2026년 1분기는 1조2036억원으로 전년 동기 대비 89.5% 급증하며 '어닝 서프라이즈'를 기록.",
-          "en": "FY2025 controlling-interest net profit of KRW 2.3028tn (+9.3% YoY), a record high for the second consecutive year; Q1 2026 net profit of KRW 1.2036tn surged 89.5% YoY, delivering a notable earnings surprise."
-        },
-        {
-          "ko": "삼성전자 지분 약 8.4% 보유로 지분 가치 상승·특별배당 시나리오 직접 수혜; 이재명 정부 출범 이후 보험 섹터 시총이 1년 내 약 100% 팽창하며 저PBR 재평가 흐름이 가속.",
-          "en": "Holding ~8.4% of Samsung Electronics aligns Samsung Life as a direct beneficiary of SEC's potential special dividend and share buyback; Korea's insurance-sector market cap nearly doubled since June 2025 amid a government-driven low-PBR re-rating."
-        },
-        {
-          "ko": "K-ICS(지급여력비율) 210% 달성으로 규제 목표를 상회하는 우수한 자본 건전성; 중장기 배당성향 50% 목표를 공표했으나, 구체적 환원 계획 부재로 시장과의 소통 간극이 잔존.",
-          "en": "K-ICS solvency ratio of 210% comfortably exceeds regulatory targets; management has set a mid-term 50% payout ratio target, yet concrete timelines remain vague, creating a persistent gap with market expectations."
-        }
-      ],
-      "business": {
-        "ko": "삼성생명은 1957년 설립된 국내 최대 생명보험사로, 사망·질병·장애 보장성보험과 노후대비 연금·저축성보험 등 생애주기 전반에 걸친 상품을 제공한다. 2025년 기준 영업수익은 37조1383억원(YoY +9.9%)으로 국내 500대 기업 20위에 올라섰다. 삼성증권 지분 29.39%, 삼성자산운용 지분 100%를 보유한 '지주형 보험사' 성격이 강해, 자회사 실적이 연결 투자손익에 직접 반영된다. 2025년에는 삼성노블라이프를 설립해 시니어리빙 사업을 확장하고, 태국·중국 등 해외시장 진출 및 글로벌 자산운용사 지분 투자를 병행하며 수익원 다각화를 추진 중이다. 핵심 수익 지표인 CSM(보험계약마진) 잔액은 2025년 말 기준 13조2000억원으로 전년 대비 3000억원 증가했으며, 2026년 신계약 CSM 목표치는 3조2000억원 이상으로 제시됐다.",
-        "en": "Founded in 1957, Samsung Life is Korea's largest life insurer, offering a full suite of protection, annuity, and savings products across the customer lifecycle. FY2025 operating revenue reached KRW 37.1383tn (+9.9% YoY), propelling it to 20th place in Korea's Top 500 companies. Its holding-company-like structure—controlling 29.39% of Samsung Securities and 100% of Samsung Asset Management—means subsidiary performance feeds directly into consolidated investment income. In 2025, the company launched Samsung Noble Life to expand its senior-living business while pursuing overseas growth in Thailand and China and cultivating global asset management partnerships. The year-end CSM (contractual service margin) balance stood at KRW 13.2tn, up KRW 300bn YoY, with a 2026 new-contract CSM target of at least KRW 3.2tn."
-      },
-      "recent": {
-        "ko": "2025년 연간 지배주주 순이익은 전년 대비 9.3% 증가한 2조3028억원으로 역대 최대치를 경신했으며, 고수익 건강상품 판매 확대에 힘입어 신계약 CSM 3조595억원을 달성했다. 그러나 4Q25는 유배당연금 연말 가정 조정(손실계약비용 2320억원 반영) 등으로 보험손익이 적자 전환하며 컨센서스를 하회했다. 2026년 1분기는 삼성증권·삼성자산운용 등 자회사 실적 급증에 따른 배당수익 확대로 투자손익이 1조2729억원(YoY +125.5%)으로 팽창하면서 분기 순이익 1조2036억원을 기록, 2025년 연간 이익의 절반 이상을 한 분기에 달성했다. 주가는 2026년 4월 관세 이슈로 저점(7만4200원, 2025년 4월 9일)을 찍은 후 삼성전자 주가 급등·지분 매각 배당 재원 기대·어닝 서프라이즈가 복합 작용해 2026년 6월 2일 기준 41만원 수준으로 급등했다.",
-        "en": "FY2025 controlling-interest net profit rose 9.3% to a record KRW 2.3028tn, supported by robust new-contract CSM of KRW 3.0595tn driven by high-margin health products. However, Q4 2025 disappointed consensus as insurance service margin turned to a deficit, primarily due to a KRW 232bn loss-contract cost recognition related to year-end actuarial assumption adjustments for participating annuities. Q1 2026 rebounded sharply: investment income surged 125.5% YoY to KRW 1.2729tn, fueled by dividend income from Samsung Securities and Samsung Asset Management, lifting consolidated net profit to KRW 1.2036tn—equivalent to over half of FY2025's full-year earnings in a single quarter. The share price bottomed at KRW 74,200 (April 9, 2025) amid U.S. tariff concerns before rallying sharply to KRW 410,000 (June 2, 2026), driven by Samsung Electronics' share price gains, the Samsung Electronics stake disposal windfall, and the Q1 earnings surprise."
-      },
-      "outlook": {
-        "ko": "2026년 삼성생명의 핵심 주가 모멘텀은 삼성전자의 특별배당 현실화 여부에 달려 있다. 삼성전자 주식을 약 8.4% 보유한 삼성생명은, 삼성전자 특별배당이 현실화할 경우 수조 원 규모의 추가 배당수익을 기대할 수 있으며 이는 중장기 주주환원 50% 목표 달성의 핵심 재원이 된다. 보험 본업에서는 2026년 신계약 CSM 3조2000억원 이상 목표와 함께, 예실차 관리·실손보험 손해율 개선이 하반기 실적 안정의 관건이다. 한편 정부의 밸류업·상법 개정 방향이 구체화되면 추가적인 자사주 소각·배당 확대 공시 가능성이 있어 하반기 재평가 모멘텀이 유지될 수 있다.",
-        "en": "Samsung Life's near-term share price catalyst hinges on the materialization of Samsung Electronics' potential special dividend. As the holder of approximately 8.4% of Samsung Electronics, Samsung Life stands to receive substantial additional dividend income that could serve as a key funding source for its medium-term 50% shareholder return target. On the insurance business front, meeting the 2026 new-contract CSM target of at least KRW 3.2tn and improving the experience variance loss in health lines remain critical for second-half earnings stability. Should the government's corporate governance reform agenda and Commercial Act amendments gain legislative traction, further shareholder return announcements remain plausible, sustaining re-rating momentum into H2 2026."
-      },
-      "bull": [
-        {
-          "title": {
-            "ko": "삼성전자 특별배당 직접 수혜",
-            "en": "Direct Beneficiary of Samsung Electronics Special Dividend"
-          },
-          "body": {
-            "ko": "삼성생명은 삼성전자 지분 약 8.4%를 보유한 최대 기관 주주 중 하나로, 최근 보도에 따르면 시장 일각에서 삼성전자 특별배당 시 삼성생명의 배당수익이 1조3000억원 이상 늘어날 수 있다는 관측이 제기됐다. 삼성생명 CFO도 삼성전자 특별배당 수익을 배당 재원에 포함하겠다는 방침을 공식 확인했다.",
-            "en": "Samsung Life, holding approximately 8.4% of Samsung Electronics, is among its largest institutional shareholders. Market estimates suggest that a Samsung Electronics special dividend could add over KRW 1.3tn to Samsung Life's dividend income, and the company's CFO has officially confirmed that such proceeds would be included in shareholder return funding."
-          }
-        },
-        {
-          "title": {
-            "ko": "역대 최대 실적 + 2026년 어닝 서프라이즈",
-            "en": "Record Earnings + Q1 2026 Earnings Surprise"
-          },
-          "body": {
-            "ko": "2025년 순이익 2조3028억원으로 2년 연속 역대 최대를 경신한 데 이어, 2026년 1분기 순이익이 전년 동기 대비 89.5% 급증하며 시장 컨센서스를 대폭 상회했다. 자회사인 삼성증권(1Q26 순이익 4509억원, YoY +81.85%)과 삼성자산운용의 실적 급증이 연결 투자손익을 견인했다.",
-            "en": "Following a consecutive record net profit of KRW 2.3028tn in FY2025, Q1 2026 net profit surged 89.5% YoY, materially beating market consensus. Subsidiary Samsung Securities (Q1 2026 net profit KRW 450.9bn, +81.85% YoY) and Samsung Asset Management's strong results drove consolidated investment income to a record level."
-          }
-        },
-        {
-          "title": {
-            "ko": "밸류업 정책·저PBR 보험주 재평가",
-            "en": "Government Valuation-Up Drive and Low-PBR Insurance Re-rating"
-          },
-          "body": {
-            "ko": "이재명 정부 출범 이후 정부의 강력한 기업 밸류업 프로그램 추진으로 대표적 저PBR 업종인 보험주 전반이 재평가되면서, 상장 보험사 9개사의 합산 시총이 약 100% 팽창했다. 삼성생명은 시총 세 자릿수% 급등을 기록하며 업계 선두로서의 지위를 강화했으며, K-ICS 210% 달성이 배당 확대 여력의 신뢰도를 높이고 있다.",
-            "en": "Since the Lee Jae-myung government took office in June 2025, a strong corporate valuation-up policy has catalyzed a broad re-rating of low-PBR insurers—aggregate market caps of nine listed insurers nearly doubled. Samsung Life led the pack with a triple-digit percentage surge, and its K-ICS ratio of 210% adds credibility to the potential for enhanced shareholder returns."
-          }
-        }
-      ],
-      "bear": [
-        {
-          "title": {
-            "ko": "보험 본업 손익 약화",
-            "en": "Softening Core Insurance Profitability"
-          },
-          "body": {
-            "ko": "4Q25 보험서비스손익이 -1182억원으로 적자 전환했으며, 2026년 1분기에도 보험손익이 전년 대비 7.7% 감소했다. 실손보험 보험료 인하, 의료파업 정상화 이후 청구 급증, 예실차 적자 확대가 복합 작용하고 있어 본업 수익성 개선은 지속적인 모니터링이 필요하다.",
-            "en": "Q4 2025 insurance service margin turned negative at -KRW 118.2bn, and Q1 2026 insurance profit declined 7.7% YoY. Converging headwinds—health insurance premium cuts, surging post-medical-strike claims, and widening experience-variance losses—weigh on core insurance profitability and warrant close monitoring."
-          }
-        },
-        {
-          "title": {
-            "ko": "주주환원 구체성 부족 및 시장 기대 간극",
-            "en": "Shareholder Return Vagueness vs. Market Expectations"
-          },
-          "body": {
-            "ko": "삼성생명은 중장기 주주환원율 50% 목표를 공표했으나, 삼성전자 지분 매각 배당 반영 시점·규모, 자사주 소각 계획, 밸류업 공시 구체안을 제시하지 않고 있다. 시장 일각에서는 '업계 최고 수준의 수익성·자본력 대비 주주환원에 상대적으로 소극적'이라는 비판이 제기되고 있다.",
-            "en": "Despite announcing a medium-term 50% shareholder payout target, Samsung Life has not disclosed specific timelines, amounts, or triggers for the Samsung Electronics stake disposal proceeds, share buyback/cancellation, or valuation-up commitments. Market observers have noted that the company's shareholder return actions lag its world-class profitability and capital strength."
-          }
-        },
-        {
-          "title": {
-            "ko": "단기 급등에 따른 밸류에이션 부담",
-            "en": "Valuation Overhang After Sharp Share Price Rally"
-          },
-          "body": {
-            "ko": "삼성생명 주가는 2025년 4월 저점(7만4200원) 대비 2026년 6월 2일 41만원으로 단기간에 큰 폭 상승했다. 증권사 목표주가를 이미 대폭 상회하는 주가 수준에서 추가 상승을 위해서는 본업 지표(CSM, 예실차) 개선과 주주환원 구체화가 수반되어야 한다는 평가가 지배적이다.",
-            "en": "Samsung Life's share price has surged dramatically from a 2025 low of KRW 74,200 to KRW 410,000 by June 2, 2026, materially exceeding most sell-side price targets. Sustaining further upside from current levels requires tangible improvement in core insurance metrics (CSM, experience variance) and concrete shareholder return announcements."
-          }
-        }
-      ],
-      "risks": [
-        {
-          "cat": {
-            "ko": "거시·금융시장 리스크",
-            "en": "Macro & Financial Market Risk"
-          },
-          "body": {
-            "ko": "삼성생명의 투자손익은 삼성전자 주가 및 국내외 증시 흐름에 크게 연동된다. 금리 변동은 보험부채 할인율과 운용자산 수익률에 동시에 영향을 주며, 글로벌 불확실성(미·중 무역분쟁, 환율 변동)이 투자손익 변동성을 확대할 수 있다.",
-            "en": "Investment income is highly correlated to Samsung Electronics' share price and broader equity market conditions. Interest rate movements simultaneously affect the discount rate for insurance liabilities and investment asset yields, while global uncertainties—U.S.-China trade tensions and FX volatility—can amplify investment P&L swings."
-          }
-        },
-        {
-          "cat": {
-            "ko": "규제·제도 리스크",
-            "en": "Regulatory & Policy Risk"
-          },
-          "body": {
-            "ko": "실손보험 4·5세대 개편, GA 수수료 규제(1200% 룰 등), 금감원 예실차 지도 강화 등 보험업 규제 환경이 빠르게 변화하고 있다. 특히 GA 채널의 시장 지배력 확대는 보험사의 판매비용 구조를 압박할 수 있다. 상법 개정 방향에 따라 자본 정책 재편이 불가피해질 가능성도 있다.",
-            "en": "The insurance regulatory landscape is evolving rapidly: indemnity health insurance overhaul, agency commission caps (1,200% rule), and intensified FSS guidance on experience variance adjustments all pose headwinds. Rising GA channel dominance threatens to inflate distribution costs, while the direction of Commercial Act amendments may compel capital policy changes."
-          }
-        },
-        {
-          "cat": {
-            "ko": "지배구조·금산법 리스크",
-            "en": "Governance & Financial-Industry Separation Risk"
-          },
-          "body": {
-            "ko": "금산법상 금융사는 비금융사 지분을 10% 이상 보유할 수 없어, 삼성생명의 삼성전자 지분율이 소각 후 자연 증가 시 추가 매각 압박이 발생한다. 삼성그룹 지배구조 개편(삼성바이오로직스 인적분할 등)과 연계된 불확실성도 주가 변동성 요인으로 작용할 수 있다.",
-            "en": "Financial-industry separation law caps financial company ownership in non-financial entities at 10%. As Samsung Electronics' share buybacks and cancellations naturally increase Samsung Life's proportional stake, forced additional disposals could create selling pressure. Samsung Group's broader governance restructuring (e.g., Samsung Biologics split) adds further uncertainty to Samsung Life's strategic positioning."
-          }
-        }
-      ],
-      "verdict": {
-        "stance": {
-          "ko": "긍정적",
-          "en": "Constructive"
-        },
-        "body": {
-          "ko": "삼성생명은 역대 최대 실적과 어닝 서프라이즈, 삼성전자 지분 가치 재평가, 정부 밸류업 정책이라는 삼중 모멘텀을 누리고 있다. K-ICS 210% 달성으로 자본 건전성이 우수하며, 중장기 50% 주주환원 목표와 CSM 성장 기반이 수익 예측 가능성을 높인다. 다만 주가가 단기간 급등해 밸류에이션 부담이 확대된 상황에서, 본업(보험손익·예실차) 개선 속도와 주주환원 정책의 구체성이 추가 상승 지속 여부를 결정하는 핵심 변수가 될 것이다. 삼성전자 특별배당 규모·시점, 실손보험 손해율 추이, 상법 개정 방향을 지속적으로 모니터링할 필요가 있다.",
-          "en": "Samsung Life benefits from a triple tailwind: consecutive record earnings, a compelling Samsung Electronics re-rating story, and government-driven valuation-up momentum. Its robust K-ICS ratio, a credible long-term 50% payout target, and a growing CSM backlog all support earnings visibility. However, the sharp near-term share price appreciation has elevated valuation multiples, making the pace of core insurance margin recovery and shareholder return concreteness the key swing factors for sustaining the rally. Investors should closely track the size and timing of any Samsung Electronics special dividend, health insurance loss-ratio trends, and the legislative trajectory of Korea's Commercial Act reform."
-        }
-      },
-      "sources": [
-        "https://www.inthenews.co.kr/news/article.html?no=82490",
-        "https://www.inthenews.co.kr/news/article.html?no=86873",
         "https://www.insight.co.kr/news/554247",
+        "https://www.newspim.com/news/view/20260514001097",
+        "https://www.dailian.co.kr/news/view/1647720/%ED%88%AC%EC%9E%90%EC%86%90%EC%9D%B5-%ED%9E%98-%EB%B0%9B%EC%9D%80-%EC%83%9D%EB%B3%B4%EC%82%AC%E2%80%98%EB%B9%853%E2%80%99-1%EB%B6%84-2026",
+        "https://www.1conomynews.co.kr/news/articleView.html?idxno=48594",
+        "https://dealsite.co.kr/articles/157257/083028",
+        "https://kisrating.com/fileDown.do?menuCd=R8&gubun=2&fileName=rs20251121-12.pdf",
+        "https://www.hankyung.com/article/202605295906i",
+        "https://www.joongangenews.com/news/articleView.html?idxno=513529",
+        "https://kbthink.com/securities-view.html?docId=20260219095438880K",
+        "https://www.ftoday.co.kr/news/articleView.html?idxno=358995",
         "https://m.ceoscoredaily.com/page/view/2026050610290711162",
-        "https://m.ceoscoredaily.com/page/view/2026051310231682634",
-        "https://www.samsungpop.com/common.do?cmd=down&contentType=application/pdf&inlineYn=Y&saveKey=research.pdf&fileName=2010/2026022213004852K_02_02.pdf",
-        "https://www.fntimes.com/html/view.php?ud=2026022016182699278a55064dd1_18",
-        "https://www.newspim.com/news/view/20260514001009",
-        "https://news.nate.com/view/20260415n04496",
-        "https://www.greenpostkorea.co.kr/news/articleView.html?idxno=306785",
-        "https://mediawatch.kr/news/article.html?no=259508",
-        "https://www.insjournal.co.kr/news/articleView.html?idxno=26906",
-        "https://zdnet.co.kr/view/?no=20260129081719",
-        "https://comp.fnguide.com/SVO2/ASP/SVD_Main.asp?pGB=1&gicode=A032830&MenuYn=Y&ReportGB=B&NewMenuID=Y&stkGb=701"
+        "https://news.nate.com/view/20260415n04496"
       ],
       "ticker": "032830",
       "name": "삼성생명",
       "name_en": "Samsung Life Insurance co., Ltd",
-      "sector": "금융",
+      "sector": "보험",
+      "categories": [
+        "보험"
+      ],
       "market": "코스피",
-      "reportDate": "2026-06-02",
-      "dataDate": "20260601"
+      "reportDate": "2026-06-03",
+      "dataDate": "20260602"
     },
     "012450": {
       "lead": {
@@ -1011,132 +1042,140 @@ window.KOS_REPORTS = {
     },
     "028260": {
       "lead": {
-        "ko": "수익성 중심 체질개선과 삼성전자 지분가치 재평가를 동력으로 주가가 급등한 삼성물산은, 원전·SMR 신사업 확대와 계열사 발주 증가를 통해 건설부문 실적 반등을 모색하고 있다.",
-        "en": "Samsung C&T is riding a sharp share-price re-rating fueled by its Samsung Electronics stake revaluation and a profitability-first strategy, while the construction segment targets a recovery through nuclear/SMR projects and intra-group CAPEX orders."
+        "ko": "삼성물산은 2026년 1분기 분기 기준 사상 최고 매출을 달성하고 바이오·원전 신성장 축과 4기 주주환원 정책을 장착하며, 복합 대형주로서의 구조적 리레이팅 국면에 진입하고 있다.",
+        "en": "Samsung C&T has posted record quarterly revenue in Q1 2026 and is entering a structural re-rating phase, anchored by dual growth engines in biologics and nuclear power alongside its freshly announced 4th shareholder return policy."
       },
       "desc": {
-        "ko": "본 리포트는 삼성물산(028260)의 2025년 연간 확정 실적 및 2026년 1분기 공시 수치를 근거로, 사업구조·최근 주가 흐름·산업 동향 및 주요 투자 쟁점을 분석한 정보 제공용 리서치 자료입니다.",
-        "en": "This report analyzes Samsung C&T (028260) based on audited 2025 annual results and 2026 Q1 disclosures, examining business structure, recent share-price trends, industry dynamics, and key investment considerations for informational purposes."
+        "ko": "삼성물산(028260)은 건설·상사·패션·리조트·바이오 등 6개 사업부문을 영위하는 삼성그룹의 사실상 지주회사로, 132개 종속회사를 보유하고 있다. DART 공시 기준 2025년 영업이익은 전기 대비 10.4% 증가한 3.3조원으로 수익성이 개선됐고, 2026년 1분기 연결 매출은 분기 기준 사상 최고인 10.5조원을 기록하며 외형 성장이 재개됐다. 3년간 최대 9.4조원 중장기 투자 계획, 원전·SMR 투트랙 전략, 바이오 5공장 가동 본격화가 맞물리면서 시장의 폭넓은 재평가가 진행 중이다.",
+        "en": "Samsung C&T (028260) is the de facto holding company of Samsung Group, operating across six segments—Construction, Trading, Fashion, Resort, Food Service, and Bio—with 132 subsidiaries. Per DART filings, FY2025 operating profit improved 10.4% YoY to KRW 3.3 trillion, and Q1 2026 consolidated revenue reached a record KRW 10.5 trillion, signaling a resumption of top-line growth. A medium-to-long-term capex plan of up to KRW 9.4 trillion over three years, a dual-track nuclear strategy, and the full ramp-up of Samsung Biologics' fifth plant are collectively driving a broad-based market re-rating."
       },
       "keypoints": [
         {
-          "ko": "2025년 매출은 대형 하이테크 프로젝트 준공 영향으로 전기대비 3.2% 감소했으나, 영업이익은 10.4% 증가해 수익성 중심 경영전략이 확인됨 (DART 공시 기준).",
-          "en": "FY2025 revenue declined 3.2% YoY as large high-tech projects completed, yet operating profit rose 10.4%, confirming a deliberate shift toward quality-over-volume management (per DART filing)."
+          "ko": "2026년 1분기 연결 매출 10.5조원(+7.5% YoY) — 분기 기준 사상 최고치 경신, 외형 성장 재개 확인",
+          "en": "Q1 2026 consolidated revenue of KRW 10.5 trillion (+7.5% YoY) — record quarterly high, confirming a resumption of top-line growth"
         },
         {
-          "ko": "2026년 3월 말~5월 중순, 약 두 달 만에 주가가 65% 이상 급등했으며, 삼성전자 시총 급상승에 따른 보유 지분 NAV 재평가와 SMR 사업 기대감이 주요 배경으로 분석됨.",
-          "en": "The share price surged approximately 65% in roughly two months through mid-May 2026, driven primarily by a NAV re-rating of Samsung Electronics holdings and rising expectations for the SMR business."
+          "ko": "2025년 영업이익 3.3조원(+10.4%), 당기순이익 3.9조원(+40.9%) — 매출 감소에도 이익의 질 개선 뚜렷",
+          "en": "FY2025 operating profit KRW 3.3 trillion (+10.4%), net profit KRW 3.9 trillion (+40.9%) — clear earnings quality improvement despite top-line contraction"
         },
         {
-          "ko": "2024~2026년 중기 주주환원 계획에 따라 자사주 소각이 2026년 3월 완료됐으며, 주당 2,800원의 현금배당과 관계사 배당수익의 60~70% 환원 정책이 병행되고 있음.",
-          "en": "The 2024–2026 treasury share cancellation program was completed in March 2026, complemented by a KRW 2,800/share cash dividend and a policy of returning 60–70% of affiliate dividend income to shareholders."
+          "ko": "대형원전+SMR 투트랙 전략: 국내외 원전 10기 시공 경험 기반으로 NuScale·GVH와 협력, 루마니아 체르나보다 원전 수주 및 아태지역 MOU 체결",
+          "en": "Dual-track nuclear strategy: backed by a track record of 10 nuclear plants, partnering with NuScale and GVH, securing the Romania Cernavodă contract, and inking Asia-Pacific MOU with KHNP"
+        },
+        {
+          "ko": "4기 주주환원 정책(2026~2028) 발표 및 구 3개년 자사주 780만주 소각 완료 — 관계사 배당수익 60~70% 재배당 기조 유지",
+          "en": "4th shareholder return policy (2026–2028) announced; prior three-year 7.8 million treasury share cancellation completed — 60–70% affiliate dividend re-distribution policy maintained"
+        },
+        {
+          "ko": "3년간 최대 9.4조원 투자 계획 중 에너지·바이오에 6.5~7.5조원 집중 배분 — SMR·재생에너지·바이오 중심 성장 포트폴리오로 고도화",
+          "en": "Up to KRW 9.4 trillion capex over three years, with KRW 6.5–7.5 trillion focused on energy and bio — clear long-term portfolio upgrade towards SMR, renewables, and biologics"
         }
       ],
       "business": {
-        "ko": "삼성물산은 건설·상사·패션·리조트 등 4개 부문을 운영하는 복합 대기업이다. 건설부문은 국내외 하이테크·플랜트·주거 공사를 주력으로 하며, 루마니아 체르나보다 EPC 및 스웨덴 링할스 SMR FEED 등 원전 프로젝트 수주를 적극 추진하고 있다. 상사부문은 글로벌 원자재·화학·IT 트레이딩을, 패션부문은 프리미엄 패션 브랜드를, 리조트부문은 골프·호텔·식음사업을 영위한다. 아울러 삼성전자를 비롯한 삼성 계열사 지분을 보유해 지주회사에 준하는 역할도 수행하며, 이 지분가치가 시가총액과 NAV 산정에 핵심 변수로 작용한다.",
-        "en": "Samsung C&T is a diversified conglomerate operating across four segments: Construction, Trading, Fashion, and Resort. The Construction division focuses on domestic and overseas high-tech facilities, plants, and residential projects, while actively pursuing nuclear energy opportunities including the Romania Cernavoda EPC project and the Sweden Ringhals SMR FEED project. The Trading segment handles global commodities, chemicals, and IT trade; Fashion manages premium brands; and Resort operates golf, hotel, and food-service businesses. The company also functions as a de facto holding entity through its strategic stakes in Samsung affiliates, most notably Samsung Electronics, whose NAV is a pivotal driver of the overall valuation."
+        "ko": "삼성물산은 1938년 삼성상회로 시작해 2015년 삼성물산·제일모직 합병을 통해 현재의 법인으로 재탄생했으며, 132개 종속회사를 보유한 삼성그룹의 모기업 역할을 수행하고 있다. 사업구조는 건설·상사·패션·리조트(급식·식자재 포함)·바이오의 6개 부문으로 구성되며, 부문별 특성이 상이해 경기 국면에 따른 분산 효과를 제공한다. 2026년 1분기 기준 상사부문이 매출 4.11조원으로 전체의 약 39%를 차지하며 최대 비중을 점하고, 건설부문이 약 33%(3.41조원), 리조트·패션이 각각 9%·5.5% 내외를 기여한다. 건설부문은 초고층 빌딩·반도체 팹(하이테크)·데이터센터·공항 등 기술 특화 프로젝트를 핵심 경쟁력으로 삼으며, 국내외 원전 총 10기 시공 경험을 바탕으로 글로벌 원전 시장에서 현대건설과 경합하는 위치에 있다. 상사부문은 40개국 69개 해외 거점을 통해 화학·철강·비철금속 솔루션 및 태양광·BESS 재생에너지 운영사업을 영위하며, 단순 트레이딩에서 프로젝트 개발·운영 모델로의 전환을 추진하고 있다. 패션부문(빈폴·에잇세컨즈 등)과 리조트·급식부문은 내수 소비에 연동되는 안정적 현금 창출 기반을 제공하며, 최근 소비 심리 회복과 파크 이용객 증가로 외형 성장 흐름이 확인되고 있다. 바이오부문은 삼성바이오로직스(78.4만 리터 생산 설비)와 삼성바이오에피스로 구성되며, 높은 영업이익률과 가파른 성장세로 전사 수익성 개선의 핵심 축이 되고 있다. 삼성물산은 삼성전자·삼성바이오로직스 등 그룹 내 상장 계열사 지분을 보유하고 있어 계열사 배당 수입이 주주환원의 주된 재원이 되는 구조며, 이는 동종 건설사·상사와 차별화되는 복합 지주회사형 투자 유인을 형성한다.",
+        "en": "Samsung C&T traces its origins to Samsung Sangsa (1938) and was reconstituted in its current form through the 2015 merger with Cheil Industries, now serving as Samsung Group's parent holding company with 132 subsidiaries. The business is organized across six segments—Construction, Trading, Fashion, Resort (including food service), and Bio—each with distinct economic characteristics that provide meaningful diversification across business cycles. Based on Q1 2026 results, Trading is the largest contributor at approximately 39% of revenue (KRW 4.11 trillion), followed by Construction at ~33% (KRW 3.41 trillion), Resort at ~9%, and Fashion at ~5.5%. Construction differentiates itself through high-tech semiconductor fab, data center, airport, and nuclear power projects, supported by a track record of constructing ten nuclear plants domestically and internationally—placing it in direct competition with Hyundai E&C in the global nuclear arena. The Trading segment operates across 40 countries and 69 overseas locations, covering chemical, steel, non-ferrous metals, and renewable energy operations, with an ongoing strategic shift from pure merchandise trading toward project development and asset operation models. Fashion (Beanpole, Eighteconds) and Resort/Food Service provide stable domestic cash generation, with recent improvement in consumer sentiment and rising theme park visitor numbers supporting top-line momentum. The Bio segment—anchored by Samsung Biologics (784,000-liter CDMO capacity) and Samsung BioEpis—commands above-average operating margins and is the leading profitability driver for the consolidated entity. Samsung C&T's holdings in listed Samsung Group affiliates, including Samsung Electronics and Samsung Biologics, create a distinctive holding-company value proposition—where affiliate dividend flows directly fund shareholder returns—that sets it apart from conventional construction or trading peers."
       },
       "recent": {
-        "ko": "DART 공시 기준, 2025년 연간 매출액 40.7조원(전기대비 -3.2%)·영업이익 3.3조원(+10.4%)·당기순이익 3.9조원(+40.9%)을 기록했다. 매출 감소는 건설부문 하이테크 대형 프로젝트 준공 종료에 따른 것이며, 영업이익과 순이익 개선은 수익성 중심 운영의 결과다. 2026년 1분기(공시 기준)는 매출 10.5조원(+7.5%)·영업이익 7,204억원(-0.6%)·당기순이익 1.1조원(+15.9%)으로 시장 예상치에 부합했다. 주가는 2026년 3월 말 26만원대에서 6월 2일 기준 485,500원까지 급등하며 같은 기간 삼성전자 주가 강세와 연동된 NAV 재평가가 주된 상승 동력으로 작용했다.",
-        "en": "Per DART filings, FY2025 revenue came in at KRW 40.7 trillion (−3.2% YoY), operating profit at KRW 3.3 trillion (+10.4%), and net income at KRW 3.9 trillion (+40.9%). The revenue dip was attributable to the completion cycle of large high-tech construction projects, while the profit improvement reflects disciplined margin management. In 2026 Q1 (per DART), revenue grew 7.5% YoY to KRW 10.5 trillion, operating profit slipped marginally by 0.6% to KRW 720.4 billion, and net income rose 15.9% to KRW 1.1 trillion, broadly in line with market expectations. The share price surged from roughly KRW 261,500 in late March 2026 to KRW 485,500 by June 2, 2026, largely driven by a NAV re-rating as Samsung Electronics' market capitalization expanded sharply."
+        "ko": "DART 공시 기준 2025년 연간 연결 매출은 40.7조원으로 전기 대비 3.2% 감소했으나, 영업이익은 3.3조원으로 10.4% 증가하며 이익의 질 개선이 두드러졌다. 당기순이익은 3.9조원으로 전기 대비 40.9% 급증했으며, 이는 계열사 배당 수입 증가와 바이오부문 약진이 주된 요인으로 분석된다. 부문별로는 건설이 하이테크 등 대형 프로젝트의 준공 단계 영향으로 실적이 감소했고, 상사는 보호무역 확산 속에서도 판매를 확대하며 매출이 증가했으나 영업이익은 소폭 감소했다. 2026년 1분기에는 연결 매출이 10.5조원(+7.5% YoY)으로 분기 기준 사상 최고치를 달성했고, 영업이익은 7,204억원으로 전년 동기 대비 소폭(-0.6%) 감소에 그쳤다. 1분기 상사부문(매출 4.11조원, 영업이익 1,090억원)이 전년 동기 대비 각각 19.7%, 73% 급증하며 전사 실적을 견인했으며, 철강 수요 회복·비료 판매 확대·비철금속 트레이딩 호조가 성장 배경이었다. 패션(매출 5,730억원, +13.7% YoY)과 리조트(매출 9,300억원, +5.8% YoY)도 개선세를 이어간 반면, 건설부문(매출 3.41조원, 영업이익 1,110억원)은 대형 프로젝트 준공 및 일회성 비용 반영으로 영업이익이 전년 동기 대비 30.2% 감소했다. 주가는 2026년 3월 말 26만원대에서 6월 3일 기준 48만 5,500원(+6.70% 당일)으로 급등하며, 두 달 남짓 사이에 약 65% 이상의 주가 상승이 나타났고, 이는 원전 신사업 기대감과 기관·외국인의 동시 순매수가 맞물린 결과로 시장에서 분석되고 있다.",
+        "en": "Per DART filings, FY2025 consolidated revenue was KRW 40.7 trillion (–3.2% YoY), but operating profit reached KRW 3.3 trillion (+10.4% YoY), reflecting a clear improvement in earnings quality. Net profit surged 40.9% YoY to KRW 3.9 trillion, driven primarily by higher affiliate dividend income and strong Bio segment performance. By segment, Construction saw a decline due to the completion phase of major high-tech projects, while Trading expanded volumes despite protectionist headwinds, though operating profit dipped modestly. In Q1 2026, consolidated revenue hit a record KRW 10.5 trillion (+7.5% YoY), while operating profit came in at KRW 720.4 billion (–0.6% YoY)—essentially flat year-on-year. The Trading segment led the Q1 recovery, with revenue of KRW 4.11 trillion (+19.7% YoY) and operating profit of KRW 109 billion (+73% YoY), benefiting from steel demand recovery, fertilizer sales expansion, and non-ferrous metal trading gains. Fashion (revenue KRW 573 billion, +13.7% YoY) and Resort (revenue KRW 930 billion, +5.8% YoY) also improved, while Construction posted an operating profit of KRW 111 billion (–30.2% YoY), dragged down by large-project completions and one-off cost recognitions. On the price front, the stock surged from around KRW 261,500 at end-March 2026 to KRW 485,500 by June 3, 2026—a gain of approximately 65%—driven by nuclear power expectations and concurrent institutional and foreign buying."
       },
       "outlook": {
-        "ko": "회사 경영진은 계열사 발주 프로젝트 확대에 힘입어 2026년 건설 수주가 증가할 것으로 전망하며, 영업이익률을 2025년 3.8% 수준에서 약 5%까지 끌어올리는 것을 목표로 제시했다. 루마니아·스웨덴 원전 프로젝트는 2026년 말 또는 2027년 가시화될 가능성이 있어 중장기 성장 모멘텀으로 기대를 모으고 있다. 다만 2026년 건설 수주 목표를 7.7조원으로 보수적으로 설정한 점은 매출 재확장 속도가 예상보다 완만할 수 있음을 시사한다.",
-        "en": "Management has guided for higher construction order intake in 2026 on the back of additional intra-group CAPEX awards, targeting an operating profit margin expansion from approximately 3.8% in 2025 to around 5%. Nuclear pipeline projects in Romania and Sweden are expected to become more visible by late 2026 or 2027, providing a potential medium-term catalyst. However, the conservatively set 2026 construction order target of KRW 7.7 trillion suggests the pace of revenue re-expansion may be gradual."
+        "ko": "증권사 리서치(KB증권·흥국증권 기준)는 2026년 연간 삼성물산 매출을 42.8~43.9조원, 영업이익을 3.7~3.95조원으로 전망하며, 이는 2025년 대비 각각 7% 내외, 13% 내외의 성장을 시사한다. 성장 동력은 크게 세 축으로 나뉜다. 첫째, 바이오부문은 삼성바이오로직스 5공장(2025년 4월 준공) 가동 본격화에 따른 생산능력 확대와 수주 잔고 증가로 2026년에도 견조한 실적 성장이 예상된다. 둘째, 건설부문은 삼성전자 평택 P3 및 해외 대형 EPC 프로젝트가 안정적으로 진행되고 있고, 원전·SMR 파이프라인 구축이 중기 수주 성장을 뒷받침할 것으로 기대된다. 셋째, 상사부문은 태양광 개발·BESS(배터리에너지저장시스템)·수소 등 재생에너지 운영사업 확대로 수익 구조가 다변화되고 있다. 4기 주주환원 정책(2026~2028)과 구 3개년 자사주 소각(780만주·약 2.33조원) 완결은 자본 환원 신뢰도를 높이며, 계열사 배당 규모 변동이 재배당 여력에 직접 연결되는 구조가 지속된다. 다만 건설부문 수주 가이던스 달성 여부와 SMR 상용화 시점의 불확실성은 중기 이익 모멘텀의 가시성을 일부 제한하는 요인으로 남아 있다.",
+        "en": "Sell-side consensus (KB Securities and Heungguk Securities) projects Samsung C&T's 2026 full-year revenue at KRW 42.8–43.9 trillion and operating profit at KRW 3.7–3.95 trillion, implying approximately 7% and 13% YoY growth, respectively. Growth is expected from three primary drivers. First, the Bio segment—aided by Samsung Biologics' fifth plant (completed April 2025) ramping to full capacity—should continue to deliver robust revenue and margin expansion through growing backlog conversion. Second, Construction is expected to gradually recover, supported by Samsung Electronics' Pyeongtaek P3 fab project and large overseas EPC contracts, with the nuclear and SMR order pipeline providing a credible medium-term order intake story. Third, the Trading segment's diversification into renewable energy operations—solar, BESS, and hydrogen—adds a more stable and recurring earnings layer to its traditional commodity trading base. The newly announced 4th shareholder return policy and completion of the KRW ~2.33 trillion treasury cancellation program reinforce management credibility on capital allocation, with affiliate dividend flows continuing to directly determine re-distribution capacity. The pace of construction order intake recovery and the SMR commercialization timeline remain the key variables that constrain medium-term earnings visibility."
       },
       "bull": [
         {
           "title": {
-            "ko": "삼성전자 지분 NAV 재평가",
-            "en": "Samsung Electronics Stake NAV Re-Rating"
+            "ko": "바이오·에너지 신성장 축의 구조적 이익 확대",
+            "en": "Structural earnings expansion via Bio and Energy growth engines"
           },
           "body": {
-            "ko": "삼성전자 주가가 2026년 급상승하면서 삼성물산이 보유한 삼성전자 지분의 평가 가치가 큰 폭으로 확대됐다. 최근 보도에 따르면 삼성물산의 시가총액은 1년 전 대비 230% 이상 증가하며 코스피 시총 상위권에 진입, 지주회사로서의 NAV 디스카운트 해소가 핵심 상승 모멘텀으로 작용하고 있다.",
-            "en": "Samsung Electronics' sharp rally in 2026 has materially expanded the market value of Samsung C&T's stake in the affiliate. Recent reports indicate Samsung C&T's market cap has surged more than 230% year-on-year, placing it among the top-10 KOSPI names by market cap, with NAV discount compression serving as the primary re-rating catalyst."
+            "ko": "삼성바이오로직스 5공장(2025년 4월 준공)의 가동 본격화는 78.4만 리터에 달하는 총 생산 설비 규모를 한 단계 높이며 2026년 이후 바이오부문 수익 기여를 지속 확대할 것으로 전망된다. 삼성물산은 2026~2028년 에너지·바이오 분야에 최대 7.5조원을 집중 투자하는 계획을 공식화하여, 재생에너지(태양광·BESS·수소)와 SMR 분야의 자산 포트폴리오를 공격적으로 강화하고 있다. 이러한 전략은 기존 EPC 시공 중심의 단기 수주 의존도를 낮추고, 장기적으로 운영 수익 기반의 안정적 현금흐름을 확보하는 방향으로 사업구조를 고도화하는 데 기여한다. 2026년 바이오·에너지 부문의 성장이 건설부문 부진을 상쇄하면서 전사 이익창출력이 더욱 견고해질 것이라는 증권사 공통 시각이 이를 뒷받침한다.",
+            "en": "Samsung Biologics' fifth plant (completed April 2025) coming online will elevate the company's total CDMO capacity meaningfully, and is expected to drive continued bio segment earnings expansion well into 2026 and beyond. Samsung C&T has formally committed to investing up to KRW 7.5 trillion in energy and bio over 2026–2028, aggressively building a renewable energy asset base (solar, BESS, hydrogen) and SMR project pipeline. This strategy structurally shifts the earnings mix away from short-cycle construction order dependency toward stable, long-duration operational cash flows. Analyst consensus supports the view that bio and energy segment growth will more than offset construction headwinds, producing a more durable overall profitability profile."
           }
         },
         {
           "title": {
-            "ko": "원전·SMR 신사업 파이프라인",
-            "en": "Nuclear & SMR New Business Pipeline"
+            "ko": "글로벌 원전 부활 사이클과 차별화된 시공 트랙레코드",
+            "en": "Global nuclear revival cycle and a differentiated EPC track record"
           },
           "body": {
-            "ko": "루마니아 체르나보다 EPC 및 스웨덴 링할스 SMR FEED 프로젝트 등 원전 관련 파이프라인이 2026년 하반기~2027년 구체화될 경우, 건설부문 매출과 수주 잔고를 유의미하게 확충할 수 있는 중장기 성장 촉매로 평가된다.",
-            "en": "The nuclear energy pipeline—including the Romania Cernavoda EPC project and the Sweden Ringhals SMR FEED project—is expected to crystallize in 2H2026 or 2027. If materialized, these contracts would meaningfully augment construction backlog and revenues, serving as a significant medium-term growth catalyst."
+            "ko": "삼성물산은 국내외 대형 원전 총 10기(국내 울진·신월성·새울, 해외 UAE 바라카 1~4호기)를 직접 시공한 자유진영 내 희소한 원전 건설사로, 한국이 글로벌 원전 산업에서 주목받는 기반이 되고 있다. 2024년 12월 루마니아 체르나보다 원전 1호기 계속운전 프로젝트(총 사업규모 약 2.8조원)를 수주했고, 2026년 3월에는 한국수력원자력과 필리핀·말레이시아 등 아시아태평양 원전 진출을 위한 MOU를 체결했다. SMR 분야에서는 NuScale 및 GVH(GE Vernova·Hitachi)와 각각 별도 협력 프로젝트를 진행하는 '투트랙' 방식을 채택해 기술사 의존도를 분산시키고 있다. 미국 정부가 한국의 대미 투자를 원전 인프라 확충에 우선 활용하겠다는 의사를 밝히는 등 지정학적 호재가 겹치며 삼성물산의 미국 원전 시장 진출 기대감이 주가의 강력한 촉매로 작용하고 있다.",
+            "en": "Samsung C&T is among the very few free-world contractors to have directly built ten large nuclear plants—domestically (Uljin, Shin-Wolseong, Saeul) and internationally (UAE Barakah 1–4)—a unique track record that underlies Korea's credibility as a global nuclear builder. In December 2024, the company secured the Romania Cernavodă Unit 1 refurbishment contract (total project scope ~KRW 2.8 trillion), and in March 2026 signed an MOU with KHNP for nuclear power development in Asia-Pacific markets including the Philippines and Malaysia. In SMR, Samsung C&T is pursuing a dual-track approach—separate partnerships with both NuScale and GVH (GE Vernova-Hitachi)—that diversifies technology exposure and is widely cited as a differentiating strategic advantage. Reports that the U.S. government intends to channel Korean investment into nuclear infrastructure have added a geopolitical tailwind to the stock, making it a primary beneficiary of the global nuclear revival theme."
           }
         },
         {
           "title": {
-            "ko": "주주환원 정책 강화",
-            "en": "Enhanced Shareholder Return Policy"
+            "ko": "주주환원 정책 강화 및 계열사 지분가치 확대",
+            "en": "Enhanced shareholder return policy and rising affiliate portfolio value"
           },
           "body": {
-            "ko": "2024~2026년 중기 자사주 소각 계획이 2026년 3월 완료됐으며, 주당 2,800원의 연간 배당과 관계사 배당수익의 60~70% 환원 정책이 병행된다. 자사주 소각 완료에 따른 주식 수 감소는 주당 지표 개선을 통해 주주가치를 지속적으로 높이는 구조다.",
-            "en": "The 2024–2026 treasury share cancellation program was fully completed in March 2026, alongside a KRW 2,800/share annual dividend and a commitment to return 60–70% of affiliate dividend income. The reduction in share count from buyback cancellations structurally enhances per-share metrics and ongoing shareholder value."
+            "ko": "삼성물산은 2026년 2월 19일 4기 3개년 주주환원 정책을 발표하고, 기존 3개년 계획(2023~2025)에서 약속한 자사주 780만주의 소각을 3월 중 완결하여 총 약 3조원 규모의 자사주 소각 공약을 이행했다. 관계사 배당수익의 60~70% 재배당 기조를 유지하는 가운데, 삼성바이오로직스의 잉여현금흐름 배당 정책 확대와 계열사 실적 호조가 재배당 재원 확대로 이어지는 구조적 상승 요인이 지속된다. 또한 삼성전자·삼성바이오로직스 등 보유 지분의 시장가치 상승이 삼성물산 자체 순자산가치(NAV)를 끌어올리는 메커니즘이 주가 재평가의 핵심 근거로 작용하고 있다. 주당배당금은 2022년 2,300원에서 2024년 2,800원으로 단계적으로 증가하며 주주환원 일관성이 입증되었다는 점도 긍정적이다.",
+            "en": "Samsung C&T announced its 4th three-year shareholder return policy on February 19, 2026, and completed the cancellation of 7.8 million treasury shares in March, fulfilling a total KRW ~3 trillion treasury cancellation commitment from the 2023–2025 program. The company maintains its policy of redistributing 60–70% of affiliate dividend income as dividends, and expanding distributions from Samsung Biologics structurally enlarge the dividend source. Moreover, appreciation of stakes in Samsung Electronics and Samsung Biologics lifts Samsung C&T's NAV, forming a core pillar of the ongoing re-rating thesis. The company's track record of steadily increasing dividends per share—from KRW 2,300 in 2022 to KRW 2,800 in 2024—demonstrates the consistency and credibility of its capital return commitment."
           }
         }
       ],
       "bear": [
         {
           "title": {
-            "ko": "건설부문 매출 공백 및 보수적 수주 목표",
-            "en": "Construction Revenue Gap & Conservative Order Target"
+            "ko": "건설부문 실적 부진 지속 및 수주 가이던스 미달 우려",
+            "en": "Persistent Construction segment underperformance and order intake shortfall risk"
           },
           "body": {
-            "ko": "2025년 건설부문 매출은 대형 하이테크 프로젝트 준공 종료로 전기대비 약 4.5조원 감소했다. 2026년 건설 수주 목표가 7.7조원으로 보수적으로 설정되어 있어, 매출 재확장이 가시화되기까지 시간이 걸릴 수 있다.",
-            "en": "The construction segment's 2025 revenue fell by approximately KRW 4.5 trillion YoY as major high-tech projects completed. With the 2026 construction order target set conservatively at KRW 7.7 trillion, a meaningful revenue recovery in this segment may take longer than markets anticipate."
+            "ko": "2026년 1분기 건설부문 영업이익은 1,110억원으로 전년 동기 대비 30.2% 급감했으며, 대형 프로젝트 준공 단계 집중과 일회성 비용 반영이 주요 원인으로 분석된다. 최근 증권사 보고에 따르면 건설부문 신규 수주가 기존 가이던스의 절반 수준에 그칠 것이라는 우려가 제기되어 있어, 2026년 하반기 이후 실적 회복의 가시성이 제한적이다. 건설부문은 전체 연결 매출의 약 33%를 차지하는 핵심 부문인 만큼, 의미 있는 실적 회복이 지연될 경우 시장 컨센서스 이익 달성에 리스크 요인으로 작용한다. 저유가 환경의 장기화도 중동 플랜트 수주 기반에 부담을 줄 수 있다는 점에서 중기 수주 파이프라인 모니터링이 필요하다.",
+            "en": "Construction segment operating profit fell 30.2% YoY in Q1 2026 to KRW 111 billion, primarily due to the completion phase of major high-tech projects and one-off cost recognitions. Recent analyst reports suggest that new construction order intake may come in at approximately half the company's own guidance, limiting visibility into a sustained recovery in H2 2026. Given that Construction accounts for roughly one-third of consolidated revenue, a delayed rebound poses a material downside risk to full-year consensus profit targets. Prolonged low oil prices also create headwinds for Middle East plant order flows, warranting close monitoring of the medium-term construction order pipeline."
           }
         },
         {
           "title": {
-            "ko": "단기 급등에 따른 밸류에이션 부담",
-            "en": "Valuation Stretch After Sharp Near-Term Rally"
+            "ko": "SMR 상용화 지연 및 원전 테마 과도한 주가 선반영 리스크",
+            "en": "SMR commercialization delay risk and valuation premium potentially running ahead of fundamentals"
           },
           "body": {
-            "ko": "2026년 3월 말 대비 약 두 달 만에 주가가 65% 이상 급등하면서 일부 분석에서는 현재 주가가 내재가치 추정치를 상회하는 것으로 평가되고 있다. 삼성전자 주가 모멘텀이 둔화될 경우 NAV 재평가 기대가 약화되며 주가 조정 압력이 높아질 수 있다.",
-            "en": "Following an approximately 65% surge in two months from late March 2026, some valuation analyses suggest the current share price has exceeded intrinsic value estimates. Should Samsung Electronics' share momentum decelerate, NAV re-rating expectations could unwind, increasing downside pressure."
+            "ko": "SMR은 글로벌 에너지 전환의 차세대 대안으로 부각되고 있으나, 기술이 아직 완전한 상용화 단계에 이르지 못해 실질적인 수주·착공까지는 상당한 시간이 필요할 것으로 전망된다. 삼성물산이 협력 중인 NuScale은 대규모 영업 적자를 기록한 바 있어, SMR 파트너십의 실제 사업화 여부가 아직 불확실한 상태다. 2026년 3월 말 대비 주가가 65% 이상 급등한 현 상황에서는 원전 테마 기대감이 펀더멘털보다 과도하게 선반영됐을 가능성을 배제하기 어려워, 단기 조정 리스크가 존재한다. 원전 수주 공시 등 구체적인 이벤트 없이 주가가 모멘텀에만 의존할 경우 변동성 확대 구간이 발생할 수 있다.",
+            "en": "While SMR is emerging as a next-generation energy solution globally, the technology has not yet reached full commercial readiness, and actual contract awards and project starts are likely years away. NuScale, one of Samsung C&T's SMR partners, reported substantial operating losses, leaving the commercialization prospects of these partnerships uncertain. With the stock having surged more than 65% from end-March 2026, there is a credible risk that nuclear theme expectations have run meaningfully ahead of underlying fundamentals, creating vulnerability to a sentiment-driven correction. Without concrete order-flow catalysts, price action driven solely by narrative momentum could amplify near-term volatility."
           }
         },
         {
           "title": {
-            "ko": "상사·패션 부문 수익성 압박",
-            "en": "Margin Pressure in Trading & Fashion Segments"
+            "ko": "글로벌 보호무역 확산에 따른 상사부문 수익성 압박",
+            "en": "Rising global protectionism pressuring Trading segment margins"
           },
           "body": {
-            "ko": "2025년 상사부문은 보호무역 확산 속 매출은 늘었으나 영업이익이 감소했으며, 패션부문은 마케팅 비용 증가로 영업이익이 하락했다. 글로벌 무역환경 불확실성이 지속되는 한 두 부문의 마진 압박은 단기 이익 변동성 요인으로 작용할 수 있다.",
-            "en": "In 2025, the Trading segment grew revenue but saw operating profit decline amid rising protectionism, while the Fashion segment's operating profit fell due to higher marketing costs. Persistent global trade uncertainty could continue to weigh on margins in both segments, adding near-term earnings volatility."
+            "ko": "상사부문은 2025년 기준 보호무역 확산 속에서도 외형 확대에 성공했으나, 미국 관세 인상 및 지정학적 불안정성이 화학·철강 솔루션 사업의 판매 단가와 물동량에 부정적 영향을 미칠 수 있다. 삼성물산은 리스크 관리 체계 고도화로 대응하고 있지만, 관세 분쟁이 심화될 경우 40개국 69개 해외 거점의 마진 압박이 연결 실적에 반영되는 경로를 배제할 수 없다. 2026년 1분기 상사부문 영업이익이 크게 개선됐으나, 이를 지속하기 위해서는 원자재 가격 변동성과 글로벌 교역 환경 변화에 대한 민감도가 핵심 변수로 남는다.",
+            "en": "Although Trading managed top-line growth in 2025 despite spreading protectionism, U.S. tariff escalation and geopolitical instability could negatively affect unit prices and trade volumes in chemicals and steel. Samsung C&T has responded by upgrading its risk management framework, but an intensification of trade disputes could squeeze margins across its 69 overseas offices in 40 countries, filtering into consolidated results. While the Trading segment showed strong margin recovery in Q1 2026, sustaining that performance depends heavily on commodity price stability and the trajectory of global trade policy."
           }
         }
       ],
       "risks": [
         {
           "cat": {
-            "ko": "거시·대외 리스크",
-            "en": "Macro & External Risk"
+            "ko": "거시경제 및 무역정책 리스크",
+            "en": "Macroeconomic and Trade Policy Risk"
           },
           "body": {
-            "ko": "글로벌 보호무역주의 확산과 미·중 무역 분쟁은 상사부문 트레이딩 마진에 직접적 위협 요인이다. 환율 변동성과 글로벌 원자재 가격 변동도 건설 원가 구조에 영향을 줄 수 있다.",
-            "en": "Escalating global protectionism and U.S.–China trade tensions pose direct risks to the Trading segment's margins. Currency volatility and fluctuations in global commodity prices may also pressure construction cost structures."
+            "ko": "미국의 관세 인상 및 글로벌 보호무역주의 확산은 삼성물산 상사부문의 교역 물량과 마진에 직접적인 하방 압력을 가하고 있으며, 삼성물산은 경영 효율 개선과 리스크 관리 체계 고도화로 대응하고 있다. 고금리 환경의 장기화 및 주요국 경기 둔화는 신규 건설 발주 감소와 바이오 의약품 수요 불확실성으로 이어질 수 있다. 중동·유럽 지역의 지정학 리스크 장기화는 원전·EPC 사업의 일정 지연 및 비용 증가 요인으로 작용할 수 있어, 해외 사업 비중이 높은 삼성물산에 복합적 리스크를 야기한다.",
+            "en": "U.S. tariff increases and spreading global protectionism are placing direct downward pressure on trading volumes and margins in the Trading segment, with Samsung C&T responding through operational efficiency improvements and enhanced risk management frameworks. Prolonged high interest rates and slowing growth in key markets could dampen new construction order flows and introduce uncertainty in bio-pharmaceutical demand trends. Geopolitical tensions in the Middle East and Europe raise the prospect of schedule delays and cost overruns in nuclear and EPC projects, creating compound risks for a company with significant overseas revenue exposure."
           }
         },
         {
           "cat": {
-            "ko": "지배구조·규제 리스크",
-            "en": "Governance & Regulatory Risk"
+            "ko": "원자재 가격 및 건설 원가 변동 리스크",
+            "en": "Commodity Price and Construction Cost Risk"
           },
           "body": {
-            "ko": "삼성 그룹 지배구조 재편 논의 및 관계사 내부거래 규제 강화는 삼성물산의 계열사 발주 수혜와 NAV 평가 방식에 불확실성을 더할 수 있다. 최대주주 관련 법적 리스크도 지속적으로 모니터링이 필요하다.",
-            "en": "Ongoing discussions around Samsung Group governance restructuring and tightening regulations on intra-group transactions could introduce uncertainty regarding Samsung C&T's intra-group order flow and NAV assessment. Legal risks related to the major shareholder also warrant continued monitoring."
+            "ko": "철강·비철금속·에너지 등 주요 원자재 가격의 상승은 건설부문의 EPC 공사 원가에 직접 반영되어 수익성을 훼손할 수 있으며, 이는 이미 영업이익이 전년 대비 30% 이상 감소한 1분기 건설부문의 회복을 지연시키는 요인이 될 수 있다. 상사부문 역시 원자재 가격 변동성에 민감하게 노출되어 있어 단기 이익 가시성을 제한하는 요인으로 작용한다. 최근 보도에 따르면 글로벌 원자재 가격 상승과 지정학적 리스크가 주요 우려 요인으로 지속 언급되고 있어, 비용 관리 역량과 계약 조건의 적정성이 중요한 모니터링 포인트다.",
+            "en": "Rising prices for steel, non-ferrous metals, and energy directly translate into higher EPC construction costs, potentially delaying the recovery of a Construction segment already posting a 30%+ YoY decline in operating profit as of Q1 2026. The Trading segment is also exposed to commodity price volatility, limiting short-term earnings predictability. Recent reports continue to highlight global commodity price inflation and geopolitical risks as key concerns, making cost management capability and contract pricing adequacy important metrics to monitor."
           }
         },
         {
           "cat": {
-            "ko": "프로젝트 실행 리스크",
-            "en": "Project Execution Risk"
+            "ko": "그룹 지배구조 및 규제 리스크",
+            "en": "Samsung Group Governance and Regulatory Risk"
           },
           "body": {
-            "ko": "루마니아·스웨덴 원전 프로젝트는 아직 수주 계약이 확정되지 않은 파이프라인 단계로, 인허가 지연·국제 원자력 규제 변화·계약 구조 불확실성 등이 실현 시기와 규모에 영향을 줄 수 있다.",
-            "en": "The Romania and Sweden nuclear projects remain at the pipeline stage with contracts yet to be finalized. Permitting delays, shifts in international nuclear regulations, and contract structure uncertainties could materially affect the timing and scale of actual revenue contribution."
+            "ko": "삼성물산의 최대주주인 이재용 삼성전자 회장(2026년 4월 기준 22.01%, 특별관계자 포함 38.06%)과 관련한 법적 사안이 진행 중으로, 그룹 지배구조에 내재된 불확실성 요인이다. 삼성물산이 사실상 지주회사 기능을 수행하는 구조에서 지배구조 이슈나 규제 환경 변화는 주주환원 정책의 연속성과 보유 지분 가치 평가 방식에 불확실성을 야기할 수 있다. 핵심 바이오 계열사인 삼성바이오로직스·삼성바이오에피스의 기업가치 변동이 삼성물산 NAV에 직접 연동되는 구조이기 때문에, 계열사 실적 부진이나 규제 이슈 발생 시 삼성물산 주가에도 하방 리스크로 전이될 수 있다.",
+            "en": "Ongoing legal matters surrounding Samsung C&T's largest shareholder, Chairman Lee Jae-yong (22.01% direct stake; 38.06% including related parties as of April 2026), represent a structural governance uncertainty embedded in the investment thesis. Given Samsung C&T's de facto holding company role, any regulatory changes or governance events could introduce uncertainty regarding the continuity of shareholder return policies and the methodology applied to affiliate stake valuations. Because core bio affiliates Samsung Biologics and Samsung BioEpis are directly linked to Samsung C&T's NAV, operational setbacks or regulatory headwinds at these entities could transmit downside risk to Samsung C&T's own share price."
           }
         }
       ],
@@ -1146,26 +1185,34 @@ window.KOS_REPORTS = {
           "en": "Constructive"
         },
         "body": {
-          "ko": "삼성물산은 수익성 중심의 전략 전환, 삼성전자 지분 NAV 재평가, 자사주 소각 완료 등을 바탕으로 2026년 들어 시장의 재조명을 받고 있다. 2026년 1분기 실적은 시장 예상에 부합했으며, 원전·SMR 신사업 파이프라인은 중장기 성장 동력으로 의미가 있다. 다만 단기간 급등에 따른 밸류에이션 부담과 건설부문 매출 회복의 지연 가능성, 대외 무역환경 불확실성은 주의가 요구되는 요인이다. 사업 다각화와 안정적 재무 구조를 기반으로 중장기 관점에서 긍정적으로 평가되나, 삼성전자 주가 연동성에 따른 단기 변동성 확대 가능성을 감안한 접근이 필요하다.",
-          "en": "Samsung C&T has attracted renewed market attention in 2026, underpinned by its profitability-focused strategic pivot, the NAV re-rating of its Samsung Electronics stake, and the completion of its treasury share cancellation program. Q1 2026 results were broadly in line with expectations, and the nuclear/SMR project pipeline represents a meaningful medium-to-long-term growth catalyst. That said, the sharp near-term rally has introduced valuation stretch, while the pace of construction revenue recovery and global trade headwinds warrant close monitoring. The company's diversified business model and sound financial structure support a constructive medium-to-long-term view, though investors should account for near-term volatility tied to Samsung Electronics' share-price trajectory."
+          "ko": "삼성물산은 2026년 1분기 매출 사상 최고치 달성, 상사·패션·바이오 부문 동반 성장, 4기 주주환원 정책 발표 및 구 3개년 자사주 소각 완결 등 복수의 긍정적 촉매가 동시에 작동하며 전사 이익창출력이 개선되고 있다. 원전·SMR 투트랙 전략, 바이오 5공장 가동 본격화, 3년간 최대 9.4조원의 중장기 투자 계획은 기존 건설·상사 중심의 단기 이익 구조에서 탈피해 플랫폼형 복합 대형주로 진화 중임을 구조적으로 뒷받침한다. 계열사 지분가치와 연동된 NAV 상승 메커니즘은 동종 건설사·상사 대비 차별화된 투자 유인을 제공하며, 이는 시장의 멀티플 확장을 정당화하는 근거가 된다. 다만 2026년 3월 말 대비 주가가 65% 이상 급등한 현 시점에서는 원전 테마 선반영 여부, 건설부문 수주 회복의 구체화 속도, SMR 상용화 시점 등이 중기 주가 모멘텀의 핵심 변수로 엄밀한 모니터링이 요구된다. 지배구조 관련 잠재 리스크 역시 잔존 불확실성으로 인식하는 것이 균형 잡힌 시각이다.",
+          "en": "Samsung C&T presents a constructive investment case supported by multiple concurrent positives: a record quarterly revenue print in Q1 2026, broad-based improvement across Trading, Fashion, and Bio segments, the announcement of a 4th shareholder return policy, and the completion of the prior KRW ~3 trillion treasury cancellation program. The dual-track nuclear strategy, full ramp-up of Samsung Biologics' fifth plant, and a KRW 9.4 trillion capex commitment over three years collectively underpin a structural transition from a construction/trading-led cyclical into a diversified, platform-style conglomerate with durable earnings drivers. The NAV appreciation mechanism tied to listed affiliate holdings provides a differentiated investment proposition that justifies multiple expansion relative to pure-play construction or trading peers. However, with the stock having surged more than 65% from end-March 2026, the degree to which nuclear expectations are already embedded in the price, the pace of construction order recovery, and SMR commercialization timelines are critical medium-term variables that warrant rigorous ongoing monitoring. Residual governance uncertainty also remains a factor to weigh in any holistic risk assessment."
         }
       },
       "sources": [
+        "https://www.newswire.co.kr/newsRead.php?no=1027736",
         "https://news.samsungcnt.com/ko/%EC%A0%84%EC%B2%B4%EA%B8%B0%EC%82%AC/%EC%A0%84%EC%82%AC%EA%B3%B5%ED%86%B5/2026-01-%EC%82%BC%EC%84%B1%EB%AC%BC%EC%82%B0-2025%EB%85%84-%EC%97%B0%EA%B0%84-%EB%B0%8F-4%EB%B6%84%EA%B8%B0-%EC%8B%A4%EC%A0%81-%EC%B0%B8%EA%B3%A0%EC%9E%90%EB%A3%8C/",
-        "https://www.inthenews.co.kr/news/article.html?no=82471",
-        "https://www.greened.kr/news/articleView.html?idxno=336308",
-        "https://www.digitaltoday.co.kr/news/articleView.html?idxno=661554",
-        "https://kr.investing.com/news/earnings/article-93CH-1918252",
-        "https://kr.investing.com/news/investment-ideas/article-93CH-1945698",
-        "https://m.thebell.co.kr/m/newsview.asp?svccode=04&newskey=202605070841003800108722",
-        "https://www.ebn.co.kr/news/articleView.html?idxno=1689804",
-        "https://www.mt.co.kr/industry/2026/01/28/2026012817222062603",
-        "https://www.digitaltoday.co.kr/news/articleView.html?idxno=664203"
+        "https://comp.fnguide.com/SVO2/ASP/SVD_Main.asp?gicode=A028260",
+        "https://www.etoday.co.kr/news/view/2564925",
+        "https://www.mt.co.kr/stock/2026/02/03/2026020308130130891",
+        "https://www.kmecnews.co.kr/news/articleView.html?idxno=45551",
+        "https://www.dailybizon.com/news/articleView.html?idxno=67123",
+        "https://www.inthenews.co.kr/news/article.html?no=86290",
+        "https://www.digitaltoday.co.kr/news/articleView.html?idxno=664203",
+        "https://news.nate.com/view/20260506n11927",
+        "https://news.nate.com/view/20260320n12883",
+        "https://www.thevaluenews.co.kr/news/194745",
+        "https://www.investchosun.com/site/data/html_dir/2026/01/23/2026012380149.html",
+        "https://www.infostockdaily.co.kr/news/articleView.html?idxno=212564",
+        "https://kr.investing.com/news/investment-ideas/article-93CH-1945698"
       ],
       "ticker": "028260",
       "name": "삼성물산",
       "name_en": "SAMSUNG C&T CORPORATION",
-      "sector": "유통·소비재",
+      "sector": "건설·건자재",
+      "categories": [
+        "건설·건자재"
+      ],
       "market": "코스피",
       "reportDate": "2026-06-03",
       "dataDate": "20260602"
@@ -2350,132 +2397,140 @@ window.KOS_REPORTS = {
     },
     "000270": {
       "lead": {
-        "ko": "기아는 2026년 1분기 역대 분기 최대 매출과 사상 첫 글로벌 점유율 4% 돌파를 달성했으나, 미국 관세 부담이 수익성 회복의 핵심 변수로 부상하고 있다.",
-        "en": "Kia posted record quarterly revenue and broke the 4% global market share barrier for the first time in Q1 2026, yet persistent U.S. tariff headwinds remain the pivotal variable for any profitability recovery."
+        "ko": "매출 사상 최대에도 미국 관세·인센티브 비용 급증으로 수익성이 2년 연속 하락했으나, 신차 사이클·PBV 신사업 가시화·견조한 순현금이 중장기 체질 개선의 발판으로 작용한다.",
+        "en": "Record-high revenues mask a second consecutive year of profitability erosion as U.S. tariffs and elevated incentives compress margins, yet a robust new product cycle, an emerging PBV business, and a fortress balance sheet underpin a medium-term recovery thesis."
       },
       "desc": {
-        "ko": "본 리포트는 기아(000270)의 DART 공시 재무 데이터, 최신 사업 전략, 그리고 업종 거시 환경을 종합 분석해 투자자에게 균형 잡힌 시각을 제공하는 것을 목적으로 한다.",
-        "en": "This report provides a balanced perspective by synthesizing DART-confirmed financials, Kia's latest strategic initiatives, and prevailing macroeconomic conditions in the global automotive sector."
+        "ko": "기아(000270)는 2025년 연결 매출 114.1조원(전기 대비 +6.2%)이라는 사상 최대 외형을 달성했으나, 미국 관세 부과·글로벌 인센티브 확대·환율 급등에 따른 충당부채 증가라는 복합 비용 요인으로 영업이익이 9.1조원(-28.3%)으로 급감했다. 2026년 1분기에도 매출 29.5조원(+5.3%)으로 분기 기준 사상 최대를 재차 경신했으나, 관세 영향 7,550억원 등이 집중 반영되며 영업이익은 2.2조원(-26.7%)에 그쳤다. 본 리포트는 DART 공시 확정 재무를 기반으로 기아의 사업 구조·최근 실적 흐름·수익성 회복 경로 및 핵심 리스크를 균형 있게 조명한다.",
+        "en": "Kia (KRX: 000270) posted a record FY2025 consolidated revenue of KRW 114.1 trillion (+6.2% YoY), yet operating profit contracted sharply to KRW 9.1 trillion (-28.3%) as U.S. tariff charges, elevated dealer incentives, and FX-driven warranty provisions converged to erode margins. In 2026 Q1, revenue again set an all-time quarterly record at KRW 29.5 trillion (+5.3% YoY), but operating profit declined to KRW 2.2 trillion (-26.7%), with a KRW 755 billion tariff charge representing the most material single headwind. This report offers a balanced assessment of Kia's business structure, recent earnings trajectory, path to margin recovery, and key risks, grounded in DART-disclosed financials and the latest market developments."
       },
       "keypoints": [
         {
-          "ko": "2026년 1분기 매출 29.5조원(+5.3%)으로 역대 분기 최대 달성, 글로벌 소매 점유율 4.1%로 사상 첫 4% 돌파",
-          "en": "Q1 2026 revenue hit an all-time quarterly high of KRW 29.5 trillion (+5.3% YoY), with global retail market share surpassing 4% for the first time at 4.1%"
+          "ko": "2025년 매출 114.1조원 사상 최고 달성: ASP 상승·친환경차 믹스 개선이 외형 성장을 견인했으나 영업이익률은 8.0%로 후퇴",
+          "en": "FY2025 revenue reached a record KRW 114.1 trillion, driven by ASP improvement and EV/HEV mix gains, though the operating margin contracted to 8.0%"
         },
         {
-          "ko": "미국 관세 영향 7,550억원이 1분기에 반영되며 영업이익이 전년 대비 26.7% 감소, 영업이익률 7.5%로 3.2pp 하락",
-          "en": "A KRW 755 billion U.S. tariff charge in Q1 drove operating profit down 26.7% YoY, compressing the operating margin by 3.2pp to 7.5%"
+          "ko": "1Q26 관세 영향 7,550억원 반영, 영업이익률 7.5%: 연간 환산 시 약 3조원 규모의 비용으로, 수익성 회복 속도가 핵심 관건",
+          "en": "A KRW 755 billion U.S. tariff charge in 1Q26 compressed the operating margin to 7.5%; annualized, this implies roughly KRW 3 trillion in incremental costs, making the pace of margin recovery the central investment question"
         },
         {
-          "ko": "2026 CEO 인베스터 데이(4월 9일)에서 2030년 매출 170조원·OPM 10% 목표 제시, EV·HEV·PBV 삼각 성장 전략 공표",
-          "en": "At the April 2026 CEO Investor Day, management set 2030 targets of KRW 170 trillion in revenue and a 10% OPM, anchored by a three-pillar growth strategy across EV, HEV, and PBV"
+          "ko": "PBV 신사업 조기 흥행: PV5가 출시 7개월 만에 현대차그룹 전기차 모델 월간 판매 1위에 오르며 '2026 세계 올해의 밴' 수상, 새로운 수익원으로 가시화",
+          "en": "PBV business gaining traction: PV5 topped Hyundai Motor Group's monthly EV sales chart seven months after launch and won the 2026 International Van of the Year award unanimously, validating it as a new revenue pillar"
+        },
+        {
+          "ko": "2026년 가이던스 영업이익 10.2조원(+12%↑)·판매 335만 대: 관세 15% 시나리오 가정에도 실적 회복 경로 제시",
+          "en": "Management's 2026 guidance targets operating profit of KRW 10.2 trillion (+12% YoY) and 3.35 million unit sales, even under a 15% U.S. tariff baseline assumption"
+        },
+        {
+          "ko": "순현금 19.6조원(시총 대비 약 33%)·총 주주환원율 35%: PER 5~6배권의 저평가 밸류에이션과 높은 배당 매력이 하방 경직성 제공",
+          "en": "Net cash of KRW 19.6 trillion (~33% of market cap) and a 35% total shareholder return ratio provide valuation support at a trailing P/E of 5-6x with a mid-4% dividend yield"
         }
       ],
       "business": {
-        "ko": "기아는 현대자동차그룹 산하의 글로벌 완성차 브랜드로, 국내 5개 공장 및 미국 조지아(HMGMA)·멕시코·슬로바키아·인도 등 해외 생산 거점에서 연간 300만대 이상을 생산·판매한다. 매출 지역 비중은 북미 약 35%, 유럽 약 22%, 국내 약 18%, 신흥시장 약 25%로 선진국 의존도가 높다. 제품 포트폴리오는 ICE·HEV·EV와 2025년 출시를 시작한 목적기반차량(PBV)으로 구성되며, SUV 및 친환경차 비중이 지속 확대 중이다. 2025년에는 역대 최다 글로벌 도매 판매 314만대와 2년 연속 100조원대 매출을 기록하며 견조한 외형 성장을 이어갔다.",
-        "en": "Kia is a global OEM within Hyundai Motor Group, producing and selling more than three million units annually across domestic plants and overseas facilities in Georgia (HMGMA), Mexico, Slovakia, and India. Revenue is geographically weighted toward North America (~35%), Europe (~22%), Korea (~18%), and emerging markets (~25%), reflecting a high concentration in advanced economies. The product mix spans ICE, HEV, EV, and the newly launched Purpose-Built Vehicle (PBV) segment, with SUVs and eco-friendly models growing as a share of total sales. In 2025, global wholesale volume reached an all-time record of 3.14 million units, and annual revenue surpassed KRW 100 trillion for the second consecutive year."
+        "ko": "기아는 현대차그룹 소속의 글로벌 완성차 제조사로, 코스피에 상장된 시가총액 65.9조원의 대형주이며 그룹 내 완성차 판매 브랜드 중 두 번째 규모를 자랑한다. 매출 구조는 스포티지·쏘렌토·텔루라이드·카니발 등 고수익 RV/SUV 모델이 핵심 축을 이루며, 해외 판매 비중이 80%를 상회하는 수출 중심 기업으로 북미와 유럽이 전체 매출의 절반 이상을 담당한다. 친환경차 부문에서는 현대차그룹의 전기차 전용 플랫폼 E-GMP를 활용한 EV3·EV6·EV9 등 전용 전기차 라인업과 다양한 하이브리드 모델을 병행하는 투트랙 전략을 구사하고 있으며, 2026년 1분기 기준 친환경차 소매 판매는 전년 대비 33.1% 증가한 23만 2,000대로 전체 판매의 29.7%를 차지하는 등 친환경 비중이 빠르게 상승 중이다. 신사업으로는 PBV(Platform Beyond Vehicle, 차량 그 이상의 플랫폼)를 표방하는 PV5를 2025년 국내에 론칭하고 유럽·일본 시장으로 확대 중이며, 오토랜드 화성에 연산 25만 대 규모의 PBV 전용 공장 '화성 EVO Plant'를 구축(투자 약 4조원, 2027년 가동 목표)하고 있다. 경쟁 구도 측면에서 기아는 대중차·SUV 시장에서 폭스바겐·토요타·현대차와, 전기차 부문에서는 테슬라·BYD와 각축하며, 낮은 인센티브와 높은 중고차 잔존가치를 앞세운 '제값 받기' 영업 전략으로 이익률을 방어한다. 소프트웨어 정의 차량(SDV) 전환의 일환으로 2025년 이후 출시 신차 전체에 커넥티비티 서비스와 OTA(무선 업데이트)를 탑재하고, 레벨 2+ 자율주행 서비스의 유료 구독 모델을 중장기 수익원으로 육성 중이다. 삼성증권 리포트에 따르면 구독 모델이 침투율 40% 수준으로 확산될 경우 영업이익률이 12% 이상으로 상승하는 시나리오도 검토되고 있다. 그룹 생태계 측면에서는 Boston Dynamics 지분 18%, 현대로보틱스랩 지분 40%를 보유하며 로보틱스·AAM(도심항공모빌리티) 연계 신사업의 옵션 가치도 보유한다.",
+        "en": "Kia is a global passenger vehicle manufacturer within Hyundai Motor Group, listed on the KOSPI with a market capitalization of approximately KRW 65.9 trillion, operating as the group's second-largest automotive brand by sales volume. The revenue base is anchored by high-margin RV/SUV models including Sportage, Sorento, Telluride, and Carnival, with overseas sales accounting for more than 80% of total volumes, making it primarily an export-driven enterprise with North America and Europe collectively representing the majority of total revenues. On electrification, Kia employs a dual-track strategy, leveraging Hyundai Motor Group's dedicated E-GMP electric platform for the EV3, EV6, and EV9 alongside an expanding hybrid lineup; in 1Q26, electrified vehicle retail sales rose 33.1% year-on-year to 232,000 units, representing 29.7% of total sales. A major new growth pillar is the Platform Beyond Vehicle (PBV) business, with the PV5 launched in Korea in mid-2025, subsequently rolled out to Europe and Japan, and underpinned by a dedicated Hwaseong EVO Plant targeting 250,000 units of annual capacity by 2027 at a capital commitment of approximately KRW 4 trillion. In competitive terms, Kia contends with Volkswagen, Toyota, and Hyundai in volume segments and with Tesla and BYD in the EV space; its differentiation rests on a disciplined pull-selling strategy featuring low dealer incentives and strong residual vehicle values that has been built since 2019. The company is advancing its Software Defined Vehicle (SDV) transformation by equipping all new models from 2025 with connectivity services and OTA update capabilities, while developing Level 2+ autonomous driving subscription revenue as a medium-to-long-term monetization layer. According to a Samsung Securities research report, at a 40% subscription penetration rate, this model could eventually support operating margins exceeding 12%. Within the broader Hyundai Motor Group ecosystem, Kia holds an 18% stake in Boston Dynamics and a 40% stake in Hyundai Robotics Lab, providing optionality in the robotics and Advanced Air Mobility (AAM) value chain."
       },
       "recent": {
-        "ko": "DART 공시 기준, 2025년 연간 매출액은 114.1조원(+6.2%)으로 성장했으나 영업이익은 9.1조원(-28.3%), 당기순이익은 7.6조원(-22.7%)으로 급감했다. 미국 관세 본격 반영, 글로벌 인센티브 확대, 원·달러 환율 급등에 따른 판매보증충당부채 증가가 복합적으로 작용했다. 2026년 1분기에는 매출 29.5조원(+5.3%)으로 역대 분기 최대를 달성했으나 관세 영향 7,550억원 등으로 영업이익 2.2조원(-26.7%), 당기순이익 1.8조원(-23.5%)에 머물렀다. 한편 글로벌 시장점유율 4.1% 사상 첫 돌파, 친환경차 판매 23.2만대(+33.1%)로 전체의 29.7% 비중 달성 등 외형·물량 지표는 긍정적 흐름을 이어갔다.",
-        "en": "Per DART-confirmed financials, FY2025 revenue grew to KRW 114.1 trillion (+6.2%), while operating profit fell sharply to KRW 9.1 trillion (-28.3%) and net income declined to KRW 7.6 trillion (-22.7%), driven by full-year U.S. tariff costs, elevated global incentives, and KRW/USD volatility that inflated warranty provisions. In Q1 2026, revenue reached a record KRW 29.5 trillion (+5.3%), but a KRW 755 billion tariff charge pulled operating profit down to KRW 2.2 trillion (-26.7%) and net income to KRW 1.8 trillion (-23.5%). On the constructive side, global retail market share rose to 4.1%—surpassing 4% for the first time ever—and eco-friendly vehicle sales reached 232,000 units (+33.1%), representing 29.7% of total unit sales."
+        "ko": "DART 공시 기준, 기아는 2025년 연결 매출 114.1조원(전기 대비 +6.2%), 영업이익 9.1조원(-28.3%), 당기순이익 7.6조원(-22.7%)을 기록했다. 매출 사상 최대는 친환경차 판매 확대·ASP 상승에 의한 것이나 영업이익은 팬데믹 이후 최저 수준으로 후퇴했으며, 주요 원인은 미국 관세 본격 부과, 북미·유럽 시장 경쟁 심화에 따른 인센티브 증가, 기말 환율 급등에 따른 판매보증충당부채 증가였다. 특히 2025년 3분기에는 영업이익이 전년 동기 대비 49.2% 급감하며 분기별로 타격이 가장 컸고, 매출원가율이 81.1%까지 상승했다. 2026년 1분기에는 매출 29.5조원(+5.3%)으로 분기 기준 역대 최대를 기록하고 판매 대수 77만 9,741대(+0.9%)로 역대 1분기 최대를 달성했으나, 관세 영향 7,550억원 등이 집중 반영되며 영업이익 2.2조원(-26.7%), 영업이익률 7.5%에 그쳤다. 한편 2026년 1분기 글로벌 소매 시장 점유율이 역대 최고인 4.1%를 달성했으며, 친환경차 소매 판매도 23만 2,000대(+33.1%)를 기록해 외형과 브랜드 경쟁력 개선은 지속 확인됐다. 2026년 4월 글로벌 판매는 27만 7,188대(전년 동기 대비 +1.0%)로 성장세를 유지했으며, 국내는 쏘렌토·EV3·PV5 호조에 힘입어 7.9% 증가했고 스포티지는 글로벌 베스트셀링카 지위를 유지했다. PV5는 2026년 2월 3,967대가 판매되며 현대차그룹 전체 전기차 모델 가운데 월간 판매 1위를 기록, 출시 7개월 만에 카니발(3,712대)까지 추월하는 이변을 연출했다. 삼성증권 리포트에 따르면 기아는 2025년 순현금 19.6조원(시총 대비 약 33%)을 유지하며 FCF 흑자 기조를 이어갔고, 총 주주환원율 35% 기조 역시 지속되고 있다.",
+        "en": "Based on DART-disclosed financials, Kia posted FY2025 consolidated revenue of KRW 114.1 trillion (+6.2% YoY), operating profit of KRW 9.1 trillion (-28.3%), and net income of KRW 7.6 trillion (-22.7%), representing a record top line but the weakest profitability since the pandemic era. The top-line outperformance was driven by electrified vehicle sales growth and ASP improvement, while the earnings decline reflected the convergence of U.S. tariff charges, rising dealer incentives in North America and Europe, and elevated warranty provisions tied to sharp won/dollar exchange rate depreciation. The third quarter of 2025 was particularly severe, with operating profit contracting 49.2% year-on-year and the cost-of-goods-sold ratio rising to 81.1%. In 2026 Q1, revenue reached an all-time quarterly record of KRW 29.5 trillion (+5.3% YoY) and wholesale volumes of 779,741 units (+0.9%) marked the best-ever first-quarter sales figure, yet a KRW 755 billion tariff charge alongside higher incentives and warranty costs resulted in operating profit of KRW 2.2 trillion (-26.7%) and an operating margin of 7.5%. Encouragingly, global retail market share hit a record 4.1% in 1Q26, and electrified vehicle retail sales grew 33.1% to 232,000 units, demonstrating continued brand and product competitiveness. April 2026 global sales held at 277,188 units (+1.0% YoY), with domestic volumes up 7.9% on the strength of Sorento, EV3, and PV5, while Sportage maintained its position as the global bestseller. PV5 set a landmark in February 2026 by topping Hyundai Motor Group's monthly EV sales with 3,967 units, surpassing the perennial bestseller Carnival (3,712 units) just seven months after launch. According to a Samsung Securities research report, Kia maintained net cash of KRW 19.6 trillion (~33% of market cap) and preserved positive free cash flow even through 2025's challenging operating environment, while sustaining a 35% total shareholder return ratio."
       },
       "outlook": {
-        "ko": "HMGMA(조지아)에서 스포티지 HEV 현지 생산이 시작되면서 하반기로 갈수록 관세 부담이 단계적으로 완화될 전망이다. 회사는 2026 CEO 인베스터 데이에서 연간 매출 122.3조원, 영업이익 10.2조원, 영업이익률 8.3%라는 자체 목표를 제시했으며, 텔루라이드 신모델·EV2 유럽 출시 등 신차 사이클이 하반기 실적을 지지할 것으로 기대된다. 중장기적으로 기아는 2030년까지 49조원 투자를 통해 EV 100만대·HEV 110만대·PBV 23만대의 삼각 성장 전략을 추진하며, 2027년 첫 SDV 완성·2029년 레벨2++ 자율주행 적용을 로드맵으로 제시했다. 다만 미국 관세 협상 불확실성, 중국산 전기차 경쟁 심화, 글로벌 경기 둔화는 실적 회복 경로의 주요 변수로 남는다.",
-        "en": "Profitability headwinds are expected to ease gradually in H2 2026 as HMGMA begins volume production of the Sportage HEV, incrementally reducing tariff exposure. Management's self-provided FY2026 targets from the CEO Investor Day—revenue of KRW 122.3 trillion, operating profit of KRW 10.2 trillion, and an 8.3% OPM—imply a meaningful recovery, supported by new model launches including a refreshed Telluride and the European debut of the EV2. Over the medium term, Kia is pursuing a KRW 49 trillion, five-year investment plan targeting 1 million EVs, 1.1 million HEVs, and 230,000 PBVs by 2030, with a first SDV in 2027 and Level 2++ autonomy by 2029. However, U.S. tariff policy uncertainty, intensifying Chinese OEM competition, and a subdued global economy remain key variables in the recovery equation."
+        "ko": "기아는 2026년 가이던스로 판매 335만 대(+6.8%↑), 매출 122.3조원, 영업이익 10.2조원(영업이익률 약 8%대)을 제시하며 전년 대비 의미 있는 수익성 회복을 목표로 하고 있다. 미국 시장에서는 HMGMA(현대차그룹 조지아 공장)에서의 스포티지 HEV 생산 개시가 관세 부담을 일부 완화할 것으로 기대되며, 텔루라이드·셀토스의 하이브리드 라인업 추가로 고마진 차종 판매 확대가 예상된다. 유럽 시장에서는 EV2·EV3·EV4·EV5로 이어지는 볼륨 전기차 풀 라인업을 구축해 전기차 판매를 전년 대비 60% 이상 늘리는 것을 목표로 설정했으며, 현지 생산 기반 보조금 수혜도 기대 요인이다. PBV 사업은 PV5의 초기 흥행을 기반으로 일본·미국 등 신규 시장으로 확대 중이며, 화성 EVO Plant 완공과 PV7 출시를 통해 규모의 경제가 2027년 이후 본격 가시화될 전망이다. 삼성증권 리포트에 따르면 레벨 2+ 자율주행과 커넥티비티 서비스의 유료 구독 모델이 본격화될 경우 영업이익률 12% 이상 달성 시나리오도 검토되며, 이는 현재 주가의 구조적 재평가 모멘텀으로 작용할 수 있다. 중장기적으로 기아는 2030년 글로벌 판매 430만 대, 전기차 160만 대 판매, 영업이익률 10%를 목표로 제시했으나, 미국 관세 지속 여부, 중국 전기차 브랜드의 신흥 시장 침투 심화, 글로벌 경기 둔화 등이 달성 일정의 불확실성을 높이는 변수다.",
+        "en": "Management's 2026 full-year guidance targets 3.35 million units sold (+6.8% YoY), revenue of KRW 122.3 trillion, and operating profit of KRW 10.2 trillion (implying an ~8% operating margin), signaling a meaningful earnings recovery from 2025 levels. In the U.S., the ramp-up of Sportage HEV production at the HMGMA Georgia plant is expected to reduce tariff exposure materially, while hybrid powertrain additions to the Telluride and Seltos lineups are expected to expand sales of high-margin vehicles. Europe is targeted for a 60%-plus increase in EV unit sales, underpinned by a full lineup spanning EV2 through EV5 and potential benefits from local production subsidies. The PBV business is actively scaling beyond Korea, with PV5 now in the European and Japanese markets and a dedicated Hwaseong EVO Plant targeting 250,000 annual units by 2027, where the addition of the PV7 model should accelerate economies of scale. A Samsung Securities analysis note indicates that at meaningful penetration of Level 2+ autonomous driving and connectivity subscriptions, Kia's operating margin could eventually exceed 12%, representing a potential re-rating catalyst if realized. Kia's longer-term roadmap targets 4.3 million annual units, 1.6 million EV sales, and a 10% operating margin by 2030, though the trajectory remains contingent on tariff normalization, the pace of Chinese EV competition in emerging markets, and the global demand environment."
       },
       "bull": [
         {
           "title": {
-            "ko": "친환경차 수요 고성장 및 시장점유율 역대 최고",
-            "en": "Eco-Vehicle Demand Surge & Record Market Share"
+            "ko": "강력한 신차 사이클과 글로벌 점유율 확대",
+            "en": "Powerful New Product Cycle with Rising Global Market Share"
           },
           "body": {
-            "ko": "2026년 1분기 친환경차 판매는 전년 대비 33.1% 증가한 23.2만대를 기록했으며, 전기차는 54.1%, 하이브리드는 32.1% 성장했다. 글로벌 산업 수요가 7.2% 위축되는 환경에서도 점유율 4.1%를 달성하며 기아의 차별화된 경쟁력이 확인됐다.",
-            "en": "Q1 2026 eco-friendly vehicle sales rose 33.1% YoY to 232,000 units, with EVs up 54.1% and HEVs up 32.1%. Despite a 7.2% contraction in global industry demand, Kia attained a 4.1% retail market share—its highest ever—demonstrating differentiated competitive strength."
+            "ko": "기아는 2026년 신형 셀토스(HEV 추가), EV3·EV4, PV5, 텔루라이드 HEV 등 복수의 신모델을 글로벌 시장에 연속 투입하고 있다. 이는 ASP 상승과 고수익 차종 중심 판매 믹스 개선을 동반하며, 2019년 이후 미국 시장에서 축적된 높은 중고차 잔존가치가 신차 수요 전환을 가속화할 것으로 기대된다. EV3는 국내 기준 실구매가 약 3,000만원대 중반·주행 거리 약 515km의 경쟁력 있는 스펙으로 전기차 대중화를 견인할 전망이다. 실제 2026년 1분기 글로벌 소매 시장 점유율이 역대 최고인 4.1%를 기록한 점은 신제품 전략의 실효성을 구체적으로 입증한다.",
+            "en": "Kia is rolling out a multi-model product offensive in 2026, including the new Seltos (with added hybrid powertrain), EV3, EV4, PV5, and Telluride HEV across global markets. This expanded lineup is expected to drive ASP improvement and a favorable shift in sales mix toward higher-margin vehicles, while the strong residual vehicle values built up in the U.S. market since 2019 should help convert pent-up demand into new vehicle purchases. The EV3, with a post-subsidy price in the mid-KRW 30-million range and an approximately 515 km range, is well-positioned to broaden EV adoption among mainstream buyers. The fact that Kia's global retail market share reached a record 4.1% in 1Q26 provides concrete evidence of the effectiveness of this new product strategy."
           }
         },
         {
           "title": {
-            "ko": "HMGMA 현지 생산 확대로 관세 비용 구조 개선",
-            "en": "HMGMA Production Ramp to Structurally Reduce Tariff Costs"
+            "ko": "PBV 사업: 선제적 시장 진입과 조기 흥행",
+            "en": "PBV Business: First-Mover Advantage with Early Commercial Traction"
           },
           "body": {
-            "ko": "미국 조지아 HMGMA에서 스포티지 HEV 현지 생산이 개시됐으며, 연간 생산능력은 향후 50만대로 확장될 계획이다. 현지화율 제고가 본격화하면 관세 비용이 단계적으로 감소하면서 영업이익률 회복의 구조적 기반이 마련될 것으로 기대된다.",
-            "en": "HMGMA has commenced Sportage HEV production, with annual capacity earmarked for expansion to 500,000 units. As localization rates rise, tariff costs are expected to decline structurally, laying the groundwork for a sustained operating margin recovery over the coming quarters."
+            "ko": "기아의 첫 PBV 모델 PV5는 출시 7개월 만에 현대차그룹 전체 전기차 모델 중 월간 판매 1위를 기록하고 심사위원단 전원 일치로 '2026 세계 올해의 밴'을 수상하며 글로벌 상품성을 검증받았다. 영국에서는 초도 물량 4,000대가 4개월 만에 완판되고 추가 주문이 50% 이상 유입되는 등 수요가 공급을 압도하고 있다. PV5는 한국·유럽에 이어 2026년 5월 일본에 공식 출시되었으며, 미국 CES 공개를 통해 북미 진출도 시사해 판매 지역이 순차 확대 중이다. 화성 EVO Plant 가동과 PV7 출시 이후에는 소프트웨어·솔루션 번들링 기반의 고수익 사업 구조가 완성되며 기아의 밸류에이션 프레임 자체를 '자동차 제조사'에서 '모빌리티 플랫폼'으로 전환시키는 계기가 될 수 있다.",
+            "en": "Kia's first dedicated PBV, the PV5, became the top-selling EV model in Hyundai Motor Group seven months after launch and won the 2026 International Van of the Year with unanimous jury support, validating its global product competitiveness. In the UK, the initial 4,000-unit allocation sold out within four months with over 50% in additional incremental orders, indicating demand significantly exceeds early supply estimates. Following launches in Korea and Europe, PV5 officially debuted in Japan in May 2026, with North American introduction previewed at CES 2026, pointing to a sequential global market expansion. Once the Hwaseong EVO Plant reaches full capacity and the PV7 is introduced, the combined software-and-solution bundling model is expected to deliver higher margins, potentially prompting a revaluation of Kia from a traditional automaker to a mobility platform company."
           }
         },
         {
           "title": {
-            "ko": "탄탄한 재무 건전성과 주주환원 정책",
-            "en": "Robust Balance Sheet & Active Shareholder Return Policy"
+            "ko": "견조한 재무 구조와 주주환원 매력",
+            "en": "Robust Balance Sheet and Compelling Shareholder Return Profile"
           },
           "body": {
-            "ko": "최근 보도에 따르면 순현금은 약 19.6조원(시가총액 대비 약 33%)에 달하며, 팬데믹 이후 최악의 영업 환경에서도 잉여현금흐름(FCF) 흑자가 유지됐다. 기아는 2026~2028년 총주주환원율(TSR) 35% 이상을 목표로 제시해 배당 및 자사주 소각 등의 환원 의지를 재확인했다.",
-            "en": "Recent reports indicate net cash of approximately KRW 19.6 trillion (roughly 33% of market cap), with free cash flow remaining positive even through the toughest post-pandemic operating environment. Kia reaffirmed a TSR target of at least 35% for 2026–2028, signaling sustained commitment to dividends and buybacks."
+            "ko": "삼성증권 리포트에 따르면 2025년이 팬데믹 이후 최악의 영업 환경이었음에도 기아는 순현금 19.6조원(시가총액 대비 약 33%)을 달성하며 FCF 흑자 기조를 유지했다. 이는 현대차의 금융 부문 제외 순현금 12.5조원을 크게 상회하는 수준으로, 대규모 부채 없이 EV 및 PBV 투자를 자체 재원으로 집행할 수 있음을 의미한다. 총 주주환원율 35%를 유지하는 가운데, 예상 배당 수익률은 약 4%대 중반으로 추정되어 기관·가치투자자에게 높은 배당 매력을 제공한다. 현재 PER 5~6배권의 낮은 밸류에이션은 수익성 회복 시 주가 재평가 여지를 폭넓게 남겨두고 있다.",
+            "en": "According to a Samsung Securities research report, despite 2025 representing the most challenging operating environment since the pandemic, Kia maintained net cash of KRW 19.6 trillion (~33% of market cap) and preserved a positive free cash flow trajectory, well exceeding Hyundai Motor's ex-financial net cash of KRW 12.5 trillion. This fortress balance sheet enables self-funded investment in EV and PBV growth initiatives without material leverage risk. The company maintains a 35% total shareholder return ratio with an estimated dividend yield of approximately 4-5%, offering meaningful income appeal to institutional and value-oriented investors. At a trailing P/E of 5-6x, the current valuation leaves substantial room for a re-rating if operating margins recover in line with the FY2026 guidance trajectory."
           }
         }
       ],
       "bear": [
         {
           "title": {
-            "ko": "미국 관세의 지속적 수익성 압박",
-            "en": "Persistent U.S. Tariff Drag on Profitability"
+            "ko": "미국 관세 장기화 시 구조적 수익성 훼손",
+            "en": "Structural Margin Compression if U.S. Tariffs Prove Durable"
           },
           "body": {
-            "ko": "2026년 1분기 관세 영향 7,550억원이 영업이익 감소분의 대부분을 설명하며 영업이익률은 7.5%로 3.2pp 하락했다. 북미 매출 비중이 약 35%로 관세 노출도가 높아, HMGMA 현지 생산이 충분히 확대되기 전까지 분기 비용 압박이 지속될 가능성이 높다.",
-            "en": "The Q1 2026 tariff charge of KRW 755 billion accounted for the majority of the year-on-year operating profit decline, compressing the OPM by 3.2pp to 7.5%. With North America representing roughly 35% of revenue, tariff exposure remains high, and quarterly cost pressure is likely to persist until HMGMA local production reaches sufficient scale."
+            "ko": "2026년 1분기에 반영된 미국 관세 영향은 7,550억원으로, 연간 환산 시 약 3조원 규모에 달하며 이는 연간 영업이익의 30% 수준에 해당하는 막대한 비용이다. 현재 기아는 관세 15%를 기본 시나리오로 가정하고 있으나, 향후 무역 협상 결과에 따라 25% 고율 관세로 재상향될 가능성이 배제되지 않는다. 한 분석에 따르면 25% 관세가 지속되고 조지아 공장 증설이 지연될 경우 영업이익률이 6~7%대 박스권에 장기 고착될 위험이 있다. 또한 2026년 2분기에는 엔진 밸브 납품 2차 협력사 공장 화재로 기아의 약 3만 대 생산 차질이 예상되는 등 단기 공급망 리스크도 실적 추정의 불확실성을 높이고 있다.",
+            "en": "The KRW 755 billion U.S. tariff charge in 1Q26 annualizes to roughly KRW 3 trillion, equivalent to approximately 30% of the full-year operating profit guidance, representing a structurally significant headwind if elevated tariff rates persist. Management's current 2026 guidance assumes a 15% U.S. tariff baseline, but the outcome of ongoing trade negotiations introduces material upside tariff risk toward the prior 25% rate. One market analysis suggests that a sustained 25% tariff environment combined with delays in the Georgia plant expansion could structurally constrain operating margins to the 6-7% range over the medium term. Additionally, a fire at a tier-2 engine-valve supplier is expected to cause approximately 30,000 units of production disruption at Kia in 2Q26, adding a near-term supply chain risk to earnings visibility."
           }
         },
         {
           "title": {
-            "ko": "중국 완성차 업체 글로벌 확장에 따른 신흥시장 경쟁 심화",
-            "en": "Chinese OEM Global Expansion Eroding Emerging Market Position"
+            "ko": "중국 전기차 브랜드의 경쟁 심화",
+            "en": "Intensifying Competition from Chinese EV Manufacturers"
           },
           "body": {
-            "ko": "BYD 등 중국 전기차 업체들이 동남아·중남미 신흥시장에서 30~40% 저렴한 가격을 앞세워 공격적으로 확장 중이다. 기아의 신흥시장 매출 비중(약 25%)이 중장기적으로 잠식될 경우 전체 외형 성장 전망에 직접적인 부담이 된다.",
-            "en": "Chinese OEMs such as BYD are aggressively expanding into Southeast Asia and Latin America with price points 30–40% below Kia. Given that emerging markets account for approximately 25% of Kia's revenue, sustained Chinese inroads could materially pressure the company's long-term volume growth prospects."
+            "ko": "BYD를 비롯한 중국 전기차 업체들이 글로벌 신차 EV 시장에서 점유율을 빠르게 확대하고 있으며, 일부 분석에서는 BYD의 2025년 글로벌 신차 EV 점유율이 약 25%에 달하고 2026년에는 30%를 상회할 것으로 전망된다. 동남아·중남미 등 신흥 시장에서 중국 브랜드가 기아 대비 30~40% 낮은 가격의 전기차로 진입하면 기아의 신흥국 매출 기반이 침식될 위험이 있다. 유럽에서도 EU의 대중국 추가 관세에도 불구하고 경쟁 심화로 인한 인센티브 비용 증가가 지속되는 추세이며, 이는 기아의 유럽 수익성을 구조적으로 압박하는 요인이다. E-GMP 기반 전기차의 현재 경쟁력은 인정받고 있으나, 차세대 플랫폼·배터리 기술 경쟁에서 BYD·테슬라와의 격차 확대는 중장기 EV 목표 달성에 리스크로 부각될 수 있다.",
+            "en": "Chinese EV manufacturers, led by BYD, are rapidly expanding global market share; some analyses indicate BYD captured approximately 25% of global new EV sales in 2025, with projections exceeding 30% in 2026. In emerging markets across Southeast Asia and Latin America, Chinese brands entering with EVs priced 30-40% below Kia's comparable models pose a structural threat to Kia's emerging-market revenue base. In Europe, despite EU tariffs on Chinese EVs, competitive pressures continue to push up dealer incentive costs, structurally weighing on Kia's European profitability. While Kia's E-GMP-based EVs are currently competitive, an escalating technology gap versus BYD's and Tesla's next-generation platforms and manufacturing economics represents a growing medium-to-long-term risk to Kia's 2030 EV volume targets."
           }
         },
         {
           "title": {
-            "ko": "전기차 캐즘과 수익성·R&D 비용 동반 부담",
-            "en": "EV Demand Slowdown Creates Margin & R&D Cost Squeeze"
+            "ko": "환율 변동성과 단기 실적 가시성 제약",
+            "en": "FX Volatility Limiting Near-Term Earnings Visibility"
           },
           "body": {
-            "ko": "미국 IRA 전기차 세액공제 폐지로 EV 수요 성장이 둔화되고 있으며, 기아는 EV6 GT의 2026년형 미국 출시를 건너뛰는 등 현지 라인업을 조정했다. EV 전환이 예상보다 지연될 경우 대규모 R&D·설비투자 비용은 유지되면서 수익성 회복이 늦춰질 수 있다.",
-            "en": "The elimination of IRA EV tax credits has slowed U.S. EV demand, leading Kia to skip the 2026 model-year launch of the EV6 GT in North America. If the EV transition proceeds more slowly than planned, heavy R&D and capex commitments could persist while returns are delayed, prolonging the margin recovery timeline."
+            "ko": "기아는 매출의 80% 이상을 해외에서 창출하는 수출 중심 기업으로, 원/달러·원/유로 환율 변동에 대한 손익 노출도가 높다. 2025년 기말 환율 급등은 외화 판매보증충당부채 평가손으로 이어졌으며, 이 패턴이 2026년 1분기에도 반복되면서 영업이익 추정 신뢰도를 낮추고 있다. 현재 2026년 가이던스는 보수적 환율(달러당 1,370원)을 가정하고 있어 환율 하락 시 추가 이익 개선 여지가 있으나, 반대로 급등 재현 시 충당부채 비용이 재차 급증할 수 있다. 미국 연준 통화정책 불확실성과 중동 지정학적 리스크 등 외부 변수가 복합적으로 작용하며 분기별 실적 예측 가능성을 낮추고 있다.",
+            "en": "With over 80% of revenue derived from overseas markets, Kia has significant earnings exposure to KRW/USD and KRW/EUR exchange rate movements. The year-end 2025 won depreciation triggered a material mark-to-market loss on foreign-currency warranty provisions, a dynamic that repeated in 1Q26 and continues to reduce earnings predictability. Management's 2026 guidance incorporates a conservative KRW 1,370/USD assumption, which provides upside optionality if the won strengthens, but any sharp resumption of won depreciation could trigger another spike in provision charges. Compounding this are broader macro uncertainties — including Federal Reserve policy ambiguity, Middle East geopolitical tensions, and their potential impact on global vehicle demand — all of which cloud near-term quarterly earnings forecasting."
           }
         }
       ],
       "risks": [
         {
           "cat": {
-            "ko": "관세·통상 정책 리스크",
-            "en": "Tariff & Trade Policy Risk"
+            "ko": "통상/관세 리스크",
+            "en": "Trade/Tariff Risk"
           },
           "body": {
-            "ko": "미국 수입완성차 관세가 협상을 통해 15%로 완화 적용 중이나, 정책 역전 가능성이 상존한다. 관세가 25%로 재차 상향되거나 HMGMA 생산 확대가 지연될 경우 연간 수조원 규모의 추가 비용이 발생하며 중장기 수익성 목표 달성이 어려울 수 있다.",
-            "en": "U.S. auto tariffs have been partially reduced to 15% via negotiations, but policy reversal risk remains live. A reversion to 25% tariffs or a delay in HMGMA capacity expansion could impose several trillion KRW in additional annual costs, potentially derailing medium-to-long-term profitability targets."
+            "ko": "미국의 수입 완성차 관세율이 현재 시나리오(15%)를 상회하는 수준으로 재조정될 경우, 연간 수조원 규모의 추가 비용이 기아 손익에 직접 반영된다. 멕시코 생산 물량(USMCA 적용 기대)에 대한 실효 관세율 조정 여부와 현지 부품 크레딧 환급 등도 손익 변동 폭을 확대하는 요인이다. 하나증권 분석에 따르면 관세율 15% 인하 확정 시 현대차·기아 합산 관세 비용이 4조원 이상 절감될 수 있어, 협상 결과가 2026년 하반기 실적의 핵심 변수로 작용한다. 통상 정책의 예측 불가능성이 높아진 환경에서 생산 지역별 유연한 대응(HMGMA 미국 현지 생산 확대 등)이 중장기 리스크 관리의 핵심 과제다.",
+            "en": "A re-escalation of U.S. auto import tariffs above the current 15% scenario baseline would impose additional multi-trillion-won annual charges directly on Kia's operating profit. The effective tariff treatment of Mexico-sourced vehicles (subject to USMCA provisions) and the availability of parts-content credits represent key variables that could swing earnings outcomes materially. According to Hana Securities, a confirmed 15% tariff rate could reduce combined Hyundai/Kia tariff costs by more than KRW 4 trillion annually, making the trade negotiation outcome a critical swing factor for 2H26 earnings. Flexible production footprint management — including ramping HMGMA Georgia plant output — is the primary strategic lever for managing this risk over the medium term."
           }
         },
         {
           "cat": {
-            "ko": "지정학·환율 리스크",
-            "en": "Geopolitical & FX Risk"
+            "ko": "전기차 전환·기술 경쟁 리스크",
+            "en": "EV Transition & Technology Competition Risk"
           },
           "body": {
-            "ko": "미국·이란 갈등 등 지정학적 긴장이 아중동 권역 판매를 위축시키고 있으며, 원·달러 환율 급등은 판매보증충당부채를 반복적으로 증가시켜 영업이익을 단기 훼손하는 구조적 변동성 요인으로 작용 중이다.",
-            "en": "Geopolitical tensions—including the U.S.-Iran conflict that disrupted Middle East sales—continue to weigh on Kia's regional performance. A sharply weaker Korean won periodically inflates foreign-currency warranty provisions, creating recurring short-term pressure on reported operating profit."
+            "ko": "글로벌 전기차 수요의 일시적 정체(캐즘) 또는 중국 브랜드의 가격 경쟁 심화로 유럽·신흥 시장에서 기아의 EV 침투율 목표 달성이 지연될 수 있다. 미국에서는 IRA 보조금 정책 변화 및 전기차 세액공제 조정이 현지 EV 판매 수요에 추가 불확실성을 더하고 있다. 차세대 배터리(전고체·LFP 고에너지 밀도) 및 플랫폼 기술 개발 경쟁에서 BYD·테슬라와의 격차가 확대될 경우, 2030년 전기차 160만 대·전동화 비중 40% 목표가 하향 조정될 위험이 있다. 화성 EVO Plant 등 대규모 투자의 실행 지연 또는 PBV 수요 성장 속도 둔화도 중장기 성장 시나리오 신뢰성을 낮추는 요인이다.",
+            "en": "EV demand softness or accelerating price competition from Chinese OEMs could delay Kia's target EV penetration rates in Europe and emerging markets, pushing back the 2030 targets of 1.6 million EV units and 40% electrification share. In the U.S., changes to IRA EV tax credit eligibility rules add demand-side uncertainty to Kia's local electrification strategy. Falling behind in next-generation battery technology (solid-state, high-energy-density LFP) or platform development relative to BYD and Tesla could necessitate a downward revision of long-term EV volume guidance. Execution delays at the Hwaseong EVO Plant or slower-than-expected PBV market growth would also undermine confidence in the medium-term growth scenario."
           }
         },
         {
           "cat": {
-            "ko": "중장기 전동화·신사업 실행 리스크",
-            "en": "Long-Term Electrification & New Business Execution Risk"
+            "ko": "공급망·운영 리스크",
+            "en": "Supply Chain & Operational Risk"
           },
           "body": {
-            "ko": "기아는 2026~2030년 49조원의 대규모 투자를 계획하고 있으며, SDV·PBV·자율주행 등 미래 사업의 수익화 시점이 지연될 경우 재무 건전성에 부담이 될 수 있다. PBV 생태계 구축 속도와 B2B 고객 확보 여부가 중장기 성장 신뢰도를 가를 핵심 변수다.",
-            "en": "Kia's KRW 49 trillion, five-year investment plan carries meaningful execution risk; delayed monetization of SDV, PBV, or autonomous driving initiatives could strain the balance sheet. The pace at which Kia builds out the PBV ecosystem and secures B2B customers is a critical variable for medium-term growth credibility."
+            "ko": "2026년 2분기 발생한 엔진 밸브 2차 협력사 공장 화재는 기아와 현대차 각 약 3만 대의 생산 차질로 이어지며, 글로벌 공급망의 집중화·단일 소싱 리스크를 재확인시켰다. 반도체 수급 불균형이 완전히 해소되지 않은 상황에서 특정 부품 의존도 집중은 생산 계획의 불확실성을 지속적으로 높인다. 대규모 자본 지출(PBV 공장 약 4조원, 전기차 R&D 확대)이 진행되는 가운데 수익성 둔화가 장기화될 경우 현금 흐름 관리에 부담이 가중될 수 있으나, 현재의 순현금 19.6조원 수준에서 즉각적인 재무 압박 가능성은 낮다. 지정학적 긴장 고조(중동, 동유럽) 및 물류 비용 변동도 비용 구조의 불확실성을 높이는 배경 리스크로 작용한다.",
+            "en": "A fire at a tier-2 engine-valve supplier in 2Q26 caused an estimated 30,000-unit production disruption at each of Kia and Hyundai, re-highlighting supply chain concentration and single-source component risks. Residual semiconductor imbalances and the structural complexity of ramping new EV and PBV production lines continue to introduce uncertainty into production planning. The approximately KRW 4 trillion committed to the Hwaseong PBV plant and expanding EV R&D spend are substantial capital commitments; while the current KRW 19.6 trillion net cash position insulates against immediate financial stress, a prolonged period of margin compression would gradually erode this buffer. Broader geopolitical tensions in the Middle East and Eastern Europe, alongside freight and logistics cost volatility, represent background operational risks to the cost structure."
           }
         }
       ],
@@ -2485,28 +2540,35 @@ window.KOS_REPORTS = {
           "en": "Neutral"
         },
         "body": {
-          "ko": "기아는 역대 분기 최대 매출, 사상 첫 글로벌 점유율 4% 돌파, 친환경차 판매의 가파른 성장 등 외형 펀더멘털에서 경쟁 우위를 입증하고 있다. 그러나 미국 관세의 지속적 영향으로 영업이익률이 7.5%로 위축된 점, 중국 업체와의 경쟁 심화, EV 캐즘 등 단기 역풍이 수익성 회복을 제약하고 있다. HMGMA 하이브리드 생산 확대와 신차 사이클은 하반기 이익 개선의 촉매로 기대되며, 19.6조원의 순현금과 TSR 35% 주주환원 정책은 밸류에이션 하방을 지지한다. 2030년 매출 170조원·OPM 10%라는 중장기 목표의 달성 여부는 관세 정책, 전동화 실행 속도, PBV 생태계 현실화에 좌우될 것으로 판단되며, 현 시점은 단기 불확실성과 중장기 성장 잠재력이 공존하는 국면으로 평가된다.",
-          "en": "Kia demonstrates compelling fundamental strength through record quarterly revenue, a historic 4%-plus global market share, and strong eco-friendly vehicle volume growth. Nevertheless, near-term profitability headwinds—most notably U.S. tariff costs compressing the OPM to 7.5%, intensifying Chinese OEM competition, and EV demand uncertainty—remain material constraints. The HMGMA HEV production ramp and upcoming new model launches represent the key catalysts for an H2 2026 earnings recovery, while KRW 19.6 trillion in net cash and a 35% TSR commitment underpin valuation support. The realization of the 2030 targets (KRW 170 trillion revenue, 10% OPM) ultimately depends on tariff policy outcomes, electrification execution pace, and the speed of PBV ecosystem monetization. On balance, Kia currently occupies a transitional inflection point where near-term uncertainty and medium-to-long-term growth potential coexist."
+          "ko": "기아는 사상 최대 매출·견조한 순현금·신차 사이클·PBV 신사업 가시화라는 중장기 투자 매력을 보유하고 있으나, 미국 관세 지속·중국 전기차 경쟁·FX 변동이라는 삼중 비용 압박이 단기 수익성 회복의 속도와 크기에 대한 가시성을 제약하고 있다. PV5의 조기 흥행, 글로벌 소매 점유율 4.1% 달성, 친환경차 비중 29.7%로의 가파른 상승 등은 사업 모델 전환이 실질적으로 진행 중임을 입증하는 긍정적 신호들이다. 순현금 19.6조원(시가총액 대비 약 33%), 배당수익률 약 4%대 중반, PER 5~6배의 밸류에이션은 하방 경직성을 제공하며, 수익성 악화가 가격에 상당 부분 반영되어 있다는 점에서 과도한 비관론도 경계된다. 단기적으로는 2026년 2분기 실적 발표(약 7월 예정)에서 관세 비용 정상화 여부, HMGMA 생산 기여 효과, 인센티브 추세 등을 확인한 후 판단을 조정하는 접근이 적절하다. 중장기 시각에서는 관세 완화, PBV·EV 스케일업, SDV 구독 수익 본격화 등이 가시화될 경우 현재의 저평가 구간에서 의미 있는 재평가 가능성이 상존한다.",
+          "en": "Kia's long-term investment thesis remains substantively intact, supported by record revenues, a KRW 19.6 trillion net cash position, an active new product cycle, and the early commercial validation of the PBV business. However, the convergence of U.S. tariff headwinds, Chinese EV competitive pressures, and FX-driven cost volatility continues to limit visibility into the pace and magnitude of near-term operating margin recovery, justifying a neutral rather than outright constructive stance at this juncture. Positive leading indicators — record global market share of 4.1%, accelerating electrification penetration approaching 30%, and PV5's rapid market adoption — demonstrate that the business model transformation is tangibly progressing. The current valuation at 5-6x trailing P/E with a ~4-5% dividend yield and net cash equivalent to roughly a third of market capitalization suggests that much of the near-term earnings disappointment is already priced in, limiting further downside risk. The 2Q26 earnings release (expected around July 2026) will be a critical checkpoint to assess tariff cost normalization, HMGMA contribution, and incentive trajectory. Over the medium-to-long term, a combination of tariff relief, PBV scale-up, EV lineup expansion, and SDV subscription revenue realization could serve as meaningful re-rating catalysts from the current discounted entry level."
         }
       },
       "sources": [
-        "https://www.efnews.co.kr/news/articleView.html?idxno=129363",
-        "https://www.mobilitypost.co.kr/news/articleView.html?idxno=3510",
-        "https://www.inthenews.co.kr/news/article.html?no=86064",
-        "https://economist.co.kr/article/view/ecn202604240049",
         "https://www.hyundaimotorgroup.com/ko/news/CONT0000000000191641",
+        "https://www.hyundaimotorgroup.com/en/news/CONT0000000000201379",
+        "https://www.hyundaimotorgroup.com/en/news/CONT0000000000210007",
+        "https://www.carmgz.kr/news/articleView.html?idxno=21092",
         "https://www.samsungpop.com/common.do?cmd=down&contentType=application/pdf&inlineYn=Y&saveKey=research.pdf&fileName=2010/2026040613065456K_02_04.pdf",
-        "https://www.inthenews.co.kr/news/article.html?no=85402",
-        "https://www.smedaily.co.kr/news/articleView.html?idxno=355426",
-        "https://v.daum.net/v/20260409144004653",
-        "https://www.ebn.co.kr/news/articleView.html?idxno=1709724",
+        "https://www.press9.kr/news/articleView.html?idxno=71917",
+        "https://mauto.danawa.com/news/?Work=detail&no=5962747",
+        "https://www.mt.co.kr/industry/2026/04/08/2026040720001627943",
+        "https://www.reportera.co.kr/car/kia-pv5-ev-sales-number-one-beats-carnival/",
+        "https://www.fnnews.com/news/202605140500453850",
+        "https://www.starnewskorea.com/business-life/2026/05/04/2026050417031425353",
+        "https://www.ebn.co.kr/news/articleView.html?idxno=1688635",
         "https://www.junggi.co.kr/news/articleView.html?idxno=34855",
-        "https://mybestinvesting.co.kr/%EA%B8%B0%EC%95%84-2026%EB%85%84-5%EC%9B%94-%EC%9E%AC%EB%B6%84%EC%84%9D-%ED%95%9C%EA%B5%AD%ED%88%AC%EC%9E%90%EC%A6%9D%EA%B6%8C-220000%EC%9B%90-vs-%EB%B3%B4%EC%88%98%EC%A0%81-165000%EC%9B%90/"
+        "https://mybestinvesting.co.kr/%EA%B8%B0%EC%95%84-2026%EB%85%84-5%EC%9B%94-%EC%9E%AC%EB%B6%84%EC%84%9D-%ED%95%9C%EA%B5%AD%ED%88%AC%EC%9E%90%EC%A6%9D%EA%B6%8C-220000%EC%9B%90-vs-%EB%B3%B4%EC%88%98%EC%A0%81-165000%EC%9B%90/",
+        "https://www.yuccapostkorea.com/news/articleView.html?idxno=2035"
       ],
       "ticker": "000270",
       "name": "기아",
       "name_en": "KIA CORPORATION",
       "sector": "자동차",
+      "categories": [
+        "자동차",
+        "자율주행·전기차"
+      ],
       "market": "코스피",
       "reportDate": "2026-06-03",
       "dataDate": "20260602"
