@@ -196,6 +196,7 @@ body::before{content:"";position:fixed;inset:0;z-index:-1;pointer-events:none;
 :root[data-theme="dark"] .kpoints li::before{background:rgba(255,255,255,.1)}
 .rep-meta{display:flex;gap:8px 20px;flex-wrap:wrap;padding-top:16px;border-top:1px solid var(--hair);font:500 13px var(--font-sans);color:var(--fg-3)}
 .rep-meta b{color:var(--fg-2);font-weight:600;margin-right:5px}
+.rep-meta-end{margin-top:40px}
 
 /* tldr */
 .tldr{padding:20px 22px}
@@ -915,7 +916,6 @@ KOSi18n.register({
       h+=secOpen(pad(n++),'REPORT OVERVIEW',u.sec.overview);
       if(pk(REP.desc))h+='<p class="desc">'+esc(pk(REP.desc))+'</p>';
       if(REP.keypoints&&REP.keypoints.length)h+='<ol class="kpoints">'+REP.keypoints.map(function(k){return '<li>'+esc(pk(k))+'</li>';}).join('')+'</ol>';
-      h+='<div class="rep-meta"><span><b>'+esc(u.reportDate)+'</b>'+esc(REP.reportDate||'')+'</span></div>';
       h+='</section><hr class="hairline" />';
       h+=secOpen(pad(n++),'BUSINESS',u.sec.business)+prose(REP.business)+'</section><hr class="hairline" />';
       h+=secOpen(pad(n++),'RECENT',u.sec.recent)+prose(REP.recent)+'</section><hr class="hairline" />';
@@ -930,6 +930,7 @@ KOSi18n.register({
         h+='<hr class="hairline" />'+secOpen(pad(n++),'SOURCES',u.sec.sources);
         h+='<div class="srcgrid">'+REP.sources.map(srcCard).join('')+'</div></section>';
       }
+      h+='<div class="col"><div class="rep-meta rep-meta-end"><span><b>'+esc(u.reportDate)+'</b>'+esc(REP.reportDate||'')+'</span></div></div>';
       rb.innerHTML=h;
     }
 
