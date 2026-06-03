@@ -879,6 +879,13 @@ def main():
         log_summary(f"❌ 수집 종목 {len(results)}개로 비정상(50 미만) — stocks.js 갱신 건너뜀, 기존 데이터 유지")
         sys.exit(1)
 
+    # 시총 가드: DART 상장주식수 수집이 실패하면 mcap=0이 되어 사이트가 깨짐.
+    # 시총>0 종목이 절반 미만이면 비정상으로 보고 갱신 건너뜀(기존 데이터 보존).
+    mcap_ok = sum(1 for s in results.values() if (s.get("mcap") or 0) > 0)
+    if mcap_ok < len(results) * 0.5:
+        log_summary(f"❌ 시가총액>0 종목 {mcap_ok}/{len(results)}개로 비정상(DART 수집 실패 추정) — stocks.js 갱신 건너뜀, 기존 데이터 유지")
+        sys.exit(1)
+
     count = build_output(results, date)
     log_summary(f"- 최종 출력: {count}개 종목")
 
