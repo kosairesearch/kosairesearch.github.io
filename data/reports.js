@@ -1,6 +1,6 @@
 // KOS ai — AI 리서치 리포트 (자동 생성). 직접 수정하지 마세요.
 window.KOS_REPORTS = {
-  "lastUpdated": "2026-06-04 06:30",
+  "lastUpdated": "2026-06-04 06:48",
   "model": "claude-sonnet-4-6",
   "reports": {
     "005930": {
@@ -3980,144 +3980,144 @@ window.KOS_REPORTS = {
     },
     "010130": {
       "title": {
-        "ko": "핵심광물 허브로 도약하는 제련 챔피언",
-        "en": "A Smelting Champion Climbing the Critical-Minerals Ladder"
+        "ko": "사상 최대 실적, 지배구조가 변수",
+        "en": "Record Earnings Streak, Governance Overhang Persists"
       },
       "lead": {
-        "ko": "귀금속·핵심광물 가격 급등과 포트폴리오 다변화에 힘입어 2025년 사상 최대 실적에 이어 2026년 1분기에도 분기 최대 실적을 경신하였으나, 경영권 분쟁의 장기화·공정위 조사 본격화 및 대규모 미국 제련소 투자 부담이 중장기 핵심 변수로 부각되고 있다.",
-        "en": "Record-breaking earnings driven by surging precious and critical metals prices and a broadening product portfolio have continued into Q1 2026, yet the prolonged ownership dispute, an impending FTC enforcement proceeding, and the massive U.S. smelter investment commitment remain material overhangs."
+        "ko": "핵심광물 공급망 재편의 최전선에서 연속 최대 실적을 갱신하고 있으나, 장기화된 경영권 분쟁과 대규모 투자 부담이 기업가치 재평가의 핵심 변수로 부상하고 있다.",
+        "en": "Korea Zinc continues to deliver consecutive record results at the forefront of critical mineral supply chain restructuring, yet a protracted governance dispute and massive capital commitments remain key variables for a full valuation re-rating."
       },
       "desc": {
-        "ko": "고려아연(010130)은 DART 공시 연결 기준 2025년 연간 매출액 16.6조원(+37.6%), 영업이익 1.2조원(+70.3%), 당기순이익 7,702억원(+295.4%)으로 44년 연속 영업흑자를 이어가며 창사 이래 최대 실적을 달성하였고, 2026년 1분기에는 매출 6.1조원(+58.4%), 영업이익 7,461억원(+175.2%)으로 분기 사상 최대치를 또 한 번 경신하였다. 현재 시가총액 약 27.6조원 규모이며, MBK파트너스·영풍과의 경영권 분쟁이 2년 이상 지속되는 가운데 미국 테네시주 통합 제련소 건설('프로젝트 크루서블')을 본격화하는 등 사업 방향성과 지배구조 양 측면 모두에서 중요한 분기점에 놓여 있다.",
-        "en": "Korea Zinc (010130) reported full-year 2025 revenue of KRW 16.6 trillion (+37.6%), operating profit of KRW 1.2 trillion (+70.3%), and net income of KRW 770.2 billion (+295.4%) under DART-confirmed consolidated figures, sustaining 44 consecutive years of annual operating profit and achieving all-time highs; Q1 2026 further broke records with revenue of KRW 6.1 trillion (+58.4%) and operating profit of KRW 746.1 billion (+175.2%). With a market cap of approximately KRW 27.6 trillion, the company stands at a strategic crossroads, advancing the large-scale U.S. smelter project (Project Crusoble) while the multi-year governance dispute with MBK Partners and Young Poong continues to evolve."
+        "ko": "고려아연(010130)은 2025년 연간 사상 최대 실적(매출 16.6조원·영업이익 1.2조원)에 이어 2026년 1분기에도 분기 역대 최대 실적(매출 6.1조원·영업이익 7,461억원)을 경신하며 44년 연속·105분기 연속 영업흑자의 대기록을 이어가고 있다. 귀금속·전략광물 가격 상승과 포트폴리오 다각화가 실적을 견인한 가운데, 미국 테네시주 통합 제련소 '프로젝트 크루서블'과 트로이카 드라이브 전략을 통한 장기 성장 그림이 구체화되고 있다. 반면 MBK파트너스·영풍과의 경영권 분쟁은 법적 공방 2라운드로 진입하며 지배구조 불확실성이 당분간 주가 변동성을 확대시키는 구조적 요인으로 작용 중이다.",
+        "en": "Korea Zinc (010130) delivered an all-time record annual performance in 2025 (revenue KRW 16.6 trillion, operating profit KRW 1.23 trillion), followed by another all-time quarterly record in Q1 2026 (revenue KRW 6.1 trillion, operating profit KRW 746 billion), extending its extraordinary streak of 44 consecutive years and 105 consecutive quarters of operating profit. Precious metal and strategic mineral price tailwinds, combined with product portfolio diversification, drove the results, while 'Project Crucible' — a USD 7.4 billion integrated smelter in Tennessee — and the Troika Drive strategy are giving concrete shape to the long-term growth story. However, the ongoing hostile M&A battle with MBK Partners and Young Poong has entered a second round of legal proceedings, keeping governance uncertainty as a structural source of stock volatility."
       },
       "keypoints": [
         {
-          "ko": "2026년 1분기 영업이익률 12.3%로 전년 동기(7.1%) 대비 5.2%p 급상승 — 귀금속 가격 강세가 주 동인",
-          "en": "Q1 2026 operating margin surged 5.2pp to 12.3% vs. 7.1% a year earlier, driven primarily by precious metals price strength"
+          "ko": "2026년 1분기 영업이익 7,461억원(+175.2% YoY), 분기 역대 최대 경신 — DART 확정 공시 기준",
+          "en": "Q1 2026 operating profit of KRW 746.1 billion (+175.2% YoY) — all-time quarterly record per DART filing"
         },
         {
-          "ko": "글로벌 최상위권 은 생산기지: 2025년 2,090톤 생산·세계 점유율 약 6.7%, 은 가격 1달러 상승 시 연간 영업이익 약 100~120억원 증가",
-          "en": "World-class silver production: 2,090 tons output and ~6.7% global share in 2025; every USD 1/oz silver price increase adds KRW 10–12 billion to annual operating profit"
+          "ko": "중국의 전략광물 수출통제(안티모니·갈륨·게르마늄 등)에 따른 공급 경색이 가격 급등 및 고려아연의 전략적 위상 부각으로 연결",
+          "en": "China's export controls on strategic minerals (antimony, gallium, germanium, etc.) are tightening global supply and elevating Korea Zinc's strategic positioning"
         },
         {
-          "ko": "미국 테네시주 통합 제련소 '프로젝트 크루서블' 본격화 — 총 74억달러 투자, FAST-41 패스트트랙 지정, 2026년 5월 '크루서블 징크' 출범",
-          "en": "Project Crusoble (U.S. integrated smelter in Tennessee) escalates — USD 7.4B total investment, FAST-41 fast-track designation secured, 'Crusoble Zinc' launched in May 2026"
+          "ko": "프로젝트 크루서블: 74억 달러 규모 미국 통합 제련소, 미국 FAST-41 패스트트랙 지정(한국 기업 최초)으로 사업 속도 가속",
+          "en": "Project Crucible: USD 7.4 billion US integrated smelter designated under FAST-41 (first Korean company), accelerating permitting timeline toward 2029 operations"
         },
         {
-          "ko": "경영권 분쟁 2년 이상 지속 — 2026년 3월 주총 이후 이사회 9:5(또는 9:6) 구도로 재편, 공정위 순환출자 조사 행정 처분 절차 돌입 임박",
-          "en": "Governance contest persists beyond two years — post-March 2026 AGM board reconstituted to ~9:5 (or 9:6); FTC circular-ownership investigation nearing formal enforcement"
+          "ko": "MBK파트너스·영풍과의 경영권 분쟁 2라운드 진입 — 지분 싸움에서 자금·계약 적정성 검증 단계로 전환, 장기화 우려",
+          "en": "M&A dispute enters 'Round 2' — shifting from share acquisition battles to legal scrutiny of fund flows and contract terms, raising prolongation risks"
         },
         {
-          "ko": "트로이카 드라이브 신사업 가시화 — 페달포인트 2025년 첫 연간 흑자, 구리 생산능력 2026년 약 5만 톤으로 확대 추진",
-          "en": "Troika Drive new businesses gaining traction — Pedal Point turned its first annual profit in 2025; copper production capacity targeted to expand to ~50,000 tons in 2026"
+          "ko": "2026년 1분기 영업이익률 12.3%(전년 동기 +5.2%p) — 매출 성장과 수익성 개선 동시 달성, 분기 배당 주당 5,000원 결의",
+          "en": "Q1 2026 operating margin of 12.3% (+5.2pp YoY), with simultaneous revenue growth and profitability improvement; quarterly dividend of KRW 5,000 per share declared"
         }
       ],
       "business": {
-        "ko": "고려아연은 1974년 설립된 비철금속 종합 제련기업으로, 울산 온산제련소에서 연간 100만 톤 이상의 비철금속을 처리하는 세계 최대 단일 제련소 중 하나를 운영하고 있다. 주력 제품은 아연괴와 연(납)이며, 금·은·동 등 귀금속과 인듐·비스무트·안티모니·텔루륨 등 전략광물을 부산물 회수 공정을 통해 생산하는 고도화된 복합 제련 역량을 보유하고 있다. 2025년 기준 은 2,090톤을 생산하여 글로벌 시장점유율 약 6.7%를 확보하고 있으며, 이는 글로벌 최상위권 수준이다. 국내 유일의 전략광물 생산기지로서 미국 정부가 국가 및 경제안보 필수광물로 지정한 54종 중 14종을 생산할 수 있는 역량을 갖추고 있으며, 중국의 수출통제 이후 안티모니·인듐 등의 전략적 가치가 더욱 부각되고 있다. 해외 자회사로는 호주의 선메탈코퍼레이션(SMC, 아연·은 생산), 미국의 페달포인트(전자폐기물 전처리·자원순환), 아크에너지(신재생에너지·BESS) 등이 있으며 연결 실적 내 비중이 점진적으로 확대되고 있다. 사업 다각화 전략 '트로이카 드라이브'는 ① 신재생에너지·그린수소, ② 이차전지 소재, ③ 자원순환 세 축으로 구성되어 2025년부터 실적 기여가 본격화되기 시작하였다. 구리 부문은 2025년 생산능력 약 3만3,000톤에서 퓨머 전환 및 건식 제련 생산 추가를 통해 2026년 약 5만 톤으로 확대가 추진되어 포트폴리오 내 비중이 높아질 전망이다. 주요 글로벌 경쟁사로는 글렌코어(Glencore), 볼리덴(Boliden), 스미토모금속광산(Sumitomo Metal Mining) 등이 있으나, 고려아연은 단일 제련소의 규모·효율성과 전략광물 복합 회수 기술력에서 차별적 경쟁력을 확보하고 있다. 반도체용 황산 등 부산물 제품군도 반도체·이차전지 산업 수요 확대와 함께 별도 수익원으로 성장하고 있다.",
-        "en": "Korea Zinc, founded in 1974, operates one of the world's largest single non-ferrous metals smelters at its Onsan complex in Ulsan, processing over one million tons of non-ferrous metals annually. Core products are zinc ingot and lead, supplemented by precious metals (gold, silver, copper) and strategic minerals (indium, bismuth, antimony, tellurium, etc.) recovered through advanced multi-metal refining processes. In 2025, the company produced 2,090 tons of silver — a global top-tier output representing approximately 6.7% of world supply. As Korea's sole domestic producer of key strategic minerals, Korea Zinc can produce 14 of the 54 minerals the U.S. government designates as essential to national and economic security, a capability that has gained strategic premium following China's export controls. Overseas subsidiaries include Sun Metals Corporation (SMC) in Australia (zinc and silver), Pedal Point in the U.S. (e-waste pre-processing and resource recycling), and Arc Energy (renewable energy and BESS), all gradually expanding their contribution to consolidated results. The Troika Drive diversification strategy — centering on renewable energy & green hydrogen, secondary battery materials, and resource recycling — began making a meaningful earnings contribution in 2025. The copper segment is targeting a capacity expansion from approximately 33,000 tons in 2025 to around 50,000 tons in 2026 via fumer-unit conversion and dry smelting additions, lifting its intra-portfolio weight. Global peers include Glencore, Boliden, and Sumitomo Metal Mining, but Korea Zinc differentiates itself through integrated smelter scale and efficiency as well as proprietary multi-metal recovery technology. By-products including semiconductor-grade sulfuric acid are also growing as independent revenue streams alongside rising semiconductor and battery industry demand."
+        "ko": "고려아연은 1974년 설립 이후 울산 온산제련소를 중심으로 아연·연(鉛) 제련 사업을 운영해온 대한민국 최대 비철금속 종합 제련기업으로, 연간 100만 톤 이상의 비철금속을 생산하는 세계 최대 단일 제련소 중 하나다. 주력 제품은 아연·납·구리·금·은의 5대 기초금속 및 귀금속이며, 아연 제련 부산물로 금·은을 대규모 회수하는 기술 덕분에 세계 1위 은 생산 기업의 위상을 보유하고 있다(보도 기준 연간 은 생산 약 2,000톤, 금 약 7톤). 더불어 안티모니·인듐·비스무트·갈륨·게르마늄 등 첨단·방위산업 필수 전략광물을 포함해 총 22종의 금속을 생산하며, 미국이 국가·경제 안보에 필수로 지정한 54종 핵심광물 중 14종을 공급할 역량을 갖추고 있다. 특히 국내에서 안티모니 생산 기술력을 보유한 기업은 고려아연이 유일하며, 아연 제련 헤마타이트 공법(유가금속 회수율 최대 96.5%)은 2025년 국가핵심기술로 지정됐다. 사업 다각화 측면에서는 2022년 최윤범 회장 취임 이후 ①신재생에너지·그린수소 ②이차전지 소재 ③자원순환을 3대 축으로 하는 '트로이카 드라이브' 전략을 추진 중이며, 미국 자원순환 자회사 페달포인트는 2025년 처음으로 연간 흑자를 달성했고, 호주 자회사 아크에너지는 뉴사우스웨일스 주정부와 BESS 장기에너지서비스계약을 체결하는 등 성과가 구체화되고 있다. 경쟁 구도 측면에서 국내에서는 LS니꼬동제련·풍산 등이 개별 품목에서 경쟁하지만, 아연·연·귀금속·전략광물 통합 제련 분야에서는 경쟁자가 제한적이다. 글로벌로는 Glencore, Nyrstar 등과 비교 시 아연·연 통합공정 기반 희소금속 회수 기술과 한국·호주·미국(진행 중)에 걸친 3국 제련 네트워크가 차별화 포인트로 부각된다. 다만 경영권 방어 과정에서 상당 규모의 차입이 발생한 것으로 보고되고 있어, 대규모 미국 설비투자와의 재무 균형 관리가 중요한 경영 과제로 대두되고 있다.",
+        "en": "Korea Zinc, established in 1974 and centered on its Onsan Smelter in Ulsan, is South Korea's largest integrated non-ferrous metals smelter and one of the world's largest single-site smelters, producing over 1 million tonnes of non-ferrous metals annually. Its core products encompass five base and precious metals — zinc, lead, copper, gold, and silver — with large-scale precious metal recovery from the zinc smelting by-product stream making it the world's top silver producer (approximately 2,000 tonnes of silver and 7 tonnes of gold annually per recent reports). Beyond these, the company produces 22 metals in total, including strategic minerals such as antimony, indium, bismuth, gallium, and germanium, giving it the capability to supply 14 of the 54 critical minerals designated by the US as essential to national and economic security. Korea Zinc is the only domestic producer of antimony, and its Hematite Process for zinc smelting — achieving up to 96.5% valuable metal recovery — was designated a national core technology in 2025. On the diversification front, since Chairman Choi Yun-bum's tenure began in 2022, the 'Troika Drive' strategy pursues three growth pillars: renewable energy and green hydrogen, secondary battery materials, and resource recycling. US recycling subsidiary Pedal Point achieved its first annual profit in 2025, while Australian subsidiary Arc Energy secured a long-term energy services contract with the New South Wales government for a BESS project. Domestically, competition is limited in the integrated zinc-lead-precious-strategic mineral smelting space, and globally Korea Zinc's tri-national (Korea, Australia, US-in-progress) smelting network and rare-metal recovery technology differentiate it from peers such as Glencore and Nyrstar. However, significant debt reportedly taken on for M&A defense purposes adds complexity to the concurrent large-scale US investment program, making balance sheet management a near-term management priority."
       },
       "recent": {
-        "ko": "DART 공시 연결 기준으로, 2025년 연간 매출액은 16조5,812억원(+37.6%), 영업이익은 1조2,324억원(+70.3%), 당기순이익은 7,702억원(+295.4%)으로 창사 이래 사상 최대 실적을 달성하였다. 연간 영업이익률은 7.4%로 전년 대비 1.4%p 개선되었으며, 44년 연속(자체 집계 기준) 연간 영업흑자 기록도 이어갔다. 2025년 실적 개선의 배경에는 안티모니·인듐 등 전략광물 회수율 확대와 판매 호조, 금·은 귀금속 가격 상승, 우호적인 원·달러 환율 등이 복합적으로 작용하였다. 2026년 1분기(DART 공시)에는 매출 6조720억원(+58.4%), 영업이익 7,461억원(+175.2%), 당기순이익 3,540억원(+117.9%)으로 분기 최대 실적을 재차 경신하였다. 1분기 영업이익률은 12.3%로 전년 동기(7.1%) 대비 5.2%p 상승하였으며, 지정학적 불확실성 확대로 안전자산 선호가 강화되면서 은 매출이 전기 약 7,470억원에서 2조2,300억원 수준으로 급증한 것이 핵심 동인이다. 2025년 별도 기준으로 귀금속(금·은·동) 합산 매출이 전체의 50%를 처음 넘어섰으며, 2026년 1분기에는 별도 귀금속 매출 비중이 65.7%까지 상승하였다. 호주 자회사 SMC도 홍수 관련 물류 차질에도 불구하고 아연·은 가격 상승과 저품위 연 정광 수익성 개선에 힘입어 1분기 영업이익이 전 분기 대비 두 배 가까이 개선되었다. 주가는 2026년 5월 초 보도 시점 기준 약 174만~175만원 수준까지 상승했으나, 귀금속 가격 조정 영향 등으로 2026년 6월 4일 기준 132만2,000원(전일 대비 -3.85%)으로 내려와 있으며, 시가총액은 약 27.6조원이다.",
-        "en": "Based on DART-confirmed consolidated financials, Korea Zinc posted full-year 2025 revenue of KRW 16.58 trillion (+37.6%), operating profit of KRW 1.23 trillion (+70.3%), and net income of KRW 770.2 billion (+295.4%) — all-time highs since founding. The annual operating margin expanded 1.4pp to 7.4%, and the company extended its uninterrupted run to 44 consecutive years of annual operating profit by its own count. The 2025 outperformance was driven by higher recovery rates and stronger demand for strategic minerals such as antimony and indium, rising precious metals prices, and favorable KRW/USD exchange rates. In Q1 2026, Korea Zinc again broke its own quarterly records per DART-confirmed consolidated figures: revenue of KRW 6.07 trillion (+58.4%), operating profit of KRW 746.1 billion (+175.2%), and net income of KRW 354.0 billion (+117.9%). The Q1 2026 operating margin reached 12.3%, up 5.2pp year-on-year, primarily because silver revenue surged approximately threefold — from roughly KRW 747 billion to approximately KRW 2.23 trillion — as geopolitical uncertainty amplified safe-haven demand. Precious metals (gold, silver, copper) collectively surpassed 50% of standalone revenue for the first time in 2025; in Q1 2026, the precious metals share within standalone revenue rose further to 65.7%. Australian subsidiary SMC roughly doubled its operating profit quarter-on-quarter despite flood-related logistics disruptions, supported by higher zinc and silver prices and improved profitability on low-grade lead concentrate. The share price rallied to approximately KRW 1,747,000 in early May 2026 before retracing to KRW 1,322,000 (-3.85% day-on-day) as of June 4, 2026, apparently reflecting a precious metals price correction, implying a market capitalization of roughly KRW 27.6 trillion."
+        "ko": "DART 공시 확정 기준, 고려아연은 2025년 연간 연결 매출액 16.6조원(전기대비 +37.6%), 영업이익 1.2조원(+70.3%), 당기순이익 7,702억원(+295.4%)을 기록하며 창사 이래 사상 최대 실적을 달성했다. 2025년 연간 영업이익률은 7.4%로 전년 대비 1.4%포인트 상승했으며, 44년 연속 연간 영업흑자라는 기록을 이어갔다. 호실적의 핵심 동력은 중국이 2024년부터 시행한 안티모니 수출통제에 따른 가격 급등, 지정학적 불확실성과 안전자산 선호에 따른 금·은 등 귀금속 가격 상승, 그리고 회사의 선제적 전략광물 포트폴리오 확대였다. 2026년 1분기에는 DART 공시 기준 매출액 6.1조원(+58.4%), 영업이익 7,461억원(+175.2%), 당기순이익 3,540억원(+117.9%)으로 분기 역대 최대 실적을 다시 한번 경신했으며, 영업이익률도 12.3%로 전년 동기 대비 5.2%포인트 개선됐다. 최근 보도에 따르면 동 분기 실적은 귀금속 가격 상승과 판매량 확대, 우호적 환율, 자회사 SMC 및 KZ트레이딩 실적 개선 등이 복합적으로 기여했다. 주가는 2024년 초반 50만원대에서 경영권 분쟁 프리미엄과 핵심광물 테마가 더해지며 2026년 3월 장중 161만7,000원 수준까지 상승한 바 있으며, 1분기 실적 발표 직후인 2026년 5월 6일 전후에는 174만원대까지 치솟기도 했다. 그러나 2026년 6월 4일 기준 현재가 132만2,000원(전일대비 -3.85%, 시가총액 27.6조원)으로 최근 고점 대비 상당 폭 조정을 받고 있는 상태다. 증권가에서는 2026년 연간 영업이익이 2조원 수준 또는 그 이상에 달할 것이라는 전망이 일부 증권사에서 제시됐으나, 2분기 이후 귀금속 가격 안정화와 정광 수급 타이트화, SMC 조업 정상화 여부 등이 실적 지속성의 핵심 변수로 지목되고 있다.",
+        "en": "Per DART-confirmed filings, Korea Zinc delivered all-time record annual results in 2025: consolidated revenue of KRW 16.6 trillion (+37.6% YoY), operating profit of KRW 1.23 trillion (+70.3%), and net profit of KRW 770.2 billion (+295.4%), also extending its streak to 44 consecutive years of annual operating profit. The 2025 full-year operating margin of 7.4% was up 1.4 percentage points year-on-year, reflecting simultaneous top-line and bottom-line expansion. Key performance drivers included the sharp price spike in antimony following China's 2024 export controls, a broad rally in precious metals (gold and silver) driven by safe-haven demand amid geopolitical tension, and the company's proactive diversification into strategic mineral production. In Q1 2026, per DART filing, Korea Zinc again broke records with revenue of KRW 6.1 trillion (+58.4%), operating profit of KRW 746.1 billion (+175.2%), and net profit of KRW 354.0 billion (+117.9%); the Q1 2026 operating margin of 12.3% was up 5.2 percentage points year-on-year. Recent reporting indicates that higher precious metal prices and sales volumes, a favorable FX environment, and improved results at subsidiaries SMC and KZ Trading combined to drive the Q1 upside. On the equity side, the share price surged from around KRW 500,000 in early 2024 to an intraday high of approximately KRW 1,617,000 in March 2026 — partly driven by M&A premium and strategic mineral thematic interest — and briefly touched KRW 1.747 million around the Q1 earnings release date of May 6, 2026. As of June 4, 2026, the stock stands at KRW 1,322,000 (-3.85% on the day), implying a market capitalization of KRW 27.6 trillion, well below recent peaks. Select sell-side analysts projected 2026 full-year operating profit at KRW 2 trillion or above (on a conservative basis), though post-Q1 sustainability — particularly the trajectory of precious metal prices, concentrate supply tightness, and SMC operational normalization — is flagged as the critical variable for H2 2026 results."
       },
       "outlook": {
-        "ko": "최근 보도에 따르면 증권가에서는 2026년 연간 영업이익을 약 2조~2조5,000억원 수준으로 전망하고 있어 실적 모멘텀의 일정 기간 지속 가능성에 주목하고 있다. 귀금속 가격이 높은 수준을 유지하는 한 은 부문이 실적의 핵심 변수로 작용할 것이며, 고려아연은 은 가격 온스당 1달러 상승 시 연간 영업이익이 100억~120억원 늘어나는 구조라고 밝히고 있다. 구리 생산능력 확대(2025년 3.3만 톤 → 2026년 약 5만 톤 추정)가 실현될 경우 구리 부문 영업이익 기여도가 중기적으로 확대될 전망이다. 미국 테네시주 '프로젝트 크루서블'은 2026년 5월 크루서블 징크 출범과 FAST-41 패스트트랙 지정으로 본격화되어 2029년 완공을 목표로 하며, 중국의 전략광물 수출통제와 미국 주도 공급망 재편 흐름 속에서 고려아연의 전략적 위상이 강화될 것으로 분석된다. 반면 아연·연 기초금속은 글로벌 건설 경기 부진과 중국 내 제련 증설 등의 영향으로 가격 상방이 제한적일 수 있다. 공정거래위원회의 순환출자 조사 결과와 MBK파트너스·영풍 연합과의 분쟁 향방이 지배구조 관련 불확실성의 핵심 변수로 남아 있으며, 재무구조 정상화 속도와 프로젝트 크루서블의 실행 진척도도 중기 투자 관점의 중요 모니터링 포인트이다.",
-        "en": "Based on recent brokerage reports, the market consensus for Korea Zinc's 2026 full-year operating profit is approximately KRW 2.0–2.5 trillion, suggesting the earnings momentum may persist for some time. Silver will remain the primary swing factor: the company notes that every USD 1/oz increase in the silver price lifts annual operating profit by KRW 10–12 billion. If the planned copper capacity expansion to approximately 50,000 tons in 2026 materializes, the copper segment's earnings contribution should expand progressively over the medium term. Project Crusoble moved into execution with the launch of Crusoble Zinc in May 2026 and a FAST-41 designation that should streamline permitting; China's ongoing strategic mineral export restrictions and the broader U.S.-led supply chain realignment are enhancing Korea Zinc's strategic value as Korea's sole domestic critical minerals producer. On the downside, base metals prices — particularly zinc and lead — may face limited upside given construction sector weakness and expanding Chinese smelting capacity. The FTC investigation outcome, the ongoing governance dispute trajectory, the pace of balance sheet normalization, and Project Crusoble's execution progress are the key medium-term monitoring parameters for the investment case."
+        "ko": "중기 성장의 핵심 촉매는 미국 테네시주 클락스빌에서 추진 중인 '프로젝트 크루서블'이다. 총 74억 달러(약 11조원) 규모로 고려아연·미국 정부 및 재무 투자자가 공동 출자하며, 2026년 부지 조성, 2027년 착공, 2029년 단계적 상업 가동을 목표로 하고 있다. 2026년 4월 미국 연방정부 대형 인프라 인허가 패스트트랙 제도 FAST-41에 한국 기업 최초로 편입됨으로써 행정 일정 단축 효과가 기대되며, 완공 후에는 연간 약 110만 톤 원료 처리, 13종 비철금속 및 핵심광물 생산 체계를 갖추게 된다. 트로이카 드라이브 전략도 점차 결실을 내고 있어 자원순환·이차전지 소재·재생에너지 부문의 기여도가 점진적으로 확대될 전망이다. 반면 단기적으로는 ①귀금속·전략광물 가격의 레벨 유지 여부, ②정광 수급 타이트화에 따른 판매량 둔화 가능성, ③경영권 분쟁 장기화로 인한 경영진 집중력 분산과 법적 비용 증가가 실적 모멘텀의 하방 요인으로 작용할 수 있다. 2024~2026년 총주주환원율 목표 40%와 분기 배당 정책은 중장기 주주환원 의지를 보여주지만, 미국 대규모 설비투자 집행 본격화와 차입금 상환이 맞물리는 구간에서 재무적 여유 공간이 축소될 가능성도 배제하기 어렵다. 중국의 전략광물 수출통제 지속과 미국의 핵심광물 공급망 내재화 정책이 고려아연의 지정학적 위상을 높이는 구조적 흐름으로 작용할 것으로 예상되나, 개별 광물 가격 변동성에 따른 단기 이익 편차는 불가피하다.",
+        "en": "The primary medium-term growth catalyst is 'Project Crucible,' the USD 7.4 billion (approximately KRW 11 trillion) integrated smelter in Clarksville, Tennessee, co-funded by Korea Zinc, the US government, and financial investors, targeting site preparation in 2026, construction start in 2027, and phased commercial production from 2029. The April 2026 FAST-41 designation — the first for a Korean company-led project — is expected to materially shorten the permitting timeline, and upon completion the facility is designed to process approximately 1.1 million tonnes of raw material annually to produce 13 categories of non-ferrous metals and critical minerals. The Troika Drive strategy is also producing incremental results, and the contribution from resource recycling, secondary battery materials, and renewable energy segments is expected to grow over time. On the downside, near-term risks include: (1) whether current precious metal and strategic mineral price levels can be sustained into H2 2026 and beyond; (2) possible volume softness from tighter concentrate supply; and (3) management distraction and incremental legal costs from the prolonged M&A dispute. The company's 40% total shareholder return target for 2024–2026 and quarterly dividend policy signal a commitment to capital returns, but the overlap of large US capex execution with debt repayment obligations could compress financial flexibility in the years ahead. Structurally, China's continued export restrictions on critical minerals and US policy momentum for supply chain internalization should underpin Korea Zinc's geopolitical importance — yet individual commodity price volatility will continue to drive meaningful near-term earnings variability."
       },
       "bull": [
         {
           "title": {
-            "ko": "귀금속·핵심광물 가격의 구조적 강세",
-            "en": "Structural Strength in Precious and Critical Metal Prices"
+            "ko": "전략광물 공급망 재편의 구조적 수혜",
+            "en": "Structural Beneficiary of Critical Mineral Supply Chain Reset"
           },
           "body": {
-            "ko": "은·금 가격은 안전자산 선호 강화, AI·데이터센터·태양광·전기차 등 산업 수요 확대로 구조적 상승 압력이 지속되고 있다. 고려아연은 2025년 기준 은 2,090톤을 생산하여 글로벌 점유율 약 6.7%를 확보한 최상위권 생산기업으로, 가격 민감도가 매우 높아 가격 상승분이 이익에 직결되는 구조를 갖추고 있다. 안티모니·인듐 등 전략광물은 중국의 수출통제 조치 이후 가격 강세가 지속되고 있으며, 국내 유일 생산기지인 고려아연의 프리미엄 가치가 높아지고 있다. 반도체·방위산업 등 수요처 다변화가 핵심광물 실적 기여를 중장기적으로 확대할 것으로 기대된다.",
-            "en": "Safe-haven demand, together with secular growth from AI data centers, solar panels, and electric vehicles, supports a structural upward bias for silver and gold. Korea Zinc produced 2,090 tons of silver in 2025 with ~6.7% global market share and is exceptionally price-levered: every USD 1/oz move in silver translates directly into incremental operating profit. Strategic minerals such as antimony and indium have seen sustained price strength following China's export controls, amplifying Korea Zinc's premium as Korea's only domestic producer. Broadening demand from semiconductor and defense industries is expected to structurally expand the earnings contribution from critical minerals over the medium term."
+            "ko": "중국의 안티모니·갈륨·게르마늄 등 전략광물 수출통제는 일시적 이벤트가 아닌 지정학적 구조 변화로, 고려아연의 글로벌 공급망 내 희소성 가치를 높이고 있다. 국내 유일의 안티모니 생산 기업이자 미국이 지정한 핵심광물 14종 생산 역량을 보유하고 있어, 미국·한국 정부의 공급망 내재화 정책에서 핵심 파트너로 위상을 공고히 하고 있다. 프로젝트 크루서블에 대한 미 상무부 보조금 및 정책금융 지원은 이 같은 정책적 지지를 뒷받침하며, 2030년 이후 미국 현지 핵심광물 생산 기반이 구축되면 수익원이 크게 다변화될 것으로 기대된다. 세계 1위 은 생산업체로서 귀금속 가격 상승 국면에서의 이익 레버리지도 두드러진다.",
+            "en": "China's export controls on antimony, gallium, germanium, and other strategic minerals represent a structural geopolitical shift rather than a temporary event, enhancing Korea Zinc's scarcity value in the global supply chain. As the only domestic producer of antimony and a company capable of producing 14 US-designated critical minerals, it is cementing its role as a key partner in US and Korean government supply chain internalization policies. US Department of Commerce subsidies and policy finance support for Project Crucible underscore this backing, and once US-based critical mineral production commences post-2029, revenue diversification should be substantial. As the world's top silver producer, the company also carries meaningful earnings leverage to precious metal price rallies."
           }
         },
         {
           "title": {
-            "ko": "미국 핵심광물 공급망 핵심 파트너 위상 확보",
-            "en": "Cementing a Role as a Core U.S. Critical Minerals Supply Chain Partner"
+            "ko": "지속적인 수익성 개선과 실적 안정성",
+            "en": "Sustained Profitability Improvement and Earnings Resilience"
           },
           "body": {
-            "ko": "미국 테네시주 통합 제련소 '프로젝트 크루서블'은 총 74억달러 규모의 투자로, 미국 정부의 FAST-41 패스트트랙 인허가 지정과 약 2억1,000만달러의 정부 보조금 지원을 받으며 추진되고 있다. 2026년 5월에는 테네시주 니어스타USA 제련소 인수와 함께 '크루서블 징크'를 출범시켜 착공을 알렸으며, 완공 이후 핵심광물 11종을 포함한 비철금속 13종과 반도체용 황산을 생산하는 통합 제련 허브가 될 전망이다. 미국 정부가 FORGE 이니셔티브와 120억달러 규모의 핵심광물 비축 사업(Project Vault)을 추진하는 등 공급망 안보 투자를 강화하는 기조 속에서 고려아연의 전략적 위상은 높아지고 있다. 한미 양국 정부 모두의 지원을 받는 구조는 장기적인 성장 기반으로 작용할 가능성이 크다.",
-            "en": "Project Crusoble — a USD 7.4B integrated smelter in Tennessee — progresses with FAST-41 fast-track permitting status and approximately USD 210 million in U.S. government grants. In May 2026, Korea Zinc acquired NyrStar's Tennessee smelter assets and launched the Crusoble Zinc subsidiary, marking formal execution; once completed, the facility is expected to produce 13 non-ferrous metals including 11 critical minerals plus semiconductor-grade sulfuric acid. The U.S. government's FORGE initiative and the USD 12B Project Vault critical minerals stockpiling program underscore the macro tailwind for domestic critical minerals production capacity. Support from both the U.S. and Korean governments positions Project Crusoble as a potentially transformative long-term growth platform."
+            "ko": "44년 연속·105분기 연속 영업흑자는 글로벌 비철금속 업계에서 유례를 찾기 어려운 기록으로, 다품종 포트폴리오를 통해 특정 금속 가격 하락을 다른 품목의 상승으로 상쇄하는 헷징 구조가 핵심이다. 2025년 영업이익률 7.4%, 2026년 1분기 12.3%로 이익률 상승 기조가 뚜렷하며, 이는 단순 매출 증대를 넘어 수익 구조의 질적 개선을 반영한다. 트로이카 드라이브 신사업 부문의 점진적 흑자 전환(페달포인트 2025년 첫 연간 흑자)은 추가적인 이익 기여의 씨앗이 되고 있다. 2025년 연간 당기순이익이 전기대비 295.4% 급증했다는 점은 제련 본업 외 금융수지·지분법 이익 등 복합적 이익 원천이 발현됐음을 시사한다.",
+            "en": "Forty-four consecutive years and 105 consecutive quarters of operating profit is nearly unmatched in the global non-ferrous smelting industry, underpinned by a multi-product portfolio structure that naturally hedges the impact of any single metal price decline with gains in others. The operating margin trajectory — 7.4% for full-year 2025 and 12.3% in Q1 2026 — signals a qualitative improvement in earnings composition rather than simple revenue growth. The gradual profitability turnaround in Troika Drive subsidiaries (Pedal Point's first annual profit in 2025) is seeding incremental future earnings contributions. The 295.4% YoY surge in 2025 net profit also hints at diversified income sources beyond core smelting, including financial income and equity-method gains."
           }
         },
         {
           "title": {
-            "ko": "트로이카 드라이브 신사업 이익 기여 가시화",
-            "en": "Troika Drive New Businesses Transitioning to Earnings Contributors"
+            "ko": "미국 제련소 옵션 가치의 점진적 현실화",
+            "en": "Progressive Realization of US Smelter Option Value"
           },
           "body": {
-            "ko": "자원순환 자회사 페달포인트는 2025년 첫 연간 흑자를 달성하며 신사업 성과 가시화의 상징적 사례가 되었고, 2026년 1분기에도 동 판매량 증가와 함께 실적 기여를 이어가고 있다. 구리 부문은 퓨머 설비 전환과 건식 제련 생산 추가를 통해 생산능력이 2026년 약 5만 톤 수준으로 확대될 것으로 추정되며, 이에 따른 이익 기여도 증가가 기대된다. 호주 아크에너지의 BESS 프로젝트는 뉴사우스웨일스 주정부와 장기에너지서비스계약(LTESA)을 체결하며 신재생에너지 부문의 실질적 성과를 입증하였다. 신사업 비중이 점진적으로 확대될수록 기초금속 가격 변동성에 대한 포트폴리오 방어력이 높아질 것으로 평가된다.",
-            "en": "Pedal Point, the U.S. resource recycling subsidiary, turned its first annual profit in 2025, symbolizing the new business segment's transition to genuine earnings contributor, and continued to support results in Q1 2026 alongside rising copper sales. The copper segment is expected to reach approximately 50,000 tons of production capacity in 2026 via fumer-unit conversion and dry smelting additions, lifting its earnings contribution. Arc Energy in Australia secured a long-term energy service contract (LTESA) with the New South Wales state government for its BESS project, providing tangible evidence of progress in the renewable energy pillar. As new business segments grow in scale, the overall portfolio will become progressively less sensitive to base metal price swings."
+            "ko": "프로젝트 크루서블은 단순 설비 확장을 넘어 고려아연의 밸류에이션 패러다임을 '한국 제련 기업'에서 '글로벌 핵심광물 공급망 인프라 기업'으로 전환시킬 수 있는 장기 옵션이다. FAST-41 패스트트랙 지정으로 인허가 절차가 평균 18개월 단축될 것으로 알려지며 프로젝트 리스크가 경감됐고, 미국 국방부·상무부를 비롯한 미국 정부의 적극적 재정 지원이 사업 안정성을 뒷받침한다. 완공 후 연간 110만 톤 원료 처리, 갈륨·게르마늄 등 미국 내 최초 생산을 포함한 13종 비철금속 생산은 새로운 수익 축을 형성할 것이며, AI·반도체·방위산업 등 첨단 산업의 구조적 수요 증가가 판로를 뒷받침할 전망이다.",
+            "en": "Project Crucible is more than a capacity expansion — it is a long-dated option that could shift Korea Zinc's valuation paradigm from 'Korean smelter' to 'global critical mineral supply chain infrastructure company.' The FAST-41 designation is reported to shorten the permitting process by an average of 18 months, meaningfully de-risking the project timeline, while active financial backing from the US Department of Defense and Department of Commerce underpins project stability. Once operational, the facility's annual processing of 1.1 million tonnes of raw material and production of 13 non-ferrous metals — including the first US domestic production of gallium and germanium — will open an entirely new revenue stream, with structural demand growth from AI, semiconductors, and defense industries providing durable end-market support."
           }
         }
       ],
       "bear": [
         {
           "title": {
-            "ko": "장기화된 경영권 분쟁과 지배구조 불확실성",
-            "en": "Prolonged Ownership Dispute and Governance Uncertainty"
+            "ko": "경영권 분쟁 장기화와 지배구조 불확실성",
+            "en": "Protracted Governance Dispute and Structural Uncertainty"
           },
           "body": {
-            "ko": "MBK파트너스·영풍 연합과의 경영권 분쟁은 2024년 9월 시작 이후 2년 이상 지속되고 있으며, 2026년 3월 정기 주총 이후 이사회 구도가 9:5(또는 9:6)으로 재편되어 최윤범 회장 측 우위는 유지되나 분쟁이 완전히 종결되지 않은 상태이다. 공정거래위원회가 2026년 5월 고려아연의 해외 계열사를 활용한 순환출자 구조에 대한 심사보고서 작성을 완료하고 행정 처분 절차에 돌입할 것으로 전망되어 추가적인 규제 리스크가 상존한다. 경영권 분쟁 장기화로 인한 전략적 의사결정 지연, 경영진 집중력 분산, 임직원 사기 저하 등 비가시적 비용도 우려 요인으로 꼽힌다. 국민연금이 2026년 주총에서 최 회장 관련 주요 안건에 의결권을 행사하지 않기로 하면서 향후 추가 주총 시 표 대결의 불확실성이 더해지고 있다.",
-            "en": "The ownership dispute with the MBK Partners–Young Poong coalition, which began in September 2024, has exceeded two years; while the Choi Yoon-bum faction retained board control after the March 2026 AGM at approximately a 9:5 ratio, the conflict remains unresolved. The Fair Trade Commission completed its investigation report on Korea Zinc's creation of a circular ownership structure via overseas subsidiaries in May 2026 and is expected to initiate formal administrative proceedings, adding a regulatory layer to governance risk. Less-visible costs include delayed strategic decision-making, management distraction, and potential employee morale erosion attributable to the protracted dispute. The National Pension Service's abstention on key Choi-related resolutions at the 2026 AGM further clouds the outcome of any future proxy contest."
+            "ko": "MBK파트너스·영풍 연합과의 경영권 분쟁은 2024년 9월 공개매수 이후 2년 이상 이어지며 햇수로 3년차에 접어들었다. 2026년 3월 정기주주총회에서 현 경영진이 이사회 우위를 재확인했으나, 자금 흐름 및 계약 적정성을 둘러싼 주주대표 소송·문서 제출 명령 등 법적 공방이 새 국면으로 진입해 분쟁 종결이 단기적으로 기대되기 어렵다. 경영진의 분쟁 대응에 따른 경영 리소스 분산, 법적 비용 증가, 그리고 외부 이해관계자의 불확실성 인식이 신성장 프로젝트 실행력에 영향을 미칠 수 있다. 시장에서는 분쟁이 종료될 경우 프리미엄 소멸과 오버행 매물 부담이 주가 하방 요인으로 전환될 수 있다는 분석도 존재한다.",
+            "en": "The hostile M&A battle with MBK Partners and Young Poong has stretched beyond two years since the September 2024 tender offer and is now entering its third calendar year. While the current management secured a renewed board majority at the March 2026 AGM, legal proceedings over fund flows and contract appropriateness — including shareholder derivative suits and court-ordered document production — have opened a new front, making near-term resolution unlikely. Management distraction, rising legal costs, and stakeholder uncertainty about the governance outcome could impair execution of the critical growth agenda, particularly the US smelter project. Paradoxically, market analysis also notes that resolution of the dispute could eliminate the M&A premium and introduce material overhang selling pressure on the share price."
           }
         },
         {
           "title": {
-            "ko": "경영권 방어 과정의 차입 확대로 훼손된 재무구조",
-            "en": "Elevated Leverage from Defensive Share Buybacks Strains the Balance Sheet"
+            "ko": "경영권 방어 과정에서의 재무구조 훼손",
+            "en": "Balance Sheet Stress From M&A Defense Financing"
           },
           "body": {
-            "ko": "경영권 분쟁 과정에서 전년도 당기순이익의 약 5배에 달하는 2조6,545억원을 차입하여 자사주를 매입하면서, 이전에 '현금부자' 기업으로 평가받던 재무구조가 크게 훼손되었다는 비판이 제기되고 있다. 이자비용 증가는 당기순이익 감소 요인으로 작용하며, 74억달러 규모의 프로젝트 크루서블 투자를 병행해야 하는 상황에서 재무적 유연성이 예전보다 제약되어 있다. 고려아연 측은 차입 구조를 장기·저금리 중심으로 재편해 이자비용을 줄이겠다는 계획을 밝혔으나, 이행 속도와 실현 가능성은 지속적인 확인이 필요하다. 자사주 소각(2025년 204만여 주)에도 불구하고 주주환원과 재무건전성 간 균형 유지가 중기적 과제로 남아 있다.",
-            "en": "During the governance dispute, Korea Zinc borrowed approximately KRW 2.65 trillion — roughly five times its prior-year net income — to fund defensive share buybacks, materially impairing a balance sheet that had been regarded as cash-rich. Higher interest expenses weigh on net income, and reduced financial flexibility complicates the simultaneous pursuit of the USD 7.4B Project Crusoble. Management has indicated plans to restructure borrowings toward longer maturities and lower-cost debt, but execution pace and feasibility warrant ongoing monitoring. Despite the cancellation of approximately 2.04 million treasury shares in 2025, balancing ongoing shareholder returns with the imperative to restore balance sheet health remains a medium-term challenge."
+            "ko": "경영권 방어를 위한 자사주 공개매수 과정에서 상당한 규모의 차입이 발생한 것으로 보고되며, 이는 과거 '현금 부자 기업'으로 알려졌던 고려아연의 재무 구조를 변화시킨 것으로 알려졌다. 이 같은 재무 부담은 74억 달러 규모 미국 제련소 투자 집행이 본격화되는 시기와 맞물려 이자 비용 증가와 자본 배분 압박을 가중시킬 우려가 있다. 2024~2026년 총주주환원율 40% 목표를 유지하면서 동시에 대규모 투자를 소화해야 하는 구조적 긴장은 투자 사이클 후반부로 갈수록 심화될 수 있다. 차입 구조와 세부 재무 지표는 분기별 공시를 통해 지속 모니터링이 필요하다.",
+            "en": "Reports indicate that significant debt was incurred during the self-tender offer executed as part of the M&A defense strategy, materially altering a balance sheet previously known for its cash-rich position. This financial burden could compound as US smelter capex disbursements accelerate, layering higher interest costs onto the capital allocation framework. Maintaining the 40% total shareholder return target for 2024–2026 while simultaneously absorbing large-scale capex creates a structural tension that may intensify as the investment cycle matures. Detailed debt structure and leverage ratios warrant close monitoring via quarterly disclosures."
           }
         },
         {
           "title": {
-            "ko": "귀금속 가격 의존도 심화에 따른 이익 변동성 확대",
-            "en": "Rising Earnings Sensitivity to Precious Metals Prices Amplifies Downside Risk"
+            "ko": "귀금속·전략광물 가격 의존도와 단기 모멘텀 둔화",
+            "en": "Dependence on Precious and Strategic Mineral Prices; Near-Term Momentum Softening"
           },
           "body": {
-            "ko": "2026년 1분기 별도 기준 귀금속 매출 비중이 65.7%까지 상승하면서 은·금 가격 하락이 발생할 경우 이익 충격이 크게 확대될 수 있는 구조가 형성되었다. 실제로 주가는 2026년 5월 초 약 175만원대에서 6월 4일 기준 132만2,000원으로 약 한 달 사이 20% 이상 하락하여 귀금속 가격 조정 국면의 영향이 주가에 빠르게 반영되는 양상을 보이고 있다. 아연·연 기초금속의 경우에도 2026년에는 볼리덴의 타라 광산 재가동, 이반호 키푸시 프로젝트 생산 증가 등 공급 측 완화 요인과 건설 경기 부진이 맞물려 가격 상승이 제한될 수 있다는 전망이 있다. 귀금속·핵심광물 가격에 기반한 고성장이 지속 가능성을 갖추기 위해서는 신사업과 기초금속 포트폴리오의 안정적 성장이 동반되어야 한다.",
-            "en": "With precious metals accounting for 65.7% of standalone revenue in Q1 2026, any meaningful decline in silver or gold prices would translate into disproportionate earnings pressure. Indeed, the share price fell more than 20% from approximately KRW 1,747,000 in early May to KRW 1,322,000 on June 4, appearing to reflect a precious metals price correction swiftly discounted by the market. For base metals, zinc price upside in 2026 may be constrained by incremental supply — including Boliden's Tara mine restart and ramp-up of Ivanhoe's Kipushi project — combined with subdued construction demand. The high-growth trajectory driven by precious and critical metal price strength requires stable contributions from new businesses and the base metals portfolio to be genuinely sustainable."
+            "ko": "2025년 실적과 2026년 1분기 급성장의 핵심은 안티모니·금·은 등 특정 금속 가격의 이례적 급등이었으며, 이 가격 변동성이 그대로 하방 리스크로 전환될 수 있다. 최근 보도에 따르면 증권가 일부에서는 귀금속 가격 안정화와 정광 수급 타이트화로 판매량 둔화가 예상되며 단기 모멘텀이 이미 피크아웃 국면에 진입했다는 진단이 나오고 있다. 기초금속인 아연의 경우, 글로벌 건설·산업 실수요 부진이 지속되고 있어 포트폴리오 전체의 균형적 성장에 제약이 될 수 있다. 제련 부문의 이익은 가공 수수료(TC/RC) 환경에도 영향을 받으며, 원재료인 정광 수급의 글로벌 타이트화가 원가 상승 요인으로 작용할 수 있다.",
+            "en": "The standout performances in 2025 and Q1 2026 were significantly driven by exceptional price spikes in antimony, gold, and silver — a concentrated price-dependent earnings structure that translates directly into downside risk if those prices normalize. Recent sell-side commentary suggests that some analysts see precious metal price stabilization and tighter concentrate supply already contributing to a moderation in sales volume growth, with near-term momentum potentially at a peak. For zinc itself, sluggish global construction and industrial end-demand continues to limit balanced portfolio growth. Smelting margins are also sensitive to treatment charge (TC/RC) environments, and globally tight concentrate supply could translate into higher input costs going forward."
           }
         }
       ],
       "risks": [
         {
           "cat": {
-            "ko": "금속 가격·거시경제 리스크",
-            "en": "Metal Price & Macro Risk"
+            "ko": "매크로·상품 리스크",
+            "en": "Macro & Commodity Risk"
           },
           "body": {
-            "ko": "글로벌 경기 둔화, 달러 강세 전환, 지정학적 긴장 완화 등이 복합적으로 작용할 경우 귀금속 가격이 고점 대비 크게 조정될 수 있으며, 이는 실적에 직결되는 핵심 위험 요인이다. 아연·연 기초금속 가격은 건설 부문 수요 회복 지연과 중국 내 신규 제련 용량 증가로 2026년 박스권 또는 하락 압력에 노출될 가능성이 있다. 원·달러 환율이 예상보다 빠르게 하락할 경우 달러 표시 제품 수익의 원화 환산 이익이 줄어들어 실적 감소 압력으로 작용한다.",
-            "en": "A global growth slowdown, a reversal to U.S. dollar strength, or an easing of geopolitical tensions could trigger a meaningful pullback in precious metals prices from currently elevated levels, directly impacting earnings given the portfolio's high leverage to silver and gold. Zinc and lead prices face downside risk from delayed recovery in construction demand and expanding Chinese smelting capacity, potentially capping the base metals segment in 2026. Faster-than-expected KRW appreciation against the USD would reduce the domestic-currency value of dollar-denominated product revenues, adding an additional headwind to reported results."
+            "ko": "글로벌 경기 둔화 심화 시 아연·연 등 기초금속의 산업 실수요가 추가 위축될 수 있으며, 귀금속 가격도 달러 강세 전환 또는 안전자산 선호 약화 시 조정 압력을 받을 수 있다. 미국의 금리 정책 변화와 달러/원 환율 변동성도 수익성에 직접적 영향을 미치는 요인이다. 특히 2025~2026년 실적의 주요 기여 요인인 안티모니·갈륨·게르마늄 등 전략광물 가격은 정책 변화나 공급 재개 시 급격히 정상화될 수 있어, 이익 구조의 지속 가능성 점검이 필요하다.",
+            "en": "A deeper global economic slowdown could further reduce industrial end-demand for zinc and lead, while precious metal prices may face correction risk in the event of a strengthening dollar or fading safe-haven demand. US Federal Reserve policy shifts and USD/KRW exchange rate volatility are direct profitability variables. Notably, strategic mineral prices (antimony, gallium, germanium) that contributed significantly to the 2025–2026 earnings surge could normalize rapidly if export restriction policies shift or alternative supply re-emerges, warranting ongoing scrutiny of earnings sustainability."
           }
         },
         {
           "cat": {
-            "ko": "지배구조·규제 리스크",
-            "en": "Governance & Regulatory Risk"
+            "ko": "지정학·규제 리스크",
+            "en": "Geopolitical & Regulatory Risk"
           },
           "body": {
-            "ko": "공정거래위원회가 고려아연의 해외 계열사를 활용한 순환출자 구조 형성에 대한 심사를 마치고 전원회의 제재 절차를 밟을 것으로 전망되며, 제재의 강도와 내용에 따라 지배구조 구도가 재편될 수 있다. MBK파트너스·영풍 연합이 이사회 내 입지를 지속적으로 강화하는 가운데, 향후 추가 주총이나 임시주총에서 표 대결이 재현될 경우 전략적 의사결정의 일관성이 흔들릴 가능성이 있다. 상법 개정(자사주 소각 의무화, 감사위원 분리선임 강화 등)에 따른 제도 변화도 지배구조 전반에 영향을 미칠 수 있는 변수로 작용하고 있다.",
-            "en": "The Fair Trade Commission finalized its investigation report on Korea Zinc's circular ownership structure via overseas subsidiaries in May 2026 and is expected to move the case to a full commission hearing; the severity of any sanctions could reshape the governance landscape. As the MBK–Young Poong bloc incrementally strengthens its boardroom presence, any future extraordinary or annual general meeting proxy contest could disrupt strategic continuity. Ongoing legislative changes — including mandatory treasury share cancellation requirements and enhanced audit committee appointment procedures under the revised Commercial Act — represent additional governance-related uncertainties."
+            "ko": "미중 무역 갈등 심화는 고려아연에게 양면적 리스크다. 중국의 수출통제 지속은 전략광물 가격 강세를 유지시키는 긍정 요인이지만, 동시에 글로벌 공급망 교란과 원료 정광 수급 불안으로 이어질 수 있다. 미국의 관세 정책 변화가 프로젝트 크루서블의 투자 여건에 미칠 영향도 모니터링이 필요하며, 한미 양국의 핵심광물 정책 지속성에 대한 불확실성도 존재한다. 환경·안전 규제 강화는 국내외 제련 사업 운영 비용을 높일 수 있으며, 경쟁사 대비 규제 대응 능력이 장기 수익성 결정 요인 중 하나다.",
+            "en": "The escalating US-China trade conflict presents a dual-edged risk for Korea Zinc. China's continued export restrictions sustain strategic mineral price strength, but can simultaneously disrupt global supply chains and tighten concentrate availability. Changes in US tariff policy could affect the investment environment for Project Crucible, and there is inherent uncertainty around the long-term continuity of critical mineral policy support from both governments. Tightening environmental and safety regulations domestically and abroad could raise operating costs for smelting operations, and the company's relative ability to manage regulatory demands versus peers will be a determinant of long-term profitability."
           }
         },
         {
           "cat": {
-            "ko": "대규모 투자·실행 리스크",
-            "en": "Large-Scale Capital Deployment & Execution Risk"
+            "ko": "실행·재무 리스크",
+            "en": "Execution & Financial Risk"
           },
           "body": {
-            "ko": "미국 테네시주 '프로젝트 크루서블'은 총 74억달러 규모의 대형 투자로, 2029년 완공 목표까지 지속적인 자금 소요가 예상되어 이미 훼손된 재무구조에 추가 부담이 될 수 있다. FAST-41 패스트트랙 지정으로 인허가 리스크가 일부 완화되었으나, 건설 비용 초과, 공기 지연, 금속 가격 환경 변화 등 대형 프로젝트에 내재된 실행 리스크는 여전히 상존한다. 국내 온산제련소 고도화, 송도 R&D센터 건립 등 병행 국내 투자 계획까지 감안할 때, 투자 우선순위와 자금 조달 구조를 균형 있게 관리하는 것이 핵심 과제로 남아 있다.",
-            "en": "Project Crusoble's total investment of USD 7.4 billion entails substantial ongoing capital requirements through its targeted 2029 completion, adding further strain on a balance sheet already burdened by governance-related borrowings. While the FAST-41 designation reduces permitting risk, large-scale project risks — construction cost overruns, schedule delays, and shifts in the metals price environment — remain inherent. The concurrent pursuit of domestic investments, including the Onsan smelter upgrade and a new Songdo R&D center, will require disciplined capital allocation and carefully structured financing to maintain financial stability."
+            "ko": "프로젝트 크루서블의 2027년 착공·2029년 완공 일정은 인허가 절차, 건설 비용 인플레이션, 인력 수급 등 여러 실행 리스크에 노출되어 있다. FAST-41 지정으로 인허가 속도가 빨라졌으나 총 11조원에 달하는 투자 규모는 재무 레버리지 상승을 수반하며, 경영권 방어 차입이 남아있는 상황에서 이중 재무 부담이 문제가 될 수 있다. 트로이카 드라이브 신사업 부문은 아직 본업 대비 기여도가 초기 단계에 머물고 있어 투자 회수 시기와 규모에 대한 불확실성도 내재되어 있다. 경영권 분쟁 관련 소송이 장기화될 경우 추가적인 우발 채무 또는 비용 부담이 발생할 가능성도 배제할 수 없다.",
+            "en": "Project Crucible's targeted construction start in 2027 and completion in 2029 carry meaningful execution risks related to permitting (even with FAST-41), construction cost inflation, and labor availability. The KRW 11 trillion investment scale inevitably entails increasing financial leverage, and with residual M&A defense debt on the balance sheet, a dual financial burden is a real concern. The Troika Drive new-business segments remain in early contribution stages relative to the core smelting business, maintaining uncertainty around the timing and scale of investment returns. Prolonged governance litigation also carries the risk of incremental contingent liabilities or unforeseen cost escalation."
           }
         }
       ],
@@ -4127,23 +4127,26 @@ window.KOS_REPORTS = {
           "en": "Constructive"
         },
         "body": {
-          "ko": "고려아연은 2025년 사상 최대 실적 달성에 이어 2026년 1분기에도 분기 최대 실적을 경신하며 뚜렷한 이익 모멘텀을 입증하고 있다. 귀금속 가격의 구조적 강세, 전략광물 포트폴리오 확대, 미국 핵심광물 공급망 파트너로서의 위상 강화가 중장기 성장 기반으로 작용한다는 점에서 사업 펀더멘털은 긍정적으로 평가된다. 트로이카 드라이브 신사업도 실적에 기여하기 시작하여 포트폴리오 다변화 효과가 수익성 개선으로 가시화되고 있다. 다만 경영권 분쟁 장기화와 공정위 제재 절차 돌입에 따른 지배구조 불확실성, 경영권 방어 과정에서 훼손된 재무구조의 정상화 필요성, 그리고 74억달러 규모 미국 제련소 투자에 내재된 실행 리스크는 중요한 모니터링 대상이다. 귀금속 가격에 대한 실적 의존도가 높아진 현 구조에서는 귀금속 가격 조정 시 주가 변동성이 확대될 수 있음도 유의해야 한다. 본 리포트는 정보 제공 목적으로 작성된 것이며 투자 권유가 아님을 밝힌다.",
-          "en": "Korea Zinc has demonstrated compelling earnings momentum — extending record annual results in 2025 into another quarterly record in Q1 2026. The structural strength of precious metals prices, a broadening critical minerals portfolio, and the company's emerging role as a core partner in U.S. supply chain security all support a constructive view of the fundamental business outlook. Troika Drive new businesses are beginning to make incremental earnings contributions, with portfolio diversification materializing in improved profitability metrics. That said, the prolonged governance dispute — now compounded by an impending FTC enforcement proceeding — the need to repair a balance sheet strained by defensive share buybacks, and the inherent execution risks of the USD 7.4B U.S. smelter project are material factors warranting close monitoring. Given the elevated concentration of earnings in precious metals pricing, investors should also note the amplified share price sensitivity to a potential silver or gold correction. This report is provided for informational purposes only and does not constitute investment advice."
+          "ko": "고려아연은 핵심광물 공급망 재편이라는 구조적 메가트렌드의 가장 유리한 위치에 서 있는 국내 기업 중 하나다. DART 확정 공시 기준 2025년 연간 및 2026년 1분기 연속 사상 최대 실적은 단순한 금속 가격 수혜를 넘어 수십 년에 걸쳐 구축한 기술·포트폴리오 역량이 현재의 공급망 환경과 맞물리며 발현된 결과로 평가할 수 있다. 중장기적으로 프로젝트 크루서블이 완공되어 미국 현지에서 13종 비철금속을 생산하는 시점이 되면, 기업의 수익 기반과 밸류에이션 프레임이 근본적으로 재정의될 가능성이 있다. 다만 경영권 분쟁의 법적 공방 장기화와 이에 수반된 재무적 부담, 귀금속·전략광물 가격의 피크아웃 우려는 단기적으로 이익 모멘텀의 연속성을 제약하는 요인이며, 6월 4일 기준 현재가(132만2,000원)는 2026년 5월 고점 대비 약 24% 하락한 수준으로 이미 상당 부분 조정이 진행된 상태다. 중장기 관점에서 글로벌 핵심광물 허브로의 전환 스토리와 지배구조 불확실성 해소 여부를 병행하여 추적하는 것이 균형 잡힌 접근이 될 것으로 판단한다.",
+          "en": "Korea Zinc stands as one of the most strategically well-positioned Korean companies in the structural megatrend of critical mineral supply chain restructuring. The consecutive all-time records confirmed in DART filings — 2025 annual and Q1 2026 quarterly — reflect not merely favorable metal prices, but the convergence of decades-built technical and portfolio capabilities with a uniquely supportive supply chain environment. Over the medium-to-long term, Project Crucible, when completed, has the potential to fundamentally redefine the company's earnings base and valuation framework, shifting its identity to that of a global critical mineral supply infrastructure enterprise. In the near term, however, the prolonged legal second round of the governance dispute, the associated financial burden, and growing concerns over precious and strategic mineral price sustainability are meaningful headwinds to sustained earnings momentum. The current share price of KRW 1,322,000 as of June 4, 2026 — approximately 24% below the May 2026 peak — suggests that a meaningful portion of near-term risk is already being priced in. A balanced approach of monitoring the structural long-term critical minerals thesis alongside the trajectory of governance resolution is recommended."
         }
       },
       "sources": [
         "https://www.koreazinc.co.kr/%EA%B3%A0%EB%A0%A4%EC%95%84%EC%97%B0-%EC%A7%80%EB%82%9C%ED%95%B4-%EC%82%AC%EC%83%81-%EC%B5%9C%EB%8C%80-%EC%8B%A4%EC%A0%81-%EB%8B%AC%EC%84%B1-44%EB%85%84-%EC%97%B0%EC%86%8D-%EC%98%81/",
-        "https://www.ajunews.com/view/20260209164939296",
         "https://www.inthenews.co.kr/news/article.html?no=86562",
-        "https://www.econovill.com/news/articleView.html?idxno=739679",
-        "https://www.ferrotimes.com/news/articleView.html?idxno=46347",
         "https://www.mt.co.kr/industry/2026/05/06/2026050617485355894",
-        "https://www.1conomynews.co.kr/news/articleView.html?idxno=48497",
-        "https://m.news.nate.com/view/20260511n03800",
-        "https://news.nate.com/view/20260526n32723",
-        "https://www.koreancenter.or.kr/news/articleView.html?idxno=1327726",
-        "https://www.newstopkorea.com/news/articleView.html?idxno=43907",
-        "https://ko.tradingeconomics.com/commodity/zinc"
+        "https://www.ferrotimes.com/news/articleView.html?idxno=47850",
+        "https://www.newspim.com/news/view/20260508000080",
+        "https://www.ferrotimes.com/news/articleView.html?idxno=46347",
+        "https://zdnet.co.kr/view/?no=20260402091814",
+        "https://www.fnnews.com/news/202604271118030321",
+        "https://m.ceoscoredaily.com/page/view/2026052913341442919",
+        "https://www.sisajournal-e.com/news/articleView.html?idxno=421196",
+        "https://www.newswhoplus.com/news/articleView.html?idxno=58062",
+        "https://www.reportera.co.kr/military/korea-zinc-us-gallium-project-china-mineral-war/",
+        "https://www.topdaily.kr/articles/107449",
+        "http://www.snmnews.com/news/articleView.html?idxno=563622",
+        "https://investors.koreazinc.co.kr/media/3bgnaiqe/25q3-korea-zinc-ir-presentation-kr.pdf"
       ],
       "ticker": "010130",
       "name": "고려아연",
@@ -4154,8 +4157,8 @@ window.KOS_REPORTS = {
       ],
       "market": "코스피",
       "reportDate": "2026-06-04",
-      "dataDate": "20260602",
-      "reportTs": "2026-06-04 03:52"
+      "reportTs": "2026-06-04 06:48",
+      "dataDate": "20260602"
     },
     "000810": {
       "title": {
@@ -10262,175 +10265,180 @@ window.KOS_REPORTS = {
     },
     "000990": {
       "title": {
-        "ko": "8인치 공급 재편, 가동률·판가 동반 수혜 국면",
-        "en": "8-inch Foundry Supply Restructuring Drives Utilization and ASP Upcycle"
+        "ko": "전력 파운드리의 수익 질주",
+        "en": "Power Foundry's Earnings Sprint"
       },
       "lead": {
-        "ko": "DB하이텍은 삼성전자·TSMC의 8인치 파운드리 생산능력 축소, AI·전기차 중심 전력반도체 수요 급증, 중국 팹리스 낙수 유입이라는 세 가지 구조적 호재가 맞물려 2025년 영업이익률 20%를 달성하고, 2026년에는 판가 인상 사이클 진입이 본격화되고 있는 국내 특화 파운드리의 핵심 수혜주다.",
-        "en": "DB HiTek is a primary structural beneficiary of the confluence of Samsung and TSMC's 8-inch capacity withdrawal, surging AI- and EV-driven power semiconductor demand, and overflow orders from Chinese fabless clients—having achieved a 20% operating margin in 2025 while entering a full-scale ASP upcycle in 2026."
+        "ko": "전력반도체 수요의 구조적 강세와 8인치 글로벌 공급 감소가 맞물리며 수익성이 가파르게 개선되고 있으나, SiC·GaN 차세대 공정 양산 일정 조정과 거시 불확실성이 중단기 주가 변동성의 핵심 변수로 작용하고 있다.",
+        "en": "Structural power semiconductor demand strength and shrinking global 8-inch supply are driving accelerating profitability improvements, while SiC/GaN production timeline adjustments and macro uncertainties remain the pivotal variables for near-to-medium-term share price volatility."
       },
       "desc": {
-        "ko": "DB하이텍(000990)은 국내 최초 시스템반도체 파운드리 전문기업으로 8인치 BCDMOS 기반 고전압 전력반도체 공정에서 세계 순수 파운드리 수익률 2위를 유지하고 있다. 2025년 연결기준 매출 1조 3,972억원(+24% YoY), 영업이익 2,773억원(+45% YoY)을 달성했으며 2026년 1분기에도 매출 3,746억원(+26%)·영업이익 637억원(+21%)으로 성장세를 이어갔다. 2026년 2분기부터 중국향 BCD 제품 판가 인상이 본격 반영되고, 연간 가동률 목표 98% 이상이 진행 중이어서 수익성 추가 개선 기대가 형성되고 있다.",
-        "en": "DB HiTek (000990) is Korea's first dedicated system semiconductor foundry and ranks 2nd globally in pure-play foundry profitability, anchored by 8-inch BCDMOS-based high-voltage power semiconductor processes. The company delivered consolidated 2025 revenue of KRW 1.3972 trillion (+24% YoY) and operating profit of KRW 277.3 billion (+45% YoY), maintaining this momentum into 1Q26 with revenue of KRW 374.6 billion (+26%) and operating profit of KRW 63.7 billion (+21%). With China-directed BCD price hikes beginning to flow through from 2Q26 and an annual utilization target above 98%, expectations for further profitability improvement are building."
+        "ko": "DB하이텍(000990)은 8인치 웨이퍼 기반 전력반도체 파운드리에 특화된 코스피 상장 기업으로, 글로벌 약 400개 고객사를 보유하며 BCDMOS 공정에서 세계적 수준의 기술력을 확보하고 있다. DART 공시 기준 2025년 연간 매출 1.4조원(+23.5% YoY), 영업이익 2,773억원(+45.3% YoY)으로 역대 최고 실적을 달성하였으며, 2026년 1분기에도 두 자릿수 성장세를 이어가고 있다. SiC·GaN 차세대 공정 양산 준비와 클린룸 확장 투자가 병행되는 가운데, 주가는 5월 말 고점 대비 조정세를 보이며 차세대 전략의 실행력 검증이 주요 관전 포인트로 부상하고 있다.",
+        "en": "DB HiTek (000990), listed on the KOSPI, is a specialist in 8-inch wafer-based power semiconductor foundry services, serving approximately 400 global customers with globally recognized BCDMOS process technology. Per DART filings, the company achieved record annual revenue of KRW 1.4 trillion (+23.5% YoY) and operating profit of KRW 277.3 billion (+45.3% YoY) in 2025, with double-digit growth momentum continuing into Q1 2026. SiC/GaN next-generation process commercialization and a concurrent cleanroom expansion investment are under way, while the stock is undergoing a correction from late-May highs — placing the execution of next-gen strategy at the forefront of investor attention."
       },
       "keypoints": [
         {
-          "ko": "2025년 연간 영업이익 2,773억원(+45% YoY), OPM 20%로 창사 이래 최고 수준 수익성 기록",
-          "en": "2025 full-year operating profit of KRW 277.3bn (+45% YoY) at a 20% OPM, the highest profitability in company history"
+          "ko": "DART 공시 기준 2025년 영업이익 2,773억원(+45.3% YoY), 2026년 1분기 매출 3,746억원(+26.0%)·영업이익률 17% — 역대 최고 실적 연속 경신",
+          "en": "DART-confirmed 2025 operating profit of KRW 277.3 billion (+45.3% YoY); Q1 2026 revenue of KRW 374.6 billion (+26.0%) with a 17% OPM — consecutive record-high results"
         },
         {
-          "ko": "2026년 1분기 가동률 98% 이상(풀가동 수준)으로 전분기(96%) 대비 2%p 상승, 2분기부터 판가 인상 본격 반영",
-          "en": "1Q26 utilization rate surpassing 98% (near full capacity), up 2pp QoQ, with BCD price hikes beginning to materialize from 2Q26"
+          "ko": "2026년 연간 가동률 98% 전망(DS투자증권) — 전력·산업·자동차향 고부가 제품 믹스 개선이 수익성을 이중으로 견인",
+          "en": "Full-year 2026 capacity utilization forecast at ~98% (DS Securities) — high-value industrial and automotive product mix improvement driving a dual uplift to profitability"
         },
         {
-          "ko": "삼성·TSMC의 8인치 철수로 업계 평균 가동률 2025년 80%→2026년 90% 상승 전망 속, DB하이텍에 낙수 수요 집중",
-          "en": "Industry average 8-inch utilization rising from ~80% in 2025 toward 90% in 2026 as Samsung and TSMC exit, channeling overflow demand to DB HiTek"
+          "ko": "SiC·GaN 초도 양산이 2027년 1분기로 일정 조정 — 수율·고객 확보 진행 속도가 중장기 기업가치 재평가의 핵심 트리거",
+          "en": "Initial SiC/GaN mass production rescheduled to Q1 2027 — yield improvement and customer qualification pace are the pivotal triggers for medium-to-long-term re-rating"
         },
         {
-          "ko": "SiC·GaN 차세대 공정 확보로 AI 데이터센터·전기차 등 고성장 응용처 진입 기반 마련",
-          "en": "SiC and GaN next-generation process capabilities secured, building a foundation for entry into high-growth applications including AI data centers and EVs"
+          "ko": "클린룸 증설(~2,500억원) 완료 시 월 생산능력 15.4만 장 → 19만 장(+23%) 확대 — 전기차·AI 데이터센터·ESS 신수요 대응 기반 확보",
+          "en": "Cleanroom expansion (~KRW 250 billion) to lift monthly capacity from ~154,000 to ~190,000 wafers (+23%), building the foundation for EV, AI data center, and ESS demand"
         },
         {
-          "ko": "4Q25 기준 중국 매출 비중 64%로 편중이 심해, 지정학적 리스크 및 주가 변동성 확대 요인 상존",
-          "en": "China accounts for 64% of revenue as of 4Q25, representing a concentrated geopolitical risk factor and a source of ongoing share price volatility"
+          "ko": "글로벌 8인치 파운드리 공급 구조적 감소(DS투자증권: 2026년 전년비 2.4% 축소 전망) — 공급 희소성 심화로 ASP 협상력 강화 기대",
+          "en": "Structural global 8-inch foundry supply reduction (DS Securities: 2.4% YoY decline forecast for 2026) — deepening supply scarcity is expected to enhance ASP negotiating leverage"
         }
       ],
       "business": {
-        "ko": "DB하이텍은 1997년 설립된 국내 최초 시스템반도체 파운드리 전문기업으로, 경기도 부천시에 생산기지를 두고 있다. 핵심 사업은 8인치(200mm) 웨이퍼 기반의 BCDMOS(Bipolar-CMOS-DMOS) 공정으로 대표되는 고전압 전력반도체 파운드리이며, 이 분야에서 세계 순수 파운드리 수익률 2위를 유지하고 있다. 최근 보도에 따르면 2025년 4분기 기준 지역별 매출 비중은 중국 64%, 미국 12%, 한국 11%, 대만 11%, 일본 3%로 구성되어 있어 중국 팹리스 고객 기반에 대한 의존도가 절대적으로 높다. 미국·유럽·중국·대만·일본 등 전 세계 약 400여 개 고객사와 협력하며 안정적인 생산 기반을 구축하고 있다. 주력 BCDMOS 공정 외에도 탄화규소(SiC)·질화갈륨(GaN) 등 차세대 와이드밴드갭(WBG) 소재 기반 공정으로 사업 영역을 빠르게 확장 중이며, 2025년에는 650V GaN HEMT 공정 확보 및 MPW 서비스 개시를 통해 기술 로드맵 이행을 가시화하였다. 응용처는 전통적인 모바일·가전·컴퓨터 분야에서 AI 데이터센터, 전기차(EV), 산업기기, 자동차·로봇 등 전력 소모가 높은 신규 고성장 분야로 전환이 가속화되고 있다. 경쟁 구도 측면에서는 삼성전자·TSMC가 12인치 선단 공정에 집중하기 위해 8인치 비중을 줄이고 있으며, 중국의 SMIC·화홍 반도체 등이 자국 수요를 우선 소화함으로써 외부 고객사의 DB하이텍 유입을 촉진하는 구조적 낙수효과가 발생하고 있다. 연결 자회사를 통한 디스플레이 관련 사업도 병행하고 있으나, 파운드리(반도체) 부문이 사업 구조의 중심을 이루며 실적 방향성을 결정한다. BCDMOS 기반 특화 파운드리로서의 높은 기술 진입장벽과 고객 충성도는 동사의 차별적 경쟁 우위를 지속시키는 핵심 요소로 평가된다.",
-        "en": "DB HiTek, founded in 1997 as Korea's first dedicated system semiconductor foundry, operates its manufacturing facilities in Bucheon, Gyeonggi-do. Its core business is 8-inch (200mm) wafer-based high-voltage power semiconductor foundry centered on BCDMOS (Bipolar-CMOS-DMOS) processes, in which the company holds the 2nd-highest profitability ranking globally among pure-play foundries. According to recent reports, the 4Q25 regional revenue breakdown was China 64%, US 12%, Korea 11%, Taiwan 11%, and Japan 3%, reflecting an overwhelming dependence on Chinese fabless customers. The company collaborates with approximately 400 global customers across five continents, providing a stable and diversified production base. Beyond its flagship BCDMOS processes, DB HiTek is rapidly expanding into next-generation wide bandgap (WBG) semiconductor processes including SiC and GaN, with the securing of a 650V GaN HEMT process and the launch of MPW (Multi Project Wafer) services in 2025 marking concrete technology roadmap milestones. End-market diversification is accelerating, shifting from traditional mobile, consumer electronics, and computing toward power-intensive, high-growth applications including AI data centers, EVs, industrial equipment, and robotics. Competitively, Samsung and TSMC's deliberate reduction of 8-inch capacity to concentrate on advanced 12-inch nodes, combined with Chinese foundry peers SMIC and Hua Hong prioritizing domestic orders, creates a structural overflow effect that channels incremental demand toward DB HiTek. A display-related subsidiary contributes to consolidated revenues, but the foundry (semiconductor) segment overwhelmingly defines the company's financial trajectory. The high technical barriers to entry in BCDMOS specialty foundry and the resulting customer stickiness constitute DB HiTek's primary sources of durable competitive advantage."
+        "ko": "DB하이텍은 DB그룹 소속의 8인치 웨이퍼 기반 시스템반도체 파운드리 전문 기업으로, 경기 부천(본사·Fab1)과 충북 음성(상우캠퍼스·Fab2)에 생산거점을 두고 있다. 주력 공정은 전력관리(PMIC), 모터구동, 고전압 BCD 등 아날로그 & 파워 반도체이며, 세계 최초의 0.18μm BCDMOS(복합전압소자) 공정을 보유하는 등 8인치 전력반도체 파운드리 분야에서 글로벌 선도적 기술 위상을 점하고 있다. 최근 보도에 따르면 전력반도체 고전압 제품 중심으로 산업용 및 차량용 제품의 비중이 꾸준히 확대되고 있으며, X-ray·글로벌 셔터·SPAD(단일광자 포토다이오드) 등 특화 이미지센서 공정으로도 고객군을 다각화하고 있다. 글로벌 약 400개 고객사와의 분산된 포트폴리오는 특정 고객 의존 리스크를 최소화하고 업황 변동성을 흡수하는 구조적 완충 역할을 수행한다. 경쟁 환경 측면에서는 TSMC, 타워세미컨덕터(이스라엘), 중국 SMIC 등이 8인치 아날로그·파워 파운드리 시장에서 경쟁하고 있으나, 특화 BCDMOS 공정 기술력과 장기 고객 관계망은 DB하이텍만의 차별화 요소로 평가된다. 차세대 성장 동력으로는 SiC(실리콘카바이드)와 GaN(갈륨나이트라이드) 공정이 개발 중이며, 2025년 12월 MPW를 통해 각 10개 이상의 고객사 제품을 생산하고 2026년 3~4월 전달하여 현재 고객 평가가 진행 중이다. SiC·GaN 양산은 2027년 1분기로 일정이 조정되었으며, 이에 발맞춰 충북 음성 상우캠퍼스 클린룸 증설 공사도 병행 추진되고 있다. 증설 완료 시 월 생산능력은 현행 약 15.4만 장에서 약 19만 장(+23%)으로 확대될 예정이며, 전기차·AI 데이터센터·ESS 등 중장기 신수요에 대응하기 위한 용량 확보 전략의 일환이다.",
+        "en": "DB HiTek is a DB Group affiliate specializing in 8-inch wafer-based system semiconductor foundry services, operating production facilities in Bucheon, Gyeonggi (HQ/Fab1) and Eumseong, Chungbuk (Sangwoo Campus/Fab2). Core processes center on analog and power semiconductors, including power management ICs (PMICs), motor drivers, and high-voltage BCD devices — the company holds the world's first 0.18μm BCDMOS process, establishing a globally recognized technical leadership position in 8-inch power semiconductor foundry. Recent reports indicate a steady increase in the share of high-value industrial and automotive high-voltage products, while the company also diversifies its customer base through specialized imaging sensor processes including X-ray, Global Shutter, and SPAD (Single Photon Avalanche Diode). Its diversified portfolio of approximately 400 global customers acts as a structural buffer against client concentration risk and cyclical revenue volatility. On the competitive front, TSMC, Tower Semiconductor (Israel), and China's SMIC also compete in the 8-inch analog/power foundry space, but DB HiTek's proprietary BCDMOS technology and long-standing customer relationships serve as key differentiators. For next-generation growth, the company is advancing SiC and GaN processes: MPW production for 10+ customers each was completed in December 2025 and samples were delivered in March–April 2026, with customer evaluations currently ongoing. Initial SiC/GaN mass production has been rescheduled to Q1 2027, and a concurrent cleanroom expansion at the Eumseong Sangwoo Campus is under way, targeting a ~23% increase in monthly wafer capacity from ~154,000 to ~190,000 wafers — a long-term capacity strategy aligned with structural demand growth from EVs, AI data centers, and energy storage systems."
       },
       "recent": {
-        "ko": "DB하이텍은 2025년 연결기준 매출액 1조 3,972억원(전년 대비 +24%), 영업이익 2,773억원(+45%), 영업이익률 20%를 달성하며 창사 이래 최고 수준의 수익성을 기록하였다. AI 확산에 따른 전력반도체 수요 증가, BCDMOS 기반 전략고객 생산 확대, 시스템반도체 선진국 대형고객 수주 증가가 주요 동인이었다. 분기별 실적 모멘텀은 하반기로 갈수록 강화되었는데, 2025년 4분기에는 매출이 전년 동기 대비 36.79% 증가한 3,878억원, 영업이익은 99.39% 급증한 704억원을 기록하며 어닝 가속도가 뚜렷하게 나타났다. 2026년 1분기(1Q26)에는 연결 기준 매출 3,746억원(+26% YoY), 영업이익 637억원(+21% YoY)으로 성장세가 이어졌다. 다만 사내복지기금 복리후생비 221억원이 일회성으로 반영되어 영업이익률은 17%에 그쳤으나, 이를 제외한 실질 마진은 약 22% 수준으로 추정된다. 1Q26 파운드리 가동률은 98% 이상으로 2025년 연간 가동률(96%) 대비 2%p 이상 상승하며 사실상 풀가동 체제에 진입하였다. 최근 다섯 분기 영업이익률이 17~22% 범위에서 일관되게 두 자릿수를 유지하고 있는 점은 BCDMOS 특화 파운드리 모델의 높은 구조적 수익성을 방증한다. 주가 흐름을 보면, 2026년 5월 하순 52주 신고가를 경신하며 강세를 이어가다 6월 4일 기준 전일 대비 -6.23% 하락한 170,100원에 거래되고 있으며, 하루 거래대금은 약 1,040억원으로 높은 변동성이 수반되고 있다. 5월 22일 공시에 따르면 최대주주 및 특별관계자 지분율이 28.62%에서 25.10%로 3.52%p 감소하였는데, 이는 계열사 및 임원의 특별관계 해소에 따른 것으로 단기 수급 심리에 일정 부분 영향을 준 것으로 해석된다.",
-        "en": "DB HiTek delivered consolidated 2025 revenue of KRW 1.3972 trillion (+24% YoY), operating profit of KRW 277.3 billion (+45% YoY), and a 20% operating margin—the highest in company history. Key drivers included AI-driven power semiconductor demand growth, expanded production for strategic customers on BCDMOS processes, and an increase in orders from large clients in advanced semiconductor markets. Earnings momentum strengthened into the second half, with 4Q25 revenue surging 36.79% YoY to KRW 387.8 billion and operating profit nearly doubling (+99.39% YoY) to KRW 70.4 billion, illustrating a clear second-half earnings acceleration pattern. In 1Q26, consolidated revenue came in at KRW 374.6 billion (+26% YoY) with operating profit of KRW 63.7 billion (+21% YoY), sustaining the growth trajectory. The reported OPM of 17% was held back by a one-time KRW 22.1 billion in-house welfare fund charge; adjusting for this item, the underlying margin is estimated at approximately 22%. The 1Q26 foundry utilization rate exceeded 98%, rising more than 2 percentage points from the 2025 full-year rate of 96%, effectively placing the company at full-capacity operation. The consistent maintenance of operating margins in the 17–22% range across the last five quarters underscores the structural profitability of the BCDMOS specialty foundry model. On the stock front, shares hit a 52-week high in late May 2026 before retreating 6.23% to KRW 170,100 on June 4, with daily turnover of approximately KRW 104 billion indicating elevated near-term volatility. A May 22 regulatory disclosure revealed that the largest shareholder and related-party stake declined from 28.62% to 25.10% following the dissolution of special relationships with certain affiliates and executives, introducing a near-term supply overhang consideration into the market."
+        "ko": "DART 공시 기준, 2025년 연간 연결 매출액은 1.4조원(전기 대비 +23.5%)을 기록하였고, 영업이익은 2,773억원(+45.3%)으로 수익성이 크게 개선되었으며 당기순이익은 2,526억원(+10.1%)이었다. DART 공시 기준 2026년 1분기 연결 매출액은 3,746억원(전기 대비 +26.0%), 영업이익은 637억원(+21.4%)으로 영업이익률 17%를 기록하였다. 당기순이익은 869억원으로 전기 대비 +89.3% 급증하였으며, 이는 영업 외 부문의 기저 효과와 일회성 항목이 반영된 결과로 해석된다. 최근 보도에 따르면 1분기 실적 개선의 주요 동인은 전력반도체 수요 강세이며, 산업 및 자동차향 고부가가치 제품 비중 증가가 실적에 긍정적으로 작용하였다. DS투자증권에 따르면 2026년 1분기 가동률은 98% 이상으로 직전 분기(96%) 대비 상승하였으며, 2026년 연간 가동률도 98% 수준이 유지될 것으로 전망된다. 동사는 2026년 5월 6~7일 국내 기관투자자 대상 1분기 기업설명회를 개최하며 ASP 인상 협상 가능성과 하반기 전략을 설명한 바 있다. 주가는 2026년 5월 하순 약 20만 원대 초반까지 상승하였다가 6월 4일 기준 170,100원(-6.23%)으로 조정세를 나타내며 시가총액은 7.4조원이다. 이와 관련하여 최근 보도에서는 SiC·GaN 초도 양산 일정의 2027년 1분기 지연 공시 이후 기대 심리 조정이 단기 변동성을 키운 요인 중 하나로 거론되고 있다.",
+        "en": "Per DART filings, full-year 2025 consolidated revenue reached KRW 1.4 trillion (+23.5% YoY), with operating profit of KRW 277.3 billion (+45.3% YoY), representing a meaningful improvement in profitability, while net income came in at KRW 252.6 billion (+10.1% YoY). For Q1 2026, also per DART, consolidated revenue was KRW 374.6 billion (+26.0% YoY), operating profit KRW 63.7 billion (+21.4% YoY), with an operating margin of 17%. Net income surged 89.3% YoY to KRW 86.9 billion, likely reflecting base effects and non-recurring items in the comparative period. Per recent media reports, the primary driver of Q1 improvement was sustained power semiconductor demand strength, particularly rising contributions from high-value industrial and automotive products. DS Securities noted Q1 2026 capacity utilization exceeded 98%, up from 96% in Q4 2025, with full-year 2026 utilization also expected at approximately 98%. The company held an institutional investor briefing on May 6–7, 2026, addressing ASP negotiation prospects and H2 strategy. The stock rose to around the KRW 200,000 level in late May 2026 before correcting to KRW 170,100 (-6.23%) as of June 4, 2026, with a market capitalization of KRW 7.4 trillion. Recent reports suggest that the disclosure of SiC/GaN initial production delay to Q1 2027 contributed to near-term sentiment adjustments driving heightened share price volatility."
       },
       "outlook": {
-        "ko": "DB하이텍이 제시한 2026년 매출 목표는 1조 5,000억원, 영업이익 목표는 3,000억원으로, 일부 증권사는 2026년 영업이익이 최대 3,794억원(OPM 25.4%)에 달할 수 있다는 보다 공격적인 전망도 내놓고 있다. 2분기부터 중국향 BCD 제품의 판가 인상이 본격 반영될 예정이며, 트렌드포스는 2026년 8인치 파운드리 평균 판가(ASP)가 전년 대비 5~20% 인상될 것으로 전망하고 있어 하반기 실적 모멘텀을 강화하는 핵심 동인이 될 것으로 예상된다. 옴디아에 따르면 글로벌 8인치 파운드리 월 생산능력은 2026년 304만 장에서 이후 지속 감소할 전망으로, 공급 감소에 따른 가격 협상력 강화 환경이 구조적으로 유지될 것으로 보인다. AI 데이터센터 전력 인프라, 전기차 모터 드라이버·BMS, 산업용 로봇 등 전력반도체의 신규 응용처 확대는 중장기 수요 기반을 더욱 강화하는 요인이다. SiC·GaN 차세대 공정 기술 확보를 통한 고전압·고효율 전력반도체 시장 진입이 가속화되고 있으며, 해외 고객 기반 확대도 병행함으로써 지역적 분산을 점진적으로 도모하고 있다. 다만 하반기 스마트폰·PC 등 소비 전자제품 수요 불확실성과 중국 매출 집중(64%)에 따른 지정학적 리스크, 그리고 연결 자회사 디스플레이 사업의 업황 둔화는 하방 변수로 잔존한다. 주가는 이미 빠른 재평가(re-rating)가 진행된 만큼, 2분기 실적 및 판가 인상 효과의 실질적 수익성 반영 여부가 향후 주가 방향성을 결정하는 핵심 트리거가 될 전망이다.",
-        "en": "DB HiTek has set 2026 corporate targets of KRW 1.5 trillion in revenue and KRW 300 billion in operating profit, while at least one brokerage projects operating profit could reach KRW 379.4 billion (OPM 25.4%), reflecting an even more optimistic scenario. The full flow-through of China-directed BCD price increases starting in 2Q26 is expected to serve as a primary catalyst for second-half earnings acceleration, supported by Trendforce's projection of 5–20% YoY growth in 8-inch foundry average selling prices in 2026. According to Omdia, global 8-inch foundry monthly capacity is set to decline continuously from 3.04 million wafers in 2026 onward, creating a structurally supply-constrained pricing environment. The expansion of power semiconductor end markets into AI data center power infrastructure, EV motor drivers and BMS systems, and industrial robotics provides a durable structural demand underpinning over the medium to long term. Accelerating progress in SiC and GaN next-generation processes, combined with efforts to broaden overseas customer relationships, represents a pathway toward both revenue growth and geographic diversification. However, second-half consumer electronics demand uncertainty, the concentration of China revenues at 64%, and the ongoing slowdown in display-related subsidiary operations remain active downside variables. Given the rapid re-rating already reflected in the current share price, the pivotal near-term catalysts are the 2Q26 earnings release and demonstrable pass-through of ASP hikes to the reported profit line."
+        "ko": "DS투자증권 추정에 따르면 2026년 연간 연결 매출액은 약 1.6조원(+14% YoY), 영업이익은 약 3,080억원(+12% YoY, OPM ~19%)으로 성장세가 지속될 것으로 전망된다. 2분기 단가 협상에서 유의미한 ASP 인상이 가능하다는 시각이 있으며, 이 효과가 하반기 실적에 온기로 반영될 경우 수익성의 추가 개선 여지가 있다. AI 서버·엣지 AI 확산에 따른 전력 소모 증가와 8인치 공급 구조적 감소는 중기적으로 우호적인 가격·마진 환경을 뒷받침할 것으로 판단된다. SiC·GaN 공정의 2027년 양산 본격화가 예정대로 이루어진다면, 욜디벨롭먼트가 제시한 GaN(2026~2030년 CAGR ~33%)·SiC(CAGR ~21%) 고성장 시장을 배경으로 중장기 성장 모멘텀이 한층 강화될 수 있다. 반면, 수율 개선과 고객 인증 일정이 예상보다 지연될 경우 신사업 기여도가 늦어질 리스크가 공존한다. 클린룸 증설 투자비용의 본격화 시점과 신규 공정 가동률 안착 여부가 2027~2028년 밸류에이션 재평가의 핵심 변수가 될 것이며, 글로벌 거시 환경 및 전기차 수요 회복 속도도 함께 주시할 필요가 있다.",
+        "en": "DS Securities estimates 2026 full-year consolidated revenue at approximately KRW 1.6 trillion (+14% YoY) and operating profit of around KRW 308 billion (+12% YoY, OPM ~19%), pointing to continued earnings growth momentum. Analysts have noted the possibility of meaningful ASP increases in Q2 2026 negotiations, with a full-year profitability uplift if the effect flows through in H2. The structural growth in AI server and edge AI power consumption, combined with shrinking global 8-inch supply, should sustain a favorable pricing and margin environment over the medium term. If SiC/GaN mass production ramps as planned in early 2027, the company stands to benefit from the high-growth markets that Yole Développement projects for GaN (~33% CAGR, 2026–2030) and SiC (~21% CAGR), meaningfully strengthening the long-term growth narrative. Conversely, any further delay in yield improvement or customer qualification timelines would push new-business contributions further into the future. The timing of peak cleanroom capex and successful ramp of new processes will be the critical determinants of a potential 2027–2028 valuation re-rating, while global macro conditions and the pace of EV demand recovery also warrant close monitoring."
       },
       "bull": [
         {
           "title": {
-            "ko": "8인치 공급 구조 재편의 직접적 수혜자",
-            "en": "Direct and Lasting Beneficiary of 8-inch Foundry Supply Restructuring"
+            "ko": "전력반도체 구조적 수요 확대",
+            "en": "Structural Power Semiconductor Demand Expansion"
           },
           "body": {
-            "ko": "삼성전자와 TSMC가 12인치 선단 공정에 집중하기 위해 8인치 파운드리 설비를 빠르게 줄이면서, 세계 8인치 파운드리 평균 가동률은 2025년 약 80%에서 2026년 90%에 육박할 전망이다. DB하이텍은 이 가운데 98% 이상의 가동률을 목표로 하고 있어 업계 최고 수준의 풀가동을 유지 중이다. 중국 SMIC·화홍 등이 자국 수요에 집중하면서 외부 팹리스 고객의 수요가 DB하이텍으로 유입되는 낙수효과 또한 구조적으로 지속되고 있다. 공급 감소·수요 확대의 이중 구조가 유지되는 한, DB하이텍의 높은 가동률과 가격 협상력은 중기적으로 안정적인 수익 기반을 제공할 것으로 판단된다.",
-            "en": "Samsung and TSMC's rapid reduction of 8-inch capacity to prioritize advanced 12-inch nodes is pushing the global 8-inch average utilization rate from roughly 80% in 2025 toward 90% in 2026. DB HiTek is targeting above 98% utilization, effectively sustaining an industry-leading full-capacity operating posture. The structural overflow effect from Chinese foundries SMIC and Hua Hong prioritizing domestic demand continues to redirect external fabless orders toward DB HiTek. As long as this dual dynamic of supply contraction and demand growth persists, DB HiTek's high utilization and strengthened pricing leverage should underpin stable mid-term earnings."
+            "ko": "AI 데이터센터·전기차·5G·산업 자동화 등 전력 효율이 요구되는 응용 분야의 구조적 성장이 전력반도체 수요를 이끌고 있으며, 동사는 스마트폰 AP 사이클보다 전력·가전·산업·자동차 사이클에 더 민감하게 연동되어 있어 업황 개선의 수혜를 보다 직접적으로 누릴 수 있는 구조다. 최근 보도에 따르면 산업 및 자동차향 고부가가치 제품 비중이 꾸준히 증가하고 있으며, 이는 ASP 상승과 수익성 제고를 동시에 지지하는 복합 효과를 낸다. 2026년 1분기 영업이익률 17%(DART 공시)는 이 같은 믹스 개선이 실적에 가시적으로 반영된 결과이며, 공장자동화·ESS 등 신규 수요 영역에서도 전력관리 칩 수요가 확대되어 성장 가시성이 높아지고 있다.",
+            "en": "Structural growth in power-hungry applications — AI data centers, EVs, 5G, and industrial automation — is driving sustained demand for power semiconductors, and DB HiTek's earnings are more directly tied to power, home appliance, industrial, and automotive cycles rather than smartphone AP cycles, allowing for more direct exposure to sector tailwinds. Per recent reports, a rising share of high-value industrial and automotive products is simultaneously supporting ASP increases and margin expansion in a compounding manner. The DART-confirmed Q1 2026 OPM of 17% provides tangible evidence of this ongoing mix improvement, while emerging demand from factory automation and energy storage systems (ESS) continues to broaden the company's growth visibility."
           }
         },
         {
           "title": {
-            "ko": "판가 상승 사이클 진입과 마진 레버리지 확대",
-            "en": "ASP Upcycle Entry Enabling Meaningful Margin Leverage"
+            "ko": "8인치 공급 축소에 따른 ASP 협상력 강화",
+            "en": "Shrinking 8-Inch Supply Enhances Pricing Power"
           },
           "body": {
-            "ko": "DB하이텍은 2026년 2분기부터 중국향 BCD 전력반도체 제품의 판가 인상을 단행하고 있으며, 트렌드포스는 2026년 8인치 파운드리 평균 판가가 전년 대비 5~20% 오를 것으로 예상하고 있다. 회사 측은 고부가 제품군 확대를 통해 평균판매가격(ASP)이 전년 대비 1~2%p 상승할 것으로 전망하고 있어, 기존의 높은 가동률 위에 판가 상승이 더해지는 이중 수혜가 기대된다. 일회성 비용을 제외한 1Q26 실질 영업이익률이 약 22%로 추정되는 점에서, 2분기 이후 판가 인상 효과가 본격화될 경우 연간 OPM 25% 수준의 달성도 시야에 들어온다. 계절적으로 하반기 실적이 상반기보다 강한 패턴을 감안하면, 2026년 연간 실적 상향 기대감은 더욱 커진다.",
-            "en": "DB HiTek began implementing price increases on China-directed BCD power semiconductor products from 2Q26, with Trendforce forecasting 5–20% YoY growth in 8-inch foundry average selling prices for 2026. The company projects a 1–2 percentage point increase in ASP from an expanded premium product mix, creating a dual tailwind of high utilization and pricing improvements. With the underlying 1Q26 operating margin estimated at approximately 22% excluding one-time charges, a full-year OPM approaching 25% comes into view if ASP hike pass-through accelerates from 2Q26 onward. The company's historical pattern of stronger second-half performance relative to the first half adds further credibility to full-year earnings upgrade scenarios."
+            "ko": "AI 서버용 선단공정 전환 가속화로 글로벌 8인치 파운드리 설비가 구조적으로 감소하고 있다. 최근 DS투자증권에 따르면 2026년 글로벌 8인치 파운드리 생산량이 전년 대비 2.4% 감소할 것으로 전망되며, 공급 희소성이 높아질수록 동사의 ASP 인상 협상력이 강화된다. 2026년 2분기 단가 협상에서 유의미한 ASP 인상이 가능하다는 분석이 제시되었으며, 이 효과가 3·4분기 실적에 온기로 반영될 경우 수익성이 추가 상승할 여지가 있다. 98% 이상의 높은 가동률을 유지하는 상황에서 단가 개선은 즉각적인 영업 레버리지 효과로 이어진다.",
+            "en": "Accelerating transitions to advanced nodes for AI servers are structurally reducing global 8-inch foundry capacity. DS Securities recently forecast a 2.4% YoY decline in global 8-inch output for 2026, meaning greater supply scarcity progressively strengthens DB HiTek's ASP negotiating leverage with customers. Analysts have noted the possibility of meaningful ASP increases in Q2 2026 negotiations, with a full-year earnings uplift if the pricing effect flows through in Q3–Q4 2026. Against a backdrop of 98%+ capacity utilization, any pricing improvement translates directly into high operating leverage given the company's largely fixed-cost production structure."
           }
         },
         {
           "title": {
-            "ko": "AI·EV 구조적 수요 포착 및 차세대 기술 확장",
-            "en": "Structural Capture of AI and EV Demand with Next-Generation Technology Expansion"
+            "ko": "SiC·GaN 신사업: 밸류에이션 재평가 트리거",
+            "en": "SiC/GaN New Business: Valuation Re-Rating Catalyst"
           },
           "body": {
-            "ko": "전력반도체는 AI 데이터센터, 전기차, 산업기기, 로봇 등 전력 소모가 높은 신산업군 전반에서 수요가 급증하고 있으며, DB하이텍의 주력 BCDMOS 공정이 이 수요를 직접 수용하는 구조다. 더불어 SiC(탄화규소)·GaN(질화갈륨) 차세대 공정 기술을 단계적으로 확보하며 고전압·고주파·고효율이 요구되는 차세대 시장 진입 기반을 구축하고 있다. 2025년에는 650V GaN HEMT 공정 확보 및 MPW 서비스 개시를 통해 기술 로드맵 이행이 가시화되었으며, AI 확산에 따른 전력반도체 수요 구조적 성장세는 중장기 수요 기반을 뒷받침한다. 전통 응용처와 신성장 응용처를 동시에 아우르는 포트폴리오 다변화는 경기 사이클에 대한 내성을 높이는 방향으로 작용할 것으로 판단된다.",
-            "en": "Power semiconductors are experiencing surging demand across power-intensive new industries including AI data centers, EVs, industrial equipment, and robotics, and DB HiTek's core BCDMOS processes are positioned to capture this demand directly. The company is progressively building competencies in next-generation SiC and GaN processes, establishing a platform for entry into segments demanding high-voltage, high-frequency, and high-efficiency characteristics. In 2025, the securing of a 650V GaN HEMT process and the launch of MPW services marked concrete milestones in executing this technology roadmap, while the AI-driven structural growth in power semiconductor demand provides a durable multi-year demand underpinning. The dual exposure to both traditional and high-growth new end markets is progressively improving the company's resilience to cyclical demand swings."
+            "ko": "욜디벨롭먼트에 따르면 글로벌 SiC 시장은 2026년 약 48억 달러에서 2030년 약 104억 달러(CAGR ~21%), GaN 시장은 2026년 약 9억 달러에서 2030년 약 29억 달러(CAGR ~33%)로 급성장이 전망된다. DB하이텍은 2025년 12월 SiC·GaN MPW를 통해 각 10개 이상의 고객사 제품을 생산하고 2026년 3~4월 전달하여 현재 평가를 진행 중이며, 2027년 양산을 목표로 하고 있다. 차세대 공정이 실적에 기여하기 시작할 경우, 현재 Si 기반 파운드리에 부여된 프리미엄을 넘어선 기업가치 재평가가 가능하다는 시장의 시각이 존재한다. 세계 최초 0.18μm BCDMOS 개발 이력에서 나타나듯, 기술 선점 역량은 동사의 강점이다.",
+            "en": "Per Yole Développement, the global SiC market is projected to grow from ~$4.8 billion in 2026 to ~$10.4 billion in 2030 (CAGR ~21%), while the GaN market is expected to expand from ~$0.9 billion to ~$2.9 billion over the same period (CAGR ~33%). DB HiTek completed SiC/GaN MPW production for 10+ customers each in December 2025 and delivered samples in March–April 2026, with customer evaluations currently under way and mass production targeted for 2027. Market observers note that if next-gen processes begin contributing to earnings, a re-rating beyond the current Si-based foundry valuation premium becomes plausible. The company's track record — including the world's first 0.18μm BCDMOS — underscores its demonstrated ability to establish technology-driven first-mover advantages."
           }
         }
       ],
       "bear": [
         {
           "title": {
-            "ko": "중국 매출 64% 편중의 지정학·정책 리스크",
-            "en": "Geopolitical and Policy Risk from 64% China Revenue Concentration"
+            "ko": "SiC·GaN 상업화 지연·기술 리스크",
+            "en": "SiC/GaN Commercialization Delay & Technology Risk"
           },
           "body": {
-            "ko": "최근 보도에 따르면 DB하이텍의 2025년 4분기 기준 중국 매출 비중은 64%로, 사업 구조상 지역 편중이 극심하다. 미·중 무역 갈등 심화나 미국의 대중 반도체 수출 통제 강화가 DB하이텍 제품군으로 확장될 경우, 전체 매출의 절반 이상이 직접 타격을 받을 수 있다. 중국 정부의 반도체 자립 정책이 장기적으로 SMIC·화홍 등 자국 파운드리 역량 고도화로 이어질 경우, 현재의 낙수 수요가 점진적으로 약화될 가능성도 잠재하고 있다. 북미·유럽 고객 확대를 통한 지역 다변화는 중요한 전략 과제이나, 이는 단기간 내 해결이 어려운 구조적 리스크다.",
-            "en": "According to recent reports, China accounted for 64% of DB HiTek's revenue in 4Q25, representing a severe geographic concentration in the company's revenue structure. An escalation in US-China trade tensions or an expansion of US export controls to cover DB HiTek's product categories could directly impair more than half of total revenue. If China's semiconductor self-sufficiency drive leads to a longer-term upgrade in domestic foundry capabilities at SMIC and Hua Hong, the current overflow demand flowing to DB HiTek could gradually weaken. Geographic diversification toward North American and European customers is a critical strategic imperative, but it represents a structural risk that cannot be resolved in the near term."
+            "ko": "최근 보도에 따르면 DB하이텍의 SiC·GaN 초도 양산 가동 시기가 2026년 4분기에서 2027년 1분기로 연기되었으며, 이는 기술 성숙도와 고객 확보 진행 속도를 반영한 결과다. 동사가 선택한 8인치 SiC 공정은 시장 주류인 6인치 대비 수율이 낮고 가격 경쟁력이 열위에 있다는 업계 시각이 있으며, 고전압(1700V 이상) 소자 설계 역량을 갖춘 국내 팹리스 고객 확보도 쉽지 않은 상황이다. 전기차용 주력 제품인 1200V SiC 시장은 현재 수요 둔화(캐즘) 국면에 처해 있어 수요 견인력이 제한적이다. 장비 셋업 속도 조절이 계속될 경우 신사업 실질 기여 시점이 추가로 밀릴 가능성을 배제할 수 없다.",
+            "en": "Per recent reports, DB HiTek's initial SiC/GaN mass production ramp has slipped from Q4 2026 to Q1 2027, reflecting the pace of technology maturity and customer qualification progress. Industry observers have flagged that the company's selection of 8-inch SiC — rather than the standard 6-inch — results in lower process yields and relatively weaker price competitiveness. Securing domestic fabless customers with the sophisticated design capabilities required for high-voltage (1700V+) devices remains challenging. The 1200V SiC market — the primary target for EV power electronics — is currently experiencing a demand slowdown ('chasm'), further limiting near-term demand pull. If equipment setup pace remains cautious, additional slippage in new-business revenue contribution timelines cannot be ruled out."
           }
         },
         {
           "title": {
-            "ko": "급등 이후 밸류에이션 부담과 단기 변동성 확대",
-            "en": "Valuation Overhang and Elevated Volatility Following Sharp Re-rating"
+            "ko": "하반기 수요 불확실성과 실적 가시성 한계",
+            "en": "H2 Demand Uncertainty and Earnings Visibility Constraints"
           },
           "body": {
-            "ko": "DB하이텍 주가는 2026년 5월 하순에 52주 신고가를 경신하며 단기간에 급등하였으며, 현재가(170,100원)는 복수의 증권사 목표주가를 상회하는 수준에 위치해 있다. 최근 6개월 증권사 평균 목표주가(약 100,667원·2026년 1월 기준)와의 괴리가 큰 상황에서, 주가가 이미 상당한 호재를 반영하고 있을 가능성이 높다. 6월 4일 단 하루 만에 -6.23% 급락하는 등 변동성이 확대되고 있으며, 최대주주 지분 감소(28.62%→25.10%) 공시 이후 단기 매도 압력도 잠재한다. 실적이 시장 기대를 지속적으로 충족해야 현재 주가 수준의 정당화가 가능한 구간에 진입한 것으로 평가된다.",
-            "en": "DB HiTek shares hit a 52-week high in late May 2026 following a swift re-rating, with the current price of KRW 170,100 already exceeding several brokerages' price targets. Given the significant divergence from the six-month consensus target (approximately KRW 100,667 as of January 2026), the stock appears to have already priced in a substantial portion of the near-term positive case. The -6.23% single-day decline on June 4 and the disclosure of a major shareholder stake reduction (from 28.62% to 25.10%) suggest that near-term selling pressure and heightened volatility could persist. The stock has entered a zone where continuous delivery against elevated earnings expectations is necessary to justify the current premium valuation."
+            "ko": "DS투자증권은 2026년 하반기 전자제품 수요의 불확실성을 언급하며 업체별 가동률 및 가격 차별화 가능성을 지적하였다. DB하이텍은 스마트폰 AP보다 전력·가전·산업·자동차 사이클에 더 민감하다는 점에서 상대적으로 유리하지만, 글로벌 소비 심리 위축이 가전·산업용 수요 약화로 이어질 경우 실적에 영향을 줄 수 있다. 현재 98%에 가까운 높은 가동률은 수요 급감 시 즉각적인 하락 여지도 크다는 의미이기도 하다. 특정 응용 분야 수요 둔화 시 일부 고객의 주문 축소 가능성도 잠재 리스크로 상존한다.",
+            "en": "DS Securities flagged H2 2026 consumer electronics demand uncertainty, noting the possibility of differentiated capacity utilization rates and pricing trends across foundry peers. While DB HiTek's exposure is more tilted toward power, home appliance, industrial, and automotive cycles than to smartphone AP cycles, a broadening of global consumer weakness could still soften demand in its core end-markets. The near-100% utilization rate, while a current strength, also implies limited buffer against sudden demand weakness — a sharp drop in utilization would translate quickly into earnings pressure. Potential order reductions from customers in specific application segments remain a latent downside risk throughout H2 2026."
           }
         },
         {
           "title": {
-            "ko": "디스플레이 자회사 부진 및 일회성 비용 재발 가능성",
-            "en": "Display Subsidiary Earnings Drag and Potential Recurrence of One-off Charges"
+            "ko": "DB그룹 지배구조 불확실성",
+            "en": "DB Group Governance Uncertainty"
           },
           "body": {
-            "ko": "1Q26 반도체 부문 매출이 전분기 대비 3% 증가했음에도 디스플레이 업황 둔화로 연결 자회사 매출이 감소하면서, 연결 전체 매출액은 전분기 대비 소폭 감소하였다. 반도체 사업의 높은 성장세가 자회사 부진을 지속적으로 상쇄하고 있으나, 연결 기준 마진 레버리지는 반도체 단독 지표 대비 제한될 수 있다. 아울러 1분기에 221억원의 사내복지기금 복리후생비가 일회성으로 발생했는데, 유사한 성격의 비용이 향후 재발할 경우 분기 수익성을 의미 있게 훼손할 수 있다. 비용 구조의 예측 가능성과 자회사 실적 정상화 여부가 향후 연결 실적의 질적 신뢰도를 결정하는 부수적 변수로 작용할 것으로 본다.",
-            "en": "In 1Q26, despite a 3% QoQ increase in the semiconductor segment, consolidated revenues declined slightly QoQ as the display sector slowdown weighed on subsidiary performance. While the strong foundry business continues to offset subsidiary headwinds, this dynamic limits overall consolidated margin leverage relative to the semiconductor standalone metrics. Additionally, a one-time KRW 22.1 billion in-house welfare fund charge in 1Q26 introduced a non-trivial earnings headwind; any recurrence of similar charges in future quarters could materially impair quarterly reported profitability. The predictability of the cost structure and the trajectory of subsidiary performance normalization will be secondary but meaningful variables in assessing the quality of consolidated earnings going forward."
+            "ko": "DB하이텍은 DB Inc.를 정점으로 하는 DB그룹의 비금융 핵심 자회사로, 지주사 전환 과정 및 지분 구조 정비 과정에서 주주 불확실성이 부각될 수 있다. 최근 보도에 따르면 공정거래위원회의 지주사 전환 압박과 맞물려 DB하이텍 지분 관련 이슈가 재부상할 가능성이 제기되고 있다. 배당 정책·설비 투자 규모·지배구조 방향에 대한 그룹 차원의 명확한 의사소통이 이루어지지 않을 경우 투자자 불확실성이 지속되어 프리미엄 밸류에이션 형성을 제한하는 요인으로 작용할 수 있다.",
+            "en": "DB HiTek serves as the core non-financial subsidiary within the DB Group under DB Inc., and shareholder uncertainty may surface during potential holding company restructuring and ownership realignment processes. Recent reports suggest that FTC pressure on holding company transitions, combined with broader group-level governance reorganization, could re-raise issues around DB HiTek's shareholding structure. Without clear communication from the group on dividend policy, capex allocation, and governance direction, lingering investor uncertainty may cap the formation of a sustained valuation premium and remain an overhang on the stock."
           }
         }
       ],
       "risks": [
         {
           "cat": {
-            "ko": "미·중 지정학·통상 리스크",
-            "en": "US-China Geopolitical and Trade Risk"
+            "ko": "거시·통상 리스크",
+            "en": "Macro & Trade Risks"
           },
           "body": {
-            "ko": "미국의 대중(對中) 반도체 수출 통제가 강화되거나 DB하이텍의 제품군이 규제 범위에 포함될 경우, 전체 매출의 64%를 차지하는 중국 사업이 직접적인 타격을 받을 수 있다. 관세 부과 및 무역 마찰 확대가 중국 제조업 경기에 부정적 영향을 줄 경우, 중국 팹리스의 전방 수요가 위축되는 간접적 충격도 발생할 수 있다. 글로벌 무역 환경의 불확실성이 상존하는 2026년 현재, 지정학적 리스크는 동사 주가 변동성을 증폭시키는 외부 변수 중 가장 핵심적인 위험 요인이다. 중국 매출 편중 구조는 단기간 내 해소가 어려운 점에서, 지정학 리스크에 대한 지속적인 모니터링이 필수적이다.",
-            "en": "A tightening of US semiconductor export controls targeting China, or an expansion of restrictions that explicitly captures DB HiTek's product range, could directly impair the company's China business, which represents 64% of total revenue. Escalating tariffs or trade friction that dampens Chinese manufacturing activity could also indirectly suppress downstream demand from Chinese fabless customers. In the high-uncertainty global trade environment of 2026, geopolitical risk stands as the most impactful external variable amplifying DB HiTek's share price volatility. Given that the structural concentration of China revenue cannot be resolved quickly, ongoing close monitoring of geopolitical developments is essential for investors."
+            "ko": "미국의 반도체 수출 규제 강화 및 관세 정책 변동은 글로벌 반도체 공급망 재편 속도와 방향에 영향을 미치며, 고객사의 설비 투자 계획 변경과 수주 패턴 교란으로 이어질 수 있다. 글로벌 경기 둔화와 원·달러 환율 변동성도 해외 고객 비중이 높은 파운드리 기업의 수익성에 직접적인 영향을 미친다. 미·중 기술 갈등에 따른 공급선 다변화 압력은 DB하이텍에 기회(선진국 팹리스의 비TSMC 파운드리 수요) 및 위협(중국 고객 비중 조정 가능성) 요인을 동시에 제공한다.",
+            "en": "Escalating U.S. semiconductor export controls and tariff policy shifts can alter the pace and direction of global supply chain realignment, potentially disrupting customers' capital expenditure plans and order patterns. A global economic slowdown and KRW/USD exchange rate volatility also directly impact the profitability of foundries with significant international customer exposure. U.S.-China technology decoupling simultaneously presents opportunities (increased demand from advanced-economy fabless firms seeking non-TSMC alternatives) and threats (potential adjustment of China customer exposure) for DB HiTek."
           }
         },
         {
           "cat": {
-            "ko": "글로벌 경기침체 및 전방 수요 둔화",
-            "en": "Global Macroeconomic Slowdown and End-Market Demand Weakness"
+            "ko": "기술·공정 전환 실행 리스크",
+            "en": "Technology & Process Transition Execution Risk"
           },
           "body": {
-            "ko": "하반기 글로벌 전자제품(스마트폰, 가전, PC) 수요가 위축될 경우 전통 응용처 중심의 8인치 파운드리 수요가 타격을 받을 수 있다. DB하이텍은 스마트폰 AP보다 전력·산업·자동차 사이클에 더 민감한 편이나, 글로벌 경기 침체가 심화되면 이 분야 역시 수요 조정이 발생할 수 있다. 금리 환경 악화 및 소비 심리 위축은 전기차 판매와 AI 인프라 투자 속도를 조절하는 변수로 작용하여, 중기적으로 전력반도체 수요 성장 모멘텀을 약화시킬 수 있다. 과거 2023년 반도체 업황 다운사이클에서도 DB하이텍이 가동률 및 수익성 저하를 경험한 바 있어, 경기 사이클에 대한 경계가 필요하다.",
-            "en": "A deterioration in global consumer electronics demand (smartphones, appliances, PCs) in the second half could weigh on traditional 8-inch foundry order flows. While DB HiTek is more sensitive to power, industrial, and automotive cycles than to smartphone AP cycles, a severe global economic contraction could still trigger demand adjustments in these end markets. A deteriorating rate environment and weakening consumer confidence could moderate the pace of EV adoption and AI infrastructure capital expenditure, potentially dampening the power semiconductor demand growth rate over the medium term. DB HiTek experienced meaningful utilization and margin compression during the 2023 semiconductor downcycle, underscoring the importance of vigilance toward macro cyclicality."
+            "ko": "SiC·GaN 차세대 공정 전환 과정에서 수율 불확실성, 장비 조달 지연, 고객 인증 장기화 등의 실행 리스크가 내재되어 있다. 특히 8인치 SiC 공정은 글로벌 주류인 6인치 대비 수율이 낮다는 업계 시각이 있으며, 이 기술적 격차가 해소되기까지의 기간이 예상보다 길어질 수 있다. 클린룸 증설 투자 집행 과정에서 비용 증가나 일정 지연이 발생할 경우, 단기 수익성과 현금흐름에 부담 요인으로 작용할 가능성이 있다.",
+            "en": "The transition to next-generation SiC/GaN processes involves inherent execution risks, including yield uncertainty, equipment procurement delays, and prolonged customer qualification timelines. Specifically, industry observers have noted that DB HiTek's 8-inch SiC process faces yield disadvantages relative to the globally dominant 6-inch format, and the time required to close this technical gap may extend beyond current expectations. Cost overruns or schedule delays in the cleanroom expansion investment could also exert pressure on near-term profitability and cash flow generation."
           }
         },
         {
           "cat": {
-            "ko": "8인치 경쟁 심화 및 기술 전환 리스크",
-            "en": "Intensifying 8-inch Competition and Technology Transition Risk"
+            "ko": "수요 사이클 리스크",
+            "en": "Demand Cycle Risk"
           },
           "body": {
-            "ko": "중국 SMIC·화홍 등 8인치 파운드리 업체들의 설비 투자 확대 및 기술 고도화가 가속화될 경우, DB하이텍이 현재 누리는 공급 부족 수혜는 점진적으로 약화될 수 있다. 일부 선단 파운드리 업체가 8인치 전력반도체 공정에 재진입하거나 신규 경쟁자가 등장할 가능성도 배제할 수 없다. 장기적으로 주력 전력반도체 공정이 기존 BCD에서 SiC·GaN으로 전환될 경우, BCD 중심 경쟁력이 상대적으로 희석될 위험이 있으며 DB하이텍은 이에 대응한 차세대 기술 개발에 집중하고 있다. 기술 전환의 성공 여부와 속도가 5년 이상의 장기 경쟁 포지션을 결정하는 핵심 변수가 될 것으로 판단된다.",
-            "en": "An acceleration of capacity investment and technology advancement by Chinese 8-inch foundries such as SMIC and Hua Hong could gradually erode the supply-shortage tailwind that currently benefits DB HiTek. The potential re-entry of advanced foundry players into 8-inch power semiconductor processes, or the emergence of new competitors, cannot be entirely dismissed. Over the longer term, if the mainstream power semiconductor process transitions from legacy BCD to SiC and GaN, the competitive advantage of the BCD-centric model could relatively diminish—a risk DB HiTek is actively addressing through next-generation R&D investment. The pace and commercial success of this technology transition will be a pivotal determinant of the company's competitive positioning on a five-plus year horizon."
+            "ko": "전력반도체 수요는 전기차·산업용 설비 투자 사이클과 밀접하게 연동되어 있어, 전기차 수요 둔화(캐즘) 현상이 지속되거나 심화될 경우 관련 고객사의 주문이 위축될 수 있다. 소비자 가전향 수요 회복이 예상보다 늦어질 경우, 아날로그·파워 반도체 전반의 재고 조정이 재현될 가능성도 있다. 중장기 구조적 수요는 우호적이나, 단기 사이클 변동성은 분기별 실적의 가시성을 제약하고 주가의 전술적 변동성을 높이는 요인으로 작용한다.",
+            "en": "Power semiconductor demand is closely tied to EV and industrial capital expenditure cycles; a deepening or prolonged EV demand slowdown ('chasm') could trigger order pullbacks from related customers. A slower-than-expected recovery in consumer electronics demand could also revive another round of analog/power semiconductor inventory corrections across the supply chain. While the medium-to-long-term structural demand outlook remains favorable, short-cycle demand volatility continues to constrain quarterly earnings visibility and contributes to near-term share price swings."
           }
         }
       ],
       "verdict": {
         "stance": {
-          "ko": "중립적 긍정",
+          "ko": "긍정적",
           "en": "Constructive"
         },
         "body": {
-          "ko": "DB하이텍은 삼성·TSMC의 8인치 파운드리 철수, AI·전기차 중심 전력반도체 수요 급증, 중국 팹리스 낙수 수요 유입이라는 세 가지 구조적 호재를 동시에 수혜 중이며, 2025년 영업이익률 20%·1Q26 가동률 98% 이상이라는 지표가 이를 명확히 뒷받침한다. 2026년 2분기부터 중국향 BCD 판가 인상이 본격 반영되고 하반기 성수기 효과까지 더해지면 연간 수익성이 한 단계 더 개선될 여지가 있으며, 이는 실적 모멘텀의 지속 가능성을 높이는 긍정적 요소다. 반면 현재가 170,100원은 다수의 증권사 목표주가를 상회하거나 근접한 수준으로, 이미 단기 호재가 상당 부분 주가에 반영되어 있을 가능성을 배제하기 어렵다. 최대주주 지분 감소 공시와 6월 4일의 -6.23% 급락은 단기 수급 불안을 시사하며, 중국 매출 편중에 따른 지정학 리스크는 구조적으로 해소되기 어려운 상황이다. 2분기 실적 공개 시 판가 인상 효과가 실제 마진 개선으로 가시화되는지 여부가 현 주가 수준의 정당성을 검증하는 첫 번째 리트머스 테스트가 될 것이다. 중장기적으로는 SiC·GaN 차세대 공정의 상업적 성공 여부와 중국 이외 지역으로의 고객 다변화 진전이 기업 가치 재평가의 핵심 변수로 부상할 것으로 판단된다.",
-          "en": "DB HiTek is simultaneously benefiting from three structural positives—Samsung and TSMC's withdrawal from 8-inch foundry, surging AI- and EV-driven power semiconductor demand, and overflow orders from Chinese fabless clients—underpinned by measurable evidence in the form of a 20% OPM in 2025 and above-98% utilization in 1Q26. The full flow-through of China BCD price hikes from 2Q26, compounded by the seasonal second-half strength, creates a credible pathway for further annual profitability improvement and sustains the earnings momentum narrative. On the other hand, the current price of KRW 170,100 meets or exceeds several broker price targets, suggesting that a meaningful portion of near-term positives is already embedded in the stock. The disclosed major shareholder stake reduction and the -6.23% single-day decline on June 4 point to near-term supply overhang concerns, while the structural concentration in China revenue represents a geopolitical risk that cannot be resolved quickly. The 2Q26 earnings release—and specifically whether ASP hike pass-through translates visibly into margin improvement—will serve as the first critical litmus test for validating the current valuation. Over the medium to long term, the commercial success of SiC and GaN process development and the pace of customer diversification beyond China will be the defining variables for any durable fundamental re-rating."
+          "ko": "DB하이텍은 DART 공시 기준 2025년 역대 최고 실적을 달성하였고, 2026년 1분기에도 매출 +26.0%·영업이익률 17%를 유지하며 전력반도체 특화 파운드리로서의 수익 체력을 입증하고 있다. 전력반도체 수요의 구조적 강세, 8인치 글로벌 공급 축소에 따른 ASP 협상력 개선, 98% 이상의 높은 가동률은 단기 실적 안정성의 핵심 지지 요인이다. 하반기 ASP 인상 효과가 온기 반영될 경우 DS투자증권 추정치(2026년 OPM ~19%) 달성 가능성이 높아질 것으로 판단된다. 중장기 밸류에이션 재평가의 핵심 트리거는 2027년 SiC·GaN 양산 가시화 여부이며, 수율 개선과 고객 인증 달성이 이 과정의 관건이다. 다만 주가가 단기간 내 크게 상승한 뒤 현재 조정 중이라는 점, SiC 상업화 지연·전기차 캐즘·글로벌 거시 불확실성 등 하방 리스크가 복합적으로 존재한다는 점을 동시에 고려할 필요가 있다. 전체적으로 실적·기술·구조 세 측면에서 중장기 방향성은 우호적이나, 차세대 공정 전환의 실행 리스크 진척도를 분기별로 면밀히 점검하는 것이 중요하다.",
+          "en": "DB HiTek delivered record financials in 2025 per DART filings, and sustained 26.0% revenue growth with a 17% operating margin in Q1 2026, substantiating its earnings resilience as a specialized power semiconductor foundry. Structural power semiconductor demand strength, enhanced ASP negotiating leverage from shrinking global 8-inch supply, and 98%+ capacity utilization collectively underpin near-term earnings stability. Should H2 ASP increases flow through fully, the DS Securities 2026 OPM estimate of ~19% appears achievable. The primary medium-to-long-term catalyst for valuation re-rating remains the visibility of SiC/GaN mass production in 2027, with yield improvement and on-time customer qualification as the pivotal execution milestones. However, the stock's sharp run-up followed by a current correction, combined with compound downside risks — SiC commercialization delays, the EV demand slowdown, and global macro uncertainty — warrants balanced assessment. Overall, the directional outlook across earnings, technology, and structural dimensions remains constructive, but quarterly tracking of next-generation process transition progress will be essential for monitoring the investment thesis."
         }
       },
       "sources": [
         "https://www.asiae.co.kr/article/enterprise-CEO/2026050611080904571",
-        "https://heraldk.com/2026/05/11/%EC%A0%88%EB%8C%80%EA%B0%95%EC%9E%90-%EB%96%A0%EB%82%9C-8%EC%9D%B8%EC%B9%98-%ED%8C%8C%EC%9A%B4%EB%93%9C%EB%A6%AC-db%ED%95%98%EC%9D%B4%ED%85%8D-%E2%80%9C%EA%B0%80%EB%8F%99%EB%A5%A0-98%EA%B9%8C%EC%A7%80/",
-        "https://zdnet.co.kr/view/?no=20260205122729",
-        "https://www.globalepic.co.kr/view.php?ud=20260205144731896148439a4874_29",
-        "https://www.datatooza.com/article/20260522173627783952ef3a9463_80",
-        "https://www.hankyung.com/article/202605272098L",
-        "https://news.nate.com/view/20260121n09984",
-        "https://comp.wisereport.co.kr/company/c1010001.aspx?cmp_cd=000990"
+        "https://zdnet.co.kr/view/?no=20260506090907",
+        "https://www.bizcheck.co.kr/news/articleView.html?idxno=3633681",
+        "https://www.hankyung.com/article/202604294403P",
+        "https://www.m-i.kr/news/articleView.html?idxno=1368866",
+        "https://www.thelec.kr/news/articleView.html?idxno=56566",
+        "https://dbhitek.com/kr/media/news/view/2507",
+        "https://www.ds-sec.co.kr/bbs/board.php?bo_table=sub03_02&wr_id=3402&page=2",
+        "https://ko.wikipedia.org/wiki/DB%ED%95%98%EC%9D%B4%ED%85%8D",
+        "https://www.ddaily.co.kr/page/view/2026042909335562005",
+        "https://www.joongangenews.com/news/articleView.html?idxno=522180"
       ],
       "ticker": "000990",
       "name": "DB하이텍",
-      "name_en": "",
+      "name_en": "DB HiTek Co.,LTD",
       "sector": "반도체",
-      "categories": [],
+      "categories": [
+        "반도체"
+      ],
       "market": "코스피",
       "reportDate": "2026-06-04",
-      "reportTs": "2026-06-04 06:03",
+      "reportTs": "2026-06-04 06:48",
       "dataDate": "20260602"
     },
     "047050": {

@@ -1,29 +1,22 @@
-=== 배치(auto) 시작 Wed Jun  3 21:30:15 UTC 2026 ===
-## 🤖 Batch 제출 — 대상 3개 / 상위 100개 (최근 97개 건너뜀) · 모델 claude-sonnet-4-6
+=== 공시 트리거 생성 Wed Jun  3 21:48:50 UTC 2026 · 대상 010130,000990 ===
+## 🤖 AI 리포트 생성 — 지정 2개 종목
+- 모델: `claude-sonnet-4-6`
+- 기존 리포트 100개 로드 · 최근(6일내) 100개 유지
+
+### [1/2] 고려아연 (010130)
 {'status': '013', 'message': '조회된 데이타가 없습니다.'}
 
 {'status': '013', 'message': '조회된 데이타가 없습니다.'}
 
-  · 준비 029780 삼성카드 (DART O)
+- DART 재무: 확보
+- ✅ 완료 (320s · 검색 4회)
+
+### [2/2] DB하이텍 (000990)
 {'status': '013', 'message': '조회된 데이타가 없습니다.'}
 
 {'status': '013', 'message': '조회된 데이타가 없습니다.'}
 
-  · 준비 004990 롯데지주 (DART O)
-{'status': '013', 'message': '조회된 데이타가 없습니다.'}
+- DART 재무: 확보
+- ✅ 완료 (445s · 검색 4회)
 
-{'status': '013', 'message': '조회된 데이타가 없습니다.'}
-
-  · 준비 282330 BGF리테일 (DART O)
-- ✅ 배치 제출 완료: msgbatch_015AWykNXFquS4eZuapns7e9 (3건) → data/batch_state.json
-  · 상태 in_progress · 처리 3/성공 0/오류 0
-  · 상태 in_progress · 처리 3/성공 0/오류 0
-  · 상태 in_progress · 처리 3/성공 0/오류 0
-  · 상태 in_progress · 처리 3/성공 0/오류 0
-  · 상태 in_progress · 처리 3/성공 0/오류 0
-  · 상태 in_progress · 처리 3/성공 0/오류 0
-  · 상태 in_progress · 처리 3/성공 0/오류 0
-  · 상태 in_progress · 처리 3/성공 0/오류 0
-  · 상태 ended · 처리 0/성공 3/오류 0
-
-✅ 회수 완료 · 성공 3/실패 0 · 총 보유 100개 → data/reports.js
+✅ 현재 리포트 100개 보유 · 이번 실행 웹검색 8회 · → data/reports.js

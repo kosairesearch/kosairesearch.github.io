@@ -1,6 +1,6 @@
 // KOS ai — 자동 생성 데이터 파일. 직접 수정하지 마세요.
 window.KOS_LIVE_DATA = {
-  "lastUpdated": "2026-06-04 06:30",
+  "lastUpdated": "2026-06-04 06:48",
   "dataDate": "20260602",
   "stocks": [
     {
@@ -1827,6 +1827,313 @@ window.KOS_LIVE_DATA = {
         "유통·소비재"
       ],
       "rank": 100
+    },
+    {
+      "ticker": "008770",
+      "name": "호텔신라",
+      "name_en": "HOTEL SHILLA CO.,LTD",
+      "market": "코스피",
+      "sector": "유통·소비재",
+      "price": 52100,
+      "change": -3.87,
+      "volume": 300485,
+      "trading_value": 15655268500,
+      "mcap": 2.04,
+      "shares": 39248121,
+      "induty_code": "47859",
+      "categories": [
+        "유통·소비재"
+      ],
+      "rank": 101
+    },
+    {
+      "ticker": "035900",
+      "name": "JYP Ent.",
+      "name_en": "JYP Entertainment Corporation",
+      "market": "코스닥",
+      "sector": "미디어·엔터",
+      "price": 55500,
+      "change": -1.77,
+      "volume": 228108,
+      "trading_value": 12659994000,
+      "mcap": 1.97,
+      "shares": 35532492,
+      "induty_code": "59201",
+      "categories": [
+        "미디어·엔터",
+        "K-콘텐츠·엔터"
+      ],
+      "rank": 102
+    },
+    {
+      "ticker": "322000",
+      "name": "HD현대에너지솔루션",
+      "name_en": "HD HYUNDAI ENERGY SOLUTIONS CO.,LTD.",
+      "market": "코스피",
+      "sector": "반도체",
+      "price": 163100,
+      "change": -6.64,
+      "volume": 300745,
+      "trading_value": 49051509500,
+      "mcap": 1.83,
+      "shares": 11200000,
+      "induty_code": "2612",
+      "categories": [
+        "반도체"
+      ],
+      "rank": 103
+    },
+    {
+      "ticker": "041510",
+      "name": "에스엠",
+      "name_en": "SM ENTERTAINMENT CO., Ltd.",
+      "market": "코스닥",
+      "sector": "미디어·엔터",
+      "price": 78300,
+      "change": -1.76,
+      "volume": 124248,
+      "trading_value": 9728618400,
+      "mcap": 1.79,
+      "shares": 22894690,
+      "induty_code": "59201",
+      "categories": [
+        "미디어·엔터"
+      ],
+      "rank": 104
+    },
+    {
+      "ticker": "069620",
+      "name": "대웅제약",
+      "name_en": "DAEWOONG PHARMA",
+      "market": "코스피",
+      "sector": "바이오·제약",
+      "price": 123000,
+      "change": -3.3,
+      "volume": 39489,
+      "trading_value": 4857147000,
+      "mcap": 1.43,
+      "shares": 11586575,
+      "induty_code": "212",
+      "categories": [
+        "바이오·제약"
+      ],
+      "rank": 105
+    },
+    {
+      "ticker": "073240",
+      "name": "금호타이어",
+      "name_en": "KUMHO TIRE CO., INC.",
+      "market": "코스피",
+      "sector": "섬유·패션·생활",
+      "price": 4800,
+      "change": 2.02,
+      "volume": 1127039,
+      "trading_value": 5409787200,
+      "mcap": 1.38,
+      "shares": 287260287,
+      "induty_code": "221",
+      "categories": [
+        "섬유·패션·생활"
+      ],
+      "rank": 106
+    },
+    {
+      "ticker": "000080",
+      "name": "하이트진로",
+      "name_en": "HITE JINRO",
+      "market": "코스피",
+      "sector": "식음료",
+      "price": 16470,
+      "change": 3.58,
+      "volume": 379740,
+      "trading_value": 6254317800,
+      "mcap": 1.16,
+      "shares": 70133611,
+      "induty_code": "11122",
+      "categories": [
+        "식음료"
+      ],
+      "rank": 107
+    },
+    {
+      "ticker": "185750",
+      "name": "종근당",
+      "name_en": "Chong Kun Dang Pharmaceutical Corp.",
+      "market": "코스피",
+      "sector": "바이오·제약",
+      "price": 76600,
+      "change": -1.16,
+      "volume": 42943,
+      "trading_value": 3289433800,
+      "mcap": 1.06,
+      "shares": 13802780,
+      "induty_code": "212",
+      "categories": [
+        "바이오·제약"
+      ],
+      "rank": 108
+    },
+    {
+      "ticker": "036830",
+      "name": "솔브레인홀딩스",
+      "name_en": "Soulbrain Holdings Co., Ltd.",
+      "market": "코스닥",
+      "sector": "반도체",
+      "price": 46050,
+      "change": -4.36,
+      "volume": 119170,
+      "trading_value": 5487778500,
+      "mcap": 0.97,
+      "shares": 20964056,
+      "induty_code": "715",
+      "categories": [
+        "반도체"
+      ],
+      "rank": 109
+    },
+    {
+      "ticker": "293490",
+      "name": "카카오게임즈",
+      "name_en": "Kakao Games Corp.",
+      "market": "코스닥",
+      "sector": "게임",
+      "price": 9710,
+      "change": 3.19,
+      "volume": 282771,
+      "trading_value": 2745706410,
+      "mcap": 0.87,
+      "shares": 89786911,
+      "induty_code": "5821",
+      "categories": [
+        "게임"
+      ],
+      "rank": 110
+    },
+    {
+      "ticker": "122870",
+      "name": "와이지엔터테인먼트",
+      "name_en": "YG Entertainment Inc.",
+      "market": "코스닥",
+      "sector": "미디어·엔터",
+      "price": 43300,
+      "change": -2.59,
+      "volume": 161569,
+      "trading_value": 6995937700,
+      "mcap": 0.81,
+      "shares": 18691049,
+      "induty_code": "59201",
+      "categories": [
+        "미디어·엔터"
+      ],
+      "rank": 111
+    },
+    {
+      "ticker": "336370",
+      "name": "솔루스첨단소재",
+      "name_en": "Solus Advanced Materials Co. Ltd.",
+      "market": "코스피",
+      "sector": "전자·부품",
+      "price": 11370,
+      "change": -4.93,
+      "volume": 824467,
+      "trading_value": 9374189790,
+      "mcap": 0.8,
+      "shares": 70217344,
+      "induty_code": "26299",
+      "categories": [
+        "전자·부품"
+      ],
+      "rank": 112
+    },
+    {
+      "ticker": "285130",
+      "name": "SK케미칼",
+      "name_en": "SK Chemicals Co., Ltd.",
+      "market": "코스피",
+      "sector": "화학",
+      "price": 41850,
+      "change": 0.72,
+      "volume": 64363,
+      "trading_value": 2693591550,
+      "mcap": 0.72,
+      "shares": 17298766,
+      "induty_code": "20202",
+      "categories": [
+        "화학"
+      ],
+      "rank": 113
+    },
+    {
+      "ticker": "272290",
+      "name": "이녹스첨단소재",
+      "name_en": "INNOX Advanced Materials Co., Ltd.",
+      "market": "코스닥",
+      "sector": "전자·부품",
+      "price": 28050,
+      "change": -4.75,
+      "volume": 228782,
+      "trading_value": 6417335100,
+      "mcap": 0.56,
+      "shares": 19927658,
+      "induty_code": "2629",
+      "categories": [
+        "전자·부품"
+      ],
+      "rank": 114
+    },
+    {
+      "ticker": "009290",
+      "name": "광동제약",
+      "name_en": "KWANGDONG PHARMACEUTICAL CO.,LTD",
+      "market": "코스피",
+      "sector": "바이오·제약",
+      "price": 6550,
+      "change": 0.31,
+      "volume": 198615,
+      "trading_value": 1300928250,
+      "mcap": 0.34,
+      "shares": 52420851,
+      "induty_code": "21220",
+      "categories": [
+        "바이오·제약"
+      ],
+      "rank": 115
+    },
+    {
+      "ticker": "000020",
+      "name": "동화약품",
+      "name_en": "DONGWHA PHARM.CO.,LTD",
+      "market": "코스피",
+      "sector": "바이오·제약",
+      "price": 5470,
+      "change": -0.73,
+      "volume": 122813,
+      "trading_value": 671787110,
+      "mcap": 0.15,
+      "shares": 27931470,
+      "induty_code": "212",
+      "categories": [
+        "바이오·제약"
+      ],
+      "rank": 116
+    },
+    {
+      "ticker": "088390",
+      "name": "이녹스",
+      "name_en": "INNOXCorporation",
+      "market": "코스닥",
+      "sector": "항공·방산",
+      "price": 9210,
+      "change": -4.26,
+      "volume": 35721,
+      "trading_value": 328990410,
+      "mcap": 0.09,
+      "shares": 9385844,
+      "induty_code": "319",
+      "categories": [
+        "항공·방산"
+      ],
+      "rank": 117
     }
   ]
 };
