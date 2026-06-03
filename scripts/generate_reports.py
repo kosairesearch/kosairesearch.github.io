@@ -394,6 +394,7 @@ def main():
     # Tier 1 = 분당 입력 30,000 토큰 제한. 종목 사이 간격을 두어 한도를 피한다.
     GAP = int(os.getenv("REPORT_GAP_SEC", "60"))
     PARSE_RETRY = 1   # 파싱/잘림 실패 시 재시도 횟수(비용 절약 위해 최소화)
+    NET_RETRY = 4     # 연결 끊김(RemoteProtocolError 등) 재시도 — 긴 응답서 흔함
     RL_WAITS = 3      # 속도제한(429) 대기-재시도 횟수
     last_gen = -1
     gen_count = 0
@@ -447,12 +448,15 @@ def main():
                 log(f"- ⚠️ 요청 오류: {e}")
                 break
             except Exception as e:
+                nme = type(e).__name__
+                is_net = any(k in nme for k in ("Protocol", "Connection", "ReadError", "Timeout", "ReadTimeout"))
                 parse_tries += 1
-                log(f"- ⚠️ 시도 실패: {type(e).__name__}: {e}")
-                if parse_tries > PARSE_RETRY:
+                limit = NET_RETRY if is_net else PARSE_RETRY
+                log(f"- ⚠️ 시도 실패: {nme}: {e}")
+                if parse_tries > limit:
                     log(f"- ❌ {nm} 리포트 생성 실패 — 건너뜀")
                     break
-                time.sleep(10)
+                time.sleep(15 if is_net else 10)
         last_gen = i
         if aborted:
             break
