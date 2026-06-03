@@ -196,7 +196,7 @@ body::before{content:"";position:fixed;inset:0;z-index:-1;pointer-events:none;
 /* pager */
 .pager{display:flex;justify-content:space-between;align-items:center;gap:12px;flex-wrap:wrap;margin-top:18px}
 .pager .pinfo{font:500 13px var(--font-sans);color:var(--fg-3)}
-.pager .pctl{display:flex;gap:4px;align-items:center}
+.pager .pctl{display:flex;gap:4px;align-items:center;flex-wrap:wrap;justify-content:flex-end}
 .pager .pctl button{min-width:34px;height:34px;padding:0 10px;border:0;border-radius:8px;cursor:pointer;font:600 13px var(--font-sans);color:var(--fg-2);background:rgba(0,0,0,.05);transition:.12s}
 .pager .pctl button:hover:not(:disabled){color:var(--fg-1)}
 .pager .pctl button.active{background:#000;color:#fff}
@@ -655,7 +655,7 @@ function render(){
   const EN=window.KOSi18n&&KOSi18n.lang==='en';
   document.getElementById('pagerInfo').textContent=EN?`${start+1}–${Math.min(start+size,total)} of ${total}`:`${start+1}–${Math.min(start+size,total)} / 총 ${total}개`;
   let b=`<button ${state.page<=1?'disabled':''} data-pg="prev">‹</button>`;
-  pageWindow(state.page,pages).forEach(p=> b+= p==='…' ? `<span class="gap">…</span>` : `<button class="${p===state.page?'active':''}" data-pg="${p}">${p}</button>`);
+  for(let i=1;i<=pages;i++) b+=`<button class="${i===state.page?'active':''}" data-pg="${i}">${i}</button>`;
   b+=`<button ${state.page>=pages?'disabled':''} data-pg="next">›</button>`;
   document.getElementById('pagerCtl').innerHTML=pages>1?b:'';
   pager.style.display=pages>1?'':'none';
