@@ -915,7 +915,7 @@ KOSi18n.register({
       h+=secOpen(pad(n++),'REPORT OVERVIEW',u.sec.overview);
       if(pk(REP.desc))h+='<p class="desc">'+esc(pk(REP.desc))+'</p>';
       if(REP.keypoints&&REP.keypoints.length)h+='<ol class="kpoints">'+REP.keypoints.map(function(k){return '<li>'+esc(pk(k))+'</li>';}).join('')+'</ol>';
-      h+='<div class="rep-meta"><span><b>'+esc(u.reportDate)+'</b>'+esc(REP.reportDate||'')+'</span><span><b>'+esc(u.dataDate)+'</b>'+esc(REP.dataDate||'')+'</span></div>';
+      h+='<div class="rep-meta"><span><b>'+esc(u.reportDate)+'</b>'+esc(REP.reportDate||'')+'</span></div>';
       h+='</section><hr class="hairline" />';
       h+=secOpen(pad(n++),'BUSINESS',u.sec.business)+prose(REP.business)+'</section><hr class="hairline" />';
       h+=secOpen(pad(n++),'RECENT',u.sec.recent)+prose(REP.recent)+'</section><hr class="hairline" />';
