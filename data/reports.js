@@ -1264,8 +1264,8 @@ window.KOS_REPORTS = {
     },
     "207940": {
       "title": {
-        "ko": "캐파 글로벌 1위 CDMO, 파업·수주 공백이 만든 단기 변곡점",
-        "en": "World's Largest CDMO Capacity Leader at a Near-Term Inflection Point"
+        "ko": "글로벌 1위 CDMO, 단기 변곡점에 서다",
+        "en": "World's Top CDMO at a Near-Term Inflection"
       },
       "lead": {
         "ko": "삼성바이오로직스는 1~5공장 풀가동과 미국 록빌 공장 인수로 세계 최대 생산 캐파(84.5만L)를 확보하며 구조적 성장세를 이어가고 있으나, 창사 첫 대규모 파업과 1분기 신규 수주 정체가 단기 주가 압박 요인으로 작용하고 있다.",
@@ -1448,8 +1448,8 @@ window.KOS_REPORTS = {
     },
     "105560": {
       "title": {
-        "ko": "비이자이익 돌파와 업계 최고 주주환원이 만나는 KB금융의 구조적 전환",
-        "en": "KB Financial at a Structural Inflection: Record Non-Interest Income Meets Industry-Leading Capital Return"
+        "ko": "비이자이익 돌파와 업계 최고 주주환원",
+        "en": "Record Non-Interest Income Meets Top-Tier Capital Return"
       },
       "lead": {
         "ko": "KB금융은 역대 최대 분기 실적과 업계 최고 수준의 주주환원 강화를 동시에 달성하며, 수익구조 다변화를 통해 한국 대표 금융지주로서의 질적 도약을 증명하고 있다.",
@@ -2167,8 +2167,8 @@ window.KOS_REPORTS = {
       "reportDate": "2026-06-03",
       "dataDate": "20260602",
       "title": {
-        "ko": "MLCC·FC-BGA·실리콘 커패시터, AI 부품 삼중 모멘텀",
-        "en": "Triple momentum across MLCC, FC-BGA and silicon capacitors"
+        "ko": "MLCC·FC-BGA, AI 부품 삼중 모멘텀",
+        "en": "Triple Momentum in AI Components: MLCC and FC-BGA"
       },
       "reportTs": "2026-06-03 01:36"
     },
@@ -2717,8 +2717,8 @@ window.KOS_REPORTS = {
     },
     "034730": {
       "title": {
-        "ko": "리밸런싱 완성·5조 자사주 소각, 지주사 재평가 기로에 서다",
-        "en": "Rebalancing Nears Completion: ₩5T Buyback Cancellation Sets the Stage for Holding Company Re-rating"
+        "ko": "리밸런싱 완성과 5조 자사주 소각",
+        "en": "Rebalancing Done, ₩5T Buyback Cancelled"
       },
       "lead": {
         "ko": "SK(034730)의 2026년 1분기 영업이익이 전년동기 대비 759.6% 급증하며 연간 수치를 분기 만에 초과한 가운데, 역대 최대 규모 자사주 소각과 AI 반도체 낙수효과가 맞물려 NAV 할인율 50% 내외의 재평가 여부가 올해 SK 주가의 최대 화두로 부상하고 있다.",
@@ -2894,8 +2894,8 @@ window.KOS_REPORTS = {
     },
     "068270": {
       "title": {
-        "ko": "고수익 시밀러·직판·CDMO 삼각 성장축, 이익 레버리지 본격화",
-        "en": "High-Margin Biosimilars, Direct Sales & CDMO: Profit Leverage Gaining Traction"
+        "ko": "시밀러·직판·CDMO 삼각축, 이익 레버리지 본격화",
+        "en": "Biosimilars, Direct Sales and CDMO: Profit Leverage Kicks In"
       },
       "lead": {
         "ko": "셀트리온은 합병 후 원가구조 정상화와 고수익 신규 바이오시밀러의 판매 본격화를 통해 2025년 사상 최초로 매출 4조원·영업이익 1조원을 동시 돌파하였으며, 2026년에도 미국 직판 확대와 CDMO 신사업이 추가 이익 레버리지를 제공하는 구조적 성장 국면에 진입해 있다.",
@@ -3078,8 +3078,8 @@ window.KOS_REPORTS = {
     },
     "035420": {
       "title": {
-        "ko": "매출 가속은 뚜렷, AI 수익화 속도가 주가 방향을 가른다",
-        "en": "Revenue Firmly Accelerating — AI Monetization Speed Will Decide the Trajectory"
+        "ko": "매출 가속은 뚜렷, 관건은 AI 수익화 속도",
+        "en": "Revenue Accelerates; AI Monetization Is the Swing Factor"
       },
       "lead": {
         "ko": "AI 인프라 투자 확대로 수익성이 눌리는 가운데서도 1분기 매출이 16.3% 성장하며 분기 사상 최대를 기록, 2026년 하반기 AI 수익화 본격화 여부가 밸류에이션 재평가의 핵심 분기점이 될 전망이다.",
@@ -3259,8 +3259,8 @@ window.KOS_REPORTS = {
     },
     "006400": {
       "title": {
-        "ko": "적자 터널의 출구: ESS와 전고체 배터리가 그리는 흑자 전환 로드맵",
-        "en": "Exit from the Loss Tunnel: ESS and Solid-State Batteries Chart the Road to Profitability"
+        "ko": "적자 터널의 출구, ESS와 전고체 배터리",
+        "en": "Exit from the Loss Tunnel: ESS and Solid-State"
       },
       "lead": {
         "ko": "6분기 연속 영업적자를 딛고 2026년 1분기 손실 64% 축소와 당기순이익 흑자 전환으로 실적 저점 통과를 시사했으나, 하반기 분기 흑자 전환 목표 달성까지의 실행 속도가 최대 변수다.",
@@ -3440,8 +3440,8 @@ window.KOS_REPORTS = {
     },
     "055550": {
       "title": {
-        "ko": "밸류업 50% 조기 달성, ROE 10%를 향한 다음 도약",
-        "en": "Shareholder Return Milestone Cleared Early — ROE 10% Is the Next Frontier"
+        "ko": "밸류업 50% 조기 달성, 다음은 ROE 10%",
+        "en": "50% Payout Hit Early; ROE 10% Is Next"
       },
       "lead": {
         "ko": "신한지주는 DART 공시 기준 2025년 당기순이익 5.1조원(+11.5%)을 기록하며 사상 최대 실적을 경신하고, 2027년 목표였던 주주환원율 50%를 조기 달성함으로써 차기 밸류업 과제인 'ROE 10%' 달성 구간에 진입했다.",
@@ -3621,8 +3621,8 @@ window.KOS_REPORTS = {
     },
     "009540": {
       "title": {
-        "ko": "고선가 사이클 결실 구간—영업이익률 16%대 진입과 LNG 수주 재가속",
-        "en": "Supercycle at Peak: Record Margins and LNG Order Re-acceleration"
+        "ko": "고선가 사이클 결실, 영업이익률 16% 진입",
+        "en": "Supercycle Bears Fruit: Margins Break 16%"
       },
       "lead": {
         "ko": "고가 수주 물량의 본격 매출 인식, 생산성 향상, LNG선 발주 재개라는 세 축이 맞물리며 HD한국조선해양은 수익성과 수주 가시성이 동시에 개선되는 구간에 진입했다.",
@@ -3799,8 +3799,8 @@ window.KOS_REPORTS = {
     },
     "011070": {
       "title": {
-        "ko": "실적 V자 반등과 AI기판 성장 서사 — 급등주 밸류에이션의 갈림길",
-        "en": "Earnings V-Rebound Meets AI Substrate Narrative: Valuation at a Crossroads After the Epic Rally"
+        "ko": "실적 V자 반등과 AI기판 성장 서사",
+        "en": "A V-Shaped Rebound Meets the AI Substrate Story"
       },
       "lead": {
         "ko": "2026년 1분기 영업이익 136% 급반등으로 어닝 서프라이즈를 기록한 LG이노텍은 아이폰18 가변 조리개 도입과 FC-BGA 기반 AI 기판 사업 확대를 통한 구조적 이익 성장 국면에 진입하고 있으나, 연초 대비 수배 급등 후 급락한 주가는 펀더멘털 개선 속도와 밸류에이션 정당성에 대한 시장의 날선 검증을 요구받고 있다.",
@@ -3980,8 +3980,8 @@ window.KOS_REPORTS = {
     },
     "010130": {
       "title": {
-        "ko": "핵심광물 허브로 도약하는 제련 챔피언, 지배구조 불확실성은 상존",
-        "en": "Smelting Champion Ascending the Critical Minerals Hierarchy — Governance Overhang Lingers"
+        "ko": "핵심광물 허브로 도약하는 제련 챔피언",
+        "en": "A Smelting Champion Climbing the Critical-Minerals Ladder"
       },
       "lead": {
         "ko": "귀금속·핵심광물 가격 급등과 포트폴리오 다변화에 힘입어 2025년 사상 최대 실적에 이어 2026년 1분기에도 분기 최대 실적을 경신하였으나, 경영권 분쟁의 장기화·공정위 조사 본격화 및 대규모 미국 제련소 투자 부담이 중장기 핵심 변수로 부각되고 있다.",
@@ -4340,8 +4340,8 @@ window.KOS_REPORTS = {
     },
     "005490": {
       "title": {
-        "ko": "철강 저점 확인·리튬 상업화 — 복합 성장 구조의 실적 정상화 국면",
-        "en": "Steel Floor Confirmed, Lithium Commercializing: POSCO Holdings at a Multi-Asset Earnings Inflection"
+        "ko": "철강 저점 확인과 리튬 상업화",
+        "en": "Steel Floor Confirmed, Lithium Commercializing"
       },
       "lead": {
         "ko": "2025년 대규모 일회성 비용으로 눌렸던 POSCO홀딩스가 아르헨티나 리튬 상업생산 개시와 자회사 구조조정 효과를 발판 삼아 2026년 본격적인 실적 정상화 국면에 진입하고 있다.",
@@ -4519,8 +4519,8 @@ window.KOS_REPORTS = {
     },
     "086790": {
       "title": {
-        "ko": "사상 최대 이익·주주환원 50%, '환원하는 금융주'로 재정의",
-        "en": "All-Time Earnings High and 50% Return Target: Redefining Hana as a Capital-Returner"
+        "ko": "사상 최대 이익과 주주환원 50%",
+        "en": "Record Profit and a 50% Payout Pledge"
       },
       "lead": {
         "ko": "하나금융지주는 DART 공시 기준 2025년 역대 최대 연간 순이익(4.0조원)과 2026년 1분기 분기 기준 최대 실적을 연속 달성하며, 배당 확대·자사주 소각을 통한 주주환원율 50% 조기 달성을 현실화하고 있다.",
@@ -4697,8 +4697,8 @@ window.KOS_REPORTS = {
     },
     "042660": {
       "title": {
-        "ko": "이익 급증을 증명한 뒤, 방산·MASGA로 뻗어가는 복합 성장 경로",
-        "en": "Profitability Proven — Defense and MASGA as the Next Growth Vectors"
+        "ko": "이익 급증 증명, 방산·MASGA로 성장 확장",
+        "en": "Profits Proven; Defense and MASGA Extend the Runway"
       },
       "lead": {
         "ko": "한화오션은 DART 공시 기준 2025년 영업이익 1조 2,000억 원(+390.8% YoY)으로 7년 만의 '1조 클럽' 복귀를 공식화한 데 이어, LNG 고선가 물량의 매출 인식 가속·방산 수주 파이프라인 확장·MASGA 기반 미국 시장 진입이라는 세 가지 축으로 이익 성장 사이클의 다음 국면을 열어가고 있다.",
@@ -5235,8 +5235,8 @@ window.KOS_REPORTS = {
     },
     "267260": {
       "title": {
-        "ko": "역대급 수주잔고 79억 달러, AI 전력 슈퍼사이클 최전선",
-        "en": "Record $7.9B Order Backlog Anchors HD Hyundai Electric's AI Power Supercycle Advantage"
+        "ko": "수주잔고 79억 달러, AI 전력 슈퍼사이클 최전선",
+        "en": "A $7.9B Backlog at the AI Power Supercycle's Front Line"
       },
       "lead": {
         "ko": "HD현대일렉트릭은 AI 데이터센터 전력 수요 급증과 북미 현지 생산 거점이라는 이중 경쟁 우위를 바탕으로 영업이익률 24%대를 유지하며, 79억 달러에 달하는 역대 최대 수주잔고가 중장기 성장 궤적을 강력히 뒷받침하고 있다.",
@@ -5414,8 +5414,8 @@ window.KOS_REPORTS = {
     },
     "316140": {
       "title": {
-        "ko": "비은행 포트폴리오 완성, 이제는 밸류업의 질을 증명할 차례",
-        "en": "Non-Banking Portfolio Complete: Now Comes the Test of Valuup Quality"
+        "ko": "비은행 포트폴리오 완성, 이제는 질의 증명",
+        "en": "Non-Bank Build-Out Done; Now Prove the Quality"
       },
       "lead": {
         "ko": "보험 자회사 편입으로 종합금융그룹 체제를 완성한 우리금융지주는 CET1 13% 조기 달성과 비과세 감액배당을 앞세워 주주환원 가속화에 나서고 있으나, 일회성 비용 집중과 해외법인 건전성 리스크가 단기 이익 질을 제약하고 있다.",
@@ -6498,8 +6498,8 @@ window.KOS_REPORTS = {
     },
     "196170": {
       "title": {
-        "ko": "특허 리스크 해소·로열티 수익화 원년, 플랫폼 가치 재평가",
-        "en": "Patent Headwinds Clear, Royalty Economics Begin: Platform at an Inflection Point"
+        "ko": "특허 리스크 해소와 로열티 수익화 원년",
+        "en": "Patent Risk Clears as Royalties Begin"
       },
       "lead": {
         "ko": "글로벌 7개 제약사에 하이브로자임 플랫폼을 기술이전한 알테오젠은 키트루다 SC 상업화 가속과 특허 분쟁 유리한 전개를 등에 업고 마일스톤 중심 수익 구조에서 로열티 중심 구조로의 전환이 시작되는 결정적 변곡점에 서 있다.",
@@ -6676,8 +6676,8 @@ window.KOS_REPORTS = {
     },
     "064350": {
       "title": {
-        "ko": "K2 수출 2막과 레일 반등, 피크아웃 논쟁을 넘을 수 있는가",
-        "en": "Defense Cycle Act II and Rail Recovery: Can Hyundai Rotem Outlast the Peak-Out Debate?"
+        "ko": "K2 수출 2막과 레일 반등",
+        "en": "K2 Export Act II Meets a Rail Recovery"
       },
       "lead": {
         "ko": "폴란드 2차 이행계약 본격화와 이라크·루마니아·페루 등 23조 원대 신규 파이프라인 가시화, 그리고 레일솔루션 19조 원 수주잔고가 방산 이익 성장 둔화 우려를 상쇄할 수 있을지가 현대로템의 핵심 투자 논쟁이다.",
@@ -6856,8 +6856,8 @@ window.KOS_REPORTS = {
     },
     "003670": {
       "title": {
-        "ko": "캐즘 저점 통과, 음극재 수주·LFP 전환이 여는 소재 재도약",
-        "en": "Past the Trough: Landmark Anode Contracts and LFP Expansion Signal a Material Comeback"
+        "ko": "캐즘 저점 통과, 음극재·LFP가 여는 재도약",
+        "en": "Past the EV Trough: Anode Wins and LFP Reopen Growth"
       },
       "lead": {
         "ko": "포스코퓨처엠은 전기차 캐즘이 야기한 실적 저점을 통과하며 1조 원 규모 음극재 장기 수주, 베트남 신공장 착공, LFP 양극재 라인 전환이라는 세 축을 중심으로 중기 성장 궤도 재진입을 모색하고 있다.",
@@ -7217,8 +7217,8 @@ window.KOS_REPORTS = {
     },
     "033780": {
       "title": {
-        "ko": "해외 궐련이 국내를 첫 추월 — 글로벌 담배기업 전환의 원년",
-        "en": "Overseas Cigarettes Surpass Domestic for the First Time — KT&G's Year of Global Transformation"
+        "ko": "해외 궐련이 국내를 첫 추월한 해",
+        "en": "The Year Overseas Cigarettes Overtook Home"
       },
       "lead": {
         "ko": "KT&G는 2025년 해외 궐련 매출이 처음으로 국내를 넘어서며 사상 최대 실적을 달성했고, 2026년 1분기에도 어닝 서프라이즈를 이어가며 '글로벌 담배기업'으로의 구조 전환을 구체화하고 있다.",
@@ -7396,8 +7396,8 @@ window.KOS_REPORTS = {
     },
     "018260": {
       "title": {
-        "ko": "10조 AI 투자 선언, 실행 가시성과 급등한 밸류에이션의 시험대",
-        "en": "Samsung SDS's ₩10 Trillion AI Pledge: Where Execution Credibility Meets an Elevated Valuation"
+        "ko": "10조 AI 투자 선언, 실행과 밸류에이션의 시험대",
+        "en": "₩10T AI Pledge Meets an Elevated Valuation"
       },
       "lead": {
         "ko": "KKR 협력과 10조 원 AI 풀스택 투자 로드맵이 장기 성장 내러티브를 제시했으나, 1분기 영업이익 70.8% 급감과 단기간의 극단적 주가 급등락은 실행 가시성과 밸류에이션 검증이라는 이중 과제를 동시에 던진다.",
@@ -7576,8 +7576,8 @@ window.KOS_REPORTS = {
     },
     "042700": {
       "title": {
-        "ko": "TC본더 절대 강자, HBM4 전환기 수주 공백을 넘을 수 있는가",
-        "en": "TC Bonder Titan at the Crossroads: Can the Market Leader Bridge the HBM4 Order Gap?"
+        "ko": "TC본더 절대 강자, HBM4 수주 공백을 넘어",
+        "en": "TC Bonder Titan Faces the HBM4 Order Gap"
       },
       "lead": {
         "ko": "HBM3E→HBM4 전환기 발주 지연으로 2026년 1분기 영업이익이 전년 대비 87.9% 급감하는 실적 쇼크를 기록했으나, 전 세계 TC본더 시장 점유율 71.2%의 독보적 지위와 2분기부터 집중되는 SK하이닉스·마이크론 HBM4 수주를 바탕으로 하반기 실적 반등 가시성 확보 여부가 핵심 관전 포인트다.",
@@ -7759,8 +7759,8 @@ window.KOS_REPORTS = {
     },
     "003550": {
       "title": {
-        "ko": "NAV 역대 최고·실적 역행의 아이러니 — 지주 재평가의 진짜 조건",
-        "en": "Record NAV, Disappointing Earnings: What LG Corp's Re-Rating Truly Requires"
+        "ko": "NAV 역대 최고, 실적 역행의 아이러니",
+        "en": "Record NAV, Lagging Earnings: A Holding-Co Paradox"
       },
       "lead": {
         "ko": "자회사 주가 급등으로 순자산가치(NAV)가 사상 최고치를 경신했지만, 화학 계열 지분법이익 부진으로 2026년 1분기 연결 영업이익이 전년 동기 대비 35.1% 급감하며 실질 수익력과 자산가치 사이의 괴리가 확대되고 있다.",
@@ -7937,8 +7937,8 @@ window.KOS_REPORTS = {
     },
     "086520": {
       "title": {
-        "ko": "수직계열화의 결실, 헝가리·인도네시아가 여는 구조적 실적 반등",
-        "en": "Vertical Integration Bearing Fruit: Hungary and Indonesia Drive a Structural Earnings Rebound"
+        "ko": "수직계열화의 결실, 헝가리·인니가 연다",
+        "en": "Vertical Integration Pays Off via Hungary and Indonesia"
       },
       "lead": {
         "ko": "에코프로는 헝가리 현지 양산 개시·인도네시아 GEN 제련소 연결 편입·메탈 가격 반등의 복합 효과로 2026년 1분기 영업이익이 전년동기 대비 4,000%를 상회하는 수익성 전환을 실현했으며, 2분기 이후 래깅 효과 본격화로 이익 가속이 전망된다.",
@@ -8291,8 +8291,8 @@ window.KOS_REPORTS = {
     },
     "051910": {
       "title": {
-        "ko": "적자의 무게와 전환의 속도 — 재편 성과가 주가 방향을 가른다",
-        "en": "Balancing Losses and Transformation Speed: Portfolio Overhaul at a Critical Crossroads"
+        "ko": "적자의 무게와 전환의 속도",
+        "en": "The Weight of Losses, the Speed of Change"
       },
       "lead": {
         "ko": "LG화학은 석유화학·전지소재 동반 부진으로 연결 당기순손실이 심화되는 가운데, LG에너지솔루션 지분 유동화와 4대 성장축 재편을 통한 중장기 수익성 회복을 모색하고 있다.",
@@ -8651,8 +8651,8 @@ window.KOS_REPORTS = {
     },
     "267250": {
       "title": {
-        "ko": "조선·전력기기·건설기계 3축 동시 호황, 지주사 이익 사상 최대",
-        "en": "Three Supercycles Converge: Shipbuilding, Power Equipment & Construction Machinery Drive Record Holding Company Earnings"
+        "ko": "3축 동시 호황, 지주사 이익 사상 최대",
+        "en": "Three Cycles Converge for Record Holding-Co Profit"
       },
       "lead": {
         "ko": "HD현대는 주력 3개 사업군의 동반 성장에 힘입어 2026년 1분기 지주사 체제 전환(2017년) 이후 분기 최대 영업이익을 달성하며 수익성 가속 국면에 진입했다.",
@@ -8833,8 +8833,8 @@ window.KOS_REPORTS = {
     },
     "138040": {
       "title": {
-        "ko": "3년 연속 '2조 클럽' — 수익성과 건전성 리스크의 교차로",
-        "en": "Three Consecutive Years in the '₩2T Club': Profitability and Asset Quality at a Crossroads"
+        "ko": "3년 연속 '2조 클럽'의 두 얼굴",
+        "en": "Three Years in the ₩2T Club — and Its Two Faces"
       },
       "lead": {
         "ko": "DART 공시 기준 2025년 역대 최대 당기순이익과 2026년 1분기 ROE 25.4%로 업계 최고 수익성을 재확인했으나, 그룹 전반의 부동산 익스포저 집중 및 연이은 법적·규제 이벤트가 밸류에이션 디스카운트 요인으로 상존하고 있다.",
@@ -9010,8 +9010,8 @@ window.KOS_REPORTS = {
     },
     "047040": {
       "title": {
-        "ko": "빅배스 정화 이후 구조적 수익성 회복 — 원전·LNG 본계약이 재평가의 분수령",
-        "en": "Post-Big-Bath Profitability Recovery — Nuclear and LNG Contract Wins Hold the Key to Re-rating"
+        "ko": "빅배스 이후 수익성 회복, 원전·LNG가 관건",
+        "en": "Post-Big-Bath Recovery; Nuclear and LNG Are Key"
       },
       "lead": {
         "ko": "2025년 역대 최대 빅배스로 잠재 손실을 일소한 대우건설은 2026년 1분기 어닝 서프라이즈를 통해 수익성 정상화를 선언했으나, 체코 원전 등 핵심 성장 모멘텀의 실적 반영 시차와 고(高)밸류에이션 부담이 단기 변동성을 지배하고 있다.",
@@ -9187,8 +9187,8 @@ window.KOS_REPORTS = {
     },
     "058470": {
       "title": {
-        "ko": "AI 테스트 소켓 선두주자, 신공장 도약과 오버행 변수의 교차점",
-        "en": "Leeno Industrial: AI Socket Leadership at the Crossroads of Capacity Expansion and Overhang Risk"
+        "ko": "AI 테스트 소켓 선두, 신공장 도약의 길목",
+        "en": "AI Test-Socket Leader at a Capacity Crossroads"
       },
       "lead": {
         "ko": "AI·선단공정 전환 수혜로 사상 최대 실적 행진을 이어가는 리노공업은, 에코델타시티 신공장 완공을 통한 생산능력 배증을 눈앞에 두고 있으나, 최대주주의 대규모 지분 매각(9.18%)이 단기 수급 불확실성으로 작용하고 있다.",
@@ -9366,8 +9366,8 @@ window.KOS_REPORTS = {
     },
     "259960": {
       "title": {
-        "ko": "역대 최고 분기 실적 이후, 신 IP 자립화가 다음 시험대",
-        "en": "Record Quarterly Earnings Set the Stage — New IP Independence Is the Next Test"
+        "ko": "역대 최고 분기 실적, 다음은 신 IP 자립화",
+        "en": "Record Quarter; New IP Independence Comes Next"
       },
       "lead": {
         "ko": "2026년 1분기 사상 최대 분기 실적(매출 1조 3,714억원, 영업이익 5,616억원)으로 PUBG IP의 플랫폼화 전략이 결실을 맺고 있으나, 신작 IP의 자립적 수익 창출 여부가 중장기 밸류에이션의 핵심 변수로 부상하고 있다.",
@@ -9725,8 +9725,8 @@ window.KOS_REPORTS = {
     },
     "011790": {
       "title": {
-        "ko": "1.2조 수혈 완료, 이제는 글라스기판 상용화가 답을 써야 할 때",
-        "en": "Post-Rights Offering: Glass Substrate Commercialization Now Holds the Key"
+        "ko": "1.2조 수혈 완료, 이제는 글라스기판 상용화",
+        "en": "₩1.2T Raised; Glass Substrate Now Must Deliver"
       },
       "lead": {
         "ko": "SKC는 1.2조 원 규모의 유상증자를 통해 재무 부담을 덜고 글라스기판 사업화에 필요한 실탄을 확보했으나, 동박 적자 지속 및 글라스기판 양산 일정 불확실성은 중기 수익성 회복의 핵심 변수로 남아 있다.",
@@ -9902,8 +9902,8 @@ window.KOS_REPORTS = {
     },
     "006360": {
       "title": {
-        "ko": "이니마 매각·원전 진출로 체질 전환, 매출 외형 회복이 과제",
-        "en": "Portfolio Transformation via Inima Sale and Nuclear Push; Topline Recovery Remains the Challenge"
+        "ko": "이니마 매각·원전 진출로 체질 전환",
+        "en": "Reinvention via the Inima Sale and a Nuclear Push"
       },
       "lead": {
         "ko": "GS건설은 2025년 영업이익 53% 급증으로 수익성 정상화의 초입에 진입했으나, 주택 외형 수축 지속과 GS이니마 매각 지연 리스크가 재무 구조 개선 시나리오의 불확실성을 높이고 있다.",
@@ -10082,8 +10082,8 @@ window.KOS_REPORTS = {
     },
     "079550": {
       "title": {
-        "ko": "천궁II 수출 확산과 LIG D&A 전환: 방공 전문에서 종합 방산·우주로",
-        "en": "Chunmoo-II Export Ramp-Up and the LIG D&A Transformation: From Air Defense Specialist to Full-Spectrum Defense & Space"
+        "ko": "천궁II 수출 확산, 종합 방산·우주로 도약",
+        "en": "Chunmoo-II Exports Power a Leap to Full-Spectrum Defense"
       },
       "lead": {
         "ko": "2025년 창사 이래 최대 실적을 달성하고 2026년 1분기에 어닝 서프라이즈까지 기록한 LIG디펜스앤에어로스페이스는, 25조원을 상회하는 수주잔고와 중동·동남아 수출 파이프라인을 기반으로 구조적 성장 궤도에 진입했으나, 보수적 이익률 가이던스·지정학 변동성·높은 밸류에이션이 단기 주가의 복합 변수로 작용하고 있다.",
@@ -10435,8 +10435,8 @@ window.KOS_REPORTS = {
     },
     "047050": {
       "title": {
-        "ko": "에너지·희토류·식량 3대 밸류체인, 전통 상사의 체질 전환 가속",
-        "en": "Three Value Chain Pivot — Energy, Rare Earth & Food Accelerate POSCO International's Transformation"
+        "ko": "에너지·희토류·식량 3대 축, 상사의 체질 전환",
+        "en": "Energy, Rare Earth and Food: A Trading House Reinvented"
       },
       "lead": {
         "ko": "포스코인터내셔널은 2025년 사상 최대 영업이익 1조 1,653억원을 달성하며 3년 연속 '1조 클럽'을 유지했고, LNG 수직계열화·탈중국 희토류 공급망·식량 플랫폼 확장을 통해 전통 종합상사에서 글로벌 자원·에너지 전문기업으로의 전환을 가속화하고 있다.",
@@ -10613,8 +10613,8 @@ window.KOS_REPORTS = {
     },
     "271560": {
       "title": {
-        "ko": "해외 엔진 재점화: 중국·러시아 고성장이 이끄는 구조적 외형 확장",
-        "en": "Overseas Engines Reignited: China and Russia Power Structural Top-Line Expansion"
+        "ko": "해외 엔진 재점화, 중국·러시아 고성장",
+        "en": "Overseas Engines Reignite on China and Russia"
       },
       "lead": {
         "ko": "2026년 1분기 연결 매출 +16%·영업이익 +26%의 역대급 실적을 기록하며, 오리온의 다중 해외 성장축이 동시에 본격 가동되고 있다.",
@@ -10794,8 +10794,8 @@ window.KOS_REPORTS = {
     },
     "161390": {
       "title": {
-        "ko": "타이어 10조 시대 개막, 한온 시너지와 미국 관세 대응이 분수령",
-        "en": "Tire Revenue Crosses KRW 10 Trillion — Hanon Synergy and U.S. Tariff Response as Pivotal Tests"
+        "ko": "타이어 10조 시대, 한온 시너지가 관건",
+        "en": "Tires Cross ₩10T; Hanon Synergy Is the Swing Factor"
       },
       "lead": {
         "ko": "한국타이어앤테크놀로지는 2025년 타이어 부문 창사 최초 매출 10조원 돌파와 한온시스템 연결 편입으로 총매출 21.2조원이라는 새 지평을 열었으며, 고인치·EV 타이어 믹스 개선과 북미 현지 생산 확대가 2026년 이후 질적 성장의 핵심 축이 될 전망이다.",
@@ -10974,8 +10974,8 @@ window.KOS_REPORTS = {
     },
     "277810": {
       "title": {
-        "ko": "삼성 자회사 편입·MSCI 진입 이후 — 수익화 속도가 밸류에이션 재평가의 분수령",
-        "en": "Post-Samsung Subsidiary Status and MSCI Inclusion — Monetization Speed Is the Valuation Inflection Point"
+        "ko": "삼성 자회사 편입 이후, 수익화 속도가 관건",
+        "en": "After the Samsung Tie-Up, Monetization Speed Is Key"
       },
       "lead": {
         "ko": "삼성전자 자회사 편입과 MSCI 한국 지수 편입이라는 이중 모멘텀을 장착한 레인보우로보틱스는 매출 성장 가속화와 분기 흑자 달성을 선보였으나, 극도로 확장된 프리미엄 밸류에이션을 정당화하는 열쇠는 연간 흑자 전환의 속도에 있다.",
@@ -11157,8 +11157,8 @@ window.KOS_REPORTS = {
     },
     "024110": {
       "title": {
-        "ko": "분기배당 원년, 이자이익은 방어했으나 CET1이 가른 재평가 속도",
-        "en": "Quarterly Dividend Debut Year: Core NII Holds, But CET1 Caps the Re-Rating Pace"
+        "ko": "분기배당 원년, CET1이 가른 재평가 속도",
+        "en": "Quarterly Dividends Debut; CET1 Caps the Re-Rating"
       },
       "lead": {
         "ko": "국내 최대 중소기업 전문 정책은행으로서의 견고한 대출 성장과 NIM 방어를 바탕으로 2026년 사상 첫 분기배당을 도입하고 있으나, CET1 비율의 구조적 제약과 환율 변동성이 동종 민간 은행주 대비 주주환원 매력도를 일부 제한하는 복합 국면에 있다.",
@@ -11690,8 +11690,8 @@ window.KOS_REPORTS = {
     },
     "004170": {
       "title": {
-        "ko": "럭셔리 집중·인바운드 특수·면세 흑자전환, 실적 리레이팅의 삼박자",
-        "en": "Luxury Focus, Inbound Surge, Duty-Free Turnaround — Three Pillars of a Valuation Re-Rating"
+        "ko": "럭셔리·인바운드·면세 흑자, 리레이팅 삼박자",
+        "en": "Luxury, Inbound and Duty-Free: Three Re-Rating Pillars"
       },
       "lead": {
         "ko": "백화점 본업의 역대 최대 실적과 면세점 구조조정 완료가 맞물리며 신세계는 2026년 연결 영업이익의 역사적 최고치 경신을 향해 나아가고 있다.",
@@ -12045,8 +12045,8 @@ window.KOS_REPORTS = {
     },
     "034220": {
       "title": {
-        "ko": "4년 적자 탈출·OLED 체질전환 완성 — 이제는 흑자 지속 가능성을 묻다",
-        "en": "Post-LCD Turnaround Complete: OLED Pivot Proven, Profit Durability Now the Test"
+        "ko": "4년 적자 탈출과 OLED 전환 완성",
+        "en": "Out of a Four-Year Slump, OLED Pivot Complete"
       },
       "lead": {
         "ko": "3년간의 구조조정과 LCD 사업 완전 철수를 통해 OLED 중심 사업 체질 전환을 완성한 LG디스플레이는 2025년 4년 만의 흑자전환에 성공하고 2026년 1분기까지 3개 분기 연속 흑자를 기록했으나, 부채비율 251%의 레버리지 부담·애플 의존 집중도·중국발 경쟁 심화가 수익 구조 지속 가능성의 핵심 검증 변수로 남아 있다.",
@@ -12582,8 +12582,8 @@ window.KOS_REPORTS = {
     },
     "000720": {
       "title": {
-        "ko": "사상 최대 수주에도 짙은 단기 안개 — 원전 EPC 전환이 가른다",
-        "en": "Record Backlogs, But Near-Term Fog — Nuclear EPC Conversion Is the Deciding Factor"
+        "ko": "사상 최대 수주에도 짙은 단기 안개",
+        "en": "Record Backlog, but Near-Term Fog Lingers"
       },
       "lead": {
         "ko": "현대건설은 2025년 연간 수주 25조원 돌파라는 역사적 성과를 달성했으나, 원전 EPC 본계약 전환 지연과 주택 착공 감소·공사 품질 이슈가 단기 주가 경로를 제약하고 있어 실적 개선의 무게중심은 2027년 이후로 기울고 있다.",
@@ -12763,8 +12763,8 @@ window.KOS_REPORTS = {
     },
     "066970": {
       "title": {
-        "ko": "하이니켈 독점에서 LFP 선점까지 — 이중 성장 엔진 동시 점화",
-        "en": "From Hi-Ni Sole Supplier to LFP First-Mover: Dual Growth Engines Ignite"
+        "ko": "하이니켈 독점에서 LFP 선점까지",
+        "en": "From Hi-Ni Sole Supplier to LFP First-Mover"
       },
       "lead": {
         "ko": "엘앤에프는 울트라하이니켈 단독 공급망을 기반으로 3개 분기 연속 흑자를 확대하는 동시에, 국내 최초 비중국 LFP 양극재 상업화라는 두 번째 성장 엔진에 본격적으로 시동을 걸고 있다.",
@@ -12941,8 +12941,8 @@ window.KOS_REPORTS = {
     },
     "010950": {
       "title": {
-        "ko": "고유가 어닝서프라이즈와 샤힌 완공 임박 — 이익 지속성이 시험대",
-        "en": "Earnings Surprise Meets Shaheen Completion — Profit Sustainability Under Scrutiny"
+        "ko": "고유가 어닝서프라이즈와 샤힌 완공 임박",
+        "en": "Oil-Price Surprise Meets Shaheen's Completion"
       },
       "lead": {
         "ko": "에쓰오일은 2026년 1분기 중동 지정학 리스크에 힘입어 1조 2,311억 원의 영업이익으로 어닝서프라이즈를 달성했으나, 이익의 절반 이상이 재고평가·래깅 효과에 기인하는 만큼 유가 방향성이 반전될 경우 수익성 변동성이 확대될 수 있으며, 국내 석유화학 역사상 최대 규모인 샤힌 프로젝트(총 9조 2,580억 원)의 성공적 상업 가동이 중장기 체질 전환의 핵심 변수로 부각된다.",
@@ -13120,8 +13120,8 @@ window.KOS_REPORTS = {
     },
     "004020": {
       "title": {
-        "ko": "실적 저점 탈출 시도 vs. 루이지애나 전기로 투자 딜레마",
-        "en": "Testing the Earnings Trough While Betting Big on Louisiana"
+        "ko": "실적 저점 탈출과 루이지애나 투자 딜레마",
+        "en": "Testing the Trough Amid the Louisiana EAF Bet"
       },
       "lead": {
         "ko": "현대제철은 2025년 원가 절감과 반덤핑 효과에 힘입어 영업이익 반등에 성공했으나, 2026년 1분기 실적이 컨센서스를 크게 하회하며 회복의 지속성에 의문이 제기되는 가운데, 총 58억 달러 규모의 미국 루이지애나 전기로 제철소 투자가 중장기 사업 구조 전환의 핵심 변수로 부상하고 있다.",
@@ -13655,8 +13655,8 @@ window.KOS_REPORTS = {
     },
     "357780": {
       "title": {
-        "ko": "에천트 과점력과 HBM4 사이클의 교차점 — 2026년 실적 변곡 시험대",
-        "en": "Etchant Monopoly Meets HBM4 Ramp: The 2026 Earnings Inflection Test"
+        "ko": "에천트 과점과 HBM4 사이클의 교차점",
+        "en": "Etchant Dominance Meets the HBM4 Cycle"
       },
       "lead": {
         "ko": "국내 반도체 에천트 시장 점유율 85% 이상의 독과점적 지위를 보유한 솔브레인은, 2025년 연결 비용 증가와 NAND 부진이라는 이중 역풍을 극복하고 HBM4·DRAM 선단공정 수혜와 함께 2026년 본격적인 실적 반전 사이클에 진입하고 있다.",
@@ -14006,8 +14006,8 @@ window.KOS_REPORTS = {
     },
     "028050": {
       "title": {
-        "ko": "중동 재건·반도체 Capex 이중 모멘텀, 수주 사이클 반전의 변곡점",
-        "en": "Dual Catalyst Play: Middle East Reconstruction and Semiconductor Capex Revival Mark an Order-Cycle Inflection"
+        "ko": "중동 재건과 반도체 Capex, 수주 사이클 반전",
+        "en": "Middle East Rebuild and Chip Capex Revive the Order Cycle"
       },
       "lead": {
         "ko": "2026년 1분기 신규 수주가 전년 동기 대비 91% 급증하며 연간 가이던스의 40%를 조기 확보, 화공·첨단산업·뉴에너지 3원 체제로 사업 재편 후 수주 사이클 반전의 변곡점에 진입했다.",
@@ -14183,8 +14183,8 @@ window.KOS_REPORTS = {
     },
     "047810": {
       "title": {
-        "ko": "KF-21 양산 전환과 수출 파이프라인: 외형 도약의 원년, 수익성 속도와 밸류에이션이 관건",
-        "en": "KF-21 Production Ramp & Export Pipeline: A Revenue Breakout Year — Profitability Pace and Valuation Hold the Key"
+        "ko": "KF-21 양산 전환과 수출 파이프라인",
+        "en": "KF-21 Production Ramp and Export Pipeline"
       },
       "lead": {
         "ko": "KF-21 양산 전환과 FA-50 수출 확대로 2026년 창립 이래 최초 매출 5조원 돌파(가이던스 5.7조원)를 예고했으나, 1분기 영업이익이 연속 컨센서스 하회·부채비율 446%·고점 대비 30% 이상 주가 조정이 동시에 진행되고 있어 성장 기대와 실행 리스크의 교차점에 서 있다.",
@@ -14362,8 +14362,8 @@ window.KOS_REPORTS = {
     },
     "352820": {
       "title": {
-        "ko": "BTS 재가동·위버스 흑자, 오너 리스크가 드리운 그림자",
-        "en": "HYBE: BTS Comeback Momentum Meets Founder Legal Headwind"
+        "ko": "BTS 재가동과 위버스 흑자전환",
+        "en": "BTS Returns as Weverse Turns Profitable"
       },
       "lead": {
         "ko": "BTS 완전체 컴백과 위버스 첫 연간 흑자가 2026년 실적 대전환을 촉진하고 있으나, 방시혁 의장의 사법 리스크가 밸류에이션 재평가를 가로막는 핵심 변수로 부상했다.",
@@ -14717,8 +14717,8 @@ window.KOS_REPORTS = {
     },
     "128940": {
       "title": {
-        "ko": "에페글레나타이드 상업화·MASH 데이터 발표 — 2026년 하반기 기업가치 재평가 시험대",
-        "en": "Efpeglenatide Launch Meets MASH Data Readout: The H2 2026 Rerating Test"
+        "ko": "에페글레나타이드 상업화와 MASH 데이터",
+        "en": "Efpeglenatide Launch Meets the MASH Data Readout"
       },
       "lead": {
         "ko": "역대 최대 실적으로 검증된 수익 기반 위에 국내 최초 독자 개발 GLP-1 비만 신약 상업화와 MASH 파이프라인 핵심 데이터 발표가 맞물리는 2026년 하반기가 한미약품의 본격적인 기업가치 재평가를 가늠할 결정적 분수령이다.",
@@ -15074,8 +15074,8 @@ window.KOS_REPORTS = {
     },
     "139480": {
       "title": {
-        "ko": "수익성 체질개선 확인, 매출 성장과 자회사 리스크가 다음 관문",
-        "en": "Profitability Turnaround Confirmed — Revenue Recovery and Subsidiary Risks Are the Next Hurdles"
+        "ko": "수익성 체질개선 확인, 다음 관문은 매출과 자회사",
+        "en": "Profitability Turnaround Confirmed; Revenue and Units Next"
       },
       "lead": {
         "ko": "이마트는 2025년 영업이익 584.8% 급증과 2026년 1분기 14년 만의 분기 최대치 달성으로 구조적 수익성 개선을 입증했으나, 매출 성장 정체와 스타벅스 코리아 리스크가 지속 성장의 시험대다.",
@@ -15255,8 +15255,8 @@ window.KOS_REPORTS = {
     },
     "090430": {
       "title": {
-        "ko": "6년 만의 수익성 회복, 서구권 도약과 중국 구조조정의 교차로",
-        "en": "Profitability Restored for First Time in Six Years: Western Markets Rise as China Restructuring Continues"
+        "ko": "6년 만의 수익성 회복, 서구권 도약",
+        "en": "Profitability Returns After Six Years; the West Rises"
       },
       "lead": {
         "ko": "아모레퍼시픽은 2025년 영업이익 6년 만의 최대치를 달성하며 구조적 수익성 회복을 본격화했으나, 2026년 들어 마케팅 투자 확대와 중국 채널 재편이 해외 수익성 개선 속도를 제약하고 있다.",
@@ -15430,8 +15430,8 @@ window.KOS_REPORTS = {
     },
     "032640": {
       "title": {
-        "ko": "15조 매출 첫 돌파, AIDC·비용 효율화로 이익 1조 복원 궤도",
-        "en": "Breaking the ₩15T Revenue Barrier: AIDC Expansion and Cost Reset Drive Profit Recovery"
+        "ko": "15조 매출 첫 돌파, AIDC로 이익 1조 복원",
+        "en": "First ₩15T Revenue; AIDC Drives Profit Back to ₩1T"
       },
       "lead": {
         "ko": "LG유플러스는 2025년 연매출 사상 첫 15조원 돌파와 경쟁사 해킹 반사이익에 힘입어 2026년 영업이익 1조원 회복 궤도에 진입했으며, AI 데이터센터(AIDC) 성장과 비용 구조 정상화가 밸류에이션 재평가의 핵심 변수로 부상하고 있다.",
@@ -15614,8 +15614,8 @@ window.KOS_REPORTS = {
     },
     "010060": {
       "title": {
-        "ko": "스페이스X 공급망 편입 — 비중국 폴리실리콘의 위상 재편인가, 기대 과잉인가",
-        "en": "SpaceX Supply Chain Entry: Genuine Re-Rating of Non-China Polysilicon, or Overextended Expectations?"
+        "ko": "스페이스X 공급망 편입, 비중국 폴리실리콘의 재평가",
+        "en": "SpaceX Supply-Chain Entry Reframes Non-China Polysilicon"
       },
       "lead": {
         "ko": "말레이시아 자회사 OCI TerraSus를 앞세운 비중국 폴리실리콘 공급망의 핵심 축으로 부상 중인 OCI홀딩스는 스페이스X와의 약 1조원 규모 다년 공급 계약 기대감으로 주가가 재평가됐으나, 2026년 1분기 영업이익의 급격한 위축은 이익 정상화 속도에 대한 의문을 남긴다.",
@@ -15789,8 +15789,8 @@ window.KOS_REPORTS = {
     },
     "030200": {
       "title": {
-        "ko": "부동산 기저 소멸 이후, AICT 수익화가 채울 수 있나",
-        "en": "After Real-Estate Tailwinds Fade: Can AICT Monetisation Fill the Gap?"
+        "ko": "부동산 기저 소멸, AICT 수익화가 메울까",
+        "en": "As Property Gains Fade, Can AICT Fill the Void?"
       },
       "lead": {
         "ko": "KT는 2025년 부동산 분양이익과 SKT 해킹 반사이익에 힘입어 역대 최대 실적을 달성했으나, 2026년 이후 AI·클라우드 기반의 자생적 이익 성장이 기업가치 재평가의 진짜 촉매가 될 것이다.",
@@ -15966,8 +15966,8 @@ window.KOS_REPORTS = {
     },
     "069960": {
       "title": {
-        "ko": "백화점 본업의 구조적 재평가, 지누스 디스카운트가 가린 진짜 가치",
-        "en": "Structural Re-Rating of Core Department Store Business, Hidden Behind the Zinus Discount"
+        "ko": "백화점 본업 재평가, 지누스가 가린 가치",
+        "en": "Core Retail Re-Rating, Masked by the Zinus Discount"
       },
       "lead": {
         "ko": "백화점 부문의 외국인 매출 급팽창과 패션 레버리지 효과가 핵심 사업가치를 끌어올리는 가운데, 자회사 지누스의 실적 부진이 연결 기준 밸류에이션을 억누르는 구조적 괴리가 지속되고 있다.",
@@ -16146,8 +16146,8 @@ window.KOS_REPORTS = {
     },
     "036570": {
       "title": {
-        "ko": "4년 구조개혁의 결실: 아이온2 글로벌이 여는 제2의 도약",
-        "en": "Restructuring Pays Off: Aion 2's Global Launch Opens a New Growth Chapter"
+        "ko": "4년 구조개혁의 결실, 아이온2 글로벌",
+        "en": "Reform Pays Off as Aion 2 Goes Global"
       },
       "lead": {
         "ko": "2026년 1분기 대규모 어닝 서프라이즈와 아이온2 글로벌 론칭 가시화로, 엔씨(NC)는 수년에 걸친 수익성 위기를 공식 탈피하고 구조적 성장 국면 진입을 시장에 입증하고 있다.",
@@ -16323,8 +16323,8 @@ window.KOS_REPORTS = {
     },
     "097950": {
       "title": {
-        "ko": "K-푸드 해외 매출 첫 50% 돌파, 담합·바이오 이중 역풍이 발목",
-        "en": "K-Food Overseas Revenue Crosses 50% for the First Time — Cartel Penalties and Bio Slump Cast a Long Shadow"
+        "ko": "K-푸드 해외 매출 첫 50% 돌파, 이중 역풍이 발목",
+        "en": "K-Food Tops 50% Overseas, but Twin Headwinds Bite"
       },
       "lead": {
         "ko": "CJ제일제당은 비비고·햇반 중심의 K-푸드 해외 확장을 가속하고 있으나, 설탕·밀가루·전분당 담합 과징금 누적과 바이오 부문 수익성 급락이 단기 실적 회복을 제한하는 구조적 과제로 부상하고 있다.",
@@ -16500,8 +16500,8 @@ window.KOS_REPORTS = {
     },
     "375500": {
       "title": {
-        "ko": "외형 축소 속 수익성 정점, SMR 모멘텀이 재평가 트리거",
-        "en": "Peak Margins Amid Revenue Contraction — SMR Momentum as a Re-Rating Trigger"
+        "ko": "외형 축소 속 수익성 정점, SMR이 트리거",
+        "en": "Peak Margins Amid Shrinking Revenue; SMR Is the Trigger"
       },
       "lead": {
         "ko": "선별 수주와 원가 혁신으로 2026년 1분기 영업이익률 9.1%라는 업계 최상위 수준을 달성한 DL이앤씨는, 엑스에너지 IPO 이후 촉발된 SMR 재평가 모멘텀과 압도적 순현금 포지션을 기반으로 전통 건설사 프레임을 탈피하는 시도를 이어가고 있다.",
@@ -16679,8 +16679,8 @@ window.KOS_REPORTS = {
     },
     "011170": {
       "title": {
-        "ko": "4년 적자 사슬 끊어냈지만, 구조전환의 속도가 반등의 열쇠",
-        "en": "Breaking the Four-Year Loss Streak: Restructuring Execution Speed Is the Key to Recovery"
+        "ko": "4년 적자 탈출, 구조전환 속도가 열쇠",
+        "en": "Out of a Four-Year Slump; Pace of Reform Is Key"
       },
       "lead": {
         "ko": "2026년 1분기 4년 만의 흑자 전환에 성공했으나, 7조원대 순차입금과 중국발 구조적 공급과잉 속에서 범용 석화 사업 구조조정의 실행 속도가 중장기 가치 복원의 분수령이 될 전망이다.",
@@ -17028,8 +17028,8 @@ window.KOS_REPORTS = {
     },
     "326030": {
       "title": {
-        "ko": "엑스코프리 이익 폭증, 빅 바이오텍 전환의 분수령에 서다",
-        "en": "XCOPRI Earnings Surge: Standing at the Crossroads of Big Biotech Transformation"
+        "ko": "엑스코프리 이익 폭증, 빅 바이오텍 전환점",
+        "en": "XCOPRI Profits Surge; A Big-Biotech Pivot"
       },
       "lead": {
         "ko": "역대 최대 분기 실적을 경신 중임에도 주가가 52주 저점권에 머무는 가운데, 단일 제품 의존 구조의 할인과 파이프라인 옵션가치의 재평가 사이에서 투자 시각이 엇갈리고 있다.",
