@@ -17,6 +17,7 @@
   src:url("fonts/Pretendard-ExtraBold.otf") format("opentype")}
 </style>
 <script src="data/stocks.js"></script>
+<script src="data/reports.js"></script>
 <style>
 /* ============================================================
    DesignCode UI tokens (subset, inlined for single-file use)
@@ -767,6 +768,8 @@ const KOS = {
 KOS.stockCard = (d) => {
   const dir = d.change > 0 ? 'up' : d.change < 0 ? 'down' : 'flat';
   const arw = d.change > 0 ? '▲' : d.change < 0 ? '▼' : '–';
+  const _en = window.KOSi18n && KOSi18n.lang === 'en';
+  const _title = d.repTitle ? (_en ? (d.repTitle.en || d.repTitle.ko) : (d.repTitle.ko || d.repTitle.en)) : (d.ai || '');
   return `
   <a class="kos-card glass" href="Ticker Detail v2.html?ticker=${d.ticker}"
      data-name="${d.name}" data-ticker="${d.ticker}" data-sector="${d.sector}">
@@ -785,10 +788,10 @@ KOS.stockCard = (d) => {
       <div class="kos-metric"><span class="k">${KOS.T('거래량')}</span><span class="v">${KOS.vol(d.volume)}</span></div>
     </div>
     <div class="kos-ai">
-      <p>${KOS.T(d.ai)}</p>
+      <p>${_title}</p>
     </div>
     <div class="kos-card__foot">
-      <span>${d.date || (window.KOS_LIVE_DATA && window.KOS_LIVE_DATA.dataDate ? window.KOS_LIVE_DATA.dataDate.replace(/(\d{4})(\d{2})(\d{2})/,'$1-$2-$3') : '')}</span>
+      <span>${d.reportDate || d.date || ''}</span>
     </div>
   </a>`;
 };
@@ -839,7 +842,13 @@ const REPORTS_DEFAULT = [
   {ticker:'005380',name:'현대차',sector:'자동차',price:238500,change:1.28,per:5.6,pbr:0.7,div:5.2,date:'2026-05-24',ai:'하이브리드 차종 비중 확대와 미국 시장 ASP 안정세가 분기 영업이익률에 우호적으로 작용하는 모습이다.'},
   {ticker:'068270',name:'셀트리온',sector:'바이오',price:186400,change:-0.32,per:42.1,pbr:2.4,div:0.4,date:'2026-05-23',ai:'바이오시밀러 미국 시장 진입 일정과 신규 파이프라인 가시성이 분기별로 점진적으로 개선되는 흐름이다.'},
 ];
-const REPORTS = window.KOS_LIVE_DATA?.stocks?.slice(0,6) || REPORTS_DEFAULT;
+const RREP = (window.KOS_REPORTS && window.KOS_REPORTS.reports) || {};
+const REPORTS = (function(){
+  const stocks = window.KOS_LIVE_DATA?.stocks || [];
+  const withRep = stocks.filter(s=>RREP[s.ticker]).map(s=>({...s, reportDate:RREP[s.ticker].reportDate, repTitle:RREP[s.ticker].title}));
+  withRep.sort((a,b)=> String(b.reportDate||'').localeCompare(String(a.reportDate||'')) || (b.mcap||0)-(a.mcap||0));
+  return withRep.length ? withRep.slice(0,6) : (stocks.slice(0,6).length ? stocks.slice(0,6) : REPORTS_DEFAULT);
+})();
 
 
 const MOVERS_DEFAULT = [
