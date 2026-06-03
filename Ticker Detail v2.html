@@ -287,6 +287,16 @@ table.dt .pos{color:var(--up);font-weight:700}table.dt .neg{color:var(--down);fo
 }
 @media (max-width:479px){.mgrid{grid-template-columns:1fr}.th-now{font-size:34px}}
 
+
+/* AI report source cards */
+.srcgrid{display:grid;grid-template-columns:repeat(auto-fill,minmax(260px,1fr));gap:10px;margin-top:6px}
+.src-card{display:flex;align-items:center;gap:11px;padding:11px 13px;border:1px solid var(--line,rgba(0,0,0,.08));border-radius:12px;background:var(--card,rgba(255,255,255,.5));text-decoration:none;transition:transform .12s ease,border-color .12s ease,box-shadow .12s ease}
+.src-card:hover{transform:translateY(-1px);border-color:var(--accent,#3b6ef6);box-shadow:0 4px 14px rgba(0,0,0,.06)}
+.src-ico{flex:0 0 30px;width:30px;height:30px;border-radius:8px;display:flex;align-items:center;justify-content:center;font-weight:700;font-size:14px;color:#fff;background:linear-gradient(135deg,#5b7cfa,#8a5cf6)}
+.src-body{display:flex;flex-direction:column;min-width:0;flex:1}
+.src-host{font-size:13px;font-weight:600;color:var(--text,#1a1a2e);white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.src-ttl{font-size:11.5px;color:var(--muted,#8a8aa0);white-space:nowrap;overflow:hidden;text-overflow:ellipsis;margin-top:1px}
+.src-ext{width:15px;height:15px;color:var(--muted,#a0a0b8);flex:0 0 auto}
 </style>
 <script src="data/stocks.js"></script>
 <script src="data/reports.js"></script>
@@ -856,6 +866,14 @@ KOSi18n.register({
     try{ localStorage.setItem(WKEY,watched?'1':'0'); }catch(e){}
   }
 
+  function srcHost(u){ try{ return new URL(u).hostname.replace(/^www\./,''); }catch(e){ return String(u).replace(/^https?:\/\//,'').split('/')[0]; } }
+  function srcTitle(u){ try{ var p=new URL(u); var t=decodeURIComponent(p.pathname).replace(/[\/\-_]+/g,' ').replace(/\.(html?|php|aspx?)$/i,'').trim(); return t.length>4?t.slice(0,54):''; }catch(e){ return ''; } }
+  function srcCard(u){ var host=esc(srcHost(u)), url=esc(u), ttl=esc(srcTitle(u));
+    return '<a class="src-card" href="'+url+'" target="_blank" rel="noopener">'
+      +'<span class="src-ico">'+esc(host.charAt(0).toUpperCase())+'</span>'
+      +'<span class="src-body"><span class="src-host">'+host+'</span>'
+      +(ttl?'<span class="src-ttl">'+ttl+'</span>':'')+'</span>'
+      +'<svg class="src-ext" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17 17 7M17 7H9M17 7v8"/></svg></a>'; }
   function render(){
     var u=U(), Ln=L();
     var up=(STOCK.change>=0), cc=up?'up':'down', sign=up?'+':'';
@@ -903,7 +921,7 @@ KOSi18n.register({
       h+='<div class="wrapup glass">'+(st?'<div class="label">'+esc(u.stance)+' · '+esc(st)+'</div>':'')+'<p>'+esc(REP.verdict?pk(REP.verdict.body):'')+'</p></div></section>';
       if(REP.sources&&REP.sources.length){
         h+='<hr class="hairline" />'+secOpen(pad(n++),'SOURCES',u.sec.sources);
-        h+='<div class="prose"><ul class="srclist">'+REP.sources.map(function(x){var url=esc(x);return '<li><a href="'+url+'" target="_blank" rel="noopener">'+url+'</a></li>';}).join('')+'</ul></div></section>';
+        h+='<div class="srcgrid">'+REP.sources.map(srcCard).join('')+'</div></section>';
       }
       rb.innerHTML=h;
     }
