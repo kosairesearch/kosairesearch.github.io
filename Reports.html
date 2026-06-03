@@ -192,6 +192,18 @@ body::before{content:"";position:fixed;inset:0;z-index:-1;pointer-events:none;
   .nav-links{display:none}.menu-btn{display:inline-flex}
   .foot-grid{grid-template-columns:1fr 1fr;gap:24px}.foot-brand{grid-column:1/-1}.foot-bottom{flex-direction:column;gap:8px}
 }
+
+/* pager */
+.pager{display:flex;justify-content:space-between;align-items:center;gap:12px;flex-wrap:wrap;margin-top:18px}
+.pager .pinfo{font:500 13px var(--font-sans);color:var(--fg-3)}
+.pager .pctl{display:flex;gap:4px;align-items:center}
+.pager .pctl button{min-width:34px;height:34px;padding:0 10px;border:0;border-radius:8px;cursor:pointer;font:600 13px var(--font-sans);color:var(--fg-2);background:rgba(0,0,0,.05);transition:.12s}
+.pager .pctl button:hover:not(:disabled){color:var(--fg-1)}
+.pager .pctl button.active{background:#000;color:#fff}
+:root[data-theme="dark"] .pager .pctl button{background:rgba(255,255,255,.08)}
+:root[data-theme="dark"] .pager .pctl button.active{background:#fff;color:#000}
+.pager .pctl button:disabled{opacity:.4;cursor:default}
+.pager .pctl .gap{color:var(--fg-3);padding:0 2px}
 </style>
 <script src="data/stocks.js"></script>
 <script src="data/reports.js"></script>
@@ -508,6 +520,8 @@ KOSi18n.register({
     <div id="rows" data-i18n-skip></div>
   </div>
 
+  <div class="pager" id="pager" data-i18n-skip><div class="pinfo" id="pagerInfo"></div><div class="pctl" id="pagerCtl"></div></div>
+
   <div class="empty" id="empty">
     <h2>검색 결과가 없습니다</h2>
     <p>다른 종목명·티커·업종으로 검색해 보세요.</p>
@@ -562,7 +576,7 @@ const REPORTS = window.KOS_LIVE_DATA?.stocks || REPORTS_DEFAULT;
 const rcats=r=>(r.categories&&r.categories.length?r.categories:[r.sector]);
 const SECTORS=['전체',...[...new Set(REPORTS.flatMap(rcats))]];
 
-const state={q:'',sector:'전체',sort:'mcap',expanded:false};
+const state={q:'',sector:'전체',sort:'mcap',expanded:false,page:1,pageSize:24};
 const rowsEl=document.getElementById('rows'),rlEl=document.getElementById('rl'),emptyEl=document.getElementById('empty');
 
 const VISIBLE_CHIPS=7;
@@ -590,7 +604,7 @@ function getList(){
   });
   if(state.sort==='mcap')l.sort((a,b)=>b.mcap-a.mcap);
   else if(state.sort==='change')l.sort((a,b)=>b.change-a.change);
-  else if(state.sort==='date')l.sort((a,b)=>b.date.localeCompare(a.date));
+  else if(state.sort==='date')l.sort((a,b)=>String(repDate(b.ticker)).localeCompare(String(repDate(a.ticker))));
   else if(state.sort==='name')l.sort((a,b)=>a.name.localeCompare(b.name,'ko'));
   return l;
 }
@@ -618,22 +632,51 @@ function rowHtml(r,i){
     <span class="c-chev"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 6l6 6-6 6"/></svg></span>
   </a>`;
 }
+function pageWindow(cur,pages){
+  // 1 … cur-1 cur cur+1 … pages (윈도우형)
+  const out=new Set([1,pages,cur,cur-1,cur+1]);
+  for(let i of [...out]) if(i<1||i>pages) out.delete(i);
+  const arr=[...out].sort((a,b)=>a-b), res=[];
+  for(let i=0;i<arr.length;i++){ if(i&&arr[i]-arr[i-1]>1)res.push('…'); res.push(arr[i]); }
+  return res;
+}
 function render(){
   buildChips();repaintSort();
   const l=getList();
   document.getElementById('countN').textContent=l.length;
-  if(l.length===0){rlEl.style.display='none';emptyEl.classList.add('show');return;}
+  const pager=document.getElementById('pager');
+  if(l.length===0){rlEl.style.display='none';pager.style.display='none';emptyEl.classList.add('show');return;}
   rlEl.style.display='';emptyEl.classList.remove('show');
-  rowsEl.innerHTML=l.map(rowHtml).join('');
+  const total=l.length,size=state.pageSize,pages=Math.max(1,Math.ceil(total/size));
+  if(state.page>pages)state.page=pages;
+  const start=(state.page-1)*size,pageRows=l.slice(start,start+size);
+  rowsEl.innerHTML=pageRows.map((r,i)=>rowHtml(r,start+i)).join('');
+  // pager
+  const EN=window.KOSi18n&&KOSi18n.lang==='en';
+  document.getElementById('pagerInfo').textContent=EN?`${start+1}–${Math.min(start+size,total)} of ${total}`:`${start+1}–${Math.min(start+size,total)} / 총 ${total}개`;
+  let b=`<button ${state.page<=1?'disabled':''} data-pg="prev">‹</button>`;
+  pageWindow(state.page,pages).forEach(p=> b+= p==='…' ? `<span class="gap">…</span>` : `<button class="${p===state.page?'active':''}" data-pg="${p}">${p}</button>`);
+  b+=`<button ${state.page>=pages?'disabled':''} data-pg="next">›</button>`;
+  document.getElementById('pagerCtl').innerHTML=pages>1?b:'';
+  pager.style.display=pages>1?'':'none';
 }
 render();
 
-document.getElementById('searchInput').addEventListener('input',e=>{state.q=e.target.value;render();});
+document.getElementById('searchInput').addEventListener('input',e=>{state.q=e.target.value;state.page=1;render();});
+document.getElementById('pagerCtl').addEventListener('click',e=>{
+  const b=e.target.closest('button[data-pg]');if(!b)return;
+  const pg=b.dataset.pg;
+  if(pg==='prev')state.page=Math.max(1,state.page-1);
+  else if(pg==='next')state.page++;
+  else state.page=+pg;
+  render();
+  document.getElementById('rl').scrollIntoView({behavior:'smooth',block:'start'});
+});
 const sortCtl=document.getElementById('sortCtl');
 document.getElementById('sortBtn').addEventListener('click',e=>{e.stopPropagation();sortCtl.classList.toggle('open');});
 document.getElementById('sortMenu').addEventListener('click',e=>{
   const b=e.target.closest('button[data-v]');if(!b)return;
-  state.sort=b.dataset.v;
+  state.sort=b.dataset.v;state.page=1;
   repaintSort();
   [...e.currentTarget.children].forEach(c=>c.classList.toggle('active',c===b));
   sortCtl.classList.remove('open');
@@ -644,7 +687,7 @@ document.getElementById('chips').addEventListener('click',e=>{
   const more=e.target.closest('#chipMore');
   if(more){ state.expanded=!state.expanded; buildChips(); return; }
   const b=e.target.closest('.chip');if(!b||b.classList.contains('more'))return;
-  state.sector=b.dataset.sector;
+  state.sector=b.dataset.sector;state.page=1;
   render();
 });
 
