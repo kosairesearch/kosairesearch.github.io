@@ -792,7 +792,7 @@ function chipLabel(k){
 function renderChips(){
   const chips=document.getElementById('chips');
   const keys=FIELD_ORDER.filter(k=>state.filters[k]!=null);
-  if(!keys.length){chips.innerHTML=`<span class="chips-empty">${T('적용된 필터가 없습니다. ‘필터 추가’로 조건을 더하세요')}</span>`;return;}
+  if(!keys.length){chips.innerHTML=`<span class="chips-empty">${T('적용된 필터가 없습니다. ‘필터 추가’로 조건을 더하세요.')}</span>`;return;}
   chips.innerHTML=`<span class="lbl">${T('필터')}</span>`+keys.map(k=>
     `<span class="fchip" data-field="${k}"><span class="lab">${chipLabel(k)}</span><span class="x" data-remove="${k}">✕</span></span>`).join('')
     +`<button class="clear-all" id="clearAll">${T('모두 지우기')}</button>`;
@@ -951,7 +951,7 @@ const SCREENER_DICT={
   "종목명":"Name","시장":"Market","현재가":"Price","등락률":"Change","시가총액":"Market Cap","배당":"Yield",
   "조건에 맞는 종목이 없습니다.":"No stocks match your filters.","필터 초기화":"Reset filters",
   "필터":"Filter","모두 지우기":"Clear all",
-  "적용된 필터가 없습니다. ‘필터 추가’로 조건을 더하세요":"No filters applied. Add conditions with ‘Add filter’.",
+  "적용된 필터가 없습니다. ‘필터 추가’로 조건을 더하세요.":"No filters applied. Add conditions with ‘Add filter’.",
   "적용":"Apply","제거":"Remove","최소":"Min","최대":"Max",
   "업종":"Industry","배당수익률":"Dividend Yield","매출 성장률":"Revenue Growth","영업이익률":"Operating Margin","부채비율":"Debt Ratio",
   "전체":"All","코스피":"KOSPI","코스닥":"KOSDAQ",
