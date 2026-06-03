@@ -589,6 +589,10 @@ function repTitle(tk){
   const en=window.KOSi18n&&KOSi18n.lang==='en';
   return en?(R.title.en||R.title.ko||''):(R.title.ko||R.title.en||'');
 }
+function repDate(tk){
+  const R=window.KOS_REPORTS&&KOS_REPORTS.reports&&KOS_REPORTS.reports[tk];
+  return R&&R.reportDate ? R.reportDate : '';
+}
 function rowHtml(r,i){
   const dir=r.change>0?'up':r.change<0?'down':'flat',arw=r.change>0?'▲':r.change<0?'▼':'–';
   const title=repTitle(r.ticker);
@@ -599,7 +603,7 @@ function rowHtml(r,i){
       <div class="id"><span class="tk">${r.ticker}</span><span class="dot">·</span><span>${T(r.market)}</span><span class="dot">·</span><span>${T(r.sector)}</span></div></div>
     <div class="c-price"><div class="px">${KOS.won(r.price)}</div><div class="ch ${dir}"><span style="font-size:10px">${arw}</span> ${KOS.pct(r.change)}</div></div>
     <p class="c-ai c-title">${titleHtml}</p>
-    <div class="c-date">${r.date || (window.KOS_LIVE_DATA && window.KOS_LIVE_DATA.dataDate ? window.KOS_LIVE_DATA.dataDate.replace(/(\d{4})(\d{2})(\d{2})/,'$1-$2-$3') : '')}</div>
+    <div class="c-date">${repDate(r.ticker) || '—'}</div>
     <span class="c-chev"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 6l6 6-6 6"/></svg></span>
   </a>`;
 }
