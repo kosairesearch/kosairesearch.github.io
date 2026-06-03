@@ -145,6 +145,8 @@ body::before{content:"";position:fixed;inset:0;z-index:-1;pointer-events:none;
 .c-price .ch{font:600 13px var(--font-sans);margin-top:3px}
 .c-price .ch.up{color:var(--up)}.c-price .ch.down{color:var(--down)}.c-price .ch.flat{color:var(--flat)}
 .c-ai{font:400 13.5px/1.5 var(--font-sans);color:var(--fg-2);margin:0;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden}
+.c-title{font-weight:650;color:var(--fg-1);font-size:14.5px}
+.c-ai-none{color:var(--fg-3);font-weight:400;font-style:italic}
 .c-date{font:500 12px var(--font-sans);color:var(--fg-3);text-align:right;white-space:nowrap}
 .c-date .badge{display:inline-block;font:600 11px var(--font-sans);color:var(--fg-2);background:rgba(0,0,0,.05);padding:3px 8px;border-radius:var(--pill);margin-bottom:4px}
 :root[data-theme="dark"] .c-date .badge{background:rgba(255,255,255,.08)}
@@ -192,6 +194,7 @@ body::before{content:"";position:fixed;inset:0;z-index:-1;pointer-events:none;
 }
 </style>
 <script src="data/stocks.js"></script>
+<script src="data/reports.js"></script>
 <script>
 /* ============================================================
    KOS ai — lightweight in-place i18n (KO ⇄ EN)
@@ -488,7 +491,7 @@ KOSi18n.register({
       <span></span>
       <span>종목</span>
       <span>현재가</span>
-      <span>AI 한줄 요약</span>
+      <span>리포트 제목</span>
       <span style="text-align:right">발행일</span>
       <span></span>
     </div>
@@ -580,14 +583,22 @@ function getList(){
   else if(state.sort==='name')l.sort((a,b)=>a.name.localeCompare(b.name,'ko'));
   return l;
 }
+function repTitle(tk){
+  const R=window.KOS_REPORTS&&KOS_REPORTS.reports&&KOS_REPORTS.reports[tk];
+  if(!R||!R.title) return '';
+  const en=window.KOSi18n&&KOSi18n.lang==='en';
+  return en?(R.title.en||R.title.ko||''):(R.title.ko||R.title.en||'');
+}
 function rowHtml(r,i){
   const dir=r.change>0?'up':r.change<0?'down':'flat',arw=r.change>0?'▲':r.change<0?'▼':'–';
+  const title=repTitle(r.ticker);
+  const titleHtml=title?title:`<span class="c-ai-none">${T('리포트 준비 중')}</span>`;
   return `<a class="rl-row" href="Ticker Detail v2.html?ticker=${r.ticker}" data-tk="${r.ticker}">
     <span class="c-rank">${i+1}</span>
     <div class="c-nm"><div class="nm">${T(r.name)}</div>
       <div class="id"><span class="tk">${r.ticker}</span><span class="dot">·</span><span>${T(r.market)}</span><span class="dot">·</span><span>${T(r.sector)}</span></div></div>
     <div class="c-price"><div class="px">${KOS.won(r.price)}</div><div class="ch ${dir}"><span style="font-size:10px">${arw}</span> ${KOS.pct(r.change)}</div></div>
-    <p class="c-ai">${T(r.ai)}</p>
+    <p class="c-ai c-title">${titleHtml}</p>
     <div class="c-date">${r.date || (window.KOS_LIVE_DATA && window.KOS_LIVE_DATA.dataDate ? window.KOS_LIVE_DATA.dataDate.replace(/(\d{4})(\d{2})(\d{2})/,'$1-$2-$3') : '')}</div>
     <span class="c-chev"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 6l6 6-6 6"/></svg></span>
   </a>`;
@@ -640,7 +651,7 @@ const REPORTS_DICT={
   "한국 상장사의 AI 분석 리포트를 종목별로 확인하세요. 종목을 선택하면 상세 리포트로 이동합니다.":"Browse AI analysis reports on Korean public companies. Click a stock to open its full report.",
   "티커 · 종목명 · 업종 검색":"Search ticker · name · industry",
   "개 리포트":" reports","최근 AI 코멘트":"Latest AI Comment","현재가":"Price","정렬":"Sort",
-  "종목":"Stock","AI 한줄 요약":"AI Summary","발행일":"Date",
+  "종목":"Stock","AI 한줄 요약":"AI Summary","리포트 제목":"Report Title","리포트 준비 중":"Report coming soon","발행일":"Date",
   "시가총액순":"By Market Cap","등락률순":"By Change","최신 리포트순":"Latest First","종목명순":"By Name",
   "더보기 ▾":"More ▾","접기 ▲":"Less ▲",
   "전체":"All","반도체":"Semiconductors","IT 서비스":"IT Services","2차전지":"Batteries","바이오":"Biotech","자동차":"Automotive","금융":"Finance","조선·방산":"Shipbuilding & Defense","철강·소재":"Steel & Materials","게임":"Gaming",

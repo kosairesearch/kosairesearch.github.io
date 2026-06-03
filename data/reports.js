@@ -179,7 +179,11 @@ window.KOS_REPORTS = {
       ],
       "market": "코스피",
       "reportDate": "2026-06-03",
-      "dataDate": "20260602"
+      "dataDate": "20260602",
+      "title": {
+        "ko": "AI 메모리 슈퍼사이클의 핵심 수혜주",
+        "en": "A core beneficiary of the AI memory super-cycle"
+      }
     },
     "000660": {
       "lead": {
@@ -356,7 +360,11 @@ window.KOS_REPORTS = {
       ],
       "market": "코스피",
       "reportDate": "2026-06-03",
-      "dataDate": "20260602"
+      "dataDate": "20260602",
+      "title": {
+        "ko": "HBM 과점이 만든 사상 최고 수익성",
+        "en": "Record profitability built on HBM dominance"
+      }
     },
     "005380": {
       "lead": {
@@ -529,7 +537,11 @@ window.KOS_REPORTS = {
       ],
       "market": "코스피",
       "reportDate": "2026-06-03",
-      "dataDate": "20260602"
+      "dataDate": "20260602",
+      "title": {
+        "ko": "성장과 수익성의 괴리, 관세가 가른다",
+        "en": "Growth-profit gap, decided by tariffs"
+      }
     },
     "373220": {
       "lead": {
@@ -701,7 +713,11 @@ window.KOS_REPORTS = {
       ],
       "market": "코스피",
       "reportDate": "2026-06-03",
-      "dataDate": "20260602"
+      "dataDate": "20260602",
+      "title": {
+        "ko": "실적 저점 통과, ESS가 반등의 열쇠",
+        "en": "Past the trough — ESS holds the rebound key"
+      }
     },
     "032830": {
       "lead": {
@@ -875,7 +891,11 @@ window.KOS_REPORTS = {
       ],
       "market": "코스피",
       "reportDate": "2026-06-03",
-      "dataDate": "20260602"
+      "dataDate": "20260602",
+      "title": {
+        "ko": "삼성전자 지분 효과와 밸류업 기대",
+        "en": "Samsung stake effect meets value-up hopes"
+      }
     },
     "012450": {
       "lead": {
@@ -1215,7 +1235,11 @@ window.KOS_REPORTS = {
       ],
       "market": "코스피",
       "reportDate": "2026-06-03",
-      "dataDate": "20260602"
+      "dataDate": "20260602",
+      "title": {
+        "ko": "복합 대형주의 구조적 리레이팅",
+        "en": "Structural re-rating of a diversified large cap"
+      }
     },
     "207940": {
       "lead": {
@@ -1724,7 +1748,11 @@ window.KOS_REPORTS = {
       ],
       "market": "코스피",
       "reportDate": "2026-06-03",
-      "dataDate": "20260602"
+      "dataDate": "20260602",
+      "title": {
+        "ko": "부품사에서 '피지컬 AI' 플랫폼으로",
+        "en": "From auto parts to a physical-AI platform"
+      }
     },
     "034020": {
       "lead": {
@@ -2057,7 +2085,11 @@ window.KOS_REPORTS = {
       ],
       "market": "코스피",
       "reportDate": "2026-06-03",
-      "dataDate": "20260602"
+      "dataDate": "20260602",
+      "title": {
+        "ko": "AI 인프라 부품의 토털 솔루션 전환",
+        "en": "Pivot to a total AI-infrastructure component play"
+      }
     },
     "066570": {
       "lead": {
@@ -2393,7 +2425,11 @@ window.KOS_REPORTS = {
       ],
       "market": "코스피",
       "reportDate": "2026-06-03",
-      "dataDate": "20260602"
+      "dataDate": "20260602",
+      "title": {
+        "ko": "조선 슈퍼사이클에 방산 모멘텀까지",
+        "en": "Shipbuilding super-cycle plus defense momentum"
+      }
     },
     "000270": {
       "lead": {
@@ -2571,7 +2607,11 @@ window.KOS_REPORTS = {
       ],
       "market": "코스피",
       "reportDate": "2026-06-03",
-      "dataDate": "20260602"
+      "dataDate": "20260602",
+      "title": {
+        "ko": "관세 역풍 속 체질 개선 시험대",
+        "en": "Resilience tested against tariff headwinds"
+      }
     }
   }
 };

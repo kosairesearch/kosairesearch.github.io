@@ -298,8 +298,11 @@ table.dt .pos{color:var(--up);font-weight:700}table.dt .neg{color:var(--down);fo
 .src-ttl{font-size:11.5px;color:var(--fg-3);white-space:nowrap;overflow:hidden;text-overflow:ellipsis;margin-top:1px}
 .src-ext{width:15px;height:15px;color:var(--fg-3);flex:0 0 auto}
 
-/* AI report headline */
-.rep-headline{font-size:clamp(22px,3.4vw,30px);font-weight:800;line-height:1.3;letter-spacing:-.02em;color:var(--fg-1);margin:4px 0 22px;}
+/* AI report masthead */
+.rep-masthead{padding:4px 0 22px;margin-bottom:20px;border-bottom:1px solid var(--border-2)}
+.rep-eyebrow{display:inline-block;font-size:11px;font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:#5b7cfa;padding:5px 11px;border:1px solid rgba(91,124,250,.35);border-radius:999px;margin-bottom:14px}
+.rep-headline{font-size:clamp(24px,3.8vw,34px);font-weight:800;line-height:1.28;letter-spacing:-.025em;color:var(--fg-1);margin:0}
+.rep-sub{font-size:clamp(14px,1.6vw,16px);line-height:1.6;color:var(--fg-2);margin:13px 0 0;max-width:62ch}
 </style>
 <script src="data/stocks.js"></script>
 <script src="data/reports.js"></script>
@@ -809,14 +812,14 @@ KOSi18n.register({
     ko:{ home:'홈', reports:'리포트', watch:'워치리스트 추가', watched:'워치리스트 추가됨', watchShort:'워치리스트',
       mk:{price:'현재가',chg:'전일 대비',mcap:'시가총액',amt:'거래대금',vol:'거래량',shares:'상장주식수',market:'시장',sector:'업종'},
       sec:{overview:'리포트 개요',business:'사업 구조',recent:'최근 실적·주가',outlook:'전망',bull:'강세 요인',bear:'약세 요인',risk:'리스크 요인',verdict:'종합 의견',sources:'참고 출처'},
-      reportDate:'리포트 작성일', dataDate:'데이터 기준일', model:'생성 모델', stance:'투자 의견',
+      eyebrow:'AI 리서치 리포트', reportDate:'리포트 작성일', dataDate:'데이터 기준일', model:'생성 모델', stance:'투자 의견',
       discT:'면책 조항',
       disc:'· 본 콘텐츠는 AI가 시장 데이터와 웹 검색 결과를 분석한 정보 제공용이며, 투자 권유나 추천이 아닙니다. 투자 판단과 그 책임은 투자자 본인에게 있습니다. 데이터는 지연되거나 오류가 포함될 수 있습니다.',
       none:'이 종목의 AI 리포트는 아직 준비되지 않았습니다. 시가총액 상위 종목부터 순차적으로 생성하고 있습니다.' },
     en:{ home:'Home', reports:'Reports', watch:'Add to watchlist', watched:'Added to watchlist', watchShort:'Watchlist',
       mk:{price:'Price',chg:'Day change',mcap:'Market cap',amt:'Trading value',vol:'Volume',shares:'Shares out.',market:'Market',sector:'Sector'},
       sec:{overview:'Report Overview',business:'Business',recent:'Recent Results & Price',outlook:'Outlook',bull:'Bull Factors',bear:'Bear Factors',risk:'Risk Factors',verdict:'Verdict',sources:'Sources'},
-      reportDate:'Report date', dataDate:'Data as of', model:'Model', stance:'Stance',
+      eyebrow:'AI Research Report', reportDate:'Report date', dataDate:'Data as of', model:'Model', stance:'Stance',
       discT:'Disclaimer',
       disc:'· This content is AI-generated analysis of market data and web search results, for information only — not investment solicitation or a recommendation. Investment decisions and their outcomes are your own responsibility. Data may be delayed or contain errors.',
       none:'An AI report for this stock is not ready yet. We are generating them in order of market cap.' }
@@ -907,11 +910,12 @@ KOSi18n.register({
       rb.innerHTML='<section class="sec col"><div class="tldr glass"><p>'+esc(u.none)+'</p></div></section>';
     } else {
       var h='', n=1;
-      var headline=REP.title?pk(REP.title):pk(REP.lead);
-      if(headline) h+='<h1 class="rep-headline">'+esc(headline)+'</h1>';
+      var ttl=REP.title?pk(REP.title):pk(REP.lead);
+      var sub=(REP.title&&pk(REP.lead))?pk(REP.lead):'';
+      h+='<div class="rep-masthead"><span class="rep-eyebrow">'+esc(u.eyebrow)+'</span>'
+        +'<h1 class="rep-headline">'+esc(ttl)+'</h1>'
+        +(sub?'<p class="rep-sub">'+esc(sub)+'</p>':'')+'</div>';
       h+=secOpen(pad(n++),'REPORT OVERVIEW',u.sec.overview);
-      // 제목이 따로 있으면 lead도 표시(부제 역할). 제목이 없으면 lead가 헤드라인이라 중복 생략.
-      if(REP.title && pk(REP.lead)) h+='<p class="lead">'+esc(pk(REP.lead))+'</p>';
       if(pk(REP.desc))h+='<p class="desc">'+esc(pk(REP.desc))+'</p>';
       if(REP.keypoints&&REP.keypoints.length)h+='<ol class="kpoints">'+REP.keypoints.map(function(k){return '<li>'+esc(pk(k))+'</li>';}).join('')+'</ol>';
       h+='<div class="rep-meta"><span><b>'+esc(u.reportDate)+'</b>'+esc(REP.reportDate||'')+'</span><span><b>'+esc(u.dataDate)+'</b>'+esc(REP.dataDate||'')+'</span></div>';
