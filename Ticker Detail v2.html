@@ -92,20 +92,6 @@ body::before{content:"";position:fixed;inset:0;z-index:-1;pointer-events:none;
 .mobile-menu a:hover,.mobile-menu a.active{background:rgba(0,0,0,.06)}
 :root[data-theme="dark"] .mobile-menu a:hover,:root[data-theme="dark"] .mobile-menu a.active{background:rgba(255,255,255,.08)}
 
-/* sticky condensed price bar */
-.stickybar{position:fixed;top:0;left:0;right:0;z-index:48;transform:translateY(-100%);transition:transform .25s ease;
-  background:rgba(255,255,255,0.8);-webkit-backdrop-filter:blur(20px);backdrop-filter:blur(20px);
-  border-bottom:1px solid var(--border-2)}
-:root[data-theme="dark"] .stickybar{background:rgba(18,19,28,0.82)}
-.stickybar.show{transform:none}
-.stickybar .inner{max-width:1120px;margin:0 auto;padding:10px var(--pad);display:flex;align-items:center;gap:14px}
-.stickybar .sb-name{font:700 16px var(--font-sans);letter-spacing:-.01em}
-.stickybar .sb-tk{font:600 12px var(--font-sans);color:var(--fg-3)}
-.stickybar .sb-price{font:700 16px var(--font-sans);margin-left:6px}
-.stickybar .sb-chg{font:600 14px var(--font-sans)}
-.stickybar .sb-chg.up{color:var(--up)}.stickybar .sb-chg.down{color:var(--down)}
-.stickybar .sb-spacer{flex:1}
-
 /* breadcrumb */
 .crumb{font:500 13px var(--font-sans);color:var(--fg-3);padding:26px 0 14px}
 .crumb a{color:var(--fg-3);text-decoration:none}.crumb a:hover{color:var(--fg-1)}
@@ -741,18 +727,6 @@ KOSi18n.register({
   <a href="Watchlist.html">워치리스트</a>
 </div>
 
-<!-- STICKY PRICE BAR -->
-<div class="stickybar" id="stickybar" data-i18n-skip>
-  <div class="inner">
-    <span class="sb-name" id="sbName"></span>
-    <span class="sb-tk" id="sbTk"></span>
-    <span class="sb-price" id="sbPrice"></span>
-    <span class="sb-chg" id="sbChg"></span>
-    <span class="sb-spacer"></span>
-    <button class="watch-btn" id="watchBtnTop"></button>
-  </div>
-</div>
-
 <div class="wrap" data-screen-label="03 Ticker Detail" data-i18n-skip>
 
   <div class="crumb" id="crumb"></div>
@@ -879,9 +853,8 @@ KOSi18n.register({
   var WKEY='kos-watch-'+TK, watched=false;
   try{ watched=localStorage.getItem(WKEY)==='1'; }catch(e){}
   function syncWatch(){ var u=U();
-    var b=document.getElementById('watchBtn'), bt=document.getElementById('watchBtnTop'), tx=document.getElementById('watchTxt');
+    var b=document.getElementById('watchBtn'), tx=document.getElementById('watchTxt');
     if(b)b.classList.toggle('on',watched);
-    if(bt){ bt.classList.toggle('on',watched); bt.textContent=u.watchShort; }
     if(tx)tx.textContent=watched?u.watched:u.watch;
     try{ localStorage.setItem(WKEY,watched?'1':'0'); }catch(e){}
   }
@@ -954,28 +927,15 @@ KOSi18n.register({
     }
 
     document.getElementById('disclaimer').innerHTML='<b>'+esc(u.discT)+'</b> '+esc(u.disc);
-    document.getElementById('sbName').textContent=tname(STOCK.name);
-    document.getElementById('sbTk').textContent=TK+' · '+tname(STOCK.market);
-    document.getElementById('sbPrice').textContent=won(STOCK.price);
-    var sc=document.getElementById('sbChg'); sc.className='sb-chg '+cc; sc.textContent=(up?'▲ ':'▼ ')+sign+chg.toFixed(2)+'%';
     document.title=(REP?(Ln==='en'?'AI Report':'AI 리포트')+' · ':'')+tname(STOCK.name)+' · KOS ai';
     syncWatch();
   }
 
   render();
-  var wb=document.getElementById('watchBtn'), wbt=document.getElementById('watchBtnTop');
+  var wb=document.getElementById('watchBtn');
   if(wb)wb.addEventListener('click',function(){ watched=!watched; syncWatch(); });
-  if(wbt)wbt.addEventListener('click',function(){ watched=!watched; syncWatch(); });
   if(window.KOSi18n){ KOSi18n.register({}, render); }
 })();
-
-/* ===== sticky price bar ===== */
-const stickybar=document.getElementById('stickybar'),tkHead=document.querySelector('.tk-head');
-function onScroll(){
-  const past=tkHead.getBoundingClientRect().bottom < 0;
-  stickybar.classList.toggle('show',past);
-}
-window.addEventListener('scroll',onScroll,{passive:true});onScroll();
 
 /* mobile menu */
 const menuBtn=document.getElementById('menuBtn'),mobileMenu=document.getElementById('mobileMenu');
