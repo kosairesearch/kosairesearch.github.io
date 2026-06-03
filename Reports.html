@@ -604,7 +604,7 @@ function getList(){
   });
   if(state.sort==='mcap')l.sort((a,b)=>b.mcap-a.mcap);
   else if(state.sort==='change')l.sort((a,b)=>b.change-a.change);
-  else if(state.sort==='date')l.sort((a,b)=>String(repDate(b.ticker)).localeCompare(String(repDate(a.ticker))));
+  else if(state.sort==='date')l.sort((a,b)=>String(repTs(b.ticker)).localeCompare(String(repTs(a.ticker))) || (b.mcap||0)-(a.mcap||0));
   else if(state.sort==='name')l.sort((a,b)=>a.name.localeCompare(b.name,'ko'));
   return l;
 }
@@ -617,6 +617,10 @@ function repTitle(tk){
 function repDate(tk){
   const R=window.KOS_REPORTS&&KOS_REPORTS.reports&&KOS_REPORTS.reports[tk];
   return R&&R.reportDate ? R.reportDate : '';
+}
+function repTs(tk){
+  const R=window.KOS_REPORTS&&KOS_REPORTS.reports&&KOS_REPORTS.reports[tk];
+  return R ? (R.reportTs||R.reportDate||'') : '';
 }
 function rowHtml(r,i){
   const dir=r.change>0?'up':r.change<0?'down':'flat',arw=r.change>0?'▲':r.change<0?'▼':'–';

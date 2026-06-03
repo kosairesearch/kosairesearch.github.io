@@ -427,6 +427,7 @@ def main():
                     "categories": st.get("categories", []),
                     "market": st.get("market", ""),
                     "reportDate": report_date,
+                    "reportTs": as_of,
                     "dataDate": data.get("dataDate", ""),
                 })
                 reports[tk] = rep

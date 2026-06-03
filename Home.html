@@ -844,8 +844,8 @@ const REPORTS_DEFAULT = [
 const RREP = (window.KOS_REPORTS && window.KOS_REPORTS.reports) || {};
 const REPORTS = (function(){
   const stocks = window.KOS_LIVE_DATA?.stocks || [];
-  const withRep = stocks.filter(s=>RREP[s.ticker]).map(s=>({...s, reportDate:RREP[s.ticker].reportDate, repTitle:RREP[s.ticker].title}));
-  withRep.sort((a,b)=> String(b.reportDate||'').localeCompare(String(a.reportDate||'')) || (b.mcap||0)-(a.mcap||0));
+  const withRep = stocks.filter(s=>RREP[s.ticker]).map(s=>({...s, reportDate:RREP[s.ticker].reportDate, reportTs:RREP[s.ticker].reportTs||RREP[s.ticker].reportDate, repTitle:RREP[s.ticker].title}));
+  withRep.sort((a,b)=> String(b.reportTs||'').localeCompare(String(a.reportTs||'')) || (b.mcap||0)-(a.mcap||0));
   return withRep.length ? withRep.slice(0,6) : (stocks.slice(0,6).length ? stocks.slice(0,6) : REPORTS_DEFAULT);
 })();
 

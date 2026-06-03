@@ -144,7 +144,9 @@ def collect(cl, as_of):
 
     data = g.load_stocks()
     by_tk = {s["ticker"]: s for s in data["stocks"]}
-    report_date = datetime.datetime.now(datetime.timezone(datetime.timedelta(hours=9))).strftime("%Y-%m-%d")
+    now_kst = datetime.datetime.now(datetime.timezone(datetime.timedelta(hours=9)))
+    report_date = now_kst.strftime("%Y-%m-%d")
+    report_ts = now_kst.strftime("%Y-%m-%d %H:%M")
 
     reports, _ = load_existing()
     ok, fail = 0, 0
@@ -171,7 +173,8 @@ def collect(cl, as_of):
                 "name_en": st.get("name_en", st.get("name", tk)),
                 "sector": st.get("sector", ""), "categories": st.get("categories", []),
                 "market": st.get("market", ""),
-                "reportDate": report_date, "dataDate": data.get("dataDate", ""),
+                "reportDate": report_date, "reportTs": report_ts,
+                "dataDate": data.get("dataDate", ""),
             })
             reports[tk] = rep
             ok += 1
