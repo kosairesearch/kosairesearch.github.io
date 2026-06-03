@@ -283,6 +283,7 @@ section.block{padding:36px 0}
   letter-spacing:.06em;text-transform:uppercase;color:var(--fg-3)}
 .kos-ai__label svg{width:12px;height:12px}
 .kos-ai p{margin:0;font:400 13px/1.55 var(--font-sans);color:var(--fg-2);text-wrap:pretty}
+.kos-ai .kos-rep-title{font:650 15.5px/1.4 var(--font-sans);color:var(--fg-1);letter-spacing:-.01em;text-wrap:balance}
 
 .kos-card__foot{display:flex;justify-content:space-between;align-items:center;
   font:500 12px var(--font-mono);color:var(--fg-3);margin-top:auto}
@@ -788,7 +789,7 @@ KOS.stockCard = (d) => {
       <div class="kos-metric"><span class="k">${KOS.T('거래량')}</span><span class="v">${KOS.vol(d.volume)}</span></div>
     </div>
     <div class="kos-ai">
-      <p>${_title}</p>
+      <p class="kos-rep-title">${_title}</p>
     </div>
     <div class="kos-card__foot">
       <span>${d.reportDate || d.date || ''}</span>
