@@ -864,8 +864,9 @@ const MOVERS = (window.KOS_LIVE_DATA?.stocks?.length)
   ? [...window.KOS_LIVE_DATA.stocks].sort((a,b)=>(b.trading_value||0)-(a.trading_value||0))
   : MOVERS_DEFAULT;
 
-// 업종 탭도 라이브 데이터의 실제 업종으로 생성 (탭/데이터 업종명 불일치 방지)
-const TAB_SECTORS = ['전체', ...[...new Set(MOVERS.map(m=>m.sector))]];
+// 업종 탭 = 스크리너/리포트와 동일하게 categories(대표+테마) 기준
+const mcats = m => (m.categories && m.categories.length ? m.categories : [m.sector]);
+const TAB_SECTORS = ['전체', ...[...new Set(MOVERS.flatMap(mcats))]];
 
 /* ---- Render reports (with search filter) ---- */
 const grid = document.getElementById('reportGrid');
@@ -896,7 +897,7 @@ function renderTabs(){
 }
 renderTabs();
 function renderMovers(){
-  const list = (activeTab==='전체' ? MOVERS : MOVERS.filter(m=>m.sector===activeTab)).slice(0,12);
+  const list = (activeTab==='전체' ? MOVERS : MOVERS.filter(m=>mcats(m).includes(activeTab))).slice(0,12);
   moverRow.innerHTML = list.length
     ? list.map((m,i)=>KOS.moverCard(m,i+1)).join('')
     : `<div class="empty-msg" style="display:block;width:100%">${KOS.T('해당 업종 종목이 없습니다.')}</div>`;
