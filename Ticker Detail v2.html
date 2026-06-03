@@ -290,13 +290,13 @@ table.dt .pos{color:var(--up);font-weight:700}table.dt .neg{color:var(--down);fo
 
 /* AI report source cards */
 .srcgrid{display:grid;grid-template-columns:repeat(auto-fill,minmax(260px,1fr));gap:10px;margin-top:6px}
-.src-card{display:flex;align-items:center;gap:11px;padding:11px 13px;border:1px solid var(--line,rgba(0,0,0,.08));border-radius:12px;background:var(--card,rgba(255,255,255,.5));text-decoration:none;transition:transform .12s ease,border-color .12s ease,box-shadow .12s ease}
-.src-card:hover{transform:translateY(-1px);border-color:var(--accent,#3b6ef6);box-shadow:0 4px 14px rgba(0,0,0,.06)}
+.src-card{display:flex;align-items:center;gap:11px;padding:11px 13px;border:1px solid var(--border-2);border-radius:12px;background:rgba(128,128,150,.06);text-decoration:none;transition:transform .12s ease,border-color .12s ease,box-shadow .12s ease}
+.src-card:hover{transform:translateY(-1px);border-color:#5b7cfa;background:rgba(128,128,150,.11);box-shadow:0 4px 14px rgba(0,0,0,.08)}
 .src-ico{flex:0 0 30px;width:30px;height:30px;border-radius:8px;display:flex;align-items:center;justify-content:center;font-weight:700;font-size:14px;color:#fff;background:linear-gradient(135deg,#5b7cfa,#8a5cf6)}
 .src-body{display:flex;flex-direction:column;min-width:0;flex:1}
-.src-host{font-size:13px;font-weight:600;color:var(--text,#1a1a2e);white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
-.src-ttl{font-size:11.5px;color:var(--muted,#8a8aa0);white-space:nowrap;overflow:hidden;text-overflow:ellipsis;margin-top:1px}
-.src-ext{width:15px;height:15px;color:var(--muted,#a0a0b8);flex:0 0 auto}
+.src-host{font-size:13px;font-weight:600;color:var(--fg-1);white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.src-ttl{font-size:11.5px;color:var(--fg-3);white-space:nowrap;overflow:hidden;text-overflow:ellipsis;margin-top:1px}
+.src-ext{width:15px;height:15px;color:var(--fg-3);flex:0 0 auto}
 </style>
 <script src="data/stocks.js"></script>
 <script src="data/reports.js"></script>
