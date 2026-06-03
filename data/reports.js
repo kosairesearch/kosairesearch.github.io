@@ -181,8 +181,8 @@ window.KOS_REPORTS = {
       "reportDate": "2026-06-03",
       "dataDate": "20260602",
       "title": {
-        "ko": "AI 메모리 사이클의 수혜주",
-        "en": "AI memory cycle winner"
+        "ko": "AI 메모리 슈퍼사이클의 핵심 수혜주",
+        "en": "A core beneficiary of the AI memory super-cycle"
       }
     },
     "000660": {
@@ -362,8 +362,8 @@ window.KOS_REPORTS = {
       "reportDate": "2026-06-03",
       "dataDate": "20260602",
       "title": {
-        "ko": "HBM이 만든 최고 수익성",
-        "en": "Peak margins from HBM"
+        "ko": "HBM 과점이 만든 창사 이래 최고 수익성",
+        "en": "Record profitability built on HBM dominance"
       }
     },
     "005380": {
@@ -715,8 +715,8 @@ window.KOS_REPORTS = {
       "reportDate": "2026-06-03",
       "dataDate": "20260602",
       "title": {
-        "ko": "ESS가 쥔 반등의 열쇠",
-        "en": "ESS holds the rebound key"
+        "ko": "실적 저점 통과, ESS가 쥔 반등의 열쇠",
+        "en": "Past the trough — ESS holds the rebound key"
       }
     },
     "032830": {
@@ -893,8 +893,8 @@ window.KOS_REPORTS = {
       "reportDate": "2026-06-03",
       "dataDate": "20260602",
       "title": {
-        "ko": "지분 효과와 밸류업 기대",
-        "en": "Stake effect meets value-up"
+        "ko": "삼성전자 지분 효과와 밸류업 기대",
+        "en": "Samsung stake effect meets value-up hopes"
       }
     },
     "012450": {
@@ -1237,8 +1237,8 @@ window.KOS_REPORTS = {
       "reportDate": "2026-06-03",
       "dataDate": "20260602",
       "title": {
-        "ko": "복합 대형주의 리레이팅",
-        "en": "A diversified large-cap re-rating"
+        "ko": "복합 대형주의 구조적 리레이팅",
+        "en": "Structural re-rating of a diversified large cap"
       }
     },
     "207940": {
@@ -1750,8 +1750,8 @@ window.KOS_REPORTS = {
       "reportDate": "2026-06-03",
       "dataDate": "20260602",
       "title": {
-        "ko": "부품사를 넘어 피지컬 AI로",
-        "en": "Beyond parts, toward physical AI"
+        "ko": "부품사를 넘어 '피지컬 AI' 플랫폼으로",
+        "en": "Beyond parts, toward a physical-AI platform"
       }
     },
     "034020": {
@@ -2087,8 +2087,8 @@ window.KOS_REPORTS = {
       "reportDate": "2026-06-03",
       "dataDate": "20260602",
       "title": {
-        "ko": "AI 부품 토털 솔루션 도약",
-        "en": "Toward total AI components"
+        "ko": "MLCC·FC-BGA·실리콘 커패시터, AI 부품 삼중 모멘텀",
+        "en": "Triple momentum across MLCC, FC-BGA and silicon capacitors"
       }
     },
     "066570": {
@@ -2427,8 +2427,8 @@ window.KOS_REPORTS = {
       "reportDate": "2026-06-03",
       "dataDate": "20260602",
       "title": {
-        "ko": "조선 슈퍼사이클의 수혜주",
-        "en": "Riding the shipbuilding super-cycle"
+        "ko": "조선 슈퍼사이클에 방산 모멘텀까지",
+        "en": "Shipbuilding super-cycle plus defense momentum"
       }
     },
     "000270": {
@@ -2609,8 +2609,8 @@ window.KOS_REPORTS = {
       "reportDate": "2026-06-03",
       "dataDate": "20260602",
       "title": {
-        "ko": "관세 역풍 속 체질 개선",
-        "en": "Reshaping under tariff headwinds"
+        "ko": "관세 역풍 속 중장기 체질 개선",
+        "en": "Reshaping for the long run amid tariff headwinds"
       }
     }
   }
