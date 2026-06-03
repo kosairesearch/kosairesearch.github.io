@@ -882,7 +882,7 @@ KOSi18n.register({
     document.getElementById('crumb').innerHTML='<a href="Home.html">'+esc(u.home)+'</a> / <a href="Reports.html">'+esc(u.reports)+'</a> / <b>'+esc(tname(STOCK.name))+' ('+TK+')</b>';
     document.getElementById('thId').innerHTML='<span>'+TK+'</span><span class="sep">·</span><span>'+esc(tname(STOCK.market))+'</span><span class="sep">·</span><span>'+esc(tname(STOCK.sector))+'</span>';
     document.getElementById('thName').textContent=tname(STOCK.name);
-    document.getElementById('thMeta').textContent = REP ? (u.reportDate+' '+(REP.reportDate||'')+'  ·  '+u.model+' '+(RMETA.model||'')) : '';
+    document.getElementById('thMeta').textContent = REP ? (u.reportDate+' '+(REP.reportDate||'')) : '';
     document.getElementById('thNow').textContent=won(STOCK.price);
     var tc=document.getElementById('thChg'); tc.className='th-chg '+cc; tc.textContent=(up?'▲ ':'▼ ')+sign+chg.toFixed(2)+'%';
     document.getElementById('thVol').innerHTML='<div class="v"><span class="k">'+esc(u.mk.vol)+'</span><span class="n">'+vol(STOCK.volume)+'</span></div><div class="v"><span class="k">'+esc(u.mk.amt)+'</span><span class="n">'+amt(STOCK.trading_value)+'</span></div>';
@@ -908,7 +908,7 @@ KOSi18n.register({
       h+='<p class="lead">'+esc(pk(REP.lead))+'</p>';
       if(pk(REP.desc))h+='<p class="desc">'+esc(pk(REP.desc))+'</p>';
       if(REP.keypoints&&REP.keypoints.length)h+='<ol class="kpoints">'+REP.keypoints.map(function(k){return '<li>'+esc(pk(k))+'</li>';}).join('')+'</ol>';
-      h+='<div class="rep-meta"><span><b>'+esc(u.reportDate)+'</b>'+esc(REP.reportDate||'')+'</span><span><b>'+esc(u.dataDate)+'</b>'+esc(REP.dataDate||'')+'</span><span><b>'+esc(u.model)+'</b>'+esc(RMETA.model||'')+'</span></div>';
+      h+='<div class="rep-meta"><span><b>'+esc(u.reportDate)+'</b>'+esc(REP.reportDate||'')+'</span><span><b>'+esc(u.dataDate)+'</b>'+esc(REP.dataDate||'')+'</span></div>';
       h+='</section><hr class="hairline" />';
       h+=secOpen(pad(n++),'BUSINESS',u.sec.business)+prose(REP.business)+'</section><hr class="hairline" />';
       h+=secOpen(pad(n++),'RECENT',u.sec.recent)+prose(REP.recent)+'</section><hr class="hairline" />';
