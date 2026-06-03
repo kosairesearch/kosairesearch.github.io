@@ -1,0 +1,18 @@
+{
+  "FULL_UNIVERSE": true,
+  "UNIVERSE_LIMIT": 400,
+  "pykrx_KOSPI": 0,
+  "pykrx_KOSDAQ": 0,
+  "dart_cc_type": "DataFrame",
+  "dart_cc_cols": [
+    "corp_code",
+    "corp_name",
+    "corp_eng_name",
+    "stock_code",
+    "modify_date"
+  ],
+  "dart_cc_rows": 118224,
+  "dart_stock_col": "stock_code",
+  "dart_listed": 3920,
+  "universe_final": 400
+}
