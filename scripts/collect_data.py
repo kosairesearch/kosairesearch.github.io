@@ -422,49 +422,73 @@ def build_universe(date):
     if not FULL_UNIVERSE:
         return dict(SECTOR_MAP)
 
+    dbg = {"FULL_UNIVERSE": FULL_UNIVERSE, "UNIVERSE_LIMIT": UNIVERSE_LIMIT}
     universe = {}
-    # 1) pykrx 전종목 티커 목록 (현재 상장 종목만 — 가장 깔끔)
+
+    # 1) pykrx 전종목 티커 목록 (pykrx 1.2.8은 KRX 로그인 필요 → Actions에선 보통 실패)
     try:
         from pykrx import stock as krx
         for mkt in ("KOSPI", "KOSDAQ"):
             try:
-                lst = krx.get_market_ticker_list(date, market=mkt) or []
+                lst = list(krx.get_market_ticker_list(date, market=mkt) or [])
                 for tk in lst:
                     universe[str(tk)] = SECTOR_MAP.get(str(tk), "기타")
+                dbg[f"pykrx_{mkt}"] = len(lst)
                 print(f"  [universe] pykrx {mkt}: {len(lst)}개")
             except Exception as e:
+                dbg[f"pykrx_{mkt}_err"] = f"{type(e).__name__}: {e}"
                 print(f"  [universe] pykrx {mkt} 실패: {type(e).__name__}: {e}")
     except Exception as e:
-        print(f"  [universe] pykrx 로드 실패: {e}")
+        dbg["pykrx_load_err"] = str(e)
 
-    # 2) pykrx가 비면 DART corp_codes(상장사=stock_code 6자리)로 폴백
+    # 2) DART corp_codes(전 상장사=stock_code 6자리) — Actions에서 DART 키가 작동하므로 주 경로
     if len(universe) < 200 and DART_API_KEY:
         try:
             import OpenDartReader
             dart = OpenDartReader(DART_API_KEY)
-            cc = dart.corp_codes  # DataFrame: corp_code, corp_name, stock_code, modify_date
-            n = 0
-            for sc in cc["stock_code"].dropna().astype(str):
-                sc = sc.strip()
-                if len(sc) == 6 and sc.isdigit():
-                    universe.setdefault(sc, SECTOR_MAP.get(sc, "기타"))
-                    n += 1
-            print(f"  [universe] DART corp_codes 상장사: {n}개 (누적 {len(universe)})")
+            cc = getattr(dart, "corp_codes", None)
+            if cc is None and hasattr(dart, "corp_code"):
+                cc = dart.corp_code  # 일부 버전 호환
+            dbg["dart_cc_type"] = type(cc).__name__
+            if cc is not None:
+                dbg["dart_cc_cols"] = [str(c) for c in getattr(cc, "columns", [])]
+                dbg["dart_cc_rows"] = int(len(cc))
+                col = next((c for c in cc.columns if "stock" in str(c).lower()), None)
+                dbg["dart_stock_col"] = str(col)
+                n = 0
+                if col is not None:
+                    for sc in cc[col].dropna().astype(str):
+                        sc = sc.strip()
+                        if len(sc) == 6 and sc.isdigit():
+                            universe.setdefault(sc, SECTOR_MAP.get(sc, "기타"))
+                            n += 1
+                dbg["dart_listed"] = n
+                print(f"  [universe] DART corp_codes 상장사: {n}개 (누적 {len(universe)})")
         except Exception as e:
+            import traceback as _tb
+            dbg["dart_cc_err"] = f"{type(e).__name__}: {e}"
             print(f"  [universe] DART corp_codes 실패: {type(e).__name__}: {e}")
+            _tb.print_exc()
 
     # 3) 둘 다 실패하면 SECTOR_MAP
     if len(universe) < 50:
         print("  [universe] 전종목 목록 확보 실패 — SECTOR_MAP으로 폴백")
         universe = dict(SECTOR_MAP)
+        dbg["fallback"] = "SECTOR_MAP"
     else:
-        # SECTOR_MAP 종목은 항상 포함(업종 라벨 보존)
         for tk, sec in SECTOR_MAP.items():
             universe.setdefault(tk, sec)
 
     if UNIVERSE_LIMIT and len(universe) > UNIVERSE_LIMIT:
         universe = dict(list(universe.items())[:UNIVERSE_LIMIT])
+    dbg["universe_final"] = len(universe)
     print(f"  [universe] 최종 수집 대상: {len(universe)}개")
+    try:
+        Path("data").mkdir(exist_ok=True)
+        Path("data/universe_debug.json").write_text(
+            json.dumps(dbg, ensure_ascii=False, indent=2), encoding="utf-8")
+    except Exception:
+        pass
     return universe
 
 
