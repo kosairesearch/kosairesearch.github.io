@@ -1,6 +1,6 @@
 // KOS ai — AI 리서치 리포트 (자동 생성). 직접 수정하지 마세요.
 window.KOS_REPORTS = {
-  "lastUpdated": "2026-06-03 23:48",
+  "lastUpdated": "2026-06-04 00:13",
   "model": "claude-sonnet-4-6",
   "reports": {
     "005930": {
