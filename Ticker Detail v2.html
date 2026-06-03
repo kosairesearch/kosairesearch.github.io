@@ -799,7 +799,7 @@ KOSi18n.register({
 
   function L(){ return (window.KOSi18n?KOSi18n.lang:'ko'); }
   function tname(x){ return (window.KOSi18n?KOSi18n.t(x):x); }
-  function pk(o){ if(o==null)return ''; if(typeof o==='string')return o; return (L()==='en'?(o.en||o.ko):(o.ko||o.en))||''; }
+  function pk(o){ if(o==null)return ''; var v=(typeof o==='string')?o:(L()==='en'?(o.en||o.ko):(o.ko||o.en))||''; return String(v).replace(/<\/?cite[^>]*>/g,''); }
   function esc(x){ return String(x==null?'':x).replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;'); }
 
   var UI={

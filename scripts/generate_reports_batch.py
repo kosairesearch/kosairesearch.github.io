@@ -152,6 +152,9 @@ def collect(cl, as_of):
         try:
             text = g.extract_text(result.result.message)
             rep = g.parse_report(text)
+            srcs = g.collect_sources(result.result.message)
+            if srcs:
+                rep["sources"] = srcs[:18]
             st = by_tk.get(tk, {})
             rep.update({
                 "ticker": tk, "name": st.get("name", tk),

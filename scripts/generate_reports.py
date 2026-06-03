@@ -253,7 +253,21 @@ def extract_text(message):
     for block in message.content:
         if getattr(block, "type", None) == "text":
             parts.append(block.text)
-    return "\n".join(parts)
+    text = "\n".join(parts)
+    # 웹검색 인용 태그(<cite index="..">..</cite>)가 본문에 새는 것 제거
+    return re.sub(r"</?cite[^>]*>", "", text)
+
+
+def collect_sources(message):
+    """웹검색 인용(citations)에서 실제 출처 URL을 수집(중복 제거)."""
+    urls = []
+    for block in message.content:
+        cits = getattr(block, "citations", None) or []
+        for c in cits:
+            u = getattr(c, "url", None)
+            if u and u not in urls:
+                urls.append(u)
+    return urls
 
 
 def parse_report(text):
@@ -303,6 +317,10 @@ def generate_one(client, stock, as_of, dart_block=""):
         head = (text or "").strip()[:300].replace("\n", " ")
         log(f"  · 파싱 실패 응답(앞 300자): {head!r} · stop={message.stop_reason}")
         raise
+    # 출처는 웹검색 인용에서 직접 채운다(모델이 sources를 비우는 경우 대비)
+    srcs = collect_sources(message)
+    if srcs:
+        report["sources"] = srcs[:18]
     return report, searches
 
 
