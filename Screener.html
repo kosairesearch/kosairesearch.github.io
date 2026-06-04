@@ -594,7 +594,7 @@ KOSi18n.register({
         <div class="selmenu glass" id="pageSizeMenu">
           <button type="button" data-v="10" class="active">10개씩</button>
           <button type="button" data-v="25">25개씩</button>
-          <button type="button" data-v="50">전체</button>
+          <button type="button" data-v="50">50개씩</button>
         </div>
       </div>
     </div>
@@ -674,7 +674,7 @@ const KOS={
   pct:n=>(n>0?'+':'')+n.toFixed(2)+'%'
 };
 function repaintControls(){
-  const lab=v=>EN()?(v===50?'All':v+' / page'):(v===50?'전체':v+'개씩');
+  const lab=v=>EN()?v+' / page':v+'개씩';
   const pl=document.getElementById('pageSizeLabel'); if(pl) pl.textContent=lab(state.pageSize);
   document.querySelectorAll('#pageSizeMenu button').forEach(b=>{ b.textContent=lab(+b.dataset.v); });
 }
