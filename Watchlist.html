@@ -175,6 +175,12 @@ body::before{content:"";position:fixed;inset:0;z-index:-1;pointer-events:none;
   .page-head{padding:28px 0 4px}
   .foot-grid{grid-template-columns:1fr 1fr;gap:24px}.foot-brand{grid-column:1/-1}.foot-bottom{flex-direction:column;gap:8px}
 }
+@media (max-width:560px){
+  /* 정렬 pill이 화면 폭을 넘기지 않게: 정렬 영역 한 줄 차지 + 버튼 균등 분배 */
+  .sortwrap{width:100%;flex-wrap:nowrap}
+  .seg{flex:1;min-width:0}
+  .seg button{flex:1 1 0;min-width:0;padding:8px 2px;font-size:12px}
+}
 </style>
 <script src="data/stocks.js"></script>
 <script src="data/reports.js"></script>
