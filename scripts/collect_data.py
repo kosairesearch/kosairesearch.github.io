@@ -623,8 +623,14 @@ def collect_krx_cache(date):
 
     print(f"  [krx-cache] {used} CSV {len(df)}행 로드")
     results = {}
+    skipped = 0
     for _, row in df.iterrows():
         code = str(row.get("Code", "")).zfill(6)
+        nm = str(row.get("Name", ""))
+        # 우선주(이름이 '우'/'우B'로 끝남)·스팩 제외 — 회사 리서치 universe에서 노이즈
+        if nm.endswith("우") or nm.endswith("우B") or "스팩" in nm:
+            skipped += 1
+            continue
         try:
             price = int(row["Close"]) if pd.notna(row["Close"]) else 0
         except Exception:
@@ -654,7 +660,7 @@ def collect_krx_cache(date):
             "mcap": round(gf("Marcap") / 1e12, 2),
             "shares": gi("Stocks"),
         }
-    print(f"  [krx-cache] 가격 유효 {len(results)}개 종목")
+    print(f"  [krx-cache] 가격 유효 {len(results)}개 종목 (우선주·스팩 {skipped}개 제외)")
     return results
 
 
@@ -1040,9 +1046,16 @@ def load_existing_stocks():
         return {}
 
 
+def _is_noise(name):
+    """우선주('우'/'우B'로 끝남)·스팩 — 회사 리서치 universe에서 제외 대상."""
+    n = str(name or "")
+    return n.endswith("우") or n.endswith("우B") or ("스팩" in n)
+
+
 def build_output(results, date):
     """웹사이트용 JS 파일을 생성합니다. (시총>0 종목 전부 보존 — 페이지네이션)"""
-    valid = [s for s in results.values() if s["price"] > 0]
+    # 우선주·스팩은 기존 데이터에 남아 있어도 출력에서 제외(병합 보존 방지)
+    valid = [s for s in results.values() if s["price"] > 0 and not _is_noise(s.get("name", ""))]
     # 시총>0 이고 비현실적 값(>5,000조; 국내 최대 삼성전자 ~2,100조) 제외
     with_mcap = [s for s in valid if 0 < (s.get("mcap") or 0) < 5000]
 
