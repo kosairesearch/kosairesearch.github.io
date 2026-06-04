@@ -986,11 +986,13 @@ def enrich_with_dart(results):
             except Exception:
                 pass
 
-            # 상장주식수·시장구분 → 시가총액(가격 × 보통주 발행주식수)
+            # 시장구분 보강. 시총/주식수는 KRX 캐시값이 정확하므로,
+            # 캐시에 이미 시총이 있으면 DART로 덮어쓰지 않는다(DART 주식수 오류로
+            # 시총이 깨지는 것 방지). 캐시에 없을 때(폴백 경로)만 DART로 채움.
             common_sh, total_sh, market = get_dart_shares(dart, corp_code, debug_info)
             if market:
                 results[ticker]["market"] = market
-            if common_sh > 0:
+            if common_sh > 0 and not (results[ticker].get("mcap") or 0) > 0:
                 results[ticker]["shares"] = common_sh
                 results[ticker]["mcap"]   = round(price * common_sh / 1e12, 2)
 
@@ -1041,7 +1043,8 @@ def load_existing_stocks():
 def build_output(results, date):
     """웹사이트용 JS 파일을 생성합니다. (시총>0 종목 전부 보존 — 페이지네이션)"""
     valid = [s for s in results.values() if s["price"] > 0]
-    with_mcap = [s for s in valid if (s.get("mcap") or 0) > 0]
+    # 시총>0 이고 비현실적 값(>5,000조; 국내 최대 삼성전자 ~2,100조) 제외
+    with_mcap = [s for s in valid if 0 < (s.get("mcap") or 0) < 5000]
 
     # 시총 있는 종목이 충분하면 시총순 전체 보존(0조 종목은 출력 제외).
     if with_mcap and len(with_mcap) >= 0.4 * len(valid):
