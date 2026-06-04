@@ -577,7 +577,7 @@ const REPORTS = window.KOS_LIVE_DATA?.stocks || REPORTS_DEFAULT;
 const rcats=r=>(r.categories&&r.categories.length?r.categories:[r.sector]);
 const SECTORS=['전체',...[...new Set(REPORTS.flatMap(rcats))]];
 
-const state={q:'',sector:'전체',sort:'mcap',expanded:false,page:1,pageSize:24};
+const state={q:'',sector:'전체',sort:'mcap',expanded:false,page:1,pageSize:20};
 const rowsEl=document.getElementById('rows'),rlEl=document.getElementById('rl'),emptyEl=document.getElementById('empty');
 
 const VISIBLE_CHIPS=7;
