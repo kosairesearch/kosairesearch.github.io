@@ -21,6 +21,8 @@ DART_API_KEY = os.getenv("DART_API_KEY")
 FULL_UNIVERSE = os.getenv("FULL_UNIVERSE", "") == "1"
 # 0이면 무제한. 디버그/부분 수집용 상한.
 UNIVERSE_LIMIT = int(os.getenv("UNIVERSE_LIMIT", "0") or "0")
+# 한 번에 DART 영문명·업종 보강할 최대 종목 수(시총순). 미보강분만 대상.
+ENRICH_TOP = int(os.getenv("ENRICH_TOP", "3000") or "3000")
 
 # GitHub Actions Step Summary 지원
 STEP_SUMMARY = os.getenv("GITHUB_STEP_SUMMARY")
@@ -965,11 +967,11 @@ def enrich_with_dart(results):
         return results
 
     debug_info = {}
-    # 시총순 상위 550개 DART 보강(영문명·업종). 리포트 대상(시총 상위 500위권)을
-    # 모두 커버하도록 거래대금순이 아닌 시총순으로 선정(저유동 대형주 누락 방지).
+    # 영문명(name_en)이 아직 없는 종목만 시총순으로 보강(상한 ENRICH_TOP).
+    # 이미 보강된 종목은 main에서 기존값을 이월하므로 매번 다시 안 함 → 수렴.
     ranked = sorted(results.values(), key=lambda x: (x.get("mcap", 0) or 0), reverse=True)
-    targets = ranked[:550]
-    print(f"  [DART] {len(targets)}개 종목 영문명·주식수(시총) 수집 중...")
+    targets = [s for s in ranked if not s.get("name_en")][:ENRICH_TOP]
+    print(f"  [DART] 영문명 미보강 {len(targets)}개 종목 DART 수집 중...")
 
     for i, stock in enumerate(targets):
         ticker = stock["ticker"]
@@ -1104,6 +1106,20 @@ def main():
 
     results = collect_pykrx(date)
     log_summary(f"- pykrx 수집: {len(results)}개 종목")
+
+    # 안정 필드(영문명·업종코드) 이월: 캐시 수집엔 없으므로 기존 stocks.js 값을 미리
+    # 채워, 이미 보강된 종목은 DART 재호출/유실 없이 보존하고 미보강분만 새로 수집.
+    _existing = load_existing_stocks()
+    carried = 0
+    for tk, fresh in results.items():
+        old = _existing.get(tk)
+        if not old:
+            continue
+        if not fresh.get("name_en") and old.get("name_en"):
+            fresh["name_en"] = old["name_en"]; carried += 1
+        if not fresh.get("induty_code") and old.get("induty_code"):
+            fresh["induty_code"] = old["induty_code"]
+    log_summary(f"- 영문명 이월: {carried}개")
 
     results = enrich_with_dart(results)
 
