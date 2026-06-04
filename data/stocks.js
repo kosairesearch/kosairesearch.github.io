@@ -1,6 +1,6 @@
 // KOS ai — 자동 생성 데이터 파일. 직접 수정하지 마세요.
 window.KOS_LIVE_DATA = {
-  "lastUpdated": "2026-06-04 13:15",
+  "lastUpdated": "2026-06-04 13:30",
   "dataDate": "20260604",
   "stocks": [
     {
@@ -60,23 +60,6 @@ window.KOS_LIVE_DATA = {
       "rank": 3
     },
     {
-      "ticker": "005935",
-      "name": "삼성전자우",
-      "name_en": "",
-      "market": "코스피",
-      "sector": "기타",
-      "price": 223500,
-      "change": -3.46,
-      "volume": 3875954,
-      "trading_value": 869273008750,
-      "mcap": 179.33,
-      "shares": 802371203,
-      "categories": [
-        "기타"
-      ],
-      "rank": 4
-    },
-    {
       "ticker": "005380",
       "name": "현대차",
       "name_en": "HYUNDAI MOTOR CO",
@@ -93,7 +76,7 @@ window.KOS_LIVE_DATA = {
         "자동차",
         "자율주행·전기차"
       ],
-      "rank": 5
+      "rank": 4
     },
     {
       "ticker": "009150",
@@ -111,7 +94,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "전자·부품"
       ],
-      "rank": 6
+      "rank": 5
     },
     {
       "ticker": "373220",
@@ -129,7 +112,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "2차전지"
       ],
-      "rank": 7
+      "rank": 6
     },
     {
       "ticker": "028260",
@@ -147,7 +130,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "건설·건자재"
       ],
-      "rank": 8
+      "rank": 7
     },
     {
       "ticker": "032830",
@@ -165,7 +148,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "보험"
       ],
-      "rank": 9
+      "rank": 8
     },
     {
       "ticker": "329180",
@@ -183,7 +166,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "조선"
       ],
-      "rank": 10
+      "rank": 9
     },
     {
       "ticker": "012330",
@@ -202,7 +185,7 @@ window.KOS_LIVE_DATA = {
         "자동차",
         "자율주행·전기차"
       ],
-      "rank": 11
+      "rank": 10
     },
     {
       "ticker": "000270",
@@ -221,7 +204,7 @@ window.KOS_LIVE_DATA = {
         "자동차",
         "자율주행·전기차"
       ],
-      "rank": 12
+      "rank": 11
     },
     {
       "ticker": "034020",
@@ -241,7 +224,7 @@ window.KOS_LIVE_DATA = {
         "원전·전력",
         "수소·신재생"
       ],
-      "rank": 13
+      "rank": 12
     },
     {
       "ticker": "207940",
@@ -260,7 +243,7 @@ window.KOS_LIVE_DATA = {
         "바이오·제약",
         "바이오·신약"
       ],
-      "rank": 14
+      "rank": 13
     },
     {
       "ticker": "105560",
@@ -278,7 +261,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "금융"
       ],
-      "rank": 15
+      "rank": 14
     },
     {
       "ticker": "066570",
@@ -296,7 +279,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "전자·부품"
       ],
-      "rank": 16
+      "rank": 15
     },
     {
       "ticker": "012450",
@@ -315,7 +298,7 @@ window.KOS_LIVE_DATA = {
         "항공·방산",
         "우주·방산"
       ],
-      "rank": 17
+      "rank": 16
     },
     {
       "ticker": "034730",
@@ -333,7 +316,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "지주"
       ],
-      "rank": 18
+      "rank": 17
     },
     {
       "ticker": "006400",
@@ -351,7 +334,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "2차전지"
       ],
-      "rank": 19
+      "rank": 18
     },
     {
       "ticker": "055550",
@@ -369,7 +352,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "금융"
       ],
-      "rank": 20
+      "rank": 19
     },
     {
       "ticker": "035420",
@@ -388,7 +371,7 @@ window.KOS_LIVE_DATA = {
         "IT·소프트웨어",
         "인공지능(AI)"
       ],
-      "rank": 21
+      "rank": 20
     },
     {
       "ticker": "068270",
@@ -407,7 +390,7 @@ window.KOS_LIVE_DATA = {
         "바이오·제약",
         "바이오·신약"
       ],
-      "rank": 22
+      "rank": 21
     },
     {
       "ticker": "010120",
@@ -425,7 +408,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "전기장비"
       ],
-      "rank": 23
+      "rank": 22
     },
     {
       "ticker": "267260",
@@ -444,7 +427,7 @@ window.KOS_LIVE_DATA = {
         "전기장비",
         "원전·전력"
       ],
-      "rank": 24
+      "rank": 23
     },
     {
       "ticker": "042660",
@@ -462,7 +445,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "조선"
       ],
-      "rank": 25
+      "rank": 24
     },
     {
       "ticker": "298040",
@@ -480,7 +463,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "전기장비"
       ],
-      "rank": 26
+      "rank": 25
     },
     {
       "ticker": "086790",
@@ -498,7 +481,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "금융"
       ],
-      "rank": 27
+      "rank": 26
     },
     {
       "ticker": "006800",
@@ -516,7 +499,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "금융"
       ],
-      "rank": 28
+      "rank": 27
     },
     {
       "ticker": "000810",
@@ -534,7 +517,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "보험"
       ],
-      "rank": 29
+      "rank": 28
     },
     {
       "ticker": "005490",
@@ -552,7 +535,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "철강·금속"
       ],
-      "rank": 30
+      "rank": 29
     },
     {
       "ticker": "000150",
@@ -570,7 +553,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "지주"
       ],
-      "rank": 31
+      "rank": 30
     },
     {
       "ticker": "042700",
@@ -589,7 +572,7 @@ window.KOS_LIVE_DATA = {
         "반도체",
         "인공지능(AI)"
       ],
-      "rank": 32
+      "rank": 31
     },
     {
       "ticker": "011070",
@@ -607,7 +590,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "전자·부품"
       ],
-      "rank": 33
+      "rank": 32
     },
     {
       "ticker": "010130",
@@ -625,7 +608,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "철강·금속"
       ],
-      "rank": 34
+      "rank": 33
     },
     {
       "ticker": "009540",
@@ -643,7 +626,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "조선"
       ],
-      "rank": 35
+      "rank": 34
     },
     {
       "ticker": "010140",
@@ -661,7 +644,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "조선"
       ],
-      "rank": 36
+      "rank": 35
     },
     {
       "ticker": "015760",
@@ -680,7 +663,7 @@ window.KOS_LIVE_DATA = {
         "에너지·전력",
         "원전·전력"
       ],
-      "rank": 37
+      "rank": 36
     },
     {
       "ticker": "051910",
@@ -698,7 +681,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "화학"
       ],
-      "rank": 38
+      "rank": 37
     },
     {
       "ticker": "017670",
@@ -716,7 +699,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "통신"
       ],
-      "rank": 39
+      "rank": 38
     },
     {
       "ticker": "307950",
@@ -734,7 +717,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "게임"
       ],
-      "rank": 40
+      "rank": 39
     },
     {
       "ticker": "316140",
@@ -752,7 +735,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "금융"
       ],
-      "rank": 41
+      "rank": 40
     },
     {
       "ticker": "267250",
@@ -770,7 +753,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "지주"
       ],
-      "rank": 42
+      "rank": 41
     },
     {
       "ticker": "064350",
@@ -789,7 +772,7 @@ window.KOS_LIVE_DATA = {
         "항공·방산",
         "우주·방산"
       ],
-      "rank": 43
+      "rank": 42
     },
     {
       "ticker": "018260",
@@ -808,7 +791,7 @@ window.KOS_LIVE_DATA = {
         "IT·소프트웨어",
         "인공지능(AI)"
       ],
-      "rank": 44
+      "rank": 43
     },
     {
       "ticker": "003550",
@@ -826,7 +809,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "지주"
       ],
-      "rank": 45
+      "rank": 44
     },
     {
       "ticker": "096770",
@@ -844,7 +827,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "정유"
       ],
-      "rank": 46
+      "rank": 45
     },
     {
       "ticker": "003670",
@@ -862,7 +845,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "2차전지"
       ],
-      "rank": 47
+      "rank": 46
     },
     {
       "ticker": "247540",
@@ -880,7 +863,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "2차전지"
       ],
-      "rank": 48
+      "rank": 47
     },
     {
       "ticker": "196170",
@@ -899,7 +882,7 @@ window.KOS_LIVE_DATA = {
         "바이오·제약",
         "바이오·신약"
       ],
-      "rank": 49
+      "rank": 48
     },
     {
       "ticker": "035720",
@@ -918,7 +901,7 @@ window.KOS_LIVE_DATA = {
         "IT·소프트웨어",
         "인공지능(AI)"
       ],
-      "rank": 50
+      "rank": 49
     },
     {
       "ticker": "033780",
@@ -936,7 +919,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "식음료"
       ],
-      "rank": 51
+      "rank": 50
     },
     {
       "ticker": "011200",
@@ -954,7 +937,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "운송·물류"
       ],
-      "rank": 52
+      "rank": 51
     },
     {
       "ticker": "272210",
@@ -972,7 +955,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "전자·부품"
       ],
-      "rank": 53
+      "rank": 52
     },
     {
       "ticker": "138040",
@@ -990,7 +973,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "금융"
       ],
-      "rank": 54
+      "rank": 53
     },
     {
       "ticker": "086520",
@@ -1008,7 +991,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "2차전지"
       ],
-      "rank": 55
+      "rank": 54
     },
     {
       "ticker": "024110",
@@ -1026,7 +1009,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "금융"
       ],
-      "rank": 56
+      "rank": 55
     },
     {
       "ticker": "086280",
@@ -1044,7 +1027,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "운송·물류"
       ],
-      "rank": 57
+      "rank": 56
     },
     {
       "ticker": "079550",
@@ -1063,7 +1046,7 @@ window.KOS_LIVE_DATA = {
         "항공·방산",
         "우주·방산"
       ],
-      "rank": 58
+      "rank": 57
     },
     {
       "ticker": "278470",
@@ -1081,7 +1064,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "화장품"
       ],
-      "rank": 59
+      "rank": 58
     },
     {
       "ticker": "000720",
@@ -1099,7 +1082,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "건설·건자재"
       ],
-      "rank": 60
+      "rank": 59
     },
     {
       "ticker": "071050",
@@ -1117,7 +1100,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "금융"
       ],
-      "rank": 61
+      "rank": 60
     },
     {
       "ticker": "006260",
@@ -1135,7 +1118,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "지주"
       ],
-      "rank": 62
+      "rank": 61
     },
     {
       "ticker": "277810",
@@ -1155,7 +1138,7 @@ window.KOS_LIVE_DATA = {
         "로봇",
         "인공지능(AI)"
       ],
-      "rank": 63
+      "rank": 62
     },
     {
       "ticker": "030200",
@@ -1173,7 +1156,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "통신"
       ],
-      "rank": 64
+      "rank": 63
     },
     {
       "ticker": "047810",
@@ -1192,7 +1175,7 @@ window.KOS_LIVE_DATA = {
         "항공·방산",
         "우주·방산"
       ],
-      "rank": 65
+      "rank": 64
     },
     {
       "ticker": "010950",
@@ -1210,7 +1193,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "정유"
       ],
-      "rank": 66
+      "rank": 65
     },
     {
       "ticker": "064400",
@@ -1228,7 +1211,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "IT·소프트웨어"
       ],
-      "rank": 67
+      "rank": 66
     },
     {
       "ticker": "259960",
@@ -1246,7 +1229,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "게임"
       ],
-      "rank": 68
+      "rank": 67
     },
     {
       "ticker": "036930",
@@ -1264,7 +1247,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기계·장비"
       ],
-      "rank": 69
+      "rank": 68
     },
     {
       "ticker": "005940",
@@ -1282,7 +1265,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "금융"
       ],
-      "rank": 70
+      "rank": 69
     },
     {
       "ticker": "0126Z0",
@@ -1299,7 +1282,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 71
+      "rank": 70
     },
     {
       "ticker": "016360",
@@ -1317,7 +1300,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "금융"
       ],
-      "rank": 72
+      "rank": 71
     },
     {
       "ticker": "323410",
@@ -1335,7 +1318,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "금융"
       ],
-      "rank": 73
+      "rank": 72
     },
     {
       "ticker": "047050",
@@ -1353,7 +1336,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "유통·소비재"
       ],
-      "rank": 74
+      "rank": 73
     },
     {
       "ticker": "443060",
@@ -1371,7 +1354,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "건설·건자재"
       ],
-      "rank": 75
+      "rank": 74
     },
     {
       "ticker": "454910",
@@ -1391,7 +1374,7 @@ window.KOS_LIVE_DATA = {
         "로봇",
         "인공지능(AI)"
       ],
-      "rank": 76
+      "rank": 75
     },
     {
       "ticker": "007660",
@@ -1409,7 +1392,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "전자·부품"
       ],
-      "rank": 77
+      "rank": 76
     },
     {
       "ticker": "039490",
@@ -1427,7 +1410,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "금융"
       ],
-      "rank": 78
+      "rank": 77
     },
     {
       "ticker": "028050",
@@ -1445,24 +1428,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "건설·건자재"
       ],
-      "rank": 79
-    },
-    {
-      "ticker": "005387",
-      "name": "현대차2우B",
-      "name_en": "",
-      "market": "코스피",
-      "sector": "기타",
-      "price": 270500,
-      "change": -4.08,
-      "volume": 128649,
-      "trading_value": 34895865000,
-      "mcap": 9.46,
-      "shares": 34963930,
-      "categories": [
-        "기타"
-      ],
-      "rank": 80
+      "rank": 78
     },
     {
       "ticker": "005830",
@@ -1480,7 +1446,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "보험"
       ],
-      "rank": 81
+      "rank": 79
     },
     {
       "ticker": "047040",
@@ -1498,7 +1464,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "건설·건자재"
       ],
-      "rank": 82
+      "rank": 80
     },
     {
       "ticker": "352820",
@@ -1517,7 +1483,7 @@ window.KOS_LIVE_DATA = {
         "미디어·엔터",
         "K-콘텐츠·엔터"
       ],
-      "rank": 83
+      "rank": 81
     },
     {
       "ticker": "003490",
@@ -1535,7 +1501,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "운송·물류"
       ],
-      "rank": 84
+      "rank": 82
     },
     {
       "ticker": "950160",
@@ -1553,7 +1519,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "바이오·제약"
       ],
-      "rank": 85
+      "rank": 83
     },
     {
       "ticker": "161390",
@@ -1571,7 +1537,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "자동차"
       ],
-      "rank": 86
+      "rank": 84
     },
     {
       "ticker": "000880",
@@ -1589,7 +1555,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "화학"
       ],
-      "rank": 87
+      "rank": 85
     },
     {
       "ticker": "003230",
@@ -1607,7 +1573,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "식음료"
       ],
-      "rank": 88
+      "rank": 86
     },
     {
       "ticker": "001440",
@@ -1625,7 +1591,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "전기장비"
       ],
-      "rank": 89
+      "rank": 87
     },
     {
       "ticker": "353200",
@@ -1643,7 +1609,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "전자·부품"
       ],
-      "rank": 90
+      "rank": 88
     },
     {
       "ticker": "034220",
@@ -1661,7 +1627,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "전자·부품"
       ],
-      "rank": 91
+      "rank": 89
     },
     {
       "ticker": "180640",
@@ -1679,7 +1645,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "지주"
       ],
-      "rank": 92
+      "rank": 90
     },
     {
       "ticker": "000990",
@@ -1697,7 +1663,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "반도체"
       ],
-      "rank": 93
+      "rank": 91
     },
     {
       "ticker": "058470",
@@ -1715,7 +1681,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "반도체"
       ],
-      "rank": 94
+      "rank": 92
     },
     {
       "ticker": "000250",
@@ -1733,7 +1699,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "바이오·제약"
       ],
-      "rank": 95
+      "rank": 93
     },
     {
       "ticker": "326030",
@@ -1751,7 +1717,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "바이오·제약"
       ],
-      "rank": 96
+      "rank": 94
     },
     {
       "ticker": "078930",
@@ -1769,7 +1735,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "지주"
       ],
-      "rank": 97
+      "rank": 95
     },
     {
       "ticker": "267270",
@@ -1787,7 +1753,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기계·장비"
       ],
-      "rank": 98
+      "rank": 96
     },
     {
       "ticker": "028300",
@@ -1805,7 +1771,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "바이오·제약"
       ],
-      "rank": 99
+      "rank": 97
     },
     {
       "ticker": "062040",
@@ -1823,7 +1789,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "전기장비"
       ],
-      "rank": 100
+      "rank": 98
     },
     {
       "ticker": "009830",
@@ -1841,7 +1807,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "화학"
       ],
-      "rank": 101
+      "rank": 99
     },
     {
       "ticker": "032640",
@@ -1859,7 +1825,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "통신"
       ],
-      "rank": 102
+      "rank": 100
     },
     {
       "ticker": "021240",
@@ -1877,7 +1843,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 103
+      "rank": 101
     },
     {
       "ticker": "090430",
@@ -1895,7 +1861,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "화장품"
       ],
-      "rank": 104
+      "rank": 102
     },
     {
       "ticker": "000100",
@@ -1913,7 +1879,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "바이오·제약"
       ],
-      "rank": 105
+      "rank": 103
     },
     {
       "ticker": "241560",
@@ -1931,7 +1897,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기계·장비"
       ],
-      "rank": 106
+      "rank": 104
     },
     {
       "ticker": "128940",
@@ -1949,41 +1915,25 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "바이오·제약"
       ],
-      "rank": 107
+      "rank": 105
     },
     {
       "ticker": "377300",
       "name": "카카오페이",
-      "name_en": "",
+      "name_en": "kakaopay Corp.",
       "market": "코스피",
-      "sector": "기타",
+      "sector": "금융",
       "price": 46950,
       "change": 0.75,
       "volume": 93818,
       "trading_value": 4332459325,
       "mcap": 6.35,
       "shares": 135256275,
+      "induty_code": "66199",
       "categories": [
-        "기타"
+        "금융"
       ],
-      "rank": 108
-    },
-    {
-      "ticker": "005385",
-      "name": "현대차우",
-      "name_en": "",
-      "market": "코스피",
-      "sector": "기타",
-      "price": 270500,
-      "change": -4.08,
-      "volume": 72902,
-      "trading_value": 19797062250,
-      "mcap": 6.31,
-      "shares": 23340960,
-      "categories": [
-        "기타"
-      ],
-      "rank": 109
+      "rank": 106
     },
     {
       "ticker": "036570",
@@ -2001,7 +1951,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "게임"
       ],
-      "rank": 110
+      "rank": 107
     },
     {
       "ticker": "087010",
@@ -2019,7 +1969,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "바이오·제약"
       ],
-      "rank": 111
+      "rank": 108
     },
     {
       "ticker": "240810",
@@ -2037,7 +1987,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "반도체"
       ],
-      "rank": 112
+      "rank": 109
     },
     {
       "ticker": "004170",
@@ -2055,7 +2005,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "유통·소비재"
       ],
-      "rank": 113
+      "rank": 110
     },
     {
       "ticker": "039030",
@@ -2073,7 +2023,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기계·장비"
       ],
-      "rank": 114
+      "rank": 111
     },
     {
       "ticker": "066970",
@@ -2091,7 +2041,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "2차전지"
       ],
-      "rank": 115
+      "rank": 112
     },
     {
       "ticker": "298380",
@@ -2109,7 +2059,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "바이오·제약"
       ],
-      "rank": 116
+      "rank": 113
     },
     {
       "ticker": "011790",
@@ -2127,7 +2077,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "화학"
       ],
-      "rank": 117
+      "rank": 114
     },
     {
       "ticker": "010060",
@@ -2145,7 +2095,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "화학"
       ],
-      "rank": 118
+      "rank": 115
     },
     {
       "ticker": "440110",
@@ -2163,7 +2113,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "반도체"
       ],
-      "rank": 119
+      "rank": 116
     },
     {
       "ticker": "000500",
@@ -2181,7 +2131,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "전기장비"
       ],
-      "rank": 120
+      "rank": 117
     },
     {
       "ticker": "336260",
@@ -2199,7 +2149,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "전기장비"
       ],
-      "rank": 121
+      "rank": 118
     },
     {
       "ticker": "141080",
@@ -2217,7 +2167,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "부동산·기타서비스"
       ],
-      "rank": 122
+      "rank": 119
     },
     {
       "ticker": "138930",
@@ -2235,7 +2185,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "지주"
       ],
-      "rank": 123
+      "rank": 120
     },
     {
       "ticker": "029780",
@@ -2252,7 +2202,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "금융"
       ],
-      "rank": 124
+      "rank": 121
     },
     {
       "ticker": "001040",
@@ -2270,7 +2220,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "지주"
       ],
-      "rank": 125
+      "rank": 122
     },
     {
       "ticker": "088980",
@@ -2288,7 +2238,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "금융"
       ],
-      "rank": 126
+      "rank": 123
     },
     {
       "ticker": "271560",
@@ -2306,7 +2256,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "식음료"
       ],
-      "rank": 127
+      "rank": 124
     },
     {
       "ticker": "004020",
@@ -2324,7 +2274,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "철강·금속"
       ],
-      "rank": 128
+      "rank": 125
     },
     {
       "ticker": "052690",
@@ -2342,7 +2292,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "건설·건자재"
       ],
-      "rank": 129
+      "rank": 126
     },
     {
       "ticker": "002380",
@@ -2360,7 +2310,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "화학"
       ],
-      "rank": 130
+      "rank": 127
     },
     {
       "ticker": "018880",
@@ -2378,7 +2328,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기계·장비"
       ],
-      "rank": 131
+      "rank": 128
     },
     {
       "ticker": "108490",
@@ -2396,7 +2346,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기계·장비"
       ],
-      "rank": 132
+      "rank": 129
     },
     {
       "ticker": "022100",
@@ -2414,7 +2364,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "건설·건자재"
       ],
-      "rank": 133
+      "rank": 130
     },
     {
       "ticker": "175330",
@@ -2432,7 +2382,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "지주"
       ],
-      "rank": 134
+      "rank": 131
     },
     {
       "ticker": "082740",
@@ -2450,7 +2400,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기계·장비"
       ],
-      "rank": 135
+      "rank": 132
     },
     {
       "ticker": "095340",
@@ -2468,7 +2418,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "유통·소비재"
       ],
-      "rank": 136
+      "rank": 133
     },
     {
       "ticker": "023530",
@@ -2486,7 +2436,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "유통·소비재"
       ],
-      "rank": 137
+      "rank": 134
     },
     {
       "ticker": "178320",
@@ -2504,7 +2454,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "전기장비"
       ],
-      "rank": 138
+      "rank": 135
     },
     {
       "ticker": "214370",
@@ -2521,7 +2471,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 139
+      "rank": 136
     },
     {
       "ticker": "222800",
@@ -2539,7 +2489,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "전자·부품"
       ],
-      "rank": 140
+      "rank": 137
     },
     {
       "ticker": "088350",
@@ -2557,7 +2507,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "보험"
       ],
-      "rank": 141
+      "rank": 138
     },
     {
       "ticker": "103590",
@@ -2575,7 +2525,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "전기장비"
       ],
-      "rank": 142
+      "rank": 139
     },
     {
       "ticker": "310210",
@@ -2593,7 +2543,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "부동산·기타서비스"
       ],
-      "rank": 143
+      "rank": 140
     },
     {
       "ticker": "450080",
@@ -2611,7 +2561,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "2차전지"
       ],
-      "rank": 144
+      "rank": 141
     },
     {
       "ticker": "403870",
@@ -2629,7 +2579,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기계·장비"
       ],
-      "rank": 145
+      "rank": 142
     },
     {
       "ticker": "319400",
@@ -2647,7 +2597,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기계·장비"
       ],
-      "rank": 146
+      "rank": 143
     },
     {
       "ticker": "347850",
@@ -2665,7 +2615,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "부동산·기타서비스"
       ],
-      "rank": 147
+      "rank": 144
     },
     {
       "ticker": "051900",
@@ -2683,7 +2633,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "화장품"
       ],
-      "rank": 148
+      "rank": 145
     },
     {
       "ticker": "489790",
@@ -2701,7 +2651,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "전자·부품"
       ],
-      "rank": 149
+      "rank": 146
     },
     {
       "ticker": "111770",
@@ -2718,7 +2668,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 150
+      "rank": 147
     },
     {
       "ticker": "080220",
@@ -2736,7 +2686,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "반도체"
       ],
-      "rank": 151
+      "rank": 148
     },
     {
       "ticker": "043260",
@@ -2754,7 +2704,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "전자·부품"
       ],
-      "rank": 152
+      "rank": 149
     },
     {
       "ticker": "251270",
@@ -2772,7 +2722,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "게임"
       ],
-      "rank": 153
+      "rank": 150
     },
     {
       "ticker": "084370",
@@ -2790,7 +2740,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기계·장비"
       ],
-      "rank": 154
+      "rank": 151
     },
     {
       "ticker": "012510",
@@ -2807,7 +2757,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 155
+      "rank": 152
     },
     {
       "ticker": "011170",
@@ -2825,7 +2775,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "화학"
       ],
-      "rank": 156
+      "rank": 153
     },
     {
       "ticker": "319660",
@@ -2843,7 +2793,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기계·장비"
       ],
-      "rank": 157
+      "rank": 154
     },
     {
       "ticker": "011780",
@@ -2860,7 +2810,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 158
+      "rank": 155
     },
     {
       "ticker": "005850",
@@ -2878,7 +2828,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "자동차"
       ],
-      "rank": 159
+      "rank": 156
     },
     {
       "ticker": "226950",
@@ -2896,7 +2846,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "부동산·기타서비스"
       ],
-      "rank": 160
+      "rank": 157
     },
     {
       "ticker": "302440",
@@ -2913,7 +2863,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 161
+      "rank": 158
     },
     {
       "ticker": "035250",
@@ -2931,7 +2881,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "호텔·레저"
       ],
-      "rank": 162
+      "rank": 159
     },
     {
       "ticker": "145020",
@@ -2949,7 +2899,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "바이오·제약"
       ],
-      "rank": 163
+      "rank": 160
     },
     {
       "ticker": "036460",
@@ -2966,7 +2916,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 164
+      "rank": 161
     },
     {
       "ticker": "004800",
@@ -2983,7 +2933,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 165
+      "rank": 162
     },
     {
       "ticker": "020150",
@@ -3001,7 +2951,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "전자·부품"
       ],
-      "rank": 166
+      "rank": 163
     },
     {
       "ticker": "010170",
@@ -3019,7 +2969,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "전기장비"
       ],
-      "rank": 167
+      "rank": 164
     },
     {
       "ticker": "014680",
@@ -3037,7 +2987,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "화학"
       ],
-      "rank": 168
+      "rank": 165
     },
     {
       "ticker": "214450",
@@ -3055,7 +3005,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "바이오·제약"
       ],
-      "rank": 169
+      "rank": 166
     },
     {
       "ticker": "357780",
@@ -3073,7 +3023,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "반도체"
       ],
-      "rank": 170
+      "rank": 167
     },
     {
       "ticker": "005290",
@@ -3091,7 +3041,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "화학"
       ],
-      "rank": 171
+      "rank": 168
     },
     {
       "ticker": "064760",
@@ -3109,7 +3059,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "건설·건자재"
       ],
-      "rank": 172
+      "rank": 169
     },
     {
       "ticker": "001720",
@@ -3126,7 +3076,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 173
+      "rank": 170
     },
     {
       "ticker": "001450",
@@ -3144,7 +3094,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "보험"
       ],
-      "rank": 174
+      "rank": 171
     },
     {
       "ticker": "097950",
@@ -3162,7 +3112,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "식음료"
       ],
-      "rank": 175
+      "rank": 172
     },
     {
       "ticker": "067310",
@@ -3180,7 +3130,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "반도체"
       ],
-      "rank": 176
+      "rank": 173
     },
     {
       "ticker": "017800",
@@ -3198,7 +3148,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기계·장비"
       ],
-      "rank": 177
+      "rank": 174
     },
     {
       "ticker": "007810",
@@ -3216,7 +3166,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "전자·부품"
       ],
-      "rank": 178
+      "rank": 175
     },
     {
       "ticker": "031210",
@@ -3233,7 +3183,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 179
+      "rank": 176
     },
     {
       "ticker": "131970",
@@ -3251,7 +3201,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "부동산·기타서비스"
       ],
-      "rank": 180
+      "rank": 177
     },
     {
       "ticker": "069960",
@@ -3269,7 +3219,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "유통·소비재"
       ],
-      "rank": 181
+      "rank": 178
     },
     {
       "ticker": "009420",
@@ -3287,7 +3237,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "바이오·제약"
       ],
-      "rank": 182
+      "rank": 179
     },
     {
       "ticker": "214150",
@@ -3305,7 +3255,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "전자·부품"
       ],
-      "rank": 183
+      "rank": 180
     },
     {
       "ticker": "139130",
@@ -3322,7 +3272,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 184
+      "rank": 181
     },
     {
       "ticker": "383220",
@@ -3339,7 +3289,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 185
+      "rank": 182
     },
     {
       "ticker": "012750",
@@ -3356,7 +3306,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 186
+      "rank": 183
     },
     {
       "ticker": "375500",
@@ -3374,7 +3324,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "건설·건자재"
       ],
-      "rank": 187
+      "rank": 184
     },
     {
       "ticker": "028670",
@@ -3392,7 +3342,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "운송·물류"
       ],
-      "rank": 188
+      "rank": 185
     },
     {
       "ticker": "031980",
@@ -3410,7 +3360,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기계·장비"
       ],
-      "rank": 189
+      "rank": 186
     },
     {
       "ticker": "263750",
@@ -3428,7 +3378,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "게임"
       ],
-      "rank": 190
+      "rank": 187
     },
     {
       "ticker": "204320",
@@ -3446,7 +3396,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "자동차"
       ],
-      "rank": 191
+      "rank": 188
     },
     {
       "ticker": "457190",
@@ -3464,7 +3414,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "화학"
       ],
-      "rank": 192
+      "rank": 189
     },
     {
       "ticker": "032820",
@@ -3482,7 +3432,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "전기장비"
       ],
-      "rank": 193
+      "rank": 190
     },
     {
       "ticker": "095610",
@@ -3500,7 +3450,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기계·장비"
       ],
-      "rank": 194
+      "rank": 191
     },
     {
       "ticker": "139480",
@@ -3518,7 +3468,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "유통·소비재"
       ],
-      "rank": 195
+      "rank": 192
     },
     {
       "ticker": "237690",
@@ -3536,7 +3486,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "바이오·제약"
       ],
-      "rank": 196
+      "rank": 193
     },
     {
       "ticker": "004990",
@@ -3553,24 +3503,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "지주"
       ],
-      "rank": 197
-    },
-    {
-      "ticker": "000155",
-      "name": "두산우",
-      "name_en": "",
-      "market": "코스피",
-      "sector": "기타",
-      "price": 650000,
-      "change": -5.8,
-      "volume": 7648,
-      "trading_value": 5018037500,
-      "mcap": 2.6,
-      "shares": 3996462,
-      "categories": [
-        "기타"
-      ],
-      "rank": 198
+      "rank": 194
     },
     {
       "ticker": "085620",
@@ -3588,7 +3521,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "보험"
       ],
-      "rank": 199
+      "rank": 195
     },
     {
       "ticker": "009970",
@@ -3605,7 +3538,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 200
+      "rank": 196
     },
     {
       "ticker": "483650",
@@ -3623,7 +3556,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "화장품"
       ],
-      "rank": 201
+      "rank": 197
     },
     {
       "ticker": "058610",
@@ -3641,7 +3574,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "전기장비"
       ],
-      "rank": 202
+      "rank": 198
     },
     {
       "ticker": "001740",
@@ -3659,7 +3592,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "유통·소비재"
       ],
-      "rank": 203
+      "rank": 199
     },
     {
       "ticker": "007340",
@@ -3676,7 +3609,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 204
+      "rank": 200
     },
     {
       "ticker": "000240",
@@ -3693,7 +3626,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 205
+      "rank": 201
     },
     {
       "ticker": "006360",
@@ -3711,7 +3644,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "건설·건자재"
       ],
-      "rank": 206
+      "rank": 202
     },
     {
       "ticker": "026960",
@@ -3728,7 +3661,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 207
+      "rank": 203
     },
     {
       "ticker": "218410",
@@ -3746,7 +3679,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "전자·부품"
       ],
-      "rank": 208
+      "rank": 204
     },
     {
       "ticker": "257720",
@@ -3764,7 +3697,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "유통·소비재"
       ],
-      "rank": 209
+      "rank": 205
     },
     {
       "ticker": "003690",
@@ -3782,7 +3715,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "보험"
       ],
-      "rank": 210
+      "rank": 206
     },
     {
       "ticker": "439260",
@@ -3799,7 +3732,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 211
+      "rank": 207
     },
     {
       "ticker": "131290",
@@ -3817,7 +3750,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "전자·부품"
       ],
-      "rank": 212
+      "rank": 208
     },
     {
       "ticker": "098460",
@@ -3835,7 +3768,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기계·장비"
       ],
-      "rank": 213
+      "rank": 209
     },
     {
       "ticker": "082920",
@@ -3853,7 +3786,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "2차전지"
       ],
-      "rank": 214
+      "rank": 210
     },
     {
       "ticker": "004370",
@@ -3871,7 +3804,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "식음료"
       ],
-      "rank": 215
+      "rank": 211
     },
     {
       "ticker": "290650",
@@ -3889,7 +3822,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "바이오·제약"
       ],
-      "rank": 216
+      "rank": 212
     },
     {
       "ticker": "279570",
@@ -3906,7 +3839,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 217
+      "rank": 213
     },
     {
       "ticker": "051600",
@@ -3923,7 +3856,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 218
+      "rank": 214
     },
     {
       "ticker": "282330",
@@ -3941,7 +3874,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "유통·소비재"
       ],
-      "rank": 219
+      "rank": 215
     },
     {
       "ticker": "071970",
@@ -3959,7 +3892,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기계·장비"
       ],
-      "rank": 220
+      "rank": 216
     },
     {
       "ticker": "100790",
@@ -3977,7 +3910,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "금융"
       ],
-      "rank": 221
+      "rank": 217
     },
     {
       "ticker": "008930",
@@ -3994,7 +3927,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 222
+      "rank": 218
     },
     {
       "ticker": "011210",
@@ -4012,7 +3945,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "자동차"
       ],
-      "rank": 223
+      "rank": 219
     },
     {
       "ticker": "083650",
@@ -4030,7 +3963,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기계·장비"
       ],
-      "rank": 224
+      "rank": 220
     },
     {
       "ticker": "007390",
@@ -4048,7 +3981,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "바이오·제약"
       ],
-      "rank": 225
+      "rank": 221
     },
     {
       "ticker": "008770",
@@ -4066,7 +3999,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "유통·소비재"
       ],
-      "rank": 226
+      "rank": 222
     },
     {
       "ticker": "030000",
@@ -4084,7 +4017,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "부동산·기타서비스"
       ],
-      "rank": 227
+      "rank": 223
     },
     {
       "ticker": "103140",
@@ -4102,7 +4035,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "철강·금속"
       ],
-      "rank": 228
+      "rank": 224
     },
     {
       "ticker": "018670",
@@ -4119,7 +4052,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 229
+      "rank": 225
     },
     {
       "ticker": "081660",
@@ -4136,24 +4069,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 230
-    },
-    {
-      "ticker": "00680K",
-      "name": "미래에셋증권2우B",
-      "name_en": "",
-      "market": "코스피",
-      "sector": "기타",
-      "price": 15200,
-      "change": 0.0,
-      "volume": 274936,
-      "trading_value": 4200603110,
-      "mcap": 2.07,
-      "shares": 136500000,
-      "categories": [
-        "기타"
-      ],
-      "rank": 231
+      "rank": 226
     },
     {
       "ticker": "005440",
@@ -4170,7 +4086,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 232
+      "rank": 227
     },
     {
       "ticker": "140860",
@@ -4188,7 +4104,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "전자·부품"
       ],
-      "rank": 233
+      "rank": 228
     },
     {
       "ticker": "030530",
@@ -4206,7 +4122,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "화학"
       ],
-      "rank": 234
+      "rank": 229
     },
     {
       "ticker": "322000",
@@ -4224,7 +4140,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "반도체"
       ],
-      "rank": 235
+      "rank": 230
     },
     {
       "ticker": "068760",
@@ -4241,7 +4157,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 236
+      "rank": 231
     },
     {
       "ticker": "120110",
@@ -4259,7 +4175,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "화학"
       ],
-      "rank": 237
+      "rank": 232
     },
     {
       "ticker": "007070",
@@ -4276,7 +4192,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 238
+      "rank": 233
     },
     {
       "ticker": "078600",
@@ -4294,7 +4210,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "전자·부품"
       ],
-      "rank": 239
+      "rank": 234
     },
     {
       "ticker": "140410",
@@ -4312,7 +4228,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "부동산·기타서비스"
       ],
-      "rank": 240
+      "rank": 235
     },
     {
       "ticker": "097230",
@@ -4330,7 +4246,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "건설·건자재"
       ],
-      "rank": 241
+      "rank": 236
     },
     {
       "ticker": "161890",
@@ -4348,7 +4264,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "화장품"
       ],
-      "rank": 242
+      "rank": 237
     },
     {
       "ticker": "035900",
@@ -4367,7 +4283,7 @@ window.KOS_LIVE_DATA = {
         "미디어·엔터",
         "K-콘텐츠·엔터"
       ],
-      "rank": 243
+      "rank": 238
     },
     {
       "ticker": "229640",
@@ -4385,7 +4301,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "지주"
       ],
-      "rank": 244
+      "rank": 239
     },
     {
       "ticker": "089030",
@@ -4403,7 +4319,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기계·장비"
       ],
-      "rank": 245
+      "rank": 240
     },
     {
       "ticker": "192820",
@@ -4421,7 +4337,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "화장품"
       ],
-      "rank": 246
+      "rank": 241
     },
     {
       "ticker": "112610",
@@ -4439,7 +4355,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "철강·금속"
       ],
-      "rank": 247
+      "rank": 242
     },
     {
       "ticker": "000120",
@@ -4456,7 +4372,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 248
+      "rank": 243
     },
     {
       "ticker": "031330",
@@ -4474,24 +4390,25 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "유통·소비재"
       ],
-      "rank": 249
+      "rank": 244
     },
     {
       "ticker": "041510",
       "name": "에스엠",
-      "name_en": "",
+      "name_en": "SM ENTERTAINMENT CO., Ltd.",
       "market": "코스닥",
-      "sector": "엔터·미디어",
+      "sector": "미디어·엔터",
       "price": 79700,
       "change": 1.79,
       "volume": 55490,
       "trading_value": 4285107350,
       "mcap": 1.82,
       "shares": 22894690,
+      "induty_code": "59201",
       "categories": [
-        "엔터·미디어"
+        "미디어·엔터"
       ],
-      "rank": 250
+      "rank": 245
     },
     {
       "ticker": "001430",
@@ -4509,24 +4426,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "철강·금속"
       ],
-      "rank": 251
-    },
-    {
-      "ticker": "066575",
-      "name": "LG전자우",
-      "name_en": "",
-      "market": "코스피",
-      "sector": "기타",
-      "price": 105400,
-      "change": -10.14,
-      "volume": 429559,
-      "trading_value": 44069585650,
-      "mcap": 1.81,
-      "shares": 17181299,
-      "categories": [
-        "기타"
-      ],
-      "rank": 252
+      "rank": 246
     },
     {
       "ticker": "420770",
@@ -4544,7 +4444,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기계·장비"
       ],
-      "rank": 253
+      "rank": 247
     },
     {
       "ticker": "462870",
@@ -4561,7 +4461,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 254
+      "rank": 248
     },
     {
       "ticker": "0009K0",
@@ -4578,7 +4478,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 255
+      "rank": 249
     },
     {
       "ticker": "347700",
@@ -4596,7 +4496,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "게임"
       ],
-      "rank": 256
+      "rank": 250
     },
     {
       "ticker": "023590",
@@ -4613,7 +4513,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 257
+      "rank": 251
     },
     {
       "ticker": "089970",
@@ -4631,7 +4531,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기계·장비"
       ],
-      "rank": 258
+      "rank": 252
     },
     {
       "ticker": "323280",
@@ -4649,7 +4549,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기계·장비"
       ],
-      "rank": 259
+      "rank": 253
     },
     {
       "ticker": "002790",
@@ -4666,24 +4566,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 260
-    },
-    {
-      "ticker": "009155",
-      "name": "삼성전기우",
-      "name_en": "",
-      "market": "코스피",
-      "sector": "기타",
-      "price": 585000,
-      "change": -7.14,
-      "volume": 51407,
-      "trading_value": 30565710500,
-      "mcap": 1.7,
-      "shares": 2906984,
-      "categories": [
-        "기타"
-      ],
-      "rank": 261
+      "rank": 254
     },
     {
       "ticker": "001800",
@@ -4700,7 +4583,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 262
+      "rank": 255
     },
     {
       "ticker": "060370",
@@ -4717,7 +4600,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 263
+      "rank": 256
     },
     {
       "ticker": "445680",
@@ -4735,7 +4618,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "전자·부품"
       ],
-      "rank": 264
+      "rank": 257
     },
     {
       "ticker": "017960",
@@ -4753,7 +4636,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "철강·금속"
       ],
-      "rank": 265
+      "rank": 258
     },
     {
       "ticker": "096530",
@@ -4771,7 +4654,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "바이오·제약"
       ],
-      "rank": 266
+      "rank": 259
     },
     {
       "ticker": "005070",
@@ -4789,7 +4672,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "화학"
       ],
-      "rank": 267
+      "rank": 260
     },
     {
       "ticker": "039200",
@@ -4807,7 +4690,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "바이오·제약"
       ],
-      "rank": 268
+      "rank": 261
     },
     {
       "ticker": "032500",
@@ -4825,7 +4708,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "전자·부품"
       ],
-      "rank": 269
+      "rank": 262
     },
     {
       "ticker": "298020",
@@ -4842,7 +4725,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 270
+      "rank": 263
     },
     {
       "ticker": "437730",
@@ -4860,7 +4743,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "자동차"
       ],
-      "rank": 271
+      "rank": 264
     },
     {
       "ticker": "476830",
@@ -4878,7 +4761,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "부동산·기타서비스"
       ],
-      "rank": 272
+      "rank": 265
     },
     {
       "ticker": "006280",
@@ -4895,7 +4778,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 273
+      "rank": 266
     },
     {
       "ticker": "361610",
@@ -4912,7 +4795,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 274
+      "rank": 267
     },
     {
       "ticker": "395400",
@@ -4929,7 +4812,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 275
+      "rank": 268
     },
     {
       "ticker": "006040",
@@ -4946,7 +4829,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 276
+      "rank": 269
     },
     {
       "ticker": "003540",
@@ -4963,7 +4846,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 277
+      "rank": 270
     },
     {
       "ticker": "069620",
@@ -4980,7 +4863,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "바이오/제약"
       ],
-      "rank": 278
+      "rank": 271
     },
     {
       "ticker": "001120",
@@ -4997,7 +4880,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 279
+      "rank": 272
     },
     {
       "ticker": "192080",
@@ -5014,7 +4897,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 280
+      "rank": 273
     },
     {
       "ticker": "181710",
@@ -5032,7 +4915,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "게임"
       ],
-      "rank": 281
+      "rank": 274
     },
     {
       "ticker": "101490",
@@ -5050,7 +4933,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "전자·부품"
       ],
-      "rank": 282
+      "rank": 275
     },
     {
       "ticker": "032350",
@@ -5068,7 +4951,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 283
+      "rank": 276
     },
     {
       "ticker": "077970",
@@ -5086,7 +4969,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기계·장비"
       ],
-      "rank": 284
+      "rank": 277
     },
     {
       "ticker": "020560",
@@ -5103,7 +4986,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 285
+      "rank": 278
     },
     {
       "ticker": "195870",
@@ -5121,7 +5004,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "전자·부품"
       ],
-      "rank": 286
+      "rank": 279
     },
     {
       "ticker": "127120",
@@ -5139,7 +5022,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "부동산·기타서비스"
       ],
-      "rank": 287
+      "rank": 280
     },
     {
       "ticker": "003570",
@@ -5156,7 +5039,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 288
+      "rank": 281
     },
     {
       "ticker": "034230",
@@ -5174,7 +5057,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "호텔·레저"
       ],
-      "rank": 289
+      "rank": 282
     },
     {
       "ticker": "073240",
@@ -5191,7 +5074,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "자동차"
       ],
-      "rank": 290
+      "rank": 283
     },
     {
       "ticker": "099320",
@@ -5209,7 +5092,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "항공·방산"
       ],
-      "rank": 291
+      "rank": 284
     },
     {
       "ticker": "281820",
@@ -5227,7 +5110,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "전자·부품"
       ],
-      "rank": 292
+      "rank": 285
     },
     {
       "ticker": "475830",
@@ -5245,7 +5128,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "바이오·제약"
       ],
-      "rank": 293
+      "rank": 286
     },
     {
       "ticker": "090360",
@@ -5263,7 +5146,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기계·장비"
       ],
-      "rank": 294
+      "rank": 287
     },
     {
       "ticker": "232140",
@@ -5281,7 +5164,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기계·장비"
       ],
-      "rank": 295
+      "rank": 288
     },
     {
       "ticker": "490470",
@@ -5299,7 +5182,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "건설·건자재"
       ],
-      "rank": 296
+      "rank": 289
     },
     {
       "ticker": "007310",
@@ -5316,7 +5199,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 297
+      "rank": 290
     },
     {
       "ticker": "417200",
@@ -5334,7 +5217,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "전자·부품"
       ],
-      "rank": 298
+      "rank": 291
     },
     {
       "ticker": "030610",
@@ -5351,7 +5234,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 299
+      "rank": 292
     },
     {
       "ticker": "036540",
@@ -5369,7 +5252,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "반도체"
       ],
-      "rank": 300
+      "rank": 293
     },
     {
       "ticker": "166090",
@@ -5387,7 +5270,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "반도체"
       ],
-      "rank": 301
+      "rank": 294
     },
     {
       "ticker": "004000",
@@ -5404,7 +5287,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 302
+      "rank": 295
     },
     {
       "ticker": "189300",
@@ -5422,7 +5305,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "전자·부품"
       ],
-      "rank": 303
+      "rank": 296
     },
     {
       "ticker": "003530",
@@ -5440,7 +5323,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "금융"
       ],
-      "rank": 304
+      "rank": 297
     },
     {
       "ticker": "397030",
@@ -5458,7 +5341,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "부동산·기타서비스"
       ],
-      "rank": 305
+      "rank": 298
     },
     {
       "ticker": "294870",
@@ -5475,7 +5358,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 306
+      "rank": 299
     },
     {
       "ticker": "475150",
@@ -5493,7 +5376,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "건설·건자재"
       ],
-      "rank": 307
+      "rank": 300
     },
     {
       "ticker": "006110",
@@ -5511,24 +5394,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "철강·금속"
       ],
-      "rank": 308
-    },
-    {
-      "ticker": "000815",
-      "name": "삼성화재우",
-      "name_en": "",
-      "market": "코스피",
-      "sector": "기타",
-      "price": 417000,
-      "change": 7.89,
-      "volume": 61631,
-      "trading_value": 25085933750,
-      "mcap": 1.25,
-      "shares": 3007020,
-      "categories": [
-        "기타"
-      ],
-      "rank": 309
+      "rank": 301
     },
     {
       "ticker": "003380",
@@ -5546,7 +5412,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "지주"
       ],
-      "rank": 310
+      "rank": 302
     },
     {
       "ticker": "012630",
@@ -5563,7 +5429,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 311
+      "rank": 303
     },
     {
       "ticker": "090710",
@@ -5581,24 +5447,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기계·장비"
       ],
-      "rank": 312
-    },
-    {
-      "ticker": "051915",
-      "name": "LG화학우",
-      "name_en": "",
-      "market": "코스피",
-      "sector": "기타",
-      "price": 160800,
-      "change": -0.5,
-      "volume": 15310,
-      "trading_value": 2455316600,
-      "mcap": 1.24,
-      "shares": 7688800,
-      "categories": [
-        "기타"
-      ],
-      "rank": 313
+      "rank": 304
     },
     {
       "ticker": "295310",
@@ -5616,7 +5465,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "철강·금속"
       ],
-      "rank": 314
+      "rank": 305
     },
     {
       "ticker": "027360",
@@ -5634,7 +5483,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "금융"
       ],
-      "rank": 315
+      "rank": 306
     },
     {
       "ticker": "093370",
@@ -5652,7 +5501,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "화학"
       ],
-      "rank": 316
+      "rank": 307
     },
     {
       "ticker": "065350",
@@ -5670,7 +5519,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "전기장비"
       ],
-      "rank": 317
+      "rank": 308
     },
     {
       "ticker": "491000",
@@ -5688,7 +5537,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "전자·부품"
       ],
-      "rank": 318
+      "rank": 309
     },
     {
       "ticker": "085660",
@@ -5705,7 +5554,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 319
+      "rank": 310
     },
     {
       "ticker": "195940",
@@ -5722,7 +5571,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 320
+      "rank": 311
     },
     {
       "ticker": "466100",
@@ -5740,7 +5589,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "게임"
       ],
-      "rank": 321
+      "rank": 312
     },
     {
       "ticker": "415640",
@@ -5757,7 +5606,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 322
+      "rank": 313
     },
     {
       "ticker": "388720",
@@ -5775,7 +5624,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기계·장비"
       ],
-      "rank": 323
+      "rank": 314
     },
     {
       "ticker": "082640",
@@ -5792,7 +5641,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 324
+      "rank": 315
     },
     {
       "ticker": "281740",
@@ -5810,7 +5659,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "화학"
       ],
-      "rank": 325
+      "rank": 316
     },
     {
       "ticker": "000080",
@@ -5827,7 +5676,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "식품"
       ],
-      "rank": 326
+      "rank": 317
     },
     {
       "ticker": "328130",
@@ -5844,7 +5693,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 327
+      "rank": 318
     },
     {
       "ticker": "001820",
@@ -5862,7 +5711,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "전자·부품"
       ],
-      "rank": 328
+      "rank": 319
     },
     {
       "ticker": "204270",
@@ -5879,7 +5728,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 329
+      "rank": 320
     },
     {
       "ticker": "458870",
@@ -5896,7 +5745,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 330
+      "rank": 321
     },
     {
       "ticker": "038500",
@@ -5914,7 +5763,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "건설·건자재"
       ],
-      "rank": 331
+      "rank": 322
     },
     {
       "ticker": "089860",
@@ -5931,7 +5780,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 332
+      "rank": 323
     },
     {
       "ticker": "456040",
@@ -5948,7 +5797,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 333
+      "rank": 324
     },
     {
       "ticker": "356860",
@@ -5966,7 +5815,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "전자·부품"
       ],
-      "rank": 334
+      "rank": 325
     },
     {
       "ticker": "300720",
@@ -5983,7 +5832,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 335
+      "rank": 326
     },
     {
       "ticker": "003090",
@@ -6000,7 +5849,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 336
+      "rank": 327
     },
     {
       "ticker": "183300",
@@ -6018,7 +5867,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기계·장비"
       ],
-      "rank": 337
+      "rank": 328
     },
     {
       "ticker": "000210",
@@ -6035,7 +5884,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 338
+      "rank": 329
     },
     {
       "ticker": "048410",
@@ -6053,7 +5902,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "화학"
       ],
-      "rank": 339
+      "rank": 330
     },
     {
       "ticker": "388210",
@@ -6071,7 +5920,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "전자·부품"
       ],
-      "rank": 340
+      "rank": 331
     },
     {
       "ticker": "161580",
@@ -6089,7 +5938,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기계·장비"
       ],
-      "rank": 341
+      "rank": 332
     },
     {
       "ticker": "115180",
@@ -6106,7 +5955,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 342
+      "rank": 333
     },
     {
       "ticker": "185750",
@@ -6123,7 +5972,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "바이오/제약"
       ],
-      "rank": 343
+      "rank": 334
     },
     {
       "ticker": "137400",
@@ -6140,7 +5989,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 344
+      "rank": 335
     },
     {
       "ticker": "496320",
@@ -6157,7 +6006,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 345
+      "rank": 336
     },
     {
       "ticker": "100090",
@@ -6174,7 +6023,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 346
+      "rank": 337
     },
     {
       "ticker": "003470",
@@ -6191,7 +6040,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 347
+      "rank": 338
     },
     {
       "ticker": "330590",
@@ -6208,7 +6057,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 348
+      "rank": 339
     },
     {
       "ticker": "003240",
@@ -6225,7 +6074,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 349
+      "rank": 340
     },
     {
       "ticker": "083450",
@@ -6243,24 +6092,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기계·장비"
       ],
-      "rank": 350
-    },
-    {
-      "ticker": "071055",
-      "name": "한국금융지주우",
-      "name_en": "",
-      "market": "코스피",
-      "sector": "기타",
-      "price": 172100,
-      "change": 2.75,
-      "volume": 7572,
-      "trading_value": 1293242200,
-      "mcap": 1.01,
-      "shares": 5858251,
-      "categories": [
-        "기타"
-      ],
-      "rank": 351
+      "rank": 341
     },
     {
       "ticker": "036830",
@@ -6277,7 +6109,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "반도체"
       ],
-      "rank": 352
+      "rank": 342
     },
     {
       "ticker": "280360",
@@ -6294,7 +6126,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 353
+      "rank": 343
     },
     {
       "ticker": "056190",
@@ -6311,7 +6143,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 354
+      "rank": 344
     },
     {
       "ticker": "124500",
@@ -6328,7 +6160,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 355
+      "rank": 345
     },
     {
       "ticker": "009450",
@@ -6345,7 +6177,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 356
+      "rank": 346
     },
     {
       "ticker": "090460",
@@ -6363,7 +6195,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "전자·부품"
       ],
-      "rank": 357
+      "rank": 347
     },
     {
       "ticker": "005300",
@@ -6380,7 +6212,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 358
+      "rank": 348
     },
     {
       "ticker": "160190",
@@ -6397,7 +6229,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 359
+      "rank": 349
     },
     {
       "ticker": "057050",
@@ -6414,7 +6246,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 360
+      "rank": 350
     },
     {
       "ticker": "298050",
@@ -6431,7 +6263,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 361
+      "rank": 351
     },
     {
       "ticker": "439960",
@@ -6449,7 +6281,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "전자·부품"
       ],
-      "rank": 362
+      "rank": 352
     },
     {
       "ticker": "000670",
@@ -6466,7 +6298,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 363
+      "rank": 353
     },
     {
       "ticker": "050890",
@@ -6484,7 +6316,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "전자·부품"
       ],
-      "rank": 364
+      "rank": 354
     },
     {
       "ticker": "126340",
@@ -6502,7 +6334,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "2차전지"
       ],
-      "rank": 365
+      "rank": 355
     },
     {
       "ticker": "365550",
@@ -6519,7 +6351,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 366
+      "rank": 356
     },
     {
       "ticker": "033100",
@@ -6537,7 +6369,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "전기장비"
       ],
-      "rank": 367
+      "rank": 357
     },
     {
       "ticker": "074600",
@@ -6555,7 +6387,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "건설·건자재"
       ],
-      "rank": 368
+      "rank": 358
     },
     {
       "ticker": "033790",
@@ -6573,7 +6405,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "2차전지"
       ],
-      "rank": 369
+      "rank": 359
     },
     {
       "ticker": "137310",
@@ -6590,7 +6422,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 370
+      "rank": 360
     },
     {
       "ticker": "222080",
@@ -6608,7 +6440,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기계·장비"
       ],
-      "rank": 371
+      "rank": 361
     },
     {
       "ticker": "192400",
@@ -6625,7 +6457,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 372
+      "rank": 362
     },
     {
       "ticker": "358570",
@@ -6643,7 +6475,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "부동산·기타서비스"
       ],
-      "rank": 373
+      "rank": 363
     },
     {
       "ticker": "213420",
@@ -6660,7 +6492,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 374
+      "rank": 364
     },
     {
       "ticker": "499790",
@@ -6677,7 +6509,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 375
+      "rank": 365
     },
     {
       "ticker": "293490",
@@ -6694,7 +6526,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "IT 서비스"
       ],
-      "rank": 376
+      "rank": 366
     },
     {
       "ticker": "456160",
@@ -6712,7 +6544,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "바이오·제약"
       ],
-      "rank": 377
+      "rank": 367
     },
     {
       "ticker": "006340",
@@ -6730,7 +6562,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "전기장비"
       ],
-      "rank": 378
+      "rank": 368
     },
     {
       "ticker": "033640",
@@ -6748,7 +6580,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "반도체"
       ],
-      "rank": 379
+      "rank": 369
     },
     {
       "ticker": "005690",
@@ -6765,7 +6597,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 380
+      "rank": 370
     },
     {
       "ticker": "035760",
@@ -6782,7 +6614,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 381
+      "rank": 371
     },
     {
       "ticker": "248070",
@@ -6799,7 +6631,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 382
+      "rank": 372
     },
     {
       "ticker": "108320",
@@ -6816,7 +6648,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 383
+      "rank": 373
     },
     {
       "ticker": "376900",
@@ -6833,7 +6665,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 384
+      "rank": 374
     },
     {
       "ticker": "094170",
@@ -6850,24 +6682,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 385
-    },
-    {
-      "ticker": "00088K",
-      "name": "한화3우B",
-      "name_en": "",
-      "market": "코스피",
-      "sector": "기타",
-      "price": 43050,
-      "change": -2.38,
-      "volume": 37287,
-      "trading_value": 1620178125,
-      "mcap": 0.84,
-      "shares": 19404441,
-      "categories": [
-        "기타"
-      ],
-      "rank": 386
+      "rank": 375
     },
     {
       "ticker": "030190",
@@ -6884,7 +6699,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 387
+      "rank": 376
     },
     {
       "ticker": "086450",
@@ -6902,7 +6717,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "바이오·제약"
       ],
-      "rank": 388
+      "rank": 377
     },
     {
       "ticker": "486990",
@@ -6920,7 +6735,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "게임"
       ],
-      "rank": 389
+      "rank": 378
     },
     {
       "ticker": "046890",
@@ -6938,7 +6753,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "반도체"
       ],
-      "rank": 390
+      "rank": 379
     },
     {
       "ticker": "252990",
@@ -6956,7 +6771,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "전자·부품"
       ],
-      "rank": 391
+      "rank": 380
     },
     {
       "ticker": "006650",
@@ -6973,7 +6788,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 392
+      "rank": 381
     },
     {
       "ticker": "010780",
@@ -6990,7 +6805,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 393
+      "rank": 382
     },
     {
       "ticker": "033240",
@@ -7007,7 +6822,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 394
+      "rank": 383
     },
     {
       "ticker": "079900",
@@ -7024,7 +6839,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 395
+      "rank": 384
     },
     {
       "ticker": "006120",
@@ -7041,7 +6856,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 396
+      "rank": 385
     },
     {
       "ticker": "122870",
@@ -7058,7 +6873,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "엔터·미디어"
       ],
-      "rank": 397
+      "rank": 386
     },
     {
       "ticker": "214320",
@@ -7075,7 +6890,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 398
+      "rank": 387
     },
     {
       "ticker": "075580",
@@ -7092,7 +6907,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 399
+      "rank": 388
     },
     {
       "ticker": "036530",
@@ -7109,7 +6924,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 400
+      "rank": 389
     },
     {
       "ticker": "003160",
@@ -7127,7 +6942,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "전자·부품"
       ],
-      "rank": 401
+      "rank": 390
     },
     {
       "ticker": "014620",
@@ -7144,7 +6959,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 402
+      "rank": 391
     },
     {
       "ticker": "059090",
@@ -7162,7 +6977,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "반도체"
       ],
-      "rank": 403
+      "rank": 392
     },
     {
       "ticker": "348370",
@@ -7179,7 +6994,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 404
+      "rank": 393
     },
     {
       "ticker": "071320",
@@ -7196,7 +7011,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 405
+      "rank": 394
     },
     {
       "ticker": "241710",
@@ -7213,7 +7028,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 406
+      "rank": 395
     },
     {
       "ticker": "052020",
@@ -7231,7 +7046,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "유통·소비재"
       ],
-      "rank": 407
+      "rank": 396
     },
     {
       "ticker": "037460",
@@ -7249,7 +7064,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "전자·부품"
       ],
-      "rank": 408
+      "rank": 397
     },
     {
       "ticker": "056080",
@@ -7266,7 +7081,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 409
+      "rank": 398
     },
     {
       "ticker": "032190",
@@ -7283,7 +7098,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 410
+      "rank": 399
     },
     {
       "ticker": "451800",
@@ -7300,7 +7115,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 411
+      "rank": 400
     },
     {
       "ticker": "253450",
@@ -7317,7 +7132,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 412
+      "rank": 401
     },
     {
       "ticker": "025540",
@@ -7334,7 +7149,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 413
+      "rank": 402
     },
     {
       "ticker": "004490",
@@ -7351,7 +7166,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 414
+      "rank": 403
     },
     {
       "ticker": "121600",
@@ -7368,7 +7183,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 415
+      "rank": 404
     },
     {
       "ticker": "064960",
@@ -7385,7 +7200,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 416
+      "rank": 405
     },
     {
       "ticker": "023160",
@@ -7402,7 +7217,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 417
+      "rank": 406
     },
     {
       "ticker": "171090",
@@ -7419,7 +7234,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 418
+      "rank": 407
     },
     {
       "ticker": "476060",
@@ -7437,7 +7252,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "부동산·기타서비스"
       ],
-      "rank": 419
+      "rank": 408
     },
     {
       "ticker": "336370",
@@ -7454,7 +7269,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "반도체"
       ],
-      "rank": 420
+      "rank": 409
     },
     {
       "ticker": "336570",
@@ -7472,7 +7287,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "전자·부품"
       ],
-      "rank": 421
+      "rank": 410
     },
     {
       "ticker": "100840",
@@ -7489,7 +7304,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 422
+      "rank": 411
     },
     {
       "ticker": "001510",
@@ -7507,7 +7322,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "금융"
       ],
-      "rank": 423
+      "rank": 412
     },
     {
       "ticker": "003850",
@@ -7524,7 +7339,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 424
+      "rank": 413
     },
     {
       "ticker": "006730",
@@ -7542,7 +7357,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "호텔·레저"
       ],
-      "rank": 425
+      "rank": 414
     },
     {
       "ticker": "053610",
@@ -7560,7 +7375,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기계·장비"
       ],
-      "rank": 426
+      "rank": 415
     },
     {
       "ticker": "285130",
@@ -7577,7 +7392,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "화학"
       ],
-      "rank": 427
+      "rank": 416
     },
     {
       "ticker": "052400",
@@ -7595,7 +7410,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "게임"
       ],
-      "rank": 428
+      "rank": 417
     },
     {
       "ticker": "348210",
@@ -7613,7 +7428,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기계·장비"
       ],
-      "rank": 429
+      "rank": 418
     },
     {
       "ticker": "079160",
@@ -7630,7 +7445,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 430
+      "rank": 419
     },
     {
       "ticker": "009240",
@@ -7647,7 +7462,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 431
+      "rank": 420
     },
     {
       "ticker": "002020",
@@ -7664,7 +7479,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 432
+      "rank": 421
     },
     {
       "ticker": "365340",
@@ -7681,7 +7496,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 433
+      "rank": 422
     },
     {
       "ticker": "000370",
@@ -7698,7 +7513,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 434
+      "rank": 423
     },
     {
       "ticker": "036810",
@@ -7715,7 +7530,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 435
+      "rank": 424
     },
     {
       "ticker": "005090",
@@ -7732,7 +7547,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 436
+      "rank": 425
     },
     {
       "ticker": "178920",
@@ -7749,7 +7564,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 437
+      "rank": 426
     },
     {
       "ticker": "114090",
@@ -7766,7 +7581,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 438
+      "rank": 427
     },
     {
       "ticker": "00104K",
@@ -7783,7 +7598,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 439
+      "rank": 428
     },
     {
       "ticker": "044490",
@@ -7800,7 +7615,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 440
+      "rank": 429
     },
     {
       "ticker": "077360",
@@ -7818,7 +7633,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "반도체"
       ],
-      "rank": 441
+      "rank": 430
     },
     {
       "ticker": "174900",
@@ -7835,7 +7650,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 442
+      "rank": 431
     },
     {
       "ticker": "225570",
@@ -7852,7 +7667,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 443
+      "rank": 432
     },
     {
       "ticker": "060250",
@@ -7869,7 +7684,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 444
+      "rank": 433
     },
     {
       "ticker": "327260",
@@ -7887,7 +7702,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "전자·부품"
       ],
-      "rank": 445
+      "rank": 434
     },
     {
       "ticker": "053800",
@@ -7904,7 +7719,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 446
+      "rank": 435
     },
     {
       "ticker": "058650",
@@ -7921,7 +7736,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 447
+      "rank": 436
     },
     {
       "ticker": "389470",
@@ -7938,7 +7753,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 448
+      "rank": 437
     },
     {
       "ticker": "102940",
@@ -7955,7 +7770,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 449
+      "rank": 438
     },
     {
       "ticker": "002350",
@@ -7972,7 +7787,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 450
+      "rank": 439
     },
     {
       "ticker": "005880",
@@ -7989,7 +7804,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 451
+      "rank": 440
     },
     {
       "ticker": "383310",
@@ -8007,7 +7822,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "화학"
       ],
-      "rank": 452
+      "rank": 441
     },
     {
       "ticker": "009520",
@@ -8024,7 +7839,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 453
+      "rank": 442
     },
     {
       "ticker": "069260",
@@ -8041,7 +7856,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 454
+      "rank": 443
     },
     {
       "ticker": "399720",
@@ -8058,7 +7873,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 455
+      "rank": 444
     },
     {
       "ticker": "005180",
@@ -8075,7 +7890,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 456
+      "rank": 445
     },
     {
       "ticker": "317450",
@@ -8092,7 +7907,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 457
+      "rank": 446
     },
     {
       "ticker": "086900",
@@ -8109,7 +7924,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 458
+      "rank": 447
     },
     {
       "ticker": "112040",
@@ -8126,7 +7941,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 459
+      "rank": 448
     },
     {
       "ticker": "001680",
@@ -8143,7 +7958,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 460
+      "rank": 449
     },
     {
       "ticker": "102710",
@@ -8160,7 +7975,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 461
+      "rank": 450
     },
     {
       "ticker": "003620",
@@ -8177,7 +7992,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 462
+      "rank": 451
     },
     {
       "ticker": "033160",
@@ -8195,7 +8010,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "전자·부품"
       ],
-      "rank": 463
+      "rank": 452
     },
     {
       "ticker": "008060",
@@ -8212,7 +8027,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 464
+      "rank": 453
     },
     {
       "ticker": "007700",
@@ -8229,7 +8044,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 465
+      "rank": 454
     },
     {
       "ticker": "293940",
@@ -8246,7 +8061,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 466
+      "rank": 455
     },
     {
       "ticker": "253590",
@@ -8264,7 +8079,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기계·장비"
       ],
-      "rank": 467
+      "rank": 456
     },
     {
       "ticker": "001270",
@@ -8281,7 +8096,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 468
+      "rank": 457
     },
     {
       "ticker": "001570",
@@ -8298,7 +8113,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 469
+      "rank": 458
     },
     {
       "ticker": "093050",
@@ -8315,7 +8130,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 470
+      "rank": 459
     },
     {
       "ticker": "249420",
@@ -8332,7 +8147,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 471
+      "rank": 460
     },
     {
       "ticker": "089890",
@@ -8349,7 +8164,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 472
+      "rank": 461
     },
     {
       "ticker": "484870",
@@ -8366,7 +8181,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 473
+      "rank": 462
     },
     {
       "ticker": "002960",
@@ -8383,7 +8198,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 474
+      "rank": 463
     },
     {
       "ticker": "383800",
@@ -8400,7 +8215,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 475
+      "rank": 464
     },
     {
       "ticker": "425420",
@@ -8418,7 +8233,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "전자·부품"
       ],
-      "rank": 476
+      "rank": 465
     },
     {
       "ticker": "082270",
@@ -8435,7 +8250,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 477
+      "rank": 466
     },
     {
       "ticker": "001060",
@@ -8452,7 +8267,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 478
+      "rank": 467
     },
     {
       "ticker": "006380",
@@ -8469,7 +8284,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 479
+      "rank": 468
     },
     {
       "ticker": "348340",
@@ -8487,7 +8302,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기계·장비"
       ],
-      "rank": 480
+      "rank": 469
     },
     {
       "ticker": "272290",
@@ -8504,7 +8319,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "2차전지"
       ],
-      "rank": 481
+      "rank": 470
     },
     {
       "ticker": "017940",
@@ -8521,7 +8336,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 482
+      "rank": 471
     },
     {
       "ticker": "033500",
@@ -8538,7 +8353,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 483
+      "rank": 472
     },
     {
       "ticker": "003030",
@@ -8555,7 +8370,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 484
+      "rank": 473
     },
     {
       "ticker": "001500",
@@ -8572,24 +8387,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 485
-    },
-    {
-      "ticker": "005389",
-      "name": "현대차3우B",
-      "name_en": "",
-      "market": "코스피",
-      "sector": "기타",
-      "price": 254000,
-      "change": -3.79,
-      "volume": 9451,
-      "trading_value": 2404472250,
-      "mcap": 0.59,
-      "shares": 2327452,
-      "categories": [
-        "기타"
-      ],
-      "rank": 486
+      "rank": 474
     },
     {
       "ticker": "014820",
@@ -8606,7 +8404,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 487
+      "rank": 475
     },
     {
       "ticker": "000400",
@@ -8623,7 +8421,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 488
+      "rank": 476
     },
     {
       "ticker": "089010",
@@ -8640,7 +8438,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 489
+      "rank": 477
     },
     {
       "ticker": "122640",
@@ -8658,7 +8456,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기계·장비"
       ],
-      "rank": 490
+      "rank": 478
     },
     {
       "ticker": "000640",
@@ -8675,7 +8473,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 491
+      "rank": 479
     },
     {
       "ticker": "002840",
@@ -8692,7 +8490,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 492
+      "rank": 480
     },
     {
       "ticker": "067160",
@@ -8709,7 +8507,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 493
+      "rank": 481
     },
     {
       "ticker": "041830",
@@ -8726,7 +8524,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 494
+      "rank": 482
     },
     {
       "ticker": "015750",
@@ -8743,7 +8541,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 495
+      "rank": 483
     },
     {
       "ticker": "005810",
@@ -8760,7 +8558,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 496
+      "rank": 484
     },
     {
       "ticker": "017900",
@@ -8778,7 +8576,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "반도체"
       ],
-      "rank": 497
+      "rank": 485
     },
     {
       "ticker": "475960",
@@ -8795,7 +8593,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 498
+      "rank": 486
     },
     {
       "ticker": "376300",
@@ -8812,7 +8610,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 499
+      "rank": 487
     },
     {
       "ticker": "104830",
@@ -8829,7 +8627,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 500
+      "rank": 488
     },
     {
       "ticker": "045100",
@@ -8846,7 +8644,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 501
+      "rank": 489
     },
     {
       "ticker": "161000",
@@ -8863,7 +8661,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 502
+      "rank": 490
     },
     {
       "ticker": "453340",
@@ -8880,7 +8678,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 503
+      "rank": 491
     },
     {
       "ticker": "356680",
@@ -8898,7 +8696,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "게임"
       ],
-      "rank": 504
+      "rank": 492
     },
     {
       "ticker": "064290",
@@ -8916,7 +8714,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기계·장비"
       ],
-      "rank": 505
+      "rank": 493
     },
     {
       "ticker": "448900",
@@ -8934,7 +8732,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "자동차"
       ],
-      "rank": 506
+      "rank": 494
     },
     {
       "ticker": "093320",
@@ -8951,7 +8749,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 507
+      "rank": 495
     },
     {
       "ticker": "452260",
@@ -8968,7 +8766,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 508
+      "rank": 496
     },
     {
       "ticker": "016380",
@@ -8985,7 +8783,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 509
+      "rank": 497
     },
     {
       "ticker": "039130",
@@ -9002,7 +8800,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 510
+      "rank": 498
     },
     {
       "ticker": "019210",
@@ -9020,7 +8818,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "철강·금속"
       ],
-      "rank": 511
+      "rank": 499
     },
     {
       "ticker": "368770",
@@ -9037,7 +8835,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 512
+      "rank": 500
     },
     {
       "ticker": "460930",
@@ -9054,7 +8852,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 513
+      "rank": 501
     },
     {
       "ticker": "092190",
@@ -9071,7 +8869,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 514
+      "rank": 502
     },
     {
       "ticker": "214430",
@@ -9088,7 +8886,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 515
+      "rank": 503
     },
     {
       "ticker": "278280",
@@ -9105,24 +8903,25 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 516
+      "rank": 504
     },
     {
       "ticker": "200710",
       "name": "에이디테크놀로지",
-      "name_en": "",
+      "name_en": "ADTechnology Co., Ltd.",
       "market": "코스닥",
-      "sector": "기타",
+      "sector": "반도체",
       "price": 38650,
       "change": -0.13,
       "volume": 108002,
       "trading_value": 4287776175,
       "mcap": 0.52,
       "shares": 13462007,
+      "induty_code": "2611",
       "categories": [
-        "기타"
+        "반도체"
       ],
-      "rank": 517
+      "rank": 505
     },
     {
       "ticker": "005250",
@@ -9139,7 +8938,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 518
+      "rank": 506
     },
     {
       "ticker": "041960",
@@ -9156,24 +8955,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 519
-    },
-    {
-      "ticker": "003545",
-      "name": "대신증권우",
-      "name_en": "",
-      "market": "코스피",
-      "sector": "기타",
-      "price": 20500,
-      "change": 0.24,
-      "volume": 68448,
-      "trading_value": 1390954700,
-      "mcap": 0.52,
-      "shares": 25191667,
-      "categories": [
-        "기타"
-      ],
-      "rank": 520
+      "rank": 507
     },
     {
       "ticker": "003300",
@@ -9190,7 +8972,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 521
+      "rank": 508
     },
     {
       "ticker": "330860",
@@ -9208,7 +8990,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "부동산·기타서비스"
       ],
-      "rank": 522
+      "rank": 509
     },
     {
       "ticker": "002240",
@@ -9225,7 +9007,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 523
+      "rank": 510
     },
     {
       "ticker": "035890",
@@ -9242,7 +9024,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 524
+      "rank": 511
     },
     {
       "ticker": "170920",
@@ -9260,7 +9042,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "화학"
       ],
-      "rank": 525
+      "rank": 512
     },
     {
       "ticker": "268280",
@@ -9277,7 +9059,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 526
+      "rank": 513
     },
     {
       "ticker": "290550",
@@ -9295,7 +9077,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "전자·부품"
       ],
-      "rank": 527
+      "rank": 514
     },
     {
       "ticker": "284740",
@@ -9312,7 +9094,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 528
+      "rank": 515
     },
     {
       "ticker": "042000",
@@ -9329,7 +9111,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 529
+      "rank": 516
     },
     {
       "ticker": "031430",
@@ -9346,7 +9128,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 530
+      "rank": 517
     },
     {
       "ticker": "460860",
@@ -9363,7 +9145,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 531
+      "rank": 518
     },
     {
       "ticker": "041190",
@@ -9380,7 +9162,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 532
+      "rank": 519
     },
     {
       "ticker": "005420",
@@ -9397,7 +9179,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 533
+      "rank": 520
     },
     {
       "ticker": "230360",
@@ -9414,7 +9196,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 534
+      "rank": 521
     },
     {
       "ticker": "094800",
@@ -9431,7 +9213,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 535
+      "rank": 522
     },
     {
       "ticker": "138080",
@@ -9449,7 +9231,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "전자·부품"
       ],
-      "rank": 536
+      "rank": 523
     },
     {
       "ticker": "452280",
@@ -9467,7 +9249,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "철강·금속"
       ],
-      "rank": 537
+      "rank": 524
     },
     {
       "ticker": "009410",
@@ -9484,7 +9266,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 538
+      "rank": 525
     },
     {
       "ticker": "019170",
@@ -9501,7 +9283,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 539
+      "rank": 526
     },
     {
       "ticker": "271940",
@@ -9518,7 +9300,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 540
+      "rank": 527
     },
     {
       "ticker": "377740",
@@ -9535,7 +9317,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 541
+      "rank": 528
     },
     {
       "ticker": "020000",
@@ -9552,7 +9334,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 542
+      "rank": 529
     },
     {
       "ticker": "217590",
@@ -9570,7 +9352,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "전기장비"
       ],
-      "rank": 543
+      "rank": 530
     },
     {
       "ticker": "125490",
@@ -9588,7 +9370,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "자동차"
       ],
-      "rank": 544
+      "rank": 531
     },
     {
       "ticker": "025980",
@@ -9605,7 +9387,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 545
+      "rank": 532
     },
     {
       "ticker": "003280",
@@ -9623,7 +9405,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "운송·물류"
       ],
-      "rank": 546
+      "rank": 533
     },
     {
       "ticker": "024850",
@@ -9640,7 +9422,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 547
+      "rank": 534
     },
     {
       "ticker": "001530",
@@ -9657,7 +9439,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 548
+      "rank": 535
     },
     {
       "ticker": "393890",
@@ -9674,24 +9456,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 549
-    },
-    {
-      "ticker": "005945",
-      "name": "NH투자증권우",
-      "name_en": "",
-      "market": "코스피",
-      "sector": "기타",
-      "price": 25200,
-      "change": 1.61,
-      "volume": 47572,
-      "trading_value": 1192465650,
-      "mcap": 0.48,
-      "shares": 18870968,
-      "categories": [
-        "기타"
-      ],
-      "rank": 550
+      "rank": 536
     },
     {
       "ticker": "332570",
@@ -9709,7 +9474,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "전자·부품"
       ],
-      "rank": 551
+      "rank": 537
     },
     {
       "ticker": "011930",
@@ -9727,7 +9492,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "반도체"
       ],
-      "rank": 552
+      "rank": 538
     },
     {
       "ticker": "009900",
@@ -9744,7 +9509,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 553
+      "rank": 539
     },
     {
       "ticker": "039440",
@@ -9762,7 +9527,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기계·장비"
       ],
-      "rank": 554
+      "rank": 540
     },
     {
       "ticker": "078350",
@@ -9780,7 +9545,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "반도체"
       ],
-      "rank": 555
+      "rank": 541
     },
     {
       "ticker": "030520",
@@ -9797,7 +9562,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 556
+      "rank": 542
     },
     {
       "ticker": "014830",
@@ -9814,7 +9579,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 557
+      "rank": 543
     },
     {
       "ticker": "016610",
@@ -9831,7 +9596,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 558
+      "rank": 544
     },
     {
       "ticker": "099190",
@@ -9848,7 +9613,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 559
+      "rank": 545
     },
     {
       "ticker": "060280",
@@ -9865,7 +9630,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 560
+      "rank": 546
     },
     {
       "ticker": "0011T0",
@@ -9882,7 +9647,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 561
+      "rank": 547
     },
     {
       "ticker": "448730",
@@ -9899,7 +9664,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 562
+      "rank": 548
     },
     {
       "ticker": "034310",
@@ -9916,7 +9681,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 563
+      "rank": 549
     },
     {
       "ticker": "477850",
@@ -9934,7 +9699,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "게임"
       ],
-      "rank": 564
+      "rank": 550
     },
     {
       "ticker": "001200",
@@ -9951,24 +9716,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 565
-    },
-    {
-      "ticker": "000157",
-      "name": "두산2우B",
-      "name_en": "",
-      "market": "코스피",
-      "sector": "기타",
-      "price": 512000,
-      "change": -2.66,
-      "volume": 1217,
-      "trading_value": 637443000,
-      "mcap": 0.46,
-      "shares": 893038,
-      "categories": [
-        "기타"
-      ],
-      "rank": 566
+      "rank": 551
     },
     {
       "ticker": "085910",
@@ -9986,7 +9734,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "자동차"
       ],
-      "rank": 567
+      "rank": 552
     },
     {
       "ticker": "372320",
@@ -10003,7 +9751,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 568
+      "rank": 553
     },
     {
       "ticker": "025320",
@@ -10020,7 +9768,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 569
+      "rank": 554
     },
     {
       "ticker": "034950",
@@ -10037,7 +9785,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 570
+      "rank": 555
     },
     {
       "ticker": "211050",
@@ -10054,7 +9802,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 571
+      "rank": 556
     },
     {
       "ticker": "340570",
@@ -10071,7 +9819,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 572
+      "rank": 557
     },
     {
       "ticker": "003000",
@@ -10088,7 +9836,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 573
+      "rank": 558
     },
     {
       "ticker": "078160",
@@ -10105,7 +9853,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 574
+      "rank": 559
     },
     {
       "ticker": "008730",
@@ -10122,7 +9870,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 575
+      "rank": 560
     },
     {
       "ticker": "018290",
@@ -10139,7 +9887,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 576
+      "rank": 561
     },
     {
       "ticker": "251970",
@@ -10156,7 +9904,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 577
+      "rank": 562
     },
     {
       "ticker": "230240",
@@ -10174,7 +9922,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "전자·부품"
       ],
-      "rank": 578
+      "rank": 563
     },
     {
       "ticker": "199800",
@@ -10191,7 +9939,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 579
+      "rank": 564
     },
     {
       "ticker": "168360",
@@ -10208,7 +9956,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 580
+      "rank": 565
     },
     {
       "ticker": "145990",
@@ -10225,7 +9973,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 581
+      "rank": 566
     },
     {
       "ticker": "130660",
@@ -10242,7 +9990,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 582
+      "rank": 567
     },
     {
       "ticker": "493280",
@@ -10259,7 +10007,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 583
+      "rank": 568
     },
     {
       "ticker": "006910",
@@ -10277,7 +10025,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "철강·금속"
       ],
-      "rank": 584
+      "rank": 569
     },
     {
       "ticker": "425040",
@@ -10295,7 +10043,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "화학"
       ],
-      "rank": 585
+      "rank": 570
     },
     {
       "ticker": "004690",
@@ -10312,7 +10060,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 586
+      "rank": 571
     },
     {
       "ticker": "381970",
@@ -10329,7 +10077,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 587
+      "rank": 572
     },
     {
       "ticker": "000070",
@@ -10346,7 +10094,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 588
+      "rank": 573
     },
     {
       "ticker": "079940",
@@ -10363,7 +10111,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 589
+      "rank": 574
     },
     {
       "ticker": "069540",
@@ -10381,7 +10129,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "전자·부품"
       ],
-      "rank": 590
+      "rank": 575
     },
     {
       "ticker": "064260",
@@ -10398,7 +10146,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 591
+      "rank": 576
     },
     {
       "ticker": "101930",
@@ -10415,7 +10163,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 592
+      "rank": 577
     },
     {
       "ticker": "101160",
@@ -10432,7 +10180,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 593
+      "rank": 578
     },
     {
       "ticker": "095660",
@@ -10449,24 +10197,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 594
-    },
-    {
-      "ticker": "006405",
-      "name": "삼성SDI우",
-      "name_en": "",
-      "market": "코스피",
-      "sector": "기타",
-      "price": 264000,
-      "change": -1.86,
-      "volume": 6437,
-      "trading_value": 1712205500,
-      "mcap": 0.43,
-      "shares": 1617896,
-      "categories": [
-        "기타"
-      ],
-      "rank": 595
+      "rank": 579
     },
     {
       "ticker": "025900",
@@ -10483,7 +10214,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 596
+      "rank": 580
     },
     {
       "ticker": "354320",
@@ -10501,7 +10232,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "철강·금속"
       ],
-      "rank": 597
+      "rank": 581
     },
     {
       "ticker": "107640",
@@ -10518,7 +10249,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 598
+      "rank": 582
     },
     {
       "ticker": "036620",
@@ -10535,7 +10266,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 599
+      "rank": 583
     },
     {
       "ticker": "110990",
@@ -10552,24 +10283,25 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 600
+      "rank": 584
     },
     {
       "ticker": "042520",
       "name": "한스바이오메드",
-      "name_en": "",
+      "name_en": "HANS BIOMED CORPORATION",
       "market": "코스닥",
-      "sector": "기타",
+      "sector": "바이오·제약",
       "price": 29300,
       "change": 11.41,
       "volume": 149848,
       "trading_value": 4269184225,
       "mcap": 0.42,
       "shares": 14261367,
+      "induty_code": "213",
       "categories": [
-        "기타"
+        "바이오·제약"
       ],
-      "rank": 601
+      "rank": 585
     },
     {
       "ticker": "072710",
@@ -10586,7 +10318,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 602
+      "rank": 586
     },
     {
       "ticker": "013030",
@@ -10603,7 +10335,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 603
+      "rank": 587
     },
     {
       "ticker": "455900",
@@ -10620,7 +10352,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 604
+      "rank": 588
     },
     {
       "ticker": "389500",
@@ -10638,7 +10370,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기계·장비"
       ],
-      "rank": 605
+      "rank": 589
     },
     {
       "ticker": "950210",
@@ -10655,24 +10387,25 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 606
+      "rank": 590
     },
     {
       "ticker": "117730",
       "name": "티로보틱스",
-      "name_en": "",
+      "name_en": "T-Robotics co., Ltd.",
       "market": "코스닥",
-      "sector": "기타",
+      "sector": "기계·장비",
       "price": 18270,
       "change": 2.99,
       "volume": 230174,
       "trading_value": 4207661420,
       "mcap": 0.41,
       "shares": 22558043,
+      "induty_code": "29271",
       "categories": [
-        "기타"
+        "기계·장비"
       ],
-      "rank": 607
+      "rank": 591
     },
     {
       "ticker": "027410",
@@ -10689,7 +10422,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 608
+      "rank": 592
     },
     {
       "ticker": "394280",
@@ -10706,7 +10439,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 609
+      "rank": 593
     },
     {
       "ticker": "098070",
@@ -10723,7 +10456,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 610
+      "rank": 594
     },
     {
       "ticker": "004700",
@@ -10740,7 +10473,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 611
+      "rank": 595
     },
     {
       "ticker": "241770",
@@ -10757,7 +10490,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 612
+      "rank": 596
     },
     {
       "ticker": "468530",
@@ -10774,7 +10507,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 613
+      "rank": 597
     },
     {
       "ticker": "012030",
@@ -10791,7 +10524,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 614
+      "rank": 598
     },
     {
       "ticker": "092870",
@@ -10809,7 +10542,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기계·장비"
       ],
-      "rank": 615
+      "rank": 599
     },
     {
       "ticker": "080580",
@@ -10827,7 +10560,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "전자·부품"
       ],
-      "rank": 616
+      "rank": 600
     },
     {
       "ticker": "060980",
@@ -10844,7 +10577,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 617
+      "rank": 601
     },
     {
       "ticker": "0120G0",
@@ -10861,24 +10594,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 618
-    },
-    {
-      "ticker": "02826K",
-      "name": "삼성물산우B",
-      "name_en": "",
-      "market": "코스피",
-      "sector": "기타",
-      "price": 273500,
-      "change": 8.75,
-      "volume": 16811,
-      "trading_value": 4302842000,
-      "mcap": 0.4,
-      "shares": 1467590,
-      "categories": [
-        "기타"
-      ],
-      "rank": 619
+      "rank": 602
     },
     {
       "ticker": "029530",
@@ -10895,7 +10611,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 620
+      "rank": 603
     },
     {
       "ticker": "067630",
@@ -10912,7 +10628,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 621
+      "rank": 604
     },
     {
       "ticker": "215200",
@@ -10929,7 +10645,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 622
+      "rank": 605
     },
     {
       "ticker": "015360",
@@ -10946,7 +10662,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 623
+      "rank": 606
     },
     {
       "ticker": "403550",
@@ -10963,7 +10679,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 624
+      "rank": 607
     },
     {
       "ticker": "145720",
@@ -10980,7 +10696,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 625
+      "rank": 608
     },
     {
       "ticker": "456010",
@@ -10998,7 +10714,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "반도체"
       ],
-      "rank": 626
+      "rank": 609
     },
     {
       "ticker": "287840",
@@ -11015,7 +10731,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 627
+      "rank": 610
     },
     {
       "ticker": "254490",
@@ -11033,7 +10749,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "유통·소비재"
       ],
-      "rank": 628
+      "rank": 611
     },
     {
       "ticker": "144960",
@@ -11051,7 +10767,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기계·장비"
       ],
-      "rank": 629
+      "rank": 612
     },
     {
       "ticker": "010820",
@@ -11069,7 +10785,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "철강·금속"
       ],
-      "rank": 630
+      "rank": 613
     },
     {
       "ticker": "417310",
@@ -11086,7 +10802,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 631
+      "rank": 614
     },
     {
       "ticker": "306200",
@@ -11103,7 +10819,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 632
+      "rank": 615
     },
     {
       "ticker": "002810",
@@ -11120,7 +10836,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 633
+      "rank": 616
     },
     {
       "ticker": "105840",
@@ -11137,7 +10853,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 634
+      "rank": 617
     },
     {
       "ticker": "004710",
@@ -11155,7 +10871,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "전자·부품"
       ],
-      "rank": 635
+      "rank": 618
     },
     {
       "ticker": "114810",
@@ -11172,7 +10888,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 636
+      "rank": 619
     },
     {
       "ticker": "092200",
@@ -11190,7 +10906,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "자동차"
       ],
-      "rank": 637
+      "rank": 620
     },
     {
       "ticker": "047920",
@@ -11207,7 +10923,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 638
+      "rank": 621
     },
     {
       "ticker": "232530",
@@ -11224,7 +10940,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 639
+      "rank": 622
     },
     {
       "ticker": "065680",
@@ -11241,7 +10957,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 640
+      "rank": 623
     },
     {
       "ticker": "357120",
@@ -11258,7 +10974,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 641
+      "rank": 624
     },
     {
       "ticker": "215600",
@@ -11275,24 +10991,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 642
-    },
-    {
-      "ticker": "090435",
-      "name": "아모레퍼시픽우",
-      "name_en": "",
-      "market": "코스피",
-      "sector": "기타",
-      "price": 36100,
-      "change": 0.14,
-      "volume": 9399,
-      "trading_value": 340968300,
-      "mcap": 0.38,
-      "shares": 10557830,
-      "categories": [
-        "기타"
-      ],
-      "rank": 643
+      "rank": 625
     },
     {
       "ticker": "015860",
@@ -11309,7 +11008,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 644
+      "rank": 626
     },
     {
       "ticker": "078130",
@@ -11326,7 +11025,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 645
+      "rank": 627
     },
     {
       "ticker": "079370",
@@ -11343,7 +11042,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 646
+      "rank": 628
     },
     {
       "ticker": "017810",
@@ -11360,7 +11059,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 647
+      "rank": 629
     },
     {
       "ticker": "187660",
@@ -11377,7 +11076,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 648
+      "rank": 630
     },
     {
       "ticker": "006220",
@@ -11394,7 +11093,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 649
+      "rank": 631
     },
     {
       "ticker": "170900",
@@ -11411,7 +11110,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 650
+      "rank": 632
     },
     {
       "ticker": "084110",
@@ -11428,7 +11127,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 651
+      "rank": 633
     },
     {
       "ticker": "078020",
@@ -11445,7 +11144,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 652
+      "rank": 634
     },
     {
       "ticker": "265520",
@@ -11462,7 +11161,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 653
+      "rank": 635
     },
     {
       "ticker": "097520",
@@ -11479,7 +11178,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 654
+      "rank": 636
     },
     {
       "ticker": "092790",
@@ -11496,7 +11195,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 655
+      "rank": 637
     },
     {
       "ticker": "344820",
@@ -11513,7 +11212,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 656
+      "rank": 638
     },
     {
       "ticker": "016590",
@@ -11530,7 +11229,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 657
+      "rank": 639
     },
     {
       "ticker": "200470",
@@ -11547,7 +11246,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 658
+      "rank": 640
     },
     {
       "ticker": "005610",
@@ -11564,7 +11263,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 659
+      "rank": 641
     },
     {
       "ticker": "206650",
@@ -11581,7 +11280,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 660
+      "rank": 642
     },
     {
       "ticker": "003800",
@@ -11598,7 +11297,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 661
+      "rank": 643
     },
     {
       "ticker": "160980",
@@ -11615,7 +11314,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 662
+      "rank": 644
     },
     {
       "ticker": "002710",
@@ -11632,7 +11331,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 663
+      "rank": 645
     },
     {
       "ticker": "089590",
@@ -11649,7 +11348,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 664
+      "rank": 646
     },
     {
       "ticker": "417840",
@@ -11667,7 +11366,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기계·장비"
       ],
-      "rank": 665
+      "rank": 647
     },
     {
       "ticker": "029460",
@@ -11684,7 +11383,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 666
+      "rank": 648
     },
     {
       "ticker": "179900",
@@ -11701,7 +11400,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 667
+      "rank": 649
     },
     {
       "ticker": "126720",
@@ -11718,7 +11417,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 668
+      "rank": 650
     },
     {
       "ticker": "000650",
@@ -11736,7 +11435,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "운송·물류"
       ],
-      "rank": 669
+      "rank": 651
     },
     {
       "ticker": "234340",
@@ -11753,7 +11452,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 670
+      "rank": 652
     },
     {
       "ticker": "304360",
@@ -11770,7 +11469,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 671
+      "rank": 653
     },
     {
       "ticker": "452430",
@@ -11787,7 +11486,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 672
+      "rank": 654
     },
     {
       "ticker": "200880",
@@ -11804,7 +11503,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 673
+      "rank": 655
     },
     {
       "ticker": "119850",
@@ -11821,7 +11520,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 674
+      "rank": 656
     },
     {
       "ticker": "183190",
@@ -11838,7 +11537,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 675
+      "rank": 657
     },
     {
       "ticker": "052710",
@@ -11856,7 +11555,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "전자·부품"
       ],
-      "rank": 676
+      "rank": 658
     },
     {
       "ticker": "010690",
@@ -11873,7 +11572,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 677
+      "rank": 659
     },
     {
       "ticker": "389650",
@@ -11890,7 +11589,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 678
+      "rank": 660
     },
     {
       "ticker": "376270",
@@ -11907,7 +11606,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 679
+      "rank": 661
     },
     {
       "ticker": "002030",
@@ -11924,7 +11623,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 680
+      "rank": 662
     },
     {
       "ticker": "092230",
@@ -11941,7 +11640,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 681
+      "rank": 663
     },
     {
       "ticker": "482630",
@@ -11959,7 +11658,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "화학"
       ],
-      "rank": 682
+      "rank": 664
     },
     {
       "ticker": "105630",
@@ -11976,7 +11675,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 683
+      "rank": 665
     },
     {
       "ticker": "445090",
@@ -11993,7 +11692,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 684
+      "rank": 666
     },
     {
       "ticker": "441270",
@@ -12010,7 +11709,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 685
+      "rank": 667
     },
     {
       "ticker": "488900",
@@ -12027,7 +11726,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 686
+      "rank": 668
     },
     {
       "ticker": "317330",
@@ -12044,7 +11743,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 687
+      "rank": 669
     },
     {
       "ticker": "424870",
@@ -12062,7 +11761,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "부동산·기타서비스"
       ],
-      "rank": 688
+      "rank": 670
     },
     {
       "ticker": "286940",
@@ -12079,7 +11778,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 689
+      "rank": 671
     },
     {
       "ticker": "036200",
@@ -12096,7 +11795,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 690
+      "rank": 672
     },
     {
       "ticker": "192650",
@@ -12113,7 +11812,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 691
+      "rank": 673
     },
     {
       "ticker": "241520",
@@ -12131,7 +11830,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "금융"
       ],
-      "rank": 692
+      "rank": 674
     },
     {
       "ticker": "243070",
@@ -12148,7 +11847,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 693
+      "rank": 675
     },
     {
       "ticker": "084690",
@@ -12166,7 +11865,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "지주"
       ],
-      "rank": 694
+      "rank": 676
     },
     {
       "ticker": "064820",
@@ -12183,7 +11882,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 695
+      "rank": 677
     },
     {
       "ticker": "011760",
@@ -12200,7 +11899,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 696
+      "rank": 678
     },
     {
       "ticker": "025860",
@@ -12217,7 +11916,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 697
+      "rank": 679
     },
     {
       "ticker": "091700",
@@ -12234,7 +11933,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 698
+      "rank": 680
     },
     {
       "ticker": "484590",
@@ -12251,7 +11950,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 699
+      "rank": 681
     },
     {
       "ticker": "058430",
@@ -12268,7 +11967,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 700
+      "rank": 682
     },
     {
       "ticker": "219130",
@@ -12285,7 +11984,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 701
+      "rank": 683
     },
     {
       "ticker": "005950",
@@ -12303,7 +12002,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "화학"
       ],
-      "rank": 702
+      "rank": 684
     },
     {
       "ticker": "094360",
@@ -12320,7 +12019,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 703
+      "rank": 685
     },
     {
       "ticker": "069080",
@@ -12337,7 +12036,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 704
+      "rank": 686
     },
     {
       "ticker": "009290",
@@ -12354,7 +12053,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "바이오/제약"
       ],
-      "rank": 705
+      "rank": 687
     },
     {
       "ticker": "101730",
@@ -12371,7 +12070,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 706
+      "rank": 688
     },
     {
       "ticker": "091810",
@@ -12388,7 +12087,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 707
+      "rank": 689
     },
     {
       "ticker": "092460",
@@ -12405,7 +12104,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 708
+      "rank": 690
     },
     {
       "ticker": "049070",
@@ -12422,24 +12121,25 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 709
+      "rank": 691
     },
     {
       "ticker": "187870",
       "name": "디바이스",
-      "name_en": "",
+      "name_en": "DEVICE CO.,Ltd",
       "market": "코스닥",
-      "sector": "기타",
+      "sector": "기계·장비",
       "price": 23350,
       "change": 5.9,
       "volume": 180917,
       "trading_value": 4249005300,
       "mcap": 0.32,
       "shares": 13770060,
+      "induty_code": "29271",
       "categories": [
-        "기타"
+        "기계·장비"
       ],
-      "rank": 710
+      "rank": 692
     },
     {
       "ticker": "089980",
@@ -12456,7 +12156,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 711
+      "rank": 693
     },
     {
       "ticker": "078340",
@@ -12473,7 +12173,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 712
+      "rank": 694
     },
     {
       "ticker": "042370",
@@ -12490,7 +12190,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 713
+      "rank": 695
     },
     {
       "ticker": "378340",
@@ -12507,7 +12207,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 714
+      "rank": 696
     },
     {
       "ticker": "475400",
@@ -12524,7 +12224,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 715
+      "rank": 697
     },
     {
       "ticker": "005720",
@@ -12541,7 +12241,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 716
+      "rank": 698
     },
     {
       "ticker": "365270",
@@ -12558,7 +12258,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 717
+      "rank": 699
     },
     {
       "ticker": "018250",
@@ -12575,7 +12275,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 718
+      "rank": 700
     },
     {
       "ticker": "236200",
@@ -12592,7 +12292,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 719
+      "rank": 701
     },
     {
       "ticker": "086390",
@@ -12609,7 +12309,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 720
+      "rank": 702
     },
     {
       "ticker": "204620",
@@ -12626,7 +12326,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 721
+      "rank": 703
     },
     {
       "ticker": "036890",
@@ -12643,7 +12343,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 722
+      "rank": 704
     },
     {
       "ticker": "126560",
@@ -12660,7 +12360,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 723
+      "rank": 705
     },
     {
       "ticker": "203650",
@@ -12678,7 +12378,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "게임"
       ],
-      "rank": 724
+      "rank": 706
     },
     {
       "ticker": "274090",
@@ -12696,7 +12396,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "항공·방산"
       ],
-      "rank": 725
+      "rank": 707
     },
     {
       "ticker": "016800",
@@ -12713,7 +12413,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 726
+      "rank": 708
     },
     {
       "ticker": "355150",
@@ -12731,7 +12431,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "반도체"
       ],
-      "rank": 727
+      "rank": 709
     },
     {
       "ticker": "078520",
@@ -12748,7 +12448,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 728
+      "rank": 710
     },
     {
       "ticker": "046970",
@@ -12766,7 +12466,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "유통·소비재"
       ],
-      "rank": 729
+      "rank": 711
     },
     {
       "ticker": "009160",
@@ -12783,7 +12483,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 730
+      "rank": 712
     },
     {
       "ticker": "099430",
@@ -12800,7 +12500,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 731
+      "rank": 713
     },
     {
       "ticker": "073490",
@@ -12817,7 +12517,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 732
+      "rank": 714
     },
     {
       "ticker": "194370",
@@ -12834,7 +12534,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 733
+      "rank": 715
     },
     {
       "ticker": "018310",
@@ -12851,7 +12551,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 734
+      "rank": 716
     },
     {
       "ticker": "450950",
@@ -12868,7 +12568,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 735
+      "rank": 717
     },
     {
       "ticker": "136480",
@@ -12885,7 +12585,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 736
+      "rank": 718
     },
     {
       "ticker": "314930",
@@ -12902,7 +12602,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 737
+      "rank": 719
     },
     {
       "ticker": "298830",
@@ -12919,7 +12619,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 738
+      "rank": 720
     },
     {
       "ticker": "001390",
@@ -12936,7 +12636,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 739
+      "rank": 721
     },
     {
       "ticker": "025770",
@@ -12953,7 +12653,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 740
+      "rank": 722
     },
     {
       "ticker": "228760",
@@ -12970,7 +12670,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 741
+      "rank": 723
     },
     {
       "ticker": "200670",
@@ -12987,7 +12687,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 742
+      "rank": 724
     },
     {
       "ticker": "001940",
@@ -13004,7 +12704,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 743
+      "rank": 725
     },
     {
       "ticker": "200130",
@@ -13021,7 +12721,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 744
+      "rank": 726
     },
     {
       "ticker": "307180",
@@ -13038,7 +12738,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 745
+      "rank": 727
     },
     {
       "ticker": "448280",
@@ -13055,7 +12755,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 746
+      "rank": 728
     },
     {
       "ticker": "078150",
@@ -13073,7 +12773,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기계·장비"
       ],
-      "rank": 747
+      "rank": 729
     },
     {
       "ticker": "104700",
@@ -13090,7 +12790,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 748
+      "rank": 730
     },
     {
       "ticker": "061970",
@@ -13107,7 +12807,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 749
+      "rank": 731
     },
     {
       "ticker": "272450",
@@ -13124,7 +12824,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 750
+      "rank": 732
     },
     {
       "ticker": "112290",
@@ -13142,7 +12842,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "화학"
       ],
-      "rank": 751
+      "rank": 733
     },
     {
       "ticker": "036800",
@@ -13159,7 +12859,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 752
+      "rank": 734
     },
     {
       "ticker": "462350",
@@ -13176,7 +12876,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 753
+      "rank": 735
     },
     {
       "ticker": "034830",
@@ -13193,7 +12893,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 754
+      "rank": 736
     },
     {
       "ticker": "003720",
@@ -13210,7 +12910,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 755
+      "rank": 737
     },
     {
       "ticker": "002310",
@@ -13227,7 +12927,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 756
+      "rank": 738
     },
     {
       "ticker": "084010",
@@ -13244,7 +12944,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 757
+      "rank": 739
     },
     {
       "ticker": "180400",
@@ -13261,7 +12961,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 758
+      "rank": 740
     },
     {
       "ticker": "007690",
@@ -13278,7 +12978,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 759
+      "rank": 741
     },
     {
       "ticker": "900290",
@@ -13295,7 +12995,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 760
+      "rank": 742
     },
     {
       "ticker": "058970",
@@ -13312,7 +13012,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 761
+      "rank": 743
     },
     {
       "ticker": "0082N0",
@@ -13329,7 +13029,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 762
+      "rank": 744
     },
     {
       "ticker": "024720",
@@ -13346,7 +13046,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 763
+      "rank": 745
     },
     {
       "ticker": "108670",
@@ -13363,7 +13063,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 764
+      "rank": 746
     },
     {
       "ticker": "035810",
@@ -13380,7 +13080,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 765
+      "rank": 747
     },
     {
       "ticker": "001750",
@@ -13397,7 +13097,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 766
+      "rank": 748
     },
     {
       "ticker": "033270",
@@ -13414,7 +13114,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 767
+      "rank": 749
     },
     {
       "ticker": "000430",
@@ -13431,7 +13131,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 768
+      "rank": 750
     },
     {
       "ticker": "357880",
@@ -13449,7 +13149,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "게임"
       ],
-      "rank": 769
+      "rank": 751
     },
     {
       "ticker": "043150",
@@ -13466,7 +13166,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 770
+      "rank": 752
     },
     {
       "ticker": "215000",
@@ -13483,7 +13183,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 771
+      "rank": 753
     },
     {
       "ticker": "017860",
@@ -13500,7 +13200,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 772
+      "rank": 754
     },
     {
       "ticker": "064850",
@@ -13517,7 +13217,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 773
+      "rank": 755
     },
     {
       "ticker": "036170",
@@ -13535,7 +13235,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "반도체"
       ],
-      "rank": 774
+      "rank": 756
     },
     {
       "ticker": "041920",
@@ -13552,7 +13252,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 775
+      "rank": 757
     },
     {
       "ticker": "026890",
@@ -13569,7 +13269,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 776
+      "rank": 758
     },
     {
       "ticker": "096760",
@@ -13586,7 +13286,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 777
+      "rank": 759
     },
     {
       "ticker": "900140",
@@ -13603,7 +13303,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 778
+      "rank": 760
     },
     {
       "ticker": "017390",
@@ -13620,7 +13320,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 779
+      "rank": 761
     },
     {
       "ticker": "084850",
@@ -13637,7 +13337,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 780
+      "rank": 762
     },
     {
       "ticker": "459510",
@@ -13654,7 +13354,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 781
+      "rank": 763
     },
     {
       "ticker": "123890",
@@ -13671,7 +13371,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 782
+      "rank": 764
     },
     {
       "ticker": "053030",
@@ -13688,7 +13388,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 783
+      "rank": 765
     },
     {
       "ticker": "051500",
@@ -13705,7 +13405,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 784
+      "rank": 766
     },
     {
       "ticker": "003920",
@@ -13722,7 +13422,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 785
+      "rank": 767
     },
     {
       "ticker": "002900",
@@ -13739,7 +13439,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 786
+      "rank": 768
     },
     {
       "ticker": "242040",
@@ -13757,7 +13457,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "게임"
       ],
-      "rank": 787
+      "rank": 769
     },
     {
       "ticker": "023410",
@@ -13774,7 +13474,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 788
+      "rank": 770
     },
     {
       "ticker": "144510",
@@ -13791,7 +13491,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 789
+      "rank": 771
     },
     {
       "ticker": "011500",
@@ -13808,7 +13508,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 790
+      "rank": 772
     },
     {
       "ticker": "036710",
@@ -13825,7 +13525,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 791
+      "rank": 773
     },
     {
       "ticker": "092730",
@@ -13842,7 +13542,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 792
+      "rank": 774
     },
     {
       "ticker": "394800",
@@ -13859,7 +13559,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 793
+      "rank": 775
     },
     {
       "ticker": "001340",
@@ -13876,7 +13576,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 794
+      "rank": 776
     },
     {
       "ticker": "035600",
@@ -13893,7 +13593,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 795
+      "rank": 777
     },
     {
       "ticker": "416180",
@@ -13910,7 +13610,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 796
+      "rank": 778
     },
     {
       "ticker": "194700",
@@ -13927,7 +13627,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 797
+      "rank": 779
     },
     {
       "ticker": "220100",
@@ -13944,7 +13644,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 798
+      "rank": 780
     },
     {
       "ticker": "060720",
@@ -13961,7 +13661,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 799
+      "rank": 781
     },
     {
       "ticker": "309710",
@@ -13978,7 +13678,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 800
+      "rank": 782
     },
     {
       "ticker": "005010",
@@ -13995,7 +13695,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 801
+      "rank": 783
     },
     {
       "ticker": "037710",
@@ -14012,7 +13712,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 802
+      "rank": 784
     },
     {
       "ticker": "019010",
@@ -14029,7 +13729,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 803
+      "rank": 785
     },
     {
       "ticker": "352480",
@@ -14046,7 +13746,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 804
+      "rank": 786
     },
     {
       "ticker": "054950",
@@ -14063,7 +13763,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 805
+      "rank": 787
     },
     {
       "ticker": "322310",
@@ -14081,7 +13781,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기계·장비"
       ],
-      "rank": 806
+      "rank": 788
     },
     {
       "ticker": "478340",
@@ -14098,7 +13798,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 807
+      "rank": 789
     },
     {
       "ticker": "061090",
@@ -14115,7 +13815,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 808
+      "rank": 790
     },
     {
       "ticker": "389020",
@@ -14132,7 +13832,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 809
+      "rank": 791
     },
     {
       "ticker": "005680",
@@ -14149,7 +13849,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 810
+      "rank": 792
     },
     {
       "ticker": "108860",
@@ -14166,7 +13866,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 811
+      "rank": 793
     },
     {
       "ticker": "182400",
@@ -14183,7 +13883,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 812
+      "rank": 794
     },
     {
       "ticker": "0001A0",
@@ -14200,7 +13900,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 813
+      "rank": 795
     },
     {
       "ticker": "114190",
@@ -14217,7 +13917,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 814
+      "rank": 796
     },
     {
       "ticker": "382900",
@@ -14234,7 +13934,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 815
+      "rank": 797
     },
     {
       "ticker": "314130",
@@ -14251,7 +13951,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 816
+      "rank": 798
     },
     {
       "ticker": "084990",
@@ -14268,7 +13968,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 817
+      "rank": 799
     },
     {
       "ticker": "091580",
@@ -14285,7 +13985,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 818
+      "rank": 800
     },
     {
       "ticker": "125020",
@@ -14303,7 +14003,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "전기장비"
       ],
-      "rank": 819
+      "rank": 801
     },
     {
       "ticker": "046120",
@@ -14320,7 +14020,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 820
+      "rank": 802
     },
     {
       "ticker": "001230",
@@ -14337,7 +14037,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 821
+      "rank": 803
     },
     {
       "ticker": "005500",
@@ -14354,7 +14054,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 822
+      "rank": 804
     },
     {
       "ticker": "014940",
@@ -14371,7 +14071,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 823
+      "rank": 805
     },
     {
       "ticker": "389260",
@@ -14388,7 +14088,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 824
+      "rank": 806
     },
     {
       "ticker": "043370",
@@ -14405,7 +14105,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 825
+      "rank": 807
     },
     {
       "ticker": "065660",
@@ -14422,7 +14122,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 826
+      "rank": 808
     },
     {
       "ticker": "251370",
@@ -14439,7 +14139,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 827
+      "rank": 809
     },
     {
       "ticker": "051360",
@@ -14456,7 +14156,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 828
+      "rank": 810
     },
     {
       "ticker": "272110",
@@ -14473,7 +14173,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 829
+      "rank": 811
     },
     {
       "ticker": "128820",
@@ -14491,7 +14191,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "유통·소비재"
       ],
-      "rank": 830
+      "rank": 812
     },
     {
       "ticker": "093520",
@@ -14508,7 +14208,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 831
+      "rank": 813
     },
     {
       "ticker": "243840",
@@ -14525,7 +14225,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 832
+      "rank": 814
     },
     {
       "ticker": "121800",
@@ -14542,7 +14242,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 833
+      "rank": 815
     },
     {
       "ticker": "004360",
@@ -14559,7 +14259,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 834
+      "rank": 816
     },
     {
       "ticker": "002320",
@@ -14576,7 +14276,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 835
+      "rank": 817
     },
     {
       "ticker": "267980",
@@ -14593,7 +14293,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 836
+      "rank": 818
     },
     {
       "ticker": "0015G0",
@@ -14610,7 +14310,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 837
+      "rank": 819
     },
     {
       "ticker": "0008Z0",
@@ -14627,7 +14327,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 838
+      "rank": 820
     },
     {
       "ticker": "377460",
@@ -14644,7 +14344,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 839
+      "rank": 821
     },
     {
       "ticker": "950170",
@@ -14661,7 +14361,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 840
+      "rank": 822
     },
     {
       "ticker": "010580",
@@ -14678,7 +14378,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 841
+      "rank": 823
     },
     {
       "ticker": "318060",
@@ -14695,7 +14395,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 842
+      "rank": 824
     },
     {
       "ticker": "001250",
@@ -14712,7 +14412,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 843
+      "rank": 825
     },
     {
       "ticker": "005430",
@@ -14729,7 +14429,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 844
+      "rank": 826
     },
     {
       "ticker": "151860",
@@ -14746,7 +14446,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 845
+      "rank": 827
     },
     {
       "ticker": "003120",
@@ -14763,7 +14463,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 846
+      "rank": 828
     },
     {
       "ticker": "018000",
@@ -14780,7 +14480,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 847
+      "rank": 829
     },
     {
       "ticker": "017890",
@@ -14797,7 +14497,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 848
+      "rank": 830
     },
     {
       "ticker": "217730",
@@ -14814,7 +14514,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 849
+      "rank": 831
     },
     {
       "ticker": "098120",
@@ -14831,7 +14531,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 850
+      "rank": 832
     },
     {
       "ticker": "308430",
@@ -14848,7 +14548,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 851
+      "rank": 833
     },
     {
       "ticker": "100120",
@@ -14865,7 +14565,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 852
+      "rank": 834
     },
     {
       "ticker": "012860",
@@ -14882,7 +14582,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 853
+      "rank": 835
     },
     {
       "ticker": "004430",
@@ -14899,7 +14599,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 854
+      "rank": 836
     },
     {
       "ticker": "451760",
@@ -14916,7 +14616,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 855
+      "rank": 837
     },
     {
       "ticker": "000680",
@@ -14933,7 +14633,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 856
+      "rank": 838
     },
     {
       "ticker": "122900",
@@ -14950,7 +14650,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 857
+      "rank": 839
     },
     {
       "ticker": "0030R0",
@@ -14967,7 +14667,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 858
+      "rank": 840
     },
     {
       "ticker": "003960",
@@ -14984,7 +14684,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 859
+      "rank": 841
     },
     {
       "ticker": "088260",
@@ -15001,7 +14701,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 860
+      "rank": 842
     },
     {
       "ticker": "419530",
@@ -15018,7 +14718,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 861
+      "rank": 843
     },
     {
       "ticker": "037270",
@@ -15035,7 +14735,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 862
+      "rank": 844
     },
     {
       "ticker": "054210",
@@ -15052,7 +14752,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 863
+      "rank": 845
     },
     {
       "ticker": "474650",
@@ -15069,7 +14769,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 864
+      "rank": 846
     },
     {
       "ticker": "199820",
@@ -15086,7 +14786,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 865
+      "rank": 847
     },
     {
       "ticker": "095500",
@@ -15103,7 +14803,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 866
+      "rank": 848
     },
     {
       "ticker": "394420",
@@ -15120,7 +14820,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 867
+      "rank": 849
     },
     {
       "ticker": "088800",
@@ -15137,7 +14837,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 868
+      "rank": 850
     },
     {
       "ticker": "190510",
@@ -15154,7 +14854,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 869
+      "rank": 851
     },
     {
       "ticker": "034120",
@@ -15171,7 +14871,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 870
+      "rank": 852
     },
     {
       "ticker": "094480",
@@ -15188,7 +14888,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 871
+      "rank": 853
     },
     {
       "ticker": "003200",
@@ -15205,7 +14905,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 872
+      "rank": 854
     },
     {
       "ticker": "338840",
@@ -15222,7 +14922,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 873
+      "rank": 855
     },
     {
       "ticker": "357550",
@@ -15239,7 +14939,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 874
+      "rank": 856
     },
     {
       "ticker": "115450",
@@ -15256,7 +14956,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 875
+      "rank": 857
     },
     {
       "ticker": "012210",
@@ -15273,7 +14973,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 876
+      "rank": 858
     },
     {
       "ticker": "475560",
@@ -15290,24 +14990,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 877
-    },
-    {
-      "ticker": "006805",
-      "name": "미래에셋증권우",
-      "name_en": "",
-      "market": "코스피",
-      "sector": "기타",
-      "price": 16850,
-      "change": 3.06,
-      "volume": 48047,
-      "trading_value": 805162840,
-      "mcap": 0.24,
-      "shares": 14075750,
-      "categories": [
-        "기타"
-      ],
-      "rank": 878
+      "rank": 859
     },
     {
       "ticker": "099440",
@@ -15324,7 +15007,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 879
+      "rank": 860
     },
     {
       "ticker": "000490",
@@ -15341,7 +15024,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 880
+      "rank": 861
     },
     {
       "ticker": "067390",
@@ -15358,7 +15041,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 881
+      "rank": 862
     },
     {
       "ticker": "494120",
@@ -15375,7 +15058,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 882
+      "rank": 863
     },
     {
       "ticker": "334890",
@@ -15392,7 +15075,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 883
+      "rank": 864
     },
     {
       "ticker": "023760",
@@ -15409,7 +15092,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 884
+      "rank": 865
     },
     {
       "ticker": "290690",
@@ -15427,7 +15110,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "전기장비"
       ],
-      "rank": 885
+      "rank": 866
     },
     {
       "ticker": "003520",
@@ -15444,7 +15127,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 886
+      "rank": 867
     },
     {
       "ticker": "472850",
@@ -15461,7 +15144,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 887
+      "rank": 868
     },
     {
       "ticker": "294570",
@@ -15478,7 +15161,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 888
+      "rank": 869
     },
     {
       "ticker": "136490",
@@ -15495,7 +15178,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 889
+      "rank": 870
     },
     {
       "ticker": "348950",
@@ -15512,7 +15195,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 890
+      "rank": 871
     },
     {
       "ticker": "101360",
@@ -15529,7 +15212,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 891
+      "rank": 872
     },
     {
       "ticker": "000050",
@@ -15546,7 +15229,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 892
+      "rank": 873
     },
     {
       "ticker": "000320",
@@ -15563,7 +15246,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 893
+      "rank": 874
     },
     {
       "ticker": "206640",
@@ -15580,7 +15263,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 894
+      "rank": 875
     },
     {
       "ticker": "003070",
@@ -15597,7 +15280,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 895
+      "rank": 876
     },
     {
       "ticker": "051370",
@@ -15614,7 +15297,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 896
+      "rank": 877
     },
     {
       "ticker": "304100",
@@ -15631,7 +15314,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 897
+      "rank": 878
     },
     {
       "ticker": "009470",
@@ -15648,41 +15331,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 898
-    },
-    {
-      "ticker": "003555",
-      "name": "LG우",
-      "name_en": "",
-      "market": "코스피",
-      "sector": "기타",
-      "price": 76100,
-      "change": -7.98,
-      "volume": 32155,
-      "trading_value": 2446568500,
-      "mcap": 0.23,
-      "shares": 3011199,
-      "categories": [
-        "기타"
-      ],
-      "rank": 899
-    },
-    {
-      "ticker": "03473K",
-      "name": "SK우",
-      "name_en": "",
-      "market": "코스피",
-      "sector": "기타",
-      "price": 404500,
-      "change": -2.76,
-      "volume": 1036,
-      "trading_value": 415169000,
-      "mcap": 0.23,
-      "shares": 566135,
-      "categories": [
-        "기타"
-      ],
-      "rank": 900
+      "rank": 879
     },
     {
       "ticker": "159010",
@@ -15699,7 +15348,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 901
+      "rank": 880
     },
     {
       "ticker": "036030",
@@ -15716,7 +15365,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 902
+      "rank": 881
     },
     {
       "ticker": "138610",
@@ -15733,7 +15382,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 903
+      "rank": 882
     },
     {
       "ticker": "001460",
@@ -15750,7 +15399,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 904
+      "rank": 883
     },
     {
       "ticker": "035510",
@@ -15767,7 +15416,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 905
+      "rank": 884
     },
     {
       "ticker": "000540",
@@ -15784,7 +15433,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 906
+      "rank": 885
     },
     {
       "ticker": "030210",
@@ -15801,7 +15450,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 907
+      "rank": 886
     },
     {
       "ticker": "382800",
@@ -15818,7 +15467,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 908
+      "rank": 887
     },
     {
       "ticker": "067080",
@@ -15835,7 +15484,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 909
+      "rank": 888
     },
     {
       "ticker": "232680",
@@ -15853,7 +15502,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기계·장비"
       ],
-      "rank": 910
+      "rank": 889
     },
     {
       "ticker": "134380",
@@ -15870,7 +15519,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 911
+      "rank": 890
     },
     {
       "ticker": "439090",
@@ -15887,7 +15536,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 912
+      "rank": 891
     },
     {
       "ticker": "402030",
@@ -15904,7 +15553,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 913
+      "rank": 892
     },
     {
       "ticker": "037560",
@@ -15922,7 +15571,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "미디어·엔터"
       ],
-      "rank": 914
+      "rank": 893
     },
     {
       "ticker": "049630",
@@ -15939,7 +15588,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 915
+      "rank": 894
     },
     {
       "ticker": "461300",
@@ -15956,7 +15605,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 916
+      "rank": 895
     },
     {
       "ticker": "044450",
@@ -15973,7 +15622,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 917
+      "rank": 896
     },
     {
       "ticker": "0007C0",
@@ -15990,7 +15639,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 918
+      "rank": 897
     },
     {
       "ticker": "210980",
@@ -16007,7 +15656,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 919
+      "rank": 898
     },
     {
       "ticker": "011560",
@@ -16024,24 +15673,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 920
-    },
-    {
-      "ticker": "010955",
-      "name": "S-Oil우",
-      "name_en": "",
-      "market": "코스피",
-      "sector": "기타",
-      "price": 54900,
-      "change": 4.17,
-      "volume": 10609,
-      "trading_value": 580016400,
-      "mcap": 0.22,
-      "shares": 4021927,
-      "categories": [
-        "기타"
-      ],
-      "rank": 921
+      "rank": 899
     },
     {
       "ticker": "0088M0",
@@ -16058,7 +15690,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 922
+      "rank": 900
     },
     {
       "ticker": "007160",
@@ -16075,7 +15707,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 923
+      "rank": 901
     },
     {
       "ticker": "432720",
@@ -16092,7 +15724,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 924
+      "rank": 902
     },
     {
       "ticker": "000480",
@@ -16109,7 +15741,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 925
+      "rank": 903
     },
     {
       "ticker": "009680",
@@ -16126,7 +15758,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 926
+      "rank": 904
     },
     {
       "ticker": "053300",
@@ -16143,7 +15775,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 927
+      "rank": 905
     },
     {
       "ticker": "003650",
@@ -16160,7 +15792,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 928
+      "rank": 906
     },
     {
       "ticker": "092070",
@@ -16177,7 +15809,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 929
+      "rank": 907
     },
     {
       "ticker": "045390",
@@ -16194,7 +15826,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 930
+      "rank": 908
     },
     {
       "ticker": "402490",
@@ -16211,7 +15843,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 931
+      "rank": 909
     },
     {
       "ticker": "484810",
@@ -16228,7 +15860,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 932
+      "rank": 910
     },
     {
       "ticker": "123860",
@@ -16245,7 +15877,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 933
+      "rank": 911
     },
     {
       "ticker": "025000",
@@ -16262,7 +15894,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 934
+      "rank": 912
     },
     {
       "ticker": "464080",
@@ -16279,7 +15911,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 935
+      "rank": 913
     },
     {
       "ticker": "064550",
@@ -16296,7 +15928,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 936
+      "rank": 914
     },
     {
       "ticker": "417010",
@@ -16314,7 +15946,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기계·장비"
       ],
-      "rank": 937
+      "rank": 915
     },
     {
       "ticker": "226320",
@@ -16331,7 +15963,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 938
+      "rank": 916
     },
     {
       "ticker": "255220",
@@ -16348,7 +15980,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 939
+      "rank": 917
     },
     {
       "ticker": "432320",
@@ -16365,7 +15997,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 940
+      "rank": 918
     },
     {
       "ticker": "418550",
@@ -16382,7 +16014,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 941
+      "rank": 919
     },
     {
       "ticker": "001630",
@@ -16399,7 +16031,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 942
+      "rank": 920
     },
     {
       "ticker": "001790",
@@ -16416,7 +16048,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 943
+      "rank": 921
     },
     {
       "ticker": "244920",
@@ -16433,7 +16065,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 944
+      "rank": 922
     },
     {
       "ticker": "119610",
@@ -16450,24 +16082,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 945
-    },
-    {
-      "ticker": "051905",
-      "name": "LG생활건강우",
-      "name_en": "",
-      "market": "코스피",
-      "sector": "기타",
-      "price": 101500,
-      "change": -0.29,
-      "volume": 3776,
-      "trading_value": 381982000,
-      "mcap": 0.21,
-      "shares": 2096259,
-      "categories": [
-        "기타"
-      ],
-      "rank": 946
+      "rank": 923
     },
     {
       "ticker": "008490",
@@ -16484,7 +16099,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 947
+      "rank": 924
     },
     {
       "ticker": "083310",
@@ -16501,7 +16116,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 948
+      "rank": 925
     },
     {
       "ticker": "405100",
@@ -16518,7 +16133,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 949
+      "rank": 926
     },
     {
       "ticker": "032580",
@@ -16536,7 +16151,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "반도체"
       ],
-      "rank": 950
+      "rank": 927
     },
     {
       "ticker": "033920",
@@ -16553,7 +16168,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 951
+      "rank": 928
     },
     {
       "ticker": "013120",
@@ -16570,7 +16185,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 952
+      "rank": 929
     },
     {
       "ticker": "004980",
@@ -16587,7 +16202,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 953
+      "rank": 930
     },
     {
       "ticker": "065710",
@@ -16604,7 +16219,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 954
+      "rank": 931
     },
     {
       "ticker": "054450",
@@ -16621,7 +16236,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 955
+      "rank": 932
     },
     {
       "ticker": "068930",
@@ -16638,7 +16253,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 956
+      "rank": 933
     },
     {
       "ticker": "214180",
@@ -16655,7 +16270,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 957
+      "rank": 934
     },
     {
       "ticker": "004560",
@@ -16672,7 +16287,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 958
+      "rank": 935
     },
     {
       "ticker": "241590",
@@ -16689,7 +16304,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 959
+      "rank": 936
     },
     {
       "ticker": "053210",
@@ -16706,7 +16321,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 960
+      "rank": 937
     },
     {
       "ticker": "404990",
@@ -16723,7 +16338,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 961
+      "rank": 938
     },
     {
       "ticker": "004380",
@@ -16740,7 +16355,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 962
+      "rank": 939
     },
     {
       "ticker": "457550",
@@ -16757,7 +16372,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 963
+      "rank": 940
     },
     {
       "ticker": "005710",
@@ -16774,7 +16389,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 964
+      "rank": 941
     },
     {
       "ticker": "053690",
@@ -16791,7 +16406,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 965
+      "rank": 942
     },
     {
       "ticker": "380540",
@@ -16808,7 +16423,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 966
+      "rank": 943
     },
     {
       "ticker": "446540",
@@ -16825,7 +16440,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 967
+      "rank": 944
     },
     {
       "ticker": "035150",
@@ -16842,7 +16457,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 968
+      "rank": 945
     },
     {
       "ticker": "256840",
@@ -16859,7 +16474,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 969
+      "rank": 946
     },
     {
       "ticker": "377190",
@@ -16876,7 +16491,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 970
+      "rank": 947
     },
     {
       "ticker": "001780",
@@ -16893,7 +16508,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 971
+      "rank": 948
     },
     {
       "ticker": "034810",
@@ -16910,7 +16525,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 972
+      "rank": 949
     },
     {
       "ticker": "126600",
@@ -16927,7 +16542,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 973
+      "rank": 950
     },
     {
       "ticker": "092220",
@@ -16944,7 +16559,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 974
+      "rank": 951
     },
     {
       "ticker": "013890",
@@ -16961,7 +16576,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 975
+      "rank": 952
     },
     {
       "ticker": "117580",
@@ -16978,7 +16593,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 976
+      "rank": 953
     },
     {
       "ticker": "418420",
@@ -16995,7 +16610,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 977
+      "rank": 954
     },
     {
       "ticker": "353810",
@@ -17012,7 +16627,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 978
+      "rank": 955
     },
     {
       "ticker": "149950",
@@ -17029,7 +16644,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 979
+      "rank": 956
     },
     {
       "ticker": "211270",
@@ -17046,7 +16661,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 980
+      "rank": 957
     },
     {
       "ticker": "487570",
@@ -17063,7 +16678,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 981
+      "rank": 958
     },
     {
       "ticker": "126730",
@@ -17081,7 +16696,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "전자·부품"
       ],
-      "rank": 982
+      "rank": 959
     },
     {
       "ticker": "339770",
@@ -17098,7 +16713,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 983
+      "rank": 960
     },
     {
       "ticker": "094820",
@@ -17115,7 +16730,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 984
+      "rank": 961
     },
     {
       "ticker": "308080",
@@ -17132,7 +16747,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 985
+      "rank": 962
     },
     {
       "ticker": "039570",
@@ -17149,7 +16764,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 986
+      "rank": 963
     },
     {
       "ticker": "007860",
@@ -17166,7 +16781,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 987
+      "rank": 964
     },
     {
       "ticker": "102120",
@@ -17183,7 +16798,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 988
+      "rank": 965
     },
     {
       "ticker": "033530",
@@ -17200,7 +16815,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 989
+      "rank": 966
     },
     {
       "ticker": "078070",
@@ -17217,7 +16832,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 990
+      "rank": 967
     },
     {
       "ticker": "001080",
@@ -17234,7 +16849,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 991
+      "rank": 968
     },
     {
       "ticker": "199430",
@@ -17251,7 +16866,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 992
+      "rank": 969
     },
     {
       "ticker": "372170",
@@ -17268,7 +16883,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 993
+      "rank": 970
     },
     {
       "ticker": "298690",
@@ -17285,7 +16900,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 994
+      "rank": 971
     },
     {
       "ticker": "126700",
@@ -17302,7 +16917,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 995
+      "rank": 972
     },
     {
       "ticker": "083930",
@@ -17319,7 +16934,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 996
+      "rank": 973
     },
     {
       "ticker": "036560",
@@ -17336,7 +16951,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 997
+      "rank": 974
     },
     {
       "ticker": "003220",
@@ -17353,7 +16968,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 998
+      "rank": 975
     },
     {
       "ticker": "462860",
@@ -17370,7 +16985,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 999
+      "rank": 976
     },
     {
       "ticker": "095570",
@@ -17387,24 +17002,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 1000
-    },
-    {
-      "ticker": "003547",
-      "name": "대신증권2우B",
-      "name_en": "",
-      "market": "코스피",
-      "sector": "기타",
-      "price": 19750,
-      "change": 0.82,
-      "volume": 14812,
-      "trading_value": 290820810,
-      "mcap": 0.19,
-      "shares": 9803333,
-      "categories": [
-        "기타"
-      ],
-      "rank": 1001
+      "rank": 977
     },
     {
       "ticker": "488280",
@@ -17421,7 +17019,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 1002
+      "rank": 978
     },
     {
       "ticker": "052330",
@@ -17438,7 +17036,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 1003
+      "rank": 979
     },
     {
       "ticker": "192440",
@@ -17455,7 +17053,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 1004
+      "rank": 980
     },
     {
       "ticker": "237880",
@@ -17472,7 +17070,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 1005
+      "rank": 981
     },
     {
       "ticker": "138360",
@@ -17489,7 +17087,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 1006
+      "rank": 982
     },
     {
       "ticker": "264850",
@@ -17506,7 +17104,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 1007
+      "rank": 983
     },
     {
       "ticker": "119830",
@@ -17523,7 +17121,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 1008
+      "rank": 984
     },
     {
       "ticker": "102260",
@@ -17540,7 +17138,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 1009
+      "rank": 985
     },
     {
       "ticker": "016580",
@@ -17557,7 +17155,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 1010
+      "rank": 986
     },
     {
       "ticker": "122990",
@@ -17574,7 +17172,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 1011
+      "rank": 987
     },
     {
       "ticker": "001130",
@@ -17591,7 +17189,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 1012
+      "rank": 988
     },
     {
       "ticker": "066620",
@@ -17608,7 +17206,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 1013
+      "rank": 989
     },
     {
       "ticker": "039830",
@@ -17625,7 +17223,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 1014
+      "rank": 990
     },
     {
       "ticker": "036190",
@@ -17642,7 +17240,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 1015
+      "rank": 991
     },
     {
       "ticker": "004310",
@@ -17659,7 +17257,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 1016
+      "rank": 992
     },
     {
       "ticker": "216080",
@@ -17676,7 +17274,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 1017
+      "rank": 993
     },
     {
       "ticker": "489500",
@@ -17693,7 +17291,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 1018
+      "rank": 994
     },
     {
       "ticker": "003350",
@@ -17710,7 +17308,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 1019
+      "rank": 995
     },
     {
       "ticker": "121440",
@@ -17727,7 +17325,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 1020
+      "rank": 996
     },
     {
       "ticker": "028100",
@@ -17744,7 +17342,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 1021
+      "rank": 997
     },
     {
       "ticker": "000140",
@@ -17761,7 +17359,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 1022
+      "rank": 998
     },
     {
       "ticker": "012200",
@@ -17778,7 +17376,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 1023
+      "rank": 999
     },
     {
       "ticker": "041020",
@@ -17795,7 +17393,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 1024
+      "rank": 1000
     },
     {
       "ticker": "108380",
@@ -17812,7 +17410,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 1025
+      "rank": 1001
     },
     {
       "ticker": "194480",
@@ -17829,7 +17427,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 1026
+      "rank": 1002
     },
     {
       "ticker": "123330",
@@ -17846,7 +17444,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 1027
+      "rank": 1003
     },
     {
       "ticker": "016790",
@@ -17863,7 +17461,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 1028
+      "rank": 1004
     },
     {
       "ticker": "042600",
@@ -17880,7 +17478,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 1029
+      "rank": 1005
     },
     {
       "ticker": "474170",
@@ -17897,7 +17495,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 1030
+      "rank": 1006
     },
     {
       "ticker": "039840",
@@ -17914,7 +17512,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 1031
+      "rank": 1007
     },
     {
       "ticker": "361390",
@@ -17931,7 +17529,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 1032
+      "rank": 1008
     },
     {
       "ticker": "024060",
@@ -17949,24 +17547,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "유통·소비재"
       ],
-      "rank": 1033
-    },
-    {
-      "ticker": "001045",
-      "name": "CJ우",
-      "name_en": "",
-      "market": "코스피",
-      "sector": "기타",
-      "price": 82000,
-      "change": -2.26,
-      "volume": 2698,
-      "trading_value": 220563700,
-      "mcap": 0.19,
-      "shares": 2260223,
-      "categories": [
-        "기타"
-      ],
-      "rank": 1034
+      "rank": 1009
     },
     {
       "ticker": "452450",
@@ -17983,7 +17564,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 1035
+      "rank": 1010
     },
     {
       "ticker": "013580",
@@ -18000,7 +17581,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 1036
+      "rank": 1011
     },
     {
       "ticker": "100250",
@@ -18018,7 +17599,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "섬유·패션·생활"
       ],
-      "rank": 1037
+      "rank": 1012
     },
     {
       "ticker": "484120",
@@ -18035,7 +17616,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 1038
+      "rank": 1013
     },
     {
       "ticker": "264450",
@@ -18052,7 +17633,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 1039
+      "rank": 1014
     },
     {
       "ticker": "086820",
@@ -18069,7 +17650,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 1040
+      "rank": 1015
     },
     {
       "ticker": "950140",
@@ -18086,7 +17667,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 1041
+      "rank": 1016
     },
     {
       "ticker": "321550",
@@ -18103,7 +17684,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 1042
+      "rank": 1017
     },
     {
       "ticker": "102460",
@@ -18120,7 +17701,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 1043
+      "rank": 1018
     },
     {
       "ticker": "003610",
@@ -18137,7 +17718,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 1044
+      "rank": 1019
     },
     {
       "ticker": "123410",
@@ -18154,7 +17735,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 1045
+      "rank": 1020
     },
     {
       "ticker": "000390",
@@ -18171,7 +17752,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 1046
+      "rank": 1021
     },
     {
       "ticker": "146320",
@@ -18188,7 +17769,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 1047
+      "rank": 1022
     },
     {
       "ticker": "031440",
@@ -18205,7 +17786,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 1048
+      "rank": 1023
     },
     {
       "ticker": "012610",
@@ -18222,7 +17803,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 1049
+      "rank": 1024
     },
     {
       "ticker": "071200",
@@ -18239,7 +17820,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 1050
+      "rank": 1025
     },
     {
       "ticker": "002150",
@@ -18256,7 +17837,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 1051
+      "rank": 1026
     },
     {
       "ticker": "011690",
@@ -18273,7 +17854,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 1052
+      "rank": 1027
     },
     {
       "ticker": "039860",
@@ -18290,7 +17871,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 1053
+      "rank": 1028
     },
     {
       "ticker": "270660",
@@ -18307,7 +17888,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 1054
+      "rank": 1029
     },
     {
       "ticker": "377450",
@@ -18324,7 +17905,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 1055
+      "rank": 1030
     },
     {
       "ticker": "008350",
@@ -18341,7 +17922,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 1056
+      "rank": 1031
     },
     {
       "ticker": "176750",
@@ -18358,7 +17939,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 1057
+      "rank": 1032
     },
     {
       "ticker": "388050",
@@ -18375,7 +17956,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 1058
+      "rank": 1033
     },
     {
       "ticker": "003460",
@@ -18392,7 +17973,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 1059
+      "rank": 1034
     },
     {
       "ticker": "234080",
@@ -18409,7 +17990,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 1060
+      "rank": 1035
     },
     {
       "ticker": "044820",
@@ -18426,7 +18007,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 1061
+      "rank": 1036
     },
     {
       "ticker": "084680",
@@ -18443,7 +18024,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 1062
+      "rank": 1037
     },
     {
       "ticker": "371950",
@@ -18460,7 +18041,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 1063
+      "rank": 1038
     },
     {
       "ticker": "002100",
@@ -18477,7 +18058,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 1064
+      "rank": 1039
     },
     {
       "ticker": "293580",
@@ -18494,7 +18075,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 1065
+      "rank": 1040
     },
     {
       "ticker": "226590",
@@ -18511,7 +18092,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 1066
+      "rank": 1041
     },
     {
       "ticker": "024840",
@@ -18529,7 +18110,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "철강·금속"
       ],
-      "rank": 1067
+      "rank": 1042
     },
     {
       "ticker": "042420",
@@ -18546,7 +18127,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 1068
+      "rank": 1043
     },
     {
       "ticker": "000300",
@@ -18563,7 +18144,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 1069
+      "rank": 1044
     },
     {
       "ticker": "080160",
@@ -18580,7 +18161,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 1070
+      "rank": 1045
     },
     {
       "ticker": "114840",
@@ -18597,7 +18178,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 1071
+      "rank": 1046
     },
     {
       "ticker": "118990",
@@ -18614,7 +18195,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 1072
+      "rank": 1047
     },
     {
       "ticker": "079960",
@@ -18631,7 +18212,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 1073
+      "rank": 1048
     },
     {
       "ticker": "267320",
@@ -18648,7 +18229,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 1074
+      "rank": 1049
     },
     {
       "ticker": "024800",
@@ -18665,7 +18246,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 1075
+      "rank": 1050
     },
     {
       "ticker": "187790",
@@ -18682,7 +18263,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 1076
+      "rank": 1051
     },
     {
       "ticker": "092130",
@@ -18699,7 +18280,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 1077
+      "rank": 1052
     },
     {
       "ticker": "025820",
@@ -18716,7 +18297,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 1078
+      "rank": 1053
     },
     {
       "ticker": "209640",
@@ -18733,7 +18314,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 1079
+      "rank": 1054
     },
     {
       "ticker": "140610",
@@ -18750,7 +18331,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 1080
+      "rank": 1055
     },
     {
       "ticker": "143160",
@@ -18767,7 +18348,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 1081
+      "rank": 1056
     },
     {
       "ticker": "058820",
@@ -18784,7 +18365,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 1082
+      "rank": 1057
     },
     {
       "ticker": "403850",
@@ -18801,7 +18382,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 1083
+      "rank": 1058
     },
     {
       "ticker": "032620",
@@ -18818,7 +18399,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 1084
+      "rank": 1059
     },
     {
       "ticker": "481070",
@@ -18835,7 +18416,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 1085
+      "rank": 1060
     },
     {
       "ticker": "016450",
@@ -18852,24 +18433,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 1086
-    },
-    {
-      "ticker": "458650",
-      "name": "성우",
-      "name_en": "",
-      "market": "코스닥",
-      "sector": "기타",
-      "price": 11210,
-      "change": 0.9,
-      "volume": 25019,
-      "trading_value": 279321525,
-      "mcap": 0.17,
-      "shares": 15045670,
-      "categories": [
-        "기타"
-      ],
-      "rank": 1087
+      "rank": 1061
     },
     {
       "ticker": "049430",
@@ -18886,7 +18450,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 1088
+      "rank": 1062
     },
     {
       "ticker": "203400",
@@ -18903,7 +18467,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 1089
+      "rank": 1063
     },
     {
       "ticker": "077500",
@@ -18920,7 +18484,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 1090
+      "rank": 1064
     },
     {
       "ticker": "101530",
@@ -18937,7 +18501,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 1091
+      "rank": 1065
     },
     {
       "ticker": "445180",
@@ -18954,7 +18518,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 1092
+      "rank": 1066
     },
     {
       "ticker": "462520",
@@ -18971,7 +18535,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 1093
+      "rank": 1067
     },
     {
       "ticker": "037030",
@@ -18988,7 +18552,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 1094
+      "rank": 1068
     },
     {
       "ticker": "115500",
@@ -19005,7 +18569,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 1095
+      "rank": 1069
     },
     {
       "ticker": "025560",
@@ -19023,7 +18587,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "전자·부품"
       ],
-      "rank": 1096
+      "rank": 1070
     },
     {
       "ticker": "140670",
@@ -19040,24 +18604,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 1097
-    },
-    {
-      "ticker": "011785",
-      "name": "금호석유화학우",
-      "name_en": "",
-      "market": "코스피",
-      "sector": "기타",
-      "price": 54400,
-      "change": -1.63,
-      "volume": 2841,
-      "trading_value": 155289800,
-      "mcap": 0.16,
-      "shares": 3023486,
-      "categories": [
-        "기타"
-      ],
-      "rank": 1098
+      "rank": 1071
     },
     {
       "ticker": "083500",
@@ -19074,7 +18621,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 1099
+      "rank": 1072
     },
     {
       "ticker": "331920",
@@ -19091,7 +18638,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 1100
+      "rank": 1073
     },
     {
       "ticker": "016880",
@@ -19108,7 +18655,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 1101
+      "rank": 1074
     },
     {
       "ticker": "285490",
@@ -19125,24 +18672,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 1102
-    },
-    {
-      "ticker": "097955",
-      "name": "CJ제일제당 우",
-      "name_en": "",
-      "market": "코스피",
-      "sector": "기타",
-      "price": 123200,
-      "change": 0.16,
-      "volume": 2209,
-      "trading_value": 271991000,
-      "mcap": 0.16,
-      "shares": 1327433,
-      "categories": [
-        "기타"
-      ],
-      "rank": 1103
+      "rank": 1075
     },
     {
       "ticker": "038390",
@@ -19159,7 +18689,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 1104
+      "rank": 1076
     },
     {
       "ticker": "086980",
@@ -19176,7 +18706,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 1105
+      "rank": 1077
     },
     {
       "ticker": "017550",
@@ -19193,7 +18723,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 1106
+      "rank": 1078
     },
     {
       "ticker": "400760",
@@ -19210,7 +18740,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 1107
+      "rank": 1079
     },
     {
       "ticker": "053080",
@@ -19227,7 +18757,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 1108
+      "rank": 1080
     },
     {
       "ticker": "015230",
@@ -19244,7 +18774,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 1109
+      "rank": 1081
     },
     {
       "ticker": "147830",
@@ -19261,7 +18791,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 1110
+      "rank": 1082
     },
     {
       "ticker": "293480",
@@ -19278,7 +18808,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 1111
+      "rank": 1083
     },
     {
       "ticker": "380550",
@@ -19295,7 +18825,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 1112
+      "rank": 1084
     },
     {
       "ticker": "460850",
@@ -19312,7 +18842,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 1113
+      "rank": 1085
     },
     {
       "ticker": "000860",
@@ -19329,7 +18859,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 1114
+      "rank": 1086
     },
     {
       "ticker": "259630",
@@ -19346,7 +18876,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 1115
+      "rank": 1087
     },
     {
       "ticker": "095700",
@@ -19363,7 +18893,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 1116
+      "rank": 1088
     },
     {
       "ticker": "166480",
@@ -19380,7 +18910,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 1117
+      "rank": 1089
     },
     {
       "ticker": "143240",
@@ -19397,7 +18927,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 1118
+      "rank": 1090
     },
     {
       "ticker": "060150",
@@ -19414,7 +18944,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 1119
+      "rank": 1091
     },
     {
       "ticker": "007330",
@@ -19431,7 +18961,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 1120
+      "rank": 1092
     },
     {
       "ticker": "066410",
@@ -19448,7 +18978,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 1121
+      "rank": 1093
     },
     {
       "ticker": "049960",
@@ -19465,7 +18995,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 1122
+      "rank": 1094
     },
     {
       "ticker": "0011A0",
@@ -19482,7 +19012,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 1123
+      "rank": 1095
     },
     {
       "ticker": "071840",
@@ -19499,7 +19029,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 1124
+      "rank": 1096
     },
     {
       "ticker": "046070",
@@ -19516,7 +19046,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 1125
+      "rank": 1097
     },
     {
       "ticker": "004150",
@@ -19533,7 +19063,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 1126
+      "rank": 1098
     },
     {
       "ticker": "007570",
@@ -19550,7 +19080,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 1127
+      "rank": 1099
     },
     {
       "ticker": "000520",
@@ -19567,7 +19097,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 1128
+      "rank": 1100
     },
     {
       "ticker": "104480",
@@ -19584,7 +19114,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 1129
+      "rank": 1101
     },
     {
       "ticker": "260870",
@@ -19601,7 +19131,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 1130
+      "rank": 1102
     },
     {
       "ticker": "234690",
@@ -19618,7 +19148,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 1131
+      "rank": 1103
     },
     {
       "ticker": "036010",
@@ -19635,7 +19165,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 1132
+      "rank": 1104
     },
     {
       "ticker": "106190",
@@ -19652,7 +19182,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 1133
+      "rank": 1105
     },
     {
       "ticker": "023910",
@@ -19669,7 +19199,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 1134
+      "rank": 1106
     },
     {
       "ticker": "271980",
@@ -19686,7 +19216,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 1135
+      "rank": 1107
     },
     {
       "ticker": "051980",
@@ -19703,7 +19233,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 1136
+      "rank": 1108
     },
     {
       "ticker": "046440",
@@ -19720,7 +19250,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 1137
+      "rank": 1109
     },
     {
       "ticker": "289080",
@@ -19737,7 +19267,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 1138
+      "rank": 1110
     },
     {
       "ticker": "004090",
@@ -19754,7 +19284,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 1139
+      "rank": 1111
     },
     {
       "ticker": "047310",
@@ -19771,7 +19301,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 1140
+      "rank": 1112
     },
     {
       "ticker": "179290",
@@ -19788,7 +19318,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 1141
+      "rank": 1113
     },
     {
       "ticker": "289930",
@@ -19805,7 +19335,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 1142
+      "rank": 1114
     },
     {
       "ticker": "018470",
@@ -19822,7 +19352,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 1143
+      "rank": 1115
     },
     {
       "ticker": "082800",
@@ -19840,7 +19370,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "바이오·제약"
       ],
-      "rank": 1144
+      "rank": 1116
     },
     {
       "ticker": "000020",
@@ -19857,7 +19387,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "바이오/제약"
       ],
-      "rank": 1145
+      "rank": 1117
     },
     {
       "ticker": "142210",
@@ -19874,7 +19404,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 1146
+      "rank": 1118
     },
     {
       "ticker": "002170",
@@ -19891,7 +19421,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 1147
+      "rank": 1119
     },
     {
       "ticker": "081000",
@@ -19908,7 +19438,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 1148
+      "rank": 1120
     },
     {
       "ticker": "213500",
@@ -19925,7 +19455,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 1149
+      "rank": 1121
     },
     {
       "ticker": "039560",
@@ -19942,7 +19472,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 1150
+      "rank": 1122
     },
     {
       "ticker": "011040",
@@ -19959,7 +19489,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 1151
+      "rank": 1123
     },
     {
       "ticker": "282880",
@@ -19976,7 +19506,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 1152
+      "rank": 1124
     },
     {
       "ticker": "086670",
@@ -19993,7 +19523,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 1153
+      "rank": 1125
     },
     {
       "ticker": "300080",
@@ -20010,7 +19540,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 1154
+      "rank": 1126
     },
     {
       "ticker": "005990",
@@ -20027,7 +19557,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 1155
+      "rank": 1127
     },
     {
       "ticker": "073010",
@@ -20044,7 +19574,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 1156
+      "rank": 1128
     },
     {
       "ticker": "048870",
@@ -20061,7 +19591,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 1157
+      "rank": 1129
     },
     {
       "ticker": "090350",
@@ -20078,7 +19608,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 1158
+      "rank": 1130
     },
     {
       "ticker": "006060",
@@ -20095,7 +19625,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 1159
+      "rank": 1131
     },
     {
       "ticker": "005960",
@@ -20112,7 +19642,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 1160
+      "rank": 1132
     },
     {
       "ticker": "293780",
@@ -20129,7 +19659,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 1161
+      "rank": 1133
     },
     {
       "ticker": "003830",
@@ -20146,7 +19676,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 1162
+      "rank": 1134
     },
     {
       "ticker": "264660",
@@ -20163,7 +19693,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 1163
+      "rank": 1135
     },
     {
       "ticker": "473980",
@@ -20180,7 +19710,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 1164
+      "rank": 1136
     },
     {
       "ticker": "000970",
@@ -20197,7 +19727,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 1165
+      "rank": 1137
     },
     {
       "ticker": "072870",
@@ -20214,7 +19744,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 1166
+      "rank": 1138
     },
     {
       "ticker": "388790",
@@ -20232,7 +19762,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "전자·부품"
       ],
-      "rank": 1167
+      "rank": 1139
     },
     {
       "ticker": "221800",
@@ -20249,7 +19779,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 1168
+      "rank": 1140
     },
     {
       "ticker": "222040",
@@ -20266,7 +19796,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 1169
+      "rank": 1141
     },
     {
       "ticker": "054800",
@@ -20283,7 +19813,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 1170
+      "rank": 1142
     },
     {
       "ticker": "067280",
@@ -20300,7 +19830,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 1171
+      "rank": 1143
     },
     {
       "ticker": "021080",
@@ -20317,7 +19847,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 1172
+      "rank": 1144
     },
     {
       "ticker": "299030",
@@ -20334,7 +19864,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 1173
+      "rank": 1145
     },
     {
       "ticker": "307930",
@@ -20352,7 +19882,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "금융"
       ],
-      "rank": 1174
+      "rank": 1146
     },
     {
       "ticker": "001520",
@@ -20369,7 +19899,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 1175
+      "rank": 1147
     },
     {
       "ticker": "396300",
@@ -20386,7 +19916,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 1176
+      "rank": 1148
     },
     {
       "ticker": "298000",
@@ -20403,7 +19933,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 1177
+      "rank": 1149
     },
     {
       "ticker": "469610",
@@ -20420,7 +19950,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 1178
+      "rank": 1150
     },
     {
       "ticker": "003480",
@@ -20437,7 +19967,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 1179
+      "rank": 1151
     },
     {
       "ticker": "260970",
@@ -20454,7 +19984,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 1180
+      "rank": 1152
     },
     {
       "ticker": "002220",
@@ -20471,7 +20001,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 1181
+      "rank": 1153
     },
     {
       "ticker": "220260",
@@ -20488,7 +20018,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 1182
+      "rank": 1154
     },
     {
       "ticker": "125210",
@@ -20505,7 +20035,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 1183
+      "rank": 1155
     },
     {
       "ticker": "004970",
@@ -20522,7 +20052,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 1184
+      "rank": 1156
     },
     {
       "ticker": "101170",
@@ -20539,7 +20069,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 1185
+      "rank": 1157
     },
     {
       "ticker": "001540",
@@ -20556,7 +20086,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 1186
+      "rank": 1158
     },
     {
       "ticker": "093190",
@@ -20573,7 +20103,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 1187
+      "rank": 1159
     },
     {
       "ticker": "321370",
@@ -20591,7 +20121,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "전자·부품"
       ],
-      "rank": 1188
+      "rank": 1160
     },
     {
       "ticker": "062970",
@@ -20609,7 +20139,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "전자·부품"
       ],
-      "rank": 1189
+      "rank": 1161
     },
     {
       "ticker": "334970",
@@ -20626,7 +20156,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 1190
+      "rank": 1162
     },
     {
       "ticker": "474610",
@@ -20643,7 +20173,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 1191
+      "rank": 1163
     },
     {
       "ticker": "008970",
@@ -20660,7 +20190,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 1192
+      "rank": 1164
     },
     {
       "ticker": "008830",
@@ -20677,7 +20207,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 1193
+      "rank": 1165
     },
     {
       "ticker": "059120",
@@ -20694,7 +20224,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 1194
+      "rank": 1166
     },
     {
       "ticker": "158430",
@@ -20711,7 +20241,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 1195
+      "rank": 1167
     },
     {
       "ticker": "041440",
@@ -20728,7 +20258,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 1196
+      "rank": 1168
     },
     {
       "ticker": "317400",
@@ -20745,7 +20275,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 1197
+      "rank": 1169
     },
     {
       "ticker": "105330",
@@ -20762,7 +20292,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 1198
+      "rank": 1170
     },
     {
       "ticker": "297890",
@@ -20779,7 +20309,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 1199
+      "rank": 1171
     },
     {
       "ticker": "040160",
@@ -20796,7 +20326,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 1200
+      "rank": 1172
     },
     {
       "ticker": "056090",
@@ -20813,7 +20343,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 1201
+      "rank": 1173
     },
     {
       "ticker": "192410",
@@ -20830,7 +20360,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 1202
+      "rank": 1174
     },
     {
       "ticker": "002990",
@@ -20847,7 +20377,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 1203
+      "rank": 1175
     },
     {
       "ticker": "005160",
@@ -20864,7 +20394,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 1204
+      "rank": 1176
     },
     {
       "ticker": "094280",
@@ -20881,7 +20411,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 1205
+      "rank": 1177
     },
     {
       "ticker": "009070",
@@ -20898,7 +20428,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 1206
+      "rank": 1178
     },
     {
       "ticker": "017510",
@@ -20915,7 +20445,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 1207
+      "rank": 1179
     },
     {
       "ticker": "307750",
@@ -20932,7 +20462,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 1208
+      "rank": 1180
     },
     {
       "ticker": "240550",
@@ -20949,7 +20479,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 1209
+      "rank": 1181
     },
     {
       "ticker": "015890",
@@ -20966,7 +20496,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 1210
+      "rank": 1182
     },
     {
       "ticker": "023600",
@@ -20983,7 +20513,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 1211
+      "rank": 1183
     },
     {
       "ticker": "108230",
@@ -21000,7 +20530,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 1212
+      "rank": 1184
     },
     {
       "ticker": "013990",
@@ -21017,7 +20547,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 1213
+      "rank": 1185
     },
     {
       "ticker": "002780",
@@ -21035,7 +20565,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "건설·건자재"
       ],
-      "rank": 1214
+      "rank": 1186
     },
     {
       "ticker": "210540",
@@ -21052,7 +20582,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 1215
+      "rank": 1187
     },
     {
       "ticker": "214420",
@@ -21069,7 +20599,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 1216
+      "rank": 1188
     },
     {
       "ticker": "00279K",
@@ -21086,7 +20616,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 1217
+      "rank": 1189
     },
     {
       "ticker": "452190",
@@ -21103,7 +20633,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 1218
+      "rank": 1190
     },
     {
       "ticker": "032940",
@@ -21120,7 +20650,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 1219
+      "rank": 1191
     },
     {
       "ticker": "101970",
@@ -21137,7 +20667,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 1220
+      "rank": 1192
     },
     {
       "ticker": "000700",
@@ -21154,7 +20684,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 1221
+      "rank": 1193
     },
     {
       "ticker": "263860",
@@ -21171,7 +20701,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 1222
+      "rank": 1194
     },
     {
       "ticker": "049720",
@@ -21188,7 +20718,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 1223
+      "rank": 1195
     },
     {
       "ticker": "040350",
@@ -21205,7 +20735,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 1224
+      "rank": 1196
     },
     {
       "ticker": "272550",
@@ -21222,7 +20752,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 1225
+      "rank": 1197
     },
     {
       "ticker": "109740",
@@ -21239,7 +20769,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 1226
+      "rank": 1198
     },
     {
       "ticker": "037350",
@@ -21256,7 +20786,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 1227
+      "rank": 1199
     },
     {
       "ticker": "217270",
@@ -21273,7 +20803,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 1228
+      "rank": 1200
     },
     {
       "ticker": "019180",
@@ -21290,7 +20820,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 1229
+      "rank": 1201
     },
     {
       "ticker": "204610",
@@ -21307,7 +20837,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 1230
+      "rank": 1202
     },
     {
       "ticker": "038290",
@@ -21324,7 +20854,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 1231
+      "rank": 1203
     },
     {
       "ticker": "001360",
@@ -21341,7 +20871,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 1232
+      "rank": 1204
     },
     {
       "ticker": "396270",
@@ -21358,7 +20888,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 1233
+      "rank": 1205
     },
     {
       "ticker": "217950",
@@ -21375,7 +20905,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 1234
+      "rank": 1206
     },
     {
       "ticker": "163730",
@@ -21392,7 +20922,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 1235
+      "rank": 1207
     },
     {
       "ticker": "054920",
@@ -21409,7 +20939,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 1236
+      "rank": 1208
     },
     {
       "ticker": "086890",
@@ -21426,7 +20956,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 1237
+      "rank": 1209
     },
     {
       "ticker": "475230",
@@ -21443,7 +20973,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 1238
+      "rank": 1210
     },
     {
       "ticker": "453450",
@@ -21460,7 +20990,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 1239
+      "rank": 1211
     },
     {
       "ticker": "148150",
@@ -21477,7 +21007,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 1240
+      "rank": 1212
     },
     {
       "ticker": "340450",
@@ -21494,7 +21024,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 1241
+      "rank": 1213
     },
     {
       "ticker": "115310",
@@ -21511,7 +21041,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 1242
+      "rank": 1214
     },
     {
       "ticker": "214390",
@@ -21528,7 +21058,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 1243
+      "rank": 1215
     },
     {
       "ticker": "016740",
@@ -21545,7 +21075,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 1244
+      "rank": 1216
     },
     {
       "ticker": "269620",
@@ -21562,7 +21092,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 1245
+      "rank": 1217
     },
     {
       "ticker": "408920",
@@ -21579,7 +21109,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 1246
+      "rank": 1218
     },
     {
       "ticker": "0004V0",
@@ -21596,7 +21126,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 1247
+      "rank": 1219
     },
     {
       "ticker": "078000",
@@ -21613,7 +21143,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 1248
+      "rank": 1220
     },
     {
       "ticker": "381620",
@@ -21630,7 +21160,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 1249
+      "rank": 1221
     },
     {
       "ticker": "322180",
@@ -21647,7 +21177,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 1250
+      "rank": 1222
     },
     {
       "ticker": "107590",
@@ -21664,7 +21194,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 1251
+      "rank": 1223
     },
     {
       "ticker": "095190",
@@ -21681,7 +21211,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 1252
+      "rank": 1224
     },
     {
       "ticker": "084670",
@@ -21699,7 +21229,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "운송·물류"
       ],
-      "rank": 1253
+      "rank": 1225
     },
     {
       "ticker": "333430",
@@ -21716,7 +21246,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 1254
+      "rank": 1226
     },
     {
       "ticker": "297090",
@@ -21733,7 +21263,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 1255
+      "rank": 1227
     },
     {
       "ticker": "003100",
@@ -21750,7 +21280,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 1256
+      "rank": 1228
     },
     {
       "ticker": "357580",
@@ -21767,7 +21297,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 1257
+      "rank": 1229
     },
     {
       "ticker": "089470",
@@ -21784,7 +21314,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 1258
+      "rank": 1230
     },
     {
       "ticker": "256940",
@@ -21801,7 +21331,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 1259
+      "rank": 1231
     },
     {
       "ticker": "011280",
@@ -21818,7 +21348,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 1260
+      "rank": 1232
     },
     {
       "ticker": "053700",
@@ -21835,7 +21365,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 1261
+      "rank": 1233
     },
     {
       "ticker": "024090",
@@ -21852,7 +21382,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 1262
+      "rank": 1234
     },
     {
       "ticker": "047560",
@@ -21869,7 +21399,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 1263
+      "rank": 1235
     },
     {
       "ticker": "068790",
@@ -21886,7 +21416,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 1264
+      "rank": 1236
     },
     {
       "ticker": "136540",
@@ -21903,7 +21433,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 1265
+      "rank": 1237
     },
     {
       "ticker": "122450",
@@ -21920,7 +21450,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 1266
+      "rank": 1238
     },
     {
       "ticker": "306620",
@@ -21937,7 +21467,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 1267
+      "rank": 1239
     },
     {
       "ticker": "037070",
@@ -21954,7 +21484,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 1268
+      "rank": 1240
     },
     {
       "ticker": "014710",
@@ -21971,7 +21501,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 1269
+      "rank": 1241
     },
     {
       "ticker": "079430",
@@ -21988,7 +21518,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 1270
+      "rank": 1242
     },
     {
       "ticker": "069510",
@@ -22005,7 +21535,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 1271
+      "rank": 1243
     },
     {
       "ticker": "014280",
@@ -22022,7 +21552,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 1272
+      "rank": 1244
     },
     {
       "ticker": "009270",
@@ -22039,7 +21569,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 1273
+      "rank": 1245
     },
     {
       "ticker": "205500",
@@ -22056,7 +21586,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 1274
+      "rank": 1246
     },
     {
       "ticker": "008040",
@@ -22073,7 +21603,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 1275
+      "rank": 1247
     },
     {
       "ticker": "350520",
@@ -22090,7 +21620,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 1276
+      "rank": 1248
     },
     {
       "ticker": "004080",
@@ -22107,7 +21637,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 1277
+      "rank": 1249
     },
     {
       "ticker": "015590",
@@ -22124,7 +21654,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 1278
+      "rank": 1250
     },
     {
       "ticker": "007540",
@@ -22141,7 +21671,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 1279
+      "rank": 1251
     },
     {
       "ticker": "067990",
@@ -22158,7 +21688,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 1280
+      "rank": 1252
     },
     {
       "ticker": "212560",
@@ -22175,7 +21705,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 1281
+      "rank": 1253
     },
     {
       "ticker": "090850",
@@ -22192,7 +21722,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 1282
+      "rank": 1254
     },
     {
       "ticker": "205100",
@@ -22209,7 +21739,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 1283
+      "rank": 1255
     },
     {
       "ticker": "004960",
@@ -22226,7 +21756,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 1284
+      "rank": 1256
     },
     {
       "ticker": "950250",
@@ -22243,7 +21773,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 1285
+      "rank": 1257
     },
     {
       "ticker": "036690",
@@ -22260,7 +21790,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 1286
+      "rank": 1258
     },
     {
       "ticker": "052900",
@@ -22278,7 +21808,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "섬유·패션·생활"
       ],
-      "rank": 1287
+      "rank": 1259
     },
     {
       "ticker": "027710",
@@ -22295,7 +21825,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 1288
+      "rank": 1260
     },
     {
       "ticker": "323350",
@@ -22312,7 +21842,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 1289
+      "rank": 1261
     },
     {
       "ticker": "005800",
@@ -22329,7 +21859,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 1290
+      "rank": 1262
     },
     {
       "ticker": "088130",
@@ -22346,7 +21876,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 1291
+      "rank": 1263
     },
     {
       "ticker": "078890",
@@ -22363,7 +21893,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 1292
+      "rank": 1264
     },
     {
       "ticker": "027970",
@@ -22380,7 +21910,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 1293
+      "rank": 1265
     },
     {
       "ticker": "366030",
@@ -22397,7 +21927,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 1294
+      "rank": 1266
     },
     {
       "ticker": "267290",
@@ -22414,7 +21944,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 1295
+      "rank": 1267
     },
     {
       "ticker": "290740",
@@ -22431,7 +21961,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 1296
+      "rank": 1268
     },
     {
       "ticker": "020120",
@@ -22448,7 +21978,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 1297
+      "rank": 1269
     },
     {
       "ticker": "012800",
@@ -22465,7 +21995,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 1298
+      "rank": 1270
     },
     {
       "ticker": "051160",
@@ -22482,7 +22012,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 1299
+      "rank": 1271
     },
     {
       "ticker": "323990",
@@ -22499,7 +22029,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 1300
+      "rank": 1272
     },
     {
       "ticker": "040300",
@@ -22516,24 +22046,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 1301
-    },
-    {
-      "ticker": "33626K",
-      "name": "두산퓨얼셀1우",
-      "name_en": "",
-      "market": "코스피",
-      "sector": "기타",
-      "price": 9120,
-      "change": 0.44,
-      "volume": 12215,
-      "trading_value": 112358870,
-      "mcap": 0.12,
-      "shares": 13364200,
-      "categories": [
-        "기타"
-      ],
-      "rank": 1302
+      "rank": 1273
     },
     {
       "ticker": "036630",
@@ -22550,7 +22063,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 1303
+      "rank": 1274
     },
     {
       "ticker": "007610",
@@ -22567,7 +22080,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 1304
+      "rank": 1275
     },
     {
       "ticker": "336680",
@@ -22584,7 +22097,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 1305
+      "rank": 1276
     },
     {
       "ticker": "365330",
@@ -22601,7 +22114,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 1306
+      "rank": 1277
     },
     {
       "ticker": "054540",
@@ -22618,7 +22131,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 1307
+      "rank": 1278
     },
     {
       "ticker": "080420",
@@ -22635,7 +22148,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 1308
+      "rank": 1279
     },
     {
       "ticker": "070960",
@@ -22652,7 +22165,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 1309
+      "rank": 1280
     },
     {
       "ticker": "010100",
@@ -22669,7 +22182,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 1310
+      "rank": 1281
     },
     {
       "ticker": "172670",
@@ -22686,7 +22199,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 1311
+      "rank": 1282
     },
     {
       "ticker": "035000",
@@ -22703,7 +22216,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 1312
+      "rank": 1283
     },
     {
       "ticker": "215100",
@@ -22720,7 +22233,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 1313
+      "rank": 1284
     },
     {
       "ticker": "115440",
@@ -22737,7 +22250,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 1314
+      "rank": 1285
     },
     {
       "ticker": "013310",
@@ -22754,7 +22267,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 1315
+      "rank": 1286
     },
     {
       "ticker": "071280",
@@ -22771,7 +22284,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 1316
+      "rank": 1287
     },
     {
       "ticker": "012320",
@@ -22788,7 +22301,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 1317
+      "rank": 1288
     },
     {
       "ticker": "089600",
@@ -22805,7 +22318,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 1318
+      "rank": 1289
     },
     {
       "ticker": "107600",
@@ -22822,7 +22335,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 1319
+      "rank": 1290
     },
     {
       "ticker": "006620",
@@ -22839,7 +22352,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 1320
+      "rank": 1291
     },
     {
       "ticker": "002620",
@@ -22856,7 +22369,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 1321
+      "rank": 1292
     },
     {
       "ticker": "013520",
@@ -22873,7 +22386,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 1322
+      "rank": 1293
     },
     {
       "ticker": "338220",
@@ -22890,7 +22403,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 1323
+      "rank": 1294
     },
     {
       "ticker": "014530",
@@ -22907,7 +22420,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 1324
+      "rank": 1295
     },
     {
       "ticker": "310200",
@@ -22924,7 +22437,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 1325
+      "rank": 1296
     },
     {
       "ticker": "021820",
@@ -22941,7 +22454,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 1326
+      "rank": 1297
     },
     {
       "ticker": "086960",
@@ -22958,7 +22471,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 1327
+      "rank": 1298
     },
     {
       "ticker": "235980",
@@ -22975,7 +22488,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 1328
+      "rank": 1299
     },
     {
       "ticker": "002450",
@@ -22992,7 +22505,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 1329
+      "rank": 1300
     },
     {
       "ticker": "382840",
@@ -23009,7 +22522,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 1330
+      "rank": 1301
     },
     {
       "ticker": "156100",
@@ -23026,7 +22539,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 1331
+      "rank": 1302
     },
     {
       "ticker": "123040",
@@ -23043,7 +22556,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 1332
+      "rank": 1303
     },
     {
       "ticker": "016710",
@@ -23060,7 +22573,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 1333
+      "rank": 1304
     },
     {
       "ticker": "009580",
@@ -23077,7 +22590,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 1334
+      "rank": 1305
     },
     {
       "ticker": "093640",
@@ -23094,7 +22607,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 1335
+      "rank": 1306
     },
     {
       "ticker": "412350",
@@ -23111,7 +22624,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 1336
+      "rank": 1307
     },
     {
       "ticker": "063570",
@@ -23128,7 +22641,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 1337
+      "rank": 1308
     },
     {
       "ticker": "006660",
@@ -23146,7 +22659,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "자동차"
       ],
-      "rank": 1338
+      "rank": 1309
     },
     {
       "ticker": "263720",
@@ -23163,7 +22676,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 1339
+      "rank": 1310
     },
     {
       "ticker": "041590",
@@ -23180,7 +22693,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 1340
+      "rank": 1311
     },
     {
       "ticker": "234030",
@@ -23197,7 +22710,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 1341
+      "rank": 1312
     },
     {
       "ticker": "339950",
@@ -23214,7 +22727,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 1342
+      "rank": 1313
     },
     {
       "ticker": "129920",
@@ -23231,7 +22744,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 1343
+      "rank": 1314
     },
     {
       "ticker": "073560",
@@ -23248,7 +22761,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 1344
+      "rank": 1315
     },
     {
       "ticker": "014580",
@@ -23265,7 +22778,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 1345
+      "rank": 1316
     },
     {
       "ticker": "067900",
@@ -23282,7 +22795,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 1346
+      "rank": 1317
     },
     {
       "ticker": "475580",
@@ -23299,7 +22812,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 1347
+      "rank": 1318
     },
     {
       "ticker": "417500",
@@ -23316,7 +22829,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 1348
+      "rank": 1319
     },
     {
       "ticker": "038540",
@@ -23333,7 +22846,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 1349
+      "rank": 1320
     },
     {
       "ticker": "049520",
@@ -23350,7 +22863,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 1350
+      "rank": 1321
     },
     {
       "ticker": "396470",
@@ -23367,7 +22880,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 1351
+      "rank": 1322
     },
     {
       "ticker": "054050",
@@ -23384,7 +22897,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 1352
+      "rank": 1323
     },
     {
       "ticker": "109610",
@@ -23401,7 +22914,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 1353
+      "rank": 1324
     },
     {
       "ticker": "214680",
@@ -23418,7 +22931,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 1354
+      "rank": 1325
     },
     {
       "ticker": "034590",
@@ -23435,7 +22948,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 1355
+      "rank": 1326
     },
     {
       "ticker": "041520",
@@ -23452,7 +22965,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 1356
+      "rank": 1327
     },
     {
       "ticker": "018120",
@@ -23469,7 +22982,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 1357
+      "rank": 1328
     },
     {
       "ticker": "021320",
@@ -23486,7 +22999,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 1358
+      "rank": 1329
     },
     {
       "ticker": "049950",
@@ -23503,7 +23016,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 1359
+      "rank": 1330
     },
     {
       "ticker": "217820",
@@ -23520,7 +23033,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 1360
+      "rank": 1331
     },
     {
       "ticker": "052260",
@@ -23537,7 +23050,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 1361
+      "rank": 1332
     },
     {
       "ticker": "083420",
@@ -23554,7 +23067,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 1362
+      "rank": 1333
     },
     {
       "ticker": "002390",
@@ -23571,7 +23084,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 1363
+      "rank": 1334
     },
     {
       "ticker": "487580",
@@ -23588,7 +23101,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 1364
+      "rank": 1335
     },
     {
       "ticker": "212710",
@@ -23605,7 +23118,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 1365
+      "rank": 1336
     },
     {
       "ticker": "120030",
@@ -23622,7 +23135,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 1366
+      "rank": 1337
     },
     {
       "ticker": "255440",
@@ -23639,7 +23152,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 1367
+      "rank": 1338
     },
     {
       "ticker": "004250",
@@ -23656,7 +23169,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 1368
+      "rank": 1339
     },
     {
       "ticker": "389030",
@@ -23673,7 +23186,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 1369
+      "rank": 1340
     },
     {
       "ticker": "309960",
@@ -23690,7 +23203,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 1370
+      "rank": 1341
     },
     {
       "ticker": "047770",
@@ -23707,7 +23220,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 1371
+      "rank": 1342
     },
     {
       "ticker": "141000",
@@ -23724,7 +23237,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 1372
+      "rank": 1343
     },
     {
       "ticker": "007210",
@@ -23741,7 +23254,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 1373
+      "rank": 1344
     },
     {
       "ticker": "123690",
@@ -23758,7 +23271,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 1374
+      "rank": 1345
     },
     {
       "ticker": "250060",
@@ -23775,7 +23288,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 1375
+      "rank": 1346
     },
     {
       "ticker": "025620",
@@ -23792,7 +23305,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 1376
+      "rank": 1347
     },
     {
       "ticker": "227840",
@@ -23809,7 +23322,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 1377
+      "rank": 1348
     },
     {
       "ticker": "011810",
@@ -23826,7 +23339,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 1378
+      "rank": 1349
     },
     {
       "ticker": "267850",
@@ -23843,7 +23356,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 1379
+      "rank": 1350
     },
     {
       "ticker": "085670",
@@ -23860,7 +23373,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 1380
+      "rank": 1351
     },
     {
       "ticker": "322510",
@@ -23877,7 +23390,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 1381
+      "rank": 1352
     },
     {
       "ticker": "011000",
@@ -23894,7 +23407,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 1382
+      "rank": 1353
     },
     {
       "ticker": "009780",
@@ -23911,7 +23424,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 1383
+      "rank": 1354
     },
     {
       "ticker": "228850",
@@ -23928,7 +23441,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 1384
+      "rank": 1355
     },
     {
       "ticker": "330730",
@@ -23945,7 +23458,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 1385
+      "rank": 1356
     },
     {
       "ticker": "317770",
@@ -23962,7 +23475,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 1386
+      "rank": 1357
     },
     {
       "ticker": "104460",
@@ -23979,7 +23492,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 1387
+      "rank": 1358
     },
     {
       "ticker": "052860",
@@ -23996,7 +23509,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 1388
+      "rank": 1359
     },
     {
       "ticker": "950190",
@@ -24013,7 +23526,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 1389
+      "rank": 1360
     },
     {
       "ticker": "131030",
@@ -24030,7 +23543,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 1390
+      "rank": 1361
     },
     {
       "ticker": "005860",
@@ -24047,7 +23560,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 1391
+      "rank": 1362
     },
     {
       "ticker": "331740",
@@ -24064,7 +23577,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 1392
+      "rank": 1363
     },
     {
       "ticker": "456070",
@@ -24081,7 +23594,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 1393
+      "rank": 1364
     },
     {
       "ticker": "223250",
@@ -24098,7 +23611,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 1394
+      "rank": 1365
     },
     {
       "ticker": "065450",
@@ -24115,7 +23628,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 1395
+      "rank": 1366
     },
     {
       "ticker": "025950",
@@ -24132,7 +23645,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 1396
+      "rank": 1367
     },
     {
       "ticker": "002230",
@@ -24149,7 +23662,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 1397
+      "rank": 1368
     },
     {
       "ticker": "045970",
@@ -24166,7 +23679,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 1398
+      "rank": 1369
     },
     {
       "ticker": "001290",
@@ -24183,7 +23696,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 1399
+      "rank": 1370
     },
     {
       "ticker": "042510",
@@ -24200,7 +23713,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 1400
+      "rank": 1371
     },
     {
       "ticker": "053260",
@@ -24217,7 +23730,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 1401
+      "rank": 1372
     },
     {
       "ticker": "225190",
@@ -24234,7 +23747,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 1402
+      "rank": 1373
     },
     {
       "ticker": "229500",
@@ -24251,7 +23764,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 1403
+      "rank": 1374
     },
     {
       "ticker": "248170",
@@ -24268,7 +23781,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 1404
+      "rank": 1375
     },
     {
       "ticker": "149980",
@@ -24285,7 +23798,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 1405
+      "rank": 1376
     },
     {
       "ticker": "493330",
@@ -24302,7 +23815,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 1406
+      "rank": 1377
     },
     {
       "ticker": "002460",
@@ -24319,7 +23832,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 1407
+      "rank": 1378
     },
     {
       "ticker": "360070",
@@ -24336,7 +23849,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 1408
+      "rank": 1379
     },
     {
       "ticker": "014790",
@@ -24353,7 +23866,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 1409
+      "rank": 1380
     },
     {
       "ticker": "451220",
@@ -24370,7 +23883,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 1410
+      "rank": 1381
     },
     {
       "ticker": "0015S0",
@@ -24387,7 +23900,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 1411
+      "rank": 1382
     },
     {
       "ticker": "377480",
@@ -24404,7 +23917,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 1412
+      "rank": 1383
     },
     {
       "ticker": "039980",
@@ -24421,7 +23934,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 1413
+      "rank": 1384
     },
     {
       "ticker": "413630",
@@ -24438,7 +23951,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 1414
+      "rank": 1385
     },
     {
       "ticker": "282720",
@@ -24455,7 +23968,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 1415
+      "rank": 1386
     },
     {
       "ticker": "066430",
@@ -24472,7 +23985,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 1416
+      "rank": 1387
     },
     {
       "ticker": "044990",
@@ -24489,7 +24002,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 1417
+      "rank": 1388
     },
     {
       "ticker": "092040",
@@ -24506,7 +24019,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 1418
+      "rank": 1389
     },
     {
       "ticker": "182360",
@@ -24523,7 +24036,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 1419
+      "rank": 1390
     },
     {
       "ticker": "389140",
@@ -24540,7 +24053,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 1420
+      "rank": 1391
     },
     {
       "ticker": "067830",
@@ -24557,7 +24070,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 1421
+      "rank": 1392
     },
     {
       "ticker": "039340",
@@ -24574,7 +24087,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 1422
+      "rank": 1393
     },
     {
       "ticker": "264900",
@@ -24591,7 +24104,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 1423
+      "rank": 1394
     },
     {
       "ticker": "038110",
@@ -24608,7 +24121,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 1424
+      "rank": 1395
     },
     {
       "ticker": "029480",
@@ -24625,7 +24138,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 1425
+      "rank": 1396
     },
     {
       "ticker": "096250",
@@ -24642,7 +24155,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 1426
+      "rank": 1397
     },
     {
       "ticker": "013570",
@@ -24659,7 +24172,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 1427
+      "rank": 1398
     },
     {
       "ticker": "0007J0",
@@ -24676,7 +24189,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 1428
+      "rank": 1399
     },
     {
       "ticker": "066310",
@@ -24693,7 +24206,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 1429
+      "rank": 1400
     },
     {
       "ticker": "035080",
@@ -24710,7 +24223,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 1430
+      "rank": 1401
     },
     {
       "ticker": "063080",
@@ -24727,7 +24240,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 1431
+      "rank": 1402
     },
     {
       "ticker": "119650",
@@ -24744,7 +24257,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 1432
+      "rank": 1403
     },
     {
       "ticker": "023900",
@@ -24761,7 +24274,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 1433
+      "rank": 1404
     },
     {
       "ticker": "058850",
@@ -24778,7 +24291,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 1434
+      "rank": 1405
     },
     {
       "ticker": "059270",
@@ -24795,7 +24308,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 1435
+      "rank": 1406
     },
     {
       "ticker": "489460",
@@ -24812,7 +24325,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 1436
+      "rank": 1407
     },
     {
       "ticker": "008700",
@@ -24829,7 +24342,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 1437
+      "rank": 1408
     },
     {
       "ticker": "136150",
@@ -24846,7 +24359,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 1438
+      "rank": 1409
     },
     {
       "ticker": "246720",
@@ -24863,7 +24376,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 1439
+      "rank": 1410
     },
     {
       "ticker": "000440",
@@ -24880,7 +24393,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 1440
+      "rank": 1411
     },
     {
       "ticker": "059210",
@@ -24897,7 +24410,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 1441
+      "rank": 1412
     },
     {
       "ticker": "265740",
@@ -24914,7 +24427,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 1442
+      "rank": 1413
     },
     {
       "ticker": "032300",
@@ -24931,7 +24444,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 1443
+      "rank": 1414
     },
     {
       "ticker": "100130",
@@ -24948,7 +24461,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 1444
+      "rank": 1415
     },
     {
       "ticker": "036220",
@@ -24965,7 +24478,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 1445
+      "rank": 1416
     },
     {
       "ticker": "047820",
@@ -24982,7 +24495,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 1446
+      "rank": 1417
     },
     {
       "ticker": "004100",
@@ -25000,7 +24513,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "자동차"
       ],
-      "rank": 1447
+      "rank": 1418
     },
     {
       "ticker": "100700",
@@ -25017,7 +24530,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 1448
+      "rank": 1419
     },
     {
       "ticker": "023450",
@@ -25034,7 +24547,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 1449
+      "rank": 1420
     },
     {
       "ticker": "120240",
@@ -25051,7 +24564,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 1450
+      "rank": 1421
     },
     {
       "ticker": "246710",
@@ -25068,7 +24581,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 1451
+      "rank": 1422
     },
     {
       "ticker": "321260",
@@ -25086,7 +24599,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "반도체"
       ],
-      "rank": 1452
+      "rank": 1423
     },
     {
       "ticker": "011700",
@@ -25103,7 +24616,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 1453
+      "rank": 1424
     },
     {
       "ticker": "139990",
@@ -25120,7 +24633,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 1454
+      "rank": 1425
     },
     {
       "ticker": "352090",
@@ -25137,7 +24650,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 1455
+      "rank": 1426
     },
     {
       "ticker": "049080",
@@ -25155,7 +24668,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "전자·부품"
       ],
-      "rank": 1456
+      "rank": 1427
     },
     {
       "ticker": "066790",
@@ -25172,7 +24685,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 1457
+      "rank": 1428
     },
     {
       "ticker": "357230",
@@ -25189,7 +24702,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 1458
+      "rank": 1429
     },
     {
       "ticker": "288180",
@@ -25206,7 +24719,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 1459
+      "rank": 1430
     },
     {
       "ticker": "262260",
@@ -25223,24 +24736,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 1460
-    },
-    {
-      "ticker": "078935",
-      "name": "GS우",
-      "name_en": "",
-      "market": "코스피",
-      "sector": "기타",
-      "price": 54500,
-      "change": 1.3,
-      "volume": 3611,
-      "trading_value": 197056050,
-      "mcap": 0.1,
-      "shares": 1779676,
-      "categories": [
-        "기타"
-      ],
-      "rank": 1461
+      "rank": 1431
     },
     {
       "ticker": "009190",
@@ -25257,7 +24753,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 1462
+      "rank": 1432
     },
     {
       "ticker": "950130",
@@ -25274,7 +24770,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 1463
+      "rank": 1433
     },
     {
       "ticker": "019680",
@@ -25291,7 +24787,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 1464
+      "rank": 1434
     },
     {
       "ticker": "068240",
@@ -25308,7 +24804,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 1465
+      "rank": 1435
     },
     {
       "ticker": "100590",
@@ -25325,7 +24821,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 1466
+      "rank": 1436
     },
     {
       "ticker": "226400",
@@ -25342,7 +24838,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 1467
+      "rank": 1437
     },
     {
       "ticker": "417970",
@@ -25359,7 +24855,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 1468
+      "rank": 1438
     },
     {
       "ticker": "096240",
@@ -25376,7 +24872,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 1469
+      "rank": 1439
     },
     {
       "ticker": "443670",
@@ -25393,7 +24889,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 1470
+      "rank": 1440
     },
     {
       "ticker": "055490",
@@ -25410,7 +24906,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 1471
+      "rank": 1441
     },
     {
       "ticker": "078140",
@@ -25427,7 +24923,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 1472
+      "rank": 1442
     },
     {
       "ticker": "074430",
@@ -25444,7 +24940,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 1473
+      "rank": 1443
     },
     {
       "ticker": "004140",
@@ -25461,7 +24957,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 1474
+      "rank": 1444
     },
     {
       "ticker": "086710",
@@ -25478,7 +24974,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 1475
+      "rank": 1445
     },
     {
       "ticker": "042500",
@@ -25495,7 +24991,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 1476
+      "rank": 1446
     },
     {
       "ticker": "063170",
@@ -25512,7 +25008,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 1477
+      "rank": 1447
     },
     {
       "ticker": "464490",
@@ -25529,7 +25025,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 1478
+      "rank": 1448
     },
     {
       "ticker": "217330",
@@ -25546,7 +25042,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 1479
+      "rank": 1449
     },
     {
       "ticker": "032560",
@@ -25563,7 +25059,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 1480
+      "rank": 1450
     },
     {
       "ticker": "088390",
@@ -25580,7 +25076,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "반도체"
       ],
-      "rank": 1481
+      "rank": 1451
     },
     {
       "ticker": "109070",
@@ -25597,24 +25093,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 1482
-    },
-    {
-      "ticker": "001275",
-      "name": "부국증권우",
-      "name_en": "",
-      "market": "코스피",
-      "sector": "기타",
-      "price": 31600,
-      "change": 1.77,
-      "volume": 496,
-      "trading_value": 15572450,
-      "mcap": 0.09,
-      "shares": 3000000,
-      "categories": [
-        "기타"
-      ],
-      "rank": 1483
+      "rank": 1452
     },
     {
       "ticker": "099750",
@@ -25631,7 +25110,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 1484
+      "rank": 1453
     },
     {
       "ticker": "408470",
@@ -25648,7 +25127,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 1485
+      "rank": 1454
     },
     {
       "ticker": "023800",
@@ -25665,7 +25144,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 1486
+      "rank": 1455
     },
     {
       "ticker": "337930",
@@ -25682,7 +25161,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 1487
+      "rank": 1456
     },
     {
       "ticker": "131370",
@@ -25699,7 +25178,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 1488
+      "rank": 1457
     },
     {
       "ticker": "002210",
@@ -25716,7 +25195,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 1489
+      "rank": 1458
     },
     {
       "ticker": "066700",
@@ -25733,7 +25212,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 1490
+      "rank": 1459
     },
     {
       "ticker": "094840",
@@ -25750,7 +25229,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 1491
+      "rank": 1460
     },
     {
       "ticker": "348350",
@@ -25767,7 +25246,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 1492
+      "rank": 1461
     },
     {
       "ticker": "090470",
@@ -25784,7 +25263,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 1493
+      "rank": 1462
     },
     {
       "ticker": "131400",
@@ -25801,7 +25280,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 1494
+      "rank": 1463
     },
     {
       "ticker": "303810",
@@ -25818,7 +25297,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 1495
+      "rank": 1464
     },
     {
       "ticker": "311320",
@@ -25835,7 +25314,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 1496
+      "rank": 1465
     },
     {
       "ticker": "014160",
@@ -25852,7 +25331,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 1497
+      "rank": 1466
     },
     {
       "ticker": "035610",
@@ -25869,7 +25348,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 1498
+      "rank": 1467
     },
     {
       "ticker": "076610",
@@ -25886,7 +25365,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 1499
+      "rank": 1468
     },
     {
       "ticker": "101330",
@@ -25903,7 +25382,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 1500
+      "rank": 1469
     },
     {
       "ticker": "067000",
@@ -25920,7 +25399,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 1501
+      "rank": 1470
     },
     {
       "ticker": "052420",
@@ -25937,7 +25416,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 1502
+      "rank": 1471
     },
     {
       "ticker": "457370",
@@ -25955,7 +25434,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "화학"
       ],
-      "rank": 1503
+      "rank": 1472
     },
     {
       "ticker": "024880",
@@ -25972,7 +25451,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 1504
+      "rank": 1473
     },
     {
       "ticker": "036420",
@@ -25989,7 +25468,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 1505
+      "rank": 1474
     },
     {
       "ticker": "033290",
@@ -26006,7 +25485,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 1506
+      "rank": 1475
     },
     {
       "ticker": "066980",
@@ -26023,7 +25502,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 1507
+      "rank": 1476
     },
     {
       "ticker": "37550L",
@@ -26040,7 +25519,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 1508
+      "rank": 1477
     },
     {
       "ticker": "363280",
@@ -26057,7 +25536,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 1509
+      "rank": 1478
     },
     {
       "ticker": "411080",
@@ -26074,7 +25553,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 1510
+      "rank": 1479
     },
     {
       "ticker": "330350",
@@ -26091,7 +25570,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 1511
+      "rank": 1480
     },
     {
       "ticker": "058860",
@@ -26108,7 +25587,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 1512
+      "rank": 1481
     },
     {
       "ticker": "347890",
@@ -26125,7 +25604,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 1513
+      "rank": 1482
     },
     {
       "ticker": "072950",
@@ -26143,7 +25622,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "전자·부품"
       ],
-      "rank": 1514
+      "rank": 1483
     },
     {
       "ticker": "290720",
@@ -26160,7 +25639,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 1515
+      "rank": 1484
     },
     {
       "ticker": "036580",
@@ -26177,7 +25656,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 1516
+      "rank": 1485
     },
     {
       "ticker": "117670",
@@ -26194,7 +25673,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 1517
+      "rank": 1486
     },
     {
       "ticker": "004890",
@@ -26211,7 +25690,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 1518
+      "rank": 1487
     },
     {
       "ticker": "039010",
@@ -26228,24 +25707,25 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 1519
+      "rank": 1488
     },
     {
       "ticker": "173130",
       "name": "오파스넷",
-      "name_en": "",
+      "name_en": "OPASNET co., Ltd.",
       "market": "코스닥",
-      "sector": "기타",
+      "sector": "IT·소프트웨어",
       "price": 6880,
       "change": -8.87,
       "volume": 586691,
       "trading_value": 4204132005,
       "mcap": 0.09,
       "shares": 13046473,
+      "induty_code": "62021",
       "categories": [
-        "기타"
+        "IT·소프트웨어"
       ],
-      "rank": 1520
+      "rank": 1489
     },
     {
       "ticker": "432470",
@@ -26262,7 +25742,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 1521
+      "rank": 1490
     },
     {
       "ticker": "189330",
@@ -26279,7 +25759,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 1522
+      "rank": 1491
     },
     {
       "ticker": "011370",
@@ -26296,7 +25776,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 1523
+      "rank": 1492
     },
     {
       "ticker": "163560",
@@ -26313,7 +25793,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 1524
+      "rank": 1493
     },
     {
       "ticker": "298540",
@@ -26330,7 +25810,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 1525
+      "rank": 1494
     },
     {
       "ticker": "203690",
@@ -26347,7 +25827,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 1526
+      "rank": 1495
     },
     {
       "ticker": "063160",
@@ -26364,7 +25844,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 1527
+      "rank": 1496
     },
     {
       "ticker": "302550",
@@ -26381,7 +25861,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 1528
+      "rank": 1497
     },
     {
       "ticker": "053580",
@@ -26398,7 +25878,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 1529
+      "rank": 1498
     },
     {
       "ticker": "010280",
@@ -26415,7 +25895,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 1530
+      "rank": 1499
     },
     {
       "ticker": "476040",
@@ -26432,7 +25912,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 1531
+      "rank": 1500
     },
     {
       "ticker": "040420",
@@ -26449,7 +25929,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 1532
+      "rank": 1501
     },
     {
       "ticker": "005740",
@@ -26466,7 +25946,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 1533
+      "rank": 1502
     },
     {
       "ticker": "014440",
@@ -26483,7 +25963,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 1534
+      "rank": 1503
     },
     {
       "ticker": "008260",
@@ -26500,7 +25980,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 1535
+      "rank": 1504
     },
     {
       "ticker": "006840",
@@ -26517,7 +25997,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 1536
+      "rank": 1505
     },
     {
       "ticker": "023000",
@@ -26534,7 +26014,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 1537
+      "rank": 1506
     },
     {
       "ticker": "009300",
@@ -26551,7 +26031,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 1538
+      "rank": 1507
     },
     {
       "ticker": "302430",
@@ -26568,7 +26048,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 1539
+      "rank": 1508
     },
     {
       "ticker": "072020",
@@ -26585,7 +26065,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 1540
+      "rank": 1509
     },
     {
       "ticker": "418470",
@@ -26602,7 +26082,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 1541
+      "rank": 1510
     },
     {
       "ticker": "382480",
@@ -26619,7 +26099,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 1542
+      "rank": 1511
     },
     {
       "ticker": "033340",
@@ -26636,7 +26116,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 1543
+      "rank": 1512
     },
     {
       "ticker": "040910",
@@ -26653,7 +26133,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 1544
+      "rank": 1513
     },
     {
       "ticker": "093920",
@@ -26670,7 +26150,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 1545
+      "rank": 1514
     },
     {
       "ticker": "251120",
@@ -26687,7 +26167,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 1546
+      "rank": 1515
     },
     {
       "ticker": "079810",
@@ -26704,7 +26184,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 1547
+      "rank": 1516
     },
     {
       "ticker": "041930",
@@ -26721,7 +26201,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 1548
+      "rank": 1517
     },
     {
       "ticker": "024830",
@@ -26738,7 +26218,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 1549
+      "rank": 1518
     },
     {
       "ticker": "091120",
@@ -26755,7 +26235,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 1550
+      "rank": 1519
     },
     {
       "ticker": "460940",
@@ -26772,7 +26252,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 1551
+      "rank": 1520
     },
     {
       "ticker": "007110",
@@ -26789,7 +26269,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 1552
+      "rank": 1521
     },
     {
       "ticker": "413390",
@@ -26806,7 +26286,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 1553
+      "rank": 1522
     },
     {
       "ticker": "294630",
@@ -26823,7 +26303,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 1554
+      "rank": 1523
     },
     {
       "ticker": "004840",
@@ -26840,7 +26320,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 1555
+      "rank": 1524
     },
     {
       "ticker": "002700",
@@ -26857,7 +26337,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 1556
+      "rank": 1525
     },
     {
       "ticker": "142280",
@@ -26874,7 +26354,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 1557
+      "rank": 1526
     },
     {
       "ticker": "130580",
@@ -26891,7 +26371,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 1558
+      "rank": 1527
     },
     {
       "ticker": "066590",
@@ -26908,7 +26388,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 1559
+      "rank": 1528
     },
     {
       "ticker": "123010",
@@ -26925,7 +26405,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 1560
+      "rank": 1529
     },
     {
       "ticker": "424960",
@@ -26942,7 +26422,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 1561
+      "rank": 1530
     },
     {
       "ticker": "002200",
@@ -26959,7 +26439,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 1562
+      "rank": 1531
     },
     {
       "ticker": "299660",
@@ -26976,7 +26456,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 1563
+      "rank": 1532
     },
     {
       "ticker": "043610",
@@ -26993,7 +26473,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 1564
+      "rank": 1533
     },
     {
       "ticker": "101670",
@@ -27010,7 +26490,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 1565
+      "rank": 1534
     },
     {
       "ticker": "000230",
@@ -27027,7 +26507,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 1566
+      "rank": 1535
     },
     {
       "ticker": "004650",
@@ -27044,7 +26524,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 1567
+      "rank": 1536
     },
     {
       "ticker": "007980",
@@ -27061,7 +26541,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 1568
+      "rank": 1537
     },
     {
       "ticker": "362320",
@@ -27078,7 +26558,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 1569
+      "rank": 1538
     },
     {
       "ticker": "048530",
@@ -27095,7 +26575,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 1570
+      "rank": 1539
     },
     {
       "ticker": "475430",
@@ -27112,7 +26592,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 1571
+      "rank": 1540
     },
     {
       "ticker": "419050",
@@ -27129,7 +26609,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 1572
+      "rank": 1541
     },
     {
       "ticker": "208370",
@@ -27146,7 +26626,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 1573
+      "rank": 1542
     },
     {
       "ticker": "950220",
@@ -27163,7 +26643,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 1574
+      "rank": 1543
     },
     {
       "ticker": "049180",
@@ -27180,7 +26660,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 1575
+      "rank": 1544
     },
     {
       "ticker": "253840",
@@ -27197,7 +26677,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 1576
+      "rank": 1545
     },
     {
       "ticker": "183490",
@@ -27214,7 +26694,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 1577
+      "rank": 1546
     },
     {
       "ticker": "058400",
@@ -27231,7 +26711,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 1578
+      "rank": 1547
     },
     {
       "ticker": "004590",
@@ -27248,7 +26728,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 1579
+      "rank": 1548
     },
     {
       "ticker": "058630",
@@ -27265,7 +26745,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 1580
+      "rank": 1549
     },
     {
       "ticker": "095720",
@@ -27282,7 +26762,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 1581
+      "rank": 1550
     },
     {
       "ticker": "011320",
@@ -27299,7 +26779,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 1582
+      "rank": 1551
     },
     {
       "ticker": "017370",
@@ -27316,7 +26796,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 1583
+      "rank": 1552
     },
     {
       "ticker": "370090",
@@ -27333,7 +26813,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 1584
+      "rank": 1553
     },
     {
       "ticker": "000590",
@@ -27350,7 +26830,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 1585
+      "rank": 1554
     },
     {
       "ticker": "054670",
@@ -27367,7 +26847,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 1586
+      "rank": 1555
     },
     {
       "ticker": "005870",
@@ -27384,7 +26864,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 1587
+      "rank": 1556
     },
     {
       "ticker": "002600",
@@ -27401,7 +26881,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 1588
+      "rank": 1557
     },
     {
       "ticker": "037760",
@@ -27418,24 +26898,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 1589
-    },
-    {
-      "ticker": "000105",
-      "name": "유한양행우",
-      "name_en": "",
-      "market": "코스피",
-      "sector": "기타",
-      "price": 69700,
-      "change": -0.43,
-      "volume": 1429,
-      "trading_value": 98754400,
-      "mcap": 0.08,
-      "shares": 1180940,
-      "categories": [
-        "기타"
-      ],
-      "rank": 1590
+      "rank": 1558
     },
     {
       "ticker": "225530",
@@ -27452,7 +26915,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 1591
+      "rank": 1559
     },
     {
       "ticker": "048550",
@@ -27469,7 +26932,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 1592
+      "rank": 1560
     },
     {
       "ticker": "273640",
@@ -27486,7 +26949,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 1593
+      "rank": 1561
     },
     {
       "ticker": "060590",
@@ -27503,7 +26966,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 1594
+      "rank": 1562
     },
     {
       "ticker": "307870",
@@ -27520,7 +26983,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 1595
+      "rank": 1563
     },
     {
       "ticker": "054620",
@@ -27537,7 +27000,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 1596
+      "rank": 1564
     },
     {
       "ticker": "265560",
@@ -27554,7 +27017,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 1597
+      "rank": 1565
     },
     {
       "ticker": "234300",
@@ -27571,7 +27034,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 1598
+      "rank": 1566
     },
     {
       "ticker": "175250",
@@ -27588,7 +27051,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 1599
+      "rank": 1567
     },
     {
       "ticker": "019540",
@@ -27605,7 +27068,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 1600
+      "rank": 1568
     },
     {
       "ticker": "006890",
@@ -27622,24 +27085,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 1601
-    },
-    {
-      "ticker": "096775",
-      "name": "SK이노베이션우",
-      "name_en": "",
-      "market": "코스피",
-      "sector": "기타",
-      "price": 65100,
-      "change": 0.15,
-      "volume": 1390,
-      "trading_value": 90780250,
-      "mcap": 0.08,
-      "shares": 1248426,
-      "categories": [
-        "기타"
-      ],
-      "rank": 1602
+      "rank": 1569
     },
     {
       "ticker": "030960",
@@ -27656,7 +27102,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 1603
+      "rank": 1570
     },
     {
       "ticker": "412540",
@@ -27673,7 +27119,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 1604
+      "rank": 1571
     },
     {
       "ticker": "277880",
@@ -27690,7 +27136,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 1605
+      "rank": 1572
     },
     {
       "ticker": "007820",
@@ -27707,7 +27153,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 1606
+      "rank": 1573
     },
     {
       "ticker": "014970",
@@ -27724,7 +27170,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 1607
+      "rank": 1574
     },
     {
       "ticker": "007590",
@@ -27741,7 +27187,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 1608
+      "rank": 1575
     },
     {
       "ticker": "001020",
@@ -27758,7 +27204,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 1609
+      "rank": 1576
     },
     {
       "ticker": "170030",
@@ -27775,7 +27221,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 1610
+      "rank": 1577
     },
     {
       "ticker": "089230",
@@ -27792,7 +27238,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 1611
+      "rank": 1578
     },
     {
       "ticker": "388870",
@@ -27809,7 +27255,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 1612
+      "rank": 1579
     },
     {
       "ticker": "111380",
@@ -27826,7 +27272,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 1613
+      "rank": 1580
     },
     {
       "ticker": "263800",
@@ -27843,7 +27289,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 1614
+      "rank": 1581
     },
     {
       "ticker": "006140",
@@ -27860,7 +27306,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 1615
+      "rank": 1582
     },
     {
       "ticker": "317830",
@@ -27877,7 +27323,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 1616
+      "rank": 1583
     },
     {
       "ticker": "054040",
@@ -27894,7 +27340,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 1617
+      "rank": 1584
     },
     {
       "ticker": "001470",
@@ -27911,7 +27357,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 1618
+      "rank": 1585
     },
     {
       "ticker": "222160",
@@ -27928,7 +27374,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 1619
+      "rank": 1586
     },
     {
       "ticker": "024740",
@@ -27945,7 +27391,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 1620
+      "rank": 1587
     },
     {
       "ticker": "065510",
@@ -27962,7 +27408,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 1621
+      "rank": 1588
     },
     {
       "ticker": "228670",
@@ -27979,7 +27425,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 1622
+      "rank": 1589
     },
     {
       "ticker": "026150",
@@ -27996,7 +27442,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 1623
+      "rank": 1590
     },
     {
       "ticker": "084730",
@@ -28013,7 +27459,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 1624
+      "rank": 1591
     },
     {
       "ticker": "003580",
@@ -28030,7 +27476,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 1625
+      "rank": 1592
     },
     {
       "ticker": "448710",
@@ -28047,7 +27493,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 1626
+      "rank": 1593
     },
     {
       "ticker": "082850",
@@ -28064,7 +27510,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 1627
+      "rank": 1594
     },
     {
       "ticker": "067570",
@@ -28081,7 +27527,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 1628
+      "rank": 1595
     },
     {
       "ticker": "067370",
@@ -28098,7 +27544,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 1629
+      "rank": 1596
     },
     {
       "ticker": "020710",
@@ -28115,7 +27561,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 1630
+      "rank": 1597
     },
     {
       "ticker": "009180",
@@ -28132,7 +27578,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 1631
+      "rank": 1598
     },
     {
       "ticker": "060310",
@@ -28149,7 +27595,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 1632
+      "rank": 1599
     },
     {
       "ticker": "014470",
@@ -28166,7 +27612,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 1633
+      "rank": 1600
     },
     {
       "ticker": "320000",
@@ -28183,7 +27629,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 1634
+      "rank": 1601
     },
     {
       "ticker": "171120",
@@ -28200,7 +27646,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 1635
+      "rank": 1602
     },
     {
       "ticker": "0015N0",
@@ -28217,7 +27663,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 1636
+      "rank": 1603
     },
     {
       "ticker": "041910",
@@ -28234,7 +27680,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 1637
+      "rank": 1604
     },
     {
       "ticker": "110790",
@@ -28251,7 +27697,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 1638
+      "rank": 1605
     },
     {
       "ticker": "205470",
@@ -28268,7 +27714,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 1639
+      "rank": 1606
     },
     {
       "ticker": "238090",
@@ -28285,7 +27731,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 1640
+      "rank": 1607
     },
     {
       "ticker": "036640",
@@ -28302,7 +27748,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 1641
+      "rank": 1608
     },
     {
       "ticker": "056360",
@@ -28319,7 +27765,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 1642
+      "rank": 1609
     },
     {
       "ticker": "048770",
@@ -28336,7 +27782,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 1643
+      "rank": 1610
     },
     {
       "ticker": "217190",
@@ -28353,7 +27799,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 1644
+      "rank": 1611
     },
     {
       "ticker": "290660",
@@ -28370,24 +27816,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 1645
-    },
-    {
-      "ticker": "35320K",
-      "name": "대덕전자1우",
-      "name_en": "",
-      "market": "코스피",
-      "sector": "기타",
-      "price": 36850,
-      "change": 2.79,
-      "volume": 10230,
-      "trading_value": 374587575,
-      "mcap": 0.08,
-      "shares": 2095519,
-      "categories": [
-        "기타"
-      ],
-      "rank": 1646
+      "rank": 1612
     },
     {
       "ticker": "067290",
@@ -28404,7 +27833,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 1647
+      "rank": 1613
     },
     {
       "ticker": "201490",
@@ -28421,7 +27850,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 1648
+      "rank": 1614
     },
     {
       "ticker": "019550",
@@ -28438,7 +27867,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 1649
+      "rank": 1615
     },
     {
       "ticker": "012700",
@@ -28455,7 +27884,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 1650
+      "rank": 1616
     },
     {
       "ticker": "025550",
@@ -28472,7 +27901,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 1651
+      "rank": 1617
     },
     {
       "ticker": "102370",
@@ -28489,7 +27918,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 1652
+      "rank": 1618
     },
     {
       "ticker": "017650",
@@ -28506,7 +27935,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 1653
+      "rank": 1619
     },
     {
       "ticker": "031820",
@@ -28523,7 +27952,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 1654
+      "rank": 1620
     },
     {
       "ticker": "011150",
@@ -28540,7 +27969,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 1655
+      "rank": 1621
     },
     {
       "ticker": "038680",
@@ -28557,7 +27986,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 1656
+      "rank": 1622
     },
     {
       "ticker": "013870",
@@ -28574,7 +28003,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 1657
+      "rank": 1623
     },
     {
       "ticker": "001260",
@@ -28591,7 +28020,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 1658
+      "rank": 1624
     },
     {
       "ticker": "017480",
@@ -28608,7 +28037,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 1659
+      "rank": 1625
     },
     {
       "ticker": "124560",
@@ -28625,7 +28054,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 1660
+      "rank": 1626
     },
     {
       "ticker": "439580",
@@ -28642,7 +28071,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 1661
+      "rank": 1627
     },
     {
       "ticker": "007460",
@@ -28659,7 +28088,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 1662
+      "rank": 1628
     },
     {
       "ticker": "010960",
@@ -28676,7 +28105,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 1663
+      "rank": 1629
     },
     {
       "ticker": "096350",
@@ -28693,7 +28122,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 1664
+      "rank": 1630
     },
     {
       "ticker": "452200",
@@ -28710,7 +28139,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 1665
+      "rank": 1631
     },
     {
       "ticker": "002720",
@@ -28727,7 +28156,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 1666
+      "rank": 1632
     },
     {
       "ticker": "039610",
@@ -28744,7 +28173,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 1667
+      "rank": 1633
     },
     {
       "ticker": "263600",
@@ -28761,7 +28190,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 1668
+      "rank": 1634
     },
     {
       "ticker": "045660",
@@ -28778,7 +28207,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 1669
+      "rank": 1635
     },
     {
       "ticker": "005750",
@@ -28795,7 +28224,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 1670
+      "rank": 1636
     },
     {
       "ticker": "092300",
@@ -28812,7 +28241,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 1671
+      "rank": 1637
     },
     {
       "ticker": "006090",
@@ -28829,7 +28258,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 1672
+      "rank": 1638
     },
     {
       "ticker": "463020",
@@ -28846,7 +28275,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 1673
+      "rank": 1639
     },
     {
       "ticker": "900250",
@@ -28863,7 +28292,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 1674
+      "rank": 1640
     },
     {
       "ticker": "069730",
@@ -28880,7 +28309,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 1675
+      "rank": 1641
     },
     {
       "ticker": "044340",
@@ -28897,7 +28326,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 1676
+      "rank": 1642
     },
     {
       "ticker": "900260",
@@ -28914,7 +28343,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 1677
+      "rank": 1643
     },
     {
       "ticker": "261780",
@@ -28931,7 +28360,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 1678
+      "rank": 1644
     },
     {
       "ticker": "001560",
@@ -28948,7 +28377,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 1679
+      "rank": 1645
     },
     {
       "ticker": "241690",
@@ -28965,7 +28394,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 1680
+      "rank": 1646
     },
     {
       "ticker": "168330",
@@ -28982,7 +28411,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 1681
+      "rank": 1647
     },
     {
       "ticker": "000180",
@@ -28999,7 +28428,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 1682
+      "rank": 1648
     },
     {
       "ticker": "064800",
@@ -29016,7 +28445,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 1683
+      "rank": 1649
     },
     {
       "ticker": "081180",
@@ -29033,7 +28462,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 1684
+      "rank": 1650
     },
     {
       "ticker": "208140",
@@ -29050,7 +28479,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 1685
+      "rank": 1651
     },
     {
       "ticker": "053280",
@@ -29067,7 +28496,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 1686
+      "rank": 1652
     },
     {
       "ticker": "048430",
@@ -29084,7 +28513,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 1687
+      "rank": 1653
     },
     {
       "ticker": "061040",
@@ -29101,7 +28530,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 1688
+      "rank": 1654
     },
     {
       "ticker": "085310",
@@ -29118,7 +28547,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 1689
+      "rank": 1655
     },
     {
       "ticker": "128660",
@@ -29135,7 +28564,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 1690
+      "rank": 1656
     },
     {
       "ticker": "391710",
@@ -29152,7 +28581,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 1691
+      "rank": 1657
     },
     {
       "ticker": "003310",
@@ -29170,7 +28599,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "식음료"
       ],
-      "rank": 1692
+      "rank": 1658
     },
     {
       "ticker": "140070",
@@ -29187,7 +28616,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 1693
+      "rank": 1659
     },
     {
       "ticker": "000850",
@@ -29204,7 +28633,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 1694
+      "rank": 1660
     },
     {
       "ticker": "091440",
@@ -29221,7 +28650,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 1695
+      "rank": 1661
     },
     {
       "ticker": "049480",
@@ -29238,7 +28667,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 1696
+      "rank": 1662
     },
     {
       "ticker": "081150",
@@ -29255,7 +28684,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 1697
+      "rank": 1663
     },
     {
       "ticker": "032850",
@@ -29272,7 +28701,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 1698
+      "rank": 1664
     },
     {
       "ticker": "002800",
@@ -29289,7 +28718,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 1699
+      "rank": 1665
     },
     {
       "ticker": "003780",
@@ -29307,7 +28736,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "섬유·패션·생활"
       ],
-      "rank": 1700
+      "rank": 1666
     },
     {
       "ticker": "036000",
@@ -29324,7 +28753,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 1701
+      "rank": 1667
     },
     {
       "ticker": "315640",
@@ -29341,7 +28770,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 1702
+      "rank": 1668
     },
     {
       "ticker": "105740",
@@ -29358,7 +28787,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 1703
+      "rank": 1669
     },
     {
       "ticker": "083790",
@@ -29375,7 +28804,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 1704
+      "rank": 1670
     },
     {
       "ticker": "251630",
@@ -29392,7 +28821,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 1705
+      "rank": 1671
     },
     {
       "ticker": "478560",
@@ -29409,7 +28838,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 1706
+      "rank": 1672
     },
     {
       "ticker": "459100",
@@ -29426,7 +28855,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 1707
+      "rank": 1673
     },
     {
       "ticker": "234920",
@@ -29443,7 +28872,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 1708
+      "rank": 1674
     },
     {
       "ticker": "126880",
@@ -29460,7 +28889,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 1709
+      "rank": 1675
     },
     {
       "ticker": "175140",
@@ -29477,7 +28906,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 1710
+      "rank": 1676
     },
     {
       "ticker": "162300",
@@ -29494,7 +28923,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 1711
+      "rank": 1677
     },
     {
       "ticker": "373200",
@@ -29511,7 +28940,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 1712
+      "rank": 1678
     },
     {
       "ticker": "004720",
@@ -29528,7 +28957,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 1713
+      "rank": 1679
     },
     {
       "ticker": "079980",
@@ -29545,7 +28974,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 1714
+      "rank": 1680
     },
     {
       "ticker": "033130",
@@ -29562,7 +28991,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 1715
+      "rank": 1681
     },
     {
       "ticker": "013700",
@@ -29579,7 +29008,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 1716
+      "rank": 1682
     },
     {
       "ticker": "037440",
@@ -29596,7 +29025,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 1717
+      "rank": 1683
     },
     {
       "ticker": "187420",
@@ -29613,7 +29042,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 1718
+      "rank": 1684
     },
     {
       "ticker": "340360",
@@ -29630,7 +29059,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 1719
+      "rank": 1685
     },
     {
       "ticker": "038460",
@@ -29647,7 +29076,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 1720
+      "rank": 1686
     },
     {
       "ticker": "094860",
@@ -29664,7 +29093,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 1721
+      "rank": 1687
     },
     {
       "ticker": "451250",
@@ -29681,7 +29110,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 1722
+      "rank": 1688
     },
     {
       "ticker": "348150",
@@ -29698,24 +29127,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 1723
-    },
-    {
-      "ticker": "007815",
-      "name": "코리아써우",
-      "name_en": "",
-      "market": "코스피",
-      "sector": "기타",
-      "price": 23800,
-      "change": 5.08,
-      "volume": 1192,
-      "trading_value": 28118900,
-      "mcap": 0.07,
-      "shares": 2964690,
-      "categories": [
-        "기타"
-      ],
-      "rank": 1724
+      "rank": 1689
     },
     {
       "ticker": "094940",
@@ -29732,7 +29144,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 1725
+      "rank": 1690
     },
     {
       "ticker": "016090",
@@ -29749,7 +29161,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 1726
+      "rank": 1691
     },
     {
       "ticker": "033230",
@@ -29766,7 +29178,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 1727
+      "rank": 1692
     },
     {
       "ticker": "137950",
@@ -29783,7 +29195,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 1728
+      "rank": 1693
     },
     {
       "ticker": "338100",
@@ -29800,7 +29212,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 1729
+      "rank": 1694
     },
     {
       "ticker": "065530",
@@ -29817,7 +29229,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 1730
+      "rank": 1695
     },
     {
       "ticker": "013360",
@@ -29834,7 +29246,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 1731
+      "rank": 1696
     },
     {
       "ticker": "073640",
@@ -29851,7 +29263,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 1732
+      "rank": 1697
     },
     {
       "ticker": "204840",
@@ -29868,7 +29280,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 1733
+      "rank": 1698
     },
     {
       "ticker": "463480",
@@ -29885,7 +29297,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 1734
+      "rank": 1699
     },
     {
       "ticker": "417790",
@@ -29902,7 +29314,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 1735
+      "rank": 1700
     },
     {
       "ticker": "347000",
@@ -29919,7 +29331,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 1736
+      "rank": 1701
     },
     {
       "ticker": "196490",
@@ -29936,7 +29348,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 1737
+      "rank": 1702
     },
     {
       "ticker": "067170",
@@ -29953,7 +29365,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 1738
+      "rank": 1703
     },
     {
       "ticker": "443250",
@@ -29970,24 +29382,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 1739
-    },
-    {
-      "ticker": "120115",
-      "name": "코오롱인더우",
-      "name_en": "",
-      "market": "코스피",
-      "sector": "기타",
-      "price": 24900,
-      "change": -0.4,
-      "volume": 3276,
-      "trading_value": 81670200,
-      "mcap": 0.07,
-      "shares": 2767860,
-      "categories": [
-        "기타"
-      ],
-      "rank": 1740
+      "rank": 1704
     },
     {
       "ticker": "126640",
@@ -30004,7 +29399,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 1741
+      "rank": 1705
     },
     {
       "ticker": "068290",
@@ -30021,7 +29416,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 1742
+      "rank": 1706
     },
     {
       "ticker": "347860",
@@ -30038,7 +29433,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 1743
+      "rank": 1707
     },
     {
       "ticker": "191420",
@@ -30055,7 +29450,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 1744
+      "rank": 1708
     },
     {
       "ticker": "147760",
@@ -30072,7 +29467,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 1745
+      "rank": 1709
     },
     {
       "ticker": "123420",
@@ -30089,7 +29484,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 1746
+      "rank": 1710
     },
     {
       "ticker": "332370",
@@ -30106,7 +29501,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 1747
+      "rank": 1711
     },
     {
       "ticker": "065440",
@@ -30123,7 +29518,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 1748
+      "rank": 1712
     },
     {
       "ticker": "216050",
@@ -30140,7 +29535,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 1749
+      "rank": 1713
     },
     {
       "ticker": "010660",
@@ -30158,7 +29553,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기계·장비"
       ],
-      "rank": 1750
+      "rank": 1714
     },
     {
       "ticker": "222110",
@@ -30175,7 +29570,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 1751
+      "rank": 1715
     },
     {
       "ticker": "111710",
@@ -30192,7 +29587,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 1752
+      "rank": 1716
     },
     {
       "ticker": "145170",
@@ -30209,7 +29604,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 1753
+      "rank": 1717
     },
     {
       "ticker": "217500",
@@ -30226,7 +29621,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 1754
+      "rank": 1718
     },
     {
       "ticker": "382150",
@@ -30243,7 +29638,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 1755
+      "rank": 1719
     },
     {
       "ticker": "215790",
@@ -30261,7 +29656,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "전자·부품"
       ],
-      "rank": 1756
+      "rank": 1720
     },
     {
       "ticker": "453860",
@@ -30278,7 +29673,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 1757
+      "rank": 1721
     },
     {
       "ticker": "018500",
@@ -30295,7 +29690,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 1758
+      "rank": 1722
     },
     {
       "ticker": "109080",
@@ -30312,7 +29707,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 1759
+      "rank": 1723
     },
     {
       "ticker": "215360",
@@ -30329,7 +29724,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 1760
+      "rank": 1724
     },
     {
       "ticker": "084650",
@@ -30346,7 +29741,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 1761
+      "rank": 1725
     },
     {
       "ticker": "071090",
@@ -30363,7 +29758,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 1762
+      "rank": 1726
     },
     {
       "ticker": "299170",
@@ -30380,7 +29775,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 1763
+      "rank": 1727
     },
     {
       "ticker": "033320",
@@ -30397,7 +29792,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 1764
+      "rank": 1728
     },
     {
       "ticker": "032540",
@@ -30414,7 +29809,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 1765
+      "rank": 1729
     },
     {
       "ticker": "080010",
@@ -30431,7 +29826,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 1766
+      "rank": 1730
     },
     {
       "ticker": "153710",
@@ -30448,24 +29843,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 1767
-    },
-    {
-      "ticker": "002795",
-      "name": "아모레퍼시픽홀딩스우",
-      "name_en": "",
-      "market": "코스피",
-      "sector": "기타",
-      "price": 10400,
-      "change": 0.97,
-      "volume": 9299,
-      "trading_value": 96511560,
-      "mcap": 0.07,
-      "shares": 6381172,
-      "categories": [
-        "기타"
-      ],
-      "rank": 1768
+      "rank": 1731
     },
     {
       "ticker": "043710",
@@ -30482,7 +29860,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 1769
+      "rank": 1732
     },
     {
       "ticker": "461030",
@@ -30499,7 +29877,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 1770
+      "rank": 1733
     },
     {
       "ticker": "101140",
@@ -30516,7 +29894,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 1771
+      "rank": 1734
     },
     {
       "ticker": "109860",
@@ -30533,7 +29911,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 1772
+      "rank": 1735
     },
     {
       "ticker": "009770",
@@ -30550,7 +29928,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 1773
+      "rank": 1736
     },
     {
       "ticker": "027830",
@@ -30567,7 +29945,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 1774
+      "rank": 1737
     },
     {
       "ticker": "185490",
@@ -30584,7 +29962,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 1775
+      "rank": 1738
     },
     {
       "ticker": "155660",
@@ -30601,7 +29979,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 1776
+      "rank": 1739
     },
     {
       "ticker": "198080",
@@ -30618,7 +29996,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 1777
+      "rank": 1740
     },
     {
       "ticker": "053450",
@@ -30635,7 +30013,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 1778
+      "rank": 1741
     },
     {
       "ticker": "155650",
@@ -30652,7 +30030,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 1779
+      "rank": 1742
     },
     {
       "ticker": "071670",
@@ -30669,7 +30047,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 1780
+      "rank": 1743
     },
     {
       "ticker": "019990",
@@ -30686,24 +30064,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 1781
-    },
-    {
-      "ticker": "003925",
-      "name": "남양유업우",
-      "name_en": "",
-      "market": "코스피",
-      "sector": "기타",
-      "price": 32750,
-      "change": 0.77,
-      "volume": 1602,
-      "trading_value": 52332850,
-      "mcap": 0.07,
-      "shares": 2000000,
-      "categories": [
-        "기타"
-      ],
-      "rank": 1782
+      "rank": 1744
     },
     {
       "ticker": "046210",
@@ -30720,7 +30081,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 1783
+      "rank": 1745
     },
     {
       "ticker": "048910",
@@ -30737,7 +30098,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 1784
+      "rank": 1746
     },
     {
       "ticker": "039020",
@@ -30754,7 +30115,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 1785
+      "rank": 1747
     },
     {
       "ticker": "100220",
@@ -30771,7 +30132,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 1786
+      "rank": 1748
     },
     {
       "ticker": "192250",
@@ -30788,7 +30149,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 1787
+      "rank": 1749
     },
     {
       "ticker": "010770",
@@ -30805,7 +30166,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 1788
+      "rank": 1750
     },
     {
       "ticker": "246690",
@@ -30823,7 +30184,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "금융"
       ],
-      "rank": 1789
+      "rank": 1751
     },
     {
       "ticker": "061250",
@@ -30840,7 +30201,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 1790
+      "rank": 1752
     },
     {
       "ticker": "088280",
@@ -30857,7 +30218,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 1791
+      "rank": 1753
     },
     {
       "ticker": "024900",
@@ -30874,7 +30235,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 1792
+      "rank": 1754
     },
     {
       "ticker": "271830",
@@ -30892,7 +30253,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기계·장비"
       ],
-      "rank": 1793
+      "rank": 1755
     },
     {
       "ticker": "003010",
@@ -30909,7 +30270,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 1794
+      "rank": 1756
     },
     {
       "ticker": "311690",
@@ -30926,7 +30287,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 1795
+      "rank": 1757
     },
     {
       "ticker": "331380",
@@ -30943,7 +30304,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 1796
+      "rank": 1758
     },
     {
       "ticker": "060570",
@@ -30960,7 +30321,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 1797
+      "rank": 1759
     },
     {
       "ticker": "024910",
@@ -30977,7 +30338,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 1798
+      "rank": 1760
     },
     {
       "ticker": "006880",
@@ -30994,7 +30355,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 1799
+      "rank": 1761
     },
     {
       "ticker": "010040",
@@ -31011,7 +30372,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 1800
+      "rank": 1762
     },
     {
       "ticker": "007280",
@@ -31028,7 +30389,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 1801
+      "rank": 1763
     },
     {
       "ticker": "036090",
@@ -31045,7 +30406,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 1802
+      "rank": 1764
     },
     {
       "ticker": "214270",
@@ -31062,7 +30423,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 1803
+      "rank": 1765
     },
     {
       "ticker": "014910",
@@ -31079,7 +30440,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 1804
+      "rank": 1766
     },
     {
       "ticker": "134580",
@@ -31096,7 +30457,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 1805
+      "rank": 1767
     },
     {
       "ticker": "000220",
@@ -31113,7 +30474,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 1806
+      "rank": 1768
     },
     {
       "ticker": "099220",
@@ -31130,7 +30491,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 1807
+      "rank": 1769
     },
     {
       "ticker": "288620",
@@ -31147,7 +30508,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 1808
+      "rank": 1770
     },
     {
       "ticker": "039240",
@@ -31164,7 +30525,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 1809
+      "rank": 1771
     },
     {
       "ticker": "333620",
@@ -31181,7 +30542,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 1810
+      "rank": 1772
     },
     {
       "ticker": "094850",
@@ -31198,7 +30559,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 1811
+      "rank": 1773
     },
     {
       "ticker": "104620",
@@ -31215,7 +30576,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 1812
+      "rank": 1774
     },
     {
       "ticker": "004540",
@@ -31232,7 +30593,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 1813
+      "rank": 1775
     },
     {
       "ticker": "452400",
@@ -31249,7 +30610,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 1814
+      "rank": 1776
     },
     {
       "ticker": "043650",
@@ -31266,7 +30627,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 1815
+      "rank": 1777
     },
     {
       "ticker": "009200",
@@ -31283,7 +30644,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 1816
+      "rank": 1778
     },
     {
       "ticker": "014950",
@@ -31300,7 +30661,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 1817
+      "rank": 1779
     },
     {
       "ticker": "041460",
@@ -31317,7 +30678,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 1818
+      "rank": 1780
     },
     {
       "ticker": "016250",
@@ -31334,7 +30695,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 1819
+      "rank": 1781
     },
     {
       "ticker": "446840",
@@ -31351,7 +30712,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 1820
+      "rank": 1782
     },
     {
       "ticker": "476080",
@@ -31368,7 +30729,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 1821
+      "rank": 1783
     },
     {
       "ticker": "001840",
@@ -31385,7 +30746,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 1822
+      "rank": 1784
     },
     {
       "ticker": "042110",
@@ -31402,7 +30763,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 1823
+      "rank": 1785
     },
     {
       "ticker": "039420",
@@ -31419,7 +30780,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 1824
+      "rank": 1786
     },
     {
       "ticker": "095270",
@@ -31436,7 +30797,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 1825
+      "rank": 1787
     },
     {
       "ticker": "065130",
@@ -31453,7 +30814,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 1826
+      "rank": 1788
     },
     {
       "ticker": "012790",
@@ -31470,7 +30831,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 1827
+      "rank": 1789
     },
     {
       "ticker": "246960",
@@ -31487,24 +30848,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 1828
-    },
-    {
-      "ticker": "294090",
-      "name": "이오플로우",
-      "name_en": "",
-      "market": "코스닥",
-      "sector": "기타",
-      "price": 1490,
-      "change": 0.0,
-      "volume": 0,
-      "trading_value": 0,
-      "mcap": 0.06,
-      "shares": 41809105,
-      "categories": [
-        "기타"
-      ],
-      "rank": 1829
+      "rank": 1790
     },
     {
       "ticker": "222420",
@@ -31521,7 +30865,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 1830
+      "rank": 1791
     },
     {
       "ticker": "012690",
@@ -31538,7 +30882,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 1831
+      "rank": 1792
     },
     {
       "ticker": "241790",
@@ -31555,7 +30899,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 1832
+      "rank": 1793
     },
     {
       "ticker": "089850",
@@ -31572,7 +30916,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 1833
+      "rank": 1794
     },
     {
       "ticker": "092780",
@@ -31589,7 +30933,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 1834
+      "rank": 1795
     },
     {
       "ticker": "046940",
@@ -31606,7 +30950,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 1835
+      "rank": 1796
     },
     {
       "ticker": "010240",
@@ -31623,7 +30967,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 1836
+      "rank": 1797
     },
     {
       "ticker": "163280",
@@ -31640,7 +30984,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 1837
+      "rank": 1798
     },
     {
       "ticker": "424980",
@@ -31657,7 +31001,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 1838
+      "rank": 1799
     },
     {
       "ticker": "352910",
@@ -31674,7 +31018,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 1839
+      "rank": 1800
     },
     {
       "ticker": "010470",
@@ -31691,7 +31035,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 1840
+      "rank": 1801
     },
     {
       "ticker": "004440",
@@ -31708,7 +31052,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 1841
+      "rank": 1802
     },
     {
       "ticker": "229000",
@@ -31725,7 +31069,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 1842
+      "rank": 1803
     },
     {
       "ticker": "053050",
@@ -31742,7 +31086,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 1843
+      "rank": 1804
     },
     {
       "ticker": "321820",
@@ -31759,7 +31103,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 1844
+      "rank": 1805
     },
     {
       "ticker": "296160",
@@ -31776,7 +31120,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 1845
+      "rank": 1806
     },
     {
       "ticker": "214260",
@@ -31793,7 +31137,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 1846
+      "rank": 1807
     },
     {
       "ticker": "004780",
@@ -31810,7 +31154,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 1847
+      "rank": 1808
     },
     {
       "ticker": "049550",
@@ -31827,7 +31171,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 1848
+      "rank": 1809
     },
     {
       "ticker": "317850",
@@ -31844,7 +31188,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 1849
+      "rank": 1810
     },
     {
       "ticker": "378850",
@@ -31861,7 +31205,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 1850
+      "rank": 1811
     },
     {
       "ticker": "004060",
@@ -31878,7 +31222,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 1851
+      "rank": 1812
     },
     {
       "ticker": "005670",
@@ -31895,7 +31239,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 1852
+      "rank": 1813
     },
     {
       "ticker": "136410",
@@ -31912,7 +31256,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 1853
+      "rank": 1814
     },
     {
       "ticker": "007370",
@@ -31929,7 +31273,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 1854
+      "rank": 1815
     },
     {
       "ticker": "054930",
@@ -31946,7 +31290,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 1855
+      "rank": 1816
     },
     {
       "ticker": "033310",
@@ -31963,7 +31307,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 1856
+      "rank": 1817
     },
     {
       "ticker": "207760",
@@ -31980,7 +31324,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 1857
+      "rank": 1818
     },
     {
       "ticker": "198440",
@@ -31997,7 +31341,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 1858
+      "rank": 1819
     },
     {
       "ticker": "067920",
@@ -32014,7 +31358,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 1859
+      "rank": 1820
     },
     {
       "ticker": "045340",
@@ -32031,7 +31375,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 1860
+      "rank": 1821
     },
     {
       "ticker": "317690",
@@ -32048,7 +31392,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 1861
+      "rank": 1822
     },
     {
       "ticker": "064240",
@@ -32065,7 +31409,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 1862
+      "rank": 1823
     },
     {
       "ticker": "111110",
@@ -32082,7 +31426,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 1863
+      "rank": 1824
     },
     {
       "ticker": "088910",
@@ -32099,7 +31443,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 1864
+      "rank": 1825
     },
     {
       "ticker": "027050",
@@ -32116,7 +31460,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 1865
+      "rank": 1826
     },
     {
       "ticker": "004830",
@@ -32133,7 +31477,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 1866
+      "rank": 1827
     },
     {
       "ticker": "008370",
@@ -32150,7 +31494,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 1867
+      "rank": 1828
     },
     {
       "ticker": "004770",
@@ -32167,7 +31511,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 1868
+      "rank": 1829
     },
     {
       "ticker": "317530",
@@ -32184,24 +31528,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 1869
-    },
-    {
-      "ticker": "000725",
-      "name": "현대건설우",
-      "name_en": "",
-      "market": "코스피",
-      "sector": "기타",
-      "price": 55600,
-      "change": 1.09,
-      "volume": 3976,
-      "trading_value": 220452200,
-      "mcap": 0.06,
-      "shares": 1054693,
-      "categories": [
-        "기타"
-      ],
-      "rank": 1870
+      "rank": 1830
     },
     {
       "ticker": "072130",
@@ -32218,7 +31545,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 1871
+      "rank": 1831
     },
     {
       "ticker": "263690",
@@ -32235,7 +31562,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 1872
+      "rank": 1832
     },
     {
       "ticker": "095910",
@@ -32252,7 +31579,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 1873
+      "rank": 1833
     },
     {
       "ticker": "199550",
@@ -32269,7 +31596,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 1874
+      "rank": 1834
     },
     {
       "ticker": "100030",
@@ -32286,7 +31613,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 1875
+      "rank": 1835
     },
     {
       "ticker": "129260",
@@ -32303,7 +31630,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 1876
+      "rank": 1836
     },
     {
       "ticker": "099520",
@@ -32320,7 +31647,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 1877
+      "rank": 1837
     },
     {
       "ticker": "347740",
@@ -32337,7 +31664,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 1878
+      "rank": 1838
     },
     {
       "ticker": "456570",
@@ -32354,7 +31681,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 1879
+      "rank": 1839
     },
     {
       "ticker": "033560",
@@ -32371,7 +31698,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 1880
+      "rank": 1840
     },
     {
       "ticker": "104040",
@@ -32388,7 +31715,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 1881
+      "rank": 1841
     },
     {
       "ticker": "053620",
@@ -32405,7 +31732,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 1882
+      "rank": 1842
     },
     {
       "ticker": "092440",
@@ -32422,7 +31749,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 1883
+      "rank": 1843
     },
     {
       "ticker": "245620",
@@ -32439,7 +31766,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 1884
+      "rank": 1844
     },
     {
       "ticker": "021050",
@@ -32456,24 +31783,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 1885
-    },
-    {
-      "ticker": "009835",
-      "name": "한화솔루션우",
-      "name_en": "",
-      "market": "코스피",
-      "sector": "기타",
-      "price": 22250,
-      "change": 1.37,
-      "volume": 6892,
-      "trading_value": 152255500,
-      "mcap": 0.06,
-      "shares": 2575349,
-      "categories": [
-        "기타"
-      ],
-      "rank": 1886
+      "rank": 1845
     },
     {
       "ticker": "002630",
@@ -32490,7 +31800,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 1887
+      "rank": 1846
     },
     {
       "ticker": "036670",
@@ -32507,7 +31817,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 1888
+      "rank": 1847
     },
     {
       "ticker": "180060",
@@ -32524,7 +31834,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 1889
+      "rank": 1848
     },
     {
       "ticker": "290670",
@@ -32541,7 +31851,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 1890
+      "rank": 1849
     },
     {
       "ticker": "419080",
@@ -32558,7 +31868,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 1891
+      "rank": 1850
     },
     {
       "ticker": "396690",
@@ -32575,7 +31885,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 1892
+      "rank": 1851
     },
     {
       "ticker": "460870",
@@ -32592,7 +31902,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 1893
+      "rank": 1852
     },
     {
       "ticker": "002760",
@@ -32609,7 +31919,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 1894
+      "rank": 1853
     },
     {
       "ticker": "0013V0",
@@ -32626,24 +31936,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 1895
-    },
-    {
-      "ticker": "005305",
-      "name": "롯데칠성우",
-      "name_en": "",
-      "market": "코스피",
-      "sector": "기타",
-      "price": 72900,
-      "change": -6.54,
-      "volume": 887,
-      "trading_value": 64602600,
-      "mcap": 0.06,
-      "shares": 775310,
-      "categories": [
-        "기타"
-      ],
-      "rank": 1896
+      "rank": 1854
     },
     {
       "ticker": "460470",
@@ -32660,7 +31953,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 1897
+      "rank": 1855
     },
     {
       "ticker": "250030",
@@ -32677,7 +31970,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 1898
+      "rank": 1856
     },
     {
       "ticker": "054300",
@@ -32694,7 +31987,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 1899
+      "rank": 1857
     },
     {
       "ticker": "040610",
@@ -32711,7 +32004,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 1900
+      "rank": 1858
     },
     {
       "ticker": "097800",
@@ -32728,7 +32021,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 1901
+      "rank": 1859
     },
     {
       "ticker": "480370",
@@ -32745,7 +32038,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 1902
+      "rank": 1860
     },
     {
       "ticker": "273060",
@@ -32762,7 +32055,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 1903
+      "rank": 1861
     },
     {
       "ticker": "036120",
@@ -32779,7 +32072,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 1904
+      "rank": 1862
     },
     {
       "ticker": "291650",
@@ -32796,7 +32089,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 1905
+      "rank": 1863
     },
     {
       "ticker": "360350",
@@ -32813,7 +32106,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 1906
+      "rank": 1864
     },
     {
       "ticker": "072470",
@@ -32830,7 +32123,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 1907
+      "rank": 1865
     },
     {
       "ticker": "348080",
@@ -32847,7 +32140,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 1908
+      "rank": 1866
     },
     {
       "ticker": "001550",
@@ -32864,7 +32157,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 1909
+      "rank": 1867
     },
     {
       "ticker": "214330",
@@ -32881,7 +32174,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 1910
+      "rank": 1868
     },
     {
       "ticker": "372910",
@@ -32898,7 +32191,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 1911
+      "rank": 1869
     },
     {
       "ticker": "006980",
@@ -32915,7 +32208,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 1912
+      "rank": 1870
     },
     {
       "ticker": "340930",
@@ -32932,7 +32225,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 1913
+      "rank": 1871
     },
     {
       "ticker": "050960",
@@ -32949,7 +32242,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 1914
+      "rank": 1872
     },
     {
       "ticker": "219550",
@@ -32966,7 +32259,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 1915
+      "rank": 1873
     },
     {
       "ticker": "072990",
@@ -32983,7 +32276,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 1916
+      "rank": 1874
     },
     {
       "ticker": "104540",
@@ -33000,7 +32293,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 1917
+      "rank": 1875
     },
     {
       "ticker": "001620",
@@ -33017,7 +32310,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 1918
+      "rank": 1876
     },
     {
       "ticker": "294140",
@@ -33034,7 +32327,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 1919
+      "rank": 1877
     },
     {
       "ticker": "471820",
@@ -33051,7 +32344,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 1920
+      "rank": 1878
     },
     {
       "ticker": "217480",
@@ -33068,7 +32361,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 1921
+      "rank": 1879
     },
     {
       "ticker": "004450",
@@ -33085,7 +32378,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 1922
+      "rank": 1880
     },
     {
       "ticker": "444530",
@@ -33102,7 +32395,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 1923
+      "rank": 1881
     },
     {
       "ticker": "038010",
@@ -33119,7 +32412,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 1924
+      "rank": 1882
     },
     {
       "ticker": "015710",
@@ -33136,7 +32429,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 1925
+      "rank": 1883
     },
     {
       "ticker": "278650",
@@ -33153,7 +32446,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 1926
+      "rank": 1884
     },
     {
       "ticker": "950200",
@@ -33170,7 +32463,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 1927
+      "rank": 1885
     },
     {
       "ticker": "099410",
@@ -33187,7 +32480,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 1928
+      "rank": 1886
     },
     {
       "ticker": "177900",
@@ -33204,24 +32497,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 1929
-    },
-    {
-      "ticker": "003465",
-      "name": "유화증권우",
-      "name_en": "",
-      "market": "코스피",
-      "sector": "기타",
-      "price": 3090,
-      "change": -0.16,
-      "volume": 819,
-      "trading_value": 2531570,
-      "mcap": 0.05,
-      "shares": 17476425,
-      "categories": [
-        "기타"
-      ],
-      "rank": 1930
+      "rank": 1887
     },
     {
       "ticker": "159580",
@@ -33238,7 +32514,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 1931
+      "rank": 1888
     },
     {
       "ticker": "053270",
@@ -33255,7 +32531,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 1932
+      "rank": 1889
     },
     {
       "ticker": "052220",
@@ -33272,7 +32548,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 1933
+      "rank": 1890
     },
     {
       "ticker": "479960",
@@ -33289,7 +32565,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 1934
+      "rank": 1891
     },
     {
       "ticker": "184230",
@@ -33306,7 +32582,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 1935
+      "rank": 1892
     },
     {
       "ticker": "122310",
@@ -33323,7 +32599,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 1936
+      "rank": 1893
     },
     {
       "ticker": "075180",
@@ -33340,7 +32616,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 1937
+      "rank": 1894
     },
     {
       "ticker": "219420",
@@ -33357,7 +32633,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 1938
+      "rank": 1895
     },
     {
       "ticker": "170790",
@@ -33374,7 +32650,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 1939
+      "rank": 1896
     },
     {
       "ticker": "373160",
@@ -33391,24 +32667,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 1940
-    },
-    {
-      "ticker": "001465",
-      "name": "BYC우",
-      "name_en": "",
-      "market": "코스피",
-      "sector": "기타",
-      "price": 24800,
-      "change": -3.5,
-      "volume": 1880,
-      "trading_value": 45861100,
-      "mcap": 0.05,
-      "shares": 2153850,
-      "categories": [
-        "기타"
-      ],
-      "rank": 1941
+      "rank": 1897
     },
     {
       "ticker": "023810",
@@ -33425,7 +32684,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 1942
+      "rank": 1898
     },
     {
       "ticker": "002410",
@@ -33442,7 +32701,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 1943
+      "rank": 1899
     },
     {
       "ticker": "408900",
@@ -33459,7 +32718,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 1944
+      "rank": 1900
     },
     {
       "ticker": "073110",
@@ -33476,24 +32735,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 1945
-    },
-    {
-      "ticker": "003475",
-      "name": "유안타증권우",
-      "name_en": "",
-      "market": "코스피",
-      "sector": "기타",
-      "price": 4090,
-      "change": 0.49,
-      "volume": 39968,
-      "trading_value": 163804895,
-      "mcap": 0.05,
-      "shares": 12912212,
-      "categories": [
-        "기타"
-      ],
-      "rank": 1946
+      "rank": 1901
     },
     {
       "ticker": "196450",
@@ -33510,7 +32752,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 1947
+      "rank": 1902
     },
     {
       "ticker": "260930",
@@ -33527,7 +32769,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 1948
+      "rank": 1903
     },
     {
       "ticker": "053350",
@@ -33544,7 +32786,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 1949
+      "rank": 1904
     },
     {
       "ticker": "256630",
@@ -33561,7 +32803,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 1950
+      "rank": 1905
     },
     {
       "ticker": "000910",
@@ -33578,7 +32820,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 1951
+      "rank": 1906
     },
     {
       "ticker": "011390",
@@ -33595,7 +32837,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 1952
+      "rank": 1907
     },
     {
       "ticker": "123700",
@@ -33612,7 +32854,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 1953
+      "rank": 1908
     },
     {
       "ticker": "053980",
@@ -33629,7 +32871,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 1954
+      "rank": 1909
     },
     {
       "ticker": "068330",
@@ -33646,7 +32888,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 1955
+      "rank": 1910
     },
     {
       "ticker": "047400",
@@ -33663,7 +32905,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 1956
+      "rank": 1911
     },
     {
       "ticker": "033170",
@@ -33680,7 +32922,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 1957
+      "rank": 1912
     },
     {
       "ticker": "378800",
@@ -33697,7 +32939,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 1958
+      "rank": 1913
     },
     {
       "ticker": "384470",
@@ -33714,7 +32956,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 1959
+      "rank": 1914
     },
     {
       "ticker": "303360",
@@ -33731,7 +32973,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 1960
+      "rank": 1915
     },
     {
       "ticker": "089790",
@@ -33748,7 +32990,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 1961
+      "rank": 1916
     },
     {
       "ticker": "065500",
@@ -33765,7 +33007,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 1962
+      "rank": 1917
     },
     {
       "ticker": "096610",
@@ -33782,7 +33024,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 1963
+      "rank": 1918
     },
     {
       "ticker": "004920",
@@ -33799,7 +33041,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 1964
+      "rank": 1919
     },
     {
       "ticker": "238120",
@@ -33816,7 +33058,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 1965
+      "rank": 1920
     },
     {
       "ticker": "063440",
@@ -33833,7 +33075,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 1966
+      "rank": 1921
     },
     {
       "ticker": "305090",
@@ -33850,7 +33092,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 1967
+      "rank": 1922
     },
     {
       "ticker": "011230",
@@ -33868,7 +33110,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "전자·부품"
       ],
-      "rank": 1968
+      "rank": 1923
     },
     {
       "ticker": "006370",
@@ -33885,7 +33127,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 1969
+      "rank": 1924
     },
     {
       "ticker": "020760",
@@ -33902,7 +33144,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 1970
+      "rank": 1925
     },
     {
       "ticker": "318160",
@@ -33919,7 +33161,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 1971
+      "rank": 1926
     },
     {
       "ticker": "189860",
@@ -33936,7 +33178,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 1972
+      "rank": 1927
     },
     {
       "ticker": "435570",
@@ -33953,7 +33195,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 1973
+      "rank": 1928
     },
     {
       "ticker": "261520",
@@ -33970,7 +33212,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 1974
+      "rank": 1929
     },
     {
       "ticker": "127980",
@@ -33987,7 +33229,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 1975
+      "rank": 1930
     },
     {
       "ticker": "082210",
@@ -34004,7 +33246,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 1976
+      "rank": 1931
     },
     {
       "ticker": "025530",
@@ -34021,7 +33263,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 1977
+      "rank": 1932
     },
     {
       "ticker": "014190",
@@ -34038,7 +33280,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 1978
+      "rank": 1933
     },
     {
       "ticker": "189690",
@@ -34055,7 +33297,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 1979
+      "rank": 1934
     },
     {
       "ticker": "465480",
@@ -34072,7 +33314,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 1980
+      "rank": 1935
     },
     {
       "ticker": "299900",
@@ -34089,7 +33331,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 1981
+      "rank": 1936
     },
     {
       "ticker": "393970",
@@ -34106,7 +33348,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 1982
+      "rank": 1937
     },
     {
       "ticker": "002140",
@@ -34123,7 +33365,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 1983
+      "rank": 1938
     },
     {
       "ticker": "058730",
@@ -34140,7 +33382,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 1984
+      "rank": 1939
     },
     {
       "ticker": "393210",
@@ -34157,7 +33399,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 1985
+      "rank": 1940
     },
     {
       "ticker": "232830",
@@ -34174,7 +33416,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 1986
+      "rank": 1941
     },
     {
       "ticker": "007680",
@@ -34191,7 +33433,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 1987
+      "rank": 1942
     },
     {
       "ticker": "137080",
@@ -34208,7 +33450,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 1988
+      "rank": 1943
     },
     {
       "ticker": "038070",
@@ -34225,7 +33467,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 1989
+      "rank": 1944
     },
     {
       "ticker": "041650",
@@ -34242,7 +33484,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 1990
+      "rank": 1945
     },
     {
       "ticker": "037330",
@@ -34259,7 +33501,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 1991
+      "rank": 1946
     },
     {
       "ticker": "037230",
@@ -34276,7 +33518,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 1992
+      "rank": 1947
     },
     {
       "ticker": "227950",
@@ -34293,7 +33535,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 1993
+      "rank": 1948
     },
     {
       "ticker": "440290",
@@ -34310,7 +33552,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 1994
+      "rank": 1949
     },
     {
       "ticker": "277070",
@@ -34327,7 +33569,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 1995
+      "rank": 1950
     },
     {
       "ticker": "413640",
@@ -34344,24 +33586,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 1996
-    },
-    {
-      "ticker": "451700",
-      "name": "엔에이치스팩29호",
-      "name_en": "",
-      "market": "코스닥",
-      "sector": "기타",
-      "price": 3440,
-      "change": 0.0,
-      "volume": 0,
-      "trading_value": 0,
-      "mcap": 0.05,
-      "shares": 14350000,
-      "categories": [
-        "기타"
-      ],
-      "rank": 1997
+      "rank": 1951
     },
     {
       "ticker": "361570",
@@ -34378,7 +33603,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 1998
+      "rank": 1952
     },
     {
       "ticker": "226330",
@@ -34395,7 +33620,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 1999
+      "rank": 1953
     },
     {
       "ticker": "060560",
@@ -34412,7 +33637,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 2000
+      "rank": 1954
     },
     {
       "ticker": "466410",
@@ -34429,24 +33654,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 2001
-    },
-    {
-      "ticker": "37550K",
-      "name": "DL이앤씨우",
-      "name_en": "",
-      "market": "코스피",
-      "sector": "기타",
-      "price": 23250,
-      "change": 0.43,
-      "volume": 1859,
-      "trading_value": 42990100,
-      "mcap": 0.05,
-      "shares": 2113885,
-      "categories": [
-        "기타"
-      ],
-      "rank": 2002
+      "rank": 1955
     },
     {
       "ticker": "053160",
@@ -34463,7 +33671,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 2003
+      "rank": 1956
     },
     {
       "ticker": "042940",
@@ -34480,7 +33688,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 2004
+      "rank": 1957
     },
     {
       "ticker": "023350",
@@ -34497,7 +33705,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 2005
+      "rank": 1958
     },
     {
       "ticker": "196300",
@@ -34514,7 +33722,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 2006
+      "rank": 1959
     },
     {
       "ticker": "143540",
@@ -34531,7 +33739,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 2007
+      "rank": 1960
     },
     {
       "ticker": "317870",
@@ -34548,7 +33756,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 2008
+      "rank": 1961
     },
     {
       "ticker": "016600",
@@ -34565,7 +33773,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 2009
+      "rank": 1962
     },
     {
       "ticker": "038060",
@@ -34582,7 +33790,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 2010
+      "rank": 1963
     },
     {
       "ticker": "090080",
@@ -34599,7 +33807,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 2011
+      "rank": 1964
     },
     {
       "ticker": "065170",
@@ -34616,7 +33824,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 2012
+      "rank": 1965
     },
     {
       "ticker": "114450",
@@ -34633,7 +33841,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 2013
+      "rank": 1966
     },
     {
       "ticker": "006490",
@@ -34650,7 +33858,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 2014
+      "rank": 1967
     },
     {
       "ticker": "094970",
@@ -34667,7 +33875,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 2015
+      "rank": 1968
     },
     {
       "ticker": "179530",
@@ -34684,7 +33892,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 2016
+      "rank": 1969
     },
     {
       "ticker": "104200",
@@ -34701,7 +33909,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 2017
+      "rank": 1970
     },
     {
       "ticker": "458350",
@@ -34718,7 +33926,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 2018
+      "rank": 1971
     },
     {
       "ticker": "351330",
@@ -34735,7 +33943,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 2019
+      "rank": 1972
     },
     {
       "ticker": "082660",
@@ -34752,7 +33960,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 2020
+      "rank": 1973
     },
     {
       "ticker": "052790",
@@ -34769,7 +33977,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 2021
+      "rank": 1974
     },
     {
       "ticker": "418250",
@@ -34786,7 +33994,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 2022
+      "rank": 1975
     },
     {
       "ticker": "369370",
@@ -34803,7 +34011,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 2023
+      "rank": 1976
     },
     {
       "ticker": "171010",
@@ -34820,7 +34028,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 2024
+      "rank": 1977
     },
     {
       "ticker": "432430",
@@ -34837,7 +34045,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 2025
+      "rank": 1978
     },
     {
       "ticker": "189980",
@@ -34854,7 +34062,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 2026
+      "rank": 1979
     },
     {
       "ticker": "017180",
@@ -34871,7 +34079,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 2027
+      "rank": 1980
     },
     {
       "ticker": "105760",
@@ -34888,24 +34096,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 2028
-    },
-    {
-      "ticker": "28513K",
-      "name": "SK케미칼우",
-      "name_en": "",
-      "market": "코스피",
-      "sector": "기타",
-      "price": 22250,
-      "change": 1.37,
-      "volume": 2159,
-      "trading_value": 48021700,
-      "mcap": 0.05,
-      "shares": 2115429,
-      "categories": [
-        "기타"
-      ],
-      "rank": 2029
+      "rank": 1981
     },
     {
       "ticker": "023440",
@@ -34922,7 +34113,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 2030
+      "rank": 1982
     },
     {
       "ticker": "105550",
@@ -34939,24 +34130,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 2031
-    },
-    {
-      "ticker": "006125",
-      "name": "SK디스커버리우",
-      "name_en": "",
-      "market": "코스피",
-      "sector": "기타",
-      "price": 38050,
-      "change": 0.13,
-      "volume": 1602,
-      "trading_value": 59160050,
-      "mcap": 0.05,
-      "shares": 1231705,
-      "categories": [
-        "기타"
-      ],
-      "rank": 2032
+      "rank": 1983
     },
     {
       "ticker": "417860",
@@ -34973,7 +34147,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 2033
+      "rank": 1984
     },
     {
       "ticker": "420570",
@@ -34990,7 +34164,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 2034
+      "rank": 1985
     },
     {
       "ticker": "066670",
@@ -35007,7 +34181,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 2035
+      "rank": 1986
     },
     {
       "ticker": "024950",
@@ -35024,7 +34198,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 2036
+      "rank": 1987
     },
     {
       "ticker": "234100",
@@ -35041,7 +34215,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 2037
+      "rank": 1988
     },
     {
       "ticker": "190650",
@@ -35058,7 +34232,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 2038
+      "rank": 1989
     },
     {
       "ticker": "007530",
@@ -35075,7 +34249,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 2039
+      "rank": 1990
     },
     {
       "ticker": "450330",
@@ -35092,7 +34266,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 2040
+      "rank": 1991
     },
     {
       "ticker": "051390",
@@ -35109,7 +34283,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 2041
+      "rank": 1992
     },
     {
       "ticker": "286750",
@@ -35126,7 +34300,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 2042
+      "rank": 1993
     },
     {
       "ticker": "037950",
@@ -35143,7 +34317,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 2043
+      "rank": 1994
     },
     {
       "ticker": "150900",
@@ -35160,7 +34334,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 2044
+      "rank": 1995
     },
     {
       "ticker": "060850",
@@ -35177,7 +34351,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 2045
+      "rank": 1996
     },
     {
       "ticker": "069460",
@@ -35194,7 +34368,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 2046
+      "rank": 1997
     },
     {
       "ticker": "065650",
@@ -35211,7 +34385,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 2047
+      "rank": 1998
     },
     {
       "ticker": "314140",
@@ -35228,7 +34402,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 2048
+      "rank": 1999
     },
     {
       "ticker": "357250",
@@ -35245,7 +34419,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 2049
+      "rank": 2000
     },
     {
       "ticker": "452160",
@@ -35262,7 +34436,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 2050
+      "rank": 2001
     },
     {
       "ticker": "000950",
@@ -35279,7 +34453,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 2051
+      "rank": 2002
     },
     {
       "ticker": "129890",
@@ -35296,7 +34470,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 2052
+      "rank": 2003
     },
     {
       "ticker": "003080",
@@ -35313,7 +34487,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 2053
+      "rank": 2004
     },
     {
       "ticker": "066910",
@@ -35330,7 +34504,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 2054
+      "rank": 2005
     },
     {
       "ticker": "079000",
@@ -35347,7 +34521,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 2055
+      "rank": 2006
     },
     {
       "ticker": "093240",
@@ -35364,7 +34538,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 2056
+      "rank": 2007
     },
     {
       "ticker": "002920",
@@ -35381,7 +34555,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 2057
+      "rank": 2008
     },
     {
       "ticker": "419120",
@@ -35398,7 +34572,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 2058
+      "rank": 2009
     },
     {
       "ticker": "066130",
@@ -35415,7 +34589,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 2059
+      "rank": 2010
     },
     {
       "ticker": "005030",
@@ -35432,7 +34606,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 2060
+      "rank": 2011
     },
     {
       "ticker": "097870",
@@ -35449,7 +34623,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 2061
+      "rank": 2012
     },
     {
       "ticker": "261200",
@@ -35466,7 +34640,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 2062
+      "rank": 2013
     },
     {
       "ticker": "033830",
@@ -35483,7 +34657,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 2063
+      "rank": 2014
     },
     {
       "ticker": "074610",
@@ -35500,7 +34674,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 2064
+      "rank": 2015
     },
     {
       "ticker": "376290",
@@ -35517,7 +34691,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 2065
+      "rank": 2016
     },
     {
       "ticker": "355390",
@@ -35534,7 +34708,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 2066
+      "rank": 2017
     },
     {
       "ticker": "452300",
@@ -35551,7 +34725,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 2067
+      "rank": 2018
     },
     {
       "ticker": "009320",
@@ -35568,7 +34742,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 2068
+      "rank": 2019
     },
     {
       "ticker": "173940",
@@ -35585,7 +34759,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 2069
+      "rank": 2020
     },
     {
       "ticker": "288330",
@@ -35602,7 +34776,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 2070
+      "rank": 2021
     },
     {
       "ticker": "376930",
@@ -35619,7 +34793,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 2071
+      "rank": 2022
     },
     {
       "ticker": "100660",
@@ -35636,7 +34810,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 2072
+      "rank": 2023
     },
     {
       "ticker": "200580",
@@ -35653,7 +34827,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 2073
+      "rank": 2024
     },
     {
       "ticker": "051490",
@@ -35670,7 +34844,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 2074
+      "rank": 2025
     },
     {
       "ticker": "0010V0",
@@ -35687,7 +34861,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 2075
+      "rank": 2026
     },
     {
       "ticker": "035460",
@@ -35704,7 +34878,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 2076
+      "rank": 2027
     },
     {
       "ticker": "127710",
@@ -35721,7 +34895,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 2077
+      "rank": 2028
     },
     {
       "ticker": "059100",
@@ -35738,7 +34912,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 2078
+      "rank": 2029
     },
     {
       "ticker": "009140",
@@ -35755,7 +34929,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 2079
+      "rank": 2030
     },
     {
       "ticker": "002290",
@@ -35772,7 +34946,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 2080
+      "rank": 2031
     },
     {
       "ticker": "004910",
@@ -35789,7 +34963,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 2081
+      "rank": 2032
     },
     {
       "ticker": "290120",
@@ -35806,7 +34980,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 2082
+      "rank": 2033
     },
     {
       "ticker": "069410",
@@ -35823,7 +34997,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 2083
+      "rank": 2034
     },
     {
       "ticker": "218150",
@@ -35840,7 +35014,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 2084
+      "rank": 2035
     },
     {
       "ticker": "056700",
@@ -35857,7 +35031,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 2085
+      "rank": 2036
     },
     {
       "ticker": "051630",
@@ -35875,7 +35049,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "섬유·패션·생활"
       ],
-      "rank": 2086
+      "rank": 2037
     },
     {
       "ticker": "263020",
@@ -35892,7 +35066,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 2087
+      "rank": 2038
     },
     {
       "ticker": "340810",
@@ -35909,7 +35083,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 2088
+      "rank": 2039
     },
     {
       "ticker": "153460",
@@ -35926,7 +35100,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 2089
+      "rank": 2040
     },
     {
       "ticker": "008870",
@@ -35943,7 +35117,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 2090
+      "rank": 2041
     },
     {
       "ticker": "250000",
@@ -35960,7 +35134,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 2091
+      "rank": 2042
     },
     {
       "ticker": "307280",
@@ -35977,7 +35151,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 2092
+      "rank": 2043
     },
     {
       "ticker": "070300",
@@ -35994,7 +35168,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 2093
+      "rank": 2044
     },
     {
       "ticker": "352700",
@@ -36011,7 +35185,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 2094
+      "rank": 2045
     },
     {
       "ticker": "215380",
@@ -36028,7 +35202,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 2095
+      "rank": 2046
     },
     {
       "ticker": "012280",
@@ -36045,7 +35219,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 2096
+      "rank": 2047
     },
     {
       "ticker": "237820",
@@ -36062,7 +35236,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 2097
+      "rank": 2048
     },
     {
       "ticker": "090410",
@@ -36079,7 +35253,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 2098
+      "rank": 2049
     },
     {
       "ticker": "297570",
@@ -36096,7 +35270,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 2099
+      "rank": 2050
     },
     {
       "ticker": "033540",
@@ -36113,7 +35287,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 2100
+      "rank": 2051
     },
     {
       "ticker": "469750",
@@ -36130,7 +35304,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 2101
+      "rank": 2052
     },
     {
       "ticker": "025880",
@@ -36147,7 +35321,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 2102
+      "rank": 2053
     },
     {
       "ticker": "122690",
@@ -36164,7 +35338,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 2103
+      "rank": 2054
     },
     {
       "ticker": "178780",
@@ -36181,7 +35355,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 2104
+      "rank": 2055
     },
     {
       "ticker": "263810",
@@ -36198,7 +35372,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 2105
+      "rank": 2056
     },
     {
       "ticker": "072770",
@@ -36215,7 +35389,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 2106
+      "rank": 2057
     },
     {
       "ticker": "004410",
@@ -36232,7 +35406,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 2107
+      "rank": 2058
     },
     {
       "ticker": "364950",
@@ -36249,7 +35423,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 2108
+      "rank": 2059
     },
     {
       "ticker": "215090",
@@ -36266,7 +35440,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 2109
+      "rank": 2060
     },
     {
       "ticker": "140520",
@@ -36283,7 +35457,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 2110
+      "rank": 2061
     },
     {
       "ticker": "088340",
@@ -36300,7 +35474,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 2111
+      "rank": 2062
     },
     {
       "ticker": "260660",
@@ -36317,7 +35491,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 2112
+      "rank": 2063
     },
     {
       "ticker": "019490",
@@ -36334,7 +35508,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 2113
+      "rank": 2064
     },
     {
       "ticker": "289220",
@@ -36351,7 +35525,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 2114
+      "rank": 2065
     },
     {
       "ticker": "086040",
@@ -36368,7 +35542,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 2115
+      "rank": 2066
     },
     {
       "ticker": "089150",
@@ -36385,7 +35559,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 2116
+      "rank": 2067
     },
     {
       "ticker": "008420",
@@ -36402,7 +35576,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 2117
+      "rank": 2068
     },
     {
       "ticker": "052460",
@@ -36419,7 +35593,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 2118
+      "rank": 2069
     },
     {
       "ticker": "263770",
@@ -36436,7 +35610,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 2119
+      "rank": 2070
     },
     {
       "ticker": "087600",
@@ -36453,7 +35627,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 2120
+      "rank": 2071
     },
     {
       "ticker": "011300",
@@ -36470,7 +35644,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 2121
+      "rank": 2072
     },
     {
       "ticker": "044960",
@@ -36487,7 +35661,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 2122
+      "rank": 2073
     },
     {
       "ticker": "221840",
@@ -36504,7 +35678,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 2123
+      "rank": 2074
     },
     {
       "ticker": "019770",
@@ -36521,7 +35695,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 2124
+      "rank": 2075
     },
     {
       "ticker": "049830",
@@ -36538,7 +35712,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 2125
+      "rank": 2076
     },
     {
       "ticker": "481850",
@@ -36555,7 +35729,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 2126
+      "rank": 2077
     },
     {
       "ticker": "133820",
@@ -36572,7 +35746,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 2127
+      "rank": 2078
     },
     {
       "ticker": "290090",
@@ -36589,7 +35763,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 2128
+      "rank": 2079
     },
     {
       "ticker": "017040",
@@ -36606,7 +35780,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 2129
+      "rank": 2080
     },
     {
       "ticker": "011420",
@@ -36623,7 +35797,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 2130
+      "rank": 2081
     },
     {
       "ticker": "256150",
@@ -36640,7 +35814,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 2131
+      "rank": 2082
     },
     {
       "ticker": "050860",
@@ -36657,7 +35831,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 2132
+      "rank": 2083
     },
     {
       "ticker": "122350",
@@ -36674,7 +35848,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 2133
+      "rank": 2084
     },
     {
       "ticker": "429270",
@@ -36691,7 +35865,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 2134
+      "rank": 2085
     },
     {
       "ticker": "050110",
@@ -36708,7 +35882,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 2135
+      "rank": 2086
     },
     {
       "ticker": "091590",
@@ -36725,7 +35899,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 2136
+      "rank": 2087
     },
     {
       "ticker": "221980",
@@ -36742,7 +35916,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 2137
+      "rank": 2088
     },
     {
       "ticker": "026940",
@@ -36759,7 +35933,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 2138
+      "rank": 2089
     },
     {
       "ticker": "224110",
@@ -36776,7 +35950,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 2139
+      "rank": 2090
     },
     {
       "ticker": "208710",
@@ -36793,7 +35967,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 2140
+      "rank": 2091
     },
     {
       "ticker": "064090",
@@ -36810,7 +35984,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 2141
+      "rank": 2092
     },
     {
       "ticker": "239890",
@@ -36827,7 +36001,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 2142
+      "rank": 2093
     },
     {
       "ticker": "020180",
@@ -36844,7 +36018,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 2143
+      "rank": 2094
     },
     {
       "ticker": "311390",
@@ -36861,7 +36035,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 2144
+      "rank": 2095
     },
     {
       "ticker": "066900",
@@ -36878,7 +36052,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 2145
+      "rank": 2096
     },
     {
       "ticker": "003060",
@@ -36895,7 +36069,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 2146
+      "rank": 2097
     },
     {
       "ticker": "200780",
@@ -36912,7 +36086,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 2147
+      "rank": 2098
     },
     {
       "ticker": "049470",
@@ -36929,7 +36103,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 2148
+      "rank": 2099
     },
     {
       "ticker": "049800",
@@ -36946,7 +36120,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 2149
+      "rank": 2100
     },
     {
       "ticker": "101240",
@@ -36963,7 +36137,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 2150
+      "rank": 2101
     },
     {
       "ticker": "288980",
@@ -36980,7 +36154,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 2151
+      "rank": 2102
     },
     {
       "ticker": "186230",
@@ -36997,7 +36171,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 2152
+      "rank": 2103
     },
     {
       "ticker": "011330",
@@ -37014,7 +36188,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 2153
+      "rank": 2104
     },
     {
       "ticker": "340440",
@@ -37031,7 +36205,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 2154
+      "rank": 2105
     },
     {
       "ticker": "064480",
@@ -37048,7 +36222,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 2155
+      "rank": 2106
     },
     {
       "ticker": "032960",
@@ -37065,7 +36239,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 2156
+      "rank": 2107
     },
     {
       "ticker": "096630",
@@ -37082,7 +36256,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 2157
+      "rank": 2108
     },
     {
       "ticker": "464280",
@@ -37099,7 +36273,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 2158
+      "rank": 2109
     },
     {
       "ticker": "204020",
@@ -37116,7 +36290,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 2159
+      "rank": 2110
     },
     {
       "ticker": "351320",
@@ -37133,7 +36307,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 2160
+      "rank": 2111
     },
     {
       "ticker": "263700",
@@ -37150,7 +36324,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 2161
+      "rank": 2112
     },
     {
       "ticker": "026040",
@@ -37167,24 +36341,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 2162
-    },
-    {
-      "ticker": "000215",
-      "name": "DL우",
-      "name_en": "",
-      "market": "코스피",
-      "sector": "기타",
-      "price": 22850,
-      "change": 2.7,
-      "volume": 2464,
-      "trading_value": 54493900,
-      "mcap": 0.04,
-      "shares": 1686115,
-      "categories": [
-        "기타"
-      ],
-      "rank": 2163
+      "rank": 2113
     },
     {
       "ticker": "024120",
@@ -37201,7 +36358,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 2164
+      "rank": 2114
     },
     {
       "ticker": "050120",
@@ -37218,7 +36375,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 2165
+      "rank": 2115
     },
     {
       "ticker": "335810",
@@ -37235,7 +36392,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 2166
+      "rank": 2116
     },
     {
       "ticker": "198940",
@@ -37252,7 +36409,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 2167
+      "rank": 2117
     },
     {
       "ticker": "022220",
@@ -37269,7 +36426,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 2168
+      "rank": 2118
     },
     {
       "ticker": "206400",
@@ -37286,7 +36443,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 2169
+      "rank": 2119
     },
     {
       "ticker": "066360",
@@ -37303,7 +36460,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 2170
+      "rank": 2120
     },
     {
       "ticker": "081580",
@@ -37320,7 +36477,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 2171
+      "rank": 2121
     },
     {
       "ticker": "103840",
@@ -37337,7 +36494,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 2172
+      "rank": 2122
     },
     {
       "ticker": "007120",
@@ -37354,7 +36511,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 2173
+      "rank": 2123
     },
     {
       "ticker": "434480",
@@ -37371,7 +36528,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 2174
+      "rank": 2124
     },
     {
       "ticker": "199480",
@@ -37388,7 +36545,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 2175
+      "rank": 2125
     },
     {
       "ticker": "013000",
@@ -37405,7 +36562,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 2176
+      "rank": 2126
     },
     {
       "ticker": "407400",
@@ -37422,7 +36579,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 2177
+      "rank": 2127
     },
     {
       "ticker": "084870",
@@ -37439,7 +36596,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 2178
+      "rank": 2128
     },
     {
       "ticker": "332290",
@@ -37456,7 +36613,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 2179
+      "rank": 2129
     },
     {
       "ticker": "123570",
@@ -37473,7 +36630,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 2180
+      "rank": 2130
     },
     {
       "ticker": "083550",
@@ -37490,7 +36647,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 2181
+      "rank": 2131
     },
     {
       "ticker": "258610",
@@ -37507,7 +36664,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 2182
+      "rank": 2132
     },
     {
       "ticker": "046310",
@@ -37524,7 +36681,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 2183
+      "rank": 2133
     },
     {
       "ticker": "228340",
@@ -37541,7 +36698,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 2184
+      "rank": 2134
     },
     {
       "ticker": "219750",
@@ -37558,7 +36715,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 2185
+      "rank": 2135
     },
     {
       "ticker": "119500",
@@ -37575,7 +36732,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 2186
+      "rank": 2136
     },
     {
       "ticker": "355690",
@@ -37592,7 +36749,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 2187
+      "rank": 2137
     },
     {
       "ticker": "057540",
@@ -37609,7 +36766,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 2188
+      "rank": 2138
     },
     {
       "ticker": "043340",
@@ -37626,7 +36783,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 2189
+      "rank": 2139
     },
     {
       "ticker": "430690",
@@ -37643,7 +36800,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 2190
+      "rank": 2140
     },
     {
       "ticker": "005320",
@@ -37660,7 +36817,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 2191
+      "rank": 2141
     },
     {
       "ticker": "025440",
@@ -37677,7 +36834,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 2192
+      "rank": 2142
     },
     {
       "ticker": "128540",
@@ -37694,7 +36851,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 2193
+      "rank": 2143
     },
     {
       "ticker": "000890",
@@ -37711,7 +36868,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 2194
+      "rank": 2144
     },
     {
       "ticker": "047080",
@@ -37728,7 +36885,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 2195
+      "rank": 2145
     },
     {
       "ticker": "000760",
@@ -37745,7 +36902,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 2196
+      "rank": 2146
     },
     {
       "ticker": "064520",
@@ -37762,7 +36919,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 2197
+      "rank": 2147
     },
     {
       "ticker": "006920",
@@ -37780,7 +36937,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "건설·건자재"
       ],
-      "rank": 2198
+      "rank": 2148
     },
     {
       "ticker": "203450",
@@ -37797,7 +36954,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 2199
+      "rank": 2149
     },
     {
       "ticker": "153490",
@@ -37814,7 +36971,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 2200
+      "rank": 2150
     },
     {
       "ticker": "187270",
@@ -37831,7 +36988,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 2201
+      "rank": 2151
     },
     {
       "ticker": "475460",
@@ -37848,7 +37005,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 2202
+      "rank": 2152
     },
     {
       "ticker": "145270",
@@ -37865,7 +37022,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 2203
+      "rank": 2153
     },
     {
       "ticker": "206560",
@@ -37882,7 +37039,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 2204
+      "rank": 2154
     },
     {
       "ticker": "220180",
@@ -37899,7 +37056,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 2205
+      "rank": 2155
     },
     {
       "ticker": "148250",
@@ -37916,7 +37073,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 2206
+      "rank": 2156
     },
     {
       "ticker": "023960",
@@ -37933,7 +37090,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 2207
+      "rank": 2157
     },
     {
       "ticker": "383930",
@@ -37950,7 +37107,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 2208
+      "rank": 2158
     },
     {
       "ticker": "464500",
@@ -37967,7 +37124,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 2209
+      "rank": 2159
     },
     {
       "ticker": "052600",
@@ -37984,7 +37141,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 2210
+      "rank": 2160
     },
     {
       "ticker": "376180",
@@ -38001,7 +37158,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 2211
+      "rank": 2161
     },
     {
       "ticker": "014570",
@@ -38018,7 +37175,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 2212
+      "rank": 2162
     },
     {
       "ticker": "134790",
@@ -38035,7 +37192,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 2213
+      "rank": 2163
     },
     {
       "ticker": "071850",
@@ -38052,7 +37209,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 2214
+      "rank": 2164
     },
     {
       "ticker": "284620",
@@ -38069,7 +37226,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 2215
+      "rank": 2165
     },
     {
       "ticker": "160550",
@@ -38086,7 +37243,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 2216
+      "rank": 2166
     },
     {
       "ticker": "068940",
@@ -38103,7 +37260,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 2217
+      "rank": 2167
     },
     {
       "ticker": "200350",
@@ -38120,7 +37277,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 2218
+      "rank": 2168
     },
     {
       "ticker": "031310",
@@ -38137,7 +37294,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 2219
+      "rank": 2169
     },
     {
       "ticker": "043910",
@@ -38154,7 +37311,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 2220
+      "rank": 2170
     },
     {
       "ticker": "459550",
@@ -38171,7 +37328,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 2221
+      "rank": 2171
     },
     {
       "ticker": "900300",
@@ -38188,7 +37345,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 2222
+      "rank": 2172
     },
     {
       "ticker": "002880",
@@ -38205,7 +37362,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 2223
+      "rank": 2173
     },
     {
       "ticker": "263050",
@@ -38222,7 +37379,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 2224
+      "rank": 2174
     },
     {
       "ticker": "053950",
@@ -38239,7 +37396,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 2225
+      "rank": 2175
     },
     {
       "ticker": "106240",
@@ -38256,7 +37413,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 2226
+      "rank": 2176
     },
     {
       "ticker": "010640",
@@ -38274,7 +37431,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "섬유·패션·생활"
       ],
-      "rank": 2227
+      "rank": 2177
     },
     {
       "ticker": "014990",
@@ -38291,7 +37448,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 2228
+      "rank": 2178
     },
     {
       "ticker": "057030",
@@ -38308,7 +37465,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 2229
+      "rank": 2179
     },
     {
       "ticker": "363260",
@@ -38325,7 +37482,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 2230
+      "rank": 2180
     },
     {
       "ticker": "001380",
@@ -38342,7 +37499,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 2231
+      "rank": 2181
     },
     {
       "ticker": "002420",
@@ -38359,7 +37516,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 2232
+      "rank": 2182
     },
     {
       "ticker": "019570",
@@ -38376,7 +37533,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 2233
+      "rank": 2183
     },
     {
       "ticker": "044480",
@@ -38393,7 +37550,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 2234
+      "rank": 2184
     },
     {
       "ticker": "318410",
@@ -38410,7 +37567,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 2235
+      "rank": 2185
     },
     {
       "ticker": "387570",
@@ -38427,7 +37584,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 2236
+      "rank": 2186
     },
     {
       "ticker": "450520",
@@ -38444,7 +37601,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 2237
+      "rank": 2187
     },
     {
       "ticker": "403490",
@@ -38461,7 +37618,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 2238
+      "rank": 2188
     },
     {
       "ticker": "475660",
@@ -38478,7 +37635,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 2239
+      "rank": 2189
     },
     {
       "ticker": "388610",
@@ -38495,7 +37652,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 2240
+      "rank": 2190
     },
     {
       "ticker": "060540",
@@ -38512,7 +37669,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 2241
+      "rank": 2191
     },
     {
       "ticker": "001210",
@@ -38529,7 +37686,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 2242
+      "rank": 2192
     },
     {
       "ticker": "045060",
@@ -38546,7 +37703,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 2243
+      "rank": 2193
     },
     {
       "ticker": "109820",
@@ -38563,24 +37720,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 2244
-    },
-    {
-      "ticker": "004365",
-      "name": "세방우",
-      "name_en": "",
-      "market": "코스피",
-      "sector": "기타",
-      "price": 9220,
-      "change": 0.11,
-      "volume": 1642,
-      "trading_value": 15177920,
-      "mcap": 0.03,
-      "shares": 3689250,
-      "categories": [
-        "기타"
-      ],
-      "rank": 2245
+      "rank": 2194
     },
     {
       "ticker": "080520",
@@ -38597,7 +37737,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 2246
+      "rank": 2195
     },
     {
       "ticker": "0010F0",
@@ -38614,7 +37754,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 2247
+      "rank": 2196
     },
     {
       "ticker": "336060",
@@ -38631,24 +37771,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 2248
-    },
-    {
-      "ticker": "003535",
-      "name": "한화투자증권우",
-      "name_en": "",
-      "market": "코스피",
-      "sector": "기타",
-      "price": 7040,
-      "change": 2.77,
-      "volume": 8670,
-      "trading_value": 60081800,
-      "mcap": 0.03,
-      "shares": 4800000,
-      "categories": [
-        "기타"
-      ],
-      "rank": 2249
+      "rank": 2197
     },
     {
       "ticker": "002870",
@@ -38665,7 +37788,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 2250
+      "rank": 2198
     },
     {
       "ticker": "262840",
@@ -38682,7 +37805,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 2251
+      "rank": 2199
     },
     {
       "ticker": "097780",
@@ -38699,7 +37822,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 2252
+      "rank": 2200
     },
     {
       "ticker": "365590",
@@ -38716,7 +37839,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 2253
+      "rank": 2201
     },
     {
       "ticker": "446440",
@@ -38733,7 +37856,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 2254
+      "rank": 2202
     },
     {
       "ticker": "133750",
@@ -38750,7 +37873,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 2255
+      "rank": 2203
     },
     {
       "ticker": "356890",
@@ -38767,7 +37890,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 2256
+      "rank": 2204
     },
     {
       "ticker": "027740",
@@ -38784,7 +37907,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 2257
+      "rank": 2205
     },
     {
       "ticker": "277410",
@@ -38801,7 +37924,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 2258
+      "rank": 2206
     },
     {
       "ticker": "900310",
@@ -38818,7 +37941,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 2259
+      "rank": 2207
     },
     {
       "ticker": "086060",
@@ -38835,7 +37958,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 2260
+      "rank": 2208
     },
     {
       "ticker": "021650",
@@ -38852,7 +37975,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 2261
+      "rank": 2209
     },
     {
       "ticker": "005820",
@@ -38869,7 +37992,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 2262
+      "rank": 2210
     },
     {
       "ticker": "089140",
@@ -38886,24 +38009,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 2263
-    },
-    {
-      "ticker": "159910",
-      "name": "에코글로우",
-      "name_en": "",
-      "market": "코스닥",
-      "sector": "기타",
-      "price": 3145,
-      "change": -0.79,
-      "volume": 2018,
-      "trading_value": 6291703,
-      "mcap": 0.03,
-      "shares": 10467097,
-      "categories": [
-        "기타"
-      ],
-      "rank": 2264
+      "rank": 2211
     },
     {
       "ticker": "177830",
@@ -38920,7 +38026,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 2265
+      "rank": 2212
     },
     {
       "ticker": "075130",
@@ -38937,7 +38043,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 2266
+      "rank": 2213
     },
     {
       "ticker": "270870",
@@ -38954,7 +38060,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 2267
+      "rank": 2214
     },
     {
       "ticker": "058110",
@@ -38971,7 +38077,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 2268
+      "rank": 2215
     },
     {
       "ticker": "495810",
@@ -38988,7 +38094,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 2269
+      "rank": 2216
     },
     {
       "ticker": "900070",
@@ -39005,7 +38111,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 2270
+      "rank": 2217
     },
     {
       "ticker": "254120",
@@ -39022,7 +38128,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 2271
+      "rank": 2218
     },
     {
       "ticker": "296640",
@@ -39039,7 +38145,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 2272
+      "rank": 2219
     },
     {
       "ticker": "045300",
@@ -39056,7 +38162,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 2273
+      "rank": 2220
     },
     {
       "ticker": "075970",
@@ -39073,7 +38179,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 2274
+      "rank": 2221
     },
     {
       "ticker": "239610",
@@ -39090,7 +38196,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 2275
+      "rank": 2222
     },
     {
       "ticker": "363250",
@@ -39107,7 +38213,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 2276
+      "rank": 2223
     },
     {
       "ticker": "373170",
@@ -39124,7 +38230,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 2277
+      "rank": 2224
     },
     {
       "ticker": "318020",
@@ -39141,7 +38247,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 2278
+      "rank": 2225
     },
     {
       "ticker": "112190",
@@ -39158,7 +38264,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 2279
+      "rank": 2226
     },
     {
       "ticker": "037370",
@@ -39175,7 +38281,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 2280
+      "rank": 2227
     },
     {
       "ticker": "208860",
@@ -39192,7 +38298,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 2281
+      "rank": 2228
     },
     {
       "ticker": "114630",
@@ -39209,7 +38315,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 2282
+      "rank": 2229
     },
     {
       "ticker": "088790",
@@ -39226,7 +38332,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 2283
+      "rank": 2230
     },
     {
       "ticker": "073540",
@@ -39243,7 +38349,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 2284
+      "rank": 2231
     },
     {
       "ticker": "054780",
@@ -39260,7 +38366,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 2285
+      "rank": 2232
     },
     {
       "ticker": "195500",
@@ -39277,7 +38383,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 2286
+      "rank": 2233
     },
     {
       "ticker": "290520",
@@ -39294,7 +38400,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 2287
+      "rank": 2234
     },
     {
       "ticker": "308170",
@@ -39311,7 +38417,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 2288
+      "rank": 2235
     },
     {
       "ticker": "406820",
@@ -39328,7 +38434,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 2289
+      "rank": 2236
     },
     {
       "ticker": "187220",
@@ -39345,7 +38451,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 2290
+      "rank": 2237
     },
     {
       "ticker": "031510",
@@ -39362,7 +38468,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 2291
+      "rank": 2238
     },
     {
       "ticker": "276730",
@@ -39379,7 +38485,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 2292
+      "rank": 2239
     },
     {
       "ticker": "347770",
@@ -39396,7 +38502,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 2293
+      "rank": 2240
     },
     {
       "ticker": "223310",
@@ -39413,7 +38519,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 2294
+      "rank": 2241
     },
     {
       "ticker": "025750",
@@ -39430,7 +38536,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 2295
+      "rank": 2242
     },
     {
       "ticker": "008250",
@@ -39447,7 +38553,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 2296
+      "rank": 2243
     },
     {
       "ticker": "258830",
@@ -39464,7 +38570,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 2297
+      "rank": 2244
     },
     {
       "ticker": "057680",
@@ -39481,7 +38587,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 2298
+      "rank": 2245
     },
     {
       "ticker": "043200",
@@ -39498,7 +38604,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 2299
+      "rank": 2246
     },
     {
       "ticker": "464580",
@@ -39515,7 +38621,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 2300
+      "rank": 2247
     },
     {
       "ticker": "099390",
@@ -39532,7 +38638,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 2301
+      "rank": 2248
     },
     {
       "ticker": "016670",
@@ -39549,7 +38655,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 2302
+      "rank": 2249
     },
     {
       "ticker": "027040",
@@ -39566,7 +38672,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 2303
+      "rank": 2250
     },
     {
       "ticker": "130500",
@@ -39583,7 +38689,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 2304
+      "rank": 2251
     },
     {
       "ticker": "001070",
@@ -39600,7 +38706,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 2305
+      "rank": 2252
     },
     {
       "ticker": "195990",
@@ -39617,7 +38723,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 2306
+      "rank": 2253
     },
     {
       "ticker": "071950",
@@ -39634,7 +38740,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 2307
+      "rank": 2254
     },
     {
       "ticker": "038620",
@@ -39651,7 +38757,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 2308
+      "rank": 2255
     },
     {
       "ticker": "162120",
@@ -39668,24 +38774,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 2309
-    },
-    {
-      "ticker": "33637K",
-      "name": "솔루스첨단소재1우",
-      "name_en": "",
-      "market": "코스피",
-      "sector": "기타",
-      "price": 1816,
-      "change": 0.78,
-      "volume": 12433,
-      "trading_value": 22567342,
-      "mcap": 0.03,
-      "shares": 16908766,
-      "categories": [
-        "기타"
-      ],
-      "rank": 2310
+      "rank": 2256
     },
     {
       "ticker": "038950",
@@ -39702,7 +38791,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 2311
+      "rank": 2257
     },
     {
       "ticker": "012620",
@@ -39719,7 +38808,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 2312
+      "rank": 2258
     },
     {
       "ticker": "012160",
@@ -39736,7 +38825,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 2313
+      "rank": 2259
     },
     {
       "ticker": "078590",
@@ -39753,7 +38842,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 2314
+      "rank": 2260
     },
     {
       "ticker": "035200",
@@ -39770,7 +38859,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 2315
+      "rank": 2261
     },
     {
       "ticker": "007720",
@@ -39787,7 +38876,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 2316
+      "rank": 2262
     },
     {
       "ticker": "039740",
@@ -39804,7 +38893,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 2317
+      "rank": 2263
     },
     {
       "ticker": "227420",
@@ -39821,24 +38910,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 2318
-    },
-    {
-      "ticker": "006345",
-      "name": "대원전선우",
-      "name_en": "",
-      "market": "코스피",
-      "sector": "기타",
-      "price": 11530,
-      "change": 10.97,
-      "volume": 369076,
-      "trading_value": 4174821940,
-      "mcap": 0.03,
-      "shares": 2621200,
-      "categories": [
-        "기타"
-      ],
-      "rank": 2319
+      "rank": 2264
     },
     {
       "ticker": "246250",
@@ -39855,7 +38927,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 2320
+      "rank": 2265
     },
     {
       "ticker": "238490",
@@ -39872,7 +38944,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 2321
+      "rank": 2266
     },
     {
       "ticker": "002690",
@@ -39889,7 +38961,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 2322
+      "rank": 2267
     },
     {
       "ticker": "068050",
@@ -39906,7 +38978,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 2323
+      "rank": 2268
     },
     {
       "ticker": "038870",
@@ -39923,7 +38995,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 2324
+      "rank": 2269
     },
     {
       "ticker": "318000",
@@ -39940,7 +39012,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 2325
+      "rank": 2270
     },
     {
       "ticker": "032790",
@@ -39957,7 +39029,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 2326
+      "rank": 2271
     },
     {
       "ticker": "038880",
@@ -39974,24 +39046,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 2327
-    },
-    {
-      "ticker": "33626L",
-      "name": "두산퓨얼셀2우B",
-      "name_en": "",
-      "market": "코스피",
-      "sector": "기타",
-      "price": 10040,
-      "change": -0.2,
-      "volume": 1751,
-      "trading_value": 17816530,
-      "mcap": 0.03,
-      "shares": 2986300,
-      "categories": [
-        "기타"
-      ],
-      "rank": 2328
+      "rank": 2272
     },
     {
       "ticker": "359090",
@@ -40008,7 +39063,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 2329
+      "rank": 2273
     },
     {
       "ticker": "241840",
@@ -40025,7 +39080,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 2330
+      "rank": 2274
     },
     {
       "ticker": "257370",
@@ -40042,24 +39097,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 2331
-    },
-    {
-      "ticker": "002025",
-      "name": "코오롱우",
-      "name_en": "",
-      "market": "코스피",
-      "sector": "기타",
-      "price": 25750,
-      "change": -0.19,
-      "volume": 410,
-      "trading_value": 10543475,
-      "mcap": 0.03,
-      "shares": 1160437,
-      "categories": [
-        "기타"
-      ],
-      "rank": 2332
+      "rank": 2275
     },
     {
       "ticker": "351870",
@@ -40076,7 +39114,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 2333
+      "rank": 2276
     },
     {
       "ticker": "090370",
@@ -40093,7 +39131,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 2334
+      "rank": 2277
     },
     {
       "ticker": "021880",
@@ -40110,7 +39148,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 2335
+      "rank": 2278
     },
     {
       "ticker": "080530",
@@ -40127,7 +39165,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 2336
+      "rank": 2279
     },
     {
       "ticker": "131220",
@@ -40144,7 +39182,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 2337
+      "rank": 2280
     },
     {
       "ticker": "290270",
@@ -40161,7 +39199,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 2338
+      "rank": 2281
     },
     {
       "ticker": "462310",
@@ -40178,7 +39216,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 2339
+      "rank": 2282
     },
     {
       "ticker": "033200",
@@ -40195,7 +39233,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 2340
+      "rank": 2283
     },
     {
       "ticker": "263920",
@@ -40212,7 +39250,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 2341
+      "rank": 2284
     },
     {
       "ticker": "337840",
@@ -40229,7 +39267,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 2342
+      "rank": 2285
     },
     {
       "ticker": "169330",
@@ -40246,7 +39284,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 2343
+      "rank": 2286
     },
     {
       "ticker": "342870",
@@ -40263,7 +39301,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 2344
+      "rank": 2287
     },
     {
       "ticker": "300120",
@@ -40280,7 +39318,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 2345
+      "rank": 2288
     },
     {
       "ticker": "032860",
@@ -40297,7 +39335,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 2346
+      "rank": 2289
     },
     {
       "ticker": "142760",
@@ -40314,7 +39352,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 2347
+      "rank": 2290
     },
     {
       "ticker": "046390",
@@ -40331,7 +39369,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 2348
+      "rank": 2291
     },
     {
       "ticker": "023150",
@@ -40348,7 +39386,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 2349
+      "rank": 2292
     },
     {
       "ticker": "065950",
@@ -40365,7 +39403,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 2350
+      "rank": 2293
     },
     {
       "ticker": "001000",
@@ -40382,7 +39420,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 2351
+      "rank": 2294
     },
     {
       "ticker": "131100",
@@ -40399,7 +39437,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 2352
+      "rank": 2295
     },
     {
       "ticker": "065370",
@@ -40416,7 +39454,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 2353
+      "rank": 2296
     },
     {
       "ticker": "009810",
@@ -40433,7 +39471,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 2354
+      "rank": 2297
     },
     {
       "ticker": "039290",
@@ -40450,7 +39488,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 2355
+      "rank": 2298
     },
     {
       "ticker": "045510",
@@ -40467,7 +39505,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 2356
+      "rank": 2299
     },
     {
       "ticker": "000040",
@@ -40484,7 +39522,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 2357
+      "rank": 2300
     },
     {
       "ticker": "440320",
@@ -40501,7 +39539,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 2358
+      "rank": 2301
     },
     {
       "ticker": "006570",
@@ -40518,7 +39556,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 2359
+      "rank": 2302
     },
     {
       "ticker": "317120",
@@ -40535,7 +39573,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 2360
+      "rank": 2303
     },
     {
       "ticker": "462510",
@@ -40552,7 +39590,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 2361
+      "rank": 2304
     },
     {
       "ticker": "017000",
@@ -40569,7 +39607,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 2362
+      "rank": 2305
     },
     {
       "ticker": "398120",
@@ -40586,7 +39624,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 2363
+      "rank": 2306
     },
     {
       "ticker": "403360",
@@ -40603,24 +39641,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 2364
-    },
-    {
-      "ticker": "019175",
-      "name": "신풍제약우",
-      "name_en": "",
-      "market": "코스피",
-      "sector": "기타",
-      "price": 14350,
-      "change": -4.14,
-      "volume": 8667,
-      "trading_value": 121797850,
-      "mcap": 0.03,
-      "shares": 1991230,
-      "categories": [
-        "기타"
-      ],
-      "rank": 2365
+      "rank": 2307
     },
     {
       "ticker": "243870",
@@ -40637,7 +39658,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 2366
+      "rank": 2308
     },
     {
       "ticker": "101000",
@@ -40654,7 +39675,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 2367
+      "rank": 2309
     },
     {
       "ticker": "003680",
@@ -40671,7 +39692,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 2368
+      "rank": 2310
     },
     {
       "ticker": "013810",
@@ -40688,7 +39709,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 2369
+      "rank": 2311
     },
     {
       "ticker": "079170",
@@ -40705,7 +39726,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 2370
+      "rank": 2312
     },
     {
       "ticker": "115160",
@@ -40722,7 +39743,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 2371
+      "rank": 2313
     },
     {
       "ticker": "225220",
@@ -40739,7 +39760,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 2372
+      "rank": 2314
     },
     {
       "ticker": "210120",
@@ -40756,7 +39777,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 2373
+      "rank": 2315
     },
     {
       "ticker": "438700",
@@ -40773,7 +39794,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 2374
+      "rank": 2316
     },
     {
       "ticker": "140430",
@@ -40790,7 +39811,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 2375
+      "rank": 2317
     },
     {
       "ticker": "068100",
@@ -40807,7 +39828,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 2376
+      "rank": 2318
     },
     {
       "ticker": "122830",
@@ -40824,7 +39845,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 2377
+      "rank": 2319
     },
     {
       "ticker": "317240",
@@ -40841,7 +39862,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 2378
+      "rank": 2320
     },
     {
       "ticker": "131090",
@@ -40858,7 +39879,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 2379
+      "rank": 2321
     },
     {
       "ticker": "073570",
@@ -40875,7 +39896,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 2380
+      "rank": 2322
     },
     {
       "ticker": "024070",
@@ -40892,7 +39913,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 2381
+      "rank": 2323
     },
     {
       "ticker": "008470",
@@ -40909,7 +39930,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 2382
+      "rank": 2324
     },
     {
       "ticker": "069140",
@@ -40926,7 +39947,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 2383
+      "rank": 2325
     },
     {
       "ticker": "310870",
@@ -40943,7 +39964,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 2384
+      "rank": 2326
     },
     {
       "ticker": "013720",
@@ -40960,7 +39981,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 2385
+      "rank": 2327
     },
     {
       "ticker": "014130",
@@ -40977,7 +39998,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 2386
+      "rank": 2328
     },
     {
       "ticker": "010400",
@@ -40994,7 +40015,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 2387
+      "rank": 2329
     },
     {
       "ticker": "056730",
@@ -41011,7 +40032,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 2388
+      "rank": 2330
     },
     {
       "ticker": "353590",
@@ -41028,7 +40049,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 2389
+      "rank": 2331
     },
     {
       "ticker": "048470",
@@ -41045,7 +40066,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 2390
+      "rank": 2332
     },
     {
       "ticker": "405920",
@@ -41062,7 +40083,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 2391
+      "rank": 2333
     },
     {
       "ticker": "121890",
@@ -41079,7 +40100,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 2392
+      "rank": 2334
     },
     {
       "ticker": "233990",
@@ -41096,24 +40117,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 2393
-    },
-    {
-      "ticker": "464680",
-      "name": "KB제27호스팩",
-      "name_en": "",
-      "market": "코스닥",
-      "sector": "기타",
-      "price": 2110,
-      "change": 0.0,
-      "volume": 63215,
-      "trading_value": 133380170,
-      "mcap": 0.03,
-      "shares": 12905000,
-      "categories": [
-        "기타"
-      ],
-      "rank": 2394
+      "rank": 2335
     },
     {
       "ticker": "043220",
@@ -41130,7 +40134,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 2395
+      "rank": 2336
     },
     {
       "ticker": "304840",
@@ -41147,7 +40151,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 2396
+      "rank": 2337
     },
     {
       "ticker": "001810",
@@ -41164,7 +40168,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 2397
+      "rank": 2338
     },
     {
       "ticker": "004870",
@@ -41181,7 +40185,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 2398
+      "rank": 2339
     },
     {
       "ticker": "015260",
@@ -41198,7 +40202,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 2399
+      "rank": 2340
     },
     {
       "ticker": "311060",
@@ -41215,7 +40219,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 2400
+      "rank": 2341
     },
     {
       "ticker": "091340",
@@ -41232,7 +40236,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 2401
+      "rank": 2342
     },
     {
       "ticker": "033050",
@@ -41249,7 +40253,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 2402
+      "rank": 2343
     },
     {
       "ticker": "354200",
@@ -41266,7 +40270,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 2403
+      "rank": 2344
     },
     {
       "ticker": "053290",
@@ -41283,7 +40287,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 2404
+      "rank": 2345
     },
     {
       "ticker": "318010",
@@ -41300,7 +40304,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 2405
+      "rank": 2346
     },
     {
       "ticker": "033250",
@@ -41317,7 +40321,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 2406
+      "rank": 2347
     },
     {
       "ticker": "237750",
@@ -41334,7 +40338,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 2407
+      "rank": 2348
     },
     {
       "ticker": "018680",
@@ -41351,7 +40355,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 2408
+      "rank": 2349
     },
     {
       "ticker": "367000",
@@ -41368,7 +40372,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 2409
+      "rank": 2350
     },
     {
       "ticker": "274400",
@@ -41385,7 +40389,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 2410
+      "rank": 2351
     },
     {
       "ticker": "032750",
@@ -41402,7 +40406,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 2411
+      "rank": 2352
     },
     {
       "ticker": "030720",
@@ -41419,7 +40423,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 2412
+      "rank": 2353
     },
     {
       "ticker": "462980",
@@ -41436,7 +40440,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 2413
+      "rank": 2354
     },
     {
       "ticker": "063760",
@@ -41453,7 +40457,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 2414
+      "rank": 2355
     },
     {
       "ticker": "005110",
@@ -41470,7 +40474,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 2415
+      "rank": 2356
     },
     {
       "ticker": "032080",
@@ -41487,7 +40491,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 2416
+      "rank": 2357
     },
     {
       "ticker": "354390",
@@ -41504,7 +40508,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 2417
+      "rank": 2358
     },
     {
       "ticker": "900110",
@@ -41521,7 +40525,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 2418
+      "rank": 2359
     },
     {
       "ticker": "143210",
@@ -41538,7 +40542,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 2419
+      "rank": 2360
     },
     {
       "ticker": "007770",
@@ -41555,7 +40559,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 2420
+      "rank": 2361
     },
     {
       "ticker": "016100",
@@ -41572,7 +40576,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 2421
+      "rank": 2362
     },
     {
       "ticker": "258790",
@@ -41589,7 +40593,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 2422
+      "rank": 2363
     },
     {
       "ticker": "403810",
@@ -41606,7 +40610,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 2423
+      "rank": 2364
     },
     {
       "ticker": "004270",
@@ -41623,7 +40627,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 2424
+      "rank": 2365
     },
     {
       "ticker": "252500",
@@ -41640,7 +40644,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 2425
+      "rank": 2366
     },
     {
       "ticker": "002820",
@@ -41657,7 +40661,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 2426
+      "rank": 2367
     },
     {
       "ticker": "397810",
@@ -41674,7 +40678,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 2427
+      "rank": 2368
     },
     {
       "ticker": "019660",
@@ -41691,7 +40695,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 2428
+      "rank": 2369
     },
     {
       "ticker": "306040",
@@ -41708,7 +40712,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 2429
+      "rank": 2370
     },
     {
       "ticker": "200230",
@@ -41725,7 +40729,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 2430
+      "rank": 2371
     },
     {
       "ticker": "006050",
@@ -41742,24 +40746,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 2431
-    },
-    {
-      "ticker": "002355",
-      "name": "넥센타이어1우B",
-      "name_en": "",
-      "market": "코스피",
-      "sector": "기타",
-      "price": 3945,
-      "change": -1.25,
-      "volume": 5198,
-      "trading_value": 20607210,
-      "mcap": 0.03,
-      "shares": 6500000,
-      "categories": [
-        "기타"
-      ],
-      "rank": 2432
+      "rank": 2372
     },
     {
       "ticker": "052300",
@@ -41776,7 +40763,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 2433
+      "rank": 2373
     },
     {
       "ticker": "424760",
@@ -41793,7 +40780,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 2434
+      "rank": 2374
     },
     {
       "ticker": "005360",
@@ -41810,7 +40797,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 2435
+      "rank": 2375
     },
     {
       "ticker": "059180",
@@ -41827,7 +40814,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 2436
+      "rank": 2376
     },
     {
       "ticker": "006740",
@@ -41844,7 +40831,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 2437
+      "rank": 2377
     },
     {
       "ticker": "051380",
@@ -41861,7 +40848,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 2438
+      "rank": 2378
     },
     {
       "ticker": "131760",
@@ -41878,7 +40865,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 2439
+      "rank": 2379
     },
     {
       "ticker": "138070",
@@ -41895,7 +40882,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 2440
+      "rank": 2380
     },
     {
       "ticker": "024890",
@@ -41912,7 +40899,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 2441
+      "rank": 2381
     },
     {
       "ticker": "206950",
@@ -41929,7 +40916,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 2442
+      "rank": 2382
     },
     {
       "ticker": "290560",
@@ -41946,7 +40933,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 2443
+      "rank": 2383
     },
     {
       "ticker": "900270",
@@ -41964,7 +40951,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "지주"
       ],
-      "rank": 2444
+      "rank": 2384
     },
     {
       "ticker": "006200",
@@ -41981,7 +40968,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 2445
+      "rank": 2385
     },
     {
       "ticker": "373110",
@@ -41998,7 +40985,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 2446
+      "rank": 2386
     },
     {
       "ticker": "333050",
@@ -42015,7 +41002,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 2447
+      "rank": 2387
     },
     {
       "ticker": "131180",
@@ -42032,7 +41019,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 2448
+      "rank": 2388
     },
     {
       "ticker": "148930",
@@ -42049,7 +41036,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 2449
+      "rank": 2389
     },
     {
       "ticker": "036480",
@@ -42066,7 +41053,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 2450
+      "rank": 2390
     },
     {
       "ticker": "239340",
@@ -42083,7 +41070,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 2451
+      "rank": 2391
     },
     {
       "ticker": "418620",
@@ -42100,7 +41087,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 2452
+      "rank": 2392
     },
     {
       "ticker": "303530",
@@ -42117,24 +41104,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 2453
-    },
-    {
-      "ticker": "003495",
-      "name": "대한항공우",
-      "name_en": "",
-      "market": "코스피",
-      "sector": "기타",
-      "price": 21950,
-      "change": -0.45,
-      "volume": 3082,
-      "trading_value": 67501575,
-      "mcap": 0.02,
-      "shares": 1110794,
-      "categories": [
-        "기타"
-      ],
-      "rank": 2454
+      "rank": 2393
     },
     {
       "ticker": "069640",
@@ -42151,7 +41121,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 2455
+      "rank": 2394
     },
     {
       "ticker": "102950",
@@ -42168,7 +41138,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 2456
+      "rank": 2395
     },
     {
       "ticker": "298060",
@@ -42185,7 +41155,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 2457
+      "rank": 2396
     },
     {
       "ticker": "377330",
@@ -42202,7 +41172,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 2458
+      "rank": 2397
     },
     {
       "ticker": "331520",
@@ -42219,7 +41189,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 2459
+      "rank": 2398
     },
     {
       "ticker": "027580",
@@ -42236,7 +41206,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 2460
+      "rank": 2399
     },
     {
       "ticker": "024940",
@@ -42253,7 +41223,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 2461
+      "rank": 2400
     },
     {
       "ticker": "130740",
@@ -42270,7 +41240,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 2462
+      "rank": 2401
     },
     {
       "ticker": "146060",
@@ -42287,7 +41257,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 2463
+      "rank": 2402
     },
     {
       "ticker": "093380",
@@ -42304,7 +41274,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 2464
+      "rank": 2403
     },
     {
       "ticker": "446070",
@@ -42321,7 +41291,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 2465
+      "rank": 2404
     },
     {
       "ticker": "058450",
@@ -42338,24 +41308,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 2466
-    },
-    {
-      "ticker": "008775",
-      "name": "호텔신라우",
-      "name_en": "",
-      "market": "코스피",
-      "sector": "기타",
-      "price": 31950,
-      "change": 0.0,
-      "volume": 1861,
-      "trading_value": 60169750,
-      "mcap": 0.02,
-      "shares": 751879,
-      "categories": [
-        "기타"
-      ],
-      "rank": 2467
+      "rank": 2405
     },
     {
       "ticker": "037400",
@@ -42372,7 +41325,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 2468
+      "rank": 2406
     },
     {
       "ticker": "091970",
@@ -42389,7 +41342,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 2469
+      "rank": 2407
     },
     {
       "ticker": "188260",
@@ -42406,7 +41359,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 2470
+      "rank": 2408
     },
     {
       "ticker": "078860",
@@ -42423,7 +41376,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 2471
+      "rank": 2409
     },
     {
       "ticker": "179720",
@@ -42440,7 +41393,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 2472
+      "rank": 2410
     },
     {
       "ticker": "054090",
@@ -42457,7 +41410,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 2473
+      "rank": 2411
     },
     {
       "ticker": "096690",
@@ -42474,7 +41427,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 2474
+      "rank": 2412
     },
     {
       "ticker": "043360",
@@ -42491,7 +41444,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 2475
+      "rank": 2413
     },
     {
       "ticker": "012170",
@@ -42508,7 +41461,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 2476
+      "rank": 2414
     },
     {
       "ticker": "118000",
@@ -42525,7 +41478,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 2477
+      "rank": 2415
     },
     {
       "ticker": "267790",
@@ -42542,7 +41495,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 2478
+      "rank": 2416
     },
     {
       "ticker": "023770",
@@ -42559,7 +41512,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 2479
+      "rank": 2417
     },
     {
       "ticker": "208350",
@@ -42576,7 +41529,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 2480
+      "rank": 2418
     },
     {
       "ticker": "009310",
@@ -42593,7 +41546,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 2481
+      "rank": 2419
     },
     {
       "ticker": "038530",
@@ -42610,7 +41563,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 2482
+      "rank": 2420
     },
     {
       "ticker": "060380",
@@ -42627,7 +41580,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 2483
+      "rank": 2421
     },
     {
       "ticker": "301300",
@@ -42644,7 +41597,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 2484
+      "rank": 2422
     },
     {
       "ticker": "335870",
@@ -42661,7 +41614,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 2485
+      "rank": 2423
     },
     {
       "ticker": "067730",
@@ -42678,7 +41631,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 2486
+      "rank": 2424
     },
     {
       "ticker": "457600",
@@ -42695,7 +41648,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 2487
+      "rank": 2425
     },
     {
       "ticker": "191600",
@@ -42712,7 +41665,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 2488
+      "rank": 2426
     },
     {
       "ticker": "109960",
@@ -42729,7 +41682,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 2489
+      "rank": 2427
     },
     {
       "ticker": "065150",
@@ -42746,7 +41699,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 2490
+      "rank": 2428
     },
     {
       "ticker": "900340",
@@ -42763,7 +41716,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 2491
+      "rank": 2429
     },
     {
       "ticker": "002360",
@@ -42780,7 +41733,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 2492
+      "rank": 2430
     },
     {
       "ticker": "291230",
@@ -42797,7 +41750,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 2493
+      "rank": 2431
     },
     {
       "ticker": "044780",
@@ -42814,7 +41767,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 2494
+      "rank": 2432
     },
     {
       "ticker": "070590",
@@ -42831,7 +41784,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 2495
+      "rank": 2433
     },
     {
       "ticker": "376980",
@@ -42848,7 +41801,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 2496
+      "rank": 2434
     },
     {
       "ticker": "434190",
@@ -42865,7 +41818,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 2497
+      "rank": 2435
     },
     {
       "ticker": "115480",
@@ -42882,7 +41835,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 2498
+      "rank": 2436
     },
     {
       "ticker": "139670",
@@ -42899,7 +41852,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 2499
+      "rank": 2437
     },
     {
       "ticker": "080470",
@@ -42916,7 +41869,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 2500
+      "rank": 2438
     },
     {
       "ticker": "207490",
@@ -42933,7 +41886,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 2501
+      "rank": 2439
     },
     {
       "ticker": "123750",
@@ -42950,7 +41903,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 2502
+      "rank": 2440
     },
     {
       "ticker": "208640",
@@ -42967,7 +41920,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 2503
+      "rank": 2441
     },
     {
       "ticker": "053060",
@@ -42984,7 +41937,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 2504
+      "rank": 2442
     },
     {
       "ticker": "021040",
@@ -43001,7 +41954,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 2505
+      "rank": 2443
     },
     {
       "ticker": "113810",
@@ -43018,7 +41971,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 2506
+      "rank": 2444
     },
     {
       "ticker": "455180",
@@ -43035,7 +41988,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 2507
+      "rank": 2445
     },
     {
       "ticker": "432980",
@@ -43052,7 +42005,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 2508
+      "rank": 2446
     },
     {
       "ticker": "188040",
@@ -43069,7 +42022,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 2509
+      "rank": 2447
     },
     {
       "ticker": "090150",
@@ -43086,7 +42039,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 2510
+      "rank": 2448
     },
     {
       "ticker": "348030",
@@ -43103,7 +42056,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 2511
+      "rank": 2449
     },
     {
       "ticker": "123840",
@@ -43120,7 +42073,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 2512
+      "rank": 2450
     },
     {
       "ticker": "352940",
@@ -43137,7 +42090,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 2513
+      "rank": 2451
     },
     {
       "ticker": "115610",
@@ -43154,7 +42107,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 2514
+      "rank": 2452
     },
     {
       "ticker": "009460",
@@ -43171,7 +42124,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 2515
+      "rank": 2453
     },
     {
       "ticker": "353190",
@@ -43188,7 +42141,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 2516
+      "rank": 2454
     },
     {
       "ticker": "067010",
@@ -43205,7 +42158,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 2517
+      "rank": 2455
     },
     {
       "ticker": "285800",
@@ -43222,7 +42175,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 2518
+      "rank": 2456
     },
     {
       "ticker": "076340",
@@ -43239,7 +42192,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 2519
+      "rank": 2457
     },
     {
       "ticker": "016920",
@@ -43256,7 +42209,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 2520
+      "rank": 2458
     },
     {
       "ticker": "087260",
@@ -43273,7 +42226,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 2521
+      "rank": 2459
     },
     {
       "ticker": "103230",
@@ -43290,7 +42243,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 2522
+      "rank": 2460
     },
     {
       "ticker": "431190",
@@ -43307,7 +42260,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 2523
+      "rank": 2461
     },
     {
       "ticker": "357430",
@@ -43324,7 +42277,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 2524
+      "rank": 2462
     },
     {
       "ticker": "080720",
@@ -43341,7 +42294,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 2525
+      "rank": 2463
     },
     {
       "ticker": "197140",
@@ -43358,7 +42311,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 2526
+      "rank": 2464
     },
     {
       "ticker": "317860",
@@ -43375,7 +42328,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 2527
+      "rank": 2465
     },
     {
       "ticker": "216400",
@@ -43392,7 +42345,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 2528
+      "rank": 2466
     },
     {
       "ticker": "270210",
@@ -43409,7 +42362,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 2529
+      "rank": 2467
     },
     {
       "ticker": "238200",
@@ -43426,7 +42379,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 2530
+      "rank": 2468
     },
     {
       "ticker": "236810",
@@ -43443,7 +42396,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 2531
+      "rank": 2469
     },
     {
       "ticker": "405000",
@@ -43460,7 +42413,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 2532
+      "rank": 2470
     },
     {
       "ticker": "026910",
@@ -43477,7 +42430,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 2533
+      "rank": 2471
     },
     {
       "ticker": "322970",
@@ -43494,7 +42447,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 2534
+      "rank": 2472
     },
     {
       "ticker": "331660",
@@ -43511,7 +42464,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 2535
+      "rank": 2473
     },
     {
       "ticker": "079650",
@@ -43528,7 +42481,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 2536
+      "rank": 2474
     },
     {
       "ticker": "017250",
@@ -43545,7 +42498,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 2537
+      "rank": 2475
     },
     {
       "ticker": "270520",
@@ -43562,7 +42515,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 2538
+      "rank": 2476
     },
     {
       "ticker": "065060",
@@ -43579,7 +42532,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 2539
+      "rank": 2477
     },
     {
       "ticker": "083640",
@@ -43596,7 +42549,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 2540
+      "rank": 2478
     },
     {
       "ticker": "044380",
@@ -43613,7 +42566,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 2541
+      "rank": 2479
     },
     {
       "ticker": "025890",
@@ -43630,7 +42583,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 2542
+      "rank": 2480
     },
     {
       "ticker": "039310",
@@ -43647,7 +42600,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 2543
+      "rank": 2481
     },
     {
       "ticker": "034940",
@@ -43664,7 +42617,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 2544
+      "rank": 2482
     },
     {
       "ticker": "415380",
@@ -43681,24 +42634,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 2545
-    },
-    {
-      "ticker": "001685",
-      "name": "대상우",
-      "name_en": "",
-      "market": "코스피",
-      "sector": "기타",
-      "price": 15120,
-      "change": 0.33,
-      "volume": 3733,
-      "trading_value": 56380120,
-      "mcap": 0.02,
-      "shares": 1370223,
-      "categories": [
-        "기타"
-      ],
-      "rank": 2546
+      "rank": 2483
     },
     {
       "ticker": "377220",
@@ -43715,24 +42651,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 2547
-    },
-    {
-      "ticker": "00499K",
-      "name": "롯데지주우",
-      "name_en": "",
-      "market": "코스피",
-      "sector": "기타",
-      "price": 25650,
-      "change": 1.79,
-      "volume": 1183,
-      "trading_value": 30127550,
-      "mcap": 0.02,
-      "shares": 805603,
-      "categories": [
-        "기타"
-      ],
-      "rank": 2548
+      "rank": 2484
     },
     {
       "ticker": "109670",
@@ -43749,7 +42668,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 2549
+      "rank": 2485
     },
     {
       "ticker": "222980",
@@ -43766,7 +42685,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 2550
+      "rank": 2486
     },
     {
       "ticker": "362990",
@@ -43783,7 +42702,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 2551
+      "rank": 2487
     },
     {
       "ticker": "085810",
@@ -43800,7 +42719,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 2552
+      "rank": 2488
     },
     {
       "ticker": "900100",
@@ -43817,7 +42736,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 2553
+      "rank": 2489
     },
     {
       "ticker": "372800",
@@ -43834,7 +42753,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 2554
+      "rank": 2490
     },
     {
       "ticker": "148780",
@@ -43851,7 +42770,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 2555
+      "rank": 2491
     },
     {
       "ticker": "365900",
@@ -43868,7 +42787,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 2556
+      "rank": 2492
     },
     {
       "ticker": "060900",
@@ -43885,7 +42804,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 2557
+      "rank": 2493
     },
     {
       "ticker": "328380",
@@ -43902,7 +42821,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 2558
+      "rank": 2494
     },
     {
       "ticker": "054220",
@@ -43919,7 +42838,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 2559
+      "rank": 2495
     },
     {
       "ticker": "224060",
@@ -43936,7 +42855,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 2560
+      "rank": 2496
     },
     {
       "ticker": "225590",
@@ -43953,7 +42872,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 2561
+      "rank": 2497
     },
     {
       "ticker": "115570",
@@ -43970,7 +42889,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 2562
+      "rank": 2498
     },
     {
       "ticker": "035620",
@@ -43987,7 +42906,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 2563
+      "rank": 2499
     },
     {
       "ticker": "054940",
@@ -44004,7 +42923,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 2564
+      "rank": 2500
     },
     {
       "ticker": "032280",
@@ -44021,7 +42940,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 2565
+      "rank": 2501
     },
     {
       "ticker": "084440",
@@ -44038,7 +42957,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 2566
+      "rank": 2502
     },
     {
       "ticker": "018700",
@@ -44055,7 +42974,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 2567
+      "rank": 2503
     },
     {
       "ticker": "227610",
@@ -44072,7 +42991,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 2568
+      "rank": 2504
     },
     {
       "ticker": "020400",
@@ -44089,7 +43008,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 2569
+      "rank": 2505
     },
     {
       "ticker": "015020",
@@ -44106,7 +43025,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 2570
+      "rank": 2506
     },
     {
       "ticker": "154030",
@@ -44123,7 +43042,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 2571
+      "rank": 2507
     },
     {
       "ticker": "279600",
@@ -44140,7 +43059,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 2572
+      "rank": 2508
     },
     {
       "ticker": "465770",
@@ -44157,7 +43076,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 2573
+      "rank": 2509
     },
     {
       "ticker": "101400",
@@ -44174,7 +43093,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 2574
+      "rank": 2510
     },
     {
       "ticker": "377030",
@@ -44191,7 +43110,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 2575
+      "rank": 2511
     },
     {
       "ticker": "322780",
@@ -44208,7 +43127,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 2576
+      "rank": 2512
     },
     {
       "ticker": "278990",
@@ -44225,7 +43144,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 2577
+      "rank": 2513
     },
     {
       "ticker": "076080",
@@ -44242,7 +43161,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 2578
+      "rank": 2514
     },
     {
       "ticker": "215480",
@@ -44259,7 +43178,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 2579
+      "rank": 2515
     },
     {
       "ticker": "214610",
@@ -44276,7 +43195,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 2580
+      "rank": 2516
     },
     {
       "ticker": "049120",
@@ -44293,7 +43212,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 2581
+      "rank": 2517
     },
     {
       "ticker": "275630",
@@ -44310,7 +43229,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 2582
+      "rank": 2518
     },
     {
       "ticker": "134060",
@@ -44327,7 +43246,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 2583
+      "rank": 2519
     },
     {
       "ticker": "101680",
@@ -44344,7 +43263,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 2584
+      "rank": 2520
     },
     {
       "ticker": "050760",
@@ -44361,7 +43280,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 2585
+      "rank": 2521
     },
     {
       "ticker": "031860",
@@ -44378,7 +43297,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 2586
+      "rank": 2522
     },
     {
       "ticker": "222670",
@@ -44395,7 +43314,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 2587
+      "rank": 2523
     },
     {
       "ticker": "018620",
@@ -44412,24 +43331,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 2588
-    },
-    {
-      "ticker": "005257",
-      "name": "녹십자홀딩스2우",
-      "name_en": "",
-      "market": "코스피",
-      "sector": "기타",
-      "price": 21900,
-      "change": -1.13,
-      "volume": 294,
-      "trading_value": 6451850,
-      "mcap": 0.02,
-      "shares": 845990,
-      "categories": [
-        "기타"
-      ],
-      "rank": 2589
+      "rank": 2524
     },
     {
       "ticker": "042040",
@@ -44446,7 +43348,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 2590
+      "rank": 2525
     },
     {
       "ticker": "226340",
@@ -44463,7 +43365,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 2591
+      "rank": 2526
     },
     {
       "ticker": "196700",
@@ -44480,7 +43382,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 2592
+      "rank": 2527
     },
     {
       "ticker": "032980",
@@ -44497,7 +43399,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 2593
+      "rank": 2528
     },
     {
       "ticker": "001420",
@@ -44514,7 +43416,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 2594
+      "rank": 2529
     },
     {
       "ticker": "193250",
@@ -44531,7 +43433,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 2595
+      "rank": 2530
     },
     {
       "ticker": "032680",
@@ -44548,7 +43450,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 2596
+      "rank": 2531
     },
     {
       "ticker": "192390",
@@ -44565,7 +43467,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 2597
+      "rank": 2532
     },
     {
       "ticker": "110020",
@@ -44582,7 +43484,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 2598
+      "rank": 2533
     },
     {
       "ticker": "065770",
@@ -44599,7 +43501,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 2599
+      "rank": 2534
     },
     {
       "ticker": "303030",
@@ -44616,7 +43518,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 2600
+      "rank": 2535
     },
     {
       "ticker": "368600",
@@ -44633,7 +43535,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 2601
+      "rank": 2536
     },
     {
       "ticker": "417180",
@@ -44650,7 +43552,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 2602
+      "rank": 2537
     },
     {
       "ticker": "002070",
@@ -44667,7 +43569,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 2603
+      "rank": 2538
     },
     {
       "ticker": "217320",
@@ -44684,7 +43586,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 2604
+      "rank": 2539
     },
     {
       "ticker": "083470",
@@ -44701,7 +43603,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 2605
+      "rank": 2540
     },
     {
       "ticker": "023790",
@@ -44718,7 +43620,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 2606
+      "rank": 2541
     },
     {
       "ticker": "289010",
@@ -44735,7 +43637,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 2607
+      "rank": 2542
     },
     {
       "ticker": "086220",
@@ -44752,7 +43654,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 2608
+      "rank": 2543
     },
     {
       "ticker": "008600",
@@ -44769,7 +43671,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 2609
+      "rank": 2544
     },
     {
       "ticker": "247660",
@@ -44786,7 +43688,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 2610
+      "rank": 2545
     },
     {
       "ticker": "098660",
@@ -44803,7 +43705,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 2611
+      "rank": 2546
     },
     {
       "ticker": "054410",
@@ -44820,7 +43722,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 2612
+      "rank": 2547
     },
     {
       "ticker": "009440",
@@ -44837,7 +43739,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 2613
+      "rank": 2548
     },
     {
       "ticker": "032800",
@@ -44854,7 +43756,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 2614
+      "rank": 2549
     },
     {
       "ticker": "389680",
@@ -44871,7 +43773,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 2615
+      "rank": 2550
     },
     {
       "ticker": "115530",
@@ -44888,7 +43790,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 2616
+      "rank": 2551
     },
     {
       "ticker": "060230",
@@ -44905,7 +43807,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 2617
+      "rank": 2552
     },
     {
       "ticker": "052960",
@@ -44922,7 +43824,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 2618
+      "rank": 2553
     },
     {
       "ticker": "254160",
@@ -44939,7 +43841,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 2619
+      "rank": 2554
     },
     {
       "ticker": "014100",
@@ -44956,24 +43858,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 2620
-    },
-    {
-      "ticker": "482680",
-      "name": "미래에셋비전스팩7호",
-      "name_en": "",
-      "market": "코스닥",
-      "sector": "기타",
-      "price": 2055,
-      "change": 0.0,
-      "volume": 0,
-      "trading_value": 0,
-      "mcap": 0.02,
-      "shares": 8215000,
-      "categories": [
-        "기타"
-      ],
-      "rank": 2621
+      "rank": 2555
     },
     {
       "ticker": "0070X0",
@@ -44990,7 +43875,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 2622
+      "rank": 2556
     },
     {
       "ticker": "312610",
@@ -45007,7 +43892,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 2623
+      "rank": 2557
     },
     {
       "ticker": "241820",
@@ -45024,7 +43909,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 2624
+      "rank": 2558
     },
     {
       "ticker": "336040",
@@ -45041,24 +43926,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 2625
-    },
-    {
-      "ticker": "45226K",
-      "name": "한화갤러리아우",
-      "name_en": "",
-      "market": "코스피",
-      "sector": "기타",
-      "price": 5780,
-      "change": 1.05,
-      "volume": 4779,
-      "trading_value": 27468420,
-      "mcap": 0.02,
-      "shares": 2904470,
-      "categories": [
-        "기타"
-      ],
-      "rank": 2626
+      "rank": 2559
     },
     {
       "ticker": "060480",
@@ -45075,7 +43943,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 2627
+      "rank": 2560
     },
     {
       "ticker": "048830",
@@ -45092,41 +43960,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 2628
-    },
-    {
-      "ticker": "477380",
-      "name": "미래에셋비전스팩4호",
-      "name_en": "",
-      "market": "코스닥",
-      "sector": "기타",
-      "price": 2055,
-      "change": -0.24,
-      "volume": 295,
-      "trading_value": 606850,
-      "mcap": 0.02,
-      "shares": 8100000,
-      "categories": [
-        "기타"
-      ],
-      "rank": 2629
-    },
-    {
-      "ticker": "108675",
-      "name": "LX하우시스우",
-      "name_en": "",
-      "market": "코스피",
-      "sector": "기타",
-      "price": 16110,
-      "change": 0.56,
-      "volume": 385,
-      "trading_value": 6206080,
-      "mcap": 0.02,
-      "shares": 1032330,
-      "categories": [
-        "기타"
-      ],
-      "rank": 2630
+      "rank": 2561
     },
     {
       "ticker": "240600",
@@ -45143,7 +43977,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 2631
+      "rank": 2562
     },
     {
       "ticker": "009730",
@@ -45160,7 +43994,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 2632
+      "rank": 2563
     },
     {
       "ticker": "051780",
@@ -45177,7 +44011,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 2633
+      "rank": 2564
     },
     {
       "ticker": "001770",
@@ -45194,7 +44028,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 2634
+      "rank": 2565
     },
     {
       "ticker": "308100",
@@ -45211,7 +44045,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 2635
+      "rank": 2566
     },
     {
       "ticker": "069330",
@@ -45228,7 +44062,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 2636
+      "rank": 2567
     },
     {
       "ticker": "476710",
@@ -45245,7 +44079,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 2637
+      "rank": 2568
     },
     {
       "ticker": "065690",
@@ -45262,7 +44096,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 2638
+      "rank": 2569
     },
     {
       "ticker": "011090",
@@ -45279,7 +44113,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 2639
+      "rank": 2570
     },
     {
       "ticker": "028080",
@@ -45296,7 +44130,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 2640
+      "rank": 2571
     },
     {
       "ticker": "169670",
@@ -45313,24 +44147,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 2641
-    },
-    {
-      "ticker": "019685",
-      "name": "대교우B",
-      "name_en": "",
-      "market": "코스피",
-      "sector": "기타",
-      "price": 828,
-      "change": 0.12,
-      "volume": 11445,
-      "trading_value": 9541586,
-      "mcap": 0.02,
-      "shares": 19426990,
-      "categories": [
-        "기타"
-      ],
-      "rank": 2642
+      "rank": 2572
     },
     {
       "ticker": "096870",
@@ -45347,7 +44164,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 2643
+      "rank": 2573
     },
     {
       "ticker": "106520",
@@ -45364,58 +44181,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 2644
-    },
-    {
-      "ticker": "0072Z0",
-      "name": "KB제33호스팩",
-      "name_en": "",
-      "market": "코스닥",
-      "sector": "기타",
-      "price": 1999,
-      "change": 0.3,
-      "volume": 748,
-      "trading_value": 1490770,
-      "mcap": 0.02,
-      "shares": 7885000,
-      "categories": [
-        "기타"
-      ],
-      "rank": 2645
-    },
-    {
-      "ticker": "005725",
-      "name": "넥센우",
-      "name_en": "",
-      "market": "코스피",
-      "sector": "기타",
-      "price": 4345,
-      "change": 0.0,
-      "volume": 0,
-      "trading_value": 0,
-      "mcap": 0.02,
-      "shares": 3600600,
-      "categories": [
-        "기타"
-      ],
-      "rank": 2646
-    },
-    {
-      "ticker": "18064K",
-      "name": "한진칼우",
-      "name_en": "",
-      "market": "코스피",
-      "sector": "기타",
-      "price": 29050,
-      "change": 0.87,
-      "volume": 838,
-      "trading_value": 24134050,
-      "mcap": 0.02,
-      "shares": 536766,
-      "categories": [
-        "기타"
-      ],
-      "rank": 2647
+      "rank": 2574
     },
     {
       "ticker": "045520",
@@ -45432,41 +44198,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 2648
-    },
-    {
-      "ticker": "00806K",
-      "name": "대덕1우",
-      "name_en": "",
-      "market": "코스피",
-      "sector": "기타",
-      "price": 12840,
-      "change": -0.93,
-      "volume": 2528,
-      "trading_value": 32766240,
-      "mcap": 0.02,
-      "shares": 1212357,
-      "categories": [
-        "기타"
-      ],
-      "rank": 2649
-    },
-    {
-      "ticker": "0101C0",
-      "name": "하나36호스팩",
-      "name_en": "",
-      "market": "코스닥",
-      "sector": "기타",
-      "price": 1991,
-      "change": 0.4,
-      "volume": 12301,
-      "trading_value": 24484919,
-      "mcap": 0.02,
-      "shares": 7740000,
-      "categories": [
-        "기타"
-      ],
-      "rank": 2650
+      "rank": 2575
     },
     {
       "ticker": "199730",
@@ -45483,7 +44215,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 2651
+      "rank": 2576
     },
     {
       "ticker": "067770",
@@ -45500,41 +44232,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 2652
-    },
-    {
-      "ticker": "0130H0",
-      "name": "엔에이치스팩33호",
-      "name_en": "",
-      "market": "코스닥",
-      "sector": "기타",
-      "price": 1993,
-      "change": -0.05,
-      "volume": 4134,
-      "trading_value": 8229659,
-      "mcap": 0.02,
-      "shares": 7700000,
-      "categories": [
-        "기타"
-      ],
-      "rank": 2653
-    },
-    {
-      "ticker": "469880",
-      "name": "하나30호스팩",
-      "name_en": "",
-      "market": "코스닥",
-      "sector": "기타",
-      "price": 2100,
-      "change": 0.0,
-      "volume": 3771,
-      "trading_value": 7908180,
-      "mcap": 0.02,
-      "shares": 7305000,
-      "categories": [
-        "기타"
-      ],
-      "rank": 2654
+      "rank": 2577
     },
     {
       "ticker": "344860",
@@ -45551,24 +44249,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 2655
-    },
-    {
-      "ticker": "477340",
-      "name": "에이치엠씨제7호스팩",
-      "name_en": "",
-      "market": "코스닥",
-      "sector": "기타",
-      "price": 2030,
-      "change": -0.25,
-      "volume": 111,
-      "trading_value": 225435,
-      "mcap": 0.02,
-      "shares": 7510000,
-      "categories": [
-        "기타"
-      ],
-      "rank": 2656
+      "rank": 2578
     },
     {
       "ticker": "030350",
@@ -45585,41 +44266,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 2657
-    },
-    {
-      "ticker": "0044K0",
-      "name": "삼성스팩10호",
-      "name_en": "",
-      "market": "코스닥",
-      "sector": "기타",
-      "price": 2010,
-      "change": 0.25,
-      "volume": 408,
-      "trading_value": 817095,
-      "mcap": 0.02,
-      "shares": 7520000,
-      "categories": [
-        "기타"
-      ],
-      "rank": 2658
-    },
-    {
-      "ticker": "000087",
-      "name": "하이트진로2우B",
-      "name_en": "",
-      "market": "코스피",
-      "sector": "기타",
-      "price": 13270,
-      "change": 1.3,
-      "volume": 786,
-      "trading_value": 10367490,
-      "mcap": 0.01,
-      "shares": 1130138,
-      "categories": [
-        "기타"
-      ],
-      "rank": 2659
+      "rank": 2579
     },
     {
       "ticker": "177350",
@@ -45636,7 +44283,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 2660
+      "rank": 2580
     },
     {
       "ticker": "092600",
@@ -45653,24 +44300,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 2661
-    },
-    {
-      "ticker": "00781K",
-      "name": "코리아써키트2우B",
-      "name_en": "",
-      "market": "코스피",
-      "sector": "기타",
-      "price": 18880,
-      "change": 3.57,
-      "volume": 1497,
-      "trading_value": 27839370,
-      "mcap": 0.01,
-      "shares": 783699,
-      "categories": [
-        "기타"
-      ],
-      "rank": 2662
+      "rank": 2581
     },
     {
       "ticker": "379390",
@@ -45687,7 +44317,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 2663
+      "rank": 2582
     },
     {
       "ticker": "227100",
@@ -45704,7 +44334,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 2664
+      "rank": 2583
     },
     {
       "ticker": "361670",
@@ -45721,7 +44351,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 2665
+      "rank": 2584
     },
     {
       "ticker": "154040",
@@ -45738,7 +44368,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 2666
+      "rank": 2585
     },
     {
       "ticker": "900120",
@@ -45755,24 +44385,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 2667
-    },
-    {
-      "ticker": "0115H0",
-      "name": "삼성스팩13호",
-      "name_en": "",
-      "market": "코스닥",
-      "sector": "기타",
-      "price": 1986,
-      "change": -0.15,
-      "volume": 7333,
-      "trading_value": 14555410,
-      "mcap": 0.01,
-      "shares": 7350000,
-      "categories": [
-        "기타"
-      ],
-      "rank": 2668
+      "rank": 2586
     },
     {
       "ticker": "137940",
@@ -45789,7 +44402,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 2669
+      "rank": 2587
     },
     {
       "ticker": "079190",
@@ -45806,24 +44419,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 2670
-    },
-    {
-      "ticker": "473050",
-      "name": "유안타제15호스팩",
-      "name_en": "",
-      "market": "코스닥",
-      "sector": "기타",
-      "price": 2070,
-      "change": 0.24,
-      "volume": 3307,
-      "trading_value": 6845507,
-      "mcap": 0.01,
-      "shares": 7010000,
-      "categories": [
-        "기타"
-      ],
-      "rank": 2671
+      "rank": 2588
     },
     {
       "ticker": "079950",
@@ -45840,7 +44436,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 2672
+      "rank": 2589
     },
     {
       "ticker": "250930",
@@ -45857,7 +44453,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 2673
+      "rank": 2590
     },
     {
       "ticker": "233250",
@@ -45874,7 +44470,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 2674
+      "rank": 2591
     },
     {
       "ticker": "191410",
@@ -45891,24 +44487,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 2675
-    },
-    {
-      "ticker": "478440",
-      "name": "미래에셋비전스팩6호",
-      "name_en": "",
-      "market": "코스닥",
-      "sector": "기타",
-      "price": 2055,
-      "change": 0.24,
-      "volume": 7000,
-      "trading_value": 14350990,
-      "mcap": 0.01,
-      "shares": 6930000,
-      "categories": [
-        "기타"
-      ],
-      "rank": 2676
+      "rank": 2592
     },
     {
       "ticker": "083660",
@@ -45925,7 +44504,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 2677
+      "rank": 2593
     },
     {
       "ticker": "208850",
@@ -45942,24 +44521,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 2678
-    },
-    {
-      "ticker": "479880",
-      "name": "한국제15호스팩",
-      "name_en": "",
-      "market": "코스닥",
-      "sector": "기타",
-      "price": 2055,
-      "change": -0.24,
-      "volume": 92,
-      "trading_value": 189455,
-      "mcap": 0.01,
-      "shares": 6870000,
-      "categories": [
-        "기타"
-      ],
-      "rank": 2679
+      "rank": 2594
     },
     {
       "ticker": "351020",
@@ -45976,7 +44538,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 2680
+      "rank": 2595
     },
     {
       "ticker": "060260",
@@ -45993,41 +44555,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 2681
-    },
-    {
-      "ticker": "001795",
-      "name": "대한제당우",
-      "name_en": "",
-      "market": "코스피",
-      "sector": "기타",
-      "price": 2160,
-      "change": 0.23,
-      "volume": 9365,
-      "trading_value": 20363709,
-      "mcap": 0.01,
-      "shares": 6482760,
-      "categories": [
-        "기타"
-      ],
-      "rank": 2682
-    },
-    {
-      "ticker": "0099W0",
-      "name": "미래에셋비전스팩11호",
-      "name_en": "",
-      "market": "코스닥",
-      "sector": "기타",
-      "price": 1996,
-      "change": 0.2,
-      "volume": 3586,
-      "trading_value": 7138197,
-      "mcap": 0.01,
-      "shares": 7000000,
-      "categories": [
-        "기타"
-      ],
-      "rank": 2683
+      "rank": 2596
     },
     {
       "ticker": "043590",
@@ -46044,7 +44572,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 2684
+      "rank": 2597
     },
     {
       "ticker": "352770",
@@ -46061,7 +44589,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 2685
+      "rank": 2598
     },
     {
       "ticker": "244460",
@@ -46078,7 +44606,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 2686
+      "rank": 2599
     },
     {
       "ticker": "456190",
@@ -46095,41 +44623,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 2687
-    },
-    {
-      "ticker": "489480",
-      "name": "키움제11호스팩",
-      "name_en": "",
-      "market": "코스닥",
-      "sector": "기타",
-      "price": 2020,
-      "change": 0.0,
-      "volume": 2630,
-      "trading_value": 5313100,
-      "mcap": 0.01,
-      "shares": 6600000,
-      "categories": [
-        "기타"
-      ],
-      "rank": 2688
-    },
-    {
-      "ticker": "481890",
-      "name": "엔에이치스팩31호",
-      "name_en": "",
-      "market": "코스닥",
-      "sector": "기타",
-      "price": 2085,
-      "change": -0.24,
-      "volume": 217,
-      "trading_value": 452470,
-      "mcap": 0.01,
-      "shares": 6345000,
-      "categories": [
-        "기타"
-      ],
-      "rank": 2689
+      "rank": 2600
     },
     {
       "ticker": "002680",
@@ -46146,7 +44640,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 2690
+      "rank": 2601
     },
     {
       "ticker": "065420",
@@ -46163,7 +44657,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 2691
+      "rank": 2602
     },
     {
       "ticker": "217880",
@@ -46180,7 +44674,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 2692
+      "rank": 2603
     },
     {
       "ticker": "149010",
@@ -46197,24 +44691,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 2693
-    },
-    {
-      "ticker": "0096B0",
-      "name": "삼성스팩12호",
-      "name_en": "",
-      "market": "코스닥",
-      "sector": "기타",
-      "price": 1990,
-      "change": 0.25,
-      "volume": 5037,
-      "trading_value": 10004743,
-      "mcap": 0.01,
-      "shares": 6580000,
-      "categories": [
-        "기타"
-      ],
-      "rank": 2694
+      "rank": 2604
     },
     {
       "ticker": "419540",
@@ -46231,7 +44708,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 2695
+      "rank": 2605
     },
     {
       "ticker": "088290",
@@ -46248,58 +44725,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 2696
-    },
-    {
-      "ticker": "0097F0",
-      "name": "미래에셋비전스팩10호",
-      "name_en": "",
-      "market": "코스닥",
-      "sector": "기타",
-      "price": 1998,
-      "change": 0.15,
-      "volume": 638,
-      "trading_value": 1272827,
-      "mcap": 0.01,
-      "shares": 6500000,
-      "categories": [
-        "기타"
-      ],
-      "rank": 2697
-    },
-    {
-      "ticker": "489730",
-      "name": "디비금융제13호스팩",
-      "name_en": "",
-      "market": "코스닥",
-      "sector": "기타",
-      "price": 2035,
-      "change": 0.74,
-      "volume": 3,
-      "trading_value": 6105,
-      "mcap": 0.01,
-      "shares": 6332000,
-      "categories": [
-        "기타"
-      ],
-      "rank": 2698
-    },
-    {
-      "ticker": "478390",
-      "name": "KB제29호스팩",
-      "name_en": "",
-      "market": "코스닥",
-      "sector": "기타",
-      "price": 2055,
-      "change": 0.24,
-      "volume": 179,
-      "trading_value": 367840,
-      "mcap": 0.01,
-      "shares": 6220000,
-      "categories": [
-        "기타"
-      ],
-      "rank": 2699
+      "rank": 2606
     },
     {
       "ticker": "253610",
@@ -46316,75 +44742,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 2700
-    },
-    {
-      "ticker": "0093G0",
-      "name": "미래에셋비전스팩8호",
-      "name_en": "",
-      "market": "코스닥",
-      "sector": "기타",
-      "price": 1995,
-      "change": 0.0,
-      "volume": 1442,
-      "trading_value": 2875327,
-      "mcap": 0.01,
-      "shares": 6400000,
-      "categories": [
-        "기타"
-      ],
-      "rank": 2701
-    },
-    {
-      "ticker": "0099X0",
-      "name": "IBKS제25호스팩",
-      "name_en": "",
-      "market": "코스닥",
-      "sector": "기타",
-      "price": 2130,
-      "change": 0.24,
-      "volume": 77,
-      "trading_value": 163680,
-      "mcap": 0.01,
-      "shares": 5980000,
-      "categories": [
-        "기타"
-      ],
-      "rank": 2702
-    },
-    {
-      "ticker": "471050",
-      "name": "대신밸런스제17호스팩",
-      "name_en": "",
-      "market": "코스닥",
-      "sector": "기타",
-      "price": 2100,
-      "change": 0.0,
-      "volume": 2126,
-      "trading_value": 4463770,
-      "mcap": 0.01,
-      "shares": 6060000,
-      "categories": [
-        "기타"
-      ],
-      "rank": 2703
-    },
-    {
-      "ticker": "0037T0",
-      "name": "KB제32호스팩",
-      "name_en": "",
-      "market": "코스닥",
-      "sector": "기타",
-      "price": 2005,
-      "change": 0.0,
-      "volume": 1967,
-      "trading_value": 3943835,
-      "mcap": 0.01,
-      "shares": 6330000,
-      "categories": [
-        "기타"
-      ],
-      "rank": 2704
+      "rank": 2607
     },
     {
       "ticker": "054180",
@@ -46401,41 +44759,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 2705
-    },
-    {
-      "ticker": "492220",
-      "name": "KB제31호스팩",
-      "name_en": "",
-      "market": "코스닥",
-      "sector": "기타",
-      "price": 2035,
-      "change": 0.0,
-      "volume": 3,
-      "trading_value": 6105,
-      "mcap": 0.01,
-      "shares": 6210000,
-      "categories": [
-        "기타"
-      ],
-      "rank": 2706
-    },
-    {
-      "ticker": "0054V0",
-      "name": "엔에이치스팩32호",
-      "name_en": "",
-      "market": "코스닥",
-      "sector": "기타",
-      "price": 2025,
-      "change": -0.25,
-      "volume": 1799,
-      "trading_value": 3643625,
-      "mcap": 0.01,
-      "shares": 6216500,
-      "categories": [
-        "기타"
-      ],
-      "rank": 2707
+      "rank": 2608
     },
     {
       "ticker": "291810",
@@ -46452,24 +44776,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 2708
-    },
-    {
-      "ticker": "0131D0",
-      "name": "키움히어로제2호스팩",
-      "name_en": "",
-      "market": "코스닥",
-      "sector": "기타",
-      "price": 1975,
-      "change": -0.05,
-      "volume": 24347,
-      "trading_value": 48101090,
-      "mcap": 0.01,
-      "shares": 6310000,
-      "categories": [
-        "기타"
-      ],
-      "rank": 2709
+      "rank": 2609
     },
     {
       "ticker": "025870",
@@ -46486,58 +44793,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 2710
-    },
-    {
-      "ticker": "482520",
-      "name": "교보16호스팩",
-      "name_en": "",
-      "market": "코스닥",
-      "sector": "기타",
-      "price": 2035,
-      "change": 0.25,
-      "volume": 15259,
-      "trading_value": 30984970,
-      "mcap": 0.01,
-      "shares": 6100000,
-      "categories": [
-        "기타"
-      ],
-      "rank": 2711
-    },
-    {
-      "ticker": "0091W0",
-      "name": "신영스팩11호",
-      "name_en": "",
-      "market": "코스닥",
-      "sector": "기타",
-      "price": 2045,
-      "change": -0.24,
-      "volume": 533,
-      "trading_value": 1083020,
-      "mcap": 0.01,
-      "shares": 6068000,
-      "categories": [
-        "기타"
-      ],
-      "rank": 2712
-    },
-    {
-      "ticker": "0088D0",
-      "name": "메리츠제1호스팩",
-      "name_en": "",
-      "market": "코스닥",
-      "sector": "기타",
-      "price": 2130,
-      "change": -0.7,
-      "volume": 1025,
-      "trading_value": 2184295,
-      "mcap": 0.01,
-      "shares": 5795000,
-      "categories": [
-        "기타"
-      ],
-      "rank": 2713
+      "rank": 2610
     },
     {
       "ticker": "225430",
@@ -46554,24 +44810,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 2714
-    },
-    {
-      "ticker": "084695",
-      "name": "대상홀딩스우",
-      "name_en": "",
-      "market": "코스피",
-      "sector": "기타",
-      "price": 13470,
-      "change": -7.1,
-      "volume": 60653,
-      "trading_value": 829054300,
-      "mcap": 0.01,
-      "shares": 913482,
-      "categories": [
-        "기타"
-      ],
-      "rank": 2715
+      "rank": 2611
     },
     {
       "ticker": "065570",
@@ -46588,7 +44827,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 2716
+      "rank": 2612
     },
     {
       "ticker": "368970",
@@ -46605,24 +44844,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 2717
-    },
-    {
-      "ticker": "001755",
-      "name": "한양증권우",
-      "name_en": "",
-      "market": "코스피",
-      "sector": "기타",
-      "price": 23150,
-      "change": 1.98,
-      "volume": 950,
-      "trading_value": 21686600,
-      "mcap": 0.01,
-      "shares": 525000,
-      "categories": [
-        "기타"
-      ],
-      "rank": 2718
+      "rank": 2613
     },
     {
       "ticker": "084180",
@@ -46639,7 +44861,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 2719
+      "rank": 2614
     },
     {
       "ticker": "224760",
@@ -46656,24 +44878,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 2720
-    },
-    {
-      "ticker": "482690",
-      "name": "대신밸런스제19호스팩",
-      "name_en": "",
-      "market": "코스닥",
-      "sector": "기타",
-      "price": 2140,
-      "change": -0.47,
-      "volume": 21,
-      "trading_value": 44935,
-      "mcap": 0.01,
-      "shares": 5615000,
-      "categories": [
-        "기타"
-      ],
-      "rank": 2721
+      "rank": 2615
     },
     {
       "ticker": "176590",
@@ -46690,75 +44895,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 2722
-    },
-    {
-      "ticker": "477760",
-      "name": "DB금융스팩12호",
-      "name_en": "",
-      "market": "코스닥",
-      "sector": "기타",
-      "price": 2050,
-      "change": 0.0,
-      "volume": 4276,
-      "trading_value": 8744795,
-      "mcap": 0.01,
-      "shares": 5840000,
-      "categories": [
-        "기타"
-      ],
-      "rank": 2723
-    },
-    {
-      "ticker": "012205",
-      "name": "계양전기우",
-      "name_en": "",
-      "market": "코스피",
-      "sector": "기타",
-      "price": 10230,
-      "change": 2.3,
-      "volume": 33360,
-      "trading_value": 330381240,
-      "mcap": 0.01,
-      "shares": 1169079,
-      "categories": [
-        "기타"
-      ],
-      "rank": 2724
-    },
-    {
-      "ticker": "0041L0",
-      "name": "하나35호스팩",
-      "name_en": "",
-      "market": "코스닥",
-      "sector": "기타",
-      "price": 1981,
-      "change": -0.95,
-      "volume": 262,
-      "trading_value": 523983,
-      "mcap": 0.01,
-      "shares": 6030000,
-      "categories": [
-        "기타"
-      ],
-      "rank": 2725
-    },
-    {
-      "ticker": "0132G0",
-      "name": "교보20호스팩",
-      "name_en": "",
-      "market": "코스닥",
-      "sector": "기타",
-      "price": 1994,
-      "change": 0.0,
-      "volume": 1040,
-      "trading_value": 2071784,
-      "mcap": 0.01,
-      "shares": 5970000,
-      "categories": [
-        "기타"
-      ],
-      "rank": 2726
+      "rank": 2616
     },
     {
       "ticker": "069920",
@@ -46775,24 +44912,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 2727
-    },
-    {
-      "ticker": "38380K",
-      "name": "LX홀딩스1우",
-      "name_en": "",
-      "market": "코스피",
-      "sector": "기타",
-      "price": 8080,
-      "change": 2.41,
-      "volume": 806,
-      "trading_value": 6477870,
-      "mcap": 0.01,
-      "shares": 1465285,
-      "categories": [
-        "기타"
-      ],
-      "rank": 2728
+      "rank": 2617
     },
     {
       "ticker": "050090",
@@ -46809,24 +44929,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 2729
-    },
-    {
-      "ticker": "145995",
-      "name": "삼양사우",
-      "name_en": "",
-      "market": "코스피",
-      "sector": "기타",
-      "price": 31600,
-      "change": 1.61,
-      "volume": 20,
-      "trading_value": 636500,
-      "mcap": 0.01,
-      "shares": 370070,
-      "categories": [
-        "기타"
-      ],
-      "rank": 2730
+      "rank": 2618
     },
     {
       "ticker": "012340",
@@ -46843,58 +44946,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 2731
-    },
-    {
-      "ticker": "004105",
-      "name": "태양금속우",
-      "name_en": "",
-      "market": "코스피",
-      "sector": "기타",
-      "price": 3525,
-      "change": -4.21,
-      "volume": 167851,
-      "trading_value": 599907190,
-      "mcap": 0.01,
-      "shares": 3300000,
-      "categories": [
-        "기타"
-      ],
-      "rank": 2732
-    },
-    {
-      "ticker": "469900",
-      "name": "하나31호스팩",
-      "name_en": "",
-      "market": "코스닥",
-      "sector": "기타",
-      "price": 2075,
-      "change": 0.48,
-      "volume": 134,
-      "trading_value": 277940,
-      "mcap": 0.01,
-      "shares": 5605000,
-      "categories": [
-        "기타"
-      ],
-      "rank": 2733
-    },
-    {
-      "ticker": "0071M0",
-      "name": "삼성스팩11호",
-      "name_en": "",
-      "market": "코스닥",
-      "sector": "기타",
-      "price": 2010,
-      "change": 0.25,
-      "volume": 107,
-      "trading_value": 214470,
-      "mcap": 0.01,
-      "shares": 5760000,
-      "categories": [
-        "기타"
-      ],
-      "rank": 2734
+      "rank": 2619
     },
     {
       "ticker": "060240",
@@ -46911,58 +44963,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 2735
-    },
-    {
-      "ticker": "487360",
-      "name": "신한제14호스팩",
-      "name_en": "",
-      "market": "코스닥",
-      "sector": "기타",
-      "price": 2030,
-      "change": 0.0,
-      "volume": 12784,
-      "trading_value": 25945105,
-      "mcap": 0.01,
-      "shares": 5640000,
-      "categories": [
-        "기타"
-      ],
-      "rank": 2736
-    },
-    {
-      "ticker": "477470",
-      "name": "미래에셋비전스팩5호",
-      "name_en": "",
-      "market": "코스닥",
-      "sector": "기타",
-      "price": 2065,
-      "change": 0.24,
-      "volume": 470,
-      "trading_value": 971085,
-      "mcap": 0.01,
-      "shares": 5480000,
-      "categories": [
-        "기타"
-      ],
-      "rank": 2737
-    },
-    {
-      "ticker": "474660",
-      "name": "신한제12호스팩",
-      "name_en": "",
-      "market": "코스닥",
-      "sector": "기타",
-      "price": 2050,
-      "change": 0.24,
-      "volume": 1658,
-      "trading_value": 3398110,
-      "mcap": 0.01,
-      "shares": 5520000,
-      "categories": [
-        "기타"
-      ],
-      "rank": 2738
+      "rank": 2620
     },
     {
       "ticker": "035290",
@@ -46979,7 +44980,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 2739
+      "rank": 2621
     },
     {
       "ticker": "011080",
@@ -46996,75 +44997,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 2740
-    },
-    {
-      "ticker": "474490",
-      "name": "유안타제16호스팩",
-      "name_en": "",
-      "market": "코스닥",
-      "sector": "기타",
-      "price": 2050,
-      "change": 0.0,
-      "volume": 306,
-      "trading_value": 626275,
-      "mcap": 0.01,
-      "shares": 5510000,
-      "categories": [
-        "기타"
-      ],
-      "rank": 2741
-    },
-    {
-      "ticker": "496070",
-      "name": "신한제16호스팩",
-      "name_en": "",
-      "market": "코스닥",
-      "sector": "기타",
-      "price": 2005,
-      "change": 0.0,
-      "volume": 732,
-      "trading_value": 1464020,
-      "mcap": 0.01,
-      "shares": 5620000,
-      "categories": [
-        "기타"
-      ],
-      "rank": 2742
-    },
-    {
-      "ticker": "0105P0",
-      "name": "유진스팩12호",
-      "name_en": "",
-      "market": "코스닥",
-      "sector": "기타",
-      "price": 1983,
-      "change": -0.15,
-      "volume": 7260,
-      "trading_value": 14400352,
-      "mcap": 0.01,
-      "shares": 5660000,
-      "categories": [
-        "기타"
-      ],
-      "rank": 2743
-    },
-    {
-      "ticker": "0129K0",
-      "name": "신한제18호스팩",
-      "name_en": "",
-      "market": "코스닥",
-      "sector": "기타",
-      "price": 1982,
-      "change": -0.2,
-      "volume": 8152,
-      "trading_value": 16165103,
-      "mcap": 0.01,
-      "shares": 5620000,
-      "categories": [
-        "기타"
-      ],
-      "rank": 2744
+      "rank": 2622
     },
     {
       "ticker": "289170",
@@ -47081,143 +45014,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 2745
-    },
-    {
-      "ticker": "0096D0",
-      "name": "미래에셋비전스팩9호",
-      "name_en": "",
-      "market": "코스닥",
-      "sector": "기타",
-      "price": 1991,
-      "change": -0.05,
-      "volume": 223,
-      "trading_value": 443895,
-      "mcap": 0.01,
-      "shares": 5500000,
-      "categories": [
-        "기타"
-      ],
-      "rank": 2746
-    },
-    {
-      "ticker": "004255",
-      "name": "NPC우",
-      "name_en": "",
-      "market": "코스피",
-      "sector": "기타",
-      "price": 2070,
-      "change": 0.73,
-      "volume": 2387,
-      "trading_value": 4910940,
-      "mcap": 0.01,
-      "shares": 5280000,
-      "categories": [
-        "기타"
-      ],
-      "rank": 2747
-    },
-    {
-      "ticker": "0098T0",
-      "name": "교보19호스팩",
-      "name_en": "",
-      "market": "코스닥",
-      "sector": "기타",
-      "price": 2020,
-      "change": 0.0,
-      "volume": 987,
-      "trading_value": 1979340,
-      "mcap": 0.01,
-      "shares": 5400000,
-      "categories": [
-        "기타"
-      ],
-      "rank": 2748
-    },
-    {
-      "ticker": "486630",
-      "name": "KB제30호스팩",
-      "name_en": "",
-      "market": "코스닥",
-      "sector": "기타",
-      "price": 2030,
-      "change": 0.0,
-      "volume": 1,
-      "trading_value": 2030,
-      "mcap": 0.01,
-      "shares": 5310000,
-      "categories": [
-        "기타"
-      ],
-      "rank": 2749
-    },
-    {
-      "ticker": "489210",
-      "name": "교보17호스팩",
-      "name_en": "",
-      "market": "코스닥",
-      "sector": "기타",
-      "price": 2070,
-      "change": -0.24,
-      "volume": 306,
-      "trading_value": 634030,
-      "mcap": 0.01,
-      "shares": 5180000,
-      "categories": [
-        "기타"
-      ],
-      "rank": 2750
-    },
-    {
-      "ticker": "493790",
-      "name": "유안타제17호스팩",
-      "name_en": "",
-      "market": "코스닥",
-      "sector": "기타",
-      "price": 2015,
-      "change": 0.75,
-      "volume": 5073,
-      "trading_value": 10222460,
-      "mcap": 0.01,
-      "shares": 5310000,
-      "categories": [
-        "기타"
-      ],
-      "rank": 2751
-    },
-    {
-      "ticker": "0004Y0",
-      "name": "디비금융제14호스팩",
-      "name_en": "",
-      "market": "코스닥",
-      "sector": "기타",
-      "price": 2007,
-      "change": 0.1,
-      "volume": 580,
-      "trading_value": 1165560,
-      "mcap": 0.01,
-      "shares": 5315000,
-      "categories": [
-        "기타"
-      ],
-      "rank": 2752
-    },
-    {
-      "ticker": "0130D0",
-      "name": "신한제17호스팩",
-      "name_en": "",
-      "market": "코스닥",
-      "sector": "기타",
-      "price": 1984,
-      "change": 0.1,
-      "volume": 937,
-      "trading_value": 1860353,
-      "mcap": 0.01,
-      "shares": 5340000,
-      "categories": [
-        "기타"
-      ],
-      "rank": 2753
+      "rank": 2623
     },
     {
       "ticker": "008290",
@@ -47234,7 +45031,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 2754
+      "rank": 2624
     },
     {
       "ticker": "043100",
@@ -47251,24 +45048,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 2755
-    },
-    {
-      "ticker": "469480",
-      "name": "IBKS제24호스팩",
-      "name_en": "",
-      "market": "코스닥",
-      "sector": "기타",
-      "price": 2470,
-      "change": -0.4,
-      "volume": 7367,
-      "trading_value": 18213865,
-      "mcap": 0.01,
-      "shares": 4230000,
-      "categories": [
-        "기타"
-      ],
-      "rank": 2756
+      "rank": 2625
     },
     {
       "ticker": "073190",
@@ -47285,41 +45065,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 2757
-    },
-    {
-      "ticker": "478110",
-      "name": "이베스트스팩6호",
-      "name_en": "",
-      "market": "코스닥",
-      "sector": "기타",
-      "price": 2045,
-      "change": 0.0,
-      "volume": 30,
-      "trading_value": 61350,
-      "mcap": 0.01,
-      "shares": 5020000,
-      "categories": [
-        "기타"
-      ],
-      "rank": 2758
-    },
-    {
-      "ticker": "466690",
-      "name": "키움히어로제1호스팩",
-      "name_en": "",
-      "market": "코스닥",
-      "sector": "기타",
-      "price": 2010,
-      "change": 0.5,
-      "volume": 597,
-      "trading_value": 1195500,
-      "mcap": 0.01,
-      "shares": 5095000,
-      "categories": [
-        "기타"
-      ],
-      "rank": 2759
+      "rank": 2626
     },
     {
       "ticker": "008500",
@@ -47336,58 +45082,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 2760
-    },
-    {
-      "ticker": "001515",
-      "name": "SK증권우",
-      "name_en": "",
-      "market": "코스피",
-      "sector": "기타",
-      "price": 5210,
-      "change": -1.7,
-      "volume": 6440,
-      "trading_value": 33613700,
-      "mcap": 0.01,
-      "shares": 1956257,
-      "categories": [
-        "기타"
-      ],
-      "rank": 2761
-    },
-    {
-      "ticker": "498390",
-      "name": "한화플러스제5호스팩",
-      "name_en": "",
-      "market": "코스닥",
-      "sector": "기타",
-      "price": 2050,
-      "change": 0.0,
-      "volume": 182,
-      "trading_value": 373100,
-      "mcap": 0.01,
-      "shares": 4960000,
-      "categories": [
-        "기타"
-      ],
-      "rank": 2762
-    },
-    {
-      "ticker": "0041B0",
-      "name": "교보18호스팩",
-      "name_en": "",
-      "market": "코스닥",
-      "sector": "기타",
-      "price": 2015,
-      "change": 0.25,
-      "volume": 8,
-      "trading_value": 16120,
-      "mcap": 0.01,
-      "shares": 5040000,
-      "categories": [
-        "기타"
-      ],
-      "rank": 2763
+      "rank": 2627
     },
     {
       "ticker": "009620",
@@ -47404,24 +45099,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 2764
-    },
-    {
-      "ticker": "472220",
-      "name": "신영스팩10호",
-      "name_en": "",
-      "market": "코스닥",
-      "sector": "기타",
-      "price": 2150,
-      "change": -0.92,
-      "volume": 263,
-      "trading_value": 567205,
-      "mcap": 0.01,
-      "shares": 4690000,
-      "categories": [
-        "기타"
-      ],
-      "rank": 2765
+      "rank": 2628
     },
     {
       "ticker": "244880",
@@ -47438,7 +45116,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 2766
+      "rank": 2629
     },
     {
       "ticker": "238500",
@@ -47455,7 +45133,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 2767
+      "rank": 2630
     },
     {
       "ticker": "121850",
@@ -47472,24 +45150,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 2768
-    },
-    {
-      "ticker": "33637L",
-      "name": "솔루스첨단소재2우B",
-      "name_en": "",
-      "market": "코스피",
-      "sector": "기타",
-      "price": 2565,
-      "change": -0.58,
-      "volume": 4159,
-      "trading_value": 10929675,
-      "mcap": 0.01,
-      "shares": 3778296,
-      "categories": [
-        "기타"
-      ],
-      "rank": 2769
+      "rank": 2631
     },
     {
       "ticker": "114920",
@@ -47506,24 +45167,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 2770
-    },
-    {
-      "ticker": "488060",
-      "name": "유진스팩11호",
-      "name_en": "",
-      "market": "코스닥",
-      "sector": "기타",
-      "price": 2025,
-      "change": -0.25,
-      "volume": 4264,
-      "trading_value": 8631496,
-      "mcap": 0.01,
-      "shares": 4720000,
-      "categories": [
-        "기타"
-      ],
-      "rank": 2771
+      "rank": 2632
     },
     {
       "ticker": "106080",
@@ -47540,7 +45184,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 2772
+      "rank": 2633
     },
     {
       "ticker": "145210",
@@ -47557,41 +45201,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 2773
-    },
-    {
-      "ticker": "001067",
-      "name": "JW중외제약2우B",
-      "name_en": "",
-      "market": "코스피",
-      "sector": "기타",
-      "price": 45050,
-      "change": -1.21,
-      "volume": 35,
-      "trading_value": 1580550,
-      "mcap": 0.01,
-      "shares": 209973,
-      "categories": [
-        "기타"
-      ],
-      "rank": 2774
-    },
-    {
-      "ticker": "003075",
-      "name": "코오롱글로벌우",
-      "name_en": "",
-      "market": "코스피",
-      "sector": "기타",
-      "price": 12560,
-      "change": 2.2,
-      "volume": 631,
-      "trading_value": 7811450,
-      "mcap": 0.01,
-      "shares": 740737,
-      "categories": [
-        "기타"
-      ],
-      "rank": 2775
+      "rank": 2634
     },
     {
       "ticker": "302920",
@@ -47608,41 +45218,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 2776
-    },
-    {
-      "ticker": "484130",
-      "name": "하나34호스팩",
-      "name_en": "",
-      "market": "코스닥",
-      "sector": "기타",
-      "price": 2020,
-      "change": 0.0,
-      "volume": 472,
-      "trading_value": 951130,
-      "mcap": 0.01,
-      "shares": 4520000,
-      "categories": [
-        "기타"
-      ],
-      "rank": 2777
-    },
-    {
-      "ticker": "464440",
-      "name": "한국제13호스팩",
-      "name_en": "",
-      "market": "코스닥",
-      "sector": "기타",
-      "price": 2110,
-      "change": 0.0,
-      "volume": 70664,
-      "trading_value": 149101050,
-      "mcap": 0.01,
-      "shares": 4320000,
-      "categories": [
-        "기타"
-      ],
-      "rank": 2778
+      "rank": 2635
     },
     {
       "ticker": "178600",
@@ -47659,7 +45235,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 2779
+      "rank": 2636
     },
     {
       "ticker": "236340",
@@ -47676,7 +45252,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 2780
+      "rank": 2637
     },
     {
       "ticker": "103660",
@@ -47693,160 +45269,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 2781
-    },
-    {
-      "ticker": "473950",
-      "name": "에스케이증권제13호스팩",
-      "name_en": "",
-      "market": "코스닥",
-      "sector": "기타",
-      "price": 2035,
-      "change": 0.0,
-      "volume": 890,
-      "trading_value": 1811520,
-      "mcap": 0.01,
-      "shares": 4420000,
-      "categories": [
-        "기타"
-      ],
-      "rank": 2782
-    },
-    {
-      "ticker": "465320",
-      "name": "교보15호스팩",
-      "name_en": "",
-      "market": "코스닥",
-      "sector": "기타",
-      "price": 2335,
-      "change": 0.0,
-      "volume": 0,
-      "trading_value": 0,
-      "mcap": 0.01,
-      "shares": 3810000,
-      "categories": [
-        "기타"
-      ],
-      "rank": 2783
-    },
-    {
-      "ticker": "467930",
-      "name": "IBKS제23호스팩",
-      "name_en": "",
-      "market": "코스닥",
-      "sector": "기타",
-      "price": 2100,
-      "change": -0.24,
-      "volume": 9084,
-      "trading_value": 19077620,
-      "mcap": 0.01,
-      "shares": 4230000,
-      "categories": [
-        "기타"
-      ],
-      "rank": 2784
-    },
-    {
-      "ticker": "468760",
-      "name": "유진스팩10호",
-      "name_en": "",
-      "market": "코스닥",
-      "sector": "기타",
-      "price": 2075,
-      "change": 0.0,
-      "volume": 4315,
-      "trading_value": 8952730,
-      "mcap": 0.01,
-      "shares": 4240000,
-      "categories": [
-        "기타"
-      ],
-      "rank": 2785
-    },
-    {
-      "ticker": "487830",
-      "name": "신한제15호스팩",
-      "name_en": "",
-      "market": "코스닥",
-      "sector": "기타",
-      "price": 2020,
-      "change": 0.0,
-      "volume": 133,
-      "trading_value": 268660,
-      "mcap": 0.01,
-      "shares": 4350000,
-      "categories": [
-        "기타"
-      ],
-      "rank": 2786
-    },
-    {
-      "ticker": "000225",
-      "name": "유유제약1우",
-      "name_en": "",
-      "market": "코스피",
-      "sector": "기타",
-      "price": 3865,
-      "change": 0.39,
-      "volume": 562,
-      "trading_value": 2180125,
-      "mcap": 0.01,
-      "shares": 2266930,
-      "categories": [
-        "기타"
-      ],
-      "rank": 2787
-    },
-    {
-      "ticker": "0068Y0",
-      "name": "비엔케이제3호스팩",
-      "name_en": "",
-      "market": "코스닥",
-      "sector": "기타",
-      "price": 2000,
-      "change": 0.35,
-      "volume": 149,
-      "trading_value": 298000,
-      "mcap": 0.01,
-      "shares": 4310000,
-      "categories": [
-        "기타"
-      ],
-      "rank": 2788
-    },
-    {
-      "ticker": "472230",
-      "name": "에스케이증권제11호스팩",
-      "name_en": "",
-      "market": "코스닥",
-      "sector": "기타",
-      "price": 2070,
-      "change": 0.0,
-      "volume": 808,
-      "trading_value": 1672575,
-      "mcap": 0.01,
-      "shares": 4155000,
-      "categories": [
-        "기타"
-      ],
-      "rank": 2789
-    },
-    {
-      "ticker": "487720",
-      "name": "키움제10호스팩",
-      "name_en": "",
-      "market": "코스닥",
-      "sector": "기타",
-      "price": 2025,
-      "change": 0.0,
-      "volume": 189,
-      "trading_value": 382200,
-      "mcap": 0.01,
-      "shares": 4230000,
-      "categories": [
-        "기타"
-      ],
-      "rank": 2790
+      "rank": 2638
     },
     {
       "ticker": "189350",
@@ -47863,7 +45286,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 2791
+      "rank": 2639
     },
     {
       "ticker": "341170",
@@ -47880,24 +45303,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 2792
-    },
-    {
-      "ticker": "03481K",
-      "name": "해성산업1우",
-      "name_en": "",
-      "market": "코스닥",
-      "sector": "기타",
-      "price": 6070,
-      "change": 1.85,
-      "volume": 406,
-      "trading_value": 2432180,
-      "mcap": 0.01,
-      "shares": 1377453,
-      "categories": [
-        "기타"
-      ],
-      "rank": 2793
+      "rank": 2640
     },
     {
       "ticker": "185190",
@@ -47914,24 +45320,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 2794
-    },
-    {
-      "ticker": "0041J0",
-      "name": "엘에스스팩1호",
-      "name_en": "",
-      "market": "코스닥",
-      "sector": "기타",
-      "price": 1996,
-      "change": 0.05,
-      "volume": 2004,
-      "trading_value": 3999983,
-      "mcap": 0.01,
-      "shares": 4110000,
-      "categories": [
-        "기타"
-      ],
-      "rank": 2795
+      "rank": 2641
     },
     {
       "ticker": "309930",
@@ -47948,58 +45337,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 2796
-    },
-    {
-      "ticker": "001065",
-      "name": "JW중외제약우",
-      "name_en": "",
-      "market": "코스피",
-      "sector": "기타",
-      "price": 22650,
-      "change": 0.0,
-      "volume": 246,
-      "trading_value": 5583250,
-      "mcap": 0.01,
-      "shares": 341951,
-      "categories": [
-        "기타"
-      ],
-      "rank": 2797
-    },
-    {
-      "ticker": "004835",
-      "name": "덕성우",
-      "name_en": "",
-      "market": "코스피",
-      "sector": "기타",
-      "price": 5530,
-      "change": -4.98,
-      "volume": 1874,
-      "trading_value": 10549640,
-      "mcap": 0.01,
-      "shares": 1392000,
-      "categories": [
-        "기타"
-      ],
-      "rank": 2798
-    },
-    {
-      "ticker": "475250",
-      "name": "하나33호스팩",
-      "name_en": "",
-      "market": "코스닥",
-      "sector": "기타",
-      "price": 2080,
-      "change": 0.24,
-      "volume": 1,
-      "trading_value": 2080,
-      "mcap": 0.01,
-      "shares": 3700000,
-      "categories": [
-        "기타"
-      ],
-      "rank": 2799
+      "rank": 2642
     },
     {
       "ticker": "079970",
@@ -48016,41 +45354,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 2800
-    },
-    {
-      "ticker": "474930",
-      "name": "신한제13호스팩",
-      "name_en": "",
-      "market": "코스닥",
-      "sector": "기타",
-      "price": 2090,
-      "change": -0.24,
-      "volume": 3419,
-      "trading_value": 7108830,
-      "mcap": 0.01,
-      "shares": 3620000,
-      "categories": [
-        "기타"
-      ],
-      "rank": 2801
-    },
-    {
-      "ticker": "004985",
-      "name": "성신양회우",
-      "name_en": "",
-      "market": "코스피",
-      "sector": "기타",
-      "price": 10240,
-      "change": -4.66,
-      "volume": 1134,
-      "trading_value": 11698130,
-      "mcap": 0.01,
-      "shares": 735645,
-      "categories": [
-        "기타"
-      ],
-      "rank": 2802
+      "rank": 2643
     },
     {
       "ticker": "236030",
@@ -48067,7 +45371,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 2803
+      "rank": 2644
     },
     {
       "ticker": "212310",
@@ -48084,7 +45388,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 2804
+      "rank": 2645
     },
     {
       "ticker": "332190",
@@ -48101,7 +45405,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 2805
+      "rank": 2646
     },
     {
       "ticker": "066830",
@@ -48118,7 +45422,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 2806
+      "rank": 2647
     },
     {
       "ticker": "199150",
@@ -48135,7 +45439,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 2807
+      "rank": 2648
     },
     {
       "ticker": "276040",
@@ -48152,24 +45456,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 2808
-    },
-    {
-      "ticker": "473000",
-      "name": "에스케이증권제12호스팩",
-      "name_en": "",
-      "market": "코스닥",
-      "sector": "기타",
-      "price": 2045,
-      "change": 0.0,
-      "volume": 119,
-      "trading_value": 243375,
-      "mcap": 0.01,
-      "shares": 3310000,
-      "categories": [
-        "기타"
-      ],
-      "rank": 2809
+      "rank": 2649
     },
     {
       "ticker": "101390",
@@ -48186,24 +45473,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 2810
-    },
-    {
-      "ticker": "475240",
-      "name": "하나32호스팩",
-      "name_en": "",
-      "market": "코스닥",
-      "sector": "기타",
-      "price": 2070,
-      "change": -0.48,
-      "volume": 5261,
-      "trading_value": 10892390,
-      "mcap": 0.01,
-      "shares": 3200000,
-      "categories": [
-        "기타"
-      ],
-      "rank": 2811
+      "rank": 2650
     },
     {
       "ticker": "251280",
@@ -48220,7 +45490,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 2812
+      "rank": 2651
     },
     {
       "ticker": "199290",
@@ -48237,24 +45507,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 2813
-    },
-    {
-      "ticker": "000325",
-      "name": "노루홀딩스우",
-      "name_en": "",
-      "market": "코스피",
-      "sector": "기타",
-      "price": 27100,
-      "change": -1.45,
-      "volume": 99,
-      "trading_value": 2721550,
-      "mcap": 0.01,
-      "shares": 243559,
-      "categories": [
-        "기타"
-      ],
-      "rank": 2814
+      "rank": 2652
     },
     {
       "ticker": "234070",
@@ -48271,24 +45524,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 2815
-    },
-    {
-      "ticker": "26490K",
-      "name": "크라운제과우",
-      "name_en": "",
-      "market": "코스피",
-      "sector": "기타",
-      "price": 7980,
-      "change": 1.01,
-      "volume": 284,
-      "trading_value": 2217390,
-      "mcap": 0.01,
-      "shares": 773560,
-      "categories": [
-        "기타"
-      ],
-      "rank": 2816
+      "rank": 2653
     },
     {
       "ticker": "447690",
@@ -48305,7 +45541,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 2817
+      "rank": 2654
     },
     {
       "ticker": "276240",
@@ -48322,7 +45558,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 2818
+      "rank": 2655
     },
     {
       "ticker": "267080",
@@ -48339,7 +45575,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 2819
+      "rank": 2656
     },
     {
       "ticker": "204210",
@@ -48356,7 +45592,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 2820
+      "rank": 2657
     },
     {
       "ticker": "224810",
@@ -48373,24 +45609,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 2821
-    },
-    {
-      "ticker": "009415",
-      "name": "태영건설우",
-      "name_en": "",
-      "market": "코스피",
-      "sector": "기타",
-      "price": 8560,
-      "change": 6.34,
-      "volume": 5288,
-      "trading_value": 43981350,
-      "mcap": 0.01,
-      "shares": 649974,
-      "categories": [
-        "기타"
-      ],
-      "rank": 2822
+      "rank": 2658
     },
     {
       "ticker": "215570",
@@ -48407,7 +45626,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 2823
+      "rank": 2659
     },
     {
       "ticker": "044180",
@@ -48424,7 +45643,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 2824
+      "rank": 2660
     },
     {
       "ticker": "318660",
@@ -48441,7 +45660,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 2825
+      "rank": 2661
     },
     {
       "ticker": "121060",
@@ -48458,7 +45677,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 2826
+      "rank": 2662
     },
     {
       "ticker": "116100",
@@ -48475,7 +45694,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 2827
+      "rank": 2663
     },
     {
       "ticker": "313760",
@@ -48492,24 +45711,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 2828
-    },
-    {
-      "ticker": "090355",
-      "name": "노루페인트우",
-      "name_en": "",
-      "market": "코스피",
-      "sector": "기타",
-      "price": 11000,
-      "change": -2.31,
-      "volume": 870,
-      "trading_value": 9582570,
-      "mcap": 0.01,
-      "shares": 463126,
-      "categories": [
-        "기타"
-      ],
-      "rank": 2829
+      "rank": 2664
     },
     {
       "ticker": "202960",
@@ -48526,7 +45728,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 2830
+      "rank": 2665
     },
     {
       "ticker": "266350",
@@ -48543,7 +45745,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 2831
+      "rank": 2666
     },
     {
       "ticker": "258050",
@@ -48560,7 +45762,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 2832
+      "rank": 2667
     }
   ]
 };
