@@ -630,7 +630,7 @@ function repTs(tk){
   const R=window.KOS_REPORTS&&KOS_REPORTS.reports&&KOS_REPORTS.reports[tk];
   return R ? (R.reportTs||R.reportDate||'') : '';
 }
-function isW(tk){ try{ return localStorage.getItem('kos-watch-'+tk)==='1'; }catch(e){ return false; } }
+function isW(tk){ try{ var v=localStorage.getItem('kos-watch-'+tk); return !!v && v!=='0'; }catch(e){ return false; } }
 function rowHtml(r,i){
   const dir=r.change>0?'up':r.change<0?'down':'flat',arw=r.change>0?'▲':r.change<0?'▼':'–';
   const title=repTitle(r.ticker);
@@ -686,7 +686,7 @@ rowsEl.addEventListener('click',function(e){
   const b=e.target.closest('.wl-btn'); if(!b) return;
   e.preventDefault(); e.stopPropagation();
   const tk=b.dataset.wl, on=!isW(tk);
-  try{ on?localStorage.setItem('kos-watch-'+tk,'1'):localStorage.removeItem('kos-watch-'+tk); }catch(err){}
+  try{ on?localStorage.setItem('kos-watch-'+tk,String(Date.now())):localStorage.removeItem('kos-watch-'+tk); }catch(err){}
   b.classList.toggle('on',on);
 });
 // 뒤로가기(bfcache)·탭 복귀 시 별 상태를 localStorage로 즉시 재동기화

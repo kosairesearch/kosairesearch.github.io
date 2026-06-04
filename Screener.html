@@ -936,11 +936,11 @@ document.getElementById('pagerCtl').addEventListener('click',e=>{
   render();
 });
 document.getElementById('emptyReset').addEventListener('click',()=>{state.filters={};state.q='';document.getElementById('searchInput').value='';state.page=1;render();});
-function isW(tk){ try{ return localStorage.getItem('kos-watch-'+tk)==='1'; }catch(e){ return false; } }
+function isW(tk){ try{ var v=localStorage.getItem('kos-watch-'+tk); return !!v && v!=='0'; }catch(e){ return false; } }
 tbody.addEventListener('click',e=>{
   const wb=e.target.closest('.wl-btn');
   if(wb){ e.preventDefault(); e.stopPropagation(); const tk=wb.dataset.wl, on=!isW(tk);
-    try{ on?localStorage.setItem('kos-watch-'+tk,'1'):localStorage.removeItem('kos-watch-'+tk); }catch(err){}
+    try{ on?localStorage.setItem('kos-watch-'+tk,String(Date.now())):localStorage.removeItem('kos-watch-'+tk); }catch(err){}
     wb.classList.toggle('on',on); return; }
   const tr=e.target.closest('tr');if(tr)window.location.href='Ticker Detail v2.html?ticker='+(tr.dataset.ticker||'');
 });

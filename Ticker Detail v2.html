@@ -845,12 +845,15 @@ KOSi18n.register({
   function secOpen(num,kick,title){ return '<section class="sec col"><div class="sec-kicker"><span class="sec-num">'+num+'</span> · '+kick+'</div><h2 class="sec-title">'+esc(title)+'</h2>'; }
 
   var WKEY='kos-watch-'+TK, watched=false;
-  try{ watched=localStorage.getItem(WKEY)==='1'; }catch(e){}
+  try{ var _wv=localStorage.getItem(WKEY); watched=!!_wv && _wv!=='0'; }catch(e){}
   function syncWatch(){ var u=U();
     var b=document.getElementById('watchBtn'), tx=document.getElementById('watchTxt');
     if(b)b.classList.toggle('on',watched);
     if(tx)tx.textContent=watched?u.watched:u.watch;
-    try{ localStorage.setItem(WKEY,watched?'1':'0'); }catch(e){}
+    try{
+      if(watched){ var ex=localStorage.getItem(WKEY); if(!ex||ex==='0'||ex==='1') localStorage.setItem(WKEY,String(Date.now())); }
+      else { localStorage.removeItem(WKEY); }
+    }catch(e){}
   }
 
   function srcHost(u){ try{ return new URL(u).hostname.replace(/^www\./,''); }catch(e){ return String(u).replace(/^https?:\/\//,'').split('/')[0]; } }

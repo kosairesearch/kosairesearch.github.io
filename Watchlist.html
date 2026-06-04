@@ -556,11 +556,14 @@ let LIST_DEFAULT=[
   {name:'현대차',ticker:'005380',market:'KOSPI',sector:'자동차',price:238500,change:1.28,mcap:50.2,ai:'하이브리드 차종 비중 확대와 미국 시장 ASP 안정세가 분기 영업이익률에 우호적으로 작용하는 모습이다.'},
   {name:'셀트리온',ticker:'068270',market:'KOSPI',sector:'바이오',price:186400,change:-0.32,mcap:40.6,ai:'바이오시밀러 미국 시장 진입 일정과 신규 파이프라인 가시성이 분기별로 점진적으로 개선되는 흐름이다.'},
 ].map((s,i)=>({...s,added:i}));
-function isWatched(tk){ try{ return localStorage.getItem('kos-watch-'+tk)==='1'; }catch(e){ return false; } }
+function isWatched(tk){ try{ var v=localStorage.getItem('kos-watch-'+tk); return !!v && v!=='0'; }catch(e){ return false; } }
 function repTitle(tk){ const R=window.KOS_REPORTS&&KOS_REPORTS.reports&&KOS_REPORTS.reports[tk]; if(!R||!R.title) return ''; return EN()?(R.title.en||R.title.ko||''):(R.title.ko||R.title.en||''); }
 function getWatched(){
   const all=(window.KOS_LIVE_DATA&&window.KOS_LIVE_DATA.stocks)||[];
-  return all.filter(s=>isWatched(s.ticker)).map((s,i)=>({...s,added:i}));
+  // localStorage 키 삽입 순서 = 추가 순서(기존 종목 포함). 보조로 타임스탬프 값.
+  var order={}, idx=0;
+  try{ for(var j=0;j<localStorage.length;j++){ var k=localStorage.key(j); if(k&&k.indexOf('kos-watch-')===0) order[k.slice(10)]=idx++; } }catch(e){}
+  return all.filter(s=>isWatched(s.ticker)).map((s,i)=>({...s, added:(s.ticker in order ? order[s.ticker] : i)}));
 }
 let LIST = getWatched();
 
