@@ -585,13 +585,96 @@ def collect_pykrx_fallback(date, universe=None):
     return results
 
 
-def collect_pykrx(date):
-    """pykrx로 시세 데이터를 수집합니다.
+KRX_MKT_ID = {"STK": "코스피", "KSQ": "코스닥", "KNX": "코넥스"}
+KRX_CACHE_URL = ("https://raw.githubusercontent.com/FinanceData/fdr_krx_data_cache/"
+                 "refs/heads/master/data/listing/krx/{d}.csv")
 
-    KRX_ID/KRX_PW(data.krx.co.kr 계정)가 설정돼 있으면 전종목 벌크 API로
-    한 번에 수집합니다(시총·주식수·시세 포함). 로그인이 없으면 KRX 벌크가
-    차단되므로, 개별 OHLCV 폴백(SECTOR_MAP 대상)으로 수집하고 시총은 DART로 채웁니다.
+
+def collect_krx_cache(date):
+    """FinanceData KRX 캐시 CSV(전 종목)에서 시세·시총·주식수를 수집합니다.
+
+    raw.githubusercontent.com 에서 받으므로 KRX 로그인/직접호출이 필요 없고
+    GitHub Actions에서도 동작합니다. date(YYYYMMDD) 당일이 없으면 최근 거래일로 폴백.
     """
+    import io
+    import requests
+    import pandas as pd
+
+    try:
+        base = datetime.datetime.strptime(str(date), "%Y%m%d").date()
+    except Exception:
+        base = (datetime.datetime.utcnow() + datetime.timedelta(hours=9)).date()
+
+    df, used = None, None
+    for back in range(0, 8):
+        d = (base - datetime.timedelta(days=back)).strftime("%Y-%m-%d")
+        url = KRX_CACHE_URL.format(d=d)
+        try:
+            r = requests.get(url, timeout=20)
+            if r.status_code == 200 and len(r.text) > 1000:
+                df = pd.read_csv(io.StringIO(r.text), index_col=0, dtype={"Code": str})
+                used = d
+                break
+        except Exception as e:
+            print(f"    [krx-cache] {d} 실패: {type(e).__name__}: {e}")
+    if df is None:
+        print("  [krx-cache] 캐시 CSV 확보 실패")
+        return {}
+
+    print(f"  [krx-cache] {used} CSV {len(df)}행 로드")
+    results = {}
+    for _, row in df.iterrows():
+        code = str(row.get("Code", "")).zfill(6)
+        try:
+            price = int(row["Close"]) if pd.notna(row["Close"]) else 0
+        except Exception:
+            price = 0
+        if price <= 0:
+            continue
+        def gi(k):
+            try:
+                return int(row[k]) if pd.notna(row[k]) else 0
+            except Exception:
+                return 0
+        def gf(k):
+            try:
+                return float(row[k]) if pd.notna(row[k]) else 0.0
+            except Exception:
+                return 0.0
+        results[code] = {
+            "ticker": code,
+            "name": str(row.get("Name", code)),
+            "name_en": "",
+            "market": KRX_MKT_ID.get(str(row.get("MarketId", "")), "코스피"),
+            "sector": SECTOR_MAP.get(code, "기타"),
+            "price": price,
+            "change": round(gf("ChagesRatio"), 2),
+            "volume": gi("Volume"),
+            "trading_value": gi("Amount"),
+            "mcap": round(gf("Marcap") / 1e12, 2),
+            "shares": gi("Stocks"),
+        }
+    print(f"  [krx-cache] 가격 유효 {len(results)}개 종목")
+    return results
+
+
+def collect_pykrx(date):
+    """시세 데이터를 수집합니다.
+
+    1) FinanceData KRX 캐시(전 종목, 로그인·KRX직접호출 불필요) — 기본·최선
+    2) KRX_ID/KRX_PW 설정 시 전종목 벌크 API
+    3) 개별 OHLCV 폴백(SECTOR_MAP 대상) + DART 시총
+    """
+    # 1) KRX GitHub 캐시 — 전 종목
+    try:
+        results = collect_krx_cache(date)
+    except Exception as e:
+        print(f"  [krx-cache] 오류: {type(e).__name__}: {e}")
+        results = {}
+    if len([v for v in results.values() if v.get("price", 0) > 0]) >= 500:
+        return results
+    print("  [pykrx] 캐시 부족 — 다음 경로 시도")
+
     krx_login = bool(os.getenv("KRX_ID") and os.getenv("KRX_PW"))
 
     if krx_login:
@@ -877,9 +960,9 @@ def enrich_with_dart(results):
 
     debug_info = {}
     ranked = sorted(results.values(), key=lambda x: x["trading_value"], reverse=True)
-    # 벌크(KRX) 수집이면 시총은 이미 채워졌으므로 DART 보강(영문명·업종)은 상위 400개만.
-    # 폴백(로그인 없음)이면 시총을 DART로 채워야 하므로 상위 130개.
-    targets = ranked[:400] if FULL_UNIVERSE else ranked[:130]
+    # 시총은 KRX 캐시/벌크가 이미 채우므로 DART 보강(영문명·업종·주식수)은 상위 400개만.
+    # (폴백 SECTOR_MAP 경로는 ~119개라 [:400]이 곧 전부 → DART로 시총까지 채움)
+    targets = ranked[:400]
     print(f"  [DART] {len(targets)}개 종목 영문명·주식수(시총) 수집 중...")
 
     for i, stock in enumerate(targets):
