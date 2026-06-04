@@ -104,6 +104,9 @@ body::before{content:"";position:fixed;inset:0;z-index:-1;pointer-events:none;
 :root[data-theme="dark"] .edit-btn{background:rgba(255,255,255,.08)}
 .edit-btn.on{background:var(--fg-1);color:var(--bg-1);border-color:var(--fg-1)}
 .edit-btn svg{width:15px;height:15px}
+.tb-actions{display:flex;align-items:center;gap:8px}
+.clear-all{display:inline-flex;align-items:center;font:600 13px var(--font-sans);color:var(--down);background:transparent;border:1px solid var(--down);padding:9px 15px;border-radius:var(--pill);cursor:pointer;transition:.15s;white-space:nowrap}
+.clear-all:hover{background:var(--down);color:#fff}
 
 /* list */
 .wl{padding:6px 8px;overflow:hidden}
@@ -496,10 +499,13 @@ KOSi18n.register({
         <option value="name">종목명순</option>
       </select>
     </div>
-    <button class="edit-btn" id="editBtn">
-      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 20h9M16.5 3.5a2.1 2.1 0 0 1 3 3L7 19l-4 1 1-4z"/></svg>
-      편집
-    </button>
+    <div class="tb-actions">
+      <button class="clear-all" id="clearAllBtn" style="display:none">전체 삭제</button>
+      <button class="edit-btn" id="editBtn">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 20h9M16.5 3.5a2.1 2.1 0 0 1 3 3L7 19l-4 1 1-4z"/></svg>
+        편집
+      </button>
+    </div>
   </div>
 
   <!-- LIST -->
@@ -635,8 +641,20 @@ document.getElementById('sortSeg').addEventListener('click',e=>{
 document.getElementById('sortSelect').addEventListener('change',e=>{ applySort(e.target.value); });
 document.getElementById('editBtn').addEventListener('click',e=>{
   wlEl.classList.toggle('edit');
-  e.currentTarget.classList.toggle('on',wlEl.classList.contains('edit'));
-  e.currentTarget.lastChild.textContent= wlEl.classList.contains('edit')?T(' 완료'):T(' 편집');
+  const on=wlEl.classList.contains('edit');
+  e.currentTarget.classList.toggle('on',on);
+  e.currentTarget.lastChild.textContent= on?T(' 완료'):T(' 편집');
+  document.getElementById('clearAllBtn').style.display = on?'inline-flex':'none';
+});
+document.getElementById('clearAllBtn').addEventListener('click',()=>{
+  const msg = EN()? 'Remove all stocks from your watchlist?' : '관심종목을 전체 삭제할까요?';
+  if(!window.confirm(msg)) return;
+  try{ for(let i=localStorage.length-1;i>=0;i--){ const k=localStorage.key(i); if(k&&k.indexOf('kos-watch-')===0) localStorage.removeItem(k); } }catch(e){}
+  LIST=getWatched();
+  wlEl.classList.remove('edit');
+  const eb=document.getElementById('editBtn'); eb.classList.remove('on'); eb.lastChild.textContent=T(' 편집');
+  document.getElementById('clearAllBtn').style.display='none';
+  page=1; render();
 });
 rowsEl.addEventListener('click',e=>{
   const rm=e.target.closest('[data-remove]');
@@ -661,7 +679,7 @@ themeBtn.addEventListener('click',()=>applyTheme(root.getAttribute('data-theme')
 const WATCHLIST_DICT={
   "관심 종목":"My Watchlist",
   "정렬":"Sort","등락률순":"By Change","시가총액순":"By Market Cap","추가 순서":"By Date Added","종목명순":"By Name",
-  " 편집":" Edit"," 완료":" Done","편집":"Edit",
+  " 편집":" Edit"," 완료":" Done","편집":"Edit","전체 삭제":"Clear All",
   "종목":"Stock","현재가":"Price","리포트 제목":"Report Title",
   "관심 종목이 비어 있습니다":"Your watchlist is empty",
   "스크리너에서 조건에 맞는 종목을 찾거나, 종목 상세 페이지에서 워치리스트에 추가해 보세요.":"Find stocks in the Screener that fit your criteria, or add them from their detail page.",
