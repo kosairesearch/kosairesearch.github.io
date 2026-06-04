@@ -370,7 +370,7 @@ def collect_pykrx_bulk(date):
                     "change":  round(float(ohlcv_row.get(chg_col, 0) if hasattr(ohlcv_row, "get") else 0), 2),
                     "volume":       int(ohlcv_row.get(vol_col, 0)  if hasattr(ohlcv_row, "get") else 0),
                     "trading_value":int(ohlcv_row.get(tvol_col, 0) if hasattr(ohlcv_row, "get") else 0),
-                    "mcap":  round(mcap_won / 1e12, 2),
+                    "mcap":  round(mcap_won / 1e12, 4),
                     "shares":int(cap_row.get(shares_col, 0) if hasattr(cap_row, "get") else 0),
                     "per": round(float(fund_row.get("PER", 0) if hasattr(fund_row, "get") else 0), 1),
                     "pbr": round(float(fund_row.get("PBR", 0) if hasattr(fund_row, "get") else 0), 1),
@@ -665,7 +665,7 @@ def collect_krx_cache(date):
             "change": round(gf("ChagesRatio"), 2),
             "volume": gi("Volume"),
             "trading_value": gi("Amount"),
-            "mcap": round(gf("Marcap") / 1e12, 2),
+            "mcap": round(gf("Marcap") / 1e12, 4),
             "shares": gi("Stocks"),
         }
     print(f"  [krx-cache] 가격 유효 {len(results)}개 종목 (우선주·스팩 {skipped}개 제외)")
@@ -1008,7 +1008,7 @@ def enrich_with_dart(results):
                 results[ticker]["market"] = market
             if common_sh > 0 and not (results[ticker].get("mcap") or 0) > 0:
                 results[ticker]["shares"] = common_sh
-                results[ticker]["mcap"]   = round(price * common_sh / 1e12, 2)
+                results[ticker]["mcap"]   = round(price * common_sh / 1e12, 4)
 
             if i % 20 == 0:
                 print(f"    {i+1}/{len(targets)} 완료...")
