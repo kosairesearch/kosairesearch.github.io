@@ -204,6 +204,7 @@ body::before{content:"";position:fixed;inset:0;z-index:-1;pointer-events:none;
 :root[data-theme="dark"] .pager .pctl button.active{background:#fff;color:#000}
 .pager .pctl button:disabled{opacity:.4;cursor:default}
 .pager .pctl .gap{color:var(--fg-3);padding:0 2px}
+.pager .pctl .pell{min-width:20px;text-align:center;color:var(--fg-3);font:600 13px var(--font-sans);align-self:center}
 </style>
 <script src="data/stocks.js"></script>
 <script src="data/reports.js"></script>
@@ -598,8 +599,6 @@ function repaintSort(){
 function getList(){
   const t=state.q.trim().toLowerCase();
   let l=REPORTS.filter(r=>{
-    const R=window.KOS_REPORTS&&KOS_REPORTS.reports&&KOS_REPORTS.reports[r.ticker];
-    if(!R)return false;  // 리포트가 있는 종목만 (전 종목 universe 중)
     if(state.sector!=='전체'&&!rcats(r).includes(state.sector))return false;
     if(t&&!(r.name.toLowerCase().includes(t)||r.ticker.includes(t)||r.sector.toLowerCase().includes(t)||T(r.name).toLowerCase().includes(t)||T(r.sector).toLowerCase().includes(t)))return false;
     return true;
@@ -661,7 +660,15 @@ function render(){
   const EN=window.KOSi18n&&KOSi18n.lang==='en';
   document.getElementById('pagerInfo').textContent=EN?`${start+1}–${Math.min(start+size,total)} of ${total}`:`${start+1}–${Math.min(start+size,total)} / 총 ${total}개`;
   let b=`<button ${state.page<=1?'disabled':''} data-pg="prev">‹</button>`;
-  for(let i=1;i<=pages;i++) b+=`<button class="${i===state.page?'active':''}" data-pg="${i}">${i}</button>`;
+  // 페이지가 많으면(전 종목) 압축형, 적으면 전부 표시
+  if(pages<=12){
+    for(let i=1;i<=pages;i++) b+=`<button class="${i===state.page?'active':''}" data-pg="${i}">${i}</button>`;
+  }else{
+    for(const p of pageWindow(state.page,pages)){
+      b += p==='…' ? `<span class="pell">…</span>`
+                   : `<button class="${p===state.page?'active':''}" data-pg="${p}">${p}</button>`;
+    }
+  }
   b+=`<button ${state.page>=pages?'disabled':''} data-pg="next">›</button>`;
   document.getElementById('pagerCtl').innerHTML=pages>1?b:'';
   pager.style.display=pages>1?'':'none';
