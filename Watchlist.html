@@ -566,10 +566,12 @@ function isWatched(tk){ try{ var v=localStorage.getItem('kos-watch-'+tk); return
 function repTitle(tk){ const R=window.KOS_REPORTS&&KOS_REPORTS.reports&&KOS_REPORTS.reports[tk]; if(!R||!R.title) return ''; return EN()?(R.title.en||R.title.ko||''):(R.title.ko||R.title.en||''); }
 function getWatched(){
   const all=(window.KOS_LIVE_DATA&&window.KOS_LIVE_DATA.stocks)||[];
-  // localStorage 키 삽입 순서 = 추가 순서(기존 종목 포함). 보조로 타임스탬프 값.
-  var order={}, idx=0;
-  try{ for(var j=0;j<localStorage.length;j++){ var k=localStorage.key(j); if(k&&k.indexOf('kos-watch-')===0) order[k.slice(10)]=idx++; } }catch(e){}
-  return all.filter(s=>isWatched(s.ticker)).map((s,i)=>({...s, added:(s.ticker in order ? order[s.ticker] : i)}));
+  // 추가 시각(저장된 타임스탬프 값)으로 정렬. 키 순서는 과거 방문 시 생성된
+  // '0' 키 때문에 신뢰 불가 → 값(타임스탬프) 사용. 구버전 '1' 값은 가장 오래된 것으로 취급.
+  return all.filter(s=>isWatched(s.ticker)).map((s,i)=>{
+    var v=parseInt(localStorage.getItem('kos-watch-'+s.ticker),10);
+    return {...s, added:(Number.isFinite(v)?v:0)};
+  });
 }
 let LIST = getWatched();
 
