@@ -580,7 +580,7 @@ function sorted(){
   const l=[...LIST];
   if(sortKey==='change')l.sort((a,b)=>b.change-a.change);
   else if(sortKey==='mcap')l.sort((a,b)=>b.mcap-a.mcap);
-  else if(sortKey==='added')l.sort((a,b)=>a.added-b.added);
+  else if(sortKey==='added')l.sort((a,b)=>b.added-a.added);
   else if(sortKey==='name')l.sort((a,b)=>a.name.localeCompare(b.name,'ko'));
   return l;
 }
