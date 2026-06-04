@@ -27,6 +27,12 @@ ENRICH_TOP = int(os.getenv("ENRICH_TOP", "3000") or "3000")
 # GitHub Actions Step Summary 지원
 STEP_SUMMARY = os.getenv("GITHUB_STEP_SUMMARY")
 
+# DART에서 영문명을 못 가져오는 특수 티커(영문/숫자 혼합 등) 수동 영문명.
+NAME_EN_OVERRIDE = {
+    "0126Z0": "Samsung Epis Holdings",
+    "0009K0": "AimedBio",
+}
+
 def log_summary(msg):
     print(msg)
     if STEP_SUMMARY:
@@ -1122,6 +1128,11 @@ def main():
     log_summary(f"- 영문명 이월: {carried}개")
 
     results = enrich_with_dart(results)
+
+    # DART 영문명 누락 특수 티커는 수동 영문명으로 보완
+    for tk, en in NAME_EN_OVERRIDE.items():
+        if tk in results and not results[tk].get("name_en"):
+            results[tk]["name_en"] = en
 
     # 수집 실패 가드: 이번에 새로 수집한 종목이 너무 적으면 갱신 건너뜀(기존 데이터 보존)
     if len(results) < 50:
