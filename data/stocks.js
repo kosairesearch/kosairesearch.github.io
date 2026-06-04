@@ -1,6 +1,6 @@
 // KOS ai — 자동 생성 데이터 파일. 직접 수정하지 마세요.
 window.KOS_LIVE_DATA = {
-  "lastUpdated": "2026-06-04 22:42",
+  "lastUpdated": "2026-06-04 22:45",
   "dataDate": "20260604",
   "stocks": [
     {
@@ -2141,7 +2141,7 @@ window.KOS_LIVE_DATA = {
       "name": "리가켐바이오",
       "name_en": "LigaChem Biosciences Inc.",
       "market": "코스닥",
-      "sector": "부동산·기타서비스",
+      "sector": "바이오·제약",
       "price": 145600,
       "change": -1.42,
       "volume": 329168,
@@ -2150,7 +2150,7 @@ window.KOS_LIVE_DATA = {
       "shares": 37019418,
       "induty_code": "70113",
       "categories": [
-        "부동산·기타서비스"
+        "바이오·제약"
       ],
       "rank": 119
     },
@@ -2520,7 +2520,7 @@ window.KOS_LIVE_DATA = {
       "name": "보로노이",
       "name_en": "Voronoi, Inc.",
       "market": "코스닥",
-      "sector": "부동산·기타서비스",
+      "sector": "바이오·제약",
       "price": 224500,
       "change": -3.65,
       "volume": 114302,
@@ -2529,7 +2529,7 @@ window.KOS_LIVE_DATA = {
       "shares": 18402171,
       "induty_code": "701",
       "categories": [
-        "부동산·기타서비스"
+        "바이오·제약"
       ],
       "rank": 140
     },
@@ -2538,7 +2538,7 @@ window.KOS_LIVE_DATA = {
       "name": "디앤디파마텍",
       "name_en": "D&D Pharmatech Inc.",
       "market": "코스닥",
-      "sector": "부동산·기타서비스",
+      "sector": "바이오·제약",
       "price": 94000,
       "change": 11.77,
       "volume": 1949073,
@@ -2547,7 +2547,7 @@ window.KOS_LIVE_DATA = {
       "shares": 43804147,
       "induty_code": "70113",
       "categories": [
-        "부동산·기타서비스"
+        "바이오·제약"
       ],
       "rank": 141
     },
@@ -2826,7 +2826,7 @@ window.KOS_LIVE_DATA = {
       "name": "올릭스",
       "name_en": "OliX Pharmaceuticals, Inc.",
       "market": "코스닥",
-      "sector": "부동산·기타서비스",
+      "sector": "바이오·제약",
       "price": 162200,
       "change": 3.97,
       "volume": 283215,
@@ -2835,7 +2835,7 @@ window.KOS_LIVE_DATA = {
       "shares": 20300583,
       "induty_code": "70113",
       "categories": [
-        "부동산·기타서비스"
+        "바이오·제약"
       ],
       "rank": 157
     },
@@ -4266,7 +4266,7 @@ window.KOS_LIVE_DATA = {
       "name": "메지온",
       "name_en": "Mezzion Pharma Co., Ltd.",
       "market": "코스닥",
-      "sector": "부동산·기타서비스",
+      "sector": "바이오·제약",
       "price": 64800,
       "change": 2.37,
       "volume": 120741,
@@ -4275,7 +4275,7 @@ window.KOS_LIVE_DATA = {
       "shares": 30392167,
       "induty_code": "70113",
       "categories": [
-        "부동산·기타서비스"
+        "바이오·제약"
       ],
       "rank": 237
     },
@@ -4446,7 +4446,7 @@ window.KOS_LIVE_DATA = {
       "name": "에임드바이오",
       "name_en": "AimedBio",
       "market": "코스닥",
-      "sector": "기타",
+      "sector": "바이오·제약",
       "price": 27700,
       "change": -17.93,
       "volume": 1417112,
@@ -4454,7 +4454,7 @@ window.KOS_LIVE_DATA = {
       "mcap": 1.7914,
       "shares": 64671161,
       "categories": [
-        "기타"
+        "바이오·제약"
       ],
       "rank": 247
     },
@@ -4751,7 +4751,7 @@ window.KOS_LIVE_DATA = {
       "name": "알지노믹스",
       "name_en": "Rznomics Inc.",
       "market": "코스닥",
-      "sector": "부동산·기타서비스",
+      "sector": "바이오·제약",
       "price": 110000,
       "change": -0.81,
       "volume": 231128,
@@ -4760,7 +4760,7 @@ window.KOS_LIVE_DATA = {
       "shares": 13933842,
       "induty_code": "70113",
       "categories": [
-        "부동산·기타서비스"
+        "바이오·제약"
       ],
       "rank": 264
     },
@@ -5039,7 +5039,7 @@ window.KOS_LIVE_DATA = {
       "name": "제이에스링크",
       "name_en": "JS Link, Inc.",
       "market": "코스닥",
-      "sector": "부동산·기타서비스",
+      "sector": "바이오·제약",
       "price": 40050,
       "change": 3.09,
       "volume": 307845,
@@ -5048,7 +5048,7 @@ window.KOS_LIVE_DATA = {
       "shares": 34621046,
       "induty_code": "70111",
       "categories": [
-        "부동산·기타서비스"
+        "바이오·제약"
       ],
       "rank": 280
     },
@@ -5346,7 +5346,7 @@ window.KOS_LIVE_DATA = {
       "name": "에이프릴바이오",
       "name_en": "AprilBio Co.,Ltd.",
       "market": "코스닥",
-      "sector": "부동산·기타서비스",
+      "sector": "바이오·제약",
       "price": 54700,
       "change": -4.54,
       "volume": 274666,
@@ -5355,7 +5355,7 @@ window.KOS_LIVE_DATA = {
       "shares": 23413826,
       "induty_code": "70113",
       "categories": [
-        "부동산·기타서비스"
+        "바이오·제약"
       ],
       "rank": 297
     },
@@ -5997,7 +5997,7 @@ window.KOS_LIVE_DATA = {
       "name": "큐리언트",
       "name_en": "Qurient Co., Ltd.",
       "market": "코스닥",
-      "sector": "부동산·기타서비스",
+      "sector": "바이오·제약",
       "price": 27650,
       "change": -2.47,
       "volume": 91488,
@@ -6006,7 +6006,7 @@ window.KOS_LIVE_DATA = {
       "shares": 37488455,
       "induty_code": "70113",
       "categories": [
-        "부동산·기타서비스"
+        "바이오·제약"
       ],
       "rank": 333
     },
@@ -6520,7 +6520,7 @@ window.KOS_LIVE_DATA = {
       "name": "지아이이노베이션",
       "name_en": "GI Innovation Inc.",
       "market": "코스닥",
-      "sector": "부동산·기타서비스",
+      "sector": "바이오·제약",
       "price": 13800,
       "change": -2.34,
       "volume": 496499,
@@ -6529,7 +6529,7 @@ window.KOS_LIVE_DATA = {
       "shares": 64270771,
       "induty_code": "70113",
       "categories": [
-        "부동산·기타서비스"
+        "바이오·제약"
       ],
       "rank": 362
     },
@@ -7350,7 +7350,7 @@ window.KOS_LIVE_DATA = {
       "name": "온코닉테라퓨틱스",
       "name_en": "Onconic Therapeutics Inc.",
       "market": "코스닥",
-      "sector": "부동산·기타서비스",
+      "sector": "바이오·제약",
       "price": 16670,
       "change": -4.14,
       "volume": 401035,
@@ -7359,7 +7359,7 @@ window.KOS_LIVE_DATA = {
       "shares": 45407840,
       "induty_code": "701",
       "categories": [
-        "부동산·기타서비스"
+        "바이오·제약"
       ],
       "rank": 408
     },
@@ -7781,7 +7781,7 @@ window.KOS_LIVE_DATA = {
       "name": "인벤티지랩",
       "name_en": "Inventage Lab Inc.",
       "market": "코스닥",
-      "sector": "부동산·기타서비스",
+      "sector": "바이오·제약",
       "price": 50900,
       "change": 2.41,
       "volume": 93496,
@@ -7790,7 +7790,7 @@ window.KOS_LIVE_DATA = {
       "shares": 13307708,
       "induty_code": "701",
       "categories": [
-        "부동산·기타서비스"
+        "바이오·제약"
       ],
       "rank": 432
     },
@@ -9923,7 +9923,7 @@ window.KOS_LIVE_DATA = {
       "name": "큐로셀",
       "name_en": "Curocell Inc.",
       "market": "코스닥",
-      "sector": "부동산·기타서비스",
+      "sector": "바이오·제약",
       "price": 30200,
       "change": 0.17,
       "volume": 68190,
@@ -9932,7 +9932,7 @@ window.KOS_LIVE_DATA = {
       "shares": 15225918,
       "induty_code": "70113",
       "categories": [
-        "부동산·기타서비스"
+        "바이오·제약"
       ],
       "rank": 551
     },
@@ -10085,7 +10085,7 @@ window.KOS_LIVE_DATA = {
       "name": "툴젠",
       "name_en": "ToolGen Incorporated",
       "market": "코스닥",
-      "sector": "부동산·기타서비스",
+      "sector": "바이오·제약",
       "price": 50000,
       "change": -6.02,
       "volume": 35033,
@@ -10094,7 +10094,7 @@ window.KOS_LIVE_DATA = {
       "shares": 8997629,
       "induty_code": "701",
       "categories": [
-        "부동산·기타서비스"
+        "바이오·제약"
       ],
       "rank": 560
     },
@@ -10139,7 +10139,7 @@ window.KOS_LIVE_DATA = {
       "name": "아이엠바이오로직스",
       "name_en": "IMBiologics Corp.",
       "market": "코스닥",
-      "sector": "부동산·기타서비스",
+      "sector": "바이오·제약",
       "price": 30000,
       "change": 4.53,
       "volume": 50011,
@@ -10148,7 +10148,7 @@ window.KOS_LIVE_DATA = {
       "shares": 14827449,
       "induty_code": "701",
       "categories": [
-        "부동산·기타서비스"
+        "바이오·제약"
       ],
       "rank": 563
     },
@@ -10591,7 +10591,7 @@ window.KOS_LIVE_DATA = {
       "name": "프로티나",
       "name_en": "PROTEINA CO.,LTD.",
       "market": "코스닥",
-      "sector": "부동산·기타서비스",
+      "sector": "바이오·제약",
       "price": 37500,
       "change": 4.02,
       "volume": 56676,
@@ -10600,7 +10600,7 @@ window.KOS_LIVE_DATA = {
       "shares": 11035208,
       "induty_code": "701",
       "categories": [
-        "부동산·기타서비스"
+        "바이오·제약"
       ],
       "rank": 588
     },
@@ -10681,7 +10681,7 @@ window.KOS_LIVE_DATA = {
       "name": "프레스티지바이오파마",
       "name_en": "Prestige BioPharma Limited",
       "market": "코스피",
-      "sector": "부동산·기타서비스",
+      "sector": "바이오·제약",
       "price": 6830,
       "change": -4.34,
       "volume": 87072,
@@ -10690,7 +10690,7 @@ window.KOS_LIVE_DATA = {
       "shares": 60096155,
       "induty_code": "70113",
       "categories": [
-        "부동산·기타서비스"
+        "바이오·제약"
       ],
       "rank": 593
     },
@@ -10735,7 +10735,7 @@ window.KOS_LIVE_DATA = {
       "name": "삼양바이오팜",
       "name_en": "",
       "market": "코스피",
-      "sector": "기타",
+      "sector": "바이오·제약",
       "price": 54500,
       "change": 5.01,
       "volume": 26240,
@@ -10743,7 +10743,7 @@ window.KOS_LIVE_DATA = {
       "mcap": 0.4053,
       "shares": 7435870,
       "categories": [
-        "기타"
+        "바이오·제약"
       ],
       "rank": 596
     },
@@ -10933,7 +10933,7 @@ window.KOS_LIVE_DATA = {
       "name": "인투셀",
       "name_en": "IntoCell, Inc.",
       "market": "코스닥",
-      "sector": "부동산·기타서비스",
+      "sector": "바이오·제약",
       "price": 26400,
       "change": -1.49,
       "volume": 45850,
@@ -10942,7 +10942,7 @@ window.KOS_LIVE_DATA = {
       "shares": 15021960,
       "induty_code": "70113",
       "categories": [
-        "부동산·기타서비스"
+        "바이오·제약"
       ],
       "rank": 607
     },
@@ -11203,7 +11203,7 @@ window.KOS_LIVE_DATA = {
       "name": "HLB제약",
       "name_en": "HLB PHARMACEUTICAL CO., LTD.",
       "market": "코스닥",
-      "sector": "부동산·기타서비스",
+      "sector": "바이오·제약",
       "price": 11600,
       "change": -0.09,
       "volume": 42096,
@@ -11212,7 +11212,7 @@ window.KOS_LIVE_DATA = {
       "shares": 32799356,
       "induty_code": "70111",
       "categories": [
-        "부동산·기타서비스"
+        "바이오·제약"
       ],
       "rank": 622
     },
@@ -11221,7 +11221,7 @@ window.KOS_LIVE_DATA = {
       "name": "페니트리움바이오",
       "name_en": "Penetrium Bioscience Inc.",
       "market": "코스닥",
-      "sector": "부동산·기타서비스",
+      "sector": "바이오·제약",
       "price": 6840,
       "change": 6.38,
       "volume": 1088336,
@@ -11230,7 +11230,7 @@ window.KOS_LIVE_DATA = {
       "shares": 55466253,
       "induty_code": "70113",
       "categories": [
-        "부동산·기타서비스"
+        "바이오·제약"
       ],
       "rank": 623
     },
@@ -11329,7 +11329,7 @@ window.KOS_LIVE_DATA = {
       "name": "신라젠",
       "name_en": "SillaJen, Inc.",
       "market": "코스닥",
-      "sector": "부동산·기타서비스",
+      "sector": "바이오·제약",
       "price": 2700,
       "change": -2.35,
       "volume": 740245,
@@ -11338,7 +11338,7 @@ window.KOS_LIVE_DATA = {
       "shares": 138553564,
       "induty_code": "70113",
       "categories": [
-        "부동산·기타서비스"
+        "바이오·제약"
       ],
       "rank": 629
     },
@@ -11653,7 +11653,7 @@ window.KOS_LIVE_DATA = {
       "name": "HEM파마",
       "name_en": "HEM Pharma Inc.",
       "market": "코스닥",
-      "sector": "부동산·기타서비스",
+      "sector": "바이오·제약",
       "price": 49250,
       "change": 5.01,
       "volume": 22812,
@@ -11662,7 +11662,7 @@ window.KOS_LIVE_DATA = {
       "shares": 7203187,
       "induty_code": "70111",
       "categories": [
-        "부동산·기타서비스"
+        "바이오·제약"
       ],
       "rank": 647
     },
@@ -12193,7 +12193,7 @@ window.KOS_LIVE_DATA = {
       "name": "이뮨온시아",
       "name_en": "ImmuneOncia Therapeutics, Inc.",
       "market": "코스닥",
-      "sector": "부동산·기타서비스",
+      "sector": "바이오·제약",
       "price": 4425,
       "change": -15.71,
       "volume": 1883495,
@@ -12202,7 +12202,7 @@ window.KOS_LIVE_DATA = {
       "shares": 74442069,
       "induty_code": "70113",
       "categories": [
-        "부동산·기타서비스"
+        "바이오·제약"
       ],
       "rank": 677
     },
@@ -12680,7 +12680,7 @@ window.KOS_LIVE_DATA = {
       "name": "큐라클",
       "name_en": "curacle co., ltd.",
       "market": "코스닥",
-      "sector": "부동산·기타서비스",
+      "sector": "바이오·제약",
       "price": 14240,
       "change": -0.97,
       "volume": 156353,
@@ -12689,7 +12689,7 @@ window.KOS_LIVE_DATA = {
       "shares": 22071992,
       "induty_code": "70113",
       "categories": [
-        "부동산·기타서비스"
+        "바이오·제약"
       ],
       "rank": 704
     },
@@ -12914,7 +12914,7 @@ window.KOS_LIVE_DATA = {
       "name": "지노믹트리",
       "name_en": "Genomictree Inc.",
       "market": "코스닥",
-      "sector": "부동산·기타서비스",
+      "sector": "바이오·제약",
       "price": 12280,
       "change": -0.08,
       "volume": 97081,
@@ -12923,7 +12923,7 @@ window.KOS_LIVE_DATA = {
       "shares": 24859202,
       "induty_code": "701",
       "categories": [
-        "부동산·기타서비스"
+        "바이오·제약"
       ],
       "rank": 717
     },
@@ -13202,7 +13202,7 @@ window.KOS_LIVE_DATA = {
       "name": "카나프테라퓨틱스",
       "name_en": "",
       "market": "코스닥",
-      "sector": "기타",
+      "sector": "바이오·제약",
       "price": 22300,
       "change": 1.59,
       "volume": 65846,
@@ -13210,7 +13210,7 @@ window.KOS_LIVE_DATA = {
       "mcap": 0.2947,
       "shares": 13216780,
       "categories": [
-        "기타"
+        "바이오·제약"
       ],
       "rank": 733
     },
@@ -14265,7 +14265,7 @@ window.KOS_LIVE_DATA = {
       "name": "쓰리빌리언",
       "name_en": "3billion Inc.",
       "market": "코스닥",
-      "sector": "부동산·기타서비스",
+      "sector": "바이오·제약",
       "price": 8420,
       "change": 0.24,
       "volume": 137921,
@@ -14274,7 +14274,7 @@ window.KOS_LIVE_DATA = {
       "shares": 31822553,
       "induty_code": "701",
       "categories": [
-        "부동산·기타서비스"
+        "바이오·제약"
       ],
       "rank": 792
     },
@@ -14928,7 +14928,7 @@ window.KOS_LIVE_DATA = {
       "name": "헬릭스미스",
       "name_en": "Helixmith Co., Ltd",
       "market": "코스닥",
-      "sector": "부동산·기타서비스",
+      "sector": "바이오·제약",
       "price": 5350,
       "change": 3.08,
       "volume": 570337,
@@ -14937,7 +14937,7 @@ window.KOS_LIVE_DATA = {
       "shares": 46092797,
       "induty_code": "70113",
       "categories": [
-        "부동산·기타서비스"
+        "바이오·제약"
       ],
       "rank": 829
     },
@@ -15504,7 +15504,7 @@ window.KOS_LIVE_DATA = {
       "name": "와이바이오로직스",
       "name_en": "Y-Biologics, Inc",
       "market": "코스닥",
-      "sector": "부동산·기타서비스",
+      "sector": "바이오·제약",
       "price": 15330,
       "change": -4.49,
       "volume": 116994,
@@ -15513,7 +15513,7 @@ window.KOS_LIVE_DATA = {
       "shares": 15366681,
       "induty_code": "70113",
       "categories": [
-        "부동산·기타서비스"
+        "바이오·제약"
       ],
       "rank": 861
     },
@@ -17286,7 +17286,7 @@ window.KOS_LIVE_DATA = {
       "name": "바이젠셀",
       "name_en": "ViGenCell Inc.",
       "market": "코스닥",
-      "sector": "부동산·기타서비스",
+      "sector": "바이오·제약",
       "price": 9780,
       "change": -2.2,
       "volume": 463098,
@@ -17295,7 +17295,7 @@ window.KOS_LIVE_DATA = {
       "shares": 20499260,
       "induty_code": "701",
       "categories": [
-        "부동산·기타서비스"
+        "바이오·제약"
       ],
       "rank": 960
     },
@@ -18079,7 +18079,7 @@ window.KOS_LIVE_DATA = {
       "name": "티움바이오",
       "name_en": "TiumBio Co., Ltd.",
       "market": "코스닥",
-      "sector": "부동산·기타서비스",
+      "sector": "바이오·제약",
       "price": 6210,
       "change": 0.16,
       "volume": 208917,
@@ -18088,7 +18088,7 @@ window.KOS_LIVE_DATA = {
       "shares": 30038475,
       "induty_code": "70113",
       "categories": [
-        "부동산·기타서비스"
+        "바이오·제약"
       ],
       "rank": 1004
     },
@@ -18853,7 +18853,7 @@ window.KOS_LIVE_DATA = {
       "name": "에이비온",
       "name_en": "ABION Inc.",
       "market": "코스닥",
-      "sector": "부동산·기타서비스",
+      "sector": "바이오·제약",
       "price": 1919,
       "change": 5.21,
       "volume": 469117,
@@ -18862,7 +18862,7 @@ window.KOS_LIVE_DATA = {
       "shares": 90101304,
       "induty_code": "70113",
       "categories": [
-        "부동산·기타서비스"
+        "바이오·제약"
       ],
       "rank": 1047
     },
@@ -19051,7 +19051,7 @@ window.KOS_LIVE_DATA = {
       "name": "엔솔바이오사이언스",
       "name_en": "Ensol Biosciences Inc.",
       "market": "코넥스",
-      "sector": "부동산·기타서비스",
+      "sector": "바이오·제약",
       "price": 12250,
       "change": 8.5,
       "volume": 3795,
@@ -19060,7 +19060,7 @@ window.KOS_LIVE_DATA = {
       "shares": 13889073,
       "induty_code": "70113",
       "categories": [
-        "부동산·기타서비스"
+        "바이오·제약"
       ],
       "rank": 1058
     },
@@ -19718,7 +19718,7 @@ window.KOS_LIVE_DATA = {
       "name": "제넥신",
       "name_en": "Genexine, Inc.",
       "market": "코스닥",
-      "sector": "부동산·기타서비스",
+      "sector": "바이오·제약",
       "price": 3490,
       "change": -0.14,
       "volume": 157218,
@@ -19727,7 +19727,7 @@ window.KOS_LIVE_DATA = {
       "shares": 45540494,
       "induty_code": "70113",
       "categories": [
-        "부동산·기타서비스"
+        "바이오·제약"
       ],
       "rank": 1095
     },
@@ -20545,7 +20545,7 @@ window.KOS_LIVE_DATA = {
       "name": "압타바이오",
       "name_en": "Aptabio Therapeutics Inc.",
       "market": "코스닥",
-      "sector": "부동산·기타서비스",
+      "sector": "바이오·제약",
       "price": 5310,
       "change": -0.93,
       "volume": 86441,
@@ -20554,7 +20554,7 @@ window.KOS_LIVE_DATA = {
       "shares": 28093405,
       "induty_code": "70113",
       "categories": [
-        "부동산·기타서비스"
+        "바이오·제약"
       ],
       "rank": 1141
     },
@@ -21857,7 +21857,7 @@ window.KOS_LIVE_DATA = {
       "name": "지씨지놈",
       "name_en": "GC Genome Corporation",
       "market": "코스닥",
-      "sector": "부동산·기타서비스",
+      "sector": "바이오·제약",
       "price": 5560,
       "change": -0.36,
       "volume": 89854,
@@ -21866,7 +21866,7 @@ window.KOS_LIVE_DATA = {
       "shares": 23650793,
       "induty_code": "739",
       "categories": [
-        "부동산·기타서비스"
+        "바이오·제약"
       ],
       "rank": 1214
     },
@@ -22597,7 +22597,7 @@ window.KOS_LIVE_DATA = {
       "name": "박셀바이오",
       "name_en": "Vaxcell-Bio Therapeutics",
       "market": "코스닥",
-      "sector": "부동산·기타서비스",
+      "sector": "바이오·제약",
       "price": 5380,
       "change": 0.56,
       "volume": 213247,
@@ -22606,7 +22606,7 @@ window.KOS_LIVE_DATA = {
       "shares": 23257345,
       "induty_code": "70113",
       "categories": [
-        "부동산·기타서비스"
+        "바이오·제약"
       ],
       "rank": 1255
     },
@@ -23191,7 +23191,7 @@ window.KOS_LIVE_DATA = {
       "name": "제일파마홀딩스",
       "name_en": "JEIL PHARMA HOLDINGS INC.",
       "market": "코스피",
-      "sector": "부동산·기타서비스",
+      "sector": "바이오·제약",
       "price": 7430,
       "change": 0.54,
       "volume": 5146,
@@ -23200,7 +23200,7 @@ window.KOS_LIVE_DATA = {
       "shares": 15973355,
       "induty_code": "715",
       "categories": [
-        "부동산·기타서비스"
+        "바이오·제약"
       ],
       "rank": 1288
     },
@@ -23497,7 +23497,7 @@ window.KOS_LIVE_DATA = {
       "name": "메드팩토",
       "name_en": "MedPacto, Inc.",
       "market": "코스닥",
-      "sector": "부동산·기타서비스",
+      "sector": "바이오·제약",
       "price": 3390,
       "change": -2.16,
       "volume": 132397,
@@ -23506,7 +23506,7 @@ window.KOS_LIVE_DATA = {
       "shares": 34275121,
       "induty_code": "70113",
       "categories": [
-        "부동산·기타서비스"
+        "바이오·제약"
       ],
       "rank": 1305
     },
@@ -23804,7 +23804,7 @@ window.KOS_LIVE_DATA = {
       "name": "NH농우바이오",
       "name_en": "NH NONGWOOBIO CO., LTD.",
       "market": "코스닥",
-      "sector": "기타",
+      "sector": "바이오·제약",
       "price": 7050,
       "change": -0.42,
       "volume": 27396,
@@ -23813,7 +23813,7 @@ window.KOS_LIVE_DATA = {
       "shares": 16030561,
       "induty_code": "01123",
       "categories": [
-        "기타"
+        "바이오·제약"
       ],
       "rank": 1322
     },
@@ -24236,7 +24236,7 @@ window.KOS_LIVE_DATA = {
       "name": "지니너스",
       "name_en": "GENINUS Inc.",
       "market": "코스닥",
-      "sector": "부동산·기타서비스",
+      "sector": "바이오·제약",
       "price": 3265,
       "change": -4.95,
       "volume": 251495,
@@ -24245,7 +24245,7 @@ window.KOS_LIVE_DATA = {
       "shares": 33588445,
       "induty_code": "70113",
       "categories": [
-        "부동산·기타서비스"
+        "바이오·제약"
       ],
       "rank": 1346
     },
@@ -24542,7 +24542,7 @@ window.KOS_LIVE_DATA = {
       "name": "드림씨아이에스",
       "name_en": "DreamCIS INC.",
       "market": "코스닥",
-      "sector": "부동산·기타서비스",
+      "sector": "바이오·제약",
       "price": 4330,
       "change": -3.88,
       "volume": 279264,
@@ -24551,7 +24551,7 @@ window.KOS_LIVE_DATA = {
       "shares": 24600444,
       "induty_code": "70113",
       "categories": [
-        "부동산·기타서비스"
+        "바이오·제약"
       ],
       "rank": 1363
     },
@@ -24974,7 +24974,7 @@ window.KOS_LIVE_DATA = {
       "name": "노브메타파마",
       "name_en": "NovMetaPharma Co., Ltd.",
       "market": "코넥스",
-      "sector": "부동산·기타서비스",
+      "sector": "바이오·제약",
       "price": 7950,
       "change": -4.22,
       "volume": 5431,
@@ -24983,7 +24983,7 @@ window.KOS_LIVE_DATA = {
       "shares": 12841554,
       "induty_code": "70113",
       "categories": [
-        "부동산·기타서비스"
+        "바이오·제약"
       ],
       "rank": 1387
     },
@@ -25207,7 +25207,7 @@ window.KOS_LIVE_DATA = {
       "name": "싸이토젠",
       "name_en": "Cytogen, Inc.",
       "market": "코스닥",
-      "sector": "부동산·기타서비스",
+      "sector": "바이오·제약",
       "price": 4340,
       "change": 9.18,
       "volume": 174436,
@@ -25216,7 +25216,7 @@ window.KOS_LIVE_DATA = {
       "shares": 23129547,
       "induty_code": "70113",
       "categories": [
-        "부동산·기타서비스"
+        "바이오·제약"
       ],
       "rank": 1400
     },
@@ -26937,7 +26937,7 @@ window.KOS_LIVE_DATA = {
       "name": "오가노이드사이언스",
       "name_en": "ORGANOIDSCIENCES LTD.",
       "market": "코스닥",
-      "sector": "부동산·기타서비스",
+      "sector": "바이오·제약",
       "price": 13350,
       "change": -3.19,
       "volume": 42296,
@@ -26946,7 +26946,7 @@ window.KOS_LIVE_DATA = {
       "shares": 6585760,
       "induty_code": "70129",
       "categories": [
-        "부동산·기타서비스"
+        "바이오·제약"
       ],
       "rank": 1496
     },
@@ -27513,7 +27513,7 @@ window.KOS_LIVE_DATA = {
       "name": "셀리드",
       "name_en": "Cellid Co., Ltd.",
       "market": "코스닥",
-      "sector": "부동산·기타서비스",
+      "sector": "바이오·제약",
       "price": 2855,
       "change": 1.96,
       "volume": 183439,
@@ -27522,7 +27522,7 @@ window.KOS_LIVE_DATA = {
       "shares": 29502977,
       "induty_code": "701",
       "categories": [
-        "부동산·기타서비스"
+        "바이오·제약"
       ],
       "rank": 1528
     },
@@ -27621,7 +27621,7 @@ window.KOS_LIVE_DATA = {
       "name": "네오이뮨텍",
       "name_en": "NeoImmuneTech, Inc.",
       "market": "코스닥",
-      "sector": "부동산·기타서비스",
+      "sector": "바이오·제약",
       "price": 501,
       "change": 0.0,
       "volume": 0,
@@ -27630,7 +27630,7 @@ window.KOS_LIVE_DATA = {
       "shares": 167639400,
       "induty_code": "70130",
       "categories": [
-        "부동산·기타서비스"
+        "바이오·제약"
       ],
       "rank": 1534
     },
@@ -28072,7 +28072,7 @@ window.KOS_LIVE_DATA = {
       "name": "파로스아이바이오",
       "name_en": "Pharos iBio Co., Ltd.",
       "market": "코스닥",
-      "sector": "부동산·기타서비스",
+      "sector": "바이오·제약",
       "price": 6300,
       "change": 3.96,
       "volume": 58491,
@@ -28081,7 +28081,7 @@ window.KOS_LIVE_DATA = {
       "shares": 12945932,
       "induty_code": "70113",
       "categories": [
-        "부동산·기타서비스"
+        "바이오·제약"
       ],
       "rank": 1559
     },
@@ -29228,7 +29228,7 @@ window.KOS_LIVE_DATA = {
       "name": "내츄럴엔도텍",
       "name_en": "Naturalendo Tech Co., Ltd",
       "market": "코스닥",
-      "sector": "부동산·기타서비스",
+      "sector": "바이오·제약",
       "price": 2370,
       "change": 0.85,
       "volume": 29383,
@@ -29237,7 +29237,7 @@ window.KOS_LIVE_DATA = {
       "shares": 31754900,
       "induty_code": "70111",
       "categories": [
-        "부동산·기타서비스"
+        "바이오·제약"
       ],
       "rank": 1623
     },
@@ -29822,7 +29822,7 @@ window.KOS_LIVE_DATA = {
       "name": "CG인바이츠",
       "name_en": "CG Invites Co., Ltd.",
       "market": "코스닥",
-      "sector": "부동산·기타서비스",
+      "sector": "바이오·제약",
       "price": 940,
       "change": -5.24,
       "volume": 269544,
@@ -29831,7 +29831,7 @@ window.KOS_LIVE_DATA = {
       "shares": 76894182,
       "induty_code": "70113",
       "categories": [
-        "부동산·기타서비스"
+        "바이오·제약"
       ],
       "rank": 1656
     },
@@ -30110,7 +30110,7 @@ window.KOS_LIVE_DATA = {
       "name": "아리바이오랩",
       "name_en": "ARIBIOLAB",
       "market": "코스닥",
-      "sector": "부동산·기타서비스",
+      "sector": "바이오·제약",
       "price": 2650,
       "change": -4.68,
       "volume": 943829,
@@ -30119,7 +30119,7 @@ window.KOS_LIVE_DATA = {
       "shares": 26912996,
       "induty_code": "70113",
       "categories": [
-        "부동산·기타서비스"
+        "바이오·제약"
       ],
       "rank": 1672
     },
@@ -30398,7 +30398,7 @@ window.KOS_LIVE_DATA = {
       "name": "고바이오랩",
       "name_en": "KoBioLabs, Inc.",
       "market": "코스닥",
-      "sector": "부동산·기타서비스",
+      "sector": "바이오·제약",
       "price": 3610,
       "change": -4.75,
       "volume": 72956,
@@ -30407,7 +30407,7 @@ window.KOS_LIVE_DATA = {
       "shares": 19418889,
       "induty_code": "70113",
       "categories": [
-        "부동산·기타서비스"
+        "바이오·제약"
       ],
       "rank": 1688
     },
@@ -31065,7 +31065,7 @@ window.KOS_LIVE_DATA = {
       "name": "랩지노믹스",
       "name_en": "LabGenomics. Co., Ltd.",
       "market": "코스닥",
-      "sector": "부동산·기타서비스",
+      "sector": "바이오·제약",
       "price": 896,
       "change": -0.11,
       "volume": 497677,
@@ -31074,7 +31074,7 @@ window.KOS_LIVE_DATA = {
       "shares": 74239990,
       "induty_code": "70113",
       "categories": [
-        "부동산·기타서비스"
+        "바이오·제약"
       ],
       "rank": 1725
     },
@@ -31299,7 +31299,7 @@ window.KOS_LIVE_DATA = {
       "name": "아이엠비디엑스",
       "name_en": "IMBdx, Inc.",
       "market": "코스닥",
-      "sector": "부동산·기타서비스",
+      "sector": "바이오·제약",
       "price": 4560,
       "change": 0.66,
       "volume": 22270,
@@ -31308,7 +31308,7 @@ window.KOS_LIVE_DATA = {
       "shares": 14334517,
       "induty_code": "701",
       "categories": [
-        "부동산·기타서비스"
+        "바이오·제약"
       ],
       "rank": 1738
     },
@@ -31407,7 +31407,7 @@ window.KOS_LIVE_DATA = {
       "name": "온코크로스",
       "name_en": "Oncocross Co.,Ltd.",
       "market": "코스닥",
-      "sector": "부동산·기타서비스",
+      "sector": "바이오·제약",
       "price": 5350,
       "change": -1.65,
       "volume": 80433,
@@ -31416,7 +31416,7 @@ window.KOS_LIVE_DATA = {
       "shares": 12195957,
       "induty_code": "70111",
       "categories": [
-        "부동산·기타서비스"
+        "바이오·제약"
       ],
       "rank": 1744
     },
@@ -31443,7 +31443,7 @@ window.KOS_LIVE_DATA = {
       "name": "아이진",
       "name_en": "EyeGene,Inc",
       "market": "코스닥",
-      "sector": "부동산·기타서비스",
+      "sector": "바이오·제약",
       "price": 1505,
       "change": -1.18,
       "volume": 395702,
@@ -31452,7 +31452,7 @@ window.KOS_LIVE_DATA = {
       "shares": 43229784,
       "induty_code": "70113",
       "categories": [
-        "부동산·기타서비스"
+        "바이오·제약"
       ],
       "rank": 1746
     },
@@ -31839,7 +31839,7 @@ window.KOS_LIVE_DATA = {
       "name": "CJ 바이오사이언스",
       "name_en": "CJ Bioscience",
       "market": "코스닥",
-      "sector": "부동산·기타서비스",
+      "sector": "바이오·제약",
       "price": 4825,
       "change": -3.4,
       "volume": 14769,
@@ -31848,7 +31848,7 @@ window.KOS_LIVE_DATA = {
       "shares": 13065462,
       "induty_code": "701",
       "categories": [
-        "부동산·기타서비스"
+        "바이오·제약"
       ],
       "rank": 1768
     },
@@ -32343,7 +32343,7 @@ window.KOS_LIVE_DATA = {
       "name": "프로젠",
       "name_en": "ProGen, Co,, LTD.",
       "market": "코넥스",
-      "sector": "부동산·기타서비스",
+      "sector": "바이오·제약",
       "price": 3985,
       "change": 5.7,
       "volume": 5817,
@@ -32352,7 +32352,7 @@ window.KOS_LIVE_DATA = {
       "shares": 15375079,
       "induty_code": "70113",
       "categories": [
-        "부동산·기타서비스"
+        "바이오·제약"
       ],
       "rank": 1796
     },
@@ -33099,7 +33099,7 @@ window.KOS_LIVE_DATA = {
       "name": "EDGC",
       "name_en": "Eone Diagnomics Genome Center Co., Ltd.",
       "market": "코스닥",
-      "sector": "부동산·기타서비스",
+      "sector": "바이오·제약",
       "price": 415,
       "change": 0.0,
       "volume": 0,
@@ -33108,7 +33108,7 @@ window.KOS_LIVE_DATA = {
       "shares": 138493951,
       "induty_code": "70113",
       "categories": [
-        "부동산·기타서비스"
+        "바이오·제약"
       ],
       "rank": 1838
     },
@@ -33261,7 +33261,7 @@ window.KOS_LIVE_DATA = {
       "name": "큐라티스",
       "name_en": "Quratis Inc.",
       "market": "코스닥",
-      "sector": "부동산·기타서비스",
+      "sector": "바이오·제약",
       "price": 496,
       "change": -3.13,
       "volume": 140241,
@@ -33270,7 +33270,7 @@ window.KOS_LIVE_DATA = {
       "shares": 115449781,
       "induty_code": "70113",
       "categories": [
-        "부동산·기타서비스"
+        "바이오·제약"
       ],
       "rank": 1847
     },
@@ -33818,7 +33818,7 @@ window.KOS_LIVE_DATA = {
       "name": "압타머사이언스",
       "name_en": "Aptamer Sciences Inc",
       "market": "코스닥",
-      "sector": "부동산·기타서비스",
+      "sector": "바이오·제약",
       "price": 892,
       "change": -3.25,
       "volume": 348446,
@@ -33827,7 +33827,7 @@ window.KOS_LIVE_DATA = {
       "shares": 61039242,
       "induty_code": "701",
       "categories": [
-        "부동산·기타서비스"
+        "바이오·제약"
       ],
       "rank": 1878
     },
@@ -33890,7 +33890,7 @@ window.KOS_LIVE_DATA = {
       "name": "HLB바이오스텝",
       "name_en": "HLB bioStep Co.,Ltd.",
       "market": "코스닥",
-      "sector": "부동산·기타서비스",
+      "sector": "바이오·제약",
       "price": 3115,
       "change": -3.71,
       "volume": 80908,
@@ -33899,7 +33899,7 @@ window.KOS_LIVE_DATA = {
       "shares": 17432396,
       "induty_code": "70113",
       "categories": [
-        "부동산·기타서비스"
+        "바이오·제약"
       ],
       "rank": 1882
     },
@@ -36447,7 +36447,7 @@ window.KOS_LIVE_DATA = {
       "name": "제이피아이헬스케어",
       "name_en": "",
       "market": "코스닥",
-      "sector": "기타",
+      "sector": "바이오·제약",
       "price": 8680,
       "change": 2.84,
       "volume": 14932,
@@ -36455,7 +36455,7 @@ window.KOS_LIVE_DATA = {
       "mcap": 0.0443,
       "shares": 5105400,
       "categories": [
-        "기타"
+        "바이오·제약"
       ],
       "rank": 2024
     },
@@ -36897,7 +36897,7 @@ window.KOS_LIVE_DATA = {
       "name": "우정바이오",
       "name_en": "WOOJUNG BIO, Inc.",
       "market": "코스닥",
-      "sector": "부동산·기타서비스",
+      "sector": "바이오·제약",
       "price": 2540,
       "change": 2.21,
       "volume": 68171,
@@ -36906,7 +36906,7 @@ window.KOS_LIVE_DATA = {
       "shares": 16829576,
       "induty_code": "701",
       "categories": [
-        "부동산·기타서비스"
+        "바이오·제약"
       ],
       "rank": 2049
     },
@@ -37239,7 +37239,7 @@ window.KOS_LIVE_DATA = {
       "name": "바이오톡스텍",
       "name_en": "BiotoxtechCo.,Ltd.",
       "market": "코스닥",
-      "sector": "부동산·기타서비스",
+      "sector": "바이오·제약",
       "price": 2585,
       "change": 2.99,
       "volume": 36638,
@@ -37248,7 +37248,7 @@ window.KOS_LIVE_DATA = {
       "shares": 15958247,
       "induty_code": "70113",
       "categories": [
-        "부동산·기타서비스"
+        "바이오·제약"
       ],
       "rank": 2068
     },
@@ -38913,7 +38913,7 @@ window.KOS_LIVE_DATA = {
       "name": "카이노스메드",
       "name_en": "KAINOS MEDICINE, INC.",
       "market": "코스닥",
-      "sector": "부동산·기타서비스",
+      "sector": "바이오·제약",
       "price": 1087,
       "change": 0.0,
       "volume": 0,
@@ -38922,7 +38922,7 @@ window.KOS_LIVE_DATA = {
       "shares": 33086953,
       "induty_code": "701",
       "categories": [
-        "부동산·기타서비스"
+        "바이오·제약"
       ],
       "rank": 2161
     },
@@ -39345,7 +39345,7 @@ window.KOS_LIVE_DATA = {
       "name": "진매트릭스",
       "name_en": "GENEMATRIX INC.",
       "market": "코스닥",
-      "sector": "부동산·기타서비스",
+      "sector": "바이오·제약",
       "price": 1698,
       "change": 2.17,
       "volume": 39700,
@@ -39354,7 +39354,7 @@ window.KOS_LIVE_DATA = {
       "shares": 20393640,
       "induty_code": "70113",
       "categories": [
-        "부동산·기타서비스"
+        "바이오·제약"
       ],
       "rank": 2185
     },
@@ -39363,7 +39363,7 @@ window.KOS_LIVE_DATA = {
       "name": "디티앤씨알오",
       "name_en": "DT&CRO CO., Ltd.",
       "market": "코스닥",
-      "sector": "부동산·기타서비스",
+      "sector": "바이오·제약",
       "price": 2700,
       "change": -13.04,
       "volume": 1105199,
@@ -39372,7 +39372,7 @@ window.KOS_LIVE_DATA = {
       "shares": 12784128,
       "induty_code": "70113",
       "categories": [
-        "부동산·기타서비스"
+        "바이오·제약"
       ],
       "rank": 2186
     },
@@ -39668,7 +39668,7 @@ window.KOS_LIVE_DATA = {
       "name": "에피바이오텍",
       "name_en": "Epi Biotech Co., Ltd.",
       "market": "코넥스",
-      "sector": "부동산·기타서비스",
+      "sector": "바이오·제약",
       "price": 14470,
       "change": 1.9,
       "volume": 445,
@@ -39677,7 +39677,7 @@ window.KOS_LIVE_DATA = {
       "shares": 2306879,
       "induty_code": "70113",
       "categories": [
-        "부동산·기타서비스"
+        "바이오·제약"
       ],
       "rank": 2203
     },
@@ -40874,7 +40874,7 @@ window.KOS_LIVE_DATA = {
       "name": "에스엘에스바이오",
       "name_en": "SLSBio(Specialty Lab Solution Bio) Co., Ltd",
       "market": "코스닥",
-      "sector": "부동산·기타서비스",
+      "sector": "바이오·제약",
       "price": 1969,
       "change": 0.0,
       "volume": 0,
@@ -40883,7 +40883,7 @@ window.KOS_LIVE_DATA = {
       "shares": 15348206,
       "induty_code": "739",
       "categories": [
-        "부동산·기타서비스"
+        "바이오·제약"
       ],
       "rank": 2270
     },
@@ -41576,7 +41576,7 @@ window.KOS_LIVE_DATA = {
       "name": "모아라이프플러스",
       "name_en": "MOA Life Plus Co. Ltd.",
       "market": "코스닥",
-      "sector": "부동산·기타서비스",
+      "sector": "바이오·제약",
       "price": 676,
       "change": -4.38,
       "volume": 129589,
@@ -41585,7 +41585,7 @@ window.KOS_LIVE_DATA = {
       "shares": 42166980,
       "induty_code": "701",
       "categories": [
-        "부동산·기타서비스"
+        "바이오·제약"
       ],
       "rank": 2309
     },
@@ -42098,7 +42098,7 @@ window.KOS_LIVE_DATA = {
       "name": "엔젠바이오",
       "name_en": "NGeneBio Co., Ltd.",
       "market": "코스닥",
-      "sector": "부동산·기타서비스",
+      "sector": "바이오·제약",
       "price": 1007,
       "change": -0.49,
       "volume": 107206,
@@ -42107,7 +42107,7 @@ window.KOS_LIVE_DATA = {
       "shares": 26809750,
       "induty_code": "739",
       "categories": [
-        "부동산·기타서비스"
+        "바이오·제약"
       ],
       "rank": 2338
     },
@@ -44151,7 +44151,7 @@ window.KOS_LIVE_DATA = {
       "name": "인바이츠바이오코아",
       "name_en": "INVITES BIOCORE CO., LTD",
       "market": "코넥스",
-      "sector": "부동산·기타서비스",
+      "sector": "바이오·제약",
       "price": 2840,
       "change": -1.9,
       "volume": 1408,
@@ -44160,7 +44160,7 @@ window.KOS_LIVE_DATA = {
       "shares": 7711315,
       "induty_code": "70113",
       "categories": [
-        "부동산·기타서비스"
+        "바이오·제약"
       ],
       "rank": 2452
     },
@@ -44583,7 +44583,7 @@ window.KOS_LIVE_DATA = {
       "name": "무진메디",
       "name_en": "Moogene Medi Co., Ltd.",
       "market": "코넥스",
-      "sector": "부동산·기타서비스",
+      "sector": "바이오·제약",
       "price": 2085,
       "change": -0.24,
       "volume": 7337,
@@ -44592,7 +44592,7 @@ window.KOS_LIVE_DATA = {
       "shares": 10085689,
       "induty_code": "70113",
       "categories": [
-        "부동산·기타서비스"
+        "바이오·제약"
       ],
       "rank": 2476
     },
@@ -45449,7 +45449,7 @@ window.KOS_LIVE_DATA = {
       "name": "플럼라인생명과학",
       "name_en": "Plumbline Life Sciences, Inc.",
       "market": "코넥스",
-      "sector": "부동산·기타서비스",
+      "sector": "바이오·제약",
       "price": 4635,
       "change": 0.0,
       "volume": 0,
@@ -45458,7 +45458,7 @@ window.KOS_LIVE_DATA = {
       "shares": 4032932,
       "induty_code": "701",
       "categories": [
-        "부동산·기타서비스"
+        "바이오·제약"
       ],
       "rank": 2524
     },
@@ -46384,7 +46384,7 @@ window.KOS_LIVE_DATA = {
       "name": "바이오인프라",
       "name_en": "BioInfra Co.,Ltd.",
       "market": "코스닥",
-      "sector": "부동산·기타서비스",
+      "sector": "바이오·제약",
       "price": 3160,
       "change": -0.78,
       "volume": 8987,
@@ -46393,7 +46393,7 @@ window.KOS_LIVE_DATA = {
       "shares": 4864367,
       "induty_code": "70113",
       "categories": [
-        "부동산·기타서비스"
+        "바이오·제약"
       ],
       "rank": 2576
     },
@@ -47465,7 +47465,7 @@ window.KOS_LIVE_DATA = {
       "name": "메디젠휴먼케어",
       "name_en": "Medizen Humancare Inc Co., Ltd",
       "market": "코넥스",
-      "sector": "부동산·기타서비스",
+      "sector": "바이오·제약",
       "price": 3000,
       "change": 0.0,
       "volume": 1,
@@ -47474,7 +47474,7 @@ window.KOS_LIVE_DATA = {
       "shares": 3014647,
       "induty_code": "70113",
       "categories": [
-        "부동산·기타서비스"
+        "바이오·제약"
       ],
       "rank": 2636
     },
@@ -47519,7 +47519,7 @@ window.KOS_LIVE_DATA = {
       "name": "퓨쳐메디신",
       "name_en": "Future Medicine  Co., Ltd.",
       "market": "코넥스",
-      "sector": "부동산·기타서비스",
+      "sector": "바이오·제약",
       "price": 790,
       "change": 3.4,
       "volume": 573,
@@ -47528,7 +47528,7 @@ window.KOS_LIVE_DATA = {
       "shares": 10533205,
       "induty_code": "70113",
       "categories": [
-        "부동산·기타서비스"
+        "바이오·제약"
       ],
       "rank": 2639
     },
@@ -47717,7 +47717,7 @@ window.KOS_LIVE_DATA = {
       "name": "안지오랩",
       "name_en": "AngioLab, Inc.",
       "market": "코넥스",
-      "sector": "부동산·기타서비스",
+      "sector": "바이오·제약",
       "price": 1895,
       "change": 5.28,
       "volume": 37,
@@ -47726,7 +47726,7 @@ window.KOS_LIVE_DATA = {
       "shares": 3491870,
       "induty_code": "70113",
       "categories": [
-        "부동산·기타서비스"
+        "바이오·제약"
       ],
       "rank": 2650
     },
@@ -47879,7 +47879,7 @@ window.KOS_LIVE_DATA = {
       "name": "크로넥스",
       "name_en": "CRONEX.CO.,LTD",
       "market": "코넥스",
-      "sector": "부동산·기타서비스",
+      "sector": "바이오·제약",
       "price": 889,
       "change": 5.21,
       "volume": 53,
@@ -47888,7 +47888,7 @@ window.KOS_LIVE_DATA = {
       "shares": 6232444,
       "induty_code": "70113",
       "categories": [
-        "부동산·기타서비스"
+        "바이오·제약"
       ],
       "rank": 2659
     },
@@ -48167,7 +48167,7 @@ window.KOS_LIVE_DATA = {
       "name": "바이오인프라생명과학",
       "name_en": "BioInfra Life Science Inc.",
       "market": "코넥스",
-      "sector": "부동산·기타서비스",
+      "sector": "바이오·제약",
       "price": 147,
       "change": 13.95,
       "volume": 20377,
@@ -48176,7 +48176,7 @@ window.KOS_LIVE_DATA = {
       "shares": 27866019,
       "induty_code": "70113",
       "categories": [
-        "부동산·기타서비스"
+        "바이오·제약"
       ],
       "rank": 2675
     },
