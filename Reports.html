@@ -598,6 +598,8 @@ function repaintSort(){
 function getList(){
   const t=state.q.trim().toLowerCase();
   let l=REPORTS.filter(r=>{
+    const R=window.KOS_REPORTS&&KOS_REPORTS.reports&&KOS_REPORTS.reports[r.ticker];
+    if(!R)return false;  // 리포트가 있는 종목만 (전 종목 universe 중)
     if(state.sector!=='전체'&&!rcats(r).includes(state.sector))return false;
     if(t&&!(r.name.toLowerCase().includes(t)||r.ticker.includes(t)||r.sector.toLowerCase().includes(t)||T(r.name).toLowerCase().includes(t)||T(r.sector).toLowerCase().includes(t)))return false;
     return true;
