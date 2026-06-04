@@ -1,6 +1,6 @@
 // KOS ai — 자동 생성 데이터 파일. 직접 수정하지 마세요.
 window.KOS_LIVE_DATA = {
-  "lastUpdated": "2026-06-04 22:18",
+  "lastUpdated": "2026-06-04 22:31",
   "dataDate": "20260604",
   "stocks": [
     {
@@ -706,7 +706,7 @@ window.KOS_LIVE_DATA = {
       "name": "현대오토에버",
       "name_en": "HYUNDAI AUTOEVER CORPORATION.",
       "market": "코스피",
-      "sector": "게임",
+      "sector": "IT·소프트웨어",
       "price": 839000,
       "change": -6.57,
       "volume": 122019,
@@ -715,7 +715,7 @@ window.KOS_LIVE_DATA = {
       "shares": 27423982,
       "induty_code": "582",
       "categories": [
-        "게임"
+        "IT·소프트웨어"
       ],
       "rank": 39
     },
@@ -1958,7 +1958,7 @@ window.KOS_LIVE_DATA = {
       "name": "NC",
       "name_en": "NC Corporation",
       "market": "코스피",
-      "sector": "게임",
+      "sector": "IT·소프트웨어",
       "price": 289500,
       "change": -14.35,
       "volume": 298337,
@@ -1967,7 +1967,7 @@ window.KOS_LIVE_DATA = {
       "shares": 21544022,
       "induty_code": "582",
       "categories": [
-        "게임"
+        "IT·소프트웨어"
       ],
       "rank": 108
     },
@@ -2291,7 +2291,8 @@ window.KOS_LIVE_DATA = {
       "shares": 14657028,
       "induty_code": "29299",
       "categories": [
-        "기계·장비"
+        "기계·장비",
+        "로봇"
       ],
       "rank": 126
     },
@@ -4532,7 +4533,7 @@ window.KOS_LIVE_DATA = {
       "name": "스피어",
       "name_en": "Sphere Corp.",
       "market": "코스닥",
-      "sector": "게임",
+      "sector": "IT·소프트웨어",
       "price": 33950,
       "change": 4.46,
       "volume": 929859,
@@ -4541,7 +4542,7 @@ window.KOS_LIVE_DATA = {
       "shares": 50814305,
       "induty_code": "58222",
       "categories": [
-        "게임"
+        "IT·소프트웨어"
       ],
       "rank": 251
     },
@@ -5171,7 +5172,8 @@ window.KOS_LIVE_DATA = {
       "shares": 9750000,
       "induty_code": "29280",
       "categories": [
-        "기계·장비"
+        "기계·장비",
+        "로봇"
       ],
       "rank": 286
     },
@@ -5441,7 +5443,8 @@ window.KOS_LIVE_DATA = {
       "shares": 119457197,
       "induty_code": "29280",
       "categories": [
-        "기계·장비"
+        "기계·장비",
+        "로봇"
       ],
       "rank": 301
     },
@@ -5648,7 +5651,7 @@ window.KOS_LIVE_DATA = {
       "name": "클로봇",
       "name_en": "CLOBOT Co., Ltd.",
       "market": "코스닥",
-      "sector": "게임",
+      "sector": "IT·소프트웨어",
       "price": 46450,
       "change": -2.0,
       "volume": 475869,
@@ -5657,7 +5660,8 @@ window.KOS_LIVE_DATA = {
       "shares": 25459239,
       "induty_code": "58221",
       "categories": [
-        "게임"
+        "IT·소프트웨어",
+        "로봇"
       ],
       "rank": 313
     },
@@ -5693,7 +5697,8 @@ window.KOS_LIVE_DATA = {
       "shares": 11781345,
       "induty_code": "292",
       "categories": [
-        "기계·장비"
+        "기계·장비",
+        "로봇"
       ],
       "rank": 315
     },
@@ -5792,7 +5797,7 @@ window.KOS_LIVE_DATA = {
       "name": "루닛",
       "name_en": "Lunit Inc.",
       "market": "코스닥",
-      "sector": "게임",
+      "sector": "IT·소프트웨어",
       "price": 15240,
       "change": 1.2,
       "volume": 378951,
@@ -5801,7 +5806,7 @@ window.KOS_LIVE_DATA = {
       "shares": 74382636,
       "induty_code": "58222",
       "categories": [
-        "게임"
+        "IT·소프트웨어"
       ],
       "rank": 321
     },
@@ -6305,7 +6310,8 @@ window.KOS_LIVE_DATA = {
       "shares": 32450626,
       "induty_code": "27199",
       "categories": [
-        "전자·부품"
+        "전자·부품",
+        "로봇"
       ],
       "rank": 349
     },
@@ -6782,7 +6788,7 @@ window.KOS_LIVE_DATA = {
       "name": "노타",
       "name_en": "Nota Inc.",
       "market": "코스닥",
-      "sector": "게임",
+      "sector": "IT·소프트웨어",
       "price": 39100,
       "change": 12.03,
       "volume": 1459689,
@@ -6791,7 +6797,7 @@ window.KOS_LIVE_DATA = {
       "shares": 21346230,
       "induty_code": "582",
       "categories": [
-        "게임"
+        "IT·소프트웨어"
       ],
       "rank": 376
     },
@@ -7025,7 +7031,8 @@ window.KOS_LIVE_DATA = {
       "shares": 14592545,
       "induty_code": "292",
       "categories": [
-        "기계·장비"
+        "기계·장비",
+        "로봇"
       ],
       "rank": 389
     },
@@ -7151,7 +7158,8 @@ window.KOS_LIVE_DATA = {
       "shares": 37512152,
       "induty_code": "292",
       "categories": [
-        "기계·장비"
+        "기계·장비",
+        "로봇"
       ],
       "rank": 396
     },
@@ -7520,7 +7528,7 @@ window.KOS_LIVE_DATA = {
       "name": "코나아이",
       "name_en": "KONA I CO., LTD.",
       "market": "코스닥",
-      "sector": "게임",
+      "sector": "IT·소프트웨어",
       "price": 50100,
       "change": -9.73,
       "volume": 220739,
@@ -7529,7 +7537,7 @@ window.KOS_LIVE_DATA = {
       "shares": 14563291,
       "induty_code": "58221",
       "categories": [
-        "게임"
+        "IT·소프트웨어"
       ],
       "rank": 417
     },
@@ -7843,7 +7851,7 @@ window.KOS_LIVE_DATA = {
       "name": "넥슨게임즈",
       "name_en": "NEXON Games Co., Ltd.",
       "market": "코스닥",
-      "sector": "게임",
+      "sector": "IT·소프트웨어",
       "price": 10200,
       "change": -3.32,
       "volume": 134556,
@@ -7852,7 +7860,7 @@ window.KOS_LIVE_DATA = {
       "shares": 65860174,
       "induty_code": "582",
       "categories": [
-        "게임"
+        "IT·소프트웨어"
       ],
       "rank": 435
     },
@@ -7915,7 +7923,7 @@ window.KOS_LIVE_DATA = {
       "name": "안랩",
       "name_en": "AHNLAB,INC.",
       "market": "코스닥",
-      "sector": "게임",
+      "sector": "IT·소프트웨어",
       "price": 59900,
       "change": -1.96,
       "volume": 40820,
@@ -7924,7 +7932,7 @@ window.KOS_LIVE_DATA = {
       "shares": 11126506,
       "induty_code": "58221",
       "categories": [
-        "게임"
+        "IT·소프트웨어"
       ],
       "rank": 439
     },
@@ -8374,7 +8382,8 @@ window.KOS_LIVE_DATA = {
       "shares": 12362151,
       "induty_code": "29280",
       "categories": [
-        "기계·장비"
+        "기계·장비",
+        "로봇"
       ],
       "rank": 464
     },
@@ -8635,7 +8644,7 @@ window.KOS_LIVE_DATA = {
       "name": "엑스게이트",
       "name_en": "AXGATE Co., Ltd.",
       "market": "코스닥",
-      "sector": "게임",
+      "sector": "IT·소프트웨어",
       "price": 20250,
       "change": 6.08,
       "volume": 2492191,
@@ -8644,7 +8653,7 @@ window.KOS_LIVE_DATA = {
       "shares": 28543492,
       "induty_code": "58221",
       "categories": [
-        "게임"
+        "IT·소프트웨어"
       ],
       "rank": 479
     },
@@ -8707,7 +8716,7 @@ window.KOS_LIVE_DATA = {
       "name": "SOOP",
       "name_en": "SOOP CO., LTD.",
       "market": "코스닥",
-      "sector": "게임",
+      "sector": "IT·소프트웨어",
       "price": 49250,
       "change": -1.01,
       "volume": 45568,
@@ -8716,7 +8725,7 @@ window.KOS_LIVE_DATA = {
       "shares": 11494767,
       "induty_code": "582",
       "categories": [
-        "게임"
+        "IT·소프트웨어"
       ],
       "rank": 483
     },
@@ -8905,7 +8914,7 @@ window.KOS_LIVE_DATA = {
       "name": "디어유",
       "name_en": "DEAR U Co.,Ltd.",
       "market": "코스닥",
-      "sector": "게임",
+      "sector": "IT·소프트웨어",
       "price": 23100,
       "change": -2.33,
       "volume": 74906,
@@ -8914,7 +8923,7 @@ window.KOS_LIVE_DATA = {
       "shares": 23738406,
       "induty_code": "58222",
       "categories": [
-        "게임"
+        "IT·소프트웨어"
       ],
       "rank": 494
     },
@@ -9696,7 +9705,7 @@ window.KOS_LIVE_DATA = {
       "name": "한글과컴퓨터",
       "name_en": "HANCOM INC.",
       "market": "코스닥",
-      "sector": "게임",
+      "sector": "IT·소프트웨어",
       "price": 19570,
       "change": -1.16,
       "volume": 193713,
@@ -9705,7 +9714,7 @@ window.KOS_LIVE_DATA = {
       "shares": 24179744,
       "induty_code": "582",
       "categories": [
-        "게임"
+        "IT·소프트웨어"
       ],
       "rank": 538
     },
@@ -9840,7 +9849,7 @@ window.KOS_LIVE_DATA = {
       "name": "마키나락스",
       "name_en": "MakinaRocks Co., Ltd.",
       "market": "코스닥",
-      "sector": "게임",
+      "sector": "IT·소프트웨어",
       "price": 26450,
       "change": -4.51,
       "volume": 740296,
@@ -9849,7 +9858,7 @@ window.KOS_LIVE_DATA = {
       "shares": 17541640,
       "induty_code": "582",
       "categories": [
-        "게임"
+        "IT·소프트웨어"
       ],
       "rank": 546
     },
@@ -10380,7 +10389,7 @@ window.KOS_LIVE_DATA = {
       "name": "다날",
       "name_en": "DANAL CO., LTD.",
       "market": "코스닥",
-      "sector": "게임",
+      "sector": "IT·소프트웨어",
       "price": 5710,
       "change": -1.04,
       "volume": 691084,
@@ -10389,7 +10398,7 @@ window.KOS_LIVE_DATA = {
       "shares": 75645457,
       "induty_code": "582",
       "categories": [
-        "게임"
+        "IT·소프트웨어"
       ],
       "rank": 576
     },
@@ -10443,7 +10452,8 @@ window.KOS_LIVE_DATA = {
       "shares": 6663472,
       "induty_code": "291",
       "categories": [
-        "기계·장비"
+        "기계·장비",
+        "로봇"
       ],
       "rank": 579
     },
@@ -10470,7 +10480,7 @@ window.KOS_LIVE_DATA = {
       "name": "가비아",
       "name_en": "GABIA,Inc.",
       "market": "코스닥",
-      "sector": "게임",
+      "sector": "IT·소프트웨어",
       "price": 31750,
       "change": 1.76,
       "volume": 23549,
@@ -10479,7 +10489,7 @@ window.KOS_LIVE_DATA = {
       "shares": 13420684,
       "induty_code": "58221",
       "categories": [
-        "게임"
+        "IT·소프트웨어"
       ],
       "rank": 581
     },
@@ -10569,7 +10579,8 @@ window.KOS_LIVE_DATA = {
       "shares": 15301831,
       "induty_code": "29280",
       "categories": [
-        "기계·장비"
+        "기계·장비",
+        "로봇"
       ],
       "rank": 586
     },
@@ -10802,7 +10813,8 @@ window.KOS_LIVE_DATA = {
       "shares": 22558043,
       "induty_code": "29271",
       "categories": [
-        "기계·장비"
+        "기계·장비",
+        "로봇"
       ],
       "rank": 599
     },
@@ -10829,7 +10841,7 @@ window.KOS_LIVE_DATA = {
       "name": "오픈엣지테크놀로지",
       "name_en": "Openedges Technology, Inc.",
       "market": "코스닥",
-      "sector": "게임",
+      "sector": "IT·소프트웨어",
       "price": 15210,
       "change": 0.46,
       "volume": 132194,
@@ -10838,7 +10850,7 @@ window.KOS_LIVE_DATA = {
       "shares": 26346530,
       "induty_code": "582",
       "categories": [
-        "게임"
+        "IT·소프트웨어"
       ],
       "rank": 601
     },
@@ -12341,7 +12353,7 @@ window.KOS_LIVE_DATA = {
       "name": "드림시큐리티",
       "name_en": "Dream Security Co.,Ltd.",
       "market": "코스닥",
-      "sector": "게임",
+      "sector": "IT·소프트웨어",
       "price": 3220,
       "change": 1.9,
       "volume": 2062050,
@@ -12350,7 +12362,7 @@ window.KOS_LIVE_DATA = {
       "shares": 101097320,
       "induty_code": "582",
       "categories": [
-        "게임"
+        "IT·소프트웨어"
       ],
       "rank": 685
     },
@@ -12404,7 +12416,8 @@ window.KOS_LIVE_DATA = {
       "shares": 11756062,
       "induty_code": "29299",
       "categories": [
-        "기계·장비"
+        "기계·장비",
+        "로봇"
       ],
       "rank": 688
     },
@@ -13061,7 +13074,7 @@ window.KOS_LIVE_DATA = {
       "name": "슈어소프트테크",
       "name_en": "Suresofttech Inc.",
       "market": "코스닥",
-      "sector": "게임",
+      "sector": "IT·소프트웨어",
       "price": 5600,
       "change": -3.45,
       "volume": 461584,
@@ -13070,7 +13083,7 @@ window.KOS_LIVE_DATA = {
       "shares": 53458499,
       "induty_code": "582",
       "categories": [
-        "게임"
+        "IT·소프트웨어"
       ],
       "rank": 725
     },
@@ -13187,7 +13200,7 @@ window.KOS_LIVE_DATA = {
       "name": "엠로",
       "name_en": "EMRO., Incorporated",
       "market": "코스닥",
-      "sector": "게임",
+      "sector": "IT·소프트웨어",
       "price": 23850,
       "change": -3.64,
       "volume": 92208,
@@ -13196,7 +13209,7 @@ window.KOS_LIVE_DATA = {
       "shares": 12362794,
       "induty_code": "582",
       "categories": [
-        "게임"
+        "IT·소프트웨어"
       ],
       "rank": 732
     },
@@ -13780,7 +13793,7 @@ window.KOS_LIVE_DATA = {
       "name": "SKAI",
       "name_en": "SKAI worldwide Co., Ltd.",
       "market": "코스닥",
-      "sector": "게임",
+      "sector": "IT·소프트웨어",
       "price": 5210,
       "change": -10.02,
       "volume": 4213309,
@@ -13789,7 +13802,8 @@ window.KOS_LIVE_DATA = {
       "shares": 52680696,
       "induty_code": "58222",
       "categories": [
-        "게임"
+        "IT·소프트웨어",
+        "인공지능(AI)"
       ],
       "rank": 765
     },
@@ -13915,7 +13929,8 @@ window.KOS_LIVE_DATA = {
       "shares": 12978382,
       "induty_code": "29280",
       "categories": [
-        "기계·장비"
+        "기계·장비",
+        "로봇"
       ],
       "rank": 772
     },
@@ -14139,7 +14154,7 @@ window.KOS_LIVE_DATA = {
       "name": "KG이니시스",
       "name_en": "KGINICIS CO.,LTD.",
       "market": "코스닥",
-      "sector": "게임",
+      "sector": "IT·소프트웨어",
       "price": 9790,
       "change": -1.01,
       "volume": 67610,
@@ -14148,7 +14163,7 @@ window.KOS_LIVE_DATA = {
       "shares": 27554434,
       "induty_code": "58221",
       "categories": [
-        "게임"
+        "IT·소프트웨어"
       ],
       "rank": 785
     },
@@ -14157,7 +14172,7 @@ window.KOS_LIVE_DATA = {
       "name": "나무기술",
       "name_en": "NAMU TECH CO.,LTD.",
       "market": "코스닥",
-      "sector": "게임",
+      "sector": "IT·소프트웨어",
       "price": 7790,
       "change": 9.72,
       "volume": 7137228,
@@ -14166,7 +14181,7 @@ window.KOS_LIVE_DATA = {
       "shares": 34606264,
       "induty_code": "582",
       "categories": [
-        "게임"
+        "IT·소프트웨어"
       ],
       "rank": 786
     },
@@ -14229,7 +14244,7 @@ window.KOS_LIVE_DATA = {
       "name": "셀바스AI",
       "name_en": "SELVAS AI Inc.",
       "market": "코스닥",
-      "sector": "게임",
+      "sector": "IT·소프트웨어",
       "price": 9960,
       "change": 0.5,
       "volume": 259919,
@@ -14238,7 +14253,8 @@ window.KOS_LIVE_DATA = {
       "shares": 26914790,
       "induty_code": "5822",
       "categories": [
-        "게임"
+        "IT·소프트웨어",
+        "인공지능(AI)"
       ],
       "rank": 790
     },
@@ -15162,7 +15178,7 @@ window.KOS_LIVE_DATA = {
       "name": "갤럭시아머니트리",
       "name_en": "GalaxiaMoneytree Co.,Ltd.",
       "market": "코스닥",
-      "sector": "게임",
+      "sector": "IT·소프트웨어",
       "price": 6190,
       "change": -1.28,
       "volume": 187453,
@@ -15171,7 +15187,7 @@ window.KOS_LIVE_DATA = {
       "shares": 39229838,
       "induty_code": "58221",
       "categories": [
-        "게임"
+        "IT·소프트웨어"
       ],
       "rank": 842
     },
@@ -15612,7 +15628,7 @@ window.KOS_LIVE_DATA = {
       "name": "솔트룩스",
       "name_en": "SALTLUX Inc",
       "market": "코스닥",
-      "sector": "게임",
+      "sector": "IT·소프트웨어",
       "price": 18540,
       "change": -0.48,
       "volume": 91167,
@@ -15621,7 +15637,7 @@ window.KOS_LIVE_DATA = {
       "shares": 12593855,
       "induty_code": "58222",
       "categories": [
-        "게임"
+        "IT·소프트웨어"
       ],
       "rank": 867
     },
@@ -15792,7 +15808,7 @@ window.KOS_LIVE_DATA = {
       "name": "코난테크놀로지",
       "name_en": "KONAN TECHNOLOGY INCORPORATION",
       "market": "코스닥",
-      "sector": "게임",
+      "sector": "IT·소프트웨어",
       "price": 18330,
       "change": -4.83,
       "volume": 42879,
@@ -15801,7 +15817,7 @@ window.KOS_LIVE_DATA = {
       "shares": 12517488,
       "induty_code": "58221",
       "categories": [
-        "게임"
+        "IT·소프트웨어"
       ],
       "rank": 877
     },
@@ -16062,7 +16078,7 @@ window.KOS_LIVE_DATA = {
       "name": "아이스크림미디어",
       "name_en": "i-Scream Media CO., LTD.",
       "market": "코스닥",
-      "sector": "게임",
+      "sector": "IT·소프트웨어",
       "price": 16730,
       "change": -0.42,
       "volume": 64062,
@@ -16071,7 +16087,7 @@ window.KOS_LIVE_DATA = {
       "shares": 13323933,
       "induty_code": "582",
       "categories": [
-        "게임"
+        "IT·소프트웨어"
       ],
       "rank": 892
     },
@@ -16142,7 +16158,8 @@ window.KOS_LIVE_DATA = {
       "shares": 15450915,
       "induty_code": "291",
       "categories": [
-        "기계·장비"
+        "기계·장비",
+        "로봇"
       ],
       "rank": 896
     },
@@ -16187,7 +16204,7 @@ window.KOS_LIVE_DATA = {
       "name": "한국정보인증",
       "name_en": "KOREA INFORMATION CERTIFICATE AUTHORITY, INCORPORATED",
       "market": "코스닥",
-      "sector": "게임",
+      "sector": "IT·소프트웨어",
       "price": 5410,
       "change": 1.69,
       "volume": 235465,
@@ -16196,7 +16213,7 @@ window.KOS_LIVE_DATA = {
       "shares": 40591096,
       "induty_code": "58221",
       "categories": [
-        "게임"
+        "IT·소프트웨어"
       ],
       "rank": 899
     },
@@ -16250,7 +16267,8 @@ window.KOS_LIVE_DATA = {
       "shares": 13115949,
       "induty_code": "29280",
       "categories": [
-        "기계·장비"
+        "기계·장비",
+        "로봇"
       ],
       "rank": 902
     },
@@ -17716,7 +17734,7 @@ window.KOS_LIVE_DATA = {
       "name": "폴라리스오피스",
       "name_en": "Polaris Office Corp.",
       "market": "코스닥",
-      "sector": "게임",
+      "sector": "IT·소프트웨어",
       "price": 3850,
       "change": -0.39,
       "volume": 940527,
@@ -17725,7 +17743,7 @@ window.KOS_LIVE_DATA = {
       "shares": 49683793,
       "induty_code": "58221",
       "categories": [
-        "게임"
+        "IT·소프트웨어"
       ],
       "rank": 984
     },
@@ -17743,7 +17761,8 @@ window.KOS_LIVE_DATA = {
       "shares": 76991722,
       "induty_code": "292",
       "categories": [
-        "기계·장비"
+        "기계·장비",
+        "로봇"
       ],
       "rank": 985
     },
@@ -18094,7 +18113,7 @@ window.KOS_LIVE_DATA = {
       "name": "에스투더블유",
       "name_en": "S2W Inc.",
       "market": "코스닥",
-      "sector": "게임",
+      "sector": "IT·소프트웨어",
       "price": 17230,
       "change": -2.98,
       "volume": 146344,
@@ -18103,7 +18122,7 @@ window.KOS_LIVE_DATA = {
       "shares": 10803486,
       "induty_code": "582",
       "categories": [
-        "게임"
+        "IT·소프트웨어"
       ],
       "rank": 1005
     },
@@ -18688,7 +18707,7 @@ window.KOS_LIVE_DATA = {
       "name": "인피니트헬스케어",
       "name_en": "INFINITT Healthcare Co., Ltd.",
       "market": "코스닥",
-      "sector": "게임",
+      "sector": "IT·소프트웨어",
       "price": 7170,
       "change": -0.97,
       "volume": 40159,
@@ -18697,7 +18716,7 @@ window.KOS_LIVE_DATA = {
       "shares": 24396458,
       "induty_code": "582",
       "categories": [
-        "게임"
+        "IT·소프트웨어"
       ],
       "rank": 1038
     },
@@ -18814,7 +18833,7 @@ window.KOS_LIVE_DATA = {
       "name": "네오위즈홀딩스",
       "name_en": "NEOWIZ HOLDINGS Corporation",
       "market": "코스닥",
-      "sector": "게임",
+      "sector": "IT·소프트웨어",
       "price": 21300,
       "change": -0.7,
       "volume": 11935,
@@ -18823,7 +18842,7 @@ window.KOS_LIVE_DATA = {
       "shares": 8142283,
       "induty_code": "582",
       "categories": [
-        "게임"
+        "IT·소프트웨어"
       ],
       "rank": 1045
     },
@@ -19246,7 +19265,7 @@ window.KOS_LIVE_DATA = {
       "name": "GC메디아이",
       "name_en": "GC MediAI Corporation",
       "market": "코스닥",
-      "sector": "게임",
+      "sector": "IT·소프트웨어",
       "price": 3170,
       "change": -1.86,
       "volume": 139527,
@@ -19255,7 +19274,7 @@ window.KOS_LIVE_DATA = {
       "shares": 52197139,
       "induty_code": "58221",
       "categories": [
-        "게임"
+        "IT·소프트웨어"
       ],
       "rank": 1069
     },
@@ -19291,7 +19310,8 @@ window.KOS_LIVE_DATA = {
       "shares": 12839840,
       "induty_code": "262",
       "categories": [
-        "전자·부품"
+        "전자·부품",
+        "로봇"
       ],
       "rank": 1071
     },
@@ -19354,7 +19374,7 @@ window.KOS_LIVE_DATA = {
       "name": "뉴로핏",
       "name_en": "NEUROPHET Inc.",
       "market": "코스닥",
-      "sector": "게임",
+      "sector": "IT·소프트웨어",
       "price": 13310,
       "change": 0.53,
       "volume": 158487,
@@ -19363,7 +19383,7 @@ window.KOS_LIVE_DATA = {
       "shares": 12198866,
       "induty_code": "58222",
       "categories": [
-        "게임"
+        "IT·소프트웨어"
       ],
       "rank": 1075
     },
@@ -20002,7 +20022,7 @@ window.KOS_LIVE_DATA = {
       "name": "KG파이낸셜",
       "name_en": "KG Financial Co., Ltd.",
       "market": "코스닥",
-      "sector": "게임",
+      "sector": "IT·소프트웨어",
       "price": 4085,
       "change": -0.24,
       "volume": 84000,
@@ -20011,7 +20031,7 @@ window.KOS_LIVE_DATA = {
       "shares": 38010802,
       "induty_code": "582",
       "categories": [
-        "게임"
+        "IT·소프트웨어"
       ],
       "rank": 1111
     },
@@ -20991,7 +21011,7 @@ window.KOS_LIVE_DATA = {
       "name": "누리플렉스",
       "name_en": "NuriFlex Co.,Ltd.",
       "market": "코스닥",
-      "sector": "게임",
+      "sector": "IT·소프트웨어",
       "price": 11850,
       "change": -1.17,
       "volume": 57525,
@@ -21000,7 +21020,7 @@ window.KOS_LIVE_DATA = {
       "shares": 12055535,
       "induty_code": "58221",
       "categories": [
-        "게임"
+        "IT·소프트웨어"
       ],
       "rank": 1166
     },
@@ -21099,7 +21119,7 @@ window.KOS_LIVE_DATA = {
       "name": "아톤",
       "name_en": "ATON Inc.",
       "market": "코스닥",
-      "sector": "게임",
+      "sector": "IT·소프트웨어",
       "price": 5800,
       "change": -2.36,
       "volume": 253264,
@@ -21108,7 +21128,7 @@ window.KOS_LIVE_DATA = {
       "shares": 24482092,
       "induty_code": "58221",
       "categories": [
-        "게임"
+        "IT·소프트웨어"
       ],
       "rank": 1172
     },
@@ -21404,7 +21424,7 @@ window.KOS_LIVE_DATA = {
       "name": "지니언스",
       "name_en": "GENIANS, INC.",
       "market": "코스닥",
-      "sector": "게임",
+      "sector": "IT·소프트웨어",
       "price": 15130,
       "change": -1.43,
       "volume": 28484,
@@ -21413,7 +21433,7 @@ window.KOS_LIVE_DATA = {
       "shares": 9079600,
       "induty_code": "58221",
       "categories": [
-        "게임"
+        "IT·소프트웨어"
       ],
       "rank": 1189
     },
@@ -21548,7 +21568,7 @@ window.KOS_LIVE_DATA = {
       "name": "넵튠",
       "name_en": "Neptune Company",
       "market": "코스닥",
-      "sector": "게임",
+      "sector": "IT·소프트웨어",
       "price": 2910,
       "change": -2.18,
       "volume": 41534,
@@ -21557,7 +21577,7 @@ window.KOS_LIVE_DATA = {
       "shares": 46735643,
       "induty_code": "582",
       "categories": [
-        "게임"
+        "IT·소프트웨어"
       ],
       "rank": 1197
     },
@@ -21835,7 +21855,7 @@ window.KOS_LIVE_DATA = {
       "name": "한컴위드",
       "name_en": "Hancom WITH Inc.",
       "market": "코스닥",
-      "sector": "게임",
+      "sector": "IT·소프트웨어",
       "price": 4660,
       "change": -3.32,
       "volume": 372771,
@@ -21844,7 +21864,7 @@ window.KOS_LIVE_DATA = {
       "shares": 28217081,
       "induty_code": "58221",
       "categories": [
-        "게임"
+        "IT·소프트웨어"
       ],
       "rank": 1213
     },
@@ -21925,7 +21945,7 @@ window.KOS_LIVE_DATA = {
       "name": "현대이지웰",
       "name_en": "HYUNDAI EZWEL CO., LTD.",
       "market": "코스닥",
-      "sector": "게임",
+      "sector": "IT·소프트웨어",
       "price": 5820,
       "change": 6.99,
       "volume": 94800,
@@ -21934,7 +21954,7 @@ window.KOS_LIVE_DATA = {
       "shares": 22477903,
       "induty_code": "58222",
       "categories": [
-        "게임"
+        "IT·소프트웨어"
       ],
       "rank": 1218
     },
@@ -21943,7 +21963,7 @@ window.KOS_LIVE_DATA = {
       "name": "LS티라유텍",
       "name_en": "LS THiRA-UTECH CO.,LTD",
       "market": "코스닥",
-      "sector": "게임",
+      "sector": "IT·소프트웨어",
       "price": 6240,
       "change": -0.16,
       "volume": 139591,
@@ -21952,7 +21972,7 @@ window.KOS_LIVE_DATA = {
       "shares": 20921984,
       "induty_code": "582",
       "categories": [
-        "게임"
+        "IT·소프트웨어"
       ],
       "rank": 1219
     },
@@ -22051,7 +22071,7 @@ window.KOS_LIVE_DATA = {
       "name": "이스트소프트",
       "name_en": "ESTsoftCorp.",
       "market": "코스닥",
-      "sector": "게임",
+      "sector": "IT·소프트웨어",
       "price": 11030,
       "change": -3.25,
       "volume": 70828,
@@ -22060,7 +22080,7 @@ window.KOS_LIVE_DATA = {
       "shares": 11753082,
       "induty_code": "58221",
       "categories": [
-        "게임"
+        "IT·소프트웨어"
       ],
       "rank": 1225
     },
@@ -22114,7 +22134,8 @@ window.KOS_LIVE_DATA = {
       "shares": 13117920,
       "induty_code": "29299",
       "categories": [
-        "기계·장비"
+        "기계·장비",
+        "로봇"
       ],
       "rank": 1228
     },
@@ -22141,7 +22162,7 @@ window.KOS_LIVE_DATA = {
       "name": "핑거",
       "name_en": "Finger Inc.",
       "market": "코스닥",
-      "sector": "게임",
+      "sector": "IT·소프트웨어",
       "price": 13700,
       "change": -6.29,
       "volume": 141923,
@@ -22150,7 +22171,7 @@ window.KOS_LIVE_DATA = {
       "shares": 9406568,
       "induty_code": "582",
       "categories": [
-        "게임"
+        "IT·소프트웨어"
       ],
       "rank": 1230
     },
@@ -22321,7 +22342,7 @@ window.KOS_LIVE_DATA = {
       "name": "넥써쓰",
       "name_en": "NEXUS Co., Ltd.",
       "market": "코스닥",
-      "sector": "게임",
+      "sector": "IT·소프트웨어",
       "price": 1984,
       "change": -7.07,
       "volume": 408069,
@@ -22330,7 +22351,7 @@ window.KOS_LIVE_DATA = {
       "shares": 64112099,
       "induty_code": "582",
       "categories": [
-        "게임"
+        "IT·소프트웨어"
       ],
       "rank": 1240
     },
@@ -22429,7 +22450,7 @@ window.KOS_LIVE_DATA = {
       "name": "엑셈",
       "name_en": "EXEM CO., LTD.",
       "market": "코스닥",
-      "sector": "게임",
+      "sector": "IT·소프트웨어",
       "price": 1780,
       "change": -1.28,
       "volume": 575624,
@@ -22438,7 +22459,7 @@ window.KOS_LIVE_DATA = {
       "shares": 70686423,
       "induty_code": "58221",
       "categories": [
-        "게임"
+        "IT·소프트웨어"
       ],
       "rank": 1246
     },
@@ -22573,7 +22594,7 @@ window.KOS_LIVE_DATA = {
       "name": "마음AI",
       "name_en": "MAUM.AI, INC.",
       "market": "코스닥",
-      "sector": "게임",
+      "sector": "IT·소프트웨어",
       "price": 17600,
       "change": 29.99,
       "volume": 1349833,
@@ -22582,7 +22603,8 @@ window.KOS_LIVE_DATA = {
       "shares": 7110275,
       "induty_code": "58222",
       "categories": [
-        "게임"
+        "IT·소프트웨어",
+        "인공지능(AI)"
       ],
       "rank": 1254
     },
@@ -22771,7 +22793,7 @@ window.KOS_LIVE_DATA = {
       "name": "지어소프트",
       "name_en": "GAEASOFT",
       "market": "코스닥",
-      "sector": "게임",
+      "sector": "IT·소프트웨어",
       "price": 7950,
       "change": -0.63,
       "volume": 61571,
@@ -22780,7 +22802,7 @@ window.KOS_LIVE_DATA = {
       "shares": 15474430,
       "induty_code": "58221",
       "categories": [
-        "게임"
+        "IT·소프트웨어"
       ],
       "rank": 1265
     },
@@ -22933,7 +22955,7 @@ window.KOS_LIVE_DATA = {
       "name": "MDS테크",
       "name_en": "MDS Tech Inc.",
       "market": "코스닥",
-      "sector": "게임",
+      "sector": "IT·소프트웨어",
       "price": 2880,
       "change": 4.16,
       "volume": 2822932,
@@ -22942,7 +22964,7 @@ window.KOS_LIVE_DATA = {
       "shares": 42115118,
       "induty_code": "58221",
       "categories": [
-        "게임"
+        "IT·소프트웨어"
       ],
       "rank": 1274
     },
@@ -23347,7 +23369,7 @@ window.KOS_LIVE_DATA = {
       "name": "뷰노",
       "name_en": "VUNO, Inc.",
       "market": "코스닥",
-      "sector": "게임",
+      "sector": "IT·소프트웨어",
       "price": 8410,
       "change": -0.12,
       "volume": 47277,
@@ -23356,7 +23378,7 @@ window.KOS_LIVE_DATA = {
       "shares": 14001823,
       "induty_code": "582",
       "categories": [
-        "게임"
+        "IT·소프트웨어"
       ],
       "rank": 1297
     },
@@ -23572,7 +23594,8 @@ window.KOS_LIVE_DATA = {
       "shares": 18203973,
       "induty_code": "204",
       "categories": [
-        "화학"
+        "화학",
+        "인공지능(AI)"
       ],
       "rank": 1309
     },
@@ -24337,7 +24360,7 @@ window.KOS_LIVE_DATA = {
       "name": "제이엘케이",
       "name_en": "JLK, Inc.",
       "market": "코스닥",
-      "sector": "게임",
+      "sector": "IT·소프트웨어",
       "price": 4230,
       "change": -0.12,
       "volume": 166049,
@@ -24346,7 +24369,7 @@ window.KOS_LIVE_DATA = {
       "shares": 25725892,
       "induty_code": "582",
       "categories": [
-        "게임"
+        "IT·소프트웨어"
       ],
       "rank": 1352
     },
@@ -24661,7 +24684,7 @@ window.KOS_LIVE_DATA = {
       "name": "라온시큐어",
       "name_en": "RaonSecure Co., Ltd.",
       "market": "코스닥",
-      "sector": "게임",
+      "sector": "IT·소프트웨어",
       "price": 9520,
       "change": -1.45,
       "volume": 209508,
@@ -24670,7 +24693,7 @@ window.KOS_LIVE_DATA = {
       "shares": 11105828,
       "induty_code": "582",
       "categories": [
-        "게임"
+        "IT·소프트웨어"
       ],
       "rank": 1370
     },
@@ -24742,7 +24765,8 @@ window.KOS_LIVE_DATA = {
       "shares": 14381214,
       "induty_code": "620",
       "categories": [
-        "IT·소프트웨어"
+        "IT·소프트웨어",
+        "인공지능(AI)"
       ],
       "rank": 1374
     },
@@ -24859,7 +24883,7 @@ window.KOS_LIVE_DATA = {
       "name": "와이즈넛",
       "name_en": "WISEnut, INC.",
       "market": "코스닥",
-      "sector": "게임",
+      "sector": "IT·소프트웨어",
       "price": 7890,
       "change": 3.27,
       "volume": 64125,
@@ -24868,7 +24892,7 @@ window.KOS_LIVE_DATA = {
       "shares": 13105344,
       "induty_code": "58221",
       "categories": [
-        "게임"
+        "IT·소프트웨어"
       ],
       "rank": 1381
     },
@@ -24877,7 +24901,7 @@ window.KOS_LIVE_DATA = {
       "name": "아우토크립트",
       "name_en": "Autocrypt Co., Ltd.",
       "market": "코스닥",
-      "sector": "게임",
+      "sector": "IT·소프트웨어",
       "price": 10580,
       "change": -12.92,
       "volume": 220308,
@@ -24886,7 +24910,7 @@ window.KOS_LIVE_DATA = {
       "shares": 9749691,
       "induty_code": "58222",
       "categories": [
-        "게임"
+        "IT·소프트웨어"
       ],
       "rank": 1382
     },
@@ -25217,7 +25241,7 @@ window.KOS_LIVE_DATA = {
       "name": "씨이랩",
       "name_en": "XIIlab Co., Ltd",
       "market": "코스닥",
-      "sector": "게임",
+      "sector": "IT·소프트웨어",
       "price": 10700,
       "change": 10.2,
       "volume": 2271696,
@@ -25226,7 +25250,7 @@ window.KOS_LIVE_DATA = {
       "shares": 9382284,
       "induty_code": "582",
       "categories": [
-        "게임"
+        "IT·소프트웨어"
       ],
       "rank": 1401
     },
@@ -25424,7 +25448,8 @@ window.KOS_LIVE_DATA = {
       "shares": 39153476,
       "induty_code": "467",
       "categories": [
-        "유통·소비재"
+        "유통·소비재",
+        "로봇"
       ],
       "rank": 1412
     },
@@ -25460,7 +25485,8 @@ window.KOS_LIVE_DATA = {
       "shares": 11165299,
       "induty_code": "259",
       "categories": [
-        "철강·금속"
+        "철강·금속",
+        "로봇"
       ],
       "rank": 1414
     },
@@ -25595,7 +25621,7 @@ window.KOS_LIVE_DATA = {
       "name": "컴투스홀딩스",
       "name_en": "Com2uS Holdings Corporation",
       "market": "코스닥",
-      "sector": "게임",
+      "sector": "IT·소프트웨어",
       "price": 14820,
       "change": -2.11,
       "volume": 14602,
@@ -25604,7 +25630,7 @@ window.KOS_LIVE_DATA = {
       "shares": 6595192,
       "induty_code": "582",
       "categories": [
-        "게임"
+        "IT·소프트웨어"
       ],
       "rank": 1422
     },
@@ -25973,7 +25999,7 @@ window.KOS_LIVE_DATA = {
       "name": "알서포트",
       "name_en": "RSUPPORT Co., Ltd.",
       "market": "코스닥",
-      "sector": "게임",
+      "sector": "IT·소프트웨어",
       "price": 1779,
       "change": -2.15,
       "volume": 149168,
@@ -25982,7 +26008,7 @@ window.KOS_LIVE_DATA = {
       "shares": 53267083,
       "induty_code": "58222",
       "categories": [
-        "게임"
+        "IT·소프트웨어"
       ],
       "rank": 1443
     },
@@ -26288,7 +26314,8 @@ window.KOS_LIVE_DATA = {
       "shares": 17476594,
       "induty_code": "29271",
       "categories": [
-        "기계·장비"
+        "기계·장비",
+        "로봇"
       ],
       "rank": 1460
     },
@@ -26333,7 +26360,7 @@ window.KOS_LIVE_DATA = {
       "name": "이지케어텍",
       "name_en": "ezCaretech Co., LTD",
       "market": "코스닥",
-      "sector": "게임",
+      "sector": "IT·소프트웨어",
       "price": 6750,
       "change": -2.88,
       "volume": 17547,
@@ -26342,7 +26369,7 @@ window.KOS_LIVE_DATA = {
       "shares": 13659173,
       "induty_code": "58222",
       "categories": [
-        "게임"
+        "IT·소프트웨어"
       ],
       "rank": 1463
     },
@@ -26746,7 +26773,7 @@ window.KOS_LIVE_DATA = {
       "name": "샌즈랩",
       "name_en": "SANDS LAB Inc.",
       "market": "코스닥",
-      "sector": "게임",
+      "sector": "IT·소프트웨어",
       "price": 5840,
       "change": -2.5,
       "volume": 45320,
@@ -26755,7 +26782,7 @@ window.KOS_LIVE_DATA = {
       "shares": 15267638,
       "induty_code": "582",
       "categories": [
-        "게임"
+        "IT·소프트웨어"
       ],
       "rank": 1486
     },
@@ -26836,7 +26863,7 @@ window.KOS_LIVE_DATA = {
       "name": "웹케시",
       "name_en": "WebCash Corporation",
       "market": "코스닥",
-      "sector": "게임",
+      "sector": "IT·소프트웨어",
       "price": 6850,
       "change": -2.56,
       "volume": 36080,
@@ -26845,7 +26872,7 @@ window.KOS_LIVE_DATA = {
       "shares": 12954436,
       "induty_code": "582",
       "categories": [
-        "게임"
+        "IT·소프트웨어"
       ],
       "rank": 1491
     },
@@ -27673,7 +27700,8 @@ window.KOS_LIVE_DATA = {
       "shares": 13455280,
       "induty_code": "27199",
       "categories": [
-        "전자·부품"
+        "전자·부품",
+        "로봇"
       ],
       "rank": 1537
     },
@@ -27970,7 +27998,7 @@ window.KOS_LIVE_DATA = {
       "name": "비투엔",
       "name_en": "B2En Co., Ltd.",
       "market": "코스닥",
-      "sector": "게임",
+      "sector": "IT·소프트웨어",
       "price": 1106,
       "change": -0.9,
       "volume": 281643,
@@ -27979,7 +28007,7 @@ window.KOS_LIVE_DATA = {
       "shares": 74299285,
       "induty_code": "582",
       "categories": [
-        "게임"
+        "IT·소프트웨어"
       ],
       "rank": 1554
     },
@@ -28321,7 +28349,8 @@ window.KOS_LIVE_DATA = {
       "shares": 13283350,
       "induty_code": "212",
       "categories": [
-        "바이오·제약"
+        "바이오·제약",
+        "인공지능(AI)"
       ],
       "rank": 1573
     },
@@ -28411,7 +28440,8 @@ window.KOS_LIVE_DATA = {
       "shares": 10773818,
       "induty_code": "29280",
       "categories": [
-        "기계·장비"
+        "기계·장비",
+        "로봇"
       ],
       "rank": 1578
     },
@@ -28645,7 +28675,8 @@ window.KOS_LIVE_DATA = {
       "shares": 20033946,
       "induty_code": "29169",
       "categories": [
-        "기계·장비"
+        "기계·장비",
+        "로봇"
       ],
       "rank": 1591
     },
@@ -28744,7 +28775,7 @@ window.KOS_LIVE_DATA = {
       "name": "뉴엔AI",
       "name_en": "NEWEN AI",
       "market": "코스닥",
-      "sector": "게임",
+      "sector": "IT·소프트웨어",
       "price": 8820,
       "change": 0.57,
       "volume": 99650,
@@ -28753,7 +28784,8 @@ window.KOS_LIVE_DATA = {
       "shares": 8879200,
       "induty_code": "58222",
       "categories": [
-        "게임"
+        "IT·소프트웨어",
+        "인공지능(AI)"
       ],
       "rank": 1597
     },
@@ -29148,7 +29180,8 @@ window.KOS_LIVE_DATA = {
       "shares": 15697991,
       "induty_code": "29142",
       "categories": [
-        "기계·장비"
+        "기계·장비",
+        "로봇"
       ],
       "rank": 1619
     },
@@ -29949,7 +29982,7 @@ window.KOS_LIVE_DATA = {
       "name": "비트컴퓨터",
       "name_en": "BITComputer",
       "market": "코스닥",
-      "sector": "게임",
+      "sector": "IT·소프트웨어",
       "price": 4325,
       "change": 0.0,
       "volume": 96710,
@@ -29958,7 +29991,7 @@ window.KOS_LIVE_DATA = {
       "shares": 16623293,
       "induty_code": "58221",
       "categories": [
-        "게임"
+        "IT·소프트웨어"
       ],
       "rank": 1664
     },
@@ -30147,7 +30180,7 @@ window.KOS_LIVE_DATA = {
       "name": "딥노이드",
       "name_en": "DEEPNOID Inc.",
       "market": "코스닥",
-      "sector": "게임",
+      "sector": "IT·소프트웨어",
       "price": 2420,
       "change": 0.83,
       "volume": 155324,
@@ -30156,7 +30189,7 @@ window.KOS_LIVE_DATA = {
       "shares": 29372232,
       "induty_code": "582",
       "categories": [
-        "게임"
+        "IT·소프트웨어"
       ],
       "rank": 1675
     },
@@ -30219,7 +30252,7 @@ window.KOS_LIVE_DATA = {
       "name": "네오리진",
       "name_en": "NEORIGIN Co., Ltd.",
       "market": "코스닥",
-      "sector": "게임",
+      "sector": "IT·소프트웨어",
       "price": 1331,
       "change": 0.08,
       "volume": 67808,
@@ -30228,7 +30261,7 @@ window.KOS_LIVE_DATA = {
       "shares": 53110014,
       "induty_code": "58221",
       "categories": [
-        "게임"
+        "IT·소프트웨어"
       ],
       "rank": 1679
     },
@@ -30237,7 +30270,7 @@ window.KOS_LIVE_DATA = {
       "name": "알체라",
       "name_en": "Alchera Inc.",
       "market": "코스닥",
-      "sector": "게임",
+      "sector": "IT·소프트웨어",
       "price": 1711,
       "change": -0.81,
       "volume": 380153,
@@ -30246,7 +30279,7 @@ window.KOS_LIVE_DATA = {
       "shares": 41300953,
       "induty_code": "58222",
       "categories": [
-        "게임"
+        "IT·소프트웨어"
       ],
       "rank": 1680
     },
@@ -30732,7 +30765,8 @@ window.KOS_LIVE_DATA = {
       "shares": 8361386,
       "induty_code": "263",
       "categories": [
-        "전자·부품"
+        "전자·부품",
+        "로봇"
       ],
       "rank": 1707
     },
@@ -30777,7 +30811,7 @@ window.KOS_LIVE_DATA = {
       "name": "이루온",
       "name_en": "ELUON Corporation",
       "market": "코스닥",
-      "sector": "게임",
+      "sector": "IT·소프트웨어",
       "price": 2495,
       "change": 7.31,
       "volume": 1287861,
@@ -30786,7 +30820,7 @@ window.KOS_LIVE_DATA = {
       "shares": 27275020,
       "induty_code": "58221",
       "categories": [
-        "게임"
+        "IT·소프트웨어"
       ],
       "rank": 1710
     },
@@ -31551,7 +31585,7 @@ window.KOS_LIVE_DATA = {
       "name": "케이사인",
       "name_en": "KSIGN CO., Ltd.",
       "market": "코스닥",
-      "sector": "게임",
+      "sector": "IT·소프트웨어",
       "price": 9110,
       "change": -2.77,
       "volume": 37499,
@@ -31560,7 +31594,7 @@ window.KOS_LIVE_DATA = {
       "shares": 7067125,
       "induty_code": "58221",
       "categories": [
-        "게임"
+        "IT·소프트웨어"
       ],
       "rank": 1753
     },
@@ -31839,7 +31873,7 @@ window.KOS_LIVE_DATA = {
       "name": "FSN",
       "name_en": "FSN Co., Ltd.",
       "market": "코스닥",
-      "sector": "게임",
+      "sector": "IT·소프트웨어",
       "price": 1392,
       "change": 0.87,
       "volume": 281636,
@@ -31848,7 +31882,7 @@ window.KOS_LIVE_DATA = {
       "shares": 45254585,
       "induty_code": "582",
       "categories": [
-        "게임"
+        "IT·소프트웨어"
       ],
       "rank": 1769
     },
@@ -31857,7 +31891,7 @@ window.KOS_LIVE_DATA = {
       "name": "유비벨록스",
       "name_en": "UbiVelox Inc.",
       "market": "코스닥",
-      "sector": "게임",
+      "sector": "IT·소프트웨어",
       "price": 4270,
       "change": -2.73,
       "volume": 41641,
@@ -31866,7 +31900,7 @@ window.KOS_LIVE_DATA = {
       "shares": 14730199,
       "induty_code": "58221",
       "categories": [
-        "게임"
+        "IT·소프트웨어"
       ],
       "rank": 1770
     },
@@ -32073,7 +32107,7 @@ window.KOS_LIVE_DATA = {
       "name": "한국전자인증",
       "name_en": "KOREA ELECTRONIC CERTIFICATION AUTHORITY",
       "market": "코스닥",
-      "sector": "게임",
+      "sector": "IT·소프트웨어",
       "price": 3275,
       "change": -0.91,
       "volume": 49838,
@@ -32082,7 +32116,7 @@ window.KOS_LIVE_DATA = {
       "shares": 19000000,
       "induty_code": "58221",
       "categories": [
-        "게임"
+        "IT·소프트웨어"
       ],
       "rank": 1782
     },
@@ -33063,7 +33097,7 @@ window.KOS_LIVE_DATA = {
       "name": "토탈소프트",
       "name_en": "TOTAL SOFT BANK LTD.",
       "market": "코스닥",
-      "sector": "게임",
+      "sector": "IT·소프트웨어",
       "price": 6720,
       "change": -10.4,
       "volume": 98093,
@@ -33072,7 +33106,7 @@ window.KOS_LIVE_DATA = {
       "shares": 8558040,
       "induty_code": "58221",
       "categories": [
-        "게임"
+        "IT·소프트웨어"
       ],
       "rank": 1837
     },
@@ -33423,7 +33457,7 @@ window.KOS_LIVE_DATA = {
       "name": "인지소프트",
       "name_en": "Inzisoft Co., Ltd.",
       "market": "코스닥",
-      "sector": "게임",
+      "sector": "IT·소프트웨어",
       "price": 17220,
       "change": -8.21,
       "volume": 18741,
@@ -33432,7 +33466,7 @@ window.KOS_LIVE_DATA = {
       "shares": 3283714,
       "induty_code": "58222",
       "categories": [
-        "게임"
+        "IT·소프트웨어"
       ],
       "rank": 1857
     },
@@ -33692,7 +33726,7 @@ window.KOS_LIVE_DATA = {
       "name": "심플랫폼",
       "name_en": "Simplatform Co., Ltd.",
       "market": "코스닥",
-      "sector": "게임",
+      "sector": "IT·소프트웨어",
       "price": 8550,
       "change": -1.27,
       "volume": 27486,
@@ -33701,7 +33735,7 @@ window.KOS_LIVE_DATA = {
       "shares": 6418644,
       "induty_code": "58222",
       "categories": [
-        "게임"
+        "IT·소프트웨어"
       ],
       "rank": 1872
     },
@@ -33836,7 +33870,7 @@ window.KOS_LIVE_DATA = {
       "name": "수산아이앤티",
       "name_en": "SOOSAN INT Co., LTD.",
       "market": "코스닥",
-      "sector": "게임",
+      "sector": "IT·소프트웨어",
       "price": 8040,
       "change": 0.12,
       "volume": 6673,
@@ -33845,7 +33879,7 @@ window.KOS_LIVE_DATA = {
       "shares": 6751000,
       "induty_code": "582",
       "categories": [
-        "게임"
+        "IT·소프트웨어"
       ],
       "rank": 1880
     },
@@ -34250,7 +34284,7 @@ window.KOS_LIVE_DATA = {
       "name": "SGA솔루션즈",
       "name_en": "SGA Solutions Co.,Ltd.",
       "market": "코스닥",
-      "sector": "게임",
+      "sector": "IT·소프트웨어",
       "price": 2760,
       "change": -3.66,
       "volume": 204653,
@@ -34259,7 +34293,7 @@ window.KOS_LIVE_DATA = {
       "shares": 18887979,
       "induty_code": "582",
       "categories": [
-        "게임"
+        "IT·소프트웨어"
       ],
       "rank": 1903
     },
@@ -34268,7 +34302,7 @@ window.KOS_LIVE_DATA = {
       "name": "이니텍",
       "name_en": "INITECH Co., Ltd.",
       "market": "코스닥",
-      "sector": "게임",
+      "sector": "IT·소프트웨어",
       "price": 2365,
       "change": -2.47,
       "volume": 23967,
@@ -34277,7 +34311,7 @@ window.KOS_LIVE_DATA = {
       "shares": 22021065,
       "induty_code": "58221",
       "categories": [
-        "게임"
+        "IT·소프트웨어"
       ],
       "rank": 1904
     },
@@ -34286,7 +34320,7 @@ window.KOS_LIVE_DATA = {
       "name": "링크제니시스",
       "name_en": "Linkgenesis Co., Ltd.",
       "market": "코스닥",
-      "sector": "게임",
+      "sector": "IT·소프트웨어",
       "price": 4525,
       "change": -2.9,
       "volume": 70095,
@@ -34295,7 +34329,7 @@ window.KOS_LIVE_DATA = {
       "shares": 11469507,
       "induty_code": "58222",
       "categories": [
-        "게임"
+        "IT·소프트웨어"
       ],
       "rank": 1905
     },
@@ -34430,7 +34464,7 @@ window.KOS_LIVE_DATA = {
       "name": "이지스",
       "name_en": "EGIS Co., Ltd",
       "market": "코스닥",
-      "sector": "게임",
+      "sector": "IT·소프트웨어",
       "price": 4975,
       "change": 1.02,
       "volume": 32542,
@@ -34439,7 +34473,7 @@ window.KOS_LIVE_DATA = {
       "shares": 10277800,
       "induty_code": "58221",
       "categories": [
-        "게임"
+        "IT·소프트웨어"
       ],
       "rank": 1913
     },
@@ -34448,7 +34482,7 @@ window.KOS_LIVE_DATA = {
       "name": "포시에스",
       "name_en": "FORCS Co., Ltd.",
       "market": "코스닥",
-      "sector": "게임",
+      "sector": "IT·소프트웨어",
       "price": 1870,
       "change": 1.14,
       "volume": 49276,
@@ -34457,7 +34491,7 @@ window.KOS_LIVE_DATA = {
       "shares": 27321969,
       "induty_code": "58222",
       "categories": [
-        "게임"
+        "IT·소프트웨어"
       ],
       "rank": 1914
     },
@@ -34556,7 +34590,7 @@ window.KOS_LIVE_DATA = {
       "name": "코어라인소프트",
       "name_en": "Coreline Soft Co., Ltd",
       "market": "코스닥",
-      "sector": "게임",
+      "sector": "IT·소프트웨어",
       "price": 2830,
       "change": -1.05,
       "volume": 97908,
@@ -34565,7 +34599,7 @@ window.KOS_LIVE_DATA = {
       "shares": 17946692,
       "induty_code": "58222",
       "categories": [
-        "게임"
+        "IT·소프트웨어"
       ],
       "rank": 1920
     },
@@ -34646,7 +34680,7 @@ window.KOS_LIVE_DATA = {
       "name": "오상자이엘",
       "name_en": "OSANGJAIEL Co., Ltd",
       "market": "코스닥",
-      "sector": "게임",
+      "sector": "IT·소프트웨어",
       "price": 2660,
       "change": 0.19,
       "volume": 65944,
@@ -34655,7 +34689,7 @@ window.KOS_LIVE_DATA = {
       "shares": 18982783,
       "induty_code": "582",
       "categories": [
-        "게임"
+        "IT·소프트웨어"
       ],
       "rank": 1925
     },
@@ -34754,7 +34788,7 @@ window.KOS_LIVE_DATA = {
       "name": "토마토시스템",
       "name_en": "TOMATOSYSTEM Co., Ltd.",
       "market": "코스닥",
-      "sector": "게임",
+      "sector": "IT·소프트웨어",
       "price": 3230,
       "change": 1.25,
       "volume": 65821,
@@ -34763,7 +34797,7 @@ window.KOS_LIVE_DATA = {
       "shares": 15614544,
       "induty_code": "582",
       "categories": [
-        "게임"
+        "IT·소프트웨어"
       ],
       "rank": 1931
     },
@@ -34826,7 +34860,7 @@ window.KOS_LIVE_DATA = {
       "name": "비아이매트릭스",
       "name_en": "BI MATRIX Co., Ltd.",
       "market": "코스닥",
-      "sector": "게임",
+      "sector": "IT·소프트웨어",
       "price": 6950,
       "change": -4.4,
       "volume": 55457,
@@ -34835,7 +34869,7 @@ window.KOS_LIVE_DATA = {
       "shares": 7206940,
       "induty_code": "5822",
       "categories": [
-        "게임"
+        "IT·소프트웨어"
       ],
       "rank": 1935
     },
@@ -35096,7 +35130,7 @@ window.KOS_LIVE_DATA = {
       "name": "아이티센피엔에스",
       "name_en": "ITCENPNS CO.,LTD.",
       "market": "코스닥",
-      "sector": "게임",
+      "sector": "IT·소프트웨어",
       "price": 2985,
       "change": -4.63,
       "volume": 64351,
@@ -35105,7 +35139,7 @@ window.KOS_LIVE_DATA = {
       "shares": 16533726,
       "induty_code": "58221",
       "categories": [
-        "게임"
+        "IT·소프트웨어"
       ],
       "rank": 1950
     },
@@ -35114,7 +35148,7 @@ window.KOS_LIVE_DATA = {
       "name": "신테카바이오",
       "name_en": "SyntekaBio,Inc.",
       "market": "코스닥",
-      "sector": "게임",
+      "sector": "IT·소프트웨어",
       "price": 2035,
       "change": 1.75,
       "volume": 90222,
@@ -35123,7 +35157,7 @@ window.KOS_LIVE_DATA = {
       "shares": 24258475,
       "induty_code": "582",
       "categories": [
-        "게임"
+        "IT·소프트웨어"
       ],
       "rank": 1951
     },
@@ -35204,7 +35238,7 @@ window.KOS_LIVE_DATA = {
       "name": "사이냅소프트",
       "name_en": "Synapsoft Corp.",
       "market": "코스닥",
-      "sector": "게임",
+      "sector": "IT·소프트웨어",
       "price": 9740,
       "change": -3.37,
       "volume": 32637,
@@ -35213,7 +35247,7 @@ window.KOS_LIVE_DATA = {
       "shares": 5037023,
       "induty_code": "58222",
       "categories": [
-        "게임"
+        "IT·소프트웨어"
       ],
       "rank": 1956
     },
@@ -35258,7 +35292,7 @@ window.KOS_LIVE_DATA = {
       "name": "인스피언",
       "name_en": "Inspien, Inc.",
       "market": "코스닥",
-      "sector": "게임",
+      "sector": "IT·소프트웨어",
       "price": 4780,
       "change": -3.43,
       "volume": 22628,
@@ -35267,7 +35301,7 @@ window.KOS_LIVE_DATA = {
       "shares": 10137772,
       "induty_code": "582",
       "categories": [
-        "게임"
+        "IT·소프트웨어"
       ],
       "rank": 1959
     },
@@ -35528,7 +35562,7 @@ window.KOS_LIVE_DATA = {
       "name": "시큐레터",
       "name_en": "SecuLetter Co., Ltd.",
       "market": "코스닥",
-      "sector": "게임",
+      "sector": "IT·소프트웨어",
       "price": 6550,
       "change": 0.0,
       "volume": 0,
@@ -35537,7 +35571,7 @@ window.KOS_LIVE_DATA = {
       "shares": 7271605,
       "induty_code": "58221",
       "categories": [
-        "게임"
+        "IT·소프트웨어"
       ],
       "rank": 1974
     },
@@ -35582,7 +35616,7 @@ window.KOS_LIVE_DATA = {
       "name": "크라우드웍스",
       "name_en": "CrowdWorks, Inc.",
       "market": "코스닥",
-      "sector": "게임",
+      "sector": "IT·소프트웨어",
       "price": 2980,
       "change": -2.77,
       "volume": 1031224,
@@ -35591,7 +35625,7 @@ window.KOS_LIVE_DATA = {
       "shares": 15874344,
       "induty_code": "582",
       "categories": [
-        "게임"
+        "IT·소프트웨어"
       ],
       "rank": 1977
     },
@@ -35870,7 +35904,7 @@ window.KOS_LIVE_DATA = {
       "name": "영림원소프트랩",
       "name_en": "YoungLimWon SoftLab. Co., Ltd.",
       "market": "코스닥",
-      "sector": "게임",
+      "sector": "IT·소프트웨어",
       "price": 5690,
       "change": -0.18,
       "volume": 7849,
@@ -35879,7 +35913,7 @@ window.KOS_LIVE_DATA = {
       "shares": 8131000,
       "induty_code": "58221",
       "categories": [
-        "게임"
+        "IT·소프트웨어"
       ],
       "rank": 1993
     },
@@ -35996,7 +36030,7 @@ window.KOS_LIVE_DATA = {
       "name": "네이블",
       "name_en": "Nable Inc.",
       "market": "코스닥",
-      "sector": "게임",
+      "sector": "IT·소프트웨어",
       "price": 7060,
       "change": 5.69,
       "volume": 17314,
@@ -36005,7 +36039,7 @@ window.KOS_LIVE_DATA = {
       "shares": 6530014,
       "induty_code": "58222",
       "categories": [
-        "게임"
+        "IT·소프트웨어"
       ],
       "rank": 2000
     },
@@ -36014,7 +36048,7 @@ window.KOS_LIVE_DATA = {
       "name": "엑스큐어",
       "name_en": "Xcure Corp.",
       "market": "코스닥",
-      "sector": "게임",
+      "sector": "IT·소프트웨어",
       "price": 1290,
       "change": 3.2,
       "volume": 438753,
@@ -36023,7 +36057,7 @@ window.KOS_LIVE_DATA = {
       "shares": 35524729,
       "induty_code": "58222",
       "categories": [
-        "게임"
+        "IT·소프트웨어"
       ],
       "rank": 2001
     },
@@ -36194,7 +36228,7 @@ window.KOS_LIVE_DATA = {
       "name": "파수AI",
       "name_en": "FASOO AI Co.,Ltd.",
       "market": "코스닥",
-      "sector": "게임",
+      "sector": "IT·소프트웨어",
       "price": 3840,
       "change": -1.16,
       "volume": 92433,
@@ -36203,7 +36237,8 @@ window.KOS_LIVE_DATA = {
       "shares": 11703922,
       "induty_code": "58221",
       "categories": [
-        "게임"
+        "IT·소프트웨어",
+        "인공지능(AI)"
       ],
       "rank": 2011
     },
@@ -36284,7 +36319,7 @@ window.KOS_LIVE_DATA = {
       "name": "오브젠",
       "name_en": "OBZEN Inc.",
       "market": "코스닥",
-      "sector": "게임",
+      "sector": "IT·소프트웨어",
       "price": 9500,
       "change": -9.87,
       "volume": 190732,
@@ -36293,7 +36328,7 @@ window.KOS_LIVE_DATA = {
       "shares": 4696906,
       "induty_code": "58222",
       "categories": [
-        "게임"
+        "IT·소프트웨어"
       ],
       "rank": 2016
     },
@@ -36320,7 +36355,7 @@ window.KOS_LIVE_DATA = {
       "name": "산돌",
       "name_en": "Sandoll, Inc.",
       "market": "코스닥",
-      "sector": "게임",
+      "sector": "IT·소프트웨어",
       "price": 3025,
       "change": 0.0,
       "volume": 14891,
@@ -36329,7 +36364,7 @@ window.KOS_LIVE_DATA = {
       "shares": 14718362,
       "induty_code": "58222",
       "categories": [
-        "게임"
+        "IT·소프트웨어"
       ],
       "rank": 2018
     },
@@ -36553,7 +36588,7 @@ window.KOS_LIVE_DATA = {
       "name": "엔텔스",
       "name_en": "nTelsCo.,Ltd.",
       "market": "코스닥",
-      "sector": "게임",
+      "sector": "IT·소프트웨어",
       "price": 4280,
       "change": 1.06,
       "volume": 15537,
@@ -36562,7 +36597,7 @@ window.KOS_LIVE_DATA = {
       "shares": 10244824,
       "induty_code": "58221",
       "categories": [
-        "게임"
+        "IT·소프트웨어"
       ],
       "rank": 2031
     },
@@ -36571,7 +36606,7 @@ window.KOS_LIVE_DATA = {
       "name": "시선AI",
       "name_en": "SECERN AI Co., Ltd.",
       "market": "코스닥",
-      "sector": "게임",
+      "sector": "IT·소프트웨어",
       "price": 3200,
       "change": 10.73,
       "volume": 1748016,
@@ -36580,7 +36615,8 @@ window.KOS_LIVE_DATA = {
       "shares": 13644976,
       "induty_code": "58221",
       "categories": [
-        "게임"
+        "IT·소프트웨어",
+        "인공지능(AI)"
       ],
       "rank": 2032
     },
@@ -37075,7 +37111,7 @@ window.KOS_LIVE_DATA = {
       "name": "유라클",
       "name_en": "URACLE. Co. Ltd",
       "market": "코스닥",
-      "sector": "게임",
+      "sector": "IT·소프트웨어",
       "price": 9580,
       "change": -0.1,
       "volume": 18136,
@@ -37084,7 +37120,7 @@ window.KOS_LIVE_DATA = {
       "shares": 4364368,
       "induty_code": "58221",
       "categories": [
-        "게임"
+        "IT·소프트웨어"
       ],
       "rank": 2060
     },
@@ -37381,7 +37417,7 @@ window.KOS_LIVE_DATA = {
       "name": "트윔",
       "name_en": "TWIM Corp",
       "market": "코스닥",
-      "sector": "게임",
+      "sector": "IT·소프트웨어",
       "price": 5400,
       "change": 3.25,
       "volume": 3659,
@@ -37390,7 +37426,7 @@ window.KOS_LIVE_DATA = {
       "shares": 7440568,
       "induty_code": "58222",
       "categories": [
-        "게임"
+        "IT·소프트웨어"
       ],
       "rank": 2077
     },
@@ -37723,7 +37759,7 @@ window.KOS_LIVE_DATA = {
       "name": "모아데이타",
       "name_en": "Moadata Co., Ltd.",
       "market": "코스닥",
-      "sector": "게임",
+      "sector": "IT·소프트웨어",
       "price": 1077,
       "change": 6.53,
       "volume": 1761675,
@@ -37732,7 +37768,7 @@ window.KOS_LIVE_DATA = {
       "shares": 36381379,
       "induty_code": "58222",
       "categories": [
-        "게임"
+        "IT·소프트웨어"
       ],
       "rank": 2096
     },
@@ -37777,7 +37813,7 @@ window.KOS_LIVE_DATA = {
       "name": "비트플래닛",
       "name_en": "BITPLANET Co.,Ltd.",
       "market": "코스닥",
-      "sector": "게임",
+      "sector": "IT·소프트웨어",
       "price": 1662,
       "change": -5.25,
       "volume": 84118,
@@ -37786,7 +37822,7 @@ window.KOS_LIVE_DATA = {
       "shares": 23544899,
       "induty_code": "582",
       "categories": [
-        "게임"
+        "IT·소프트웨어"
       ],
       "rank": 2099
     },
@@ -37867,7 +37903,7 @@ window.KOS_LIVE_DATA = {
       "name": "브리지텍",
       "name_en": "BRIDGETECCorp.",
       "market": "코스닥",
-      "sector": "게임",
+      "sector": "IT·소프트웨어",
       "price": 3245,
       "change": -0.76,
       "volume": 60634,
@@ -37876,7 +37912,7 @@ window.KOS_LIVE_DATA = {
       "shares": 11952500,
       "induty_code": "58221",
       "categories": [
-        "게임"
+        "IT·소프트웨어"
       ],
       "rank": 2104
     },
@@ -38029,7 +38065,7 @@ window.KOS_LIVE_DATA = {
       "name": "뱅크웨어글로벌",
       "name_en": "Bankware Global Co., Ltd.",
       "market": "코스닥",
-      "sector": "게임",
+      "sector": "IT·소프트웨어",
       "price": 3760,
       "change": -1.44,
       "volume": 17135,
@@ -38038,7 +38074,7 @@ window.KOS_LIVE_DATA = {
       "shares": 10196588,
       "induty_code": "58222",
       "categories": [
-        "게임"
+        "IT·소프트웨어"
       ],
       "rank": 2113
     },
@@ -38191,7 +38227,7 @@ window.KOS_LIVE_DATA = {
       "name": "핸디소프트",
       "name_en": "HANDYSOFT, Inc.",
       "market": "코스닥",
-      "sector": "게임",
+      "sector": "IT·소프트웨어",
       "price": 1591,
       "change": 6.07,
       "volume": 25085,
@@ -38200,7 +38236,7 @@ window.KOS_LIVE_DATA = {
       "shares": 23930842,
       "induty_code": "58222",
       "categories": [
-        "게임"
+        "IT·소프트웨어"
       ],
       "rank": 2122
     },
@@ -38587,7 +38623,7 @@ window.KOS_LIVE_DATA = {
       "name": "한싹",
       "name_en": "Hanssak Co., Ltd.",
       "market": "코스닥",
-      "sector": "게임",
+      "sector": "IT·소프트웨어",
       "price": 3410,
       "change": -0.73,
       "volume": 46624,
@@ -38596,7 +38632,7 @@ window.KOS_LIVE_DATA = {
       "shares": 10895304,
       "induty_code": "58221",
       "categories": [
-        "게임"
+        "IT·소프트웨어"
       ],
       "rank": 2144
     },
@@ -38623,7 +38659,7 @@ window.KOS_LIVE_DATA = {
       "name": "모니터랩",
       "name_en": "MONITORAPP CO., LTD.",
       "market": "코스닥",
-      "sector": "게임",
+      "sector": "IT·소프트웨어",
       "price": 3005,
       "change": -0.5,
       "volume": 60149,
@@ -38632,7 +38668,7 @@ window.KOS_LIVE_DATA = {
       "shares": 12310300,
       "induty_code": "58221",
       "categories": [
-        "게임"
+        "IT·소프트웨어"
       ],
       "rank": 2146
     },
@@ -39289,7 +39325,7 @@ window.KOS_LIVE_DATA = {
       "name": "웨이버스",
       "name_en": "WAVUS Co.,Ltd",
       "market": "코스닥",
-      "sector": "게임",
+      "sector": "IT·소프트웨어",
       "price": 720,
       "change": 0.7,
       "volume": 180866,
@@ -39298,7 +39334,7 @@ window.KOS_LIVE_DATA = {
       "shares": 48155200,
       "induty_code": "582",
       "categories": [
-        "게임"
+        "IT·소프트웨어"
       ],
       "rank": 2183
     },
@@ -39450,7 +39486,7 @@ window.KOS_LIVE_DATA = {
       "name": "인스웨이브",
       "name_en": "Inswave Co., Ltd.",
       "market": "코스닥",
-      "sector": "게임",
+      "sector": "IT·소프트웨어",
       "price": 2335,
       "change": -3.11,
       "volume": 68141,
@@ -39459,7 +39495,7 @@ window.KOS_LIVE_DATA = {
       "shares": 14704578,
       "induty_code": "58222",
       "categories": [
-        "게임"
+        "IT·소프트웨어"
       ],
       "rank": 2192
     },
@@ -39504,7 +39540,7 @@ window.KOS_LIVE_DATA = {
       "name": "싸이버원",
       "name_en": "CyberOne Co., Ltd.",
       "market": "코스닥",
-      "sector": "게임",
+      "sector": "IT·소프트웨어",
       "price": 2845,
       "change": 1.97,
       "volume": 36230,
@@ -39513,7 +39549,7 @@ window.KOS_LIVE_DATA = {
       "shares": 11953825,
       "induty_code": "582",
       "categories": [
-        "게임"
+        "IT·소프트웨어"
       ],
       "rank": 2195
     },
@@ -39792,7 +39828,7 @@ window.KOS_LIVE_DATA = {
       "name": "유비씨",
       "name_en": "UVC Co., Ltd.",
       "market": "코넥스",
-      "sector": "게임",
+      "sector": "IT·소프트웨어",
       "price": 13120,
       "change": 0.0,
       "volume": 0,
@@ -39801,7 +39837,7 @@ window.KOS_LIVE_DATA = {
       "shares": 2500000,
       "induty_code": "58221",
       "categories": [
-        "게임"
+        "IT·소프트웨어"
       ],
       "rank": 2211
     },
@@ -39828,7 +39864,7 @@ window.KOS_LIVE_DATA = {
       "name": "다산디엠씨",
       "name_en": "DASAN DMC Co., Ltd.",
       "market": "코스닥",
-      "sector": "게임",
+      "sector": "IT·소프트웨어",
       "price": 966,
       "change": 9.77,
       "volume": 339948,
@@ -39837,7 +39873,7 @@ window.KOS_LIVE_DATA = {
       "shares": 33949973,
       "induty_code": "58222",
       "categories": [
-        "게임"
+        "IT·소프트웨어"
       ],
       "rank": 2213
     },
@@ -39882,7 +39918,7 @@ window.KOS_LIVE_DATA = {
       "name": "아이퀘스트",
       "name_en": "IQUEST Co., Ltd.",
       "market": "코스닥",
-      "sector": "게임",
+      "sector": "IT·소프트웨어",
       "price": 3080,
       "change": -4.94,
       "volume": 37315,
@@ -39891,7 +39927,7 @@ window.KOS_LIVE_DATA = {
       "shares": 10566952,
       "induty_code": "58222",
       "categories": [
-        "게임"
+        "IT·소프트웨어"
       ],
       "rank": 2216
     },
@@ -39954,7 +39990,7 @@ window.KOS_LIVE_DATA = {
       "name": "엠아이큐브솔루션",
       "name_en": "MICUBE SOLUTION, INC.",
       "market": "코스닥",
-      "sector": "게임",
+      "sector": "IT·소프트웨어",
       "price": 2135,
       "change": -0.7,
       "volume": 35374,
@@ -39963,7 +39999,7 @@ window.KOS_LIVE_DATA = {
       "shares": 15113790,
       "induty_code": "58221",
       "categories": [
-        "게임"
+        "IT·소프트웨어"
       ],
       "rank": 2220
     },
@@ -40062,7 +40098,7 @@ window.KOS_LIVE_DATA = {
       "name": "티사이언티픽",
       "name_en": "T Scientific Co.,Ltd",
       "market": "코스닥",
-      "sector": "게임",
+      "sector": "IT·소프트웨어",
       "price": 2250,
       "change": 3.45,
       "volume": 42411,
@@ -40071,7 +40107,7 @@ window.KOS_LIVE_DATA = {
       "shares": 14249700,
       "induty_code": "58222",
       "categories": [
-        "게임"
+        "IT·소프트웨어"
       ],
       "rank": 2226
     },
@@ -40170,7 +40206,7 @@ window.KOS_LIVE_DATA = {
       "name": "이노에이엑스",
       "name_en": "INNOAX CO.,LTD",
       "market": "코스닥",
-      "sector": "게임",
+      "sector": "IT·소프트웨어",
       "price": 6150,
       "change": -7.1,
       "volume": 28632,
@@ -40179,7 +40215,7 @@ window.KOS_LIVE_DATA = {
       "shares": 5178252,
       "induty_code": "58222",
       "categories": [
-        "게임"
+        "IT·소프트웨어"
       ],
       "rank": 2232
     },
@@ -40440,7 +40476,7 @@ window.KOS_LIVE_DATA = {
       "name": "브레인즈컴퍼니",
       "name_en": "Brainzcompany Co., Ltd.",
       "market": "코스닥",
-      "sector": "게임",
+      "sector": "IT·소프트웨어",
       "price": 3800,
       "change": -0.52,
       "volume": 44729,
@@ -40449,7 +40485,7 @@ window.KOS_LIVE_DATA = {
       "shares": 8208283,
       "induty_code": "58221",
       "categories": [
-        "게임"
+        "IT·소프트웨어"
       ],
       "rank": 2247
     },
@@ -40548,7 +40584,7 @@ window.KOS_LIVE_DATA = {
       "name": "원포유",
       "name_en": "ONE4U CO.,LTD",
       "market": "코넥스",
-      "sector": "게임",
+      "sector": "IT·소프트웨어",
       "price": 948,
       "change": -4.82,
       "volume": 39026,
@@ -40557,7 +40593,7 @@ window.KOS_LIVE_DATA = {
       "shares": 32751985,
       "induty_code": "582",
       "categories": [
-        "게임"
+        "IT·소프트웨어"
       ],
       "rank": 2253
     },
@@ -40980,7 +41016,7 @@ window.KOS_LIVE_DATA = {
       "name": "라온피플",
       "name_en": "LaonPeople Inc.",
       "market": "코스닥",
-      "sector": "게임",
+      "sector": "IT·소프트웨어",
       "price": 599,
       "change": 3.99,
       "volume": 240721,
@@ -40989,7 +41025,7 @@ window.KOS_LIVE_DATA = {
       "shares": 49504016,
       "induty_code": "582",
       "categories": [
-        "게임"
+        "IT·소프트웨어"
       ],
       "rank": 2277
     },
@@ -41034,7 +41070,7 @@ window.KOS_LIVE_DATA = {
       "name": "위세아이텍",
       "name_en": "WISE iTech Co., Ltd.",
       "market": "코스닥",
-      "sector": "게임",
+      "sector": "IT·소프트웨어",
       "price": 4010,
       "change": 1.01,
       "volume": 32223,
@@ -41043,7 +41079,7 @@ window.KOS_LIVE_DATA = {
       "shares": 7383954,
       "induty_code": "58221",
       "categories": [
-        "게임"
+        "IT·소프트웨어"
       ],
       "rank": 2280
     },
@@ -41088,7 +41124,7 @@ window.KOS_LIVE_DATA = {
       "name": "휴네시온",
       "name_en": "Hunesion co.,ltd",
       "market": "코스닥",
-      "sector": "게임",
+      "sector": "IT·소프트웨어",
       "price": 3070,
       "change": 0.49,
       "volume": 52268,
@@ -41097,7 +41133,7 @@ window.KOS_LIVE_DATA = {
       "shares": 9607672,
       "induty_code": "582",
       "categories": [
-        "게임"
+        "IT·소프트웨어"
       ],
       "rank": 2283
     },
@@ -41142,7 +41178,7 @@ window.KOS_LIVE_DATA = {
       "name": "오픈놀",
       "name_en": "Openknowl Co.,Ltd.",
       "market": "코스닥",
-      "sector": "게임",
+      "sector": "IT·소프트웨어",
       "price": 2995,
       "change": 1.35,
       "volume": 60902,
@@ -41151,7 +41187,7 @@ window.KOS_LIVE_DATA = {
       "shares": 9830000,
       "induty_code": "58222",
       "categories": [
-        "게임"
+        "IT·소프트웨어"
       ],
       "rank": 2286
     },
@@ -41610,7 +41646,7 @@ window.KOS_LIVE_DATA = {
       "name": "버넥트",
       "name_en": "VIRNECT Co., Ltd.",
       "market": "코스닥",
-      "sector": "게임",
+      "sector": "IT·소프트웨어",
       "price": 2545,
       "change": 0.99,
       "volume": 21999,
@@ -41619,7 +41655,7 @@ window.KOS_LIVE_DATA = {
       "shares": 11144890,
       "induty_code": "58222",
       "categories": [
-        "게임"
+        "IT·소프트웨어"
       ],
       "rank": 2312
     },
@@ -41754,7 +41790,7 @@ window.KOS_LIVE_DATA = {
       "name": "시큐브",
       "name_en": "SECUVE Co., Ltd.",
       "market": "코스닥",
-      "sector": "게임",
+      "sector": "IT·소프트웨어",
       "price": 3645,
       "change": 2.24,
       "volume": 55175,
@@ -41763,7 +41799,7 @@ window.KOS_LIVE_DATA = {
       "shares": 7658221,
       "induty_code": "58221",
       "categories": [
-        "게임"
+        "IT·소프트웨어"
       ],
       "rank": 2320
     },
@@ -42132,7 +42168,7 @@ window.KOS_LIVE_DATA = {
       "name": "플래티어",
       "name_en": "Plateer Co., Ltd.",
       "market": "코스닥",
-      "sector": "게임",
+      "sector": "IT·소프트웨어",
       "price": 3185,
       "change": -0.16,
       "volume": 1848,
@@ -42141,7 +42177,7 @@ window.KOS_LIVE_DATA = {
       "shares": 8388207,
       "induty_code": "58222",
       "categories": [
-        "게임"
+        "IT·소프트웨어"
       ],
       "rank": 2341
     },
@@ -42150,7 +42186,7 @@ window.KOS_LIVE_DATA = {
       "name": "이노시뮬레이션",
       "name_en": "INNOSIMULATION CO., LTD.",
       "market": "코스닥",
-      "sector": "게임",
+      "sector": "IT·소프트웨어",
       "price": 2935,
       "change": -2.17,
       "volume": 20345,
@@ -42159,7 +42195,7 @@ window.KOS_LIVE_DATA = {
       "shares": 9086493,
       "induty_code": "58221",
       "categories": [
-        "게임"
+        "IT·소프트웨어"
       ],
       "rank": 2342
     },
@@ -42222,7 +42258,7 @@ window.KOS_LIVE_DATA = {
       "name": "라피치",
       "name_en": "RAPEECH Co.,Ltd",
       "market": "코넥스",
-      "sector": "게임",
+      "sector": "IT·소프트웨어",
       "price": 7400,
       "change": -7.27,
       "volume": 429,
@@ -42231,7 +42267,7 @@ window.KOS_LIVE_DATA = {
       "shares": 3585817,
       "induty_code": "58221",
       "categories": [
-        "게임"
+        "IT·소프트웨어"
       ],
       "rank": 2346
     },
@@ -42546,7 +42582,7 @@ window.KOS_LIVE_DATA = {
       "name": "이노테나",
       "name_en": "Innotena, Inc.",
       "market": "코스닥",
-      "sector": "게임",
+      "sector": "IT·소프트웨어",
       "price": 5260,
       "change": 1.54,
       "volume": 8342,
@@ -42555,7 +42591,7 @@ window.KOS_LIVE_DATA = {
       "shares": 4922665,
       "induty_code": "582",
       "categories": [
-        "게임"
+        "IT·소프트웨어"
       ],
       "rank": 2364
     },
@@ -42645,7 +42681,8 @@ window.KOS_LIVE_DATA = {
       "shares": 9937346,
       "induty_code": "262",
       "categories": [
-        "전자·부품"
+        "전자·부품",
+        "로봇"
       ],
       "rank": 2369
     },
@@ -42726,7 +42763,7 @@ window.KOS_LIVE_DATA = {
       "name": "소프트캠프",
       "name_en": "SOFTCAMP Co., Ltd.",
       "market": "코스닥",
-      "sector": "게임",
+      "sector": "IT·소프트웨어",
       "price": 5100,
       "change": -3.95,
       "volume": 95796,
@@ -42735,7 +42772,7 @@ window.KOS_LIVE_DATA = {
       "shares": 4998256,
       "induty_code": "582",
       "categories": [
-        "게임"
+        "IT·소프트웨어"
       ],
       "rank": 2374
     },
@@ -42870,7 +42907,7 @@ window.KOS_LIVE_DATA = {
       "name": "파라택시스이더리움",
       "name_en": "Parataxis Ethereum, Inc.",
       "market": "코스닥",
-      "sector": "게임",
+      "sector": "IT·소프트웨어",
       "price": 1120,
       "change": -0.18,
       "volume": 32835,
@@ -42879,7 +42916,7 @@ window.KOS_LIVE_DATA = {
       "shares": 22362730,
       "induty_code": "58221",
       "categories": [
-        "게임"
+        "IT·소프트웨어"
       ],
       "rank": 2382
     },
@@ -43032,7 +43069,7 @@ window.KOS_LIVE_DATA = {
       "name": "E8",
       "name_en": "E8 Co.,Ltd.",
       "market": "코스닥",
-      "sector": "게임",
+      "sector": "IT·소프트웨어",
       "price": 1230,
       "change": -1.05,
       "volume": 138043,
@@ -43041,7 +43078,7 @@ window.KOS_LIVE_DATA = {
       "shares": 19850477,
       "induty_code": "582",
       "categories": [
-        "게임"
+        "IT·소프트웨어"
       ],
       "rank": 2391
     },
@@ -43068,7 +43105,7 @@ window.KOS_LIVE_DATA = {
       "name": "이노뎁",
       "name_en": "INNODEP INC.",
       "market": "코스닥",
-      "sector": "게임",
+      "sector": "IT·소프트웨어",
       "price": 3280,
       "change": -1.65,
       "volume": 17439,
@@ -43077,7 +43114,7 @@ window.KOS_LIVE_DATA = {
       "shares": 7339299,
       "induty_code": "582",
       "categories": [
-        "게임"
+        "IT·소프트웨어"
       ],
       "rank": 2393
     },
@@ -43122,7 +43159,7 @@ window.KOS_LIVE_DATA = {
       "name": "밸로프",
       "name_en": "VALOFE Co.,Ltd.",
       "market": "코스닥",
-      "sector": "게임",
+      "sector": "IT·소프트웨어",
       "price": 2355,
       "change": -3.29,
       "volume": 18062,
@@ -43131,7 +43168,7 @@ window.KOS_LIVE_DATA = {
       "shares": 10172878,
       "induty_code": "582",
       "categories": [
-        "게임"
+        "IT·소프트웨어"
       ],
       "rank": 2396
     },
@@ -43410,7 +43447,7 @@ window.KOS_LIVE_DATA = {
       "name": "바이브컴퍼니",
       "name_en": "VAIV company Inc.",
       "market": "코스닥",
-      "sector": "게임",
+      "sector": "IT·소프트웨어",
       "price": 1788,
       "change": 6.3,
       "volume": 42814,
@@ -43419,7 +43456,7 @@ window.KOS_LIVE_DATA = {
       "shares": 13154712,
       "induty_code": "58222",
       "categories": [
-        "게임"
+        "IT·소프트웨어"
       ],
       "rank": 2412
     },
@@ -43446,7 +43483,7 @@ window.KOS_LIVE_DATA = {
       "name": "플레이위드",
       "name_en": "PLAYWITH KOREA Inc.",
       "market": "코스닥",
-      "sector": "게임",
+      "sector": "IT·소프트웨어",
       "price": 2610,
       "change": 3.57,
       "volume": 20089,
@@ -43455,7 +43492,7 @@ window.KOS_LIVE_DATA = {
       "shares": 8946495,
       "induty_code": "582",
       "categories": [
-        "게임"
+        "IT·소프트웨어"
       ],
       "rank": 2414
     },
@@ -43536,7 +43573,7 @@ window.KOS_LIVE_DATA = {
       "name": "지란지교시큐리티",
       "name_en": "Jiransecurity Co., Ltd.",
       "market": "코스닥",
-      "sector": "게임",
+      "sector": "IT·소프트웨어",
       "price": 2860,
       "change": -0.87,
       "volume": 26969,
@@ -43545,7 +43582,7 @@ window.KOS_LIVE_DATA = {
       "shares": 8101570,
       "induty_code": "582",
       "categories": [
-        "게임"
+        "IT·소프트웨어"
       ],
       "rank": 2419
     },
@@ -43806,7 +43843,7 @@ window.KOS_LIVE_DATA = {
       "name": "원티드랩",
       "name_en": "Wanted Lab Inc.",
       "market": "코스닥",
-      "sector": "게임",
+      "sector": "IT·소프트웨어",
       "price": 2310,
       "change": -3.55,
       "volume": 39138,
@@ -43815,7 +43852,7 @@ window.KOS_LIVE_DATA = {
       "shares": 9766394,
       "induty_code": "58221",
       "categories": [
-        "게임"
+        "IT·소프트웨어"
       ],
       "rank": 2434
     },
@@ -43914,7 +43951,7 @@ window.KOS_LIVE_DATA = {
       "name": "키네마스터",
       "name_en": "KineMaster Corporation",
       "market": "코스닥",
-      "sector": "게임",
+      "sector": "IT·소프트웨어",
       "price": 1578,
       "change": -2.17,
       "volume": 28843,
@@ -43923,7 +43960,7 @@ window.KOS_LIVE_DATA = {
       "shares": 14118810,
       "induty_code": "58222",
       "categories": [
-        "게임"
+        "IT·소프트웨어"
       ],
       "rank": 2440
     },
@@ -44076,7 +44113,7 @@ window.KOS_LIVE_DATA = {
       "name": "썸에이지",
       "name_en": "Thumbage Co., Ltd.",
       "market": "코스닥",
-      "sector": "게임",
+      "sector": "IT·소프트웨어",
       "price": 158,
       "change": 1.28,
       "volume": 2374057,
@@ -44085,7 +44122,7 @@ window.KOS_LIVE_DATA = {
       "shares": 139240254,
       "induty_code": "582",
       "categories": [
-        "게임"
+        "IT·소프트웨어"
       ],
       "rank": 2449
     },
@@ -44292,7 +44329,7 @@ window.KOS_LIVE_DATA = {
       "name": "케이쓰리아이",
       "name_en": "K3I. Co., Ltd.",
       "market": "코스닥",
-      "sector": "게임",
+      "sector": "IT·소프트웨어",
       "price": 2890,
       "change": 0.35,
       "volume": 26540,
@@ -44301,7 +44338,7 @@ window.KOS_LIVE_DATA = {
       "shares": 7486442,
       "induty_code": "582",
       "categories": [
-        "게임"
+        "IT·소프트웨어"
       ],
       "rank": 2461
     },
@@ -44346,7 +44383,7 @@ window.KOS_LIVE_DATA = {
       "name": "디지캡",
       "name_en": "DigiCAP Co., Ltd.",
       "market": "코스닥",
-      "sector": "게임",
+      "sector": "IT·소프트웨어",
       "price": 1649,
       "change": -1.08,
       "volume": 3839,
@@ -44355,7 +44392,7 @@ window.KOS_LIVE_DATA = {
       "shares": 13013154,
       "induty_code": "58221",
       "categories": [
-        "게임"
+        "IT·소프트웨어"
       ],
       "rank": 2464
     },
@@ -44616,7 +44653,7 @@ window.KOS_LIVE_DATA = {
       "name": "알티캐스트",
       "name_en": "Alticast Corporation",
       "market": "코스닥",
-      "sector": "게임",
+      "sector": "IT·소프트웨어",
       "price": 1601,
       "change": 7.09,
       "volume": 69853,
@@ -44625,7 +44662,7 @@ window.KOS_LIVE_DATA = {
       "shares": 13109206,
       "induty_code": "58222",
       "categories": [
-        "게임"
+        "IT·소프트웨어"
       ],
       "rank": 2479
     },
@@ -44670,7 +44707,7 @@ window.KOS_LIVE_DATA = {
       "name": "모바일어플라이언스",
       "name_en": "MOBILE APPLIANCE, INC.",
       "market": "코스닥",
-      "sector": "게임",
+      "sector": "IT·소프트웨어",
       "price": 638,
       "change": -8.2,
       "volume": 1465770,
@@ -44679,7 +44716,7 @@ window.KOS_LIVE_DATA = {
       "shares": 32552861,
       "induty_code": "582",
       "categories": [
-        "게임"
+        "IT·소프트웨어"
       ],
       "rank": 2482
     },
@@ -44796,7 +44833,7 @@ window.KOS_LIVE_DATA = {
       "name": "비큐AI",
       "name_en": "BECU AI Inc.",
       "market": "코스닥",
-      "sector": "게임",
+      "sector": "IT·소프트웨어",
       "price": 657,
       "change": -0.9,
       "volume": 263433,
@@ -44805,7 +44842,8 @@ window.KOS_LIVE_DATA = {
       "shares": 31445725,
       "induty_code": "58222",
       "categories": [
-        "게임"
+        "IT·소프트웨어",
+        "인공지능(AI)"
       ],
       "rank": 2489
     },
@@ -44823,7 +44861,8 @@ window.KOS_LIVE_DATA = {
       "shares": 3991073,
       "induty_code": "351",
       "categories": [
-        "에너지·전력"
+        "에너지·전력",
+        "인공지능(AI)"
       ],
       "rank": 2490
     },
@@ -44904,7 +44943,7 @@ window.KOS_LIVE_DATA = {
       "name": "아이티아이즈",
       "name_en": "ITEYES Inc.",
       "market": "코스닥",
-      "sector": "게임",
+      "sector": "IT·소프트웨어",
       "price": 2910,
       "change": 0.0,
       "volume": 14502,
@@ -44913,7 +44952,7 @@ window.KOS_LIVE_DATA = {
       "shares": 7037189,
       "induty_code": "58221",
       "categories": [
-        "게임"
+        "IT·소프트웨어"
       ],
       "rank": 2495
     },
@@ -44994,7 +45033,7 @@ window.KOS_LIVE_DATA = {
       "name": "세중",
       "name_en": "SEJOONG CO., LTD.",
       "market": "코스닥",
-      "sector": "게임",
+      "sector": "IT·소프트웨어",
       "price": 1112,
       "change": -8.1,
       "volume": 403596,
@@ -45003,7 +45042,7 @@ window.KOS_LIVE_DATA = {
       "shares": 18121667,
       "induty_code": "582",
       "categories": [
-        "게임"
+        "IT·소프트웨어"
       ],
       "rank": 2500
     },
@@ -45120,7 +45159,7 @@ window.KOS_LIVE_DATA = {
       "name": "미디어젠",
       "name_en": "MediaZen, Inc.",
       "market": "코스닥",
-      "sector": "게임",
+      "sector": "IT·소프트웨어",
       "price": 4235,
       "change": -3.75,
       "volume": 2142,
@@ -45129,7 +45168,7 @@ window.KOS_LIVE_DATA = {
       "shares": 4684781,
       "induty_code": "58222",
       "categories": [
-        "게임"
+        "IT·소프트웨어"
       ],
       "rank": 2507
     },
@@ -45156,7 +45195,7 @@ window.KOS_LIVE_DATA = {
       "name": "유비온",
       "name_en": "UBION CO.LTD.",
       "market": "코스닥",
-      "sector": "게임",
+      "sector": "IT·소프트웨어",
       "price": 1025,
       "change": -0.29,
       "volume": 21579,
@@ -45165,7 +45204,7 @@ window.KOS_LIVE_DATA = {
       "shares": 19132421,
       "induty_code": "582",
       "categories": [
-        "게임"
+        "IT·소프트웨어"
       ],
       "rank": 2509
     },
@@ -45192,7 +45231,7 @@ window.KOS_LIVE_DATA = {
       "name": "비트맥스",
       "name_en": "BITMAX CO., LTD",
       "market": "코스닥",
-      "sector": "게임",
+      "sector": "IT·소프트웨어",
       "price": 1827,
       "change": -5.34,
       "volume": 39357,
@@ -45201,7 +45240,7 @@ window.KOS_LIVE_DATA = {
       "shares": 10694360,
       "induty_code": "582",
       "categories": [
-        "게임"
+        "IT·소프트웨어"
       ],
       "rank": 2511
     },
@@ -45264,7 +45303,7 @@ window.KOS_LIVE_DATA = {
       "name": "에스에스알",
       "name_en": "SSR Inc.",
       "market": "코스닥",
-      "sector": "게임",
+      "sector": "IT·소프트웨어",
       "price": 3670,
       "change": 5.01,
       "volume": 16845,
@@ -45273,7 +45312,7 @@ window.KOS_LIVE_DATA = {
       "shares": 5253808,
       "induty_code": "582",
       "categories": [
-        "게임"
+        "IT·소프트웨어"
       ],
       "rank": 2515
     },
@@ -45732,7 +45771,7 @@ window.KOS_LIVE_DATA = {
       "name": "유디엠텍",
       "name_en": "UDMTEK Co.,Ltd.",
       "market": "코스닥",
-      "sector": "게임",
+      "sector": "IT·소프트웨어",
       "price": 2135,
       "change": -1.84,
       "volume": 65174,
@@ -45741,7 +45780,7 @@ window.KOS_LIVE_DATA = {
       "shares": 8318493,
       "induty_code": "58222",
       "categories": [
-        "게임"
+        "IT·소프트웨어"
       ],
       "rank": 2541
     },
@@ -46847,7 +46886,7 @@ window.KOS_LIVE_DATA = {
       "name": "틸론",
       "name_en": "TILON Co.,Ltd.",
       "market": "코넥스",
-      "sector": "게임",
+      "sector": "IT·소프트웨어",
       "price": 1226,
       "change": 2.42,
       "volume": 306,
@@ -46856,7 +46895,7 @@ window.KOS_LIVE_DATA = {
       "shares": 10727290,
       "induty_code": "58222",
       "categories": [
-        "게임"
+        "IT·소프트웨어"
       ],
       "rank": 2603
     },
@@ -46973,7 +47012,7 @@ window.KOS_LIVE_DATA = {
       "name": "핀텔",
       "name_en": "Pintel Co.,Ltd.",
       "market": "코스닥",
-      "sector": "게임",
+      "sector": "IT·소프트웨어",
       "price": 1082,
       "change": 2.66,
       "volume": 144445,
@@ -46982,7 +47021,7 @@ window.KOS_LIVE_DATA = {
       "shares": 11368712,
       "induty_code": "58222",
       "categories": [
-        "게임"
+        "IT·소프트웨어"
       ],
       "rank": 2610
     },
@@ -47252,7 +47291,8 @@ window.KOS_LIVE_DATA = {
       "shares": 20110080,
       "induty_code": "27192",
       "categories": [
-        "전자·부품"
+        "전자·부품",
+        "인공지능(AI)"
       ],
       "rank": 2625
     },
@@ -47549,7 +47589,7 @@ window.KOS_LIVE_DATA = {
       "name": "투비소프트",
       "name_en": "TOBESOFT Co., Ltd.",
       "market": "코스닥",
-      "sector": "게임",
+      "sector": "IT·소프트웨어",
       "price": 596,
       "change": 0.0,
       "volume": 0,
@@ -47558,7 +47598,7 @@ window.KOS_LIVE_DATA = {
       "shares": 12829234,
       "induty_code": "58221",
       "categories": [
-        "게임"
+        "IT·소프트웨어"
       ],
       "rank": 2642
     },
@@ -47675,7 +47715,7 @@ window.KOS_LIVE_DATA = {
       "name": "데이터스트림즈",
       "name_en": "Data Streams Corp.",
       "market": "코넥스",
-      "sector": "게임",
+      "sector": "IT·소프트웨어",
       "price": 1553,
       "change": -8.54,
       "volume": 3805,
@@ -47684,7 +47724,7 @@ window.KOS_LIVE_DATA = {
       "shares": 4268613,
       "induty_code": "58221",
       "categories": [
-        "게임"
+        "IT·소프트웨어"
       ],
       "rank": 2649
     },
@@ -47837,7 +47877,7 @@ window.KOS_LIVE_DATA = {
       "name": "판도라티비",
       "name_en": "PANDORA TV CO.,LTD.",
       "market": "코넥스",
-      "sector": "게임",
+      "sector": "IT·소프트웨어",
       "price": 467,
       "change": 10.14,
       "volume": 5791,
@@ -47846,7 +47886,7 @@ window.KOS_LIVE_DATA = {
       "shares": 11915582,
       "induty_code": "58221",
       "categories": [
-        "게임"
+        "IT·소프트웨어"
       ],
       "rank": 2658
     },
@@ -47909,7 +47949,7 @@ window.KOS_LIVE_DATA = {
       "name": "타임기술",
       "name_en": "TIME Technical Support. ltd",
       "market": "코넥스",
-      "sector": "게임",
+      "sector": "IT·소프트웨어",
       "price": 2490,
       "change": 3.75,
       "volume": 88,
@@ -47918,7 +47958,7 @@ window.KOS_LIVE_DATA = {
       "shares": 2152101,
       "induty_code": "582",
       "categories": [
-        "게임"
+        "IT·소프트웨어"
       ],
       "rank": 2662
     },
@@ -48017,7 +48057,7 @@ window.KOS_LIVE_DATA = {
       "name": "인터로이드",
       "name_en": "InterRoid Co., Ltd.",
       "market": "코넥스",
-      "sector": "게임",
+      "sector": "IT·소프트웨어",
       "price": 1590,
       "change": 0.7,
       "volume": 70,
@@ -48026,7 +48066,7 @@ window.KOS_LIVE_DATA = {
       "shares": 3062664,
       "induty_code": "58222",
       "categories": [
-        "게임"
+        "IT·소프트웨어"
       ],
       "rank": 2668
     },
@@ -48089,7 +48129,7 @@ window.KOS_LIVE_DATA = {
       "name": "아이톡시",
       "name_en": "ITOXI Corp.",
       "market": "코스닥",
-      "sector": "게임",
+      "sector": "IT·소프트웨어",
       "price": 312,
       "change": 0.0,
       "volume": 0,
@@ -48098,7 +48138,7 @@ window.KOS_LIVE_DATA = {
       "shares": 14568774,
       "induty_code": "582",
       "categories": [
-        "게임"
+        "IT·소프트웨어"
       ],
       "rank": 2672
     },
@@ -48431,7 +48471,7 @@ window.KOS_LIVE_DATA = {
       "name": "비유테크놀러지",
       "name_en": "B.U Technology",
       "market": "코스닥",
-      "sector": "게임",
+      "sector": "IT·소프트웨어",
       "price": 2,
       "change": -33.33,
       "volume": 27227682,
@@ -48440,7 +48480,7 @@ window.KOS_LIVE_DATA = {
       "shares": 93320557,
       "induty_code": "582",
       "categories": [
-        "게임"
+        "IT·소프트웨어"
       ],
       "rank": 2691
     }
