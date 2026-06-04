@@ -176,12 +176,10 @@ body::before{content:"";position:fixed;inset:0;z-index:-1;pointer-events:none;
   .foot-grid{grid-template-columns:1fr 1fr;gap:24px}.foot-brand{grid-column:1/-1}.foot-bottom{flex-direction:column;gap:8px}
 }
 @media (max-width:560px){
-  /* 정렬 영역 한 줄 차지. 버튼은 자연 크기 유지(겹침 방지), 넘치면 가로 스크롤 */
-  .sortwrap{width:100%;flex-wrap:nowrap;gap:0}
-  .sort-label{display:none}
-  .seg{flex:1;min-width:0;overflow-x:auto;flex-wrap:nowrap;justify-content:flex-start;scrollbar-width:none}
-  .seg::-webkit-scrollbar{display:none}
-  .seg button{flex:0 0 auto;white-space:nowrap;padding:8px 13px;font-size:12.5px}
+  /* 정렬 버튼을 2줄(2×2)로 줄바꿈 — 가로 스크롤 없이 화면 안에 */
+  .sortwrap{width:100%}
+  .seg{flex:1;flex-wrap:wrap;gap:4px}
+  .seg button{flex:1 1 calc(50% - 4px);white-space:nowrap;padding:8px 6px;font-size:12.5px}
 }
 </style>
 <script src="data/stocks.js"></script>
