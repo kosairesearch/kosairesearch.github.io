@@ -134,6 +134,16 @@ body::before{content:"";position:fixed;inset:0;z-index:-1;pointer-events:none;
 .c-chev{color:var(--fg-3);display:flex;justify-content:flex-end}
 .c-chev svg{width:16px;height:16px}
 
+/* pager */
+.pager{display:flex;justify-content:space-between;align-items:center;gap:12px;flex-wrap:wrap;margin-top:18px}
+.pager .pinfo{font:500 13px var(--font-sans);color:var(--fg-3)}
+.pager .pctl{display:flex;gap:4px;align-items:center;flex-wrap:wrap;justify-content:flex-end}
+.pager .pctl button{min-width:34px;height:34px;padding:0 10px;border:0;border-radius:8px;cursor:pointer;font:600 13px var(--font-sans);color:var(--fg-2);background:rgba(0,0,0,.05);transition:.12s}
+.pager .pctl button:hover:not(:disabled){color:var(--fg-1)}
+.pager .pctl button.active{background:#000;color:#fff}
+:root[data-theme="dark"] .pager .pctl button{background:rgba(255,255,255,.08)}
+:root[data-theme="dark"] .pager .pctl button.active{background:#fff;color:#000}
+.pager .pctl button:disabled{opacity:.4;cursor:default}
 /* empty */
 .empty{display:none;text-align:center;padding:64px 28px;margin-top:8px}
 .empty.show{display:block}
@@ -503,6 +513,7 @@ KOSi18n.register({
     </div>
     <div id="rows" data-i18n-skip></div>
   </div>
+  <div class="pager" id="pager" data-i18n-skip style="display:none"><div class="pinfo" id="pagerInfo"></div><div class="pctl" id="pagerCtl"></div></div>
 
   <!-- EMPTY -->
   <div class="empty" id="empty">
@@ -577,17 +588,39 @@ function rowHtml(s){
     <span class="c-chev"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 6l6 6-6 6"/></svg></span>
   </a>`;
 }
+let page=1; const PAGE_SIZE=10;
+const pagerEl=document.getElementById('pager');
 function render(){
   const cn=document.getElementById('countN'); if(cn) cn.textContent=LIST.length;
   const cu=document.getElementById('countUnit'); if(cu) cu.textContent=EN()?(LIST.length===1?' stock':' stocks'):'개 종목';
-  if(LIST.length===0){wlEl.style.display='none';emptyEl.classList.add('show');return;}
+  if(LIST.length===0){wlEl.style.display='none';emptyEl.classList.add('show');pagerEl.style.display='none';return;}
   wlEl.style.display='';emptyEl.classList.remove('show');
-  rowsEl.innerHTML=sorted().map(rowHtml).join('');
+  const list=sorted(), total=list.length, pages=Math.max(1,Math.ceil(total/PAGE_SIZE));
+  if(page>pages)page=pages; if(page<1)page=1;
+  const start=(page-1)*PAGE_SIZE;
+  rowsEl.innerHTML=list.slice(start,start+PAGE_SIZE).map(rowHtml).join('');
+  // pager (10개씩, 모바일 5 / 데스크톱 10 블록)
+  if(pages<=1){ pagerEl.style.display='none'; return; }
+  pagerEl.style.display='';
+  const EN_=EN();
+  document.getElementById('pagerInfo').textContent=EN_?`${start+1}–${Math.min(start+PAGE_SIZE,total)} of ${total}`:`${start+1}–${Math.min(start+PAGE_SIZE,total)} / 총 ${total}개`;
+  const BLK=(window.matchMedia&&matchMedia('(max-width:640px)').matches)?5:10;
+  const blk=Math.floor((page-1)/BLK), bs=blk*BLK+1, be=Math.min(bs+BLK-1,pages);
+  let b=`<button ${page<=1?'disabled':''} data-pg="prev">‹</button>`;
+  for(let i=bs;i<=be;i++) b+=`<button class="${i===page?'active':''}" data-pg="${i}">${i}</button>`;
+  b+=`<button ${page>=pages?'disabled':''} data-pg="next">›</button>`;
+  document.getElementById('pagerCtl').innerHTML=b;
 }
+document.getElementById('pagerCtl').addEventListener('click',e=>{
+  const b=e.target.closest('button[data-pg]'); if(!b) return;
+  const pg=b.dataset.pg;
+  if(pg==='prev')page=Math.max(1,page-1); else if(pg==='next')page++; else page=+pg;
+  render(); window.scrollTo({top:0,behavior:'smooth'});
+});
 render();
 
 function applySort(k){
-  sortKey=k;
+  sortKey=k; page=1;
   [...document.getElementById('sortSeg').children].forEach(c=>c.classList.toggle('active',c.dataset.sort===k));
   const sel=document.getElementById('sortSelect'); if(sel) sel.value=k;
   render();
