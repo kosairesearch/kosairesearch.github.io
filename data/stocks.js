@@ -1,6 +1,6 @@
 // KOS ai — 자동 생성 데이터 파일. 직접 수정하지 마세요.
 window.KOS_LIVE_DATA = {
-  "lastUpdated": "2026-06-04 16:35",
+  "lastUpdated": "2026-06-04 17:29",
   "dataDate": "20260604",
   "stocks": [
     {
@@ -11,9 +11,9 @@ window.KOS_LIVE_DATA = {
       "sector": "반도체",
       "price": 351500,
       "change": -2.5,
-      "volume": 34314920,
-      "trading_value": 12181319190250,
-      "mcap": 2060.81,
+      "volume": 34771037,
+      "trading_value": 12341958993806,
+      "mcap": 2054.97,
       "shares": 5846278608,
       "induty_code": "264",
       "categories": [
@@ -30,9 +30,9 @@ window.KOS_LIVE_DATA = {
       "sector": "반도체",
       "price": 2298000,
       "change": -2.63,
-      "volume": 3659482,
-      "trading_value": 8390082627500,
-      "mcap": 1630.66,
+      "volume": 3941067,
+      "trading_value": 9036753877655,
+      "mcap": 1637.79,
       "shares": 712702365,
       "induty_code": "2612",
       "categories": [
@@ -49,9 +49,9 @@ window.KOS_LIVE_DATA = {
       "sector": "지주",
       "price": 1361000,
       "change": 1.11,
-      "volume": 857433,
-      "trading_value": 1163238939500,
-      "mcap": 180.52,
+      "volume": 858305,
+      "trading_value": 1164425731500,
+      "mcap": 179.6,
       "shares": 131958386,
       "induty_code": "64992",
       "categories": [
@@ -67,8 +67,8 @@ window.KOS_LIVE_DATA = {
       "sector": "자동차",
       "price": 700000,
       "change": -3.98,
-      "volume": 1061547,
-      "trading_value": 747274579000,
+      "volume": 1062671,
+      "trading_value": 748061379000,
       "mcap": 143.33,
       "shares": 204757766,
       "induty_code": "30121",
@@ -86,9 +86,9 @@ window.KOS_LIVE_DATA = {
       "sector": "전자·부품",
       "price": 1716000,
       "change": -5.35,
-      "volume": 1434249,
-      "trading_value": 2523346906000,
-      "mcap": 128.55,
+      "volume": 1435204,
+      "trading_value": 2524985686000,
+      "mcap": 128.17,
       "shares": 74693696,
       "induty_code": "2622",
       "categories": [
@@ -104,33 +104,15 @@ window.KOS_LIVE_DATA = {
       "sector": "2차전지",
       "price": 422000,
       "change": -4.63,
-      "volume": 707995,
-      "trading_value": 301359507500,
-      "mcap": 99.45,
+      "volume": 708012,
+      "trading_value": 301366681500,
+      "mcap": 98.75,
       "shares": 234000000,
       "induty_code": "28202",
       "categories": [
         "2차전지"
       ],
       "rank": 6
-    },
-    {
-      "ticker": "028260",
-      "name": "삼성물산",
-      "name_en": "SAMSUNG C&T CORPORATION",
-      "market": "코스피",
-      "sector": "건설·건자재",
-      "price": 535000,
-      "change": 10.2,
-      "volume": 1329684,
-      "trading_value": 697863042750,
-      "mcap": 87.25,
-      "shares": 162167581,
-      "induty_code": "467",
-      "categories": [
-        "건설·건자재"
-      ],
-      "rank": 7
     },
     {
       "ticker": "032830",
@@ -140,13 +122,31 @@ window.KOS_LIVE_DATA = {
       "sector": "보험",
       "price": 438000,
       "change": -8.75,
-      "volume": 1011569,
-      "trading_value": 434348112500,
-      "mcap": 87.1,
+      "volume": 1025694,
+      "trading_value": 440414020375,
+      "mcap": 87.6,
       "shares": 200000000,
       "induty_code": "65110",
       "categories": [
         "보험"
+      ],
+      "rank": 7
+    },
+    {
+      "ticker": "028260",
+      "name": "삼성물산",
+      "name_en": "SAMSUNG C&T CORPORATION",
+      "market": "코스피",
+      "sector": "건설·건자재",
+      "price": 535000,
+      "change": 10.2,
+      "volume": 1331923,
+      "trading_value": 699060907750,
+      "mcap": 86.76,
+      "shares": 162167581,
+      "induty_code": "467",
+      "categories": [
+        "건설·건자재"
       ],
       "rank": 8
     },
@@ -158,9 +158,9 @@ window.KOS_LIVE_DATA = {
       "sector": "조선",
       "price": 651000,
       "change": -3.27,
-      "volume": 354982,
-      "trading_value": 236217720000,
-      "mcap": 68.43,
+      "volume": 354983,
+      "trading_value": 236218371000,
+      "mcap": 68.33,
       "shares": 104961225,
       "induty_code": "31113",
       "categories": [
@@ -176,9 +176,9 @@ window.KOS_LIVE_DATA = {
       "sector": "자동차",
       "price": 748000,
       "change": -1.45,
-      "volume": 787100,
-      "trading_value": 586147379000,
-      "mcap": 68.14,
+      "volume": 788548,
+      "trading_value": 587230483000,
+      "mcap": 67.87,
       "shares": 90732583,
       "induty_code": "303",
       "categories": [
@@ -195,9 +195,9 @@ window.KOS_LIVE_DATA = {
       "sector": "자동차",
       "price": 164300,
       "change": -2.67,
-      "volume": 1477504,
-      "trading_value": 243683499950,
-      "mcap": 64.11,
+      "volume": 1477518,
+      "trading_value": 243685800150,
+      "mcap": 64.14,
       "shares": 390412998,
       "induty_code": "30121",
       "categories": [
@@ -214,9 +214,9 @@ window.KOS_LIVE_DATA = {
       "sector": "에너지·전력",
       "price": 99200,
       "change": -0.8,
-      "volume": 2776295,
-      "trading_value": 276054499650,
-      "mcap": 63.61,
+      "volume": 2776755,
+      "trading_value": 276100131650,
+      "mcap": 63.54,
       "shares": 640561146,
       "induty_code": "29119",
       "categories": [
@@ -236,7 +236,7 @@ window.KOS_LIVE_DATA = {
       "change": -1.24,
       "volume": 69504,
       "trading_value": 94426652500,
-      "mcap": 62.4,
+      "mcap": 62.49,
       "shares": 46290951,
       "induty_code": "211",
       "categories": [
@@ -253,9 +253,9 @@ window.KOS_LIVE_DATA = {
       "sector": "금융",
       "price": 164200,
       "change": 4.85,
-      "volume": 2139478,
-      "trading_value": 346453626750,
-      "mcap": 61.0,
+      "volume": 2143129,
+      "trading_value": 347053120950,
+      "mcap": 61.22,
       "shares": 372850455,
       "induty_code": "64992",
       "categories": [
@@ -271,9 +271,9 @@ window.KOS_LIVE_DATA = {
       "sector": "항공·방산",
       "price": 1068000,
       "change": -0.19,
-      "volume": 315238,
-      "trading_value": 334978120500,
-      "mcap": 55.28,
+      "volume": 351981,
+      "trading_value": 373742891132,
+      "mcap": 55.07,
       "shares": 51563401,
       "induty_code": "31321",
       "categories": [
@@ -290,9 +290,9 @@ window.KOS_LIVE_DATA = {
       "sector": "전자·부품",
       "price": 328000,
       "change": -16.43,
-      "volume": 4288278,
-      "trading_value": 1450113751250,
-      "mcap": 53.67,
+      "volume": 4294026,
+      "trading_value": 1451999095250,
+      "mcap": 53.43,
       "shares": 162884638,
       "induty_code": "264",
       "categories": [
@@ -308,9 +308,9 @@ window.KOS_LIVE_DATA = {
       "sector": "2차전지",
       "price": 607000,
       "change": 0.83,
-      "volume": 466380,
-      "trading_value": 280289028500,
-      "mcap": 48.51,
+      "volume": 466801,
+      "trading_value": 280544575500,
+      "mcap": 48.92,
       "shares": 80585530,
       "induty_code": "28202",
       "categories": [
@@ -326,9 +326,9 @@ window.KOS_LIVE_DATA = {
       "sector": "지주",
       "price": 668000,
       "change": 0.0,
-      "volume": 216151,
-      "trading_value": 144441609500,
-      "mcap": 48.36,
+      "volume": 217047,
+      "trading_value": 145040137500,
+      "mcap": 48.43,
       "shares": 72502703,
       "induty_code": "64992",
       "categories": [
@@ -344,9 +344,9 @@ window.KOS_LIVE_DATA = {
       "sector": "금융",
       "price": 100100,
       "change": 3.84,
-      "volume": 2050213,
-      "trading_value": 204650612400,
-      "mcap": 47.61,
+      "volume": 2050259,
+      "trading_value": 204655217000,
+      "mcap": 47.51,
       "shares": 474654361,
       "induty_code": "64992",
       "categories": [
@@ -362,9 +362,9 @@ window.KOS_LIVE_DATA = {
       "sector": "IT·소프트웨어",
       "price": 267500,
       "change": -4.63,
-      "volume": 3324031,
-      "trading_value": 876636102250,
-      "mcap": 41.89,
+      "volume": 3324373,
+      "trading_value": 876727587250,
+      "mcap": 41.96,
       "shares": 156873776,
       "induty_code": "63120",
       "categories": [
@@ -383,7 +383,7 @@ window.KOS_LIVE_DATA = {
       "change": -1.45,
       "volume": 581517,
       "trading_value": 102806695450,
-      "mcap": 39.13,
+      "mcap": 39.12,
       "shares": 221633364,
       "induty_code": "21100",
       "categories": [
@@ -393,24 +393,6 @@ window.KOS_LIVE_DATA = {
       "rank": 21
     },
     {
-      "ticker": "010120",
-      "name": "LS ELECTRIC",
-      "name_en": "LS ELECTRIC CO., LTD",
-      "market": "코스피",
-      "sector": "전기장비",
-      "price": 239500,
-      "change": -0.83,
-      "volume": 681610,
-      "trading_value": 164684025750,
-      "mcap": 36.08,
-      "shares": 150000000,
-      "induty_code": "28121",
-      "categories": [
-        "전기장비"
-      ],
-      "rank": 22
-    },
-    {
       "ticker": "267260",
       "name": "HD현대일렉트릭",
       "name_en": "HD HYUNDAI ELECTRIC CO.,LTD",
@@ -418,14 +400,32 @@ window.KOS_LIVE_DATA = {
       "sector": "전기장비",
       "price": 999000,
       "change": 0.4,
-      "volume": 294607,
-      "trading_value": 297938938236,
-      "mcap": 35.94,
+      "volume": 301379,
+      "trading_value": 304788673576,
+      "mcap": 36.01,
       "shares": 36047135,
       "induty_code": "281",
       "categories": [
         "전기장비",
         "원전·전력"
+      ],
+      "rank": 22
+    },
+    {
+      "ticker": "010120",
+      "name": "LS ELECTRIC",
+      "name_en": "LS ELECTRIC CO., LTD",
+      "market": "코스피",
+      "sector": "전기장비",
+      "price": 239500,
+      "change": -0.83,
+      "volume": 681667,
+      "trading_value": 164697677250,
+      "mcap": 35.92,
+      "shares": 150000000,
+      "induty_code": "28121",
+      "categories": [
+        "전기장비"
       ],
       "rank": 23
     },
@@ -437,9 +437,9 @@ window.KOS_LIVE_DATA = {
       "sector": "조선",
       "price": 115100,
       "change": -0.78,
-      "volume": 1284079,
-      "trading_value": 148905281500,
-      "mcap": 35.39,
+      "volume": 1284204,
+      "trading_value": 148919669000,
+      "mcap": 35.27,
       "shares": 306413394,
       "induty_code": "3111",
       "categories": [
@@ -455,9 +455,9 @@ window.KOS_LIVE_DATA = {
       "sector": "금융",
       "price": 120600,
       "change": 3.08,
-      "volume": 974777,
-      "trading_value": 116906201000,
-      "mcap": 33.01,
+      "volume": 974778,
+      "trading_value": 116906321600,
+      "mcap": 33.09,
       "shares": 274367748,
       "induty_code": "64992",
       "categories": [
@@ -473,8 +473,8 @@ window.KOS_LIVE_DATA = {
       "sector": "금융",
       "price": 58300,
       "change": 0.87,
-      "volume": 2297192,
-      "trading_value": 134941840900,
+      "volume": 2297309,
+      "trading_value": 134948662000,
       "mcap": 32.62,
       "shares": 559566880,
       "induty_code": "66121",
@@ -484,24 +484,6 @@ window.KOS_LIVE_DATA = {
       "rank": 26
     },
     {
-      "ticker": "298040",
-      "name": "효성중공업",
-      "name_en": "Hyosung Heavy Industries Corporation",
-      "market": "코스피",
-      "sector": "전기장비",
-      "price": 3488000,
-      "change": -1.58,
-      "volume": 42528,
-      "trading_value": 150232850500,
-      "mcap": 32.62,
-      "shares": 9324548,
-      "induty_code": "281",
-      "categories": [
-        "전기장비"
-      ],
-      "rank": 27
-    },
-    {
       "ticker": "000810",
       "name": "삼성화재",
       "name_en": "SAMSUNG FIRE & MARINE INSURANCE CO.,LTD",
@@ -509,13 +491,31 @@ window.KOS_LIVE_DATA = {
       "sector": "보험",
       "price": 730000,
       "change": 13.88,
-      "volume": 443781,
-      "trading_value": 318949871500,
-      "mcap": 32.41,
+      "volume": 443786,
+      "trading_value": 318953521500,
+      "mcap": 32.59,
       "shares": 44647473,
       "induty_code": "65121",
       "categories": [
         "보험"
+      ],
+      "rank": 27
+    },
+    {
+      "ticker": "298040",
+      "name": "효성중공업",
+      "name_en": "Hyosung Heavy Industries Corporation",
+      "market": "코스피",
+      "sector": "전기장비",
+      "price": 3488000,
+      "change": -1.58,
+      "volume": 42534,
+      "trading_value": 150253778500,
+      "mcap": 32.52,
+      "shares": 9324548,
+      "induty_code": "281",
+      "categories": [
+        "전기장비"
       ],
       "rank": 28
     },
@@ -527,9 +527,9 @@ window.KOS_LIVE_DATA = {
       "sector": "철강·금속",
       "price": 402000,
       "change": 0.75,
-      "volume": 481985,
-      "trading_value": 193606237750,
-      "mcap": 31.8,
+      "volume": 481991,
+      "trading_value": 193608649750,
+      "mcap": 31.86,
       "shares": 79241527,
       "induty_code": "2411",
       "categories": [
@@ -545,9 +545,9 @@ window.KOS_LIVE_DATA = {
       "sector": "지주",
       "price": 1800000,
       "change": -6.15,
-      "volume": 118100,
-      "trading_value": 212833758000,
-      "mcap": 29.07,
+      "volume": 118102,
+      "trading_value": 212837358000,
+      "mcap": 29.15,
       "shares": 16193835,
       "induty_code": "26221",
       "categories": [
@@ -563,8 +563,8 @@ window.KOS_LIVE_DATA = {
       "sector": "반도체",
       "price": 304000,
       "change": 10.34,
-      "volume": 2394664,
-      "trading_value": 734622909750,
+      "volume": 2395265,
+      "trading_value": 734805613750,
       "mcap": 28.97,
       "shares": 95312200,
       "induty_code": "29271",
@@ -582,9 +582,9 @@ window.KOS_LIVE_DATA = {
       "sector": "전자·부품",
       "price": 1173000,
       "change": -6.31,
-      "volume": 517407,
-      "trading_value": 609141031000,
-      "mcap": 27.81,
+      "volume": 517511,
+      "trading_value": 609263023000,
+      "mcap": 27.76,
       "shares": 23667107,
       "induty_code": "262",
       "categories": [
@@ -600,9 +600,9 @@ window.KOS_LIVE_DATA = {
       "sector": "철강·금속",
       "price": 1316000,
       "change": -0.45,
-      "volume": 19632,
-      "trading_value": 25824215500,
-      "mcap": 27.45,
+      "volume": 19633,
+      "trading_value": 25825531500,
+      "mcap": 27.47,
       "shares": 20872969,
       "induty_code": "24213",
       "categories": [
@@ -618,9 +618,9 @@ window.KOS_LIVE_DATA = {
       "sector": "조선",
       "price": 379500,
       "change": -1.04,
-      "volume": 306729,
-      "trading_value": 117067358750,
-      "mcap": 26.75,
+      "volume": 306734,
+      "trading_value": 117069256250,
+      "mcap": 26.86,
       "shares": 70773116,
       "induty_code": "64992",
       "categories": [
@@ -636,34 +636,15 @@ window.KOS_LIVE_DATA = {
       "sector": "조선",
       "price": 28400,
       "change": 2.53,
-      "volume": 9540243,
-      "trading_value": 275305216600,
-      "mcap": 25.08,
+      "volume": 9541471,
+      "trading_value": 275340091800,
+      "mcap": 24.99,
       "shares": 880000000,
       "induty_code": "3111",
       "categories": [
         "조선"
       ],
       "rank": 35
-    },
-    {
-      "ticker": "015760",
-      "name": "한국전력",
-      "name_en": "KOREA ELECTRIC POWER CORPORATION",
-      "market": "코스피",
-      "sector": "에너지·전력",
-      "price": 38700,
-      "change": 2.52,
-      "volume": 2039942,
-      "trading_value": 78808933800,
-      "mcap": 24.91,
-      "shares": 641964077,
-      "induty_code": "35120",
-      "categories": [
-        "에너지·전력",
-        "원전·전력"
-      ],
-      "rank": 36
     },
     {
       "ticker": "051910",
@@ -673,13 +654,32 @@ window.KOS_LIVE_DATA = {
       "sector": "화학",
       "price": 352000,
       "change": -0.85,
-      "volume": 373026,
-      "trading_value": 130414910250,
-      "mcap": 24.64,
+      "volume": 437034,
+      "trading_value": 152904194793,
+      "mcap": 24.85,
       "shares": 70592343,
       "induty_code": "20111",
       "categories": [
         "화학"
+      ],
+      "rank": 36
+    },
+    {
+      "ticker": "015760",
+      "name": "한국전력",
+      "name_en": "KOREA ELECTRIC POWER CORPORATION",
+      "market": "코스피",
+      "sector": "에너지·전력",
+      "price": 38700,
+      "change": 2.52,
+      "volume": 2192650,
+      "trading_value": 84573695950,
+      "mcap": 24.84,
+      "shares": 641964077,
+      "induty_code": "35120",
+      "categories": [
+        "에너지·전력",
+        "원전·전력"
       ],
       "rank": 37
     },
@@ -691,9 +691,9 @@ window.KOS_LIVE_DATA = {
       "sector": "통신",
       "price": 108900,
       "change": -13.02,
-      "volume": 3053077,
-      "trading_value": 338393201950,
-      "mcap": 23.48,
+      "volume": 3053343,
+      "trading_value": 338422169350,
+      "mcap": 23.39,
       "shares": 214790053,
       "induty_code": "61220",
       "categories": [
@@ -709,9 +709,9 @@ window.KOS_LIVE_DATA = {
       "sector": "게임",
       "price": 839000,
       "change": -6.57,
-      "volume": 121961,
-      "trading_value": 102441232000,
-      "mcap": 22.95,
+      "volume": 122019,
+      "trading_value": 102489894000,
+      "mcap": 23.01,
       "shares": 27423982,
       "induty_code": "582",
       "categories": [
@@ -727,8 +727,8 @@ window.KOS_LIVE_DATA = {
       "sector": "금융",
       "price": 30400,
       "change": 1.67,
-      "volume": 2111958,
-      "trading_value": 64286955025,
+      "volume": 2111962,
+      "trading_value": 64287076625,
       "mcap": 22.32,
       "shares": 734076320,
       "induty_code": "64992",
@@ -747,7 +747,7 @@ window.KOS_LIVE_DATA = {
       "change": 1.27,
       "volume": 218001,
       "trading_value": 61124756500,
-      "mcap": 22.24,
+      "mcap": 22.12,
       "shares": 78993085,
       "induty_code": "64992",
       "categories": [
@@ -763,9 +763,9 @@ window.KOS_LIVE_DATA = {
       "sector": "항공·방산",
       "price": 192700,
       "change": -5.07,
-      "volume": 664097,
-      "trading_value": 128253617450,
-      "mcap": 21.24,
+      "volume": 664121,
+      "trading_value": 128258242250,
+      "mcap": 21.03,
       "shares": 109142293,
       "induty_code": "31910",
       "categories": [
@@ -782,9 +782,9 @@ window.KOS_LIVE_DATA = {
       "sector": "IT·소프트웨어",
       "price": 268000,
       "change": -10.82,
-      "volume": 830264,
-      "trading_value": 222830359750,
-      "mcap": 20.89,
+      "volume": 831325,
+      "trading_value": 223114707750,
+      "mcap": 20.74,
       "shares": 77377800,
       "induty_code": "62021",
       "categories": [
@@ -801,9 +801,9 @@ window.KOS_LIVE_DATA = {
       "sector": "지주",
       "price": 129900,
       "change": -7.21,
-      "volume": 1000912,
-      "trading_value": 129025837950,
-      "mcap": 20.23,
+      "volume": 1001639,
+      "trading_value": 129120275250,
+      "mcap": 20.03,
       "shares": 154221585,
       "induty_code": "64992",
       "categories": [
@@ -819,9 +819,9 @@ window.KOS_LIVE_DATA = {
       "sector": "정유",
       "price": 116800,
       "change": 0.43,
-      "volume": 410852,
-      "trading_value": 48113257850,
-      "mcap": 19.8,
+      "volume": 410882,
+      "trading_value": 48116761850,
+      "mcap": 19.75,
       "shares": 169052788,
       "induty_code": "192",
       "categories": [
@@ -837,9 +837,9 @@ window.KOS_LIVE_DATA = {
       "sector": "2차전지",
       "price": 221500,
       "change": -0.45,
-      "volume": 230006,
-      "trading_value": 51277369500,
-      "mcap": 19.75,
+      "volume": 230025,
+      "trading_value": 51281578000,
+      "mcap": 19.7,
       "shares": 88946220,
       "induty_code": "282",
       "categories": [
@@ -855,9 +855,9 @@ window.KOS_LIVE_DATA = {
       "sector": "2차전지",
       "price": 197400,
       "change": -0.3,
-      "volume": 656104,
-      "trading_value": 131268636150,
-      "mcap": 19.25,
+      "volume": 656199,
+      "trading_value": 131287389150,
+      "mcap": 19.31,
       "shares": 97830434,
       "induty_code": "28202",
       "categories": [
@@ -873,8 +873,8 @@ window.KOS_LIVE_DATA = {
       "sector": "바이오·제약",
       "price": 346500,
       "change": -2.94,
-      "volume": 393265,
-      "trading_value": 139077773000,
+      "volume": 393271,
+      "trading_value": 139079852000,
       "mcap": 18.57,
       "shares": 53586343,
       "induty_code": "70113",
@@ -885,24 +885,6 @@ window.KOS_LIVE_DATA = {
       "rank": 48
     },
     {
-      "ticker": "011200",
-      "name": "HMM",
-      "name_en": "HMM CO.,LTD",
-      "market": "코스피",
-      "sector": "운송·물류",
-      "price": 19620,
-      "change": 0.56,
-      "volume": 1695609,
-      "trading_value": 33554990080,
-      "mcap": 18.53,
-      "shares": 943237970,
-      "induty_code": "50112",
-      "categories": [
-        "운송·물류"
-      ],
-      "rank": 49
-    },
-    {
       "ticker": "035720",
       "name": "카카오",
       "name_en": "Kakao Corp.",
@@ -910,34 +892,34 @@ window.KOS_LIVE_DATA = {
       "sector": "IT·소프트웨어",
       "price": 42000,
       "change": -1.29,
-      "volume": 2029140,
-      "trading_value": 85359098350,
-      "mcap": 18.51,
+      "volume": 2029148,
+      "trading_value": 85359434350,
+      "mcap": 18.55,
       "shares": 441690614,
       "induty_code": "63120",
       "categories": [
         "IT·소프트웨어",
         "인공지능(AI)"
       ],
-      "rank": 50
+      "rank": 49
     },
     {
-      "ticker": "272210",
-      "name": "한화시스템",
-      "name_en": "HANWHA SYSTEMS Co., Ltd.",
+      "ticker": "011200",
+      "name": "HMM",
+      "name_en": "HMM CO.,LTD",
       "market": "코스피",
-      "sector": "전자·부품",
-      "price": 96100,
-      "change": -1.33,
-      "volume": 768044,
-      "trading_value": 74004044000,
-      "mcap": 18.27,
-      "shares": 188919389,
-      "induty_code": "26299",
+      "sector": "운송·물류",
+      "price": 19620,
+      "change": 0.56,
+      "volume": 1712067,
+      "trading_value": 33877896040,
+      "mcap": 18.51,
+      "shares": 943237970,
+      "induty_code": "50112",
       "categories": [
-        "전자·부품"
+        "운송·물류"
       ],
-      "rank": 51
+      "rank": 50
     },
     {
       "ticker": "033780",
@@ -949,11 +931,29 @@ window.KOS_LIVE_DATA = {
       "change": -4.77,
       "volume": 505523,
       "trading_value": 90046582450,
-      "mcap": 18.24,
+      "mcap": 18.25,
       "shares": 103810456,
       "induty_code": "12000",
       "categories": [
         "식음료"
+      ],
+      "rank": 51
+    },
+    {
+      "ticker": "272210",
+      "name": "한화시스템",
+      "name_en": "HANWHA SYSTEMS Co., Ltd.",
+      "market": "코스피",
+      "sector": "전자·부품",
+      "price": 96100,
+      "change": -1.33,
+      "volume": 768124,
+      "trading_value": 74011732000,
+      "mcap": 18.16,
+      "shares": 188919389,
+      "induty_code": "26299",
+      "categories": [
+        "전자·부품"
       ],
       "rank": 52
     },
@@ -965,9 +965,9 @@ window.KOS_LIVE_DATA = {
       "sector": "금융",
       "price": 106500,
       "change": 0.38,
-      "volume": 361035,
-      "trading_value": 38632278400,
-      "mcap": 17.81,
+      "volume": 363946,
+      "trading_value": 38942299900,
+      "mcap": 17.82,
       "shares": 167347273,
       "induty_code": "64992",
       "categories": [
@@ -983,9 +983,9 @@ window.KOS_LIVE_DATA = {
       "sector": "2차전지",
       "price": 128800,
       "change": 0.94,
-      "volume": 1370132,
-      "trading_value": 181142531250,
-      "mcap": 17.57,
+      "volume": 1370143,
+      "trading_value": 181143948050,
+      "mcap": 17.49,
       "shares": 135776152,
       "induty_code": "64992",
       "categories": [
@@ -1001,8 +1001,8 @@ window.KOS_LIVE_DATA = {
       "sector": "금융",
       "price": 20500,
       "change": 0.74,
-      "volume": 1341212,
-      "trading_value": 27517735575,
+      "volume": 1341275,
+      "trading_value": 27519027075,
       "mcap": 16.35,
       "shares": 797425869,
       "induty_code": "64121",
@@ -1019,9 +1019,9 @@ window.KOS_LIVE_DATA = {
       "sector": "항공·방산",
       "price": 733000,
       "change": 0.96,
-      "volume": 246494,
-      "trading_value": 177403497000,
-      "mcap": 16.35,
+      "volume": 246559,
+      "trading_value": 177451142000,
+      "mcap": 16.13,
       "shares": 22000000,
       "induty_code": "25200",
       "categories": [
@@ -1038,8 +1038,8 @@ window.KOS_LIVE_DATA = {
       "sector": "운송·물류",
       "price": 211500,
       "change": -4.51,
-      "volume": 336006,
-      "trading_value": 71264633750,
+      "volume": 336025,
+      "trading_value": 71268652250,
       "mcap": 15.86,
       "shares": 75000000,
       "induty_code": "5299",
@@ -1056,9 +1056,9 @@ window.KOS_LIVE_DATA = {
       "sector": "건설·건자재",
       "price": 136600,
       "change": 1.79,
-      "volume": 721992,
-      "trading_value": 97812467700,
-      "mcap": 15.32,
+      "volume": 722094,
+      "trading_value": 97826400900,
+      "mcap": 15.21,
       "shares": 111355765,
       "induty_code": "41221",
       "categories": [
@@ -1074,9 +1074,9 @@ window.KOS_LIVE_DATA = {
       "sector": "화장품",
       "price": 405000,
       "change": 1.0,
-      "volume": 254538,
-      "trading_value": 104457061750,
-      "mcap": 15.2,
+      "volume": 254543,
+      "trading_value": 104459086750,
+      "mcap": 15.16,
       "shares": 37438155,
       "induty_code": "20423",
       "categories": [
@@ -1094,7 +1094,7 @@ window.KOS_LIVE_DATA = {
       "change": 3.73,
       "volume": 281396,
       "trading_value": 71111883000,
-      "mcap": 14.07,
+      "mcap": 13.96,
       "shares": 55725992,
       "induty_code": "64992",
       "categories": [
@@ -1130,9 +1130,9 @@ window.KOS_LIVE_DATA = {
       "sector": "항공·방산",
       "price": 141500,
       "change": -3.74,
-      "volume": 733216,
-      "trading_value": 103569628500,
-      "mcap": 13.82,
+      "volume": 733277,
+      "trading_value": 103578260000,
+      "mcap": 13.79,
       "shares": 97475107,
       "induty_code": "31311",
       "categories": [
@@ -1149,9 +1149,9 @@ window.KOS_LIVE_DATA = {
       "sector": "통신",
       "price": 54500,
       "change": 1.11,
-      "volume": 439567,
-      "trading_value": 24001816295,
-      "mcap": 13.81,
+      "volume": 517208,
+      "trading_value": 28391607398,
+      "mcap": 13.74,
       "shares": 252021685,
       "induty_code": "612",
       "categories": [
@@ -1167,9 +1167,9 @@ window.KOS_LIVE_DATA = {
       "sector": "지주",
       "price": 435500,
       "change": 2.35,
-      "volume": 231229,
-      "trading_value": 101734098750,
-      "mcap": 13.6,
+      "volume": 231240,
+      "trading_value": 101738889250,
+      "mcap": 13.59,
       "shares": 31200000,
       "induty_code": "64992",
       "categories": [
@@ -1185,9 +1185,9 @@ window.KOS_LIVE_DATA = {
       "sector": "정유",
       "price": 114500,
       "change": 5.72,
-      "volume": 463256,
-      "trading_value": 52865173000,
-      "mcap": 12.86,
+      "volume": 463271,
+      "trading_value": 52866890500,
+      "mcap": 12.89,
       "shares": 112582792,
       "induty_code": "19210",
       "categories": [
@@ -1203,9 +1203,9 @@ window.KOS_LIVE_DATA = {
       "sector": "IT·소프트웨어",
       "price": 126400,
       "change": -6.85,
-      "volume": 3324883,
-      "trading_value": 413746078000,
-      "mcap": 12.24,
+      "volume": 3325944,
+      "trading_value": 413880188400,
+      "mcap": 12.25,
       "shares": 96885948,
       "induty_code": "62021",
       "categories": [
@@ -1223,7 +1223,7 @@ window.KOS_LIVE_DATA = {
       "change": 0.99,
       "volume": 222114,
       "trading_value": 56235478500,
-      "mcap": 11.79,
+      "mcap": 11.74,
       "shares": 46136993,
       "induty_code": "5821",
       "categories": [
@@ -1239,51 +1239,15 @@ window.KOS_LIVE_DATA = {
       "sector": "기계·장비",
       "price": 250500,
       "change": 27.22,
-      "volume": 6716536,
-      "trading_value": 1608192065550,
-      "mcap": 11.6,
+      "volume": 6757495,
+      "trading_value": 1618527937550,
+      "mcap": 11.64,
       "shares": 46481121,
       "induty_code": "29229",
       "categories": [
         "기계·장비"
       ],
       "rank": 68
-    },
-    {
-      "ticker": "016360",
-      "name": "삼성증권",
-      "name_en": "SAMSUNG SECURITIES CO.,LTD",
-      "market": "코스피",
-      "sector": "금융",
-      "price": 127000,
-      "change": 5.31,
-      "volume": 774111,
-      "trading_value": 97012203000,
-      "mcap": 11.35,
-      "shares": 89300000,
-      "induty_code": "66121",
-      "categories": [
-        "금융"
-      ],
-      "rank": 69
-    },
-    {
-      "ticker": "005940",
-      "name": "NH투자증권",
-      "name_en": "NH INVESTMENT & SECURITIES CO.,LTD.",
-      "market": "코스피",
-      "sector": "금융",
-      "price": 31600,
-      "change": 3.1,
-      "volume": 1068218,
-      "trading_value": 33981317600,
-      "mcap": 11.28,
-      "shares": 356344369,
-      "induty_code": "66121",
-      "categories": [
-        "금융"
-      ],
-      "rank": 70
     },
     {
       "ticker": "0126Z0",
@@ -1293,12 +1257,48 @@ window.KOS_LIVE_DATA = {
       "sector": "기타",
       "price": 456500,
       "change": -1.62,
-      "volume": 35472,
-      "trading_value": 16127560250,
-      "mcap": 11.28,
+      "volume": 35481,
+      "trading_value": 16131668750,
+      "mcap": 11.36,
       "shares": 24883049,
       "categories": [
         "기타"
+      ],
+      "rank": 69
+    },
+    {
+      "ticker": "016360",
+      "name": "삼성증권",
+      "name_en": "SAMSUNG SECURITIES CO.,LTD",
+      "market": "코스피",
+      "sector": "금융",
+      "price": 127000,
+      "change": 5.31,
+      "volume": 774906,
+      "trading_value": 97113168000,
+      "mcap": 11.34,
+      "shares": 89300000,
+      "induty_code": "66121",
+      "categories": [
+        "금융"
+      ],
+      "rank": 70
+    },
+    {
+      "ticker": "005940",
+      "name": "NH투자증권",
+      "name_en": "NH INVESTMENT & SECURITIES CO.,LTD.",
+      "market": "코스피",
+      "sector": "금융",
+      "price": 31600,
+      "change": 3.1,
+      "volume": 1068223,
+      "trading_value": 33981475600,
+      "mcap": 11.26,
+      "shares": 356344369,
+      "induty_code": "66121",
+      "categories": [
+        "금융"
       ],
       "rank": 71
     },
@@ -1310,9 +1310,9 @@ window.KOS_LIVE_DATA = {
       "sector": "금융",
       "price": 22550,
       "change": 2.5,
-      "volume": 922817,
-      "trading_value": 20813841700,
-      "mcap": 10.78,
+      "volume": 922838,
+      "trading_value": 20814315250,
+      "mcap": 10.76,
       "shares": 477120437,
       "induty_code": "64121",
       "categories": [
@@ -1328,9 +1328,9 @@ window.KOS_LIVE_DATA = {
       "sector": "유통·소비재",
       "price": 60200,
       "change": 0.5,
-      "volume": 580264,
-      "trading_value": 34667986850,
-      "mcap": 10.54,
+      "volume": 580265,
+      "trading_value": 34668047050,
+      "mcap": 10.59,
       "shares": 175922788,
       "induty_code": "461",
       "categories": [
@@ -1346,9 +1346,9 @@ window.KOS_LIVE_DATA = {
       "sector": "기계·장비",
       "price": 157900,
       "change": -5.28,
-      "volume": 4039039,
-      "trading_value": 628959598750,
-      "mcap": 10.26,
+      "volume": 4040585,
+      "trading_value": 629203712150,
+      "mcap": 10.24,
       "shares": 64819980,
       "induty_code": "2928",
       "categories": [
@@ -1366,8 +1366,8 @@ window.KOS_LIVE_DATA = {
       "sector": "건설·건자재",
       "price": 220000,
       "change": -3.08,
-      "volume": 224202,
-      "trading_value": 50829978000,
+      "volume": 373897,
+      "trading_value": 84539629496,
       "mcap": 9.86,
       "shares": 44833460,
       "induty_code": "7212",
@@ -1384,9 +1384,9 @@ window.KOS_LIVE_DATA = {
       "sector": "전자·부품",
       "price": 133700,
       "change": -1.91,
-      "volume": 1144082,
-      "trading_value": 154331032700,
-      "mcap": 9.83,
+      "volume": 1145010,
+      "trading_value": 154455106300,
+      "mcap": 9.81,
       "shares": 73409219,
       "induty_code": "2622",
       "categories": [
@@ -1404,7 +1404,7 @@ window.KOS_LIVE_DATA = {
       "change": 2.2,
       "volume": 97939,
       "trading_value": 36433171750,
-      "mcap": 9.74,
+      "mcap": 9.76,
       "shares": 26228316,
       "induty_code": "66121",
       "categories": [
@@ -1420,9 +1420,9 @@ window.KOS_LIVE_DATA = {
       "sector": "건설·건자재",
       "price": 49500,
       "change": 0.41,
-      "volume": 1274454,
-      "trading_value": 62686681825,
-      "mcap": 9.68,
+      "volume": 1274479,
+      "trading_value": 62687919325,
+      "mcap": 9.7,
       "shares": 196000000,
       "induty_code": "72129",
       "categories": [
@@ -1438,9 +1438,9 @@ window.KOS_LIVE_DATA = {
       "sector": "보험",
       "price": 144700,
       "change": -0.55,
-      "volume": 261019,
-      "trading_value": 37362660600,
-      "mcap": 9.45,
+      "volume": 261020,
+      "trading_value": 37362805300,
+      "mcap": 9.48,
       "shares": 65500349,
       "induty_code": "65121",
       "categories": [
@@ -1456,9 +1456,9 @@ window.KOS_LIVE_DATA = {
       "sector": "건설·건자재",
       "price": 22950,
       "change": 0.66,
-      "volume": 7279643,
-      "trading_value": 167074323625,
-      "mcap": 9.41,
+      "volume": 7306070,
+      "trading_value": 167680329525,
+      "mcap": 9.43,
       "shares": 410907638,
       "induty_code": "41112",
       "categories": [
@@ -1474,33 +1474,15 @@ window.KOS_LIVE_DATA = {
       "sector": "바이오·제약",
       "price": 109500,
       "change": 1.39,
-      "volume": 385651,
-      "trading_value": 41939815250,
-      "mcap": 9.29,
+      "volume": 385991,
+      "trading_value": 41976998250,
+      "mcap": 9.28,
       "shares": 84736050,
       "induty_code": "211",
       "categories": [
         "바이오·제약"
       ],
       "rank": 81
-    },
-    {
-      "ticker": "003490",
-      "name": "대한항공",
-      "name_en": "KOREAN AIR LINES CO.,LTD",
-      "market": "코스피",
-      "sector": "운송·물류",
-      "price": 25050,
-      "change": -0.99,
-      "volume": 1231782,
-      "trading_value": 30870156850,
-      "mcap": 9.26,
-      "shares": 368220661,
-      "induty_code": "511",
-      "categories": [
-        "운송·물류"
-      ],
-      "rank": 82
     },
     {
       "ticker": "352820",
@@ -1510,14 +1492,32 @@ window.KOS_LIVE_DATA = {
       "sector": "미디어·엔터",
       "price": 215000,
       "change": 0.7,
-      "volume": 218799,
-      "trading_value": 46276537250,
-      "mcap": 9.22,
+      "volume": 218800,
+      "trading_value": 46276752250,
+      "mcap": 9.27,
       "shares": 43102249,
       "induty_code": "592",
       "categories": [
         "미디어·엔터",
         "K-콘텐츠·엔터"
+      ],
+      "rank": 82
+    },
+    {
+      "ticker": "003490",
+      "name": "대한항공",
+      "name_en": "KOREAN AIR LINES CO.,LTD",
+      "market": "코스피",
+      "sector": "운송·물류",
+      "price": 25050,
+      "change": -0.99,
+      "volume": 1231783,
+      "trading_value": 30870181900,
+      "mcap": 9.22,
+      "shares": 368220661,
+      "induty_code": "511",
+      "categories": [
+        "운송·물류"
       ],
       "rank": 83
     },
@@ -1529,9 +1529,9 @@ window.KOS_LIVE_DATA = {
       "sector": "화학",
       "price": 130200,
       "change": 9.5,
-      "volume": 346890,
-      "trading_value": 43731592450,
-      "mcap": 9.14,
+      "volume": 346955,
+      "trading_value": 43740055450,
+      "mcap": 9.18,
       "shares": 70507919,
       "induty_code": "20494",
       "categories": [
@@ -1547,9 +1547,9 @@ window.KOS_LIVE_DATA = {
       "sector": "자동차",
       "price": 71800,
       "change": 2.87,
-      "volume": 599241,
-      "trading_value": 42334929650,
-      "mcap": 8.87,
+      "volume": 600479,
+      "trading_value": 42423818050,
+      "mcap": 8.89,
       "shares": 123875069,
       "induty_code": "221",
       "categories": [
@@ -1565,9 +1565,9 @@ window.KOS_LIVE_DATA = {
       "sector": "식음료",
       "price": 1114000,
       "change": -2.28,
-      "volume": 45672,
-      "trading_value": 51579926000,
-      "mcap": 8.41,
+      "volume": 45673,
+      "trading_value": 51581040000,
+      "mcap": 8.39,
       "shares": 7533015,
       "induty_code": "108",
       "categories": [
@@ -1583,9 +1583,9 @@ window.KOS_LIVE_DATA = {
       "sector": "전기장비",
       "price": 42350,
       "change": -0.35,
-      "volume": 2807748,
-      "trading_value": 120494751575,
-      "mcap": 8.34,
+      "volume": 2818646,
+      "trading_value": 120955140875,
+      "mcap": 8.3,
       "shares": 195992596,
       "induty_code": "28302",
       "categories": [
@@ -1601,9 +1601,9 @@ window.KOS_LIVE_DATA = {
       "sector": "전자·부품",
       "price": 16120,
       "change": -3.42,
-      "volume": 12460579,
-      "trading_value": 198764083215,
-      "mcap": 8.08,
+      "volume": 12550364,
+      "trading_value": 200207438265,
+      "mcap": 8.06,
       "shares": 500000000,
       "induty_code": "2621",
       "categories": [
@@ -1637,9 +1637,9 @@ window.KOS_LIVE_DATA = {
       "sector": "전자·부품",
       "price": 159000,
       "change": 0.95,
-      "volume": 918555,
-      "trading_value": 148229948000,
-      "mcap": 7.92,
+      "volume": 920862,
+      "trading_value": 148596023000,
+      "mcap": 7.86,
       "shares": 49416925,
       "induty_code": "2622",
       "categories": [
@@ -1655,9 +1655,9 @@ window.KOS_LIVE_DATA = {
       "sector": "반도체",
       "price": 176400,
       "change": 3.7,
-      "volume": 795273,
-      "trading_value": 141572204150,
-      "mcap": 7.71,
+      "volume": 795465,
+      "trading_value": 141606072950,
+      "mcap": 7.67,
       "shares": 43504588,
       "induty_code": "2611",
       "categories": [
@@ -1673,8 +1673,8 @@ window.KOS_LIVE_DATA = {
       "sector": "반도체",
       "price": 99600,
       "change": 7.33,
-      "volume": 1156169,
-      "trading_value": 114642009050,
+      "volume": 1156633,
+      "trading_value": 114688223450,
       "mcap": 7.59,
       "shares": 76211850,
       "induty_code": "2629",
@@ -1691,9 +1691,9 @@ window.KOS_LIVE_DATA = {
       "sector": "바이오·제약",
       "price": 309500,
       "change": 2.48,
-      "volume": 246747,
-      "trading_value": 77061541750,
-      "mcap": 7.22,
+      "volume": 246779,
+      "trading_value": 77071445750,
+      "mcap": 7.26,
       "shares": 23457472,
       "induty_code": "212",
       "categories": [
@@ -1709,9 +1709,9 @@ window.KOS_LIVE_DATA = {
       "sector": "기계·장비",
       "price": 148700,
       "change": 0.61,
-      "volume": 241810,
-      "trading_value": 36215065200,
-      "mcap": 7.14,
+      "volume": 241812,
+      "trading_value": 36215362600,
+      "mcap": 7.13,
       "shares": 47921897,
       "induty_code": "29241",
       "categories": [
@@ -1727,9 +1727,9 @@ window.KOS_LIVE_DATA = {
       "sector": "바이오·제약",
       "price": 90500,
       "change": 2.38,
-      "volume": 311119,
-      "trading_value": 28290288300,
-      "mcap": 7.08,
+      "volume": 320922,
+      "trading_value": 29183272979,
+      "mcap": 7.09,
       "shares": 78313250,
       "induty_code": "7011",
       "categories": [
@@ -1747,7 +1747,7 @@ window.KOS_LIVE_DATA = {
       "change": 5.1,
       "volume": 377612,
       "trading_value": 28703408700,
-      "mcap": 7.06,
+      "mcap": 7.09,
       "shares": 92895495,
       "induty_code": "64992",
       "categories": [
@@ -1763,9 +1763,9 @@ window.KOS_LIVE_DATA = {
       "sector": "바이오·제약",
       "price": 52500,
       "change": 0.77,
-      "volume": 534554,
-      "trading_value": 27969932700,
-      "mcap": 6.98,
+      "volume": 534555,
+      "trading_value": 27969985200,
+      "mcap": 6.99,
       "shares": 133198223,
       "induty_code": "213",
       "categories": [
@@ -1781,9 +1781,9 @@ window.KOS_LIVE_DATA = {
       "sector": "화학",
       "price": 39900,
       "change": -2.21,
-      "volume": 1342855,
-      "trading_value": 53668793950,
-      "mcap": 6.85,
+      "volume": 1342868,
+      "trading_value": 53669312650,
+      "mcap": 6.86,
       "shares": 171892536,
       "induty_code": "20111",
       "categories": [
@@ -1799,8 +1799,8 @@ window.KOS_LIVE_DATA = {
       "sector": "전기장비",
       "price": 222500,
       "change": -1.11,
-      "volume": 261308,
-      "trading_value": 58630703500,
+      "volume": 261313,
+      "trading_value": 58631816000,
       "mcap": 6.81,
       "shares": 30615850,
       "induty_code": "28112",
@@ -1817,9 +1817,9 @@ window.KOS_LIVE_DATA = {
       "sector": "통신",
       "price": 15670,
       "change": -2.97,
-      "volume": 1480549,
-      "trading_value": 23096298550,
-      "mcap": 6.66,
+      "volume": 1480791,
+      "trading_value": 23100090690,
+      "mcap": 6.65,
       "shares": 424427732,
       "induty_code": "61220",
       "categories": [
@@ -1837,7 +1837,7 @@ window.KOS_LIVE_DATA = {
       "change": -1.69,
       "volume": 261608,
       "trading_value": 24541112500,
-      "mcap": 6.6,
+      "mcap": 6.58,
       "shares": 70767426,
       "induty_code": "969",
       "categories": [
@@ -1855,7 +1855,7 @@ window.KOS_LIVE_DATA = {
       "change": 4.91,
       "volume": 376536,
       "trading_value": 25232621450,
-      "mcap": 6.53,
+      "mcap": 6.56,
       "shares": 95856065,
       "induty_code": "29241",
       "categories": [
@@ -1889,9 +1889,9 @@ window.KOS_LIVE_DATA = {
       "sector": "바이오·제약",
       "price": 80100,
       "change": -1.72,
-      "volume": 366578,
-      "trading_value": 29590176750,
-      "mcap": 6.39,
+      "volume": 366719,
+      "trading_value": 29601470850,
+      "mcap": 6.38,
       "shares": 79647601,
       "induty_code": "212",
       "categories": [
@@ -1907,9 +1907,9 @@ window.KOS_LIVE_DATA = {
       "sector": "바이오·제약",
       "price": 491500,
       "change": -3.06,
-      "volume": 211485,
-      "trading_value": 105006329000,
-      "mcap": 6.32,
+      "volume": 211491,
+      "trading_value": 105009278000,
+      "mcap": 6.3,
       "shares": 12810991,
       "induty_code": "21212",
       "categories": [
@@ -1925,8 +1925,8 @@ window.KOS_LIVE_DATA = {
       "sector": "금융",
       "price": 46400,
       "change": -0.43,
-      "volume": 191556,
-      "trading_value": 8888683375,
+      "volume": 191571,
+      "trading_value": 8889379375,
       "mcap": 6.28,
       "shares": 135256275,
       "induty_code": "66199",
@@ -1943,8 +1943,8 @@ window.KOS_LIVE_DATA = {
       "sector": "반도체",
       "price": 127200,
       "change": 29.93,
-      "volume": 1192341,
-      "trading_value": 146055947200,
+      "volume": 1192343,
+      "trading_value": 146056201600,
       "mcap": 6.24,
       "shares": 49083901,
       "induty_code": "292",
@@ -1952,6 +1952,42 @@ window.KOS_LIVE_DATA = {
         "반도체"
       ],
       "rank": 107
+    },
+    {
+      "ticker": "036570",
+      "name": "NC",
+      "name_en": "NC Corporation",
+      "market": "코스피",
+      "sector": "게임",
+      "price": 289500,
+      "change": -14.35,
+      "volume": 298337,
+      "trading_value": 87775970500,
+      "mcap": 6.24,
+      "shares": 21544022,
+      "induty_code": "582",
+      "categories": [
+        "게임"
+      ],
+      "rank": 108
+    },
+    {
+      "ticker": "004170",
+      "name": "신세계",
+      "name_en": "SHINSEGAE Inc.",
+      "market": "코스피",
+      "sector": "유통·소비재",
+      "price": 659000,
+      "change": 15.82,
+      "volume": 163545,
+      "trading_value": 105162487500,
+      "mcap": 6.22,
+      "shares": 9445181,
+      "induty_code": "47111",
+      "categories": [
+        "유통·소비재"
+      ],
+      "rank": 109
     },
     {
       "ticker": "087010",
@@ -1963,67 +1999,13 @@ window.KOS_LIVE_DATA = {
       "change": -1.48,
       "volume": 112094,
       "trading_value": 30127084250,
-      "mcap": 6.23,
+      "mcap": 6.21,
       "shares": 23317350,
       "induty_code": "211",
       "categories": [
         "바이오·제약"
       ],
-      "rank": 108
-    },
-    {
-      "ticker": "036570",
-      "name": "NC",
-      "name_en": "NC Corporation",
-      "market": "코스피",
-      "sector": "게임",
-      "price": 289500,
-      "change": -14.35,
-      "volume": 298310,
-      "trading_value": 87768154000,
-      "mcap": 6.23,
-      "shares": 21544022,
-      "induty_code": "582",
-      "categories": [
-        "게임"
-      ],
-      "rank": 109
-    },
-    {
-      "ticker": "004170",
-      "name": "신세계",
-      "name_en": "SHINSEGAE Inc.",
-      "market": "코스피",
-      "sector": "유통·소비재",
-      "price": 659000,
-      "change": 15.82,
-      "volume": 163538,
-      "trading_value": 105157874500,
-      "mcap": 6.19,
-      "shares": 9445181,
-      "induty_code": "47111",
-      "categories": [
-        "유통·소비재"
-      ],
       "rank": 110
-    },
-    {
-      "ticker": "066970",
-      "name": "엘앤에프",
-      "name_en": "L&F CO.,LTD",
-      "market": "코스피",
-      "sector": "2차전지",
-      "price": 150100,
-      "change": 0.07,
-      "volume": 376950,
-      "trading_value": 56525625700,
-      "mcap": 6.08,
-      "shares": 40455487,
-      "induty_code": "28202",
-      "categories": [
-        "2차전지"
-      ],
-      "rank": 111
     },
     {
       "ticker": "039030",
@@ -2033,33 +2015,33 @@ window.KOS_LIVE_DATA = {
       "sector": "기계·장비",
       "price": 496000,
       "change": 14.81,
-      "volume": 251358,
-      "trading_value": 122199108750,
-      "mcap": 6.07,
+      "volume": 251374,
+      "trading_value": 122207044750,
+      "mcap": 6.11,
       "shares": 12319550,
       "induty_code": "29271",
       "categories": [
         "기계·장비"
       ],
-      "rank": 112
+      "rank": 111
     },
     {
-      "ticker": "011790",
-      "name": "SKC",
-      "name_en": "SKC LTD",
+      "ticker": "066970",
+      "name": "엘앤에프",
+      "name_en": "L&F CO.,LTD",
       "market": "코스피",
-      "sector": "화학",
-      "price": 155900,
-      "change": 11.2,
-      "volume": 1966122,
-      "trading_value": 305772791700,
-      "mcap": 5.92,
-      "shares": 37868298,
-      "induty_code": "204",
+      "sector": "2차전지",
+      "price": 150100,
+      "change": 0.07,
+      "volume": 376961,
+      "trading_value": 56527276800,
+      "mcap": 6.07,
+      "shares": 40455487,
+      "induty_code": "28202",
       "categories": [
-        "화학"
+        "2차전지"
       ],
-      "rank": 113
+      "rank": 112
     },
     {
       "ticker": "298380",
@@ -2069,13 +2051,31 @@ window.KOS_LIVE_DATA = {
       "sector": "바이오·제약",
       "price": 106000,
       "change": -1.03,
-      "volume": 309162,
-      "trading_value": 32957457700,
-      "mcap": 5.91,
+      "volume": 309241,
+      "trading_value": 32965831700,
+      "mcap": 5.93,
       "shares": 55987463,
       "induty_code": "211",
       "categories": [
         "바이오·제약"
+      ],
+      "rank": 113
+    },
+    {
+      "ticker": "011790",
+      "name": "SKC",
+      "name_en": "SKC LTD",
+      "market": "코스피",
+      "sector": "화학",
+      "price": 155900,
+      "change": 11.2,
+      "volume": 1976788,
+      "trading_value": 307435621100,
+      "mcap": 5.9,
+      "shares": 37868298,
+      "induty_code": "204",
+      "categories": [
+        "화학"
       ],
       "rank": 114
     },
@@ -2087,9 +2087,9 @@ window.KOS_LIVE_DATA = {
       "sector": "화학",
       "price": 311500,
       "change": -1.58,
-      "volume": 206759,
-      "trading_value": 65801054000,
-      "mcap": 5.83,
+      "volume": 206770,
+      "trading_value": 65804480500,
+      "mcap": 5.82,
       "shares": 18670232,
       "induty_code": "64992",
       "categories": [
@@ -2105,9 +2105,9 @@ window.KOS_LIVE_DATA = {
       "sector": "반도체",
       "price": 116000,
       "change": 8.31,
-      "volume": 1289944,
-      "trading_value": 146474248400,
-      "mcap": 5.79,
+      "volume": 1294077,
+      "trading_value": 146953818700,
+      "mcap": 5.81,
       "shares": 50096827,
       "induty_code": "26112",
       "categories": [
@@ -2123,9 +2123,9 @@ window.KOS_LIVE_DATA = {
       "sector": "전기장비",
       "price": 338500,
       "change": -12.31,
-      "volume": 49917,
-      "trading_value": 17246395000,
-      "mcap": 5.59,
+      "volume": 49925,
+      "trading_value": 17249103000,
+      "mcap": 5.6,
       "shares": 16543115,
       "induty_code": "28302",
       "categories": [
@@ -2141,9 +2141,9 @@ window.KOS_LIVE_DATA = {
       "sector": "전기장비",
       "price": 84600,
       "change": 2.17,
-      "volume": 360982,
-      "trading_value": 30499428150,
-      "mcap": 5.51,
+      "volume": 370988,
+      "trading_value": 31345935750,
+      "mcap": 5.54,
       "shares": 65493726,
       "induty_code": "28111",
       "categories": [
@@ -2159,9 +2159,9 @@ window.KOS_LIVE_DATA = {
       "sector": "부동산·기타서비스",
       "price": 145600,
       "change": -1.42,
-      "volume": 329158,
-      "trading_value": 49353912800,
-      "mcap": 5.38,
+      "volume": 329168,
+      "trading_value": 49355368800,
+      "mcap": 5.39,
       "shares": 37019418,
       "induty_code": "70113",
       "categories": [
@@ -2197,7 +2197,7 @@ window.KOS_LIVE_DATA = {
       "change": -1.5,
       "volume": 139627,
       "trading_value": 6415042275,
-      "mcap": 5.33,
+      "mcap": 5.34,
       "shares": 115858891,
       "categories": [
         "금융"
@@ -2212,9 +2212,9 @@ window.KOS_LIVE_DATA = {
       "sector": "금융",
       "price": 11020,
       "change": 0.55,
-      "volume": 1932686,
-      "trading_value": 21278092195,
-      "mcap": 5.27,
+      "volume": 1932938,
+      "trading_value": 21280868065,
+      "mcap": 5.28,
       "shares": 478921993,
       "induty_code": "64201",
       "categories": [
@@ -2250,7 +2250,7 @@ window.KOS_LIVE_DATA = {
       "change": -2.48,
       "volume": 130852,
       "trading_value": 23468477050,
-      "mcap": 5.14,
+      "mcap": 5.16,
       "shares": 29176998,
       "induty_code": "64992",
       "categories": [
@@ -2266,9 +2266,9 @@ window.KOS_LIVE_DATA = {
       "sector": "철강·금속",
       "price": 38050,
       "change": 0.53,
-      "volume": 714177,
-      "trading_value": 27249022900,
-      "mcap": 5.06,
+      "volume": 714199,
+      "trading_value": 27249860000,
+      "mcap": 5.08,
       "shares": 133445785,
       "induty_code": "2411",
       "categories": [
@@ -2284,8 +2284,8 @@ window.KOS_LIVE_DATA = {
       "sector": "기계·장비",
       "price": 343500,
       "change": -15.19,
-      "volume": 449603,
-      "trading_value": 154672471750,
+      "volume": 449635,
+      "trading_value": 154683463750,
       "mcap": 5.03,
       "shares": 14657028,
       "induty_code": "29299",
@@ -2338,9 +2338,9 @@ window.KOS_LIVE_DATA = {
       "sector": "기계·장비",
       "price": 4820,
       "change": -3.6,
-      "volume": 9624123,
-      "trading_value": 46473878426,
-      "mcap": 4.94,
+      "volume": 9694467,
+      "trading_value": 46812521876,
+      "mcap": 4.95,
       "shares": 1026262552,
       "induty_code": "29172",
       "categories": [
@@ -2358,7 +2358,7 @@ window.KOS_LIVE_DATA = {
       "change": 8.39,
       "volume": 751780,
       "trading_value": 19219849200,
-      "mcap": 4.89,
+      "mcap": 4.87,
       "shares": 188253584,
       "induty_code": "64992",
       "categories": [
@@ -2374,9 +2374,9 @@ window.KOS_LIVE_DATA = {
       "sector": "건설·건자재",
       "price": 32000,
       "change": -9.35,
-      "volume": 808658,
-      "trading_value": 25969738550,
-      "mcap": 4.85,
+      "volume": 808745,
+      "trading_value": 25972522550,
+      "mcap": 4.87,
       "shares": 152034729,
       "induty_code": "72129",
       "categories": [
@@ -2392,9 +2392,9 @@ window.KOS_LIVE_DATA = {
       "sector": "유통·소비재",
       "price": 172000,
       "change": 11.62,
-      "volume": 346506,
-      "trading_value": 58275576350,
-      "mcap": 4.84,
+      "volume": 346512,
+      "trading_value": 58276608350,
+      "mcap": 4.87,
       "shares": 28288755,
       "induty_code": "47111",
       "categories": [
@@ -2410,9 +2410,9 @@ window.KOS_LIVE_DATA = {
       "sector": "기계·장비",
       "price": 57300,
       "change": -1.88,
-      "volume": 649344,
-      "trading_value": 37818086400,
-      "mcap": 4.8,
+      "volume": 649377,
+      "trading_value": 37819977300,
+      "mcap": 4.78,
       "shares": 83447142,
       "induty_code": "29111",
       "categories": [
@@ -2428,9 +2428,9 @@ window.KOS_LIVE_DATA = {
       "sector": "유통·소비재",
       "price": 214000,
       "change": 1.18,
-      "volume": 276417,
-      "trading_value": 60794359000,
-      "mcap": 4.55,
+      "volume": 276481,
+      "trading_value": 60808055000,
+      "mcap": 4.54,
       "shares": 21197058,
       "induty_code": "465",
       "categories": [
@@ -2448,7 +2448,7 @@ window.KOS_LIVE_DATA = {
       "change": 3.43,
       "volume": 86231,
       "trading_value": 7159457700,
-      "mcap": 4.48,
+      "mcap": 4.54,
       "shares": 53715000,
       "induty_code": "211",
       "categories": [
@@ -2464,33 +2464,15 @@ window.KOS_LIVE_DATA = {
       "sector": "전기장비",
       "price": 69200,
       "change": -4.68,
-      "volume": 1610344,
-      "trading_value": 114600674550,
-      "mcap": 4.42,
+      "volume": 1614106,
+      "trading_value": 114861082350,
+      "mcap": 4.4,
       "shares": 63631747,
       "induty_code": "289",
       "categories": [
         "전기장비"
       ],
       "rank": 136
-    },
-    {
-      "ticker": "088350",
-      "name": "한화생명",
-      "name_en": "HANWHA LIFE INSURANCE CO., LTD.",
-      "market": "코스피",
-      "sector": "보험",
-      "price": 4865,
-      "change": 0.21,
-      "volume": 2961536,
-      "trading_value": 14355447996,
-      "mcap": 4.23,
-      "shares": 868530000,
-      "induty_code": "65110",
-      "categories": [
-        "보험"
-      ],
-      "rank": 137
     },
     {
       "ticker": "222800",
@@ -2500,33 +2482,33 @@ window.KOS_LIVE_DATA = {
       "sector": "전자·부품",
       "price": 113400,
       "change": 8.62,
-      "volume": 981242,
-      "trading_value": 112711627850,
-      "mcap": 4.23,
+      "volume": 984598,
+      "trading_value": 113095908350,
+      "mcap": 4.25,
       "shares": 37463931,
       "induty_code": "2622",
       "categories": [
         "전자·부품"
       ],
-      "rank": 138
+      "rank": 137
     },
     {
-      "ticker": "347850",
-      "name": "디앤디파마텍",
-      "name_en": "D&D Pharmatech Inc.",
-      "market": "코스닥",
-      "sector": "부동산·기타서비스",
-      "price": 94000,
-      "change": 11.77,
-      "volume": 1921805,
-      "trading_value": 174367928700,
-      "mcap": 4.15,
-      "shares": 43804147,
-      "induty_code": "70113",
+      "ticker": "088350",
+      "name": "한화생명",
+      "name_en": "HANWHA LIFE INSURANCE CO., LTD.",
+      "market": "코스피",
+      "sector": "보험",
+      "price": 4865,
+      "change": 0.21,
+      "volume": 2972558,
+      "trading_value": 14409080116,
+      "mcap": 4.23,
+      "shares": 868530000,
+      "induty_code": "65110",
       "categories": [
-        "부동산·기타서비스"
+        "보험"
       ],
-      "rank": 139
+      "rank": 138
     },
     {
       "ticker": "450080",
@@ -2536,15 +2518,15 @@ window.KOS_LIVE_DATA = {
       "sector": "2차전지",
       "price": 58900,
       "change": 2.08,
-      "volume": 414558,
-      "trading_value": 24375496050,
-      "mcap": 4.14,
+      "volume": 416406,
+      "trading_value": 24484433850,
+      "mcap": 4.16,
       "shares": 70705607,
       "induty_code": "28202",
       "categories": [
         "2차전지"
       ],
-      "rank": 140
+      "rank": 139
     },
     {
       "ticker": "310210",
@@ -2554,11 +2536,29 @@ window.KOS_LIVE_DATA = {
       "sector": "부동산·기타서비스",
       "price": 224500,
       "change": -3.65,
-      "volume": 114297,
-      "trading_value": 26002987500,
-      "mcap": 4.11,
+      "volume": 114302,
+      "trading_value": 26004110000,
+      "mcap": 4.13,
       "shares": 18402171,
       "induty_code": "701",
+      "categories": [
+        "부동산·기타서비스"
+      ],
+      "rank": 140
+    },
+    {
+      "ticker": "347850",
+      "name": "디앤디파마텍",
+      "name_en": "D&D Pharmatech Inc.",
+      "market": "코스닥",
+      "sector": "부동산·기타서비스",
+      "price": 94000,
+      "change": 11.77,
+      "volume": 1932988,
+      "trading_value": 175415565200,
+      "mcap": 4.12,
+      "shares": 43804147,
+      "induty_code": "70113",
       "categories": [
         "부동산·기타서비스"
       ],
@@ -2572,9 +2572,9 @@ window.KOS_LIVE_DATA = {
       "sector": "전기장비",
       "price": 85900,
       "change": 0.47,
-      "volume": 262735,
-      "trading_value": 22785022800,
-      "mcap": 4.08,
+      "volume": 262757,
+      "trading_value": 22786912600,
+      "mcap": 4.1,
       "shares": 47685390,
       "induty_code": "2830",
       "categories": [
@@ -2590,33 +2590,15 @@ window.KOS_LIVE_DATA = {
       "sector": "전자·부품",
       "price": 79500,
       "change": 17.43,
-      "volume": 2238911,
-      "trading_value": 172768731500,
-      "mcap": 4.0,
+      "volume": 2239055,
+      "trading_value": 172780179500,
+      "mcap": 4.01,
       "shares": 50488390,
       "induty_code": "264",
       "categories": [
         "전자·부품"
       ],
       "rank": 143
-    },
-    {
-      "ticker": "319400",
-      "name": "현대무벡스",
-      "name_en": "HYUNDAI MOVEX Co., Ltd.",
-      "market": "코스닥",
-      "sector": "기계·장비",
-      "price": 35000,
-      "change": -5.53,
-      "volume": 792691,
-      "trading_value": 27996754450,
-      "mcap": 3.9,
-      "shares": 111376039,
-      "induty_code": "291",
-      "categories": [
-        "기계·장비"
-      ],
-      "rank": 144
     },
     {
       "ticker": "403870",
@@ -2626,11 +2608,29 @@ window.KOS_LIVE_DATA = {
       "sector": "기계·장비",
       "price": 47500,
       "change": 7.59,
-      "volume": 4259435,
-      "trading_value": 202104403800,
-      "mcap": 3.89,
+      "volume": 4266874,
+      "trading_value": 202457473500,
+      "mcap": 3.91,
       "shares": 82300000,
       "induty_code": "29271",
+      "categories": [
+        "기계·장비"
+      ],
+      "rank": 144
+    },
+    {
+      "ticker": "319400",
+      "name": "현대무벡스",
+      "name_en": "HYUNDAI MOVEX Co., Ltd.",
+      "market": "코스닥",
+      "sector": "기계·장비",
+      "price": 35000,
+      "change": -5.53,
+      "volume": 792790,
+      "trading_value": 28000219450,
+      "mcap": 3.9,
+      "shares": 111376039,
+      "induty_code": "291",
       "categories": [
         "기계·장비"
       ],
@@ -2644,9 +2644,9 @@ window.KOS_LIVE_DATA = {
       "sector": "화장품",
       "price": 254000,
       "change": 4.1,
-      "volume": 80666,
-      "trading_value": 20118229500,
-      "mcap": 3.89,
+      "volume": 80669,
+      "trading_value": 20118991500,
+      "mcap": 3.88,
       "shares": 15291262,
       "induty_code": "20422",
       "categories": [
@@ -2662,15 +2662,33 @@ window.KOS_LIVE_DATA = {
       "sector": "반도체",
       "price": 107300,
       "change": 6.24,
-      "volume": 2902847,
-      "trading_value": 310993298250,
-      "mcap": 3.73,
+      "volume": 2910064,
+      "trading_value": 311766735950,
+      "mcap": 3.7,
       "shares": 34442833,
       "induty_code": "2611",
       "categories": [
         "반도체"
       ],
       "rank": 147
+    },
+    {
+      "ticker": "043260",
+      "name": "성호전자",
+      "name_en": "SUNGHO ELECTRONICS CORP.",
+      "market": "코스닥",
+      "sector": "전자·부품",
+      "price": 51400,
+      "change": 8.21,
+      "volume": 13049290,
+      "trading_value": 689278976425,
+      "mcap": 3.65,
+      "shares": 70922823,
+      "induty_code": "26291",
+      "categories": [
+        "전자·부품"
+      ],
+      "rank": 148
     },
     {
       "ticker": "111770",
@@ -2682,29 +2700,11 @@ window.KOS_LIVE_DATA = {
       "change": 3.95,
       "volume": 107521,
       "trading_value": 8840163150,
-      "mcap": 3.64,
+      "mcap": 3.62,
       "shares": 44311468,
       "induty_code": "46800",
       "categories": [
         "유통·소비재"
-      ],
-      "rank": 148
-    },
-    {
-      "ticker": "043260",
-      "name": "성호전자",
-      "name_en": "SUNGHO ELECTRONICS CORP.",
-      "market": "코스닥",
-      "sector": "전자·부품",
-      "price": 51400,
-      "change": 8.21,
-      "volume": 13014971,
-      "trading_value": 687503069025,
-      "mcap": 3.63,
-      "shares": 70922823,
-      "induty_code": "26291",
-      "categories": [
-        "전자·부품"
       ],
       "rank": 149
     },
@@ -2718,7 +2718,7 @@ window.KOS_LIVE_DATA = {
       "change": -2.34,
       "volume": 196438,
       "trading_value": 8583364225,
-      "mcap": 3.58,
+      "mcap": 3.59,
       "shares": 81934571,
       "induty_code": "5821",
       "categories": [
@@ -2734,8 +2734,8 @@ window.KOS_LIVE_DATA = {
       "sector": "기계·장비",
       "price": 155700,
       "change": 29.97,
-      "volume": 543112,
-      "trading_value": 82176208550,
+      "volume": 543116,
+      "trading_value": 82176831350,
       "mcap": 3.57,
       "shares": 22916042,
       "induty_code": "29271",
@@ -2754,7 +2754,7 @@ window.KOS_LIVE_DATA = {
       "change": 0.0,
       "volume": 8913,
       "trading_value": 1070039050,
-      "mcap": 3.5,
+      "mcap": 3.49,
       "shares": 29123883,
       "categories": [
         "기타"
@@ -2769,51 +2769,15 @@ window.KOS_LIVE_DATA = {
       "sector": "화학",
       "price": 81000,
       "change": 4.65,
-      "volume": 197498,
-      "trading_value": 15819597200,
-      "mcap": 3.45,
+      "volume": 197510,
+      "trading_value": 15820569200,
+      "mcap": 3.46,
       "shares": 42775419,
       "induty_code": "20111",
       "categories": [
         "화학"
       ],
       "rank": 153
-    },
-    {
-      "ticker": "319660",
-      "name": "피에스케이",
-      "name_en": "PSK INC.",
-      "market": "코스닥",
-      "sector": "기계·장비",
-      "price": 114400,
-      "change": 26.27,
-      "volume": 1006111,
-      "trading_value": 113525869750,
-      "mcap": 3.32,
-      "shares": 28966714,
-      "induty_code": "29271",
-      "categories": [
-        "기계·장비"
-      ],
-      "rank": 154
-    },
-    {
-      "ticker": "226950",
-      "name": "올릭스",
-      "name_en": "OliX Pharmaceuticals, Inc.",
-      "market": "코스닥",
-      "sector": "부동산·기타서비스",
-      "price": 162200,
-      "change": 3.97,
-      "volume": 283203,
-      "trading_value": 46606935500,
-      "mcap": 3.29,
-      "shares": 20300583,
-      "induty_code": "70113",
-      "categories": [
-        "부동산·기타서비스"
-      ],
-      "rank": 155
     },
     {
       "ticker": "011780",
@@ -2825,13 +2789,31 @@ window.KOS_LIVE_DATA = {
       "change": 2.97,
       "volume": 65951,
       "trading_value": 8631963850,
-      "mcap": 3.29,
+      "mcap": 3.32,
       "shares": 25157325,
       "induty_code": "201",
       "categories": [
         "화학"
       ],
-      "rank": 156
+      "rank": 154
+    },
+    {
+      "ticker": "319660",
+      "name": "피에스케이",
+      "name_en": "PSK INC.",
+      "market": "코스닥",
+      "sector": "기계·장비",
+      "price": 114400,
+      "change": 26.27,
+      "volume": 1006244,
+      "trading_value": 113541084950,
+      "mcap": 3.31,
+      "shares": 28966714,
+      "induty_code": "29271",
+      "categories": [
+        "기계·장비"
+      ],
+      "rank": 155
     },
     {
       "ticker": "005850",
@@ -2841,13 +2823,31 @@ window.KOS_LIVE_DATA = {
       "sector": "자동차",
       "price": 71200,
       "change": 3.19,
-      "volume": 174663,
-      "trading_value": 12332305900,
-      "mcap": 3.29,
+      "volume": 174673,
+      "trading_value": 12333017900,
+      "mcap": 3.31,
       "shares": 46448520,
       "induty_code": "303",
       "categories": [
         "자동차"
+      ],
+      "rank": 156
+    },
+    {
+      "ticker": "226950",
+      "name": "올릭스",
+      "name_en": "OliX Pharmaceuticals, Inc.",
+      "market": "코스닥",
+      "sector": "부동산·기타서비스",
+      "price": 162200,
+      "change": 3.97,
+      "volume": 283215,
+      "trading_value": 46608881900,
+      "mcap": 3.29,
+      "shares": 20300583,
+      "induty_code": "70113",
+      "categories": [
+        "부동산·기타서비스"
       ],
       "rank": 157
     },
@@ -2859,14 +2859,31 @@ window.KOS_LIVE_DATA = {
       "sector": "기타",
       "price": 41450,
       "change": 0.36,
-      "volume": 127756,
-      "trading_value": 5258328275,
+      "volume": 127757,
+      "trading_value": 5258369725,
       "mcap": 3.25,
       "shares": 78456553,
       "categories": [
         "기타"
       ],
       "rank": 158
+    },
+    {
+      "ticker": "004800",
+      "name": "효성",
+      "name_en": "",
+      "market": "코스피",
+      "sector": "기타",
+      "price": 191700,
+      "change": 1.27,
+      "volume": 27469,
+      "trading_value": 5254868850,
+      "mcap": 3.21,
+      "shares": 16740407,
+      "categories": [
+        "기타"
+      ],
+      "rank": 159
     },
     {
       "ticker": "035250",
@@ -2884,23 +2901,6 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "호텔·레저"
       ],
-      "rank": 159
-    },
-    {
-      "ticker": "004800",
-      "name": "효성",
-      "name_en": "",
-      "market": "코스피",
-      "sector": "기타",
-      "price": 191700,
-      "change": 1.27,
-      "volume": 27469,
-      "trading_value": 5254868850,
-      "mcap": 3.2,
-      "shares": 16740407,
-      "categories": [
-        "기타"
-      ],
       "rank": 160
     },
     {
@@ -2913,7 +2913,7 @@ window.KOS_LIVE_DATA = {
       "change": -9.36,
       "volume": 510698,
       "trading_value": 31863801600,
-      "mcap": 3.18,
+      "mcap": 3.19,
       "shares": 52365463,
       "induty_code": "2629",
       "categories": [
@@ -2929,9 +2929,9 @@ window.KOS_LIVE_DATA = {
       "sector": "에너지·전력",
       "price": 34450,
       "change": 1.62,
-      "volume": 207844,
-      "trading_value": 7122091475,
-      "mcap": 3.16,
+      "volume": 207857,
+      "trading_value": 7122539325,
+      "mcap": 3.18,
       "shares": 92313000,
       "induty_code": "35200",
       "categories": [
@@ -2947,8 +2947,8 @@ window.KOS_LIVE_DATA = {
       "sector": "전기장비",
       "price": 20300,
       "change": 5.18,
-      "volume": 20328037,
-      "trading_value": 425556792805,
+      "volume": 20366032,
+      "trading_value": 426326521555,
       "mcap": 3.16,
       "shares": 155485660,
       "induty_code": "283",
@@ -2965,8 +2965,8 @@ window.KOS_LIVE_DATA = {
       "sector": "화학",
       "price": 276000,
       "change": 10.4,
-      "volume": 93396,
-      "trading_value": 25470511250,
+      "volume": 93431,
+      "trading_value": 25480171250,
       "mcap": 3.14,
       "shares": 11370195,
       "induty_code": "20129",
@@ -2974,6 +2974,23 @@ window.KOS_LIVE_DATA = {
         "화학"
       ],
       "rank": 164
+    },
+    {
+      "ticker": "001720",
+      "name": "신영증권",
+      "name_en": "",
+      "market": "코스피",
+      "sector": "기타",
+      "price": 188400,
+      "change": 4.72,
+      "volume": 21744,
+      "trading_value": 4021932400,
+      "mcap": 3.1,
+      "shares": 16440000,
+      "categories": [
+        "기타"
+      ],
+      "rank": 165
     },
     {
       "ticker": "145020",
@@ -2985,28 +3002,11 @@ window.KOS_LIVE_DATA = {
       "change": 3.5,
       "volume": 69435,
       "trading_value": 17581534750,
-      "mcap": 3.11,
+      "mcap": 3.09,
       "shares": 12304033,
       "induty_code": "211",
       "categories": [
         "바이오·제약"
-      ],
-      "rank": 165
-    },
-    {
-      "ticker": "001720",
-      "name": "신영증권",
-      "name_en": "",
-      "market": "코스피",
-      "sector": "기타",
-      "price": 188400,
-      "change": 4.72,
-      "volume": 21719,
-      "trading_value": 4017222400,
-      "mcap": 3.08,
-      "shares": 16440000,
-      "categories": [
-        "기타"
       ],
       "rank": 166
     },
@@ -3020,7 +3020,7 @@ window.KOS_LIVE_DATA = {
       "change": 2.07,
       "volume": 69859,
       "trading_value": 20852998500,
-      "mcap": 3.07,
+      "mcap": 3.08,
       "shares": 10389648,
       "induty_code": "213",
       "categories": [
@@ -3036,9 +3036,9 @@ window.KOS_LIVE_DATA = {
       "sector": "건설·건자재",
       "price": 274000,
       "change": 9.16,
-      "volume": 117111,
-      "trading_value": 32269126000,
-      "mcap": 3.05,
+      "volume": 117146,
+      "trading_value": 32278716000,
+      "mcap": 3.06,
       "shares": 11179416,
       "induty_code": "23999",
       "categories": [
@@ -3054,9 +3054,9 @@ window.KOS_LIVE_DATA = {
       "sector": "화학",
       "price": 59700,
       "change": 15.25,
-      "volume": 2175801,
-      "trading_value": 132326211150,
-      "mcap": 3.02,
+      "volume": 2176189,
+      "trading_value": 132349374750,
+      "mcap": 3.04,
       "shares": 50970126,
       "induty_code": "20129",
       "categories": [
@@ -3072,33 +3072,15 @@ window.KOS_LIVE_DATA = {
       "sector": "식음료",
       "price": 201000,
       "change": 0.0,
-      "volume": 64723,
-      "trading_value": 12949580150,
-      "mcap": 3.02,
+      "volume": 64724,
+      "trading_value": 12949781150,
+      "mcap": 3.03,
       "shares": 15054186,
       "induty_code": "108",
       "categories": [
         "식음료"
       ],
       "rank": 170
-    },
-    {
-      "ticker": "067310",
-      "name": "하나마이크론",
-      "name_en": "HanaMicronInc.",
-      "market": "코스닥",
-      "sector": "반도체",
-      "price": 45400,
-      "change": 9.66,
-      "volume": 1870865,
-      "trading_value": 83831057800,
-      "mcap": 3.02,
-      "shares": 66464226,
-      "induty_code": "2611",
-      "categories": [
-        "반도체"
-      ],
-      "rank": 171
     },
     {
       "ticker": "031210",
@@ -3110,10 +3092,28 @@ window.KOS_LIVE_DATA = {
       "change": 0.35,
       "volume": 50107,
       "trading_value": 2169069400,
-      "mcap": 3.01,
+      "mcap": 3.03,
       "shares": 69821598,
       "categories": [
         "기타"
+      ],
+      "rank": 171
+    },
+    {
+      "ticker": "067310",
+      "name": "하나마이크론",
+      "name_en": "HanaMicronInc.",
+      "market": "코스닥",
+      "sector": "반도체",
+      "price": 45400,
+      "change": 9.66,
+      "volume": 1875886,
+      "trading_value": 84058909000,
+      "mcap": 3.02,
+      "shares": 66464226,
+      "induty_code": "2611",
+      "categories": [
+        "반도체"
       ],
       "rank": 172
     },
@@ -3127,7 +3127,7 @@ window.KOS_LIVE_DATA = {
       "change": 0.92,
       "volume": 178278,
       "trading_value": 13732043500,
-      "mcap": 3.01,
+      "mcap": 3.02,
       "shares": 39092385,
       "induty_code": "29162",
       "categories": [
@@ -3143,9 +3143,9 @@ window.KOS_LIVE_DATA = {
       "sector": "유통·소비재",
       "price": 139800,
       "change": 14.78,
-      "volume": 555976,
-      "trading_value": 75340891800,
-      "mcap": 3.0,
+      "volume": 556045,
+      "trading_value": 75350538000,
+      "mcap": 3.01,
       "shares": 21564912,
       "induty_code": "47111",
       "categories": [
@@ -3161,9 +3161,9 @@ window.KOS_LIVE_DATA = {
       "sector": "보험",
       "price": 35100,
       "change": 0.86,
-      "volume": 669185,
-      "trading_value": 23601096250,
-      "mcap": 2.98,
+      "volume": 669186,
+      "trading_value": 23601131350,
+      "mcap": 2.99,
       "shares": 85248250,
       "induty_code": "65121",
       "categories": [
@@ -3179,9 +3179,9 @@ window.KOS_LIVE_DATA = {
       "sector": "반도체",
       "price": 384500,
       "change": 6.22,
-      "volume": 102867,
-      "trading_value": 39775886250,
-      "mcap": 2.95,
+      "volume": 102872,
+      "trading_value": 39777808750,
+      "mcap": 2.99,
       "shares": 7778566,
       "induty_code": "204",
       "categories": [
@@ -3197,9 +3197,9 @@ window.KOS_LIVE_DATA = {
       "sector": "전자·부품",
       "price": 122300,
       "change": 12.2,
-      "volume": 561041,
-      "trading_value": 68465141400,
-      "mcap": 2.95,
+      "volume": 561042,
+      "trading_value": 68465263700,
+      "mcap": 2.93,
       "shares": 23982620,
       "induty_code": "2622",
       "categories": [
@@ -3215,9 +3215,9 @@ window.KOS_LIVE_DATA = {
       "sector": "바이오·제약",
       "price": 55400,
       "change": -2.29,
-      "volume": 370508,
-      "trading_value": 20706881800,
-      "mcap": 2.9,
+      "volume": 370515,
+      "trading_value": 20707269600,
+      "mcap": 2.89,
       "shares": 52240638,
       "induty_code": "212",
       "categories": [
@@ -3233,9 +3233,9 @@ window.KOS_LIVE_DATA = {
       "sector": "부동산·기타서비스",
       "price": 147500,
       "change": -1.27,
-      "volume": 336727,
-      "trading_value": 51579874500,
-      "mcap": 2.86,
+      "volume": 336741,
+      "trading_value": 51581939500,
+      "mcap": 2.85,
       "shares": 19327238,
       "induty_code": "739",
       "categories": [
@@ -3251,8 +3251,8 @@ window.KOS_LIVE_DATA = {
       "sector": "전자·부품",
       "price": 43500,
       "change": 1.99,
-      "volume": 240719,
-      "trading_value": 10454917800,
+      "volume": 240754,
+      "trading_value": 10456440300,
       "mcap": 2.84,
       "shares": 65235659,
       "induty_code": "271",
@@ -3271,7 +3271,7 @@ window.KOS_LIVE_DATA = {
       "change": 1.09,
       "volume": 522260,
       "trading_value": 9171476070,
-      "mcap": 2.81,
+      "mcap": 2.83,
       "shares": 160624583,
       "induty_code": "64992",
       "categories": [
@@ -3304,15 +3304,33 @@ window.KOS_LIVE_DATA = {
       "sector": "건설·건자재",
       "price": 71500,
       "change": 1.71,
-      "volume": 302388,
-      "trading_value": 21504907650,
-      "mcap": 2.76,
+      "volume": 302390,
+      "trading_value": 21505050650,
+      "mcap": 2.77,
       "shares": 38693623,
       "induty_code": "412",
       "categories": [
         "건설·건자재"
       ],
       "rank": 183
+    },
+    {
+      "ticker": "028670",
+      "name": "팬오션",
+      "name_en": "Pan Ocean Co., Ltd.",
+      "market": "코스피",
+      "sector": "운송·물류",
+      "price": 5160,
+      "change": 3.2,
+      "volume": 2604631,
+      "trading_value": 13350725245,
+      "mcap": 2.76,
+      "shares": 534569512,
+      "induty_code": "50112",
+      "categories": [
+        "운송·물류"
+      ],
+      "rank": 184
     },
     {
       "ticker": "383220",
@@ -3324,28 +3342,10 @@ window.KOS_LIVE_DATA = {
       "change": 0.84,
       "volume": 90874,
       "trading_value": 6557048000,
-      "mcap": 2.74,
+      "mcap": 2.75,
       "shares": 38307075,
       "categories": [
         "기타"
-      ],
-      "rank": 184
-    },
-    {
-      "ticker": "028670",
-      "name": "팬오션",
-      "name_en": "Pan Ocean Co., Ltd.",
-      "market": "코스피",
-      "sector": "운송·물류",
-      "price": 5160,
-      "change": 3.2,
-      "volume": 2590405,
-      "trading_value": 13277319085,
-      "mcap": 2.73,
-      "shares": 534569512,
-      "induty_code": "50112",
-      "categories": [
-        "운송·물류"
       ],
       "rank": 185
     },
@@ -3357,9 +3357,9 @@ window.KOS_LIVE_DATA = {
       "sector": "게임",
       "price": 42300,
       "change": -1.4,
-      "volume": 405097,
-      "trading_value": 17204843350,
-      "mcap": 2.71,
+      "volume": 405196,
+      "trading_value": 17209031050,
+      "mcap": 2.72,
       "shares": 64247855,
       "induty_code": "58211",
       "categories": [
@@ -3375,8 +3375,8 @@ window.KOS_LIVE_DATA = {
       "sector": "화학",
       "price": 89300,
       "change": 0.34,
-      "volume": 170888,
-      "trading_value": 15260578450,
+      "volume": 170902,
+      "trading_value": 15261828650,
       "mcap": 2.7,
       "shares": 30218872,
       "induty_code": "20111",
@@ -3411,9 +3411,9 @@ window.KOS_LIVE_DATA = {
       "sector": "전기장비",
       "price": 15690,
       "change": 7.84,
-      "volume": 5928249,
-      "trading_value": 92389083810,
-      "mcap": 2.7,
+      "volume": 5944647,
+      "trading_value": 92646320900,
+      "mcap": 2.69,
       "shares": 171605186,
       "induty_code": "281",
       "categories": [
@@ -3429,33 +3429,15 @@ window.KOS_LIVE_DATA = {
       "sector": "기계·장비",
       "price": 124300,
       "change": 23.56,
-      "volume": 537281,
-      "trading_value": 65962594200,
-      "mcap": 2.69,
+      "volume": 537288,
+      "trading_value": 65963464300,
+      "mcap": 2.68,
       "shares": 21562395,
       "induty_code": "29271",
       "categories": [
         "기계·장비"
       ],
       "rank": 190
-    },
-    {
-      "ticker": "001740",
-      "name": "SK네트웍스",
-      "name_en": "SKNetworksCompanyLimited",
-      "market": "코스피",
-      "sector": "유통·소비재",
-      "price": 13010,
-      "change": 1.32,
-      "volume": 27260131,
-      "trading_value": 347398150580,
-      "mcap": 2.66,
-      "shares": 200593889,
-      "induty_code": "467",
-      "categories": [
-        "유통·소비재"
-      ],
-      "rank": 191
     },
     {
       "ticker": "095610",
@@ -3465,15 +3447,15 @@ window.KOS_LIVE_DATA = {
       "sector": "기계·장비",
       "price": 135900,
       "change": 29.92,
-      "volume": 678764,
-      "trading_value": 88829205350,
+      "volume": 678768,
+      "trading_value": 88829748950,
       "mcap": 2.63,
       "shares": 19360000,
       "induty_code": "29271",
       "categories": [
         "기계·장비"
       ],
-      "rank": 192
+      "rank": 191
     },
     {
       "ticker": "085620",
@@ -3483,13 +3465,31 @@ window.KOS_LIVE_DATA = {
       "sector": "보험",
       "price": 19410,
       "change": 12.85,
-      "volume": 1591374,
-      "trading_value": 29483458575,
-      "mcap": 2.63,
+      "volume": 1592402,
+      "trading_value": 29503412055,
+      "mcap": 2.62,
       "shares": 135180000,
       "induty_code": "65110",
       "categories": [
         "보험"
+      ],
+      "rank": 192
+    },
+    {
+      "ticker": "001740",
+      "name": "SK네트웍스",
+      "name_en": "SKNetworksCompanyLimited",
+      "market": "코스피",
+      "sector": "유통·소비재",
+      "price": 13010,
+      "change": 1.32,
+      "volume": 27436048,
+      "trading_value": 349655559810,
+      "mcap": 2.61,
+      "shares": 200593889,
+      "induty_code": "467",
+      "categories": [
+        "유통·소비재"
       ],
       "rank": 193
     },
@@ -3501,8 +3501,8 @@ window.KOS_LIVE_DATA = {
       "sector": "유통·소비재",
       "price": 94700,
       "change": 7.13,
-      "volume": 364035,
-      "trading_value": 34247583700,
+      "volume": 364043,
+      "trading_value": 34248341300,
       "mcap": 2.61,
       "shares": 27595819,
       "induty_code": "471",
@@ -3539,7 +3539,7 @@ window.KOS_LIVE_DATA = {
       "change": 0.08,
       "volume": 104801,
       "trading_value": 13015134250,
-      "mcap": 2.57,
+      "mcap": 2.58,
       "shares": 20861438,
       "induty_code": "212",
       "categories": [
@@ -3555,8 +3555,8 @@ window.KOS_LIVE_DATA = {
       "sector": "전기장비",
       "price": 111500,
       "change": -9.86,
-      "volume": 312610,
-      "trading_value": 35521007150,
+      "volume": 312618,
+      "trading_value": 35521899150,
       "mcap": 2.47,
       "shares": 22177360,
       "induty_code": "28111",
@@ -3583,24 +3583,6 @@ window.KOS_LIVE_DATA = {
       "rank": 198
     },
     {
-      "ticker": "131290",
-      "name": "티에스이",
-      "name_en": "TSE CO.,Ltd",
-      "market": "코스닥",
-      "sector": "전자·부품",
-      "price": 221500,
-      "change": 8.31,
-      "volume": 180378,
-      "trading_value": 40761856750,
-      "mcap": 2.46,
-      "shares": 11061429,
-      "induty_code": "27212",
-      "categories": [
-        "전자·부품"
-      ],
-      "rank": 199
-    },
-    {
       "ticker": "483650",
       "name": "달바글로벌",
       "name_en": "d'Alba Global Co., Ltd.",
@@ -3610,11 +3592,29 @@ window.KOS_LIVE_DATA = {
       "change": 5.71,
       "volume": 261115,
       "trading_value": 52337003050,
-      "mcap": 2.46,
+      "mcap": 2.47,
       "shares": 12469165,
       "induty_code": "20423",
       "categories": [
         "화장품"
+      ],
+      "rank": 199
+    },
+    {
+      "ticker": "131290",
+      "name": "티에스이",
+      "name_en": "TSE CO.,Ltd",
+      "market": "코스닥",
+      "sector": "전자·부품",
+      "price": 221500,
+      "change": 8.31,
+      "volume": 180519,
+      "trading_value": 40793019250,
+      "mcap": 2.45,
+      "shares": 11061429,
+      "induty_code": "27212",
+      "categories": [
+        "전자·부품"
       ],
       "rank": 200
     },
@@ -3643,8 +3643,8 @@ window.KOS_LIVE_DATA = {
       "sector": "기타",
       "price": 25700,
       "change": 3.21,
-      "volume": 191941,
-      "trading_value": 4934172075,
+      "volume": 191957,
+      "trading_value": 4934583275,
       "mcap": 2.44,
       "shares": 94935240,
       "categories": [
@@ -3660,8 +3660,8 @@ window.KOS_LIVE_DATA = {
       "sector": "건설·건자재",
       "price": 28400,
       "change": 0.71,
-      "volume": 689588,
-      "trading_value": 19477230150,
+      "volume": 689620,
+      "trading_value": 19478138950,
       "mcap": 2.43,
       "shares": 85581490,
       "induty_code": "4111",
@@ -3695,33 +3695,15 @@ window.KOS_LIVE_DATA = {
       "sector": "전자·부품",
       "price": 90900,
       "change": 10.32,
-      "volume": 565744,
-      "trading_value": 51886000800,
-      "mcap": 2.4,
+      "volume": 565934,
+      "trading_value": 51903271800,
+      "mcap": 2.41,
       "shares": 26553442,
       "induty_code": "264",
       "categories": [
         "전자·부품"
       ],
       "rank": 205
-    },
-    {
-      "ticker": "257720",
-      "name": "실리콘투",
-      "name_en": "SILICON 2 Co.,Ltd.",
-      "market": "코스닥",
-      "sector": "유통·소비재",
-      "price": 36200,
-      "change": 1.97,
-      "volume": 402646,
-      "trading_value": 14475803450,
-      "mcap": 2.38,
-      "shares": 65576252,
-      "induty_code": "46800",
-      "categories": [
-        "유통·소비재"
-      ],
-      "rank": 206
     },
     {
       "ticker": "003690",
@@ -3731,13 +3713,31 @@ window.KOS_LIVE_DATA = {
       "sector": "보험",
       "price": 13510,
       "change": 3.13,
-      "volume": 803909,
-      "trading_value": 10780256765,
-      "mcap": 2.37,
+      "volume": 803922,
+      "trading_value": 10780432395,
+      "mcap": 2.39,
       "shares": 176721031,
       "induty_code": "65200",
       "categories": [
         "보험"
+      ],
+      "rank": 206
+    },
+    {
+      "ticker": "257720",
+      "name": "실리콘투",
+      "name_en": "SILICON 2 Co.,Ltd.",
+      "market": "코스닥",
+      "sector": "유통·소비재",
+      "price": 36200,
+      "change": 1.97,
+      "volume": 570806,
+      "trading_value": 20521491770,
+      "mcap": 2.37,
+      "shares": 65576252,
+      "induty_code": "46800",
+      "categories": [
+        "유통·소비재"
       ],
       "rank": 207
     },
@@ -3749,9 +3749,9 @@ window.KOS_LIVE_DATA = {
       "sector": "식음료",
       "price": 388500,
       "change": 1.44,
-      "volume": 34210,
-      "trading_value": 13028547750,
-      "mcap": 2.37,
+      "volume": 34212,
+      "trading_value": 13029324750,
+      "mcap": 2.36,
       "shares": 6082642,
       "induty_code": "108",
       "categories": [
@@ -3784,15 +3784,33 @@ window.KOS_LIVE_DATA = {
       "sector": "기계·장비",
       "price": 33900,
       "change": 4.95,
-      "volume": 1704336,
-      "trading_value": 58547719975,
-      "mcap": 2.32,
+      "volume": 1712738,
+      "trading_value": 58832617425,
+      "mcap": 2.33,
       "shares": 68654755,
       "induty_code": "29271",
       "categories": [
         "기계·장비"
       ],
       "rank": 210
+    },
+    {
+      "ticker": "082920",
+      "name": "비츠로셀",
+      "name_en": "VITZROCELL Co.,Ltd.",
+      "market": "코스닥",
+      "sector": "2차전지",
+      "price": 50400,
+      "change": -4.0,
+      "volume": 383009,
+      "trading_value": 19667518350,
+      "mcap": 2.29,
+      "shares": 45339477,
+      "induty_code": "28201",
+      "categories": [
+        "2차전지"
+      ],
+      "rank": 211
     },
     {
       "ticker": "100790",
@@ -3802,15 +3820,15 @@ window.KOS_LIVE_DATA = {
       "sector": "금융",
       "price": 42950,
       "change": 6.18,
-      "volume": 2216304,
-      "trading_value": 92610301400,
-      "mcap": 2.29,
+      "volume": 2222719,
+      "trading_value": 92884815250,
+      "mcap": 2.28,
       "shares": 53124634,
       "induty_code": "649",
       "categories": [
         "금융"
       ],
-      "rank": 211
+      "rank": 212
     },
     {
       "ticker": "071970",
@@ -3822,29 +3840,11 @@ window.KOS_LIVE_DATA = {
       "change": 3.22,
       "volume": 161964,
       "trading_value": 10831438700,
-      "mcap": 2.29,
+      "mcap": 2.28,
       "shares": 33921495,
       "induty_code": "29119",
       "categories": [
         "기계·장비"
-      ],
-      "rank": 212
-    },
-    {
-      "ticker": "082920",
-      "name": "비츠로셀",
-      "name_en": "VITZROCELL Co.,Ltd.",
-      "market": "코스닥",
-      "sector": "2차전지",
-      "price": 50400,
-      "change": -4.0,
-      "volume": 382995,
-      "trading_value": 19666812750,
-      "mcap": 2.28,
-      "shares": 45339477,
-      "induty_code": "28201",
-      "categories": [
-        "2차전지"
       ],
       "rank": 213
     },
@@ -3856,9 +3856,9 @@ window.KOS_LIVE_DATA = {
       "sector": "기타",
       "price": 5590,
       "change": 0.0,
-      "volume": 1145345,
-      "trading_value": 6428834615,
-      "mcap": 2.26,
+      "volume": 1153883,
+      "trading_value": 6476569665,
+      "mcap": 2.27,
       "shares": 405695151,
       "categories": [
         "기타"
@@ -3873,9 +3873,9 @@ window.KOS_LIVE_DATA = {
       "sector": "바이오·제약",
       "price": 84000,
       "change": 6.6,
-      "volume": 691954,
-      "trading_value": 58395696900,
-      "mcap": 2.25,
+      "volume": 692171,
+      "trading_value": 58413924900,
+      "mcap": 2.27,
       "shares": 26969704,
       "induty_code": "212",
       "categories": [
@@ -3908,8 +3908,8 @@ window.KOS_LIVE_DATA = {
       "sector": "유통·소비재",
       "price": 129000,
       "change": -2.64,
-      "volume": 89880,
-      "trading_value": 11691560600,
+      "volume": 91777,
+      "trading_value": 11938322360,
       "mcap": 2.23,
       "shares": 17283906,
       "induty_code": "47122",
@@ -3926,9 +3926,9 @@ window.KOS_LIVE_DATA = {
       "sector": "바이오·제약",
       "price": 34550,
       "change": 12.36,
-      "volume": 1968802,
-      "trading_value": 65600986100,
-      "mcap": 2.22,
+      "volume": 1985311,
+      "trading_value": 66173043650,
+      "mcap": 2.23,
       "shares": 64435056,
       "induty_code": "211",
       "categories": [
@@ -3944,8 +3944,8 @@ window.KOS_LIVE_DATA = {
       "sector": "자동차",
       "price": 81200,
       "change": -3.91,
-      "volume": 191239,
-      "trading_value": 15472407550,
+      "volume": 191240,
+      "trading_value": 15472488750,
       "mcap": 2.21,
       "shares": 27195083,
       "induty_code": "303",
@@ -3979,9 +3979,9 @@ window.KOS_LIVE_DATA = {
       "sector": "기계·장비",
       "price": 70500,
       "change": 4.29,
-      "volume": 307208,
-      "trading_value": 21413454850,
-      "mcap": 2.17,
+      "volume": 307220,
+      "trading_value": 21414300850,
+      "mcap": 2.18,
       "shares": 30944375,
       "induty_code": "29176",
       "categories": [
@@ -3997,9 +3997,9 @@ window.KOS_LIVE_DATA = {
       "sector": "유통·소비재",
       "price": 55000,
       "change": 5.57,
-      "volume": 429129,
-      "trading_value": 23304269800,
-      "mcap": 2.15,
+      "volume": 429233,
+      "trading_value": 23309989800,
+      "mcap": 2.16,
       "shares": 39248121,
       "induty_code": "47859",
       "categories": [
@@ -4035,7 +4035,7 @@ window.KOS_LIVE_DATA = {
       "change": 0.22,
       "volume": 12062,
       "trading_value": 2710968000,
-      "mcap": 2.08,
+      "mcap": 2.07,
       "shares": 9257244,
       "categories": [
         "기타"
@@ -4052,7 +4052,7 @@ window.KOS_LIVE_DATA = {
       "change": -0.8,
       "volume": 121009,
       "trading_value": 8980992450,
-      "mcap": 2.08,
+      "mcap": 2.07,
       "shares": 28024278,
       "induty_code": "242",
       "categories": [
@@ -4068,8 +4068,8 @@ window.KOS_LIVE_DATA = {
       "sector": "전자·부품",
       "price": 295500,
       "change": 7.45,
-      "volume": 76811,
-      "trading_value": 22073564000,
+      "volume": 76844,
+      "trading_value": 22083315500,
       "mcap": 2.07,
       "shares": 7002469,
       "induty_code": "27219",
@@ -4088,7 +4088,7 @@ window.KOS_LIVE_DATA = {
       "change": -1.89,
       "volume": 196773,
       "trading_value": 7715561100,
-      "mcap": 2.06,
+      "mcap": 2.07,
       "shares": 53091840,
       "induty_code": "464",
       "categories": [
@@ -4104,9 +4104,9 @@ window.KOS_LIVE_DATA = {
       "sector": "화학",
       "price": 26500,
       "change": 3.31,
-      "volume": 863190,
-      "trading_value": 23036485575,
-      "mcap": 2.04,
+      "volume": 865260,
+      "trading_value": 23091329825,
+      "mcap": 2.05,
       "shares": 77237981,
       "induty_code": "201",
       "categories": [
@@ -4124,7 +4124,7 @@ window.KOS_LIVE_DATA = {
       "change": 2.92,
       "volume": 310039,
       "trading_value": 4065165220,
-      "mcap": 2.04,
+      "mcap": 2.03,
       "shares": 155904301,
       "categories": [
         "기타"
@@ -4139,8 +4139,8 @@ window.KOS_LIVE_DATA = {
       "sector": "기타",
       "price": 45800,
       "change": -0.87,
-      "volume": 76482,
-      "trading_value": 3507746800,
+      "volume": 76486,
+      "trading_value": 3507930000,
       "mcap": 2.03,
       "shares": 44402332,
       "categories": [
@@ -4156,8 +4156,8 @@ window.KOS_LIVE_DATA = {
       "sector": "전자·부품",
       "price": 130100,
       "change": 3.25,
-      "volume": 228126,
-      "trading_value": 29620024900,
+      "volume": 228128,
+      "trading_value": 29620285100,
       "mcap": 2.03,
       "shares": 15628217,
       "induty_code": "2629",
@@ -4176,31 +4176,13 @@ window.KOS_LIVE_DATA = {
       "change": 1.36,
       "volume": 222300,
       "trading_value": 15034020350,
-      "mcap": 2.02,
+      "mcap": 2.01,
       "shares": 29946032,
       "induty_code": "205",
       "categories": [
         "화학"
       ],
       "rank": 232
-    },
-    {
-      "ticker": "322000",
-      "name": "HD현대에너지솔루션",
-      "name_en": "HD HYUNDAI ENERGY SOLUTIONS CO.,LTD.",
-      "market": "코스피",
-      "sector": "반도체",
-      "price": 177500,
-      "change": 8.83,
-      "volume": 449632,
-      "trading_value": 80210442450,
-      "mcap": 2.0,
-      "shares": 11200000,
-      "induty_code": "2612",
-      "categories": [
-        "반도체"
-      ],
-      "rank": 233
     },
     {
       "ticker": "097230",
@@ -4210,33 +4192,33 @@ window.KOS_LIVE_DATA = {
       "sector": "건설·건자재",
       "price": 22200,
       "change": 3.26,
-      "volume": 621409,
-      "trading_value": 13757546950,
+      "volume": 622899,
+      "trading_value": 13790623950,
       "mcap": 2.0,
       "shares": 90295344,
       "induty_code": "41221",
       "categories": [
         "건설·건자재"
       ],
-      "rank": 234
+      "rank": 233
     },
     {
-      "ticker": "140410",
-      "name": "메지온",
-      "name_en": "Mezzion Pharma Co., Ltd.",
-      "market": "코스닥",
-      "sector": "부동산·기타서비스",
-      "price": 64800,
-      "change": 2.37,
-      "volume": 120176,
-      "trading_value": 7762293800,
-      "mcap": 1.98,
-      "shares": 30392167,
-      "induty_code": "70113",
+      "ticker": "322000",
+      "name": "HD현대에너지솔루션",
+      "name_en": "HD HYUNDAI ENERGY SOLUTIONS CO.,LTD.",
+      "market": "코스피",
+      "sector": "반도체",
+      "price": 177500,
+      "change": 8.83,
+      "volume": 450690,
+      "trading_value": 80398595150,
+      "mcap": 1.99,
+      "shares": 11200000,
+      "induty_code": "2612",
       "categories": [
-        "부동산·기타서비스"
+        "반도체"
       ],
-      "rank": 235
+      "rank": 234
     },
     {
       "ticker": "161890",
@@ -4246,15 +4228,15 @@ window.KOS_LIVE_DATA = {
       "sector": "화장품",
       "price": 84100,
       "change": 0.84,
-      "volume": 139993,
-      "trading_value": 11722132300,
-      "mcap": 1.98,
+      "volume": 139994,
+      "trading_value": 11722216400,
+      "mcap": 1.99,
       "shares": 23605077,
       "induty_code": "20423",
       "categories": [
         "화장품"
       ],
-      "rank": 236
+      "rank": 235
     },
     {
       "ticker": "089030",
@@ -4264,13 +4246,31 @@ window.KOS_LIVE_DATA = {
       "sector": "기계·장비",
       "price": 53700,
       "change": 9.82,
-      "volume": 1382491,
-      "trading_value": 72603018075,
-      "mcap": 1.98,
+      "volume": 1387451,
+      "trading_value": 72868738675,
+      "mcap": 1.99,
       "shares": 37053645,
       "induty_code": "29271",
       "categories": [
         "기계·장비"
+      ],
+      "rank": 236
+    },
+    {
+      "ticker": "140410",
+      "name": "메지온",
+      "name_en": "Mezzion Pharma Co., Ltd.",
+      "market": "코스닥",
+      "sector": "부동산·기타서비스",
+      "price": 64800,
+      "change": 2.37,
+      "volume": 120240,
+      "trading_value": 7766439900,
+      "mcap": 1.97,
+      "shares": 30392167,
+      "induty_code": "70113",
+      "categories": [
+        "부동산·기타서비스"
       ],
       "rank": 237
     },
@@ -4282,9 +4282,9 @@ window.KOS_LIVE_DATA = {
       "sector": "미디어·엔터",
       "price": 55400,
       "change": -0.18,
-      "volume": 140621,
-      "trading_value": 7745587850,
-      "mcap": 1.96,
+      "volume": 140666,
+      "trading_value": 7748080850,
+      "mcap": 1.97,
       "shares": 35532492,
       "induty_code": "59201",
       "categories": [
@@ -4303,31 +4303,13 @@ window.KOS_LIVE_DATA = {
       "change": -7.33,
       "volume": 331993,
       "trading_value": 7962984950,
-      "mcap": 1.95,
+      "mcap": 1.96,
       "shares": 83607415,
       "induty_code": "47122",
       "categories": [
         "유통·소비재"
       ],
       "rank": 239
-    },
-    {
-      "ticker": "192820",
-      "name": "코스맥스",
-      "name_en": "COSMAX, INC.",
-      "market": "코스피",
-      "sector": "화장품",
-      "price": 170300,
-      "change": 0.18,
-      "volume": 85635,
-      "trading_value": 14551924000,
-      "mcap": 1.93,
-      "shares": 11349509,
-      "induty_code": "20423",
-      "categories": [
-        "화장품"
-      ],
-      "rank": 240
     },
     {
       "ticker": "229640",
@@ -4339,11 +4321,29 @@ window.KOS_LIVE_DATA = {
       "change": -2.31,
       "volume": 171223,
       "trading_value": 10861717550,
-      "mcap": 1.92,
+      "mcap": 1.94,
       "shares": 30624879,
       "induty_code": "64992",
       "categories": [
         "지주"
+      ],
+      "rank": 240
+    },
+    {
+      "ticker": "192820",
+      "name": "코스맥스",
+      "name_en": "COSMAX, INC.",
+      "market": "코스피",
+      "sector": "화장품",
+      "price": 170300,
+      "change": 0.18,
+      "volume": 85636,
+      "trading_value": 14552094300,
+      "mcap": 1.93,
+      "shares": 11349509,
+      "induty_code": "20423",
+      "categories": [
+        "화장품"
       ],
       "rank": 241
     },
@@ -4366,6 +4366,24 @@ window.KOS_LIVE_DATA = {
       "rank": 242
     },
     {
+      "ticker": "031330",
+      "name": "에스에이엠티",
+      "name_en": "SAMT CO.,LTD.",
+      "market": "코스닥",
+      "sector": "유통·소비재",
+      "price": 18860,
+      "change": 15.92,
+      "volume": 3775460,
+      "trading_value": 70164449020,
+      "mcap": 1.89,
+      "shares": 99995067,
+      "induty_code": "4659",
+      "categories": [
+        "유통·소비재"
+      ],
+      "rank": 243
+    },
+    {
       "ticker": "000120",
       "name": "CJ대한통운",
       "name_en": "",
@@ -4375,28 +4393,10 @@ window.KOS_LIVE_DATA = {
       "change": -1.55,
       "volume": 47193,
       "trading_value": 3907495750,
-      "mcap": 1.89,
+      "mcap": 1.88,
       "shares": 22812344,
       "categories": [
         "기타"
-      ],
-      "rank": 243
-    },
-    {
-      "ticker": "031330",
-      "name": "에스에이엠티",
-      "name_en": "SAMT CO.,LTD.",
-      "market": "코스닥",
-      "sector": "유통·소비재",
-      "price": 18860,
-      "change": 15.92,
-      "volume": 3767047,
-      "trading_value": 70004658900,
-      "mcap": 1.89,
-      "shares": 99995067,
-      "induty_code": "4659",
-      "categories": [
-        "유통·소비재"
       ],
       "rank": 244
     },
@@ -4426,8 +4426,8 @@ window.KOS_LIVE_DATA = {
       "sector": "미디어·엔터",
       "price": 78700,
       "change": 0.51,
-      "volume": 99080,
-      "trading_value": 7732699250,
+      "volume": 99082,
+      "trading_value": 7732856650,
       "mcap": 1.8,
       "shares": 22894690,
       "induty_code": "59201",
@@ -4446,7 +4446,7 @@ window.KOS_LIVE_DATA = {
       "change": 0.0,
       "volume": 77728,
       "trading_value": 2346188100,
-      "mcap": 1.78,
+      "mcap": 1.79,
       "shares": 58654340,
       "categories": [
         "기타"
@@ -4461,9 +4461,9 @@ window.KOS_LIVE_DATA = {
       "sector": "기타",
       "price": 27700,
       "change": -17.93,
-      "volume": 1417111,
-      "trading_value": 38899404500,
-      "mcap": 1.78,
+      "volume": 1417112,
+      "trading_value": 38899432200,
+      "mcap": 1.79,
       "shares": 64671161,
       "categories": [
         "기타"
@@ -4478,9 +4478,9 @@ window.KOS_LIVE_DATA = {
       "sector": "기계·장비",
       "price": 139400,
       "change": 11.16,
-      "volume": 205305,
-      "trading_value": 28284570450,
-      "mcap": 1.75,
+      "volume": 205311,
+      "trading_value": 28285406850,
+      "mcap": 1.77,
       "shares": 12675758,
       "induty_code": "292",
       "categories": [
@@ -4496,8 +4496,8 @@ window.KOS_LIVE_DATA = {
       "sector": "기계·장비",
       "price": 57000,
       "change": 9.83,
-      "volume": 355129,
-      "trading_value": 19826340700,
+      "volume": 355135,
+      "trading_value": 19826682700,
       "mcap": 1.74,
       "shares": 30537980,
       "induty_code": "292",
@@ -4514,8 +4514,8 @@ window.KOS_LIVE_DATA = {
       "sector": "게임",
       "price": 33950,
       "change": 4.46,
-      "volume": 929577,
-      "trading_value": 31339656300,
+      "volume": 929859,
+      "trading_value": 31349230200,
       "mcap": 1.73,
       "shares": 50814305,
       "induty_code": "58222",
@@ -4523,6 +4523,24 @@ window.KOS_LIVE_DATA = {
         "게임"
       ],
       "rank": 251
+    },
+    {
+      "ticker": "089970",
+      "name": "브이엠",
+      "name_en": "VM Inc.",
+      "market": "코스닥",
+      "sector": "기계·장비",
+      "price": 69500,
+      "change": 28.23,
+      "volume": 1227101,
+      "trading_value": 84147943600,
+      "mcap": 1.72,
+      "shares": 24771995,
+      "induty_code": "29271",
+      "categories": [
+        "기계·장비"
+      ],
+      "rank": 252
     },
     {
       "ticker": "023590",
@@ -4534,28 +4552,10 @@ window.KOS_LIVE_DATA = {
       "change": 1.28,
       "volume": 64969,
       "trading_value": 2592804975,
-      "mcap": 1.72,
+      "mcap": 1.71,
       "shares": 43287312,
       "categories": [
         "기타"
-      ],
-      "rank": 252
-    },
-    {
-      "ticker": "089970",
-      "name": "브이엠",
-      "name_en": "VM Inc.",
-      "market": "코스닥",
-      "sector": "기계·장비",
-      "price": 69500,
-      "change": 28.23,
-      "volume": 1226866,
-      "trading_value": 84131611100,
-      "mcap": 1.72,
-      "shares": 24771995,
-      "induty_code": "29271",
-      "categories": [
-        "기계·장비"
       ],
       "rank": 253
     },
@@ -4569,7 +4569,7 @@ window.KOS_LIVE_DATA = {
       "change": 1.59,
       "volume": 157175,
       "trading_value": 3472899725,
-      "mcap": 1.69,
+      "mcap": 1.71,
       "shares": 76458180,
       "categories": [
         "기타"
@@ -4602,9 +4602,9 @@ window.KOS_LIVE_DATA = {
       "sector": "철강·금속",
       "price": 32400,
       "change": 3.85,
-      "volume": 767555,
-      "trading_value": 24892098775,
-      "mcap": 1.68,
+      "volume": 768217,
+      "trading_value": 24913547575,
+      "mcap": 1.67,
       "shares": 51676486,
       "induty_code": "2512",
       "categories": [
@@ -4637,8 +4637,8 @@ window.KOS_LIVE_DATA = {
       "sector": "기타",
       "price": 31800,
       "change": -3.05,
-      "volume": 129065,
-      "trading_value": 4138767275,
+      "volume": 129075,
+      "trading_value": 4139085275,
       "mcap": 1.66,
       "shares": 52238854,
       "categories": [
@@ -4656,7 +4656,7 @@ window.KOS_LIVE_DATA = {
       "change": 2.9,
       "volume": 237701,
       "trading_value": 11805208675,
-      "mcap": 1.64,
+      "mcap": 1.65,
       "shares": 33214571,
       "induty_code": "204",
       "categories": [
@@ -4672,15 +4672,33 @@ window.KOS_LIVE_DATA = {
       "sector": "바이오·제약",
       "price": 31050,
       "change": -2.51,
-      "volume": 334174,
-      "trading_value": 10458775125,
-      "mcap": 1.63,
+      "volume": 334196,
+      "trading_value": 10459458225,
+      "mcap": 1.62,
       "shares": 52225994,
       "induty_code": "2130",
       "categories": [
         "바이오·제약"
       ],
       "rank": 260
+    },
+    {
+      "ticker": "032500",
+      "name": "케이엠더블유",
+      "name_en": "KMW CO. LTD.",
+      "market": "코스닥",
+      "sector": "전자·부품",
+      "price": 38200,
+      "change": 9.14,
+      "volume": 1799136,
+      "trading_value": 68665370450,
+      "mcap": 1.61,
+      "shares": 42191701,
+      "induty_code": "2642",
+      "categories": [
+        "전자·부품"
+      ],
+      "rank": 261
     },
     {
       "ticker": "039200",
@@ -4692,29 +4710,11 @@ window.KOS_LIVE_DATA = {
       "change": -0.95,
       "volume": 346448,
       "trading_value": 14405173675,
-      "mcap": 1.6,
+      "mcap": 1.59,
       "shares": 38258176,
       "induty_code": "212",
       "categories": [
         "바이오·제약"
-      ],
-      "rank": 261
-    },
-    {
-      "ticker": "032500",
-      "name": "케이엠더블유",
-      "name_en": "KMW CO. LTD.",
-      "market": "코스닥",
-      "sector": "전자·부품",
-      "price": 38200,
-      "change": 9.14,
-      "volume": 1798738,
-      "trading_value": 68650166850,
-      "mcap": 1.59,
-      "shares": 42191701,
-      "induty_code": "2642",
-      "categories": [
-        "전자·부품"
       ],
       "rank": 262
     },
@@ -4726,8 +4726,8 @@ window.KOS_LIVE_DATA = {
       "sector": "게임",
       "price": 46900,
       "change": -12.01,
-      "volume": 360555,
-      "trading_value": 16782352175,
+      "volume": 360561,
+      "trading_value": 16782633575,
       "mcap": 1.54,
       "shares": 32753139,
       "induty_code": "5821",
@@ -4744,8 +4744,8 @@ window.KOS_LIVE_DATA = {
       "sector": "부동산·기타서비스",
       "price": 110000,
       "change": -0.81,
-      "volume": 230967,
-      "trading_value": 26032948300,
+      "volume": 231128,
+      "trading_value": 26050658300,
       "mcap": 1.53,
       "shares": 13933842,
       "induty_code": "70113",
@@ -4781,31 +4781,13 @@ window.KOS_LIVE_DATA = {
       "change": -0.98,
       "volume": 20605,
       "trading_value": 7385160250,
-      "mcap": 1.52,
+      "mcap": 1.53,
       "shares": 4327682,
       "induty_code": "2050",
       "categories": [
         "화학"
       ],
       "rank": 266
-    },
-    {
-      "ticker": "437730",
-      "name": "삼현",
-      "name_en": "SAMHYUN CO.,LTD",
-      "market": "코스닥",
-      "sector": "자동차",
-      "price": 47900,
-      "change": -1.84,
-      "volume": 201219,
-      "trading_value": 9867875800,
-      "mcap": 1.52,
-      "shares": 31707567,
-      "induty_code": "303",
-      "categories": [
-        "자동차"
-      ],
-      "rank": 267
     },
     {
       "ticker": "361610",
@@ -4815,31 +4797,32 @@ window.KOS_LIVE_DATA = {
       "sector": "기타",
       "price": 18730,
       "change": 2.57,
-      "volume": 171164,
-      "trading_value": 3192404695,
-      "mcap": 1.52,
+      "volume": 171169,
+      "trading_value": 3192498345,
+      "mcap": 1.53,
       "shares": 81787100,
       "categories": [
         "기타"
       ],
-      "rank": 268
+      "rank": 267
     },
     {
-      "ticker": "395400",
-      "name": "SK리츠",
-      "name_en": "",
-      "market": "코스피",
-      "sector": "기타",
-      "price": 4990,
-      "change": -1.77,
-      "volume": 419229,
-      "trading_value": 2114709009,
-      "mcap": 1.51,
-      "shares": 301017620,
+      "ticker": "437730",
+      "name": "삼현",
+      "name_en": "SAMHYUN CO.,LTD",
+      "market": "코스닥",
+      "sector": "자동차",
+      "price": 47900,
+      "change": -1.84,
+      "volume": 201229,
+      "trading_value": 9868354800,
+      "mcap": 1.52,
+      "shares": 31707567,
+      "induty_code": "303",
       "categories": [
-        "기타"
+        "자동차"
       ],
-      "rank": 269
+      "rank": 268
     },
     {
       "ticker": "001120",
@@ -4851,8 +4834,25 @@ window.KOS_LIVE_DATA = {
       "change": 0.51,
       "volume": 171275,
       "trading_value": 6659357200,
-      "mcap": 1.51,
+      "mcap": 1.52,
       "shares": 38760000,
+      "categories": [
+        "기타"
+      ],
+      "rank": 269
+    },
+    {
+      "ticker": "395400",
+      "name": "SK리츠",
+      "name_en": "",
+      "market": "코스피",
+      "sector": "기타",
+      "price": 4990,
+      "change": -1.77,
+      "volume": 419232,
+      "trading_value": 2114723979,
+      "mcap": 1.5,
+      "shares": 301017620,
       "categories": [
         "기타"
       ],
@@ -4866,8 +4866,8 @@ window.KOS_LIVE_DATA = {
       "sector": "기타",
       "price": 34000,
       "change": -0.87,
-      "volume": 64804,
-      "trading_value": 2221653575,
+      "volume": 64805,
+      "trading_value": 2221687575,
       "mcap": 1.5,
       "shares": 44140819,
       "categories": [
@@ -4900,8 +4900,8 @@ window.KOS_LIVE_DATA = {
       "sector": "기타",
       "price": 70300,
       "change": 0.57,
-      "volume": 86228,
-      "trading_value": 6067607550,
+      "volume": 86233,
+      "trading_value": 6067959050,
       "mcap": 1.49,
       "shares": 21173468,
       "categories": [
@@ -4919,7 +4919,7 @@ window.KOS_LIVE_DATA = {
       "change": 2.85,
       "volume": 49040,
       "trading_value": 6191108100,
-      "mcap": 1.46,
+      "mcap": 1.47,
       "shares": 11586575,
       "categories": [
         "바이오/제약"
@@ -4952,8 +4952,8 @@ window.KOS_LIVE_DATA = {
       "sector": "전자·부품",
       "price": 66800,
       "change": 4.21,
-      "volume": 226230,
-      "trading_value": 15395631450,
+      "volume": 226334,
+      "trading_value": 15402578650,
       "mcap": 1.43,
       "shares": 21334879,
       "induty_code": "2629",
@@ -4970,9 +4970,9 @@ window.KOS_LIVE_DATA = {
       "sector": "기계·장비",
       "price": 35550,
       "change": -3.66,
-      "volume": 293791,
-      "trading_value": 10575097625,
-      "mcap": 1.42,
+      "volume": 293820,
+      "trading_value": 10576128575,
+      "mcap": 1.43,
       "shares": 40148063,
       "induty_code": "29111",
       "categories": [
@@ -4998,24 +4998,6 @@ window.KOS_LIVE_DATA = {
       "rank": 278
     },
     {
-      "ticker": "127120",
-      "name": "제이에스링크",
-      "name_en": "JS Link, Inc.",
-      "market": "코스닥",
-      "sector": "부동산·기타서비스",
-      "price": 40050,
-      "change": 3.09,
-      "volume": 307815,
-      "trading_value": 12427656175,
-      "mcap": 1.41,
-      "shares": 34621046,
-      "induty_code": "70111",
-      "categories": [
-        "부동산·기타서비스"
-      ],
-      "rank": 279
-    },
-    {
       "ticker": "003570",
       "name": "SNT다이내믹스",
       "name_en": "",
@@ -5030,6 +5012,24 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
+      "rank": 279
+    },
+    {
+      "ticker": "127120",
+      "name": "제이에스링크",
+      "name_en": "JS Link, Inc.",
+      "market": "코스닥",
+      "sector": "부동산·기타서비스",
+      "price": 40050,
+      "change": 3.09,
+      "volume": 307845,
+      "trading_value": 12428857675,
+      "mcap": 1.39,
+      "shares": 34621046,
+      "induty_code": "70111",
+      "categories": [
+        "부동산·기타서비스"
+      ],
       "rank": 280
     },
     {
@@ -5040,15 +5040,33 @@ window.KOS_LIVE_DATA = {
       "sector": "바이오·제약",
       "price": 64100,
       "change": 0.63,
-      "volume": 115558,
-      "trading_value": 7405035600,
-      "mcap": 1.37,
+      "volume": 115638,
+      "trading_value": 7410163600,
+      "mcap": 1.38,
       "shares": 21513325,
       "induty_code": "211",
       "categories": [
         "바이오·제약"
       ],
       "rank": 281
+    },
+    {
+      "ticker": "195870",
+      "name": "해성디에스",
+      "name_en": "HAESUNG DS Co.,Ltd.",
+      "market": "코스피",
+      "sector": "전자·부품",
+      "price": 81100,
+      "change": 6.57,
+      "volume": 416038,
+      "trading_value": 34132187450,
+      "mcap": 1.38,
+      "shares": 17000000,
+      "induty_code": "262",
+      "categories": [
+        "전자·부품"
+      ],
+      "rank": 282
     },
     {
       "ticker": "073240",
@@ -5065,7 +5083,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "자동차"
       ],
-      "rank": 282
+      "rank": 283
     },
     {
       "ticker": "099320",
@@ -5075,15 +5093,15 @@ window.KOS_LIVE_DATA = {
       "sector": "항공·방산",
       "price": 125000,
       "change": -3.4,
-      "volume": 61925,
-      "trading_value": 7852793650,
+      "volume": 61953,
+      "trading_value": 7856293650,
       "mcap": 1.37,
       "shares": 10951278,
       "induty_code": "3131",
       "categories": [
         "항공·방산"
       ],
-      "rank": 283
+      "rank": 284
     },
     {
       "ticker": "090360",
@@ -5093,31 +5111,13 @@ window.KOS_LIVE_DATA = {
       "sector": "기계·장비",
       "price": 139200,
       "change": -12.34,
-      "volume": 1114853,
-      "trading_value": 155947021600,
-      "mcap": 1.37,
+      "volume": 1114914,
+      "trading_value": 155955512800,
+      "mcap": 1.36,
       "shares": 9750000,
       "induty_code": "29280",
       "categories": [
         "기계·장비"
-      ],
-      "rank": 284
-    },
-    {
-      "ticker": "195870",
-      "name": "해성디에스",
-      "name_en": "HAESUNG DS Co.,Ltd.",
-      "market": "코스피",
-      "sector": "전자·부품",
-      "price": 81100,
-      "change": 6.57,
-      "volume": 416038,
-      "trading_value": 34132187450,
-      "mcap": 1.37,
-      "shares": 17000000,
-      "induty_code": "262",
-      "categories": [
-        "전자·부품"
       ],
       "rank": 285
     },
@@ -5147,9 +5147,9 @@ window.KOS_LIVE_DATA = {
       "sector": "전자·부품",
       "price": 67700,
       "change": 13.4,
-      "volume": 320655,
-      "trading_value": 21861333600,
-      "mcap": 1.33,
+      "volume": 320708,
+      "trading_value": 21864921700,
+      "mcap": 1.34,
       "shares": 19798661,
       "induty_code": "272",
       "categories": [
@@ -5182,8 +5182,8 @@ window.KOS_LIVE_DATA = {
       "sector": "기타",
       "price": 11700,
       "change": 5.03,
-      "volume": 97942,
-      "trading_value": 1128785455,
+      "volume": 97943,
+      "trading_value": 1128797155,
       "mcap": 1.33,
       "shares": 113962961,
       "categories": [
@@ -5199,8 +5199,8 @@ window.KOS_LIVE_DATA = {
       "sector": "전자·부품",
       "price": 19490,
       "change": 2.36,
-      "volume": 931247,
-      "trading_value": 18213295280,
+      "volume": 935084,
+      "trading_value": 18288041750,
       "mcap": 1.32,
       "shares": 67652659,
       "induty_code": "26291",
@@ -5217,8 +5217,8 @@ window.KOS_LIVE_DATA = {
       "sector": "기계·장비",
       "price": 15990,
       "change": 4.58,
-      "volume": 839878,
-      "trading_value": 13621130975,
+      "volume": 842471,
+      "trading_value": 13662528085,
       "mcap": 1.31,
       "shares": 82045350,
       "induty_code": "292",
@@ -5226,24 +5226,6 @@ window.KOS_LIVE_DATA = {
         "기계·장비"
       ],
       "rank": 291
-    },
-    {
-      "ticker": "490470",
-      "name": "세미파이브",
-      "name_en": "SemiFive Inc.",
-      "market": "코스닥",
-      "sector": "건설·건자재",
-      "price": 38100,
-      "change": -3.54,
-      "volume": 880942,
-      "trading_value": 34578268125,
-      "mcap": 1.3,
-      "shares": 33999890,
-      "induty_code": "721",
-      "categories": [
-        "건설·건자재"
-      ],
-      "rank": 292
     },
     {
       "ticker": "189300",
@@ -5255,11 +5237,29 @@ window.KOS_LIVE_DATA = {
       "change": -2.32,
       "volume": 111256,
       "trading_value": 13618649600,
-      "mcap": 1.29,
+      "mcap": 1.31,
       "shares": 10737497,
       "induty_code": "26429",
       "categories": [
         "전자·부품"
+      ],
+      "rank": 292
+    },
+    {
+      "ticker": "490470",
+      "name": "세미파이브",
+      "name_en": "SemiFive Inc.",
+      "market": "코스닥",
+      "sector": "건설·건자재",
+      "price": 38100,
+      "change": -3.54,
+      "volume": 884707,
+      "trading_value": 34721529125,
+      "mcap": 1.3,
+      "shares": 33999890,
+      "induty_code": "721",
+      "categories": [
+        "건설·건자재"
       ],
       "rank": 293
     },
@@ -5271,33 +5271,15 @@ window.KOS_LIVE_DATA = {
       "sector": "반도체",
       "price": 7890,
       "change": 3.82,
-      "volume": 5425437,
-      "trading_value": 43683531980,
-      "mcap": 1.29,
+      "volume": 5449885,
+      "trading_value": 43875959270,
+      "mcap": 1.3,
       "shares": 164460303,
       "induty_code": "2611",
       "categories": [
         "반도체"
       ],
       "rank": 294
-    },
-    {
-      "ticker": "397030",
-      "name": "에이프릴바이오",
-      "name_en": "AprilBio Co.,Ltd.",
-      "market": "코스닥",
-      "sector": "부동산·기타서비스",
-      "price": 54700,
-      "change": -4.54,
-      "volume": 274662,
-      "trading_value": 15321406500,
-      "mcap": 1.28,
-      "shares": 23413826,
-      "induty_code": "70113",
-      "categories": [
-        "부동산·기타서비스"
-      ],
-      "rank": 295
     },
     {
       "ticker": "003530",
@@ -5307,15 +5289,15 @@ window.KOS_LIVE_DATA = {
       "sector": "금융",
       "price": 6000,
       "change": 3.45,
-      "volume": 1265370,
-      "trading_value": 7543012450,
-      "mcap": 1.28,
+      "volume": 1271234,
+      "trading_value": 7578300190,
+      "mcap": 1.29,
       "shares": 214547775,
       "induty_code": "66121",
       "categories": [
         "금융"
       ],
-      "rank": 296
+      "rank": 295
     },
     {
       "ticker": "004000",
@@ -5327,10 +5309,28 @@ window.KOS_LIVE_DATA = {
       "change": 2.67,
       "volume": 66993,
       "trading_value": 3336457175,
-      "mcap": 1.28,
+      "mcap": 1.29,
       "shares": 25800000,
       "categories": [
         "기타"
+      ],
+      "rank": 296
+    },
+    {
+      "ticker": "397030",
+      "name": "에이프릴바이오",
+      "name_en": "AprilBio Co.,Ltd.",
+      "market": "코스닥",
+      "sector": "부동산·기타서비스",
+      "price": 54700,
+      "change": -4.54,
+      "volume": 274666,
+      "trading_value": 15321625300,
+      "mcap": 1.28,
+      "shares": 23413826,
+      "induty_code": "70113",
+      "categories": [
+        "부동산·기타서비스"
       ],
       "rank": 297
     },
@@ -5359,8 +5359,8 @@ window.KOS_LIVE_DATA = {
       "sector": "건설·건자재",
       "price": 37000,
       "change": -1.46,
-      "volume": 337019,
-      "trading_value": 12537329725,
+      "volume": 337032,
+      "trading_value": 12537810725,
       "mcap": 1.26,
       "shares": 34067004,
       "induty_code": "411",
@@ -5377,8 +5377,8 @@ window.KOS_LIVE_DATA = {
       "sector": "반도체",
       "price": 63400,
       "change": 8.75,
-      "volume": 360048,
-      "trading_value": 23448706750,
+      "volume": 360051,
+      "trading_value": 23448896950,
       "mcap": 1.25,
       "shares": 19777674,
       "induty_code": "2612",
@@ -5388,24 +5388,6 @@ window.KOS_LIVE_DATA = {
       "rank": 300
     },
     {
-      "ticker": "027360",
-      "name": "아주IB투자",
-      "name_en": "AJU IB INVESTMENT CO., LTD.",
-      "market": "코스닥",
-      "sector": "금융",
-      "price": 10240,
-      "change": -0.78,
-      "volume": 6218197,
-      "trading_value": 63266363270,
-      "mcap": 1.25,
-      "shares": 121145406,
-      "induty_code": "649",
-      "categories": [
-        "금융"
-      ],
-      "rank": 301
-    },
-    {
       "ticker": "090710",
       "name": "휴림로봇",
       "name_en": "Hyulim ROBOT Co.,Ltd.",
@@ -5413,33 +5395,33 @@ window.KOS_LIVE_DATA = {
       "sector": "기계·장비",
       "price": 10440,
       "change": -4.57,
-      "volume": 3404304,
-      "trading_value": 35572073580,
-      "mcap": 1.24,
+      "volume": 3414191,
+      "trading_value": 35675129800,
+      "mcap": 1.25,
       "shares": 119457197,
       "induty_code": "29280",
       "categories": [
         "기계·장비"
       ],
-      "rank": 302
+      "rank": 301
     },
     {
-      "ticker": "295310",
-      "name": "에이치브이엠",
-      "name_en": "HVM CO.,LTD.",
+      "ticker": "027360",
+      "name": "아주IB투자",
+      "name_en": "AJU IB INVESTMENT CO., LTD.",
       "market": "코스닥",
-      "sector": "철강·금속",
-      "price": 102600,
-      "change": 1.99,
-      "volume": 267848,
-      "trading_value": 27482643200,
+      "sector": "금융",
+      "price": 10240,
+      "change": -0.78,
+      "volume": 6243960,
+      "trading_value": 63529290930,
       "mcap": 1.24,
-      "shares": 12027291,
-      "induty_code": "24219",
+      "shares": 121145406,
+      "induty_code": "649",
       "categories": [
-        "철강·금속"
+        "금융"
       ],
-      "rank": 303
+      "rank": 302
     },
     {
       "ticker": "491000",
@@ -5449,15 +5431,15 @@ window.KOS_LIVE_DATA = {
       "sector": "전자·부품",
       "price": 49400,
       "change": 3.02,
-      "volume": 179137,
-      "trading_value": 8842093975,
-      "mcap": 1.23,
+      "volume": 179222,
+      "trading_value": 8846292975,
+      "mcap": 1.24,
       "shares": 25004391,
       "induty_code": "27112",
       "categories": [
         "전자·부품"
       ],
-      "rank": 304
+      "rank": 303
     },
     {
       "ticker": "003380",
@@ -5467,15 +5449,69 @@ window.KOS_LIVE_DATA = {
       "sector": "지주",
       "price": 11040,
       "change": 1.28,
-      "volume": 739439,
-      "trading_value": 8223972445,
-      "mcap": 1.23,
+      "volume": 741730,
+      "trading_value": 8249280195,
+      "mcap": 1.24,
       "shares": 112005621,
       "induty_code": "64992",
       "categories": [
         "지주"
       ],
+      "rank": 304
+    },
+    {
+      "ticker": "295310",
+      "name": "에이치브이엠",
+      "name_en": "HVM CO.,LTD.",
+      "market": "코스닥",
+      "sector": "철강·금속",
+      "price": 102600,
+      "change": 1.99,
+      "volume": 267849,
+      "trading_value": 27482745800,
+      "mcap": 1.23,
+      "shares": 12027291,
+      "induty_code": "24219",
+      "categories": [
+        "철강·금속"
+      ],
       "rank": 305
+    },
+    {
+      "ticker": "006110",
+      "name": "삼아알미늄",
+      "name_en": "SAMA ALUMINIUM CO.,LTD",
+      "market": "코스피",
+      "sector": "철강·금속",
+      "price": 81600,
+      "change": 3.03,
+      "volume": 174218,
+      "trading_value": 14417648700,
+      "mcap": 1.23,
+      "shares": 15123455,
+      "induty_code": "24222",
+      "categories": [
+        "철강·금속"
+      ],
+      "rank": 306
+    },
+    {
+      "ticker": "093370",
+      "name": "후성",
+      "name_en": "FOOSUNG CO.,LTD",
+      "market": "코스피",
+      "sector": "화학",
+      "price": 11460,
+      "change": 8.32,
+      "volume": 1820401,
+      "trading_value": 20689091245,
+      "mcap": 1.23,
+      "shares": 107255330,
+      "induty_code": "20129",
+      "categories": [
+        "화학"
+      ],
+      "rank": 307
     },
     {
       "ticker": "012630",
@@ -5487,46 +5523,10 @@ window.KOS_LIVE_DATA = {
       "change": 0.0,
       "volume": 103723,
       "trading_value": 2150615050,
-      "mcap": 1.23,
+      "mcap": 1.22,
       "shares": 59741721,
       "categories": [
         "기타"
-      ],
-      "rank": 306
-    },
-    {
-      "ticker": "006110",
-      "name": "삼아알미늄",
-      "name_en": "SAMA ALUMINIUM CO.,LTD",
-      "market": "코스피",
-      "sector": "철강·금속",
-      "price": 81600,
-      "change": 3.03,
-      "volume": 174216,
-      "trading_value": 14417485500,
-      "mcap": 1.22,
-      "shares": 15123455,
-      "induty_code": "24222",
-      "categories": [
-        "철강·금속"
-      ],
-      "rank": 307
-    },
-    {
-      "ticker": "093370",
-      "name": "후성",
-      "name_en": "FOOSUNG CO.,LTD",
-      "market": "코스피",
-      "sector": "화학",
-      "price": 11460,
-      "change": 8.32,
-      "volume": 1820362,
-      "trading_value": 20688644305,
-      "mcap": 1.22,
-      "shares": 107255330,
-      "induty_code": "20129",
-      "categories": [
-        "화학"
       ],
       "rank": 308
     },
@@ -5538,9 +5538,9 @@ window.KOS_LIVE_DATA = {
       "sector": "기타",
       "price": 43850,
       "change": 2.21,
-      "volume": 139945,
-      "trading_value": 6169965975,
-      "mcap": 1.2,
+      "volume": 139948,
+      "trading_value": 6170097525,
+      "mcap": 1.21,
       "shares": 27483948,
       "categories": [
         "기타"
@@ -5555,8 +5555,8 @@ window.KOS_LIVE_DATA = {
       "sector": "기타",
       "price": 12830,
       "change": -0.08,
-      "volume": 242029,
-      "trading_value": 3114223340,
+      "volume": 242342,
+      "trading_value": 3118239130,
       "mcap": 1.19,
       "shares": 92972846,
       "categories": [
@@ -5582,6 +5582,23 @@ window.KOS_LIVE_DATA = {
       "rank": 311
     },
     {
+      "ticker": "082640",
+      "name": "동양생명",
+      "name_en": "",
+      "market": "코스피",
+      "sector": "기타",
+      "price": 7620,
+      "change": 1.6,
+      "volume": 80358,
+      "trading_value": 600692590,
+      "mcap": 1.19,
+      "shares": 156062581,
+      "categories": [
+        "기타"
+      ],
+      "rank": 312
+    },
+    {
       "ticker": "466100",
       "name": "클로봇",
       "name_en": "CLOBOT Co., Ltd.",
@@ -5589,15 +5606,15 @@ window.KOS_LIVE_DATA = {
       "sector": "게임",
       "price": 46450,
       "change": -2.0,
-      "volume": 475787,
-      "trading_value": 22472104525,
+      "volume": 475869,
+      "trading_value": 22475913425,
       "mcap": 1.18,
       "shares": 25459239,
       "induty_code": "58221",
       "categories": [
         "게임"
       ],
-      "rank": 312
+      "rank": 313
     },
     {
       "ticker": "415640",
@@ -5614,23 +5631,6 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 313
-    },
-    {
-      "ticker": "082640",
-      "name": "동양생명",
-      "name_en": "",
-      "market": "코스피",
-      "sector": "기타",
-      "price": 7620,
-      "change": 1.6,
-      "volume": 80283,
-      "trading_value": 600121770,
-      "mcap": 1.18,
-      "shares": 156062581,
-      "categories": [
-        "기타"
-      ],
       "rank": 314
     },
     {
@@ -5641,8 +5641,8 @@ window.KOS_LIVE_DATA = {
       "sector": "기계·장비",
       "price": 99600,
       "change": -8.46,
-      "volume": 115526,
-      "trading_value": 11621124650,
+      "volume": 115537,
+      "trading_value": 11622220250,
       "mcap": 1.17,
       "shares": 11781345,
       "induty_code": "292",
@@ -5659,9 +5659,9 @@ window.KOS_LIVE_DATA = {
       "sector": "화학",
       "price": 17650,
       "change": 1.79,
-      "volume": 411759,
-      "trading_value": 7304196915,
-      "mcap": 1.15,
+      "volume": 415182,
+      "trading_value": 7364292925,
+      "mcap": 1.16,
       "shares": 65730548,
       "induty_code": "204",
       "categories": [
@@ -5679,7 +5679,7 @@ window.KOS_LIVE_DATA = {
       "change": 0.73,
       "volume": 192010,
       "trading_value": 3158914615,
-      "mcap": 1.15,
+      "mcap": 1.16,
       "shares": 70133611,
       "categories": [
         "식품"
@@ -5694,9 +5694,9 @@ window.KOS_LIVE_DATA = {
       "sector": "전자·부품",
       "price": 110400,
       "change": 2.51,
-      "volume": 952838,
-      "trading_value": 104867569500,
-      "mcap": 1.14,
+      "volume": 957167,
+      "trading_value": 105345435700,
+      "mcap": 1.15,
       "shares": 10395000,
       "induty_code": "26291",
       "categories": [
@@ -5712,31 +5712,14 @@ window.KOS_LIVE_DATA = {
       "sector": "기타",
       "price": 30050,
       "change": 1.86,
-      "volume": 182987,
-      "trading_value": 5471842625,
+      "volume": 182989,
+      "trading_value": 5471902725,
       "mcap": 1.14,
       "shares": 38059740,
       "categories": [
         "기타"
       ],
       "rank": 319
-    },
-    {
-      "ticker": "328130",
-      "name": "루닛",
-      "name_en": "",
-      "market": "코스닥",
-      "sector": "기타",
-      "price": 15240,
-      "change": 1.2,
-      "volume": 378931,
-      "trading_value": 5760611875,
-      "mcap": 1.13,
-      "shares": 74382636,
-      "categories": [
-        "기타"
-      ],
-      "rank": 320
     },
     {
       "ticker": "038500",
@@ -5746,13 +5729,30 @@ window.KOS_LIVE_DATA = {
       "sector": "건설·건자재",
       "price": 10530,
       "change": -10.99,
-      "volume": 4587046,
-      "trading_value": 48510669435,
-      "mcap": 1.13,
+      "volume": 4602814,
+      "trading_value": 48675240935,
+      "mcap": 1.14,
       "shares": 107916306,
       "induty_code": "239",
       "categories": [
         "건설·건자재"
+      ],
+      "rank": 320
+    },
+    {
+      "ticker": "328130",
+      "name": "루닛",
+      "name_en": "",
+      "market": "코스닥",
+      "sector": "기타",
+      "price": 15240,
+      "change": 1.2,
+      "volume": 378951,
+      "trading_value": 5760916675,
+      "mcap": 1.13,
+      "shares": 74382636,
+      "categories": [
+        "기타"
       ],
       "rank": 321
     },
@@ -5766,7 +5766,7 @@ window.KOS_LIVE_DATA = {
       "change": 2.49,
       "volume": 218938,
       "trading_value": 4282133405,
-      "mcap": 1.11,
+      "mcap": 1.12,
       "shares": 57848466,
       "categories": [
         "기타"
@@ -5781,9 +5781,9 @@ window.KOS_LIVE_DATA = {
       "sector": "기타",
       "price": 30750,
       "change": -0.49,
-      "volume": 49232,
-      "trading_value": 1513600900,
-      "mcap": 1.11,
+      "volume": 49234,
+      "trading_value": 1513662400,
+      "mcap": 1.12,
       "shares": 36309388,
       "categories": [
         "기타"
@@ -5798,8 +5798,8 @@ window.KOS_LIVE_DATA = {
       "sector": "기타",
       "price": 120100,
       "change": 0.0,
-      "volume": 36598,
-      "trading_value": 4490686250,
+      "volume": 36600,
+      "trading_value": 4490926450,
       "mcap": 1.08,
       "shares": 8952495,
       "categories": [
@@ -5832,8 +5832,8 @@ window.KOS_LIVE_DATA = {
       "sector": "전자·부품",
       "price": 108300,
       "change": 7.23,
-      "volume": 206952,
-      "trading_value": 22715235600,
+      "volume": 206953,
+      "trading_value": 22715343900,
       "mcap": 1.06,
       "shares": 9832630,
       "induty_code": "2622",
@@ -5860,6 +5860,24 @@ window.KOS_LIVE_DATA = {
       "rank": 327
     },
     {
+      "ticker": "048410",
+      "name": "현대바이오",
+      "name_en": "HYUNDAI BIOSCIENCE CO., LTD.",
+      "market": "코스닥",
+      "sector": "화학",
+      "price": 10940,
+      "change": -3.36,
+      "volume": 1197862,
+      "trading_value": 13268737020,
+      "mcap": 1.06,
+      "shares": 96505572,
+      "induty_code": "204",
+      "categories": [
+        "화학"
+      ],
+      "rank": 328
+    },
+    {
       "ticker": "003090",
       "name": "대웅",
       "name_en": "",
@@ -5869,12 +5887,12 @@ window.KOS_LIVE_DATA = {
       "change": 0.56,
       "volume": 53809,
       "trading_value": 977970755,
-      "mcap": 1.06,
+      "mcap": 1.05,
       "shares": 58141980,
       "categories": [
         "기타"
       ],
-      "rank": 328
+      "rank": 329
     },
     {
       "ticker": "161580",
@@ -5884,31 +5902,13 @@ window.KOS_LIVE_DATA = {
       "sector": "기계·장비",
       "price": 44950,
       "change": 6.52,
-      "volume": 286027,
-      "trading_value": 12769016775,
-      "mcap": 1.06,
+      "volume": 286050,
+      "trading_value": 12770050625,
+      "mcap": 1.05,
       "shares": 23442247,
       "induty_code": "2927",
       "categories": [
         "기계·장비"
-      ],
-      "rank": 329
-    },
-    {
-      "ticker": "048410",
-      "name": "현대바이오",
-      "name_en": "HYUNDAI BIOSCIENCE CO., LTD.",
-      "market": "코스닥",
-      "sector": "화학",
-      "price": 10940,
-      "change": -3.36,
-      "volume": 1192969,
-      "trading_value": 13215339590,
-      "mcap": 1.05,
-      "shares": 96505572,
-      "induty_code": "204",
-      "categories": [
-        "화학"
       ],
       "rank": 330
     },
@@ -5920,8 +5920,8 @@ window.KOS_LIVE_DATA = {
       "sector": "바이오/제약",
       "price": 75100,
       "change": -1.96,
-      "volume": 23051,
-      "trading_value": 1736030800,
+      "volume": 23074,
+      "trading_value": 1737758100,
       "mcap": 1.04,
       "shares": 13802780,
       "categories": [
@@ -5956,7 +5956,7 @@ window.KOS_LIVE_DATA = {
       "change": -2.47,
       "volume": 91488,
       "trading_value": 2535904325,
-      "mcap": 1.03,
+      "mcap": 1.04,
       "shares": 37488455,
       "categories": [
         "기타"
@@ -5971,32 +5971,14 @@ window.KOS_LIVE_DATA = {
       "sector": "기타",
       "price": 43700,
       "change": 1.75,
-      "volume": 115865,
-      "trading_value": 5082940450,
-      "mcap": 1.03,
+      "volume": 115889,
+      "trading_value": 5083989250,
+      "mcap": 1.04,
       "shares": 23690728,
       "categories": [
         "기타"
       ],
       "rank": 334
-    },
-    {
-      "ticker": "388210",
-      "name": "씨엠티엑스",
-      "name_en": "CMTX Co.,Ltd.",
-      "market": "코스닥",
-      "sector": "전자·부품",
-      "price": 106000,
-      "change": -2.03,
-      "volume": 80024,
-      "trading_value": 8814162150,
-      "mcap": 1.03,
-      "shares": 9654438,
-      "induty_code": "26299",
-      "categories": [
-        "전자·부품"
-      ],
-      "rank": 335
     },
     {
       "ticker": "003470",
@@ -6006,14 +5988,14 @@ window.KOS_LIVE_DATA = {
       "sector": "기타",
       "price": 5140,
       "change": 1.78,
-      "volume": 819159,
-      "trading_value": 4224802665,
+      "volume": 821301,
+      "trading_value": 4235838165,
       "mcap": 1.03,
       "shares": 199596576,
       "categories": [
         "기타"
       ],
-      "rank": 336
+      "rank": 335
     },
     {
       "ticker": "183300",
@@ -6023,13 +6005,31 @@ window.KOS_LIVE_DATA = {
       "sector": "기계·장비",
       "price": 98800,
       "change": 8.69,
-      "volume": 344749,
-      "trading_value": 34039485000,
-      "mcap": 1.02,
+      "volume": 344765,
+      "trading_value": 34041065800,
+      "mcap": 1.03,
       "shares": 10460684,
       "induty_code": "29271",
       "categories": [
         "기계·장비"
+      ],
+      "rank": 336
+    },
+    {
+      "ticker": "388210",
+      "name": "씨엠티엑스",
+      "name_en": "CMTX Co.,Ltd.",
+      "market": "코스닥",
+      "sector": "전자·부품",
+      "price": 106000,
+      "change": -2.03,
+      "volume": 80074,
+      "trading_value": 8819462150,
+      "mcap": 1.02,
+      "shares": 9654438,
+      "induty_code": "26299",
+      "categories": [
+        "전자·부품"
       ],
       "rank": 337
     },
@@ -6068,6 +6068,41 @@ window.KOS_LIVE_DATA = {
       "rank": 339
     },
     {
+      "ticker": "330590",
+      "name": "롯데리츠",
+      "name_en": "",
+      "market": "코스피",
+      "sector": "기타",
+      "price": 3495,
+      "change": -0.29,
+      "volume": 386306,
+      "trading_value": 1353903158,
+      "mcap": 1.01,
+      "shares": 288968884,
+      "categories": [
+        "기타"
+      ],
+      "rank": 340
+    },
+    {
+      "ticker": "083450",
+      "name": "GST",
+      "name_en": "GlobalStandardTechnologyCo.,Ltd.",
+      "market": "코스닥",
+      "sector": "기계·장비",
+      "price": 55000,
+      "change": 14.11,
+      "volume": 542924,
+      "trading_value": 29845602800,
+      "mcap": 1.01,
+      "shares": 18430000,
+      "induty_code": "29271",
+      "categories": [
+        "기계·장비"
+      ],
+      "rank": 341
+    },
+    {
       "ticker": "009450",
       "name": "경동나비엔",
       "name_en": "",
@@ -6082,24 +6117,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 340
-    },
-    {
-      "ticker": "330590",
-      "name": "롯데리츠",
-      "name_en": "",
-      "market": "코스피",
-      "sector": "기타",
-      "price": 3495,
-      "change": -0.29,
-      "volume": 386296,
-      "trading_value": 1353868208,
-      "mcap": 1.0,
-      "shares": 288968884,
-      "categories": [
-        "기타"
-      ],
-      "rank": 341
+      "rank": 342
     },
     {
       "ticker": "124500",
@@ -6109,14 +6127,14 @@ window.KOS_LIVE_DATA = {
       "sector": "기타",
       "price": 43100,
       "change": -0.46,
-      "volume": 102038,
-      "trading_value": 4420829000,
+      "volume": 102042,
+      "trading_value": 4421001400,
       "mcap": 1.0,
       "shares": 23204527,
       "categories": [
         "기타"
       ],
-      "rank": 342
+      "rank": 343
     },
     {
       "ticker": "280360",
@@ -6133,7 +6151,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 343
+      "rank": 344
     },
     {
       "ticker": "036830",
@@ -6150,7 +6168,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "반도체"
       ],
-      "rank": 344
+      "rank": 345
     },
     {
       "ticker": "005300",
@@ -6167,7 +6185,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 345
+      "rank": 346
     },
     {
       "ticker": "056190",
@@ -6179,12 +6197,12 @@ window.KOS_LIVE_DATA = {
       "change": 3.57,
       "volume": 132330,
       "trading_value": 3659025850,
-      "mcap": 0.98,
+      "mcap": 0.99,
       "shares": 35908760,
       "categories": [
         "기타"
       ],
-      "rank": 346
+      "rank": 347
     },
     {
       "ticker": "090460",
@@ -6194,31 +6212,13 @@ window.KOS_LIVE_DATA = {
       "sector": "전자·부품",
       "price": 29300,
       "change": 0.17,
-      "volume": 496685,
-      "trading_value": 14559818350,
-      "mcap": 0.98,
+      "volume": 496907,
+      "trading_value": 14566322950,
+      "mcap": 0.99,
       "shares": 33711538,
       "induty_code": "2622",
       "categories": [
         "전자·부품"
-      ],
-      "rank": 347
-    },
-    {
-      "ticker": "083450",
-      "name": "GST",
-      "name_en": "GlobalStandardTechnologyCo.,Ltd.",
-      "market": "코스닥",
-      "sector": "기계·장비",
-      "price": 55000,
-      "change": 14.11,
-      "volume": 542912,
-      "trading_value": 29844942800,
-      "mcap": 0.96,
-      "shares": 18430000,
-      "induty_code": "29271",
-      "categories": [
-        "기계·장비"
       ],
       "rank": 348
     },
@@ -6230,9 +6230,9 @@ window.KOS_LIVE_DATA = {
       "sector": "기타",
       "price": 30450,
       "change": 0.16,
-      "volume": 132009,
-      "trading_value": 4030757650,
-      "mcap": 0.95,
+      "volume": 132219,
+      "trading_value": 4037170800,
+      "mcap": 0.94,
       "shares": 30888000,
       "categories": [
         "기타"
@@ -6264,8 +6264,8 @@ window.KOS_LIVE_DATA = {
       "sector": "전자·부품",
       "price": 29050,
       "change": -0.85,
-      "volume": 1505711,
-      "trading_value": 44489029375,
+      "volume": 1517877,
+      "trading_value": 44840659575,
       "mcap": 0.94,
       "shares": 32450626,
       "induty_code": "27199",
@@ -6301,7 +6301,7 @@ window.KOS_LIVE_DATA = {
       "change": 5.61,
       "volume": 18531,
       "trading_value": 3832181200,
-      "mcap": 0.93,
+      "mcap": 0.94,
       "shares": 4479948,
       "categories": [
         "기타"
@@ -6316,9 +6316,9 @@ window.KOS_LIVE_DATA = {
       "sector": "2차전지",
       "price": 11290,
       "change": 4.83,
-      "volume": 1330963,
-      "trading_value": 14768149110,
-      "mcap": 0.92,
+      "volume": 1333143,
+      "trading_value": 14792773590,
+      "mcap": 0.93,
       "shares": 82331788,
       "induty_code": "282",
       "categories": [
@@ -6334,8 +6334,8 @@ window.KOS_LIVE_DATA = {
       "sector": "전자·부품",
       "price": 14990,
       "change": 4.02,
-      "volume": 2524475,
-      "trading_value": 38592815795,
+      "volume": 2532804,
+      "trading_value": 38717701095,
       "mcap": 0.91,
       "shares": 60756534,
       "induty_code": "2642",
@@ -6352,8 +6352,8 @@ window.KOS_LIVE_DATA = {
       "sector": "2차전지",
       "price": 126300,
       "change": -3.66,
-      "volume": 66325,
-      "trading_value": 8555763750,
+      "volume": 66335,
+      "trading_value": 8557026750,
       "mcap": 0.9,
       "shares": 7143528,
       "induty_code": "282",
@@ -6388,8 +6388,8 @@ window.KOS_LIVE_DATA = {
       "sector": "기계·장비",
       "price": 11560,
       "change": 4.62,
-      "volume": 1164558,
-      "trading_value": 13380881280,
+      "volume": 1172428,
+      "trading_value": 13472912880,
       "mcap": 0.9,
       "shares": 77780144,
       "induty_code": "292",
@@ -6406,8 +6406,8 @@ window.KOS_LIVE_DATA = {
       "sector": "기타",
       "price": 3650,
       "change": -3.05,
-      "volume": 525875,
-      "trading_value": 1929867621,
+      "volume": 525912,
+      "trading_value": 1930002671,
       "mcap": 0.9,
       "shares": 246089000,
       "categories": [
@@ -6477,30 +6477,12 @@ window.KOS_LIVE_DATA = {
       "change": -2.34,
       "volume": 496499,
       "trading_value": 6922048755,
-      "mcap": 0.88,
+      "mcap": 0.89,
       "shares": 64270771,
       "categories": [
         "기타"
       ],
       "rank": 363
-    },
-    {
-      "ticker": "074600",
-      "name": "원익QnC",
-      "name_en": "WONIK QnC CORPORATION",
-      "market": "코스닥",
-      "sector": "건설·건자재",
-      "price": 33650,
-      "change": 11.42,
-      "volume": 892375,
-      "trading_value": 30580467650,
-      "mcap": 0.88,
-      "shares": 26288000,
-      "induty_code": "2312",
-      "categories": [
-        "건설·건자재"
-      ],
-      "rank": 364
     },
     {
       "ticker": "499790",
@@ -6512,12 +6494,12 @@ window.KOS_LIVE_DATA = {
       "change": 3.58,
       "volume": 103891,
       "trading_value": 4632559975,
-      "mcap": 0.88,
+      "mcap": 0.89,
       "shares": 19830841,
       "categories": [
         "기타"
       ],
-      "rank": 365
+      "rank": 364
     },
     {
       "ticker": "213420",
@@ -6527,13 +6509,31 @@ window.KOS_LIVE_DATA = {
       "sector": "전자·부품",
       "price": 35650,
       "change": -0.42,
-      "volume": 251942,
-      "trading_value": 9003193075,
-      "mcap": 0.88,
+      "volume": 252016,
+      "trading_value": 9005831175,
+      "mcap": 0.89,
       "shares": 24831179,
       "induty_code": "262",
       "categories": [
         "전자·부품"
+      ],
+      "rank": 365
+    },
+    {
+      "ticker": "074600",
+      "name": "원익QnC",
+      "name_en": "WONIK QnC CORPORATION",
+      "market": "코스닥",
+      "sector": "건설·건자재",
+      "price": 33650,
+      "change": 11.42,
+      "volume": 892377,
+      "trading_value": 30580534950,
+      "mcap": 0.88,
+      "shares": 26288000,
+      "induty_code": "2312",
+      "categories": [
+        "건설·건자재"
       ],
       "rank": 366
     },
@@ -6562,8 +6562,8 @@ window.KOS_LIVE_DATA = {
       "sector": "전기장비",
       "price": 11130,
       "change": 0.18,
-      "volume": 2301880,
-      "trading_value": 25748782190,
+      "volume": 2320298,
+      "trading_value": 25953993420,
       "mcap": 0.87,
       "shares": 78414416,
       "induty_code": "28302",
@@ -6580,8 +6580,8 @@ window.KOS_LIVE_DATA = {
       "sector": "반도체",
       "price": 37650,
       "change": 0.94,
-      "volume": 472594,
-      "trading_value": 17999015175,
+      "volume": 472718,
+      "trading_value": 18003683775,
       "mcap": 0.87,
       "shares": 23059202,
       "induty_code": "261",
@@ -6615,8 +6615,8 @@ window.KOS_LIVE_DATA = {
       "sector": "기타",
       "price": 14370,
       "change": 3.01,
-      "volume": 397247,
-      "trading_value": 5696432925,
+      "volume": 397347,
+      "trading_value": 5697869925,
       "mcap": 0.86,
       "shares": 60004014,
       "categories": [
@@ -6632,9 +6632,9 @@ window.KOS_LIVE_DATA = {
       "sector": "기타",
       "price": 52300,
       "change": -2.61,
-      "volume": 131003,
-      "trading_value": 6889298700,
-      "mcap": 0.86,
+      "volume": 131110,
+      "trading_value": 6894894800,
+      "mcap": 0.85,
       "shares": 16264300,
       "categories": [
         "기타"
@@ -6649,8 +6649,8 @@ window.KOS_LIVE_DATA = {
       "sector": "기타",
       "price": 17870,
       "change": -4.64,
-      "volume": 366449,
-      "trading_value": 6590140880,
+      "volume": 366564,
+      "trading_value": 6592195930,
       "mcap": 0.85,
       "shares": 47816236,
       "categories": [
@@ -6677,6 +6677,23 @@ window.KOS_LIVE_DATA = {
       "rank": 374
     },
     {
+      "ticker": "030190",
+      "name": "NICE평가정보",
+      "name_en": "",
+      "market": "코스피",
+      "sector": "기타",
+      "price": 14330,
+      "change": 1.06,
+      "volume": 254582,
+      "trading_value": 3567242970,
+      "mcap": 0.84,
+      "shares": 58911527,
+      "categories": [
+        "기타"
+      ],
+      "rank": 375
+    },
+    {
       "ticker": "486990",
       "name": "노타",
       "name_en": "Nota Inc.",
@@ -6684,15 +6701,15 @@ window.KOS_LIVE_DATA = {
       "sector": "게임",
       "price": 39100,
       "change": 12.03,
-      "volume": 1458268,
-      "trading_value": 57446738925,
+      "volume": 1459689,
+      "trading_value": 57502300025,
       "mcap": 0.83,
       "shares": 21346230,
       "induty_code": "582",
       "categories": [
         "게임"
       ],
-      "rank": 375
+      "rank": 376
     },
     {
       "ticker": "376900",
@@ -6709,7 +6726,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 376
+      "rank": 377
     },
     {
       "ticker": "252990",
@@ -6719,30 +6736,13 @@ window.KOS_LIVE_DATA = {
       "sector": "전자·부품",
       "price": 13850,
       "change": 10.62,
-      "volume": 1251388,
-      "trading_value": 17217927385,
+      "volume": 1254517,
+      "trading_value": 17261684615,
       "mcap": 0.83,
       "shares": 60217889,
       "induty_code": "2629",
       "categories": [
         "전자·부품"
-      ],
-      "rank": 377
-    },
-    {
-      "ticker": "030190",
-      "name": "NICE평가정보",
-      "name_en": "",
-      "market": "코스피",
-      "sector": "기타",
-      "price": 14330,
-      "change": 1.06,
-      "volume": 254465,
-      "trading_value": 3565566360,
-      "mcap": 0.83,
-      "shares": 58911527,
-      "categories": [
-        "기타"
       ],
       "rank": 378
     },
@@ -6841,7 +6841,7 @@ window.KOS_LIVE_DATA = {
       "change": -0.76,
       "volume": 77944,
       "trading_value": 3127490400,
-      "mcap": 0.81,
+      "mcap": 0.82,
       "shares": 20909936,
       "categories": [
         "기타"
@@ -6856,9 +6856,9 @@ window.KOS_LIVE_DATA = {
       "sector": "반도체",
       "price": 14000,
       "change": 0.5,
-      "volume": 838134,
-      "trading_value": 11791409675,
-      "mcap": 0.81,
+      "volume": 838218,
+      "trading_value": 11792585675,
+      "mcap": 0.82,
       "shares": 58305400,
       "induty_code": "2612",
       "categories": [
@@ -6961,7 +6961,7 @@ window.KOS_LIVE_DATA = {
       "change": -1.67,
       "volume": 860192,
       "trading_value": 9556071980,
-      "mcap": 0.8,
+      "mcap": 0.79,
       "shares": 70217344,
       "induty_code": "26299",
       "categories": [
@@ -6977,9 +6977,9 @@ window.KOS_LIVE_DATA = {
       "sector": "전자·부품",
       "price": 27950,
       "change": 11.35,
-      "volume": 531284,
-      "trading_value": 14870203425,
-      "mcap": 0.78,
+      "volume": 531286,
+      "trading_value": 14870259325,
+      "mcap": 0.79,
       "shares": 28300000,
       "induty_code": "27212",
       "categories": [
@@ -6995,9 +6995,9 @@ window.KOS_LIVE_DATA = {
       "sector": "기타",
       "price": 36200,
       "change": 4.47,
-      "volume": 149286,
-      "trading_value": 5408150500,
-      "mcap": 0.78,
+      "volume": 149289,
+      "trading_value": 5408259100,
+      "mcap": 0.79,
       "shares": 21910993,
       "categories": [
         "기타"
@@ -7022,23 +7022,6 @@ window.KOS_LIVE_DATA = {
       "rank": 394
     },
     {
-      "ticker": "253450",
-      "name": "스튜디오드래곤",
-      "name_en": "",
-      "market": "코스닥",
-      "sector": "기타",
-      "price": 25750,
-      "change": -0.19,
-      "volume": 56947,
-      "trading_value": 1459228400,
-      "mcap": 0.78,
-      "shares": 30058498,
-      "categories": [
-        "기타"
-      ],
-      "rank": 395
-    },
-    {
       "ticker": "025540",
       "name": "한국단자",
       "name_en": "",
@@ -7053,7 +7036,59 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
+      "rank": 395
+    },
+    {
+      "ticker": "037460",
+      "name": "삼지전자",
+      "name_en": "SAMJI ELECTRONICS CO., LTD.",
+      "market": "코스닥",
+      "sector": "전자·부품",
+      "price": 47500,
+      "change": 4.74,
+      "volume": 303945,
+      "trading_value": 14505418575,
+      "mcap": 0.78,
+      "shares": 16318522,
+      "induty_code": "2642",
+      "categories": [
+        "전자·부품"
+      ],
       "rank": 396
+    },
+    {
+      "ticker": "056080",
+      "name": "유진로봇",
+      "name_en": "",
+      "market": "코스닥",
+      "sector": "기타",
+      "price": 20700,
+      "change": -0.96,
+      "volume": 291481,
+      "trading_value": 6039386350,
+      "mcap": 0.78,
+      "shares": 37512152,
+      "categories": [
+        "기타"
+      ],
+      "rank": 397
+    },
+    {
+      "ticker": "253450",
+      "name": "스튜디오드래곤",
+      "name_en": "",
+      "market": "코스닥",
+      "sector": "기타",
+      "price": 25750,
+      "change": -0.19,
+      "volume": 56948,
+      "trading_value": 1459254150,
+      "mcap": 0.77,
+      "shares": 30058498,
+      "categories": [
+        "기타"
+      ],
+      "rank": 398
     },
     {
       "ticker": "241710",
@@ -7067,41 +7102,6 @@ window.KOS_LIVE_DATA = {
       "trading_value": 6913857200,
       "mcap": 0.77,
       "shares": 10680000,
-      "categories": [
-        "기타"
-      ],
-      "rank": 397
-    },
-    {
-      "ticker": "037460",
-      "name": "삼지전자",
-      "name_en": "SAMJI ELECTRONICS CO., LTD.",
-      "market": "코스닥",
-      "sector": "전자·부품",
-      "price": 47500,
-      "change": 4.74,
-      "volume": 303012,
-      "trading_value": 14461098275,
-      "mcap": 0.77,
-      "shares": 16318522,
-      "induty_code": "2642",
-      "categories": [
-        "전자·부품"
-      ],
-      "rank": 398
-    },
-    {
-      "ticker": "056080",
-      "name": "유진로봇",
-      "name_en": "",
-      "market": "코스닥",
-      "sector": "기타",
-      "price": 20700,
-      "change": -0.96,
-      "volume": 291119,
-      "trading_value": 6031916300,
-      "mcap": 0.77,
-      "shares": 37512152,
       "categories": [
         "기타"
       ],
@@ -7132,8 +7132,8 @@ window.KOS_LIVE_DATA = {
       "sector": "기타",
       "price": 4305,
       "change": -4.44,
-      "volume": 226212,
-      "trading_value": 977432154,
+      "volume": 226245,
+      "trading_value": 977574219,
       "mcap": 0.77,
       "shares": 179600000,
       "categories": [
@@ -7149,9 +7149,9 @@ window.KOS_LIVE_DATA = {
       "sector": "기타",
       "price": 63200,
       "change": 1.12,
-      "volume": 68348,
-      "trading_value": 4324420450,
-      "mcap": 0.76,
+      "volume": 68349,
+      "trading_value": 4324483650,
+      "mcap": 0.77,
       "shares": 12253691,
       "categories": [
         "기타"
@@ -7168,12 +7168,30 @@ window.KOS_LIVE_DATA = {
       "change": 0.0,
       "volume": 99748,
       "trading_value": 2007762130,
-      "mcap": 0.76,
+      "mcap": 0.77,
       "shares": 38300000,
       "categories": [
         "기타"
       ],
       "rank": 403
+    },
+    {
+      "ticker": "052020",
+      "name": "에스티큐브",
+      "name_en": "STCUBE",
+      "market": "코스닥",
+      "sector": "유통·소비재",
+      "price": 11290,
+      "change": -13.62,
+      "volume": 1395113,
+      "trading_value": 15656955830,
+      "mcap": 0.77,
+      "shares": 67983291,
+      "induty_code": "465",
+      "categories": [
+        "유통·소비재"
+      ],
+      "rank": 404
     },
     {
       "ticker": "064960",
@@ -7190,7 +7208,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 404
+      "rank": 405
     },
     {
       "ticker": "023160",
@@ -7200,14 +7218,14 @@ window.KOS_LIVE_DATA = {
       "sector": "기타",
       "price": 29450,
       "change": 0.51,
-      "volume": 174252,
-      "trading_value": 5148957725,
+      "volume": 174489,
+      "trading_value": 5155937375,
       "mcap": 0.76,
       "shares": 25867242,
       "categories": [
         "기타"
       ],
-      "rank": 405
+      "rank": 406
     },
     {
       "ticker": "476060",
@@ -7217,14 +7235,14 @@ window.KOS_LIVE_DATA = {
       "sector": "기타",
       "price": 16670,
       "change": -4.14,
-      "volume": 401033,
-      "trading_value": 6787728785,
+      "volume": 401035,
+      "trading_value": 6787762125,
       "mcap": 0.76,
       "shares": 45407840,
       "categories": [
         "기타"
       ],
-      "rank": 406
+      "rank": 407
     },
     {
       "ticker": "336570",
@@ -7234,15 +7252,15 @@ window.KOS_LIVE_DATA = {
       "sector": "전자·부품",
       "price": 8490,
       "change": 8.29,
-      "volume": 1623241,
-      "trading_value": 13502728730,
+      "volume": 1623359,
+      "trading_value": 13503730550,
       "mcap": 0.76,
       "shares": 89580646,
       "induty_code": "271",
       "categories": [
         "전자·부품"
       ],
-      "rank": 407
+      "rank": 408
     },
     {
       "ticker": "059090",
@@ -7252,31 +7270,13 @@ window.KOS_LIVE_DATA = {
       "sector": "반도체",
       "price": 22450,
       "change": -3.23,
-      "volume": 884852,
-      "trading_value": 21201758325,
+      "volume": 884853,
+      "trading_value": 21201780775,
       "mcap": 0.75,
       "shares": 33416778,
       "induty_code": "261",
       "categories": [
         "반도체"
-      ],
-      "rank": 408
-    },
-    {
-      "ticker": "052020",
-      "name": "에스티큐브",
-      "name_en": "STCUBE",
-      "market": "코스닥",
-      "sector": "유통·소비재",
-      "price": 11290,
-      "change": -13.62,
-      "volume": 1391486,
-      "trading_value": 15616013360,
-      "mcap": 0.75,
-      "shares": 67983291,
-      "induty_code": "465",
-      "categories": [
-        "유통·소비재"
       ],
       "rank": 409
     },
@@ -7305,8 +7305,8 @@ window.KOS_LIVE_DATA = {
       "sector": "금융",
       "price": 3200,
       "change": 0.31,
-      "volume": 4236727,
-      "trading_value": 13719256663,
+      "volume": 4261455,
+      "trading_value": 13798453378,
       "mcap": 0.74,
       "shares": 231295085,
       "induty_code": "66121",
@@ -7314,6 +7314,41 @@ window.KOS_LIVE_DATA = {
         "금융"
       ],
       "rank": 411
+    },
+    {
+      "ticker": "100840",
+      "name": "SNT에너지",
+      "name_en": "",
+      "market": "코스피",
+      "sector": "기타",
+      "price": 35800,
+      "change": 2.29,
+      "volume": 125350,
+      "trading_value": 4472335425,
+      "mcap": 0.74,
+      "shares": 20680783,
+      "categories": [
+        "기타"
+      ],
+      "rank": 412
+    },
+    {
+      "ticker": "006730",
+      "name": "서부T&D",
+      "name_en": "Seobu T&D Co.,Ltd",
+      "market": "코스닥",
+      "sector": "호텔·레저",
+      "price": 11340,
+      "change": 6.08,
+      "volume": 648790,
+      "trading_value": 7247125120,
+      "mcap": 0.74,
+      "shares": 64926923,
+      "induty_code": "551",
+      "categories": [
+        "호텔·레저"
+      ],
+      "rank": 413
     },
     {
       "ticker": "003850",
@@ -7325,12 +7360,12 @@ window.KOS_LIVE_DATA = {
       "change": -0.58,
       "volume": 103752,
       "trading_value": 893619850,
-      "mcap": 0.74,
+      "mcap": 0.73,
       "shares": 85787207,
       "categories": [
         "기타"
       ],
-      "rank": 412
+      "rank": 414
     },
     {
       "ticker": "052400",
@@ -7348,41 +7383,6 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "게임"
       ],
-      "rank": 413
-    },
-    {
-      "ticker": "100840",
-      "name": "SNT에너지",
-      "name_en": "",
-      "market": "코스피",
-      "sector": "기타",
-      "price": 35800,
-      "change": 2.29,
-      "volume": 125350,
-      "trading_value": 4472335425,
-      "mcap": 0.73,
-      "shares": 20680783,
-      "categories": [
-        "기타"
-      ],
-      "rank": 414
-    },
-    {
-      "ticker": "006730",
-      "name": "서부T&D",
-      "name_en": "Seobu T&D Co.,Ltd",
-      "market": "코스닥",
-      "sector": "호텔·레저",
-      "price": 11340,
-      "change": 6.08,
-      "volume": 647489,
-      "trading_value": 7232348030,
-      "mcap": 0.73,
-      "shares": 64926923,
-      "induty_code": "551",
-      "categories": [
-        "호텔·레저"
-      ],
       "rank": 415
     },
     {
@@ -7393,8 +7393,8 @@ window.KOS_LIVE_DATA = {
       "sector": "기타",
       "price": 4410,
       "change": 0.23,
-      "volume": 307884,
-      "trading_value": 1347349308,
+      "volume": 308009,
+      "trading_value": 1347900288,
       "mcap": 0.73,
       "shares": 165582385,
       "categories": [
@@ -7412,12 +7412,29 @@ window.KOS_LIVE_DATA = {
       "change": 0.36,
       "volume": 59937,
       "trading_value": 2503447725,
-      "mcap": 0.72,
+      "mcap": 0.73,
       "shares": 17298766,
       "categories": [
         "화학"
       ],
       "rank": 417
+    },
+    {
+      "ticker": "002020",
+      "name": "코오롱",
+      "name_en": "",
+      "market": "코스피",
+      "sector": "기타",
+      "price": 56600,
+      "change": 2.35,
+      "volume": 49646,
+      "trading_value": 2774551600,
+      "mcap": 0.73,
+      "shares": 12907680,
+      "categories": [
+        "기타"
+      ],
+      "rank": 418
     },
     {
       "ticker": "009240",
@@ -7431,23 +7448,6 @@ window.KOS_LIVE_DATA = {
       "trading_value": 1542265825,
       "mcap": 0.72,
       "shares": 23533928,
-      "categories": [
-        "기타"
-      ],
-      "rank": 418
-    },
-    {
-      "ticker": "002020",
-      "name": "코오롱",
-      "name_en": "",
-      "market": "코스피",
-      "sector": "기타",
-      "price": 56600,
-      "change": 2.35,
-      "volume": 49646,
-      "trading_value": 2774551600,
-      "mcap": 0.72,
-      "shares": 12907680,
       "categories": [
         "기타"
       ],
@@ -7480,30 +7480,12 @@ window.KOS_LIVE_DATA = {
       "change": 7.07,
       "volume": 84763,
       "trading_value": 6896549600,
-      "mcap": 0.71,
+      "mcap": 0.72,
       "shares": 9000000,
       "categories": [
         "기타"
       ],
       "rank": 421
-    },
-    {
-      "ticker": "348210",
-      "name": "넥스틴",
-      "name_en": "NEXTIN Inc.",
-      "market": "코스닥",
-      "sector": "기계·장비",
-      "price": 67000,
-      "change": 7.37,
-      "volume": 199340,
-      "trading_value": 13711143850,
-      "mcap": 0.71,
-      "shares": 10477005,
-      "induty_code": "29271",
-      "categories": [
-        "기계·장비"
-      ],
-      "rank": 422
     },
     {
       "ticker": "000370",
@@ -7513,14 +7495,14 @@ window.KOS_LIVE_DATA = {
       "sector": "기타",
       "price": 6120,
       "change": 0.33,
-      "volume": 390593,
-      "trading_value": 2371224535,
+      "volume": 390794,
+      "trading_value": 2372454655,
       "mcap": 0.71,
       "shares": 116738915,
       "categories": [
         "기타"
       ],
-      "rank": 423
+      "rank": 422
     },
     {
       "ticker": "114090",
@@ -7537,6 +7519,24 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
+      "rank": 423
+    },
+    {
+      "ticker": "348210",
+      "name": "넥스틴",
+      "name_en": "NEXTIN Inc.",
+      "market": "코스닥",
+      "sector": "기계·장비",
+      "price": 67000,
+      "change": 7.37,
+      "volume": 199390,
+      "trading_value": 13714493850,
+      "mcap": 0.7,
+      "shares": 10477005,
+      "induty_code": "29271",
+      "categories": [
+        "기계·장비"
+      ],
       "rank": 424
     },
     {
@@ -7547,8 +7547,8 @@ window.KOS_LIVE_DATA = {
       "sector": "기타",
       "price": 48000,
       "change": -4.19,
-      "volume": 42584,
-      "trading_value": 2075324650,
+      "volume": 42594,
+      "trading_value": 2075804650,
       "mcap": 0.69,
       "shares": 14409333,
       "categories": [
@@ -7566,7 +7566,7 @@ window.KOS_LIVE_DATA = {
       "change": 5.67,
       "volume": 164356,
       "trading_value": 5213847675,
-      "mcap": 0.68,
+      "mcap": 0.69,
       "shares": 21649789,
       "categories": [
         "기타"
@@ -7598,8 +7598,8 @@ window.KOS_LIVE_DATA = {
       "sector": "기타",
       "price": 160800,
       "change": -1.65,
-      "volume": 4973,
-      "trading_value": 796444450,
+      "volume": 4975,
+      "trading_value": 796766050,
       "mcap": 0.68,
       "shares": 4226512,
       "categories": [
@@ -7615,8 +7615,8 @@ window.KOS_LIVE_DATA = {
       "sector": "반도체",
       "price": 15010,
       "change": 29.96,
-      "volume": 2914902,
-      "trading_value": 41609075265,
+      "volume": 2915474,
+      "trading_value": 41617660985,
       "mcap": 0.68,
       "shares": 45437002,
       "induty_code": "261",
@@ -7633,8 +7633,8 @@ window.KOS_LIVE_DATA = {
       "sector": "바이오·제약",
       "price": 34100,
       "change": 0.59,
-      "volume": 220105,
-      "trading_value": 7546053150,
+      "volume": 220421,
+      "trading_value": 7556823850,
       "mcap": 0.68,
       "shares": 19952129,
       "induty_code": "213",
@@ -7687,7 +7687,7 @@ window.KOS_LIVE_DATA = {
       "change": 1.96,
       "volume": 94498,
       "trading_value": 3205744875,
-      "mcap": 0.67,
+      "mcap": 0.68,
       "shares": 20007381,
       "categories": [
         "기타"
@@ -7702,8 +7702,8 @@ window.KOS_LIVE_DATA = {
       "sector": "기타",
       "price": 16740,
       "change": -3.57,
-      "volume": 312299,
-      "trading_value": 5230297830,
+      "volume": 312944,
+      "trading_value": 5241028830,
       "mcap": 0.67,
       "shares": 40160611,
       "categories": [
@@ -7736,8 +7736,8 @@ window.KOS_LIVE_DATA = {
       "sector": "기타",
       "price": 59900,
       "change": -1.96,
-      "volume": 40815,
-      "trading_value": 2458699200,
+      "volume": 40820,
+      "trading_value": 2458998700,
       "mcap": 0.67,
       "shares": 11126506,
       "categories": [
@@ -7753,8 +7753,8 @@ window.KOS_LIVE_DATA = {
       "sector": "기타",
       "price": 157800,
       "change": 1.15,
-      "volume": 10856,
-      "trading_value": 1706691200,
+      "volume": 10861,
+      "trading_value": 1707480600,
       "mcap": 0.67,
       "shares": 4242236,
       "categories": [
@@ -7770,8 +7770,8 @@ window.KOS_LIVE_DATA = {
       "sector": "전자·부품",
       "price": 79000,
       "change": 4.91,
-      "volume": 371680,
-      "trading_value": 31362095300,
+      "volume": 372197,
+      "trading_value": 31403400700,
       "mcap": 0.67,
       "shares": 8495135,
       "induty_code": "26299",
@@ -7788,9 +7788,9 @@ window.KOS_LIVE_DATA = {
       "sector": "기타",
       "price": 6840,
       "change": 0.59,
-      "volume": 169983,
-      "trading_value": 1153237455,
-      "mcap": 0.66,
+      "volume": 170527,
+      "trading_value": 1156958415,
+      "mcap": 0.67,
       "shares": 97667877,
       "categories": [
         "기타"
@@ -7805,8 +7805,8 @@ window.KOS_LIVE_DATA = {
       "sector": "기타",
       "price": 2045,
       "change": -0.49,
-      "volume": 2689801,
-      "trading_value": 5492275487,
+      "volume": 2697901,
+      "trading_value": 5508794562,
       "mcap": 0.66,
       "shares": 322747340,
       "categories": [
@@ -7839,8 +7839,8 @@ window.KOS_LIVE_DATA = {
       "sector": "전자·부품",
       "price": 27450,
       "change": 9.15,
-      "volume": 902070,
-      "trading_value": 24386011475,
+      "volume": 903551,
+      "trading_value": 24426969875,
       "mcap": 0.66,
       "shares": 24194466,
       "induty_code": "262",
@@ -7891,8 +7891,8 @@ window.KOS_LIVE_DATA = {
       "sector": "기타",
       "price": 19290,
       "change": -1.18,
-      "volume": 130552,
-      "trading_value": 2491191235,
+      "volume": 130557,
+      "trading_value": 2491287685,
       "mcap": 0.65,
       "shares": 33948483,
       "categories": [
@@ -7925,15 +7925,32 @@ window.KOS_LIVE_DATA = {
       "sector": "화학",
       "price": 30850,
       "change": 0.65,
-      "volume": 277960,
-      "trading_value": 8785922625,
-      "mcap": 0.64,
+      "volume": 278971,
+      "trading_value": 8817130725,
+      "mcap": 0.65,
       "shares": 20974932,
       "induty_code": "204",
       "categories": [
         "화학"
       ],
       "rank": 447
+    },
+    {
+      "ticker": "293940",
+      "name": "신한알파리츠",
+      "name_en": "",
+      "market": "코스피",
+      "sector": "기타",
+      "price": 5350,
+      "change": -0.37,
+      "volume": 299913,
+      "trading_value": 1586929170,
+      "mcap": 0.65,
+      "shares": 120940123,
+      "categories": [
+        "기타"
+      ],
+      "rank": 448
     },
     {
       "ticker": "001680",
@@ -7943,14 +7960,14 @@ window.KOS_LIVE_DATA = {
       "sector": "기타",
       "price": 18610,
       "change": -1.95,
-      "volume": 100718,
-      "trading_value": 1887238295,
+      "volume": 100759,
+      "trading_value": 1888001305,
       "mcap": 0.64,
       "shares": 34648025,
       "categories": [
         "기타"
       ],
-      "rank": 448
+      "rank": 449
     },
     {
       "ticker": "399720",
@@ -7960,14 +7977,14 @@ window.KOS_LIVE_DATA = {
       "sector": "기타",
       "price": 54400,
       "change": 2.06,
-      "volume": 70329,
-      "trading_value": 3852022800,
+      "volume": 70331,
+      "trading_value": 3852131600,
       "mcap": 0.64,
       "shares": 11838844,
       "categories": [
         "기타"
       ],
-      "rank": 449
+      "rank": 450
     },
     {
       "ticker": "102710",
@@ -7984,7 +8001,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 450
+      "rank": 451
     },
     {
       "ticker": "007700",
@@ -8001,23 +8018,6 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 451
-    },
-    {
-      "ticker": "293940",
-      "name": "신한알파리츠",
-      "name_en": "",
-      "market": "코스피",
-      "sector": "기타",
-      "price": 5350,
-      "change": -0.37,
-      "volume": 299913,
-      "trading_value": 1586929170,
-      "mcap": 0.64,
-      "shares": 120940123,
-      "categories": [
-        "기타"
-      ],
       "rank": 452
     },
     {
@@ -8028,8 +8028,8 @@ window.KOS_LIVE_DATA = {
       "sector": "기타",
       "price": 61800,
       "change": 6.0,
-      "volume": 8045,
-      "trading_value": 487908050,
+      "volume": 8216,
+      "trading_value": 498475850,
       "mcap": 0.64,
       "shares": 10369886,
       "categories": [
@@ -8062,31 +8062,14 @@ window.KOS_LIVE_DATA = {
       "sector": "기타",
       "price": 20200,
       "change": -0.49,
-      "volume": 138652,
-      "trading_value": 2778940535,
+      "volume": 138654,
+      "trading_value": 2778980935,
       "mcap": 0.64,
       "shares": 31638252,
       "categories": [
         "기타"
       ],
       "rank": 455
-    },
-    {
-      "ticker": "086900",
-      "name": "메디톡스",
-      "name_en": "",
-      "market": "코스닥",
-      "sector": "기타",
-      "price": 85700,
-      "change": -1.38,
-      "volume": 57444,
-      "trading_value": 5003791350,
-      "mcap": 0.63,
-      "shares": 7298497,
-      "categories": [
-        "기타"
-      ],
-      "rank": 456
     },
     {
       "ticker": "003620",
@@ -8096,14 +8079,14 @@ window.KOS_LIVE_DATA = {
       "sector": "기타",
       "price": 3145,
       "change": -2.78,
-      "volume": 1070716,
-      "trading_value": 3398808432,
-      "mcap": 0.63,
+      "volume": 1075807,
+      "trading_value": 3414810282,
+      "mcap": 0.64,
       "shares": 202374912,
       "categories": [
         "기타"
       ],
-      "rank": 457
+      "rank": 456
     },
     {
       "ticker": "008060",
@@ -8115,8 +8098,25 @@ window.KOS_LIVE_DATA = {
       "change": 0.25,
       "volume": 99858,
       "trading_value": 2050842350,
-      "mcap": 0.63,
+      "mcap": 0.64,
       "shares": 31287098,
+      "categories": [
+        "기타"
+      ],
+      "rank": 457
+    },
+    {
+      "ticker": "086900",
+      "name": "메디톡스",
+      "name_en": "",
+      "market": "코스닥",
+      "sector": "기타",
+      "price": 85700,
+      "change": -1.38,
+      "volume": 58078,
+      "trading_value": 5058125150,
+      "mcap": 0.63,
+      "shares": 7298497,
       "categories": [
         "기타"
       ],
@@ -8147,8 +8147,8 @@ window.KOS_LIVE_DATA = {
       "sector": "기타",
       "price": 38050,
       "change": 1.47,
-      "volume": 144424,
-      "trading_value": 5548269350,
+      "volume": 144427,
+      "trading_value": 5548383500,
       "mcap": 0.63,
       "shares": 16584962,
       "categories": [
@@ -8198,9 +8198,9 @@ window.KOS_LIVE_DATA = {
       "sector": "기계·장비",
       "price": 14400,
       "change": 7.3,
-      "volume": 777935,
-      "trading_value": 11251707425,
-      "mcap": 0.62,
+      "volume": 781653,
+      "trading_value": 11305246625,
+      "mcap": 0.63,
       "shares": 43869164,
       "induty_code": "292",
       "categories": [
@@ -8216,8 +8216,8 @@ window.KOS_LIVE_DATA = {
       "sector": "기계·장비",
       "price": 50200,
       "change": -7.04,
-      "volume": 311651,
-      "trading_value": 15671452000,
+      "volume": 312495,
+      "trading_value": 15713932300,
       "mcap": 0.62,
       "shares": 12362151,
       "induty_code": "29280",
@@ -8305,7 +8305,7 @@ window.KOS_LIVE_DATA = {
       "change": -0.65,
       "volume": 220780,
       "trading_value": 3044714685,
-      "mcap": 0.6,
+      "mcap": 0.61,
       "shares": 44269203,
       "categories": [
         "기타"
@@ -8322,7 +8322,7 @@ window.KOS_LIVE_DATA = {
       "change": 0.56,
       "volume": 26466,
       "trading_value": 3853300700,
-      "mcap": 0.6,
+      "mcap": 0.59,
       "shares": 4141657,
       "categories": [
         "기타"
@@ -8337,8 +8337,8 @@ window.KOS_LIVE_DATA = {
       "sector": "2차전지",
       "price": 29500,
       "change": 5.17,
-      "volume": 195342,
-      "trading_value": 5773451850,
+      "volume": 195421,
+      "trading_value": 5775782350,
       "mcap": 0.59,
       "shares": 19937509,
       "categories": [
@@ -8422,8 +8422,8 @@ window.KOS_LIVE_DATA = {
       "sector": "기타",
       "price": 1904,
       "change": -0.1,
-      "volume": 429452,
-      "trading_value": 810110314,
+      "volume": 429485,
+      "trading_value": 810173126,
       "mcap": 0.59,
       "shares": 310336320,
       "categories": [
@@ -8441,29 +8441,12 @@ window.KOS_LIVE_DATA = {
       "change": 3.13,
       "volume": 9010,
       "trading_value": 1086417100,
-      "mcap": 0.57,
+      "mcap": 0.58,
       "shares": 4750000,
       "categories": [
         "기타"
       ],
       "rank": 477
-    },
-    {
-      "ticker": "089010",
-      "name": "켐트로닉스",
-      "name_en": "",
-      "market": "코스닥",
-      "sector": "기타",
-      "price": 34050,
-      "change": 2.1,
-      "volume": 181938,
-      "trading_value": 6253041750,
-      "mcap": 0.57,
-      "shares": 16770027,
-      "categories": [
-        "기타"
-      ],
-      "rank": 478
     },
     {
       "ticker": "122640",
@@ -8473,15 +8456,15 @@ window.KOS_LIVE_DATA = {
       "sector": "기계·장비",
       "price": 26900,
       "change": 6.11,
-      "volume": 446140,
-      "trading_value": 12391815200,
-      "mcap": 0.57,
+      "volume": 446148,
+      "trading_value": 12392030400,
+      "mcap": 0.58,
       "shares": 21418509,
       "induty_code": "29271",
       "categories": [
         "기계·장비"
       ],
-      "rank": 479
+      "rank": 478
     },
     {
       "ticker": "000640",
@@ -8493,12 +8476,47 @@ window.KOS_LIVE_DATA = {
       "change": -2.15,
       "volume": 26957,
       "trading_value": 2308573000,
-      "mcap": 0.57,
+      "mcap": 0.58,
       "shares": 6732527,
       "categories": [
         "기타"
       ],
+      "rank": 479
+    },
+    {
+      "ticker": "356680",
+      "name": "엑스게이트",
+      "name_en": "AXGATE Co., Ltd.",
+      "market": "코스닥",
+      "sector": "게임",
+      "price": 20250,
+      "change": 6.08,
+      "volume": 2492191,
+      "trading_value": 48357319135,
+      "mcap": 0.58,
+      "shares": 28543492,
+      "induty_code": "58221",
+      "categories": [
+        "게임"
+      ],
       "rank": 480
+    },
+    {
+      "ticker": "089010",
+      "name": "켐트로닉스",
+      "name_en": "",
+      "market": "코스닥",
+      "sector": "기타",
+      "price": 34050,
+      "change": 2.1,
+      "volume": 181969,
+      "trading_value": 6254097300,
+      "mcap": 0.57,
+      "shares": 16770027,
+      "categories": [
+        "기타"
+      ],
+      "rank": 481
     },
     {
       "ticker": "067160",
@@ -8515,7 +8533,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 481
+      "rank": 482
     },
     {
       "ticker": "041830",
@@ -8531,24 +8549,6 @@ window.KOS_LIVE_DATA = {
       "shares": 13480882,
       "categories": [
         "기타"
-      ],
-      "rank": 482
-    },
-    {
-      "ticker": "356680",
-      "name": "엑스게이트",
-      "name_en": "AXGATE Co., Ltd.",
-      "market": "코스닥",
-      "sector": "게임",
-      "price": 20250,
-      "change": 6.08,
-      "volume": 2490811,
-      "trading_value": 48329374135,
-      "mcap": 0.57,
-      "shares": 28543492,
-      "induty_code": "58221",
-      "categories": [
-        "게임"
       ],
       "rank": 483
     },
@@ -8577,32 +8577,14 @@ window.KOS_LIVE_DATA = {
       "sector": "기타",
       "price": 31950,
       "change": 6.5,
-      "volume": 165451,
-      "trading_value": 5305215375,
+      "volume": 165452,
+      "trading_value": 5305247325,
       "mcap": 0.56,
       "shares": 17500000,
       "categories": [
         "기타"
       ],
       "rank": 485
-    },
-    {
-      "ticker": "019210",
-      "name": "와이지-원",
-      "name_en": "YG-1 CO.,LTD",
-      "market": "코스닥",
-      "sector": "철강·금속",
-      "price": 14920,
-      "change": 1.43,
-      "volume": 578427,
-      "trading_value": 8560134635,
-      "mcap": 0.56,
-      "shares": 37193728,
-      "induty_code": "25934",
-      "categories": [
-        "철강·금속"
-      ],
-      "rank": 486
     },
     {
       "ticker": "015750",
@@ -8614,29 +8596,12 @@ window.KOS_LIVE_DATA = {
       "change": -0.85,
       "volume": 439321,
       "trading_value": 3061390765,
-      "mcap": 0.55,
+      "mcap": 0.56,
       "shares": 80000000,
       "categories": [
         "기타"
       ],
-      "rank": 487
-    },
-    {
-      "ticker": "005810",
-      "name": "풍산홀딩스",
-      "name_en": "",
-      "market": "코스피",
-      "sector": "기타",
-      "price": 38250,
-      "change": -1.16,
-      "volume": 53328,
-      "trading_value": 2051059850,
-      "mcap": 0.55,
-      "shares": 14417292,
-      "categories": [
-        "기타"
-      ],
-      "rank": 488
+      "rank": 486
     },
     {
       "ticker": "104830",
@@ -8648,12 +8613,12 @@ window.KOS_LIVE_DATA = {
       "change": 8.46,
       "volume": 69151,
       "trading_value": 3070863400,
-      "mcap": 0.55,
+      "mcap": 0.56,
       "shares": 12608000,
       "categories": [
         "기타"
       ],
-      "rank": 489
+      "rank": 487
     },
     {
       "ticker": "017900",
@@ -8663,13 +8628,48 @@ window.KOS_LIVE_DATA = {
       "sector": "반도체",
       "price": 9680,
       "change": 8.76,
-      "volume": 2980496,
-      "trading_value": 29314357645,
-      "mcap": 0.55,
+      "volume": 2986705,
+      "trading_value": 29374380785,
+      "mcap": 0.56,
       "shares": 57943763,
       "induty_code": "2612",
       "categories": [
         "반도체"
+      ],
+      "rank": 488
+    },
+    {
+      "ticker": "019210",
+      "name": "와이지-원",
+      "name_en": "YG-1 CO.,LTD",
+      "market": "코스닥",
+      "sector": "철강·금속",
+      "price": 14920,
+      "change": 1.43,
+      "volume": 579329,
+      "trading_value": 8573597875,
+      "mcap": 0.55,
+      "shares": 37193728,
+      "induty_code": "25934",
+      "categories": [
+        "철강·금속"
+      ],
+      "rank": 489
+    },
+    {
+      "ticker": "005810",
+      "name": "풍산홀딩스",
+      "name_en": "",
+      "market": "코스피",
+      "sector": "기타",
+      "price": 38250,
+      "change": -1.16,
+      "volume": 53329,
+      "trading_value": 2051098100,
+      "mcap": 0.55,
+      "shares": 14417292,
+      "categories": [
+        "기타"
       ],
       "rank": 490
     },
@@ -8698,8 +8698,8 @@ window.KOS_LIVE_DATA = {
       "sector": "기타",
       "price": 11310,
       "change": 0.09,
-      "volume": 170110,
-      "trading_value": 1926438130,
+      "volume": 170140,
+      "trading_value": 1926777430,
       "mcap": 0.55,
       "shares": 48648709,
       "categories": [
@@ -8752,7 +8752,7 @@ window.KOS_LIVE_DATA = {
       "change": -0.62,
       "volume": 7380,
       "trading_value": 819078700,
-      "mcap": 0.54,
+      "mcap": 0.55,
       "shares": 4880000,
       "categories": [
         "기타"
@@ -8767,8 +8767,8 @@ window.KOS_LIVE_DATA = {
       "sector": "기타",
       "price": 2785,
       "change": 0.91,
-      "volume": 1964552,
-      "trading_value": 5549807700,
+      "volume": 1979643,
+      "trading_value": 5591896825,
       "mcap": 0.54,
       "shares": 193859610,
       "categories": [
@@ -8784,8 +8784,8 @@ window.KOS_LIVE_DATA = {
       "sector": "기타",
       "price": 5380,
       "change": -1.65,
-      "volume": 463842,
-      "trading_value": 2514496685,
+      "volume": 464302,
+      "trading_value": 2516971685,
       "mcap": 0.54,
       "shares": 100008897,
       "categories": [
@@ -8811,24 +8811,6 @@ window.KOS_LIVE_DATA = {
       "rank": 498
     },
     {
-      "ticker": "064290",
-      "name": "인텍플러스",
-      "name_en": "INTEKPLUS CO., LTD",
-      "market": "코스닥",
-      "sector": "기계·장비",
-      "price": 41450,
-      "change": 5.34,
-      "volume": 799252,
-      "trading_value": 33973561775,
-      "mcap": 0.53,
-      "shares": 12863962,
-      "induty_code": "292",
-      "categories": [
-        "기계·장비"
-      ],
-      "rank": 499
-    },
-    {
       "ticker": "460930",
       "name": "현대힘스",
       "name_en": "",
@@ -8836,12 +8818,30 @@ window.KOS_LIVE_DATA = {
       "sector": "기타",
       "price": 15130,
       "change": 3.28,
-      "volume": 134501,
-      "trading_value": 2022076890,
-      "mcap": 0.53,
+      "volume": 134506,
+      "trading_value": 2022152540,
+      "mcap": 0.54,
       "shares": 35510671,
       "categories": [
         "기타"
+      ],
+      "rank": 499
+    },
+    {
+      "ticker": "064290",
+      "name": "인텍플러스",
+      "name_en": "INTEKPLUS CO., LTD",
+      "market": "코스닥",
+      "sector": "기계·장비",
+      "price": 41450,
+      "change": 5.34,
+      "volume": 800906,
+      "trading_value": 34041014375,
+      "mcap": 0.53,
+      "shares": 12863962,
+      "induty_code": "292",
+      "categories": [
+        "기계·장비"
       ],
       "rank": 500
     },
@@ -8853,8 +8853,8 @@ window.KOS_LIVE_DATA = {
       "sector": "기타",
       "price": 16010,
       "change": 0.38,
-      "volume": 211236,
-      "trading_value": 3423948600,
+      "volume": 211850,
+      "trading_value": 3433775520,
       "mcap": 0.53,
       "shares": 32854225,
       "categories": [
@@ -8870,8 +8870,8 @@ window.KOS_LIVE_DATA = {
       "sector": "기타",
       "price": 43500,
       "change": -2.14,
-      "volume": 60632,
-      "trading_value": 2641596875,
+      "volume": 60633,
+      "trading_value": 2641640375,
       "mcap": 0.53,
       "shares": 12180680,
       "categories": [
@@ -8887,14 +8887,48 @@ window.KOS_LIVE_DATA = {
       "sector": "기타",
       "price": 71700,
       "change": 1.13,
-      "volume": 37163,
-      "trading_value": 2677635400,
+      "volume": 37183,
+      "trading_value": 2679069400,
       "mcap": 0.52,
       "shares": 7307215,
       "categories": [
         "기타"
       ],
       "rank": 503
+    },
+    {
+      "ticker": "035890",
+      "name": "서희건설",
+      "name_en": "",
+      "market": "코스닥",
+      "sector": "기타",
+      "price": 2265,
+      "change": 6.34,
+      "volume": 1132014,
+      "trading_value": 2535440361,
+      "mcap": 0.52,
+      "shares": 229808457,
+      "categories": [
+        "기타"
+      ],
+      "rank": 504
+    },
+    {
+      "ticker": "092190",
+      "name": "서울바이오시스",
+      "name_en": "",
+      "market": "코스닥",
+      "sector": "기타",
+      "price": 11270,
+      "change": 1.44,
+      "volume": 523284,
+      "trading_value": 6017208020,
+      "mcap": 0.52,
+      "shares": 45868383,
+      "categories": [
+        "기타"
+      ],
+      "rank": 505
     },
     {
       "ticker": "003300",
@@ -8906,29 +8940,12 @@ window.KOS_LIVE_DATA = {
       "change": -1.48,
       "volume": 21927,
       "trading_value": 367259530,
-      "mcap": 0.52,
+      "mcap": 0.51,
       "shares": 30832884,
       "categories": [
         "기타"
       ],
-      "rank": 504
-    },
-    {
-      "ticker": "035890",
-      "name": "서희건설",
-      "name_en": "",
-      "market": "코스닥",
-      "sector": "기타",
-      "price": 2265,
-      "change": 6.34,
-      "volume": 1131522,
-      "trading_value": 2534327216,
-      "mcap": 0.52,
-      "shares": 229808457,
-      "categories": [
-        "기타"
-      ],
-      "rank": 505
+      "rank": 506
     },
     {
       "ticker": "005250",
@@ -8942,23 +8959,6 @@ window.KOS_LIVE_DATA = {
       "trading_value": 3018812620,
       "mcap": 0.51,
       "shares": 47028210,
-      "categories": [
-        "기타"
-      ],
-      "rank": 506
-    },
-    {
-      "ticker": "092190",
-      "name": "서울바이오시스",
-      "name_en": "",
-      "market": "코스닥",
-      "sector": "기타",
-      "price": 11270,
-      "change": 1.44,
-      "volume": 522692,
-      "trading_value": 6010536180,
-      "mcap": 0.51,
-      "shares": 45868383,
       "categories": [
         "기타"
       ],
@@ -8989,8 +8989,8 @@ window.KOS_LIVE_DATA = {
       "sector": "기타",
       "price": 6820,
       "change": -4.35,
-      "volume": 291139,
-      "trading_value": 2019901615,
+      "volume": 292351,
+      "trading_value": 2028162245,
       "mcap": 0.5,
       "shares": 73886495,
       "categories": [
@@ -9006,8 +9006,8 @@ window.KOS_LIVE_DATA = {
       "sector": "화학",
       "price": 47400,
       "change": 14.35,
-      "volume": 908555,
-      "trading_value": 43951869050,
+      "volume": 910800,
+      "trading_value": 44058964100,
       "mcap": 0.5,
       "shares": 10564126,
       "induty_code": "20119",
@@ -9015,23 +9015,6 @@ window.KOS_LIVE_DATA = {
         "화학"
       ],
       "rank": 510
-    },
-    {
-      "ticker": "268280",
-      "name": "미원에스씨",
-      "name_en": "",
-      "market": "코스피",
-      "sector": "기타",
-      "price": 98500,
-      "change": -1.5,
-      "volume": 2678,
-      "trading_value": 269971000,
-      "mcap": 0.5,
-      "shares": 5000000,
-      "categories": [
-        "기타"
-      ],
-      "rank": 511
     },
     {
       "ticker": "042000",
@@ -9048,7 +9031,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 512
+      "rank": 511
     },
     {
       "ticker": "200710",
@@ -9066,24 +9049,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "반도체"
       ],
-      "rank": 513
-    },
-    {
-      "ticker": "284740",
-      "name": "쿠쿠홈시스",
-      "name_en": "",
-      "market": "코스피",
-      "sector": "기타",
-      "price": 21950,
-      "change": -0.9,
-      "volume": 13285,
-      "trading_value": 293120775,
-      "mcap": 0.5,
-      "shares": 22437330,
-      "categories": [
-        "기타"
-      ],
-      "rank": 514
+      "rank": 512
     },
     {
       "ticker": "031430",
@@ -9100,7 +9066,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 515
+      "rank": 513
     },
     {
       "ticker": "460860",
@@ -9117,7 +9083,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 516
+      "rank": 514
     },
     {
       "ticker": "005420",
@@ -9127,14 +9093,14 @@ window.KOS_LIVE_DATA = {
       "sector": "기타",
       "price": 13000,
       "change": 0.15,
-      "volume": 219163,
-      "trading_value": 2847523075,
+      "volume": 219183,
+      "trading_value": 2847783075,
       "mcap": 0.5,
       "shares": 38408228,
       "categories": [
         "기타"
       ],
-      "rank": 517
+      "rank": 515
     },
     {
       "ticker": "230360",
@@ -9151,78 +9117,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 518
-    },
-    {
-      "ticker": "041190",
-      "name": "우리기술투자",
-      "name_en": "",
-      "market": "코스닥",
-      "sector": "기타",
-      "price": 5870,
-      "change": -1.84,
-      "volume": 708703,
-      "trading_value": 4171073350,
-      "mcap": 0.49,
-      "shares": 84000000,
-      "categories": [
-        "기타"
-      ],
-      "rank": 519
-    },
-    {
-      "ticker": "332570",
-      "name": "PS일렉트로닉스",
-      "name_en": "Pentastone Electronics, Inc.",
-      "market": "코스닥",
-      "sector": "전자·부품",
-      "price": 10580,
-      "change": -0.19,
-      "volume": 2289272,
-      "trading_value": 24126863695,
-      "mcap": 0.49,
-      "shares": 46711563,
-      "induty_code": "26299",
-      "categories": [
-        "전자·부품"
-      ],
-      "rank": 520
-    },
-    {
-      "ticker": "330860",
-      "name": "네패스아크",
-      "name_en": "Nepes Ark Corporation",
-      "market": "코스닥",
-      "sector": "부동산·기타서비스",
-      "price": 40250,
-      "change": 11.65,
-      "volume": 303305,
-      "trading_value": 12381681600,
-      "mcap": 0.49,
-      "shares": 12184045,
-      "induty_code": "739",
-      "categories": [
-        "부동산·기타서비스"
-      ],
-      "rank": 521
-    },
-    {
-      "ticker": "138080",
-      "name": "오이솔루션",
-      "name_en": "OE Solutions Co., Ltd.",
-      "market": "코스닥",
-      "sector": "전자·부품",
-      "price": 39400,
-      "change": 14.2,
-      "volume": 1370309,
-      "trading_value": 53172711950,
-      "mcap": 0.49,
-      "shares": 12377758,
-      "induty_code": "26410",
-      "categories": [
-        "전자·부품"
-      ],
-      "rank": 522
+      "rank": 516
     },
     {
       "ticker": "009410",
@@ -9232,14 +9127,136 @@ window.KOS_LIVE_DATA = {
       "sector": "기타",
       "price": 1666,
       "change": 3.93,
-      "volume": 255714,
-      "trading_value": 420716850,
-      "mcap": 0.49,
+      "volume": 256048,
+      "trading_value": 421273353,
+      "mcap": 0.5,
       "shares": 297590078,
       "categories": [
         "기타"
       ],
+      "rank": 517
+    },
+    {
+      "ticker": "271940",
+      "name": "일진하이솔루스",
+      "name_en": "",
+      "market": "코스피",
+      "sector": "기타",
+      "price": 13640,
+      "change": 2.33,
+      "volume": 39616,
+      "trading_value": 531014600,
+      "mcap": 0.5,
+      "shares": 36313190,
+      "categories": [
+        "기타"
+      ],
+      "rank": 518
+    },
+    {
+      "ticker": "268280",
+      "name": "미원에스씨",
+      "name_en": "",
+      "market": "코스피",
+      "sector": "기타",
+      "price": 98500,
+      "change": -1.5,
+      "volume": 2678,
+      "trading_value": 269971000,
+      "mcap": 0.49,
+      "shares": 5000000,
+      "categories": [
+        "기타"
+      ],
+      "rank": 519
+    },
+    {
+      "ticker": "284740",
+      "name": "쿠쿠홈시스",
+      "name_en": "",
+      "market": "코스피",
+      "sector": "기타",
+      "price": 21950,
+      "change": -0.9,
+      "volume": 13285,
+      "trading_value": 293120775,
+      "mcap": 0.49,
+      "shares": 22437330,
+      "categories": [
+        "기타"
+      ],
+      "rank": 520
+    },
+    {
+      "ticker": "041190",
+      "name": "우리기술투자",
+      "name_en": "",
+      "market": "코스닥",
+      "sector": "기타",
+      "price": 5870,
+      "change": -1.84,
+      "volume": 711678,
+      "trading_value": 4188524600,
+      "mcap": 0.49,
+      "shares": 84000000,
+      "categories": [
+        "기타"
+      ],
+      "rank": 521
+    },
+    {
+      "ticker": "332570",
+      "name": "PS일렉트로닉스",
+      "name_en": "Pentastone Electronics, Inc.",
+      "market": "코스닥",
+      "sector": "전자·부품",
+      "price": 10580,
+      "change": -0.19,
+      "volume": 2300866,
+      "trading_value": 24248972725,
+      "mcap": 0.49,
+      "shares": 46711563,
+      "induty_code": "26299",
+      "categories": [
+        "전자·부품"
+      ],
+      "rank": 522
+    },
+    {
+      "ticker": "330860",
+      "name": "네패스아크",
+      "name_en": "Nepes Ark Corporation",
+      "market": "코스닥",
+      "sector": "부동산·기타서비스",
+      "price": 40250,
+      "change": 11.65,
+      "volume": 303706,
+      "trading_value": 12397857550,
+      "mcap": 0.49,
+      "shares": 12184045,
+      "induty_code": "739",
+      "categories": [
+        "부동산·기타서비스"
+      ],
       "rank": 523
+    },
+    {
+      "ticker": "138080",
+      "name": "오이솔루션",
+      "name_en": "OE Solutions Co., Ltd.",
+      "market": "코스닥",
+      "sector": "전자·부품",
+      "price": 39400,
+      "change": 14.2,
+      "volume": 1372861,
+      "trading_value": 53273312750,
+      "mcap": 0.49,
+      "shares": 12377758,
+      "induty_code": "26410",
+      "categories": [
+        "전자·부품"
+      ],
+      "rank": 524
     },
     {
       "ticker": "019170",
@@ -9256,7 +9273,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 524
+      "rank": 525
     },
     {
       "ticker": "393890",
@@ -9266,14 +9283,14 @@ window.KOS_LIVE_DATA = {
       "sector": "기타",
       "price": 14460,
       "change": -0.28,
-      "volume": 492642,
-      "trading_value": 7048307935,
+      "volume": 494380,
+      "trading_value": 7073313755,
       "mcap": 0.49,
       "shares": 33843144,
       "categories": [
         "기타"
       ],
-      "rank": 525
+      "rank": 526
     },
     {
       "ticker": "290550",
@@ -9283,14 +9300,14 @@ window.KOS_LIVE_DATA = {
       "sector": "기타",
       "price": 24550,
       "change": 4.03,
-      "volume": 278695,
-      "trading_value": 6913804975,
-      "mcap": 0.48,
+      "volume": 278915,
+      "trading_value": 6919204975,
+      "mcap": 0.49,
       "shares": 20001230,
       "categories": [
         "기타"
       ],
-      "rank": 526
+      "rank": 527
     },
     {
       "ticker": "001530",
@@ -9302,46 +9319,12 @@ window.KOS_LIVE_DATA = {
       "change": -1.88,
       "volume": 76812,
       "trading_value": 1798399075,
-      "mcap": 0.48,
+      "mcap": 0.49,
       "shares": 20715621,
       "categories": [
         "기타"
       ],
-      "rank": 527
-    },
-    {
-      "ticker": "094800",
-      "name": "맵스리얼티",
-      "name_en": "",
-      "market": "코스피",
-      "sector": "기타",
-      "price": 5100,
-      "change": -3.95,
-      "volume": 78828,
-      "trading_value": 412255480,
-      "mcap": 0.48,
-      "shares": 92834331,
-      "categories": [
-        "기타"
-      ],
       "rank": 528
-    },
-    {
-      "ticker": "271940",
-      "name": "일진하이솔루스",
-      "name_en": "",
-      "market": "코스피",
-      "sector": "기타",
-      "price": 13640,
-      "change": 2.33,
-      "volume": 35811,
-      "trading_value": 479114400,
-      "mcap": 0.48,
-      "shares": 36313190,
-      "categories": [
-        "기타"
-      ],
-      "rank": 529
     },
     {
       "ticker": "377740",
@@ -9351,14 +9334,14 @@ window.KOS_LIVE_DATA = {
       "sector": "기타",
       "price": 4715,
       "change": -1.15,
-      "volume": 68513,
-      "trading_value": 322771175,
+      "volume": 68716,
+      "trading_value": 323718310,
       "mcap": 0.48,
       "shares": 101886048,
       "categories": [
         "기타"
       ],
-      "rank": 530
+      "rank": 529
     },
     {
       "ticker": "020000",
@@ -9375,7 +9358,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 531
+      "rank": 530
     },
     {
       "ticker": "217590",
@@ -9385,14 +9368,14 @@ window.KOS_LIVE_DATA = {
       "sector": "기타",
       "price": 19850,
       "change": 4.75,
-      "volume": 262118,
-      "trading_value": 5249040810,
+      "volume": 262128,
+      "trading_value": 5249239310,
       "mcap": 0.48,
       "shares": 24094225,
       "categories": [
         "기타"
       ],
-      "rank": 532
+      "rank": 531
     },
     {
       "ticker": "025980",
@@ -9402,14 +9385,14 @@ window.KOS_LIVE_DATA = {
       "sector": "기타",
       "price": 4885,
       "change": 0.72,
-      "volume": 587619,
-      "trading_value": 2878871448,
+      "volume": 590642,
+      "trading_value": 2893498423,
       "mcap": 0.48,
       "shares": 97300990,
       "categories": [
         "기타"
       ],
-      "rank": 533
+      "rank": 532
     },
     {
       "ticker": "024850",
@@ -9419,14 +9402,14 @@ window.KOS_LIVE_DATA = {
       "sector": "기타",
       "price": 15120,
       "change": 6.48,
-      "volume": 235128,
-      "trading_value": 3484602750,
+      "volume": 235148,
+      "trading_value": 3484904950,
       "mcap": 0.48,
       "shares": 31753544,
       "categories": [
         "기타"
       ],
-      "rank": 534
+      "rank": 533
     },
     {
       "ticker": "452280",
@@ -9436,15 +9419,49 @@ window.KOS_LIVE_DATA = {
       "sector": "철강·금속",
       "price": 24750,
       "change": 19.85,
-      "volume": 384853,
-      "trading_value": 9526764350,
-      "mcap": 0.47,
+      "volume": 385566,
+      "trading_value": 9544390600,
+      "mcap": 0.48,
       "shares": 19247670,
       "induty_code": "259",
       "categories": [
         "철강·금속"
       ],
+      "rank": 534
+    },
+    {
+      "ticker": "0011T0",
+      "name": "채비",
+      "name_en": "",
+      "market": "코스닥",
+      "sector": "기타",
+      "price": 10130,
+      "change": 0.8,
+      "volume": 603340,
+      "trading_value": 6119850695,
+      "mcap": 0.48,
+      "shares": 46949591,
+      "categories": [
+        "기타"
+      ],
       "rank": 535
+    },
+    {
+      "ticker": "094800",
+      "name": "맵스리얼티",
+      "name_en": "",
+      "market": "코스피",
+      "sector": "기타",
+      "price": 5100,
+      "change": -3.95,
+      "volume": 78828,
+      "trading_value": 412255480,
+      "mcap": 0.47,
+      "shares": 92834331,
+      "categories": [
+        "기타"
+      ],
+      "rank": 536
     },
     {
       "ticker": "125490",
@@ -9454,15 +9471,15 @@ window.KOS_LIVE_DATA = {
       "sector": "자동차",
       "price": 12900,
       "change": -0.92,
-      "volume": 802947,
-      "trading_value": 10656088300,
+      "volume": 805549,
+      "trading_value": 10689651100,
       "mcap": 0.47,
       "shares": 36502352,
       "induty_code": "303",
       "categories": [
         "자동차"
       ],
-      "rank": 536
+      "rank": 537
     },
     {
       "ticker": "003280",
@@ -9472,15 +9489,15 @@ window.KOS_LIVE_DATA = {
       "sector": "운송·물류",
       "price": 1949,
       "change": -1.42,
-      "volume": 4372673,
-      "trading_value": 8688626785,
+      "volume": 4396903,
+      "trading_value": 8735801977,
       "mcap": 0.47,
       "shares": 240424899,
       "induty_code": "50112",
       "categories": [
         "운송·물류"
       ],
-      "rank": 537
+      "rank": 538
     },
     {
       "ticker": "011930",
@@ -9490,15 +9507,15 @@ window.KOS_LIVE_DATA = {
       "sector": "반도체",
       "price": 22700,
       "change": 4.37,
-      "volume": 529524,
-      "trading_value": 12043716075,
+      "volume": 534388,
+      "trading_value": 12154723775,
       "mcap": 0.47,
       "shares": 20584815,
       "induty_code": "2612",
       "categories": [
         "반도체"
       ],
-      "rank": 538
+      "rank": 539
     },
     {
       "ticker": "009900",
@@ -9515,7 +9532,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 539
+      "rank": 540
     },
     {
       "ticker": "030520",
@@ -9532,7 +9549,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 540
+      "rank": 541
     },
     {
       "ticker": "014830",
@@ -9549,7 +9566,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 541
+      "rank": 542
     },
     {
       "ticker": "016610",
@@ -9566,23 +9583,6 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 542
-    },
-    {
-      "ticker": "0011T0",
-      "name": "채비",
-      "name_en": "",
-      "market": "코스닥",
-      "sector": "기타",
-      "price": 10130,
-      "change": 0.8,
-      "volume": 600611,
-      "trading_value": 6092228515,
-      "mcap": 0.47,
-      "shares": 46949591,
-      "categories": [
-        "기타"
-      ],
       "rank": 543
     },
     {
@@ -9593,8 +9593,8 @@ window.KOS_LIVE_DATA = {
       "sector": "자동차",
       "price": 33750,
       "change": 18.01,
-      "volume": 368228,
-      "trading_value": 12052710800,
+      "volume": 369221,
+      "trading_value": 12086168750,
       "mcap": 0.47,
       "shares": 13934818,
       "induty_code": "303",
@@ -9602,6 +9602,23 @@ window.KOS_LIVE_DATA = {
         "자동차"
       ],
       "rank": 544
+    },
+    {
+      "ticker": "060280",
+      "name": "큐렉소",
+      "name_en": "",
+      "market": "코스닥",
+      "sector": "기타",
+      "price": 11280,
+      "change": -1.4,
+      "volume": 268247,
+      "trading_value": 3049912155,
+      "mcap": 0.47,
+      "shares": 41259790,
+      "categories": [
+        "기타"
+      ],
+      "rank": 545
     },
     {
       "ticker": "039440",
@@ -9618,7 +9635,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 545
+      "rank": 546
     },
     {
       "ticker": "099190",
@@ -9628,27 +9645,10 @@ window.KOS_LIVE_DATA = {
       "sector": "기타",
       "price": 16100,
       "change": -4.17,
-      "volume": 124055,
-      "trading_value": 2009579610,
+      "volume": 124123,
+      "trading_value": 2010674410,
       "mcap": 0.46,
       "shares": 28757309,
-      "categories": [
-        "기타"
-      ],
-      "rank": 546
-    },
-    {
-      "ticker": "060280",
-      "name": "큐렉소",
-      "name_en": "",
-      "market": "코스닥",
-      "sector": "기타",
-      "price": 11280,
-      "change": -1.4,
-      "volume": 267517,
-      "trading_value": 3041680055,
-      "mcap": 0.46,
-      "shares": 41259790,
       "categories": [
         "기타"
       ],
@@ -9679,8 +9679,8 @@ window.KOS_LIVE_DATA = {
       "sector": "게임",
       "price": 26450,
       "change": -4.51,
-      "volume": 670769,
-      "trading_value": 17651406425,
+      "volume": 701415,
+      "trading_value": 18514944475,
       "mcap": 0.46,
       "shares": 17541640,
       "induty_code": "582",
@@ -9724,6 +9724,23 @@ window.KOS_LIVE_DATA = {
       "rank": 551
     },
     {
+      "ticker": "001200",
+      "name": "유진투자증권",
+      "name_en": "",
+      "market": "코스피",
+      "sector": "기타",
+      "price": 4710,
+      "change": 1.18,
+      "volume": 658631,
+      "trading_value": 3100295148,
+      "mcap": 0.46,
+      "shares": 96866418,
+      "categories": [
+        "기타"
+      ],
+      "rank": 552
+    },
+    {
       "ticker": "078350",
       "name": "한양디지텍",
       "name_en": "HANYANG DIGITECH CO.,LTD.",
@@ -9739,23 +9756,6 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "반도체"
       ],
-      "rank": 552
-    },
-    {
-      "ticker": "001200",
-      "name": "유진투자증권",
-      "name_en": "",
-      "market": "코스피",
-      "sector": "기타",
-      "price": 4710,
-      "change": 1.18,
-      "volume": 657192,
-      "trading_value": 3093516398,
-      "mcap": 0.45,
-      "shares": 96866418,
-      "categories": [
-        "기타"
-      ],
       "rank": 553
     },
     {
@@ -9766,8 +9766,8 @@ window.KOS_LIVE_DATA = {
       "sector": "기타",
       "price": 4890,
       "change": 3.06,
-      "volume": 437559,
-      "trading_value": 2141699190,
+      "volume": 438215,
+      "trading_value": 2144907030,
       "mcap": 0.45,
       "shares": 92162453,
       "categories": [
@@ -9834,8 +9834,8 @@ window.KOS_LIVE_DATA = {
       "sector": "기타",
       "price": 18300,
       "change": 1.61,
-      "volume": 76984,
-      "trading_value": 1392859485,
+      "volume": 76989,
+      "trading_value": 1392950985,
       "mcap": 0.45,
       "shares": 24800000,
       "categories": [
@@ -9851,8 +9851,8 @@ window.KOS_LIVE_DATA = {
       "sector": "전자·부품",
       "price": 34000,
       "change": 9.85,
-      "volume": 1047075,
-      "trading_value": 35494105100,
+      "volume": 1049327,
+      "trading_value": 35570830850,
       "mcap": 0.45,
       "shares": 13309000,
       "induty_code": "264",
@@ -9879,6 +9879,40 @@ window.KOS_LIVE_DATA = {
       "rank": 560
     },
     {
+      "ticker": "003000",
+      "name": "부광약품",
+      "name_en": "",
+      "market": "코스피",
+      "sector": "기타",
+      "price": 4525,
+      "change": -1.52,
+      "volume": 514582,
+      "trading_value": 2355023833,
+      "mcap": 0.45,
+      "shares": 98664671,
+      "categories": [
+        "기타"
+      ],
+      "rank": 561
+    },
+    {
+      "ticker": "145990",
+      "name": "삼양사",
+      "name_en": "",
+      "market": "코스피",
+      "sector": "기타",
+      "price": 43250,
+      "change": 0.35,
+      "volume": 6914,
+      "trading_value": 298651950,
+      "mcap": 0.45,
+      "shares": 10313449,
+      "categories": [
+        "기타"
+      ],
+      "rank": 562
+    },
+    {
       "ticker": "493280",
       "name": "아이엠바이오로직스",
       "name_en": "",
@@ -9886,14 +9920,14 @@ window.KOS_LIVE_DATA = {
       "sector": "기타",
       "price": 30000,
       "change": 4.53,
-      "volume": 49943,
-      "trading_value": 1472875575,
-      "mcap": 0.45,
+      "volume": 49967,
+      "trading_value": 1473595575,
+      "mcap": 0.44,
       "shares": 14827449,
       "categories": [
         "기타"
       ],
-      "rank": 561
+      "rank": 563
     },
     {
       "ticker": "448730",
@@ -9903,31 +9937,14 @@ window.KOS_LIVE_DATA = {
       "sector": "기타",
       "price": 4860,
       "change": -6.18,
-      "volume": 150565,
-      "trading_value": 748125599,
+      "volume": 150607,
+      "trading_value": 748329724,
       "mcap": 0.44,
       "shares": 91050000,
       "categories": [
         "기타"
       ],
-      "rank": 562
-    },
-    {
-      "ticker": "003000",
-      "name": "부광약품",
-      "name_en": "",
-      "market": "코스피",
-      "sector": "기타",
-      "price": 4525,
-      "change": -1.52,
-      "volume": 511051,
-      "trading_value": 2339133868,
-      "mcap": 0.44,
-      "shares": 98664671,
-      "categories": [
-        "기타"
-      ],
-      "rank": 563
+      "rank": 564
     },
     {
       "ticker": "018290",
@@ -9944,7 +9961,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 564
+      "rank": 565
     },
     {
       "ticker": "251970",
@@ -9954,14 +9971,14 @@ window.KOS_LIVE_DATA = {
       "sector": "기타",
       "price": 35450,
       "change": 3.35,
-      "volume": 47488,
-      "trading_value": 1688279500,
+      "volume": 47528,
+      "trading_value": 1689697500,
       "mcap": 0.44,
       "shares": 12400000,
       "categories": [
         "기타"
       ],
-      "rank": 565
+      "rank": 566
     },
     {
       "ticker": "168360",
@@ -9971,27 +9988,10 @@ window.KOS_LIVE_DATA = {
       "sector": "기타",
       "price": 20150,
       "change": 8.22,
-      "volume": 281946,
-      "trading_value": 5756115880,
+      "volume": 281956,
+      "trading_value": 5756317380,
       "mcap": 0.44,
       "shares": 21707567,
-      "categories": [
-        "기타"
-      ],
-      "rank": 566
-    },
-    {
-      "ticker": "145990",
-      "name": "삼양사",
-      "name_en": "",
-      "market": "코스피",
-      "sector": "기타",
-      "price": 43250,
-      "change": 0.35,
-      "volume": 6914,
-      "trading_value": 298651950,
-      "mcap": 0.44,
-      "shares": 10313449,
       "categories": [
         "기타"
       ],
@@ -10005,8 +10005,8 @@ window.KOS_LIVE_DATA = {
       "sector": "기타",
       "price": 13410,
       "change": 0.22,
-      "volume": 178797,
-      "trading_value": 2420261980,
+      "volume": 179248,
+      "trading_value": 2426310480,
       "mcap": 0.44,
       "shares": 32600000,
       "categories": [
@@ -10022,8 +10022,8 @@ window.KOS_LIVE_DATA = {
       "sector": "철강·금속",
       "price": 8900,
       "change": 0.56,
-      "volume": 908149,
-      "trading_value": 8203905720,
+      "volume": 911741,
+      "trading_value": 8235648880,
       "mcap": 0.44,
       "shares": 49129824,
       "induty_code": "2511",
@@ -10040,8 +10040,8 @@ window.KOS_LIVE_DATA = {
       "sector": "전자·부품",
       "price": 4185,
       "change": 8.14,
-      "volume": 22551655,
-      "trading_value": 97890124340,
+      "volume": 22601206,
+      "trading_value": 98095935630,
       "mcap": 0.44,
       "shares": 104017124,
       "induty_code": "264",
@@ -10068,24 +10068,6 @@ window.KOS_LIVE_DATA = {
       "rank": 571
     },
     {
-      "ticker": "425040",
-      "name": "티이엠씨",
-      "name_en": "TEMC Co., Ltd.",
-      "market": "코스닥",
-      "sector": "화학",
-      "price": 20250,
-      "change": 1.76,
-      "volume": 1137207,
-      "trading_value": 23116417445,
-      "mcap": 0.43,
-      "shares": 21374682,
-      "induty_code": "20121",
-      "categories": [
-        "화학"
-      ],
-      "rank": 572
-    },
-    {
       "ticker": "004690",
       "name": "삼천리",
       "name_en": "",
@@ -10095,12 +10077,47 @@ window.KOS_LIVE_DATA = {
       "change": 0.08,
       "volume": 13949,
       "trading_value": 1672811400,
-      "mcap": 0.43,
+      "mcap": 0.44,
       "shares": 3626777,
       "categories": [
         "기타"
       ],
+      "rank": 572
+    },
+    {
+      "ticker": "101930",
+      "name": "인화정공",
+      "name_en": "",
+      "market": "코스닥",
+      "sector": "기타",
+      "price": 9460,
+      "change": -0.84,
+      "volume": 30687,
+      "trading_value": 288407690,
+      "mcap": 0.44,
+      "shares": 46164410,
+      "categories": [
+        "기타"
+      ],
       "rank": 573
+    },
+    {
+      "ticker": "425040",
+      "name": "티이엠씨",
+      "name_en": "TEMC Co., Ltd.",
+      "market": "코스닥",
+      "sector": "화학",
+      "price": 20250,
+      "change": 1.76,
+      "volume": 1171802,
+      "trading_value": 23817006345,
+      "mcap": 0.43,
+      "shares": 21374682,
+      "induty_code": "20121",
+      "categories": [
+        "화학"
+      ],
+      "rank": 574
     },
     {
       "ticker": "381970",
@@ -10110,14 +10127,14 @@ window.KOS_LIVE_DATA = {
       "sector": "기타",
       "price": 8880,
       "change": 2.42,
-      "volume": 152386,
-      "trading_value": 1360164060,
+      "volume": 152406,
+      "trading_value": 1360341660,
       "mcap": 0.43,
       "shares": 48820848,
       "categories": [
         "기타"
       ],
-      "rank": 574
+      "rank": 575
     },
     {
       "ticker": "000070",
@@ -10134,7 +10151,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 575
+      "rank": 576
     },
     {
       "ticker": "064260",
@@ -10144,14 +10161,14 @@ window.KOS_LIVE_DATA = {
       "sector": "기타",
       "price": 5710,
       "change": -1.04,
-      "volume": 680059,
-      "trading_value": 3906482845,
+      "volume": 686539,
+      "trading_value": 3943422385,
       "mcap": 0.43,
       "shares": 75645457,
       "categories": [
         "기타"
       ],
-      "rank": 576
+      "rank": 577
     },
     {
       "ticker": "079940",
@@ -10165,23 +10182,6 @@ window.KOS_LIVE_DATA = {
       "trading_value": 763699300,
       "mcap": 0.43,
       "shares": 13420684,
-      "categories": [
-        "기타"
-      ],
-      "rank": 577
-    },
-    {
-      "ticker": "101930",
-      "name": "인화정공",
-      "name_en": "",
-      "market": "코스닥",
-      "sector": "기타",
-      "price": 9460,
-      "change": -0.84,
-      "volume": 30687,
-      "trading_value": 288407690,
-      "mcap": 0.43,
-      "shares": 46164410,
       "categories": [
         "기타"
       ],
@@ -10205,6 +10205,41 @@ window.KOS_LIVE_DATA = {
       "rank": 579
     },
     {
+      "ticker": "095660",
+      "name": "네오위즈",
+      "name_en": "",
+      "market": "코스닥",
+      "sector": "기타",
+      "price": 19710,
+      "change": -0.25,
+      "volume": 64442,
+      "trading_value": 1268107195,
+      "mcap": 0.43,
+      "shares": 21636459,
+      "categories": [
+        "기타"
+      ],
+      "rank": 580
+    },
+    {
+      "ticker": "389500",
+      "name": "에스비비테크",
+      "name_en": "SBB TECH Co., Ltd.",
+      "market": "코스닥",
+      "sector": "기계·장비",
+      "price": 64100,
+      "change": -2.14,
+      "volume": 144682,
+      "trading_value": 9164110250,
+      "mcap": 0.43,
+      "shares": 6663472,
+      "induty_code": "291",
+      "categories": [
+        "기계·장비"
+      ],
+      "rank": 581
+    },
+    {
       "ticker": "101160",
       "name": "월덱스",
       "name_en": "",
@@ -10219,41 +10254,6 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 580
-    },
-    {
-      "ticker": "095660",
-      "name": "네오위즈",
-      "name_en": "",
-      "market": "코스닥",
-      "sector": "기타",
-      "price": 19710,
-      "change": -0.25,
-      "volume": 64442,
-      "trading_value": 1268107195,
-      "mcap": 0.42,
-      "shares": 21636459,
-      "categories": [
-        "기타"
-      ],
-      "rank": 581
-    },
-    {
-      "ticker": "389500",
-      "name": "에스비비테크",
-      "name_en": "SBB TECH Co., Ltd.",
-      "market": "코스닥",
-      "sector": "기계·장비",
-      "price": 64100,
-      "change": -2.14,
-      "volume": 144373,
-      "trading_value": 9144202450,
-      "mcap": 0.42,
-      "shares": 6663472,
-      "induty_code": "291",
-      "categories": [
-        "기계·장비"
-      ],
       "rank": 582
     },
     {
@@ -10264,8 +10264,8 @@ window.KOS_LIVE_DATA = {
       "sector": "기타",
       "price": 46050,
       "change": -1.5,
-      "volume": 99562,
-      "trading_value": 4609413275,
+      "volume": 99563,
+      "trading_value": 4609459325,
       "mcap": 0.42,
       "shares": 9064946,
       "categories": [
@@ -10308,41 +10308,6 @@ window.KOS_LIVE_DATA = {
       "rank": 585
     },
     {
-      "ticker": "468530",
-      "name": "프로티나",
-      "name_en": "",
-      "market": "코스닥",
-      "sector": "기타",
-      "price": 37500,
-      "change": 4.02,
-      "volume": 56676,
-      "trading_value": 2108050975,
-      "mcap": 0.42,
-      "shares": 11035208,
-      "categories": [
-        "기타"
-      ],
-      "rank": 586
-    },
-    {
-      "ticker": "354320",
-      "name": "알멕",
-      "name_en": "ALMAC  CO., Ltd",
-      "market": "코스닥",
-      "sector": "철강·금속",
-      "price": 64400,
-      "change": 6.8,
-      "volume": 112773,
-      "trading_value": 7315009750,
-      "mcap": 0.41,
-      "shares": 6391381,
-      "induty_code": "24222",
-      "categories": [
-        "철강·금속"
-      ],
-      "rank": 587
-    },
-    {
       "ticker": "013030",
       "name": "하이록코리아",
       "name_en": "",
@@ -10352,12 +10317,64 @@ window.KOS_LIVE_DATA = {
       "change": 0.42,
       "volume": 45637,
       "trading_value": 1613205050,
-      "mcap": 0.41,
+      "mcap": 0.42,
       "shares": 11768144,
       "categories": [
         "기타"
       ],
+      "rank": 586
+    },
+    {
+      "ticker": "403550",
+      "name": "쏘카",
+      "name_en": "",
+      "market": "코스피",
+      "sector": "기타",
+      "price": 12670,
+      "change": 6.11,
+      "volume": 49050,
+      "trading_value": 602884170,
+      "mcap": 0.42,
+      "shares": 32841902,
+      "categories": [
+        "기타"
+      ],
+      "rank": 587
+    },
+    {
+      "ticker": "468530",
+      "name": "프로티나",
+      "name_en": "",
+      "market": "코스닥",
+      "sector": "기타",
+      "price": 37500,
+      "change": 4.02,
+      "volume": 56676,
+      "trading_value": 2108050975,
+      "mcap": 0.41,
+      "shares": 11035208,
+      "categories": [
+        "기타"
+      ],
       "rank": 588
+    },
+    {
+      "ticker": "354320",
+      "name": "알멕",
+      "name_en": "ALMAC  CO., Ltd",
+      "market": "코스닥",
+      "sector": "철강·금속",
+      "price": 64400,
+      "change": 6.8,
+      "volume": 113002,
+      "trading_value": 7329751050,
+      "mcap": 0.41,
+      "shares": 6391381,
+      "induty_code": "24222",
+      "categories": [
+        "철강·금속"
+      ],
+      "rank": 589
     },
     {
       "ticker": "110990",
@@ -10367,14 +10384,14 @@ window.KOS_LIVE_DATA = {
       "sector": "기타",
       "price": 21850,
       "change": 9.36,
-      "volume": 238824,
-      "trading_value": 5249445500,
+      "volume": 238826,
+      "trading_value": 5249489200,
       "mcap": 0.41,
       "shares": 18900000,
       "categories": [
         "기타"
       ],
-      "rank": 589
+      "rank": 590
     },
     {
       "ticker": "950210",
@@ -10384,14 +10401,14 @@ window.KOS_LIVE_DATA = {
       "sector": "기타",
       "price": 6830,
       "change": -4.34,
-      "volume": 86903,
-      "trading_value": 593515745,
+      "volume": 87069,
+      "trading_value": 594649525,
       "mcap": 0.41,
       "shares": 60096155,
       "categories": [
         "기타"
       ],
-      "rank": 590
+      "rank": 591
     },
     {
       "ticker": "027410",
@@ -10401,14 +10418,14 @@ window.KOS_LIVE_DATA = {
       "sector": "기타",
       "price": 4295,
       "change": 0.94,
-      "volume": 125559,
-      "trading_value": 536349511,
+      "volume": 125562,
+      "trading_value": 536362396,
       "mcap": 0.41,
       "shares": 95716791,
       "categories": [
         "기타"
       ],
-      "rank": 591
+      "rank": 592
     },
     {
       "ticker": "098070",
@@ -10418,14 +10435,14 @@ window.KOS_LIVE_DATA = {
       "sector": "기타",
       "price": 36800,
       "change": 9.36,
-      "volume": 112787,
-      "trading_value": 4083596100,
+      "volume": 112788,
+      "trading_value": 4083632900,
       "mcap": 0.41,
       "shares": 11121141,
       "categories": [
         "기타"
       ],
-      "rank": 592
+      "rank": 593
     },
     {
       "ticker": "004700",
@@ -10442,7 +10459,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 593
+      "rank": 594
     },
     {
       "ticker": "042520",
@@ -10452,14 +10469,48 @@ window.KOS_LIVE_DATA = {
       "sector": "기타",
       "price": 28400,
       "change": 7.98,
-      "volume": 227873,
-      "trading_value": 6498713875,
-      "mcap": 0.4,
+      "volume": 227874,
+      "trading_value": 6498742275,
+      "mcap": 0.41,
       "shares": 14261367,
       "categories": [
         "기타"
       ],
-      "rank": 594
+      "rank": 595
+    },
+    {
+      "ticker": "0120G0",
+      "name": "삼양바이오팜",
+      "name_en": "",
+      "market": "코스피",
+      "sector": "기타",
+      "price": 54500,
+      "change": 5.01,
+      "volume": 26240,
+      "trading_value": 1414417800,
+      "mcap": 0.41,
+      "shares": 7435870,
+      "categories": [
+        "기타"
+      ],
+      "rank": 596
+    },
+    {
+      "ticker": "241770",
+      "name": "메카로",
+      "name_en": "",
+      "market": "코스닥",
+      "sector": "기타",
+      "price": 39800,
+      "change": 6.85,
+      "volume": 101405,
+      "trading_value": 4067899300,
+      "mcap": 0.41,
+      "shares": 10192640,
+      "categories": [
+        "기타"
+      ],
+      "rank": 597
     },
     {
       "ticker": "394280",
@@ -10476,24 +10527,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 595
-    },
-    {
-      "ticker": "0120G0",
-      "name": "삼양바이오팜",
-      "name_en": "",
-      "market": "코스피",
-      "sector": "기타",
-      "price": 54500,
-      "change": 5.01,
-      "volume": 26222,
-      "trading_value": 1413436800,
-      "mcap": 0.4,
-      "shares": 7435870,
-      "categories": [
-        "기타"
-      ],
-      "rank": 596
+      "rank": 598
     },
     {
       "ticker": "117730",
@@ -10510,24 +10544,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 597
-    },
-    {
-      "ticker": "241770",
-      "name": "메카로",
-      "name_en": "",
-      "market": "코스닥",
-      "sector": "기타",
-      "price": 39800,
-      "change": 6.85,
-      "volume": 101405,
-      "trading_value": 4067899300,
-      "mcap": 0.4,
-      "shares": 10192640,
-      "categories": [
-        "기타"
-      ],
-      "rank": 598
+      "rank": 599
     },
     {
       "ticker": "012030",
@@ -10537,14 +10554,14 @@ window.KOS_LIVE_DATA = {
       "sector": "기타",
       "price": 1993,
       "change": 1.79,
-      "volume": 1030390,
-      "trading_value": 2049798711,
+      "volume": 1031790,
+      "trading_value": 2052585313,
       "mcap": 0.4,
       "shares": 201173933,
       "categories": [
         "기타"
       ],
-      "rank": 599
+      "rank": 600
     },
     {
       "ticker": "060980",
@@ -10561,7 +10578,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 600
+      "rank": 601
     },
     {
       "ticker": "029530",
@@ -10578,7 +10595,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 601
+      "rank": 602
     },
     {
       "ticker": "215200",
@@ -10588,14 +10605,14 @@ window.KOS_LIVE_DATA = {
       "sector": "기타",
       "price": 39000,
       "change": -2.13,
-      "volume": 56324,
-      "trading_value": 2188842475,
+      "volume": 56326,
+      "trading_value": 2188920475,
       "mcap": 0.4,
       "shares": 10365216,
       "categories": [
         "기타"
       ],
-      "rank": 602
+      "rank": 603
     },
     {
       "ticker": "015360",
@@ -10612,23 +10629,6 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 603
-    },
-    {
-      "ticker": "403550",
-      "name": "쏘카",
-      "name_en": "",
-      "market": "코스피",
-      "sector": "기타",
-      "price": 12670,
-      "change": 6.11,
-      "volume": 49050,
-      "trading_value": 602884170,
-      "mcap": 0.4,
-      "shares": 32841902,
-      "categories": [
-        "기타"
-      ],
       "rank": 604
     },
     {
@@ -10639,8 +10639,8 @@ window.KOS_LIVE_DATA = {
       "sector": "기타",
       "price": 46050,
       "change": 0.33,
-      "volume": 27871,
-      "trading_value": 1275457275,
+      "volume": 27894,
+      "trading_value": 1276516425,
       "mcap": 0.4,
       "shares": 8623891,
       "categories": [
@@ -10673,8 +10673,8 @@ window.KOS_LIVE_DATA = {
       "sector": "기타",
       "price": 8150,
       "change": 1.12,
-      "volume": 847835,
-      "trading_value": 6863171390,
+      "volume": 851030,
+      "trading_value": 6889293350,
       "mcap": 0.4,
       "shares": 48771938,
       "categories": [
@@ -10690,8 +10690,8 @@ window.KOS_LIVE_DATA = {
       "sector": "자동차",
       "price": 10260,
       "change": 6.88,
-      "volume": 3332609,
-      "trading_value": 33504902615,
+      "volume": 3342292,
+      "trading_value": 33604225535,
       "mcap": 0.4,
       "shares": 38888569,
       "induty_code": "303",
@@ -10708,8 +10708,8 @@ window.KOS_LIVE_DATA = {
       "sector": "기계·장비",
       "price": 29700,
       "change": 6.07,
-      "volume": 471537,
-      "trading_value": 14385281425,
+      "volume": 472611,
+      "trading_value": 14417431225,
       "mcap": 0.39,
       "shares": 13050797,
       "induty_code": "29271",
@@ -10726,8 +10726,8 @@ window.KOS_LIVE_DATA = {
       "sector": "전자·부품",
       "price": 18430,
       "change": 10.96,
-      "volume": 828625,
-      "trading_value": 15658091365,
+      "volume": 829436,
+      "trading_value": 15673163735,
       "mcap": 0.39,
       "shares": 21090955,
       "induty_code": "262",
@@ -10744,8 +10744,8 @@ window.KOS_LIVE_DATA = {
       "sector": "기타",
       "price": 3205,
       "change": 1.58,
-      "volume": 228185,
-      "trading_value": 739378893,
+      "volume": 228567,
+      "trading_value": 740608018,
       "mcap": 0.39,
       "shares": 121917058,
       "categories": [
@@ -10761,8 +10761,8 @@ window.KOS_LIVE_DATA = {
       "sector": "반도체",
       "price": 28150,
       "change": -2.6,
-      "volume": 615408,
-      "trading_value": 17338885375,
+      "volume": 622613,
+      "trading_value": 17542116625,
       "mcap": 0.39,
       "shares": 14010894,
       "induty_code": "261",
@@ -10779,8 +10779,8 @@ window.KOS_LIVE_DATA = {
       "sector": "유통·소비재",
       "price": 27200,
       "change": 3.03,
-      "volume": 280601,
-      "trading_value": 7641229150,
+      "volume": 283072,
+      "trading_value": 7709557050,
       "mcap": 0.39,
       "shares": 14438000,
       "induty_code": "467",
@@ -10841,23 +10841,6 @@ window.KOS_LIVE_DATA = {
       "rank": 616
     },
     {
-      "ticker": "105840",
-      "name": "우진",
-      "name_en": "",
-      "market": "코스피",
-      "sector": "기타",
-      "price": 19050,
-      "change": 0.58,
-      "volume": 132183,
-      "trading_value": 2544692745,
-      "mcap": 0.39,
-      "shares": 20197670,
-      "categories": [
-        "기타"
-      ],
-      "rank": 617
-    },
-    {
       "ticker": "004710",
       "name": "한솔테크닉스",
       "name_en": "Hansol Technics Co., Ltd",
@@ -10865,13 +10848,30 @@ window.KOS_LIVE_DATA = {
       "sector": "전자·부품",
       "price": 12460,
       "change": 9.59,
-      "volume": 2395172,
-      "trading_value": 29096706840,
+      "volume": 2410438,
+      "trading_value": 29290514930,
       "mcap": 0.39,
       "shares": 31417517,
       "induty_code": "26299",
       "categories": [
         "전자·부품"
+      ],
+      "rank": 617
+    },
+    {
+      "ticker": "105840",
+      "name": "우진",
+      "name_en": "",
+      "market": "코스피",
+      "sector": "기타",
+      "price": 19050,
+      "change": 0.58,
+      "volume": 132346,
+      "trading_value": 2547798205,
+      "mcap": 0.38,
+      "shares": 20197670,
+      "categories": [
+        "기타"
       ],
       "rank": 618
     },
@@ -10900,8 +10900,8 @@ window.KOS_LIVE_DATA = {
       "sector": "기타",
       "price": 40950,
       "change": -3.65,
-      "volume": 88891,
-      "trading_value": 3726523800,
+      "volume": 88892,
+      "trading_value": 3726564750,
       "mcap": 0.38,
       "shares": 9240471,
       "categories": [
@@ -10917,8 +10917,8 @@ window.KOS_LIVE_DATA = {
       "sector": "기계·장비",
       "price": 8710,
       "change": -1.14,
-      "volume": 1354629,
-      "trading_value": 12313214910,
+      "volume": 1355478,
+      "trading_value": 12320609700,
       "mcap": 0.38,
       "shares": 43692624,
       "induty_code": "29271",
@@ -10945,23 +10945,6 @@ window.KOS_LIVE_DATA = {
       "rank": 622
     },
     {
-      "ticker": "215600",
-      "name": "신라젠",
-      "name_en": "",
-      "market": "코스닥",
-      "sector": "기타",
-      "price": 2700,
-      "change": -2.35,
-      "volume": 735233,
-      "trading_value": 2012588914,
-      "mcap": 0.38,
-      "shares": 138553564,
-      "categories": [
-        "기타"
-      ],
-      "rank": 623
-    },
-    {
       "ticker": "015860",
       "name": "일진홀딩스",
       "name_en": "",
@@ -10969,14 +10952,14 @@ window.KOS_LIVE_DATA = {
       "sector": "기타",
       "price": 7630,
       "change": -3.42,
-      "volume": 249072,
-      "trading_value": 1921496625,
+      "volume": 249311,
+      "trading_value": 1923320195,
       "mcap": 0.38,
       "shares": 49347483,
       "categories": [
         "기타"
       ],
-      "rank": 624
+      "rank": 623
     },
     {
       "ticker": "078130",
@@ -10986,14 +10969,14 @@ window.KOS_LIVE_DATA = {
       "sector": "기타",
       "price": 3405,
       "change": -0.58,
-      "volume": 175375,
-      "trading_value": 596966850,
+      "volume": 175617,
+      "trading_value": 597790860,
       "mcap": 0.38,
       "shares": 112740587,
       "categories": [
         "기타"
       ],
-      "rank": 625
+      "rank": 624
     },
     {
       "ticker": "017810",
@@ -11003,14 +10986,14 @@ window.KOS_LIVE_DATA = {
       "sector": "기타",
       "price": 9910,
       "change": -1.88,
-      "volume": 116144,
-      "trading_value": 1147405500,
+      "volume": 116150,
+      "trading_value": 1147464960,
       "mcap": 0.38,
       "shares": 38120542,
       "categories": [
         "기타"
       ],
-      "rank": 626
+      "rank": 625
     },
     {
       "ticker": "187660",
@@ -11020,15 +11003,15 @@ window.KOS_LIVE_DATA = {
       "sector": "부동산·기타서비스",
       "price": 6840,
       "change": 6.38,
-      "volume": 1078623,
-      "trading_value": 7342130320,
+      "volume": 1084586,
+      "trading_value": 7382962460,
       "mcap": 0.38,
       "shares": 55466253,
       "induty_code": "70113",
       "categories": [
         "부동산·기타서비스"
       ],
-      "rank": 627
+      "rank": 626
     },
     {
       "ticker": "084110",
@@ -11045,7 +11028,41 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
+      "rank": 627
+    },
+    {
+      "ticker": "006220",
+      "name": "제주은행",
+      "name_en": "",
+      "market": "코스피",
+      "sector": "기타",
+      "price": 10000,
+      "change": 5.6,
+      "volume": 156936,
+      "trading_value": 1545321420,
+      "mcap": 0.38,
+      "shares": 37798557,
+      "categories": [
+        "기타"
+      ],
       "rank": 628
+    },
+    {
+      "ticker": "215600",
+      "name": "신라젠",
+      "name_en": "",
+      "market": "코스닥",
+      "sector": "기타",
+      "price": 2700,
+      "change": -2.35,
+      "volume": 737404,
+      "trading_value": 2018444249,
+      "mcap": 0.37,
+      "shares": 138553564,
+      "categories": [
+        "기타"
+      ],
+      "rank": 629
     },
     {
       "ticker": "114810",
@@ -11062,23 +11079,6 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 629
-    },
-    {
-      "ticker": "006220",
-      "name": "제주은행",
-      "name_en": "",
-      "market": "코스피",
-      "sector": "기타",
-      "price": 10000,
-      "change": 5.6,
-      "volume": 152711,
-      "trading_value": 1503070820,
-      "mcap": 0.37,
-      "shares": 37798557,
-      "categories": [
-        "기타"
-      ],
       "rank": 630
     },
     {
@@ -11089,8 +11089,8 @@ window.KOS_LIVE_DATA = {
       "sector": "기타",
       "price": 12020,
       "change": 7.32,
-      "volume": 412089,
-      "trading_value": 4935213600,
+      "volume": 412642,
+      "trading_value": 4941855070,
       "mcap": 0.37,
       "shares": 31016990,
       "categories": [
@@ -11123,8 +11123,8 @@ window.KOS_LIVE_DATA = {
       "sector": "기타",
       "price": 6740,
       "change": 2.12,
-      "volume": 80808,
-      "trading_value": 543784955,
+      "volume": 81484,
+      "trading_value": 548340395,
       "mcap": 0.37,
       "shares": 55481190,
       "categories": [
@@ -11167,23 +11167,6 @@ window.KOS_LIVE_DATA = {
       "rank": 635
     },
     {
-      "ticker": "092790",
-      "name": "넥스틸",
-      "name_en": "",
-      "market": "코스피",
-      "sector": "기타",
-      "price": 13980,
-      "change": 1.6,
-      "volume": 222363,
-      "trading_value": 3153283000,
-      "mcap": 0.37,
-      "shares": 26002000,
-      "categories": [
-        "기타"
-      ],
-      "rank": 636
-    },
-    {
       "ticker": "344820",
       "name": "KCC글라스",
       "name_en": "",
@@ -11198,7 +11181,41 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
+      "rank": 636
+    },
+    {
+      "ticker": "206650",
+      "name": "유바이오로직스",
+      "name_en": "",
+      "market": "코스닥",
+      "sector": "기타",
+      "price": 9940,
+      "change": 0.4,
+      "volume": 174027,
+      "trading_value": 1718298075,
+      "mcap": 0.37,
+      "shares": 36723307,
+      "categories": [
+        "기타"
+      ],
       "rank": 637
+    },
+    {
+      "ticker": "092790",
+      "name": "넥스틸",
+      "name_en": "",
+      "market": "코스피",
+      "sector": "기타",
+      "price": 13980,
+      "change": 1.6,
+      "volume": 222363,
+      "trading_value": 3153283000,
+      "mcap": 0.36,
+      "shares": 26002000,
+      "categories": [
+        "기타"
+      ],
+      "rank": 638
     },
     {
       "ticker": "232530",
@@ -11215,7 +11232,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 638
+      "rank": 639
     },
     {
       "ticker": "016590",
@@ -11232,41 +11249,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 639
-    },
-    {
-      "ticker": "206650",
-      "name": "유바이오로직스",
-      "name_en": "",
-      "market": "코스닥",
-      "sector": "기타",
-      "price": 9940,
-      "change": 0.4,
-      "volume": 174002,
-      "trading_value": 1718049575,
-      "mcap": 0.36,
-      "shares": 36723307,
-      "categories": [
-        "기타"
-      ],
       "rank": 640
-    },
-    {
-      "ticker": "200470",
-      "name": "에이팩트",
-      "name_en": "",
-      "market": "코스닥",
-      "sector": "기타",
-      "price": 8360,
-      "change": 1.95,
-      "volume": 528199,
-      "trading_value": 4527077775,
-      "mcap": 0.36,
-      "shares": 42362093,
-      "categories": [
-        "기타"
-      ],
-      "rank": 641
     },
     {
       "ticker": "005610",
@@ -11283,7 +11266,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 642
+      "rank": 641
     },
     {
       "ticker": "160980",
@@ -11293,14 +11276,14 @@ window.KOS_LIVE_DATA = {
       "sector": "기타",
       "price": 33000,
       "change": 9.63,
-      "volume": 166093,
-      "trading_value": 5464261250,
+      "volume": 166150,
+      "trading_value": 5466132900,
       "mcap": 0.36,
       "shares": 10924243,
       "categories": [
         "기타"
       ],
-      "rank": 643
+      "rank": 642
     },
     {
       "ticker": "002710",
@@ -11317,7 +11300,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 644
+      "rank": 643
     },
     {
       "ticker": "089590",
@@ -11327,14 +11310,14 @@ window.KOS_LIVE_DATA = {
       "sector": "기타",
       "price": 4410,
       "change": -1.89,
-      "volume": 213492,
-      "trading_value": 945290907,
+      "volume": 213785,
+      "trading_value": 946583037,
       "mcap": 0.36,
       "shares": 80640985,
       "categories": [
         "기타"
       ],
-      "rank": 645
+      "rank": 644
     },
     {
       "ticker": "417840",
@@ -11344,15 +11327,15 @@ window.KOS_LIVE_DATA = {
       "sector": "기계·장비",
       "price": 15990,
       "change": 7.53,
-      "volume": 924422,
-      "trading_value": 14545707810,
+      "volume": 925600,
+      "trading_value": 14564584690,
       "mcap": 0.36,
       "shares": 22663931,
       "induty_code": "29271",
       "categories": [
         "기계·장비"
       ],
-      "rank": 646
+      "rank": 645
     },
     {
       "ticker": "052710",
@@ -11362,13 +11345,30 @@ window.KOS_LIVE_DATA = {
       "sector": "전자·부품",
       "price": 24800,
       "change": 16.43,
-      "volume": 702406,
-      "trading_value": 16664750225,
+      "volume": 703908,
+      "trading_value": 16702151975,
       "mcap": 0.36,
       "shares": 14612546,
       "induty_code": "2629",
       "categories": [
         "전자·부품"
+      ],
+      "rank": 646
+    },
+    {
+      "ticker": "200470",
+      "name": "에이팩트",
+      "name_en": "",
+      "market": "코스닥",
+      "sector": "기타",
+      "price": 8360,
+      "change": 1.95,
+      "volume": 528257,
+      "trading_value": 4527569415,
+      "mcap": 0.35,
+      "shares": 42362093,
+      "categories": [
+        "기타"
       ],
       "rank": 647
     },
@@ -11414,8 +11414,8 @@ window.KOS_LIVE_DATA = {
       "sector": "기타",
       "price": 17710,
       "change": -3.28,
-      "volume": 112195,
-      "trading_value": 2015670785,
+      "volume": 112215,
+      "trading_value": 2016024985,
       "mcap": 0.35,
       "shares": 19790412,
       "categories": [
@@ -11448,8 +11448,8 @@ window.KOS_LIVE_DATA = {
       "sector": "기타",
       "price": 24750,
       "change": -2.37,
-      "volume": 195817,
-      "trading_value": 4879433350,
+      "volume": 197045,
+      "trading_value": 4909701200,
       "mcap": 0.35,
       "shares": 13970656,
       "categories": [
@@ -11516,8 +11516,8 @@ window.KOS_LIVE_DATA = {
       "sector": "기타",
       "price": 21100,
       "change": 0.0,
-      "volume": 68234,
-      "trading_value": 1446230050,
+      "volume": 68244,
+      "trading_value": 1446441050,
       "mcap": 0.35,
       "shares": 16448909,
       "categories": [
@@ -11533,8 +11533,8 @@ window.KOS_LIVE_DATA = {
       "sector": "기타",
       "price": 9550,
       "change": 0.32,
-      "volume": 45278,
-      "trading_value": 432084940,
+      "volume": 45322,
+      "trading_value": 432505140,
       "mcap": 0.35,
       "shares": 36506428,
       "categories": [
@@ -11635,8 +11635,8 @@ window.KOS_LIVE_DATA = {
       "sector": "기타",
       "price": 15710,
       "change": 6.15,
-      "volume": 414267,
-      "trading_value": 6541861980,
+      "volume": 414824,
+      "trading_value": 6550616520,
       "mcap": 0.34,
       "shares": 21888280,
       "categories": [
@@ -11669,8 +11669,8 @@ window.KOS_LIVE_DATA = {
       "sector": "기타",
       "price": 31050,
       "change": -0.96,
-      "volume": 182804,
-      "trading_value": 5742930700,
+      "volume": 182819,
+      "trading_value": 5743396450,
       "mcap": 0.34,
       "shares": 10925658,
       "categories": [
@@ -11703,8 +11703,8 @@ window.KOS_LIVE_DATA = {
       "sector": "기타",
       "price": 11900,
       "change": -1.24,
-      "volume": 94397,
-      "trading_value": 1116500245,
+      "volume": 94640,
+      "trading_value": 1119391945,
       "mcap": 0.34,
       "shares": 28976443,
       "categories": [
@@ -11771,8 +11771,8 @@ window.KOS_LIVE_DATA = {
       "sector": "금융",
       "price": 12920,
       "change": 0.47,
-      "volume": 607996,
-      "trading_value": 7796731330,
+      "volume": 611483,
+      "trading_value": 7841787340,
       "mcap": 0.34,
       "shares": 26600000,
       "induty_code": "64209",
@@ -11780,6 +11780,23 @@ window.KOS_LIVE_DATA = {
         "금융"
       ],
       "rank": 671
+    },
+    {
+      "ticker": "243070",
+      "name": "휴온스",
+      "name_en": "",
+      "market": "코스닥",
+      "sector": "기타",
+      "price": 28350,
+      "change": 2.53,
+      "volume": 28162,
+      "trading_value": 781536875,
+      "mcap": 0.34,
+      "shares": 11979665,
+      "categories": [
+        "기타"
+      ],
+      "rank": 672
     },
     {
       "ticker": "424870",
@@ -11797,23 +11814,6 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "부동산·기타서비스"
       ],
-      "rank": 672
-    },
-    {
-      "ticker": "243070",
-      "name": "휴온스",
-      "name_en": "",
-      "market": "코스닥",
-      "sector": "기타",
-      "price": 28350,
-      "change": 2.53,
-      "volume": 28162,
-      "trading_value": 781536875,
-      "mcap": 0.33,
-      "shares": 11979665,
-      "categories": [
-        "기타"
-      ],
       "rank": 673
     },
     {
@@ -11824,31 +11824,14 @@ window.KOS_LIVE_DATA = {
       "sector": "기타",
       "price": 4770,
       "change": -0.52,
-      "volume": 244379,
-      "trading_value": 1193092772,
+      "volume": 248470,
+      "trading_value": 1212606992,
       "mcap": 0.33,
       "shares": 68974199,
       "categories": [
         "기타"
       ],
       "rank": 674
-    },
-    {
-      "ticker": "084690",
-      "name": "대상홀딩스",
-      "name_en": "",
-      "market": "코스피",
-      "sector": "기타",
-      "price": 8940,
-      "change": -6.68,
-      "volume": 618918,
-      "trading_value": 5882454830,
-      "mcap": 0.33,
-      "shares": 36212538,
-      "categories": [
-        "기타"
-      ],
-      "rank": 675
     },
     {
       "ticker": "064820",
@@ -11865,7 +11848,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 676
+      "rank": 675
     },
     {
       "ticker": "011760",
@@ -11882,7 +11865,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 677
+      "rank": 676
     },
     {
       "ticker": "025860",
@@ -11892,14 +11875,14 @@ window.KOS_LIVE_DATA = {
       "sector": "기타",
       "price": 6590,
       "change": -0.15,
-      "volume": 488266,
-      "trading_value": 3248626960,
+      "volume": 489594,
+      "trading_value": 3257382000,
       "mcap": 0.33,
       "shares": 49678843,
       "categories": [
         "기타"
       ],
-      "rank": 678
+      "rank": 677
     },
     {
       "ticker": "091700",
@@ -11909,14 +11892,14 @@ window.KOS_LIVE_DATA = {
       "sector": "기타",
       "price": 6600,
       "change": -1.2,
-      "volume": 161673,
-      "trading_value": 1073199305,
+      "volume": 161827,
+      "trading_value": 1074215705,
       "mcap": 0.33,
       "shares": 50000000,
       "categories": [
         "기타"
       ],
-      "rank": 679
+      "rank": 678
     },
     {
       "ticker": "484590",
@@ -11933,7 +11916,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 680
+      "rank": 679
     },
     {
       "ticker": "058430",
@@ -11943,14 +11926,14 @@ window.KOS_LIVE_DATA = {
       "sector": "기타",
       "price": 5560,
       "change": -1.42,
-      "volume": 379316,
-      "trading_value": 2091686950,
+      "volume": 379491,
+      "trading_value": 2092660640,
       "mcap": 0.33,
       "shares": 60000000,
       "categories": [
         "기타"
       ],
-      "rank": 681
+      "rank": 680
     },
     {
       "ticker": "219130",
@@ -11960,14 +11943,14 @@ window.KOS_LIVE_DATA = {
       "sector": "기타",
       "price": 52000,
       "change": 4.42,
-      "volume": 33489,
-      "trading_value": 1740710500,
+      "volume": 33515,
+      "trading_value": 1742062500,
       "mcap": 0.33,
       "shares": 6314290,
       "categories": [
         "기타"
       ],
-      "rank": 682
+      "rank": 681
     },
     {
       "ticker": "069080",
@@ -11984,7 +11967,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 683
+      "rank": 682
     },
     {
       "ticker": "101730",
@@ -12001,7 +11984,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 684
+      "rank": 683
     },
     {
       "ticker": "187870",
@@ -12011,15 +11994,66 @@ window.KOS_LIVE_DATA = {
       "sector": "기계·장비",
       "price": 23950,
       "change": 8.62,
-      "volume": 347721,
-      "trading_value": 8221188550,
+      "volume": 348147,
+      "trading_value": 8231352500,
       "mcap": 0.33,
       "shares": 13770060,
       "induty_code": "29271",
       "categories": [
         "기계·장비"
       ],
+      "rank": 684
+    },
+    {
+      "ticker": "078340",
+      "name": "컴투스",
+      "name_en": "",
+      "market": "코스닥",
+      "sector": "기타",
+      "price": 26900,
+      "change": 0.94,
+      "volume": 78610,
+      "trading_value": 2095685850,
+      "mcap": 0.33,
+      "shares": 12091313,
+      "categories": [
+        "기타"
+      ],
       "rank": 685
+    },
+    {
+      "ticker": "203650",
+      "name": "드림시큐리티",
+      "name_en": "",
+      "market": "코스닥",
+      "sector": "기타",
+      "price": 3220,
+      "change": 1.9,
+      "volume": 2046127,
+      "trading_value": 6524074935,
+      "mcap": 0.33,
+      "shares": 101097320,
+      "categories": [
+        "기타"
+      ],
+      "rank": 686
+    },
+    {
+      "ticker": "084690",
+      "name": "대상홀딩스",
+      "name_en": "",
+      "market": "코스피",
+      "sector": "기타",
+      "price": 8940,
+      "change": -6.68,
+      "volume": 618974,
+      "trading_value": 5882955470,
+      "mcap": 0.32,
+      "shares": 36212538,
+      "categories": [
+        "기타"
+      ],
+      "rank": 687
     },
     {
       "ticker": "094360",
@@ -12036,7 +12070,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 686
+      "rank": 688
     },
     {
       "ticker": "005950",
@@ -12046,15 +12080,15 @@ window.KOS_LIVE_DATA = {
       "sector": "화학",
       "price": 12130,
       "change": -4.64,
-      "volume": 823570,
-      "trading_value": 10248084280,
+      "volume": 828429,
+      "trading_value": 10306930720,
       "mcap": 0.32,
       "shares": 26294169,
       "induty_code": "20111",
       "categories": [
         "화학"
       ],
-      "rank": 687
+      "rank": 689
     },
     {
       "ticker": "009290",
@@ -12064,14 +12098,14 @@ window.KOS_LIVE_DATA = {
       "sector": "바이오/제약",
       "price": 6430,
       "change": -1.83,
-      "volume": 183873,
-      "trading_value": 1196666005,
+      "volume": 183916,
+      "trading_value": 1196942495,
       "mcap": 0.32,
       "shares": 49799808,
       "categories": [
         "바이오/제약"
       ],
-      "rank": 688
+      "rank": 690
     },
     {
       "ticker": "091810",
@@ -12081,14 +12115,14 @@ window.KOS_LIVE_DATA = {
       "sector": "기타",
       "price": 784,
       "change": -2.0,
-      "volume": 1042245,
-      "trading_value": 820563400,
+      "volume": 1044321,
+      "trading_value": 822190984,
       "mcap": 0.32,
       "shares": 412969485,
       "categories": [
         "기타"
       ],
-      "rank": 689
+      "rank": 691
     },
     {
       "ticker": "092460",
@@ -12105,7 +12139,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 690
+      "rank": 692
     },
     {
       "ticker": "089980",
@@ -12115,44 +12149,10 @@ window.KOS_LIVE_DATA = {
       "sector": "기타",
       "price": 20000,
       "change": 1.21,
-      "volume": 55626,
-      "trading_value": 1108626360,
+      "volume": 55740,
+      "trading_value": 1110906360,
       "mcap": 0.32,
       "shares": 15989037,
-      "categories": [
-        "기타"
-      ],
-      "rank": 691
-    },
-    {
-      "ticker": "078340",
-      "name": "컴투스",
-      "name_en": "",
-      "market": "코스닥",
-      "sector": "기타",
-      "price": 26900,
-      "change": 0.94,
-      "volume": 78610,
-      "trading_value": 2095685850,
-      "mcap": 0.32,
-      "shares": 12091313,
-      "categories": [
-        "기타"
-      ],
-      "rank": 692
-    },
-    {
-      "ticker": "378340",
-      "name": "필에너지",
-      "name_en": "",
-      "market": "코스닥",
-      "sector": "기타",
-      "price": 14550,
-      "change": -0.34,
-      "volume": 38024,
-      "trading_value": 558257170,
-      "mcap": 0.32,
-      "shares": 21625382,
       "categories": [
         "기타"
       ],
@@ -12166,8 +12166,8 @@ window.KOS_LIVE_DATA = {
       "sector": "기타",
       "price": 27550,
       "change": -2.3,
-      "volume": 63190,
-      "trading_value": 1718564575,
+      "volume": 63191,
+      "trading_value": 1718592125,
       "mcap": 0.32,
       "shares": 11756062,
       "categories": [
@@ -12183,8 +12183,8 @@ window.KOS_LIVE_DATA = {
       "sector": "기타",
       "price": 6010,
       "change": -1.48,
-      "volume": 22430,
-      "trading_value": 136113520,
+      "volume": 22431,
+      "trading_value": 136119530,
       "mcap": 0.32,
       "shares": 52543977,
       "categories": [
@@ -12200,8 +12200,8 @@ window.KOS_LIVE_DATA = {
       "sector": "기타",
       "price": 45550,
       "change": 7.94,
-      "volume": 50044,
-      "trading_value": 2251764250,
+      "volume": 50045,
+      "trading_value": 2251809800,
       "mcap": 0.32,
       "shares": 6974311,
       "categories": [
@@ -12217,8 +12217,8 @@ window.KOS_LIVE_DATA = {
       "sector": "기타",
       "price": 4590,
       "change": 2.91,
-      "volume": 459775,
-      "trading_value": 2080845489,
+      "volume": 460829,
+      "trading_value": 2085661989,
       "mcap": 0.32,
       "shares": 70283330,
       "categories": [
@@ -12244,21 +12244,72 @@ window.KOS_LIVE_DATA = {
       "rank": 698
     },
     {
-      "ticker": "203650",
-      "name": "드림시큐리티",
+      "ticker": "042370",
+      "name": "비츠로테크",
       "name_en": "",
       "market": "코스닥",
       "sector": "기타",
-      "price": 3220,
-      "change": 1.9,
-      "volume": 2024207,
-      "trading_value": 6453075615,
+      "price": 12060,
+      "change": -1.95,
+      "volume": 323088,
+      "trading_value": 3939564975,
       "mcap": 0.32,
-      "shares": 101097320,
+      "shares": 26200025,
       "categories": [
         "기타"
       ],
       "rank": 699
+    },
+    {
+      "ticker": "086390",
+      "name": "유니테스트",
+      "name_en": "",
+      "market": "코스닥",
+      "sector": "기타",
+      "price": 14910,
+      "change": 7.81,
+      "volume": 202377,
+      "trading_value": 2981863600,
+      "mcap": 0.32,
+      "shares": 21134126,
+      "categories": [
+        "기타"
+      ],
+      "rank": 700
+    },
+    {
+      "ticker": "036890",
+      "name": "진성티이씨",
+      "name_en": "",
+      "market": "코스닥",
+      "sector": "기타",
+      "price": 14360,
+      "change": 2.57,
+      "volume": 107028,
+      "trading_value": 1539834610,
+      "mcap": 0.32,
+      "shares": 22032623,
+      "categories": [
+        "기타"
+      ],
+      "rank": 701
+    },
+    {
+      "ticker": "378340",
+      "name": "필에너지",
+      "name_en": "",
+      "market": "코스닥",
+      "sector": "기타",
+      "price": 14550,
+      "change": -0.34,
+      "volume": 38024,
+      "trading_value": 558257170,
+      "mcap": 0.31,
+      "shares": 21625382,
+      "categories": [
+        "기타"
+      ],
+      "rank": 702
     },
     {
       "ticker": "000650",
@@ -12268,15 +12319,15 @@ window.KOS_LIVE_DATA = {
       "sector": "운송·물류",
       "price": 219000,
       "change": 0.69,
-      "volume": 165236,
-      "trading_value": 41777672500,
+      "volume": 165454,
+      "trading_value": 41825747000,
       "mcap": 0.31,
       "shares": 1429220,
       "induty_code": "49220",
       "categories": [
         "운송·물류"
       ],
-      "rank": 700
+      "rank": 703
     },
     {
       "ticker": "049070",
@@ -12293,24 +12344,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 701
-    },
-    {
-      "ticker": "042370",
-      "name": "비츠로테크",
-      "name_en": "",
-      "market": "코스닥",
-      "sector": "기타",
-      "price": 12060,
-      "change": -1.95,
-      "volume": 319468,
-      "trading_value": 3896254325,
-      "mcap": 0.31,
-      "shares": 26200025,
-      "categories": [
-        "기타"
-      ],
-      "rank": 702
+      "rank": 704
     },
     {
       "ticker": "365270",
@@ -12320,14 +12354,14 @@ window.KOS_LIVE_DATA = {
       "sector": "기타",
       "price": 14240,
       "change": -0.97,
-      "volume": 155182,
-      "trading_value": 2255346805,
+      "volume": 155771,
+      "trading_value": 2263734165,
       "mcap": 0.31,
       "shares": 22071992,
       "categories": [
         "기타"
       ],
-      "rank": 703
+      "rank": 705
     },
     {
       "ticker": "018250",
@@ -12337,44 +12371,10 @@ window.KOS_LIVE_DATA = {
       "sector": "기타",
       "price": 11850,
       "change": -2.23,
-      "volume": 46965,
-      "trading_value": 561762885,
+      "volume": 46967,
+      "trading_value": 561786585,
       "mcap": 0.31,
       "shares": 26409935,
-      "categories": [
-        "기타"
-      ],
-      "rank": 704
-    },
-    {
-      "ticker": "086390",
-      "name": "유니테스트",
-      "name_en": "",
-      "market": "코스닥",
-      "sector": "기타",
-      "price": 14910,
-      "change": 7.81,
-      "volume": 202377,
-      "trading_value": 2981863600,
-      "mcap": 0.31,
-      "shares": 21134126,
-      "categories": [
-        "기타"
-      ],
-      "rank": 705
-    },
-    {
-      "ticker": "036890",
-      "name": "진성티이씨",
-      "name_en": "",
-      "market": "코스닥",
-      "sector": "기타",
-      "price": 14360,
-      "change": 2.57,
-      "volume": 107028,
-      "trading_value": 1539834610,
-      "mcap": 0.31,
-      "shares": 22032623,
       "categories": [
         "기타"
       ],
@@ -12388,8 +12388,8 @@ window.KOS_LIVE_DATA = {
       "sector": "항공·방산",
       "price": 22800,
       "change": -3.8,
-      "volume": 745659,
-      "trading_value": 17159293250,
+      "volume": 749493,
+      "trading_value": 17246816450,
       "mcap": 0.31,
       "shares": 13735953,
       "induty_code": "31322",
@@ -12440,8 +12440,8 @@ window.KOS_LIVE_DATA = {
       "sector": "유통·소비재",
       "price": 7010,
       "change": 6.05,
-      "volume": 2035068,
-      "trading_value": 14381148635,
+      "volume": 2037376,
+      "trading_value": 14397329865,
       "mcap": 0.31,
       "shares": 43824999,
       "induty_code": "467",
@@ -12458,8 +12458,8 @@ window.KOS_LIVE_DATA = {
       "sector": "기타",
       "price": 4735,
       "change": -3.17,
-      "volume": 110272,
-      "trading_value": 527209267,
+      "volume": 110476,
+      "trading_value": 528175207,
       "mcap": 0.31,
       "shares": 65370968,
       "categories": [
@@ -12475,8 +12475,8 @@ window.KOS_LIVE_DATA = {
       "sector": "기타",
       "price": 5040,
       "change": -0.79,
-      "volume": 309238,
-      "trading_value": 1553964201,
+      "volume": 309731,
+      "trading_value": 1556468241,
       "mcap": 0.31,
       "shares": 61640722,
       "categories": [
@@ -12492,8 +12492,8 @@ window.KOS_LIVE_DATA = {
       "sector": "기타",
       "price": 40750,
       "change": 3.3,
-      "volume": 110106,
-      "trading_value": 4492848325,
+      "volume": 110522,
+      "trading_value": 4509994775,
       "mcap": 0.31,
       "shares": 7603846,
       "categories": [
@@ -12543,15 +12543,32 @@ window.KOS_LIVE_DATA = {
       "sector": "반도체",
       "price": 39650,
       "change": 0.63,
-      "volume": 176079,
-      "trading_value": 7194329525,
-      "mcap": 0.3,
+      "volume": 176237,
+      "trading_value": 7200580525,
+      "mcap": 0.31,
       "shares": 7797350,
       "induty_code": "261",
       "categories": [
         "반도체"
       ],
       "rank": 716
+    },
+    {
+      "ticker": "228760",
+      "name": "지노믹트리",
+      "name_en": "",
+      "market": "코스닥",
+      "sector": "기타",
+      "price": 12280,
+      "change": -0.08,
+      "volume": 97081,
+      "trading_value": 1174682645,
+      "mcap": 0.31,
+      "shares": 24859202,
+      "categories": [
+        "기타"
+      ],
+      "rank": 717
     },
     {
       "ticker": "025770",
@@ -12561,15 +12578,15 @@ window.KOS_LIVE_DATA = {
       "sector": "통신",
       "price": 8050,
       "change": -1.23,
-      "volume": 1531166,
-      "trading_value": 13687216935,
+      "volume": 1536262,
+      "trading_value": 13728021255,
       "mcap": 0.3,
       "shares": 37444271,
       "induty_code": "61299",
       "categories": [
         "통신"
       ],
-      "rank": 717
+      "rank": 718
     },
     {
       "ticker": "450950",
@@ -12586,7 +12603,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 718
+      "rank": 719
     },
     {
       "ticker": "136480",
@@ -12596,14 +12613,14 @@ window.KOS_LIVE_DATA = {
       "sector": "기타",
       "price": 2860,
       "change": 0.0,
-      "volume": 525344,
-      "trading_value": 1500911197,
+      "volume": 526632,
+      "trading_value": 1504594382,
       "mcap": 0.3,
       "shares": 106209702,
       "categories": [
         "기타"
       ],
-      "rank": 719
+      "rank": 720
     },
     {
       "ticker": "314930",
@@ -12620,7 +12637,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 720
+      "rank": 721
     },
     {
       "ticker": "298830",
@@ -12630,14 +12647,14 @@ window.KOS_LIVE_DATA = {
       "sector": "기타",
       "price": 5600,
       "change": -3.45,
-      "volume": 455524,
-      "trading_value": 2589681955,
+      "volume": 456665,
+      "trading_value": 2596070655,
       "mcap": 0.3,
       "shares": 53458499,
       "categories": [
         "기타"
       ],
-      "rank": 721
+      "rank": 722
     },
     {
       "ticker": "001390",
@@ -12647,27 +12664,10 @@ window.KOS_LIVE_DATA = {
       "sector": "기타",
       "price": 4470,
       "change": -0.67,
-      "volume": 175868,
-      "trading_value": 791085682,
+      "volume": 176634,
+      "trading_value": 794501007,
       "mcap": 0.3,
       "shares": 67233030,
-      "categories": [
-        "기타"
-      ],
-      "rank": 722
-    },
-    {
-      "ticker": "228760",
-      "name": "지노믹트리",
-      "name_en": "",
-      "market": "코스닥",
-      "sector": "기타",
-      "price": 12280,
-      "change": -0.08,
-      "volume": 97081,
-      "trading_value": 1174682645,
-      "mcap": 0.3,
-      "shares": 24859202,
       "categories": [
         "기타"
       ],
@@ -12698,8 +12698,8 @@ window.KOS_LIVE_DATA = {
       "sector": "기타",
       "price": 21350,
       "change": 4.91,
-      "volume": 4513,
-      "trading_value": 95200275,
+      "volume": 4514,
+      "trading_value": 95221625,
       "mcap": 0.3,
       "shares": 14176380,
       "categories": [
@@ -12732,49 +12732,14 @@ window.KOS_LIVE_DATA = {
       "sector": "기타",
       "price": 8290,
       "change": 0.73,
-      "volume": 29010,
-      "trading_value": 239316270,
+      "volume": 29065,
+      "trading_value": 239772220,
       "mcap": 0.3,
       "shares": 36450000,
       "categories": [
         "기타"
       ],
       "rank": 727
-    },
-    {
-      "ticker": "112290",
-      "name": "와이씨켐",
-      "name_en": "YCCHEM CO., LTD.",
-      "market": "코스닥",
-      "sector": "화학",
-      "price": 14550,
-      "change": 5.05,
-      "volume": 743032,
-      "trading_value": 10926557600,
-      "mcap": 0.3,
-      "shares": 20221090,
-      "induty_code": "20491",
-      "categories": [
-        "화학"
-      ],
-      "rank": 728
-    },
-    {
-      "ticker": "058970",
-      "name": "엠로",
-      "name_en": "",
-      "market": "코스닥",
-      "sector": "기타",
-      "price": 23850,
-      "change": -3.64,
-      "volume": 92208,
-      "trading_value": 2157851175,
-      "mcap": 0.3,
-      "shares": 12362794,
-      "categories": [
-        "기타"
-      ],
-      "rank": 729
     },
     {
       "ticker": "034830",
@@ -12784,32 +12749,14 @@ window.KOS_LIVE_DATA = {
       "sector": "기타",
       "price": 1172,
       "change": 1.12,
-      "volume": 3658659,
-      "trading_value": 4562675755,
+      "volume": 3685405,
+      "trading_value": 4594024026,
       "mcap": 0.3,
       "shares": 252489230,
       "categories": [
         "기타"
       ],
-      "rank": 730
-    },
-    {
-      "ticker": "036170",
-      "name": "에이치엠넥스",
-      "name_en": "HMNEX Co.,Ltd.",
-      "market": "코스닥",
-      "sector": "반도체",
-      "price": 4800,
-      "change": 26.82,
-      "volume": 6661728,
-      "trading_value": 31308676861,
-      "mcap": 0.3,
-      "shares": 61365626,
-      "induty_code": "2612",
-      "categories": [
-        "반도체"
-      ],
-      "rank": 731
+      "rank": 728
     },
     {
       "ticker": "448280",
@@ -12821,30 +12768,12 @@ window.KOS_LIVE_DATA = {
       "change": -3.1,
       "volume": 20473,
       "trading_value": 204659180,
-      "mcap": 0.29,
+      "mcap": 0.3,
       "shares": 29631129,
       "categories": [
         "기타"
       ],
-      "rank": 732
-    },
-    {
-      "ticker": "078150",
-      "name": "HB테크놀러지",
-      "name_en": "HB Technology CO.,LTD.",
-      "market": "코스닥",
-      "sector": "기계·장비",
-      "price": 3170,
-      "change": 8.19,
-      "volume": 3737660,
-      "trading_value": 11850596258,
-      "mcap": 0.29,
-      "shares": 92715916,
-      "induty_code": "29272",
-      "categories": [
-        "기계·장비"
-      ],
-      "rank": 733
+      "rank": 729
     },
     {
       "ticker": "061970",
@@ -12854,14 +12783,102 @@ window.KOS_LIVE_DATA = {
       "sector": "기타",
       "price": 5090,
       "change": 2.41,
-      "volume": 504298,
-      "trading_value": 2574731135,
-      "mcap": 0.29,
+      "volume": 506507,
+      "trading_value": 2585975135,
+      "mcap": 0.3,
       "shares": 58083006,
       "categories": [
         "기타"
       ],
+      "rank": 730
+    },
+    {
+      "ticker": "003720",
+      "name": "삼영",
+      "name_en": "",
+      "market": "코스피",
+      "sector": "기타",
+      "price": 8700,
+      "change": -1.58,
+      "volume": 722499,
+      "trading_value": 6275686465,
+      "mcap": 0.3,
+      "shares": 34000000,
+      "categories": [
+        "기타"
+      ],
+      "rank": 731
+    },
+    {
+      "ticker": "112290",
+      "name": "와이씨켐",
+      "name_en": "YCCHEM CO., LTD.",
+      "market": "코스닥",
+      "sector": "화학",
+      "price": 14550,
+      "change": 5.05,
+      "volume": 745104,
+      "trading_value": 10956635350,
+      "mcap": 0.29,
+      "shares": 20221090,
+      "induty_code": "20491",
+      "categories": [
+        "화학"
+      ],
+      "rank": 732
+    },
+    {
+      "ticker": "058970",
+      "name": "엠로",
+      "name_en": "",
+      "market": "코스닥",
+      "sector": "기타",
+      "price": 23850,
+      "change": -3.64,
+      "volume": 92208,
+      "trading_value": 2157851175,
+      "mcap": 0.29,
+      "shares": 12362794,
+      "categories": [
+        "기타"
+      ],
+      "rank": 733
+    },
+    {
+      "ticker": "036170",
+      "name": "에이치엠넥스",
+      "name_en": "HMNEX Co.,Ltd.",
+      "market": "코스닥",
+      "sector": "반도체",
+      "price": 4800,
+      "change": 26.82,
+      "volume": 6691986,
+      "trading_value": 31456128771,
+      "mcap": 0.29,
+      "shares": 61365626,
+      "induty_code": "2612",
+      "categories": [
+        "반도체"
+      ],
       "rank": 734
+    },
+    {
+      "ticker": "078150",
+      "name": "HB테크놀러지",
+      "name_en": "HB Technology CO.,LTD.",
+      "market": "코스닥",
+      "sector": "기계·장비",
+      "price": 3170,
+      "change": 8.19,
+      "volume": 3744004,
+      "trading_value": 11870727843,
+      "mcap": 0.29,
+      "shares": 92715916,
+      "induty_code": "29272",
+      "categories": [
+        "기계·장비"
+      ],
+      "rank": 735
     },
     {
       "ticker": "272450",
@@ -12871,14 +12888,14 @@ window.KOS_LIVE_DATA = {
       "sector": "기타",
       "price": 5630,
       "change": -1.23,
-      "volume": 137349,
-      "trading_value": 775678750,
+      "volume": 137919,
+      "trading_value": 778887850,
       "mcap": 0.29,
       "shares": 52200000,
       "categories": [
         "기타"
       ],
-      "rank": 735
+      "rank": 736
     },
     {
       "ticker": "036800",
@@ -12895,41 +12912,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 736
-    },
-    {
-      "ticker": "462350",
-      "name": "이노스페이스",
-      "name_en": "",
-      "market": "코스닥",
-      "sector": "기타",
-      "price": 13600,
-      "change": 0.22,
-      "volume": 292377,
-      "trading_value": 4012378055,
-      "mcap": 0.29,
-      "shares": 20868662,
-      "categories": [
-        "기타"
-      ],
       "rank": 737
-    },
-    {
-      "ticker": "003720",
-      "name": "삼영",
-      "name_en": "",
-      "market": "코스피",
-      "sector": "기타",
-      "price": 8700,
-      "change": -1.58,
-      "volume": 717011,
-      "trading_value": 6228103025,
-      "mcap": 0.29,
-      "shares": 34000000,
-      "categories": [
-        "기타"
-      ],
-      "rank": 738
     },
     {
       "ticker": "002310",
@@ -12946,7 +12929,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 739
+      "rank": 738
     },
     {
       "ticker": "084010",
@@ -12956,14 +12939,14 @@ window.KOS_LIVE_DATA = {
       "sector": "기타",
       "price": 8420,
       "change": -0.94,
-      "volume": 27635,
-      "trading_value": 235193210,
+      "volume": 27835,
+      "trading_value": 236877210,
       "mcap": 0.29,
       "shares": 34371596,
       "categories": [
         "기타"
       ],
-      "rank": 740
+      "rank": 739
     },
     {
       "ticker": "007690",
@@ -12973,14 +12956,14 @@ window.KOS_LIVE_DATA = {
       "sector": "기타",
       "price": 31200,
       "change": -1.73,
-      "volume": 15271,
-      "trading_value": 478864100,
+      "volume": 15272,
+      "trading_value": 478895300,
       "mcap": 0.29,
       "shares": 9260832,
       "categories": [
         "기타"
       ],
-      "rank": 741
+      "rank": 740
     },
     {
       "ticker": "0082N0",
@@ -12990,14 +12973,14 @@ window.KOS_LIVE_DATA = {
       "sector": "기타",
       "price": 22300,
       "change": 1.59,
-      "volume": 65441,
-      "trading_value": 1450181450,
+      "volume": 65479,
+      "trading_value": 1451028850,
       "mcap": 0.29,
       "shares": 13216780,
       "categories": [
         "기타"
       ],
-      "rank": 742
+      "rank": 741
     },
     {
       "ticker": "024720",
@@ -13014,7 +12997,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 743
+      "rank": 742
     },
     {
       "ticker": "108670",
@@ -13031,7 +13014,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 744
+      "rank": 743
     },
     {
       "ticker": "001750",
@@ -13048,7 +13031,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 745
+      "rank": 744
     },
     {
       "ticker": "033270",
@@ -13065,7 +13048,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 746
+      "rank": 745
     },
     {
       "ticker": "000430",
@@ -13075,14 +13058,14 @@ window.KOS_LIVE_DATA = {
       "sector": "기타",
       "price": 4670,
       "change": -3.61,
-      "volume": 366273,
-      "trading_value": 1713330712,
+      "volume": 367086,
+      "trading_value": 1717088422,
       "mcap": 0.29,
       "shares": 62000000,
       "categories": [
         "기타"
       ],
-      "rank": 747
+      "rank": 746
     },
     {
       "ticker": "051500",
@@ -13099,6 +13082,23 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
+      "rank": 747
+    },
+    {
+      "ticker": "462350",
+      "name": "이노스페이스",
+      "name_en": "",
+      "market": "코스닥",
+      "sector": "기타",
+      "price": 13600,
+      "change": 0.22,
+      "volume": 292597,
+      "trading_value": 4015370045,
+      "mcap": 0.28,
+      "shares": 20868662,
+      "categories": [
+        "기타"
+      ],
       "rank": 748
     },
     {
@@ -13109,8 +13109,8 @@ window.KOS_LIVE_DATA = {
       "sector": "전기장비",
       "price": 7570,
       "change": -4.18,
-      "volume": 972646,
-      "trading_value": 7554450510,
+      "volume": 975178,
+      "trading_value": 7573610640,
       "mcap": 0.28,
       "shares": 36885676,
       "induty_code": "284",
@@ -13127,8 +13127,8 @@ window.KOS_LIVE_DATA = {
       "sector": "기타",
       "price": 3440,
       "change": -3.1,
-      "volume": 514893,
-      "trading_value": 1824303620,
+      "volume": 515454,
+      "trading_value": 1826261230,
       "mcap": 0.28,
       "shares": 81800000,
       "categories": [
@@ -13144,8 +13144,8 @@ window.KOS_LIVE_DATA = {
       "sector": "기타",
       "price": 4405,
       "change": -2.22,
-      "volume": 284013,
-      "trading_value": 1265397596,
+      "volume": 284914,
+      "trading_value": 1269379396,
       "mcap": 0.28,
       "shares": 64516185,
       "categories": [
@@ -13179,8 +13179,8 @@ window.KOS_LIVE_DATA = {
       "sector": "기타",
       "price": 2820,
       "change": -4.57,
-      "volume": 107451,
-      "trading_value": 315350235,
+      "volume": 108095,
+      "trading_value": 317153475,
       "mcap": 0.28,
       "shares": 98429432,
       "categories": [
@@ -13264,48 +13264,14 @@ window.KOS_LIVE_DATA = {
       "sector": "기타",
       "price": 15000,
       "change": -5.54,
-      "volume": 88847,
-      "trading_value": 1351773735,
+      "volume": 96913,
+      "trading_value": 1472763745,
       "mcap": 0.28,
       "shares": 18598223,
       "categories": [
         "기타"
       ],
       "rank": 758
-    },
-    {
-      "ticker": "026890",
-      "name": "스틱인베스트먼트",
-      "name_en": "",
-      "market": "코스피",
-      "sector": "기타",
-      "price": 7070,
-      "change": -6.11,
-      "volume": 115953,
-      "trading_value": 838642980,
-      "mcap": 0.28,
-      "shares": 38770837,
-      "categories": [
-        "기타"
-      ],
-      "rank": 759
-    },
-    {
-      "ticker": "096760",
-      "name": "JW홀딩스",
-      "name_en": "",
-      "market": "코스피",
-      "sector": "기타",
-      "price": 3715,
-      "change": 1.23,
-      "volume": 106137,
-      "trading_value": 397362454,
-      "mcap": 0.28,
-      "shares": 73924942,
-      "categories": [
-        "기타"
-      ],
-      "rank": 760
     },
     {
       "ticker": "900140",
@@ -13315,14 +13281,14 @@ window.KOS_LIVE_DATA = {
       "sector": "기타",
       "price": 1446,
       "change": 2.7,
-      "volume": 633546,
-      "trading_value": 902198682,
+      "volume": 633796,
+      "trading_value": 902560182,
       "mcap": 0.28,
       "shares": 193240432,
       "categories": [
         "기타"
       ],
-      "rank": 761
+      "rank": 759
     },
     {
       "ticker": "017390",
@@ -13339,7 +13305,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 762
+      "rank": 760
     },
     {
       "ticker": "084850",
@@ -13356,7 +13322,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 763
+      "rank": 761
     },
     {
       "ticker": "001230",
@@ -13366,14 +13332,65 @@ window.KOS_LIVE_DATA = {
       "sector": "기타",
       "price": 1780,
       "change": 0.96,
-      "volume": 1482387,
-      "trading_value": 2540520828,
+      "volume": 1486745,
+      "trading_value": 2548278068,
       "mcap": 0.28,
       "shares": 155507715,
       "categories": [
         "기타"
       ],
+      "rank": 762
+    },
+    {
+      "ticker": "352480",
+      "name": "씨앤씨인터내셔널",
+      "name_en": "",
+      "market": "코스닥",
+      "sector": "기타",
+      "price": 20200,
+      "change": 4.72,
+      "volume": 43838,
+      "trading_value": 870767210,
+      "mcap": 0.28,
+      "shares": 13629901,
+      "categories": [
+        "기타"
+      ],
+      "rank": 763
+    },
+    {
+      "ticker": "026890",
+      "name": "스틱인베스트먼트",
+      "name_en": "",
+      "market": "코스피",
+      "sector": "기타",
+      "price": 7070,
+      "change": -6.11,
+      "volume": 115953,
+      "trading_value": 838642980,
+      "mcap": 0.27,
+      "shares": 38770837,
+      "categories": [
+        "기타"
+      ],
       "rank": 764
+    },
+    {
+      "ticker": "096760",
+      "name": "JW홀딩스",
+      "name_en": "",
+      "market": "코스피",
+      "sector": "기타",
+      "price": 3715,
+      "change": 1.23,
+      "volume": 106237,
+      "trading_value": 397760454,
+      "mcap": 0.27,
+      "shares": 73924942,
+      "categories": [
+        "기타"
+      ],
+      "rank": 765
     },
     {
       "ticker": "357880",
@@ -13383,15 +13400,15 @@ window.KOS_LIVE_DATA = {
       "sector": "게임",
       "price": 5210,
       "change": -10.02,
-      "volume": 4189815,
-      "trading_value": 23638943835,
+      "volume": 4197411,
+      "trading_value": 23678368445,
       "mcap": 0.27,
       "shares": 52680696,
       "induty_code": "58222",
       "categories": [
         "게임"
       ],
-      "rank": 765
+      "rank": 766
     },
     {
       "ticker": "459510",
@@ -13408,7 +13425,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 766
+      "rank": 767
     },
     {
       "ticker": "123890",
@@ -13418,15 +13435,15 @@ window.KOS_LIVE_DATA = {
       "sector": "금융",
       "price": 2210,
       "change": 0.68,
-      "volume": 9833096,
-      "trading_value": 24990982470,
+      "volume": 9891185,
+      "trading_value": 25118326745,
       "mcap": 0.27,
       "shares": 122373926,
       "induty_code": "642",
       "categories": [
         "금융"
       ],
-      "rank": 767
+      "rank": 768
     },
     {
       "ticker": "053030",
@@ -13436,14 +13453,14 @@ window.KOS_LIVE_DATA = {
       "sector": "기타",
       "price": 8320,
       "change": -2.12,
-      "volume": 171432,
-      "trading_value": 1436286565,
+      "volume": 171433,
+      "trading_value": 1436294885,
       "mcap": 0.27,
       "shares": 32684188,
       "categories": [
         "기타"
       ],
-      "rank": 768
+      "rank": 769
     },
     {
       "ticker": "003920",
@@ -13453,14 +13470,14 @@ window.KOS_LIVE_DATA = {
       "sector": "기타",
       "price": 45750,
       "change": 0.99,
-      "volume": 14384,
-      "trading_value": 657435250,
+      "volume": 14394,
+      "trading_value": 657892750,
       "mcap": 0.27,
       "shares": 6000000,
       "categories": [
         "기타"
       ],
-      "rank": 769
+      "rank": 770
     },
     {
       "ticker": "144510",
@@ -13474,23 +13491,6 @@ window.KOS_LIVE_DATA = {
       "trading_value": 693339790,
       "mcap": 0.27,
       "shares": 15800344,
-      "categories": [
-        "기타"
-      ],
-      "rank": 770
-    },
-    {
-      "ticker": "352480",
-      "name": "씨앤씨인터내셔널",
-      "name_en": "",
-      "market": "코스닥",
-      "sector": "기타",
-      "price": 20200,
-      "change": 4.72,
-      "volume": 43829,
-      "trading_value": 870585410,
-      "mcap": 0.27,
-      "shares": 13629901,
       "categories": [
         "기타"
       ],
@@ -13521,8 +13521,8 @@ window.KOS_LIVE_DATA = {
       "sector": "기타",
       "price": 6550,
       "change": -0.15,
-      "volume": 265765,
-      "trading_value": 1762787305,
+      "volume": 265897,
+      "trading_value": 1763653105,
       "mcap": 0.27,
       "shares": 41400000,
       "categories": [
@@ -13538,8 +13538,8 @@ window.KOS_LIVE_DATA = {
       "sector": "기타",
       "price": 3530,
       "change": 1.58,
-      "volume": 222795,
-      "trading_value": 780402785,
+      "volume": 222801,
+      "trading_value": 780423965,
       "mcap": 0.27,
       "shares": 77310863,
       "categories": [
@@ -13555,8 +13555,8 @@ window.KOS_LIVE_DATA = {
       "sector": "기타",
       "price": 17300,
       "change": 1.94,
-      "volume": 88394,
-      "trading_value": 1541782700,
+      "volume": 89005,
+      "trading_value": 1552303100,
       "mcap": 0.27,
       "shares": 15637042,
       "categories": [
@@ -13606,8 +13606,8 @@ window.KOS_LIVE_DATA = {
       "sector": "기타",
       "price": 6000,
       "change": -1.96,
-      "volume": 642241,
-      "trading_value": 3879597485,
+      "volume": 644700,
+      "trading_value": 3894385155,
       "mcap": 0.27,
       "shares": 44973248,
       "categories": [
@@ -13691,8 +13691,8 @@ window.KOS_LIVE_DATA = {
       "sector": "기타",
       "price": 11220,
       "change": -2.35,
-      "volume": 139894,
-      "trading_value": 1585142465,
+      "volume": 140063,
+      "trading_value": 1587041045,
       "mcap": 0.27,
       "shares": 23677442,
       "categories": [
@@ -13725,8 +13725,8 @@ window.KOS_LIVE_DATA = {
       "sector": "기타",
       "price": 4750,
       "change": 1.39,
-      "volume": 346154,
-      "trading_value": 1658979105,
+      "volume": 346916,
+      "trading_value": 1662599445,
       "mcap": 0.27,
       "shares": 56188075,
       "categories": [
@@ -13759,8 +13759,8 @@ window.KOS_LIVE_DATA = {
       "sector": "기타",
       "price": 5560,
       "change": -2.28,
-      "volume": 125793,
-      "trading_value": 697980270,
+      "volume": 125794,
+      "trading_value": 697985940,
       "mcap": 0.27,
       "shares": 48200000,
       "categories": [
@@ -13793,8 +13793,8 @@ window.KOS_LIVE_DATA = {
       "sector": "기타",
       "price": 23400,
       "change": 5.64,
-      "volume": 118041,
-      "trading_value": 2684990925,
+      "volume": 118792,
+      "trading_value": 2702564325,
       "mcap": 0.27,
       "shares": 11533591,
       "categories": [
@@ -13810,8 +13810,8 @@ window.KOS_LIVE_DATA = {
       "sector": "기타",
       "price": 13500,
       "change": 2.27,
-      "volume": 66100,
-      "trading_value": 881360105,
+      "volume": 66151,
+      "trading_value": 882037505,
       "mcap": 0.27,
       "shares": 20000000,
       "categories": [
@@ -13844,8 +13844,8 @@ window.KOS_LIVE_DATA = {
       "sector": "기타",
       "price": 11000,
       "change": 3.09,
-      "volume": 128933,
-      "trading_value": 1390270685,
+      "volume": 130229,
+      "trading_value": 1404547385,
       "mcap": 0.27,
       "shares": 24791195,
       "categories": [
@@ -13861,8 +13861,8 @@ window.KOS_LIVE_DATA = {
       "sector": "게임",
       "price": 7790,
       "change": 9.72,
-      "volume": 7098697,
-      "trading_value": 54076066195,
+      "volume": 7120948,
+      "trading_value": 54249266815,
       "mcap": 0.27,
       "shares": 34606264,
       "induty_code": "582",
@@ -13879,8 +13879,8 @@ window.KOS_LIVE_DATA = {
       "sector": "기타",
       "price": 5150,
       "change": 4.15,
-      "volume": 625279,
-      "trading_value": 3205029775,
+      "volume": 626393,
+      "trading_value": 3210766645,
       "mcap": 0.27,
       "shares": 52827754,
       "categories": [
@@ -13896,8 +13896,8 @@ window.KOS_LIVE_DATA = {
       "sector": "기타",
       "price": 27200,
       "change": 6.04,
-      "volume": 42664,
-      "trading_value": 1170406150,
+      "volume": 42680,
+      "trading_value": 1170841350,
       "mcap": 0.27,
       "shares": 10006100,
       "categories": [
@@ -13913,8 +13913,8 @@ window.KOS_LIVE_DATA = {
       "sector": "기타",
       "price": 23700,
       "change": 5.57,
-      "volume": 189516,
-      "trading_value": 4387043475,
+      "volume": 189852,
+      "trading_value": 4394999775,
       "mcap": 0.26,
       "shares": 11173177,
       "categories": [
@@ -13930,8 +13930,8 @@ window.KOS_LIVE_DATA = {
       "sector": "기계·장비",
       "price": 27500,
       "change": 14.82,
-      "volume": 399438,
-      "trading_value": 11136790775,
+      "volume": 399913,
+      "trading_value": 11149854375,
       "mcap": 0.26,
       "shares": 9366542,
       "induty_code": "292",
@@ -13948,8 +13948,8 @@ window.KOS_LIVE_DATA = {
       "sector": "기타",
       "price": 38000,
       "change": 5.26,
-      "volume": 54299,
-      "trading_value": 2076071025,
+      "volume": 54394,
+      "trading_value": 2079697875,
       "mcap": 0.26,
       "shares": 6905082,
       "categories": [
@@ -13965,8 +13965,8 @@ window.KOS_LIVE_DATA = {
       "sector": "기타",
       "price": 10040,
       "change": -0.79,
-      "volume": 75344,
-      "trading_value": 764144730,
+      "volume": 75345,
+      "trading_value": 764154770,
       "mcap": 0.26,
       "shares": 26123038,
       "categories": [
@@ -13982,8 +13982,8 @@ window.KOS_LIVE_DATA = {
       "sector": "기타",
       "price": 5870,
       "change": 5.77,
-      "volume": 554890,
-      "trading_value": 3200848775,
+      "volume": 555122,
+      "trading_value": 3202216375,
       "mcap": 0.26,
       "shares": 44707885,
       "categories": [
@@ -13999,8 +13999,8 @@ window.KOS_LIVE_DATA = {
       "sector": "기타",
       "price": 19490,
       "change": 0.78,
-      "volume": 129241,
-      "trading_value": 2521990680,
+      "volume": 129622,
+      "trading_value": 2529446460,
       "mcap": 0.26,
       "shares": 13328219,
       "categories": [
@@ -14016,8 +14016,8 @@ window.KOS_LIVE_DATA = {
       "sector": "전기장비",
       "price": 7310,
       "change": 1.81,
-      "volume": 978400,
-      "trading_value": 7191839575,
+      "volume": 983758,
+      "trading_value": 7231543425,
       "mcap": 0.26,
       "shares": 35038550,
       "induty_code": "283",
@@ -14034,8 +14034,8 @@ window.KOS_LIVE_DATA = {
       "sector": "기타",
       "price": 7570,
       "change": -1.05,
-      "volume": 390484,
-      "trading_value": 2981216670,
+      "volume": 391608,
+      "trading_value": 2989704950,
       "mcap": 0.26,
       "shares": 33855433,
       "categories": [
@@ -14051,8 +14051,8 @@ window.KOS_LIVE_DATA = {
       "sector": "기타",
       "price": 19410,
       "change": -0.72,
-      "volume": 90477,
-      "trading_value": 1762679680,
+      "volume": 90483,
+      "trading_value": 1762796140,
       "mcap": 0.26,
       "shares": 13320000,
       "categories": [
@@ -14146,23 +14146,6 @@ window.KOS_LIVE_DATA = {
       "rank": 809
     },
     {
-      "ticker": "267980",
-      "name": "매일유업",
-      "name_en": "",
-      "market": "코스닥",
-      "sector": "기타",
-      "price": 33250,
-      "change": -2.21,
-      "volume": 9910,
-      "trading_value": 329278700,
-      "mcap": 0.26,
-      "shares": 7663638,
-      "categories": [
-        "기타"
-      ],
-      "rank": 810
-    },
-    {
       "ticker": "002320",
       "name": "한진",
       "name_en": "",
@@ -14177,7 +14160,41 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
+      "rank": 810
+    },
+    {
+      "ticker": "004360",
+      "name": "세방",
+      "name_en": "",
+      "market": "코스피",
+      "sector": "기타",
+      "price": 13410,
+      "change": 0.83,
+      "volume": 34899,
+      "trading_value": 465726120,
+      "mcap": 0.26,
+      "shares": 19115603,
+      "categories": [
+        "기타"
+      ],
       "rank": 811
+    },
+    {
+      "ticker": "267980",
+      "name": "매일유업",
+      "name_en": "",
+      "market": "코스닥",
+      "sector": "기타",
+      "price": 33250,
+      "change": -2.21,
+      "volume": 9910,
+      "trading_value": 329278700,
+      "mcap": 0.25,
+      "shares": 7663638,
+      "categories": [
+        "기타"
+      ],
+      "rank": 812
     },
     {
       "ticker": "382900",
@@ -14194,7 +14211,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 812
+      "rank": 813
     },
     {
       "ticker": "093520",
@@ -14211,7 +14228,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 813
+      "rank": 814
     },
     {
       "ticker": "243840",
@@ -14221,14 +14238,14 @@ window.KOS_LIVE_DATA = {
       "sector": "기타",
       "price": 6600,
       "change": -2.65,
-      "volume": 315847,
-      "trading_value": 2114246230,
+      "volume": 316525,
+      "trading_value": 2118721710,
       "mcap": 0.25,
       "shares": 38558235,
       "categories": [
         "기타"
       ],
-      "rank": 814
+      "rank": 815
     },
     {
       "ticker": "084990",
@@ -14238,14 +14255,14 @@ window.KOS_LIVE_DATA = {
       "sector": "기타",
       "price": 5350,
       "change": 3.08,
-      "volume": 569321,
-      "trading_value": 3179463310,
+      "volume": 569755,
+      "trading_value": 3181824150,
       "mcap": 0.25,
       "shares": 46092797,
       "categories": [
         "기타"
       ],
-      "rank": 815
+      "rank": 816
     },
     {
       "ticker": "251370",
@@ -14255,14 +14272,14 @@ window.KOS_LIVE_DATA = {
       "sector": "기타",
       "price": 13880,
       "change": -0.22,
-      "volume": 148084,
-      "trading_value": 2091067255,
+      "volume": 148596,
+      "trading_value": 2098171455,
       "mcap": 0.25,
       "shares": 18013213,
       "categories": [
         "기타"
       ],
-      "rank": 816
+      "rank": 817
     },
     {
       "ticker": "272110",
@@ -14272,14 +14289,14 @@ window.KOS_LIVE_DATA = {
       "sector": "기타",
       "price": 30700,
       "change": 3.19,
-      "volume": 150310,
-      "trading_value": 4786027325,
+      "volume": 150826,
+      "trading_value": 4801868525,
       "mcap": 0.25,
       "shares": 8025395,
       "categories": [
         "기타"
       ],
-      "rank": 817
+      "rank": 818
     },
     {
       "ticker": "128820",
@@ -14289,30 +14306,13 @@ window.KOS_LIVE_DATA = {
       "sector": "유통·소비재",
       "price": 5510,
       "change": 2.42,
-      "volume": 1420306,
-      "trading_value": 8359743370,
+      "volume": 1423892,
+      "trading_value": 8379563500,
       "mcap": 0.25,
       "shares": 45235478,
       "induty_code": "477",
       "categories": [
         "유통·소비재"
-      ],
-      "rank": 818
-    },
-    {
-      "ticker": "004360",
-      "name": "세방",
-      "name_en": "",
-      "market": "코스피",
-      "sector": "기타",
-      "price": 13410,
-      "change": 0.83,
-      "volume": 34899,
-      "trading_value": 465726120,
-      "mcap": 0.25,
-      "shares": 19115603,
-      "categories": [
-        "기타"
       ],
       "rank": 819
     },
@@ -14324,8 +14324,8 @@ window.KOS_LIVE_DATA = {
       "sector": "기타",
       "price": 21700,
       "change": 2.36,
-      "volume": 84674,
-      "trading_value": 1837772900,
+      "volume": 85467,
+      "trading_value": 1854981300,
       "mcap": 0.25,
       "shares": 11702541,
       "categories": [
@@ -14392,8 +14392,8 @@ window.KOS_LIVE_DATA = {
       "sector": "기타",
       "price": 2210,
       "change": 1.38,
-      "volume": 442849,
-      "trading_value": 990316333,
+      "volume": 443371,
+      "trading_value": 991461928,
       "mcap": 0.25,
       "shares": 111251760,
       "categories": [
@@ -14409,8 +14409,8 @@ window.KOS_LIVE_DATA = {
       "sector": "기타",
       "price": 3000,
       "change": -2.12,
-      "volume": 535103,
-      "trading_value": 1621240726,
+      "volume": 541847,
+      "trading_value": 1641444226,
       "mcap": 0.25,
       "shares": 82533764,
       "categories": [
@@ -14426,8 +14426,8 @@ window.KOS_LIVE_DATA = {
       "sector": "기타",
       "price": 5180,
       "change": -1.52,
-      "volume": 111743,
-      "trading_value": 582841630,
+      "volume": 112102,
+      "trading_value": 584691650,
       "mcap": 0.25,
       "shares": 47603002,
       "categories": [
@@ -14443,8 +14443,8 @@ window.KOS_LIVE_DATA = {
       "sector": "기타",
       "price": 2695,
       "change": 1.32,
-      "volume": 470289,
-      "trading_value": 1234519597,
+      "volume": 472300,
+      "trading_value": 1239943787,
       "mcap": 0.25,
       "shares": 94054149,
       "categories": [
@@ -14470,23 +14470,6 @@ window.KOS_LIVE_DATA = {
       "rank": 828
     },
     {
-      "ticker": "000680",
-      "name": "LS네트웍스",
-      "name_en": "",
-      "market": "코스피",
-      "sector": "기타",
-      "price": 3105,
-      "change": -0.96,
-      "volume": 239429,
-      "trading_value": 743953868,
-      "mcap": 0.25,
-      "shares": 78803016,
-      "categories": [
-        "기타"
-      ],
-      "rank": 829
-    },
-    {
       "ticker": "122900",
       "name": "아이마켓코리아",
       "name_en": "",
@@ -14494,14 +14477,14 @@ window.KOS_LIVE_DATA = {
       "sector": "기타",
       "price": 7380,
       "change": -0.67,
-      "volume": 88000,
-      "trading_value": 646275475,
+      "volume": 88010,
+      "trading_value": 646349275,
       "mcap": 0.25,
       "shares": 33428840,
       "categories": [
         "기타"
       ],
-      "rank": 830
+      "rank": 829
     },
     {
       "ticker": "0030R0",
@@ -14518,7 +14501,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 831
+      "rank": 830
     },
     {
       "ticker": "003120",
@@ -14535,41 +14518,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 832
-    },
-    {
-      "ticker": "474650",
-      "name": "링크솔루션",
-      "name_en": "",
-      "market": "코스닥",
-      "sector": "기타",
-      "price": 42500,
-      "change": -2.75,
-      "volume": 57413,
-      "trading_value": 2434839275,
-      "mcap": 0.25,
-      "shares": 5750107,
-      "categories": [
-        "기타"
-      ],
-      "rank": 833
-    },
-    {
-      "ticker": "394420",
-      "name": "리센스메디컬",
-      "name_en": "",
-      "market": "코스닥",
-      "sector": "기타",
-      "price": 22250,
-      "change": 5.7,
-      "volume": 204951,
-      "trading_value": 4451703975,
-      "mcap": 0.25,
-      "shares": 10934938,
-      "categories": [
-        "기타"
-      ],
-      "rank": 834
+      "rank": 831
     },
     {
       "ticker": "005430",
@@ -14579,31 +14528,14 @@ window.KOS_LIVE_DATA = {
       "sector": "기타",
       "price": 78200,
       "change": -2.25,
-      "volume": 21677,
-      "trading_value": 1683823700,
-      "mcap": 0.24,
+      "volume": 21678,
+      "trading_value": 1683901900,
+      "mcap": 0.25,
       "shares": 3166355,
       "categories": [
         "기타"
       ],
-      "rank": 835
-    },
-    {
-      "ticker": "018000",
-      "name": "유니슨",
-      "name_en": "",
-      "market": "코스닥",
-      "sector": "기타",
-      "price": 928,
-      "change": 0.22,
-      "volume": 1046820,
-      "trading_value": 987985428,
-      "mcap": 0.24,
-      "shares": 259498284,
-      "categories": [
-        "기타"
-      ],
-      "rank": 836
+      "rank": 832
     },
     {
       "ticker": "017890",
@@ -14613,10 +14545,78 @@ window.KOS_LIVE_DATA = {
       "sector": "기타",
       "price": 11560,
       "change": 2.21,
-      "volume": 54088,
-      "trading_value": 625189840,
-      "mcap": 0.24,
+      "volume": 54090,
+      "trading_value": 625212960,
+      "mcap": 0.25,
       "shares": 21273506,
+      "categories": [
+        "기타"
+      ],
+      "rank": 833
+    },
+    {
+      "ticker": "000680",
+      "name": "LS네트웍스",
+      "name_en": "",
+      "market": "코스피",
+      "sector": "기타",
+      "price": 3105,
+      "change": -0.96,
+      "volume": 240305,
+      "trading_value": 746631143,
+      "mcap": 0.24,
+      "shares": 78803016,
+      "categories": [
+        "기타"
+      ],
+      "rank": 834
+    },
+    {
+      "ticker": "474650",
+      "name": "링크솔루션",
+      "name_en": "",
+      "market": "코스닥",
+      "sector": "기타",
+      "price": 42500,
+      "change": -2.75,
+      "volume": 57449,
+      "trading_value": 2436358175,
+      "mcap": 0.24,
+      "shares": 5750107,
+      "categories": [
+        "기타"
+      ],
+      "rank": 835
+    },
+    {
+      "ticker": "394420",
+      "name": "리센스메디컬",
+      "name_en": "",
+      "market": "코스닥",
+      "sector": "기타",
+      "price": 22250,
+      "change": 5.7,
+      "volume": 205149,
+      "trading_value": 4456108075,
+      "mcap": 0.24,
+      "shares": 10934938,
+      "categories": [
+        "기타"
+      ],
+      "rank": 836
+    },
+    {
+      "ticker": "018000",
+      "name": "유니슨",
+      "name_en": "",
+      "market": "코스닥",
+      "sector": "기타",
+      "price": 928,
+      "change": 0.22,
+      "volume": 1053442,
+      "trading_value": 994115615,
+      "mcap": 0.24,
+      "shares": 259498284,
       "categories": [
         "기타"
       ],
@@ -14630,8 +14630,8 @@ window.KOS_LIVE_DATA = {
       "sector": "기타",
       "price": 27300,
       "change": 3.21,
-      "volume": 31650,
-      "trading_value": 865006600,
+      "volume": 36281,
+      "trading_value": 991423900,
       "mcap": 0.24,
       "shares": 8971411,
       "categories": [
@@ -14647,8 +14647,8 @@ window.KOS_LIVE_DATA = {
       "sector": "기타",
       "price": 3315,
       "change": -2.93,
-      "volume": 969412,
-      "trading_value": 3260288910,
+      "volume": 971047,
+      "trading_value": 3265715380,
       "mcap": 0.24,
       "shares": 73233457,
       "categories": [
@@ -14664,8 +14664,8 @@ window.KOS_LIVE_DATA = {
       "sector": "기타",
       "price": 15120,
       "change": 0.27,
-      "volume": 165867,
-      "trading_value": 2512693645,
+      "volume": 166311,
+      "trading_value": 2519406365,
       "mcap": 0.24,
       "shares": 16199074,
       "categories": [
@@ -14681,8 +14681,8 @@ window.KOS_LIVE_DATA = {
       "sector": "기타",
       "price": 3550,
       "change": -1.66,
-      "volume": 666225,
-      "trading_value": 2329362527,
+      "volume": 669003,
+      "trading_value": 2339171182,
       "mcap": 0.24,
       "shares": 68243394,
       "categories": [
@@ -14698,8 +14698,8 @@ window.KOS_LIVE_DATA = {
       "sector": "기타",
       "price": 29200,
       "change": 4.1,
-      "volume": 103029,
-      "trading_value": 3038744575,
+      "volume": 103143,
+      "trading_value": 3042073375,
       "mcap": 0.24,
       "shares": 8312766,
       "categories": [
@@ -14715,8 +14715,8 @@ window.KOS_LIVE_DATA = {
       "sector": "기타",
       "price": 10080,
       "change": -1.95,
-      "volume": 129535,
-      "trading_value": 1320845050,
+      "volume": 130915,
+      "trading_value": 1334708110,
       "mcap": 0.24,
       "shares": 24000000,
       "categories": [
@@ -14783,8 +14783,8 @@ window.KOS_LIVE_DATA = {
       "sector": "기타",
       "price": 3760,
       "change": -0.79,
-      "volume": 394157,
-      "trading_value": 1496695646,
+      "volume": 395088,
+      "trading_value": 1500198236,
       "mcap": 0.24,
       "shares": 63663110,
       "categories": [
@@ -14800,8 +14800,8 @@ window.KOS_LIVE_DATA = {
       "sector": "기타",
       "price": 9420,
       "change": -1.98,
-      "volume": 237970,
-      "trading_value": 2263308065,
+      "volume": 239178,
+      "trading_value": 2274685615,
       "mcap": 0.24,
       "shares": 25291210,
       "categories": [
@@ -14817,8 +14817,8 @@ window.KOS_LIVE_DATA = {
       "sector": "기타",
       "price": 10670,
       "change": -3.35,
-      "volume": 344638,
-      "trading_value": 3746870095,
+      "volume": 346056,
+      "trading_value": 3761957585,
       "mcap": 0.24,
       "shares": 22220000,
       "categories": [
@@ -14851,8 +14851,8 @@ window.KOS_LIVE_DATA = {
       "sector": "기타",
       "price": 3220,
       "change": 3.21,
-      "volume": 398268,
-      "trading_value": 1300768369,
+      "volume": 398284,
+      "trading_value": 1300819889,
       "mcap": 0.24,
       "shares": 75506434,
       "categories": [
@@ -14902,8 +14902,8 @@ window.KOS_LIVE_DATA = {
       "sector": "기타",
       "price": 6190,
       "change": -1.28,
-      "volume": 185776,
-      "trading_value": 1134987990,
+      "volume": 187044,
+      "trading_value": 1142835790,
       "mcap": 0.24,
       "shares": 39229838,
       "categories": [
@@ -14987,31 +14987,14 @@ window.KOS_LIVE_DATA = {
       "sector": "기타",
       "price": 573,
       "change": -0.69,
-      "volume": 1109410,
-      "trading_value": 631014968,
+      "volume": 1110602,
+      "trading_value": 631697984,
       "mcap": 0.24,
       "shares": 415157579,
       "categories": [
         "기타"
       ],
       "rank": 859
-    },
-    {
-      "ticker": "334890",
-      "name": "이지스밸류플러스리츠",
-      "name_en": "",
-      "market": "코스피",
-      "sector": "기타",
-      "price": 3370,
-      "change": -6.78,
-      "volume": 655648,
-      "trading_value": 2216595262,
-      "mcap": 0.24,
-      "shares": 69448683,
-      "categories": [
-        "기타"
-      ],
-      "rank": 860
     },
     {
       "ticker": "290690",
@@ -15021,15 +15004,49 @@ window.KOS_LIVE_DATA = {
       "sector": "전기장비",
       "price": 4860,
       "change": 6.81,
-      "volume": 1787416,
-      "trading_value": 8601919683,
+      "volume": 1794901,
+      "trading_value": 8638293638,
       "mcap": 0.24,
       "shares": 50186861,
       "induty_code": "28422",
       "categories": [
         "전기장비"
       ],
+      "rank": 860
+    },
+    {
+      "ticker": "115450",
+      "name": "HLB테라퓨틱스",
+      "name_en": "",
+      "market": "코스닥",
+      "sector": "기타",
+      "price": 2665,
+      "change": 5.75,
+      "volume": 581479,
+      "trading_value": 1526528927,
+      "mcap": 0.24,
+      "shares": 88580109,
+      "categories": [
+        "기타"
+      ],
       "rank": 861
+    },
+    {
+      "ticker": "334890",
+      "name": "이지스밸류플러스리츠",
+      "name_en": "",
+      "market": "코스피",
+      "sector": "기타",
+      "price": 3370,
+      "change": -6.78,
+      "volume": 655861,
+      "trading_value": 2217313092,
+      "mcap": 0.23,
+      "shares": 69448683,
+      "categories": [
+        "기타"
+      ],
+      "rank": 862
     },
     {
       "ticker": "294570",
@@ -15041,12 +15058,12 @@ window.KOS_LIVE_DATA = {
       "change": -0.64,
       "volume": 19123,
       "trading_value": 441347100,
-      "mcap": 0.24,
+      "mcap": 0.23,
       "shares": 10091732,
       "categories": [
         "기타"
       ],
-      "rank": 862
+      "rank": 863
     },
     {
       "ticker": "472850",
@@ -15058,25 +15075,8 @@ window.KOS_LIVE_DATA = {
       "change": -3.32,
       "volume": 107762,
       "trading_value": 441171401,
-      "mcap": 0.24,
-      "shares": 57571652,
-      "categories": [
-        "기타"
-      ],
-      "rank": 863
-    },
-    {
-      "ticker": "115450",
-      "name": "HLB테라퓨틱스",
-      "name_en": "",
-      "market": "코스닥",
-      "sector": "기타",
-      "price": 2665,
-      "change": 5.75,
-      "volume": 580873,
-      "trading_value": 1524941307,
       "mcap": 0.23,
-      "shares": 88580109,
+      "shares": 57571652,
       "categories": [
         "기타"
       ],
@@ -15090,8 +15090,8 @@ window.KOS_LIVE_DATA = {
       "sector": "기타",
       "price": 10580,
       "change": 5.27,
-      "volume": 107205,
-      "trading_value": 1148637610,
+      "volume": 107261,
+      "trading_value": 1149230260,
       "mcap": 0.23,
       "shares": 22192012,
       "categories": [
@@ -15124,8 +15124,8 @@ window.KOS_LIVE_DATA = {
       "sector": "기타",
       "price": 8100,
       "change": -0.25,
-      "volume": 273919,
-      "trading_value": 2256888105,
+      "volume": 274080,
+      "trading_value": 2258192545,
       "mcap": 0.23,
       "shares": 28826865,
       "categories": [
@@ -15158,8 +15158,8 @@ window.KOS_LIVE_DATA = {
       "sector": "기타",
       "price": 742,
       "change": 0.13,
-      "volume": 280558,
-      "trading_value": 209386294,
+      "volume": 280626,
+      "trading_value": 209436750,
       "mcap": 0.23,
       "shares": 315609576,
       "categories": [
@@ -15175,8 +15175,8 @@ window.KOS_LIVE_DATA = {
       "sector": "기타",
       "price": 1270,
       "change": -2.23,
-      "volume": 246013,
-      "trading_value": 314017871,
+      "volume": 246217,
+      "trading_value": 314276992,
       "mcap": 0.23,
       "shares": 182892731,
       "categories": [
@@ -15192,8 +15192,8 @@ window.KOS_LIVE_DATA = {
       "sector": "기타",
       "price": 9770,
       "change": -3.65,
-      "volume": 137329,
-      "trading_value": 1348106450,
+      "volume": 138340,
+      "trading_value": 1357988280,
       "mcap": 0.23,
       "shares": 23779604,
       "categories": [
@@ -15243,8 +15243,8 @@ window.KOS_LIVE_DATA = {
       "sector": "기타",
       "price": 8300,
       "change": -0.12,
-      "volume": 55473,
-      "trading_value": 461604950,
+      "volume": 55524,
+      "trading_value": 462028250,
       "mcap": 0.23,
       "shares": 27415270,
       "categories": [
@@ -15294,8 +15294,8 @@ window.KOS_LIVE_DATA = {
       "sector": "기타",
       "price": 9070,
       "change": 0.44,
-      "volume": 17367,
-      "trading_value": 157246035,
+      "volume": 17372,
+      "trading_value": 157291385,
       "mcap": 0.23,
       "shares": 25423959,
       "categories": [
@@ -15311,8 +15311,8 @@ window.KOS_LIVE_DATA = {
       "sector": "기타",
       "price": 9840,
       "change": -2.28,
-      "volume": 200100,
-      "trading_value": 1987479380,
+      "volume": 200195,
+      "trading_value": 1988412980,
       "mcap": 0.23,
       "shares": 23327472,
       "categories": [
@@ -15328,8 +15328,8 @@ window.KOS_LIVE_DATA = {
       "sector": "기타",
       "price": 34250,
       "change": -0.15,
-      "volume": 71022,
-      "trading_value": 2460145675,
+      "volume": 71176,
+      "trading_value": 2465420475,
       "mcap": 0.23,
       "shares": 6613820,
       "categories": [
@@ -15379,8 +15379,8 @@ window.KOS_LIVE_DATA = {
       "sector": "기타",
       "price": 16140,
       "change": -5.61,
-      "volume": 153980,
-      "trading_value": 2502766090,
+      "volume": 154633,
+      "trading_value": 2513291580,
       "mcap": 0.23,
       "shares": 13980900,
       "categories": [
@@ -15396,8 +15396,8 @@ window.KOS_LIVE_DATA = {
       "sector": "기타",
       "price": 13850,
       "change": 5.32,
-      "volume": 159440,
-      "trading_value": 2193242425,
+      "volume": 159553,
+      "trading_value": 2194807475,
       "mcap": 0.23,
       "shares": 16393260,
       "categories": [
@@ -15413,8 +15413,8 @@ window.KOS_LIVE_DATA = {
       "sector": "기타",
       "price": 18330,
       "change": -4.83,
-      "volume": 42858,
-      "trading_value": 772926955,
+      "volume": 42879,
+      "trading_value": 773311885,
       "mcap": 0.23,
       "shares": 12517488,
       "categories": [
@@ -15430,8 +15430,8 @@ window.KOS_LIVE_DATA = {
       "sector": "기타",
       "price": 9750,
       "change": -0.91,
-      "volume": 291979,
-      "trading_value": 2828200100,
+      "volume": 293026,
+      "trading_value": 2838408350,
       "mcap": 0.23,
       "shares": 23379512,
       "categories": [
@@ -15457,6 +15457,23 @@ window.KOS_LIVE_DATA = {
       "rank": 886
     },
     {
+      "ticker": "000540",
+      "name": "흥국화재",
+      "name_en": "",
+      "market": "코스피",
+      "sector": "기타",
+      "price": 3505,
+      "change": 0.72,
+      "volume": 55056,
+      "trading_value": 191515533,
+      "mcap": 0.23,
+      "shares": 64242645,
+      "categories": [
+        "기타"
+      ],
+      "rank": 887
+    },
+    {
       "ticker": "138610",
       "name": "나이벡",
       "name_en": "",
@@ -15471,7 +15488,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 887
+      "rank": 888
     },
     {
       "ticker": "0007C0",
@@ -15481,27 +15498,10 @@ window.KOS_LIVE_DATA = {
       "sector": "기타",
       "price": 27500,
       "change": 1.85,
-      "volume": 217409,
-      "trading_value": 6056959025,
+      "volume": 218493,
+      "trading_value": 6086625575,
       "mcap": 0.22,
       "shares": 8030324,
-      "categories": [
-        "기타"
-      ],
-      "rank": 888
-    },
-    {
-      "ticker": "000540",
-      "name": "흥국화재",
-      "name_en": "",
-      "market": "코스피",
-      "sector": "기타",
-      "price": 3505,
-      "change": 0.72,
-      "volume": 55055,
-      "trading_value": 191511978,
-      "mcap": 0.22,
-      "shares": 64242645,
       "categories": [
         "기타"
       ],
@@ -15515,8 +15515,8 @@ window.KOS_LIVE_DATA = {
       "sector": "기타",
       "price": 3670,
       "change": 1.24,
-      "volume": 103019,
-      "trading_value": 378574838,
+      "volume": 103080,
+      "trading_value": 378798708,
       "mcap": 0.22,
       "shares": 60911106,
       "categories": [
@@ -15532,8 +15532,8 @@ window.KOS_LIVE_DATA = {
       "sector": "기타",
       "price": 6860,
       "change": -1.72,
-      "volume": 574051,
-      "trading_value": 4076293880,
+      "volume": 576758,
+      "trading_value": 4094947780,
       "mcap": 0.22,
       "shares": 31831041,
       "categories": [
@@ -15566,8 +15566,8 @@ window.KOS_LIVE_DATA = {
       "sector": "기계·장비",
       "price": 16590,
       "change": 1.16,
-      "volume": 741813,
-      "trading_value": 12304796165,
+      "volume": 744405,
+      "trading_value": 12347904045,
       "mcap": 0.22,
       "shares": 13115949,
       "induty_code": "29280",
@@ -15686,8 +15686,8 @@ window.KOS_LIVE_DATA = {
       "sector": "기타",
       "price": 15210,
       "change": 3.12,
-      "volume": 296651,
-      "trading_value": 4590031295,
+      "volume": 297151,
+      "trading_value": 4597650535,
       "mcap": 0.22,
       "shares": 14187572,
       "categories": [
@@ -15703,8 +15703,8 @@ window.KOS_LIVE_DATA = {
       "sector": "기타",
       "price": 4705,
       "change": 0.11,
-      "volume": 11431,
-      "trading_value": 53553405,
+      "volume": 11451,
+      "trading_value": 53646805,
       "mcap": 0.22,
       "shares": 46890490,
       "categories": [
@@ -15737,8 +15737,8 @@ window.KOS_LIVE_DATA = {
       "sector": "기타",
       "price": 5410,
       "change": 1.69,
-      "volume": 233470,
-      "trading_value": 1259710445,
+      "volume": 233762,
+      "trading_value": 1261290165,
       "mcap": 0.22,
       "shares": 40591096,
       "categories": [
@@ -15754,8 +15754,8 @@ window.KOS_LIVE_DATA = {
       "sector": "기타",
       "price": 12790,
       "change": 3.98,
-      "volume": 383470,
-      "trading_value": 4889060330,
+      "volume": 383675,
+      "trading_value": 4891691200,
       "mcap": 0.22,
       "shares": 16935217,
       "categories": [
@@ -15771,8 +15771,8 @@ window.KOS_LIVE_DATA = {
       "sector": "기타",
       "price": 14290,
       "change": 0.56,
-      "volume": 31117,
-      "trading_value": 438862090,
+      "volume": 31124,
+      "trading_value": 438962120,
       "mcap": 0.22,
       "shares": 15450915,
       "categories": [
@@ -15798,6 +15798,23 @@ window.KOS_LIVE_DATA = {
       "rank": 906
     },
     {
+      "ticker": "123860",
+      "name": "아나패스",
+      "name_en": "",
+      "market": "코스닥",
+      "sector": "기타",
+      "price": 17810,
+      "change": 0.79,
+      "volume": 55416,
+      "trading_value": 983528480,
+      "mcap": 0.22,
+      "shares": 12123415,
+      "categories": [
+        "기타"
+      ],
+      "rank": 907
+    },
+    {
       "ticker": "037560",
       "name": "LG헬로비전",
       "name_en": "LG HelloVision Corp.",
@@ -15805,15 +15822,15 @@ window.KOS_LIVE_DATA = {
       "sector": "미디어·엔터",
       "price": 2740,
       "change": -13.56,
-      "volume": 6037859,
-      "trading_value": 17512352052,
+      "volume": 6077857,
+      "trading_value": 17621913267,
       "mcap": 0.21,
       "shares": 77446865,
       "induty_code": "60222",
       "categories": [
         "미디어·엔터"
       ],
-      "rank": 907
+      "rank": 908
     },
     {
       "ticker": "0088M0",
@@ -15823,27 +15840,10 @@ window.KOS_LIVE_DATA = {
       "sector": "기타",
       "price": 21600,
       "change": -3.79,
-      "volume": 79396,
-      "trading_value": 1744431600,
+      "volume": 80358,
+      "trading_value": 1765163650,
       "mcap": 0.21,
       "shares": 9881750,
-      "categories": [
-        "기타"
-      ],
-      "rank": 908
-    },
-    {
-      "ticker": "123860",
-      "name": "아나패스",
-      "name_en": "",
-      "market": "코스닥",
-      "sector": "기타",
-      "price": 17810,
-      "change": 0.79,
-      "volume": 55309,
-      "trading_value": 981623180,
-      "mcap": 0.21,
-      "shares": 12123415,
       "categories": [
         "기타"
       ],
@@ -15857,8 +15857,8 @@ window.KOS_LIVE_DATA = {
       "sector": "기타",
       "price": 8280,
       "change": -1.31,
-      "volume": 106795,
-      "trading_value": 894555770,
+      "volume": 106808,
+      "trading_value": 894663410,
       "mcap": 0.21,
       "shares": 25810291,
       "categories": [
@@ -15908,8 +15908,8 @@ window.KOS_LIVE_DATA = {
       "sector": "기타",
       "price": 18350,
       "change": 2.51,
-      "volume": 118473,
-      "trading_value": 2225026615,
+      "volume": 118597,
+      "trading_value": 2227296185,
       "mcap": 0.21,
       "shares": 11571858,
       "categories": [
@@ -15925,8 +15925,8 @@ window.KOS_LIVE_DATA = {
       "sector": "기타",
       "price": 3005,
       "change": -3.06,
-      "volume": 742658,
-      "trading_value": 2287556116,
+      "volume": 749233,
+      "trading_value": 2307296761,
       "mcap": 0.21,
       "shares": 70473377,
       "categories": [
@@ -15942,8 +15942,8 @@ window.KOS_LIVE_DATA = {
       "sector": "기타",
       "price": 11870,
       "change": -0.5,
-      "volume": 168333,
-      "trading_value": 2027934555,
+      "volume": 168488,
+      "trading_value": 2029774405,
       "mcap": 0.21,
       "shares": 17947045,
       "categories": [
@@ -15959,8 +15959,8 @@ window.KOS_LIVE_DATA = {
       "sector": "기계·장비",
       "price": 10310,
       "change": 0.88,
-      "volume": 671710,
-      "trading_value": 7097566850,
+      "volume": 674106,
+      "trading_value": 7122208010,
       "mcap": 0.21,
       "shares": 20172728,
       "induty_code": "291",
@@ -15977,8 +15977,8 @@ window.KOS_LIVE_DATA = {
       "sector": "기타",
       "price": 1926,
       "change": -2.38,
-      "volume": 844490,
-      "trading_value": 1650703741,
+      "volume": 856975,
+      "trading_value": 1674471704,
       "mcap": 0.21,
       "shares": 109563302,
       "categories": [
@@ -16011,8 +16011,8 @@ window.KOS_LIVE_DATA = {
       "sector": "기타",
       "price": 6670,
       "change": 1.21,
-      "volume": 155536,
-      "trading_value": 1038599415,
+      "volume": 156487,
+      "trading_value": 1044945405,
       "mcap": 0.21,
       "shares": 32017673,
       "categories": [
@@ -16045,8 +16045,8 @@ window.KOS_LIVE_DATA = {
       "sector": "기타",
       "price": 2445,
       "change": -2.4,
-      "volume": 190911,
-      "trading_value": 470837131,
+      "volume": 190975,
+      "trading_value": 470993576,
       "mcap": 0.21,
       "shares": 86241915,
       "categories": [
@@ -16062,8 +16062,8 @@ window.KOS_LIVE_DATA = {
       "sector": "기타",
       "price": 9400,
       "change": -4.28,
-      "volume": 61011,
-      "trading_value": 579272260,
+      "volume": 61021,
+      "trading_value": 579366260,
       "mcap": 0.21,
       "shares": 22607693,
       "categories": [
@@ -16079,8 +16079,8 @@ window.KOS_LIVE_DATA = {
       "sector": "기타",
       "price": 18360,
       "change": -2.29,
-      "volume": 65143,
-      "trading_value": 1219639085,
+      "volume": 65147,
+      "trading_value": 1219712685,
       "mcap": 0.21,
       "shares": 11413747,
       "categories": [
@@ -16096,8 +16096,8 @@ window.KOS_LIVE_DATA = {
       "sector": "기타",
       "price": 18250,
       "change": -3.23,
-      "volume": 51082,
-      "trading_value": 941126760,
+      "volume": 51102,
+      "trading_value": 941491760,
       "mcap": 0.21,
       "shares": 11569113,
       "categories": [
@@ -16113,8 +16113,8 @@ window.KOS_LIVE_DATA = {
       "sector": "반도체",
       "price": 6270,
       "change": 11.57,
-      "volume": 2339552,
-      "trading_value": 14717713955,
+      "volume": 2343217,
+      "trading_value": 14740488975,
       "mcap": 0.21,
       "shares": 33132064,
       "induty_code": "2611",
@@ -16131,8 +16131,8 @@ window.KOS_LIVE_DATA = {
       "sector": "기타",
       "price": 7450,
       "change": 1.5,
-      "volume": 45408,
-      "trading_value": 337768005,
+      "volume": 45418,
+      "trading_value": 337842505,
       "mcap": 0.21,
       "shares": 28500000,
       "categories": [
@@ -16182,8 +16182,8 @@ window.KOS_LIVE_DATA = {
       "sector": "기타",
       "price": 41300,
       "change": -0.12,
-      "volume": 14514,
-      "trading_value": 588224050,
+      "volume": 14551,
+      "trading_value": 589752150,
       "mcap": 0.21,
       "shares": 5150000,
       "categories": [
@@ -16216,8 +16216,8 @@ window.KOS_LIVE_DATA = {
       "sector": "기타",
       "price": 15790,
       "change": -1.74,
-      "volume": 55086,
-      "trading_value": 883400920,
+      "volume": 55213,
+      "trading_value": 885400490,
       "mcap": 0.21,
       "shares": 12993367,
       "categories": [
@@ -16233,8 +16233,8 @@ window.KOS_LIVE_DATA = {
       "sector": "기타",
       "price": 13790,
       "change": -1.71,
-      "volume": 65557,
-      "trading_value": 905729130,
+      "volume": 65645,
+      "trading_value": 906941090,
       "mcap": 0.21,
       "shares": 15078811,
       "categories": [
@@ -16250,8 +16250,8 @@ window.KOS_LIVE_DATA = {
       "sector": "기타",
       "price": 3460,
       "change": -0.86,
-      "volume": 97767,
-      "trading_value": 333593879,
+      "volume": 97910,
+      "trading_value": 334088694,
       "mcap": 0.21,
       "shares": 60589276,
       "categories": [
@@ -16284,8 +16284,8 @@ window.KOS_LIVE_DATA = {
       "sector": "기타",
       "price": 22300,
       "change": 6.19,
-      "volume": 76494,
-      "trading_value": 1698478400,
+      "volume": 76611,
+      "trading_value": 1701087500,
       "mcap": 0.21,
       "shares": 9318958,
       "categories": [
@@ -16301,8 +16301,8 @@ window.KOS_LIVE_DATA = {
       "sector": "기타",
       "price": 18940,
       "change": 0.58,
-      "volume": 142509,
-      "trading_value": 2686953720,
+      "volume": 142604,
+      "trading_value": 2688750470,
       "mcap": 0.21,
       "shares": 10957550,
       "categories": [
@@ -16345,23 +16345,6 @@ window.KOS_LIVE_DATA = {
       "rank": 938
     },
     {
-      "ticker": "256840",
-      "name": "한국비엔씨",
-      "name_en": "",
-      "market": "코스닥",
-      "sector": "기타",
-      "price": 2990,
-      "change": 0.0,
-      "volume": 335727,
-      "trading_value": 1011554579,
-      "mcap": 0.21,
-      "shares": 68394886,
-      "categories": [
-        "기타"
-      ],
-      "rank": 939
-    },
-    {
       "ticker": "092220",
       "name": "KEC",
       "name_en": "",
@@ -16369,14 +16352,14 @@ window.KOS_LIVE_DATA = {
       "sector": "기타",
       "price": 5140,
       "change": 7.64,
-      "volume": 1059604,
-      "trading_value": 5419209883,
+      "volume": 1066335,
+      "trading_value": 5453775913,
       "mcap": 0.21,
       "shares": 40152628,
       "categories": [
         "기타"
       ],
-      "rank": 940
+      "rank": 939
     },
     {
       "ticker": "083310",
@@ -16388,12 +16371,114 @@ window.KOS_LIVE_DATA = {
       "change": 3.48,
       "volume": 148989,
       "trading_value": 1765069590,
-      "mcap": 0.2,
+      "mcap": 0.21,
       "shares": 17810033,
       "categories": [
         "기타"
       ],
+      "rank": 940
+    },
+    {
+      "ticker": "004380",
+      "name": "삼익THK",
+      "name_en": "",
+      "market": "코스피",
+      "sector": "기타",
+      "price": 10000,
+      "change": 0.0,
+      "volume": 122039,
+      "trading_value": 1220447875,
+      "mcap": 0.21,
+      "shares": 20700000,
+      "categories": [
+        "기타"
+      ],
       "rank": 941
+    },
+    {
+      "ticker": "034810",
+      "name": "해성산업",
+      "name_en": "",
+      "market": "코스닥",
+      "sector": "기타",
+      "price": 6500,
+      "change": 1.56,
+      "volume": 22853,
+      "trading_value": 147901610,
+      "mcap": 0.21,
+      "shares": 31580152,
+      "categories": [
+        "기타"
+      ],
+      "rank": 942
+    },
+    {
+      "ticker": "001780",
+      "name": "알루코",
+      "name_en": "",
+      "market": "코스피",
+      "sector": "기타",
+      "price": 2120,
+      "change": 0.0,
+      "volume": 684457,
+      "trading_value": 1442331449,
+      "mcap": 0.21,
+      "shares": 96830132,
+      "categories": [
+        "기타"
+      ],
+      "rank": 943
+    },
+    {
+      "ticker": "126600",
+      "name": "BGF에코머티리얼즈",
+      "name_en": "",
+      "market": "코스닥",
+      "sector": "기타",
+      "price": 3285,
+      "change": 0.0,
+      "volume": 145407,
+      "trading_value": 473719821,
+      "mcap": 0.21,
+      "shares": 62766899,
+      "categories": [
+        "기타"
+      ],
+      "rank": 944
+    },
+    {
+      "ticker": "353810",
+      "name": "이지바이오",
+      "name_en": "",
+      "market": "코스닥",
+      "sector": "기타",
+      "price": 6220,
+      "change": 0.48,
+      "volume": 165018,
+      "trading_value": 1004528880,
+      "mcap": 0.21,
+      "shares": 33081920,
+      "categories": [
+        "기타"
+      ],
+      "rank": 945
+    },
+    {
+      "ticker": "256840",
+      "name": "한국비엔씨",
+      "name_en": "",
+      "market": "코스닥",
+      "sector": "기타",
+      "price": 2990,
+      "change": 0.0,
+      "volume": 336989,
+      "trading_value": 1015334019,
+      "mcap": 0.2,
+      "shares": 68394886,
+      "categories": [
+        "기타"
+      ],
+      "rank": 946
     },
     {
       "ticker": "405100",
@@ -16403,14 +16488,14 @@ window.KOS_LIVE_DATA = {
       "sector": "기타",
       "price": 16550,
       "change": -0.6,
-      "volume": 57014,
-      "trading_value": 965994115,
+      "volume": 57110,
+      "trading_value": 967582595,
       "mcap": 0.2,
       "shares": 12289301,
       "categories": [
         "기타"
       ],
-      "rank": 942
+      "rank": 947
     },
     {
       "ticker": "054450",
@@ -16420,14 +16505,14 @@ window.KOS_LIVE_DATA = {
       "sector": "기타",
       "price": 13460,
       "change": -1.54,
-      "volume": 211743,
-      "trading_value": 2927875305,
+      "volume": 212458,
+      "trading_value": 2937500085,
       "mcap": 0.2,
       "shares": 15144233,
       "categories": [
         "기타"
       ],
-      "rank": 943
+      "rank": 948
     },
     {
       "ticker": "404990",
@@ -16444,24 +16529,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 944
-    },
-    {
-      "ticker": "004380",
-      "name": "삼익THK",
-      "name_en": "",
-      "market": "코스피",
-      "sector": "기타",
-      "price": 10000,
-      "change": 0.0,
-      "volume": 122038,
-      "trading_value": 1220437875,
-      "mcap": 0.2,
-      "shares": 20700000,
-      "categories": [
-        "기타"
-      ],
-      "rank": 945
+      "rank": 949
     },
     {
       "ticker": "005710",
@@ -16478,7 +16546,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 946
+      "rank": 950
     },
     {
       "ticker": "446540",
@@ -16488,14 +16556,14 @@ window.KOS_LIVE_DATA = {
       "sector": "기타",
       "price": 6930,
       "change": 2.67,
-      "volume": 260791,
-      "trading_value": 1825883010,
+      "volume": 260866,
+      "trading_value": 1826402760,
       "mcap": 0.2,
       "shares": 29079111,
       "categories": [
         "기타"
       ],
-      "rank": 947
+      "rank": 951
     },
     {
       "ticker": "377190",
@@ -16512,58 +16580,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 948
-    },
-    {
-      "ticker": "034810",
-      "name": "해성산업",
-      "name_en": "",
-      "market": "코스닥",
-      "sector": "기타",
-      "price": 6500,
-      "change": 1.56,
-      "volume": 22853,
-      "trading_value": 147901610,
-      "mcap": 0.2,
-      "shares": 31580152,
-      "categories": [
-        "기타"
-      ],
-      "rank": 949
-    },
-    {
-      "ticker": "001780",
-      "name": "알루코",
-      "name_en": "",
-      "market": "코스피",
-      "sector": "기타",
-      "price": 2120,
-      "change": 0.0,
-      "volume": 681398,
-      "trading_value": 1435862679,
-      "mcap": 0.2,
-      "shares": 96830132,
-      "categories": [
-        "기타"
-      ],
-      "rank": 950
-    },
-    {
-      "ticker": "126600",
-      "name": "BGF에코머티리얼즈",
-      "name_en": "",
-      "market": "코스닥",
-      "sector": "기타",
-      "price": 3285,
-      "change": 0.0,
-      "volume": 145305,
-      "trading_value": 473383751,
-      "mcap": 0.2,
-      "shares": 62766899,
-      "categories": [
-        "기타"
-      ],
-      "rank": 951
+      "rank": 952
     },
     {
       "ticker": "013890",
@@ -16580,7 +16597,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 952
+      "rank": 953
     },
     {
       "ticker": "117580",
@@ -16590,14 +16607,14 @@ window.KOS_LIVE_DATA = {
       "sector": "기타",
       "price": 7420,
       "change": 1.09,
-      "volume": 90971,
-      "trading_value": 672258815,
+      "volume": 91306,
+      "trading_value": 674744395,
       "mcap": 0.2,
       "shares": 27500000,
       "categories": [
         "기타"
       ],
-      "rank": 953
+      "rank": 954
     },
     {
       "ticker": "418420",
@@ -16607,27 +16624,10 @@ window.KOS_LIVE_DATA = {
       "sector": "기타",
       "price": 6380,
       "change": 0.95,
-      "volume": 842972,
-      "trading_value": 5542302270,
+      "volume": 844095,
+      "trading_value": 5549467110,
       "mcap": 0.2,
       "shares": 30700933,
-      "categories": [
-        "기타"
-      ],
-      "rank": 954
-    },
-    {
-      "ticker": "353810",
-      "name": "이지바이오",
-      "name_en": "",
-      "market": "코스닥",
-      "sector": "기타",
-      "price": 6220,
-      "change": 0.48,
-      "volume": 165018,
-      "trading_value": 1004528880,
-      "mcap": 0.2,
-      "shares": 33081920,
       "categories": [
         "기타"
       ],
@@ -16641,8 +16641,8 @@ window.KOS_LIVE_DATA = {
       "sector": "기타",
       "price": 14700,
       "change": -2.65,
-      "volume": 274897,
-      "trading_value": 4107978660,
+      "volume": 275496,
+      "trading_value": 4116825920,
       "mcap": 0.2,
       "shares": 13667703,
       "categories": [
@@ -16658,8 +16658,8 @@ window.KOS_LIVE_DATA = {
       "sector": "기타",
       "price": 13370,
       "change": 0.6,
-      "volume": 205916,
-      "trading_value": 2732188700,
+      "volume": 206186,
+      "trading_value": 2735801590,
       "mcap": 0.2,
       "shares": 15082304,
       "categories": [
@@ -16692,8 +16692,8 @@ window.KOS_LIVE_DATA = {
       "sector": "전자·부품",
       "price": 22900,
       "change": -7.29,
-      "volume": 372265,
-      "trading_value": 8715440750,
+      "volume": 376361,
+      "trading_value": 8808277600,
       "mcap": 0.2,
       "shares": 8770126,
       "induty_code": "2629",
@@ -16710,8 +16710,8 @@ window.KOS_LIVE_DATA = {
       "sector": "기타",
       "price": 4030,
       "change": -0.37,
-      "volume": 102535,
-      "trading_value": 411745532,
+      "volume": 102550,
+      "trading_value": 411805982,
       "mcap": 0.2,
       "shares": 49965080,
       "categories": [
@@ -16727,8 +16727,8 @@ window.KOS_LIVE_DATA = {
       "sector": "기타",
       "price": 13070,
       "change": -0.61,
-      "volume": 207484,
-      "trading_value": 2748256010,
+      "volume": 209310,
+      "trading_value": 2772114190,
       "mcap": 0.2,
       "shares": 15078709,
       "categories": [
@@ -16744,8 +16744,8 @@ window.KOS_LIVE_DATA = {
       "sector": "기타",
       "price": 9780,
       "change": -2.2,
-      "volume": 459384,
-      "trading_value": 4501659200,
+      "volume": 461441,
+      "trading_value": 4521741920,
       "mcap": 0.2,
       "shares": 20499260,
       "categories": [
@@ -16761,8 +16761,8 @@ window.KOS_LIVE_DATA = {
       "sector": "기타",
       "price": 7770,
       "change": -1.02,
-      "volume": 20415,
-      "trading_value": 157449650,
+      "volume": 20416,
+      "trading_value": 157457420,
       "mcap": 0.2,
       "shares": 25957601,
       "categories": [
@@ -16795,8 +16795,8 @@ window.KOS_LIVE_DATA = {
       "sector": "기타",
       "price": 11040,
       "change": 2.22,
-      "volume": 251129,
-      "trading_value": 2816130825,
+      "volume": 251861,
+      "trading_value": 2824212105,
       "mcap": 0.2,
       "shares": 17780753,
       "categories": [
@@ -16812,8 +16812,8 @@ window.KOS_LIVE_DATA = {
       "sector": "기타",
       "price": 7050,
       "change": -0.56,
-      "volume": 105361,
-      "trading_value": 743259390,
+      "volume": 105892,
+      "trading_value": 746997930,
       "mcap": 0.2,
       "shares": 27820961,
       "categories": [
@@ -16856,23 +16856,6 @@ window.KOS_LIVE_DATA = {
       "rank": 968
     },
     {
-      "ticker": "372170",
-      "name": "윤성에프앤씨",
-      "name_en": "",
-      "market": "코스닥",
-      "sector": "기타",
-      "price": 24350,
-      "change": 1.04,
-      "volume": 9810,
-      "trading_value": 240013300,
-      "mcap": 0.2,
-      "shares": 7979048,
-      "categories": [
-        "기타"
-      ],
-      "rank": 969
-    },
-    {
       "ticker": "001130",
       "name": "대한제분",
       "name_en": "",
@@ -16887,7 +16870,58 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
+      "rank": 969
+    },
+    {
+      "ticker": "462860",
+      "name": "더즌",
+      "name_en": "",
+      "market": "코스닥",
+      "sector": "기타",
+      "price": 2720,
+      "change": 0.74,
+      "volume": 153752,
+      "trading_value": 417277357,
+      "mcap": 0.2,
+      "shares": 71756523,
+      "categories": [
+        "기타"
+      ],
       "rank": 970
+    },
+    {
+      "ticker": "095570",
+      "name": "AJ네트웍스",
+      "name_en": "",
+      "market": "코스피",
+      "sector": "기타",
+      "price": 4345,
+      "change": -0.8,
+      "volume": 246204,
+      "trading_value": 1060803727,
+      "mcap": 0.2,
+      "shares": 45252759,
+      "categories": [
+        "기타"
+      ],
+      "rank": 971
+    },
+    {
+      "ticker": "372170",
+      "name": "윤성에프앤씨",
+      "name_en": "",
+      "market": "코스닥",
+      "sector": "기타",
+      "price": 24350,
+      "change": 1.04,
+      "volume": 9810,
+      "trading_value": 240013300,
+      "mcap": 0.19,
+      "shares": 7979048,
+      "categories": [
+        "기타"
+      ],
+      "rank": 972
     },
     {
       "ticker": "042600",
@@ -16897,14 +16931,14 @@ window.KOS_LIVE_DATA = {
       "sector": "기타",
       "price": 15680,
       "change": 0.77,
-      "volume": 25970,
-      "trading_value": 401458800,
-      "mcap": 0.2,
+      "volume": 25974,
+      "trading_value": 401521360,
+      "mcap": 0.19,
       "shares": 12423574,
       "categories": [
         "기타"
       ],
-      "rank": 971
+      "rank": 973
     },
     {
       "ticker": "003220",
@@ -16921,7 +16955,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 972
+      "rank": 974
     },
     {
       "ticker": "192440",
@@ -16931,14 +16965,14 @@ window.KOS_LIVE_DATA = {
       "sector": "기타",
       "price": 30850,
       "change": -6.52,
-      "volume": 16076,
-      "trading_value": 512383025,
+      "volume": 16077,
+      "trading_value": 512413875,
       "mcap": 0.19,
       "shares": 6216363,
       "categories": [
         "기타"
       ],
-      "rank": 973
+      "rank": 975
     },
     {
       "ticker": "078070",
@@ -16948,14 +16982,14 @@ window.KOS_LIVE_DATA = {
       "sector": "기타",
       "price": 10990,
       "change": -0.27,
-      "volume": 56151,
-      "trading_value": 628248330,
+      "volume": 56439,
+      "trading_value": 631415340,
       "mcap": 0.19,
       "shares": 17604772,
       "categories": [
         "기타"
       ],
-      "rank": 974
+      "rank": 976
     },
     {
       "ticker": "298690",
@@ -16965,14 +16999,14 @@ window.KOS_LIVE_DATA = {
       "sector": "기타",
       "price": 1660,
       "change": -1.19,
-      "volume": 131567,
-      "trading_value": 221697404,
+      "volume": 132078,
+      "trading_value": 222545664,
       "mcap": 0.19,
       "shares": 116640000,
       "categories": [
         "기타"
       ],
-      "rank": 975
+      "rank": 977
     },
     {
       "ticker": "126700",
@@ -16982,14 +17016,14 @@ window.KOS_LIVE_DATA = {
       "sector": "기타",
       "price": 12650,
       "change": -1.17,
-      "volume": 115644,
-      "trading_value": 1484908100,
+      "volume": 115979,
+      "trading_value": 1489145850,
       "mcap": 0.19,
       "shares": 14942112,
       "categories": [
         "기타"
       ],
-      "rank": 976
+      "rank": 978
     },
     {
       "ticker": "083930",
@@ -16999,14 +17033,14 @@ window.KOS_LIVE_DATA = {
       "sector": "기타",
       "price": 12930,
       "change": 0.31,
-      "volume": 107653,
-      "trading_value": 1424906380,
+      "volume": 107806,
+      "trading_value": 1426884370,
       "mcap": 0.19,
       "shares": 14677249,
       "categories": [
         "기타"
       ],
-      "rank": 977
+      "rank": 979
     },
     {
       "ticker": "036560",
@@ -17023,40 +17057,6 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 978
-    },
-    {
-      "ticker": "462860",
-      "name": "더즌",
-      "name_en": "",
-      "market": "코스닥",
-      "sector": "기타",
-      "price": 2720,
-      "change": 0.74,
-      "volume": 152376,
-      "trading_value": 413534497,
-      "mcap": 0.19,
-      "shares": 71756523,
-      "categories": [
-        "기타"
-      ],
-      "rank": 979
-    },
-    {
-      "ticker": "095570",
-      "name": "AJ네트웍스",
-      "name_en": "",
-      "market": "코스피",
-      "sector": "기타",
-      "price": 4345,
-      "change": -0.8,
-      "volume": 246051,
-      "trading_value": 1060139017,
-      "mcap": 0.19,
-      "shares": 45252759,
-      "categories": [
-        "기타"
-      ],
       "rank": 980
     },
     {
@@ -17067,8 +17067,8 @@ window.KOS_LIVE_DATA = {
       "sector": "기타",
       "price": 17230,
       "change": -2.98,
-      "volume": 146321,
-      "trading_value": 2600791655,
+      "volume": 146344,
+      "trading_value": 2601187945,
       "mcap": 0.19,
       "shares": 10803486,
       "categories": [
@@ -17084,8 +17084,8 @@ window.KOS_LIVE_DATA = {
       "sector": "기타",
       "price": 10920,
       "change": -0.82,
-      "volume": 14993,
-      "trading_value": 164443430,
+      "volume": 14997,
+      "trading_value": 164487110,
       "mcap": 0.19,
       "shares": 17761589,
       "categories": [
@@ -17118,8 +17118,8 @@ window.KOS_LIVE_DATA = {
       "sector": "기타",
       "price": 2475,
       "change": -1.2,
-      "volume": 358316,
-      "trading_value": 897332295,
+      "volume": 359239,
+      "trading_value": 899622480,
       "mcap": 0.19,
       "shares": 76991722,
       "categories": [
@@ -17135,8 +17135,8 @@ window.KOS_LIVE_DATA = {
       "sector": "기타",
       "price": 6250,
       "change": 0.97,
-      "volume": 392795,
-      "trading_value": 2508984445,
+      "volume": 395075,
+      "trading_value": 2523213775,
       "mcap": 0.19,
       "shares": 30294612,
       "categories": [
@@ -17152,8 +17152,8 @@ window.KOS_LIVE_DATA = {
       "sector": "기타",
       "price": 7040,
       "change": -10.55,
-      "volume": 388368,
-      "trading_value": 2859791840,
+      "volume": 388534,
+      "trading_value": 2860962340,
       "mcap": 0.19,
       "shares": 26349023,
       "categories": [
@@ -17169,8 +17169,8 @@ window.KOS_LIVE_DATA = {
       "sector": "기타",
       "price": 3780,
       "change": -3.57,
-      "volume": 108404,
-      "trading_value": 411543380,
+      "volume": 108485,
+      "trading_value": 411849560,
       "mcap": 0.19,
       "shares": 50669591,
       "categories": [
@@ -17203,8 +17203,8 @@ window.KOS_LIVE_DATA = {
       "sector": "기타",
       "price": 7120,
       "change": -0.28,
-      "volume": 123325,
-      "trading_value": 897213240,
+      "volume": 123326,
+      "trading_value": 897220410,
       "mcap": 0.19,
       "shares": 26639081,
       "categories": [
@@ -17220,8 +17220,8 @@ window.KOS_LIVE_DATA = {
       "sector": "기타",
       "price": 25400,
       "change": 2.21,
-      "volume": 15444,
-      "trading_value": 389075175,
+      "volume": 15479,
+      "trading_value": 389962375,
       "mcap": 0.19,
       "shares": 7500000,
       "categories": [
@@ -17237,8 +17237,8 @@ window.KOS_LIVE_DATA = {
       "sector": "기타",
       "price": 17790,
       "change": 5.33,
-      "volume": 52151,
-      "trading_value": 907822035,
+      "volume": 52170,
+      "trading_value": 908160045,
       "mcap": 0.19,
       "shares": 10762890,
       "categories": [
@@ -17271,8 +17271,8 @@ window.KOS_LIVE_DATA = {
       "sector": "기타",
       "price": 6000,
       "change": -5.36,
-      "volume": 409367,
-      "trading_value": 2453241550,
+      "volume": 410087,
+      "trading_value": 2457561550,
       "mcap": 0.19,
       "shares": 32000000,
       "categories": [
@@ -17288,31 +17288,14 @@ window.KOS_LIVE_DATA = {
       "sector": "기타",
       "price": 5180,
       "change": 6.58,
-      "volume": 203373,
-      "trading_value": 1025591275,
+      "volume": 203411,
+      "trading_value": 1025787835,
       "mcap": 0.19,
       "shares": 37287099,
       "categories": [
         "기타"
       ],
       "rank": 994
-    },
-    {
-      "ticker": "489500",
-      "name": "엘케이켐",
-      "name_en": "",
-      "market": "코스닥",
-      "sector": "기타",
-      "price": 28800,
-      "change": -0.86,
-      "volume": 41836,
-      "trading_value": 1243759925,
-      "mcap": 0.19,
-      "shares": 6391238,
-      "categories": [
-        "기타"
-      ],
-      "rank": 995
     },
     {
       "ticker": "003350",
@@ -17322,14 +17305,14 @@ window.KOS_LIVE_DATA = {
       "sector": "기타",
       "price": 8390,
       "change": 2.19,
-      "volume": 58336,
-      "trading_value": 485131715,
+      "volume": 58342,
+      "trading_value": 485182055,
       "mcap": 0.19,
       "shares": 22660000,
       "categories": [
         "기타"
       ],
-      "rank": 996
+      "rank": 995
     },
     {
       "ticker": "121440",
@@ -17339,14 +17322,14 @@ window.KOS_LIVE_DATA = {
       "sector": "기타",
       "price": 4445,
       "change": 0.57,
-      "volume": 35603,
-      "trading_value": 156777815,
+      "volume": 35604,
+      "trading_value": 156782260,
       "mcap": 0.19,
       "shares": 42836818,
       "categories": [
         "기타"
       ],
-      "rank": 997
+      "rank": 996
     },
     {
       "ticker": "028100",
@@ -17363,7 +17346,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 998
+      "rank": 997
     },
     {
       "ticker": "000140",
@@ -17373,14 +17356,14 @@ window.KOS_LIVE_DATA = {
       "sector": "기타",
       "price": 8070,
       "change": -1.82,
-      "volume": 17314,
-      "trading_value": 140285745,
+      "volume": 17319,
+      "trading_value": 140326095,
       "mcap": 0.19,
       "shares": 23206765,
       "categories": [
         "기타"
       ],
-      "rank": 999
+      "rank": 998
     },
     {
       "ticker": "012200",
@@ -17390,14 +17373,14 @@ window.KOS_LIVE_DATA = {
       "sector": "기타",
       "price": 6820,
       "change": -0.15,
-      "volume": 403614,
-      "trading_value": 2786228665,
+      "volume": 404897,
+      "trading_value": 2794978725,
       "mcap": 0.19,
       "shares": 27222829,
       "categories": [
         "기타"
       ],
-      "rank": 1000
+      "rank": 999
     },
     {
       "ticker": "041020",
@@ -17407,14 +17390,14 @@ window.KOS_LIVE_DATA = {
       "sector": "기타",
       "price": 3850,
       "change": -0.39,
-      "volume": 930008,
-      "trading_value": 3593235149,
+      "volume": 931596,
+      "trading_value": 3599327019,
       "mcap": 0.19,
       "shares": 49683793,
       "categories": [
         "기타"
       ],
-      "rank": 1001
+      "rank": 1000
     },
     {
       "ticker": "108380",
@@ -17431,7 +17414,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 1002
+      "rank": 1001
     },
     {
       "ticker": "194480",
@@ -17448,7 +17431,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 1003
+      "rank": 1002
     },
     {
       "ticker": "123330",
@@ -17458,14 +17441,14 @@ window.KOS_LIVE_DATA = {
       "sector": "기타",
       "price": 23450,
       "change": 3.99,
-      "volume": 108137,
-      "trading_value": 2535692600,
+      "volume": 108250,
+      "trading_value": 2538338150,
       "mcap": 0.19,
       "shares": 7968680,
       "categories": [
         "기타"
       ],
-      "rank": 1004
+      "rank": 1003
     },
     {
       "ticker": "016790",
@@ -17482,7 +17465,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 1005
+      "rank": 1004
     },
     {
       "ticker": "474170",
@@ -17492,14 +17475,14 @@ window.KOS_LIVE_DATA = {
       "sector": "기타",
       "price": 10600,
       "change": -0.19,
-      "volume": 152980,
-      "trading_value": 1620373980,
+      "volume": 153202,
+      "trading_value": 1622723400,
       "mcap": 0.19,
       "shares": 17817696,
       "categories": [
         "기타"
       ],
-      "rank": 1006
+      "rank": 1005
     },
     {
       "ticker": "039840",
@@ -17516,7 +17499,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 1007
+      "rank": 1006
     },
     {
       "ticker": "100250",
@@ -17526,32 +17509,15 @@ window.KOS_LIVE_DATA = {
       "sector": "섬유·패션·생활",
       "price": 2945,
       "change": 2.08,
-      "volume": 2982382,
-      "trading_value": 9289253730,
+      "volume": 2985930,
+      "trading_value": 9299702590,
       "mcap": 0.19,
       "shares": 63900000,
       "induty_code": "222",
       "categories": [
         "섬유·패션·생활"
       ],
-      "rank": 1008
-    },
-    {
-      "ticker": "484120",
-      "name": "도우인시스",
-      "name_en": "",
-      "market": "코스닥",
-      "sector": "기타",
-      "price": 16840,
-      "change": -2.77,
-      "volume": 15022,
-      "trading_value": 255583625,
-      "mcap": 0.19,
-      "shares": 10957422,
-      "categories": [
-        "기타"
-      ],
-      "rank": 1009
+      "rank": 1007
     },
     {
       "ticker": "321550",
@@ -17561,100 +17527,14 @@ window.KOS_LIVE_DATA = {
       "sector": "기타",
       "price": 6210,
       "change": 0.16,
-      "volume": 208578,
-      "trading_value": 1292158255,
+      "volume": 208917,
+      "trading_value": 1294280135,
       "mcap": 0.19,
       "shares": 30038475,
       "categories": [
         "기타"
       ],
-      "rank": 1010
-    },
-    {
-      "ticker": "452450",
-      "name": "피아이이",
-      "name_en": "",
-      "market": "코스닥",
-      "sector": "기타",
-      "price": 5080,
-      "change": 1.2,
-      "volume": 149590,
-      "trading_value": 773762070,
-      "mcap": 0.18,
-      "shares": 36028500,
-      "categories": [
-        "기타"
-      ],
-      "rank": 1011
-    },
-    {
-      "ticker": "361390",
-      "name": "제노코",
-      "name_en": "",
-      "market": "코스닥",
-      "sector": "기타",
-      "price": 18770,
-      "change": -1.26,
-      "volume": 68770,
-      "trading_value": 1303223025,
-      "mcap": 0.18,
-      "shares": 9736381,
-      "categories": [
-        "기타"
-      ],
-      "rank": 1012
-    },
-    {
-      "ticker": "024060",
-      "name": "흥구석유",
-      "name_en": "HeunguOil",
-      "market": "코스닥",
-      "sector": "유통·소비재",
-      "price": 12200,
-      "change": 1.33,
-      "volume": 670166,
-      "trading_value": 8300353750,
-      "mcap": 0.18,
-      "shares": 15000000,
-      "induty_code": "46712",
-      "categories": [
-        "유통·소비재"
-      ],
-      "rank": 1013
-    },
-    {
-      "ticker": "013580",
-      "name": "계룡건설",
-      "name_en": "",
-      "market": "코스피",
-      "sector": "기타",
-      "price": 20500,
-      "change": 0.74,
-      "volume": 49320,
-      "trading_value": 1015659625,
-      "mcap": 0.18,
-      "shares": 8930907,
-      "categories": [
-        "기타"
-      ],
-      "rank": 1014
-    },
-    {
-      "ticker": "264450",
-      "name": "유비쿼스",
-      "name_en": "",
-      "market": "코스닥",
-      "sector": "기타",
-      "price": 12170,
-      "change": -3.03,
-      "volume": 81626,
-      "trading_value": 1020597955,
-      "mcap": 0.18,
-      "shares": 14665493,
-      "categories": [
-        "기타"
-      ],
-      "rank": 1015
+      "rank": 1008
     },
     {
       "ticker": "086820",
@@ -17666,12 +17546,149 @@ window.KOS_LIVE_DATA = {
       "change": 1.27,
       "volume": 118743,
       "trading_value": 838891475,
-      "mcap": 0.18,
+      "mcap": 0.19,
       "shares": 25924085,
       "categories": [
         "기타"
       ],
+      "rank": 1009
+    },
+    {
+      "ticker": "003610",
+      "name": "방림",
+      "name_en": "",
+      "market": "코스피",
+      "sector": "기타",
+      "price": 5120,
+      "change": 0.39,
+      "volume": 114461,
+      "trading_value": 576792055,
+      "mcap": 0.19,
+      "shares": 36202158,
+      "categories": [
+        "기타"
+      ],
+      "rank": 1010
+    },
+    {
+      "ticker": "489500",
+      "name": "엘케이켐",
+      "name_en": "",
+      "market": "코스닥",
+      "sector": "기타",
+      "price": 28800,
+      "change": -0.86,
+      "volume": 42055,
+      "trading_value": 1250125175,
+      "mcap": 0.18,
+      "shares": 6391238,
+      "categories": [
+        "기타"
+      ],
+      "rank": 1011
+    },
+    {
+      "ticker": "484120",
+      "name": "도우인시스",
+      "name_en": "",
+      "market": "코스닥",
+      "sector": "기타",
+      "price": 16840,
+      "change": -2.77,
+      "volume": 15022,
+      "trading_value": 255583625,
+      "mcap": 0.18,
+      "shares": 10957422,
+      "categories": [
+        "기타"
+      ],
+      "rank": 1012
+    },
+    {
+      "ticker": "452450",
+      "name": "피아이이",
+      "name_en": "",
+      "market": "코스닥",
+      "sector": "기타",
+      "price": 5080,
+      "change": 1.2,
+      "volume": 149695,
+      "trading_value": 774295470,
+      "mcap": 0.18,
+      "shares": 36028500,
+      "categories": [
+        "기타"
+      ],
+      "rank": 1013
+    },
+    {
+      "ticker": "361390",
+      "name": "제노코",
+      "name_en": "",
+      "market": "코스닥",
+      "sector": "기타",
+      "price": 18770,
+      "change": -1.26,
+      "volume": 68891,
+      "trading_value": 1305492795,
+      "mcap": 0.18,
+      "shares": 9736381,
+      "categories": [
+        "기타"
+      ],
+      "rank": 1014
+    },
+    {
+      "ticker": "024060",
+      "name": "흥구석유",
+      "name_en": "HeunguOil",
+      "market": "코스닥",
+      "sector": "유통·소비재",
+      "price": 12200,
+      "change": 1.33,
+      "volume": 671639,
+      "trading_value": 8318302680,
+      "mcap": 0.18,
+      "shares": 15000000,
+      "induty_code": "46712",
+      "categories": [
+        "유통·소비재"
+      ],
+      "rank": 1015
+    },
+    {
+      "ticker": "013580",
+      "name": "계룡건설",
+      "name_en": "",
+      "market": "코스피",
+      "sector": "기타",
+      "price": 20500,
+      "change": 0.74,
+      "volume": 49362,
+      "trading_value": 1016520625,
+      "mcap": 0.18,
+      "shares": 8930907,
+      "categories": [
+        "기타"
+      ],
       "rank": 1016
+    },
+    {
+      "ticker": "264450",
+      "name": "유비쿼스",
+      "name_en": "",
+      "market": "코스닥",
+      "sector": "기타",
+      "price": 12170,
+      "change": -3.03,
+      "volume": 81708,
+      "trading_value": 1021595835,
+      "mcap": 0.18,
+      "shares": 14665493,
+      "categories": [
+        "기타"
+      ],
+      "rank": 1017
     },
     {
       "ticker": "950140",
@@ -17688,7 +17705,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 1017
+      "rank": 1018
     },
     {
       "ticker": "102460",
@@ -17698,27 +17715,10 @@ window.KOS_LIVE_DATA = {
       "sector": "기타",
       "price": 9940,
       "change": -0.5,
-      "volume": 68340,
-      "trading_value": 672125320,
+      "volume": 68365,
+      "trading_value": 672370420,
       "mcap": 0.18,
       "shares": 18586811,
-      "categories": [
-        "기타"
-      ],
-      "rank": 1018
-    },
-    {
-      "ticker": "003610",
-      "name": "방림",
-      "name_en": "",
-      "market": "코스피",
-      "sector": "기타",
-      "price": 5120,
-      "change": 0.39,
-      "volume": 114461,
-      "trading_value": 576792055,
-      "mcap": 0.18,
-      "shares": 36202158,
       "categories": [
         "기타"
       ],
@@ -17732,8 +17732,8 @@ window.KOS_LIVE_DATA = {
       "sector": "기타",
       "price": 6540,
       "change": 0.62,
-      "volume": 172609,
-      "trading_value": 1118489660,
+      "volume": 172634,
+      "trading_value": 1118651360,
       "mcap": 0.18,
       "shares": 27841064,
       "categories": [
@@ -17749,8 +17749,8 @@ window.KOS_LIVE_DATA = {
       "sector": "기타",
       "price": 6670,
       "change": -2.06,
-      "volume": 202386,
-      "trading_value": 1361207375,
+      "volume": 204403,
+      "trading_value": 1374597505,
       "mcap": 0.18,
       "shares": 27203469,
       "categories": [
@@ -17800,8 +17800,8 @@ window.KOS_LIVE_DATA = {
       "sector": "기타",
       "price": 5310,
       "change": 0.38,
-      "volume": 46428,
-      "trading_value": 247924535,
+      "volume": 46430,
+      "trading_value": 247935155,
       "mcap": 0.18,
       "shares": 33720000,
       "categories": [
@@ -17817,8 +17817,8 @@ window.KOS_LIVE_DATA = {
       "sector": "기타",
       "price": 4665,
       "change": 1.41,
-      "volume": 244680,
-      "trading_value": 1144425194,
+      "volume": 246236,
+      "trading_value": 1151679119,
       "mcap": 0.18,
       "shares": 38093053,
       "categories": [
@@ -17868,8 +17868,8 @@ window.KOS_LIVE_DATA = {
       "sector": "기타",
       "price": 1372,
       "change": -3.11,
-      "volume": 1619877,
-      "trading_value": 2260598400,
+      "volume": 1628326,
+      "trading_value": 2272118611,
       "mcap": 0.18,
       "shares": 129079090,
       "categories": [
@@ -17895,23 +17895,6 @@ window.KOS_LIVE_DATA = {
       "rank": 1029
     },
     {
-      "ticker": "388050",
-      "name": "지투파워",
-      "name_en": "",
-      "market": "코스닥",
-      "sector": "기타",
-      "price": 9350,
-      "change": 1.74,
-      "volume": 293352,
-      "trading_value": 2781820165,
-      "mcap": 0.18,
-      "shares": 18709437,
-      "categories": [
-        "기타"
-      ],
-      "rank": 1030
-    },
-    {
       "ticker": "003460",
       "name": "유화증권",
       "name_en": "",
@@ -17919,14 +17902,14 @@ window.KOS_LIVE_DATA = {
       "sector": "기타",
       "price": 3100,
       "change": 0.0,
-      "volume": 59531,
-      "trading_value": 184761094,
+      "volume": 59676,
+      "trading_value": 185210594,
       "mcap": 0.18,
       "shares": 56702415,
       "categories": [
         "기타"
       ],
-      "rank": 1031
+      "rank": 1030
     },
     {
       "ticker": "234080",
@@ -17936,14 +17919,14 @@ window.KOS_LIVE_DATA = {
       "sector": "기타",
       "price": 11110,
       "change": -1.24,
-      "volume": 27420,
-      "trading_value": 306251090,
+      "volume": 27427,
+      "trading_value": 306328860,
       "mcap": 0.18,
       "shares": 15834554,
       "categories": [
         "기타"
       ],
-      "rank": 1032
+      "rank": 1031
     },
     {
       "ticker": "371950",
@@ -17953,14 +17936,14 @@ window.KOS_LIVE_DATA = {
       "sector": "기타",
       "price": 7790,
       "change": 2.37,
-      "volume": 55821,
-      "trading_value": 439792960,
+      "volume": 55823,
+      "trading_value": 439809420,
       "mcap": 0.18,
       "shares": 22662548,
       "categories": [
         "기타"
       ],
-      "rank": 1033
+      "rank": 1032
     },
     {
       "ticker": "024840",
@@ -17970,15 +17953,15 @@ window.KOS_LIVE_DATA = {
       "sector": "철강·금속",
       "price": 4415,
       "change": 0.68,
-      "volume": 1972360,
-      "trading_value": 8668163293,
+      "volume": 2027794,
+      "trading_value": 8923904613,
       "mcap": 0.18,
       "shares": 40721850,
       "induty_code": "242",
       "categories": [
         "철강·금속"
       ],
-      "rank": 1034
+      "rank": 1033
     },
     {
       "ticker": "024800",
@@ -17988,14 +17971,14 @@ window.KOS_LIVE_DATA = {
       "sector": "기타",
       "price": 4780,
       "change": 3.35,
-      "volume": 276427,
-      "trading_value": 1310741477,
+      "volume": 278032,
+      "trading_value": 1318413217,
       "mcap": 0.18,
       "shares": 37051812,
       "categories": [
         "기타"
       ],
-      "rank": 1035
+      "rank": 1034
     },
     {
       "ticker": "481070",
@@ -18005,10 +17988,27 @@ window.KOS_LIVE_DATA = {
       "sector": "기타",
       "price": 12420,
       "change": -1.51,
-      "volume": 101582,
-      "trading_value": 1222826520,
+      "volume": 101612,
+      "trading_value": 1223199120,
       "mcap": 0.18,
       "shares": 14330250,
+      "categories": [
+        "기타"
+      ],
+      "rank": 1035
+    },
+    {
+      "ticker": "388050",
+      "name": "지투파워",
+      "name_en": "",
+      "market": "코스닥",
+      "sector": "기타",
+      "price": 9350,
+      "change": 1.74,
+      "volume": 294631,
+      "trading_value": 2793741555,
+      "mcap": 0.17,
+      "shares": 18709437,
       "categories": [
         "기타"
       ],
@@ -18022,8 +18022,8 @@ window.KOS_LIVE_DATA = {
       "sector": "기타",
       "price": 4205,
       "change": -6.35,
-      "volume": 600076,
-      "trading_value": 2601624399,
+      "volume": 601709,
+      "trading_value": 2608495959,
       "mcap": 0.17,
       "shares": 41616365,
       "categories": [
@@ -18039,8 +18039,8 @@ window.KOS_LIVE_DATA = {
       "sector": "기타",
       "price": 7170,
       "change": -0.97,
-      "volume": 39840,
-      "trading_value": 284870475,
+      "volume": 39842,
+      "trading_value": 284884815,
       "mcap": 0.17,
       "shares": 24396458,
       "categories": [
@@ -18056,8 +18056,8 @@ window.KOS_LIVE_DATA = {
       "sector": "기타",
       "price": 4720,
       "change": -1.56,
-      "volume": 342051,
-      "trading_value": 1654134421,
+      "volume": 342580,
+      "trading_value": 1656623321,
       "mcap": 0.17,
       "shares": 36704394,
       "categories": [
@@ -18090,8 +18090,8 @@ window.KOS_LIVE_DATA = {
       "sector": "기타",
       "price": 1230,
       "change": -3.07,
-      "volume": 374910,
-      "trading_value": 463245135,
+      "volume": 378456,
+      "trading_value": 467606715,
       "mcap": 0.17,
       "shares": 141806193,
       "categories": [
@@ -18107,8 +18107,8 @@ window.KOS_LIVE_DATA = {
       "sector": "기타",
       "price": 8950,
       "change": -0.56,
-      "volume": 54372,
-      "trading_value": 489049675,
+      "volume": 54422,
+      "trading_value": 489497175,
       "mcap": 0.17,
       "shares": 19522575,
       "categories": [
@@ -18124,8 +18124,8 @@ window.KOS_LIVE_DATA = {
       "sector": "기타",
       "price": 1820,
       "change": -4.91,
-      "volume": 1015495,
-      "trading_value": 1872642971,
+      "volume": 1021979,
+      "trading_value": 1884445463,
       "mcap": 0.17,
       "shares": 94929950,
       "categories": [
@@ -18141,8 +18141,8 @@ window.KOS_LIVE_DATA = {
       "sector": "기타",
       "price": 16220,
       "change": 3.25,
-      "volume": 103383,
-      "trading_value": 1680995665,
+      "volume": 103417,
+      "trading_value": 1681559455,
       "mcap": 0.17,
       "shares": 10716784,
       "categories": [
@@ -18192,8 +18192,8 @@ window.KOS_LIVE_DATA = {
       "sector": "기타",
       "price": 9030,
       "change": 0.78,
-      "volume": 57228,
-      "trading_value": 520478990,
+      "volume": 57230,
+      "trading_value": 520497050,
       "mcap": 0.17,
       "shares": 18900000,
       "categories": [
@@ -18226,8 +18226,8 @@ window.KOS_LIVE_DATA = {
       "sector": "기타",
       "price": 7040,
       "change": 0.14,
-      "volume": 90947,
-      "trading_value": 637132775,
+      "volume": 90959,
+      "trading_value": 637217255,
       "mcap": 0.17,
       "shares": 24537371,
       "categories": [
@@ -18243,8 +18243,8 @@ window.KOS_LIVE_DATA = {
       "sector": "기타",
       "price": 21750,
       "change": 2.35,
-      "volume": 27530,
-      "trading_value": 601535400,
+      "volume": 27580,
+      "trading_value": 602622900,
       "mcap": 0.17,
       "shares": 7860000,
       "categories": [
@@ -18260,8 +18260,8 @@ window.KOS_LIVE_DATA = {
       "sector": "기타",
       "price": 2975,
       "change": 0.17,
-      "volume": 822229,
-      "trading_value": 2480442246,
+      "volume": 835993,
+      "trading_value": 2521368166,
       "mcap": 0.17,
       "shares": 57415295,
       "categories": [
@@ -18277,8 +18277,8 @@ window.KOS_LIVE_DATA = {
       "sector": "기타",
       "price": 5630,
       "change": 0.9,
-      "volume": 931138,
-      "trading_value": 5202190520,
+      "volume": 931793,
+      "trading_value": 5205878700,
       "mcap": 0.17,
       "shares": 30840830,
       "categories": [
@@ -18294,8 +18294,8 @@ window.KOS_LIVE_DATA = {
       "sector": "기타",
       "price": 14150,
       "change": -0.07,
-      "volume": 4661,
-      "trading_value": 66210600,
+      "volume": 4662,
+      "trading_value": 66224750,
       "mcap": 0.17,
       "shares": 12043600,
       "categories": [
@@ -18311,8 +18311,8 @@ window.KOS_LIVE_DATA = {
       "sector": "기타",
       "price": 5010,
       "change": -2.72,
-      "volume": 284139,
-      "trading_value": 1451568802,
+      "volume": 288055,
+      "trading_value": 1471184492,
       "mcap": 0.17,
       "shares": 33442000,
       "categories": [
@@ -18328,8 +18328,8 @@ window.KOS_LIVE_DATA = {
       "sector": "기타",
       "price": 5980,
       "change": 0.0,
-      "volume": 656520,
-      "trading_value": 3957159415,
+      "volume": 658746,
+      "trading_value": 3970484685,
       "mcap": 0.17,
       "shares": 28443146,
       "categories": [
@@ -18379,8 +18379,8 @@ window.KOS_LIVE_DATA = {
       "sector": "기타",
       "price": 1152,
       "change": -1.96,
-      "volume": 742676,
-      "trading_value": 857704490,
+      "volume": 743263,
+      "trading_value": 858380714,
       "mcap": 0.17,
       "shares": 147842183,
       "categories": [
@@ -18396,8 +18396,8 @@ window.KOS_LIVE_DATA = {
       "sector": "기타",
       "price": 11600,
       "change": -8.37,
-      "volume": 87717,
-      "trading_value": 1037886685,
+      "volume": 87724,
+      "trading_value": 1037967885,
       "mcap": 0.17,
       "shares": 14351010,
       "categories": [
@@ -18447,8 +18447,8 @@ window.KOS_LIVE_DATA = {
       "sector": "기타",
       "price": 1919,
       "change": 5.21,
-      "volume": 469033,
-      "trading_value": 873134785,
+      "volume": 469088,
+      "trading_value": 873240575,
       "mcap": 0.17,
       "shares": 90101304,
       "categories": [
@@ -18464,8 +18464,8 @@ window.KOS_LIVE_DATA = {
       "sector": "기타",
       "price": 7750,
       "change": 2.92,
-      "volume": 572806,
-      "trading_value": 4450504550,
+      "volume": 574129,
+      "trading_value": 4460756360,
       "mcap": 0.17,
       "shares": 21600102,
       "categories": [
@@ -18481,8 +18481,8 @@ window.KOS_LIVE_DATA = {
       "sector": "기타",
       "price": 5700,
       "change": -2.4,
-      "volume": 45328,
-      "trading_value": 260672630,
+      "volume": 45339,
+      "trading_value": 260735270,
       "mcap": 0.17,
       "shares": 29116822,
       "categories": [
@@ -18498,8 +18498,8 @@ window.KOS_LIVE_DATA = {
       "sector": "기타",
       "price": 6510,
       "change": -2.54,
-      "volume": 801890,
-      "trading_value": 5358132040,
+      "volume": 805791,
+      "trading_value": 5383502610,
       "mcap": 0.17,
       "shares": 25512992,
       "categories": [
@@ -18515,8 +18515,8 @@ window.KOS_LIVE_DATA = {
       "sector": "기타",
       "price": 14040,
       "change": 2.26,
-      "volume": 262454,
-      "trading_value": 3628146980,
+      "volume": 265393,
+      "trading_value": 3669759060,
       "mcap": 0.17,
       "shares": 12000000,
       "categories": [
@@ -18532,8 +18532,8 @@ window.KOS_LIVE_DATA = {
       "sector": "기타",
       "price": 3170,
       "change": 4.62,
-      "volume": 382280,
-      "trading_value": 1177028936,
+      "volume": 382618,
+      "trading_value": 1178100396,
       "mcap": 0.17,
       "shares": 52870376,
       "categories": [
@@ -18549,9 +18549,9 @@ window.KOS_LIVE_DATA = {
       "sector": "기타",
       "price": 3170,
       "change": -1.86,
-      "volume": 138917,
-      "trading_value": 443481534,
-      "mcap": 0.16,
+      "volume": 138924,
+      "trading_value": 443503724,
+      "mcap": 0.17,
       "shares": 52197139,
       "categories": [
         "기타"
@@ -18568,98 +18568,12 @@ window.KOS_LIVE_DATA = {
       "change": 0.5,
       "volume": 8775,
       "trading_value": 122997530,
-      "mcap": 0.16,
+      "mcap": 0.17,
       "shares": 11855168,
       "categories": [
         "기타"
       ],
       "rank": 1069
-    },
-    {
-      "ticker": "140670",
-      "name": "알에스오토메이션",
-      "name_en": "",
-      "market": "코스닥",
-      "sector": "기타",
-      "price": 12830,
-      "change": -0.7,
-      "volume": 145230,
-      "trading_value": 1868718730,
-      "mcap": 0.16,
-      "shares": 12839840,
-      "categories": [
-        "기타"
-      ],
-      "rank": 1070
-    },
-    {
-      "ticker": "445180",
-      "name": "퓨릿",
-      "name_en": "",
-      "market": "코스닥",
-      "sector": "기타",
-      "price": 9310,
-      "change": 0.65,
-      "volume": 96321,
-      "trading_value": 912162885,
-      "mcap": 0.16,
-      "shares": 17189188,
-      "categories": [
-        "기타"
-      ],
-      "rank": 1071
-    },
-    {
-      "ticker": "025560",
-      "name": "미래산업",
-      "name_en": "MIRAE CORPORATION",
-      "market": "코스피",
-      "sector": "전자·부품",
-      "price": 32150,
-      "change": 12.81,
-      "volume": 268845,
-      "trading_value": 8744011625,
-      "mcap": 0.16,
-      "shares": 5090828,
-      "induty_code": "27219",
-      "categories": [
-        "전자·부품"
-      ],
-      "rank": 1072
-    },
-    {
-      "ticker": "083500",
-      "name": "에프엔에스테크",
-      "name_en": "",
-      "market": "코스닥",
-      "sector": "기타",
-      "price": 18870,
-      "change": 3.51,
-      "volume": 188851,
-      "trading_value": 3630057905,
-      "mcap": 0.16,
-      "shares": 8575722,
-      "categories": [
-        "기타"
-      ],
-      "rank": 1073
-    },
-    {
-      "ticker": "331920",
-      "name": "셀레믹스",
-      "name_en": "",
-      "market": "코스닥",
-      "sector": "기타",
-      "price": 15880,
-      "change": -5.42,
-      "volume": 50884,
-      "trading_value": 827251595,
-      "mcap": 0.16,
-      "shares": 9796977,
-      "categories": [
-        "기타"
-      ],
-      "rank": 1074
     },
     {
       "ticker": "016880",
@@ -18669,10 +18583,96 @@ window.KOS_LIVE_DATA = {
       "sector": "기타",
       "price": 2070,
       "change": 1.72,
-      "volume": 207931,
-      "trading_value": 426181313,
-      "mcap": 0.16,
+      "volume": 208102,
+      "trading_value": 426530183,
+      "mcap": 0.17,
       "shares": 79927080,
+      "categories": [
+        "기타"
+      ],
+      "rank": 1070
+    },
+    {
+      "ticker": "140670",
+      "name": "알에스오토메이션",
+      "name_en": "",
+      "market": "코스닥",
+      "sector": "기타",
+      "price": 12830,
+      "change": -0.7,
+      "volume": 146016,
+      "trading_value": 1878804150,
+      "mcap": 0.16,
+      "shares": 12839840,
+      "categories": [
+        "기타"
+      ],
+      "rank": 1071
+    },
+    {
+      "ticker": "445180",
+      "name": "퓨릿",
+      "name_en": "",
+      "market": "코스닥",
+      "sector": "기타",
+      "price": 9310,
+      "change": 0.65,
+      "volume": 96651,
+      "trading_value": 915235185,
+      "mcap": 0.16,
+      "shares": 17189188,
+      "categories": [
+        "기타"
+      ],
+      "rank": 1072
+    },
+    {
+      "ticker": "025560",
+      "name": "미래산업",
+      "name_en": "MIRAE CORPORATION",
+      "market": "코스피",
+      "sector": "전자·부품",
+      "price": 32150,
+      "change": 12.81,
+      "volume": 269136,
+      "trading_value": 8753378575,
+      "mcap": 0.16,
+      "shares": 5090828,
+      "induty_code": "27219",
+      "categories": [
+        "전자·부품"
+      ],
+      "rank": 1073
+    },
+    {
+      "ticker": "083500",
+      "name": "에프엔에스테크",
+      "name_en": "",
+      "market": "코스닥",
+      "sector": "기타",
+      "price": 18870,
+      "change": 3.51,
+      "volume": 189237,
+      "trading_value": 3637341725,
+      "mcap": 0.16,
+      "shares": 8575722,
+      "categories": [
+        "기타"
+      ],
+      "rank": 1074
+    },
+    {
+      "ticker": "331920",
+      "name": "셀레믹스",
+      "name_en": "",
+      "market": "코스닥",
+      "sector": "기타",
+      "price": 15880,
+      "change": -5.42,
+      "volume": 50932,
+      "trading_value": 828013835,
+      "mcap": 0.16,
+      "shares": 9796977,
       "categories": [
         "기타"
       ],
@@ -18686,8 +18686,8 @@ window.KOS_LIVE_DATA = {
       "sector": "기타",
       "price": 15330,
       "change": -4.01,
-      "volume": 55684,
-      "trading_value": 862625955,
+      "volume": 55788,
+      "trading_value": 864211165,
       "mcap": 0.16,
       "shares": 10575831,
       "categories": [
@@ -18703,8 +18703,8 @@ window.KOS_LIVE_DATA = {
       "sector": "기타",
       "price": 9640,
       "change": -0.1,
-      "volume": 23009,
-      "trading_value": 223354925,
+      "volume": 23089,
+      "trading_value": 224126125,
       "mcap": 0.16,
       "shares": 16720822,
       "categories": [
@@ -18720,8 +18720,8 @@ window.KOS_LIVE_DATA = {
       "sector": "기타",
       "price": 2595,
       "change": 0.19,
-      "volume": 146105,
-      "trading_value": 380167820,
+      "volume": 150901,
+      "trading_value": 392637365,
       "mcap": 0.16,
       "shares": 62638000,
       "categories": [
@@ -18737,8 +18737,8 @@ window.KOS_LIVE_DATA = {
       "sector": "기타",
       "price": 2600,
       "change": 0.19,
-      "volume": 735903,
-      "trading_value": 1910166256,
+      "volume": 745273,
+      "trading_value": 1934528256,
       "mcap": 0.16,
       "shares": 62399130,
       "categories": [
@@ -18771,8 +18771,8 @@ window.KOS_LIVE_DATA = {
       "sector": "기타",
       "price": 12410,
       "change": 6.34,
-      "volume": 188600,
-      "trading_value": 2363013965,
+      "volume": 189260,
+      "trading_value": 2371206865,
       "mcap": 0.16,
       "shares": 12999807,
       "categories": [
@@ -18788,8 +18788,8 @@ window.KOS_LIVE_DATA = {
       "sector": "기타",
       "price": 6010,
       "change": 1.52,
-      "volume": 56476,
-      "trading_value": 339303285,
+      "volume": 56480,
+      "trading_value": 339327325,
       "mcap": 0.16,
       "shares": 27143620,
       "categories": [
@@ -18805,8 +18805,8 @@ window.KOS_LIVE_DATA = {
       "sector": "기타",
       "price": 7930,
       "change": -1.86,
-      "volume": 225937,
-      "trading_value": 1815051860,
+      "volume": 228142,
+      "trading_value": 1832509530,
       "mcap": 0.16,
       "shares": 20000000,
       "categories": [
@@ -18822,8 +18822,8 @@ window.KOS_LIVE_DATA = {
       "sector": "기타",
       "price": 9100,
       "change": -0.11,
-      "volume": 39662,
-      "trading_value": 361604570,
+      "volume": 39954,
+      "trading_value": 364261770,
       "mcap": 0.16,
       "shares": 17772946,
       "categories": [
@@ -18839,8 +18839,8 @@ window.KOS_LIVE_DATA = {
       "sector": "기타",
       "price": 13310,
       "change": 0.53,
-      "volume": 155915,
-      "trading_value": 2090050655,
+      "volume": 157524,
+      "trading_value": 2111441945,
       "mcap": 0.16,
       "shares": 12198866,
       "categories": [
@@ -18856,8 +18856,8 @@ window.KOS_LIVE_DATA = {
       "sector": "기타",
       "price": 5360,
       "change": -1.47,
-      "volume": 62409,
-      "trading_value": 337237415,
+      "volume": 64410,
+      "trading_value": 347942825,
       "mcap": 0.16,
       "shares": 29898656,
       "categories": [
@@ -18890,8 +18890,8 @@ window.KOS_LIVE_DATA = {
       "sector": "기타",
       "price": 13240,
       "change": -1.56,
-      "volume": 128618,
-      "trading_value": 1710743215,
+      "volume": 128626,
+      "trading_value": 1710849135,
       "mcap": 0.16,
       "shares": 12222396,
       "categories": [
@@ -18907,8 +18907,8 @@ window.KOS_LIVE_DATA = {
       "sector": "기타",
       "price": 3490,
       "change": -0.14,
-      "volume": 156791,
-      "trading_value": 550186890,
+      "volume": 157082,
+      "trading_value": 551202480,
       "mcap": 0.16,
       "shares": 45540494,
       "categories": [
@@ -18924,8 +18924,8 @@ window.KOS_LIVE_DATA = {
       "sector": "기타",
       "price": 15000,
       "change": 2.11,
-      "volume": 8429,
-      "trading_value": 126046640,
+      "volume": 8599,
+      "trading_value": 128536780,
       "mcap": 0.16,
       "shares": 10732731,
       "categories": [
@@ -18941,8 +18941,8 @@ window.KOS_LIVE_DATA = {
       "sector": "기타",
       "price": 3505,
       "change": 1.01,
-      "volume": 101862,
-      "trading_value": 358436882,
+      "volume": 101876,
+      "trading_value": 358486022,
       "mcap": 0.16,
       "shares": 45563612,
       "categories": [
@@ -19043,8 +19043,8 @@ window.KOS_LIVE_DATA = {
       "sector": "기타",
       "price": 3915,
       "change": 3.3,
-      "volume": 423730,
-      "trading_value": 1605159832,
+      "volume": 427200,
+      "trading_value": 1618779882,
       "mcap": 0.16,
       "shares": 41026620,
       "categories": [
@@ -19060,8 +19060,8 @@ window.KOS_LIVE_DATA = {
       "sector": "기타",
       "price": 8250,
       "change": -0.84,
-      "volume": 53308,
-      "trading_value": 443144925,
+      "volume": 53555,
+      "trading_value": 445182675,
       "mcap": 0.16,
       "shares": 19085664,
       "categories": [
@@ -19077,8 +19077,8 @@ window.KOS_LIVE_DATA = {
       "sector": "기타",
       "price": 7380,
       "change": 4.09,
-      "volume": 96173,
-      "trading_value": 700809490,
+      "volume": 96176,
+      "trading_value": 700831630,
       "mcap": 0.16,
       "shares": 21691811,
       "categories": [
@@ -19094,8 +19094,8 @@ window.KOS_LIVE_DATA = {
       "sector": "기타",
       "price": 1711,
       "change": -3.17,
-      "volume": 424372,
-      "trading_value": 737215660,
+      "volume": 424495,
+      "trading_value": 737426113,
       "mcap": 0.16,
       "shares": 90895434,
       "categories": [
@@ -19128,8 +19128,8 @@ window.KOS_LIVE_DATA = {
       "sector": "기타",
       "price": 8700,
       "change": -2.47,
-      "volume": 125384,
-      "trading_value": 1109494220,
+      "volume": 125619,
+      "trading_value": 1111538720,
       "mcap": 0.16,
       "shares": 17963290,
       "categories": [
@@ -19145,8 +19145,8 @@ window.KOS_LIVE_DATA = {
       "sector": "기타",
       "price": 26200,
       "change": -0.57,
-      "volume": 11063,
-      "trading_value": 291138950,
+      "volume": 11086,
+      "trading_value": 291741800,
       "mcap": 0.16,
       "shares": 6000000,
       "categories": [
@@ -19162,8 +19162,8 @@ window.KOS_LIVE_DATA = {
       "sector": "기타",
       "price": 10670,
       "change": -2.91,
-      "volume": 25118,
-      "trading_value": 270113660,
+      "volume": 25138,
+      "trading_value": 270327060,
       "mcap": 0.16,
       "shares": 14704872,
       "categories": [
@@ -19179,8 +19179,8 @@ window.KOS_LIVE_DATA = {
       "sector": "기타",
       "price": 1429,
       "change": 2.07,
-      "volume": 939769,
-      "trading_value": 1355870384,
+      "volume": 941144,
+      "trading_value": 1357852751,
       "mcap": 0.16,
       "shares": 111091709,
       "categories": [
@@ -19196,8 +19196,8 @@ window.KOS_LIVE_DATA = {
       "sector": "기타",
       "price": 12300,
       "change": 0.99,
-      "volume": 159249,
-      "trading_value": 1963456760,
+      "volume": 159839,
+      "trading_value": 1970686620,
       "mcap": 0.16,
       "shares": 12694120,
       "categories": [
@@ -19213,65 +19213,14 @@ window.KOS_LIVE_DATA = {
       "sector": "기타",
       "price": 2585,
       "change": -8.66,
-      "volume": 2352510,
-      "trading_value": 6599716706,
+      "volume": 2356355,
+      "trading_value": 6609564016,
       "mcap": 0.16,
       "shares": 60719666,
       "categories": [
         "기타"
       ],
       "rank": 1107
-    },
-    {
-      "ticker": "473980",
-      "name": "노머스",
-      "name_en": "",
-      "market": "코스닥",
-      "sector": "기타",
-      "price": 14000,
-      "change": -0.43,
-      "volume": 45278,
-      "trading_value": 631636465,
-      "mcap": 0.16,
-      "shares": 11059322,
-      "categories": [
-        "기타"
-      ],
-      "rank": 1108
-    },
-    {
-      "ticker": "002170",
-      "name": "SYTS",
-      "name_en": "",
-      "market": "코스피",
-      "sector": "기타",
-      "price": 51600,
-      "change": 2.38,
-      "volume": 3176,
-      "trading_value": 162158400,
-      "mcap": 0.16,
-      "shares": 3000000,
-      "categories": [
-        "기타"
-      ],
-      "rank": 1109
-    },
-    {
-      "ticker": "0011A0",
-      "name": "액스비스",
-      "name_en": "",
-      "market": "코스닥",
-      "sector": "기타",
-      "price": 16540,
-      "change": 3.89,
-      "volume": 120636,
-      "trading_value": 1996551125,
-      "mcap": 0.15,
-      "shares": 9333740,
-      "categories": [
-        "기타"
-      ],
-      "rank": 1110
     },
     {
       "ticker": "106190",
@@ -19283,12 +19232,12 @@ window.KOS_LIVE_DATA = {
       "change": -3.69,
       "volume": 32010,
       "trading_value": 474113000,
-      "mcap": 0.15,
+      "mcap": 0.16,
       "shares": 10633173,
       "categories": [
         "기타"
       ],
-      "rank": 1111
+      "rank": 1108
     },
     {
       "ticker": "046440",
@@ -19298,82 +19247,14 @@ window.KOS_LIVE_DATA = {
       "sector": "기타",
       "price": 4085,
       "change": -0.24,
-      "volume": 83548,
-      "trading_value": 343435205,
-      "mcap": 0.15,
+      "volume": 83680,
+      "trading_value": 343976255,
+      "mcap": 0.16,
       "shares": 38010802,
       "categories": [
         "기타"
       ],
-      "rank": 1112
-    },
-    {
-      "ticker": "179290",
-      "name": "엠아이텍",
-      "name_en": "",
-      "market": "코스닥",
-      "sector": "기타",
-      "price": 4700,
-      "change": -3.09,
-      "volume": 71155,
-      "trading_value": 337658308,
-      "mcap": 0.15,
-      "shares": 32365678,
-      "categories": [
-        "기타"
-      ],
-      "rank": 1113
-    },
-    {
-      "ticker": "036010",
-      "name": "아비코전자",
-      "name_en": "",
-      "market": "코스닥",
-      "sector": "기타",
-      "price": 11610,
-      "change": -3.49,
-      "volume": 251888,
-      "trading_value": 2976348990,
-      "mcap": 0.15,
-      "shares": 13292934,
-      "categories": [
-        "기타"
-      ],
-      "rank": 1114
-    },
-    {
-      "ticker": "289080",
-      "name": "SV인베스트먼트",
-      "name_en": "",
-      "market": "코스닥",
-      "sector": "기타",
-      "price": 2570,
-      "change": -4.1,
-      "volume": 649623,
-      "trading_value": 1698907428,
-      "mcap": 0.15,
-      "shares": 60138233,
-      "categories": [
-        "기타"
-      ],
-      "rank": 1115
-    },
-    {
-      "ticker": "047310",
-      "name": "파워로직스",
-      "name_en": "",
-      "market": "코스닥",
-      "sector": "기타",
-      "price": 4170,
-      "change": -0.48,
-      "volume": 177805,
-      "trading_value": 749500680,
-      "mcap": 0.15,
-      "shares": 36610755,
-      "categories": [
-        "기타"
-      ],
-      "rank": 1116
+      "rank": 1109
     },
     {
       "ticker": "289930",
@@ -19383,14 +19264,14 @@ window.KOS_LIVE_DATA = {
       "sector": "기타",
       "price": 11860,
       "change": 2.24,
-      "volume": 122857,
-      "trading_value": 1456376600,
-      "mcap": 0.15,
+      "volume": 122897,
+      "trading_value": 1456851000,
+      "mcap": 0.16,
       "shares": 13149010,
       "categories": [
         "기타"
       ],
-      "rank": 1117
+      "rank": 1110
     },
     {
       "ticker": "018470",
@@ -19400,48 +19281,14 @@ window.KOS_LIVE_DATA = {
       "sector": "기타",
       "price": 1227,
       "change": -0.57,
-      "volume": 887479,
-      "trading_value": 1089664130,
-      "mcap": 0.15,
+      "volume": 888088,
+      "trading_value": 1090408949,
+      "mcap": 0.16,
       "shares": 126631721,
       "categories": [
         "기타"
       ],
-      "rank": 1118
-    },
-    {
-      "ticker": "000020",
-      "name": "동화약품",
-      "name_en": "",
-      "market": "코스피",
-      "sector": "바이오/제약",
-      "price": 5400,
-      "change": -1.28,
-      "volume": 127747,
-      "trading_value": 693213420,
-      "mcap": 0.15,
-      "shares": 27931470,
-      "categories": [
-        "바이오/제약"
-      ],
-      "rank": 1119
-    },
-    {
-      "ticker": "142210",
-      "name": "유니트론텍",
-      "name_en": "",
-      "market": "코스닥",
-      "sector": "기타",
-      "price": 7170,
-      "change": -5.41,
-      "volume": 494452,
-      "trading_value": 3677267225,
-      "mcap": 0.15,
-      "shares": 20751403,
-      "categories": [
-        "기타"
-      ],
-      "rank": 1120
+      "rank": 1111
     },
     {
       "ticker": "081000",
@@ -19451,10 +19298,163 @@ window.KOS_LIVE_DATA = {
       "sector": "기타",
       "price": 11000,
       "change": 4.76,
-      "volume": 29681,
-      "trading_value": 322414050,
-      "mcap": 0.15,
+      "volume": 32740,
+      "trading_value": 356063050,
+      "mcap": 0.16,
       "shares": 14202975,
+      "categories": [
+        "기타"
+      ],
+      "rank": 1112
+    },
+    {
+      "ticker": "473980",
+      "name": "노머스",
+      "name_en": "",
+      "market": "코스닥",
+      "sector": "기타",
+      "price": 14000,
+      "change": -0.43,
+      "volume": 45278,
+      "trading_value": 631636465,
+      "mcap": 0.15,
+      "shares": 11059322,
+      "categories": [
+        "기타"
+      ],
+      "rank": 1113
+    },
+    {
+      "ticker": "002170",
+      "name": "SYTS",
+      "name_en": "",
+      "market": "코스피",
+      "sector": "기타",
+      "price": 51600,
+      "change": 2.38,
+      "volume": 3176,
+      "trading_value": 162158400,
+      "mcap": 0.15,
+      "shares": 3000000,
+      "categories": [
+        "기타"
+      ],
+      "rank": 1114
+    },
+    {
+      "ticker": "0011A0",
+      "name": "액스비스",
+      "name_en": "",
+      "market": "코스닥",
+      "sector": "기타",
+      "price": 16540,
+      "change": 3.89,
+      "volume": 120651,
+      "trading_value": 1996799225,
+      "mcap": 0.15,
+      "shares": 9333740,
+      "categories": [
+        "기타"
+      ],
+      "rank": 1115
+    },
+    {
+      "ticker": "179290",
+      "name": "엠아이텍",
+      "name_en": "",
+      "market": "코스닥",
+      "sector": "기타",
+      "price": 4700,
+      "change": -3.09,
+      "volume": 71335,
+      "trading_value": 338504208,
+      "mcap": 0.15,
+      "shares": 32365678,
+      "categories": [
+        "기타"
+      ],
+      "rank": 1116
+    },
+    {
+      "ticker": "036010",
+      "name": "아비코전자",
+      "name_en": "",
+      "market": "코스닥",
+      "sector": "기타",
+      "price": 11610,
+      "change": -3.49,
+      "volume": 252719,
+      "trading_value": 2985997940,
+      "mcap": 0.15,
+      "shares": 13292934,
+      "categories": [
+        "기타"
+      ],
+      "rank": 1117
+    },
+    {
+      "ticker": "289080",
+      "name": "SV인베스트먼트",
+      "name_en": "",
+      "market": "코스닥",
+      "sector": "기타",
+      "price": 2570,
+      "change": -4.1,
+      "volume": 650496,
+      "trading_value": 1701168348,
+      "mcap": 0.15,
+      "shares": 60138233,
+      "categories": [
+        "기타"
+      ],
+      "rank": 1118
+    },
+    {
+      "ticker": "047310",
+      "name": "파워로직스",
+      "name_en": "",
+      "market": "코스닥",
+      "sector": "기타",
+      "price": 4170,
+      "change": -0.48,
+      "volume": 178274,
+      "trading_value": 751455315,
+      "mcap": 0.15,
+      "shares": 36610755,
+      "categories": [
+        "기타"
+      ],
+      "rank": 1119
+    },
+    {
+      "ticker": "000020",
+      "name": "동화약품",
+      "name_en": "",
+      "market": "코스피",
+      "sector": "바이오/제약",
+      "price": 5400,
+      "change": -1.28,
+      "volume": 127886,
+      "trading_value": 693961020,
+      "mcap": 0.15,
+      "shares": 27931470,
+      "categories": [
+        "바이오/제약"
+      ],
+      "rank": 1120
+    },
+    {
+      "ticker": "142210",
+      "name": "유니트론텍",
+      "name_en": "",
+      "market": "코스닥",
+      "sector": "기타",
+      "price": 7170,
+      "change": -5.41,
+      "volume": 500089,
+      "trading_value": 3717546925,
+      "mcap": 0.15,
+      "shares": 20751403,
       "categories": [
         "기타"
       ],
@@ -19485,8 +19485,8 @@ window.KOS_LIVE_DATA = {
       "sector": "기타",
       "price": 3500,
       "change": -1.13,
-      "volume": 270915,
-      "trading_value": 965393520,
+      "volume": 272228,
+      "trading_value": 969960640,
       "mcap": 0.15,
       "shares": 42888468,
       "categories": [
@@ -19519,8 +19519,8 @@ window.KOS_LIVE_DATA = {
       "sector": "기타",
       "price": 12830,
       "change": -0.39,
-      "volume": 40810,
-      "trading_value": 528705125,
+      "volume": 40950,
+      "trading_value": 530501325,
       "mcap": 0.15,
       "shares": 11694082,
       "categories": [
@@ -19536,8 +19536,8 @@ window.KOS_LIVE_DATA = {
       "sector": "기타",
       "price": 15210,
       "change": 11.02,
-      "volume": 149020,
-      "trading_value": 2245940675,
+      "volume": 149025,
+      "trading_value": 2246016705,
       "mcap": 0.15,
       "shares": 9925885,
       "categories": [
@@ -19587,8 +19587,8 @@ window.KOS_LIVE_DATA = {
       "sector": "기타",
       "price": 3745,
       "change": -0.27,
-      "volume": 194256,
-      "trading_value": 741294752,
+      "volume": 194878,
+      "trading_value": 743624142,
       "mcap": 0.15,
       "shares": 40191250,
       "categories": [
@@ -19604,8 +19604,8 @@ window.KOS_LIVE_DATA = {
       "sector": "기타",
       "price": 1700,
       "change": -1.16,
-      "volume": 236982,
-      "trading_value": 403630006,
+      "volume": 239476,
+      "trading_value": 407867336,
       "mcap": 0.15,
       "shares": 88106963,
       "categories": [
@@ -19638,8 +19638,8 @@ window.KOS_LIVE_DATA = {
       "sector": "기타",
       "price": 2670,
       "change": -2.38,
-      "volume": 79251,
-      "trading_value": 215089505,
+      "volume": 79287,
+      "trading_value": 215187465,
       "mcap": 0.15,
       "shares": 55320000,
       "categories": [
@@ -19655,8 +19655,8 @@ window.KOS_LIVE_DATA = {
       "sector": "기타",
       "price": 6580,
       "change": 1.39,
-      "volume": 73662,
-      "trading_value": 482801450,
+      "volume": 73673,
+      "trading_value": 482873830,
       "mcap": 0.15,
       "shares": 22946663,
       "categories": [
@@ -19672,8 +19672,8 @@ window.KOS_LIVE_DATA = {
       "sector": "기타",
       "price": 5310,
       "change": -0.93,
-      "volume": 86381,
-      "trading_value": 463762355,
+      "volume": 86431,
+      "trading_value": 464026355,
       "mcap": 0.15,
       "shares": 28093405,
       "categories": [
@@ -19706,8 +19706,8 @@ window.KOS_LIVE_DATA = {
       "sector": "기타",
       "price": 15280,
       "change": 3.45,
-      "volume": 76195,
-      "trading_value": 1174788075,
+      "volume": 76347,
+      "trading_value": 1177092825,
       "mcap": 0.15,
       "shares": 9721172,
       "categories": [
@@ -19723,8 +19723,8 @@ window.KOS_LIVE_DATA = {
       "sector": "기타",
       "price": 6580,
       "change": -0.3,
-      "volume": 28288,
-      "trading_value": 186357600,
+      "volume": 28301,
+      "trading_value": 186443140,
       "mcap": 0.15,
       "shares": 22800500,
       "categories": [
@@ -19757,8 +19757,8 @@ window.KOS_LIVE_DATA = {
       "sector": "전자·부품",
       "price": 4910,
       "change": 29.89,
-      "volume": 3013809,
-      "trading_value": 13759289334,
+      "volume": 3016411,
+      "trading_value": 13772065154,
       "mcap": 0.15,
       "shares": 30614160,
       "induty_code": "264",
@@ -19775,8 +19775,8 @@ window.KOS_LIVE_DATA = {
       "sector": "기타",
       "price": 9230,
       "change": -4.05,
-      "volume": 73370,
-      "trading_value": 671813810,
+      "volume": 73482,
+      "trading_value": 672834870,
       "mcap": 0.15,
       "shares": 16318851,
       "categories": [
@@ -19792,8 +19792,8 @@ window.KOS_LIVE_DATA = {
       "sector": "기타",
       "price": 7100,
       "change": -3.66,
-      "volume": 116758,
-      "trading_value": 848270140,
+      "volume": 117237,
+      "trading_value": 851672900,
       "mcap": 0.15,
       "shares": 20628000,
       "categories": [
@@ -19809,8 +19809,8 @@ window.KOS_LIVE_DATA = {
       "sector": "기타",
       "price": 14380,
       "change": -0.96,
-      "volume": 22400,
-      "trading_value": 326612115,
+      "volume": 22402,
+      "trading_value": 326640895,
       "mcap": 0.15,
       "shares": 10347756,
       "categories": [
@@ -19860,8 +19860,8 @@ window.KOS_LIVE_DATA = {
       "sector": "금융",
       "price": 9530,
       "change": -8.37,
-      "volume": 2045620,
-      "trading_value": 19967778460,
+      "volume": 2063907,
+      "trading_value": 20140762510,
       "mcap": 0.15,
       "shares": 15610000,
       "induty_code": "649",
@@ -19878,8 +19878,8 @@ window.KOS_LIVE_DATA = {
       "sector": "기타",
       "price": 610,
       "change": 2.35,
-      "volume": 1442994,
-      "trading_value": 881532102,
+      "volume": 1446114,
+      "trading_value": 883414397,
       "mcap": 0.15,
       "shares": 238684063,
       "categories": [
@@ -19895,8 +19895,8 @@ window.KOS_LIVE_DATA = {
       "sector": "기타",
       "price": 5590,
       "change": 1.45,
-      "volume": 872053,
-      "trading_value": 4795702790,
+      "volume": 877119,
+      "trading_value": 4823926850,
       "mcap": 0.15,
       "shares": 26489500,
       "categories": [
@@ -19963,8 +19963,8 @@ window.KOS_LIVE_DATA = {
       "sector": "기타",
       "price": 51000,
       "change": -3.59,
-      "volume": 64431,
-      "trading_value": 3296034050,
+      "volume": 64495,
+      "trading_value": 3299317250,
       "mcap": 0.15,
       "shares": 2892754,
       "categories": [
@@ -19980,8 +19980,8 @@ window.KOS_LIVE_DATA = {
       "sector": "기타",
       "price": 4535,
       "change": 1.91,
-      "volume": 136152,
-      "trading_value": 620244096,
+      "volume": 136400,
+      "trading_value": 621368776,
       "mcap": 0.15,
       "shares": 32072055,
       "categories": [
@@ -19997,8 +19997,8 @@ window.KOS_LIVE_DATA = {
       "sector": "기타",
       "price": 8990,
       "change": -0.66,
-      "volume": 159820,
-      "trading_value": 1435693460,
+      "volume": 160569,
+      "trading_value": 1442426940,
       "mcap": 0.15,
       "shares": 16496790,
       "categories": [
@@ -20031,8 +20031,8 @@ window.KOS_LIVE_DATA = {
       "sector": "기타",
       "price": 10900,
       "change": 3.81,
-      "volume": 116987,
-      "trading_value": 1252343245,
+      "volume": 117087,
+      "trading_value": 1253434845,
       "mcap": 0.15,
       "shares": 13500000,
       "categories": [
@@ -20048,8 +20048,8 @@ window.KOS_LIVE_DATA = {
       "sector": "기타",
       "price": 11200,
       "change": -1.32,
-      "volume": 102215,
-      "trading_value": 1138657055,
+      "volume": 102318,
+      "trading_value": 1139811165,
       "mcap": 0.15,
       "shares": 13042420,
       "categories": [
@@ -20065,8 +20065,8 @@ window.KOS_LIVE_DATA = {
       "sector": "전자·부품",
       "price": 3000,
       "change": 19.05,
-      "volume": 4002355,
-      "trading_value": 11620574503,
+      "volume": 4024652,
+      "trading_value": 11686253468,
       "mcap": 0.15,
       "shares": 51664906,
       "induty_code": "262",
@@ -20083,8 +20083,8 @@ window.KOS_LIVE_DATA = {
       "sector": "전자·부품",
       "price": 2655,
       "change": 2.12,
-      "volume": 2961356,
-      "trading_value": 7884249154,
+      "volume": 2968144,
+      "trading_value": 7902235244,
       "mcap": 0.15,
       "shares": 57088614,
       "induty_code": "26410",
@@ -20101,8 +20101,8 @@ window.KOS_LIVE_DATA = {
       "sector": "기타",
       "price": 10220,
       "change": 8.03,
-      "volume": 229005,
-      "trading_value": 2380118480,
+      "volume": 229466,
+      "trading_value": 2384829900,
       "mcap": 0.15,
       "shares": 14307648,
       "categories": [
@@ -20118,8 +20118,8 @@ window.KOS_LIVE_DATA = {
       "sector": "기타",
       "price": 3015,
       "change": -7.94,
-      "volume": 1600124,
-      "trading_value": 4951047398,
+      "volume": 1639790,
+      "trading_value": 5068991968,
       "mcap": 0.14,
       "shares": 48000000,
       "categories": [
@@ -20152,8 +20152,8 @@ window.KOS_LIVE_DATA = {
       "sector": "기타",
       "price": 1839,
       "change": -0.59,
-      "volume": 58857,
-      "trading_value": 106747125,
+      "volume": 58861,
+      "trading_value": 106754489,
       "mcap": 0.14,
       "shares": 77752637,
       "categories": [
@@ -20169,8 +20169,8 @@ window.KOS_LIVE_DATA = {
       "sector": "기타",
       "price": 1366,
       "change": 0.15,
-      "volume": 723981,
-      "trading_value": 1002168172,
+      "volume": 724941,
+      "trading_value": 1003487894,
       "mcap": 0.14,
       "shares": 103766907,
       "categories": [
@@ -20186,8 +20186,8 @@ window.KOS_LIVE_DATA = {
       "sector": "기타",
       "price": 15830,
       "change": 1.74,
-      "volume": 64179,
-      "trading_value": 1014505740,
+      "volume": 64255,
+      "trading_value": 1015708820,
       "mcap": 0.14,
       "shares": 8987520,
       "categories": [
@@ -20203,8 +20203,8 @@ window.KOS_LIVE_DATA = {
       "sector": "기타",
       "price": 7800,
       "change": -1.64,
-      "volume": 267131,
-      "trading_value": 2105520520,
+      "volume": 268517,
+      "trading_value": 2116349730,
       "mcap": 0.14,
       "shares": 18310066,
       "categories": [
@@ -20220,8 +20220,8 @@ window.KOS_LIVE_DATA = {
       "sector": "기타",
       "price": 5800,
       "change": -2.36,
-      "volume": 246068,
-      "trading_value": 1438396355,
+      "volume": 248190,
+      "trading_value": 1450674005,
       "mcap": 0.14,
       "shares": 24482092,
       "categories": [
@@ -20237,8 +20237,8 @@ window.KOS_LIVE_DATA = {
       "sector": "기타",
       "price": 7990,
       "change": -0.75,
-      "volume": 132503,
-      "trading_value": 1069801410,
+      "volume": 134534,
+      "trading_value": 1086030110,
       "mcap": 0.14,
       "shares": 17841712,
       "categories": [
@@ -20271,8 +20271,8 @@ window.KOS_LIVE_DATA = {
       "sector": "기타",
       "price": 8940,
       "change": -3.97,
-      "volume": 40833,
-      "trading_value": 369823470,
+      "volume": 40838,
+      "trading_value": 369868170,
       "mcap": 0.14,
       "shares": 16019520,
       "categories": [
@@ -20288,8 +20288,8 @@ window.KOS_LIVE_DATA = {
       "sector": "기타",
       "price": 1925,
       "change": 2.39,
-      "volume": 332026,
-      "trading_value": 641030497,
+      "volume": 337652,
+      "trading_value": 651860547,
       "mcap": 0.14,
       "shares": 73140914,
       "categories": [
@@ -20305,8 +20305,8 @@ window.KOS_LIVE_DATA = {
       "sector": "기타",
       "price": 11850,
       "change": -1.17,
-      "volume": 57482,
-      "trading_value": 674573170,
+      "volume": 57525,
+      "trading_value": 675082720,
       "mcap": 0.14,
       "shares": 12055535,
       "categories": [
@@ -20322,8 +20322,8 @@ window.KOS_LIVE_DATA = {
       "sector": "기타",
       "price": 1352,
       "change": -1.67,
-      "volume": 713741,
-      "trading_value": 971641770,
+      "volume": 715444,
+      "trading_value": 973936827,
       "mcap": 0.14,
       "shares": 103259036,
       "categories": [
@@ -20339,8 +20339,8 @@ window.KOS_LIVE_DATA = {
       "sector": "기타",
       "price": 3890,
       "change": 4.29,
-      "volume": 334428,
-      "trading_value": 1300020652,
+      "volume": 335155,
+      "trading_value": 1302848682,
       "mcap": 0.14,
       "shares": 37259974,
       "categories": [
@@ -20356,8 +20356,8 @@ window.KOS_LIVE_DATA = {
       "sector": "기타",
       "price": 2585,
       "change": 3.4,
-      "volume": 370531,
-      "trading_value": 979950572,
+      "volume": 372010,
+      "trading_value": 983796372,
       "mcap": 0.14,
       "shares": 54244482,
       "categories": [
@@ -20373,8 +20373,8 @@ window.KOS_LIVE_DATA = {
       "sector": "기타",
       "price": 12310,
       "change": 0.41,
-      "volume": 10835,
-      "trading_value": 132342320,
+      "volume": 10847,
+      "trading_value": 132490040,
       "mcap": 0.14,
       "shares": 11558200,
       "categories": [
@@ -20390,8 +20390,8 @@ window.KOS_LIVE_DATA = {
       "sector": "기타",
       "price": 4560,
       "change": -2.56,
-      "volume": 188663,
-      "trading_value": 878337293,
+      "volume": 194201,
+      "trading_value": 903591073,
       "mcap": 0.14,
       "shares": 30000000,
       "categories": [
@@ -20407,8 +20407,8 @@ window.KOS_LIVE_DATA = {
       "sector": "기타",
       "price": 9080,
       "change": 0.0,
-      "volume": 150076,
-      "trading_value": 1379517130,
+      "volume": 150498,
+      "trading_value": 1383320220,
       "mcap": 0.14,
       "shares": 15246000,
       "categories": [
@@ -20424,8 +20424,8 @@ window.KOS_LIVE_DATA = {
       "sector": "기타",
       "price": 2605,
       "change": 1.96,
-      "volume": 293213,
-      "trading_value": 751278228,
+      "volume": 294611,
+      "trading_value": 754919978,
       "mcap": 0.14,
       "shares": 53986288,
       "categories": [
@@ -20441,8 +20441,8 @@ window.KOS_LIVE_DATA = {
       "sector": "기타",
       "price": 6610,
       "change": 2.32,
-      "volume": 105583,
-      "trading_value": 701145730,
+      "volume": 105591,
+      "trading_value": 701198610,
       "mcap": 0.14,
       "shares": 20933940,
       "categories": [
@@ -20458,8 +20458,8 @@ window.KOS_LIVE_DATA = {
       "sector": "기타",
       "price": 4770,
       "change": -1.04,
-      "volume": 31985,
-      "trading_value": 153314660,
+      "volume": 31987,
+      "trading_value": 153324340,
       "mcap": 0.14,
       "shares": 29228750,
       "categories": [
@@ -20475,8 +20475,8 @@ window.KOS_LIVE_DATA = {
       "sector": "기타",
       "price": 8780,
       "change": 0.34,
-      "volume": 9387,
-      "trading_value": 82022030,
+      "volume": 9392,
+      "trading_value": 82065930,
       "mcap": 0.14,
       "shares": 16008300,
       "categories": [
@@ -20509,8 +20509,8 @@ window.KOS_LIVE_DATA = {
       "sector": "기타",
       "price": 4150,
       "change": -9.39,
-      "volume": 447533,
-      "trading_value": 1899718342,
+      "volume": 448895,
+      "trading_value": 1905370157,
       "mcap": 0.14,
       "shares": 32887536,
       "categories": [
@@ -20526,8 +20526,8 @@ window.KOS_LIVE_DATA = {
       "sector": "건설·건자재",
       "price": 933,
       "change": 7.74,
-      "volume": 7357059,
-      "trading_value": 7119256997,
+      "volume": 7358253,
+      "trading_value": 7120371336,
       "mcap": 0.14,
       "shares": 145471745,
       "induty_code": "41221",
@@ -20561,8 +20561,8 @@ window.KOS_LIVE_DATA = {
       "sector": "기타",
       "price": 5700,
       "change": -1.38,
-      "volume": 119772,
-      "trading_value": 686004940,
+      "volume": 119785,
+      "trading_value": 686079040,
       "mcap": 0.14,
       "shares": 24054799,
       "categories": [
@@ -20595,8 +20595,8 @@ window.KOS_LIVE_DATA = {
       "sector": "기타",
       "price": 5670,
       "change": 0.89,
-      "volume": 742077,
-      "trading_value": 4298551205,
+      "volume": 746493,
+      "trading_value": 4323524545,
       "mcap": 0.14,
       "shares": 23920557,
       "categories": [
@@ -20646,8 +20646,8 @@ window.KOS_LIVE_DATA = {
       "sector": "기타",
       "price": 15130,
       "change": -1.43,
-      "volume": 28253,
-      "trading_value": 427338555,
+      "volume": 28254,
+      "trading_value": 427353685,
       "mcap": 0.14,
       "shares": 9079600,
       "categories": [
@@ -20663,8 +20663,8 @@ window.KOS_LIVE_DATA = {
       "sector": "기타",
       "price": 9660,
       "change": 0.42,
-      "volume": 17840,
-      "trading_value": 171657410,
+      "volume": 17850,
+      "trading_value": 171754510,
       "mcap": 0.14,
       "shares": 14300000,
       "categories": [
@@ -20680,8 +20680,8 @@ window.KOS_LIVE_DATA = {
       "sector": "기타",
       "price": 7350,
       "change": 19.51,
-      "volume": 557221,
-      "trading_value": 3895681935,
+      "volume": 559404,
+      "trading_value": 3911729485,
       "mcap": 0.14,
       "shares": 19520532,
       "categories": [
@@ -20697,8 +20697,8 @@ window.KOS_LIVE_DATA = {
       "sector": "기타",
       "price": 9080,
       "change": 0.78,
-      "volume": 28819,
-      "trading_value": 261111030,
+      "volume": 28820,
+      "trading_value": 261120100,
       "mcap": 0.14,
       "shares": 15068406,
       "categories": [
@@ -20714,8 +20714,8 @@ window.KOS_LIVE_DATA = {
       "sector": "기타",
       "price": 8960,
       "change": 3.82,
-      "volume": 201255,
-      "trading_value": 1794872255,
+      "volume": 201286,
+      "trading_value": 1795147855,
       "mcap": 0.14,
       "shares": 15210000,
       "categories": [
@@ -20748,8 +20748,8 @@ window.KOS_LIVE_DATA = {
       "sector": "기타",
       "price": 7540,
       "change": 0.94,
-      "volume": 244653,
-      "trading_value": 1851824535,
+      "volume": 248061,
+      "trading_value": 1877534225,
       "mcap": 0.14,
       "shares": 18000000,
       "categories": [
@@ -20765,8 +20765,8 @@ window.KOS_LIVE_DATA = {
       "sector": "기타",
       "price": 2490,
       "change": -0.4,
-      "volume": 231185,
-      "trading_value": 569293090,
+      "volume": 236235,
+      "trading_value": 581637590,
       "mcap": 0.14,
       "shares": 55521220,
       "categories": [
@@ -20782,8 +20782,8 @@ window.KOS_LIVE_DATA = {
       "sector": "기타",
       "price": 12650,
       "change": 3.01,
-      "volume": 34811,
-      "trading_value": 434697720,
+      "volume": 34996,
+      "trading_value": 437037670,
       "mcap": 0.14,
       "shares": 10841400,
       "categories": [
@@ -20816,14 +20816,31 @@ window.KOS_LIVE_DATA = {
       "sector": "기타",
       "price": 7430,
       "change": 5.54,
-      "volume": 268929,
-      "trading_value": 2084170085,
-      "mcap": 0.13,
+      "volume": 269166,
+      "trading_value": 2085932675,
+      "mcap": 0.14,
       "shares": 18193230,
       "categories": [
         "기타"
       ],
       "rank": 1201
+    },
+    {
+      "ticker": "453450",
+      "name": "그리드위즈",
+      "name_en": "",
+      "market": "코스닥",
+      "sector": "기타",
+      "price": 17000,
+      "change": 3.91,
+      "volume": 48235,
+      "trading_value": 815440610,
+      "mcap": 0.14,
+      "shares": 7942750,
+      "categories": [
+        "기타"
+      ],
+      "rank": 1202
     },
     {
       "ticker": "086890",
@@ -20833,14 +20850,14 @@ window.KOS_LIVE_DATA = {
       "sector": "기타",
       "price": 3265,
       "change": 0.46,
-      "volume": 133758,
-      "trading_value": 442548805,
+      "volume": 133766,
+      "trading_value": 442575170,
       "mcap": 0.13,
       "shares": 40774650,
       "categories": [
         "기타"
       ],
-      "rank": 1202
+      "rank": 1203
     },
     {
       "ticker": "192410",
@@ -20850,14 +20867,14 @@ window.KOS_LIVE_DATA = {
       "sector": "기타",
       "price": 5090,
       "change": -12.99,
-      "volume": 519885,
-      "trading_value": 2793197130,
+      "volume": 520952,
+      "trading_value": 2798629370,
       "mcap": 0.13,
       "shares": 25185909,
       "categories": [
         "기타"
       ],
-      "rank": 1203
+      "rank": 1204
     },
     {
       "ticker": "109740",
@@ -20874,7 +20891,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 1204
+      "rank": 1205
     },
     {
       "ticker": "001360",
@@ -20884,14 +20901,14 @@ window.KOS_LIVE_DATA = {
       "sector": "기타",
       "price": 1416,
       "change": -1.8,
-      "volume": 470055,
-      "trading_value": 671454436,
+      "volume": 470923,
+      "trading_value": 672683204,
       "mcap": 0.13,
       "shares": 94162079,
       "categories": [
         "기타"
       ],
-      "rank": 1205
+      "rank": 1206
     },
     {
       "ticker": "396270",
@@ -20901,14 +20918,14 @@ window.KOS_LIVE_DATA = {
       "sector": "기타",
       "price": 4045,
       "change": 1.13,
-      "volume": 303055,
-      "trading_value": 1233334908,
+      "volume": 303153,
+      "trading_value": 1233738928,
       "mcap": 0.13,
       "shares": 32887431,
       "categories": [
         "기타"
       ],
-      "rank": 1206
+      "rank": 1207
     },
     {
       "ticker": "163730",
@@ -20918,14 +20935,14 @@ window.KOS_LIVE_DATA = {
       "sector": "기타",
       "price": 13700,
       "change": -6.29,
-      "volume": 138263,
-      "trading_value": 1943995060,
+      "volume": 140496,
+      "trading_value": 1974587160,
       "mcap": 0.13,
       "shares": 9406568,
       "categories": [
         "기타"
       ],
-      "rank": 1207
+      "rank": 1208
     },
     {
       "ticker": "054920",
@@ -20935,14 +20952,14 @@ window.KOS_LIVE_DATA = {
       "sector": "기타",
       "price": 4660,
       "change": -3.32,
-      "volume": 359772,
-      "trading_value": 1698461643,
+      "volume": 364191,
+      "trading_value": 1719052968,
       "mcap": 0.13,
       "shares": 28217081,
       "categories": [
         "기타"
       ],
-      "rank": 1208
+      "rank": 1209
     },
     {
       "ticker": "475230",
@@ -20952,27 +20969,10 @@ window.KOS_LIVE_DATA = {
       "sector": "기타",
       "price": 11870,
       "change": -3.57,
-      "volume": 41131,
-      "trading_value": 492575880,
+      "volume": 41222,
+      "trading_value": 493656050,
       "mcap": 0.13,
       "shares": 10898683,
-      "categories": [
-        "기타"
-      ],
-      "rank": 1209
-    },
-    {
-      "ticker": "453450",
-      "name": "그리드위즈",
-      "name_en": "",
-      "market": "코스닥",
-      "sector": "기타",
-      "price": 17000,
-      "change": 3.91,
-      "volume": 48235,
-      "trading_value": 815440610,
-      "mcap": 0.13,
-      "shares": 7942750,
       "categories": [
         "기타"
       ],
@@ -20986,8 +20986,8 @@ window.KOS_LIVE_DATA = {
       "sector": "기타",
       "price": 3695,
       "change": -2.12,
-      "volume": 78583,
-      "trading_value": 290965002,
+      "volume": 78637,
+      "trading_value": 291164512,
       "mcap": 0.13,
       "shares": 35542818,
       "categories": [
@@ -21003,8 +21003,8 @@ window.KOS_LIVE_DATA = {
       "sector": "기타",
       "price": 5560,
       "change": -0.36,
-      "volume": 88990,
-      "trading_value": 496495765,
+      "volume": 89846,
+      "trading_value": 501254675,
       "mcap": 0.13,
       "shares": 23650793,
       "categories": [
@@ -21020,8 +21020,8 @@ window.KOS_LIVE_DATA = {
       "sector": "기타",
       "price": 8140,
       "change": -4.57,
-      "volume": 12052,
-      "trading_value": 100006190,
+      "volume": 12083,
+      "trading_value": 100258530,
       "mcap": 0.13,
       "shares": 15964415,
       "categories": [
@@ -21037,8 +21037,8 @@ window.KOS_LIVE_DATA = {
       "sector": "기타",
       "price": 5580,
       "change": 1.27,
-      "volume": 50605,
-      "trading_value": 279603570,
+      "volume": 50636,
+      "trading_value": 279776920,
       "mcap": 0.13,
       "shares": 23906860,
       "categories": [
@@ -21088,8 +21088,8 @@ window.KOS_LIVE_DATA = {
       "sector": "기타",
       "price": 3080,
       "change": 0.98,
-      "volume": 23310,
-      "trading_value": 72338915,
+      "volume": 23311,
+      "trading_value": 72341960,
       "mcap": 0.13,
       "shares": 43232455,
       "categories": [
@@ -21105,8 +21105,8 @@ window.KOS_LIVE_DATA = {
       "sector": "기타",
       "price": 12790,
       "change": 7.39,
-      "volume": 196471,
-      "trading_value": 2476141150,
+      "volume": 196896,
+      "trading_value": 2481540780,
       "mcap": 0.13,
       "shares": 10404468,
       "categories": [
@@ -21122,8 +21122,8 @@ window.KOS_LIVE_DATA = {
       "sector": "기타",
       "price": 14000,
       "change": 0.29,
-      "volume": 1750,
-      "trading_value": 24539185,
+      "volume": 1751,
+      "trading_value": 24553235,
       "mcap": 0.13,
       "shares": 9240077,
       "categories": [
@@ -21139,8 +21139,8 @@ window.KOS_LIVE_DATA = {
       "sector": "기타",
       "price": 9840,
       "change": -4.0,
-      "volume": 275214,
-      "trading_value": 2755851210,
+      "volume": 278999,
+      "trading_value": 2793035870,
       "mcap": 0.13,
       "shares": 13117920,
       "categories": [
@@ -21156,8 +21156,8 @@ window.KOS_LIVE_DATA = {
       "sector": "기타",
       "price": 6240,
       "change": -0.16,
-      "volume": 138862,
-      "trading_value": 878451595,
+      "volume": 138877,
+      "trading_value": 878548195,
       "mcap": 0.13,
       "shares": 20921984,
       "categories": [
@@ -21207,8 +21207,8 @@ window.KOS_LIVE_DATA = {
       "sector": "기타",
       "price": 4120,
       "change": 4.57,
-      "volume": 84089,
-      "trading_value": 350474208,
+      "volume": 84407,
+      "trading_value": 351772928,
       "mcap": 0.13,
       "shares": 30726747,
       "categories": [
@@ -21224,8 +21224,8 @@ window.KOS_LIVE_DATA = {
       "sector": "기타",
       "price": 4720,
       "change": -1.67,
-      "volume": 136915,
-      "trading_value": 656548567,
+      "volume": 137011,
+      "trading_value": 657003062,
       "mcap": 0.13,
       "shares": 27270000,
       "categories": [
@@ -21241,8 +21241,8 @@ window.KOS_LIVE_DATA = {
       "sector": "기타",
       "price": 19540,
       "change": -0.66,
-      "volume": 20691,
-      "trading_value": 406173860,
+      "volume": 20696,
+      "trading_value": 406271620,
       "mcap": 0.13,
       "shares": 6600000,
       "categories": [
@@ -21258,8 +21258,8 @@ window.KOS_LIVE_DATA = {
       "sector": "기타",
       "price": 11160,
       "change": 2.86,
-      "volume": 137266,
-      "trading_value": 1522819070,
+      "volume": 137629,
+      "trading_value": 1526877570,
       "mcap": 0.13,
       "shares": 11789762,
       "categories": [
@@ -21275,8 +21275,8 @@ window.KOS_LIVE_DATA = {
       "sector": "기타",
       "price": 4065,
       "change": 0.12,
-      "volume": 65034,
-      "trading_value": 263855375,
+      "volume": 65634,
+      "trading_value": 266294375,
       "mcap": 0.13,
       "shares": 31900000,
       "categories": [
@@ -21309,8 +21309,8 @@ window.KOS_LIVE_DATA = {
       "sector": "기타",
       "price": 1901,
       "change": 5.96,
-      "volume": 191761,
-      "trading_value": 354052499,
+      "volume": 193261,
+      "trading_value": 356903999,
       "mcap": 0.13,
       "shares": 70805940,
       "categories": [
@@ -21326,8 +21326,8 @@ window.KOS_LIVE_DATA = {
       "sector": "기타",
       "price": 5010,
       "change": 1.62,
-      "volume": 220083,
-      "trading_value": 1110336843,
+      "volume": 220314,
+      "trading_value": 1111494153,
       "mcap": 0.13,
       "shares": 25443768,
       "categories": [
@@ -21343,8 +21343,8 @@ window.KOS_LIVE_DATA = {
       "sector": "기타",
       "price": 11430,
       "change": 5.83,
-      "volume": 17642,
-      "trading_value": 197590940,
+      "volume": 17672,
+      "trading_value": 197933840,
       "mcap": 0.13,
       "shares": 11400000,
       "categories": [
@@ -21360,8 +21360,8 @@ window.KOS_LIVE_DATA = {
       "sector": "기타",
       "price": 11030,
       "change": -3.25,
-      "volume": 69738,
-      "trading_value": 767243220,
+      "volume": 70636,
+      "trading_value": 777136960,
       "mcap": 0.13,
       "shares": 11753082,
       "categories": [
@@ -21377,8 +21377,8 @@ window.KOS_LIVE_DATA = {
       "sector": "기타",
       "price": 5670,
       "change": 0.71,
-      "volume": 107130,
-      "trading_value": 610554730,
+      "volume": 107441,
+      "trading_value": 612318100,
       "mcap": 0.13,
       "shares": 22570224,
       "categories": [
@@ -21394,8 +21394,8 @@ window.KOS_LIVE_DATA = {
       "sector": "기타",
       "price": 10480,
       "change": -0.57,
-      "volume": 40267,
-      "trading_value": 422682105,
+      "volume": 40457,
+      "trading_value": 424673305,
       "mcap": 0.13,
       "shares": 12279746,
       "categories": [
@@ -21411,8 +21411,8 @@ window.KOS_LIVE_DATA = {
       "sector": "기타",
       "price": 2830,
       "change": 0.18,
-      "volume": 71969,
-      "trading_value": 207604187,
+      "volume": 72020,
+      "trading_value": 207749472,
       "mcap": 0.13,
       "shares": 44819834,
       "categories": [
@@ -21428,8 +21428,8 @@ window.KOS_LIVE_DATA = {
       "sector": "기타",
       "price": 2635,
       "change": 1.54,
-      "volume": 742272,
-      "trading_value": 1983356390,
+      "volume": 742680,
+      "trading_value": 1984431470,
       "mcap": 0.13,
       "shares": 47942184,
       "categories": [
@@ -21445,8 +21445,8 @@ window.KOS_LIVE_DATA = {
       "sector": "기타",
       "price": 6290,
       "change": 0.96,
-      "volume": 124040,
-      "trading_value": 781627880,
+      "volume": 124044,
+      "trading_value": 781653040,
       "mcap": 0.13,
       "shares": 20000000,
       "categories": [
@@ -21462,8 +21462,8 @@ window.KOS_LIVE_DATA = {
       "sector": "기타",
       "price": 7630,
       "change": 1.19,
-      "volume": 22523,
-      "trading_value": 167832480,
+      "volume": 22524,
+      "trading_value": 167839900,
       "mcap": 0.13,
       "shares": 17218543,
       "categories": [
@@ -21479,8 +21479,8 @@ window.KOS_LIVE_DATA = {
       "sector": "기타",
       "price": 6250,
       "change": -2.65,
-      "volume": 43996,
-      "trading_value": 276104650,
+      "volume": 44296,
+      "trading_value": 277967690,
       "mcap": 0.13,
       "shares": 20114202,
       "categories": [
@@ -21496,8 +21496,8 @@ window.KOS_LIVE_DATA = {
       "sector": "기타",
       "price": 4350,
       "change": 1.28,
-      "volume": 87032,
-      "trading_value": 371475041,
+      "volume": 87274,
+      "trading_value": 372527741,
       "mcap": 0.13,
       "shares": 29329357,
       "categories": [
@@ -21513,8 +21513,8 @@ window.KOS_LIVE_DATA = {
       "sector": "기타",
       "price": 1984,
       "change": -7.07,
-      "volume": 407767,
-      "trading_value": 795646623,
+      "volume": 408068,
+      "trading_value": 796228067,
       "mcap": 0.13,
       "shares": 64112099,
       "categories": [
@@ -21530,8 +21530,8 @@ window.KOS_LIVE_DATA = {
       "sector": "기타",
       "price": 899,
       "change": 0.45,
-      "volume": 179104,
-      "trading_value": 160542939,
+      "volume": 179115,
+      "trading_value": 160552828,
       "mcap": 0.13,
       "shares": 141144600,
       "categories": [
@@ -21564,8 +21564,8 @@ window.KOS_LIVE_DATA = {
       "sector": "기타",
       "price": 5820,
       "change": 6.99,
-      "volume": 94575,
-      "trading_value": 539420000,
+      "volume": 94616,
+      "trading_value": 539659140,
       "mcap": 0.13,
       "shares": 22477903,
       "categories": [
@@ -21581,8 +21581,8 @@ window.KOS_LIVE_DATA = {
       "sector": "기타",
       "price": 1780,
       "change": -1.28,
-      "volume": 572819,
-      "trading_value": 1021471310,
+      "volume": 573669,
+      "trading_value": 1022992135,
       "mcap": 0.13,
       "shares": 70686423,
       "categories": [
@@ -21632,8 +21632,8 @@ window.KOS_LIVE_DATA = {
       "sector": "게임",
       "price": 17600,
       "change": 29.99,
-      "volume": 1307157,
-      "trading_value": 21968978670,
+      "volume": 1310117,
+      "trading_value": 22021074670,
       "mcap": 0.13,
       "shares": 7110275,
       "induty_code": "58222",
@@ -21677,58 +21677,6 @@ window.KOS_LIVE_DATA = {
       "rank": 1251
     },
     {
-      "ticker": "002220",
-      "name": "한일철강",
-      "name_en": "",
-      "market": "코스피",
-      "sector": "기타",
-      "price": 4675,
-      "change": -15.77,
-      "volume": 801798,
-      "trading_value": 4203390890,
-      "mcap": 0.12,
-      "shares": 26697460,
-      "categories": [
-        "기타"
-      ],
-      "rank": 1252
-    },
-    {
-      "ticker": "084670",
-      "name": "동양고속",
-      "name_en": "DONGYANG EXPRESS CORP.",
-      "market": "코스피",
-      "sector": "운송·물류",
-      "price": 41450,
-      "change": 6.56,
-      "volume": 1269893,
-      "trading_value": 58577499550,
-      "mcap": 0.12,
-      "shares": 2895569,
-      "induty_code": "49220",
-      "categories": [
-        "운송·물류"
-      ],
-      "rank": 1253
-    },
-    {
-      "ticker": "009270",
-      "name": "신원",
-      "name_en": "",
-      "market": "코스피",
-      "sector": "기타",
-      "price": 1081,
-      "change": -3.91,
-      "volume": 715447,
-      "trading_value": 788112155,
-      "mcap": 0.12,
-      "shares": 114770393,
-      "categories": [
-        "기타"
-      ],
-      "rank": 1254
-    },
-    {
       "ticker": "350520",
       "name": "이지스레지던스리츠",
       "name_en": "",
@@ -21738,29 +21686,12 @@ window.KOS_LIVE_DATA = {
       "change": 0.44,
       "volume": 76338,
       "trading_value": 259620690,
-      "mcap": 0.12,
+      "mcap": 0.13,
       "shares": 36866202,
       "categories": [
         "기타"
       ],
-      "rank": 1255
-    },
-    {
-      "ticker": "007540",
-      "name": "샘표",
-      "name_en": "",
-      "market": "코스피",
-      "sector": "기타",
-      "price": 43100,
-      "change": -0.92,
-      "volume": 5241,
-      "trading_value": 226794750,
-      "mcap": 0.12,
-      "shares": 2875800,
-      "categories": [
-        "기타"
-      ],
-      "rank": 1256
+      "rank": 1252
     },
     {
       "ticker": "950250",
@@ -21770,31 +21701,14 @@ window.KOS_LIVE_DATA = {
       "sector": "기타",
       "price": 3540,
       "change": 3.81,
-      "volume": 442471,
-      "trading_value": 1562677806,
-      "mcap": 0.12,
+      "volume": 443224,
+      "trading_value": 1565329206,
+      "mcap": 0.13,
       "shares": 35517731,
       "categories": [
         "기타"
       ],
-      "rank": 1257
-    },
-    {
-      "ticker": "323350",
-      "name": "다원넥스뷰",
-      "name_en": "",
-      "market": "코스닥",
-      "sector": "기타",
-      "price": 15570,
-      "change": -0.13,
-      "volume": 65742,
-      "trading_value": 1030222880,
-      "mcap": 0.12,
-      "shares": 8010772,
-      "categories": [
-        "기타"
-      ],
-      "rank": 1258
+      "rank": 1253
     },
     {
       "ticker": "290740",
@@ -21804,14 +21718,117 @@ window.KOS_LIVE_DATA = {
       "sector": "기타",
       "price": 12470,
       "change": -1.81,
-      "volume": 65685,
-      "trading_value": 817509830,
-      "mcap": 0.12,
+      "volume": 67018,
+      "trading_value": 835751070,
+      "mcap": 0.13,
       "shares": 10065011,
       "categories": [
         "기타"
       ],
+      "rank": 1254
+    },
+    {
+      "ticker": "323990",
+      "name": "박셀바이오",
+      "name_en": "",
+      "market": "코스닥",
+      "sector": "기타",
+      "price": 5380,
+      "change": 0.56,
+      "volume": 211344,
+      "trading_value": 1128589250,
+      "mcap": 0.13,
+      "shares": 23257345,
+      "categories": [
+        "기타"
+      ],
+      "rank": 1255
+    },
+    {
+      "ticker": "002220",
+      "name": "한일철강",
+      "name_en": "",
+      "market": "코스피",
+      "sector": "기타",
+      "price": 4675,
+      "change": -15.77,
+      "volume": 804469,
+      "trading_value": 4215777965,
+      "mcap": 0.12,
+      "shares": 26697460,
+      "categories": [
+        "기타"
+      ],
+      "rank": 1256
+    },
+    {
+      "ticker": "084670",
+      "name": "동양고속",
+      "name_en": "DONGYANG EXPRESS CORP.",
+      "market": "코스피",
+      "sector": "운송·물류",
+      "price": 41450,
+      "change": 6.56,
+      "volume": 1272502,
+      "trading_value": 58684572000,
+      "mcap": 0.12,
+      "shares": 2895569,
+      "induty_code": "49220",
+      "categories": [
+        "운송·물류"
+      ],
+      "rank": 1257
+    },
+    {
+      "ticker": "009270",
+      "name": "신원",
+      "name_en": "",
+      "market": "코스피",
+      "sector": "기타",
+      "price": 1081,
+      "change": -3.91,
+      "volume": 717325,
+      "trading_value": 790142324,
+      "mcap": 0.12,
+      "shares": 114770393,
+      "categories": [
+        "기타"
+      ],
+      "rank": 1258
+    },
+    {
+      "ticker": "007540",
+      "name": "샘표",
+      "name_en": "",
+      "market": "코스피",
+      "sector": "기타",
+      "price": 43100,
+      "change": -0.92,
+      "volume": 5247,
+      "trading_value": 227053350,
+      "mcap": 0.12,
+      "shares": 2875800,
+      "categories": [
+        "기타"
+      ],
       "rank": 1259
+    },
+    {
+      "ticker": "323350",
+      "name": "다원넥스뷰",
+      "name_en": "",
+      "market": "코스닥",
+      "sector": "기타",
+      "price": 15570,
+      "change": -0.13,
+      "volume": 65744,
+      "trading_value": 1030254020,
+      "mcap": 0.12,
+      "shares": 8010772,
+      "categories": [
+        "기타"
+      ],
+      "rank": 1260
     },
     {
       "ticker": "036630",
@@ -21821,14 +21838,14 @@ window.KOS_LIVE_DATA = {
       "sector": "기타",
       "price": 12150,
       "change": -3.57,
-      "volume": 40071,
-      "trading_value": 498383050,
+      "volume": 40077,
+      "trading_value": 498455950,
       "mcap": 0.12,
       "shares": 10000000,
       "categories": [
         "기타"
       ],
-      "rank": 1260
+      "rank": 1261
     },
     {
       "ticker": "067990",
@@ -21845,7 +21862,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 1261
+      "rank": 1262
     },
     {
       "ticker": "212560",
@@ -21855,14 +21872,14 @@ window.KOS_LIVE_DATA = {
       "sector": "기타",
       "price": 10400,
       "change": -3.17,
-      "volume": 154258,
-      "trading_value": 1621175320,
+      "volume": 154873,
+      "trading_value": 1627571320,
       "mcap": 0.12,
       "shares": 11812241,
       "categories": [
         "기타"
       ],
-      "rank": 1262
+      "rank": 1263
     },
     {
       "ticker": "052900",
@@ -21872,15 +21889,15 @@ window.KOS_LIVE_DATA = {
       "sector": "섬유·패션·생활",
       "price": 1770,
       "change": 9.26,
-      "volume": 8849560,
-      "trading_value": 16071412607,
+      "volume": 8878494,
+      "trading_value": 16122519207,
       "mcap": 0.12,
       "shares": 69481232,
       "induty_code": "2224",
       "categories": [
         "섬유·패션·생활"
       ],
-      "rank": 1263
+      "rank": 1264
     },
     {
       "ticker": "027710",
@@ -21890,14 +21907,14 @@ window.KOS_LIVE_DATA = {
       "sector": "기타",
       "price": 1103,
       "change": 1.47,
-      "volume": 408727,
-      "trading_value": 449345686,
+      "volume": 409639,
+      "trading_value": 450351621,
       "mcap": 0.12,
       "shares": 111416600,
       "categories": [
         "기타"
       ],
-      "rank": 1264
+      "rank": 1265
     },
     {
       "ticker": "005800",
@@ -21914,7 +21931,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 1265
+      "rank": 1266
     },
     {
       "ticker": "088130",
@@ -21924,14 +21941,14 @@ window.KOS_LIVE_DATA = {
       "sector": "기타",
       "price": 7110,
       "change": 1.28,
-      "volume": 177643,
-      "trading_value": 1268957315,
+      "volume": 178315,
+      "trading_value": 1273735235,
       "mcap": 0.12,
       "shares": 17485314,
       "categories": [
         "기타"
       ],
-      "rank": 1266
+      "rank": 1267
     },
     {
       "ticker": "078890",
@@ -21941,14 +21958,14 @@ window.KOS_LIVE_DATA = {
       "sector": "기타",
       "price": 6700,
       "change": 2.76,
-      "volume": 305475,
-      "trading_value": 2045514890,
+      "volume": 306194,
+      "trading_value": 2050324790,
       "mcap": 0.12,
       "shares": 18424943,
       "categories": [
         "기타"
       ],
-      "rank": 1267
+      "rank": 1268
     },
     {
       "ticker": "027970",
@@ -21965,7 +21982,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 1268
+      "rank": 1269
     },
     {
       "ticker": "366030",
@@ -21982,7 +21999,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 1269
+      "rank": 1270
     },
     {
       "ticker": "267290",
@@ -21992,14 +22009,14 @@ window.KOS_LIVE_DATA = {
       "sector": "기타",
       "price": 20700,
       "change": -1.43,
-      "volume": 8454,
-      "trading_value": 176269125,
+      "volume": 8455,
+      "trading_value": 176289825,
       "mcap": 0.12,
       "shares": 5895406,
       "categories": [
         "기타"
       ],
-      "rank": 1270
+      "rank": 1271
     },
     {
       "ticker": "020120",
@@ -22016,7 +22033,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 1271
+      "rank": 1272
     },
     {
       "ticker": "012800",
@@ -22026,14 +22043,14 @@ window.KOS_LIVE_DATA = {
       "sector": "기타",
       "price": 1324,
       "change": -1.71,
-      "volume": 793345,
-      "trading_value": 1060104754,
+      "volume": 793626,
+      "trading_value": 1060476764,
       "mcap": 0.12,
       "shares": 91140499,
       "categories": [
         "기타"
       ],
-      "rank": 1272
+      "rank": 1273
     },
     {
       "ticker": "051160",
@@ -22043,27 +22060,10 @@ window.KOS_LIVE_DATA = {
       "sector": "기타",
       "price": 7950,
       "change": -0.63,
-      "volume": 61173,
-      "trading_value": 485545630,
+      "volume": 61185,
+      "trading_value": 485640220,
       "mcap": 0.12,
       "shares": 15474430,
-      "categories": [
-        "기타"
-      ],
-      "rank": 1273
-    },
-    {
-      "ticker": "323990",
-      "name": "박셀바이오",
-      "name_en": "",
-      "market": "코스닥",
-      "sector": "기타",
-      "price": 5380,
-      "change": 0.56,
-      "volume": 208810,
-      "trading_value": 1114761860,
-      "mcap": 0.12,
-      "shares": 23257345,
       "categories": [
         "기타"
       ],
@@ -22077,8 +22077,8 @@ window.KOS_LIVE_DATA = {
       "sector": "기타",
       "price": 2510,
       "change": -1.76,
-      "volume": 81005,
-      "trading_value": 205397325,
+      "volume": 81294,
+      "trading_value": 206122715,
       "mcap": 0.12,
       "shares": 47676980,
       "categories": [
@@ -22094,8 +22094,8 @@ window.KOS_LIVE_DATA = {
       "sector": "기타",
       "price": 6600,
       "change": -2.22,
-      "volume": 459898,
-      "trading_value": 3131559655,
+      "volume": 462706,
+      "trading_value": 3150055455,
       "mcap": 0.12,
       "shares": 18000000,
       "categories": [
@@ -22111,8 +22111,8 @@ window.KOS_LIVE_DATA = {
       "sector": "기타",
       "price": 3105,
       "change": 3.5,
-      "volume": 12793,
-      "trading_value": 39774646,
+      "volume": 12847,
+      "trading_value": 39942916,
       "mcap": 0.12,
       "shares": 39145558,
       "categories": [
@@ -22128,8 +22128,8 @@ window.KOS_LIVE_DATA = {
       "sector": "기타",
       "price": 2365,
       "change": -1.25,
-      "volume": 445101,
-      "trading_value": 1069773702,
+      "volume": 446848,
+      "trading_value": 1073896572,
       "mcap": 0.12,
       "shares": 50171000,
       "categories": [
@@ -22145,8 +22145,8 @@ window.KOS_LIVE_DATA = {
       "sector": "기타",
       "price": 9180,
       "change": 3.15,
-      "volume": 117232,
-      "trading_value": 1081146510,
+      "volume": 117580,
+      "trading_value": 1084325710,
       "mcap": 0.12,
       "shares": 13000000,
       "categories": [
@@ -22162,8 +22162,8 @@ window.KOS_LIVE_DATA = {
       "sector": "기타",
       "price": 1510,
       "change": -5.63,
-      "volume": 36085,
-      "trading_value": 54524626,
+      "volume": 36124,
+      "trading_value": 54583516,
       "mcap": 0.12,
       "shares": 79721622,
       "categories": [
@@ -22179,8 +22179,8 @@ window.KOS_LIVE_DATA = {
       "sector": "기타",
       "price": 2450,
       "change": -0.81,
-      "volume": 56362,
-      "trading_value": 139261250,
+      "volume": 56370,
+      "trading_value": 139280850,
       "mcap": 0.12,
       "shares": 48133333,
       "categories": [
@@ -22196,8 +22196,8 @@ window.KOS_LIVE_DATA = {
       "sector": "기타",
       "price": 3915,
       "change": -0.63,
-      "volume": 114263,
-      "trading_value": 450140870,
+      "volume": 114302,
+      "trading_value": 450293150,
       "mcap": 0.12,
       "shares": 30450420,
       "categories": [
@@ -22213,8 +22213,8 @@ window.KOS_LIVE_DATA = {
       "sector": "기타",
       "price": 12850,
       "change": 0.55,
-      "volume": 163613,
-      "trading_value": 2199045060,
+      "volume": 164844,
+      "trading_value": 2214863410,
       "mcap": 0.12,
       "shares": 8960259,
       "categories": [
@@ -22230,8 +22230,8 @@ window.KOS_LIVE_DATA = {
       "sector": "기타",
       "price": 7400,
       "change": 0.41,
-      "volume": 25329,
-      "trading_value": 187009640,
+      "volume": 25330,
+      "trading_value": 187016980,
       "mcap": 0.12,
       "shares": 16207644,
       "categories": [
@@ -22247,8 +22247,8 @@ window.KOS_LIVE_DATA = {
       "sector": "기타",
       "price": 5850,
       "change": -2.5,
-      "volume": 298503,
-      "trading_value": 1747535330,
+      "volume": 300607,
+      "trading_value": 1760412430,
       "mcap": 0.12,
       "shares": 20348454,
       "categories": [
@@ -22264,8 +22264,8 @@ window.KOS_LIVE_DATA = {
       "sector": "기타",
       "price": 11090,
       "change": 3.84,
-      "volume": 332655,
-      "trading_value": 3756380420,
+      "volume": 334903,
+      "trading_value": 3781334150,
       "mcap": 0.12,
       "shares": 10794292,
       "categories": [
@@ -22281,31 +22281,14 @@ window.KOS_LIVE_DATA = {
       "sector": "기타",
       "price": 3050,
       "change": 1.5,
-      "volume": 432758,
-      "trading_value": 1327137143,
+      "volume": 432759,
+      "trading_value": 1327140193,
       "mcap": 0.12,
       "shares": 38806582,
       "categories": [
         "기타"
       ],
       "rank": 1287
-    },
-    {
-      "ticker": "071280",
-      "name": "로체시스템즈",
-      "name_en": "",
-      "market": "코스닥",
-      "sector": "기타",
-      "price": 7510,
-      "change": -1.18,
-      "volume": 125030,
-      "trading_value": 965090025,
-      "mcap": 0.12,
-      "shares": 15296603,
-      "categories": [
-        "기타"
-      ],
-      "rank": 1288
     },
     {
       "ticker": "012320",
@@ -22322,7 +22305,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 1289
+      "rank": 1288
     },
     {
       "ticker": "089600",
@@ -22332,14 +22315,14 @@ window.KOS_LIVE_DATA = {
       "sector": "기타",
       "price": 10200,
       "change": -1.26,
-      "volume": 17196,
-      "trading_value": 176451630,
+      "volume": 17198,
+      "trading_value": 176472140,
       "mcap": 0.12,
       "shares": 11568163,
       "categories": [
         "기타"
       ],
-      "rank": 1290
+      "rank": 1289
     },
     {
       "ticker": "107600",
@@ -22349,14 +22332,14 @@ window.KOS_LIVE_DATA = {
       "sector": "기타",
       "price": 21000,
       "change": -0.94,
-      "volume": 16557,
-      "trading_value": 347456000,
+      "volume": 16570,
+      "trading_value": 347729000,
       "mcap": 0.12,
       "shares": 5640954,
       "categories": [
         "기타"
       ],
-      "rank": 1291
+      "rank": 1290
     },
     {
       "ticker": "006620",
@@ -22366,14 +22349,14 @@ window.KOS_LIVE_DATA = {
       "sector": "기타",
       "price": 4155,
       "change": -1.07,
-      "volume": 118621,
-      "trading_value": 496527345,
+      "volume": 118702,
+      "trading_value": 496863525,
       "mcap": 0.12,
       "shares": 28464992,
       "categories": [
         "기타"
       ],
-      "rank": 1292
+      "rank": 1291
     },
     {
       "ticker": "002620",
@@ -22383,14 +22366,14 @@ window.KOS_LIVE_DATA = {
       "sector": "기타",
       "price": 7430,
       "change": 0.54,
-      "volume": 5096,
-      "trading_value": 37609150,
+      "volume": 5146,
+      "trading_value": 37980650,
       "mcap": 0.12,
       "shares": 15973355,
       "categories": [
         "기타"
       ],
-      "rank": 1293
+      "rank": 1292
     },
     {
       "ticker": "013520",
@@ -22400,14 +22383,14 @@ window.KOS_LIVE_DATA = {
       "sector": "기타",
       "price": 2370,
       "change": -3.07,
-      "volume": 98519,
-      "trading_value": 234907835,
+      "volume": 98570,
+      "trading_value": 235030175,
       "mcap": 0.12,
       "shares": 50051252,
       "categories": [
         "기타"
       ],
-      "rank": 1294
+      "rank": 1293
     },
     {
       "ticker": "338220",
@@ -22424,7 +22407,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 1295
+      "rank": 1294
     },
     {
       "ticker": "014530",
@@ -22434,14 +22417,14 @@ window.KOS_LIVE_DATA = {
       "sector": "기타",
       "price": 3380,
       "change": 0.6,
-      "volume": 86666,
-      "trading_value": 295246109,
+      "volume": 86698,
+      "trading_value": 295354389,
       "mcap": 0.12,
       "shares": 34869420,
       "categories": [
         "기타"
       ],
-      "rank": 1296
+      "rank": 1295
     },
     {
       "ticker": "310200",
@@ -22451,14 +22434,14 @@ window.KOS_LIVE_DATA = {
       "sector": "기타",
       "price": 2250,
       "change": 0.9,
-      "volume": 181188,
-      "trading_value": 411001532,
+      "volume": 181226,
+      "trading_value": 411086952,
       "mcap": 0.12,
       "shares": 52162836,
       "categories": [
         "기타"
       ],
-      "rank": 1297
+      "rank": 1296
     },
     {
       "ticker": "021820",
@@ -22475,7 +22458,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 1298
+      "rank": 1297
     },
     {
       "ticker": "086960",
@@ -22485,15 +22468,15 @@ window.KOS_LIVE_DATA = {
       "sector": "게임",
       "price": 2880,
       "change": 4.16,
-      "volume": 2802795,
-      "trading_value": 8152740132,
+      "volume": 2811235,
+      "trading_value": 8176991057,
       "mcap": 0.12,
       "shares": 42115118,
       "induty_code": "58221",
       "categories": [
         "게임"
       ],
-      "rank": 1299
+      "rank": 1298
     },
     {
       "ticker": "235980",
@@ -22510,7 +22493,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 1300
+      "rank": 1299
     },
     {
       "ticker": "002450",
@@ -22520,14 +22503,14 @@ window.KOS_LIVE_DATA = {
       "sector": "기타",
       "price": 1300,
       "change": 0.15,
-      "volume": 339108,
-      "trading_value": 437351863,
+      "volume": 339130,
+      "trading_value": 437380463,
       "mcap": 0.12,
       "shares": 90530915,
       "categories": [
         "기타"
       ],
-      "rank": 1301
+      "rank": 1300
     },
     {
       "ticker": "382840",
@@ -22537,14 +22520,14 @@ window.KOS_LIVE_DATA = {
       "sector": "기타",
       "price": 7600,
       "change": -2.94,
-      "volume": 206861,
-      "trading_value": 1599423355,
+      "volume": 207369,
+      "trading_value": 1603284235,
       "mcap": 0.12,
       "shares": 15271581,
       "categories": [
         "기타"
       ],
-      "rank": 1302
+      "rank": 1301
     },
     {
       "ticker": "156100",
@@ -22554,14 +22537,14 @@ window.KOS_LIVE_DATA = {
       "sector": "기타",
       "price": 5290,
       "change": 0.19,
-      "volume": 73678,
-      "trading_value": 392253125,
+      "volume": 73867,
+      "trading_value": 393252935,
       "mcap": 0.12,
       "shares": 22351153,
       "categories": [
         "기타"
       ],
-      "rank": 1303
+      "rank": 1302
     },
     {
       "ticker": "123040",
@@ -22571,14 +22554,14 @@ window.KOS_LIVE_DATA = {
       "sector": "기타",
       "price": 1954,
       "change": 1.4,
-      "volume": 123153,
-      "trading_value": 232763084,
+      "volume": 124318,
+      "trading_value": 235039494,
       "mcap": 0.12,
       "shares": 62628299,
       "categories": [
         "기타"
       ],
-      "rank": 1304
+      "rank": 1303
     },
     {
       "ticker": "016710",
@@ -22595,7 +22578,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 1305
+      "rank": 1304
     },
     {
       "ticker": "093640",
@@ -22605,14 +22588,14 @@ window.KOS_LIVE_DATA = {
       "sector": "기타",
       "price": 3570,
       "change": -4.42,
-      "volume": 174070,
-      "trading_value": 629742352,
+      "volume": 174322,
+      "trading_value": 630643512,
       "mcap": 0.12,
       "shares": 32675446,
       "categories": [
         "기타"
       ],
-      "rank": 1306
+      "rank": 1305
     },
     {
       "ticker": "063570",
@@ -22622,14 +22605,14 @@ window.KOS_LIVE_DATA = {
       "sector": "기타",
       "price": 3405,
       "change": 0.89,
-      "volume": 81602,
-      "trading_value": 276143425,
+      "volume": 81632,
+      "trading_value": 276245575,
       "mcap": 0.12,
       "shares": 34147728,
       "categories": [
         "기타"
       ],
-      "rank": 1307
+      "rank": 1306
     },
     {
       "ticker": "041590",
@@ -22646,7 +22629,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 1308
+      "rank": 1307
     },
     {
       "ticker": "129920",
@@ -22656,14 +22639,48 @@ window.KOS_LIVE_DATA = {
       "sector": "기타",
       "price": 7240,
       "change": 4.93,
-      "volume": 102730,
-      "trading_value": 734387800,
+      "volume": 103026,
+      "trading_value": 736530840,
       "mcap": 0.12,
       "shares": 16248696,
       "categories": [
         "기타"
       ],
+      "rank": 1308
+    },
+    {
+      "ticker": "025620",
+      "name": "차AI헬스케어",
+      "name_en": "",
+      "market": "코스피",
+      "sector": "기타",
+      "price": 6320,
+      "change": 2.76,
+      "volume": 22218,
+      "trading_value": 134029075,
+      "mcap": 0.12,
+      "shares": 18203973,
+      "categories": [
+        "기타"
+      ],
       "rank": 1309
+    },
+    {
+      "ticker": "071280",
+      "name": "로체시스템즈",
+      "name_en": "",
+      "market": "코스닥",
+      "sector": "기타",
+      "price": 7510,
+      "change": -1.18,
+      "volume": 246006,
+      "trading_value": 1873694035,
+      "mcap": 0.11,
+      "shares": 15296603,
+      "categories": [
+        "기타"
+      ],
+      "rank": 1310
     },
     {
       "ticker": "009580",
@@ -22673,14 +22690,14 @@ window.KOS_LIVE_DATA = {
       "sector": "기타",
       "price": 1843,
       "change": -1.81,
-      "volume": 236680,
-      "trading_value": 443893721,
+      "volume": 236727,
+      "trading_value": 443980338,
       "mcap": 0.11,
       "shares": 62368324,
       "categories": [
         "기타"
       ],
-      "rank": 1310
+      "rank": 1311
     },
     {
       "ticker": "412350",
@@ -22690,14 +22707,14 @@ window.KOS_LIVE_DATA = {
       "sector": "기타",
       "price": 7940,
       "change": -3.99,
-      "volume": 358327,
-      "trading_value": 2897759715,
+      "volume": 359782,
+      "trading_value": 2909288485,
       "mcap": 0.11,
       "shares": 14435282,
       "categories": [
         "기타"
       ],
-      "rank": 1311
+      "rank": 1312
     },
     {
       "ticker": "263720",
@@ -22707,14 +22724,14 @@ window.KOS_LIVE_DATA = {
       "sector": "기타",
       "price": 9200,
       "change": 1.66,
-      "volume": 14597,
-      "trading_value": 136170260,
+      "volume": 14607,
+      "trading_value": 136262160,
       "mcap": 0.11,
       "shares": 12412591,
       "categories": [
         "기타"
       ],
-      "rank": 1312
+      "rank": 1313
     },
     {
       "ticker": "339950",
@@ -22724,14 +22741,14 @@ window.KOS_LIVE_DATA = {
       "sector": "기타",
       "price": 2535,
       "change": -0.98,
-      "volume": 99192,
-      "trading_value": 253906285,
+      "volume": 99211,
+      "trading_value": 253954450,
       "mcap": 0.11,
       "shares": 44946655,
       "categories": [
         "기타"
       ],
-      "rank": 1313
+      "rank": 1314
     },
     {
       "ticker": "011000",
@@ -22741,31 +22758,13 @@ window.KOS_LIVE_DATA = {
       "sector": "바이오·제약",
       "price": 1220,
       "change": 13.7,
-      "volume": 6388715,
-      "trading_value": 7738987583,
+      "volume": 6402094,
+      "trading_value": 7755349353,
       "mcap": 0.11,
       "shares": 90882907,
       "induty_code": "212",
       "categories": [
         "바이오·제약"
-      ],
-      "rank": 1314
-    },
-    {
-      "ticker": "039980",
-      "name": "폴라리스AI",
-      "name_en": "Polaris AI Corp.",
-      "market": "코스닥",
-      "sector": "IT·소프트웨어",
-      "price": 7300,
-      "change": 3.55,
-      "volume": 2354215,
-      "trading_value": 18736320090,
-      "mcap": 0.11,
-      "shares": 14381214,
-      "induty_code": "620",
-      "categories": [
-        "IT·소프트웨어"
       ],
       "rank": 1315
     },
@@ -22777,8 +22776,8 @@ window.KOS_LIVE_DATA = {
       "sector": "자동차",
       "price": 14020,
       "change": -8.13,
-      "volume": 594991,
-      "trading_value": 8667482310,
+      "volume": 601787,
+      "trading_value": 8762166540,
       "mcap": 0.11,
       "shares": 8126314,
       "induty_code": "30399",
@@ -22795,8 +22794,8 @@ window.KOS_LIVE_DATA = {
       "sector": "기타",
       "price": 4735,
       "change": 0.42,
-      "volume": 122550,
-      "trading_value": 593462069,
+      "volume": 123676,
+      "trading_value": 598813504,
       "mcap": 0.11,
       "shares": 23605000,
       "categories": [
@@ -22812,8 +22811,8 @@ window.KOS_LIVE_DATA = {
       "sector": "기타",
       "price": 1660,
       "change": 1.9,
-      "volume": 373751,
-      "trading_value": 611260140,
+      "volume": 383948,
+      "trading_value": 628456920,
       "mcap": 0.11,
       "shares": 69237643,
       "categories": [
@@ -22829,8 +22828,8 @@ window.KOS_LIVE_DATA = {
       "sector": "기타",
       "price": 4120,
       "change": -0.24,
-      "volume": 59463,
-      "trading_value": 245982785,
+      "volume": 59653,
+      "trading_value": 246765585,
       "mcap": 0.11,
       "shares": 27583100,
       "categories": [
@@ -22846,8 +22845,8 @@ window.KOS_LIVE_DATA = {
       "sector": "기타",
       "price": 6240,
       "change": 1.63,
-      "volume": 27581,
-      "trading_value": 171910790,
+      "volume": 27599,
+      "trading_value": 172023110,
       "mcap": 0.11,
       "shares": 18199659,
       "categories": [
@@ -22863,8 +22862,8 @@ window.KOS_LIVE_DATA = {
       "sector": "기타",
       "price": 8400,
       "change": 2.31,
-      "volume": 100492,
-      "trading_value": 843018985,
+      "volume": 101058,
+      "trading_value": 847771885,
       "mcap": 0.11,
       "shares": 13624900,
       "categories": [
@@ -22880,8 +22879,8 @@ window.KOS_LIVE_DATA = {
       "sector": "기타",
       "price": 3365,
       "change": 0.45,
-      "volume": 186092,
-      "trading_value": 638783904,
+      "volume": 186161,
+      "trading_value": 639016089,
       "mcap": 0.11,
       "shares": 32784744,
       "categories": [
@@ -22914,8 +22913,8 @@ window.KOS_LIVE_DATA = {
       "sector": "기타",
       "price": 3570,
       "change": -2.99,
-      "volume": 126051,
-      "trading_value": 455840606,
+      "volume": 126484,
+      "trading_value": 457391466,
       "mcap": 0.11,
       "shares": 30842625,
       "categories": [
@@ -22931,8 +22930,8 @@ window.KOS_LIVE_DATA = {
       "sector": "기타",
       "price": 6880,
       "change": 1.78,
-      "volume": 145139,
-      "trading_value": 1011195915,
+      "volume": 145422,
+      "trading_value": 1013142955,
       "mcap": 0.11,
       "shares": 16120000,
       "categories": [
@@ -22948,8 +22947,8 @@ window.KOS_LIVE_DATA = {
       "sector": "기타",
       "price": 7050,
       "change": -0.42,
-      "volume": 27281,
-      "trading_value": 192752245,
+      "volume": 27353,
+      "trading_value": 193260315,
       "mcap": 0.11,
       "shares": 16030561,
       "categories": [
@@ -22965,8 +22964,8 @@ window.KOS_LIVE_DATA = {
       "sector": "기타",
       "price": 2300,
       "change": 2.68,
-      "volume": 220450,
-      "trading_value": 503898055,
+      "volume": 222344,
+      "trading_value": 508254255,
       "mcap": 0.11,
       "shares": 48907400,
       "categories": [
@@ -22982,8 +22981,8 @@ window.KOS_LIVE_DATA = {
       "sector": "기타",
       "price": 1339,
       "change": 0.6,
-      "volume": 238673,
-      "trading_value": 319744907,
+      "volume": 239015,
+      "trading_value": 320202845,
       "mcap": 0.11,
       "shares": 83477056,
       "categories": [
@@ -23016,8 +23015,8 @@ window.KOS_LIVE_DATA = {
       "sector": "기타",
       "price": 9160,
       "change": -1.61,
-      "volume": 17462,
-      "trading_value": 161581590,
+      "volume": 17497,
+      "trading_value": 161902190,
       "mcap": 0.11,
       "shares": 12188730,
       "categories": [
@@ -23033,8 +23032,8 @@ window.KOS_LIVE_DATA = {
       "sector": "기타",
       "price": 16990,
       "change": 0.06,
-      "volume": 1949,
-      "trading_value": 33110800,
+      "volume": 1954,
+      "trading_value": 33195750,
       "mcap": 0.11,
       "shares": 6621120,
       "categories": [
@@ -23050,8 +23049,8 @@ window.KOS_LIVE_DATA = {
       "sector": "기타",
       "price": 5260,
       "change": 5.84,
-      "volume": 58048,
-      "trading_value": 301849535,
+      "volume": 58072,
+      "trading_value": 301975775,
       "mcap": 0.11,
       "shares": 21400000,
       "categories": [
@@ -23067,8 +23066,8 @@ window.KOS_LIVE_DATA = {
       "sector": "기타",
       "price": 12390,
       "change": 0.24,
-      "volume": 35894,
-      "trading_value": 456094960,
+      "volume": 35933,
+      "trading_value": 456594540,
       "mcap": 0.11,
       "shares": 8817884,
       "categories": [
@@ -23084,8 +23083,8 @@ window.KOS_LIVE_DATA = {
       "sector": "기타",
       "price": 2325,
       "change": 1.75,
-      "volume": 187289,
-      "trading_value": 439331789,
+      "volume": 187517,
+      "trading_value": 439874369,
       "mcap": 0.11,
       "shares": 47454559,
       "categories": [
@@ -23101,8 +23100,8 @@ window.KOS_LIVE_DATA = {
       "sector": "기타",
       "price": 3760,
       "change": -0.27,
-      "volume": 59806,
-      "trading_value": 223796857,
+      "volume": 60173,
+      "trading_value": 225237302,
       "mcap": 0.11,
       "shares": 30000000,
       "categories": [
@@ -23118,8 +23117,8 @@ window.KOS_LIVE_DATA = {
       "sector": "기타",
       "price": 4645,
       "change": 1.53,
-      "volume": 29494,
-      "trading_value": 136840830,
+      "volume": 29769,
+      "trading_value": 138118205,
       "mcap": 0.11,
       "shares": 24000000,
       "categories": [
@@ -23135,8 +23134,8 @@ window.KOS_LIVE_DATA = {
       "sector": "기타",
       "price": 8110,
       "change": -1.93,
-      "volume": 14024,
-      "trading_value": 114525805,
+      "volume": 14030,
+      "trading_value": 114574465,
       "mcap": 0.11,
       "shares": 13763533,
       "categories": [
@@ -23152,8 +23151,8 @@ window.KOS_LIVE_DATA = {
       "sector": "기타",
       "price": 4375,
       "change": -2.78,
-      "volume": 446933,
-      "trading_value": 2000521287,
+      "volume": 453779,
+      "trading_value": 2030440767,
       "mcap": 0.11,
       "shares": 25182861,
       "categories": [
@@ -23169,8 +23168,8 @@ window.KOS_LIVE_DATA = {
       "sector": "기타",
       "price": 11510,
       "change": 5.99,
-      "volume": 181087,
-      "trading_value": 2060487385,
+      "volume": 181127,
+      "trading_value": 2060947785,
       "mcap": 0.11,
       "shares": 9622978,
       "categories": [
@@ -23186,8 +23185,8 @@ window.KOS_LIVE_DATA = {
       "sector": "기타",
       "price": 89900,
       "change": 0.56,
-      "volume": 1283,
-      "trading_value": 114660500,
+      "volume": 1306,
+      "trading_value": 116679900,
       "mcap": 0.11,
       "shares": 1257651,
       "categories": [
@@ -23203,8 +23202,8 @@ window.KOS_LIVE_DATA = {
       "sector": "기타",
       "price": 8300,
       "change": -2.12,
-      "volume": 33365,
-      "trading_value": 282629795,
+      "volume": 33396,
+      "trading_value": 282887095,
       "mcap": 0.11,
       "shares": 13058000,
       "categories": [
@@ -23237,8 +23236,8 @@ window.KOS_LIVE_DATA = {
       "sector": "기타",
       "price": 3265,
       "change": -4.95,
-      "volume": 248924,
-      "trading_value": 830833531,
+      "volume": 250924,
+      "trading_value": 837363531,
       "mcap": 0.11,
       "shares": 33588445,
       "categories": [
@@ -23254,8 +23253,8 @@ window.KOS_LIVE_DATA = {
       "sector": "기타",
       "price": 4735,
       "change": 0.21,
-      "volume": 57412,
-      "trading_value": 274718440,
+      "volume": 58141,
+      "trading_value": 278167755,
       "mcap": 0.11,
       "shares": 23217239,
       "categories": [
@@ -23271,8 +23270,8 @@ window.KOS_LIVE_DATA = {
       "sector": "기타",
       "price": 2895,
       "change": -2.85,
-      "volume": 313927,
-      "trading_value": 916846914,
+      "volume": 314917,
+      "trading_value": 919708434,
       "mcap": 0.11,
       "shares": 37842602,
       "categories": [
@@ -23305,8 +23304,8 @@ window.KOS_LIVE_DATA = {
       "sector": "기타",
       "price": 1691,
       "change": 3.68,
-      "volume": 392119,
-      "trading_value": 661993494,
+      "volume": 392319,
+      "trading_value": 662331694,
       "mcap": 0.11,
       "shares": 65360000,
       "categories": [
@@ -23322,8 +23321,8 @@ window.KOS_LIVE_DATA = {
       "sector": "기타",
       "price": 6800,
       "change": -0.29,
-      "volume": 68514,
-      "trading_value": 468659115,
+      "volume": 69290,
+      "trading_value": 473886545,
       "mcap": 0.11,
       "shares": 16068000,
       "categories": [
@@ -23339,31 +23338,14 @@ window.KOS_LIVE_DATA = {
       "sector": "기타",
       "price": 3380,
       "change": -3.15,
-      "volume": 302927,
-      "trading_value": 1040470906,
+      "volume": 305020,
+      "trading_value": 1047686826,
       "mcap": 0.11,
       "shares": 32171314,
       "categories": [
         "기타"
       ],
       "rank": 1349
-    },
-    {
-      "ticker": "025620",
-      "name": "차AI헬스케어",
-      "name_en": "",
-      "market": "코스피",
-      "sector": "기타",
-      "price": 6320,
-      "change": 2.76,
-      "volume": 22218,
-      "trading_value": 134029075,
-      "mcap": 0.11,
-      "shares": 18203973,
-      "categories": [
-        "기타"
-      ],
-      "rank": 1350
     },
     {
       "ticker": "227840",
@@ -23380,7 +23362,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 1351
+      "rank": 1350
     },
     {
       "ticker": "011810",
@@ -23397,7 +23379,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 1352
+      "rank": 1351
     },
     {
       "ticker": "267850",
@@ -23414,7 +23396,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 1353
+      "rank": 1352
     },
     {
       "ticker": "085670",
@@ -23424,14 +23406,14 @@ window.KOS_LIVE_DATA = {
       "sector": "기타",
       "price": 4340,
       "change": -0.69,
-      "volume": 148498,
-      "trading_value": 655557525,
+      "volume": 149526,
+      "trading_value": 660001250,
       "mcap": 0.11,
       "shares": 24500761,
       "categories": [
         "기타"
       ],
-      "rank": 1354
+      "rank": 1353
     },
     {
       "ticker": "322510",
@@ -23441,14 +23423,14 @@ window.KOS_LIVE_DATA = {
       "sector": "기타",
       "price": 4230,
       "change": -0.12,
-      "volume": 165871,
-      "trading_value": 703345500,
+      "volume": 165897,
+      "trading_value": 703455140,
       "mcap": 0.11,
       "shares": 25725892,
       "categories": [
         "기타"
       ],
-      "rank": 1355
+      "rank": 1354
     },
     {
       "ticker": "009780",
@@ -23465,7 +23447,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 1356
+      "rank": 1355
     },
     {
       "ticker": "228850",
@@ -23475,14 +23457,14 @@ window.KOS_LIVE_DATA = {
       "sector": "기타",
       "price": 6400,
       "change": -2.88,
-      "volume": 11990,
-      "trading_value": 77761130,
+      "volume": 12760,
+      "trading_value": 82689130,
       "mcap": 0.11,
       "shares": 16591014,
       "categories": [
         "기타"
       ],
-      "rank": 1357
+      "rank": 1356
     },
     {
       "ticker": "330730",
@@ -23492,14 +23474,14 @@ window.KOS_LIVE_DATA = {
       "sector": "기타",
       "price": 5980,
       "change": -6.27,
-      "volume": 144868,
-      "trading_value": 875309930,
+      "volume": 144870,
+      "trading_value": 875321890,
       "mcap": 0.11,
       "shares": 18217830,
       "categories": [
         "기타"
       ],
-      "rank": 1358
+      "rank": 1357
     },
     {
       "ticker": "317770",
@@ -23509,14 +23491,14 @@ window.KOS_LIVE_DATA = {
       "sector": "기타",
       "price": 2935,
       "change": -1.01,
-      "volume": 292130,
-      "trading_value": 866259820,
+      "volume": 292865,
+      "trading_value": 868412695,
       "mcap": 0.11,
       "shares": 36486545,
       "categories": [
         "기타"
       ],
-      "rank": 1359
+      "rank": 1358
     },
     {
       "ticker": "104460",
@@ -23526,14 +23508,14 @@ window.KOS_LIVE_DATA = {
       "sector": "기타",
       "price": 10060,
       "change": 1.11,
-      "volume": 22034,
-      "trading_value": 223928560,
+      "volume": 22037,
+      "trading_value": 223958790,
       "mcap": 0.11,
       "shares": 10518101,
       "categories": [
         "기타"
       ],
-      "rank": 1360
+      "rank": 1359
     },
     {
       "ticker": "950190",
@@ -23550,7 +23532,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 1361
+      "rank": 1360
     },
     {
       "ticker": "131030",
@@ -23560,14 +23542,14 @@ window.KOS_LIVE_DATA = {
       "sector": "기타",
       "price": 6050,
       "change": -0.66,
-      "volume": 78306,
-      "trading_value": 477225585,
+      "volume": 78458,
+      "trading_value": 478137685,
       "mcap": 0.11,
       "shares": 17646590,
       "categories": [
         "기타"
       ],
-      "rank": 1362
+      "rank": 1361
     },
     {
       "ticker": "005860",
@@ -23577,14 +23559,14 @@ window.KOS_LIVE_DATA = {
       "sector": "기타",
       "price": 2670,
       "change": -2.2,
-      "volume": 361554,
-      "trading_value": 983789480,
+      "volume": 363863,
+      "trading_value": 989956190,
       "mcap": 0.11,
       "shares": 39403685,
       "categories": [
         "기타"
       ],
-      "rank": 1363
+      "rank": 1362
     },
     {
       "ticker": "456070",
@@ -23601,7 +23583,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 1364
+      "rank": 1363
     },
     {
       "ticker": "223250",
@@ -23611,14 +23593,14 @@ window.KOS_LIVE_DATA = {
       "sector": "기타",
       "price": 4330,
       "change": -3.88,
-      "volume": 276485,
-      "trading_value": 1208448175,
+      "volume": 277495,
+      "trading_value": 1212799575,
       "mcap": 0.11,
       "shares": 24600444,
       "categories": [
         "기타"
       ],
-      "rank": 1365
+      "rank": 1364
     },
     {
       "ticker": "065450",
@@ -23628,14 +23610,14 @@ window.KOS_LIVE_DATA = {
       "sector": "기타",
       "price": 3600,
       "change": -0.14,
-      "volume": 316647,
-      "trading_value": 1150704172,
+      "volume": 318936,
+      "trading_value": 1158867332,
       "mcap": 0.11,
       "shares": 29495803,
       "categories": [
         "기타"
       ],
-      "rank": 1366
+      "rank": 1365
     },
     {
       "ticker": "025950",
@@ -23645,14 +23627,14 @@ window.KOS_LIVE_DATA = {
       "sector": "기타",
       "price": 12780,
       "change": 4.33,
-      "volume": 19226,
-      "trading_value": 241594680,
+      "volume": 19227,
+      "trading_value": 241607230,
       "mcap": 0.11,
       "shares": 8400000,
       "categories": [
         "기타"
       ],
-      "rank": 1367
+      "rank": 1366
     },
     {
       "ticker": "002230",
@@ -23662,14 +23644,14 @@ window.KOS_LIVE_DATA = {
       "sector": "기타",
       "price": 5870,
       "change": -13.68,
-      "volume": 657219,
-      "trading_value": 3758118210,
+      "volume": 659866,
+      "trading_value": 3773658560,
       "mcap": 0.11,
       "shares": 18705320,
       "categories": [
         "기타"
       ],
-      "rank": 1368
+      "rank": 1367
     },
     {
       "ticker": "001290",
@@ -23679,14 +23661,14 @@ window.KOS_LIVE_DATA = {
       "sector": "기타",
       "price": 983,
       "change": 2.61,
-      "volume": 307872,
-      "trading_value": 298302582,
+      "volume": 307876,
+      "trading_value": 298306562,
       "mcap": 0.11,
       "shares": 108337120,
       "categories": [
         "기타"
       ],
-      "rank": 1369
+      "rank": 1368
     },
     {
       "ticker": "225190",
@@ -23696,14 +23678,14 @@ window.KOS_LIVE_DATA = {
       "sector": "기타",
       "price": 1505,
       "change": 1.69,
-      "volume": 511890,
-      "trading_value": 758670799,
+      "volume": 512164,
+      "trading_value": 759083029,
       "mcap": 0.11,
       "shares": 70468440,
       "categories": [
         "기타"
       ],
-      "rank": 1370
+      "rank": 1369
     },
     {
       "ticker": "002460",
@@ -23713,14 +23695,14 @@ window.KOS_LIVE_DATA = {
       "sector": "기타",
       "price": 10380,
       "change": 0.48,
-      "volume": 19303,
-      "trading_value": 200018935,
+      "volume": 19346,
+      "trading_value": 200465275,
       "mcap": 0.11,
       "shares": 10150000,
       "categories": [
         "기타"
       ],
-      "rank": 1371
+      "rank": 1370
     },
     {
       "ticker": "042510",
@@ -23730,14 +23712,14 @@ window.KOS_LIVE_DATA = {
       "sector": "기타",
       "price": 9520,
       "change": -1.45,
-      "volume": 196766,
-      "trading_value": 1856818190,
+      "volume": 206706,
+      "trading_value": 1951480850,
       "mcap": 0.11,
       "shares": 11105828,
       "categories": [
         "기타"
       ],
-      "rank": 1372
+      "rank": 1371
     },
     {
       "ticker": "149980",
@@ -23747,48 +23729,14 @@ window.KOS_LIVE_DATA = {
       "sector": "기타",
       "price": 5100,
       "change": 3.45,
-      "volume": 64274,
-      "trading_value": 316719874,
+      "volume": 64522,
+      "trading_value": 317984674,
       "mcap": 0.11,
       "shares": 21194363,
       "categories": [
         "기타"
       ],
-      "rank": 1373
-    },
-    {
-      "ticker": "052860",
-      "name": "아이앤씨",
-      "name_en": "",
-      "market": "코스닥",
-      "sector": "기타",
-      "price": 5800,
-      "change": -2.52,
-      "volume": 96377,
-      "trading_value": 569265320,
-      "mcap": 0.1,
-      "shares": 17862854,
-      "categories": [
-        "기타"
-      ],
-      "rank": 1374
-    },
-    {
-      "ticker": "045970",
-      "name": "코아시아",
-      "name_en": "",
-      "market": "코스닥",
-      "sector": "기타",
-      "price": 3985,
-      "change": 1.4,
-      "volume": 88776,
-      "trading_value": 356646801,
-      "mcap": 0.1,
-      "shares": 26314876,
-      "categories": [
-        "기타"
-      ],
-      "rank": 1375
+      "rank": 1372
     },
     {
       "ticker": "248170",
@@ -23800,8 +23748,60 @@ window.KOS_LIVE_DATA = {
       "change": -0.43,
       "volume": 8720,
       "trading_value": 201075525,
-      "mcap": 0.1,
+      "mcap": 0.11,
       "shares": 4568286,
+      "categories": [
+        "기타"
+      ],
+      "rank": 1373
+    },
+    {
+      "ticker": "039980",
+      "name": "폴라리스AI",
+      "name_en": "Polaris AI Corp.",
+      "market": "코스닥",
+      "sector": "IT·소프트웨어",
+      "price": 7300,
+      "change": 3.55,
+      "volume": 2359971,
+      "trading_value": 18778077780,
+      "mcap": 0.1,
+      "shares": 14381214,
+      "induty_code": "620",
+      "categories": [
+        "IT·소프트웨어"
+      ],
+      "rank": 1374
+    },
+    {
+      "ticker": "052860",
+      "name": "아이앤씨",
+      "name_en": "",
+      "market": "코스닥",
+      "sector": "기타",
+      "price": 5800,
+      "change": -2.52,
+      "volume": 96428,
+      "trading_value": 569561160,
+      "mcap": 0.1,
+      "shares": 17862854,
+      "categories": [
+        "기타"
+      ],
+      "rank": 1375
+    },
+    {
+      "ticker": "045970",
+      "name": "코아시아",
+      "name_en": "",
+      "market": "코스닥",
+      "sector": "기타",
+      "price": 3985,
+      "change": 1.4,
+      "volume": 88805,
+      "trading_value": 356761976,
+      "mcap": 0.1,
+      "shares": 26314876,
       "categories": [
         "기타"
       ],
@@ -23815,8 +23815,8 @@ window.KOS_LIVE_DATA = {
       "sector": "기타",
       "price": 10580,
       "change": -12.92,
-      "volume": 219498,
-      "trading_value": 2402133385,
+      "volume": 219764,
+      "trading_value": 2404949325,
       "mcap": 0.1,
       "shares": 9749691,
       "categories": [
@@ -23832,8 +23832,8 @@ window.KOS_LIVE_DATA = {
       "sector": "기타",
       "price": 5380,
       "change": -10.93,
-      "volume": 91958,
-      "trading_value": 523231850,
+      "volume": 92455,
+      "trading_value": 525905710,
       "mcap": 0.1,
       "shares": 18720000,
       "categories": [
@@ -23883,8 +23883,8 @@ window.KOS_LIVE_DATA = {
       "sector": "기타",
       "price": 12680,
       "change": 1.04,
-      "volume": 17573,
-      "trading_value": 224037890,
+      "volume": 17585,
+      "trading_value": 224190050,
       "mcap": 0.1,
       "shares": 8188043,
       "categories": [
@@ -23917,8 +23917,8 @@ window.KOS_LIVE_DATA = {
       "sector": "기타",
       "price": 12670,
       "change": 4.28,
-      "volume": 126095,
-      "trading_value": 1636680050,
+      "volume": 128998,
+      "trading_value": 1676402130,
       "mcap": 0.1,
       "shares": 7874611,
       "categories": [
@@ -23934,8 +23934,8 @@ window.KOS_LIVE_DATA = {
       "sector": "기타",
       "price": 10380,
       "change": 2.67,
-      "volume": 39595,
-      "trading_value": 412026210,
+      "volume": 39599,
+      "trading_value": 412067730,
       "mcap": 0.1,
       "shares": 9866730,
       "categories": [
@@ -23951,8 +23951,8 @@ window.KOS_LIVE_DATA = {
       "sector": "기타",
       "price": 2875,
       "change": 3.6,
-      "volume": 144324,
-      "trading_value": 408930678,
+      "volume": 145221,
+      "trading_value": 411510428,
       "mcap": 0.1,
       "shares": 36436626,
       "categories": [
@@ -23968,8 +23968,8 @@ window.KOS_LIVE_DATA = {
       "sector": "기타",
       "price": 8220,
       "change": -2.84,
-      "volume": 71445,
-      "trading_value": 598194775,
+      "volume": 71618,
+      "trading_value": 599616835,
       "mcap": 0.1,
       "shares": 12119500,
       "categories": [
@@ -23985,8 +23985,8 @@ window.KOS_LIVE_DATA = {
       "sector": "기타",
       "price": 2530,
       "change": -2.88,
-      "volume": 920786,
-      "trading_value": 2386910064,
+      "volume": 922426,
+      "trading_value": 2391030524,
       "mcap": 0.1,
       "shares": 39153476,
       "categories": [
@@ -24002,8 +24002,8 @@ window.KOS_LIVE_DATA = {
       "sector": "기타",
       "price": 13220,
       "change": 1.23,
-      "volume": 28204,
-      "trading_value": 374133680,
+      "volume": 28682,
+      "trading_value": 380452840,
       "mcap": 0.1,
       "shares": 7685425,
       "categories": [
@@ -24019,8 +24019,8 @@ window.KOS_LIVE_DATA = {
       "sector": "기타",
       "price": 1420,
       "change": -4.38,
-      "volume": 638292,
-      "trading_value": 907461657,
+      "volume": 638353,
+      "trading_value": 907548277,
       "mcap": 0.1,
       "shares": 70655387,
       "categories": [
@@ -24036,8 +24036,8 @@ window.KOS_LIVE_DATA = {
       "sector": "기타",
       "price": 6360,
       "change": -4.93,
-      "volume": 49282,
-      "trading_value": 319186760,
+      "volume": 49283,
+      "trading_value": 319193250,
       "mcap": 0.1,
       "shares": 15549849,
       "categories": [
@@ -24053,8 +24053,8 @@ window.KOS_LIVE_DATA = {
       "sector": "기타",
       "price": 7160,
       "change": -2.72,
-      "volume": 207113,
-      "trading_value": 1483415245,
+      "volume": 207907,
+      "trading_value": 1489093465,
       "mcap": 0.1,
       "shares": 14269735,
       "categories": [
@@ -24070,8 +24070,8 @@ window.KOS_LIVE_DATA = {
       "sector": "기타",
       "price": 2500,
       "change": 2.04,
-      "volume": 33634,
-      "trading_value": 83665180,
+      "volume": 33636,
+      "trading_value": 83670230,
       "mcap": 0.1,
       "shares": 41040895,
       "categories": [
@@ -24104,8 +24104,8 @@ window.KOS_LIVE_DATA = {
       "sector": "기타",
       "price": 8100,
       "change": 0.12,
-      "volume": 6582,
-      "trading_value": 53300655,
+      "volume": 6583,
+      "trading_value": 53308725,
       "mcap": 0.1,
       "shares": 12523850,
       "categories": [
@@ -24121,8 +24121,8 @@ window.KOS_LIVE_DATA = {
       "sector": "기타",
       "price": 2430,
       "change": -1.62,
-      "volume": 330684,
-      "trading_value": 810706737,
+      "volume": 332384,
+      "trading_value": 814811252,
       "mcap": 0.1,
       "shares": 41169370,
       "categories": [
@@ -24155,8 +24155,8 @@ window.KOS_LIVE_DATA = {
       "sector": "기타",
       "price": 7890,
       "change": 3.27,
-      "volume": 63371,
-      "trading_value": 490102935,
+      "volume": 64039,
+      "trading_value": 495368955,
       "mcap": 0.1,
       "shares": 13105344,
       "categories": [
@@ -24189,8 +24189,8 @@ window.KOS_LIVE_DATA = {
       "sector": "기타",
       "price": 12820,
       "change": -1.23,
-      "volume": 38390,
-      "trading_value": 493734880,
+      "volume": 38440,
+      "trading_value": 494375880,
       "mcap": 0.1,
       "shares": 7865714,
       "categories": [
@@ -24206,8 +24206,8 @@ window.KOS_LIVE_DATA = {
       "sector": "기타",
       "price": 10610,
       "change": -0.93,
-      "volume": 154019,
-      "trading_value": 1670489980,
+      "volume": 154961,
+      "trading_value": 1680484010,
       "mcap": 0.1,
       "shares": 9271621,
       "categories": [
@@ -24223,8 +24223,8 @@ window.KOS_LIVE_DATA = {
       "sector": "기타",
       "price": 8940,
       "change": -1.76,
-      "volume": 26961,
-      "trading_value": 239456655,
+      "volume": 26964,
+      "trading_value": 239483475,
       "mcap": 0.1,
       "shares": 11431284,
       "categories": [
@@ -24240,8 +24240,8 @@ window.KOS_LIVE_DATA = {
       "sector": "기타",
       "price": 14820,
       "change": -2.11,
-      "volume": 14595,
-      "trading_value": 219325085,
+      "volume": 14599,
+      "trading_value": 219384365,
       "mcap": 0.1,
       "shares": 6595192,
       "categories": [
@@ -24274,8 +24274,8 @@ window.KOS_LIVE_DATA = {
       "sector": "기타",
       "price": 7910,
       "change": -0.75,
-      "volume": 18787,
-      "trading_value": 149584690,
+      "volume": 18838,
+      "trading_value": 149988190,
       "mcap": 0.1,
       "shares": 12600000,
       "categories": [
@@ -24291,8 +24291,8 @@ window.KOS_LIVE_DATA = {
       "sector": "기타",
       "price": 2415,
       "change": 0.21,
-      "volume": 123726,
-      "trading_value": 300602239,
+      "volume": 123914,
+      "trading_value": 301055319,
       "mcap": 0.1,
       "shares": 41404450,
       "categories": [
@@ -24308,8 +24308,8 @@ window.KOS_LIVE_DATA = {
       "sector": "기타",
       "price": 8850,
       "change": -5.04,
-      "volume": 208190,
-      "trading_value": 1861472505,
+      "volume": 209214,
+      "trading_value": 1870534435,
       "mcap": 0.1,
       "shares": 11165299,
       "categories": [
@@ -24325,8 +24325,8 @@ window.KOS_LIVE_DATA = {
       "sector": "기타",
       "price": 6720,
       "change": -0.15,
-      "volume": 66128,
-      "trading_value": 444215260,
+      "volume": 66274,
+      "trading_value": 445196350,
       "mcap": 0.1,
       "shares": 15044430,
       "categories": [
@@ -24342,8 +24342,8 @@ window.KOS_LIVE_DATA = {
       "sector": "기타",
       "price": 1320,
       "change": -0.75,
-      "volume": 1503212,
-      "trading_value": 1953441854,
+      "volume": 1511313,
+      "trading_value": 1964138925,
       "mcap": 0.1,
       "shares": 77124820,
       "categories": [
@@ -24359,8 +24359,8 @@ window.KOS_LIVE_DATA = {
       "sector": "기타",
       "price": 12080,
       "change": 5.59,
-      "volume": 17135,
-      "trading_value": 202004630,
+      "volume": 17159,
+      "trading_value": 202295250,
       "mcap": 0.1,
       "shares": 8381030,
       "categories": [
@@ -24393,8 +24393,8 @@ window.KOS_LIVE_DATA = {
       "sector": "기타",
       "price": 16240,
       "change": 2.78,
-      "volume": 25609,
-      "trading_value": 409211425,
+      "volume": 26495,
+      "trading_value": 423600005,
       "mcap": 0.1,
       "shares": 6227130,
       "categories": [
@@ -24427,8 +24427,8 @@ window.KOS_LIVE_DATA = {
       "sector": "기타",
       "price": 5460,
       "change": -0.18,
-      "volume": 73170,
-      "trading_value": 399118970,
+      "volume": 73172,
+      "trading_value": 399129890,
       "mcap": 0.1,
       "shares": 17863600,
       "categories": [
@@ -24444,8 +24444,8 @@ window.KOS_LIVE_DATA = {
       "sector": "기타",
       "price": 8890,
       "change": -5.32,
-      "volume": 20453,
-      "trading_value": 185225760,
+      "volume": 20574,
+      "trading_value": 186302040,
       "mcap": 0.1,
       "shares": 10906701,
       "categories": [
@@ -24461,8 +24461,8 @@ window.KOS_LIVE_DATA = {
       "sector": "기타",
       "price": 1698,
       "change": 8.5,
-      "volume": 1556748,
-      "trading_value": 2852617807,
+      "volume": 1558111,
+      "trading_value": 2854929049,
       "mcap": 0.1,
       "shares": 57143000,
       "categories": [
@@ -24478,8 +24478,8 @@ window.KOS_LIVE_DATA = {
       "sector": "기타",
       "price": 6850,
       "change": -0.58,
-      "volume": 25348,
-      "trading_value": 174184305,
+      "volume": 25373,
+      "trading_value": 174355555,
       "mcap": 0.1,
       "shares": 14309416,
       "categories": [
@@ -24495,8 +24495,8 @@ window.KOS_LIVE_DATA = {
       "sector": "기타",
       "price": 4010,
       "change": 0.5,
-      "volume": 29785,
-      "trading_value": 120355125,
+      "volume": 29798,
+      "trading_value": 120407135,
       "mcap": 0.1,
       "shares": 24453930,
       "categories": [
@@ -24512,8 +24512,8 @@ window.KOS_LIVE_DATA = {
       "sector": "기타",
       "price": 2590,
       "change": -7.66,
-      "volume": 2222912,
-      "trading_value": 6025420407,
+      "volume": 2224024,
+      "trading_value": 6028300547,
       "mcap": 0.1,
       "shares": 36700000,
       "categories": [
@@ -24563,8 +24563,8 @@ window.KOS_LIVE_DATA = {
       "sector": "기타",
       "price": 13570,
       "change": -0.59,
-      "volume": 28860,
-      "trading_value": 391139550,
+      "volume": 28865,
+      "trading_value": 391207400,
       "mcap": 0.1,
       "shares": 7190391,
       "categories": [
@@ -24580,8 +24580,8 @@ window.KOS_LIVE_DATA = {
       "sector": "기타",
       "price": 2070,
       "change": -0.48,
-      "volume": 136138,
-      "trading_value": 280041566,
+      "volume": 136270,
+      "trading_value": 280314806,
       "mcap": 0.1,
       "shares": 47664504,
       "categories": [
@@ -24597,8 +24597,8 @@ window.KOS_LIVE_DATA = {
       "sector": "기타",
       "price": 2965,
       "change": -1.82,
-      "volume": 173560,
-      "trading_value": 521487799,
+      "volume": 177193,
+      "trading_value": 532256869,
       "mcap": 0.1,
       "shares": 32446151,
       "categories": [
@@ -24614,8 +24614,8 @@ window.KOS_LIVE_DATA = {
       "sector": "기타",
       "price": 2490,
       "change": -2.73,
-      "volume": 88916,
-      "trading_value": 223770079,
+      "volume": 90364,
+      "trading_value": 227375599,
       "mcap": 0.1,
       "shares": 38755414,
       "categories": [
@@ -24631,8 +24631,8 @@ window.KOS_LIVE_DATA = {
       "sector": "기타",
       "price": 3610,
       "change": -0.41,
-      "volume": 16864,
-      "trading_value": 60438272,
+      "volume": 16877,
+      "trading_value": 60485202,
       "mcap": 0.1,
       "shares": 26872998,
       "categories": [
@@ -24648,8 +24648,8 @@ window.KOS_LIVE_DATA = {
       "sector": "기타",
       "price": 1171,
       "change": 2.72,
-      "volume": 5519897,
-      "trading_value": 6441289809,
+      "volume": 5547562,
+      "trading_value": 6473690416,
       "mcap": 0.1,
       "shares": 84883347,
       "categories": [
@@ -24682,8 +24682,8 @@ window.KOS_LIVE_DATA = {
       "sector": "기타",
       "price": 2310,
       "change": -1.7,
-      "volume": 96567,
-      "trading_value": 225525400,
+      "volume": 96630,
+      "trading_value": 225670930,
       "mcap": 0.1,
       "shares": 41293476,
       "categories": [
@@ -24699,8 +24699,8 @@ window.KOS_LIVE_DATA = {
       "sector": "기타",
       "price": 2215,
       "change": 2.55,
-      "volume": 1225333,
-      "trading_value": 2751357422,
+      "volume": 1231162,
+      "trading_value": 2764269157,
       "mcap": 0.1,
       "shares": 43986275,
       "categories": [
@@ -24716,8 +24716,8 @@ window.KOS_LIVE_DATA = {
       "sector": "기타",
       "price": 2805,
       "change": 2.94,
-      "volume": 147552,
-      "trading_value": 408095425,
+      "volume": 147611,
+      "trading_value": 408260920,
       "mcap": 0.1,
       "shares": 35173834,
       "categories": [
@@ -24767,8 +24767,8 @@ window.KOS_LIVE_DATA = {
       "sector": "기타",
       "price": 5720,
       "change": 6.32,
-      "volume": 562233,
-      "trading_value": 3183613460,
+      "volume": 564804,
+      "trading_value": 3198412410,
       "mcap": 0.1,
       "shares": 17139545,
       "categories": [
@@ -24801,8 +24801,8 @@ window.KOS_LIVE_DATA = {
       "sector": "기타",
       "price": 3880,
       "change": -0.51,
-      "volume": 160735,
-      "trading_value": 622681419,
+      "volume": 160789,
+      "trading_value": 622890949,
       "mcap": 0.1,
       "shares": 24741392,
       "categories": [
@@ -24818,8 +24818,8 @@ window.KOS_LIVE_DATA = {
       "sector": "기타",
       "price": 20150,
       "change": -4.95,
-      "volume": 61414,
-      "trading_value": 1245506630,
+      "volume": 61740,
+      "trading_value": 1252075480,
       "mcap": 0.1,
       "shares": 4769650,
       "categories": [
@@ -24835,8 +24835,8 @@ window.KOS_LIVE_DATA = {
       "sector": "기타",
       "price": 1138,
       "change": 6.36,
-      "volume": 329593,
-      "trading_value": 361987471,
+      "volume": 330093,
+      "trading_value": 362555971,
       "mcap": 0.1,
       "shares": 87826844,
       "categories": [
@@ -24852,8 +24852,8 @@ window.KOS_LIVE_DATA = {
       "sector": "기타",
       "price": 7900,
       "change": 3.27,
-      "volume": 16584,
-      "trading_value": 129691775,
+      "volume": 16598,
+      "trading_value": 129801375,
       "mcap": 0.1,
       "shares": 12203280,
       "categories": [
@@ -24869,8 +24869,8 @@ window.KOS_LIVE_DATA = {
       "sector": "기타",
       "price": 4340,
       "change": 9.18,
-      "volume": 172437,
-      "trading_value": 718985303,
+      "volume": 173777,
+      "trading_value": 724800903,
       "mcap": 0.1,
       "shares": 23129547,
       "categories": [
@@ -24886,8 +24886,8 @@ window.KOS_LIVE_DATA = {
       "sector": "반도체",
       "price": 3435,
       "change": 11.89,
-      "volume": 2631102,
-      "trading_value": 8943334133,
+      "volume": 2634506,
+      "trading_value": 8955008113,
       "mcap": 0.1,
       "shares": 28192084,
       "induty_code": "261",
@@ -24904,8 +24904,8 @@ window.KOS_LIVE_DATA = {
       "sector": "게임",
       "price": 10700,
       "change": 10.2,
-      "volume": 2244189,
-      "trading_value": 25057321180,
+      "volume": 2252432,
+      "trading_value": 25144647600,
       "mcap": 0.1,
       "shares": 9382284,
       "induty_code": "582",
@@ -24913,193 +24913,6 @@ window.KOS_LIVE_DATA = {
         "게임"
       ],
       "rank": 1441
-    },
-    {
-      "ticker": "262260",
-      "name": "에이프로",
-      "name_en": "",
-      "market": "코스닥",
-      "sector": "기타",
-      "price": 6260,
-      "change": 3.81,
-      "volume": 162359,
-      "trading_value": 1036642855,
-      "mcap": 0.09,
-      "shares": 15077660,
-      "categories": [
-        "기타"
-      ],
-      "rank": 1442
-    },
-    {
-      "ticker": "226400",
-      "name": "오스테오닉",
-      "name_en": "",
-      "market": "코스닥",
-      "sector": "기타",
-      "price": 4570,
-      "change": -3.48,
-      "volume": 249744,
-      "trading_value": 1162321582,
-      "mcap": 0.09,
-      "shares": 20661601,
-      "categories": [
-        "기타"
-      ],
-      "rank": 1443
-    },
-    {
-      "ticker": "417970",
-      "name": "모델솔루션",
-      "name_en": "",
-      "market": "코스닥",
-      "sector": "기타",
-      "price": 14620,
-      "change": -3.82,
-      "volume": 47982,
-      "trading_value": 719531300,
-      "mcap": 0.09,
-      "shares": 6396700,
-      "categories": [
-        "기타"
-      ],
-      "rank": 1444
-    },
-    {
-      "ticker": "078140",
-      "name": "대봉엘에스",
-      "name_en": "",
-      "market": "코스닥",
-      "sector": "기타",
-      "price": 8510,
-      "change": -1.05,
-      "volume": 15160,
-      "trading_value": 131038170,
-      "mcap": 0.09,
-      "shares": 11086579,
-      "categories": [
-        "기타"
-      ],
-      "rank": 1445
-    },
-    {
-      "ticker": "408470",
-      "name": "한패스",
-      "name_en": "",
-      "market": "코스닥",
-      "sector": "기타",
-      "price": 8920,
-      "change": 0.34,
-      "volume": 32046,
-      "trading_value": 287502075,
-      "mcap": 0.09,
-      "shares": 10572000,
-      "categories": [
-        "기타"
-      ],
-      "rank": 1446
-    },
-    {
-      "ticker": "131370",
-      "name": "알서포트",
-      "name_en": "",
-      "market": "코스닥",
-      "sector": "기타",
-      "price": 1779,
-      "change": -2.15,
-      "volume": 149058,
-      "trading_value": 266020321,
-      "mcap": 0.09,
-      "shares": 53267083,
-      "categories": [
-        "기타"
-      ],
-      "rank": 1447
-    },
-    {
-      "ticker": "288180",
-      "name": "케이피항공산업",
-      "name_en": "",
-      "market": "코스닥",
-      "sector": "기타",
-      "price": 12660,
-      "change": -1.25,
-      "volume": 384689,
-      "trading_value": 5125499800,
-      "mcap": 0.09,
-      "shares": 7393262,
-      "categories": [
-        "기타"
-      ],
-      "rank": 1448
-    },
-    {
-      "ticker": "004140",
-      "name": "동방",
-      "name_en": "",
-      "market": "코스피",
-      "sector": "기타",
-      "price": 1969,
-      "change": -1.06,
-      "volume": 528479,
-      "trading_value": 1055768730,
-      "mcap": 0.09,
-      "shares": 47971766,
-      "categories": [
-        "기타"
-      ],
-      "rank": 1449
-    },
-    {
-      "ticker": "042500",
-      "name": "링네트",
-      "name_en": "",
-      "market": "코스닥",
-      "sector": "기타",
-      "price": 4230,
-      "change": -1.63,
-      "volume": 298317,
-      "trading_value": 1274833113,
-      "mcap": 0.09,
-      "shares": 22291144,
-      "categories": [
-        "기타"
-      ],
-      "rank": 1450
-    },
-    {
-      "ticker": "063170",
-      "name": "서울옥션",
-      "name_en": "",
-      "market": "코스닥",
-      "sector": "기타",
-      "price": 5330,
-      "change": -1.3,
-      "volume": 62283,
-      "trading_value": 332387140,
-      "mcap": 0.09,
-      "shares": 17774267,
-      "categories": [
-        "기타"
-      ],
-      "rank": 1451
-    },
-    {
-      "ticker": "464490",
-      "name": "쿼드메디슨",
-      "name_en": "",
-      "market": "코스닥",
-      "sector": "기타",
-      "price": 8210,
-      "change": -2.38,
-      "volume": 55374,
-      "trading_value": 461665980,
-      "mcap": 0.09,
-      "shares": 11482113,
-      "categories": [
-        "기타"
-      ],
-      "rank": 1452
     },
     {
       "ticker": "032560",
@@ -25111,8 +24924,195 @@ window.KOS_LIVE_DATA = {
       "change": 0.36,
       "volume": 33029,
       "trading_value": 184107980,
-      "mcap": 0.09,
+      "mcap": 0.1,
       "shares": 17000000,
+      "categories": [
+        "기타"
+      ],
+      "rank": 1442
+    },
+    {
+      "ticker": "262260",
+      "name": "에이프로",
+      "name_en": "",
+      "market": "코스닥",
+      "sector": "기타",
+      "price": 6260,
+      "change": 3.81,
+      "volume": 162490,
+      "trading_value": 1037463265,
+      "mcap": 0.09,
+      "shares": 15077660,
+      "categories": [
+        "기타"
+      ],
+      "rank": 1443
+    },
+    {
+      "ticker": "226400",
+      "name": "오스테오닉",
+      "name_en": "",
+      "market": "코스닥",
+      "sector": "기타",
+      "price": 4570,
+      "change": -3.48,
+      "volume": 249931,
+      "trading_value": 1163176322,
+      "mcap": 0.09,
+      "shares": 20661601,
+      "categories": [
+        "기타"
+      ],
+      "rank": 1444
+    },
+    {
+      "ticker": "417970",
+      "name": "모델솔루션",
+      "name_en": "",
+      "market": "코스닥",
+      "sector": "기타",
+      "price": 14620,
+      "change": -3.82,
+      "volume": 48037,
+      "trading_value": 720331200,
+      "mcap": 0.09,
+      "shares": 6396700,
+      "categories": [
+        "기타"
+      ],
+      "rank": 1445
+    },
+    {
+      "ticker": "078140",
+      "name": "대봉엘에스",
+      "name_en": "",
+      "market": "코스닥",
+      "sector": "기타",
+      "price": 8510,
+      "change": -1.05,
+      "volume": 15170,
+      "trading_value": 131123170,
+      "mcap": 0.09,
+      "shares": 11086579,
+      "categories": [
+        "기타"
+      ],
+      "rank": 1446
+    },
+    {
+      "ticker": "408470",
+      "name": "한패스",
+      "name_en": "",
+      "market": "코스닥",
+      "sector": "기타",
+      "price": 8920,
+      "change": 0.34,
+      "volume": 32086,
+      "trading_value": 287858875,
+      "mcap": 0.09,
+      "shares": 10572000,
+      "categories": [
+        "기타"
+      ],
+      "rank": 1447
+    },
+    {
+      "ticker": "131370",
+      "name": "알서포트",
+      "name_en": "",
+      "market": "코스닥",
+      "sector": "기타",
+      "price": 1779,
+      "change": -2.15,
+      "volume": 149168,
+      "trading_value": 266216011,
+      "mcap": 0.09,
+      "shares": 53267083,
+      "categories": [
+        "기타"
+      ],
+      "rank": 1448
+    },
+    {
+      "ticker": "288180",
+      "name": "케이피항공산업",
+      "name_en": "",
+      "market": "코스닥",
+      "sector": "기타",
+      "price": 12660,
+      "change": -1.25,
+      "volume": 395100,
+      "trading_value": 5255207820,
+      "mcap": 0.09,
+      "shares": 7393262,
+      "categories": [
+        "기타"
+      ],
+      "rank": 1449
+    },
+    {
+      "ticker": "004140",
+      "name": "동방",
+      "name_en": "",
+      "market": "코스피",
+      "sector": "기타",
+      "price": 1969,
+      "change": -1.06,
+      "volume": 530023,
+      "trading_value": 1058809314,
+      "mcap": 0.09,
+      "shares": 47971766,
+      "categories": [
+        "기타"
+      ],
+      "rank": 1450
+    },
+    {
+      "ticker": "042500",
+      "name": "링네트",
+      "name_en": "",
+      "market": "코스닥",
+      "sector": "기타",
+      "price": 4230,
+      "change": -1.63,
+      "volume": 298680,
+      "trading_value": 1276367943,
+      "mcap": 0.09,
+      "shares": 22291144,
+      "categories": [
+        "기타"
+      ],
+      "rank": 1451
+    },
+    {
+      "ticker": "063170",
+      "name": "서울옥션",
+      "name_en": "",
+      "market": "코스닥",
+      "sector": "기타",
+      "price": 5330,
+      "change": -1.3,
+      "volume": 62323,
+      "trading_value": 332600340,
+      "mcap": 0.09,
+      "shares": 17774267,
+      "categories": [
+        "기타"
+      ],
+      "rank": 1452
+    },
+    {
+      "ticker": "464490",
+      "name": "쿼드메디슨",
+      "name_en": "",
+      "market": "코스닥",
+      "sector": "기타",
+      "price": 8210,
+      "change": -2.38,
+      "volume": 55389,
+      "trading_value": 461789130,
+      "mcap": 0.09,
+      "shares": 11482113,
       "categories": [
         "기타"
       ],
@@ -25126,8 +25126,8 @@ window.KOS_LIVE_DATA = {
       "sector": "반도체",
       "price": 9320,
       "change": 1.19,
-      "volume": 17340,
-      "trading_value": 165665760,
+      "volume": 17419,
+      "trading_value": 166428110,
       "mcap": 0.09,
       "shares": 9385844,
       "categories": [
@@ -25143,8 +25143,8 @@ window.KOS_LIVE_DATA = {
       "sector": "기타",
       "price": 1767,
       "change": 6.45,
-      "volume": 1930814,
-      "trading_value": 3434154746,
+      "volume": 1934003,
+      "trading_value": 3439788206,
       "mcap": 0.09,
       "shares": 52810230,
       "categories": [
@@ -25160,8 +25160,8 @@ window.KOS_LIVE_DATA = {
       "sector": "기타",
       "price": 6750,
       "change": -2.88,
-      "volume": 17544,
-      "trading_value": 120274190,
+      "volume": 17546,
+      "trading_value": 120287670,
       "mcap": 0.09,
       "shares": 13659173,
       "categories": [
@@ -25177,8 +25177,8 @@ window.KOS_LIVE_DATA = {
       "sector": "기타",
       "price": 5900,
       "change": -0.84,
-      "volume": 126784,
-      "trading_value": 760972490,
+      "volume": 126785,
+      "trading_value": 760978390,
       "mcap": 0.09,
       "shares": 15809197,
       "categories": [
@@ -25194,8 +25194,8 @@ window.KOS_LIVE_DATA = {
       "sector": "기타",
       "price": 3075,
       "change": 4.95,
-      "volume": 792179,
-      "trading_value": 2510598459,
+      "volume": 795782,
+      "trading_value": 2521677734,
       "mcap": 0.09,
       "shares": 29676475,
       "categories": [
@@ -25262,8 +25262,8 @@ window.KOS_LIVE_DATA = {
       "sector": "기타",
       "price": 9090,
       "change": 0.66,
-      "volume": 37571,
-      "trading_value": 350186345,
+      "volume": 38271,
+      "trading_value": 356543245,
       "mcap": 0.09,
       "shares": 9978600,
       "categories": [
@@ -25279,8 +25279,8 @@ window.KOS_LIVE_DATA = {
       "sector": "기타",
       "price": 5310,
       "change": -0.38,
-      "volume": 56892,
-      "trading_value": 307051730,
+      "volume": 56897,
+      "trading_value": 307078280,
       "mcap": 0.09,
       "shares": 17476594,
       "categories": [
@@ -25296,8 +25296,8 @@ window.KOS_LIVE_DATA = {
       "sector": "기타",
       "price": 1577,
       "change": -3.43,
-      "volume": 2230568,
-      "trading_value": 3573946201,
+      "volume": 2239168,
+      "trading_value": 3587475569,
       "mcap": 0.09,
       "shares": 59591882,
       "categories": [
@@ -25313,8 +25313,8 @@ window.KOS_LIVE_DATA = {
       "sector": "기타",
       "price": 2890,
       "change": 0.87,
-      "volume": 63265,
-      "trading_value": 181129555,
+      "volume": 63278,
+      "trading_value": 181167125,
       "mcap": 0.09,
       "shares": 31984140,
       "categories": [
@@ -25330,8 +25330,8 @@ window.KOS_LIVE_DATA = {
       "sector": "기타",
       "price": 7270,
       "change": 0.0,
-      "volume": 106769,
-      "trading_value": 780493300,
+      "volume": 106936,
+      "trading_value": 781707390,
       "mcap": 0.09,
       "shares": 12614560,
       "categories": [
@@ -25347,8 +25347,8 @@ window.KOS_LIVE_DATA = {
       "sector": "기타",
       "price": 847,
       "change": -1.17,
-      "volume": 696157,
-      "trading_value": 589586341,
+      "volume": 698606,
+      "trading_value": 591660644,
       "mcap": 0.09,
       "shares": 108394549,
       "categories": [
@@ -25381,8 +25381,8 @@ window.KOS_LIVE_DATA = {
       "sector": "기타",
       "price": 1600,
       "change": -1.78,
-      "volume": 1328789,
-      "trading_value": 2183283735,
+      "volume": 1336702,
+      "trading_value": 2195946621,
       "mcap": 0.09,
       "shares": 55175440,
       "categories": [
@@ -25398,8 +25398,8 @@ window.KOS_LIVE_DATA = {
       "sector": "기타",
       "price": 3960,
       "change": 0.13,
-      "volume": 100380,
-      "trading_value": 399896475,
+      "volume": 100767,
+      "trading_value": 401433245,
       "mcap": 0.09,
       "shares": 23147029,
       "categories": [
@@ -25415,8 +25415,8 @@ window.KOS_LIVE_DATA = {
       "sector": "기타",
       "price": 1314,
       "change": -4.92,
-      "volume": 157260,
-      "trading_value": 209106286,
+      "volume": 157630,
+      "trading_value": 209600266,
       "mcap": 0.09,
       "shares": 69903446,
       "categories": [
@@ -25432,8 +25432,8 @@ window.KOS_LIVE_DATA = {
       "sector": "기타",
       "price": 9300,
       "change": -0.64,
-      "volume": 51715,
-      "trading_value": 481585610,
+      "volume": 51968,
+      "trading_value": 483937660,
       "mcap": 0.09,
       "shares": 9742009,
       "categories": [
@@ -25449,8 +25449,8 @@ window.KOS_LIVE_DATA = {
       "sector": "기타",
       "price": 11290,
       "change": -4.08,
-      "volume": 598849,
-      "trading_value": 6909729260,
+      "volume": 610238,
+      "trading_value": 7037508390,
       "mcap": 0.09,
       "shares": 8062134,
       "categories": [
@@ -25483,8 +25483,8 @@ window.KOS_LIVE_DATA = {
       "sector": "기타",
       "price": 4710,
       "change": -0.63,
-      "volume": 35747,
-      "trading_value": 168108428,
+      "volume": 35761,
+      "trading_value": 168174233,
       "mcap": 0.09,
       "shares": 19262308,
       "categories": [
@@ -25500,8 +25500,8 @@ window.KOS_LIVE_DATA = {
       "sector": "기타",
       "price": 1656,
       "change": -0.36,
-      "volume": 85789,
-      "trading_value": 138375866,
+      "volume": 85839,
+      "trading_value": 138458666,
       "mcap": 0.09,
       "shares": 56156301,
       "categories": [
@@ -25517,8 +25517,8 @@ window.KOS_LIVE_DATA = {
       "sector": "기타",
       "price": 1681,
       "change": -4.49,
-      "volume": 1372051,
-      "trading_value": 2414193785,
+      "volume": 1383045,
+      "trading_value": 2432588789,
       "mcap": 0.09,
       "shares": 51935125,
       "categories": [
@@ -25568,8 +25568,8 @@ window.KOS_LIVE_DATA = {
       "sector": "기타",
       "price": 5840,
       "change": -2.5,
-      "volume": 44764,
-      "trading_value": 265711030,
+      "volume": 45053,
+      "trading_value": 267396540,
       "mcap": 0.09,
       "shares": 15267638,
       "categories": [
@@ -25585,8 +25585,8 @@ window.KOS_LIVE_DATA = {
       "sector": "기타",
       "price": 6970,
       "change": 3.87,
-      "volume": 47041,
-      "trading_value": 323851550,
+      "volume": 47145,
+      "trading_value": 324576430,
       "mcap": 0.09,
       "shares": 13202139,
       "categories": [
@@ -25602,8 +25602,8 @@ window.KOS_LIVE_DATA = {
       "sector": "기타",
       "price": 2610,
       "change": 0.97,
-      "volume": 67579,
-      "trading_value": 175749930,
+      "volume": 67591,
+      "trading_value": 175781330,
       "mcap": 0.09,
       "shares": 34802000,
       "categories": [
@@ -25636,8 +25636,8 @@ window.KOS_LIVE_DATA = {
       "sector": "기타",
       "price": 11400,
       "change": 4.49,
-      "volume": 573164,
-      "trading_value": 6664485730,
+      "volume": 575539,
+      "trading_value": 6691509620,
       "mcap": 0.09,
       "shares": 8052610,
       "categories": [
@@ -25670,8 +25670,8 @@ window.KOS_LIVE_DATA = {
       "sector": "기타",
       "price": 2455,
       "change": -6.48,
-      "volume": 208650,
-      "trading_value": 510854925,
+      "volume": 208903,
+      "trading_value": 511476040,
       "mcap": 0.09,
       "shares": 36727943,
       "categories": [
@@ -25687,8 +25687,8 @@ window.KOS_LIVE_DATA = {
       "sector": "기타",
       "price": 13650,
       "change": 2.48,
-      "volume": 12952,
-      "trading_value": 176774670,
+      "volume": 12955,
+      "trading_value": 176815620,
       "mcap": 0.09,
       "shares": 6661742,
       "categories": [
@@ -25721,8 +25721,8 @@ window.KOS_LIVE_DATA = {
       "sector": "기타",
       "price": 10000,
       "change": -7.15,
-      "volume": 121658,
-      "trading_value": 1252291800,
+      "volume": 121761,
+      "trading_value": 1253320200,
       "mcap": 0.09,
       "shares": 8625000,
       "categories": [
@@ -25738,8 +25738,8 @@ window.KOS_LIVE_DATA = {
       "sector": "기타",
       "price": 6660,
       "change": -11.79,
-      "volume": 724696,
-      "trading_value": 5138834675,
+      "volume": 726437,
+      "trading_value": 5150429735,
       "mcap": 0.09,
       "shares": 13046473,
       "categories": [
@@ -25755,8 +25755,8 @@ window.KOS_LIVE_DATA = {
       "sector": "기타",
       "price": 9820,
       "change": 2.94,
-      "volume": 155185,
-      "trading_value": 1571332365,
+      "volume": 155367,
+      "trading_value": 1573118365,
       "mcap": 0.09,
       "shares": 8771556,
       "categories": [
@@ -25772,8 +25772,8 @@ window.KOS_LIVE_DATA = {
       "sector": "기타",
       "price": 860,
       "change": -0.81,
-      "volume": 400070,
-      "trading_value": 346984321,
+      "volume": 400113,
+      "trading_value": 347021301,
       "mcap": 0.09,
       "shares": 100894865,
       "categories": [
@@ -25789,8 +25789,8 @@ window.KOS_LIVE_DATA = {
       "sector": "기타",
       "price": 6310,
       "change": -0.94,
-      "volume": 15789,
-      "trading_value": 100706140,
+      "volume": 15793,
+      "trading_value": 100731380,
       "mcap": 0.09,
       "shares": 13900000,
       "categories": [
@@ -25806,8 +25806,8 @@ window.KOS_LIVE_DATA = {
       "sector": "기타",
       "price": 6000,
       "change": -5.66,
-      "volume": 34065,
-      "trading_value": 207807620,
+      "volume": 34066,
+      "trading_value": 207813680,
       "mcap": 0.09,
       "shares": 14486386,
       "categories": [
@@ -25840,8 +25840,8 @@ window.KOS_LIVE_DATA = {
       "sector": "기타",
       "price": 16160,
       "change": -0.12,
-      "volume": 7357,
-      "trading_value": 119643265,
+      "volume": 7381,
+      "trading_value": 120031105,
       "mcap": 0.09,
       "shares": 5485962,
       "categories": [
@@ -25874,8 +25874,8 @@ window.KOS_LIVE_DATA = {
       "sector": "기타",
       "price": 6850,
       "change": -2.56,
-      "volume": 34606,
-      "trading_value": 237813620,
+      "volume": 34892,
+      "trading_value": 239774300,
       "mcap": 0.09,
       "shares": 12954436,
       "categories": [
@@ -25891,8 +25891,8 @@ window.KOS_LIVE_DATA = {
       "sector": "기타",
       "price": 6790,
       "change": 0.3,
-      "volume": 75353,
-      "trading_value": 511698960,
+      "volume": 75367,
+      "trading_value": 511794020,
       "mcap": 0.09,
       "shares": 13024757,
       "categories": [
@@ -25908,8 +25908,8 @@ window.KOS_LIVE_DATA = {
       "sector": "기타",
       "price": 13350,
       "change": -3.19,
-      "volume": 42114,
-      "trading_value": 569605625,
+      "volume": 42209,
+      "trading_value": 570873875,
       "mcap": 0.09,
       "shares": 6585760,
       "categories": [
@@ -25942,8 +25942,8 @@ window.KOS_LIVE_DATA = {
       "sector": "기타",
       "price": 5790,
       "change": -2.85,
-      "volume": 21840,
-      "trading_value": 128497290,
+      "volume": 22393,
+      "trading_value": 131699660,
       "mcap": 0.09,
       "shares": 14847347,
       "categories": [
@@ -25959,8 +25959,8 @@ window.KOS_LIVE_DATA = {
       "sector": "기타",
       "price": 4470,
       "change": 1.48,
-      "volume": 15251,
-      "trading_value": 67248244,
+      "volume": 15255,
+      "trading_value": 67266124,
       "mcap": 0.09,
       "shares": 20000000,
       "categories": [
@@ -25976,8 +25976,8 @@ window.KOS_LIVE_DATA = {
       "sector": "기타",
       "price": 3075,
       "change": -0.16,
-      "volume": 69532,
-      "trading_value": 214551492,
+      "volume": 69541,
+      "trading_value": 214579167,
       "mcap": 0.09,
       "shares": 28600117,
       "categories": [
@@ -25993,8 +25993,8 @@ window.KOS_LIVE_DATA = {
       "sector": "기타",
       "price": 6890,
       "change": 2.84,
-      "volume": 14258,
-      "trading_value": 94740175,
+      "volume": 14271,
+      "trading_value": 94827275,
       "mcap": 0.09,
       "shares": 13247561,
       "categories": [
@@ -26061,8 +26061,8 @@ window.KOS_LIVE_DATA = {
       "sector": "기타",
       "price": 10230,
       "change": 0.79,
-      "volume": 41137,
-      "trading_value": 418743650,
+      "volume": 41139,
+      "trading_value": 418764110,
       "mcap": 0.09,
       "shares": 8565789,
       "categories": [
@@ -26078,8 +26078,8 @@ window.KOS_LIVE_DATA = {
       "sector": "기타",
       "price": 2175,
       "change": -0.68,
-      "volume": 273480,
-      "trading_value": 596525086,
+      "volume": 275647,
+      "trading_value": 601215986,
       "mcap": 0.09,
       "shares": 39357140,
       "categories": [
@@ -26095,8 +26095,8 @@ window.KOS_LIVE_DATA = {
       "sector": "기타",
       "price": 880,
       "change": -6.78,
-      "volume": 1543333,
-      "trading_value": 1377383409,
+      "volume": 1616853,
+      "trading_value": 1441965313,
       "mcap": 0.09,
       "shares": 96950558,
       "categories": [
@@ -26163,8 +26163,8 @@ window.KOS_LIVE_DATA = {
       "sector": "기타",
       "price": 3925,
       "change": -2.12,
-      "volume": 715937,
-      "trading_value": 2822902980,
+      "volume": 724564,
+      "trading_value": 2856872700,
       "mcap": 0.09,
       "shares": 21816128,
       "categories": [
@@ -26197,8 +26197,8 @@ window.KOS_LIVE_DATA = {
       "sector": "기타",
       "price": 2575,
       "change": 5.1,
-      "volume": 631193,
-      "trading_value": 1616481112,
+      "volume": 632421,
+      "trading_value": 1619643112,
       "mcap": 0.09,
       "shares": 33622267,
       "categories": [
@@ -26214,8 +26214,8 @@ window.KOS_LIVE_DATA = {
       "sector": "기타",
       "price": 1471,
       "change": 0.14,
-      "volume": 38151,
-      "trading_value": 55700416,
+      "volume": 38472,
+      "trading_value": 56172607,
       "mcap": 0.09,
       "shares": 58115438,
       "categories": [
@@ -26231,31 +26231,14 @@ window.KOS_LIVE_DATA = {
       "sector": "기타",
       "price": 1530,
       "change": 2.27,
-      "volume": 527264,
-      "trading_value": 797775522,
+      "volume": 528239,
+      "trading_value": 799267270,
       "mcap": 0.09,
       "shares": 56777187,
       "categories": [
         "기타"
       ],
       "rank": 1519
-    },
-    {
-      "ticker": "413390",
-      "name": "엠오티",
-      "name_en": "",
-      "market": "코스닥",
-      "sector": "기타",
-      "price": 7340,
-      "change": 7.15,
-      "volume": 102757,
-      "trading_value": 751379550,
-      "mcap": 0.09,
-      "shares": 11580180,
-      "categories": [
-        "기타"
-      ],
-      "rank": 1520
     },
     {
       "ticker": "058630",
@@ -26272,7 +26255,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 1521
+      "rank": 1520
     },
     {
       "ticker": "251120",
@@ -26282,82 +26265,14 @@ window.KOS_LIVE_DATA = {
       "sector": "기타",
       "price": 9850,
       "change": -0.2,
-      "volume": 37586,
-      "trading_value": 370549910,
-      "mcap": 0.08,
+      "volume": 37685,
+      "trading_value": 371522770,
+      "mcap": 0.09,
       "shares": 8695700,
       "categories": [
         "기타"
       ],
-      "rank": 1522
-    },
-    {
-      "ticker": "079810",
-      "name": "APS이노베이션",
-      "name_en": "",
-      "market": "코스닥",
-      "sector": "기타",
-      "price": 3930,
-      "change": -2.36,
-      "volume": 203995,
-      "trading_value": 818566376,
-      "mcap": 0.08,
-      "shares": 21528094,
-      "categories": [
-        "기타"
-      ],
-      "rank": 1523
-    },
-    {
-      "ticker": "041930",
-      "name": "SY동아",
-      "name_en": "",
-      "market": "코스닥",
-      "sector": "기타",
-      "price": 5570,
-      "change": -1.94,
-      "volume": 93341,
-      "trading_value": 524972690,
-      "mcap": 0.08,
-      "shares": 15200000,
-      "categories": [
-        "기타"
-      ],
-      "rank": 1524
-    },
-    {
-      "ticker": "091120",
-      "name": "이엠텍",
-      "name_en": "",
-      "market": "코스닥",
-      "sector": "기타",
-      "price": 4905,
-      "change": 3.05,
-      "volume": 76795,
-      "trading_value": 381645840,
-      "mcap": 0.08,
-      "shares": 17132936,
-      "categories": [
-        "기타"
-      ],
-      "rank": 1525
-    },
-    {
-      "ticker": "460940",
-      "name": "피앤에스로보틱스",
-      "name_en": "",
-      "market": "코스닥",
-      "sector": "기타",
-      "price": 6230,
-      "change": -1.11,
-      "volume": 45331,
-      "trading_value": 287303730,
-      "mcap": 0.08,
-      "shares": 13455280,
-      "categories": [
-        "기타"
-      ],
-      "rank": 1526
+      "rank": 1521
     },
     {
       "ticker": "004840",
@@ -26369,12 +26284,12 @@ window.KOS_LIVE_DATA = {
       "change": -1.34,
       "volume": 23424,
       "trading_value": 103803762,
-      "mcap": 0.08,
+      "mcap": 0.09,
       "shares": 19272364,
       "categories": [
         "기타"
       ],
-      "rank": 1527
+      "rank": 1522
     },
     {
       "ticker": "002200",
@@ -26386,8 +26301,93 @@ window.KOS_LIVE_DATA = {
       "change": -0.19,
       "volume": 31713,
       "trading_value": 80754183,
-      "mcap": 0.08,
+      "mcap": 0.09,
       "shares": 33499941,
+      "categories": [
+        "기타"
+      ],
+      "rank": 1523
+    },
+    {
+      "ticker": "413390",
+      "name": "엠오티",
+      "name_en": "",
+      "market": "코스닥",
+      "sector": "기타",
+      "price": 7340,
+      "change": 7.15,
+      "volume": 102780,
+      "trading_value": 751544000,
+      "mcap": 0.08,
+      "shares": 11580180,
+      "categories": [
+        "기타"
+      ],
+      "rank": 1524
+    },
+    {
+      "ticker": "079810",
+      "name": "APS이노베이션",
+      "name_en": "",
+      "market": "코스닥",
+      "sector": "기타",
+      "price": 3930,
+      "change": -2.36,
+      "volume": 205569,
+      "trading_value": 824752441,
+      "mcap": 0.08,
+      "shares": 21528094,
+      "categories": [
+        "기타"
+      ],
+      "rank": 1525
+    },
+    {
+      "ticker": "041930",
+      "name": "SY동아",
+      "name_en": "",
+      "market": "코스닥",
+      "sector": "기타",
+      "price": 5570,
+      "change": -1.94,
+      "volume": 96146,
+      "trading_value": 540560450,
+      "mcap": 0.08,
+      "shares": 15200000,
+      "categories": [
+        "기타"
+      ],
+      "rank": 1526
+    },
+    {
+      "ticker": "091120",
+      "name": "이엠텍",
+      "name_en": "",
+      "market": "코스닥",
+      "sector": "기타",
+      "price": 4905,
+      "change": 3.05,
+      "volume": 76803,
+      "trading_value": 381685050,
+      "mcap": 0.08,
+      "shares": 17132936,
+      "categories": [
+        "기타"
+      ],
+      "rank": 1527
+    },
+    {
+      "ticker": "460940",
+      "name": "피앤에스로보틱스",
+      "name_en": "",
+      "market": "코스닥",
+      "sector": "기타",
+      "price": 6230,
+      "change": -1.11,
+      "volume": 45332,
+      "trading_value": 287309960,
+      "mcap": 0.08,
+      "shares": 13455280,
       "categories": [
         "기타"
       ],
@@ -26401,8 +26401,8 @@ window.KOS_LIVE_DATA = {
       "sector": "기타",
       "price": 8350,
       "change": 5.7,
-      "volume": 144712,
-      "trading_value": 1254485335,
+      "volume": 145017,
+      "trading_value": 1257032085,
       "mcap": 0.08,
       "shares": 9833208,
       "categories": [
@@ -26418,8 +26418,8 @@ window.KOS_LIVE_DATA = {
       "sector": "기타",
       "price": 1075,
       "change": -2.71,
-      "volume": 234412,
-      "trading_value": 256060064,
+      "volume": 237095,
+      "trading_value": 258945473,
       "mcap": 0.08,
       "shares": 77456610,
       "categories": [
@@ -26435,8 +26435,8 @@ window.KOS_LIVE_DATA = {
       "sector": "기타",
       "price": 3190,
       "change": 0.0,
-      "volume": 234308,
-      "trading_value": 760529355,
+      "volume": 235414,
+      "trading_value": 764057595,
       "mcap": 0.08,
       "shares": 26366319,
       "categories": [
@@ -26452,8 +26452,8 @@ window.KOS_LIVE_DATA = {
       "sector": "기타",
       "price": 1184,
       "change": -2.47,
-      "volume": 898053,
-      "trading_value": 1091303705,
+      "volume": 902779,
+      "trading_value": 1096899249,
       "mcap": 0.08,
       "shares": 70047521,
       "categories": [
@@ -26469,8 +26469,8 @@ window.KOS_LIVE_DATA = {
       "sector": "기타",
       "price": 2150,
       "change": -0.92,
-      "volume": 91195,
-      "trading_value": 196451420,
+      "volume": 91197,
+      "trading_value": 196455720,
       "mcap": 0.08,
       "shares": 38677937,
       "categories": [
@@ -26486,8 +26486,8 @@ window.KOS_LIVE_DATA = {
       "sector": "기타",
       "price": 5000,
       "change": -2.15,
-      "volume": 52290,
-      "trading_value": 264975145,
+      "volume": 52452,
+      "trading_value": 265783645,
       "mcap": 0.08,
       "shares": 16485110,
       "categories": [
@@ -26503,8 +26503,8 @@ window.KOS_LIVE_DATA = {
       "sector": "기타",
       "price": 2855,
       "change": 1.96,
-      "volume": 181994,
-      "trading_value": 515911970,
+      "volume": 183194,
+      "trading_value": 519344385,
       "mcap": 0.08,
       "shares": 29502977,
       "categories": [
@@ -26537,8 +26537,8 @@ window.KOS_LIVE_DATA = {
       "sector": "기타",
       "price": 9150,
       "change": -0.76,
-      "volume": 29824,
-      "trading_value": 273905170,
+      "volume": 30052,
+      "trading_value": 275991370,
       "mcap": 0.08,
       "shares": 9190885,
       "categories": [
@@ -26588,8 +26588,8 @@ window.KOS_LIVE_DATA = {
       "sector": "기타",
       "price": 2635,
       "change": -2.95,
-      "volume": 106769,
-      "trading_value": 286780370,
+      "volume": 106813,
+      "trading_value": 286896260,
       "mcap": 0.08,
       "shares": 30891758,
       "categories": [
@@ -26605,8 +26605,8 @@ window.KOS_LIVE_DATA = {
       "sector": "기타",
       "price": 4680,
       "change": -0.74,
-      "volume": 255393,
-      "trading_value": 1199462878,
+      "volume": 256660,
+      "trading_value": 1205389913,
       "mcap": 0.08,
       "shares": 17848110,
       "categories": [
@@ -26622,8 +26622,8 @@ window.KOS_LIVE_DATA = {
       "sector": "기타",
       "price": 1441,
       "change": -0.96,
-      "volume": 246158,
-      "trading_value": 359415992,
+      "volume": 246168,
+      "trading_value": 359430404,
       "mcap": 0.08,
       "shares": 57196240,
       "categories": [
@@ -26639,8 +26639,8 @@ window.KOS_LIVE_DATA = {
       "sector": "기타",
       "price": 3240,
       "change": -0.92,
-      "volume": 94500,
-      "trading_value": 307899625,
+      "volume": 94801,
+      "trading_value": 308886865,
       "mcap": 0.08,
       "shares": 25740564,
       "categories": [
@@ -26690,8 +26690,8 @@ window.KOS_LIVE_DATA = {
       "sector": "기타",
       "price": 4955,
       "change": -1.1,
-      "volume": 262159,
-      "trading_value": 1308375888,
+      "volume": 262240,
+      "trading_value": 1308779218,
       "mcap": 0.08,
       "shares": 16743200,
       "categories": [
@@ -26724,8 +26724,8 @@ window.KOS_LIVE_DATA = {
       "sector": "기타",
       "price": 611,
       "change": 6.26,
-      "volume": 798276,
-      "trading_value": 482915902,
+      "volume": 798335,
+      "trading_value": 482951951,
       "mcap": 0.08,
       "shares": 132429720,
       "categories": [
@@ -26758,8 +26758,8 @@ window.KOS_LIVE_DATA = {
       "sector": "기타",
       "price": 1458,
       "change": 3.62,
-      "volume": 163391,
-      "trading_value": 243448413,
+      "volume": 163540,
+      "trading_value": 243665655,
       "mcap": 0.08,
       "shares": 56827085,
       "categories": [
@@ -26775,8 +26775,8 @@ window.KOS_LIVE_DATA = {
       "sector": "기타",
       "price": 4395,
       "change": -1.68,
-      "volume": 83378,
-      "trading_value": 363972760,
+      "volume": 83400,
+      "trading_value": 364069450,
       "mcap": 0.08,
       "shares": 19320695,
       "categories": [
@@ -26809,8 +26809,8 @@ window.KOS_LIVE_DATA = {
       "sector": "기타",
       "price": 9450,
       "change": -1.15,
-      "volume": 35659,
-      "trading_value": 341710560,
+      "volume": 35760,
+      "trading_value": 342659340,
       "mcap": 0.08,
       "shares": 8556830,
       "categories": [
@@ -26843,8 +26843,8 @@ window.KOS_LIVE_DATA = {
       "sector": "기타",
       "price": 5680,
       "change": -0.18,
-      "volume": 37768,
-      "trading_value": 216441330,
+      "volume": 38420,
+      "trading_value": 220143180,
       "mcap": 0.08,
       "shares": 14354920,
       "categories": [
@@ -26860,8 +26860,8 @@ window.KOS_LIVE_DATA = {
       "sector": "기타",
       "price": 5850,
       "change": -0.51,
-      "volume": 85292,
-      "trading_value": 499350040,
+      "volume": 85743,
+      "trading_value": 501991190,
       "mcap": 0.08,
       "shares": 14116015,
       "categories": [
@@ -26911,8 +26911,8 @@ window.KOS_LIVE_DATA = {
       "sector": "기타",
       "price": 2225,
       "change": -15.56,
-      "volume": 305514,
-      "trading_value": 679015987,
+      "volume": 306021,
+      "trading_value": 680144062,
       "mcap": 0.08,
       "shares": 36338727,
       "categories": [
@@ -26928,8 +26928,8 @@ window.KOS_LIVE_DATA = {
       "sector": "기타",
       "price": 851,
       "change": 0.47,
-      "volume": 200398,
-      "trading_value": 171908363,
+      "volume": 200448,
+      "trading_value": 171950523,
       "mcap": 0.08,
       "shares": 96714620,
       "categories": [
@@ -26945,8 +26945,8 @@ window.KOS_LIVE_DATA = {
       "sector": "기타",
       "price": 7420,
       "change": 1.92,
-      "volume": 58485,
-      "trading_value": 435475625,
+      "volume": 58529,
+      "trading_value": 435800055,
       "mcap": 0.08,
       "shares": 10966000,
       "categories": [
@@ -26996,8 +26996,8 @@ window.KOS_LIVE_DATA = {
       "sector": "기타",
       "price": 4330,
       "change": -0.69,
-      "volume": 51805,
-      "trading_value": 227571450,
+      "volume": 51809,
+      "trading_value": 227590430,
       "mcap": 0.08,
       "shares": 18394221,
       "categories": [
@@ -27013,8 +27013,8 @@ window.KOS_LIVE_DATA = {
       "sector": "기타",
       "price": 7540,
       "change": 2.45,
-      "volume": 22206,
-      "trading_value": 166904250,
+      "volume": 22272,
+      "trading_value": 167400590,
       "mcap": 0.08,
       "shares": 10690180,
       "categories": [
@@ -27064,8 +27064,8 @@ window.KOS_LIVE_DATA = {
       "sector": "기타",
       "price": 5900,
       "change": 2.08,
-      "volume": 63936,
-      "trading_value": 377400500,
+      "volume": 63976,
+      "trading_value": 377632900,
       "mcap": 0.08,
       "shares": 13513500,
       "categories": [
@@ -27081,8 +27081,8 @@ window.KOS_LIVE_DATA = {
       "sector": "기타",
       "price": 7000,
       "change": 2.49,
-      "volume": 34715,
-      "trading_value": 241948135,
+      "volume": 34745,
+      "trading_value": 242158595,
       "mcap": 0.08,
       "shares": 11600000,
       "categories": [
@@ -27132,8 +27132,8 @@ window.KOS_LIVE_DATA = {
       "sector": "기타",
       "price": 4030,
       "change": 1.64,
-      "volume": 50739,
-      "trading_value": 205152319,
+      "volume": 51030,
+      "trading_value": 206336804,
       "mcap": 0.08,
       "shares": 19843212,
       "categories": [
@@ -27149,8 +27149,8 @@ window.KOS_LIVE_DATA = {
       "sector": "기타",
       "price": 3930,
       "change": -1.87,
-      "volume": 123259,
-      "trading_value": 491343763,
+      "volume": 123841,
+      "trading_value": 493622573,
       "mcap": 0.08,
       "shares": 20033946,
       "categories": [
@@ -27166,8 +27166,8 @@ window.KOS_LIVE_DATA = {
       "sector": "기타",
       "price": 5340,
       "change": 0.0,
-      "volume": 32221,
-      "trading_value": 173629485,
+      "volume": 32224,
+      "trading_value": 173646195,
       "mcap": 0.08,
       "shares": 14825000,
       "categories": [
@@ -27183,8 +27183,8 @@ window.KOS_LIVE_DATA = {
       "sector": "기타",
       "price": 5920,
       "change": -0.34,
-      "volume": 8882,
-      "trading_value": 52546805,
+      "volume": 8976,
+      "trading_value": 53113625,
       "mcap": 0.08,
       "shares": 13617577,
       "categories": [
@@ -27200,8 +27200,8 @@ window.KOS_LIVE_DATA = {
       "sector": "기타",
       "price": 2220,
       "change": 0.68,
-      "volume": 44638,
-      "trading_value": 106179325,
+      "volume": 44899,
+      "trading_value": 106758745,
       "mcap": 0.08,
       "shares": 35596662,
       "categories": [
@@ -27217,8 +27217,8 @@ window.KOS_LIVE_DATA = {
       "sector": "기타",
       "price": 5220,
       "change": 1.16,
-      "volume": 39828,
-      "trading_value": 206963120,
+      "volume": 39834,
+      "trading_value": 206994530,
       "mcap": 0.08,
       "shares": 15340000,
       "categories": [
@@ -27234,8 +27234,8 @@ window.KOS_LIVE_DATA = {
       "sector": "기타",
       "price": 2065,
       "change": -2.59,
-      "volume": 289330,
-      "trading_value": 618494759,
+      "volume": 290650,
+      "trading_value": 621220469,
       "mcap": 0.08,
       "shares": 37421354,
       "categories": [
@@ -27251,8 +27251,8 @@ window.KOS_LIVE_DATA = {
       "sector": "기타",
       "price": 6300,
       "change": 3.96,
-      "volume": 58451,
-      "trading_value": 362912260,
+      "volume": 58478,
+      "trading_value": 363082900,
       "mcap": 0.08,
       "shares": 12945932,
       "categories": [
@@ -27285,8 +27285,8 @@ window.KOS_LIVE_DATA = {
       "sector": "기타",
       "price": 4905,
       "change": -6.21,
-      "volume": 213046,
-      "trading_value": 1052780178,
+      "volume": 213198,
+      "trading_value": 1053525778,
       "mcap": 0.08,
       "shares": 16225380,
       "categories": [
@@ -27302,8 +27302,8 @@ window.KOS_LIVE_DATA = {
       "sector": "기타",
       "price": 5330,
       "change": 1.52,
-      "volume": 38465,
-      "trading_value": 205300000,
+      "volume": 38645,
+      "trading_value": 206259400,
       "mcap": 0.08,
       "shares": 14865000,
       "categories": [
@@ -27319,8 +27319,8 @@ window.KOS_LIVE_DATA = {
       "sector": "기타",
       "price": 7410,
       "change": -1.46,
-      "volume": 98448,
-      "trading_value": 732765165,
+      "volume": 98464,
+      "trading_value": 732883555,
       "mcap": 0.08,
       "shares": 10773818,
       "categories": [
@@ -27336,8 +27336,8 @@ window.KOS_LIVE_DATA = {
       "sector": "기타",
       "price": 4845,
       "change": -1.22,
-      "volume": 71334,
-      "trading_value": 349844210,
+      "volume": 71598,
+      "trading_value": 351123300,
       "mcap": 0.08,
       "shares": 16071290,
       "categories": [
@@ -27387,8 +27387,8 @@ window.KOS_LIVE_DATA = {
       "sector": "기타",
       "price": 2380,
       "change": -1.04,
-      "volume": 147567,
-      "trading_value": 356870230,
+      "volume": 147929,
+      "trading_value": 357728350,
       "mcap": 0.08,
       "shares": 32897049,
       "categories": [
@@ -27404,8 +27404,8 @@ window.KOS_LIVE_DATA = {
       "sector": "기타",
       "price": 6940,
       "change": -0.72,
-      "volume": 13180,
-      "trading_value": 91406560,
+      "volume": 13355,
+      "trading_value": 92621060,
       "mcap": 0.08,
       "shares": 11485863,
       "categories": [
@@ -27421,8 +27421,8 @@ window.KOS_LIVE_DATA = {
       "sector": "기타",
       "price": 5050,
       "change": -2.88,
-      "volume": 80697,
-      "trading_value": 406199704,
+      "volume": 80900,
+      "trading_value": 407224854,
       "mcap": 0.08,
       "shares": 15640021,
       "categories": [
@@ -27438,8 +27438,8 @@ window.KOS_LIVE_DATA = {
       "sector": "기타",
       "price": 4415,
       "change": -0.67,
-      "volume": 41089,
-      "trading_value": 182705070,
+      "volume": 41189,
+      "trading_value": 183155070,
       "mcap": 0.08,
       "shares": 17546331,
       "categories": [
@@ -27472,8 +27472,8 @@ window.KOS_LIVE_DATA = {
       "sector": "기타",
       "price": 1529,
       "change": -2.05,
-      "volume": 94300,
-      "trading_value": 145841228,
+      "volume": 94644,
+      "trading_value": 146367204,
       "mcap": 0.08,
       "shares": 50663505,
       "categories": [
@@ -27489,8 +27489,8 @@ window.KOS_LIVE_DATA = {
       "sector": "기타",
       "price": 14920,
       "change": -0.07,
-      "volume": 22054,
-      "trading_value": 327350760,
+      "volume": 22057,
+      "trading_value": 327395520,
       "mcap": 0.08,
       "shares": 5285292,
       "categories": [
@@ -27506,8 +27506,8 @@ window.KOS_LIVE_DATA = {
       "sector": "기타",
       "price": 1576,
       "change": -0.57,
-      "volume": 133177,
-      "trading_value": 213142302,
+      "volume": 133189,
+      "trading_value": 213161371,
       "mcap": 0.08,
       "shares": 48456578,
       "categories": [
@@ -27540,8 +27540,8 @@ window.KOS_LIVE_DATA = {
       "sector": "기타",
       "price": 6650,
       "change": 1.06,
-      "volume": 26479,
-      "trading_value": 169502160,
+      "volume": 26483,
+      "trading_value": 169528760,
       "mcap": 0.08,
       "shares": 12193555,
       "categories": [
@@ -27557,8 +27557,8 @@ window.KOS_LIVE_DATA = {
       "sector": "기타",
       "price": 3910,
       "change": -1.01,
-      "volume": 151468,
-      "trading_value": 592447857,
+      "volume": 151813,
+      "trading_value": 593797217,
       "mcap": 0.08,
       "shares": 20047970,
       "categories": [
@@ -27574,8 +27574,8 @@ window.KOS_LIVE_DATA = {
       "sector": "기타",
       "price": 2745,
       "change": 0.73,
-      "volume": 96522,
-      "trading_value": 267559061,
+      "volume": 96535,
+      "trading_value": 267594746,
       "mcap": 0.08,
       "shares": 28155825,
       "categories": [
@@ -27591,8 +27591,8 @@ window.KOS_LIVE_DATA = {
       "sector": "기타",
       "price": 1452,
       "change": -3.65,
-      "volume": 643476,
-      "trading_value": 954783948,
+      "volume": 649587,
+      "trading_value": 963645006,
       "mcap": 0.08,
       "shares": 53059040,
       "categories": [
@@ -27608,8 +27608,8 @@ window.KOS_LIVE_DATA = {
       "sector": "기타",
       "price": 1250,
       "change": -12.16,
-      "volume": 1559440,
-      "trading_value": 2113380336,
+      "volume": 1564708,
+      "trading_value": 2119965365,
       "mcap": 0.08,
       "shares": 60052260,
       "categories": [
@@ -27625,8 +27625,8 @@ window.KOS_LIVE_DATA = {
       "sector": "기타",
       "price": 11780,
       "change": -0.93,
-      "volume": 174905,
-      "trading_value": 2037158195,
+      "volume": 175397,
+      "trading_value": 2042955325,
       "mcap": 0.08,
       "shares": 6668810,
       "categories": [
@@ -27642,8 +27642,8 @@ window.KOS_LIVE_DATA = {
       "sector": "기타",
       "price": 2150,
       "change": 0.7,
-      "volume": 97537,
-      "trading_value": 209424257,
+      "volume": 101541,
+      "trading_value": 218012917,
       "mcap": 0.08,
       "shares": 35901760,
       "categories": [
@@ -27659,8 +27659,8 @@ window.KOS_LIVE_DATA = {
       "sector": "기타",
       "price": 6040,
       "change": -2.74,
-      "volume": 68260,
-      "trading_value": 415381295,
+      "volume": 68401,
+      "trading_value": 416232935,
       "mcap": 0.08,
       "shares": 12715050,
       "categories": [
@@ -27676,8 +27676,8 @@ window.KOS_LIVE_DATA = {
       "sector": "기타",
       "price": 6050,
       "change": 5.22,
-      "volume": 189189,
-      "trading_value": 1136555300,
+      "volume": 189371,
+      "trading_value": 1137650890,
       "mcap": 0.08,
       "shares": 13283350,
       "categories": [
@@ -27710,8 +27710,8 @@ window.KOS_LIVE_DATA = {
       "sector": "기타",
       "price": 3120,
       "change": -3.41,
-      "volume": 102755,
-      "trading_value": 322551930,
+      "volume": 102815,
+      "trading_value": 322739130,
       "mcap": 0.08,
       "shares": 24675001,
       "categories": [
@@ -27727,8 +27727,8 @@ window.KOS_LIVE_DATA = {
       "sector": "기타",
       "price": 2500,
       "change": -3.47,
-      "volume": 31709,
-      "trading_value": 80572515,
+      "volume": 31710,
+      "trading_value": 80575015,
       "mcap": 0.08,
       "shares": 30490440,
       "categories": [
@@ -27761,8 +27761,8 @@ window.KOS_LIVE_DATA = {
       "sector": "기타",
       "price": 7740,
       "change": 2.38,
-      "volume": 210827,
-      "trading_value": 1675900255,
+      "volume": 211329,
+      "trading_value": 1679788045,
       "mcap": 0.08,
       "shares": 9796800,
       "categories": [
@@ -27778,8 +27778,8 @@ window.KOS_LIVE_DATA = {
       "sector": "기타",
       "price": 4830,
       "change": -1.63,
-      "volume": 353728,
-      "trading_value": 1717745984,
+      "volume": 354064,
+      "trading_value": 1719361614,
       "mcap": 0.08,
       "shares": 15697991,
       "categories": [
@@ -27812,8 +27812,8 @@ window.KOS_LIVE_DATA = {
       "sector": "기타",
       "price": 939,
       "change": 9.19,
-      "volume": 2472938,
-      "trading_value": 2307440199,
+      "volume": 2475626,
+      "trading_value": 2309964077,
       "mcap": 0.08,
       "shares": 85253242,
       "categories": [
@@ -27829,8 +27829,8 @@ window.KOS_LIVE_DATA = {
       "sector": "기타",
       "price": 1374,
       "change": 1.48,
-      "volume": 158506,
-      "trading_value": 217287733,
+      "volume": 158511,
+      "trading_value": 217295178,
       "mcap": 0.08,
       "shares": 56037103,
       "categories": [
@@ -27846,8 +27846,8 @@ window.KOS_LIVE_DATA = {
       "sector": "기타",
       "price": 2360,
       "change": -0.84,
-      "volume": 195404,
-      "trading_value": 462484410,
+      "volume": 197585,
+      "trading_value": 467631570,
       "mcap": 0.08,
       "shares": 32593810,
       "categories": [
@@ -27863,8 +27863,8 @@ window.KOS_LIVE_DATA = {
       "sector": "기타",
       "price": 926,
       "change": -7.68,
-      "volume": 1007829,
-      "trading_value": 958292994,
+      "volume": 1008224,
+      "trading_value": 958658610,
       "mcap": 0.08,
       "shares": 81033287,
       "categories": [
@@ -27880,8 +27880,8 @@ window.KOS_LIVE_DATA = {
       "sector": "기타",
       "price": 2885,
       "change": -0.69,
-      "volume": 43932,
-      "trading_value": 127152301,
+      "volume": 43948,
+      "trading_value": 127199096,
       "mcap": 0.08,
       "shares": 26194852,
       "categories": [
@@ -27897,8 +27897,8 @@ window.KOS_LIVE_DATA = {
       "sector": "기타",
       "price": 2790,
       "change": -2.96,
-      "volume": 138598,
-      "trading_value": 396089525,
+      "volume": 139285,
+      "trading_value": 398017035,
       "mcap": 0.08,
       "shares": 27229210,
       "categories": [
@@ -27931,8 +27931,8 @@ window.KOS_LIVE_DATA = {
       "sector": "기타",
       "price": 6220,
       "change": -0.32,
-      "volume": 39186,
-      "trading_value": 247487620,
+      "volume": 39201,
+      "trading_value": 247580920,
       "mcap": 0.08,
       "shares": 12105146,
       "categories": [
@@ -27948,8 +27948,8 @@ window.KOS_LIVE_DATA = {
       "sector": "기타",
       "price": 2120,
       "change": 2.42,
-      "volume": 89351,
-      "trading_value": 188253820,
+      "volume": 89371,
+      "trading_value": 188296220,
       "mcap": 0.08,
       "shares": 35930773,
       "categories": [
@@ -27982,31 +27982,14 @@ window.KOS_LIVE_DATA = {
       "sector": "기타",
       "price": 4830,
       "change": -0.1,
-      "volume": 33723,
-      "trading_value": 163034507,
+      "volume": 33745,
+      "trading_value": 163139667,
       "mcap": 0.08,
       "shares": 15702890,
       "categories": [
         "기타"
       ],
       "rank": 1622
-    },
-    {
-      "ticker": "007460",
-      "name": "에이프로젠",
-      "name_en": "",
-      "market": "코스피",
-      "sector": "기타",
-      "price": 3320,
-      "change": -2.92,
-      "volume": 132295,
-      "trading_value": 441954447,
-      "mcap": 0.08,
-      "shares": 22422602,
-      "categories": [
-        "기타"
-      ],
-      "rank": 1623
     },
     {
       "ticker": "463020",
@@ -28016,14 +27999,14 @@ window.KOS_LIVE_DATA = {
       "sector": "기타",
       "price": 8820,
       "change": 0.57,
-      "volume": 98842,
-      "trading_value": 859566350,
+      "volume": 99643,
+      "trading_value": 866632980,
       "mcap": 0.08,
       "shares": 8879200,
       "categories": [
         "기타"
       ],
-      "rank": 1624
+      "rank": 1623
     },
     {
       "ticker": "124560",
@@ -28033,14 +28016,48 @@ window.KOS_LIVE_DATA = {
       "sector": "기타",
       "price": 2020,
       "change": 7.22,
-      "volume": 3129348,
-      "trading_value": 6675154725,
+      "volume": 3145296,
+      "trading_value": 6707257590,
       "mcap": 0.08,
       "shares": 38720811,
       "categories": [
         "기타"
       ],
+      "rank": 1624
+    },
+    {
+      "ticker": "168330",
+      "name": "내츄럴엔도텍",
+      "name_en": "",
+      "market": "코스닥",
+      "sector": "기타",
+      "price": 2370,
+      "change": 0.85,
+      "volume": 29375,
+      "trading_value": 68092650,
+      "mcap": 0.08,
+      "shares": 31754900,
+      "categories": [
+        "기타"
+      ],
       "rank": 1625
+    },
+    {
+      "ticker": "007460",
+      "name": "에이프로젠",
+      "name_en": "",
+      "market": "코스피",
+      "sector": "기타",
+      "price": 3320,
+      "change": -2.92,
+      "volume": 132300,
+      "trading_value": 441971047,
+      "mcap": 0.07,
+      "shares": 22422602,
+      "categories": [
+        "기타"
+      ],
+      "rank": 1626
     },
     {
       "ticker": "064800",
@@ -28050,14 +28067,14 @@ window.KOS_LIVE_DATA = {
       "sector": "기타",
       "price": 2915,
       "change": -3.64,
-      "volume": 29057,
-      "trading_value": 84316740,
-      "mcap": 0.08,
+      "volume": 29357,
+      "trading_value": 85191240,
+      "mcap": 0.07,
       "shares": 25561459,
       "categories": [
         "기타"
       ],
-      "rank": 1626
+      "rank": 1627
     },
     {
       "ticker": "038680",
@@ -28067,14 +28084,14 @@ window.KOS_LIVE_DATA = {
       "sector": "기타",
       "price": 3720,
       "change": -2.36,
-      "volume": 142102,
-      "trading_value": 536999422,
+      "volume": 142623,
+      "trading_value": 538950052,
       "mcap": 0.07,
       "shares": 19912642,
       "categories": [
         "기타"
       ],
-      "rank": 1627
+      "rank": 1628
     },
     {
       "ticker": "013870",
@@ -28091,7 +28108,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 1628
+      "rank": 1629
     },
     {
       "ticker": "439580",
@@ -28101,14 +28118,14 @@ window.KOS_LIVE_DATA = {
       "sector": "기타",
       "price": 2200,
       "change": -1.12,
-      "volume": 118751,
-      "trading_value": 262775487,
+      "volume": 123588,
+      "trading_value": 273705362,
       "mcap": 0.07,
       "shares": 33846547,
       "categories": [
         "기타"
       ],
-      "rank": 1629
+      "rank": 1630
     },
     {
       "ticker": "025550",
@@ -28118,14 +28135,14 @@ window.KOS_LIVE_DATA = {
       "sector": "기타",
       "price": 2925,
       "change": -0.68,
-      "volume": 258589,
-      "trading_value": 776161694,
+      "volume": 258712,
+      "trading_value": 776520949,
       "mcap": 0.07,
       "shares": 25514004,
       "categories": [
         "기타"
       ],
-      "rank": 1630
+      "rank": 1631
     },
     {
       "ticker": "010960",
@@ -28135,14 +28152,14 @@ window.KOS_LIVE_DATA = {
       "sector": "기타",
       "price": 3065,
       "change": -1.29,
-      "volume": 79209,
-      "trading_value": 245662660,
+      "volume": 79211,
+      "trading_value": 245668790,
       "mcap": 0.07,
       "shares": 24120000,
       "categories": [
         "기타"
       ],
-      "rank": 1631
+      "rank": 1632
     },
     {
       "ticker": "096350",
@@ -28152,14 +28169,14 @@ window.KOS_LIVE_DATA = {
       "sector": "기타",
       "price": 2035,
       "change": 2.31,
-      "volume": 257346,
-      "trading_value": 520894177,
+      "volume": 257386,
+      "trading_value": 520976027,
       "mcap": 0.07,
       "shares": 36854762,
       "categories": [
         "기타"
       ],
-      "rank": 1632
+      "rank": 1633
     },
     {
       "ticker": "452200",
@@ -28169,14 +28186,14 @@ window.KOS_LIVE_DATA = {
       "sector": "기타",
       "price": 3035,
       "change": 2.19,
-      "volume": 375746,
-      "trading_value": 1145272971,
+      "volume": 378338,
+      "trading_value": 1153063836,
       "mcap": 0.07,
       "shares": 24232800,
       "categories": [
         "기타"
       ],
-      "rank": 1633
+      "rank": 1634
     },
     {
       "ticker": "002720",
@@ -28186,14 +28203,14 @@ window.KOS_LIVE_DATA = {
       "sector": "기타",
       "price": 3505,
       "change": -1.96,
-      "volume": 92311,
-      "trading_value": 325836092,
+      "volume": 93528,
+      "trading_value": 330036097,
       "mcap": 0.07,
       "shares": 21159832,
       "categories": [
         "기타"
       ],
-      "rank": 1634
+      "rank": 1635
     },
     {
       "ticker": "039610",
@@ -28203,14 +28220,14 @@ window.KOS_LIVE_DATA = {
       "sector": "기타",
       "price": 7060,
       "change": 0.0,
-      "volume": 62360,
-      "trading_value": 447725700,
+      "volume": 62364,
+      "trading_value": 447753940,
       "mcap": 0.07,
       "shares": 10410400,
       "categories": [
         "기타"
       ],
-      "rank": 1635
+      "rank": 1636
     },
     {
       "ticker": "263600",
@@ -28220,14 +28237,14 @@ window.KOS_LIVE_DATA = {
       "sector": "기타",
       "price": 4535,
       "change": 0.0,
-      "volume": 30437,
-      "trading_value": 139710525,
+      "volume": 30591,
+      "trading_value": 140408915,
       "mcap": 0.07,
       "shares": 15930310,
       "categories": [
         "기타"
       ],
-      "rank": 1636
+      "rank": 1637
     },
     {
       "ticker": "045660",
@@ -28244,7 +28261,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 1637
+      "rank": 1638
     },
     {
       "ticker": "005750",
@@ -28261,7 +28278,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 1638
+      "rank": 1639
     },
     {
       "ticker": "092300",
@@ -28271,14 +28288,14 @@ window.KOS_LIVE_DATA = {
       "sector": "기타",
       "price": 3600,
       "change": -1.77,
-      "volume": 197645,
-      "trading_value": 725761757,
+      "volume": 197659,
+      "trading_value": 725811237,
       "mcap": 0.07,
       "shares": 19961311,
       "categories": [
         "기타"
       ],
-      "rank": 1639
+      "rank": 1640
     },
     {
       "ticker": "006090",
@@ -28295,7 +28312,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 1640
+      "rank": 1641
     },
     {
       "ticker": "900250",
@@ -28312,7 +28329,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 1641
+      "rank": 1642
     },
     {
       "ticker": "069730",
@@ -28322,14 +28339,14 @@ window.KOS_LIVE_DATA = {
       "sector": "기타",
       "price": 5010,
       "change": -2.53,
-      "volume": 44896,
-      "trading_value": 227682655,
+      "volume": 44899,
+      "trading_value": 227697635,
       "mcap": 0.07,
       "shares": 14400000,
       "categories": [
         "기타"
       ],
-      "rank": 1642
+      "rank": 1643
     },
     {
       "ticker": "044340",
@@ -28339,14 +28356,14 @@ window.KOS_LIVE_DATA = {
       "sector": "기타",
       "price": 4145,
       "change": -5.37,
-      "volume": 65663,
-      "trading_value": 276434069,
+      "volume": 65891,
+      "trading_value": 277378389,
       "mcap": 0.07,
       "shares": 17873425,
       "categories": [
         "기타"
       ],
-      "rank": 1643
+      "rank": 1644
     },
     {
       "ticker": "900260",
@@ -28363,7 +28380,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 1644
+      "rank": 1645
     },
     {
       "ticker": "261780",
@@ -28373,14 +28390,14 @@ window.KOS_LIVE_DATA = {
       "sector": "기타",
       "price": 2650,
       "change": -4.68,
-      "volume": 924793,
-      "trading_value": 2522296955,
+      "volume": 932841,
+      "trading_value": 2543472565,
       "mcap": 0.07,
       "shares": 26912996,
       "categories": [
         "기타"
       ],
-      "rank": 1645
+      "rank": 1646
     },
     {
       "ticker": "001560",
@@ -28397,7 +28414,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 1646
+      "rank": 1647
     },
     {
       "ticker": "241690",
@@ -28407,27 +28424,10 @@ window.KOS_LIVE_DATA = {
       "sector": "기타",
       "price": 2935,
       "change": -0.84,
-      "volume": 60292,
-      "trading_value": 179690045,
+      "volume": 60495,
+      "trading_value": 180285850,
       "mcap": 0.07,
       "shares": 24470706,
-      "categories": [
-        "기타"
-      ],
-      "rank": 1647
-    },
-    {
-      "ticker": "168330",
-      "name": "내츄럴엔도텍",
-      "name_en": "",
-      "market": "코스닥",
-      "sector": "기타",
-      "price": 2370,
-      "change": 0.85,
-      "volume": 29323,
-      "trading_value": 67969410,
-      "mcap": 0.07,
-      "shares": 31754900,
       "categories": [
         "기타"
       ],
@@ -28458,8 +28458,8 @@ window.KOS_LIVE_DATA = {
       "sector": "기타",
       "price": 8120,
       "change": -1.81,
-      "volume": 95608,
-      "trading_value": 787054850,
+      "volume": 95658,
+      "trading_value": 787460850,
       "mcap": 0.07,
       "shares": 8825535,
       "categories": [
@@ -28475,8 +28475,8 @@ window.KOS_LIVE_DATA = {
       "sector": "기타",
       "price": 2245,
       "change": -0.44,
-      "volume": 47207,
-      "trading_value": 106465450,
+      "volume": 47225,
+      "trading_value": 106505810,
       "mcap": 0.07,
       "shares": 32684246,
       "categories": [
@@ -28492,8 +28492,8 @@ window.KOS_LIVE_DATA = {
       "sector": "기타",
       "price": 2890,
       "change": -0.69,
-      "volume": 35876,
-      "trading_value": 104449964,
+      "volume": 35921,
+      "trading_value": 104580464,
       "mcap": 0.07,
       "shares": 25000000,
       "categories": [
@@ -28509,8 +28509,8 @@ window.KOS_LIVE_DATA = {
       "sector": "기타",
       "price": 6250,
       "change": -1.42,
-      "volume": 18634,
-      "trading_value": 118038730,
+      "volume": 18638,
+      "trading_value": 118063710,
       "mcap": 0.07,
       "shares": 11520000,
       "categories": [
@@ -28526,8 +28526,8 @@ window.KOS_LIVE_DATA = {
       "sector": "기타",
       "price": 8090,
       "change": 3.06,
-      "volume": 49053,
-      "trading_value": 390633030,
+      "volume": 49068,
+      "trading_value": 390754260,
       "mcap": 0.07,
       "shares": 9048223,
       "categories": [
@@ -28543,8 +28543,8 @@ window.KOS_LIVE_DATA = {
       "sector": "기타",
       "price": 9940,
       "change": 6.08,
-      "volume": 35060,
-      "trading_value": 334866455,
+      "volume": 35142,
+      "trading_value": 335681375,
       "mcap": 0.07,
       "shares": 7418074,
       "categories": [
@@ -28560,8 +28560,8 @@ window.KOS_LIVE_DATA = {
       "sector": "기타",
       "price": 3000,
       "change": -0.66,
-      "volume": 97560,
-      "trading_value": 290354375,
+      "volume": 97561,
+      "trading_value": 290357370,
       "mcap": 0.07,
       "shares": 24803369,
       "categories": [
@@ -28577,8 +28577,8 @@ window.KOS_LIVE_DATA = {
       "sector": "기타",
       "price": 1661,
       "change": -0.95,
-      "volume": 80694,
-      "trading_value": 137484345,
+      "volume": 80728,
+      "trading_value": 137540819,
       "mcap": 0.07,
       "shares": 42620470,
       "categories": [
@@ -28594,8 +28594,8 @@ window.KOS_LIVE_DATA = {
       "sector": "식음료",
       "price": 2080,
       "change": -12.97,
-      "volume": 3546425,
-      "trading_value": 7193439352,
+      "volume": 3555172,
+      "trading_value": 7211675892,
       "mcap": 0.07,
       "shares": 35392350,
       "induty_code": "109",
@@ -28612,8 +28612,8 @@ window.KOS_LIVE_DATA = {
       "sector": "기타",
       "price": 1985,
       "change": 4.47,
-      "volume": 119658,
-      "trading_value": 234395700,
+      "volume": 119661,
+      "trading_value": 234401655,
       "mcap": 0.07,
       "shares": 36988000,
       "categories": [
@@ -28646,8 +28646,8 @@ window.KOS_LIVE_DATA = {
       "sector": "기타",
       "price": 2165,
       "change": 3.1,
-      "volume": 233542,
-      "trading_value": 501962580,
+      "volume": 373753,
+      "trading_value": 805510375,
       "mcap": 0.07,
       "shares": 33382498,
       "categories": [
@@ -28663,8 +28663,8 @@ window.KOS_LIVE_DATA = {
       "sector": "기타",
       "price": 2255,
       "change": -2.8,
-      "volume": 430145,
-      "trading_value": 983411485,
+      "volume": 431930,
+      "trading_value": 987434620,
       "mcap": 0.07,
       "shares": 31422383,
       "categories": [
@@ -28680,8 +28680,8 @@ window.KOS_LIVE_DATA = {
       "sector": "기타",
       "price": 2905,
       "change": -3.81,
-      "volume": 266236,
-      "trading_value": 785831682,
+      "volume": 269453,
+      "trading_value": 795173167,
       "mcap": 0.07,
       "shares": 24268402,
       "categories": [
@@ -28697,8 +28697,8 @@ window.KOS_LIVE_DATA = {
       "sector": "기타",
       "price": 4325,
       "change": 0.0,
-      "volume": 96428,
-      "trading_value": 419363670,
+      "volume": 96635,
+      "trading_value": 420278895,
       "mcap": 0.07,
       "shares": 16623293,
       "categories": [
@@ -28714,8 +28714,8 @@ window.KOS_LIVE_DATA = {
       "sector": "기타",
       "price": 4695,
       "change": -2.29,
-      "volume": 25320,
-      "trading_value": 120134520,
+      "volume": 25822,
+      "trading_value": 122491410,
       "mcap": 0.07,
       "shares": 15170500,
       "categories": [
@@ -28731,8 +28731,8 @@ window.KOS_LIVE_DATA = {
       "sector": "섬유·패션·생활",
       "price": 5010,
       "change": 3.51,
-      "volume": 5824622,
-      "trading_value": 33054124985,
+      "volume": 5830499,
+      "trading_value": 33083529130,
       "mcap": 0.07,
       "shares": 13000000,
       "induty_code": "2225",
@@ -28749,8 +28749,8 @@ window.KOS_LIVE_DATA = {
       "sector": "기타",
       "price": 3160,
       "change": 0.0,
-      "volume": 96272,
-      "trading_value": 297469445,
+      "volume": 96281,
+      "trading_value": 297498890,
       "mcap": 0.07,
       "shares": 23034277,
       "categories": [
@@ -28783,8 +28783,8 @@ window.KOS_LIVE_DATA = {
       "sector": "기타",
       "price": 7040,
       "change": 1.59,
-      "volume": 62012,
-      "trading_value": 437016400,
+      "volume": 62029,
+      "trading_value": 437136080,
       "mcap": 0.07,
       "shares": 10168513,
       "categories": [
@@ -28800,8 +28800,8 @@ window.KOS_LIVE_DATA = {
       "sector": "기타",
       "price": 940,
       "change": -5.24,
-      "volume": 269513,
-      "trading_value": 254344730,
+      "volume": 269515,
+      "trading_value": 254346610,
       "mcap": 0.07,
       "shares": 76894182,
       "categories": [
@@ -28817,8 +28817,8 @@ window.KOS_LIVE_DATA = {
       "sector": "기타",
       "price": 4465,
       "change": -0.67,
-      "volume": 66081,
-      "trading_value": 296692616,
+      "volume": 66082,
+      "trading_value": 296697196,
       "mcap": 0.07,
       "shares": 15942886,
       "categories": [
@@ -28834,8 +28834,8 @@ window.KOS_LIVE_DATA = {
       "sector": "기타",
       "price": 2720,
       "change": -1.63,
-      "volume": 32857,
-      "trading_value": 91006735,
+      "volume": 32860,
+      "trading_value": 91014940,
       "mcap": 0.07,
       "shares": 25830298,
       "categories": [
@@ -28851,8 +28851,8 @@ window.KOS_LIVE_DATA = {
       "sector": "기타",
       "price": 5230,
       "change": -2.43,
-      "volume": 57184,
-      "trading_value": 302348490,
+      "volume": 57281,
+      "trading_value": 302855740,
       "mcap": 0.07,
       "shares": 13466100,
       "categories": [
@@ -28885,8 +28885,8 @@ window.KOS_LIVE_DATA = {
       "sector": "기타",
       "price": 3130,
       "change": 4.51,
-      "volume": 64948,
-      "trading_value": 200466300,
+      "volume": 64967,
+      "trading_value": 200525370,
       "mcap": 0.07,
       "shares": 23204903,
       "categories": [
@@ -28902,8 +28902,8 @@ window.KOS_LIVE_DATA = {
       "sector": "기타",
       "price": 2865,
       "change": -3.86,
-      "volume": 48051,
-      "trading_value": 139080250,
+      "volume": 48052,
+      "trading_value": 139083215,
       "mcap": 0.07,
       "shares": 24944253,
       "categories": [
@@ -28936,8 +28936,8 @@ window.KOS_LIVE_DATA = {
       "sector": "기타",
       "price": 2970,
       "change": -1.16,
-      "volume": 175718,
-      "trading_value": 521110060,
+      "volume": 175936,
+      "trading_value": 521757520,
       "mcap": 0.07,
       "shares": 25043237,
       "categories": [
@@ -28970,8 +28970,8 @@ window.KOS_LIVE_DATA = {
       "sector": "기타",
       "price": 2005,
       "change": -2.43,
-      "volume": 193376,
-      "trading_value": 397048152,
+      "volume": 194248,
+      "trading_value": 398795867,
       "mcap": 0.07,
       "shares": 34500000,
       "categories": [
@@ -29004,8 +29004,8 @@ window.KOS_LIVE_DATA = {
       "sector": "기타",
       "price": 1165,
       "change": -2.84,
-      "volume": 129110,
-      "trading_value": 153192499,
+      "volume": 129112,
+      "trading_value": 153194829,
       "mcap": 0.07,
       "shares": 59750830,
       "categories": [
@@ -29021,8 +29021,8 @@ window.KOS_LIVE_DATA = {
       "sector": "기타",
       "price": 5060,
       "change": 2.64,
-      "volume": 317540,
-      "trading_value": 1601927933,
+      "volume": 318500,
+      "trading_value": 1606922733,
       "mcap": 0.07,
       "shares": 13922475,
       "categories": [
@@ -29055,8 +29055,8 @@ window.KOS_LIVE_DATA = {
       "sector": "기타",
       "price": 1385,
       "change": -1.42,
-      "volume": 213293,
-      "trading_value": 292422384,
+      "volume": 213582,
+      "trading_value": 292818869,
       "mcap": 0.07,
       "shares": 52062772,
       "categories": [
@@ -29072,8 +29072,8 @@ window.KOS_LIVE_DATA = {
       "sector": "기타",
       "price": 2775,
       "change": -8.87,
-      "volume": 1166220,
-      "trading_value": 3253644380,
+      "volume": 1166842,
+      "trading_value": 3255374090,
       "mcap": 0.07,
       "shares": 25274542,
       "categories": [
@@ -29089,8 +29089,8 @@ window.KOS_LIVE_DATA = {
       "sector": "기타",
       "price": 1331,
       "change": 0.08,
-      "volume": 67384,
-      "trading_value": 89585604,
+      "volume": 67783,
+      "trading_value": 90116742,
       "mcap": 0.07,
       "shares": 53110014,
       "categories": [
@@ -29106,8 +29106,8 @@ window.KOS_LIVE_DATA = {
       "sector": "기타",
       "price": 6830,
       "change": -0.15,
-      "volume": 14902,
-      "trading_value": 102687570,
+      "volume": 14913,
+      "trading_value": 102762700,
       "mcap": 0.07,
       "shares": 10225877,
       "categories": [
@@ -29123,8 +29123,8 @@ window.KOS_LIVE_DATA = {
       "sector": "기타",
       "price": 3610,
       "change": -4.75,
-      "volume": 72724,
-      "trading_value": 267097195,
+      "volume": 72727,
+      "trading_value": 267108025,
       "mcap": 0.07,
       "shares": 19418889,
       "categories": [
@@ -29140,8 +29140,8 @@ window.KOS_LIVE_DATA = {
       "sector": "기타",
       "price": 8200,
       "change": -5.31,
-      "volume": 210097,
-      "trading_value": 1759081470,
+      "volume": 210893,
+      "trading_value": 1765608810,
       "mcap": 0.07,
       "shares": 8361386,
       "categories": [
@@ -29174,8 +29174,8 @@ window.KOS_LIVE_DATA = {
       "sector": "기타",
       "price": 1369,
       "change": -0.65,
-      "volume": 229737,
-      "trading_value": 315909008,
+      "volume": 230228,
+      "trading_value": 316581187,
       "mcap": 0.07,
       "shares": 50515380,
       "categories": [
@@ -29208,8 +29208,8 @@ window.KOS_LIVE_DATA = {
       "sector": "기타",
       "price": 3690,
       "change": 0.82,
-      "volume": 109728,
-      "trading_value": 412483566,
+      "volume": 109738,
+      "trading_value": 412520466,
       "mcap": 0.07,
       "shares": 18660000,
       "categories": [
@@ -29225,8 +29225,8 @@ window.KOS_LIVE_DATA = {
       "sector": "기타",
       "price": 1456,
       "change": -0.07,
-      "volume": 186482,
-      "trading_value": 276188960,
+      "volume": 186737,
+      "trading_value": 276560240,
       "mcap": 0.07,
       "shares": 47838759,
       "categories": [
@@ -29242,8 +29242,8 @@ window.KOS_LIVE_DATA = {
       "sector": "기타",
       "price": 1276,
       "change": 0.55,
-      "volume": 157155,
-      "trading_value": 198922850,
+      "volume": 157905,
+      "trading_value": 199879853,
       "mcap": 0.07,
       "shares": 54024880,
       "categories": [
@@ -29327,8 +29327,8 @@ window.KOS_LIVE_DATA = {
       "sector": "기타",
       "price": 1829,
       "change": 0.11,
-      "volume": 116130,
-      "trading_value": 210025383,
+      "volume": 116145,
+      "trading_value": 210052800,
       "mcap": 0.07,
       "shares": 37810846,
       "categories": [
@@ -29361,8 +29361,8 @@ window.KOS_LIVE_DATA = {
       "sector": "기타",
       "price": 2655,
       "change": -4.32,
-      "volume": 1213868,
-      "trading_value": 3351304392,
+      "volume": 1214620,
+      "trading_value": 3353261057,
       "mcap": 0.07,
       "shares": 24994848,
       "categories": [
@@ -29378,8 +29378,8 @@ window.KOS_LIVE_DATA = {
       "sector": "기타",
       "price": 6010,
       "change": -3.53,
-      "volume": 15006,
-      "trading_value": 91578690,
+      "volume": 16510,
+      "trading_value": 100555850,
       "mcap": 0.07,
       "shares": 11137760,
       "categories": [
@@ -29395,8 +29395,8 @@ window.KOS_LIVE_DATA = {
       "sector": "기타",
       "price": 2000,
       "change": 4.44,
-      "volume": 594009,
-      "trading_value": 1167519457,
+      "volume": 597482,
+      "trading_value": 1174337763,
       "mcap": 0.07,
       "shares": 35055910,
       "categories": [
@@ -29412,8 +29412,8 @@ window.KOS_LIVE_DATA = {
       "sector": "기타",
       "price": 6710,
       "change": -15.38,
-      "volume": 351629,
-      "trading_value": 2578774645,
+      "volume": 351967,
+      "trading_value": 2581042205,
       "mcap": 0.07,
       "shares": 10000000,
       "categories": [
@@ -29429,8 +29429,8 @@ window.KOS_LIVE_DATA = {
       "sector": "기타",
       "price": 1711,
       "change": -0.81,
-      "volume": 377032,
-      "trading_value": 633307806,
+      "volume": 377777,
+      "trading_value": 634659163,
       "mcap": 0.07,
       "shares": 41300953,
       "categories": [
@@ -29446,8 +29446,8 @@ window.KOS_LIVE_DATA = {
       "sector": "기타",
       "price": 8560,
       "change": 2.39,
-      "volume": 20589,
-      "trading_value": 171821180,
+      "volume": 20590,
+      "trading_value": 171829730,
       "mcap": 0.07,
       "shares": 8108834,
       "categories": [
@@ -29497,8 +29497,8 @@ window.KOS_LIVE_DATA = {
       "sector": "기타",
       "price": 2495,
       "change": 7.31,
-      "volume": 1281366,
-      "trading_value": 3260807217,
+      "volume": 1284120,
+      "trading_value": 3267686897,
       "mcap": 0.07,
       "shares": 27275020,
       "categories": [
@@ -29514,8 +29514,8 @@ window.KOS_LIVE_DATA = {
       "sector": "기타",
       "price": 5520,
       "change": -2.99,
-      "volume": 35728,
-      "trading_value": 199178710,
+      "volume": 35743,
+      "trading_value": 199261530,
       "mcap": 0.07,
       "shares": 12198622,
       "categories": [
@@ -29531,8 +29531,8 @@ window.KOS_LIVE_DATA = {
       "sector": "기계·장비",
       "price": 3140,
       "change": -27.31,
-      "volume": 2948671,
-      "trading_value": 9334877664,
+      "volume": 2987350,
+      "trading_value": 9457346894,
       "mcap": 0.07,
       "shares": 22000000,
       "induty_code": "29223",
@@ -29549,8 +29549,8 @@ window.KOS_LIVE_DATA = {
       "sector": "기타",
       "price": 5110,
       "change": 4.18,
-      "volume": 10173,
-      "trading_value": 51058865,
+      "volume": 10193,
+      "trading_value": 51161065,
       "mcap": 0.07,
       "shares": 13514509,
       "categories": [
@@ -29583,8 +29583,8 @@ window.KOS_LIVE_DATA = {
       "sector": "기타",
       "price": 3965,
       "change": 2.72,
-      "volume": 59591,
-      "trading_value": 235827815,
+      "volume": 59745,
+      "trading_value": 236421485,
       "mcap": 0.07,
       "shares": 16908405,
       "categories": [
@@ -29600,8 +29600,8 @@ window.KOS_LIVE_DATA = {
       "sector": "기타",
       "price": 2085,
       "change": 0.24,
-      "volume": 308737,
-      "trading_value": 650033529,
+      "volume": 308764,
+      "trading_value": 650089809,
       "mcap": 0.07,
       "shares": 31812000,
       "categories": [
@@ -29617,8 +29617,8 @@ window.KOS_LIVE_DATA = {
       "sector": "기타",
       "price": 10400,
       "change": -3.53,
-      "volume": 11553,
-      "trading_value": 120987660,
+      "volume": 11579,
+      "trading_value": 121258060,
       "mcap": 0.07,
       "shares": 6444423,
       "categories": [
@@ -29634,8 +29634,8 @@ window.KOS_LIVE_DATA = {
       "sector": "기타",
       "price": 1416,
       "change": 0.5,
-      "volume": 125475,
-      "trading_value": 178063980,
+      "volume": 125478,
+      "trading_value": 178068228,
       "mcap": 0.07,
       "shares": 46754933,
       "categories": [
@@ -29651,8 +29651,8 @@ window.KOS_LIVE_DATA = {
       "sector": "기타",
       "price": 11670,
       "change": 0.26,
-      "volume": 33632,
-      "trading_value": 402327875,
+      "volume": 33654,
+      "trading_value": 402584615,
       "mcap": 0.07,
       "shares": 5636000,
       "categories": [
@@ -29668,8 +29668,8 @@ window.KOS_LIVE_DATA = {
       "sector": "기타",
       "price": 7350,
       "change": -0.54,
-      "volume": 24319,
-      "trading_value": 178844480,
+      "volume": 24320,
+      "trading_value": 178851820,
       "mcap": 0.07,
       "shares": 9132163,
       "categories": [
@@ -29685,8 +29685,8 @@ window.KOS_LIVE_DATA = {
       "sector": "기타",
       "price": 896,
       "change": -0.11,
-      "volume": 495747,
-      "trading_value": 448432706,
+      "volume": 497409,
+      "trading_value": 449921995,
       "mcap": 0.07,
       "shares": 74239990,
       "categories": [
@@ -29702,8 +29702,8 @@ window.KOS_LIVE_DATA = {
       "sector": "기타",
       "price": 3265,
       "change": -1.21,
-      "volume": 104563,
-      "trading_value": 344260250,
+      "volume": 104842,
+      "trading_value": 345161445,
       "mcap": 0.07,
       "shares": 20191471,
       "categories": [
@@ -29719,8 +29719,8 @@ window.KOS_LIVE_DATA = {
       "sector": "기타",
       "price": 1597,
       "change": -0.25,
-      "volume": 402838,
-      "trading_value": 646769659,
+      "volume": 405636,
+      "trading_value": 651238109,
       "mcap": 0.07,
       "shares": 41511288,
       "categories": [
@@ -29736,8 +29736,8 @@ window.KOS_LIVE_DATA = {
       "sector": "기타",
       "price": 3415,
       "change": -0.29,
-      "volume": 152342,
-      "trading_value": 527278955,
+      "volume": 153243,
+      "trading_value": 530355870,
       "mcap": 0.07,
       "shares": 19114432,
       "categories": [
@@ -29770,8 +29770,8 @@ window.KOS_LIVE_DATA = {
       "sector": "기타",
       "price": 6630,
       "change": -2.93,
-      "volume": 3502,
-      "trading_value": 23663630,
+      "volume": 3648,
+      "trading_value": 24631860,
       "mcap": 0.07,
       "shares": 9835071,
       "categories": [
@@ -29787,8 +29787,8 @@ window.KOS_LIVE_DATA = {
       "sector": "기타",
       "price": 4545,
       "change": -1.62,
-      "volume": 17017,
-      "trading_value": 77296285,
+      "volume": 17049,
+      "trading_value": 77441725,
       "mcap": 0.07,
       "shares": 14669958,
       "categories": [
@@ -29838,8 +29838,8 @@ window.KOS_LIVE_DATA = {
       "sector": "기타",
       "price": 6760,
       "change": -10.23,
-      "volume": 22693,
-      "trading_value": 155543905,
+      "volume": 22706,
+      "trading_value": 155636335,
       "mcap": 0.07,
       "shares": 10044216,
       "categories": [
@@ -29906,8 +29906,8 @@ window.KOS_LIVE_DATA = {
       "sector": "기타",
       "price": 3035,
       "change": -4.71,
-      "volume": 94906,
-      "trading_value": 293210039,
+      "volume": 95005,
+      "trading_value": 293510659,
       "mcap": 0.07,
       "shares": 21535185,
       "categories": [
@@ -29940,8 +29940,8 @@ window.KOS_LIVE_DATA = {
       "sector": "기타",
       "price": 5200,
       "change": -0.19,
-      "volume": 19897,
-      "trading_value": 103342660,
+      "volume": 19898,
+      "trading_value": 103347860,
       "mcap": 0.07,
       "shares": 12578946,
       "categories": [
@@ -29991,8 +29991,8 @@ window.KOS_LIVE_DATA = {
       "sector": "기타",
       "price": 3870,
       "change": 8.56,
-      "volume": 198699,
-      "trading_value": 749356497,
+      "volume": 199802,
+      "trading_value": 753630687,
       "mcap": 0.07,
       "shares": 17306490,
       "categories": [
@@ -30008,8 +30008,8 @@ window.KOS_LIVE_DATA = {
       "sector": "기계·장비",
       "price": 2360,
       "change": 29.96,
-      "volume": 17998632,
-      "trading_value": 38485482362,
+      "volume": 18001527,
+      "trading_value": 38492314562,
       "mcap": 0.07,
       "shares": 29490202,
       "induty_code": "29271",
@@ -30026,9 +30026,9 @@ window.KOS_LIVE_DATA = {
       "sector": "기타",
       "price": 5350,
       "change": -1.65,
-      "volume": 79284,
-      "trading_value": 430638210,
-      "mcap": 0.06,
+      "volume": 79344,
+      "trading_value": 430959210,
+      "mcap": 0.07,
       "shares": 12195957,
       "categories": [
         "기타"
@@ -30043,9 +30043,9 @@ window.KOS_LIVE_DATA = {
       "sector": "전자·부품",
       "price": 1625,
       "change": 13.24,
-      "volume": 24961756,
-      "trading_value": 43150834701,
-      "mcap": 0.06,
+      "volume": 25057597,
+      "trading_value": 43304011799,
+      "mcap": 0.07,
       "shares": 40283149,
       "induty_code": "264",
       "categories": [
@@ -30061,9 +30061,9 @@ window.KOS_LIVE_DATA = {
       "sector": "기타",
       "price": 1505,
       "change": -1.18,
-      "volume": 394518,
-      "trading_value": 593454798,
-      "mcap": 0.06,
+      "volume": 395442,
+      "trading_value": 594845423,
+      "mcap": 0.07,
       "shares": 43229784,
       "categories": [
         "기타"
@@ -30080,97 +30080,12 @@ window.KOS_LIVE_DATA = {
       "change": -0.85,
       "volume": 52679,
       "trading_value": 216801648,
-      "mcap": 0.06,
+      "mcap": 0.07,
       "shares": 16000000,
       "categories": [
         "기타"
       ],
       "rank": 1745
-    },
-    {
-      "ticker": "053450",
-      "name": "세코닉스",
-      "name_en": "",
-      "market": "코스닥",
-      "sector": "기타",
-      "price": 4375,
-      "change": -1.57,
-      "volume": 98169,
-      "trading_value": 432472994,
-      "mcap": 0.06,
-      "shares": 14792803,
-      "categories": [
-        "기타"
-      ],
-      "rank": 1746
-    },
-    {
-      "ticker": "155650",
-      "name": "와이엠씨",
-      "name_en": "",
-      "market": "코스닥",
-      "sector": "기타",
-      "price": 3390,
-      "change": 0.0,
-      "volume": 70319,
-      "trading_value": 240461360,
-      "mcap": 0.06,
-      "shares": 18974358,
-      "categories": [
-        "기타"
-      ],
-      "rank": 1747
-    },
-    {
-      "ticker": "071670",
-      "name": "에이테크솔루션",
-      "name_en": "",
-      "market": "코스닥",
-      "sector": "기타",
-      "price": 6490,
-      "change": 3.02,
-      "volume": 31527,
-      "trading_value": 205688670,
-      "mcap": 0.06,
-      "shares": 10000000,
-      "categories": [
-        "기타"
-      ],
-      "rank": 1748
-    },
-    {
-      "ticker": "019990",
-      "name": "에너토크",
-      "name_en": "",
-      "market": "코스닥",
-      "sector": "기타",
-      "price": 6540,
-      "change": -1.51,
-      "volume": 55214,
-      "trading_value": 366740680,
-      "mcap": 0.06,
-      "shares": 9756088,
-      "categories": [
-        "기타"
-      ],
-      "rank": 1749
-    },
-    {
-      "ticker": "024900",
-      "name": "디와이덕양",
-      "name_en": "",
-      "market": "코스피",
-      "sector": "기타",
-      "price": 1970,
-      "change": 9.02,
-      "volume": 315860,
-      "trading_value": 621201083,
-      "mcap": 0.06,
-      "shares": 32564980,
-      "categories": [
-        "기타"
-      ],
-      "rank": 1750
     },
     {
       "ticker": "331380",
@@ -30182,29 +30097,12 @@ window.KOS_LIVE_DATA = {
       "change": 2.23,
       "volume": 54413,
       "trading_value": 109046655,
-      "mcap": 0.06,
+      "mcap": 0.07,
       "shares": 32411489,
       "categories": [
         "기타"
       ],
-      "rank": 1751
-    },
-    {
-      "ticker": "147760",
-      "name": "피엠티",
-      "name_en": "",
-      "market": "코스닥",
-      "sector": "기타",
-      "price": 5800,
-      "change": -21.83,
-      "volume": 425057,
-      "trading_value": 2549764655,
-      "mcap": 0.06,
-      "shares": 10819866,
-      "categories": [
-        "기타"
-      ],
-      "rank": 1752
+      "rank": 1746
     },
     {
       "ticker": "100220",
@@ -30214,14 +30112,133 @@ window.KOS_LIVE_DATA = {
       "sector": "기타",
       "price": 5010,
       "change": -10.05,
-      "volume": 317581,
-      "trading_value": 1575188554,
-      "mcap": 0.06,
+      "volume": 317737,
+      "trading_value": 1575970114,
+      "mcap": 0.07,
       "shares": 12996741,
       "categories": [
         "기타"
       ],
+      "rank": 1747
+    },
+    {
+      "ticker": "007280",
+      "name": "한국특강",
+      "name_en": "",
+      "market": "코스피",
+      "sector": "기타",
+      "price": 2160,
+      "change": 1.17,
+      "volume": 38682,
+      "trading_value": 82183225,
+      "mcap": 0.07,
+      "shares": 30406655,
+      "categories": [
+        "기타"
+      ],
+      "rank": 1748
+    },
+    {
+      "ticker": "053450",
+      "name": "세코닉스",
+      "name_en": "",
+      "market": "코스닥",
+      "sector": "기타",
+      "price": 4375,
+      "change": -1.57,
+      "volume": 98292,
+      "trading_value": 433011119,
+      "mcap": 0.06,
+      "shares": 14792803,
+      "categories": [
+        "기타"
+      ],
+      "rank": 1749
+    },
+    {
+      "ticker": "155650",
+      "name": "와이엠씨",
+      "name_en": "",
+      "market": "코스닥",
+      "sector": "기타",
+      "price": 3390,
+      "change": 0.0,
+      "volume": 70470,
+      "trading_value": 240964200,
+      "mcap": 0.06,
+      "shares": 18974358,
+      "categories": [
+        "기타"
+      ],
+      "rank": 1750
+    },
+    {
+      "ticker": "071670",
+      "name": "에이테크솔루션",
+      "name_en": "",
+      "market": "코스닥",
+      "sector": "기타",
+      "price": 6490,
+      "change": 3.02,
+      "volume": 32098,
+      "trading_value": 209394520,
+      "mcap": 0.06,
+      "shares": 10000000,
+      "categories": [
+        "기타"
+      ],
+      "rank": 1751
+    },
+    {
+      "ticker": "019990",
+      "name": "에너토크",
+      "name_en": "",
+      "market": "코스닥",
+      "sector": "기타",
+      "price": 6540,
+      "change": -1.51,
+      "volume": 55270,
+      "trading_value": 367104920,
+      "mcap": 0.06,
+      "shares": 9756088,
+      "categories": [
+        "기타"
+      ],
+      "rank": 1752
+    },
+    {
+      "ticker": "024900",
+      "name": "디와이덕양",
+      "name_en": "",
+      "market": "코스피",
+      "sector": "기타",
+      "price": 1970,
+      "change": 9.02,
+      "volume": 315881,
+      "trading_value": 621243473,
+      "mcap": 0.06,
+      "shares": 32564980,
+      "categories": [
+        "기타"
+      ],
       "rank": 1753
+    },
+    {
+      "ticker": "147760",
+      "name": "피엠티",
+      "name_en": "",
+      "market": "코스닥",
+      "sector": "기타",
+      "price": 5800,
+      "change": -21.83,
+      "volume": 425591,
+      "trading_value": 2552859855,
+      "mcap": 0.06,
+      "shares": 10819866,
+      "categories": [
+        "기타"
+      ],
+      "rank": 1754
     },
     {
       "ticker": "192250",
@@ -30231,14 +30248,14 @@ window.KOS_LIVE_DATA = {
       "sector": "기타",
       "price": 9110,
       "change": -2.77,
-      "volume": 36448,
-      "trading_value": 333386880,
+      "volume": 36957,
+      "trading_value": 338017570,
       "mcap": 0.06,
       "shares": 7067125,
       "categories": [
         "기타"
       ],
-      "rank": 1754
+      "rank": 1755
     },
     {
       "ticker": "010770",
@@ -30248,14 +30265,14 @@ window.KOS_LIVE_DATA = {
       "sector": "기타",
       "price": 4415,
       "change": -0.9,
-      "volume": 66252,
-      "trading_value": 291671213,
+      "volume": 66587,
+      "trading_value": 293150258,
       "mcap": 0.06,
       "shares": 14625466,
       "categories": [
         "기타"
       ],
-      "rank": 1755
+      "rank": 1756
     },
     {
       "ticker": "246690",
@@ -30265,15 +30282,15 @@ window.KOS_LIVE_DATA = {
       "sector": "금융",
       "price": 1317,
       "change": 1.93,
-      "volume": 5040414,
-      "trading_value": 7073912771,
+      "volume": 5058927,
+      "trading_value": 7098286960,
       "mcap": 0.06,
       "shares": 47556349,
       "induty_code": "64209",
       "categories": [
         "금융"
       ],
-      "rank": 1756
+      "rank": 1757
     },
     {
       "ticker": "003010",
@@ -30283,14 +30300,14 @@ window.KOS_LIVE_DATA = {
       "sector": "기타",
       "price": 5000,
       "change": 0.0,
-      "volume": 87118,
-      "trading_value": 438082930,
+      "volume": 87138,
+      "trading_value": 438182930,
       "mcap": 0.06,
       "shares": 12712747,
       "categories": [
         "기타"
       ],
-      "rank": 1757
+      "rank": 1758
     },
     {
       "ticker": "311690",
@@ -30300,14 +30317,14 @@ window.KOS_LIVE_DATA = {
       "sector": "기타",
       "price": 4825,
       "change": -3.4,
-      "volume": 14655,
-      "trading_value": 71616702,
+      "volume": 14747,
+      "trading_value": 72060602,
       "mcap": 0.06,
       "shares": 13065462,
       "categories": [
         "기타"
       ],
-      "rank": 1758
+      "rank": 1759
     },
     {
       "ticker": "060570",
@@ -30317,14 +30334,14 @@ window.KOS_LIVE_DATA = {
       "sector": "기타",
       "price": 871,
       "change": -1.36,
-      "volume": 74487,
-      "trading_value": 64801703,
+      "volume": 74489,
+      "trading_value": 64803514,
       "mcap": 0.06,
       "shares": 74101573,
       "categories": [
         "기타"
       ],
-      "rank": 1759
+      "rank": 1760
     },
     {
       "ticker": "024910",
@@ -30334,14 +30351,14 @@ window.KOS_LIVE_DATA = {
       "sector": "기타",
       "price": 1743,
       "change": 2.17,
-      "volume": 131508,
-      "trading_value": 230931883,
+      "volume": 131552,
+      "trading_value": 231009373,
       "mcap": 0.06,
       "shares": 35819005,
       "categories": [
         "기타"
       ],
-      "rank": 1760
+      "rank": 1761
     },
     {
       "ticker": "006880",
@@ -30351,14 +30368,14 @@ window.KOS_LIVE_DATA = {
       "sector": "기타",
       "price": 5340,
       "change": -0.56,
-      "volume": 76439,
-      "trading_value": 406799915,
+      "volume": 76743,
+      "trading_value": 408422975,
       "mcap": 0.06,
       "shares": 11828858,
       "categories": [
         "기타"
       ],
-      "rank": 1761
+      "rank": 1762
     },
     {
       "ticker": "010040",
@@ -30375,23 +30392,6 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 1762
-    },
-    {
-      "ticker": "007280",
-      "name": "한국특강",
-      "name_en": "",
-      "market": "코스피",
-      "sector": "기타",
-      "price": 2160,
-      "change": 1.17,
-      "volume": 38682,
-      "trading_value": 82183225,
-      "mcap": 0.06,
-      "shares": 30406655,
-      "categories": [
-        "기타"
-      ],
       "rank": 1763
     },
     {
@@ -30402,8 +30402,8 @@ window.KOS_LIVE_DATA = {
       "sector": "기타",
       "price": 1535,
       "change": 5.14,
-      "volume": 935587,
-      "trading_value": 1466235605,
+      "volume": 937256,
+      "trading_value": 1468804200,
       "mcap": 0.06,
       "shares": 39464095,
       "categories": [
@@ -30419,8 +30419,8 @@ window.KOS_LIVE_DATA = {
       "sector": "기타",
       "price": 1392,
       "change": 0.87,
-      "volume": 281435,
-      "trading_value": 385610843,
+      "volume": 281636,
+      "trading_value": 385901289,
       "mcap": 0.06,
       "shares": 45254585,
       "categories": [
@@ -30436,8 +30436,8 @@ window.KOS_LIVE_DATA = {
       "sector": "기타",
       "price": 2845,
       "change": 4.79,
-      "volume": 1389719,
-      "trading_value": 3968240822,
+      "volume": 1394462,
+      "trading_value": 3981739687,
       "mcap": 0.06,
       "shares": 21857257,
       "categories": [
@@ -30453,8 +30453,8 @@ window.KOS_LIVE_DATA = {
       "sector": "기타",
       "price": 1291,
       "change": 0.08,
-      "volume": 71340,
-      "trading_value": 92196609,
+      "volume": 71940,
+      "trading_value": 92958009,
       "mcap": 0.06,
       "shares": 49294149,
       "categories": [
@@ -30470,8 +30470,8 @@ window.KOS_LIVE_DATA = {
       "sector": "기타",
       "price": 3740,
       "change": 0.0,
-      "volume": 194141,
-      "trading_value": 722314909,
+      "volume": 197709,
+      "trading_value": 735443854,
       "mcap": 0.06,
       "shares": 17032351,
       "categories": [
@@ -30487,8 +30487,8 @@ window.KOS_LIVE_DATA = {
       "sector": "기타",
       "price": 961,
       "change": 0.73,
-      "volume": 296817,
-      "trading_value": 287344337,
+      "volume": 296858,
+      "trading_value": 287383801,
       "mcap": 0.06,
       "shares": 64944350,
       "categories": [
@@ -30521,8 +30521,8 @@ window.KOS_LIVE_DATA = {
       "sector": "기타",
       "price": 2305,
       "change": -2.95,
-      "volume": 107778,
-      "trading_value": 251014704,
+      "volume": 112264,
+      "trading_value": 261341934,
       "mcap": 0.06,
       "shares": 26979604,
       "categories": [
@@ -30555,8 +30555,8 @@ window.KOS_LIVE_DATA = {
       "sector": "기타",
       "price": 4530,
       "change": 0.89,
-      "volume": 52726,
-      "trading_value": 236615958,
+      "volume": 53054,
+      "trading_value": 238101798,
       "mcap": 0.06,
       "shares": 14000000,
       "categories": [
@@ -30572,8 +30572,8 @@ window.KOS_LIVE_DATA = {
       "sector": "기타",
       "price": 3680,
       "change": -1.21,
-      "volume": 104833,
-      "trading_value": 392284235,
+      "volume": 104946,
+      "trading_value": 392700075,
       "mcap": 0.06,
       "shares": 16810552,
       "categories": [
@@ -30589,8 +30589,8 @@ window.KOS_LIVE_DATA = {
       "sector": "기타",
       "price": 1722,
       "change": 3.36,
-      "volume": 91348,
-      "trading_value": 155517977,
+      "volume": 91353,
+      "trading_value": 155526587,
       "mcap": 0.06,
       "shares": 37240693,
       "categories": [
@@ -30606,8 +30606,8 @@ window.KOS_LIVE_DATA = {
       "sector": "기타",
       "price": 6880,
       "change": -3.1,
-      "volume": 8076,
-      "trading_value": 55575380,
+      "volume": 8223,
+      "trading_value": 56586730,
       "mcap": 0.06,
       "shares": 9071428,
       "categories": [
@@ -30640,8 +30640,8 @@ window.KOS_LIVE_DATA = {
       "sector": "기타",
       "price": 1476,
       "change": -1.67,
-      "volume": 80950,
-      "trading_value": 120987476,
+      "volume": 80959,
+      "trading_value": 121000760,
       "mcap": 0.06,
       "shares": 41609310,
       "categories": [
@@ -30657,8 +30657,8 @@ window.KOS_LIVE_DATA = {
       "sector": "기타",
       "price": 6060,
       "change": 0.83,
-      "volume": 41992,
-      "trading_value": 258113775,
+      "volume": 41998,
+      "trading_value": 258150175,
       "mcap": 0.06,
       "shares": 10007588,
       "categories": [
@@ -30674,8 +30674,8 @@ window.KOS_LIVE_DATA = {
       "sector": "기타",
       "price": 3275,
       "change": -0.91,
-      "volume": 49578,
-      "trading_value": 162644503,
+      "volume": 49627,
+      "trading_value": 162802713,
       "mcap": 0.06,
       "shares": 19000000,
       "categories": [
@@ -30725,8 +30725,8 @@ window.KOS_LIVE_DATA = {
       "sector": "기타",
       "price": 7760,
       "change": 29.98,
-      "volume": 255311,
-      "trading_value": 1981213360,
+      "volume": 255866,
+      "trading_value": 1985520160,
       "mcap": 0.06,
       "shares": 8077000,
       "categories": [
@@ -30759,8 +30759,8 @@ window.KOS_LIVE_DATA = {
       "sector": "기타",
       "price": 1282,
       "change": 0.94,
-      "volume": 217493,
-      "trading_value": 278351926,
+      "volume": 217494,
+      "trading_value": 278353235,
       "mcap": 0.06,
       "shares": 48329564,
       "categories": [
@@ -30776,8 +30776,8 @@ window.KOS_LIVE_DATA = {
       "sector": "기타",
       "price": 2670,
       "change": -2.55,
-      "volume": 87174,
-      "trading_value": 234827780,
+      "volume": 87714,
+      "trading_value": 236269625,
       "mcap": 0.06,
       "shares": 22946994,
       "categories": [
@@ -30793,8 +30793,8 @@ window.KOS_LIVE_DATA = {
       "sector": "기타",
       "price": 4395,
       "change": 2.45,
-      "volume": 170187,
-      "trading_value": 747099306,
+      "volume": 170197,
+      "trading_value": 747143256,
       "mcap": 0.06,
       "shares": 14372406,
       "categories": [
@@ -30810,8 +30810,8 @@ window.KOS_LIVE_DATA = {
       "sector": "기타",
       "price": 3680,
       "change": -7.65,
-      "volume": 141836,
-      "trading_value": 541309550,
+      "volume": 142623,
+      "trading_value": 544205690,
       "mcap": 0.06,
       "shares": 16004000,
       "categories": [
@@ -30861,8 +30861,8 @@ window.KOS_LIVE_DATA = {
       "sector": "기타",
       "price": 1285,
       "change": -3.02,
-      "volume": 283555,
-      "trading_value": 368049137,
+      "volume": 284131,
+      "trading_value": 368789297,
       "mcap": 0.06,
       "shares": 48418523,
       "categories": [
@@ -30878,8 +30878,8 @@ window.KOS_LIVE_DATA = {
       "sector": "기타",
       "price": 1702,
       "change": 1.92,
-      "volume": 96127,
-      "trading_value": 163293745,
+      "volume": 98138,
+      "trading_value": 166716467,
       "mcap": 0.06,
       "shares": 36571255,
       "categories": [
@@ -30895,8 +30895,8 @@ window.KOS_LIVE_DATA = {
       "sector": "기타",
       "price": 6110,
       "change": 1.16,
-      "volume": 32799,
-      "trading_value": 202016100,
+      "volume": 32804,
+      "trading_value": 202048110,
       "mcap": 0.06,
       "shares": 10002634,
       "categories": [
@@ -30912,8 +30912,8 @@ window.KOS_LIVE_DATA = {
       "sector": "기타",
       "price": 4270,
       "change": -2.73,
-      "volume": 41422,
-      "trading_value": 174792680,
+      "volume": 41599,
+      "trading_value": 175537130,
       "mcap": 0.06,
       "shares": 14730199,
       "categories": [
@@ -30946,8 +30946,8 @@ window.KOS_LIVE_DATA = {
       "sector": "기타",
       "price": 3395,
       "change": -0.59,
-      "volume": 99341,
-      "trading_value": 338481315,
+      "volume": 99342,
+      "trading_value": 338484710,
       "mcap": 0.06,
       "shares": 18074350,
       "categories": [
@@ -30963,8 +30963,8 @@ window.KOS_LIVE_DATA = {
       "sector": "기타",
       "price": 5250,
       "change": -0.94,
-      "volume": 10515,
-      "trading_value": 55396155,
+      "volume": 10531,
+      "trading_value": 55480865,
       "mcap": 0.06,
       "shares": 11706000,
       "categories": [
@@ -30980,8 +30980,8 @@ window.KOS_LIVE_DATA = {
       "sector": "기타",
       "price": 4415,
       "change": -3.07,
-      "volume": 40891,
-      "trading_value": 183870664,
+      "volume": 40893,
+      "trading_value": 183879494,
       "mcap": 0.06,
       "shares": 13603078,
       "categories": [
@@ -30997,8 +30997,8 @@ window.KOS_LIVE_DATA = {
       "sector": "기타",
       "price": 10100,
       "change": 4.23,
-      "volume": 33705,
-      "trading_value": 347089165,
+      "volume": 33708,
+      "trading_value": 347119465,
       "mcap": 0.06,
       "shares": 5918890,
       "categories": [
@@ -31014,8 +31014,8 @@ window.KOS_LIVE_DATA = {
       "sector": "기타",
       "price": 4830,
       "change": -4.55,
-      "volume": 24435,
-      "trading_value": 119153950,
+      "volume": 24436,
+      "trading_value": 119158780,
       "mcap": 0.06,
       "shares": 12637802,
       "categories": [
@@ -31031,8 +31031,8 @@ window.KOS_LIVE_DATA = {
       "sector": "기타",
       "price": 5080,
       "change": -3.97,
-      "volume": 48930,
-      "trading_value": 248972690,
+      "volume": 49138,
+      "trading_value": 250029330,
       "mcap": 0.06,
       "shares": 11975050,
       "categories": [
@@ -31048,8 +31048,8 @@ window.KOS_LIVE_DATA = {
       "sector": "기타",
       "price": 4745,
       "change": -4.04,
-      "volume": 46347,
-      "trading_value": 222444235,
+      "volume": 46457,
+      "trading_value": 222966185,
       "mcap": 0.06,
       "shares": 12731947,
       "categories": [
@@ -31065,8 +31065,8 @@ window.KOS_LIVE_DATA = {
       "sector": "기타",
       "price": 2640,
       "change": -1.49,
-      "volume": 500894,
-      "trading_value": 1339161604,
+      "volume": 501006,
+      "trading_value": 1339456549,
       "mcap": 0.06,
       "shares": 23428165,
       "categories": [
@@ -31082,8 +31082,8 @@ window.KOS_LIVE_DATA = {
       "sector": "기타",
       "price": 2030,
       "change": 0.0,
-      "volume": 147521,
-      "trading_value": 299797150,
+      "volume": 148389,
+      "trading_value": 301559290,
       "mcap": 0.06,
       "shares": 29987597,
       "categories": [
@@ -31099,8 +31099,8 @@ window.KOS_LIVE_DATA = {
       "sector": "기타",
       "price": 3630,
       "change": -14.08,
-      "volume": 451638,
-      "trading_value": 1710306415,
+      "volume": 451695,
+      "trading_value": 1710513325,
       "mcap": 0.06,
       "shares": 15591376,
       "categories": [
@@ -31133,8 +31133,8 @@ window.KOS_LIVE_DATA = {
       "sector": "기타",
       "price": 6790,
       "change": -2.72,
-      "volume": 24485,
-      "trading_value": 166190695,
+      "volume": 24596,
+      "trading_value": 166944385,
       "mcap": 0.06,
       "shares": 8922463,
       "categories": [
@@ -31150,8 +31150,8 @@ window.KOS_LIVE_DATA = {
       "sector": "기타",
       "price": 3845,
       "change": 2.67,
-      "volume": 25360,
-      "trading_value": 97004075,
+      "volume": 25365,
+      "trading_value": 97023475,
       "mcap": 0.06,
       "shares": 15903199,
       "categories": [
@@ -31184,8 +31184,8 @@ window.KOS_LIVE_DATA = {
       "sector": "기타",
       "price": 7210,
       "change": 0.42,
-      "volume": 38414,
-      "trading_value": 276921340,
+      "volume": 38595,
+      "trading_value": 278225350,
       "mcap": 0.06,
       "shares": 8324420,
       "categories": [
@@ -31201,8 +31201,8 @@ window.KOS_LIVE_DATA = {
       "sector": "기타",
       "price": 3140,
       "change": -1.72,
-      "volume": 85851,
-      "trading_value": 270911502,
+      "volume": 85856,
+      "trading_value": 270927202,
       "mcap": 0.06,
       "shares": 18993623,
       "categories": [
@@ -31218,8 +31218,8 @@ window.KOS_LIVE_DATA = {
       "sector": "기타",
       "price": 3000,
       "change": 1.01,
-      "volume": 315671,
-      "trading_value": 974668007,
+      "volume": 315697,
+      "trading_value": 974746007,
       "mcap": 0.06,
       "shares": 20242496,
       "categories": [
@@ -31269,8 +31269,8 @@ window.KOS_LIVE_DATA = {
       "sector": "기타",
       "price": 4150,
       "change": 1.72,
-      "volume": 84498,
-      "trading_value": 361142186,
+      "volume": 84503,
+      "trading_value": 361162606,
       "mcap": 0.06,
       "shares": 14134587,
       "categories": [
@@ -31286,8 +31286,8 @@ window.KOS_LIVE_DATA = {
       "sector": "기타",
       "price": 20100,
       "change": -0.25,
-      "volume": 8802,
-      "trading_value": 176442245,
+      "volume": 8803,
+      "trading_value": 176462345,
       "mcap": 0.06,
       "shares": 3000000,
       "categories": [
@@ -31320,8 +31320,8 @@ window.KOS_LIVE_DATA = {
       "sector": "기타",
       "price": 686,
       "change": 3.31,
-      "volume": 493560,
-      "trading_value": 354632508,
+      "volume": 493682,
+      "trading_value": 354716200,
       "mcap": 0.06,
       "shares": 83079783,
       "categories": [
@@ -31354,8 +31354,8 @@ window.KOS_LIVE_DATA = {
       "sector": "기타",
       "price": 5440,
       "change": -3.72,
-      "volume": 37305,
-      "trading_value": 204056300,
+      "volume": 37315,
+      "trading_value": 204110660,
       "mcap": 0.06,
       "shares": 10996119,
       "categories": [
@@ -31371,8 +31371,8 @@ window.KOS_LIVE_DATA = {
       "sector": "기타",
       "price": 6720,
       "change": -10.4,
-      "volume": 95573,
-      "trading_value": 670799910,
+      "volume": 97373,
+      "trading_value": 682825910,
       "mcap": 0.06,
       "shares": 8558040,
       "categories": [
@@ -31388,8 +31388,8 @@ window.KOS_LIVE_DATA = {
       "sector": "기타",
       "price": 2935,
       "change": -4.55,
-      "volume": 156592,
-      "trading_value": 465319050,
+      "volume": 156767,
+      "trading_value": 465832775,
       "mcap": 0.06,
       "shares": 20135029,
       "categories": [
@@ -31405,8 +31405,8 @@ window.KOS_LIVE_DATA = {
       "sector": "기타",
       "price": 1736,
       "change": 2.48,
-      "volume": 62114,
-      "trading_value": 106112524,
+      "volume": 62115,
+      "trading_value": 106114400,
       "mcap": 0.06,
       "shares": 34694251,
       "categories": [
@@ -31422,8 +31422,8 @@ window.KOS_LIVE_DATA = {
       "sector": "기타",
       "price": 6680,
       "change": 2.93,
-      "volume": 9068,
-      "trading_value": 60531320,
+      "volume": 9072,
+      "trading_value": 60558050,
       "mcap": 0.06,
       "shares": 9066000,
       "categories": [
@@ -31439,8 +31439,8 @@ window.KOS_LIVE_DATA = {
       "sector": "기타",
       "price": 2300,
       "change": 8.75,
-      "volume": 555525,
-      "trading_value": 1263162888,
+      "volume": 558299,
+      "trading_value": 1269543508,
       "mcap": 0.06,
       "shares": 25831764,
       "categories": [
@@ -31456,8 +31456,8 @@ window.KOS_LIVE_DATA = {
       "sector": "기타",
       "price": 1461,
       "change": 2.53,
-      "volume": 81359,
-      "trading_value": 118579252,
+      "volume": 81817,
+      "trading_value": 119239930,
       "mcap": 0.06,
       "shares": 40000000,
       "categories": [
@@ -31473,8 +31473,8 @@ window.KOS_LIVE_DATA = {
       "sector": "기타",
       "price": 3775,
       "change": -4.43,
-      "volume": 166028,
-      "trading_value": 644978687,
+      "volume": 166414,
+      "trading_value": 646420832,
       "mcap": 0.06,
       "shares": 15680000,
       "categories": [
@@ -31507,8 +31507,8 @@ window.KOS_LIVE_DATA = {
       "sector": "기타",
       "price": 1636,
       "change": 1.43,
-      "volume": 252489,
-      "trading_value": 414053000,
+      "volume": 252648,
+      "trading_value": 414313124,
       "mcap": 0.06,
       "shares": 35507438,
       "categories": [
@@ -31524,8 +31524,8 @@ window.KOS_LIVE_DATA = {
       "sector": "기타",
       "price": 3345,
       "change": -2.19,
-      "volume": 9209,
-      "trading_value": 31276495,
+      "volume": 9210,
+      "trading_value": 31279840,
       "mcap": 0.06,
       "shares": 17494882,
       "categories": [
@@ -31541,8 +31541,8 @@ window.KOS_LIVE_DATA = {
       "sector": "기타",
       "price": 4675,
       "change": 0.21,
-      "volume": 64888,
-      "trading_value": 299775930,
+      "volume": 64891,
+      "trading_value": 299790450,
       "mcap": 0.06,
       "shares": 12695454,
       "categories": [
@@ -31558,8 +31558,8 @@ window.KOS_LIVE_DATA = {
       "sector": "기타",
       "price": 5070,
       "change": -1.55,
-      "volume": 26393,
-      "trading_value": 135218780,
+      "volume": 26402,
+      "trading_value": 135264410,
       "mcap": 0.06,
       "shares": 11325610,
       "categories": [
@@ -31575,8 +31575,8 @@ window.KOS_LIVE_DATA = {
       "sector": "기타",
       "price": 1536,
       "change": 2.26,
-      "volume": 606999,
-      "trading_value": 951476554,
+      "volume": 607514,
+      "trading_value": 952303794,
       "mcap": 0.06,
       "shares": 37296909,
       "categories": [
@@ -31592,8 +31592,8 @@ window.KOS_LIVE_DATA = {
       "sector": "기타",
       "price": 3930,
       "change": 2.75,
-      "volume": 30421,
-      "trading_value": 118558990,
+      "volume": 30436,
+      "trading_value": 118617940,
       "mcap": 0.06,
       "shares": 14845791,
       "categories": [
@@ -31609,8 +31609,8 @@ window.KOS_LIVE_DATA = {
       "sector": "기타",
       "price": 17220,
       "change": -8.21,
-      "volume": 18737,
-      "trading_value": 333407765,
+      "volume": 18739,
+      "trading_value": 333442125,
       "mcap": 0.06,
       "shares": 3283714,
       "categories": [
@@ -31660,8 +31660,8 @@ window.KOS_LIVE_DATA = {
       "sector": "기타",
       "price": 1914,
       "change": -0.62,
-      "volume": 47284,
-      "trading_value": 90726673,
+      "volume": 47415,
+      "trading_value": 90977407,
       "mcap": 0.06,
       "shares": 30010576,
       "categories": [
@@ -31694,8 +31694,8 @@ window.KOS_LIVE_DATA = {
       "sector": "기타",
       "price": 3410,
       "change": 2.25,
-      "volume": 35341,
-      "trading_value": 119307615,
+      "volume": 35357,
+      "trading_value": 119362175,
       "mcap": 0.06,
       "shares": 17100000,
       "categories": [
@@ -31711,8 +31711,8 @@ window.KOS_LIVE_DATA = {
       "sector": "기타",
       "price": 6700,
       "change": -0.15,
-      "volume": 6606,
-      "trading_value": 44305890,
+      "volume": 6656,
+      "trading_value": 44640890,
       "mcap": 0.06,
       "shares": 8600000,
       "categories": [
@@ -31762,8 +31762,8 @@ window.KOS_LIVE_DATA = {
       "sector": "기타",
       "price": 1200,
       "change": -1.72,
-      "volume": 295248,
-      "trading_value": 357478781,
+      "volume": 297704,
+      "trading_value": 360425981,
       "mcap": 0.06,
       "shares": 47474590,
       "categories": [
@@ -31830,8 +31830,8 @@ window.KOS_LIVE_DATA = {
       "sector": "기타",
       "price": 7370,
       "change": 3.95,
-      "volume": 18082,
-      "trading_value": 130635200,
+      "volume": 18392,
+      "trading_value": 132919900,
       "mcap": 0.06,
       "shares": 7857660,
       "categories": [
@@ -31847,8 +31847,8 @@ window.KOS_LIVE_DATA = {
       "sector": "기타",
       "price": 1428,
       "change": 0.56,
-      "volume": 200504,
-      "trading_value": 288151733,
+      "volume": 200514,
+      "trading_value": 288166013,
       "mcap": 0.06,
       "shares": 39605940,
       "categories": [
@@ -31864,8 +31864,8 @@ window.KOS_LIVE_DATA = {
       "sector": "기타",
       "price": 2825,
       "change": -5.83,
-      "volume": 175392,
-      "trading_value": 502498323,
+      "volume": 175552,
+      "trading_value": 502949073,
       "mcap": 0.06,
       "shares": 20073304,
       "categories": [
@@ -31881,8 +31881,8 @@ window.KOS_LIVE_DATA = {
       "sector": "기타",
       "price": 5650,
       "change": -0.53,
-      "volume": 36546,
-      "trading_value": 207943190,
+      "volume": 36556,
+      "trading_value": 207999690,
       "mcap": 0.06,
       "shares": 9918656,
       "categories": [
@@ -31898,8 +31898,8 @@ window.KOS_LIVE_DATA = {
       "sector": "기타",
       "price": 3745,
       "change": 0.13,
-      "volume": 58437,
-      "trading_value": 218173666,
+      "volume": 58452,
+      "trading_value": 218229766,
       "mcap": 0.06,
       "shares": 15119370,
       "categories": [
@@ -31932,8 +31932,8 @@ window.KOS_LIVE_DATA = {
       "sector": "기타",
       "price": 964,
       "change": 1.05,
-      "volume": 128879,
-      "trading_value": 124832805,
+      "volume": 130031,
+      "trading_value": 125948742,
       "mcap": 0.06,
       "shares": 57870945,
       "categories": [
@@ -31949,8 +31949,8 @@ window.KOS_LIVE_DATA = {
       "sector": "기타",
       "price": 3265,
       "change": 2.03,
-      "volume": 29963,
-      "trading_value": 97881920,
+      "volume": 31441,
+      "trading_value": 102712275,
       "mcap": 0.06,
       "shares": 17043598,
       "categories": [
@@ -31966,8 +31966,8 @@ window.KOS_LIVE_DATA = {
       "sector": "기타",
       "price": 1176,
       "change": 13.08,
-      "volume": 826271,
-      "trading_value": 927843712,
+      "volume": 828549,
+      "trading_value": 930522688,
       "mcap": 0.06,
       "shares": 50459582,
       "categories": [
@@ -31983,8 +31983,8 @@ window.KOS_LIVE_DATA = {
       "sector": "기타",
       "price": 1620,
       "change": -0.67,
-      "volume": 175510,
-      "trading_value": 279445269,
+      "volume": 175515,
+      "trading_value": 279453361,
       "mcap": 0.06,
       "shares": 35145000,
       "categories": [
@@ -32000,8 +32000,8 @@ window.KOS_LIVE_DATA = {
       "sector": "기타",
       "price": 496,
       "change": -3.13,
-      "volume": 139208,
-      "trading_value": 66511617,
+      "volume": 140241,
+      "trading_value": 67023985,
       "mcap": 0.06,
       "shares": 115449781,
       "categories": [
@@ -32017,8 +32017,8 @@ window.KOS_LIVE_DATA = {
       "sector": "기타",
       "price": 10680,
       "change": -0.19,
-      "volume": 30740,
-      "trading_value": 329423670,
+      "volume": 30755,
+      "trading_value": 329583870,
       "mcap": 0.06,
       "shares": 5192239,
       "categories": [
@@ -32085,31 +32085,14 @@ window.KOS_LIVE_DATA = {
       "sector": "기타",
       "price": 2560,
       "change": 11.3,
-      "volume": 135949,
-      "trading_value": 349062332,
+      "volume": 135950,
+      "trading_value": 349064892,
       "mcap": 0.06,
       "shares": 22414818,
       "categories": [
         "기타"
       ],
       "rank": 1863
-    },
-    {
-      "ticker": "291650",
-      "name": "압타머사이언스",
-      "name_en": "",
-      "market": "코스닥",
-      "sector": "기타",
-      "price": 892,
-      "change": -3.25,
-      "volume": 348068,
-      "trading_value": 278511882,
-      "mcap": 0.06,
-      "shares": 61039242,
-      "categories": [
-        "기타"
-      ],
-      "rank": 1864
     },
     {
       "ticker": "072990",
@@ -32119,48 +32102,14 @@ window.KOS_LIVE_DATA = {
       "sector": "기타",
       "price": 3835,
       "change": 0.92,
-      "volume": 17536,
-      "trading_value": 66799595,
+      "volume": 17537,
+      "trading_value": 66803440,
       "mcap": 0.06,
       "shares": 14498206,
       "categories": [
         "기타"
       ],
-      "rank": 1865
-    },
-    {
-      "ticker": "104040",
-      "name": "디에스엠",
-      "name_en": "",
-      "market": "코스닥",
-      "sector": "기타",
-      "price": 1999,
-      "change": -8.3,
-      "volume": 72713,
-      "trading_value": 151372078,
-      "mcap": 0.05,
-      "shares": 26813565,
-      "categories": [
-        "기타"
-      ],
-      "rank": 1866
-    },
-    {
-      "ticker": "002760",
-      "name": "보락",
-      "name_en": "",
-      "market": "코스피",
-      "sector": "기타",
-      "price": 912,
-      "change": -1.94,
-      "volume": 69563,
-      "trading_value": 64251416,
-      "mcap": 0.05,
-      "shares": 59900000,
-      "categories": [
-        "기타"
-      ],
-      "rank": 1867
+      "rank": 1864
     },
     {
       "ticker": "480370",
@@ -32170,48 +32119,14 @@ window.KOS_LIVE_DATA = {
       "sector": "기타",
       "price": 1695,
       "change": 0.53,
-      "volume": 83117,
-      "trading_value": 140757949,
-      "mcap": 0.05,
+      "volume": 83496,
+      "trading_value": 141398633,
+      "mcap": 0.06,
       "shares": 32481408,
       "categories": [
         "기타"
       ],
-      "rank": 1868
-    },
-    {
-      "ticker": "360350",
-      "name": "코셈",
-      "name_en": "",
-      "market": "코스닥",
-      "sector": "기타",
-      "price": 9410,
-      "change": -5.33,
-      "volume": 49389,
-      "trading_value": 476326830,
-      "mcap": 0.05,
-      "shares": 5737970,
-      "categories": [
-        "기타"
-      ],
-      "rank": 1869
-    },
-    {
-      "ticker": "072470",
-      "name": "우리산업홀딩스",
-      "name_en": "",
-      "market": "코스닥",
-      "sector": "기타",
-      "price": 2910,
-      "change": -0.17,
-      "volume": 18765,
-      "trading_value": 55018915,
-      "mcap": 0.05,
-      "shares": 18887341,
-      "categories": [
-        "기타"
-      ],
-      "rank": 1870
+      "rank": 1865
     },
     {
       "ticker": "214330",
@@ -32221,14 +32136,14 @@ window.KOS_LIVE_DATA = {
       "sector": "기타",
       "price": 2645,
       "change": 0.19,
-      "volume": 93421,
-      "trading_value": 243676840,
-      "mcap": 0.05,
+      "volume": 93528,
+      "trading_value": 243956795,
+      "mcap": 0.06,
       "shares": 20913859,
       "categories": [
         "기타"
       ],
-      "rank": 1871
+      "rank": 1866
     },
     {
       "ticker": "372910",
@@ -32240,12 +32155,131 @@ window.KOS_LIVE_DATA = {
       "change": 0.5,
       "volume": 76863,
       "trading_value": 152466706,
-      "mcap": 0.05,
+      "mcap": 0.06,
       "shares": 27674406,
       "categories": [
         "기타"
       ],
+      "rank": 1867
+    },
+    {
+      "ticker": "001620",
+      "name": "케이비아이동국실업",
+      "name_en": "",
+      "market": "코스피",
+      "sector": "기타",
+      "price": 2485,
+      "change": 2.69,
+      "volume": 59531,
+      "trading_value": 146396529,
+      "mcap": 0.06,
+      "shares": 22258606,
+      "categories": [
+        "기타"
+      ],
+      "rank": 1868
+    },
+    {
+      "ticker": "104540",
+      "name": "코렌텍",
+      "name_en": "",
+      "market": "코스닥",
+      "sector": "기타",
+      "price": 4305,
+      "change": -2.38,
+      "volume": 28918,
+      "trading_value": 123511935,
+      "mcap": 0.06,
+      "shares": 12785740,
+      "categories": [
+        "기타"
+      ],
+      "rank": 1869
+    },
+    {
+      "ticker": "291650",
+      "name": "압타머사이언스",
+      "name_en": "",
+      "market": "코스닥",
+      "sector": "기타",
+      "price": 892,
+      "change": -3.25,
+      "volume": 348444,
+      "trading_value": 278847274,
+      "mcap": 0.05,
+      "shares": 61039242,
+      "categories": [
+        "기타"
+      ],
+      "rank": 1870
+    },
+    {
+      "ticker": "104040",
+      "name": "디에스엠",
+      "name_en": "",
+      "market": "코스닥",
+      "sector": "기타",
+      "price": 1999,
+      "change": -8.3,
+      "volume": 72714,
+      "trading_value": 151374093,
+      "mcap": 0.05,
+      "shares": 26813565,
+      "categories": [
+        "기타"
+      ],
+      "rank": 1871
+    },
+    {
+      "ticker": "002760",
+      "name": "보락",
+      "name_en": "",
+      "market": "코스피",
+      "sector": "기타",
+      "price": 912,
+      "change": -1.94,
+      "volume": 69564,
+      "trading_value": 64252335,
+      "mcap": 0.05,
+      "shares": 59900000,
+      "categories": [
+        "기타"
+      ],
       "rank": 1872
+    },
+    {
+      "ticker": "360350",
+      "name": "코셈",
+      "name_en": "",
+      "market": "코스닥",
+      "sector": "기타",
+      "price": 9410,
+      "change": -5.33,
+      "volume": 49436,
+      "trading_value": 476769100,
+      "mcap": 0.05,
+      "shares": 5737970,
+      "categories": [
+        "기타"
+      ],
+      "rank": 1873
+    },
+    {
+      "ticker": "072470",
+      "name": "우리산업홀딩스",
+      "name_en": "",
+      "market": "코스닥",
+      "sector": "기타",
+      "price": 2910,
+      "change": -0.17,
+      "volume": 18767,
+      "trading_value": 55024735,
+      "mcap": 0.05,
+      "shares": 18887341,
+      "categories": [
+        "기타"
+      ],
+      "rank": 1874
     },
     {
       "ticker": "050960",
@@ -32262,24 +32296,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 1873
-    },
-    {
-      "ticker": "001620",
-      "name": "케이비아이동국실업",
-      "name_en": "",
-      "market": "코스피",
-      "sector": "기타",
-      "price": 2485,
-      "change": 2.69,
-      "volume": 59531,
-      "trading_value": 146396529,
-      "mcap": 0.05,
-      "shares": 22258606,
-      "categories": [
-        "기타"
-      ],
-      "rank": 1874
+      "rank": 1875
     },
     {
       "ticker": "419080",
@@ -32296,7 +32313,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 1875
+      "rank": 1876
     },
     {
       "ticker": "097800",
@@ -32306,27 +32323,10 @@ window.KOS_LIVE_DATA = {
       "sector": "기타",
       "price": 1995,
       "change": 2.31,
-      "volume": 87313,
-      "trading_value": 176688996,
+      "volume": 87348,
+      "trading_value": 176758141,
       "mcap": 0.05,
       "shares": 27290045,
-      "categories": [
-        "기타"
-      ],
-      "rank": 1876
-    },
-    {
-      "ticker": "104540",
-      "name": "코렌텍",
-      "name_en": "",
-      "market": "코스닥",
-      "sector": "기타",
-      "price": 4305,
-      "change": -2.38,
-      "volume": 28917,
-      "trading_value": 123507630,
-      "mcap": 0.05,
-      "shares": 12785740,
       "categories": [
         "기타"
       ],
@@ -32391,8 +32391,8 @@ window.KOS_LIVE_DATA = {
       "sector": "기타",
       "price": 8550,
       "change": -1.27,
-      "volume": 27456,
-      "trading_value": 232287220,
+      "volume": 27457,
+      "trading_value": 232295760,
       "mcap": 0.05,
       "shares": 6418644,
       "categories": [
@@ -32442,8 +32442,8 @@ window.KOS_LIVE_DATA = {
       "sector": "기타",
       "price": 3115,
       "change": -3.71,
-      "volume": 80015,
-      "trading_value": 251458670,
+      "volume": 80026,
+      "trading_value": 251492870,
       "mcap": 0.05,
       "shares": 17432396,
       "categories": [
@@ -32459,8 +32459,8 @@ window.KOS_LIVE_DATA = {
       "sector": "기타",
       "price": 2835,
       "change": -0.18,
-      "volume": 14340,
-      "trading_value": 40318915,
+      "volume": 14414,
+      "trading_value": 40528705,
       "mcap": 0.05,
       "shares": 19236053,
       "categories": [
@@ -32476,8 +32476,8 @@ window.KOS_LIVE_DATA = {
       "sector": "기타",
       "price": 3835,
       "change": 3.79,
-      "volume": 99407,
-      "trading_value": 381230365,
+      "volume": 99768,
+      "trading_value": 382613675,
       "mcap": 0.05,
       "shares": 14000000,
       "categories": [
@@ -32493,8 +32493,8 @@ window.KOS_LIVE_DATA = {
       "sector": "기타",
       "price": 5680,
       "change": 0.18,
-      "volume": 136359,
-      "trading_value": 783140050,
+      "volume": 136785,
+      "trading_value": 785559730,
       "mcap": 0.05,
       "shares": 9627600,
       "categories": [
@@ -32510,8 +32510,8 @@ window.KOS_LIVE_DATA = {
       "sector": "기타",
       "price": 2690,
       "change": -2.36,
-      "volume": 46677,
-      "trading_value": 125601260,
+      "volume": 46789,
+      "trading_value": 125902540,
       "mcap": 0.05,
       "shares": 20032636,
       "categories": [
@@ -32544,8 +32544,8 @@ window.KOS_LIVE_DATA = {
       "sector": "기타",
       "price": 2325,
       "change": -0.85,
-      "volume": 79284,
-      "trading_value": 184118945,
+      "volume": 79334,
+      "trading_value": 184235195,
       "mcap": 0.05,
       "shares": 23000000,
       "categories": [
@@ -32578,8 +32578,8 @@ window.KOS_LIVE_DATA = {
       "sector": "기타",
       "price": 2760,
       "change": -3.66,
-      "volume": 200275,
-      "trading_value": 566741144,
+      "volume": 201280,
+      "trading_value": 569527844,
       "mcap": 0.05,
       "shares": 18887979,
       "categories": [
@@ -32629,8 +32629,8 @@ window.KOS_LIVE_DATA = {
       "sector": "기타",
       "price": 4525,
       "change": -2.9,
-      "volume": 63934,
-      "trading_value": 293848475,
+      "volume": 69235,
+      "trading_value": 317759330,
       "mcap": 0.05,
       "shares": 11469507,
       "categories": [
@@ -32646,8 +32646,8 @@ window.KOS_LIVE_DATA = {
       "sector": "기타",
       "price": 8200,
       "change": -1.56,
-      "volume": 16117,
-      "trading_value": 134068140,
+      "volume": 16785,
+      "trading_value": 139543160,
       "mcap": 0.05,
       "shares": 6397335,
       "categories": [
@@ -32680,8 +32680,8 @@ window.KOS_LIVE_DATA = {
       "sector": "기타",
       "price": 5310,
       "change": -1.48,
-      "volume": 19557,
-      "trading_value": 104021775,
+      "volume": 19571,
+      "trading_value": 104096255,
       "mcap": 0.05,
       "shares": 10000000,
       "categories": [
@@ -32714,8 +32714,8 @@ window.KOS_LIVE_DATA = {
       "sector": "기타",
       "price": 1583,
       "change": 0.06,
-      "volume": 52905,
-      "trading_value": 84519895,
+      "volume": 52927,
+      "trading_value": 84554721,
       "mcap": 0.05,
       "shares": 32752929,
       "categories": [
@@ -32748,8 +32748,8 @@ window.KOS_LIVE_DATA = {
       "sector": "기타",
       "price": 1103,
       "change": -6.92,
-      "volume": 153342,
-      "trading_value": 176064826,
+      "volume": 154412,
+      "trading_value": 177245036,
       "mcap": 0.05,
       "shares": 45319582,
       "categories": [
@@ -32782,8 +32782,8 @@ window.KOS_LIVE_DATA = {
       "sector": "기타",
       "price": 2365,
       "change": -2.47,
-      "volume": 23215,
-      "trading_value": 55148135,
+      "volume": 23717,
+      "trading_value": 56336355,
       "mcap": 0.05,
       "shares": 22021065,
       "categories": [
@@ -32816,8 +32816,8 @@ window.KOS_LIVE_DATA = {
       "sector": "기타",
       "price": 3225,
       "change": -0.62,
-      "volume": 67061,
-      "trading_value": 220447729,
+      "volume": 67172,
+      "trading_value": 220805759,
       "mcap": 0.05,
       "shares": 15611619,
       "categories": [
@@ -32850,8 +32850,8 @@ window.KOS_LIVE_DATA = {
       "sector": "기타",
       "price": 3350,
       "change": 1.21,
-      "volume": 23534,
-      "trading_value": 77716487,
+      "volume": 23724,
+      "trading_value": 78352987,
       "mcap": 0.05,
       "shares": 15604898,
       "categories": [
@@ -32867,8 +32867,8 @@ window.KOS_LIVE_DATA = {
       "sector": "기타",
       "price": 2660,
       "change": 0.19,
-      "volume": 65893,
-      "trading_value": 177720844,
+      "volume": 65923,
+      "trading_value": 177799594,
       "mcap": 0.05,
       "shares": 18982783,
       "categories": [
@@ -32884,8 +32884,8 @@ window.KOS_LIVE_DATA = {
       "sector": "기타",
       "price": 1151,
       "change": -1.46,
-      "volume": 84295,
-      "trading_value": 98236465,
+      "volume": 86817,
+      "trading_value": 101125847,
       "mcap": 0.05,
       "shares": 44216140,
       "categories": [
@@ -32901,8 +32901,8 @@ window.KOS_LIVE_DATA = {
       "sector": "기타",
       "price": 1207,
       "change": 1.17,
-      "volume": 345115,
-      "trading_value": 426012426,
+      "volume": 345273,
+      "trading_value": 426203132,
       "mcap": 0.05,
       "shares": 42000000,
       "categories": [
@@ -32918,8 +32918,8 @@ window.KOS_LIVE_DATA = {
       "sector": "기타",
       "price": 583,
       "change": 1.57,
-      "volume": 417349,
-      "trading_value": 254036056,
+      "volume": 417599,
+      "trading_value": 254181806,
       "mcap": 0.05,
       "shares": 85728319,
       "categories": [
@@ -32935,8 +32935,8 @@ window.KOS_LIVE_DATA = {
       "sector": "기타",
       "price": 1118,
       "change": -1.84,
-      "volume": 208027,
-      "trading_value": 233552320,
+      "volume": 209248,
+      "trading_value": 234899897,
       "mcap": 0.05,
       "shares": 46243031,
       "categories": [
@@ -32952,8 +32952,8 @@ window.KOS_LIVE_DATA = {
       "sector": "기타",
       "price": 2830,
       "change": -1.05,
-      "volume": 97821,
-      "trading_value": 276120060,
+      "volume": 97857,
+      "trading_value": 276224280,
       "mcap": 0.05,
       "shares": 17946692,
       "categories": [
@@ -32969,8 +32969,8 @@ window.KOS_LIVE_DATA = {
       "sector": "기타",
       "price": 3870,
       "change": -2.64,
-      "volume": 14523,
-      "trading_value": 57556280,
+      "volume": 14593,
+      "trading_value": 57827480,
       "mcap": 0.05,
       "shares": 12879715,
       "categories": [
@@ -32986,8 +32986,8 @@ window.KOS_LIVE_DATA = {
       "sector": "기타",
       "price": 4860,
       "change": 3.62,
-      "volume": 130382,
-      "trading_value": 642299856,
+      "volume": 130597,
+      "trading_value": 643353356,
       "mcap": 0.05,
       "shares": 10315513,
       "categories": [
@@ -33003,8 +33003,8 @@ window.KOS_LIVE_DATA = {
       "sector": "기타",
       "price": 1530,
       "change": -0.97,
-      "volume": 139713,
-      "trading_value": 215568138,
+      "volume": 139731,
+      "trading_value": 215595678,
       "mcap": 0.05,
       "shares": 33242912,
       "categories": [
@@ -33037,8 +33037,8 @@ window.KOS_LIVE_DATA = {
       "sector": "기타",
       "price": 980,
       "change": 0.2,
-      "volume": 400255,
-      "trading_value": 392057170,
+      "volume": 400500,
+      "trading_value": 392297270,
       "mcap": 0.05,
       "shares": 52179872,
       "categories": [
@@ -33071,8 +33071,8 @@ window.KOS_LIVE_DATA = {
       "sector": "기타",
       "price": 1092,
       "change": -3.62,
-      "volume": 175242,
-      "trading_value": 195438809,
+      "volume": 175513,
+      "trading_value": 195734741,
       "mcap": 0.05,
       "shares": 45319364,
       "categories": [
@@ -33088,8 +33088,8 @@ window.KOS_LIVE_DATA = {
       "sector": "기타",
       "price": 2725,
       "change": -6.52,
-      "volume": 216515,
-      "trading_value": 599226010,
+      "volume": 216748,
+      "trading_value": 599861090,
       "mcap": 0.05,
       "shares": 18595055,
       "categories": [
@@ -33105,8 +33105,8 @@ window.KOS_LIVE_DATA = {
       "sector": "기타",
       "price": 2725,
       "change": -1.8,
-      "volume": 2084715,
-      "trading_value": 5683924833,
+      "volume": 2090575,
+      "trading_value": 5699727948,
       "mcap": 0.05,
       "shares": 19165785,
       "categories": [
@@ -33173,8 +33173,8 @@ window.KOS_LIVE_DATA = {
       "sector": "기타",
       "price": 5200,
       "change": -0.76,
-      "volume": 91566,
-      "trading_value": 480942200,
+      "volume": 91855,
+      "trading_value": 482445000,
       "mcap": 0.05,
       "shares": 9698780,
       "categories": [
@@ -33224,8 +33224,8 @@ window.KOS_LIVE_DATA = {
       "sector": "기타",
       "price": 4025,
       "change": -7.68,
-      "volume": 43641,
-      "trading_value": 180950470,
+      "volume": 44574,
+      "trading_value": 184706245,
       "mcap": 0.05,
       "shares": 11840684,
       "categories": [
@@ -33241,8 +33241,8 @@ window.KOS_LIVE_DATA = {
       "sector": "기타",
       "price": 1430,
       "change": -6.17,
-      "volume": 256625,
-      "trading_value": 370362861,
+      "volume": 257160,
+      "trading_value": 371127911,
       "mcap": 0.05,
       "shares": 34963330,
       "categories": [
@@ -33275,8 +33275,8 @@ window.KOS_LIVE_DATA = {
       "sector": "기타",
       "price": 1387,
       "change": 1.17,
-      "volume": 143040,
-      "trading_value": 199472214,
+      "volume": 147435,
+      "trading_value": 205581246,
       "mcap": 0.05,
       "shares": 35395071,
       "categories": [
@@ -33292,8 +33292,8 @@ window.KOS_LIVE_DATA = {
       "sector": "기타",
       "price": 1870,
       "change": 1.14,
-      "volume": 49256,
-      "trading_value": 90801675,
+      "volume": 49276,
+      "trading_value": 90839815,
       "mcap": 0.05,
       "shares": 27321969,
       "categories": [
@@ -33309,8 +33309,8 @@ window.KOS_LIVE_DATA = {
       "sector": "기타",
       "price": 4780,
       "change": -3.43,
-      "volume": 22624,
-      "trading_value": 110032325,
+      "volume": 22626,
+      "trading_value": 110041745,
       "mcap": 0.05,
       "shares": 10137772,
       "categories": [
@@ -33326,8 +33326,8 @@ window.KOS_LIVE_DATA = {
       "sector": "기타",
       "price": 295,
       "change": 3.15,
-      "volume": 195997,
-      "trading_value": 57466510,
+      "volume": 196031,
+      "trading_value": 57476548,
       "mcap": 0.05,
       "shares": 171048884,
       "categories": [
@@ -33360,8 +33360,8 @@ window.KOS_LIVE_DATA = {
       "sector": "기타",
       "price": 1995,
       "change": -1.97,
-      "volume": 115936,
-      "trading_value": 233469920,
+      "volume": 123179,
+      "trading_value": 247919705,
       "mcap": 0.05,
       "shares": 24939425,
       "categories": [
@@ -33377,8 +33377,8 @@ window.KOS_LIVE_DATA = {
       "sector": "기타",
       "price": 2480,
       "change": -3.88,
-      "volume": 98206,
-      "trading_value": 247718617,
+      "volume": 99316,
+      "trading_value": 250471417,
       "mcap": 0.05,
       "shares": 19948221,
       "categories": [
@@ -33411,8 +33411,8 @@ window.KOS_LIVE_DATA = {
       "sector": "기타",
       "price": 2985,
       "change": -4.63,
-      "volume": 64327,
-      "trading_value": 195935645,
+      "volume": 64347,
+      "trading_value": 195995345,
       "mcap": 0.05,
       "shares": 16533726,
       "categories": [
@@ -33462,8 +33462,8 @@ window.KOS_LIVE_DATA = {
       "sector": "기타",
       "price": 5330,
       "change": -0.37,
-      "volume": 55533,
-      "trading_value": 298840080,
+      "volume": 55809,
+      "trading_value": 300299100,
       "mcap": 0.05,
       "shares": 9300676,
       "categories": [
@@ -33496,8 +33496,8 @@ window.KOS_LIVE_DATA = {
       "sector": "기타",
       "price": 1139,
       "change": 0.09,
-      "volume": 37322,
-      "trading_value": 42049126,
+      "volume": 37336,
+      "trading_value": 42065500,
       "mcap": 0.05,
       "shares": 43885224,
       "categories": [
@@ -33513,8 +33513,8 @@ window.KOS_LIVE_DATA = {
       "sector": "기타",
       "price": 1647,
       "change": -1.14,
-      "volume": 96841,
-      "trading_value": 161697199,
+      "volume": 97392,
+      "trading_value": 162603846,
       "mcap": 0.05,
       "shares": 29800327,
       "categories": [
@@ -33530,8 +33530,8 @@ window.KOS_LIVE_DATA = {
       "sector": "기타",
       "price": 1379,
       "change": -4.1,
-      "volume": 231191,
-      "trading_value": 324548232,
+      "volume": 231335,
+      "trading_value": 324751269,
       "mcap": 0.05,
       "shares": 34508209,
       "categories": [
@@ -33547,8 +33547,8 @@ window.KOS_LIVE_DATA = {
       "sector": "기타",
       "price": 1800,
       "change": -3.23,
-      "volume": 154332,
-      "trading_value": 274897800,
+      "volume": 154349,
+      "trading_value": 274928565,
       "mcap": 0.05,
       "shares": 27506430,
       "categories": [
@@ -33564,8 +33564,8 @@ window.KOS_LIVE_DATA = {
       "sector": "기타",
       "price": 3645,
       "change": 2.82,
-      "volume": 45146,
-      "trading_value": 168847140,
+      "volume": 45171,
+      "trading_value": 168938265,
       "mcap": 0.05,
       "shares": 13692000,
       "categories": [
@@ -33581,8 +33581,8 @@ window.KOS_LIVE_DATA = {
       "sector": "기타",
       "price": 6950,
       "change": -4.4,
-      "volume": 55435,
-      "trading_value": 383650270,
+      "volume": 55436,
+      "trading_value": 383657210,
       "mcap": 0.05,
       "shares": 7206940,
       "categories": [
@@ -33615,8 +33615,8 @@ window.KOS_LIVE_DATA = {
       "sector": "기타",
       "price": 2035,
       "change": 1.75,
-      "volume": 90202,
-      "trading_value": 181653354,
+      "volume": 90222,
+      "trading_value": 181694054,
       "mcap": 0.05,
       "shares": 24258475,
       "categories": [
@@ -33632,8 +33632,8 @@ window.KOS_LIVE_DATA = {
       "sector": "기타",
       "price": 1985,
       "change": -10.18,
-      "volume": 293330,
-      "trading_value": 564557891,
+      "volume": 293361,
+      "trading_value": 564618411,
       "mcap": 0.05,
       "shares": 25388001,
       "categories": [
@@ -33683,8 +33683,8 @@ window.KOS_LIVE_DATA = {
       "sector": "기타",
       "price": 7040,
       "change": -2.09,
-      "volume": 52951,
-      "trading_value": 379756985,
+      "volume": 52980,
+      "trading_value": 379961145,
       "mcap": 0.05,
       "shares": 6828712,
       "categories": [
@@ -33717,8 +33717,8 @@ window.KOS_LIVE_DATA = {
       "sector": "기타",
       "price": 5040,
       "change": -2.89,
-      "volume": 5617,
-      "trading_value": 28993990,
+      "volume": 5640,
+      "trading_value": 29109910,
       "mcap": 0.05,
       "shares": 9376439,
       "categories": [
@@ -33734,8 +33734,8 @@ window.KOS_LIVE_DATA = {
       "sector": "기타",
       "price": 1055,
       "change": -3.3,
-      "volume": 397759,
-      "trading_value": 437367267,
+      "volume": 398156,
+      "trading_value": 437786102,
       "mcap": 0.05,
       "shares": 44599895,
       "categories": [
@@ -33785,8 +33785,8 @@ window.KOS_LIVE_DATA = {
       "sector": "기타",
       "price": 1008,
       "change": 0.9,
-      "volume": 382860,
-      "trading_value": 388263098,
+      "volume": 383441,
+      "trading_value": 388847293,
       "mcap": 0.05,
       "shares": 48103069,
       "categories": [
@@ -33819,8 +33819,8 @@ window.KOS_LIVE_DATA = {
       "sector": "기타",
       "price": 1740,
       "change": 0.0,
-      "volume": 216172,
-      "trading_value": 372233699,
+      "volume": 216255,
+      "trading_value": 372378119,
       "mcap": 0.05,
       "shares": 27913793,
       "categories": [
@@ -33836,8 +33836,8 @@ window.KOS_LIVE_DATA = {
       "sector": "기타",
       "price": 2395,
       "change": -1.44,
-      "volume": 327409,
-      "trading_value": 786840725,
+      "volume": 330090,
+      "trading_value": 793236110,
       "mcap": 0.05,
       "shares": 20000000,
       "categories": [
@@ -33853,8 +33853,8 @@ window.KOS_LIVE_DATA = {
       "sector": "기타",
       "price": 323,
       "change": -0.31,
-      "volume": 432914,
-      "trading_value": 138807492,
+      "volume": 432924,
+      "trading_value": 138810722,
       "mcap": 0.05,
       "shares": 147886116,
       "categories": [
@@ -33870,8 +33870,8 @@ window.KOS_LIVE_DATA = {
       "sector": "기타",
       "price": 2820,
       "change": -1.74,
-      "volume": 129289,
-      "trading_value": 369442323,
+      "volume": 130711,
+      "trading_value": 373451823,
       "mcap": 0.05,
       "shares": 16748240,
       "categories": [
@@ -33887,8 +33887,8 @@ window.KOS_LIVE_DATA = {
       "sector": "기타",
       "price": 2595,
       "change": 5.49,
-      "volume": 308370,
-      "trading_value": 798687193,
+      "volume": 308587,
+      "trading_value": 799251413,
       "mcap": 0.05,
       "shares": 19679630,
       "categories": [
@@ -33904,8 +33904,8 @@ window.KOS_LIVE_DATA = {
       "sector": "기타",
       "price": 3265,
       "change": 1.08,
-      "volume": 85123,
-      "trading_value": 271926795,
+      "volume": 85737,
+      "trading_value": 273931505,
       "mcap": 0.05,
       "shares": 14827550,
       "categories": [
@@ -33921,8 +33921,8 @@ window.KOS_LIVE_DATA = {
       "sector": "기타",
       "price": 5590,
       "change": 1.08,
-      "volume": 16410,
-      "trading_value": 90880440,
+      "volume": 16478,
+      "trading_value": 91260080,
       "mcap": 0.05,
       "shares": 8683200,
       "categories": [
@@ -33938,8 +33938,8 @@ window.KOS_LIVE_DATA = {
       "sector": "기타",
       "price": 5820,
       "change": -1.19,
-      "volume": 39026,
-      "trading_value": 224819840,
+      "volume": 39043,
+      "trading_value": 224918780,
       "mcap": 0.05,
       "shares": 8288520,
       "categories": [
@@ -33972,8 +33972,8 @@ window.KOS_LIVE_DATA = {
       "sector": "기타",
       "price": 4290,
       "change": -1.38,
-      "volume": 20683,
-      "trading_value": 89026461,
+      "volume": 20839,
+      "trading_value": 89695701,
       "mcap": 0.05,
       "shares": 10924547,
       "categories": [
@@ -34006,8 +34006,8 @@ window.KOS_LIVE_DATA = {
       "sector": "기타",
       "price": 963,
       "change": -0.21,
-      "volume": 96782,
-      "trading_value": 93252553,
+      "volume": 96801,
+      "trading_value": 93270850,
       "mcap": 0.05,
       "shares": 49871911,
       "categories": [
@@ -34023,8 +34023,8 @@ window.KOS_LIVE_DATA = {
       "sector": "기타",
       "price": 3295,
       "change": 1.54,
-      "volume": 45162,
-      "trading_value": 150088055,
+      "volume": 45164,
+      "trading_value": 150094645,
       "mcap": 0.05,
       "shares": 14298752,
       "categories": [
@@ -34040,8 +34040,8 @@ window.KOS_LIVE_DATA = {
       "sector": "기타",
       "price": 2980,
       "change": 0.17,
-      "volume": 51794,
-      "trading_value": 148643140,
+      "volume": 52024,
+      "trading_value": 149313690,
       "mcap": 0.05,
       "shares": 16508320,
       "categories": [
@@ -34057,8 +34057,8 @@ window.KOS_LIVE_DATA = {
       "sector": "기타",
       "price": 1165,
       "change": -0.34,
-      "volume": 75841,
-      "trading_value": 88515352,
+      "volume": 75852,
+      "trading_value": 88528167,
       "mcap": 0.05,
       "shares": 40137827,
       "categories": [
@@ -34091,8 +34091,8 @@ window.KOS_LIVE_DATA = {
       "sector": "기타",
       "price": 4530,
       "change": -1.84,
-      "volume": 49879,
-      "trading_value": 232539571,
+      "volume": 49881,
+      "trading_value": 232548631,
       "mcap": 0.05,
       "shares": 10177387,
       "categories": [
@@ -34125,31 +34125,14 @@ window.KOS_LIVE_DATA = {
       "sector": "기타",
       "price": 590,
       "change": 0.68,
-      "volume": 301698,
-      "trading_value": 178881255,
+      "volume": 303348,
+      "trading_value": 179854755,
       "mcap": 0.05,
       "shares": 78307051,
       "categories": [
         "기타"
       ],
       "rank": 1983
-    },
-    {
-      "ticker": "417860",
-      "name": "오브젠",
-      "name_en": "",
-      "market": "코스닥",
-      "sector": "기타",
-      "price": 9500,
-      "change": -9.87,
-      "volume": 188310,
-      "trading_value": 1848250960,
-      "mcap": 0.05,
-      "shares": 4696906,
-      "categories": [
-        "기타"
-      ],
-      "rank": 1984
     },
     {
       "ticker": "420570",
@@ -34159,14 +34142,14 @@ window.KOS_LIVE_DATA = {
       "sector": "기타",
       "price": 7970,
       "change": -0.13,
-      "volume": 40073,
-      "trading_value": 318311440,
+      "volume": 40143,
+      "trading_value": 318869340,
       "mcap": 0.05,
       "shares": 5847483,
       "categories": [
         "기타"
       ],
-      "rank": 1985
+      "rank": 1984
     },
     {
       "ticker": "066670",
@@ -34183,7 +34166,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 1986
+      "rank": 1985
     },
     {
       "ticker": "024950",
@@ -34193,14 +34176,14 @@ window.KOS_LIVE_DATA = {
       "sector": "기타",
       "price": 3745,
       "change": -3.35,
-      "volume": 37454,
-      "trading_value": 140615410,
+      "volume": 37602,
+      "trading_value": 141169670,
       "mcap": 0.05,
       "shares": 12400000,
       "categories": [
         "기타"
       ],
-      "rank": 1987
+      "rank": 1986
     },
     {
       "ticker": "234100",
@@ -34210,14 +34193,14 @@ window.KOS_LIVE_DATA = {
       "sector": "기타",
       "price": 3170,
       "change": -4.23,
-      "volume": 137443,
-      "trading_value": 437076045,
+      "volume": 137488,
+      "trading_value": 437218850,
       "mcap": 0.05,
       "shares": 14601636,
       "categories": [
         "기타"
       ],
-      "rank": 1988
+      "rank": 1987
     },
     {
       "ticker": "190650",
@@ -34234,7 +34217,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 1989
+      "rank": 1988
     },
     {
       "ticker": "007530",
@@ -34251,7 +34234,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 1990
+      "rank": 1989
     },
     {
       "ticker": "450330",
@@ -34268,7 +34251,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 1991
+      "rank": 1990
     },
     {
       "ticker": "051390",
@@ -34285,7 +34268,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 1992
+      "rank": 1991
     },
     {
       "ticker": "286750",
@@ -34295,14 +34278,14 @@ window.KOS_LIVE_DATA = {
       "sector": "기타",
       "price": 1416,
       "change": -9.0,
-      "volume": 164380,
-      "trading_value": 238318224,
+      "volume": 164387,
+      "trading_value": 238328136,
       "mcap": 0.05,
       "shares": 32028857,
       "categories": [
         "기타"
       ],
-      "rank": 1993
+      "rank": 1992
     },
     {
       "ticker": "037950",
@@ -34312,14 +34295,14 @@ window.KOS_LIVE_DATA = {
       "sector": "기타",
       "price": 2770,
       "change": 2.78,
-      "volume": 31948,
-      "trading_value": 86722021,
+      "volume": 32008,
+      "trading_value": 86887971,
       "mcap": 0.05,
       "shares": 16889503,
       "categories": [
         "기타"
       ],
-      "rank": 1994
+      "rank": 1993
     },
     {
       "ticker": "060850",
@@ -34329,14 +34312,14 @@ window.KOS_LIVE_DATA = {
       "sector": "기타",
       "price": 5690,
       "change": -0.18,
-      "volume": 7678,
-      "trading_value": 43744200,
+      "volume": 7849,
+      "trading_value": 44718900,
       "mcap": 0.05,
       "shares": 8131000,
       "categories": [
         "기타"
       ],
-      "rank": 1995
+      "rank": 1994
     },
     {
       "ticker": "069460",
@@ -34353,7 +34336,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 1996
+      "rank": 1995
     },
     {
       "ticker": "065650",
@@ -34370,24 +34353,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 1997
-    },
-    {
-      "ticker": "314140",
-      "name": "알피바이오",
-      "name_en": "",
-      "market": "코스닥",
-      "sector": "기타",
-      "price": 5060,
-      "change": -5.07,
-      "volume": 10822,
-      "trading_value": 56736050,
-      "mcap": 0.05,
-      "shares": 8666361,
-      "categories": [
-        "기타"
-      ],
-      "rank": 1998
+      "rank": 1996
     },
     {
       "ticker": "357250",
@@ -34397,14 +34363,14 @@ window.KOS_LIVE_DATA = {
       "sector": "기타",
       "price": 1852,
       "change": 0.11,
-      "volume": 43408,
-      "trading_value": 79922883,
+      "volume": 43413,
+      "trading_value": 79932143,
       "mcap": 0.05,
       "shares": 24995105,
       "categories": [
         "기타"
       ],
-      "rank": 1999
+      "rank": 1997
     },
     {
       "ticker": "000950",
@@ -34421,7 +34387,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 2000
+      "rank": 1998
     },
     {
       "ticker": "129890",
@@ -34431,14 +34397,14 @@ window.KOS_LIVE_DATA = {
       "sector": "기타",
       "price": 1015,
       "change": 3.78,
-      "volume": 393361,
-      "trading_value": 397206144,
+      "volume": 394402,
+      "trading_value": 398335830,
       "mcap": 0.05,
       "shares": 45545602,
       "categories": [
         "기타"
       ],
-      "rank": 2001
+      "rank": 1999
     },
     {
       "ticker": "003080",
@@ -34455,7 +34421,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 2002
+      "rank": 2000
     },
     {
       "ticker": "066910",
@@ -34472,7 +34438,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 2003
+      "rank": 2001
     },
     {
       "ticker": "093240",
@@ -34482,14 +34448,14 @@ window.KOS_LIVE_DATA = {
       "sector": "기타",
       "price": 740,
       "change": 5.26,
-      "volume": 3240021,
-      "trading_value": 2524928753,
+      "volume": 3246910,
+      "trading_value": 2530026613,
       "mcap": 0.05,
       "shares": 61390259,
       "categories": [
         "기타"
       ],
-      "rank": 2004
+      "rank": 2002
     },
     {
       "ticker": "002920",
@@ -34506,7 +34472,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 2005
+      "rank": 2003
     },
     {
       "ticker": "005030",
@@ -34523,7 +34489,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 2006
+      "rank": 2004
     },
     {
       "ticker": "355390",
@@ -34533,14 +34499,14 @@ window.KOS_LIVE_DATA = {
       "sector": "기타",
       "price": 2980,
       "change": -2.77,
-      "volume": 1026798,
-      "trading_value": 3152753283,
+      "volume": 1028651,
+      "trading_value": 3158289003,
       "mcap": 0.05,
       "shares": 15874344,
       "categories": [
         "기타"
       ],
-      "rank": 2007
+      "rank": 2005
     },
     {
       "ticker": "009320",
@@ -34550,14 +34516,14 @@ window.KOS_LIVE_DATA = {
       "sector": "기타",
       "price": 945,
       "change": 11.18,
-      "volume": 3834453,
-      "trading_value": 3910471118,
+      "volume": 3837936,
+      "trading_value": 3913749737,
       "mcap": 0.05,
       "shares": 49299770,
       "categories": [
         "기타"
       ],
-      "rank": 2008
+      "rank": 2006
     },
     {
       "ticker": "070300",
@@ -34567,14 +34533,14 @@ window.KOS_LIVE_DATA = {
       "sector": "기타",
       "price": 1290,
       "change": 3.2,
-      "volume": 438367,
-      "trading_value": 551568162,
+      "volume": 438748,
+      "trading_value": 552059652,
       "mcap": 0.05,
       "shares": 35524729,
       "categories": [
         "기타"
       ],
-      "rank": 2009
+      "rank": 2007
     },
     {
       "ticker": "035460",
@@ -34584,14 +34550,82 @@ window.KOS_LIVE_DATA = {
       "sector": "기타",
       "price": 3145,
       "change": 9.2,
-      "volume": 273205,
-      "trading_value": 816809466,
+      "volume": 281778,
+      "trading_value": 843740606,
       "mcap": 0.05,
       "shares": 14920340,
       "categories": [
         "기타"
       ],
+      "rank": 2008
+    },
+    {
+      "ticker": "127710",
+      "name": "아시아경제",
+      "name_en": "",
+      "market": "코스닥",
+      "sector": "기타",
+      "price": 1040,
+      "change": 8.11,
+      "volume": 9779,
+      "trading_value": 9696811,
+      "mcap": 0.05,
+      "shares": 44049210,
+      "categories": [
+        "기타"
+      ],
+      "rank": 2009
+    },
+    {
+      "ticker": "153460",
+      "name": "네이블",
+      "name_en": "",
+      "market": "코스닥",
+      "sector": "기타",
+      "price": 7060,
+      "change": 5.69,
+      "volume": 17273,
+      "trading_value": 115735120,
+      "mcap": 0.05,
+      "shares": 6530014,
+      "categories": [
+        "기타"
+      ],
       "rank": 2010
+    },
+    {
+      "ticker": "417860",
+      "name": "오브젠",
+      "name_en": "",
+      "market": "코스닥",
+      "sector": "기타",
+      "price": 9500,
+      "change": -9.87,
+      "volume": 189543,
+      "trading_value": 1860040920,
+      "mcap": 0.04,
+      "shares": 4696906,
+      "categories": [
+        "기타"
+      ],
+      "rank": 2011
+    },
+    {
+      "ticker": "314140",
+      "name": "알피바이오",
+      "name_en": "",
+      "market": "코스닥",
+      "sector": "기타",
+      "price": 5060,
+      "change": -5.07,
+      "volume": 10834,
+      "trading_value": 56796810,
+      "mcap": 0.04,
+      "shares": 8666361,
+      "categories": [
+        "기타"
+      ],
+      "rank": 2012
     },
     {
       "ticker": "150900",
@@ -34601,14 +34635,14 @@ window.KOS_LIVE_DATA = {
       "sector": "기타",
       "price": 3840,
       "change": -1.16,
-      "volume": 92315,
-      "trading_value": 358928235,
+      "volume": 92426,
+      "trading_value": 359354475,
       "mcap": 0.04,
       "shares": 11703922,
       "categories": [
         "기타"
       ],
-      "rank": 2011
+      "rank": 2013
     },
     {
       "ticker": "452160",
@@ -34618,14 +34652,14 @@ window.KOS_LIVE_DATA = {
       "sector": "기타",
       "price": 4525,
       "change": -6.12,
-      "volume": 211003,
-      "trading_value": 1016106068,
+      "volume": 212222,
+      "trading_value": 1021563088,
       "mcap": 0.04,
       "shares": 9617527,
       "categories": [
         "기타"
       ],
-      "rank": 2012
+      "rank": 2014
     },
     {
       "ticker": "079000",
@@ -34635,14 +34669,14 @@ window.KOS_LIVE_DATA = {
       "sector": "기타",
       "price": 6100,
       "change": -5.72,
-      "volume": 48554,
-      "trading_value": 307933980,
+      "volume": 48555,
+      "trading_value": 307940060,
       "mcap": 0.04,
       "shares": 7200000,
       "categories": [
         "기타"
       ],
-      "rank": 2013
+      "rank": 2015
     },
     {
       "ticker": "340810",
@@ -34652,14 +34686,14 @@ window.KOS_LIVE_DATA = {
       "sector": "기타",
       "price": 3200,
       "change": 10.73,
-      "volume": 1742293,
-      "trading_value": 5813440291,
+      "volume": 1745910,
+      "trading_value": 5824896246,
       "mcap": 0.04,
       "shares": 13644976,
       "categories": [
         "기타"
       ],
-      "rank": 2014
+      "rank": 2016
     },
     {
       "ticker": "419120",
@@ -34669,14 +34703,14 @@ window.KOS_LIVE_DATA = {
       "sector": "기타",
       "price": 3025,
       "change": 0.0,
-      "volume": 14852,
-      "trading_value": 45125890,
+      "volume": 14891,
+      "trading_value": 45243865,
       "mcap": 0.04,
       "shares": 14718362,
       "categories": [
         "기타"
       ],
-      "rank": 2015
+      "rank": 2017
     },
     {
       "ticker": "066130",
@@ -34693,7 +34727,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 2016
+      "rank": 2018
     },
     {
       "ticker": "097870",
@@ -34710,7 +34744,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 2017
+      "rank": 2019
     },
     {
       "ticker": "261200",
@@ -34720,14 +34754,14 @@ window.KOS_LIVE_DATA = {
       "sector": "기타",
       "price": 2800,
       "change": -1.58,
-      "volume": 19247,
-      "trading_value": 54688879,
+      "volume": 19248,
+      "trading_value": 54691679,
       "mcap": 0.04,
       "shares": 15809700,
       "categories": [
         "기타"
       ],
-      "rank": 2018
+      "rank": 2020
     },
     {
       "ticker": "033830",
@@ -34737,14 +34771,14 @@ window.KOS_LIVE_DATA = {
       "sector": "기타",
       "price": 444,
       "change": 3.98,
-      "volume": 437204,
-      "trading_value": 191110500,
+      "volume": 437357,
+      "trading_value": 191178697,
       "mcap": 0.04,
       "shares": 100000000,
       "categories": [
         "기타"
       ],
-      "rank": 2019
+      "rank": 2021
     },
     {
       "ticker": "074610",
@@ -34761,7 +34795,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 2020
+      "rank": 2022
     },
     {
       "ticker": "376290",
@@ -34771,14 +34805,14 @@ window.KOS_LIVE_DATA = {
       "sector": "기타",
       "price": 2515,
       "change": -1.95,
-      "volume": 7216,
-      "trading_value": 18233544,
+      "volume": 7217,
+      "trading_value": 18236289,
       "mcap": 0.04,
       "shares": 17657500,
       "categories": [
         "기타"
       ],
-      "rank": 2021
+      "rank": 2023
     },
     {
       "ticker": "452300",
@@ -34788,14 +34822,14 @@ window.KOS_LIVE_DATA = {
       "sector": "기타",
       "price": 3095,
       "change": -4.03,
-      "volume": 90789,
-      "trading_value": 283965020,
+      "volume": 91244,
+      "trading_value": 285355260,
       "mcap": 0.04,
       "shares": 14169505,
       "categories": [
         "기타"
       ],
-      "rank": 2022
+      "rank": 2024
     },
     {
       "ticker": "173940",
@@ -34805,14 +34839,14 @@ window.KOS_LIVE_DATA = {
       "sector": "기타",
       "price": 2900,
       "change": -2.68,
-      "volume": 60197,
-      "trading_value": 168917995,
+      "volume": 60374,
+      "trading_value": 169431295,
       "mcap": 0.04,
       "shares": 15392808,
       "categories": [
         "기타"
       ],
-      "rank": 2023
+      "rank": 2025
     },
     {
       "ticker": "288330",
@@ -34829,7 +34863,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 2024
+      "rank": 2026
     },
     {
       "ticker": "376930",
@@ -34839,14 +34873,14 @@ window.KOS_LIVE_DATA = {
       "sector": "기타",
       "price": 863,
       "change": -10.57,
-      "volume": 882332,
-      "trading_value": 765408953,
+      "volume": 883476,
+      "trading_value": 766396225,
       "mcap": 0.04,
       "shares": 51291323,
       "categories": [
         "기타"
       ],
-      "rank": 2025
+      "rank": 2027
     },
     {
       "ticker": "100660",
@@ -34856,14 +34890,14 @@ window.KOS_LIVE_DATA = {
       "sector": "기타",
       "price": 3380,
       "change": -3.43,
-      "volume": 18027,
-      "trading_value": 62087765,
+      "volume": 18029,
+      "trading_value": 62094525,
       "mcap": 0.04,
       "shares": 12600000,
       "categories": [
         "기타"
       ],
-      "rank": 2026
+      "rank": 2028
     },
     {
       "ticker": "200580",
@@ -34880,7 +34914,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 2027
+      "rank": 2029
     },
     {
       "ticker": "051490",
@@ -34897,7 +34931,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 2028
+      "rank": 2030
     },
     {
       "ticker": "0010V0",
@@ -34914,24 +34948,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 2029
-    },
-    {
-      "ticker": "127710",
-      "name": "아시아경제",
-      "name_en": "",
-      "market": "코스닥",
-      "sector": "기타",
-      "price": 1040,
-      "change": 8.11,
-      "volume": 9173,
-      "trading_value": 9079804,
-      "mcap": 0.04,
-      "shares": 44049210,
-      "categories": [
-        "기타"
-      ],
-      "rank": 2030
+      "rank": 2031
     },
     {
       "ticker": "059100",
@@ -34948,7 +34965,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 2031
+      "rank": 2032
     },
     {
       "ticker": "009140",
@@ -34958,14 +34975,14 @@ window.KOS_LIVE_DATA = {
       "sector": "기타",
       "price": 28000,
       "change": 5.07,
-      "volume": 15558,
-      "trading_value": 434773750,
+      "volume": 15570,
+      "trading_value": 435107100,
       "mcap": 0.04,
       "shares": 1570797,
       "categories": [
         "기타"
       ],
-      "rank": 2032
+      "rank": 2033
     },
     {
       "ticker": "002290",
@@ -34982,7 +34999,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 2033
+      "rank": 2034
     },
     {
       "ticker": "004910",
@@ -34999,7 +35016,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 2034
+      "rank": 2035
     },
     {
       "ticker": "290120",
@@ -35016,7 +35033,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 2035
+      "rank": 2036
     },
     {
       "ticker": "069410",
@@ -35033,7 +35050,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 2036
+      "rank": 2037
     },
     {
       "ticker": "218150",
@@ -35043,14 +35060,14 @@ window.KOS_LIVE_DATA = {
       "sector": "기타",
       "price": 2110,
       "change": -0.24,
-      "volume": 66735,
-      "trading_value": 144660305,
+      "volume": 66741,
+      "trading_value": 144673115,
       "mcap": 0.04,
       "shares": 20415802,
       "categories": [
         "기타"
       ],
-      "rank": 2037
+      "rank": 2038
     },
     {
       "ticker": "056700",
@@ -35067,7 +35084,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 2038
+      "rank": 2039
     },
     {
       "ticker": "051630",
@@ -35077,15 +35094,15 @@ window.KOS_LIVE_DATA = {
       "sector": "섬유·패션·생활",
       "price": 2045,
       "change": 29.92,
-      "volume": 5260636,
-      "trading_value": 10557191915,
+      "volume": 5263839,
+      "trading_value": 10563742050,
       "mcap": 0.04,
       "shares": 21200000,
       "induty_code": "22214",
       "categories": [
         "섬유·패션·생활"
       ],
-      "rank": 2039
+      "rank": 2040
     },
     {
       "ticker": "263020",
@@ -35095,27 +35112,10 @@ window.KOS_LIVE_DATA = {
       "sector": "기타",
       "price": 3120,
       "change": 0.0,
-      "volume": 67308,
-      "trading_value": 210237332,
+      "volume": 67548,
+      "trading_value": 210991132,
       "mcap": 0.04,
       "shares": 13836146,
-      "categories": [
-        "기타"
-      ],
-      "rank": 2040
-    },
-    {
-      "ticker": "153460",
-      "name": "네이블",
-      "name_en": "",
-      "market": "코스닥",
-      "sector": "기타",
-      "price": 7060,
-      "change": 5.69,
-      "volume": 16694,
-      "trading_value": 111647380,
-      "mcap": 0.04,
-      "shares": 6530014,
       "categories": [
         "기타"
       ],
@@ -35146,8 +35146,8 @@ window.KOS_LIVE_DATA = {
       "sector": "기타",
       "price": 6350,
       "change": -0.47,
-      "volume": 7523,
-      "trading_value": 47648080,
+      "volume": 7545,
+      "trading_value": 47787780,
       "mcap": 0.04,
       "shares": 6750733,
       "categories": [
@@ -35180,8 +35180,8 @@ window.KOS_LIVE_DATA = {
       "sector": "기타",
       "price": 1595,
       "change": -3.39,
-      "volume": 61541,
-      "trading_value": 99011535,
+      "volume": 61545,
+      "trading_value": 99017919,
       "mcap": 0.04,
       "shares": 26276899,
       "categories": [
@@ -35197,8 +35197,8 @@ window.KOS_LIVE_DATA = {
       "sector": "기타",
       "price": 2540,
       "change": 2.21,
-      "volume": 65761,
-      "trading_value": 165987735,
+      "volume": 65781,
+      "trading_value": 166037935,
       "mcap": 0.04,
       "shares": 16829576,
       "categories": [
@@ -35214,8 +35214,8 @@ window.KOS_LIVE_DATA = {
       "sector": "기타",
       "price": 853,
       "change": -1.73,
-      "volume": 116580,
-      "trading_value": 100064272,
+      "volume": 118902,
+      "trading_value": 102044938,
       "mcap": 0.04,
       "shares": 49524505,
       "categories": [
@@ -35248,8 +35248,8 @@ window.KOS_LIVE_DATA = {
       "sector": "기타",
       "price": 931,
       "change": -2.0,
-      "volume": 146707,
-      "trading_value": 135972703,
+      "volume": 146794,
+      "trading_value": 136053700,
       "mcap": 0.04,
       "shares": 46084095,
       "categories": [
@@ -35265,8 +35265,8 @@ window.KOS_LIVE_DATA = {
       "sector": "기타",
       "price": 1242,
       "change": 7.07,
-      "volume": 120110,
-      "trading_value": 145910961,
+      "volume": 120282,
+      "trading_value": 146124881,
       "mcap": 0.04,
       "shares": 34621218,
       "categories": [
@@ -35282,8 +35282,8 @@ window.KOS_LIVE_DATA = {
       "sector": "기타",
       "price": 820,
       "change": 0.0,
-      "volume": 126798,
-      "trading_value": 102435416,
+      "volume": 131820,
+      "trading_value": 106553435,
       "mcap": 0.04,
       "shares": 52246331,
       "categories": [
@@ -35299,8 +35299,8 @@ window.KOS_LIVE_DATA = {
       "sector": "기타",
       "price": 1219,
       "change": 2.7,
-      "volume": 403362,
-      "trading_value": 496050913,
+      "volume": 403396,
+      "trading_value": 496092359,
       "mcap": 0.04,
       "shares": 34456481,
       "categories": [
@@ -35316,8 +35316,8 @@ window.KOS_LIVE_DATA = {
       "sector": "기타",
       "price": 2510,
       "change": 0.4,
-      "volume": 59391,
-      "trading_value": 148840422,
+      "volume": 59432,
+      "trading_value": 148943342,
       "mcap": 0.04,
       "shares": 16715858,
       "categories": [
@@ -35367,8 +35367,8 @@ window.KOS_LIVE_DATA = {
       "sector": "기타",
       "price": 2680,
       "change": 1.32,
-      "volume": 55251,
-      "trading_value": 144649600,
+      "volume": 55255,
+      "trading_value": 144660320,
       "mcap": 0.04,
       "shares": 15924825,
       "categories": [
@@ -35401,8 +35401,8 @@ window.KOS_LIVE_DATA = {
       "sector": "기타",
       "price": 1046,
       "change": -1.23,
-      "volume": 515406,
-      "trading_value": 542231387,
+      "volume": 515706,
+      "trading_value": 542545187,
       "mcap": 0.04,
       "shares": 39455013,
       "categories": [
@@ -35418,8 +35418,8 @@ window.KOS_LIVE_DATA = {
       "sector": "기타",
       "price": 4825,
       "change": -3.5,
-      "volume": 50437,
-      "trading_value": 250019200,
+      "volume": 54905,
+      "trading_value": 271577825,
       "mcap": 0.04,
       "shares": 8296445,
       "categories": [
@@ -35435,8 +35435,8 @@ window.KOS_LIVE_DATA = {
       "sector": "기타",
       "price": 1793,
       "change": -1.48,
-      "volume": 51316,
-      "trading_value": 93128045,
+      "volume": 51816,
+      "trading_value": 94019545,
       "mcap": 0.04,
       "shares": 23155661,
       "categories": [
@@ -35452,8 +35452,8 @@ window.KOS_LIVE_DATA = {
       "sector": "기타",
       "price": 1990,
       "change": 0.81,
-      "volume": 11637,
-      "trading_value": 23083963,
+      "volume": 11646,
+      "trading_value": 23101963,
       "mcap": 0.04,
       "shares": 21109243,
       "categories": [
@@ -35469,8 +35469,8 @@ window.KOS_LIVE_DATA = {
       "sector": "기타",
       "price": 9580,
       "change": -0.1,
-      "volume": 18011,
-      "trading_value": 170802040,
+      "volume": 18117,
+      "trading_value": 171818180,
       "mcap": 0.04,
       "shares": 4364368,
       "categories": [
@@ -35486,8 +35486,8 @@ window.KOS_LIVE_DATA = {
       "sector": "기타",
       "price": 2665,
       "change": -0.56,
-      "volume": 75557,
-      "trading_value": 201109145,
+      "volume": 75562,
+      "trading_value": 201122470,
       "mcap": 0.04,
       "shares": 15327021,
       "categories": [
@@ -35520,8 +35520,8 @@ window.KOS_LIVE_DATA = {
       "sector": "기타",
       "price": 1797,
       "change": 0.45,
-      "volume": 61453,
-      "trading_value": 111057412,
+      "volume": 61562,
+      "trading_value": 111249145,
       "mcap": 0.04,
       "shares": 22312221,
       "categories": [
@@ -35554,8 +35554,8 @@ window.KOS_LIVE_DATA = {
       "sector": "기타",
       "price": 2350,
       "change": 0.0,
-      "volume": 79595,
-      "trading_value": 187953581,
+      "volume": 79702,
+      "trading_value": 188201351,
       "mcap": 0.04,
       "shares": 17150000,
       "categories": [
@@ -35571,8 +35571,8 @@ window.KOS_LIVE_DATA = {
       "sector": "기타",
       "price": 1976,
       "change": -1.69,
-      "volume": 141160,
-      "trading_value": 280926106,
+      "volume": 141578,
+      "trading_value": 281752298,
       "mcap": 0.04,
       "shares": 20503505,
       "categories": [
@@ -35588,8 +35588,8 @@ window.KOS_LIVE_DATA = {
       "sector": "기타",
       "price": 2985,
       "change": 5.11,
-      "volume": 438628,
-      "trading_value": 1287574721,
+      "volume": 439527,
+      "trading_value": 1290253796,
       "mcap": 0.04,
       "shares": 14607936,
       "categories": [
@@ -35639,8 +35639,8 @@ window.KOS_LIVE_DATA = {
       "sector": "기타",
       "price": 2615,
       "change": -1.88,
-      "volume": 20957,
-      "trading_value": 54853840,
+      "volume": 21019,
+      "trading_value": 55015970,
       "mcap": 0.04,
       "shares": 15856381,
       "categories": [
@@ -35656,8 +35656,8 @@ window.KOS_LIVE_DATA = {
       "sector": "기타",
       "price": 3145,
       "change": -1.72,
-      "volume": 52196,
-      "trading_value": 165578735,
+      "volume": 52220,
+      "trading_value": 165654295,
       "mcap": 0.04,
       "shares": 12641883,
       "categories": [
@@ -35673,8 +35673,8 @@ window.KOS_LIVE_DATA = {
       "sector": "기타",
       "price": 2250,
       "change": -0.22,
-      "volume": 41368,
-      "trading_value": 90613385,
+      "volume": 41471,
+      "trading_value": 90845135,
       "mcap": 0.04,
       "shares": 18700561,
       "categories": [
@@ -35690,8 +35690,8 @@ window.KOS_LIVE_DATA = {
       "sector": "기타",
       "price": 3420,
       "change": -5.66,
-      "volume": 54134,
-      "trading_value": 188521586,
+      "volume": 54203,
+      "trading_value": 188757566,
       "mcap": 0.04,
       "shares": 11650000,
       "categories": [
@@ -35724,8 +35724,8 @@ window.KOS_LIVE_DATA = {
       "sector": "기타",
       "price": 923,
       "change": -0.11,
-      "volume": 64430,
-      "trading_value": 59667546,
+      "volume": 64435,
+      "trading_value": 59672161,
       "mcap": 0.04,
       "shares": 43477664,
       "categories": [
@@ -35741,8 +35741,8 @@ window.KOS_LIVE_DATA = {
       "sector": "기타",
       "price": 1067,
       "change": -3.53,
-      "volume": 66662,
-      "trading_value": 72821188,
+      "volume": 66762,
+      "trading_value": 72927888,
       "mcap": 0.04,
       "shares": 37114502,
       "categories": [
@@ -35792,8 +35792,8 @@ window.KOS_LIVE_DATA = {
       "sector": "기타",
       "price": 1425,
       "change": -3.98,
-      "volume": 121268,
-      "trading_value": 173945640,
+      "volume": 121270,
+      "trading_value": 173948508,
       "mcap": 0.04,
       "shares": 27549644,
       "categories": [
@@ -35826,8 +35826,8 @@ window.KOS_LIVE_DATA = {
       "sector": "기타",
       "price": 1777,
       "change": 2.13,
-      "volume": 56385,
-      "trading_value": 99209446,
+      "volume": 56386,
+      "trading_value": 99211223,
       "mcap": 0.04,
       "shares": 22500000,
       "categories": [
@@ -35843,8 +35843,8 @@ window.KOS_LIVE_DATA = {
       "sector": "기타",
       "price": 1030,
       "change": -0.87,
-      "volume": 93452,
-      "trading_value": 96381745,
+      "volume": 93547,
+      "trading_value": 96479213,
       "mcap": 0.04,
       "shares": 38339428,
       "categories": [
@@ -35860,8 +35860,8 @@ window.KOS_LIVE_DATA = {
       "sector": "기타",
       "price": 6220,
       "change": 3.49,
-      "volume": 157763,
-      "trading_value": 970809305,
+      "volume": 157893,
+      "trading_value": 971634225,
       "mcap": 0.04,
       "shares": 6449231,
       "categories": [
@@ -35928,8 +35928,8 @@ window.KOS_LIVE_DATA = {
       "sector": "기타",
       "price": 1980,
       "change": -1.0,
-      "volume": 141922,
-      "trading_value": 282649788,
+      "volume": 142180,
+      "trading_value": 283159588,
       "mcap": 0.04,
       "shares": 20000000,
       "categories": [
@@ -35945,8 +35945,8 @@ window.KOS_LIVE_DATA = {
       "sector": "기타",
       "price": 7940,
       "change": 1.79,
-      "volume": 12612,
-      "trading_value": 98991530,
+      "volume": 12627,
+      "trading_value": 99110890,
       "mcap": 0.04,
       "shares": 5080386,
       "categories": [
@@ -35962,8 +35962,8 @@ window.KOS_LIVE_DATA = {
       "sector": "기타",
       "price": 3035,
       "change": 1.0,
-      "volume": 990658,
-      "trading_value": 2978977462,
+      "volume": 992555,
+      "trading_value": 2984727922,
       "mcap": 0.04,
       "shares": 13180132,
       "categories": [
@@ -35996,8 +35996,8 @@ window.KOS_LIVE_DATA = {
       "sector": "기타",
       "price": 3985,
       "change": -1.12,
-      "volume": 41104,
-      "trading_value": 164545631,
+      "volume": 41106,
+      "trading_value": 164553741,
       "mcap": 0.04,
       "shares": 9935755,
       "categories": [
@@ -36013,8 +36013,8 @@ window.KOS_LIVE_DATA = {
       "sector": "기타",
       "price": 1017,
       "change": -0.88,
-      "volume": 521134,
-      "trading_value": 528865949,
+      "volume": 521515,
+      "trading_value": 529253270,
       "mcap": 0.04,
       "shares": 38428915,
       "categories": [
@@ -36064,8 +36064,8 @@ window.KOS_LIVE_DATA = {
       "sector": "기타",
       "price": 2710,
       "change": -3.9,
-      "volume": 112272,
-      "trading_value": 306745580,
+      "volume": 112282,
+      "trading_value": 306772680,
       "mcap": 0.04,
       "shares": 14412374,
       "categories": [
@@ -36098,8 +36098,8 @@ window.KOS_LIVE_DATA = {
       "sector": "기타",
       "price": 1662,
       "change": -5.25,
-      "volume": 83935,
-      "trading_value": 141660898,
+      "volume": 84111,
+      "trading_value": 141953410,
       "mcap": 0.04,
       "shares": 23544899,
       "categories": [
@@ -36132,8 +36132,8 @@ window.KOS_LIVE_DATA = {
       "sector": "기타",
       "price": 3405,
       "change": -2.71,
-      "volume": 37017,
-      "trading_value": 127885860,
+      "volume": 37019,
+      "trading_value": 127892550,
       "mcap": 0.04,
       "shares": 11357052,
       "categories": [
@@ -36149,8 +36149,8 @@ window.KOS_LIVE_DATA = {
       "sector": "기타",
       "price": 1077,
       "change": 6.53,
-      "volume": 1759527,
-      "trading_value": 1913510942,
+      "volume": 1760584,
+      "trading_value": 1914649331,
       "mcap": 0.04,
       "shares": 36381379,
       "categories": [
@@ -36166,8 +36166,8 @@ window.KOS_LIVE_DATA = {
       "sector": "기타",
       "price": 3550,
       "change": -4.05,
-      "volume": 22556,
-      "trading_value": 80583711,
+      "volume": 22788,
+      "trading_value": 81406971,
       "mcap": 0.04,
       "shares": 10920188,
       "categories": [
@@ -36183,8 +36183,8 @@ window.KOS_LIVE_DATA = {
       "sector": "기타",
       "price": 421,
       "change": -5.39,
-      "volume": 575311,
-      "trading_value": 248122161,
+      "volume": 575811,
+      "trading_value": 248335161,
       "mcap": 0.04,
       "shares": 90187837,
       "categories": [
@@ -36200,8 +36200,8 @@ window.KOS_LIVE_DATA = {
       "sector": "기타",
       "price": 1363,
       "change": 2.48,
-      "volume": 247598,
-      "trading_value": 335119448,
+      "volume": 247883,
+      "trading_value": 335507903,
       "mcap": 0.04,
       "shares": 28378364,
       "categories": [
@@ -36234,8 +36234,8 @@ window.KOS_LIVE_DATA = {
       "sector": "기타",
       "price": 10990,
       "change": -4.27,
-      "volume": 1664,
-      "trading_value": 18340790,
+      "volume": 1684,
+      "trading_value": 18560590,
       "mcap": 0.04,
       "shares": 3518595,
       "categories": [
@@ -36251,8 +36251,8 @@ window.KOS_LIVE_DATA = {
       "sector": "기타",
       "price": 2375,
       "change": -2.06,
-      "volume": 43791,
-      "trading_value": 106262935,
+      "volume": 44198,
+      "trading_value": 107229560,
       "mcap": 0.04,
       "shares": 15876323,
       "categories": [
@@ -36268,8 +36268,8 @@ window.KOS_LIVE_DATA = {
       "sector": "기타",
       "price": 7010,
       "change": -0.57,
-      "volume": 29865,
-      "trading_value": 209186880,
+      "volume": 29867,
+      "trading_value": 209200900,
       "mcap": 0.04,
       "shares": 5530000,
       "categories": [
@@ -36285,8 +36285,8 @@ window.KOS_LIVE_DATA = {
       "sector": "기타",
       "price": 1962,
       "change": -1.9,
-      "volume": 50433,
-      "trading_value": 99972539,
+      "volume": 50434,
+      "trading_value": 99974500,
       "mcap": 0.04,
       "shares": 19450832,
       "categories": [
@@ -36302,8 +36302,8 @@ window.KOS_LIVE_DATA = {
       "sector": "기타",
       "price": 1278,
       "change": -2.59,
-      "volume": 99920,
-      "trading_value": 127534917,
+      "volume": 100279,
+      "trading_value": 127993844,
       "mcap": 0.04,
       "shares": 29698642,
       "categories": [
@@ -36319,8 +36319,8 @@ window.KOS_LIVE_DATA = {
       "sector": "기타",
       "price": 1989,
       "change": -0.55,
-      "volume": 20239,
-      "trading_value": 40243040,
+      "volume": 20242,
+      "trading_value": 40249007,
       "mcap": 0.04,
       "shares": 19414200,
       "categories": [
@@ -36336,8 +36336,8 @@ window.KOS_LIVE_DATA = {
       "sector": "기타",
       "price": 2195,
       "change": -7.97,
-      "volume": 80481,
-      "trading_value": 183158480,
+      "volume": 80704,
+      "trading_value": 183652465,
       "mcap": 0.04,
       "shares": 16503790,
       "categories": [
@@ -36370,8 +36370,8 @@ window.KOS_LIVE_DATA = {
       "sector": "기타",
       "price": 2790,
       "change": -0.18,
-      "volume": 4698,
-      "trading_value": 12861435,
+      "volume": 4860,
+      "trading_value": 13313415,
       "mcap": 0.04,
       "shares": 13564086,
       "categories": [
@@ -36404,8 +36404,8 @@ window.KOS_LIVE_DATA = {
       "sector": "기타",
       "price": 1932,
       "change": -2.52,
-      "volume": 549588,
-      "trading_value": 1053432011,
+      "volume": 549831,
+      "trading_value": 1053901619,
       "mcap": 0.04,
       "shares": 19461489,
       "categories": [
@@ -36421,8 +36421,8 @@ window.KOS_LIVE_DATA = {
       "sector": "기타",
       "price": 743,
       "change": 1.23,
-      "volume": 14486,
-      "trading_value": 10369979,
+      "volume": 14487,
+      "trading_value": 10370680,
       "mcap": 0.04,
       "shares": 51794579,
       "categories": [
@@ -36438,8 +36438,8 @@ window.KOS_LIVE_DATA = {
       "sector": "기타",
       "price": 1003,
       "change": -2.62,
-      "volume": 78522,
-      "trading_value": 78940807,
+      "volume": 79022,
+      "trading_value": 79442307,
       "mcap": 0.04,
       "shares": 37510158,
       "categories": [
@@ -36455,8 +36455,8 @@ window.KOS_LIVE_DATA = {
       "sector": "기타",
       "price": 800,
       "change": -1.72,
-      "volume": 158010,
-      "trading_value": 124297850,
+      "volume": 158964,
+      "trading_value": 125061050,
       "mcap": 0.04,
       "shares": 47952015,
       "categories": [
@@ -36472,8 +36472,8 @@ window.KOS_LIVE_DATA = {
       "sector": "기타",
       "price": 2420,
       "change": 1.04,
-      "volume": 164872,
-      "trading_value": 406230404,
+      "volume": 165085,
+      "trading_value": 406745864,
       "mcap": 0.04,
       "shares": 15508143,
       "categories": [
@@ -36523,8 +36523,8 @@ window.KOS_LIVE_DATA = {
       "sector": "기타",
       "price": 3005,
       "change": -0.5,
-      "volume": 59994,
-      "trading_value": 183641909,
+      "volume": 60033,
+      "trading_value": 183759104,
       "mcap": 0.04,
       "shares": 12310300,
       "categories": [
@@ -36574,8 +36574,8 @@ window.KOS_LIVE_DATA = {
       "sector": "기타",
       "price": 2545,
       "change": -6.78,
-      "volume": 92986,
-      "trading_value": 241602338,
+      "volume": 93239,
+      "trading_value": 242246223,
       "mcap": 0.04,
       "shares": 14634534,
       "categories": [
@@ -36608,8 +36608,8 @@ window.KOS_LIVE_DATA = {
       "sector": "기타",
       "price": 961,
       "change": 5.37,
-      "volume": 239168,
-      "trading_value": 227061321,
+      "volume": 239231,
+      "trading_value": 227121864,
       "mcap": 0.04,
       "shares": 39904404,
       "categories": [
@@ -36625,8 +36625,8 @@ window.KOS_LIVE_DATA = {
       "sector": "기타",
       "price": 1691,
       "change": -0.35,
-      "volume": 4798,
-      "trading_value": 8042165,
+      "volume": 4803,
+      "trading_value": 8050620,
       "mcap": 0.04,
       "shares": 22276078,
       "categories": [
@@ -36659,8 +36659,8 @@ window.KOS_LIVE_DATA = {
       "sector": "기타",
       "price": 1024,
       "change": -2.1,
-      "volume": 62633,
-      "trading_value": 64860582,
+      "volume": 62995,
+      "trading_value": 65231270,
       "mcap": 0.04,
       "shares": 36485063,
       "categories": [
@@ -36676,8 +36676,8 @@ window.KOS_LIVE_DATA = {
       "sector": "기타",
       "price": 2270,
       "change": -1.09,
-      "volume": 36385,
-      "trading_value": 82572052,
+      "volume": 36395,
+      "trading_value": 82594752,
       "mcap": 0.04,
       "shares": 16418641,
       "categories": [
@@ -36744,8 +36744,8 @@ window.KOS_LIVE_DATA = {
       "sector": "기타",
       "price": 4060,
       "change": -1.69,
-      "volume": 31357,
-      "trading_value": 124263709,
+      "volume": 31851,
+      "trading_value": 126269349,
       "mcap": 0.04,
       "shares": 9404980,
       "categories": [
@@ -36761,8 +36761,8 @@ window.KOS_LIVE_DATA = {
       "sector": "기타",
       "price": 619,
       "change": 2.31,
-      "volume": 164709,
-      "trading_value": 101736290,
+      "volume": 164731,
+      "trading_value": 101750293,
       "mcap": 0.04,
       "shares": 59394268,
       "categories": [
@@ -36778,8 +36778,8 @@ window.KOS_LIVE_DATA = {
       "sector": "기타",
       "price": 790,
       "change": 3.67,
-      "volume": 47914,
-      "trading_value": 37261746,
+      "volume": 48018,
+      "trading_value": 37347026,
       "mcap": 0.04,
       "shares": 47500000,
       "categories": [
@@ -36812,8 +36812,8 @@ window.KOS_LIVE_DATA = {
       "sector": "기타",
       "price": 1115,
       "change": 4.01,
-      "volume": 200982,
-      "trading_value": 217099250,
+      "volume": 200987,
+      "trading_value": 217104825,
       "mcap": 0.04,
       "shares": 34187845,
       "categories": [
@@ -36829,8 +36829,8 @@ window.KOS_LIVE_DATA = {
       "sector": "기타",
       "price": 810,
       "change": 1.5,
-      "volume": 81359,
-      "trading_value": 62198066,
+      "volume": 81461,
+      "trading_value": 62280686,
       "mcap": 0.04,
       "shares": 48781224,
       "categories": [
@@ -36846,8 +36846,8 @@ window.KOS_LIVE_DATA = {
       "sector": "기타",
       "price": 1414,
       "change": 2.61,
-      "volume": 107401,
-      "trading_value": 146027317,
+      "volume": 107414,
+      "trading_value": 146045699,
       "mcap": 0.04,
       "shares": 26690460,
       "categories": [
@@ -36863,8 +36863,8 @@ window.KOS_LIVE_DATA = {
       "sector": "기타",
       "price": 1314,
       "change": -0.08,
-      "volume": 48072,
-      "trading_value": 63556478,
+      "volume": 48102,
+      "trading_value": 63595898,
       "mcap": 0.04,
       "shares": 27624025,
       "categories": [
@@ -36880,8 +36880,8 @@ window.KOS_LIVE_DATA = {
       "sector": "기타",
       "price": 1504,
       "change": -8.29,
-      "volume": 1119118,
-      "trading_value": 1712074456,
+      "volume": 1119453,
+      "trading_value": 1712578296,
       "mcap": 0.04,
       "shares": 24822362,
       "categories": [
@@ -36931,8 +36931,8 @@ window.KOS_LIVE_DATA = {
       "sector": "건설·건자재",
       "price": 3240,
       "change": 3.85,
-      "volume": 1979674,
-      "trading_value": 7148465207,
+      "volume": 1983301,
+      "trading_value": 7160227927,
       "mcap": 0.04,
       "shares": 10920000,
       "induty_code": "23322",
@@ -36949,8 +36949,8 @@ window.KOS_LIVE_DATA = {
       "sector": "기타",
       "price": 2615,
       "change": -2.06,
-      "volume": 50538,
-      "trading_value": 131461995,
+      "volume": 50554,
+      "trading_value": 131506845,
       "mcap": 0.04,
       "shares": 14079007,
       "categories": [
@@ -36966,8 +36966,8 @@ window.KOS_LIVE_DATA = {
       "sector": "기타",
       "price": 715,
       "change": 1.27,
-      "volume": 151233,
-      "trading_value": 108024092,
+      "volume": 152233,
+      "trading_value": 108740092,
       "mcap": 0.04,
       "shares": 51480000,
       "categories": [
@@ -36983,8 +36983,8 @@ window.KOS_LIVE_DATA = {
       "sector": "기타",
       "price": 3530,
       "change": -0.28,
-      "volume": 30958,
-      "trading_value": 110220760,
+      "volume": 31049,
+      "trading_value": 110541990,
       "mcap": 0.04,
       "shares": 10143845,
       "categories": [
@@ -37034,8 +37034,8 @@ window.KOS_LIVE_DATA = {
       "sector": "기타",
       "price": 1450,
       "change": -2.29,
-      "volume": 84240,
-      "trading_value": 121704036,
+      "volume": 84276,
+      "trading_value": 121756334,
       "mcap": 0.04,
       "shares": 25411736,
       "categories": [
@@ -37068,8 +37068,8 @@ window.KOS_LIVE_DATA = {
       "sector": "기타",
       "price": 2865,
       "change": 7.71,
-      "volume": 67552,
-      "trading_value": 182450065,
+      "volume": 67765,
+      "trading_value": 183087755,
       "mcap": 0.04,
       "shares": 13610704,
       "categories": [
@@ -37085,8 +37085,8 @@ window.KOS_LIVE_DATA = {
       "sector": "기타",
       "price": 927,
       "change": -1.49,
-      "volume": 118739,
-      "trading_value": 111909239,
+      "volume": 118749,
+      "trading_value": 111918519,
       "mcap": 0.04,
       "shares": 38035975,
       "categories": [
@@ -37102,8 +37102,8 @@ window.KOS_LIVE_DATA = {
       "sector": "기타",
       "price": 3105,
       "change": -1.43,
-      "volume": 22943,
-      "trading_value": 71224790,
+      "volume": 23022,
+      "trading_value": 71470085,
       "mcap": 0.04,
       "shares": 11563700,
       "categories": [
@@ -37119,8 +37119,8 @@ window.KOS_LIVE_DATA = {
       "sector": "기타",
       "price": 1943,
       "change": 3.85,
-      "volume": 54042,
-      "trading_value": 103989206,
+      "volume": 54043,
+      "trading_value": 103991155,
       "mcap": 0.04,
       "shares": 18561038,
       "categories": [
@@ -37136,8 +37136,8 @@ window.KOS_LIVE_DATA = {
       "sector": "기타",
       "price": 3270,
       "change": -5.76,
-      "volume": 40910,
-      "trading_value": 134835036,
+      "volume": 40911,
+      "trading_value": 134838306,
       "mcap": 0.04,
       "shares": 11000000,
       "categories": [
@@ -37204,8 +37204,8 @@ window.KOS_LIVE_DATA = {
       "sector": "기타",
       "price": 1277,
       "change": 0.63,
-      "volume": 28699,
-      "trading_value": 36564242,
+      "volume": 28749,
+      "trading_value": 36628092,
       "mcap": 0.04,
       "shares": 27906106,
       "categories": [
@@ -37238,8 +37238,8 @@ window.KOS_LIVE_DATA = {
       "sector": "기타",
       "price": 1180,
       "change": -1.5,
-      "volume": 165985,
-      "trading_value": 197389383,
+      "volume": 168407,
+      "trading_value": 200251657,
       "mcap": 0.04,
       "shares": 29746651,
       "categories": [
@@ -37255,8 +37255,8 @@ window.KOS_LIVE_DATA = {
       "sector": "기타",
       "price": 1445,
       "change": 5.24,
-      "volume": 520573,
-      "trading_value": 751375007,
+      "volume": 522581,
+      "trading_value": 754276567,
       "mcap": 0.04,
       "shares": 25220761,
       "categories": [
@@ -37289,8 +37289,8 @@ window.KOS_LIVE_DATA = {
       "sector": "기타",
       "price": 760,
       "change": 5.26,
-      "volume": 129494,
-      "trading_value": 98174266,
+      "volume": 129515,
+      "trading_value": 98190226,
       "mcap": 0.04,
       "shares": 46773995,
       "categories": [
@@ -37323,8 +37323,8 @@ window.KOS_LIVE_DATA = {
       "sector": "기타",
       "price": 480,
       "change": 2.78,
-      "volume": 381474,
-      "trading_value": 179442562,
+      "volume": 381485,
+      "trading_value": 179447891,
       "mcap": 0.04,
       "shares": 75112995,
       "categories": [
@@ -37357,8 +37357,8 @@ window.KOS_LIVE_DATA = {
       "sector": "기타",
       "price": 765,
       "change": -7.27,
-      "volume": 415506,
-      "trading_value": 315268508,
+      "volume": 415532,
+      "trading_value": 315288398,
       "mcap": 0.04,
       "shares": 45932464,
       "categories": [
@@ -37374,8 +37374,8 @@ window.KOS_LIVE_DATA = {
       "sector": "기타",
       "price": 4540,
       "change": 8.1,
-      "volume": 29126,
-      "trading_value": 127492590,
+      "volume": 29127,
+      "trading_value": 127497130,
       "mcap": 0.04,
       "shares": 7929835,
       "categories": [
@@ -37391,8 +37391,8 @@ window.KOS_LIVE_DATA = {
       "sector": "기타",
       "price": 1155,
       "change": -3.43,
-      "volume": 109719,
-      "trading_value": 123333434,
+      "volume": 109724,
+      "trading_value": 123339209,
       "mcap": 0.04,
       "shares": 31005784,
       "categories": [
@@ -37408,8 +37408,8 @@ window.KOS_LIVE_DATA = {
       "sector": "기타",
       "price": 2460,
       "change": 22.08,
-      "volume": 423604,
-      "trading_value": 959088375,
+      "volume": 426851,
+      "trading_value": 966808905,
       "mcap": 0.04,
       "shares": 15316234,
       "categories": [
@@ -37425,14 +37425,31 @@ window.KOS_LIVE_DATA = {
       "sector": "기타",
       "price": 317,
       "change": 29.92,
-      "volume": 4273812,
-      "trading_value": 1248094059,
+      "volume": 4301926,
+      "trading_value": 1257006197,
       "mcap": 0.04,
       "shares": 113163494,
       "categories": [
         "기타"
       ],
       "rank": 2177
+    },
+    {
+      "ticker": "001380",
+      "name": "SG글로벌",
+      "name_en": "",
+      "market": "코스피",
+      "sector": "기타",
+      "price": 1563,
+      "change": 4.9,
+      "volume": 117307,
+      "trading_value": 178059653,
+      "mcap": 0.04,
+      "shares": 22482071,
+      "categories": [
+        "기타"
+      ],
+      "rank": 2178
     },
     {
       "ticker": "464500",
@@ -37442,14 +37459,14 @@ window.KOS_LIVE_DATA = {
       "sector": "기타",
       "price": 2490,
       "change": -2.73,
-      "volume": 121582,
-      "trading_value": 310637085,
+      "volume": 121694,
+      "trading_value": 310916165,
       "mcap": 0.03,
       "shares": 13993263,
       "categories": [
         "기타"
       ],
-      "rank": 2178
+      "rank": 2179
     },
     {
       "ticker": "200350",
@@ -37459,14 +37476,14 @@ window.KOS_LIVE_DATA = {
       "sector": "기타",
       "price": 3430,
       "change": -16.55,
-      "volume": 216837,
-      "trading_value": 785589157,
+      "volume": 217582,
+      "trading_value": 788131647,
       "mcap": 0.03,
       "shares": 9996025,
       "categories": [
         "기타"
       ],
-      "rank": 2179
+      "rank": 2180
     },
     {
       "ticker": "106240",
@@ -37476,14 +37493,14 @@ window.KOS_LIVE_DATA = {
       "sector": "기타",
       "price": 1483,
       "change": -4.26,
-      "volume": 115815,
-      "trading_value": 174645817,
+      "volume": 116040,
+      "trading_value": 174979492,
       "mcap": 0.03,
       "shares": 23530600,
       "categories": [
         "기타"
       ],
-      "rank": 2180
+      "rank": 2181
     },
     {
       "ticker": "057030",
@@ -37493,14 +37510,14 @@ window.KOS_LIVE_DATA = {
       "sector": "기타",
       "price": 2130,
       "change": -0.93,
-      "volume": 13015,
-      "trading_value": 27762609,
+      "volume": 13016,
+      "trading_value": 27764944,
       "mcap": 0.03,
       "shares": 16312697,
       "categories": [
         "기타"
       ],
-      "rank": 2181
+      "rank": 2182
     },
     {
       "ticker": "450520",
@@ -37510,14 +37527,14 @@ window.KOS_LIVE_DATA = {
       "sector": "기타",
       "price": 2335,
       "change": -3.11,
-      "volume": 67928,
-      "trading_value": 159203730,
+      "volume": 68141,
+      "trading_value": 159701150,
       "mcap": 0.03,
       "shares": 14704578,
       "categories": [
         "기타"
       ],
-      "rank": 2182
+      "rank": 2183
     },
     {
       "ticker": "383930",
@@ -37527,14 +37544,14 @@ window.KOS_LIVE_DATA = {
       "sector": "기타",
       "price": 2700,
       "change": -13.04,
-      "volume": 1104563,
-      "trading_value": 3005617282,
+      "volume": 1104564,
+      "trading_value": 3005619982,
       "mcap": 0.03,
       "shares": 12784128,
       "categories": [
         "기타"
       ],
-      "rank": 2183
+      "rank": 2184
     },
     {
       "ticker": "043910",
@@ -37544,14 +37561,14 @@ window.KOS_LIVE_DATA = {
       "sector": "기타",
       "price": 3050,
       "change": 2.01,
-      "volume": 37108,
-      "trading_value": 114581433,
+      "volume": 37243,
+      "trading_value": 114993733,
       "mcap": 0.03,
       "shares": 11339145,
       "categories": [
         "기타"
       ],
-      "rank": 2184
+      "rank": 2185
     },
     {
       "ticker": "053950",
@@ -37568,7 +37585,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 2185
+      "rank": 2186
     },
     {
       "ticker": "010640",
@@ -37578,15 +37595,15 @@ window.KOS_LIVE_DATA = {
       "sector": "섬유·패션·생활",
       "price": 1917,
       "change": 6.5,
-      "volume": 5181059,
-      "trading_value": 11180499507,
+      "volume": 5185065,
+      "trading_value": 11188177779,
       "mcap": 0.03,
       "shares": 16700000,
       "induty_code": "22259",
       "categories": [
         "섬유·패션·생활"
       ],
-      "rank": 2186
+      "rank": 2187
     },
     {
       "ticker": "363260",
@@ -37596,27 +37613,10 @@ window.KOS_LIVE_DATA = {
       "sector": "기타",
       "price": 1070,
       "change": 1.71,
-      "volume": 87127,
-      "trading_value": 92798914,
+      "volume": 87128,
+      "trading_value": 92799984,
       "mcap": 0.03,
       "shares": 32163769,
-      "categories": [
-        "기타"
-      ],
-      "rank": 2187
-    },
-    {
-      "ticker": "001380",
-      "name": "SG글로벌",
-      "name_en": "",
-      "market": "코스피",
-      "sector": "기타",
-      "price": 1563,
-      "change": 4.9,
-      "volume": 116977,
-      "trading_value": 177543873,
-      "mcap": 0.03,
-      "shares": 22482071,
       "categories": [
         "기타"
       ],
@@ -37630,8 +37630,8 @@ window.KOS_LIVE_DATA = {
       "sector": "기타",
       "price": 5480,
       "change": -10.6,
-      "volume": 85976,
-      "trading_value": 504874110,
+      "volume": 86169,
+      "trading_value": 505931750,
       "mcap": 0.03,
       "shares": 5969948,
       "categories": [
@@ -37647,8 +37647,8 @@ window.KOS_LIVE_DATA = {
       "sector": "기타",
       "price": 360,
       "change": 0.0,
-      "volume": 389592,
-      "trading_value": 140277444,
+      "volume": 389609,
+      "trading_value": 140283564,
       "mcap": 0.03,
       "shares": 94250042,
       "categories": [
@@ -37732,8 +37732,8 @@ window.KOS_LIVE_DATA = {
       "sector": "기타",
       "price": 540,
       "change": -5.1,
-      "volume": 380061,
-      "trading_value": 208474425,
+      "volume": 383306,
+      "trading_value": 210226725,
       "mcap": 0.03,
       "shares": 61880083,
       "categories": [
@@ -37783,8 +37783,8 @@ window.KOS_LIVE_DATA = {
       "sector": "기타",
       "price": 2945,
       "change": 1.03,
-      "volume": 30053,
-      "trading_value": 89134294,
+      "volume": 30093,
+      "trading_value": 89252094,
       "mcap": 0.03,
       "shares": 11322417,
       "categories": [
@@ -37800,8 +37800,8 @@ window.KOS_LIVE_DATA = {
       "sector": "기타",
       "price": 3085,
       "change": 1.15,
-      "volume": 67569,
-      "trading_value": 205818409,
+      "volume": 67623,
+      "trading_value": 205984769,
       "mcap": 0.03,
       "shares": 11143601,
       "categories": [
@@ -37817,8 +37817,8 @@ window.KOS_LIVE_DATA = {
       "sector": "기타",
       "price": 720,
       "change": 0.7,
-      "volume": 180248,
-      "trading_value": 127083466,
+      "volume": 180866,
+      "trading_value": 127528426,
       "mcap": 0.03,
       "shares": 48155200,
       "categories": [
@@ -37919,8 +37919,8 @@ window.KOS_LIVE_DATA = {
       "sector": "기타",
       "price": 2845,
       "change": 1.97,
-      "volume": 36225,
-      "trading_value": 102096105,
+      "volume": 36230,
+      "trading_value": 102110330,
       "mcap": 0.03,
       "shares": 11953825,
       "categories": [
@@ -37936,8 +37936,8 @@ window.KOS_LIVE_DATA = {
       "sector": "기타",
       "price": 1019,
       "change": -6.08,
-      "volume": 119308,
-      "trading_value": 124890520,
+      "volume": 119502,
+      "trading_value": 125088206,
       "mcap": 0.03,
       "shares": 31755614,
       "categories": [
@@ -37953,8 +37953,8 @@ window.KOS_LIVE_DATA = {
       "sector": "기타",
       "price": 861,
       "change": -2.16,
-      "volume": 77670,
-      "trading_value": 67004592,
+      "volume": 78670,
+      "trading_value": 67860892,
       "mcap": 0.03,
       "shares": 38411505,
       "categories": [
@@ -38089,8 +38089,8 @@ window.KOS_LIVE_DATA = {
       "sector": "기타",
       "price": 1963,
       "change": -4.48,
-      "volume": 40819,
-      "trading_value": 81911010,
+      "volume": 40821,
+      "trading_value": 81914936,
       "mcap": 0.03,
       "shares": 16050530,
       "categories": [
@@ -38140,8 +38140,8 @@ window.KOS_LIVE_DATA = {
       "sector": "기타",
       "price": 1030,
       "change": -0.87,
-      "volume": 207728,
-      "trading_value": 217970704,
+      "volume": 207791,
+      "trading_value": 218033462,
       "mcap": 0.03,
       "shares": 30754270,
       "categories": [
@@ -38174,8 +38174,8 @@ window.KOS_LIVE_DATA = {
       "sector": "기타",
       "price": 2980,
       "change": 0.17,
-      "volume": 27273,
-      "trading_value": 82773732,
+      "volume": 27285,
+      "trading_value": 82808692,
       "mcap": 0.03,
       "shares": 10547012,
       "categories": [
@@ -38191,8 +38191,8 @@ window.KOS_LIVE_DATA = {
       "sector": "기타",
       "price": 1772,
       "change": 2.25,
-      "volume": 35997,
-      "trading_value": 62983007,
+      "volume": 36015,
+      "trading_value": 63014903,
       "mcap": 0.03,
       "shares": 18400000,
       "categories": [
@@ -38225,8 +38225,8 @@ window.KOS_LIVE_DATA = {
       "sector": "기타",
       "price": 3950,
       "change": 5.9,
-      "volume": 9328,
-      "trading_value": 35960405,
+      "volume": 9378,
+      "trading_value": 36157905,
       "mcap": 0.03,
       "shares": 8508382,
       "categories": [
@@ -38242,8 +38242,8 @@ window.KOS_LIVE_DATA = {
       "sector": "기타",
       "price": 2135,
       "change": -0.7,
-      "volume": 34742,
-      "trading_value": 74751615,
+      "volume": 35364,
+      "trading_value": 76079585,
       "mcap": 0.03,
       "shares": 15113790,
       "categories": [
@@ -38259,8 +38259,8 @@ window.KOS_LIVE_DATA = {
       "sector": "기타",
       "price": 2515,
       "change": -1.95,
-      "volume": 31216,
-      "trading_value": 80159770,
+      "volume": 31223,
+      "trading_value": 80178615,
       "mcap": 0.03,
       "shares": 12301272,
       "categories": [
@@ -38293,8 +38293,8 @@ window.KOS_LIVE_DATA = {
       "sector": "기타",
       "price": 3640,
       "change": -0.82,
-      "volume": 36171,
-      "trading_value": 134379218,
+      "volume": 36326,
+      "trading_value": 134944013,
       "mcap": 0.03,
       "shares": 8624972,
       "categories": [
@@ -38310,8 +38310,8 @@ window.KOS_LIVE_DATA = {
       "sector": "기타",
       "price": 966,
       "change": 9.77,
-      "volume": 339614,
-      "trading_value": 333238996,
+      "volume": 339840,
+      "trading_value": 333457312,
       "mcap": 0.03,
       "shares": 33949973,
       "categories": [
@@ -38327,8 +38327,8 @@ window.KOS_LIVE_DATA = {
       "sector": "기타",
       "price": 1872,
       "change": 7.83,
-      "volume": 83990,
-      "trading_value": 152551354,
+      "volume": 84496,
+      "trading_value": 153523380,
       "mcap": 0.03,
       "shares": 17235248,
       "categories": [
@@ -38361,8 +38361,8 @@ window.KOS_LIVE_DATA = {
       "sector": "기타",
       "price": 2900,
       "change": -1.53,
-      "volume": 109618,
-      "trading_value": 318804090,
+      "volume": 109623,
+      "trading_value": 318818590,
       "mcap": 0.03,
       "shares": 11400000,
       "categories": [
@@ -38378,8 +38378,8 @@ window.KOS_LIVE_DATA = {
       "sector": "기타",
       "price": 1614,
       "change": -2.71,
-      "volume": 31031,
-      "trading_value": 50279985,
+      "volume": 31136,
+      "trading_value": 50449795,
       "mcap": 0.03,
       "shares": 19657793,
       "categories": [
@@ -38395,8 +38395,8 @@ window.KOS_LIVE_DATA = {
       "sector": "기타",
       "price": 1954,
       "change": -2.1,
-      "volume": 63534,
-      "trading_value": 125800789,
+      "volume": 63554,
+      "trading_value": 125839869,
       "mcap": 0.03,
       "shares": 15978000,
       "categories": [
@@ -38412,8 +38412,8 @@ window.KOS_LIVE_DATA = {
       "sector": "기타",
       "price": 1953,
       "change": -3.32,
-      "volume": 27334,
-      "trading_value": 54110068,
+      "volume": 27336,
+      "trading_value": 54114098,
       "mcap": 0.03,
       "shares": 15929362,
       "categories": [
@@ -38429,8 +38429,8 @@ window.KOS_LIVE_DATA = {
       "sector": "기타",
       "price": 3705,
       "change": 2.63,
-      "volume": 31159,
-      "trading_value": 114466070,
+      "volume": 31169,
+      "trading_value": 114503120,
       "mcap": 0.03,
       "shares": 8610000,
       "categories": [
@@ -38446,8 +38446,8 @@ window.KOS_LIVE_DATA = {
       "sector": "기타",
       "price": 2270,
       "change": -1.52,
-      "volume": 233547,
-      "trading_value": 530199435,
+      "volume": 234661,
+      "trading_value": 532690535,
       "mcap": 0.03,
       "shares": 14136157,
       "categories": [
@@ -38480,8 +38480,8 @@ window.KOS_LIVE_DATA = {
       "sector": "기타",
       "price": 1125,
       "change": -5.06,
-      "volume": 143917,
-      "trading_value": 163118388,
+      "volume": 144429,
+      "trading_value": 163694388,
       "mcap": 0.03,
       "shares": 28000000,
       "categories": [
@@ -38531,8 +38531,8 @@ window.KOS_LIVE_DATA = {
       "sector": "기타",
       "price": 5620,
       "change": -13.0,
-      "volume": 74053,
-      "trading_value": 440013855,
+      "volume": 74676,
+      "trading_value": 443633245,
       "mcap": 0.03,
       "shares": 5204642,
       "categories": [
@@ -38548,8 +38548,8 @@ window.KOS_LIVE_DATA = {
       "sector": "기타",
       "price": 1935,
       "change": 0.26,
-      "volume": 23902,
-      "trading_value": 46176474,
+      "volume": 23912,
+      "trading_value": 46195824,
       "mcap": 0.03,
       "shares": 16113029,
       "categories": [
@@ -38565,8 +38565,8 @@ window.KOS_LIVE_DATA = {
       "sector": "기타",
       "price": 2840,
       "change": -1.22,
-      "volume": 20977,
-      "trading_value": 59623605,
+      "volume": 21152,
+      "trading_value": 60119025,
       "mcap": 0.03,
       "shares": 10952635,
       "categories": [
@@ -38616,8 +38616,8 @@ window.KOS_LIVE_DATA = {
       "sector": "기타",
       "price": 728,
       "change": -2.02,
-      "volume": 195864,
-      "trading_value": 143535387,
+      "volume": 196073,
+      "trading_value": 143687540,
       "mcap": 0.03,
       "shares": 41804315,
       "categories": [
@@ -38633,8 +38633,8 @@ window.KOS_LIVE_DATA = {
       "sector": "기타",
       "price": 1719,
       "change": 1.42,
-      "volume": 17752,
-      "trading_value": 29755689,
+      "volume": 17753,
+      "trading_value": 29757577,
       "mcap": 0.03,
       "shares": 18406089,
       "categories": [
@@ -38684,8 +38684,8 @@ window.KOS_LIVE_DATA = {
       "sector": "기타",
       "price": 2230,
       "change": 8.25,
-      "volume": 1279107,
-      "trading_value": 2901105893,
+      "volume": 1281823,
+      "trading_value": 2907178703,
       "mcap": 0.03,
       "shares": 13917769,
       "categories": [
@@ -38701,8 +38701,8 @@ window.KOS_LIVE_DATA = {
       "sector": "기타",
       "price": 2110,
       "change": 0.0,
-      "volume": 22174,
-      "trading_value": 47137035,
+      "volume": 22175,
+      "trading_value": 47139145,
       "mcap": 0.03,
       "shares": 14545052,
       "categories": [
@@ -38735,8 +38735,8 @@ window.KOS_LIVE_DATA = {
       "sector": "기타",
       "price": 979,
       "change": 3.05,
-      "volume": 78292,
-      "trading_value": 74731464,
+      "volume": 78348,
+      "trading_value": 74786390,
       "mcap": 0.03,
       "shares": 32575748,
       "categories": [
@@ -38752,8 +38752,8 @@ window.KOS_LIVE_DATA = {
       "sector": "기타",
       "price": 2560,
       "change": 22.2,
-      "volume": 390041,
-      "trading_value": 947581482,
+      "volume": 390199,
+      "trading_value": 947997662,
       "mcap": 0.03,
       "shares": 12459195,
       "categories": [
@@ -38769,8 +38769,8 @@ window.KOS_LIVE_DATA = {
       "sector": "기타",
       "price": 1991,
       "change": -1.44,
-      "volume": 29846,
-      "trading_value": 60273793,
+      "volume": 29896,
+      "trading_value": 60373343,
       "mcap": 0.03,
       "shares": 15145893,
       "categories": [
@@ -38837,8 +38837,8 @@ window.KOS_LIVE_DATA = {
       "sector": "기타",
       "price": 394,
       "change": -0.51,
-      "volume": 97563,
-      "trading_value": 38114046,
+      "volume": 97711,
+      "trading_value": 38172358,
       "mcap": 0.03,
       "shares": 78103517,
       "categories": [
@@ -38854,8 +38854,8 @@ window.KOS_LIVE_DATA = {
       "sector": "기타",
       "price": 2965,
       "change": -7.63,
-      "volume": 150879,
-      "trading_value": 460815217,
+      "volume": 151141,
+      "trading_value": 461591997,
       "mcap": 0.03,
       "shares": 9991819,
       "categories": [
@@ -38888,8 +38888,8 @@ window.KOS_LIVE_DATA = {
       "sector": "기타",
       "price": 304,
       "change": 1.33,
-      "volume": 406776,
-      "trading_value": 122201334,
+      "volume": 409425,
+      "trading_value": 123006630,
       "mcap": 0.03,
       "shares": 100800450,
       "categories": [
@@ -38956,8 +38956,8 @@ window.KOS_LIVE_DATA = {
       "sector": "기타",
       "price": 2675,
       "change": -3.08,
-      "volume": 8819,
-      "trading_value": 23753190,
+      "volume": 8864,
+      "trading_value": 23873790,
       "mcap": 0.03,
       "shares": 11312236,
       "categories": [
@@ -39024,8 +39024,8 @@ window.KOS_LIVE_DATA = {
       "sector": "기타",
       "price": 3370,
       "change": -1.75,
-      "volume": 7698,
-      "trading_value": 26357760,
+      "volume": 7700,
+      "trading_value": 26364540,
       "mcap": 0.03,
       "shares": 8740223,
       "categories": [
@@ -39041,8 +39041,8 @@ window.KOS_LIVE_DATA = {
       "sector": "기타",
       "price": 1171,
       "change": 1.39,
-      "volume": 61877,
-      "trading_value": 71942889,
+      "volume": 62077,
+      "trading_value": 72177089,
       "mcap": 0.03,
       "shares": 25680106,
       "categories": [
@@ -39058,8 +39058,8 @@ window.KOS_LIVE_DATA = {
       "sector": "기타",
       "price": 795,
       "change": 4.88,
-      "volume": 111120,
-      "trading_value": 88076101,
+      "volume": 111149,
+      "trading_value": 88099156,
       "mcap": 0.03,
       "shares": 37572117,
       "categories": [
@@ -39075,8 +39075,8 @@ window.KOS_LIVE_DATA = {
       "sector": "기타",
       "price": 550,
       "change": 7.63,
-      "volume": 316414,
-      "trading_value": 165913644,
+      "volume": 316423,
+      "trading_value": 165918593,
       "mcap": 0.03,
       "shares": 57470717,
       "categories": [
@@ -39092,8 +39092,8 @@ window.KOS_LIVE_DATA = {
       "sector": "기타",
       "price": 3145,
       "change": -1.1,
-      "volume": 36212,
-      "trading_value": 112241697,
+      "volume": 36578,
+      "trading_value": 113392767,
       "mcap": 0.03,
       "shares": 9539994,
       "categories": [
@@ -39160,8 +39160,8 @@ window.KOS_LIVE_DATA = {
       "sector": "기타",
       "price": 136,
       "change": -11.69,
-      "volume": 8035804,
-      "trading_value": 1137990959,
+      "volume": 8115191,
+      "trading_value": 1148731321,
       "mcap": 0.03,
       "shares": 212184408,
       "categories": [
@@ -39211,8 +39211,8 @@ window.KOS_LIVE_DATA = {
       "sector": "기타",
       "price": 3070,
       "change": 0.49,
-      "volume": 51891,
-      "trading_value": 158961770,
+      "volume": 52266,
+      "trading_value": 160113020,
       "mcap": 0.03,
       "shares": 9607672,
       "categories": [
@@ -39245,8 +39245,8 @@ window.KOS_LIVE_DATA = {
       "sector": "기타",
       "price": 3145,
       "change": -1.72,
-      "volume": 2862,
-      "trading_value": 9212005,
+      "volume": 2993,
+      "trading_value": 9624000,
       "mcap": 0.03,
       "shares": 9204529,
       "categories": [
@@ -39313,8 +39313,8 @@ window.KOS_LIVE_DATA = {
       "sector": "기타",
       "price": 5270,
       "change": -1.68,
-      "volume": 2625,
-      "trading_value": 13950210,
+      "volume": 2718,
+      "trading_value": 14440400,
       "mcap": 0.03,
       "shares": 5450197,
       "categories": [
@@ -39330,8 +39330,8 @@ window.KOS_LIVE_DATA = {
       "sector": "기타",
       "price": 599,
       "change": 3.99,
-      "volume": 240082,
-      "trading_value": 142369800,
+      "volume": 240692,
+      "trading_value": 142750368,
       "mcap": 0.03,
       "shares": 49504016,
       "categories": [
@@ -39347,8 +39347,8 @@ window.KOS_LIVE_DATA = {
       "sector": "기타",
       "price": 725,
       "change": -4.73,
-      "volume": 35210,
-      "trading_value": 25642743,
+      "volume": 36694,
+      "trading_value": 26718643,
       "mcap": 0.03,
       "shares": 40395863,
       "categories": [
@@ -39364,8 +39364,8 @@ window.KOS_LIVE_DATA = {
       "sector": "기타",
       "price": 676,
       "change": -4.38,
-      "volume": 129430,
-      "trading_value": 89951674,
+      "volume": 129589,
+      "trading_value": 90059190,
       "mcap": 0.03,
       "shares": 42166980,
       "categories": [
@@ -39381,8 +39381,8 @@ window.KOS_LIVE_DATA = {
       "sector": "기타",
       "price": 1686,
       "change": 1.75,
-      "volume": 33687,
-      "trading_value": 56956995,
+      "volume": 33691,
+      "trading_value": 56963739,
       "mcap": 0.03,
       "shares": 17269173,
       "categories": [
@@ -39398,8 +39398,8 @@ window.KOS_LIVE_DATA = {
       "sector": "기타",
       "price": 3905,
       "change": 0.51,
-      "volume": 25280,
-      "trading_value": 99158050,
+      "volume": 25337,
+      "trading_value": 99380635,
       "mcap": 0.03,
       "shares": 7378526,
       "categories": [
@@ -39415,8 +39415,8 @@ window.KOS_LIVE_DATA = {
       "sector": "기타",
       "price": 1020,
       "change": 1.8,
-      "volume": 61587,
-      "trading_value": 62250741,
+      "volume": 61695,
+      "trading_value": 62360901,
       "mcap": 0.03,
       "shares": 28231302,
       "categories": [
@@ -39432,8 +39432,8 @@ window.KOS_LIVE_DATA = {
       "sector": "기타",
       "price": 1260,
       "change": 5.09,
-      "volume": 21031,
-      "trading_value": 25452419,
+      "volume": 21094,
+      "trading_value": 25531799,
       "mcap": 0.03,
       "shares": 24277540,
       "categories": [
@@ -39449,8 +39449,8 @@ window.KOS_LIVE_DATA = {
       "sector": "기타",
       "price": 897,
       "change": 0.45,
-      "volume": 17562,
-      "trading_value": 15567778,
+      "volume": 17565,
+      "trading_value": 15570469,
       "mcap": 0.03,
       "shares": 32246724,
       "categories": [
@@ -39466,8 +39466,8 @@ window.KOS_LIVE_DATA = {
       "sector": "기타",
       "price": 4010,
       "change": 1.01,
-      "volume": 32218,
-      "trading_value": 126253235,
+      "volume": 32223,
+      "trading_value": 126273475,
       "mcap": 0.03,
       "shares": 7383954,
       "categories": [
@@ -39483,8 +39483,8 @@ window.KOS_LIVE_DATA = {
       "sector": "기타",
       "price": 1905,
       "change": -0.57,
-      "volume": 13029,
-      "trading_value": 24145494,
+      "volume": 13096,
+      "trading_value": 24273129,
       "mcap": 0.03,
       "shares": 15188750,
       "categories": [
@@ -39500,8 +39500,8 @@ window.KOS_LIVE_DATA = {
       "sector": "기타",
       "price": 3170,
       "change": -4.8,
-      "volume": 9253,
-      "trading_value": 30186215,
+      "volume": 9255,
+      "trading_value": 30192565,
       "mcap": 0.03,
       "shares": 8693978,
       "categories": [
@@ -39517,8 +39517,8 @@ window.KOS_LIVE_DATA = {
       "sector": "기타",
       "price": 840,
       "change": -8.6,
-      "volume": 204589,
-      "trading_value": 179747095,
+      "volume": 206408,
+      "trading_value": 181275109,
       "mcap": 0.03,
       "shares": 32209292,
       "categories": [
@@ -39534,8 +39534,8 @@ window.KOS_LIVE_DATA = {
       "sector": "기타",
       "price": 332,
       "change": -0.6,
-      "volume": 84161,
-      "trading_value": 28040807,
+      "volume": 84162,
+      "trading_value": 28041139,
       "mcap": 0.03,
       "shares": 86375184,
       "categories": [
@@ -39551,8 +39551,8 @@ window.KOS_LIVE_DATA = {
       "sector": "기타",
       "price": 2995,
       "change": 1.35,
-      "volume": 59291,
-      "trading_value": 175248660,
+      "volume": 59549,
+      "trading_value": 176014590,
       "mcap": 0.03,
       "shares": 9830000,
       "categories": [
@@ -39585,8 +39585,8 @@ window.KOS_LIVE_DATA = {
       "sector": "기타",
       "price": 1872,
       "change": -0.27,
-      "volume": 97064,
-      "trading_value": 181433703,
+      "volume": 97264,
+      "trading_value": 181808103,
       "mcap": 0.03,
       "shares": 15260000,
       "categories": [
@@ -39636,8 +39636,8 @@ window.KOS_LIVE_DATA = {
       "sector": "기타",
       "price": 2390,
       "change": 0.42,
-      "volume": 52548,
-      "trading_value": 126939442,
+      "volume": 52549,
+      "trading_value": 126941892,
       "mcap": 0.03,
       "shares": 11818511,
       "categories": [
@@ -39738,8 +39738,8 @@ window.KOS_LIVE_DATA = {
       "sector": "기타",
       "price": 5350,
       "change": -0.74,
-      "volume": 5384,
-      "trading_value": 29191530,
+      "volume": 5435,
+      "trading_value": 29471010,
       "mcap": 0.03,
       "shares": 5200000,
       "categories": [
@@ -39755,8 +39755,8 @@ window.KOS_LIVE_DATA = {
       "sector": "기타",
       "price": 6790,
       "change": 0.59,
-      "volume": 9600,
-      "trading_value": 63052175,
+      "volume": 9659,
+      "trading_value": 63452785,
       "mcap": 0.03,
       "shares": 4312142,
       "categories": [
@@ -39772,8 +39772,8 @@ window.KOS_LIVE_DATA = {
       "sector": "기타",
       "price": 1493,
       "change": -3.74,
-      "volume": 91142,
-      "trading_value": 134705843,
+      "volume": 91299,
+      "trading_value": 134940244,
       "mcap": 0.03,
       "shares": 19190021,
       "categories": [
@@ -39789,8 +39789,8 @@ window.KOS_LIVE_DATA = {
       "sector": "기타",
       "price": 1162,
       "change": -4.75,
-      "volume": 160387,
-      "trading_value": 189815349,
+      "volume": 161464,
+      "trading_value": 191023919,
       "mcap": 0.03,
       "shares": 24237478,
       "categories": [
@@ -39806,8 +39806,8 @@ window.KOS_LIVE_DATA = {
       "sector": "기타",
       "price": 2545,
       "change": 0.99,
-      "volume": 21979,
-      "trading_value": 54710330,
+      "volume": 21999,
+      "trading_value": 54761230,
       "mcap": 0.03,
       "shares": 11144890,
       "categories": [
@@ -39823,8 +39823,8 @@ window.KOS_LIVE_DATA = {
       "sector": "기타",
       "price": 2595,
       "change": -3.53,
-      "volume": 90048,
-      "trading_value": 238259568,
+      "volume": 91354,
+      "trading_value": 241648638,
       "mcap": 0.03,
       "shares": 10689507,
       "categories": [
@@ -39840,8 +39840,8 @@ window.KOS_LIVE_DATA = {
       "sector": "기타",
       "price": 2255,
       "change": -3.43,
-      "volume": 19774,
-      "trading_value": 45153890,
+      "volume": 20176,
+      "trading_value": 46060400,
       "mcap": 0.03,
       "shares": 11927536,
       "categories": [
@@ -39874,8 +39874,8 @@ window.KOS_LIVE_DATA = {
       "sector": "기타",
       "price": 985,
       "change": 1.03,
-      "volume": 93762,
-      "trading_value": 91185750,
+      "volume": 93763,
+      "trading_value": 91186739,
       "mcap": 0.03,
       "shares": 29176711,
       "categories": [
@@ -39891,8 +39891,8 @@ window.KOS_LIVE_DATA = {
       "sector": "기타",
       "price": 3645,
       "change": 2.24,
-      "volume": 54849,
-      "trading_value": 202142570,
+      "volume": 55014,
+      "trading_value": 202748795,
       "mcap": 0.03,
       "shares": 7658221,
       "categories": [
@@ -39908,8 +39908,8 @@ window.KOS_LIVE_DATA = {
       "sector": "기타",
       "price": 2290,
       "change": -4.98,
-      "volume": 102637,
-      "trading_value": 237392440,
+      "volume": 102837,
+      "trading_value": 237851440,
       "mcap": 0.03,
       "shares": 12037328,
       "categories": [
@@ -39959,8 +39959,8 @@ window.KOS_LIVE_DATA = {
       "sector": "기타",
       "price": 1753,
       "change": -2.18,
-      "volume": 389373,
-      "trading_value": 729581439,
+      "volume": 390056,
+      "trading_value": 730761879,
       "mcap": 0.03,
       "shares": 15095804,
       "categories": [
@@ -39976,8 +39976,8 @@ window.KOS_LIVE_DATA = {
       "sector": "기타",
       "price": 1309,
       "change": 0.0,
-      "volume": 188570,
-      "trading_value": 248723926,
+      "volume": 188771,
+      "trading_value": 248987115,
       "mcap": 0.03,
       "shares": 20687271,
       "categories": [
@@ -39993,8 +39993,8 @@ window.KOS_LIVE_DATA = {
       "sector": "기타",
       "price": 450,
       "change": -3.43,
-      "volume": 310033,
-      "trading_value": 139894566,
+      "volume": 310227,
+      "trading_value": 139981866,
       "mcap": 0.03,
       "shares": 60828143,
       "categories": [
@@ -40027,8 +40027,8 @@ window.KOS_LIVE_DATA = {
       "sector": "기타",
       "price": 3570,
       "change": 5.47,
-      "volume": 23453,
-      "trading_value": 84135265,
+      "volume": 23563,
+      "trading_value": 84527965,
       "mcap": 0.03,
       "shares": 7622000,
       "categories": [
@@ -40061,8 +40061,8 @@ window.KOS_LIVE_DATA = {
       "sector": "기타",
       "price": 2105,
       "change": -1.86,
-      "volume": 17988,
-      "trading_value": 38055860,
+      "volume": 18097,
+      "trading_value": 38285305,
       "mcap": 0.03,
       "shares": 12875570,
       "categories": [
@@ -40078,8 +40078,8 @@ window.KOS_LIVE_DATA = {
       "sector": "기타",
       "price": 2905,
       "change": 3.38,
-      "volume": 29266,
-      "trading_value": 82987345,
+      "volume": 29766,
+      "trading_value": 84439845,
       "mcap": 0.03,
       "shares": 9650000,
       "categories": [
@@ -40095,8 +40095,8 @@ window.KOS_LIVE_DATA = {
       "sector": "기타",
       "price": 2105,
       "change": -0.47,
-      "volume": 3178,
-      "trading_value": 6774445,
+      "volume": 3180,
+      "trading_value": 6778535,
       "mcap": 0.03,
       "shares": 12878076,
       "categories": [
@@ -40163,8 +40163,8 @@ window.KOS_LIVE_DATA = {
       "sector": "기타",
       "price": 1067,
       "change": -3.09,
-      "volume": 172617,
-      "trading_value": 186569597,
+      "volume": 172627,
+      "trading_value": 186580267,
       "mcap": 0.03,
       "shares": 24320660,
       "categories": [
@@ -40180,8 +40180,8 @@ window.KOS_LIVE_DATA = {
       "sector": "기타",
       "price": 1201,
       "change": 0.5,
-      "volume": 215391,
-      "trading_value": 246979152,
+      "volume": 215395,
+      "trading_value": 246984076,
       "mcap": 0.03,
       "shares": 22137500,
       "categories": [
@@ -40197,8 +40197,8 @@ window.KOS_LIVE_DATA = {
       "sector": "기타",
       "price": 535,
       "change": 8.08,
-      "volume": 1996373,
-      "trading_value": 1127940191,
+      "volume": 2005189,
+      "trading_value": 1132656751,
       "mcap": 0.03,
       "shares": 47116894,
       "categories": [
@@ -40265,8 +40265,8 @@ window.KOS_LIVE_DATA = {
       "sector": "기타",
       "price": 1007,
       "change": -0.49,
-      "volume": 107173,
-      "trading_value": 108265863,
+      "volume": 107191,
+      "trading_value": 108283989,
       "mcap": 0.03,
       "shares": 26809750,
       "categories": [
@@ -40282,8 +40282,8 @@ window.KOS_LIVE_DATA = {
       "sector": "기타",
       "price": 1591,
       "change": -1.79,
-      "volume": 42678,
-      "trading_value": 69176111,
+      "volume": 43605,
+      "trading_value": 70650968,
       "mcap": 0.03,
       "shares": 16526307,
       "categories": [
@@ -40316,8 +40316,8 @@ window.KOS_LIVE_DATA = {
       "sector": "기타",
       "price": 4160,
       "change": -0.72,
-      "volume": 31672,
-      "trading_value": 131511705,
+      "volume": 31702,
+      "trading_value": 131633355,
       "mcap": 0.03,
       "shares": 6400000,
       "categories": [
@@ -40333,8 +40333,8 @@ window.KOS_LIVE_DATA = {
       "sector": "기타",
       "price": 4035,
       "change": -5.94,
-      "volume": 17257,
-      "trading_value": 71238746,
+      "volume": 17357,
+      "trading_value": 71642246,
       "mcap": 0.03,
       "shares": 6496600,
       "categories": [
@@ -40350,8 +40350,8 @@ window.KOS_LIVE_DATA = {
       "sector": "기타",
       "price": 2330,
       "change": 6.39,
-      "volume": 6936,
-      "trading_value": 15727880,
+      "volume": 6938,
+      "trading_value": 15732540,
       "mcap": 0.03,
       "shares": 11659319,
       "categories": [
@@ -40384,8 +40384,8 @@ window.KOS_LIVE_DATA = {
       "sector": "기타",
       "price": 2935,
       "change": -2.17,
-      "volume": 20315,
-      "trading_value": 58705187,
+      "volume": 20345,
+      "trading_value": 58793237,
       "mcap": 0.03,
       "shares": 9086493,
       "categories": [
@@ -40401,8 +40401,8 @@ window.KOS_LIVE_DATA = {
       "sector": "기타",
       "price": 2855,
       "change": -0.87,
-      "volume": 20801,
-      "trading_value": 60129015,
+      "volume": 21454,
+      "trading_value": 61993330,
       "mcap": 0.03,
       "shares": 9031122,
       "categories": [
@@ -40435,8 +40435,8 @@ window.KOS_LIVE_DATA = {
       "sector": "기타",
       "price": 1421,
       "change": -10.18,
-      "volume": 316333,
-      "trading_value": 469096199,
+      "volume": 316341,
+      "trading_value": 469107582,
       "mcap": 0.03,
       "shares": 18234437,
       "categories": [
@@ -40452,8 +40452,8 @@ window.KOS_LIVE_DATA = {
       "sector": "기타",
       "price": 2830,
       "change": -2.41,
-      "volume": 55800,
-      "trading_value": 160113445,
+      "volume": 55802,
+      "trading_value": 160119105,
       "mcap": 0.03,
       "shares": 9325130,
       "categories": [
@@ -40588,8 +40588,8 @@ window.KOS_LIVE_DATA = {
       "sector": "기타",
       "price": 5100,
       "change": -3.95,
-      "volume": 95765,
-      "trading_value": 492778065,
+      "volume": 95792,
+      "trading_value": 492915765,
       "mcap": 0.03,
       "shares": 4998256,
       "categories": [
@@ -40622,8 +40622,8 @@ window.KOS_LIVE_DATA = {
       "sector": "기타",
       "price": 7070,
       "change": -1.12,
-      "volume": 20699,
-      "trading_value": 146587040,
+      "volume": 20709,
+      "trading_value": 146657740,
       "mcap": 0.03,
       "shares": 3621216,
       "categories": [
@@ -40639,8 +40639,8 @@ window.KOS_LIVE_DATA = {
       "sector": "기타",
       "price": 624,
       "change": -0.16,
-      "volume": 48855,
-      "trading_value": 30505781,
+      "volume": 48913,
+      "trading_value": 30541973,
       "mcap": 0.03,
       "shares": 41486390,
       "categories": [
@@ -40673,8 +40673,8 @@ window.KOS_LIVE_DATA = {
       "sector": "기타",
       "price": 5170,
       "change": 2.78,
-      "volume": 12083,
-      "trading_value": 59598410,
+      "volume": 12088,
+      "trading_value": 59624260,
       "mcap": 0.03,
       "shares": 5160770,
       "categories": [
@@ -40707,8 +40707,8 @@ window.KOS_LIVE_DATA = {
       "sector": "기타",
       "price": 2590,
       "change": -30.0,
-      "volume": 1844647,
-      "trading_value": 4964917116,
+      "volume": 1853064,
+      "trading_value": 4986717146,
       "mcap": 0.03,
       "shares": 9865828,
       "categories": [
@@ -40741,8 +40741,8 @@ window.KOS_LIVE_DATA = {
       "sector": "기타",
       "price": 722,
       "change": -12.17,
-      "volume": 884614,
-      "trading_value": 656349812,
+      "volume": 885931,
+      "trading_value": 657297109,
       "mcap": 0.03,
       "shares": 34895243,
       "categories": [
@@ -40758,8 +40758,8 @@ window.KOS_LIVE_DATA = {
       "sector": "기타",
       "price": 2575,
       "change": 3.0,
-      "volume": 96329,
-      "trading_value": 243528015,
+      "volume": 96352,
+      "trading_value": 243588960,
       "mcap": 0.03,
       "shares": 10054368,
       "categories": [
@@ -40775,8 +40775,8 @@ window.KOS_LIVE_DATA = {
       "sector": "기타",
       "price": 1350,
       "change": 1.96,
-      "volume": 63537,
-      "trading_value": 84970754,
+      "volume": 64542,
+      "trading_value": 86327504,
       "mcap": 0.03,
       "shares": 18897307,
       "categories": [
@@ -40809,8 +40809,8 @@ window.KOS_LIVE_DATA = {
       "sector": "기타",
       "price": 5340,
       "change": -6.97,
-      "volume": 13915,
-      "trading_value": 74480610,
+      "volume": 14000,
+      "trading_value": 74934510,
       "mcap": 0.03,
       "shares": 4747965,
       "categories": [
@@ -40826,8 +40826,8 @@ window.KOS_LIVE_DATA = {
       "sector": "기타",
       "price": 2985,
       "change": -2.61,
-      "volume": 303666,
-      "trading_value": 886900424,
+      "volume": 304850,
+      "trading_value": 890437664,
       "mcap": 0.03,
       "shares": 8686316,
       "categories": [
@@ -40843,8 +40843,8 @@ window.KOS_LIVE_DATA = {
       "sector": "기타",
       "price": 1120,
       "change": -0.18,
-      "volume": 32829,
-      "trading_value": 37175262,
+      "volume": 32835,
+      "trading_value": 37181982,
       "mcap": 0.03,
       "shares": 22362730,
       "categories": [
@@ -40860,8 +40860,8 @@ window.KOS_LIVE_DATA = {
       "sector": "기타",
       "price": 5260,
       "change": 1.54,
-      "volume": 8337,
-      "trading_value": 42433340,
+      "volume": 8342,
+      "trading_value": 42459640,
       "mcap": 0.03,
       "shares": 4922665,
       "categories": [
@@ -40894,8 +40894,8 @@ window.KOS_LIVE_DATA = {
       "sector": "기타",
       "price": 1637,
       "change": 0.24,
-      "volume": 42804,
-      "trading_value": 70014712,
+      "volume": 43185,
+      "trading_value": 70638409,
       "mcap": 0.03,
       "shares": 15340072,
       "categories": [
@@ -40979,8 +40979,8 @@ window.KOS_LIVE_DATA = {
       "sector": "지주",
       "price": 797,
       "change": 0.5,
-      "volume": 10033537,
-      "trading_value": 9290686662,
+      "volume": 10044243,
+      "trading_value": 9299245123,
       "mcap": 0.02,
       "shares": 24404704,
       "induty_code": "64992",
@@ -40997,8 +40997,8 @@ window.KOS_LIVE_DATA = {
       "sector": "기타",
       "price": 2650,
       "change": 3.31,
-      "volume": 47050,
-      "trading_value": 124753885,
+      "volume": 47360,
+      "trading_value": 125575385,
       "mcap": 0.02,
       "shares": 9360627,
       "categories": [
@@ -41014,8 +41014,8 @@ window.KOS_LIVE_DATA = {
       "sector": "기타",
       "price": 1428,
       "change": -3.19,
-      "volume": 147319,
-      "trading_value": 211837550,
+      "volume": 147458,
+      "trading_value": 212036042,
       "mcap": 0.02,
       "shares": 17294394,
       "categories": [
@@ -41031,8 +41031,8 @@ window.KOS_LIVE_DATA = {
       "sector": "기타",
       "price": 4245,
       "change": -0.7,
-      "volume": 4088,
-      "trading_value": 17190455,
+      "volume": 4098,
+      "trading_value": 17232905,
       "mcap": 0.02,
       "shares": 5870000,
       "categories": [
@@ -41048,8 +41048,8 @@ window.KOS_LIVE_DATA = {
       "sector": "기타",
       "price": 2355,
       "change": -4.27,
-      "volume": 12318,
-      "trading_value": 29536210,
+      "volume": 12328,
+      "trading_value": 29559510,
       "mcap": 0.02,
       "shares": 10175213,
       "categories": [
@@ -41082,8 +41082,8 @@ window.KOS_LIVE_DATA = {
       "sector": "기타",
       "price": 1230,
       "change": -1.05,
-      "volume": 137320,
-      "trading_value": 166383379,
+      "volume": 138037,
+      "trading_value": 167265289,
       "mcap": 0.02,
       "shares": 19850477,
       "categories": [
@@ -41150,8 +41150,8 @@ window.KOS_LIVE_DATA = {
       "sector": "기타",
       "price": 2640,
       "change": -3.83,
-      "volume": 31391,
-      "trading_value": 84354903,
+      "volume": 31413,
+      "trading_value": 84412983,
       "mcap": 0.02,
       "shares": 8840635,
       "categories": [
@@ -41167,8 +41167,8 @@ window.KOS_LIVE_DATA = {
       "sector": "기타",
       "price": 2905,
       "change": -5.68,
-      "volume": 4829,
-      "trading_value": 14252588,
+      "volume": 4832,
+      "trading_value": 14261318,
       "mcap": 0.02,
       "shares": 8139954,
       "categories": [
@@ -41201,8 +41201,8 @@ window.KOS_LIVE_DATA = {
       "sector": "기타",
       "price": 2015,
       "change": -5.62,
-      "volume": 166762,
-      "trading_value": 343067501,
+      "volume": 166866,
+      "trading_value": 343277581,
       "mcap": 0.02,
       "shares": 11836255,
       "categories": [
@@ -41218,8 +41218,8 @@ window.KOS_LIVE_DATA = {
       "sector": "기타",
       "price": 2395,
       "change": 0.84,
-      "volume": 35912,
-      "trading_value": 86150145,
+      "volume": 36112,
+      "trading_value": 86626145,
       "mcap": 0.02,
       "shares": 10000000,
       "categories": [
@@ -41235,8 +41235,8 @@ window.KOS_LIVE_DATA = {
       "sector": "기타",
       "price": 2035,
       "change": 0.99,
-      "volume": 251352,
-      "trading_value": 520749207,
+      "volume": 251385,
+      "trading_value": 520816362,
       "mcap": 0.02,
       "shares": 11276679,
       "categories": [
@@ -41252,8 +41252,8 @@ window.KOS_LIVE_DATA = {
       "sector": "기타",
       "price": 969,
       "change": -0.21,
-      "volume": 130885,
-      "trading_value": 128907173,
+      "volume": 130991,
+      "trading_value": 129009887,
       "mcap": 0.02,
       "shares": 24015595,
       "categories": [
@@ -41320,8 +41320,8 @@ window.KOS_LIVE_DATA = {
       "sector": "기타",
       "price": 902,
       "change": 0.78,
-      "volume": 140103,
-      "trading_value": 126903920,
+      "volume": 140364,
+      "trading_value": 127139342,
       "mcap": 0.02,
       "shares": 26223346,
       "categories": [
@@ -41337,8 +41337,8 @@ window.KOS_LIVE_DATA = {
       "sector": "기타",
       "price": 3070,
       "change": -5.25,
-      "volume": 185938,
-      "trading_value": 591355565,
+      "volume": 186048,
+      "trading_value": 591697330,
       "mcap": 0.02,
       "shares": 7534780,
       "categories": [
@@ -41371,8 +41371,8 @@ window.KOS_LIVE_DATA = {
       "sector": "기타",
       "price": 3965,
       "change": -3.29,
-      "volume": 3530,
-      "trading_value": 13942230,
+      "volume": 3577,
+      "trading_value": 14128585,
       "mcap": 0.02,
       "shares": 5936225,
       "categories": [
@@ -41405,8 +41405,8 @@ window.KOS_LIVE_DATA = {
       "sector": "기타",
       "price": 911,
       "change": -2.67,
-      "volume": 125187,
-      "trading_value": 115964087,
+      "volume": 125191,
+      "trading_value": 115967907,
       "mcap": 0.02,
       "shares": 24959232,
       "categories": [
@@ -41422,8 +41422,8 @@ window.KOS_LIVE_DATA = {
       "sector": "기타",
       "price": 5880,
       "change": -8.84,
-      "volume": 16886,
-      "trading_value": 99858135,
+      "volume": 17189,
+      "trading_value": 101585235,
       "mcap": 0.02,
       "shares": 4022842,
       "categories": [
@@ -41439,8 +41439,8 @@ window.KOS_LIVE_DATA = {
       "sector": "기타",
       "price": 2460,
       "change": -7.17,
-      "volume": 33935,
-      "trading_value": 85995070,
+      "volume": 33993,
+      "trading_value": 86137750,
       "mcap": 0.02,
       "shares": 9000000,
       "categories": [
@@ -41456,8 +41456,8 @@ window.KOS_LIVE_DATA = {
       "sector": "기타",
       "price": 1168,
       "change": 5.42,
-      "volume": 122286,
-      "trading_value": 140704062,
+      "volume": 122356,
+      "trading_value": 140785546,
       "mcap": 0.02,
       "shares": 20250194,
       "categories": [
@@ -41490,8 +41490,8 @@ window.KOS_LIVE_DATA = {
       "sector": "기타",
       "price": 3045,
       "change": -3.03,
-      "volume": 7309,
-      "trading_value": 22148755,
+      "volume": 7310,
+      "trading_value": 22151670,
       "mcap": 0.02,
       "shares": 7689309,
       "categories": [
@@ -41524,8 +41524,8 @@ window.KOS_LIVE_DATA = {
       "sector": "기타",
       "price": 2860,
       "change": -0.87,
-      "volume": 26841,
-      "trading_value": 76308855,
+      "volume": 26968,
+      "trading_value": 76671830,
       "mcap": 0.02,
       "shares": 8101570,
       "categories": [
@@ -41575,8 +41575,8 @@ window.KOS_LIVE_DATA = {
       "sector": "기타",
       "price": 1149,
       "change": -2.54,
-      "volume": 27585,
-      "trading_value": 32332130,
+      "volume": 27695,
+      "trading_value": 32458520,
       "mcap": 0.02,
       "shares": 19700000,
       "categories": [
@@ -41592,8 +41592,8 @@ window.KOS_LIVE_DATA = {
       "sector": "기타",
       "price": 1788,
       "change": 6.3,
-      "volume": 42794,
-      "trading_value": 75270527,
+      "volume": 42812,
+      "trading_value": 75302711,
       "mcap": 0.02,
       "shares": 13154712,
       "categories": [
@@ -41609,8 +41609,8 @@ window.KOS_LIVE_DATA = {
       "sector": "기타",
       "price": 1385,
       "change": -7.67,
-      "volume": 20393,
-      "trading_value": 28337652,
+      "volume": 20408,
+      "trading_value": 28358427,
       "mcap": 0.02,
       "shares": 16750473,
       "categories": [
@@ -41626,8 +41626,8 @@ window.KOS_LIVE_DATA = {
       "sector": "기타",
       "price": 2330,
       "change": -3.92,
-      "volume": 61986,
-      "trading_value": 147911673,
+      "volume": 62013,
+      "trading_value": 147974593,
       "mcap": 0.02,
       "shares": 9673922,
       "categories": [
@@ -41677,8 +41677,8 @@ window.KOS_LIVE_DATA = {
       "sector": "기타",
       "price": 2160,
       "change": -0.92,
-      "volume": 21328,
-      "trading_value": 45358589,
+      "volume": 21358,
+      "trading_value": 45423389,
       "mcap": 0.02,
       "shares": 11039463,
       "categories": [
@@ -41711,8 +41711,8 @@ window.KOS_LIVE_DATA = {
       "sector": "기타",
       "price": 1815,
       "change": -12.74,
-      "volume": 357359,
-      "trading_value": 662886826,
+      "volume": 357435,
+      "trading_value": 663025387,
       "mcap": 0.02,
       "shares": 12582732,
       "categories": [
@@ -41728,8 +41728,8 @@ window.KOS_LIVE_DATA = {
       "sector": "기타",
       "price": 1980,
       "change": -2.22,
-      "volume": 104477,
-      "trading_value": 212920926,
+      "volume": 105823,
+      "trading_value": 215586138,
       "mcap": 0.02,
       "shares": 11113373,
       "categories": [
@@ -41745,8 +41745,8 @@ window.KOS_LIVE_DATA = {
       "sector": "기타",
       "price": 500,
       "change": -2.72,
-      "volume": 131605,
-      "trading_value": 67720515,
+      "volume": 131662,
+      "trading_value": 67749335,
       "mcap": 0.02,
       "shares": 44095775,
       "categories": [
@@ -41830,8 +41830,8 @@ window.KOS_LIVE_DATA = {
       "sector": "기타",
       "price": 1920,
       "change": 2.95,
-      "volume": 511414,
-      "trading_value": 1061650102,
+      "volume": 511742,
+      "trading_value": 1062279894,
       "mcap": 0.02,
       "shares": 12124911,
       "categories": [
@@ -41847,8 +41847,8 @@ window.KOS_LIVE_DATA = {
       "sector": "기타",
       "price": 1578,
       "change": -2.17,
-      "volume": 28639,
-      "trading_value": 45573782,
+      "volume": 28642,
+      "trading_value": 45578522,
       "mcap": 0.02,
       "shares": 14118810,
       "categories": [
@@ -41864,8 +41864,8 @@ window.KOS_LIVE_DATA = {
       "sector": "기타",
       "price": 3170,
       "change": 1.6,
-      "volume": 21909,
-      "trading_value": 68258490,
+      "volume": 21931,
+      "trading_value": 68328230,
       "mcap": 0.02,
       "shares": 7300000,
       "categories": [
@@ -41915,8 +41915,8 @@ window.KOS_LIVE_DATA = {
       "sector": "기타",
       "price": 158,
       "change": 1.28,
-      "volume": 2355869,
-      "trading_value": 384256901,
+      "volume": 2362178,
+      "trading_value": 385303783,
       "mcap": 0.02,
       "shares": 139240254,
       "categories": [
@@ -41932,8 +41932,8 @@ window.KOS_LIVE_DATA = {
       "sector": "기타",
       "price": 1277,
       "change": -1.92,
-      "volume": 97295,
-      "trading_value": 124057074,
+      "volume": 97297,
+      "trading_value": 124059606,
       "mcap": 0.02,
       "shares": 17657419,
       "categories": [
@@ -41966,8 +41966,8 @@ window.KOS_LIVE_DATA = {
       "sector": "기타",
       "price": 680,
       "change": 28.3,
-      "volume": 1961021,
-      "trading_value": 1297833940,
+      "volume": 2099103,
+      "trading_value": 1386324590,
       "mcap": 0.02,
       "shares": 32628051,
       "categories": [
@@ -41983,8 +41983,8 @@ window.KOS_LIVE_DATA = {
       "sector": "기타",
       "price": 1661,
       "change": 11.85,
-      "volume": 105013,
-      "trading_value": 172449886,
+      "volume": 105017,
+      "trading_value": 172456530,
       "mcap": 0.02,
       "shares": 13958316,
       "categories": [
@@ -42017,8 +42017,8 @@ window.KOS_LIVE_DATA = {
       "sector": "기타",
       "price": 4800,
       "change": -0.21,
-      "volume": 25108,
-      "trading_value": 119222575,
+      "volume": 25206,
+      "trading_value": 119692975,
       "mcap": 0.02,
       "shares": 4679308,
       "categories": [
@@ -42034,8 +42034,8 @@ window.KOS_LIVE_DATA = {
       "sector": "기타",
       "price": 535,
       "change": -0.93,
-      "volume": 584775,
-      "trading_value": 316673064,
+      "volume": 584898,
+      "trading_value": 316738869,
       "mcap": 0.02,
       "shares": 41875293,
       "categories": [
@@ -42051,8 +42051,8 @@ window.KOS_LIVE_DATA = {
       "sector": "기타",
       "price": 2255,
       "change": -1.74,
-      "volume": 35529,
-      "trading_value": 81377592,
+      "volume": 35595,
+      "trading_value": 81526422,
       "mcap": 0.02,
       "shares": 9603800,
       "categories": [
@@ -42068,8 +42068,8 @@ window.KOS_LIVE_DATA = {
       "sector": "기타",
       "price": 3520,
       "change": -1.12,
-      "volume": 13583,
-      "trading_value": 45285935,
+      "volume": 13586,
+      "trading_value": 45296495,
       "mcap": 0.02,
       "shares": 6365430,
       "categories": [
@@ -42085,8 +42085,8 @@ window.KOS_LIVE_DATA = {
       "sector": "기타",
       "price": 1999,
       "change": -0.05,
-      "volume": 15444,
-      "trading_value": 31333644,
+      "volume": 15446,
+      "trading_value": 31337470,
       "mcap": 0.02,
       "shares": 10867730,
       "categories": [
@@ -42102,8 +42102,8 @@ window.KOS_LIVE_DATA = {
       "sector": "기타",
       "price": 1799,
       "change": 0.39,
-      "volume": 61311,
-      "trading_value": 110755041,
+      "volume": 61332,
+      "trading_value": 110792820,
       "mcap": 0.02,
       "shares": 11818769,
       "categories": [
@@ -42119,8 +42119,8 @@ window.KOS_LIVE_DATA = {
       "sector": "기타",
       "price": 1852,
       "change": 1.31,
-      "volume": 15581,
-      "trading_value": 28937490,
+      "volume": 16281,
+      "trading_value": 30233890,
       "mcap": 0.02,
       "shares": 11933497,
       "categories": [
@@ -42136,8 +42136,8 @@ window.KOS_LIVE_DATA = {
       "sector": "기타",
       "price": 2770,
       "change": 5.52,
-      "volume": 67122,
-      "trading_value": 187745905,
+      "volume": 67157,
+      "trading_value": 187842855,
       "mcap": 0.02,
       "shares": 7875684,
       "categories": [
@@ -42170,8 +42170,8 @@ window.KOS_LIVE_DATA = {
       "sector": "기타",
       "price": 1163,
       "change": -6.21,
-      "volume": 97089,
-      "trading_value": 117459291,
+      "volume": 97091,
+      "trading_value": 117461617,
       "mcap": 0.02,
       "shares": 17477270,
       "categories": [
@@ -42221,8 +42221,8 @@ window.KOS_LIVE_DATA = {
       "sector": "기타",
       "price": 638,
       "change": -8.2,
-      "volume": 1449924,
-      "trading_value": 1013244719,
+      "volume": 1456732,
+      "trading_value": 1017585111,
       "mcap": 0.02,
       "shares": 32552861,
       "categories": [
@@ -42255,8 +42255,8 @@ window.KOS_LIVE_DATA = {
       "sector": "기타",
       "price": 2890,
       "change": 0.35,
-      "volume": 26515,
-      "trading_value": 76413467,
+      "volume": 26535,
+      "trading_value": 76471267,
       "mcap": 0.02,
       "shares": 7486442,
       "categories": [
@@ -42391,8 +42391,8 @@ window.KOS_LIVE_DATA = {
       "sector": "기타",
       "price": 1244,
       "change": -11.08,
-      "volume": 105558,
-      "trading_value": 137097852,
+      "volume": 106079,
+      "trading_value": 137745873,
       "mcap": 0.02,
       "shares": 16975426,
       "categories": [
@@ -42408,8 +42408,8 @@ window.KOS_LIVE_DATA = {
       "sector": "기타",
       "price": 5390,
       "change": -3.92,
-      "volume": 34905,
-      "trading_value": 193404810,
+      "volume": 34983,
+      "trading_value": 193825230,
       "mcap": 0.02,
       "shares": 3838444,
       "categories": [
@@ -42510,8 +42510,8 @@ window.KOS_LIVE_DATA = {
       "sector": "기타",
       "price": 1096,
       "change": 0.0,
-      "volume": 176961,
-      "trading_value": 189954542,
+      "volume": 177212,
+      "trading_value": 190229638,
       "mcap": 0.02,
       "shares": 19658914,
       "categories": [
@@ -42527,8 +42527,8 @@ window.KOS_LIVE_DATA = {
       "sector": "기타",
       "price": 3480,
       "change": 3.88,
-      "volume": 64219,
-      "trading_value": 224352595,
+      "volume": 64242,
+      "trading_value": 224429650,
       "mcap": 0.02,
       "shares": 5990386,
       "categories": [
@@ -42561,8 +42561,8 @@ window.KOS_LIVE_DATA = {
       "sector": "기타",
       "price": 1652,
       "change": -0.3,
-      "volume": 53646,
-      "trading_value": 86787477,
+      "volume": 53684,
+      "trading_value": 86850253,
       "mcap": 0.02,
       "shares": 12896316,
       "categories": [
@@ -42595,8 +42595,8 @@ window.KOS_LIVE_DATA = {
       "sector": "기타",
       "price": 1112,
       "change": -8.1,
-      "volume": 401118,
-      "trading_value": 440593807,
+      "volume": 403595,
+      "trading_value": 443348231,
       "mcap": 0.02,
       "shares": 18121667,
       "categories": [
@@ -42629,8 +42629,8 @@ window.KOS_LIVE_DATA = {
       "sector": "기타",
       "price": 1810,
       "change": 0.56,
-      "volume": 30897,
-      "trading_value": 55538522,
+      "volume": 30898,
+      "trading_value": 55540332,
       "mcap": 0.02,
       "shares": 11442975,
       "categories": [
@@ -42646,8 +42646,8 @@ window.KOS_LIVE_DATA = {
       "sector": "기타",
       "price": 735,
       "change": -2.91,
-      "volume": 154383,
-      "trading_value": 113563921,
+      "volume": 154466,
+      "trading_value": 113624926,
       "mcap": 0.02,
       "shares": 28310000,
       "categories": [
@@ -42663,8 +42663,8 @@ window.KOS_LIVE_DATA = {
       "sector": "기타",
       "price": 3590,
       "change": 1.41,
-      "volume": 10406,
-      "trading_value": 36259310,
+      "volume": 10407,
+      "trading_value": 36262900,
       "mcap": 0.02,
       "shares": 5836602,
       "categories": [
@@ -42697,8 +42697,8 @@ window.KOS_LIVE_DATA = {
       "sector": "기타",
       "price": 1246,
       "change": -0.88,
-      "volume": 33829,
-      "trading_value": 41733321,
+      "volume": 33847,
+      "trading_value": 41755749,
       "mcap": 0.02,
       "shares": 16800574,
       "categories": [
@@ -42714,8 +42714,8 @@ window.KOS_LIVE_DATA = {
       "sector": "기타",
       "price": 1601,
       "change": 7.09,
-      "volume": 69831,
-      "trading_value": 108138059,
+      "volume": 69847,
+      "trading_value": 108163675,
       "mcap": 0.02,
       "shares": 13109206,
       "categories": [
@@ -42748,8 +42748,8 @@ window.KOS_LIVE_DATA = {
       "sector": "기타",
       "price": 2910,
       "change": 0.0,
-      "volume": 14399,
-      "trading_value": 42344500,
+      "volume": 14497,
+      "trading_value": 42629680,
       "mcap": 0.02,
       "shares": 7037189,
       "categories": [
@@ -42765,8 +42765,8 @@ window.KOS_LIVE_DATA = {
       "sector": "기타",
       "price": 657,
       "change": -0.9,
-      "volume": 263298,
-      "trading_value": 172120721,
+      "volume": 263318,
+      "trading_value": 172133861,
       "mcap": 0.02,
       "shares": 31445725,
       "categories": [
@@ -42782,8 +42782,8 @@ window.KOS_LIVE_DATA = {
       "sector": "기타",
       "price": 2750,
       "change": -0.36,
-      "volume": 5254,
-      "trading_value": 14670780,
+      "volume": 5344,
+      "trading_value": 14918280,
       "mcap": 0.02,
       "shares": 7310300,
       "categories": [
@@ -42799,8 +42799,8 @@ window.KOS_LIVE_DATA = {
       "sector": "기타",
       "price": 5150,
       "change": -2.28,
-      "volume": 47674,
-      "trading_value": 243201970,
+      "volume": 47675,
+      "trading_value": 243207120,
       "mcap": 0.02,
       "shares": 3991073,
       "categories": [
@@ -42850,8 +42850,8 @@ window.KOS_LIVE_DATA = {
       "sector": "기타",
       "price": 4025,
       "change": 0.63,
-      "volume": 10633,
-      "trading_value": 42074070,
+      "volume": 10734,
+      "trading_value": 42480595,
       "mcap": 0.02,
       "shares": 5160722,
       "categories": [
@@ -42901,8 +42901,8 @@ window.KOS_LIVE_DATA = {
       "sector": "기타",
       "price": 1085,
       "change": 1.5,
-      "volume": 76769,
-      "trading_value": 83529069,
+      "volume": 77032,
+      "trading_value": 83806502,
       "mcap": 0.02,
       "shares": 18609918,
       "categories": [
@@ -42918,8 +42918,8 @@ window.KOS_LIVE_DATA = {
       "sector": "기타",
       "price": 605,
       "change": -4.42,
-      "volume": 307640,
-      "trading_value": 188030151,
+      "volume": 321261,
+      "trading_value": 196271675,
       "mcap": 0.02,
       "shares": 33173548,
       "categories": [
@@ -42969,8 +42969,8 @@ window.KOS_LIVE_DATA = {
       "sector": "기타",
       "price": 1630,
       "change": -6.54,
-      "volume": 74878,
-      "trading_value": 126477171,
+      "volume": 75235,
+      "trading_value": 127058991,
       "mcap": 0.02,
       "shares": 11706586,
       "categories": [
@@ -42986,8 +42986,8 @@ window.KOS_LIVE_DATA = {
       "sector": "기타",
       "price": 998,
       "change": -4.95,
-      "volume": 103809,
-      "trading_value": 106075565,
+      "volume": 104269,
+      "trading_value": 106534645,
       "mcap": 0.02,
       "shares": 19023623,
       "categories": [
@@ -43003,8 +43003,8 @@ window.KOS_LIVE_DATA = {
       "sector": "기타",
       "price": 3150,
       "change": -0.63,
-      "volume": 61688,
-      "trading_value": 195063785,
+      "volume": 61830,
+      "trading_value": 195511075,
       "mcap": 0.02,
       "shares": 6378332,
       "categories": [
@@ -43071,8 +43071,8 @@ window.KOS_LIVE_DATA = {
       "sector": "기타",
       "price": 2825,
       "change": 4.05,
-      "volume": 79262,
-      "trading_value": 221061080,
+      "volume": 81689,
+      "trading_value": 228272025,
       "mcap": 0.02,
       "shares": 7171032,
       "categories": [
@@ -43105,8 +43105,8 @@ window.KOS_LIVE_DATA = {
       "sector": "기타",
       "price": 1827,
       "change": -5.34,
-      "volume": 39327,
-      "trading_value": 71988769,
+      "volume": 39357,
+      "trading_value": 72043579,
       "mcap": 0.02,
       "shares": 10694360,
       "categories": [
@@ -43122,8 +43122,8 @@ window.KOS_LIVE_DATA = {
       "sector": "기타",
       "price": 2290,
       "change": 2.23,
-      "volume": 139239,
-      "trading_value": 307618800,
+      "volume": 139295,
+      "trading_value": 307747010,
       "mcap": 0.02,
       "shares": 8974830,
       "categories": [
@@ -43207,8 +43207,8 @@ window.KOS_LIVE_DATA = {
       "sector": "기타",
       "price": 1823,
       "change": 4.23,
-      "volume": 22156,
-      "trading_value": 39670995,
+      "volume": 22341,
+      "trading_value": 40008250,
       "mcap": 0.02,
       "shares": 10601663,
       "categories": [
@@ -43275,8 +43275,8 @@ window.KOS_LIVE_DATA = {
       "sector": "기타",
       "price": 1121,
       "change": -2.1,
-      "volume": 27456,
-      "trading_value": 31242925,
+      "volume": 27799,
+      "trading_value": 31627428,
       "mcap": 0.02,
       "shares": 16334678,
       "categories": [
@@ -43326,8 +43326,8 @@ window.KOS_LIVE_DATA = {
       "sector": "기타",
       "price": 3150,
       "change": 2.94,
-      "volume": 57786,
-      "trading_value": 180793620,
+      "volume": 57810,
+      "trading_value": 180869100,
       "mcap": 0.02,
       "shares": 5777858,
       "categories": [
@@ -43360,8 +43360,8 @@ window.KOS_LIVE_DATA = {
       "sector": "기타",
       "price": 2275,
       "change": 7.82,
-      "volume": 117648,
-      "trading_value": 262124409,
+      "volume": 117810,
+      "trading_value": 262487239,
       "mcap": 0.02,
       "shares": 8390484,
       "categories": [
@@ -43377,8 +43377,8 @@ window.KOS_LIVE_DATA = {
       "sector": "기타",
       "price": 1259,
       "change": -9.62,
-      "volume": 346183,
-      "trading_value": 442386124,
+      "volume": 346274,
+      "trading_value": 442500693,
       "mcap": 0.02,
       "shares": 14364144,
       "categories": [
@@ -43411,8 +43411,8 @@ window.KOS_LIVE_DATA = {
       "sector": "기타",
       "price": 2105,
       "change": -13.37,
-      "volume": 420463,
-      "trading_value": 1119826595,
+      "volume": 800533,
+      "trading_value": 1919873945,
       "mcap": 0.02,
       "shares": 7600000,
       "categories": [
@@ -43428,8 +43428,8 @@ window.KOS_LIVE_DATA = {
       "sector": "기타",
       "price": 1350,
       "change": 2.82,
-      "volume": 63865,
-      "trading_value": 85548865,
+      "volume": 63885,
+      "trading_value": 85575865,
       "mcap": 0.02,
       "shares": 13368933,
       "categories": [
@@ -43445,8 +43445,8 @@ window.KOS_LIVE_DATA = {
       "sector": "기타",
       "price": 919,
       "change": -4.47,
-      "volume": 1360810,
-      "trading_value": 1340375505,
+      "volume": 1362548,
+      "trading_value": 1341947523,
       "mcap": 0.02,
       "shares": 20855881,
       "categories": [
@@ -43462,8 +43462,8 @@ window.KOS_LIVE_DATA = {
       "sector": "기타",
       "price": 1729,
       "change": 14.5,
-      "volume": 604347,
-      "trading_value": 1003607473,
+      "volume": 604403,
+      "trading_value": 1003703733,
       "mcap": 0.02,
       "shares": 11032229,
       "categories": [
@@ -43479,8 +43479,8 @@ window.KOS_LIVE_DATA = {
       "sector": "기타",
       "price": 1974,
       "change": 0.05,
-      "volume": 32587,
-      "trading_value": 64082708,
+      "volume": 32687,
+      "trading_value": 64280108,
       "mcap": 0.02,
       "shares": 9058762,
       "categories": [
@@ -43496,8 +43496,8 @@ window.KOS_LIVE_DATA = {
       "sector": "기타",
       "price": 1865,
       "change": 5.67,
-      "volume": 314081,
-      "trading_value": 605490484,
+      "volume": 315436,
+      "trading_value": 608017559,
       "mcap": 0.02,
       "shares": 9705565,
       "categories": [
@@ -43513,8 +43513,8 @@ window.KOS_LIVE_DATA = {
       "sector": "기타",
       "price": 2045,
       "change": 2.25,
-      "volume": 28462,
-      "trading_value": 56451344,
+      "volume": 28668,
+      "trading_value": 56872614,
       "mcap": 0.02,
       "shares": 9157476,
       "categories": [
@@ -43530,8 +43530,8 @@ window.KOS_LIVE_DATA = {
       "sector": "기타",
       "price": 732,
       "change": -5.43,
-      "volume": 101305,
-      "trading_value": 72756972,
+      "volume": 101339,
+      "trading_value": 72782076,
       "mcap": 0.02,
       "shares": 25538346,
       "categories": [
@@ -43615,8 +43615,8 @@ window.KOS_LIVE_DATA = {
       "sector": "기타",
       "price": 1329,
       "change": 2.55,
-      "volume": 234122,
-      "trading_value": 315588201,
+      "volume": 234759,
+      "trading_value": 316436274,
       "mcap": 0.02,
       "shares": 13069808,
       "categories": [
@@ -43683,8 +43683,8 @@ window.KOS_LIVE_DATA = {
       "sector": "기타",
       "price": 3920,
       "change": -6.89,
-      "volume": 42312,
-      "trading_value": 168105310,
+      "volume": 42316,
+      "trading_value": 168120190,
       "mcap": 0.02,
       "shares": 4343920,
       "categories": [
@@ -43717,8 +43717,8 @@ window.KOS_LIVE_DATA = {
       "sector": "기타",
       "price": 2990,
       "change": -5.53,
-      "volume": 11189,
-      "trading_value": 34014915,
+      "volume": 11198,
+      "trading_value": 34041575,
       "mcap": 0.02,
       "shares": 5726444,
       "categories": [
@@ -43751,8 +43751,8 @@ window.KOS_LIVE_DATA = {
       "sector": "기타",
       "price": 1891,
       "change": 0.85,
-      "volume": 40391,
-      "trading_value": 76281012,
+      "volume": 40392,
+      "trading_value": 76282903,
       "mcap": 0.02,
       "shares": 9191411,
       "categories": [
@@ -43768,8 +43768,8 @@ window.KOS_LIVE_DATA = {
       "sector": "기타",
       "price": 2135,
       "change": -1.84,
-      "volume": 65101,
-      "trading_value": 137408281,
+      "volume": 65155,
+      "trading_value": 137525876,
       "mcap": 0.02,
       "shares": 8318493,
       "categories": [
@@ -43785,8 +43785,8 @@ window.KOS_LIVE_DATA = {
       "sector": "기타",
       "price": 2200,
       "change": 7.32,
-      "volume": 49844,
-      "trading_value": 106434410,
+      "volume": 49851,
+      "trading_value": 106449810,
       "mcap": 0.02,
       "shares": 7884381,
       "categories": [
@@ -43802,8 +43802,8 @@ window.KOS_LIVE_DATA = {
       "sector": "기타",
       "price": 305,
       "change": -3.17,
-      "volume": 240377,
-      "trading_value": 73896947,
+      "volume": 241495,
+      "trading_value": 74237937,
       "mcap": 0.02,
       "shares": 55861895,
       "categories": [
@@ -43921,8 +43921,8 @@ window.KOS_LIVE_DATA = {
       "sector": "기타",
       "price": 1513,
       "change": -3.14,
-      "volume": 29265,
-      "trading_value": 44101785,
+      "volume": 29267,
+      "trading_value": 44104811,
       "mcap": 0.02,
       "shares": 11090000,
       "categories": [
@@ -43955,8 +43955,8 @@ window.KOS_LIVE_DATA = {
       "sector": "기타",
       "price": 2315,
       "change": -1.49,
-      "volume": 24894,
-      "trading_value": 58945915,
+      "volume": 24896,
+      "trading_value": 58950715,
       "mcap": 0.02,
       "shares": 6928151,
       "categories": [
@@ -43972,8 +43972,8 @@ window.KOS_LIVE_DATA = {
       "sector": "기타",
       "price": 234,
       "change": 2.18,
-      "volume": 324409,
-      "trading_value": 74264319,
+      "volume": 324422,
+      "trading_value": 74267354,
       "mcap": 0.02,
       "shares": 71779526,
       "categories": [
@@ -43989,8 +43989,8 @@ window.KOS_LIVE_DATA = {
       "sector": "기타",
       "price": 3045,
       "change": 1.5,
-      "volume": 89986,
-      "trading_value": 269936354,
+      "volume": 90050,
+      "trading_value": 270131234,
       "mcap": 0.02,
       "shares": 5464536,
       "categories": [
@@ -44023,8 +44023,8 @@ window.KOS_LIVE_DATA = {
       "sector": "기타",
       "price": 676,
       "change": 12.11,
-      "volume": 3569743,
-      "trading_value": 2551827770,
+      "volume": 3571688,
+      "trading_value": 2553135308,
       "mcap": 0.02,
       "shares": 24023008,
       "categories": [
@@ -44040,8 +44040,8 @@ window.KOS_LIVE_DATA = {
       "sector": "기타",
       "price": 968,
       "change": -0.62,
-      "volume": 18160,
-      "trading_value": 17465049,
+      "volume": 18170,
+      "trading_value": 17474729,
       "mcap": 0.02,
       "shares": 16952574,
       "categories": [
@@ -44091,8 +44091,8 @@ window.KOS_LIVE_DATA = {
       "sector": "기타",
       "price": 1309,
       "change": -1.65,
-      "volume": 39976,
-      "trading_value": 52596632,
+      "volume": 39978,
+      "trading_value": 52599271,
       "mcap": 0.02,
       "shares": 11998328,
       "categories": [
@@ -44108,8 +44108,8 @@ window.KOS_LIVE_DATA = {
       "sector": "기타",
       "price": 7110,
       "change": -0.28,
-      "volume": 4823,
-      "trading_value": 34325245,
+      "volume": 4824,
+      "trading_value": 34332355,
       "mcap": 0.02,
       "shares": 2287941,
       "categories": [
@@ -44142,8 +44142,8 @@ window.KOS_LIVE_DATA = {
       "sector": "기타",
       "price": 1811,
       "change": -2.48,
-      "volume": 17834,
-      "trading_value": 33178644,
+      "volume": 17844,
+      "trading_value": 33196754,
       "mcap": 0.02,
       "shares": 8347999,
       "categories": [
@@ -44244,8 +44244,8 @@ window.KOS_LIVE_DATA = {
       "sector": "기타",
       "price": 1355,
       "change": -15.89,
-      "volume": 1039914,
-      "trading_value": 1366008336,
+      "volume": 1040226,
+      "trading_value": 1366431436,
       "mcap": 0.02,
       "shares": 11204255,
       "categories": [
@@ -44261,9 +44261,9 @@ window.KOS_LIVE_DATA = {
       "sector": "기타",
       "price": 2200,
       "change": 20.81,
-      "volume": 17966,
-      "trading_value": 34703058,
-      "mcap": 0.01,
+      "volume": 18432,
+      "trading_value": 35714538,
+      "mcap": 0.02,
       "shares": 8396593,
       "categories": [
         "기타"
@@ -44278,8 +44278,8 @@ window.KOS_LIVE_DATA = {
       "sector": "기타",
       "price": 712,
       "change": -20.62,
-      "volume": 270303,
-      "trading_value": 201246479,
+      "volume": 275337,
+      "trading_value": 204764075,
       "mcap": 0.01,
       "shares": 20256888,
       "categories": [
@@ -44295,8 +44295,8 @@ window.KOS_LIVE_DATA = {
       "sector": "기타",
       "price": 736,
       "change": -2.13,
-      "volume": 213350,
-      "trading_value": 161700406,
+      "volume": 213425,
+      "trading_value": 161755606,
       "mcap": 0.01,
       "shares": 19653767,
       "categories": [
@@ -44312,8 +44312,8 @@ window.KOS_LIVE_DATA = {
       "sector": "기타",
       "price": 2985,
       "change": -4.63,
-      "volume": 49082,
-      "trading_value": 148450149,
+      "volume": 49086,
+      "trading_value": 148462089,
       "mcap": 0.01,
       "shares": 5016703,
       "categories": [
@@ -44380,8 +44380,8 @@ window.KOS_LIVE_DATA = {
       "sector": "기타",
       "price": 811,
       "change": 1.12,
-      "volume": 89671,
-      "trading_value": 72814431,
+      "volume": 89731,
+      "trading_value": 72863091,
       "mcap": 0.01,
       "shares": 17950094,
       "categories": [
@@ -44414,8 +44414,8 @@ window.KOS_LIVE_DATA = {
       "sector": "기타",
       "price": 1749,
       "change": 6.0,
-      "volume": 46331,
-      "trading_value": 78633155,
+      "volume": 46815,
+      "trading_value": 79479671,
       "mcap": 0.01,
       "shares": 8536899,
       "categories": [
@@ -44431,8 +44431,8 @@ window.KOS_LIVE_DATA = {
       "sector": "기타",
       "price": 761,
       "change": 0.13,
-      "volume": 196235,
-      "trading_value": 149414840,
+      "volume": 196236,
+      "trading_value": 149415601,
       "mcap": 0.01,
       "shares": 19177757,
       "categories": [
@@ -44448,8 +44448,8 @@ window.KOS_LIVE_DATA = {
       "sector": "기타",
       "price": 1041,
       "change": 13.28,
-      "volume": 751595,
-      "trading_value": 766059706,
+      "volume": 754070,
+      "trading_value": 768606010,
       "mcap": 0.01,
       "shares": 13799100,
       "categories": [
@@ -44465,8 +44465,8 @@ window.KOS_LIVE_DATA = {
       "sector": "기타",
       "price": 435,
       "change": -0.23,
-      "volume": 83072,
-      "trading_value": 36091715,
+      "volume": 83105,
+      "trading_value": 36106070,
       "mcap": 0.01,
       "shares": 33000440,
       "categories": [
@@ -44499,8 +44499,8 @@ window.KOS_LIVE_DATA = {
       "sector": "기타",
       "price": 223,
       "change": 0.9,
-      "volume": 374062,
-      "trading_value": 83225997,
+      "volume": 374366,
+      "trading_value": 83293778,
       "mcap": 0.01,
       "shares": 62829459,
       "categories": [
@@ -44550,8 +44550,8 @@ window.KOS_LIVE_DATA = {
       "sector": "기타",
       "price": 1026,
       "change": -4.11,
-      "volume": 79933,
-      "trading_value": 83923738,
+      "volume": 79948,
+      "trading_value": 83939128,
       "mcap": 0.01,
       "shares": 13342356,
       "categories": [
@@ -44567,8 +44567,8 @@ window.KOS_LIVE_DATA = {
       "sector": "기타",
       "price": 1023,
       "change": 0.59,
-      "volume": 99855,
-      "trading_value": 101981380,
+      "volume": 99895,
+      "trading_value": 102022183,
       "mcap": 0.01,
       "shares": 13568381,
       "categories": [
@@ -44635,8 +44635,8 @@ window.KOS_LIVE_DATA = {
       "sector": "기타",
       "price": 398,
       "change": 3.65,
-      "volume": 309852,
-      "trading_value": 122391606,
+      "volume": 309857,
+      "trading_value": 122393610,
       "mcap": 0.01,
       "shares": 32316799,
       "categories": [
@@ -44652,8 +44652,8 @@ window.KOS_LIVE_DATA = {
       "sector": "기타",
       "price": 184,
       "change": -4.17,
-      "volume": 1311184,
-      "trading_value": 243682756,
+      "volume": 1311553,
+      "trading_value": 243752522,
       "mcap": 0.01,
       "shares": 71577299,
       "categories": [
@@ -44805,8 +44805,8 @@ window.KOS_LIVE_DATA = {
       "sector": "기타",
       "price": 2060,
       "change": -21.82,
-      "volume": 745189,
-      "trading_value": 1716995805,
+      "volume": 746991,
+      "trading_value": 1720691255,
       "mcap": 0.01,
       "shares": 5577410,
       "categories": [
@@ -44839,8 +44839,8 @@ window.KOS_LIVE_DATA = {
       "sector": "기타",
       "price": 2850,
       "change": 8.78,
-      "volume": 156125,
-      "trading_value": 475720767,
+      "volume": 156230,
+      "trading_value": 476020017,
       "mcap": 0.01,
       "shares": 4567833,
       "categories": [
@@ -44856,8 +44856,8 @@ window.KOS_LIVE_DATA = {
       "sector": "기타",
       "price": 656,
       "change": -4.23,
-      "volume": 105565,
-      "trading_value": 70890242,
+      "volume": 105573,
+      "trading_value": 70895555,
       "mcap": 0.01,
       "shares": 18074283,
       "categories": [
@@ -44975,8 +44975,8 @@ window.KOS_LIVE_DATA = {
       "sector": "기타",
       "price": 2190,
       "change": -8.56,
-      "volume": 29681,
-      "trading_value": 70221580,
+      "volume": 29905,
+      "trading_value": 70712060,
       "mcap": 0.01,
       "shares": 4767648,
       "categories": [
@@ -44992,8 +44992,8 @@ window.KOS_LIVE_DATA = {
       "sector": "기타",
       "price": 2500,
       "change": 12.36,
-      "volume": 1083057,
-      "trading_value": 2981951979,
+      "volume": 1084477,
+      "trading_value": 2985490429,
       "mcap": 0.01,
       "shares": 4296262,
       "categories": [
@@ -45077,8 +45077,8 @@ window.KOS_LIVE_DATA = {
       "sector": "기타",
       "price": 1754,
       "change": -7.68,
-      "volume": 57500,
-      "trading_value": 98241812,
+      "volume": 68511,
+      "trading_value": 117441106,
       "mcap": 0.01,
       "shares": 6000000,
       "categories": [
@@ -45094,8 +45094,8 @@ window.KOS_LIVE_DATA = {
       "sector": "기타",
       "price": 562,
       "change": -10.51,
-      "volume": 290911,
-      "trading_value": 167547330,
+      "volume": 291707,
+      "trading_value": 167994682,
       "mcap": 0.01,
       "shares": 17473048,
       "categories": [
@@ -45145,8 +45145,8 @@ window.KOS_LIVE_DATA = {
       "sector": "기타",
       "price": 1888,
       "change": -3.18,
-      "volume": 118899,
-      "trading_value": 229726254,
+      "volume": 119179,
+      "trading_value": 230254894,
       "mcap": 0.01,
       "shares": 5056999,
       "categories": [
@@ -45332,8 +45332,8 @@ window.KOS_LIVE_DATA = {
       "sector": "기타",
       "price": 1600,
       "change": -8.52,
-      "volume": 40330,
-      "trading_value": 65687488,
+      "volume": 40575,
+      "trading_value": 66079420,
       "mcap": 0.01,
       "shares": 4897409,
       "categories": [
@@ -45587,8 +45587,8 @@ window.KOS_LIVE_DATA = {
       "sector": "기타",
       "price": 815,
       "change": 17.27,
-      "volume": 1273771,
-      "trading_value": 969611275,
+      "volume": 1415231,
+      "trading_value": 1085212943,
       "mcap": 0.01,
       "shares": 7826815,
       "categories": [
