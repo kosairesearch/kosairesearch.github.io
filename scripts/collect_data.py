@@ -195,6 +195,7 @@ KSIC3 = {
     "311": "조선", "312": "운송·물류", "313": "항공·방산",
     "351": "에너지·전력", "352": "에너지·전력",
     "211": "바이오·제약", "212": "바이오·제약",
+    "701": "바이오·제약",   # 자연과학 연구개발업 — 신약개발 바이오텍 다수가 여기로 등록됨
     "581": "미디어·엔터", "582": "IT·소프트웨어", "591": "미디어·엔터", "601": "미디어·엔터",
     "611": "통신", "612": "통신", "613": "통신",
     "620": "IT·소프트웨어", "631": "IT·소프트웨어",
@@ -277,20 +278,35 @@ def _digits(code):
     return "".join(ch for ch in str(code) if ch.isdigit())
 
 
-def primary_category(induty_code, ticker="", fallback="기타"):
-    """대표 카테고리: override 우선 → KSIC 자동 → fallback(SECTOR_MAP)."""
+# 종목명 키워드로 본업이 명확한 경우(주로 바이오) — KSIC가 약하게 잡을 때 보정.
+NAME_SECTOR_KW = [
+    (("바이오", "제약", "파마", "테라퓨틱", "신약", "백신", "헬스케어", "제넨", "지놈", "셀텍", "메디팁"), "바이오·제약"),
+]
+
+
+def primary_category(induty_code, ticker="", fallback="기타", name=""):
+    """대표 카테고리: override 우선 → KSIC 자동 → 종목명 키워드 보정 → fallback."""
     if ticker in PRIMARY_OVERRIDE:
         return PRIMARY_OVERRIDE[ticker]
     d = _digits(induty_code)
+    res = None
     if d == "64992":   # 지주회사 → 수동분류 우선, 없으면 지주
-        return fallback if fallback and fallback != "기타" else "지주"
-    if len(d) >= 4 and d[:4] in KSIC4:
-        return KSIC4[d[:4]]
-    if len(d) >= 3 and d[:3] in KSIC3:
-        return KSIC3[d[:3]]
-    if len(d) >= 2 and d[:2] in KSIC2:
-        return KSIC2[d[:2]]
-    return fallback
+        res = fallback if fallback and fallback != "기타" else "지주"
+    elif len(d) >= 4 and d[:4] in KSIC4:
+        res = KSIC4[d[:4]]
+    elif len(d) >= 3 and d[:3] in KSIC3:
+        res = KSIC3[d[:3]]
+    elif len(d) >= 2 and d[:2] in KSIC2:
+        res = KSIC2[d[:2]]
+    else:
+        res = fallback
+    # KSIC가 약하게(기타/부동산·기타서비스/지주) 잡았으면 종목명 키워드로 보정
+    if res in ("기타", "부동산·기타서비스", "지주"):
+        nm = str(name or "")
+        for kws, cat in NAME_SECTOR_KW:
+            if any(k in nm for k in kws):
+                return cat
+    return res
 
 
 def theme_tags(ticker, induty="", name=""):
@@ -1058,7 +1074,7 @@ def enrich_with_dart(results):
     # ── 전 종목 대표 카테고리 + 다중 태그 부여 ──
     for tk, st in results.items():
         prev = st.get("sector", "기타")          # 수동 SECTOR_MAP 값(폴백)
-        primary = primary_category(st.get("induty_code", ""), tk, prev)
+        primary = primary_category(st.get("induty_code", ""), tk, prev, st.get("name", ""))
         st["sector"] = primary                   # 프론트 호환: 대표 카테고리
         st["categories"] = categories_for(tk, primary, st.get("induty_code", ""), st.get("name", ""))
 
