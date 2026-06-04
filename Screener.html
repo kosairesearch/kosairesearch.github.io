@@ -944,6 +944,10 @@ tbody.addEventListener('click',e=>{
     wb.classList.toggle('on',on); return; }
   const tr=e.target.closest('tr');if(tr)window.location.href='Ticker Detail v2.html?ticker='+(tr.dataset.ticker||'');
 });
+// 뒤로가기(bfcache)·탭 복귀 시 별 상태를 localStorage로 즉시 재동기화
+function syncWl(){ document.querySelectorAll('.wl-btn').forEach(b=>b.classList.toggle('on',isW(b.dataset.wl))); }
+window.addEventListener('pageshow',syncWl);
+document.addEventListener('visibilitychange',()=>{ if(!document.hidden) syncWl(); });
 window.addEventListener('resize',()=>{if(popover.classList.contains('open')){const a=curField?document.querySelector(`.fchip[data-field="${curField}"]`):document.getElementById('addFilterBtn');place(a||document.getElementById('addFilterBtn'));}});
 
 /* mobile menu */

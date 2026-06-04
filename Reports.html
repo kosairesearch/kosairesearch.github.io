@@ -689,6 +689,10 @@ rowsEl.addEventListener('click',function(e){
   try{ on?localStorage.setItem('kos-watch-'+tk,'1'):localStorage.removeItem('kos-watch-'+tk); }catch(err){}
   b.classList.toggle('on',on);
 });
+// 뒤로가기(bfcache)·탭 복귀 시 별 상태를 localStorage로 즉시 재동기화
+function syncWl(){ document.querySelectorAll('.wl-btn').forEach(b=>b.classList.toggle('on',isW(b.dataset.wl))); }
+window.addEventListener('pageshow',syncWl);
+document.addEventListener('visibilitychange',()=>{ if(!document.hidden) syncWl(); });
 document.getElementById('pagerCtl').addEventListener('click',e=>{
   const b=e.target.closest('button[data-pg]');if(!b)return;
   const pg=b.dataset.pg;
