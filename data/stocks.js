@@ -1,6 +1,6 @@
 // KOS ai — 자동 생성 데이터 파일. 직접 수정하지 마세요.
 window.KOS_LIVE_DATA = {
-  "lastUpdated": "2026-06-04 22:31",
+  "lastUpdated": "2026-06-04 22:42",
   "dataDate": "20260604",
   "stocks": [
     {
@@ -73,8 +73,7 @@ window.KOS_LIVE_DATA = {
       "shares": 204757766,
       "induty_code": "30121",
       "categories": [
-        "자동차",
-        "자율주행·전기차"
+        "자동차"
       ],
       "rank": 4
     },
@@ -182,8 +181,7 @@ window.KOS_LIVE_DATA = {
       "shares": 90732583,
       "induty_code": "303",
       "categories": [
-        "자동차",
-        "자율주행·전기차"
+        "자동차"
       ],
       "rank": 10
     },
@@ -201,8 +199,7 @@ window.KOS_LIVE_DATA = {
       "shares": 390412998,
       "induty_code": "30121",
       "categories": [
-        "자동차",
-        "자율주행·전기차"
+        "자동차"
       ],
       "rank": 11
     },
@@ -220,9 +217,7 @@ window.KOS_LIVE_DATA = {
       "shares": 640561146,
       "induty_code": "29119",
       "categories": [
-        "에너지·전력",
-        "원전·전력",
-        "수소·신재생"
+        "에너지·전력"
       ],
       "rank": 12
     },
@@ -240,8 +235,7 @@ window.KOS_LIVE_DATA = {
       "shares": 46290951,
       "induty_code": "211",
       "categories": [
-        "바이오·제약",
-        "바이오·신약"
+        "바이오·제약"
       ],
       "rank": 13
     },
@@ -277,8 +271,7 @@ window.KOS_LIVE_DATA = {
       "shares": 51563401,
       "induty_code": "31321",
       "categories": [
-        "항공·방산",
-        "우주·방산"
+        "항공·방산"
       ],
       "rank": 15
     },
@@ -387,8 +380,7 @@ window.KOS_LIVE_DATA = {
       "shares": 221633364,
       "induty_code": "21100",
       "categories": [
-        "바이오·제약",
-        "바이오·신약"
+        "바이오·제약"
       ],
       "rank": 21
     },
@@ -406,8 +398,7 @@ window.KOS_LIVE_DATA = {
       "shares": 36047135,
       "induty_code": "281",
       "categories": [
-        "전기장비",
-        "원전·전력"
+        "전기장비"
       ],
       "rank": 22
     },
@@ -678,8 +669,7 @@ window.KOS_LIVE_DATA = {
       "shares": 641964077,
       "induty_code": "35120",
       "categories": [
-        "에너지·전력",
-        "원전·전력"
+        "에너지·전력"
       ],
       "rank": 37
     },
@@ -769,8 +759,7 @@ window.KOS_LIVE_DATA = {
       "shares": 109142293,
       "induty_code": "31910",
       "categories": [
-        "항공·방산",
-        "우주·방산"
+        "항공·방산"
       ],
       "rank": 42
     },
@@ -879,8 +868,7 @@ window.KOS_LIVE_DATA = {
       "shares": 53586343,
       "induty_code": "70113",
       "categories": [
-        "바이오·제약",
-        "바이오·신약"
+        "바이오·제약"
       ],
       "rank": 48
     },
@@ -1025,8 +1013,7 @@ window.KOS_LIVE_DATA = {
       "shares": 22000000,
       "induty_code": "25200",
       "categories": [
-        "항공·방산",
-        "우주·방산"
+        "항공·방산"
       ],
       "rank": 56
     },
@@ -1117,8 +1104,8 @@ window.KOS_LIVE_DATA = {
       "induty_code": "29280",
       "categories": [
         "기계·장비",
-        "로봇",
-        "인공지능(AI)"
+        "인공지능(AI)",
+        "로봇"
       ],
       "rank": 61
     },
@@ -1136,8 +1123,7 @@ window.KOS_LIVE_DATA = {
       "shares": 97475107,
       "induty_code": "31311",
       "categories": [
-        "항공·방산",
-        "우주·방산"
+        "항공·방산"
       ],
       "rank": 62
     },
@@ -1353,8 +1339,8 @@ window.KOS_LIVE_DATA = {
       "induty_code": "2928",
       "categories": [
         "기계·장비",
-        "로봇",
-        "인공지능(AI)"
+        "인공지능(AI)",
+        "로봇"
       ],
       "rank": 74
     },
@@ -1498,8 +1484,7 @@ window.KOS_LIVE_DATA = {
       "shares": 43102249,
       "induty_code": "592",
       "categories": [
-        "미디어·엔터",
-        "K-콘텐츠·엔터"
+        "미디어·엔터"
       ],
       "rank": 82
     },
@@ -4308,8 +4293,7 @@ window.KOS_LIVE_DATA = {
       "shares": 35532492,
       "induty_code": "59201",
       "categories": [
-        "미디어·엔터",
-        "K-콘텐츠·엔터"
+        "미디어·엔터"
       ],
       "rank": 238
     },
