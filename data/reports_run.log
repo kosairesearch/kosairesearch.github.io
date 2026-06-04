@@ -1,19 +1,22 @@
-=== 배치(auto) 시작 Thu Jun  4 18:25:27 UTC 2026 ===
-## 🤖 Batch 제출 — 대상 1개 / 상위 100개 (최근 999개 건너뜀) · 모델 claude-sonnet-4-6
+=== 공시 트리거 생성 Thu Jun  4 18:41:32 UTC 2026 · 대상 000250,267270 ===
+## 🤖 AI 리포트 생성 — 지정 2개 종목
+- 모델: `claude-sonnet-4-6`
+- 기존 리포트 1000개 로드 · 최근(6일내) 1000개 유지
+
+### [1/2] 삼천당제약 (000250)
 {'status': '013', 'message': '조회된 데이타가 없습니다.'}
 
 {'status': '013', 'message': '조회된 데이타가 없습니다.'}
 
-  · 준비 417010 나노팀 (DART O)
-- ✅ 배치 제출 완료: msgbatch_01Fr67QH34QuEGUxHbtLKsxx (1건) → data/batch_state.json
-  · 상태 in_progress · 처리 1/성공 0/오류 0
-  · 상태 in_progress · 처리 1/성공 0/오류 0
-  · 상태 in_progress · 처리 1/성공 0/오류 0
-  · 상태 in_progress · 처리 1/성공 0/오류 0
-  · 상태 in_progress · 처리 1/성공 0/오류 0
-  · 상태 in_progress · 처리 1/성공 0/오류 0
-  · 상태 in_progress · 처리 1/성공 0/오류 0
-  · 상태 in_progress · 처리 1/성공 0/오류 0
-  · 상태 ended · 처리 0/성공 1/오류 0
+- DART 재무: 확보
+- ✅ 완료 (529s · 검색 4회)
 
-✅ 회수 완료 · 성공 1/실패 0 · 총 보유 1000개 → data/reports.js
+### [2/2] HD건설기계 (267270)
+{'status': '013', 'message': '조회된 데이타가 없습니다.'}
+
+{'status': '013', 'message': '조회된 데이타가 없습니다.'}
+
+- DART 재무: 확보
+- ✅ 완료 (531s · 검색 4회)
+
+✅ 현재 리포트 1000개 보유 · 이번 실행 웹검색 8회 · → data/reports.js
