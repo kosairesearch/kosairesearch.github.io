@@ -1,6 +1,6 @@
 // KOS ai — 자동 생성 데이터 파일. 직접 수정하지 마세요.
 window.KOS_LIVE_DATA = {
-  "lastUpdated": "2026-06-04 19:58",
+  "lastUpdated": "2026-06-04 20:46",
   "dataDate": "20260604",
   "stocks": [
     {
@@ -1252,7 +1252,7 @@ window.KOS_LIVE_DATA = {
     {
       "ticker": "0126Z0",
       "name": "삼성에피스홀딩스",
-      "name_en": "",
+      "name_en": "Samsung Epis Holdings",
       "market": "코스피",
       "sector": "기타",
       "price": 456500,
@@ -4477,7 +4477,7 @@ window.KOS_LIVE_DATA = {
     {
       "ticker": "0009K0",
       "name": "에임드바이오",
-      "name_en": "",
+      "name_en": "AimedBio",
       "market": "코스닥",
       "sector": "기타",
       "price": 27700,
@@ -47993,6 +47993,24 @@ window.KOS_LIVE_DATA = {
         "철강·금속"
       ],
       "rank": 2666
+    },
+    {
+      "ticker": "043090",
+      "name": "더테크놀로지",
+      "name_en": "The Technology Co., Ltd.",
+      "market": "코스닥",
+      "sector": "유통·소비재",
+      "price": 1140,
+      "change": 0.0,
+      "volume": 0,
+      "trading_value": 0,
+      "mcap": 0.01,
+      "shares": 12418275,
+      "induty_code": "467",
+      "categories": [
+        "유통·소비재"
+      ],
+      "rank": 2667
     }
   ]
 };
