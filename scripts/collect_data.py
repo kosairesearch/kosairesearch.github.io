@@ -1072,9 +1072,19 @@ def enrich_with_dart(results):
         pass
 
     # ── 전 종목 대표 카테고리 + 다중 태그 부여 ──
+    # AI 분류 캐시(data/sector_map.json)가 있으면 최우선 사용, 없으면 KSIC 규칙.
+    ai_sectors = {}
+    try:
+        p = Path("data/sector_map.json")
+        if p.exists():
+            ai_sectors = json.loads(p.read_text(encoding="utf-8"))
+            print(f"  [분류] AI 업종 캐시 {len(ai_sectors)}개 적용")
+    except Exception as e:
+        print(f"  [분류] AI 캐시 로드 실패: {e}")
     for tk, st in results.items():
         prev = st.get("sector", "기타")          # 수동 SECTOR_MAP 값(폴백)
-        primary = primary_category(st.get("induty_code", ""), tk, prev, st.get("name", ""))
+        ai = ai_sectors.get(tk)
+        primary = ai if ai else primary_category(st.get("induty_code", ""), tk, prev, st.get("name", ""))
         st["sector"] = primary                   # 프론트 호환: 대표 카테고리
         st["categories"] = categories_for(tk, primary, st.get("induty_code", ""), st.get("name", ""))
 

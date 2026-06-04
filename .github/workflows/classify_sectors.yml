@@ -1,0 +1,42 @@
+name: 🏷️ AI 업종 분류 (sector_map)
+
+on:
+  workflow_dispatch:
+    inputs:
+      force:
+        description: '전 종목 재분류(캐시 무시)'
+        type: choice
+        options: ['no', 'yes']
+        default: 'no'
+
+jobs:
+  classify:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+          cache: 'pip'
+      - name: 패키지 설치
+        run: pip install -r requirements.txt
+      - name: AI 업종 분류
+        env:
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+          CLASSIFY_FORCE: ${{ inputs.force == 'yes' && '1' || '' }}
+        run: |
+          mkdir -p data
+          python scripts/classify_sectors.py 2>&1 | tee -a data/classify.log
+      - name: 커밋 & 푸시
+        if: always()
+        run: |
+          git config --global user.email "bot@kosairesearch.github.io"
+          git config --global user.name "KOS ai Bot"
+          git add -A data/
+          git commit -m "🏷️ AI 업종 분류 업데이트 $(TZ='Asia/Seoul' date +'%Y-%m-%d %H:%M KST')" || echo "변경 없음"
+          for i in 1 2 3 4 5; do
+            git pull --rebase origin main && git push origin main && break
+            echo "push 재시도 $i..."; sleep $((i*3))
+          done
