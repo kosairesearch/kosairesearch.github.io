@@ -669,8 +669,9 @@ function render(){
   // pager
   const EN=window.KOSi18n&&KOSi18n.lang==='en';
   document.getElementById('pagerInfo').textContent=EN?`${start+1}–${Math.min(start+size,total)} of ${total}`:`${start+1}–${Math.min(start+size,total)} / 총 ${total}개`;
-  // 10개 단위 블록 페이저: 11페이지로 넘어가면 11~20 표시
-  const BLK=10, blk=Math.floor((state.page-1)/BLK), bs=blk*BLK+1, be=Math.min(bs+BLK-1,pages);
+  // 블록 페이저: 데스크톱 10개, 모바일 5개씩
+  const BLK=(window.matchMedia&&matchMedia('(max-width:640px)').matches)?5:10;
+  const blk=Math.floor((state.page-1)/BLK), bs=blk*BLK+1, be=Math.min(bs+BLK-1,pages);
   let b=`<button ${state.page<=1?'disabled':''} data-pg="prev">‹</button>`;
   for(let i=bs;i<=be;i++) b+=`<button class="${i===state.page?'active':''}" data-pg="${i}">${i}</button>`;
   b+=`<button ${state.page>=pages?'disabled':''} data-pg="next">›</button>`;

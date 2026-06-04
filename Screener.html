@@ -31,7 +31,7 @@
   --shadow-3:0 1px 0 rgba(0,0,0,.3),0 24px 48px rgba(0,0,0,.55);
 }
 *{box-sizing:border-box}
-html{scroll-behavior:smooth}
+html{scroll-behavior:smooth;overflow-x:clip}
 body{margin:0;font-family:var(--font-sans);color:var(--fg-1);background:#eef1ff;
   -webkit-font-smoothing:antialiased;min-height:100vh;position:relative;font-variant-numeric:tabular-nums}
 body::after{content:"";position:fixed;inset:0;z-index:-2;
@@ -188,7 +188,7 @@ tbody tr:first-child td{border-top:1px solid var(--border-2)}
 /* pager */
 .pager{display:flex;justify-content:space-between;align-items:center;gap:12px;flex-wrap:wrap;margin-top:18px}
 .pager .info{font:500 13px var(--font-sans);color:var(--fg-3)}
-.pager .ctl{display:flex;gap:4px}
+.pager .ctl{display:flex;gap:4px;flex-wrap:wrap;justify-content:flex-end}
 .pager .ctl button{min-width:34px;height:34px;padding:0 10px;border:0;border-radius:8px;cursor:pointer;font:600 13px var(--font-sans);color:var(--fg-2);background:rgba(0,0,0,.05);transition:.12s}
 .pager .ctl button:hover:not(:disabled){color:var(--fg-1)}
 .pager .ctl button.active{background:#000;color:#fff}
@@ -772,8 +772,9 @@ function render(){
   document.getElementById('resultOf').textContent=EN()?`stocks · of ${STOCKS.length} total`:`개 종목 · 전체 ${STOCKS.length}개 중`;
   document.getElementById('pagerInfo').textContent=total?(EN()?`${start+1}–${Math.min(start+size,total)} of ${total}`:`${start+1}–${Math.min(start+size,total)} / ${total}개 표시`):'';
   const ctl=document.getElementById('pagerCtl');
-  // 10개 단위 블록 페이저: 11페이지로 넘어가면 11~20 표시
-  const BLK=10, blk=Math.floor((state.page-1)/BLK), bs=blk*BLK+1, be=Math.min(bs+BLK-1,pages);
+  // 블록 페이저: 데스크톱 10개, 모바일 5개씩
+  const BLK=(window.matchMedia&&matchMedia('(max-width:640px)').matches)?5:10;
+  const blk=Math.floor((state.page-1)/BLK), bs=blk*BLK+1, be=Math.min(bs+BLK-1,pages);
   let b=`<button ${state.page<=1?'disabled':''} data-pg="prev">‹</button>`;
   for(let i=bs;i<=be;i++)b+=`<button class="${i===state.page?'active':''}" data-pg="${i}">${i}</button>`;
   b+=`<button ${state.page>=pages?'disabled':''} data-pg="next">›</button>`;
