@@ -186,7 +186,7 @@ SECTOR_MAP = {
 # ════════════════════════════════════════════════════════════════════
 
 # ── KSIC 업종코드 → 대표 카테고리 (전 시장 자동분류) ──
-KSIC4 = {"2042": "화장품"}   # 화장품 세분(20 화학에서 분리)
+KSIC4 = {"2042": "화장품", "5821": "게임"}   # 화장품 세분(20 화학), 게임SW 세분(582에서 분리)
 KSIC3 = {
     "261": "반도체", "262": "전자·부품", "263": "전자·부품", "264": "전자·부품",
     "265": "전자·부품", "266": "전자·부품",
@@ -195,7 +195,7 @@ KSIC3 = {
     "311": "조선", "312": "운송·물류", "313": "항공·방산",
     "351": "에너지·전력", "352": "에너지·전력",
     "211": "바이오·제약", "212": "바이오·제약",
-    "581": "미디어·엔터", "582": "게임", "591": "미디어·엔터", "601": "미디어·엔터",
+    "581": "미디어·엔터", "582": "IT·소프트웨어", "591": "미디어·엔터", "601": "미디어·엔터",
     "611": "통신", "612": "통신", "613": "통신",
     "620": "IT·소프트웨어", "631": "IT·소프트웨어",
 }
@@ -266,6 +266,23 @@ THEME_TAGS = {
     "352820": ["K-콘텐츠·엔터"], "035900": ["K-콘텐츠·엔터"],
 }
 
+# 로봇주: KSIC 2928x(산업용 로봇 제조)로 대부분 자동 분류되지만, KSIC가 다른
+# 업종으로 잡는 로봇 기업은 여기에 명시(로보티즈 29299, 코스모로보틱스 27199 등).
+ROBOT_TICKERS = {
+    "454910",  # 두산로보틱스
+    "277810",  # 레인보우로보틱스
+    "108490",  # 로보티즈
+    "090710",  # 휴림로봇
+    "090360",  # 로보스타
+    "389500",  # 에스비비테크 (로봇 감속기)
+    "439960",  # 코스모로보틱스
+    "056080",  # 유진로봇
+    "117730",  # 티로보틱스
+    "348340",  # 뉴로메카 (협동로봇)
+    "455900",  # 엔젤로보틱스
+    "140670",  # 알에스오토메이션
+}
+
 
 def _digits(code):
     return "".join(ch for ch in str(code) if ch.isdigit())
@@ -287,10 +304,31 @@ def primary_category(induty_code, ticker="", fallback="기타"):
     return fallback
 
 
-def categories_for(ticker, primary):
+def theme_tags(ticker, induty="", name=""):
+    """핫테마 태그를 규칙 기반으로 판정(큐레이션 + KSIC + 종목명 키워드).
+    종목을 일일이 몰라도 자동 분류되도록 함."""
+    d = _digits(induty)
+    nm = str(name or "")
+    tags = []
+    def add(t):
+        if t and t not in tags:
+            tags.append(t)
+    # 1) 수동 큐레이션(THEME_TAGS)
+    for t in THEME_TAGS.get(ticker, []):
+        add(t)
+    # 2) 로봇: KSIC 2928x(산업용 로봇 제조) + 명시 목록 + 종목명 키워드
+    if ticker in ROBOT_TICKERS or d.startswith("2928") or "로봇" in nm or "로보틱" in nm or "로보티" in nm:
+        add("로봇")
+    # 3) 인공지능(AI): 명시 + 종목명 키워드
+    if "인공지능" in nm or "AI" in nm:
+        add("인공지능(AI)")
+    return tags
+
+
+def categories_for(ticker, primary, induty="", name=""):
     """대표 + 핫테마 태그를 합친 카테고리 목록(중복 제거, 대표가 맨 앞)."""
     cats = [primary]
-    for t in THEME_TAGS.get(ticker, []):
+    for t in theme_tags(ticker, induty, name):
         if t and t not in cats:
             cats.append(t)
     return cats
@@ -1033,7 +1071,7 @@ def enrich_with_dart(results):
         prev = st.get("sector", "기타")          # 수동 SECTOR_MAP 값(폴백)
         primary = primary_category(st.get("induty_code", ""), tk, prev)
         st["sector"] = primary                   # 프론트 호환: 대표 카테고리
-        st["categories"] = categories_for(tk, primary)
+        st["categories"] = categories_for(tk, primary, st.get("induty_code", ""), st.get("name", ""))
 
     print("  [DART] 영문명·시총·카테고리 보강 완료")
     return results
