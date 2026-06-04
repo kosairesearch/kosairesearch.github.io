@@ -665,6 +665,10 @@ rowsEl.addEventListener('click',e=>{
   const rm=e.target.closest('[data-remove]');
   if(rm){e.preventDefault();try{localStorage.removeItem('kos-watch-'+rm.dataset.remove);}catch(e){}LIST=getWatched();render();return;}
 });
+// 뒤로가기(bfcache)·탭 복귀 시 localStorage 기준으로 목록 재동기화
+function refreshWl(){ LIST=getWatched(); render(); }
+window.addEventListener('pageshow',refreshWl);
+document.addEventListener('visibilitychange',()=>{ if(!document.hidden) refreshWl(); });
 
 /* mobile menu */
 const menuBtn=document.getElementById('menuBtn'),mobileMenu=document.getElementById('mobileMenu');
