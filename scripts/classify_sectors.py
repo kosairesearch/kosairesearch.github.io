@@ -80,7 +80,13 @@ def build_prompt(chunk):
         "- 여행/카지노/면세/레저는 '호텔·레저'. 정수기/렌탈/생활가전은 '유통·소비재'. 전력/원전/신재생은 '에너지·전력'.",
         "- 애매하면 가장 비중 큰 사업으로. 정말 모르겠을 때만 '기타'(남용 금지).",
         "",
-        '출력은 JSON만: {"종목코드":"카테고리", ...}',
+        "추가로, 각 종목이 '핵심 AI 기업'인지(ai) 판단:",
+        "- ai=true: AI 소프트웨어·플랫폼·솔루션·언어/영상 AI·AI반도체 설계 등 'AI 그 자체'가 주력인 회사",
+        "  (예: 플리토, 코난테크놀로지, 솔트룩스, 마음에이아이, 셀바스AI, 루닛, 뷰노, 딥노이드 등).",
+        "- ai=false: AI를 단순히 활용/수혜할 뿐인 회사(반도체 대기업·로봇·인터넷·제조업 등은 false).",
+        "  예: 삼성전자, 두산로보틱스, 레인보우로보틱스, 네이버는 false.",
+        "",
+        '출력은 JSON만: {"종목코드": {"s":"카테고리", "ai": true/false}, ...}',
         "",
         "분류할 종목:",
     ]
@@ -143,9 +149,15 @@ def main():
         if not isinstance(res, dict):
             res = {}
         for s in chunk:
-            c = res.get(s["ticker"]) or res.get(str(s["ticker"]))
-            if c in VALID:
-                cache[s["ticker"]] = c
+            e = res.get(s["ticker"]) or res.get(str(s["ticker"]))
+            sec, ai = None, False
+            if isinstance(e, dict):
+                sec = e.get("s") or e.get("sector") or e.get("category")
+                ai = bool(e.get("ai"))
+            elif isinstance(e, str):
+                sec = e
+            if sec in VALID:
+                cache[s["ticker"]] = {"s": sec, "ai": ai}
                 done += 1
         save_cache(cache)
         log(f"  · {min(i+BATCH, len(todo))}/{len(todo)} 처리 (누적 분류 {done})")

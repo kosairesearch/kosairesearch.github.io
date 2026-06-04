@@ -245,16 +245,9 @@ PRIMARY_OVERRIDE = {
 }
 
 # ── 핫테마 태그: 대표 외에 추가로 다는 카테고리(종목당 여러 개) ──
-# 테마 태그는 'KSIC 업종과 중복되지 않는 교차 테마'만 둔다.
-# (바이오·신약/자율주행/원전·전력/우주·방산/K콘텐츠 등은 KSIC 업종 — 바이오·제약,
-#  자동차, 에너지·전력, 항공·방산, 미디어·엔터 — 으로 이미 잘 분류되므로 중복 테마 제거.)
-# 인공지능(AI): 종목명에 'AI'가 없는 대표 종목만 수동 보강(나머지는 이름으로 자동 판정).
-THEME_TAGS = {
-    "005930": ["인공지능(AI)"], "000660": ["인공지능(AI)"],
-    "035420": ["인공지능(AI)"], "035720": ["인공지능(AI)"],
-    "018260": ["인공지능(AI)"], "042700": ["인공지능(AI)"],
-    "454910": ["인공지능(AI)"], "277810": ["인공지능(AI)"],
-}
+# 테마 태그: 로봇은 규칙(KSIC/이름/목록)으로, AI는 sector_map.json의 ai 플래그(LLM 판정)로
+# collect 단계에서 부여한다. (과거 하드코딩 AI 목록은 부정확해서 제거)
+THEME_TAGS = {}
 
 # 로봇주: KSIC 2928x(산업용 로봇 제조)로 대부분 자동 분류되지만, KSIC가 다른
 # 업종으로 잡는 로봇 기업은 여기에 명시(로보티즈 29299, 코스모로보틱스 27199 등).
@@ -324,9 +317,7 @@ def theme_tags(ticker, induty="", name=""):
     # 2) 로봇: KSIC 2928x(산업용 로봇 제조) + 명시 목록 + 종목명 키워드
     if ticker in ROBOT_TICKERS or d.startswith("2928") or "로봇" in nm or "로보틱" in nm or "로보티" in nm:
         add("로봇")
-    # 3) 인공지능(AI): 명시 + 종목명 키워드
-    if "인공지능" in nm or "AI" in nm:
-        add("인공지능(AI)")
+    # (인공지능(AI)은 collect 단계에서 sector_map.json의 ai 플래그로 부여)
     return tags
 
 
@@ -1083,10 +1074,19 @@ def enrich_with_dart(results):
         print(f"  [분류] AI 캐시 로드 실패: {e}")
     for tk, st in results.items():
         prev = st.get("sector", "기타")          # 수동 SECTOR_MAP 값(폴백)
-        ai = ai_sectors.get(tk)
-        primary = ai if ai else primary_category(st.get("induty_code", ""), tk, prev, st.get("name", ""))
+        # AI 분류 캐시 항목: {"s": 업종, "ai": bool} (구버전은 문자열)
+        e = ai_sectors.get(tk)
+        ai_sec, is_ai = None, False
+        if isinstance(e, dict):
+            ai_sec = e.get("s"); is_ai = bool(e.get("ai"))
+        elif isinstance(e, str):
+            ai_sec = e
+        primary = ai_sec if ai_sec else primary_category(st.get("induty_code", ""), tk, prev, st.get("name", ""))
         st["sector"] = primary                   # 프론트 호환: 대표 카테고리
-        st["categories"] = categories_for(tk, primary, st.get("induty_code", ""), st.get("name", ""))
+        cats = categories_for(tk, primary, st.get("induty_code", ""), st.get("name", ""))
+        if is_ai and "인공지능(AI)" not in cats:
+            cats.append("인공지능(AI)")
+        st["categories"] = cats
 
     print("  [DART] 영문명·시총·카테고리 보강 완료")
     return results
