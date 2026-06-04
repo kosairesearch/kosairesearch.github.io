@@ -965,10 +965,10 @@ def enrich_with_dart(results):
         return results
 
     debug_info = {}
-    ranked = sorted(results.values(), key=lambda x: x["trading_value"], reverse=True)
-    # 시총은 KRX 캐시/벌크가 이미 채우므로 DART 보강(영문명·업종·주식수)은 상위 400개만.
-    # (폴백 SECTOR_MAP 경로는 ~119개라 [:400]이 곧 전부 → DART로 시총까지 채움)
-    targets = ranked[:400]
+    # 시총순 상위 550개 DART 보강(영문명·업종). 리포트 대상(시총 상위 500위권)을
+    # 모두 커버하도록 거래대금순이 아닌 시총순으로 선정(저유동 대형주 누락 방지).
+    ranked = sorted(results.values(), key=lambda x: (x.get("mcap", 0) or 0), reverse=True)
+    targets = ranked[:550]
     print(f"  [DART] {len(targets)}개 종목 영문명·주식수(시총) 수집 중...")
 
     for i, stock in enumerate(targets):

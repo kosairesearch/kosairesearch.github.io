@@ -778,7 +778,7 @@ KOS.stockCard = (d) => {
       <span class="kos-ticker">${d.ticker}</span>
       <span class="kos-sector">${KOS.T(d.sector)}</span>
     </div>
-    <h3 class="kos-card__name">${KOS.T(d.name)}</h3>
+    <h3 class="kos-card__name">${_en && d.name_en ? d.name_en : KOS.T(d.name)}</h3>
     ${_title ? `<p class="kos-rep-title">${_title}</p>` : ''}
     <div class="kos-price-row">
       <span class="kos-price">${KOS.won(d.price)}</span>
@@ -807,7 +807,7 @@ KOS.moverCard = (d, rank) => {
       <span class="kos-ticker">${d.ticker}</span>
       <span class="kos-sector">${KOS.T(d.sector)}</span>
     </div>
-    <h3 class="kos-card__name" style="font-size:16px">${KOS.T(d.name)}</h3>
+    <h3 class="kos-card__name" style="font-size:16px">${(window.KOSi18n&&KOSi18n.lang==='en'&&d.name_en)?d.name_en:KOS.T(d.name)}</h3>
     ${spark(d.change, col)}
     <div class="kos-price-row">
       <span class="kos-price" style="font-size:18px">${KOS.won(d.price)}</span>
