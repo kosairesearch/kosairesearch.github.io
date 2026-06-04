@@ -129,9 +129,9 @@ body::before{content:"";position:fixed;inset:0;z-index:-1;pointer-events:none;
 
 /* list */
 .rl{padding:6px 8px;overflow:hidden}
-.rl-head,.rl-row{display:grid;grid-template-columns:34px 1.7fr 1.15fr 2.4fr 92px 16px;gap:22px;align-items:center;padding:0 16px}
+.rl-head,.rl-row{display:grid;grid-template-columns:34px 1.7fr 1.15fr 2.4fr 92px;gap:22px;align-items:center;padding:0 48px 0 16px}
 .rl-head{padding-top:14px;padding-bottom:14px;font:600 12px var(--font-sans);color:var(--fg-3);letter-spacing:.03em;border-bottom:1px solid var(--border-2)}
-.rl-row{padding-top:16px;padding-bottom:16px;border-top:1px solid var(--hair);cursor:pointer;transition:background .12s;text-decoration:none;color:var(--fg-1)}
+.rl-row{padding-top:16px;padding-bottom:16px;border-top:1px solid var(--hair);cursor:pointer;transition:background .12s;text-decoration:none;color:var(--fg-1);position:relative}
 .rl-row:first-of-type{border-top:0}
 .rl-row:hover{background:rgba(0,0,0,.03)}
 :root[data-theme="dark"] .rl-row:hover{background:rgba(255,255,255,.04)}
@@ -152,6 +152,14 @@ body::before{content:"";position:fixed;inset:0;z-index:-1;pointer-events:none;
 :root[data-theme="dark"] .c-date .badge{background:rgba(255,255,255,.08)}
 .c-chev{color:var(--fg-3);display:flex;justify-content:flex-end}
 .c-chev svg{width:16px;height:16px}
+/* 관심종목(워치리스트) 별 버튼 */
+.wl-btn{position:absolute;top:50%;right:12px;transform:translateY(-50%);width:30px;height:30px;display:flex;align-items:center;justify-content:center;border:0;background:transparent;cursor:pointer;color:var(--fg-3);border-radius:8px;transition:background .12s,color .12s;padding:0;z-index:2}
+.wl-btn:hover{background:rgba(0,0,0,.06);color:var(--fg-1)}
+:root[data-theme="dark"] .wl-btn:hover{background:rgba(255,255,255,.1)}
+.wl-btn svg{width:18px;height:18px;fill:none;stroke:currentColor;stroke-width:1.7}
+.wl-btn.on{color:#f5a623}
+.wl-btn.on svg{fill:#f5a623;stroke:#f5a623}
+@media(max-width:640px){.wl-btn{top:14px;transform:none}}
 
 /* empty */
 .empty{display:none;text-align:center;padding:60px 28px}
@@ -516,7 +524,6 @@ KOSi18n.register({
       <span>현재가</span>
       <span>리포트 제목</span>
       <span style="text-align:right">발행일</span>
-      <span></span>
     </div>
     <div id="rows" data-i18n-skip></div>
   </div>
@@ -623,6 +630,7 @@ function repTs(tk){
   const R=window.KOS_REPORTS&&KOS_REPORTS.reports&&KOS_REPORTS.reports[tk];
   return R ? (R.reportTs||R.reportDate||'') : '';
 }
+function isW(tk){ try{ return localStorage.getItem('kos-watch-'+tk)==='1'; }catch(e){ return false; } }
 function rowHtml(r,i){
   const dir=r.change>0?'up':r.change<0?'down':'flat',arw=r.change>0?'▲':r.change<0?'▼':'–';
   const title=repTitle(r.ticker);
@@ -634,7 +642,9 @@ function rowHtml(r,i){
     <div class="c-price"><div class="px">${KOS.won(r.price)}</div><div class="ch ${dir}"><span style="font-size:10px">${arw}</span> ${KOS.pct(r.change)}</div></div>
     <p class="c-ai c-title">${titleHtml}</p>
     <div class="c-date">${repDate(r.ticker) || '—'}</div>
-    <span class="c-chev"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 6l6 6-6 6"/></svg></span>
+    <span class="wl-btn ${isW(r.ticker)?'on':''}" data-wl="${r.ticker}" role="button" aria-label="관심종목" title="관심종목 추가/해제">
+      <svg viewBox="0 0 24 24"><path d="M12 3.2l2.65 5.37 5.92.86-4.28 4.18 1.01 5.9L12 16.9l-5.3 2.61 1.01-5.9L3.43 9.43l5.92-.86z"/></svg>
+    </span>
   </a>`;
 }
 function pageWindow(cur,pages){
@@ -670,6 +680,14 @@ function render(){
 render();
 
 document.getElementById('searchInput').addEventListener('input',e=>{state.q=e.target.value;state.page=1;render();});
+// 목록에서 별 버튼으로 워치리스트 바로 토글 (상세 진입 없이)
+rowsEl.addEventListener('click',function(e){
+  const b=e.target.closest('.wl-btn'); if(!b) return;
+  e.preventDefault(); e.stopPropagation();
+  const tk=b.dataset.wl, on=!isW(tk);
+  try{ on?localStorage.setItem('kos-watch-'+tk,'1'):localStorage.removeItem('kos-watch-'+tk); }catch(err){}
+  b.classList.toggle('on',on);
+});
 document.getElementById('pagerCtl').addEventListener('click',e=>{
   const b=e.target.closest('button[data-pg]');if(!b)return;
   const pg=b.dataset.pg;

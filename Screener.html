@@ -169,6 +169,13 @@ tbody td:first-child{text-align:left}
 tbody tr:first-child td{border-top:1px solid var(--border-2)}
 .nm{display:flex;flex-direction:column;gap:2px}
 .nm .n{font:700 15px var(--font-sans);letter-spacing:-.01em}
+.c-name{display:flex;align-items:center;gap:10px}
+.wl-btn{flex:0 0 auto;width:28px;height:28px;display:flex;align-items:center;justify-content:center;border:0;background:transparent;cursor:pointer;color:var(--fg-3);border-radius:7px;transition:background .12s,color .12s;padding:0}
+.wl-btn:hover{background:rgba(0,0,0,.06);color:var(--fg-1)}
+:root[data-theme="dark"] .wl-btn:hover{background:rgba(255,255,255,.1)}
+.wl-btn svg{width:17px;height:17px;fill:none;stroke:currentColor;stroke-width:1.7}
+.wl-btn.on{color:#f5a623}
+.wl-btn.on svg{fill:#f5a623;stroke:#f5a623}
 .nm .s{font:500 12px var(--font-sans);color:var(--fg-3)}
 .tk{font:600 13px var(--font-sans);color:var(--fg-2);background:rgba(0,0,0,.05);padding:3px 8px;border-radius:6px}
 :root[data-theme="dark"] .tk{background:rgba(255,255,255,.08)}
@@ -745,7 +752,7 @@ const tbody=document.getElementById('tbody');
 function rowHtml(s){
   const dir=s.change>0?'up':s.change<0?'down':'flat',arw=s.change>0?'▲':s.change<0?'▼':'–';
   return `<tr data-ticker="${s.ticker}">
-    <td><div class="nm"><span class="n">${T(s.name)}</span><span class="s">${T(s.sector)}</span></div></td>
+    <td><div class="c-name"><span class="wl-btn ${isW(s.ticker)?'on':''}" data-wl="${s.ticker}" role="button" aria-label="관심종목" title="관심종목 추가/해제"><svg viewBox="0 0 24 24"><path d="M12 3.2l2.65 5.37 5.92.86-4.28 4.18 1.01 5.9L12 16.9l-5.3 2.61 1.01-5.9L3.43 9.43l5.92-.86z"/></svg></span><div class="nm"><span class="n">${T(s.name)}</span><span class="s">${T(s.sector)}</span></div></div></td>
     <td class="c-center"><span class="mkt-tag">${T(s.market)}</span></td>
     <td>${KOS.won(s.price)}</td>
     <td><span class="chg ${dir}"><span class="a">${arw}</span> ${KOS.pct(s.change)}</span></td>
@@ -928,7 +935,14 @@ document.getElementById('pagerCtl').addEventListener('click',e=>{
   render();
 });
 document.getElementById('emptyReset').addEventListener('click',()=>{state.filters={};state.q='';document.getElementById('searchInput').value='';state.page=1;render();});
-tbody.addEventListener('click',e=>{const tr=e.target.closest('tr');if(tr)window.location.href='Ticker Detail v2.html?ticker='+(tr.dataset.ticker||'');});
+function isW(tk){ try{ return localStorage.getItem('kos-watch-'+tk)==='1'; }catch(e){ return false; } }
+tbody.addEventListener('click',e=>{
+  const wb=e.target.closest('.wl-btn');
+  if(wb){ e.preventDefault(); e.stopPropagation(); const tk=wb.dataset.wl, on=!isW(tk);
+    try{ on?localStorage.setItem('kos-watch-'+tk,'1'):localStorage.removeItem('kos-watch-'+tk); }catch(err){}
+    wb.classList.toggle('on',on); return; }
+  const tr=e.target.closest('tr');if(tr)window.location.href='Ticker Detail v2.html?ticker='+(tr.dataset.ticker||'');
+});
 window.addEventListener('resize',()=>{if(popover.classList.contains('open')){const a=curField?document.querySelector(`.fchip[data-field="${curField}"]`):document.getElementById('addFilterBtn');place(a||document.getElementById('addFilterBtn'));}});
 
 /* mobile menu */
