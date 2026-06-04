@@ -765,15 +765,10 @@ function render(){
   document.getElementById('resultOf').textContent=EN()?`stocks · of ${STOCKS.length} total`:`개 종목 · 전체 ${STOCKS.length}개 중`;
   document.getElementById('pagerInfo').textContent=total?(EN()?`${start+1}–${Math.min(start+size,total)} of ${total}`:`${start+1}–${Math.min(start+size,total)} / ${total}개 표시`):'';
   const ctl=document.getElementById('pagerCtl');
+  // 10개 단위 블록 페이저: 11페이지로 넘어가면 11~20 표시
+  const BLK=10, blk=Math.floor((state.page-1)/BLK), bs=blk*BLK+1, be=Math.min(bs+BLK-1,pages);
   let b=`<button ${state.page<=1?'disabled':''} data-pg="prev">‹</button>`;
-  if(pages<=12){
-    for(let i=1;i<=pages;i++)b+=`<button class="${i===state.page?'active':''}" data-pg="${i}">${i}</button>`;
-  }else{
-    const out=new Set([1,pages,state.page,state.page-1,state.page+1]);
-    const arr=[...out].filter(i=>i>=1&&i<=pages).sort((a,b)=>a-b);
-    let prev=0;
-    for(const p of arr){ if(p-prev>1)b+=`<span class="pell">…</span>`; b+=`<button class="${p===state.page?'active':''}" data-pg="${p}">${p}</button>`; prev=p; }
-  }
+  for(let i=bs;i<=be;i++)b+=`<button class="${i===state.page?'active':''}" data-pg="${i}">${i}</button>`;
   b+=`<button ${state.page>=pages?'disabled':''} data-pg="next">›</button>`;
   ctl.innerHTML=pages>1?b:'';
   renderChips();renderHead();repaintControls();

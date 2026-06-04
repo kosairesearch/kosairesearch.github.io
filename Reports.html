@@ -659,16 +659,10 @@ function render(){
   // pager
   const EN=window.KOSi18n&&KOSi18n.lang==='en';
   document.getElementById('pagerInfo').textContent=EN?`${start+1}–${Math.min(start+size,total)} of ${total}`:`${start+1}–${Math.min(start+size,total)} / 총 ${total}개`;
+  // 10개 단위 블록 페이저: 11페이지로 넘어가면 11~20 표시
+  const BLK=10, blk=Math.floor((state.page-1)/BLK), bs=blk*BLK+1, be=Math.min(bs+BLK-1,pages);
   let b=`<button ${state.page<=1?'disabled':''} data-pg="prev">‹</button>`;
-  // 페이지가 많으면(전 종목) 압축형, 적으면 전부 표시
-  if(pages<=12){
-    for(let i=1;i<=pages;i++) b+=`<button class="${i===state.page?'active':''}" data-pg="${i}">${i}</button>`;
-  }else{
-    for(const p of pageWindow(state.page,pages)){
-      b += p==='…' ? `<span class="pell">…</span>`
-                   : `<button class="${p===state.page?'active':''}" data-pg="${p}">${p}</button>`;
-    }
-  }
+  for(let i=bs;i<=be;i++) b+=`<button class="${i===state.page?'active':''}" data-pg="${i}">${i}</button>`;
   b+=`<button ${state.page>=pages?'disabled':''} data-pg="next">›</button>`;
   document.getElementById('pagerCtl').innerHTML=pages>1?b:'';
   pager.style.display=pages>1?'':'none';
