@@ -649,7 +649,12 @@ document.getElementById('editBtn').addEventListener('click',e=>{
 document.getElementById('clearAllBtn').addEventListener('click',()=>{
   const msg = EN()? 'Remove all stocks from your watchlist?' : '관심종목을 전체 삭제할까요?';
   if(!window.confirm(msg)) return;
-  try{ for(let i=localStorage.length-1;i>=0;i--){ const k=localStorage.key(i); if(k&&k.indexOf('kos-watch-')===0) localStorage.removeItem(k); } }catch(e){}
+  // 순회 중 삭제 시 인덱스 밀림 방지: 키를 먼저 모으고 한꺼번에 삭제
+  try{
+    const keys=[];
+    for(let i=0;i<localStorage.length;i++){ const k=localStorage.key(i); if(k&&k.indexOf('kos-watch-')===0) keys.push(k); }
+    keys.forEach(k=>localStorage.removeItem(k));
+  }catch(e){}
   LIST=getWatched();
   wlEl.classList.remove('edit');
   const eb=document.getElementById('editBtn'); eb.classList.remove('on'); eb.lastChild.textContent=T(' 편집');
