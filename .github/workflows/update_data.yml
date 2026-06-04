@@ -42,6 +42,8 @@ jobs:
         env:
           DART_API_KEY: ${{ secrets.DART_API_KEY }}
           DART_KEY_SET: ${{ secrets.DART_API_KEY != '' }}
+          KRX_ID: ${{ secrets.KRX_ID }}
+          KRX_PW: ${{ secrets.KRX_PW }}
           FULL_UNIVERSE: ${{ inputs.full_universe == 'yes' && '1' || '' }}
           UNIVERSE_LIMIT: ${{ inputs.universe_limit || '0' }}
         run: |

@@ -362,7 +362,7 @@ def collect_pykrx_bulk(date):
                     "change":  round(float(ohlcv_row.get(chg_col, 0) if hasattr(ohlcv_row, "get") else 0), 2),
                     "volume":       int(ohlcv_row.get(vol_col, 0)  if hasattr(ohlcv_row, "get") else 0),
                     "trading_value":int(ohlcv_row.get(tvol_col, 0) if hasattr(ohlcv_row, "get") else 0),
-                    "mcap":  round(mcap_won / 1e12, 1),
+                    "mcap":  round(mcap_won / 1e12, 2),
                     "shares":int(cap_row.get(shares_col, 0) if hasattr(cap_row, "get") else 0),
                     "per": round(float(fund_row.get("PER", 0) if hasattr(fund_row, "get") else 0), 1),
                     "pbr": round(float(fund_row.get("PBR", 0) if hasattr(fund_row, "get") else 0), 1),
@@ -588,12 +588,26 @@ def collect_pykrx_fallback(date, universe=None):
 def collect_pykrx(date):
     """pykrx로 시세 데이터를 수집합니다.
 
-    KRX 전종목 벌크 API(get_market_*_by_ticker)와 시총/펀더멘털 API는
-    GitHub Actions 환경에서 차단되어 빈 값을 반환하므로, 작동이 확인된
-    개별 종목 OHLCV 조회(get_market_ohlcv_by_date)만 사용합니다.
-    시총·PER·PBR 등은 enrich_with_dart()에서 DART로 채웁니다.
+    KRX_ID/KRX_PW(data.krx.co.kr 계정)가 설정돼 있으면 전종목 벌크 API로
+    한 번에 수집합니다(시총·주식수·시세 포함). 로그인이 없으면 KRX 벌크가
+    차단되므로, 개별 OHLCV 폴백(SECTOR_MAP 대상)으로 수집하고 시총은 DART로 채웁니다.
     """
-    print(f"  [pykrx] {date} OHLCV 데이터 수집 중...")
+    krx_login = bool(os.getenv("KRX_ID") and os.getenv("KRX_PW"))
+
+    if krx_login:
+        print(f"  [pykrx] {date} KRX 로그인 감지 — 전종목 벌크 수집 시도...")
+        try:
+            results = collect_pykrx_bulk(date)
+        except Exception as e:
+            print(f"  [pykrx] 벌크 수집 오류: {type(e).__name__}: {e}")
+            results = {}
+        nvalid = len([v for v in results.values() if v.get("price", 0) > 0])
+        print(f"  [pykrx] 벌크 수집 결과: {len(results)}개 (가격 유효: {nvalid}개)")
+        if nvalid >= 500:
+            return results
+        print("  [pykrx] 벌크 결과 부족 — 개별 폴백으로 전환")
+
+    print(f"  [pykrx] {date} 개별 OHLCV 수집...")
     universe = build_universe(date)
     results = collect_pykrx_fallback(date, universe)
 
@@ -863,8 +877,9 @@ def enrich_with_dart(results):
 
     debug_info = {}
     ranked = sorted(results.values(), key=lambda x: x["trading_value"], reverse=True)
-    # 전 종목 모드면 모두 보강(시총 채워야 가드 통과 + 순위 산정). 아니면 상위 130개.
-    targets = ranked if FULL_UNIVERSE else ranked[:130]
+    # 벌크(KRX) 수집이면 시총은 이미 채워졌으므로 DART 보강(영문명·업종)은 상위 400개만.
+    # 폴백(로그인 없음)이면 시총을 DART로 채워야 하므로 상위 130개.
+    targets = ranked[:400] if FULL_UNIVERSE else ranked[:130]
     print(f"  [DART] {len(targets)}개 종목 영문명·주식수(시총) 수집 중...")
 
     for i, stock in enumerate(targets):
