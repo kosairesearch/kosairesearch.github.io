@@ -1,0 +1,69 @@
+name: 🆕 신규 상장 자동 리포트
+
+on:
+  schedule:
+    - cron: '30 14 * * 1-5'   # 23:30 KST (장 마감·데이터 게시 후), 평일
+  workflow_dispatch:
+    inputs:
+      max_new:
+        description: '신규 리포트 1회 최대 개수'
+        type: string
+        default: '20'
+
+concurrency:
+  group: kos-data
+  cancel-in-progress: false
+
+jobs:
+  pipeline:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+          cache: 'pip'
+      - name: 패키지 설치
+        run: pip install -r requirements.txt
+
+      - name: 1) 유니버스 수집(신규 상장주 포착)
+        env:
+          DART_API_KEY: ${{ secrets.DART_API_KEY }}
+          FULL_UNIVERSE: '1'
+        run: |
+          mkdir -p data
+          python scripts/collect_data.py 2>&1 | tee data/run.log || echo "(수집 실패 — 기존 데이터 사용)"
+
+      - name: 2) AI 업종 분류(신규 증분)
+        env:
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+        run: python scripts/classify_sectors.py 2>&1 | tee -a data/classify.log || echo "(분류 건너뜀)"
+
+      - name: 3) 신규 상장 종목 감지
+        id: detect
+        env:
+          MAX_NEW_REPORTS: ${{ inputs.max_new || '20' }}
+        run: python scripts/new_listings.py
+
+      - name: 4) 신규 종목 리포트 생성 (batch + Sonnet)
+        if: steps.detect.outputs.has_new == '1'
+        env:
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+          DART_API_KEY: ${{ secrets.DART_API_KEY }}
+          REPORT_TICKERS: ${{ steps.detect.outputs.new_tickers }}
+          REPORT_MODEL: claude-sonnet-4-6
+        run: python scripts/generate_reports_batch.py auto 2>&1 | tee -a data/reports_run.log
+
+      - name: 커밋 & 푸시
+        if: always()
+        run: |
+          git config --global user.email "bot@kosairesearch.github.io"
+          git config --global user.name "KOS ai Bot"
+          git add -A data/
+          git commit -m "🆕 신규 상장 자동 업데이트 $(TZ='Asia/Seoul' date +'%Y-%m-%d %H:%M KST')" || echo "변경 없음"
+          for i in 1 2 3 4 5; do
+            git pull --rebase origin main && git push origin main && break
+            echo "push 재시도 $i..."; sleep $((i*3))
+          done
