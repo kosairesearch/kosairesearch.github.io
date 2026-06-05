@@ -99,7 +99,7 @@ body::before{content:"";position:fixed;inset:0;z-index:-1;pointer-events:none;
 .prose p b,.prose strong{font-weight:700;color:var(--fg-1)}
 
 /* method steps */
-.steps{display:grid;grid-template-columns:repeat(5,1fr);gap:12px;margin-top:26px}
+.steps{display:grid;grid-template-columns:repeat(4,1fr);gap:12px;margin-top:26px}
 .stepc{padding:18px 18px 20px;display:flex;flex-direction:column;gap:8px}
 .stepc .n{font:700 11px var(--font-sans);letter-spacing:.08em;color:var(--fg-3)}
 .stepc h4{margin:0;font:700 16px var(--font-sans);letter-spacing:-.01em}
@@ -107,8 +107,11 @@ body::before{content:"";position:fixed;inset:0;z-index:-1;pointer-events:none;
 .stepc .idx{width:30px;height:30px;border-radius:50%;background:var(--fg-1);color:var(--bg-1);display:flex;align-items:center;justify-content:center;font:700 14px var(--font-sans);margin-bottom:4px}
 
 /* source cards */
-.src-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}
+.src-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:14px}
 .src{padding:20px 22px;display:flex;flex-direction:column;gap:8px;min-height:150px}
+a.src{text-decoration:none;color:inherit;cursor:pointer;transition:transform .15s ease,box-shadow .15s ease}
+a.src:hover{transform:translateY(-3px);box-shadow:0 10px 28px rgba(0,0,0,.12)}
+a.src:hover .link{text-decoration:underline}
 .src-head{display:flex;justify-content:space-between;align-items:baseline;gap:10px}
 .src-head h4{margin:0;font:700 18px var(--font-sans);letter-spacing:-.01em}
 .src-kind{font:600 11px var(--font-sans);color:var(--fg-3);background:rgba(0,0,0,.05);padding:3px 9px;border-radius:var(--pill);white-space:nowrap}
@@ -522,7 +525,6 @@ KOSi18n.register({
       <div class="stepc glass"><span class="n">STEP 02</span><h4>업종 분류</h4><p>AI가 전 종목을 실제 사업 기준으로 업종·테마(AI·로봇 등)에 자동 분류합니다.</p></div>
       <div class="stepc glass"><span class="n">STEP 03</span><h4>AI 리포트</h4><p>Claude(배치 API)가 사업·실적·강세/약세·리스크를 항목별로 작성합니다.</p></div>
       <div class="stepc glass"><span class="n">STEP 04</span><h4>업종 분석</h4><p>업종별 집계와 AI 업종 분석 리포트를 생성합니다.</p></div>
-      <div class="stepc glass"><span class="n">STEP 05</span><h4>자동 게시</h4><p>GitHub 자동화로 데이터 기준 시각·출처와 함께 사이트에 반영합니다.</p></div>
     </div>
   </div></section>
 
@@ -536,10 +538,10 @@ KOSi18n.register({
       <p class="sec-lead">KOS ai는 자체적으로 시장 데이터를 생성하지 않으며, 아래 출처에서 데이터를 받아 사용합니다. 각 데이터의 갱신 주기와 사용 범위는 출처별로 다릅니다.</p>
     </div>
     <div class="src-grid">
-      <div class="src glass"><div class="src-head"><h4>KRX</h4><span class="src-kind">시세·시장데이터</span></div><p>한국거래소. 종가·거래량·거래대금·시가총액·상장주식수·업종(KSIC) 분류 등 기본 시장 데이터의 출처입니다.</p><span class="link">krx.co.kr ↗</span></div>
-      <div class="src glass"><div class="src-head"><h4>FinanceData</h4><span class="src-kind">데이터셋</span></div><p>KRX 시장 데이터를 받아오는 오픈소스 공개 데이터셋입니다. 매 거래일 갱신된 상장사 목록·종가를 제공합니다.</p><span class="link">github.com/FinanceData ↗</span></div>
-      <div class="src glass"><div class="src-head"><h4>DART</h4><span class="src-kind">공시</span></div><p>금융감독원 전자공시시스템. 상장주식수·영문 회사명 등 기업 기본 정보를 보강하는 데 사용합니다.</p><span class="link">dart.fss.or.kr ↗</span></div>
-      <div class="src glass"><div class="src-head"><h4>Anthropic Claude</h4><span class="src-kind">AI 모델</span></div><p>리포트·업종 분석 작성과 종목 업종 자동 분류에 사용하는 LLM입니다. 작성 시 웹 검색으로 최근 업황을 확인합니다.</p><span class="link">anthropic.com ↗</span></div>
+      <a class="src glass" href="https://www.krx.co.kr" target="_blank" rel="noopener"><div class="src-head"><h4>KRX</h4><span class="src-kind">시세·시장데이터</span></div><p>한국거래소. 종가·거래량·거래대금·시가총액·상장주식수·업종(KSIC) 분류 등 기본 시장 데이터의 출처입니다.</p><span class="link">krx.co.kr ↗</span></a>
+      <a class="src glass" href="https://github.com/FinanceData/FinanceDataReader" target="_blank" rel="noopener"><div class="src-head"><h4>FinanceData</h4><span class="src-kind">데이터셋</span></div><p>KRX 시장 데이터를 받아오는 오픈소스 공개 데이터셋입니다. 매 거래일 갱신된 상장사 목록·종가를 제공합니다.</p><span class="link">github.com/FinanceData ↗</span></a>
+      <a class="src glass" href="https://dart.fss.or.kr" target="_blank" rel="noopener"><div class="src-head"><h4>DART</h4><span class="src-kind">공시</span></div><p>금융감독원 전자공시시스템. 상장주식수·영문 회사명 등 기업 기본 정보를 보강하는 데 사용합니다.</p><span class="link">dart.fss.or.kr ↗</span></a>
+      <a class="src glass" href="https://www.anthropic.com" target="_blank" rel="noopener"><div class="src-head"><h4>Anthropic Claude</h4><span class="src-kind">AI 모델</span></div><p>리포트·업종 분석 작성과 종목 업종 자동 분류에 사용하는 LLM입니다. 작성 시 웹 검색으로 최근 업황을 확인합니다.</p><span class="link">anthropic.com ↗</span></a>
     </div>
     <p class="sec-lead" style="margin:14px 0 0;font-size:13px;color:var(--fg-3)">실시간 시세는 제공되지 않으며, 본 사이트의 시세는 매 거래일 종가 기준입니다.</p>
   </div></section>
