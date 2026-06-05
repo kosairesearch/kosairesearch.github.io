@@ -1,0 +1,50 @@
+name: 🏭 업종 AI 분석 생성
+
+on:
+  workflow_dispatch:
+    inputs:
+      mode:
+        description: 'submit / collect / auto'
+        type: choice
+        options: [auto, submit, collect]
+        default: auto
+      force:
+        description: '전 업종 재생성'
+        type: choice
+        options: ['no', 'yes']
+        default: 'no'
+
+concurrency:
+  group: kos-data
+  cancel-in-progress: false
+
+jobs:
+  sectors:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+          cache: 'pip'
+      - name: 패키지 설치
+        run: pip install -r requirements.txt
+      - name: 업종 분석 생성
+        env:
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+          REPORT_MODEL: claude-sonnet-4-6
+          SECTOR_FORCE: ${{ inputs.force == 'yes' && '1' || '' }}
+        run: python scripts/generate_sectors.py "${{ inputs.mode }}" 2>&1 | tee -a data/sectors_run.log
+      - name: 커밋 & 푸시
+        if: always()
+        run: |
+          git config --global user.email "bot@kosairesearch.github.io"
+          git config --global user.name "KOS ai Bot"
+          git add -A data/
+          git commit -m "🏭 업종 AI 분석 $(TZ='Asia/Seoul' date +'%Y-%m-%d %H:%M KST')" || echo "변경 없음"
+          for i in 1 2 3 4 5; do
+            git pull --rebase origin main && git push origin main && break
+            echo "push 재시도 $i..."; sleep $((i*3))
+          done
