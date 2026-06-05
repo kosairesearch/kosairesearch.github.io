@@ -86,7 +86,16 @@ def build_prompt(chunk):
         "- ai=false: AI를 단순히 활용/수혜할 뿐인 회사(반도체 대기업·로봇·인터넷·제조업 등은 false).",
         "  예: 삼성전자, 두산로보틱스, 레인보우로보틱스, 네이버는 false.",
         "",
-        '출력은 JSON만: {"종목코드": {"s":"카테고리", "ai": true/false}, ...}',
+        "또한, 각 종목이 '로봇 기업'인지(robot) 판단:",
+        "- robot=true: 로봇 완제품(협동·산업용·서비스·물류·휴머노이드 로봇)뿐 아니라, 로봇의 핵심 부품·",
+        "  솔루션 매출 비중이 큰 회사도 포함한다. 즉 다음이 주력이면 robot=true:",
+        "  · 감속기·하모닉드라이브, 서보모터·액추에이터·구동모듈, 로봇 제어기·구동SW·자율주행SW,",
+        "    머신비전, 그리퍼·엔드이펙터, 로봇용 정밀기어/베어링 등.",
+        "  (예: 두산로보틱스, 레인보우로보틱스, 로보티즈, 뉴로메카, 엔젤로보틱스, 에스비비테크,",
+        "   에스피지(정밀감속기), 삼현(모터·구동시스템), 하이젠알앤엠(모터), 클로봇(로봇SW), 티로보틱스).",
+        "- robot=false: 로봇과 직접 관련이 적거나 단순 전방산업(반도체 대기업·일반 가전·완성차 등).",
+        "",
+        '출력은 JSON만: {"종목코드": {"s":"카테고리", "ai": true/false, "robot": true/false}, ...}',
         "",
         "분류할 종목:",
     ]
@@ -150,14 +159,22 @@ def main():
             res = {}
         for s in chunk:
             e = res.get(s["ticker"]) or res.get(str(s["ticker"]))
-            sec, ai = None, False
+            sec, ai, robot = None, False, False
             if isinstance(e, dict):
                 sec = e.get("s") or e.get("sector") or e.get("category")
                 ai = bool(e.get("ai"))
+                robot = bool(e.get("robot"))
             elif isinstance(e, str):
                 sec = e
             if sec in VALID:
-                cache[s["ticker"]] = {"s": sec, "ai": ai}
+                # 기존 캐시의 업종(s)·AI(ai)는 검증된 값이므로 보존하고, robot 플래그만 추가/갱신.
+                prev = cache.get(s["ticker"])
+                prev = prev if isinstance(prev, dict) else {}
+                cache[s["ticker"]] = {
+                    "s": prev.get("s") or sec,
+                    "ai": prev.get("ai", ai),
+                    "robot": robot,
+                }
                 done += 1
         save_cache(cache)
         log(f"  · {min(i+BATCH, len(todo))}/{len(todo)} 처리 (누적 분류 {done})")

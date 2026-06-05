@@ -1103,9 +1103,9 @@ def enrich_with_dart(results):
         prev = st.get("sector", "기타")          # 수동 SECTOR_MAP 값(폴백)
         # AI 분류 캐시 항목: {"s": 업종, "ai": bool} (구버전은 문자열)
         e = ai_sectors.get(tk)
-        ai_sec, is_ai = None, False
+        ai_sec, is_ai, is_robot = None, False, False
         if isinstance(e, dict):
-            ai_sec = e.get("s"); is_ai = bool(e.get("ai"))
+            ai_sec = e.get("s"); is_ai = bool(e.get("ai")); is_robot = bool(e.get("robot"))
         elif isinstance(e, str):
             ai_sec = e
         primary = ai_sec if ai_sec else primary_category(st.get("induty_code", ""), tk, prev, st.get("name", ""))
@@ -1113,6 +1113,9 @@ def enrich_with_dart(results):
         cats = categories_for(tk, primary, st.get("induty_code", ""), st.get("name", ""))
         if is_ai and "인공지능(AI)" not in cats:
             cats.append("인공지능(AI)")
+        # 로봇: LLM 판정(robot 플래그) ∪ 규칙(theme_tags) → 부품·솔루션사까지 포함
+        if is_robot and "로봇" not in cats:
+            cats.append("로봇")
         st["categories"] = cats
 
     print("  [DART] 영문명·시총·카테고리 보강 완료")
