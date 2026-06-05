@@ -908,9 +908,10 @@ themeBtn.addEventListener('click',()=>applyTheme(root.getAttribute('data-theme')
   function bi(o){if(!o)return '';return EN()?(o.en||o.ko||''):(o.ko||o.en||'');}
   function tn(x){return T(x);}
   function qp(k){return new URLSearchParams(location.search).get(k);}
+  function scats(s){return (s.categories&&s.categories.length)?s.categories:[s.sector||'기타'];}
   function agg(){
     var total=0,by={};
-    STOCKS.forEach(function(s){var m=s.mcap||0;total+=m;(by[s.sector]=by[s.sector]||[]).push(s);});
+    STOCKS.forEach(function(s){var m=s.mcap||0;total+=m;scats(s).forEach(function(c){(by[c]=by[c]||[]).push(s);});});
     var rows=Object.keys(by).map(function(sec){
       var lst=by[sec],mc=0,wc=0;
       lst.forEach(function(s){mc+=(s.mcap||0);wc+=(s.change||0)*(s.mcap||0);});

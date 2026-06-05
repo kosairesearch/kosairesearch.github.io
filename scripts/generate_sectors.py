@@ -70,7 +70,9 @@ def load_sectors():
     total = sum(s.get("mcap", 0) or 0 for s in stocks)
     by = defaultdict(list)
     for s in stocks:
-        by[s.get("sector", "기타")].append(s)
+        cats = s.get("categories") or [s.get("sector", "기타")]
+        for c in cats:
+            by[c].append(s)
     out = {}
     for sec, lst in by.items():
         mc = sum(s.get("mcap", 0) or 0 for s in lst)
