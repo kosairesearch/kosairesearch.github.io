@@ -189,6 +189,8 @@ def collect(cl, as_of):
 
 def main():
     mode = sys.argv[1] if len(sys.argv) > 1 else "auto"
+    log(f"## generate_sectors 시작 — mode={mode!r} · MODEL={MODEL} · FORCE={FORCE}")
+    sys.stdout.flush()
     cl = client()
     as_of = datetime.datetime.now(datetime.timezone(datetime.timedelta(hours=9))).strftime("%Y-%m-%d %H:%M")
     if mode == "submit":
@@ -201,5 +203,19 @@ def main():
             collect(cl, as_of)
 
 
+def _entry():
+    try:
+        main()
+    except Exception as e:
+        import traceback
+        msg = "❌ generate_sectors 예외: " + "".join(traceback.format_exception(type(e), e, e.__traceback__))
+        print(msg, flush=True)
+        try:
+            (ROOT / "data" / "sectors_run.log").open("a", encoding="utf-8").write(msg + "\n")
+        except Exception:
+            pass
+        sys.exit(1)
+
+
 if __name__ == "__main__":
-    main()
+    _entry()
