@@ -1,6 +1,6 @@
 // KOS ai — 자동 생성 데이터 파일. 직접 수정하지 마세요.
 window.KOS_LIVE_DATA = {
-  "lastUpdated": "2026-06-05 15:39",
+  "lastUpdated": "2026-06-05 16:04",
   "dataDate": "20260605",
   "stocks": [
     {
@@ -7574,23 +7574,6 @@ window.KOS_LIVE_DATA = {
       "rank": 420
     },
     {
-      "ticker": "00104K",
-      "name": "CJ4우(전환)",
-      "name_en": "",
-      "market": "코스피",
-      "sector": "지주",
-      "price": 164700,
-      "change": 2.43,
-      "volume": 5902,
-      "trading_value": 930821700,
-      "mcap": 0.6961,
-      "shares": 4226512,
-      "categories": [
-        "지주"
-      ],
-      "rank": 421
-    },
-    {
       "ticker": "348210",
       "name": "넥스틴",
       "name_en": "NEXTIN Inc.",
@@ -7606,7 +7589,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "반도체"
       ],
-      "rank": 422
+      "rank": 421
     },
     {
       "ticker": "365340",
@@ -7624,7 +7607,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "2차전지"
       ],
-      "rank": 423
+      "rank": 422
     },
     {
       "ticker": "005090",
@@ -7642,7 +7625,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "에너지·전력"
       ],
-      "rank": 424
+      "rank": 423
     },
     {
       "ticker": "174900",
@@ -7660,7 +7643,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "바이오·제약"
       ],
-      "rank": 425
+      "rank": 424
     },
     {
       "ticker": "002020",
@@ -7678,7 +7661,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "지주"
       ],
-      "rank": 426
+      "rank": 425
     },
     {
       "ticker": "077360",
@@ -7696,7 +7679,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "반도체"
       ],
-      "rank": 427
+      "rank": 426
     },
     {
       "ticker": "053610",
@@ -7714,7 +7697,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기계·장비"
       ],
-      "rank": 428
+      "rank": 427
     },
     {
       "ticker": "002350",
@@ -7732,7 +7715,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "화학"
       ],
-      "rank": 429
+      "rank": 428
     },
     {
       "ticker": "225570",
@@ -7750,7 +7733,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "게임"
       ],
-      "rank": 430
+      "rank": 429
     },
     {
       "ticker": "002960",
@@ -7768,7 +7751,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "정유"
       ],
-      "rank": 431
+      "rank": 430
     },
     {
       "ticker": "327260",
@@ -7786,7 +7769,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "반도체"
       ],
-      "rank": 432
+      "rank": 431
     },
     {
       "ticker": "053800",
@@ -7804,7 +7787,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "IT·소프트웨어"
       ],
-      "rank": 433
+      "rank": 432
     },
     {
       "ticker": "044490",
@@ -7822,7 +7805,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기계·장비"
       ],
-      "rank": 434
+      "rank": 433
     },
     {
       "ticker": "005880",
@@ -7840,7 +7823,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "운송·물류"
       ],
-      "rank": 435
+      "rank": 434
     },
     {
       "ticker": "293940",
@@ -7858,7 +7841,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "부동산·리츠"
       ],
-      "rank": 436
+      "rank": 435
     },
     {
       "ticker": "069260",
@@ -7876,7 +7859,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "화학"
       ],
-      "rank": 437
+      "rank": 436
     },
     {
       "ticker": "060250",
@@ -7894,7 +7877,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "금융"
       ],
-      "rank": 438
+      "rank": 437
     },
     {
       "ticker": "036810",
@@ -7912,7 +7895,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "반도체"
       ],
-      "rank": 439
+      "rank": 438
     },
     {
       "ticker": "317450",
@@ -7930,7 +7913,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "바이오·제약"
       ],
-      "rank": 440
+      "rank": 439
     },
     {
       "ticker": "178920",
@@ -7948,7 +7931,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "화학"
       ],
-      "rank": 441
+      "rank": 440
     },
     {
       "ticker": "001270",
@@ -7966,7 +7949,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "금융"
       ],
-      "rank": 442
+      "rank": 441
     },
     {
       "ticker": "102940",
@@ -7984,7 +7967,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "바이오·제약"
       ],
-      "rank": 443
+      "rank": 442
     },
     {
       "ticker": "005180",
@@ -8002,7 +7985,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "식음료"
       ],
-      "rank": 444
+      "rank": 443
     },
     {
       "ticker": "001680",
@@ -8020,7 +8003,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "식음료"
       ],
-      "rank": 445
+      "rank": 444
     },
     {
       "ticker": "001570",
@@ -8038,7 +8021,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "2차전지"
       ],
-      "rank": 446
+      "rank": 445
     },
     {
       "ticker": "389470",
@@ -8056,7 +8039,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "바이오·제약"
       ],
-      "rank": 447
+      "rank": 446
     },
     {
       "ticker": "033160",
@@ -8074,7 +8057,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "반도체"
       ],
-      "rank": 448
+      "rank": 447
     },
     {
       "ticker": "249420",
@@ -8092,7 +8075,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "바이오·제약"
       ],
-      "rank": 449
+      "rank": 448
     },
     {
       "ticker": "093050",
@@ -8110,7 +8093,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "섬유·패션·생활"
       ],
-      "rank": 450
+      "rank": 449
     },
     {
       "ticker": "007700",
@@ -8128,7 +8111,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "지주"
       ],
-      "rank": 451
+      "rank": 450
     },
     {
       "ticker": "009520",
@@ -8146,7 +8129,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "철강·금속"
       ],
-      "rank": 452
+      "rank": 451
     },
     {
       "ticker": "008060",
@@ -8164,7 +8147,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "지주"
       ],
-      "rank": 453
+      "rank": 452
     },
     {
       "ticker": "112040",
@@ -8182,7 +8165,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "게임"
       ],
-      "rank": 454
+      "rank": 453
     },
     {
       "ticker": "086900",
@@ -8200,7 +8183,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "바이오·제약"
       ],
-      "rank": 455
+      "rank": 454
     },
     {
       "ticker": "003620",
@@ -8218,7 +8201,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "자동차"
       ],
-      "rank": 456
+      "rank": 455
     },
     {
       "ticker": "006380",
@@ -8236,7 +8219,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "화학"
       ],
-      "rank": 457
+      "rank": 456
     },
     {
       "ticker": "058650",
@@ -8254,7 +8237,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "지주"
       ],
-      "rank": 458
+      "rank": 457
     },
     {
       "ticker": "001060",
@@ -8272,7 +8255,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "바이오·제약"
       ],
-      "rank": 459
+      "rank": 458
     },
     {
       "ticker": "383800",
@@ -8290,7 +8273,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "지주"
       ],
-      "rank": 460
+      "rank": 459
     },
     {
       "ticker": "383310",
@@ -8308,7 +8291,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "화학"
       ],
-      "rank": 461
+      "rank": 460
     },
     {
       "ticker": "102710",
@@ -8326,7 +8309,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "화학"
       ],
-      "rank": 462
+      "rank": 461
     },
     {
       "ticker": "089890",
@@ -8344,7 +8327,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "반도체"
       ],
-      "rank": 463
+      "rank": 462
     },
     {
       "ticker": "348340",
@@ -8363,7 +8346,7 @@ window.KOS_LIVE_DATA = {
         "기계·장비",
         "로봇"
       ],
-      "rank": 464
+      "rank": 463
     },
     {
       "ticker": "003030",
@@ -8381,7 +8364,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "지주"
       ],
-      "rank": 465
+      "rank": 464
     },
     {
       "ticker": "399720",
@@ -8399,7 +8382,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "반도체"
       ],
-      "rank": 466
+      "rank": 465
     },
     {
       "ticker": "253590",
@@ -8417,7 +8400,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "반도체"
       ],
-      "rank": 467
+      "rank": 466
     },
     {
       "ticker": "000400",
@@ -8435,7 +8418,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "보험"
       ],
-      "rank": 468
+      "rank": 467
     },
     {
       "ticker": "082270",
@@ -8453,7 +8436,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "바이오·제약"
       ],
-      "rank": 469
+      "rank": 468
     },
     {
       "ticker": "001500",
@@ -8471,7 +8454,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "금융"
       ],
-      "rank": 470
+      "rank": 469
     },
     {
       "ticker": "425420",
@@ -8489,7 +8472,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "반도체"
       ],
-      "rank": 471
+      "rank": 470
     },
     {
       "ticker": "484870",
@@ -8507,7 +8490,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기계·장비"
       ],
-      "rank": 472
+      "rank": 471
     },
     {
       "ticker": "014820",
@@ -8525,7 +8508,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "전자·부품"
       ],
-      "rank": 473
+      "rank": 472
     },
     {
       "ticker": "017940",
@@ -8543,7 +8526,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "에너지·전력"
       ],
-      "rank": 474
+      "rank": 473
     },
     {
       "ticker": "000640",
@@ -8561,7 +8544,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "지주"
       ],
-      "rank": 475
+      "rank": 474
     },
     {
       "ticker": "033500",
@@ -8579,7 +8562,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "화학"
       ],
-      "rank": 476
+      "rank": 475
     },
     {
       "ticker": "002840",
@@ -8597,7 +8580,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "화학"
       ],
-      "rank": 477
+      "rank": 476
     },
     {
       "ticker": "272290",
@@ -8615,7 +8598,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "전자·부품"
       ],
-      "rank": 478
+      "rank": 477
     },
     {
       "ticker": "067160",
@@ -8633,7 +8616,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "미디어·엔터"
       ],
-      "rank": 479
+      "rank": 478
     },
     {
       "ticker": "039130",
@@ -8651,7 +8634,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "호텔·레저"
       ],
-      "rank": 480
+      "rank": 479
     },
     {
       "ticker": "122640",
@@ -8669,7 +8652,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "반도체"
       ],
-      "rank": 481
+      "rank": 480
     },
     {
       "ticker": "453340",
@@ -8687,7 +8670,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "식음료"
       ],
-      "rank": 482
+      "rank": 481
     },
     {
       "ticker": "093320",
@@ -8705,7 +8688,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "IT·소프트웨어"
       ],
-      "rank": 483
+      "rank": 482
     },
     {
       "ticker": "015750",
@@ -8723,7 +8706,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "자동차"
       ],
-      "rank": 484
+      "rank": 483
     },
     {
       "ticker": "041830",
@@ -8741,7 +8724,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "전자·부품"
       ],
-      "rank": 485
+      "rank": 484
     },
     {
       "ticker": "005810",
@@ -8759,7 +8742,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "지주"
       ],
-      "rank": 486
+      "rank": 485
     },
     {
       "ticker": "475960",
@@ -8777,7 +8760,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기계·장비"
       ],
-      "rank": 487
+      "rank": 486
     },
     {
       "ticker": "376300",
@@ -8795,7 +8778,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "미디어·엔터"
       ],
-      "rank": 488
+      "rank": 487
     },
     {
       "ticker": "016380",
@@ -8813,7 +8796,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "철강·금속"
       ],
-      "rank": 489
+      "rank": 488
     },
     {
       "ticker": "045100",
@@ -8831,7 +8814,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "건설·건자재"
       ],
-      "rank": 490
+      "rank": 489
     },
     {
       "ticker": "161000",
@@ -8849,7 +8832,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "화학"
       ],
-      "rank": 491
+      "rank": 490
     },
     {
       "ticker": "104830",
@@ -8867,7 +8850,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "반도체"
       ],
-      "rank": 492
+      "rank": 491
     },
     {
       "ticker": "019210",
@@ -8885,7 +8868,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기계·장비"
       ],
-      "rank": 493
+      "rank": 492
     },
     {
       "ticker": "041960",
@@ -8903,7 +8886,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "바이오·제약"
       ],
-      "rank": 494
+      "rank": 493
     },
     {
       "ticker": "035890",
@@ -8921,7 +8904,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "건설·건자재"
       ],
-      "rank": 495
+      "rank": 494
     },
     {
       "ticker": "089010",
@@ -8939,7 +8922,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "화학"
       ],
-      "rank": 496
+      "rank": 495
     },
     {
       "ticker": "368770",
@@ -8957,7 +8940,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "전자·부품"
       ],
-      "rank": 497
+      "rank": 496
     },
     {
       "ticker": "356680",
@@ -8975,7 +8958,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "IT·소프트웨어"
       ],
-      "rank": 498
+      "rank": 497
     },
     {
       "ticker": "460930",
@@ -8993,7 +8976,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "조선"
       ],
-      "rank": 499
+      "rank": 498
     },
     {
       "ticker": "003300",
@@ -9011,7 +8994,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "지주"
       ],
-      "rank": 500
+      "rank": 499
     },
     {
       "ticker": "452260",
@@ -9029,7 +9012,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "유통·소비재"
       ],
-      "rank": 501
+      "rank": 500
     },
     {
       "ticker": "004710",
@@ -9047,7 +9030,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "전자·부품"
       ],
-      "rank": 502
+      "rank": 501
     },
     {
       "ticker": "017900",
@@ -9065,7 +9048,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "전자·부품"
       ],
-      "rank": 503
+      "rank": 502
     },
     {
       "ticker": "002240",
@@ -9083,7 +9066,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "철강·금속"
       ],
-      "rank": 504
+      "rank": 503
     },
     {
       "ticker": "064290",
@@ -9101,7 +9084,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "반도체"
       ],
-      "rank": 505
+      "rank": 504
     },
     {
       "ticker": "278280",
@@ -9119,7 +9102,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "2차전지"
       ],
-      "rank": 506
+      "rank": 505
     },
     {
       "ticker": "214430",
@@ -9137,7 +9120,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "항공·방산"
       ],
-      "rank": 507
+      "rank": 506
     },
     {
       "ticker": "170920",
@@ -9155,7 +9138,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "화학"
       ],
-      "rank": 508
+      "rank": 507
     },
     {
       "ticker": "230360",
@@ -9173,7 +9156,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "미디어·엔터"
       ],
-      "rank": 509
+      "rank": 508
     },
     {
       "ticker": "005250",
@@ -9191,7 +9174,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "지주"
       ],
-      "rank": 510
+      "rank": 509
     },
     {
       "ticker": "460860",
@@ -9209,7 +9192,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "철강·금속"
       ],
-      "rank": 511
+      "rank": 510
     },
     {
       "ticker": "268280",
@@ -9227,7 +9210,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "화학"
       ],
-      "rank": 512
+      "rank": 511
     },
     {
       "ticker": "031430",
@@ -9245,7 +9228,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "섬유·패션·생활"
       ],
-      "rank": 513
+      "rank": 512
     },
     {
       "ticker": "009410",
@@ -9263,7 +9246,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "건설·건자재"
       ],
-      "rank": 514
+      "rank": 513
     },
     {
       "ticker": "284740",
@@ -9281,7 +9264,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "유통·소비재"
       ],
-      "rank": 515
+      "rank": 514
     },
     {
       "ticker": "448900",
@@ -9299,7 +9282,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "자동차"
       ],
-      "rank": 516
+      "rank": 515
     },
     {
       "ticker": "477850",
@@ -9318,7 +9301,7 @@ window.KOS_LIVE_DATA = {
         "IT·소프트웨어",
         "인공지능(AI)"
       ],
-      "rank": 517
+      "rank": 516
     },
     {
       "ticker": "001530",
@@ -9336,7 +9319,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "섬유·패션·생활"
       ],
-      "rank": 518
+      "rank": 517
     },
     {
       "ticker": "271940",
@@ -9354,7 +9337,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "에너지·전력"
       ],
-      "rank": 519
+      "rank": 518
     },
     {
       "ticker": "452280",
@@ -9372,7 +9355,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기계·장비"
       ],
-      "rank": 520
+      "rank": 519
     },
     {
       "ticker": "099190",
@@ -9390,7 +9373,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "바이오·제약"
       ],
-      "rank": 521
+      "rank": 520
     },
     {
       "ticker": "024850",
@@ -9408,7 +9391,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "전자·부품"
       ],
-      "rank": 522
+      "rank": 521
     },
     {
       "ticker": "019170",
@@ -9426,7 +9409,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "바이오·제약"
       ],
-      "rank": 523
+      "rank": 522
     },
     {
       "ticker": "200710",
@@ -9444,7 +9427,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "반도체"
       ],
-      "rank": 524
+      "rank": 523
     },
     {
       "ticker": "330860",
@@ -9462,7 +9445,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "반도체"
       ],
-      "rank": 525
+      "rank": 524
     },
     {
       "ticker": "094800",
@@ -9480,7 +9463,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "부동산·리츠"
       ],
-      "rank": 526
+      "rank": 525
     },
     {
       "ticker": "092190",
@@ -9498,7 +9481,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "전자·부품"
       ],
-      "rank": 527
+      "rank": 526
     },
     {
       "ticker": "041190",
@@ -9516,7 +9499,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "금융"
       ],
-      "rank": 528
+      "rank": 527
     },
     {
       "ticker": "377740",
@@ -9534,7 +9517,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "바이오·제약"
       ],
-      "rank": 529
+      "rank": 528
     },
     {
       "ticker": "030520",
@@ -9552,7 +9535,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "IT·소프트웨어"
       ],
-      "rank": 530
+      "rank": 529
     },
     {
       "ticker": "005420",
@@ -9570,7 +9553,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "화학"
       ],
-      "rank": 531
+      "rank": 530
     },
     {
       "ticker": "020000",
@@ -9588,7 +9571,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "섬유·패션·생활"
       ],
-      "rank": 532
+      "rank": 531
     },
     {
       "ticker": "042000",
@@ -9606,7 +9589,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "IT·소프트웨어"
       ],
-      "rank": 533
+      "rank": 532
     },
     {
       "ticker": "025980",
@@ -9624,7 +9607,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "호텔·레저"
       ],
-      "rank": 534
+      "rank": 533
     },
     {
       "ticker": "003280",
@@ -9642,7 +9625,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "운송·물류"
       ],
-      "rank": 535
+      "rank": 534
     },
     {
       "ticker": "036620",
@@ -9660,7 +9643,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "유통·소비재"
       ],
-      "rank": 536
+      "rank": 535
     },
     {
       "ticker": "393890",
@@ -9678,7 +9661,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "2차전지"
       ],
-      "rank": 537
+      "rank": 536
     },
     {
       "ticker": "290550",
@@ -9696,7 +9679,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "전자·부품"
       ],
-      "rank": 538
+      "rank": 537
     },
     {
       "ticker": "016610",
@@ -9714,7 +9697,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "금융"
       ],
-      "rank": 539
+      "rank": 538
     },
     {
       "ticker": "034310",
@@ -9732,7 +9715,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "IT·소프트웨어"
       ],
-      "rank": 540
+      "rank": 539
     },
     {
       "ticker": "014830",
@@ -9750,7 +9733,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "화학"
       ],
-      "rank": 541
+      "rank": 540
     },
     {
       "ticker": "009900",
@@ -9768,7 +9751,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "자동차"
       ],
-      "rank": 542
+      "rank": 541
     },
     {
       "ticker": "034950",
@@ -9786,7 +9769,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "금융"
       ],
-      "rank": 543
+      "rank": 542
     },
     {
       "ticker": "001200",
@@ -9804,7 +9787,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "금융"
       ],
-      "rank": 544
+      "rank": 543
     },
     {
       "ticker": "372320",
@@ -9822,7 +9805,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "바이오·제약"
       ],
-      "rank": 545
+      "rank": 544
     },
     {
       "ticker": "060280",
@@ -9840,7 +9823,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "바이오·제약"
       ],
-      "rank": 546
+      "rank": 545
     },
     {
       "ticker": "340570",
@@ -9858,7 +9841,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "바이오·제약"
       ],
-      "rank": 547
+      "rank": 546
     },
     {
       "ticker": "448730",
@@ -9876,7 +9859,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "부동산·리츠"
       ],
-      "rank": 548
+      "rank": 547
     },
     {
       "ticker": "403550",
@@ -9894,7 +9877,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "운송·물류"
       ],
-      "rank": 549
+      "rank": 548
     },
     {
       "ticker": "332570",
@@ -9912,7 +9895,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "전자·부품"
       ],
-      "rank": 550
+      "rank": 549
     },
     {
       "ticker": "145990",
@@ -9930,7 +9913,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "식음료"
       ],
-      "rank": 551
+      "rank": 550
     },
     {
       "ticker": "211050",
@@ -9948,7 +9931,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "금융"
       ],
-      "rank": 552
+      "rank": 551
     },
     {
       "ticker": "011930",
@@ -9966,7 +9949,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "반도체"
       ],
-      "rank": 553
+      "rank": 552
     },
     {
       "ticker": "004690",
@@ -9984,7 +9967,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "에너지·전력"
       ],
-      "rank": 554
+      "rank": 553
     },
     {
       "ticker": "125490",
@@ -10002,7 +9985,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "자동차"
       ],
-      "rank": 555
+      "rank": 554
     },
     {
       "ticker": "003000",
@@ -10020,7 +10003,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "바이오·제약"
       ],
-      "rank": 556
+      "rank": 555
     },
     {
       "ticker": "039440",
@@ -10038,7 +10021,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기계·장비"
       ],
-      "rank": 557
+      "rank": 556
     },
     {
       "ticker": "217590",
@@ -10056,7 +10039,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기계·장비"
       ],
-      "rank": 558
+      "rank": 557
     },
     {
       "ticker": "018290",
@@ -10074,7 +10057,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "화장품"
       ],
-      "rank": 559
+      "rank": 558
     },
     {
       "ticker": "138080",
@@ -10092,7 +10075,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "전자·부품"
       ],
-      "rank": 560
+      "rank": 559
     },
     {
       "ticker": "008730",
@@ -10110,7 +10093,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "화학"
       ],
-      "rank": 561
+      "rank": 560
     },
     {
       "ticker": "101930",
@@ -10128,12 +10111,12 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "자동차"
       ],
-      "rank": 562
+      "rank": 561
     },
     {
       "ticker": "0011T0",
       "name": "채비",
-      "name_en": "",
+      "name_en": "Chaevi",
       "market": "코스닥",
       "sector": "에너지·전력",
       "price": 9200,
@@ -10145,7 +10128,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "에너지·전력"
       ],
-      "rank": 563
+      "rank": 562
     },
     {
       "ticker": "199800",
@@ -10163,7 +10146,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "바이오·제약"
       ],
-      "rank": 564
+      "rank": 563
     },
     {
       "ticker": "130660",
@@ -10181,7 +10164,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "에너지·전력"
       ],
-      "rank": 565
+      "rank": 564
     },
     {
       "ticker": "251970",
@@ -10199,7 +10182,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "화장품"
       ],
-      "rank": 566
+      "rank": 565
     },
     {
       "ticker": "025320",
@@ -10217,7 +10200,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "화학"
       ],
-      "rank": 567
+      "rank": 566
     },
     {
       "ticker": "381970",
@@ -10235,7 +10218,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "유통·소비재"
       ],
-      "rank": 568
+      "rank": 567
     },
     {
       "ticker": "085910",
@@ -10253,7 +10236,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "자동차"
       ],
-      "rank": 569
+      "rank": 568
     },
     {
       "ticker": "168360",
@@ -10271,7 +10254,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "반도체"
       ],
-      "rank": 570
+      "rank": 569
     },
     {
       "ticker": "078160",
@@ -10289,7 +10272,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "바이오·제약"
       ],
-      "rank": 571
+      "rank": 570
     },
     {
       "ticker": "064260",
@@ -10307,7 +10290,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "IT·소프트웨어"
       ],
-      "rank": 572
+      "rank": 571
     },
     {
       "ticker": "000070",
@@ -10325,7 +10308,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "지주"
       ],
-      "rank": 573
+      "rank": 572
     },
     {
       "ticker": "493280",
@@ -10343,7 +10326,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "바이오·제약"
       ],
-      "rank": 574
+      "rank": 573
     },
     {
       "ticker": "095660",
@@ -10361,7 +10344,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "게임"
       ],
-      "rank": 575
+      "rank": 574
     },
     {
       "ticker": "468530",
@@ -10379,7 +10362,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "바이오·제약"
       ],
-      "rank": 576
+      "rank": 575
     },
     {
       "ticker": "006910",
@@ -10397,7 +10380,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "건설·건자재"
       ],
-      "rank": 577
+      "rank": 576
     },
     {
       "ticker": "110990",
@@ -10415,7 +10398,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "반도체"
       ],
-      "rank": 578
+      "rank": 577
     },
     {
       "ticker": "079940",
@@ -10433,7 +10416,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "IT·소프트웨어"
       ],
-      "rank": 579
+      "rank": 578
     },
     {
       "ticker": "101160",
@@ -10451,7 +10434,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "반도체"
       ],
-      "rank": 580
+      "rank": 579
     },
     {
       "ticker": "078350",
@@ -10469,7 +10452,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "반도체"
       ],
-      "rank": 581
+      "rank": 580
     },
     {
       "ticker": "004700",
@@ -10487,7 +10470,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "섬유·패션·생활"
       ],
-      "rank": 582
+      "rank": 581
     },
     {
       "ticker": "027410",
@@ -10505,7 +10488,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "지주"
       ],
-      "rank": 583
+      "rank": 582
     },
     {
       "ticker": "025900",
@@ -10523,7 +10506,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "건설·건자재"
       ],
-      "rank": 584
+      "rank": 583
     },
     {
       "ticker": "455900",
@@ -10542,7 +10525,7 @@ window.KOS_LIVE_DATA = {
         "기계·장비",
         "로봇"
       ],
-      "rank": 585
+      "rank": 584
     },
     {
       "ticker": "072710",
@@ -10560,7 +10543,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "지주"
       ],
-      "rank": 586
+      "rank": 585
     },
     {
       "ticker": "950210",
@@ -10578,7 +10561,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "바이오·제약"
       ],
-      "rank": 587
+      "rank": 586
     },
     {
       "ticker": "042520",
@@ -10596,7 +10579,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "바이오·제약"
       ],
-      "rank": 588
+      "rank": 587
     },
     {
       "ticker": "013030",
@@ -10614,7 +10597,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기계·장비"
       ],
-      "rank": 589
+      "rank": 588
     },
     {
       "ticker": "006220",
@@ -10632,7 +10615,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "금융"
       ],
-      "rank": 590
+      "rank": 589
     },
     {
       "ticker": "241770",
@@ -10650,7 +10633,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "반도체"
       ],
-      "rank": 591
+      "rank": 590
     },
     {
       "ticker": "389500",
@@ -10669,7 +10652,7 @@ window.KOS_LIVE_DATA = {
         "기계·장비",
         "로봇"
       ],
-      "rank": 592
+      "rank": 591
     },
     {
       "ticker": "010820",
@@ -10687,7 +10670,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "항공·방산"
       ],
-      "rank": 593
+      "rank": 592
     },
     {
       "ticker": "078020",
@@ -10705,7 +10688,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "금융"
       ],
-      "rank": 594
+      "rank": 593
     },
     {
       "ticker": "160980",
@@ -10723,7 +10706,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "반도체"
       ],
-      "rank": 595
+      "rank": 594
     },
     {
       "ticker": "015360",
@@ -10741,7 +10724,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "에너지·전력"
       ],
-      "rank": 596
+      "rank": 595
     },
     {
       "ticker": "306200",
@@ -10759,7 +10742,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "철강·금속"
       ],
-      "rank": 597
+      "rank": 596
     },
     {
       "ticker": "029530",
@@ -10777,7 +10760,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "전자·부품"
       ],
-      "rank": 598
+      "rank": 597
     },
     {
       "ticker": "389650",
@@ -10795,7 +10778,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "바이오·제약"
       ],
-      "rank": 599
+      "rank": 598
     },
     {
       "ticker": "215200",
@@ -10813,7 +10796,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 600
+      "rank": 599
     },
     {
       "ticker": "145720",
@@ -10831,7 +10814,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "바이오·제약"
       ],
-      "rank": 601
+      "rank": 600
     },
     {
       "ticker": "107640",
@@ -10849,7 +10832,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기계·장비"
       ],
-      "rank": 602
+      "rank": 601
     },
     {
       "ticker": "069540",
@@ -10867,12 +10850,12 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "전자·부품"
       ],
-      "rank": 603
+      "rank": 602
     },
     {
       "ticker": "0120G0",
       "name": "삼양바이오팜",
-      "name_en": "",
+      "name_en": "Samyang Biopharm",
       "market": "코스피",
       "sector": "바이오·제약",
       "price": 52800,
@@ -10884,7 +10867,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "바이오·제약"
       ],
-      "rank": 604
+      "rank": 603
     },
     {
       "ticker": "230240",
@@ -10902,7 +10885,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "통신"
       ],
-      "rank": 605
+      "rank": 604
     },
     {
       "ticker": "425040",
@@ -10920,7 +10903,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "화학"
       ],
-      "rank": 606
+      "rank": 605
     },
     {
       "ticker": "417310",
@@ -10938,7 +10921,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "부동산·리츠"
       ],
-      "rank": 607
+      "rank": 606
     },
     {
       "ticker": "354320",
@@ -10956,7 +10939,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "철강·금속"
       ],
-      "rank": 608
+      "rank": 607
     },
     {
       "ticker": "060980",
@@ -10974,7 +10957,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "지주"
       ],
-      "rank": 609
+      "rank": 608
     },
     {
       "ticker": "065680",
@@ -10992,7 +10975,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "전자·부품"
       ],
-      "rank": 610
+      "rank": 609
     },
     {
       "ticker": "304360",
@@ -11010,7 +10993,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "바이오·제약"
       ],
-      "rank": 611
+      "rank": 610
     },
     {
       "ticker": "002810",
@@ -11028,7 +11011,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "유통·소비재"
       ],
-      "rank": 612
+      "rank": 611
     },
     {
       "ticker": "098070",
@@ -11046,7 +11029,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기계·장비"
       ],
-      "rank": 613
+      "rank": 612
     },
     {
       "ticker": "012030",
@@ -11064,7 +11047,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "지주"
       ],
-      "rank": 614
+      "rank": 613
     },
     {
       "ticker": "117730",
@@ -11083,7 +11066,7 @@ window.KOS_LIVE_DATA = {
         "기계·장비",
         "로봇"
       ],
-      "rank": 615
+      "rank": 614
     },
     {
       "ticker": "357120",
@@ -11101,7 +11084,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "부동산·리츠"
       ],
-      "rank": 616
+      "rank": 615
     },
     {
       "ticker": "144960",
@@ -11119,7 +11102,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "반도체"
       ],
-      "rank": 617
+      "rank": 616
     },
     {
       "ticker": "067630",
@@ -11137,7 +11120,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "바이오·제약"
       ],
-      "rank": 618
+      "rank": 617
     },
     {
       "ticker": "287840",
@@ -11155,7 +11138,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "바이오·제약"
       ],
-      "rank": 619
+      "rank": 618
     },
     {
       "ticker": "078130",
@@ -11173,7 +11156,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 620
+      "rank": 619
     },
     {
       "ticker": "187660",
@@ -11191,7 +11174,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "바이오·제약"
       ],
-      "rank": 621
+      "rank": 620
     },
     {
       "ticker": "047920",
@@ -11209,7 +11192,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "바이오·제약"
       ],
-      "rank": 622
+      "rank": 621
     },
     {
       "ticker": "394280",
@@ -11228,7 +11211,7 @@ window.KOS_LIVE_DATA = {
         "반도체",
         "인공지능(AI)"
       ],
-      "rank": 623
+      "rank": 622
     },
     {
       "ticker": "092200",
@@ -11246,7 +11229,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "조선"
       ],
-      "rank": 624
+      "rank": 623
     },
     {
       "ticker": "170900",
@@ -11264,7 +11247,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "바이오·제약"
       ],
-      "rank": 625
+      "rank": 624
     },
     {
       "ticker": "105840",
@@ -11282,7 +11265,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "에너지·전력"
       ],
-      "rank": 626
+      "rank": 625
     },
     {
       "ticker": "114810",
@@ -11300,7 +11283,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기계·장비"
       ],
-      "rank": 627
+      "rank": 626
     },
     {
       "ticker": "456010",
@@ -11318,7 +11301,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "반도체"
       ],
-      "rank": 628
+      "rank": 627
     },
     {
       "ticker": "080580",
@@ -11336,7 +11319,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "반도체"
       ],
-      "rank": 629
+      "rank": 628
     },
     {
       "ticker": "015860",
@@ -11354,7 +11337,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "지주"
       ],
-      "rank": 630
+      "rank": 629
     },
     {
       "ticker": "206650",
@@ -11372,7 +11355,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "바이오·제약"
       ],
-      "rank": 631
+      "rank": 630
     },
     {
       "ticker": "215600",
@@ -11390,7 +11373,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "바이오·제약"
       ],
-      "rank": 632
+      "rank": 631
     },
     {
       "ticker": "017810",
@@ -11408,7 +11391,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "식음료"
       ],
-      "rank": 633
+      "rank": 632
     },
     {
       "ticker": "052710",
@@ -11426,7 +11409,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "전자·부품"
       ],
-      "rank": 634
+      "rank": 633
     },
     {
       "ticker": "254490",
@@ -11444,7 +11427,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "반도체"
       ],
-      "rank": 635
+      "rank": 634
     },
     {
       "ticker": "089590",
@@ -11462,7 +11445,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "항공·방산"
       ],
-      "rank": 636
+      "rank": 635
     },
     {
       "ticker": "344820",
@@ -11480,7 +11463,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "건설·건자재"
       ],
-      "rank": 637
+      "rank": 636
     },
     {
       "ticker": "097520",
@@ -11498,7 +11481,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "전자·부품"
       ],
-      "rank": 638
+      "rank": 637
     },
     {
       "ticker": "084110",
@@ -11516,7 +11499,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "지주"
       ],
-      "rank": 639
+      "rank": 638
     },
     {
       "ticker": "003800",
@@ -11534,7 +11517,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "섬유·패션·생활"
       ],
-      "rank": 640
+      "rank": 639
     },
     {
       "ticker": "232530",
@@ -11552,7 +11535,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기계·장비"
       ],
-      "rank": 641
+      "rank": 640
     },
     {
       "ticker": "105630",
@@ -11570,7 +11553,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "섬유·패션·생활"
       ],
-      "rank": 642
+      "rank": 641
     },
     {
       "ticker": "016590",
@@ -11588,7 +11571,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 643
+      "rank": 642
     },
     {
       "ticker": "092790",
@@ -11606,7 +11589,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "철강·금속"
       ],
-      "rank": 644
+      "rank": 643
     },
     {
       "ticker": "005610",
@@ -11624,7 +11607,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "식음료"
       ],
-      "rank": 645
+      "rank": 644
     },
     {
       "ticker": "002030",
@@ -11642,7 +11625,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "지주"
       ],
-      "rank": 646
+      "rank": 645
     },
     {
       "ticker": "265520",
@@ -11660,7 +11643,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "반도체"
       ],
-      "rank": 647
+      "rank": 646
     },
     {
       "ticker": "183190",
@@ -11678,7 +11661,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "건설·건자재"
       ],
-      "rank": 648
+      "rank": 647
     },
     {
       "ticker": "079370",
@@ -11696,7 +11679,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "반도체"
       ],
-      "rank": 649
+      "rank": 648
     },
     {
       "ticker": "119850",
@@ -11714,7 +11697,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "에너지·전력"
       ],
-      "rank": 650
+      "rank": 649
     },
     {
       "ticker": "200470",
@@ -11732,7 +11715,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "전자·부품"
       ],
-      "rank": 651
+      "rank": 650
     },
     {
       "ticker": "234340",
@@ -11750,7 +11733,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "금융"
       ],
-      "rank": 652
+      "rank": 651
     },
     {
       "ticker": "376270",
@@ -11768,7 +11751,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "바이오·제약"
       ],
-      "rank": 653
+      "rank": 652
     },
     {
       "ticker": "092230",
@@ -11786,7 +11769,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "지주"
       ],
-      "rank": 654
+      "rank": 653
     },
     {
       "ticker": "002710",
@@ -11804,7 +11787,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "철강·금속"
       ],
-      "rank": 655
+      "rank": 654
     },
     {
       "ticker": "029460",
@@ -11822,7 +11805,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "반도체"
       ],
-      "rank": 656
+      "rank": 655
     },
     {
       "ticker": "126720",
@@ -11840,7 +11823,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "건설·건자재"
       ],
-      "rank": 657
+      "rank": 656
     },
     {
       "ticker": "179900",
@@ -11858,7 +11841,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "전자·부품"
       ],
-      "rank": 658
+      "rank": 657
     },
     {
       "ticker": "200880",
@@ -11876,7 +11859,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "자동차"
       ],
-      "rank": 659
+      "rank": 658
     },
     {
       "ticker": "441270",
@@ -11894,7 +11877,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "전자·부품"
       ],
-      "rank": 660
+      "rank": 659
     },
     {
       "ticker": "092870",
@@ -11912,7 +11895,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "반도체"
       ],
-      "rank": 661
+      "rank": 660
     },
     {
       "ticker": "204620",
@@ -11930,7 +11913,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "유통·소비재"
       ],
-      "rank": 662
+      "rank": 661
     },
     {
       "ticker": "091810",
@@ -11948,7 +11931,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "항공·방산"
       ],
-      "rank": 663
+      "rank": 662
     },
     {
       "ticker": "417840",
@@ -11966,7 +11949,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "반도체"
       ],
-      "rank": 664
+      "rank": 663
     },
     {
       "ticker": "452430",
@@ -11984,7 +11967,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "반도체"
       ],
-      "rank": 665
+      "rank": 664
     },
     {
       "ticker": "092460",
@@ -12002,7 +11985,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "자동차"
       ],
-      "rank": 666
+      "rank": 665
     },
     {
       "ticker": "488900",
@@ -12020,7 +12003,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "전기장비"
       ],
-      "rank": 667
+      "rank": 666
     },
     {
       "ticker": "424870",
@@ -12038,7 +12021,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "바이오·제약"
       ],
-      "rank": 668
+      "rank": 667
     },
     {
       "ticker": "010690",
@@ -12056,7 +12039,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "자동차"
       ],
-      "rank": 669
+      "rank": 668
     },
     {
       "ticker": "091700",
@@ -12074,7 +12057,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "전자·부품"
       ],
-      "rank": 670
+      "rank": 669
     },
     {
       "ticker": "241520",
@@ -12092,7 +12075,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "금융"
       ],
-      "rank": 671
+      "rank": 670
     },
     {
       "ticker": "058430",
@@ -12110,7 +12093,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "철강·금속"
       ],
-      "rank": 672
+      "rank": 671
     },
     {
       "ticker": "011760",
@@ -12128,7 +12111,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "유통·소비재"
       ],
-      "rank": 673
+      "rank": 672
     },
     {
       "ticker": "286940",
@@ -12146,7 +12129,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "IT·소프트웨어"
       ],
-      "rank": 674
+      "rank": 673
     },
     {
       "ticker": "482630",
@@ -12164,7 +12147,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "화학"
       ],
-      "rank": 675
+      "rank": 674
     },
     {
       "ticker": "025860",
@@ -12182,7 +12165,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "화학"
       ],
-      "rank": 676
+      "rank": 675
     },
     {
       "ticker": "192650",
@@ -12200,7 +12183,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "전자·부품"
       ],
-      "rank": 677
+      "rank": 676
     },
     {
       "ticker": "005950",
@@ -12218,7 +12201,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "화학"
       ],
-      "rank": 678
+      "rank": 677
     },
     {
       "ticker": "243070",
@@ -12236,7 +12219,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "바이오·제약"
       ],
-      "rank": 679
+      "rank": 678
     },
     {
       "ticker": "049070",
@@ -12254,7 +12237,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "전자·부품"
       ],
-      "rank": 680
+      "rank": 679
     },
     {
       "ticker": "317330",
@@ -12272,7 +12255,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "화학"
       ],
-      "rank": 681
+      "rank": 680
     },
     {
       "ticker": "484590",
@@ -12290,7 +12273,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기계·장비"
       ],
-      "rank": 682
+      "rank": 681
     },
     {
       "ticker": "078340",
@@ -12308,7 +12291,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "게임"
       ],
-      "rank": 683
+      "rank": 682
     },
     {
       "ticker": "219130",
@@ -12326,7 +12309,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "전자·부품"
       ],
-      "rank": 684
+      "rank": 683
     },
     {
       "ticker": "005720",
@@ -12344,7 +12327,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "화학"
       ],
-      "rank": 685
+      "rank": 684
     },
     {
       "ticker": "016800",
@@ -12362,7 +12345,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "섬유·패션·생활"
       ],
-      "rank": 686
+      "rank": 685
     },
     {
       "ticker": "064820",
@@ -12380,7 +12363,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "조선"
       ],
-      "rank": 687
+      "rank": 686
     },
     {
       "ticker": "126560",
@@ -12398,7 +12381,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "통신"
       ],
-      "rank": 688
+      "rank": 687
     },
     {
       "ticker": "036200",
@@ -12416,7 +12399,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "반도체"
       ],
-      "rank": 689
+      "rank": 688
     },
     {
       "ticker": "009290",
@@ -12434,7 +12417,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "바이오·제약"
       ],
-      "rank": 690
+      "rank": 689
     },
     {
       "ticker": "475400",
@@ -12453,7 +12436,7 @@ window.KOS_LIVE_DATA = {
         "기계·장비",
         "로봇"
       ],
-      "rank": 691
+      "rank": 690
     },
     {
       "ticker": "203650",
@@ -12471,7 +12454,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "IT·소프트웨어"
       ],
-      "rank": 692
+      "rank": 691
     },
     {
       "ticker": "018250",
@@ -12489,7 +12472,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "화장품"
       ],
-      "rank": 693
+      "rank": 692
     },
     {
       "ticker": "069080",
@@ -12507,7 +12490,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "게임"
       ],
-      "rank": 694
+      "rank": 693
     },
     {
       "ticker": "094360",
@@ -12525,7 +12508,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "반도체"
       ],
-      "rank": 695
+      "rank": 694
     },
     {
       "ticker": "101730",
@@ -12543,7 +12526,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "게임"
       ],
-      "rank": 696
+      "rank": 695
     },
     {
       "ticker": "036890",
@@ -12561,7 +12544,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기계·장비"
       ],
-      "rank": 697
+      "rank": 696
     },
     {
       "ticker": "445090",
@@ -12579,7 +12562,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "반도체"
       ],
-      "rank": 698
+      "rank": 697
     },
     {
       "ticker": "009160",
@@ -12597,7 +12580,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "철강·금속"
       ],
-      "rank": 699
+      "rank": 698
     },
     {
       "ticker": "236200",
@@ -12615,7 +12598,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "IT·소프트웨어"
       ],
-      "rank": 700
+      "rank": 699
     },
     {
       "ticker": "462350",
@@ -12633,7 +12616,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "항공·방산"
       ],
-      "rank": 701
+      "rank": 700
     },
     {
       "ticker": "089980",
@@ -12651,7 +12634,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "화학"
       ],
-      "rank": 702
+      "rank": 701
     },
     {
       "ticker": "194370",
@@ -12669,7 +12652,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "섬유·패션·생활"
       ],
-      "rank": 703
+      "rank": 702
     },
     {
       "ticker": "136480",
@@ -12687,7 +12670,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "식음료"
       ],
-      "rank": 704
+      "rank": 703
     },
     {
       "ticker": "036170",
@@ -12705,7 +12688,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "반도체"
       ],
-      "rank": 705
+      "rank": 704
     },
     {
       "ticker": "274090",
@@ -12723,7 +12706,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "항공·방산"
       ],
-      "rank": 706
+      "rank": 705
     },
     {
       "ticker": "084690",
@@ -12741,7 +12724,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "지주"
       ],
-      "rank": 707
+      "rank": 706
     },
     {
       "ticker": "228760",
@@ -12759,7 +12742,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "바이오·제약"
       ],
-      "rank": 708
+      "rank": 707
     },
     {
       "ticker": "086390",
@@ -12777,7 +12760,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "반도체"
       ],
-      "rank": 709
+      "rank": 708
     },
     {
       "ticker": "042370",
@@ -12795,7 +12778,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "전기장비"
       ],
-      "rank": 710
+      "rank": 709
     },
     {
       "ticker": "099430",
@@ -12813,7 +12796,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "바이오·제약"
       ],
-      "rank": 711
+      "rank": 710
     },
     {
       "ticker": "025770",
@@ -12831,7 +12814,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "금융"
       ],
-      "rank": 712
+      "rank": 711
     },
     {
       "ticker": "001940",
@@ -12849,7 +12832,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "지주"
       ],
-      "rank": 713
+      "rank": 712
     },
     {
       "ticker": "000650",
@@ -12867,7 +12850,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "운송·물류"
       ],
-      "rank": 714
+      "rank": 713
     },
     {
       "ticker": "104700",
@@ -12885,7 +12868,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "철강·금속"
       ],
-      "rank": 715
+      "rank": 714
     },
     {
       "ticker": "001390",
@@ -12903,7 +12886,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "화학"
       ],
-      "rank": 716
+      "rank": 715
     },
     {
       "ticker": "187870",
@@ -12921,7 +12904,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "반도체"
       ],
-      "rank": 717
+      "rank": 716
     },
     {
       "ticker": "450950",
@@ -12939,7 +12922,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "전기장비"
       ],
-      "rank": 718
+      "rank": 717
     },
     {
       "ticker": "272450",
@@ -12957,7 +12940,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "항공·방산"
       ],
-      "rank": 719
+      "rank": 718
     },
     {
       "ticker": "378340",
@@ -12975,7 +12958,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "2차전지"
       ],
-      "rank": 720
+      "rank": 719
     },
     {
       "ticker": "112290",
@@ -12993,7 +12976,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "반도체"
       ],
-      "rank": 721
+      "rank": 720
     },
     {
       "ticker": "242040",
@@ -13011,7 +12994,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "IT·소프트웨어"
       ],
-      "rank": 722
+      "rank": 721
     },
     {
       "ticker": "046970",
@@ -13029,7 +13012,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "전자·부품"
       ],
-      "rank": 723
+      "rank": 722
     },
     {
       "ticker": "365270",
@@ -13047,7 +13030,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "바이오·제약"
       ],
-      "rank": 724
+      "rank": 723
     },
     {
       "ticker": "448280",
@@ -13065,7 +13048,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "에너지·전력"
       ],
-      "rank": 725
+      "rank": 724
     },
     {
       "ticker": "298830",
@@ -13083,7 +13066,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "IT·소프트웨어"
       ],
-      "rank": 726
+      "rank": 725
     },
     {
       "ticker": "200130",
@@ -13101,7 +13084,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "바이오·제약"
       ],
-      "rank": 727
+      "rank": 726
     },
     {
       "ticker": "314930",
@@ -13119,7 +13102,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "바이오·제약"
       ],
-      "rank": 728
+      "rank": 727
     },
     {
       "ticker": "078520",
@@ -13137,7 +13120,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "화장품"
       ],
-      "rank": 729
+      "rank": 728
     },
     {
       "ticker": "024720",
@@ -13155,7 +13138,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "지주"
       ],
-      "rank": 730
+      "rank": 729
     },
     {
       "ticker": "034830",
@@ -13173,7 +13156,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "금융"
       ],
-      "rank": 731
+      "rank": 730
     },
     {
       "ticker": "108670",
@@ -13191,7 +13174,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "건설·건자재"
       ],
-      "rank": 732
+      "rank": 731
     },
     {
       "ticker": "003720",
@@ -13209,7 +13192,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "화학"
       ],
-      "rank": 733
+      "rank": 732
     },
     {
       "ticker": "355150",
@@ -13227,7 +13210,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "반도체"
       ],
-      "rank": 734
+      "rank": 733
     },
     {
       "ticker": "200670",
@@ -13245,7 +13228,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "바이오·제약"
       ],
-      "rank": 735
+      "rank": 734
     },
     {
       "ticker": "018310",
@@ -13263,7 +13246,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "건설·건자재"
       ],
-      "rank": 736
+      "rank": 735
     },
     {
       "ticker": "033270",
@@ -13281,7 +13264,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "바이오·제약"
       ],
-      "rank": 737
+      "rank": 736
     },
     {
       "ticker": "051500",
@@ -13299,7 +13282,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "식음료"
       ],
-      "rank": 738
+      "rank": 737
     },
     {
       "ticker": "002310",
@@ -13317,7 +13300,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "화학"
       ],
-      "rank": 739
+      "rank": 738
     },
     {
       "ticker": "000430",
@@ -13335,7 +13318,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "자동차"
       ],
-      "rank": 740
+      "rank": 739
     },
     {
       "ticker": "035810",
@@ -13353,7 +13336,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "지주"
       ],
-      "rank": 741
+      "rank": 740
     },
     {
       "ticker": "001750",
@@ -13371,7 +13354,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "금융"
       ],
-      "rank": 742
+      "rank": 741
     },
     {
       "ticker": "007690",
@@ -13389,7 +13372,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "화학"
       ],
-      "rank": 743
+      "rank": 742
     },
     {
       "ticker": "078150",
@@ -13407,7 +13390,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "반도체"
       ],
-      "rank": 744
+      "rank": 743
     },
     {
       "ticker": "061090",
@@ -13425,7 +13408,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "전자·부품"
       ],
-      "rank": 745
+      "rank": 744
     },
     {
       "ticker": "058970",
@@ -13443,7 +13426,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "IT·소프트웨어"
       ],
-      "rank": 746
+      "rank": 745
     },
     {
       "ticker": "084010",
@@ -13461,7 +13444,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "철강·금속"
       ],
-      "rank": 747
+      "rank": 746
     },
     {
       "ticker": "001230",
@@ -13479,7 +13462,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "지주"
       ],
-      "rank": 748
+      "rank": 747
     },
     {
       "ticker": "026890",
@@ -13497,12 +13480,12 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "금융"
       ],
-      "rank": 749
+      "rank": 748
     },
     {
       "ticker": "0082N0",
       "name": "카나프테라퓨틱스",
-      "name_en": "",
+      "name_en": "Kanaph Therapeutics",
       "market": "코스닥",
       "sector": "바이오·제약",
       "price": 21250,
@@ -13514,7 +13497,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "바이오·제약"
       ],
-      "rank": 750
+      "rank": 749
     },
     {
       "ticker": "073490",
@@ -13532,7 +13515,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "전자·부품"
       ],
-      "rank": 751
+      "rank": 750
     },
     {
       "ticker": "043150",
@@ -13550,7 +13533,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "바이오·제약"
       ],
-      "rank": 752
+      "rank": 751
     },
     {
       "ticker": "036800",
@@ -13568,7 +13551,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "금융"
       ],
-      "rank": 753
+      "rank": 752
     },
     {
       "ticker": "900140",
@@ -13586,7 +13569,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "지주"
       ],
-      "rank": 754
+      "rank": 753
     },
     {
       "ticker": "307180",
@@ -13604,7 +13587,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기계·장비"
       ],
-      "rank": 755
+      "rank": 754
     },
     {
       "ticker": "215000",
@@ -13622,7 +13605,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "호텔·레저"
       ],
-      "rank": 756
+      "rank": 755
     },
     {
       "ticker": "064850",
@@ -13640,7 +13623,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "금융"
       ],
-      "rank": 757
+      "rank": 756
     },
     {
       "ticker": "352480",
@@ -13658,7 +13641,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "화장품"
       ],
-      "rank": 758
+      "rank": 757
     },
     {
       "ticker": "096760",
@@ -13676,7 +13659,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "지주"
       ],
-      "rank": 759
+      "rank": 758
     },
     {
       "ticker": "194700",
@@ -13694,7 +13677,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "식음료"
       ],
-      "rank": 760
+      "rank": 759
     },
     {
       "ticker": "318060",
@@ -13712,7 +13695,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "화학"
       ],
-      "rank": 761
+      "rank": 760
     },
     {
       "ticker": "041920",
@@ -13730,7 +13713,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "바이오·제약"
       ],
-      "rank": 762
+      "rank": 761
     },
     {
       "ticker": "017390",
@@ -13748,7 +13731,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "에너지·전력"
       ],
-      "rank": 763
+      "rank": 762
     },
     {
       "ticker": "144510",
@@ -13766,7 +13749,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "바이오·제약"
       ],
-      "rank": 764
+      "rank": 763
     },
     {
       "ticker": "017860",
@@ -13784,7 +13767,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "화학"
       ],
-      "rank": 765
+      "rank": 764
     },
     {
       "ticker": "003920",
@@ -13802,7 +13785,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "식음료"
       ],
-      "rank": 766
+      "rank": 765
     },
     {
       "ticker": "037710",
@@ -13820,7 +13803,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "유통·소비재"
       ],
-      "rank": 767
+      "rank": 766
     },
     {
       "ticker": "180400",
@@ -13838,7 +13821,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "바이오·제약"
       ],
-      "rank": 768
+      "rank": 767
     },
     {
       "ticker": "053030",
@@ -13856,7 +13839,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "바이오·제약"
       ],
-      "rank": 769
+      "rank": 768
     },
     {
       "ticker": "092730",
@@ -13874,7 +13857,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "화장품"
       ],
-      "rank": 770
+      "rank": 769
     },
     {
       "ticker": "054950",
@@ -13892,7 +13875,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기계·장비"
       ],
-      "rank": 771
+      "rank": 770
     },
     {
       "ticker": "005500",
@@ -13910,7 +13893,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "바이오·제약"
       ],
-      "rank": 772
+      "rank": 771
     },
     {
       "ticker": "309710",
@@ -13928,7 +13911,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "바이오·제약"
       ],
-      "rank": 773
+      "rank": 772
     },
     {
       "ticker": "065660",
@@ -13946,7 +13929,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "바이오·제약"
       ],
-      "rank": 774
+      "rank": 773
     },
     {
       "ticker": "002900",
@@ -13964,7 +13947,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기계·장비"
       ],
-      "rank": 775
+      "rank": 774
     },
     {
       "ticker": "061970",
@@ -13982,7 +13965,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "반도체"
       ],
-      "rank": 776
+      "rank": 775
     },
     {
       "ticker": "005680",
@@ -14000,7 +13983,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "전자·부품"
       ],
-      "rank": 777
+      "rank": 776
     },
     {
       "ticker": "023410",
@@ -14018,7 +14001,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "건설·건자재"
       ],
-      "rank": 778
+      "rank": 777
     },
     {
       "ticker": "220100",
@@ -14036,7 +14019,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "바이오·제약"
       ],
-      "rank": 779
+      "rank": 778
     },
     {
       "ticker": "035600",
@@ -14054,7 +14037,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "IT·소프트웨어"
       ],
-      "rank": 780
+      "rank": 779
     },
     {
       "ticker": "182400",
@@ -14072,7 +14055,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "바이오·제약"
       ],
-      "rank": 781
+      "rank": 780
     },
     {
       "ticker": "001340",
@@ -14090,7 +14073,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "화학"
       ],
-      "rank": 782
+      "rank": 781
     },
     {
       "ticker": "123890",
@@ -14108,7 +14091,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "금융"
       ],
-      "rank": 783
+      "rank": 782
     },
     {
       "ticker": "005010",
@@ -14126,7 +14109,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "철강·금속"
       ],
-      "rank": 784
+      "rank": 783
     },
     {
       "ticker": "060720",
@@ -14144,7 +14127,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "전자·부품"
       ],
-      "rank": 785
+      "rank": 784
     },
     {
       "ticker": "084850",
@@ -14162,7 +14145,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "반도체"
       ],
-      "rank": 786
+      "rank": 785
     },
     {
       "ticker": "004360",
@@ -14180,7 +14163,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "운송·물류"
       ],
-      "rank": 787
+      "rank": 786
     },
     {
       "ticker": "459510",
@@ -14199,7 +14182,7 @@ window.KOS_LIVE_DATA = {
         "기계·장비",
         "로봇"
       ],
-      "rank": 788
+      "rank": 787
     },
     {
       "ticker": "478340",
@@ -14217,7 +14200,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "항공·방산"
       ],
-      "rank": 789
+      "rank": 788
     },
     {
       "ticker": "394800",
@@ -14235,7 +14218,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "바이오·제약"
       ],
-      "rank": 790
+      "rank": 789
     },
     {
       "ticker": "416180",
@@ -14253,7 +14236,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "전자·부품"
       ],
-      "rank": 791
+      "rank": 790
     },
     {
       "ticker": "011500",
@@ -14271,12 +14254,12 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "화학"
       ],
-      "rank": 792
+      "rank": 791
     },
     {
       "ticker": "0001A0",
       "name": "덕양에너젠",
-      "name_en": "",
+      "name_en": "Deokyang Energen",
       "market": "코스닥",
       "sector": "에너지·전력",
       "price": 10400,
@@ -14288,7 +14271,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "에너지·전력"
       ],
-      "rank": 793
+      "rank": 792
     },
     {
       "ticker": "322310",
@@ -14306,7 +14289,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "반도체"
       ],
-      "rank": 794
+      "rank": 793
     },
     {
       "ticker": "043370",
@@ -14324,7 +14307,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "자동차"
       ],
-      "rank": 795
+      "rank": 794
     },
     {
       "ticker": "108860",
@@ -14343,7 +14326,7 @@ window.KOS_LIVE_DATA = {
         "IT·소프트웨어",
         "인공지능(AI)"
       ],
-      "rank": 796
+      "rank": 795
     },
     {
       "ticker": "900290",
@@ -14361,7 +14344,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "금융"
       ],
-      "rank": 797
+      "rank": 796
     },
     {
       "ticker": "121800",
@@ -14379,7 +14362,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "전자·부품"
       ],
-      "rank": 798
+      "rank": 797
     },
     {
       "ticker": "046120",
@@ -14397,7 +14380,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 799
+      "rank": 798
     },
     {
       "ticker": "002320",
@@ -14415,7 +14398,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "운송·물류"
       ],
-      "rank": 800
+      "rank": 799
     },
     {
       "ticker": "419530",
@@ -14433,7 +14416,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "미디어·엔터"
       ],
-      "rank": 801
+      "rank": 800
     },
     {
       "ticker": "051360",
@@ -14451,7 +14434,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "전자·부품"
       ],
-      "rank": 802
+      "rank": 801
     },
     {
       "ticker": "377460",
@@ -14469,7 +14452,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 803
+      "rank": 802
     },
     {
       "ticker": "357880",
@@ -14487,7 +14470,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "IT·소프트웨어"
       ],
-      "rank": 804
+      "rank": 803
     },
     {
       "ticker": "243840",
@@ -14505,7 +14488,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "2차전지"
       ],
-      "rank": 805
+      "rank": 804
     },
     {
       "ticker": "267980",
@@ -14523,7 +14506,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "식음료"
       ],
-      "rank": 806
+      "rank": 805
     },
     {
       "ticker": "003220",
@@ -14541,7 +14524,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "바이오·제약"
       ],
-      "rank": 807
+      "rank": 806
     },
     {
       "ticker": "114190",
@@ -14559,7 +14542,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "에너지·전력"
       ],
-      "rank": 808
+      "rank": 807
     },
     {
       "ticker": "091580",
@@ -14577,7 +14560,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "2차전지"
       ],
-      "rank": 809
+      "rank": 808
     },
     {
       "ticker": "036710",
@@ -14595,7 +14578,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "지주"
       ],
-      "rank": 810
+      "rank": 809
     },
     {
       "ticker": "950170",
@@ -14613,7 +14596,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "유통·소비재"
       ],
-      "rank": 811
+      "rank": 810
     },
     {
       "ticker": "019010",
@@ -14631,7 +14614,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "유통·소비재"
       ],
-      "rank": 812
+      "rank": 811
     },
     {
       "ticker": "389260",
@@ -14649,7 +14632,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "에너지·전력"
       ],
-      "rank": 813
+      "rank": 812
     },
     {
       "ticker": "217730",
@@ -14667,7 +14650,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "바이오·제약"
       ],
-      "rank": 814
+      "rank": 813
     },
     {
       "ticker": "272110",
@@ -14685,12 +14668,12 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "반도체"
       ],
-      "rank": 815
+      "rank": 814
     },
     {
       "ticker": "0030R0",
       "name": "대신밸류리츠",
-      "name_en": "",
+      "name_en": "Daishin Value REIT",
       "market": "코스피",
       "sector": "부동산·리츠",
       "price": 4160,
@@ -14702,7 +14685,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "부동산·리츠"
       ],
-      "rank": 816
+      "rank": 815
     },
     {
       "ticker": "014940",
@@ -14720,7 +14703,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "조선"
       ],
-      "rank": 817
+      "rank": 816
     },
     {
       "ticker": "308430",
@@ -14738,7 +14721,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "바이오·제약"
       ],
-      "rank": 818
+      "rank": 817
     },
     {
       "ticker": "003120",
@@ -14756,7 +14739,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "바이오·제약"
       ],
-      "rank": 819
+      "rank": 818
     },
     {
       "ticker": "088260",
@@ -14774,7 +14757,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "부동산·리츠"
       ],
-      "rank": 820
+      "rank": 819
     },
     {
       "ticker": "093520",
@@ -14792,7 +14775,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "전자·부품"
       ],
-      "rank": 821
+      "rank": 820
     },
     {
       "ticker": "389020",
@@ -14810,7 +14793,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "반도체"
       ],
-      "rank": 822
+      "rank": 821
     },
     {
       "ticker": "382900",
@@ -14828,7 +14811,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "에너지·전력"
       ],
-      "rank": 823
+      "rank": 822
     },
     {
       "ticker": "357550",
@@ -14846,7 +14829,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "화학"
       ],
-      "rank": 824
+      "rank": 823
     },
     {
       "ticker": "001250",
@@ -14864,7 +14847,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "유통·소비재"
       ],
-      "rank": 825
+      "rank": 824
     },
     {
       "ticker": "125020",
@@ -14882,7 +14865,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기계·장비"
       ],
-      "rank": 826
+      "rank": 825
     },
     {
       "ticker": "472850",
@@ -14900,12 +14883,12 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "유통·소비재"
       ],
-      "rank": 827
+      "rank": 826
     },
     {
       "ticker": "0008Z0",
       "name": "에스엔시스",
-      "name_en": "",
+      "name_en": "SNSYS",
       "market": "코스닥",
       "sector": "IT·소프트웨어",
       "price": 25750,
@@ -14917,7 +14900,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "IT·소프트웨어"
       ],
-      "rank": 828
+      "rank": 827
     },
     {
       "ticker": "122900",
@@ -14935,7 +14918,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "유통·소비재"
       ],
-      "rank": 829
+      "rank": 828
     },
     {
       "ticker": "475560",
@@ -14953,7 +14936,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "식음료"
       ],
-      "rank": 830
+      "rank": 829
     },
     {
       "ticker": "314130",
@@ -14971,7 +14954,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "바이오·제약"
       ],
-      "rank": 831
+      "rank": 830
     },
     {
       "ticker": "128820",
@@ -14989,7 +14972,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "유통·소비재"
       ],
-      "rank": 832
+      "rank": 831
     },
     {
       "ticker": "010580",
@@ -15007,7 +14990,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "자동차"
       ],
-      "rank": 833
+      "rank": 832
     },
     {
       "ticker": "151860",
@@ -15025,7 +15008,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "자동차"
       ],
-      "rank": 834
+      "rank": 833
     },
     {
       "ticker": "018000",
@@ -15043,7 +15026,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "에너지·전력"
       ],
-      "rank": 835
+      "rank": 834
     },
     {
       "ticker": "003960",
@@ -15061,7 +15044,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "식음료"
       ],
-      "rank": 836
+      "rank": 835
     },
     {
       "ticker": "004430",
@@ -15079,7 +15062,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "화학"
       ],
-      "rank": 837
+      "rank": 836
     },
     {
       "ticker": "000680",
@@ -15097,12 +15080,12 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "유통·소비재"
       ],
-      "rank": 838
+      "rank": 837
     },
     {
       "ticker": "0015G0",
       "name": "그린광학",
-      "name_en": "",
+      "name_en": "Green Optics",
       "market": "코스닥",
       "sector": "전자·부품",
       "price": 20450,
@@ -15114,7 +15097,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "전자·부품"
       ],
-      "rank": 839
+      "rank": 838
     },
     {
       "ticker": "094480",
@@ -15132,7 +15115,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "금융"
       ],
-      "rank": 840
+      "rank": 839
     },
     {
       "ticker": "017890",
@@ -15150,7 +15133,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "화학"
       ],
-      "rank": 841
+      "rank": 840
     },
     {
       "ticker": "251370",
@@ -15168,7 +15151,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "반도체"
       ],
-      "rank": 842
+      "rank": 841
     },
     {
       "ticker": "034120",
@@ -15186,7 +15169,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "미디어·엔터"
       ],
-      "rank": 843
+      "rank": 842
     },
     {
       "ticker": "005430",
@@ -15204,7 +15187,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "항공·방산"
       ],
-      "rank": 844
+      "rank": 843
     },
     {
       "ticker": "084990",
@@ -15222,7 +15205,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "바이오·제약"
       ],
-      "rank": 845
+      "rank": 844
     },
     {
       "ticker": "037270",
@@ -15240,7 +15223,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "미디어·엔터"
       ],
-      "rank": 846
+      "rank": 845
     },
     {
       "ticker": "067390",
@@ -15258,7 +15241,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "항공·방산"
       ],
-      "rank": 847
+      "rank": 846
     },
     {
       "ticker": "451760",
@@ -15276,7 +15259,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "IT·소프트웨어"
       ],
-      "rank": 848
+      "rank": 847
     },
     {
       "ticker": "003200",
@@ -15294,7 +15277,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "섬유·패션·생활"
       ],
-      "rank": 849
+      "rank": 848
     },
     {
       "ticker": "206640",
@@ -15312,7 +15295,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "바이오·제약"
       ],
-      "rank": 850
+      "rank": 849
     },
     {
       "ticker": "474650",
@@ -15330,7 +15313,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기계·장비"
       ],
-      "rank": 851
+      "rank": 850
     },
     {
       "ticker": "100120",
@@ -15348,7 +15331,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "전자·부품"
       ],
-      "rank": 852
+      "rank": 851
     },
     {
       "ticker": "054210",
@@ -15366,7 +15349,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "전자·부품"
       ],
-      "rank": 853
+      "rank": 852
     },
     {
       "ticker": "023760",
@@ -15384,7 +15367,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "금융"
       ],
-      "rank": 854
+      "rank": 853
     },
     {
       "ticker": "115450",
@@ -15402,7 +15385,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "바이오·제약"
       ],
-      "rank": 855
+      "rank": 854
     },
     {
       "ticker": "099440",
@@ -15420,7 +15403,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기계·장비"
       ],
-      "rank": 856
+      "rank": 855
     },
     {
       "ticker": "003520",
@@ -15438,7 +15421,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "바이오·제약"
       ],
-      "rank": 857
+      "rank": 856
     },
     {
       "ticker": "348950",
@@ -15456,7 +15439,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "부동산·리츠"
       ],
-      "rank": 858
+      "rank": 857
     },
     {
       "ticker": "190510",
@@ -15474,7 +15457,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "전자·부품"
       ],
-      "rank": 859
+      "rank": 858
     },
     {
       "ticker": "012860",
@@ -15492,7 +15475,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "전자·부품"
       ],
-      "rank": 860
+      "rank": 859
     },
     {
       "ticker": "136490",
@@ -15510,7 +15493,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "식음료"
       ],
-      "rank": 861
+      "rank": 860
     },
     {
       "ticker": "098120",
@@ -15528,7 +15511,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "반도체"
       ],
-      "rank": 862
+      "rank": 861
     },
     {
       "ticker": "000540",
@@ -15546,7 +15529,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "보험"
       ],
-      "rank": 863
+      "rank": 862
     },
     {
       "ticker": "000490",
@@ -15564,7 +15547,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기계·장비"
       ],
-      "rank": 864
+      "rank": 863
     },
     {
       "ticker": "095500",
@@ -15582,7 +15565,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "전자·부품"
       ],
-      "rank": 865
+      "rank": 864
     },
     {
       "ticker": "003070",
@@ -15600,7 +15583,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "건설·건자재"
       ],
-      "rank": 866
+      "rank": 865
     },
     {
       "ticker": "199820",
@@ -15618,7 +15601,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "전기장비"
       ],
-      "rank": 867
+      "rank": 866
     },
     {
       "ticker": "149950",
@@ -15636,7 +15619,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "전자·부품"
       ],
-      "rank": 868
+      "rank": 867
     },
     {
       "ticker": "338840",
@@ -15654,7 +15637,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "바이오·제약"
       ],
-      "rank": 869
+      "rank": 868
     },
     {
       "ticker": "394420",
@@ -15672,7 +15655,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "바이오·제약"
       ],
-      "rank": 870
+      "rank": 869
     },
     {
       "ticker": "290690",
@@ -15690,7 +15673,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "전기장비"
       ],
-      "rank": 871
+      "rank": 870
     },
     {
       "ticker": "088800",
@@ -15708,7 +15691,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "전자·부품"
       ],
-      "rank": 872
+      "rank": 871
     },
     {
       "ticker": "334890",
@@ -15726,7 +15709,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "부동산·리츠"
       ],
-      "rank": 873
+      "rank": 872
     },
     {
       "ticker": "000320",
@@ -15744,12 +15727,12 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "지주"
       ],
-      "rank": 874
+      "rank": 873
     },
     {
       "ticker": "0088M0",
       "name": "메쥬",
-      "name_en": "",
+      "name_en": "Mezoo",
       "market": "코스닥",
       "sector": "바이오·제약",
       "price": 22800,
@@ -15761,7 +15744,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "바이오·제약"
       ],
-      "rank": 875
+      "rank": 874
     },
     {
       "ticker": "294570",
@@ -15779,7 +15762,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "IT·소프트웨어"
       ],
-      "rank": 876
+      "rank": 875
     },
     {
       "ticker": "035510",
@@ -15797,7 +15780,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "IT·소프트웨어"
       ],
-      "rank": 877
+      "rank": 876
     },
     {
       "ticker": "049630",
@@ -15815,7 +15798,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "전자·부품"
       ],
-      "rank": 878
+      "rank": 877
     },
     {
       "ticker": "461300",
@@ -15833,7 +15816,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "IT·소프트웨어"
       ],
-      "rank": 879
+      "rank": 878
     },
     {
       "ticker": "011560",
@@ -15851,7 +15834,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "건설·건자재"
       ],
-      "rank": 880
+      "rank": 879
     },
     {
       "ticker": "494120",
@@ -15869,7 +15852,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "전기장비"
       ],
-      "rank": 881
+      "rank": 880
     },
     {
       "ticker": "000050",
@@ -15887,7 +15870,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "섬유·패션·생활"
       ],
-      "rank": 882
+      "rank": 881
     },
     {
       "ticker": "134380",
@@ -15905,7 +15888,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "화학"
       ],
-      "rank": 883
+      "rank": 882
     },
     {
       "ticker": "001460",
@@ -15923,7 +15906,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "섬유·패션·생활"
       ],
-      "rank": 884
+      "rank": 883
     },
     {
       "ticker": "045390",
@@ -15941,7 +15924,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "IT·소프트웨어"
       ],
-      "rank": 885
+      "rank": 884
     },
     {
       "ticker": "036030",
@@ -15959,7 +15942,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "유통·소비재"
       ],
-      "rank": 886
+      "rank": 885
     },
     {
       "ticker": "138610",
@@ -15977,7 +15960,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "바이오·제약"
       ],
-      "rank": 887
+      "rank": 886
     },
     {
       "ticker": "030210",
@@ -15995,7 +15978,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "금융"
       ],
-      "rank": 888
+      "rank": 887
     },
     {
       "ticker": "044450",
@@ -16013,7 +15996,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "운송·물류"
       ],
-      "rank": 889
+      "rank": 888
     },
     {
       "ticker": "007160",
@@ -16031,7 +16014,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "식음료"
       ],
-      "rank": 890
+      "rank": 889
     },
     {
       "ticker": "432320",
@@ -16049,7 +16032,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "부동산·리츠"
       ],
-      "rank": 891
+      "rank": 890
     },
     {
       "ticker": "210980",
@@ -16067,7 +16050,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "부동산·리츠"
       ],
-      "rank": 892
+      "rank": 891
     },
     {
       "ticker": "067080",
@@ -16085,7 +16068,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "바이오·제약"
       ],
-      "rank": 893
+      "rank": 892
     },
     {
       "ticker": "051370",
@@ -16103,7 +16086,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "전자·부품"
       ],
-      "rank": 894
+      "rank": 893
     },
     {
       "ticker": "439090",
@@ -16121,7 +16104,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "화장품"
       ],
-      "rank": 895
+      "rank": 894
     },
     {
       "ticker": "101360",
@@ -16139,7 +16122,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "2차전지"
       ],
-      "rank": 896
+      "rank": 895
     },
     {
       "ticker": "000480",
@@ -16157,7 +16140,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "지주"
       ],
-      "rank": 897
+      "rank": 896
     },
     {
       "ticker": "159010",
@@ -16175,7 +16158,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기계·장비"
       ],
-      "rank": 898
+      "rank": 897
     },
     {
       "ticker": "304100",
@@ -16194,7 +16177,7 @@ window.KOS_LIVE_DATA = {
         "IT·소프트웨어",
         "인공지능(AI)"
       ],
-      "rank": 899
+      "rank": 898
     },
     {
       "ticker": "053300",
@@ -16212,7 +16195,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "IT·소프트웨어"
       ],
-      "rank": 900
+      "rank": 899
     },
     {
       "ticker": "009470",
@@ -16230,7 +16213,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "전자·부품"
       ],
-      "rank": 901
+      "rank": 900
     },
     {
       "ticker": "012210",
@@ -16248,7 +16231,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "철강·금속"
       ],
-      "rank": 902
+      "rank": 901
     },
     {
       "ticker": "255220",
@@ -16266,7 +16249,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "건설·건자재"
       ],
-      "rank": 903
+      "rank": 902
     },
     {
       "ticker": "092220",
@@ -16284,7 +16267,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "반도체"
       ],
-      "rank": 904
+      "rank": 903
     },
     {
       "ticker": "009680",
@@ -16302,7 +16285,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "자동차"
       ],
-      "rank": 905
+      "rank": 904
     },
     {
       "ticker": "001790",
@@ -16320,7 +16303,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "식음료"
       ],
-      "rank": 906
+      "rank": 905
     },
     {
       "ticker": "226320",
@@ -16338,7 +16321,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "화장품"
       ],
-      "rank": 907
+      "rank": 906
     },
     {
       "ticker": "025000",
@@ -16356,7 +16339,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "화학"
       ],
-      "rank": 908
+      "rank": 907
     },
     {
       "ticker": "008490",
@@ -16374,7 +16357,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "바이오·제약"
       ],
-      "rank": 909
+      "rank": 908
     },
     {
       "ticker": "244920",
@@ -16392,7 +16375,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "보험"
       ],
-      "rank": 910
+      "rank": 909
     },
     {
       "ticker": "003650",
@@ -16410,7 +16393,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "정유"
       ],
-      "rank": 911
+      "rank": 910
     },
     {
       "ticker": "033920",
@@ -16428,7 +16411,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "식음료"
       ],
-      "rank": 912
+      "rank": 911
     },
     {
       "ticker": "353810",
@@ -16446,7 +16429,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "식음료"
       ],
-      "rank": 913
+      "rank": 912
     },
     {
       "ticker": "001630",
@@ -16464,7 +16447,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "지주"
       ],
-      "rank": 914
+      "rank": 913
     },
     {
       "ticker": "013120",
@@ -16482,7 +16465,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "건설·건자재"
       ],
-      "rank": 915
+      "rank": 914
     },
     {
       "ticker": "402030",
@@ -16501,7 +16484,7 @@ window.KOS_LIVE_DATA = {
         "IT·소프트웨어",
         "인공지능(AI)"
       ],
-      "rank": 916
+      "rank": 915
     },
     {
       "ticker": "068930",
@@ -16519,7 +16502,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "미디어·엔터"
       ],
-      "rank": 917
+      "rank": 916
     },
     {
       "ticker": "064550",
@@ -16537,7 +16520,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "바이오·제약"
       ],
-      "rank": 918
+      "rank": 917
     },
     {
       "ticker": "065710",
@@ -16555,7 +16538,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "전기장비"
       ],
-      "rank": 919
+      "rank": 918
     },
     {
       "ticker": "126730",
@@ -16573,7 +16556,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "반도체"
       ],
-      "rank": 920
+      "rank": 919
     },
     {
       "ticker": "053210",
@@ -16591,12 +16574,12 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "통신"
       ],
-      "rank": 921
+      "rank": 920
     },
     {
       "ticker": "0007C0",
       "name": "아크릴",
-      "name_en": "",
+      "name_en": "Acryl",
       "market": "코스닥",
       "sector": "화학",
       "price": 25750,
@@ -16608,7 +16591,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "화학"
       ],
-      "rank": 922
+      "rank": 921
     },
     {
       "ticker": "380540",
@@ -16626,7 +16609,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "전자·부품"
       ],
-      "rank": 923
+      "rank": 922
     },
     {
       "ticker": "256840",
@@ -16644,7 +16627,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "바이오·제약"
       ],
-      "rank": 924
+      "rank": 923
     },
     {
       "ticker": "004980",
@@ -16662,7 +16645,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "건설·건자재"
       ],
-      "rank": 925
+      "rank": 924
     },
     {
       "ticker": "123860",
@@ -16680,7 +16663,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "반도체"
       ],
-      "rank": 926
+      "rank": 925
     },
     {
       "ticker": "404990",
@@ -16698,7 +16681,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "부동산·리츠"
       ],
-      "rank": 927
+      "rank": 926
     },
     {
       "ticker": "484810",
@@ -16717,7 +16700,7 @@ window.KOS_LIVE_DATA = {
         "기계·장비",
         "로봇"
       ],
-      "rank": 928
+      "rank": 927
     },
     {
       "ticker": "382800",
@@ -16735,7 +16718,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "자동차"
       ],
-      "rank": 929
+      "rank": 928
     },
     {
       "ticker": "377190",
@@ -16753,7 +16736,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "부동산·리츠"
       ],
-      "rank": 930
+      "rank": 929
     },
     {
       "ticker": "035150",
@@ -16771,7 +16754,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "화학"
       ],
-      "rank": 931
+      "rank": 930
     },
     {
       "ticker": "005710",
@@ -16789,7 +16772,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "자동차"
       ],
-      "rank": 932
+      "rank": 931
     },
     {
       "ticker": "004380",
@@ -16807,7 +16790,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기계·장비"
       ],
-      "rank": 933
+      "rank": 932
     },
     {
       "ticker": "053690",
@@ -16825,7 +16808,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "건설·건자재"
       ],
-      "rank": 934
+      "rank": 933
     },
     {
       "ticker": "488280",
@@ -16843,7 +16826,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "IT·소프트웨어"
       ],
-      "rank": 935
+      "rank": 934
     },
     {
       "ticker": "241590",
@@ -16861,7 +16844,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "섬유·패션·생활"
       ],
-      "rank": 936
+      "rank": 935
     },
     {
       "ticker": "232680",
@@ -16880,7 +16863,7 @@ window.KOS_LIVE_DATA = {
         "기계·장비",
         "로봇"
       ],
-      "rank": 937
+      "rank": 936
     },
     {
       "ticker": "457550",
@@ -16898,7 +16881,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "에너지·전력"
       ],
-      "rank": 938
+      "rank": 937
     },
     {
       "ticker": "119610",
@@ -16916,7 +16899,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "전자·부품"
       ],
-      "rank": 939
+      "rank": 938
     },
     {
       "ticker": "092070",
@@ -16934,7 +16917,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "반도체"
       ],
-      "rank": 940
+      "rank": 939
     },
     {
       "ticker": "417010",
@@ -16952,7 +16935,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "전기장비"
       ],
-      "rank": 941
+      "rank": 940
     },
     {
       "ticker": "004560",
@@ -16970,7 +16953,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "철강·금속"
       ],
-      "rank": 942
+      "rank": 941
     },
     {
       "ticker": "211270",
@@ -16988,7 +16971,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "항공·방산"
       ],
-      "rank": 943
+      "rank": 942
     },
     {
       "ticker": "418550",
@@ -17006,7 +16989,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "2차전지"
       ],
-      "rank": 944
+      "rank": 943
     },
     {
       "ticker": "214180",
@@ -17024,7 +17007,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "IT·소프트웨어"
       ],
-      "rank": 945
+      "rank": 944
     },
     {
       "ticker": "339770",
@@ -17042,7 +17025,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "식음료"
       ],
-      "rank": 946
+      "rank": 945
     },
     {
       "ticker": "432720",
@@ -17060,7 +17043,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "반도체"
       ],
-      "rank": 947
+      "rank": 946
     },
     {
       "ticker": "402490",
@@ -17078,7 +17061,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "반도체"
       ],
-      "rank": 948
+      "rank": 947
     },
     {
       "ticker": "001780",
@@ -17096,7 +17079,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "철강·금속"
       ],
-      "rank": 949
+      "rank": 948
     },
     {
       "ticker": "126600",
@@ -17114,7 +17097,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "화학"
       ],
-      "rank": 950
+      "rank": 949
     },
     {
       "ticker": "308080",
@@ -17132,7 +17115,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "바이오·제약"
       ],
-      "rank": 951
+      "rank": 950
     },
     {
       "ticker": "446540",
@@ -17150,7 +17133,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기계·장비"
       ],
-      "rank": 952
+      "rank": 951
     },
     {
       "ticker": "464080",
@@ -17168,7 +17151,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기계·장비"
       ],
-      "rank": 953
+      "rank": 952
     },
     {
       "ticker": "039570",
@@ -17186,7 +17169,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "IT·소프트웨어"
       ],
-      "rank": 954
+      "rank": 953
     },
     {
       "ticker": "013890",
@@ -17204,7 +17187,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "섬유·패션·생활"
       ],
-      "rank": 955
+      "rank": 954
     },
     {
       "ticker": "034810",
@@ -17222,7 +17205,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "금융"
       ],
-      "rank": 956
+      "rank": 955
     },
     {
       "ticker": "037560",
@@ -17240,7 +17223,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "통신"
       ],
-      "rank": 957
+      "rank": 956
     },
     {
       "ticker": "117580",
@@ -17258,7 +17241,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "에너지·전력"
       ],
-      "rank": 958
+      "rank": 957
     },
     {
       "ticker": "102260",
@@ -17276,7 +17259,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "화학"
       ],
-      "rank": 959
+      "rank": 958
     },
     {
       "ticker": "001130",
@@ -17294,7 +17277,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "식음료"
       ],
-      "rank": 960
+      "rank": 959
     },
     {
       "ticker": "036190",
@@ -17312,7 +17295,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "에너지·전력"
       ],
-      "rank": 961
+      "rank": 960
     },
     {
       "ticker": "487570",
@@ -17330,7 +17313,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "지주"
       ],
-      "rank": 962
+      "rank": 961
     },
     {
       "ticker": "054450",
@@ -17348,7 +17331,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "반도체"
       ],
-      "rank": 963
+      "rank": 962
     },
     {
       "ticker": "138360",
@@ -17367,7 +17350,7 @@ window.KOS_LIVE_DATA = {
         "기계·장비",
         "로봇"
       ],
-      "rank": 964
+      "rank": 963
     },
     {
       "ticker": "237880",
@@ -17385,7 +17368,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "화장품"
       ],
-      "rank": 965
+      "rank": 964
     },
     {
       "ticker": "007860",
@@ -17403,7 +17386,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "지주"
       ],
-      "rank": 966
+      "rank": 965
     },
     {
       "ticker": "083310",
@@ -17421,7 +17404,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "반도체"
       ],
-      "rank": 967
+      "rank": 966
     },
     {
       "ticker": "474170",
@@ -17439,7 +17422,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "항공·방산"
       ],
-      "rank": 968
+      "rank": 967
     },
     {
       "ticker": "033530",
@@ -17457,7 +17440,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "항공·방산"
       ],
-      "rank": 969
+      "rank": 968
     },
     {
       "ticker": "405100",
@@ -17475,7 +17458,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "반도체"
       ],
-      "rank": 970
+      "rank": 969
     },
     {
       "ticker": "216080",
@@ -17493,7 +17476,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "바이오·제약"
       ],
-      "rank": 971
+      "rank": 970
     },
     {
       "ticker": "001080",
@@ -17511,7 +17494,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "철강·금속"
       ],
-      "rank": 972
+      "rank": 971
     },
     {
       "ticker": "004310",
@@ -17529,7 +17512,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "바이오·제약"
       ],
-      "rank": 973
+      "rank": 972
     },
     {
       "ticker": "095570",
@@ -17547,7 +17530,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "유통·소비재"
       ],
-      "rank": 974
+      "rank": 973
     },
     {
       "ticker": "192440",
@@ -17565,7 +17548,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "유통·소비재"
       ],
-      "rank": 975
+      "rank": 974
     },
     {
       "ticker": "052330",
@@ -17583,7 +17566,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "전자·부품"
       ],
-      "rank": 976
+      "rank": 975
     },
     {
       "ticker": "298690",
@@ -17601,7 +17584,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "항공·방산"
       ],
-      "rank": 977
+      "rank": 976
     },
     {
       "ticker": "462860",
@@ -17619,7 +17602,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "통신"
       ],
-      "rank": 978
+      "rank": 977
     },
     {
       "ticker": "036560",
@@ -17637,7 +17620,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "자동차"
       ],
-      "rank": 979
+      "rank": 978
     },
     {
       "ticker": "094820",
@@ -17655,7 +17638,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "에너지·전력"
       ],
-      "rank": 980
+      "rank": 979
     },
     {
       "ticker": "016580",
@@ -17673,7 +17656,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "바이오·제약"
       ],
-      "rank": 981
+      "rank": 980
     },
     {
       "ticker": "039830",
@@ -17691,7 +17674,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "미디어·엔터"
       ],
-      "rank": 982
+      "rank": 981
     },
     {
       "ticker": "032580",
@@ -17709,7 +17692,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "반도체"
       ],
-      "rank": 983
+      "rank": 982
     },
     {
       "ticker": "066620",
@@ -17727,7 +17710,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "운송·물류"
       ],
-      "rank": 984
+      "rank": 983
     },
     {
       "ticker": "042600",
@@ -17745,7 +17728,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "전자·부품"
       ],
-      "rank": 985
+      "rank": 984
     },
     {
       "ticker": "000140",
@@ -17763,7 +17746,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "지주"
       ],
-      "rank": 986
+      "rank": 985
     },
     {
       "ticker": "123330",
@@ -17781,7 +17764,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "화장품"
       ],
-      "rank": 987
+      "rank": 986
     },
     {
       "ticker": "016790",
@@ -17799,7 +17782,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "식음료"
       ],
-      "rank": 988
+      "rank": 987
     },
     {
       "ticker": "122990",
@@ -17817,7 +17800,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "전자·부품"
       ],
-      "rank": 989
+      "rank": 988
     },
     {
       "ticker": "321550",
@@ -17835,7 +17818,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "바이오·제약"
       ],
-      "rank": 990
+      "rank": 989
     },
     {
       "ticker": "012200",
@@ -17853,7 +17836,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기계·장비"
       ],
-      "rank": 991
+      "rank": 990
     },
     {
       "ticker": "028100",
@@ -17871,7 +17854,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "건설·건자재"
       ],
-      "rank": 992
+      "rank": 991
     },
     {
       "ticker": "078070",
@@ -17889,7 +17872,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "지주"
       ],
-      "rank": 993
+      "rank": 992
     },
     {
       "ticker": "003350",
@@ -17907,7 +17890,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "화장품"
       ],
-      "rank": 994
+      "rank": 993
     },
     {
       "ticker": "372170",
@@ -17925,7 +17908,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기계·장비"
       ],
-      "rank": 995
+      "rank": 994
     },
     {
       "ticker": "100250",
@@ -17943,7 +17926,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "지주"
       ],
-      "rank": 996
+      "rank": 995
     },
     {
       "ticker": "083930",
@@ -17961,7 +17944,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기계·장비"
       ],
-      "rank": 997
+      "rank": 996
     },
     {
       "ticker": "003610",
@@ -17979,7 +17962,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "섬유·패션·생활"
       ],
-      "rank": 998
+      "rank": 997
     },
     {
       "ticker": "121440",
@@ -17997,7 +17980,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "지주"
       ],
-      "rank": 999
+      "rank": 998
     },
     {
       "ticker": "041020",
@@ -18015,7 +17998,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "IT·소프트웨어"
       ],
-      "rank": 1000
+      "rank": 999
     },
     {
       "ticker": "039840",
@@ -18033,7 +18016,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "바이오·제약"
       ],
-      "rank": 1001
+      "rank": 1000
     },
     {
       "ticker": "484120",
@@ -18051,7 +18034,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "반도체"
       ],
-      "rank": 1002
+      "rank": 1001
     },
     {
       "ticker": "361390",
@@ -18069,7 +18052,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "전자·부품"
       ],
-      "rank": 1003
+      "rank": 1002
     },
     {
       "ticker": "264850",
@@ -18087,7 +18070,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "전자·부품"
       ],
-      "rank": 1004
+      "rank": 1003
     },
     {
       "ticker": "102460",
@@ -18105,7 +18088,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "바이오·제약"
       ],
-      "rank": 1005
+      "rank": 1004
     },
     {
       "ticker": "102120",
@@ -18123,7 +18106,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "반도체"
       ],
-      "rank": 1006
+      "rank": 1005
     },
     {
       "ticker": "199430",
@@ -18141,7 +18124,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "전기장비"
       ],
-      "rank": 1007
+      "rank": 1006
     },
     {
       "ticker": "388790",
@@ -18159,7 +18142,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "전자·부품"
       ],
-      "rank": 1008
+      "rank": 1007
     },
     {
       "ticker": "418420",
@@ -18177,7 +18160,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "반도체"
       ],
-      "rank": 1009
+      "rank": 1008
     },
     {
       "ticker": "194480",
@@ -18195,7 +18178,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "게임"
       ],
-      "rank": 1010
+      "rank": 1009
     },
     {
       "ticker": "126700",
@@ -18213,7 +18196,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기계·장비"
       ],
-      "rank": 1011
+      "rank": 1010
     },
     {
       "ticker": "086820",
@@ -18231,7 +18214,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "바이오·제약"
       ],
-      "rank": 1012
+      "rank": 1011
     },
     {
       "ticker": "119830",
@@ -18249,7 +18232,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 1013
+      "rank": 1012
     },
     {
       "ticker": "071200",
@@ -18267,7 +18250,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "IT·소프트웨어"
       ],
-      "rank": 1014
+      "rank": 1013
     },
     {
       "ticker": "489500",
@@ -18285,7 +18268,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "2차전지"
       ],
-      "rank": 1015
+      "rank": 1014
     },
     {
       "ticker": "950140",
@@ -18303,7 +18286,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "화장품"
       ],
-      "rank": 1016
+      "rank": 1015
     },
     {
       "ticker": "013580",
@@ -18321,7 +18304,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "건설·건자재"
       ],
-      "rank": 1017
+      "rank": 1016
     },
     {
       "ticker": "024060",
@@ -18339,7 +18322,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "유통·소비재"
       ],
-      "rank": 1018
+      "rank": 1017
     },
     {
       "ticker": "000390",
@@ -18357,7 +18340,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "화학"
       ],
-      "rank": 1019
+      "rank": 1018
     },
     {
       "ticker": "024840",
@@ -18375,7 +18358,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "철강·금속"
       ],
-      "rank": 1020
+      "rank": 1019
     },
     {
       "ticker": "082800",
@@ -18393,7 +18376,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "바이오·제약"
       ],
-      "rank": 1021
+      "rank": 1020
     },
     {
       "ticker": "114840",
@@ -18411,7 +18394,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "화장품"
       ],
-      "rank": 1022
+      "rank": 1021
     },
     {
       "ticker": "452450",
@@ -18429,7 +18412,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기계·장비"
       ],
-      "rank": 1023
+      "rank": 1022
     },
     {
       "ticker": "108380",
@@ -18447,7 +18430,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "전기장비"
       ],
-      "rank": 1024
+      "rank": 1023
     },
     {
       "ticker": "042420",
@@ -18465,7 +18448,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "지주"
       ],
-      "rank": 1025
+      "rank": 1024
     },
     {
       "ticker": "123410",
@@ -18483,7 +18466,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "자동차"
       ],
-      "rank": 1026
+      "rank": 1025
     },
     {
       "ticker": "002100",
@@ -18501,7 +18484,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "화학"
       ],
-      "rank": 1027
+      "rank": 1026
     },
     {
       "ticker": "003460",
@@ -18519,7 +18502,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "금융"
       ],
-      "rank": 1028
+      "rank": 1027
     },
     {
       "ticker": "002150",
@@ -18537,7 +18520,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "건설·건자재"
       ],
-      "rank": 1029
+      "rank": 1028
     },
     {
       "ticker": "234080",
@@ -18555,7 +18538,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "바이오·제약"
       ],
-      "rank": 1030
+      "rank": 1029
     },
     {
       "ticker": "008350",
@@ -18573,7 +18556,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "철강·금속"
       ],
-      "rank": 1031
+      "rank": 1030
     },
     {
       "ticker": "270660",
@@ -18591,7 +18574,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "유통·소비재"
       ],
-      "rank": 1032
+      "rank": 1031
     },
     {
       "ticker": "000300",
@@ -18609,7 +18592,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "자동차"
       ],
-      "rank": 1033
+      "rank": 1032
     },
     {
       "ticker": "176750",
@@ -18627,7 +18610,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "바이오·제약"
       ],
-      "rank": 1034
+      "rank": 1033
     },
     {
       "ticker": "084680",
@@ -18645,7 +18628,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "호텔·레저"
       ],
-      "rank": 1035
+      "rank": 1034
     },
     {
       "ticker": "377450",
@@ -18663,7 +18646,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "금융"
       ],
-      "rank": 1036
+      "rank": 1035
     },
     {
       "ticker": "140610",
@@ -18681,7 +18664,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "바이오·제약"
       ],
-      "rank": 1037
+      "rank": 1036
     },
     {
       "ticker": "264450",
@@ -18699,7 +18682,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "IT·소프트웨어"
       ],
-      "rank": 1038
+      "rank": 1037
     },
     {
       "ticker": "146320",
@@ -18717,7 +18700,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "반도체"
       ],
-      "rank": 1039
+      "rank": 1038
     },
     {
       "ticker": "079960",
@@ -18735,7 +18718,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "전자·부품"
       ],
-      "rank": 1040
+      "rank": 1039
     },
     {
       "ticker": "039860",
@@ -18753,7 +18736,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "바이오·제약"
       ],
-      "rank": 1041
+      "rank": 1040
     },
     {
       "ticker": "031440",
@@ -18771,7 +18754,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "식음료"
       ],
-      "rank": 1042
+      "rank": 1041
     },
     {
       "ticker": "080160",
@@ -18789,7 +18772,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "호텔·레저"
       ],
-      "rank": 1043
+      "rank": 1042
     },
     {
       "ticker": "024800",
@@ -18807,7 +18790,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "운송·물류"
       ],
-      "rank": 1044
+      "rank": 1043
     },
     {
       "ticker": "012610",
@@ -18825,7 +18808,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "화학"
       ],
-      "rank": 1045
+      "rank": 1044
     },
     {
       "ticker": "016450",
@@ -18843,7 +18826,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "지주"
       ],
-      "rank": 1046
+      "rank": 1045
     },
     {
       "ticker": "481070",
@@ -18861,7 +18844,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "유통·소비재"
       ],
-      "rank": 1047
+      "rank": 1046
     },
     {
       "ticker": "143160",
@@ -18879,7 +18862,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "전자·부품"
       ],
-      "rank": 1048
+      "rank": 1047
     },
     {
       "ticker": "058820",
@@ -18897,7 +18880,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "바이오·제약"
       ],
-      "rank": 1049
+      "rank": 1048
     },
     {
       "ticker": "092130",
@@ -18915,7 +18898,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "IT·소프트웨어"
       ],
-      "rank": 1050
+      "rank": 1049
     },
     {
       "ticker": "293580",
@@ -18933,7 +18916,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "금융"
       ],
-      "rank": 1051
+      "rank": 1050
     },
     {
       "ticker": "011690",
@@ -18951,7 +18934,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "반도체"
       ],
-      "rank": 1052
+      "rank": 1051
     },
     {
       "ticker": "118990",
@@ -18969,7 +18952,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "자동차"
       ],
-      "rank": 1053
+      "rank": 1052
     },
     {
       "ticker": "371950",
@@ -18987,7 +18970,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "전자·부품"
       ],
-      "rank": 1054
+      "rank": 1053
     },
     {
       "ticker": "388050",
@@ -19005,7 +18988,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "에너지·전력"
       ],
-      "rank": 1055
+      "rank": 1054
     },
     {
       "ticker": "187790",
@@ -19023,7 +19006,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "화학"
       ],
-      "rank": 1056
+      "rank": 1055
     },
     {
       "ticker": "044820",
@@ -19041,7 +19024,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "지주"
       ],
-      "rank": 1057
+      "rank": 1056
     },
     {
       "ticker": "226590",
@@ -19059,7 +19042,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "전자·부품"
       ],
-      "rank": 1058
+      "rank": 1057
     },
     {
       "ticker": "016880",
@@ -19077,7 +19060,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "지주"
       ],
-      "rank": 1059
+      "rank": 1058
     },
     {
       "ticker": "462520",
@@ -19095,7 +19078,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "건설·건자재"
       ],
-      "rank": 1060
+      "rank": 1059
     },
     {
       "ticker": "000860",
@@ -19113,7 +19096,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "화학"
       ],
-      "rank": 1061
+      "rank": 1060
     },
     {
       "ticker": "025820",
@@ -19131,7 +19114,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "철강·금속"
       ],
-      "rank": 1062
+      "rank": 1061
     },
     {
       "ticker": "032620",
@@ -19149,7 +19132,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "IT·소프트웨어"
       ],
-      "rank": 1063
+      "rank": 1062
     },
     {
       "ticker": "101530",
@@ -19167,7 +19150,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "식음료"
       ],
-      "rank": 1064
+      "rank": 1063
     },
     {
       "ticker": "267320",
@@ -19185,7 +19168,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기계·장비"
       ],
-      "rank": 1065
+      "rank": 1064
     },
     {
       "ticker": "015230",
@@ -19203,7 +19186,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "자동차"
       ],
-      "rank": 1066
+      "rank": 1065
     },
     {
       "ticker": "086980",
@@ -19221,7 +19204,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "미디어·엔터"
       ],
-      "rank": 1067
+      "rank": 1066
     },
     {
       "ticker": "049430",
@@ -19239,7 +19222,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기계·장비"
       ],
-      "rank": 1068
+      "rank": 1067
     },
     {
       "ticker": "115500",
@@ -19257,7 +19240,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "IT·소프트웨어"
       ],
-      "rank": 1069
+      "rank": 1068
     },
     {
       "ticker": "143240",
@@ -19275,7 +19258,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "IT·소프트웨어"
       ],
-      "rank": 1070
+      "rank": 1069
     },
     {
       "ticker": "209640",
@@ -19293,7 +19276,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기계·장비"
       ],
-      "rank": 1071
+      "rank": 1070
     },
     {
       "ticker": "293480",
@@ -19311,7 +19294,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "바이오·제약"
       ],
-      "rank": 1072
+      "rank": 1071
     },
     {
       "ticker": "203400",
@@ -19329,7 +19312,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "바이오·제약"
       ],
-      "rank": 1073
+      "rank": 1072
     },
     {
       "ticker": "140670",
@@ -19348,7 +19331,7 @@ window.KOS_LIVE_DATA = {
         "전기장비",
         "로봇"
       ],
-      "rank": 1074
+      "rank": 1073
     },
     {
       "ticker": "403850",
@@ -19366,7 +19349,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "미디어·엔터"
       ],
-      "rank": 1075
+      "rank": 1074
     },
     {
       "ticker": "400760",
@@ -19384,7 +19367,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "부동산·리츠"
       ],
-      "rank": 1076
+      "rank": 1075
     },
     {
       "ticker": "038390",
@@ -19402,7 +19385,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "호텔·레저"
       ],
-      "rank": 1077
+      "rank": 1076
     },
     {
       "ticker": "066410",
@@ -19420,7 +19403,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "미디어·엔터"
       ],
-      "rank": 1078
+      "rank": 1077
     },
     {
       "ticker": "025560",
@@ -19438,7 +19421,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기계·장비"
       ],
-      "rank": 1079
+      "rank": 1078
     },
     {
       "ticker": "046070",
@@ -19456,7 +19439,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "자동차"
       ],
-      "rank": 1080
+      "rank": 1079
     },
     {
       "ticker": "048870",
@@ -19474,7 +19457,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "전기장비"
       ],
-      "rank": 1081
+      "rank": 1080
     },
     {
       "ticker": "060150",
@@ -19492,7 +19475,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 1082
+      "rank": 1081
     },
     {
       "ticker": "077500",
@@ -19510,7 +19493,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "유통·소비재"
       ],
-      "rank": 1083
+      "rank": 1082
     },
     {
       "ticker": "380550",
@@ -19529,7 +19512,7 @@ window.KOS_LIVE_DATA = {
         "바이오·제약",
         "인공지능(AI)"
       ],
-      "rank": 1084
+      "rank": 1083
     },
     {
       "ticker": "285490",
@@ -19547,7 +19530,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "전자·부품"
       ],
-      "rank": 1085
+      "rank": 1084
     },
     {
       "ticker": "460850",
@@ -19565,7 +19548,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "철강·금속"
       ],
-      "rank": 1086
+      "rank": 1085
     },
     {
       "ticker": "260870",
@@ -19583,7 +19566,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "전기장비"
       ],
-      "rank": 1087
+      "rank": 1086
     },
     {
       "ticker": "017550",
@@ -19601,7 +19584,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기계·장비"
       ],
-      "rank": 1088
+      "rank": 1087
     },
     {
       "ticker": "007570",
@@ -19619,7 +19602,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "바이오·제약"
       ],
-      "rank": 1089
+      "rank": 1088
     },
     {
       "ticker": "166480",
@@ -19637,7 +19620,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "바이오·제약"
       ],
-      "rank": 1090
+      "rank": 1089
     },
     {
       "ticker": "000520",
@@ -19655,7 +19638,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "바이오·제약"
       ],
-      "rank": 1091
+      "rank": 1090
     },
     {
       "ticker": "104480",
@@ -19673,7 +19656,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "화학"
       ],
-      "rank": 1092
+      "rank": 1091
     },
     {
       "ticker": "023910",
@@ -19691,7 +19674,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "바이오·제약"
       ],
-      "rank": 1093
+      "rank": 1092
     },
     {
       "ticker": "071840",
@@ -19709,7 +19692,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "유통·소비재"
       ],
-      "rank": 1094
+      "rank": 1093
     },
     {
       "ticker": "234690",
@@ -19727,7 +19710,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "바이오·제약"
       ],
-      "rank": 1095
+      "rank": 1094
     },
     {
       "ticker": "049960",
@@ -19745,7 +19728,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "바이오·제약"
       ],
-      "rank": 1096
+      "rank": 1095
     },
     {
       "ticker": "037030",
@@ -19763,7 +19746,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "전자·부품"
       ],
-      "rank": 1097
+      "rank": 1096
     },
     {
       "ticker": "007330",
@@ -19781,7 +19764,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "금융"
       ],
-      "rank": 1098
+      "rank": 1097
     },
     {
       "ticker": "046440",
@@ -19799,7 +19782,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "금융"
       ],
-      "rank": 1099
+      "rank": 1098
     },
     {
       "ticker": "109740",
@@ -19817,7 +19800,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "전자·부품"
       ],
-      "rank": 1100
+      "rank": 1099
     },
     {
       "ticker": "147830",
@@ -19835,7 +19818,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "전기장비"
       ],
-      "rank": 1101
+      "rank": 1100
     },
     {
       "ticker": "002170",
@@ -19853,7 +19836,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "섬유·패션·생활"
       ],
-      "rank": 1102
+      "rank": 1101
     },
     {
       "ticker": "259630",
@@ -19871,7 +19854,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "2차전지"
       ],
-      "rank": 1103
+      "rank": 1102
     },
     {
       "ticker": "106190",
@@ -19889,7 +19872,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "바이오·제약"
       ],
-      "rank": 1104
+      "rank": 1103
     },
     {
       "ticker": "445180",
@@ -19907,7 +19890,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "화학"
       ],
-      "rank": 1105
+      "rank": 1104
     },
     {
       "ticker": "018470",
@@ -19925,7 +19908,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "철강·금속"
       ],
-      "rank": 1106
+      "rank": 1105
     },
     {
       "ticker": "011040",
@@ -19943,7 +19926,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "바이오·제약"
       ],
-      "rank": 1107
+      "rank": 1106
     },
     {
       "ticker": "213500",
@@ -19961,7 +19944,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 1108
+      "rank": 1107
     },
     {
       "ticker": "271980",
@@ -19979,7 +19962,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "바이오·제약"
       ],
-      "rank": 1109
+      "rank": 1108
     },
     {
       "ticker": "004090",
@@ -19997,7 +19980,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "화학"
       ],
-      "rank": 1110
+      "rank": 1109
     },
     {
       "ticker": "095700",
@@ -20015,7 +19998,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "바이오·제약"
       ],
-      "rank": 1111
+      "rank": 1110
     },
     {
       "ticker": "051980",
@@ -20033,7 +20016,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "반도체"
       ],
-      "rank": 1112
+      "rank": 1111
     },
     {
       "ticker": "000020",
@@ -20051,7 +20034,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "바이오·제약"
       ],
-      "rank": 1113
+      "rank": 1112
     },
     {
       "ticker": "053080",
@@ -20069,7 +20052,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기계·장비"
       ],
-      "rank": 1114
+      "rank": 1113
     },
     {
       "ticker": "179290",
@@ -20087,7 +20070,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "전자·부품"
       ],
-      "rank": 1115
+      "rank": 1114
     },
     {
       "ticker": "003830",
@@ -20105,7 +20088,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "화학"
       ],
-      "rank": 1116
+      "rank": 1115
     },
     {
       "ticker": "004150",
@@ -20123,7 +20106,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "지주"
       ],
-      "rank": 1117
+      "rank": 1116
     },
     {
       "ticker": "473980",
@@ -20141,7 +20124,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "미디어·엔터"
       ],
-      "rank": 1118
+      "rank": 1117
     },
     {
       "ticker": "000970",
@@ -20159,7 +20142,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "철강·금속"
       ],
-      "rank": 1119
+      "rank": 1118
     },
     {
       "ticker": "083500",
@@ -20177,7 +20160,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "반도체"
       ],
-      "rank": 1120
+      "rank": 1119
     },
     {
       "ticker": "047310",
@@ -20195,7 +20178,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "전자·부품"
       ],
-      "rank": 1121
+      "rank": 1120
     },
     {
       "ticker": "040350",
@@ -20213,7 +20196,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "IT·소프트웨어"
       ],
-      "rank": 1122
+      "rank": 1121
     },
     {
       "ticker": "072870",
@@ -20231,7 +20214,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "미디어·엔터"
       ],
-      "rank": 1123
+      "rank": 1122
     },
     {
       "ticker": "293780",
@@ -20249,7 +20232,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "바이오·제약"
       ],
-      "rank": 1124
+      "rank": 1123
     },
     {
       "ticker": "090350",
@@ -20267,7 +20250,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "화학"
       ],
-      "rank": 1125
+      "rank": 1124
     },
     {
       "ticker": "289080",
@@ -20285,7 +20268,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "금융"
       ],
-      "rank": 1126
+      "rank": 1125
     },
     {
       "ticker": "001540",
@@ -20303,7 +20286,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "바이오·제약"
       ],
-      "rank": 1127
+      "rank": 1126
     },
     {
       "ticker": "289930",
@@ -20321,7 +20304,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "반도체"
       ],
-      "rank": 1128
+      "rank": 1127
     },
     {
       "ticker": "039560",
@@ -20339,7 +20322,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "전자·부품"
       ],
-      "rank": 1129
+      "rank": 1128
     },
     {
       "ticker": "260970",
@@ -20357,7 +20340,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "식음료"
       ],
-      "rank": 1130
+      "rank": 1129
     },
     {
       "ticker": "081000",
@@ -20375,7 +20358,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "화학"
       ],
-      "rank": 1131
+      "rank": 1130
     },
     {
       "ticker": "298000",
@@ -20393,7 +20376,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "화학"
       ],
-      "rank": 1132
+      "rank": 1131
     },
     {
       "ticker": "221800",
@@ -20411,7 +20394,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "지주"
       ],
-      "rank": 1133
+      "rank": 1132
     },
     {
       "ticker": "067280",
@@ -20429,7 +20412,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "IT·소프트웨어"
       ],
-      "rank": 1134
+      "rank": 1133
     },
     {
       "ticker": "086670",
@@ -20447,7 +20430,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기계·장비"
       ],
-      "rank": 1135
+      "rank": 1134
     },
     {
       "ticker": "331920",
@@ -20465,7 +20448,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "바이오·제약"
       ],
-      "rank": 1136
+      "rank": 1135
     },
     {
       "ticker": "006060",
@@ -20483,7 +20466,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "섬유·패션·생활"
       ],
-      "rank": 1137
+      "rank": 1136
     },
     {
       "ticker": "054800",
@@ -20501,7 +20484,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "지주"
       ],
-      "rank": 1138
+      "rank": 1137
     },
     {
       "ticker": "036010",
@@ -20519,7 +20502,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "전자·부품"
       ],
-      "rank": 1139
+      "rank": 1138
     },
     {
       "ticker": "105330",
@@ -20537,7 +20520,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "조선"
       ],
-      "rank": 1140
+      "rank": 1139
     },
     {
       "ticker": "003480",
@@ -20555,12 +20538,12 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "지주"
       ],
-      "rank": 1141
+      "rank": 1140
     },
     {
       "ticker": "0011A0",
       "name": "액스비스",
-      "name_en": "",
+      "name_en": "Axbis",
       "market": "코스닥",
       "sector": "기타",
       "price": 15630,
@@ -20572,7 +20555,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 1142
+      "rank": 1141
     },
     {
       "ticker": "282880",
@@ -20590,7 +20573,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "2차전지"
       ],
-      "rank": 1143
+      "rank": 1142
     },
     {
       "ticker": "005990",
@@ -20608,7 +20591,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "지주"
       ],
-      "rank": 1144
+      "rank": 1143
     },
     {
       "ticker": "004970",
@@ -20626,7 +20609,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "유통·소비재"
       ],
-      "rank": 1145
+      "rank": 1144
     },
     {
       "ticker": "062970",
@@ -20644,7 +20627,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "전자·부품"
       ],
-      "rank": 1146
+      "rank": 1145
     },
     {
       "ticker": "300080",
@@ -20663,7 +20646,7 @@ window.KOS_LIVE_DATA = {
         "IT·소프트웨어",
         "인공지능(AI)"
       ],
-      "rank": 1147
+      "rank": 1146
     },
     {
       "ticker": "307930",
@@ -20681,7 +20664,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "금융"
       ],
-      "rank": 1148
+      "rank": 1147
     },
     {
       "ticker": "073010",
@@ -20699,7 +20682,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기계·장비"
       ],
-      "rank": 1149
+      "rank": 1148
     },
     {
       "ticker": "220260",
@@ -20717,7 +20700,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "화학"
       ],
-      "rank": 1150
+      "rank": 1149
     },
     {
       "ticker": "093190",
@@ -20735,7 +20718,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "전자·부품"
       ],
-      "rank": 1151
+      "rank": 1150
     },
     {
       "ticker": "204610",
@@ -20753,7 +20736,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "IT·소프트웨어"
       ],
-      "rank": 1152
+      "rank": 1151
     },
     {
       "ticker": "005960",
@@ -20771,7 +20754,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "건설·건자재"
       ],
-      "rank": 1153
+      "rank": 1152
     },
     {
       "ticker": "125210",
@@ -20789,7 +20772,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "전자·부품"
       ],
-      "rank": 1154
+      "rank": 1153
     },
     {
       "ticker": "041440",
@@ -20807,7 +20790,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기계·장비"
       ],
-      "rank": 1155
+      "rank": 1154
     },
     {
       "ticker": "142210",
@@ -20825,7 +20808,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "전자·부품"
       ],
-      "rank": 1156
+      "rank": 1155
     },
     {
       "ticker": "021080",
@@ -20843,7 +20826,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "금융"
       ],
-      "rank": 1157
+      "rank": 1156
     },
     {
       "ticker": "001520",
@@ -20861,7 +20844,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "건설·건자재"
       ],
-      "rank": 1158
+      "rank": 1157
     },
     {
       "ticker": "264660",
@@ -20879,7 +20862,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "반도체"
       ],
-      "rank": 1159
+      "rank": 1158
     },
     {
       "ticker": "002990",
@@ -20897,7 +20880,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "건설·건자재"
       ],
-      "rank": 1160
+      "rank": 1159
     },
     {
       "ticker": "222040",
@@ -20915,7 +20898,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "식음료"
       ],
-      "rank": 1161
+      "rank": 1160
     },
     {
       "ticker": "056090",
@@ -20933,7 +20916,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "바이오·제약"
       ],
-      "rank": 1162
+      "rank": 1161
     },
     {
       "ticker": "094280",
@@ -20951,7 +20934,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "IT·소프트웨어"
       ],
-      "rank": 1163
+      "rank": 1162
     },
     {
       "ticker": "299030",
@@ -20969,7 +20952,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "2차전지"
       ],
-      "rank": 1164
+      "rank": 1163
     },
     {
       "ticker": "334970",
@@ -20987,7 +20970,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "바이오·제약"
       ],
-      "rank": 1165
+      "rank": 1164
     },
     {
       "ticker": "008970",
@@ -21005,7 +20988,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "철강·금속"
       ],
-      "rank": 1166
+      "rank": 1165
     },
     {
       "ticker": "000700",
@@ -21023,7 +21006,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "지주"
       ],
-      "rank": 1167
+      "rank": 1166
     },
     {
       "ticker": "396300",
@@ -21041,7 +21024,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "전자·부품"
       ],
-      "rank": 1168
+      "rank": 1167
     },
     {
       "ticker": "049720",
@@ -21059,7 +21042,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "금융"
       ],
-      "rank": 1169
+      "rank": 1168
     },
     {
       "ticker": "317400",
@@ -21077,7 +21060,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "부동산·리츠"
       ],
-      "rank": 1170
+      "rank": 1169
     },
     {
       "ticker": "321370",
@@ -21095,7 +21078,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "전자·부품"
       ],
-      "rank": 1171
+      "rank": 1170
     },
     {
       "ticker": "158430",
@@ -21113,7 +21096,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "IT·소프트웨어"
       ],
-      "rank": 1172
+      "rank": 1171
     },
     {
       "ticker": "217270",
@@ -21131,7 +21114,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "게임"
       ],
-      "rank": 1173
+      "rank": 1172
     },
     {
       "ticker": "474610",
@@ -21149,7 +21132,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "전자·부품"
       ],
-      "rank": 1174
+      "rank": 1173
     },
     {
       "ticker": "307750",
@@ -21167,7 +21150,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "바이오·제약"
       ],
-      "rank": 1175
+      "rank": 1174
     },
     {
       "ticker": "009070",
@@ -21185,7 +21168,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "운송·물류"
       ],
-      "rank": 1176
+      "rank": 1175
     },
     {
       "ticker": "023600",
@@ -21203,7 +21186,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 1177
+      "rank": 1176
     },
     {
       "ticker": "469610",
@@ -21221,7 +21204,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기계·장비"
       ],
-      "rank": 1178
+      "rank": 1177
     },
     {
       "ticker": "297890",
@@ -21239,7 +21222,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "반도체"
       ],
-      "rank": 1179
+      "rank": 1178
     },
     {
       "ticker": "015890",
@@ -21257,7 +21240,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "화학"
       ],
-      "rank": 1180
+      "rank": 1179
     },
     {
       "ticker": "005160",
@@ -21275,7 +21258,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "철강·금속"
       ],
-      "rank": 1181
+      "rank": 1180
     },
     {
       "ticker": "101170",
@@ -21293,24 +21276,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기계·장비"
       ],
-      "rank": 1182
-    },
-    {
-      "ticker": "00279K",
-      "name": "아모레퍼시픽홀딩스3우C",
-      "name_en": "",
-      "market": "코스피",
-      "sector": "지주",
-      "price": 19280,
-      "change": -1.13,
-      "volume": 7459,
-      "trading_value": 144148180,
-      "mcap": 0.1367,
-      "shares": 7092200,
-      "categories": [
-        "지주"
-      ],
-      "rank": 1183
+      "rank": 1181
     },
     {
       "ticker": "163730",
@@ -21328,7 +21294,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "IT·소프트웨어"
       ],
-      "rank": 1184
+      "rank": 1182
     },
     {
       "ticker": "210540",
@@ -21346,7 +21312,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기계·장비"
       ],
-      "rank": 1185
+      "rank": 1183
     },
     {
       "ticker": "240550",
@@ -21364,7 +21330,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "바이오·제약"
       ],
-      "rank": 1186
+      "rank": 1184
     },
     {
       "ticker": "038290",
@@ -21382,7 +21348,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "바이오·제약"
       ],
-      "rank": 1187
+      "rank": 1185
     },
     {
       "ticker": "214420",
@@ -21400,7 +21366,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "화장품"
       ],
-      "rank": 1188
+      "rank": 1186
     },
     {
       "ticker": "108230",
@@ -21418,7 +21384,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기계·장비"
       ],
-      "rank": 1189
+      "rank": 1187
     },
     {
       "ticker": "272550",
@@ -21436,7 +21402,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "화학"
       ],
-      "rank": 1190
+      "rank": 1188
     },
     {
       "ticker": "059120",
@@ -21454,7 +21420,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "반도체"
       ],
-      "rank": 1191
+      "rank": 1189
     },
     {
       "ticker": "017510",
@@ -21472,7 +21438,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "전기장비"
       ],
-      "rank": 1192
+      "rank": 1190
     },
     {
       "ticker": "217950",
@@ -21490,7 +21456,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "바이오·제약"
       ],
-      "rank": 1193
+      "rank": 1191
     },
     {
       "ticker": "263860",
@@ -21508,7 +21474,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "IT·소프트웨어"
       ],
-      "rank": 1194
+      "rank": 1192
     },
     {
       "ticker": "008830",
@@ -21526,7 +21492,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기계·장비"
       ],
-      "rank": 1195
+      "rank": 1193
     },
     {
       "ticker": "086890",
@@ -21544,7 +21510,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "바이오·제약"
       ],
-      "rank": 1196
+      "rank": 1194
     },
     {
       "ticker": "001360",
@@ -21562,7 +21528,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "바이오·제약"
       ],
-      "rank": 1197
+      "rank": 1195
     },
     {
       "ticker": "002780",
@@ -21580,7 +21546,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "건설·건자재"
       ],
-      "rank": 1198
+      "rank": 1196
     },
     {
       "ticker": "101970",
@@ -21598,7 +21564,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "건설·건자재"
       ],
-      "rank": 1199
+      "rank": 1197
     },
     {
       "ticker": "269620",
@@ -21616,7 +21582,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "전기장비"
       ],
-      "rank": 1200
+      "rank": 1198
     },
     {
       "ticker": "040160",
@@ -21634,7 +21600,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "IT·소프트웨어"
       ],
-      "rank": 1201
+      "rank": 1199
     },
     {
       "ticker": "408920",
@@ -21652,7 +21618,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 1202
+      "rank": 1200
     },
     {
       "ticker": "037350",
@@ -21670,7 +21636,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "건설·건자재"
       ],
-      "rank": 1203
+      "rank": 1201
     },
     {
       "ticker": "013990",
@@ -21688,7 +21654,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "섬유·패션·생활"
       ],
-      "rank": 1204
+      "rank": 1202
     },
     {
       "ticker": "011280",
@@ -21706,7 +21672,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "화학"
       ],
-      "rank": 1205
+      "rank": 1203
     },
     {
       "ticker": "306620",
@@ -21724,7 +21690,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기계·장비"
       ],
-      "rank": 1206
+      "rank": 1204
     },
     {
       "ticker": "016740",
@@ -21742,7 +21708,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "자동차"
       ],
-      "rank": 1207
+      "rank": 1205
     },
     {
       "ticker": "205500",
@@ -21760,7 +21726,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "IT·소프트웨어"
       ],
-      "rank": 1208
+      "rank": 1206
     },
     {
       "ticker": "019180",
@@ -21778,7 +21744,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "자동차"
       ],
-      "rank": 1209
+      "rank": 1207
     },
     {
       "ticker": "214390",
@@ -21796,7 +21762,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "바이오·제약"
       ],
-      "rank": 1210
+      "rank": 1208
     },
     {
       "ticker": "069510",
@@ -21814,7 +21780,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "전자·부품"
       ],
-      "rank": 1211
+      "rank": 1209
     },
     {
       "ticker": "002220",
@@ -21832,7 +21798,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "철강·금속"
       ],
-      "rank": 1212
+      "rank": 1210
     },
     {
       "ticker": "107590",
@@ -21850,7 +21816,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "지주"
       ],
-      "rank": 1213
+      "rank": 1211
     },
     {
       "ticker": "148150",
@@ -21868,7 +21834,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "전자·부품"
       ],
-      "rank": 1214
+      "rank": 1212
     },
     {
       "ticker": "115310",
@@ -21886,7 +21852,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "IT·소프트웨어"
       ],
-      "rank": 1215
+      "rank": 1213
     },
     {
       "ticker": "066430",
@@ -21905,7 +21871,7 @@ window.KOS_LIVE_DATA = {
         "유통·소비재",
         "로봇"
       ],
-      "rank": 1216
+      "rank": 1214
     },
     {
       "ticker": "089470",
@@ -21923,7 +21889,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "화학"
       ],
-      "rank": 1217
+      "rank": 1215
     },
     {
       "ticker": "453450",
@@ -21941,7 +21907,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "에너지·전력"
       ],
-      "rank": 1218
+      "rank": 1216
     },
     {
       "ticker": "340450",
@@ -21959,7 +21925,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "바이오·제약"
       ],
-      "rank": 1219
+      "rank": 1217
     },
     {
       "ticker": "256940",
@@ -21977,7 +21943,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "바이오·제약"
       ],
-      "rank": 1220
+      "rank": 1218
     },
     {
       "ticker": "078000",
@@ -21995,7 +21961,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "IT·소프트웨어"
       ],
-      "rank": 1221
+      "rank": 1219
     },
     {
       "ticker": "047560",
@@ -22014,7 +21980,7 @@ window.KOS_LIVE_DATA = {
         "IT·소프트웨어",
         "인공지능(AI)"
       ],
-      "rank": 1222
+      "rank": 1220
     },
     {
       "ticker": "024090",
@@ -22032,7 +21998,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "화학"
       ],
-      "rank": 1223
+      "rank": 1221
     },
     {
       "ticker": "095190",
@@ -22050,7 +22016,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "화학"
       ],
-      "rank": 1224
+      "rank": 1222
     },
     {
       "ticker": "004080",
@@ -22068,7 +22034,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "유통·소비재"
       ],
-      "rank": 1225
+      "rank": 1223
     },
     {
       "ticker": "032940",
@@ -22086,7 +22052,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "지주"
       ],
-      "rank": 1226
+      "rank": 1224
     },
     {
       "ticker": "054920",
@@ -22104,7 +22070,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "IT·소프트웨어"
       ],
-      "rank": 1227
+      "rank": 1225
     },
     {
       "ticker": "212560",
@@ -22122,7 +22088,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "자동차"
       ],
-      "rank": 1228
+      "rank": 1226
     },
     {
       "ticker": "136540",
@@ -22140,7 +22106,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "IT·소프트웨어"
       ],
-      "rank": 1229
+      "rank": 1227
     },
     {
       "ticker": "322180",
@@ -22158,7 +22124,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "IT·소프트웨어"
       ],
-      "rank": 1230
+      "rank": 1228
     },
     {
       "ticker": "003100",
@@ -22176,7 +22142,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "운송·물류"
       ],
-      "rank": 1231
+      "rank": 1229
     },
     {
       "ticker": "009270",
@@ -22194,7 +22160,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "섬유·패션·생활"
       ],
-      "rank": 1232
+      "rank": 1230
     },
     {
       "ticker": "037070",
@@ -22212,7 +22178,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "전기장비"
       ],
-      "rank": 1233
+      "rank": 1231
     },
     {
       "ticker": "004960",
@@ -22230,7 +22196,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "건설·건자재"
       ],
-      "rank": 1234
+      "rank": 1232
     },
     {
       "ticker": "079430",
@@ -22248,7 +22214,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "섬유·패션·생활"
       ],
-      "rank": 1235
+      "rank": 1233
     },
     {
       "ticker": "396270",
@@ -22266,7 +22232,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "반도체"
       ],
-      "rank": 1236
+      "rank": 1234
     },
     {
       "ticker": "122450",
@@ -22284,7 +22250,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "운송·물류"
       ],
-      "rank": 1237
+      "rank": 1235
     },
     {
       "ticker": "036690",
@@ -22302,7 +22268,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "전자·부품"
       ],
-      "rank": 1238
+      "rank": 1236
     },
     {
       "ticker": "350520",
@@ -22320,7 +22286,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "부동산·리츠"
       ],
-      "rank": 1239
+      "rank": 1237
     },
     {
       "ticker": "015590",
@@ -22338,7 +22304,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기계·장비"
       ],
-      "rank": 1240
+      "rank": 1238
     },
     {
       "ticker": "452190",
@@ -22356,7 +22322,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기계·장비"
       ],
-      "rank": 1241
+      "rank": 1239
     },
     {
       "ticker": "014710",
@@ -22374,7 +22340,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "식음료"
       ],
-      "rank": 1242
+      "rank": 1240
     },
     {
       "ticker": "053700",
@@ -22392,7 +22358,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "자동차"
       ],
-      "rank": 1243
+      "rank": 1241
     },
     {
       "ticker": "475230",
@@ -22410,7 +22376,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "화학"
       ],
-      "rank": 1244
+      "rank": 1242
     },
     {
       "ticker": "014280",
@@ -22428,7 +22394,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "철강·금속"
       ],
-      "rank": 1245
+      "rank": 1243
     },
     {
       "ticker": "090850",
@@ -22446,7 +22412,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "IT·소프트웨어"
       ],
-      "rank": 1246
+      "rank": 1244
     },
     {
       "ticker": "067990",
@@ -22464,7 +22430,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "유통·소비재"
       ],
-      "rank": 1247
+      "rank": 1245
     },
     {
       "ticker": "950250",
@@ -22482,7 +22448,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "금융"
       ],
-      "rank": 1248
+      "rank": 1246
     },
     {
       "ticker": "297090",
@@ -22500,7 +22466,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기계·장비"
       ],
-      "rank": 1249
+      "rank": 1247
     },
     {
       "ticker": "080420",
@@ -22518,7 +22484,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "전자·부품"
       ],
-      "rank": 1250
+      "rank": 1248
     },
     {
       "ticker": "068790",
@@ -22536,7 +22502,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기계·장비"
       ],
-      "rank": 1251
+      "rank": 1249
     },
     {
       "ticker": "027710",
@@ -22554,7 +22520,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "식음료"
       ],
-      "rank": 1252
+      "rank": 1250
     },
     {
       "ticker": "008040",
@@ -22572,7 +22538,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "식음료"
       ],
-      "rank": 1253
+      "rank": 1251
     },
     {
       "ticker": "051160",
@@ -22590,7 +22556,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "IT·소프트웨어"
       ],
-      "rank": 1254
+      "rank": 1252
     },
     {
       "ticker": "290740",
@@ -22608,7 +22574,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "전자·부품"
       ],
-      "rank": 1255
+      "rank": 1253
     },
     {
       "ticker": "381620",
@@ -22627,7 +22593,7 @@ window.KOS_LIVE_DATA = {
         "기계·장비",
         "로봇"
       ],
-      "rank": 1256
+      "rank": 1254
     },
     {
       "ticker": "007540",
@@ -22645,7 +22611,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "지주"
       ],
-      "rank": 1257
+      "rank": 1255
     },
     {
       "ticker": "205100",
@@ -22663,7 +22629,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "IT·소프트웨어"
       ],
-      "rank": 1258
+      "rank": 1256
     },
     {
       "ticker": "267290",
@@ -22681,7 +22647,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "에너지·전력"
       ],
-      "rank": 1259
+      "rank": 1257
     },
     {
       "ticker": "333430",
@@ -22699,7 +22665,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "조선"
       ],
-      "rank": 1260
+      "rank": 1258
     },
     {
       "ticker": "323990",
@@ -22717,7 +22683,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "바이오·제약"
       ],
-      "rank": 1261
+      "rank": 1259
     },
     {
       "ticker": "012800",
@@ -22735,12 +22701,12 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "철강·금속"
       ],
-      "rank": 1262
+      "rank": 1260
     },
     {
       "ticker": "0004V0",
       "name": "엔비알모션",
-      "name_en": "",
+      "name_en": "NVR Motion",
       "market": "코스닥",
       "sector": "기계·장비",
       "price": 11570,
@@ -22752,7 +22718,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기계·장비"
       ],
-      "rank": 1263
+      "rank": 1261
     },
     {
       "ticker": "357580",
@@ -22770,7 +22736,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "전자·부품"
       ],
-      "rank": 1264
+      "rank": 1262
     },
     {
       "ticker": "005800",
@@ -22788,7 +22754,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "섬유·패션·생활"
       ],
-      "rank": 1265
+      "rank": 1263
     },
     {
       "ticker": "035000",
@@ -22806,7 +22772,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "미디어·엔터"
       ],
-      "rank": 1266
+      "rank": 1264
     },
     {
       "ticker": "365330",
@@ -22824,7 +22790,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "철강·금속"
       ],
-      "rank": 1267
+      "rank": 1265
     },
     {
       "ticker": "020120",
@@ -22842,7 +22808,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "미디어·엔터"
       ],
-      "rank": 1268
+      "rank": 1266
     },
     {
       "ticker": "235980",
@@ -22860,7 +22826,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "바이오·제약"
       ],
-      "rank": 1269
+      "rank": 1267
     },
     {
       "ticker": "070960",
@@ -22878,7 +22844,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "호텔·레저"
       ],
-      "rank": 1270
+      "rank": 1268
     },
     {
       "ticker": "336680",
@@ -22896,7 +22862,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "전자·부품"
       ],
-      "rank": 1271
+      "rank": 1269
     },
     {
       "ticker": "457370",
@@ -22914,7 +22880,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "화학"
       ],
-      "rank": 1272
+      "rank": 1270
     },
     {
       "ticker": "002620",
@@ -22932,7 +22898,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "지주"
       ],
-      "rank": 1273
+      "rank": 1271
     },
     {
       "ticker": "089600",
@@ -22950,7 +22916,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "미디어·엔터"
       ],
-      "rank": 1274
+      "rank": 1272
     },
     {
       "ticker": "013520",
@@ -22968,7 +22934,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "자동차"
       ],
-      "rank": 1275
+      "rank": 1273
     },
     {
       "ticker": "078890",
@@ -22986,7 +22952,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "전자·부품"
       ],
-      "rank": 1276
+      "rank": 1274
     },
     {
       "ticker": "006620",
@@ -23004,7 +22970,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "바이오·제약"
       ],
-      "rank": 1277
+      "rank": 1275
     },
     {
       "ticker": "123040",
@@ -23022,7 +22988,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "자동차"
       ],
-      "rank": 1278
+      "rank": 1276
     },
     {
       "ticker": "027970",
@@ -23040,7 +23006,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 1279
+      "rank": 1277
     },
     {
       "ticker": "014530",
@@ -23058,7 +23024,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "정유"
       ],
-      "rank": 1280
+      "rank": 1278
     },
     {
       "ticker": "093640",
@@ -23076,7 +23042,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "반도체"
       ],
-      "rank": 1281
+      "rank": 1279
     },
     {
       "ticker": "084670",
@@ -23094,7 +23060,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "운송·물류"
       ],
-      "rank": 1282
+      "rank": 1280
     },
     {
       "ticker": "012320",
@@ -23112,7 +23078,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "금융"
       ],
-      "rank": 1283
+      "rank": 1281
     },
     {
       "ticker": "013310",
@@ -23130,7 +23096,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "자동차"
       ],
-      "rank": 1284
+      "rank": 1282
     },
     {
       "ticker": "010100",
@@ -23148,7 +23114,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "자동차"
       ],
-      "rank": 1285
+      "rank": 1283
     },
     {
       "ticker": "338220",
@@ -23167,7 +23133,7 @@ window.KOS_LIVE_DATA = {
         "바이오·제약",
         "인공지능(AI)"
       ],
-      "rank": 1286
+      "rank": 1284
     },
     {
       "ticker": "052900",
@@ -23185,7 +23151,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "화학"
       ],
-      "rank": 1287
+      "rank": 1285
     },
     {
       "ticker": "086960",
@@ -23203,7 +23169,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "IT·소프트웨어"
       ],
-      "rank": 1288
+      "rank": 1286
     },
     {
       "ticker": "041590",
@@ -23221,7 +23187,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "유통·소비재"
       ],
-      "rank": 1289
+      "rank": 1287
     },
     {
       "ticker": "025620",
@@ -23240,7 +23206,7 @@ window.KOS_LIVE_DATA = {
         "바이오·제약",
         "인공지능(AI)"
       ],
-      "rank": 1290
+      "rank": 1288
     },
     {
       "ticker": "310200",
@@ -23258,7 +23224,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "미디어·엔터"
       ],
-      "rank": 1291
+      "rank": 1289
     },
     {
       "ticker": "047770",
@@ -23276,7 +23242,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "섬유·패션·생활"
       ],
-      "rank": 1292
+      "rank": 1290
     },
     {
       "ticker": "192410",
@@ -23294,7 +23260,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "전자·부품"
       ],
-      "rank": 1293
+      "rank": 1291
     },
     {
       "ticker": "088130",
@@ -23312,7 +23278,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기계·장비"
       ],
-      "rank": 1294
+      "rank": 1292
     },
     {
       "ticker": "002450",
@@ -23330,7 +23296,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 1295
+      "rank": 1293
     },
     {
       "ticker": "016710",
@@ -23348,7 +23314,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "지주"
       ],
-      "rank": 1296
+      "rank": 1294
     },
     {
       "ticker": "156100",
@@ -23366,7 +23332,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "바이오·제약"
       ],
-      "rank": 1297
+      "rank": 1295
     },
     {
       "ticker": "323350",
@@ -23384,7 +23350,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기계·장비"
       ],
-      "rank": 1298
+      "rank": 1296
     },
     {
       "ticker": "063570",
@@ -23402,7 +23368,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "IT·소프트웨어"
       ],
-      "rank": 1299
+      "rank": 1297
     },
     {
       "ticker": "021820",
@@ -23420,7 +23386,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "자동차"
       ],
-      "rank": 1300
+      "rank": 1298
     },
     {
       "ticker": "109610",
@@ -23438,7 +23404,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "철강·금속"
       ],
-      "rank": 1301
+      "rank": 1299
     },
     {
       "ticker": "215100",
@@ -23456,7 +23422,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기계·장비"
       ],
-      "rank": 1302
+      "rank": 1300
     },
     {
       "ticker": "382840",
@@ -23474,7 +23440,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기계·장비"
       ],
-      "rank": 1303
+      "rank": 1301
     },
     {
       "ticker": "054540",
@@ -23492,7 +23458,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기계·장비"
       ],
-      "rank": 1304
+      "rank": 1302
     },
     {
       "ticker": "339950",
@@ -23510,7 +23476,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 1305
+      "rank": 1303
     },
     {
       "ticker": "040300",
@@ -23528,7 +23494,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "미디어·엔터"
       ],
-      "rank": 1306
+      "rank": 1304
     },
     {
       "ticker": "009580",
@@ -23546,7 +23512,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 1307
+      "rank": 1305
     },
     {
       "ticker": "036630",
@@ -23564,7 +23530,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "통신"
       ],
-      "rank": 1308
+      "rank": 1306
     },
     {
       "ticker": "475580",
@@ -23582,7 +23548,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기계·장비"
       ],
-      "rank": 1309
+      "rank": 1307
     },
     {
       "ticker": "067900",
@@ -23600,7 +23566,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 1310
+      "rank": 1308
     },
     {
       "ticker": "366030",
@@ -23618,7 +23584,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "섬유·패션·생활"
       ],
-      "rank": 1311
+      "rank": 1309
     },
     {
       "ticker": "054050",
@@ -23636,7 +23602,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "바이오·제약"
       ],
-      "rank": 1312
+      "rank": 1310
     },
     {
       "ticker": "107600",
@@ -23654,7 +23620,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "화학"
       ],
-      "rank": 1313
+      "rank": 1311
     },
     {
       "ticker": "120030",
@@ -23672,7 +23638,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "철강·금속"
       ],
-      "rank": 1314
+      "rank": 1312
     },
     {
       "ticker": "073560",
@@ -23690,7 +23656,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "식음료"
       ],
-      "rank": 1315
+      "rank": 1313
     },
     {
       "ticker": "034590",
@@ -23708,7 +23674,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "에너지·전력"
       ],
-      "rank": 1316
+      "rank": 1314
     },
     {
       "ticker": "214680",
@@ -23726,7 +23692,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "전기장비"
       ],
-      "rank": 1317
+      "rank": 1315
     },
     {
       "ticker": "263720",
@@ -23744,7 +23710,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "미디어·엔터"
       ],
-      "rank": 1318
+      "rank": 1316
     },
     {
       "ticker": "018120",
@@ -23762,7 +23728,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "식음료"
       ],
-      "rank": 1319
+      "rank": 1317
     },
     {
       "ticker": "002390",
@@ -23780,7 +23746,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "바이오·제약"
       ],
-      "rank": 1320
+      "rank": 1318
     },
     {
       "ticker": "172670",
@@ -23798,7 +23764,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "반도체"
       ],
-      "rank": 1321
+      "rank": 1319
     },
     {
       "ticker": "049520",
@@ -23816,7 +23782,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "전자·부품"
       ],
-      "rank": 1322
+      "rank": 1320
     },
     {
       "ticker": "487580",
@@ -23834,7 +23800,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "전자·부품"
       ],
-      "rank": 1323
+      "rank": 1321
     },
     {
       "ticker": "389030",
@@ -23853,7 +23819,7 @@ window.KOS_LIVE_DATA = {
         "바이오·제약",
         "인공지능(AI)"
       ],
-      "rank": 1324
+      "rank": 1322
     },
     {
       "ticker": "052260",
@@ -23871,7 +23837,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "바이오·제약"
       ],
-      "rank": 1325
+      "rank": 1323
     },
     {
       "ticker": "014580",
@@ -23889,7 +23855,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "건설·건자재"
       ],
-      "rank": 1326
+      "rank": 1324
     },
     {
       "ticker": "115440",
@@ -23907,7 +23873,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "통신"
       ],
-      "rank": 1327
+      "rank": 1325
     },
     {
       "ticker": "950190",
@@ -23925,7 +23891,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "게임"
       ],
-      "rank": 1328
+      "rank": 1326
     },
     {
       "ticker": "004250",
@@ -23943,7 +23909,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "화학"
       ],
-      "rank": 1329
+      "rank": 1327
     },
     {
       "ticker": "228850",
@@ -23961,7 +23927,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "전자·부품"
       ],
-      "rank": 1330
+      "rank": 1328
     },
     {
       "ticker": "322510",
@@ -23980,7 +23946,7 @@ window.KOS_LIVE_DATA = {
         "바이오·제약",
         "인공지능(AI)"
       ],
-      "rank": 1331
+      "rank": 1329
     },
     {
       "ticker": "255440",
@@ -23998,7 +23964,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기계·장비"
       ],
-      "rank": 1332
+      "rank": 1330
     },
     {
       "ticker": "038540",
@@ -24016,7 +23982,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "금융"
       ],
-      "rank": 1333
+      "rank": 1331
     },
     {
       "ticker": "129920",
@@ -24034,7 +24000,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기계·장비"
       ],
-      "rank": 1334
+      "rank": 1332
     },
     {
       "ticker": "011810",
@@ -24052,7 +24018,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "유통·소비재"
       ],
-      "rank": 1335
+      "rank": 1333
     },
     {
       "ticker": "083420",
@@ -24070,7 +24036,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "화학"
       ],
-      "rank": 1336
+      "rank": 1334
     },
     {
       "ticker": "234030",
@@ -24088,7 +24054,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "반도체"
       ],
-      "rank": 1337
+      "rank": 1335
     },
     {
       "ticker": "041520",
@@ -24106,7 +24072,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "전기장비"
       ],
-      "rank": 1338
+      "rank": 1336
     },
     {
       "ticker": "007610",
@@ -24124,7 +24090,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "전기장비"
       ],
-      "rank": 1339
+      "rank": 1337
     },
     {
       "ticker": "227840",
@@ -24142,7 +24108,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "지주"
       ],
-      "rank": 1340
+      "rank": 1338
     },
     {
       "ticker": "377480",
@@ -24161,7 +24127,7 @@ window.KOS_LIVE_DATA = {
         "IT·소프트웨어",
         "인공지능(AI)"
       ],
-      "rank": 1341
+      "rank": 1339
     },
     {
       "ticker": "021320",
@@ -24179,7 +24145,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "건설·건자재"
       ],
-      "rank": 1342
+      "rank": 1340
     },
     {
       "ticker": "071280",
@@ -24197,7 +24163,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기계·장비"
       ],
-      "rank": 1343
+      "rank": 1341
     },
     {
       "ticker": "123690",
@@ -24215,7 +24181,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "화장품"
       ],
-      "rank": 1344
+      "rank": 1342
     },
     {
       "ticker": "330730",
@@ -24233,7 +24199,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "금융"
       ],
-      "rank": 1345
+      "rank": 1343
     },
     {
       "ticker": "006660",
@@ -24251,7 +24217,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "자동차"
       ],
-      "rank": 1346
+      "rank": 1344
     },
     {
       "ticker": "009780",
@@ -24269,7 +24235,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "식음료"
       ],
-      "rank": 1347
+      "rank": 1345
     },
     {
       "ticker": "309960",
@@ -24287,7 +24253,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "금융"
       ],
-      "rank": 1348
+      "rank": 1346
     },
     {
       "ticker": "007210",
@@ -24305,7 +24271,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "건설·건자재"
       ],
-      "rank": 1349
+      "rank": 1347
     },
     {
       "ticker": "396470",
@@ -24323,7 +24289,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기계·장비"
       ],
-      "rank": 1350
+      "rank": 1348
     },
     {
       "ticker": "001290",
@@ -24341,7 +24307,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "금융"
       ],
-      "rank": 1351
+      "rank": 1349
     },
     {
       "ticker": "002230",
@@ -24359,7 +24325,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "전기장비"
       ],
-      "rank": 1352
+      "rank": 1350
     },
     {
       "ticker": "267850",
@@ -24377,7 +24343,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "IT·소프트웨어"
       ],
-      "rank": 1353
+      "rank": 1351
     },
     {
       "ticker": "002460",
@@ -24395,7 +24361,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "건설·건자재"
       ],
-      "rank": 1354
+      "rank": 1352
     },
     {
       "ticker": "493330",
@@ -24413,7 +24379,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기계·장비"
       ],
-      "rank": 1355
+      "rank": 1353
     },
     {
       "ticker": "417500",
@@ -24431,7 +24397,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "바이오·제약"
       ],
-      "rank": 1356
+      "rank": 1354
     },
     {
       "ticker": "250060",
@@ -24449,7 +24415,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "IT·소프트웨어"
       ],
-      "rank": 1357
+      "rank": 1355
     },
     {
       "ticker": "217820",
@@ -24467,7 +24433,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "2차전지"
       ],
-      "rank": 1358
+      "rank": 1356
     },
     {
       "ticker": "131030",
@@ -24485,7 +24451,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "바이오·제약"
       ],
-      "rank": 1359
+      "rank": 1357
     },
     {
       "ticker": "049950",
@@ -24503,7 +24469,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기계·장비"
       ],
-      "rank": 1360
+      "rank": 1358
     },
     {
       "ticker": "141000",
@@ -24521,7 +24487,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기계·장비"
       ],
-      "rank": 1361
+      "rank": 1359
     },
     {
       "ticker": "074430",
@@ -24539,7 +24505,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "바이오·제약"
       ],
-      "rank": 1362
+      "rank": 1360
     },
     {
       "ticker": "065450",
@@ -24557,7 +24523,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "항공·방산"
       ],
-      "rank": 1363
+      "rank": 1361
     },
     {
       "ticker": "149980",
@@ -24575,7 +24541,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "전기장비"
       ],
-      "rank": 1364
+      "rank": 1362
     },
     {
       "ticker": "005860",
@@ -24593,7 +24559,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "식음료"
       ],
-      "rank": 1365
+      "rank": 1363
     },
     {
       "ticker": "223250",
@@ -24611,7 +24577,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "IT·소프트웨어"
       ],
-      "rank": 1366
+      "rank": 1364
     },
     {
       "ticker": "331740",
@@ -24629,7 +24595,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "IT·소프트웨어"
       ],
-      "rank": 1367
+      "rank": 1365
     },
     {
       "ticker": "225190",
@@ -24647,7 +24613,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "전기장비"
       ],
-      "rank": 1368
+      "rank": 1366
     },
     {
       "ticker": "229500",
@@ -24665,7 +24631,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "바이오·제약"
       ],
-      "rank": 1369
+      "rank": 1367
     },
     {
       "ticker": "412350",
@@ -24683,7 +24649,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기계·장비"
       ],
-      "rank": 1370
+      "rank": 1368
     },
     {
       "ticker": "248170",
@@ -24701,7 +24667,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "식음료"
       ],
-      "rank": 1371
+      "rank": 1369
     },
     {
       "ticker": "456070",
@@ -24719,7 +24685,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "바이오·제약"
       ],
-      "rank": 1372
+      "rank": 1370
     },
     {
       "ticker": "104460",
@@ -24737,7 +24703,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기계·장비"
       ],
-      "rank": 1373
+      "rank": 1371
     },
     {
       "ticker": "025950",
@@ -24755,7 +24721,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "건설·건자재"
       ],
-      "rank": 1374
+      "rank": 1372
     },
     {
       "ticker": "489460",
@@ -24773,7 +24739,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "바이오·제약"
       ],
-      "rank": 1375
+      "rank": 1373
     },
     {
       "ticker": "360070",
@@ -24791,7 +24757,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "2차전지"
       ],
-      "rank": 1376
+      "rank": 1374
     },
     {
       "ticker": "085670",
@@ -24809,7 +24775,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "전자·부품"
       ],
-      "rank": 1377
+      "rank": 1375
     },
     {
       "ticker": "212710",
@@ -24827,7 +24793,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "반도체"
       ],
-      "rank": 1378
+      "rank": 1376
     },
     {
       "ticker": "317770",
@@ -24845,7 +24811,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "반도체"
       ],
-      "rank": 1379
+      "rank": 1377
     },
     {
       "ticker": "246710",
@@ -24863,7 +24829,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "바이오·제약"
       ],
-      "rank": 1380
+      "rank": 1378
     },
     {
       "ticker": "042510",
@@ -24881,7 +24847,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "IT·소프트웨어"
       ],
-      "rank": 1381
+      "rank": 1379
     },
     {
       "ticker": "052860",
@@ -24899,7 +24865,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "반도체"
       ],
-      "rank": 1382
+      "rank": 1380
     },
     {
       "ticker": "039340",
@@ -24917,7 +24883,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "미디어·엔터"
       ],
-      "rank": 1383
+      "rank": 1381
     },
     {
       "ticker": "013570",
@@ -24935,7 +24901,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "금융"
       ],
-      "rank": 1384
+      "rank": 1382
     },
     {
       "ticker": "067830",
@@ -24953,7 +24919,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "유통·소비재"
       ],
-      "rank": 1385
+      "rank": 1383
     },
     {
       "ticker": "119650",
@@ -24971,7 +24937,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기계·장비"
       ],
-      "rank": 1386
+      "rank": 1384
     },
     {
       "ticker": "096250",
@@ -24990,7 +24956,7 @@ window.KOS_LIVE_DATA = {
         "IT·소프트웨어",
         "인공지능(AI)"
       ],
-      "rank": 1387
+      "rank": 1385
     },
     {
       "ticker": "092040",
@@ -25008,7 +24974,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "바이오·제약"
       ],
-      "rank": 1388
+      "rank": 1386
     },
     {
       "ticker": "264900",
@@ -25026,12 +24992,12 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "식음료"
       ],
-      "rank": 1389
+      "rank": 1387
     },
     {
       "ticker": "0015S0",
       "name": "페스카로",
-      "name_en": "",
+      "name_en": "Fescaro",
       "market": "코스닥",
       "sector": "IT·소프트웨어",
       "price": 10170,
@@ -25043,7 +25009,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "IT·소프트웨어"
       ],
-      "rank": 1390
+      "rank": 1388
     },
     {
       "ticker": "039980",
@@ -25062,12 +25028,12 @@ window.KOS_LIVE_DATA = {
         "IT·소프트웨어",
         "인공지능(AI)"
       ],
-      "rank": 1391
+      "rank": 1389
     },
     {
       "ticker": "0007J0",
       "name": "인벤테라",
-      "name_en": "",
+      "name_en": "Inventera",
       "market": "코스닥",
       "sector": "기타",
       "price": 12730,
@@ -25079,7 +25045,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 1392
+      "rank": 1390
     },
     {
       "ticker": "044990",
@@ -25097,7 +25063,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "전자·부품"
       ],
-      "rank": 1393
+      "rank": 1391
     },
     {
       "ticker": "035080",
@@ -25115,7 +25081,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "유통·소비재"
       ],
-      "rank": 1394
+      "rank": 1392
     },
     {
       "ticker": "011000",
@@ -25133,7 +25099,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "바이오·제약"
       ],
-      "rank": 1395
+      "rank": 1393
     },
     {
       "ticker": "182360",
@@ -25151,7 +25117,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "미디어·엔터"
       ],
-      "rank": 1396
+      "rank": 1394
     },
     {
       "ticker": "246720",
@@ -25169,7 +25135,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "바이오·제약"
       ],
-      "rank": 1397
+      "rank": 1395
     },
     {
       "ticker": "058850",
@@ -25187,7 +25153,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "IT·소프트웨어"
       ],
-      "rank": 1398
+      "rank": 1396
     },
     {
       "ticker": "388870",
@@ -25205,7 +25171,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "바이오·제약"
       ],
-      "rank": 1399
+      "rank": 1397
     },
     {
       "ticker": "014790",
@@ -25223,7 +25189,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "건설·건자재"
       ],
-      "rank": 1400
+      "rank": 1398
     },
     {
       "ticker": "045970",
@@ -25241,7 +25207,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "반도체"
       ],
-      "rank": 1401
+      "rank": 1399
     },
     {
       "ticker": "023450",
@@ -25259,7 +25225,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "화학"
       ],
-      "rank": 1402
+      "rank": 1400
     },
     {
       "ticker": "023900",
@@ -25277,7 +25243,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "식음료"
       ],
-      "rank": 1403
+      "rank": 1401
     },
     {
       "ticker": "059210",
@@ -25295,7 +25261,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "바이오·제약"
       ],
-      "rank": 1404
+      "rank": 1402
     },
     {
       "ticker": "282720",
@@ -25313,7 +25279,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "에너지·전력"
       ],
-      "rank": 1405
+      "rank": 1403
     },
     {
       "ticker": "413630",
@@ -25331,7 +25297,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "화학"
       ],
-      "rank": 1406
+      "rank": 1404
     },
     {
       "ticker": "009190",
@@ -25349,7 +25315,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "철강·금속"
       ],
-      "rank": 1407
+      "rank": 1405
     },
     {
       "ticker": "038110",
@@ -25367,7 +25333,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "자동차"
       ],
-      "rank": 1408
+      "rank": 1406
     },
     {
       "ticker": "047820",
@@ -25385,7 +25351,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "미디어·엔터"
       ],
-      "rank": 1409
+      "rank": 1407
     },
     {
       "ticker": "000440",
@@ -25403,7 +25369,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "유통·소비재"
       ],
-      "rank": 1410
+      "rank": 1408
     },
     {
       "ticker": "008700",
@@ -25421,7 +25387,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "전자·부품"
       ],
-      "rank": 1411
+      "rank": 1409
     },
     {
       "ticker": "066790",
@@ -25439,7 +25405,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "미디어·엔터"
       ],
-      "rank": 1412
+      "rank": 1410
     },
     {
       "ticker": "036220",
@@ -25457,7 +25423,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "바이오·제약"
       ],
-      "rank": 1413
+      "rank": 1411
     },
     {
       "ticker": "068240",
@@ -25475,7 +25441,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "전기장비"
       ],
-      "rank": 1414
+      "rank": 1412
     },
     {
       "ticker": "032300",
@@ -25493,7 +25459,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "바이오·제약"
       ],
-      "rank": 1415
+      "rank": 1413
     },
     {
       "ticker": "352090",
@@ -25511,7 +25477,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "화학"
       ],
-      "rank": 1416
+      "rank": 1414
     },
     {
       "ticker": "100700",
@@ -25529,7 +25495,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "바이오·제약"
       ],
-      "rank": 1417
+      "rank": 1415
     },
     {
       "ticker": "226400",
@@ -25547,7 +25513,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "바이오·제약"
       ],
-      "rank": 1418
+      "rank": 1416
     },
     {
       "ticker": "019680",
@@ -25565,7 +25531,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 1419
+      "rank": 1417
     },
     {
       "ticker": "096240",
@@ -25583,7 +25549,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 1420
+      "rank": 1418
     },
     {
       "ticker": "109070",
@@ -25601,7 +25567,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "전자·부품"
       ],
-      "rank": 1421
+      "rank": 1419
     },
     {
       "ticker": "389140",
@@ -25619,7 +25585,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "미디어·엔터"
       ],
-      "rank": 1422
+      "rank": 1420
     },
     {
       "ticker": "029480",
@@ -25637,7 +25603,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "전자·부품"
       ],
-      "rank": 1423
+      "rank": 1421
     },
     {
       "ticker": "120240",
@@ -25655,7 +25621,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "화학"
       ],
-      "rank": 1424
+      "rank": 1422
     },
     {
       "ticker": "451220",
@@ -25673,7 +25639,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기계·장비"
       ],
-      "rank": 1425
+      "rank": 1423
     },
     {
       "ticker": "136150",
@@ -25691,7 +25657,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기계·장비"
       ],
-      "rank": 1426
+      "rank": 1424
     },
     {
       "ticker": "357230",
@@ -25709,7 +25675,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "식음료"
       ],
-      "rank": 1427
+      "rank": 1425
     },
     {
       "ticker": "094840",
@@ -25727,7 +25693,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "전자·부품"
       ],
-      "rank": 1428
+      "rank": 1426
     },
     {
       "ticker": "049080",
@@ -25745,7 +25711,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "전자·부품"
       ],
-      "rank": 1429
+      "rank": 1427
     },
     {
       "ticker": "059270",
@@ -25764,7 +25730,7 @@ window.KOS_LIVE_DATA = {
         "항공·방산",
         "로봇"
       ],
-      "rank": 1430
+      "rank": 1428
     },
     {
       "ticker": "063080",
@@ -25782,7 +25748,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "지주"
       ],
-      "rank": 1431
+      "rank": 1429
     },
     {
       "ticker": "078140",
@@ -25800,7 +25766,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "바이오·제약"
       ],
-      "rank": 1432
+      "rank": 1430
     },
     {
       "ticker": "443670",
@@ -25819,7 +25785,7 @@ window.KOS_LIVE_DATA = {
         "IT·소프트웨어",
         "인공지능(AI)"
       ],
-      "rank": 1433
+      "rank": 1431
     },
     {
       "ticker": "464490",
@@ -25837,7 +25803,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "바이오·제약"
       ],
-      "rank": 1434
+      "rank": 1432
     },
     {
       "ticker": "950130",
@@ -25855,7 +25821,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "바이오·제약"
       ],
-      "rank": 1435
+      "rank": 1433
     },
     {
       "ticker": "066310",
@@ -25873,7 +25839,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "반도체"
       ],
-      "rank": 1436
+      "rank": 1434
     },
     {
       "ticker": "004140",
@@ -25891,7 +25857,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "운송·물류"
       ],
-      "rank": 1437
+      "rank": 1435
     },
     {
       "ticker": "217330",
@@ -25909,7 +25875,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "바이오·제약"
       ],
-      "rank": 1438
+      "rank": 1436
     },
     {
       "ticker": "002210",
@@ -25927,7 +25893,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "바이오·제약"
       ],
-      "rank": 1439
+      "rank": 1437
     },
     {
       "ticker": "139990",
@@ -25945,7 +25911,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "철강·금속"
       ],
-      "rank": 1440
+      "rank": 1438
     },
     {
       "ticker": "265740",
@@ -25963,7 +25929,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "화장품"
       ],
-      "rank": 1441
+      "rank": 1439
     },
     {
       "ticker": "035610",
@@ -25981,7 +25947,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "부동산·리츠"
       ],
-      "rank": 1442
+      "rank": 1440
     },
     {
       "ticker": "131370",
@@ -25999,7 +25965,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "IT·소프트웨어"
       ],
-      "rank": 1443
+      "rank": 1441
     },
     {
       "ticker": "032560",
@@ -26017,7 +25983,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "철강·금속"
       ],
-      "rank": 1444
+      "rank": 1442
     },
     {
       "ticker": "036420",
@@ -26035,7 +26001,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "미디어·엔터"
       ],
-      "rank": 1445
+      "rank": 1443
     },
     {
       "ticker": "086710",
@@ -26053,7 +26019,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "화장품"
       ],
-      "rank": 1446
+      "rank": 1444
     },
     {
       "ticker": "036580",
@@ -26071,7 +26037,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "식음료"
       ],
-      "rank": 1447
+      "rank": 1445
     },
     {
       "ticker": "053260",
@@ -26089,7 +26055,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "철강·금속"
       ],
-      "rank": 1448
+      "rank": 1446
     },
     {
       "ticker": "011700",
@@ -26107,7 +26073,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기계·장비"
       ],
-      "rank": 1449
+      "rank": 1447
     },
     {
       "ticker": "408470",
@@ -26125,7 +26091,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "금융"
       ],
-      "rank": 1450
+      "rank": 1448
     },
     {
       "ticker": "290720",
@@ -26143,7 +26109,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "유통·소비재"
       ],
-      "rank": 1451
+      "rank": 1449
     },
     {
       "ticker": "288180",
@@ -26161,7 +26127,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "항공·방산"
       ],
-      "rank": 1452
+      "rank": 1450
     },
     {
       "ticker": "055490",
@@ -26179,7 +26145,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "화학"
       ],
-      "rank": 1453
+      "rank": 1451
     },
     {
       "ticker": "042500",
@@ -26197,7 +26163,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "IT·소프트웨어"
       ],
-      "rank": 1454
+      "rank": 1452
     },
     {
       "ticker": "063170",
@@ -26215,7 +26181,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "유통·소비재"
       ],
-      "rank": 1455
+      "rank": 1453
     },
     {
       "ticker": "066980",
@@ -26233,7 +26199,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 1456
+      "rank": 1454
     },
     {
       "ticker": "189330",
@@ -26252,7 +26218,7 @@ window.KOS_LIVE_DATA = {
         "IT·소프트웨어",
         "인공지능(AI)"
       ],
-      "rank": 1457
+      "rank": 1455
     },
     {
       "ticker": "090470",
@@ -26271,7 +26237,7 @@ window.KOS_LIVE_DATA = {
         "기계·장비",
         "로봇"
       ],
-      "rank": 1458
+      "rank": 1456
     },
     {
       "ticker": "023800",
@@ -26289,7 +26255,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "자동차"
       ],
-      "rank": 1459
+      "rank": 1457
     },
     {
       "ticker": "417970",
@@ -26307,7 +26273,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기계·장비"
       ],
-      "rank": 1460
+      "rank": 1458
     },
     {
       "ticker": "100590",
@@ -26325,7 +26291,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "전자·부품"
       ],
-      "rank": 1461
+      "rank": 1459
     },
     {
       "ticker": "067000",
@@ -26343,7 +26309,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "게임"
       ],
-      "rank": 1462
+      "rank": 1460
     },
     {
       "ticker": "100130",
@@ -26361,7 +26327,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "철강·금속"
       ],
-      "rank": 1463
+      "rank": 1461
     },
     {
       "ticker": "363280",
@@ -26379,24 +26345,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "지주"
       ],
-      "rank": 1464
-    },
-    {
-      "ticker": "37550L",
-      "name": "DL이앤씨2우(전환)",
-      "name_en": "",
-      "market": "코스피",
-      "sector": "건설·건자재",
-      "price": 42950,
-      "change": -1.49,
-      "volume": 2148,
-      "trading_value": 90892700,
-      "mcap": 0.0907,
-      "shares": 2111951,
-      "categories": [
-        "건설·건자재"
-      ],
-      "rank": 1465
+      "rank": 1462
     },
     {
       "ticker": "337930",
@@ -26414,7 +26363,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "섬유·패션·생활"
       ],
-      "rank": 1466
+      "rank": 1463
     },
     {
       "ticker": "004890",
@@ -26432,7 +26381,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "철강·금속"
       ],
-      "rank": 1467
+      "rank": 1464
     },
     {
       "ticker": "058860",
@@ -26450,7 +26399,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "IT·소프트웨어"
       ],
-      "rank": 1468
+      "rank": 1465
     },
     {
       "ticker": "303810",
@@ -26468,7 +26417,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "바이오·제약"
       ],
-      "rank": 1469
+      "rank": 1466
     },
     {
       "ticker": "131400",
@@ -26486,7 +26435,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "2차전지"
       ],
-      "rank": 1470
+      "rank": 1467
     },
     {
       "ticker": "099750",
@@ -26504,7 +26453,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "IT·소프트웨어"
       ],
-      "rank": 1471
+      "rank": 1468
     },
     {
       "ticker": "066700",
@@ -26522,7 +26471,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "바이오·제약"
       ],
-      "rank": 1472
+      "rank": 1469
     },
     {
       "ticker": "262260",
@@ -26540,7 +26489,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "전기장비"
       ],
-      "rank": 1473
+      "rank": 1470
     },
     {
       "ticker": "014160",
@@ -26558,7 +26507,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "화학"
       ],
-      "rank": 1474
+      "rank": 1471
     },
     {
       "ticker": "311320",
@@ -26576,7 +26525,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "전자·부품"
       ],
-      "rank": 1475
+      "rank": 1472
     },
     {
       "ticker": "123010",
@@ -26594,7 +26543,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "전자·부품"
       ],
-      "rank": 1476
+      "rank": 1473
     },
     {
       "ticker": "330350",
@@ -26612,7 +26561,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "바이오·제약"
       ],
-      "rank": 1477
+      "rank": 1474
     },
     {
       "ticker": "033290",
@@ -26630,7 +26579,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "운송·물류"
       ],
-      "rank": 1478
+      "rank": 1475
     },
     {
       "ticker": "203690",
@@ -26648,7 +26597,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "섬유·패션·생활"
       ],
-      "rank": 1479
+      "rank": 1476
     },
     {
       "ticker": "004100",
@@ -26666,7 +26615,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기계·장비"
       ],
-      "rank": 1480
+      "rank": 1477
     },
     {
       "ticker": "418470",
@@ -26684,7 +26633,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "미디어·엔터"
       ],
-      "rank": 1481
+      "rank": 1478
     },
     {
       "ticker": "040420",
@@ -26702,7 +26651,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "IT·소프트웨어"
       ],
-      "rank": 1482
+      "rank": 1479
     },
     {
       "ticker": "033340",
@@ -26720,7 +26669,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "섬유·패션·생활"
       ],
-      "rank": 1483
+      "rank": 1480
     },
     {
       "ticker": "101330",
@@ -26738,7 +26687,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "전자·부품"
       ],
-      "rank": 1484
+      "rank": 1481
     },
     {
       "ticker": "321260",
@@ -26756,7 +26705,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "반도체"
       ],
-      "rank": 1485
+      "rank": 1482
     },
     {
       "ticker": "302550",
@@ -26774,7 +26723,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "전기장비"
       ],
-      "rank": 1486
+      "rank": 1483
     },
     {
       "ticker": "014440",
@@ -26792,7 +26741,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "화학"
       ],
-      "rank": 1487
+      "rank": 1484
     },
     {
       "ticker": "024880",
@@ -26810,7 +26759,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기계·장비"
       ],
-      "rank": 1488
+      "rank": 1485
     },
     {
       "ticker": "053580",
@@ -26828,7 +26777,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "IT·소프트웨어"
       ],
-      "rank": 1489
+      "rank": 1486
     },
     {
       "ticker": "348350",
@@ -26846,7 +26795,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기계·장비"
       ],
-      "rank": 1490
+      "rank": 1487
     },
     {
       "ticker": "063160",
@@ -26864,7 +26813,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "바이오·제약"
       ],
-      "rank": 1491
+      "rank": 1488
     },
     {
       "ticker": "347890",
@@ -26882,7 +26831,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "전자·부품"
       ],
-      "rank": 1492
+      "rank": 1489
     },
     {
       "ticker": "002200",
@@ -26900,7 +26849,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "건설·건자재"
       ],
-      "rank": 1493
+      "rank": 1490
     },
     {
       "ticker": "023000",
@@ -26918,7 +26867,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "철강·금속"
       ],
-      "rank": 1494
+      "rank": 1491
     },
     {
       "ticker": "163560",
@@ -26936,7 +26885,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "화학"
       ],
-      "rank": 1495
+      "rank": 1492
     },
     {
       "ticker": "072950",
@@ -26954,7 +26903,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "전자·부품"
       ],
-      "rank": 1496
+      "rank": 1493
     },
     {
       "ticker": "006840",
@@ -26972,7 +26921,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "지주"
       ],
-      "rank": 1497
+      "rank": 1494
     },
     {
       "ticker": "008260",
@@ -26990,7 +26939,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "철강·금속"
       ],
-      "rank": 1498
+      "rank": 1495
     },
     {
       "ticker": "009300",
@@ -27008,7 +26957,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "바이오·제약"
       ],
-      "rank": 1499
+      "rank": 1496
     },
     {
       "ticker": "072020",
@@ -27026,7 +26975,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "바이오·제약"
       ],
-      "rank": 1500
+      "rank": 1497
     },
     {
       "ticker": "058400",
@@ -27044,7 +26993,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "미디어·엔터"
       ],
-      "rank": 1501
+      "rank": 1498
     },
     {
       "ticker": "010280",
@@ -27062,7 +27011,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "IT·소프트웨어"
       ],
-      "rank": 1502
+      "rank": 1499
     },
     {
       "ticker": "052420",
@@ -27080,7 +27029,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "2차전지"
       ],
-      "rank": 1503
+      "rank": 1500
     },
     {
       "ticker": "007110",
@@ -27098,7 +27047,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "건설·건자재"
       ],
-      "rank": 1504
+      "rank": 1501
     },
     {
       "ticker": "298540",
@@ -27116,7 +27065,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "섬유·패션·생활"
       ],
-      "rank": 1505
+      "rank": 1502
     },
     {
       "ticker": "039010",
@@ -27134,7 +27083,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "전자·부품"
       ],
-      "rank": 1506
+      "rank": 1503
     },
     {
       "ticker": "043610",
@@ -27152,7 +27101,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "미디어·엔터"
       ],
-      "rank": 1507
+      "rank": 1504
     },
     {
       "ticker": "093920",
@@ -27170,7 +27119,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "전자·부품"
       ],
-      "rank": 1508
+      "rank": 1505
     },
     {
       "ticker": "005740",
@@ -27188,7 +27137,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "지주"
       ],
-      "rank": 1509
+      "rank": 1506
     },
     {
       "ticker": "117670",
@@ -27206,7 +27155,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "반도체"
       ],
-      "rank": 1510
+      "rank": 1507
     },
     {
       "ticker": "411080",
@@ -27225,7 +27174,7 @@ window.KOS_LIVE_DATA = {
         "IT·소프트웨어",
         "인공지능(AI)"
       ],
-      "rank": 1511
+      "rank": 1508
     },
     {
       "ticker": "058630",
@@ -27243,7 +27192,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "게임"
       ],
-      "rank": 1512
+      "rank": 1509
     },
     {
       "ticker": "130580",
@@ -27261,7 +27210,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "금융"
       ],
-      "rank": 1513
+      "rank": 1510
     },
     {
       "ticker": "253840",
@@ -27279,7 +27228,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "바이오·제약"
       ],
-      "rank": 1514
+      "rank": 1511
     },
     {
       "ticker": "024830",
@@ -27297,7 +27246,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "자동차"
       ],
-      "rank": 1515
+      "rank": 1512
     },
     {
       "ticker": "382480",
@@ -27315,7 +27264,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기계·장비"
       ],
-      "rank": 1516
+      "rank": 1513
     },
     {
       "ticker": "088390",
@@ -27333,7 +27282,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "전자·부품"
       ],
-      "rank": 1517
+      "rank": 1514
     },
     {
       "ticker": "076610",
@@ -27351,7 +27300,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "전자·부품"
       ],
-      "rank": 1518
+      "rank": 1515
     },
     {
       "ticker": "208370",
@@ -27369,7 +27318,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "전기장비"
       ],
-      "rank": 1519
+      "rank": 1516
     },
     {
       "ticker": "041930",
@@ -27387,7 +27336,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "화학"
       ],
-      "rank": 1520
+      "rank": 1517
     },
     {
       "ticker": "002600",
@@ -27405,7 +27354,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "식음료"
       ],
-      "rank": 1521
+      "rank": 1518
     },
     {
       "ticker": "173130",
@@ -27423,7 +27372,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "IT·소프트웨어"
       ],
-      "rank": 1522
+      "rank": 1519
     },
     {
       "ticker": "950220",
@@ -27441,7 +27390,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "바이오·제약"
       ],
-      "rank": 1523
+      "rank": 1520
     },
     {
       "ticker": "049180",
@@ -27459,7 +27408,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "바이오·제약"
       ],
-      "rank": 1524
+      "rank": 1521
     },
     {
       "ticker": "004650",
@@ -27477,7 +27426,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "식음료"
       ],
-      "rank": 1525
+      "rank": 1522
     },
     {
       "ticker": "011370",
@@ -27495,7 +27444,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "건설·건자재"
       ],
-      "rank": 1526
+      "rank": 1523
     },
     {
       "ticker": "183490",
@@ -27513,7 +27462,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "바이오·제약"
       ],
-      "rank": 1527
+      "rank": 1524
     },
     {
       "ticker": "004840",
@@ -27531,7 +27480,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "화학"
       ],
-      "rank": 1528
+      "rank": 1525
     },
     {
       "ticker": "251120",
@@ -27549,7 +27498,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "바이오·제약"
       ],
-      "rank": 1529
+      "rank": 1526
     },
     {
       "ticker": "002700",
@@ -27567,7 +27516,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "유통·소비재"
       ],
-      "rank": 1530
+      "rank": 1527
     },
     {
       "ticker": "048530",
@@ -27585,7 +27534,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "바이오·제약"
       ],
-      "rank": 1531
+      "rank": 1528
     },
     {
       "ticker": "095720",
@@ -27603,7 +27552,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "미디어·엔터"
       ],
-      "rank": 1532
+      "rank": 1529
     },
     {
       "ticker": "001020",
@@ -27621,7 +27570,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 1533
+      "rank": 1530
     },
     {
       "ticker": "362320",
@@ -27639,7 +27588,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "유통·소비재"
       ],
-      "rank": 1534
+      "rank": 1531
     },
     {
       "ticker": "004590",
@@ -27657,7 +27606,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "유통·소비재"
       ],
-      "rank": 1535
+      "rank": 1532
     },
     {
       "ticker": "048550",
@@ -27675,7 +27624,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "미디어·엔터"
       ],
-      "rank": 1536
+      "rank": 1533
     },
     {
       "ticker": "091120",
@@ -27693,7 +27642,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "전자·부품"
       ],
-      "rank": 1537
+      "rank": 1534
     },
     {
       "ticker": "040910",
@@ -27711,7 +27660,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "반도체"
       ],
-      "rank": 1538
+      "rank": 1535
     },
     {
       "ticker": "079810",
@@ -27729,7 +27678,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기계·장비"
       ],
-      "rank": 1539
+      "rank": 1536
     },
     {
       "ticker": "475430",
@@ -27747,7 +27696,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기계·장비"
       ],
-      "rank": 1540
+      "rank": 1537
     },
     {
       "ticker": "476040",
@@ -27765,7 +27714,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "바이오·제약"
       ],
-      "rank": 1541
+      "rank": 1538
     },
     {
       "ticker": "030960",
@@ -27783,7 +27732,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "미디어·엔터"
       ],
-      "rank": 1542
+      "rank": 1539
     },
     {
       "ticker": "101670",
@@ -27801,7 +27750,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "화학"
       ],
-      "rank": 1543
+      "rank": 1540
     },
     {
       "ticker": "066590",
@@ -27819,7 +27768,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "자동차"
       ],
-      "rank": 1544
+      "rank": 1541
     },
     {
       "ticker": "000230",
@@ -27837,7 +27786,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "지주"
       ],
-      "rank": 1545
+      "rank": 1542
     },
     {
       "ticker": "142280",
@@ -27855,7 +27804,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "바이오·제약"
       ],
-      "rank": 1546
+      "rank": 1543
     },
     {
       "ticker": "005870",
@@ -27873,7 +27822,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "항공·방산"
       ],
-      "rank": 1547
+      "rank": 1544
     },
     {
       "ticker": "299660",
@@ -27891,7 +27840,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "바이오·제약"
       ],
-      "rank": 1548
+      "rank": 1545
     },
     {
       "ticker": "432470",
@@ -27909,7 +27858,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기계·장비"
       ],
-      "rank": 1549
+      "rank": 1546
     },
     {
       "ticker": "419050",
@@ -27927,7 +27876,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "자동차"
       ],
-      "rank": 1550
+      "rank": 1547
     },
     {
       "ticker": "007980",
@@ -27945,7 +27894,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "섬유·패션·생활"
       ],
-      "rank": 1551
+      "rank": 1548
     },
     {
       "ticker": "175250",
@@ -27963,7 +27912,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "바이오·제약"
       ],
-      "rank": 1552
+      "rank": 1549
     },
     {
       "ticker": "271830",
@@ -27981,7 +27930,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기계·장비"
       ],
-      "rank": 1553
+      "rank": 1550
     },
     {
       "ticker": "000590",
@@ -27999,7 +27948,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "지주"
       ],
-      "rank": 1554
+      "rank": 1551
     },
     {
       "ticker": "054670",
@@ -28017,7 +27966,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "바이오·제약"
       ],
-      "rank": 1555
+      "rank": 1552
     },
     {
       "ticker": "234300",
@@ -28035,7 +27984,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "IT·소프트웨어"
       ],
-      "rank": 1556
+      "rank": 1553
     },
     {
       "ticker": "412540",
@@ -28053,7 +28002,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기계·장비"
       ],
-      "rank": 1557
+      "rank": 1554
     },
     {
       "ticker": "424960",
@@ -28071,7 +28020,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "전자·부품"
       ],
-      "rank": 1558
+      "rank": 1555
     },
     {
       "ticker": "294630",
@@ -28089,7 +28038,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기계·장비"
       ],
-      "rank": 1559
+      "rank": 1556
     },
     {
       "ticker": "225530",
@@ -28107,7 +28056,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "건설·건자재"
       ],
-      "rank": 1560
+      "rank": 1557
     },
     {
       "ticker": "265560",
@@ -28125,7 +28074,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "자동차"
       ],
-      "rank": 1561
+      "rank": 1558
     },
     {
       "ticker": "037760",
@@ -28143,7 +28092,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "철강·금속"
       ],
-      "rank": 1562
+      "rank": 1559
     },
     {
       "ticker": "413390",
@@ -28161,7 +28110,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기계·장비"
       ],
-      "rank": 1563
+      "rank": 1560
     },
     {
       "ticker": "011320",
@@ -28179,7 +28128,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "자동차"
       ],
-      "rank": 1564
+      "rank": 1561
     },
     {
       "ticker": "060590",
@@ -28197,7 +28146,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "바이오·제약"
       ],
-      "rank": 1565
+      "rank": 1562
     },
     {
       "ticker": "007590",
@@ -28215,7 +28164,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "화학"
       ],
-      "rank": 1566
+      "rank": 1563
     },
     {
       "ticker": "290660",
@@ -28233,7 +28182,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "전자·부품"
       ],
-      "rank": 1567
+      "rank": 1564
     },
     {
       "ticker": "307870",
@@ -28251,7 +28200,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "IT·소프트웨어"
       ],
-      "rank": 1568
+      "rank": 1565
     },
     {
       "ticker": "001470",
@@ -28269,7 +28218,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "건설·건자재"
       ],
-      "rank": 1569
+      "rank": 1566
     },
     {
       "ticker": "222160",
@@ -28287,7 +28236,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기계·장비"
       ],
-      "rank": 1570
+      "rank": 1567
     },
     {
       "ticker": "302430",
@@ -28305,7 +28254,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "반도체"
       ],
-      "rank": 1571
+      "rank": 1568
     },
     {
       "ticker": "460940",
@@ -28324,7 +28273,7 @@ window.KOS_LIVE_DATA = {
         "기계·장비",
         "로봇"
       ],
-      "rank": 1572
+      "rank": 1569
     },
     {
       "ticker": "054620",
@@ -28342,7 +28291,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "금융"
       ],
-      "rank": 1573
+      "rank": 1570
     },
     {
       "ticker": "019540",
@@ -28360,7 +28309,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "자동차"
       ],
-      "rank": 1574
+      "rank": 1571
     },
     {
       "ticker": "448710",
@@ -28378,7 +28327,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "반도체"
       ],
-      "rank": 1575
+      "rank": 1572
     },
     {
       "ticker": "006890",
@@ -28396,7 +28345,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "화학"
       ],
-      "rank": 1576
+      "rank": 1573
     },
     {
       "ticker": "017370",
@@ -28414,7 +28363,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "자동차"
       ],
-      "rank": 1577
+      "rank": 1574
     },
     {
       "ticker": "273640",
@@ -28432,7 +28381,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기계·장비"
       ],
-      "rank": 1578
+      "rank": 1575
     },
     {
       "ticker": "439580",
@@ -28450,7 +28399,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "바이오·제약"
       ],
-      "rank": 1579
+      "rank": 1576
     },
     {
       "ticker": "084730",
@@ -28468,7 +28417,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "IT·소프트웨어"
       ],
-      "rank": 1580
+      "rank": 1577
     },
     {
       "ticker": "003580",
@@ -28486,7 +28435,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "유통·소비재"
       ],
-      "rank": 1581
+      "rank": 1578
     },
     {
       "ticker": "370090",
@@ -28504,7 +28453,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "전자·부품"
       ],
-      "rank": 1582
+      "rank": 1579
     },
     {
       "ticker": "041910",
@@ -28523,7 +28472,7 @@ window.KOS_LIVE_DATA = {
         "바이오·제약",
         "인공지능(AI)"
       ],
-      "rank": 1583
+      "rank": 1580
     },
     {
       "ticker": "017650",
@@ -28541,7 +28490,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 1584
+      "rank": 1581
     },
     {
       "ticker": "065510",
@@ -28559,7 +28508,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "전자·부품"
       ],
-      "rank": 1585
+      "rank": 1582
     },
     {
       "ticker": "263800",
@@ -28577,7 +28526,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "IT·소프트웨어"
       ],
-      "rank": 1586
+      "rank": 1583
     },
     {
       "ticker": "024740",
@@ -28595,7 +28544,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "자동차"
       ],
-      "rank": 1587
+      "rank": 1584
     },
     {
       "ticker": "170030",
@@ -28613,7 +28562,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "자동차"
       ],
-      "rank": 1588
+      "rank": 1585
     },
     {
       "ticker": "067570",
@@ -28631,7 +28580,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "자동차"
       ],
-      "rank": 1589
+      "rank": 1586
     },
     {
       "ticker": "111380",
@@ -28649,7 +28598,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "섬유·패션·생활"
       ],
-      "rank": 1590
+      "rank": 1587
     },
     {
       "ticker": "054040",
@@ -28667,7 +28616,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "IT·소프트웨어"
       ],
-      "rank": 1591
+      "rank": 1588
     },
     {
       "ticker": "228670",
@@ -28685,7 +28634,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "전자·부품"
       ],
-      "rank": 1592
+      "rank": 1589
     },
     {
       "ticker": "006140",
@@ -28703,7 +28652,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "전자·부품"
       ],
-      "rank": 1593
+      "rank": 1590
     },
     {
       "ticker": "277880",
@@ -28721,7 +28670,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "2차전지"
       ],
-      "rank": 1594
+      "rank": 1591
     },
     {
       "ticker": "009180",
@@ -28739,12 +28688,12 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "운송·물류"
       ],
-      "rank": 1595
+      "rank": 1592
     },
     {
       "ticker": "0015N0",
       "name": "아로마티카",
-      "name_en": "",
+      "name_en": "Aromatica",
       "market": "코스닥",
       "sector": "화장품",
       "price": 6090,
@@ -28756,7 +28705,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "화장품"
       ],
-      "rank": 1596
+      "rank": 1593
     },
     {
       "ticker": "124560",
@@ -28774,7 +28723,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "운송·물류"
       ],
-      "rank": 1597
+      "rank": 1594
     },
     {
       "ticker": "067290",
@@ -28792,7 +28741,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "바이오·제약"
       ],
-      "rank": 1598
+      "rank": 1595
     },
     {
       "ticker": "020710",
@@ -28810,7 +28759,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "IT·소프트웨어"
       ],
-      "rank": 1599
+      "rank": 1596
     },
     {
       "ticker": "014970",
@@ -28828,7 +28777,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "섬유·패션·생활"
       ],
-      "rank": 1600
+      "rank": 1597
     },
     {
       "ticker": "168330",
@@ -28846,7 +28795,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "바이오·제약"
       ],
-      "rank": 1601
+      "rank": 1598
     },
     {
       "ticker": "036640",
@@ -28864,7 +28813,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "화학"
       ],
-      "rank": 1602
+      "rank": 1599
     },
     {
       "ticker": "110790",
@@ -28882,7 +28831,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "섬유·패션·생활"
       ],
-      "rank": 1603
+      "rank": 1600
     },
     {
       "ticker": "089230",
@@ -28900,7 +28849,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "미디어·엔터"
       ],
-      "rank": 1604
+      "rank": 1601
     },
     {
       "ticker": "048770",
@@ -28919,7 +28868,7 @@ window.KOS_LIVE_DATA = {
         "기계·장비",
         "로봇"
       ],
-      "rank": 1605
+      "rank": 1602
     },
     {
       "ticker": "067370",
@@ -28937,7 +28886,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "바이오·제약"
       ],
-      "rank": 1606
+      "rank": 1603
     },
     {
       "ticker": "217190",
@@ -28955,7 +28904,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "반도체"
       ],
-      "rank": 1607
+      "rank": 1604
     },
     {
       "ticker": "171120",
@@ -28973,7 +28922,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "화학"
       ],
-      "rank": 1608
+      "rank": 1605
     },
     {
       "ticker": "201490",
@@ -28991,7 +28940,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "게임"
       ],
-      "rank": 1609
+      "rank": 1606
     },
     {
       "ticker": "026150",
@@ -29009,7 +28958,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "건설·건자재"
       ],
-      "rank": 1610
+      "rank": 1607
     },
     {
       "ticker": "317830",
@@ -29028,7 +28977,7 @@ window.KOS_LIVE_DATA = {
         "기계·장비",
         "로봇"
       ],
-      "rank": 1611
+      "rank": 1608
     },
     {
       "ticker": "007820",
@@ -29047,7 +28996,7 @@ window.KOS_LIVE_DATA = {
         "기계·장비",
         "로봇"
       ],
-      "rank": 1612
+      "rank": 1609
     },
     {
       "ticker": "463020",
@@ -29066,7 +29015,7 @@ window.KOS_LIVE_DATA = {
         "IT·소프트웨어",
         "인공지능(AI)"
       ],
-      "rank": 1613
+      "rank": 1610
     },
     {
       "ticker": "011150",
@@ -29084,7 +29033,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "식음료"
       ],
-      "rank": 1614
+      "rank": 1611
     },
     {
       "ticker": "001260",
@@ -29102,7 +29051,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "건설·건자재"
       ],
-      "rank": 1615
+      "rank": 1612
     },
     {
       "ticker": "006090",
@@ -29120,7 +29069,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "식음료"
       ],
-      "rank": 1616
+      "rank": 1613
     },
     {
       "ticker": "102370",
@@ -29138,7 +29087,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "유통·소비재"
       ],
-      "rank": 1617
+      "rank": 1614
     },
     {
       "ticker": "031820",
@@ -29156,7 +29105,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "IT·소프트웨어"
       ],
-      "rank": 1618
+      "rank": 1615
     },
     {
       "ticker": "205470",
@@ -29174,7 +29123,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "바이오·제약"
       ],
-      "rank": 1619
+      "rank": 1616
     },
     {
       "ticker": "900250",
@@ -29192,7 +29141,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "화학"
       ],
-      "rank": 1620
+      "rank": 1617
     },
     {
       "ticker": "017480",
@@ -29210,7 +29159,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "철강·금속"
       ],
-      "rank": 1621
+      "rank": 1618
     },
     {
       "ticker": "012700",
@@ -29228,7 +29177,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "금융"
       ],
-      "rank": 1622
+      "rank": 1619
     },
     {
       "ticker": "126880",
@@ -29246,7 +29195,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기계·장비"
       ],
-      "rank": 1623
+      "rank": 1620
     },
     {
       "ticker": "013870",
@@ -29264,7 +29213,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "자동차"
       ],
-      "rank": 1624
+      "rank": 1621
     },
     {
       "ticker": "208140",
@@ -29282,7 +29231,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "식음료"
       ],
-      "rank": 1625
+      "rank": 1622
     },
     {
       "ticker": "082850",
@@ -29300,7 +29249,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "식음료"
       ],
-      "rank": 1626
+      "rank": 1623
     },
     {
       "ticker": "003310",
@@ -29318,7 +29267,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "식음료"
       ],
-      "rank": 1627
+      "rank": 1624
     },
     {
       "ticker": "038460",
@@ -29336,7 +29285,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "전자·부품"
       ],
-      "rank": 1628
+      "rank": 1625
     },
     {
       "ticker": "007460",
@@ -29354,7 +29303,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "바이오·제약"
       ],
-      "rank": 1629
+      "rank": 1626
     },
     {
       "ticker": "010960",
@@ -29372,7 +29321,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "건설·건자재"
       ],
-      "rank": 1630
+      "rank": 1627
     },
     {
       "ticker": "045660",
@@ -29390,7 +29339,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "IT·소프트웨어"
       ],
-      "rank": 1631
+      "rank": 1628
     },
     {
       "ticker": "005750",
@@ -29408,7 +29357,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "건설·건자재"
       ],
-      "rank": 1632
+      "rank": 1629
     },
     {
       "ticker": "128660",
@@ -29426,7 +29375,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "철강·금속"
       ],
-      "rank": 1633
+      "rank": 1630
     },
     {
       "ticker": "025550",
@@ -29444,7 +29393,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "철강·금속"
       ],
-      "rank": 1634
+      "rank": 1631
     },
     {
       "ticker": "002720",
@@ -29462,7 +29411,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "바이오·제약"
       ],
-      "rank": 1635
+      "rank": 1632
     },
     {
       "ticker": "069730",
@@ -29480,7 +29429,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "철강·금속"
       ],
-      "rank": 1636
+      "rank": 1633
     },
     {
       "ticker": "348150",
@@ -29498,7 +29447,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "바이오·제약"
       ],
-      "rank": 1637
+      "rank": 1634
     },
     {
       "ticker": "000180",
@@ -29516,7 +29465,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "지주"
       ],
-      "rank": 1638
+      "rank": 1635
     },
     {
       "ticker": "900260",
@@ -29534,7 +29483,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "금융"
       ],
-      "rank": 1639
+      "rank": 1636
     },
     {
       "ticker": "238090",
@@ -29552,7 +29501,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "화학"
       ],
-      "rank": 1640
+      "rank": 1637
     },
     {
       "ticker": "053280",
@@ -29570,7 +29519,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "유통·소비재"
       ],
-      "rank": 1641
+      "rank": 1638
     },
     {
       "ticker": "001560",
@@ -29588,7 +29537,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "화학"
       ],
-      "rank": 1642
+      "rank": 1639
     },
     {
       "ticker": "019550",
@@ -29606,7 +29555,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "금융"
       ],
-      "rank": 1643
+      "rank": 1640
     },
     {
       "ticker": "096350",
@@ -29624,7 +29573,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "철강·금속"
       ],
-      "rank": 1644
+      "rank": 1641
     },
     {
       "ticker": "320000",
@@ -29642,7 +29591,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "반도체"
       ],
-      "rank": 1645
+      "rank": 1642
     },
     {
       "ticker": "038680",
@@ -29660,7 +29609,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "IT·소프트웨어"
       ],
-      "rank": 1646
+      "rank": 1643
     },
     {
       "ticker": "234920",
@@ -29678,7 +29627,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "전자·부품"
       ],
-      "rank": 1647
+      "rank": 1644
     },
     {
       "ticker": "094860",
@@ -29696,7 +29645,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "IT·소프트웨어"
       ],
-      "rank": 1648
+      "rank": 1645
     },
     {
       "ticker": "014470",
@@ -29714,7 +29663,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "부동산·리츠"
       ],
-      "rank": 1649
+      "rank": 1646
     },
     {
       "ticker": "048430",
@@ -29732,7 +29681,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "자동차"
       ],
-      "rank": 1650
+      "rank": 1647
     },
     {
       "ticker": "032850",
@@ -29750,7 +29699,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "IT·소프트웨어"
       ],
-      "rank": 1651
+      "rank": 1648
     },
     {
       "ticker": "083790",
@@ -29768,7 +29717,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "바이오·제약"
       ],
-      "rank": 1652
+      "rank": 1649
     },
     {
       "ticker": "000850",
@@ -29786,7 +29735,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기계·장비"
       ],
-      "rank": 1653
+      "rank": 1650
     },
     {
       "ticker": "056360",
@@ -29804,7 +29753,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "통신"
       ],
-      "rank": 1654
+      "rank": 1651
     },
     {
       "ticker": "263600",
@@ -29822,7 +29771,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "전자·부품"
       ],
-      "rank": 1655
+      "rank": 1652
     },
     {
       "ticker": "081180",
@@ -29840,7 +29789,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기계·장비"
       ],
-      "rank": 1656
+      "rank": 1653
     },
     {
       "ticker": "085310",
@@ -29858,7 +29807,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기계·장비"
       ],
-      "rank": 1657
+      "rank": 1654
     },
     {
       "ticker": "241690",
@@ -29876,7 +29825,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "자동차"
       ],
-      "rank": 1658
+      "rank": 1655
     },
     {
       "ticker": "101140",
@@ -29894,7 +29843,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "바이오·제약"
       ],
-      "rank": 1659
+      "rank": 1656
     },
     {
       "ticker": "002800",
@@ -29912,7 +29861,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "바이오·제약"
       ],
-      "rank": 1660
+      "rank": 1657
     },
     {
       "ticker": "079980",
@@ -29930,7 +29879,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "화학"
       ],
-      "rank": 1661
+      "rank": 1658
     },
     {
       "ticker": "315640",
@@ -29949,7 +29898,7 @@ window.KOS_LIVE_DATA = {
         "IT·소프트웨어",
         "인공지능(AI)"
       ],
-      "rank": 1662
+      "rank": 1659
     },
     {
       "ticker": "091440",
@@ -29967,7 +29916,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "전자·부품"
       ],
-      "rank": 1663
+      "rank": 1660
     },
     {
       "ticker": "036000",
@@ -29985,7 +29934,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "미디어·엔터"
       ],
-      "rank": 1664
+      "rank": 1661
     },
     {
       "ticker": "013700",
@@ -30003,7 +29952,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "건설·건자재"
       ],
-      "rank": 1665
+      "rank": 1662
     },
     {
       "ticker": "004720",
@@ -30021,7 +29970,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "바이오·제약"
       ],
-      "rank": 1666
+      "rank": 1663
     },
     {
       "ticker": "081150",
@@ -30039,7 +29988,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "철강·금속"
       ],
-      "rank": 1667
+      "rank": 1664
     },
     {
       "ticker": "451250",
@@ -30057,7 +30006,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "화장품"
       ],
-      "rank": 1668
+      "rank": 1665
     },
     {
       "ticker": "187420",
@@ -30075,7 +30024,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "바이오·제약"
       ],
-      "rank": 1669
+      "rank": 1666
     },
     {
       "ticker": "039610",
@@ -30093,7 +30042,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기계·장비"
       ],
-      "rank": 1670
+      "rank": 1667
     },
     {
       "ticker": "060310",
@@ -30111,7 +30060,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "전기장비"
       ],
-      "rank": 1671
+      "rank": 1668
     },
     {
       "ticker": "137950",
@@ -30129,7 +30078,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "화학"
       ],
-      "rank": 1672
+      "rank": 1669
     },
     {
       "ticker": "347860",
@@ -30148,7 +30097,7 @@ window.KOS_LIVE_DATA = {
         "IT·소프트웨어",
         "인공지능(AI)"
       ],
-      "rank": 1673
+      "rank": 1670
     },
     {
       "ticker": "126640",
@@ -30166,7 +30115,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "항공·방산"
       ],
-      "rank": 1674
+      "rank": 1671
     },
     {
       "ticker": "140070",
@@ -30184,7 +30133,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "반도체"
       ],
-      "rank": 1675
+      "rank": 1672
     },
     {
       "ticker": "105740",
@@ -30202,7 +30151,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기계·장비"
       ],
-      "rank": 1676
+      "rank": 1673
     },
     {
       "ticker": "049480",
@@ -30220,7 +30169,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "IT·소프트웨어"
       ],
-      "rank": 1677
+      "rank": 1674
     },
     {
       "ticker": "452200",
@@ -30238,7 +30187,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "전기장비"
       ],
-      "rank": 1678
+      "rank": 1675
     },
     {
       "ticker": "092300",
@@ -30256,7 +30205,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "전자·부품"
       ],
-      "rank": 1679
+      "rank": 1676
     },
     {
       "ticker": "391710",
@@ -30274,7 +30223,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기계·장비"
       ],
-      "rank": 1680
+      "rank": 1677
     },
     {
       "ticker": "037440",
@@ -30292,7 +30241,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "건설·건자재"
       ],
-      "rank": 1681
+      "rank": 1678
     },
     {
       "ticker": "204840",
@@ -30310,7 +30259,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "바이오·제약"
       ],
-      "rank": 1682
+      "rank": 1679
     },
     {
       "ticker": "073640",
@@ -30328,7 +30277,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "화학"
       ],
-      "rank": 1683
+      "rank": 1680
     },
     {
       "ticker": "007280",
@@ -30346,7 +30295,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "철강·금속"
       ],
-      "rank": 1684
+      "rank": 1681
     },
     {
       "ticker": "016090",
@@ -30364,7 +30313,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "섬유·패션·생활"
       ],
-      "rank": 1685
+      "rank": 1682
     },
     {
       "ticker": "196490",
@@ -30382,7 +30331,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기계·장비"
       ],
-      "rank": 1686
+      "rank": 1683
     },
     {
       "ticker": "032540",
@@ -30400,7 +30349,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "전자·부품"
       ],
-      "rank": 1687
+      "rank": 1684
     },
     {
       "ticker": "261780",
@@ -30418,7 +30367,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "바이오·제약"
       ],
-      "rank": 1688
+      "rank": 1685
     },
     {
       "ticker": "417790",
@@ -30436,7 +30385,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "전자·부품"
       ],
-      "rank": 1689
+      "rank": 1686
     },
     {
       "ticker": "251630",
@@ -30454,7 +30403,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기계·장비"
       ],
-      "rank": 1690
+      "rank": 1687
     },
     {
       "ticker": "478560",
@@ -30472,7 +30421,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "섬유·패션·생활"
       ],
-      "rank": 1691
+      "rank": 1688
     },
     {
       "ticker": "373200",
@@ -30490,7 +30439,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기계·장비"
       ],
-      "rank": 1692
+      "rank": 1689
     },
     {
       "ticker": "044340",
@@ -30508,7 +30457,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "유통·소비재"
       ],
-      "rank": 1693
+      "rank": 1690
     },
     {
       "ticker": "033130",
@@ -30526,7 +30475,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "미디어·엔터"
       ],
-      "rank": 1694
+      "rank": 1691
     },
     {
       "ticker": "459100",
@@ -30544,7 +30493,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "전자·부품"
       ],
-      "rank": 1695
+      "rank": 1692
     },
     {
       "ticker": "332370",
@@ -30562,7 +30511,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "전자·부품"
       ],
-      "rank": 1696
+      "rank": 1693
     },
     {
       "ticker": "043710",
@@ -30580,7 +30529,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "유통·소비재"
       ],
-      "rank": 1697
+      "rank": 1694
     },
     {
       "ticker": "162300",
@@ -30598,7 +30547,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "철강·금속"
       ],
-      "rank": 1698
+      "rank": 1695
     },
     {
       "ticker": "175140",
@@ -30616,7 +30565,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "전자·부품"
       ],
-      "rank": 1699
+      "rank": 1696
     },
     {
       "ticker": "340360",
@@ -30634,7 +30583,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "전자·부품"
       ],
-      "rank": 1700
+      "rank": 1697
     },
     {
       "ticker": "013360",
@@ -30652,7 +30601,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "건설·건자재"
       ],
-      "rank": 1701
+      "rank": 1698
     },
     {
       "ticker": "033230",
@@ -30670,7 +30619,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "IT·소프트웨어"
       ],
-      "rank": 1702
+      "rank": 1699
     },
     {
       "ticker": "338100",
@@ -30688,7 +30637,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "부동산·리츠"
       ],
-      "rank": 1703
+      "rank": 1700
     },
     {
       "ticker": "010660",
@@ -30706,7 +30655,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기계·장비"
       ],
-      "rank": 1704
+      "rank": 1701
     },
     {
       "ticker": "065530",
@@ -30724,7 +30673,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "통신"
       ],
-      "rank": 1705
+      "rank": 1702
     },
     {
       "ticker": "222110",
@@ -30742,7 +30691,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "바이오·제약"
       ],
-      "rank": 1706
+      "rank": 1703
     },
     {
       "ticker": "061250",
@@ -30760,7 +30709,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "바이오·제약"
       ],
-      "rank": 1707
+      "rank": 1704
     },
     {
       "ticker": "463480",
@@ -30778,7 +30727,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "전자·부품"
       ],
-      "rank": 1708
+      "rank": 1705
     },
     {
       "ticker": "111710",
@@ -30796,7 +30745,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "호텔·레저"
       ],
-      "rank": 1709
+      "rank": 1706
     },
     {
       "ticker": "064800",
@@ -30814,7 +30763,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "유통·소비재"
       ],
-      "rank": 1710
+      "rank": 1707
     },
     {
       "ticker": "347000",
@@ -30832,7 +30781,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "전기장비"
       ],
-      "rank": 1711
+      "rank": 1708
     },
     {
       "ticker": "216050",
@@ -30850,7 +30799,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "미디어·엔터"
       ],
-      "rank": 1712
+      "rank": 1709
     },
     {
       "ticker": "191420",
@@ -30868,7 +30817,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "바이오·제약"
       ],
-      "rank": 1713
+      "rank": 1710
     },
     {
       "ticker": "068290",
@@ -30886,7 +30835,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "미디어·엔터"
       ],
-      "rank": 1714
+      "rank": 1711
     },
     {
       "ticker": "215360",
@@ -30904,7 +30853,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "자동차"
       ],
-      "rank": 1715
+      "rank": 1712
     },
     {
       "ticker": "299170",
@@ -30922,7 +30871,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "유통·소비재"
       ],
-      "rank": 1716
+      "rank": 1713
     },
     {
       "ticker": "061040",
@@ -30940,7 +30889,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "전자·부품"
       ],
-      "rank": 1717
+      "rank": 1714
     },
     {
       "ticker": "100220",
@@ -30958,7 +30907,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "IT·소프트웨어"
       ],
-      "rank": 1718
+      "rank": 1715
     },
     {
       "ticker": "123420",
@@ -30976,7 +30925,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "게임"
       ],
-      "rank": 1719
+      "rank": 1716
     },
     {
       "ticker": "453860",
@@ -30994,7 +30943,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "화학"
       ],
-      "rank": 1720
+      "rank": 1717
     },
     {
       "ticker": "153710",
@@ -31012,7 +30961,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "바이오·제약"
       ],
-      "rank": 1721
+      "rank": 1718
     },
     {
       "ticker": "109860",
@@ -31030,7 +30979,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "철강·금속"
       ],
-      "rank": 1722
+      "rank": 1719
     },
     {
       "ticker": "067170",
@@ -31048,7 +30997,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "자동차"
       ],
-      "rank": 1723
+      "rank": 1720
     },
     {
       "ticker": "027830",
@@ -31066,7 +31015,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "금융"
       ],
-      "rank": 1724
+      "rank": 1721
     },
     {
       "ticker": "018500",
@@ -31084,7 +31033,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "자동차"
       ],
-      "rank": 1725
+      "rank": 1722
     },
     {
       "ticker": "009770",
@@ -31102,7 +31051,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "섬유·패션·생활"
       ],
-      "rank": 1726
+      "rank": 1723
     },
     {
       "ticker": "094940",
@@ -31121,7 +31070,7 @@ window.KOS_LIVE_DATA = {
         "기계·장비",
         "로봇"
       ],
-      "rank": 1727
+      "rank": 1724
     },
     {
       "ticker": "215790",
@@ -31139,7 +31088,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "전자·부품"
       ],
-      "rank": 1728
+      "rank": 1725
     },
     {
       "ticker": "000220",
@@ -31157,7 +31106,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "바이오·제약"
       ],
-      "rank": 1729
+      "rank": 1726
     },
     {
       "ticker": "084650",
@@ -31175,7 +31124,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "바이오·제약"
       ],
-      "rank": 1730
+      "rank": 1727
     },
     {
       "ticker": "046210",
@@ -31193,7 +31142,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "바이오·제약"
       ],
-      "rank": 1731
+      "rank": 1728
     },
     {
       "ticker": "039020",
@@ -31211,7 +31160,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "지주"
       ],
-      "rank": 1732
+      "rank": 1729
     },
     {
       "ticker": "024900",
@@ -31229,7 +31178,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "자동차"
       ],
-      "rank": 1733
+      "rank": 1730
     },
     {
       "ticker": "048910",
@@ -31247,7 +31196,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "미디어·엔터"
       ],
-      "rank": 1734
+      "rank": 1731
     },
     {
       "ticker": "145170",
@@ -31265,7 +31214,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "섬유·패션·생활"
       ],
-      "rank": 1735
+      "rank": 1732
     },
     {
       "ticker": "443250",
@@ -31283,7 +31232,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "미디어·엔터"
       ],
-      "rank": 1736
+      "rank": 1733
     },
     {
       "ticker": "331380",
@@ -31302,7 +31251,7 @@ window.KOS_LIVE_DATA = {
         "IT·소프트웨어",
         "인공지능(AI)"
       ],
-      "rank": 1737
+      "rank": 1734
     },
     {
       "ticker": "155660",
@@ -31320,7 +31269,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "철강·금속"
       ],
-      "rank": 1738
+      "rank": 1735
     },
     {
       "ticker": "382150",
@@ -31339,7 +31288,7 @@ window.KOS_LIVE_DATA = {
         "바이오·제약",
         "인공지능(AI)"
       ],
-      "rank": 1739
+      "rank": 1736
     },
     {
       "ticker": "033320",
@@ -31357,7 +31306,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "유통·소비재"
       ],
-      "rank": 1740
+      "rank": 1737
     },
     {
       "ticker": "065440",
@@ -31375,7 +31324,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "IT·소프트웨어"
       ],
-      "rank": 1741
+      "rank": 1738
     },
     {
       "ticker": "311690",
@@ -31393,7 +31342,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "바이오·제약"
       ],
-      "rank": 1742
+      "rank": 1739
     },
     {
       "ticker": "217500",
@@ -31411,7 +31360,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기계·장비"
       ],
-      "rank": 1743
+      "rank": 1740
     },
     {
       "ticker": "185490",
@@ -31429,7 +31378,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "바이오·제약"
       ],
-      "rank": 1744
+      "rank": 1741
     },
     {
       "ticker": "071090",
@@ -31447,7 +31396,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "철강·금속"
       ],
-      "rank": 1745
+      "rank": 1742
     },
     {
       "ticker": "053450",
@@ -31465,7 +31414,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "전자·부품"
       ],
-      "rank": 1746
+      "rank": 1743
     },
     {
       "ticker": "080010",
@@ -31483,7 +31432,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "유통·소비재"
       ],
-      "rank": 1747
+      "rank": 1744
     },
     {
       "ticker": "155650",
@@ -31501,7 +31450,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "반도체"
       ],
-      "rank": 1748
+      "rank": 1745
     },
     {
       "ticker": "010040",
@@ -31519,7 +31468,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "화학"
       ],
-      "rank": 1749
+      "rank": 1746
     },
     {
       "ticker": "003010",
@@ -31537,7 +31486,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "유통·소비재"
       ],
-      "rank": 1750
+      "rank": 1747
     },
     {
       "ticker": "104620",
@@ -31555,7 +31504,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "호텔·레저"
       ],
-      "rank": 1751
+      "rank": 1748
     },
     {
       "ticker": "060570",
@@ -31573,7 +31522,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "미디어·엔터"
       ],
-      "rank": 1752
+      "rank": 1749
     },
     {
       "ticker": "088280",
@@ -31591,7 +31540,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "반도체"
       ],
-      "rank": 1753
+      "rank": 1750
     },
     {
       "ticker": "004540",
@@ -31609,7 +31558,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "섬유·패션·생활"
       ],
-      "rank": 1754
+      "rank": 1751
     },
     {
       "ticker": "094850",
@@ -31627,7 +31576,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "호텔·레저"
       ],
-      "rank": 1755
+      "rank": 1752
     },
     {
       "ticker": "042110",
@@ -31645,7 +31594,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기계·장비"
       ],
-      "rank": 1756
+      "rank": 1753
     },
     {
       "ticker": "109080",
@@ -31663,7 +31612,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "전자·부품"
       ],
-      "rank": 1757
+      "rank": 1754
     },
     {
       "ticker": "071670",
@@ -31681,7 +31630,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "자동차"
       ],
-      "rank": 1758
+      "rank": 1755
     },
     {
       "ticker": "043650",
@@ -31699,7 +31648,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "식음료"
       ],
-      "rank": 1759
+      "rank": 1756
     },
     {
       "ticker": "214260",
@@ -31717,7 +31666,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "바이오·제약"
       ],
-      "rank": 1760
+      "rank": 1757
     },
     {
       "ticker": "250030",
@@ -31735,7 +31684,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "화학"
       ],
-      "rank": 1761
+      "rank": 1758
     },
     {
       "ticker": "003780",
@@ -31753,7 +31702,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "화학"
       ],
-      "rank": 1762
+      "rank": 1759
     },
     {
       "ticker": "192250",
@@ -31771,7 +31720,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "IT·소프트웨어"
       ],
-      "rank": 1763
+      "rank": 1760
     },
     {
       "ticker": "010770",
@@ -31789,7 +31738,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "지주"
       ],
-      "rank": 1764
+      "rank": 1761
     },
     {
       "ticker": "006880",
@@ -31807,7 +31756,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "지주"
       ],
-      "rank": 1765
+      "rank": 1762
     },
     {
       "ticker": "246690",
@@ -31825,7 +31774,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "금융"
       ],
-      "rank": 1766
+      "rank": 1763
     },
     {
       "ticker": "001840",
@@ -31843,7 +31792,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "건설·건자재"
       ],
-      "rank": 1767
+      "rank": 1764
     },
     {
       "ticker": "461030",
@@ -31861,7 +31810,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "바이오·제약"
       ],
-      "rank": 1768
+      "rank": 1765
     },
     {
       "ticker": "014950",
@@ -31879,7 +31828,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "바이오·제약"
       ],
-      "rank": 1769
+      "rank": 1766
     },
     {
       "ticker": "012690",
@@ -31897,7 +31846,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "섬유·패션·생활"
       ],
-      "rank": 1770
+      "rank": 1767
     },
     {
       "ticker": "214270",
@@ -31915,7 +31864,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "미디어·엔터"
       ],
-      "rank": 1771
+      "rank": 1768
     },
     {
       "ticker": "009200",
@@ -31933,7 +31882,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 1772
+      "rank": 1769
     },
     {
       "ticker": "019990",
@@ -31951,7 +31900,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기계·장비"
       ],
-      "rank": 1773
+      "rank": 1770
     },
     {
       "ticker": "012790",
@@ -31969,7 +31918,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "바이오·제약"
       ],
-      "rank": 1774
+      "rank": 1771
     },
     {
       "ticker": "039420",
@@ -31987,7 +31936,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "IT·소프트웨어"
       ],
-      "rank": 1775
+      "rank": 1772
     },
     {
       "ticker": "452400",
@@ -32005,7 +31954,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "자동차"
       ],
-      "rank": 1776
+      "rank": 1773
     },
     {
       "ticker": "089850",
@@ -32023,7 +31972,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "IT·소프트웨어"
       ],
-      "rank": 1777
+      "rank": 1774
     },
     {
       "ticker": "024910",
@@ -32041,7 +31990,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "자동차"
       ],
-      "rank": 1778
+      "rank": 1775
     },
     {
       "ticker": "134580",
@@ -32059,7 +32008,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "미디어·엔터"
       ],
-      "rank": 1779
+      "rank": 1776
     },
     {
       "ticker": "041460",
@@ -32077,7 +32026,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "IT·소프트웨어"
       ],
-      "rank": 1780
+      "rank": 1777
     },
     {
       "ticker": "033560",
@@ -32095,7 +32044,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "전자·부품"
       ],
-      "rank": 1781
+      "rank": 1778
     },
     {
       "ticker": "010240",
@@ -32113,7 +32062,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "자동차"
       ],
-      "rank": 1782
+      "rank": 1779
     },
     {
       "ticker": "065130",
@@ -32131,7 +32080,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기계·장비"
       ],
-      "rank": 1783
+      "rank": 1780
     },
     {
       "ticker": "039240",
@@ -32149,7 +32098,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "철강·금속"
       ],
-      "rank": 1784
+      "rank": 1781
     },
     {
       "ticker": "004780",
@@ -32167,7 +32116,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "철강·금속"
       ],
-      "rank": 1785
+      "rank": 1782
     },
     {
       "ticker": "095270",
@@ -32185,7 +32134,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "전기장비"
       ],
-      "rank": 1786
+      "rank": 1783
     },
     {
       "ticker": "046940",
@@ -32203,7 +32152,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "건설·건자재"
       ],
-      "rank": 1787
+      "rank": 1784
     },
     {
       "ticker": "378850",
@@ -32221,7 +32170,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "자동차"
       ],
-      "rank": 1788
+      "rank": 1785
     },
     {
       "ticker": "198080",
@@ -32239,7 +32188,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "반도체"
       ],
-      "rank": 1789
+      "rank": 1786
     },
     {
       "ticker": "456570",
@@ -32257,7 +32206,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "바이오·제약"
       ],
-      "rank": 1790
+      "rank": 1787
     },
     {
       "ticker": "333620",
@@ -32275,7 +32224,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기계·장비"
       ],
-      "rank": 1791
+      "rank": 1788
     },
     {
       "ticker": "053050",
@@ -32293,7 +32242,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "에너지·전력"
       ],
-      "rank": 1792
+      "rank": 1789
     },
     {
       "ticker": "317690",
@@ -32311,7 +32260,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "바이오·제약"
       ],
-      "rank": 1793
+      "rank": 1790
     },
     {
       "ticker": "064240",
@@ -32329,7 +32278,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "전자·부품"
       ],
-      "rank": 1794
+      "rank": 1791
     },
     {
       "ticker": "446840",
@@ -32347,7 +32296,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "전기장비"
       ],
-      "rank": 1795
+      "rank": 1792
     },
     {
       "ticker": "111110",
@@ -32365,7 +32314,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "섬유·패션·생활"
       ],
-      "rank": 1796
+      "rank": 1793
     },
     {
       "ticker": "010470",
@@ -32383,7 +32332,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "미디어·엔터"
       ],
-      "rank": 1797
+      "rank": 1794
     },
     {
       "ticker": "246960",
@@ -32401,7 +32350,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "바이오·제약"
       ],
-      "rank": 1798
+      "rank": 1795
     },
     {
       "ticker": "222420",
@@ -32419,7 +32368,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "화학"
       ],
-      "rank": 1799
+      "rank": 1796
     },
     {
       "ticker": "384470",
@@ -32438,7 +32387,7 @@ window.KOS_LIVE_DATA = {
         "바이오·제약",
         "인공지능(AI)"
       ],
-      "rank": 1800
+      "rank": 1797
     },
     {
       "ticker": "004440",
@@ -32456,7 +32405,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "건설·건자재"
       ],
-      "rank": 1801
+      "rank": 1798
     },
     {
       "ticker": "099220",
@@ -32474,7 +32423,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "유통·소비재"
       ],
-      "rank": 1802
+      "rank": 1799
     },
     {
       "ticker": "092780",
@@ -32492,7 +32441,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "조선"
       ],
-      "rank": 1803
+      "rank": 1800
     },
     {
       "ticker": "296160",
@@ -32510,7 +32459,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "바이오·제약"
       ],
-      "rank": 1804
+      "rank": 1801
     },
     {
       "ticker": "016250",
@@ -32528,7 +32477,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "건설·건자재"
       ],
-      "rank": 1805
+      "rank": 1802
     },
     {
       "ticker": "229000",
@@ -32546,7 +32495,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "바이오·제약"
       ],
-      "rank": 1806
+      "rank": 1803
     },
     {
       "ticker": "198440",
@@ -32564,7 +32513,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "화학"
       ],
-      "rank": 1807
+      "rank": 1804
     },
     {
       "ticker": "317850",
@@ -32582,7 +32531,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기계·장비"
       ],
-      "rank": 1808
+      "rank": 1805
     },
     {
       "ticker": "049550",
@@ -32600,7 +32549,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "화학"
       ],
-      "rank": 1809
+      "rank": 1806
     },
     {
       "ticker": "054930",
@@ -32618,7 +32567,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "건설·건자재"
       ],
-      "rank": 1810
+      "rank": 1807
     },
     {
       "ticker": "007370",
@@ -32636,7 +32585,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "바이오·제약"
       ],
-      "rank": 1811
+      "rank": 1808
     },
     {
       "ticker": "136410",
@@ -32654,7 +32603,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "화학"
       ],
-      "rank": 1812
+      "rank": 1809
     },
     {
       "ticker": "008370",
@@ -32672,7 +32621,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "화학"
       ],
-      "rank": 1813
+      "rank": 1810
     },
     {
       "ticker": "004770",
@@ -32690,7 +32639,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "전자·부품"
       ],
-      "rank": 1814
+      "rank": 1811
     },
     {
       "ticker": "396690",
@@ -32708,7 +32657,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "부동산·리츠"
       ],
-      "rank": 1815
+      "rank": 1812
     },
     {
       "ticker": "005670",
@@ -32726,7 +32675,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "식음료"
       ],
-      "rank": 1816
+      "rank": 1813
     },
     {
       "ticker": "072130",
@@ -32744,7 +32693,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "IT·소프트웨어"
       ],
-      "rank": 1817
+      "rank": 1814
     },
     {
       "ticker": "241790",
@@ -32762,7 +32711,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기계·장비"
       ],
-      "rank": 1818
+      "rank": 1815
     },
     {
       "ticker": "067920",
@@ -32780,7 +32729,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "IT·소프트웨어"
       ],
-      "rank": 1819
+      "rank": 1816
     },
     {
       "ticker": "004060",
@@ -32798,7 +32747,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "유통·소비재"
       ],
-      "rank": 1820
+      "rank": 1817
     },
     {
       "ticker": "273060",
@@ -32816,7 +32765,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "미디어·엔터"
       ],
-      "rank": 1821
+      "rank": 1818
     },
     {
       "ticker": "036090",
@@ -32834,7 +32783,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기계·장비"
       ],
-      "rank": 1822
+      "rank": 1819
     },
     {
       "ticker": "088910",
@@ -32852,7 +32801,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "식음료"
       ],
-      "rank": 1823
+      "rank": 1820
     },
     {
       "ticker": "288620",
@@ -32870,7 +32819,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기계·장비"
       ],
-      "rank": 1824
+      "rank": 1821
     },
     {
       "ticker": "352910",
@@ -32888,7 +32837,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "IT·소프트웨어"
       ],
-      "rank": 1825
+      "rank": 1822
     },
     {
       "ticker": "163280",
@@ -32906,7 +32855,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기계·장비"
       ],
-      "rank": 1826
+      "rank": 1823
     },
     {
       "ticker": "099520",
@@ -32924,7 +32873,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "전자·부품"
       ],
-      "rank": 1827
+      "rank": 1824
     },
     {
       "ticker": "053620",
@@ -32942,7 +32891,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "철강·금속"
       ],
-      "rank": 1828
+      "rank": 1825
     },
     {
       "ticker": "033310",
@@ -32960,12 +32909,12 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "전자·부품"
       ],
-      "rank": 1829
+      "rank": 1826
     },
     {
       "ticker": "0013V0",
       "name": "삼진식품",
-      "name_en": "",
+      "name_en": "Samjin Food",
       "market": "코스닥",
       "sector": "식음료",
       "price": 5840,
@@ -32977,7 +32926,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "식음료"
       ],
-      "rank": 1830
+      "rank": 1827
     },
     {
       "ticker": "027050",
@@ -32995,7 +32944,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "화장품"
       ],
-      "rank": 1831
+      "rank": 1828
     },
     {
       "ticker": "245620",
@@ -33013,7 +32962,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "바이오·제약"
       ],
-      "rank": 1832
+      "rank": 1829
     },
     {
       "ticker": "263690",
@@ -33031,7 +32980,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "전자·부품"
       ],
-      "rank": 1833
+      "rank": 1830
     },
     {
       "ticker": "347740",
@@ -33049,7 +32998,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "바이오·제약"
       ],
-      "rank": 1834
+      "rank": 1831
     },
     {
       "ticker": "002630",
@@ -33067,7 +33016,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "바이오·제약"
       ],
-      "rank": 1835
+      "rank": 1832
     },
     {
       "ticker": "045340",
@@ -33085,7 +33034,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "IT·소프트웨어"
       ],
-      "rank": 1836
+      "rank": 1833
     },
     {
       "ticker": "129260",
@@ -33103,7 +33052,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "운송·물류"
       ],
-      "rank": 1837
+      "rank": 1834
     },
     {
       "ticker": "036670",
@@ -33121,7 +33070,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "화학"
       ],
-      "rank": 1838
+      "rank": 1835
     },
     {
       "ticker": "092440",
@@ -33139,7 +33088,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기계·장비"
       ],
-      "rank": 1839
+      "rank": 1836
     },
     {
       "ticker": "199550",
@@ -33157,7 +33106,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "전자·부품"
       ],
-      "rank": 1840
+      "rank": 1837
     },
     {
       "ticker": "021050",
@@ -33175,7 +33124,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "철강·금속"
       ],
-      "rank": 1841
+      "rank": 1838
     },
     {
       "ticker": "104040",
@@ -33193,7 +33142,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "자동차"
       ],
-      "rank": 1842
+      "rank": 1839
     },
     {
       "ticker": "147760",
@@ -33211,7 +33160,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "전기장비"
       ],
-      "rank": 1843
+      "rank": 1840
     },
     {
       "ticker": "001550",
@@ -33229,7 +33178,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "화학"
       ],
-      "rank": 1844
+      "rank": 1841
     },
     {
       "ticker": "014910",
@@ -33247,7 +33196,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "전자·부품"
       ],
-      "rank": 1845
+      "rank": 1842
     },
     {
       "ticker": "100030",
@@ -33265,7 +33214,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "IT·소프트웨어"
       ],
-      "rank": 1846
+      "rank": 1843
     },
     {
       "ticker": "424980",
@@ -33283,7 +33232,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "반도체"
       ],
-      "rank": 1847
+      "rank": 1844
     },
     {
       "ticker": "180060",
@@ -33301,7 +33250,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기계·장비"
       ],
-      "rank": 1848
+      "rank": 1845
     },
     {
       "ticker": "006980",
@@ -33319,7 +33268,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "식음료"
       ],
-      "rank": 1849
+      "rank": 1846
     },
     {
       "ticker": "036120",
@@ -33337,7 +33286,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "금융"
       ],
-      "rank": 1850
+      "rank": 1847
     },
     {
       "ticker": "317530",
@@ -33355,7 +33304,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "미디어·엔터"
       ],
-      "rank": 1851
+      "rank": 1848
     },
     {
       "ticker": "219550",
@@ -33373,7 +33322,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "유통·소비재"
       ],
-      "rank": 1852
+      "rank": 1849
     },
     {
       "ticker": "095910",
@@ -33391,7 +33340,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "에너지·전력"
       ],
-      "rank": 1853
+      "rank": 1850
     },
     {
       "ticker": "004830",
@@ -33409,7 +33358,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "화학"
       ],
-      "rank": 1854
+      "rank": 1851
     },
     {
       "ticker": "340930",
@@ -33427,7 +33376,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "2차전지"
       ],
-      "rank": 1855
+      "rank": 1852
     },
     {
       "ticker": "072990",
@@ -33445,7 +33394,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "호텔·레저"
       ],
-      "rank": 1856
+      "rank": 1853
     },
     {
       "ticker": "348080",
@@ -33463,7 +33412,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "바이오·제약"
       ],
-      "rank": 1857
+      "rank": 1854
     },
     {
       "ticker": "417860",
@@ -33482,7 +33431,7 @@ window.KOS_LIVE_DATA = {
         "IT·소프트웨어",
         "인공지능(AI)"
       ],
-      "rank": 1858
+      "rank": 1855
     },
     {
       "ticker": "294140",
@@ -33500,7 +33449,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "화학"
       ],
-      "rank": 1859
+      "rank": 1856
     },
     {
       "ticker": "217480",
@@ -33518,7 +33467,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "화장품"
       ],
-      "rank": 1860
+      "rank": 1857
     },
     {
       "ticker": "002760",
@@ -33536,7 +33485,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "화학"
       ],
-      "rank": 1861
+      "rank": 1858
     },
     {
       "ticker": "435570",
@@ -33554,7 +33503,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "식음료"
       ],
-      "rank": 1862
+      "rank": 1859
     },
     {
       "ticker": "004450",
@@ -33572,7 +33521,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "철강·금속"
       ],
-      "rank": 1863
+      "rank": 1860
     },
     {
       "ticker": "372910",
@@ -33590,7 +33539,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "전기장비"
       ],
-      "rank": 1864
+      "rank": 1861
     },
     {
       "ticker": "053350",
@@ -33608,7 +33557,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "IT·소프트웨어"
       ],
-      "rank": 1865
+      "rank": 1862
     },
     {
       "ticker": "054300",
@@ -33626,7 +33575,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "자동차"
       ],
-      "rank": 1866
+      "rank": 1863
     },
     {
       "ticker": "305090",
@@ -33644,7 +33593,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "전기장비"
       ],
-      "rank": 1867
+      "rank": 1864
     },
     {
       "ticker": "278650",
@@ -33662,7 +33611,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "바이오·제약"
       ],
-      "rank": 1868
+      "rank": 1865
     },
     {
       "ticker": "291650",
@@ -33680,7 +33629,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "바이오·제약"
       ],
-      "rank": 1869
+      "rank": 1866
     },
     {
       "ticker": "290670",
@@ -33698,7 +33647,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기계·장비"
       ],
-      "rank": 1870
+      "rank": 1867
     },
     {
       "ticker": "460870",
@@ -33716,7 +33665,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "건설·건자재"
       ],
-      "rank": 1871
+      "rank": 1868
     },
     {
       "ticker": "104540",
@@ -33734,7 +33683,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "바이오·제약"
       ],
-      "rank": 1872
+      "rank": 1869
     },
     {
       "ticker": "444530",
@@ -33752,7 +33701,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "IT·소프트웨어"
       ],
-      "rank": 1873
+      "rank": 1870
     },
     {
       "ticker": "214330",
@@ -33770,7 +33719,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "항공·방산"
       ],
-      "rank": 1874
+      "rank": 1871
     },
     {
       "ticker": "050960",
@@ -33788,7 +33737,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "IT·소프트웨어"
       ],
-      "rank": 1875
+      "rank": 1872
     },
     {
       "ticker": "471820",
@@ -33806,7 +33755,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "바이오·제약"
       ],
-      "rank": 1876
+      "rank": 1873
     },
     {
       "ticker": "207760",
@@ -33824,7 +33773,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "미디어·엔터"
       ],
-      "rank": 1877
+      "rank": 1874
     },
     {
       "ticker": "040610",
@@ -33842,7 +33791,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "항공·방산"
       ],
-      "rank": 1878
+      "rank": 1875
     },
     {
       "ticker": "073110",
@@ -33860,7 +33809,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "전자·부품"
       ],
-      "rank": 1879
+      "rank": 1876
     },
     {
       "ticker": "072470",
@@ -33878,7 +33827,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "지주"
       ],
-      "rank": 1880
+      "rank": 1877
     },
     {
       "ticker": "480370",
@@ -33896,7 +33845,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "자동차"
       ],
-      "rank": 1881
+      "rank": 1878
     },
     {
       "ticker": "038010",
@@ -33914,7 +33863,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "철강·금속"
       ],
-      "rank": 1882
+      "rank": 1879
     },
     {
       "ticker": "002410",
@@ -33932,7 +33881,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "건설·건자재"
       ],
-      "rank": 1883
+      "rank": 1880
     },
     {
       "ticker": "015710",
@@ -33950,7 +33899,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "전자·부품"
       ],
-      "rank": 1884
+      "rank": 1881
     },
     {
       "ticker": "460470",
@@ -33968,7 +33917,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "전기장비"
       ],
-      "rank": 1885
+      "rank": 1882
     },
     {
       "ticker": "075180",
@@ -33986,7 +33935,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "자동차"
       ],
-      "rank": 1886
+      "rank": 1883
     },
     {
       "ticker": "001620",
@@ -34004,7 +33953,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "자동차"
       ],
-      "rank": 1887
+      "rank": 1884
     },
     {
       "ticker": "303360",
@@ -34022,7 +33971,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "전기장비"
       ],
-      "rank": 1888
+      "rank": 1885
     },
     {
       "ticker": "097800",
@@ -34040,7 +33989,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "반도체"
       ],
-      "rank": 1889
+      "rank": 1886
     },
     {
       "ticker": "950200",
@@ -34058,7 +34007,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "바이오·제약"
       ],
-      "rank": 1890
+      "rank": 1887
     },
     {
       "ticker": "053270",
@@ -34076,7 +34025,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "자동차"
       ],
-      "rank": 1891
+      "rank": 1888
     },
     {
       "ticker": "099410",
@@ -34094,7 +34043,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "전기장비"
       ],
-      "rank": 1892
+      "rank": 1889
     },
     {
       "ticker": "006370",
@@ -34112,7 +34061,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "유통·소비재"
       ],
-      "rank": 1893
+      "rank": 1890
     },
     {
       "ticker": "373160",
@@ -34130,7 +34079,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "IT·소프트웨어"
       ],
-      "rank": 1894
+      "rank": 1891
     },
     {
       "ticker": "260930",
@@ -34148,7 +34097,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "화장품"
       ],
-      "rank": 1895
+      "rank": 1892
     },
     {
       "ticker": "479960",
@@ -34166,7 +34115,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "전자·부품"
       ],
-      "rank": 1896
+      "rank": 1893
     },
     {
       "ticker": "159580",
@@ -34184,7 +34133,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "유통·소비재"
       ],
-      "rank": 1897
+      "rank": 1894
     },
     {
       "ticker": "052220",
@@ -34202,7 +34151,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "미디어·엔터"
       ],
-      "rank": 1898
+      "rank": 1895
     },
     {
       "ticker": "023810",
@@ -34220,7 +34169,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "자동차"
       ],
-      "rank": 1899
+      "rank": 1896
     },
     {
       "ticker": "170790",
@@ -34238,7 +34187,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "IT·소프트웨어"
       ],
-      "rank": 1900
+      "rank": 1897
     },
     {
       "ticker": "256630",
@@ -34256,7 +34205,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "반도체"
       ],
-      "rank": 1901
+      "rank": 1898
     },
     {
       "ticker": "177900",
@@ -34274,7 +34223,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "반도체"
       ],
-      "rank": 1902
+      "rank": 1899
     },
     {
       "ticker": "419080",
@@ -34292,7 +34241,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기계·장비"
       ],
-      "rank": 1903
+      "rank": 1900
     },
     {
       "ticker": "122310",
@@ -34310,7 +34259,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기계·장비"
       ],
-      "rank": 1904
+      "rank": 1901
     },
     {
       "ticker": "096610",
@@ -34328,7 +34277,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "반도체"
       ],
-      "rank": 1905
+      "rank": 1902
     },
     {
       "ticker": "318160",
@@ -34346,7 +34295,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "바이오·제약"
       ],
-      "rank": 1906
+      "rank": 1903
     },
     {
       "ticker": "360350",
@@ -34364,7 +34313,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기계·장비"
       ],
-      "rank": 1907
+      "rank": 1904
     },
     {
       "ticker": "082210",
@@ -34382,7 +34331,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "전자·부품"
       ],
-      "rank": 1908
+      "rank": 1905
     },
     {
       "ticker": "004920",
@@ -34400,7 +34349,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "전자·부품"
       ],
-      "rank": 1909
+      "rank": 1906
     },
     {
       "ticker": "321820",
@@ -34418,7 +34367,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "미디어·엔터"
       ],
-      "rank": 1910
+      "rank": 1907
     },
     {
       "ticker": "011390",
@@ -34436,7 +34385,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "건설·건자재"
       ],
-      "rank": 1911
+      "rank": 1908
     },
     {
       "ticker": "299900",
@@ -34454,7 +34403,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "미디어·엔터"
       ],
-      "rank": 1912
+      "rank": 1909
     },
     {
       "ticker": "020760",
@@ -34472,7 +34421,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "전자·부품"
       ],
-      "rank": 1913
+      "rank": 1910
     },
     {
       "ticker": "378800",
@@ -34490,7 +34439,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "바이오·제약"
       ],
-      "rank": 1914
+      "rank": 1911
     },
     {
       "ticker": "053980",
@@ -34508,7 +34457,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "IT·소프트웨어"
       ],
-      "rank": 1915
+      "rank": 1912
     },
     {
       "ticker": "408900",
@@ -34526,7 +34475,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "미디어·엔터"
       ],
-      "rank": 1916
+      "rank": 1913
     },
     {
       "ticker": "393970",
@@ -34544,7 +34493,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "화학"
       ],
-      "rank": 1917
+      "rank": 1914
     },
     {
       "ticker": "065500",
@@ -34562,7 +34511,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "자동차"
       ],
-      "rank": 1918
+      "rank": 1915
     },
     {
       "ticker": "476080",
@@ -34580,7 +34529,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "미디어·엔터"
       ],
-      "rank": 1919
+      "rank": 1916
     },
     {
       "ticker": "068330",
@@ -34598,7 +34547,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기계·장비"
       ],
-      "rank": 1920
+      "rank": 1917
     },
     {
       "ticker": "063440",
@@ -34616,7 +34565,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "미디어·엔터"
       ],
-      "rank": 1921
+      "rank": 1918
     },
     {
       "ticker": "179530",
@@ -34634,7 +34583,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "바이오·제약"
       ],
-      "rank": 1922
+      "rank": 1919
     },
     {
       "ticker": "261520",
@@ -34652,7 +34601,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "IT·소프트웨어"
       ],
-      "rank": 1923
+      "rank": 1920
     },
     {
       "ticker": "000910",
@@ -34670,7 +34619,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "철강·금속"
       ],
-      "rank": 1924
+      "rank": 1921
     },
     {
       "ticker": "025530",
@@ -34688,7 +34637,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "지주"
       ],
-      "rank": 1925
+      "rank": 1922
     },
     {
       "ticker": "317870",
@@ -34706,7 +34655,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기계·장비"
       ],
-      "rank": 1926
+      "rank": 1923
     },
     {
       "ticker": "123700",
@@ -34724,7 +34673,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "자동차"
       ],
-      "rank": 1927
+      "rank": 1924
     },
     {
       "ticker": "226330",
@@ -34743,7 +34692,7 @@ window.KOS_LIVE_DATA = {
         "바이오·제약",
         "인공지능(AI)"
       ],
-      "rank": 1928
+      "rank": 1925
     },
     {
       "ticker": "277070",
@@ -34761,7 +34710,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "금융"
       ],
-      "rank": 1929
+      "rank": 1926
     },
     {
       "ticker": "002140",
@@ -34779,7 +34728,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "식음료"
       ],
-      "rank": 1930
+      "rank": 1927
     },
     {
       "ticker": "189690",
@@ -34797,7 +34746,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "IT·소프트웨어"
       ],
-      "rank": 1931
+      "rank": 1928
     },
     {
       "ticker": "060560",
@@ -34815,7 +34764,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "유통·소비재"
       ],
-      "rank": 1932
+      "rank": 1929
     },
     {
       "ticker": "041650",
@@ -34833,7 +34782,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "자동차"
       ],
-      "rank": 1933
+      "rank": 1930
     },
     {
       "ticker": "184230",
@@ -34851,7 +34800,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "IT·소프트웨어"
       ],
-      "rank": 1934
+      "rank": 1931
     },
     {
       "ticker": "413640",
@@ -34869,7 +34818,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "IT·소프트웨어"
       ],
-      "rank": 1935
+      "rank": 1932
     },
     {
       "ticker": "058730",
@@ -34887,7 +34836,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "건설·건자재"
       ],
-      "rank": 1936
+      "rank": 1933
     },
     {
       "ticker": "047400",
@@ -34905,7 +34854,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "철강·금속"
       ],
-      "rank": 1937
+      "rank": 1934
     },
     {
       "ticker": "238120",
@@ -34923,7 +34872,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "전자·부품"
       ],
-      "rank": 1938
+      "rank": 1935
     },
     {
       "ticker": "104200",
@@ -34941,7 +34890,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "미디어·엔터"
       ],
-      "rank": 1939
+      "rank": 1936
     },
     {
       "ticker": "219420",
@@ -34959,7 +34908,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "IT·소프트웨어"
       ],
-      "rank": 1940
+      "rank": 1937
     },
     {
       "ticker": "466410",
@@ -34977,7 +34926,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "IT·소프트웨어"
       ],
-      "rank": 1941
+      "rank": 1938
     },
     {
       "ticker": "196450",
@@ -34995,7 +34944,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "전자·부품"
       ],
-      "rank": 1942
+      "rank": 1939
     },
     {
       "ticker": "053160",
@@ -35013,7 +34962,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "전자·부품"
       ],
-      "rank": 1943
+      "rank": 1940
     },
     {
       "ticker": "137080",
@@ -35031,7 +34980,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기계·장비"
       ],
-      "rank": 1944
+      "rank": 1941
     },
     {
       "ticker": "393210",
@@ -35049,7 +34998,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "IT·소프트웨어"
       ],
-      "rank": 1945
+      "rank": 1942
     },
     {
       "ticker": "440290",
@@ -35067,7 +35016,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "금융"
       ],
-      "rank": 1946
+      "rank": 1943
     },
     {
       "ticker": "007680",
@@ -35085,7 +35034,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "정유"
       ],
-      "rank": 1947
+      "rank": 1944
     },
     {
       "ticker": "033170",
@@ -35103,7 +35052,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "반도체"
       ],
-      "rank": 1948
+      "rank": 1945
     },
     {
       "ticker": "189860",
@@ -35121,7 +35070,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "전기장비"
       ],
-      "rank": 1949
+      "rank": 1946
     },
     {
       "ticker": "361570",
@@ -35139,7 +35088,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "미디어·엔터"
       ],
-      "rank": 1950
+      "rank": 1947
     },
     {
       "ticker": "014190",
@@ -35157,7 +35106,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "유통·소비재"
       ],
-      "rank": 1951
+      "rank": 1948
     },
     {
       "ticker": "011230",
@@ -35175,7 +35124,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "전자·부품"
       ],
-      "rank": 1952
+      "rank": 1949
     },
     {
       "ticker": "037330",
@@ -35193,7 +35142,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "전자·부품"
       ],
-      "rank": 1953
+      "rank": 1950
     },
     {
       "ticker": "089790",
@@ -35211,7 +35160,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "반도체"
       ],
-      "rank": 1954
+      "rank": 1951
     },
     {
       "ticker": "038070",
@@ -35229,7 +35178,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "바이오·제약"
       ],
-      "rank": 1955
+      "rank": 1952
     },
     {
       "ticker": "037230",
@@ -35247,7 +35196,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "화학"
       ],
-      "rank": 1956
+      "rank": 1953
     },
     {
       "ticker": "023350",
@@ -35265,7 +35214,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "건설·건자재"
       ],
-      "rank": 1957
+      "rank": 1954
     },
     {
       "ticker": "143540",
@@ -35283,7 +35232,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "전자·부품"
       ],
-      "rank": 1958
+      "rank": 1955
     },
     {
       "ticker": "127980",
@@ -35301,7 +35250,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "전자·부품"
       ],
-      "rank": 1959
+      "rank": 1956
     },
     {
       "ticker": "369370",
@@ -35319,7 +35268,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "미디어·엔터"
       ],
-      "rank": 1960
+      "rank": 1957
     },
     {
       "ticker": "065170",
@@ -35337,7 +35286,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "바이오·제약"
       ],
-      "rank": 1961
+      "rank": 1958
     },
     {
       "ticker": "105550",
@@ -35355,7 +35304,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "반도체"
       ],
-      "rank": 1962
+      "rank": 1959
     },
     {
       "ticker": "082660",
@@ -35373,7 +35322,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "화학"
       ],
-      "rank": 1963
+      "rank": 1960
     },
     {
       "ticker": "458350",
@@ -35391,7 +35340,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 1964
+      "rank": 1961
     },
     {
       "ticker": "051390",
@@ -35409,7 +35358,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "유통·소비재"
       ],
-      "rank": 1965
+      "rank": 1962
     },
     {
       "ticker": "114450",
@@ -35427,7 +35376,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "바이오·제약"
       ],
-      "rank": 1966
+      "rank": 1963
     },
     {
       "ticker": "418250",
@@ -35445,7 +35394,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "IT·소프트웨어"
       ],
-      "rank": 1967
+      "rank": 1964
     },
     {
       "ticker": "016600",
@@ -35463,7 +35412,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "금융"
       ],
-      "rank": 1968
+      "rank": 1965
     },
     {
       "ticker": "189980",
@@ -35481,7 +35430,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "식음료"
       ],
-      "rank": 1969
+      "rank": 1966
     },
     {
       "ticker": "006490",
@@ -35499,7 +35448,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "통신"
       ],
-      "rank": 1970
+      "rank": 1967
     },
     {
       "ticker": "432430",
@@ -35517,7 +35466,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "미디어·엔터"
       ],
-      "rank": 1971
+      "rank": 1968
     },
     {
       "ticker": "459550",
@@ -35535,7 +35484,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "전자·부품"
       ],
-      "rank": 1972
+      "rank": 1969
     },
     {
       "ticker": "023440",
@@ -35553,7 +35502,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "지주"
       ],
-      "rank": 1973
+      "rank": 1970
     },
     {
       "ticker": "066670",
@@ -35571,7 +35520,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "부동산·리츠"
       ],
-      "rank": 1974
+      "rank": 1971
     },
     {
       "ticker": "090080",
@@ -35589,7 +35538,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "자동차"
       ],
-      "rank": 1975
+      "rank": 1972
     },
     {
       "ticker": "357250",
@@ -35607,7 +35556,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "부동산·리츠"
       ],
-      "rank": 1976
+      "rank": 1973
     },
     {
       "ticker": "042940",
@@ -35625,7 +35574,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "건설·건자재"
       ],
-      "rank": 1977
+      "rank": 1974
     },
     {
       "ticker": "038060",
@@ -35643,7 +35592,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "전자·부품"
       ],
-      "rank": 1978
+      "rank": 1975
     },
     {
       "ticker": "052790",
@@ -35661,7 +35610,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "게임"
       ],
-      "rank": 1979
+      "rank": 1976
     },
     {
       "ticker": "190650",
@@ -35679,7 +35628,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "금융"
       ],
-      "rank": 1980
+      "rank": 1977
     },
     {
       "ticker": "196300",
@@ -35697,7 +35646,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "바이오·제약"
       ],
-      "rank": 1981
+      "rank": 1978
     },
     {
       "ticker": "094970",
@@ -35715,7 +35664,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "전자·부품"
       ],
-      "rank": 1982
+      "rank": 1979
     },
     {
       "ticker": "232830",
@@ -35733,7 +35682,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "IT·소프트웨어"
       ],
-      "rank": 1983
+      "rank": 1980
     },
     {
       "ticker": "009320",
@@ -35751,7 +35700,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "자동차"
       ],
-      "rank": 1984
+      "rank": 1981
     },
     {
       "ticker": "069460",
@@ -35769,7 +35718,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "철강·금속"
       ],
-      "rank": 1985
+      "rank": 1982
     },
     {
       "ticker": "065650",
@@ -35787,7 +35736,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "유통·소비재"
       ],
-      "rank": 1986
+      "rank": 1983
     },
     {
       "ticker": "234100",
@@ -35805,7 +35754,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "자동차"
       ],
-      "rank": 1987
+      "rank": 1984
     },
     {
       "ticker": "351330",
@@ -35823,7 +35772,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "IT·소프트웨어"
       ],
-      "rank": 1988
+      "rank": 1985
     },
     {
       "ticker": "024950",
@@ -35841,7 +35790,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "유통·소비재"
       ],
-      "rank": 1989
+      "rank": 1986
     },
     {
       "ticker": "420570",
@@ -35859,7 +35808,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "바이오·제약"
       ],
-      "rank": 1990
+      "rank": 1987
     },
     {
       "ticker": "066910",
@@ -35877,7 +35826,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "유통·소비재"
       ],
-      "rank": 1991
+      "rank": 1988
     },
     {
       "ticker": "017180",
@@ -35895,7 +35844,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "바이오·제약"
       ],
-      "rank": 1992
+      "rank": 1989
     },
     {
       "ticker": "465480",
@@ -35913,7 +35862,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "IT·소프트웨어"
       ],
-      "rank": 1993
+      "rank": 1990
     },
     {
       "ticker": "314140",
@@ -35931,7 +35880,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "바이오·제약"
       ],
-      "rank": 1994
+      "rank": 1991
     },
     {
       "ticker": "355390",
@@ -35950,7 +35899,7 @@ window.KOS_LIVE_DATA = {
         "IT·소프트웨어",
         "인공지능(AI)"
       ],
-      "rank": 1995
+      "rank": 1992
     },
     {
       "ticker": "129890",
@@ -35968,7 +35917,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "전자·부품"
       ],
-      "rank": 1996
+      "rank": 1993
     },
     {
       "ticker": "005030",
@@ -35986,7 +35935,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "조선"
       ],
-      "rank": 1997
+      "rank": 1994
     },
     {
       "ticker": "060850",
@@ -36004,7 +35953,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "IT·소프트웨어"
       ],
-      "rank": 1998
+      "rank": 1995
     },
     {
       "ticker": "002920",
@@ -36022,7 +35971,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "자동차"
       ],
-      "rank": 1999
+      "rank": 1996
     },
     {
       "ticker": "105760",
@@ -36040,7 +35989,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기계·장비"
       ],
-      "rank": 2000
+      "rank": 1997
     },
     {
       "ticker": "227950",
@@ -36058,7 +36007,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기계·장비"
       ],
-      "rank": 2001
+      "rank": 1998
     },
     {
       "ticker": "074610",
@@ -36076,7 +36025,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "2차전지"
       ],
-      "rank": 2002
+      "rank": 1999
     },
     {
       "ticker": "003080",
@@ -36094,7 +36043,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "화학"
       ],
-      "rank": 2003
+      "rank": 2000
     },
     {
       "ticker": "171010",
@@ -36112,7 +36061,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "화학"
       ],
-      "rank": 2004
+      "rank": 2001
     },
     {
       "ticker": "037950",
@@ -36130,7 +36079,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "전자·부품"
       ],
-      "rank": 2005
+      "rank": 2002
     },
     {
       "ticker": "000950",
@@ -36148,7 +36097,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "섬유·패션·생활"
       ],
-      "rank": 2006
+      "rank": 2003
     },
     {
       "ticker": "066130",
@@ -36166,7 +36115,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기계·장비"
       ],
-      "rank": 2007
+      "rank": 2004
     },
     {
       "ticker": "007530",
@@ -36184,7 +36133,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "화학"
       ],
-      "rank": 2008
+      "rank": 2005
     },
     {
       "ticker": "173940",
@@ -36202,7 +36151,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "미디어·엔터"
       ],
-      "rank": 2009
+      "rank": 2006
     },
     {
       "ticker": "419120",
@@ -36220,7 +36169,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "IT·소프트웨어"
       ],
-      "rank": 2010
+      "rank": 2007
     },
     {
       "ticker": "097870",
@@ -36238,7 +36187,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "화학"
       ],
-      "rank": 2011
+      "rank": 2008
     },
     {
       "ticker": "376290",
@@ -36256,12 +36205,12 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "전자·부품"
       ],
-      "rank": 2012
+      "rank": 2009
     },
     {
       "ticker": "0010V0",
       "name": "제이피아이헬스케어",
-      "name_en": "",
+      "name_en": "JPI Healthcare",
       "market": "코스닥",
       "sector": "바이오·제약",
       "price": 8650,
@@ -36273,7 +36222,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "바이오·제약"
       ],
-      "rank": 2013
+      "rank": 2010
     },
     {
       "ticker": "288330",
@@ -36291,7 +36240,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 2014
+      "rank": 2011
     },
     {
       "ticker": "200580",
@@ -36309,7 +36258,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "바이오·제약"
       ],
-      "rank": 2015
+      "rank": 2012
     },
     {
       "ticker": "070300",
@@ -36327,7 +36276,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "게임"
       ],
-      "rank": 2016
+      "rank": 2013
     },
     {
       "ticker": "093240",
@@ -36345,7 +36294,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "섬유·패션·생활"
       ],
-      "rank": 2017
+      "rank": 2014
     },
     {
       "ticker": "127710",
@@ -36363,7 +36312,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "미디어·엔터"
       ],
-      "rank": 2018
+      "rank": 2015
     },
     {
       "ticker": "150900",
@@ -36382,7 +36331,7 @@ window.KOS_LIVE_DATA = {
         "IT·소프트웨어",
         "인공지능(AI)"
       ],
-      "rank": 2019
+      "rank": 2016
     },
     {
       "ticker": "376930",
@@ -36400,7 +36349,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "바이오·제약"
       ],
-      "rank": 2020
+      "rank": 2017
     },
     {
       "ticker": "153460",
@@ -36418,7 +36367,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "IT·소프트웨어"
       ],
-      "rank": 2021
+      "rank": 2018
     },
     {
       "ticker": "261200",
@@ -36436,7 +36385,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "바이오·제약"
       ],
-      "rank": 2022
+      "rank": 2019
     },
     {
       "ticker": "002290",
@@ -36454,7 +36403,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "건설·건자재"
       ],
-      "rank": 2023
+      "rank": 2020
     },
     {
       "ticker": "286750",
@@ -36472,7 +36421,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "화학"
       ],
-      "rank": 2024
+      "rank": 2021
     },
     {
       "ticker": "263020",
@@ -36490,7 +36439,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "화학"
       ],
-      "rank": 2025
+      "rank": 2022
     },
     {
       "ticker": "051490",
@@ -36508,7 +36457,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기계·장비"
       ],
-      "rank": 2026
+      "rank": 2023
     },
     {
       "ticker": "004910",
@@ -36526,7 +36475,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "화학"
       ],
-      "rank": 2027
+      "rank": 2024
     },
     {
       "ticker": "297570",
@@ -36544,7 +36493,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "전자·부품"
       ],
-      "rank": 2028
+      "rank": 2025
     },
     {
       "ticker": "178780",
@@ -36562,7 +36511,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "유통·소비재"
       ],
-      "rank": 2029
+      "rank": 2026
     },
     {
       "ticker": "035460",
@@ -36580,7 +36529,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "전자·부품"
       ],
-      "rank": 2030
+      "rank": 2027
     },
     {
       "ticker": "290120",
@@ -36598,7 +36547,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "자동차"
       ],
-      "rank": 2031
+      "rank": 2028
     },
     {
       "ticker": "450330",
@@ -36616,7 +36565,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "바이오·제약"
       ],
-      "rank": 2032
+      "rank": 2029
     },
     {
       "ticker": "056700",
@@ -36634,7 +36583,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "전자·부품"
       ],
-      "rank": 2033
+      "rank": 2030
     },
     {
       "ticker": "100660",
@@ -36652,7 +36601,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기계·장비"
       ],
-      "rank": 2034
+      "rank": 2031
     },
     {
       "ticker": "069410",
@@ -36670,7 +36619,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "IT·소프트웨어"
       ],
-      "rank": 2035
+      "rank": 2032
     },
     {
       "ticker": "452300",
@@ -36688,7 +36637,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "금융"
       ],
-      "rank": 2036
+      "rank": 2033
     },
     {
       "ticker": "218150",
@@ -36706,7 +36655,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "식음료"
       ],
-      "rank": 2037
+      "rank": 2034
     },
     {
       "ticker": "008870",
@@ -36724,7 +36673,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "화학"
       ],
-      "rank": 2038
+      "rank": 2035
     },
     {
       "ticker": "307280",
@@ -36742,7 +36691,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "바이오·제약"
       ],
-      "rank": 2039
+      "rank": 2036
     },
     {
       "ticker": "033830",
@@ -36760,7 +36709,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "미디어·엔터"
       ],
-      "rank": 2040
+      "rank": 2037
     },
     {
       "ticker": "250000",
@@ -36778,7 +36727,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "식음료"
       ],
-      "rank": 2041
+      "rank": 2038
     },
     {
       "ticker": "090410",
@@ -36796,7 +36745,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "화학"
       ],
-      "rank": 2042
+      "rank": 2039
     },
     {
       "ticker": "012280",
@@ -36814,7 +36763,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "자동차"
       ],
-      "rank": 2043
+      "rank": 2040
     },
     {
       "ticker": "025880",
@@ -36832,7 +36781,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "식음료"
       ],
-      "rank": 2044
+      "rank": 2041
     },
     {
       "ticker": "009140",
@@ -36850,7 +36799,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "전자·부품"
       ],
-      "rank": 2045
+      "rank": 2042
     },
     {
       "ticker": "140520",
@@ -36868,7 +36817,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "철강·금속"
       ],
-      "rank": 2046
+      "rank": 2043
     },
     {
       "ticker": "072770",
@@ -36886,7 +36835,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "IT·소프트웨어"
       ],
-      "rank": 2047
+      "rank": 2044
     },
     {
       "ticker": "215380",
@@ -36904,7 +36853,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "바이오·제약"
       ],
-      "rank": 2048
+      "rank": 2045
     },
     {
       "ticker": "052460",
@@ -36922,7 +36871,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "IT·소프트웨어"
       ],
-      "rank": 2049
+      "rank": 2046
     },
     {
       "ticker": "079000",
@@ -36940,7 +36889,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "화학"
       ],
-      "rank": 2050
+      "rank": 2047
     },
     {
       "ticker": "237820",
@@ -36958,7 +36907,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "미디어·엔터"
       ],
-      "rank": 2051
+      "rank": 2048
     },
     {
       "ticker": "452160",
@@ -36976,7 +36925,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "자동차"
       ],
-      "rank": 2052
+      "rank": 2049
     },
     {
       "ticker": "019490",
@@ -36994,7 +36943,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "전자·부품"
       ],
-      "rank": 2053
+      "rank": 2050
     },
     {
       "ticker": "263810",
@@ -37012,7 +36961,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "전자·부품"
       ],
-      "rank": 2054
+      "rank": 2051
     },
     {
       "ticker": "033540",
@@ -37030,7 +36979,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기계·장비"
       ],
-      "rank": 2055
+      "rank": 2052
     },
     {
       "ticker": "355690",
@@ -37048,7 +36997,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "전자·부품"
       ],
-      "rank": 2056
+      "rank": 2053
     },
     {
       "ticker": "340810",
@@ -37067,7 +37016,7 @@ window.KOS_LIVE_DATA = {
         "IT·소프트웨어",
         "인공지능(AI)"
       ],
-      "rank": 2057
+      "rank": 2054
     },
     {
       "ticker": "004410",
@@ -37085,7 +37034,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "식음료"
       ],
-      "rank": 2058
+      "rank": 2055
     },
     {
       "ticker": "122690",
@@ -37103,7 +37052,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "자동차"
       ],
-      "rank": 2059
+      "rank": 2056
     },
     {
       "ticker": "008420",
@@ -37121,7 +37070,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "철강·금속"
       ],
-      "rank": 2060
+      "rank": 2057
     },
     {
       "ticker": "352700",
@@ -37139,7 +37088,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "화학"
       ],
-      "rank": 2061
+      "rank": 2058
     },
     {
       "ticker": "260660",
@@ -37157,7 +37106,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "바이오·제약"
       ],
-      "rank": 2062
+      "rank": 2059
     },
     {
       "ticker": "256150",
@@ -37175,7 +37124,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기계·장비"
       ],
-      "rank": 2063
+      "rank": 2060
     },
     {
       "ticker": "066900",
@@ -37193,7 +37142,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "반도체"
       ],
-      "rank": 2064
+      "rank": 2061
     },
     {
       "ticker": "263770",
@@ -37211,7 +37160,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "철강·금속"
       ],
-      "rank": 2065
+      "rank": 2062
     },
     {
       "ticker": "088340",
@@ -37229,7 +37178,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "IT·소프트웨어"
       ],
-      "rank": 2066
+      "rank": 2063
     },
     {
       "ticker": "051630",
@@ -37247,7 +37196,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "화학"
       ],
-      "rank": 2067
+      "rank": 2064
     },
     {
       "ticker": "017040",
@@ -37265,7 +37214,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "전기장비"
       ],
-      "rank": 2068
+      "rank": 2065
     },
     {
       "ticker": "049470",
@@ -37283,7 +37232,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "미디어·엔터"
       ],
-      "rank": 2069
+      "rank": 2066
     },
     {
       "ticker": "059100",
@@ -37301,7 +37250,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "반도체"
       ],
-      "rank": 2070
+      "rank": 2067
     },
     {
       "ticker": "011420",
@@ -37319,7 +37268,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "미디어·엔터"
       ],
-      "rank": 2071
+      "rank": 2068
     },
     {
       "ticker": "221840",
@@ -37337,7 +37286,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "항공·방산"
       ],
-      "rank": 2072
+      "rank": 2069
     },
     {
       "ticker": "049830",
@@ -37355,7 +37304,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "화학"
       ],
-      "rank": 2073
+      "rank": 2070
     },
     {
       "ticker": "481850",
@@ -37373,7 +37322,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "부동산·리츠"
       ],
-      "rank": 2074
+      "rank": 2071
     },
     {
       "ticker": "086040",
@@ -37391,7 +37340,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "바이오·제약"
       ],
-      "rank": 2075
+      "rank": 2072
     },
     {
       "ticker": "221980",
@@ -37409,7 +37358,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "화학"
       ],
-      "rank": 2076
+      "rank": 2073
     },
     {
       "ticker": "469750",
@@ -37427,7 +37376,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기계·장비"
       ],
-      "rank": 2077
+      "rank": 2074
     },
     {
       "ticker": "019770",
@@ -37445,7 +37394,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "자동차"
       ],
-      "rank": 2078
+      "rank": 2075
     },
     {
       "ticker": "044960",
@@ -37463,7 +37412,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "바이오·제약"
       ],
-      "rank": 2079
+      "rank": 2076
     },
     {
       "ticker": "224110",
@@ -37481,7 +37430,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "전자·부품"
       ],
-      "rank": 2080
+      "rank": 2077
     },
     {
       "ticker": "064090",
@@ -37499,7 +37448,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "유통·소비재"
       ],
-      "rank": 2081
+      "rank": 2078
     },
     {
       "ticker": "289220",
@@ -37517,7 +37466,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "미디어·엔터"
       ],
-      "rank": 2082
+      "rank": 2079
     },
     {
       "ticker": "215090",
@@ -37535,7 +37484,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "항공·방산"
       ],
-      "rank": 2083
+      "rank": 2080
     },
     {
       "ticker": "043340",
@@ -37553,7 +37502,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기계·장비"
       ],
-      "rank": 2084
+      "rank": 2081
     },
     {
       "ticker": "087600",
@@ -37571,7 +37520,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "반도체"
       ],
-      "rank": 2085
+      "rank": 2082
     },
     {
       "ticker": "050860",
@@ -37589,7 +37538,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기계·장비"
       ],
-      "rank": 2086
+      "rank": 2083
     },
     {
       "ticker": "011300",
@@ -37607,7 +37556,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "섬유·패션·생활"
       ],
-      "rank": 2087
+      "rank": 2084
     },
     {
       "ticker": "208710",
@@ -37625,7 +37574,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "전자·부품"
       ],
-      "rank": 2088
+      "rank": 2085
     },
     {
       "ticker": "047080",
@@ -37643,7 +37592,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "게임"
       ],
-      "rank": 2089
+      "rank": 2086
     },
     {
       "ticker": "096630",
@@ -37661,7 +37610,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "전자·부품"
       ],
-      "rank": 2090
+      "rank": 2087
     },
     {
       "ticker": "091590",
@@ -37679,7 +37628,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "건설·건자재"
       ],
-      "rank": 2091
+      "rank": 2088
     },
     {
       "ticker": "003060",
@@ -37697,7 +37646,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "바이오·제약"
       ],
-      "rank": 2092
+      "rank": 2089
     },
     {
       "ticker": "089150",
@@ -37715,7 +37664,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "IT·소프트웨어"
       ],
-      "rank": 2093
+      "rank": 2090
     },
     {
       "ticker": "122350",
@@ -37733,7 +37682,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "자동차"
       ],
-      "rank": 2094
+      "rank": 2091
     },
     {
       "ticker": "006920",
@@ -37751,7 +37700,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "건설·건자재"
       ],
-      "rank": 2095
+      "rank": 2092
     },
     {
       "ticker": "026940",
@@ -37769,7 +37718,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "철강·금속"
       ],
-      "rank": 2096
+      "rank": 2093
     },
     {
       "ticker": "332290",
@@ -37787,7 +37736,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "화학"
       ],
-      "rank": 2097
+      "rank": 2094
     },
     {
       "ticker": "064480",
@@ -37805,7 +37754,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "IT·소프트웨어"
       ],
-      "rank": 2098
+      "rank": 2095
     },
     {
       "ticker": "200780",
@@ -37823,7 +37772,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "바이오·제약"
       ],
-      "rank": 2099
+      "rank": 2096
     },
     {
       "ticker": "311390",
@@ -37841,7 +37790,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "식음료"
       ],
-      "rank": 2100
+      "rank": 2097
     },
     {
       "ticker": "133820",
@@ -37859,7 +37808,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "철강·금속"
       ],
-      "rank": 2101
+      "rank": 2098
     },
     {
       "ticker": "032960",
@@ -37877,7 +37826,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "전자·부품"
       ],
-      "rank": 2102
+      "rank": 2099
     },
     {
       "ticker": "101240",
@@ -37895,7 +37844,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "화학"
       ],
-      "rank": 2103
+      "rank": 2100
     },
     {
       "ticker": "206560",
@@ -37913,7 +37862,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "미디어·엔터"
       ],
-      "rank": 2104
+      "rank": 2101
     },
     {
       "ticker": "204020",
@@ -37931,7 +37880,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "섬유·패션·생활"
       ],
-      "rank": 2105
+      "rank": 2102
     },
     {
       "ticker": "364950",
@@ -37950,7 +37899,7 @@ window.KOS_LIVE_DATA = {
         "기계·장비",
         "인공지능(AI)"
       ],
-      "rank": 2106
+      "rank": 2103
     },
     {
       "ticker": "290090",
@@ -37968,7 +37917,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "IT·소프트웨어"
       ],
-      "rank": 2107
+      "rank": 2104
     },
     {
       "ticker": "011330",
@@ -37986,7 +37935,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "화학"
       ],
-      "rank": 2108
+      "rank": 2105
     },
     {
       "ticker": "005320",
@@ -38004,7 +37953,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "섬유·패션·생활"
       ],
-      "rank": 2109
+      "rank": 2106
     },
     {
       "ticker": "464280",
@@ -38022,7 +37971,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "바이오·제약"
       ],
-      "rank": 2110
+      "rank": 2107
     },
     {
       "ticker": "049800",
@@ -38040,7 +37989,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기계·장비"
       ],
-      "rank": 2111
+      "rank": 2108
     },
     {
       "ticker": "020180",
@@ -38058,7 +38007,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "IT·소프트웨어"
       ],
-      "rank": 2112
+      "rank": 2109
     },
     {
       "ticker": "220180",
@@ -38076,7 +38025,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "IT·소프트웨어"
       ],
-      "rank": 2113
+      "rank": 2110
     },
     {
       "ticker": "239890",
@@ -38094,7 +38043,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "2차전지"
       ],
-      "rank": 2114
+      "rank": 2111
     },
     {
       "ticker": "263700",
@@ -38112,7 +38061,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "IT·소프트웨어"
       ],
-      "rank": 2115
+      "rank": 2112
     },
     {
       "ticker": "123570",
@@ -38130,7 +38079,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "미디어·엔터"
       ],
-      "rank": 2116
+      "rank": 2113
     },
     {
       "ticker": "050110",
@@ -38148,7 +38097,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "전자·부품"
       ],
-      "rank": 2117
+      "rank": 2114
     },
     {
       "ticker": "288980",
@@ -38166,7 +38115,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "IT·소프트웨어"
       ],
-      "rank": 2118
+      "rank": 2115
     },
     {
       "ticker": "128540",
@@ -38184,7 +38133,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "화학"
       ],
-      "rank": 2119
+      "rank": 2116
     },
     {
       "ticker": "050120",
@@ -38202,7 +38151,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "유통·소비재"
       ],
-      "rank": 2120
+      "rank": 2117
     },
     {
       "ticker": "340440",
@@ -38220,7 +38169,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "화학"
       ],
-      "rank": 2121
+      "rank": 2118
     },
     {
       "ticker": "335810",
@@ -38238,7 +38187,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "바이오·제약"
       ],
-      "rank": 2122
+      "rank": 2119
     },
     {
       "ticker": "186230",
@@ -38256,7 +38205,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "건설·건자재"
       ],
-      "rank": 2123
+      "rank": 2120
     },
     {
       "ticker": "219750",
@@ -38274,7 +38223,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "전기장비"
       ],
-      "rank": 2124
+      "rank": 2121
     },
     {
       "ticker": "148250",
@@ -38292,7 +38241,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "전자·부품"
       ],
-      "rank": 2125
+      "rank": 2122
     },
     {
       "ticker": "228340",
@@ -38310,7 +38259,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "건설·건자재"
       ],
-      "rank": 2126
+      "rank": 2123
     },
     {
       "ticker": "024120",
@@ -38328,7 +38277,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "자동차"
       ],
-      "rank": 2127
+      "rank": 2124
     },
     {
       "ticker": "258610",
@@ -38346,7 +38295,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "철강·금속"
       ],
-      "rank": 2128
+      "rank": 2125
     },
     {
       "ticker": "000760",
@@ -38364,7 +38313,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "유통·소비재"
       ],
-      "rank": 2129
+      "rank": 2126
     },
     {
       "ticker": "007120",
@@ -38382,12 +38331,12 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "IT·소프트웨어"
       ],
-      "rank": 2130
+      "rank": 2127
     },
     {
       "ticker": "0010F0",
       "name": "보원케미칼",
-      "name_en": "",
+      "name_en": "Bowon Chemical",
       "market": "코스닥",
       "sector": "화학",
       "price": 3320,
@@ -38399,7 +38348,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "화학"
       ],
-      "rank": 2131
+      "rank": 2128
     },
     {
       "ticker": "206400",
@@ -38417,7 +38366,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "유통·소비재"
       ],
-      "rank": 2132
+      "rank": 2129
     },
     {
       "ticker": "081580",
@@ -38435,7 +38384,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "전자·부품"
       ],
-      "rank": 2133
+      "rank": 2130
     },
     {
       "ticker": "084870",
@@ -38453,7 +38402,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "섬유·패션·생활"
       ],
-      "rank": 2134
+      "rank": 2131
     },
     {
       "ticker": "022220",
@@ -38471,7 +38420,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "화학"
       ],
-      "rank": 2135
+      "rank": 2132
     },
     {
       "ticker": "365590",
@@ -38489,7 +38438,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "전자·부품"
       ],
-      "rank": 2136
+      "rank": 2133
     },
     {
       "ticker": "066360",
@@ -38507,7 +38456,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "식음료"
       ],
-      "rank": 2137
+      "rank": 2134
     },
     {
       "ticker": "429270",
@@ -38525,7 +38474,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "반도체"
       ],
-      "rank": 2138
+      "rank": 2135
     },
     {
       "ticker": "199480",
@@ -38543,7 +38492,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "IT·소프트웨어"
       ],
-      "rank": 2139
+      "rank": 2136
     },
     {
       "ticker": "407400",
@@ -38561,7 +38510,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "유통·소비재"
       ],
-      "rank": 2140
+      "rank": 2137
     },
     {
       "ticker": "351320",
@@ -38579,7 +38528,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "자동차"
       ],
-      "rank": 2141
+      "rank": 2138
     },
     {
       "ticker": "434480",
@@ -38597,7 +38546,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "IT·소프트웨어"
       ],
-      "rank": 2142
+      "rank": 2139
     },
     {
       "ticker": "057540",
@@ -38615,7 +38564,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "전기장비"
       ],
-      "rank": 2143
+      "rank": 2140
     },
     {
       "ticker": "103840",
@@ -38633,7 +38582,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "식음료"
       ],
-      "rank": 2144
+      "rank": 2141
     },
     {
       "ticker": "430690",
@@ -38651,7 +38600,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "IT·소프트웨어"
       ],
-      "rank": 2145
+      "rank": 2142
     },
     {
       "ticker": "046310",
@@ -38669,7 +38618,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "전자·부품"
       ],
-      "rank": 2146
+      "rank": 2143
     },
     {
       "ticker": "119500",
@@ -38687,7 +38636,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "철강·금속"
       ],
-      "rank": 2147
+      "rank": 2144
     },
     {
       "ticker": "026040",
@@ -38705,7 +38654,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "섬유·패션·생활"
       ],
-      "rank": 2148
+      "rank": 2145
     },
     {
       "ticker": "025440",
@@ -38723,7 +38672,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "전자·부품"
       ],
-      "rank": 2149
+      "rank": 2146
     },
     {
       "ticker": "203450",
@@ -38741,7 +38690,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "전자·부품"
       ],
-      "rank": 2150
+      "rank": 2147
     },
     {
       "ticker": "000890",
@@ -38759,7 +38708,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "식음료"
       ],
-      "rank": 2151
+      "rank": 2148
     },
     {
       "ticker": "014990",
@@ -38777,7 +38726,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "섬유·패션·생활"
       ],
-      "rank": 2152
+      "rank": 2149
     },
     {
       "ticker": "083550",
@@ -38795,7 +38744,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "섬유·패션·생활"
       ],
-      "rank": 2153
+      "rank": 2150
     },
     {
       "ticker": "064520",
@@ -38813,7 +38762,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "반도체"
       ],
-      "rank": 2154
+      "rank": 2151
     },
     {
       "ticker": "284620",
@@ -38831,7 +38780,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "바이오·제약"
       ],
-      "rank": 2155
+      "rank": 2152
     },
     {
       "ticker": "145270",
@@ -38849,7 +38798,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "부동산·리츠"
       ],
-      "rank": 2156
+      "rank": 2153
     },
     {
       "ticker": "403490",
@@ -38867,7 +38816,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "식음료"
       ],
-      "rank": 2157
+      "rank": 2154
     },
     {
       "ticker": "089140",
@@ -38885,7 +38834,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기계·장비"
       ],
-      "rank": 2158
+      "rank": 2155
     },
     {
       "ticker": "153490",
@@ -38903,7 +38852,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "반도체"
       ],
-      "rank": 2159
+      "rank": 2156
     },
     {
       "ticker": "013000",
@@ -38921,7 +38870,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "유통·소비재"
       ],
-      "rank": 2160
+      "rank": 2157
     },
     {
       "ticker": "475460",
@@ -38939,7 +38888,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "IT·소프트웨어"
       ],
-      "rank": 2161
+      "rank": 2158
     },
     {
       "ticker": "068940",
@@ -38957,7 +38906,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "전자·부품"
       ],
-      "rank": 2162
+      "rank": 2159
     },
     {
       "ticker": "160550",
@@ -38975,7 +38924,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "미디어·엔터"
       ],
-      "rank": 2163
+      "rank": 2160
     },
     {
       "ticker": "002880",
@@ -38993,7 +38942,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "자동차"
       ],
-      "rank": 2164
+      "rank": 2161
     },
     {
       "ticker": "052600",
@@ -39011,7 +38960,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "IT·소프트웨어"
       ],
-      "rank": 2165
+      "rank": 2162
     },
     {
       "ticker": "198940",
@@ -39029,7 +38978,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "철강·금속"
       ],
-      "rank": 2166
+      "rank": 2163
     },
     {
       "ticker": "014570",
@@ -39047,7 +38996,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "바이오·제약"
       ],
-      "rank": 2167
+      "rank": 2164
     },
     {
       "ticker": "134790",
@@ -39065,7 +39014,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "섬유·패션·생활"
       ],
-      "rank": 2168
+      "rank": 2165
     },
     {
       "ticker": "900300",
@@ -39083,7 +39032,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "화장품"
       ],
-      "rank": 2169
+      "rank": 2166
     },
     {
       "ticker": "071850",
@@ -39101,7 +39050,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "자동차"
       ],
-      "rank": 2170
+      "rank": 2167
     },
     {
       "ticker": "002420",
@@ -39119,7 +39068,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "유통·소비재"
       ],
-      "rank": 2171
+      "rank": 2168
     },
     {
       "ticker": "263050",
@@ -39137,7 +39086,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "바이오·제약"
       ],
-      "rank": 2172
+      "rank": 2169
     },
     {
       "ticker": "032790",
@@ -39155,7 +39104,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "유통·소비재"
       ],
-      "rank": 2173
+      "rank": 2170
     },
     {
       "ticker": "023960",
@@ -39173,7 +39122,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "건설·건자재"
       ],
-      "rank": 2174
+      "rank": 2171
     },
     {
       "ticker": "004870",
@@ -39191,7 +39140,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "지주"
       ],
-      "rank": 2175
+      "rank": 2172
     },
     {
       "ticker": "043910",
@@ -39209,7 +39158,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "건설·건자재"
       ],
-      "rank": 2176
+      "rank": 2173
     },
     {
       "ticker": "376180",
@@ -39227,7 +39176,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 2177
+      "rank": 2174
     },
     {
       "ticker": "187270",
@@ -39245,7 +39194,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기계·장비"
       ],
-      "rank": 2178
+      "rank": 2175
     },
     {
       "ticker": "057030",
@@ -39263,7 +39212,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "IT·소프트웨어"
       ],
-      "rank": 2179
+      "rank": 2176
     },
     {
       "ticker": "318410",
@@ -39281,7 +39230,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "2차전지"
       ],
-      "rank": 2180
+      "rank": 2177
     },
     {
       "ticker": "464500",
@@ -39299,7 +39248,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "반도체"
       ],
-      "rank": 2181
+      "rank": 2178
     },
     {
       "ticker": "388610",
@@ -39317,7 +39266,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "바이오·제약"
       ],
-      "rank": 2182
+      "rank": 2179
     },
     {
       "ticker": "450520",
@@ -39335,7 +39284,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "IT·소프트웨어"
       ],
-      "rank": 2183
+      "rank": 2180
     },
     {
       "ticker": "045060",
@@ -39353,7 +39302,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "화학"
       ],
-      "rank": 2184
+      "rank": 2181
     },
     {
       "ticker": "133750",
@@ -39371,7 +39320,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "IT·소프트웨어"
       ],
-      "rank": 2185
+      "rank": 2182
     },
     {
       "ticker": "001380",
@@ -39389,7 +39338,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "자동차"
       ],
-      "rank": 2186
+      "rank": 2183
     },
     {
       "ticker": "109820",
@@ -39407,7 +39356,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "바이오·제약"
       ],
-      "rank": 2187
+      "rank": 2184
     },
     {
       "ticker": "475660",
@@ -39425,7 +39374,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "화학"
       ],
-      "rank": 2188
+      "rank": 2185
     },
     {
       "ticker": "031310",
@@ -39443,7 +39392,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "통신"
       ],
-      "rank": 2189
+      "rank": 2186
     },
     {
       "ticker": "010640",
@@ -39461,7 +39410,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "화학"
       ],
-      "rank": 2190
+      "rank": 2187
     },
     {
       "ticker": "097780",
@@ -39479,7 +39428,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "에너지·전력"
       ],
-      "rank": 2191
+      "rank": 2188
     },
     {
       "ticker": "363260",
@@ -39497,7 +39446,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "IT·소프트웨어"
       ],
-      "rank": 2192
+      "rank": 2189
     },
     {
       "ticker": "262840",
@@ -39515,7 +39464,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "IT·소프트웨어"
       ],
-      "rank": 2193
+      "rank": 2190
     },
     {
       "ticker": "208860",
@@ -39533,7 +39482,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "IT·소프트웨어"
       ],
-      "rank": 2194
+      "rank": 2191
     },
     {
       "ticker": "387570",
@@ -39551,7 +39500,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "바이오·제약"
       ],
-      "rank": 2195
+      "rank": 2192
     },
     {
       "ticker": "060540",
@@ -39569,7 +39518,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "전자·부품"
       ],
-      "rank": 2196
+      "rank": 2193
     },
     {
       "ticker": "336060",
@@ -39587,7 +39536,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "IT·소프트웨어"
       ],
-      "rank": 2197
+      "rank": 2194
     },
     {
       "ticker": "210120",
@@ -39605,7 +39554,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "미디어·엔터"
       ],
-      "rank": 2198
+      "rank": 2195
     },
     {
       "ticker": "900310",
@@ -39623,7 +39572,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "금융"
       ],
-      "rank": 2199
+      "rank": 2196
     },
     {
       "ticker": "177830",
@@ -39641,7 +39590,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "전자·부품"
       ],
-      "rank": 2200
+      "rank": 2197
     },
     {
       "ticker": "053950",
@@ -39659,7 +39608,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "바이오·제약"
       ],
-      "rank": 2201
+      "rank": 2198
     },
     {
       "ticker": "044480",
@@ -39677,7 +39626,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "미디어·엔터"
       ],
-      "rank": 2202
+      "rank": 2199
     },
     {
       "ticker": "277410",
@@ -39695,7 +39644,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "식음료"
       ],
-      "rank": 2203
+      "rank": 2200
     },
     {
       "ticker": "446440",
@@ -39713,7 +39662,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "바이오·제약"
       ],
-      "rank": 2204
+      "rank": 2201
     },
     {
       "ticker": "106240",
@@ -39731,7 +39680,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "반도체"
       ],
-      "rank": 2205
+      "rank": 2202
     },
     {
       "ticker": "001210",
@@ -39749,7 +39698,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "전기장비"
       ],
-      "rank": 2206
+      "rank": 2203
     },
     {
       "ticker": "021650",
@@ -39767,7 +39716,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "화학"
       ],
-      "rank": 2207
+      "rank": 2204
     },
     {
       "ticker": "363250",
@@ -39785,7 +39734,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "전기장비"
       ],
-      "rank": 2208
+      "rank": 2205
     },
     {
       "ticker": "057680",
@@ -39803,7 +39752,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "IT·소프트웨어"
       ],
-      "rank": 2209
+      "rank": 2206
     },
     {
       "ticker": "086060",
@@ -39821,7 +39770,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "바이오·제약"
       ],
-      "rank": 2210
+      "rank": 2207
     },
     {
       "ticker": "002870",
@@ -39839,7 +39788,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "유통·소비재"
       ],
-      "rank": 2211
+      "rank": 2208
     },
     {
       "ticker": "495810",
@@ -39857,7 +39806,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "IT·소프트웨어"
       ],
-      "rank": 2212
+      "rank": 2209
     },
     {
       "ticker": "900070",
@@ -39875,7 +39824,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "금융"
       ],
-      "rank": 2213
+      "rank": 2210
     },
     {
       "ticker": "019570",
@@ -39893,7 +39842,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "금융"
       ],
-      "rank": 2214
+      "rank": 2211
     },
     {
       "ticker": "112190",
@@ -39911,7 +39860,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "건설·건자재"
       ],
-      "rank": 2215
+      "rank": 2212
     },
     {
       "ticker": "075130",
@@ -39929,7 +39878,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "IT·소프트웨어"
       ],
-      "rank": 2216
+      "rank": 2213
     },
     {
       "ticker": "031510",
@@ -39947,7 +39896,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "자동차"
       ],
-      "rank": 2217
+      "rank": 2214
     },
     {
       "ticker": "122830",
@@ -39965,7 +39914,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "IT·소프트웨어"
       ],
-      "rank": 2218
+      "rank": 2215
     },
     {
       "ticker": "027740",
@@ -39983,7 +39932,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "식음료"
       ],
-      "rank": 2219
+      "rank": 2216
     },
     {
       "ticker": "200350",
@@ -40001,7 +39950,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "미디어·엔터"
       ],
-      "rank": 2220
+      "rank": 2217
     },
     {
       "ticker": "080520",
@@ -40019,7 +39968,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "전자·부품"
       ],
-      "rank": 2221
+      "rank": 2218
     },
     {
       "ticker": "383930",
@@ -40037,7 +39986,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "바이오·제약"
       ],
-      "rank": 2222
+      "rank": 2219
     },
     {
       "ticker": "088790",
@@ -40055,7 +40004,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "섬유·패션·생활"
       ],
-      "rank": 2223
+      "rank": 2220
     },
     {
       "ticker": "075970",
@@ -40073,7 +40022,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "화학"
       ],
-      "rank": 2224
+      "rank": 2221
     },
     {
       "ticker": "356890",
@@ -40091,7 +40040,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "IT·소프트웨어"
       ],
-      "rank": 2225
+      "rank": 2222
     },
     {
       "ticker": "308170",
@@ -40109,7 +40058,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "자동차"
       ],
-      "rank": 2226
+      "rank": 2223
     },
     {
       "ticker": "114630",
@@ -40127,7 +40076,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "화학"
       ],
-      "rank": 2227
+      "rank": 2224
     },
     {
       "ticker": "195990",
@@ -40145,7 +40094,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "바이오·제약"
       ],
-      "rank": 2228
+      "rank": 2225
     },
     {
       "ticker": "007720",
@@ -40163,7 +40112,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "유통·소비재"
       ],
-      "rank": 2229
+      "rank": 2226
     },
     {
       "ticker": "099390",
@@ -40181,7 +40130,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "IT·소프트웨어"
       ],
-      "rank": 2230
+      "rank": 2227
     },
     {
       "ticker": "373170",
@@ -40199,7 +40148,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "IT·소프트웨어"
       ],
-      "rank": 2231
+      "rank": 2228
     },
     {
       "ticker": "359090",
@@ -40217,7 +40166,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "바이오·제약"
       ],
-      "rank": 2232
+      "rank": 2229
     },
     {
       "ticker": "005820",
@@ -40235,7 +40184,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "섬유·패션·생활"
       ],
-      "rank": 2233
+      "rank": 2230
     },
     {
       "ticker": "038950",
@@ -40253,7 +40202,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "전자·부품"
       ],
-      "rank": 2234
+      "rank": 2231
     },
     {
       "ticker": "254120",
@@ -40271,7 +40220,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기계·장비"
       ],
-      "rank": 2235
+      "rank": 2232
     },
     {
       "ticker": "073540",
@@ -40289,7 +40238,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "전자·부품"
       ],
-      "rank": 2236
+      "rank": 2233
     },
     {
       "ticker": "258830",
@@ -40307,7 +40256,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "바이오·제약"
       ],
-      "rank": 2237
+      "rank": 2234
     },
     {
       "ticker": "239610",
@@ -40325,7 +40274,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "바이오·제약"
       ],
-      "rank": 2238
+      "rank": 2235
     },
     {
       "ticker": "270870",
@@ -40343,7 +40292,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "식음료"
       ],
-      "rank": 2239
+      "rank": 2236
     },
     {
       "ticker": "008250",
@@ -40361,7 +40310,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "건설·건자재"
       ],
-      "rank": 2240
+      "rank": 2237
     },
     {
       "ticker": "296640",
@@ -40379,7 +40328,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "IT·소프트웨어"
       ],
-      "rank": 2241
+      "rank": 2238
     },
     {
       "ticker": "058110",
@@ -40397,7 +40346,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "전기장비"
       ],
-      "rank": 2242
+      "rank": 2239
     },
     {
       "ticker": "012160",
@@ -40415,7 +40364,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "철강·금속"
       ],
-      "rank": 2243
+      "rank": 2240
     },
     {
       "ticker": "054780",
@@ -40433,7 +40382,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "미디어·엔터"
       ],
-      "rank": 2244
+      "rank": 2241
     },
     {
       "ticker": "032860",
@@ -40451,7 +40400,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 2245
+      "rank": 2242
     },
     {
       "ticker": "187220",
@@ -40469,7 +40418,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "IT·소프트웨어"
       ],
-      "rank": 2246
+      "rank": 2243
     },
     {
       "ticker": "318020",
@@ -40487,7 +40436,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "전자·부품"
       ],
-      "rank": 2247
+      "rank": 2244
     },
     {
       "ticker": "300120",
@@ -40506,7 +40455,7 @@ window.KOS_LIVE_DATA = {
         "IT·소프트웨어",
         "인공지능(AI)"
       ],
-      "rank": 2248
+      "rank": 2245
     },
     {
       "ticker": "035200",
@@ -40524,7 +40473,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "화학"
       ],
-      "rank": 2249
+      "rank": 2246
     },
     {
       "ticker": "038870",
@@ -40542,7 +40491,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 2250
+      "rank": 2247
     },
     {
       "ticker": "464580",
@@ -40560,7 +40509,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "미디어·엔터"
       ],
-      "rank": 2251
+      "rank": 2248
     },
     {
       "ticker": "406820",
@@ -40578,7 +40527,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "화장품"
       ],
-      "rank": 2252
+      "rank": 2249
     },
     {
       "ticker": "043200",
@@ -40596,7 +40545,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "에너지·전력"
       ],
-      "rank": 2253
+      "rank": 2250
     },
     {
       "ticker": "162120",
@@ -40614,7 +40563,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기계·장비"
       ],
-      "rank": 2254
+      "rank": 2251
     },
     {
       "ticker": "025750",
@@ -40632,7 +40581,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "건설·건자재"
       ],
-      "rank": 2255
+      "rank": 2252
     },
     {
       "ticker": "001000",
@@ -40650,7 +40599,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "부동산·리츠"
       ],
-      "rank": 2256
+      "rank": 2253
     },
     {
       "ticker": "045300",
@@ -40668,7 +40617,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "전자·부품"
       ],
-      "rank": 2257
+      "rank": 2254
     },
     {
       "ticker": "223310",
@@ -40686,7 +40635,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "지주"
       ],
-      "rank": 2258
+      "rank": 2255
     },
     {
       "ticker": "243870",
@@ -40704,7 +40653,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "IT·소프트웨어"
       ],
-      "rank": 2259
+      "rank": 2256
     },
     {
       "ticker": "001070",
@@ -40722,7 +40671,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "섬유·패션·생활"
       ],
-      "rank": 2260
+      "rank": 2257
     },
     {
       "ticker": "195500",
@@ -40740,7 +40689,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "식음료"
       ],
-      "rank": 2261
+      "rank": 2258
     },
     {
       "ticker": "027040",
@@ -40758,7 +40707,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "전자·부품"
       ],
-      "rank": 2262
+      "rank": 2259
     },
     {
       "ticker": "246250",
@@ -40776,7 +40725,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "바이오·제약"
       ],
-      "rank": 2263
+      "rank": 2260
     },
     {
       "ticker": "290520",
@@ -40794,7 +40743,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기계·장비"
       ],
-      "rank": 2264
+      "rank": 2261
     },
     {
       "ticker": "462310",
@@ -40812,7 +40761,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "섬유·패션·생활"
       ],
-      "rank": 2265
+      "rank": 2262
     },
     {
       "ticker": "012620",
@@ -40830,7 +40779,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "철강·금속"
       ],
-      "rank": 2266
+      "rank": 2263
     },
     {
       "ticker": "037370",
@@ -40848,7 +40797,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "화학"
       ],
-      "rank": 2267
+      "rank": 2264
     },
     {
       "ticker": "130500",
@@ -40866,7 +40815,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "섬유·패션·생활"
       ],
-      "rank": 2268
+      "rank": 2265
     },
     {
       "ticker": "276730",
@@ -40884,7 +40833,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "식음료"
       ],
-      "rank": 2269
+      "rank": 2266
     },
     {
       "ticker": "238490",
@@ -40902,7 +40851,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "반도체"
       ],
-      "rank": 2270
+      "rank": 2267
     },
     {
       "ticker": "038620",
@@ -40920,7 +40869,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "유통·소비재"
       ],
-      "rank": 2271
+      "rank": 2268
     },
     {
       "ticker": "000040",
@@ -40938,7 +40887,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "자동차"
       ],
-      "rank": 2272
+      "rank": 2269
     },
     {
       "ticker": "016670",
@@ -40956,7 +40905,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "유통·소비재"
       ],
-      "rank": 2273
+      "rank": 2270
     },
     {
       "ticker": "337840",
@@ -40974,7 +40923,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "전기장비"
       ],
-      "rank": 2274
+      "rank": 2271
     },
     {
       "ticker": "071950",
@@ -40992,7 +40941,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "전자·부품"
       ],
-      "rank": 2275
+      "rank": 2272
     },
     {
       "ticker": "023150",
@@ -41010,7 +40959,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "식음료"
       ],
-      "rank": 2276
+      "rank": 2273
     },
     {
       "ticker": "462980",
@@ -41028,7 +40977,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "IT·소프트웨어"
       ],
-      "rank": 2277
+      "rank": 2274
     },
     {
       "ticker": "039740",
@@ -41046,7 +40995,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "유통·소비재"
       ],
-      "rank": 2278
+      "rank": 2275
     },
     {
       "ticker": "033200",
@@ -41064,7 +41013,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "전자·부품"
       ],
-      "rank": 2279
+      "rank": 2276
     },
     {
       "ticker": "347770",
@@ -41082,7 +41031,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "반도체"
       ],
-      "rank": 2280
+      "rank": 2277
     },
     {
       "ticker": "241840",
@@ -41100,7 +41049,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "미디어·엔터"
       ],
-      "rank": 2281
+      "rank": 2278
     },
     {
       "ticker": "351870",
@@ -41118,7 +41067,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "미디어·엔터"
       ],
-      "rank": 2282
+      "rank": 2279
     },
     {
       "ticker": "068050",
@@ -41136,7 +41085,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "미디어·엔터"
       ],
-      "rank": 2283
+      "rank": 2280
     },
     {
       "ticker": "398120",
@@ -41154,7 +41103,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "바이오·제약"
       ],
-      "rank": 2284
+      "rank": 2281
     },
     {
       "ticker": "131220",
@@ -41172,7 +41121,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "유통·소비재"
       ],
-      "rank": 2285
+      "rank": 2282
     },
     {
       "ticker": "263920",
@@ -41190,7 +41139,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기계·장비"
       ],
-      "rank": 2286
+      "rank": 2283
     },
     {
       "ticker": "078590",
@@ -41208,7 +41157,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "항공·방산"
       ],
-      "rank": 2287
+      "rank": 2284
     },
     {
       "ticker": "090370",
@@ -41226,7 +41175,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "섬유·패션·생활"
       ],
-      "rank": 2288
+      "rank": 2285
     },
     {
       "ticker": "006570",
@@ -41244,7 +41193,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기계·장비"
       ],
-      "rank": 2289
+      "rank": 2286
     },
     {
       "ticker": "039290",
@@ -41262,7 +41211,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "IT·소프트웨어"
       ],
-      "rank": 2290
+      "rank": 2287
     },
     {
       "ticker": "038880",
@@ -41280,7 +41229,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "전자·부품"
       ],
-      "rank": 2291
+      "rank": 2288
     },
     {
       "ticker": "021880",
@@ -41298,7 +41247,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "금융"
       ],
-      "rank": 2292
+      "rank": 2289
     },
     {
       "ticker": "131090",
@@ -41316,7 +41265,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "IT·소프트웨어"
       ],
-      "rank": 2293
+      "rank": 2290
     },
     {
       "ticker": "318000",
@@ -41334,7 +41283,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "화학"
       ],
-      "rank": 2294
+      "rank": 2291
     },
     {
       "ticker": "225220",
@@ -41352,7 +41301,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "바이오·제약"
       ],
-      "rank": 2295
+      "rank": 2292
     },
     {
       "ticker": "024070",
@@ -41370,7 +41319,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "화학"
       ],
-      "rank": 2296
+      "rank": 2293
     },
     {
       "ticker": "290270",
@@ -41388,7 +41337,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "IT·소프트웨어"
       ],
-      "rank": 2297
+      "rank": 2294
     },
     {
       "ticker": "065950",
@@ -41406,7 +41355,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "섬유·패션·생활"
       ],
-      "rank": 2298
+      "rank": 2295
     },
     {
       "ticker": "257370",
@@ -41424,7 +41373,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기계·장비"
       ],
-      "rank": 2299
+      "rank": 2296
     },
     {
       "ticker": "142760",
@@ -41442,7 +41391,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "부동산·리츠"
       ],
-      "rank": 2300
+      "rank": 2297
     },
     {
       "ticker": "115160",
@@ -41460,7 +41409,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "전자·부품"
       ],
-      "rank": 2301
+      "rank": 2298
     },
     {
       "ticker": "015260",
@@ -41478,7 +41427,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "반도체"
       ],
-      "rank": 2302
+      "rank": 2299
     },
     {
       "ticker": "342870",
@@ -41496,7 +41445,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "유통·소비재"
       ],
-      "rank": 2303
+      "rank": 2300
     },
     {
       "ticker": "002690",
@@ -41514,7 +41463,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "철강·금속"
       ],
-      "rank": 2304
+      "rank": 2301
     },
     {
       "ticker": "065370",
@@ -41533,7 +41482,7 @@ window.KOS_LIVE_DATA = {
         "IT·소프트웨어",
         "인공지능(AI)"
       ],
-      "rank": 2305
+      "rank": 2302
     },
     {
       "ticker": "009810",
@@ -41551,7 +41500,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "유통·소비재"
       ],
-      "rank": 2306
+      "rank": 2303
     },
     {
       "ticker": "010400",
@@ -41569,7 +41518,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "건설·건자재"
       ],
-      "rank": 2307
+      "rank": 2304
     },
     {
       "ticker": "169330",
@@ -41587,7 +41536,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "IT·소프트웨어"
       ],
-      "rank": 2308
+      "rank": 2305
     },
     {
       "ticker": "462510",
@@ -41605,7 +41554,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "전기장비"
       ],
-      "rank": 2309
+      "rank": 2306
     },
     {
       "ticker": "003680",
@@ -41623,7 +41572,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "식음료"
       ],
-      "rank": 2310
+      "rank": 2307
     },
     {
       "ticker": "148930",
@@ -41641,7 +41590,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기계·장비"
       ],
-      "rank": 2311
+      "rank": 2308
     },
     {
       "ticker": "017000",
@@ -41659,7 +41608,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "건설·건자재"
       ],
-      "rank": 2312
+      "rank": 2309
     },
     {
       "ticker": "048470",
@@ -41677,7 +41626,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "철강·금속"
       ],
-      "rank": 2313
+      "rank": 2310
     },
     {
       "ticker": "440320",
@@ -41695,7 +41644,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "게임"
       ],
-      "rank": 2314
+      "rank": 2311
     },
     {
       "ticker": "080530",
@@ -41713,7 +41662,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "화장품"
       ],
-      "rank": 2315
+      "rank": 2312
     },
     {
       "ticker": "046390",
@@ -41731,7 +41680,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "미디어·엔터"
       ],
-      "rank": 2316
+      "rank": 2313
     },
     {
       "ticker": "140430",
@@ -41749,7 +41698,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "IT·소프트웨어"
       ],
-      "rank": 2317
+      "rank": 2314
     },
     {
       "ticker": "013810",
@@ -41767,7 +41716,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기계·장비"
       ],
-      "rank": 2318
+      "rank": 2315
     },
     {
       "ticker": "056730",
@@ -41785,7 +41734,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "건설·건자재"
       ],
-      "rank": 2319
+      "rank": 2316
     },
     {
       "ticker": "008470",
@@ -41803,7 +41752,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "화학"
       ],
-      "rank": 2320
+      "rank": 2317
     },
     {
       "ticker": "033050",
@@ -41821,7 +41770,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "화학"
       ],
-      "rank": 2321
+      "rank": 2318
     },
     {
       "ticker": "317120",
@@ -41839,7 +41788,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "반도체"
       ],
-      "rank": 2322
+      "rank": 2319
     },
     {
       "ticker": "121890",
@@ -41857,7 +41806,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "전자·부품"
       ],
-      "rank": 2323
+      "rank": 2320
     },
     {
       "ticker": "233990",
@@ -41875,7 +41824,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "화학"
       ],
-      "rank": 2324
+      "rank": 2321
     },
     {
       "ticker": "068100",
@@ -41893,7 +41842,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "IT·소프트웨어"
       ],
-      "rank": 2325
+      "rank": 2322
     },
     {
       "ticker": "014130",
@@ -41911,7 +41860,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "운송·물류"
       ],
-      "rank": 2326
+      "rank": 2323
     },
     {
       "ticker": "079170",
@@ -41929,7 +41878,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "철강·금속"
       ],
-      "rank": 2327
+      "rank": 2324
     },
     {
       "ticker": "043220",
@@ -41947,7 +41896,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기계·장비"
       ],
-      "rank": 2328
+      "rank": 2325
     },
     {
       "ticker": "438700",
@@ -41965,7 +41914,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "IT·소프트웨어"
       ],
-      "rank": 2329
+      "rank": 2326
     },
     {
       "ticker": "317240",
@@ -41983,7 +41932,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "화장품"
       ],
-      "rank": 2330
+      "rank": 2327
     },
     {
       "ticker": "018680",
@@ -42001,7 +41950,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "바이오·제약"
       ],
-      "rank": 2331
+      "rank": 2328
     },
     {
       "ticker": "073570",
@@ -42019,7 +41968,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "2차전지"
       ],
-      "rank": 2332
+      "rank": 2329
     },
     {
       "ticker": "403360",
@@ -42037,7 +41986,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "IT·소프트웨어"
       ],
-      "rank": 2333
+      "rank": 2330
     },
     {
       "ticker": "354200",
@@ -42056,7 +42005,7 @@ window.KOS_LIVE_DATA = {
         "바이오·제약",
         "인공지능(AI)"
       ],
-      "rank": 2334
+      "rank": 2331
     },
     {
       "ticker": "013720",
@@ -42074,7 +42023,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "미디어·엔터"
       ],
-      "rank": 2335
+      "rank": 2332
     },
     {
       "ticker": "311060",
@@ -42092,7 +42041,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "자동차"
       ],
-      "rank": 2336
+      "rank": 2333
     },
     {
       "ticker": "354390",
@@ -42110,7 +42059,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "바이오·제약"
       ],
-      "rank": 2337
+      "rank": 2334
     },
     {
       "ticker": "403810",
@@ -42129,7 +42078,7 @@ window.KOS_LIVE_DATA = {
         "전자·부품",
         "로봇"
       ],
-      "rank": 2338
+      "rank": 2335
     },
     {
       "ticker": "101000",
@@ -42147,7 +42096,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기계·장비"
       ],
-      "rank": 2339
+      "rank": 2336
     },
     {
       "ticker": "191600",
@@ -42165,7 +42114,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "반도체"
       ],
-      "rank": 2340
+      "rank": 2337
     },
     {
       "ticker": "001810",
@@ -42183,7 +42132,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "섬유·패션·생활"
       ],
-      "rank": 2341
+      "rank": 2338
     },
     {
       "ticker": "310870",
@@ -42201,7 +42150,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "미디어·엔터"
       ],
-      "rank": 2342
+      "rank": 2339
     },
     {
       "ticker": "405920",
@@ -42219,7 +42168,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "식음료"
       ],
-      "rank": 2343
+      "rank": 2340
     },
     {
       "ticker": "353590",
@@ -42237,7 +42186,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "자동차"
       ],
-      "rank": 2344
+      "rank": 2341
     },
     {
       "ticker": "030720",
@@ -42255,7 +42204,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "식음료"
       ],
-      "rank": 2345
+      "rank": 2342
     },
     {
       "ticker": "131100",
@@ -42273,7 +42222,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "미디어·엔터"
       ],
-      "rank": 2346
+      "rank": 2343
     },
     {
       "ticker": "005110",
@@ -42291,7 +42240,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "유통·소비재"
       ],
-      "rank": 2347
+      "rank": 2344
     },
     {
       "ticker": "455180",
@@ -42309,7 +42258,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "전자·부품"
       ],
-      "rank": 2348
+      "rank": 2345
     },
     {
       "ticker": "033250",
@@ -42327,7 +42276,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "자동차"
       ],
-      "rank": 2349
+      "rank": 2346
     },
     {
       "ticker": "063760",
@@ -42345,7 +42294,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "전기장비"
       ],
-      "rank": 2350
+      "rank": 2347
     },
     {
       "ticker": "237750",
@@ -42363,7 +42312,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기계·장비"
       ],
-      "rank": 2351
+      "rank": 2348
     },
     {
       "ticker": "318010",
@@ -42381,7 +42330,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "식음료"
       ],
-      "rank": 2352
+      "rank": 2349
     },
     {
       "ticker": "397810",
@@ -42399,7 +42348,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "IT·소프트웨어"
       ],
-      "rank": 2353
+      "rank": 2350
     },
     {
       "ticker": "045510",
@@ -42417,7 +42366,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "유통·소비재"
       ],
-      "rank": 2354
+      "rank": 2351
     },
     {
       "ticker": "900110",
@@ -42436,7 +42385,7 @@ window.KOS_LIVE_DATA = {
         "IT·소프트웨어",
         "인공지능(AI)"
       ],
-      "rank": 2355
+      "rank": 2352
     },
     {
       "ticker": "006050",
@@ -42454,7 +42403,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "건설·건자재"
       ],
-      "rank": 2356
+      "rank": 2353
     },
     {
       "ticker": "016100",
@@ -42472,7 +42421,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "화장품"
       ],
-      "rank": 2357
+      "rank": 2354
     },
     {
       "ticker": "032080",
@@ -42490,7 +42439,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "섬유·패션·생활"
       ],
-      "rank": 2358
+      "rank": 2355
     },
     {
       "ticker": "143210",
@@ -42508,7 +42457,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "자동차"
       ],
-      "rank": 2359
+      "rank": 2356
     },
     {
       "ticker": "032750",
@@ -42526,7 +42475,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "전자·부품"
       ],
-      "rank": 2360
+      "rank": 2357
     },
     {
       "ticker": "012170",
@@ -42544,7 +42493,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "미디어·엔터"
       ],
-      "rank": 2361
+      "rank": 2358
     },
     {
       "ticker": "091340",
@@ -42562,7 +42511,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "화학"
       ],
-      "rank": 2362
+      "rank": 2359
     },
     {
       "ticker": "019660",
@@ -42580,7 +42529,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "유통·소비재"
       ],
-      "rank": 2363
+      "rank": 2360
     },
     {
       "ticker": "053290",
@@ -42598,7 +42547,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "미디어·엔터"
       ],
-      "rank": 2364
+      "rank": 2361
     },
     {
       "ticker": "007770",
@@ -42616,7 +42565,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "화학"
       ],
-      "rank": 2365
+      "rank": 2362
     },
     {
       "ticker": "024890",
@@ -42634,7 +42583,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "화학"
       ],
-      "rank": 2366
+      "rank": 2363
     },
     {
       "ticker": "274400",
@@ -42652,7 +42601,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "IT·소프트웨어"
       ],
-      "rank": 2367
+      "rank": 2364
     },
     {
       "ticker": "227420",
@@ -42670,7 +42619,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "섬유·패션·생활"
       ],
-      "rank": 2368
+      "rank": 2365
     },
     {
       "ticker": "200230",
@@ -42688,7 +42637,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "바이오·제약"
       ],
-      "rank": 2369
+      "rank": 2366
     },
     {
       "ticker": "069140",
@@ -42706,7 +42655,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "에너지·전력"
       ],
-      "rank": 2370
+      "rank": 2367
     },
     {
       "ticker": "252500",
@@ -42724,7 +42673,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "화학"
       ],
-      "rank": 2371
+      "rank": 2368
     },
     {
       "ticker": "304840",
@@ -42742,7 +42691,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "바이오·제약"
       ],
-      "rank": 2372
+      "rank": 2369
     },
     {
       "ticker": "004270",
@@ -42760,7 +42709,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "유통·소비재"
       ],
-      "rank": 2373
+      "rank": 2370
     },
     {
       "ticker": "059180",
@@ -42778,7 +42727,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "전자·부품"
       ],
-      "rank": 2374
+      "rank": 2371
     },
     {
       "ticker": "367000",
@@ -42796,7 +42745,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "IT·소프트웨어"
       ],
-      "rank": 2375
+      "rank": 2372
     },
     {
       "ticker": "002820",
@@ -42814,7 +42763,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "화학"
       ],
-      "rank": 2376
+      "rank": 2373
     },
     {
       "ticker": "005360",
@@ -42832,7 +42781,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "유통·소비재"
       ],
-      "rank": 2377
+      "rank": 2374
     },
     {
       "ticker": "051380",
@@ -42850,7 +42799,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "유통·소비재"
       ],
-      "rank": 2378
+      "rank": 2375
     },
     {
       "ticker": "006740",
@@ -42868,7 +42817,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "섬유·패션·생활"
       ],
-      "rank": 2379
+      "rank": 2376
     },
     {
       "ticker": "258790",
@@ -42886,7 +42835,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "IT·소프트웨어"
       ],
-      "rank": 2380
+      "rank": 2377
     },
     {
       "ticker": "206950",
@@ -42904,7 +42853,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "호텔·레저"
       ],
-      "rank": 2381
+      "rank": 2378
     },
     {
       "ticker": "131180",
@@ -42922,7 +42871,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "전자·부품"
       ],
-      "rank": 2382
+      "rank": 2379
     },
     {
       "ticker": "036480",
@@ -42940,7 +42889,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "바이오·제약"
       ],
-      "rank": 2383
+      "rank": 2380
     },
     {
       "ticker": "377330",
@@ -42958,7 +42907,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기계·장비"
       ],
-      "rank": 2384
+      "rank": 2381
     },
     {
       "ticker": "306040",
@@ -42976,7 +42925,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "식음료"
       ],
-      "rank": 2385
+      "rank": 2382
     },
     {
       "ticker": "118000",
@@ -42994,7 +42943,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "유통·소비재"
       ],
-      "rank": 2386
+      "rank": 2383
     },
     {
       "ticker": "006200",
@@ -43012,7 +42961,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "지주"
       ],
-      "rank": 2387
+      "rank": 2384
     },
     {
       "ticker": "239340",
@@ -43030,7 +42979,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "IT·소프트웨어"
       ],
-      "rank": 2388
+      "rank": 2385
     },
     {
       "ticker": "373110",
@@ -43048,7 +42997,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "바이오·제약"
       ],
-      "rank": 2389
+      "rank": 2386
     },
     {
       "ticker": "303530",
@@ -43067,7 +43016,7 @@ window.KOS_LIVE_DATA = {
         "IT·소프트웨어",
         "인공지능(AI)"
       ],
-      "rank": 2390
+      "rank": 2387
     },
     {
       "ticker": "290560",
@@ -43085,7 +43034,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "IT·소프트웨어"
       ],
-      "rank": 2391
+      "rank": 2388
     },
     {
       "ticker": "052300",
@@ -43103,7 +43052,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "유통·소비재"
       ],
-      "rank": 2392
+      "rank": 2389
     },
     {
       "ticker": "457600",
@@ -43121,7 +43070,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "전자·부품"
       ],
-      "rank": 2393
+      "rank": 2390
     },
     {
       "ticker": "348030",
@@ -43139,7 +43088,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "게임"
       ],
-      "rank": 2394
+      "rank": 2391
     },
     {
       "ticker": "424760",
@@ -43157,7 +43106,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "IT·소프트웨어"
       ],
-      "rank": 2395
+      "rank": 2392
     },
     {
       "ticker": "446070",
@@ -43175,7 +43124,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "건설·건자재"
       ],
-      "rank": 2396
+      "rank": 2393
     },
     {
       "ticker": "115480",
@@ -43193,7 +43142,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "바이오·제약"
       ],
-      "rank": 2397
+      "rank": 2394
     },
     {
       "ticker": "093380",
@@ -43211,7 +43160,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기계·장비"
       ],
-      "rank": 2398
+      "rank": 2395
     },
     {
       "ticker": "037400",
@@ -43229,7 +43178,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "유통·소비재"
       ],
-      "rank": 2399
+      "rank": 2396
     },
     {
       "ticker": "026910",
@@ -43247,7 +43196,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "철강·금속"
       ],
-      "rank": 2400
+      "rank": 2397
     },
     {
       "ticker": "130740",
@@ -43265,7 +43214,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "자동차"
       ],
-      "rank": 2401
+      "rank": 2398
     },
     {
       "ticker": "179720",
@@ -43283,7 +43232,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "금융"
       ],
-      "rank": 2402
+      "rank": 2399
     },
     {
       "ticker": "138070",
@@ -43301,7 +43250,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기계·장비"
       ],
-      "rank": 2403
+      "rank": 2400
     },
     {
       "ticker": "131760",
@@ -43319,7 +43268,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "전자·부품"
       ],
-      "rank": 2404
+      "rank": 2401
     },
     {
       "ticker": "069640",
@@ -43337,7 +43286,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "섬유·패션·생활"
       ],
-      "rank": 2405
+      "rank": 2402
     },
     {
       "ticker": "418620",
@@ -43355,7 +43304,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "IT·소프트웨어"
       ],
-      "rank": 2406
+      "rank": 2403
     },
     {
       "ticker": "331520",
@@ -43373,7 +43322,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "게임"
       ],
-      "rank": 2407
+      "rank": 2404
     },
     {
       "ticker": "333050",
@@ -43391,7 +43340,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "IT·소프트웨어"
       ],
-      "rank": 2408
+      "rank": 2405
     },
     {
       "ticker": "146060",
@@ -43409,7 +43358,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "화학"
       ],
-      "rank": 2409
+      "rank": 2406
     },
     {
       "ticker": "024940",
@@ -43427,7 +43376,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "유통·소비재"
       ],
-      "rank": 2410
+      "rank": 2407
     },
     {
       "ticker": "009310",
@@ -43445,7 +43394,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "전자·부품"
       ],
-      "rank": 2411
+      "rank": 2408
     },
     {
       "ticker": "335870",
@@ -43463,7 +43412,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "유통·소비재"
       ],
-      "rank": 2412
+      "rank": 2409
     },
     {
       "ticker": "298060",
@@ -43481,7 +43430,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "바이오·제약"
       ],
-      "rank": 2413
+      "rank": 2410
     },
     {
       "ticker": "027580",
@@ -43499,7 +43448,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "화학"
       ],
-      "rank": 2414
+      "rank": 2411
     },
     {
       "ticker": "065150",
@@ -43517,7 +43466,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "식음료"
       ],
-      "rank": 2415
+      "rank": 2412
     },
     {
       "ticker": "267790",
@@ -43535,7 +43484,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "섬유·패션·생활"
       ],
-      "rank": 2416
+      "rank": 2413
     },
     {
       "ticker": "090150",
@@ -43553,7 +43502,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "자동차"
       ],
-      "rank": 2417
+      "rank": 2414
     },
     {
       "ticker": "060380",
@@ -43571,7 +43520,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "철강·금속"
       ],
-      "rank": 2418
+      "rank": 2415
     },
     {
       "ticker": "070590",
@@ -43589,7 +43538,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "IT·소프트웨어"
       ],
-      "rank": 2419
+      "rank": 2416
     },
     {
       "ticker": "023770",
@@ -43607,7 +43556,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "게임"
       ],
-      "rank": 2420
+      "rank": 2417
     },
     {
       "ticker": "038530",
@@ -43625,7 +43574,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "바이오·제약"
       ],
-      "rank": 2421
+      "rank": 2418
     },
     {
       "ticker": "208350",
@@ -43643,7 +43592,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "IT·소프트웨어"
       ],
-      "rank": 2422
+      "rank": 2419
     },
     {
       "ticker": "376980",
@@ -43661,7 +43610,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "IT·소프트웨어"
       ],
-      "rank": 2423
+      "rank": 2420
     },
     {
       "ticker": "123840",
@@ -43679,7 +43628,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "식음료"
       ],
-      "rank": 2424
+      "rank": 2421
     },
     {
       "ticker": "434190",
@@ -43697,7 +43646,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기계·장비"
       ],
-      "rank": 2425
+      "rank": 2422
     },
     {
       "ticker": "123750",
@@ -43715,7 +43664,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기계·장비"
       ],
-      "rank": 2426
+      "rank": 2423
     },
     {
       "ticker": "207490",
@@ -43733,7 +43682,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기계·장비"
       ],
-      "rank": 2427
+      "rank": 2424
     },
     {
       "ticker": "301300",
@@ -43752,7 +43701,7 @@ window.KOS_LIVE_DATA = {
         "IT·소프트웨어",
         "인공지능(AI)"
       ],
-      "rank": 2428
+      "rank": 2425
     },
     {
       "ticker": "096690",
@@ -43770,7 +43719,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "전자·부품"
       ],
-      "rank": 2429
+      "rank": 2426
     },
     {
       "ticker": "188260",
@@ -43788,7 +43737,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 2430
+      "rank": 2427
     },
     {
       "ticker": "053060",
@@ -43806,7 +43755,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "자동차"
       ],
-      "rank": 2431
+      "rank": 2428
     },
     {
       "ticker": "067730",
@@ -43824,7 +43773,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "IT·소프트웨어"
       ],
-      "rank": 2432
+      "rank": 2429
     },
     {
       "ticker": "078860",
@@ -43842,7 +43791,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "미디어·엔터"
       ],
-      "rank": 2433
+      "rank": 2430
     },
     {
       "ticker": "054090",
@@ -43860,7 +43809,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "전자·부품"
       ],
-      "rank": 2434
+      "rank": 2431
     },
     {
       "ticker": "139670",
@@ -43878,7 +43827,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "IT·소프트웨어"
       ],
-      "rank": 2435
+      "rank": 2432
     },
     {
       "ticker": "109960",
@@ -43896,7 +43845,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "유통·소비재"
       ],
-      "rank": 2436
+      "rank": 2433
     },
     {
       "ticker": "043360",
@@ -43914,7 +43863,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "전자·부품"
       ],
-      "rank": 2437
+      "rank": 2434
     },
     {
       "ticker": "432980",
@@ -43932,7 +43881,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "바이오·제약"
       ],
-      "rank": 2438
+      "rank": 2435
     },
     {
       "ticker": "044780",
@@ -43950,7 +43899,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기계·장비"
       ],
-      "rank": 2439
+      "rank": 2436
     },
     {
       "ticker": "009460",
@@ -43968,7 +43917,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 2440
+      "rank": 2437
     },
     {
       "ticker": "216400",
@@ -43986,7 +43935,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "바이오·제약"
       ],
-      "rank": 2441
+      "rank": 2438
     },
     {
       "ticker": "080470",
@@ -44004,7 +43953,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "자동차"
       ],
-      "rank": 2442
+      "rank": 2439
     },
     {
       "ticker": "188040",
@@ -44022,7 +43971,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "식음료"
       ],
-      "rank": 2443
+      "rank": 2440
     },
     {
       "ticker": "102950",
@@ -44040,7 +43989,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "전자·부품"
       ],
-      "rank": 2444
+      "rank": 2441
     },
     {
       "ticker": "091970",
@@ -44058,7 +44007,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "화학"
       ],
-      "rank": 2445
+      "rank": 2442
     },
     {
       "ticker": "021040",
@@ -44076,7 +44025,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "철강·금속"
       ],
-      "rank": 2446
+      "rank": 2443
     },
     {
       "ticker": "236810",
@@ -44094,7 +44043,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "IT·소프트웨어"
       ],
-      "rank": 2447
+      "rank": 2444
     },
     {
       "ticker": "291230",
@@ -44112,7 +44061,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기계·장비"
       ],
-      "rank": 2448
+      "rank": 2445
     },
     {
       "ticker": "058450",
@@ -44130,7 +44079,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "미디어·엔터"
       ],
-      "rank": 2449
+      "rank": 2446
     },
     {
       "ticker": "900340",
@@ -44148,7 +44097,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "금융"
       ],
-      "rank": 2450
+      "rank": 2447
     },
     {
       "ticker": "076340",
@@ -44166,7 +44115,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "건설·건자재"
       ],
-      "rank": 2451
+      "rank": 2448
     },
     {
       "ticker": "002360",
@@ -44184,7 +44133,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "화학"
       ],
-      "rank": 2452
+      "rank": 2449
     },
     {
       "ticker": "222980",
@@ -44202,7 +44151,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "식음료"
       ],
-      "rank": 2453
+      "rank": 2450
     },
     {
       "ticker": "362990",
@@ -44220,7 +44169,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "미디어·엔터"
       ],
-      "rank": 2454
+      "rank": 2451
     },
     {
       "ticker": "353190",
@@ -44238,7 +44187,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "식음료"
       ],
-      "rank": 2455
+      "rank": 2452
     },
     {
       "ticker": "016920",
@@ -44256,7 +44205,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "유통·소비재"
       ],
-      "rank": 2456
+      "rank": 2453
     },
     {
       "ticker": "270210",
@@ -44274,7 +44223,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "바이오·제약"
       ],
-      "rank": 2457
+      "rank": 2454
     },
     {
       "ticker": "352940",
@@ -44292,7 +44241,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "화학"
       ],
-      "rank": 2458
+      "rank": 2455
     },
     {
       "ticker": "270520",
@@ -44310,7 +44259,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "바이오·제약"
       ],
-      "rank": 2459
+      "rank": 2456
     },
     {
       "ticker": "080720",
@@ -44328,7 +44277,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "바이오·제약"
       ],
-      "rank": 2460
+      "rank": 2457
     },
     {
       "ticker": "357430",
@@ -44346,7 +44295,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "부동산·리츠"
       ],
-      "rank": 2461
+      "rank": 2458
     },
     {
       "ticker": "067010",
@@ -44364,7 +44313,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "IT·소프트웨어"
       ],
-      "rank": 2462
+      "rank": 2459
     },
     {
       "ticker": "377220",
@@ -44382,7 +44331,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "바이오·제약"
       ],
-      "rank": 2463
+      "rank": 2460
     },
     {
       "ticker": "197140",
@@ -44400,7 +44349,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "IT·소프트웨어"
       ],
-      "rank": 2464
+      "rank": 2461
     },
     {
       "ticker": "317860",
@@ -44418,7 +44367,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "화학"
       ],
-      "rank": 2465
+      "rank": 2462
     },
     {
       "ticker": "065060",
@@ -44436,7 +44385,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "섬유·패션·생활"
       ],
-      "rank": 2466
+      "rank": 2463
     },
     {
       "ticker": "044380",
@@ -44454,7 +44403,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "전자·부품"
       ],
-      "rank": 2467
+      "rank": 2464
     },
     {
       "ticker": "103230",
@@ -44472,7 +44421,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "자동차"
       ],
-      "rank": 2468
+      "rank": 2465
     },
     {
       "ticker": "017250",
@@ -44490,7 +44439,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "전자·부품"
       ],
-      "rank": 2469
+      "rank": 2466
     },
     {
       "ticker": "331660",
@@ -44508,7 +44457,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "화학"
       ],
-      "rank": 2470
+      "rank": 2467
     },
     {
       "ticker": "087260",
@@ -44526,7 +44475,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "IT·소프트웨어"
       ],
-      "rank": 2471
+      "rank": 2468
     },
     {
       "ticker": "079650",
@@ -44544,7 +44493,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "건설·건자재"
       ],
-      "rank": 2472
+      "rank": 2469
     },
     {
       "ticker": "115570",
@@ -44562,7 +44511,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "화학"
       ],
-      "rank": 2473
+      "rank": 2470
     },
     {
       "ticker": "025890",
@@ -44580,7 +44529,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "철강·금속"
       ],
-      "rank": 2474
+      "rank": 2471
     },
     {
       "ticker": "285800",
@@ -44598,7 +44547,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "전자·부품"
       ],
-      "rank": 2475
+      "rank": 2472
     },
     {
       "ticker": "085810",
@@ -44616,7 +44565,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "IT·소프트웨어"
       ],
-      "rank": 2476
+      "rank": 2473
     },
     {
       "ticker": "405000",
@@ -44634,7 +44583,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기계·장비"
       ],
-      "rank": 2477
+      "rank": 2474
     },
     {
       "ticker": "227610",
@@ -44652,7 +44601,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "화장품"
       ],
-      "rank": 2478
+      "rank": 2475
     },
     {
       "ticker": "322780",
@@ -44670,7 +44619,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "미디어·엔터"
       ],
-      "rank": 2479
+      "rank": 2476
     },
     {
       "ticker": "322970",
@@ -44688,7 +44637,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "바이오·제약"
       ],
-      "rank": 2480
+      "rank": 2477
     },
     {
       "ticker": "148780",
@@ -44707,7 +44656,7 @@ window.KOS_LIVE_DATA = {
         "IT·소프트웨어",
         "인공지능(AI)"
       ],
-      "rank": 2481
+      "rank": 2478
     },
     {
       "ticker": "900100",
@@ -44725,7 +44674,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "자동차"
       ],
-      "rank": 2482
+      "rank": 2479
     },
     {
       "ticker": "035620",
@@ -44743,7 +44692,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "미디어·엔터"
       ],
-      "rank": 2483
+      "rank": 2480
     },
     {
       "ticker": "083640",
@@ -44761,7 +44710,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "유통·소비재"
       ],
-      "rank": 2484
+      "rank": 2481
     },
     {
       "ticker": "431190",
@@ -44780,7 +44729,7 @@ window.KOS_LIVE_DATA = {
         "IT·소프트웨어",
         "인공지능(AI)"
       ],
-      "rank": 2485
+      "rank": 2482
     },
     {
       "ticker": "115610",
@@ -44798,7 +44747,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "반도체"
       ],
-      "rank": 2486
+      "rank": 2483
     },
     {
       "ticker": "238200",
@@ -44816,7 +44765,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "식음료"
       ],
-      "rank": 2487
+      "rank": 2484
     },
     {
       "ticker": "034940",
@@ -44834,7 +44783,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "바이오·제약"
       ],
-      "rank": 2488
+      "rank": 2485
     },
     {
       "ticker": "465770",
@@ -44852,7 +44801,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "운송·물류"
       ],
-      "rank": 2489
+      "rank": 2486
     },
     {
       "ticker": "039310",
@@ -44870,7 +44819,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "호텔·레저"
       ],
-      "rank": 2490
+      "rank": 2487
     },
     {
       "ticker": "415380",
@@ -44888,7 +44837,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "유통·소비재"
       ],
-      "rank": 2491
+      "rank": 2488
     },
     {
       "ticker": "225590",
@@ -44906,7 +44855,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "섬유·패션·생활"
       ],
-      "rank": 2492
+      "rank": 2489
     },
     {
       "ticker": "278990",
@@ -44924,7 +44873,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기계·장비"
       ],
-      "rank": 2493
+      "rank": 2490
     },
     {
       "ticker": "192390",
@@ -44942,7 +44891,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "건설·건자재"
       ],
-      "rank": 2494
+      "rank": 2491
     },
     {
       "ticker": "049120",
@@ -44960,7 +44909,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "반도체"
       ],
-      "rank": 2495
+      "rank": 2492
     },
     {
       "ticker": "328380",
@@ -44978,7 +44927,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "IT·소프트웨어"
       ],
-      "rank": 2496
+      "rank": 2493
     },
     {
       "ticker": "365900",
@@ -44996,7 +44945,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기계·장비"
       ],
-      "rank": 2497
+      "rank": 2494
     },
     {
       "ticker": "154030",
@@ -45014,7 +44963,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "식음료"
       ],
-      "rank": 2498
+      "rank": 2495
     },
     {
       "ticker": "015020",
@@ -45032,7 +44981,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "부동산·리츠"
       ],
-      "rank": 2499
+      "rank": 2496
     },
     {
       "ticker": "275630",
@@ -45050,7 +44999,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "IT·소프트웨어"
       ],
-      "rank": 2500
+      "rank": 2497
     },
     {
       "ticker": "018700",
@@ -45068,7 +45017,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "유통·소비재"
       ],
-      "rank": 2501
+      "rank": 2498
     },
     {
       "ticker": "372800",
@@ -45086,7 +45035,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "IT·소프트웨어"
       ],
-      "rank": 2502
+      "rank": 2499
     },
     {
       "ticker": "032280",
@@ -45104,7 +45053,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "운송·물류"
       ],
-      "rank": 2503
+      "rank": 2500
     },
     {
       "ticker": "113810",
@@ -45122,7 +45071,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "항공·방산"
       ],
-      "rank": 2504
+      "rank": 2501
     },
     {
       "ticker": "060900",
@@ -45140,7 +45089,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "에너지·전력"
       ],
-      "rank": 2505
+      "rank": 2502
     },
     {
       "ticker": "134060",
@@ -45158,7 +45107,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "IT·소프트웨어"
       ],
-      "rank": 2506
+      "rank": 2503
     },
     {
       "ticker": "076080",
@@ -45176,7 +45125,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "에너지·전력"
       ],
-      "rank": 2507
+      "rank": 2504
     },
     {
       "ticker": "215480",
@@ -45194,7 +45143,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "유통·소비재"
       ],
-      "rank": 2508
+      "rank": 2505
     },
     {
       "ticker": "208640",
@@ -45212,7 +45161,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "게임"
       ],
-      "rank": 2509
+      "rank": 2506
     },
     {
       "ticker": "054220",
@@ -45230,7 +45179,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "전기장비"
       ],
-      "rank": 2510
+      "rank": 2507
     },
     {
       "ticker": "054940",
@@ -45248,7 +45197,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "유통·소비재"
       ],
-      "rank": 2511
+      "rank": 2508
     },
     {
       "ticker": "101400",
@@ -45266,7 +45215,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "반도체"
       ],
-      "rank": 2512
+      "rank": 2509
     },
     {
       "ticker": "224060",
@@ -45284,7 +45233,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "전자·부품"
       ],
-      "rank": 2513
+      "rank": 2510
     },
     {
       "ticker": "109670",
@@ -45302,7 +45251,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "섬유·패션·생활"
       ],
-      "rank": 2514
+      "rank": 2511
     },
     {
       "ticker": "084440",
@@ -45320,7 +45269,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "IT·소프트웨어"
       ],
-      "rank": 2515
+      "rank": 2512
     },
     {
       "ticker": "214610",
@@ -45338,7 +45287,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "전기장비"
       ],
-      "rank": 2516
+      "rank": 2513
     },
     {
       "ticker": "279600",
@@ -45357,7 +45306,7 @@ window.KOS_LIVE_DATA = {
         "IT·소프트웨어",
         "인공지능(AI)"
       ],
-      "rank": 2517
+      "rank": 2514
     },
     {
       "ticker": "020400",
@@ -45375,7 +45324,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "철강·금속"
       ],
-      "rank": 2518
+      "rank": 2515
     },
     {
       "ticker": "193250",
@@ -45393,7 +45342,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "전자·부품"
       ],
-      "rank": 2519
+      "rank": 2516
     },
     {
       "ticker": "368600",
@@ -45411,7 +45360,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "전자·부품"
       ],
-      "rank": 2520
+      "rank": 2517
     },
     {
       "ticker": "051780",
@@ -45429,7 +45378,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "지주"
       ],
-      "rank": 2521
+      "rank": 2518
     },
     {
       "ticker": "031860",
@@ -45447,7 +45396,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "유통·소비재"
       ],
-      "rank": 2522
+      "rank": 2519
     },
     {
       "ticker": "222670",
@@ -45465,7 +45414,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "바이오·제약"
       ],
-      "rank": 2523
+      "rank": 2520
     },
     {
       "ticker": "377030",
@@ -45483,7 +45432,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "IT·소프트웨어"
       ],
-      "rank": 2524
+      "rank": 2521
     },
     {
       "ticker": "101680",
@@ -45501,7 +45450,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기계·장비"
       ],
-      "rank": 2525
+      "rank": 2522
     },
     {
       "ticker": "303030",
@@ -45519,7 +45468,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "반도체"
       ],
-      "rank": 2526
+      "rank": 2523
     },
     {
       "ticker": "042040",
@@ -45537,7 +45486,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "유통·소비재"
       ],
-      "rank": 2527
+      "rank": 2524
     },
     {
       "ticker": "032980",
@@ -45555,7 +45504,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "유통·소비재"
       ],
-      "rank": 2528
+      "rank": 2525
     },
     {
       "ticker": "196700",
@@ -45573,7 +45522,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "화학"
       ],
-      "rank": 2529
+      "rank": 2526
     },
     {
       "ticker": "226340",
@@ -45591,7 +45540,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "화장품"
       ],
-      "rank": 2530
+      "rank": 2527
     },
     {
       "ticker": "018620",
@@ -45609,7 +45558,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "바이오·제약"
       ],
-      "rank": 2531
+      "rank": 2528
     },
     {
       "ticker": "389680",
@@ -45627,7 +45576,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "IT·소프트웨어"
       ],
-      "rank": 2532
+      "rank": 2529
     },
     {
       "ticker": "032680",
@@ -45645,7 +45594,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "IT·소프트웨어"
       ],
-      "rank": 2533
+      "rank": 2530
     },
     {
       "ticker": "086220",
@@ -45663,7 +45612,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "식음료"
       ],
-      "rank": 2534
+      "rank": 2531
     },
     {
       "ticker": "050760",
@@ -45681,7 +45630,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "화학"
       ],
-      "rank": 2535
+      "rank": 2532
     },
     {
       "ticker": "083470",
@@ -45699,7 +45648,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "화학"
       ],
-      "rank": 2536
+      "rank": 2533
     },
     {
       "ticker": "008600",
@@ -45717,7 +45666,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "유통·소비재"
       ],
-      "rank": 2537
+      "rank": 2534
     },
     {
       "ticker": "009440",
@@ -45735,7 +45684,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "지주"
       ],
-      "rank": 2538
+      "rank": 2535
     },
     {
       "ticker": "417180",
@@ -45753,7 +45702,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "IT·소프트웨어"
       ],
-      "rank": 2539
+      "rank": 2536
     },
     {
       "ticker": "289010",
@@ -45771,7 +45720,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "IT·소프트웨어"
       ],
-      "rank": 2540
+      "rank": 2537
     },
     {
       "ticker": "098660",
@@ -45789,7 +45738,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "섬유·패션·생활"
       ],
-      "rank": 2541
+      "rank": 2538
     },
     {
       "ticker": "065770",
@@ -45807,7 +45756,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "전자·부품"
       ],
-      "rank": 2542
+      "rank": 2539
     },
     {
       "ticker": "110020",
@@ -45825,7 +45774,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "바이오·제약"
       ],
-      "rank": 2543
+      "rank": 2540
     },
     {
       "ticker": "002070",
@@ -45843,7 +45792,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "섬유·패션·생활"
       ],
-      "rank": 2544
+      "rank": 2541
     },
     {
       "ticker": "052960",
@@ -45861,7 +45810,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "자동차"
       ],
-      "rank": 2545
+      "rank": 2542
     },
     {
       "ticker": "032800",
@@ -45879,7 +45828,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "미디어·엔터"
       ],
-      "rank": 2546
+      "rank": 2543
     },
     {
       "ticker": "060230",
@@ -45897,7 +45846,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "화학"
       ],
-      "rank": 2547
+      "rank": 2544
     },
     {
       "ticker": "054410",
@@ -45915,7 +45864,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "유통·소비재"
       ],
-      "rank": 2548
+      "rank": 2545
     },
     {
       "ticker": "336040",
@@ -45933,7 +45882,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "전자·부품"
       ],
-      "rank": 2549
+      "rank": 2546
     },
     {
       "ticker": "241820",
@@ -45951,7 +45900,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "바이오·제약"
       ],
-      "rank": 2550
+      "rank": 2547
     },
     {
       "ticker": "169670",
@@ -45969,7 +45918,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "반도체"
       ],
-      "rank": 2551
+      "rank": 2548
     },
     {
       "ticker": "240600",
@@ -45987,7 +45936,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "화학"
       ],
-      "rank": 2552
+      "rank": 2549
     },
     {
       "ticker": "069330",
@@ -46005,7 +45954,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "반도체"
       ],
-      "rank": 2553
+      "rank": 2550
     },
     {
       "ticker": "247660",
@@ -46023,7 +45972,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "전자·부품"
       ],
-      "rank": 2554
+      "rank": 2551
     },
     {
       "ticker": "060480",
@@ -46041,12 +45990,12 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "철강·금속"
       ],
-      "rank": 2555
+      "rank": 2552
     },
     {
       "ticker": "0070X0",
       "name": "에스테크엠",
-      "name_en": "",
+      "name_en": "S-Tech M",
       "market": "코넥스",
       "sector": "전자·부품",
       "price": 10850,
@@ -46058,7 +46007,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "전자·부품"
       ],
-      "rank": 2556
+      "rank": 2553
     },
     {
       "ticker": "001420",
@@ -46076,7 +46025,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "조선"
       ],
-      "rank": 2557
+      "rank": 2554
     },
     {
       "ticker": "065690",
@@ -46094,7 +46043,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "화학"
       ],
-      "rank": 2558
+      "rank": 2555
     },
     {
       "ticker": "900270",
@@ -46112,7 +46061,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "금융"
       ],
-      "rank": 2559
+      "rank": 2556
     },
     {
       "ticker": "476710",
@@ -46130,7 +46079,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "미디어·엔터"
       ],
-      "rank": 2560
+      "rank": 2557
     },
     {
       "ticker": "048830",
@@ -46148,7 +46097,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "화학"
       ],
-      "rank": 2561
+      "rank": 2558
     },
     {
       "ticker": "011090",
@@ -46166,7 +46115,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "건설·건자재"
       ],
-      "rank": 2562
+      "rank": 2559
     },
     {
       "ticker": "115530",
@@ -46184,7 +46133,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "전자·부품"
       ],
-      "rank": 2563
+      "rank": 2560
     },
     {
       "ticker": "291810",
@@ -46202,7 +46151,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "IT·소프트웨어"
       ],
-      "rank": 2564
+      "rank": 2561
     },
     {
       "ticker": "137940",
@@ -46220,7 +46169,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "전기장비"
       ],
-      "rank": 2565
+      "rank": 2562
     },
     {
       "ticker": "067770",
@@ -46238,7 +46187,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "전자·부품"
       ],
-      "rank": 2566
+      "rank": 2563
     },
     {
       "ticker": "014100",
@@ -46256,7 +46205,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "유통·소비재"
       ],
-      "rank": 2567
+      "rank": 2564
     },
     {
       "ticker": "344860",
@@ -46274,7 +46223,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "화학"
       ],
-      "rank": 2568
+      "rank": 2565
     },
     {
       "ticker": "001770",
@@ -46292,7 +46241,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "철강·금속"
       ],
-      "rank": 2569
+      "rank": 2566
     },
     {
       "ticker": "023790",
@@ -46310,7 +46259,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "철강·금속"
       ],
-      "rank": 2570
+      "rank": 2567
     },
     {
       "ticker": "106520",
@@ -46328,7 +46277,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "전기장비"
       ],
-      "rank": 2571
+      "rank": 2568
     },
     {
       "ticker": "045520",
@@ -46346,7 +46295,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기계·장비"
       ],
-      "rank": 2572
+      "rank": 2569
     },
     {
       "ticker": "009730",
@@ -46364,7 +46313,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "철강·금속"
       ],
-      "rank": 2573
+      "rank": 2570
     },
     {
       "ticker": "254160",
@@ -46382,7 +46331,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "건설·건자재"
       ],
-      "rank": 2574
+      "rank": 2571
     },
     {
       "ticker": "308100",
@@ -46400,7 +46349,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "유통·소비재"
       ],
-      "rank": 2575
+      "rank": 2572
     },
     {
       "ticker": "028080",
@@ -46418,7 +46367,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "지주"
       ],
-      "rank": 2576
+      "rank": 2573
     },
     {
       "ticker": "191410",
@@ -46436,7 +46385,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "전자·부품"
       ],
-      "rank": 2577
+      "rank": 2574
     },
     {
       "ticker": "217320",
@@ -46454,7 +46403,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기계·장비"
       ],
-      "rank": 2578
+      "rank": 2575
     },
     {
       "ticker": "030350",
@@ -46472,7 +46421,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "게임"
       ],
-      "rank": 2579
+      "rank": 2576
     },
     {
       "ticker": "312610",
@@ -46490,7 +46439,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "철강·금속"
       ],
-      "rank": 2580
+      "rank": 2577
     },
     {
       "ticker": "199730",
@@ -46508,7 +46457,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "바이오·제약"
       ],
-      "rank": 2581
+      "rank": 2578
     },
     {
       "ticker": "083660",
@@ -46526,7 +46475,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "화학"
       ],
-      "rank": 2582
+      "rank": 2579
     },
     {
       "ticker": "096870",
@@ -46544,7 +46493,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "반도체"
       ],
-      "rank": 2583
+      "rank": 2580
     },
     {
       "ticker": "379390",
@@ -46562,7 +46511,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "IT·소프트웨어"
       ],
-      "rank": 2584
+      "rank": 2581
     },
     {
       "ticker": "227100",
@@ -46580,7 +46529,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "부동산·리츠"
       ],
-      "rank": 2585
+      "rank": 2582
     },
     {
       "ticker": "900120",
@@ -46598,7 +46547,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "금융"
       ],
-      "rank": 2586
+      "rank": 2583
     },
     {
       "ticker": "092600",
@@ -46616,7 +46565,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "반도체"
       ],
-      "rank": 2587
+      "rank": 2584
     },
     {
       "ticker": "250930",
@@ -46634,7 +46583,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "화학"
       ],
-      "rank": 2588
+      "rank": 2585
     },
     {
       "ticker": "233250",
@@ -46652,7 +46601,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "바이오·제약"
       ],
-      "rank": 2589
+      "rank": 2586
     },
     {
       "ticker": "065420",
@@ -46670,7 +46619,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "화학"
       ],
-      "rank": 2590
+      "rank": 2587
     },
     {
       "ticker": "361670",
@@ -46688,7 +46637,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "전자·부품"
       ],
-      "rank": 2591
+      "rank": 2588
     },
     {
       "ticker": "177350",
@@ -46706,7 +46655,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "화학"
       ],
-      "rank": 2592
+      "rank": 2589
     },
     {
       "ticker": "154040",
@@ -46724,7 +46673,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "전자·부품"
       ],
-      "rank": 2593
+      "rank": 2590
     },
     {
       "ticker": "208850",
@@ -46742,7 +46691,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기계·장비"
       ],
-      "rank": 2594
+      "rank": 2591
     },
     {
       "ticker": "351020",
@@ -46760,7 +46709,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "섬유·패션·생활"
       ],
-      "rank": 2595
+      "rank": 2592
     },
     {
       "ticker": "079190",
@@ -46778,7 +46727,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "전자·부품"
       ],
-      "rank": 2596
+      "rank": 2593
     },
     {
       "ticker": "079950",
@@ -46796,7 +46745,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "반도체"
       ],
-      "rank": 2597
+      "rank": 2594
     },
     {
       "ticker": "060260",
@@ -46814,7 +46763,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "화학"
       ],
-      "rank": 2598
+      "rank": 2595
     },
     {
       "ticker": "043590",
@@ -46832,7 +46781,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "반도체"
       ],
-      "rank": 2599
+      "rank": 2596
     },
     {
       "ticker": "352770",
@@ -46850,7 +46799,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "바이오·제약"
       ],
-      "rank": 2600
+      "rank": 2597
     },
     {
       "ticker": "244460",
@@ -46868,7 +46817,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "바이오·제약"
       ],
-      "rank": 2601
+      "rank": 2598
     },
     {
       "ticker": "456190",
@@ -46886,7 +46835,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "바이오·제약"
       ],
-      "rank": 2602
+      "rank": 2599
     },
     {
       "ticker": "368970",
@@ -46904,7 +46853,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "식음료"
       ],
-      "rank": 2603
+      "rank": 2600
     },
     {
       "ticker": "002680",
@@ -46922,7 +46871,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "식음료"
       ],
-      "rank": 2604
+      "rank": 2601
     },
     {
       "ticker": "088290",
@@ -46940,7 +46889,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "항공·방산"
       ],
-      "rank": 2605
+      "rank": 2602
     },
     {
       "ticker": "217880",
@@ -46958,7 +46907,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "IT·소프트웨어"
       ],
-      "rank": 2606
+      "rank": 2603
     },
     {
       "ticker": "149010",
@@ -46976,7 +46925,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "반도체"
       ],
-      "rank": 2607
+      "rank": 2604
     },
     {
       "ticker": "253610",
@@ -46994,7 +46943,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "유통·소비재"
       ],
-      "rank": 2608
+      "rank": 2605
     },
     {
       "ticker": "012340",
@@ -47012,7 +46961,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "전자·부품"
       ],
-      "rank": 2609
+      "rank": 2606
     },
     {
       "ticker": "054180",
@@ -47030,7 +46979,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "전기장비"
       ],
-      "rank": 2610
+      "rank": 2607
     },
     {
       "ticker": "224760",
@@ -47048,7 +46997,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "건설·건자재"
       ],
-      "rank": 2611
+      "rank": 2608
     },
     {
       "ticker": "225430",
@@ -47066,7 +47015,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "바이오·제약"
       ],
-      "rank": 2612
+      "rank": 2609
     },
     {
       "ticker": "065570",
@@ -47084,7 +47033,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "전자·부품"
       ],
-      "rank": 2613
+      "rank": 2610
     },
     {
       "ticker": "084180",
@@ -47102,7 +47051,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "미디어·엔터"
       ],
-      "rank": 2614
+      "rank": 2611
     },
     {
       "ticker": "025870",
@@ -47120,7 +47069,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "유통·소비재"
       ],
-      "rank": 2615
+      "rank": 2612
     },
     {
       "ticker": "419540",
@@ -47138,7 +47087,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "전기장비"
       ],
-      "rank": 2616
+      "rank": 2613
     },
     {
       "ticker": "050090",
@@ -47156,7 +47105,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "지주"
       ],
-      "rank": 2617
+      "rank": 2614
     },
     {
       "ticker": "008500",
@@ -47174,7 +47123,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "섬유·패션·생활"
       ],
-      "rank": 2618
+      "rank": 2615
     },
     {
       "ticker": "060240",
@@ -47192,7 +47141,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "전기장비"
       ],
-      "rank": 2619
+      "rank": 2616
     },
     {
       "ticker": "176590",
@@ -47210,7 +47159,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "화학"
       ],
-      "rank": 2620
+      "rank": 2617
     },
     {
       "ticker": "069920",
@@ -47228,7 +47177,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "유통·소비재"
       ],
-      "rank": 2621
+      "rank": 2618
     },
     {
       "ticker": "289170",
@@ -47246,7 +47195,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "식음료"
       ],
-      "rank": 2622
+      "rank": 2619
     },
     {
       "ticker": "035290",
@@ -47264,7 +47213,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "미디어·엔터"
       ],
-      "rank": 2623
+      "rank": 2620
     },
     {
       "ticker": "008290",
@@ -47282,7 +47231,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "섬유·패션·생활"
       ],
-      "rank": 2624
+      "rank": 2621
     },
     {
       "ticker": "043100",
@@ -47300,7 +47249,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "전기장비"
       ],
-      "rank": 2625
+      "rank": 2622
     },
     {
       "ticker": "073190",
@@ -47318,7 +47267,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "섬유·패션·생활"
       ],
-      "rank": 2626
+      "rank": 2623
     },
     {
       "ticker": "009620",
@@ -47336,7 +47285,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "철강·금속"
       ],
-      "rank": 2627
+      "rank": 2624
     },
     {
       "ticker": "011080",
@@ -47354,7 +47303,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "섬유·패션·생활"
       ],
-      "rank": 2628
+      "rank": 2625
     },
     {
       "ticker": "238500",
@@ -47372,7 +47321,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 2629
+      "rank": 2626
     },
     {
       "ticker": "244880",
@@ -47390,7 +47339,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "전기장비"
       ],
-      "rank": 2630
+      "rank": 2627
     },
     {
       "ticker": "103660",
@@ -47408,7 +47357,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "화학"
       ],
-      "rank": 2631
+      "rank": 2628
     },
     {
       "ticker": "341170",
@@ -47426,7 +47375,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "바이오·제약"
       ],
-      "rank": 2632
+      "rank": 2629
     },
     {
       "ticker": "106080",
@@ -47444,7 +47393,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "전자·부품"
       ],
-      "rank": 2633
+      "rank": 2630
     },
     {
       "ticker": "145210",
@@ -47462,7 +47411,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기계·장비"
       ],
-      "rank": 2634
+      "rank": 2631
     },
     {
       "ticker": "121850",
@@ -47480,7 +47429,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "화학"
       ],
-      "rank": 2635
+      "rank": 2632
     },
     {
       "ticker": "178600",
@@ -47498,7 +47447,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "식음료"
       ],
-      "rank": 2636
+      "rank": 2633
     },
     {
       "ticker": "236340",
@@ -47516,7 +47465,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "바이오·제약"
       ],
-      "rank": 2637
+      "rank": 2634
     },
     {
       "ticker": "204210",
@@ -47534,7 +47483,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "부동산·리츠"
       ],
-      "rank": 2638
+      "rank": 2635
     },
     {
       "ticker": "189350",
@@ -47552,7 +47501,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "전자·부품"
       ],
-      "rank": 2639
+      "rank": 2636
     },
     {
       "ticker": "185190",
@@ -47570,7 +47519,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "유통·소비재"
       ],
-      "rank": 2640
+      "rank": 2637
     },
     {
       "ticker": "114920",
@@ -47588,7 +47537,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "화학"
       ],
-      "rank": 2641
+      "rank": 2638
     },
     {
       "ticker": "309930",
@@ -47606,7 +47555,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "유통·소비재"
       ],
-      "rank": 2642
+      "rank": 2639
     },
     {
       "ticker": "302920",
@@ -47624,7 +47573,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "미디어·엔터"
       ],
-      "rank": 2643
+      "rank": 2640
     },
     {
       "ticker": "236030",
@@ -47642,7 +47591,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "식음료"
       ],
-      "rank": 2644
+      "rank": 2641
     },
     {
       "ticker": "079970",
@@ -47660,7 +47609,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "IT·소프트웨어"
       ],
-      "rank": 2645
+      "rank": 2642
     },
     {
       "ticker": "212310",
@@ -47678,7 +47627,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "전기장비"
       ],
-      "rank": 2646
+      "rank": 2643
     },
     {
       "ticker": "066830",
@@ -47696,7 +47645,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "화학"
       ],
-      "rank": 2647
+      "rank": 2644
     },
     {
       "ticker": "276040",
@@ -47714,7 +47663,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "게임"
       ],
-      "rank": 2648
+      "rank": 2645
     },
     {
       "ticker": "199150",
@@ -47732,7 +47681,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "IT·소프트웨어"
       ],
-      "rank": 2649
+      "rank": 2646
     },
     {
       "ticker": "101390",
@@ -47750,7 +47699,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "전자·부품"
       ],
-      "rank": 2650
+      "rank": 2647
     },
     {
       "ticker": "199290",
@@ -47768,7 +47717,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "전기장비"
       ],
-      "rank": 2651
+      "rank": 2648
     },
     {
       "ticker": "251280",
@@ -47786,7 +47735,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "바이오·제약"
       ],
-      "rank": 2652
+      "rank": 2649
     },
     {
       "ticker": "332190",
@@ -47804,7 +47753,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "전기장비"
       ],
-      "rank": 2653
+      "rank": 2650
     },
     {
       "ticker": "234070",
@@ -47822,7 +47771,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 2654
+      "rank": 2651
     },
     {
       "ticker": "447690",
@@ -47840,7 +47789,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "전기장비"
       ],
-      "rank": 2655
+      "rank": 2652
     },
     {
       "ticker": "202960",
@@ -47858,7 +47807,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "미디어·엔터"
       ],
-      "rank": 2656
+      "rank": 2653
     },
     {
       "ticker": "276240",
@@ -47876,7 +47825,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "전자·부품"
       ],
-      "rank": 2657
+      "rank": 2654
     },
     {
       "ticker": "267080",
@@ -47894,7 +47843,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "식음료"
       ],
-      "rank": 2658
+      "rank": 2655
     },
     {
       "ticker": "121060",
@@ -47912,7 +47861,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "IT·소프트웨어"
       ],
-      "rank": 2659
+      "rank": 2656
     },
     {
       "ticker": "224810",
@@ -47930,7 +47879,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "유통·소비재"
       ],
-      "rank": 2660
+      "rank": 2657
     },
     {
       "ticker": "215570",
@@ -47948,7 +47897,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "바이오·제약"
       ],
-      "rank": 2661
+      "rank": 2658
     },
     {
       "ticker": "044180",
@@ -47966,7 +47915,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "건설·건자재"
       ],
-      "rank": 2662
+      "rank": 2659
     },
     {
       "ticker": "318660",
@@ -47984,7 +47933,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "IT·소프트웨어"
       ],
-      "rank": 2663
+      "rank": 2660
     },
     {
       "ticker": "313760",
@@ -48002,7 +47951,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기계·장비"
       ],
-      "rank": 2664
+      "rank": 2661
     },
     {
       "ticker": "266350",
@@ -48020,7 +47969,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "게임"
       ],
-      "rank": 2665
+      "rank": 2662
     },
     {
       "ticker": "258050",
@@ -48038,7 +47987,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기계·장비"
       ],
-      "rank": 2666
+      "rank": 2663
     },
     {
       "ticker": "327610",
@@ -48056,7 +48005,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "바이오·제약"
       ],
-      "rank": 2667
+      "rank": 2664
     },
     {
       "ticker": "346010",
@@ -48074,7 +48023,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "전자·부품"
       ],
-      "rank": 2668
+      "rank": 2665
     },
     {
       "ticker": "311960",
@@ -48092,7 +48041,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "IT·소프트웨어"
       ],
-      "rank": 2669
+      "rank": 2666
     },
     {
       "ticker": "043090",
@@ -48110,7 +48059,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "유통·소비재"
       ],
-      "rank": 2670
+      "rank": 2667
     },
     {
       "ticker": "266470",
@@ -48128,7 +48077,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "바이오·제약"
       ],
-      "rank": 2671
+      "rank": 2668
     },
     {
       "ticker": "116100",
@@ -48146,7 +48095,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "자동차"
       ],
-      "rank": 2672
+      "rank": 2669
     },
     {
       "ticker": "052770",
@@ -48164,7 +48113,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "IT·소프트웨어"
       ],
-      "rank": 2673
+      "rank": 2670
     },
     {
       "ticker": "217910",
@@ -48182,7 +48131,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "화학"
       ],
-      "rank": 2674
+      "rank": 2671
     },
     {
       "ticker": "299480",
@@ -48200,7 +48149,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "섬유·패션·생활"
       ],
-      "rank": 2675
+      "rank": 2672
     },
     {
       "ticker": "092590",
@@ -48218,7 +48167,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "반도체"
       ],
-      "rank": 2676
+      "rank": 2673
     },
     {
       "ticker": "136660",
@@ -48236,7 +48185,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "반도체"
       ],
-      "rank": 2677
+      "rank": 2674
     },
     {
       "ticker": "208890",
@@ -48254,7 +48203,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 2678
+      "rank": 2675
     },
     {
       "ticker": "223220",
@@ -48272,7 +48221,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "운송·물류"
       ],
-      "rank": 2679
+      "rank": 2676
     },
     {
       "ticker": "402420",
@@ -48290,7 +48239,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "전기장비"
       ],
-      "rank": 2680
+      "rank": 2677
     },
     {
       "ticker": "140910",
@@ -48308,7 +48257,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "부동산·리츠"
       ],
-      "rank": 2681
+      "rank": 2678
     },
     {
       "ticker": "390110",
@@ -48326,7 +48275,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "바이오·제약"
       ],
-      "rank": 2682
+      "rank": 2679
     },
     {
       "ticker": "093510",
@@ -48344,7 +48293,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "자동차"
       ],
-      "rank": 2683
+      "rank": 2680
     },
     {
       "ticker": "413300",
@@ -48362,7 +48311,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 2684
+      "rank": 2681
     },
     {
       "ticker": "140660",
@@ -48380,7 +48329,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "통신"
       ],
-      "rank": 2685
+      "rank": 2682
     },
     {
       "ticker": "245450",
@@ -48398,7 +48347,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "전자·부품"
       ],
-      "rank": 2686
+      "rank": 2683
     },
     {
       "ticker": "448780",
@@ -48416,7 +48365,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "전자·부품"
       ],
-      "rank": 2687
+      "rank": 2684
     },
     {
       "ticker": "296520",
@@ -48434,7 +48383,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "유통·소비재"
       ],
-      "rank": 2688
+      "rank": 2685
     },
     {
       "ticker": "266170",
@@ -48452,7 +48401,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "미디어·엔터"
       ],
-      "rank": 2689
+      "rank": 2686
     },
     {
       "ticker": "279060",
@@ -48470,7 +48419,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "전기장비"
       ],
-      "rank": 2690
+      "rank": 2687
     },
     {
       "ticker": "230980",
@@ -48488,7 +48437,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "IT·소프트웨어"
       ],
-      "rank": 2691
+      "rank": 2688
     }
   ]
 };
