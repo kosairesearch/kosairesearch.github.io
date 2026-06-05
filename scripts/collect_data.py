@@ -1224,13 +1224,27 @@ def main():
         log_summary(f"❌ 시가총액>0 종목 {mcap_ok}/{len(results)}개로 비정상(DART 수집 실패 추정) — stocks.js 갱신 건너뜀, 기존 데이터 유지")
         sys.exit(1)
 
-    # 기존 universe와 병합: 새로 수집한 종목은 갱신하고, 이번에 안 건드린 종목은 보존.
-    # (SECTOR_MAP만 도는 일일 실행이 전체 universe를 100개로 줄이지 않도록)
+    # 병합/상폐 처리:
+    #  - 전 종목 캐시 수집 성공(≥500개): 현재 listing이 완전하므로 캐시에 없는 종목은
+    #    상장폐지로 보고 제거(자동 정리). 단 비정상적으로 많이 사라지면 보류(캐시 이상 방지).
+    #  - 소량 수집(폴백): 유니버스가 불완전하므로 기존과 병합 보존.
     existing = load_existing_stocks()
     before = len(existing)
-    existing.update(results)
-    log_summary(f"- 병합: 기존 {before}개 + 신규수집 {len(results)}개 → {len(existing)}개")
-    results = existing
+    if len(results) >= 500:
+        dropped = [tk for tk in existing if tk not in results]
+        if len(dropped) > 150:
+            log_summary(f"- ⚠️ 사라진 종목 {len(dropped)}개로 과다 — 상폐 제외 보류, 병합 보존")
+            existing.update(results)
+            results = existing
+        else:
+            if dropped:
+                names = [existing[t].get("name", t) for t in dropped]
+                log_summary(f"- 상장폐지/제외 {len(dropped)}개 제거: {names[:15]}")
+            log_summary(f"- 전 종목 수집 {len(results)}개(기존 {before}) — 상폐 자동 정리 적용")
+    else:
+        existing.update(results)
+        log_summary(f"- 병합(폴백): 기존 {before}개 + 신규수집 {len(results)}개 → {len(existing)}개")
+        results = existing
 
     count = build_output(results, date)
     log_summary(f"- 최종 출력: {count}개 종목")
