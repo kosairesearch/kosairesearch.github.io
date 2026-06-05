@@ -771,6 +771,9 @@ KOSi18n.register({
 </style>
 </head>
 <body>
+<script src="data/stocks.js"></script>
+<script src="data/reports.js"></script>
+<script src="data/sectors.js"></script>
 
 <!-- NAV -->
 <nav class="nav glass" data-screen-label="Industry · Nav">
@@ -799,370 +802,49 @@ KOSi18n.register({
 </div>
 
 <div class="wrap" data-screen-label="04 Industry">
-
-  <div class="crumb">홈 / 업종별 / <b>반도체</b></div>
-
-  <!-- SWITCHER -->
-  <div class="switcher">
-    <span class="sw-label">업종</span>
-    <div class="sw-chips" id="swChips">
-      <button class="sw-chip active">반도체</button>
-      <button class="sw-chip">디스플레이</button>
-      <button class="sw-chip">2차전지</button>
-      <button class="sw-chip">자동차</button>
-      <button class="sw-chip">바이오·제약</button>
-      <button class="sw-chip">금융</button>
-      <button class="sw-chip">철강·소재</button>
-      <button class="sw-chip">로봇</button>
-      <button class="sw-chip">건설</button>
-      <button class="sw-chip">유통·소비재</button>
-      <button class="sw-chip">IT 서비스·SW</button>
-      <button class="sw-chip">통신</button>
-      <button class="sw-chip">조선·기계</button>
-      <button class="sw-chip extra hide">화학·소재</button>
-      <button class="sw-chip extra hide">전자장비·부품</button>
-      <button class="sw-chip extra hide">게임</button>
-      <button class="sw-chip extra hide">미디어·엔터</button>
-      <button class="sw-chip extra hide">운송·물류</button>
-      <button class="sw-chip extra hide">식음료</button>
-      <button class="sw-chip extra hide">제약·헬스케어</button>
-      <button class="sw-chip extra hide">증권·보험</button>
-      <button class="sw-chip extra hide">리츠·부동산</button>
-      <button class="sw-chip more" id="swMore">더보기 ▾</button>
-    </div>
-  </div>
-
-  <!-- ① HEADER -->
-  <header class="head glass">
-    <div class="head-id">
-      <span>종목 수 118개</span>
-    </div>
-    <h1 class="ind-name">반도체</h1>
-    <p class="head-desc">메모리·시스템반도체·파운드리·후공정(OSAT)·소부장(소재·부품·장비)을 포괄하는 한국 증시의 핵심 산업군. 글로벌 사이클·환율·AI 가속기 수요에 가장 민감하게 반응하는 업종이다.</p>
-
-    <div class="kpi-grid">
-      <div class="kpi"><div class="lbl">업종 시가총액 합계</div><div class="val">724.3조</div><div class="peer">전체 시장의 <b>32.4%</b></div></div>
-      <div class="kpi"><div class="lbl">종목 수</div><div class="val">118개</div><div class="peer">코스피 78 · 코스닥 40</div></div>
-      <div class="kpi"><div class="lbl">거래대금 합계</div><div class="val">8.4조</div><div class="peer">시장 거래대금의 <b>21%</b></div></div>
-      <div class="kpi"><div class="lbl">평균 등락률</div><div class="val">+1.84%</div><div class="peer">KOSPI 대비 +0.92%p</div></div>
-      <div class="kpi"><div class="lbl">상승 종목</div><div class="val">72개</div><div class="peer">전체 118개 중</div></div>
-      <div class="kpi"><div class="lbl">하락 종목</div><div class="val">46개</div><div class="peer">보합 0개</div></div>
-      <div class="kpi"><div class="lbl">시가총액 1위</div><div class="val">삼성전자</div><div class="peer">업종 내 비중 <b>54%</b></div></div>
-      <div class="kpi"><div class="lbl">시장 비중</div><div class="val">32.4%</div><div class="peer">전체 시가총액 대비</div></div>
-    </div>
-
-    <div class="ret-strip">
-      <div class="ret"><div class="lbl">오늘</div><div class="val up">+1.84%</div><div class="sub">KOSPI 대비 +0.92%p</div></div>
-      <div class="ret"><div class="lbl">1개월</div><div class="val up">+6.21%</div><div class="sub">KOSPI 대비 +2.84%p</div></div>
-      <div class="ret"><div class="lbl">3개월</div><div class="val up">+14.85%</div><div class="sub">KOSPI 대비 +9.17%p</div></div>
-      <div class="ret"><div class="lbl">12개월</div><div class="val up">+22.40%</div><div class="sub">KOSPI 대비 +11.02%p</div></div>
-    </div>
-  </header>
-
-  <!-- ② 한눈에 보기 -->
-  <section class="sec col-wide">
-    <div class="sec-kicker"><span class="sec-num">01</span> · AT A GLANCE</div>
-    <h2 class="sec-title">한눈에 보기</h2>
-
-    <div class="card glass" style="margin-bottom:18px">
-      <div class="card-title">
-        <span>업종 지수 vs KOSPI · 1년 비교 (정규화 100)</span>
-        <span class="legend"><span><i></i>반도체 업종</span><span><i class="dash"></i>KOSPI</span></span>
-      </div>
-      <div class="chart">
-        <span class="yl" style="top:8%">140</span><span class="yl" style="top:50%">120</span><span class="yl" style="top:92%">100</span>
-        <svg viewBox="0 0 1000 280" preserveAspectRatio="none">
-          <polyline fill="none" stroke="var(--fg-3)" stroke-width="2" stroke-dasharray="6 6" stroke-linejoin="round"
-            points="0,226 80,221 160,215 240,211 320,213 400,205 480,196 560,194 640,181 720,172 800,162 880,155 960,148"/>
-          <polyline fill="none" stroke="var(--fg-1)" stroke-width="2.5" stroke-linejoin="round"
-            points="0,226 80,218 160,202 240,196 320,209 400,181 480,162 560,151 640,127 720,112 800,93 880,78 960,56"/>
-        </svg>
-        <span class="now-badge">업종 +22.4% · KOSPI +11.4%</span>
-      </div>
-      <div class="chart-x"><span>'25.05</span><span>'25.07</span><span>'25.09</span><span>'25.11</span><span>'26.01</span><span>'26.03</span><span>'26.05</span></div>
-    </div>
-
-    <div class="card glass">
-      <div class="card-title"><span>시가총액 상위 종목 트리맵 <span style="color:var(--fg-3);font-weight:500">· 크기=시총, 색=등락 방향</span></span></div>
-      <div class="tm-grid">
-        <div class="tm lg" style="background:var(--up-soft)"><div><div class="nm">삼성전자</div><div class="tk">005930</div></div><div class="b"><div class="mc">468.2조</div><div class="ch up">+1.55%</div></div></div>
-        <div class="tm" style="background:var(--up-soft)"><div><div class="nm">SK하이닉스</div><div class="tk">000660</div></div><div class="b"><div class="mc">142.6조</div><div class="ch up">+2.84%</div></div></div>
-        <div class="tm" style="background:var(--up-soft)"><div><div class="nm">한미반도체</div><div class="tk">042700</div></div><div class="b"><div class="mc">14.8조</div><div class="ch up">+1.12%</div></div></div>
-        <div class="tm" style="background:var(--down-soft)"><div><div class="nm">DB하이텍</div><div class="tk">000990</div></div><div class="b"><div class="mc">7.4조</div><div class="ch down">-0.84%</div></div></div>
-        <div class="tm" style="background:var(--up-soft)"><div><div class="nm">리노공업</div><div class="tk">058470</div></div><div class="b"><div class="mc">4.2조</div><div class="ch up">+0.42%</div></div></div>
-        <div class="tm" style="background:var(--up-soft)"><div><div class="nm">원익IPS</div><div class="tk">240810</div></div><div class="b"><div class="mc">3.6조</div><div class="ch up">+1.28%</div></div></div>
-        <div class="tm" style="background:var(--up-soft)"><div><div class="nm">동진쎄미켐</div><div class="tk">005290</div></div><div class="b"><div class="mc">2.8조</div><div class="ch up">+0.36%</div></div></div>
-        <div class="tm"><div><div class="nm">솔브레인</div><div class="tk">357780</div></div><div class="b"><div class="mc">2.4조</div><div class="ch flat">±0.00%</div></div></div>
-      </div>
-    </div>
-  </section>
-
-  <hr class="hairline" />
-
-  <!-- ③ 업종 구조 및 가치사슬 -->
-  <section class="sec">
-    <div class="col-narrow">
-      <div class="sec-kicker"><span class="sec-num">02</span> · STRUCTURE & VALUE CHAIN</div>
-      <h2 class="sec-title">업종 구조 및 가치사슬</h2>
-      <div class="prose">
-        <p>반도체 업종은 설계(Fabless·IDM)부터 생산(파운드리·IDM Fab)·후공정(OSAT)·장비·소재·테스트에 이르기까지 분업이 고도화된 산업이다. 한국 증시에 상장된 종목군은 크게 5개 카테고리로 분류된다. 메모리 IDM(삼성전자·SK하이닉스), 파운드리, 후공정(OSAT), 장비(소재 포함), 소재·부품으로 구분되며, 시가총액 기준 상위 2개사가 업종 전체의 약 <b>84%</b>를 차지하는 집중도 높은 구조를 보인다.</p>
-        <p>가치사슬 상류는 EDA 툴(시놉시스·케이던스)과 IP(ARM 등)가 위치하나 국내 상장사는 부재하다. 중상류에는 팹리스(LX세미콘·동운아나텍 등)와 IDM이 위치하며, 한국 증시에서는 메모리 IDM의 비중이 압도적이다. 중류의 파운드리는 삼성전자 비메모리·DB하이텍·키파운드리(비상장) 등이 포진해 있다.</p>
-        <p>하류로 갈수록 종목 수가 증가하는 구조이며, 후공정·장비·소재 영역에서 다수의 종목이 상장되어 있다. 후공정(OSAT)에는 SFA반도체·LB세미콘·ISC 등이, 장비에는 한미반도체·원익IPS·주성엔지니어링·테스 등이 포진해 있다. 소재·부품 카테고리에는 동진쎄미켐·솔브레인·SK머티리얼즈·이엔에프테크놀로지 등이 위치한다.</p>
-        <p>가치사슬상 한국이 글로벌 시장점유율 30% 이상을 점유하는 영역은 메모리(DRAM·NAND), HBM, 일부 후공정 장비(웨이퍼 본더 등)이다. 반대로 설계자산(EDA·IP), 첨단 노광장비(EUV), 일부 첨단 소재(EUV 포토레지스트)는 해외 의존도가 높은 영역으로 남아 있다.</p>
-        <p>업종 분석 시 유의할 점은 각 단계 종목의 사이클 반응이 시차를 두고 나타난다는 것이다. 통상 메모리 IDM의 실적이 가장 먼저 변동하고, 약 1~2개 분기 시차를 두고 장비·소재로 사이클 영향이 전파된다. 따라서 동일 업종 내 종목 간에도 사이클 위치에 따른 상대 강도 차이가 발생한다.</p>
-      </div>
-    </div>
-    <div class="col-wide" style="margin-top:24px">
-      <div class="vc card glass">
-        <div class="vc-row"><div class="vc-stage"><span class="num">1</span>설계</div><div class="vc-body">
-          <span class="vc-chip">LX세미콘</span><span class="vc-chip">동운아나텍</span></div></div>
-        <div class="vc-row"><div class="vc-stage"><span class="num">2</span>IDM·메모리</div><div class="vc-body">
-          <span class="vc-chip">삼성전자</span><span class="vc-chip">SK하이닉스</span></div></div>
-        <div class="vc-row"><div class="vc-stage"><span class="num">3</span>파운드리</div><div class="vc-body">
-          <span class="vc-chip">삼성 파운드리</span><span class="vc-chip">DB하이텍</span></div></div>
-        <div class="vc-row"><div class="vc-stage"><span class="num">4</span>후공정(OSAT)</div><div class="vc-body">
-          <span class="vc-chip">SFA반도체</span><span class="vc-chip">LB세미콘</span><span class="vc-chip">ISC</span><span class="vc-chip">하나마이크론</span></div></div>
-        <div class="vc-row"><div class="vc-stage"><span class="num">5</span>장비</div><div class="vc-body">
-          <span class="vc-chip">한미반도체</span><span class="vc-chip">원익IPS</span><span class="vc-chip">주성엔지니어링</span><span class="vc-chip">테스</span></div></div>
-        <div class="vc-row"><div class="vc-stage"><span class="num">6</span>소재·부품</div><div class="vc-body">
-          <span class="vc-chip">동진쎄미켐</span><span class="vc-chip">솔브레인</span><span class="vc-chip">SK머티리얼즈</span><span class="vc-chip">이엔에프테크놀로지</span><span class="vc-chip">리노공업</span></div></div>
-      </div>
-    </div>
-  </section>
-
-  <hr class="hairline" />
-
-  <!-- ④ 최근 업황 및 사이클 위치 -->
-  <section class="sec">
-    <div class="col-narrow">
-      <div class="sec-kicker"><span class="sec-num">03</span> · CYCLE POSITION</div>
-      <h2 class="sec-title">최근 업황 및 사이클 위치</h2>
-      <div class="prose">
-        <p>반도체 업종은 2024년 하반기 이후 메모리 가격 회복 사이클의 본격적 상승 국면에 진입한 것으로 평가된다. 2025년 1분기를 기점으로 DRAM·NAND 현물가격이 7개 분기 연속 상승세를 이어가고 있으며, 업종 합산 영업이익은 2024년 하반기 대비 2025년 3분기까지 약 <b>+180% y-y</b> 증가하였다. AI 가속기 수요 확대에 따른 HBM 출하 증가가 사이클 회복의 핵심 동인으로 작용하였다.</p>
-        <p>업종 가시성 측면에서는 메모리 가격이 정점 부근에 위치한다는 시장 의견과, 사이클 상승 여력이 추가로 존재한다는 의견이 분기되고 있다. 정점론은 DDR5 ASP 상승률이 2025년 4분기 이후 둔화되는 흐름과, 중국 CXMT의 DDR5 공급 확대 가능성을 근거로 제기된다. 반대로 사이클 연장론은 글로벌 빅3의 절제된 CAPEX 기조와 AI 인프라 투자 지속을 근거로 제시된다.</p>
-        <p>후공정·장비 부문은 메모리 IDM 대비 약 1~2개 분기 시차를 두고 사이클 회복이 전파되는 패턴을 보여왔다. 2025년 3분기 기준 한미반도체·원익IPS 등 주요 장비 종목의 분기 매출은 전년동기 대비 +40~70% y-y 증가하였으며, HBM 본더 등 AI 관련 장비 수요가 차별적 성장을 주도하고 있다. 다만 일부 범용 장비 종목은 회복 강도가 상대적으로 약한 모습이다.</p>
-        <p>소재·부품 부문은 가동률 회복과 동행하는 구조이나, 전공정 소재(포토레지스트·CMP 슬러리·전구체)는 첨단 공정 전환에 따른 단가 상승 효과가 추가되어 IDM 대비 마진 변동성이 상대적으로 낮은 편이다. 다만 일본·미국 의존도가 높은 일부 소재 카테고리는 환율·수입 단가 변동에 노출되어 있다.</p>
-      </div>
-    </div>
-    <div class="col-wide" style="margin-top:24px">
-      <div class="card glass">
-        <div class="card-title">
-          <span>업종 분기 합산 매출·영업이익 추이 (조원) · 12개 분기</span>
-          <span class="legend"><span><i></i>매출</span><span><i class="dash"></i>영업이익</span></span>
-        </div>
-        <div class="chart">
-          <span class="yl" style="top:6%">200</span><span class="yl" style="top:50%">100</span><span class="yl" style="top:92%">0</span>
-          <svg viewBox="0 0 1000 280" preserveAspectRatio="none">
-            <g fill="var(--fg-1)" opacity="0.16">
-              <rect x="14" y="132" width="58" height="146" rx="3"/><rect x="94" y="140" width="58" height="138" rx="3"/><rect x="174" y="130" width="58" height="148" rx="3"/><rect x="254" y="136" width="58" height="142" rx="3"/>
-              <rect x="334" y="120" width="58" height="158" rx="3"/><rect x="414" y="108" width="58" height="170" rx="3"/><rect x="494" y="100" width="58" height="178" rx="3"/><rect x="574" y="110" width="58" height="168" rx="3"/>
-              <rect x="654" y="94" width="58" height="184" rx="3"/><rect x="734" y="80" width="58" height="198" rx="3"/><rect x="814" y="66" width="58" height="212" rx="3"/><rect x="894" y="50" width="58" height="228" rx="3"/>
-            </g>
-            <polyline fill="none" stroke="var(--fg-1)" stroke-width="2.5" stroke-dasharray="6 6"
-              points="43,250 123,246 203,239 283,235 363,226 443,202 523,191 603,198 683,174 763,150 843,126 923,96"/>
-            <g fill="var(--fg-1)">
-              <circle cx="43" cy="250" r="3"/><circle cx="123" cy="246" r="3"/><circle cx="203" cy="239" r="3"/><circle cx="283" cy="235" r="3"/><circle cx="363" cy="226" r="3"/><circle cx="443" cy="202" r="3"/>
-              <circle cx="523" cy="191" r="3"/><circle cx="603" cy="198" r="3"/><circle cx="683" cy="174" r="3"/><circle cx="763" cy="150" r="3"/><circle cx="843" cy="126" r="3"/><circle cx="923" cy="96" r="3"/>
-            </g>
-          </svg>
-        </div>
-        <div class="chart-x"><span>1Q23</span><span>3Q23</span><span>1Q24</span><span>3Q24</span><span>1Q25</span><span>3Q25</span><span>4Q25E</span></div>
-        <div class="foot-note">출처: 동 업종 상장사 합산 (DART) · 4Q25E는 FnGuide 컨센서스 평균</div>
-      </div>
-    </div>
-  </section>
-
-  <hr class="hairline" />
-
-  <!-- ⑤ 강세 요인 -->
-  <section class="sec">
-    <div class="col-narrow">
-      <div class="sec-kicker"><span class="sec-num">04</span> · BULL FACTORS</div>
-      <h2 class="sec-title">강세 요인</h2>
-      <div class="factor bull"><p class="fh"><span class="mk">▲</span>AI 인프라 투자 확대에 따른 HBM 수요 강세</p><p>글로벌 클라우드 사업자(Microsoft·Google·Meta·Amazon)의 2026년 CAPEX 가이던스는 전년 대비 평균 +18% y-y 증가하는 수준으로 제시되었다. 이는 AI 가속기 출하 확대로 연결되며, HBM3E·HBM4 수요는 2026년에도 공급 부족 국면이 지속될 전망이다. 한국 메모리 IDM 2개사의 HBM 합산 점유율은 2025년 기준 약 92%로 추정된다.</p></div>
-      <div class="factor bull"><p class="fh"><span class="mk">▲</span>메모리 가격 회복 사이클의 지속 가능성</p><p>DRAM 현물가격은 2024년 4분기 이후 7개 분기 연속 상승세를 이어가고 있다. 글로벌 빅3(삼성전자·SK하이닉스·마이크론)의 합산 CAPEX는 2025년 약 65조원 수준으로 절제된 기조를 유지하고 있어, 공급 측 압력은 제한적이다. 시장조사기관 TrendForce는 2026년 상반기까지 수급 타이트 국면이 지속될 가능성을 제시하고 있다.</p></div>
-      <div class="factor bull"><p class="fh"><span class="mk">▲</span>후공정·장비 부문의 사이클 후행 수혜</p><p>메모리 IDM의 가동률 회복이 후공정·장비 부문으로 약 1~2개 분기 시차를 두고 전파되는 패턴이 관찰된다. 2026년에는 HBM 본더, TC 본더, 어드밴스드 패키징 장비 수요가 차별적 성장을 보일 가능성이 거론된다. 한미반도체·한화정밀기계 등 HBM 관련 장비 종목의 2026년 매출 가시성은 비교적 높은 편으로 평가된다.</p></div>
-      <div class="factor bull"><p class="fh"><span class="mk">▲</span>원/달러 환율의 우호적 환경</p><p>원/달러 환율은 1,380~1,420원 범위에서 횡보 중이며, 업종 매출의 약 85%가 외화 표시인 점을 고려하면 영업 레버리지 효과가 지속되고 있다. 환율이 현 수준을 유지할 경우 2026년 업종 합산 영업이익에 약 8~12조원의 우호적 영향이 추정된다.</p></div>
-      <div class="factor bull"><p class="fh"><span class="mk">▲</span>차세대 기술 전환에 따른 ASP 상승 여지</p><p>DDR4에서 DDR5로의 전환은 동일 용량 기준 약 30~40% ASP 프리미엄을 동반하며, 전환율은 2025년 말 기준 약 55%로 추정된다. 또한 LPDDR5X·HBM4 등 차세대 제품의 본격 양산은 2026년 하반기로 예정되어 있어, 단가 상승 모멘텀이 단순 가격 회복 이상의 영향을 제공할 가능성이 있다.</p></div>
-    </div>
-  </section>
-
-  <hr class="hairline" />
-
-  <!-- ⑥ 약세 요인 -->
-  <section class="sec">
-    <div class="col-narrow">
-      <div class="sec-kicker"><span class="sec-num">05</span> · BEAR FACTORS</div>
-      <h2 class="sec-title">약세 요인</h2>
-      <div class="factor bear"><p class="fh"><span class="mk">▼</span>메모리 사이클의 단기 정점 우려</p><p>DRAM 가격 상승률은 2025년 3분기를 정점으로 둔화 흐름이 일부 관찰되고 있다. 일부 시장 참가자는 2026년 2분기 이후 사이클 정점 가능성을 거론하고 있으며, 이 경우 업종 합산 영업이익은 컨센서스 대비 10~15% 하향 조정 압력을 받을 가능성이 있다. 과거 4차례 메모리 사이클의 평균 상승 기간이 6~8개 분기였던 점을 고려하면 현 사이클은 후반 국면에 진입한 것으로도 해석될 수 있다.</p></div>
-      <div class="factor bear"><p class="fh"><span class="mk">▼</span>중국 메모리 업체의 추격 가속화</p><p>CXMT(창신메모리)는 2025년 DDR5 양산에 진입하였으며, YMTC는 232단 NAND 양산을 본격화한 것으로 알려져 있다. 중국 정부의 보조금 지원과 내수 수요 기반의 점유율 확대는 중장기적으로 한국 메모리 IDM의 가격 결정력에 부담 요인으로 작용할 수 있다. 시장조사기관 옴디아는 2027년 CXMT의 글로벌 DRAM 점유율이 8~10% 수준에 도달할 가능성을 제시하고 있다.</p></div>
-      <div class="factor bear"><p class="fh"><span class="mk">▼</span>미·중 수출 규제 강화 리스크</p><p>미국 상무부는 2025년 중국향 HBM 수출에 대한 추가 규제를 검토 중인 것으로 알려져 있다. 한국 반도체 업종의 중국향 매출 비중은 약 30%로 추정되며, 규제 강화 시 직접적 매출 영향이 발생할 수 있다. 첨단 공정 장비에 대한 미국의 대중 수출 통제 강화는 장기적 변수로 작용할 가능성이 있다.</p></div>
-      <div class="factor bear"><p class="fh"><span class="mk">▼</span>파운드리 부문의 구조적 손익 부담</p><p>국내 파운드리 사업은 TSMC 대비 첨단 공정 1~2세대 격차가 지속되고 있으며, 2024년 기준 합산 적자 규모는 약 5조원으로 추정된다. 가동률은 60% 중반대 수준에 머물고 있으며, 손익분기점(약 80%) 도달 시점에 대한 시장 가시성은 제한적이다.</p></div>
-      <div class="factor bear"><p class="fh"><span class="mk">▼</span>원화 강세 전환 시 이익 감소 위험</p><p>원/달러 환율이 1,300원 수준으로 하락할 경우, 업종 합산 영업이익은 약 6~10조원 감소할 가능성이 있다. 미국 연준의 금리 인하 사이클이 본격화될 경우 원화 강세 압력이 발생할 수 있어, 환율은 이익 변동성의 핵심 변수로 작용한다.</p></div>
-    </div>
-  </section>
-
-  <hr class="hairline" />
-
-  <!-- ⑦ 업종 내 주요 종목 -->
-  <section class="sec col-wide">
-    <div class="sec-kicker"><span class="sec-num">06</span> · KEY STOCKS</div>
-    <h2 class="sec-title">업종 내 주요 종목</h2>
-    <div class="stk-tabs" id="stkTabs">
-      <button class="stk-tab active" data-sort="mcap">시가총액순</button>
-      <button class="stk-tab" data-sort="change">등락률순</button>
-      <button class="stk-tab" data-sort="mcap2">거래대금순</button>
-      <span class="right">총 118개 종목 · 상위 12개 표시</span>
-    </div>
-    <div class="stk-grid" id="stkGrid" data-i18n-skip></div>
-  </section>
-
-  <hr class="hairline" />
-
-  <!-- ⑧ 세부 카테고리 -->
-  <section class="sec col-wide">
-    <div class="sec-kicker"><span class="sec-num">07</span> · SUB-CATEGORIES</div>
-    <h2 class="sec-title">세부 카테고리</h2>
-    <p class="sec-lead">반도체 업종은 가치사슬상 5개 하위 카테고리로 분류된다. 각 카테고리는 사이클 반응 시점과 마진 변동성이 상이하므로 별도 모니터링이 권장된다.</p>
-
-    <div class="subcat glass">
-      <div class="sc-head"><div class="sc-title">메모리 IDM</div><div class="sc-desc">DRAM·NAND·HBM 설계·생산을 통합 운영하는 종합 메모리 업체</div><div class="sc-cnt">2개 종목 · 합산 시총 610.8조</div></div>
-      <div class="sc-body">
-        <div class="sc-item"><span class="nm">삼성전자</span><span class="tk">005930</span><span class="mc">468.2조 · PER 19.5</span></div>
-        <div class="sc-item"><span class="nm">SK하이닉스</span><span class="tk">000660</span><span class="mc">142.6조 · PER 8.4</span></div>
-      </div>
-    </div>
-    <div class="subcat glass">
-      <div class="sc-head"><div class="sc-title">시스템반도체·파운드리</div><div class="sc-desc">팹리스 설계 및 위탁 생산. 8인치·12인치 레거시·첨단 공정 포함</div><div class="sc-cnt">14개 종목 · 합산 시총 12.6조</div></div>
-      <div class="sc-body">
-        <div class="sc-item"><span class="nm">DB하이텍</span><span class="tk">000990</span><span class="mc">7.4조 · PER 15.2</span></div>
-        <div class="sc-item"><span class="nm">LX세미콘</span><span class="tk">108320</span><span class="mc">1.3조 · PER 14.2</span></div>
-        <div class="sc-item"><span class="nm">동운아나텍</span><span class="tk">094170</span><span class="mc">0.8조 · PER 22.4</span></div>
-        <div class="sc-item"><span class="nm">텔레칩스</span><span class="tk">054450</span><span class="mc">0.6조 · PER 18.9</span></div>
-        <div class="sc-item more">+ 10개 종목 보기 →</div>
-      </div>
-    </div>
-    <div class="subcat glass">
-      <div class="sc-head"><div class="sc-title">후공정 (OSAT)</div><div class="sc-desc">패키징·테스트 외주 전문. 어드밴스드 패키징 영역 확장 중</div><div class="sc-cnt">18개 종목 · 합산 시총 8.4조</div></div>
-      <div class="sc-body">
-        <div class="sc-item"><span class="nm">ISC</span><span class="tk">095340</span><span class="mc">1.9조 · PER 21.4</span></div>
-        <div class="sc-item"><span class="nm">SFA반도체</span><span class="tk">036540</span><span class="mc">1.6조 · PER 11.8</span></div>
-        <div class="sc-item"><span class="nm">하나마이크론</span><span class="tk">067310</span><span class="mc">1.4조 · PER 16.8</span></div>
-        <div class="sc-item"><span class="nm">LB세미콘</span><span class="tk">061970</span><span class="mc">0.9조 · PER 24.5</span></div>
-        <div class="sc-item more">+ 14개 종목 보기 →</div>
-      </div>
-    </div>
-    <div class="subcat glass">
-      <div class="sc-head"><div class="sc-title">장비</div><div class="sc-desc">전·후공정 장비. HBM 본더 및 어드밴스드 패키징 장비 비중 확대</div><div class="sc-cnt">42개 종목 · 합산 시총 32.8조</div></div>
-      <div class="sc-body">
-        <div class="sc-item"><span class="nm">한미반도체</span><span class="tk">042700</span><span class="mc">14.8조 · PER 28.6</span></div>
-        <div class="sc-item"><span class="nm">원익IPS</span><span class="tk">240810</span><span class="mc">3.6조 · PER 22.1</span></div>
-        <div class="sc-item"><span class="nm">주성엔지니어링</span><span class="tk">036930</span><span class="mc">2.2조 · PER 19.6</span></div>
-        <div class="sc-item"><span class="nm">테스</span><span class="tk">095610</span><span class="mc">1.4조 · PER 17.4</span></div>
-        <div class="sc-item more">+ 38개 종목 보기 →</div>
-      </div>
-    </div>
-    <div class="subcat glass">
-      <div class="sc-head"><div class="sc-title">소재·부품</div><div class="sc-desc">포토레지스트·CMP 슬러리·전구체·테스트 소켓·프로브 등</div><div class="sc-cnt">42개 종목 · 합산 시총 21.6조</div></div>
-      <div class="sc-body">
-        <div class="sc-item"><span class="nm">리노공업</span><span class="tk">058470</span><span class="mc">4.2조 · PER 32.4</span></div>
-        <div class="sc-item"><span class="nm">동진쎄미켐</span><span class="tk">005290</span><span class="mc">2.8조 · PER 18.4</span></div>
-        <div class="sc-item"><span class="nm">솔브레인</span><span class="tk">357780</span><span class="mc">2.4조 · PER 16.8</span></div>
-        <div class="sc-item"><span class="nm">SK머티리얼즈</span><span class="tk">036490</span><span class="mc">2.1조 · PER 19.2</span></div>
-        <div class="sc-item more">+ 38개 종목 보기 →</div>
-      </div>
-    </div>
-  </section>
-
-  <hr class="hairline" />
-
-  <!-- ⑨ 업종 내 비교 -->
-  <section class="sec col-wide">
-    <div class="sec-kicker"><span class="sec-num">08</span> · PEER COMPARISON</div>
-    <h2 class="sec-title">업종 내 비교</h2>
-    <p class="sec-lead">시가총액 상위 8개 종목의 주요 지표를 업종 평균과 함께 정리했다. 업종 평균 대비 상위 항목은 <span style="background:var(--up-soft);padding:1px 6px;border-radius:4px">붉은 음영</span>, 하위 항목은 <span style="background:var(--down-soft);padding:1px 6px;border-radius:4px">푸른 음영</span>으로 표시했다.</p>
-    <div class="tbl-card glass">
-      <div class="tbl-scroll">
-        <table class="cmp">
-          <thead><tr><th>종목</th><th>시가총액(조)</th><th>현재가</th><th>등락률</th><th>거래대금(조)</th></tr></thead>
-          <tbody>
-            <tr><td><div class="nm">삼성전자</div><div class="tk">005930</div></td><td>2,065.9</td><td>349,000원</td><td class="hi">+5.84%</td><td>13.7</td></tr>
-            <tr><td><div class="nm">SK하이닉스</div><div class="tk">000660</div></td><td>1,698.0</td><td>2,333,000원</td><td class="hi">+1.92%</td><td>3.4</td></tr>
-            <tr><td><div class="nm">한미반도체</div><div class="tk">042700</div></td><td>26.6</td><td>282,000원</td><td class="lo">-3.59%</td><td>1.1</td></tr>
-            <tr><td><div class="nm">DB하이텍</div><div class="tk">000990</div></td><td>7.4</td><td>185,500원</td><td class="lo">-4.53%</td><td>0.3</td></tr>
-            <tr><td><div class="nm">리노공업</div><div class="tk">058470</div></td><td>4.2</td><td>97,400원</td><td class="lo">-1.72%</td><td>0.2</td></tr>
-            <tr><td><div class="nm">원익IPS</div><div class="tk">240810</div></td><td>3.6</td><td>36,750원</td><td class="hi">+1.28%</td><td>0.1</td></tr>
-            <tr><td><div class="nm">솔브레인</div><div class="tk">357780</div></td><td>2.4</td><td>312,500원</td><td class="">0.00%</td><td>0.1</td></tr>
-            <tr><td><div class="nm">에스에프에이</div><div class="tk">336370</div></td><td>1.9</td><td>42,700원</td><td class="hi">+1.05%</td><td>0.1</td></tr>
-          </tbody>
-        </table>
-      </div>
-    </div>
-    <div class="foot-note">출처: 컨센서스·DART · 2026-05-23 기준 · 영업이익 YoY는 2025년 3분기 누계 기준</div>
-  </section>
-
-  <hr class="hairline" />
-
-  <!-- ⑩ 추적할 만한 외부 지표 -->
-  <section class="sec col-wide">
-    <div class="sec-kicker"><span class="sec-num">09</span> · EXTERNAL INDICATORS</div>
-    <h2 class="sec-title">추적할 만한 외부 지표</h2>
-    <p class="sec-lead">반도체 업종 분석 시 함께 모니터링이 권장되는 지표이다. 업종 실적·주가에 선·동행적 신호를 제공할 가능성이 있는 변수들로 구성했다.</p>
-    <div class="macro-grid">
-      <div class="macro glass">
-        <div><div class="why">CYCLE LEADING · 사이클 선행</div><h4>DRAM 현물가격 (DDR4 8Gb)</h4><p>메모리 IDM 실적의 가장 선행적 지표. 통상 분기 실적 1~2개월 전 방향성을 시사하며, 7개 분기 연속 상승세가 이어지고 있다. 둔화 신호 발생 시 사이클 정점 가능성을 시사한다.</p></div>
-        <div class="mini-wrap"><div class="mini"><svg viewBox="0 0 360 84" preserveAspectRatio="none"><polyline fill="none" stroke="var(--up)" stroke-width="2" points="0,68 30,64 60,66 90,60 120,54 150,46 180,40 210,34 240,28 270,22 300,18 330,16 360,14"/></svg></div><div class="mini-meta"><span>'24.05</span><span>'26.05</span></div><div class="mini-now up">$2.86 · +84% YoY</div></div>
-      </div>
-      <div class="macro glass">
-        <div><div class="why">DEMAND PROXY · 수요 대용</div><h4>북미 클라우드 4사 CAPEX 합산</h4><p>MS·Google·Meta·Amazon의 분기별 CAPEX 합산은 AI 인프라 투자의 직접적 척도이다. HBM·서버 메모리 수요와 강한 상관관계를 보이며, 2026년 가이던스는 전년 대비 +18% 수준이다.</p></div>
-        <div class="mini-wrap"><div class="mini"><svg viewBox="0 0 360 84" preserveAspectRatio="none"><g fill="var(--fg-1)" opacity="0.18"><rect x="10" y="54" width="32" height="30" rx="2"/><rect x="54" y="48" width="32" height="36" rx="2"/><rect x="98" y="42" width="32" height="42" rx="2"/><rect x="142" y="34" width="32" height="50" rx="2"/><rect x="186" y="26" width="32" height="58" rx="2"/><rect x="230" y="20" width="32" height="64" rx="2"/><rect x="274" y="14" width="32" height="70" rx="2"/><rect x="318" y="8" width="32" height="76" rx="2"/></g></svg></div><div class="mini-meta"><span>1Q24</span><span>4Q25</span></div><div class="mini-now up">$82.4B · +28% YoY</div></div>
-      </div>
-      <div class="macro glass">
-        <div><div class="why">CURRENCY · 환율</div><h4>원/달러 환율</h4><p>업종 매출의 약 85%가 외화 표시. 환율 1% 변동 시 합산 영업이익 약 1조원 수준의 민감도가 추정된다. 미국 연준 금리 정책과 동행적 흐름을 보이는 변수이다.</p></div>
-        <div class="mini-wrap"><div class="mini"><svg viewBox="0 0 360 84" preserveAspectRatio="none"><polyline fill="none" stroke="var(--down)" stroke-width="2" points="0,38 30,36 60,40 90,44 120,50 150,46 180,42 210,38 240,36 270,40 300,44 330,42 360,40"/></svg></div><div class="mini-meta"><span>'24.05</span><span>'26.05</span></div><div class="mini-now down">1,402원 · -2.4% YoY</div></div>
-      </div>
-      <div class="macro glass">
-        <div><div class="why">PEER PROXY · 글로벌 피어</div><h4>필라델피아 반도체 지수 (SOX)</h4><p>글로벌 반도체 업종의 종합 지수. 한국 반도체 업종 지수와의 상관계수는 약 0.78로, 시차 없는 동행성이 관찰된다. 야간 SOX 변동률은 익일 한국 시장의 갭 변동과 연관성이 높다.</p></div>
-        <div class="mini-wrap"><div class="mini"><svg viewBox="0 0 360 84" preserveAspectRatio="none"><polyline fill="none" stroke="var(--up)" stroke-width="2" points="0,68 30,64 60,56 90,60 120,48 150,40 180,36 210,40 240,32 270,26 300,20 330,16 360,12"/></svg></div><div class="mini-meta"><span>'24.05</span><span>'26.05</span></div><div class="mini-now up">6,842 · +42.6% YoY</div></div>
-      </div>
-    </div>
-  </section>
-
-  <hr class="hairline" />
-
-  <!-- ⑪ 최근 동향 -->
-  <section class="sec">
-    <div class="col-narrow">
-      <div class="sec-kicker"><span class="sec-num">10</span> · RECENT DEVELOPMENTS</div>
-      <h2 class="sec-title">업종 관련 최근 동향</h2>
-      <div class="timeline">
-        <div class="tl major"><div class="tl-date">2026-05-23 · 5일 전 <span class="badge">실적</span></div><p>업종 합산 1분기 잠정실적 정리 — 매출 168.4조원, 영업이익 28.4조원으로 컨센서스(영업이익 25.6조원)를 +10.9% 상회하였다. 메모리 IDM 2개사와 한미반도체 등 HBM 관련 종목의 상회 폭이 두드러졌다.</p></div>
-        <div class="tl"><div class="tl-date">2026-05-15 · 10일 전 <span class="badge">기술</span></div><p>엔비디아 GTC 2026 컨퍼런스에서 차세대 AI 가속기 'Blackwell Ultra' 공개. 탑재 메모리로 HBM3E 12단이 채택되었으며, 한국 메모리 IDM 2개사가 듀얼소싱 공급사로 거론되고 있다.</p></div>
-        <div class="tl"><div class="tl-date">2026-05-08 · 17일 전 <span class="badge">정책</span></div><p>K-칩스법 개정안 본회의 통과 — 반도체 시설투자 세액공제가 대기업 기준 15%에서 25%로 확대되었으며, 일몰 시점은 2030년까지 연장되었다.</p></div>
-        <div class="tl major"><div class="tl-date">2026-04-22 · 1개월 전 <span class="badge">규제</span></div><p>미국 상무부, 중국향 HBM 추가 수출 통제 검토 보도 — 현재 HBM3 이상 제품의 중국향 직접 수출은 제한되어 있으며, 우회 경로에 대한 추가 통제 검토가 진행 중인 것으로 알려졌다.</p></div>
-        <div class="tl"><div class="tl-date">2026-04-10 · 1.5개월 전 <span class="badge">가격</span></div><p>옴디아, 2026년 DRAM 시장 규모 전망 상향 — 기존 1,580억 달러에서 1,720억 달러로 +8.9% 상향 조정되었다. AI 서버향 메모리 수요 강세를 반영한 것으로 분석된다.</p></div>
-        <div class="tl"><div class="tl-date">2026-03-20 · 2개월 전 <span class="badge">M&amp;A</span></div><p>한미반도체-한화정밀기계, HBM 본더 시장 경쟁 가시화 — 한화의 HBM 본더 신규 공급사 지위 확보 보도가 있었으며, 한미반도체의 독점 구도에 변화가 시사되었다.</p></div>
-      </div>
-    </div>
-  </section>
-
-  <hr class="hairline" />
-
-  <!-- ⑫ 관련 업종 -->
-  <section class="sec col-wide">
-    <div class="sec-kicker"><span class="sec-num">11</span> · RELATED INDUSTRIES</div>
-    <h2 class="sec-title">관련 업종</h2>
-    <p class="sec-lead">반도체와 상관관계가 높거나 가치사슬이 연결된 업종이다. 가로로 스크롤해 탐색할 수 있다.</p>
-    <div class="rel-scroll">
-      <a class="rel glass" href="Industry v2.html"><div class="rel-h"><h3>디스플레이</h3><span class="rel-ch up">+1.24%</span></div><div class="rel-d">OLED·LCD 패널과 부품. 후공정·소재 일부 공유, 동행적 사이클.</div><div class="rel-m"><span>상관 0.72</span><span>32개 종목</span></div></a>
-      <a class="rel glass" href="Industry v2.html"><div class="rel-h"><h3>전자장비·부품</h3><span class="rel-ch up">+0.84%</span></div><div class="rel-d">MLCC·PCB·커넥터. 반도체 수요 사이클과 강한 연동.</div><div class="rel-m"><span>상관 0.68</span><span>54개 종목</span></div></a>
-      <a class="rel glass" href="Industry v2.html"><div class="rel-h"><h3>IT 서비스·SW</h3><span class="rel-ch up">+0.42%</span></div><div class="rel-d">AI·클라우드 수요가 반도체 수요로 직결되는 상류 산업.</div><div class="rel-m"><span>상관 0.61</span><span>78개 종목</span></div></a>
-      <a class="rel glass" href="Industry v2.html"><div class="rel-h"><h3>2차전지</h3><span class="rel-ch down">-0.36%</span></div><div class="rel-d">국내 주요 수출 산업으로 환율·정책 모멘텀을 일부 공유.</div><div class="rel-m"><span>상관 0.45</span><span>41개 종목</span></div></a>
-      <a class="rel glass" href="Industry v2.html"><div class="rel-h"><h3>장비·로봇</h3><span class="rel-ch up">+0.92%</span></div><div class="rel-d">반도체 장비와 인접한 자동화·로봇 솔루션. 일부 종목 중복.</div><div class="rel-m"><span>상관 0.58</span><span>28개 종목</span></div></a>
-      <a class="rel glass" href="Industry v2.html"><div class="rel-h"><h3>화학·소재</h3><span class="rel-ch up">+0.18%</span></div><div class="rel-d">전자재료 분야 일부 중첩. 포토레지스트·CMP 슬러리 제조사.</div><div class="rel-m"><span>상관 0.39</span><span>62개 종목</span></div></a>
-    </div>
-  </section>
-
+  <style>
+  .ind-head{margin:28px 0 6px}
+  .ind-bc{font:600 12px var(--font-sans);color:var(--fg-3);letter-spacing:.03em;margin-bottom:10px}
+  .ind-bc a{color:var(--fg-3);text-decoration:none}.ind-bc a:hover{color:var(--fg-1)}
+  .ind-title{font:800 30px var(--font-sans);letter-spacing:-.02em;margin:0}
+  .ind-sub{margin:8px 0 0;font:400 15px/1.6 var(--font-sans);color:var(--fg-3);max-width:760px;text-wrap:pretty}
+  .ind-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(260px,1fr));gap:14px;margin-top:22px}
+  .ind-card{display:block;text-decoration:none;color:var(--fg-1);padding:18px;border-radius:var(--radius-lg);transition:transform .12s,box-shadow .15s}
+  .ind-card:hover{transform:translateY(-2px);box-shadow:var(--shadow-2)}
+  .ind-card .ic-top{display:flex;justify-content:space-between;align-items:baseline;gap:8px}
+  .ind-card .ic-name{font:700 18px var(--font-sans);letter-spacing:-.01em}
+  .ind-card .ic-w{font:600 13px var(--font-sans);color:var(--fg-3);font-variant-numeric:tabular-nums}
+  .ind-card .ic-mc{margin-top:10px;font:700 22px var(--font-sans);font-variant-numeric:tabular-nums}
+  .ind-card .ic-meta{margin-top:4px;font:500 12.5px var(--font-sans);color:var(--fg-3)}
+  .ind-card .ic-chg{font-weight:700}.ic-chg.up{color:var(--up)}.ic-chg.down{color:var(--down)}.ic-chg.flat{color:var(--flat)}
+  .ind-card .ic-top3{margin-top:12px;font:500 12.5px var(--font-sans);color:var(--fg-2);display:flex;flex-wrap:wrap;gap:6px}
+  .ind-card .ic-top3 span{background:rgba(0,0,0,.05);padding:3px 9px;border-radius:var(--pill)}
+  :root[data-theme="dark"] .ind-card .ic-top3 span{background:rgba(255,255,255,.08)}
+  .ind-kpis{display:grid;grid-template-columns:repeat(auto-fit,minmax(130px,1fr));gap:1px;background:var(--border-2);border-radius:var(--radius-lg);overflow:hidden;margin-top:18px}
+  .ind-kpi{background:var(--bg-1);padding:16px 18px}
+  :root[data-theme="dark"] .ind-kpi{background:#15161f}
+  .ind-kpi .k{font:600 12px var(--font-sans);color:var(--fg-3)}
+  .ind-kpi .v{margin-top:6px;font:700 20px var(--font-sans);font-variant-numeric:tabular-nums}
+  .ind-sec{margin-top:30px}
+  .ind-sec h2{font:700 18px var(--font-sans);margin:0 0 12px;letter-spacing:-.01em}
+  .ind-sec p{margin:0 0 12px;font:400 15px/1.7 var(--font-sans);color:var(--fg-2)}
+  .ind-risk{display:grid;gap:10px}
+  .ind-risk .r{padding:14px 16px;border-radius:var(--radius-md);background:rgba(0,0,0,.03)}
+  :root[data-theme="dark"] .ind-risk .r{background:rgba(255,255,255,.05)}
+  .ind-risk .rt{font:700 14px var(--font-sans);margin-bottom:4px}
+  .ind-risk .rb{font:400 13.5px/1.6 var(--font-sans);color:var(--fg-2)}
+  .ind-tbl{width:100%;border-collapse:collapse;margin-top:8px}
+  .ind-tbl th{font:600 12px var(--font-sans);color:var(--fg-3);text-align:right;padding:10px 12px;border-bottom:1px solid var(--border-2)}
+  .ind-tbl th:first-child{text-align:left}
+  .ind-tbl td{padding:12px;border-top:1px solid var(--hair);font:500 14px var(--font-sans);text-align:right;font-variant-numeric:tabular-nums}
+  .ind-tbl td:first-child{text-align:left}
+  .ind-tbl tr{cursor:pointer}.ind-tbl tbody tr:hover{background:rgba(0,0,0,.03)}
+  :root[data-theme="dark"] .ind-tbl tbody tr:hover{background:rgba(255,255,255,.04)}
+  .ind-tbl .nm{font-weight:700}.ind-tbl .rep{font-size:11px;color:var(--brand-blue);font-weight:700}
+  .ind-back{display:inline-flex;align-items:center;gap:6px;font:600 13px var(--font-sans);color:var(--fg-3);text-decoration:none;margin-bottom:6px}
+  .ind-ainote{font:500 12px var(--font-sans);color:var(--fg-3);margin-top:6px}
+  </style>
+  <div id="indApp" data-i18n-skip></div>
 </div>
 
 <!-- FOOTER -->
@@ -1262,14 +944,107 @@ let saved='light';try{saved=localStorage.getItem('kos-theme')||'light'}catch(e){
 applyTheme(saved);
 themeBtn.addEventListener('click',()=>applyTheme(root.getAttribute('data-theme')==='dark'?'light':'dark'));
 
-/* re-render dynamic stock grid on language change */
-if(window.KOSi18n){
-  KOSi18n.register({}, ()=>{
-    const tabs=document.getElementById('stkTabs');
-    const active=tabs && tabs.querySelector('.stk-tab.active');
-    if(active) renderStk(active.dataset.sort);
-  });
-}
+/* === 업종 페이지 데이터 렌더 === */
+(function(){
+  function L(){return window.KOSi18n?KOSi18n.lang:'ko';}
+  function EN(){return L()==='en';}
+  function T(s){return window.KOSi18n?KOSi18n.t(s):s;}
+  var STOCKS=(window.KOS_LIVE_DATA&&KOS_LIVE_DATA.stocks)||[];
+  var SECTORS=(window.KOS_SECTORS&&KOS_SECTORS.sectors)||{};
+  var REPORTS=(window.KOS_REPORTS&&KOS_REPORTS.reports)||{};
+  if(window.KOSi18n){var dd={};STOCKS.forEach(function(s){if(s.name_en)dd[s.name]=s.name_en;});KOSi18n.register(dd);}
+  if(window.KOSi18n){KOSi18n.register({
+    "홈":"Home","업종별":"Industries","업종별 분석":"Industry Analysis",
+    "한국 상장사를 업종으로 나눠 시가총액·등락률과 AI 업종 분석을 제공합니다.":"Korean listed companies grouped by industry — market cap, returns, and AI sector analysis.",
+    "시가총액 합계":"Total market cap","시장 비중":"Market weight","종목 수":"Stocks","평균 등락률":"Avg. change",
+    "업종 개요":"Overview","산업 구조·가치사슬":"Structure & value chain","최근 동향":"Recent trends","향후 전망":"Outlook",
+    "리스크 요인":"Risk factors","업종 내 주요 종목":"Key stocks","AI 업종 분석 준비 중입니다.":"AI sector analysis coming soon.",
+    "분석 참고: 업종 상장사 종합 + 웹 검색":"Source: aggregated listed peers + web search",
+    "종목":"Stock","현재가":"Price","등락률":"Change","시가총액":"Market Cap","리포트":"Report"
+  });}
+  function esc(x){return String(x==null?'':x).replace(/[&<>"]/g,function(c){return {'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c];});}
+  function won(n){if(!n)return '-';return EN()?'\u20a9'+Number(n).toLocaleString('en-US'):Number(n).toLocaleString('ko-KR')+'\uc6d0';}
+  function pct(n){n=n||0;return (n>0?'+':'')+n.toFixed(2)+'%';}
+  function mcap(j){j=j||0;if(j>=1)return EN()?'\u20a9'+j.toLocaleString('en-US',{maximumFractionDigits:1})+'T':j.toLocaleString('en-US',{maximumFractionDigits:1})+'\uc870';return EN()?'\u20a9'+Math.round(j*1000).toLocaleString('en-US')+'B':Math.round(j*10000).toLocaleString('ko-KR')+'\uc5b5';}
+  function dir(c){return c>0?'up':c<0?'down':'flat';}
+  function bi(o){if(!o)return '';return EN()?(o.en||o.ko||''):(o.ko||o.en||'');}
+  function tn(x){return T(x);}
+  function qp(k){return new URLSearchParams(location.search).get(k);}
+  function agg(){
+    var total=0,by={};
+    STOCKS.forEach(function(s){var m=s.mcap||0;total+=m;(by[s.sector]=by[s.sector]||[]).push(s);});
+    var rows=Object.keys(by).map(function(sec){
+      var lst=by[sec],mc=0,wc=0;
+      lst.forEach(function(s){mc+=(s.mcap||0);wc+=(s.change||0)*(s.mcap||0);});
+      lst.sort(function(a,b){return (b.mcap||0)-(a.mcap||0);});
+      return {sec:sec,n:lst.length,mc:mc,w:total?mc/total*100:0,chg:mc?wc/mc:0,list:lst};
+    });
+    rows.sort(function(a,b){return b.mc-a.mc;});
+    return {rows:rows,total:total};
+  }
+  var app=document.getElementById('indApp');
+  function renderList(){
+    var a=agg();
+    var cards=a.rows.map(function(r){
+      var d=dir(r.chg);
+      var tops=r.list.slice(0,3).map(function(s){return '<span>'+esc(tn(s.name))+'</span>';}).join('');
+      return '<a class="ind-card glass" href="Industry v2.html?sector='+encodeURIComponent(r.sec)+'">'
+        +'<div class="ic-top"><span class="ic-name">'+esc(tn(r.sec))+'</span><span class="ic-w">'+r.w.toFixed(1)+'%</span></div>'
+        +'<div class="ic-mc">'+mcap(r.mc)+'</div>'
+        +'<div class="ic-meta">'+(EN()?r.n+' stocks':r.n+'\uac1c')+' \u00b7 <span class="ic-chg '+d+'">'+pct(r.chg)+'</span></div>'
+        +'<div class="ic-top3">'+tops+'</div></a>';
+    }).join('');
+    app.innerHTML='<div class="ind-head"><div class="ind-bc">'+T('홈')+' / '+T('업종별')+'</div>'
+      +'<h1 class="ind-title">'+T('업종별 분석')+'</h1>'
+      +'<p class="ind-sub">'+T('한국 상장사를 업종으로 나눠 시가총액·등락률과 AI 업종 분석을 제공합니다.')+'</p></div>'
+      +'<div class="ind-grid">'+cards+'</div>';
+  }
+  function renderDetail(sec){
+    var a=agg();
+    var row=null;a.rows.forEach(function(r){if(r.sec===sec)row=r;});
+    if(!row){renderList();return;}
+    var an=SECTORS[sec]||null;
+    var d=dir(row.chg);
+    var kpis='<div class="ind-kpis">'
+      +'<div class="ind-kpi"><div class="k">'+T('시가총액 합계')+'</div><div class="v">'+mcap(row.mc)+'</div></div>'
+      +'<div class="ind-kpi"><div class="k">'+T('시장 비중')+'</div><div class="v">'+row.w.toFixed(1)+'%</div></div>'
+      +'<div class="ind-kpi"><div class="k">'+T('종목 수')+'</div><div class="v">'+(EN()?row.n+' stocks':row.n+'개')+'</div></div>'
+      +'<div class="ind-kpi"><div class="k">'+T('평균 등락률')+'</div><div class="v ic-chg '+d+'">'+pct(row.chg)+'</div></div></div>';
+    var ai='';
+    if(an){
+      function sec2(t,html){return html?'<div class="ind-sec"><h2>'+T(t)+'</h2>'+html+'</div>':'';}
+      function paras(o){var t=bi(o);if(!t)return '';return t.split(/\n+/).map(function(x){return '<p>'+esc(x)+'</p>';}).join('');}
+      var risks=(an.risks||[]).map(function(r){return '<div class="r"><div class="rt">'+esc(bi(r.title))+'</div><div class="rb">'+esc(bi(r.body))+'</div></div>';}).join('');
+      ai=sec2('업종 개요',paras(an.overview))
+        +sec2('산업 구조·가치사슬',paras(an.structure))
+        +sec2('최근 동향',paras(an.trends))
+        +sec2('향후 전망',paras(an.outlook))
+        +(risks?'<div class="ind-sec"><h2>'+T('리스크 요인')+'</h2><div class="ind-risk">'+risks+'</div></div>':'');
+    }else{
+      ai='<div class="ind-sec"><p class="ind-ainote">'+T('AI 업종 분석 준비 중입니다.')+'</p></div>';
+    }
+    // 종목 리스트(시총순 상위 20)
+    var rowsHtml=row.list.slice(0,20).map(function(s){
+      var sd=dir(s.change);var hasRep=!!REPORTS[s.ticker];
+      return '<tr onclick="location.href=\'Ticker Detail v2.html?ticker='+s.ticker+'\'">'
+        +'<td><span class="nm">'+esc(tn(s.name))+'</span>'+(hasRep?' <span class="rep">'+T('리포트')+'</span>':'')+'</td>'
+        +'<td>'+won(s.price)+'</td>'
+        +'<td class="ic-chg '+sd+'">'+pct(s.change)+'</td>'
+        +'<td>'+mcap(s.mcap)+'</td></tr>';
+    }).join('');
+    var lead=an&&an.lead?('<p class="ind-sub">'+esc(bi(an.lead))+'</p>'):'';
+    app.innerHTML='<div class="ind-head"><a class="ind-back" href="Industry v2.html">\u2039 '+T('업종별')+'</a>'
+      +'<div class="ind-bc">'+T('홈')+' / '+T('업종별')+' / '+esc(tn(sec))+'</div>'
+      +'<h1 class="ind-title">'+esc(tn(sec))+'</h1>'+lead+'</div>'
+      +kpis+ai
+      +'<div class="ind-sec"><h2>'+T('업종 내 주요 종목')+'</h2>'
+      +'<table class="ind-tbl"><thead><tr><th>'+T('종목')+'</th><th>'+T('현재가')+'</th><th>'+T('등락률')+'</th><th>'+T('시가총액')+'</th></tr></thead><tbody>'+rowsHtml+'</tbody></table>'
+      +(an&&an.sources&&an.sources.length?'<p class="ind-ainote">'+T('분석 참고: 업종 상장사 종합 + 웹 검색')+'</p>':'')+'</div>';
+  }
+  function render(){var sec=qp('sector');if(sec&&decodeURIComponent(sec)){renderDetail(decodeURIComponent(sec));}else{renderList();}}
+  render();
+  if(window.KOSi18n)KOSi18n.register({},render);
+})();
 </script>
 </body>
 </html>
