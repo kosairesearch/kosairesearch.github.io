@@ -1,6 +1,6 @@
 // KOS ai — 자동 생성 데이터 파일. 직접 수정하지 마세요.
 window.KOS_LIVE_DATA = {
-  "lastUpdated": "2026-06-05 20:23",
+  "lastUpdated": "2026-06-05 22:34",
   "dataDate": "20260605",
   "stocks": [
     {
@@ -3673,7 +3673,8 @@ window.KOS_LIVE_DATA = {
       "shares": 22177360,
       "induty_code": "28111",
       "categories": [
-        "기계·장비"
+        "기계·장비",
+        "로봇"
       ],
       "rank": 204
     },
@@ -4842,7 +4843,8 @@ window.KOS_LIVE_DATA = {
       "shares": 31707567,
       "induty_code": "303",
       "categories": [
-        "자동차"
+        "자동차",
+        "로봇"
       ],
       "rank": 269
     },
@@ -6468,7 +6470,8 @@ window.KOS_LIVE_DATA = {
       "shares": 30888000,
       "induty_code": "28111",
       "categories": [
-        "기계·장비"
+        "기계·장비",
+        "로봇"
       ],
       "rank": 359
     },
@@ -9839,7 +9842,8 @@ window.KOS_LIVE_DATA = {
       "shares": 41259790,
       "induty_code": "47812",
       "categories": [
-        "바이오·제약"
+        "바이오·제약",
+        "로봇"
       ],
       "rank": 546
     },
@@ -16770,7 +16774,8 @@ window.KOS_LIVE_DATA = {
       "shares": 20700000,
       "induty_code": "29141",
       "categories": [
-        "기계·장비"
+        "기계·장비",
+        "로봇"
       ],
       "rank": 931
     },
@@ -16950,7 +16955,8 @@ window.KOS_LIVE_DATA = {
       "shares": 17947045,
       "induty_code": "27211",
       "categories": [
-        "기계·장비"
+        "기계·장비",
+        "로봇"
       ],
       "rank": 941
     },
@@ -18140,7 +18146,8 @@ window.KOS_LIVE_DATA = {
       "shares": 11144043,
       "induty_code": "272",
       "categories": [
-        "전기장비"
+        "전기장비",
+        "로봇"
       ],
       "rank": 1007
     },
@@ -19455,7 +19462,8 @@ window.KOS_LIVE_DATA = {
       "shares": 62399130,
       "induty_code": "29241",
       "categories": [
-        "기계·장비"
+        "기계·장비",
+        "로봇"
       ],
       "rank": 1080
     },
@@ -21256,7 +21264,8 @@ window.KOS_LIVE_DATA = {
       "shares": 13500000,
       "induty_code": "29142",
       "categories": [
-        "기계·장비"
+        "기계·장비",
+        "로봇"
       ],
       "rank": 1180
     },
@@ -22428,7 +22437,8 @@ window.KOS_LIVE_DATA = {
       "shares": 27270000,
       "induty_code": "29141",
       "categories": [
-        "기계·장비"
+        "기계·장비",
+        "로봇"
       ],
       "rank": 1245
     },
@@ -22788,7 +22798,8 @@ window.KOS_LIVE_DATA = {
       "mcap": 0.1197,
       "shares": 10404468,
       "categories": [
-        "기계·장비"
+        "기계·장비",
+        "로봇"
       ],
       "rank": 1265
     },
@@ -23420,7 +23431,8 @@ window.KOS_LIVE_DATA = {
       "shares": 20348454,
       "induty_code": "28909",
       "categories": [
-        "기계·장비"
+        "기계·장비",
+        "로봇"
       ],
       "rank": 1300
     },
@@ -23690,7 +23702,8 @@ window.KOS_LIVE_DATA = {
       "shares": 13624900,
       "induty_code": "33999",
       "categories": [
-        "기계·장비"
+        "기계·장비",
+        "로봇"
       ],
       "rank": 1315
     },
@@ -24340,7 +24353,8 @@ window.KOS_LIVE_DATA = {
       "shares": 16120000,
       "induty_code": "29271",
       "categories": [
-        "기계·장비"
+        "기계·장비",
+        "로봇"
       ],
       "rank": 1351
     },
@@ -37680,7 +37694,8 @@ window.KOS_LIVE_DATA = {
       "shares": 7440568,
       "induty_code": "58222",
       "categories": [
-        "IT·소프트웨어"
+        "IT·소프트웨어",
+        "로봇"
       ],
       "rank": 2091
     },
@@ -40129,7 +40144,8 @@ window.KOS_LIVE_DATA = {
       "induty_code": "582",
       "categories": [
         "IT·소프트웨어",
-        "인공지능(AI)"
+        "인공지능(AI)",
+        "로봇"
       ],
       "rank": 2227
     },
@@ -40741,7 +40757,8 @@ window.KOS_LIVE_DATA = {
       "shares": 9204529,
       "induty_code": "2629",
       "categories": [
-        "전자·부품"
+        "전자·부품",
+        "로봇"
       ],
       "rank": 2261
     },
