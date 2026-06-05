@@ -34,3 +34,14 @@
 ## generate_sectors 시작 — mode='collect' · MODEL=claude-sonnet-4-6 · FORCE=False
 
 ✅ 회수 완료 · 성공 28/실패 0 · 총 28개 → data/sectors.js
+## generate_sectors 시작 — mode='auto' · MODEL=claude-sonnet-4-6 · FORCE=False
+## 업종 분석 batch 제출 — 대상 2개 / 전체 31개 · 모델 claude-sonnet-4-6
+  · 준비 로봇 (30종목)
+  · 준비 인공지능(AI) (42종목)
+- ✅ 배치 제출: msgbatch_017RYuDNvEFkikwk89pJ5ha5 (2건)
+  · in_progress · 처리 2/성공 0/오류 0
+  · in_progress · 처리 2/성공 0/오류 0
+  · in_progress · 처리 2/성공 0/오류 0
+  · ended · 처리 0/성공 2/오류 0
+
+✅ 회수 완료 · 성공 2/실패 0 · 총 30개 → data/sectors.js

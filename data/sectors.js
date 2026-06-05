@@ -1,6 +1,6 @@
 // KOS ai — 업종 AI 분석 (자동 생성). 직접 수정 금지.
 window.KOS_SECTORS = {
-  "lastUpdated": "2026-06-05 21:51",
+  "lastUpdated": "2026-06-05 22:10",
   "model": "claude-sonnet-4-6",
   "sectors": {
     "유통·소비재": {
@@ -1704,6 +1704,124 @@ window.KOS_SECTORS = {
         }
       ],
       "sector": "기계·장비"
+    },
+    "인공지능(AI)": {
+      "lead": {
+        "ko": "고성장 매출에도 대다수 종목이 영업적자 구조를 벗어나지 못하고 있으며, 흑자 전환 시점과 글로벌 레퍼런스 확보 여부가 업종 전체의 핵심 관전 포인트다.",
+        "en": "Despite robust revenue growth, the majority of constituents remain in operating loss territory; the timing of breakeven and the securing of global reference cases are the pivotal variables for the sector."
+      },
+      "overview": {
+        "ko": "국내 AI(인공지능) 업종은 코스닥에 집중된 42개 상장사로 구성되며, 업종 시가총액 합계는 약 5.8조원으로 전체 시장의 0.1% 수준에 불과해 규모 면에서 틈새 섹터에 해당한다. 세부 분야는 의료 AI(루닛·뷰노·뉴로핏·차AI헬스케어), 엣지·온디바이스 AI 반도체(노타·오픈엣지테크놀로지), 제조·산업 버티컬 AI(마키나락스), 자연어 처리·언어 플랫폼(솔트룩스·코난테크놀로지·플리토), AI 응용 서비스(셀바스AI·이스트소프트) 등으로 다변화되어 있다. 구성 종목 대부분은 기술특례 상장 경로를 통해 코스닥에 진입한 스타트업 또는 중소형 테크 기업으로, 현재 현금흐름보다 기술 잠재력과 미래 실적 추정치에 의해 밸류에이션이 형성되는 특성이 강하다. 시총 상위 1위 루닛(1.09조)이 업종 시총의 약 19%를 차지하며 대표주 역할을 하고 있으며, 그 뒤를 노타(0.74조), 마키나락스(0.47조), 오픈엣지테크놀로지(0.37조)가 잇는 구조다. 국내 AI 관련 상장사 80개사를 대상으로 한 KRG 분석에 따르면, 합산 매출은 2023년부터 2025년까지 2년간 약 55.8% 성장했으나 수익 기반은 반도체·소부장 공급망에 집중되는 양극화 현상이 두드러진다. 본 업종(순수 AI 소프트웨어·애플리케이션 기업군)은 이러한 양극화 구도에서 아직 수익화의 초기 단계에 머물러 있다.",
+        "en": "Korea's listed AI sector comprises 42 companies concentrated on the KOSDAQ market, with a combined market capitalization of approximately KRW 5.8 trillion—less than 0.1% of the total market—placing it firmly in niche territory. Sub-segments include medical AI (Lunit, Vuno, Neurophet, Cha AI Healthcare), edge/on-device AI semiconductors (Nota, OpenEdge Technology), manufacturing and industrial vertical AI (Machina Labs), NLP and language platforms (Saltlux, Conan Technology, Flitto), and AI application services (Selvas AI, ESTsoft). The vast majority of constituents entered KOSDAQ through the technology-exception listing route as startups or small-cap tech firms, resulting in valuations that are driven more by technological potential and forward earnings estimates than by current cash generation. Lunit (KRW 1.09 trillion) commands roughly 19% of sector market cap as the sector bellwether, followed by Nota (KRW 0.74 trillion), Machina Labs (KRW 0.47 trillion), and OpenEdge Technology (KRW 0.37 trillion). According to KRG analysis covering 80 AI-related listed companies, combined revenues grew approximately 55.8% over the two years from 2023 to 2025, but profitability remains heavily skewed toward the semiconductor supply chain. The pure-play AI software and applications cluster analyzed here remains in the early stages of monetization within this bifurcated landscape."
+      },
+      "structure": {
+        "ko": "업종 가치사슬은 크게 ① 데이터 구축 레이어, ② AI 모델·엔진 레이어, ③ 버티컬 애플리케이션 레이어로 나뉜다. 데이터 구축 레이어에서는 다국어 학습 데이터 전문기업 플리토가 위치하며, AI 모델 학습의 원자재 역할을 수행한다. 모델·엔진 레이어에서는 경량화 AI 모델 및 엣지 AI 솔루션을 공급하는 노타와 NPU(신경망처리장치) 설계 기업 오픈엣지테크놀로지가 AI 연산 효율화의 핵심 포지션을 점한다. 버티컬 애플리케이션 레이어는 시총 규모가 가장 크고 종목 수도 많은데, 의료 AI 클러스터(루닛·뷰노·뉴로핏·차AI헬스케어)가 업종 내 최대 클러스터를 형성하고 있다. 산업·제조 AI에서는 마키나락스가 엔터프라이즈 AI OS '런웨이'를 기반으로 국방·반도체·조선 등 중공업 분야에 특화된 버티컬 솔루션을 제공하며, 언어·지식 AI 영역에서는 솔트룩스·코난테크놀로지·이스트소프트가 NLP 플랫폼과 AI 서비스를 운영한다. 상위 4개 종목이 업종 시총의 약 47%를 차지해 집중도가 높은 편이며, 상위 12개 종목 합계가 전체 5.8조원의 대부분을 구성하는 롱테일 구조다.",
+        "en": "The sector value chain is broadly segmented into three layers: ① data construction, ② AI model and engine, and ③ vertical application. At the data layer, Flitto occupies a specialized position as a multilingual training data provider, supplying the raw material for AI model development. At the model and engine layer, Nota—focused on lightweight AI models and edge AI solutions—and OpenEdge Technology, a neural processing unit (NPU) IP design house, hold critical positions in AI compute efficiency. The vertical application layer is the largest by both market cap and constituent count; within it, the medical AI cluster (Lunit, Vuno, Neurophet, Cha AI Healthcare) forms the dominant sub-group. In industrial and manufacturing AI, Machina Labs delivers vertical solutions for heavy industries—defense, semiconductors, shipbuilding—underpinned by its enterprise AI OS 'Runway.' The NLP and knowledge AI space is served by Saltlux, Conan Technology, and ESTsoft. The top four constituents account for approximately 47% of sector market cap, indicating meaningful concentration, while the overall sector exhibits a long-tail structure in which the top 12 names represent the bulk of the KRW 5.8 trillion aggregate."
+      },
+      "trends": {
+        "ko": "루닛은 2025년 연간 매출이 전년 대비 53.4% 증가했으며, 2024년 인수한 볼파라(Volpara)와의 통합이 완료되면서 암 검진 소프트웨어 매출이 본격 확대되고 있다. 다만 인수 관련 비용과 R&D 투자 확대로 영업손실은 22.3% 늘어나 수익화 전환에는 시간이 더 필요한 상황이다. 노타는 2024년 11월 코스닥 상장 첫날 300% 급등하며 시총이 1조원을 돌파했고, 이후 조정을 거쳐 현재 시총 0.74조원 수준을 형성하고 있다. 마키나락스는 2026년 코스닥에 기술특례 상장하며 AI 전문기업 중 올해 첫 IPO 사례가 됐는데, 2025년 매출은 114억원, 영업손실은 80억원으로 고성장과 적자가 공존하는 전형적인 초기 AI 기업 패턴을 보이고 있다. 국내 AI 소프트웨어 업종 전반을 보면, 의료 AI 분야는 매출이 증가했음에도 2025년 약 626억원의 적자를 기록했으며, FDA 승인·임상 데이터·글로벌 인증·보험 수가 등의 진입장벽이 상용화를 지연시키는 주요 요인으로 지목되고 있다.",
+        "ko_citations": "based on search results",
+        "en": "Lunit reported annual revenue growth of 53.4% in fiscal year 2025, with its cancer screening software business gaining meaningful scale following the full integration of the Volpara acquisition completed in 2024. However, acquisition-related costs and increased R&D investment drove operating losses 22.3% higher, indicating that the path to profitability requires further time. Nota surged 300% on its KOSDAQ debut in November 2024, briefly crossing a KRW 1 trillion market cap before settling at the current approximately KRW 740 billion. Machina Labs completed its KOSDAQ technology-exception IPO in 2026—the first AI specialist listing of the year—reporting FY2025 revenue of KRW 11.4 billion against an operating loss of KRW 8.0 billion, a pattern typical of early-stage AI ventures combining hypergrowth with persistent losses. Across the domestic AI software sector broadly, the medical AI sub-segment posted an estimated KRW 62.6 billion operating loss in 2025 despite revenue growth, with FDA clearances, clinical data requirements, global certifications, and insurance reimbursement coverage identified as the primary commercialization bottlenecks."
+      },
+      "outlook": {
+        "ko": "루닛은 2027년 흑자 전환을 공식 목표로 제시하고 있으며, 볼파라 통합에 따른 미국 시장 확대와 루닛 스코프(AI 바이오마커 플랫폼)의 글로벌 제약사 수요 확대가 수익화의 핵심 동력으로 작용할 전망이다. 마키나락스 역시 2027년 BEP 달성, 2030년 매출 1,000억원 이상을 목표로 제시하며 엔터프라이즈 AI OS '런웨이'의 산업 확산에 주력하고 있다. 정책 측면에서는 과학기술정보통신부의 '독자 AI 파운데이션 모델 프로젝트'가 마키나락스 등 국내 AI 전문기업의 기술 역량 강화와 레퍼런스 확보에 기여할 것으로 기대된다. 노타·오픈엣지테크놀로지 등 엣지·온디바이스 AI 칩 설계 기업은 스마트폰, 산업용 기기, 로봇 등 온디바이스 AI 수요가 확대되는 흐름의 직접적인 수혜를 받을 수 있는 포지션에 있다. 중장기적으로는 각사의 해외 매출 비중 확대 여부와 글로벌 빅테크·제약사와의 파트너십 심화가 밸류에이션 재평가의 트리거로 작용할 가능성이 높다.",
+        "en": "Lunit has officially targeted a return to profitability by 2027, with expansion in the U.S. market through Volpara integration and surging global pharmaceutical demand for its Lunit SCOPE AI biomarker platform expected to serve as the primary monetization drivers. Machina Labs similarly targets breakeven in 2027 and revenues exceeding KRW 100 billion by 2030, pursuing broad adoption of its enterprise AI OS 'Runway' across industrial verticals. On the policy front, the Ministry of Science and ICT's 'Independent AI Foundation Model Project' is expected to support domestic AI specialists including Machina Labs in strengthening technical competencies and building reference cases. Edge and on-device AI chip design firms—Nota and OpenEdge Technology in particular—are well-positioned to benefit from structural demand growth across smartphones, industrial devices, and robotics. Over the medium-to-long term, the expansion of each company's overseas revenue mix and deepening partnerships with global big-tech and pharmaceutical players are likely to serve as key triggers for sector-wide valuation re-rating."
+      },
+      "risks": [
+        {
+          "title": {
+            "ko": "지속적 영업손실 및 현금 소진 리스크",
+            "en": "Persistent Operating Losses and Cash Burn Risk"
+          },
+          "body": {
+            "ko": "업종 내 대다수 종목이 영업적자 상태를 유지하고 있으며, 흑자 전환 시점은 빠르면 2027년으로 추정되지만 시장 환경이나 수주 지연에 따라 불확실성이 크다. 지속적인 R&D 투자와 인력 확보 비용이 현금을 소진시키는 구조이며, 추가 유상증자 또는 외부 자금조달 가능성은 기존 주주의 지분 희석 위험으로 연결될 수 있다.",
+            "en": "The majority of sector constituents remain in operating loss, with break-even projected no earlier than 2027 under base-case scenarios—a timeline subject to meaningful uncertainty from market conditions or order delays. Sustained R&D expenditure and talent acquisition costs create ongoing cash burn, and the potential need for equity issuance or external fundraising introduces dilution risk for existing shareholders."
+          }
+        },
+        {
+          "title": {
+            "ko": "규제·인허가 및 보험 수가 불확실성 (의료 AI)",
+            "en": "Regulatory, Approval, and Reimbursement Uncertainty (Medical AI)"
+          },
+          "body": {
+            "ko": "루닛·뷰노·뉴로핏 등 의료 AI 기업들은 FDA(미국) 및 식약처(한국) 인허가, 임상 데이터 요건, 글로벌 인증 등 다층적 규제 장벽을 통과해야 본격적인 상용화가 가능하다. 의료 AI의 보험 수가 등재가 지연될 경우 예상 매출 성장 경로가 크게 달라질 수 있으며, 이는 중장기 실적 가시성을 제약하는 핵심 리스크다.",
+            "en": "Medical AI companies such as Lunit, Vuno, and Neurophet must navigate multiple layers of regulatory barriers—including FDA clearance, Korean MFDS approvals, clinical data requirements, and global certifications—before achieving meaningful commercial scale. Delays in insurance reimbursement listing for medical AI products could significantly alter projected revenue trajectories, representing a key constraint on medium-to-long-term earnings visibility."
+          }
+        },
+        {
+          "title": {
+            "ko": "글로벌 빅테크 경쟁 심화 및 고밸류에이션 부담",
+            "en": "Intensifying Global Big-Tech Competition and Elevated Valuation Risk"
+          },
+          "body": {
+            "ko": "OpenAI, Google, Microsoft 등 글로벌 AI 플랫폼 기업들이 한국어 지원 및 도메인 특화 솔루션을 빠르게 강화하면서 국내 AI 소프트웨어 기업들의 경쟁 우위가 잠식될 수 있다. 대부분의 종목이 미래 추정 실적 기반으로 높은 멀티플이 적용된 상태여서, 성장 전망이 조금이라도 하향 조정될 경우 주가 조정 폭이 클 수 있다.",
+            "en": "Global AI platform giants—including OpenAI, Google, and Microsoft—are rapidly enhancing Korean-language support and domain-specific solutions, posing a credible threat to the competitive moats of domestic AI software firms. With most sector names trading on elevated multiples anchored to future earnings projections, even modest downward revisions to growth expectations could trigger disproportionately large share price corrections."
+          }
+        }
+      ],
+      "sources": [
+        "https://zdnet.co.kr/view/?no=20260529181209",
+        "https://comp.fnguide.com/SVO2/ASP/SVD_Main.asp?gicode=A328130",
+        "https://www.biospectator.com/news/view/26960",
+        "https://www.mt.co.kr/future/2026/04/01/2026032613445561322",
+        "https://www.unicornfactory.co.kr/article/2026032613445561322"
+      ],
+      "sector": "인공지능(AI)"
+    },
+    "로봇": {
+      "lead": {
+        "ko": "협동로봇·휴머노이드 투트랙으로 글로벌 성장 기회를 모색하는 한국 로봇 업종, 높은 기대 밸류에이션 대비 다수 기업의 수익성 개선 여부가 핵심 관전 포인트.",
+        "en": "Korea's robotics sector pursues a dual-track strategy across collaborative and humanoid robots, with profitability improvement across predominantly loss-making names emerging as the critical near-term focal point against elevated valuations."
+      },
+      "overview": {
+        "ko": "한국 로봇 업종은 협동로봇, 산업용 로봇, 서비스·물류 로봇, 로봇 부품 등 다양한 세그먼트로 구성된 30개 상장사, 시총 약 38조 원 규모의 성장형 섹터로, 전체 시장의 약 0.5%를 점유한다. 레인보우로보틱스(12.96조)와 두산로보틱스(9.09조)가 업종 시총의 약 58%를 차지하는 고도 집중 구조이며, 대부분의 종목이 코스닥에 상장되어 있어 개별 이슈와 테마 흐름에 민감하게 반응하는 특성을 보인다. 한국은 제조업 로봇밀도(근로자 1만 명당 1,012대)가 세계 최고 수준으로, 반도체·자동차·디스플레이 등 주요 제조 산업을 기반으로 산업용 로봇 기술이 빠르게 고도화되어 왔다. 2025년을 전후로 삼성전자가 레인보우로보틱스의 최대주주(지분 35%)로 올라서고 대표이사 직속 미래로봇추진단을 신설하는 등 대기업의 로봇 사업 전략 투자가 업종 모멘텀을 크게 자극했다. 정부 역시 제4차 지능형로봇 기본계획을 통해 2030년까지 민관 합동 투자를 예고하고 있어 정책 환경도 우호적으로 조성되는 흐름이다.",
+        "en": "Korea's listed robotics sector comprises 30 companies with a combined market capitalization of approximately KRW 38 trillion—roughly 0.5% of the broader market—spanning collaborative robots, industrial robots, service and logistics robots, and robot components. The sector is highly concentrated, with Rainbow Robotics (KRW 12.96tn) and Doosan Robotics (KRW 9.09tn) accounting for approximately 58% of total sector market cap; the majority of names trade on KOSDAQ, making them particularly sensitive to thematic flows and company-specific catalysts. Korea's manufacturing robot density—1,012 units per 10,000 workers, the highest in the world—reflects a deeply embedded robotics culture underpinned by its semiconductor, automotive, and display industries. A landmark strategic development occurred when Samsung Electronics raised its stake in Rainbow Robotics to 35%, making it a consolidated subsidiary and establishing a dedicated Future Robotics Promotion Division directly under the CEO. Government policy also remains supportive, with the Fourth Intelligent Robot Basic Plan committing to public-private co-investment through 2030."
+      },
+      "structure": {
+        "ko": "업종 밸류체인은 크게 ①핵심 부품·액추에이터, ②로봇 본체 제조, ③시스템 통합(SI)·솔루션, ④서비스·운영 플랫폼의 4단계로 구분된다. 부품 레이어에서는 로보티즈가 전 세계 연구기관에서 채택하는 다이나믹셀(Dynamixel) 스마트 액추에이터 모듈로 글로벌 인지도를 확보하고 있으며, 엔젤로보틱스는 웨어러블 재활 로봇 분야에서 독자적인 포지션을 구축하고 있다. 협동로봇 본체 제조 레이어에서는 레인보우로보틱스와 두산로보틱스가 양강 체제를 형성하고, 유일로보틱스·뉴로메카가 중형 플레이어로 시장에 경쟁하는 구도다. SI·솔루션 단계에서는 로보스타(반도체·디스플레이 공정 특화), 클로봇(클라우드 기반 로봇 운영 플랫폼), 유진로봇(자율주행 이송 로봇) 등이 각자 특화 버티컬을 보유한다. 전진건설로봇(건설 자동화), 코스모로보틱스, 휴림로봇은 특수 서비스 로봇 영역의 틈새를 공략 중이며, 시총 기준 상위 2개사 집중도가 높아 중소형 종목은 개별 이벤트에 따른 주가 변동성이 상당히 크다.",
+        "en": "The sector's value chain can be divided into four principal layers: (1) core components and actuators, (2) robot body manufacturing, (3) system integration (SI) and solutions, and (4) service and operational platforms. At the component layer, Robotis holds global recognition through its Dynamixel smart actuator modules—widely adopted by research institutions worldwide—while Angel Robotics occupies a distinct position in wearable rehabilitation robots. The collaborative robot manufacturing layer is anchored by a duopoly of Rainbow Robotics and Doosan Robotics, with Yoilrobotics and Neuromeka competing as mid-tier players. The SI and solutions layer features Robostar (semiconductor and display process specialization), Clobot (cloud-based robot operations platform), and Yujin Robot (autonomous mobile robots for logistics). Jeonjin Construction Robotics, Cosmo Robotics, and Hyulim Robot address niche verticals in specialty service robots. The high concentration in the top two names means mid- and small-cap names within the sector are subject to pronounced single-stock volatility driven by event-specific catalysts."
+      },
+      "trends": {
+        "ko": "2025년 한국 상장 휴머노이드 로봇 업종은 연간 192% 급등하며 AI에 이은 시장의 핵심 주도 테마로 부상했다. 레인보우로보틱스는 2025년 연결 매출이 전년 대비 76.4% 증가하고 영업손실이 축소되는 외형 개선을 보였으나, 신규 사업 R&D 투자 확대로 흑자 전환에는 이르지 못했다. 반면 두산로보틱스는 2025년 매출이 330억 원으로 전년 대비 29.6% 감소하고 영업손실이 595억 원으로 사상 최대를 기록했는데, 미국 관세 불확실성에 따른 북미 매출 감소와 ONExia 인수 비용 부담이 주요 원인이었다. 다만 두산로보틱스의 수주잔고는 전년 대비 약 4배 증가한 1,490만 달러 수준을 확보하며 향후 수요 가시성을 일부 높였다. 업종 전반적으로 협동로봇 기업들은 중국 업체들의 저가 공세와 규모의 경제 미실현이 맞물려 다수가 영업 적자 상태를 지속하고 있으며, 수익성 개선이 공통 숙제로 남아 있다.",
+        "en": "Korea's listed humanoid robotics names surged approximately 192% in 2025, cementing the theme as the market's primary growth narrative after AI. Rainbow Robotics reported a 76.4% year-on-year increase in consolidated revenue for FY2025 with a narrowing operating loss, reflecting tangible top-line momentum, though sustained R&D investment precluded a return to profitability. In contrast, Doosan Robotics posted FY2025 revenue of KRW 33.0bn—down 29.6% year-on-year—with an operating loss of KRW 59.5bn, its widest on record, driven by North American sales softness amid US tariff uncertainty and integration costs from the ONExia acquisition. Doosan Robotics' order backlog nonetheless expanded roughly fourfold year-on-year to approximately USD 14.9mn, providing some forward demand visibility. More broadly, Korean collaborative robot makers continue to operate in aggregate loss, caught between Chinese low-cost competition and an inability to achieve meaningful economies of scale—a structural profitability challenge common across the sector."
+      },
+      "outlook": {
+        "ko": "골드만삭스는 글로벌 휴머노이드 로봇 시장이 2035년 약 378억 달러로 연평균 38% 성장할 것으로 전망하며, 출하량은 2025년 약 8,000대에서 2035년 210만 대로 J커브 성장 구간에 진입할 것으로 예상했다. 삼성전자가 레인보우로보틱스를 통해 2028년 첨단 휴머노이드 상용화를 목표로 설정함에 따라, 부품·소프트웨어·솔루션 공급망 전반의 낙수 수요가 가시화될 가능성이 있다. 한국기계연구원은 2026년을 휴머노이드 로봇 상용화 원년으로 규정하며 향후 5년이 한국 로봇 산업의 골든타임이 될 것으로 제시했고, 상용화는 물류 분야에서 제조업, 가사 순으로 단계적 확산이 예상된다. 핵심 부품 내재화로 원가 경쟁력을 높이는 동시에 글로벌 AI 빅테크와의 협업을 통해 파운데이션 모델 격차를 해소하는 투트랙 전략이 한국 로봇 기업의 중기 경쟁력을 좌우할 전망이다. 협동로봇 시장은 다양한 산업군으로의 적용 확장 가능성이 높아 향후 가장 빠르게 성장하는 세그먼트로 주목받고 있어, 국내 기업들의 원가경쟁력과 글로벌 브랜드 신뢰도 강화가 지속적인 관심사가 될 것이다.",
+        "en": "Goldman Sachs projects the global humanoid robot market will reach approximately USD 37.8bn by 2035, implying a 38% CAGR, with shipments expected to follow a J-curve trajectory from roughly 8,000 units in 2025 to 2.1 million units in 2035. Samsung Electronics' strategic objective to commercialize advanced humanoid robots by 2028 through Rainbow Robotics is likely to generate cascading demand across domestic component, software, and solutions supply chains. The Korea Institute of Machinery and Materials has designated 2026 as the inaugural year of humanoid commercialization and identified the next five years as the critical 'golden window' for Korea's robotics industry, with adoption expected to expand sequentially from logistics to manufacturing and ultimately to household applications. A two-track strategy—internalizing core components to secure cost competitiveness while bridging the AI foundation model gap through partnerships with global technology leaders—is seen as central to Korean robotics firms' medium-term positioning. Collaborative robots, with their broad cross-industry applicability, are widely regarded as the fastest-growing segment ahead, making cost competitiveness and global brand credibility pivotal competitive dimensions for domestic players."
+      },
+      "risks": [
+        {
+          "title": {
+            "ko": "중국 저가 경쟁 심화",
+            "en": "Intensifying Chinese Low-Cost Competition"
+          },
+          "body": {
+            "ko": "중국은 140개 이상의 기업이 휴머노이드·협동로봇 양산 경쟁에 진입해 2025년 신규 모델의 약 70%를 점유했으며, 유니트리는 2024년 9만 달러였던 모델 가격을 2025년 5,900달러대로 대폭 낮추며 시장을 흔들었다. 국내 협동로봇 기업들은 이미 중국 업체의 저가 공세와 규모의 경제 미실현으로 재무실적이 부진한 상황으로, 중국산 제품의 가격 하락이 가속화될 경우 국내 기업의 마진과 시장점유율 모두 추가적인 압박을 받을 수 있다.",
+            "en": "Over 140 Chinese companies have entered the humanoid and collaborative robot mass-production race, accounting for approximately 70% of new models introduced in 2025; Unitree dramatically cut pricing from USD 90,000 in 2024 to USD 5,900 in 2025, disrupting market dynamics. Korean collaborative robot makers already face adverse operating results stemming from Chinese price pressure and lack of scale economies, and an accelerating cost decline curve in Chinese products could compound pressure on domestic companies' margins and market share."
+          }
+        },
+        {
+          "title": {
+            "ko": "수익성 부재와 고밸류에이션 리스크",
+            "en": "Persistent Losses and Elevated Valuation Risk"
+          },
+          "body": {
+            "ko": "업종 내 주요 기업 대다수가 영업 적자 상태임에도 불구하고 미래 성장 기대를 반영한 높은 밸류에이션으로 거래되고 있다. 휴머노이드 상용화 일정이 지연되거나 수주잔고의 매출 전환 속도가 기대에 미치지 못할 경우, 밸류에이션 재평가 과정에서 주가 조정 리스크가 현실화될 수 있다.",
+            "en": "The majority of key sector names continue to operate at an operating loss, yet trade at valuations that embed significant forward growth expectations. Should the humanoid commercialization timeline prove slower than anticipated or order-backlog-to-revenue conversion fall short of consensus, the sector is exposed to material valuation de-rating risk."
+          }
+        },
+        {
+          "title": {
+            "ko": "미국 관세 및 글로벌 수요 불확실성",
+            "en": "US Tariff Headwinds and Global Capex Uncertainty"
+          },
+          "body": {
+            "ko": "두산로보틱스 사례에서 확인되듯, 미국 관세 불확실성은 북미 수출 의존도가 높은 기업의 매출 변동성을 직접적으로 확대시킨다. 글로벌 경기 불확실성에 따른 제조업 설비투자 지연 역시 로봇 수요의 단기 가시성을 낮추는 추가적인 하방 변수로 작용할 수 있다.",
+            "en": "As demonstrated by Doosan Robotics' FY2025 results, US tariff uncertainty directly amplifies revenue volatility for companies with significant North American export exposure. Broader global economic uncertainty and the associated risk of deferred manufacturing capital expenditure represent additional downside variables that could reduce near-term demand visibility across the sector."
+          }
+        }
+      ],
+      "sector": "로봇"
     }
   }
 };
