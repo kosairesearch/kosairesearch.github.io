@@ -515,7 +515,7 @@ KOSi18n.register({
       <p>저희의 AI 리포트는 Claude(대형 언어 모델)가 정해진 양식을 따라 작성합니다. 모델이 자유롭게 글을 지어내는 것이 아니라, 수집·정리한 시장 데이터를 바탕으로 정해진 항목 구조(사업 개요·실적·강세/약세·리스크)에 맞춰 정리하는 구조입니다.</p>
       <p>전체 과정은 자동화되어 있습니다. 매 거래일 저녁 KRX 시장 데이터(종가·거래량·시가총액 등)와 DART 기업 정보를 수집해 종목·업종 단위로 정리합니다. 신규 상장 종목은 자동으로 추가되고, 상장폐지 종목은 자동으로 제외됩니다.</p>
       <p>종목의 업종 분류도 AI가 수행합니다. 전 종목을 실제 사업 내용 기준으로 업종과 테마(인공지능·로봇 등)에 배정하며, 새 종목이 상장되면 같은 기준으로 자동 분류됩니다.</p>
-      <p>리포트 본문은 Claude의 배치(batch) API로 작성합니다. 작성 시 매수·매도·목표주가 같은 투자 권유 표현을 쓰지 않도록 지시하며, 필요한 경우 웹 검색으로 최근 업황을 확인하고 참고한 출처를 함께 남깁니다. 또한 주요 종목은 DART에 사업·분기·반기보고서 같은 정기 공시가 새로 제출되면, 최신 실적을 반영해 해당 종목 리포트를 자동으로 다시 작성합니다.</p>
+      <p>리포트 본문은 Claude의 배치(batch) API로 작성합니다. 작성 시 매수·매도·목표주가 같은 투자 권유 표현을 쓰지 않도록 지시하며, 필요한 경우 웹 검색으로 최근 업황을 확인하고 참고한 출처를 함께 남깁니다. 또한 모든 상장 종목은 DART에 사업·분기·반기보고서 같은 정기 공시가 새로 제출되면, 최신 실적을 반영해 해당 종목 리포트를 자동으로 다시 작성합니다.</p>
       <p>완성된 리포트와 데이터는 GitHub 기반 자동화로 사이트에 반영됩니다. 각 페이지에는 데이터 기준 시각이 표기되어, 어느 시점의 정보를 사용하고 있는지 확인할 수 있습니다.</p>
       <p>AI는 빠르고 일관적이지만, 사람의 판단을 완전히 대체하지는 못합니다. 그래서 저희는 리포트의 형식과 한계를 명확히 적어두는 쪽을 택했습니다. 한계는 다음 섹션에서 다시 설명합니다.</p>
     </div>
@@ -586,7 +586,7 @@ KOSi18n.register({
           <tbody>
             <tr><td><b>시세·거래량·시가총액</b></td><td><span class="cyc">매 거래일</span></td><td>평일 저녁 19~22시(KST)</td><td>일일 종가 기준이며, 실시간 시세는 제공되지 않습니다.</td></tr>
             <tr><td><b>종목 업종 분류</b></td><td><span class="cyc">수시</span></td><td>신규 상장 종목 감지 시</td><td>AI가 사업 내용 기준으로 자동 분류합니다.</td></tr>
-            <tr><td><b>AI 종목 리포트</b></td><td><span class="cyc">수시</span></td><td>신규 상장 시 · 정기보고서 제출 시</td><td>사업·분기·반기보고서가 새로 공시되면 주요 종목의 리포트를 최신 실적 기준으로 다시 작성합니다.</td></tr>
+            <tr><td><b>AI 종목 리포트</b></td><td><span class="cyc">수시</span></td><td>신규 상장 시 · 정기보고서 제출 시</td><td>전 종목 대상으로, 사업·분기·반기보고서가 새로 공시되면 해당 종목 리포트를 최신 실적 기준으로 다시 작성합니다.</td></tr>
             <tr><td><b>업종 AI 분석</b></td><td><span class="cyc">비정기</span></td><td>업종 구성 변동 시</td><td>업종별 집계와 AI 분석으로 재작성됩니다.</td></tr>
             <tr><td><b>신규·상장폐지 종목</b></td><td><span class="cyc">매 거래일</span></td><td>자동 반영</td><td>신규는 자동 추가·분류, 폐지는 자동 제외됩니다.</td></tr>
           </tbody>
@@ -688,7 +688,7 @@ if(window.KOSi18n) KOSi18n.register({
   "저희의 AI 리포트는 Claude(대형 언어 모델)가 정해진 양식을 따라 작성합니다. 모델이 자유롭게 글을 지어내는 것이 아니라, 수집·정리한 시장 데이터를 바탕으로 정해진 항목 구조(사업 개요·실적·강세/약세·리스크)에 맞춰 정리하는 구조입니다.": "Our AI reports are written by Claude (a large language model) following a fixed format. The model doesn't freely make things up — it works from the collected, organized market data and lays it out along a defined section structure (business overview, earnings, bull/bear factors, risks).",
   "전체 과정은 자동화되어 있습니다. 매 거래일 저녁 KRX 시장 데이터(종가·거래량·시가총액 등)와 DART 기업 정보를 수집해 종목·업종 단위로 정리합니다. 신규 상장 종목은 자동으로 추가되고, 상장폐지 종목은 자동으로 제외됩니다.": "The whole process is automated. Every trading-day evening we collect KRX market data (closing price, volume, market cap, etc.) and DART company information, then organize it by stock and industry. Newly listed stocks are added automatically, and delisted ones are removed automatically.",
   "종목의 업종 분류도 AI가 수행합니다. 전 종목을 실제 사업 내용 기준으로 업종과 테마(인공지능·로봇 등)에 배정하며, 새 종목이 상장되면 같은 기준으로 자동 분류됩니다.": "AI also handles industry classification. It assigns every stock to a sector and themes (AI, robotics, etc.) based on its actual business, and newly listed stocks are classified automatically by the same standard.",
-  "리포트 본문은 Claude의 배치(batch) API로 작성합니다. 작성 시 매수·매도·목표주가 같은 투자 권유 표현을 쓰지 않도록 지시하며, 필요한 경우 웹 검색으로 최근 업황을 확인하고 참고한 출처를 함께 남깁니다. 또한 주요 종목은 DART에 사업·분기·반기보고서 같은 정기 공시가 새로 제출되면, 최신 실적을 반영해 해당 종목 리포트를 자동으로 다시 작성합니다.": "Report text is generated through Claude's batch API. The model is instructed not to use recommendation language like buy, sell, or target price, and when needed it checks recent industry conditions via web search and records the sources it referenced. In addition, for major stocks, when a new periodic filing (annual, half-year, or quarterly report) is submitted to DART, that stock's report is automatically rewritten to reflect the latest results.",
+  "리포트 본문은 Claude의 배치(batch) API로 작성합니다. 작성 시 매수·매도·목표주가 같은 투자 권유 표현을 쓰지 않도록 지시하며, 필요한 경우 웹 검색으로 최근 업황을 확인하고 참고한 출처를 함께 남깁니다. 또한 모든 상장 종목은 DART에 사업·분기·반기보고서 같은 정기 공시가 새로 제출되면, 최신 실적을 반영해 해당 종목 리포트를 자동으로 다시 작성합니다.": "Report text is generated through Claude's batch API. The model is instructed not to use recommendation language like buy, sell, or target price, and when needed it checks recent industry conditions via web search and records the sources it referenced. In addition, for every listed stock, when a new periodic filing (annual, half-year, or quarterly report) is submitted to DART, that stock's report is automatically rewritten to reflect the latest results.",
   "완성된 리포트와 데이터는 GitHub 기반 자동화로 사이트에 반영됩니다. 각 페이지에는 데이터 기준 시각이 표기되어, 어느 시점의 정보를 사용하고 있는지 확인할 수 있습니다.": "Finished reports and data are published to the site through GitHub-based automation. Each page shows a data timestamp so you can tell which point in time the information reflects.",
   "AI는 빠르고 일관적이지만, 사람의 판단을 완전히 대체하지는 못합니다. 그래서 저희는 리포트의 형식과 한계를 명확히 적어두는 쪽을 택했습니다. 한계는 다음 섹션에서 다시 설명합니다.": "AI is fast and consistent, but it can't fully replace human judgment. That's why we made a point of writing the report's format and limitations down clearly. We explain those limitations in the next section.",
   "데이터 수집": "Data collection",
@@ -742,7 +742,7 @@ if(window.KOSi18n) KOSi18n.register({
   "AI 종목 리포트": "AI stock reports",
   "비정기": "Irregular",
   "신규 상장 시 · 정기보고서 제출 시": "On new listing · on periodic-filing submission",
-  "사업·분기·반기보고서가 새로 공시되면 주요 종목의 리포트를 최신 실적 기준으로 다시 작성합니다.": "When an annual, quarterly, or half-year report is newly filed, major stocks' reports are rewritten to reflect the latest results.",
+  "전 종목 대상으로, 사업·분기·반기보고서가 새로 공시되면 해당 종목 리포트를 최신 실적 기준으로 다시 작성합니다.": "Across all listed stocks, when an annual, quarterly, or half-year report is newly filed, that stock's report is rewritten to reflect the latest results.",
   "업종 AI 분석": "Industry AI analysis",
   "업종 구성 변동 시": "When industry composition changes",
   "업종별 집계와 AI 분석으로 재작성됩니다.": "Rewritten from per-industry aggregates and AI analysis.",
