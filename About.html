@@ -128,7 +128,8 @@ a.src:hover .link{text-decoration:underline}
 .ability ul{list-style:none;padding:0;margin:0;display:flex;flex-direction:column;gap:11px}
 .ability li{font:400 14.5px/1.5 var(--font-sans);color:var(--fg-2);padding-left:26px;position:relative}
 .ability li::before{position:absolute;left:0;top:-1px;font-weight:700;font-size:15px}
-.ability.can li::before{content:"✓";color:var(--up)}
+.ability.can li::before{content:"✓";color:#1f9d57}
+:root[data-theme="dark"] .ability.can li::before{color:#3ddc84}
 .ability.cant li::before{content:"✕";color:var(--fg-3)}
 
 /* update table */
