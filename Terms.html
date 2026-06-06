@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
-<title>피드백 — KOS ai</title>
+<title>이용약관 — KOS ai</title>
 <style>
 @font-face{font-family:"Pretendard";font-weight:400;font-style:normal;font-display:swap;src:url("fonts/Pretendard-Regular.otf") format("opentype")}
 @font-face{font-family:"Pretendard";font-weight:500;font-style:normal;font-display:swap;src:url("fonts/Pretendard-Medium.otf") format("opentype")}
@@ -47,7 +47,6 @@ body::before{content:"";position:fixed;inset:0;z-index:-1;pointer-events:none;
 .btn:active{transform:scale(.98)}
 .btn-primary{background:#000;color:#fff;padding:14px 20px;box-shadow:var(--shadow-1)}
 .btn-primary:hover{filter:brightness(1.1)}
-.btn-primary:disabled{opacity:.4;cursor:not-allowed;filter:none}
 :root[data-theme="dark"] .btn-primary{background:#fff;color:#000}
 .wrap{max-width:1120px;margin:0 auto;padding-left:var(--pad);padding-right:var(--pad);width:100%}
 
@@ -82,62 +81,20 @@ main{flex:1;padding:8px 0 64px}
 .head h1{margin:0;font-size:clamp(30px,4.4vw,42px);font-weight:800;letter-spacing:-.035em;line-height:1.05}
 .head p{margin:14px 0 0;font:400 16px/1.6 var(--font-sans);color:var(--fg-2);text-wrap:pretty}
 
-/* card */
-.card{max-width:560px;margin:0 auto;padding:32px}
-.field{margin-bottom:22px}
-.field:last-of-type{margin-bottom:0}
-.field>label{display:block;font:600 13px var(--font-sans);color:var(--fg-2);margin-bottom:9px}
-.field>label .opt{color:var(--fg-3);font-weight:500}
-
-/* rating faces */
-.rating{display:flex;gap:8px}
-.rate{flex:1;display:flex;flex-direction:column;align-items:center;gap:7px;padding:14px 6px;border-radius:var(--radius-md);
-  border:1px solid var(--border-2);background:rgba(255,255,255,.4);cursor:pointer;transition:.15s}
-:root[data-theme="dark"] .rate{background:rgba(255,255,255,.04)}
-.rate:hover{transform:translateY(-2px)}
-.rate .emo{width:30px;height:30px;color:var(--fg-3);transition:color .15s}
-.rate .emo svg{width:30px;height:30px;display:block}
-.rate .lab{font:600 12px var(--font-sans);color:var(--fg-3);text-align:center;transition:color .15s;white-space:nowrap}
-.rate.on{border-color:var(--fg-1);background:rgba(0,0,0,.04)}
-:root[data-theme="dark"] .rate.on{background:rgba(255,255,255,.08);border-color:rgba(255,255,255,.5)}
-.rate.on .emo,.rate.on .lab{color:var(--fg-1)}
-
-/* type chips */
-.seg{display:flex;gap:6px;flex-wrap:wrap}
-.seg button{font:600 13px var(--font-sans);color:var(--fg-2);background:rgba(0,0,0,.05);border:1px solid transparent;
-  padding:9px 15px;border-radius:var(--pill);cursor:pointer;transition:.15s;white-space:nowrap}
-.seg button:hover{color:var(--fg-1)}
-.seg button.active{background:#000;color:#fff}
-:root[data-theme="dark"] .seg button{background:rgba(255,255,255,.08)}
-:root[data-theme="dark"] .seg button.active{background:#fff;color:#000}
-
-.field textarea{width:100%;border:1px solid var(--border-2);background:rgba(255,255,255,.5);
-  border-radius:var(--radius-md);padding:13px 15px;font:400 15px/1.6 var(--font-sans);color:var(--fg-1);outline:none;resize:vertical;min-height:130px;transition:border-color .15s}
-:root[data-theme="dark"] .field textarea{background:rgba(255,255,255,.06)}
-.field textarea::placeholder{color:var(--fg-3)}
-.field textarea:focus{border-color:var(--fg-1)}
-:root[data-theme="dark"] .field textarea:focus{border-color:rgba(255,255,255,.5)}
-.field input[type=email]{width:100%;border:1px solid var(--border-2);background:rgba(255,255,255,.5);
-  border-radius:var(--radius-md);padding:13px 15px;font:400 15px var(--font-sans);color:var(--fg-1);outline:none;transition:border-color .15s}
-:root[data-theme="dark"] .field input[type=email]{background:rgba(255,255,255,.06)}
-.field input[type=email]::placeholder{color:var(--fg-3)}
-.field input[type=email]:focus{border-color:var(--fg-1)}
-:root[data-theme="dark"] .field input[type=email]:focus{border-color:rgba(255,255,255,.5)}
-
-.submit-row{margin-top:26px}
-.submit-row .btn-primary{width:100%}
-.form-note{margin:14px 0 0;font:400 12.5px/1.5 var(--font-sans);color:var(--fg-3);text-align:center}
-
-/* success */
-.sent{display:none;flex-direction:column;align-items:center;text-align:center;gap:8px;padding:20px 0}
-.sent.show{display:flex}
-.sent .chk{width:54px;height:54px;border-radius:50%;background:rgba(13,105,212,.1);color:var(--brand-blue);display:flex;align-items:center;justify-content:center;margin-bottom:8px}
-:root[data-theme="dark"] .sent .chk{background:rgba(95,168,255,.16);color:var(--brand-cyan)}
-.sent .chk svg{width:28px;height:28px}
-.sent h2{margin:0;font:700 21px var(--font-sans);letter-spacing:-.02em}
-.sent p{margin:0;font:400 15px/1.6 var(--font-sans);color:var(--fg-2);max-width:380px}
-.sent .btn{margin-top:14px;background:rgba(0,0,0,.05);color:var(--fg-1);padding:12px 20px}
-:root[data-theme="dark"] .sent .btn{background:rgba(255,255,255,.08)}
+/* legal doc */
+.card{max-width:760px;margin:0 auto;padding:38px 42px}
+.legal .upd{font:500 13px var(--font-sans);color:var(--fg-3);margin:0 0 24px;padding-bottom:18px;border-bottom:1px solid var(--hair)}
+.legal h2{font:700 17px var(--font-sans);letter-spacing:-.02em;color:var(--fg-1);margin:30px 0 10px}
+.legal h2:first-of-type{margin-top:4px}
+.legal p{font:400 14.5px/1.75 var(--font-sans);color:var(--fg-2);margin:0 0 12px;text-wrap:pretty}
+.legal ul{margin:0 0 12px;padding-left:20px}
+.legal li{font:400 14.5px/1.7 var(--font-sans);color:var(--fg-2);margin:0 0 7px}
+.legal .note{margin-top:22px;padding:15px 17px;border-radius:var(--radius-md);background:rgba(0,0,0,.04);border:1px solid var(--border-2);font:400 13px/1.65 var(--font-sans);color:var(--fg-2)}
+:root[data-theme="dark"] .legal .note{background:rgba(255,255,255,.04)}
+.legal a{color:var(--brand-blue);text-decoration:none}
+.legal a:hover{text-decoration:underline}
+:root[data-theme="dark"] .legal a{color:var(--brand-cyan)}
+@media (max-width:767px){.card{padding:26px 22px}}
 
 /* footer */
 .foot{padding:44px 0 28px}
@@ -160,7 +117,6 @@ main{flex:1;padding:8px 0 64px}
 @media (max-width:767px){
   .nav-links{display:none}.menu-btn{display:inline-flex}
   .card{padding:24px}
-  .rate{padding:12px 4px}.rate .lab{font-size:11px}
   .foot-grid{grid-template-columns:1fr 1fr;gap:24px}.foot-brand{grid-column:1/-1}.foot-bottom{flex-direction:column;gap:8px}
 }
 </style>
@@ -407,7 +363,7 @@ KOSi18n.register({
 </head>
 <body>
 
-<nav class="nav glass" data-screen-label="Feedback · Nav">
+<nav class="nav glass" data-screen-label="Contact · Nav">
   <a class="brand" href="Home.html"><span class="brand-name">KOS ai</span></a>
   <div class="nav-links">
     <a href="Home.html">홈</a>
@@ -432,68 +388,57 @@ KOSi18n.register({
   <a href="Watchlist.html">워치리스트</a>
 </div>
 
-<div class="wrap" data-screen-label="10 Feedback">
-  <div class="crumb"><a href="Home.html">홈</a> / <b>피드백</b></div>
+<div class="wrap" data-screen-label="09 Contact">
+  <div class="crumb"><a href="Home.html">홈</a> / <b>이용약관</b></div>
 </div>
 
 <main>
   <div class="wrap">
     <div class="head">
-      <div class="kick">FEEDBACK</div>
-      <h1>피드백 보내기</h1>
-      <p>KOS ai를 쓰면서 느낀 점을 들려주세요. 좋았던 점도, 아쉬웠던 점도 모두 환영합니다.</p>
+      <div class="kick">LEGAL</div>
+      <h1>이용약관</h1>
+      <p>KOS ai 서비스 이용에 관한 기본적인 사항을 규정합니다.</p>
     </div>
 
-    <form class="card glass" id="form">
-      <div class="field">
-        <label>전반적인 만족도</label>
-        <div class="rating" id="rating">
-          <div class="rate" data-v="1" role="button" tabindex="0">
-            <span class="emo"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="9"/><path d="M8.5 15.5s1.3-1.5 3.5-1.5 3.5 1.5 3.5 1.5" stroke-linecap="round"/><path d="M9 9.5h.01M15 9.5h.01" stroke-linecap="round"/></svg></span>
-            <span class="lab">아쉬워요</span>
-          </div>
-          <div class="rate" data-v="2" role="button" tabindex="0">
-            <span class="emo"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="9"/><path d="M8.5 14.5h7" stroke-linecap="round"/><path d="M9 9.5h.01M15 9.5h.01" stroke-linecap="round"/></svg></span>
-            <span class="lab">보통이에요</span>
-          </div>
-          <div class="rate" data-v="3" role="button" tabindex="0">
-            <span class="emo"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="9"/><path d="M8.5 14s1.3 1.8 3.5 1.8 3.5-1.8 3.5-1.8" stroke-linecap="round"/><path d="M9 9.5h.01M15 9.5h.01" stroke-linecap="round"/></svg></span>
-            <span class="lab">만족해요</span>
-          </div>
-        </div>
-      </div>
+    <div class="legal card glass">
+      <p class="upd">시행일: 2026년 6월 6일</p>
 
-      <div class="field">
-        <label>어떤 피드백인가요?</label>
-        <div class="seg" id="catSeg">
-          <button type="button" class="active" data-cat="개선 제안">개선 제안</button>
-          <button type="button" data-cat="버그 신고">버그 신고</button>
-          <button type="button" data-cat="칭찬·응원">칭찬·응원</button>
-          <button type="button" data-cat="기타">기타</button>
-        </div>
-      </div>
+      <h2>제1조 (목적)</h2>
+      <p>이 약관은 KOS ai(이하 "서비스")가 제공하는 AI 기반 투자 리서치 정보의 이용과 관련하여, 서비스와 이용자 간의 권리·의무 및 책임 사항을 규정하는 것을 목적으로 합니다.</p>
 
-      <div class="field">
-        <label for="f-msg">내용</label>
-        <textarea id="f-msg" data-i18n-ph placeholder="어떤 점이 좋았는지, 무엇이 불편했는지, 어떤 기능이 있으면 좋겠는지 자유롭게 적어주세요." required></textarea>
-      </div>
+      <h2>제2조 (서비스의 내용)</h2>
+      <p>서비스는 한국 상장기업에 관한 시장 데이터와 인공지능(AI)이 생성한 분석·리포트를 제공합니다. 모든 분석과 리포트는 투자 판단을 돕기 위한 참고용 정보이며, 특정 종목의 매수·매도 또는 보유를 권유하거나 추천하지 않습니다.</p>
+      <p>서비스는 현재 무료로 제공됩니다. 운영자는 향후 일부 기능을 유료 또는 구독 형태로 전환할 수 있으며, 이 경우 적용 범위와 조건을 사전에 고지합니다.</p>
 
-      <div class="field" style="margin-bottom:0">
-        <label for="f-email">이메일 <span class="opt">(선택 · 답변이 필요한 경우)</span></label>
-        <input id="f-email" type="email" data-i18n-ph placeholder="답변받으실 이메일 주소" />
-      </div>
+      <h2>제3조 (정보의 한계와 면책)</h2>
+      <p>서비스가 제공하는 정보는 AI가 자동으로 생성하며, 데이터의 지연·누락·오류가 포함될 수 있습니다. 서비스는 정보의 정확성·완전성·시의성을 보증하지 않습니다.</p>
+      <p>이용자의 투자 판단과 그 결과에 대한 책임은 전적으로 이용자 본인에게 있으며, 서비스는 제공된 정보를 근거로 한 이용자의 투자 결정 및 그로 인한 손익에 대하여 법령이 허용하는 범위에서 책임을 지지 않습니다.</p>
+      <p>중요한 수치나 사실은 원천 공시(예: 금융감독원 전자공시시스템 DART) 등에서 반드시 직접 확인하시기 바랍니다.</p>
 
-      <div class="submit-row">
-        <button type="submit" class="btn btn-primary" id="submitBtn" disabled>피드백 보내기</button>
-        <p class="form-note">만족도를 선택하시면 전송할 수 있어요. 익명으로 보내셔도 괜찮습니다.</p>
-      </div>
-    </form>
+      <h2>제4조 (지식재산권)</h2>
+      <p>서비스에 게시된 리포트·분석·디자인 등 모든 콘텐츠에 대한 저작권 및 기타 지식재산권은 운영자에게 귀속됩니다. 이용자는 운영자의 사전 동의 없이 이를 복제·배포·전송·크롤링하거나 상업적으로 이용할 수 없습니다.</p>
 
-    <div class="card glass sent" id="sent">
-      <div class="chk"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg></div>
-      <h2>소중한 피드백 감사합니다</h2>
-      <p>보내주신 의견은 빠짐없이 읽고, 서비스를 개선하는 데 활용하겠습니다.</p>
-      <a class="btn" href="Home.html">홈으로 돌아가기</a>
+      <h2>제5조 (이용자의 의무)</h2>
+      <p>이용자는 다음 각 호의 행위를 하여서는 안 됩니다.</p>
+      <ul>
+        <li>자동화된 수단으로 서비스에 과도한 부하를 유발하거나 데이터를 대량으로 수집하는 행위</li>
+        <li>서비스의 정상적인 운영을 방해하거나 보안을 침해하는 행위</li>
+        <li>관련 법령 또는 이 약관을 위반하는 행위</li>
+      </ul>
+
+      <h2>제6조 (서비스의 변경 및 중단)</h2>
+      <p>운영자는 서비스의 내용을 변경하거나, 기술적·운영상 필요에 따라 서비스의 전부 또는 일부를 중단할 수 있습니다. 무료로 제공되는 서비스의 변경·중단에 대하여 운영자는 법령에 특별한 규정이 없는 한 책임을 지지 않습니다.</p>
+
+      <h2>제7조 (유료·구독 서비스)</h2>
+      <p>향후 유료 또는 구독 서비스가 도입되는 경우, 요금·결제·환불·해지 등에 관한 구체적인 사항은 별도의 약관 또는 안내를 통해 정하며, 해당 내용은 이 약관과 함께 적용됩니다.</p>
+
+      <h2>제8조 (약관의 개정)</h2>
+      <p>운영자는 관련 법령을 위반하지 않는 범위에서 이 약관을 개정할 수 있습니다. 약관을 개정하는 경우 시행일과 변경 내용을 서비스 화면에 공지하며, 개정된 약관은 공지된 시행일부터 효력이 발생합니다.</p>
+
+      <h2>제9조 (준거법 및 관할)</h2>
+      <p>이 약관은 대한민국 법령에 따라 해석되며, 서비스와 이용자 간 분쟁에 관한 소송은 관련 법령이 정하는 절차에 따른 관할 법원에 제기합니다.</p>
+
+      <div class="note">본 약관에 명시되지 않은 사항은 관계 법령 및 상관례에 따릅니다. 문의는 <a href="Contact.html">문의하기</a> 또는 [연락처 이메일]로 접수해 주세요.</div>
     </div>
   </div>
 </main>
@@ -514,25 +459,6 @@ KOSi18n.register({
 </footer>
 
 <script>
-const rating=document.getElementById('rating'),submitBtn=document.getElementById('submitBtn');
-let rated=false;
-rating.addEventListener('click',e=>{
-  const r=e.target.closest('.rate');if(!r)return;
-  [...rating.children].forEach(c=>c.classList.toggle('on',c===r));
-  rated=true;submitBtn.disabled=false;
-});
-rating.addEventListener('keydown',e=>{
-  if(e.key==='Enter'||e.key===' '){const r=e.target.closest('.rate');if(r){e.preventDefault();r.click();}}
-});
-const catSeg=document.getElementById('catSeg');
-catSeg.addEventListener('click',e=>{const b=e.target.closest('button');if(!b)return;[...catSeg.children].forEach(c=>c.classList.toggle('active',c===b));});
-document.getElementById('form').addEventListener('submit',e=>{
-  e.preventDefault();
-  if(!rated)return;
-  document.getElementById('form').style.display='none';
-  document.getElementById('sent').classList.add('show');
-  window.scrollTo({top:0,behavior:'smooth'});
-});
 const menuBtn=document.getElementById('menuBtn'),mobileMenu=document.getElementById('mobileMenu');
 menuBtn.addEventListener('click',()=>mobileMenu.classList.toggle('open'));
 mobileMenu.querySelectorAll('a').forEach(a=>a.addEventListener('click',()=>mobileMenu.classList.remove('open')));
@@ -545,21 +471,34 @@ applyTheme(saved);
 themeBtn.addEventListener('click',()=>applyTheme(root.getAttribute('data-theme')==='dark'?'light':'dark'));
 
 if(window.KOSi18n) KOSi18n.register({
-  "피드백":"Feedback",
-  "피드백 보내기":"Send feedback",
-  "KOS ai를 쓰면서 느낀 점을 들려주세요. 좋았던 점도, 아쉬웠던 점도 모두 환영합니다.":"Tell us what you think about KOS ai. We welcome both what worked and what didn't.",
-  "전반적인 만족도":"Overall satisfaction",
-  "아쉬워요":"Not great","보통이에요":"It's okay","만족해요":"I'm happy",
-  "어떤 피드백인가요?":"What kind of feedback?",
-  "개선 제안":"Suggestion","버그 신고":"Bug report","칭찬·응원":"Praise & support","기타":"Other",
-  "내용":"Message",
-  "이메일":"Email","(선택 · 답변이 필요한 경우)":"(optional · if a reply is needed)",
-  "어떤 점이 좋았는지, 무엇이 불편했는지, 어떤 기능이 있으면 좋겠는지 자유롭게 적어주세요.":"Tell us what you liked, what felt awkward, or what feature you'd love to see. Anything goes.",
-  "답변받으실 이메일 주소":"Email address for our reply",
-  "만족도를 선택하시면 전송할 수 있어요. 익명으로 보내셔도 괜찮습니다.":"You can submit once you pick a rating. Anonymous feedback is fine.",
-  "소중한 피드백 감사합니다":"Thank you for your feedback",
-  "보내주신 의견은 빠짐없이 읽고, 서비스를 개선하는 데 활용하겠습니다.":"We read every single message and use them to make the service better.",
-  "홈으로 돌아가기":"Back to home"
+  "KOS ai 서비스 이용에 관한 기본적인 사항을 규정합니다.":"These terms set out the basics of using the KOS ai service.",
+  "시행일: 2026년 6월 6일":"Effective date: June 6, 2026",
+  "제1조 (목적)":"Article 1 (Purpose)",
+  "이 약관은 KOS ai(이하 \"서비스\")가 제공하는 AI 기반 투자 리서치 정보의 이용과 관련하여, 서비스와 이용자 간의 권리·의무 및 책임 사항을 규정하는 것을 목적으로 합니다.":"These Terms govern the rights, obligations, and responsibilities between the service and its users in connection with the use of the AI-based investment research information provided by KOS ai (the \"Service\").",
+  "제2조 (서비스의 내용)":"Article 2 (The Service)",
+  "서비스는 한국 상장기업에 관한 시장 데이터와 인공지능(AI)이 생성한 분석·리포트를 제공합니다. 모든 분석과 리포트는 투자 판단을 돕기 위한 참고용 정보이며, 특정 종목의 매수·매도 또는 보유를 권유하거나 추천하지 않습니다.":"The Service provides market data on Korean listed companies and analyses and reports generated by artificial intelligence (AI). All analyses and reports are reference information to aid investment judgment, and do not solicit or recommend the purchase, sale, or holding of any particular security.",
+  "서비스는 현재 무료로 제공됩니다. 운영자는 향후 일부 기능을 유료 또는 구독 형태로 전환할 수 있으며, 이 경우 적용 범위와 조건을 사전에 고지합니다.":"The Service is currently provided free of charge. The operator may, in the future, convert some features to a paid or subscription model, in which case the scope and conditions will be announced in advance.",
+  "제3조 (정보의 한계와 면책)":"Article 3 (Limitations of Information and Disclaimer)",
+  "서비스가 제공하는 정보는 AI가 자동으로 생성하며, 데이터의 지연·누락·오류가 포함될 수 있습니다. 서비스는 정보의 정확성·완전성·시의성을 보증하지 않습니다.":"Information provided by the Service is generated automatically by AI and may contain delays, omissions, or errors. The Service does not guarantee the accuracy, completeness, or timeliness of the information.",
+  "이용자의 투자 판단과 그 결과에 대한 책임은 전적으로 이용자 본인에게 있으며, 서비스는 제공된 정보를 근거로 한 이용자의 투자 결정 및 그로 인한 손익에 대하여 법령이 허용하는 범위에서 책임을 지지 않습니다.":"Users are solely responsible for their own investment decisions and the outcomes thereof. To the extent permitted by law, the Service bears no liability for investment decisions made on the basis of the information provided or for any resulting gains or losses.",
+  "중요한 수치나 사실은 원천 공시(예: 금융감독원 전자공시시스템 DART) 등에서 반드시 직접 확인하시기 바랍니다.":"Please always verify important figures or facts directly against original disclosures (e.g., the Financial Supervisory Service's DART system).",
+  "제4조 (지식재산권)":"Article 4 (Intellectual Property)",
+  "서비스에 게시된 리포트·분석·디자인 등 모든 콘텐츠에 대한 저작권 및 기타 지식재산권은 운영자에게 귀속됩니다. 이용자는 운영자의 사전 동의 없이 이를 복제·배포·전송·크롤링하거나 상업적으로 이용할 수 없습니다.":"Copyright and other intellectual property rights in all content posted on the Service — including reports, analyses, and design — belong to the operator. Users may not reproduce, distribute, transmit, crawl, or commercially exploit such content without the operator's prior consent.",
+  "제5조 (이용자의 의무)":"Article 5 (User Obligations)",
+  "이용자는 다음 각 호의 행위를 하여서는 안 됩니다.":"Users must not engage in any of the following:",
+  "자동화된 수단으로 서비스에 과도한 부하를 유발하거나 데이터를 대량으로 수집하는 행위":"Using automated means to place an excessive load on the Service or to harvest data in bulk",
+  "서비스의 정상적인 운영을 방해하거나 보안을 침해하는 행위":"Interfering with the normal operation of the Service or breaching its security",
+  "관련 법령 또는 이 약관을 위반하는 행위":"Violating applicable laws or these Terms",
+  "제6조 (서비스의 변경 및 중단)":"Article 6 (Changes and Suspension of the Service)",
+  "운영자는 서비스의 내용을 변경하거나, 기술적·운영상 필요에 따라 서비스의 전부 또는 일부를 중단할 수 있습니다. 무료로 제공되는 서비스의 변경·중단에 대하여 운영자는 법령에 특별한 규정이 없는 한 책임을 지지 않습니다.":"The operator may change the Service or suspend all or part of it as required for technical or operational reasons. Unless otherwise specified by law, the operator bears no liability for changes to or suspension of a Service provided free of charge.",
+  "제7조 (유료·구독 서비스)":"Article 7 (Paid and Subscription Services)",
+  "향후 유료 또는 구독 서비스가 도입되는 경우, 요금·결제·환불·해지 등에 관한 구체적인 사항은 별도의 약관 또는 안내를 통해 정하며, 해당 내용은 이 약관과 함께 적용됩니다.":"If paid or subscription services are introduced in the future, the specifics regarding fees, payment, refunds, and cancellation will be set out in separate terms or notices, which will apply together with these Terms.",
+  "제8조 (약관의 개정)":"Article 8 (Amendment of the Terms)",
+  "운영자는 관련 법령을 위반하지 않는 범위에서 이 약관을 개정할 수 있습니다. 약관을 개정하는 경우 시행일과 변경 내용을 서비스 화면에 공지하며, 개정된 약관은 공지된 시행일부터 효력이 발생합니다.":"The operator may amend these Terms to the extent that it does not violate applicable laws. When the Terms are amended, the effective date and the changes will be announced within the Service, and the amended Terms take effect from the announced effective date.",
+  "제9조 (준거법 및 관할)":"Article 9 (Governing Law and Jurisdiction)",
+  "이 약관은 대한민국 법령에 따라 해석되며, 서비스와 이용자 간 분쟁에 관한 소송은 관련 법령이 정하는 절차에 따른 관할 법원에 제기합니다.":"These Terms are construed in accordance with the laws of the Republic of Korea, and any litigation regarding disputes between the Service and a user shall be brought before the competent court determined under applicable law.",
+  "본 약관에 명시되지 않은 사항은 관계 법령 및 상관례에 따릅니다. 문의는":"Matters not specified in these Terms are governed by applicable laws and commercial practice. For inquiries, please use",
+  "또는 [연락처 이메일]로 접수해 주세요.":"or [contact email]."
 });
 </script>
 </body>

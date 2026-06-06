@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
-<title>피드백 — KOS ai</title>
+<title>개인정보처리방침 — KOS ai</title>
 <style>
 @font-face{font-family:"Pretendard";font-weight:400;font-style:normal;font-display:swap;src:url("fonts/Pretendard-Regular.otf") format("opentype")}
 @font-face{font-family:"Pretendard";font-weight:500;font-style:normal;font-display:swap;src:url("fonts/Pretendard-Medium.otf") format("opentype")}
@@ -47,7 +47,6 @@ body::before{content:"";position:fixed;inset:0;z-index:-1;pointer-events:none;
 .btn:active{transform:scale(.98)}
 .btn-primary{background:#000;color:#fff;padding:14px 20px;box-shadow:var(--shadow-1)}
 .btn-primary:hover{filter:brightness(1.1)}
-.btn-primary:disabled{opacity:.4;cursor:not-allowed;filter:none}
 :root[data-theme="dark"] .btn-primary{background:#fff;color:#000}
 .wrap{max-width:1120px;margin:0 auto;padding-left:var(--pad);padding-right:var(--pad);width:100%}
 
@@ -82,62 +81,20 @@ main{flex:1;padding:8px 0 64px}
 .head h1{margin:0;font-size:clamp(30px,4.4vw,42px);font-weight:800;letter-spacing:-.035em;line-height:1.05}
 .head p{margin:14px 0 0;font:400 16px/1.6 var(--font-sans);color:var(--fg-2);text-wrap:pretty}
 
-/* card */
-.card{max-width:560px;margin:0 auto;padding:32px}
-.field{margin-bottom:22px}
-.field:last-of-type{margin-bottom:0}
-.field>label{display:block;font:600 13px var(--font-sans);color:var(--fg-2);margin-bottom:9px}
-.field>label .opt{color:var(--fg-3);font-weight:500}
-
-/* rating faces */
-.rating{display:flex;gap:8px}
-.rate{flex:1;display:flex;flex-direction:column;align-items:center;gap:7px;padding:14px 6px;border-radius:var(--radius-md);
-  border:1px solid var(--border-2);background:rgba(255,255,255,.4);cursor:pointer;transition:.15s}
-:root[data-theme="dark"] .rate{background:rgba(255,255,255,.04)}
-.rate:hover{transform:translateY(-2px)}
-.rate .emo{width:30px;height:30px;color:var(--fg-3);transition:color .15s}
-.rate .emo svg{width:30px;height:30px;display:block}
-.rate .lab{font:600 12px var(--font-sans);color:var(--fg-3);text-align:center;transition:color .15s;white-space:nowrap}
-.rate.on{border-color:var(--fg-1);background:rgba(0,0,0,.04)}
-:root[data-theme="dark"] .rate.on{background:rgba(255,255,255,.08);border-color:rgba(255,255,255,.5)}
-.rate.on .emo,.rate.on .lab{color:var(--fg-1)}
-
-/* type chips */
-.seg{display:flex;gap:6px;flex-wrap:wrap}
-.seg button{font:600 13px var(--font-sans);color:var(--fg-2);background:rgba(0,0,0,.05);border:1px solid transparent;
-  padding:9px 15px;border-radius:var(--pill);cursor:pointer;transition:.15s;white-space:nowrap}
-.seg button:hover{color:var(--fg-1)}
-.seg button.active{background:#000;color:#fff}
-:root[data-theme="dark"] .seg button{background:rgba(255,255,255,.08)}
-:root[data-theme="dark"] .seg button.active{background:#fff;color:#000}
-
-.field textarea{width:100%;border:1px solid var(--border-2);background:rgba(255,255,255,.5);
-  border-radius:var(--radius-md);padding:13px 15px;font:400 15px/1.6 var(--font-sans);color:var(--fg-1);outline:none;resize:vertical;min-height:130px;transition:border-color .15s}
-:root[data-theme="dark"] .field textarea{background:rgba(255,255,255,.06)}
-.field textarea::placeholder{color:var(--fg-3)}
-.field textarea:focus{border-color:var(--fg-1)}
-:root[data-theme="dark"] .field textarea:focus{border-color:rgba(255,255,255,.5)}
-.field input[type=email]{width:100%;border:1px solid var(--border-2);background:rgba(255,255,255,.5);
-  border-radius:var(--radius-md);padding:13px 15px;font:400 15px var(--font-sans);color:var(--fg-1);outline:none;transition:border-color .15s}
-:root[data-theme="dark"] .field input[type=email]{background:rgba(255,255,255,.06)}
-.field input[type=email]::placeholder{color:var(--fg-3)}
-.field input[type=email]:focus{border-color:var(--fg-1)}
-:root[data-theme="dark"] .field input[type=email]:focus{border-color:rgba(255,255,255,.5)}
-
-.submit-row{margin-top:26px}
-.submit-row .btn-primary{width:100%}
-.form-note{margin:14px 0 0;font:400 12.5px/1.5 var(--font-sans);color:var(--fg-3);text-align:center}
-
-/* success */
-.sent{display:none;flex-direction:column;align-items:center;text-align:center;gap:8px;padding:20px 0}
-.sent.show{display:flex}
-.sent .chk{width:54px;height:54px;border-radius:50%;background:rgba(13,105,212,.1);color:var(--brand-blue);display:flex;align-items:center;justify-content:center;margin-bottom:8px}
-:root[data-theme="dark"] .sent .chk{background:rgba(95,168,255,.16);color:var(--brand-cyan)}
-.sent .chk svg{width:28px;height:28px}
-.sent h2{margin:0;font:700 21px var(--font-sans);letter-spacing:-.02em}
-.sent p{margin:0;font:400 15px/1.6 var(--font-sans);color:var(--fg-2);max-width:380px}
-.sent .btn{margin-top:14px;background:rgba(0,0,0,.05);color:var(--fg-1);padding:12px 20px}
-:root[data-theme="dark"] .sent .btn{background:rgba(255,255,255,.08)}
+/* legal doc */
+.card{max-width:760px;margin:0 auto;padding:38px 42px}
+.legal .upd{font:500 13px var(--font-sans);color:var(--fg-3);margin:0 0 24px;padding-bottom:18px;border-bottom:1px solid var(--hair)}
+.legal h2{font:700 17px var(--font-sans);letter-spacing:-.02em;color:var(--fg-1);margin:30px 0 10px}
+.legal h2:first-of-type{margin-top:4px}
+.legal p{font:400 14.5px/1.75 var(--font-sans);color:var(--fg-2);margin:0 0 12px;text-wrap:pretty}
+.legal ul{margin:0 0 12px;padding-left:20px}
+.legal li{font:400 14.5px/1.7 var(--font-sans);color:var(--fg-2);margin:0 0 7px}
+.legal .note{margin-top:22px;padding:15px 17px;border-radius:var(--radius-md);background:rgba(0,0,0,.04);border:1px solid var(--border-2);font:400 13px/1.65 var(--font-sans);color:var(--fg-2)}
+:root[data-theme="dark"] .legal .note{background:rgba(255,255,255,.04)}
+.legal a{color:var(--brand-blue);text-decoration:none}
+.legal a:hover{text-decoration:underline}
+:root[data-theme="dark"] .legal a{color:var(--brand-cyan)}
+@media (max-width:767px){.card{padding:26px 22px}}
 
 /* footer */
 .foot{padding:44px 0 28px}
@@ -160,7 +117,6 @@ main{flex:1;padding:8px 0 64px}
 @media (max-width:767px){
   .nav-links{display:none}.menu-btn{display:inline-flex}
   .card{padding:24px}
-  .rate{padding:12px 4px}.rate .lab{font-size:11px}
   .foot-grid{grid-template-columns:1fr 1fr;gap:24px}.foot-brand{grid-column:1/-1}.foot-bottom{flex-direction:column;gap:8px}
 }
 </style>
@@ -407,7 +363,7 @@ KOSi18n.register({
 </head>
 <body>
 
-<nav class="nav glass" data-screen-label="Feedback · Nav">
+<nav class="nav glass" data-screen-label="Contact · Nav">
   <a class="brand" href="Home.html"><span class="brand-name">KOS ai</span></a>
   <div class="nav-links">
     <a href="Home.html">홈</a>
@@ -432,68 +388,69 @@ KOSi18n.register({
   <a href="Watchlist.html">워치리스트</a>
 </div>
 
-<div class="wrap" data-screen-label="10 Feedback">
-  <div class="crumb"><a href="Home.html">홈</a> / <b>피드백</b></div>
+<div class="wrap" data-screen-label="09 Contact">
+  <div class="crumb"><a href="Home.html">홈</a> / <b>개인정보처리방침</b></div>
 </div>
 
 <main>
   <div class="wrap">
     <div class="head">
-      <div class="kick">FEEDBACK</div>
-      <h1>피드백 보내기</h1>
-      <p>KOS ai를 쓰면서 느낀 점을 들려주세요. 좋았던 점도, 아쉬웠던 점도 모두 환영합니다.</p>
+      <div class="kick">LEGAL</div>
+      <h1>개인정보처리방침</h1>
+      <p>KOS ai는 이용자의 개인정보를 소중히 여기며, 관련 법령을 준수합니다.</p>
     </div>
 
-    <form class="card glass" id="form">
-      <div class="field">
-        <label>전반적인 만족도</label>
-        <div class="rating" id="rating">
-          <div class="rate" data-v="1" role="button" tabindex="0">
-            <span class="emo"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="9"/><path d="M8.5 15.5s1.3-1.5 3.5-1.5 3.5 1.5 3.5 1.5" stroke-linecap="round"/><path d="M9 9.5h.01M15 9.5h.01" stroke-linecap="round"/></svg></span>
-            <span class="lab">아쉬워요</span>
-          </div>
-          <div class="rate" data-v="2" role="button" tabindex="0">
-            <span class="emo"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="9"/><path d="M8.5 14.5h7" stroke-linecap="round"/><path d="M9 9.5h.01M15 9.5h.01" stroke-linecap="round"/></svg></span>
-            <span class="lab">보통이에요</span>
-          </div>
-          <div class="rate" data-v="3" role="button" tabindex="0">
-            <span class="emo"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="9"/><path d="M8.5 14s1.3 1.8 3.5 1.8 3.5-1.8 3.5-1.8" stroke-linecap="round"/><path d="M9 9.5h.01M15 9.5h.01" stroke-linecap="round"/></svg></span>
-            <span class="lab">만족해요</span>
-          </div>
-        </div>
-      </div>
+    <div class="legal card glass">
+      <p class="upd">시행일: 2026년 6월 6일</p>
 
-      <div class="field">
-        <label>어떤 피드백인가요?</label>
-        <div class="seg" id="catSeg">
-          <button type="button" class="active" data-cat="개선 제안">개선 제안</button>
-          <button type="button" data-cat="버그 신고">버그 신고</button>
-          <button type="button" data-cat="칭찬·응원">칭찬·응원</button>
-          <button type="button" data-cat="기타">기타</button>
-        </div>
-      </div>
+      <p>KOS ai(이하 "서비스")는 「개인정보 보호법」 등 관련 법령에 따라 이용자의 개인정보를 보호하고, 다음과 같이 개인정보를 처리합니다.</p>
 
-      <div class="field">
-        <label for="f-msg">내용</label>
-        <textarea id="f-msg" data-i18n-ph placeholder="어떤 점이 좋았는지, 무엇이 불편했는지, 어떤 기능이 있으면 좋겠는지 자유롭게 적어주세요." required></textarea>
-      </div>
+      <h2>1. 수집하는 개인정보 항목 및 방법</h2>
+      <p>서비스는 회원가입 절차 없이 이용할 수 있으며, 원칙적으로 개인정보를 서버에 수집·저장하지 않습니다. 다만 다음의 경우에 한해 최소한의 정보가 처리됩니다.</p>
+      <ul>
+        <li>문의·오류 제보 시: 이용자가 자발적으로 제공하는 이메일 주소 및 문의 내용</li>
+        <li>서비스 이용 과정에서 이용자의 브라우저에 저장되는 설정값(화면 테마·언어·관심 종목 등)</li>
+      </ul>
+      <p>위 설정값은 이용자의 브라우저 로컬 저장소(localStorage)에만 저장되며, 서비스 서버로 전송되거나 운영자가 수집하지 않습니다. 이용자는 브라우저 설정에서 언제든지 이를 삭제할 수 있습니다.</p>
 
-      <div class="field" style="margin-bottom:0">
-        <label for="f-email">이메일 <span class="opt">(선택 · 답변이 필요한 경우)</span></label>
-        <input id="f-email" type="email" data-i18n-ph placeholder="답변받으실 이메일 주소" />
-      </div>
+      <h2>2. 개인정보의 이용 목적</h2>
+      <p>수집된 이메일 주소와 문의 내용은 이용자의 문의·제보에 응답하기 위한 목적으로만 이용합니다.</p>
 
-      <div class="submit-row">
-        <button type="submit" class="btn btn-primary" id="submitBtn" disabled>피드백 보내기</button>
-        <p class="form-note">만족도를 선택하시면 전송할 수 있어요. 익명으로 보내셔도 괜찮습니다.</p>
-      </div>
-    </form>
+      <h2>3. 개인정보의 보유 및 이용 기간</h2>
+      <p>문의 응대를 위해 수집된 개인정보는 응대가 완료된 후 지체 없이 파기합니다. 다만 관련 법령에 따라 보존할 필요가 있는 경우 해당 기간 동안 보관합니다.</p>
 
-    <div class="card glass sent" id="sent">
-      <div class="chk"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg></div>
-      <h2>소중한 피드백 감사합니다</h2>
-      <p>보내주신 의견은 빠짐없이 읽고, 서비스를 개선하는 데 활용하겠습니다.</p>
-      <a class="btn" href="Home.html">홈으로 돌아가기</a>
+      <h2>4. 개인정보의 제3자 제공</h2>
+      <p>서비스는 이용자의 개인정보를 외부에 제공하지 않습니다. 다만 법령에 근거하거나 수사기관의 적법한 요청이 있는 경우에는 예외로 합니다.</p>
+
+      <h2>5. 개인정보 처리의 위탁</h2>
+      <p>서비스는 안정적인 운영을 위해 외부 호스팅·인프라를 이용할 수 있습니다. 이 경우에도 개인정보가 안전하게 관리되도록 필요한 조치를 취하며, 위탁이 발생하는 경우 그 내용을 본 방침을 통해 고지합니다.</p>
+
+      <h2>6. 쿠키 및 자동 수집 장치</h2>
+      <p>서비스는 광고·분석 목적의 추적 쿠키나 외부 분석 도구를 사용하지 않습니다. 화면 테마·언어·관심 종목과 같은 이용 편의 기능을 위해 브라우저 로컬 저장소만 사용합니다.</p>
+
+      <h2>7. 이용자의 권리</h2>
+      <p>이용자는 자신의 개인정보에 대하여 열람·정정·삭제·처리정지를 요구할 수 있습니다. 이러한 요청은 아래 연락처를 통해 접수할 수 있으며, 서비스는 관련 법령에 따라 지체 없이 조치합니다.</p>
+
+      <h2>8. 개인정보의 파기</h2>
+      <p>보유 기간이 경과하거나 처리 목적이 달성된 개인정보는 지체 없이 파기합니다. 전자적 파일은 복구할 수 없는 방법으로 영구 삭제합니다.</p>
+
+      <h2>9. 안전성 확보 조치</h2>
+      <p>서비스는 개인정보를 최소한으로 수집하는 것을 원칙으로 하며, 수집된 정보가 분실·도난·유출·변조되지 않도록 합리적인 보호 조치를 취합니다.</p>
+
+      <h2>10. 향후 변경 사항</h2>
+      <p>향후 유료·구독 서비스가 도입되어 결제 정보 등 추가적인 개인정보를 수집하게 되는 경우, 그 항목과 목적을 사전에 고지하고 동의를 받은 후 처리합니다.</p>
+
+      <h2>11. 개인정보 보호책임자</h2>
+      <p>개인정보 처리에 관한 문의·불만·피해 구제는 아래로 접수할 수 있습니다.</p>
+      <ul>
+        <li>운영자: [운영자명]</li>
+        <li>연락처: [연락처 이메일]</li>
+      </ul>
+
+      <h2>12. 고지의 의무</h2>
+      <p>이 개인정보처리방침은 법령·정책 또는 서비스 내용의 변경에 따라 개정될 수 있으며, 개정 시 시행일과 변경 내용을 서비스 화면에 공지합니다.</p>
+
+      <div class="note">개인정보 침해에 관한 상담이 필요하신 경우 개인정보분쟁조정위원회(kopico.go.kr), 개인정보침해신고센터(국번 없이 118) 등에 문의하실 수 있습니다.</div>
     </div>
   </div>
 </main>
@@ -514,25 +471,6 @@ KOSi18n.register({
 </footer>
 
 <script>
-const rating=document.getElementById('rating'),submitBtn=document.getElementById('submitBtn');
-let rated=false;
-rating.addEventListener('click',e=>{
-  const r=e.target.closest('.rate');if(!r)return;
-  [...rating.children].forEach(c=>c.classList.toggle('on',c===r));
-  rated=true;submitBtn.disabled=false;
-});
-rating.addEventListener('keydown',e=>{
-  if(e.key==='Enter'||e.key===' '){const r=e.target.closest('.rate');if(r){e.preventDefault();r.click();}}
-});
-const catSeg=document.getElementById('catSeg');
-catSeg.addEventListener('click',e=>{const b=e.target.closest('button');if(!b)return;[...catSeg.children].forEach(c=>c.classList.toggle('active',c===b));});
-document.getElementById('form').addEventListener('submit',e=>{
-  e.preventDefault();
-  if(!rated)return;
-  document.getElementById('form').style.display='none';
-  document.getElementById('sent').classList.add('show');
-  window.scrollTo({top:0,behavior:'smooth'});
-});
 const menuBtn=document.getElementById('menuBtn'),mobileMenu=document.getElementById('mobileMenu');
 menuBtn.addEventListener('click',()=>mobileMenu.classList.toggle('open'));
 mobileMenu.querySelectorAll('a').forEach(a=>a.addEventListener('click',()=>mobileMenu.classList.remove('open')));
@@ -545,21 +483,39 @@ applyTheme(saved);
 themeBtn.addEventListener('click',()=>applyTheme(root.getAttribute('data-theme')==='dark'?'light':'dark'));
 
 if(window.KOSi18n) KOSi18n.register({
-  "피드백":"Feedback",
-  "피드백 보내기":"Send feedback",
-  "KOS ai를 쓰면서 느낀 점을 들려주세요. 좋았던 점도, 아쉬웠던 점도 모두 환영합니다.":"Tell us what you think about KOS ai. We welcome both what worked and what didn't.",
-  "전반적인 만족도":"Overall satisfaction",
-  "아쉬워요":"Not great","보통이에요":"It's okay","만족해요":"I'm happy",
-  "어떤 피드백인가요?":"What kind of feedback?",
-  "개선 제안":"Suggestion","버그 신고":"Bug report","칭찬·응원":"Praise & support","기타":"Other",
-  "내용":"Message",
-  "이메일":"Email","(선택 · 답변이 필요한 경우)":"(optional · if a reply is needed)",
-  "어떤 점이 좋았는지, 무엇이 불편했는지, 어떤 기능이 있으면 좋겠는지 자유롭게 적어주세요.":"Tell us what you liked, what felt awkward, or what feature you'd love to see. Anything goes.",
-  "답변받으실 이메일 주소":"Email address for our reply",
-  "만족도를 선택하시면 전송할 수 있어요. 익명으로 보내셔도 괜찮습니다.":"You can submit once you pick a rating. Anonymous feedback is fine.",
-  "소중한 피드백 감사합니다":"Thank you for your feedback",
-  "보내주신 의견은 빠짐없이 읽고, 서비스를 개선하는 데 활용하겠습니다.":"We read every single message and use them to make the service better.",
-  "홈으로 돌아가기":"Back to home"
+  "KOS ai는 이용자의 개인정보를 소중히 여기며, 관련 법령을 준수합니다.":"KOS ai values your personal information and complies with applicable laws.",
+  "시행일: 2026년 6월 6일":"Effective date: June 6, 2026",
+  "KOS ai(이하 \"서비스\")는 「개인정보 보호법」 등 관련 법령에 따라 이용자의 개인정보를 보호하고, 다음과 같이 개인정보를 처리합니다.":"KOS ai (the \"Service\") protects users' personal information in accordance with the Personal Information Protection Act and other applicable laws, and processes personal information as set out below.",
+  "1. 수집하는 개인정보 항목 및 방법":"1. Items of Personal Information Collected and How",
+  "서비스는 회원가입 절차 없이 이용할 수 있으며, 원칙적으로 개인정보를 서버에 수집·저장하지 않습니다. 다만 다음의 경우에 한해 최소한의 정보가 처리됩니다.":"The Service can be used without any sign-up, and as a rule it does not collect or store personal information on its servers. Only in the following cases is a minimal amount of information processed:",
+  "문의·오류 제보 시: 이용자가 자발적으로 제공하는 이메일 주소 및 문의 내용":"When you make an inquiry or report an error: the email address and message you voluntarily provide",
+  "서비스 이용 과정에서 이용자의 브라우저에 저장되는 설정값(화면 테마·언어·관심 종목 등)":"Settings stored in your browser while using the Service (screen theme, language, watchlist, etc.)",
+  "위 설정값은 이용자의 브라우저 로컬 저장소(localStorage)에만 저장되며, 서비스 서버로 전송되거나 운영자가 수집하지 않습니다. 이용자는 브라우저 설정에서 언제든지 이를 삭제할 수 있습니다.":"These settings are stored only in your browser's local storage (localStorage); they are neither transmitted to the Service's servers nor collected by the operator. You can delete them at any time from your browser settings.",
+  "2. 개인정보의 이용 목적":"2. Purpose of Use",
+  "수집된 이메일 주소와 문의 내용은 이용자의 문의·제보에 응답하기 위한 목적으로만 이용합니다.":"The collected email address and message are used solely to respond to your inquiry or report.",
+  "3. 개인정보의 보유 및 이용 기간":"3. Retention and Use Period",
+  "문의 응대를 위해 수집된 개인정보는 응대가 완료된 후 지체 없이 파기합니다. 다만 관련 법령에 따라 보존할 필요가 있는 경우 해당 기간 동안 보관합니다.":"Personal information collected to handle an inquiry is destroyed without delay once the response is complete. However, where retention is required by applicable law, it is kept for the relevant period.",
+  "4. 개인정보의 제3자 제공":"4. Provision to Third Parties",
+  "서비스는 이용자의 개인정보를 외부에 제공하지 않습니다. 다만 법령에 근거하거나 수사기관의 적법한 요청이 있는 경우에는 예외로 합니다.":"The Service does not provide users' personal information to outside parties, except where based on law or in response to a lawful request from an investigative authority.",
+  "5. 개인정보 처리의 위탁":"5. Outsourcing of Processing",
+  "서비스는 안정적인 운영을 위해 외부 호스팅·인프라를 이용할 수 있습니다. 이 경우에도 개인정보가 안전하게 관리되도록 필요한 조치를 취하며, 위탁이 발생하는 경우 그 내용을 본 방침을 통해 고지합니다.":"The Service may use external hosting and infrastructure for stable operation. Even so, it takes the measures needed to keep personal information secure, and where outsourcing occurs, it discloses the details through this policy.",
+  "6. 쿠키 및 자동 수집 장치":"6. Cookies and Automatic Collection",
+  "서비스는 광고·분석 목적의 추적 쿠키나 외부 분석 도구를 사용하지 않습니다. 화면 테마·언어·관심 종목과 같은 이용 편의 기능을 위해 브라우저 로컬 저장소만 사용합니다.":"The Service does not use tracking cookies for advertising or analytics, nor any third-party analytics tools. It uses only browser local storage for convenience features such as screen theme, language, and watchlist.",
+  "7. 이용자의 권리":"7. Your Rights",
+  "이용자는 자신의 개인정보에 대하여 열람·정정·삭제·처리정지를 요구할 수 있습니다. 이러한 요청은 아래 연락처를 통해 접수할 수 있으며, 서비스는 관련 법령에 따라 지체 없이 조치합니다.":"You may request access to, correction of, deletion of, or suspension of processing of your personal information. Such requests can be made via the contact below, and the Service will act without delay in accordance with applicable law.",
+  "8. 개인정보의 파기":"8. Destruction of Personal Information",
+  "보유 기간이 경과하거나 처리 목적이 달성된 개인정보는 지체 없이 파기합니다. 전자적 파일은 복구할 수 없는 방법으로 영구 삭제합니다.":"Personal information whose retention period has elapsed or whose purpose has been achieved is destroyed without delay. Electronic files are permanently deleted by irrecoverable means.",
+  "9. 안전성 확보 조치":"9. Security Measures",
+  "서비스는 개인정보를 최소한으로 수집하는 것을 원칙으로 하며, 수집된 정보가 분실·도난·유출·변조되지 않도록 합리적인 보호 조치를 취합니다.":"The Service collects personal information to a minimum as a matter of principle, and takes reasonable protective measures to prevent the loss, theft, leakage, or alteration of collected information.",
+  "10. 향후 변경 사항":"10. Future Changes",
+  "향후 유료·구독 서비스가 도입되어 결제 정보 등 추가적인 개인정보를 수집하게 되는 경우, 그 항목과 목적을 사전에 고지하고 동의를 받은 후 처리합니다.":"If paid or subscription services are introduced in the future and additional personal information such as payment details is collected, the items and purposes will be announced in advance and processed only after obtaining consent.",
+  "11. 개인정보 보호책임자":"11. Data Protection Officer",
+  "개인정보 처리에 관한 문의·불만·피해 구제는 아래로 접수할 수 있습니다.":"Inquiries, complaints, or remedies regarding the handling of personal information can be submitted below.",
+  "운영자: [운영자명]":"Operator: [operator name]",
+  "연락처: [연락처 이메일]":"Contact: [contact email]",
+  "12. 고지의 의무":"12. Duty to Notify",
+  "이 개인정보처리방침은 법령·정책 또는 서비스 내용의 변경에 따라 개정될 수 있으며, 개정 시 시행일과 변경 내용을 서비스 화면에 공지합니다.":"This Privacy Policy may be amended in line with changes to laws, policies, or the Service, and any amendment will be announced within the Service along with its effective date and the changes made.",
+  "개인정보 침해에 관한 상담이 필요하신 경우 개인정보분쟁조정위원회(kopico.go.kr), 개인정보침해신고센터(국번 없이 118) 등에 문의하실 수 있습니다.":"If you need help regarding a personal information infringement, you may contact bodies such as the Personal Information Dispute Mediation Committee (kopico.go.kr) or the Privacy Infringement Report Center (dial 118)."
 });
 </script>
 </body>
