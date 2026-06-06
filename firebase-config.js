@@ -29,7 +29,7 @@ const firebaseConfig = {
 
 // 카카오/네이버 공개 키 (authorize 요청용 — 비밀키는 Functions 서버에만 둡니다)
 export const SOCIAL = {
-  kakaoRestKey: "[KAKAO_REST_API_KEY]",   // 카카오 REST API 키 (공개)
+  kakaoRestKey: "82a8f6a4296b0d345cf8b1a7cd7f74eb",   // 카카오 REST API 키 (공개)
   naverClientId: "[NAVER_CLIENT_ID]",      // 네이버 Client ID (공개)
   functionsRegion: "asia-northeast3"        // Cloud Functions 배포 리전 (서울)
 };
