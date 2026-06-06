@@ -33,13 +33,18 @@ async function asJson(res, label){
 }
 
 async function kakaoProfile(code, redirectUri){
+  const clientId = (KAKAO_REST_KEY.value() || "").trim();
+  const secret = (KAKAO_CLIENT_SECRET.value() || "").trim();
+  console.log("[kakao] client_id len:", clientId.length,
+    "preview:", clientId.slice(0, 4) + "…" + clientId.slice(-4),
+    "| client_secret len:", secret.length,
+    "| redirect_uri:", redirectUri);
   const body = new URLSearchParams({
     grant_type: "authorization_code",
-    client_id: KAKAO_REST_KEY.value(),
+    client_id: clientId,
     redirect_uri: redirectUri,
     code
   });
-  const secret = (KAKAO_CLIENT_SECRET.value() || "").trim();
   if(secret) body.set("client_secret", secret);
 
   const tok = await asJson(await fetch("https://kauth.kakao.com/oauth/token", {
