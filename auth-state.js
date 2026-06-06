@@ -41,7 +41,15 @@ function injectCss(){
   #navAuth .menu button{text-align:left;border:0;background:transparent;cursor:pointer;
     font:600 14px var(--font-sans);color:var(--fg-1);padding:10px;border-radius:8px}
   #navAuth .menu button:hover{background:rgba(0,0,0,.06)}
-  :root[data-theme="dark"] #navAuth .menu button:hover{background:rgba(255,255,255,.08)}`;
+  :root[data-theme="dark"] #navAuth .menu button:hover{background:rgba(255,255,255,.08)}
+  /* 모바일: 헤더 로그인/계정 숨기고 햄버거 메뉴 안으로 */
+  @media(max-width:767px){#navAuth{display:none}}
+  #mobileMenu #mAuth{border-top:1px solid var(--hair);margin-top:6px;padding-top:6px}
+  #mobileMenu #mAuth .m-em{font:500 12px var(--font-sans);color:var(--fg-3);padding:8px 14px 2px;word-break:break-all}
+  #mobileMenu #mAuth a,#mobileMenu #mAuth button{display:block;width:100%;text-align:left;border:0;background:transparent;
+    cursor:pointer;font:600 16px var(--font-sans);color:var(--fg-1);text-decoration:none;padding:13px 14px;border-radius:var(--radius-sm)}
+  #mobileMenu #mAuth a:hover,#mobileMenu #mAuth button:hover{background:rgba(0,0,0,.06)}
+  :root[data-theme="dark"] #mobileMenu #mAuth a:hover,:root[data-theme="dark"] #mobileMenu #mAuth button:hover{background:rgba(255,255,255,.08)}`;
   document.head.appendChild(st);
 }
 
@@ -88,11 +96,25 @@ function renderLoggedIn(wrap, user){
   if(window.KOSi18n) window.KOSi18n.apply();
 }
 
+function renderMobileAuth(user){
+  const mm = document.getElementById('mobileMenu'); if(!mm || isAuthPage()) return;
+  let el = document.getElementById('mAuth');
+  if(!el){ el = document.createElement('div'); el.id = 'mAuth'; mm.appendChild(el); }
+  if(user){
+    const email = user.email || (user.displayName || '');
+    el.innerHTML = `<div class="m-em">${email}</div><button type="button" class="m-logout">로그아웃</button>`;
+    el.querySelector('.m-logout').addEventListener('click', async () => { try{ await signOut(auth); }catch(e){} location.href = 'Home.html'; });
+  } else {
+    el.innerHTML = `<a href="Login.html?next=${encodeURIComponent(here())}">로그인</a>`;
+  }
+  if(window.KOSi18n) window.KOSi18n.apply();
+}
+
 function start(){
   const wrap = mount();
   if(!wrap) return;
-  if(!isConfigured){ renderLoggedOut(wrap); return; }
-  onAuthStateChanged(auth, user => user ? renderLoggedIn(wrap, user) : renderLoggedOut(wrap));
+  if(!isConfigured){ renderLoggedOut(wrap); renderMobileAuth(null); return; }
+  onAuthStateChanged(auth, user => { user ? renderLoggedIn(wrap, user) : renderLoggedOut(wrap); renderMobileAuth(user); });
 }
 
 if(document.readyState === 'loading') document.addEventListener('DOMContentLoaded', start);
