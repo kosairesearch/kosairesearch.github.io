@@ -940,12 +940,12 @@ document.getElementById('pagerCtl').addEventListener('click',e=>{
   render();
 });
 document.getElementById('emptyReset').addEventListener('click',()=>{state.filters={};state.q='';document.getElementById('searchInput').value='';state.page=1;render();});
-function isW(tk){ try{ var v=localStorage.getItem('kos-watch-'+tk); return !!v && v!=='0'; }catch(e){ return false; } }
+function isW(tk){ return !!(window.KOSWatch && window.KOSWatch.has(tk)); }
 tbody.addEventListener('click',e=>{
   const wb=e.target.closest('.wl-btn');
-  if(wb){ e.preventDefault(); e.stopPropagation(); const tk=wb.dataset.wl, on=!isW(tk);
-    try{ on?localStorage.setItem('kos-watch-'+tk,String(Date.now())):localStorage.removeItem('kos-watch-'+tk); }catch(err){}
-    wb.classList.toggle('on',on); return; }
+  if(wb){ e.preventDefault(); e.stopPropagation(); if(!window.KOSWatch) return; const tk=wb.dataset.wl;
+    if(isW(tk)) window.KOSWatch.remove(tk); else window.KOSWatch.add(tk);
+    wb.classList.toggle('on',isW(tk)); return; }
   const tr=e.target.closest('tr');if(tr)window.location.href='Ticker Detail v2.html?ticker='+(tr.dataset.ticker||'');
 });
 // 뒤로가기(bfcache)·탭 복귀 시 별 상태를 localStorage로 즉시 재동기화
@@ -991,6 +991,8 @@ if(window.KOSi18n) KOSi18n.register(SCREENER_DICT, render);
 
 render();
 </script>
+<script type="module" src="auth-guard.js"></script>
+<script type="module" src="watchlist.js"></script>
 <script type="module" src="auth-state.js"></script>
 </body>
 </html>

@@ -3,6 +3,9 @@
 <head>
 <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
+<!-- 로그인 게이트: 로그인 확인 전 화면 숨김 -->
+<script>document.documentElement.classList.add('kos-locked');</script>
+<style>html.kos-locked body{visibility:hidden}</style>
 <title>관심 종목 — KOS ai 워치리스트</title>
 <style>
 @font-face{font-family:"Pretendard";font-weight:400;font-style:normal;font-display:swap;src:url("fonts/Pretendard-Regular.otf") format("opentype")}
@@ -564,15 +567,13 @@ let LIST_DEFAULT=[
   {name:'현대차',ticker:'005380',market:'KOSPI',sector:'자동차',price:238500,change:1.28,mcap:50.2,ai:'하이브리드 차종 비중 확대와 미국 시장 ASP 안정세가 분기 영업이익률에 우호적으로 작용하는 모습이다.'},
   {name:'셀트리온',ticker:'068270',market:'KOSPI',sector:'바이오',price:186400,change:-0.32,mcap:40.6,ai:'바이오시밀러 미국 시장 진입 일정과 신규 파이프라인 가시성이 분기별로 점진적으로 개선되는 흐름이다.'},
 ].map((s,i)=>({...s,added:i}));
-function isWatched(tk){ try{ var v=localStorage.getItem('kos-watch-'+tk); return !!v && v!=='0'; }catch(e){ return false; } }
+function isWatched(tk){ return !!(window.KOSWatch && window.KOSWatch.has(tk)); }
 function repTitle(tk){ const R=window.KOS_REPORTS&&KOS_REPORTS.reports&&KOS_REPORTS.reports[tk]; if(!R||!R.title) return ''; return EN()?(R.title.en||R.title.ko||''):(R.title.ko||R.title.en||''); }
 function getWatched(){
   const all=(window.KOS_LIVE_DATA&&window.KOS_LIVE_DATA.stocks)||[];
-  // 추가 시각(저장된 타임스탬프 값)으로 정렬. 키 순서는 과거 방문 시 생성된
-  // '0' 키 때문에 신뢰 불가 → 값(타임스탬프) 사용. 구버전 '1' 값은 가장 오래된 것으로 취급.
-  return all.filter(s=>isWatched(s.ticker)).map((s,i)=>{
-    var v=parseInt(localStorage.getItem('kos-watch-'+s.ticker),10);
-    return {...s, added:(Number.isFinite(v)?v:0)};
+  // 계정별 워치리스트(Firestore)의 추가 시각으로 정렬.
+  return all.filter(s=>isWatched(s.ticker)).map(function(s){
+    return {...s, added:(window.KOSWatch?window.KOSWatch.addedAt(s.ticker):0)};
   });
 }
 let LIST = getWatched();
@@ -653,12 +654,7 @@ document.getElementById('editBtn').addEventListener('click',e=>{
 document.getElementById('clearAllBtn').addEventListener('click',()=>{
   const msg = EN()? 'Remove all stocks from your watchlist?' : '관심종목을 전체 삭제할까요?';
   if(!window.confirm(msg)) return;
-  // 순회 중 삭제 시 인덱스 밀림 방지: 키를 먼저 모으고 한꺼번에 삭제
-  try{
-    const keys=[];
-    for(let i=0;i<localStorage.length;i++){ const k=localStorage.key(i); if(k&&k.indexOf('kos-watch-')===0) keys.push(k); }
-    keys.forEach(k=>localStorage.removeItem(k));
-  }catch(e){}
+  if(window.KOSWatch) window.KOSWatch.clear();
   LIST=getWatched();
   wlEl.classList.remove('edit');
   const eb=document.getElementById('editBtn'); eb.classList.remove('on'); eb.lastChild.textContent=T(' 편집');
@@ -667,10 +663,11 @@ document.getElementById('clearAllBtn').addEventListener('click',()=>{
 });
 rowsEl.addEventListener('click',e=>{
   const rm=e.target.closest('[data-remove]');
-  if(rm){e.preventDefault();try{localStorage.removeItem('kos-watch-'+rm.dataset.remove);}catch(e){}LIST=getWatched();render();return;}
+  if(rm){e.preventDefault();if(window.KOSWatch)window.KOSWatch.remove(rm.dataset.remove);LIST=getWatched();render();return;}
 });
-// 뒤로가기(bfcache)·탭 복귀 시 localStorage 기준으로 목록 재동기화
+// 워치리스트(Firestore) 변경·로딩 시 목록 재동기화
 function refreshWl(){ LIST=getWatched(); render(); }
+window.addEventListener('koswatch:change',refreshWl);
 window.addEventListener('pageshow',refreshWl);
 document.addEventListener('visibilitychange',()=>{ if(!document.hidden) refreshWl(); });
 
@@ -712,6 +709,8 @@ const WATCHLIST_DICT={
 };
 if(window.KOSi18n) KOSi18n.register(WATCHLIST_DICT, render);
 </script>
+<script type="module" src="auth-guard.js"></script>
+<script type="module" src="watchlist.js"></script>
 <script type="module" src="auth-state.js"></script>
 </body>
 </html>

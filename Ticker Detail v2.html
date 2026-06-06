@@ -3,6 +3,9 @@
 <head>
 <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
+<!-- 로그인 게이트: 로그인 확인 전 화면 숨김 -->
+<script>document.documentElement.classList.add('kos-locked');</script>
+<style>html.kos-locked body{visibility:hidden}</style>
 <title>삼성전자 (005930) — KOS ai 리포트</title>
 <style>
 /* ===== KOS ai — Ticker Detail (shared DesignCode Glass system) ===== */
@@ -848,17 +851,14 @@ KOSi18n.register({
   function pad(x){ return x<10?'0'+x:''+x; }
   function secOpen(num,kick,title){ return '<section class="sec col"><div class="sec-kicker"><span class="sec-num">'+num+'</span> · '+kick+'</div><h2 class="sec-title">'+esc(title)+'</h2>'; }
 
-  var WKEY='kos-watch-'+TK, watched=false;
-  try{ var _wv=localStorage.getItem(WKEY); watched=!!_wv && _wv!=='0'; }catch(e){}
+  var watched=false;
   function syncWatch(){ var u=U();
+    watched = !!(window.KOSWatch && window.KOSWatch.has(TK));
     var b=document.getElementById('watchBtn'), tx=document.getElementById('watchTxt');
     if(b)b.classList.toggle('on',watched);
     if(tx)tx.textContent=watched?u.watched:u.watch;
-    try{
-      if(watched){ var ex=localStorage.getItem(WKEY); if(!ex||ex==='0'||ex==='1') localStorage.setItem(WKEY,String(Date.now())); }
-      else { localStorage.removeItem(WKEY); }
-    }catch(e){}
   }
+  window.addEventListener('koswatch:change', syncWatch);
 
   function srcHost(u){ try{ return new URL(u).hostname.replace(/^www\./,''); }catch(e){ return String(u).replace(/^https?:\/\//,'').split('/')[0]; } }
   function srcTitle(u){ try{ var p=new URL(u); var t=decodeURIComponent(p.pathname).replace(/[\/\-_]+/g,' ').replace(/\.(html?|php|aspx?)$/i,'').trim(); return t.length>4?t.slice(0,54):''; }catch(e){ return ''; } }
@@ -933,7 +933,11 @@ KOSi18n.register({
 
   render();
   var wb=document.getElementById('watchBtn');
-  if(wb)wb.addEventListener('click',function(){ watched=!watched; syncWatch(); });
+  if(wb)wb.addEventListener('click',function(){
+    if(!window.KOSWatch) return;
+    if(window.KOSWatch.has(TK)) window.KOSWatch.remove(TK); else window.KOSWatch.add(TK);
+    syncWatch();
+  });
   if(window.KOSi18n){ KOSi18n.register({}, render); }
 })();
 
@@ -952,6 +956,8 @@ applyTheme(saved);
 themeBtn.addEventListener('click',()=>applyTheme(root.getAttribute('data-theme')==='dark'?'light':'dark'));
 
 </script>
+<script type="module" src="auth-guard.js"></script>
+<script type="module" src="watchlist.js"></script>
 <script type="module" src="auth-state.js"></script>
 </body>
 </html>

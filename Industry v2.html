@@ -3,6 +3,9 @@
 <head>
 <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
+<!-- 로그인 게이트: 로그인 확인 전 화면 숨김 -->
+<script>document.documentElement.classList.add('kos-locked');</script>
+<style>html.kos-locked body{visibility:hidden}</style>
 <title>KOS ai — 업종 분석 · 반도체</title>
 <style>
 @font-face{font-family:"Pretendard";font-weight:400;font-style:normal;font-display:swap;src:url("fonts/Pretendard-Regular.otf") format("opentype")}
@@ -987,6 +990,7 @@ themeBtn.addEventListener('click',()=>applyTheme(root.getAttribute('data-theme')
   if(window.KOSi18n)KOSi18n.register({},render);
 })();
 </script>
+<script type="module" src="auth-guard.js"></script>
 <script type="module" src="auth-state.js"></script>
 </body>
 </html>

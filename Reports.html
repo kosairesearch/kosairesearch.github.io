@@ -636,7 +636,7 @@ function repTs(tk){
   const R=window.KOS_REPORTS&&KOS_REPORTS.reports&&KOS_REPORTS.reports[tk];
   return R ? (R.reportTs||R.reportDate||'') : '';
 }
-function isW(tk){ try{ var v=localStorage.getItem('kos-watch-'+tk); return !!v && v!=='0'; }catch(e){ return false; } }
+function isW(tk){ return !!(window.KOSWatch && window.KOSWatch.has(tk)); }
 function rowHtml(r,i){
   const dir=r.change>0?'up':r.change<0?'down':'flat',arw=r.change>0?'▲':r.change<0?'▼':'–';
   const title=repTitle(r.ticker);
@@ -691,9 +691,10 @@ document.getElementById('searchInput').addEventListener('input',e=>{state.q=e.ta
 rowsEl.addEventListener('click',function(e){
   const b=e.target.closest('.wl-btn'); if(!b) return;
   e.preventDefault(); e.stopPropagation();
-  const tk=b.dataset.wl, on=!isW(tk);
-  try{ on?localStorage.setItem('kos-watch-'+tk,String(Date.now())):localStorage.removeItem('kos-watch-'+tk); }catch(err){}
-  b.classList.toggle('on',on);
+  if(!window.KOSWatch) return;
+  const tk=b.dataset.wl;
+  if(isW(tk)) window.KOSWatch.remove(tk); else window.KOSWatch.add(tk);
+  b.classList.toggle('on',isW(tk));
 });
 // 뒤로가기(bfcache)·탭 복귀 시 별 상태를 localStorage로 즉시 재동기화
 function syncWl(){ document.querySelectorAll('.wl-btn').forEach(b=>b.classList.toggle('on',isW(b.dataset.wl))); }
@@ -774,6 +775,8 @@ const REPORTS_DICT={
 };
 if(window.KOSi18n) KOSi18n.register(REPORTS_DICT, render);
 </script>
+<script type="module" src="auth-guard.js"></script>
+<script type="module" src="watchlist.js"></script>
 <script type="module" src="auth-state.js"></script>
 </body>
 </html>
