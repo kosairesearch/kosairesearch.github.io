@@ -698,12 +698,24 @@ KOSi18n.register({
 :root[lang="en"]{--up:#1f9d57;--down:#e5383b;--up-soft:rgba(31,157,87,0.10);--down-soft:rgba(229,56,59,0.10)}
 :root[lang="en"][data-theme="dark"]{--up:#3ddc84;--down:#ff5b5e;--up-soft:rgba(61,220,132,0.12);--down-soft:rgba(255,91,94,0.12)}
 </style>
+<style>
+/* KOSAI 로고 (테마별 자동 전환) */
+.brand-logo{height:24px;width:auto;display:block}
+.brand-logo--dark{display:none}
+:root[data-theme="dark"] .brand-logo--light{display:none}
+:root[data-theme="dark"] .brand-logo--dark{display:block}
+.foot-brand .brand-logo{height:26px}
+@media(max-width:640px){.brand-logo{height:21px}}
+</style>
+<link rel="icon" type="image/png" sizes="512x512" href="assets/favicon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="assets/favicon.png">
+<link rel="apple-touch-icon" sizes="180x180" href="assets/apple-touch-icon.png">
 </head>
 <body>
 
 <!-- NAV -->
 <nav class="nav glass" data-screen-label="Ticker · Nav">
-  <a class="brand" href="Home.html"><span class="brand-name">KOS ai</span></a>
+  <a class="brand" href="Home.html"><img class="brand-logo brand-logo--light" src="assets/kosai-wordmark-black.png" alt="KOSAI" width="148" height="24"><img class="brand-logo brand-logo--dark" src="assets/kosai-wordmark-white.png" alt="KOSAI" width="148" height="24"></a>
   <div class="nav-links">
     <a href="Home.html">홈</a>
     <a href="Reports.html" class="active">리포트</a>
@@ -762,7 +774,7 @@ KOSi18n.register({
   <div class="wrap">
     <div class="foot-inner glass">
       <div class="foot-grid">
-        <div class="foot-brand"><a class="brand" href="Home.html"><span class="brand-name">KOS ai</span></a><p>한국 상장사를 위한 AI 투자 리서치. 데이터와 분석을 한 페이지에.</p></div>
+        <div class="foot-brand"><a class="brand" href="Home.html"><img class="brand-logo brand-logo--light" src="assets/kosai-wordmark-black.png" alt="KOSAI" width="148" height="24"><img class="brand-logo brand-logo--dark" src="assets/kosai-wordmark-white.png" alt="KOSAI" width="148" height="24"></a><p>한국 상장사를 위한 AI 투자 리서치. 데이터와 분석을 한 페이지에.</p></div>
         <div class="foot-col"><h4>서비스</h4><ul><li><a href="Home.html">홈</a></li><li><a href="Reports.html">리포트</a></li><li><a href="Industry v2.html">업종별</a></li><li><a href="Screener.html">스크리너</a></li><li><a href="Watchlist.html">워치리스트</a></li></ul></div>
         <div class="foot-col"><h4>회사</h4><ul><li><a href="About.html">About</a></li><li><a href="Contact.html">문의하기</a></li><li><a href="Feedback.html">피드백</a></li></ul></div>
         
