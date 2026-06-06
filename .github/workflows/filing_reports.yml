@@ -34,7 +34,7 @@ jobs:
           FILINGS_LOOKBACK_DAYS: ${{ vars.FILINGS_LOOKBACK_DAYS || '30' }}
         run: python scripts/check_filings.py
 
-      - name: 신규 제출 종목 리포트 생성
+      - name: 신규 제출 종목 리포트 생성 (batch API)
         if: steps.filings.outputs.count != '0' && steps.filings.outputs.count != ''
         env:
           ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
@@ -42,10 +42,11 @@ jobs:
           REPORT_MODEL: ${{ vars.REPORT_MODEL || 'claude-sonnet-4-6' }}
           REPORT_TICKERS: ${{ steps.filings.outputs.new_tickers }}
           REPORT_FORCE: '1'   # 새 분기 실적이므로 기존 리포트가 있어도 갱신
+          BATCH_MAX_WAIT_SEC: ${{ vars.BATCH_MAX_WAIT_SEC || '18000' }}
         run: |
           set -o pipefail
-          echo "=== 공시 트리거 생성 $(date -u) · 대상 ${{ steps.filings.outputs.new_tickers }} ===" > data/reports_run.log
-          python scripts/generate_reports.py 2>&1 | tee -a data/reports_run.log
+          echo "=== 공시 트리거 생성(batch) $(date -u) · 대상 ${{ steps.filings.outputs.new_tickers }} ===" > data/reports_run.log
+          python scripts/generate_reports_batch.py auto 2>&1 | tee -a data/reports_run.log
 
       - name: 커밋 & 푸시
         if: always()
