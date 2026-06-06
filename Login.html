@@ -565,6 +565,7 @@ if(window.KOSi18n) KOSi18n.register({
 import { auth, isConfigured } from "./firebase-config.js";
 import { signInWithEmailAndPassword, GoogleAuthProvider, signInWithPopup,
   sendPasswordResetEmail } from "https://www.gstatic.com/firebasejs/10.12.2/firebase-auth.js";
+import { wireSocialButtons } from "./social-login.js";
 
 const $ = s => document.querySelector(s);
 const T = m => (window.KOSi18n ? window.KOSi18n.t(m) : m);
@@ -611,11 +612,8 @@ $('#forgotLink').addEventListener('click', async e => {
   catch(err){ showErr(mapError(err)); }
 });
 
-// Kakao / Naver — 앱 키 + (Firebase 통합 시) 백엔드(Cloud Functions) 필요. 키 설정 전에는 안내만 표시.
-for(const id of ['kakaoBtn','naverBtn']){
-  const b = document.getElementById(id);
-  if(b) b.addEventListener('click', () => showErr(T('카카오·네이버 로그인은 앱 키 설정이 필요합니다. (firebase-config.js 참고)')));
-}
+// Kakao / Naver — OAuth 리다이렉트 + Cloud Functions 커스텀 토큰 (social-login.js)
+wireSocialButtons({ onError: showErr });
 </script>
 <script type="module" src="auth-state.js"></script>
 </body>
