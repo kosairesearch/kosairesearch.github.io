@@ -20,10 +20,11 @@ import { initializeApp } from "https://www.gstatic.com/firebasejs/10.12.2/fireba
 import { getAuth } from "https://www.gstatic.com/firebasejs/10.12.2/firebase-auth.js";
 
 const firebaseConfig = {
-  apiKey: "[FIREBASE_API_KEY]",
-  authDomain: "[FIREBASE_AUTH_DOMAIN]",        // 예: kos-ai.firebaseapp.com
-  projectId: "[FIREBASE_PROJECT_ID]",
-  appId: "[FIREBASE_APP_ID]"
+  apiKey: "AIzaSyDXoVWD_Q-d52donk33HsC68K9x4O3DO10",
+  authDomain: "kosai-ae167.firebaseapp.com",
+  projectId: "kosai-ae167",
+  messagingSenderId: "476371644387",
+  appId: "1:476371644387:web:5ad0b16967b64debb23ad6"
 };
 
 // 카카오/네이버 공개 키 (authorize 요청용 — 비밀키는 Functions 서버에만 둡니다)
