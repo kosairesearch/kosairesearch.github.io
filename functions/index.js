@@ -28,7 +28,7 @@ async function asJson(res, label){
   const text = await res.text();
   let json;
   try{ json = JSON.parse(text); }catch(e){ json = { raw: text }; }
-  if(!res.ok){ throw new HttpsError("unauthenticated", `${label}_http_${res.status}: ${text.slice(0, 300)}`); }
+  if(!res.ok){ console.error(`[${label}] HTTP ${res.status}:`, text.slice(0, 500)); throw new HttpsError("unauthenticated", `${label}_http_${res.status}: ${text.slice(0, 300)}`); }
   return json;
 }
 
