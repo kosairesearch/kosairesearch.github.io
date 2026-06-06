@@ -556,6 +556,9 @@ if(window.KOSi18n) KOSi18n.register({
   "Firebase 설정이 필요합니다. firebase-config.js를 확인하세요.":"Firebase is not configured yet. See firebase-config.js.",
   "로그인 중 오류가 발생했습니다.":"Something went wrong during sign-in.",
   "비밀번호 재설정 메일을 보냈습니다. 메일함을 확인해 주세요.":"A password reset email has been sent. Please check your inbox.",
+  "이메일 인증이 필요합니다. 메일의 링크를 클릭한 뒤 다시 로그인해 주세요.":"Please verify your email — click the link we sent, then sign in again.",
+  "인증 메일 다시 보내기":"Resend verification email",
+  "인증 메일을 다시 보냈습니다. 메일함을 확인해 주세요.":"Verification email resent. Please check your inbox.",
   "이메일을 먼저 입력해 주세요.":"Please enter your email first.",
   "카카오·네이버 로그인은 앱 키 설정이 필요합니다. (firebase-config.js 참고)":"Kakao/Naver sign-in needs app keys to be configured (see firebase-config.js)."
 });
@@ -564,7 +567,7 @@ if(window.KOSi18n) KOSi18n.register({
 <script type="module">
 import { auth, isConfigured } from "./firebase-config.js";
 import { signInWithEmailAndPassword, GoogleAuthProvider, signInWithPopup,
-  sendPasswordResetEmail } from "https://www.gstatic.com/firebasejs/10.12.2/firebase-auth.js";
+  sendPasswordResetEmail, sendEmailVerification, signOut } from "https://www.gstatic.com/firebasejs/10.12.2/firebase-auth.js";
 import { wireSocialButtons } from "./social-login.js";
 
 const $ = s => document.querySelector(s);
@@ -588,11 +591,33 @@ function mapError(err){
   return T('로그인 중 오류가 발생했습니다.') + (c ? ' (' + c + ')' : '');
 }
 
+let unverifiedUser = null;
+function offerResend(){
+  let row = $('#vrow');
+  if(!row){ row = document.createElement('div'); row.id='vrow'; row.className='auth-note'; errBox.parentNode.insertBefore(row, errBox.nextSibling); }
+  row.style.display='block'; row.textContent='';
+  row.appendChild(document.createTextNode(T('이메일 인증이 필요합니다. 메일의 링크를 클릭한 뒤 다시 로그인해 주세요.') + ' '));
+  const a = document.createElement('a'); a.href='#'; a.textContent=T('인증 메일 다시 보내기');
+  a.style.cssText='color:var(--brand-blue);font-weight:600'; row.appendChild(a);
+  a.addEventListener('click', async ev => {
+    ev.preventDefault();
+    try{ if(unverifiedUser){ await sendEmailVerification(unverifiedUser); } row.textContent=T('인증 메일을 다시 보냈습니다. 메일함을 확인해 주세요.'); }
+    catch(err){ showErr(mapError(err)); }
+  });
+}
+
 $('#emailForm').addEventListener('submit', async e => {
   e.preventDefault(); clearErr();
   const btn = $('#emailSubmit'); btn.disabled = true;
   try{
-    await signInWithEmailAndPassword(auth, $('#email').value.trim(), $('#password').value);
+    const cred = await signInWithEmailAndPassword(auth, $('#email').value.trim(), $('#password').value);
+    const pwOnly = cred.user.providerData.length && cred.user.providerData.every(p => p.providerId === 'password');
+    if(pwOnly && !cred.user.emailVerified){
+      unverifiedUser = cred.user;
+      await signOut(auth);
+      offerResend();
+      return;
+    }
     go();
   }catch(err){ showErr(mapError(err)); }
   finally{ btn.disabled = false; }

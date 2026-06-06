@@ -561,6 +561,9 @@ if(window.KOSi18n) KOSi18n.register({
   // dynamic messages (KOSi18n.t)
   "비밀번호가 일치하지 않습니다.":"Passwords do not match.",
   "비밀번호는 영문과 숫자를 포함해 8자 이상이어야 합니다.":"Password must be at least 8 characters with letters and numbers.",
+  "인증 메일을 보냈어요":"Verification email sent",
+  "주소로 인증 링크를 보냈습니다. 메일의 링크를 클릭해 인증한 뒤 로그인해 주세요. (스팸함도 확인)":"— we sent a verification link to this address. Click it, then sign in. (Check your spam folder too.)",
+  "로그인하러 가기":"Go to sign in",
   "약관에 동의해 주세요.":"Please agree to the terms.",
   "이미 가입된 이메일입니다.":"This email is already registered.",
   "이메일 형식이 올바르지 않습니다.":"That email address looks invalid.",
@@ -572,7 +575,8 @@ if(window.KOSi18n) KOSi18n.register({
 
 <script type="module">
 import { auth, isConfigured } from "./firebase-config.js";
-import { createUserWithEmailAndPassword, GoogleAuthProvider, signInWithPopup }
+import { createUserWithEmailAndPassword, GoogleAuthProvider, signInWithPopup,
+  sendEmailVerification, signOut }
   from "https://www.gstatic.com/firebasejs/10.12.2/firebase-auth.js";
 import { wireSocialButtons } from "./social-login.js";
 
@@ -601,11 +605,29 @@ $('#emailForm').addEventListener('submit', async e => {
   if(!$('#agree').checked){ showErr(T('약관에 동의해 주세요.')); return; }
   if(pw.length < 8 || !/[A-Za-z]/.test(pw) || !/[0-9]/.test(pw)){ showErr(T('비밀번호는 영문과 숫자를 포함해 8자 이상이어야 합니다.')); return; }
   if(pw !== pw2){ showErr(T('비밀번호가 일치하지 않습니다.')); return; }
+  const email = $('#email').value.trim();
   const btn = $('#emailSubmit'); btn.disabled = true;
-  try{ await createUserWithEmailAndPassword(auth, $('#email').value.trim(), pw); go(); }
-  catch(err){ showErr(mapError(err)); }
-  finally{ btn.disabled = false; }
+  try{
+    const cred = await createUserWithEmailAndPassword(auth, email, pw);
+    try{ await sendEmailVerification(cred.user); }catch(_){}
+    await signOut(auth);          // 인증 전에는 로그인 상태로 두지 않음
+    showVerifySent(email);
+  }
+  catch(err){ showErr(mapError(err)); btn.disabled = false; }
 });
+
+function showVerifySent(email){
+  ['.social','.divider','#emailForm','.auth-foot'].forEach(function(s){ var el=document.querySelector(s); if(el) el.style.display='none'; });
+  clearErr();
+  var note = $('#cfgNote'); note.className='auth-note'; note.innerHTML='';
+  var b=document.createElement('b'); b.textContent=T('인증 메일을 보냈어요');
+  var p=document.createElement('div'); p.style.margin='6px 0 0';
+  p.textContent = email + ' ' + T('주소로 인증 링크를 보냈습니다. 메일의 링크를 클릭해 인증한 뒤 로그인해 주세요. (스팸함도 확인)');
+  var a=document.createElement('a'); a.href='Login.html'; a.textContent=T('로그인하러 가기');
+  a.style.cssText='display:inline-block;margin-top:12px;font-weight:600;color:var(--brand-blue);text-decoration:none';
+  note.appendChild(b); note.appendChild(p); note.appendChild(a);
+  note.style.display='block';
+}
 
 $('#googleBtn').addEventListener('click', async () => {
   clearErr();

@@ -7,14 +7,25 @@
    2) window.KOSGate.showLoginPopup(msg) — 워치리스트 추가 등 액션 차단용 팝업.
    ============================================================ */
 import { auth, isConfigured } from "./firebase-config.js";
-import { onAuthStateChanged } from "https://www.gstatic.com/firebasejs/10.12.2/firebase-auth.js";
+import { onAuthStateChanged, sendEmailVerification, signOut }
+  from "https://www.gstatic.com/firebasejs/10.12.2/firebase-auth.js";
 
 if(window.KOSi18n) window.KOSi18n.register({
   "로그인이 필요합니다":"Sign-in required",
   "이 리포트는 로그인 후 보실 수 있어요.":"Please sign in to view this report.",
   "워치리스트에 추가하려면 로그인이 필요해요.":"Please sign in to add to your watchlist.",
-  "로그인":"Sign in", "회원가입":"Sign up", "홈으로":"Back to home"
+  "이메일 인증 후 워치리스트를 사용할 수 있어요.":"Verify your email to use the watchlist.",
+  "로그인":"Sign in", "회원가입":"Sign up", "홈으로":"Back to home",
+  "이메일 인증이 필요합니다":"Email verification required",
+  "받은 메일의 링크를 클릭해 이메일을 인증해 주세요.":"Please click the link in the email we sent to verify your address.",
+  "인증 메일 다시 보내기":"Resend verification email",
+  "인증을 완료했어요":"I've verified — refresh",
+  "인증 메일을 다시 보냈습니다. 메일함을 확인해 주세요.":"Verification email resent. Please check your inbox.",
+  "로그아웃":"Sign out"
 });
+
+function pwOnly(u){ return !!(u && u.providerData && u.providerData.length && u.providerData.every(function(p){ return p.providerId === 'password'; })); }
+function verified(u){ return !pwOnly(u) || u.emailVerified; }
 
 function here(){ return location.pathname.split('/').pop() || 'Home.html'; }
 function nextParam(){ try{ return encodeURIComponent(decodeURIComponent(here())); }catch(e){ return encodeURIComponent(here()); } }
@@ -50,6 +61,7 @@ function injectCss(){
 }
 
 var LOCK_SVG = '<svg viewBox="0 0 24 24"><rect x="4.5" y="10.5" width="15" height="10" rx="2.2"/><path d="M8 10.5V7.5a4 4 0 0 1 8 0v3"/></svg>';
+var MAIL_SVG = '<svg viewBox="0 0 24 24"><rect x="3" y="5" width="18" height="14" rx="2.2"/><path d="m4 7 8 6 8-6"/></svg>';
 
 function buildCard(opts){
   injectCss();
@@ -70,13 +82,43 @@ function buildCard(opts){
 }
 function tt(m){ return (window.KOSi18n ? window.KOSi18n.t(m) : m); }
 
+function clearGate(){ var g=document.getElementById('kosGate'); if(g) g.remove(); }
+
 function lockPage(msg){
-  if(document.getElementById('kosGate')) return;
+  clearGate();
   var ov = document.createElement('div');
   ov.id = 'kosGate'; ov.className = 'kg-overlay';
   ov.appendChild(buildCard({ dismissable:false, msg: msg || '이 리포트는 로그인 후 보실 수 있어요.' }));
   document.body.appendChild(ov);
   if(window.KOSi18n) window.KOSi18n.apply();
+}
+
+function lockVerify(user){
+  clearGate();
+  injectCss();
+  var ov = document.createElement('div'); ov.id='kosGate'; ov.className='kg-overlay';
+  var card = document.createElement('div'); card.className='kg-card';
+  card.innerHTML =
+    '<div class="kg-ico">' + MAIL_SVG + '</div>' +
+    '<h2 class="kg-title">' + tt('이메일 인증이 필요합니다') + '</h2>' +
+    '<p class="kg-sub">' + tt('받은 메일의 링크를 클릭해 이메일을 인증해 주세요.') + '</p>' +
+    '<div class="kg-btns">' +
+      '<button class="kg-btn kg-primary" id="kgResend" type="button">' + tt('인증 메일 다시 보내기') + '</button>' +
+      '<button class="kg-btn" id="kgRefresh" type="button">' + tt('인증을 완료했어요') + '</button>' +
+    '</div>' +
+    '<a class="kg-home" href="#" id="kgLogout">' + tt('로그아웃') + '</a>';
+  ov.appendChild(card); document.body.appendChild(ov);
+  if(window.KOSi18n) window.KOSi18n.apply();
+  card.querySelector('#kgResend').addEventListener('click', async function(){
+    try{ await sendEmailVerification(user); this.textContent = tt('인증 메일을 다시 보냈습니다. 메일함을 확인해 주세요.'); }catch(e){}
+  });
+  card.querySelector('#kgRefresh').addEventListener('click', async function(){
+    try{ await user.reload(); }catch(e){}
+    if(user.emailVerified) location.reload();
+  });
+  card.querySelector('#kgLogout').addEventListener('click', async function(e){
+    e.preventDefault(); try{ await signOut(auth); }catch(e2){} location.href = 'Login.html';
+  });
 }
 
 function showLoginPopup(msg){
@@ -91,7 +133,7 @@ function showLoginPopup(msg){
   if(window.KOSi18n) window.KOSi18n.apply();
 }
 
-function unlock(){ document.documentElement.classList.remove('kos-locked'); }
+function unlock(){ clearGate(); document.documentElement.classList.remove('kos-locked'); }
 
 window.KOSGate = { showLoginPopup: showLoginPopup, lockPage: lockPage };
 
@@ -102,5 +144,9 @@ try{ page = decodeURIComponent(here()); }catch(e){ page = here(); }
 
 if(GATED.test(page)){
   if(!isConfigured){ unlock(); }
-  else onAuthStateChanged(auth, function(u){ if(u){ unlock(); } else { lockPage('이 리포트는 로그인 후 보실 수 있어요.'); } });
+  else onAuthStateChanged(auth, function(u){
+    if(!u){ lockPage('이 리포트는 로그인 후 보실 수 있어요.'); }
+    else if(verified(u)){ unlock(); }
+    else { lockVerify(u); }
+  });
 }
