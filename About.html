@@ -516,7 +516,7 @@ KOSi18n.register({
       <p>전체 과정은 자동화되어 있습니다. 매 거래일 저녁 KRX 시장 데이터(종가·거래량·시가총액 등)와 DART 기업 정보를 수집해 종목·업종 단위로 정리합니다. 신규 상장 종목은 자동으로 추가되고, 상장폐지 종목은 자동으로 제외됩니다.</p>
       <p>종목의 업종 분류도 AI가 수행합니다. 전 종목을 실제 사업 내용 기준으로 업종과 테마(인공지능·로봇 등)에 배정하며, 새 종목이 상장되면 같은 기준으로 자동 분류됩니다.</p>
       <p>리포트 본문은 Claude의 배치(batch) API로 작성합니다. 작성 시 매수·매도·목표주가 같은 투자 권유 표현을 쓰지 않도록 지시하며, 필요한 경우 웹 검색으로 최근 업황을 확인하고 참고한 출처를 함께 남깁니다. 또한 모든 상장 종목은 DART에 사업·분기·반기보고서 같은 정기 공시가 새로 제출되면, 최신 실적을 반영해 해당 종목 리포트를 자동으로 다시 작성합니다.</p>
-      <p>완성된 리포트와 데이터는 GitHub 기반 자동화로 사이트에 반영됩니다. 각 페이지에는 데이터 기준 시각이 표기되어, 어느 시점의 정보를 사용하고 있는지 확인할 수 있습니다.</p>
+      <p>완성된 리포트와 데이터는 자동화 파이프라인을 통해 사이트에 반영됩니다. 각 페이지에는 데이터 기준 시각이 표기되어, 어느 시점의 정보를 사용하고 있는지 확인할 수 있습니다.</p>
       <p>AI는 빠르고 일관적이지만, 사람의 판단을 완전히 대체하지는 못합니다. 그래서 저희는 리포트의 형식과 한계를 명확히 적어두는 쪽을 택했습니다. 한계는 다음 섹션에서 다시 설명합니다.</p>
     </div>
   </div>
@@ -540,7 +540,7 @@ KOSi18n.register({
     </div>
     <div class="src-grid">
       <a class="src glass" href="https://www.krx.co.kr" target="_blank" rel="noopener"><div class="src-head"><h4>KRX</h4><span class="src-kind">시세·시장데이터</span></div><p>한국거래소. 종가·거래량·거래대금·시가총액·상장주식수·업종(KSIC) 분류 등 기본 시장 데이터의 출처입니다.</p><span class="link">krx.co.kr ↗</span></a>
-      <a class="src glass" href="https://github.com/FinanceData/FinanceDataReader" target="_blank" rel="noopener"><div class="src-head"><h4>FinanceData</h4><span class="src-kind">데이터셋</span></div><p>KRX 시장 데이터를 받아오는 오픈소스 공개 데이터셋입니다. 매 거래일 갱신된 상장사 목록·종가를 제공합니다.</p><span class="link">github.com/FinanceData ↗</span></a>
+      <a class="src glass" href="https://pypi.org/project/finance-datareader" target="_blank" rel="noopener"><div class="src-head"><h4>FinanceDataReader</h4><span class="src-kind">데이터셋</span></div><p>KRX 시장 데이터를 받아오는 공개 데이터 라이브러리입니다. 매 거래일 갱신된 상장사 목록·종가를 제공합니다.</p><span class="link">pypi.org/finance-datareader ↗</span></a>
       <a class="src glass" href="https://dart.fss.or.kr" target="_blank" rel="noopener"><div class="src-head"><h4>DART</h4><span class="src-kind">공시</span></div><p>금융감독원 전자공시시스템. 상장주식수·영문 회사명 등 기업 기본 정보를 보강하는 데 사용합니다.</p><span class="link">dart.fss.or.kr ↗</span></a>
       <a class="src glass" href="https://www.anthropic.com" target="_blank" rel="noopener"><div class="src-head"><h4>Anthropic Claude</h4><span class="src-kind">AI 모델</span></div><p>리포트·업종 분석 작성과 종목 업종 자동 분류에 사용하는 LLM입니다. 작성 시 웹 검색으로 최근 업황을 확인합니다.</p><span class="link">anthropic.com ↗</span></a>
     </div>
@@ -689,7 +689,7 @@ if(window.KOSi18n) KOSi18n.register({
   "전체 과정은 자동화되어 있습니다. 매 거래일 저녁 KRX 시장 데이터(종가·거래량·시가총액 등)와 DART 기업 정보를 수집해 종목·업종 단위로 정리합니다. 신규 상장 종목은 자동으로 추가되고, 상장폐지 종목은 자동으로 제외됩니다.": "The whole process is automated. Every trading-day evening we collect KRX market data (closing price, volume, market cap, etc.) and DART company information, then organize it by stock and industry. Newly listed stocks are added automatically, and delisted ones are removed automatically.",
   "종목의 업종 분류도 AI가 수행합니다. 전 종목을 실제 사업 내용 기준으로 업종과 테마(인공지능·로봇 등)에 배정하며, 새 종목이 상장되면 같은 기준으로 자동 분류됩니다.": "AI also handles industry classification. It assigns every stock to a sector and themes (AI, robotics, etc.) based on its actual business, and newly listed stocks are classified automatically by the same standard.",
   "리포트 본문은 Claude의 배치(batch) API로 작성합니다. 작성 시 매수·매도·목표주가 같은 투자 권유 표현을 쓰지 않도록 지시하며, 필요한 경우 웹 검색으로 최근 업황을 확인하고 참고한 출처를 함께 남깁니다. 또한 모든 상장 종목은 DART에 사업·분기·반기보고서 같은 정기 공시가 새로 제출되면, 최신 실적을 반영해 해당 종목 리포트를 자동으로 다시 작성합니다.": "Report text is generated through Claude's batch API. The model is instructed not to use recommendation language like buy, sell, or target price, and when needed it checks recent industry conditions via web search and records the sources it referenced. In addition, for every listed stock, when a new periodic filing (annual, half-year, or quarterly report) is submitted to DART, that stock's report is automatically rewritten to reflect the latest results.",
-  "완성된 리포트와 데이터는 GitHub 기반 자동화로 사이트에 반영됩니다. 각 페이지에는 데이터 기준 시각이 표기되어, 어느 시점의 정보를 사용하고 있는지 확인할 수 있습니다.": "Finished reports and data are published to the site through GitHub-based automation. Each page shows a data timestamp so you can tell which point in time the information reflects.",
+  "완성된 리포트와 데이터는 자동화 파이프라인을 통해 사이트에 반영됩니다. 각 페이지에는 데이터 기준 시각이 표기되어, 어느 시점의 정보를 사용하고 있는지 확인할 수 있습니다.": "Finished reports and data are published to the site through an automated pipeline. Each page shows a data timestamp so you can tell which point in time the information reflects.",
   "AI는 빠르고 일관적이지만, 사람의 판단을 완전히 대체하지는 못합니다. 그래서 저희는 리포트의 형식과 한계를 명확히 적어두는 쪽을 택했습니다. 한계는 다음 섹션에서 다시 설명합니다.": "AI is fast and consistent, but it can't fully replace human judgment. That's why we made a point of writing the report's format and limitations down clearly. We explain those limitations in the next section.",
   "데이터 수집": "Data collection",
   "매 거래일 저녁 KRX 시장 데이터와 DART 기업 정보를 자동 수집합니다.": "Every trading-day evening, we automatically collect KRX market data and DART company information.",
@@ -700,14 +700,14 @@ if(window.KOSi18n) KOSi18n.register({
   "업종 분석": "Industry analysis",
   "업종별 집계와 AI 업종 분석 리포트를 생성합니다.": "We generate per-industry aggregates and an AI industry-analysis report.",
   "자동 게시": "Auto-publish",
-  "GitHub 자동화로 데이터 기준 시각·출처와 함께 사이트에 반영합니다.": "GitHub automation publishes it to the site with the data timestamp and sources.",
+  "자동화 파이프라인이 데이터 기준 시각·출처와 함께 사이트에 반영합니다.": "An automated pipeline publishes it to the site with the data timestamp and sources.",
   "KOS ai는 자체적으로 시장 데이터를 생성하지 않으며, 아래 출처에서 데이터를 받아 사용합니다. 각 데이터의 갱신 주기와 사용 범위는 출처별로 다릅니다.": "KOS ai does not generate market data on its own — we receive it from the sources below. Update frequency and scope differ by source.",
   "공시": "Disclosures",
   "시세·시장데이터": "Quotes & market data",
   "데이터셋": "Dataset",
   "AI 모델": "AI Model",
   "한국거래소. 종가·거래량·거래대금·시가총액·상장주식수·업종(KSIC) 분류 등 기본 시장 데이터의 출처입니다.": "Korea Exchange. The source of our basic market data — closing prices, volume, turnover, market cap, shares outstanding, and KSIC industry classification.",
-  "KRX 시장 데이터를 받아오는 오픈소스 공개 데이터셋입니다. 매 거래일 갱신된 상장사 목록·종가를 제공합니다.": "An open-source public dataset that delivers KRX market data, providing the listed-company roster and closing prices updated each trading day.",
+  "KRX 시장 데이터를 받아오는 공개 데이터 라이브러리입니다. 매 거래일 갱신된 상장사 목록·종가를 제공합니다.": "A public data library that delivers KRX market data, providing the listed-company roster and closing prices updated each trading day.",
   "금융감독원 전자공시시스템. 상장주식수·영문 회사명 등 기업 기본 정보를 보강하는 데 사용합니다.": "FSS Electronic Disclosure System. Used to enrich basic company information such as shares outstanding and English company names.",
   "리포트·업종 분석 작성과 종목 업종 자동 분류에 사용하는 LLM입니다. 작성 시 웹 검색으로 최근 업황을 확인합니다.": "The LLM used to write reports and industry analysis and to auto-classify stocks by sector. It checks recent industry conditions via web search while writing.",
   "실시간 시세는 제공되지 않으며, 본 사이트의 시세는 매 거래일 종가 기준입니다.": "We don't provide real-time quotes — prices on this site are based on each trading day's closing price.",
