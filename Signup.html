@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
-<title>문의하기 — KOS ai</title>
+<title>회원가입 — KOS ai</title>
 <style>
 @font-face{font-family:"Pretendard";font-weight:400;font-style:normal;font-display:swap;src:url("fonts/Pretendard-Regular.otf") format("opentype")}
 @font-face{font-family:"Pretendard";font-weight:500;font-style:normal;font-display:swap;src:url("fonts/Pretendard-Medium.otf") format("opentype")}
@@ -390,6 +390,45 @@ KOSi18n.register({
 :root[lang="en"]{--up:#1f9d57;--down:#e5383b;--up-soft:rgba(31,157,87,0.10);--down-soft:rgba(229,56,59,0.10)}
 :root[lang="en"][data-theme="dark"]{--up:#3ddc84;--down:#ff5b5e;--up-soft:rgba(61,220,132,0.12);--down-soft:rgba(255,91,94,0.12)}
 </style>
+<style id="auth-css">
+.auth-card{max-width:424px;margin:0 auto;padding:30px 30px 28px}
+.social{display:flex;flex-direction:column;gap:10px}
+.social .sbtn{display:flex;align-items:center;justify-content:center;gap:10px;width:100%;
+  border-radius:var(--radius-md);padding:13px 16px;font:600 14.5px var(--font-sans);
+  cursor:pointer;border:1px solid var(--border-2);background:rgba(255,255,255,.7);color:var(--fg-1);
+  transition:filter .15s,transform .12s,background .15s}
+.social .sbtn:hover{filter:brightness(.98)}
+.social .sbtn:active{transform:scale(.99)}
+:root[data-theme="dark"] .social .sbtn{background:rgba(255,255,255,.06)}
+.social .sbtn svg{width:18px;height:18px;flex:none}
+.sbtn.google{background:#fff;color:#1f1f1f;border-color:#dadce0}
+.sbtn.kakao{background:#FEE500;color:#191600;border-color:transparent}
+.sbtn.naver{background:#03C75A;color:#fff;border-color:transparent}
+.social-ko{display:flex}
+:root[lang="en"] .social-ko{display:none}
+.divider{display:flex;align-items:center;gap:12px;margin:18px 0;color:var(--fg-3);font:500 12px var(--font-sans)}
+.divider::before,.divider::after{content:"";flex:1;height:1px;background:var(--border-2)}
+.auth-err{display:none;margin:0 0 14px;padding:11px 14px;border-radius:var(--radius-md);
+  background:rgba(229,56,59,.08);border:1px solid rgba(229,56,59,.25);color:#c0282b;
+  font:500 13px/1.5 var(--font-sans)}
+:root[data-theme="dark"] .auth-err{color:#ff8a8c;background:rgba(229,56,59,.12)}
+.auth-note{display:none;margin:0 0 14px;padding:11px 14px;border-radius:var(--radius-md);
+  background:rgba(13,105,212,.07);border:1px solid rgba(13,105,212,.2);color:var(--fg-2);
+  font:500 12.5px/1.55 var(--font-sans)}
+:root[data-theme="dark"] .auth-note{background:rgba(95,168,255,.1);border-color:rgba(95,168,255,.25)}
+.auth-foot{margin:18px 0 0;text-align:center;font:400 13.5px var(--font-sans);color:var(--fg-3)}
+.auth-foot a{color:var(--brand-blue);font-weight:600;text-decoration:none}
+.auth-foot a:hover{text-decoration:underline}
+:root[data-theme="dark"] .auth-foot a{color:var(--brand-cyan)}
+.forgot{display:block;text-align:right;margin:-4px 0 0;font:500 12.5px var(--font-sans);color:var(--fg-3);text-decoration:none}
+.forgot:hover{color:var(--fg-1)}
+.agree{display:flex;gap:9px;align-items:flex-start;margin:2px 0 4px;font:400 12.5px/1.5 var(--font-sans);color:var(--fg-2)}
+.agree input{margin-top:2px;width:15px;height:15px;flex:none;accent-color:var(--brand-blue)}
+.agree a{color:var(--brand-blue);text-decoration:none}
+.agree a:hover{text-decoration:underline}
+:root[data-theme="dark"] .agree a{color:var(--brand-cyan)}
+.auth-card .submit-row{margin-top:18px}
+</style>
 </head>
 <body>
 
@@ -419,53 +458,61 @@ KOSi18n.register({
 </div>
 
 <div class="wrap" data-screen-label="09 Contact">
-  <div class="crumb"><a href="Home.html">홈</a> / <b>문의하기</b></div>
+  <div class="crumb"><a href="Home.html">홈</a> / <b>회원가입</b></div>
 </div>
 
 <main>
   <div class="wrap">
     <div class="head">
-      <div class="kick">CONTACT</div>
-      <h1>문의하기</h1>
-      <p>서비스 의견·협업 제안·데이터 오류 제보를 보내주세요. 영업일 기준 2~3일 내에 답변드립니다.</p>
+      <div class="kick">ACCOUNT</div>
+      <h1>회원가입</h1>
+      <p>무료 계정을 만들고 관심 종목과 AI 리포트를 저장하세요.</p>
     </div>
 
-    <form class="card glass" id="form">
-      <div class="field">
-        <label>문의 유형</label>
-        <div class="seg" id="catSeg">
-          <button type="button" class="active" data-cat="일반 문의">일반 문의</button>
-          <button type="button" data-cat="데이터 오류 제보">데이터 오류 제보</button>
-          <button type="button" data-cat="협업·제휴">협업·제휴</button>
+    <div class="auth-card card glass">
+      <div class="auth-note" id="cfgNote">데모 모드입니다 — 실제 가입을 사용하려면 firebase-config.js에 Firebase 설정값을 입력하세요.</div>
+      <div class="auth-err" id="authErr"></div>
+
+      <div class="social">
+        <button type="button" class="sbtn google" id="googleBtn">
+          <svg viewBox="0 0 48 48"><path fill="#EA4335" d="M24 9.5c3.54 0 6.71 1.22 9.21 3.6l6.85-6.85C35.9 2.38 30.47 0 24 0 14.62 0 6.51 5.38 2.56 13.22l7.98 6.19C12.43 13.72 17.74 9.5 24 9.5z"/><path fill="#4285F4" d="M46.98 24.55c0-1.57-.15-3.09-.38-4.55H24v9.02h12.94c-.58 2.96-2.26 5.48-4.78 7.18l7.73 6c4.51-4.18 7.09-10.36 7.09-17.65z"/><path fill="#FBBC05" d="M10.53 28.59c-.48-1.45-.76-2.99-.76-4.59s.27-3.14.76-4.59l-7.98-6.19C.92 16.46 0 20.12 0 24c0 3.88.92 7.54 2.56 10.78l7.97-6.19z"/><path fill="#34A853" d="M24 48c6.48 0 11.93-2.13 15.89-5.81l-7.73-6c-2.15 1.45-4.92 2.3-8.16 2.3-6.26 0-11.57-4.22-13.47-9.91l-7.98 6.19C6.51 42.62 14.62 48 24 48z"/></svg>
+          Google로 계속하기
+        </button>
+        <button type="button" class="sbtn kakao social-ko" id="kakaoBtn">
+          <svg viewBox="0 0 24 24"><path fill="#191600" d="M12 3C6.99 3 3 6.2 3 10.13c0 2.52 1.68 4.73 4.2 5.99-.18.65-.67 2.42-.77 2.8-.12.47.17.46.36.34.15-.1 2.39-1.62 3.36-2.28.6.09 1.22.13 1.85.13 5.01 0 9-3.2 9-7.18S17.01 3 12 3z"/></svg>
+          카카오로 계속하기
+        </button>
+        <button type="button" class="sbtn naver social-ko" id="naverBtn">
+          <svg viewBox="0 0 24 24"><path fill="#fff" d="M14.7 12.55 9.05 4.5H4.5v15h4.8v-8.05l5.65 8.05h4.55v-15h-4.8z"/></svg>
+          네이버로 계속하기
+        </button>
+      </div>
+
+      <div class="divider">또는 이메일로 가입</div>
+
+      <form id="emailForm">
+        <div class="field">
+          <label for="email">이메일</label>
+          <input id="email" type="email" autocomplete="email" data-i18n-ph placeholder="you@example.com" required />
         </div>
-      </div>
-      <div class="field">
-        <label for="f-name">이름</label>
-        <input id="f-name" type="text" data-i18n-ph placeholder="성함을 입력해 주세요" required />
-      </div>
-      <div class="field">
-        <label for="f-email">이메일</label>
-        <input id="f-email" type="email" data-i18n-ph placeholder="답변받으실 이메일 주소" required />
-      </div>
-      <div class="field">
-        <label for="f-msg">문의 내용</label>
-        <textarea id="f-msg" data-i18n-ph placeholder="문의하실 내용을 자세히 적어주세요. 데이터 오류 제보의 경우 해당 페이지 주소를 함께 남겨주시면 빠르게 확인할 수 있습니다." required></textarea>
-      </div>
-      <div class="submit-row">
-        <button type="submit" class="btn btn-primary">문의 보내기</button>
-        <p class="form-note">보내주신 정보는 문의 응대 목적으로만 사용되며, 답변 후 안전하게 폐기됩니다.</p>
-      </div>
-    </form>
+        <div class="field">
+          <label for="password">비밀번호</label>
+          <input id="password" type="password" autocomplete="new-password" data-i18n-ph placeholder="6자 이상 입력하세요" required />
+        </div>
+        <div class="field">
+          <label for="password2">비밀번호 확인</label>
+          <input id="password2" type="password" autocomplete="new-password" data-i18n-ph placeholder="비밀번호를 다시 입력하세요" required />
+        </div>
+        <label class="agree">
+          <input type="checkbox" id="agree" required />
+          <span><a href="Terms.html" target="_blank">이용약관</a> 및 <a href="Privacy.html" target="_blank">개인정보처리방침</a>에 동의합니다.</span>
+        </label>
+        <div class="submit-row">
+          <button type="submit" class="btn btn-primary" id="emailSubmit">회원가입</button>
+        </div>
+      </form>
 
-    <div class="card glass sent" id="sent">
-      <div class="chk"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg></div>
-      <h2>문의가 접수되었습니다</h2>
-      <p>소중한 의견 감사합니다. 입력해 주신 이메일로 영업일 기준 2~3일 내에 답변드리겠습니다.</p>
-    </div>
-
-    <div class="direct">
-      <a class="glass" href="mailto:hello@kos-ai.example"><span class="k">일반 문의</span><span class="v">hello@kos-ai.example</span></a>
-      <a class="glass" href="mailto:bugs@kos-ai.example"><span class="k">데이터 오류 제보</span><span class="v">bugs@kos-ai.example</span></a>
+      <p class="auth-foot">이미 계정이 있으신가요? <a href="Login.html">로그인</a></p>
     </div>
   </div>
 </main>
@@ -486,14 +533,6 @@ KOSi18n.register({
 </footer>
 
 <script>
-const catSeg=document.getElementById('catSeg');
-catSeg.addEventListener('click',e=>{const b=e.target.closest('button');if(!b)return;[...catSeg.children].forEach(c=>c.classList.toggle('active',c===b));});
-document.getElementById('form').addEventListener('submit',e=>{
-  e.preventDefault();
-  document.getElementById('form').style.display='none';
-  document.getElementById('sent').classList.add('show');
-  window.scrollTo({top:0,behavior:'smooth'});
-});
 const menuBtn=document.getElementById('menuBtn'),mobileMenu=document.getElementById('mobileMenu');
 menuBtn.addEventListener('click',()=>mobileMenu.classList.toggle('open'));
 mobileMenu.querySelectorAll('a').forEach(a=>a.addEventListener('click',()=>mobileMenu.classList.remove('open')));
@@ -506,17 +545,80 @@ applyTheme(saved);
 themeBtn.addEventListener('click',()=>applyTheme(root.getAttribute('data-theme')==='dark'?'light':'dark'));
 
 if(window.KOSi18n) KOSi18n.register({
-  "문의하기":"Contact",
-  "서비스 의견·협업 제안·데이터 오류 제보를 보내주세요. 영업일 기준 2~3일 내에 답변드립니다.":"Send service feedback, partnership proposals, or data error reports. We respond within 2–3 business days.",
-  "문의 유형":"Inquiry type","일반 문의":"General","데이터 오류 제보":"Data error report","협업·제휴":"Partnership",
-  "이름":"Name","이메일":"Email","문의 내용":"Message","문의 보내기":"Send inquiry",
-  "성함을 입력해 주세요":"Your full name",
-  "답변받으실 이메일 주소":"Email address for our reply",
-  "문의하실 내용을 자세히 적어주세요. 데이터 오류 제보의 경우 해당 페이지 주소를 함께 남겨주시면 빠르게 확인할 수 있습니다.":"Tell us in detail. For data error reports, include the URL of the page so we can investigate quickly.",
-  "보내주신 정보는 문의 응대 목적으로만 사용되며, 답변 후 안전하게 폐기됩니다.":"Your information is used only to handle your inquiry, and is safely discarded once we've replied.",
-  "문의가 접수되었습니다":"Your inquiry has been received",
-  "소중한 의견 감사합니다. 입력해 주신 이메일로 영업일 기준 2~3일 내에 답변드리겠습니다.":"Thank you for reaching out. We'll reply to the email you provided within 2–3 business days."
+  "회원가입":"Sign up",
+  "무료 계정을 만들고 관심 종목과 AI 리포트를 저장하세요.":"Create a free account to save your watchlist and AI reports.",
+  "데모 모드입니다 — 실제 가입을 사용하려면 firebase-config.js에 Firebase 설정값을 입력하세요.":"Demo mode — add your Firebase settings to firebase-config.js to enable real sign-up.",
+  "Google로 계속하기":"Continue with Google",
+  "카카오로 계속하기":"Continue with Kakao",
+  "네이버로 계속하기":"Continue with Naver",
+  "또는 이메일로 가입":"or sign up with email",
+  "이메일":"Email","비밀번호":"Password","비밀번호 확인":"Confirm password",
+  "6자 이상 입력하세요":"At least 6 characters",
+  "비밀번호를 다시 입력하세요":"Re-enter your password",
+  "이용약관":"Terms of Service","개인정보처리방침":"Privacy Policy",
+  "및":"and","에 동의합니다.":"— I agree.",
+  "이미 계정이 있으신가요?":"Already have an account?",
+  "로그인":"Sign in",
+  // dynamic messages (KOSi18n.t)
+  "비밀번호가 일치하지 않습니다.":"Passwords do not match.",
+  "비밀번호는 6자 이상이어야 합니다.":"Password must be at least 6 characters.",
+  "약관에 동의해 주세요.":"Please agree to the terms.",
+  "이미 가입된 이메일입니다.":"This email is already registered.",
+  "이메일 형식이 올바르지 않습니다.":"That email address looks invalid.",
+  "Firebase 설정이 필요합니다. firebase-config.js를 확인하세요.":"Firebase is not configured yet. See firebase-config.js.",
+  "회원가입 중 오류가 발생했습니다.":"Something went wrong during sign-up.",
+  "카카오·네이버 로그인은 앱 키 설정이 필요합니다. (firebase-config.js 참고)":"Kakao/Naver sign-in needs app keys to be configured (see firebase-config.js)."
 });
+</script>
+
+<script type="module">
+import { auth, isConfigured } from "./firebase-config.js";
+import { createUserWithEmailAndPassword, GoogleAuthProvider, signInWithPopup }
+  from "https://www.gstatic.com/firebasejs/10.12.2/firebase-auth.js";
+
+const $ = s => document.querySelector(s);
+const T = m => (window.KOSi18n ? window.KOSi18n.t(m) : m);
+const errBox = $('#authErr');
+function showErr(msg){ errBox.textContent = msg; errBox.style.display = 'block'; }
+function clearErr(){ errBox.style.display = 'none'; errBox.textContent = ''; }
+function go(){ const next = new URLSearchParams(location.search).get('next'); location.href = next || 'Home.html'; }
+
+if(!isConfigured){ $('#cfgNote').style.display = 'block'; }
+
+function mapError(err){
+  const c = (err && err.code) || '';
+  if(c.includes('api-key') || c.includes('configuration-not-found') || c.includes('operation-not-allowed'))
+    return T('Firebase 설정이 필요합니다. firebase-config.js를 확인하세요.');
+  if(c.includes('email-already-in-use')) return T('이미 가입된 이메일입니다.');
+  if(c.includes('invalid-email')) return T('이메일 형식이 올바르지 않습니다.');
+  if(c.includes('weak-password')) return T('비밀번호는 6자 이상이어야 합니다.');
+  return T('회원가입 중 오류가 발생했습니다.') + (c ? ' (' + c + ')' : '');
+}
+
+$('#emailForm').addEventListener('submit', async e => {
+  e.preventDefault(); clearErr();
+  const pw = $('#password').value, pw2 = $('#password2').value;
+  if(!$('#agree').checked){ showErr(T('약관에 동의해 주세요.')); return; }
+  if(pw.length < 6){ showErr(T('비밀번호는 6자 이상이어야 합니다.')); return; }
+  if(pw !== pw2){ showErr(T('비밀번호가 일치하지 않습니다.')); return; }
+  const btn = $('#emailSubmit'); btn.disabled = true;
+  try{ await createUserWithEmailAndPassword(auth, $('#email').value.trim(), pw); go(); }
+  catch(err){ showErr(mapError(err)); }
+  finally{ btn.disabled = false; }
+});
+
+$('#googleBtn').addEventListener('click', async () => {
+  clearErr();
+  if(!$('#agree').checked){ showErr(T('약관에 동의해 주세요.')); return; }
+  try{ await signInWithPopup(auth, new GoogleAuthProvider()); go(); }
+  catch(err){ if((err.code || '').includes('popup-closed') || (err.code || '').includes('cancelled-popup')) return; showErr(mapError(err)); }
+});
+
+// Kakao / Naver — 앱 키 + (Firebase 통합 시) 백엔드(Cloud Functions) 필요. 키 설정 전에는 안내만 표시.
+for(const id of ['kakaoBtn','naverBtn']){
+  const b = document.getElementById(id);
+  if(b) b.addEventListener('click', () => showErr(T('카카오·네이버 로그인은 앱 키 설정이 필요합니다. (firebase-config.js 참고)')));
+}
 </script>
 </body>
 </html>
