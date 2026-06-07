@@ -458,51 +458,64 @@ def collect_pykrx_bulk(date):
 def collect_close_history(date, days=5):
     """미니 차트(스파크라인)용 최근 `days` 거래일의 전종목 종가 시계열을 수집합니다.
 
-    get_market_ohlcv_by_ticker(date) (특정일 전종목)를 거래일별로 호출해
-    {ticker: [종가_오래된순 ... 종가_최신]} 형태로 반환합니다.
-    실패해도 빈 dict를 돌려주어 사이트는 정상 동작합니다(차트만 생략).
-    """
-    from pykrx import stock as krx
+    스냅샷과 동일하게 FinanceData KRX 캐시(raw.githubusercontent의 일별 CSV)에서
+    받습니다. KRX 직접호출/로그인이 필요 없어 GitHub Actions에서 안정적으로 동작합니다.
+    (live pykrx 연속 호출은 rate-limit으로 차단되므로 사용하지 않습니다.)
 
-    # date 기준 과거로 달력을 거슬러 올라가며 거래일(데이터 있는 날)만 수집
-    day_maps = []  # 최신순으로 쌓음
-    cur = datetime.datetime.strptime(date, "%Y%m%d")
-    guard = 0
-    while len(day_maps) < days and guard < days * 3 + 12:
-        dstr = cur.strftime("%Y%m%d")
-        cur -= datetime.timedelta(days=1)
-        guard += 1
-        if datetime.datetime.strptime(dstr, "%Y%m%d").weekday() >= 5:
-            continue  # 주말 스킵(호출 절약)
-        day_close = {}
-        for market_code in ("KOSPI", "KOSDAQ"):
+    반환: {ticker: [종가_오래된순 ... 종가_최신]}. 실패 시 빈 dict(차트만 생략).
+    주말은 건너뛰고, 공휴일에 전일이 복제된 파일은 직전 거래일과 동일하면 제외합니다.
+    """
+    import io
+    import requests
+    import pandas as pd
+
+    try:
+        base = datetime.datetime.strptime(str(date), "%Y%m%d").date()
+    except Exception:
+        base = (datetime.datetime.utcnow() + datetime.timedelta(hours=9)).date()
+
+    day_maps = []  # 최신순: 각 원소는 {code: close}
+    back = 0
+    while len(day_maps) < days and back < days * 4 + 20:
+        d = base - datetime.timedelta(days=back)
+        back += 1
+        if d.weekday() >= 5:
+            continue  # 주말 스킵
+        ds = d.strftime("%Y-%m-%d")
+        try:
+            r = requests.get(KRX_CACHE_URL.format(d=ds), timeout=20)
+        except Exception as e:
+            print(f"   [history] {ds} 요청 실패: {type(e).__name__}: {e}")
+            continue
+        if r.status_code != 200 or len(r.text) < 1000:
+            continue
+        try:
+            df = pd.read_csv(io.StringIO(r.text), index_col=0, dtype={"Code": str})
+        except Exception:
+            continue
+        if "Code" not in df.columns or "Close" not in df.columns:
+            continue
+        m = {}
+        for _, row in df.iterrows():
+            code = str(row.get("Code", "")).zfill(6)
             try:
-                df = krx.get_market_ohlcv_by_ticker(dstr, market=market_code)
-            except Exception as e:
-                print(f"   [history] {dstr}/{market_code} 오류: {e}")
-                continue
-            if df is None or len(df) == 0:
-                continue
-            ccol = next((c for c in df.columns if "종가" in str(c)), None)
-            if not ccol:
-                continue
-            for tk in df.index:
-                try:
-                    v = int(df.loc[tk, ccol])
-                except Exception:
-                    v = 0
-                if v > 0:
-                    day_close[tk] = v
-        if day_close:
-            day_maps.append(day_close)
-        time.sleep(0.3)
+                c = int(row["Close"]) if pd.notna(row["Close"]) else 0
+            except Exception:
+                c = 0
+            if c > 0:
+                m[code] = c
+        if not m:
+            continue
+        if day_maps and m == day_maps[-1]:
+            continue  # 공휴일 복제(직전 거래일과 동일) → 제외
+        day_maps.append(m)
 
     # 최신순 → 오래된순으로 뒤집어 종목별 배열 구성
     hist = {}
-    for day_close in reversed(day_maps):
-        for tk, v in day_close.items():
-            hist.setdefault(tk, []).append(v)
-    print(f"  [history] 최근 {len(day_maps)}거래일 종가 시계열 수집 — {len(hist)}종목")
+    for m in reversed(day_maps):
+        for code, c in m.items():
+            hist.setdefault(code, []).append(c)
+    print(f"  [history] KRX캐시 {len(day_maps)}거래일 종가 시계열 수집 — {len(hist)}종목")
     return hist
 
 
