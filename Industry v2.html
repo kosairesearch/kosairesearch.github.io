@@ -850,11 +850,13 @@ KOSi18n.register({
   :root[data-theme="dark"] .ind-risk .r{background:rgba(255,255,255,.05)}
   .ind-risk .rt{font:700 14px var(--font-sans);margin-bottom:4px}
   .ind-risk .rb{font:400 13.5px/1.6 var(--font-sans);color:var(--fg-2)}
-  .ind-tbl{width:100%;border-collapse:collapse;margin-top:8px}
-  .ind-tbl th{font:600 12px var(--font-sans);color:var(--fg-3);text-align:right;padding:10px 12px;border-bottom:1px solid var(--border-2)}
+  .ind-tbl-wrap{overflow-x:auto;-webkit-overflow-scrolling:touch;margin-top:8px}
+  .ind-tbl{width:100%;border-collapse:collapse}
+  .ind-tbl th{font:600 12px var(--font-sans);color:var(--fg-3);text-align:right;padding:10px 12px;border-bottom:1px solid var(--border-2);white-space:nowrap}
   .ind-tbl th:first-child{text-align:left}
-  .ind-tbl td{padding:12px;border-top:1px solid var(--hair);font:500 14px var(--font-sans);text-align:right;font-variant-numeric:tabular-nums}
+  .ind-tbl td{padding:12px;border-top:1px solid var(--hair);font:500 14px var(--font-sans);text-align:right;font-variant-numeric:tabular-nums;white-space:nowrap}
   .ind-tbl td:first-child{text-align:left}
+  @media(max-width:479px){.ind-tbl th,.ind-tbl td{padding:11px 8px;font-size:13px}}
   .ind-tbl tr{cursor:pointer}.ind-tbl tbody tr:hover{background:rgba(0,0,0,.03)}
   :root[data-theme="dark"] .ind-tbl tbody tr:hover{background:rgba(255,255,255,.04)}
   .ind-tbl .nm{font-weight:700}.ind-tbl .rep{font-size:11px;color:var(--brand-blue);font-weight:700}
@@ -994,7 +996,7 @@ themeBtn.addEventListener('click',()=>applyTheme(root.getAttribute('data-theme')
       +'<h1 class="ind-title">'+esc(tn(sec))+'</h1>'+lead+'</div>'
       +kpis+ai
       +'<div class="ind-sec"><h2>'+T('업종 내 주요 종목')+'</h2>'
-      +'<table class="ind-tbl"><thead><tr><th>'+T('종목')+'</th><th>'+T('현재가')+'</th><th>'+T('등락률')+'</th><th>'+T('시가총액')+'</th></tr></thead><tbody>'+rowsHtml+'</tbody></table>'
+      +'<div class="ind-tbl-wrap"><table class="ind-tbl"><thead><tr><th>'+T('종목')+'</th><th>'+T('현재가')+'</th><th>'+T('등락률')+'</th><th>'+T('시가총액')+'</th></tr></thead><tbody>'+rowsHtml+'</tbody></table></div>'
       +(an&&an.sources&&an.sources.length?'<p class="ind-ainote">'+T('분석 참고: 업종 상장사 종합 + 웹 검색')+'</p>':'')+'</div>';
   }
   function render(){var sec=qp('sector');if(sec&&decodeURIComponent(sec)){renderDetail(decodeURIComponent(sec));}else{renderList();}}

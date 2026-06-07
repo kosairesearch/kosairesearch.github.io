@@ -168,10 +168,12 @@ body::before{content:"";position:fixed;inset:0;z-index:-1;pointer-events:none;
 
 .prose p{margin:0 0 15px;font:400 16px/1.75 var(--font-sans);color:var(--fg-2);text-wrap:pretty}
 .prose p b,.prose strong{font-weight:700;color:var(--fg-1)}
+/* 한국어 본문 줄바꿈 통일: 단어 단위로 끊고(중간 끊김 방지), 정렬·줄바꿈 일관화 */
+.prose p,.factor p,.tldr p,.kpoints li,.risk .body,.overview .lead,.desc,.sec-lead,.wrapup p{word-break:keep-all;overflow-wrap:break-word}
 .subhead{font:700 15px var(--font-sans);color:var(--fg-2);margin:24px 0 10px}
 
 /* report overview */
-.overview .lead{font:700 clamp(20px,2.6vw,26px)/1.3 var(--font-sans);letter-spacing:-.02em;margin:0 0 12px;text-wrap:balance}
+.overview .lead{font:700 clamp(20px,2.6vw,26px)/1.3 var(--font-sans);letter-spacing:-.02em;margin:0 0 12px;text-wrap:pretty}
 .desc{font:400 17px/1.85 var(--font-sans);color:var(--fg-2);margin:0 0 24px}
 .kpoints{counter-reset:kp;list-style:none;margin:0 0 22px;padding:0;display:flex;flex-direction:column;gap:12px}
 .kpoints li{position:relative;padding-left:38px;font:400 16px/1.55 var(--font-sans);color:var(--fg-2)}
@@ -270,7 +272,7 @@ table.dt .pos{color:var(--up);font-weight:700}table.dt .neg{color:var(--down);fo
   .risk{grid-template-columns:1fr}
   .foot-grid{grid-template-columns:1fr 1fr;gap:24px}.foot-brand{grid-column:1/-1}.foot-bottom{flex-direction:column;gap:8px}
 }
-@media (max-width:479px){.mgrid{grid-template-columns:1fr}.th-now{font-size:34px}}
+@media (max-width:479px){.mgrid{grid-template-columns:repeat(2,1fr)}.th-now{font-size:34px}}
 
 
 /* AI report source cards */
