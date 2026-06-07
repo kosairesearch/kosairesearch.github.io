@@ -227,7 +227,7 @@ def build_prompt(stock, as_of, dart_block=""):
 - 거래대금: {fmt_won(trading_value)}
 {dart_section}
 [작성 지침]
-1. 먼저 web_search 도구로 이 기업의 최신 실적, 사업 현황, 업종 동향, 최근 뉴스를 조사하세요(한국어로 검색). 최소 2~4회 검색합니다.
+1. 먼저 web_search 도구로 이 기업의 최신 실적, 사업 현황, 업종 동향, 최근 뉴스를 조사하세요(한국어로 검색). 최소 2~4회 검색합니다. 출처는 **신뢰할 수 있는 것만** 사용하세요: DART 공시·기업 IR/홈페이지·증권사 리포트·주요 언론·공신력 있는 통계. **나무위키 등 위키, 개인 블로그, 종목토론방·커뮤니티 같은 비공식·검증 안 된 출처는 참고하거나 인용하지 마세요.**
 2. 재무 수치는 위 **[DART 공시 확정 재무]** 값을 최우선으로 사용하세요(공시 원문). 그 외 수치는 검색으로 **확인된 것만** 쓰고, 확인 안 된 구체적 숫자는 추정하지 말고 정성적으로 서술하세요. 데이터를 지어내지 마세요.
 3. 시점에 민감한 수치는 "최근 보도에 따르면", "2025년 기준" 처럼 출처/시점을 함께 밝히세요.
 4. 균형 있게: 강세 요인과 약세 요인을 모두 제시하세요.
@@ -307,6 +307,7 @@ def generate_one(client, stock, as_of, dart_block=""):
         system=SYSTEM,
         thinking={"type": "adaptive"},
         tools=[{"type": "web_search_20250305", "name": "web_search", "max_uses": 5,
+                "blocked_domains": ["namu.wiki", "librewiki.net", "dcinside.com", "fmkorea.com"],
                 "user_location": {"type": "approximate", "country": "KR",
                                   "timezone": "Asia/Seoul"}}],
         messages=[{"role": "user", "content": prompt}],

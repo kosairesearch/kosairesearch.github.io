@@ -37,6 +37,7 @@ FORCE = os.getenv("REPORT_FORCE", "") == "1"
 MAX_WAIT = int(os.getenv("BATCH_MAX_WAIT_SEC", "4800"))  # 80분
 
 TOOLS = [{"type": "web_search_20250305", "name": "web_search", "max_uses": 5,
+          "blocked_domains": ["namu.wiki", "librewiki.net", "dcinside.com", "fmkorea.com"],
           "user_location": {"type": "approximate", "country": "KR", "timezone": "Asia/Seoul"}}]
 
 log = g.log
