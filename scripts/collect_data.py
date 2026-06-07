@@ -455,6 +455,57 @@ def collect_pykrx_bulk(date):
     return results
 
 
+def collect_close_history(date, days=5):
+    """미니 차트(스파크라인)용 최근 `days` 거래일의 전종목 종가 시계열을 수집합니다.
+
+    get_market_ohlcv_by_ticker(date) (특정일 전종목)를 거래일별로 호출해
+    {ticker: [종가_오래된순 ... 종가_최신]} 형태로 반환합니다.
+    실패해도 빈 dict를 돌려주어 사이트는 정상 동작합니다(차트만 생략).
+    """
+    from pykrx import stock as krx
+
+    # date 기준 과거로 달력을 거슬러 올라가며 거래일(데이터 있는 날)만 수집
+    day_maps = []  # 최신순으로 쌓음
+    cur = datetime.datetime.strptime(date, "%Y%m%d")
+    guard = 0
+    while len(day_maps) < days and guard < days * 3 + 12:
+        dstr = cur.strftime("%Y%m%d")
+        cur -= datetime.timedelta(days=1)
+        guard += 1
+        if datetime.datetime.strptime(dstr, "%Y%m%d").weekday() >= 5:
+            continue  # 주말 스킵(호출 절약)
+        day_close = {}
+        for market_code in ("KOSPI", "KOSDAQ"):
+            try:
+                df = krx.get_market_ohlcv_by_ticker(dstr, market=market_code)
+            except Exception as e:
+                print(f"   [history] {dstr}/{market_code} 오류: {e}")
+                continue
+            if df is None or len(df) == 0:
+                continue
+            ccol = next((c for c in df.columns if "종가" in str(c)), None)
+            if not ccol:
+                continue
+            for tk in df.index:
+                try:
+                    v = int(df.loc[tk, ccol])
+                except Exception:
+                    v = 0
+                if v > 0:
+                    day_close[tk] = v
+        if day_close:
+            day_maps.append(day_close)
+        time.sleep(0.3)
+
+    # 최신순 → 오래된순으로 뒤집어 종목별 배열 구성
+    hist = {}
+    for day_close in reversed(day_maps):
+        for tk, v in day_close.items():
+            hist.setdefault(tk, []).append(v)
+    print(f"  [history] 최근 {len(day_maps)}거래일 종가 시계열 수집 — {len(hist)}종목")
+    return hist
+
+
 def safe_int(val, default=0):
     """문자열/숫자를 안전하게 int로 변환합니다."""
     try:
@@ -1248,6 +1299,20 @@ def main():
         existing.update(results)
         log_summary(f"- 병합(폴백): 기존 {before}개 + 신규수집 {len(results)}개 → {len(existing)}개")
         results = existing
+
+    # 미니 차트용 종가 시계열(최근 N거래일) 부착 — 실패해도 사이트는 정상(차트만 생략)
+    try:
+        days = int(os.getenv("CLOSE_HISTORY_DAYS", "5"))
+        hist = collect_close_history(date, days=days)
+        attached = 0
+        for tk, rec in results.items():
+            cl = hist.get(tk)
+            if cl and len(cl) >= 2:
+                rec["closes"] = cl
+                attached += 1
+        log_summary(f"- 미니차트 종가 시계열 부착: {attached}개 종목 (최근 {days}거래일)")
+    except Exception as e:
+        log_summary(f"- ⚠️ 종가 시계열 수집 실패(차트 생략): {e}")
 
     count = build_output(results, date)
     log_summary(f"- 최종 출력: {count}개 종목")

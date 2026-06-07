@@ -820,7 +820,7 @@ KOS.moverCard = (d, rank) => {
       <span class="kos-sector">${KOS.T(d.sector)}</span>
     </div>
     <h3 class="kos-card__name" style="font-size:16px">${(window.KOSi18n&&KOSi18n.lang==='en'&&d.name_en)?d.name_en:KOS.T(d.name)}</h3>
-    ${spark(d.change, col)}
+    ${spark(d.closes, col)}
     <div class="kos-price-row">
       <span class="kos-price" style="font-size:18px">${KOS.won(d.price)}</span>
       <span class="kos-change ${dir}"><span class="arw">${arw}</span>${KOS.pct(d.change)}</span>
@@ -828,17 +828,17 @@ KOS.moverCard = (d, rank) => {
   </a>`;
 };
 
-/* tiny deterministic sparkline */
-function spark(change, color){
-  const up = change >= 0;
-  const seed = Math.abs(change*100)|0;
-  let pts = [], y = 20;
-  for(let i=0;i<14;i++){
-    const r = ((seed*(i+3)*9301+49297)%233280)/233280 - .5;
-    y += r*9 + (up?-0.9:0.9);
-    y = Math.max(5, Math.min(33, y));
-    pts.push((i/13*100).toFixed(1)+','+y.toFixed(1));
-  }
+/* real sparkline from recent daily closes (data/stocks.js → closes[]) */
+function spark(closes, color){
+  if(!Array.isArray(closes) || closes.length < 2) return '';   // 데이터 없으면 차트 생략
+  const n = closes.length;
+  const min = Math.min.apply(null, closes), max = Math.max.apply(null, closes);
+  const range = (max - min) || 1;
+  const pts = closes.map((v,i)=>{
+    const x = (i/(n-1))*100;
+    const y = 34 - ((v - min)/range)*30;   // y: 4(고점)~34(저점)
+    return x.toFixed(1)+','+y.toFixed(1);
+  });
   return `<svg class="mv-spark" viewBox="0 0 100 38" preserveAspectRatio="none">
     <polyline points="${pts.join(' ')}" fill="none" stroke="${color}" stroke-width="1.8"
       stroke-linecap="round" stroke-linejoin="round" opacity=".85"/></svg>`;
