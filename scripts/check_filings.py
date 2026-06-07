@@ -28,7 +28,7 @@ except Exception:
 
 ROOT = Path(__file__).resolve().parent.parent
 STOCKS_JS = ROOT / "data" / "stocks.js"
-REPORTS_JS = ROOT / "data" / "reports.js"
+REPORTS_JS = ROOT / "data" / "reports-index.js"   # 분할 구조: 가벼운 인덱스(reportDate 포함)
 
 DART_API_KEY = os.getenv("DART_API_KEY")
 # 1회 실행당 최대 생성 종목 수(0=무제한). 종목당 ~1분이므로 120≈2h (Actions 6h 한도 내).

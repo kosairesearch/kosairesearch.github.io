@@ -52,23 +52,16 @@ def client():
 
 
 def load_existing():
-    reports, fresh = {}, set()
-    if STATE_JS.parent.joinpath("reports.js").exists():
+    reports = g.load_existing_reports()
+    fresh = set()
+    today = datetime.date.today()
+    for tk, r in reports.items():
         try:
-            raw = (STATE_JS.parent / "reports.js").read_text(encoding="utf-8")
-            prev = json.loads(raw[raw.find("{"): raw.rfind("}") + 1])
-            if "샘플" not in str(prev.get("model", "")):
-                reports = prev.get("reports", {}) or {}
-                today = datetime.date.today()
-                for tk, r in reports.items():
-                    try:
-                        d = datetime.date.fromisoformat(r.get("reportDate", ""))
-                        if (today - d).days <= FRESH_DAYS:
-                            fresh.add(tk)
-                    except Exception:
-                        pass
-        except Exception as e:
-            log(f"- (기존 리포트 로드 실패) {e}")
+            d = datetime.date.fromisoformat(r.get("reportDate", ""))
+            if (today - d).days <= FRESH_DAYS:
+                fresh.add(tk)
+        except Exception:
+            pass
     return reports, fresh
 
 
@@ -183,12 +176,8 @@ def collect(cl, as_of):
             fail += 1
             log(f"  · ⚠️ {tk} 파싱 실패: {type(e).__name__}: {e}")
 
-    payload = {"lastUpdated": as_of, "model": state.get("model", MODEL), "reports": reports}
-    (ROOT / "data" / "reports.js").write_text(
-        "// KOS ai — AI 리서치 리포트 (자동 생성). 직접 수정하지 마세요.\n"
-        "window.KOS_REPORTS = " + json.dumps(payload, ensure_ascii=False, indent=2) + ";\n",
-        encoding="utf-8")
-    log(f"\n✅ 회수 완료 · 성공 {ok}/실패 {fail} · 총 보유 {len(reports)}개 → data/reports.js")
+    g.write_reports(reports, state.get("model", MODEL), as_of)
+    log(f"\n✅ 회수 완료 · 성공 {ok}/실패 {fail} · 총 보유 {len(reports)}개 → data/reports/ + reports-index.js")
     return True
 
 

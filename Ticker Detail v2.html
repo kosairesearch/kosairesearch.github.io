@@ -9,11 +9,11 @@
 <title>삼성전자 (005930) — KOSAI 리포트</title>
 <style>
 /* ===== KOSAI — Ticker Detail (shared DesignCode Glass system) ===== */
-@font-face{font-family:"Pretendard";font-weight:400;font-style:normal;font-display:swap;src:url("fonts/Pretendard-Regular.otf") format("opentype")}
-@font-face{font-family:"Pretendard";font-weight:500;font-style:normal;font-display:swap;src:url("fonts/Pretendard-Medium.otf") format("opentype")}
-@font-face{font-family:"Pretendard";font-weight:600;font-style:normal;font-display:swap;src:url("fonts/Pretendard-SemiBold.otf") format("opentype")}
-@font-face{font-family:"Pretendard";font-weight:700;font-style:normal;font-display:swap;src:url("fonts/Pretendard-Bold.otf") format("opentype")}
-@font-face{font-family:"Pretendard";font-weight:800;font-style:normal;font-display:swap;src:url("fonts/Pretendard-ExtraBold.otf") format("opentype")}
+@font-face{font-family:"Pretendard";font-weight:400;font-style:normal;font-display:swap;src:url("fonts/Pretendard-Regular.woff2") format("woff2"), url("fonts/Pretendard-Regular.otf") format("opentype")}
+@font-face{font-family:"Pretendard";font-weight:500;font-style:normal;font-display:swap;src:url("fonts/Pretendard-Medium.woff2") format("woff2"), url("fonts/Pretendard-Medium.otf") format("opentype")}
+@font-face{font-family:"Pretendard";font-weight:600;font-style:normal;font-display:swap;src:url("fonts/Pretendard-SemiBold.woff2") format("woff2"), url("fonts/Pretendard-SemiBold.otf") format("opentype")}
+@font-face{font-family:"Pretendard";font-weight:700;font-style:normal;font-display:swap;src:url("fonts/Pretendard-Bold.woff2") format("woff2"), url("fonts/Pretendard-Bold.otf") format("opentype")}
+@font-face{font-family:"Pretendard";font-weight:800;font-style:normal;font-display:swap;src:url("fonts/Pretendard-ExtraBold.woff2") format("woff2"), url("fonts/Pretendard-ExtraBold.otf") format("opentype")}
 
 :root{
   --brand-blue:rgb(13,105,212);--brand-cyan:rgb(95,197,255);
@@ -291,7 +291,7 @@ table.dt .pos{color:var(--up);font-weight:700}table.dt .neg{color:var(--down);fo
 .rep-sub{font-size:clamp(14px,1.6vw,16px);line-height:1.6;color:var(--fg-2);margin:13px 0 0;max-width:62ch}
 </style>
 <script src="data/stocks.js"></script>
-<script src="data/reports.js"></script>
+<script src="data/reports-index.js"></script>
 <script>
 /* ============================================================
    KOSAI — lightweight in-place i18n (KO ⇄ EN)
@@ -787,7 +787,7 @@ KOSi18n.register({
 
 <script>
 /* ===== AI report render ===== */
-(function(){
+(async function(){
   var LIVE=(window.KOS_LIVE_DATA&&window.KOS_LIVE_DATA.stocks)||[];
   var REPORTS=(window.KOS_REPORTS&&window.KOS_REPORTS.reports)||{};
   var RMETA=window.KOS_REPORTS||{};
@@ -795,7 +795,12 @@ KOSi18n.register({
   var TK=qp('ticker');
   if(!TK){ var ks=Object.keys(REPORTS); TK=ks[0]||(LIVE[0]&&LIVE[0].ticker)||'005930'; }
   var STOCK=null,i; for(i=0;i<LIVE.length;i++){ if(LIVE[i].ticker===TK){ STOCK=LIVE[i]; break; } }
-  var REP=REPORTS[TK]||null;
+  /* 전체 리포트 본문은 종목별 파일에서 그때 로드(모바일 최적화). 인덱스(REPORTS)는 목록·메타용. */
+  var REP=null;
+  try{
+    var _resp=await fetch('data/reports/'+encodeURIComponent(TK)+'.json',{cache:'no-cache'});
+    if(_resp.ok){ REP=await _resp.json(); }
+  }catch(_e){}
   if(!STOCK){ STOCK={ ticker:TK, name:(REP?REP.name:TK), name_en:(REP?REP.name_en:TK),
     market:(REP?REP.market:''), sector:(REP?REP.sector:''), price:null, change:0,
     mcap:null, trading_value:null, volume:null, shares:null, rank:null }; }

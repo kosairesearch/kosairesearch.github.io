@@ -28,7 +28,9 @@ import anthropic
 
 ROOT = Path(__file__).resolve().parent.parent
 STOCKS_JS = ROOT / "data" / "stocks.js"
-REPORTS_JS = ROOT / "data" / "reports.js"
+REPORTS_JS = ROOT / "data" / "reports.js"            # (레거시) 단일 파일 — 마이그레이션용으로만 읽음
+REPORTS_DIR = ROOT / "data" / "reports"              # 종목별 JSON: data/reports/{ticker}.json
+REPORTS_INDEX_JS = ROOT / "data" / "reports-index.js"  # 가벼운 인덱스(title/날짜) → 웹페이지 로드용
 
 MODEL = os.getenv("REPORT_MODEL", "claude-opus-4-8")
 TOP_N = int(os.getenv("REPORT_TOP_N", "5"))
@@ -41,6 +43,60 @@ def log(msg):
     if STEP_SUMMARY:
         with open(STEP_SUMMARY, "a", encoding="utf-8") as f:
             f.write(msg + "\n")
+
+
+# ── 리포트 저장소: 종목별 JSON + 가벼운 인덱스 (모바일 로딩 최적화) ──────────
+def load_existing_reports():
+    """기존 리포트를 {ticker: report} 로 읽는다.
+    우선 data/reports/*.json(분할), 없으면 레거시 data/reports.js 에서 읽는다."""
+    reports = {}
+    if REPORTS_DIR.exists():
+        for p in REPORTS_DIR.glob("*.json"):
+            try:
+                reports[p.stem] = json.loads(p.read_text(encoding="utf-8"))
+            except Exception:
+                pass
+    if not reports and REPORTS_JS.exists():
+        try:
+            raw = REPORTS_JS.read_text(encoding="utf-8")
+            prev = json.loads(raw[raw.find("{"): raw.rfind("}") + 1])
+            if "샘플" not in str(prev.get("model", "")):
+                reports = prev.get("reports", {}) or {}
+        except Exception:
+            pass
+    return reports
+
+
+def write_reports(reports, model, as_of):
+    """종목별 JSON(data/reports/{tk}.json) + 가벼운 인덱스(reports-index.js)로 저장.
+    인덱스는 목록/카드용 최소 필드(title·reportDate·reportTs)만 담아 window.KOS_REPORTS 로 노출한다
+    (전체 본문은 종목상세에서 해당 JSON만 fetch). 상폐 등으로 사라진 종목 파일은 정리한다."""
+    REPORTS_DIR.mkdir(parents=True, exist_ok=True)
+    for tk, rep in reports.items():
+        (REPORTS_DIR / f"{tk}.json").write_text(
+            json.dumps(rep, ensure_ascii=False), encoding="utf-8")
+    keep = set(reports.keys())
+    for p in REPORTS_DIR.glob("*.json"):
+        if p.stem not in keep:
+            try:
+                p.unlink()
+            except Exception:
+                pass
+    index = {tk: {"title": r.get("title"),
+                  "reportDate": r.get("reportDate"),
+                  "reportTs": r.get("reportTs") or r.get("reportDate")}
+             for tk, r in reports.items()}
+    payload = {"lastUpdated": as_of, "model": model, "reports": index}
+    REPORTS_INDEX_JS.write_text(
+        "// KOS ai — 리포트 인덱스(자동 생성). 전체 본문은 data/reports 폴더의 종목별 JSON 참조.\n"
+        "window.KOS_REPORTS = " + json.dumps(payload, ensure_ascii=False) + ";\n",
+        encoding="utf-8")
+    # 레거시 단일 파일은 더 이상 쓰지 않음(존재 시 제거해 용량 정리)
+    try:
+        if REPORTS_JS.exists():
+            REPORTS_JS.unlink()
+    except Exception:
+        pass
 
 
 # ── stocks.js 파싱 ────────────────────────────────────────────────────
@@ -368,27 +424,20 @@ def main():
 
     # ── 이어하기: 기존 리포트를 불러온다. 최근(FRESH_DAYS일 이내) 리포트는
     #    재생성하지 않고 유지(같은 날 재실행=복구). 오래된 것은 갱신(주간 자동실행). ──
-    reports = {}
+    reports = load_existing_reports()
     force = os.getenv("REPORT_FORCE", "") == "1"
     FRESH_DAYS = int(os.getenv("REPORT_FRESH_DAYS", "6"))
     fresh = set()
-    if REPORTS_JS.exists():
-        try:
-            raw = REPORTS_JS.read_text(encoding="utf-8")
-            prev = json.loads(raw[raw.find("{"): raw.rfind("}") + 1])
-            if "샘플" not in str(prev.get("model", "")):  # 샘플 파일은 무시
-                reports = prev.get("reports", {}) or {}
-                today = now.date()
-                for tk, r in reports.items():
-                    try:
-                        d = datetime.date.fromisoformat(r.get("reportDate", ""))
-                        if (today - d).days <= FRESH_DAYS:
-                            fresh.add(tk)
-                    except Exception:
-                        pass
-                log(f"- 기존 리포트 {len(reports)}개 로드 · 최근({FRESH_DAYS}일내) {len(fresh)}개 유지")
-        except Exception as e:
-            log(f"- (기존 리포트 로드 실패, 새로 생성) {e}")
+    if reports:
+        today = now.date()
+        for tk, r in reports.items():
+            try:
+                d = datetime.date.fromisoformat(r.get("reportDate", ""))
+                if (today - d).days <= FRESH_DAYS:
+                    fresh.add(tk)
+            except Exception:
+                pass
+        log(f"- 기존 리포트 {len(reports)}개 로드 · 최근({FRESH_DAYS}일내) {len(fresh)}개 유지")
 
     total_searches = 0
     aborted = False
@@ -467,17 +516,9 @@ def main():
         log("❌ 생성된 리포트가 없습니다.")
         sys.exit(1)
 
-    payload = {
-        "lastUpdated": as_of,
-        "model": MODEL,
-        "reports": reports,
-    }
-    REPORTS_JS.parent.mkdir(parents=True, exist_ok=True)
-    js = ("// KOS ai — AI 리서치 리포트 (자동 생성). 직접 수정하지 마세요.\n"
-          "window.KOS_REPORTS = " + json.dumps(payload, ensure_ascii=False, indent=2) + ";\n")
-    REPORTS_JS.write_text(js, encoding="utf-8")
+    write_reports(reports, MODEL, as_of)
 
-    log(f"\n✅ 현재 리포트 {len(reports)}개 보유 · 이번 실행 웹검색 {total_searches}회 · → data/reports.js")
+    log(f"\n✅ 현재 리포트 {len(reports)}개 보유 · 이번 실행 웹검색 {total_searches}회 · → data/reports/ + reports-index.js")
     if aborted:
         log("⛔ 크레딧 부족으로 일부 종목이 생성되지 않았습니다. 충전 후 워크플로를 다시 실행하면 남은 종목만 이어서 생성합니다.")
         sys.exit(2)

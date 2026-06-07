@@ -15,7 +15,7 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parent.parent
 STOCKS_JS = ROOT / "data" / "stocks.js"
 KNOWN = ROOT / "data" / "known_tickers.json"
-REPORTS_JS = ROOT / "data" / "reports.js"
+REPORTS_JS = ROOT / "data" / "reports-index.js"   # 분할 구조: 가벼운 인덱스(티커 목록·reportDate)
 MAX_NEW = int(os.getenv("MAX_NEW_REPORTS", "20") or "20")
 
 
