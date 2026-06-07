@@ -455,70 +455,6 @@ def collect_pykrx_bulk(date):
     return results
 
 
-def collect_close_history(date, days=5):
-    """미니 차트(스파크라인)용 최근 `days` 거래일의 전종목 종가 시계열을 수집합니다.
-
-    스냅샷과 동일하게 FinanceData KRX 캐시(raw.githubusercontent의 일별 CSV)에서
-    받습니다. KRX 직접호출/로그인이 필요 없어 GitHub Actions에서 안정적으로 동작합니다.
-    (live pykrx 연속 호출은 rate-limit으로 차단되므로 사용하지 않습니다.)
-
-    반환: {ticker: [종가_오래된순 ... 종가_최신]}. 실패 시 빈 dict(차트만 생략).
-    주말은 건너뛰고, 공휴일에 전일이 복제된 파일은 직전 거래일과 동일하면 제외합니다.
-    """
-    import io
-    import requests
-    import pandas as pd
-
-    try:
-        base = datetime.datetime.strptime(str(date), "%Y%m%d").date()
-    except Exception:
-        base = (datetime.datetime.utcnow() + datetime.timedelta(hours=9)).date()
-
-    day_maps = []  # 최신순: 각 원소는 {code: close}
-    back = 0
-    while len(day_maps) < days and back < days * 4 + 20:
-        d = base - datetime.timedelta(days=back)
-        back += 1
-        if d.weekday() >= 5:
-            continue  # 주말 스킵
-        ds = d.strftime("%Y-%m-%d")
-        try:
-            r = requests.get(KRX_CACHE_URL.format(d=ds), timeout=20)
-        except Exception as e:
-            print(f"   [history] {ds} 요청 실패: {type(e).__name__}: {e}")
-            continue
-        if r.status_code != 200 or len(r.text) < 1000:
-            continue
-        try:
-            df = pd.read_csv(io.StringIO(r.text), index_col=0, dtype={"Code": str})
-        except Exception:
-            continue
-        if "Code" not in df.columns or "Close" not in df.columns:
-            continue
-        m = {}
-        for _, row in df.iterrows():
-            code = str(row.get("Code", "")).zfill(6)
-            try:
-                c = int(row["Close"]) if pd.notna(row["Close"]) else 0
-            except Exception:
-                c = 0
-            if c > 0:
-                m[code] = c
-        if not m:
-            continue
-        if day_maps and m == day_maps[-1]:
-            continue  # 공휴일 복제(직전 거래일과 동일) → 제외
-        day_maps.append(m)
-
-    # 최신순 → 오래된순으로 뒤집어 종목별 배열 구성
-    hist = {}
-    for m in reversed(day_maps):
-        for code, c in m.items():
-            hist.setdefault(code, []).append(c)
-    print(f"  [history] KRX캐시 {len(day_maps)}거래일 종가 시계열 수집 — {len(hist)}종목")
-    return hist
-
-
 def safe_int(val, default=0):
     """문자열/숫자를 안전하게 int로 변환합니다."""
     try:
@@ -1312,20 +1248,6 @@ def main():
         existing.update(results)
         log_summary(f"- 병합(폴백): 기존 {before}개 + 신규수집 {len(results)}개 → {len(existing)}개")
         results = existing
-
-    # 미니 차트용 종가 시계열(최근 N거래일) 부착 — 실패해도 사이트는 정상(차트만 생략)
-    try:
-        days = int(os.getenv("CLOSE_HISTORY_DAYS", "5"))
-        hist = collect_close_history(date, days=days)
-        attached = 0
-        for tk, rec in results.items():
-            cl = hist.get(tk)
-            if cl and len(cl) >= 2:
-                rec["closes"] = cl
-                attached += 1
-        log_summary(f"- 미니차트 종가 시계열 부착: {attached}개 종목 (최근 {days}거래일)")
-    except Exception as e:
-        log_summary(f"- ⚠️ 종가 시계열 수집 실패(차트 생략): {e}")
 
     count = build_output(results, date)
     log_summary(f"- 최종 출력: {count}개 종목")

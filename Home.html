@@ -311,7 +311,9 @@ section.block{padding:36px 0}
   text-decoration:none;color:var(--fg-1);transition:transform .14s,box-shadow .14s;cursor:pointer}
 .mover-card:hover{transform:translateY(-3px)}
 .mover-card .mover-rank{font:600 11px var(--font-mono);color:var(--fg-3)}
-.mv-spark{height:38px;width:100%}
+.mv-meta{display:flex;flex-direction:column;gap:5px;margin:8px 0 2px}
+.mv-meta .row{display:flex;justify-content:space-between;align-items:baseline;font:600 12.5px var(--font-sans);color:var(--fg-1)}
+.mv-meta .row .k{font-weight:400;font-size:11.5px;color:var(--fg-3)}
 
 /* ============================================================
    Footer
@@ -820,29 +822,16 @@ KOS.moverCard = (d, rank) => {
       <span class="kos-sector">${KOS.T(d.sector)}</span>
     </div>
     <h3 class="kos-card__name" style="font-size:16px">${(window.KOSi18n&&KOSi18n.lang==='en'&&d.name_en)?d.name_en:KOS.T(d.name)}</h3>
-    ${spark(d.closes, col)}
+    <div class="mv-meta">
+      <div class="row"><span class="k">${KOS.T('거래대금')}</span><span>${KOS.amt(d.trading_value)}</span></div>
+      <div class="row"><span class="k">${KOS.T('시가총액')}</span><span>${KOS.mcap(d.mcap)}</span></div>
+    </div>
     <div class="kos-price-row">
       <span class="kos-price" style="font-size:18px">${KOS.won(d.price)}</span>
       <span class="kos-change ${dir}"><span class="arw">${arw}</span>${KOS.pct(d.change)}</span>
     </div>
   </a>`;
 };
-
-/* real sparkline from recent daily closes (data/stocks.js → closes[]) */
-function spark(closes, color){
-  if(!Array.isArray(closes) || closes.length < 2) return '';   // 데이터 없으면 차트 생략
-  const n = closes.length;
-  const min = Math.min.apply(null, closes), max = Math.max.apply(null, closes);
-  const range = (max - min) || 1;
-  const pts = closes.map((v,i)=>{
-    const x = (i/(n-1))*100;
-    const y = 34 - ((v - min)/range)*30;   // y: 4(고점)~34(저점)
-    return x.toFixed(1)+','+y.toFixed(1);
-  });
-  return `<svg class="mv-spark" viewBox="0 0 100 38" preserveAspectRatio="none">
-    <polyline points="${pts.join(' ')}" fill="none" stroke="${color}" stroke-width="1.8"
-      stroke-linecap="round" stroke-linejoin="round" opacity=".85"/></svg>`;
-}
 
 /* ---- Data ---- */
 const REPORTS_DEFAULT = [
