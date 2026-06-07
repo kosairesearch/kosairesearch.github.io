@@ -1,5 +1,24 @@
-=== 배치(collect) 시작 Sun Jun  7 22:06:49 UTC 2026 ===
-  · ⚠️ 023790 불완전(잘림 의심) — 건너뜀, 기존 유지
-  · ⚠️ 032680 불완전(잘림 의심) — 건너뜀, 기존 유지
+=== 배치(auto) 시작 Sun Jun  7 22:11:57 UTC 2026 ===
+## 🤖 Batch 제출 — 대상 2개 / 상위 100개 (최근 2688개 건너뜀) · 모델 claude-sonnet-4-6
+{'status': '013', 'message': '조회된 데이타가 없습니다.'}
 
-✅ 회수 완료 · 성공 618/실패 2 · 총 보유 2688개 → data/reports/ + reports-index.js
+{'status': '013', 'message': '조회된 데이타가 없습니다.'}
+
+  · 준비 023790 동일스틸럭스 (DART O)
+{'status': '013', 'message': '조회된 데이타가 없습니다.'}
+
+{'status': '013', 'message': '조회된 데이타가 없습니다.'}
+
+  · 준비 032680 소프트센 (DART O)
+- ✅ 배치 제출 완료: msgbatch_01AokPrpznj4K75f3fp3VQxs (2건) → data/batch_state.json
+  · 상태 in_progress · 처리 2/성공 0/오류 0
+  · 상태 in_progress · 처리 2/성공 0/오류 0
+  · 상태 in_progress · 처리 2/성공 0/오류 0
+  · 상태 in_progress · 처리 2/성공 0/오류 0
+  · 상태 in_progress · 처리 2/성공 0/오류 0
+  · 상태 in_progress · 처리 2/성공 0/오류 0
+  · 상태 in_progress · 처리 2/성공 0/오류 0
+  · 상태 in_progress · 처리 2/성공 0/오류 0
+  · 상태 ended · 처리 0/성공 2/오류 0
+
+✅ 회수 완료 · 성공 2/실패 0 · 총 보유 2690개 → data/reports/ + reports-index.js
