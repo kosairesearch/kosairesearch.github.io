@@ -6,12 +6,46 @@
    - 로그인 상태: 아바타(이메일 첫 글자) + 드롭다운(이메일·로그아웃)
    firebase-config.js 설정 전(데모 모드)에는 로그인 링크만 표시합니다.
    ============================================================ */
-import { auth, isConfigured } from "./firebase-config.js";
-import { onAuthStateChanged, signOut }
+import { app, auth, isConfigured } from "./firebase-config.js";
+import { onAuthStateChanged, signOut, deleteUser }
   from "https://www.gstatic.com/firebasejs/10.12.2/firebase-auth.js";
+import { getFirestore, doc, deleteDoc }
+  from "https://www.gstatic.com/firebasejs/10.12.2/firebase-firestore.js";
 
 const T = m => (window.KOSi18n ? window.KOSi18n.t(m) : m);
-if(window.KOSi18n) window.KOSi18n.register({ "로그인":"Sign in", "로그아웃":"Sign out" });
+if(window.KOSi18n) window.KOSi18n.register({
+  "로그인":"Sign in", "로그아웃":"Sign out", "회원 탈퇴":"Delete account",
+  "정말 회원 탈퇴하시겠어요?\n계정과 저장된 관심종목이 모두 삭제되며 되돌릴 수 없습니다.":
+    "Delete your account?\nYour account and saved watchlist will be permanently removed. This cannot be undone.",
+  "회원 탈퇴가 완료되었습니다. 그동안 이용해 주셔서 감사합니다.":
+    "Your account has been deleted. Thank you for using KOSAI.",
+  "보안을 위해 다시 로그인한 뒤 탈퇴를 진행해 주세요.":
+    "For security, please sign in again and then delete your account.",
+  "탈퇴 처리 중 오류가 발생했습니다. 잠시 후 다시 시도해 주세요.":
+    "Something went wrong while deleting your account. Please try again later."
+});
+
+/* 회원 탈퇴: 워치리스트(Firestore) 삭제 → 계정 삭제 → 홈으로.
+   Firebase 보안상 최근 로그인이 필요하면(requires-recent-login) 재로그인 안내. */
+async function deleteAccount(){
+  const user = auth.currentUser;
+  if(!user) return;
+  if(!confirm(T("정말 회원 탈퇴하시겠어요?\n계정과 저장된 관심종목이 모두 삭제되며 되돌릴 수 없습니다."))) return;
+  try{
+    try{ await deleteDoc(doc(getFirestore(app), "watchlists", user.uid)); }catch(e){}
+    await deleteUser(user);
+    alert(T("회원 탈퇴가 완료되었습니다. 그동안 이용해 주셔서 감사합니다."));
+    location.href = "Home.html";
+  }catch(e){
+    if(e && e.code === "auth/requires-recent-login"){
+      alert(T("보안을 위해 다시 로그인한 뒤 탈퇴를 진행해 주세요."));
+      try{ await signOut(auth); }catch(_){}
+      location.href = "Login.html?next=" + encodeURIComponent(here());
+    }else{
+      alert(T("탈퇴 처리 중 오류가 발생했습니다. 잠시 후 다시 시도해 주세요."));
+    }
+  }
+}
 
 function injectCss(){
   if(document.getElementById('navAuthCss')) return;
@@ -42,6 +76,8 @@ function injectCss(){
     font:600 14px var(--font-sans);color:var(--fg-1);padding:10px;border-radius:8px}
   #navAuth .menu button:hover{background:rgba(0,0,0,.06)}
   :root[data-theme="dark"] #navAuth .menu button:hover{background:rgba(255,255,255,.08)}
+  #navAuth .menu button.withdraw{color:#c0282b;font-weight:500;font-size:12.5px;margin-top:2px;border-top:1px solid var(--hair);border-radius:0 0 8px 8px}
+  :root[data-theme="dark"] #navAuth .menu button.withdraw{color:#ff8a8c}
   /* 모바일: 헤더 로그인/계정 숨기고 햄버거 메뉴 안으로 */
   @media(max-width:767px){#navAuth{display:none}}
   #mobileMenu #mAuth{border-top:1px solid var(--hair);margin-top:6px;padding-top:6px}
@@ -49,7 +85,9 @@ function injectCss(){
   #mobileMenu #mAuth a,#mobileMenu #mAuth button{display:block;width:100%;text-align:left;border:0;background:transparent;
     cursor:pointer;font:600 16px var(--font-sans);color:var(--fg-1);text-decoration:none;padding:13px 14px;border-radius:var(--radius-sm)}
   #mobileMenu #mAuth a:hover,#mobileMenu #mAuth button:hover{background:rgba(0,0,0,.06)}
-  :root[data-theme="dark"] #mobileMenu #mAuth a:hover,:root[data-theme="dark"] #mobileMenu #mAuth button:hover{background:rgba(255,255,255,.08)}`;
+  :root[data-theme="dark"] #mobileMenu #mAuth a:hover,:root[data-theme="dark"] #mobileMenu #mAuth button:hover{background:rgba(255,255,255,.08)}
+  #mobileMenu #mAuth button.m-withdraw{color:#c0282b;font-size:14px}
+  :root[data-theme="dark"] #mobileMenu #mAuth button.m-withdraw{color:#ff8a8c}`;
   document.head.appendChild(st);
 }
 
@@ -84,6 +122,7 @@ function renderLoggedIn(wrap, user){
        <div class="menu" role="menu">
          <div class="em">${email}</div>
          <button type="button" class="logout">로그아웃</button>
+         <button type="button" class="withdraw">회원 탈퇴</button>
        </div>
      </div>`;
   const acct = wrap.querySelector('.acct');
@@ -93,6 +132,7 @@ function renderLoggedIn(wrap, user){
     try{ await signOut(auth); }catch(e){}
     location.href = 'Home.html';
   });
+  wrap.querySelector('.withdraw').addEventListener('click', deleteAccount);
   if(window.KOSi18n) window.KOSi18n.apply();
 }
 
@@ -102,8 +142,9 @@ function renderMobileAuth(user){
   if(!el){ el = document.createElement('div'); el.id = 'mAuth'; mm.appendChild(el); }
   if(user){
     const email = user.email || (user.displayName || '');
-    el.innerHTML = `<div class="m-em">${email}</div><button type="button" class="m-logout">로그아웃</button>`;
+    el.innerHTML = `<div class="m-em">${email}</div><button type="button" class="m-logout">로그아웃</button><button type="button" class="m-withdraw">회원 탈퇴</button>`;
     el.querySelector('.m-logout').addEventListener('click', async () => { try{ await signOut(auth); }catch(e){} location.href = 'Home.html'; });
+    el.querySelector('.m-withdraw').addEventListener('click', deleteAccount);
   } else {
     el.innerHTML = `<a href="Login.html?next=${encodeURIComponent(here())}">로그인</a>`;
   }
