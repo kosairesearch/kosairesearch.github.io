@@ -6,7 +6,8 @@
    2) 빌드 → Authentication → 시작하기 → 로그인 방법에서
       "이메일/비밀번호"와 "Google" 사용 설정
    3) Authentication → 설정 → 승인된 도메인에
-      kosairesearch.github.io 추가 (로컬 테스트 시 localhost 도 추가)
+      kosai.kr, www.kosai.kr, kosairesearch.github.io 추가
+      (로컬 테스트 시 localhost 도 추가)
    4) 프로젝트 설정 → 일반 → 내 앱(웹) → SDK 설정/구성에서
       아래 firebaseConfig 값을 복사해 [PLACEHOLDER] 자리를 교체
 
