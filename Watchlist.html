@@ -504,18 +504,18 @@ KOSi18n.register({
     <div class="sortwrap">
       <span class="sort-label">정렬</span>
       <div class="seg" id="sortSeg">
-        <button class="active" data-sort="change_desc">등락률 높은 순</button>
-        <button data-sort="change_asc">등락률 낮은 순</button>
-        <button data-sort="mcap_desc">시가총액 높은 순</button>
+        <button class="active" data-sort="mcap_desc">시가총액 높은 순</button>
         <button data-sort="mcap_asc">시가총액 낮은 순</button>
+        <button data-sort="change_desc">등락률 높은 순</button>
+        <button data-sort="change_asc">등락률 낮은 순</button>
         <button data-sort="added">추가 순서</button>
         <button data-sort="name">종목명순</button>
       </div>
       <select class="sort-select" id="sortSelect" aria-label="정렬">
-        <option value="change_desc">등락률 높은 순</option>
-        <option value="change_asc">등락률 낮은 순</option>
         <option value="mcap_desc">시가총액 높은 순</option>
         <option value="mcap_asc">시가총액 낮은 순</option>
+        <option value="change_desc">등락률 높은 순</option>
+        <option value="change_asc">등락률 낮은 순</option>
         <option value="added">추가 순서</option>
         <option value="name">종목명순</option>
       </select>
@@ -594,7 +594,7 @@ function getWatched(){
 }
 let LIST = getWatched();
 
-let sortKey='change_desc';
+let sortKey='mcap_desc';
 const rowsEl=document.getElementById('rows'),wlEl=document.getElementById('wl'),emptyEl=document.getElementById('empty');
 
 function sorted(){
