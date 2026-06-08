@@ -264,7 +264,7 @@ table.dt .pos{color:var(--up);font-weight:700}table.dt .neg{color:var(--down);fo
 @media (min-width:768px){:root{--pad:24px}}
 @media (min-width:1024px){:root{--pad:32px}}
 @media (min-width:1180px){:root{--pad:0px}.nav{width:100%}}
-@media (max-width:920px){.mgrid{grid-template-columns:repeat(2,1fr)}.th-grid2{grid-template-columns:1fr;gap:22px}}
+@media (max-width:920px){.th-grid2{grid-template-columns:1fr;gap:22px}}
 @media (max-width:767px){
   .nav-links{display:none}.menu-btn{display:inline-flex}
   .th-sec{padding:20px 18px}
@@ -272,7 +272,13 @@ table.dt .pos{color:var(--up);font-weight:700}table.dt .neg{color:var(--down);fo
   .risk{grid-template-columns:1fr}
   .foot-grid{grid-template-columns:repeat(3,1fr);gap:16px}.foot-brand{grid-column:1/-1}.foot-bottom{flex-direction:column;gap:8px}
 }
-@media (max-width:479px){.mgrid{grid-template-columns:repeat(2,1fr)}.th-now{font-size:34px}}
+@media (max-width:767px){
+  .m{padding:10px 9px}
+  .m .k{font-size:10.5px}
+  .m .val{font-size:15px;margin-top:3px}
+  .m .peer{font-size:9.5px;line-height:1.3;margin-top:3px}
+}
+@media (max-width:479px){.th-now{font-size:34px}}
 
 
 /* AI report source cards */
