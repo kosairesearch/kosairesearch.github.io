@@ -504,14 +504,18 @@ KOSi18n.register({
     <div class="sortwrap">
       <span class="sort-label">정렬</span>
       <div class="seg" id="sortSeg">
-        <button class="active" data-sort="change">등락률순</button>
-        <button data-sort="mcap">시가총액순</button>
+        <button class="active" data-sort="change_desc">등락률 높은 순</button>
+        <button data-sort="change_asc">등락률 낮은 순</button>
+        <button data-sort="mcap_desc">시가총액 높은 순</button>
+        <button data-sort="mcap_asc">시가총액 낮은 순</button>
         <button data-sort="added">추가 순서</button>
         <button data-sort="name">종목명순</button>
       </div>
       <select class="sort-select" id="sortSelect" aria-label="정렬">
-        <option value="change">등락률순</option>
-        <option value="mcap">시가총액순</option>
+        <option value="change_desc">등락률 높은 순</option>
+        <option value="change_asc">등락률 낮은 순</option>
+        <option value="mcap_desc">시가총액 높은 순</option>
+        <option value="mcap_asc">시가총액 낮은 순</option>
         <option value="added">추가 순서</option>
         <option value="name">종목명순</option>
       </select>
@@ -590,13 +594,15 @@ function getWatched(){
 }
 let LIST = getWatched();
 
-let sortKey='change';
+let sortKey='change_desc';
 const rowsEl=document.getElementById('rows'),wlEl=document.getElementById('wl'),emptyEl=document.getElementById('empty');
 
 function sorted(){
   const l=[...LIST];
-  if(sortKey==='change')l.sort((a,b)=>b.change-a.change);
-  else if(sortKey==='mcap')l.sort((a,b)=>b.mcap-a.mcap);
+  if(sortKey==='change_desc')l.sort((a,b)=>b.change-a.change);
+  else if(sortKey==='change_asc')l.sort((a,b)=>a.change-b.change);
+  else if(sortKey==='mcap_desc')l.sort((a,b)=>b.mcap-a.mcap);
+  else if(sortKey==='mcap_asc')l.sort((a,b)=>a.mcap-b.mcap);
   else if(sortKey==='added')l.sort((a,b)=>b.added-a.added);
   else if(sortKey==='name')l.sort((a,b)=>a.name.localeCompare(b.name,'ko'));
   return l;
@@ -701,6 +707,7 @@ themeBtn.addEventListener('click',()=>applyTheme(root.getAttribute('data-theme')
 const WATCHLIST_DICT={
   "관심 종목":"My Watchlist",
   "정렬":"Sort","등락률순":"By Change","시가총액순":"By Market Cap","추가 순서":"By Date Added","종목명순":"By Name",
+  "등락률 높은 순":"Change: High→Low","등락률 낮은 순":"Change: Low→High","시가총액 높은 순":"Market Cap: High→Low","시가총액 낮은 순":"Market Cap: Low→High",
   " 편집":" Edit"," 완료":" Done","편집":"Edit","전체 삭제":"Clear All",
   "종목":"Stock","현재가":"Price","리포트 제목":"Report Title",
   "관심 종목이 비어 있습니다":"Your watchlist is empty",

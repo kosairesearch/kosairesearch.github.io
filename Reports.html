@@ -520,10 +520,12 @@ KOSi18n.register({
     <div class="sortwrap">
       <span class="sort-label">정렬</span>
       <div class="selctl" id="sortCtl" data-i18n-skip>
-        <button class="selbtn" id="sortBtn" type="button"><span id="sortLabel">시가총액순</span><span class="caret"></span></button>
+        <button class="selbtn" id="sortBtn" type="button"><span id="sortLabel">시가총액 높은 순</span><span class="caret"></span></button>
         <div class="selmenu glass" id="sortMenu">
-          <button type="button" data-v="mcap" class="active">시가총액순</button>
-          <button type="button" data-v="change">등락률순</button>
+          <button type="button" data-v="mcap_desc" class="active">시가총액 높은 순</button>
+          <button type="button" data-v="mcap_asc">시가총액 낮은 순</button>
+          <button type="button" data-v="change_desc">등락률 높은 순</button>
+          <button type="button" data-v="change_asc">등락률 낮은 순</button>
           <button type="button" data-v="date">최신 리포트순</button>
           <button type="button" data-v="name">종목명순</button>
         </div>
@@ -602,7 +604,7 @@ const REPORTS = window.KOS_LIVE_DATA?.stocks || REPORTS_DEFAULT;
 const rcats=r=>(r.categories&&r.categories.length?r.categories:[r.sector]);
 const SECTORS=['전체',...[...new Set(REPORTS.flatMap(rcats))]];
 
-const state={q:'',sector:'전체',sort:'mcap',expanded:false,page:1,pageSize:20};
+const state={q:'',sector:'전체',sort:'mcap_desc',expanded:false,page:1,pageSize:20};
 const rowsEl=document.getElementById('rows'),rlEl=document.getElementById('rl'),emptyEl=document.getElementById('empty');
 
 const VISIBLE_CHIPS=7;
@@ -615,7 +617,7 @@ function buildChips(){
     return `<button class="${cls}" data-sector="${s}">${T(s)}</button>`;
   }).join('') + (SECTORS.length>VISIBLE_CHIPS?`<button class="chip more" id="chipMore" type="button">${state.expanded?T('접기 ▲'):T('더보기 ▾')}</button>`:'');
 }
-const SORT_LABEL={mcap:'시가총액순',change:'등락률순',date:'최신 리포트순',name:'종목명순'};
+const SORT_LABEL={mcap_desc:'시가총액 높은 순',mcap_asc:'시가총액 낮은 순',change_desc:'등락률 높은 순',change_asc:'등락률 낮은 순',date:'최신 리포트순',name:'종목명순'};
 function repaintSort(){
   const sl=document.getElementById('sortLabel'); if(sl) sl.textContent=T(SORT_LABEL[state.sort]);
   document.querySelectorAll('#sortMenu button[data-v]').forEach(b=>b.textContent=T(SORT_LABEL[b.dataset.v]));
@@ -628,8 +630,10 @@ function getList(){
     if(t&&!(r.name.toLowerCase().includes(t)||r.ticker.includes(t)||r.sector.toLowerCase().includes(t)||T(r.name).toLowerCase().includes(t)||T(r.sector).toLowerCase().includes(t)))return false;
     return true;
   });
-  if(state.sort==='mcap')l.sort((a,b)=>b.mcap-a.mcap);
-  else if(state.sort==='change')l.sort((a,b)=>b.change-a.change);
+  if(state.sort==='mcap_desc')l.sort((a,b)=>b.mcap-a.mcap);
+  else if(state.sort==='mcap_asc')l.sort((a,b)=>a.mcap-b.mcap);
+  else if(state.sort==='change_desc')l.sort((a,b)=>b.change-a.change);
+  else if(state.sort==='change_asc')l.sort((a,b)=>a.change-b.change);
   else if(state.sort==='date')l.sort((a,b)=>String(repTs(b.ticker)).localeCompare(String(repTs(a.ticker))) || (b.mcap||0)-(a.mcap||0));
   else if(state.sort==='name')l.sort((a,b)=>a.name.localeCompare(b.name,'ko'));
   return l;
@@ -760,6 +764,7 @@ const REPORTS_DICT={
   "개 리포트":" reports","최근 AI 코멘트":"Latest AI Comment","현재가":"Price","정렬":"Sort",
   "종목":"Stock","AI 한줄 요약":"AI Summary","리포트 제목":"Report Title","리포트 준비 중":"Report coming soon","발행일":"Date",
   "시가총액순":"By Market Cap","등락률순":"By Change","최신 리포트순":"Latest First","종목명순":"By Name",
+  "시가총액 높은 순":"Market Cap: High→Low","시가총액 낮은 순":"Market Cap: Low→High","등락률 높은 순":"Change: High→Low","등락률 낮은 순":"Change: Low→High",
   "더보기 ▾":"More ▾","접기 ▲":"Less ▲",
   "전체":"All","반도체":"Semiconductors","IT 서비스":"IT Services","2차전지":"Batteries","바이오":"Biotech","자동차":"Automotive","금융":"Finance","조선·방산":"Shipbuilding & Defense","철강·소재":"Steel & Materials","게임":"Gaming",
   "조건에 맞는 종목이 없습니다.":"No stocks match your filters.",
