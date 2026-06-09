@@ -1,24 +1,84 @@
-=== 배치(auto) 시작 Sun Jun  7 22:11:57 UTC 2026 ===
-## 🤖 Batch 제출 — 대상 2개 / 상위 100개 (최근 2688개 건너뜀) · 모델 claude-sonnet-4-6
+=== 공시 트리거 생성(batch) Tue Jun  9 12:20:51 UTC 2026 · 대상 043260,085660,079900,114090,001570,025900,088260,083930,0117P0,041440,054050,006660,019680 ===
+## 🤖 Batch 제출 — 대상 13개 / 상위 100개 (최근 2690개 건너뜀) · 모델 claude-sonnet-4-6
 {'status': '013', 'message': '조회된 데이타가 없습니다.'}
 
 {'status': '013', 'message': '조회된 데이타가 없습니다.'}
 
-  · 준비 023790 동일스틸럭스 (DART O)
+  · 준비 043260 성호전자 (DART O)
 {'status': '013', 'message': '조회된 데이타가 없습니다.'}
 
 {'status': '013', 'message': '조회된 데이타가 없습니다.'}
 
-  · 준비 032680 소프트센 (DART O)
-- ✅ 배치 제출 완료: msgbatch_01AokPrpznj4K75f3fp3VQxs (2건) → data/batch_state.json
-  · 상태 in_progress · 처리 2/성공 0/오류 0
-  · 상태 in_progress · 처리 2/성공 0/오류 0
-  · 상태 in_progress · 처리 2/성공 0/오류 0
-  · 상태 in_progress · 처리 2/성공 0/오류 0
-  · 상태 in_progress · 처리 2/성공 0/오류 0
-  · 상태 in_progress · 처리 2/성공 0/오류 0
-  · 상태 in_progress · 처리 2/성공 0/오류 0
-  · 상태 in_progress · 처리 2/성공 0/오류 0
-  · 상태 ended · 처리 0/성공 2/오류 0
+  · 준비 085660 차바이오텍 (DART O)
+{'status': '013', 'message': '조회된 데이타가 없습니다.'}
 
-✅ 회수 완료 · 성공 2/실패 0 · 총 보유 2690개 → data/reports/ + reports-index.js
+{'status': '013', 'message': '조회된 데이타가 없습니다.'}
+
+  · 준비 079900 전진건설로봇 (DART O)
+{'status': '013', 'message': '조회된 데이타가 없습니다.'}
+
+{'status': '013', 'message': '조회된 데이타가 없습니다.'}
+
+  · 준비 114090 GKL (DART O)
+{'status': '013', 'message': '조회된 데이타가 없습니다.'}
+
+{'status': '013', 'message': '조회된 데이타가 없습니다.'}
+
+  · 준비 001570 금양 (DART O)
+{'status': '013', 'message': '조회된 데이타가 없습니다.'}
+
+{'status': '013', 'message': '조회된 데이타가 없습니다.'}
+
+  · 준비 025900 동화기업 (DART O)
+{'status': '013', 'message': '조회된 데이타가 없습니다.'}
+
+  · 준비 088260 이리츠코크렙 (DART O)
+{'status': '013', 'message': '조회된 데이타가 없습니다.'}
+
+{'status': '013', 'message': '조회된 데이타가 없습니다.'}
+
+  · 준비 083930 아바코 (DART O)
+  · 준비 0117P0 피스피스스튜디오 (DART X)
+{'status': '013', 'message': '조회된 데이타가 없습니다.'}
+
+{'status': '013', 'message': '조회된 데이타가 없습니다.'}
+
+  · 준비 041440 현대에버다임 (DART O)
+{'status': '013', 'message': '조회된 데이타가 없습니다.'}
+
+{'status': '013', 'message': '조회된 데이타가 없습니다.'}
+
+  · 준비 054050 NH농우바이오 (DART O)
+{'status': '013', 'message': '조회된 데이타가 없습니다.'}
+
+{'status': '013', 'message': '조회된 데이타가 없습니다.'}
+
+  · 준비 006660 삼성공조 (DART O)
+{'status': '013', 'message': '조회된 데이타가 없습니다.'}
+
+{'status': '013', 'message': '조회된 데이타가 없습니다.'}
+
+  · 준비 019680 대교 (DART O)
+- ✅ 배치 제출 완료: msgbatch_011o7cYVMNsGZA3GPh6oy8Mt (13건) → data/batch_state.json
+  · 상태 in_progress · 처리 13/성공 0/오류 0
+  · 상태 in_progress · 처리 13/성공 0/오류 0
+  · 상태 in_progress · 처리 13/성공 0/오류 0
+  · 상태 in_progress · 처리 13/성공 0/오류 0
+  · 상태 in_progress · 처리 13/성공 0/오류 0
+  · 상태 in_progress · 처리 13/성공 0/오류 0
+  · 상태 in_progress · 처리 13/성공 0/오류 0
+  · 상태 in_progress · 처리 13/성공 0/오류 0
+  · 상태 in_progress · 처리 13/성공 0/오류 0
+  · 상태 in_progress · 처리 13/성공 0/오류 0
+  · 상태 in_progress · 처리 13/성공 0/오류 0
+  · 상태 in_progress · 처리 13/성공 0/오류 0
+  · 상태 in_progress · 처리 13/성공 0/오류 0
+  · 상태 in_progress · 처리 13/성공 0/오류 0
+  · 상태 in_progress · 처리 13/성공 0/오류 0
+  · 상태 in_progress · 처리 13/성공 0/오류 0
+  · 상태 in_progress · 처리 13/성공 0/오류 0
+  · 상태 in_progress · 처리 13/성공 0/오류 0
+  · 상태 in_progress · 처리 13/성공 0/오류 0
+  · 상태 ended · 처리 0/성공 13/오류 0
+
+✅ 회수 완료 · 성공 13/실패 0 · 총 보유 2691개 → data/reports/ + reports-index.js
