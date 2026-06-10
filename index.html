@@ -513,7 +513,7 @@ body::after,body::before{display:none}
         <a class="btn lp-btn lp-btn-soft" href="Reports.html">리포트 둘러보기</a>
       </div>
       <div class="lp-stats">
-        <div class="lp-stat"><b>2,690+</b><span>AI 리포트</span></div>
+        <div class="lp-stat"><b id="lpRepN" data-i18n-skip>2,600+</b><span>AI 리포트</span></div>
         <div class="lp-stat"><b>29개</b><span>업종 분석</span></div>
         <div class="lp-stat"><b>매 거래일</b><span>데이터 갱신</span></div>
       </div>
@@ -555,8 +555,22 @@ if(window.KOSi18n) KOSi18n.register({
   "코스피·코스닥 2,600여 개 전 종목의 AI 분석 리포트. 재무·뉴스·밸류에이션을 한 페이지에 담았습니다.":"AI research reports covering 2,600+ KOSPI and KOSDAQ stocks. Financials, news, and valuation — all on one page.",
   "시작하기":"Get started",
   "리포트 둘러보기":"Browse reports",
-  "AI 리포트":"AI reports","업종 분석":"Sector analyses","매 거래일":"Every trading day","데이터 갱신":"Data refresh"
+  "AI 리포트":"AI reports","업종 분석":"Sector analyses","29개":"29","매 거래일":"Every trading day","데이터 갱신":"Data refresh"
 });
+</script>
+<script>
+/* AI 리포트 수 — 실제 데이터(reports-index)에서 읽어 정확히 표시 */
+(function(){
+  function upd(){
+    fetch('data/reports-index.js',{cache:'no-cache'}).then(function(r){return r.text();}).then(function(t){
+      var d=JSON.parse(t.slice(t.indexOf('=')+1).trim().replace(/;$/,''));
+      var n=Object.keys(d.reports||{}).length;
+      var el=document.getElementById('lpRepN');
+      if(n>0&&el) el.textContent=n.toLocaleString();
+    }).catch(function(){});
+  }
+  ('requestIdleCallback' in window)?requestIdleCallback(upd,{timeout:4000}):setTimeout(upd,1500);
+})();
 </script>
 <script type="importmap">
 {"imports":{"three":"https://cdn.jsdelivr.net/npm/three@0.160.0/build/three.module.js","three/addons/":"https://cdn.jsdelivr.net/npm/three@0.160.0/examples/jsm/"}}
