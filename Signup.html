@@ -426,6 +426,9 @@ KOSi18n.register({
 .agree a{color:var(--brand-blue);text-decoration:none}
 .agree a:hover{text-decoration:underline}
 :root[data-theme="dark"] .agree a{color:var(--brand-cyan)}
+.agree.invalid input{outline:2px solid #e5383b;outline-offset:1px;accent-color:#e5383b}
+.agree-err{display:none;margin:-4px 0 8px 24px;font:600 12px/1.45 var(--font-sans);color:#c0282b}
+:root[data-theme="dark"] .agree-err{color:#ff8a8c}
 .auth-card .submit-row{margin-top:18px}
 </style>
 <style>
@@ -514,10 +517,11 @@ KOSi18n.register({
           <label for="password2">비밀번호 확인</label>
           <input id="password2" type="password" autocomplete="new-password" data-i18n-ph placeholder="비밀번호를 다시 입력하세요" required />
         </div>
-        <label class="agree">
-          <input type="checkbox" id="agree" required />
+        <label class="agree" id="agreeRow">
+          <input type="checkbox" id="agree" />
           <span>만 14세 이상이며, <a href="Terms.html" target="_blank">이용약관</a> 및 <a href="Privacy.html" target="_blank">개인정보처리방침</a>에 동의합니다.</span>
         </label>
+        <div class="agree-err" id="agreeErr">약관에 동의해야 가입할 수 있어요.</div>
         <div class="submit-row">
           <button type="submit" class="btn btn-primary" id="emailSubmit">회원가입</button>
         </div>
@@ -578,6 +582,7 @@ if(window.KOSi18n) KOSi18n.register({
   "주소로 인증 링크를 보냈습니다. 메일의 링크를 클릭해 인증한 뒤 로그인해 주세요. (스팸함도 확인)":"— we sent a verification link to this address. Click it, then sign in. (Check your spam folder too.)",
   "로그인하러 가기":"Go to sign in",
   "약관에 동의해 주세요.":"Please agree to the terms.",
+  "약관에 동의해야 가입할 수 있어요.":"You must agree to the terms to sign up.",
   "이미 가입된 이메일입니다.":"This email is already registered.",
   "이메일 형식이 올바르지 않습니다.":"That email address looks invalid.",
   "Firebase 설정이 필요합니다. firebase-config.js를 확인하세요.":"Firebase is not configured yet. See firebase-config.js.",
@@ -599,6 +604,11 @@ const T = m => (window.KOSi18n ? window.KOSi18n.t(m) : m);
 const errBox = $('#authErr');
 function showErr(msg){ errBox.textContent = msg; errBox.style.display = 'block'; }
 function clearErr(){ errBox.style.display = 'none'; errBox.textContent = ''; }
+// 약관 미동의 — 브라우저 기본 경고 대신 인라인으로 표시
+const agreeEl = $('#agree'), agreeRow = $('#agreeRow'), agreeErr = $('#agreeErr');
+function flagAgree(){ agreeRow.classList.add('invalid'); agreeErr.style.display = 'block'; try{ agreeEl.focus(); }catch(e){} }
+function clearAgree(){ agreeRow.classList.remove('invalid'); agreeErr.style.display = 'none'; }
+agreeEl.addEventListener('change', () => { if(agreeEl.checked) clearAgree(); });
 function go(){ const next = new URLSearchParams(location.search).get('next'); location.href = next || 'Home.html'; }
 
 if(!isConfigured){ $('#cfgNote').style.display = 'block'; }
@@ -616,7 +626,7 @@ function mapError(err){
 $('#emailForm').addEventListener('submit', async e => {
   e.preventDefault(); clearErr();
   const pw = $('#password').value, pw2 = $('#password2').value;
-  if(!$('#agree').checked){ showErr(T('약관에 동의해 주세요.')); return; }
+  if(!agreeEl.checked){ flagAgree(); return; }
   if(pw.length < 8 || !/[A-Za-z]/.test(pw) || !/[0-9]/.test(pw)){ showErr(T('비밀번호는 영문과 숫자를 포함해 8자 이상이어야 합니다.')); return; }
   if(pw !== pw2){ showErr(T('비밀번호가 일치하지 않습니다.')); return; }
   const email = $('#email').value.trim();
@@ -645,7 +655,7 @@ function showVerifySent(email){
 
 $('#googleBtn').addEventListener('click', async () => {
   clearErr();
-  if(!$('#agree').checked){ showErr(T('약관에 동의해 주세요.')); return; }
+  if(!agreeEl.checked){ flagAgree(); return; }
   try{ await signInWithPopup(auth, new GoogleAuthProvider()); go(); }
   catch(err){ if((err.code || '').includes('popup-closed') || (err.code || '').includes('cancelled-popup')) return; showErr(mapError(err)); }
 });
@@ -653,7 +663,7 @@ $('#googleBtn').addEventListener('click', async () => {
 // Kakao / Naver — OAuth 리다이렉트 + Cloud Functions 커스텀 토큰 (social-login.js)
 wireSocialButtons({
   onError: showErr,
-  requireAgree: () => { if(!$('#agree').checked){ showErr(T('약관에 동의해 주세요.')); return false; } return true; }
+  requireAgree: () => { if(!agreeEl.checked){ flagAgree(); return false; } return true; }
 });
 </script>
 <script type="module" src="auth-state.js"></script>
