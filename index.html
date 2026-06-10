@@ -444,18 +444,18 @@ KOSi18n.register({
 /* landing — deep space (이 페이지는 항상 다크) */
 #themeBtn{display:none}
 .lp-bg{position:fixed;inset:0;z-index:-3;background:
-  radial-gradient(ellipse 90% 70% at 62% 38%, #0b1026 0%, #070912 55%, #04050c 100%)}
+  radial-gradient(ellipse 90% 70% at 55% 40%, #0a0a10 0%, #050507 55%, #020203 100%)}
 .lp-bg canvas{position:absolute;inset:0;width:100%;height:100%;display:block}
 .lp-vignette{position:fixed;inset:0;z-index:-2;pointer-events:none;background:
   radial-gradient(ellipse 120% 95% at 50% 45%, transparent 55%, rgba(3,4,10,.6) 100%),
-  linear-gradient(105deg, rgba(4,6,14,.72) 0%, rgba(4,6,14,.34) 42%, transparent 64%)}
+  linear-gradient(105deg, rgba(3,4,8,.82) 0%, rgba(3,4,8,.45) 44%, transparent 70%)}
 body{background:#05060d}
 body::after,body::before{display:none}
 
 .lp-hero{display:flex;flex-direction:column;justify-content:center;min-height:calc(100vh - 190px);padding:18px 0 40px;max-width:600px}
 .lp-kick{font:700 12px var(--font-sans);letter-spacing:.16em;color:rgba(255,255,255,.45);margin-bottom:16px}
-.lp-h1{margin:0;font-size:clamp(36px,5.2vw,60px);font-weight:800;letter-spacing:-.04em;line-height:1.07;color:#fff}
-.lp-sub{margin:20px 0 0;font:400 17px/1.7 var(--font-sans);color:rgba(255,255,255,.66);max-width:460px;text-wrap:pretty}
+.lp-h1{margin:0;font-size:clamp(36px,5.2vw,60px);font-weight:800;letter-spacing:-.04em;line-height:1.07;color:#fff;text-shadow:0 2px 22px rgba(0,0,0,.7)}
+.lp-sub{margin:20px 0 0;font:400 17px/1.7 var(--font-sans);color:rgba(255,255,255,.72);text-shadow:0 1px 14px rgba(0,0,0,.85);max-width:460px;text-wrap:pretty}
 .lp-cta{display:flex;gap:10px;margin-top:30px;flex-wrap:wrap}
 .lp-btn{padding:15px 26px;font-size:15px;text-decoration:none}
 .lp-btn-soft{background:rgba(255,255,255,.07);color:#fff;border:1px solid rgba(255,255,255,.16);-webkit-backdrop-filter:blur(8px);backdrop-filter:blur(8px)}
@@ -563,8 +563,8 @@ if(window.KOSi18n) KOSi18n.register({
 </script>
 <script type="module">
 /* ───────────────────────────────────────────────────────
-   KOSAI 은하 — 3만 입자 나선은하 풀스크린 배경
-   차등 회전(안쪽 빠름) · 입자 발광 · 코어 글로우 · 성운 · 별배경 · 패럴랙스
+   KOSAI 은하 v2 — 화면 전체를 채우는 샴페인 골드 입자 우주
+   메인 디스크 + 외곽 스트림 + 전경 보케, 그린·핑크 무지갯빛 틴트
    ─────────────────────────────────────────────────────── */
 try{
   const THREE=await import('three');
@@ -577,160 +577,186 @@ try{
   renderer.toneMappingExposure=1.0;
   renderer.outputColorSpace=THREE.SRGBColorSpace;
   const scene=new THREE.Scene();
-  const camera=new THREE.PerspectiveCamera(46,1,0.1,200);
-  camera.position.set(0,1.35,8.6);
+  const camera=new THREE.PerspectiveCamera(50,1,0.1,300);
+  camera.position.set(0,0.9,9.5);
 
-  /* ── 은하 입자 생성 ───────────────────────────── */
-  const N = mobile?16000:42000;
-  const R = 5.4;                       // 은하 반경
-  const pos=new Float32Array(N*3);     // 랜덤 오프셋(xyz)
-  const col=new Float32Array(N*3);
-  const aRadius=new Float32Array(N);
-  const aAngle=new Float32Array(N);
-  const aScale=new Float32Array(N);
-  const aRand=new Float32Array(N);
-  const cCore=new THREE.Color('#ffe9c4');   // 따뜻한 코어
-  const cMid =new THREE.Color('#7fd0ff');   // 시안
-  const cOut =new THREE.Color('#2f63d8');   // 브랜드 블루
-  const cEdge=new THREE.Color('#6b56d6');   // 보랏빛 외곽
-  const g=()=> (Math.random()+Math.random()+Math.random())/3*2-1; // 유사 가우시안
-  for(let i=0;i<N;i++){
-    const i3=i*3;
-    const u=Math.random();
-    let r, ang, spreadH, spreadV;
-    if(u<0.13){                       // 중심 팽대부(벌지) — 구형 분포
-      r=Math.pow(Math.random(),2.2)*R*0.22;
-      ang=Math.random()*Math.PI*2;
-      spreadH=0.20; spreadV=0.20;
-    }else{
-      r=Math.pow(Math.random(),1.7)*R;
-      const arm=(u<0.72)? (i%2)*Math.PI : Math.random()*Math.PI*2;  // 2개 나선팔 + 28% 필드 스타
-      const spin=r*1.18;              // 나선 감김
-      ang=arm+spin+((u<0.72)?g()*0.30:0);
-      spreadH=0.30+r*0.085;
-      spreadV=(0.16+r*0.012)*(1.0-(r/R)*0.45);
+  const g=()=> (Math.random()+Math.random()+Math.random())/3*2-1;
+
+  /* 팔레트 — 레퍼런스: 웜화이트·샴페인·실버 + 그린/핑크 틴트 */
+  const P={
+    core :new THREE.Color('#fff3dc'),
+    champ:new THREE.Color('#e9d6a4'),
+    silver:new THREE.Color('#d3d7dd'),
+    edge :new THREE.Color('#aeb6c2'),
+    green:new THREE.Color('#aec77e'),
+    pink :new THREE.Color('#d89fb4')
+  };
+
+  const uniforms={uTime:{value:reduced?80:0},uSize:{value:300}};
+  const vert=`
+    attribute vec3 aColor; attribute float aRadius,aAngle,aScale,aRand,aSpeed;
+    uniform float uTime,uSize; varying vec3 vColor; varying float vTw;
+    void main(){
+      float ang=aAngle+uTime*aSpeed/(aRadius+0.4);
+      vec3 p=position;
+      p.x+=cos(ang)*aRadius; p.z+=sin(ang)*aRadius;
+      vec4 mv=modelViewMatrix*vec4(p,1.0);
+      gl_Position=projectionMatrix*mv;
+      vTw=0.86+0.26*sin(uTime*1.5+aRand*47.0);
+      gl_PointSize=uSize*aScale*vTw/(-mv.z);
+      vColor=aColor;
+    }`;
+  const frag=`
+    varying vec3 vColor; varying float vTw;
+    void main(){
+      vec2 q=gl_PointCoord-vec2(0.5);
+      float d=length(q);
+      if(d>0.5) discard;
+      float core=pow(1.0-smoothstep(0.0,0.18,d),1.4);
+      float halo=pow(1.0-smoothstep(0.0,0.5,d),2.8)*0.8;
+      gl_FragColor=vec4(vColor*(0.72+core*0.85),(core+halo)*vTw);
+    }`;
+
+  /* 디스크 생성기 — 화면을 채우는 입자 리본 */
+  function makeDisk({count,R,arms,spin,armFrac,bulge,thick,speed,colorFn}){
+    const pos=new Float32Array(count*3), col=new Float32Array(count*3);
+    const aR=new Float32Array(count), aA=new Float32Array(count);
+    const aS=new Float32Array(count), aRd=new Float32Array(count), aSp=new Float32Array(count);
+    for(let i=0;i<count;i++){
+      const i3=i*3, u=Math.random();
+      let r,ang,sh,sv;
+      if(u<bulge){ r=Math.pow(Math.random(),2.0)*R*0.16; ang=Math.random()*Math.PI*2; sh=0.22; sv=0.20; }
+      else{
+        r=Math.pow(Math.random(),1.25)*R;                       // 고르게 퍼지게(중앙 뭉침 방지)
+        const inArm=u<bulge+armFrac;
+        const arm=inArm ? (i%arms)*(Math.PI*2/arms) : Math.random()*Math.PI*2;
+        ang=arm+r*spin+(inArm?g()*0.34:0);
+        sh=0.32+r*0.07;
+        sv=(0.12+r*0.012)*(1.0-(r/R)*0.4);
+      }
+      aR[i]=r; aA[i]=ang; aSp[i]=speed;
+      pos[i3]=g()*sh; pos[i3+1]=g()*sv; pos[i3+2]=g()*sh;
+      const c=colorFn(Math.min(r/R,1));
+      const j=0.85+Math.random()*0.3;
+      col[i3]=c.r*j; col[i3+1]=c.g*j; col[i3+2]=c.b*j;
+      aS[i]=0.55+Math.random()*1.05;
+      aRd[i]=Math.random();
     }
-    aRadius[i]=r; aAngle[i]=ang;
-    pos[i3  ]=g()*spreadH;
-    pos[i3+1]=g()*spreadV;
-    pos[i3+2]=g()*spreadH;
-    const t=Math.min(r/R,1);
-    const c=new THREE.Color();
-    if(t<0.42) c.copy(cCore).lerp(cMid,t/0.42);
-    else if(t<0.78) c.copy(cMid).lerp(cOut,(t-0.42)/0.36);
-    else c.copy(cOut).lerp(cEdge,(t-0.78)/0.22);
-    const jitter=0.88+Math.random()*0.24; // 미세 색 편차
-    col[i3]=c.r*jitter; col[i3+1]=c.g*jitter; col[i3+2]=c.b*jitter;
-    aScale[i]=(t<0.2?1.25:0.7)+Math.random()*0.9;
-    aRand[i]=Math.random();
+    const geo=new THREE.BufferGeometry();
+    geo.setAttribute('position',new THREE.BufferAttribute(pos,3));
+    geo.setAttribute('aColor',new THREE.BufferAttribute(col,3));
+    geo.setAttribute('aRadius',new THREE.BufferAttribute(aR,1));
+    geo.setAttribute('aAngle',new THREE.BufferAttribute(aA,1));
+    geo.setAttribute('aScale',new THREE.BufferAttribute(aS,1));
+    geo.setAttribute('aRand',new THREE.BufferAttribute(aRd,1));
+    geo.setAttribute('aSpeed',new THREE.BufferAttribute(aSp,1));
+    return new THREE.Points(geo,new THREE.ShaderMaterial({uniforms,vertexShader:vert,fragmentShader:frag,transparent:true,depthWrite:false,blending:THREE.AdditiveBlending}));
   }
-  const geo=new THREE.BufferGeometry();
-  geo.setAttribute('position',new THREE.BufferAttribute(pos,3));
-  geo.setAttribute('aColor',new THREE.BufferAttribute(col,3));
-  geo.setAttribute('aRadius',new THREE.BufferAttribute(aRadius,1));
-  geo.setAttribute('aAngle',new THREE.BufferAttribute(aAngle,1));
-  geo.setAttribute('aScale',new THREE.BufferAttribute(aScale,1));
-  geo.setAttribute('aRand',new THREE.BufferAttribute(aRand,1));
-  const uniforms={uTime:{value:reduced?60:0},uSize:{value:300}};
-  const mat=new THREE.ShaderMaterial({
-    uniforms, transparent:true, depthWrite:false, blending:THREE.AdditiveBlending,
-    vertexShader:`
-      attribute vec3 aColor; attribute float aRadius,aAngle,aScale,aRand;
-      uniform float uTime,uSize; varying vec3 vColor; varying float vTw;
-      void main(){
-        float speed=0.30/(aRadius+0.34);               // 차등 회전
-        float ang=aAngle+uTime*speed;
-        vec3 p=position;
-        p.x+=cos(ang)*aRadius; p.z+=sin(ang)*aRadius;
-        vec4 mv=modelViewMatrix*vec4(p,1.0);
-        gl_Position=projectionMatrix*mv;
-        vTw=0.86+0.26*sin(uTime*1.7+aRand*43.0);        // 반짝임
-        gl_PointSize=uSize*aScale*vTw/(-mv.z);
-        vColor=aColor;
-      }`,
-    fragmentShader:`
-      varying vec3 vColor; varying float vTw;
-      void main(){
-        vec2 q=gl_PointCoord-vec2(0.5);
-        float d=length(q);
-        if(d>0.5) discard;
-        float core=pow(1.0-smoothstep(0.0,0.16,d),1.5);          // 밝은 심
-        float halo=pow(1.0-smoothstep(0.0,0.5,d),2.6)*0.85;       // 부드러운 광륜
-        float a=(core+halo)*vTw;
-        gl_FragColor=vec4(vColor*(0.75+core*0.9), a);
-      }`
-  });
-  const galaxy=new THREE.Group();
-  galaxy.add(new THREE.Points(geo,mat));
 
-  /* ── 글로우/성운 스프라이트 ─────────────────────── */
-  function glowTex(stops){
+  /* 색: 웜코어→샴페인→실버(+간헐적 그린·핑크) */
+  const tint=t=>{
+    const c=new THREE.Color();
+    if(t<0.30) c.copy(P.core).lerp(P.champ,t/0.30);
+    else if(t<0.66) c.copy(P.champ).lerp(P.silver,(t-0.30)/0.36);
+    else c.copy(P.silver).lerp(P.edge,(t-0.66)/0.34);
+    const u=Math.random();
+    if(u<0.05) c.lerp(P.green,0.55);
+    else if(u<0.10) c.lerp(P.pink,0.5);
+    return c;
+  };
+
+  /* 메인 디스크 — 화면을 가로지르는 큰 리본 */
+  const main=makeDisk({count:mobile?16000:40000,R:13,arms:3,spin:0.62,armFrac:0.62,bulge:0.05,speed:0.26,colorFn:tint});
+  const gMain=new THREE.Group(); gMain.add(main);
+  gMain.rotation.set(-1.42,0,0.52); gMain.position.y=0.4;
+
+  /* 외곽 스트림 — 아래쪽을 휩쓰는 두 번째 띠 */
+  const band=makeDisk({count:mobile?7000:16000,R:18,arms:2,spin:0.42,armFrac:0.7,bulge:0.0,speed:0.18,colorFn:t=>{
+    const c=new THREE.Color().copy(P.silver).lerp(P.edge,t);
+    if(Math.random()<0.06) c.lerp(P.champ,0.6);
+    return c;
+  }});
+  const gBand=new THREE.Group(); gBand.add(band);
+  gBand.position.set(0,-2.4,-3);
+  gBand.rotation.set(-1.5,0,-0.26);
+
+  const band2=makeDisk({count:mobile?4000:9000,R:17,arms:2,spin:0.36,armFrac:0.75,bulge:0.0,speed:0.14,colorFn:t=>{
+    const c=new THREE.Color().copy(P.silver).lerp(P.edge,t); c.multiplyScalar(0.62);
+    if(Math.random()<0.05) c.lerp(P.champ,0.5);
+    return c;
+  }});
+  const gBand2=new THREE.Group(); gBand2.add(band2);
+  gBand2.position.set(0,3.0,-5.5);
+  gBand2.rotation.set(-1.52,0,0.18);
+
+  scene.add(gMain,gBand,gBand2);
+
+  /* 은은한 웜 헤이즈(밝은 코어 없음) + 무지갯빛 성운 */
+  function glowTex(){
     const c=document.createElement('canvas'); c.width=c.height=256;
     const x=c.getContext('2d'); const gr=x.createRadialGradient(128,128,0,128,128,128);
-    for(const [o,col] of stops) gr.addColorStop(o,col);
+    gr.addColorStop(0,'rgba(255,255,255,1)'); gr.addColorStop(0.3,'rgba(255,255,255,.5)'); gr.addColorStop(1,'rgba(255,255,255,0)');
     x.fillStyle=gr; x.fillRect(0,0,256,256);
     const t=new THREE.CanvasTexture(c); t.colorSpace=THREE.SRGBColorSpace; return t;
   }
-  const texSoft=glowTex([[0,'rgba(255,255,255,1)'],[0.25,'rgba(255,255,255,.55)'],[1,'rgba(255,255,255,0)']]);
-  function sprite(color,scale,opacity,x=0,y=0,z=0){
+  const texSoft=glowTex();
+  function sprite(color,scale,opacity,x=0,y=0,z=0,parent=gMain){
     const m=new THREE.SpriteMaterial({map:texSoft,color,transparent:true,opacity,blending:THREE.AdditiveBlending,depthWrite:false});
-    const s=new THREE.Sprite(m); s.scale.setScalar(scale); s.position.set(x,y,z); return s;
+    const sp=new THREE.Sprite(m); sp.scale.setScalar(scale); sp.position.set(x,y,z); parent.add(sp);
   }
-  galaxy.add(sprite('#fff1d6',1.8,0.68));            // 코어 화이트
-  galaxy.add(sprite('#ffd9a0',4.2,0.3));            // 코어 웜
-  galaxy.add(sprite('#5fa8ff',9,0.1));             // 블루 헤일로
-  for(let i=0;i<7;i++){                              // 성운 안개(나선팔 위)
-    const r=1.6+Math.random()*3.2, a=(i%2)*Math.PI+r*1.18+g()*0.3;
-    galaxy.add(sprite(i%2?'#3b6fe0':'#6b56d6', 2.6+Math.random()*3.4, 0.03+Math.random()*0.035,
-      Math.cos(a)*r, g()*0.25, Math.sin(a)*r));
+  sprite('#ffeccc',2.2,0.18);                                  // 아주 은은한 코어 헤이즈
+  for(let i=0;i<9;i++){                                        // 무지갯빛 안개(그린·핑크·골드)
+    const r=1.2+Math.random()*5.5, a=Math.random()*Math.PI*2;
+    const col=['#b9cf86','#d9a4ba','#e7d3a0'][i%3];
+    sprite(col,2.2+Math.random()*3.4,0.022+Math.random()*0.03,Math.cos(a)*r,g()*0.3,Math.sin(a)*r);
   }
 
-  galaxy.rotation.set(-1.02,0,0.22);                 // 비스듬한 시점
-  scene.add(galaxy);
-
-  /* ── 원경 별배경 ────────────────────────────────── */
-  const SN=mobile?700:1500;
-  const sp=new Float32Array(SN*3);
-  for(let i=0;i<SN;i++){
-    const v=new THREE.Vector3(g(),g(),g()).normalize().multiplyScalar(34+Math.random()*46);
-    sp[i*3]=v.x; sp[i*3+1]=v.y; sp[i*3+2]=v.z;
+  /* 전경 보케 — 사진의 흐릿한 큰 입자(심도) */
+  function bokeh(n,size,opacity){
+    const p=new Float32Array(n*3);
+    for(let i=0;i<n;i++){ p[i*3]=g()*9; p[i*3+1]=g()*5; p[i*3+2]=3.5+Math.random()*3.5; }
+    const ge=new THREE.BufferGeometry(); ge.setAttribute('position',new THREE.BufferAttribute(p,3));
+    return new THREE.Points(ge,new THREE.PointsMaterial({map:texSoft,color:0xf2e8d4,size,transparent:true,opacity,blending:THREE.AdditiveBlending,depthWrite:false}));
   }
-  const sgeo=new THREE.BufferGeometry();
-  sgeo.setAttribute('position',new THREE.BufferAttribute(sp,3));
-  const stars=new THREE.Points(sgeo,new THREE.PointsMaterial({map:texSoft,color:0xbfd4ff,size:0.5,transparent:true,opacity:0.55,blending:THREE.AdditiveBlending,depthWrite:false,sizeAttenuation:true}));
+  const bk=new THREE.Group();
+  bk.add(bokeh(mobile?20:45,0.55,0.10), bokeh(mobile?14:30,0.95,0.07), bokeh(mobile?8:16,1.6,0.045));
+  scene.add(bk);
+
+  /* 원경 별 — 웜 화이트 */
+  const SN=mobile?800:1600;
+  const sp2=new Float32Array(SN*3);
+  for(let i=0;i<SN;i++){ const v=new THREE.Vector3(g(),g(),g()).normalize().multiplyScalar(40+Math.random()*60);
+    sp2[i*3]=v.x; sp2[i*3+1]=v.y; sp2[i*3+2]=v.z; }
+  const sg=new THREE.BufferGeometry(); sg.setAttribute('position',new THREE.BufferAttribute(sp2,3));
+  const stars=new THREE.Points(sg,new THREE.PointsMaterial({map:texSoft,color:0xf5ecd9,size:0.55,transparent:true,opacity:0.5,blending:THREE.AdditiveBlending,depthWrite:false}));
   scene.add(stars);
 
-  /* ── 패럴랙스 + 루프 ───────────────────────────── */
+  /* 패럴랙스 + 루프 */
   let mx=0,my=0,cx=0,cy=0;
-  if(!reduced) addEventListener('pointermove',e=>{
-    mx=(e.clientX/innerWidth-0.5); my=(e.clientY/innerHeight-0.5);
-  },{passive:true});
+  if(!reduced) addEventListener('pointermove',e=>{ mx=e.clientX/innerWidth-0.5; my=e.clientY/innerHeight-0.5; },{passive:true});
 
   function layout(){
     const w=innerWidth,h=innerHeight;
     renderer.setPixelRatio(Math.min(devicePixelRatio,2));
     renderer.setSize(w,h,false);
     camera.aspect=w/h; camera.updateProjectionMatrix();
-    const mob=w<=920;
-    galaxy.position.set(mob?0.2:2.05, mob?2.1:0.05, 0);
-    uniforms.uSize.value=h*(mob?0.105:0.115)*Math.min(devicePixelRatio,2);
+    uniforms.uSize.value=h*0.105*Math.min(devicePixelRatio,2);
   }
   layout(); addEventListener('resize',layout);
 
   const clock=new THREE.Clock();
   renderer.setAnimationLoop(()=>{
     if(!reduced){
-      uniforms.uTime.value=clock.getElapsedTime()*0.55;
-      stars.rotation.y-=0.00012;
+      uniforms.uTime.value=clock.getElapsedTime()*0.38;        // 아주 천천히
+      stars.rotation.y-=0.00009;
+      bk.rotation.z+=0.00012;
       cx+=(mx-cx)*0.03; cy+=(my-cy)*0.03;
-      camera.position.x=cx*0.7; camera.position.y=1.35-cy*0.45;
-      camera.lookAt(galaxy.position.x*0.7, 0.2, 0);
-    }else{
-      camera.lookAt(galaxy.position.x*0.7, 0.2, 0);
+      camera.position.x=cx*1.1; camera.position.y=0.9-cy*0.7;
     }
+    camera.lookAt(0,0,0);
     renderer.render(scene,camera);
   });
-}catch(e){ /* WebGL/CDN 불가 — CSS 그라데이션 배경만으로 표시 */ }
+}catch(e){ /* WebGL/CDN 불가 — CSS 배경 폴백 */ }
 </script>
 </body>
 </html>
