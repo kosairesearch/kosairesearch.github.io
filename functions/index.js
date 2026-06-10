@@ -179,7 +179,6 @@ function mailLayout({ heading, intro, btnText, link, outro }){
     </td></tr>
     <tr><td style="padding:18px 32px 0;">
       <p style="margin:0;font:400 13px/1.6 ${FONT};color:#8a8c97;">${outro}</p>
-      <p style="margin:12px 0 0;font:400 12px/1.5 ${FONT};color:#a7a9b4;">버튼이 안 눌리면 아래 주소를 복사해 브라우저에 붙여넣으세요.<br><span style="word-break:break-all;color:#7a8aa0;">${esc(link)}</span></p>
     </td></tr>
     <tr><td style="padding:22px 32px 28px;">
       <hr style="border:none;border-top:1px solid #eceef5;margin:0 0 16px;">
