@@ -579,8 +579,9 @@ if(window.KOSi18n) KOSi18n.register({
 <script type="module">
 import { auth, isConfigured } from "./firebase-config.js";
 import { signInWithEmailAndPassword, GoogleAuthProvider, signInWithPopup,
-  sendPasswordResetEmail, sendEmailVerification, signOut } from "https://www.gstatic.com/firebasejs/10.12.2/firebase-auth.js";
+  signOut } from "https://www.gstatic.com/firebasejs/10.12.2/firebase-auth.js";
 import { wireSocialButtons } from "./social-login.js";
+import { sendVerifyEmail, sendResetEmail } from "./auth-emails.js";
 
 const $ = s => document.querySelector(s);
 const T = m => (window.KOSi18n ? window.KOSi18n.t(m) : m);
@@ -613,7 +614,7 @@ function offerResend(){
   a.style.cssText='color:var(--brand-blue);font-weight:600'; row.appendChild(a);
   a.addEventListener('click', async ev => {
     ev.preventDefault();
-    try{ if(unverifiedUser){ await sendEmailVerification(unverifiedUser); } row.textContent=T('인증 메일을 다시 보냈습니다. 메일함을 확인해 주세요.'); }
+    try{ if(unverifiedUser){ await sendVerifyEmail(unverifiedUser.email); } row.textContent=T('인증 메일을 다시 보냈습니다. 메일함을 확인해 주세요.'); }
     catch(err){ showErr(mapError(err)); }
   });
 }
@@ -645,7 +646,7 @@ $('#forgotLink').addEventListener('click', async e => {
   e.preventDefault(); clearErr();
   const email = $('#email').value.trim();
   if(!email){ showErr(T('이메일을 먼저 입력해 주세요.')); $('#email').focus(); return; }
-  try{ await sendPasswordResetEmail(auth, email); showInfo(T('비밀번호 재설정 메일을 보냈습니다. 메일함을 확인해 주세요.')); }
+  try{ await sendResetEmail(email); showInfo(T('비밀번호 재설정 메일을 보냈습니다. 메일함을 확인해 주세요.')); }
   catch(err){ showErr(mapError(err)); }
 });
 

@@ -589,9 +589,10 @@ if(window.KOSi18n) KOSi18n.register({
 <script type="module">
 import { auth, isConfigured } from "./firebase-config.js";
 import { createUserWithEmailAndPassword, GoogleAuthProvider, signInWithPopup,
-  sendEmailVerification, signOut }
+  signOut }
   from "https://www.gstatic.com/firebasejs/10.12.2/firebase-auth.js";
 import { wireSocialButtons } from "./social-login.js";
+import { sendVerifyEmail } from "./auth-emails.js";
 
 const $ = s => document.querySelector(s);
 const T = m => (window.KOSi18n ? window.KOSi18n.t(m) : m);
@@ -621,8 +622,8 @@ $('#emailForm').addEventListener('submit', async e => {
   const email = $('#email').value.trim();
   const btn = $('#emailSubmit'); btn.disabled = true;
   try{
-    const cred = await createUserWithEmailAndPassword(auth, email, pw);
-    try{ await sendEmailVerification(cred.user); }catch(_){}
+    await createUserWithEmailAndPassword(auth, email, pw);
+    try{ await sendVerifyEmail(email); }catch(_){}   // 커스텀 인증 메일(Resend)
     await signOut(auth);          // 인증 전에는 로그인 상태로 두지 않음
     showVerifySent(email);
   }
