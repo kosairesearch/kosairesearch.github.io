@@ -588,7 +588,7 @@ try{
 
   const renderer=new THREE.WebGLRenderer({canvas,antialias:false,alpha:true,powerPreference:'high-performance'});
   renderer.toneMapping=THREE.ACESFilmicToneMapping;
-  renderer.toneMappingExposure=0.66;
+  renderer.toneMappingExposure=0.5;
   renderer.outputColorSpace=THREE.SRGBColorSpace;
   const scene=new THREE.Scene();
   const camera=new THREE.PerspectiveCamera(50,1,0.1,300);
