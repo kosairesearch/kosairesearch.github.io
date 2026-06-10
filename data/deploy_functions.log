@@ -12,7 +12,7 @@
 [33m[1m⚠ [22m[39m [1m[33mfunctions: [39m[22mpackage.json indicates an outdated version of firebase-functions. Please upgrade using [1mnpm install --save firebase-functions@latest[22m in your functions directory.
 [33m[1m⚠ [22m[39m [1m[33mfunctions: [39m[22mPlease note that there will be breaking changes when you upgrade.
 [36m[1mi  functions:[22m[39m Loading and analyzing source code for codebase default to determine what to deploy
-Serving at port 8970
+Serving at port 8391
 
 [36m[1mi  extensions:[22m[39m ensuring required API [1mfirebaseextensions.googleapis.com[22m is enabled...
 [32m[1m✔  extensions:[22m[39m required API [1mfirebaseextensions.googleapis.com[22m is enabled
@@ -23,9 +23,9 @@ Serving at port 8970
 [36m[1mi  functions:[22m[39m ensuring required API [1mpubsub.googleapis.com[22m is enabled...
 [36m[1mi  functions:[22m[39m ensuring required API [1mstorage.googleapis.com[22m is enabled...
 [32m[1m✔  functions:[22m[39m required API [1mrun.googleapis.com[22m is enabled
+[32m[1m✔  functions:[22m[39m required API [1mpubsub.googleapis.com[22m is enabled
 [32m[1m✔  functions:[22m[39m required API [1meventarc.googleapis.com[22m is enabled
 [32m[1m✔  functions:[22m[39m required API [1mstorage.googleapis.com[22m is enabled
-[32m[1m✔  functions:[22m[39m required API [1mpubsub.googleapis.com[22m is enabled
 [36m[1mi  functions:[22m[39m generating the service identity for [1mpubsub.googleapis.com[22m...
 [36m[1mi  functions:[22m[39m generating the service identity for [1meventarc.googleapis.com[22m...
 [36m[1mi  functions:[22m[39m ensuring required API [1msecretmanager.googleapis.com[22m is enabled...
@@ -34,9 +34,9 @@ Serving at port 8970
 [36m[1mi  functions:[22m[39m updating Node.js 20 (2nd Gen) function [1msocialLogin(asia-northeast3)[22m...
 [36m[1mi  functions:[22m[39m updating Node.js 20 (2nd Gen) function [1msendVerifyEmail(asia-northeast3)[22m...
 [36m[1mi  functions:[22m[39m updating Node.js 20 (2nd Gen) function [1msendResetEmail(asia-northeast3)[22m...
-[32m[1m✔ [22m[39m [1m[32mfunctions[sendResetEmail(asia-northeast3)][39m[22m Successful update operation.
 [32m[1m✔ [22m[39m [1m[32mfunctions[socialLogin(asia-northeast3)][39m[22m Successful update operation.
 [32m[1m✔ [22m[39m [1m[32mfunctions[sendVerifyEmail(asia-northeast3)][39m[22m Successful update operation.
+[32m[1m✔ [22m[39m [1m[32mfunctions[sendResetEmail(asia-northeast3)][39m[22m Successful update operation.
 
 [32m[1m✔ [22m[39m [1m[4mDeploy complete![24m[22m
 
