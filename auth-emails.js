@@ -10,10 +10,16 @@ import { getFunctions, httpsCallable } from "https://www.gstatic.com/firebasejs/
 
 const fns = getFunctions(app, SOCIAL.functionsRegion);
 
+// 현재 사이트 언어(localStorage 'kos-lang') → 메일 언어로 전달
+function curLang(){
+  try{ return localStorage.getItem("kos-lang") === "en" ? "en" : "ko"; }
+  catch(e){ return "ko"; }
+}
+
 export async function sendVerifyEmail(email){
-  await httpsCallable(fns, "sendVerifyEmail")({ email: email || "" });
+  await httpsCallable(fns, "sendVerifyEmail")({ email: email || "", lang: curLang() });
 }
 
 export async function sendResetEmail(email){
-  await httpsCallable(fns, "sendResetEmail")({ email: email || "" });
+  await httpsCallable(fns, "sendResetEmail")({ email: email || "", lang: curLang() });
 }

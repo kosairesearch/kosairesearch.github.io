@@ -154,15 +154,24 @@ const ACTION_SETTINGS = { url: SITE_URL + "/Login.html", handleCodeInApp: false 
 
 // Firebase 기본 액션 링크(firebaseapp.com/__/auth/action?...)의 쿼리는 유지하고
 // 도착지만 우리 페이지로 바꿔, 메일 버튼이 우리 디자인 화면으로 가게 한다.
-function customActionLink(rawLink){
-  try{ const u = new URL(rawLink); const t = new URL(ACTION_PAGE); t.search = u.search; return t.toString(); }
-  catch(e){ return rawLink; }
+function customActionLink(rawLink, lang){
+  try{
+    const u = new URL(rawLink); const t = new URL(ACTION_PAGE); t.search = u.search;
+    if(lang) t.searchParams.set("lang", lang);   // 처리 페이지도 같은 언어로
+    return t.toString();
+  }catch(e){ return rawLink; }
 }
 
 function esc(s){ return String(s || "").replace(/[&<>"]/g, c => ({ "&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;" }[c])); }
 
-function mailLayout({ heading, intro, btnText, link, outro }){
-  return `<!doctype html><html lang="ko"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"></head>
+function mailLayout({ lang, heading, intro, btnText, link, outro }){
+  const en = lang === "en";
+  const footBrand = en ? "KOSAI · AI research on Korean listed companies" : "KOSAI · 한국 상장사 AI 리서치";
+  const footContact = en ? "Contact" : "문의";
+  const autoNote = en
+    ? "This email was sent automatically based on your KOSAI account activity."
+    : "본 메일은 KOSAI 계정 활동에 따라 자동 발송되었습니다.";
+  return `<!doctype html><html lang="${en ? "en" : "ko"}"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"></head>
 <body style="margin:0;padding:0;background:#f2f3fa;">
 <table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="background:#f2f3fa;padding:32px 12px;">
 <tr><td align="center">
@@ -178,36 +187,58 @@ function mailLayout({ heading, intro, btnText, link, outro }){
       <a href="${esc(link)}" style="display:inline-block;background:#0d69d4;color:#ffffff;text-decoration:none;font:600 15px/1 ${FONT};padding:14px 28px;border-radius:10px;">${esc(btnText)}</a>
     </td></tr>
     <tr><td style="padding:18px 32px 0;">
-      <p style="margin:0;font:400 13px/1.6 ${FONT};color:#8a8c97;">${outro}</p>
+      <p style="margin:0;font:400 13px/1.6 ${FONT};color:#8a8c97;">${esc(outro)}</p>
     </td></tr>
     <tr><td style="padding:22px 32px 28px;">
       <hr style="border:none;border-top:1px solid #eceef5;margin:0 0 16px;">
-      <p style="margin:0;font:400 12px/1.65 ${FONT};color:#a7a9b4;">KOSAI · 한국 상장사 AI 리서치<br>문의 <a href="mailto:hello@kosai.kr" style="color:#8a8c97;text-decoration:none;">hello@kosai.kr</a> · <a href="${SITE_URL}" style="color:#8a8c97;text-decoration:none;">kosai.kr</a></p>
+      <p style="margin:0;font:400 12px/1.65 ${FONT};color:#a7a9b4;">${footBrand}<br>${footContact} <a href="mailto:hello@kosai.kr" style="color:#8a8c97;text-decoration:none;">hello@kosai.kr</a> · <a href="${SITE_URL}" style="color:#8a8c97;text-decoration:none;">kosai.kr</a></p>
     </td></tr>
   </table>
-  <p style="max-width:480px;margin:14px auto 0;font:400 11px/1.5 ${FONT};color:#b3b5bf;">본 메일은 KOSAI 계정 활동에 따라 자동 발송되었습니다.</p>
+  <p style="max-width:480px;margin:14px auto 0;font:400 11px/1.5 ${FONT};color:#b3b5bf;">${autoNote}</p>
 </td></tr>
 </table></body></html>`;
 }
 
-function verifyMail(name, link){
+function verifyMail(name, link, lang){
+  const en = lang === "en";
+  if(en){
+    return {
+      subject: "Verify your KOSAI email address",
+      html: mailLayout({ lang, heading: "Verify your email address",
+        intro: name
+          ? `Hi ${esc(name)}, welcome to KOSAI. Tap the button below to verify your email and unlock all features.`
+          : "Welcome to KOSAI. Tap the button below to verify your email and unlock all features.",
+        btnText: "Verify email", link,
+        outro: "If you didn't sign up, you can safely ignore this email." })
+    };
+  }
   const hi = name ? `${esc(name)}님, ` : "";
-  return mailLayout({
-    heading: "이메일 주소를 인증해 주세요",
-    intro: `${hi}KOSAI 가입을 환영합니다. 아래 버튼을 눌러 이메일 인증을 완료하면 모든 기능을 이용하실 수 있어요.`,
-    btnText: "이메일 인증하기",
-    link,
-    outro: "본인이 가입하지 않았다면 이 메일을 무시하셔도 됩니다."
-  });
+  return {
+    subject: "KOSAI 이메일 주소를 인증해 주세요",
+    html: mailLayout({ lang, heading: "이메일 주소를 인증해 주세요",
+      intro: `${hi}KOSAI 가입을 환영합니다. 아래 버튼을 눌러 이메일 인증을 완료하면 모든 기능을 이용하실 수 있어요.`,
+      btnText: "이메일 인증하기", link,
+      outro: "본인이 가입하지 않았다면 이 메일을 무시하셔도 됩니다." })
+  };
 }
-function resetMail(link){
-  return mailLayout({
-    heading: "비밀번호를 재설정하세요",
-    intro: "비밀번호 재설정 요청을 받았습니다. 아래 버튼을 눌러 새 비밀번호를 설정해 주세요.",
-    btnText: "비밀번호 재설정하기",
-    link,
-    outro: "본인이 요청하지 않았다면 이 메일을 무시하셔도 됩니다. 비밀번호는 변경되지 않으며 계정은 안전합니다."
-  });
+function resetMail(link, lang){
+  const en = lang === "en";
+  if(en){
+    return {
+      subject: "Reset your KOSAI password",
+      html: mailLayout({ lang, heading: "Reset your password",
+        intro: "We received a request to reset your password. Tap the button below to set a new one.",
+        btnText: "Reset password", link,
+        outro: "If you didn't request this, you can ignore this email — your password won't change and your account stays safe." })
+    };
+  }
+  return {
+    subject: "KOSAI 비밀번호 재설정 안내",
+    html: mailLayout({ lang, heading: "비밀번호를 재설정하세요",
+      intro: "비밀번호 재설정 요청을 받았습니다. 아래 버튼을 눌러 새 비밀번호를 설정해 주세요.",
+      btnText: "비밀번호 재설정하기", link,
+      outro: "본인이 요청하지 않았다면 이 메일을 무시하셔도 됩니다. 비밀번호는 변경되지 않으며 계정은 안전합니다." })
+  };
 }
 
 function emailOk(e){ return typeof e === "string" && /^[^@\s]+@[^@\s]+\.[^@\s]+$/.test(e); }
@@ -218,18 +249,16 @@ exports.sendVerifyEmail = onCall(
   { region: REGION, cors: true, secrets: [RESEND_API_KEY] },
   async (req) => {
     const email = ((req.data && req.data.email) || (req.auth && req.auth.token && req.auth.token.email) || "").trim().toLowerCase();
+    const lang = (req.data && req.data.lang) === "en" ? "en" : "ko";
     if(!emailOk(email)) throw new HttpsError("invalid-argument", "유효한 이메일이 필요합니다.");
     let user;
     try{ user = await admin.auth().getUserByEmail(email); }
     catch(e){ return { ok: true }; }            // 없는 사용자 → 열거 방지
     if(user.emailVerified) return { ok: true };  // 이미 인증됨 → 미발송
-    const link = customActionLink(await admin.auth().generateEmailVerificationLink(email, ACTION_SETTINGS));
+    const link = customActionLink(await admin.auth().generateEmailVerificationLink(email, ACTION_SETTINGS), lang);
+    const mail = verifyMail(user.displayName, link, lang);
     const resend = new Resend(RESEND_API_KEY.value());
-    const { error } = await resend.emails.send({
-      from: MAIL_FROM, to: email,
-      subject: "KOSAI 이메일 주소를 인증해 주세요",
-      html: verifyMail(user.displayName, link)
-    });
+    const { error } = await resend.emails.send({ from: MAIL_FROM, to: email, subject: mail.subject, html: mail.html });
     if(error){ console.error("[sendVerifyEmail] resend:", error); throw new HttpsError("internal", "메일 발송에 실패했습니다."); }
     return { ok: true };
   }
@@ -240,20 +269,18 @@ exports.sendResetEmail = onCall(
   { region: REGION, cors: true, secrets: [RESEND_API_KEY] },
   async (req) => {
     const email = ((req.data && req.data.email) || "").trim().toLowerCase();
+    const lang = (req.data && req.data.lang) === "en" ? "en" : "ko";
     if(!emailOk(email)) throw new HttpsError("invalid-argument", "유효한 이메일이 필요합니다.");
     let link;
-    try{ link = customActionLink(await admin.auth().generatePasswordResetLink(email, ACTION_SETTINGS)); }
+    try{ link = customActionLink(await admin.auth().generatePasswordResetLink(email, ACTION_SETTINGS), lang); }
     catch(e){
       if(e.code === "auth/user-not-found" || e.code === "auth/email-not-found") return { ok: true };
       console.error("[sendResetEmail] link:", e);
       throw new HttpsError("internal", "요청 처리에 실패했습니다.");
     }
+    const mail = resetMail(link, lang);
     const resend = new Resend(RESEND_API_KEY.value());
-    const { error } = await resend.emails.send({
-      from: MAIL_FROM, to: email,
-      subject: "KOSAI 비밀번호 재설정 안내",
-      html: resetMail(link)
-    });
+    const { error } = await resend.emails.send({ from: MAIL_FROM, to: email, subject: mail.subject, html: mail.html });
     if(error){ console.error("[sendResetEmail] resend:", error); throw new HttpsError("internal", "메일 발송에 실패했습니다."); }
     return { ok: true };
   }
