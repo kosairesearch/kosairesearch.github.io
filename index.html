@@ -670,7 +670,7 @@ try{
   /* 색: 웜코어→샴페인→실버(+간헐적 그린·핑크) */
   const tint=t=>{
     const c=new THREE.Color();
-    if(t<0.30) c.copy(P.core).lerp(P.champ,t/0.30);
+    if(t<0.30){ c.copy(P.core).lerp(P.champ,t/0.30); c.multiplyScalar(0.78+0.22*(t/0.30)); }
     else if(t<0.66) c.copy(P.champ).lerp(P.silver,(t-0.30)/0.36);
     else c.copy(P.silver).lerp(P.edge,(t-0.66)/0.34);
     const u=Math.random();
@@ -718,7 +718,7 @@ try{
     const m=new THREE.SpriteMaterial({map:texSoft,color,transparent:true,opacity,blending:THREE.AdditiveBlending,depthWrite:false});
     const sp=new THREE.Sprite(m); sp.scale.setScalar(scale); sp.position.set(x,y,z); parent.add(sp);
   }
-  sprite('#ffeccc',2.2,0.18);                                  // 아주 은은한 코어 헤이즈
+  sprite('#ffeccc',1.8,0.08);                                  // 아주 은은한 코어 헤이즈
   for(let i=0;i<9;i++){                                        // 무지갯빛 안개(그린·핑크·골드)
     const r=1.2+Math.random()*5.5, a=Math.random()*Math.PI*2;
     const col=['#b9cf86','#d9a4ba','#e7d3a0'][i%3];
