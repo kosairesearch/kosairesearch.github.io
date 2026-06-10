@@ -1,0 +1,40 @@
+name: 🚀 Cloud Functions 배포
+
+# 터미널 없이 GitHub에서 함수 배포. 수동 실행(원할 때만).
+on:
+  workflow_dispatch:
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Node 설정
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+
+      - name: 함수 의존성 설치
+        run: cd functions && npm install
+
+      - name: firebase-tools 설치
+        run: npm install -g firebase-tools
+
+      - name: 서비스 계정 인증
+        env:
+          SA: ${{ secrets.GCP_SA_KEY }}
+        run: |
+          printf '%s' "$SA" > "$HOME/sa.json"
+          echo "GOOGLE_APPLICATION_CREDENTIALS=$HOME/sa.json" >> "$GITHUB_ENV"
+
+      - name: RESEND_API_KEY 시크릿 등록
+        env:
+          RK: ${{ secrets.RESEND_API_KEY }}
+        run: |
+          printf '%s' "$RK" | firebase functions:secrets:set RESEND_API_KEY \
+            --data-file=- --project kosai-ae167 --force
+
+      - name: 함수 배포
+        run: |
+          firebase deploy --only functions --project kosai-ae167 --non-interactive --force
