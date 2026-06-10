@@ -560,88 +560,97 @@ if(window.KOSi18n) KOSi18n.register({
 
 <script type="module">
 import { auth } from "./firebase-config.js";
-import { applyActionCode, checkActionCode, verifyPasswordResetCode, confirmPasswordReset }
+import { applyActionCode, verifyPasswordResetCode, confirmPasswordReset }
   from "https://www.gstatic.com/firebasejs/10.12.2/firebase-auth.js";
 
-const T = m => (window.KOSi18n ? window.KOSi18n.t(m) : m);
 const $ = s => document.querySelector(s);
 const params = new URLSearchParams(location.search);
 const mode = params.get('mode');
 const oobCode = params.get('oobCode');
 const continueUrl = params.get('continueUrl') || 'Login.html';
 
-const titleEl=$('#acTitle'), descEl=$('#acDesc'), bodyEl=$('#acBody'), errEl=$('#acErr'), crumbEl=$('#crumbLabel');
-function setHead(t,d){ titleEl.textContent=T(t); descEl.textContent=T(d); }
-function showErr(msg){ errEl.textContent=T(msg); errEl.style.display='block'; }
-function clearErr(){ errEl.style.display='none'; errEl.textContent=''; }
-function goBtn(label, href){ return `<a class="btn btn-primary" style="width:100%;justify-content:center;text-decoration:none" href="${href}">${T(label)}</a>`; }
+// 언어: 링크의 lang 파라미터 → localStorage → 기본 ko
+let _lang = params.get('lang');
+if(_lang !== 'en' && _lang !== 'ko'){ try{ _lang = localStorage.getItem('kos-lang'); }catch(e){} }
+const EN = _lang === 'en';
+const L = (ko, en) => EN ? en : ko;
 
-function successView(icon, title, desc, btnLabel, href){
+const titleEl=$('#acTitle'), descEl=$('#acDesc'), bodyEl=$('#acBody'), errEl=$('#acErr'), crumbEl=$('#crumbLabel');
+function setHead(t,d){ titleEl.textContent=t; descEl.textContent=d; }
+function showErr(msg){ errEl.textContent=msg; errEl.style.display='block'; }
+function clearErr(){ errEl.style.display='none'; errEl.textContent=''; }
+function goBtn(label, href){ return `<a class="btn btn-primary" style="width:100%;justify-content:center;text-decoration:none" href="${href}">${label}</a>`; }
+
+function successView(title, desc, href){
   setHead(title, desc);
-  bodyEl.innerHTML = `<div class="ac-ok"><div class="ac-badge">${icon}</div></div><div class="submit-row">${goBtn(btnLabel, href)}</div>`;
+  bodyEl.innerHTML = `<div class="ac-ok"><div class="ac-badge">${CHECK}</div></div><div class="submit-row">${goBtn(L('로그인하러 가기','Go to sign in'), href)}</div>`;
 }
 function errorView(title, desc){
   setHead(title, desc);
-  bodyEl.innerHTML = `<div class="ac-ok"><div class="ac-badge ac-bad">!</div></div><div class="submit-row">${goBtn('로그인 페이지로', 'Login.html')}</div>`;
+  bodyEl.innerHTML = `<div class="ac-ok"><div class="ac-badge ac-bad">!</div></div><div class="submit-row">${goBtn(L('로그인 페이지로','Go to sign in'), 'Login.html')}</div>`;
 }
 
 const CHECK = '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg>';
 
+// 초기 로딩 문구
+crumbEl.textContent = L('계정 인증','Account');
+setHead(L('처리 중…','Working…'), L('잠시만 기다려 주세요.','Please wait a moment.'));
+
 async function run(){
-  if(!mode || !oobCode){ errorView('잘못된 접근입니다','유효하지 않은 링크예요. 메일의 버튼을 다시 눌러주세요.'); return; }
+  if(!mode || !oobCode){ errorView(L('잘못된 접근입니다','Invalid link'), L('유효하지 않은 링크예요. 메일의 버튼을 다시 눌러주세요.','This link is not valid. Please tap the button in your email again.')); return; }
   try{
     if(mode === 'verifyEmail'){
       await applyActionCode(auth, oobCode);
-      crumbEl.textContent=T('이메일 인증');
-      successView(CHECK, '이메일 인증이 완료됐어요', 'KOSAI의 모든 기능을 이용하실 수 있습니다. 로그인해 주세요.', '로그인하러 가기', continueUrl);
+      crumbEl.textContent=L('이메일 인증','Email verification');
+      successView(L('이메일 인증이 완료됐어요','Your email has been verified'), L('KOSAI의 모든 기능을 이용하실 수 있습니다. 로그인해 주세요.','You can now use all KOSAI features. Please sign in.'), continueUrl);
     }
     else if(mode === 'resetPassword'){
-      crumbEl.textContent=T('비밀번호 재설정');
+      crumbEl.textContent=L('비밀번호 재설정','Password reset');
       const email = await verifyPasswordResetCode(auth, oobCode);
       renderResetForm(email);
     }
     else if(mode === 'recoverEmail' || mode === 'verifyAndChangeEmail'){
       await applyActionCode(auth, oobCode);
-      crumbEl.textContent=T('이메일 변경');
-      successView(CHECK, '이메일 주소가 변경됐어요', '변경된 이메일로 다시 로그인해 주세요.', '로그인하러 가기', continueUrl);
+      crumbEl.textContent=L('이메일 변경','Email change');
+      successView(L('이메일 주소가 변경됐어요','Your email address has been changed'), L('변경된 이메일로 다시 로그인해 주세요.','Please sign in again with your updated email.'), continueUrl);
     }
-    else { errorView('지원하지 않는 요청','유효하지 않은 링크예요.'); }
+    else { errorView(L('지원하지 않는 요청','Unsupported request'), L('유효하지 않은 링크예요.','This link is not valid.')); }
   }catch(e){
     const c=(e && e.code)||'';
-    if(c.includes('expired')) errorView('링크가 만료됐어요','보안을 위해 인증 링크는 일정 시간 후 만료됩니다. 메일을 다시 요청해 주세요.');
-    else if(c.includes('invalid-action-code')) errorView('이미 사용된 링크예요','이미 처리됐거나 유효하지 않은 링크입니다. 새로 요청해 주세요.');
-    else errorView('처리 중 문제가 발생했어요','잠시 후 다시 시도하거나, 메일을 다시 요청해 주세요.');
+    if(c.includes('expired')) errorView(L('링크가 만료됐어요','This link has expired'), L('보안을 위해 인증 링크는 일정 시간 후 만료됩니다. 메일을 다시 요청해 주세요.','For security, links expire after a while. Please request a new email.'));
+    else if(c.includes('invalid-action-code')) errorView(L('이미 사용된 링크예요','This link was already used'), L('이미 처리됐거나 유효하지 않은 링크입니다. 새로 요청해 주세요.','It has already been used or is invalid. Please request a new one.'));
+    else errorView(L('처리 중 문제가 발생했어요','Something went wrong'), L('잠시 후 다시 시도하거나, 메일을 다시 요청해 주세요.','Please try again later or request a new email.'));
   }
 }
 
 function renderResetForm(email){
-  setHead('새 비밀번호를 설정하세요', email + ' 계정의 새 비밀번호를 입력해 주세요.');
+  setHead(L('새 비밀번호를 설정하세요','Set a new password'), L(email + ' 계정의 새 비밀번호를 입력해 주세요.', 'Enter a new password for ' + email + '.'));
   bodyEl.innerHTML = `
     <form id="rsForm">
       <div class="field">
-        <label for="np">새 비밀번호</label>
-        <input id="np" type="password" autocomplete="new-password" placeholder="${T('영문·숫자 포함 8자 이상')}" required />
+        <label for="np">${L('새 비밀번호','New password')}</label>
+        <input id="np" type="password" autocomplete="new-password" placeholder="${L('영문·숫자 포함 8자 이상','At least 8 chars, letters and numbers')}" required />
       </div>
       <div class="field">
-        <label for="np2">새 비밀번호 확인</label>
-        <input id="np2" type="password" autocomplete="new-password" placeholder="${T('비밀번호를 다시 입력하세요')}" required />
+        <label for="np2">${L('새 비밀번호 확인','Confirm new password')}</label>
+        <input id="np2" type="password" autocomplete="new-password" placeholder="${L('비밀번호를 다시 입력하세요','Re-enter your password')}" required />
       </div>
-      <div class="submit-row"><button type="submit" class="btn btn-primary" id="rsSubmit">${T('비밀번호 변경')}</button></div>
+      <div class="submit-row"><button type="submit" class="btn btn-primary" id="rsSubmit">${L('비밀번호 변경','Change password')}</button></div>
     </form>`;
   $('#rsForm').addEventListener('submit', async ev => {
     ev.preventDefault(); clearErr();
     const pw=$('#np').value, pw2=$('#np2').value;
-    if(pw.length<8 || !/[A-Za-z]/.test(pw) || !/[0-9]/.test(pw)){ showErr('비밀번호는 영문과 숫자를 포함해 8자 이상이어야 합니다.'); return; }
-    if(pw!==pw2){ showErr('비밀번호가 일치하지 않습니다.'); return; }
+    if(pw.length<8 || !/[A-Za-z]/.test(pw) || !/[0-9]/.test(pw)){ showErr(L('비밀번호는 영문과 숫자를 포함해 8자 이상이어야 합니다.','Password must be at least 8 characters with letters and numbers.')); return; }
+    if(pw!==pw2){ showErr(L('비밀번호가 일치하지 않습니다.','Passwords do not match.')); return; }
     const btn=$('#rsSubmit'); btn.disabled=true;
     try{
       await confirmPasswordReset(auth, oobCode, pw);
-      successView(CHECK, '비밀번호가 변경됐어요', '새 비밀번호로 로그인해 주세요.', '로그인하러 가기', 'Login.html');
+      successView(L('비밀번호가 변경됐어요','Your password has been changed'), L('새 비밀번호로 로그인해 주세요.','Please sign in with your new password.'), 'Login.html');
     }catch(e){
       btn.disabled=false;
       const c=(e&&e.code)||'';
-      if(c.includes('expired')||c.includes('invalid-action-code')) showErr('링크가 만료되었거나 이미 사용되었습니다. 메일을 다시 요청해 주세요.');
-      else showErr('비밀번호 변경에 실패했습니다. 잠시 후 다시 시도해 주세요.');
+      if(c.includes('expired')||c.includes('invalid-action-code')) showErr(L('링크가 만료되었거나 이미 사용되었습니다. 메일을 다시 요청해 주세요.','This link has expired or was already used. Please request a new email.'));
+      else showErr(L('비밀번호 변경에 실패했습니다. 잠시 후 다시 시도해 주세요.','Failed to change password. Please try again later.'));
     }
   });
 }
