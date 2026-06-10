@@ -167,7 +167,7 @@ function mailLayout({ heading, intro, btnText, link, outro }){
 <table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="background:#f2f3fa;padding:32px 12px;">
 <tr><td align="center">
   <table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="max-width:480px;background:#ffffff;border-radius:16px;border:1px solid #e7e9f2;">
-    <tr><td style="padding:28px 32px 0;">
+    <tr><td style="padding:28px 32px 0 34px;">
       <img src="${SITE_URL}/assets/kosai-wordmark-black.png" alt="KOSAI" width="123" height="20" style="display:block;border:0;outline:none;text-decoration:none;height:20px;width:123px;">
     </td></tr>
     <tr><td style="padding:18px 32px 0;">
