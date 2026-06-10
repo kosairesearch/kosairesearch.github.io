@@ -644,9 +644,9 @@ try{
         r=Math.pow(Math.random(),1.25)*R;                       // 고르게 퍼지게(중앙 뭉침 방지)
         const inArm=u<bulge+armFrac;
         const arm=inArm ? (i%arms)*(Math.PI*2/arms) : Math.random()*Math.PI*2;
-        ang=arm+r*spin+(inArm?g()*0.34:0);
-        sh=0.32+r*0.07;
-        sv=(0.12+r*0.012)*(1.0-(r/R)*0.4);
+        ang=arm+r*spin+(inArm?g()*0.50:0);
+        sh=0.44+r*0.105;
+        sv=(0.17+r*0.017)*(1.0-(r/R)*0.35);
       }
       aR[i]=r; aA[i]=ang; aSp[i]=speed;
       pos[i3]=g()*sh; pos[i3+1]=g()*sv; pos[i3+2]=g()*sh;
@@ -670,7 +670,7 @@ try{
   /* 색: 웜코어→샴페인→실버(+간헐적 그린·핑크) */
   const tint=t=>{
     const c=new THREE.Color();
-    if(t<0.30){ c.copy(P.core).lerp(P.champ,t/0.30); c.multiplyScalar(0.78+0.22*(t/0.30)); }
+    if(t<0.30){ c.copy(P.core).lerp(P.champ,t/0.30); c.multiplyScalar(0.68+0.32*(t/0.30)); }
     else if(t<0.66) c.copy(P.champ).lerp(P.silver,(t-0.30)/0.36);
     else c.copy(P.silver).lerp(P.edge,(t-0.66)/0.34);
     const u=Math.random();
@@ -680,12 +680,12 @@ try{
   };
 
   /* 메인 디스크 — 화면을 가로지르는 큰 리본 */
-  const main=makeDisk({count:mobile?16000:40000,R:13,arms:3,spin:0.62,armFrac:0.62,bulge:0.05,speed:0.26,colorFn:tint});
+  const main=makeDisk({count:mobile?16000:40000,R:13,arms:3,spin:0.55,armFrac:0.54,bulge:0.03,speed:0.26,colorFn:tint});
   const gMain=new THREE.Group(); gMain.add(main);
   gMain.rotation.set(-1.42,0,0.52); gMain.position.y=0.4;
 
   /* 외곽 스트림 — 아래쪽을 휩쓰는 두 번째 띠 */
-  const band=makeDisk({count:mobile?7000:16000,R:18,arms:2,spin:0.42,armFrac:0.7,bulge:0.0,speed:0.18,colorFn:t=>{
+  const band=makeDisk({count:mobile?7000:16000,R:18,arms:2,spin:0.42,armFrac:0.5,bulge:0.0,speed:0.18,colorFn:t=>{
     const c=new THREE.Color().copy(P.silver).lerp(P.edge,t);
     if(Math.random()<0.06) c.lerp(P.champ,0.6);
     return c;
@@ -694,7 +694,7 @@ try{
   gBand.position.set(0,-2.4,-3);
   gBand.rotation.set(-1.5,0,-0.26);
 
-  const band2=makeDisk({count:mobile?4000:9000,R:17,arms:2,spin:0.36,armFrac:0.75,bulge:0.0,speed:0.14,colorFn:t=>{
+  const band2=makeDisk({count:mobile?4000:9000,R:17,arms:2,spin:0.36,armFrac:0.55,bulge:0.0,speed:0.14,colorFn:t=>{
     const c=new THREE.Color().copy(P.silver).lerp(P.edge,t); c.multiplyScalar(0.62);
     if(Math.random()<0.05) c.lerp(P.champ,0.5);
     return c;
@@ -718,11 +718,11 @@ try{
     const m=new THREE.SpriteMaterial({map:texSoft,color,transparent:true,opacity,blending:THREE.AdditiveBlending,depthWrite:false});
     const sp=new THREE.Sprite(m); sp.scale.setScalar(scale); sp.position.set(x,y,z); parent.add(sp);
   }
-  sprite('#ffeccc',1.8,0.08);                                  // 아주 은은한 코어 헤이즈
-  for(let i=0;i<9;i++){                                        // 무지갯빛 안개(그린·핑크·골드)
-    const r=1.2+Math.random()*5.5, a=Math.random()*Math.PI*2;
+  sprite('#ffeccc',1.6,0.05);                                  // 아주 은은한 코어 헤이즈
+  for(let i=0;i<15;i++){                                        // 무지갯빛 안개(그린·핑크·골드)
+    const r=2.6+Math.random()*5.2, a=Math.random()*Math.PI*2;
     const col=['#b9cf86','#d9a4ba','#e7d3a0'][i%3];
-    sprite(col,2.2+Math.random()*3.4,0.022+Math.random()*0.03,Math.cos(a)*r,g()*0.3,Math.sin(a)*r);
+    sprite(col,3.2+Math.random()*4.6,0.018+Math.random()*0.026,Math.cos(a)*r,g()*0.3,Math.sin(a)*r);
   }
 
   /* 전경 보케 — 사진의 흐릿한 큰 입자(심도) */
