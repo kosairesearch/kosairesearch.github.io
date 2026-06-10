@@ -71,6 +71,17 @@ def write_reports(reports, model, as_of):
     """종목별 JSON(data/reports/{tk}.json) + 가벼운 인덱스(reports-index.js)로 저장.
     인덱스는 목록/카드용 최소 필드(title·reportDate·reportTs)만 담아 window.KOS_REPORTS 로 노출한다
     (전체 본문은 종목상세에서 해당 JSON만 fetch). 상폐 등으로 사라진 종목 파일은 정리한다."""
+    # 유니버스에서 빠진 종목(상폐·우선주 정리 등)의 리포트는 함께 정리.
+    # 데이터 글리치로 대량 삭제되는 사고를 막기 위해 종목 수·고아 수 가드를 둔다.
+    try:
+        stk = {s["ticker"] for s in load_stocks()["stocks"]}
+        orphans = [tk for tk in reports if tk not in stk]
+        if len(stk) >= 2000 and 0 < len(orphans) <= 60:
+            for tk in orphans:
+                reports.pop(tk, None)
+            log(f"- 🧹 유니버스 제외 종목 리포트 정리: {len(orphans)}건 ({', '.join(orphans[:8])})")
+    except Exception:
+        pass
     REPORTS_DIR.mkdir(parents=True, exist_ok=True)
     for tk, rep in reports.items():
         (REPORTS_DIR / f"{tk}.json").write_text(
