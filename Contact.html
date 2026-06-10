@@ -94,6 +94,10 @@ main{flex:1;padding:8px 0 64px}
 .field input::placeholder,.field textarea::placeholder{color:var(--fg-3)}
 .field input:focus,.field textarea:focus{border-color:var(--fg-1)}
 :root[data-theme="dark"] .field input:focus,:root[data-theme="dark"] .field textarea:focus{border-color:rgba(255,255,255,.5)}
+.field input.invalid,.field textarea.invalid{border-color:#e5383b}
+:root[data-theme="dark"] .field input.invalid,:root[data-theme="dark"] .field textarea.invalid{border-color:#ff6b6e}
+.field-err{display:none;margin:7px 0 0;font:600 12px/1.4 var(--font-sans);color:#c0282b}
+:root[data-theme="dark"] .field-err{color:#ff8a8c}
 
 /* category segmented */
 .seg{display:flex;gap:6px;flex-wrap:wrap}
@@ -442,7 +446,7 @@ KOSi18n.register({
       <p>서비스 의견·협업 제안·데이터 오류 제보를 보내주세요. 영업일 기준 2~3일 내에 답변드립니다.</p>
     </div>
 
-    <form class="card glass" id="form">
+    <form class="card glass" id="form" novalidate>
       <div class="field">
         <label>문의 유형</label>
         <div class="seg" id="catSeg">
@@ -500,8 +504,21 @@ KOSi18n.register({
 <script>
 const catSeg=document.getElementById('catSeg');
 catSeg.addEventListener('click',e=>{const b=e.target.closest('button');if(!b)return;[...catSeg.children].forEach(c=>c.classList.toggle('active',c===b));});
+function _t(m){ return window.KOSi18n ? window.KOSi18n.t(m) : m; }
+function fldErr(el,msg){ el.classList.add('invalid'); const f=el.closest('.field'); let e=f.querySelector('.field-err'); if(!e){ e=document.createElement('div'); e.className='field-err'; f.appendChild(e); } e.textContent=msg; e.style.display='block'; }
+function fldClear(el){ el.classList.remove('invalid'); const e=el.closest('.field').querySelector('.field-err'); if(e) e.style.display='none'; }
+['f-name','f-email','f-msg'].forEach(id=>{ const el=document.getElementById(id); if(el) el.addEventListener('input',()=>fldClear(el)); });
 document.getElementById('form').addEventListener('submit',e=>{
   e.preventDefault();
+  const name=document.getElementById('f-name'), email=document.getElementById('f-email'), msg=document.getElementById('f-msg');
+  let bad=null;
+  if(!name.value.trim()){ fldErr(name,_t('이름을 입력해 주세요.')); bad=bad||name; } else fldClear(name);
+  const ev=email.value.trim();
+  if(!ev){ fldErr(email,_t('이메일을 입력해 주세요.')); bad=bad||email; }
+  else if(!/^[^@\s]+@[^@\s]+\.[^@\s]+$/.test(ev)){ fldErr(email,_t('올바른 이메일 형식이 아니에요.')); bad=bad||email; }
+  else fldClear(email);
+  if(!msg.value.trim()){ fldErr(msg,_t('문의 내용을 입력해 주세요.')); bad=bad||msg; } else fldClear(msg);
+  if(bad){ bad.focus(); return; }
   document.getElementById('form').style.display='none';
   document.getElementById('sent').classList.add('show');
   window.scrollTo({top:0,behavior:'smooth'});
@@ -522,6 +539,7 @@ if(window.KOSi18n) KOSi18n.register({
   "서비스 의견·협업 제안·데이터 오류 제보를 보내주세요. 영업일 기준 2~3일 내에 답변드립니다.":"Send service feedback, partnership proposals, or data error reports. We respond within 2–3 business days.",
   "문의 유형":"Inquiry type","일반 문의":"General","데이터 오류 제보":"Data error report","협업·제휴":"Partnership",
   "이름":"Name","이메일":"Email","문의 내용":"Message","문의 보내기":"Send inquiry",
+  "이름을 입력해 주세요.":"Please enter your name.","이메일을 입력해 주세요.":"Please enter your email.","올바른 이메일 형식이 아니에요.":"That doesn't look like a valid email.","문의 내용을 입력해 주세요.":"Please enter your message.",
   "성함을 입력해 주세요":"Your full name",
   "답변받으실 이메일 주소":"Email address for our reply",
   "문의하실 내용을 자세히 적어주세요. 데이터 오류 제보의 경우 해당 페이지 주소를 함께 남겨주시면 빠르게 확인할 수 있습니다.":"Tell us in detail. For data error reports, include the URL of the page so we can investigate quickly.",

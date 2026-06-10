@@ -117,6 +117,10 @@ main{flex:1;padding:8px 0 64px}
 .field textarea::placeholder{color:var(--fg-3)}
 .field textarea:focus{border-color:var(--fg-1)}
 :root[data-theme="dark"] .field textarea:focus{border-color:rgba(255,255,255,.5)}
+.field input.invalid,.field textarea.invalid{border-color:#e5383b}
+:root[data-theme="dark"] .field input.invalid,:root[data-theme="dark"] .field textarea.invalid{border-color:#ff6b6e}
+.field-err{display:none;margin:7px 0 0;font:600 12px/1.4 var(--font-sans);color:#c0282b}
+:root[data-theme="dark"] .field-err{color:#ff8a8c}
 .field input[type=email]{width:100%;border:1px solid var(--border-2);background:rgba(255,255,255,.5);
   border-radius:var(--radius-md);padding:13px 15px;font:400 15px var(--font-sans);color:var(--fg-1);outline:none;transition:border-color .15s}
 :root[data-theme="dark"] .field input[type=email]{background:rgba(255,255,255,.06)}
@@ -458,7 +462,7 @@ KOSi18n.register({
       <p>KOSAI를 쓰면서 느낀 점을 들려주세요. 좋았던 점도, 아쉬웠던 점도 모두 환영합니다.</p>
     </div>
 
-    <form class="card glass" id="form">
+    <form class="card glass" id="form" novalidate>
       <div class="field">
         <label>전반적인 만족도</label>
         <div class="rating" id="rating">
@@ -540,9 +544,19 @@ rating.addEventListener('keydown',e=>{
 });
 const catSeg=document.getElementById('catSeg');
 catSeg.addEventListener('click',e=>{const b=e.target.closest('button');if(!b)return;[...catSeg.children].forEach(c=>c.classList.toggle('active',c===b));});
+function _t(m){ return window.KOSi18n ? window.KOSi18n.t(m) : m; }
+function fldErr(el,msg){ el.classList.add('invalid'); const f=el.closest('.field'); let e=f.querySelector('.field-err'); if(!e){ e=document.createElement('div'); e.className='field-err'; f.appendChild(e); } e.textContent=msg; e.style.display='block'; }
+function fldClear(el){ el.classList.remove('invalid'); const e=el.closest('.field').querySelector('.field-err'); if(e) e.style.display='none'; }
+['f-msg','f-email'].forEach(id=>{ const el=document.getElementById(id); if(el) el.addEventListener('input',()=>fldClear(el)); });
 document.getElementById('form').addEventListener('submit',e=>{
   e.preventDefault();
   if(!rated)return;
+  const msg=document.getElementById('f-msg'), email=document.getElementById('f-email');
+  let bad=null;
+  if(!msg.value.trim()){ fldErr(msg,_t('내용을 입력해 주세요.')); bad=bad||msg; } else fldClear(msg);
+  const ev=email.value.trim();
+  if(ev && !/^[^@\s]+@[^@\s]+\.[^@\s]+$/.test(ev)){ fldErr(email,_t('올바른 이메일 형식이 아니에요.')); bad=bad||email; } else fldClear(email);
+  if(bad){ bad.focus(); return; }
   document.getElementById('form').style.display='none';
   document.getElementById('sent').classList.add('show');
   window.scrollTo({top:0,behavior:'smooth'});
@@ -567,6 +581,7 @@ if(window.KOSi18n) KOSi18n.register({
   "어떤 피드백인가요?":"What kind of feedback?",
   "개선 제안":"Suggestion","버그 신고":"Bug report","칭찬·응원":"Praise & support","기타":"Other",
   "내용":"Message",
+  "내용을 입력해 주세요.":"Please enter your message.","올바른 이메일 형식이 아니에요.":"That doesn't look like a valid email.",
   "이메일":"Email","(선택 · 답변이 필요한 경우)":"(optional · if a reply is needed)",
   "어떤 점이 좋았는지, 무엇이 불편했는지, 어떤 기능이 있으면 좋겠는지 자유롭게 적어주세요.":"Tell us what you liked, what felt awkward, or what feature you'd love to see. Anything goes.",
   "답변받으실 이메일 주소":"Email address for our reply",

@@ -501,7 +501,7 @@ KOSi18n.register({
 
       <div class="divider">또는 이메일로 로그인</div>
 
-      <form id="emailForm">
+      <form id="emailForm" novalidate>
         <div class="field">
           <label for="email">이메일</label>
           <input id="email" type="email" autocomplete="email" data-i18n-ph placeholder="you@example.com" required />
@@ -572,6 +572,8 @@ if(window.KOSi18n) KOSi18n.register({
   "인증 메일 다시 보내기":"Resend verification email",
   "인증 메일을 다시 보냈습니다. 메일함을 확인해 주세요.":"Verification email resent. Please check your inbox.",
   "이메일을 먼저 입력해 주세요.":"Please enter your email first.",
+  "이메일을 입력해 주세요.":"Please enter your email.",
+  "비밀번호를 입력해 주세요.":"Please enter your password.",
   "카카오·네이버 로그인은 앱 키 설정이 필요합니다. (firebase-config.js 참고)":"Kakao/Naver sign-in needs app keys to be configured (see firebase-config.js)."
 });
 </script>
@@ -621,9 +623,12 @@ function offerResend(){
 
 $('#emailForm').addEventListener('submit', async e => {
   e.preventDefault(); clearErr();
+  const email = $('#email').value.trim(), pw = $('#password').value;
+  if(!email){ showErr(T('이메일을 입력해 주세요.')); $('#email').focus(); return; }
+  if(!pw){ showErr(T('비밀번호를 입력해 주세요.')); $('#password').focus(); return; }
   const btn = $('#emailSubmit'); btn.disabled = true;
   try{
-    const cred = await signInWithEmailAndPassword(auth, $('#email').value.trim(), $('#password').value);
+    const cred = await signInWithEmailAndPassword(auth, email, pw);
     const pwOnly = cred.user.providerData.length && cred.user.providerData.every(p => p.providerId === 'password');
     if(pwOnly && !cred.user.emailVerified){
       unverifiedUser = cred.user;

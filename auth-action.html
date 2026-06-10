@@ -602,7 +602,7 @@ function render(){
     descEl.textContent = L(s.email + ' 계정의 새 비밀번호를 입력해 주세요.', 'Enter a new password for ' + s.email + '.');
     const v1 = (($('#np')||{}).value) || '', v2 = (($('#np2')||{}).value) || '';
     bodyEl.innerHTML = `
-      <form id="rsForm">
+      <form id="rsForm" novalidate>
         <div class="field"><label for="np">${L('새 비밀번호','New password')}</label>
           <input id="np" type="password" autocomplete="new-password" placeholder="${L('영문·숫자 포함 8자 이상','At least 8 chars, letters and numbers')}" required /></div>
         <div class="field"><label for="np2">${L('새 비밀번호 확인','Confirm new password')}</label>
