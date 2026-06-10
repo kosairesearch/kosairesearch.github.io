@@ -276,8 +276,6 @@ table.dt .pos{color:var(--up);font-weight:700}table.dt .neg{color:var(--down);fo
   .m{padding:10px 7px;overflow:hidden}
   .m .k{font-size:10.5px;white-space:nowrap}
   .m .val{font-size:15px;margin-top:3px}
-  /* 현재가 아래 '시장·업종' 보조 글씨는 모바일에서 별도 '시장'·'업종' 칸과 중복이라 숨김 */
-  .m .peer{display:none}
 }
 @media (max-width:479px){.th-now{font-size:34px}}
 
@@ -919,7 +917,7 @@ KOSi18n.register({
     var tc=document.getElementById('thChg'); tc.className='th-chg '+cc; tc.textContent=(up?'▲ ':'▼ ')+sign+chg.toFixed(2)+'%';
 
     var mk=u.mk, metrics=[
-      [mk.price, won(STOCK.price), tname(STOCK.market)+' · '+tname(STOCK.sector)],
+      [mk.price, won(STOCK.price), ''],
       [mk.chg, '<span class="d '+cc+'">'+sign+chg.toFixed(2)+'%</span>', ''],
       [mk.mcap, mcap(STOCK.mcap), ''],
       [mk.amt, amt(STOCK.trading_value), ''],
@@ -928,7 +926,7 @@ KOSi18n.register({
       [mk.market, tname(STOCK.market), ''],
       [mk.sector, tname(STOCK.sector), '']
     ];
-    document.getElementById('mgrid').innerHTML=metrics.map(function(m){return '<div class="m"><div class="k">'+esc(m[0])+'</div><div class="val">'+m[1]+'</div><div class="peer">'+esc(m[2])+'</div></div>';}).join('');
+    document.getElementById('mgrid').innerHTML=metrics.map(function(m){return '<div class="m"><div class="k">'+esc(m[0])+'</div><div class="val">'+m[1]+'</div>'+(m[2]?'<div class="peer">'+esc(m[2])+'</div>':'')+'</div>';}).join('');
     fitMetricVals();
 
     var rb=document.getElementById('reportBody');
@@ -949,8 +947,8 @@ KOSi18n.register({
       h+=secOpen(pad(n++),'BEAR CASE',u.sec.bear)+factors(REP.bear,'bear','▼')+'</section><hr class="hairline" />';
       h+=secOpen(pad(n++),'RISK',u.sec.risk)+risksH(REP.risks)+'</section><hr class="hairline" />';
       h+=secOpen(pad(n++),'VERDICT',u.sec.verdict);
-      var st=REP.verdict?pk(REP.verdict.stance):'';
-      h+='<div class="wrapup glass">'+(st?'<div class="label">'+esc(u.stance)+' · '+esc(st)+'</div>':'')+'<p>'+esc(REP.verdict?pk(REP.verdict.body):'')+'</p></div></section>';
+      // 투자의견(stance)은 표시하지 않음 — 당사는 투자자문업 등록 사업자가 아님(법적 제약). 정성 요약(body)만 노출.
+      h+='<div class="wrapup glass"><p>'+esc(REP.verdict?pk(REP.verdict.body):'')+'</p></div></section>';
       // 참고 출처: 기본(KRX·DART)을 항상 먼저, 그 뒤 웹 인용
       var baseCards=[
         srcCardL(u.srcKRX, u.srcKRXsub, 'https://data.krx.co.kr', '📊'),

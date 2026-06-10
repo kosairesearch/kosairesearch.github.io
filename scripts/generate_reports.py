@@ -250,8 +250,7 @@ SCHEMA_DESC = """{
   "bull":      [ {"title": {"ko":"","en":""}, "body": {"ko":"3~4문장","en":""}}, ... 3개 ],
   "bear":      [ {"title": {"ko":"","en":""}, "body": {"ko":"3~4문장","en":""}}, ... 3개 ],
   "risks":     [ {"cat": {"ko":"거시 리스크","en":"Macro"}, "body": {"ko":"3~4문장","en":""}}, ... 3개 ],
-  "verdict":   {"stance": {"ko":"긍정적/중립/신중","en":"Constructive/Neutral/Cautious"},
-                "body": {"ko":"종합의견 문단(5~7문장)", "en":"..."}},
+  "verdict":   {"body": {"ko":"종합의견 문단(5~7문장). 정보 제공용 정성 요약만. 투자의견(매수/중립/긍정 등)·등급·목표주가 표현 금지", "en":"..."}},
   "sources":   [ "https://...", ... ]
 }"""
 
