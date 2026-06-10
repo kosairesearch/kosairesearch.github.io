@@ -276,7 +276,8 @@ table.dt .pos{color:var(--up);font-weight:700}table.dt .neg{color:var(--down);fo
   .m{padding:10px 7px;overflow:hidden}
   .m .k{font-size:10.5px;white-space:nowrap}
   .m .val{font-size:15px;margin-top:3px}
-  .m .peer{font-size:9.5px;line-height:1.3;margin-top:3px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+  /* 현재가 아래 '시장·업종' 보조 글씨는 모바일에서 별도 '시장'·'업종' 칸과 중복이라 숨김 */
+  .m .peer{display:none}
 }
 @media (max-width:479px){.th-now{font-size:34px}}
 
