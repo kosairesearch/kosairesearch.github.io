@@ -574,7 +574,7 @@ try{
 
   const renderer=new THREE.WebGLRenderer({canvas,antialias:false,alpha:true,powerPreference:'high-performance'});
   renderer.toneMapping=THREE.ACESFilmicToneMapping;
-  renderer.toneMappingExposure=1.0;
+  renderer.toneMappingExposure=0.82;
   renderer.outputColorSpace=THREE.SRGBColorSpace;
   const scene=new THREE.Scene();
   const camera=new THREE.PerspectiveCamera(50,1,0.1,300);
@@ -614,7 +614,7 @@ try{
       if(d>0.5) discard;
       float core=pow(1.0-smoothstep(0.0,0.18,d),1.4);
       float halo=pow(1.0-smoothstep(0.0,0.5,d),2.8)*0.8;
-      gl_FragColor=vec4(vColor*(0.72+core*0.85),(core+halo)*vTw);
+      gl_FragColor=vec4(vColor*(0.66+core*0.75),(core+halo)*vTw*0.82);
     }`;
 
   /* 디스크 생성기 — 화면을 채우는 입자 리본 */
