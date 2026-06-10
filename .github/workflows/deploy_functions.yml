@@ -4,6 +4,9 @@ name: 🚀 Cloud Functions 배포
 on:
   workflow_dispatch:
 
+permissions:
+  contents: write
+
 jobs:
   deploy:
     runs-on: ubuntu-latest
@@ -37,4 +40,16 @@ jobs:
 
       - name: 함수 배포
         run: |
-          firebase deploy --only functions --project kosai-ae167 --non-interactive --force
+          set -o pipefail
+          firebase deploy --only functions --project kosai-ae167 --non-interactive --force 2>&1 | tee /tmp/deploy.log
+
+      - name: 배포 로그 저장(디버그)
+        if: always()
+        run: |
+          mkdir -p data
+          cp /tmp/deploy.log data/deploy_functions.log 2>/dev/null || echo "(no log)" > data/deploy_functions.log
+          git config user.email "bot@kosai.kr"
+          git config user.name "deploy-bot"
+          git add data/deploy_functions.log
+          git commit -m "🚀 함수 배포 로그" || echo "no change"
+          git push || echo "push failed"
