@@ -147,9 +147,17 @@ exports.socialLogin = onCall(
    발신 도메인(kosai.kr)은 Resend 콘솔에서 인증되어 있어야 합니다.
    ============================================================ */
 const SITE_URL = "https://kosai.kr";
+const ACTION_PAGE = SITE_URL + "/auth-action.html";  // 우리 디자인의 처리 페이지
 const MAIL_FROM = "KOSAI <hello@kosai.kr>";
 const FONT = "-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,'Apple SD Gothic Neo','Malgun Gothic',sans-serif";
 const ACTION_SETTINGS = { url: SITE_URL + "/Login.html", handleCodeInApp: false };
+
+// Firebase 기본 액션 링크(firebaseapp.com/__/auth/action?...)의 쿼리는 유지하고
+// 도착지만 우리 페이지로 바꿔, 메일 버튼이 우리 디자인 화면으로 가게 한다.
+function customActionLink(rawLink){
+  try{ const u = new URL(rawLink); const t = new URL(ACTION_PAGE); t.search = u.search; return t.toString(); }
+  catch(e){ return rawLink; }
+}
 
 function esc(s){ return String(s || "").replace(/[&<>"]/g, c => ({ "&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;" }[c])); }
 
@@ -216,7 +224,7 @@ exports.sendVerifyEmail = onCall(
     try{ user = await admin.auth().getUserByEmail(email); }
     catch(e){ return { ok: true }; }            // 없는 사용자 → 열거 방지
     if(user.emailVerified) return { ok: true };  // 이미 인증됨 → 미발송
-    const link = await admin.auth().generateEmailVerificationLink(email, ACTION_SETTINGS);
+    const link = customActionLink(await admin.auth().generateEmailVerificationLink(email, ACTION_SETTINGS));
     const resend = new Resend(RESEND_API_KEY.value());
     const { error } = await resend.emails.send({
       from: MAIL_FROM, to: email,
@@ -235,7 +243,7 @@ exports.sendResetEmail = onCall(
     const email = ((req.data && req.data.email) || "").trim().toLowerCase();
     if(!emailOk(email)) throw new HttpsError("invalid-argument", "유효한 이메일이 필요합니다.");
     let link;
-    try{ link = await admin.auth().generatePasswordResetLink(email, ACTION_SETTINGS); }
+    try{ link = customActionLink(await admin.auth().generatePasswordResetLink(email, ACTION_SETTINGS)); }
     catch(e){
       if(e.code === "auth/user-not-found" || e.code === "auth/email-not-found") return { ok: true };
       console.error("[sendResetEmail] link:", e);
