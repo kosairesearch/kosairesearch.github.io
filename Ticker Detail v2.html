@@ -131,7 +131,7 @@ body::before{content:"";position:fixed;inset:0;z-index:-1;pointer-events:none;
 .m{background:rgba(255,255,255,0.4);padding:14px 16px}
 :root[data-theme="dark"] .m{background:rgba(255,255,255,0.02)}
 .m .k{font:500 12px var(--font-sans);color:var(--fg-3)}
-.m .val{font:700 22px var(--font-sans);letter-spacing:-.02em;margin-top:5px;line-height:1.05}
+.m .val{font:700 22px var(--font-sans);letter-spacing:-.02em;margin-top:5px;line-height:1.05;white-space:nowrap}
 .m .peer{font:500 11.5px/1.35 var(--font-sans);color:var(--fg-3);margin-top:6px}
 .m .peer b{color:var(--fg-2);font-weight:600}
 .m .peer .d.up{color:var(--up);font-weight:700}.m .peer .d.down{color:var(--down);font-weight:700}
@@ -273,10 +273,10 @@ table.dt .pos{color:var(--up);font-weight:700}table.dt .neg{color:var(--down);fo
   .foot-grid{grid-template-columns:repeat(3,1fr);gap:16px}.foot-brand{grid-column:1/-1}.foot-bottom{flex-direction:column;gap:8px}
 }
 @media (max-width:767px){
-  .m{padding:10px 9px}
-  .m .k{font-size:10.5px}
+  .m{padding:10px 7px;overflow:hidden}
+  .m .k{font-size:10.5px;white-space:nowrap}
   .m .val{font-size:15px;margin-top:3px}
-  .m .peer{font-size:9.5px;line-height:1.3;margin-top:3px}
+  .m .peer{font-size:9.5px;line-height:1.3;margin-top:3px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
 }
 @media (max-width:479px){.th-now{font-size:34px}}
 
@@ -800,6 +800,16 @@ KOSi18n.register({
   var REPORTS=(window.KOS_REPORTS&&window.KOS_REPORTS.reports)||{};
   var RMETA=window.KOS_REPORTS||{};
   function qp(n){ return new URLSearchParams(location.search).get(n); }
+  /* 지표 값이 칸 너비를 넘으면 그 칸만 글자를 줄여 한 줄 유지(줄바꿈 방지) */
+  function fitMetricVals(){
+    document.querySelectorAll('#mgrid .val').forEach(function(el){
+      el.style.fontSize='';
+      var fs=parseFloat(getComputedStyle(el).fontSize), guard=0;
+      while(el.scrollWidth>el.clientWidth && fs>9 && guard++<40){ fs-=0.5; el.style.fontSize=fs+'px'; }
+    });
+  }
+  var _fitT; window.addEventListener('resize',function(){ clearTimeout(_fitT); _fitT=setTimeout(fitMetricVals,150); });
+  if(document.fonts && document.fonts.ready){ document.fonts.ready.then(function(){ fitMetricVals(); }); }
   var TK=qp('ticker');
   if(!TK){ var ks=Object.keys(REPORTS); TK=ks[0]||(LIVE[0]&&LIVE[0].ticker)||'005930'; }
   var STOCK=null,i; for(i=0;i<LIVE.length;i++){ if(LIVE[i].ticker===TK){ STOCK=LIVE[i]; break; } }
@@ -918,6 +928,7 @@ KOSi18n.register({
       [mk.sector, tname(STOCK.sector), '']
     ];
     document.getElementById('mgrid').innerHTML=metrics.map(function(m){return '<div class="m"><div class="k">'+esc(m[0])+'</div><div class="val">'+m[1]+'</div><div class="peer">'+esc(m[2])+'</div></div>';}).join('');
+    fitMetricVals();
 
     var rb=document.getElementById('reportBody');
     if(!REP){
