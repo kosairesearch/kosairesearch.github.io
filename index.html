@@ -733,7 +733,8 @@ try{
         float a=smoothstep(.05,.8,f)*0.8;
         gl_FragColor=vec4(col,a);
       }`,
-    transparent:true,blending:THREE.AdditiveBlending,depthWrite:false,side:THREE.DoubleSide}));
+    transparent:true,blending:THREE.AdditiveBlending,depthWrite:false,depthTest:false,side:THREE.FrontSide}));
+  fres.scale.setScalar(1.004);
   fres.renderOrder=2;
   prism.add(fres);
   /* 통과 스펙트럼 — 빛이 지나는 통로를 따라 유리 표면에 생기는 무지개(아주 연하게) */
@@ -748,28 +749,12 @@ try{
         float h=clamp(dot(vP,normalize(vec3(0.82,-0.5,0.28)))*0.34+0.5+0.06*sin(uTime*0.23),0.,1.);
         vec3 c1=vec3(.2,.35,1.),c2=vec3(.25,.85,1.),c3=vec3(.55,1.,.6),c4=vec3(1.,.85,.35),c5=vec3(1.,.4,.3);
         vec3 col = h<.25? mix(c1,c2,h/.25) : h<.5? mix(c2,c3,(h-.25)/.25) : h<.75? mix(c3,c4,(h-.5)/.25) : mix(c4,c5,(h-.75)/.25);
-        gl_FragColor=vec4(col, band*0.14);
+        gl_FragColor=vec4(col, band*0.22);
       }`,
-    transparent:true,blending:THREE.AdditiveBlending,depthWrite:false}));
+    transparent:true,blending:THREE.AdditiveBlending,depthWrite:false,depthTest:false}));
+  spect.scale.setScalar(1.004);
   spect.renderOrder=2;
   prism.add(spect);
-  /* 내부 모서리 — 굴절된 듯 살짝 어긋난 색수차 이중선 + 선을 따라 밝기 변주 */
-  function refrEdges(scale,color,opacity,rot){
-    const eg=new THREE.EdgesGeometry(geo,12);
-    const n=eg.attributes.position.count, cols=new Float32Array(n*3);
-    const c=new THREE.Color(color);
-    for(let i=0;i<n;i++){
-      const p=eg.attributes.position;
-      const w=0.45+0.55*Math.abs(Math.sin(p.getX(i)*3.1+p.getY(i)*2.3+p.getZ(i)*1.7)); // 위치 기반 불균일
-      cols[i*3]=c.r*w; cols[i*3+1]=c.g*w; cols[i*3+2]=c.b*w;
-    }
-    eg.setAttribute('color',new THREE.BufferAttribute(cols,3));
-    const l=new THREE.LineSegments(eg,new THREE.LineBasicMaterial({vertexColors:true,transparent:true,
-      opacity,blending:THREE.AdditiveBlending,depthWrite:false,depthTest:false}));
-    l.scale.setScalar(scale); l.rotation.set(rot[0],rot[1],rot[2]); l.renderOrder=1;
-    return l;
-  }
-  prism.add(refrEdges(0.992,'#bcd4ff',0.11,[0,0,0]));   // 내부 모서리(한 겹, 어긋남 없음)
 
   const group=new THREE.Group(); group.add(prism); scene.add(group);
 
