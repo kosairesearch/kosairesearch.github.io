@@ -460,9 +460,21 @@ body::after,body::before{display:none}
 .lp-h1{margin:0;font-size:clamp(36px,5vw,58px);font-weight:800;letter-spacing:-.04em;line-height:1.07;color:#fff;text-shadow:0 2px 22px rgba(0,0,0,.6)}
 .lp-sub{margin:20px 0 0;font:400 17px/1.7 var(--font-sans);color:rgba(255,255,255,.66);max-width:450px;text-wrap:pretty}
 .lp-cta{display:flex;gap:10px;margin-top:30px;flex-wrap:wrap}
-.lp-btn{padding:15px 26px;font-size:15px;text-decoration:none}
+.lp-btn{position:relative;overflow:hidden;padding:15px 26px;font-size:15px;text-decoration:none;
+  transition:box-shadow .4s cubic-bezier(.22,.61,.36,1),transform .25s cubic-bezier(.22,.61,.36,1),background .25s,border-color .25s,filter .25s}
+/* 시작하기(화이트) — 호버 시 빛 무리 + 리프트 + 셔머 스윕 */
+.lp-cta .btn-primary{box-shadow:0 0 0 0 rgba(255,255,255,0)}
+.lp-cta .btn-primary:hover{transform:translateY(-1px);
+  box-shadow:0 2px 22px rgba(255,255,255,.34),0 6px 60px rgba(150,185,255,.28),0 0 0 1px rgba(255,255,255,.25)}
+.lp-cta .btn-primary::after{content:"";position:absolute;top:0;left:-90%;width:55%;height:100%;
+  background:linear-gradient(100deg,transparent 18%,rgba(173,200,255,.5) 50%,transparent 82%);
+  transform:skewX(-18deg);opacity:0;pointer-events:none;transition:none}
+.lp-cta .btn-primary:hover::after{opacity:1;left:130%;transition:left .6s cubic-bezier(.22,.61,.36,1),opacity .15s}
+/* 리포트 둘러보기(글래스) — 호버 시 점등 */
 .lp-btn-soft{background:rgba(255,255,255,.07);color:#fff;border:1px solid rgba(255,255,255,.16);-webkit-backdrop-filter:blur(8px);backdrop-filter:blur(8px)}
-.lp-btn-soft:hover{background:rgba(255,255,255,.12)}
+.lp-btn-soft:hover{background:rgba(255,255,255,.13);border-color:rgba(255,255,255,.34);transform:translateY(-1px);
+  box-shadow:0 2px 18px rgba(255,255,255,.10),0 4px 40px rgba(150,185,255,.12)}
+.lp-btn:focus-visible{outline:2px solid rgba(173,200,255,.7);outline-offset:2px}
 .lp-stats{display:flex;gap:36px;margin-top:42px;flex-wrap:wrap}
 .lp-stat b{display:block;font:800 22px/1 var(--font-sans);letter-spacing:-.02em;color:#fff}
 .lp-stat span{display:block;margin-top:6px;font:500 12.5px var(--font-sans);color:rgba(255,255,255,.45)}
