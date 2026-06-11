@@ -443,15 +443,15 @@ KOSi18n.register({
 <style>
 /* landing — Resend풍 다크 스튜디오 (이 페이지는 항상 다크) */
 #themeBtn{display:none}
-.lp-bg{position:absolute;top:0;left:0;right:0;height:100vh;z-index:-3;background:
+.lp-bg{position:absolute;top:0;left:0;right:0;height:100vh;z-index:-3;-webkit-mask-image:linear-gradient(180deg,#000 78%,transparent 100%);mask-image:linear-gradient(180deg,#000 78%,transparent 100%);background:
   radial-gradient(ellipse 85% 65% at 62% 40%, #0c1424 0%, #060a14 55%, #02030a 100%)}
 .lp-bg canvas{position:absolute;inset:0;width:100%;height:100%;display:block}
-.lp-vignette{position:absolute;top:0;left:0;right:0;height:100vh;z-index:-2;pointer-events:none;background:
+.lp-vignette{position:absolute;top:0;left:0;right:0;height:100vh;z-index:-2;-webkit-mask-image:linear-gradient(180deg,#000 75%,transparent 100%);mask-image:linear-gradient(180deg,#000 75%,transparent 100%);pointer-events:none;background:
   radial-gradient(ellipse 120% 95% at 50% 45%, transparent 58%, rgba(2,3,8,.55) 100%),
   linear-gradient(102deg, rgba(3,4,9,.5) 0%, rgba(3,4,9,.18) 36%, transparent 58%)}
 .lp-grain{position:fixed;inset:0;z-index:-1;pointer-events:none;opacity:.08;
   background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='160' height='160'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='2'/%3E%3C/filter%3E%3Crect width='160' height='160' filter='url(%23n)' opacity='.6'/%3E%3C/svg%3E")}
-body{background:#05060d;position:relative}
+body{background:#030409;position:relative}
 body::after,body::before{display:none}
 
 .lp-hero{display:grid;grid-template-columns:1.04fr 1fr;align-items:center;gap:18px;min-height:calc(100vh - 190px);padding:14px 0 40px}
@@ -826,8 +826,8 @@ try{
   }
   /* 배치 — 고정 좌표(마우스·스크롤 영향 없음). 데스크톱=오른쪽, 모바일=상단 중앙 */
   function place(){
-    if(mobile){ group.position.set(0,1.95,0); group.scale.setScalar(0.66); }
-    else{ group.position.set(2.6,0.15,0); group.scale.setScalar(0.94); }
+    if(mobile){ group.position.set(0,1.95,0); group.scale.setScalar(0.5); }
+    else{ group.position.set(2.15,0.15,0); group.scale.setScalar(0.78); }
   }
   resize(); addEventListener('resize',resize); setTimeout(resize,900);
 
