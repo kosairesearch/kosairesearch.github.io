@@ -1,3 +1,49 @@
-=== 배치(auto) 시작 Thu Jun 11 07:29:09 UTC 2026 ===
-## 🤖 Batch 제출 — 대상 0개 / 상위 100개 (최근 2200개 건너뜀) · 모델 claude-sonnet-4-6
-- 갱신할 종목이 없습니다(모두 최근). 종료.
+=== 공시 트리거 생성(batch) Thu Jun 11 15:01:45 UTC 2026 · 대상 001720,092440,434480,067010 ===
+## 🤖 Batch 제출 — 대상 4개 / 상위 100개 (최근 2200개 건너뜀) · 모델 claude-sonnet-4-6
+{'status': '013', 'message': '조회된 데이타가 없습니다.'}
+
+{'status': '013', 'message': '조회된 데이타가 없습니다.'}
+
+{'status': '013', 'message': '조회된 데이타가 없습니다.'}
+
+  · 준비 001720 신영증권 (DART O)
+{'status': '013', 'message': '조회된 데이타가 없습니다.'}
+
+{'status': '013', 'message': '조회된 데이타가 없습니다.'}
+
+{'status': '013', 'message': '조회된 데이타가 없습니다.'}
+
+  · 준비 092440 기신정기 (DART O)
+{'status': '013', 'message': '조회된 데이타가 없습니다.'}
+
+{'status': '013', 'message': '조회된 데이타가 없습니다.'}
+
+  · 준비 434480 모니터랩 (DART O)
+{'status': '013', 'message': '조회된 데이타가 없습니다.'}
+
+{'status': '013', 'message': '조회된 데이타가 없습니다.'}
+
+{'status': '013', 'message': '조회된 데이타가 없습니다.'}
+
+  · 준비 067010 이씨에스 (DART O)
+- ✅ 배치 제출 완료: msgbatch_015XXyemeweXnhvd3aENq66v (4건) → data/batch_state.json
+  · 상태 in_progress · 처리 4/성공 0/오류 0
+  · 상태 in_progress · 처리 4/성공 0/오류 0
+  · 상태 in_progress · 처리 4/성공 0/오류 0
+  · 상태 in_progress · 처리 4/성공 0/오류 0
+  · 상태 in_progress · 처리 4/성공 0/오류 0
+  · 상태 in_progress · 처리 4/성공 0/오류 0
+  · 상태 in_progress · 처리 4/성공 0/오류 0
+  · 상태 in_progress · 처리 4/성공 0/오류 0
+  · 상태 in_progress · 처리 4/성공 0/오류 0
+  · 상태 in_progress · 처리 4/성공 0/오류 0
+  · 상태 in_progress · 처리 4/성공 0/오류 0
+  · 상태 in_progress · 처리 4/성공 0/오류 0
+  · 상태 in_progress · 처리 4/성공 0/오류 0
+  · 상태 in_progress · 처리 4/성공 0/오류 0
+  · 상태 in_progress · 처리 4/성공 0/오류 0
+  · 상태 in_progress · 처리 4/성공 0/오류 0
+  · 상태 in_progress · 처리 4/성공 0/오류 0
+  · 상태 ended · 처리 0/성공 4/오류 0
+
+✅ 회수 완료 · 성공 4/실패 0 · 총 보유 2688개 → data/reports/ + reports-index.js
