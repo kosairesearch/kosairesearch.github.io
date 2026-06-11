@@ -444,7 +444,7 @@ KOSi18n.register({
 /* landing — Resend풍 다크 스튜디오 (이 페이지는 항상 다크) */
 #themeBtn{display:none}
 .lp-bg{position:fixed;inset:0;z-index:-3;background:
-  radial-gradient(ellipse 80% 60% at 64% 42%, #0b0e18 0%, #06070d 55%, #040409 100%)}
+  radial-gradient(ellipse 85% 65% at 62% 40%, #0c1424 0%, #060a14 55%, #02030a 100%)}
 .lp-bg canvas{position:absolute;inset:0;width:100%;height:100%;display:block}
 .lp-vignette{position:fixed;inset:0;z-index:-2;pointer-events:none;background:
   radial-gradient(ellipse 120% 95% at 50% 45%, transparent 58%, rgba(2,3,8,.55) 100%),
@@ -597,9 +597,9 @@ try{
   const reduced=matchMedia('(prefers-reduced-motion: reduce)').matches;
 
   const renderer=new THREE.WebGLRenderer({canvas,antialias:true,alpha:false,powerPreference:'high-performance'});
-  renderer.setClearColor('#05060c',1);
+  renderer.setClearColor('#03040a',1);
   renderer.toneMapping=THREE.ACESFilmicToneMapping;
-  renderer.toneMappingExposure=1.3;
+  renderer.toneMappingExposure=1.22;
   renderer.outputColorSpace=THREE.SRGBColorSpace;
 
   const scene=new THREE.Scene();
@@ -614,12 +614,12 @@ try{
     };
     box(14,7,'#ffffff',9, 0,9,0, 0,Math.PI/2);     // 톱 소프트박스
     box(4,12,'#bcd2ff',5, -10,0,2, Math.PI/2.3);   // 쿨 사이드
-    box(3,10,'#ffe2bd',3, 10,1,-1, -Math.PI/2.5);  // 웜 사이드
+    box(3,10,'#dde8ff',2, 10,1,-1, -Math.PI/2.5);  // 쿨 사이드2
     box(16,1.1,'#ffffff',7, 0,-1,-10);             // 후면 스트릭
     box(12,5,'#9fb8e8',2.2, 0,-8,2, 0,-Math.PI/2);  // 바닥 바운스
     box(5,9,'#dfe9ff',3.5, 7,3,6, Math.PI/1.6);     // 프런트 키 패널
     box(6,3,'#ffffff',5, -5,6,5, Math.PI/3, -0.5);  // 어퍼 글랜스
-    scene.environment=new THREE.PMREMGenerator(renderer).fromScene(env,0.05).texture;
+    scene.environment=new THREE.PMREMGenerator(renderer).fromScene(env,0.14).texture;
   }
   const camera=new THREE.PerspectiveCamera(35,1,0.1,100);
   camera.position.set(0,0,9.5);
@@ -633,45 +633,42 @@ try{
     const t=new THREE.CanvasTexture(c);t.colorSpace=THREE.SRGBColorSpace;return t;
   }
   const back=new THREE.Mesh(new THREE.PlaneGeometry(90,90),
-    new THREE.MeshBasicMaterial({map:radialTex([[0,'#2c3c66'],[0.42,'#101830'],[1,'#04050a']])}));
+    new THREE.MeshBasicMaterial({map:radialTex([[0,'#13203a'],[0.45,'#081020'],[1,'#02030a']])}));
   back.position.z=-30;scene.add(back);
-  const oval=new THREE.Mesh(new THREE.PlaneGeometry(13,9),
-    new THREE.MeshBasicMaterial({map:radialTex([[0,'#41598f'],[0.45,'#1a2542'],[1,'#0a0f1e']],1024)}));
-  oval.position.z=-9; scene.add(oval);
 
 
   /* 라이팅 — 키 + 쿨 림 + 웜 필 */
   const key=new THREE.DirectionalLight(0xffffff,2.0);key.position.set(4,6,7);scene.add(key);
   const rim=new THREE.PointLight(0x9fc4ff,90,0,2);rim.position.set(-6,3,-4);scene.add(rim);
-  const fill=new THREE.PointLight(0xffd9b0,12,0,2);fill.position.set(3,-4,5);scene.add(fill);
+  const fill=new THREE.PointLight(0xbcd2ff,8,0,2);fill.position.set(3,-4,5);scene.add(fill);
 
   /* 프리즘 — 정사면체(모든 면 삼각형, 모서리 샤프) */
   const geo=new THREE.TetrahedronGeometry(1.85,0);
   const glass=new THREE.MeshPhysicalMaterial({
-    color:0xffffff, metalness:0, roughness:0.05, flatShading:true,
-    transmission:1, thickness:1.5, ior:1.52, dispersion:0.45,   // 빛 분산(무지개 가장자리)
-    clearcoat:1, clearcoatRoughness:0.06,
-    iridescence:0.25, iridescenceIOR:1.3,                       // 미세한 무지갯빛 코팅
+    color:0xffffff, metalness:0, roughness:0.02, flatShading:true,
+    transmission:1, thickness:1.2, ior:1.55, dispersion:0.62,   // 빛 분산(무지개 가장자리)
+    clearcoat:1, clearcoatRoughness:0.03,
+    iridescence:0.14, iridescenceIOR:1.3,                       // 미세한 무지갯빛 코팅
     attenuationColor:new THREE.Color('#f0f5ff'), attenuationDistance:22,
-    envMapIntensity:2.5, specularIntensity:1
+    envMapIntensity:1.5, specularIntensity:1
   });
   const prism=new THREE.Mesh(geo,glass);
   const edges=new THREE.LineSegments(new THREE.EdgesGeometry(geo),
-    new THREE.LineBasicMaterial({color:0xeaf2ff,transparent:true,opacity:0.6}));
+    new THREE.LineBasicMaterial({color:0xeaf2ff,transparent:true,opacity:0.42}));
   prism.add(edges);
   /* 프레넬 림 — 스치는 각도에서 유리가 빛을 머금는 효과(투명함 유지) */
   const fres=new THREE.Mesh(geo,new THREE.ShaderMaterial({
-    uniforms:{c:{value:new THREE.Color('#aac8ff')}},
+    uniforms:{c:{value:new THREE.Color('#cfe2ff')}},
     vertexShader:'varying vec3 vN,vV;void main(){vN=normalize(normalMatrix*normal);vec4 mv=modelViewMatrix*vec4(position,1.);vV=normalize(-mv.xyz);gl_Position=projectionMatrix*mv;}',
-    fragmentShader:'uniform vec3 c;varying vec3 vN,vV;void main(){float f=pow(1.-abs(dot(normalize(vN),normalize(vV))),2.2);gl_FragColor=vec4(c,f*0.5);}',
+    fragmentShader:'uniform vec3 c;varying vec3 vN,vV;void main(){float f=pow(1.-abs(dot(normalize(vN),normalize(vV))),3.0);gl_FragColor=vec4(c,f*0.34);}',
     transparent:true,blending:THREE.AdditiveBlending,depthWrite:false}));
   prism.add(fres);
   const group=new THREE.Group(); group.add(prism); scene.add(group);
 
   /* 뒤 글로우 — 실루엣을 띄우는 은은한 후광 */
   const glow=new THREE.Sprite(new THREE.SpriteMaterial({map:radialTex([[0,'rgba(150,180,255,0.55)'],[1,'rgba(150,180,255,0)']],256),
-    transparent:true,opacity:0.2,blending:THREE.AdditiveBlending,depthWrite:false}));
-  glow.scale.setScalar(6.5);glow.position.z=-4;group.add(glow);
+    transparent:true,opacity:0.13,blending:THREE.AdditiveBlending,depthWrite:false}));
+  glow.scale.setScalar(6);glow.position.z=-4;group.add(glow);
 
   /* 스테이지 위치 → 월드 좌표 (반응형: 프리즘이 항상 스테이지 중앙에) */
   function layout(){
@@ -684,7 +681,6 @@ try{
     const dir=new THREE.Vector3(ndc.x,ndc.y,0.5).unproject(camera).sub(camera.position).normalize();
     const t=-camera.position.z/dir.z;
     group.position.copy(camera.position).addScaledVector(dir,t);
-    oval.position.x=group.position.x*1.35; oval.position.y=group.position.y*1.35;
     const s=Math.max(0.42,Math.min(0.9,Math.min(r.width,r.height)/560));
     group.scale.setScalar(s);
   }
@@ -709,10 +705,11 @@ try{
     const t=reduced?14:clock.getElapsedTime();
     if(!dragging){ offY+=vy; offX+=vx; vy*=0.94; vx*=0.94; }
     /* 무중력 텀블 — 두 축이 서로 다른 주기로 천천히 */
-    group.rotation.y=0.72+t*0.15+offY;
+    group.rotation.y=0.72+t*0.11+offY;
     group.rotation.x=0.34+Math.sin(t*0.23)*0.2+offX;
     group.rotation.z=Math.sin(t*0.131)*0.1;
-    prism.position.y=reduced?0:Math.sin(t*0.7)*0.09;          // 부유
+    prism.position.y=reduced?0:Math.sin(t*0.7)*0.09;
+    glow.material.opacity=0.10+Math.sin(t*0.5)*0.04;          // 부유
     if(!reduced){ cmx+=(pmx-cmx)*0.04; cmy+=(pmy-cmy)*0.04;
       camera.position.x=cmx*0.45; camera.position.y=-cmy*0.3; }
     renderer.render(scene,camera);
