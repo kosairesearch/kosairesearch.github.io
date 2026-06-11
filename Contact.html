@@ -456,8 +456,8 @@ KOSi18n.register({
         </div>
       </div>
       <div class="field">
-        <label for="f-name">이름</label>
-        <input id="f-name" type="text" data-i18n-ph placeholder="성함을 입력해 주세요" required />
+        <label for="f-name">이름 <span class="opt">(선택)</span></label>
+        <input id="f-name" type="text" data-i18n-ph placeholder="성함을 입력해 주세요" />
       </div>
       <div class="field">
         <label for="f-email">이메일</label>
@@ -481,8 +481,7 @@ KOSi18n.register({
     </div>
 
     <div class="direct">
-      <a class="glass" href="mailto:hello@kos-ai.example"><span class="k">일반 문의</span><span class="v">hello@kos-ai.example</span></a>
-      <a class="glass" href="mailto:bugs@kos-ai.example"><span class="k">데이터 오류 제보</span><span class="v">bugs@kos-ai.example</span></a>
+      <a class="glass" href="mailto:hello@kosai.kr"><span class="k">직접 메일 보내기</span><span class="v">hello@kosai.kr</span></a>
     </div>
   </div>
 </main>
@@ -513,12 +512,14 @@ document.getElementById('form').addEventListener('submit',async e=>{
   e.preventDefault();
   const name=document.getElementById('f-name'), email=document.getElementById('f-email'), msg=document.getElementById('f-msg');
   let bad=null;
-  if(!name.value.trim()){ fldErr(name,_t('이름을 입력해 주세요.')); bad=bad||name; } else fldClear(name);
   const ev=email.value.trim();
   if(!ev){ fldErr(email,_t('이메일을 입력해 주세요.')); bad=bad||email; }
   else if(!/^[^@\s]+@[^@\s]+\.[^@\s]+$/.test(ev)){ fldErr(email,_t('올바른 이메일 형식이 아니에요.')); bad=bad||email; }
   else fldClear(email);
-  if(!msg.value.trim()){ fldErr(msg,_t('문의 내용을 입력해 주세요.')); bad=bad||msg; } else fldClear(msg);
+  const mv=msg.value.trim();
+  if(!mv){ fldErr(msg,_t('문의 내용을 입력해 주세요.')); bad=bad||msg; }
+  else if(mv.length<5){ fldErr(msg,_t('내용을 조금 더 자세히 입력해 주세요.')); bad=bad||msg; }
+  else fldClear(msg);
   if(bad){ bad.focus(); return; }
   const btn=document.querySelector('#form button[type="submit"]'); if(btn) btn.disabled=true;
   const cat=(catSeg.querySelector('.active')||{}).dataset;
@@ -552,6 +553,7 @@ if(window.KOSi18n) KOSi18n.register({
   "이름":"Name","이메일":"Email","문의 내용":"Message","문의 보내기":"Send inquiry",
   "이름을 입력해 주세요.":"Please enter your name.","이메일을 입력해 주세요.":"Please enter your email.","올바른 이메일 형식이 아니에요.":"That doesn't look like a valid email.","문의 내용을 입력해 주세요.":"Please enter your message.",
   "전송에 실패했어요. 잠시 후 다시 시도하거나 hello@kosai.kr로 보내주세요.":"Couldn't send. Please try again later or email hello@kosai.kr.",
+  "내용을 조금 더 자세히 입력해 주세요.":"Please add a bit more detail.","(선택)":"(optional)","직접 메일 보내기":"Email us directly",
   "성함을 입력해 주세요":"Your full name",
   "답변받으실 이메일 주소":"Email address for our reply",
   "문의하실 내용을 자세히 적어주세요. 데이터 오류 제보의 경우 해당 페이지 주소를 함께 남겨주시면 빠르게 확인할 수 있습니다.":"Tell us in detail. For data error reports, include the URL of the page so we can investigate quickly.",

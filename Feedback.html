@@ -554,7 +554,10 @@ document.getElementById('form').addEventListener('submit',async e=>{
   if(!rated)return;
   const msg=document.getElementById('f-msg'), email=document.getElementById('f-email');
   let bad=null;
-  if(!msg.value.trim()){ fldErr(msg,_t('내용을 입력해 주세요.')); bad=bad||msg; } else fldClear(msg);
+  const mv=msg.value.trim();
+  if(!mv){ fldErr(msg,_t('내용을 입력해 주세요.')); bad=bad||msg; }
+  else if(mv.length<5){ fldErr(msg,_t('내용을 조금 더 자세히 입력해 주세요.')); bad=bad||msg; }
+  else fldClear(msg);
   const ev=email.value.trim();
   if(ev && !/^[^@\s]+@[^@\s]+\.[^@\s]+$/.test(ev)){ fldErr(email,_t('올바른 이메일 형식이 아니에요.')); bad=bad||email; } else fldClear(email);
   if(bad){ bad.focus(); return; }
@@ -595,6 +598,7 @@ if(window.KOSi18n) KOSi18n.register({
   "내용":"Message",
   "내용을 입력해 주세요.":"Please enter your message.","올바른 이메일 형식이 아니에요.":"That doesn't look like a valid email.",
   "전송에 실패했어요. 잠시 후 다시 시도하거나 hello@kosai.kr로 보내주세요.":"Couldn't send. Please try again later or email hello@kosai.kr.",
+  "내용을 조금 더 자세히 입력해 주세요.":"Please add a bit more detail.",
   "이메일":"Email","(선택 · 답변이 필요한 경우)":"(optional · if a reply is needed)",
   "어떤 점이 좋았는지, 무엇이 불편했는지, 어떤 기능이 있으면 좋겠는지 자유롭게 적어주세요.":"Tell us what you liked, what felt awkward, or what feature you'd love to see. Anything goes.",
   "답변받으실 이메일 주소":"Email address for our reply",
