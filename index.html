@@ -659,12 +659,12 @@ try{
   const bumpT=microTex(256,128,46,520);
   const roughT=microTex(256,150,80,90);
   const glass=new THREE.MeshPhysicalMaterial({
-    color:0xffffff, metalness:0, roughness:0.12, roughnessMap:roughT, bumpMap:bumpT, bumpScale:0.45, flatShading:true,
+    color:0xffffff, metalness:0, roughness:0.07, roughnessMap:roughT, bumpMap:bumpT, bumpScale:0.22, flatShading:true,
     transmission:1, thickness:1.2, ior:1.55, dispersion:0.62,   // 빛 분산(무지개 가장자리)
     clearcoat:1, clearcoatRoughness:0.03,
     iridescence:0.14, iridescenceIOR:1.3,                       // 미세한 무지갯빛 코팅
     attenuationColor:new THREE.Color('#f0f5ff'), attenuationDistance:22,
-    envMapIntensity:1.9, specularIntensity:1
+    envMapIntensity:1.7, specularIntensity:1
   });
   const prism=new THREE.Mesh(geo,glass);
   const edges=new THREE.LineSegments(new THREE.EdgesGeometry(geo),
@@ -683,6 +683,41 @@ try{
   const glow=new THREE.Sprite(new THREE.SpriteMaterial({map:radialTex([[0,'rgba(150,180,255,0.55)'],[1,'rgba(150,180,255,0)']],256),
     transparent:true,opacity:0.13,blending:THREE.AdditiveBlending,depthWrite:false}));
   glow.scale.setScalar(6);glow.position.z=-4;group.add(glow);
+
+  /* 빛 연출 — 프리즘으로 들어가는 광선과 퍼져나가는 스펙트럼 */
+  function beamTex(w,h,colorFn,alphaY){
+    const c=document.createElement('canvas');c.width=w;c.height=h;
+    const x=c.getContext('2d');const img=x.createImageData(w,h);
+    for(let j=0;j<h;j++)for(let i=0;i<w;i++){
+      const u=i/(w-1), v=j/(h-1);
+      const ax=Math.pow(Math.sin(Math.PI*u),1.6);          // 가로 소프트 폴오프
+      const ay=alphaY?alphaY(v):Math.pow(Math.sin(Math.PI*v),1.2);
+      const [r,g,b]=colorFn(u,v);
+      const k=(j*w+i)*4; img.data[k]=r;img.data[k+1]=g;img.data[k+2]=b;
+      img.data[k+3]=Math.min(255,Math.max(0,ax*ay*255));
+    }
+    x.putImageData(img,0,0);
+    const t=new THREE.CanvasTexture(c);t.colorSpace=THREE.SRGBColorSpace;return t;
+  }
+  const fx=new THREE.Group(); scene.add(fx);
+  /* 입사 광선(위-왼쪽에서) */
+  const beam=new THREE.Mesh(new THREE.PlaneGeometry(0.85,7.5),
+    new THREE.MeshBasicMaterial({map:beamTex(64,256,()=> [226,236,255],v=>Math.pow(v,1.3)*Math.min(1,(1-v)*6)),transparent:true,opacity:0.16,
+      blending:THREE.AdditiveBlending,depthWrite:false}));
+  beam.position.set(-1.9,2.5,-0.4); beam.rotation.z=0.62; fx.add(beam);
+  /* 출사 스펙트럼 팬(아래-오른쪽으로) */
+  const SPEC=[[255,90,90],[255,170,70],[255,235,110],[120,230,140],[90,170,255],[150,110,255]];
+  const fan=new THREE.Mesh(new THREE.PlaneGeometry(3.0,4.6),
+    new THREE.MeshBasicMaterial({map:beamTex(256,256,(u,v)=>{
+      const p=u*(SPEC.length-1), i0=Math.min(SPEC.length-2,p|0), f=p-i0;
+      const a=SPEC[i0], b=SPEC[i0+1];
+      return [a[0]+(b[0]-a[0])*f, a[1]+(b[1]-a[1])*f, a[2]+(b[2]-a[2])*f];
+    },v=>Math.pow(1-v,1.5)*Math.min(1,v*6)),transparent:true,opacity:0.5,blending:THREE.AdditiveBlending,depthWrite:false}));
+  fan.position.set(1.7,-2.1,-0.5); fan.rotation.z=0.5; fx.add(fan);
+  /* 입사점 글린트 */
+  const glint=new THREE.Sprite(new THREE.SpriteMaterial({map:radialTex([[0,'rgba(255,255,255,.95)'],[0.3,'rgba(220,235,255,.4)'],[1,'rgba(220,235,255,0)']],128),
+    transparent:true,opacity:0.5,blending:THREE.AdditiveBlending,depthWrite:false}));
+  glint.scale.setScalar(0.9); glint.position.set(-0.55,0.72,0.4); fx.add(glint);
 
   /* 미세 먼지 — 프리즘 주변을 아주 천천히 떠다님 */
   const DN=70, dpos=new Float32Array(DN*3);
@@ -703,6 +738,7 @@ try{
     const t=-camera.position.z/dir.z;
     group.position.copy(camera.position).addScaledVector(dir,t);
     dust.position.set(group.position.x,group.position.y,0.5);
+    fx.position.copy(group.position); fx.scale.setScalar(group.scale.x);
     const s=Math.max(0.42,Math.min(0.9,Math.min(r.width,r.height)/560));
     group.scale.setScalar(s);
   }
@@ -732,7 +768,10 @@ try{
     group.rotation.z=Math.sin(t*0.131)*0.1;
     prism.position.y=reduced?0:Math.sin(t*0.7)*0.09;
     glow.material.opacity=0.10+Math.sin(t*0.5)*0.04;
-    dust.rotation.y=t*0.02; dust.rotation.z=t*0.008;          // 부유
+    dust.rotation.y=t*0.02; dust.rotation.z=t*0.008;
+    beam.material.opacity=0.30+Math.sin(t*0.45)*0.07;
+    fan.material.opacity=0.44+Math.sin(t*0.45+1.2)*0.08;
+    glint.material.opacity=0.4+Math.sin(t*1.1)*0.15;          // 부유
     if(!reduced){ cmx+=(pmx-cmx)*0.04; cmy+=(pmy-cmy)*0.04;
       camera.position.x=cmx*0.45; camera.position.y=-cmy*0.3; }
     renderer.render(scene,camera);
