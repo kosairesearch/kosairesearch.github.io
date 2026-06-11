@@ -23,6 +23,11 @@ on:
         default: 'no'
         options: ['no', 'yes']
 
+# 데이터 쓰기 워크플로 동시 실행 금지(커밋 레이스로 결과 유실 방지)
+concurrency:
+  group: kos-data
+  cancel-in-progress: false
+
 jobs:
   batch:
     runs-on: ubuntu-latest
@@ -70,7 +75,10 @@ jobs:
           git config --global user.name "KOS ai Bot"
           git add -A data/
           git commit --allow-empty -m "🤖📦 AI 리포트 배치 ${{ inputs.mode }} $(TZ='Asia/Seoul' date +'%Y-%m-%d %H:%M KST')"
+          ok=0
           for i in 1 2 3 4 5; do
-            git pull --rebase origin main && git push origin main && break
-            echo "push 재시도 $i..."; sleep $((i*3))
+            git pull --rebase origin main && git push origin main && { ok=1; break; }
+            git rebase --abort 2>/dev/null || true
+            echo "push 재시도 $i..."; sleep $((i*5))
           done
+          if [ "$ok" != "1" ]; then echo "::error::결과 푸시 실패 — 배치 결과 유실 방지를 위해 잡을 실패 처리"; exit 1; fi

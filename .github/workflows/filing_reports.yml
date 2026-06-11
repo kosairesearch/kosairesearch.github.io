@@ -6,6 +6,11 @@ on:
     - cron: '0 1 * * 2-6'    # 평일 10:00 KST — 전일 공시 + 백로그 추가 소진
   workflow_dispatch:
 
+# 데이터 쓰기 워크플로 동시 실행 금지(커밋 레이스로 결과 유실 방지)
+concurrency:
+  group: kos-data
+  cancel-in-progress: false
+
 jobs:
   trigger:
     runs-on: ubuntu-latest
