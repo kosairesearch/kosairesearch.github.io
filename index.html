@@ -646,11 +646,15 @@ try{
   /* 프리즘 — 챔퍼드 정사면체: 모서리를 칼로 깎은 좁은 면 + 살짝 뭉툭한 꼭짓점(실물 유리 가공) */
   function chamferedTetra(R,inset){
     const k=R/Math.sqrt(3);
-    const V=[[1,1,1],[-1,-1,1],[-1,1,-1],[1,-1,-1]].map(v=>new THREE.Vector3(v[0]*k,v[1]*k,v[2]*k));
+    /* 수공 연마처럼 미세하게 비뚠 꼭짓점 */
+    const J=[[0.022,-0.013,0.017],[-0.015,0.024,-0.011],[0.019,0.008,-0.021],[-0.012,-0.019,0.014]];
+    const V=[[1,1,1],[-1,-1,1],[-1,1,-1],[1,-1,-1]].map((v,i)=>new THREE.Vector3(
+      (v[0]+J[i][0])*k,(v[1]+J[i][1])*k,(v[2]+J[i][2])*k));
     const F=[[0,1,2],[0,3,1],[0,2,3],[1,3,2]];
-    const Q=F.map(f=>{
+    const INS=[0.928,0.902,0.918,0.892];          // 면마다 다른 깎임 폭
+    const Q=F.map((f,fi)=>{
       const c=new THREE.Vector3().add(V[f[0]]).add(V[f[1]]).add(V[f[2]]).multiplyScalar(1/3);
-      return f.map(vi=>c.clone().add(V[vi].clone().sub(c).multiplyScalar(inset)));
+      return f.map(vi=>c.clone().add(V[vi].clone().sub(c).multiplyScalar(INS[fi])));
     });
     const pos=[];
     const tri=(a,b,c)=>{                                   // 볼록체: 노멀이 바깥이 아니면 뒤집기
@@ -678,7 +682,7 @@ try{
     g.computeVertexNormals();
     return g;
   }
-  const geo=chamferedTetra(1.85,0.915);
+  const geo=chamferedTetra(1.85);
   /* 마이크로 질감 — 미세 요철과 광택 불균일(진짜 유리의 불완전함) */
   function microTex(sz,base,amp,blobs){
     const c=document.createElement('canvas');c.width=c.height=sz;
@@ -816,16 +820,17 @@ try{
     const t=reduced?14:clock.getElapsedTime();
     if(!dragging){ offY+=vy; offX+=vx; vy*=0.94; vx*=0.94; }
     /* 무중력 텀블 — 두 축이 서로 다른 주기로 천천히 */
-    group.rotation.y=0.72+t*0.11+offY;
-    group.rotation.x=0.34+Math.sin(t*0.23)*0.2+offX;
-    group.rotation.z=Math.sin(t*0.131)*0.1;
-    prism.position.y=reduced?0:Math.sin(t*0.7)*0.09;
+    group.rotation.y=0.72+t*0.105+offY+Math.sin(t*0.083+2.1)*0.06;
+    group.rotation.x=0.34+Math.sin(t*0.23)*0.17+Math.sin(t*0.107+1.7)*0.07+Math.sin(t*0.0531+0.5)*0.035+offX;
+    group.rotation.z=Math.sin(t*0.131)*0.08+Math.sin(t*0.0713+0.9)*0.04;
+    prism.position.y=reduced?0:Math.sin(t*0.7)*0.06+Math.sin(t*0.413+1.1)*0.04;
+    prism.position.x=reduced?0:Math.sin(t*0.157+0.6)*0.05;
     glow.material.opacity=0.10+Math.sin(t*0.5)*0.04;
     fres.material.uniforms.uTime.value=t;
     dust.rotation.y=t*0.02; dust.rotation.z=t*0.008;
-    beam.material.opacity=0.30+Math.sin(t*0.45)*0.07;
-    fan.material.opacity=0.44+Math.sin(t*0.45+1.2)*0.08;
-    glint.material.opacity=0.4+Math.sin(t*1.1)*0.15;          // 부유
+    beam.material.opacity=0.30+Math.sin(t*0.45)*0.05+Math.sin(t*0.171+0.8)*0.03;
+    fan.material.opacity=0.44+Math.sin(t*0.45+1.2)*0.05+Math.sin(t*0.203+0.3)*0.04;
+    glint.material.opacity=0.4+Math.sin(t*1.1)*0.10+Math.sin(t*0.437+1.9)*0.07;          // 부유
     if(!reduced){ cmx+=(pmx-cmx)*0.04; cmy+=(pmy-cmy)*0.04;
       camera.position.x=cmx*0.45; camera.position.y=-cmy*0.3; }
     renderer.render(scene,camera);
