@@ -609,8 +609,8 @@ try{
   const reduced=matchMedia('(prefers-reduced-motion: reduce)').matches;
   const mobile=matchMedia('(max-width: 920px)').matches;
 
-  const renderer=new THREE.WebGLRenderer({canvas,antialias:true,alpha:true,powerPreference:'high-performance'});
-  renderer.setClearColor(0x000000,0);
+  const renderer=new THREE.WebGLRenderer({canvas,antialias:true,alpha:false,powerPreference:'high-performance'});
+  renderer.setClearColor('#04060f',1);
   renderer.toneMapping=THREE.ACESFilmicToneMapping;
   renderer.toneMappingExposure=1.22;
   renderer.outputColorSpace=THREE.SRGBColorSpace;
@@ -637,6 +637,7 @@ try{
   const camera=new THREE.PerspectiveCamera(35,1,0.1,100);
   camera.position.set(0,0,9.5);
 
+
   /* 배경 — 심연 그라데이션 + 프리즘이 굴절시킬 라이트 바(차트 모티브) */
   function radialTex(stops,size=512){
     const c=document.createElement('canvas');c.width=c.height=size;
@@ -645,6 +646,9 @@ try{
     x.fillStyle=g;x.fillRect(0,0,size,size);
     const t=new THREE.CanvasTexture(c);t.colorSpace=THREE.SRGBColorSpace;return t;
   }
+  const back=new THREE.Mesh(new THREE.PlaneGeometry(90,90),
+    new THREE.MeshBasicMaterial({map:radialTex([[0,'#13203a'],[0.35,'#081020'],[0.6,'#04060f'],[1,'#04060f']]),toneMapped:false}));
+  back.position.set(9,2,-30);scene.add(back);
 
 
   /* 라이팅 — 키 + 쿨 림 + 웜 필 */
