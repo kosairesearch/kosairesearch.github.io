@@ -737,6 +737,24 @@ try{
   fres.scale.setScalar(1.004);
   fres.renderOrder=2;
   prism.add(fres);
+  /* 내부 굴절 색면 — 뒷면 각 면이 서로 다른 옅은 색조로 비쳐, 그 경계가 곧 뒷모서리(선이 아닌 색 경계) */
+  const backTint=new THREE.Mesh(geo,new THREE.ShaderMaterial({
+    uniforms:{uTime:fres.material.uniforms.uTime},
+    vertexShader:fres.material.vertexShader,
+    fragmentShader:`uniform float uTime;varying vec3 vN,vV,vW;
+      void main(){
+        vec3 n=normalize(vW);
+        float a1=n.x*1.7+n.y*0.9+uTime*0.05, a2=n.z*2.1-n.y*1.3-uTime*0.04;
+        vec3 cool=vec3(.80,.88,1.), pink=vec3(.99,.83,.85), amber=vec3(.98,.90,.76);
+        vec3 col=mix(cool,pink,0.5+0.5*sin(a1));
+        col=mix(col,amber,0.5*(0.5+0.5*sin(a2)));
+        float fr=pow(1.-abs(dot(normalize(vN),normalize(vV))),1.2);
+        gl_FragColor=vec4(col, 0.12+0.12*fr);
+      }`,
+    transparent:true,depthWrite:false,depthTest:false,side:THREE.BackSide}));
+  backTint.scale.setScalar(0.997);
+  backTint.renderOrder=1;
+  prism.add(backTint);
   /* 통과 스펙트럼 — 빛이 지나는 통로를 따라 유리 표면에 생기는 무지개(아주 연하게) */
   const spect=new THREE.Mesh(geo,new THREE.ShaderMaterial({
     uniforms:{uTime:fres.material.uniforms.uTime},
