@@ -691,28 +691,6 @@ try{
   fres.renderOrder=2;
   prism.add(fres);
 
-  /* 꼭짓점 별 플레어 — 텀블 중 빛을 받는 순간 별처럼 터짐 */
-  function starTex(){
-    const c=document.createElement('canvas');c.width=c.height=128;const x=c.getContext('2d');
-    x.globalCompositeOperation='lighter';
-    const core=x.createRadialGradient(64,64,0,64,64,20);
-    core.addColorStop(0,'rgba(255,255,255,1)');core.addColorStop(1,'rgba(255,255,255,0)');
-    x.fillStyle=core;x.fillRect(0,0,128,128);
-    for(const rot of [0,Math.PI/2]){
-      x.save();x.translate(64,64);x.rotate(rot);
-      const g=x.createLinearGradient(-62,0,62,0);
-      g.addColorStop(0,'rgba(210,230,255,0)');g.addColorStop(0.5,'rgba(235,245,255,.95)');g.addColorStop(1,'rgba(210,230,255,0)');
-      x.fillStyle=g;x.fillRect(-62,-1.6,124,3.2);x.restore();
-    }
-    const t=new THREE.CanvasTexture(c);t.colorSpace=THREE.SRGBColorSpace;return t;
-  }
-  const starT=starTex();
-  const flares=[ [1,1,1],[-1,-1,1],[-1,1,-1],[1,-1,-1] ].map((v,i)=>{
-    const sp=new THREE.Sprite(new THREE.SpriteMaterial({map:starT,transparent:true,opacity:0,
-      blending:THREE.AdditiveBlending,depthWrite:false,depthTest:false}));
-    const n=1.85/Math.sqrt(3);
-    sp.position.set(v[0]*n,v[1]*n,v[2]*n); sp.renderOrder=4; prism.add(sp); return sp;
-  });
   const group=new THREE.Group(); group.add(prism); scene.add(group);
 
   /* 뒤 글로우 — 실루엣을 띄우는 은은한 후광 */
@@ -810,8 +788,6 @@ try{
     prism.position.y=reduced?0:Math.sin(t*0.7)*0.09;
     glow.material.opacity=0.10+Math.sin(t*0.5)*0.04;
     fres.material.uniforms.uTime.value=t;
-    for(let i=0;i<4;i++){ const k=Math.pow(Math.max(0,Math.sin(t*0.42+i*1.83)),10);
-      flares[i].material.opacity=k*0.85; flares[i].scale.setScalar(0.35+k*0.85); }
     dust.rotation.y=t*0.02; dust.rotation.z=t*0.008;
     beam.material.opacity=0.30+Math.sin(t*0.45)*0.07;
     fan.material.opacity=0.44+Math.sin(t*0.45+1.2)*0.08;
