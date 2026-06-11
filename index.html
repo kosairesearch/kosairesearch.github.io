@@ -651,7 +651,7 @@ try{
     const V=[[1,1,1],[-1,-1,1],[-1,1,-1],[1,-1,-1]].map((v,i)=>new THREE.Vector3(
       (v[0]+J[i][0])*k,(v[1]+J[i][1])*k,(v[2]+J[i][2])*k));
     const F=[[0,1,2],[0,3,1],[0,2,3],[1,3,2]];
-    const INS=[0.928,0.902,0.918,0.892];          // 면마다 다른 깎임 폭
+    const INS=[0.955,0.940,0.949,0.934];          // 면마다 다른 깎임 폭
     const Q=F.map((f,fi)=>{
       const c=new THREE.Vector3().add(V[f[0]]).add(V[f[1]]).add(V[f[2]]).multiplyScalar(1/3);
       return f.map(vi=>c.clone().add(V[vi].clone().sub(c).multiplyScalar(INS[fi])));
@@ -706,10 +706,6 @@ try{
     envMapIntensity:2.0, specularIntensity:1
   });
   const prism=new THREE.Mesh(geo,glass);
-  const edges=new THREE.LineSegments(new THREE.EdgesGeometry(geo),
-    new THREE.LineBasicMaterial({color:0xffffff,transparent:true,opacity:0.2,depthTest:false}));
-  edges.renderOrder=3;
-  prism.add(edges);
   /* 스펙트럼 프레넬 — 색이 두꺼운 가장자리에 농축, 면 중앙은 맑게(레퍼런스 토러스) */
   const fres=new THREE.Mesh(geo,new THREE.ShaderMaterial({
     uniforms:{uTime:{value:0}},
@@ -728,6 +724,22 @@ try{
     transparent:true,blending:THREE.AdditiveBlending,depthWrite:false,side:THREE.DoubleSide}));
   fres.renderOrder=2;
   prism.add(fres);
+  /* 내부 비침 — 뒷면 베벨이 유리 너머로 은은히 발광(직선이 아닌 굴절광 느낌) */
+  const fresBack=new THREE.Mesh(geo,new THREE.ShaderMaterial({
+    uniforms:{uTime:fres.material.uniforms.uTime},
+    vertexShader:fres.material.vertexShader,
+    fragmentShader:`uniform float uTime;varying vec3 vN,vV,vW;
+      void main(){
+        float f=pow(1.-abs(dot(normalize(vN),normalize(vV))),2.1);
+        float h=clamp(f*1.1+0.16*sin(uTime*0.35+vW.y*2.2+vW.x*1.3),0.,1.);
+        vec3 c1=vec3(.07,.22,.9),c2=vec3(.3,.8,1.),c3=vec3(1.),c4=vec3(1.,.72,.34),c5=vec3(1.,.42,.12);
+        vec3 col = h<.25? mix(c1,c2,h/.25) : h<.5? mix(c2,c3,(h-.25)/.25) : h<.75? mix(c3,c4,(h-.5)/.25) : mix(c4,c5,(h-.75)/.25);
+        float a=smoothstep(.05,.8,f)*0.34;
+        gl_FragColor=vec4(col,a);
+      }`,
+    transparent:true,blending:THREE.AdditiveBlending,depthWrite:false,depthTest:false,side:THREE.BackSide}));
+  fresBack.renderOrder=1;
+  prism.add(fresBack);
 
   const group=new THREE.Group(); group.add(prism); scene.add(group);
 
