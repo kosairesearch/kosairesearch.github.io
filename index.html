@@ -747,23 +747,26 @@ try{
   const dust=new THREE.Points(dgeo,new THREE.PointsMaterial({color:0xc8d8f8,size:0.025,transparent:true,opacity:0.5,depthWrite:false}));
   scene.add(dust);
 
-  /* 스테이지 위치 → 월드 좌표 (반응형: 프리즘이 항상 스테이지 중앙에) */
-  function layout(){
+  /* 리사이즈(비용 큰 작업)는 창 크기 변경 때만 */
+  function resize(){
     const w=innerWidth,hh=innerHeight;
-    renderer.setPixelRatio(Math.min(devicePixelRatio,2));
+    renderer.setPixelRatio(Math.min(devicePixelRatio, mobile?1.6:2));
     renderer.setSize(w,hh,false);
     camera.aspect=w/hh;camera.updateProjectionMatrix();
+  }
+  resize(); addEventListener('resize',resize); setTimeout(resize,900);
+
+  /* 스테이지 추적(가벼움) — 매 프레임 목표 위치만 계산, 이동은 lerp로 부드럽게 */
+  const target=new THREE.Vector3(); let started=false;
+  function track(){
     const r=stage.getBoundingClientRect();
-    const ndc=new THREE.Vector2(((r.left+r.width/2)/w)*2-1, -(((r.top+r.height*0.44)/hh)*2-1));
+    const ndc=new THREE.Vector2(((r.left+r.width/2)/innerWidth)*2-1, -(((r.top+r.height*0.44)/innerHeight)*2-1));
     const dir=new THREE.Vector3(ndc.x,ndc.y,0.5).unproject(camera).sub(camera.position).normalize();
     const t=-camera.position.z/dir.z;
-    group.position.copy(camera.position).addScaledVector(dir,t);
-    dust.position.set(group.position.x,group.position.y,0.5);
-    fx.position.copy(group.position); fx.scale.setScalar(group.scale.x);
-    const s=Math.max(0.42,Math.min(0.9,Math.min(r.width,r.height)/560));
-    group.scale.setScalar(s);
+    target.copy(camera.position).addScaledVector(dir,t);
+    const sc=Math.max(0.42,Math.min(0.78,Math.min(r.width,r.height)/560));
+    group.scale.setScalar(sc);
   }
-  layout();
 
   /* 인터랙션 — 드래그 텀블(관성) + 패럴랙스 */
   let offX=0.0,offY=0.0,vx=0,vy=0,dragging=false,lx=0,ly=0;
@@ -780,7 +783,9 @@ try{
 
   const clock=new THREE.Clock();
   renderer.setAnimationLoop(()=>{
-    layout();
+    track();
+    if(!started){ group.position.copy(target); started=true; }
+    else group.position.lerp(target,0.35);
     const t=reduced?14:clock.getElapsedTime();
     if(!dragging){ offY+=vy; offX+=vx; vy*=0.94; vx*=0.94; }
     /* 무중력 텀블 — 두 축이 서로 다른 주기로 천천히 */
