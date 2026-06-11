@@ -285,3 +285,59 @@ exports.sendResetEmail = onCall(
     return { ok: true };
   }
 );
+
+/* ============================================================
+   문의·피드백 폼 → hello@kosai.kr 로 이메일 전송
+   ------------------------------------------------------------
+   공개(비로그인) 호출. 봇 방지: 허니팟(hp) + 길이 제한.
+   답장하면 보낸 사람에게 회신되도록 replyTo 설정.
+   ============================================================ */
+const FORM_TO = "hello@kosai.kr";
+
+exports.submitForm = onCall(
+  { region: REGION, cors: true, secrets: [RESEND_API_KEY] },
+  async (req) => {
+    const d = req.data || {};
+    if (d.hp) return { ok: true };                       // 허니팟에 값 → 봇, 조용히 성공
+    const kind = d.kind === "feedback" ? "feedback" : "contact";
+    const message = String(d.message || "").trim().slice(0, 5000);
+    if (message.length < 2) throw new HttpsError("invalid-argument", "내용을 입력해 주세요.");
+    const name = String(d.name || "").trim().slice(0, 80);
+    const email = String(d.email || "").trim().slice(0, 120);
+    const category = String(d.category || "").trim().slice(0, 40);
+    const rating = String(d.rating || "").trim().slice(0, 24);
+    const page = String(d.page || "").trim().slice(0, 200);
+
+    const isFb = kind === "feedback";
+    const label = isFb ? "피드백" : "문의";
+    const who = name || (emailOk(email) ? email : "익명");
+    const subject = `[${label}]${category ? " " + category : ""}${isFb && rating ? " · " + rating : ""} — ${who}`;
+
+    const rows = [];
+    if (!isFb && name) rows.push(["이름", name]);
+    if (email) rows.push(["이메일", email]);
+    if (category) rows.push([isFb ? "유형" : "문의 유형", category]);
+    if (isFb && rating) rows.push(["만족도", rating]);
+    if (page) rows.push(["페이지", page]);
+    const rowsHtml = rows.map(([k, v]) =>
+      `<tr><td style="padding:5px 14px 5px 0;color:#8a8c97;font:600 13px ${FONT};white-space:nowrap;vertical-align:top">${esc(k)}</td><td style="padding:5px 0;color:#1c1e26;font:400 14px ${FONT}">${esc(v)}</td></tr>`
+    ).join("");
+
+    const html = `<!doctype html><html lang="ko"><body style="margin:0;background:#f2f3fa;padding:28px 12px;">
+<table role="presentation" width="100%" cellpadding="0" cellspacing="0"><tr><td align="center">
+  <table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="max-width:560px;background:#fff;border-radius:14px;border:1px solid #e7e9f2">
+    <tr><td style="padding:24px 28px 0"><div style="font:700 12px ${FONT};letter-spacing:.08em;color:#0d69d4">KOSAI · 새 ${esc(label)}</div></td></tr>
+    <tr><td style="padding:14px 28px 0"><table role="presentation" cellpadding="0" cellspacing="0">${rowsHtml}</table></td></tr>
+    <tr><td style="padding:16px 28px 0"><div style="border-top:1px solid #eceef5;padding-top:14px;color:#1c1e26;font:400 15px/1.65 ${FONT};white-space:pre-wrap">${esc(message)}</div></td></tr>
+    <tr><td style="padding:18px 28px 24px"><div style="color:#a7a9b4;font:400 12px ${FONT}">${emailOk(email) ? "이 메일에 그대로 답장하면 보낸 사람에게 회신됩니다." : "보낸 사람이 이메일을 남기지 않았습니다."}</div></td></tr>
+  </table>
+</td></tr></table></body></html>`;
+
+    const resend = new Resend(RESEND_API_KEY.value());
+    const opts = { from: MAIL_FROM, to: FORM_TO, subject, html };
+    if (emailOk(email)) opts.replyTo = email;
+    const { error } = await resend.emails.send(opts);
+    if (error) { console.error("[submitForm] resend:", error); throw new HttpsError("internal", "전송에 실패했습니다."); }
+    return { ok: true };
+  }
+);

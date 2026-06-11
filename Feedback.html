@@ -501,6 +501,7 @@ KOSi18n.register({
         <input id="f-email" type="email" data-i18n-ph placeholder="답변받으실 이메일 주소" />
       </div>
 
+      <input type="text" id="hp" name="hp" tabindex="-1" autocomplete="off" aria-hidden="true" style="position:absolute;left:-9999px;width:1px;height:1px;opacity:0">
       <div class="submit-row">
         <button type="submit" class="btn btn-primary" id="submitBtn" disabled>피드백 보내기</button>
         <p class="form-note">만족도를 선택하시면 전송할 수 있어요. 익명으로 보내셔도 괜찮습니다.</p>
@@ -548,7 +549,7 @@ function _t(m){ return window.KOSi18n ? window.KOSi18n.t(m) : m; }
 function fldErr(el,msg){ el.classList.add('invalid'); const f=el.closest('.field'); let e=f.querySelector('.field-err'); if(!e){ e=document.createElement('div'); e.className='field-err'; f.appendChild(e); } e.textContent=msg; e.style.display='block'; }
 function fldClear(el){ el.classList.remove('invalid'); const e=el.closest('.field').querySelector('.field-err'); if(e) e.style.display='none'; }
 ['f-msg','f-email'].forEach(id=>{ const el=document.getElementById(id); if(el) el.addEventListener('input',()=>fldClear(el)); });
-document.getElementById('form').addEventListener('submit',e=>{
+document.getElementById('form').addEventListener('submit',async e=>{
   e.preventDefault();
   if(!rated)return;
   const msg=document.getElementById('f-msg'), email=document.getElementById('f-email');
@@ -557,9 +558,20 @@ document.getElementById('form').addEventListener('submit',e=>{
   const ev=email.value.trim();
   if(ev && !/^[^@\s]+@[^@\s]+\.[^@\s]+$/.test(ev)){ fldErr(email,_t('올바른 이메일 형식이 아니에요.')); bad=bad||email; } else fldClear(email);
   if(bad){ bad.focus(); return; }
-  document.getElementById('form').style.display='none';
-  document.getElementById('sent').classList.add('show');
-  window.scrollTo({top:0,behavior:'smooth'});
+  submitBtn.disabled=true;
+  const rateLab=((rating.querySelector('.on .lab')||{}).textContent||'').trim();
+  const cat=(catSeg.querySelector('.active')||{}).dataset;
+  try{
+    if(!window.KOSsubmitForm) throw new Error('not-ready');
+    await window.KOSsubmitForm({ kind:'feedback', email:ev, rating:rateLab,
+      category:(cat&&cat.cat)||'', message:msg.value.trim(), hp:(document.getElementById('hp')||{}).value||'' });
+    document.getElementById('form').style.display='none';
+    document.getElementById('sent').classList.add('show');
+    window.scrollTo({top:0,behavior:'smooth'});
+  }catch(err){
+    submitBtn.disabled=false;
+    fldErr(msg,_t('전송에 실패했어요. 잠시 후 다시 시도하거나 hello@kosai.kr로 보내주세요.'));
+  }
 });
 const menuBtn=document.getElementById('menuBtn'),mobileMenu=document.getElementById('mobileMenu');
 menuBtn.addEventListener('click',()=>mobileMenu.classList.toggle('open'));
@@ -582,6 +594,7 @@ if(window.KOSi18n) KOSi18n.register({
   "개선 제안":"Suggestion","버그 신고":"Bug report","칭찬·응원":"Praise & support","기타":"Other",
   "내용":"Message",
   "내용을 입력해 주세요.":"Please enter your message.","올바른 이메일 형식이 아니에요.":"That doesn't look like a valid email.",
+  "전송에 실패했어요. 잠시 후 다시 시도하거나 hello@kosai.kr로 보내주세요.":"Couldn't send. Please try again later or email hello@kosai.kr.",
   "이메일":"Email","(선택 · 답변이 필요한 경우)":"(optional · if a reply is needed)",
   "어떤 점이 좋았는지, 무엇이 불편했는지, 어떤 기능이 있으면 좋겠는지 자유롭게 적어주세요.":"Tell us what you liked, what felt awkward, or what feature you'd love to see. Anything goes.",
   "답변받으실 이메일 주소":"Email address for our reply",
@@ -592,5 +605,6 @@ if(window.KOSi18n) KOSi18n.register({
 });
 </script>
 <script type="module" src="auth-state.js"></script>
+<script type="module" src="submit-form.js"></script>
 </body>
 </html>

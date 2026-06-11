@@ -467,6 +467,7 @@ KOSi18n.register({
         <label for="f-msg">문의 내용</label>
         <textarea id="f-msg" data-i18n-ph placeholder="문의하실 내용을 자세히 적어주세요. 데이터 오류 제보의 경우 해당 페이지 주소를 함께 남겨주시면 빠르게 확인할 수 있습니다." required></textarea>
       </div>
+      <input type="text" id="hp" name="hp" tabindex="-1" autocomplete="off" aria-hidden="true" style="position:absolute;left:-9999px;width:1px;height:1px;opacity:0">
       <div class="submit-row">
         <button type="submit" class="btn btn-primary">문의 보내기</button>
         <p class="form-note">보내주신 정보는 문의 응대 목적으로만 사용되며, 답변 후 안전하게 폐기됩니다.</p>
@@ -508,7 +509,7 @@ function _t(m){ return window.KOSi18n ? window.KOSi18n.t(m) : m; }
 function fldErr(el,msg){ el.classList.add('invalid'); const f=el.closest('.field'); let e=f.querySelector('.field-err'); if(!e){ e=document.createElement('div'); e.className='field-err'; f.appendChild(e); } e.textContent=msg; e.style.display='block'; }
 function fldClear(el){ el.classList.remove('invalid'); const e=el.closest('.field').querySelector('.field-err'); if(e) e.style.display='none'; }
 ['f-name','f-email','f-msg'].forEach(id=>{ const el=document.getElementById(id); if(el) el.addEventListener('input',()=>fldClear(el)); });
-document.getElementById('form').addEventListener('submit',e=>{
+document.getElementById('form').addEventListener('submit',async e=>{
   e.preventDefault();
   const name=document.getElementById('f-name'), email=document.getElementById('f-email'), msg=document.getElementById('f-msg');
   let bad=null;
@@ -519,9 +520,19 @@ document.getElementById('form').addEventListener('submit',e=>{
   else fldClear(email);
   if(!msg.value.trim()){ fldErr(msg,_t('문의 내용을 입력해 주세요.')); bad=bad||msg; } else fldClear(msg);
   if(bad){ bad.focus(); return; }
-  document.getElementById('form').style.display='none';
-  document.getElementById('sent').classList.add('show');
-  window.scrollTo({top:0,behavior:'smooth'});
+  const btn=document.querySelector('#form button[type="submit"]'); if(btn) btn.disabled=true;
+  const cat=(catSeg.querySelector('.active')||{}).dataset;
+  try{
+    if(!window.KOSsubmitForm) throw new Error('not-ready');
+    await window.KOSsubmitForm({ kind:'contact', name:name.value.trim(), email:ev,
+      category:(cat&&cat.cat)||'', message:msg.value.trim(), hp:(document.getElementById('hp')||{}).value||'' });
+    document.getElementById('form').style.display='none';
+    document.getElementById('sent').classList.add('show');
+    window.scrollTo({top:0,behavior:'smooth'});
+  }catch(err){
+    if(btn) btn.disabled=false;
+    fldErr(msg,_t('전송에 실패했어요. 잠시 후 다시 시도하거나 hello@kosai.kr로 보내주세요.'));
+  }
 });
 const menuBtn=document.getElementById('menuBtn'),mobileMenu=document.getElementById('mobileMenu');
 menuBtn.addEventListener('click',()=>mobileMenu.classList.toggle('open'));
@@ -540,6 +551,7 @@ if(window.KOSi18n) KOSi18n.register({
   "문의 유형":"Inquiry type","일반 문의":"General","데이터 오류 제보":"Data error report","협업·제휴":"Partnership",
   "이름":"Name","이메일":"Email","문의 내용":"Message","문의 보내기":"Send inquiry",
   "이름을 입력해 주세요.":"Please enter your name.","이메일을 입력해 주세요.":"Please enter your email.","올바른 이메일 형식이 아니에요.":"That doesn't look like a valid email.","문의 내용을 입력해 주세요.":"Please enter your message.",
+  "전송에 실패했어요. 잠시 후 다시 시도하거나 hello@kosai.kr로 보내주세요.":"Couldn't send. Please try again later or email hello@kosai.kr.",
   "성함을 입력해 주세요":"Your full name",
   "답변받으실 이메일 주소":"Email address for our reply",
   "문의하실 내용을 자세히 적어주세요. 데이터 오류 제보의 경우 해당 페이지 주소를 함께 남겨주시면 빠르게 확인할 수 있습니다.":"Tell us in detail. For data error reports, include the URL of the page so we can investigate quickly.",
@@ -549,5 +561,6 @@ if(window.KOSi18n) KOSi18n.register({
 });
 </script>
 <script type="module" src="auth-state.js"></script>
+<script type="module" src="submit-form.js"></script>
 </body>
 </html>
