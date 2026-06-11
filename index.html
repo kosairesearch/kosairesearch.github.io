@@ -815,26 +815,21 @@ try{
   scene.add(dust);
 
   /* 리사이즈(비용 큰 작업)는 창 크기 변경 때만 */
+  /* 리사이즈 — 렌더 해상도를 '캔버스 자체 크기(100vh 고정)'에 맞춤.
+     window.innerHeight(모바일 주소창에 따라 변함)를 쓰지 않아 스크롤 중 늘어남이 없다. */
   function resize(){
-    const w=innerWidth,hh=innerHeight;
+    const w=canvas.clientWidth||innerWidth, h=canvas.clientHeight||innerHeight;
     renderer.setPixelRatio(Math.min(devicePixelRatio, mobile?1.6:2));
-    renderer.setSize(w,hh,false);
-    camera.aspect=w/hh;camera.updateProjectionMatrix();
+    renderer.setSize(w,h,false);
+    camera.aspect=w/h; camera.updateProjectionMatrix();
+    place();
   }
-  resize(); place(); addEventListener('resize',()=>{resize();place();}); setTimeout(()=>{resize();place();},900);
-
-  /* 배치 — 캔버스가 페이지와 함께 스크롤되므로 위치는 고정(리사이즈 때만 재계산) */
+  /* 배치 — 고정 좌표(마우스·스크롤 영향 없음). 데스크톱=오른쪽, 모바일=상단 중앙 */
   function place(){
-    camera.updateMatrixWorld();
-    const r=stage.getBoundingClientRect();
-    const cx=r.left+r.width/2, cy=r.top+window.scrollY+r.height*0.44;   // 캔버스(페이지 상단) 기준
-    const ndc=new THREE.Vector2((cx/innerWidth)*2-1, -((cy/innerHeight)*2-1));
-    const dir=new THREE.Vector3(ndc.x,ndc.y,0.5).unproject(camera).sub(camera.position).normalize();
-    const t=-camera.position.z/dir.z;
-    group.position.copy(camera.position).addScaledVector(dir,t);
-    const sc=Math.max(0.42,Math.min(0.78,Math.min(r.width,r.height)/560));
-    group.scale.setScalar(sc);
+    if(mobile){ group.position.set(0,1.95,0); group.scale.setScalar(0.66); }
+    else{ group.position.set(2.6,0.15,0); group.scale.setScalar(0.94); }
   }
+  resize(); addEventListener('resize',resize); setTimeout(resize,900);
 
   /* 인터랙션 — 드래그 텀블(관성) + 패럴랙스 */
   let offX=0.0,offY=0.0,vx=0,vy=0,dragging=false,lx=0,ly=0;
@@ -846,8 +841,6 @@ try{
   });
   const end=()=>{dragging=false;stage.classList.remove('drag');};
   stage.addEventListener('pointerup',end);stage.addEventListener('pointercancel',end);
-  let pmx=0,pmy=0,cmx=0,cmy=0;
-  if(!reduced)addEventListener('pointermove',e=>{pmx=e.clientX/innerWidth-0.5;pmy=e.clientY/innerHeight-0.5;},{passive:true});
 
   const clock=new THREE.Clock();
   renderer.setAnimationLoop(()=>{
@@ -864,8 +857,6 @@ try{
     dust.rotation.y=t*0.02; dust.rotation.z=t*0.008;
     beam.material.opacity=0.13+Math.sin(t*0.45)*0.03+Math.sin(t*0.171+0.8)*0.02;
     glint.material.opacity=0.22+Math.sin(t*1.1)*0.07+Math.sin(t*0.437+1.9)*0.05;          // 부유
-    if(!reduced){ cmx+=(pmx-cmx)*0.04; cmy+=(pmy-cmy)*0.04;
-      camera.position.x=cmx*0.45; camera.position.y=-cmy*0.3; }
     renderer.render(scene,camera);
   });
 }catch(e){ console.error('PRISM_ERR', e && (e.stack||e.message||String(e))); }
