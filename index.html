@@ -449,7 +449,7 @@ KOSi18n.register({
 .lp-vignette{position:fixed;inset:0;z-index:-2;pointer-events:none;background:
   radial-gradient(ellipse 120% 95% at 50% 45%, transparent 58%, rgba(2,3,8,.55) 100%),
   linear-gradient(102deg, rgba(3,4,9,.5) 0%, rgba(3,4,9,.18) 36%, transparent 58%)}
-.lp-grain{position:fixed;inset:0;z-index:-1;pointer-events:none;opacity:.05;
+.lp-grain{position:fixed;inset:0;z-index:-1;pointer-events:none;opacity:.08;
   background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='160' height='160'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='2'/%3E%3C/filter%3E%3Crect width='160' height='160' filter='url(%23n)' opacity='.6'/%3E%3C/svg%3E")}
 body{background:#05060d}
 body::after,body::before{display:none}
@@ -612,7 +612,7 @@ try{
         new THREE.MeshBasicMaterial({color:new THREE.Color(c).multiplyScalar(i),side:THREE.DoubleSide}));
       m.position.set(x,y,z); m.rotation.set(rx,ry,0); env.add(m);
     };
-    box(14,7,'#ffffff',9, 0,9,0, 0,Math.PI/2);     // 톱 소프트박스
+    box(20,10,'#ffffff',11, 0,9,1, 0,Math.PI/2);   // 시네마틱 톱 소프트박스
     box(4,12,'#bcd2ff',5, -10,0,2, Math.PI/2.3);   // 쿨 사이드
     box(3,10,'#dde8ff',2, 10,1,-1, -Math.PI/2.5);  // 쿨 사이드2
     box(16,1.1,'#ffffff',7, 0,-1,-10);             // 후면 스트릭
@@ -644,13 +644,27 @@ try{
 
   /* 프리즘 — 정사면체(모든 면 삼각형, 모서리 샤프) */
   const geo=new THREE.TetrahedronGeometry(1.85,0);
+  /* 마이크로 질감 — 미세 요철과 광택 불균일(진짜 유리의 불완전함) */
+  function microTex(sz,base,amp,blobs){
+    const c=document.createElement('canvas');c.width=c.height=sz;
+    const x=c.getContext('2d');x.fillStyle=`rgb(${base},${base},${base})`;x.fillRect(0,0,sz,sz);
+    for(let i=0;i<blobs;i++){
+      const r=8+Math.random()*42, g=base+(Math.random()*2-1)*amp;
+      const gr=x.createRadialGradient(Math.random()*sz,Math.random()*sz,0,Math.random()*sz,Math.random()*sz,r);
+      gr.addColorStop(0,`rgba(${g|0},${g|0},${g|0},.55)`);gr.addColorStop(1,'rgba(0,0,0,0)');
+      x.fillStyle=gr;x.beginPath();x.arc(Math.random()*sz,Math.random()*sz,r,0,7);x.fill();
+    }
+    const t=new THREE.CanvasTexture(c);t.wrapS=t.wrapT=THREE.RepeatWrapping;t.repeat.set(2,2);return t;
+  }
+  const bumpT=microTex(256,128,46,520);
+  const roughT=microTex(256,150,80,90);
   const glass=new THREE.MeshPhysicalMaterial({
-    color:0xffffff, metalness:0, roughness:0.02, flatShading:true,
+    color:0xffffff, metalness:0, roughness:0.12, roughnessMap:roughT, bumpMap:bumpT, bumpScale:0.45, flatShading:true,
     transmission:1, thickness:1.2, ior:1.55, dispersion:0.62,   // 빛 분산(무지개 가장자리)
     clearcoat:1, clearcoatRoughness:0.03,
     iridescence:0.14, iridescenceIOR:1.3,                       // 미세한 무지갯빛 코팅
     attenuationColor:new THREE.Color('#f0f5ff'), attenuationDistance:22,
-    envMapIntensity:1.5, specularIntensity:1
+    envMapIntensity:1.9, specularIntensity:1
   });
   const prism=new THREE.Mesh(geo,glass);
   const edges=new THREE.LineSegments(new THREE.EdgesGeometry(geo),
@@ -670,6 +684,13 @@ try{
     transparent:true,opacity:0.13,blending:THREE.AdditiveBlending,depthWrite:false}));
   glow.scale.setScalar(6);glow.position.z=-4;group.add(glow);
 
+  /* 미세 먼지 — 프리즘 주변을 아주 천천히 떠다님 */
+  const DN=70, dpos=new Float32Array(DN*3);
+  for(let i=0;i<DN;i++){ dpos[i*3]=(Math.random()*2-1)*3.4; dpos[i*3+1]=(Math.random()*2-1)*2.6; dpos[i*3+2]=(Math.random()*2-1)*2; }
+  const dgeo=new THREE.BufferGeometry(); dgeo.setAttribute('position',new THREE.BufferAttribute(dpos,3));
+  const dust=new THREE.Points(dgeo,new THREE.PointsMaterial({color:0xc8d8f8,size:0.025,transparent:true,opacity:0.5,depthWrite:false}));
+  scene.add(dust);
+
   /* 스테이지 위치 → 월드 좌표 (반응형: 프리즘이 항상 스테이지 중앙에) */
   function layout(){
     const w=innerWidth,hh=innerHeight;
@@ -681,6 +702,7 @@ try{
     const dir=new THREE.Vector3(ndc.x,ndc.y,0.5).unproject(camera).sub(camera.position).normalize();
     const t=-camera.position.z/dir.z;
     group.position.copy(camera.position).addScaledVector(dir,t);
+    dust.position.set(group.position.x,group.position.y,0.5);
     const s=Math.max(0.42,Math.min(0.9,Math.min(r.width,r.height)/560));
     group.scale.setScalar(s);
   }
@@ -709,7 +731,8 @@ try{
     group.rotation.x=0.34+Math.sin(t*0.23)*0.2+offX;
     group.rotation.z=Math.sin(t*0.131)*0.1;
     prism.position.y=reduced?0:Math.sin(t*0.7)*0.09;
-    glow.material.opacity=0.10+Math.sin(t*0.5)*0.04;          // 부유
+    glow.material.opacity=0.10+Math.sin(t*0.5)*0.04;
+    dust.rotation.y=t*0.02; dust.rotation.z=t*0.008;          // 부유
     if(!reduced){ cmx+=(pmx-cmx)*0.04; cmy+=(pmy-cmy)*0.04;
       camera.position.x=cmx*0.45; camera.position.y=-cmy*0.3; }
     renderer.render(scene,camera);
