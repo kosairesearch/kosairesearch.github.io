@@ -634,7 +634,7 @@ try{
   }
   const back=new THREE.Mesh(new THREE.PlaneGeometry(90,90),
     new THREE.MeshBasicMaterial({map:radialTex([[0,'#13203a'],[0.45,'#081020'],[1,'#02030a']])}));
-  back.position.z=-30;scene.add(back);
+  back.position.set(9,2,-30);scene.add(back);
 
 
   /* 라이팅 — 키 + 쿨 림 + 웜 필 */
@@ -659,12 +659,12 @@ try{
   const bumpT=microTex(256,128,46,520);
   const roughT=microTex(256,150,80,90);
   const glass=new THREE.MeshPhysicalMaterial({
-    color:0xffffff, metalness:0, roughness:0.07, roughnessMap:roughT, bumpMap:bumpT, bumpScale:0.22, flatShading:true,
+    color:0xffffff, metalness:0, roughness:0.035, roughnessMap:roughT, bumpMap:bumpT, bumpScale:0.1, flatShading:true,
     transmission:1, thickness:1.2, ior:1.55, dispersion:0.62,   // 빛 분산(무지개 가장자리)
     clearcoat:1, clearcoatRoughness:0.03,
-    iridescence:0.85, iridescenceIOR:1.35, iridescenceThicknessRange:[120,480], iridescenceIOR:1.3,                       // 미세한 무지갯빛 코팅
+    iridescence:0.4, iridescenceIOR:1.35, iridescenceThicknessRange:[120,480], iridescenceIOR:1.3,                       // 미세한 무지갯빛 코팅
     attenuationColor:new THREE.Color('#f0f5ff'), attenuationDistance:22,
-    envMapIntensity:2.2, specularIntensity:1
+    envMapIntensity:1.35, specularIntensity:1
   });
   const prism=new THREE.Mesh(geo,glass);
   /* 내부 색광 — 유리 속 앰버·시안 분산 띠(레퍼런스의 '영롱함') */
@@ -683,18 +683,19 @@ try{
     const t=new THREE.CanvasTexture(c);t.colorSpace=THREE.SRGBColorSpace;
     t.wrapS=t.wrapT=THREE.MirroredRepeatWrapping;return t;
   }
-  const chroma=new THREE.Mesh(geo,new THREE.MeshBasicMaterial({map:chromaTex(),transparent:true,opacity:0.3,
+  const chroma=new THREE.Mesh(geo,new THREE.MeshBasicMaterial({map:chromaTex(),transparent:true,opacity:0.14,
     blending:THREE.AdditiveBlending,side:THREE.DoubleSide,depthWrite:false}));
   chroma.scale.setScalar(1.003); chroma.renderOrder=2;
   prism.add(chroma);
   const edges=new THREE.LineSegments(new THREE.EdgesGeometry(geo),
-    new THREE.LineBasicMaterial({color:0xffffff,transparent:true,opacity:0.62}));
+    new THREE.LineBasicMaterial({color:0xffffff,transparent:true,opacity:0.34,depthTest:false}));
+  edges.renderOrder=3;
   prism.add(edges);
   /* 프레넬 림 — 스치는 각도에서 유리가 빛을 머금는 효과(투명함 유지) */
   const fres=new THREE.Mesh(geo,new THREE.ShaderMaterial({
     uniforms:{c:{value:new THREE.Color('#cfe2ff')}},
     vertexShader:'varying vec3 vN,vV;void main(){vN=normalize(normalMatrix*normal);vec4 mv=modelViewMatrix*vec4(position,1.);vV=normalize(-mv.xyz);gl_Position=projectionMatrix*mv;}',
-    fragmentShader:'uniform vec3 c;varying vec3 vN,vV;void main(){float f=pow(1.-abs(dot(normalize(vN),normalize(vV))),2.4);gl_FragColor=vec4(c,f*0.5);}',
+    fragmentShader:'uniform vec3 c;varying vec3 vN,vV;void main(){float f=pow(1.-abs(dot(normalize(vN),normalize(vV))),2.4);gl_FragColor=vec4(c,f*0.22);}',
     transparent:true,blending:THREE.AdditiveBlending,depthWrite:false}));
   prism.add(fres);
   const group=new THREE.Group(); group.add(prism); scene.add(group);
