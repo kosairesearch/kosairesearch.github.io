@@ -1,0 +1,57 @@
+name: 리포트 v2 생성 (정량+정성 · Batch)
+
+on:
+  workflow_dispatch:
+    inputs:
+      mode:
+        description: 'quant(정량 검증만) | submit | collect | auto'
+        default: 'quant'
+      tickers:
+        description: '쉼표 구분 티커 (비우면 시총 상위 10)'
+        default: ''
+
+concurrency:
+  group: kos-data
+  cancel-in-progress: false
+
+jobs:
+  reports-v2:
+    runs-on: ubuntu-latest
+    timeout-minutes: 200
+    permissions:
+      contents: write
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: 의존성 설치
+        run: pip install -r requirements.txt
+
+      - name: 리포트 v2 실행
+        env:
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+          DART_API_KEY: ${{ secrets.DART_API_KEY }}
+          KRX_ID: ${{ secrets.KRX_ID }}
+          KRX_PW: ${{ secrets.KRX_PW }}
+          REPORT_MODEL_V2: 'claude-opus-4-8'
+          REPORT_TICKERS: ${{ inputs.tickers }}
+          BATCH_MAX_WAIT_SEC: '10800'
+        run: |
+          python scripts/generate_reports_v2.py "${{ inputs.mode }}" 2>&1 | tee data/reports_v2_run.log || true
+
+      - name: 결과 커밋
+        run: |
+          git config --global user.email "bot@kosairesearch.github.io"
+          git config --global user.name "KOS ai Bot"
+          git add -A data/
+          git commit -m "📊 리포트 v2 (${{ inputs.mode }}) $(TZ='Asia/Seoul' date +'%Y-%m-%d %H:%M KST')" || exit 0
+          ok=""
+          for i in 1 2 3 4 5; do
+            if git pull --rebase origin main && git push origin main; then ok=1; break; fi
+            git rebase --abort 2>/dev/null || true
+            sleep $((i*3))
+          done
+          [ -n "$ok" ] || exit 1
