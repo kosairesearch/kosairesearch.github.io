@@ -193,8 +193,32 @@ def collect_quant(dart, ticker, krx_row, stock):
         }
         return q
 
+    # 매출 폴백 — 보험·금융사는 전체 재무제표에 '매출액' 행이 없어
+    # DART 요약재무(매출액/영업수익)로 보충한다.
+    def rev_fallback(year, reprt):
+        d = g._extract_fin(g._safe_finstate(dart, ticker, year, reprt))
+        v = (d or {}).get("매출액")
+        return v["cur"] if v else None
+
+    for row in annual:
+        if row["rev"] is None:
+            row["rev"] = rev_fallback(row["year"], "11011")
+            if row["rev"] and row["op"] is not None:
+                row["opm"] = round(row["op"] / row["rev"] * 100, 1)
+
     quarterly = []
     rev_q = quarters("rev", fy_row["rev"] if fy_row else None)
+    if all(v is None for v in rev_q.values()):
+        c1 = rev_fallback(py, "11013")
+        ch = rev_fallback(py, "11012")
+        c9 = rev_fallback(py, "11014")
+        fy = fy_row["rev"] if fy_row else None
+        cq = rev_fallback(cur, "11013")
+        cand = {f"{py}Q1": c1, f"{py}Q2": _sub(ch, c1), f"{py}Q3": _sub(c9, ch),
+                f"{py}Q4": _sub(fy, c9), f"{cur}Q1": cq}
+        # 차감 결과 음수(누적 가정 오류)면 채택하지 않음
+        if not any(v is not None and v < 0 for v in cand.values()):
+            rev_q = cand
     op_q = quarters("op", fy_row["op"] if fy_row else None)
     npo_q = quarters("np_owner", fy_row["np_owner"] if fy_row else None)
     np_q = quarters("np", fy_row["np"] if fy_row else None)
@@ -581,8 +605,35 @@ def collect(cl, as_of):
     # 인덱스(존재하는 v2 리포트 목록)
     have = sorted(p.stem for p in OUT_DIR.glob("*.json") if p.stem.isdigit())
     (OUT_DIR / "index.json").write_text(json.dumps(have), encoding="utf-8")
+    sync_list_index(have)
     log(f"\n✅ v2 회수 완료 · 성공 {ok}/실패 {fail} → data/reports_v2/ ({len(have)}개)")
     return True
+
+
+def sync_list_index(tickers):
+    """리포트 목록(reports-index.js)의 제목·날짜를 v2와 일치시킨다."""
+    import re as _re
+    p = ROOT / "data" / "reports-index.js"
+    if not p.exists():
+        return
+    try:
+        m = _re.search(r"window\.KOS_REPORTS\s*=\s*(\{.*\});", p.read_text(encoding="utf-8"), _re.S)
+        payload = json.loads(m.group(1))
+        n = 0
+        for tk in tickers:
+            f = OUT_DIR / f"{tk}.json"
+            if tk in payload.get("reports", {}) and f.exists():
+                v2 = json.loads(f.read_text(encoding="utf-8"))
+                payload["reports"][tk] = {"title": v2.get("title"),
+                                          "reportDate": v2.get("reportDate"),
+                                          "reportTs": v2.get("reportTs")}
+                n += 1
+        p.write_text("// KOS ai — 리포트 인덱스(자동 생성). 전체 본문은 data/reports 폴더의 종목별 JSON 참조.\n"
+                     "window.KOS_REPORTS = " + json.dumps(payload, ensure_ascii=False) + ";\n",
+                     encoding="utf-8")
+        log(f"- 목록 인덱스 제목 동기화: {n}건")
+    except Exception as e:
+        log(f"- (인덱스 동기화 실패: {type(e).__name__}: {e})")
 
 
 def main():

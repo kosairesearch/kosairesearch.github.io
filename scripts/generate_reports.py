@@ -93,10 +93,23 @@ def write_reports(reports, model, as_of):
                 p.unlink()
             except Exception:
                 pass
-    index = {tk: {"title": r.get("title"),
-                  "reportDate": r.get("reportDate"),
-                  "reportTs": r.get("reportTs") or r.get("reportDate")}
-             for tk, r in reports.items()}
+    # v2 리포트가 있는 종목은 인덱스 제목·날짜를 v2 기준으로(목록·상세 제목 일치)
+    v2_dir = Path("data/reports_v2")
+    def _idx(tk, r):
+        e = {"title": r.get("title"),
+             "reportDate": r.get("reportDate"),
+             "reportTs": r.get("reportTs") or r.get("reportDate")}
+        p = v2_dir / f"{tk}.json"
+        if p.exists():
+            try:
+                v2 = json.loads(p.read_text(encoding="utf-8"))
+                e = {"title": v2.get("title") or e["title"],
+                     "reportDate": v2.get("reportDate") or e["reportDate"],
+                     "reportTs": v2.get("reportTs") or e["reportTs"]}
+            except Exception:
+                pass
+        return e
+    index = {tk: _idx(tk, r) for tk, r in reports.items()}
     payload = {"lastUpdated": as_of, "model": model, "reports": index}
     REPORTS_INDEX_JS.write_text(
         "// KOS ai — 리포트 인덱스(자동 생성). 전체 본문은 data/reports 폴더의 종목별 JSON 참조.\n"
