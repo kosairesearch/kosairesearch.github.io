@@ -1,20 +1,53 @@
 universe: 2687개 / 기준일 20260612
-KRX 로그인 실패: KRX_ID 또는 KRX_PW 환경 변수가 설정되지 않았습니다.
-Error occurred in get_market_fundamental_by_ticker: Expecting value: line 1 column 1 (char 0)
-Traceback (most recent call last):
-  File "/home/runner/work/kosairesearch.github.io/kosairesearch.github.io/scripts/probe_krx_fundamental.py", line 68, in <module>
-    main()
-  File "/home/runner/work/kosairesearch.github.io/kosairesearch.github.io/scripts/probe_krx_fundamental.py", line 28, in main
-    f = krx.get_market_fundamental_by_ticker(date, market=mkt)
-        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/opt/hostedtoolcache/Python/3.11.15/x64/lib/python3.11/site-packages/pykrx/stock/stock_api.py", line 776, in get_market_fundamental_by_ticker
-    holiday = (df[["BPS", "PER", "PBR", "EPS", "DIV", "DPS"]] == 0).all(axis=None)
-               ~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/opt/hostedtoolcache/Python/3.11.15/x64/lib/python3.11/site-packages/pandas/core/frame.py", line 4119, in __getitem__
-    indexer = self.columns._get_indexer_strict(key, "columns")[1]
-              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/opt/hostedtoolcache/Python/3.11.15/x64/lib/python3.11/site-packages/pandas/core/indexes/base.py", line 6212, in _get_indexer_strict
-    self._raise_if_missing(keyarr, indexer, axis_name)
-  File "/opt/hostedtoolcache/Python/3.11.15/x64/lib/python3.11/site-packages/pandas/core/indexes/base.py", line 6261, in _raise_if_missing
-    raise KeyError(f"None of [{key}] are in the [{axis_name}]")
-KeyError: "None of [Index(['BPS', 'PER', 'PBR', 'EPS', 'DIV', 'DPS'], dtype='object')] are in the [columns]"
+KRX 로그인 시도...
+  로그인 ID: qjawnsdla
+KRX 로그인 완료.
+  로그인 시간: 2026-06-12 17:42:54
+  만료 시간: 2026-06-12 18:42:54
+[KOSPI] 918행, 컬럼: ['BPS', 'PER', 'PBR', 'EPS', 'DIV', 'DPS']
+[KOSDAQ] 1803행, 컬럼: ['BPS', 'PER', 'PBR', 'EPS', 'DIV', 'DPS']
+
+KRX 펀더멘털 2721행 | universe 매칭 2533개 | KRX에 없는 universe 종목 154개
+  PER > 0 : 1544개 (57.5%)
+  PBR > 0 : 2520개 (93.8%)
+  EPS > 0 : 1544개 (57.5%)
+  BPS > 0 : 2520개 (93.8%)
+  DIV > 0 : 1250개 (46.5%)
+
+시총 상위 10:
+  삼성전자(005930) PER=48.83 PBR=5.04 EPS=6605.0 BPS=63997.0 DIV=0.52
+  SK하이닉스(000660) PER=34.65 PBR=12.52 EPS=62044.0 BPS=171751.0 DIV=0.14
+  SK스퀘어(402340) PER=20.36 PBR=6.48 EPS=66713.0 BPS=209564.0 DIV=0.0
+  삼성전기(009150) PER=183.41 PBR=13.57 EPS=9345.0 BPS=126302.0 DIV=0.14
+  현대차(005380) PER=16.82 PBR=1.38 EPS=36088.0 BPS=439541.0 DIV=1.65
+  LG에너지솔루션(373220) PER=0.0 PBR=4.63 EPS=0.0 BPS=86391.0 DIV=0.0
+  삼성생명(032830) PER=30.06 PBR=1.1 EPS=12824.0 BPS=349293.0 DIV=1.37
+  삼성물산(028260) PER=28.98 PBR=1.42 EPS=14905.0 BPS=305019.0 DIV=0.65
+  HD현대중공업(329180) PER=41.4 PBR=7.3 EPS=15702.0 BPS=89025.0 DIV=0.87
+  기아(000270) PER=8.61 PBR=1.06 EPS=19382.0 BPS=157456.0 DIV=4.08
+
+시총 중간 10:
+  그래디언트(035080) PER=0.0 PBR=0.24 EPS=0.0 BPS=38707.0 DIV=2.11
+  에스와이(109610) PER=0.0 PBR=0.61 EPS=0.0 BPS=3640.0 DIV=2.26
+  누리플렉스(040160) PER=0.0 PBR=1.43 EPS=0.0 BPS=6261.0 DIV=0.0
+  야스(255440) PER=0.0 PBR=0.74 EPS=0.0 BPS=11182.0 DIV=0.0
+  LB인베스트먼트(309960) PER=8.6 PBR=0.84 EPS=541.0 BPS=5521.0 DIV=4.3
+  MDS테크(086960) PER=11.66 PBR=0.71 EPS=220.0 BPS=3618.0 DIV=0.0
+  아미노로직스(074430) PER=30.65 PBR=1.92 EPS=40.0 BPS=638.0 DIV=0.0
+  케이알엠(093640) PER=0.0 PBR=1.53 EPS=0.0 BPS=2159.0 DIV=0.0
+  가온그룹(078890) PER=14.78 PBR=0.82 EPS=395.0 BPS=7147.0 DIV=1.2
+  슈프리마에이치큐(094840) PER=7.68 PBR=0.44 EPS=1429.0 BPS=24654.0 DIV=0.0
+
+시총 하위 10:
+  엔지브이아이(093510) — KRX 펀더멘털에 없음
+  켈스(402420) — KRX 펀더멘털에 없음
+  위월드(140660) — KRX 펀더멘털에 없음
+  티엘엔지니어링(413300) — KRX 펀더멘털에 없음
+  가이아코퍼레이션(296520) — KRX 펀더멘털에 없음
+  씨앤에스링크(245450) — KRX 펀더멘털에 없음
+  마이크로엔엑스(448780) — KRX 펀더멘털에 없음
+  로지스몬(223220) — KRX 펀더멘털에 없음
+  레드우즈(266170) — KRX 펀더멘털에 없음
+  이노벡스(279060) — KRX 펀더멘털에 없음
+
+KRX에 없는 universe 종목 예시 15개: ['대신밸류리츠(0030R0)', '에스테크엠(0070X0)', '태양3C(052960)', '엔더블유시(059180)', '제노텍(066830)', '지에이이노더스(076340)', '광동헬스바이오(086220)', '이리츠코크렙(088260)', '맥쿼리인프라(088980)', '럭스피아(092590)', '엔지브이아이(093510)', '맵스리얼티(094800)', '아하(102950)', '씨앗(103660)', 'KC산업(112190)']
