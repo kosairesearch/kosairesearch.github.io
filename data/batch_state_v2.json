@@ -1,6 +1,6 @@
 {
- "batch_id": "msgbatch_016eCaMhByup4UpBYUag9mJ9",
- "created": "2026-06-13 03:20",
+ "batch_id": "msgbatch_01P3Mh1ZJ1Ws8gDX4HghuePx",
+ "created": "2026-06-13 04:11",
  "model": "claude-opus-4-8",
  "dataDate": "20260612",
  "count": 10,
@@ -98,16 +98,16 @@
     "price": 322500,
     "mcap": 1885.4249,
     "shares": 5846278608,
-    "per_ttm": 22.6,
-    "eps_ttm": 14254,
+    "total_shares": 6735612586,
+    "per": 26.1,
+    "eps": 12372,
+    "pbr": 4.58,
+    "bps": 70366,
     "ttm_window": "2025Q2~2026Q1",
     "ttm_np_owner": 83333739000000,
-    "per_krx": 48.83,
-    "pbr_krx": 5.04,
-    "eps_krx": 6605.0,
-    "bps_krx": 63997.0,
-    "div_krx": 0.52,
-    "dps_krx": 1668.0
+    "basis": "PER·EPS=최근 4개 분기 지배주주 순이익 ÷ 발행주식총수(보통+우선) · PBR·BPS=최근 분기말 지배주주 자본 기준",
+    "div": 0.52,
+    "dps": 1668.0
    }
   },
   "000660": {
@@ -203,16 +203,16 @@
     "price": 2150000,
     "mcap": 1532.3101,
     "shares": 712702365,
-    "per_ttm": 20.4,
-    "eps_ttm": 105433,
+    "total_shares": 712702365,
+    "per": 20.4,
+    "eps": 105433,
+    "pbr": 9.33,
+    "bps": 230518,
     "ttm_window": "2025Q2~2026Q1",
     "ttm_np_owner": 75142382000000,
-    "per_krx": 34.65,
-    "pbr_krx": 12.52,
-    "eps_krx": 62044.0,
-    "bps_krx": 171751.0,
-    "div_krx": 0.14,
-    "dps_krx": 3000.0
+    "basis": "PER·EPS=최근 4개 분기 지배주주 순이익 ÷ 발행주식총수(보통+우선) · PBR·BPS=최근 분기말 지배주주 자본 기준",
+    "div": 0.14,
+    "dps": 3000.0
    }
   },
   "402340": {
@@ -295,16 +295,16 @@
     "price": 1358000,
     "mcap": 179.1995,
     "shares": 131958386,
-    "per_ttm": 11.5,
-    "eps_ttm": 118136,
+    "total_shares": 132087115,
+    "per": 11.5,
+    "eps": 118021,
+    "pbr": 4.98,
+    "bps": 272796,
     "ttm_window": "2025Q2~2026Q1",
     "ttm_np_owner": 15589078000000,
-    "per_krx": 20.36,
-    "pbr_krx": 6.48,
-    "eps_krx": 66713.0,
-    "bps_krx": 209564.0,
-    "div_krx": null,
-    "dps_krx": null
+    "basis": "PER·EPS=최근 4개 분기 지배주주 순이익 ÷ 발행주식총수(보통+우선) · PBR·BPS=최근 분기말 지배주주 자본 기준",
+    "div": null,
+    "dps": null
    }
   },
   "009150": {
@@ -400,16 +400,16 @@
     "price": 1714000,
     "mcap": 128.025,
     "shares": 74693696,
-    "per_ttm": 106.3,
-    "eps_ttm": 16131,
+    "total_shares": 74693696,
+    "per": 106.3,
+    "eps": 16131,
+    "pbr": 13.04,
+    "bps": 131396,
     "ttm_window": "2025Q2~2026Q1",
     "ttm_np_owner": 1204930112677,
-    "per_krx": 183.41,
-    "pbr_krx": 13.57,
-    "eps_krx": 9345.0,
-    "bps_krx": 126302.0,
-    "div_krx": 0.14,
-    "dps_krx": 2350.0
+    "basis": "PER·EPS=최근 4개 분기 지배주주 순이익 ÷ 발행주식총수(보통+우선) · PBR·BPS=최근 분기말 지배주주 자본 기준",
+    "div": 0.14,
+    "dps": 2350.0
    }
   },
   "005380": {
@@ -505,16 +505,16 @@
     "price": 607000,
     "mcap": 124.288,
     "shares": 204757766,
-    "per_ttm": 14.4,
-    "eps_ttm": 42118,
+    "total_shares": 265390108,
+    "per": 18.7,
+    "eps": 32495,
+    "pbr": 1.35,
+    "bps": 450704,
     "ttm_window": "2025Q2~2026Q1",
     "ttm_np_owner": 8624035000000,
-    "per_krx": 16.82,
-    "pbr_krx": 1.38,
-    "eps_krx": 36088.0,
-    "bps_krx": 439541.0,
-    "div_krx": 1.65,
-    "dps_krx": 10000.0
+    "basis": "PER·EPS=최근 4개 분기 지배주주 순이익 ÷ 발행주식총수(보통+우선) · PBR·BPS=최근 분기말 지배주주 자본 기준",
+    "div": 1.65,
+    "dps": 10000.0
    }
   },
   "373220": {
@@ -610,16 +610,16 @@
     "price": 400000,
     "mcap": 93.6,
     "shares": 234000000,
-    "per_ttm": null,
-    "eps_ttm": -6850,
+    "total_shares": 234000000,
+    "per": null,
+    "eps": -6850,
+    "pbr": 4.22,
+    "bps": 94720,
     "ttm_window": "2025Q2~2026Q1",
     "ttm_np_owner": -1603050000000,
-    "per_krx": null,
-    "pbr_krx": 4.63,
-    "eps_krx": null,
-    "bps_krx": 86391.0,
-    "div_krx": null,
-    "dps_krx": null
+    "basis": "PER·EPS=최근 4개 분기 지배주주 순이익 ÷ 발행주식총수(보통+우선) · PBR·BPS=최근 분기말 지배주주 자본 기준",
+    "div": null,
+    "dps": null
    }
   },
   "032830": {
@@ -702,16 +702,16 @@
     "price": 385500,
     "mcap": 77.1,
     "shares": 200000000,
-    "per_ttm": 26.9,
-    "eps_ttm": 14355,
+    "total_shares": 200000000,
+    "per": 26.9,
+    "eps": 14355,
+    "pbr": 0.95,
+    "bps": 406130,
     "ttm_window": "2025Q2~2026Q1",
     "ttm_np_owner": 2871159000000,
-    "per_krx": 30.06,
-    "pbr_krx": 1.1,
-    "eps_krx": 12824.0,
-    "bps_krx": 349293.0,
-    "div_krx": 1.37,
-    "dps_krx": 5300.0
+    "basis": "PER·EPS=최근 4개 분기 지배주주 순이익 ÷ 발행주식총수(보통+우선) · PBR·BPS=최근 분기말 지배주주 자본 기준",
+    "div": 1.37,
+    "dps": 5300.0
    }
   },
   "028260": {
@@ -807,16 +807,16 @@
     "price": 432000,
     "mcap": 70.0564,
     "shares": 162167581,
-    "per_ttm": 2.3,
-    "eps_ttm": 190099,
+    "total_shares": 171444134,
+    "per": 2.4,
+    "eps": 179813,
+    "pbr": 1.19,
+    "bps": 363300,
     "ttm_window": "2025Q2~2026Q1",
     "ttm_np_owner": 30828054447327,
-    "per_krx": 28.98,
-    "pbr_krx": 1.42,
-    "eps_krx": 14905.0,
-    "bps_krx": 305019.0,
-    "div_krx": 0.65,
-    "dps_krx": 2800.0
+    "basis": "PER·EPS=최근 4개 분기 지배주주 순이익 ÷ 발행주식총수(보통+우선) · PBR·BPS=최근 분기말 지배주주 자본 기준",
+    "div": 0.65,
+    "dps": 2800.0
    }
   },
   "329180": {
@@ -912,16 +912,16 @@
     "price": 650000,
     "mcap": 68.2248,
     "shares": 104961225,
-    "per_ttm": 35.8,
-    "eps_ttm": 18150,
+    "total_shares": 104961225,
+    "per": 35.8,
+    "eps": 18150,
+    "pbr": 7.02,
+    "bps": 92541,
     "ttm_window": "2025Q2~2026Q1",
     "ttm_np_owner": 1905066692000,
-    "per_krx": 41.4,
-    "pbr_krx": 7.3,
-    "eps_krx": 15702.0,
-    "bps_krx": 89025.0,
-    "div_krx": 0.87,
-    "dps_krx": 5661.0
+    "basis": "PER·EPS=최근 4개 분기 지배주주 순이익 ÷ 발행주식총수(보통+우선) · PBR·BPS=최근 분기말 지배주주 자본 기준",
+    "div": 0.87,
+    "dps": 5661.0
    }
   },
   "000270": {
@@ -1017,16 +1017,16 @@
     "price": 166800,
     "mcap": 65.1209,
     "shares": 390412998,
-    "per_ttm": 9.3,
-    "eps_ttm": 17928,
+    "total_shares": 390412998,
+    "per": 9.3,
+    "eps": 17928,
+    "pbr": 1.06,
+    "bps": 157875,
     "ttm_window": "2025Q2~2026Q1",
     "ttm_np_owner": 6999432000000,
-    "per_krx": 8.61,
-    "pbr_krx": 1.06,
-    "eps_krx": 19382.0,
-    "bps_krx": 157456.0,
-    "div_krx": 4.08,
-    "dps_krx": 6800.0
+    "basis": "PER·EPS=최근 4개 분기 지배주주 순이익 ÷ 발행주식총수(보통+우선) · PBR·BPS=최근 분기말 지배주주 자본 기준",
+    "div": 4.08,
+    "dps": 6800.0
    }
   }
  }
