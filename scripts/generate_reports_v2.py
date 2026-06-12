@@ -207,15 +207,14 @@ def collect_quant(dart, ticker, krx_row, stock):
     valuation = {
         "price": price, "mcap": stock.get("mcap"), "shares": stock.get("shares"),
         "total_shares": total_sh,
-        "per_ttm": per_ttm, "eps_ttm": eps_ttm,
-        "bps_q": bps_q, "pbr_q": pbr_q,
+        "per": per_ttm, "eps": eps_ttm,
+        "pbr": pbr_q, "bps": bps_q,
         "ttm_window": f"{py}Q2~{cur}Q1" if ttm_np else None,
         "ttm_np_owner": ttm_np,
-        "basis": "EPS·PER(TTM)=최근4분기 지배순이익÷발행주식총수(보통+우선) · BPS·PBR=최근 분기말 지배자본 기준",
+        "basis": "PER·EPS=최근 4개 분기 지배주주 순이익 ÷ 발행주식총수(보통+우선) · PBR·BPS=최근 분기말 지배주주 자본 기준",
     }
     if krx_row is not None:
-        for src, dst in (("PER", "per_krx"), ("PBR", "pbr_krx"), ("EPS", "eps_krx"),
-                         ("BPS", "bps_krx"), ("DIV", "div_krx"), ("DPS", "dps_krx")):
+        for src, dst in (("DIV", "div"), ("DPS", "dps")):
             try:
                 v = float(krx_row.get(src))
                 valuation[dst] = v if v > 0 else None
@@ -282,8 +281,8 @@ def quant_summary(name, q):
     for r in q["quarterly"]:
         lines.append(f"  {r['q']}: 매출 {_eok(r['rev'])} 영업이익 {_eok(r['op'])} 지배순이익 {_eok(r['np_owner'])}")
     v = q["valuation"]
-    lines.append(f"  PER(TTM) {v.get('per_ttm')} | EPS(TTM) {v.get('eps_ttm')} | PBR(분기) {v.get('pbr_q')} | "
-                 f"BPS(분기) {v.get('bps_q')} | PER(KRX) {v.get('per_krx')} | PBR(KRX) {v.get('pbr_krx')} | 배당 {v.get('div_krx')}%")
+    lines.append(f"  PER {v.get('per')} | EPS {v.get('eps')} | PBR {v.get('pbr')} | "
+                 f"BPS {v.get('bps')} | 배당수익률 {v.get('div')}% | DPS {v.get('dps')}")
     return "\n".join(lines)
 
 
@@ -296,7 +295,7 @@ SCHEMA_V2 = """{
   "earnings": {"ko": "실적 분석 문단(7~9문장). 아래 [확정 재무]의 연간·분기 수치를 직접 인용·해석. 증감 원인, 마진 추이, 일회성 요인", "en": "..."},
   "industry": {"ko": "산업 분석 문단(6~8문장). 전방시장 수급·사이클 위치·경쟁사 대비 포지션", "en": "..."},
   "outlook":  {"ko": "전망 문단(6~8문장). 회사 가이던스·수주·증설·신제품 일정 등 확인된 사실 기반", "en": "..."},
-  "valuation_comment": {"ko": "밸류에이션 해설 4~6문장. 제공된 PER(TTM/결산)·PBR 수치를 과거 밴드·업종 맥락에서 서술. '비싸다/싸다' 단정·권유 금지, 사실 비교만", "en": "..."},
+  "valuation_comment": {"ko": "밸류에이션 해설 4~6문장. 제공된 PER·PBR·배당 수치를 과거 밴드·업종 맥락에서 서술. 'TTM' 등 전문 용어 금지. '비싸다/싸다' 단정·권유 금지, 사실 비교만", "en": "..."},
   "bull":     [ {"title": {"ko":"","en":""}, "body": {"ko":"3~4문장","en":""}}, ... 3개 ],
   "bear":     [ {"title": {"ko":"","en":""}, "body": {"ko":"3~4문장","en":""}}, ... 3개 ],
   "risks":    [ {"cat": {"ko":"","en":""}, "body": {"ko":"3~4문장","en":""}}, ... 3개 ],
@@ -326,7 +325,7 @@ def build_prompt_v2(stock, quant, as_of):
 [작성 지침]
 1. web_search로 최신 사업 현황·업황·뉴스·가이던스를 조사하세요(한국어, 3~6회). 신뢰 출처만: DART·기업 IR·증권사 리포트·주요 언론. 나무위키 등 위키·블로그·커뮤니티 금지.
 2. **재무 수치는 위 [확정 재무] JSON의 값만 사용하세요.** 검색에서 다른 수치가 나오면 위 값을 우선합니다. 거기 없는 숫자(예: 부문별 매출액)는 검색으로 확인된 것만 출처·시점과 함께 쓰고, 확인 안 되면 정성 서술로 대체하세요. 숫자를 절대 지어내지 마세요.
-3. earnings 섹션은 제공된 분기 추이(전 분기·전년 동기 비교)를 구체적으로 해석하세요. valuation_comment 는 per_ttm(최근 4개 분기 기준)과 per_krx(직전 결산 기준)가 왜 다른지도 자연스럽게 짚어주세요(실적 급변 시).
+3. earnings 섹션은 제공된 분기 추이(전 분기·전년 동기 비교)를 구체적으로 해석하세요. valuation_comment 는 제공된 per·pbr·배당 수치를 과거 수준·업종 맥락에서 서술하세요. 사용자 화면에는 'PER', 'PBR'로만 표기되므로 'TTM', '12개월 선행/후행' 같은 전문 용어를 본문에 쓰지 마세요. 필요하면 "최근 4개 분기 이익 기준" 정도로만 자연스럽게 표현하세요.
 4. checkpoints 는 '다음에 무엇을 확인해야 하는가'입니다 — 다가오는 분기 실적 발표, 수주·증설·규제 이벤트 등 확인 가능한 일정 위주로.
 5. 균형: 강세·약세 요인을 같은 무게로. 투자의견·매수/매도·목표주가 표현 금지(정보 제공용).
 6. 한국어(ko)/영어(en) 모두 작성. 영어에 한국어 혼입 금지.
