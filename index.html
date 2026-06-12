@@ -489,7 +489,7 @@ body::after,body::before{display:none}
   .lp-sub{margin-left:auto;margin-right:auto}
   .lp-cta{justify-content:center}
   .lp-stats{justify-content:center;gap:26px}
-  .lp-stage{order:-1;min-height:250px;max-height:280px}
+  .lp-stage{order:-1;min-height:250px;max-height:280px;cursor:default;touch-action:auto}
 }
 </style>
 </head>
@@ -835,16 +835,18 @@ try{
   }
   resize(); addEventListener('resize',resize); setTimeout(resize,900);
 
-  /* 인터랙션 — 드래그 텀블(관성) + 패럴랙스 */
+  /* 인터랙션 — 드래그 텀블(관성). 모바일은 Resend처럼 자동 회전만(터치 미반응) */
   let offX=0.0,offY=0.0,vx=0,vy=0,dragging=false,lx=0,ly=0;
-  stage.addEventListener('pointerdown',e=>{dragging=true;lx=e.clientX;ly=e.clientY;stage.classList.add('drag');stage.setPointerCapture(e.pointerId);});
-  stage.addEventListener('pointermove',e=>{
-    if(!dragging)return;
-    vy=(e.clientX-lx)*0.0065; vx=(e.clientY-ly)*0.005;
-    offY+=vy; offX+=vx; lx=e.clientX; ly=e.clientY;
-  });
-  const end=()=>{dragging=false;stage.classList.remove('drag');};
-  stage.addEventListener('pointerup',end);stage.addEventListener('pointercancel',end);
+  if(!mobile){
+    stage.addEventListener('pointerdown',e=>{dragging=true;lx=e.clientX;ly=e.clientY;stage.classList.add('drag');stage.setPointerCapture(e.pointerId);});
+    stage.addEventListener('pointermove',e=>{
+      if(!dragging)return;
+      vy=(e.clientX-lx)*0.0065; vx=(e.clientY-ly)*0.005;
+      offY+=vy; offX+=vx; lx=e.clientX; ly=e.clientY;
+    });
+    const end=()=>{dragging=false;stage.classList.remove('drag');};
+    stage.addEventListener('pointerup',end);stage.addEventListener('pointercancel',end);
+  }
 
   const clock=new THREE.Clock();
   renderer.setAnimationLoop(()=>{
