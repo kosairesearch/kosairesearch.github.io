@@ -1,39 +1,24 @@
-=== 공시 트리거 생성(batch) Thu Jun 11 15:01:45 UTC 2026 · 대상 001720,092440,434480,067010 ===
-## 🤖 Batch 제출 — 대상 4개 / 상위 100개 (최근 2200개 건너뜀) · 모델 claude-sonnet-4-6
+=== 공시 트리거 생성(batch) Fri Jun 12 12:48:59 UTC 2026 · 대상 0017J0,039560,141000,216400 ===
+## 🤖 Batch 제출 — 대상 4개 / 상위 100개 (최근 706개 건너뜀) · 모델 claude-sonnet-4-6
+  · 준비 0017J0 세미티에스 (DART X)
+{'status': '013', 'message': '조회된 데이타가 없습니다.'}
+
+{'status': '013', 'message': '조회된 데이타가 없습니다.'}
+
+  · 준비 039560 다산네트웍스 (DART O)
+{'status': '013', 'message': '조회된 데이타가 없습니다.'}
+
+{'status': '013', 'message': '조회된 데이타가 없습니다.'}
+
+  · 준비 141000 비아트론 (DART O)
 {'status': '013', 'message': '조회된 데이타가 없습니다.'}
 
 {'status': '013', 'message': '조회된 데이타가 없습니다.'}
 
 {'status': '013', 'message': '조회된 데이타가 없습니다.'}
 
-  · 준비 001720 신영증권 (DART O)
-{'status': '013', 'message': '조회된 데이타가 없습니다.'}
-
-{'status': '013', 'message': '조회된 데이타가 없습니다.'}
-
-{'status': '013', 'message': '조회된 데이타가 없습니다.'}
-
-  · 준비 092440 기신정기 (DART O)
-{'status': '013', 'message': '조회된 데이타가 없습니다.'}
-
-{'status': '013', 'message': '조회된 데이타가 없습니다.'}
-
-  · 준비 434480 모니터랩 (DART O)
-{'status': '013', 'message': '조회된 데이타가 없습니다.'}
-
-{'status': '013', 'message': '조회된 데이타가 없습니다.'}
-
-{'status': '013', 'message': '조회된 데이타가 없습니다.'}
-
-  · 준비 067010 이씨에스 (DART O)
-- ✅ 배치 제출 완료: msgbatch_015XXyemeweXnhvd3aENq66v (4건) → data/batch_state.json
-  · 상태 in_progress · 처리 4/성공 0/오류 0
-  · 상태 in_progress · 처리 4/성공 0/오류 0
-  · 상태 in_progress · 처리 4/성공 0/오류 0
-  · 상태 in_progress · 처리 4/성공 0/오류 0
-  · 상태 in_progress · 처리 4/성공 0/오류 0
-  · 상태 in_progress · 처리 4/성공 0/오류 0
-  · 상태 in_progress · 처리 4/성공 0/오류 0
+  · 준비 216400 인바이츠바이오코아 (DART O)
+- ✅ 배치 제출 완료: msgbatch_0172Ypwrpofi5jy9d87X2LFk (4건) → data/batch_state.json
   · 상태 in_progress · 처리 4/성공 0/오류 0
   · 상태 in_progress · 처리 4/성공 0/오류 0
   · 상태 in_progress · 처리 4/성공 0/오류 0
@@ -45,5 +30,6 @@
   · 상태 in_progress · 처리 4/성공 0/오류 0
   · 상태 in_progress · 처리 4/성공 0/오류 0
   · 상태 ended · 처리 0/성공 4/오류 0
+- 🧹 유니버스 제외 종목 리포트 정리: 1건 (204210)
 
-✅ 회수 완료 · 성공 4/실패 0 · 총 보유 2688개 → data/reports/ + reports-index.js
+✅ 회수 완료 · 성공 4/실패 0 · 총 보유 2687개 → data/reports/ + reports-index.js
