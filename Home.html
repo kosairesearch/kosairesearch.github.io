@@ -303,7 +303,8 @@ section.block{padding:36px 0}
 .tab.active{background:#000;color:#fff;border-color:#000}
 :root[data-theme="dark"] .tab.active{background:#fff;color:#000;border-color:#fff}
 
-.mover-row{overflow:hidden;padding:4px 4px 16px;cursor:grab;touch-action:pan-y}
+.mover-row{overflow:hidden;padding:4px 4px 16px;cursor:grab;touch-action:pan-y;user-select:none;-webkit-user-select:none}
+.mover-row a{-webkit-user-drag:none}
 .mover-row:active{cursor:grabbing}
 .mover-track{display:flex;gap:14px;width:max-content;will-change:transform}
 .mover-card{flex:0 0 248px;display:flex;flex-direction:column;gap:9px;padding:16px;
@@ -899,7 +900,7 @@ renderTabs();
 /* ---- 컨베이어 마키: 자동으로 천천히 흐르고, 드래그/스와이프로 직접 넘김 ---- */
 const MQ_SPEED=24; // px/s
 const mqReduced=matchMedia('(prefers-reduced-motion: reduce)').matches;
-let mqTrack=null,mqSet=0,mqX=0,mqV=0,mqDrag=false,mqLX=0,mqMoved=0,mqRAF=0,mqLT=0;
+let mqTrack=null,mqSet=0,mqX=0,mqV=0,mqDrag=false,mqLX=0,mqMoved=0,mqRAF=0,mqLT=0,mqMT=0;
 function mqInit(track){
   mqTrack=track; mqX=0; mqV=0;
   if(!track) return;
@@ -913,20 +914,26 @@ function mqStep(ts){
   if(!mqTrack) return;
   if(!mqDrag){
     if(!mqReduced) mqX+=MQ_SPEED*dt;       // 회전초밥처럼 일정하게
-    mqX+=mqV*dt; mqV*=Math.pow(0.002,dt);  // 드래그 관성 감쇠
+    mqX+=mqV*dt; mqV*=Math.pow(0.3,dt);    // 플릭 관성: ~1.5초간 시원하게 미끄러짐
+    if(Math.abs(mqV)<6) mqV=0;
   }
   mqX=((mqX%mqSet)+mqSet)%mqSet;
   mqTrack.style.transform=`translate3d(${-mqX}px,0,0)`;
 }
+moverRow.addEventListener('dragstart',e=>e.preventDefault());
 moverRow.addEventListener('pointerdown',e=>{
   if(!mqTrack) return;
-  mqDrag=true; mqLX=e.clientX; mqMoved=0; mqV=0;
+  mqDrag=true; mqLX=e.clientX; mqMoved=0; mqV=0; mqMT=performance.now();
   try{ moverRow.setPointerCapture(e.pointerId); }catch(_){}
 });
 moverRow.addEventListener('pointermove',e=>{
   if(!mqDrag||!mqTrack) return;
+  const now=performance.now(), dtE=Math.max(1,now-mqMT); mqMT=now;
   const dx=e.clientX-mqLX; mqLX=e.clientX;
-  mqX-=dx; mqMoved+=Math.abs(dx); mqV=-dx*55;
+  mqX-=dx; mqMoved+=Math.abs(dx);
+  const inst=-dx/dtE*1000;                          // px/s
+  mqV=mqV*0.3+inst*0.7;                             // 스무딩된 플릭 속도
+  mqV=Math.max(-3200,Math.min(3200,mqV));
 });
 ['pointerup','pointercancel'].forEach(ev=>moverRow.addEventListener(ev,()=>{ mqDrag=false; }));
 moverRow.addEventListener('click',e=>{ if(mqMoved>8){ e.preventDefault(); e.stopPropagation(); } mqMoved=0; },true);
