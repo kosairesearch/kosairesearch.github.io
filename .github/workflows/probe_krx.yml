@@ -24,6 +24,9 @@ jobs:
         run: pip install -r requirements.txt
 
       - name: 프로브 실행 (결과를 파일로)
+        env:
+          KRX_ID: ${{ secrets.KRX_ID }}
+          KRX_PW: ${{ secrets.KRX_PW }}
         run: |
           python scripts/probe_krx_fundamental.py 2>&1 | tee data/probe_result.txt || true
 
