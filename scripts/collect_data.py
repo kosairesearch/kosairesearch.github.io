@@ -44,6 +44,7 @@ NAME_EN_OVERRIDE = {
     "0011A0": "Axbis",
     "0004V0": "NVR Motion",
     "0015S0": "Fescaro",
+    "0017J0": "SemiTS",
     "0007J0": "Inventera",
     "0015N0": "Aromatica",
     "0013V0": "Samjin Food",

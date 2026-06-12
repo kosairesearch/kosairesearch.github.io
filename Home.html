@@ -303,11 +303,10 @@ section.block{padding:36px 0}
 .tab.active{background:#000;color:#fff;border-color:#000}
 :root[data-theme="dark"] .tab.active{background:#fff;color:#000;border-color:#fff}
 
-.mover-row{display:flex;gap:14px;overflow-x:auto;padding:4px 4px 16px;scroll-snap-type:x mandatory;
-  scrollbar-width:thin}
-.mover-row::-webkit-scrollbar{height:8px}
-.mover-row::-webkit-scrollbar-thumb{background:rgba(0,0,0,.18);border-radius:99px}
-.mover-card{flex:0 0 248px;scroll-snap-align:start;display:flex;flex-direction:column;gap:9px;padding:16px;
+.mover-row{overflow:hidden;padding:4px 4px 16px;cursor:grab;touch-action:pan-y}
+.mover-row:active{cursor:grabbing}
+.mover-track{display:flex;gap:14px;width:max-content;will-change:transform}
+.mover-card{flex:0 0 248px;display:flex;flex-direction:column;gap:9px;padding:16px;
   text-decoration:none;color:var(--fg-1);transition:transform .14s,box-shadow .14s;cursor:pointer}
 .mover-card:hover{transform:translateY(-3px)}
 .mover-card .mover-rank{font:600 11px var(--font-mono);color:var(--fg-3)}
@@ -897,11 +896,50 @@ function renderTabs(){
   tabsEl.innerHTML = html;
 }
 renderTabs();
+/* ---- 컨베이어 마키: 자동으로 천천히 흐르고, 드래그/스와이프로 직접 넘김 ---- */
+const MQ_SPEED=24; // px/s
+const mqReduced=matchMedia('(prefers-reduced-motion: reduce)').matches;
+let mqTrack=null,mqSet=0,mqX=0,mqV=0,mqDrag=false,mqLX=0,mqMoved=0,mqRAF=0,mqLT=0;
+function mqInit(track){
+  mqTrack=track; mqX=0; mqV=0;
+  if(!track) return;
+  mqSet=track.scrollWidth/2;
+  if(mqSet<=moverRow.clientWidth+20){ track.style.transform=''; mqTrack=null; return; } // 카드 적으면 정적
+  if(!mqRAF) mqRAF=requestAnimationFrame(mqStep);
+}
+function mqStep(ts){
+  mqRAF=requestAnimationFrame(mqStep);
+  const dt=Math.min(0.05,(ts-mqLT)/1000||0); mqLT=ts;
+  if(!mqTrack) return;
+  if(!mqDrag){
+    if(!mqReduced) mqX+=MQ_SPEED*dt;       // 회전초밥처럼 일정하게
+    mqX+=mqV*dt; mqV*=Math.pow(0.002,dt);  // 드래그 관성 감쇠
+  }
+  mqX=((mqX%mqSet)+mqSet)%mqSet;
+  mqTrack.style.transform=`translate3d(${-mqX}px,0,0)`;
+}
+moverRow.addEventListener('pointerdown',e=>{
+  if(!mqTrack) return;
+  mqDrag=true; mqLX=e.clientX; mqMoved=0; mqV=0;
+  try{ moverRow.setPointerCapture(e.pointerId); }catch(_){}
+});
+moverRow.addEventListener('pointermove',e=>{
+  if(!mqDrag||!mqTrack) return;
+  const dx=e.clientX-mqLX; mqLX=e.clientX;
+  mqX-=dx; mqMoved+=Math.abs(dx); mqV=-dx*55;
+});
+['pointerup','pointercancel'].forEach(ev=>moverRow.addEventListener(ev,()=>{ mqDrag=false; }));
+moverRow.addEventListener('click',e=>{ if(mqMoved>8){ e.preventDefault(); e.stopPropagation(); } mqMoved=0; },true);
+
 function renderMovers(){
   const list = (activeTab==='전체' ? MOVERS : MOVERS.filter(m=>mcats(m).includes(activeTab))).slice(0,12);
-  moverRow.innerHTML = list.length
-    ? list.map((m,i)=>KOS.moverCard(m,i+1)).join('')
-    : `<div class="empty-msg" style="display:block;width:100%">${KOS.T('해당 업종 종목이 없습니다.')}</div>`;
+  if(!list.length){
+    moverRow.innerHTML = `<div class="empty-msg" style="display:block;width:100%">${KOS.T('해당 업종 종목이 없습니다.')}</div>`;
+    mqInit(null); return;
+  }
+  const cards = list.map((m,i)=>KOS.moverCard(m,i+1)).join('');
+  moverRow.innerHTML = `<div class="mover-track">${cards}${cards}</div>`;   // 두 벌 이어붙여 무한 루프
+  mqInit(moverRow.querySelector('.mover-track'));
 }
 renderMovers();
 tabsEl.addEventListener('click', e=>{
