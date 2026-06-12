@@ -860,8 +860,8 @@ KOSi18n.register({
     ko:{ home:'홈', reports:'리포트', watch:'워치리스트 추가', watched:'워치리스트 추가됨', watchShort:'워치리스트',
       mk:{price:'현재가',chg:'전일 대비',mcap:'시가총액',amt:'거래대금',vol:'거래량',shares:'상장주식수',market:'시장',sector:'업종'},
       sec:{overview:'리포트 개요',business:'사업 구조',recent:'최근 실적·주가',outlook:'전망',bull:'강세 요인',bear:'약세 요인',risk:'리스크 요인',verdict:'종합 의견',sources:'참고 출처',fin:'실적 추이',earnings:'실적 분석',industry:'산업 분석',valuation:'밸류에이션',chk:'다음 체크포인트'},
-      fin:{annual:'연간 실적 (연결)',quarterly:'분기 실적 (연결)',year:'연도',q:'분기',rev:'매출액',op:'영업이익',np:'지배주주 순이익',opm:'영업이익률',roe:'ROE',debt:'부채비율',perT:'PER (TTM)',perK:'PER (직전 결산)',pbr:'PBR',divy:'배당수익률',epsT:'EPS (TTM)',bps:'BPS',na:'산출 불가 (적자)',nodata:'—',
-        foot:'· 재무는 DART 공시 연결 확정치 · PER(TTM)·EPS(TTM)은 최근 4개 분기({win}) 지배주주 순이익 합산 자체 산출 · PER(직전 결산)·PBR·배당수익률·BPS는 한국거래소(KRX) 공식 값'},
+      fin:{annual:'연간 실적 (연결)',quarterly:'분기 실적 (연결)',year:'연도',q:'분기',rev:'매출액',op:'영업이익',np:'지배주주 순이익',opm:'영업이익률',roe:'ROE',debt:'부채비율',perT:'PER (TTM)',perK:'PER (직전 결산)',pbr:'PBR (최근 분기)',divy:'배당수익률',epsT:'EPS (TTM)',bps:'BPS (최근 분기)',na:'산출 불가 (적자)',nodata:'—',
+        foot:'· 재무는 DART 공시 연결 확정치 · PER(TTM)·EPS(TTM)=최근 4개 분기({win}) 지배주주 순이익 ÷ 발행주식총수(보통주+우선주) · PBR·BPS=최근 분기말 지배주주 자본 기준 자체 산출 · PER(직전 결산)·배당수익률은 한국거래소(KRX) 공식 값'},
       eyebrow:'AI 리서치 리포트', reportDate:'리포트 작성일', dataDate:'데이터 기준일', model:'생성 모델', stance:'투자 의견',
       srcKRX:'한국거래소 (KRX)', srcKRXsub:'시세·시가총액 데이터', srcDART:'금융감독원 전자공시 (DART)', srcDARTsub:'재무·공시 원문',
       discT:'면책 조항',
@@ -870,8 +870,8 @@ KOSi18n.register({
     en:{ home:'Home', reports:'Reports', watch:'Add to watchlist', watched:'Added to watchlist', watchShort:'Watchlist',
       mk:{price:'Price',chg:'Day change',mcap:'Market cap',amt:'Trading value',vol:'Volume',shares:'Shares out.',market:'Market',sector:'Sector'},
       sec:{overview:'Report Overview',business:'Business',recent:'Recent Results & Price',outlook:'Outlook',bull:'Bull Factors',bear:'Bear Factors',risk:'Risk Factors',verdict:'Verdict',sources:'Sources',fin:'Financial Trends',earnings:'Earnings Analysis',industry:'Industry',valuation:'Valuation',chk:'What to Watch Next'},
-      fin:{annual:'Annual (consolidated)',quarterly:'Quarterly (consolidated)',year:'Year',q:'Quarter',rev:'Revenue',op:'Operating profit',np:'Net profit (owners)',opm:'OP margin',roe:'ROE',debt:'Debt ratio',perT:'P/E (TTM)',perK:'P/E (last FY)',pbr:'P/B',divy:'Div. yield',epsT:'EPS (TTM)',bps:'BPS',na:'n/a (loss)',nodata:'—',
-        foot:'· Financials are confirmed DART consolidated figures · P/E(TTM) & EPS(TTM) computed in-house from trailing-4-quarter net profit attributable to owners ({win}) · P/E(last FY), P/B, dividend yield and BPS are official KRX values'},
+      fin:{annual:'Annual (consolidated)',quarterly:'Quarterly (consolidated)',year:'Year',q:'Quarter',rev:'Revenue',op:'Operating profit',np:'Net profit (owners)',opm:'OP margin',roe:'ROE',debt:'Debt ratio',perT:'P/E (TTM)',perK:'P/E (last FY)',pbr:'P/B (latest qtr)',divy:'Div. yield',epsT:'EPS (TTM)',bps:'BPS (latest qtr)',na:'n/a (loss)',nodata:'—',
+        foot:'· Financials are confirmed DART consolidated figures · P/E(TTM) & EPS(TTM) = trailing-4-quarter net profit attributable to owners ({win}) ÷ total issued shares (common + preferred) · P/B & BPS use latest-quarter equity attributable to owners, computed in-house · P/E(last FY) and dividend yield are official KRX values'},
       eyebrow:'AI Research Report', reportDate:'Report date', dataDate:'Data as of', model:'Model', stance:'Stance',
       srcKRX:'Korea Exchange (KRX)', srcKRXsub:'Price & market-cap data', srcDART:'DART (FSS e-disclosure)', srcDARTsub:'Financials & filings',
       discT:'Disclaimer',
@@ -984,10 +984,10 @@ KOSi18n.register({
     var cells=[
       [f.perT, V.per_ttm!=null?fx(V.per_ttm,L()==='en'?'x':'배'):(lossNa?f.na:f.nodata)],
       [f.perK, V.per_krx!=null?fx(V.per_krx,L()==='en'?'x':'배'):f.nodata],
-      [f.pbr,  V.pbr_krx!=null?fx(V.pbr_krx,L()==='en'?'x':'배'):f.nodata],
+      [f.pbr,  (V.pbr_q!=null?fx(V.pbr_q,L()==='en'?'x':'배'):(V.pbr_krx!=null?fx(V.pbr_krx,L()==='en'?'x':'배'):f.nodata))],
       [f.divy, V.div_krx!=null?fpct(V.div_krx):f.nodata],
       [f.epsT, V.eps_ttm!=null?fx(V.eps_ttm,L()==='en'?'':'원'):f.nodata],
-      [f.bps,  V.bps_krx!=null?fx(V.bps_krx,L()==='en'?'':'원'):f.nodata]
+      [f.bps,  (V.bps_q!=null?fx(V.bps_q,L()==='en'?'':'원'):(V.bps_krx!=null?fx(V.bps_krx,L()==='en'?'':'원'):f.nodata))]
     ];
     h+='<div class="valgrid">'+cells.map(function(c){return '<div class="vm"><div class="vk">'+esc(c[0])+'</div><div class="vv">'+esc(c[1])+'</div></div>';}).join('')+'</div>';
     h+='<div class="tbl-foot">'+esc(f.foot.replace('{win}',V.ttm_window||'-'))+'</div>';

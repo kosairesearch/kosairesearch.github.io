@@ -193,16 +193,25 @@ def collect_quant(dart, ticker, krx_row, stock):
         if None not in (py_q1, cy_q1, fy_np):
             ttm_np = fy_np - py_q1 + cy_q1
 
-    mcap_won = (stock.get("mcap") or 0) * 1e12
-    shares = stock.get("shares") or 0
-    per_ttm = round(mcap_won / ttm_np, 1) if (ttm_np and ttm_np > 0 and mcap_won) else None
-    eps_ttm = int(ttm_np / shares) if (ttm_np and shares) else None
+    # 분모: 발행주식총수(보통+우선) — 네이버·토스 표기와 같은 기준
+    price = stock.get("price")
+    total_sh = dart_total_shares(dart, ticker) or stock.get("shares") or 0
+    eps_ttm = int(ttm_np / total_sh) if (ttm_np and total_sh) else None
+    per_ttm = round(price / eps_ttm, 1) if (eps_ttm and eps_ttm > 0 and price) else None
+
+    # BPS·PBR: 최근 분기말 지배주주 자본 기준 (네이버와 동일 시점)
+    eqo_q = _bs(dq1c, "equity_owner") or _bs(dq1c, "equity")
+    bps_q = int(eqo_q / total_sh) if (eqo_q and total_sh) else None
+    pbr_q = round(price / bps_q, 2) if (bps_q and price) else None
 
     valuation = {
-        "price": stock.get("price"), "mcap": stock.get("mcap"), "shares": shares,
+        "price": price, "mcap": stock.get("mcap"), "shares": stock.get("shares"),
+        "total_shares": total_sh,
         "per_ttm": per_ttm, "eps_ttm": eps_ttm,
+        "bps_q": bps_q, "pbr_q": pbr_q,
         "ttm_window": f"{py}Q2~{cur}Q1" if ttm_np else None,
         "ttm_np_owner": ttm_np,
+        "basis": "EPS·PER(TTM)=최근4분기 지배순이익÷발행주식총수(보통+우선) · BPS·PBR=최근 분기말 지배자본 기준",
     }
     if krx_row is not None:
         for src, dst in (("PER", "per_krx"), ("PBR", "pbr_krx"), ("EPS", "eps_krx"),
@@ -220,6 +229,29 @@ def collect_quant(dart, ticker, krx_row, stock):
         "quarterly": quarterly,
         "valuation": valuation,
     }
+
+
+def dart_total_shares(dart, ticker):
+    """발행주식총수(보통주+우선주) — 네이버·토스와 같은 주당지표 분모.
+    최신 분기보고서 → 직전 사업보고서 순으로 시도. 실패 시 None."""
+    cur = datetime.date.today().year
+    for year, code in ((cur, "11013"), (cur - 1, "11011")):
+        try:
+            df = dart.report(ticker, "주식총수", year, code)
+        except Exception:
+            df = None
+        if df is None or getattr(df, "empty", True):
+            continue
+        tot = 0
+        for _, r in df.iterrows():
+            se = str(r.get("se", "")).replace(" ", "")
+            if se in ("보통주", "우선주"):
+                v = g._num(r.get("istc_totqy"))
+                if v and v > 0:
+                    tot += v
+        if tot:
+            return tot
+    return None
 
 
 # ── 정량 2: KRX 공식 밸류에이션 ───────────────────────────────────────
@@ -250,8 +282,8 @@ def quant_summary(name, q):
     for r in q["quarterly"]:
         lines.append(f"  {r['q']}: 매출 {_eok(r['rev'])} 영업이익 {_eok(r['op'])} 지배순이익 {_eok(r['np_owner'])}")
     v = q["valuation"]
-    lines.append(f"  PER(TTM) {v.get('per_ttm')} | PER(KRX결산) {v.get('per_krx')} | "
-                 f"PBR {v.get('pbr_krx')} | 배당 {v.get('div_krx')}% | EPS(TTM) {v.get('eps_ttm')}")
+    lines.append(f"  PER(TTM) {v.get('per_ttm')} | EPS(TTM) {v.get('eps_ttm')} | PBR(분기) {v.get('pbr_q')} | "
+                 f"BPS(분기) {v.get('bps_q')} | PER(KRX) {v.get('per_krx')} | PBR(KRX) {v.get('pbr_krx')} | 배당 {v.get('div_krx')}%")
     return "\n".join(lines)
 
 
