@@ -921,16 +921,18 @@ function mqStep(ts){
   mqTrack.style.transform=`translate3d(${-mqX}px,0,0)`;
 }
 moverRow.addEventListener('dragstart',e=>e.preventDefault());
+let mqPid=null,mqCap=false;
 moverRow.addEventListener('pointerdown',e=>{
   if(!mqTrack) return;
   mqDrag=true; mqLX=e.clientX; mqMoved=0; mqV=0; mqMT=performance.now();
-  try{ moverRow.setPointerCapture(e.pointerId); }catch(_){}
+  mqPid=e.pointerId; mqCap=false;            // 캡처는 '진짜 드래그'로 판정될 때만(클릭 보존)
 });
 moverRow.addEventListener('pointermove',e=>{
   if(!mqDrag||!mqTrack) return;
   const now=performance.now(), dtE=Math.max(1,now-mqMT); mqMT=now;
   const dx=e.clientX-mqLX; mqLX=e.clientX;
   mqX-=dx; mqMoved+=Math.abs(dx);
+  if(!mqCap&&mqMoved>8){ mqCap=true; try{ moverRow.setPointerCapture(mqPid); }catch(_){} }
   const inst=-dx/dtE*1000;                          // px/s
   mqV=mqV*0.3+inst*0.7;                             // 스무딩된 플릭 속도
   mqV=Math.max(-3200,Math.min(3200,mqV));
