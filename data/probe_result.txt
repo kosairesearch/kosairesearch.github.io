@@ -1,0 +1,20 @@
+universe: 2687개 / 기준일 20260612
+KRX 로그인 실패: KRX_ID 또는 KRX_PW 환경 변수가 설정되지 않았습니다.
+Error occurred in get_market_fundamental_by_ticker: Expecting value: line 1 column 1 (char 0)
+Traceback (most recent call last):
+  File "/home/runner/work/kosairesearch.github.io/kosairesearch.github.io/scripts/probe_krx_fundamental.py", line 68, in <module>
+    main()
+  File "/home/runner/work/kosairesearch.github.io/kosairesearch.github.io/scripts/probe_krx_fundamental.py", line 28, in main
+    f = krx.get_market_fundamental_by_ticker(date, market=mkt)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/hostedtoolcache/Python/3.11.15/x64/lib/python3.11/site-packages/pykrx/stock/stock_api.py", line 776, in get_market_fundamental_by_ticker
+    holiday = (df[["BPS", "PER", "PBR", "EPS", "DIV", "DPS"]] == 0).all(axis=None)
+               ~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/hostedtoolcache/Python/3.11.15/x64/lib/python3.11/site-packages/pandas/core/frame.py", line 4119, in __getitem__
+    indexer = self.columns._get_indexer_strict(key, "columns")[1]
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/hostedtoolcache/Python/3.11.15/x64/lib/python3.11/site-packages/pandas/core/indexes/base.py", line 6212, in _get_indexer_strict
+    self._raise_if_missing(keyarr, indexer, axis_name)
+  File "/opt/hostedtoolcache/Python/3.11.15/x64/lib/python3.11/site-packages/pandas/core/indexes/base.py", line 6261, in _raise_if_missing
+    raise KeyError(f"None of [{key}] are in the [{axis_name}]")
+KeyError: "None of [Index(['BPS', 'PER', 'PBR', 'EPS', 'DIV', 'DPS'], dtype='object')] are in the [columns]"
