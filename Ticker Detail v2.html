@@ -254,6 +254,14 @@ table.dt .pos{color:var(--up);font-weight:700}table.dt .neg{color:var(--down);fo
 :root[data-theme="dark"] .tl-date .badge{background:rgba(255,255,255,.1)}
 .tl p{margin:0;font:400 15px/1.65 var(--font-sans);color:var(--fg-2)}
 
+/* valuation cards (v2) */
+.valgrid{display:grid;grid-template-columns:repeat(3,1fr);gap:10px;margin-bottom:12px}
+.valgrid .vm{padding:16px 18px;border:1px solid var(--hair);border-radius:var(--radius-md);background:rgba(255,255,255,.35)}
+:root[data-theme="dark"] .valgrid .vm{background:rgba(255,255,255,.03)}
+.valgrid .vk{font:600 12px var(--font-sans);color:var(--fg-3);margin-bottom:6px}
+.valgrid .vv{font:700 20px var(--font-sans);letter-spacing:-.02em;color:var(--fg-1)}
+@media(max-width:720px){.valgrid{grid-template-columns:repeat(2,1fr)}}
+
 /* wrap-up */
 .wrapup{padding:24px 26px}
 .wrapup .label{font:700 11px var(--font-sans);letter-spacing:.06em;color:var(--fg-3);margin-bottom:10px}
@@ -830,9 +838,15 @@ KOSi18n.register({
   /* 전체 리포트 본문은 종목별 파일에서 그때 로드(모바일 최적화). 인덱스(REPORTS)는 목록·메타용. */
   var REP=null;
   try{
-    var _resp=await fetch('data/reports/'+encodeURIComponent(TK)+'.json',{cache:'no-cache'});
-    if(_resp.ok){ REP=await _resp.json(); }
-  }catch(_e){}
+    var _resp2=await fetch('data/reports_v2/'+encodeURIComponent(TK)+'.json',{cache:'no-cache'});
+    if(_resp2.ok){ REP=await _resp2.json(); }
+  }catch(_e2){}
+  if(!REP){
+    try{
+      var _resp=await fetch('data/reports/'+encodeURIComponent(TK)+'.json',{cache:'no-cache'});
+      if(_resp.ok){ REP=await _resp.json(); }
+    }catch(_e){}
+  }
   if(!STOCK){ STOCK={ ticker:TK, name:(REP?REP.name:TK), name_en:(REP?REP.name_en:TK),
     market:(REP?REP.market:''), sector:(REP?REP.sector:''), price:null, change:0,
     mcap:null, trading_value:null, volume:null, shares:null, rank:null }; }
@@ -845,7 +859,9 @@ KOSi18n.register({
   var UI={
     ko:{ home:'홈', reports:'리포트', watch:'워치리스트 추가', watched:'워치리스트 추가됨', watchShort:'워치리스트',
       mk:{price:'현재가',chg:'전일 대비',mcap:'시가총액',amt:'거래대금',vol:'거래량',shares:'상장주식수',market:'시장',sector:'업종'},
-      sec:{overview:'리포트 개요',business:'사업 구조',recent:'최근 실적·주가',outlook:'전망',bull:'강세 요인',bear:'약세 요인',risk:'리스크 요인',verdict:'종합 의견',sources:'참고 출처'},
+      sec:{overview:'리포트 개요',business:'사업 구조',recent:'최근 실적·주가',outlook:'전망',bull:'강세 요인',bear:'약세 요인',risk:'리스크 요인',verdict:'종합 의견',sources:'참고 출처',fin:'실적 추이',earnings:'실적 분석',industry:'산업 분석',valuation:'밸류에이션',chk:'다음 체크포인트'},
+      fin:{annual:'연간 실적 (연결)',quarterly:'분기 실적 (연결)',year:'연도',q:'분기',rev:'매출액',op:'영업이익',np:'지배주주 순이익',opm:'영업이익률',roe:'ROE',debt:'부채비율',perT:'PER (TTM)',perK:'PER (직전 결산)',pbr:'PBR',divy:'배당수익률',epsT:'EPS (TTM)',bps:'BPS',na:'산출 불가 (적자)',nodata:'—',
+        foot:'· 재무는 DART 공시 연결 확정치 · PER(TTM)·EPS(TTM)은 최근 4개 분기({win}) 지배주주 순이익 합산 자체 산출 · PER(직전 결산)·PBR·배당수익률·BPS는 한국거래소(KRX) 공식 값'},
       eyebrow:'AI 리서치 리포트', reportDate:'리포트 작성일', dataDate:'데이터 기준일', model:'생성 모델', stance:'투자 의견',
       srcKRX:'한국거래소 (KRX)', srcKRXsub:'시세·시가총액 데이터', srcDART:'금융감독원 전자공시 (DART)', srcDARTsub:'재무·공시 원문',
       discT:'면책 조항',
@@ -853,7 +869,9 @@ KOSi18n.register({
       none:'이 종목의 AI 리포트는 아직 준비되지 않았습니다. 시가총액 상위 종목부터 순차적으로 생성하고 있습니다.' },
     en:{ home:'Home', reports:'Reports', watch:'Add to watchlist', watched:'Added to watchlist', watchShort:'Watchlist',
       mk:{price:'Price',chg:'Day change',mcap:'Market cap',amt:'Trading value',vol:'Volume',shares:'Shares out.',market:'Market',sector:'Sector'},
-      sec:{overview:'Report Overview',business:'Business',recent:'Recent Results & Price',outlook:'Outlook',bull:'Bull Factors',bear:'Bear Factors',risk:'Risk Factors',verdict:'Verdict',sources:'Sources'},
+      sec:{overview:'Report Overview',business:'Business',recent:'Recent Results & Price',outlook:'Outlook',bull:'Bull Factors',bear:'Bear Factors',risk:'Risk Factors',verdict:'Verdict',sources:'Sources',fin:'Financial Trends',earnings:'Earnings Analysis',industry:'Industry',valuation:'Valuation',chk:'What to Watch Next'},
+      fin:{annual:'Annual (consolidated)',quarterly:'Quarterly (consolidated)',year:'Year',q:'Quarter',rev:'Revenue',op:'Operating profit',np:'Net profit (owners)',opm:'OP margin',roe:'ROE',debt:'Debt ratio',perT:'P/E (TTM)',perK:'P/E (last FY)',pbr:'P/B',divy:'Div. yield',epsT:'EPS (TTM)',bps:'BPS',na:'n/a (loss)',nodata:'—',
+        foot:'· Financials are confirmed DART consolidated figures · P/E(TTM) & EPS(TTM) computed in-house from trailing-4-quarter net profit attributable to owners ({win}) · P/E(last FY), P/B, dividend yield and BPS are official KRX values'},
       eyebrow:'AI Research Report', reportDate:'Report date', dataDate:'Data as of', model:'Model', stance:'Stance',
       srcKRX:'Korea Exchange (KRX)', srcKRXsub:'Price & market-cap data', srcDART:'DART (FSS e-disclosure)', srcDARTsub:'Financials & filings',
       discT:'Disclaimer',
@@ -919,6 +937,84 @@ KOSi18n.register({
       +(ttl?'<span class="src-ttl">'+ttl+'</span>':'')+'</span>'
       +'<svg class="src-ext" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17 17 7M17 7H9M17 7v8"/></svg></a>'; }
   function srcCard(u){ return srcCardL(srcHost(u), srcTitle(u), u); }
+  function fwon(v){ if(v==null)return '—'; v=+v; var sg=v<0?'-':''; var a=Math.abs(v);
+    if(L()==='en'){ if(a>=1e12)return sg+'₩'+(a/1e12).toFixed(1)+'T'; if(a>=1e8)return sg+'₩'+(a/1e9).toFixed(1)+'B'; return sg+'₩'+Math.round(a).toLocaleString('en-US'); }
+    if(a>=1e12)return sg+(a/1e12).toFixed(1)+'조'; if(a>=1e8)return sg+Math.round(a/1e8).toLocaleString('en-US')+'억'; return sg+Math.round(a).toLocaleString('en-US')+'원'; }
+  function fpct(v){ return v==null?'—':(+v).toFixed(1)+'%'; }
+  function fx(v,suf){ return v==null?'—':(+v).toLocaleString('en-US')+(suf||''); }
+  function negc(v){ return (v!=null&&v<0)?' class="neg"':''; }
+  function renderV2(u){
+    var Q=REP.quant||{}, V=Q.valuation||{}, f=u.fin;
+    var h='', n=1;
+    h+='<div class="rep-masthead"><h1 class="rep-headline">'+esc(pk(REP.title))+'</h1></div>';
+    h+=secOpen(pad(n++),'REPORT OVERVIEW',u.sec.overview);
+    if(pk(REP.lead))h+='<p class="desc">'+esc(pk(REP.lead))+'</p>';
+    if(REP.keypoints&&REP.keypoints.length)h+='<ol class="kpoints">'+REP.keypoints.map(function(k){return '<li>'+esc(pk(k))+'</li>';}).join('')+'</ol>';
+    h+='</section><hr class="hairline" />';
+    h+=secOpen(pad(n++),'BUSINESS',u.sec.business)+prose(REP.business)+'</section><hr class="hairline" />';
+    /* 실적 추이 — DART 확정 수치 테이블 */
+    h+=secOpen(pad(n++),'FINANCIALS',u.sec.fin);
+    var ann=(Q.annual||[]).slice().reverse();
+    if(ann.length){
+      h+='<div class="tbl-card glass"><div class="tbl-cap">'+esc(f.annual)+'</div><div class="tbl-scroll"><table class="dt"><thead><tr>'
+        +'<th>'+esc(f.year)+'</th><th>'+esc(f.rev)+'</th><th>'+esc(f.op)+'</th><th>'+esc(f.np)+'</th><th>'+esc(f.opm)+'</th><th>'+esc(f.roe)+'</th><th>'+esc(f.debt)+'</th></tr></thead><tbody>';
+      ann.forEach(function(a){
+        h+='<tr><td>'+a.year+'</td><td>'+fwon(a.rev)+'</td><td'+negc(a.op)+'>'+fwon(a.op)+'</td><td'+negc(a.np_owner)+'>'+fwon(a.np_owner)+'</td>'
+          +'<td>'+fpct(a.opm)+'</td><td'+negc(a.roe)+'>'+fpct(a.roe)+'</td><td>'+fpct(a.debt_ratio)+'</td></tr>';
+      });
+      h+='</tbody></table></div></div>';
+    }
+    var qt=Q.quarterly||[];
+    if(qt.length){
+      h+='<div class="tbl-card glass" style="margin-top:14px"><div class="tbl-cap">'+esc(f.quarterly)+'</div><div class="tbl-scroll"><table class="dt"><thead><tr>'
+        +'<th>'+esc(f.q)+'</th><th>'+esc(f.rev)+'</th><th>'+esc(f.op)+'</th><th>'+esc(f.np)+'</th></tr></thead><tbody>';
+      qt.forEach(function(r){
+        h+='<tr><td>'+esc(r.q)+'</td><td>'+fwon(r.rev)+'</td><td'+negc(r.op)+'>'+fwon(r.op)+'</td><td'+negc(r.np_owner)+'>'+fwon(r.np_owner)+'</td></tr>';
+      });
+      h+='</tbody></table></div></div>';
+    }
+    h+='<div class="tbl-foot">'+esc(f.foot.replace('{win}',V.ttm_window||'-').split(' · ')[0])+'</div>';
+    h+='</section><hr class="hairline" />';
+    h+=secOpen(pad(n++),'EARNINGS',u.sec.earnings)+prose(REP.earnings)+'</section><hr class="hairline" />';
+    h+=secOpen(pad(n++),'INDUSTRY',u.sec.industry)+prose(REP.industry)+'</section><hr class="hairline" />';
+    h+=secOpen(pad(n++),'OUTLOOK',u.sec.outlook)+prose(REP.outlook)+'</section><hr class="hairline" />';
+    /* 밸류에이션 — TTM 자체 산출 + KRX 공식 값 */
+    h+=secOpen(pad(n++),'VALUATION',u.sec.valuation);
+    var lossNa=(V.eps_ttm!=null&&V.eps_ttm<0);
+    var cells=[
+      [f.perT, V.per_ttm!=null?fx(V.per_ttm,L()==='en'?'x':'배'):(lossNa?f.na:f.nodata)],
+      [f.perK, V.per_krx!=null?fx(V.per_krx,L()==='en'?'x':'배'):f.nodata],
+      [f.pbr,  V.pbr_krx!=null?fx(V.pbr_krx,L()==='en'?'x':'배'):f.nodata],
+      [f.divy, V.div_krx!=null?fpct(V.div_krx):f.nodata],
+      [f.epsT, V.eps_ttm!=null?fx(V.eps_ttm,L()==='en'?'':'원'):f.nodata],
+      [f.bps,  V.bps_krx!=null?fx(V.bps_krx,L()==='en'?'':'원'):f.nodata]
+    ];
+    h+='<div class="valgrid">'+cells.map(function(c){return '<div class="vm"><div class="vk">'+esc(c[0])+'</div><div class="vv">'+esc(c[1])+'</div></div>';}).join('')+'</div>';
+    h+='<div class="tbl-foot">'+esc(f.foot.replace('{win}',V.ttm_window||'-'))+'</div>';
+    if(REP.valuation_comment)h+=prose(REP.valuation_comment);
+    h+='</section><hr class="hairline" />';
+    h+=secOpen(pad(n++),'BULL CASE',u.sec.bull)+factors(REP.bull,'bull','▲')+'</section><hr class="hairline" />';
+    h+=secOpen(pad(n++),'BEAR CASE',u.sec.bear)+factors(REP.bear,'bear','▼')+'</section><hr class="hairline" />';
+    h+=secOpen(pad(n++),'RISK',u.sec.risk)+risksH(REP.risks)+'</section><hr class="hairline" />';
+    /* 다음 체크포인트 */
+    if(REP.checkpoints&&REP.checkpoints.length){
+      h+=secOpen(pad(n++),'WHAT TO WATCH',u.sec.chk);
+      h+='<div class="timeline">'+REP.checkpoints.map(function(c){
+        return '<div class="tl"><div class="tl-date"><span class="badge">'+esc(pk(c.when))+'</span></div><p>'+esc(pk(c.what))+'</p></div>';
+      }).join('')+'</div></section><hr class="hairline" />';
+    }
+    h+=secOpen(pad(n++),'VERDICT',u.sec.verdict);
+    h+='<div class="wrapup glass"><p>'+esc(REP.verdict?pk(REP.verdict.body):'')+'</p></div></section>';
+    var baseCards=[
+      srcCardL(u.srcKRX, u.srcKRXsub, 'https://data.krx.co.kr', '📊'),
+      srcCardL(u.srcDART, u.srcDARTsub, 'https://dart.fss.or.kr', '📄')
+    ];
+    var webCards=(REP.sources||[]).map(srcCard);
+    h+='<hr class="hairline" />'+secOpen(pad(n++),'SOURCES',u.sec.sources);
+    h+='<div class="srcgrid">'+baseCards.concat(webCards).join('')+'</div></section>';
+    h+='<div class="col"><div class="rep-meta rep-meta-end"><span><b>'+esc(u.reportDate)+'</b>'+esc(REP.reportDate||'')+'</span></div></div>';
+    return h;
+  }
   function render(){
     var u=U(), Ln=L();
     var up=(STOCK.change>=0), cc=up?'up':'down', sign=up?'+':'';
@@ -945,7 +1041,9 @@ KOSi18n.register({
     fitMetricVals();
 
     var rb=document.getElementById('reportBody');
-    if(!REP){
+    if(REP&&REP.v===2){
+      rb.innerHTML=renderV2(u);
+    } else if(!REP){
       rb.innerHTML='<section class="sec col"><div class="tldr glass"><p>'+esc(u.none)+'</p></div></section>';
     } else {
       var h='', n=1;
