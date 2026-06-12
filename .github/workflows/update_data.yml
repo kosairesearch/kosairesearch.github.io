@@ -67,15 +67,22 @@ jobs:
           echo "=== 스크립트 시작 $(date -u) ===" >> data/run.log
           python scripts/collect_data.py 2>&1 | tee -a data/run.log
 
+      - name: sitemap 갱신
+        if: always()
+        run: python scripts/generate_sitemap.py || true
+
       - name: 변경사항 커밋 & 푸시
         if: always()
         run: |
           git config --global user.email "bot@kosairesearch.github.io"
           git config --global user.name "KOS ai Bot"
-          git add -A data/
+          git add -A data/ sitemap.xml
           git commit --allow-empty -m "📊 데이터 업데이트 $(TZ='Asia/Seoul' date +'%Y-%m-%d %H:%M KST')"
           # 원격이 앞서간 경우(동시 커밋) rebase 후 재시도
+          ok=""
           for i in 1 2 3 4 5; do
-            git pull --rebase origin main && git push origin main && break
+            if git pull --rebase origin main && git push origin main; then ok=1; break; fi
+            git rebase --abort 2>/dev/null || true
             echo "push 재시도 $i..."; sleep $((i*3))
           done
+          if [ -z "$ok" ]; then echo "::error::push 최종 실패 — 결과 유실 방지를 위해 실패 처리"; exit 1; fi
