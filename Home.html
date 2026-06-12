@@ -913,7 +913,7 @@ function mqStep(ts){
   const dt=Math.min(0.05,(ts-mqLT)/1000||0); mqLT=ts;
   if(!mqTrack) return;
   if(!mqDrag){
-    if(!mqReduced) mqX+=MQ_SPEED*dt;       // 회전초밥처럼 일정하게
+    if(!mqReduced&&!mqHover) mqX+=MQ_SPEED*dt;   // 호버 시 일시정지(Resend식)
     mqX+=mqV*dt; mqV*=Math.pow(0.3,dt);    // 플릭 관성: ~1.5초간 시원하게 미끄러짐
     if(Math.abs(mqV)<6) mqV=0;
   }
@@ -921,7 +921,11 @@ function mqStep(ts){
   mqTrack.style.transform=`translate3d(${-mqX}px,0,0)`;
 }
 moverRow.addEventListener('dragstart',e=>e.preventDefault());
-let mqPid=null,mqCap=false;
+let mqPid=null,mqCap=false,mqHover=false;
+if(matchMedia('(hover: hover)').matches){
+  moverRow.addEventListener('mouseenter',()=>{ mqHover=true; });
+  moverRow.addEventListener('mouseleave',()=>{ mqHover=false; });
+}
 moverRow.addEventListener('pointerdown',e=>{
   if(!mqTrack) return;
   mqDrag=true; mqLX=e.clientX; mqMoved=0; mqV=0; mqMT=performance.now();
