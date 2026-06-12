@@ -1,0 +1,324 @@
+{
+ "title": {
+  "ko": "HBM 슈퍼사이클 정점의 SK하이닉스",
+  "en": "SK hynix at the Peak of the HBM Supercycle"
+ },
+ "lead": {
+  "ko": "AI 메모리 수요 폭증으로 사상 최대 실적을 경신 중인 가운데, 삼성전자의 HBM4 추격과 사이클 고점 논란이 동시에 부각되고 있다.",
+  "en": "Record-breaking results driven by surging AI memory demand are unfolding alongside intensifying debate over Samsung's HBM4 catch-up and a potential cycle peak."
+ },
+ "keypoints": [
+  {
+   "ko": "2026년 1분기 매출 52.6조원·영업이익 37.6조원으로 분기 사상 최대를 경신하며 영업이익률 72%를 기록했다.",
+   "en": "Q1 2026 revenue of KRW 52.6tn and operating profit of KRW 37.6tn set a quarterly record with a 72% operating margin."
+  },
+  {
+   "ko": "HBM·고용량 서버 D램·eSSD 등 고부가 제품 가격 상승이 실적을 견인하며 메모리 수급이 15년 만에 가장 타이트하다.",
+   "en": "Price gains in high-value products such as HBM, high-capacity server DRAM and eSSD drove earnings amid the tightest memory supply-demand in 15 years."
+  },
+  {
+   "ko": "SK하이닉스는 HBM 출하량·매출 기준 과점적 1위를 유지하나, 삼성전자가 HBM4를 앞세워 추격에 나서고 있다.",
+   "en": "SK hynix retains an oligopolistic lead in HBM by both shipment and revenue, but Samsung is mounting a catch-up centered on HBM4."
+  },
+  {
+   "ko": "2026년 HBM 물량은 사실상 완판 상태이며 회사는 청주 M15X·용인 클러스터 중심으로 CAPEX를 대폭 확대 중이다.",
+   "en": "2026 HBM volume is effectively sold out, and the company is sharply expanding capex centered on the Cheongju M15X and Yongin cluster."
+  },
+  {
+   "ko": "PER(TTM)와 결산 기준 PER이 크게 벌어진 것은 최근 4개 분기 이익이 급증했기 때문으로, 실적 변화 속도가 매우 빠르다.",
+   "en": "The wide gap between trailing and last-fiscal-year P/E reflects how rapidly earnings have surged over the latest four quarters."
+  }
+ ],
+ "business": {
+  "ko": "SK하이닉스는 D램과 낸드플래시를 양대 축으로 하는 종합 메모리 반도체 기업으로, AI 시대 들어 고대역폭메모리(HBM) 사업이 핵심 성장 동력으로 부상했다. 카운터포인트리서치에 따르면 SK하이닉스는 2025년 2분기 기준 HBM 출하량 점유율 62%로 1위, 3분기 매출 기준으로도 57%로 과점적 지위를 유지하고 있다. 회사의 HBM 경쟁력은 엔비디아와의 긴밀한 공급 관계에서 비롯되며, 엔비디아는 H100·H200·블랙웰 등 주력 GPU에 SK하이닉스 HBM을 우선 채택해왔고, HBM4 세대에서도 엔비디아 물량의 약 70%는 SK하이닉스 몫으로 알려졌다. D램 부문에서는 서버용 고용량 모듈과 모바일용 저전력 제품군이 주력이며, 1분기에 세계 최초로 1cnm LPDDR6 개발을 완료해 주요 스마트폰 고객사의 차기 플래그십 모델 탑재를 시작으로 하반기 본격 시장 공급에 나서고, 엔비디아 '베라 루빈' 플랫폼에 최적화 설계된 1cnm 192GB 소캠2 양산을 개시했다. 낸드 부문에서는 기업용 SSD(eSSD)와 클라이언트 SSD가 중심이며, CTF 기반 321단 QLC 기술을 적용한 클라이언트 SSD 'PQC21' 공급을 본격 개시했다. 대용량 QLC eSSD에 강점을 보유한 솔리다임과의 시너지를 바탕으로 AI 데이터센터와 AI PC 스토리지 시장에서의 경쟁력을 강화할 계획이다. HBM 제조는 단순한 공정 미세화를 넘어 복합 기술 역량을 요구하는데, D램 공정 기술뿐 아니라 실리콘관통전극(TSV) 패키징 등 다양한 기술 요소가 복합적으로 요구되며, 성능·수율·품질·공급 안정성을 통합한 종합적 실행 역량이 경쟁력을 결정한다. 경쟁 구도는 SK하이닉스·삼성전자·마이크론의 3강 체제로, 차세대 HBM4 세대에서 경쟁 강도가 본격적으로 높아지고 있다.",
+  "en": "SK hynix is a comprehensive memory semiconductor company built on two pillars—DRAM and NAND flash—with high-bandwidth memory (HBM) emerging as its core growth driver in the AI era. According to Counterpoint Research, SK hynix held the top position with a 62% HBM shipment share as of Q2 2025 and maintained an oligopolistic position at 57% by revenue in Q3. Its HBM competitiveness stems from a close supply relationship with Nvidia: Nvidia has prioritized SK hynix HBM in flagship GPUs such as the H100, H200 and Blackwell, and roughly 70% of Nvidia's HBM4-generation volume is reportedly allocated to SK hynix. In DRAM, high-capacity server modules and low-power mobile products are central, and in Q1 the company completed the world's first 1cnm LPDDR6, beginning with adoption in major smartphone customers' next flagship models ahead of full market supply in the second half, and started mass production of 1cnm 192GB SOCAMM2 optimized for Nvidia's Vera Rubin platform. In NAND, enterprise and client SSDs are central, and it began full-scale supply of the 'PQC21' client SSD using CTF-based 321-layer QLC technology. Leveraging synergy with Solidigm, which is strong in high-capacity QLC eSSD, it plans to strengthen competitiveness in AI data center and AI PC storage markets. HBM manufacturing demands composite technical capability beyond mere process scaling: it requires diverse technology elements including TSV packaging in addition to DRAM process technology, and an integrated execution capability spanning performance, yield, quality and supply stability determines competitiveness. The competitive landscape is a three-way structure of SK hynix, Samsung and Micron, with competition intensifying meaningfully in the next-generation HBM4."
+ },
+ "earnings": {
+  "ko": "확정 재무 기준 2025년 연간 실적은 매출 97.15조원, 영업이익 47.21조원, 지배주주 순이익 42.92조원으로, 매출 66.19조원·영업이익 23.47조원이던 2024년 대비 외형과 이익이 모두 큰 폭으로 증가했다. 2025년 영업이익률은 48.6%, ROE는 35.6%, 부채비율은 45.9%로 2024년(부채비율 62.2%) 대비 재무구조도 개선됐다. 분기 흐름을 보면 2025년 1분기 영업이익 7.44조원에서 2분기 9.21조원, 3분기 11.38조원, 4분기 19.17조원으로 가파른 우상향 추세를 보였다. 2026년 1분기에는 매출 52.58조원, 영업이익 37.61조원, 지배주주 순이익 40.33조원으로 다시 사상 최대치를 경신했다. 전분기 대비 매출은 60%, 영업이익은 96% 증가했고 전년 동기와 비교하면 각각 198%, 405% 급증했으며, 영업이익률은 72%로 분기 기준 역대 최고치를 새로 썼다. 실적 급등의 핵심 동인은 가격 상승으로, D램의 경우 출하량은 전분기 수준을 유지했으나 평균판매가격(ASP)이 60% 중반 상승했고, NAND는 출하량이 약 10% 감소했음에도 ASP가 70% 중반 뛰면서 외형과 수익성을 동시에 끌어올렸다. 현금흐름도 견조해 1분기 말 현금성 자산은 전분기 말 대비 19.4조 원 늘어난 54.3조 원을 기록했고, 차입금은 2.9조 원 감소한 19.3조 원으로 35조 원의 순현금을 달성했다. 다만 1분기 순이익(40.33조원)이 영업이익(37.61조원)을 상회한 점은 영업외 손익 요인이 반영된 결과로, 절대 수치 자체가 매우 이례적인 호황 국면임을 보여준다.",
+  "en": "On confirmed financials, full-year 2025 delivered revenue of KRW 97.15tn, operating profit of KRW 47.21tn and owner net income of KRW 42.92tn, a sharp increase in both scale and profit versus 2024's KRW 66.19tn revenue and KRW 23.47tn operating profit. The 2025 operating margin was 48.6%, ROE 35.6% and debt ratio 45.9%, an improved structure versus 2024's 62.2% debt ratio. Quarterly, operating profit rose steeply from KRW 7.44tn in Q1 2025 to KRW 9.21tn in Q2, KRW 11.38tn in Q3 and KRW 19.17tn in Q4. In Q1 2026 it again set a record at KRW 52.58tn revenue, KRW 37.61tn operating profit and KRW 40.33tn owner net income. Revenue rose 60% and operating profit 96% versus the prior quarter, while versus the year-earlier period they surged 198% and 405% respectively, with the operating margin setting a new quarterly record of 72%. The key driver was price gains: DRAM held shipments at the prior-quarter level while ASP rose in the mid-60% range, and NAND saw ASP jump in the mid-70% range despite a roughly 10% shipment decline, lifting both scale and profitability. Cash flow was also robust, as end-Q1 cash and equivalents rose KRW 19.4tn from the prior quarter to KRW 54.3tn, while borrowings fell KRW 2.9tn to KRW 19.3tn, achieving net cash of KRW 35tn. That Q1 net income (KRW 40.33tn) exceeded operating profit (KRW 37.61tn) reflects non-operating items, and the absolute figures illustrate an exceptionally strong upcycle."
+ },
+ "industry": {
+  "ko": "메모리 산업은 AI 인프라 투자 확대를 중심으로 전례 없는 수급 타이트 국면에 진입했다. 지난 4월 골드만삭스는 2026년 D램 수급 격차 전망치를 3.3%에서 4.9%로 상향 조정하며 15년 만에 가장 심각한 공급 부족 상황이라고 평가했다. 상위 3대 메모리 제조사는 올해 생산 능력을 사실상 모두 예약 완료했으며, 웨이퍼 팹 건설에 4~5년이 소요된다는 점을 고려하면 올해 추가될 신규 생산 능력은 거의 없을 전망이다. 수요 측면에서는 알파벳(구글), MS, 메타, 아마존 4사의 2026년 CapEx 합계가 7250억 달러로 지난해 4100억 달러의 77% 증가했다. 시장 전체로는 세계반도체무역통계기구(WSTS)는 2026년 글로벌 반도체 시장이 전년비 25% 이상 성장해 약 9,750억 달러 수준에 이를 것으로 전망하며, 이 중 메모리 부문이 전체 성장률을 상회하는 30%대의 증가세를 보일 것으로 내다본다. 경쟁 포지션 측면에서 SK하이닉스는 HBM3E 세대까지 독보적 우위를 유지해왔으나, HBM4에서는 SK하이닉스 55%, 삼성전자 28%, 마이크론 17% 구도가 제시되며 삼성전자가 본격적으로 추격에 나서는 그림이다. 소비자 시장에서는 메모리 가격 급등의 부작용도 나타나는데, 국제데이터기업(IDC)은 2026년 글로벌 PC 출하량이 메모리 수급 불균형 여파로 11.3% 줄 것으로 전망했다. 다수 기관과 외신은 이 같은 생산자 우위 국면이 2028년까지 지속될 가능성을 제기하고 있다.",
+  "en": "The memory industry has entered an unprecedented tight supply-demand phase centered on expanding AI infrastructure investment. In April, Goldman Sachs raised its 2026 DRAM supply-demand gap forecast from 3.3% to 4.9%, calling it the most severe shortage in 15 years. The top three memory makers have effectively booked all of this year's capacity, and given that building a wafer fab takes four to five years, almost no new capacity will be added this year. On demand, the combined 2026 capex of Alphabet (Google), Microsoft, Meta and Amazon reaches USD 725bn, up 77% from last year's USD 410bn. For the overall market, the WSTS forecasts the 2026 global semiconductor market to grow more than 25% year-on-year to about USD 975bn, with the memory segment growing in the 30% range, above the overall growth rate. On competitive positioning, SK hynix held a commanding lead through the HBM3E generation, but for HBM4 a structure of SK hynix 55%, Samsung 28% and Micron 17% has been suggested, with Samsung beginning a full-scale catch-up. In the consumer market, side effects of surging memory prices are appearing: IDC forecasts 2026 global PC shipments to fall 11.3% due to the memory supply-demand imbalance. Many institutions and foreign media suggest this producer-favorable phase could persist through 2028."
+ },
+ "outlook": {
+  "ko": "회사는 AI 수요 강세가 이어지는 가운데 선제적 생산능력 확충과 신제품 공급 확대에 무게를 두고 있다. CAPEX와 관련해 회사는 올해 규모가 전년 대비 크게 증가할 것이며, 대부분 M15X 램프업과 용인 클러스터 중심의 인프라 준비, 핵심 장비 확보를 위한 것이라고 밝혔다. 생산 로드맵 측면에서 SK하이닉스는 청주 M15X 공장 가동으로 HBM 생산을 가속화하며 2026년 초 양산에 돌입할 계획이고, 용인 클러스터 1기 팹을 2027년 완공해 HBM4·HBM5 로드맵을 강화하며 구글·MS 등과 장기 계약 협의로 안정적 수요를 확보한다는 방침이다. HBM4 증설도 본격화되어, SK하이닉스는 한미반도체에 차세대 HBM4용 TC 본더 장비를 발주했으며, 442억원 규모의 'HBM4 제조용 TC 본더 4.5 그리핀' 공급 계약을 체결했다. 차세대 GPU 수요도 강력한데, 엔비디아의 차세대 '베라루빈' 플랫폼이 서버당 1152TB SSD와 288GB HBM4를 요구하며 수요를 더욱 자극할 전망이다. 경쟁 구도에서 젠슨 황 엔비디아 CEO는 삼성전자와 SK하이닉스, 마이크론 등 메모리 3사가 모두 HBM4 퀄리피케이션 테스트를 통과해 양산을 진행하고 있다고 밝혔다. 자본 배분과 관련해 회사는 1분기 실적으로 확인된 높은 투자 수익률을 감안하면 지금은 창출되는 현금을 사업에 재투자하는 것이 가장 좋은 자본 활용 방법이라고 판단한다고 밝혔다. 다만 일각에서는 HBM 수요는 여전히 견조하지만 관련 기대감이 주가에 상당 부분 반영됐으며, 빅테크 기업들의 설비투자 속도 조절 움직임이 하반기 실적 전망을 옥죄는 요인으로 거론된다.",
+  "en": "The company is emphasizing pre-emptive capacity expansion and broader new-product supply amid continued strong AI demand. On capex, the company said this year's scale will increase significantly versus the prior year, mostly for the M15X ramp-up, infrastructure preparation centered on the Yongin cluster, and securing core equipment. On its production roadmap, SK hynix plans to accelerate HBM production by operating the Cheongju M15X fab with mass production beginning in early 2026, complete the first Yongin cluster fab in 2027 to strengthen its HBM4/HBM5 roadmap, and secure stable demand via long-term contract talks with Google and Microsoft. HBM4 expansion is also underway, as SK hynix ordered next-generation HBM4 TC bonder equipment from Hanmi Semiconductor, signing a KRW 44.2bn supply contract for the 'TC Bonder 4.5 Griffin for HBM4 manufacturing.' Next-generation GPU demand is also strong: Nvidia's next-generation 'Vera Rubin' platform requires 1,152TB of SSD and 288GB of HBM4 per server, expected to further stimulate demand. On the competitive front, Nvidia CEO Jensen Huang said all three memory makers—Samsung, SK hynix and Micron—have passed HBM4 qualification testing and are proceeding with mass production. On capital allocation, the company said that given the high return on investment confirmed by Q1 results, reinvesting generated cash into the business is currently the best use of capital. However, some note that while HBM demand remains solid, related expectations are largely reflected in the share price, and big-tech moves to moderate capex pace are cited as a factor pressuring second-half earnings outlooks."
+ },
+ "valuation_comment": {
+  "ko": "제공된 밸류에이션 데이터에 따르면 현재가 2,150,000원 기준 PER(TTM)은 20.4배(EPS 105,433원, 적용 구간 2025Q2~2026Q1)이며, KRX 직전 결산 기준 PER은 34.65배, PBR은 12.52배다. PER(TTM)이 결산 PER보다 낮게 나타나는 것은 최근 4개 분기 이익이 직전 결산 연도(2025년 전체) 대비 급격히 증가했기 때문으로, 분모(EPS)가 급팽창하는 실적 급변 국면에서 흔히 나타나는 현상이다. 즉 결산 PER은 과거 12개월의 평균적 이익을, TTM PER은 최근 가속화된 이익을 반영하므로 둘 사이의 괴리가 크게 벌어진 것이다. 배당 측면에서는 KRX 기준 배당수익률 0.14%, DPS 3,000원으로 이익 규모 대비 배당 비중은 낮은 편이며, 이는 회사가 현금을 사업 재투자에 우선 배분하는 기조와 부합한다. 한편 한 매체는 연간 환산 1분기 영업이익 기준 P/E를 약 8.4배, 다수 증권사의 2026년 연간 영업이익 전망 기준 선행 P/E를 약 6.5배로 산출하며 이를 사이클 중간 지점으로 평가했다. 이처럼 어떤 이익 기준(과거 결산·TTM·선행)을 적용하느냐에 따라 멀티플이 크게 달라지므로, 단일 지표만으로 밸류에이션을 단정하기 어려운 국면이다.",
+  "en": "Per the provided valuation data, at the current price of KRW 2,150,000 the trailing P/E is 20.4x (EPS KRW 105,433, window Q2 2025–Q1 2026), while the KRX last-fiscal-year P/E is 34.65x and PBR is 12.52x. The trailing P/E being lower than the fiscal-year P/E reflects that earnings over the latest four quarters surged sharply versus the prior fiscal year (full 2025)—a common phenomenon when the denominator (EPS) rapidly expands during a fast-changing earnings phase. In other words, the fiscal-year P/E reflects the average profit of the past 12 months while the trailing P/E captures recently accelerated profit, widening the gap between the two. On dividends, the KRX-based yield is 0.14% with a DPS of KRW 3,000, a low payout relative to profit scale, consistent with the company's stance of prioritizing cash reinvestment in the business. Separately, one outlet calculated a P/E of about 8.4x based on annualized Q1 operating profit and a forward P/E of about 6.5x based on multiple brokerages' 2026 full-year operating profit forecasts, assessing this as a mid-cycle level. Because the multiple varies greatly depending on which earnings basis (past fiscal, trailing, or forward) is used, it is difficult to characterize the valuation by any single metric in this phase."
+ },
+ "bull": [
+  {
+   "title": {
+    "ko": "AI 메모리 수급의 구조적 타이트",
+    "en": "Structurally tight AI memory supply-demand"
+   },
+   "body": {
+    "ko": "AI 인프라 투자가 폭발하며 메모리 수급이 15년 만에 가장 타이트한 국면에 진입했다. SK하이닉스는 D램, 낸드, HBM 물량이 완전히 매진되어 모든 고객사의 주문을 충족하는 것이 불가능하다고 공개적으로 밝혔다. 신규 팹 건설에 수년이 걸려 단기 공급 확대가 제한되는 점이 가격 강세를 뒷받침한다.",
+    "en": "Exploding AI infrastructure investment has pushed memory supply-demand into its tightest phase in 15 years. SK hynix publicly stated that its DRAM, NAND and HBM volumes are fully sold out, making it impossible to meet all customer orders. The multi-year lead time for new fabs limits near-term supply expansion, supporting firm pricing."
+   }
+  },
+  {
+   "title": {
+    "ko": "HBM 과점적 지위와 엔비디아 파트너십",
+    "en": "Oligopolistic HBM position and Nvidia partnership"
+   },
+   "body": {
+    "ko": "SK하이닉스는 HBM 출하량·매출 기준 1위를 유지하며 엔비디아 공급망 내 최대 파트너 지위를 확보하고 있다. UBS는 2026년 엔비디아의 차세대 '루빈' 플랫폼에 탑재될 HBM4 시장에서도 SK하이닉스가 약 70%의 점유율을 달성할 것으로 예상했다. 이는 현재의 리더십이 차세대 제품으로 이어질 가능성을 시사한다.",
+    "en": "SK hynix retains the No. 1 position in HBM by both shipment and revenue and holds the largest partner status within Nvidia's supply chain. UBS expects SK hynix to achieve about a 70% share in the HBM4 market for Nvidia's next-generation 'Rubin' platform in 2026. This suggests current leadership may carry over to the next product generation."
+   }
+  },
+  {
+   "title": {
+    "ko": "재무 건전성 개선과 순현금 전환",
+    "en": "Improved financial health and net cash"
+   },
+   "body": {
+    "ko": "호실적과 함께 재무구조가 빠르게 개선됐다. 부채비율은 2023년 87.5%에서 2025년 45.9%로 낮아졌고, 1분기 말 차입금은 2.9조 원 감소한 19.3조 원을 기록하며 35조 원의 순현금을 달성했다. 풍부한 현금은 대규모 CAPEX를 자체 조달할 여력을 제공한다.",
+    "en": "Alongside strong results, the financial structure improved rapidly. The debt ratio fell from 87.5% in 2023 to 45.9% in 2025, and end-Q1 borrowings declined KRW 2.9tn to KRW 19.3tn, achieving net cash of KRW 35tn. Ample cash provides capacity to self-fund large capex."
+   }
+  }
+ ],
+ "bear": [
+  {
+   "title": {
+    "ko": "삼성전자의 HBM4 추격",
+    "en": "Samsung's HBM4 catch-up"
+   },
+   "body": {
+    "ko": "차세대 HBM4 세대에서 삼성전자가 본격 추격에 나서며 SK하이닉스의 독주에 변수가 등장했다. 삼성전자는 AMD 차세대 AI 가속기 MI455X GPU에 삼성 HBM4를 주공급 형태로 납품하기로 했다. 삼성전자가 HBM4 양산에 성공할 경우 SK하이닉스의 시장 점유율 하락 가능성이 있으며, 이는 2026년 4분기에 판가름 날 전망이다.",
+    "en": "In the next-generation HBM4, Samsung is mounting a full-scale catch-up, introducing a variable to SK hynix's dominance. Samsung has agreed to supply Samsung HBM4 as the primary supplier for AMD's next-generation MI455X AI accelerator GPU. If Samsung succeeds in HBM4 mass production, SK hynix's market share could decline, with the outcome likely to be decided in Q4 2026."
+   }
+  },
+  {
+   "title": {
+    "ko": "사이클 고점 및 수요 선반영 우려",
+    "en": "Cycle-peak and pre-reflected demand concerns"
+   },
+   "body": {
+    "ko": "사상 최대 실적과 함께 사이클 고점 논란이 부각되고 있다. 시장에서는 현재 주가가 미래 기대감을 선반영하고 있다는 분석이 나오며, 2026년 HBM 생산량이 이미 100% 선예약된 상태로 추가 수요 확대 여력이 제한적이라는 평가가 제기된다. 과거 반도체 사이클 패턴을 보면 주가 고점은 실적 피크보다 1년에서 1년 3개월 앞서 형성되는 경향이 있었다.",
+    "en": "Alongside record results, debate over a cycle peak has come to the fore. The market notes that the current share price pre-reflects future expectations, and that with 2026 HBM volume already 100% pre-booked, room for further demand expansion is limited. Historically, semiconductor share-price peaks have tended to form one year to one year and three months ahead of the earnings peak."
+   }
+  },
+  {
+   "title": {
+    "ko": "빅테크 CAPEX 속도 조절 리스크",
+    "en": "Big-tech capex pace-moderation risk"
+   },
+   "body": {
+    "ko": "수요의 핵심인 빅테크 데이터센터 투자가 둔화되면 HBM 수요 전망에 타격이 불가피하다. 업계에서는 AI 반도체 시장이 초기 급등 국면을 지나 안정적 성장 단계로 전환하고 있다고 보며, 빅테크 기업들의 설비투자 속도 조절 움직임이 하반기 실적 전망을 옥죄는 요인으로 거론된다. 또한 데이터센터 완공 지연이 현실화하면 HBM 재고가 쌓일 위험도 있다.",
+    "en": "If big-tech data center investment—the core of demand—slows, the HBM demand outlook would inevitably take a hit. The industry sees the AI semiconductor market transitioning from an early surge to a stable growth phase, with big-tech moves to moderate capex pace cited as a factor pressuring second-half earnings outlooks. Should data center completion delays materialize, there is also a risk of HBM inventory accumulation."
+   }
+  }
+ ],
+ "risks": [
+  {
+   "cat": {
+    "ko": "경쟁·점유율",
+    "en": "Competition / market share"
+   },
+   "body": {
+    "ko": "HBM4 세대에서 삼성전자·마이크론의 인증·양산 진척에 따라 점유율과 프리미엄 가격이 압박받을 수 있다. 삼성전자가 HBM4에서 SK하이닉스와 비슷한 기술 수준을 확보하고 엔비디아 공급망에 본격 진입한다면 SK하이닉스의 시장 점유율과 프리미엄 가격에 직접적인 도전이 된다. 고객사 내 1등 지위 유지 여부가 관건이다.",
+    "en": "In the HBM4 generation, share and premium pricing could be pressured depending on Samsung's and Micron's qualification and mass-production progress. If Samsung secures a technology level comparable to SK hynix in HBM4 and enters Nvidia's supply chain in earnest, it directly challenges SK hynix's market share and premium pricing. Maintaining the No. 1 status within key customers is critical."
+   }
+  },
+  {
+   "cat": {
+    "ko": "사이클·수요 변동성",
+    "en": "Cycle / demand volatility"
+   },
+   "body": {
+    "ko": "메모리는 본질적으로 사이클 산업으로, AI 투자 사이클 둔화나 거시 경기 침체 시 재고 조정 위험이 있다. 메모리 슈퍼사이클이 이어지는 가운데에도 가격·공급·지정학 리스크에 대한 신중한 시각이 병존하며, 일부 기관은 2026년 이후 HBM 가격이 경쟁 심화와 생산능력 확대로 조정 국면에 들어갈 가능성을 제기한다. 현 호황의 지속 기간이 핵심 변수다.",
+    "en": "Memory is inherently a cyclical industry, with inventory-correction risk if the AI investment cycle slows or the macro economy weakens. Even amid the ongoing memory supercycle, cautious views on price, supply and geopolitical risk coexist, and some institutions raise the possibility that HBM prices could enter a correction after 2026 due to intensifying competition and capacity expansion. The duration of the current boom is a key variable."
+   }
+  },
+  {
+   "cat": {
+    "ko": "대규모 CAPEX 부담",
+    "en": "Large capex burden"
+   },
+   "body": {
+    "ko": "생산능력 확충을 위한 대규모 설비투자는 단기 잉여현금흐름을 압박할 수 있다. SK하이닉스는 청주와 용인 클러스터에 대규모 설비 투자를 진행하고 있으며, 단기적으로는 CAPEX 증가로 잉여 현금 흐름이 줄어들 수 있다. 투자 시점과 수요 가시성이 어긋날 경우 과잉 설비 리스크로 전환될 수 있다.",
+    "en": "Large capital expenditure to expand capacity can pressure near-term free cash flow. SK hynix is pursuing large-scale investment in the Cheongju and Yongin clusters, and in the near term rising capex can reduce free cash flow. If investment timing diverges from demand visibility, it could turn into an overcapacity risk."
+   }
+  }
+ ],
+ "checkpoints": [
+  {
+   "when": {
+    "ko": "2026년 7월 하순",
+    "en": "Late July 2026"
+   },
+   "what": {
+    "ko": "2026년 2분기 실적 발표 예정. 1분기의 사상 최대 실적이 이어지는지, D램·낸드 ASP 추가 상승 여부와 HBM4 출하 비중 확대 속도를 확인할 시점이다.",
+    "en": "Q2 2026 earnings release is expected. This is the point to check whether Q1's record results continue, whether DRAM and NAND ASPs rise further, and the pace of HBM4 shipment-mix expansion."
+   }
+  },
+  {
+   "when": {
+    "ko": "2026년 하반기 중",
+    "en": "Second half of 2026"
+   },
+   "what": {
+    "ko": "1cnm LPDDR6의 주요 스마트폰 플래그십 탑재 및 본격 시장 공급 개시 여부. 모바일 고부가 제품의 매출 기여가 다각화 동력으로 작용하는지 확인 포인트다.",
+    "en": "Whether 1cnm LPDDR6 is adopted in major smartphone flagships and full-scale supply begins. A checkpoint on whether high-value mobile products contribute to revenue diversification."
+   }
+  },
+  {
+   "when": {
+    "ko": "2026년 4분기",
+    "en": "Q4 2026"
+   },
+   "what": {
+    "ko": "삼성전자의 HBM4 양산·수율 진척이 판가름 나는 구간으로 지목된다. 엔비디아·AMD 공급망 내 점유율 변화가 SK하이닉스의 프리미엄 유지 여부를 좌우한다.",
+    "en": "Cited as the period when Samsung's HBM4 mass production and yield progress will be determined. Share shifts within Nvidia's and AMD's supply chains will influence whether SK hynix sustains its premium."
+   }
+  },
+  {
+   "when": {
+    "ko": "2027년",
+    "en": "2027"
+   },
+   "what": {
+    "ko": "용인 클러스터 1기 팹 완공 예정. HBM4·HBM5 로드맵 강화와 구글·MS 등과의 장기 계약 진척이 중장기 공급 능력의 확인 지표가 된다.",
+    "en": "Completion of the first Yongin cluster fab is planned. Strengthening of the HBM4/HBM5 roadmap and progress on long-term contracts with Google and Microsoft serve as indicators of mid- to long-term supply capability."
+   }
+  },
+  {
+   "when": {
+    "ko": "분기 배당 공시 시점",
+    "en": "Quarterly dividend disclosures"
+   },
+   "what": {
+    "ko": "사상 최대 이익 국면에서 주주환원 정책 변화 여부. 회사가 현금을 재투자에 우선 배분하는 기조를 유지하는지, 배당·자사주 정책에 변화가 있는지 확인할 필요가 있다.",
+    "en": "Whether shareholder-return policy changes amid record profits. It is worth checking whether the company maintains its stance of prioritizing reinvestment and whether dividend or buyback policy shifts."
+   }
+  }
+ ],
+ "verdict": {
+  "body": {
+   "ko": "SK하이닉스는 AI 메모리 수요 폭증에 힘입어 2026년 1분기 매출 52.58조원·영업이익 37.61조원, 영업이익률 72%라는 사상 최대 실적을 기록하며 슈퍼사이클의 정점 부근에 있다. HBM 출하량·매출 기준 과점적 1위와 엔비디아와의 강력한 파트너십이 핵심 경쟁력이며, 2026년 물량은 사실상 완판 상태다. 재무구조도 순현금 전환으로 크게 개선됐고, 청주 M15X·용인 클러스터·HBM4 증설 등 공격적 CAPEX로 중장기 공급 능력을 확충하고 있다. 동시에 삼성전자의 HBM4 추격, 빅테크 CAPEX 속도 조절 가능성, 사이클 고점 및 수요 선반영 논란이라는 반대 요인도 뚜렷하다. 밸류에이션은 적용 이익 기준에 따라 PER(TTM) 20.4배에서 결산 PER 34.65배, 선행 기준 한 자릿수까지 편차가 커, 실적 급변 국면에서 단일 지표만으로 판단하기 어렵다. 향후 2분기 실적, HBM4 점유율 향방(특히 2026년 4분기), 빅테크 투자 지속 여부가 방향성을 가를 핵심 변수다. 본 자료는 정보 제공 목적이며 투자 권유나 의견을 담지 않는다.",
+   "en": "Buoyed by surging AI memory demand, SK hynix sits near the peak of the supercycle, posting record Q1 2026 results of KRW 52.58tn revenue, KRW 37.61tn operating profit and a 72% operating margin. Its core strengths are an oligopolistic No. 1 position in HBM by shipment and revenue and a strong Nvidia partnership, with 2026 volume effectively sold out. Its financial structure has improved markedly into net cash, and aggressive capex—Cheongju M15X, the Yongin cluster and HBM4 expansion—is building mid- to long-term supply capability. At the same time, countervailing factors are clear: Samsung's HBM4 catch-up, possible big-tech capex moderation, and debate over a cycle peak and pre-reflected demand. Valuation varies widely depending on the earnings basis—from a 20.4x trailing P/E to a 34.65x fiscal-year P/E and single digits on a forward basis—making it hard to judge by any single metric during this fast-changing phase. Q2 results, the direction of HBM4 share (especially in Q4 2026) and the durability of big-tech investment are the key variables that will determine direction. This material is for informational purposes only and contains no investment recommendation or opinion."
+  }
+ },
+ "v": 2,
+ "model": "claude-opus-4-8",
+ "ticker": "000660",
+ "name": "SK하이닉스",
+ "name_en": "SK hynix Inc.",
+ "sector": "반도체",
+ "categories": [
+  "반도체"
+ ],
+ "market": "코스피",
+ "reportDate": "2026-06-13",
+ "reportTs": "2026-06-13 03:42",
+ "dataDate": "20260612",
+ "quant": {
+  "asOf": "2026-06-12",
+  "fs_basis": "연결(CFS) · DART 공시 확정치 · 지배주주 기준 순이익",
+  "annual": [
+   {
+    "year": 2025,
+    "rev": 97146675000000,
+    "op": 47206319000000,
+    "np": 42947902000000,
+    "np_owner": 42919287000000,
+    "equity": 120666751000000,
+    "liab": 55440908000000,
+    "cfo": 53373126000000,
+    "opm": 48.6,
+    "roe": 35.6,
+    "debt_ratio": 45.9
+   },
+   {
+    "year": 2024,
+    "rev": 66192960000000,
+    "op": 23467319000000,
+    "np": 19796902000000,
+    "np_owner": 19788681000000,
+    "equity": 73915704000000,
+    "liab": 45939505000000,
+    "cfo": 29795885000000,
+    "opm": 35.5,
+    "roe": 26.8,
+    "debt_ratio": 62.2
+   },
+   {
+    "year": 2023,
+    "rev": 32765719000000,
+    "op": -7730313000000,
+    "np": -9137547000000,
+    "np_owner": -9112428000000,
+    "equity": 53503752000000,
+    "liab": 46826413000000,
+    "cfo": 4278191000000,
+    "opm": -23.6,
+    "roe": -17.0,
+    "debt_ratio": 87.5
+   },
+   {
+    "year": 2022,
+    "rev": 44621568000000,
+    "op": 6809417000000,
+    "np": 2241669000000,
+    "np_owner": 2229560000000,
+    "equity": 63290542000000,
+    "liab": 40580970000000,
+    "cfo": 14780517000000,
+    "opm": 15.3,
+    "roe": 3.5,
+    "debt_ratio": 64.1
+   }
+  ],
+  "quarterly": [
+   {
+    "q": "2025Q1",
+    "rev": 17639141000000,
+    "op": 7440504000000,
+    "np_owner": 8107081000000
+   },
+   {
+    "q": "2025Q2",
+    "rev": 22231952000000,
+    "op": 9212851000000,
+    "np_owner": 6997228000000
+   },
+   {
+    "q": "2025Q3",
+    "rev": 24448929000000,
+    "op": 11383390000000,
+    "np_owner": 12595195000000
+   },
+   {
+    "q": "2025Q4",
+    "rev": 32826653000000,
+    "op": 19169574000000,
+    "np_owner": 15219783000000
+   },
+   {
+    "q": "2026Q1",
+    "rev": 52576287000000,
+    "op": 37610283000000,
+    "np_owner": 40330176000000
+   }
+  ],
+  "valuation": {
+   "price": 2150000,
+   "mcap": 1532.3101,
+   "shares": 712702365,
+   "per_ttm": 20.4,
+   "eps_ttm": 105433,
+   "ttm_window": "2025Q2~2026Q1",
+   "ttm_np_owner": 75142382000000,
+   "per_krx": 34.65,
+   "pbr_krx": 12.52,
+   "eps_krx": 62044.0,
+   "bps_krx": 171751.0,
+   "div_krx": 0.14,
+   "dps_krx": 3000.0
+  }
+ }
+}
