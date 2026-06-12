@@ -415,7 +415,7 @@ KOSi18n.register({
     </div>
 
     <div class="legal card glass">
-      <p class="upd">시행일 2026년 6월 6일</p>
+      <p class="upd">시행일 2026년 6월 6일 · 최종 개정일 2026년 6월 12일</p>
 
       <p>이 약관은 공정거래위원회 전자상거래 표준약관의 구성을 참고하여 작성되었으며, KOSAI 서비스 이용에 관한 회사와 이용자의 권리·의무 및 책임 사항을 규정합니다.</p>
 
@@ -439,7 +439,7 @@ KOSi18n.register({
       <p>회사는 설비의 보수·점검·교체, 통신 장애, 천재지변 등의 사유가 발생한 경우 서비스 제공을 일시적으로 중단할 수 있습니다. 무료로 제공되는 서비스의 변경·중단에 대하여 회사는 법령에 특별한 규정이 없는 한 책임을 지지 않습니다.</p>
 
       <h2>제6조 (회원가입 및 계정)</h2>
-      <p>이용자는 이메일 또는 소셜 로그인(카카오·네이버)을 통해 회원으로 가입할 수 있습니다. 회원은 가입 시 정확한 정보를 제공해야 하며, 허위 정보를 등록한 경우 서비스 이용이 제한될 수 있습니다.</p>
+      <p>이용자는 이메일 또는 소셜 로그인(구글·카카오·네이버)을 통해 회원으로 가입할 수 있습니다. 회원은 가입 시 정확한 정보를 제공해야 하며, 허위 정보를 등록한 경우 서비스 이용이 제한될 수 있습니다.</p>
 
       <h2>제7조 (회원 탈퇴 및 자격 상실)</h2>
       <p>회원은 언제든지 탈퇴를 요청할 수 있으며, 회사는 지체 없이 이를 처리합니다. 회원이 타인의 정보를 도용하거나, 서비스 운영을 방해하거나, 법령 또는 이 약관을 위반하는 경우 회사는 회원자격을 제한·정지 또는 상실시킬 수 있습니다.</p>
@@ -483,9 +483,9 @@ KOSi18n.register({
       <p>이 약관은 대한민국 법령에 따라 해석되며, 회사와 이용자 간에 발생한 분쟁에 관한 소송은 「민사소송법」에 따른 관할 법원에 제기합니다.</p>
 
       <h2>부칙</h2>
-      <p>이 약관은 2026년 6월 6일부터 시행합니다.</p>
+      <p>이 약관은 2026년 6월 6일부터 시행하며, 2026년 6월 12일 개정되었습니다.</p>
 
-      <div class="note">본 약관은 공정거래위원회 표준약관을 기준으로 작성되었습니다. 명시되지 않은 사항은 관계 법령 및 상관례에 따르며, 사업자 정보 등은 정식 운영 시 확정·보완됩니다. 문의는 <a href="Contact.html">문의하기</a>를 이용해 주세요.</div>
+      <div class="note">본 약관은 공정거래위원회 표준약관의 구성을 참고하여 작성되었으며, 명시되지 않은 사항은 관계 법령 및 상관례에 따릅니다. 운영자: 임범준 · 문의: hello@kosai.kr</div>
     
     </div>
   </div>
@@ -519,6 +519,54 @@ applyTheme(saved);
 themeBtn.addEventListener('click',()=>applyTheme(root.getAttribute('data-theme')==='dark'?'light':'dark'));
 
 if(window.KOSi18n) KOSi18n.register({
+  "시행일 2026년 6월 6일 · 최종 개정일 2026년 6월 12일":"Effective June 6, 2026 · Last amended June 12, 2026",
+  "이 약관은 공정거래위원회 전자상거래 표준약관의 구성을 참고하여 작성되었으며, KOSAI 서비스 이용에 관한 회사와 이용자의 권리·의무 및 책임 사항을 규정합니다.":"These Terms follow the structure of the KFTC's standard e-commerce terms and set out the rights, obligations, and responsibilities of the company and users regarding the KOSAI service.",
+  "제1조 (목적)":"Article 1 (Purpose)",
+  "이 약관은 KOSAI(이하 \"회사\")가 제공하는 AI 기반 투자 리서치 서비스(이하 \"서비스\")의 이용과 관련하여 회사와 이용자 간의 권리·의무 및 책임 사항을 규정함을 목적으로 합니다.":"These Terms govern the rights, obligations, and responsibilities between KOSAI (the \"Company\") and users in connection with the AI-based investment research service (the \"Service\").",
+  "제2조 (정의)":"Article 2 (Definitions)",
+  "\"서비스\"란 회사가 제공하는 한국 상장기업의 시장 데이터 및 AI 분석·리포트 등 일체의 서비스를 말합니다.":"\"Service\" means all services provided by the Company, including market data on Korea-listed companies and AI analyses and reports.",
+  "\"이용자\"란 이 약관에 따라 서비스를 이용하는 회원 및 비회원을 말합니다.":"\"User\" means members and non-members who use the Service under these Terms.",
+  "\"회원\"이란 회사에 개인정보를 제공하여 계정을 생성하고 서비스를 이용하는 자를 말합니다.":"\"Member\" means a person who creates an account by providing personal information and uses the Service.",
+  "제3조 (약관의 명시와 개정)":"Article 3 (Posting and Amendment of Terms)",
+  "회사는 이 약관의 내용을 이용자가 쉽게 확인할 수 있도록 서비스 화면에 게시합니다. 회사는 관련 법령을 위반하지 않는 범위에서 약관을 개정할 수 있으며, 개정 시 적용일자와 개정 사유를 명시하여 적용일 7일 전(이용자에게 불리하거나 중대한 변경은 30일 전)부터 공지합니다.":"The Company posts these Terms within the Service so users can easily review them. It may amend the Terms within the bounds of applicable law, announcing the effective date and reasons at least 7 days in advance (30 days for changes unfavorable or significant to users).",
+  "제4조 (서비스의 제공 및 변경)":"Article 4 (Provision and Changes to the Service)",
+  "회사는 한국 상장기업에 관한 시장 데이터와 AI가 생성한 분석·리포트, 종목 검색·업종별 탐색·스크리너·워치리스트 등의 기능을 제공합니다. 회사는 서비스의 내용을 변경할 수 있으며, 변경 시 그 내용을 사전에 공지합니다.":"The Company provides market data on Korea-listed companies, AI-generated analyses and reports, and features such as stock search, industry browsing, the screener, and watchlists. The Company may change the Service and will announce changes in advance.",
+  "제5조 (서비스의 중단)":"Article 5 (Suspension of the Service)",
+  "회사는 설비의 보수·점검·교체, 통신 장애, 천재지변 등의 사유가 발생한 경우 서비스 제공을 일시적으로 중단할 수 있습니다. 무료로 제공되는 서비스의 변경·중단에 대하여 회사는 법령에 특별한 규정이 없는 한 책임을 지지 않습니다.":"The Company may temporarily suspend the Service for maintenance, inspection, replacement of equipment, network failures, or force majeure. Unless otherwise required by law, the Company is not liable for changes to or suspension of services provided free of charge.",
+  "제6조 (회원가입 및 계정)":"Article 6 (Sign-up and Accounts)",
+  "이용자는 이메일 또는 소셜 로그인(구글·카카오·네이버)을 통해 회원으로 가입할 수 있습니다. 회원은 가입 시 정확한 정보를 제공해야 하며, 허위 정보를 등록한 경우 서비스 이용이 제한될 수 있습니다.":"Users may sign up via email or social login (Google, Kakao, Naver). Members must provide accurate information; registering false information may restrict use of the Service.",
+  "제7조 (회원 탈퇴 및 자격 상실)":"Article 7 (Withdrawal and Loss of Membership)",
+  "회원은 언제든지 탈퇴를 요청할 수 있으며, 회사는 지체 없이 이를 처리합니다. 회원이 타인의 정보를 도용하거나, 서비스 운영을 방해하거나, 법령 또는 이 약관을 위반하는 경우 회사는 회원자격을 제한·정지 또는 상실시킬 수 있습니다.":"Members may request withdrawal at any time, and the Company will process it without delay. The Company may restrict, suspend, or revoke membership if a member misappropriates another's information, disrupts the Service, or violates the law or these Terms.",
+  "제8조 (회원에 대한 통지)":"Article 8 (Notices to Members)",
+  "회사가 회원에게 통지를 하는 경우, 회원이 등록한 전자우편 주소 또는 서비스 내 알림 등을 통해 할 수 있습니다.":"The Company may give notice to members via the registered email address or in-service notifications.",
+  "제9조 (유료·구독 서비스 및 결제)":"Article 9 (Paid/Subscription Services and Payment)",
+  "서비스는 현재 무료로 제공됩니다. 회사는 향후 일부 기능을 유료 또는 구독 형태로 전환할 수 있으며, 이 경우 요금·결제 수단·이용 조건 등을 사전에 고지하고 이용자의 동의를 받습니다.":"The Service is currently free. The Company may convert some features to a paid or subscription model in the future, in which case fees, payment methods, and conditions will be announced in advance and the user's consent obtained.",
+  "제10조 (청약철회 및 환불)":"Article 10 (Withdrawal of Offer and Refunds)",
+  "유료 서비스가 도입되는 경우, 이용자는 「전자상거래 등에서의 소비자보호에 관한 법률」에 따라 계약일 또는 이용 가능일부터 7일 이내에 청약을 철회할 수 있습니다. 다만 디지털 콘텐츠의 제공이 개시된 경우 등 같은 법 제17조에서 정한 사유에 해당할 때에는 청약철회가 제한될 수 있습니다. 구체적인 환불 기준과 절차는 유료 서비스 도입 시 별도로 정하여 고지합니다.":"If paid services are introduced, users may withdraw their offer within 7 days of the contract date or the date the service becomes available, under the E-Commerce Consumer Protection Act. Withdrawal may be limited in cases set out in Article 17 of that Act, such as where delivery of digital content has begun. Specific refund standards and procedures will be set and announced when paid services are introduced.",
+  "제11조 (회사의 의무)":"Article 11 (Company Obligations)",
+  "회사는 관련 법령과 이 약관이 금지하는 행위를 하지 않으며, 안정적인 서비스 제공을 위해 노력합니다. 회사는 이용자의 개인정보를 개인정보처리방침에 따라 보호합니다.":"The Company does not engage in acts prohibited by law or these Terms and strives to provide a stable Service. The Company protects users' personal information in accordance with its Privacy Policy.",
+  "제12조 (이용자의 계정·비밀번호 관리 의무)":"Article 12 (Account and Password Responsibility)",
+  "이용자는 자신의 계정과 비밀번호를 안전하게 관리할 책임이 있으며, 이를 제3자가 이용하도록 하여서는 안 됩니다. 계정의 무단 사용을 인지한 경우 즉시 회사에 알려야 합니다.":"Users are responsible for keeping their account and password secure and must not allow third parties to use them. If you become aware of unauthorized use, notify the Company immediately.",
+  "제13조 (이용자의 의무)":"Article 13 (User Obligations)",
+  "이용자는 다음 각 호의 행위를 하여서는 안 됩니다.":"Users must not engage in any of the following:",
+  "자동화된 수단으로 서비스에 과도한 부하를 유발하거나 데이터를 대량으로 수집(크롤링)하는 행위":"Imposing excessive load on the Service or bulk-collecting data (crawling) by automated means",
+  "서비스의 정상적인 운영을 방해하거나 보안을 침해하는 행위":"Disrupting normal operation of the Service or breaching its security",
+  "회사 또는 제3자의 지식재산권을 침해하거나 명예를 훼손하는 행위":"Infringing the intellectual property or defaming the reputation of the Company or third parties",
+  "관련 법령 또는 이 약관을 위반하는 행위":"Violating applicable laws or these Terms",
+  "제14조 (지식재산권)":"Article 14 (Intellectual Property)",
+  "서비스에 게시된 리포트·분석·디자인 등 모든 콘텐츠에 대한 저작권 및 기타 지식재산권은 회사에 귀속됩니다. 이용자는 회사의 사전 동의 없이 이를 복제·배포·전송하거나 상업적으로 이용할 수 없습니다.":"Copyright and other intellectual property rights in all content on the Service — including reports, analyses, and design — belong to the Company. Users may not reproduce, distribute, transmit, or commercially exploit such content without the Company's prior consent.",
+  "제15조 (투자 관련 면책 고지)":"Article 15 (Investment Disclaimer)",
+  "회사가 제공하는 모든 데이터·AI 분석·리포트는 투자 판단을 돕기 위한 참고용 정보이며, 특정 종목의 매수·매도 또는 보유를 권유하거나 자문하는 것이 아닙니다.":"All data, AI analyses, and reports provided by the Company are reference information to assist your investment decisions; they are not a recommendation or advice to buy, sell, or hold any particular security.",
+  "회사는 「자본시장과 금융투자업에 관한 법률」에 따른 투자자문업자 또는 투자일임업자가 아니며, 개별 이용자에 대한 투자자문을 제공하지 않습니다. 서비스가 제공하는 정보는 AI가 자동 생성하여 지연·누락·오류가 포함될 수 있으며, 회사는 그 정확성·완전성·시의성을 보증하지 않습니다.":"The Company is not an investment adviser or discretionary investment manager under the Financial Investment Services and Capital Markets Act and does not provide individual investment advice. Information on the Service is generated automatically by AI and may contain delays, omissions, or errors; the Company does not guarantee its accuracy, completeness, or timeliness.",
+  "모든 투자의 최종 판단과 책임은 전적으로 이용자 본인에게 있으며, 회사는 제공된 정보를 근거로 한 투자 결정 및 그로 인한 손익에 대하여 법령이 허용하는 범위에서 책임을 지지 않습니다.":"The final judgment and responsibility for all investments rest solely with you, and to the extent permitted by law, the Company is not liable for investment decisions made based on the information provided or for any resulting gains or losses.",
+  "중요한 수치나 사실은 금융감독원 전자공시시스템(DART) 등 원천 자료에서 반드시 직접 확인하시기 바랍니다.":"Always verify important figures and facts directly against primary sources such as the FSS electronic disclosure system (DART).",
+  "제16조 (책임의 제한)":"Article 16 (Limitation of Liability)",
+  "회사는 천재지변, 불가항력, 이용자의 귀책사유로 인한 서비스 이용 장애에 대하여 책임을 지지 않습니다. 회사는 무료로 제공되는 서비스 이용과 관련하여 법령에 특별한 규정이 없는 한 손해배상 책임을 부담하지 않습니다.":"The Company is not liable for service disruptions caused by natural disasters, force majeure, or causes attributable to the user. Unless otherwise required by law, the Company bears no liability for damages in connection with services provided free of charge.",
+  "제17조 (분쟁의 해결 및 준거법)":"Article 17 (Dispute Resolution and Governing Law)",
+  "이 약관은 대한민국 법령에 따라 해석되며, 회사와 이용자 간에 발생한 분쟁에 관한 소송은 「민사소송법」에 따른 관할 법원에 제기합니다.":"These Terms are interpreted under the laws of the Republic of Korea, and lawsuits arising between the Company and users shall be brought before the competent court under the Civil Procedure Act.",
+  "부칙":"Addendum",
+  "이 약관은 2026년 6월 6일부터 시행하며, 2026년 6월 12일 개정되었습니다.":"These Terms take effect on June 6, 2026, and were amended on June 12, 2026.",
+  "본 약관은 공정거래위원회 표준약관의 구성을 참고하여 작성되었으며, 명시되지 않은 사항은 관계 법령 및 상관례에 따릅니다. 운영자: 임범준 · 문의: hello@kosai.kr":"These Terms follow the structure of the KFTC standard terms; matters not specified herein are governed by applicable laws and customary practice. Operator: Beomjun Lim · Contact: hello@kosai.kr",
   "KOSAI 서비스 이용에 관한 기본적인 사항을 규정합니다.":"These terms set out the basics of using the KOSAI service.",
   "시행일: 2026년 6월 6일":"Effective date: June 6, 2026",
   "제1조 (목적)":"Article 1 (Purpose)",
