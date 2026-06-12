@@ -1,169 +1,159 @@
 {
  "title": {
-  "ko": "하이닉스 지분가치와 할인율 축소의 함수",
-  "en": "A Function of Hynix Stake Value and Narrowing NAV Discount"
+  "ko": "하이닉스에 연동된 반도체 지주",
+  "en": "A Semiconductor Holding Tied to Hynix"
  },
  "lead": {
-  "ko": "SK하이닉스 지분법이익이 사상 최대 실적을 견인하는 가운데, SK스퀘어는 주주환원 확대와 포트폴리오 리밸런싱으로 지주사 할인율 축소를 추진하고 있다.",
-  "en": "SK Square's record earnings are driven by equity-method income from SK hynix, while the company pursues a narrowing holding-company discount through expanded shareholder returns and portfolio rebalancing."
+  "ko": "SK스퀘어의 가치와 실적은 핵심 자회사 SK하이닉스 지분(약 20.5%)에 거의 전적으로 연동되어 있으며, NAV 할인율 축소와 주주환원 확대가 재평가의 축이 되고 있다.",
+  "en": "SK Square's value and earnings are almost entirely linked to its roughly 20.5% stake in core affiliate SK hynix, with a shrinking NAV discount and expanded shareholder returns forming the axis of its re-rating."
  },
  "keypoints": [
   {
-   "ko": "2026년 1분기 영업이익 8조2783억원으로 분기 사상 최대를 기록했으며, 이는 SK하이닉스 지분법이익이 결정적이었다.",
-   "en": "First-quarter 2026 operating profit hit a record 8.28 trillion won, driven decisively by equity-method income from SK hynix."
+   "ko": "2026년 1분기 연결 영업이익 8조2,783억원·지배주주 순이익 8조3,810억원으로 분기 사상 최대를 기록했으며, 이는 대부분 SK하이닉스 지분법이익에서 비롯됐다.",
+   "en": "First-quarter 2026 consolidated operating profit reached KRW 8.28 trillion and owner net profit KRW 8.38 trillion, a record high driven mainly by equity-method income from SK hynix."
   },
   {
-   "ko": "회사는 SK하이닉스 지분 약 20.5%를 보유한 투자전문 지주회사로, 실적과 기업가치가 SK하이닉스 주가에 크게 연동된다.",
-   "en": "As an investment holding company holding roughly 20.5% of SK hynix, its earnings and value are highly linked to SK hynix's share price."
+   "ko": "회사는 NAV 할인율을 핵심 KPI로 삼고 있으며, 2024년 말 65.7%에서 2026년 3월 46.4%까지 축소됐고 2028년까지 30% 이하를 목표로 한다.",
+   "en": "The company uses its NAV discount as a key KPI, narrowing it from 65.7% at end-2024 to 46.4% in March 2026, with a target below 30% by 2028."
   },
   {
-   "ko": "순자산가치(NAV) 할인율이 2024년 말 65.7%에서 2026년 6월 46.6%까지 축소되며 2028년 목표인 30%를 향해 가고 있다.",
-   "en": "The NAV discount narrowed from 65.7% at end-2024 to 46.6% in June 2026, progressing toward the 2028 target of 30%."
+   "ko": "2026~2028년 주주환원 정책으로 경상 배당수입의 30% 이상과 투자성과 일부를 환원하며, 2026년에는 처음으로 현금배당(중간배당 주당 1,550원)을 포함한 약 3,100억원을 집행할 계획이다.",
+   "en": "Under its 2026-2028 policy, it will return over 30% of recurring dividend income plus part of investment gains, executing about KRW 310 billion in 2026 including its first cash dividend of KRW 1,550 per share."
   },
   {
-   "ko": "2026~2028년 중기 주주환원 정책을 발표하고, 올해부터 내년 초까지 3100억원 규모 환원과 첫 현금배당을 예고했다.",
-   "en": "It announced a 2026-2028 mid-term return policy and flagged about 310 billion won of returns plus a first cash dividend through early next year."
+   "ko": "원스토어 매각 협상 등 비핵심 자산 리밸런싱이 마무리 단계에 접어들며 AI·반도체 분야 신규 투자 재원을 확보하고 있다.",
+   "en": "Non-core asset rebalancing, including talks to sell ONE store, is nearing completion, building dry powder for new AI and semiconductor investments."
   },
   {
-   "ko": "SK쉴더스·인크로스 정리에 이어 원스토어 매각을 협의 중으로, 비핵심 자산 리밸런싱이 막바지에 접어들며 AI·반도체 신규 투자 여력이 커지고 있다.",
-   "en": "After divesting SK Shieldus and Incross, it is negotiating an OneStore sale, with non-core rebalancing nearing completion and growing capacity for new AI and semiconductor investments."
+   "ko": "기관의 동일종목 비중 제한으로 SK하이닉스 대체(Proxy) 투자처로 부각되며 수급이 집중됐으나, 동시에 자체 사업 부재와 하이닉스 주가 변동성 노출이라는 구조적 한계를 안고 있다.",
+   "en": "Institutional single-stock limits have made it a proxy for SK hynix, concentrating fund flows, while it carries the structural limits of having little operating business of its own and full exposure to Hynix's share volatility."
   }
  ],
  "business": {
-  "ko": "SK스퀘어는 2021년 11월 SK텔레콤에서 인적분할된 SK그룹의 투자전문 지주회사로, 반도체·ICT 영역의 지분을 보유·관리한다. 가장 핵심 자산은 SK하이닉스로, 2026년 2월 SK하이닉스가 자사주 2.1%를 소각하면서 SK스퀘어의 지분율은 20.1%에서 20.5%로 소폭 상승했다. 이 지분은 지분법으로 회계 처리되어 SK스퀘어 연결 영업이익의 대부분을 차지한다. 비반도체 부문에서는 SK플래닛, 11번가, 티맵모빌리티, 콘텐츠웨이브, 원스토어, 코빗 등의 지분을 보유한 ICT 포트폴리오를 거느린다. 티맵의 완성차 탑재형 내비게이션 '티맵 오토' 매출은 전년 대비 30% 이상 급증했고, 운전 점수 기반 보험 사업도 29.4% 성장했으며, 월간 활성 이용자 1500만명 트래픽을 AI 에이전트 서비스와 연계했다. 다만 11번가·원스토어·SK플래닛 등 주요 ICT 계열사의 합산 영업손익은 여전히 적자를 기록 중이라는 한계도 있다. 회사는 비핵심 자산을 정리하는 리밸런싱을 진행해 왔고, 자산 효율화를 위해 SK쉴더스·나노엔텍·드림어스컴퍼니 등의 경영권 지분을 정리했으며, 11번가와 인크로스는 각각 SK플래닛과 SK네트웍스로 넘겼다. 현재는 원스토어 경영권 지분 매각을 위해 넥써쓰와 협상을 진행 중이며, SK스퀘어는 원스토어 지분 45.78%를 보유한 최대주주다. 동시에 해외 투자법인을 통한 직접 투자도 확대하고 있다.",
-  "en": "SK Square is SK Group's investment holding company, spun off from SK Telecom in November 2021, holding and managing stakes in semiconductor and ICT firms. Its core asset is SK hynix, and after SK hynix retired 2.1% of treasury shares in February 2026, SK Square's stake edged up from 20.1% to 20.5%. This stake is accounted for under the equity method and makes up the bulk of SK Square's consolidated operating profit. On the non-semiconductor side, it holds an ICT portfolio with stakes in SK Planet, 11st, Tmap Mobility, Contents Wavve, OneStore and Korbit, among others. Tmap's embedded automotive navigation 'Tmap Auto' revenue surged over 30% year on year, its driving-score-based insurance business grew 29.4%, and it linked traffic from 15 million monthly active users to AI agent services. However, there are limits, as the combined operating result of major ICT affiliates including 11st, OneStore and SK Planet was still in deficit. The company has pursued rebalancing by divesting non-core assets, and for asset efficiency it sold controlling stakes in SK Shieldus, Nanoentek and Dreamus, while transferring 11st and Incross to SK Planet and SK Networks respectively. It is currently negotiating with Nexus to sell its controlling stake in OneStore, where SK Square is the largest shareholder with a 45.78% stake. At the same time it is expanding direct investments through an overseas investment vehicle."
+  "ko": "SK스퀘어는 SK텔레콤에서 인적분할해 출범한 SK그룹의 ICT·반도체 투자 전문 중간지주회사다. 당초 SK스퀘어는 SK텔레콤이 인적분할하며 출범한 그룹 내 인수합병 전문회사로, 규제산업인 통신사에 가려져 있던 자회사 가치를 이끌어내고 공격적 투자로 그룹 내 ICT 거점을 만들겠다는 목표였다. 회사의 가치는 핵심 자회사 SK하이닉스 지분에 압도적으로 집중되어 있는데, 자산의 98%를 차지하는 핵심 자회사가 SK하이닉스인 구조다. 2026년 2월 SK하이닉스가 보유 자사주 2.1%를 소각하면서 SK스퀘어의 SK하이닉스 지분율은 20.1%에서 20.5%로 소폭 상승했다. 나머지 포트폴리오는 티맵모빌리티, 11번가, 원스토어 등 ICT·플랫폼 자회사들로 구성되어 있다. 한 외국계 기관투자가는 SK스퀘어를 두고 투자 전문성에 의한 가치 창출보다는 SK하이닉스를 직접 사기 부담스러울 때 지주사 할인을 감안한 대용주식 성격이 강하다고 평가하기도 한다. 통상 지주사들은 브랜드 로열티나 다양한 자회사 배당 등 안정적 사업 소득원을 갖지만, SK스퀘어는 사실상 SK하이닉스 배당이 핵심 수익원 역할을 하고 있어 하이닉스 실적과 업황 영향이 크게 작용하는 구조다. 조직 측면에서도 SK스퀘어 임직원 수는 약 80명 규모로, 보유 자산 규모 대비 매우 단조로운 인력 구조를 갖고 있다. 이는 SK스퀘어가 전통적 사업지주라기보다 반도체 자산에 집중된 투자 비히클에 가깝다는 점을 보여준다.",
+  "en": "SK Square is SK Group's intermediate holding company specialized in ICT and semiconductor investment, spun off from SK Telecom. It was originally launched as the group's M&A specialist via a spin-off from SK Telecom, aiming to unlock affiliate value that had been overshadowed by the regulated telecom business and to build an ICT hub through aggressive investment. Its value is overwhelmingly concentrated in its stake in core affiliate SK hynix, with SK hynix accounting for 98% of its assets. After SK hynix cancelled 2.1% of its treasury shares in February 2026, SK Square's stake in SK hynix rose slightly from 20.1% to 20.5%. The remaining portfolio consists of ICT and platform affiliates such as TMAP Mobility, 11Street and ONE store. One foreign institutional investor has characterized SK Square as functioning less as a value creator through investment expertise and more as a proxy stock that captures the holding-company discount when buying SK hynix directly feels burdensome. While typical holding companies have stable income sources such as brand royalties and diverse affiliate dividends, SK Square effectively relies on SK hynix dividends as its core revenue, leaving it heavily exposed to Hynix's earnings and industry cycle. In organizational terms, SK Square has only about 80 employees, an unusually lean structure relative to its asset base. This underscores that SK Square is closer to an investment vehicle concentrated in semiconductor assets than a traditional operating holding company."
  },
  "earnings": {
-  "ko": "SK스퀘어의 손익은 매출보다 SK하이닉스 지분법이익에 좌우되는 지주사 구조다. 연간 기준 매출은 2023년 2조2765억원에서 2024년 1조9066억원, 2025년 1조4115억원으로 감소했는데, 이는 포트폴리오 회사 매각·연결 제외에 따른 것이다. 반면 영업이익은 2023년 2조3397억원 적자에서 2024년 3조9126억원 흑자, 2025년 8조7974억원으로 급증했고, 지배주주 순이익도 2025년 8조8241억원으로 사상 최대를 기록했다. 이에 따라 2025년 자기자본이익률(ROE)은 31.9%, 자본총계는 27조9832억원으로 크게 확대됐다. 분기 흐름을 보면 2025년 1분기 영업이익 1조6523억원에서 2분기 1조4011억원으로 주춤했다가, 3분기 2조6455억원, 4분기 3조985억원으로 가파르게 상승했다. 2026년 1분기에는 매출 3003억원, 영업이익 8조2783억원, 순이익 8조3747억원을 기록해 전년 동기 대비 영업이익 400%, 순이익 419% 증가했다. 이는 SK하이닉스 지분법이익과 포트폴리오 회사의 수익성 중심 경영 성과를 기반으로 분기 사상 최대 이익을 달성한 것이다. 매출이 3000억원대에 불과한데 영업이익이 8조원대인 구조는 지분법이익이 영업이익에 반영되는 지주사 회계 특성에 기인하므로, 통상적 영업이익률·마진 추이로 해석하기보다 보유 지분 가치 변동의 관점에서 읽는 것이 적절하다.",
-  "en": "SK Square's profit and loss is a holding-company structure governed more by SK hynix equity-method income than by revenue. Annual revenue fell from 2.28 trillion won in 2023 to 1.91 trillion in 2024 and 1.41 trillion in 2025, reflecting sales and deconsolidation of portfolio companies. Operating profit, by contrast, swung from a 2.34 trillion won loss in 2023 to a 3.91 trillion gain in 2024 and 8.80 trillion in 2025, with net profit attributable to owners reaching a record 8.82 trillion won in 2025. As a result, 2025 return on equity reached 31.9% and total equity expanded sharply to 27.98 trillion won. By quarter, operating profit eased from 1.65 trillion won in Q1 2025 to 1.40 trillion in Q2, then rose steeply to 2.65 trillion in Q3 and 3.10 trillion in Q4. In the first quarter of 2026 it posted revenue of 300.3 billion won, operating profit of 8.28 trillion won and net profit of 8.37 trillion won, up 400% and 419% year on year in operating and net profit. This represented a record quarterly profit built on SK hynix equity-method income and profitability-focused management at portfolio companies. The structure of just over 300 billion won in revenue against trillions in operating profit stems from holding-company accounting in which equity-method income flows into operating profit, so it is better read through the lens of changes in stake value rather than conventional operating-margin trends."
+  "ko": "2026년 1분기 SK스퀘어는 매출 3,003억원, 영업이익 8조2,783억원, 지배주주 순이익 8조3,810억원으로 분기 기준 사상 최대 이익을 기록했다. 이는 직전 분기(2025년 4분기) 영업이익 3조985억원, 지배주주 순이익 3조2,826억원과 비교해 약 2.7배 급증한 수치이며, 전년 동기(2025년 1분기) 영업이익 1조6,523억원 대비로도 약 5배에 달한다. 이는 반도체 슈퍼사이클 진입에 따른 SK하이닉스의 역대급 실적과, 이를 통한 지분법이익 증가(8조3,126억원)의 영향이다. 매출 자체는 분기당 3,000억~4,000억원대에 머무는데, 영업이익이 매출의 수십 배에 달하는 것은 지주회사 특성상 SK하이닉스 지분법이익이 영업단에 반영되기 때문이다. 연간으로 보면 2025년 매출 1조4,115억원, 영업이익 8조7,974억원, 지배주주 순이익 8조8,241억원으로, 2024년 영업이익 3조9,126억원·순이익 3조7,140억원 대비 큰 폭으로 증가했다. 특히 2023년에는 영업손실 2조3,397억원, 지배주주 순손실 1조2,870억원을 기록했던 점을 감안하면 메모리 업황 반등에 따른 실적 변동 폭이 매우 큰 구조임을 알 수 있다. 자본 측면에서도 2025년 말 지배주주 자본이 27조9,832억원으로 2023년 말 15조8,165억원에서 크게 증가했고, 부채비율은 9.0%로 매우 낮다. 2025년 ROE는 31.9%로 2024년 19.5%, 2023년 -8.5%와 비교해 가파르게 개선됐다.",
+  "en": "In the first quarter of 2026, SK Square posted revenue of KRW 300.3 billion, operating profit of KRW 8.28 trillion, and owner net profit of KRW 8.38 trillion, a record quarterly result. This was roughly 2.7 times the prior quarter's (Q4 2025) operating profit of KRW 3.10 trillion and owner net profit of KRW 3.28 trillion, and about five times the year-earlier (Q1 2025) operating profit of KRW 1.65 trillion. The surge reflected SK hynix's record results amid entry into a semiconductor super-cycle and the resulting jump in equity-method income of KRW 8.31 trillion. Revenue itself stays in the KRW 300-400 billion range per quarter, yet operating profit runs into the tens of trillions because, by the nature of a holding company, equity-method gains from SK hynix flow into the operating line. For the full year, 2025 revenue was KRW 1.41 trillion, operating profit KRW 8.80 trillion and owner net profit KRW 8.82 trillion, sharply higher than 2024's operating profit of KRW 3.91 trillion and net profit of KRW 3.71 trillion. Given that 2023 saw an operating loss of KRW 2.34 trillion and an owner net loss of KRW 1.29 trillion, the structure clearly carries very large earnings swings tied to the memory cycle. On the balance sheet, owner equity rose to KRW 27.98 trillion at end-2025 from KRW 15.82 trillion at end-2023, with a very low debt ratio of 9.0%. Return on equity reached 31.9% in 2025, up steeply from 19.5% in 2024 and -8.5% in 2023."
  },
  "industry": {
-  "ko": "SK스퀘어 기업가치의 핵심 변수는 메모리 반도체 업황과 SK하이닉스의 포지션이다. 2026년 글로벌 반도체 산업은 AI 인프라 확산을 중심으로 재편되는 과도기에 진입했고, 전체 시장은 1조 달러에 근접하는 성장세가 예상되며 메모리 반도체가 수요와 수익성 측면에서 핵심으로 부상하고 있다. 카운터포인트리서치에 따르면 SK하이닉스는 2025년 2분기 기준 HBM 출하량 점유율 62%로 1위, 3분기 매출 기준으로도 57%로 과점적 지위를 유지하고 있다. 다만 경쟁 구도는 변화 중이다. HBM 시장에서 삼성전자의 점유율은 2026년 1분기 30% 수준까지 올라온 것으로 추산되며, 삼성은 2월 업계 최초로 HBM4 양산 출하를 시작하며 기술 우위를 내세웠다. 삼성전자가 2026년 하반기에 HBM4 양산에 성공할 경우 SK하이닉스의 시장 점유율은 50~60%로 하락할 수 있어 밸류에이션 리레이팅 리스크에 노출될 수 있다. 한편 메모리 가격 강세의 반대편에서는 부담도 나타나, 국제데이터기업(IDC)은 2026년 글로벌 PC 출하량이 메모리 수급 불균형 여파로 11.3% 줄 것으로 전망했고, 애플 CEO도 메모리 가격 급등이 마진을 압박할 것이라 경고했다. SK스퀘어는 지주회사 업종 내에서도 NAV 할인율·배당·자사주를 동시에 갖춘 종목으로 분류되며 리레이팅 흐름의 한 축에 놓여 있다.",
-  "en": "The key variable for SK Square's value is the memory chip cycle and SK hynix's position within it. In 2026 the global semiconductor industry has entered a transition centered on AI infrastructure expansion, with the overall market expected to approach one trillion dollars and memory chips emerging as central to both demand and profitability. According to Counterpoint Research, SK hynix held first place with a 62% HBM shipment share in Q2 2025 and maintained an oligopolistic 57% by Q3 revenue. However, the competitive landscape is shifting. Samsung's HBM market share is estimated to have risen to around 30% in Q1 2026, and Samsung began HBM4 mass-production shipments first in February, claiming a technology edge. If Samsung succeeds in HBM4 mass production in the second half of 2026, SK hynix's market share could fall to 50-60%, exposing it to valuation re-rating risk. On the flip side of strong memory prices, pressures are also emerging, as IDC forecast 2026 global PC shipments would fall 11.3% on memory supply-demand imbalances, and Apple's CEO warned that surging memory prices would pressure margins. Within the holding-company sector, SK Square is classified as a stock combining NAV discount, dividends and buybacks, placing it on one axis of the re-rating trend."
+  "ko": "SK스퀘어의 업황은 사실상 메모리 반도체 사이클, 특히 HBM 수요에 좌우된다. 2026년 글로벌 반도체 시장은 AI 인프라 확산으로 메모리 중심 재편이 예상되며, HBM3E가 주력으로 부상하는 가운데 SK하이닉스가 시장을 주도하고 HBM4 전환도 준비 중이다. 세계반도체무역통계기구는 2026년 글로벌 반도체 시장이 전년비 25% 이상 성장해 약 9,750억 달러 수준에 이를 것으로 전망하며, 메모리 부문은 전체 성장률을 상회하는 30%대 증가세를 보일 것으로 내다본다. UBS는 2026년 엔비디아의 차세대 루빈 플랫폼에 탑재될 HBM4 시장에서도 SK하이닉스가 약 70%의 점유율을 달성할 것으로 예상했다. 다만 사이클 정점에 대한 신중론도 병존한다. 일부 시장조사기관과 외신은 2026년 이후 HBM 가격이 경쟁 심화와 생산능력 확대로 조정 국면에 들어갈 가능성을 제기하며, 후발 업체들의 D램 생산 확대와 글로벌 반도체 규제 이슈도 중장기 변수로 지목된다. 삼성전자가 HBM4 양산에 성공할 경우 SK하이닉스의 시장 점유율 하락 가능성이 있으며, 이는 2026년 4분기에 판가름 날 전망이다. 수급 측면에서는 삼성전자·SK하이닉스 비중 제한에 걸린 기관 자금이 SK스퀘어를 반도체 대체 투자처로 편입하면서 수급이 집중되고 있다는 분석이 나온다.",
+  "en": "SK Square's operating environment is effectively governed by the memory chip cycle, particularly HBM demand. In 2026 the global semiconductor market is expected to be reshaped around memory amid AI infrastructure expansion, with HBM3E emerging as the workhorse while SK hynix leads the market and prepares its transition to HBM4. The World Semiconductor Trade Statistics body projects the 2026 global chip market to grow more than 25% year-on-year to about USD 975 billion, with the memory segment expanding at over 30%, above the overall rate. UBS expects SK hynix to capture roughly 70% of the HBM4 market for Nvidia's next-generation Rubin platform in 2026. Still, caution about the cycle peak coexists. Some research firms and foreign media raise the possibility that HBM prices could enter an adjustment phase after 2026 amid intensifying competition and capacity expansion, while expanded DRAM production by latecomers and global chip regulation are flagged as longer-term variables. If Samsung Electronics succeeds in mass-producing HBM4, SK hynix's market share could decline, a question likely to be settled in the fourth quarter of 2026. On the flows side, analysts note that institutional money constrained by single-stock limits on Samsung and SK hynix has been concentrating into SK Square as a semiconductor proxy."
  },
  "outlook": {
-  "ko": "회사는 SK하이닉스 실적 호조에 기반한 지분가치 상승과 함께 주주환원 확대를 핵심 전략으로 제시했다. SK스퀘어는 2026~2028년 주주환원 정책을 공개하며 향후 3년간 경상 배당수입의 30% 이상과 투자성과 일부를 자사주 매입·소각 또는 현금배당 방식으로 환원하고, 올해부터 내년 초까지 총 3100억원 규모의 주주환원을 실행하기로 했다. 또한 정기 주총에서 자본준비금 5조8900억원을 이익잉여금으로 전입하는 안건을 통과시켜, 배당·자사주 매입 등에 활용할 재원 기반을 마련했다. 한 증권사는 올해 처음으로 배당 지급이 결정돼 중간배당 주당 1550원, 배당총액 2043억원 규모에 자사주 1100억원 매입·소각이 더해질 것으로 전망했다. 기업가치 제고 측면에서는 NAV 할인율이 2024년 말 65.7%에서 개선되며 2027년까지 50% 이하로 축소하겠다는 목표를 조기 달성했고, 이후 2028년까지 30%까지 낮추는 목표를 제시하고 있다. 신규 투자 방향에 대해 회사는 AI 진화의 병목을 해소하는 AI 인프라 영역과 반도체 밸류체인 영역에서 투자처를 물색한다는 계획이다. 비핵심 자산 매각이 막바지로 향하면서 IB 업계에서는 SK스퀘어가 AI·반도체 분야에서 대규모 투자에 나설지 주목하고 있다.",
-  "en": "The company has set out rising stake value on the back of strong SK hynix earnings, alongside expanded shareholder returns, as its core strategy. SK Square unveiled a 2026-2028 return policy under which, over three years, it will return more than 30% of recurring dividend income plus part of investment gains via buybacks and cancellations or cash dividends, and will execute a total of about 310 billion won in returns through early next year. It also passed a resolution at its AGM to transfer 5.89 trillion won of capital reserves into retained earnings, creating a funding base for dividends and buybacks. One brokerage projected that a dividend payment was decided for the first time this year, with an interim dividend of 1,550 won per share totaling 204.3 billion won, plus 110 billion won of share buybacks and cancellations. On value-up, the NAV discount improved from 65.7% at end-2024 and the company achieved ahead of schedule its goal of narrowing it below 50% by 2027, and it has since set a goal to lower it to 30% by 2028. On new investment direction, the company plans to seek targets in AI infrastructure that relieves AI bottlenecks and in the semiconductor value chain. As non-core asset sales near completion, the investment banking industry is watching whether SK Square will pursue large-scale investments in AI and semiconductors."
+  "ko": "회사 전망의 핵심은 NAV 할인율 축소와 주주환원 확대다. SK스퀘어는 NAV 목표치를 상향 조정해 2028년까지 NAV 할인율을 30% 이하로 낮추겠다는 계획을 제시했다. NAV 할인율은 2026년 3월 24일 기준 46.4%로 2024년 말 65.7% 대비 크게 낮아져, 2027년까지 50% 이하로 낮추겠다는 기존 목표를 조기 달성했다. 주주환원 측면에서는 2026년 처음으로 배당 지급을 결정했고, 중간배당으로 주당 1,550원·배당총액 약 2,000억원 규모에 더해 자사주 1,100억원을 매입·소각할 계획이다. 향후 3년간 경상 배당수입의 30% 이상과 투자성과 일부를 자사주 매입·소각 또는 현금배당 방식으로 환원할 예정이며, 올해부터 내년 초까지 총 3,100억원의 주주환원을 실행한다. 포트폴리오 측면에서는 토종 앱마켓 원스토어 경영권 매각에 속도를 내며 비핵심 자산 매각이 막바지를 향해 가는 가운데, IB 업계에서는 SK스퀘어가 AI·반도체 분야에서 대규모 투자에 나설지 주목하고 있다. 2026년 1분기 말 별도 기준 유동성 자산은 1조4,229억원에 달하며, SK하이닉스 배당금과 매각 대금, 외부 자본 조달까지 고려하면 실질적인 투자 재원은 수 조원에 달할 전망이다. 다만 이러한 전망의 상당 부분은 SK하이닉스 실적·주가에 종속되어 있다는 점에서 변동성이 크다.",
+  "en": "The core of the outlook is a narrowing NAV discount and expanding shareholder returns. SK Square raised its NAV target, setting a plan to lower its NAV discount below 30% by 2028. The discount stood at 46.4% as of March 24, 2026, sharply lower than 65.7% at end-2024, having met early its earlier goal of dropping below 50% by 2027. On returns, the company decided to pay a dividend for the first time in 2026, with an interim dividend of KRW 1,550 per share totaling about KRW 200 billion, alongside plans to buy back and cancel KRW 110 billion of treasury shares. Over the next three years it will return more than 30% of recurring dividend income plus part of investment gains via buybacks and cancellations or cash dividends, executing a total of KRW 310 billion from this year into early next year. On the portfolio, it is accelerating the sale of management control of domestic app market ONE store as non-core divestitures near completion, while investment bankers watch whether SK Square will pursue large-scale AI and semiconductor investments. As of end-Q1 2026, standalone liquidity assets reached KRW 1.42 trillion, and counting SK hynix dividends, sale proceeds and external financing, real investment firepower could amount to several trillion won. However, much of this outlook is subordinate to SK hynix's earnings and share price, leaving it highly volatile."
  },
  "valuation_comment": {
-  "ko": "현재가 1,358,000원 기준 시가총액은 약 179.2조원이며, 최근 4개 분기 이익 기준 PER은 11.5배, PBR은 4.98배다. 지주회사는 보유 자산가치 대비 시가총액 차이인 NAV 할인율로 함께 평가되는데, SK스퀘어의 NAV 할인율은 2026년 6월 13일 기준 46.6%로, 2024년 말 65.7%, 2025년 말 51.5%와 비교해 낮아졌다. 즉 과거 60%대까지 벌어졌던 할인율이 빠르게 축소돼 온 국면이다. 배당은 회사가 올해 처음 배당 지급을 결정하며 중간배당 주당 1550원이 전망되나, 구체적 확정치는 이사회 의결을 거쳐야 한다. 증권가 목표주가는 빠르게 상향돼 왔으며, 한 집계에서는 6개월 전체 증권사 평균 목표가가 852,500원으로 직전 6개월 평균 252,625원 대비 237.5% 상승한 것으로 나타났다. 다만 이 수치들은 SK하이닉스 주가에 크게 연동되므로, 보유 지분 가치의 변동성을 함께 고려해 해석할 필요가 있다.",
-  "en": "At the current price of 1,358,000 won, market capitalization is about 179.2 trillion won, with a PER of 11.5 times and PBR of 4.98 times based on the most recent four quarters of profit. Holding companies are also assessed via the NAV discount, the gap between asset value held and market cap, and SK Square's NAV discount stood at 46.6% as of June 13, 2026, down from 65.7% at end-2024 and 51.5% at end-2025. In other words, a discount that had once widened into the 60% range has been narrowing rapidly. On dividends, the company decided to pay a dividend for the first time this year, with an interim dividend of 1,550 won per share projected, though the confirmed figure requires board approval. Brokerage target prices have been raised rapidly, and one tally showed the six-month average brokerage target at 852,500 won, up 237.5% from the prior six-month average of 252,625 won. However, these figures are highly linked to SK hynix's share price, so they should be interpreted together with the volatility of the underlying stake value."
+  "ko": "현재가 1,358,000원 기준 시가총액은 약 179.2조원이며, 최근 4개 분기 이익 기준 PER은 11.5배, PBR은 4.98배 수준이다. PER 11.5배는 메모리 이익이 정점에 가까운 시점의 수치라는 점에서, 사이클 변동에 따라 분모인 이익이 크게 움직일 수 있다는 해석이 가능하다. PBR 4.98배는 일반적 지주회사가 순자산 대비 할인(PBR 1배 미만)에 거래되는 경우가 많은 것과 대비되는데, 이는 SK하이닉스 지분의 시장가치 상승이 장부가 자본을 크게 상회해 반영되고 있음을 시사한다. 회사가 핵심 지표로 제시한 NAV 할인율은 2026년 3월 46.4%로 2024년 말 65.7% 대비 크게 축소됐다. 배당의 경우 2026년 처음으로 중간배당 주당 1,550원을 결정해 과거 자사주 중심 환원에서 현금배당이 추가된 점이 특징이다. 이러한 수치는 과거 밴드와 업종 맥락에서의 사실 비교일 뿐, 적정 수준에 대한 판단은 투자자의 몫이다.",
+  "en": "At the current price of KRW 1,358,000, market capitalization is about KRW 179.2 trillion, with a P/E of 11.5x and a P/B of 4.98x based on the last four quarters of earnings. The 11.5x P/E reflects a point where memory profits are near a peak, meaning the denominator can swing widely with the cycle. The P/B of 4.98x contrasts with typical holding companies that often trade at a discount to net assets (below 1x), suggesting that the rising market value of the SK hynix stake is being reflected well above book equity. The NAV discount the company highlights as a key metric stood at 46.4% in March 2026, sharply lower than 65.7% at end-2024. On dividends, the company set its first interim dividend of KRW 1,550 per share in 2026, adding cash payouts to its previously buyback-centered returns. These are factual comparisons against historical bands and sector context only; judging whether levels are appropriate is up to the investor."
  },
  "bull": [
   {
    "title": {
-    "ko": "메모리 슈퍼사이클과 지분법이익",
-    "en": "Memory super-cycle and equity-method income"
+    "ko": "HBM 슈퍼사이클의 간접 수혜",
+    "en": "Indirect beneficiary of the HBM super-cycle"
    },
    "body": {
-    "ko": "SK하이닉스는 AI 수요 증가로 고부가 메모리 판매가 확대돼 2026년 1분기 매출 52.6조, 영업이익 37.6조로 사상 최대 실적을 기록했다. 이 실적이 지분법이익으로 SK스퀘어 연결 손익에 반영되며 사상 최대 이익을 견인했다. 메모리 업황 호조가 지속되는 한 SK스퀘어의 이익 기반은 강하게 유지될 수 있다.",
-    "en": "SK hynix posted record Q1 2026 results of 52.6 trillion won in revenue and 37.6 trillion in operating profit as AI demand boosted high-value memory sales. These results flow into SK Square's consolidated profit as equity-method income, driving its record earnings. As long as the memory upcycle persists, SK Square's profit base can stay robust."
+    "ko": "핵심 자회사 SK하이닉스가 HBM 시장을 주도하며 사상 최대 실적을 내고 있고, 이 지분법이익이 SK스퀘어 실적을 직접 견인한다. 증권가는 SK하이닉스가 이번 슈퍼사이클에서 가장 강한 이익 모멘텀을 보이며 2026년 매출 352.5조원, 영업이익 266.9조원을 기록할 것으로 전망한다. HBM 수급 불균형은 2028년까지 지속될 것으로 예상된다. 이 경우 SK스퀘어의 NAV도 함께 확대된다.",
+    "en": "Core affiliate SK hynix leads the HBM market with record results, and that equity-method income directly drives SK Square's earnings. Analysts see SK hynix showing the strongest profit momentum in this super-cycle, projecting 2026 revenue of KRW 352.5 trillion and operating profit of KRW 266.9 trillion. The HBM supply-demand imbalance is expected to persist through 2028. In that case, SK Square's NAV expands alongside it."
    }
   },
   {
    "title": {
-    "ko": "할인율 축소와 주주환원 확대",
-    "en": "Narrowing discount and expanding returns"
+    "ko": "NAV 할인율 축소와 주주환원 강화",
+    "en": "Narrowing NAV discount and stronger returns"
    },
    "body": {
-    "ko": "NAV 할인율이 2024년 말 65.7%에서 2026년 6월 46.6%로 낮아졌다. 회사는 향후 3년간 경상 배당수입 30% 이상을 환원하고 올해부터 내년 초까지 3100억원의 주주환원을 실행할 계획이다. 자사주 매입·소각과 첫 배당이 병행되며 할인율 추가 축소의 동력으로 작용할 수 있다.",
-    "en": "The NAV discount fell from 65.7% at end-2024 to 46.6% in June 2026. The company plans to return over 30% of recurring dividend income over three years and execute 310 billion won of returns through early next year. Buybacks, cancellations and a first dividend together can act as a driver for further discount narrowing."
+    "ko": "회사는 NAV 할인율을 경영진 KPI로 삼아 적극적으로 축소하고 있다. NAV 할인율은 2026년 5월 13일 기준 46.6%로 2024년 말 65.7%, 2025년 말 51.5% 대비 확연히 개선됐다. 여기에 2026년 첫 현금배당과 자사주 매입·소각을 병행하며 환원을 다각화하고 있어 지주사 할인 축소 흐름이 이어질 수 있다.",
+    "en": "The company actively narrows its NAV discount, treating it as a management KPI. As of May 13, 2026, the discount was 46.6%, markedly improved from 65.7% at end-2024 and 51.5% at end-2025. Combined with its first cash dividend in 2026 alongside buybacks and cancellations, diversified returns could keep the holding-company discount shrinking."
    }
   },
   {
    "title": {
-    "ko": "리밸런싱 종료와 투자 실탄",
-    "en": "End of rebalancing and investment firepower"
+    "ko": "수급상 반도체 대체 투자처",
+    "en": "Semiconductor proxy in fund flows"
    },
    "body": {
-    "ko": "시장에서는 원스토어 매각으로 SK스퀘어의 전방위적 리밸런싱이 막바지에 접어들 것으로 보며, 포트폴리오 정리 결과 재무 여력이 한층 탄탄해졌다. 1분기 말 별도 기준 유동성 자산이 1조4229억원에 달하고, SK하이닉스 배당금과 매각 대금, 외부 조달까지 고려하면 투자 실탄은 수 조원에 달할 전망이다. 이는 AI·반도체 신규 투자의 기반이 된다.",
-    "en": "The market expects the OneStore sale to bring SK Square's broad rebalancing to a close, and the portfolio cleanup has strengthened its financial capacity. Standalone liquid assets reached 1.42 trillion won at end-Q1, and including SK hynix dividends, sale proceeds and external funding, investment firepower could reach several trillion won. This forms the basis for new AI and semiconductor investments."
+    "ko": "기관의 동일종목 비중 제한이 SK스퀘어로의 자금 유입을 유발하고 있다. ETF 등 기관 투자상품은 동일 종목 투자 비중 제한을 받는 만큼, 삼성전자·SK하이닉스 비중이 이미 높은 일부 기관 자금이 대체 투자처로 SK스퀘어 비중을 확대할 수밖에 없는 상황이다. 해외 투자자 사이에서도 할인된 하이닉스 보유 지주사로 분류되며 관심이 확산되고 있다.",
+    "en": "Institutional single-stock limits are channeling money into SK Square. Because institutional vehicles such as ETFs face single-stock weight caps, some funds already heavily weighted in Samsung and SK hynix have little choice but to raise their SK Square weighting as an alternative. Among foreign investors, too, interest is spreading as it is classified as a holding company owning Hynix at a discount."
    }
   }
  ],
  "bear": [
   {
    "title": {
-    "ko": "단일 자산 집중과 주가 변동성",
-    "en": "Single-asset concentration and price volatility"
+    "ko": "하이닉스 단일 자산 의존",
+    "en": "Reliance on a single Hynix asset"
    },
    "body": {
-    "ko": "SK스퀘어의 이익과 NAV는 SK하이닉스 한 종목에 크게 의존한다. 증권가의 목표주가 상향도 SK스퀘어 자체 실적보다 SK하이닉스 지분 가치와 주주환원에 초점이 맞춰져 있어, SK하이닉스 주가 흐름에 따라 SK스퀘어 주가 변동성도 커질 수 있다. 메모리 사이클 둔화 시 지분가치와 지분법이익이 동시에 약화될 위험이 있다.",
-    "en": "SK Square's profit and NAV depend heavily on a single stock, SK hynix. Brokerage target hikes are focused on SK hynix stake value and shareholder returns rather than SK Square's own earnings, so SK Square's volatility can rise with SK hynix's share moves. A memory cycle slowdown risks weakening both stake value and equity-method income at once."
+    "ko": "자산의 거의 전부가 SK하이닉스에 집중되어 자체 사업 동력이 부족하다. 시장에서는 SK하이닉스 단일 종목으로 구성된 ETF나 배당 플랫폼에 가까워지고 있다는 평까지 나온다. 이는 하이닉스 주가가 조정될 경우 SK스퀘어 주가 역시 직접적인 하방 압력을 받는다는 의미다. 포트폴리오 다각화가 제한적이라 분산 효과를 기대하기 어렵다.",
+    "en": "Almost all assets are concentrated in SK hynix, leaving little independent business momentum. Some in the market even liken it to an ETF or dividend platform made up of a single Hynix stock. This means that if Hynix shares correct, SK Square's price faces direct downward pressure too. With limited portfolio diversification, little cushioning effect can be expected."
    }
   },
   {
    "title": {
-    "ko": "HBM 경쟁 심화",
-    "en": "Intensifying HBM competition"
+    "ko": "메모리 사이클 변동성",
+    "en": "Memory cycle volatility"
    },
    "body": {
-    "ko": "삼성전자의 HBM 점유율이 2026년 1분기 30% 수준까지 올라온 것으로 추산되고, 2월 업계 최초로 HBM4 양산 출하를 시작했다. 삼성이 하반기 HBM4 양산에 성공하면 SK하이닉스 점유율이 50~60%로 하락하며 밸류에이션 리레이팅 리스크에 노출될 수 있다. 이는 SK스퀘어 NAV에 직접적인 하방 요인이 될 수 있다.",
-    "en": "Samsung's HBM share is estimated to have risen to around 30% in Q1 2026, and it began HBM4 mass-production shipments first in February. If Samsung succeeds with HBM4 mass production in the second half, SK hynix's share could fall to 50-60%, exposing it to valuation re-rating risk. This could be a direct downside factor for SK Square's NAV."
+    "ko": "메모리 업황은 본질적으로 변동성이 크다. SK스퀘어는 2023년 영업손실 2조3,397억원·지배주주 순손실 1조2,870억원을 기록했다가 2025년 흑자 전환한 이력이 있다. 일부 시장조사기관과 외신은 2026년 이후 HBM 가격이 경쟁 심화와 생산능력 확대로 조정 국면에 들어갈 가능성을 제기한다. 사이클 하강 시 지분법이익이 급감하면 실적이 다시 크게 흔들릴 수 있다.",
+    "en": "The memory cycle is inherently volatile. SK Square swung from an operating loss of KRW 2.34 trillion and an owner net loss of KRW 1.29 trillion in 2023 back to profit in 2025. Some research firms and foreign media raise the possibility that HBM prices enter an adjustment phase after 2026 amid intensifying competition and capacity expansion. A downturn that sharply cuts equity-method income could again rattle results significantly."
    }
   },
   {
    "title": {
-    "ko": "ICT 자회사 수익성과 FI 부담",
-    "en": "ICT affiliate profitability and FI burden"
+    "ko": "지배구조·정체성 논란",
+    "en": "Governance and identity questions"
    },
    "body": {
-    "ko": "11번가와 티맵모빌리티는 아직 시장에서 충분한 수익성을 확보하지 못하고 있다. 일부 자회사는 재무적 투자자(FI)와의 정산 부담을 안고 있어 매각 과정에서 손실 인식 가능성이 있다. SK스퀘어 입장에서는 밸류를 낮춰서라도 매각을 단행한 뒤 FI 정산이 완료된 시점에 최종 손실을 인식하게 되는 구조로 알려졌다.",
-    "en": "11st and Tmap Mobility have yet to secure sufficient profitability in the market. Some affiliates carry settlement burdens with financial investors, raising the possibility of recognizing losses during divestitures. For SK Square, the structure reportedly means executing a sale even at a lower valuation and then recognizing the final loss once FI settlement is complete."
+    "ko": "중간지주로서의 역할과 그룹 지배구조 내 위치에 대한 의구심이 제기된다. SK하이닉스 덕에 SK스퀘어 주가 상승이 계속될수록 회사 정체성 혼란이나 그룹 지배구조 모순이 더 심화할 거란 전망도 나온다. 투자 전문성에 의한 가치 창출보다 차익 거래용 대용주식 성격이 강하다는 비판도 존재한다. 향후 그룹 지배구조 개편 논의가 변수로 작용할 수 있다.",
+    "en": "Questions persist about its role as an intermediate holding company and its place in the group's governance. Some foresee that the more SK Square's shares rise thanks to Hynix, the more its identity confusion and the group's governance contradictions intensify. Critics argue it functions more as a proxy stock for arbitrage than as a value creator through investment expertise. Future discussions on restructuring the group's governance could be a swing factor."
    }
   }
  ],
  "risks": [
   {
    "cat": {
-    "ko": "반도체 업황 사이클",
-    "en": "Semiconductor cycle"
+    "ko": "경쟁 심화 (HBM4)",
+    "en": "Intensifying competition (HBM4)"
    },
    "body": {
-    "ko": "메모리 가격과 AI 투자 사이클이 정점을 지나면 SK하이닉스 실적과 지분법이익이 급변할 수 있다. 중국 증설 리스크까지 겹치면서 하반기 메모리 판도는 더 민감해질 전망이라는 시각이 있다. 지분법이익 비중이 큰 만큼 업황 둔화가 연결 실적에 직접 전이된다.",
-    "en": "If memory prices and the AI investment cycle pass their peak, SK hynix earnings and equity-method income could shift sharply. There is a view that with Chinese capacity-expansion risk added, the second-half memory landscape will become more sensitive. Given the large weight of equity-method income, a cycle slowdown transmits directly to consolidated results."
+    "ko": "삼성전자의 HBM4 추격이 SK하이닉스의 점유율 변수로 부상하고 있다. 삼성전자가 HBM4 양산에 성공할 경우 SK하이닉스의 시장 점유율 하락 가능성이 있으며, 이는 2026년 4분기에 판가름 날 전망이다. SK하이닉스의 점유율·가격 협상력 약화는 곧 SK스퀘어 지분법이익과 NAV에 직결된다.",
+    "en": "Samsung's HBM4 pursuit is emerging as a variable for SK hynix's market share. If Samsung succeeds in mass-producing HBM4, SK hynix's market share could decline, a question likely to be settled in Q4 2026. Any weakening of SK hynix's share or pricing power feeds straight into SK Square's equity-method income and NAV."
    }
   },
   {
    "cat": {
-    "ko": "정책·규제 환경",
-    "en": "Policy and regulatory environment"
+    "ko": "정책·규제",
+    "en": "Policy and regulation"
    },
    "body": {
-    "ko": "지주회사 리레이팅은 정책 환경에 영향을 받는다. 배당소득 분리과세와 상법 개정안 통과 기대가 지주회사 재평가 여건을 강화해 왔다는 분석이 있다. 반대로 관련 정책이 지연·후퇴할 경우 할인율 축소 흐름이 둔화될 수 있다.",
-    "en": "Holding-company re-rating is sensitive to the policy environment. There is analysis that expectations for separate taxation of dividend income and passage of commercial-law amendments have strengthened conditions for re-rating holding companies. Conversely, if related policies are delayed or reversed, the discount-narrowing trend could lose momentum."
+    "ko": "상법 개정 등 제도 변화가 지주사 환원 정책 설계에 영향을 준다. 자사주 소각 의무화를 골자로 한 3차 상법개정안이 의결돼 자사주 취득 시 1년 이내 소각을 원칙으로 하며 공포 즉시 시행된다. SK스퀘어는 선제적으로 매입·소각을 병행해온 만큼 직접 영향은 제한적이지만, 규제 환경 변화는 지속 점검이 필요하다.",
+    "en": "Regulatory changes such as commercial code revisions affect how holding companies design returns. A third commercial code amendment mandating treasury share cancellation was passed, requiring shares acquired to be cancelled within one year as a principle, effective upon promulgation. SK Square's pre-emptive combination of buybacks and cancellations limits the direct impact, but the shifting regulatory backdrop warrants ongoing monitoring."
    }
   },
   {
    "cat": {
-    "ko": "포트폴리오 매각 실행",
-    "en": "Portfolio divestiture execution"
+    "ko": "투자 집행 리스크",
+    "en": "Investment execution risk"
    },
    "body": {
-    "ko": "리밸런싱은 매각 협상 성패에 따라 결과가 달라진다. 현재 원스토어 경영권 매각을 위해 넥써쓰와 협상 중이나 가격·조건이 확정되지 않았다. 과거 SK쉴더스·원스토어는 IPO 흥행 부진으로 상장을 철회한 전례가 있어, 회수 시점·금액의 불확실성이 존재한다.",
-    "en": "Rebalancing outcomes depend on the success of sale negotiations. It is currently negotiating with Nexus over the OneStore controlling stake, but price and terms are not finalized. SK Shieldus and OneStore previously withdrew IPOs amid weak demand, so there is uncertainty over the timing and amount of recovery."
+    "ko": "비핵심 자산 매각 후 확보한 재원으로 AI·반도체 신규 투자에 나설 계획이다. IB 업계에서는 SK스퀘어가 AI·반도체 분야에서 대규모 투자에 나설지 주목하고 있다. 신규 투자의 성과가 불확실하고 회수 시점도 가시화되지 않은 만큼, 대형 딜의 가격·실행 리스크가 존재한다. 투자 실패 시 자본 효율성 저하로 이어질 수 있다.",
+    "en": "It plans to deploy proceeds from non-core sales into new AI and semiconductor investments. Investment bankers are watching whether SK Square will pursue large-scale AI and semiconductor investments. With uncertain returns on new investments and no clear timeline for exits, there is price and execution risk on large deals. Failed investments could erode capital efficiency."
    }
   }
  ],
  "checkpoints": [
   {
    "when": {
-    "ko": "2026년 4월 하순 (SK하이닉스 발표 후)",
-    "en": "Late April 2026 (after SK hynix release)"
-   },
-   "what": {
-    "ko": "SK하이닉스 분기 실적과 지분법이익 규모가 SK스퀘어 연결 영업이익을 좌우하므로, 메모리 가격·HBM 출하 추이를 함께 확인할 필요가 있다.",
-    "en": "Since SK hynix quarterly results and equity-method income drive SK Square's consolidated operating profit, memory prices and HBM shipment trends should be monitored together."
-   }
-  },
-  {
-   "when": {
     "ko": "2026년 7월 말~8월",
-    "en": "Late July-August 2026"
+    "en": "Late July to August 2026"
    },
    "what": {
-    "ko": "SK스퀘어 2026년 2분기 실적 발표. 지분법이익 추이와 ICT 자회사 적자 축소 여부, 첫 배당의 구체적 확정 일정을 확인하는 시점이다.",
-    "en": "SK Square's Q2 2026 earnings. A point to confirm equity-method income trends, whether ICT affiliate losses narrow, and the concrete schedule for the first dividend."
+    "ko": "2026년 2분기 실적 발표. SK하이닉스 지분법이익 추이와 분기 사상 최대 이익의 지속 여부를 확인하는 분기다.",
+    "en": "Second-quarter 2026 earnings. A quarter to check the trend in SK hynix equity-method income and whether record quarterly profit is sustained."
    }
   },
   {
@@ -172,35 +162,45 @@
     "en": "Second half of 2026"
    },
    "what": {
-    "ko": "원스토어 경영권 매각 협상의 타결 여부와 매각 대금. 리밸런싱 마무리와 AI·반도체 신규 대규모 투자 집행 여부가 NAV와 투자 스토리에 영향을 준다.",
-    "en": "Whether the OneStore controlling-stake sale closes and at what price. Completion of rebalancing and execution of large new AI and semiconductor investments will affect NAV and the investment story."
+    "ko": "원스토어 경영권 매각(넥써쓰와 협상) 종결 여부와 매각 대금 규모. 리밸런싱 마무리와 AI·반도체 신규 투자 재원 확보의 가늠자다.",
+    "en": "Whether the ONE store control sale (talks with Nexus) closes and the deal size. A gauge of completed rebalancing and dry powder for new AI and semiconductor investments."
    }
   },
   {
    "when": {
-    "ko": "2026년 4분기 전후",
-    "en": "Around Q4 2026"
+    "ko": "2026년 중 (이사회 의결)",
+    "en": "During 2026 (board approval)"
    },
    "what": {
-    "ko": "삼성전자 HBM4가 엔비디아 공급망에 진입할 수 있을지 여부가 대체로 2026년 4분기경에 판가름 날 전망으로, SK하이닉스 점유율과 SK스퀘어 NAV에 직결되는 변곡점이다.",
-    "en": "Whether Samsung's HBM4 can enter Nvidia's supply chain is expected to be decided largely around Q4 2026, an inflection point directly tied to SK hynix's market share and SK Square's NAV."
+    "ko": "중간배당 주당 1,550원과 자사주 1,100억원 매입·소각의 실제 집행. 약 3,100억원 주주환원 계획의 이행 정도를 확인한다.",
+    "en": "Actual execution of the KRW 1,550 interim dividend and KRW 110 billion buyback and cancellation. Confirms progress on the roughly KRW 310 billion shareholder-return plan."
    }
   },
   {
    "when": {
-    "ko": "이사회 주주환원 의결 시점",
-    "en": "Board resolution on shareholder returns"
+    "ko": "2026년 4분기",
+    "en": "Fourth quarter of 2026"
    },
    "what": {
-    "ko": "3100억원 환원의 구체적 시점·방식이 이사회 의결로 확정된다. 구체적인 시점과 방식은 향후 이사회 의결을 거쳐 확정되므로 자사주·배당 배분 비율을 확인할 필요가 있다.",
-    "en": "The concrete timing and method of the 310 billion won return will be finalized by board resolution. Specific timing and method will be confirmed through future board resolutions, so the split between buybacks and dividends should be confirmed."
+    "ko": "삼성전자의 HBM4 양산·점유율 진척. SK하이닉스 경쟁 구도의 변곡점으로, SK스퀘어 지분가치에 직접 영향을 준다.",
+    "en": "Samsung's HBM4 mass production and share progress. An inflection point for SK hynix's competitive landscape that directly affects SK Square's stake value."
+   }
+  },
+  {
+   "when": {
+    "ko": "분기별 NAV 할인율 공시",
+    "en": "Quarterly NAV discount disclosure"
+   },
+   "what": {
+    "ko": "2028년 30% 이하 목표 대비 NAV 할인율 추이. 회사가 핵심 KPI로 제시한 지표로, 재평가 진행 정도를 보여준다.",
+    "en": "Trend in the NAV discount against the sub-30% target by 2028. The company's stated key KPI, indicating how far the re-rating has progressed."
    }
   }
  ],
  "verdict": {
   "body": {
-   "ko": "SK스퀘어는 SK하이닉스 지분 약 20.5%를 핵심 자산으로 보유한 투자전문 지주회사로, 2026년 1분기 영업이익 8조2783억원의 사상 최대 실적은 사실상 SK하이닉스 지분법이익이 견인했다. 매출은 포트폴리오 매각으로 감소세지만 지분법이익 확대로 이익과 자본이 크게 늘었고, 2025년 ROE는 31.9%를 기록했다. 회사는 NAV 할인율을 2024년 말 65.7%에서 2026년 6월 46.6%로 낮췄고, 2026~2028년 주주환원 정책과 첫 배당, 자본준비금 전입으로 환원 기반을 확충했다. 동시에 SK쉴더스·인크로스 정리와 원스토어 매각 협상으로 리밸런싱을 마무리하며 AI·반도체 신규 투자 여력을 키우고 있다. 강세 요인은 메모리 슈퍼사이클과 할인율 축소·주주환원 확대이며, 약세 요인은 단일 자산 집중에 따른 변동성, 삼성전자의 HBM4 경쟁 심화, ICT 자회사 수익성·FI 부담이다. 현재가 기준 PER 11.5배·PBR 4.98배이며 NAV 할인율이 핵심 지표로 함께 평가된다. 투자 판단은 SK하이닉스 업황과 회사의 환원·리밸런싱 실행 여부를 분기마다 확인하며 균형 있게 접근하는 것이 적절하다.",
-   "en": "SK Square is an investment holding company whose core asset is a roughly 20.5% stake in SK hynix, and its record Q1 2026 operating profit of 8.28 trillion won was effectively driven by SK hynix equity-method income. Revenue is declining on portfolio sales, but expanding equity-method income sharply lifted profit and equity, with 2025 ROE at 31.9%. The company lowered its NAV discount from 65.7% at end-2024 to 46.6% in June 2026 and expanded its return base via a 2026-2028 policy, a first dividend and a transfer of capital reserves. At the same time, it is wrapping up rebalancing through the SK Shieldus and Incross divestitures and OneStore sale talks, building capacity for new AI and semiconductor investments. Bullish factors are the memory super-cycle and the narrowing discount with expanding returns; bearish factors are volatility from single-asset concentration, intensifying Samsung HBM4 competition, and ICT affiliate profitability and FI burdens. At the current price the PER is 11.5 times and PBR 4.98 times, with the NAV discount assessed as a key metric alongside. A balanced approach that checks the SK hynix cycle and the company's execution on returns and rebalancing each quarter is appropriate for any investment judgment."
+   "ko": "SK스퀘어는 SK하이닉스 지분 약 20.5%에 가치와 실적이 사실상 일체화된 반도체 중심 투자지주다. 2026년 1분기 영업이익 8조2,783억원·지배주주 순이익 8조3,810억원의 사상 최대 실적은 SK하이닉스 지분법이익이 견인했으며, 이는 메모리 슈퍼사이클의 직접적 반영이다. 회사는 NAV 할인율을 핵심 KPI로 삼아 2024년 말 65.7%에서 2026년 46%대까지 축소했고, 2026년 첫 현금배당을 포함한 약 3,100억원 규모 주주환원을 추진하며 재평가를 시도하고 있다. 동시에 원스토어 매각 등 비핵심 자산 정리를 마무리하고 AI·반도체 신규 투자 재원을 확보하는 흐름이다. 다만 자산이 사실상 단일 자산에 집중되어 있어 메모리 사이클 하강과 HBM4 경쟁 심화 시 실적·주가 변동성이 크고, 자체 사업 부재와 지배구조 정체성 논란이라는 구조적 한계가 병존한다. 강세 요인(슈퍼사이클·할인율 축소·수급)과 약세 요인(단일 자산 의존·사이클 변동성·지배구조)이 모두 뚜렷한 만큼, SK하이닉스 업황과 회사의 환원·투자 집행을 함께 추적하는 것이 관건이다.",
+   "en": "SK Square is a semiconductor-centric investment holding company whose value and earnings are effectively fused with its roughly 20.5% stake in SK hynix. Its record first-quarter 2026 results, with operating profit of KRW 8.28 trillion and owner net profit of KRW 8.38 trillion, were driven by SK hynix equity-method income, a direct reflection of the memory super-cycle. The company treats its NAV discount as a key KPI, narrowing it from 65.7% at end-2024 to the mid-40% range in 2026, and is attempting a re-rating by pursuing about KRW 310 billion in shareholder returns including its first cash dividend in 2026. At the same time, it is wrapping up non-core asset disposals such as ONE store and building funds for new AI and semiconductor investments. Yet because assets are concentrated in essentially a single holding, earnings and share-price volatility is high should the memory cycle turn down or HBM4 competition intensify, alongside the structural limits of having no business of its own and unresolved governance-identity questions. With both bullish factors (super-cycle, narrowing discount, fund flows) and bearish factors (single-asset reliance, cycle volatility, governance) clearly present, the key is to track SK hynix's industry conditions together with the company's execution on returns and investments."
   }
  },
  "v": 2,
@@ -214,7 +214,7 @@
  ],
  "market": "코스피",
  "reportDate": "2026-06-13",
- "reportTs": "2026-06-13 04:20",
+ "reportTs": "2026-06-13 05:23",
  "dataDate": "20260612",
  "quant": {
   "asOf": "2026-06-12",
@@ -305,7 +305,14 @@
    "ttm_np_owner": 15589078000000,
    "basis": "PER·EPS=최근 4개 분기 지배주주 순이익 ÷ 발행주식총수(보통+우선) · PBR·BPS=최근 분기말 지배주주 자본 기준",
    "div": null,
-   "dps": null
+   "dps": null,
+   "verify": "ok",
+   "naver_ref": {
+    "per": 11.53,
+    "eps": 117759.0,
+    "pbr": 4.96,
+    "bps": 273614.0
+   }
   }
  }
 }
