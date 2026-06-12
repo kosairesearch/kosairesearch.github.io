@@ -945,6 +945,7 @@ KOSi18n.register({
   function negc(v){ return (v!=null&&v<0)?' class="neg"':''; }
   function renderV2(u){
     var Q=REP.quant||{}, V=Q.valuation||{}, f=u.fin;
+    var revLbl=(Q.rev_label?pk(Q.rev_label):f.rev);
     var h='', n=1;
     h+='<div class="rep-masthead"><h1 class="rep-headline">'+esc(pk(REP.title))+'</h1></div>';
     h+=secOpen(pad(n++),'REPORT OVERVIEW',u.sec.overview);
@@ -957,7 +958,7 @@ KOSi18n.register({
     var ann=(Q.annual||[]).slice().reverse();
     if(ann.length){
       h+='<div class="tbl-card glass"><div class="tbl-cap">'+esc(f.annual)+'</div><div class="tbl-scroll"><table class="dt"><thead><tr>'
-        +'<th>'+esc(f.year)+'</th><th>'+esc(f.rev)+'</th><th>'+esc(f.op)+'</th><th>'+esc(f.np)+'</th><th>'+esc(f.opm)+'</th><th>'+esc(f.roe)+'</th><th>'+esc(f.debt)+'</th></tr></thead><tbody>';
+        +'<th>'+esc(f.year)+'</th><th>'+esc(revLbl)+'</th><th>'+esc(f.op)+'</th><th>'+esc(f.np)+'</th><th>'+esc(f.opm)+'</th><th>'+esc(f.roe)+'</th><th>'+esc(f.debt)+'</th></tr></thead><tbody>';
       ann.forEach(function(a){
         h+='<tr><td>'+a.year+'</td><td>'+fwon(a.rev)+'</td><td'+negc(a.op)+'>'+fwon(a.op)+'</td><td'+negc(a.np_owner)+'>'+fwon(a.np_owner)+'</td>'
           +'<td>'+fpct(a.opm)+'</td><td'+negc(a.roe)+'>'+fpct(a.roe)+'</td><td>'+fpct(a.debt_ratio)+'</td></tr>';
@@ -967,7 +968,7 @@ KOSi18n.register({
     var qt=Q.quarterly||[];
     if(qt.length){
       h+='<div class="tbl-card glass" style="margin-top:14px"><div class="tbl-cap">'+esc(f.quarterly)+'</div><div class="tbl-scroll"><table class="dt"><thead><tr>'
-        +'<th>'+esc(f.q)+'</th><th>'+esc(f.rev)+'</th><th>'+esc(f.op)+'</th><th>'+esc(f.np)+'</th></tr></thead><tbody>';
+        +'<th>'+esc(f.q)+'</th><th>'+esc(revLbl)+'</th><th>'+esc(f.op)+'</th><th>'+esc(f.np)+'</th></tr></thead><tbody>';
       qt.forEach(function(r){
         h+='<tr><td>'+esc(r.q)+'</td><td>'+fwon(r.rev)+'</td><td'+negc(r.op)+'>'+fwon(r.op)+'</td><td'+negc(r.np_owner)+'>'+fwon(r.np_owner)+'</td></tr>';
       });

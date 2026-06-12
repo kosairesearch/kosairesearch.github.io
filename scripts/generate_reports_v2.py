@@ -48,6 +48,7 @@ log = g.log
 # account_id 우선, 계정명 폴백. 연결(CFS) 기준.
 ACC_IDS = {
     "rev":          ("ifrs-full_Revenue", "ifrs_Revenue"),
+    "rev_ins":      ("ifrs-full_InsuranceRevenue", "ifrs_InsuranceRevenue"),
     "op":           ("dart_OperatingIncomeLoss",),
     "np":           ("ifrs-full_ProfitLoss", "ifrs_ProfitLoss"),
     "np_owner":     ("ifrs-full_ProfitLossAttributableToOwnersOfParent",
@@ -62,6 +63,7 @@ ACC_IDS = {
 }
 ACC_NAMES = {
     "rev":          ("매출액", "수익(매출액)", "영업수익", "매출"),
+    "rev_ins":      ("보험수익",),
     "op":           ("영업이익", "영업이익(손실)"),
     "np":           ("당기순이익", "당기순이익(손실)", "분기순이익", "반기순이익"),
     "np_owner":     ("지배기업소유주지분", "지배기업의소유주에게귀속되는당기순이익",
@@ -92,7 +94,7 @@ def _fin_all(dart, ticker, year, reprt):
                      g._num(r.get("thstrm_add_amount"))))
 
     def sj_ok(key, sj):
-        if key in ("rev", "op", "np", "np_owner"):
+        if key in ("rev", "rev_ins", "op", "np", "np_owner"):
             return sj in ("IS", "CIS")
         if key in ("assets", "liab", "equity", "equity_owner"):
             return sj == "BS"
@@ -206,8 +208,22 @@ def collect_quant(dart, ticker, krx_row, stock):
             if row["rev"] and row["op"] is not None:
                 row["opm"] = round(row["op"] / row["rev"] * 100, 1)
 
+    # 보험사: 매출액이 전무하면 '보험수익'을 매출 행으로 사용(라벨도 전환)
+    rev_label = None
+    if all(row["rev"] is None for row in annual):
+        ins_vals = {}
+        for row in annual:
+            d_yr = _fin_all(dart, ticker, row["year"], "11011")
+            ins_vals[row["year"]] = _cum(d_yr, "rev_ins")
+        if any(v is not None for v in ins_vals.values()):
+            rev_label = {"ko": "보험수익", "en": "Insurance revenue"}
+            for row in annual:
+                row["rev"] = ins_vals.get(row["year"])
+                row["opm"] = None  # 보험수익 대비 영업이익률은 비표준 → 미표시
+
     quarterly = []
-    rev_q = quarters("rev", fy_row["rev"] if fy_row else None)
+    rev_key = "rev_ins" if rev_label else "rev"
+    rev_q = quarters(rev_key, fy_row["rev"] if fy_row else None)
     if all(v is None for v in rev_q.values()):
         c1 = rev_fallback(py, "11013")
         ch = rev_fallback(py, "11012")
@@ -266,13 +282,16 @@ def collect_quant(dart, ticker, krx_row, stock):
             except Exception:
                 valuation[dst] = None
 
-    return {
+    out = {
         "asOf": datetime.date.today().isoformat(),
         "fs_basis": "연결(CFS) · DART 공시 확정치 · 지배주주 기준 순이익",
         "annual": annual,
         "quarterly": quarterly,
         "valuation": valuation,
     }
+    if rev_label:
+        out["rev_label"] = rev_label
+    return out
 
 
 def dart_total_shares(dart, ticker):
