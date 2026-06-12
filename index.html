@@ -675,17 +675,22 @@ try{
   const rim=new THREE.PointLight(0x9fc4ff,90,0,2);rim.position.set(-6,3,-4);scene.add(rim);
   const fill=new THREE.PointLight(0xbcd2ff,8,0,2);fill.position.set(3,-4,5);scene.add(fill);
 
-  /* 프리즘 — 챔퍼드 정사면체: 모서리를 칼로 깎은 좁은 면 + 살짝 뭉툭한 꼭짓점(실물 유리 가공) */
-  function chamferedTetra(R,inset){
-    const k=R/Math.sqrt(3);
+  /* 프리즘 — 클래식 삼각기둥: 모서리를 칼로 깎은 좁은 면 + 살짝 뭉툭한 꼭짓점(실물 유리 가공) */
+  function chamferedPrism(R,L){
+    const h=L/2;
     /* 수공 연마처럼 미세하게 비뚠 꼭짓점 */
-    const J=[[0.022,-0.013,0.017],[-0.015,0.024,-0.011],[0.019,0.008,-0.021],[-0.012,-0.019,0.014]];
-    const V=[[1,1,1],[-1,-1,1],[-1,1,-1],[1,-1,-1]].map((v,i)=>new THREE.Vector3(
-      (v[0]+J[i][0])*k,(v[1]+J[i][1])*k,(v[2]+J[i][2])*k));
-    const F=[[0,1,2],[0,3,1],[0,2,3],[1,3,2]];
-    const INS=[0.955,0.940,0.949,0.934];          // 면마다 다른 깎임 폭
+    const J=[[0.018,-0.011,0.014],[-0.013,0.019,-0.009],[0.016,0.007,-0.017],
+             [-0.010,-0.016,0.012],[0.014,0.010,-0.013],[-0.012,0.015,0.010]];
+    const ang=[Math.PI/2, Math.PI/2+2*Math.PI/3, Math.PI/2+4*Math.PI/3];
+    const V=[];
+    [-1,1].forEach(sx=>ang.forEach((a,i)=>{
+      const j=J[sx<0?i:i+3];
+      V.push(new THREE.Vector3(sx*h+j[0], Math.sin(a)*R+j[1], Math.cos(a)*R+j[2]));
+    }));
+    const F=[[0,1,2],[3,4,5],[0,1,4,3],[1,2,5,4],[2,0,3,5]];   // 삼각 캡 2 + 옆면 3
+    const INS=[0.945,0.935,0.962,0.955,0.959];                 // 면마다 다른 깎임 폭
     const Q=F.map((f,fi)=>{
-      const c=new THREE.Vector3().add(V[f[0]]).add(V[f[1]]).add(V[f[2]]).multiplyScalar(1/3);
+      const c=new THREE.Vector3(); f.forEach(vi=>c.add(V[vi])); c.multiplyScalar(1/f.length);
       return f.map(vi=>c.clone().add(V[vi].clone().sub(c).multiplyScalar(INS[fi])));
     });
     const pos=[];
@@ -695,14 +700,15 @@ try{
       if(n.dot(m)<0){const t=b;b=c;c=t;}
       pos.push(a.x,a.y,a.z,b.x,b.y,b.z,c.x,c.y,c.z);
     };
-    Q.forEach(q=>tri(q[0],q[1],q[2]));                     // 4 큰 면
-    for(let a=0;a<4;a++)for(let b=a+1;b<4;b++){            // 6 모서리 베벨(좁은 면)
+    Q.forEach(q=>{ tri(q[0],q[1],q[2]); if(q.length===4) tri(q[0],q[2],q[3]); }); // 5 큰 면
+    const adj=(f,ia,ib)=>{const d=Math.abs(ia-ib);return d===1||d===f.length-1;}; // 면 위 인접(대각선 제외)
+    for(let a=0;a<6;a++)for(let b=a+1;b<6;b++){            // 9 모서리 베벨(좁은 면)
       const pts=[];
       F.forEach((f,fi)=>{ const ia=f.indexOf(a), ib=f.indexOf(b);
-        if(ia>=0&&ib>=0) pts.push(Q[fi][ia],Q[fi][ib]); });
+        if(ia>=0&&ib>=0&&adj(f,ia,ib)) pts.push(Q[fi][ia],Q[fi][ib]); });
       if(pts.length===4){ tri(pts[0],pts[1],pts[3]); tri(pts[0],pts[3],pts[2]); }
     }
-    for(let vtx=0;vtx<4;vtx++){                            // 4 꼭짓점 컷
+    for(let vtx=0;vtx<6;vtx++){                            // 6 꼭짓점 컷
       const pts=[];
       F.forEach((f,fi)=>{ const i=f.indexOf(vtx); if(i>=0) pts.push(Q[fi][i]); });
       tri(pts[0],pts[1],pts[2]);
@@ -714,7 +720,7 @@ try{
     g.computeVertexNormals();
     return g;
   }
-  const geo=chamferedTetra(1.85);
+  const geo=chamferedPrism(1.42,2.55);
   /* 마이크로 질감 — 미세 요철과 광택 불균일(진짜 유리의 불완전함) */
   function microTex(sz,base,amp,blobs){
     const c=document.createElement('canvas');c.width=c.height=sz;
