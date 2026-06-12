@@ -1095,7 +1095,7 @@ function applyTheme(t){
   document.getElementById('themeIcon').innerHTML = t==='dark' ? sunSVG : moonSVG;
   try{ localStorage.setItem('kos-theme', t); }catch(e){}
 }
-let saved='light'; try{ saved = localStorage.getItem('kos-theme')||'light'; }catch(e){}
+let saved='light'; try{ saved = localStorage.getItem('kos-theme')||'dark'; }catch(e){}
 applyTheme(saved);
 themeBtn.addEventListener('click', ()=>applyTheme(root.getAttribute('data-theme')==='dark'?'light':'dark'));
 
