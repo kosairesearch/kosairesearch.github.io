@@ -83,26 +83,47 @@ def _fin_all(dart, ticker, year, reprt):
         return None
     if df is None or getattr(df, "empty", True):
         return None
-    out = {}
+    rows = []
     for _, r in df.iterrows():
-        aid = str(r.get("account_id", "")).strip()
-        anm = str(r.get("account_nm", "")).replace(" ", "")
-        sj = str(r.get("sj_div", ""))
-        amt = g._num(r.get("thstrm_amount"))
-        add = g._num(r.get("thstrm_add_amount"))
+        rows.append((str(r.get("account_id", "")).strip(),
+                     str(r.get("account_nm", "")).replace(" ", ""),
+                     str(r.get("sj_div", "")),
+                     g._num(r.get("thstrm_amount")),
+                     g._num(r.get("thstrm_add_amount"))))
+
+    def sj_ok(key, sj):
+        if key in ("rev", "op", "np", "np_owner"):
+            return sj in ("IS", "CIS")
+        if key in ("assets", "liab", "equity", "equity_owner"):
+            return sj == "BS"
+        return sj == "CF"
+
+    out = {}
+    # 1차: 표준 account_id 정확 일치 (가장 신뢰)
+    for aid, anm, sj, amt, add in rows:
         for key in ACC_IDS:
-            if key in out:
+            if key in out or amt is None or not sj_ok(key, sj):
                 continue
-            # 손익 항목은 IS/CIS, 재무상태 항목은 BS, 현금흐름은 CF에서만
-            if key in ("rev", "op", "np", "np_owner") and sj not in ("IS", "CIS"):
+            if aid in ACC_IDS[key]:
+                out[key] = {"amt": amt, "add": add}
+    # 2차: 계정명 폴백 — 포괄손익 계열 행 배제.
+    #   np_owner 는 CIS의 '총포괄손익 귀속-지배기업소유주지분'과 행 이름이 같아
+    #   오추출 위험이 커서 손익계산서(IS)에서만 명칭 매칭을 허용한다.
+    for aid, anm, sj, amt, add in rows:
+        for key in ACC_IDS:
+            if key in out or amt is None or not sj_ok(key, sj):
                 continue
-            if key in ("assets", "liab", "equity", "equity_owner") and sj != "BS":
+            if "포괄" in anm:
                 continue
-            if key == "cfo" and sj != "CF":
+            if key == "np_owner" and sj != "IS":
                 continue
-            if aid in ACC_IDS[key] or anm in ACC_NAMES[key]:
-                if amt is not None:
-                    out[key] = {"amt": amt, "add": add}
+            if anm in ACC_NAMES[key]:
+                out[key] = {"amt": amt, "add": add}
+    # 불변식: |지배주주 순이익| ≤ |전체 순이익|×1.02 (어기면 포괄손익 오추출 → 전체 순이익 사용)
+    if "np" in out and "np_owner" in out:
+        np_v, npo_v = out["np"]["amt"], out["np_owner"]["amt"]
+        if np_v is not None and npo_v is not None and abs(npo_v) > abs(np_v) * 1.02:
+            out["np_owner"] = dict(out["np"])
     return out or None
 
 
@@ -380,6 +401,56 @@ def pick_targets():
     return data, stocks
 
 
+def naver_valuation(ticker):
+    """네이버 모바일 증권 API에서 PER/PBR/EPS/BPS 참조값. 실패 시 {}."""
+    import requests
+    try:
+        r = requests.get(f"https://m.stock.naver.com/api/stock/{ticker}/integration",
+                         headers={"User-Agent": "Mozilla/5.0"}, timeout=10)
+        out = {}
+        for it in (r.json().get("totalInfos") or []):
+            cd = str(it.get("code", "")).lower()
+            if cd in ("per", "pbr", "eps", "bps"):
+                v = str(it.get("value", "")).replace(",", "")
+                v = v.replace("배", "").replace("원", "").replace("%", "").strip()
+                try:
+                    out[cd] = float(v)
+                except ValueError:
+                    pass
+        return out
+    except Exception:
+        return {}
+
+
+def cross_check(tk, name, valuation):
+    """자체 산출값을 네이버와 대조. 허용 오차 밖이면 그 값을 숨긴다(None).
+    참조값 자체가 없으면 통과시키되 unverified 로 기록."""
+    nv = naver_valuation(tk)
+    if not nv:
+        valuation["verify"] = "unverified(네이버 참조 없음)"
+        log(f"  ⚠️ {name}: 네이버 참조값 없음 — 미검증 상태로 표시")
+        return
+
+    def within(mine, ref, tol):
+        return mine is not None and ref not in (None, 0) and abs(mine - ref) / abs(ref) <= tol
+
+    issues = []
+    if nv.get("eps") is not None and valuation.get("eps") is not None:
+        if not within(valuation["eps"], nv["eps"], 0.05):
+            issues.append(f"EPS 자체 {valuation['eps']} vs 네이버 {nv['eps']}")
+            valuation["eps"] = valuation["per"] = None
+    if nv.get("pbr") is not None and valuation.get("pbr") is not None:
+        if not within(valuation["pbr"], nv["pbr"], 0.08):
+            issues.append(f"PBR 자체 {valuation['pbr']} vs 네이버 {nv['pbr']}")
+            valuation["pbr"] = valuation["bps"] = None
+    valuation["verify"] = ("mismatch: " + " / ".join(issues)) if issues else "ok"
+    valuation["naver_ref"] = nv
+    if issues:
+        log(f"  ❌ {name} 대조 불일치 → 해당 지표 숨김: {' / '.join(issues)}")
+    else:
+        log(f"  ✅ {name} 네이버 대조 통과 (PER {valuation.get('per')}≈{nv.get('per')}, PBR {valuation.get('pbr')}≈{nv.get('pbr')})")
+
+
 def collect_all_quant(targets, data):
     dart = g.get_dart()
     if not dart:
@@ -395,6 +466,7 @@ def collect_all_quant(targets, data):
             krx_row = fund.loc[tk]
         try:
             out[tk] = collect_quant(dart, tk, krx_row, st)
+            cross_check(tk, st["name"], out[tk]["valuation"])
             log(quant_summary(st["name"], out[tk]))
         except Exception as e:
             log(f"  ⚠️ {tk} 정량 수집 실패: {type(e).__name__}: {e}")
