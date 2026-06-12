@@ -819,13 +819,18 @@ try{
   scene.add(dust);
 
   /* 리사이즈(비용 큰 작업)는 창 크기 변경 때만 */
-  /* 리사이즈 — 렌더 해상도를 '캔버스 자체 크기(100vh 고정)'에 맞춤.
-     window.innerHeight(모바일 주소창에 따라 변함)를 쓰지 않아 스크롤 중 늘어남이 없다. */
+  /* 리사이즈 — 캔버스는 페이지 전체. 구도는 첫 화면 기준(vhRef)으로 고정하고
+     setViewOffset 으로 아래로만 화면을 연장 → 배경이 한 장으로 이어짐(경계 없음).
+     vhRef 는 가로폭이 바뀔 때만 갱신(모바일 주소창 변동 무시 → 스크롤 중 흔들림 없음). */
+  let lastW=0, vhRef=0;
   function resize(){
-    const w=canvas.clientWidth||innerWidth, h=canvas.clientHeight||innerHeight;
+    const w=canvas.clientWidth||innerWidth, hFull=canvas.clientHeight||innerHeight;
+    if(w!==lastW){ lastW=w; vhRef=innerHeight; }
     renderer.setPixelRatio(Math.min(devicePixelRatio, mobile?1.6:2));
-    renderer.setSize(w,h,false);
-    camera.aspect=w/h; camera.updateProjectionMatrix();
+    renderer.setSize(w,hFull,false);
+    camera.aspect=w/vhRef;
+    camera.setViewOffset(w,vhRef,0,0,w,hFull);
+    camera.updateProjectionMatrix();
     place();
   }
   /* 배치 — 고정 좌표(마우스·스크롤 영향 없음). 데스크톱=오른쪽, 모바일=상단 중앙 */
@@ -834,6 +839,7 @@ try{
     else{ group.position.set(1.4,0.1,0); group.scale.setScalar(0.78); }
   }
   resize(); addEventListener('resize',resize); setTimeout(resize,900);
+  if(window.ResizeObserver) new ResizeObserver(()=>resize()).observe(document.body);
 
   /* 인터랙션 — 드래그 텀블(관성). 모바일은 Resend처럼 자동 회전만(터치 미반응) */
   let offX=0.0,offY=0.0,vx=0,vy=0,dragging=false,lx=0,ly=0;
