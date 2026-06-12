@@ -347,15 +347,24 @@ def valid_v2(rep):
         need = ("title", "lead", "keypoints", "business", "earnings", "industry",
                 "outlook", "valuation_comment", "bull", "bear", "risks",
                 "checkpoints", "verdict")
-        if any(k not in rep for k in need):
+        missing = [k for k in need if k not in rep]
+        if missing:
+            log(f"    (검증 실패: 누락 키 {missing})")
             return False
         for k in ("business", "earnings", "industry", "outlook"):
             if len(rep[k]["ko"]) < 150 or len(rep[k]["en"]) < 150:
+                log(f"    (검증 실패: {k} 분량 부족 ko={len(rep[k]['ko'])} en={len(rep[k]['en'])})")
                 return False
-        return (len(rep["bull"]) >= 3 and len(rep["bear"]) >= 3
-                and len(rep["risks"]) >= 3 and len(rep["checkpoints"]) >= 3
-                and len(rep["verdict"]["body"]["ko"]) > 80)
-    except Exception:
+        for k, n in (("bull", 3), ("bear", 3), ("risks", 3), ("checkpoints", 3)):
+            if len(rep[k]) < n:
+                log(f"    (검증 실패: {k} {len(rep[k])}<{n})")
+                return False
+        if len(rep["verdict"]["body"]["ko"]) <= 80:
+            log(f"    (검증 실패: verdict 분량 부족)")
+            return False
+        return True
+    except Exception as e:
+        log(f"    (검증 예외: {type(e).__name__}: {e})")
         return False
 
 
@@ -412,7 +421,7 @@ def submit(cl, as_of):
         reqs.append(Request(
             custom_id=tk,
             params=MessageCreateParamsNonStreaming(
-                model=MODEL, max_tokens=60000,
+                model=MODEL, max_tokens=96000,
                 system=[{"type": "text", "text": SYSTEM_V2, "cache_control": {"type": "ephemeral"}}],
                 thinking={"type": "adaptive"},
                 tools=TOOLS,
