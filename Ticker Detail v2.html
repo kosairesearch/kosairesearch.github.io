@@ -221,6 +221,19 @@ table.dt tr.sub td:first-child{padding-left:26px;font-weight:500;color:var(--fg-
 table.dt tr.total td{border-top:1.5px solid var(--border-2);font-weight:700}
 table.dt .pos{color:var(--up);font-weight:700}table.dt .neg{color:var(--down);font-weight:700}
 .tbl-foot{font:500 12px var(--font-sans);color:var(--fg-3);margin-top:10px}
+/* 실적 차트 (inline SVG) */
+.chart-card{padding:18px 18px 14px;margin-top:6px}
+.chart-card+.chart-card{margin-top:14px}
+.chart-cap{font:600 13.5px var(--font-sans);color:var(--fg-2);margin-bottom:2px}
+.chart-legend{display:flex;gap:14px;flex-wrap:wrap;margin:8px 0 12px}
+.chart-legend span{display:inline-flex;align-items:center;gap:6px;font:500 12px var(--font-sans);color:var(--fg-3)}
+.chart-legend i{width:11px;height:11px;border-radius:3px;display:inline-block}
+.chart-legend i.line{width:14px;height:0;border-top:2px solid var(--fg-2);border-radius:0}
+.kchart{width:100%;height:auto;display:block;overflow:visible}
+.kchart .blabel{font:600 10.5px var(--font-sans)}
+.kchart .axlabel{font:500 11px var(--font-sans)}
+:root{--c-rev:rgba(13,105,212,.28);--c-op:rgb(13,105,212);--c-loss:#e5383b;--c-line:rgba(0,0,0,.55)}
+:root[data-theme="dark"]{--c-rev:rgba(120,170,255,.34);--c-op:#6ea8ff;--c-loss:#ff6b6e;--c-line:rgba(255,255,255,.6)}
 
 /* factors */
 .factor{padding:18px 0;border-top:1px solid var(--hair)}
@@ -860,7 +873,7 @@ KOSi18n.register({
     ko:{ home:'홈', reports:'리포트', watch:'워치리스트 추가', watched:'워치리스트 추가됨', watchShort:'워치리스트',
       mk:{price:'현재가',chg:'전일 대비',mcap:'시가총액',amt:'거래대금',vol:'거래량',shares:'상장주식수',market:'시장',sector:'업종'},
       sec:{overview:'리포트 개요',business:'사업 구조',recent:'최근 실적·주가',outlook:'전망',bull:'강세 요인',bear:'약세 요인',risk:'리스크 요인',verdict:'종합 의견',sources:'참고 출처',fin:'실적 추이',earnings:'실적 분석',industry:'산업 분석',valuation:'밸류에이션',chk:'다음 체크포인트'},
-      fin:{annual:'연간 실적 (연결)',quarterly:'분기 실적 (연결)',year:'연도',q:'분기',rev:'매출액',op:'영업이익',np:'지배주주 순이익',opm:'영업이익률',roe:'ROE',debt:'부채비율',per:'PER',pbr:'PBR',divy:'배당수익률',eps:'EPS',bps:'BPS',dps:'주당배당금',na:'산출 불가 (적자)',nodata:'—',
+      fin:{annual:'연간 실적 (연결)',quarterly:'분기 실적 (연결)',year:'연도',q:'분기',rev:'매출액',op:'영업이익',np:'지배주주 순이익',opm:'영업이익률',roe:'ROE',debt:'부채비율',per:'PER',pbr:'PBR',divy:'배당수익률',eps:'EPS',bps:'BPS',dps:'주당배당금',na:'산출 불가 (적자)',nodata:'—',chartAnnual:'연간 매출·영업이익 추이',chartQuarter:'분기 매출·영업이익 추이',unitJo:'단위: 조원',
         foot:'· 재무는 DART 공시 연결 확정치 · PER·EPS는 최근 4개 분기({win}) 지배주주 순이익, PBR·BPS는 최근 분기말 지배주주 자본 기준 · 배당 지표는 한국거래소(KRX) 공식 값'},
       eyebrow:'AI 리서치 리포트', reportDate:'리포트 작성일', dataDate:'데이터 기준일', model:'생성 모델', stance:'투자 의견',
       srcKRX:'한국거래소 (KRX)', srcKRXsub:'시세·시가총액 데이터', srcDART:'금융감독원 전자공시 (DART)', srcDARTsub:'재무·공시 원문',
@@ -870,7 +883,7 @@ KOSi18n.register({
     en:{ home:'Home', reports:'Reports', watch:'Add to watchlist', watched:'Added to watchlist', watchShort:'Watchlist',
       mk:{price:'Price',chg:'Day change',mcap:'Market cap',amt:'Trading value',vol:'Volume',shares:'Shares out.',market:'Market',sector:'Sector'},
       sec:{overview:'Report Overview',business:'Business',recent:'Recent Results & Price',outlook:'Outlook',bull:'Bull Factors',bear:'Bear Factors',risk:'Risk Factors',verdict:'Verdict',sources:'Sources',fin:'Financial Trends',earnings:'Earnings Analysis',industry:'Industry',valuation:'Valuation',chk:'What to Watch Next'},
-      fin:{annual:'Annual (consolidated)',quarterly:'Quarterly (consolidated)',year:'Year',q:'Quarter',rev:'Revenue',op:'Operating profit',np:'Net profit (owners)',opm:'OP margin',roe:'ROE',debt:'Debt ratio',per:'P/E',pbr:'P/B',divy:'Div. yield',eps:'EPS',bps:'BPS',dps:'DPS',na:'n/a (loss)',nodata:'—',
+      fin:{annual:'Annual (consolidated)',quarterly:'Quarterly (consolidated)',year:'Year',q:'Quarter',rev:'Revenue',op:'Operating profit',np:'Net profit (owners)',opm:'OP margin',roe:'ROE',debt:'Debt ratio',per:'P/E',pbr:'P/B',divy:'Div. yield',eps:'EPS',bps:'BPS',dps:'DPS',na:'n/a (loss)',nodata:'—',chartAnnual:'Annual revenue & operating profit',chartQuarter:'Quarterly revenue & operating profit',unitJo:'Unit: ₩ trillion',
         foot:'· Financials are confirmed DART consolidated figures · P/E & EPS use trailing-4-quarter net profit attributable to owners ({win}); P/B & BPS use latest-quarter equity attributable to owners · Dividend figures are official KRX values'},
       eyebrow:'AI Research Report', reportDate:'Report date', dataDate:'Data as of', model:'Model', stance:'Stance',
       srcKRX:'Korea Exchange (KRX)', srcKRXsub:'Price & market-cap data', srcDART:'DART (FSS e-disclosure)', srcDARTsub:'Financials & filings',
@@ -943,6 +956,64 @@ KOSi18n.register({
   function fpct(v){ return v==null?'—':(+v).toFixed(1)+'%'; }
   function fx(v,suf){ return v==null?'—':(+v).toLocaleString('en-US')+(suf||''); }
   function negc(v){ return (v!=null&&v<0)?' class="neg"':''; }
+  /* 실적 막대차트(매출·영업이익) + 선택적 라인(영업이익률). 외부 라이브러리 없는 inline SVG. */
+  function jo(won){ return won==null?null:won/1e12; }   // 원 → 조
+  function joLabel(j){ if(j==null)return ''; var a=Math.abs(j);
+    var s=(a>=100?Math.round(j):a>=10?j.toFixed(0):j.toFixed(1)); return s; }
+  function kBarChart(labels, bars, line, lineUnit){
+    var W=620, H=232, padL=14, padR=14, padT=16, padB=34;
+    var plotW=W-padL-padR, plotH=H-padT-padB, base=padT+plotH;
+    var vals=[]; bars.forEach(function(b){ b.vals.forEach(function(v){ if(v!=null)vals.push(jo(v)); }); });
+    if(!vals.length) return '';
+    var vmax=Math.max.apply(null,vals.concat([0])), vmin=Math.min.apply(null,vals.concat([0]));
+    if(vmax===vmin) vmax=vmin+1;
+    var span=vmax-vmin, zeroY=padT+plotH*(vmax/span);
+    function y(j){ return padT+plotH*((vmax-j)/span); }
+    var n=labels.length, slot=plotW/n, nb=bars.length, gap=slot*0.16, bw=(slot-gap*2)/nb;
+    var svg='<svg class="kchart" viewBox="0 0 '+W+' '+H+'" preserveAspectRatio="xMidYMid meet" role="img">';
+    // 0선
+    svg+='<line x1="'+padL+'" x2="'+(W-padR)+'" y1="'+zeroY.toFixed(1)+'" y2="'+zeroY.toFixed(1)+'" stroke="var(--hair)" stroke-width="1"/>';
+    // 막대
+    for(var i=0;i<n;i++){
+      var x0=padL+slot*i+gap;
+      for(var b=0;b<nb;b++){
+        var v=bars[b].vals[i]; if(v==null) continue;
+        var jv=jo(v), yy=y(jv), bx=x0+bw*b;
+        var top=Math.min(yy,zeroY), hgt=Math.max(2,Math.abs(zeroY-yy));
+        var col=(jv<0)?'var(--c-loss)':bars[b].color;
+        svg+='<rect x="'+bx.toFixed(1)+'" y="'+top.toFixed(1)+'" width="'+(bw-2).toFixed(1)+'" height="'+hgt.toFixed(1)+'" rx="2.5" fill="'+col+'"/>';
+        // 값 라벨(영업이익 계열 또는 단일 계열만; 과밀 방지 위해 마지막 계열에만)
+        if(nb<=2){
+          var ly=(jv<0)?(top+hgt+11):(top-4);
+          svg+='<text class="blabel" x="'+(bx+(bw-2)/2).toFixed(1)+'" y="'+ly.toFixed(1)+'" text-anchor="middle" fill="var(--fg-3)">'+joLabel(jv)+'</text>';
+        }
+      }
+      // x축 라벨
+      svg+='<text class="axlabel" x="'+(padL+slot*i+slot/2).toFixed(1)+'" y="'+(H-12)+'" text-anchor="middle" fill="var(--fg-3)">'+esc(labels[i])+'</text>';
+    }
+    // 라인(영업이익률 등) — 자체 스케일
+    if(line && line.vals.some(function(v){return v!=null;})){
+      var lv=line.vals.filter(function(v){return v!=null;});
+      var lmax=Math.max.apply(null,lv), lmin=Math.min.apply(null,lv);
+      if(lmax===lmin){lmax+=1;lmin-=1;} var lsp=lmax-lmin;
+      function ly2(v){ return padT+6+(plotH-12)*((lmax-v)/lsp); }
+      var pts=[], dots='';
+      for(var k=0;k<n;k++){ var lvk=line.vals[k]; if(lvk==null) continue;
+        var px=padL+slot*k+slot/2, py=ly2(lvk);
+        pts.push(px.toFixed(1)+','+py.toFixed(1));
+        dots+='<circle cx="'+px.toFixed(1)+'" cy="'+py.toFixed(1)+'" r="2.6" fill="var(--c-line)"/>';
+        dots+='<text class="blabel" x="'+px.toFixed(1)+'" y="'+(py-6).toFixed(1)+'" text-anchor="middle" fill="var(--c-line)">'+lvk.toFixed(1)+(lineUnit||'')+'</text>';
+      }
+      svg+='<polyline points="'+pts.join(' ')+'" fill="none" stroke="var(--c-line)" stroke-width="1.6" stroke-linejoin="round"/>'+dots;
+    }
+    svg+='</svg>';
+    return svg;
+  }
+  function chartCard(cap, legend, svg){
+    if(!svg) return '';
+    return '<div class="chart-card glass"><div class="chart-cap">'+esc(cap)+'</div>'
+      +'<div class="chart-legend">'+legend+'</div>'+svg+'</div>';
+  }
   function renderV2(u){
     var Q=REP.quant||{}, V=Q.valuation||{}, f=u.fin;
     var revLbl=(Q.rev_label?pk(Q.rev_label):f.rev);
@@ -956,6 +1027,28 @@ KOSi18n.register({
     /* 실적 추이 — DART 확정 수치 테이블 */
     h+=secOpen(pad(n++),'FINANCIALS',u.sec.fin);
     var ann=(Q.annual||[]).slice().reverse();
+    /* 차트: 연간·분기 매출·영업이익 */
+    var legend='<span><i style="background:var(--c-rev)"></i>'+esc(revLbl)+'</span>'
+      +'<span><i style="background:var(--c-op)"></i>'+esc(f.op)+'</span>'
+      +'<span><i class="line"></i>'+esc(f.opm)+'</span>'
+      +'<span style="margin-left:auto;color:var(--fg-3)">'+esc(f.unitJo)+'</span>';
+    if(ann.length>=2){
+      var aLabels=ann.map(function(a){return ''+a.year;});
+      var aBars=[{color:'var(--c-rev)',vals:ann.map(function(a){return a.rev;})},
+                 {color:'var(--c-op)',vals:ann.map(function(a){return a.op;})}];
+      var aLine={vals:ann.map(function(a){return a.opm;})};
+      h+=chartCard(f.chartAnnual, legend, kBarChart(aLabels,aBars,aLine,'%'));
+    }
+    var qtc=(Q.quarterly||[]);
+    if(qtc.length>=2){
+      var qLabels=qtc.map(function(r){return r.q.replace(/^20/,'').replace('Q','Q');});
+      var qBars=[{color:'var(--c-rev)',vals:qtc.map(function(r){return r.rev;})},
+                 {color:'var(--c-op)',vals:qtc.map(function(r){return r.op;})}];
+      var legendQ='<span><i style="background:var(--c-rev)"></i>'+esc(revLbl)+'</span>'
+        +'<span><i style="background:var(--c-op)"></i>'+esc(f.op)+'</span>'
+        +'<span style="margin-left:auto;color:var(--fg-3)">'+esc(f.unitJo)+'</span>';
+      h+=chartCard(f.chartQuarter, legendQ, kBarChart(qLabels,qBars,null,''));
+    }
     if(ann.length){
       h+='<div class="tbl-card glass"><div class="tbl-cap">'+esc(f.annual)+'</div><div class="tbl-scroll"><table class="dt"><thead><tr>'
         +'<th>'+esc(f.year)+'</th><th>'+esc(revLbl)+'</th><th>'+esc(f.op)+'</th><th>'+esc(f.np)+'</th><th>'+esc(f.opm)+'</th><th>'+esc(f.roe)+'</th><th>'+esc(f.debt)+'</th></tr></thead><tbody>';

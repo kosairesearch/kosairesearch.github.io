@@ -44,6 +44,31 @@ TOOLS = [{"type": "web_search_20250305", "name": "web_search", "max_uses": 6,
 log = g.log
 
 
+def collect_sources_v2(message):
+    """출처 URL을 인용(citations) + 웹검색 결과(web_search_tool_result) 양쪽에서 수집한다.
+    모델이 JSON만 출력해 인용 태그가 안 붙어도, 실제 검색이 반환한 URL을 확보한다."""
+    cited, searched = [], []
+    for block in getattr(message, "content", []) or []:
+        # 1) 본문 인용
+        for c in (getattr(block, "citations", None) or []):
+            u = getattr(c, "url", None)
+            if u and u not in cited:
+                cited.append(u)
+        # 2) 웹검색 도구 결과
+        if getattr(block, "type", None) == "web_search_tool_result":
+            items = getattr(block, "content", None) or []
+            for it in items:
+                u = getattr(it, "url", None)
+                if u and u not in searched:
+                    searched.append(u)
+    # 인용된 출처를 앞에, 그 외 검색결과를 뒤에 (중복 제거)
+    out = list(cited)
+    for u in searched:
+        if u not in out:
+            out.append(u)
+    return out
+
+
 # ── 정량 1: DART 전체 재무제표 ────────────────────────────────────────
 # account_id 우선, 계정명 폴백. 연결(CFS) 기준.
 ACC_IDS = {
@@ -624,7 +649,7 @@ def collect(cl, as_of):
                 fail += 1
                 log(f"  · ⚠️ {tk} 스키마 불완전 — 건너뜀")
                 continue
-            srcs = g.collect_sources(result.result.message)
+            srcs = collect_sources_v2(result.result.message)
             if srcs:
                 rep["sources"] = srcs[:18]
             st = by_tk.get(tk, {})
