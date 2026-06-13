@@ -316,17 +316,20 @@ def collect_quant(dart, ticker, krx_row, stock):
         "ttm_window": f"{py}Q2~{cur}Q1" if ttm_np else None,
         "ttm_np_owner": ttm_np,
         "pbr_krx": None, "bps_krx": None,        # KRX 공식값(참고·대조용)
-        "basis": "PER·EPS·PBR·BPS 모두 자체 산출(네이버·토스와 동일 방식) · 배당수익률·주당배당금은 KRX 공식값",
+        "basis": "PER·EPS·PBR·BPS 모두 자체 산출(네이버·토스와 동일 방식) · 배당은 DART 공시 주당현금배당금 ÷ 현재가",
     }
-    # 배당수익률·주당배당금은 KRX 공식값 사용. PBR·BPS의 KRX값은 참고용으로만 보관.
-    #   배당(DIV·DPS)은 0도 '무배당'이라는 유효 정보 → 0을 그대로 보존(누락과 구분).
-    #   밸류에이션(PBR·BPS)은 0이 '산출 불가'이므로 None 처리.
+    # 배당: DART 공시 주당현금배당금(보통주)을 직접 사용해 현재가 기준으로 산출.
+    #   KRX 배당값은 신규 배당 미반영 등 갱신이 늦어 신뢰도가 낮으므로 쓰지 않는다.
+    #   DPS=0 은 '무배당'(유효 정보)로 보존, 공시 자체가 없으면 None(누락).
+    dps_dart = dart_dps(dart, ticker)
+    if dps_dart is not None:
+        valuation["dps"] = round(dps_dart, 1)
+        valuation["div"] = round(dps_dart / price * 100, 2) if price else None
+    else:
+        valuation["dps"] = None
+        valuation["div"] = None
+    # PBR·BPS 의 KRX 공식값은 참고·대조용으로만 보관.
     if krx_row is not None:
-        for src, dst in (("DIV", "div"), ("DPS", "dps")):
-            try:
-                valuation[dst] = round(float(krx_row.get(src)), 2)
-            except Exception:
-                valuation[dst] = None
         for src, dst in (("PBR", "pbr_krx"), ("BPS", "bps_krx")):
             try:
                 v = float(krx_row.get(src))
@@ -366,6 +369,36 @@ def dart_total_shares(dart, ticker):
                     tot += v
         if tot:
             return tot
+    return None
+
+
+def dart_dps(dart, ticker):
+    """최근 결산 주당 현금배당금(보통주, 원) — DART '배당에 관한 사항' 공시.
+    KRX 배당값은 갱신이 늦어(신규 배당 미반영) 신뢰도가 낮으므로 DART 공시를 직접 사용.
+    최근 사업연도 → 그 전년 순으로 시도. 실패 시 None."""
+    cur = datetime.date.today().year
+    for year in (cur - 1, cur - 2):
+        try:
+            df = dart.report(ticker, "배당", year, "11011")
+        except Exception:
+            df = None
+        if df is None or getattr(df, "empty", True):
+            continue
+        best = None
+        for _, r in df.iterrows():
+            se = str(r.get("se", "")).replace(" ", "")
+            knd = str(r.get("stock_knd", "")).replace(" ", "")
+            if "주당현금배당금" in se:
+                # 보통주 우선(주식종류 컬럼 없으면 그대로 채택)
+                if knd and "보통" not in knd:
+                    continue
+                v = g._num(r.get("thstrm"))
+                if v is not None and v >= 0:
+                    best = v
+                    if not knd or "보통" in knd:
+                        break
+        if best is not None:
+            return float(best)
     return None
 
 
