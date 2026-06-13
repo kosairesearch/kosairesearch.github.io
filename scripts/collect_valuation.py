@@ -82,9 +82,9 @@ def collect_one(dart, ticker, stock):
     qp_np = v2._cum(q_py, "np_owner") if q_py else None
     qc_eqo = (v2._bs(q_cur, "equity_owner") or v2._bs(q_cur, "equity")) if q_cur else None
 
-    # TTM EPS = (최근연간 − 작년1Q + 올해1Q) ÷ 발행주식총수
-    if None not in (a1_np, qp_np, qc_np) and total_sh:
-        ttm = a1_np - qp_np + qc_np
+    # TTM 지배순이익 = 최근연간 − 작년1Q + 올해1Q
+    ttm = (a1_np - qp_np + qc_np) if None not in (a1_np, qp_np, qc_np) else None
+    if ttm is not None and total_sh:
         out["eps"] = int(ttm / total_sh)
 
     # BPS = 최근 분기말 지배자본 ÷ 가중평균유통주식수(자기주식 제외)
@@ -101,9 +101,10 @@ def collect_one(dart, ticker, stock):
     if eqo_latest and bps_denom:
         out["bps"] = int(eqo_latest / bps_denom)
 
-    # ROE = 최근연간 지배순이익 ÷ 최근연간 지배자본
-    if a1_np is not None and a1_eqo:
-        out["roe"] = round(a1_np / a1_eqo * 100, 1)
+    # ROE(TTM) = 최근 4분기 지배순이익 ÷ 평균 지배자본(전기말·최근분기말) — 토스 방식
+    avg_eq = ((a1_eqo + qc_eqo) / 2) if (a1_eqo and qc_eqo) else (qc_eqo or a1_eqo)
+    if ttm is not None and avg_eq:
+        out["roe"] = round(ttm / avg_eq * 100, 1)
 
     # 매출성장률(YoY)
     r1 = v2._cum(a1, "rev") if a1 else None
@@ -129,7 +130,8 @@ def main():
 
     data = g.load_stocks()
     data_date = data.get("dataDate", "")
-    quarter_tag = data_date  # 같은 데이터일자 기준 재수집 방지(분기 갱신은 FORCE로)
+    # 같은 데이터일자+산식버전 기준 재수집 방지. 산식 바뀌면 버전을 올려 전체 재수집 유도.
+    quarter_tag = data_date + "-r2"  # r2: ROE를 TTM(평균자본) 방식으로 전환
     stocks = sorted(data["stocks"], key=lambda s: s.get("mcap", 0) or 0, reverse=True)
 
     existing = {} if os.getenv("FORCE") == "1" else load_existing()

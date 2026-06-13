@@ -1132,7 +1132,7 @@ KOSi18n.register({
     // 밸류에이션 데이터: valuation.js 우선, 없으면 v2 리포트 quant 폴백
     var VAL=(window.KOS_VALUATION&&KOS_VALUATION.stocks&&KOS_VALUATION.stocks[TK])||null;
     if(!VAL && REP && REP.quant){ var rv=REP.quant.valuation||{}, ra=(REP.quant.annual||[])[0]||{};
-      VAL={eps:rv.eps,bps:rv.bps,dps:rv.dps,roe:ra.roe}; }
+      VAL={eps:rv.eps,bps:rv.bps,dps:rv.dps,roe:(rv.roe_ttm!=null?rv.roe_ttm:ra.roe)}; }
     VAL=VAL||{};
     var px=STOCK.price||0;
     // PER·PBR·배당은 '오늘 주가'로 즉석 계산(라이브), ROE는 분기값

@@ -195,7 +195,8 @@ def collect_quant(dart, ticker, krx_row, stock):
         row = {
             "year": yr, "rev": rev, "op": op, "np": np_,
             "np_owner": npo if npo is not None else np_,
-            "equity": eq, "liab": li, "cfo": _cum(d, "cfo"),
+            "equity": eq, "equity_owner": (eqo if eqo is not None else eq),
+            "liab": li, "cfo": _cum(d, "cfo"),
             "eps_basic": _cum(d, "eps_basic"),
         }
         row["opm"] = round(op / rev * 100, 1) if (op is not None and rev) else None
@@ -312,11 +313,17 @@ def collect_quant(dart, ticker, krx_row, stock):
     bps_q = int(eqo_q / bps_denom) if (eqo_q and bps_denom) else None
     pbr_q = round(price / bps_q, 2) if (bps_q and price) else None
 
+    # ROE(TTM) = 최근 4개 분기 지배순이익 ÷ 평균 지배자본(전기말·최근분기말) — 토스·FnGuide 방식
+    fy_eqo = fy_row.get("equity_owner") if fy_row else None
+    avg_eq = ((fy_eqo + eqo_q) / 2) if (fy_eqo and eqo_q) else (eqo_q or fy_eqo)
+    roe_ttm = round(ttm_np / avg_eq * 100, 1) if (ttm_np is not None and avg_eq) else None
+
     valuation = {
         "price": price, "mcap": stock.get("mcap"), "shares": stock.get("shares"),
         "total_shares": total_sh, "wavg_shares": int(wavg) if wavg else None,
         "per": per_ttm, "eps": eps_ttm,          # 최근 4개 분기 순이익 ÷ 가중평균유통주식수 (네이버 방식)
         "pbr": pbr_q, "bps": bps_q,              # 최근 분기말 지배주주 자본 ÷ 유통주식수 (네이버 방식)
+        "roe_ttm": roe_ttm,                      # 헤드라인 ROE(최근 4분기 ÷ 평균자본)
         "ttm_window": f"{py}Q2~{cur}Q1" if ttm_np else None,
         "ttm_np_owner": ttm_np,
         "pbr_krx": None, "bps_krx": None,        # KRX 공식값(참고·대조용)
