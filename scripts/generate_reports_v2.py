@@ -268,14 +268,16 @@ def collect_quant(dart, ticker, krx_row, stock):
     valuation = {
         "price": price, "mcap": stock.get("mcap"), "shares": stock.get("shares"),
         "total_shares": total_sh,
-        "per": per_ttm, "eps": eps_ttm,
-        "pbr": pbr_q, "bps": bps_q,
+        "per": per_ttm, "eps": eps_ttm,          # 최근 4개 분기 기준 자체 산출(우리 강점)
+        "pbr": None, "bps": None,                # KRX 공식값으로 채움(아래)
         "ttm_window": f"{py}Q2~{cur}Q1" if ttm_np else None,
         "ttm_np_owner": ttm_np,
-        "basis": "PER·EPS=최근 4개 분기 지배주주 순이익 ÷ 발행주식총수(보통+우선) · PBR·BPS=최근 분기말 지배주주 자본 기준",
+        "pbr_self": pbr_q, "bps_self": bps_q,    # 참고용 자체 산출(표시 안 함)
+        "basis": "PER·EPS=최근 4개 분기 지배주주 순이익 기준 자체 산출 · PBR·BPS·배당=한국거래소(KRX) 공식값",
     }
+    # PBR·BPS·배당·주당배당금: KRX 공식값을 그대로 사용(자본 추출 버그 원천 제거)
     if krx_row is not None:
-        for src, dst in (("DIV", "div"), ("DPS", "dps")):
+        for src, dst in (("PBR", "pbr"), ("BPS", "bps"), ("DIV", "div"), ("DPS", "dps")):
             try:
                 v = float(krx_row.get(src))
                 valuation[dst] = v if v > 0 else None
@@ -345,8 +347,8 @@ def quant_summary(name, q):
     for r in q["quarterly"]:
         lines.append(f"  {r['q']}: 매출 {_eok(r['rev'])} 영업이익 {_eok(r['op'])} 지배순이익 {_eok(r['np_owner'])}")
     v = q["valuation"]
-    lines.append(f"  PER {v.get('per')} | EPS {v.get('eps')} | PBR {v.get('pbr')} | "
-                 f"BPS {v.get('bps')} | 배당수익률 {v.get('div')}% | DPS {v.get('dps')}")
+    lines.append(f"  PER {v.get('per')}(자체) | EPS {v.get('eps')}(자체) | "
+                 f"PBR {v.get('pbr')}(KRX) | BPS {v.get('bps')}(KRX) | 배당 {v.get('div')}% | DPS {v.get('dps')}")
     return "\n".join(lines)
 
 
@@ -389,7 +391,7 @@ def build_prompt_v2(stock, quant, as_of):
 [작성 지침]
 1. web_search로 최신 사업 현황·업황·뉴스·가이던스를 조사하세요(한국어, 3~6회). 신뢰 출처만: DART·기업 IR·증권사 리포트·주요 언론. 나무위키 등 위키·블로그·커뮤니티 금지.
 2. **재무 수치는 위 [확정 재무] JSON의 값만 사용하세요.** 검색에서 다른 수치가 나오면 위 값을 우선합니다. 거기 없는 숫자(예: 부문별 매출액)는 검색으로 확인된 것만 출처·시점과 함께 쓰고, 확인 안 되면 정성 서술로 대체하세요. 숫자를 절대 지어내지 마세요.
-3. earnings 섹션은 제공된 분기 추이(전 분기·전년 동기 비교)를 구체적으로 해석하세요. valuation_comment 는 제공된 per·pbr·배당 수치를 과거 수준·업종 맥락에서 서술하세요. 사용자 화면에는 'PER', 'PBR'로만 표기되므로 'TTM', '12개월 선행/후행' 같은 전문 용어를 본문에 쓰지 마세요. 필요하면 "최근 4개 분기 이익 기준" 정도로만 자연스럽게 표현하세요.
+3. earnings 섹션은 제공된 분기 추이(전 분기·전년 동기 비교)를 구체적으로 해석하세요. valuation_comment 는 제공된 per·pbr·배당 수치를 과거 수준·업종 맥락에서 서술하세요. (참고: PER·EPS는 최근 4개 분기 이익 기준, PBR·BPS·배당은 KRX 공식값.) 사용자 화면에는 PER, PBR로만 표기되므로 TTM, 12개월 선행/후행 같은 전문 용어를 본문에 쓰지 마세요. 특정 PBR/PER 숫자를 본문에 단정적으로 적기보다 수준·추세 위주로 서술하세요(정확한 수치는 표로 별도 제공됨).
 4. checkpoints 는 '다음에 무엇을 확인해야 하는가'입니다 — 다가오는 분기 실적 발표, 수주·증설·규제 이벤트 등 확인 가능한 일정 위주로.
 5. 균형: 강세·약세 요인을 같은 무게로. 투자의견·매수/매도·목표주가 표현 금지(정보 제공용).
 6. 한국어(ko)/영어(en) 모두 작성. 영어에 한국어 혼입 금지.
@@ -466,32 +468,33 @@ def naver_valuation(ticker):
 
 
 def cross_check(tk, name, valuation):
-    """자체 산출값을 네이버와 대조. 허용 오차 밖이면 그 값을 숨긴다(None).
-    참조값 자체가 없으면 통과시키되 unverified 로 기록."""
+    """자체 산출하는 PER·EPS만 네이버와 대조해 '중대 오류'(부호 반대·30% 초과)일 때만 숨긴다.
+    미세 차이(가중평균주식수·결산시점 등 방법론 차이)는 정상이므로 표시한다.
+    PBR·BPS·배당은 KRX 공식값이라 검증 없이 표시한다."""
     nv = naver_valuation(tk)
+    valuation["naver_ref"] = nv or None
     if not nv:
         valuation["verify"] = "unverified(네이버 참조 없음)"
-        log(f"  ⚠️ {name}: 네이버 참조값 없음 — 미검증 상태로 표시")
+        log(f"  ⚠️ {name}: 네이버 참조 없음 — 자체 PER·EPS 미검증 표시")
         return
 
-    def within(mine, ref, tol):
-        return mine is not None and ref not in (None, 0) and abs(mine - ref) / abs(ref) <= tol
+    def gross_error(mine, ref):
+        if mine is None or ref in (None, 0):
+            return False
+        if (mine > 0) != (ref > 0):           # 부호 반대 = 중대 오류
+            return True
+        return abs(mine - ref) / abs(ref) > 0.30   # 30% 초과 = 중대 오류
 
     issues = []
-    if nv.get("eps") is not None and valuation.get("eps") is not None:
-        if not within(valuation["eps"], nv["eps"], 0.05):
-            issues.append(f"EPS 자체 {valuation['eps']} vs 네이버 {nv['eps']}")
-            valuation["eps"] = valuation["per"] = None
-    if nv.get("pbr") is not None and valuation.get("pbr") is not None:
-        if not within(valuation["pbr"], nv["pbr"], 0.08):
-            issues.append(f"PBR 자체 {valuation['pbr']} vs 네이버 {nv['pbr']}")
-            valuation["pbr"] = valuation["bps"] = None
-    valuation["verify"] = ("mismatch: " + " / ".join(issues)) if issues else "ok"
-    valuation["naver_ref"] = nv
+    if gross_error(valuation.get("eps"), nv.get("eps")):
+        issues.append(f"EPS 자체 {valuation.get('eps')} vs 네이버 {nv.get('eps')}")
+        valuation["eps"] = valuation["per"] = None
+    valuation["verify"] = ("blocked(중대오류): " + " / ".join(issues)) if issues else "ok"
     if issues:
-        log(f"  ❌ {name} 대조 불일치 → 해당 지표 숨김: {' / '.join(issues)}")
+        log(f"  ❌ {name} 중대오류 차단 → PER·EPS 숨김: {' / '.join(issues)}")
     else:
-        log(f"  ✅ {name} 네이버 대조 통과 (PER {valuation.get('per')}≈{nv.get('per')}, PBR {valuation.get('pbr')}≈{nv.get('pbr')})")
+        log(f"  ✅ {name} PER {valuation.get('per')}(네이버 {nv.get('per')}) | "
+            f"PBR {valuation.get('pbr')}(KRX) | EPS {valuation.get('eps')}(네이버 {nv.get('eps')})")
 
 
 def collect_all_quant(targets, data):
