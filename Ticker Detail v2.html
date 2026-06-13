@@ -1145,13 +1145,13 @@ KOSi18n.register({
     var roep=function(v){ return v==null?'—':v.toFixed(1)+'%'; };
     var mk=u.mk, metrics=[
       [mk.mcap, mcap(STOCK.mcap), ''],
+      [mk.amt, amt(STOCK.trading_value), ''],
+      [mk.vol, vol(STOCK.volume), ''],
+      [mk.shares, shN(STOCK.shares), ''],
       [mk.per, mult(perV), ''],
       [mk.pbr, mult(pbrV), ''],
       [mk.roe, roep(roeV), ''],
-      [mk.divy, pctv(divV), ''],
-      [mk.amt, amt(STOCK.trading_value), ''],
-      [mk.vol, vol(STOCK.volume), ''],
-      [mk.shares, shN(STOCK.shares), '']
+      [mk.divy, pctv(divV), '']
     ];
     document.getElementById('mgrid').innerHTML=metrics.map(function(m){return '<div class="m"><div class="k">'+esc(m[0])+'</div><div class="val">'+m[1]+'</div>'+(m[2]?'<div class="peer">'+esc(m[2])+'</div>':'')+'</div>';}).join('');
     fitMetricVals();

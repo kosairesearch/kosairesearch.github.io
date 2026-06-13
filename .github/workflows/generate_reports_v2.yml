@@ -7,11 +7,14 @@ on:
         description: 'quant(검증) | patch(숫자만 교체·무료) | submit | collect | auto'
         default: 'quant'
       tickers:
-        description: '쉼표 구분 티커 (비우면 시총 상위 10)'
+        description: '쉼표 구분 티커 (비우면 시총 상위 N)'
         default: ''
+      top_n:
+        description: '시총 상위 N개 (tickers 비울 때 적용)'
+        default: '10'
 
 concurrency:
-  group: kos-data
+  group: kos-reports
   cancel-in-progress: false
 
 jobs:
@@ -38,6 +41,7 @@ jobs:
           KRX_PW: ${{ secrets.KRX_PW }}
           REPORT_MODEL_V2: 'claude-opus-4-8'
           REPORT_TICKERS: ${{ inputs.tickers }}
+          REPORT_TOP_N: ${{ inputs.top_n }}
           BATCH_MAX_WAIT_SEC: '10800'
         run: |
           python scripts/generate_reports_v2.py "${{ inputs.mode }}" 2>&1 | tee data/reports_v2_run.log || true
