@@ -1079,14 +1079,16 @@ KOSi18n.register({
         vPbr=(V.pbr!=null?V.pbr:V.pbr_q), vBps=(V.bps!=null?V.bps:V.bps_q),
         vDiv=(V.div!=null?V.div:V.div_krx), vDps=(V.dps!=null?V.dps:V.dps_krx);
     var lossNa=(vEps!=null&&vEps<0);
-    var xb=(L()==='en'?'x':'배'), wn=(L()==='en'?'':'원');
+    var xb=(L()==='en'?'x':'배');
+    // 주당 원화 금액: 영어=₩ 접두, 한국어=원 접미
+    var cur=function(v){ if(v==null)return f.nodata; var n=(+v).toLocaleString('en-US'); return L()==='en'?'₩'+n:n+'원'; };
     var cells=[
       [f.per,  vPer!=null?fx(vPer,xb):(lossNa?f.na:f.nodata)],
       [f.pbr,  vPbr!=null?fx(vPbr,xb):f.nodata],
       [f.divy, vDiv!=null?fpct2(vDiv):f.nodata],
-      [f.eps,  vEps!=null?fx(vEps,wn):f.nodata],
-      [f.bps,  vBps!=null?fx(vBps,wn):f.nodata],
-      [f.dps,  vDps!=null?fx(vDps,wn):f.nodata]
+      [f.eps,  cur(vEps)],
+      [f.bps,  cur(vBps)],
+      [f.dps,  cur(vDps)]
     ];
     h+='<div class="valgrid">'+cells.map(function(c){return '<div class="vm"><div class="vk">'+esc(c[0])+'</div><div class="vv">'+esc(c[1])+'</div></div>';}).join('')+'</div>';
     h+='<div class="tbl-foot" style="margin-bottom:22px">'+esc(f.foot.replace('{win}',V.ttm_window||'-'))+'</div>';
