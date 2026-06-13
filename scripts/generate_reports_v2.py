@@ -377,6 +377,7 @@ def dart_dps(dart, ticker):
     KRX 배당값은 갱신이 늦어(신규 배당 미반영) 신뢰도가 낮으므로 DART 공시를 직접 사용.
     최근 사업연도 → 그 전년 순으로 시도. 실패 시 None."""
     cur = datetime.date.today().year
+    dbg = os.getenv("DEBUG_DIV") == "1"
     for year in (cur - 1, cur - 2):
         try:
             df = dart.report(ticker, "배당", year, "11011")
@@ -384,6 +385,12 @@ def dart_dps(dart, ticker):
             df = None
         if df is None or getattr(df, "empty", True):
             continue
+        if dbg:
+            log(f"    [DEBUG_DIV {ticker} {year}] 컬럼={list(df.columns)}")
+            for _, r in df.iterrows():
+                if "배당" in str(r.get("se", "")) or "주당" in str(r.get("se", "")):
+                    log(f"      se='{r.get('se')}' knd='{r.get('stock_knd')}' "
+                        f"thstrm='{r.get('thstrm')}' frmtrm='{r.get('frmtrm')}'")
         best = None
         for _, r in df.iterrows():
             se = str(r.get("se", "")).replace(" ", "")

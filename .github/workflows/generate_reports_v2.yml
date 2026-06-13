@@ -38,6 +38,7 @@ jobs:
           KRX_PW: ${{ secrets.KRX_PW }}
           REPORT_MODEL_V2: 'claude-opus-4-8'
           REPORT_TICKERS: ${{ inputs.tickers }}
+          DEBUG_DIV: '1'
           BATCH_MAX_WAIT_SEC: '10800'
         run: |
           python scripts/generate_reports_v2.py "${{ inputs.mode }}" 2>&1 | tee data/reports_v2_run.log || true
