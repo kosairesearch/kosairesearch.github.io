@@ -1,0 +1,55 @@
+name: 전 종목 밸류에이션 수집 (이어받기)
+
+on:
+  workflow_dispatch:
+    inputs:
+      budget_min:
+        description: '이번 실행 시간예산(분)'
+        default: '50'
+      force:
+        description: '전부 재수집(분기 갱신 시 1)'
+        default: ''
+
+concurrency:
+  group: kos-data
+  cancel-in-progress: false
+
+jobs:
+  valuation:
+    runs-on: ubuntu-latest
+    timeout-minutes: 70
+    permissions:
+      contents: write
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: 의존성 설치
+        run: pip install -r requirements.txt
+
+      - name: 밸류에이션 수집
+        env:
+          DART_API_KEY: ${{ secrets.DART_API_KEY }}
+          KRX_ID: ${{ secrets.KRX_ID }}
+          KRX_PW: ${{ secrets.KRX_PW }}
+          BUDGET_MIN: ${{ inputs.budget_min }}
+          FORCE: ${{ inputs.force }}
+        run: |
+          python scripts/collect_valuation.py 2>&1 | tee data/valuation_run.log || true
+
+      - name: 결과 커밋
+        run: |
+          git config --global user.email "bot@kosairesearch.github.io"
+          git config --global user.name "KOS ai Bot"
+          git add -A data/valuation.js data/valuation_run.log
+          git commit -m "📊 밸류에이션 수집 $(TZ='Asia/Seoul' date +'%Y-%m-%d %H:%M KST')" || exit 0
+          ok=""
+          for i in 1 2 3 4 5; do
+            if git pull --rebase origin main && git push origin main; then ok=1; break; fi
+            git rebase --abort 2>/dev/null || true
+            sleep $((i*3))
+          done
+          [ -n "$ok" ] || exit 1
