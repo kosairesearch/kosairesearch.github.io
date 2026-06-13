@@ -500,6 +500,22 @@ def build_prompt_v2(stock, quant, as_of):
 ===JSON_END==="""
 
 
+def _sanitize(obj):
+    """모델이 가끔 줄바꿈을 '<개행>' 같은 리터럴 태그로 출력하는 것을 정리(재귀)."""
+    import re as _re
+    if isinstance(obj, dict):
+        for k, v in obj.items():
+            obj[k] = _sanitize(v)
+        return obj
+    if isinstance(obj, list):
+        return [_sanitize(x) for x in obj]
+    if isinstance(obj, str):
+        s = _re.sub(r"\s*<\s*개행\s*>\s*", "\n\n", obj)
+        s = s.replace("<개행>", " ").replace("개행", "")
+        return _re.sub(r"[ \t]+\n", "\n", s).strip()
+    return obj
+
+
 def valid_v2(rep):
     try:
         need = ("title", "lead", "keypoints", "business", "earnings", "industry",
@@ -694,6 +710,7 @@ def collect(cl, as_of):
         try:
             text = g.extract_text(result.result.message)
             rep = g.parse_report(text)
+            _sanitize(rep)
             if not valid_v2(rep):
                 fail += 1
                 log(f"  · ⚠️ {tk} 스키마 불완전 — 건너뜀")
