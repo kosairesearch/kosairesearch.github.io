@@ -167,7 +167,9 @@ def main():
     have = sum(1 for s in stocks if s["ticker"] in existing)
     log(f"\n✅ 밸류에이션 수집 — 이번 {new}건 신규 / 건너뜀 {skipped} / 누적 {have}/{total}개")
     if have < total:
-        log(f"- 남은 {total-have}개는 다음 실행에서 이어받기")
+        log(f"- VALUATION_REMAINING {total-have}개는 다음 실행에서 이어받기")
+    else:
+        log("- VALUATION_COMPLETE 전 종목 수집 완료")
 
 
 if __name__ == "__main__":
