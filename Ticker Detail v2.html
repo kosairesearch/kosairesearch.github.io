@@ -1089,7 +1089,7 @@ KOSi18n.register({
       [f.dps,  vDps!=null?fx(vDps,wn):f.nodata]
     ];
     h+='<div class="valgrid">'+cells.map(function(c){return '<div class="vm"><div class="vk">'+esc(c[0])+'</div><div class="vv">'+esc(c[1])+'</div></div>';}).join('')+'</div>';
-    h+='<div class="tbl-foot">'+esc(f.foot.replace('{win}',V.ttm_window||'-'))+'</div>';
+    h+='<div class="tbl-foot" style="margin-bottom:22px">'+esc(f.foot.replace('{win}',V.ttm_window||'-'))+'</div>';
     if(REP.valuation_comment)h+=prose(REP.valuation_comment);
     h+='</section><hr class="hairline" />';
     h+=secOpen(pad(n++),'BULL CASE',u.sec.bull)+factors(REP.bull,'bull','▲')+'</section><hr class="hairline" />';
