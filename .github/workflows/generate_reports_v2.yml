@@ -4,7 +4,7 @@ on:
   workflow_dispatch:
     inputs:
       mode:
-        description: 'quant(정량 검증만) | submit | collect | auto'
+        description: 'quant(검증) | patch(숫자만 교체·무료) | submit | collect | auto'
         default: 'quant'
       tickers:
         description: '쉼표 구분 티커 (비우면 시총 상위 10)'

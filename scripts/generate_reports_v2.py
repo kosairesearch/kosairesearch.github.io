@@ -268,16 +268,16 @@ def collect_quant(dart, ticker, krx_row, stock):
     valuation = {
         "price": price, "mcap": stock.get("mcap"), "shares": stock.get("shares"),
         "total_shares": total_sh,
-        "per": per_ttm, "eps": eps_ttm,          # 최근 4개 분기 기준 자체 산출(우리 강점)
-        "pbr": None, "bps": None,                # KRX 공식값으로 채움(아래)
+        "per": per_ttm, "eps": eps_ttm,          # 최근 4개 분기 순이익 ÷ 발행주식총수 (네이버 방식)
+        "pbr": pbr_q, "bps": bps_q,              # 최근 분기말 지배주주 자본 ÷ 발행주식총수 (네이버 방식)
         "ttm_window": f"{py}Q2~{cur}Q1" if ttm_np else None,
         "ttm_np_owner": ttm_np,
-        "pbr_self": pbr_q, "bps_self": bps_q,    # 참고용 자체 산출(표시 안 함)
-        "basis": "PER·EPS=최근 4개 분기 지배주주 순이익 기준 자체 산출 · PBR·BPS·배당=한국거래소(KRX) 공식값",
+        "pbr_krx": None, "bps_krx": None,        # KRX 공식값(참고·대조용)
+        "basis": "PER·EPS·PBR·BPS 모두 자체 산출(네이버·토스와 동일 방식) · 배당수익률·주당배당금은 KRX 공식값",
     }
-    # PBR·BPS·배당·주당배당금: KRX 공식값을 그대로 사용(자본 추출 버그 원천 제거)
+    # 배당수익률·주당배당금은 KRX 공식값 사용. PBR·BPS의 KRX값은 참고용으로만 보관.
     if krx_row is not None:
-        for src, dst in (("PBR", "pbr"), ("BPS", "bps"), ("DIV", "div"), ("DPS", "dps")):
+        for src, dst in (("DIV", "div"), ("DPS", "dps"), ("PBR", "pbr_krx"), ("BPS", "bps_krx")):
             try:
                 v = float(krx_row.get(src))
                 valuation[dst] = v if v > 0 else None
@@ -347,8 +347,8 @@ def quant_summary(name, q):
     for r in q["quarterly"]:
         lines.append(f"  {r['q']}: 매출 {_eok(r['rev'])} 영업이익 {_eok(r['op'])} 지배순이익 {_eok(r['np_owner'])}")
     v = q["valuation"]
-    lines.append(f"  PER {v.get('per')}(자체) | EPS {v.get('eps')}(자체) | "
-                 f"PBR {v.get('pbr')}(KRX) | BPS {v.get('bps')}(KRX) | 배당 {v.get('div')}% | DPS {v.get('dps')}")
+    lines.append(f"  PER {v.get('per')} | EPS {v.get('eps')} | PBR {v.get('pbr')} | "
+                 f"BPS {v.get('bps')} | 배당 {v.get('div')}% | DPS {v.get('dps')}  (모두 네이버 방식)")
     return "\n".join(lines)
 
 
@@ -483,18 +483,23 @@ def cross_check(tk, name, valuation):
             return False
         if (mine > 0) != (ref > 0):           # 부호 반대 = 중대 오류
             return True
-        return abs(mine - ref) / abs(ref) > 0.30   # 30% 초과 = 중대 오류
+        return abs(mine - ref) / abs(ref) > 0.15   # 15% 초과 = 중대 오류(네이버와 크게 어긋남)
 
     issues = []
     if gross_error(valuation.get("eps"), nv.get("eps")):
-        issues.append(f"EPS 자체 {valuation.get('eps')} vs 네이버 {nv.get('eps')}")
+        issues.append(f"EPS {valuation.get('eps')}↔네이버 {nv.get('eps')}")
         valuation["eps"] = valuation["per"] = None
+    if gross_error(valuation.get("bps"), nv.get("bps")):
+        issues.append(f"BPS {valuation.get('bps')}↔네이버 {nv.get('bps')}")
+        valuation["bps"] = valuation["pbr"] = None
     valuation["verify"] = ("blocked(중대오류): " + " / ".join(issues)) if issues else "ok"
     if issues:
-        log(f"  ❌ {name} 중대오류 차단 → PER·EPS 숨김: {' / '.join(issues)}")
+        log(f"  ❌ {name} 중대오류 차단 → 해당 지표 숨김: {' / '.join(issues)}")
     else:
-        log(f"  ✅ {name} PER {valuation.get('per')}(네이버 {nv.get('per')}) | "
-            f"PBR {valuation.get('pbr')}(KRX) | EPS {valuation.get('eps')}(네이버 {nv.get('eps')})")
+        log(f"  ✅ {name} PER {valuation.get('per')}(네이버 {nv.get('per')}) "
+            f"PBR {valuation.get('pbr')}(네이버 {nv.get('pbr')}) "
+            f"EPS {valuation.get('eps')}(네이버 {nv.get('eps')}) "
+            f"BPS {valuation.get('bps')}(네이버 {nv.get('bps')})")
 
 
 def collect_all_quant(targets, data):
@@ -658,6 +663,25 @@ def sync_list_index(tickers):
         log(f"- (인덱스 동기화 실패: {type(e).__name__}: {e})")
 
 
+def patch_quant(as_of):
+    """기존 v2 리포트의 정량(quant) 블록만 다시 수집해 교체한다(LLM 재호출 없음·무료).
+    본문 텍스트는 그대로 두고 숫자만 최신 방식으로 갱신할 때 사용."""
+    data, targets = pick_targets()
+    quants = collect_all_quant(targets, data)
+    n = 0
+    for st in targets:
+        tk = st["ticker"]
+        f = OUT_DIR / f"{tk}.json"
+        if tk in quants and f.exists():
+            rep = json.loads(f.read_text(encoding="utf-8"))
+            rep["quant"] = quants[tk]
+            rep["dataDate"] = data.get("dataDate", rep.get("dataDate", ""))
+            f.write_text(json.dumps(rep, ensure_ascii=False, indent=1), encoding="utf-8")
+            n += 1
+            log(f"  · 정량 교체 {tk} {st['name']}")
+    log(f"\n✅ 정량 patch 완료: {n}건 (본문 텍스트 유지)")
+
+
 def main():
     mode = sys.argv[1] if len(sys.argv) > 1 else "auto"
     as_of = datetime.datetime.now(datetime.timezone(datetime.timedelta(hours=9))).strftime("%Y-%m-%d %H:%M")
@@ -665,6 +689,9 @@ def main():
     if mode == "quant":
         data, targets = pick_targets()
         collect_all_quant(targets, data)
+        return
+    if mode == "patch":
+        patch_quant(as_of)
         return
 
     import anthropic
