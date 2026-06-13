@@ -1,169 +1,159 @@
 {
  "title": {
-  "ko": "AI 메모리 슈퍼사이클 한복판의 삼성전자",
-  "en": "Samsung at the Center of the AI Memory Supercycle"
+  "ko": "AI 메모리 슈퍼사이클의 정점에 선 삼성전자",
+  "en": "Samsung at the Peak of the AI Memory Supercycle"
  },
  "lead": {
-  "ko": "AI발 메모리 수요 폭증으로 1분기 분기 영업이익이 작년 연간 이익을 넘어섰으나, HBM 주도권과 비메모리 회복은 여전히 입증 과제로 남아 있다.",
-  "en": "An AI-driven memory boom pushed Q1 operating profit above the entire prior-year figure, yet HBM leadership and a non-memory turnaround remain to be proven."
+  "ko": "AI발 메모리 가격 급등과 HBM4 양산 진입으로 2026년 1분기 사상 최대 실적을 기록했으나, 사이클 변동성과 세트 부문 원가 부담이 균형 변수로 남아 있습니다.",
+  "en": "Samsung posted record quarterly results in Q1 2026 on the AI-driven memory price surge and the start of HBM4 mass production, while cyclical volatility and device-segment cost pressure remain key offsetting variables."
  },
  "keypoints": [
   {
-   "ko": "2026년 1분기 매출 133.9조원·영업이익 57.2조원으로 분기 최대 실적을 경신했고, 영업이익 한 분기 수치가 2025년 연간 영업이익(43.6조원)을 웃돌았다.",
-   "en": "Q1 2026 set records with KRW 133.9tn revenue and KRW 57.2tn operating profit, the quarterly profit alone exceeding full-year 2025 operating profit of KRW 43.6tn."
+   "ko": "2026년 1분기 연결 매출 133.9조원·영업이익 57.2조원으로 분기 기준 역대 최대를 경신했으며, 직전 분기(매출 93.8조·영업이익 20.1조) 대비 대폭 확대됐습니다.",
+   "en": "Q1 2026 consolidated revenue of KRW 133.9tn and operating profit of KRW 57.2tn set quarterly records, far above the prior quarter (KRW 93.8tn revenue, KRW 20.1tn operating profit)."
   },
   {
-   "ko": "실적은 반도체(DS)부문이 견인했으며, 1분기 DS 매출 81.7조원·영업이익 53.7조원으로 전사 영업이익의 약 94%를 차지했다.",
-   "en": "Results were led by the DS chip division, which posted KRW 81.7tn revenue and KRW 53.7tn operating profit in Q1, about 94% of company-wide operating profit."
+   "ko": "실적 개선은 AI 인프라 투자에 따른 HBM·서버 D램·서버 SSD 수요 폭증과 메모리 가격 급등을 등에 업은 DS(반도체) 부문이 견인했습니다.",
+   "en": "The surge was led by the DS (semiconductor) division, riding explosive demand for HBM, server DRAM and server SSD plus soaring memory prices amid AI infrastructure investment."
   },
   {
-   "ko": "AI 추론 수요 확대로 D램·낸드·HBM이 공급자 우위 시장에 진입했고, 회사는 HBM 물량 완판과 일부 장기공급계약 체결을 확인했다.",
-   "en": "AI inference demand turned DRAM, NAND and HBM into a seller's market; the company confirmed its HBM capacity is sold out and that some long-term supply agreements have been signed."
+   "ko": "삼성전자는 업계 최초로 HBM4를 엔비디아에 양산 출하했으며, 2026년 물량은 사실상 완판되고 일부 고객과 장기공급계약을 체결했다고 밝혔습니다.",
+   "en": "Samsung began industry-first HBM4 mass-production shipments to Nvidia, says its 2026 volume is effectively sold out, and has signed long-term supply agreements with some customers."
   },
   {
-   "ko": "HBM 시장에서는 SK하이닉스가 선두를 유지하고 있어, 삼성전자는 HBM4·HBM4E 양산 성과로 격차 축소를 노리는 추격 국면이다.",
-   "en": "SK hynix retains the HBM lead, leaving Samsung in a catch-up phase that hinges on ramping HBM4 and HBM4E to narrow the gap."
+   "ko": "PER 26.1배·PBR 4.5배로 과거 평균 대비 높은 수준이며, 배당수익률은 0.52%(주당 1,668원)입니다.",
+   "en": "The stock trades at a PER of 26.1x and PBR of 4.5x—above historical averages—with a dividend yield of 0.52% (KRW 1,668 per share)."
   },
   {
-   "ko": "파운드리는 2나노 수율·수주와 미국 테일러 팹 가동이 변수로, 회사는 흑자 전환 시점을 앞당기는 것을 목표로 하고 있다.",
-   "en": "In foundry, 2nm yield/orders and the U.S. Taylor fab ramp are key swing factors, with the company aiming to pull forward its breakeven timeline."
+   "ko": "메모리 가격 상승이 PC·스마트폰 등 세트 수요와 원가에 양날의 칼로 작용하며, 사이클 둔화·관세·지정학 리스크가 하방 요인으로 상존합니다.",
+   "en": "Rising memory prices cut both ways for PC and smartphone demand and costs, while cycle deceleration, tariffs and geopolitical risks remain downside factors."
   }
  ],
  "business": {
-  "ko": "삼성전자는 반도체(DS), 디바이스경험(DX), 삼성디스플레이, 하만을 축으로 하는 종합 전자기업이다. DS부문은 메모리(D램·낸드), 시스템LSI, 파운드리로 구성되며 현재 실적의 절대적 비중을 차지한다. \n디바이스솔루션(DS) 부문은 매출 81조7000억원 영업이익 53조7000억원을 기록하며 전사 영업이익의 약 94%를 차지했다.\n 메모리 내에서도 비중이 큰데, \n2025년 4분기 DS 부문에서 44조원의 매출을 거뒀고, 이 중 37조1000억원가량이 메모리 사업부에서 발생한 매출로 전체의 약 85% 수준이다.\n DX부문은 갤럭시 스마트폰(MX), TV·영상디스플레이(VD), 생활가전을 포함하며, 메모리 원가 상승이 세트 사업의 비용 부담으로 작용하는 구조다. HBM·고용량 서버 D램은 엔비디아·AMD·구글·브로드컴 등 글로벌 빅테크를 주요 고객으로 한다. \n삼성전자는 현재 엔비디아 외에도 AMD·브로드컴·구글 등 주요 빅테크 기업에 HBM3E를 공급하고 있다.\n 파운드리는 글로벌 1위 TSMC와 격차가 큰 후발 주자로, \n2025년 3분기 TSMC가 71.0%의 점유율을 차지하는 동안 삼성은 6.8% 수준에 머무르고 있다.\n 즉 삼성전자의 이익 체력은 메모리 사이클에 크게 연동되며, 비메모리(시스템LSI·파운드리)는 구조적 회복이 진행 중인 상황이다.",
-  "en": "Samsung Electronics is a diversified electronics group built around its DS (semiconductor), DX (Device eXperience), Samsung Display, and Harman segments. The DS division comprises memory (DRAM/NAND), System LSI, and foundry, and currently dominates earnings. The DS division posted KRW 81.7tn in revenue and KRW 53.7tn in operating profit, accounting for about 94% of company-wide operating profit. Memory weighs heavily within DS: DS generated KRW 44tn of revenue in Q4 2025, of which roughly KRW 37.1tn came from the memory business, about 85% of the total. The DX division spans Galaxy smartphones (MX), TVs and displays (VD), and home appliances, where rising memory costs pressure set-product margins. HBM and high-capacity server DRAM serve global big-tech customers such as Nvidia, AMD, Google, and Broadcom. Samsung currently supplies HBM3E not only to Nvidia but also to major big-tech firms including AMD, Broadcom, and Google. Its foundry remains a distant challenger to global leader TSMC: in Q3 2025 TSMC held a 71.0% share while Samsung stood at around 6.8%. In short, Samsung's earnings power is highly geared to the memory cycle, while non-memory (System LSI and foundry) is still in a structural recovery."
+  "ko": "삼성전자는 반도체(DS), 디바이스경험(DX), 디스플레이(SDC), 하만으로 구성된 종합 전자기업입니다. DS부문은 메모리(D램·낸드·HBM), 시스템LSI, 파운드리를 포괄하며 현재 실적과 기업가치의 중심축입니다. 2026년 1분기 실적 개선을 이끈 것은 반도체(DS) 부문으로, DS 부문 매출은 81조7000억원, 영업이익은 53조7000억원, 영업이익률은 66%에 달했습니다(삼성전자·언론, 2026-04). DX부문은 스마트폰(MX)·TV·생활가전을 담당하며, 2026년 1분기 플래그십 스마트폰 출시로 매출이 전분기 대비 증가했으나 원가 부담이 가중됐습니다. 메모리 사업에서는 업계 최초로 HBM4와 차세대 저전력 메모리 모듈 SOCAMM2를 동시 양산하고 PCIe Gen6 SSD를 개발했습니다. 파운드리는 2나노 공정을 중심으로 고성능 컴퓨팅(HPC) 수주를 확대하고 있으며, 광통신 모듈 대형 업체 수주에 성공해 실리콘 포토닉스 사업 기반을 확보했습니다. 주요 고객은 엔비디아·AMD·구글 등 글로벌 빅테크이며, HBM 시장에서는 SK하이닉스·마이크론과 경쟁합니다. 종합반도체기업(IDM)으로서 메모리·로직·파운드리·첨단 패키징을 아우르는 '토털 솔루션' 역량이 차별화 포인트로 부각되고 있습니다.",
+  "en": "Samsung Electronics is a diversified electronics company comprising semiconductors (DS), Device eXperience (DX), Display (SDC) and Harman. The DS division spans memory (DRAM, NAND, HBM), System LSI and foundry, and is the core driver of current earnings and valuation. The DS division led the Q1 2026 earnings improvement, posting revenue of KRW 81.7tn, operating profit of KRW 53.7tn and an operating margin of 66% (Samsung/media, Apr 2026). The DX division covers smartphones (MX), TVs and home appliances; in Q1 2026 its revenue rose quarter-on-quarter on a flagship smartphone launch even as cost burdens intensified. In memory, Samsung became the first in the industry to simultaneously mass-produce HBM4 and the next-generation low-power module SOCAMM2, and developed a PCIe Gen6 SSD. The foundry business is expanding high-performance computing (HPC) orders centered on its 2nm process, and it won a large optical-communication module order, securing a base for its silicon photonics business. Key customers include global big-tech firms such as Nvidia, AMD and Google, and it competes with SK hynix and Micron in HBM. As an integrated device manufacturer (IDM), its 'total solution' capability spanning memory, logic, foundry and advanced packaging is increasingly emphasized as a differentiator."
  },
  "earnings": {
-  "ko": "2026년 1분기 연결 매출은 133조8734억원, 영업이익은 57조2328억원으로 분기 기준 사상 최대를 기록했다. 이 영업이익 한 분기 수치는 2025년 연간 영업이익(43조6010억원)을 단숨에 넘어선 규모다. 분기 추이를 보면 2025년 1분기 영업이익 6조6853억원, 2분기 4조6761억원으로 저점을 찍은 뒤 3분기 12조1661억원, 4분기 20조737억원으로 가파르게 회복했고, 2026년 1분기에 57조2328억원으로 점프했다. 매출액은 133조 8,734억 원으로 전분기 대비 42.7%, 전년 동기 대비 69.2% 증가하였으며, 영업이익은 57조 2,328억 원으로 전분기 대비 185.1%, 전년 동기 대비 756.1% 급증하였다. 영업이익률은 43.0%로, 2025년 4분기의 21.4%에서 불과 한 분기 만에 두 배 이상 도약했다. 지배주주 순이익은 2025년 1분기 8조284억원에서 2026년 1분기 47조1012억원으로 급증했다. 개선의 핵심은 메모리 가격 급등과 고부가 제품 비중 확대로, 서버 중심 판매 전략을 통해 D램은 전분기 대비 10% 이상, 낸드는 20% 이상 판매가 증가하며 분기 기준 최대 실적을 기록했다. 연간으로도 매출은 2023년 258.9조원에서 2024년 300.9조원, 2025년 333.6조원으로 늘었고 영업이익률은 2023년 2.5%, 2024년 10.9%, 2025년 13.1%로 회복 추세였다. 다만 노사가 협의 중인 상여금 충당은 조건과 규모가 확정되지 않아 1분기 실적에 반영되지 않았으며, 향후 2분기 반영 여부와 규모가 결정될 예정이라는 점은 일회성 비용 변수로 남는다.",
-  "en": "Q1 2026 consolidated revenue reached KRW 133.8734tn and operating profit KRW 57.2328tn, both quarterly records. That single quarter's operating profit alone surpassed full-year 2025 operating profit of KRW 43.6010tn. On a quarterly path, operating profit bottomed at KRW 6.6853tn in Q1 2025 and KRW 4.6761tn in Q2, then recovered sharply to KRW 12.1661tn in Q3 and KRW 20.0737tn in Q4, before jumping to KRW 57.2328tn in Q1 2026. Revenue of KRW 133.8734tn rose 42.7% quarter-on-quarter and 69.2% year-on-year, while operating profit of KRW 57.2328tn surged 185.1% sequentially and 756.1% year-on-year. The operating margin reached 43.0%, more than doubling from 21.4% in Q4 2025 in just one quarter. Owner's net profit jumped from KRW 8.0284tn in Q1 2025 to KRW 47.1012tn in Q1 2026. The key driver was surging memory prices and a richer product mix: through a server-focused sales strategy, DRAM volumes rose more than 10% and NAND more than 20% sequentially, setting quarterly records. On an annual basis, revenue grew from KRW 258.9tn in 2023 to KRW 300.9tn in 2024 and KRW 333.6tn in 2025, with operating margin recovering from 2.5% (2023) to 10.9% (2024) and 13.1% (2025). However, a bonus provision under labor-management negotiation, with terms and size not yet fixed, was not reflected in Q1 results, leaving its potential Q2 booking as a one-off cost variable."
+  "ko": "2026년 1분기 연결 매출은 133.9조원, 영업이익은 57.2조원으로 분기 기준 역대 최대를 기록했습니다. 직전 분기인 2025년 4분기(매출 93.8조원·영업이익 20.1조원) 대비 매출은 약 43%, 영업이익은 185% 가까이 급증했으며, 지배주주 순이익도 19.3조원에서 47.1조원으로 확대됐습니다. 전년 동기인 2025년 1분기(매출 79.1조원·영업이익 6.69조원·순이익 8.03조원)와 비교하면 증가폭이 더욱 두드러집니다. 회사는 전사 매출이 전분기 대비 40조원 증가했고 영업이익은 37.2조원 증가했다고 밝혔습니다. 분기 흐름을 보면 2025년 2분기 영업이익 4.68조원으로 저점을 찍은 뒤 3분기 12.17조원, 4분기 20.07조원, 2026년 1분기 57.23조원으로 가파른 우상향 궤적을 그렸습니다. 메모리는 시장 가격 상승 효과와 함께 제한된 공급 내에서 AI용 고부가가치 제품 수요에 대응하며 역대 최대 분기 실적을 달성했습니다. 연간으로는 2025년 매출 333.6조원·영업이익 43.6조원·영업이익률 13.1%·ROE 10.4%로, 영업이익률 2.5%에 그쳤던 2023년 메모리 불황기에서 완전히 벗어났습니다. 다만 노사 상여금 협상이 진행 중이어서 상여금 충당이 1분기 실적에 반영되지 않았고, 협상 결과에 따라 2분기부터 충당될 수 있다는 점은 향후 비용 변수로 유의할 필요가 있습니다.",
+  "en": "Q1 2026 consolidated revenue reached KRW 133.9tn and operating profit KRW 57.2tn, both quarterly records. Versus the prior quarter (Q4 2025: KRW 93.8tn revenue, KRW 20.1tn operating profit), revenue jumped about 43% and operating profit nearly 185%, while owner net income expanded from KRW 19.3tn to KRW 47.1tn. The increase is even starker against Q1 2025 (revenue KRW 79.1tn, operating profit KRW 6.69tn, net income KRW 8.03tn). The company said group revenue rose KRW 40tn quarter-on-quarter and operating profit rose KRW 37.2tn. Tracing the quarterly path, operating profit bottomed at KRW 4.68tn in Q2 2025, then climbed to KRW 12.17tn in Q3, KRW 20.07tn in Q4 and KRW 57.23tn in Q1 2026—a steep upward trajectory. Memory achieved a record quarterly result by responding to demand for high-value AI products within limited supply, aided by rising market prices. For the full year 2025, revenue was KRW 333.6tn, operating profit KRW 43.6tn, operating margin 13.1% and ROE 10.4%, a full recovery from the 2023 memory downturn when the operating margin was just 2.5%. However, bonus negotiations with labor were ongoing, so a bonus provision was not reflected in Q1 results and may be booked from Q2 depending on the outcome—a cost variable worth monitoring."
  },
  "industry": {
-  "ko": "메모리 산업은 AI 인프라 투자 확대로 과거와 결이 다른 호황 국면에 진입했다. 대신증권은 2026년 메모리반도체 시장이 전년 대비 157% 성장하고, 서버 중심의 실수요 폭증과 공급의 제한적 성장으로 수요-공급 괴리율이 역사상 최대 수준으로 확대됐다고 진단했다. 가격 측면에서도 2분기 범용 D램과 낸드 가격은 전 분기보다 각각 50% 이상, 70% 이상 상승한 것으로 추정된다. HBM은 사이클의 핵심 변수로 부상했는데, 현재까지 시장 주도권은 SK하이닉스가 쥐고 있다. 2025년 HBM 시장 점유율은 SK하이닉스 61%, 마이크론 22%, 삼성전자 18%로 추정됐고, 2026년에도 SK하이닉스가 매출 기준 점유율 50%를 유지하며 1위를 이어갈 것으로 전망됐다. 삼성전자는 2026년 HBM 매출 24조원, 출하량 112억Gb, 매출 기준 점유율 29%를 기록할 것으로 추정됐다. 삼성전자는 세계 최대 메모리 생산능력을 보유해 범용 D램·낸드 가격 상승의 수혜를 가장 크게 받는 위치에 있는 반면, HBM 고부가 영역에서는 추격자 입장이라는 양면성을 갖는다. 시장에서는 SK하이닉스의 선두 지위가 당장 흔들릴 가능성은 크지 않으며, 삼성전자의 HBM4 조기 진입으로 경쟁 강도는 높아지겠지만 고객사 내 1등 지위에는 변화가 없을 것으로 본다.",
-  "en": "The memory industry has entered a boom different in character from past cycles, fueled by AI infrastructure investment. Daishin Securities estimates the memory market will grow 157% in 2026, with a surge in server-led real demand against limited supply growth widening the supply-demand gap to a historic high. On pricing, Q2 commodity DRAM and NAND prices are estimated to have risen more than 50% and more than 70% quarter-on-quarter, respectively. HBM has emerged as the cycle's pivotal variable, and market leadership so far rests with SK hynix. 2025 HBM share was estimated at 61% for SK hynix, 22% for Micron, and 18% for Samsung, with SK hynix expected to retain the No. 1 spot at 50% revenue share in 2026. Samsung is projected to record KRW 24tn in HBM revenue, 11.2 billion Gb of shipments, and a 29% revenue share in 2026. With the world's largest memory capacity, Samsung benefits most from rising commodity DRAM/NAND prices, yet remains a challenger in the high-value HBM segment — a double-edged position. The market sees little near-term threat to SK hynix's lead; while Samsung's early HBM4 entry will intensify competition, the leader's No. 1 status within customers is expected to hold."
+  "ko": "메모리 산업은 AI 인프라 투자가 주도하는 강세 국면에 진입했습니다. 북미 클라우드 사업자들의 AI 추론용 인프라 도입 가속화로 2026년 2분기 범용 D램 계약가는 전 분기 대비 58~63%, 낸드는 70~75% 급등할 것으로 예상됐습니다(트렌드포스 인용 보도, 2026-04). 이번 사이클의 특징은 HBM뿐 아니라 범용 D램·낸드까지 전 제품군에서 가격이 동반 상승한다는 점입니다. 제조사들이 수익성이 높은 HBM과 AI 서버용 고용량 모듈에 생산을 집중하면서 범용 D램 생산능력이 위축되는 '구축 효과'가 발생하고 있습니다. HBM 경쟁 구도에서는 SK하이닉스가 선두를 지켜왔으나 판도가 흔들리고 있습니다. SK하이닉스는 2025년 2분기 기준 HBM 시장의 62%를, 마이크론이 21%, 삼성이 17%를 차지했습니다(카운터포인트·Astute, 2025). 삼성전자가 엔비디아 품질 테스트에서 가장 높은 점수를 받았다는 보도가 나오면서 삼성 AI 메모리에 대한 시장 평가가 빠르게 호전됐습니다. 다만 공급 측면에서 2026년 DRAM 생산량은 전년 대비 약 24% 증가할 것으로 예상되나 실제 수요를 충족하기까지 시간이 필요한 것으로 분석됩니다. 반면 메모리 가격 급등은 PC·스마트폰 등 세트 수요를 위축시킬 수 있어, IDC는 메모리 수급 불균형 여파로 2026년 글로벌 PC 출하량이 11.3% 줄어들 것으로 전망했습니다.",
+  "en": "The memory industry has entered an upswing driven by AI infrastructure investment. As North American cloud providers accelerate adoption of AI inference infrastructure, Q2 2026 commodity DRAM contract prices were expected to surge 58–63% quarter-on-quarter and NAND 70–75% (reports citing TrendForce, Apr 2026). A defining feature of this cycle is that prices are rising across the entire product range—not only HBM but also commodity DRAM and NAND. As manufacturers concentrate output on higher-margin HBM and high-capacity AI-server modules, a 'crowding-out' effect is shrinking commodity DRAM capacity. In HBM, SK hynix has held the lead but the landscape is shifting. As of Q2 2025, SK hynix held 62% of the HBM market, Micron 21% and Samsung 17% (Counterpoint/Astute, 2025). Reports that Samsung scored highest in Nvidia's quality tests have rapidly improved market perceptions of its AI memory. On supply, 2026 DRAM output is expected to grow about 24% year-on-year, but analysts say it will take time to meet actual demand. Conversely, surging memory prices could curb device demand: IDC forecast global PC shipments to fall 11.3% in 2026 due to memory supply-demand imbalance."
  },
  "outlook": {
-  "ko": "회사와 업계 모두 단기적으로 호황 지속을 전망하고 있다. 회사 측은 공급 부족을 우려한 기업들로부터 2027년 수요까지 미리 접수되고 있으며, 현재 접수된 수요만 보더라도 내년도 수급 격차는 2026년보다 훨씬 더 심화될 것으로 보인다고 분석했다. HBM은 이미 공급 가능한 물량이 모두 판매된 상태로, 시장 전반에 공급 타이트 현상이 지속되고 있다는 설명이다. 또한 AI 수요 확대에 따라 주요 고객사들이 중장기 물량 확보를 요청하면서, 회사는 공급 가능한 범위 내에서 장기공급계약을 추진 중이며 일부 고객과는 이미 계약을 체결했다. 신제품 측면에서 회사는 기술 리더십을 공고히 하기 위해 HBM4E 첫 샘플도 공급할 예정이며, 하반기 출시 예정인 신규 GPU 및 CPU용 초기 메모리 수요에도 적극 대응할 계획이다. 파운드리에서는 삼성전자 미국법인 부사장이 고객들이 내년부터 테일러팹에서 생산을 시작할 예정이며 준비를 마쳤다고 밝혔고, 파운드리 부문 흑자 전환 목표 시기를 기존 2027년에서 2026년으로 앞당긴 것으로 알려졌다. 다만 하반기에는 글로벌 관세 및 지정학적 불확실성 등 다양한 리스크가 지속되고, AI발 반도체 수요 증가와 IT 제품 원가 상승이 상충되는 경영환경이 예상된다.",
-  "en": "Both the company and the industry expect the boom to persist near term. The company said firms worried about shortages are already booking demand into 2027, and that even on currently received orders the supply-demand gap next year looks set to widen far more than in 2026. HBM is already sold out of available volume, with tight supply persisting across the market. Moreover, as AI demand expands, major customers are requesting mid-to-long-term volume, and the company is pursuing long-term supply agreements within its available capacity and has already signed with some customers. On new products, the company plans to supply its first HBM4E samples to reinforce technology leadership, and to actively address initial memory demand for new GPUs and CPUs launching in the second half. In foundry, a Samsung U.S. executive said customers will begin production at the Taylor fab from next year and that the company is ready, while the foundry breakeven target is reportedly pulled forward from 2027 to 2026. That said, the second half is expected to carry risks such as global tariffs and geopolitical uncertainty, alongside a conflicting environment of rising AI chip demand and higher IT-product costs."
+  "ko": "회사는 수요 강세가 지속될 것으로 보고 있습니다. 삼성전자는 공급 부족을 우려한 기업들로부터 2027년 수요까지 미리 접수되고 있으며, 내년도 수급 격차는 2026년보다 더 심화될 것으로 분석했습니다. 컨퍼런스콜에서 일부 고객은 2027년 수요까지 선제 확보에 나서고 있고, HBM은 이미 공급 가능 물량이 모두 판매됐다고 밝혔습니다. AI 수요 확대로 주요 고객사들이 중장기 물량 확보를 요청하고 있어 회사는 공급 가능 범위 내에서 장기공급계약을 추진 중이며 일부 고객과는 이미 계약을 체결했습니다. 제품 로드맵 측면에서 메모리는 기술 리더십을 위해 HBM4E 첫 샘플을 공급하고, 하반기 출시 예정인 신규 GPU·CPU용 초기 메모리 수요에도 대응할 계획입니다. 파운드리는 선단공정 제품 수요 증가로 실적 개선이 기대되며 2나노 기술력을 바탕으로 선단공정 수주를 이어갈 예정입니다. 증권가 전망도 상향되고 있는데, 에프앤가이드 집계 기준 2026년 2분기 컨센서스는 매출 166.8조원, 영업이익 86.2조원입니다(2026-06-09 기준). 다만 회사는 하반기 글로벌 관세 및 지정학적 불확실성이 지속되고, AI발 반도체 수요 증가와 IT 제품 원가 상승이 상충되는 경영환경을 전망했습니다.",
+  "en": "The company expects demand strength to persist. Samsung said firms worried about shortages are pre-booking even 2027 demand, and that next year's supply-demand gap will widen further than in 2026. On its earnings call it noted some customers are securing 2027 demand in advance and that all available HBM volume has already been sold. As AI demand expands, major customers are requesting medium- to long-term volume, so the company is pursuing long-term supply agreements within its available capacity and has already signed some. On the product roadmap, memory plans to supply its first HBM4E sample to cement technology leadership and to address early memory demand for new GPUs and CPUs launching in the second half. In foundry, earnings are expected to improve on rising demand for advanced-node products, with continued advanced-node order wins based on 2nm capability. Sell-side estimates are also being raised: per FnGuide, the Q2 2026 consensus is revenue of KRW 166.8tn and operating profit of KRW 86.2tn (as of Jun 9, 2026). Still, the company expects continued global tariff and geopolitical uncertainty in the second half, and a conflicting environment of rising AI-driven chip demand alongside rising IT-product costs."
  },
  "valuation_comment": {
-  "ko": "제공된 자체 산출 기준 현재가 322,500원에서 PER은 약 26.1배(EPS 12,372원), PBR은 약 4.58배(BPS 70,366원)다. 삼성전자는 과거 반도체 사이클에서 흔히 PER 한 자릿수~10배 초중반, PBR 1~2배 밴드에서 거래돼 왔다는 점과 비교하면, 현재 멀티플은 그 범위를 크게 웃돈다. 이는 이익이 사이클 저점을 막 통과한 회복 초기 국면에서 최근 4개 분기 누적 이익(지배주주 약 83.3조원)이 아직 향후 추정 이익을 충분히 반영하지 못해 나타나는 현상으로 해석할 수 있다. 배당 측면에서는 KRW 1,668원의 주당배당금과 약 0.52%의 배당수익률로, 주가 상승에 따라 배당수익률 자체는 낮은 수준이다. 주가는 연초 대비 약 41% 이상 상승한 수준으로, 실적 개선 기대가 주가에 상당 부분 선반영된 상황으로 해석되기도 한다. 멀티플의 정당성은 향후 이익이 시장 기대만큼 실제로 실현되는지에 좌우되는 구간이다.",
-  "en": "At the stated price of KRW 322,500 on the provided in-house basis, PER is about 26.1x (EPS KRW 12,372) and PBR about 4.58x (BPS KRW 70,366). Against past semiconductor cycles, when Samsung often traded in a single-digit to mid-teens PER and a 1–2x PBR band, the current multiples sit well above that range. This can be read as a function of the early-recovery phase just past the cycle trough, where trailing four-quarter profit (owner's, about KRW 83.3tn) does not yet fully reflect forward earnings estimates. On dividends, the KRW 1,668 per-share payout and roughly 0.52% yield are low in absolute terms as the share price has risen. The stock is up more than about 41% year-to-date, which some interpret as earnings-improvement expectations being substantially pre-reflected in the price. The justification for the multiples depends on whether forward earnings are realized as much as the market expects."
+  "ko": "현재가 322,500원 기준 시가총액은 약 1,885.4조원입니다. 제공된 지표상 PER은 26.1배(EPS 12,372원), PBR은 4.5배(BPS 71,676원)로, 메모리 불황기 적자·저이익 국면을 제외한 과거 통상 밴드(대체로 PER 10배 안팎, PBR 1~2배 수준)와 비교하면 상당히 높은 수준입니다. 이는 최근 4개 분기 이익이 빠르게 늘어난 가운데 시장이 향후 이익 성장을 선반영하고 있음을 시사합니다. 배당 측면에서는 배당수익률 0.52%, 주당배당금 1,668원(KRW, KRW 공식값)으로 성장주 성격이 강해진 모습입니다. 참고로 미래에셋증권은 향후 3년 평균 ROE를 46%로 추정하며 이를 높은 PBR의 근거로 제시했는데, 이는 과거 10년 평균 ROE 13%를 크게 웃도는 수치입니다. 다만 이러한 높은 멀티플은 이익이 사이클 정점 부근에 형성될 경우 변동성이 커질 수 있어, 가격 자체의 적정성은 향후 이익 지속성에 대한 판단에 따라 달라집니다.",
+  "en": "At the current price of KRW 322,500, the market cap is about KRW 1,885.4tn. On the provided metrics, the PER is 26.1x (EPS KRW 12,372) and PBR is 4.5x (BPS KRW 71,676)—markedly higher than the typical historical band (broadly around 10x PER and 1–2x PBR, excluding loss-making or low-profit downturn phases). This suggests the market is pricing in future earnings growth amid the rapid profit increase over the last four quarters. On dividends, the yield is 0.52% with a dividend per share of KRW 1,668 (official KRW figure), reflecting a more growth-oriented profile. For reference, Mirae Asset Securities estimated an average ROE of 46% over the next three years as justification for the high PBR, far above the 13% ten-year average ROE. Note, however, that such high multiples can be volatile if earnings prove to be near a cyclical peak, so the appropriateness of the price itself depends on one's view of earnings durability."
  },
  "bull": [
   {
    "title": {
-    "ko": "AI발 메모리 공급 부족과 가격 상승",
-    "en": "AI-driven memory shortage and price gains"
+    "ko": "AI 메모리 수요 폭증과 공급자 우위",
+    "en": "Surging AI memory demand and supplier leverage"
    },
    "body": {
-    "ko": "AI 추론 인프라 확대로 D램·낸드·HBM이 공급자 우위 시장에 진입했다. 아마존, 마이크로소프트, 구글, 메타 등 미국 빅테크 기업들은 높아진 원가 부담을 수용하면서 대규모 선수금 지급 조건까지 제시하며 삼성전자와 SK하이닉스의 물량 확보에 적극적으로 나서고 있다. 삼성전자는 세계 최대 메모리 생산능력을 보유해 범용 가격 상승의 수혜를 가장 크게 누릴 수 있는 구조다.",
-    "en": "Expanding AI inference infrastructure has turned DRAM, NAND, and HBM into a seller's market. U.S. big-tech firms such as Amazon, Microsoft, Google, and Meta are accepting higher costs and even offering large prepayments to secure volume from Samsung and SK hynix. With the world's largest memory capacity, Samsung is structurally positioned to benefit most from rising commodity prices."
+    "ko": "AI 데이터센터 투자 확대로 HBM·서버 D램·서버 SSD 수요가 폭증하며 메모리 시장이 판매자 우위로 전환됐습니다. 1분기 AI 확산 영향으로 HBM·서버 D램·서버 SSD 수요가 크게 늘었고 공급 확대 여력이 제한적인 상황에서 공급 부족이 심화됐습니다. 가격 상승과 물량 확보가 동시에 이익에 기여하는 국면입니다.",
+    "en": "Expanding AI datacenter investment has triggered explosive demand for HBM, server DRAM and server SSD, shifting the memory market to a seller's market. In Q1, AI proliferation sharply raised demand for HBM, server DRAM and server SSD, and the shortage deepened amid limited capacity to expand supply. Both rising prices and secured volumes are contributing to profit simultaneously."
    }
   },
   {
    "title": {
-    "ko": "장기공급계약을 통한 실적 가시성",
-    "en": "Earnings visibility via long-term supply deals"
+    "ko": "HBM4 기술 선도와 엔비디아 공급",
+    "en": "HBM4 technology leadership and Nvidia supply"
    },
    "body": {
-    "ko": "고객사들이 공급 부족을 우려해 중장기 물량을 선제 확보하려는 움직임이 뚜렷하다. 최근 들어 반도체 부족을 우려한 하이퍼스케일러들이 삼성전자와 3~5년 단위의 장기 공급 계약(LTA)을 체결하려는 움직임을 보이고 있다. 회사는 일부 고객과 이미 계약을 체결했다고 밝혔으며, 이러한 계약은 변동성 큰 메모리 사업의 수요 가시성과 가격 안정성을 높이는 요인이다.",
-    "en": "Customers are clearly moving to lock in mid-to-long-term volume amid shortage fears. Recently, hyperscalers worried about chip shortages have been seeking 3–5 year long-term agreements (LTAs) with Samsung. The company says it has already signed with some customers, and such deals improve demand visibility and price stability in a historically volatile memory business."
+    "ko": "삼성은 업계 최초로 HBM4를 엔비디아에 양산 출하했습니다. 파운드리·메모리 임원은 엔비디아에 대한 프리미엄 HBM4 공급을 '압도적으로 늘린다'는 기조이며, 100% 고성능 제품으로 공급한다고 밝혔습니다(GTC 2026). 10나노급 6세대(1c) D램과 자사 4나노 베이스 다이를 적용해 납기 경쟁력을 높였습니다.",
+    "en": "Samsung became the first in the industry to ship HBM4 in volume to Nvidia. Foundry and memory executives said the supply of premium HBM4 to Nvidia would be expanded 'overwhelmingly,' delivered entirely as high-performance product (GTC 2026). It applied 10nm-class 6th-gen (1c) DRAM and an in-house 4nm base die to strengthen delivery competitiveness."
    }
   },
   {
    "title": {
-    "ko": "파운드리 회복과 테일러 팹 가동",
-    "en": "Foundry recovery and Taylor fab ramp"
+    "ko": "장기공급계약을 통한 가시성 확보",
+    "en": "Visibility secured via long-term supply deals"
    },
    "body": {
-    "ko": "장기 부진했던 파운드리에서 회복 신호가 나타나고 있다. 2026년 1분기 삼성 파운드리의 가동률이 80%를 넘어 1년여 만에 최고 수준을 기록했으며, 이는 분기 흑자 전환 가능성을 높이는 신호로 받아들여지고 있다. TSMC의 2나노 생산능력이 2028년까지 완판된 것으로 알려지면서 대안 공급처로서 삼성전자 2나노에 기회가 열릴 수 있다.",
-    "en": "The long-struggling foundry is showing recovery signals. Samsung foundry utilization exceeded 80% in Q1 2026, the highest in over a year, seen as raising the odds of a quarterly turn to profit. With TSMC's 2nm capacity reportedly sold out through 2028, an opening may emerge for Samsung's 2nm as an alternative supplier."
+    "ko": "빅테크들이 물량 확보를 위해 장기 계약에 나서면서 실적 가시성이 높아지고 있습니다. 회사는 공급 가능 범위 내에서 장기공급계약을 추진 중이며 일부 고객과 이미 계약을 체결했고, 장기계약이 고객·공급자 모두의 사업 안정성과 가시성을 높일 것으로 기대된다고 밝혔습니다. 빅테크들은 대규모 선수금 지급 조건까지 제시하며 물량 확보에 나서고 있습니다.",
+    "en": "As big-tech firms move to lock in volume via long-term contracts, earnings visibility is improving. The company is pursuing long-term supply agreements within its available capacity, has already signed some, and expects such deals to enhance business stability and visibility for both sides. Big-tech firms are even offering large upfront-payment terms to secure volume."
    }
   }
  ],
  "bear": [
   {
    "title": {
-    "ko": "HBM 주도권 열위",
-    "en": "Lagging HBM leadership"
+    "ko": "사이클 둔화 및 가격 정점 우려",
+    "en": "Concerns over cycle deceleration and price peak"
    },
    "body": {
-    "ko": "AI 메모리의 핵심인 HBM에서 삼성전자는 여전히 추격자다. 대신증권은 2026년 엔비디아 HBM3E 시장에서 SK하이닉스가 물량 기준 점유율 71%를 차지할 것으로 추정했고, HBM4에서도 SK하이닉스 55%, 삼성전자 28%, 마이크론 17% 구도를 제시했다. HBM4 인증과 양산이 지연될 경우 선두와의 간격이 더 벌어질 수 있다는 분석도 있다.",
-    "en": "In HBM, the core of AI memory, Samsung remains a follower. Daishin Securities estimates SK hynix will hold 71% of the 2026 Nvidia HBM3E market by volume, and projected a 55%/28%/17% split among SK hynix, Samsung, and Micron in HBM4. Analysts also warn that delays in HBM4 qualification and mass production could widen the gap with the leader."
+    "ko": "메모리 가격 상승률 둔화 신호가 나타나고 있습니다. D램 가격 상승률은 1분기 70% 이상에서 2분기 30~50%로 둔화할 것으로 전망됐습니다(시그마인텔). 하반기 인상률은 5~20%로 더 줄고 연말에는 높은 가격에서 안정될 것으로 분석됐습니다. 가격 정점 부근에서 형성된 이익은 변동성 위험을 내포합니다.",
+    "en": "Signs of slowing memory price increases are emerging. DRAM price growth was projected to slow from over 70% in Q1 to 30–50% in Q2 (Sigmaintell). Second-half increases were seen narrowing to 5–20% and stabilizing at high levels by year-end. Profits formed near a price peak carry volatility risk."
    }
   },
   {
    "title": {
-    "ko": "세트(DX) 사업 원가 부담",
-    "en": "Cost pressure on the set (DX) business"
+    "ko": "세트 수요 위축과 원가 부담",
+    "en": "Weakening device demand and cost burden"
    },
    "body": {
-    "ko": "메모리 가격 급등은 자사 세트 사업에는 비용 부담으로 돌아온다. DX부문은 플래그십 스마트폰 출시로 매출이 증가했으나 원가 부담이 가중되는 가운데 고부가가치 제품 중심 판매와 리소스 효율화로 이익 감소를 최소화했다. TV·가전 부문은 원자재 및 반도체 비용 증가로 어려운 환경이 지속되고 있으나, 환율 상승 효과로 적자를 회피한 것으로 추정된다.",
-    "en": "Surging memory prices come back as a cost burden to Samsung's own set business. DX revenue rose on flagship smartphone launches, but amid heavier cost pressure the company minimized profit decline through premium-focused sales and resource efficiency. The TV and appliance segment faces a tough environment from higher raw-material and chip costs, but is estimated to have avoided a loss thanks to favorable currency effects."
+    "ko": "메모리 가격 급등은 자사 세트 사업에 양날의 칼입니다. DX부문은 1분기 원가 부담이 가중됐고, D램 가격 폭등으로 올해 스마트폰 평균 판매가는 7%, TV는 최소 3% 이상 상승할 것으로 예상됩니다. 가격 인상이 PC·스마트폰 수요 둔화로 이어질 경우 DX부문 수익성이 압박받을 수 있습니다.",
+    "en": "Surging memory prices are double-edged for Samsung's own device businesses. The DX division faced intensifying cost burdens in Q1, and soaring DRAM prices are expected to lift average smartphone selling prices by 7% and TVs by at least 3% this year. If price hikes dampen PC and smartphone demand, DX profitability could come under pressure."
    }
   },
   {
    "title": {
-    "ko": "사이클·AI 투자 정점 리스크",
-    "en": "Cycle and AI-capex peak risk"
+    "ko": "HBM 점유율 격차와 수율 검증 과제",
+    "en": "HBM share gap and yield-verification challenge"
    },
    "body": {
-    "ko": "현재 호황은 AI 투자 사이클에 크게 의존하고 있어 그 반락 가능성이 핵심 약세 요인이다. 시장 일각에서는 DDR4 현물 가격의 하락이 전체 수요 둔화를 예고하는 신호가 될 수 있다는 신중론이 제기되며, AI 투자 사이클이 정점을 지나 하강 국면에 진입할 경우 고가 유지 전략이 오히려 재고 부담으로 돌아올 수 있다는 지적이 있다. 메모리 사업 이익 집중도가 높은 만큼 사이클 반전 시 실적 변동성도 크다.",
-    "en": "The current boom leans heavily on the AI investment cycle, making a downturn the key bear case. Some caution that falling DDR4 spot prices could signal broader demand softening, and warn that if the AI investment cycle passes its peak into a downturn, a high-price strategy could rebound as an inventory burden. Given heavy profit concentration in memory, earnings volatility would be large if the cycle reverses."
+    "ko": "삼성은 HBM 시장에서 여전히 후발 위치이며 기술 검증 과제가 남아 있습니다. 2025년 2분기 기준 삼성의 HBM 점유율은 17%로 SK하이닉스(62%)에 크게 뒤졌습니다. 또한 하이브리드 본딩 수율이 10% 안팎으로 낮아, 수율·전력·열 성능을 양산 공정에서 안정적으로 입증하는 것이 핵심 검증 과제로 지적됩니다.",
+    "en": "Samsung remains a follower in HBM and faces technology-verification hurdles. As of Q2 2025 its HBM share was 17%, well behind SK hynix's 62%. Moreover, its hybrid-bonding yield is around 10%, and proving yield, power and thermal performance reliably in mass production is cited as a key verification challenge."
    }
   }
  ],
  "risks": [
   {
    "cat": {
-    "ko": "지정학·관세 리스크",
-    "en": "Geopolitical and tariff risk"
+    "ko": "관세·지정학 리스크",
+    "en": "Tariff and geopolitical risk"
    },
    "body": {
-    "ko": "글로벌 통상 환경과 미·중 갈등이 사업 변수로 작용한다. 회사는 하반기에 글로벌 관세 및 지정학적 불확실성 등 다양한 리스크가 지속될 것으로 전망했다. 반도체 공급망 규제와 수출 통제 변화는 고객 구성과 생산 거점 전략에 직접 영향을 줄 수 있다.",
-    "en": "The global trade environment and U.S.-China tensions are operating variables. The company expects various risks, including global tariffs and geopolitical uncertainty, to persist in the second half. Shifts in chip supply-chain rules and export controls could directly affect customer mix and production-footprint strategy."
+    "ko": "회사 스스로 하반기 경영 리스크로 관세와 지정학적 불확실성을 지목했습니다. 삼성전자는 하반기에 글로벌 관세 및 지정학적 불확실성 등 다양한 리스크가 지속될 것으로 전망했습니다. 미국의 반도체 무역·생산 정책 변화는 글로벌 공급망과 수익성에 직접 영향을 줄 수 있습니다.",
+    "en": "The company itself flagged tariffs and geopolitical uncertainty as second-half risks. Samsung expects various risks, including global tariffs and geopolitical uncertainty, to persist in the second half. Shifts in U.S. semiconductor trade and production policy could directly affect global supply chains and profitability."
    }
   },
   {
    "cat": {
-    "ko": "HBM 인증·양산 실행 리스크",
-    "en": "HBM qualification and execution risk"
+    "ko": "AI 투자 지속성",
+    "en": "Durability of AI investment"
    },
    "body": {
-    "ko": "삼성전자의 HBM 격차 축소는 적시 인증과 양산 실행에 달려 있다. 류형근 연구원은 HBM4 출하가 2026년 2분기부터 본격화하고 3분기에 HBM3E와의 크로스오버가 나타날 것이며, 삼성전자가 이 구간에서 존재감을 확보하면 격차를 줄일 수 있지만 반대로 인증·양산이 지연되면 선두와의 간격이 더 벌어질 수 있다고 예상했다. 수율과 고객 퀄 통과가 핵심 변수다.",
-    "en": "Samsung's ability to narrow the HBM gap hinges on timely qualification and mass-production execution. Analyst Ryu Hyung-geun expects HBM4 shipments to ramp from Q2 2026 with an HBM3E crossover in Q3, noting that if Samsung establishes a presence in this window it can close the gap, but delays in qualification and mass production could widen it instead. Yield and passing customer qualification are the key variables."
+    "ko": "수요의 토대인 AI 인프라 투자가 둔화되면 메모리 수요 전반이 위축될 수 있습니다. AI 인프라 구축 과정의 막대한 자금 조달로 부채 부담이 확대되면 시장 변동성이 커질 수 있고, AI 투자가 기대만큼 경제성을 확보하지 못하면 메모리 수요가 위축될 가능성이 있습니다. 이는 현재 이익 구조의 핵심 전제를 흔들 수 있는 변수입니다.",
+    "en": "If AI infrastructure investment—the foundation of demand—slows, overall memory demand could contract. Expanded debt burdens from the massive financing of AI infrastructure could raise market volatility, and if AI investment fails to achieve expected economics, memory demand could weaken. This is a variable that could undermine a core premise of the current profit structure."
    }
   },
   {
    "cat": {
-    "ko": "이익 변동성·일회성 비용",
-    "en": "Earnings volatility and one-off costs"
+    "ko": "비용·충당금 변수",
+    "en": "Cost and provision variables"
    },
    "body": {
-    "ko": "메모리 가격에 연동된 이익 구조는 양방향 변동성을 내포한다. 또한 노사가 협의 중인 상여금 충당은 조건과 규모가 미확정 상태로 1분기 실적에는 반영되지 않았으며, 향후 협상 결과에 따라 2분기 충당 반영 여부와 규모가 결정될 예정이다. 이러한 일회성 비용은 분기 실적의 변동 요인이 될 수 있다.",
-    "en": "An earnings structure tied to memory prices carries two-way volatility. In addition, a bonus provision under labor-management talks, with terms and size unfixed, was not booked in Q1, and whether and how much to book in Q2 will be decided based on the negotiation outcome. Such one-off costs can swing quarterly results."
+    "ko": "노사 상여금 충당이 향후 분기에 반영될 수 있습니다. 삼성전자는 2026년 2분기부터 영업이익의 10%를 성과급 재원으로 충당할 것으로 알려졌으며, 1분기에 충당하지 않은 재원도 2~4분기에 나눠 반영될 예정입니다. 이는 하반기 이익률에 영향을 줄 수 있는 비용 요인입니다.",
+    "en": "Bonus provisions tied to labor negotiations may be booked in coming quarters. Samsung is reported to set aside 10% of operating profit as a bonus pool from Q2 2026, with the amount not provisioned in Q1 to be spread across Q2–Q4. This is a cost factor that could affect second-half margins."
    }
   }
  ],
  "checkpoints": [
   {
    "when": {
-    "ko": "2026년 7월 1일",
-    "en": "July 1, 2026"
+    "ko": "2026년 7월 초~7월 23일",
+    "en": "Early July to July 23, 2026"
    },
    "what": {
-    "ko": "국내에서 개최하는 SAFE 포럼에서 선단 공정에 대한 상세한 내용을 공개할 것으로 보인다. 2나노 로드맵·고객 확보 진척도를 가늠할 수 있는 자리다.",
-    "en": "A domestic SAFE Forum is expected to disclose details on advanced process nodes. It offers a read on the 2nm roadmap and customer-acquisition progress."
-   }
-  },
-  {
-   "when": {
-    "ko": "2026년 7월 말",
-    "en": "Late July 2026"
-   },
-   "what": {
-    "ko": "2분기 실적 발표와 컨퍼런스콜. 증권가는 추가 개선을 전망하는데, 15개 증권사 컨센서스 기준 삼성전자와 SK하이닉스의 2분기 합산 영업이익이 150조원을 상회할 것으로 전망되고 있어 메모리 가격·믹스와 충당금 반영 여부를 확인할 필요가 있다.",
-    "en": "Q2 earnings release and conference call. The Street expects further improvement, with a 15-brokerage consensus projecting combined Q2 operating profit for Samsung and SK hynix above KRW 150tn, so watch memory price/mix and whether the provision is booked."
+    "ko": "2분기 잠정실적(7월 초) 및 확정 실적·컨퍼런스콜 발표. 컨센서스는 매출 166.8조원·영업이익 86.2조원으로, 실제치와 가이던스가 사이클 강도를 가늠하는 핵심 지표입니다.",
+    "en": "Q2 preliminary results (early July) and confirmed results plus earnings call. Consensus is KRW 166.8tn revenue and KRW 86.2tn operating profit; actuals and guidance are key gauges of cycle strength."
    }
   },
   {
@@ -172,43 +162,47 @@
     "en": "Second half of 2026"
    },
    "what": {
-    "ko": "HBM4E 샘플 공급과 신규 GPU·CPU용 초기 메모리 대응 진척이 관전 포인트다. 올 하반기 출시 예정인 엔비디아 베라 루빈 플랫폼에서 메모리가 차지하는 원가 비중이 블랙웰 대비 5배 이상 확대될 것으로 예상되는 만큼, HBM 채택 성과가 핵심이다.",
-    "en": "Watch progress on HBM4E sample supply and support for new GPU/CPU memory demand. With memory's cost share in Nvidia's H2-launching Vera Rubin platform expected to expand more than fivefold versus Blackwell, HBM adoption outcomes are pivotal."
+    "ko": "HBM4E 양산 일정과 신규 GPU·CPU용 메모리 대응. HBM4E는 3분기 샘플, 4분기 초도 양산 일정이 추진되고 있어 진척도 확인이 필요합니다.",
+    "en": "HBM4E mass-production timeline and memory readiness for new GPUs/CPUs. HBM4E is on a schedule of Q3 samples and Q4 initial mass production, so progress needs to be tracked."
    }
   },
   {
    "when": {
-    "ko": "2026년 말~2027년",
-    "en": "Late 2026 to 2027"
+    "ko": "분기별 메모리 가격 동향",
+    "en": "Quarterly memory price trends"
    },
    "what": {
-    "ko": "테일러 팹 가동과 양산 일정 점검. 회사는 테일러 1공장의 2026년 가동 및 2027년 양산 개시 이후 단계적으로 2나노 캐파를 확대할 계획이라고 밝혔다. 파운드리 흑자 전환 달성 여부가 비메모리 회복의 가늠자다.",
-    "en": "Track the Taylor fab ramp and mass-production schedule. The company said it plans to start up Taylor Fab 1 in 2026 and begin mass production in 2027, then expand 2nm capacity in stages. Whether foundry reaches breakeven is a gauge of the non-memory recovery."
+    "ko": "D램·낸드 계약가 상승률 추이. 상승률이 1분기 70%대에서 2분기 30~50%, 하반기 5~20%로 둔화될 것으로 전망되어, 둔화 속도가 이익 모멘텀의 핵심 변수입니다.",
+    "en": "Trends in DRAM/NAND contract price growth. Growth is projected to slow from ~70% in Q1 to 30–50% in Q2 and 5–20% in the second half, so the pace of deceleration is a key variable for profit momentum."
    }
   },
   {
    "when": {
-    "ko": "분기별 모니터링",
-    "en": "Quarterly monitoring"
+    "ko": "수시 공시",
+    "en": "Ongoing disclosures"
    },
    "what": {
-    "ko": "메모리 가격 방향성과 AI 투자 사이클 신호를 점검. DDR4 현물 가격의 하락이 전체 수요 둔화를 예고하는 신호가 될 수 있다는 신중론이 제기되는 만큼, 범용 가격과 빅테크 capex 추이를 함께 확인해야 한다.",
-    "en": "Check memory price direction and AI-capex signals. With some cautioning that falling DDR4 spot prices could foreshadow broader demand softening, monitor commodity prices alongside big-tech capex trends."
+    "ko": "장기공급계약(LTA) 추가 체결 및 파운드리 2나노 수주 진척. 일부 고객과 이미 계약이 체결된 만큼 추가 계약 규모와 고객 다변화가 가시성 제고의 척도입니다.",
+    "en": "Additional long-term supply agreements (LTAs) and foundry 2nm order progress. With some customer contracts already signed, the scale of further deals and customer diversification will be a measure of improving visibility."
+   }
+  },
+  {
+   "when": {
+    "ko": "AI 자본지출 동향",
+    "en": "AI capex trends"
+   },
+   "what": {
+    "ko": "글로벌 빅테크의 데이터센터 투자 계획. AI 인프라 투자 규모와 자금 조달 여건은 메모리 수요 지속성의 선행 지표로, 둔화 신호가 나타나는지 점검이 필요합니다.",
+    "en": "Datacenter investment plans of global big-tech firms. The scale of AI infrastructure spending and financing conditions are leading indicators of memory demand durability, so any deceleration signals warrant monitoring."
    }
   }
  ],
  "verdict": {
   "body": {
-   "ko": "삼성전자는 AI 인프라 투자가 견인하는 메모리 슈퍼사이클의 핵심 수혜 기업으로, 2026년 1분기 매출 133.9조원·영업이익 57.2조원의 사상 최대 실적을 기록했다. 이익은 반도체(DS)부문이 사실상 전부 견인했고, 세계 최대 생산능력을 바탕으로 범용 D램·낸드 가격 급등의 수혜를 크게 받았다. HBM 물량 완판과 장기공급계약, HBM4·HBM4E 양산은 강세 요인이나, HBM 시장 주도권은 여전히 SK하이닉스가 쥐고 있어 격차 축소가 입증 과제로 남는다. 비메모리에서는 파운드리 가동률 회복과 테일러 팹 가동, 흑자 전환 시점 단축 시도가 진행 중이다. 반면 세트 사업의 원가 부담, AI 투자 사이클 반락 가능성, 지정학·관세 리스크, 미확정 충당금 등은 균형 있게 살펴야 할 약세·불확실성 요인이다. 밸류에이션은 PER 약 26배, PBR 약 4.58배로 과거 사이클 밴드를 상회하며, 이는 회복 초기 국면의 이익 반영 시차로 해석될 수 있어 향후 이익 실현 여부가 관건이다. 본 자료는 정보 제공 목적이며 투자의견·목표주가를 제시하지 않는다.",
-   "en": "Samsung Electronics is a core beneficiary of the AI-infrastructure-driven memory supercycle, posting record Q1 2026 results of KRW 133.9tn revenue and KRW 57.2tn operating profit. Profit was driven almost entirely by the DS chip division, which captured outsized gains from surging commodity DRAM/NAND prices thanks to the world's largest capacity. Sold-out HBM volume, long-term supply agreements, and HBM4/HBM4E production are positives, but HBM market leadership still rests with SK hynix, leaving gap-closing as a task to be proven. In non-memory, foundry utilization is recovering and the Taylor fab ramp and an attempt to advance the breakeven timeline are underway. On the other side, cost pressure on the set business, a possible AI-capex downturn, geopolitical and tariff risk, and an unbooked provision are bearish or uncertain factors to weigh evenly. Valuation at roughly 26x PER and 4.58x PBR sits above past-cycle bands, which may reflect the earnings lag of an early-recovery phase, making realization of forward earnings the key. This material is for informational purposes only and does not provide an investment opinion or price target."
+   "ko": "삼성전자는 AI 메모리 슈퍼사이클의 정점에서 2026년 1분기 매출 133.9조원·영업이익 57.2조원의 역대 최대 실적을 기록했습니다. HBM·서버 D램·서버 SSD 수요 폭증과 메모리 가격 급등이 DS부문을 견인했고, 업계 최초 HBM4 엔비디아 양산 출하와 장기공급계약 체결로 이익 가시성이 높아졌습니다. 회사는 2027년 수요까지 선접수되고 있다며 수급 격차 심화를 전망하고 있어 단기 모멘텀은 견조합니다. 반면 메모리 가격 상승률 둔화 신호, 세트 수요 위축과 원가 부담, HBM 점유율 격차와 수율 검증 과제, 관세·지정학·AI 투자 지속성 리스크가 동시에 존재합니다. 밸류에이션은 PER 26.1배·PBR 4.5배로 과거 통상 밴드 대비 높은 수준이며, 이는 향후 이익 성장에 대한 기대를 반영합니다. 투자자는 7월 2분기 실적, 분기별 메모리 가격 추이, HBM4E 양산 진척, AI 자본지출 동향을 함께 점검하며 사이클 위치를 판단할 필요가 있습니다. 본 자료는 정보 제공 목적이며 투자 권유가 아닙니다.",
+   "en": "At the peak of the AI memory supercycle, Samsung posted record Q1 2026 results of KRW 133.9tn revenue and KRW 57.2tn operating profit. Explosive demand for HBM, server DRAM and server SSD plus surging memory prices drove the DS division, while industry-first HBM4 mass-production shipments to Nvidia and long-term supply agreements have improved earnings visibility. The company says 2027 demand is being pre-booked and expects the supply-demand gap to widen, supporting solid near-term momentum. On the other hand, signs of slowing memory price growth, weakening device demand and cost burdens, the HBM share gap and yield-verification challenge, and tariff, geopolitical and AI-investment-durability risks all coexist. Valuation, at a PER of 26.1x and PBR of 4.5x, is above the typical historical band, reflecting expectations of future earnings growth. Investors should assess the cycle's position by monitoring July's Q2 results, quarterly memory price trends, HBM4E mass-production progress and AI capex trends. This material is for informational purposes only and is not investment advice."
   }
  },
- "sources": [
-  "https://m.ddaily.co.kr/page/view/2026043011531703763",
-  "https://m.thebell.co.kr/m/newsview.asp?svccode=00&newskey=202601291212384720107223",
-  "https://dealsite.co.kr/articles/152437",
-  "https://www.epnc.co.kr/news/articleView.html?idxno=400410"
- ],
  "v": 2,
  "model": "claude-opus-4-8",
  "ticker": "005930",
@@ -220,7 +214,7 @@
  ],
  "market": "코스피",
  "reportDate": "2026-06-13",
- "reportTs": "2026-06-13 12:45",
+ "reportTs": "2026-06-13 16:10",
  "dataDate": "20260612",
  "quant": {
   "asOf": "2026-06-13",
@@ -235,6 +229,7 @@
     "equity": 436320337000000,
     "liab": 130621773000000,
     "cfo": 85315148000000,
+    "eps_basic": 6605,
     "opm": 13.1,
     "roe": 10.4,
     "debt_ratio": 29.9
@@ -248,6 +243,7 @@
     "equity": 402192070000000,
     "liab": 112339878000000,
     "cfo": 72982621000000,
+    "eps_basic": 4950,
     "opm": 10.9,
     "roe": 8.6,
     "debt_ratio": 27.9
@@ -261,6 +257,7 @@
     "equity": 363677865000000,
     "liab": 92228115000000,
     "cfo": 44137427000000,
+    "eps_basic": 2131,
     "opm": 2.5,
     "roe": 4.1,
     "debt_ratio": 25.4
@@ -274,6 +271,7 @@
     "equity": 354749604000000,
     "liab": 93674903000000,
     "cfo": 62181346000000,
+    "eps_basic": 8057,
     "opm": 14.4,
     "roe": 15.9,
     "debt_ratio": 26.4
@@ -316,10 +314,11 @@
    "mcap": 1885.4249,
    "shares": 5846278608,
    "total_shares": 6735612586,
+   "wavg_shares": 6612549487,
    "per": 26.1,
    "eps": 12372,
-   "pbr": 4.58,
-   "bps": 70366,
+   "pbr": 4.5,
+   "bps": 71676,
    "ttm_window": "2025Q2~2026Q1",
    "ttm_np_owner": 83333739000000,
    "pbr_krx": 5.04,
