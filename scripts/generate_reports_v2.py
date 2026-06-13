@@ -53,6 +53,7 @@ ACC_IDS = {
     "np":           ("ifrs-full_ProfitLoss", "ifrs_ProfitLoss"),
     "np_owner":     ("ifrs-full_ProfitLossAttributableToOwnersOfParent",
                      "ifrs_ProfitLossAttributableToOwnersOfParent"),
+    "eps_basic":    ("ifrs-full_BasicEarningsLossPerShare", "ifrs_BasicEarningsPerShare"),
     "assets":       ("ifrs-full_Assets", "ifrs_Assets"),
     "liab":         ("ifrs-full_Liabilities", "ifrs_Liabilities"),
     "equity":       ("ifrs-full_Equity", "ifrs_Equity"),
@@ -68,6 +69,7 @@ ACC_NAMES = {
     "np":           ("당기순이익", "당기순이익(손실)", "분기순이익", "반기순이익"),
     "np_owner":     ("지배기업소유주지분", "지배기업의소유주에게귀속되는당기순이익",
                      "지배기업소유주귀속당기순이익", "지배주주순이익"),
+    "eps_basic":    ("기본주당이익", "기본주당순이익", "기본주당이익(손실)", "기본및희석주당이익"),
     "assets":       ("자산총계",),
     "liab":         ("부채총계",),
     "equity":       ("자본총계",),
@@ -94,7 +96,7 @@ def _fin_all(dart, ticker, year, reprt):
                      g._num(r.get("thstrm_add_amount"))))
 
     def sj_ok(key, sj):
-        if key in ("rev", "rev_ins", "op", "np", "np_owner"):
+        if key in ("rev", "rev_ins", "op", "np", "np_owner", "eps_basic"):
             return sj in ("IS", "CIS")
         if key in ("assets", "liab", "equity", "equity_owner"):
             return sj == "BS"
@@ -165,6 +167,7 @@ def collect_quant(dart, ticker, krx_row, stock):
             "year": yr, "rev": rev, "op": op, "np": np_,
             "np_owner": npo if npo is not None else np_,
             "equity": eq, "liab": li, "cfo": _cum(d, "cfo"),
+            "eps_basic": _cum(d, "eps_basic"),
         }
         row["opm"] = round(op / rev * 100, 1) if (op is not None and rev) else None
         base_np = row["np_owner"]
@@ -254,22 +257,35 @@ def collect_quant(dart, ticker, krx_row, stock):
         if None not in (py_q1, cy_q1, fy_np):
             ttm_np = fy_np - py_q1 + cy_q1
 
-    # 분모: 발행주식총수(보통+우선) — 네이버·토스 표기와 같은 기준
     price = stock.get("price")
     total_sh = dart_total_shares(dart, ticker) or stock.get("shares") or 0
-    eps_ttm = int(ttm_np / total_sh) if (ttm_np and total_sh) else None
+
+    # 가중평균 유통주식수 = 회사 공시 (지배주주 순이익 ÷ 공시 기본EPS) 로 역산.
+    #   네이버·토스가 쓰는 분모와 같아져 EPS·PER이 일치한다. 자기주식이 자동 제외됨.
+    #   최근 시점 우선(올해 Q1 → 직전 연간). 둘 다 없으면 발행주식총수로 폴백.
+    def implied_wavg(npo, eps):
+        if npo and eps and abs(eps) > 1:
+            w = npo / eps
+            if w > 0 and 0.3 * total_sh <= w <= 1.05 * total_sh:  # 상식 범위(자기주식 차감 고려)
+                return w
+        return None
+
+    wavg = (implied_wavg(_cum(dq1c, "np_owner"), _cum(dq1c, "eps_basic"))
+            or (implied_wavg(fy_row["np_owner"], fy_row["eps_basic"]) if fy_row else None))
+    denom = wavg or total_sh
+    eps_ttm = int(ttm_np / denom) if (ttm_np and denom) else None
     per_ttm = round(price / eps_ttm, 1) if (eps_ttm and eps_ttm > 0 and price) else None
 
-    # BPS·PBR: 최근 분기말 지배주주 자본 기준 (네이버와 동일 시점)
+    # BPS·PBR: 최근 분기말 지배주주 자본 ÷ 유통주식수(가중평균으로 근사, 자기주식 제외)
     eqo_q = _bs(dq1c, "equity_owner") or _bs(dq1c, "equity")
-    bps_q = int(eqo_q / total_sh) if (eqo_q and total_sh) else None
+    bps_q = int(eqo_q / denom) if (eqo_q and denom) else None
     pbr_q = round(price / bps_q, 2) if (bps_q and price) else None
 
     valuation = {
         "price": price, "mcap": stock.get("mcap"), "shares": stock.get("shares"),
-        "total_shares": total_sh,
-        "per": per_ttm, "eps": eps_ttm,          # 최근 4개 분기 순이익 ÷ 발행주식총수 (네이버 방식)
-        "pbr": pbr_q, "bps": bps_q,              # 최근 분기말 지배주주 자본 ÷ 발행주식총수 (네이버 방식)
+        "total_shares": total_sh, "wavg_shares": int(wavg) if wavg else None,
+        "per": per_ttm, "eps": eps_ttm,          # 최근 4개 분기 순이익 ÷ 가중평균유통주식수 (네이버 방식)
+        "pbr": pbr_q, "bps": bps_q,              # 최근 분기말 지배주주 자본 ÷ 유통주식수 (네이버 방식)
         "ttm_window": f"{py}Q2~{cur}Q1" if ttm_np else None,
         "ttm_np_owner": ttm_np,
         "pbr_krx": None, "bps_krx": None,        # KRX 공식값(참고·대조용)
