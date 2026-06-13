@@ -104,12 +104,16 @@ ACC_NAMES = {
 
 
 def _fin_all(dart, ticker, year, reprt):
-    """fnlttSinglAcntAll(연결) → {key: {"amt": 당기, "add": 누적}}"""
-    try:
-        df = dart.finstate_all(ticker, year, reprt_code=reprt, fs_div="CFS")
-    except Exception as e:
-        log(f"    (finstate_all {year}/{reprt} 실패: {type(e).__name__})")
-        return None
+    """fnlttSinglAcntAll → {key: {"amt": 당기, "add": 누적}}.
+    연결(CFS) 우선, 자회사가 없어 연결재무제표가 없는 단독기업은 별도(OFS)로 폴백."""
+    df = None
+    for fs in ("CFS", "OFS"):
+        try:
+            df = dart.finstate_all(ticker, year, reprt_code=reprt, fs_div=fs)
+        except Exception:
+            df = None
+        if df is not None and not getattr(df, "empty", True):
+            break
     if df is None or getattr(df, "empty", True):
         return None
     rows = []
