@@ -316,18 +316,18 @@ def collect_quant(dart, ticker, krx_row, stock):
         "ttm_window": f"{py}Q2~{cur}Q1" if ttm_np else None,
         "ttm_np_owner": ttm_np,
         "pbr_krx": None, "bps_krx": None,        # KRX 공식값(참고·대조용)
-        "basis": "PER·EPS·PBR·BPS 모두 자체 산출(네이버·토스와 동일 방식) · 배당은 DART 공시 주당현금배당금 ÷ 현재가",
+        "basis": "PER·EPS·PBR·BPS 모두 자체 산출(네이버·토스와 동일 방식) · 배당은 DART 공시 주당현금배당금(보완:KRX) ÷ 현재가",
     }
-    # 배당: DART 공시 주당현금배당금(보통주)을 직접 사용해 현재가 기준으로 산출.
-    #   KRX 배당값은 신규 배당 미반영 등 갱신이 늦어 신뢰도가 낮으므로 쓰지 않는다.
-    #   DPS=0 은 '무배당'(유효 정보)로 보존, 공시 자체가 없으면 None(누락).
-    dps_dart = dart_dps(dart, ticker)
-    if dps_dart is not None:
-        valuation["dps"] = round(dps_dart, 1)
-        valuation["div"] = round(dps_dart / price * 100, 2) if price else None
-    else:
-        valuation["dps"] = None
-        valuation["div"] = None
+    # 배당: DART 공시 주당현금배당금(보통주) 우선, 실패 시 KRX DPS 보완.
+    #   현재가 기준으로 배당수익률 산출. DPS=0 은 '무배당'(유효)로 보존.
+    dps = dart_dps(dart, ticker)
+    if dps is None and krx_row is not None:
+        try:
+            dps = round(float(krx_row.get("DPS")), 1)
+        except Exception:
+            dps = None
+    valuation["dps"] = round(dps, 1) if dps is not None else None
+    valuation["div"] = round(dps / price * 100, 2) if (dps is not None and price) else None
     # PBR·BPS 의 KRX 공식값은 참고·대조용으로만 보관.
     if krx_row is not None:
         for src, dst in (("PBR", "pbr_krx"), ("BPS", "bps_krx")):
