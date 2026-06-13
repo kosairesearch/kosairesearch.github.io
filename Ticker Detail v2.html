@@ -954,6 +954,7 @@ KOSi18n.register({
     if(L()==='en'){ if(a>=1e12)return sg+'₩'+(a/1e12).toFixed(1)+'T'; if(a>=1e8)return sg+'₩'+(a/1e9).toFixed(1)+'B'; return sg+'₩'+Math.round(a).toLocaleString('en-US'); }
     if(a>=1e12)return sg+(a/1e12).toFixed(1)+'조'; if(a>=1e8)return sg+Math.round(a/1e8).toLocaleString('en-US')+'억'; return sg+Math.round(a).toLocaleString('en-US')+'원'; }
   function fpct(v){ return v==null?'—':(+v).toFixed(1)+'%'; }
+  function fpct2(v){ return v==null?'—':(+v).toFixed(2)+'%'; }
   function fx(v,suf){ return v==null?'—':(+v).toLocaleString('en-US')+(suf||''); }
   function negc(v){ return (v!=null&&v<0)?' class="neg"':''; }
   /* 실적 막대차트(매출·영업이익) + 선택적 라인(영업이익률). 외부 라이브러리 없는 inline SVG. */
@@ -1082,7 +1083,7 @@ KOSi18n.register({
     var cells=[
       [f.per,  vPer!=null?fx(vPer,xb):(lossNa?f.na:f.nodata)],
       [f.pbr,  vPbr!=null?fx(vPbr,xb):f.nodata],
-      [f.divy, vDiv!=null?fpct(vDiv):f.nodata],
+      [f.divy, vDiv!=null?fpct2(vDiv):f.nodata],
       [f.eps,  vEps!=null?fx(vEps,wn):f.nodata],
       [f.bps,  vBps!=null?fx(vBps,wn):f.nodata],
       [f.dps,  vDps!=null?fx(vDps,wn):f.nodata]
