@@ -447,7 +447,7 @@ def quant_summary(name, q):
         lines.append(f"  {r['q']}: 매출 {_eok(r['rev'])} 영업이익 {_eok(r['op'])} 지배순이익 {_eok(r['np_owner'])}")
     v = q["valuation"]
     lines.append(f"  PER {v.get('per')} | EPS {v.get('eps')} | PBR {v.get('pbr')} | "
-                 f"BPS {v.get('bps')} | 배당 {v.get('div')}% | DPS {v.get('dps')}  (모두 네이버 방식)")
+                 f"BPS {v.get('bps')} | ROE(TTM) {v.get('roe_ttm')} | 배당 {v.get('div')}% | DPS {v.get('dps')}")
     return "\n".join(lines)
 
 
