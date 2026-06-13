@@ -325,6 +325,7 @@ tbody tr:first-child td{border-top:1px solid var(--border-2)}
 @media (max-width:767px){.foot-grid{grid-template-columns:repeat(3,1fr);gap:16px}.foot-brand{grid-column:1/-1}.foot-bottom{flex-direction:column;gap:8px}}
 </style>
 <script src="data/stocks.js"></script>
+<script src="data/valuation.js"></script>
 <script>
 /* ============================================================
    KOSAI — lightweight in-place i18n (KO ⇄ EN)
@@ -656,6 +657,8 @@ KOSi18n.register({
             <th data-key="change">등락률<span class="car"></span></th>
             <th data-key="trading_value">거래대금<span class="car"></span></th>
             <th data-key="mcap" class="sorted">시가총액<span class="car">▼</span></th>
+            <th data-key="per">PER<span class="car"></span></th>
+            <th data-key="pbr">PBR<span class="car"></span></th>
           </tr>
         </thead>
         <tbody id="tbody" data-i18n-skip></tbody>
@@ -742,6 +745,16 @@ const STOCKS_DEFAULT=[
   {name:'한화에어로스페이스',ticker:'012450',sector:'조선·방산',market:'코스피',price:298500,change:3.18,mcap:15.2,per:24.3,pbr:3.4,div:1.3,roe:14.6,rev:34.6,opm:12.4,debt:96},
 ];
 const STOCKS = window.KOS_LIVE_DATA?.stocks || STOCKS_DEFAULT;
+/* valuation.js(EPS·BPS·DPS·ROE)와 당일 주가로 PER·PBR·배당을 즉석 계산해 종목에 부착 */
+(function(){ const VAL=(window.KOS_VALUATION&&KOS_VALUATION.stocks)||{};
+  STOCKS.forEach(function(s){ const v=VAL[s.ticker]; if(!v)return;
+    if(v.eps&&v.eps>0&&s.price) s.per=+(s.price/v.eps).toFixed(1);
+    if(v.bps&&v.bps>0&&s.price) s.pbr=+(s.price/v.bps).toFixed(2);
+    if(v.dps!=null&&s.price) s.div=+(v.dps/s.price*100).toFixed(2);
+    if(v.roe!=null) s.roe=v.roe;
+    if(v.rev_g!=null) s.rev=v.rev_g;
+  });
+})();
 
 const scats=s=>(s.categories&&s.categories.length?s.categories:[s.sector]);
 const SECTORS=[...new Set(STOCKS.flatMap(scats))].map(name=>({name,count:STOCKS.filter(s=>scats(s).includes(name)).length}));
@@ -751,8 +764,12 @@ const FIELDS={
   market:{label:'시장',type:'segment',options:['전체','코스피','코스닥']},
   sector:{label:'업종',type:'multi',options:SECTORS},
   mcap:{label:'시가총액',type:'range',unit:'조',quick:[{l:'1조원 이하',max:1},{l:'1조원 이상 ~ 10조원 이하',min:1,max:10},{l:'10조원 이상',min:10}]},
+  per:{label:'PER',type:'range',unit:'배',quick:[{l:'10배 이하',max:10},{l:'20배 이하',max:20}]},
+  pbr:{label:'PBR',type:'range',unit:'배',quick:[{l:'1배 이하',max:1},{l:'2배 이하',max:2}]},
+  div:{label:'배당수익률',type:'range',unit:'%',quick:[{l:'2% 이상',min:2},{l:'4% 이상',min:4}]},
+  roe:{label:'ROE',type:'range',unit:'%',quick:[{l:'10% 이상',min:10},{l:'20% 이상',min:20}]},
 };
-const FIELD_ORDER=['market','sector','mcap'];
+const FIELD_ORDER=['market','sector','mcap','per','pbr','div','roe'];
 
 const PRESETS={
   '저PER 가치주':{per:{min:null,max:10}},
@@ -772,11 +789,14 @@ function passes(s){
     const f=FIELDS[k],v=state.filters[k];
     if(f.type==='segment'){ if(v!=='전체'&&s.market!==v) return false; }
     else if(f.type==='multi'){ if(v.length&&!scats(s).some(c=>v.includes(c))) return false; }
-    else { const val=s[k]; if(v.min!=null&&val<v.min) return false; if(v.max!=null&&val>v.max) return false; }
+    else { const val=s[k]; if(val==null||isNaN(val)) return false; if(v.min!=null&&val<v.min) return false; if(v.max!=null&&val>v.max) return false; }
   }
   return true;
 }
-function sortList(list){const k=state.sortKey,d=state.sortDir;return[...list].sort((a,b)=>(a[k]<b[k]?-1:a[k]>b[k]?1:0)*d);}
+function sortList(list){const k=state.sortKey,d=state.sortDir;return[...list].sort((a,b)=>{
+  const x=a[k],y=b[k]; const xn=(x==null||isNaN(x)&&typeof x==='number'), yn=(y==null);
+  if(x==null&&y==null)return 0; if(x==null)return 1; if(y==null)return -1;
+  return (x<y?-1:x>y?1:0)*d;});}
 
 /* ===== render table ===== */
 const tbody=document.getElementById('tbody');
@@ -789,6 +809,8 @@ function rowHtml(s){
     <td><span class="chg ${dir}"><span class="a">${arw}</span> ${KOS.pct(s.change)}</span></td>
     <td>${KOS.amt(s.trading_value)}</td>
     <td><b>${KOS.mcap(s.mcap)}</b></td>
+    <td>${s.per!=null?s.per.toFixed(1)+(EN()?'×':'배'):'—'}</td>
+    <td>${s.pbr!=null?s.pbr.toFixed(2)+(EN()?'×':'배'):'—'}</td>
   </tr>`;
 }
 function render(){
@@ -1001,7 +1023,7 @@ const SCREENER_DICT={
   "원하는 조건을 더해 한국 상장사를 걸러내고, 기준에 맞게 정렬해 보세요.":"Add the conditions you want to filter Korean public companies, then sort by any metric.",
   "필터 추가":"Add filter",
   "티커 · 종목명 · 업종 검색":"Search ticker · name · industry",
-  "종목명":"Name","시장":"Market","현재가":"Price","등락률":"Change","시가총액":"Market Cap","배당":"Yield",
+  "종목명":"Name","시장":"Market","현재가":"Price","등락률":"Change","시가총액":"Market Cap","배당":"Yield","PER":"P/E","PBR":"P/B","2배 이하":"≤ 2×",
   "조건에 맞는 종목이 없습니다.":"No stocks match your filters.","필터 초기화":"Reset filters",
   "필터":"Filter","모두 지우기":"Clear all",
   "적용된 필터가 없습니다. ‘필터 추가’로 조건을 더하세요.":"No filters applied. Add conditions with ‘Add filter’.",
