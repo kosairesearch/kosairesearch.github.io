@@ -272,13 +272,15 @@ def collect_quant(dart, ticker, krx_row, stock):
 
     wavg = (implied_wavg(_cum(dq1c, "np_owner"), _cum(dq1c, "eps_basic"))
             or (implied_wavg(fy_row["np_owner"], fy_row["eps_basic"]) if fy_row else None))
-    denom = wavg or total_sh
-    eps_ttm = int(ttm_np / denom) if (ttm_np and denom) else None
+
+    # 경험칙(상위 10개 ↔ 네이버 대조 결과): EPS·PER 은 발행주식총수,
+    #   BPS·PBR 은 가중평균 유통주식수(자기주식 제외)일 때 네이버와 가장 일치한다.
+    eps_ttm = int(ttm_np / total_sh) if (ttm_np and total_sh) else None
     per_ttm = round(price / eps_ttm, 1) if (eps_ttm and eps_ttm > 0 and price) else None
 
-    # BPS·PBR: 최근 분기말 지배주주 자본 ÷ 유통주식수(가중평균으로 근사, 자기주식 제외)
+    bps_denom = wavg or total_sh
     eqo_q = _bs(dq1c, "equity_owner") or _bs(dq1c, "equity")
-    bps_q = int(eqo_q / denom) if (eqo_q and denom) else None
+    bps_q = int(eqo_q / bps_denom) if (eqo_q and bps_denom) else None
     pbr_q = round(price / bps_q, 2) if (bps_q and price) else None
 
     valuation = {
