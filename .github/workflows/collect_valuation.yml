@@ -9,6 +9,8 @@ on:
       force:
         description: '전부 재수집(분기 갱신 시 1)'
         default: ''
+  schedule:
+    - cron: '17 * * * *'   # 매시간(안전망) — 완료되면 즉시 종료라 부담 없음
 
 concurrency:
   group: kos-data
@@ -36,7 +38,7 @@ jobs:
           DART_API_KEY: ${{ secrets.DART_API_KEY }}
           KRX_ID: ${{ secrets.KRX_ID }}
           KRX_PW: ${{ secrets.KRX_PW }}
-          BUDGET_MIN: ${{ inputs.budget_min }}
+          BUDGET_MIN: ${{ inputs.budget_min || '50' }}
           FORCE: ${{ inputs.force }}
         run: |
           python scripts/collect_valuation.py 2>&1 | tee data/valuation_run.log || true
@@ -65,7 +67,7 @@ jobs:
             sleep 20
             curl -s -X POST -H "Authorization: Bearer $GH_TOKEN" -H "Accept: application/vnd.github+json" \
               "https://api.github.com/repos/${{ github.repository }}/actions/workflows/collect_valuation.yml/dispatches" \
-              -d '{"ref":"main","inputs":{"budget_min":"${{ inputs.budget_min }}"}}'
+              -d '{"ref":"main","inputs":{"budget_min":"${{ inputs.budget_min || '50' }}"}}'
           else
             echo "수집 완료 — 연쇄 종료"
           fi
