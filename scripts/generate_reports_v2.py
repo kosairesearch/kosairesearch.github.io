@@ -319,8 +319,15 @@ def collect_quant(dart, ticker, krx_row, stock):
         "basis": "PER·EPS·PBR·BPS 모두 자체 산출(네이버·토스와 동일 방식) · 배당수익률·주당배당금은 KRX 공식값",
     }
     # 배당수익률·주당배당금은 KRX 공식값 사용. PBR·BPS의 KRX값은 참고용으로만 보관.
+    #   배당(DIV·DPS)은 0도 '무배당'이라는 유효 정보 → 0을 그대로 보존(누락과 구분).
+    #   밸류에이션(PBR·BPS)은 0이 '산출 불가'이므로 None 처리.
     if krx_row is not None:
-        for src, dst in (("DIV", "div"), ("DPS", "dps"), ("PBR", "pbr_krx"), ("BPS", "bps_krx")):
+        for src, dst in (("DIV", "div"), ("DPS", "dps")):
+            try:
+                valuation[dst] = round(float(krx_row.get(src)), 2)
+            except Exception:
+                valuation[dst] = None
+        for src, dst in (("PBR", "pbr_krx"), ("BPS", "bps_krx")):
             try:
                 v = float(krx_row.get(src))
                 valuation[dst] = v if v > 0 else None
