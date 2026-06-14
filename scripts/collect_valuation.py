@@ -147,6 +147,30 @@ def main():
     budget = int(os.getenv("BUDGET_MIN", "50")) * 60
     t0 = time.time()
 
+    # ── 리포트 보유 종목은 매 실행마다 리포트 JSON에서 무료 동기화 ──
+    #   리포트 quant는 정확하고(게이트 적용·올바른 주식수) 권위 있는 값이다.
+    #   그리드(valuation.js)가 옛 버그버전·신선도-skip 때문에 리포트와 어긋나 있던
+    #   문제(LS ELECTRIC·POSCO 등 stale)를 매 실행 동기화로 영구 차단한다.
+    #   DART/네이버 호출이 없어 비용이 거의 없으므로 신선도 정책과 무관하게 항상 수행.
+    if not only_mode:
+        synced = 0
+        for s in stocks:
+            rp = REPORTS_V2 / f"{s['ticker']}.json"
+            if not rp.exists():
+                continue
+            try:
+                q = json.loads(rp.read_text(encoding="utf-8"))["quant"]
+                v = _summary_from_valuation(q.get("valuation", {}), q.get("annual", []))
+                v["_v"] = VERSION
+                v["_d"] = today.isoformat()
+                existing[s["ticker"]] = v
+                synced += 1
+            except Exception:
+                pass
+        if synced:
+            write_out(existing, data_date)
+            log(f"- 리포트 동기화 {synced}건 — 그리드=리포트 항상 일치(무료)")
+
     done = 0
     skipped = 0
     new = 0
