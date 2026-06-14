@@ -296,13 +296,32 @@ def collect_quant(dart, ticker, krx_row, stock):
         if None not in (py_q1, cy_q1, fy_np):
             ttm_np = fy_np - py_q1 + cy_q1
 
-    if os.getenv("DEBUG_TK") == ticker:
-        log(f"    [DBG {ticker}] fy_np={fy_row.get('np_owner') if fy_row else None} "
-            f"fy_eq_owner={fy_row.get('equity_owner') if fy_row else None} "
-            f"fy_eps_basic={fy_row.get('eps_basic') if fy_row else None}")
-        log(f"    [DBG] dq1c np_owner={_cum(dq1c,'np_owner')} np={_cum(dq1c,'np')} "
-            f"eq_owner={_bs(dq1c,'equity_owner')} eq={_bs(dq1c,'equity')} eps_basic={_cum(dq1c,'eps_basic')}")
-        log(f"    [DBG] dart_total_shares={dart_total_shares(dart,ticker)} krx_shares={stock.get('shares')} ttm_np={ttm_np}")
+    # ── 단위 자동 보정 ──
+    # 일부 기업은 재무제표를 천원·백만원 단위로 공시 → 우리는 원으로 읽어 값이 1,000/1,000,000배 작게 나온다.
+    # 시가총액(원)을 기준으로 자본총계가 비현실적으로 작으면(=PBR이 비정상적으로 큼) 단위 배수를 감지해 전 금액에 곱한다.
+    mcap_won = (stock.get("mcap") or 0) * 1e12
+    ref_eq = _bs(dq1c, "equity_owner") or _bs(dq1c, "equity") or (fy_row.get("equity_owner") if fy_row else None)
+    unit = 1
+    if mcap_won and ref_eq and ref_eq > 0:
+        ratio = mcap_won / ref_eq             # ≈ PBR. 정상 0.05~300, 그 이상이면 단위 축소 의심
+        if ratio > 300:
+            for f in (1000, 1_000_000):
+                if 0.05 <= mcap_won / (ref_eq * f) <= 300:
+                    unit = f
+                    break
+    if unit != 1:
+        log(f"  [단위보정] {ticker} ×{unit} (천원/백만원 단위 공시 추정)")
+        money = ("rev", "op", "np", "np_owner", "equity", "equity_owner", "cfo", "liab", "assets")
+        for row in annual:
+            for k in money:
+                if row.get(k) is not None:
+                    row[k] = row[k] * unit
+        for row in quarterly:
+            for k in ("rev", "op", "np_owner"):
+                if row.get(k) is not None:
+                    row[k] = row[k] * unit
+        if ttm_np is not None:
+            ttm_np *= unit
 
     price = stock.get("price")
     sh = stock.get("shares") or 0          # KRX 발행주식수(정확)
@@ -335,13 +354,17 @@ def collect_quant(dart, ticker, krx_row, stock):
     per_ttm = round(price / eps_ttm, 1) if (eps_ttm and eps_ttm > 0 and price) else None
 
     bps_denom = wavg or total_sh
-    eqo_q = _bs(dq1c, "equity_owner") or _bs(dq1c, "equity")
+    eqo_q = (_bs(dq1c, "equity_owner") or _bs(dq1c, "equity"))
+    if eqo_q is not None:
+        eqo_q *= unit
     bps_q = int(eqo_q / bps_denom) if (eqo_q and bps_denom) else None
     pbr_q = round(price / bps_q, 2) if (bps_q and price) else None
 
     # ROE(TTM) = 최근 4개 분기 지배순이익 ÷ 평균 지배자본(TTM 시작시점~끝시점) — 토스와 정합
-    fy_eqo = fy_row.get("equity_owner") if fy_row else None
-    eqo_begin = _bs(dq1, "equity_owner") or _bs(dq1, "equity")   # TTM 시작(작년 1Q말) 자본
+    fy_eqo = fy_row.get("equity_owner") if fy_row else None       # 이미 단위보정됨(annual 일괄)
+    eqo_begin = (_bs(dq1, "equity_owner") or _bs(dq1, "equity"))   # TTM 시작(작년 1Q말) 자본
+    if eqo_begin is not None:
+        eqo_begin *= unit
     def _roe(eq): return round(ttm_np / eq * 100, 1) if (ttm_np is not None and eq) else None
     avg_win = ((eqo_begin + eqo_q) / 2) if (eqo_begin and eqo_q) else None
     roe_ttm = _roe(avg_win) or _roe(fy_eqo) or _roe(eqo_q)
