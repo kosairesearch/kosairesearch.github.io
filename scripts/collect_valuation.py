@@ -122,8 +122,10 @@ def collect_one(dart, ticker, stock):
     if dps is not None:
         out["dps"] = round(dps, 1)
 
-    # ── 검증 게이트: 틀린 값이 화면에 나가지 않도록 ──
-    # 1순위 네이버 대조(EPS·BPS 15% 초과/부호반대 → 숨김), 네이버 없으면 상식범위(PER·PBR).
+    # ── 검증 게이트: 네이버 대조만 사용 ──
+    # EPS·BPS가 네이버와 15% 초과/부호반대로 어긋나면 숨김(추출오류 방어).
+    # 임의의 '상식범위'는 쓰지 않는다 — 고성장·저이익주의 정당한 고PER(예: 레인보우로보틱스)을
+    # 가짜 오류로 오인해 숨기는 부작용이 있어서. 네이버에 값이 없으면 그대로 표시(주식수 가드로 1차 방어됨).
     nv = v2.naver_valuation(ticker)
 
     def gross(mine, ref):
@@ -138,16 +140,6 @@ def collect_one(dart, ticker, stock):
             out.pop("eps", None)
         if gross(out.get("bps"), nv.get("bps")):
             out.pop("bps", None)
-    else:
-        # 네이버 참조 없음 → 주가 대비 상식 범위 벗어나면 제거(추출 오류 방어)
-        if out.get("eps") and price:
-            per = price / out["eps"]
-            if not (-2000 < per < 2000) or abs(out["eps"]) < 10:
-                out.pop("eps", None)
-        if out.get("bps") and price:
-            pbr = price / out["bps"]
-            if not (0 < pbr < 200) or out["bps"] < 50:
-                out.pop("bps", None)
     return out
 
 
@@ -176,7 +168,7 @@ def main():
     # 갱신 정책: 종목별로 산식버전(_v)이 같고 최근 REFRESH_DAYS 이내에 수집했으면 건너뜀.
     #   → 평소엔 종목당 약 한 달마다 자동 재수집(분기 실적을 한 달 내 자동 반영),
     #     산식(VERSION)이 바뀌면 1회 전체 재수집. 매일 전체 재수집하지 않는다.
-    VERSION = "r5"  # + 주식총수 KRX 폴백 가드(추출오류 방어)
+    VERSION = "r6"  # 상식범위 제거, 네이버 대조만
     REFRESH_DAYS = int(os.getenv("REFRESH_DAYS", "30"))
     today = datetime.date.today()
     force = os.getenv("FORCE") == "1"
