@@ -52,6 +52,10 @@ function openWithdrawModal(){
   if(document.getElementById('wdModal')) return;
   injectCss();
   const email = user.email || user.displayName || '';
+  const lang = (window.KOSi18n ? KOSi18n.lang : 'ko');
+  const WORD = lang === 'en' ? 'DELETE' : '탈퇴';          // 언어별 확인 문구
+  const typePlaceholder = lang === 'en'
+    ? `Type ‘${WORD}’ to confirm` : `확인을 위해 ‘${WORD}’ 를 입력하세요`;
   const ov = document.createElement('div');
   ov.id = 'wdModal'; ov.className = 'wd-ov';
   ov.innerHTML = `
@@ -64,7 +68,7 @@ function openWithdrawModal(){
         `<label class="wd-r"><input type="radio" name="wdReason" value="${r}"><span>${T(r)}</span></label>`).join('')}</div>
       <textarea class="wd-detail" rows="2" placeholder="${T("자세한 의견 (선택)")}"></textarea>
       <label class="wd-ack"><input type="checkbox" id="wdAck"><span>${T("위 내용을 이해했으며 되돌릴 수 없음에 동의합니다")}</span></label>
-      <input class="wd-type" id="wdType" type="text" autocomplete="off" placeholder="${T("확인을 위해 '탈퇴' 를 입력하세요")}">
+      <input class="wd-type" id="wdType" type="text" autocomplete="off" placeholder="${typePlaceholder}">
       <div class="wd-actions">
         <button type="button" class="wd-cancel">${T("취소")}</button>
         <button type="button" class="wd-go" disabled>${T("탈퇴하기")}</button>
@@ -72,7 +76,7 @@ function openWithdrawModal(){
     </div>`;
   document.body.appendChild(ov);
   const ack = ov.querySelector('#wdAck'), type = ov.querySelector('#wdType'), go = ov.querySelector('.wd-go');
-  const sync = () => { go.disabled = !(ack.checked && type.value.trim() === '탈퇴'); };
+  const sync = () => { go.disabled = !(ack.checked && type.value.trim() === WORD); };
   ack.addEventListener('change', sync); type.addEventListener('input', sync);
   const close = () => ov.remove();
   ov.querySelector('.wd-cancel').addEventListener('click', close);
@@ -162,31 +166,31 @@ function injectCss(){
   :root[data-theme="dark"] #mobileMenu #mAuth button.m-withdraw{color:#ff8a8c}
   /* 회원 탈퇴 모달 */
   .wd-ov{position:fixed;inset:0;z-index:9999;display:flex;align-items:center;justify-content:center;
-    background:rgba(10,12,20,.55);-webkit-backdrop-filter:blur(4px);backdrop-filter:blur(4px);padding:20px}
-  .wd-card{width:100%;max-width:420px;max-height:90vh;overflow-y:auto;background:var(--bg-1,#fff);
-    border:1px solid var(--border-2);border-radius:18px;box-shadow:0 24px 60px rgba(0,0,0,.35);padding:24px 22px}
+    background:rgba(10,12,20,.55);-webkit-backdrop-filter:blur(4px);backdrop-filter:blur(4px);padding:24px}
+  .wd-card{width:100%;max-width:540px;max-height:90vh;overflow-y:auto;background:var(--bg-1,#fff);
+    border:1px solid var(--border-2);border-radius:20px;box-shadow:0 28px 70px rgba(0,0,0,.4);padding:36px 34px}
   :root[data-theme="dark"] .wd-card{background:#1c1e2a}
-  .wd-h{font:700 18px var(--font-sans);color:var(--fg-1);letter-spacing:-.02em}
-  .wd-em{margin-top:4px;font:500 12.5px var(--font-sans);color:var(--fg-3);word-break:break-all}
-  .wd-warn{margin:12px 0 0;font:400 13.5px/1.6 var(--font-sans);color:#c0282b}
+  .wd-h{font:700 22px var(--font-sans);color:var(--fg-1);letter-spacing:-.02em}
+  .wd-em{margin-top:6px;font:500 13px var(--font-sans);color:var(--fg-3);word-break:break-all}
+  .wd-warn{margin:16px 0 0;font:400 14.5px/1.65 var(--font-sans);color:#c0282b}
   :root[data-theme="dark"] .wd-warn{color:#ff8a8c}
-  .wd-q{margin:18px 0 8px;font:600 13px var(--font-sans);color:var(--fg-2)}
-  .wd-reasons{display:flex;flex-direction:column;gap:2px}
-  .wd-r{display:flex;align-items:center;gap:9px;padding:8px 6px;border-radius:8px;cursor:pointer;
-    font:400 14px var(--font-sans);color:var(--fg-1)}
+  .wd-q{margin:28px 0 10px;font:600 13.5px var(--font-sans);color:var(--fg-2)}
+  .wd-reasons{display:flex;flex-direction:column;gap:3px}
+  .wd-r{display:flex;align-items:center;gap:11px;padding:11px 10px;border-radius:10px;cursor:pointer;
+    font:400 14.5px var(--font-sans);color:var(--fg-1)}
   .wd-r:hover{background:rgba(0,0,0,.04)}
   :root[data-theme="dark"] .wd-r:hover{background:rgba(255,255,255,.05)}
-  .wd-r input{accent-color:var(--brand-blue);width:16px;height:16px;flex:0 0 auto}
-  .wd-detail{width:100%;margin-top:8px;box-sizing:border-box;resize:vertical;border:1px solid var(--border-2);
-    border-radius:10px;padding:9px 11px;font:400 13.5px var(--font-sans);color:var(--fg-1);background:transparent}
-  .wd-ack{display:flex;align-items:flex-start;gap:9px;margin-top:16px;cursor:pointer;
-    font:400 13px/1.5 var(--font-sans);color:var(--fg-2)}
-  .wd-ack input{accent-color:#c0282b;width:16px;height:16px;flex:0 0 auto;margin-top:1px}
-  .wd-type{width:100%;margin-top:12px;box-sizing:border-box;border:1px solid var(--border-2);border-radius:10px;
-    padding:11px 13px;font:500 14px var(--font-sans);color:var(--fg-1);background:transparent}
+  .wd-r input{accent-color:var(--brand-blue);width:17px;height:17px;flex:0 0 auto}
+  .wd-detail{width:100%;margin-top:12px;box-sizing:border-box;resize:vertical;border:1px solid var(--border-2);
+    border-radius:12px;padding:12px 14px;font:400 14px var(--font-sans);color:var(--fg-1);background:transparent}
+  .wd-ack{display:flex;align-items:flex-start;gap:11px;margin-top:26px;cursor:pointer;
+    font:400 13.5px/1.55 var(--font-sans);color:var(--fg-2)}
+  .wd-ack input{accent-color:#c0282b;width:18px;height:18px;flex:0 0 auto;margin-top:1px}
+  .wd-type{width:100%;margin-top:14px;box-sizing:border-box;border:1px solid var(--border-2);border-radius:12px;
+    padding:14px 15px;font:500 15px var(--font-sans);color:var(--fg-1);background:transparent}
   .wd-type:focus{outline:none;border-color:var(--brand-blue)}
-  .wd-actions{display:flex;gap:8px;margin-top:18px}
-  .wd-actions button{flex:1;border:0;border-radius:10px;padding:12px;cursor:pointer;font:600 14px var(--font-sans)}
+  .wd-actions{display:flex;gap:10px;margin-top:26px}
+  .wd-actions button{flex:1;border:0;border-radius:12px;padding:15px;cursor:pointer;font:600 15px var(--font-sans)}
   .wd-cancel{background:rgba(0,0,0,.06);color:var(--fg-1)}
   :root[data-theme="dark"] .wd-cancel{background:rgba(255,255,255,.1)}
   .wd-go{background:#c0282b;color:#fff}
