@@ -316,9 +316,14 @@ def collect_quant(dart, ticker, krx_row, stock):
     wavg = (implied_wavg(_cum(dq1c, "np_owner"), _cum(dq1c, "eps_basic"))
             or (implied_wavg(fy_row["np_owner"], fy_row["eps_basic"]) if fy_row else None))
 
-    # 경험칙(상위 10개 ↔ 네이버 대조 결과): EPS·PER 은 발행주식총수,
-    #   BPS·PBR 은 가중평균 유통주식수(자기주식 제외)일 때 네이버와 가장 일치한다.
-    eps_ttm = int(ttm_np / total_sh) if (ttm_np and total_sh) else None
+    # EPS(TTM): 1순위 = 회사 공시 기본주당이익(EPS) 직접 합산(최근결산 − 작년1Q + 올해1Q).
+    #   순이익·주식수 추출을 건너뛰어 가장 견고하고, 네이버와 동일 기준(회사 공시 EPS).
+    #   2순위(공시 EPS 누락 시) = 지배순이익 ÷ 발행주식총수.
+    fy_eps = fy_row.get("eps_basic") if fy_row else None
+    qp_eps = _cum(dq1, "eps_basic")
+    qc_eps = _cum(dq1c, "eps_basic")
+    eps_disc = (fy_eps - qp_eps + qc_eps) if None not in (fy_eps, qp_eps, qc_eps) else None
+    eps_ttm = eps_disc if eps_disc is not None else (int(ttm_np / total_sh) if (ttm_np and total_sh) else None)
     per_ttm = round(price / eps_ttm, 1) if (eps_ttm and eps_ttm > 0 and price) else None
 
     bps_denom = wavg or total_sh
