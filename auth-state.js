@@ -37,7 +37,10 @@ if(window.KOSi18n) window.KOSi18n.register({
   "위 내용을 이해했으며 되돌릴 수 없음에 동의합니다":
     "I understand this is permanent and cannot be undone",
   "확인을 위해 '탈퇴' 를 입력하세요":"Type ‘탈퇴’ to confirm",
-  "탈퇴하기":"Delete account", "취소":"Cancel"
+  "탈퇴하기":"Delete account", "취소":"Cancel",
+  "회원 탈퇴가 완료되었습니다":"Your account has been deleted",
+  "그동안 이용해 주셔서 감사합니다.":"Thank you for using KOSAI.",
+  "홈으로":"Go to home"
 });
 
 /* 회원 탈퇴 — 다단계 확인 모달:
@@ -106,9 +109,17 @@ async function finishWithdraw(user, email, reason, detail, ov){
     await recordReason(email, reason, detail);
     try{ await deleteDoc(doc(getFirestore(app), "watchlists", user.uid)); }catch(e){}
     await deleteUser(user);
-    ov.querySelector('.wd-card').innerHTML =
-      `<div class="wd-h">${T("회원 탈퇴가 완료되었습니다. 그동안 이용해 주셔서 감사합니다.")}</div>`;
-    setTimeout(() => { location.href = "Home.html"; }, 1400);
+    // 완료 화면 — 자동으로 사라지지 않고, 사용자가 '홈으로'를 눌러야 닫힘
+    ov.querySelector('.wd-card').innerHTML = `
+      <div class="wd-done">
+        <div class="wd-check"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg></div>
+        <div class="wd-done-h">${T("회원 탈퇴가 완료되었습니다")}</div>
+        <p class="wd-done-sub">${T("그동안 이용해 주셔서 감사합니다.")}</p>
+        <button type="button" class="wd-home">${T("홈으로")}</button>
+      </div>`;
+    const home = () => { location.href = "Home.html"; };
+    ov.querySelector('.wd-home').addEventListener('click', home);
+    ov.onclick = e => { if(e.target === ov) home(); };
   }catch(e){
     if(e && e.code === "auth/requires-recent-login"){
       alert(T("보안을 위해 다시 로그인한 뒤 탈퇴를 진행해 주세요."));
@@ -194,7 +205,18 @@ function injectCss(){
   .wd-cancel{background:rgba(0,0,0,.06);color:var(--fg-1)}
   :root[data-theme="dark"] .wd-cancel{background:rgba(255,255,255,.1)}
   .wd-go{background:#c0282b;color:#fff}
-  .wd-go:disabled{opacity:.4;cursor:not-allowed}`;
+  .wd-go:disabled{opacity:.4;cursor:not-allowed}
+  /* 탈퇴 완료 화면 */
+  .wd-done{display:flex;flex-direction:column;align-items:center;text-align:center;padding:18px 6px 6px}
+  .wd-check{width:64px;height:64px;border-radius:50%;display:flex;align-items:center;justify-content:center;
+    background:rgba(31,157,87,.12);color:#1f9d57;margin-bottom:20px}
+  .wd-check svg{width:32px;height:32px}
+  :root[data-theme="dark"] .wd-check{background:rgba(61,220,132,.15);color:#3ddc84}
+  .wd-done-h{font:700 21px var(--font-sans);color:var(--fg-1);letter-spacing:-.02em}
+  .wd-done-sub{margin:10px 0 0;font:400 14.5px/1.6 var(--font-sans);color:var(--fg-3)}
+  .wd-home{margin-top:28px;width:100%;border:0;border-radius:12px;padding:15px;cursor:pointer;
+    font:600 15px var(--font-sans);background:var(--brand-blue,#0d69d4);color:#fff}
+  .wd-home:hover{filter:brightness(1.05)}`;
   document.head.appendChild(st);
 }
 
