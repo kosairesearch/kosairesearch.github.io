@@ -353,6 +353,13 @@ def collect_quant(dart, ticker, krx_row, stock):
     eps_ttm = eps_disc if eps_disc is not None else (int(ttm_np / total_sh) if (ttm_np and total_sh) else None)
     per_ttm = round(price / eps_ttm, 1) if (eps_ttm and eps_ttm > 0 and price) else None
 
+    # ROE 신뢰성: 순이익 추출(ttm_np)이 공시 EPS와 30% 넘게 어긋나면(추출 오류) 공시 EPS로 ttm_np 보정.
+    #   → EPS는 맞는데 ROE만 0%/이상치로 나오는 모순 제거(원익QnC 등).
+    if eps_disc is not None and total_sh:
+        implied_np = eps_disc * total_sh
+        if ttm_np is None or (implied_np and abs(ttm_np - implied_np) > 0.3 * abs(implied_np)):
+            ttm_np = implied_np
+
     bps_denom = wavg or total_sh
     eqo_q = (_bs(dq1c, "equity_owner") or _bs(dq1c, "equity"))
     if eqo_q is not None:

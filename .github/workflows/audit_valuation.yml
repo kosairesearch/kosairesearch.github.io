@@ -1,0 +1,44 @@
+name: 밸류에이션 자동 검증(audit)
+
+on:
+  workflow_dispatch:
+    inputs:
+      budget_min:
+        description: '시간예산(분)'
+        default: '50'
+  schedule:
+    - cron: '47 */6 * * *'   # 6시간마다 — 전 종목 네이버 대조 결과를 자동 갱신
+
+concurrency:
+  group: kos-audit
+  cancel-in-progress: false
+
+jobs:
+  audit:
+    runs-on: ubuntu-latest
+    timeout-minutes: 70
+    permissions:
+      contents: write
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - run: pip install -r requirements.txt
+      - name: 검증 실행
+        env:
+          DART_API_KEY: ${{ secrets.DART_API_KEY }}
+          BUDGET_MIN: ${{ inputs.budget_min || '50' }}
+        run: python scripts/audit_valuation.py 2>&1 | tee data/audit_run.log || true
+      - name: 결과 커밋
+        run: |
+          git config --global user.email "bot@kosairesearch.github.io"
+          git config --global user.name "KOS ai Bot"
+          git add -A data/valuation_audit.txt data/valuation_audit_state.json data/audit_run.log
+          git commit -m "🔍 밸류에이션 검증 $(TZ='Asia/Seoul' date +'%Y-%m-%d %H:%M KST')" || exit 0
+          ok=""
+          for i in 1 2 3 4 5; do
+            if git pull --rebase origin main && git push origin main; then ok=1; break; fi
+            git rebase --abort 2>/dev/null || true; sleep $((i*3))
+          done
+          [ -n "$ok" ] || exit 1
