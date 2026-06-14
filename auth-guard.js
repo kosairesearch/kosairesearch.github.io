@@ -139,7 +139,7 @@ function unlock(){ clearGate(); document.documentElement.classList.remove('kos-l
 window.KOSGate = { showLoginPopup: showLoginPopup, lockPage: lockPage };
 
 /* ---- 페이지 보호 ---- */
-var GATED = /^(industry v2|ticker detail v2|watchlist)\.html$/i;
+var GATED = /^(industry|stock|watchlist)\.html$/i;
 var page;
 try{ page = decodeURIComponent(here()); }catch(e){ page = here(); }
 
