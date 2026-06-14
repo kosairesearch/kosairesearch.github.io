@@ -132,6 +132,15 @@ def main():
     data_date = data.get("dataDate", "")
     stocks = sorted(data["stocks"], key=lambda s: s.get("mcap", 0) or 0, reverse=True)
 
+    # 특정 종목만(공시 트리거 등) 즉시 재수집: VAL_TICKERS="A,B,C"
+    #   기존 데이터는 보존하고 지정 종목만 신선도 무시하고 다시 가져온다.
+    only = [t for t in os.getenv("VAL_TICKERS", "").replace(" ", "").split(",") if t]
+    only_mode = bool(only)
+    if only_mode:
+        want = set(only)
+        stocks = [s for s in stocks if s["ticker"] in want]
+        log(f"- VAL_TICKERS 지정 — {len(stocks)}개만 즉시 재수집")
+
     # 갱신 정책: 종목별로 산식버전(_v)이 같고 최근 REFRESH_DAYS 이내에 수집했으면 건너뜀.
     #   → 평소엔 종목당 약 한 달마다 자동 재수집(분기 실적을 한 달 내 자동 반영),
     #     산식(VERSION)이 바뀌면 1회 전체 재수집. 매일 전체 재수집하지 않는다.
@@ -142,6 +151,8 @@ def main():
     existing = {} if force else load_existing()
 
     def needs(tk):
+        if only_mode:        # 지정 종목은 무조건 재수집
+            return True
         e = existing.get(tk)
         if not e or e.get("_v") != VERSION:
             return True
@@ -185,8 +196,8 @@ def main():
 
     write_out(existing, data_date)
     total = len(data["stocks"])
-    have = sum(1 for s in stocks if s["ticker"] in existing)
-    remaining = sum(1 for s in stocks if needs(s["ticker"]))
+    have = len(existing)
+    remaining = 0 if only_mode else sum(1 for s in stocks if needs(s["ticker"]))
     log(f"\n✅ 밸류에이션 수집 — 이번 {new}건 신규 / 건너뜀 {skipped} / 보유 {have}/{total}개 / 갱신필요 {remaining}개")
     if remaining > 0:
         log(f"- VALUATION_REMAINING {remaining}개 (다음 실행에서 이어받기)")

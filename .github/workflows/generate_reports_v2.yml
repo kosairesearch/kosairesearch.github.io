@@ -39,7 +39,9 @@ jobs:
           DART_API_KEY: ${{ secrets.DART_API_KEY }}
           KRX_ID: ${{ secrets.KRX_ID }}
           KRX_PW: ${{ secrets.KRX_PW }}
-          REPORT_MODEL_V2: 'claude-opus-4-8'
+          REPORT_MODEL_TOP: 'claude-opus-4-8'
+          REPORT_MODEL_REST: 'claude-sonnet-4-6'
+          REPORT_MODEL_TOP_N: '500'
           REPORT_TICKERS: ${{ inputs.tickers }}
           REPORT_TOP_N: ${{ inputs.top_n }}
           BATCH_MAX_WAIT_SEC: '10800'

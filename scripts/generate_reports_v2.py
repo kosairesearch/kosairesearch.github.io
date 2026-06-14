@@ -33,9 +33,18 @@ import generate_reports as g  # log/extract_text/collect_sources/load_stocks 재
 OUT_DIR = ROOT / "data" / "reports_v2"
 STATE_JS = ROOT / "data" / "batch_state_v2.json"
 
-MODEL = os.getenv("REPORT_MODEL_V2", "claude-opus-4-8")
+MODEL = os.getenv("REPORT_MODEL_V2", "claude-opus-4-8")  # 폴백
+# 모델 정책: 시총 상위 MODEL_TOP_N개는 고급 모델(Opus), 나머지는 효율 모델(Sonnet)
+MODEL_TOP = os.getenv("REPORT_MODEL_TOP", "claude-opus-4-8")
+MODEL_REST = os.getenv("REPORT_MODEL_REST", "claude-sonnet-4-6")
+MODEL_TOP_N = int(os.getenv("REPORT_MODEL_TOP_N", "500"))
 TOP_N = int(os.getenv("REPORT_TOP_N", "10"))
 MAX_WAIT = int(os.getenv("BATCH_MAX_WAIT_SEC", "10800"))
+
+
+def model_for(rank):
+    """시총 순위(1=최대)에 따른 모델 선택."""
+    return MODEL_TOP if (rank is not None and rank <= MODEL_TOP_N) else MODEL_REST
 
 TOOLS = [{"type": "web_search_20250305", "name": "web_search", "max_uses": 6,
           "blocked_domains": ["namu.wiki", "librewiki.net", "dcinside.com", "fmkorea.com"],
@@ -646,20 +655,25 @@ def submit(cl, as_of):
     from anthropic.types.messages.batch_create_params import Request
 
     data, targets = pick_targets()
-    log(f"## 🤖 리포트 v2 Batch 제출 — {len(targets)}개 · 모델 {MODEL}")
+    # 전체 universe 시총 순위(1=최대) → 종목별 모델 결정
+    ranked = sorted(data["stocks"], key=lambda s: s.get("mcap", 0) or 0, reverse=True)
+    rank_of = {s["ticker"]: i + 1 for i, s in enumerate(ranked)}
+    log(f"## 🤖 리포트 v2 Batch 제출 — {len(targets)}개 · 상위{MODEL_TOP_N} {MODEL_TOP} / 나머지 {MODEL_REST}")
     quants = collect_all_quant(targets, data)
 
-    reqs = []
+    reqs, models = [], {}
     for st in targets:
         tk = st["ticker"]
         if tk not in quants or not quants[tk]["annual"]:
             log(f"  · ⚠️ {tk} 정량 데이터 없음 — 제외")
             continue
+        mdl = model_for(rank_of.get(tk))
+        models[tk] = mdl
         prompt = build_prompt_v2(st, quants[tk], as_of)
         reqs.append(Request(
             custom_id=tk,
             params=MessageCreateParamsNonStreaming(
-                model=MODEL, max_tokens=96000,
+                model=mdl, max_tokens=96000,
                 system=[{"type": "text", "text": SYSTEM_V2, "cache_control": {"type": "ephemeral"}}],
                 thinking={"type": "adaptive"},
                 tools=TOOLS,
@@ -669,10 +683,12 @@ def submit(cl, as_of):
     if not reqs:
         log("❌ 제출할 요청이 없습니다.")
         sys.exit(1)
+    n_top = sum(1 for m in models.values() if m == MODEL_TOP)
+    log(f"- 모델 배분: {MODEL_TOP} {n_top}개 · {MODEL_REST} {len(models)-n_top}개")
 
     batch = cl.messages.batches.create(requests=reqs)
     OUT_DIR.mkdir(parents=True, exist_ok=True)
-    state = {"batch_id": batch.id, "created": as_of, "model": MODEL,
+    state = {"batch_id": batch.id, "created": as_of, "model": MODEL, "models": models,
              "dataDate": data.get("dataDate", ""), "count": len(reqs),
              "quant": quants}
     STATE_JS.write_text(json.dumps(state, ensure_ascii=False, indent=1), encoding="utf-8")
@@ -727,7 +743,7 @@ def collect(cl, as_of):
                 rep["sources"] = srcs[:18]
             st = by_tk.get(tk, {})
             rep.update({
-                "v": 2, "model": state.get("model", MODEL),
+                "v": 2, "model": (state.get("models", {}).get(tk) or state.get("model", MODEL)),
                 "ticker": tk, "name": st.get("name", tk),
                 "name_en": st.get("name_en", st.get("name", tk)),
                 "sector": st.get("sector", ""), "categories": st.get("categories", []),

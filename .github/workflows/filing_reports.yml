@@ -39,19 +39,31 @@ jobs:
           FILINGS_LOOKBACK_DAYS: ${{ vars.FILINGS_LOOKBACK_DAYS || '30' }}
         run: python scripts/check_filings.py
 
-      - name: 신규 제출 종목 리포트 생성 (batch API)
+      - name: 신규 제출 종목 밸류에이션 즉시 갱신
+        if: steps.filings.outputs.count != '0' && steps.filings.outputs.count != ''
+        env:
+          DART_API_KEY: ${{ secrets.DART_API_KEY }}
+          KRX_ID: ${{ secrets.KRX_ID }}
+          KRX_PW: ${{ secrets.KRX_PW }}
+          VAL_TICKERS: ${{ steps.filings.outputs.new_tickers }}
+        run: python scripts/collect_valuation.py 2>&1 | tee data/valuation_run.log || true
+
+      - name: 신규 제출 종목 리포트 생성 (v2 · batch · 상위500 Opus/나머지 Sonnet)
         if: steps.filings.outputs.count != '0' && steps.filings.outputs.count != ''
         env:
           ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
           DART_API_KEY: ${{ secrets.DART_API_KEY }}
-          REPORT_MODEL: ${{ vars.REPORT_MODEL || 'claude-sonnet-4-6' }}
+          KRX_ID: ${{ secrets.KRX_ID }}
+          KRX_PW: ${{ secrets.KRX_PW }}
+          REPORT_MODEL_TOP: 'claude-opus-4-8'
+          REPORT_MODEL_REST: 'claude-sonnet-4-6'
+          REPORT_MODEL_TOP_N: '500'
           REPORT_TICKERS: ${{ steps.filings.outputs.new_tickers }}
-          REPORT_FORCE: '1'   # 새 분기 실적이므로 기존 리포트가 있어도 갱신
           BATCH_MAX_WAIT_SEC: ${{ vars.BATCH_MAX_WAIT_SEC || '18000' }}
         run: |
           set -o pipefail
-          echo "=== 공시 트리거 생성(batch) $(date -u) · 대상 ${{ steps.filings.outputs.new_tickers }} ===" > data/reports_run.log
-          python scripts/generate_reports_batch.py auto 2>&1 | tee -a data/reports_run.log
+          echo "=== 공시 트리거 v2 생성 $(date -u) · 대상 ${{ steps.filings.outputs.new_tickers }} ===" > data/reports_v2_run.log
+          python scripts/generate_reports_v2.py auto 2>&1 | tee -a data/reports_v2_run.log
 
       - name: 커밋 & 푸시
         if: always()
