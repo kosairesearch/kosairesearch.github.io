@@ -322,17 +322,20 @@ def collect_quant(dart, ticker, krx_row, stock):
     bps_q = int(eqo_q / bps_denom) if (eqo_q and bps_denom) else None
     pbr_q = round(price / bps_q, 2) if (bps_q and price) else None
 
-    # ROE(TTM) = 최근 4개 분기 지배순이익 ÷ 평균 지배자본(전기말·최근분기말) — 토스·FnGuide 방식
+    # ROE(TTM) = 최근 4개 분기 지배순이익 ÷ 직전 사업연도말 지배자본 (토스 방식과 정합)
     fy_eqo = fy_row.get("equity_owner") if fy_row else None
     avg_eq = ((fy_eqo + eqo_q) / 2) if (fy_eqo and eqo_q) else (eqo_q or fy_eqo)
-    roe_ttm = round(ttm_np / avg_eq * 100, 1) if (ttm_np is not None and avg_eq) else None
+    def _roe(eq): return round(ttm_np / eq * 100, 1) if (ttm_np is not None and eq) else None
+    roe_ttm = _roe(fy_eqo) or _roe(avg_eq)          # 1순위: 직전결산말 자본
+    roe_fyend = _roe(fy_eqo); roe_latest = _roe(eqo_q); roe_avg = _roe(avg_eq)  # 검증용
 
     valuation = {
         "price": price, "mcap": stock.get("mcap"), "shares": stock.get("shares"),
         "total_shares": total_sh, "wavg_shares": int(wavg) if wavg else None,
         "per": per_ttm, "eps": eps_ttm,          # 최근 4개 분기 순이익 ÷ 가중평균유통주식수 (네이버 방식)
         "pbr": pbr_q, "bps": bps_q,              # 최근 분기말 지배주주 자본 ÷ 유통주식수 (네이버 방식)
-        "roe_ttm": roe_ttm,                      # 헤드라인 ROE(최근 4분기 ÷ 평균자본)
+        "roe_ttm": roe_ttm,                      # 헤드라인 ROE(최근 4분기 ÷ 직전결산말 자본)
+        "roe_fyend": roe_fyend, "roe_avg": roe_avg, "roe_latest": roe_latest,  # 검증용
         "ttm_window": f"{py}Q2~{cur}Q1" if ttm_np else None,
         "ttm_np_owner": ttm_np,
         "pbr_krx": None, "bps_krx": None,        # KRX 공식값(참고·대조용)
@@ -456,7 +459,8 @@ def quant_summary(name, q):
         lines.append(f"  {r['q']}: 매출 {_eok(r['rev'])} 영업이익 {_eok(r['op'])} 지배순이익 {_eok(r['np_owner'])}")
     v = q["valuation"]
     lines.append(f"  PER {v.get('per')} | EPS {v.get('eps')} | PBR {v.get('pbr')} | "
-                 f"BPS {v.get('bps')} | ROE(TTM) {v.get('roe_ttm')} | 배당 {v.get('div')}% | DPS {v.get('dps')}")
+                 f"BPS {v.get('bps')} | ROE {v.get('roe_ttm')} | 배당 {v.get('div')}% | DPS {v.get('dps')}")
+    lines.append(f"    [ROE 검증] 직전결산말 {v.get('roe_fyend')} · 평균 {v.get('roe_avg')} · 최근분기 {v.get('roe_latest')}")
     return "\n".join(lines)
 
 
