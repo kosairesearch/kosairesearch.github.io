@@ -1,4 +1,4 @@
-- 리포트 동기화 99건 — 그리드=리포트 항상 일치(무료)
+- VAL_TICKERS 지정 — 1개만 즉시 재수집
 reprt_code='11011', fs_div='CFS' (사업보고서, 연결제무제표)'
 reprt_code='11011', fs_div='CFS' (사업보고서, 연결제무제표)'
 reprt_code='11011', fs_div='CFS' (사업보고서, 연결제무제표)'
@@ -7,106 +7,9 @@ reprt_code='11013', fs_div='CFS' (1분기보고서, 연결제무제표)'
 reprt_code='11012', fs_div='CFS' (반기보고서, 연결제무제표)'
 reprt_code='11014', fs_div='CFS' (3분기보고서, 연결제무제표)'
 reprt_code='11013', fs_div='CFS' (1분기보고서, 연결제무제표)'
-  ✅ 펄어비스 검증 통과 PER 17.7 PBR 2.63 EPS 2319 BPS 15657
-  · 263750 펄어비스: EPS=2319 BPS=15657 ROE=16.8 DPS=0.0 성장=6.8
-reprt_code='11011', fs_div='CFS' (사업보고서, 연결제무제표)'
-reprt_code='11011', fs_div='CFS' (사업보고서, 연결제무제표)'
-reprt_code='11011', fs_div='CFS' (사업보고서, 연결제무제표)'
-reprt_code='11011', fs_div='CFS' (사업보고서, 연결제무제표)'
-reprt_code='11013', fs_div='CFS' (1분기보고서, 연결제무제표)'
-reprt_code='11012', fs_div='CFS' (반기보고서, 연결제무제표)'
-reprt_code='11014', fs_div='CFS' (3분기보고서, 연결제무제표)'
-reprt_code='11013', fs_div='CFS' (1분기보고서, 연결제무제표)'
-  ✅ SK네트웍스 검증 통과 PER 26.1 PBR 1.23 EPS 498 BPS 10607
-  · 001740 SK네트웍스: EPS=498 BPS=10607 ROE=4.8 DPS=250.0 성장=-11.9
-reprt_code='11011', fs_div='CFS' (사업보고서, 연결제무제표)'
-reprt_code='11011', fs_div='CFS' (사업보고서, 연결제무제표)'
-reprt_code='11011', fs_div='CFS' (사업보고서, 연결제무제표)'
-reprt_code='11011', fs_div='CFS' (사업보고서, 연결제무제표)'
-reprt_code='11013', fs_div='CFS' (1분기보고서, 연결제무제표)'
-reprt_code='11012', fs_div='CFS' (반기보고서, 연결제무제표)'
-reprt_code='11014', fs_div='CFS' (3분기보고서, 연결제무제표)'
-reprt_code='11013', fs_div='CFS' (1분기보고서, 연결제무제표)'
-  ✅ 한국앤컴퍼니 검증 통과 PER 7.3 PBR 0.52 EPS 3754 BPS 52321
-  · 000240 한국앤컴퍼니: EPS=3754 BPS=52321 ROE=7.5 DPS=1100.0 성장=4.8
-reprt_code='11011', fs_div='CFS' (사업보고서, 연결제무제표)'
-reprt_code='11011', fs_div='CFS' (사업보고서, 연결제무제표)'
-reprt_code='11011', fs_div='CFS' (사업보고서, 연결제무제표)'
-reprt_code='11011', fs_div='CFS' (사업보고서, 연결제무제표)'
-reprt_code='11013', fs_div='CFS' (1분기보고서, 연결제무제표)'
-reprt_code='11012', fs_div='CFS' (반기보고서, 연결제무제표)'
-reprt_code='11014', fs_div='CFS' (3분기보고서, 연결제무제표)'
-reprt_code='11013', fs_div='CFS' (1분기보고서, 연결제무제표)'
-  ✅ 에스티팜 검증 통과 PER 36.1 PBR 4.14 EPS 3379 BPS 29436
-  · 237690 에스티팜: EPS=3379 BPS=29436 ROE=12.5 DPS=500.0 성장=21.2
-reprt_code='11011', fs_div='CFS' (사업보고서, 연결제무제표)'
-reprt_code='11011', fs_div='CFS' (사업보고서, 연결제무제표)'
-reprt_code='11011', fs_div='CFS' (사업보고서, 연결제무제표)'
-reprt_code='11011', fs_div='CFS' (사업보고서, 연결제무제표)'
-reprt_code='11013', fs_div='CFS' (1분기보고서, 연결제무제표)'
-reprt_code='11012', fs_div='CFS' (반기보고서, 연결제무제표)'
-reprt_code='11014', fs_div='CFS' (3분기보고서, 연결제무제표)'
-reprt_code='11013', fs_div='CFS' (1분기보고서, 연결제무제표)'
-  ✅ 동서 검증 통과 PER 17.5 PBR 1.5 EPS 1460 BPS 17029
-  · 026960 동서: EPS=1460 BPS=17029 ROE=8.7 DPS=1140.0 성장=9.0
-reprt_code='11011', fs_div='CFS' (사업보고서, 연결제무제표)'
-reprt_code='11011', fs_div='CFS' (사업보고서, 연결제무제표)'
-{'status': '013', 'message': '조회된 데이타가 없습니다.'}
+  [단위보정] 241560 ×1000 (천원/백만원 단위 공시 추정)
+  ❌ 두산밥캣 중대오류 차단 → 해당 지표 숨김: EPS 3073↔ref 4411.0 / BPS 52143↔ref 79003.0
+  · 241560 두산밥캣: EPS=None BPS=None ROE=6.1 DPS=1700.0 성장=-1.4
 
-reprt_code='11011', fs_div='OFS' (사업보고서, 별도(개별)제무제표)'
-reprt_code='11011', fs_div='CFS' (사업보고서, 연결제무제표)'
-{'status': '013', 'message': '조회된 데이타가 없습니다.'}
-
-reprt_code='11011', fs_div='OFS' (사업보고서, 별도(개별)제무제표)'
-reprt_code='11011', fs_div='CFS' (사업보고서, 연결제무제표)'
-{'status': '013', 'message': '조회된 데이타가 없습니다.'}
-
-reprt_code='11011', fs_div='OFS' (사업보고서, 별도(개별)제무제표)'
-{'status': '013', 'message': '조회된 데이타가 없습니다.'}
-
-reprt_code='11013', fs_div='CFS' (1분기보고서, 연결제무제표)'
-{'status': '013', 'message': '조회된 데이타가 없습니다.'}
-
-reprt_code='11013', fs_div='OFS' (1분기보고서, 별도(개별)제무제표)'
-reprt_code='11012', fs_div='CFS' (반기보고서, 연결제무제표)'
-{'status': '013', 'message': '조회된 데이타가 없습니다.'}
-
-reprt_code='11012', fs_div='OFS' (반기보고서, 별도(개별)제무제표)'
-reprt_code='11014', fs_div='CFS' (3분기보고서, 연결제무제표)'
-reprt_code='11013', fs_div='CFS' (1분기보고서, 연결제무제표)'
-  ✅ 이수스페셜티케미컬 검증 통과 PER None PBR 18.28 EPS -38 BPS 4556
-  · 457190 이수스페셜티케미컬: EPS=-38 BPS=4556 ROE=-0.9 DPS=None 성장=23.9
-reprt_code='11011', fs_div='CFS' (사업보고서, 연결제무제표)'
-reprt_code='11011', fs_div='CFS' (사업보고서, 연결제무제표)'
-reprt_code='11011', fs_div='CFS' (사업보고서, 연결제무제표)'
-reprt_code='11011', fs_div='CFS' (사업보고서, 연결제무제표)'
-reprt_code='11013', fs_div='CFS' (1분기보고서, 연결제무제표)'
-reprt_code='11012', fs_div='CFS' (반기보고서, 연결제무제표)'
-reprt_code='11014', fs_div='CFS' (3분기보고서, 연결제무제표)'
-reprt_code='11013', fs_div='CFS' (1분기보고서, 연결제무제표)'
-  ✅ 비에이치아이 검증 통과 PER 40.5 PBR 13.63 EPS 1991 BPS 5915
-  · 083650 비에이치아이: EPS=1991 BPS=5915 ROE=40.1 DPS=None 성장=91.3
-reprt_code='11011', fs_div='CFS' (사업보고서, 연결제무제표)'
-reprt_code='11011', fs_div='CFS' (사업보고서, 연결제무제표)'
-reprt_code='11011', fs_div='CFS' (사업보고서, 연결제무제표)'
-reprt_code='11011', fs_div='CFS' (사업보고서, 연결제무제표)'
-reprt_code='11013', fs_div='CFS' (1분기보고서, 연결제무제표)'
-reprt_code='11012', fs_div='CFS' (반기보고서, 연결제무제표)'
-reprt_code='11014', fs_div='CFS' (3분기보고서, 연결제무제표)'
-reprt_code='11013', fs_div='CFS' (1분기보고서, 연결제무제표)'
-  ✅ 이마트 검증 통과 PER 19.0 PBR 0.21 EPS 4675 BPS 431955
-  · 139480 이마트: EPS=4675 BPS=431955 ROE=1.1 DPS=2500.0 성장=-0.2
-reprt_code='11011', fs_div='CFS' (사업보고서, 연결제무제표)'
-reprt_code='11011', fs_div='CFS' (사업보고서, 연결제무제표)'
-reprt_code='11011', fs_div='CFS' (사업보고서, 연결제무제표)'
-reprt_code='11011', fs_div='CFS' (사업보고서, 연결제무제표)'
-reprt_code='11013', fs_div='CFS' (1분기보고서, 연결제무제표)'
-reprt_code='11012', fs_div='CFS' (반기보고서, 연결제무제표)'
-reprt_code='11014', fs_div='CFS' (3분기보고서, 연결제무제표)'
-reprt_code='11013', fs_div='CFS' (1분기보고서, 연결제무제표)'
-  ❌ 영원무역홀딩스 중대오류 차단 → 해당 지표 숨김: EPS 34022↔ref 29208.0
-  · 009970 영원무역홀딩스: EPS=None BPS=269080 ROE=13.5 DPS=6576.0 성장=13.7
-- ⏳ 시간예산 초과 — 저장 후 종료(다음 실행 이어받기). 처리 9건
-
-✅ 밸류에이션 수집 — 이번 9건 신규 / 건너뜀 196 / 보유 952/2687개 / 갱신필요 2470개
-- VALUATION_REMAINING 2470개 (다음 실행에서 이어받기)
+✅ 밸류에이션 수집 — 이번 1건 신규 / 건너뜀 0 / 보유 952/2687개 / 갱신필요 0개
+- VALUATION_COMPLETE 전 종목 최신 — 추가 수집 없음
