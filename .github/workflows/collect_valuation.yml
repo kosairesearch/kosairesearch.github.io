@@ -9,6 +9,9 @@ on:
       force:
         description: '전부 재수집(분기 갱신 시 1)'
         default: ''
+      tickers:
+        description: '특정 종목만 즉시 재수집(쉼표 구분, 테스트용)'
+        default: ''
   schedule:
     - cron: '17 * * * *'   # 매시간(안전망) — 완료되면 즉시 종료라 부담 없음
 
@@ -40,6 +43,7 @@ jobs:
           KRX_PW: ${{ secrets.KRX_PW }}
           BUDGET_MIN: ${{ inputs.budget_min || '50' }}
           FORCE: ${{ inputs.force }}
+          VAL_TICKERS: ${{ inputs.tickers }}
         run: |
           python scripts/collect_valuation.py 2>&1 | tee data/valuation_run.log || true
 
