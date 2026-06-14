@@ -72,7 +72,11 @@ def collect_one(dart, ticker, stock):
     q_py = v2._fin_all(dart, ticker, py, "11013")      # 작년 1분기
 
     out = {}
-    total_sh = v2.dart_total_shares(dart, ticker) or stock.get("shares") or 0
+    sh = stock.get("shares") or 0          # KRX 발행주식수(정확)
+    total_sh = v2.dart_total_shares(dart, ticker) or sh
+    # DART 주식총수가 KRX 대비 비정상(0.5~3배 벗어남)이면 KRX값으로 폴백 — 추출 오류 방어
+    if sh and total_sh and not (0.5 * sh <= total_sh <= 3 * sh):
+        total_sh = sh
     price = stock.get("price") or 0
 
     # 지배주주 순이익(연간·분기)
@@ -172,7 +176,7 @@ def main():
     # 갱신 정책: 종목별로 산식버전(_v)이 같고 최근 REFRESH_DAYS 이내에 수집했으면 건너뜀.
     #   → 평소엔 종목당 약 한 달마다 자동 재수집(분기 실적을 한 달 내 자동 반영),
     #     산식(VERSION)이 바뀌면 1회 전체 재수집. 매일 전체 재수집하지 않는다.
-    VERSION = "r4"  # + 네이버/상식범위 검증 게이트(틀린 값 숨김)
+    VERSION = "r5"  # + 주식총수 KRX 폴백 가드(추출오류 방어)
     REFRESH_DAYS = int(os.getenv("REFRESH_DAYS", "30"))
     today = datetime.date.today()
     force = os.getenv("FORCE") == "1"

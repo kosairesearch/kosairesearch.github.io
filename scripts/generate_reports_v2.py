@@ -297,7 +297,11 @@ def collect_quant(dart, ticker, krx_row, stock):
             ttm_np = fy_np - py_q1 + cy_q1
 
     price = stock.get("price")
-    total_sh = dart_total_shares(dart, ticker) or stock.get("shares") or 0
+    sh = stock.get("shares") or 0          # KRX 발행주식수(정확)
+    total_sh = dart_total_shares(dart, ticker) or sh
+    # DART 주식총수가 KRX 대비 비정상(0.5~3배 벗어남)이면 KRX값으로 폴백 — 추출 오류 방어
+    if sh and total_sh and not (0.5 * sh <= total_sh <= 3 * sh):
+        total_sh = sh
 
     # 가중평균 유통주식수 = 회사 공시 (지배주주 순이익 ÷ 공시 기본EPS) 로 역산.
     #   네이버·토스가 쓰는 분모와 같아져 EPS·PER이 일치한다. 자기주식이 자동 제외됨.
