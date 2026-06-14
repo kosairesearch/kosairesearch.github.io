@@ -130,11 +130,29 @@ def main():
 
     data = g.load_stocks()
     data_date = data.get("dataDate", "")
-    # 같은 데이터일자+산식버전 기준 재수집 방지. 산식 바뀌면 버전을 올려 전체 재수집 유도.
-    quarter_tag = data_date + "-r2"  # r2: ROE를 TTM(평균자본) 방식으로 전환
     stocks = sorted(data["stocks"], key=lambda s: s.get("mcap", 0) or 0, reverse=True)
 
-    existing = {} if os.getenv("FORCE") == "1" else load_existing()
+    # 갱신 정책: 종목별로 산식버전(_v)이 같고 최근 REFRESH_DAYS 이내에 수집했으면 건너뜀.
+    #   → 평소엔 종목당 약 한 달마다 자동 재수집(분기 실적을 한 달 내 자동 반영),
+    #     산식(VERSION)이 바뀌면 1회 전체 재수집. 매일 전체 재수집하지 않는다.
+    VERSION = "r2"  # ROE를 TTM(평균자본) 방식으로 — 변경 시 올리면 전체 재수집
+    REFRESH_DAYS = int(os.getenv("REFRESH_DAYS", "30"))
+    today = datetime.date.today()
+    force = os.getenv("FORCE") == "1"
+    existing = {} if force else load_existing()
+
+    def needs(tk):
+        e = existing.get(tk)
+        if not e or e.get("_v") != VERSION:
+            return True
+        d = e.get("_d")
+        try:
+            if d and (today - datetime.date.fromisoformat(d)).days < REFRESH_DAYS:
+                return False
+        except Exception:
+            pass
+        return True
+
     budget = int(os.getenv("BUDGET_MIN", "50")) * 60
     t0 = time.time()
 
@@ -143,7 +161,7 @@ def main():
     new = 0
     for s in stocks:
         tk = s["ticker"]
-        if tk in existing and existing[tk].get("_q") == quarter_tag:
+        if not force and not needs(tk):
             skipped += 1
             continue
         if time.time() - t0 > budget:
@@ -151,7 +169,8 @@ def main():
             break
         try:
             v = collect_one(dart, tk, s)
-            v["_q"] = quarter_tag
+            v["_v"] = VERSION
+            v["_d"] = today.isoformat()
             existing[tk] = v
             new += 1
             if v:
@@ -167,11 +186,12 @@ def main():
     write_out(existing, data_date)
     total = len(data["stocks"])
     have = sum(1 for s in stocks if s["ticker"] in existing)
-    log(f"\n✅ 밸류에이션 수집 — 이번 {new}건 신규 / 건너뜀 {skipped} / 누적 {have}/{total}개")
-    if have < total:
-        log(f"- VALUATION_REMAINING {total-have}개는 다음 실행에서 이어받기")
+    remaining = sum(1 for s in stocks if needs(s["ticker"]))
+    log(f"\n✅ 밸류에이션 수집 — 이번 {new}건 신규 / 건너뜀 {skipped} / 보유 {have}/{total}개 / 갱신필요 {remaining}개")
+    if remaining > 0:
+        log(f"- VALUATION_REMAINING {remaining}개 (다음 실행에서 이어받기)")
     else:
-        log("- VALUATION_COMPLETE 전 종목 수집 완료")
+        log("- VALUATION_COMPLETE 전 종목 최신 — 추가 수집 없음")
 
 
 if __name__ == "__main__":
