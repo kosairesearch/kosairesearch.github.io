@@ -1,93 +1,52 @@
-- VAL_TICKERS 지정 — 13개만 즉시 재수집
+- VAL_TICKERS 지정 — 8개만 즉시 재수집
+  · 323410 카카오뱅크: EPS=1111 BPS=13902 ROE=8.1 DPS=460.0 성장=4.8
+  ✅ 삼성에피스홀딩스 PER None(네이버 21.05) PBR None(네이버 1.85) EPS None(네이버 21211.0) BPS None(네이버 241829.0)
+  · 0126Z0 삼성에피스홀딩스: EPS=None BPS=None ROE=None DPS=None 성장=None
+  · 950160 코오롱티슈진: EPS=None BPS=None ROE=-192.1 DPS=None 성장=-2.5
+  · 058470 리노공업: EPS=2138 BPS=9365 ROE=24.7 DPS=800.0 성장=33.9
+reprt_code='11011', fs_div='CFS' (사업보고서, 연결제무제표)'
+reprt_code='11011', fs_div='CFS' (사업보고서, 연결제무제표)'
 reprt_code='11011', fs_div='CFS' (사업보고서, 연결제무제표)'
 reprt_code='11011', fs_div='CFS' (사업보고서, 연결제무제표)'
 reprt_code='11013', fs_div='CFS' (1분기보고서, 연결제무제표)'
+reprt_code='11012', fs_div='CFS' (반기보고서, 연결제무제표)'
+reprt_code='11014', fs_div='CFS' (3분기보고서, 연결제무제표)'
 reprt_code='11013', fs_div='CFS' (1분기보고서, 연결제무제표)'
-  · 277810 레인보우로보틱스: EPS=64 BPS=6920 ROE=0.9 DPS=None 성장=76.4
-reprt_code='11011', fs_div='CFS' (사업보고서, 연결제무제표)'
-{'status': '013', 'message': '조회된 데이타가 없습니다.'}
-
-reprt_code='11011', fs_div='OFS' (사업보고서, 별도(개별)제무제표)'
-reprt_code='11011', fs_div='CFS' (사업보고서, 연결제무제표)'
-{'status': '013', 'message': '조회된 데이타가 없습니다.'}
-
-reprt_code='11011', fs_div='OFS' (사업보고서, 별도(개별)제무제표)'
-reprt_code='11013', fs_div='CFS' (1분기보고서, 연결제무제표)'
-{'status': '013', 'message': '조회된 데이타가 없습니다.'}
-
-reprt_code='11013', fs_div='OFS' (1분기보고서, 별도(개별)제무제표)'
-reprt_code='11013', fs_div='CFS' (1분기보고서, 연결제무제표)'
-{'status': '013', 'message': '조회된 데이타가 없습니다.'}
-
-reprt_code='11013', fs_div='OFS' (1분기보고서, 별도(개별)제무제표)'
-  · 950160 코오롱티슈진: EPS=None BPS=None ROE=None DPS=None 성장=-2.5
-reprt_code='11011', fs_div='CFS' (사업보고서, 연결제무제표)'
-reprt_code='11011', fs_div='CFS' (사업보고서, 연결제무제표)'
-reprt_code='11013', fs_div='CFS' (1분기보고서, 연결제무제표)'
-reprt_code='11013', fs_div='CFS' (1분기보고서, 연결제무제표)'
+  ❌ 두산밥캣 중대오류 차단 → 해당 지표 숨김: EPS 3↔네이버 4411.0 / BPS 52↔네이버 79003.0
   · 241560 두산밥캣: EPS=None BPS=None ROE=6.1 DPS=1700.0 성장=-1.4
 reprt_code='11011', fs_div='CFS' (사업보고서, 연결제무제표)'
 reprt_code='11011', fs_div='CFS' (사업보고서, 연결제무제표)'
-reprt_code='11013', fs_div='CFS' (1분기보고서, 연결제무제표)'
-reprt_code='11013', fs_div='CFS' (1분기보고서, 연결제무제표)'
-  · 417200 LS머트리얼즈: EPS=9 BPS=2645 ROE=0.3 DPS=22.0 성장=8.1
 reprt_code='11011', fs_div='CFS' (사업보고서, 연결제무제표)'
 reprt_code='11011', fs_div='CFS' (사업보고서, 연결제무제표)'
 reprt_code='11013', fs_div='CFS' (1분기보고서, 연결제무제표)'
+reprt_code='11012', fs_div='CFS' (반기보고서, 연결제무제표)'
+reprt_code='11014', fs_div='CFS' (3분기보고서, 연결제무제표)'
 reprt_code='11013', fs_div='CFS' (1분기보고서, 연결제무제표)'
+  ❌ 원익QnC 중대오류 차단 → 해당 지표 숨김: EPS -7↔네이버 889.0
   · 074600 원익QnC: EPS=None BPS=22085 ROE=-0.0 DPS=130.0 성장=5.8
 reprt_code='11011', fs_div='CFS' (사업보고서, 연결제무제표)'
 reprt_code='11011', fs_div='CFS' (사업보고서, 연결제무제표)'
-reprt_code='11013', fs_div='CFS' (1분기보고서, 연결제무제표)'
-reprt_code='11013', fs_div='CFS' (1분기보고서, 연결제무제표)'
-  · 064290 인텍플러스: EPS=19 BPS=3673 ROE=0.6 DPS=0.0 성장=7.0
 reprt_code='11011', fs_div='CFS' (사업보고서, 연결제무제표)'
 reprt_code='11011', fs_div='CFS' (사업보고서, 연결제무제표)'
+reprt_code='11013', fs_div='CFS' (1분기보고서, 연결제무제표)'
+reprt_code='11012', fs_div='CFS' (반기보고서, 연결제무제표)'
+reprt_code='11014', fs_div='CFS' (3분기보고서, 연결제무제표)'
 reprt_code='11013', fs_div='CFS' (1분기보고서, 연결제무제표)'
 {'status': '013', 'message': '조회된 데이타가 없습니다.'}
 
 reprt_code='11013', fs_div='OFS' (1분기보고서, 별도(개별)제무제표)'
-{'status': '013', 'message': '조회된 데이타가 없습니다.'}
-
-reprt_code='11013', fs_div='CFS' (1분기보고서, 연결제무제표)'
-{'status': '013', 'message': '조회된 데이타가 없습니다.'}
-  · 950210 프레스티지바이오파마: EPS=None BPS=None ROE=None DPS=None 성장=1875.4
+  ✅ 네오팜 PER 9.4(네이버 9.37) PBR 1.4(네이버 1.39) EPS 1828(네이버 1829.0) BPS 12273(네이버 12282.0)
+  · 092730 네오팜: EPS=1828 BPS=12273 ROE=16.0 DPS=None 성장=11.1
 reprt_code='11011', fs_div='CFS' (사업보고서, 연결제무제표)'
 reprt_code='11011', fs_div='CFS' (사업보고서, 연결제무제표)'
-{'status': '013', 'message': '조회된 데이타가 없습니다.'}
-
-reprt_code='11011', fs_div='OFS' (사업보고서, 별도(개별)제무제표)'
-reprt_code='11013', fs_div='CFS' (1분기보고서, 연결제무제표)'
-reprt_code='11013', fs_div='CFS' (1분기보고서, 연결제무제표)'
-  · 376270 HEM파마: EPS=-3555 BPS=202 ROE=-197.4 DPS=0.0 성장=-13.9
 reprt_code='11011', fs_div='CFS' (사업보고서, 연결제무제표)'
 reprt_code='11011', fs_div='CFS' (사업보고서, 연결제무제표)'
 reprt_code='11013', fs_div='CFS' (1분기보고서, 연결제무제표)'
+reprt_code='11012', fs_div='CFS' (반기보고서, 연결제무제표)'
+reprt_code='11014', fs_div='CFS' (3분기보고서, 연결제무제표)'
 reprt_code='11013', fs_div='CFS' (1분기보고서, 연결제무제표)'
-  · 900140 엘브이엠씨홀딩스: EPS=None BPS=None ROE=3.3 DPS=0.0 성장=27.5
-reprt_code='11011', fs_div='CFS' (사업보고서, 연결제무제표)'
-reprt_code='11011', fs_div='CFS' (사업보고서, 연결제무제표)'
-reprt_code='11013', fs_div='CFS' (1분기보고서, 연결제무제표)'
-{'status': '013', 'message': '조회된 데이타가 없습니다.'}
-
-reprt_code='11013', fs_div='OFS' (1분기보고서, 별도(개별)제무제표)'
-reprt_code='11013', fs_div='CFS' (1분기보고서, 연결제무제표)'
-  · 092730 네오팜: EPS=None BPS=12273 ROE=None DPS=None 성장=11.1
-reprt_code='11011', fs_div='CFS' (사업보고서, 연결제무제표)'
-reprt_code='11011', fs_div='CFS' (사업보고서, 연결제무제표)'
-reprt_code='11013', fs_div='CFS' (1분기보고서, 연결제무제표)'
-reprt_code='11013', fs_div='CFS' (1분기보고서, 연결제무제표)'
-  · 448280 에코아이: EPS=4 BPS=4022 ROE=0.1 DPS=70.0 성장=20.0
-reprt_code='11011', fs_div='CFS' (사업보고서, 연결제무제표)'
-reprt_code='11011', fs_div='CFS' (사업보고서, 연결제무제표)'
-reprt_code='11013', fs_div='CFS' (1분기보고서, 연결제무제표)'
-reprt_code='11013', fs_div='CFS' (1분기보고서, 연결제무제표)'
-  · 084990 헬릭스미스: EPS=-6 BPS=3017 ROE=-0.2 DPS=None 성장=-47.8
-reprt_code='11011', fs_div='CFS' (사업보고서, 연결제무제표)'
-reprt_code='11011', fs_div='CFS' (사업보고서, 연결제무제표)'
-reprt_code='11013', fs_div='CFS' (1분기보고서, 연결제무제표)'
-reprt_code='11013', fs_div='CFS' (1분기보고서, 연결제무제표)'
+  ❌ 스카이라이프 중대오류 차단 → 해당 지표 숨김: EPS 4↔네이버 85.0 / BPS 35894↔네이버 11172.0
   · 053210 스카이라이프: EPS=None BPS=None ROE=0.0 DPS=350.0 성장=-3.8
 
-✅ 밸류에이션 수집 — 이번 13건 신규 / 건너뜀 0 / 보유 952/2687개 / 갱신필요 0개
+✅ 밸류에이션 수집 — 이번 8건 신규 / 건너뜀 0 / 보유 952/2687개 / 갱신필요 0개
 - VALUATION_COMPLETE 전 종목 최신 — 추가 수집 없음
