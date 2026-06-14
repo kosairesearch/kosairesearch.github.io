@@ -81,6 +81,7 @@ def collect_one(dart, ticker, stock):
     qc_np = v2._cum(q_cur, "np_owner") if q_cur else None
     qp_np = v2._cum(q_py, "np_owner") if q_py else None
     qc_eqo = (v2._bs(q_cur, "equity_owner") or v2._bs(q_cur, "equity")) if q_cur else None
+    qp_eqo = (v2._bs(q_py, "equity_owner") or v2._bs(q_py, "equity")) if q_py else None
 
     # TTM 지배순이익 = 최근연간 − 작년1Q + 올해1Q
     ttm = (a1_np - qp_np + qc_np) if None not in (a1_np, qp_np, qc_np) else None
@@ -101,10 +102,10 @@ def collect_one(dart, ticker, stock):
     if eqo_latest and bps_denom:
         out["bps"] = int(eqo_latest / bps_denom)
 
-    # ROE(TTM) = 최근 4분기 지배순이익 ÷ 평균 지배자본(전기말·최근분기말) — 토스 방식
-    avg_eq = ((a1_eqo + qc_eqo) / 2) if (a1_eqo and qc_eqo) else (qc_eqo or a1_eqo)
-    if ttm is not None and avg_eq:
-        out["roe"] = round(ttm / avg_eq * 100, 1)
+    # ROE(TTM) = 최근 4분기 지배순이익 ÷ 평균 지배자본(TTM 시작시점~끝시점) — 토스와 정합
+    avg_win = ((qp_eqo + qc_eqo) / 2) if (qp_eqo and qc_eqo) else (qc_eqo or a1_eqo)
+    if ttm is not None and avg_win:
+        out["roe"] = round(ttm / avg_win * 100, 1)
 
     # 매출성장률(YoY)
     r1 = v2._cum(a1, "rev") if a1 else None
@@ -144,7 +145,7 @@ def main():
     # 갱신 정책: 종목별로 산식버전(_v)이 같고 최근 REFRESH_DAYS 이내에 수집했으면 건너뜀.
     #   → 평소엔 종목당 약 한 달마다 자동 재수집(분기 실적을 한 달 내 자동 반영),
     #     산식(VERSION)이 바뀌면 1회 전체 재수집. 매일 전체 재수집하지 않는다.
-    VERSION = "r2"  # ROE를 TTM(평균자본) 방식으로 — 변경 시 올리면 전체 재수집
+    VERSION = "r3"  # ROE를 TTM÷평균자본(시작~끝) 방식으로 — 토스 정합
     REFRESH_DAYS = int(os.getenv("REFRESH_DAYS", "30"))
     today = datetime.date.today()
     force = os.getenv("FORCE") == "1"
