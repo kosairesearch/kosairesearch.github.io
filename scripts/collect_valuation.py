@@ -59,88 +59,44 @@ def write_out(stocks, data_date):
         encoding="utf-8")
 
 
-def collect_one(dart, ticker, stock):
-    """한 종목의 분기성 밸류에이션 빌딩블록 수집. {eps,bps,dps,roe,rev_g} (없으면 키 생략)."""
-    cur = datetime.date.today().year
-    py = cur - 1
-    a1 = v2._fin_all(dart, ticker, py, "11011")        # 최근 결산
-    if not a1:
-        a1 = v2._fin_all(dart, ticker, cur - 2, "11011")  # 결산 미공시 시 그 전년
-        py = cur - 2
-    a2 = v2._fin_all(dart, ticker, py - 1, "11011")    # 성장률용 직전 연도
-    q_cur = v2._fin_all(dart, ticker, cur, "11013")    # 올해 1분기
-    q_py = v2._fin_all(dart, ticker, py, "11013")      # 작년 1분기
+REPORTS_V2 = ROOT / "data" / "reports_v2"
 
+
+def _summary_from_valuation(val, annual):
+    """리포트 quant.valuation → 그리드용 {eps,bps,roe,dps,rev_g} 요약."""
     out = {}
-    sh = stock.get("shares") or 0          # KRX 발행주식수(정확)
-    total_sh = v2.dart_total_shares(dart, ticker) or sh
-    # DART 주식총수가 KRX 대비 비정상(0.5~3배 벗어남)이면 KRX값으로 폴백 — 추출 오류 방어
-    if sh and total_sh and not (0.5 * sh <= total_sh <= 3 * sh):
-        total_sh = sh
-    price = stock.get("price") or 0
-
-    # 지배주주 순이익(연간·분기)
-    a1_np = v2._cum(a1, "np_owner") if a1 else None
-    a1_eqo = (v2._bs(a1, "equity_owner") or v2._bs(a1, "equity")) if a1 else None
-    qc_np = v2._cum(q_cur, "np_owner") if q_cur else None
-    qp_np = v2._cum(q_py, "np_owner") if q_py else None
-    qc_eqo = (v2._bs(q_cur, "equity_owner") or v2._bs(q_cur, "equity")) if q_cur else None
-    qp_eqo = (v2._bs(q_py, "equity_owner") or v2._bs(q_py, "equity")) if q_py else None
-
-    # TTM 지배순이익 = 최근연간 − 작년1Q + 올해1Q
-    ttm = (a1_np - qp_np + qc_np) if None not in (a1_np, qp_np, qc_np) else None
-    if ttm is not None and total_sh:
-        out["eps"] = int(ttm / total_sh)
-
-    # BPS = 최근 분기말 지배자본 ÷ 가중평균유통주식수(자기주식 제외)
-    def implied_wavg(npo, eps):
-        if npo and eps and abs(eps) > 1:
-            w = npo / eps
-            if w > 0 and 0.3 * total_sh <= w <= 1.05 * total_sh:
-                return w
-        return None
-    wavg = (implied_wavg(qc_np, v2._cum(q_cur, "eps_basic") if q_cur else None)
-            or implied_wavg(a1_np, v2._cum(a1, "eps_basic") if a1 else None))
-    eqo_latest = qc_eqo or a1_eqo
-    bps_denom = wavg or total_sh
-    if eqo_latest and bps_denom:
-        out["bps"] = int(eqo_latest / bps_denom)
-
-    # ROE(TTM) = 최근 4분기 지배순이익 ÷ 평균 지배자본(TTM 시작시점~끝시점) — 토스와 정합
-    avg_win = ((qp_eqo + qc_eqo) / 2) if (qp_eqo and qc_eqo) else (qc_eqo or a1_eqo)
-    if ttm is not None and avg_win:
-        out["roe"] = round(ttm / avg_win * 100, 1)
-
-    # 매출성장률(YoY)
-    r1 = v2._cum(a1, "rev") if a1 else None
-    r2 = v2._cum(a2, "rev") if a2 else None
-    if r1 and r2 and r2 != 0:
-        out["rev_g"] = round((r1 - r2) / abs(r2) * 100, 1)
-
-    # DPS(주당현금배당금) — DART 우선, KRX 보완
-    dps = v2.dart_dps(dart, ticker)
-    if dps is not None:
-        out["dps"] = round(dps, 1)
-
-    # ── 검증 게이트: 네이버 대조만 사용 ──
-    # EPS·BPS가 네이버와 15% 초과/부호반대로 어긋나면 숨김(추출오류 방어).
-    # 임의의 '상식범위'는 쓰지 않는다 — 고성장·저이익주의 정당한 고PER(예: 레인보우로보틱스)을
-    # 가짜 오류로 오인해 숨기는 부작용이 있어서. 네이버에 값이 없으면 그대로 표시(주식수 가드로 1차 방어됨).
-    nv = v2.naver_valuation(ticker)
-
-    def gross(mine, ref):
-        if mine is None or ref in (None, 0):
-            return False
-        if (mine > 0) != (ref > 0):
-            return True
-        return abs(mine - ref) / abs(ref) > 0.15
-
-    if nv:
-        if gross(out.get("eps"), nv.get("eps")):
-            out.pop("eps", None)
-        if gross(out.get("bps"), nv.get("bps")):
-            out.pop("bps", None)
+    if val.get("eps") is not None:
+        out["eps"] = val["eps"]
+    if val.get("bps") is not None:
+        out["bps"] = val["bps"]
+    if val.get("roe_ttm") is not None:
+        out["roe"] = val["roe_ttm"]
+    if val.get("dps") is not None:
+        out["dps"] = val["dps"]
+    if len(annual) >= 2 and annual[0].get("rev") and annual[1].get("rev"):
+        out["rev_g"] = round((annual[0]["rev"] - annual[1]["rev"]) / abs(annual[1]["rev"]) * 100, 1)
     return out
+
+
+def collect_one(dart, ticker, stock):
+    """한 종목의 그리드용 밸류에이션 {eps,bps,dps,roe,rev_g}.
+
+    ⚠️ 리포트(reports_v2)와 동일한 정량 파이프라인(collect_quant)을 사용한다.
+       추출 로직이 두 벌로 갈라져 그리드만 값이 비던 문제(카카오뱅크 등)를 없애기 위함.
+       이미 v2 리포트가 있으면 그 quant 값을 그대로 재사용 → 그리드 = 리포트 항상 일치.
+    """
+    rp = REPORTS_V2 / f"{ticker}.json"
+    if rp.exists():
+        try:
+            q = json.loads(rp.read_text(encoding="utf-8"))["quant"]
+            return _summary_from_valuation(q.get("valuation", {}), q.get("annual", []))
+        except Exception:
+            pass
+    # 리포트 없음 → 리포트와 똑같은 collect_quant로 산출 + 네이버 대조 게이트
+    q = v2.collect_quant(dart, ticker, None, stock)
+    val = q.get("valuation", {})
+    v2.cross_check(ticker, stock.get("name", ticker), val)   # EPS·BPS 네이버 대조(어긋나면 숨김)
+    return _summary_from_valuation(val, q.get("annual", []))
 
 
 def main():
@@ -168,7 +124,7 @@ def main():
     # 갱신 정책: 종목별로 산식버전(_v)이 같고 최근 REFRESH_DAYS 이내에 수집했으면 건너뜀.
     #   → 평소엔 종목당 약 한 달마다 자동 재수집(분기 실적을 한 달 내 자동 반영),
     #     산식(VERSION)이 바뀌면 1회 전체 재수집. 매일 전체 재수집하지 않는다.
-    VERSION = "r6"  # 상식범위 제거, 네이버 대조만
+    VERSION = "r7"  # 추출 통합: 리포트와 동일 파이프라인(collect_quant) 사용
     REFRESH_DAYS = int(os.getenv("REFRESH_DAYS", "30"))
     today = datetime.date.today()
     force = os.getenv("FORCE") == "1"
