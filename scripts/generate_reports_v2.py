@@ -296,6 +296,14 @@ def collect_quant(dart, ticker, krx_row, stock):
         if None not in (py_q1, cy_q1, fy_np):
             ttm_np = fy_np - py_q1 + cy_q1
 
+    if os.getenv("DEBUG_TK") == ticker:
+        log(f"    [DBG {ticker}] fy_np={fy_row.get('np_owner') if fy_row else None} "
+            f"fy_eq_owner={fy_row.get('equity_owner') if fy_row else None} "
+            f"fy_eps_basic={fy_row.get('eps_basic') if fy_row else None}")
+        log(f"    [DBG] dq1c np_owner={_cum(dq1c,'np_owner')} np={_cum(dq1c,'np')} "
+            f"eq_owner={_bs(dq1c,'equity_owner')} eq={_bs(dq1c,'equity')} eps_basic={_cum(dq1c,'eps_basic')}")
+        log(f"    [DBG] dart_total_shares={dart_total_shares(dart,ticker)} krx_shares={stock.get('shares')} ttm_np={ttm_np}")
+
     price = stock.get("price")
     sh = stock.get("shares") or 0          # KRX 발행주식수(정확)
     total_sh = dart_total_shares(dart, ticker) or sh

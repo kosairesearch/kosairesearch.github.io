@@ -44,6 +44,7 @@ jobs:
           REPORT_MODEL_TOP_N: '500'
           REPORT_TICKERS: ${{ inputs.tickers }}
           REPORT_TOP_N: ${{ inputs.top_n }}
+          DEBUG_TK: '241560'
           BATCH_MAX_WAIT_SEC: '10800'
         run: |
           python scripts/generate_reports_v2.py "${{ inputs.mode }}" 2>&1 | tee data/reports_v2_run.log || true
