@@ -1195,14 +1195,20 @@ KOSi18n.register({
       try{
         var base='https://kosai.kr/stock.html?ticker='+encodeURIComponent(TK);
         var nm=tname(STOCK.name);
-        var ttl=(Ln==='en') ? nm+' ('+TK+') AI Stock Report | KOSAI'
-                            : nm+' ('+TK+') AI 분석 리포트 | KOSAI';
+        // 검색의도형 타이틀 — "삼성전자 per", "삼성전자 배당", "삼성전자 실적" 등 고관여 검색어 포착
+        var hasRep=!!(REP&&REP.verdict);
+        var ttl;
+        if(Ln==='en'){
+          ttl=nm+' ('+TK+') Stock — PER, PBR, Dividend, Earnings'+(hasRep?' (AI Report)':'')+' | KOSAI';
+        }else{
+          ttl=nm+'('+TK+') 주가·PER·PBR·배당·실적'+(hasRep?' AI 리포트':' 분석')+' | KOSAI';
+        }
         var dsc;
         if(REP&&REP.verdict&&REP.verdict.body){
           dsc=String(pk(REP.verdict.body)).replace(/<[^>]*>/g,'').replace(/\s+/g,' ').trim().slice(0,155);
         }else{
-          dsc=(Ln==='en') ? nm+' ('+TK+') key metrics, financials and valuation (PER·PBR·ROE·dividend) with AI analysis.'
-                          : nm+' ('+TK+') 핵심 지표·재무·밸류에이션(PER·PBR·ROE·배당)과 AI 분석 리포트.';
+          dsc=(Ln==='en') ? nm+' ('+TK+') stock: PER, PBR, ROE, dividend yield, earnings and valuation — free AI analysis from KOSAI.'
+                          : nm+'('+TK+') 주가, PER·PBR·ROE·배당수익률, 실적과 밸류에이션을 한눈에 — KOSAI 무료 AI 분석.';
         }
         function setMeta(sel,attr,val){ var el=document.querySelector(sel); if(el)el.setAttribute(attr,val); }
         document.title=ttl;
