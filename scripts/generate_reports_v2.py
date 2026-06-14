@@ -358,8 +358,15 @@ def collect_quant(dart, ticker, krx_row, stock):
     fy_eps = fy_row.get("eps_basic") if fy_row else None
     qp_eps = _cum(dq1, "eps_basic")
     qc_eps = _cum(dq1c, "eps_basic")
+    # 단위 보정: 천원/백만원 공시 기업은 EPS도 같은 단위로 공시된다(예: 두산밥캣 '4.14'=4,140원).
+    #   금액과 달리 EPS는 위 money 보정에서 빠져 있어 따로 곱한다.
+    if unit != 1:
+        fy_eps = fy_eps * unit if fy_eps is not None else None
+        qp_eps = qp_eps * unit if qp_eps is not None else None
+        qc_eps = qc_eps * unit if qc_eps is not None else None
     eps_disc = (fy_eps - qp_eps + qc_eps) if None not in (fy_eps, qp_eps, qc_eps) else None
     eps_ttm = eps_disc if eps_disc is not None else (int(ttm_np / total_sh) if (ttm_np and total_sh) else None)
+    eps_ttm = int(eps_ttm) if eps_ttm is not None else None
     per_ttm = round(price / eps_ttm, 1) if (eps_ttm and eps_ttm > 0 and price) else None
 
     # ROE 신뢰성: 순이익 추출(ttm_np)이 공시 EPS와 30% 넘게 어긋나면(추출 오류) 공시 EPS로 ttm_np 보정.
