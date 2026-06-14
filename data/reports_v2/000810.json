@@ -312,8 +312,8 @@
    "shares": 44647473,
    "total_shares": 49110665,
    "wavg_shares": 42509801,
-   "per": 15.7,
-   "eps": 41637,
+   "per": null,
+   "eps": null,
    "pbr": 1.15,
    "bps": 567996,
    "roe_ttm": 10.3,
@@ -330,7 +330,7 @@
     "pbr": 1.31,
     "bps": 500071.0
    },
-   "verify": "ok"
+   "verify": "blocked(중대오류): EPS 48102↔네이버 41543.0"
   },
   "rev_label": {
    "ko": "보험수익",

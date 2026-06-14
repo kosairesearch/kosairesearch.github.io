@@ -312,8 +312,8 @@
    "shares": 65500349,
    "total_shares": 69384000,
    "wavg_shares": 63524114,
-   "per": 6.4,
-   "eps": 22997,
+   "per": null,
+   "eps": null,
    "pbr": 0.81,
    "bps": 182285,
    "roe_ttm": 16.3,
@@ -330,7 +330,7 @@
     "pbr": 0.78,
     "bps": 190944.0
    },
-   "verify": "ok"
+   "verify": "blocked(중대오류): EPS 26175↔네이버 22663.0"
   },
   "rev_label": {
    "ko": "보험수익",

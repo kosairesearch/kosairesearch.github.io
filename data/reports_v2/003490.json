@@ -337,8 +337,8 @@
    "shares": 368220661,
    "total_shares": 369331455,
    "wavg_shares": 303456577,
-   "per": null,
-   "eps": null,
+   "per": 15.8,
+   "eps": 1688,
    "pbr": null,
    "bps": null,
    "roe_ttm": 3.7,
@@ -355,7 +355,7 @@
     "pbr": 0.9,
     "bps": 29417.0
    },
-   "verify": "blocked(중대오류): EPS 1072↔네이버 1670.0 / BPS 35803↔네이버 29417.0"
+   "verify": "blocked(중대오류): BPS 35803↔네이버 29417.0"
   }
  }
 }

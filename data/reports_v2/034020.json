@@ -327,8 +327,8 @@
    "shares": 640561146,
    "total_shares": 640561146,
    "wavg_shares": 642136363,
-   "per": null,
-   "eps": null,
+   "per": 386.3,
+   "eps": 241,
    "pbr": 7.44,
    "bps": 12509,
    "roe_ttm": 1.4,
@@ -345,7 +345,7 @@
     "pbr": 7.42,
     "bps": 12542.0
    },
-   "verify": "blocked(중대오류): EPS 166↔네이버 241.0"
+   "verify": "ok"
   }
  }
 }

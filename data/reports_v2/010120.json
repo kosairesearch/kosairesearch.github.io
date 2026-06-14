@@ -335,12 +335,12 @@
    "price": 222500,
    "mcap": 33.375,
    "shares": 150000000,
-   "total_shares": 30000000,
-   "wavg_shares": 29739963,
+   "total_shares": 150000000,
+   "wavg_shares": null,
    "per": null,
    "eps": null,
-   "pbr": null,
-   "bps": null,
+   "pbr": 16.14,
+   "bps": 13787,
    "roe_ttm": 17.4,
    "ttm_window": "2025Q2~2026Q1",
    "ttm_np_owner": 339778640405,
@@ -355,7 +355,7 @@
     "pbr": 16.0,
     "bps": 13908.0
    },
-   "verify": "blocked(중대오류): EPS 11325↔네이버 2248.0 / BPS 69538↔네이버 13908.0"
+   "verify": "blocked(중대오류): EPS 11346↔네이버 2248.0"
   }
  }
 }
