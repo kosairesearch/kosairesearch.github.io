@@ -1090,8 +1090,16 @@ def enrich_with_dart(results):
     except Exception:
         pass
 
-    # ── 전 종목 대표 카테고리 + 다중 태그 부여 ──
-    # AI 분류 캐시(data/sector_map.json)가 있으면 최우선 사용, 없으면 KSIC 규칙.
+    print("  [DART] 영문명·시총 보강 완료")
+    return results
+
+
+def apply_categories(results):
+    """전 종목 대표 업종(sector) + 다중 태그(categories) 부여.
+    AI 분류 캐시(data/sector_map.json) 최우선, 없으면 KSIC 규칙.
+    ⚠️ DART와 무관(로컬 파일만 사용)하므로 DART 실패와 별개로 '항상' 실행해야 한다.
+    (과거 enrich_with_dart 안에 있어 DART 초기화 실패 시 분류가 통째로 누락된 버그를 분리)
+    """
     ai_sectors = {}
     try:
         p = Path("data/sector_map.json")
@@ -1102,24 +1110,22 @@ def enrich_with_dart(results):
         print(f"  [분류] AI 캐시 로드 실패: {e}")
     for tk, st in results.items():
         prev = st.get("sector", "기타")          # 수동 SECTOR_MAP 값(폴백)
-        # AI 분류 캐시 항목: {"s": 업종, "ai": bool} (구버전은 문자열)
-        e = ai_sectors.get(tk)
+        e = ai_sectors.get(tk)                    # {"s": 업종, "ai": bool} (구버전은 문자열)
         ai_sec, is_ai, is_robot = None, False, False
         if isinstance(e, dict):
             ai_sec = e.get("s"); is_ai = bool(e.get("ai")); is_robot = bool(e.get("robot"))
         elif isinstance(e, str):
             ai_sec = e
         primary = ai_sec if ai_sec else primary_category(st.get("induty_code", ""), tk, prev, st.get("name", ""))
-        st["sector"] = primary                   # 프론트 호환: 대표 카테고리
+        st["sector"] = primary
         cats = categories_for(tk, primary, st.get("induty_code", ""), st.get("name", ""))
         if is_ai and "인공지능(AI)" not in cats:
             cats.append("인공지능(AI)")
-        # 로봇: LLM 판정(robot 플래그) ∪ 규칙(theme_tags) → 부품·솔루션사까지 포함
         if is_robot and "로봇" not in cats:
             cats.append("로봇")
         st["categories"] = cats
-
-    print("  [DART] 영문명·시총·카테고리 보강 완료")
+    n_etc = sum(1 for st in results.values() if st.get("sector") == "기타")
+    print(f"  [분류] 카테고리 부여 완료 — 기타 {n_etc}/{len(results)}개")
     return results
 
 
@@ -1211,6 +1217,8 @@ def main():
     log_summary(f"- 영문명 이월: {carried}개")
 
     results = enrich_with_dart(results)
+    # 업종 분류는 DART와 무관 — DART 성공/실패와 상관없이 항상 적용(분류 누락 방지)
+    results = apply_categories(results)
 
     # DART 영문명 누락 특수 티커는 수동 영문명으로 보완
     for tk, en in NAME_EN_OVERRIDE.items():
