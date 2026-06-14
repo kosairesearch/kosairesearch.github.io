@@ -593,7 +593,7 @@ KOSi18n.register({
   <div class="nav-links">
     <a href="Home.html">홈</a>
     <a href="Reports.html">리포트</a>
-    <a href="Industry v2.html">업종별</a>
+    <a href="industry.html">업종별</a>
     <a href="Screener.html" class="active">스크리너</a>
     <a href="Watchlist.html">워치리스트</a>
   </div>
@@ -608,7 +608,7 @@ KOSi18n.register({
 <div class="mobile-menu glass" id="mobileMenu">
   <a href="Home.html">홈</a>
   <a href="Reports.html">리포트</a>
-  <a href="Industry v2.html">업종별</a>
+  <a href="industry.html">업종별</a>
   <a href="Screener.html" class="active">스크리너</a>
   <a href="Watchlist.html">워치리스트</a>
 </div>
@@ -681,7 +681,7 @@ KOSi18n.register({
     <div class="foot-inner glass">
       <div class="foot-grid">
         <div class="foot-brand"><a class="brand" href="Home.html"><img class="brand-logo brand-logo--light" src="assets/kosai-wordmark-black.png" alt="KOSAI" width="148" height="24"><img class="brand-logo brand-logo--dark" src="assets/kosai-wordmark-white.png" alt="KOSAI" width="148" height="24"></a><p>한국 상장사를 위한 AI 투자 리서치. 데이터와 분석을 한 페이지에.</p></div>
-        <div class="foot-col"><h4>서비스</h4><ul><li><a href="Home.html">홈</a></li><li><a href="Reports.html">리포트</a></li><li><a href="Industry v2.html">업종별</a></li><li><a href="Screener.html">스크리너</a></li><li><a href="Watchlist.html">워치리스트</a></li></ul></div>
+        <div class="foot-col"><h4>서비스</h4><ul><li><a href="Home.html">홈</a></li><li><a href="Reports.html">리포트</a></li><li><a href="industry.html">업종별</a></li><li><a href="Screener.html">스크리너</a></li><li><a href="Watchlist.html">워치리스트</a></li></ul></div>
         <div class="foot-col"><h4>회사</h4><ul><li><a href="About.html">About</a></li><li><a href="Contact.html">문의하기</a></li><li><a href="Feedback.html">피드백</a></li></ul></div>
         
         <div class="foot-col"><h4>정책</h4><ul><li><a href="Terms.html">이용약관</a></li><li><a href="Privacy.html">개인정보처리방침</a></li></ul></div>
@@ -999,7 +999,7 @@ tbody.addEventListener('click',e=>{
   if(wb){ e.preventDefault(); e.stopPropagation(); if(!window.KOSWatch) return; const tk=wb.dataset.wl;
     if(isW(tk)) window.KOSWatch.remove(tk); else window.KOSWatch.add(tk);
     wb.classList.toggle('on',isW(tk)); return; }
-  const tr=e.target.closest('tr');if(tr)window.location.href='Ticker Detail v2.html?ticker='+(tr.dataset.ticker||'');
+  const tr=e.target.closest('tr');if(tr)window.location.href='stock.html?ticker='+(tr.dataset.ticker||'');
 });
 // 뒤로가기(bfcache)·탭 복귀 시 별 상태를 localStorage로 즉시 재동기화
 function syncWl(){ document.querySelectorAll('.wl-btn').forEach(b=>b.classList.toggle('on',isW(b.dataset.wl))); }

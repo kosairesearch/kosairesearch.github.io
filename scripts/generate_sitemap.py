@@ -17,7 +17,7 @@ STATIC_PAGES = [
     ("/Home.html", "daily", "0.9"),
     ("/Reports.html", "daily", "0.9"),
     ("/Screener.html", "daily", "0.8"),
-    ("/Industry%20v2.html", "daily", "0.7"),
+    ("/industry.html", "daily", "0.7"),
     ("/About.html", "monthly", "0.5"),
     ("/Contact.html", "monthly", "0.3"),
     ("/Feedback.html", "monthly", "0.3"),
@@ -46,7 +46,7 @@ def main():
         )
     for t in tickers:
         out.append(
-            f"<url><loc>{SITE}/Ticker%20Detail%20v2.html?ticker={t}</loc>"
+            f"<url><loc>{SITE}/stock.html?ticker={t}</loc>"
             f"<lastmod>{lastmod}</lastmod><changefreq>daily</changefreq>"
             f"<priority>0.6</priority></url>"
         )

@@ -497,7 +497,7 @@ KOSi18n.register({
   <div class="nav-links">
     <a href="Home.html">홈</a>
     <a href="Reports.html" class="active">리포트</a>
-    <a href="Industry v2.html">업종별</a>
+    <a href="industry.html">업종별</a>
     <a href="Screener.html">스크리너</a>
     <a href="Watchlist.html">워치리스트</a>
   </div>
@@ -512,7 +512,7 @@ KOSi18n.register({
 <div class="mobile-menu glass" id="mobileMenu">
   <a href="Home.html">홈</a>
   <a href="Reports.html" class="active">리포트</a>
-  <a href="Industry v2.html">업종별</a>
+  <a href="industry.html">업종별</a>
   <a href="Screener.html">스크리너</a>
   <a href="Watchlist.html">워치리스트</a>
 </div>
@@ -577,7 +577,7 @@ KOSi18n.register({
     <div class="foot-inner glass">
       <div class="foot-grid">
         <div class="foot-brand"><a class="brand" href="Home.html"><img class="brand-logo brand-logo--light" src="assets/kosai-wordmark-black.png" alt="KOSAI" width="148" height="24"><img class="brand-logo brand-logo--dark" src="assets/kosai-wordmark-white.png" alt="KOSAI" width="148" height="24"></a><p>한국 상장사를 위한 AI 투자 리서치. 데이터와 분석을 한 페이지에.</p></div>
-        <div class="foot-col"><h4>서비스</h4><ul><li><a href="Home.html">홈</a></li><li><a href="Reports.html">리포트</a></li><li><a href="Industry v2.html">업종별</a></li><li><a href="Screener.html">스크리너</a></li><li><a href="Watchlist.html">워치리스트</a></li></ul></div>
+        <div class="foot-col"><h4>서비스</h4><ul><li><a href="Home.html">홈</a></li><li><a href="Reports.html">리포트</a></li><li><a href="industry.html">업종별</a></li><li><a href="Screener.html">스크리너</a></li><li><a href="Watchlist.html">워치리스트</a></li></ul></div>
         <div class="foot-col"><h4>회사</h4><ul><li><a href="About.html">About</a></li><li><a href="Contact.html">문의하기</a></li><li><a href="Feedback.html">피드백</a></li></ul></div>
         
         <div class="foot-col"><h4>정책</h4><ul><li><a href="Terms.html">이용약관</a></li><li><a href="Privacy.html">개인정보처리방침</a></li></ul></div>
@@ -672,7 +672,7 @@ function rowHtml(r,i){
   const dir=r.change>0?'up':r.change<0?'down':'flat',arw=r.change>0?'▲':r.change<0?'▼':'–';
   const title=repTitle(r.ticker);
   const titleHtml=title?title:`<span class="c-ai-none">${T('리포트 준비 중')}</span>`;
-  return `<a class="rl-row" href="Ticker Detail v2.html?ticker=${r.ticker}" data-tk="${r.ticker}">
+  return `<a class="rl-row" href="stock.html?ticker=${r.ticker}" data-tk="${r.ticker}">
     <span class="c-rank">${i+1}</span>
     <div class="c-nm"><div class="nm">${T(r.name)}</div>
       <div class="id"><span class="tk">${r.ticker}</span><span class="dot">·</span><span>${T(r.market)}</span><span class="dot">·</span><span>${T(r.sector)}</span></div></div>
