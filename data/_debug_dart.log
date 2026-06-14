@@ -1,0 +1,54 @@
+reprt_code='11011', fs_div='CFS' (사업보고서, 연결제무제표)'
+reprt_code='11011', fs_div='OFS' (사업보고서, 별도(개별)제무제표)'
+{'status': '013', 'message': '조회된 데이타가 없습니다.'}
+
+# 241560 2024 11011
+[네이버] {'per': 14.67, 'eps': 4411.0, 'pbr': 0.82, 'bps': 79003.0}
+[주식총수] 95856065
+
+[CFS] 190행 — 핵심계정:
+  [BS] id=ifrs-full_Assets | nm=자산총계 | amt=8169804000 | add=nan
+  [BS] id=ifrs-full_TradeAndOtherCurrentReceivables | nm=매출채권 및 기타채권 | amt=358029000 | add=nan
+  [BS] id=ifrs-full_Equity | nm=자본총계 | amt=4690139000 | add=nan
+  [BS] id=ifrs-full_EquityAttributableToOwnersOfParent | nm=지배기업 소유주지분 | amt=4690139000 | add=nan
+  [BS] id=dart_CapitalSurplus | nm=자본잉여금 | amt=1479496000 | add=nan
+  [BS] id=dart_ElementsOfOtherStockholdersEquity | nm=기타자본항목 | amt=-223052000 | add=nan
+  [BS] id=ifrs-full_IssuedCapital | nm=자본금 | amt=43096000 | add=nan
+  [BS] id=ifrs-full_EquityAndLiabilities | nm=부채와 자본총계 | amt=8169804000 | add=nan
+  [BS] id=ifrs-full_Liabilities | nm=부채총계 | amt=3479665000 | add=nan
+  [IS] id=dart_OperatingIncomeLoss | nm=영업이익 | amt=638867000 | add=
+  [IS] id=dart_OtherGains | nm=기타영업외수익 | amt=1999000 | add=
+  [IS] id=ifrs-full_CostOfSales | nm=매출원가 | amt=4809489000 | add=
+  [IS] id=ifrs-full_BasicEarningsLossPerShare | nm=기본주당순이익 | amt=4.14 | add=
+  [IS] id=ifrs-full_DilutedEarningsLossPerShare | nm=희석주당순이익 | amt=4.13 | add=
+  [IS] id=ifrs-full_FinanceIncome | nm=금융수익 | amt=158924000 | add=
+  [IS] id=ifrs-full_GrossProfit | nm=매출총이익 | amt=1459816000 | add=
+  [IS] id=ifrs-full_ProfitLoss | nm=연결당기순이익 | amt=413029000 | add=
+  [IS] id=ifrs-full_ProfitLossAttributableToOwnersOfParent | nm=지배기업 소유주지분 | amt=413029000 | add=
+  [IS] id=ifrs-full_ProfitLossBeforeTax | nm=법인세차감전순이익 | amt=585375000 | add=
+  [IS] id=ifrs-full_Revenue | nm=매출액 | amt=6269305000 | add=
+  [CIS] id=ifrs-full_ComprehensiveIncomeAttributableToOwnersOfParent | nm=지배기업 소유주지분 | amt=232502000 | add=
+  [CIS] id=ifrs-full_ProfitLoss | nm=연결당기순이익 | amt=413029000 | add=
+  [CF] id=ifrs-full_ProfitLoss | nm=연결당기순이익 | amt=413029000 | add=nan
+  [SCE] id=dart_EquityAtBeginningOfPeriod | nm=기초자본 | amt=43096000 | add=nan
+  [SCE] id=dart_EquityAtBeginningOfPeriod | nm=기초자본 | amt=1479496000 | add=nan
+  [SCE] id=dart_EquityAtBeginningOfPeriod | nm=기초자본 | amt=3523104000 | add=nan
+  [SCE] id=dart_EquityAtBeginningOfPeriod | nm=기초자본 | amt=-180206000 | add=nan
+  [SCE] id=dart_EquityAtBeginningOfPeriod | nm=기초자본 | amt=4618282000 | add=nan
+  [SCE] id=dart_EquityAtBeginningOfPeriod | nm=기초자본 | amt=4618282000 | add=nan
+  [SCE] id=dart_EquityAtBeginningOfPeriod | nm=기초자본 | amt=-247208000 | add=nan
+  [SCE] id=ifrs-full_IncreaseDecreaseThroughTransfersAndOtherChangesEquity | nm=기타자본잉여금의 변동 | amt= | add=nan
+  [SCE] id=ifrs-full_IncreaseDecreaseThroughTransfersAndOtherChangesEquity | nm=기타자본잉여금의 변동 | amt= | add=nan
+  [SCE] id=ifrs-full_IncreaseDecreaseThroughTransfersAndOtherChangesEquity | nm=기타자본잉여금의 변동 | amt= | add=nan
+  [SCE] id=ifrs-full_ProfitLoss | nm=연결당기순이익 | amt=413029000 | add=nan
+  [SCE] id=ifrs-full_ProfitLoss | nm=연결당기순이익 | amt=413029000 | add=nan
+  [SCE] id=ifrs-full_ProfitLoss | nm=연결당기순이익 | amt=413029000 | add=nan
+  [SCE] id=ifrs-full_Equity | nm=자본총계 | amt=-428974000 | add=nan
+  [SCE] id=ifrs-full_Equity | nm=자본총계 | amt=-223052000 | add=nan
+  [SCE] id=ifrs-full_Equity | nm=자본총계 | amt=4690139000 | add=nan
+  [SCE] id=ifrs-full_Equity | nm=자본총계 | amt=4690139000 | add=nan
+  [SCE] id=ifrs-full_Equity | nm=자본총계 | amt=3819573000 | add=nan
+  [SCE] id=ifrs-full_Equity | nm=자본총계 | amt=43096000 | add=nan
+  [SCE] id=ifrs-full_Equity | nm=자본총계 | amt=1479496000 | add=nan
+
+[OFS] 없음
