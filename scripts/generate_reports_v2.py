@@ -641,14 +641,15 @@ def naver_valuation(ticker):
 
 
 def cross_check(tk, name, valuation):
-    """자체 산출하는 PER·EPS만 네이버와 대조해 '중대 오류'(부호 반대·30% 초과)일 때만 숨긴다.
+    """자체 산출하는 PER·EPS만 외부 참조값과 대조해 '중대 오류'(부호 반대·15% 초과)일 때만 숨긴다.
     미세 차이(가중평균주식수·결산시점 등 방법론 차이)는 정상이므로 표시한다.
-    PBR·BPS·배당은 KRX 공식값이라 검증 없이 표시한다."""
+    PBR·BPS·배당은 KRX 공식값이라 검증 없이 표시한다.
+
+    ⚠️ 참조값(nv)은 검증 게이트 용도로만 메모리에서 사용하고, 저장/배포되는 valuation에는
+    절대 기록하지 않는다(외부 데이터값이 사이트 코드로 노출되지 않도록)."""
     nv = naver_valuation(tk)
-    valuation["naver_ref"] = nv or None
     if not nv:
-        valuation["verify"] = "unverified(네이버 참조 없음)"
-        log(f"  ⚠️ {name}: 네이버 참조 없음 — 자체 PER·EPS 미검증 표시")
+        log(f"  ⚠️ {name}: 참조값 없음 — 자체 PER·EPS 미검증")
         return
 
     def gross_error(mine, ref):
@@ -656,23 +657,20 @@ def cross_check(tk, name, valuation):
             return False
         if (mine > 0) != (ref > 0):           # 부호 반대 = 중대 오류
             return True
-        return abs(mine - ref) / abs(ref) > 0.15   # 15% 초과 = 중대 오류(네이버와 크게 어긋남)
+        return abs(mine - ref) / abs(ref) > 0.15   # 15% 초과 = 중대 오류
 
     issues = []
     if gross_error(valuation.get("eps"), nv.get("eps")):
-        issues.append(f"EPS {valuation.get('eps')}↔네이버 {nv.get('eps')}")
+        issues.append(f"EPS {valuation.get('eps')}↔ref {nv.get('eps')}")
         valuation["eps"] = valuation["per"] = None
     if gross_error(valuation.get("bps"), nv.get("bps")):
-        issues.append(f"BPS {valuation.get('bps')}↔네이버 {nv.get('bps')}")
+        issues.append(f"BPS {valuation.get('bps')}↔ref {nv.get('bps')}")
         valuation["bps"] = valuation["pbr"] = None
-    valuation["verify"] = ("blocked(중대오류): " + " / ".join(issues)) if issues else "ok"
     if issues:
         log(f"  ❌ {name} 중대오류 차단 → 해당 지표 숨김: {' / '.join(issues)}")
     else:
-        log(f"  ✅ {name} PER {valuation.get('per')}(네이버 {nv.get('per')}) "
-            f"PBR {valuation.get('pbr')}(네이버 {nv.get('pbr')}) "
-            f"EPS {valuation.get('eps')}(네이버 {nv.get('eps')}) "
-            f"BPS {valuation.get('bps')}(네이버 {nv.get('bps')})")
+        log(f"  ✅ {name} 검증 통과 PER {valuation.get('per')} PBR {valuation.get('pbr')} "
+            f"EPS {valuation.get('eps')} BPS {valuation.get('bps')}")
 
 
 def collect_all_quant(targets, data):

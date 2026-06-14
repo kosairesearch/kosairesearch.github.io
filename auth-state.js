@@ -68,7 +68,7 @@ function openWithdrawModal(){
       <p class="wd-warn">${T("계정과 저장된 관심종목이 영구 삭제되며, 되돌릴 수 없습니다.")}</p>
       <div class="wd-q">${T("떠나시는 이유를 알려주시면 개선에 큰 도움이 됩니다 (선택)")}</div>
       <div class="wd-reasons">${WD_REASONS.map((r)=>
-        `<label class="wd-r"><input type="radio" name="wdReason" value="${r}"><span>${T(r)}</span></label>`).join('')}</div>
+        `<label class="wd-r"><input type="checkbox" name="wdReason" value="${r}"><span>${T(r)}</span></label>`).join('')}</div>
       <textarea class="wd-detail" rows="2" placeholder="${T("자세한 의견 (선택)")}"></textarea>
       <label class="wd-ack"><input type="checkbox" id="wdAck"><span>${T("위 내용을 이해했으며 되돌릴 수 없음에 동의합니다")}</span></label>
       <input class="wd-type" id="wdType" type="text" autocomplete="off" placeholder="${typePlaceholder}">
@@ -81,6 +81,12 @@ function openWithdrawModal(){
   const ack = ov.querySelector('#wdAck'), type = ov.querySelector('#wdType'), go = ov.querySelector('.wd-go');
   const sync = () => { go.disabled = !(ack.checked && type.value.trim() === WORD); };
   ack.addEventListener('change', sync); type.addEventListener('input', sync);
+  // 사유는 한 가지만 선택(체크박스 모양이되 단일 선택 유지)
+  ov.querySelectorAll('input[name=wdReason]').forEach((cb) => {
+    cb.addEventListener('change', () => {
+      if (cb.checked) ov.querySelectorAll('input[name=wdReason]').forEach((o) => { if (o !== cb) o.checked = false; });
+    });
+  });
   const close = () => ov.remove();
   ov.querySelector('.wd-cancel').addEventListener('click', close);
   ov.addEventListener('click', e => { if(e.target === ov) close(); });
@@ -191,7 +197,7 @@ function injectCss(){
     font:400 14.5px var(--font-sans);color:var(--fg-1)}
   .wd-r:hover{background:rgba(0,0,0,.04)}
   :root[data-theme="dark"] .wd-r:hover{background:rgba(255,255,255,.05)}
-  .wd-r input{accent-color:var(--brand-blue);width:17px;height:17px;flex:0 0 auto}
+  .wd-r input{accent-color:#c0282b;width:18px;height:18px;flex:0 0 auto}
   .wd-detail{width:100%;margin-top:12px;box-sizing:border-box;resize:vertical;border:1px solid var(--border-2);
     border-radius:12px;padding:12px 14px;font:400 14px var(--font-sans);color:var(--fg-1);background:transparent}
   .wd-ack{display:flex;align-items:flex-start;gap:11px;margin-top:26px;cursor:pointer;
