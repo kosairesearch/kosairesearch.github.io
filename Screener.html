@@ -280,6 +280,10 @@ tbody tr:first-child td{border-top:1px solid var(--border-2)}
 :root[data-theme="dark"] .range-edit input{background:rgba(255,255,255,.06)}
 .range-edit input:focus{border-color:var(--fg-3)}
 .range-edit input::placeholder{color:var(--fg-3);font-weight:500}
+/* 브라우저 기본 숫자 스피너(위/아래 화살표) 숨김 — 타이핑·키보드 입력은 유지 */
+.range-edit input::-webkit-outer-spin-button,
+.range-edit input::-webkit-inner-spin-button{-webkit-appearance:none;margin:0}
+.range-edit input[type=number]{-moz-appearance:textfield;appearance:textfield}
 .range-edit .tilde{color:var(--fg-3)}
 .range-quick{display:flex;flex-wrap:wrap;gap:6px;margin-top:4px}
 .range-quick button{font:500 12px var(--font-sans);color:var(--fg-2);background:rgba(0,0,0,.05);border:0;padding:6px 11px;border-radius:var(--pill);cursor:pointer}
