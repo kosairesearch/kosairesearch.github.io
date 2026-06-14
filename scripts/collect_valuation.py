@@ -117,6 +117,33 @@ def collect_one(dart, ticker, stock):
     dps = v2.dart_dps(dart, ticker)
     if dps is not None:
         out["dps"] = round(dps, 1)
+
+    # ── 검증 게이트: 틀린 값이 화면에 나가지 않도록 ──
+    # 1순위 네이버 대조(EPS·BPS 15% 초과/부호반대 → 숨김), 네이버 없으면 상식범위(PER·PBR).
+    nv = v2.naver_valuation(ticker)
+
+    def gross(mine, ref):
+        if mine is None or ref in (None, 0):
+            return False
+        if (mine > 0) != (ref > 0):
+            return True
+        return abs(mine - ref) / abs(ref) > 0.15
+
+    if nv:
+        if gross(out.get("eps"), nv.get("eps")):
+            out.pop("eps", None)
+        if gross(out.get("bps"), nv.get("bps")):
+            out.pop("bps", None)
+    else:
+        # 네이버 참조 없음 → 주가 대비 상식 범위 벗어나면 제거(추출 오류 방어)
+        if out.get("eps") and price:
+            per = price / out["eps"]
+            if not (-2000 < per < 2000) or abs(out["eps"]) < 10:
+                out.pop("eps", None)
+        if out.get("bps") and price:
+            pbr = price / out["bps"]
+            if not (0 < pbr < 200) or out["bps"] < 50:
+                out.pop("bps", None)
     return out
 
 
@@ -145,7 +172,7 @@ def main():
     # 갱신 정책: 종목별로 산식버전(_v)이 같고 최근 REFRESH_DAYS 이내에 수집했으면 건너뜀.
     #   → 평소엔 종목당 약 한 달마다 자동 재수집(분기 실적을 한 달 내 자동 반영),
     #     산식(VERSION)이 바뀌면 1회 전체 재수집. 매일 전체 재수집하지 않는다.
-    VERSION = "r3"  # ROE를 TTM÷평균자본(시작~끝) 방식으로 — 토스 정합
+    VERSION = "r4"  # + 네이버/상식범위 검증 게이트(틀린 값 숨김)
     REFRESH_DAYS = int(os.getenv("REFRESH_DAYS", "30"))
     today = datetime.date.today()
     force = os.getenv("FORCE") == "1"
