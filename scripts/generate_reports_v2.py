@@ -21,6 +21,7 @@ KOSAI 리포트 v2 — '정량 + 정성 분리' 구조 (Message Batches API)
 import datetime
 import json
 import os
+import re
 import sys
 import time
 from pathlib import Path
@@ -83,9 +84,8 @@ def collect_sources_v2(message):
 ACC_IDS = {
     "rev":          ("ifrs-full_Revenue", "ifrs_Revenue"),
     "rev_ins":      ("ifrs-full_InsuranceRevenue", "ifrs_InsuranceRevenue"),
-    "op":           ("dart_OperatingIncomeLoss",),
-    "opex":         ("dart_OperatingExpenses", "dart_TotalOperatingExpenses"),
-    "rev_op":       ("dart_OperatingRevenue", "dart_TotalOperatingRevenue"),
+    "op":           ("dart_OperatingIncomeLoss", "ifrs-full_ProfitLossFromOperatingActivities",
+                     "ifrs_ProfitLossFromOperatingActivities"),
     "np":           ("ifrs-full_ProfitLoss", "ifrs_ProfitLoss"),
     "np_owner":     ("ifrs-full_ProfitLossAttributableToOwnersOfParent",
                      "ifrs_ProfitLossAttributableToOwnersOfParent"),
@@ -102,8 +102,6 @@ ACC_NAMES = {
     "rev":          ("매출액", "수익(매출액)", "영업수익", "매출"),
     "rev_ins":      ("보험수익",),
     "op":           ("영업이익", "영업이익(손실)", "영업손익"),
-    "opex":         ("영업비용", "영업비용총계", "총영업비용"),
-    "rev_op":       ("영업수익", "영업수익총계", "총영업수익"),
     "np":           ("당기순이익", "당기순이익(손실)", "분기순이익", "반기순이익"),
     "np_owner":     ("지배기업소유주지분", "지배기업의소유주에게귀속되는당기순이익",
                      "지배기업소유주귀속당기순이익", "지배주주순이익"),
@@ -114,6 +112,10 @@ ACC_NAMES = {
     "equity_owner": ("지배기업소유주지분", "지배기업의소유주에게귀속되는자본"),
     "cfo":          ("영업활동현금흐름", "영업활동으로인한현금흐름"),
 }
+
+
+# 계정명 접두(로마숫자·번호 + 구분점) 제거용 — "IV.영업이익"→"영업이익", "1.기본주당이익"→"기본주당이익"
+_NM_PREFIX = re.compile(r"^[IVXLCDM0-9]{1,4}[.)]\s*")
 
 
 def _fin_all(dart, ticker, year, reprt):
@@ -138,7 +140,7 @@ def _fin_all(dart, ticker, year, reprt):
                      g._num(r.get("thstrm_add_amount"))))
 
     def sj_ok(key, sj):
-        if key in ("rev", "rev_ins", "op", "opex", "rev_op", "np", "np_owner", "eps_basic"):
+        if key in ("rev", "rev_ins", "op", "np", "np_owner", "eps_basic"):
             return sj in ("IS", "CIS")
         if key in ("assets", "liab", "equity", "equity_owner"):
             return sj == "BS"
@@ -163,7 +165,10 @@ def _fin_all(dart, ticker, year, reprt):
                 continue
             if key == "np_owner" and sj != "IS":
                 continue
-            if anm in ACC_NAMES[key]:
+            # 은행 등은 계정명에 로마숫자·번호 접두("IV.영업이익","I.영업수익")가 붙어
+            # 정확매칭이 실패한다 → 접두 제거 후 비교.
+            anm2 = _NM_PREFIX.sub("", anm)
+            if anm in ACC_NAMES[key] or anm2 in ACC_NAMES[key]:
                 out[key] = {"amt": amt, "add": add}
     # 불변식: |지배주주 순이익| ≤ |전체 순이익|×1.02 (어기면 포괄손익 오추출 → 전체 순이익 사용)
     if "np" in out and "np_owner" in out:
@@ -192,20 +197,6 @@ def _sub(a, b):
     return (a - b) if (a is not None and b is not None) else None
 
 
-def _op_cum(d):
-    """영업이익(누적). 영업이익 소계가 없으면 영업수익−영업비용으로 보완.
-    은행·금융사는 손익계산서에 '영업이익' 줄을 두지 않는 경우가 많아 빈칸이 됐다."""
-    if not d:
-        return None
-    op = _cum(d, "op")
-    if op is not None:
-        return op
-    ro, ox = _cum(d, "rev_op"), _cum(d, "opex")
-    if ro is not None and ox is not None:
-        return ro - ox
-    return None
-
-
 def collect_quant(dart, ticker, krx_row, stock):
     """한 종목의 정량 블록을 수집한다."""
     cur = datetime.date.today().year  # 2026
@@ -216,7 +207,7 @@ def collect_quant(dart, ticker, krx_row, stock):
         d = _fin_all(dart, ticker, yr, "11011")
         if not d:
             continue
-        rev, op = _cum(d, "rev"), _op_cum(d)
+        rev, op = _cum(d, "rev"), _cum(d, "op")
         np_, npo = _cum(d, "np"), _cum(d, "np_owner")
         eq, eqo, li = _bs(d, "equity"), _bs(d, "equity_owner"), _bs(d, "liab")
         row = {
@@ -245,14 +236,13 @@ def collect_quant(dart, ticker, krx_row, stock):
     time.sleep(0.3)
 
     def quarters(key, fy_total):
-        getc = _op_cum if key == "op" else (lambda d: _cum(d, key))
-        c1, ch, c9 = getc(dq1), getc(dh1), getc(d9m)
+        c1, ch, c9 = _cum(dq1, key), _cum(dh1, key), _cum(d9m, key)
         q = {
             f"{py}Q1": c1,
             f"{py}Q2": _sub(ch, c1),
             f"{py}Q3": _sub(c9, ch),
             f"{py}Q4": _sub(fy_total, c9),
-            f"{cur}Q1": getc(dq1c),
+            f"{cur}Q1": _cum(dq1c, key),
         }
         return q
 
