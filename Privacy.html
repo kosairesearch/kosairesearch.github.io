@@ -389,6 +389,7 @@ KOSi18n.register({
 <link rel="icon" type="image/png" sizes="512x512" href="assets/favicon.png">
 <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon.png">
 <link rel="apple-touch-icon" sizes="180x180" href="assets/apple-touch-icon.png">
+  <script src="analytics.js"></script>
 </head>
 <body>
 
@@ -468,6 +469,7 @@ KOSi18n.register({
         <li>Google LLC — 회원 인증(Firebase Authentication) 및 회원 데이터 보관·처리(Firestore, Cloud Functions) / 보유 기간: 회원 탈퇴 또는 위탁 계약 종료 시까지</li>
         <li>Resend, Inc. — 이메일 인증·비밀번호 재설정 등 서비스 관련 이메일 발송 / 보유 기간: 발송 목적 달성 또는 위탁 계약 종료 시까지</li>
         <li>Zoho Corporation — 문의·피드백 접수 이메일의 수신·보관 / 보유 기간: 문의 처리 완료 후 지체 없이 파기</li>
+        <li>Google LLC / 네이버(주) — 서비스 이용 통계 분석(Google 애널리틱스·네이버 애널리틱스), 비식별 통계 정보 / 보유 기간: 분석 서비스 정책에 따름</li>
       </ul>
       <p>소셜 로그인 제공자(구글·카카오·네이버)는 수탁자가 아니며, 이용자의 동의에 따라 서비스가 해당 제공자로부터 회원 정보를 제공받는 관계입니다.</p>
 
@@ -490,7 +492,7 @@ KOSi18n.register({
       </ul>
 
       <h2>9. 쿠키 등 자동 수집 장치의 운영</h2>
-      <p>서비스는 쿠키를 사용하지 않으며, 광고·행태정보 수집을 위한 추적 도구나 외부 분석 도구도 사용하지 않습니다. 로그인 상태 유지와 화면 테마·언어 설정은 이용자 브라우저의 로컬 저장소에 기기 내에서만 저장되며, 이용자는 브라우저 설정에서 언제든지 삭제할 수 있습니다. 다만 삭제 시 로그인 등 일부 기능 이용에 제한이 있을 수 있습니다.</p>
+      <p>서비스는 서비스 개선과 이용 통계 분석을 위해 Google 애널리틱스(GA4)·네이버 애널리틱스 등 분석 도구를 사용할 수 있습니다. 이 과정에서 쿠키 또는 유사 기술로 방문 경로, 페이지 이용 기록, 기기·브라우저 정보 등 개인을 식별하지 않는 통계 정보가 수집되며, IP 주소는 익명화하여 처리합니다. 광고를 목적으로 한 행태정보 수집은 하지 않습니다. 이용자는 브라우저 설정에서 쿠키 저장을 거부하거나 Google 애널리틱스 차단 부가기능 등을 통해 수집을 거부할 수 있습니다. 로그인 상태 유지와 화면 테마·언어 설정은 이용자 브라우저의 로컬 저장소에 기기 내에서만 저장되며, 이용자는 브라우저 설정에서 언제든지 삭제할 수 있습니다. 다만 삭제 시 로그인 등 일부 기능 이용에 제한이 있을 수 있습니다.</p>
 
       <h2>10. 자동화된 결정에 관한 사항</h2>
       <p>서비스가 제공하는 AI 분석·리포트는 공개된 시장·공시 데이터를 기반으로 자동 생성되는 일반 정보이며, 특정 이용자의 개인정보를 활용하여 이용자에게 법적·재산적으로 중대한 영향을 미치는 자동화된 결정을 수행하지 않습니다.</p>
@@ -594,7 +596,7 @@ if(window.KOSi18n) KOSi18n.register({
   "기술적 조치: 인증 정보의 암호화, 접근 통제, 보안 기능을 갖춘 신뢰할 수 있는 인프라(Firebase) 이용":"Technical: encrypting credentials, access control, and using trusted infrastructure with built-in security (Firebase)",
   "이용자 정보가 분실·도난·유출·변조·훼손되지 않도록 합리적인 보호 조치":"Reasonable safeguards against loss, theft, leakage, alteration, or damage of user information",
   "9. 쿠키 등 자동 수집 장치의 운영":"9. Cookies and Automatic Collection",
-  "서비스는 쿠키를 사용하지 않으며, 광고·행태정보 수집을 위한 추적 도구나 외부 분석 도구도 사용하지 않습니다. 로그인 상태 유지와 화면 테마·언어 설정은 이용자 브라우저의 로컬 저장소에 기기 내에서만 저장되며, 이용자는 브라우저 설정에서 언제든지 삭제할 수 있습니다. 다만 삭제 시 로그인 등 일부 기능 이용에 제한이 있을 수 있습니다.":"The Service does not use cookies, nor any tracking or third-party analytics tools for advertising or behavioral data. Sign-in state and theme/language settings are stored only on your device in browser local storage, which you can delete at any time in your browser settings; doing so may limit some features such as staying signed in.",
+  "서비스는 서비스 개선과 이용 통계 분석을 위해 Google 애널리틱스(GA4)·네이버 애널리틱스 등 분석 도구를 사용할 수 있습니다. 이 과정에서 쿠키 또는 유사 기술로 방문 경로, 페이지 이용 기록, 기기·브라우저 정보 등 개인을 식별하지 않는 통계 정보가 수집되며, IP 주소는 익명화하여 처리합니다. 광고를 목적으로 한 행태정보 수집은 하지 않습니다. 이용자는 브라우저 설정에서 쿠키 저장을 거부하거나 Google 애널리틱스 차단 부가기능 등을 통해 수집을 거부할 수 있습니다. 로그인 상태 유지와 화면 테마·언어 설정은 이용자 브라우저의 로컬 저장소에 기기 내에서만 저장되며, 이용자는 브라우저 설정에서 언제든지 삭제할 수 있습니다. 다만 삭제 시 로그인 등 일부 기능 이용에 제한이 있을 수 있습니다.":"To improve the Service and analyze usage statistics, the Service may use analytics tools such as Google Analytics (GA4) and Naver Analytics. In this process, non-identifying statistical information — such as referral path, page usage, and device/browser details — is collected via cookies or similar technologies, and IP addresses are anonymized. We do not collect behavioral data for advertising. You may refuse collection by disabling cookies in your browser settings or by using the Google Analytics opt-out add-on. Sign-in state and theme/language settings are stored only on your device in browser local storage and can be deleted anytime in your browser settings; doing so may limit some features such as staying signed in.",
   "10. 자동화된 결정에 관한 사항":"10. Automated Decision-Making",
   "서비스가 제공하는 AI 분석·리포트는 공개된 시장·공시 데이터를 기반으로 자동 생성되는 일반 정보이며, 특정 이용자의 개인정보를 활용하여 이용자에게 법적·재산적으로 중대한 영향을 미치는 자동화된 결정을 수행하지 않습니다.":"The AI analyses and reports provided by the Service are general information generated automatically from public market and disclosure data; the Service does not make automated decisions with significant legal or financial effects on you using your personal information.",
   "11. 정보주체의 권리·의무 및 행사 방법":"11. Your Rights and How to Exercise Them",

@@ -60,6 +60,7 @@ const KOSWatch = {
     if(pwOnly(user) && !user.emailVerified){ if(window.KOSGate) window.KOSGate.showLoginPopup("이메일 인증 후 워치리스트를 사용할 수 있어요."); return false; }
     var ts = Date.now();
     var cp = Object.assign({}, items); cp[tk] = ts; items = cp; fire();
+    if (window.KOSA) KOSA.track("watchlist_add", { ticker: tk });
     setDoc(ref(), { items: { [tk]: ts } }, { merge: true })
       .catch(function(e){ console.warn("[watchlist] 추가 실패:", e && e.code); });
     return true;

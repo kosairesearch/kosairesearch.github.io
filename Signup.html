@@ -457,6 +457,7 @@ KOSi18n.register({
 <link rel="icon" type="image/png" sizes="512x512" href="assets/favicon.png">
 <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon.png">
 <link rel="apple-touch-icon" sizes="180x180" href="assets/apple-touch-icon.png">
+  <script src="analytics.js"></script>
 </head>
 <body>
 
@@ -649,6 +650,7 @@ $('#emailForm').addEventListener('submit', async e => {
   const btn = $('#emailSubmit'); btn.disabled = true;
   try{
     await createUserWithEmailAndPassword(auth, email, pw);
+    if(window.KOSA) KOSA.track('sign_up', { method: 'email' });
     try{ await sendVerifyEmail(email); }catch(_){}   // 커스텀 인증 메일(Resend)
     await signOut(auth);          // 인증 전에는 로그인 상태로 두지 않음
     showVerifySent(email);
@@ -672,7 +674,7 @@ function showVerifySent(email){
 $('#googleBtn').addEventListener('click', async () => {
   clearErr();
   if(!agreeEl.checked){ flagAgree(); return; }
-  try{ await signInWithPopup(auth, new GoogleAuthProvider()); go(); }
+  try{ await signInWithPopup(auth, new GoogleAuthProvider()); if(window.KOSA) KOSA.track('sign_up', { method: 'google' }); go(); }
   catch(err){ if((err.code || '').includes('popup-closed') || (err.code || '').includes('cancelled-popup')) return; showErr(mapError(err)); }
 });
 

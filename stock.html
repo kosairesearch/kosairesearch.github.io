@@ -754,6 +754,7 @@ KOSi18n.register({
 <link rel="icon" type="image/png" sizes="512x512" href="assets/favicon.png">
 <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon.png">
 <link rel="apple-touch-icon" sizes="180x180" href="assets/apple-touch-icon.png">
+  <script src="analytics.js"></script>
 </head>
 <body>
 
@@ -1232,6 +1233,8 @@ KOSi18n.register({
   }
 
   render();
+  // 한 번만 집계(render는 언어 토글 시 재실행되므로 여기서 1회)
+  if(window.KOSA) KOSA.track(REP?'report_view':'stock_view', { ticker: TK, name: tname(STOCK.name) });
   var wb=document.getElementById('watchBtn');
   if(wb)wb.addEventListener('click',function(){
     if(!window.KOSWatch) return;
