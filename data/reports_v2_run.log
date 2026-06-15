@@ -2,8 +2,8 @@
 KRX 로그인 시도...
   로그인 ID: qjawnsdla
 KRX 로그인 완료.
-  로그인 시간: 2026-06-15 14:33:10
-  만료 시간: 2026-06-15 15:33:10
+  로그인 시간: 2026-06-15 15:06:59
+  만료 시간: 2026-06-15 16:06:59
 - 정량 수집 005930 삼성전자...
 reprt_code='11011', fs_div='CFS' (사업보고서, 연결제무제표)'
 reprt_code='11011', fs_div='CFS' (사업보고서, 연결제무제표)'
@@ -450,15 +450,16 @@ reprt_code='11013', fs_div='CFS' (1분기보고서, 연결제무제표)'
   2026Q1: 매출 32,411억 영업이익 5,418억 지배순이익 2,853억
   PER 20.4 | EPS 12117 | PBR 1.27 | BPS 195071 | ROE 6.0 | 배당 1.06% | DPS 2630.0
 - 모델 배분: claude-opus-4-8 20개 · claude-sonnet-4-6 0개
-- ✅ 배치 제출: msgbatch_01MPra6hyXCGbcPPNdqSpFpG (20건)
+- ✅ 배치 제출: msgbatch_01CtaocmvvaBdcbSv5pafNJ9 (20건)
+  · 상태 in_progress · 처리 20/성공 0/오류 0
+  · 상태 in_progress · 처리 20/성공 0/오류 0
+  · 상태 in_progress · 처리 20/성공 0/오류 0
   · 상태 in_progress · 처리 20/성공 0/오류 0
   · 상태 in_progress · 처리 20/성공 0/오류 0
   · 상태 in_progress · 처리 20/성공 0/오류 0
   · 상태 in_progress · 처리 20/성공 0/오류 0
   · 상태 in_progress · 처리 20/성공 0/오류 0
   · 상태 ended · 처리 0/성공 20/오류 0
-    (검증 실패: 누락 키 ['risks', 'checkpoints', 'verdict'])
-  · ⚠️ 005930 스키마 불완전 — 건너뜀
 - 목록 인덱스 제목 동기화: 99건
 
-✅ v2 회수 완료 · 성공 19/실패 1 → data/reports_v2/ (99개)
+✅ v2 회수 완료 · 성공 20/실패 0 → data/reports_v2/ (99개)
