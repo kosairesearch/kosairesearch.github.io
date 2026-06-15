@@ -22,7 +22,7 @@ concurrency:
 jobs:
   valuation:
     runs-on: ubuntu-latest
-    timeout-minutes: 70
+    timeout-minutes: 330
     permissions:
       contents: write
       actions: write
