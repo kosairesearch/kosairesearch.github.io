@@ -9,7 +9,7 @@
    ============================================================ */
 (function () {
   var GA4_ID = "G-XRYHGM36GS";    // GA4 측정 ID
-  var NAVER_ID = "";  // 예: "a1b2c3d4e5"   ← 여기에 네이버 애널리틱스 ID
+  var NAVER_ID = "1aa82ad75b71490";  // 네이버 애널리틱스 ID
 
   // ── Google Analytics 4 ──
   if (GA4_ID && GA4_ID.indexOf("G-") === 0) {
