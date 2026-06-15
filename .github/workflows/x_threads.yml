@@ -1,0 +1,34 @@
+name: X 스레드 초안 생성(매일)
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: '0 22 * * *'   # 매일 07:00 KST — 장 시작 전 초안 준비
+
+concurrency:
+  group: kos-marketing
+  cancel-in-progress: false
+
+jobs:
+  threads:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    permissions:
+      contents: write
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - name: 스레드 생성
+        run: python scripts/gen_x_threads.py 2>&1 | tail -60
+      - name: 커밋
+        run: |
+          git config --global user.email "bot@kosairesearch.github.io"
+          git config --global user.name "KOS ai Bot"
+          git add -A marketing/
+          git commit -m "🐦 X 스레드 초안 $(TZ='Asia/Seoul' date +'%Y-%m-%d')" || exit 0
+          for i in 1 2 3 4 5; do
+            if git pull --rebase origin main && git push origin main; then break; fi
+            git rebase --abort 2>/dev/null || true; sleep $((i*3))
+          done
