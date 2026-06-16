@@ -1,0 +1,341 @@
+{
+ "title": {
+  "ko": "AI eSSD 수주 급증·흑자전환 분기점",
+  "en": "AI eSSD Orders Surge as Padu Turns Profitable"
+ },
+ "lead": {
+  "ko": "파두는 AI 데이터센터용 SSD 컨트롤러 수요 확대로 2026년 1분기 흑자전환에 성공했으나, 누적 적자로 인한 자본 잠식 압력과 사법 리스크가 동시에 상존한다.",
+  "en": "Padu swung to a profit in Q1 2026 on surging AI data center SSD controller demand, yet accumulated losses that eroded equity and an ongoing legal case remain in play."
+ },
+ "keypoints": [
+  {
+   "ko": "2026년 1분기 매출 595억원·영업이익 약 77억원으로, 전년 동기 적자에서 흑자로 전환했다.",
+   "en": "In Q1 2026 revenue reached KRW 59.5bn and operating profit about KRW 7.7bn, flipping from a year-earlier loss to a profit."
+  },
+  {
+   "ko": "고수익 컨트롤러 매출 비중이 2024년 약 55%에서 2026년 1분기 약 80%로 확대되며 수익 구조가 개선됐다.",
+   "en": "The mix of higher-margin controller revenue rose from about 55% in 2024 to roughly 80% in Q1 2026, improving the earnings structure."
+  },
+  {
+   "ko": "6월 초 기준 공시 누적 신규 수주가 3,000억원을 돌파해 2025년 연간 매출을 크게 웃돈다.",
+   "en": "Disclosed cumulative new orders topped KRW 300bn by early June, far exceeding full-year 2025 revenue."
+  },
+  {
+   "ko": "2025년 4분기 Gen6 최종 개발비 집행으로 연간 적자가 컸으나, 개발 투자가 일단락됐다는 게 회사 설명이다.",
+   "en": "Heavy Q4 2025 spending on final Gen6 development drove the annual loss, but the company says that investment phase has now wound down."
+  },
+  {
+   "ko": "2023년 상장 당시 공시 관련 자본시장법 위반 혐의 재판이 진행 중인 점은 미해소 리스크다.",
+   "en": "An ongoing capital-markets-law trial over IPO-era disclosures remains an unresolved risk."
+  }
+ ],
+ "business": {
+  "ko": "파두는 데이터센터용 PCIe NVMe 기업용 SSD(eSSD) 컨트롤러를 설계하는 팹리스 반도체 기업이다. 컨트롤러는 SSD의 읽기·쓰기 제어와 전력 효율을 담당하는 핵심 시스템반도체로, SSD의 두뇌 역할을 하며 데이터의 읽기·쓰기 과정을 제어하고 전력 효율을 최적화한다. 사업은 컨트롤러 단품 공급과 낸드 제조사·모듈하우스를 통한 SSD 완제품 공급으로 나뉘며, 올해 1분기 전체 매출에서 컨트롤러 사업이 차지하는 비중은 80%로 집계됐다. SSD 완제품 대비 수익성이 높은 컨트롤러 매출 비중은 2024년 약 55%에서 2025년 약 70% 수준까지 확대됐다. 고객 기반은 메타, 세계 최대 서버제조사 델, SK하이닉스 및 웨스턴디지털 등에 자사의 기업용 SSD 컨트롤러를 납품하는 것으로 알려져 있다. 파두는 샌디스크에 SSD 컨트롤러를 공급하고, 샌디스크는 자사 낸드플래시와 결합해 완제품 형태로 빅테크에 납품하는 구조다. 아시아 시장에서는 지난해 4월 대만 메모리·SSD 브랜드 에이데이터(ADATA)와 전략적 협업을 시작하고 트러스타(TRUSTA) 브랜드 론칭과 기가컴퓨팅과의 삼각협력으로 시장 공략을 가속화했다. 경쟁 구도에서 SSD 컨트롤러 독자 설계가 가능한 국내 기업은 삼성전자·SK하이닉스·파두 단 3곳이며, 팹리스 전문 업체로서 다양한 NAND 제조사·하이퍼스케일러를 동시에 대응할 수 있는 유일한 한국 기업으로 평가된다. 신성장 동력으로 SSD 컨트롤러 중심 기존 사업에 더해 전력관리반도체(PMIC) 등 신규 사업을 키우고 있으며 미국 중심이던 고객 기반을 아시아까지 넓히는 전략을 병행 중이다.",
+  "en": "Padu is a fabless chip company that designs PCIe NVMe enterprise SSD (eSSD) controllers for data centers. The controller is the core system chip governing an SSD's read/write operations and power efficiency; it acts as the brain of the SSD, controlling data read/write and optimizing power efficiency. The business splits into standalone controller supply and finished SSDs sold via NAND makers and module houses, and in Q1 this year the controller business accounted for 80% of total revenue. The share of higher-margin controller revenue versus finished SSDs rose from about 55% in 2024 to roughly 70% in 2025. On the customer side, the company is known to supply its enterprise SSD controllers to Meta, the world's largest server maker Dell, SK hynix and Western Digital. Padu supplies SSD controllers to SanDisk, which combines them with its own NAND to ship finished products to big tech firms. In Asia, it began a strategic collaboration with Taiwan's memory and SSD brand ADATA in April last year and accelerated its push through the TRUSTA brand launch and a three-way tie-up with Giga Computing. On competition, only three Korean firms can independently design SSD controllers - Samsung, SK hynix and Padu - and Padu is regarded as the only Korean company able to serve multiple NAND makers and hyperscalers as a dedicated fabless player. As new growth drivers, Padu is building out new businesses such as power management ICs (PMIC) alongside its controller core while broadening its formerly US-centric customer base into Asia."
+ },
+ "earnings": {
+  "ko": "확정 재무 기준 연간 매출은 2023년 224.7억원, 2024년 435.0억원, 2025년 924.2억원으로 가파른 성장세를 보였다. 그러나 영업손익은 2023년 -585.7억원, 2024년 -950.5억원, 2025년 -654.7억원으로 3년 연속 대규모 적자가 이어졌다. 2025년 영업손실 폭이 전년보다 줄어든 배경에는 매출 확대와 더불어 2025년 4분기에 차세대 Gen6 컨트롤러 개발 관련 최종 비용 110억원이 집행된 일회성 요인이 있었으며, 이로 인해 4분기 영업손실은 -294.9억원, 지배주주 순손실은 -383.4억원으로 분기 중 가장 컸다. 반면 분기 매출은 2025년 1분기 192.2억원에서 2~4분기 236.8억·256.4억·238.8억원으로 안정적 수준을 유지하다가, 2026년 1분기 595.4억원으로 전분기 대비 2.5배 급증했다. 같은 분기 영업이익은 76.9억원, 지배주주 순이익은 104.1억원으로 분기 기준 흑자전환했는데, 이는 전년 동기 매출 192억원에서 210% 급증한 수치이며 영업이익과 순이익이 각각 적자에서 흑자로 전환됐고, 성장의 핵심 동력은 AI 데이터센터 수요 확대에 따른 eSSD 수요 폭증이다. 누적 적자가 자본을 잠식하면서 지배주주 자본총계는 2023년 1,848.8억원에서 2025년 193.1억원으로 급감했고, 부채비율은 2024년 37.2%에서 2025년 518.5%로 크게 상승했다. 영업활동현금흐름은 2023년 -421.6억원, 2024년 -1,088.4억원에서 2025년 -37.0억원으로 적자 폭이 크게 축소됐다. 연간 기준 주당순손실(EPS)도 2024년 -1,846원에서 2025년 -1,532원으로 손실이 줄어드는 방향으로 움직였다.",
+  "en": "On confirmed figures, annual revenue rose sharply from KRW 22.47bn in 2023 to KRW 43.50bn in 2024 and KRW 92.42bn in 2025. Operating results, however, stayed deeply in the red for three straight years at KRW -58.57bn (2023), KRW -95.05bn (2024) and KRW -65.47bn (2025). The narrower 2025 operating loss reflected higher revenue plus a one-off item: in Q4 2025 the company booked KRW 11bn of final development costs for its next-generation Gen6 controller, which made Q4 the worst quarter with an operating loss of KRW -29.49bn and an owners' net loss of KRW -38.34bn. Quarterly revenue held steady from KRW 19.22bn in Q1 2025 through KRW 23.68bn, KRW 25.64bn and KRW 23.88bn, then jumped about 2.5x to KRW 59.54bn in Q1 2026. That quarter delivered operating profit of KRW 7.69bn and owners' net income of KRW 10.41bn, a swing into the black; this was a 210% surge from KRW 19.2bn a year earlier, with operating profit and net income each flipping from loss to profit, driven mainly by booming eSSD demand from AI data centers. Accumulated losses eroded equity, with owners' equity plunging from KRW 184.88bn in 2023 to KRW 19.31bn in 2025, while the debt ratio jumped from 37.2% in 2024 to 518.5% in 2025. Operating cash flow improved markedly, from KRW -42.16bn in 2023 and KRW -108.84bn in 2024 to KRW -3.70bn in 2025. Annual loss per share also narrowed, from KRW -1,846 in 2024 to KRW -1,532 in 2025."
+ },
+ "industry": {
+  "ko": "전방 시장인 기업용 SSD(eSSD)는 AI 데이터센터 투자 확대로 구조적 수요 증가 국면에 진입했다. AI 확산으로 글로벌 데이터센터 투자가 본격화되면서 엔터프라이즈 SSD 수요가 구조적으로 증가하고 있고, SSD의 핵심 부품인 컨트롤러의 전략적 가치도 함께 부각되고 있다. 컨트롤러는 SSD 1대당 1개씩 탑재되는 구조여서 출하량 증가가 매출로 직결되며, AI 추론 워크로드 확산에 따른 KV캐시 저장 수요로 글로벌 eSSD 출하량이 2026년 7,100만대(+19% YoY)로 구조적 성장세에 진입한 것으로 분석된다. 메모리 업계도 같은 흐름을 확인하는데, SK하이닉스는 최근 실적 컨퍼런스콜에서 낸드가 단순 저장장치를 넘어 AI 연산 흐름을 지원하는 스토리지 솔루션으로 구조가 바뀌고 있으며 고성능·고용량 eSSD 수요가 구조적으로 확대될 것이라고 전망했다. 시장 규모 전망에서 엔비디아가 CES 2026에서 추론용 KV캐시를 별도 SSD에 저장하는 아키텍처를 제시한 이후 글로벌 SSD 컨트롤러 시장은 2030년까지 49억 달러 규모로 확대될 것으로 전망된다. 경쟁 측면에서 파두는 마벨(Marvell)과 같은 전문 컨트롤러 업체와 직접 경쟁하는데, 일부 리서치는 파두가 AI 데이터센터향 고성능·저전력 영역에서 마벨의 점유율을 가져오는 모멘텀을 보유하며, 마벨이 Gen6 출시를 미루는 사이 선점하는 시간이 향후 수주에 영향을 미칠 것으로 본다. 다만 이는 증권사·리서치의 분석 관점으로, 실제 점유율 추이는 양산·인증 진행에 따라 변동될 수 있다.",
+  "en": "The downstream enterprise SSD (eSSD) market has entered a structural growth phase driven by AI data center investment. As AI adoption accelerates global data center spending, enterprise SSD demand is rising structurally and the strategic value of the controller, the SSD's core component, is rising with it. Because one controller is fitted per SSD, unit-shipment growth flows directly into revenue, and KV-cache storage demand from spreading AI inference workloads is seen pushing global eSSD shipments to 71 million units in 2026 (+19% YoY) on a structural growth path. The memory industry echoes this, as SK hynix said on a recent earnings call that NAND is shifting from simple storage to a storage solution supporting AI compute flows, and that demand for high-performance, high-capacity eSSDs will expand structurally. On market size, after Nvidia presented at CES 2026 an architecture that stores inference KV-cache on separate SSDs, the global SSD controller market is projected to expand to USD 4.9bn by 2030. Competitively, Padu goes head to head with specialist controller makers such as Marvell, and some research argues that Padu holds momentum to take share from Marvell in the high-performance, low-power AI data center segment, and that the time it gains while Marvell delays its Gen6 launch could shape future orders. These are analyst views, however, and actual share trends will depend on how mass production and certification progress."
+ },
+ "outlook": {
+  "ko": "회사는 2026년을 실적 도약의 해로 제시하고 있으며 수주 지표가 이를 뒷받침한다. 하이퍼스케일러 고객사들의 SSD 컨트롤러 주문이 늘면서 올해 신규 수주 규모는 6월 초 기준 3,000억원을 넘어섰다. 파두는 하이퍼스케일러 기업을 대상으로 컨트롤러 양산이 본격화됨에 따라 하반기로 갈수록 더욱 가파른 성장이 가능할 것으로 관측하고 있다. 차세대 제품 측면에서 파두는 컴퓨텍스 2026에서 차세대 6세대(Gen6) SSD 컨트롤러를 처음 공개했다. 파두가 개발한 Gen6 아키텍처는 주력 규격인 Gen5 대비 연산 속도와 전력 소비 효율을 모두 두 배 이상 개선한 것이 특징이다. 고객 측 모멘텀으로 골드만삭스는 샌디스크의 구글 데이터센터용 eSSD 공급이 2026년 상반기부터 램프업에 들어갈 것으로 전망하며 해당 물량이 메타를 잠재적으로 상회할 수 있다고 분석했다. 비용 측면에서는 NH투자증권은 Gen6 관련 신규 프로젝트와 연구개발 증가로 단기 비용 부담이 이어질 수 있으나 초기 개발비용 부담을 감안하면 2026년부터 비용 부담이 점진적으로 감소할 것으로 봤다. 다만 회사·증권사 전망은 가정에 기반하며, Gen6의 실제 양산 시점과 고객 다변화 성공 여부가 향후 실적의 핵심 변수다.",
+  "en": "Management frames 2026 as a year of an earnings leap, and order metrics support that. As hyperscaler customers' SSD controller orders increased, this year's new orders topped KRW 300bn as of early June. Padu expects steeper growth into the second half as controller mass production for hyperscalers ramps up. On next-generation products, Padu unveiled its next-generation sixth-gen (Gen6) SSD controller for the first time at Computex 2026. Its Gen6 architecture is characterized by more than doubling both compute speed and power efficiency versus the mainstream Gen5 standard. On customer momentum, Goldman Sachs projected that SanDisk's eSSD supply for Google data centers would ramp from the first half of 2026 and analyzed that the volume could potentially exceed Meta's. On costs, NH Investment & Securities noted that new Gen6 projects and rising R&D could keep cost burdens elevated near term, but that those burdens should gradually ease from 2026 as initial development costs are absorbed. These company and brokerage outlooks rest on assumptions, however, and the actual timing of Gen6 mass production and the success of customer diversification are the key swing factors for future results."
+ },
+ "valuation_comment": {
+  "ko": "확정 재무의 헤드라인 지표를 보면 자기자본이익률(ROE)은 -90.1%, 주당순이익(EPS)은 -1,081원, 주당순자산(BPS)은 670원으로, 직전 12개월 손익이 아직 적자 구간에 머물러 있어 이익 기반 멀티플 산출 자체가 제한적이다. 다만 분기 흐름은 적자에서 흑자로 전환되는 방향으로 움직이고 있어, 손익 지표의 해석은 시점에 따라 빠르게 달라질 수 있다. 순자산 대비로는 주가가 BPS를 크게 웃도는 프리미엄 구간에 위치하는데, 이는 적자 누적으로 자본총계가 축소된 데다 미래 성장 기대가 주가에 선반영된 결과로 볼 수 있다. 배당은 해당 기간 주당 배당이 없어 배당수익률 측면의 매력은 부각되지 않는다. 일부 증권사·리서치는 적자·자본 축소로 PER·PBR 비교가 제한적이라며 매출 기반 멀티플로 접근하지만, 동일 비교군 선정과 성장률 가정에 따라 결론이 크게 달라질 수 있어 단정적 해석은 경계할 필요가 있다.",
+  "en": "On the confirmed headline metrics, return on equity stands at -90.1%, earnings per share at KRW -1,081, and book value per share at KRW 670; because the trailing twelve-month result is still in loss territory, an earnings-based multiple is of limited use. That said, the quarterly trajectory is moving from loss toward profit, so readings of the earnings metrics can shift quickly depending on the reference point. Relative to net assets, the stock trades at a sizable premium above BPS, reflecting both equity shrinkage from accumulated losses and growth expectations already priced in. With no per-share dividend in the period, there is no dividend-yield appeal to highlight. Some brokerages and research note that loss-making status and shrinking equity limit PER/PBR comparisons and instead use revenue-based multiples, but conclusions vary widely with peer selection and growth assumptions, so definitive interpretations warrant caution."
+ },
+ "bull": [
+  {
+   "title": {
+    "ko": "AI eSSD 수요와 수주 가속",
+    "en": "AI eSSD demand and order acceleration"
+   },
+   "body": {
+    "ko": "AI 데이터센터 투자 확대로 기업용 SSD 수요가 구조적으로 늘고 있다. 올해 4월까지 누적 수주가 1,663억원을 기록하며 지난해 연간 매출 924억원을 추월했다. 이후 6월 초 기준 신규 수주가 3,000억원을 넘어서며 매출 가시성이 빠르게 높아지고 있다.",
+    "en": "AI data center investment is structurally lifting enterprise SSD demand. Cumulative orders through April this year hit KRW 166.3bn, overtaking last year's full-year revenue of KRW 92.4bn. Subsequently, new orders surpassed KRW 300bn by early June, sharply improving revenue visibility."
+   }
+  },
+  {
+   "title": {
+    "ko": "고수익 컨트롤러 믹스 개선",
+    "en": "Improving high-margin controller mix"
+   },
+   "body": {
+    "ko": "수익성이 높은 컨트롤러 비중이 빠르게 커지고 있다. 컨트롤러 매출 비중이 2024년 약 55%에서 2025년 약 70%까지 확대되며 수익성 개선을 이끌었다. 회사는 개발투자가 일단락되면서 판관비 증가 없이도 매출 확대가 가능해 수익성 개선이 더욱 명확해질 것이라고 밝혔다.",
+    "en": "The higher-margin controller share is expanding fast. The controller revenue mix rose from about 55% in 2024 to roughly 70% in 2025, driving margin improvement. The company said that, with development investment winding down, revenue can grow without higher SG&A, making margin improvement clearer."
+   }
+  },
+  {
+   "title": {
+    "ko": "Gen6 기술 리더십과 고객 다변화",
+    "en": "Gen6 leadership and customer diversification"
+   },
+   "body": {
+    "ko": "차세대 제품과 고객 기반 확장이 동시에 진행된다. 파두는 컴퓨텍스 2026에서 Gen6 SSD 컨트롤러를 처음 공개하며 북미 하이퍼스케일러에 이어 대만·아시아 시장 공략에 속도를 낸다는 전략을 제시했다. 올해 대만 시장에서만 총 604억원 규모의 기업용 SSD 완제품 공급 계약을 수주했다.",
+    "en": "Next-generation products and a broader customer base are advancing in parallel. Padu unveiled its Gen6 SSD controller for the first time at Computex 2026 and laid out a strategy to accelerate into Taiwan and Asia after North American hyperscalers. In Taiwan alone this year it secured KRW 60.4bn of finished enterprise SSD supply contracts."
+   }
+  }
+ ],
+ "bear": [
+  {
+   "title": {
+    "ko": "자본 축소와 부채비율 급등",
+    "en": "Equity erosion and surging leverage"
+   },
+   "body": {
+    "ko": "누적 적자가 재무구조를 압박했다. 확정 재무 기준 지배주주 자본총계는 2023년 1,848.8억원에서 2025년 193.1억원으로 급감했고, 부채비율은 2024년 37.2%에서 2025년 518.5%로 크게 상승했다. 흑자 흐름이 지속되지 않으면 자본 여력에 대한 우려가 다시 부각될 수 있다.",
+    "en": "Accumulated losses have pressured the balance sheet. On confirmed figures, owners' equity plunged from KRW 184.88bn in 2023 to KRW 19.31bn in 2025, while the debt ratio jumped from 37.2% in 2024 to 518.5% in 2025. If the swing to profit does not persist, concerns over capital headroom could resurface."
+   }
+  },
+  {
+   "title": {
+    "ko": "미해소 사법 리스크",
+    "en": "Unresolved legal risk"
+   },
+   "body": {
+    "ko": "상장 과정과 관련한 재판이 진행 중이다. 서울남부지법은 2월 26일 자본시장법 위반 혐의로 기소된 공동대표 등에 대한 첫 공판을 열었으며, 2023년 상장 당시 주요 거래처의 발주 중단 사실을 알리지 않고 상장을 추진했다는 혐의다. 재판 결과에 따라 평판·경영 리스크가 커질 수 있다.",
+    "en": "A trial tied to the IPO process is underway. The Seoul Southern District Court held the first hearing on February 26 for the co-CEOs and others indicted for capital-markets-law violations, on allegations that the 2023 IPO was pursued without disclosing that a key client had halted orders. Depending on the outcome, reputational and management risks could grow."
+   }
+  },
+  {
+   "title": {
+    "ko": "고객·제품 집중도",
+    "en": "Customer and product concentration"
+   },
+   "body": {
+    "ko": "실적이 소수 대형 고객과 컨트롤러 단일 제품군에 크게 의존한다. 일부 리서치는 특정 NAND 고객사의 발주가 급감할 경우 분기 매출이 큰 폭으로 흔들리는 2024년형 충격 시나리오를 가정한다. 고객 다변화와 PMIC 등 신사업이 자리잡기 전까지는 발주 변동에 따른 실적 변동성이 상존한다.",
+    "en": "Earnings depend heavily on a few large customers and a single controller product line. Some research models a 2024-style shock in which a sharp drop in a specific NAND customer's orders swings quarterly revenue significantly. Until customer diversification and new businesses such as PMIC take hold, earnings volatility from order swings persists."
+   }
+  }
+ ],
+ "risks": [
+  {
+   "cat": {
+    "ko": "전환사채 희석",
+    "en": "Convertible bond dilution"
+   },
+   "body": {
+    "ko": "전환사채에 따른 잠재 희석 요인이 있다. 일부 리서치에 따르면 파두는 119.9억원 규모 CB를 발행했고 전환가액은 10,735원이며 2026년 5월 23일부터 전환청구가 가능해 전환 가능성이 높다. 전환 시 주식 수 증가에 따른 지분 희석을 점검할 필요가 있다.",
+    "en": "There is potential dilution from convertible bonds. Per some research, Padu issued KRW 11.99bn of CBs with a conversion price of KRW 10,735, with conversion possible from May 23, 2026, making conversion likely. Investors should monitor the share-count increase and dilution if conversion occurs."
+   }
+  },
+  {
+   "cat": {
+    "ko": "공급망·파운드리 제약",
+    "en": "Supply chain and foundry constraints"
+   },
+   "body": {
+    "ko": "차세대 컨트롤러 생산은 외부 파운드리와 핵심 소재에 의존한다. 일부 리서치는 PCIe Gen5/Gen6 컨트롤러가 T-Glass 등 핵심 재료 부족과 TSMC·UMC 파운드리 캐파 한계로 공급 부족이 심각한 상황이라고 진단했다. 이는 ASP에는 우호적일 수 있으나 양산 일정과 납기 차질 위험을 동반한다.",
+    "en": "Next-generation controller production relies on external foundries and key materials. Some research notes that PCIe Gen5/Gen6 controllers face severe supply shortages due to a lack of key materials such as T-Glass and capacity limits at TSMC and UMC. While supportive for ASPs, this carries risks of mass-production and delivery delays."
+   }
+  },
+  {
+   "cat": {
+    "ko": "전방 수요 사이클",
+    "en": "Downstream demand cycle"
+   },
+   "body": {
+    "ko": "실적이 AI 데이터센터 투자 사이클에 크게 연동된다. 현재는 AI 확산으로 글로벌 데이터센터 투자가 본격화되며 eSSD 수요가 구조적으로 증가하는 국면이지만, 빅테크의 설비투자 속도가 둔화되면 컨트롤러 발주도 함께 변동될 수 있다. 메모리·반도체 업황 변동성이 직접적 변수로 작용한다.",
+    "en": "Earnings are tightly linked to the AI data center investment cycle. The current backdrop is one where AI adoption is accelerating global data center investment and structurally lifting eSSD demand, but if big tech capex slows, controller orders could swing accordingly. Memory and semiconductor cyclicality acts as a direct variable."
+   }
+  }
+ ],
+ "checkpoints": [
+  {
+   "when": {
+    "ko": "2026년 7월 말~8월 초",
+    "en": "Late July to early August 2026"
+   },
+   "what": {
+    "ko": "2026년 2분기 실적 발표. 1분기 흑자전환이 일회성이 아니라 지속 가능한지, 컨트롤러 비중과 영업이익률이 유지·확대되는지를 확인하는 분기다.",
+    "en": "Q2 2026 earnings. This is the quarter to verify whether the Q1 swing to profit is sustainable rather than one-off, and whether the controller mix and operating margin hold or expand."
+   }
+  },
+  {
+   "when": {
+    "ko": "2026년 하반기",
+    "en": "Second half of 2026"
+   },
+   "what": {
+    "ko": "Gen6 컨트롤러의 실제 양산·고객 인증 시점. 향후 전망은 고객사 다변화 성공 여부와 차세대 Gen6 제품의 실제 양산 시점에 달려 있다.",
+    "en": "Timing of actual Gen6 mass production and customer certification. The outlook hinges on the success of customer diversification and the actual timing of Gen6 mass production."
+   }
+  },
+  {
+   "when": {
+    "ko": "수시(공시)",
+    "en": "Ongoing (disclosures)"
+   },
+   "what": {
+    "ko": "신규 수주 공시 추이. 6월 초 3,000억원을 넘은 누적 수주가 하반기에 추가로 확대되는지, 그리고 수주가 실제 매출 인식으로 이어지는 속도를 점검한다.",
+    "en": "Trend of new order disclosures. Watch whether cumulative orders, already past KRW 300bn by early June, expand further in the second half and how quickly orders convert into recognized revenue."
+   }
+  },
+  {
+   "when": {
+    "ko": "재판 진행 일정",
+    "en": "Trial schedule"
+   },
+   "what": {
+    "ko": "자본시장법 위반 재판의 진행·판결. 2023년 상장 관련 공시 혐의 재판의 경과는 평판 및 거래 안정성과 직결되는 확인 포인트다.",
+    "en": "Progress and verdict in the capital-markets-law trial. The course of the case over 2023 IPO disclosures is a checkpoint directly tied to reputation and trading stability."
+   }
+  },
+  {
+   "when": {
+    "ko": "2026년 5월 23일 이후",
+    "en": "After May 23, 2026"
+   },
+   "what": {
+    "ko": "전환사채 전환청구 동향. 전환 개시일 이후 실제 전환 규모와 그에 따른 주식 수 증가·지분 희석 정도를 확인한다.",
+    "en": "CB conversion activity. After the conversion start date, track the actual conversion volume and the resulting increase in share count and dilution."
+   }
+  }
+ ],
+ "verdict": {
+  "body": {
+   "ko": "파두는 AI 데이터센터용 SSD 컨트롤러 수요 확대를 발판으로 2026년 1분기 매출 595억원, 영업이익 약 77억원을 기록하며 분기 흑자전환에 성공했다. 매출은 2023년 224.7억원에서 2025년 924.2억원으로 가파르게 성장했고, 고수익 컨트롤러 비중 확대와 6월 초 3,000억원을 넘어선 누적 수주가 외형·수익성 개선의 가시성을 높이고 있다. 다만 3년 연속 대규모 적자로 지배주주 자본총계가 크게 축소되고 부채비율이 518.5%로 상승한 점, 상장 관련 사법 리스크, 전환사채 희석 가능성은 균형 있게 고려해야 할 요소다. 직전 12개월 손익 기준 ROE·EPS는 여전히 적자 구간이며, 주가는 순자산 대비 큰 프리미엄 구간에 위치한다. Gen6 양산 시점과 고객 다변화, 분기 흑자의 지속성이 향후 실적의 핵심 변수다. 본 자료는 정보 제공 목적이며 투자의견·목표주가를 제시하지 않는다.",
+   "en": "Padu swung to a quarterly profit in Q1 2026 with revenue of KRW 59.5bn and operating profit of about KRW 7.7bn, riding expanding demand for AI data center SSD controllers. Revenue grew sharply from KRW 22.47bn in 2023 to KRW 92.42bn in 2025, while a rising high-margin controller mix and cumulative orders topping KRW 300bn by early June are improving visibility on both scale and profitability. However, three straight years of heavy losses sharply shrank owners' equity and pushed the debt ratio to 518.5%, and IPO-related legal risk and potential CB dilution must be weighed in balance. On a trailing twelve-month basis, ROE and EPS remain in loss territory, and the stock trades at a large premium to net assets. The timing of Gen6 mass production, customer diversification and the durability of quarterly profit are the key swing factors ahead. This material is for information only and offers no investment opinion or price target."
+  }
+ },
+ "sources": [
+  "https://comp.wisereport.co.kr/company/c1010001.aspx?cmp_cd=440110",
+  "https://thevc.kr/fadu",
+  "https://news.dealsitetv.com/articles/169332",
+  "https://comp.fnguide.com/SVO2/ASP/SVD_Main.asp?gicode=A440110",
+  "https://m.thinkpool.com/compDiscuss/cont/1015389",
+  "https://v.daum.net/v/20260212075542394",
+  "https://alphadistill.com/report/904",
+  "https://siglab.kr/stock-440110-2026q2/",
+  "https://alphasquare.co.kr/home/stock-summary?code=440110",
+  "https://www.youtube.com/watch?v=3cRe1REksYc",
+  "https://ir.fadu.io/main/",
+  "https://www.judal.co.kr/?view=stockAI&shareToken=xiW5SVDGMEBkG7fh",
+  "https://ir.fadu.io/news/400",
+  "https://kr.investing.com/news/economy-news/article-1915188",
+  "https://www.goodkyung.com/news/articleView.html?idxno=287765",
+  "https://www.ddaily.co.kr/page/view/2026060415373207347",
+  "https://inews24.com/view/1973746",
+  "http://www.opinionnews.co.kr/news/articleView.html?idxno=139490"
+ ],
+ "v": 2,
+ "model": "claude-opus-4-8",
+ "ticker": "440110",
+ "name": "파두",
+ "name_en": "FADU INC.",
+ "sector": "반도체",
+ "categories": [
+  "반도체"
+ ],
+ "market": "코스닥",
+ "reportDate": "2026-06-16",
+ "reportTs": "2026-06-16 19:21",
+ "dataDate": "20260616",
+ "quant": {
+  "asOf": "2026-06-16",
+  "fs_basis": "연결(CFS) · DART 공시 확정치 · 지배주주 기준 순이익",
+  "annual": [
+   {
+    "year": 2025,
+    "rev": 92419333233,
+    "op": -65469985712,
+    "np": -76218175613,
+    "np_owner": -75623961288,
+    "equity": 19794311089,
+    "equity_owner": 19307119462,
+    "liab": 102632856004,
+    "cfo": -3703541869,
+    "eps_basic": -1532,
+    "opm": -70.8,
+    "roe": -391.7,
+    "debt_ratio": 518.5
+   },
+   {
+    "year": 2024,
+    "rev": 43502744974,
+    "op": -95048300908,
+    "np": -91508531301,
+    "np_owner": -90563966019,
+    "equity": 97946870542,
+    "equity_owner": 96076220155,
+    "liab": 36480472542,
+    "cfo": -108840321560,
+    "eps_basic": -1846,
+    "opm": -218.5,
+    "roe": -94.3,
+    "debt_ratio": 37.2
+   },
+   {
+    "year": 2023,
+    "rev": 22470905715,
+    "op": -58569439226,
+    "np": -56832521397,
+    "np_owner": -56696963346,
+    "equity": 186348175638,
+    "equity_owner": 184879224480,
+    "liab": 57313618158,
+    "cfo": -42164830339,
+    "eps_basic": -1275,
+    "opm": -260.6,
+    "roe": -30.7,
+    "debt_ratio": 30.8
+   }
+  ],
+  "quarterly": [
+   {
+    "q": "2025Q1",
+    "rev": 19218938606,
+    "op": -11985539502,
+    "np_owner": -11947048021
+   },
+   {
+    "q": "2025Q2",
+    "rev": 23679326011,
+    "op": -12564211319,
+    "np_owner": -14591422325
+   },
+   {
+    "q": "2025Q3",
+    "rev": 25644431133,
+    "op": -11426230242,
+    "np_owner": -10743899376
+   },
+   {
+    "q": "2025Q4",
+    "rev": 23876637483,
+    "op": -29494004649,
+    "np_owner": -38341591566
+   },
+   {
+    "q": "2026Q1",
+    "rev": 59538451703,
+    "op": 7685802062,
+    "np_owner": 10406850638
+   }
+  ],
+  "valuation": {
+   "price": 103600,
+   "mcap": 5.19,
+   "shares": 50096827,
+   "total_shares": 49493293,
+   "wavg_shares": 49793543,
+   "per": null,
+   "eps": -1081,
+   "pbr": 154.63,
+   "bps": 670,
+   "roe_ttm": -90.1,
+   "ttm_window": "2025Q2~2026Q1",
+   "ttm_np_owner": -53270062629,
+   "pbr_krx": 258.06,
+   "bps_krx": 391.0,
+   "basis": "PER·EPS·PBR·BPS 모두 자체 산출(네이버·토스와 동일 방식) · 배당은 DART 공시 주당현금배당금(보완:KRX) ÷ 현재가",
+   "dps": 0.0,
+   "div": 0.0
+  }
+ }
+}

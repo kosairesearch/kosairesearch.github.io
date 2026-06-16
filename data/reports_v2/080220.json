@@ -1,0 +1,346 @@
+{
+ "title": {
+  "ko": "레거시 메모리 품귀가 만든 실적 점프",
+  "en": "Legacy Memory Squeeze Drives an Earnings Leap"
+ },
+ "lead": {
+  "ko": "AI발 HBM 쏠림으로 범용·저전력 메모리가 품귀를 겪으며 제주반도체의 매출과 마진이 단기간에 급등했으나, 단일 고객·중국 편중과 사이클 둔화 가능성이 변수로 남아 있다.",
+  "en": "An AI-driven shift toward HBM has squeezed commodity and low-power memory supply, lifting Jeju Semiconductor's revenue and margins sharply, though heavy single-customer and China concentration plus a possible cycle slowdown remain key variables."
+ },
+ "keypoints": [
+  {
+   "ko": "팹리스 메모리 설계사로 NAND MCP·LPDRAM 등 저전력·저용량 메모리에 특화돼 있으며, 생산은 대만 파운드리에 위탁한다.",
+   "en": "A fabless memory designer specialized in low-power, low-density memory such as NAND MCP and LPDRAM, outsourcing production to Taiwanese foundries."
+  },
+  {
+   "ko": "2025년 연간 매출 3,022억원·영업이익 359억원으로 사상 최대를 기록했고, 2026년 1분기에는 분기 매출 1,805억원·영업이익 671억원으로 추가 도약했다.",
+   "en": "FY2025 hit a record with KRW 302.2bn revenue and KRW 35.9bn operating profit, followed by a further leap to KRW 180.5bn revenue and KRW 67.1bn operating profit in Q1 2026."
+  },
+  {
+   "ko": "삼성·SK·마이크론이 HBM에 생산을 집중하면서 LPDDR4X·DDR4 등 레거시 메모리 공급 공백이 커진 것이 실적 급등의 배경이다.",
+   "en": "The earnings surge stems from a supply gap in legacy memory like LPDDR4X and DDR4 as Samsung, SK, and Micron concentrate capacity on HBM."
+  },
+  {
+   "ko": "단일 고객(A) 매출 비중이 70%를 웃돌고 중국향·해외 수출 비중이 매우 높아 집중 리스크가 크다.",
+   "en": "Revenue concentration is high, with single-customer (A) share above 70% and very high exposure to China and overseas exports."
+  },
+  {
+   "ko": "2026년 3월 620억원 규모 BW 발행으로 운영자금을 조달했으며, 향후 신주인수권 행사에 따른 희석 가능성이 있다.",
+   "en": "A KRW 62bn bond-with-warrant was issued in March 2026 for working capital, carrying potential dilution from future warrant exercise."
+  }
+ ],
+ "business": {
+  "ko": "제주반도체는 2000년 설립돼 2005년 코스닥에 상장한 팹리스 메모리 반도체 기업으로, 생산 설비 없이 설계에 집중하고 제조는 외부 파운드리에 위탁한다. 모바일 응용기기에 적용되는 메모리 반도체를 개발·제조·판매하며, 주요 매출은 NAND MCP 제품에서 발생하고 직접 소싱·개발한 NAND MCP·NOR MCP를 범용 시장과 주문형(ASIC) 성격의 시장에 공급한다. 생산라인을 직접 갖지 않고 대만 파운드리에 웨이퍼 생산을 위탁한 뒤 후공정·테스트는 다른 외주업체에 맡기며, 핵심은 저전력·고용량에 강점이 있는 NAND MCP와 LPDRAM 설계 IP다. 제품군은 MCP, D램, 낸드플래시 응용제품, 레거시 메모리로 구성되며 적용 분야는 IoT·컨슈머·모바일·오토모티브로 폭넓다. 2025년 기준 제품별로는 NAND MCP가 39.2%, DRAM(LPDRAM 포함)이 22.8%, TLC NAND 12.1%, LPDDR4 8.8% 순이며, 차량용 메모리 비중은 전년 6.3%에서 8.0%로 상승했고 응용처로는 IoT 52%·Consumer 26%가 전체의 78%를 차지한다. 2025년 기준 해외 매출 비중이 93.7%에 달할 정도로 수출 중심이며, 중국향이 전체의 73.6%를 차지한다. 국내에서 메모리 팹리스는 제주반도체와 피델릭스 정도에 불과하며, 이들은 국내에 메모리용 파운드리가 없어 경쟁 관계의 대만 파운드리를 이용할 수밖에 없는 구조적 제약을 갖는다. 삼성·SK 등 대기업의 비주력 영역인 저전력·저용량 DRAM 시장은 대만 기업들이 장악해 왔으며, IoT·셋톱박스 등은 저용량 메모리만으로 충분해 고용량 시장과 별도 시장으로 존재한다. 즉 대기업이 기피하는 니치 메모리 시장에서 설계·영업력으로 입지를 다져온 회사다.",
+  "en": "Founded in 2000 and listed on KOSDAQ in 2005, Jeju Semiconductor is a fabless memory company that focuses on design and outsources manufacturing rather than owning fabs. It develops, makes, and sells memory chips for mobile applications, with most revenue from NAND MCP products, and supplies self-sourced NAND MCP and NOR MCP to both general and ASIC-type markets. It owns no production line, outsourcing wafer fabrication to Taiwanese foundries and back-end and test work to other subcontractors, with its core being design IP for NAND MCP and LPDRAM strong in low-power, high-capacity applications. Its lineup spans MCP, DRAM, NAND flash application products, and legacy memory, serving IoT, consumer, mobile, and automotive markets. As of 2025, by product NAND MCP was 39.2%, DRAM (incl. LPDRAM) 22.8%, TLC NAND 12.1%, and LPDDR4 8.8%, with automotive memory rising to 8.0% from 6.3%, while by application IoT at 52% and Consumer at 26% made up 78% of the total. As of 2025, overseas sales reached 93.7% of revenue, export-driven, with China accounting for 73.6% of the total. In Korea, memory fabless firms are essentially limited to Jeju Semiconductor and Fidelix, and because Korea lacks memory foundries they must rely on competing Taiwanese foundries, a structural constraint. The low-power, low-density DRAM market—non-core for giants like Samsung and SK—has been dominated by Taiwanese firms, and segments like IoT and set-top boxes need only low-density memory, forming a separate market from high-density. In short, it has built its position in a niche memory market that the giants tend to avoid, through design and sales capability."
+ },
+ "earnings": {
+  "ko": "실적은 가파른 회복과 도약을 동시에 보여준다. 2025년 연결 매출은 3,022억원으로 전년 1,623억원 대비 큰 폭으로 늘었고, 영업이익은 359억원으로 전년 96억원에서 급증해 영업이익률이 5.9%에서 11.9%로 회복됐다. 지배주주 순이익은 2025년 395억원으로 전년 195억원에서 두 배 가까이 증가했고, 기본 EPS는 581원에서 1,173원으로 올랐다. 영업현금흐름도 2024년 -97억원에서 2025년 256억원으로 흑자 전환했다. 분기 흐름을 보면 2025년 1분기 매출 484억·영업이익 37억에서 출발해, 3분기 매출 1,110억·영업이익 139억, 4분기 매출 918억·영업이익 139억으로 하반기에 이익 체력이 크게 강해졌다. 회사는 2025년 매출 +86%, 영업이익 +274%의 사상 최대 실적을 기록하며 반도체 슈퍼사이클의 직격 수혜를 받았다. 도약의 정점은 2026년 1분기로, 매출 1,805억원·영업이익 671억원·지배주주 순이익 781억원을 기록해 영업이익률이 37%대까지 치솟았다. 삼성·SK·마이크론이 HBM에 공장을 집중하면서 LPDDR4X·레거시 DRAM 공급이 줄었고, IoT·스마트폰·자동차 수요는 유지된 채 가격이 오르면서 제주반도체가 이 구간에서 큰 수혜를 받았다. 다만 분기 순이익에는 환율 등 영업외 요인이 크게 작용할 수 있어, 2025년 2분기에 지배주주 순이익이 -26억원으로 일시 적자를 낸 점은 이익의 변동성을 보여준다. 단가·환율에 민감한 팹리스 특성상 분기별 진폭이 큰 점은 해석에 유의할 부분이다.",
+  "en": "Earnings show both a steep recovery and a leap at once. FY2025 consolidated revenue reached KRW 302.2bn, up sharply from KRW 162.3bn, while operating profit jumped to KRW 35.9bn from KRW 9.6bn, lifting the operating margin from 5.9% to 11.9%. Owners' net profit nearly doubled to KRW 39.5bn in 2025 from KRW 19.5bn, and basic EPS rose to KRW 1,173 from KRW 581. Operating cash flow also turned positive at KRW 25.6bn in 2025 from minus KRW 9.7bn in 2024. By quarter, it started at KRW 48.4bn revenue and KRW 3.7bn operating profit in Q1 2025, then strengthened markedly in the second half to KRW 111.0bn/KRW 13.9bn in Q3 and KRW 91.8bn/KRW 13.9bn in Q4. The company posted a record FY2025 with revenue up 86% and operating profit up 274%, a direct beneficiary of the semiconductor super-cycle. The peak of the leap came in Q1 2026, with KRW 180.5bn revenue, KRW 67.1bn operating profit, and KRW 78.1bn owners' net profit, pushing the operating margin to around 37%. As Samsung, SK, and Micron concentrated capacity on HBM, LPDDR4X and legacy DRAM supply shrank while IoT, smartphone, and auto demand held, lifting prices, and Jeju Semiconductor benefited greatly in this window. However, quarterly net profit can be heavily affected by non-operating items such as FX, as shown by the temporary owners' net loss of minus KRW 2.6bn in Q2 2025, illustrating earnings volatility. Given the fabless model's sensitivity to pricing and FX, the wide quarterly swings warrant caution in interpretation."
+ },
+ "industry": {
+  "ko": "전방 메모리 시장은 AI가 주도하는 강력한 상승 사이클 한복판에 있다. 64GB RDIMM 가격은 2025년 3분기 255달러에서 4분기 450달러로 급등했고 2026년 3월에는 700달러에 이를 것으로 예상되며, 연내 1,000달러 도달 가능성까지 거론된다. 삼성전자와 SK하이닉스는 물론 중국 CXMT 등 주요 업체들이 고마진 서버 DDR5로 생산을 전환하면서 LPDDR4·eMMC 등 구형 기술의 공급이 빠르게 축소되고 있다. 제조사들이 수익성이 높은 HBM과 AI 서버용 고용량 모듈에 집중하면서 범용 D램(LPDDR4·DDR4 등) 생산 능력이 위축되는 구축 효과가 발생하고 있다. DDR4의 경우 현물가와 계약가의 괴리가 구조적으로 고착화될 정도로 단기 희소성 프리미엄이 반영됐다. 이런 환경은 저전력·저용량 메모리를 다루는 제주반도체에 우호적이다. 국내에서는 정부·파운드리 지원을 받은 대만 후발 업체들이 저전력·저용량 메모리 시장을 장악하면서 메모리 팹리스는 제주반도체와 피델릭스 정도만 남아 있는 상황이다. 즉 회사는 경쟁자가 제한된 니치에서 사이클 상승의 직접 수혜를 받지만, 동시에 대만 파운드리 공급능력에 의존하는 약한 고리도 안고 있다.",
+  "en": "The downstream memory market sits in the middle of a powerful, AI-led upcycle. 64GB RDIMM prices surged from USD 255 in Q3 2025 to USD 450 in Q4 and are expected to reach USD 700 by March 2026, with a path to USD 1,000 within the year discussed. Major players including Samsung, SK Hynix, and China's CXMT are shifting production to high-margin server DDR5, rapidly shrinking supply of older technologies like LPDDR4 and eMMC. As makers focus on more profitable HBM and high-capacity AI server modules, a crowding-out effect is shrinking commodity DRAM (LPDDR4, DDR4) capacity. For DDR4, a short-term scarcity premium has been priced in to the point that the gap between spot and contract prices has structurally entrenched. This environment favors Jeju Semiconductor, which handles low-power, low-density memory. In Korea, after Taiwanese latecomers backed by government and foundry support came to dominate the low-power, low-density memory market, only Jeju Semiconductor and Fidelix remain as memory fabless firms. Thus the company directly benefits from the upcycle in a niche with limited competitors, while also carrying a weak link in its dependence on Taiwanese foundry capacity."
+ },
+ "outlook": {
+  "ko": "전망의 핵심은 현재의 강력한 이익이 얼마나 지속되느냐다. AI 열풍이 촉발한 수급 불균형으로 2026년 상반기 메모리 가격이 기록적 폭등세를 보일 것이라는 전망이 잇따르며, 범용 D램 공급난이 완제품 가격 인상 압박으로 이어지고 있다. 삼성전자는 2026년에도 레거시 제품의 공급 제약 상황이 이어질 것으로 판단한다고 밝힌 바 있다. 다만 사이클 둔화 가능성도 함께 제기된다. 차량용 메모리 시장 공급 확대와 5G IoT 수요 지속은 긍정적 요소이나, 업계 전반의 메모리 가격 상승세가 2026년 하반기에 둔화될 수 있다는 관측이 있어 현재의 고성장률이 지속될지는 지켜봐야 한다. 회사는 늘어난 수요에 대응하기 위해 원재료 확보와 R&D에 투자하고 있다. 2026년 3월 620억원 규모 BW 발행을 결정했고, 이 중 500억원은 웨이퍼 등 원자재 구입 운영자금으로, 120억원은 신규 제품 개발 R&D에 2028년 이후까지 순차 투입할 계획이다. 향후 LPDDR5x 개발과 차량용 비중 확대가 본업의 내구성을 얼마나 높이고 단일 고객 의존도를 낮출 수 있을지가 핵심 변수다. 결국 가격 강세 지속 여부, 원재료 확보, 신제품 다변화의 속도가 향후 실적의 방향을 가를 것이다.",
+  "en": "The crux of the outlook is how long the current strong profits can last. A series of forecasts call for record memory price spikes in the first half of 2026 amid AI-driven supply-demand imbalance, with commodity DRAM shortages adding pressure to raise finished-product prices. Samsung has stated it expects legacy-product supply constraints to continue into 2026. Yet the possibility of a cycle slowdown is also raised. Expanding supply into automotive memory and sustained 5G IoT demand are positives, but with observations that the industry-wide memory price rise could slow in the second half of 2026, whether the current high growth rate persists must be watched. The company is investing in raw-material procurement and R&D to meet rising demand. In March 2026 it decided to issue a KRW 62bn bond-with-warrant, of which KRW 50bn is for working capital to buy wafers and other raw materials and KRW 12bn for new-product R&D to be deployed sequentially beyond 2028. Key variables are how much future LPDDR5x development and a larger automotive share can strengthen the core business's durability and reduce single-customer dependence. Ultimately, the persistence of price strength, raw-material sourcing, and the pace of product diversification will shape the direction of future earnings."
+ },
+ "valuation_comment": {
+  "ko": "회사가 자체 산출하는 헤드라인 지표 기준으로 ROE는 45.7%, EPS는 3,362원, BPS는 9,060원 수준이다. 직전 1년간 이익이 폭발적으로 늘면서 수익성 지표는 과거 대비 크게 높아진 상태다. 현재 주가는 순자산 대비 프리미엄이 매우 큰 구간에 위치하며, 이익 기준 평가배수도 과거 코스닥 메모리·소부장 종목들이 형성하던 통상 거래 밴드의 상단을 크게 웃돈다. 참고로 2025년 하반기 주가는 7월 평균 약 15,633원에서 12월 평균 약 19,617원으로 올랐고 12월 중 최고 27,500원을 기록했는데, 현재 주가는 이 구간 대비 여러 배 높은 수준이다. 배당은 확정 배당이 없어 배당수익률 측면의 매력은 제한적이다. 다만 이런 평가배수는 2026년 1분기에 나타난 이익 급등이 향후에도 이어진다는 기대를 상당 부분 반영하고 있어, 가격 사이클이 둔화될 경우 지표가 빠르게 변할 수 있는 점에 유의할 필요가 있다.",
+  "en": "Based on the company's self-calculated headline metrics, ROE is around 45.7%, EPS KRW 3,362, and BPS KRW 9,060. With profits exploding over the past year, profitability metrics now stand far higher than in the past. The current share price sits in a zone of very large premium to net assets, and the earnings-based multiple far exceeds the upper end of the usual trading band that KOSDAQ memory and supply-chain names have tended to form. For reference, the share price rose from a July 2025 average of about KRW 15,633 to a December average of about KRW 19,617, peaking at KRW 27,500 in December, several times below the current level. With no confirmed dividend, appeal in terms of dividend yield is limited. Note, however, that such multiples largely reflect expectations that the Q1 2026 earnings surge will persist, so the metrics could shift quickly if the price cycle slows."
+ },
+ "bull": [
+  {
+   "title": {
+    "ko": "레거시·저전력 메모리 품귀의 직접 수혜",
+    "en": "Direct beneficiary of the legacy/low-power memory squeeze"
+   },
+   "body": {
+    "ko": "삼성·SK·마이크론·CXMT가 HBM과 서버 DDR5로 생산을 옮기며 LPDDR4·DDR4 등 구형 메모리 공급이 줄고 있다. 수요는 IoT·중저가 스마트폰·자동차에서 유지되어 가격이 가파르게 올랐다. 제주반도체는 바로 이 시장을 설계·공급하는 소수 업체로 단기 실적 레버리지가 크게 나타났다.",
+    "en": "As Samsung, SK, Micron, and CXMT shift output to HBM and server DDR5, supply of older memory like LPDDR4 and DDR4 is shrinking. Demand holds in IoT, mid-range smartphones, and autos, sending prices sharply higher. Jeju Semiconductor is one of few firms designing and supplying this market, so short-term earnings leverage was large."
+   }
+  },
+  {
+   "title": {
+    "ko": "팹리스 구조의 높은 영업레버리지",
+    "en": "High operating leverage of a fabless model"
+   },
+   "body": {
+    "ko": "생산설비가 없어 CAPEX 부담이 적고 호황기에 매출 증가가 이익으로 빠르게 전환된다. 실제 2025년 영업이익률이 5.9%에서 11.9%로 회복됐고 2026년 1분기에는 37%대까지 치솟았다. 가격 강세가 이어지는 한 마진 확대 여지가 크다.",
+    "en": "Without fabs, CAPEX burden is low and revenue gains convert quickly into profit during booms. The operating margin recovered from 5.9% to 11.9% in 2025 and spiked to around 37% in Q1 2026. As long as price strength continues, room for margin expansion is large."
+   }
+  },
+  {
+   "title": {
+    "ko": "니치 시장의 제한된 경쟁",
+    "en": "Limited competition in a niche market"
+   },
+   "body": {
+    "ko": "저전력·저용량 메모리는 대기업이 수익성·생산성 이유로 기피해 온 별도 시장이다. 국내 메모리 팹리스는 제주반도체와 피델릭스 정도에 불과해 경쟁 강도가 상대적으로 낮다. 차량용 비중 상승 등 제품 다변화가 진행되면 사이클 의존도를 낮출 여지가 있다.",
+    "en": "Low-power, low-density memory is a separate market that giants avoid for profitability and productivity reasons. Korea's memory fabless firms are essentially just Jeju Semiconductor and Fidelix, so competitive intensity is relatively low. Diversification such as a rising automotive share could reduce cycle dependence."
+   }
+  }
+ ],
+ "bear": [
+  {
+   "title": {
+    "ko": "단일 고객·중국 편중",
+    "en": "Single-customer and China concentration"
+   },
+   "body": {
+    "ko": "2025년 단일 고객(A) 매출 비중이 70%를 웃돌고 중국향과 해외 수출 비중이 매우 높다. 고객사가 단가 인하를 요구하거나 물량을 줄이면 매출과 이익에 직접 타격이 온다. 미·중 갈등 등 지정학적 변수도 수요에 불확실성을 더한다.",
+    "en": "In 2025, the single-customer (A) revenue share exceeded 70%, with very high exposure to China and overseas exports. If the customer demands price cuts or trims volume, revenue and profit take a direct hit. Geopolitical factors such as U.S.-China tensions add demand uncertainty."
+   }
+  },
+  {
+   "title": {
+    "ko": "사이클 둔화 시 역레버리지",
+    "en": "Reverse leverage if the cycle slows"
+   },
+   "body": {
+    "ko": "현재 마진은 가격 급등이라는 사이클 정점 효과를 크게 반영한다. 업계에서는 2026년 하반기 메모리 가격 상승세 둔화 가능성이 제기된다. 영업레버리지는 매출이 줄 때 고정비 부담으로 역방향으로 작용해 이익이 빠르게 후퇴할 수 있다.",
+    "en": "Current margins heavily reflect the cycle-peak effect of surging prices. The industry flags a possible slowdown in memory price gains in the second half of 2026. Operating leverage works in reverse when revenue falls, so profit could retreat quickly."
+   }
+  },
+  {
+   "title": {
+    "ko": "공급망·환율 의존과 희석 리스크",
+    "en": "Supply-chain/FX dependence and dilution risk"
+   },
+   "body": {
+    "ko": "생산을 대만 파운드리에 의존해 공급능력·원가에 영향을 크게 받는다. 수출 중심 구조상 환율 변동이 분기 순이익을 크게 흔들 수 있다. 2026년 3월 발행한 620억원 BW의 신주인수권 행사 시 주식 희석 가능성도 남아 있다.",
+    "en": "Production depends on Taiwanese foundries, so capacity and costs heavily affect results. Given the export-driven structure, FX swings can sharply move quarterly net profit. Exercise of warrants from the KRW 62bn bond issued in March 2026 also leaves potential share dilution."
+   }
+  }
+ ],
+ "risks": [
+  {
+   "cat": {
+    "ko": "고객·지역 집중",
+    "en": "Customer/region concentration"
+   },
+   "body": {
+    "ko": "단일 고객 비중이 70%를 넘고 중국·해외 매출 의존도가 절대적이다. 이 관계가 흔들리면 실적 변동성이 즉시 확대된다. 다변화 진행 여부를 지속 점검할 필요가 있다.",
+    "en": "Single-customer share exceeds 70% and dependence on China and overseas sales is overwhelming. If this relationship wavers, earnings volatility expands immediately. Progress on diversification needs continuous monitoring."
+   }
+  },
+  {
+   "cat": {
+    "ko": "가격 사이클",
+    "en": "Price cycle"
+   },
+   "body": {
+    "ko": "현재 실적은 메모리 가격 급등에 크게 기대고 있다. 가격 상승세가 2026년 하반기 둔화될 수 있다는 관측이 있어 마진의 지속성이 핵심 위험이다. 분기 실적의 추세 전환 여부를 확인해야 한다.",
+    "en": "Current results lean heavily on surging memory prices. With observations that the rise could slow in the second half of 2026, margin sustainability is the key risk. The trend turn in quarterly results must be checked."
+   }
+  },
+  {
+   "cat": {
+    "ko": "재무·자본구조",
+    "en": "Financials/capital structure"
+   },
+   "body": {
+    "ko": "수출 비중이 높아 환율 변동이 손익에 큰 영향을 준다. 종속회사 자본잠식 등 그룹 내 약한 고리가 지적된 바 있다. BW 등 자금조달에 따른 향후 희석과 부채비율 변화도 함께 살펴야 한다.",
+    "en": "High export exposure makes FX swings highly impactful on earnings. Weak links within the group, such as a subsidiary's capital impairment, have been flagged. Future dilution from financing like the BW and changes in the debt ratio should also be examined."
+   }
+  }
+ ],
+ "checkpoints": [
+  {
+   "when": {
+    "ko": "2026년 8월 (2분기 실적)",
+    "en": "August 2026 (Q2 results)"
+   },
+   "what": {
+    "ko": "1분기의 이익 급등이 2분기에도 이어지는지가 핵심이다. 매출·영업이익률·순이익의 추세 유지 여부로 실적의 반복 가능성을 판단할 수 있다.",
+    "en": "Whether the Q1 earnings surge continues into Q2 is key. The persistence trend in revenue, operating margin, and net profit will indicate how repeatable the results are."
+   }
+  },
+  {
+   "when": {
+    "ko": "2026년 하반기 메모리 가격 동향",
+    "en": "H2 2026 memory price trends"
+   },
+   "what": {
+    "ko": "레거시·저전력 메모리 가격이 강세를 유지하는지 또는 둔화로 돌아서는지를 확인한다. 카운터포인트·트렌드포스 등의 가격 트래커가 방향성 지표가 된다.",
+    "en": "Confirm whether legacy and low-power memory prices stay strong or turn to a slowdown. Price trackers from Counterpoint and TrendForce serve as directional indicators."
+   }
+  },
+  {
+   "when": {
+    "ko": "2027년 3월 이후 BW 신주인수권 행사 개시",
+    "en": "From March 2027, BW warrant exercise window"
+   },
+   "what": {
+    "ko": "행사가액 44,300원의 BW 신주인수권 행사 기간이 2027년 3월 시작된다. 행사 규모와 시점에 따라 주식 희석 정도가 결정된다.",
+    "en": "The exercise window for the BW warrants at a KRW 44,300 strike opens in March 2027. The degree of dilution depends on the scale and timing of exercise."
+   }
+  },
+  {
+   "when": {
+    "ko": "수시 (제품·고객 다변화 공시)",
+    "en": "Ongoing (product/customer diversification disclosures)"
+   },
+   "what": {
+    "ko": "LPDDR5x 등 신제품 개발과 차량용 비중 확대, 신규 고객 확보 관련 공시를 점검한다. 단일 고객 의존도 완화 여부가 본업 내구성의 척도다.",
+    "en": "Track disclosures on new products like LPDDR5x, a larger automotive share, and new customer wins. Whether single-customer dependence eases is the gauge of the core business's durability."
+   }
+  }
+ ],
+ "verdict": {
+  "body": {
+   "ko": "제주반도체는 AI발 HBM 쏠림이 만든 레거시·저전력 메모리 품귀의 직접 수혜를 받아, 2025년 사상 최대 실적에 이어 2026년 1분기 매출 1,805억원·영업이익 671억원으로 도약했다. 팹리스 구조의 높은 영업레버리지가 가격 강세 국면에서 마진을 빠르게 끌어올린 것이 핵심 동력이다. 다만 단일 고객 비중이 70%를 웃돌고 중국·해외 매출 의존도가 절대적이어서 집중 리스크가 크다. 현재의 강한 이익은 가격 사이클 정점 효과를 상당 부분 반영하고 있어, 2026년 하반기 가격 둔화 가능성이 지속성의 핵심 변수다. 회사는 BW로 원재료·R&D 자금을 확보하며 LPDDR5x 개발과 차량용 비중 확대로 사이클 의존도를 낮추려 하고 있다. 주가는 순자산 대비 프리미엄이 큰 구간에 있어 향후 분기 실적과 메모리 가격 추이에 민감하게 반응할 가능성이 높다. 본 자료는 정보 제공용이며 투자 권유가 아니다.",
+   "en": "Jeju Semiconductor has directly benefited from the legacy and low-power memory squeeze created by an AI-driven shift toward HBM, leaping to KRW 180.5bn revenue and KRW 67.1bn operating profit in Q1 2026 after a record FY2025. The high operating leverage of its fabless model, rapidly lifting margins during price strength, is the core driver. However, with single-customer share above 70% and overwhelming dependence on China and overseas sales, concentration risk is high. Today's strong profits largely reflect the cycle-peak effect of prices, so a possible price slowdown in the second half of 2026 is the key sustainability variable. The company secured raw-material and R&D funding via a bond-with-warrant and aims to reduce cycle dependence through LPDDR5x development and a larger automotive share. With the share price in a zone of large premium to net assets, it is likely to react sensitively to upcoming quarterly results and memory price trends. This material is for information only and is not investment advice."
+  }
+ },
+ "sources": [
+  "https://www.valley.town/space/@koreainvestinsights/articles/6a0891d16565cb6104c9e8e0",
+  "https://www.investing.com/equities/jeju-semiconductor-corp-earnings",
+  "https://comp.wisereport.co.kr/company/c1010001.aspx?cmp_cd=080220",
+  "https://alphasquare.co.kr/home/stock-summary?code=080220",
+  "https://m.thinkpool.com/compDiscuss/cont/1025675",
+  "https://www.investing.com/equities/jeju-semiconductor-corp",
+  "https://www.bosoop.com/227a8b31-7dd3-437f-ac0b-4c85ff1e14d5/",
+  "https://m.thinkpool.com/compDiscuss/cont/1026281",
+  "http://www.jeju-semi.com/kr/About/Introduce",
+  "https://m.finance.daum.net/quotes/A080220/home",
+  "https://korea.counterpointresearch.com/memory-price-tracker-january-2026/",
+  "https://www.epnc.co.kr/news/articleView.html?idxno=328227",
+  "https://www.ilovepc.co.kr/news/articleView.html?idxno=58936",
+  "https://www.thelec.kr/news/articleView.html?idxno=50190",
+  "https://www.g-enews.com/article/Global-Biz/2026/01/202601050700161881fbbec65dfb_1",
+  "https://studio24.kr/3989",
+  "https://www.clien.net/service/board/news/19122268",
+  "https://quasarzone.com/bbs/qn_hardware/views/1892066"
+ ],
+ "v": 2,
+ "model": "claude-opus-4-8",
+ "ticker": "080220",
+ "name": "제주반도체",
+ "name_en": "Jeju Semiconductor Corp.",
+ "sector": "반도체",
+ "categories": [
+  "반도체"
+ ],
+ "market": "코스닥",
+ "reportDate": "2026-06-16",
+ "reportTs": "2026-06-16 19:21",
+ "dataDate": "20260616",
+ "quant": {
+  "asOf": "2026-06-16",
+  "fs_basis": "연결(CFS) · DART 공시 확정치 · 지배주주 기준 순이익",
+  "annual": [
+   {
+    "year": 2025,
+    "rev": 302230571186,
+    "op": 35873972312,
+    "np": 39499088944,
+    "np_owner": 39507984361,
+    "equity": 227104505361,
+    "equity_owner": 227082622303,
+    "liab": 108883598978,
+    "cfo": 25554903161,
+    "eps_basic": 1173,
+    "opm": 11.9,
+    "roe": 17.4,
+    "debt_ratio": 47.9
+   },
+   {
+    "year": 2024,
+    "rev": 162349945455,
+    "op": 9581360274,
+    "np": 19405207353,
+    "np_owner": 19537971310,
+    "equity": 184233770184,
+    "equity_owner": 184201011962,
+    "liab": 41193831641,
+    "cfo": -9682087226,
+    "eps_basic": 581,
+    "opm": 5.9,
+    "roe": 10.6,
+    "debt_ratio": 22.4
+   },
+   {
+    "year": 2023,
+    "rev": 145899793599,
+    "op": 17838425308,
+    "np": 16919765330,
+    "np_owner": 16724869342,
+    "equity": 158568405147,
+    "equity_owner": 157315007440,
+    "liab": 40104977649,
+    "cfo": 2510859925,
+    "eps_basic": 485,
+    "opm": 12.2,
+    "roe": 10.6,
+    "debt_ratio": 25.3
+   },
+   {
+    "year": 2022,
+    "rev": 175023554084,
+    "op": 28216098130,
+    "np": 24706325265,
+    "np_owner": 24331810672,
+    "equity": 142701993193,
+    "equity_owner": 141205483864,
+    "liab": 33296879479,
+    "cfo": -2177606726,
+    "eps_basic": 706,
+    "opm": 16.1,
+    "roe": 17.2,
+    "debt_ratio": 23.3
+   }
+  ],
+  "quarterly": [
+   {
+    "q": "2025Q1",
+    "rev": 48440247633,
+    "op": 3699508665,
+    "np_owner": 4330048375
+   },
+   {
+    "q": "2025Q2",
+    "rev": 51066931074,
+    "op": 4337849902,
+    "np_owner": -2616207433
+   },
+   {
+    "q": "2025Q3",
+    "rev": 110951148841,
+    "op": 13901794568,
+    "np_owner": 22713448683
+   },
+   {
+    "q": "2025Q4",
+    "rev": 91772243638,
+    "op": 13934819177,
+    "np_owner": 15080694736
+   },
+   {
+    "q": "2026Q1",
+    "rev": 180471968353,
+    "op": 67113446927,
+    "np_owner": 78066247870
+   }
+  ],
+  "valuation": {
+   "price": 104300,
+   "mcap": 3.5924,
+   "shares": 34442833,
+   "total_shares": 34442833,
+   "wavg_shares": 33678277,
+   "per": 31.0,
+   "eps": 3362,
+   "pbr": 11.51,
+   "bps": 9060,
+   "roe_ttm": 45.7,
+   "ttm_window": "2025Q2~2026Q1",
+   "ttm_np_owner": 113244183856,
+   "pbr_krx": 15.01,
+   "bps_krx": 6742.0,
+   "basis": "PER·EPS·PBR·BPS 모두 자체 산출(네이버·토스와 동일 방식) · 배당은 DART 공시 주당현금배당금(보완:KRX) ÷ 현재가",
+   "dps": 0.0,
+   "div": 0.0
+  }
+ }
+}
