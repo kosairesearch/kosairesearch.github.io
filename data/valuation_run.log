@@ -7,8 +7,8 @@ reprt_code='11013', fs_div='CFS' (1분기보고서, 연결제무제표)'
 reprt_code='11012', fs_div='CFS' (반기보고서, 연결제무제표)'
 reprt_code='11014', fs_div='CFS' (3분기보고서, 연결제무제표)'
 reprt_code='11013', fs_div='CFS' (1분기보고서, 연결제무제표)'
-  ✅ 미원에스씨 검증 통과 PER 7.2 PBR 1.05 EPS 13754 BPS 94812
-  · 268280 미원에스씨: EPS=13754 BPS=94812 ROE=15.3 DPS=3200.0 성장=4.5
+  ❌ 드림텍 중대오류 차단 → 해당 지표 숨김: BPS 8001↔ref 5522.0
+  · 192650 드림텍: EPS=-117 BPS=None ROE=-1.5 DPS=0.0 성장=4.9
 reprt_code='11011', fs_div='CFS' (사업보고서, 연결제무제표)'
 reprt_code='11011', fs_div='CFS' (사업보고서, 연결제무제표)'
 reprt_code='11011', fs_div='CFS' (사업보고서, 연결제무제표)'
@@ -17,78 +17,8 @@ reprt_code='11013', fs_div='CFS' (1분기보고서, 연결제무제표)'
 reprt_code='11012', fs_div='CFS' (반기보고서, 연결제무제표)'
 reprt_code='11014', fs_div='CFS' (3분기보고서, 연결제무제표)'
 reprt_code='11013', fs_div='CFS' (1분기보고서, 연결제무제표)'
-  ✅ 코스모화학 검증 통과 PER None PBR 2.15 EPS -672 BPS 6035
-  · 005420 코스모화학: EPS=-672 BPS=6035 ROE=-13.0 DPS=None 성장=-11.4
-reprt_code='11011', fs_div='CFS' (사업보고서, 연결제무제표)'
-reprt_code='11011', fs_div='CFS' (사업보고서, 연결제무제표)'
-{'status': '013', 'message': '조회된 데이타가 없습니다.'}
-
-reprt_code='11011', fs_div='OFS' (사업보고서, 별도(개별)제무제표)'
-{'status': '013', 'message': '조회된 데이타가 없습니다.'}
-
-reprt_code='11011', fs_div='CFS' (사업보고서, 연결제무제표)'
-{'status': '013', 'message': '조회된 데이타가 없습니다.'}
-
-reprt_code='11011', fs_div='OFS' (사업보고서, 별도(개별)제무제표)'
-{'status': '013', 'message': '조회된 데이타가 없습니다.'}
-
-reprt_code='11011', fs_div='CFS' (사업보고서, 연결제무제표)'
-{'status': '013', 'message': '조회된 데이타가 없습니다.'}
-
-reprt_code='11011', fs_div='OFS' (사업보고서, 별도(개별)제무제표)'
-{'status': '013', 'message': '조회된 데이타가 없습니다.'}
-
-reprt_code='11013', fs_div='CFS' (1분기보고서, 연결제무제표)'
-{'status': '013', 'message': '조회된 데이타가 없습니다.'}
-
-reprt_code='11013', fs_div='OFS' (1분기보고서, 별도(개별)제무제표)'
-{'status': '013', 'message': '조회된 데이타가 없습니다.'}
-
-reprt_code='11012', fs_div='CFS' (반기보고서, 연결제무제표)'
-{'status': '013', 'message': '조회된 데이타가 없습니다.'}
-
-reprt_code='11012', fs_div='OFS' (반기보고서, 별도(개별)제무제표)'
-{'status': '013', 'message': '조회된 데이타가 없습니다.'}
-
-reprt_code='11014', fs_div='CFS' (3분기보고서, 연결제무제표)'
-reprt_code='11013', fs_div='CFS' (1분기보고서, 연결제무제표)'
-{'status': '013', 'message': '조회된 데이타가 없습니다.'}
-  ✅ 한라캐스트 검증 통과 PER None PBR 4.55 EPS None BPS 2995
-  · 125490 한라캐스트: EPS=None BPS=2995 ROE=None DPS=None 성장=None
-reprt_code='11011', fs_div='CFS' (사업보고서, 연결제무제표)'
-{'status': '013', 'message': '조회된 데이타가 없습니다.'}
-
-reprt_code='11011', fs_div='OFS' (사업보고서, 별도(개별)제무제표)'
-reprt_code='11011', fs_div='CFS' (사업보고서, 연결제무제표)'
-{'status': '013', 'message': '조회된 데이타가 없습니다.'}
-
-reprt_code='11011', fs_div='OFS' (사업보고서, 별도(개별)제무제표)'
-reprt_code='11011', fs_div='CFS' (사업보고서, 연결제무제표)'
-{'status': '013', 'message': '조회된 데이타가 없습니다.'}
-
-reprt_code='11011', fs_div='OFS' (사업보고서, 별도(개별)제무제표)'
-reprt_code='11011', fs_div='CFS' (사업보고서, 연결제무제표)'
-{'status': '013', 'message': '조회된 데이타가 없습니다.'}
-
-reprt_code='11011', fs_div='OFS' (사업보고서, 별도(개별)제무제표)'
-reprt_code='11013', fs_div='CFS' (1분기보고서, 연결제무제표)'
-{'status': '013', 'message': '조회된 데이타가 없습니다.'}
-
-reprt_code='11013', fs_div='OFS' (1분기보고서, 별도(개별)제무제표)'
-reprt_code='11012', fs_div='CFS' (반기보고서, 연결제무제표)'
-{'status': '013', 'message': '조회된 데이타가 없습니다.'}
-
-reprt_code='11012', fs_div='OFS' (반기보고서, 별도(개별)제무제표)'
-reprt_code='11014', fs_div='CFS' (3분기보고서, 연결제무제표)'
-{'status': '013', 'message': '조회된 데이타가 없습니다.'}
-
-reprt_code='11014', fs_div='OFS' (3분기보고서, 별도(개별)제무제표)'
-reprt_code='11013', fs_div='CFS' (1분기보고서, 연결제무제표)'
-{'status': '013', 'message': '조회된 데이타가 없습니다.'}
-
-reprt_code='11013', fs_div='OFS' (1분기보고서, 별도(개별)제무제표)'
-  ✅ 타이거일렉 검증 통과 PER 67.9 PBR 8.12 EPS 1159 BPS 9694
-  · 219130 타이거일렉: EPS=1159 BPS=9694 ROE=12.7 DPS=None 성장=30.5
+  ✅ 국일제지 검증 통과 PER None PBR 3.61 EPS -22 BPS 1061
+  · 078130 국일제지: EPS=-22 BPS=1061 ROE=-2.1 DPS=None 성장=20.3
 reprt_code='11011', fs_div='CFS' (사업보고서, 연결제무제표)'
 reprt_code='11011', fs_div='CFS' (사업보고서, 연결제무제표)'
 reprt_code='11011', fs_div='CFS' (사업보고서, 연결제무제표)'
@@ -97,8 +27,8 @@ reprt_code='11013', fs_div='CFS' (1분기보고서, 연결제무제표)'
 reprt_code='11012', fs_div='CFS' (반기보고서, 연결제무제표)'
 reprt_code='11014', fs_div='CFS' (3분기보고서, 연결제무제표)'
 reprt_code='11013', fs_div='CFS' (1분기보고서, 연결제무제표)'
-  ✅ 바이오노트 검증 통과 PER None PBR 0.32 EPS -494 BPS 15328
-  · 377740 바이오노트: EPS=-494 BPS=15328 ROE=-3.2 DPS=228.0 성장=15.1
+  ❌ 인화정공 중대오류 차단 → 해당 지표 숨김: EPS 3748↔ref 742.0
+  · 101930 인화정공: EPS=None BPS=7392 ROE=56.2 DPS=750.0 성장=16.4
 reprt_code='11011', fs_div='CFS' (사업보고서, 연결제무제표)'
 reprt_code='11011', fs_div='CFS' (사업보고서, 연결제무제표)'
 reprt_code='11011', fs_div='CFS' (사업보고서, 연결제무제표)'
@@ -107,8 +37,8 @@ reprt_code='11013', fs_div='CFS' (1분기보고서, 연결제무제표)'
 reprt_code='11012', fs_div='CFS' (반기보고서, 연결제무제표)'
 reprt_code='11014', fs_div='CFS' (3분기보고서, 연결제무제표)'
 reprt_code='11013', fs_div='CFS' (1분기보고서, 연결제무제표)'
-  ✅ 에코마케팅 검증 통과 PER 25.2 PBR 2.07 EPS 635 BPS 7717
-  · 230360 에코마케팅: EPS=635 BPS=7717 ROE=8.3 DPS=620.0 성장=25.6
+  ✅ HL홀딩스 검증 통과 PER 11.9 PBR 0.38 EPS 3934 BPS 122083
+  · 060980 HL홀딩스: EPS=3934 BPS=122083 ROE=3.4 DPS=2000.0 성장=-2.6
 reprt_code='11011', fs_div='CFS' (사업보고서, 연결제무제표)'
 reprt_code='11011', fs_div='CFS' (사업보고서, 연결제무제표)'
 reprt_code='11011', fs_div='CFS' (사업보고서, 연결제무제표)'
@@ -117,33 +47,40 @@ reprt_code='11013', fs_div='CFS' (1분기보고서, 연결제무제표)'
 reprt_code='11012', fs_div='CFS' (반기보고서, 연결제무제표)'
 reprt_code='11014', fs_div='CFS' (3분기보고서, 연결제무제표)'
 reprt_code='11013', fs_div='CFS' (1분기보고서, 연결제무제표)'
-  ❌ 한솔테크닉스 중대오류 차단 → 해당 지표 숨김: EPS -54↔ref -499.0
-  · 004710 한솔테크닉스: EPS=None BPS=9921 ROE=-0.5 DPS=100.0 성장=4.4
+  ❌ 신대양제지 중대오류 차단 → 해당 지표 숨김: EPS 845↔ref 619.0 / BPS 23605↔ref 20442.0
+  · 016590 신대양제지: EPS=None BPS=None ROE=5.7 DPS=225.0 성장=-2.9
 reprt_code='11011', fs_div='CFS' (사업보고서, 연결제무제표)'
 reprt_code='11011', fs_div='CFS' (사업보고서, 연결제무제표)'
-{'status': '013', 'message': '조회된 데이타가 없습니다.'}
-
-reprt_code='11011', fs_div='OFS' (사업보고서, 별도(개별)제무제표)'
 reprt_code='11011', fs_div='CFS' (사업보고서, 연결제무제표)'
-{'status': '013', 'message': '조회된 데이타가 없습니다.'}
-
-reprt_code='11011', fs_div='OFS' (사업보고서, 별도(개별)제무제표)'
 reprt_code='11011', fs_div='CFS' (사업보고서, 연결제무제표)'
-{'status': '013', 'message': '조회된 데이타가 없습니다.'}
-
-reprt_code='11011', fs_div='OFS' (사업보고서, 별도(개별)제무제표)'
 reprt_code='11013', fs_div='CFS' (1분기보고서, 연결제무제표)'
-{'status': '013', 'message': '조회된 데이타가 없습니다.'}
-
-reprt_code='11013', fs_div='OFS' (1분기보고서, 별도(개별)제무제표)'
 reprt_code='11012', fs_div='CFS' (반기보고서, 연결제무제표)'
-{'status': '013', 'message': '조회된 데이타가 없습니다.'}
-
-reprt_code='11012', fs_div='OFS' (반기보고서, 별도(개별)제무제표)'
 reprt_code='11014', fs_div='CFS' (3분기보고서, 연결제무제표)'
 reprt_code='11013', fs_div='CFS' (1분기보고서, 연결제무제표)'
-  ✅ 일진하이솔루스 검증 통과 PER None PBR 1.56 EPS -43 BPS 8667
-  · 271940 일진하이솔루스: EPS=-43 BPS=8667 ROE=-0.5 DPS=None 성장=2.9
+  ✅ 시노펙스 검증 통과 PER 98.4 PBR 2.32 EPS 47 BPS 1994
+  · 025320 시노펙스: EPS=47 BPS=1994 ROE=2.5 DPS=0.0 성장=9.7
+reprt_code='11011', fs_div='CFS' (사업보고서, 연결제무제표)'
+reprt_code='11011', fs_div='CFS' (사업보고서, 연결제무제표)'
+reprt_code='11011', fs_div='CFS' (사업보고서, 연결제무제표)'
+reprt_code='11011', fs_div='CFS' (사업보고서, 연결제무제표)'
+reprt_code='11013', fs_div='CFS' (1분기보고서, 연결제무제표)'
+reprt_code='11012', fs_div='CFS' (반기보고서, 연결제무제표)'
+reprt_code='11014', fs_div='CFS' (3분기보고서, 연결제무제표)'
+reprt_code='11013', fs_div='CFS' (1분기보고서, 연결제무제표)'
+  ✅ 아모텍 검증 통과 PER 71.1 PBR 2.61 EPS 408 BPS 11112
+  · 052710 아모텍: EPS=408 BPS=11112 ROE=3.7 DPS=0.0 성장=10.6
+  ✅ 채비 검증 통과 PER None PBR None EPS None BPS None
+  · 0011T0 채비: EPS=None BPS=None ROE=None DPS=None 성장=None
+reprt_code='11011', fs_div='CFS' (사업보고서, 연결제무제표)'
+reprt_code='11011', fs_div='CFS' (사업보고서, 연결제무제표)'
+reprt_code='11011', fs_div='CFS' (사업보고서, 연결제무제표)'
+reprt_code='11011', fs_div='CFS' (사업보고서, 연결제무제표)'
+reprt_code='11013', fs_div='CFS' (1분기보고서, 연결제무제표)'
+reprt_code='11012', fs_div='CFS' (반기보고서, 연결제무제표)'
+reprt_code='11014', fs_div='CFS' (3분기보고서, 연결제무제표)'
+reprt_code='11013', fs_div='CFS' (1분기보고서, 연결제무제표)'
+  ❌ 신도리코 중대오류 차단 → 해당 지표 숨김: EPS 3097↔ref 2631.0
+  · 029530 신도리코: EPS=None BPS=127281 ROE=2.5 DPS=1000.0 성장=-6.9
 reprt_code='11011', fs_div='CFS' (사업보고서, 연결제무제표)'
 {'status': '013', 'message': '조회된 데이타가 없습니다.'}
 
@@ -176,8 +113,8 @@ reprt_code='11013', fs_div='CFS' (1분기보고서, 연결제무제표)'
 {'status': '013', 'message': '조회된 데이타가 없습니다.'}
 
 reprt_code='11013', fs_div='OFS' (1분기보고서, 별도(개별)제무제표)'
-  ✅ 에이팩트 검증 통과 PER 84.6 PBR 7.31 EPS 136 BPS 1573
-  · 200470 에이팩트: EPS=136 BPS=1573 ROE=9.8 DPS=0.0 성장=28.0
+  ✅ 보성파워텍 검증 통과 PER 17.4 PBR 3.67 EPS 493 BPS 2341
+  · 006910 보성파워텍: EPS=493 BPS=2341 ROE=23.4 DPS=0.0 성장=91.4
 reprt_code='11011', fs_div='CFS' (사업보고서, 연결제무제표)'
 reprt_code='11011', fs_div='CFS' (사업보고서, 연결제무제표)'
 reprt_code='11011', fs_div='CFS' (사업보고서, 연결제무제표)'
@@ -186,8 +123,15 @@ reprt_code='11013', fs_div='CFS' (1분기보고서, 연결제무제표)'
 reprt_code='11012', fs_div='CFS' (반기보고서, 연결제무제표)'
 reprt_code='11014', fs_div='CFS' (3분기보고서, 연결제무제표)'
 reprt_code='11013', fs_div='CFS' (1분기보고서, 연결제무제표)'
-  ✅ 한섬 검증 통과 PER 8.8 PBR 0.34 EPS 2571 BPS 67413
-  · 020000 한섬: EPS=2571 BPS=67413 ROE=3.9 DPS=None 성장=0.4
+{'status': '013', 'message': '조회된 데이타가 없습니다.'}
+
+reprt_code='11013', fs_div='OFS' (1분기보고서, 별도(개별)제무제표)'
+{'status': '013', 'message': '조회된 데이타가 없습니다.'}
+
+  [단위보정] 950210 ×1000 (천원/백만원 단위 공시 추정)
+{'status': '013', 'message': '조회된 데이타가 없습니다.'}
+  ✅ 프레스티지바이오파마 검증 통과 PER None PBR None EPS None BPS None
+  · 950210 프레스티지바이오파마: EPS=None BPS=None ROE=None DPS=None 성장=1875.4
 reprt_code='11011', fs_div='CFS' (사업보고서, 연결제무제표)'
 reprt_code='11011', fs_div='CFS' (사업보고서, 연결제무제표)'
 reprt_code='11011', fs_div='CFS' (사업보고서, 연결제무제표)'
@@ -196,8 +140,8 @@ reprt_code='11013', fs_div='CFS' (1분기보고서, 연결제무제표)'
 reprt_code='11012', fs_div='CFS' (반기보고서, 연결제무제표)'
 reprt_code='11014', fs_div='CFS' (3분기보고서, 연결제무제표)'
 reprt_code='11013', fs_div='CFS' (1분기보고서, 연결제무제표)'
-  ✅ 인카금융서비스 검증 통과 PER 6.1 PBR 2.18 EPS 1612 BPS 4499
-  · 211050 인카금융서비스: EPS=1612 BPS=4499 ROE=41.5 DPS=370.0 성장=22.8
+  ✅ 하이록코리아 검증 통과 PER 7.8 PBR 0.92 EPS 4558 BPS 38897
+  · 013030 하이록코리아: EPS=4558 BPS=38897 ROE=12.2 DPS=1350.0 성장=12.6
 reprt_code='11011', fs_div='CFS' (사업보고서, 연결제무제표)'
 reprt_code='11011', fs_div='CFS' (사업보고서, 연결제무제표)'
 reprt_code='11011', fs_div='CFS' (사업보고서, 연결제무제표)'
@@ -206,8 +150,8 @@ reprt_code='11013', fs_div='CFS' (1분기보고서, 연결제무제표)'
 reprt_code='11012', fs_div='CFS' (반기보고서, 연결제무제표)'
 reprt_code='11014', fs_div='CFS' (3분기보고서, 연결제무제표)'
 reprt_code='11013', fs_div='CFS' (1분기보고서, 연결제무제표)'
-  ✅ DI동일 검증 통과 PER None PBR 0.93 EPS -284 BPS 25099
-  · 001530 DI동일: EPS=-284 BPS=25099 ROE=-1.1 DPS=100.0 성장=-7.7
+  ✅ 메디포스트 검증 통과 PER None PBR 1.73 EPS -2198 BPS 6154
+  · 078160 메디포스트: EPS=-2198 BPS=6154 ROE=-33.4 DPS=0.0 성장=4.2
 reprt_code='11011', fs_div='CFS' (사업보고서, 연결제무제표)'
 reprt_code='11011', fs_div='CFS' (사업보고서, 연결제무제표)'
 reprt_code='11011', fs_div='CFS' (사업보고서, 연결제무제표)'
@@ -216,8 +160,8 @@ reprt_code='11013', fs_div='CFS' (1분기보고서, 연결제무제표)'
 reprt_code='11012', fs_div='CFS' (반기보고서, 연결제무제표)'
 reprt_code='11014', fs_div='CFS' (3분기보고서, 연결제무제표)'
 reprt_code='11013', fs_div='CFS' (1분기보고서, 연결제무제표)'
-  ❌ 한글과컴퓨터 중대오류 차단 → 해당 지표 숨김: BPS 20195↔ref 15306.0
-  · 030520 한글과컴퓨터: EPS=1398 BPS=None ROE=7.0 DPS=400.0 성장=7.2
+  ✅ 동화기업 검증 통과 PER None PBR 0.46 EPS -652 BPS 17816
+  · 025900 동화기업: EPS=-652 BPS=17816 ROE=-3.6 DPS=0.0 성장=-9.6
 reprt_code='11011', fs_div='CFS' (사업보고서, 연결제무제표)'
 reprt_code='11011', fs_div='CFS' (사업보고서, 연결제무제표)'
 reprt_code='11011', fs_div='CFS' (사업보고서, 연결제무제표)'
@@ -226,38 +170,58 @@ reprt_code='11013', fs_div='CFS' (1분기보고서, 연결제무제표)'
 reprt_code='11012', fs_div='CFS' (반기보고서, 연결제무제표)'
 reprt_code='11014', fs_div='CFS' (3분기보고서, 연결제무제표)'
 reprt_code='11013', fs_div='CFS' (1분기보고서, 연결제무제표)'
-  ✅ 디아이티 검증 통과 PER 12.0 PBR 1.92 EPS 2110 BPS 13181
-  · 110990 디아이티: EPS=2110 BPS=13181 ROE=17.1 DPS=420.0 성장=-7.5
+  ✅ INVENI 검증 통과 PER 3.4 PBR 0.5 EPS 4553 BPS 30556
+  · 015360 INVENI: EPS=4553 BPS=30556 ROE=21.3 DPS=5400.0 성장=14.4
 reprt_code='11011', fs_div='CFS' (사업보고서, 연결제무제표)'
 reprt_code='11011', fs_div='CFS' (사업보고서, 연결제무제표)'
 reprt_code='11011', fs_div='CFS' (사업보고서, 연결제무제표)'
+{'status': '013', 'message': '조회된 데이타가 없습니다.'}
+
+reprt_code='11011', fs_div='OFS' (사업보고서, 별도(개별)제무제표)'
 reprt_code='11011', fs_div='CFS' (사업보고서, 연결제무제표)'
+{'status': '013', 'message': '조회된 데이타가 없습니다.'}
+
+reprt_code='11011', fs_div='OFS' (사업보고서, 별도(개별)제무제표)'
 reprt_code='11013', fs_div='CFS' (1분기보고서, 연결제무제표)'
 reprt_code='11012', fs_div='CFS' (반기보고서, 연결제무제표)'
 reprt_code='11014', fs_div='CFS' (3분기보고서, 연결제무제표)'
 reprt_code='11013', fs_div='CFS' (1분기보고서, 연결제무제표)'
-  ✅ 신풍제약 검증 통과 PER 44.5 PBR 1.52 EPS 204 BPS 5975
-  · 019170 신풍제약: EPS=204 BPS=5975 ROE=3.7 DPS=None 성장=6.1
+  ✅ 세아제강 검증 통과 PER 12.9 PBR 0.37 EPS 11391 BPS 399003
+  · 306200 세아제강: EPS=11391 BPS=399003 ROE=2.9 DPS=5500.0 성장=-17.9
 reprt_code='11011', fs_div='CFS' (사업보고서, 연결제무제표)'
+{'status': '013', 'message': '조회된 데이타가 없습니다.'}
+
+reprt_code='11011', fs_div='OFS' (사업보고서, 별도(개별)제무제표)'
 reprt_code='11011', fs_div='CFS' (사업보고서, 연결제무제표)'
+{'status': '013', 'message': '조회된 데이타가 없습니다.'}
+
+reprt_code='11011', fs_div='OFS' (사업보고서, 별도(개별)제무제표)'
 reprt_code='11011', fs_div='CFS' (사업보고서, 연결제무제표)'
+{'status': '013', 'message': '조회된 데이타가 없습니다.'}
+
+reprt_code='11011', fs_div='OFS' (사업보고서, 별도(개별)제무제표)'
 reprt_code='11011', fs_div='CFS' (사업보고서, 연결제무제표)'
+{'status': '013', 'message': '조회된 데이타가 없습니다.'}
+
+reprt_code='11011', fs_div='OFS' (사업보고서, 별도(개별)제무제표)'
 reprt_code='11013', fs_div='CFS' (1분기보고서, 연결제무제표)'
+{'status': '013', 'message': '조회된 데이타가 없습니다.'}
+
+reprt_code='11013', fs_div='OFS' (1분기보고서, 별도(개별)제무제표)'
 reprt_code='11012', fs_div='CFS' (반기보고서, 연결제무제표)'
+{'status': '013', 'message': '조회된 데이타가 없습니다.'}
+
+reprt_code='11012', fs_div='OFS' (반기보고서, 별도(개별)제무제표)'
 reprt_code='11014', fs_div='CFS' (3분기보고서, 연결제무제표)'
+{'status': '013', 'message': '조회된 데이타가 없습니다.'}
+
+reprt_code='11014', fs_div='OFS' (3분기보고서, 별도(개별)제무제표)'
 reprt_code='11013', fs_div='CFS' (1분기보고서, 연결제무제표)'
-  ✅ 메카로 검증 통과 PER 34.2 PBR 2.22 EPS 1362 BPS 20962
-  · 241770 메카로: EPS=1362 BPS=20962 ROE=6.7 DPS=350.0 성장=50.5
-reprt_code='11011', fs_div='CFS' (사업보고서, 연결제무제표)'
-reprt_code='11011', fs_div='CFS' (사업보고서, 연결제무제표)'
-reprt_code='11011', fs_div='CFS' (사업보고서, 연결제무제표)'
-reprt_code='11011', fs_div='CFS' (사업보고서, 연결제무제표)'
-reprt_code='11013', fs_div='CFS' (1분기보고서, 연결제무제표)'
-reprt_code='11012', fs_div='CFS' (반기보고서, 연결제무제표)'
-reprt_code='11014', fs_div='CFS' (3분기보고서, 연결제무제표)'
-reprt_code='11013', fs_div='CFS' (1분기보고서, 연결제무제표)'
-  ✅ 티앤엘 검증 통과 PER 12.2 PBR 2.3 EPS 4756 BPS 25313
-  · 340570 티앤엘: EPS=4756 BPS=25313 ROE=20.0 DPS=1500.0 성장=-6.1
+{'status': '013', 'message': '조회된 데이타가 없습니다.'}
+
+reprt_code='11013', fs_div='OFS' (1분기보고서, 별도(개별)제무제표)'
+  ✅ 에스비비테크 검증 통과 PER None PBR 16.28 EPS -2593 BPS 3832
+  · 389500 에스비비테크: EPS=-2593 BPS=3832 ROE=-97.2 DPS=None 성장=31.7
 reprt_code='11011', fs_div='CFS' (사업보고서, 연결제무제표)'
 {'status': '013', 'message': '조회된 데이타가 없습니다.'}
 
@@ -292,8 +256,28 @@ reprt_code='11013', fs_div='CFS' (1분기보고서, 연결제무제표)'
 {'status': '013', 'message': '조회된 데이타가 없습니다.'}
 
 reprt_code='11013', fs_div='OFS' (1분기보고서, 별도(개별)제무제표)'
-  ✅ 동국제강 검증 통과 PER 39.3 PBR 0.25 EPS 242 BPS 37923
-  · 460860 동국제강: EPS=242 BPS=37923 ROE=0.7 DPS=400.0 성장=-9.2
+  ✅ 한선엔지니어링 검증 통과 PER 207.7 PBR 4.53 EPS 104 BPS 4764
+  · 452280 한선엔지니어링: EPS=104 BPS=4764 ROE=2.6 DPS=None 성장=30.2
+reprt_code='11011', fs_div='CFS' (사업보고서, 연결제무제표)'
+reprt_code='11011', fs_div='CFS' (사업보고서, 연결제무제표)'
+reprt_code='11011', fs_div='CFS' (사업보고서, 연결제무제표)'
+reprt_code='11011', fs_div='CFS' (사업보고서, 연결제무제표)'
+reprt_code='11013', fs_div='CFS' (1분기보고서, 연결제무제표)'
+reprt_code='11012', fs_div='CFS' (반기보고서, 연결제무제표)'
+reprt_code='11014', fs_div='CFS' (3분기보고서, 연결제무제표)'
+reprt_code='11013', fs_div='CFS' (1분기보고서, 연결제무제표)'
+  ✅ 제주항공 검증 통과 PER None PBR 1.39 EPS -891 BPS 3715
+  · 089590 제주항공: EPS=-891 BPS=3715 ROE=-23.1 DPS=None 성장=-18.4
+reprt_code='11011', fs_div='CFS' (사업보고서, 연결제무제표)'
+reprt_code='11011', fs_div='CFS' (사업보고서, 연결제무제표)'
+reprt_code='11011', fs_div='CFS' (사업보고서, 연결제무제표)'
+reprt_code='11011', fs_div='CFS' (사업보고서, 연결제무제표)'
+reprt_code='11013', fs_div='CFS' (1분기보고서, 연결제무제표)'
+reprt_code='11012', fs_div='CFS' (반기보고서, 연결제무제표)'
+reprt_code='11014', fs_div='CFS' (3분기보고서, 연결제무제표)'
+reprt_code='11013', fs_div='CFS' (1분기보고서, 연결제무제표)'
+  ✅ 메가스터디교육 검증 통과 PER 4.8 PBR 0.85 EPS 8306 BPS 46901
+  · 215200 메가스터디교육: EPS=8306 BPS=46901 ROE=18.5 DPS=3000.0 성장=-6.1
 reprt_code='11011', fs_div='CFS' (사업보고서, 연결제무제표)'
 {'status': '013', 'message': '조회된 데이타가 없습니다.'}
 
@@ -326,8 +310,8 @@ reprt_code='11013', fs_div='CFS' (1분기보고서, 연결제무제표)'
 {'status': '013', 'message': '조회된 데이타가 없습니다.'}
 
 reprt_code='11013', fs_div='OFS' (1분기보고서, 별도(개별)제무제표)'
-  ✅ 엑스게이트 검증 통과 PER 88.7 PBR 9.59 EPS 185 BPS 1711
-  · 356680 엑스게이트: EPS=185 BPS=1711 ROE=11.5 DPS=0.0 성장=11.4
+  ❌ 조광피혁 중대오류 차단 → 해당 지표 숨김: EPS 3322↔ref 1775.0
+  · 004700 조광피혁: EPS=None BPS=163911 ROE=3.8 DPS=0.0 성장=8.5
 reprt_code='11011', fs_div='CFS' (사업보고서, 연결제무제표)'
 reprt_code='11011', fs_div='CFS' (사업보고서, 연결제무제표)'
 reprt_code='11011', fs_div='CFS' (사업보고서, 연결제무제표)'
@@ -336,8 +320,8 @@ reprt_code='11013', fs_div='CFS' (1분기보고서, 연결제무제표)'
 reprt_code='11012', fs_div='CFS' (반기보고서, 연결제무제표)'
 reprt_code='11014', fs_div='CFS' (3분기보고서, 연결제무제표)'
 reprt_code='11013', fs_div='CFS' (1분기보고서, 연결제무제표)'
-  ✅ 유니드 검증 통과 PER 6.8 PBR 0.4 EPS 10217 BPS 174450
-  · 014830 유니드: EPS=10217 BPS=174450 ROE=6.2 DPS=2000.0 성장=20.4
+  ✅ 오픈엣지테크놀로지 검증 통과 PER None PBR 41.59 EPS -1311 BPS 378
+  · 394280 오픈엣지테크놀로지: EPS=-1311 BPS=378 ROE=-107.7 DPS=None 성장=4.8
 reprt_code='11011', fs_div='CFS' (사업보고서, 연결제무제표)'
 reprt_code='11011', fs_div='CFS' (사업보고서, 연결제무제표)'
 reprt_code='11011', fs_div='CFS' (사업보고서, 연결제무제표)'
@@ -346,8 +330,8 @@ reprt_code='11013', fs_div='CFS' (1분기보고서, 연결제무제표)'
 reprt_code='11012', fs_div='CFS' (반기보고서, 연결제무제표)'
 reprt_code='11014', fs_div='CFS' (3분기보고서, 연결제무제표)'
 reprt_code='11013', fs_div='CFS' (1분기보고서, 연결제무제표)'
-  ❌ 아이센스 중대오류 차단 → 해당 지표 숨김: BPS 14560↔ref 11625.0
-  · 099190 아이센스: EPS=-211 BPS=None ROE=-1.8 DPS=100.0 성장=8.3
+  ❌ 아세아 중대오류 차단 → 해당 지표 숨김: EPS 19068↔ref 15096.0
+  · 002030 아세아: EPS=None BPS=727459 ROE=2.7 DPS=5600.0 성장=-6.1
 reprt_code='11011', fs_div='CFS' (사업보고서, 연결제무제표)'
 {'status': '013', 'message': '조회된 데이타가 없습니다.'}
 
@@ -364,98 +348,6 @@ reprt_code='11011', fs_div='CFS' (사업보고서, 연결제무제표)'
 {'status': '013', 'message': '조회된 데이타가 없습니다.'}
 
 reprt_code='11011', fs_div='OFS' (사업보고서, 별도(개별)제무제표)'
-reprt_code='11013', fs_div='CFS' (1분기보고서, 연결제무제표)'
-{'status': '013', 'message': '조회된 데이타가 없습니다.'}
-
-reprt_code='11013', fs_div='OFS' (1분기보고서, 별도(개별)제무제표)'
-reprt_code='11012', fs_div='CFS' (반기보고서, 연결제무제표)'
-{'status': '013', 'message': '조회된 데이타가 없습니다.'}
-
-reprt_code='11012', fs_div='OFS' (반기보고서, 별도(개별)제무제표)'
-reprt_code='11014', fs_div='CFS' (3분기보고서, 연결제무제표)'
-{'status': '013', 'message': '조회된 데이타가 없습니다.'}
-
-reprt_code='11014', fs_div='OFS' (3분기보고서, 별도(개별)제무제표)'
-reprt_code='11013', fs_div='CFS' (1분기보고서, 연결제무제표)'
-{'status': '013', 'message': '조회된 데이타가 없습니다.'}
-
-reprt_code='11013', fs_div='OFS' (1분기보고서, 별도(개별)제무제표)'
-  ✅ 케이카 검증 통과 PER 9.9 PBR 2.09 EPS 960 BPS 4557
-  · 381970 케이카: EPS=960 BPS=4557 ROE=21.0 DPS=1200.0 성장=6.0
-reprt_code='11011', fs_div='CFS' (사업보고서, 연결제무제표)'
-reprt_code='11011', fs_div='CFS' (사업보고서, 연결제무제표)'
-reprt_code='11011', fs_div='CFS' (사업보고서, 연결제무제표)'
-reprt_code='11011', fs_div='CFS' (사업보고서, 연결제무제표)'
-{'status': '013', 'message': '조회된 데이타가 없습니다.'}
-
-reprt_code='11011', fs_div='OFS' (사업보고서, 별도(개별)제무제표)'
-{'status': '013', 'message': '조회된 데이타가 없습니다.'}
-
-reprt_code='11013', fs_div='CFS' (1분기보고서, 연결제무제표)'
-reprt_code='11012', fs_div='CFS' (반기보고서, 연결제무제표)'
-reprt_code='11014', fs_div='CFS' (3분기보고서, 연결제무제표)'
-reprt_code='11013', fs_div='CFS' (1분기보고서, 연결제무제표)'
-reprt_code='11011', fs_div='CFS' (사업보고서, 연결제무제표)'
-reprt_code='11011', fs_div='CFS' (사업보고서, 연결제무제표)'
-reprt_code='11011', fs_div='CFS' (사업보고서, 연결제무제표)'
-  ❌ 제주은행 중대오류 차단 → 해당 지표 숨김: EPS 254↔ref 407.0
-  · 006220 제주은행: EPS=None BPS=16987 ROE=1.6 DPS=100.0 성장=None
-reprt_code='11011', fs_div='CFS' (사업보고서, 연결제무제표)'
-reprt_code='11011', fs_div='CFS' (사업보고서, 연결제무제표)'
-reprt_code='11011', fs_div='CFS' (사업보고서, 연결제무제표)'
-reprt_code='11011', fs_div='CFS' (사업보고서, 연결제무제표)'
-{'status': '013', 'message': '조회된 데이타가 없습니다.'}
-
-reprt_code='11011', fs_div='OFS' (사업보고서, 별도(개별)제무제표)'
-{'status': '013', 'message': '조회된 데이타가 없습니다.'}
-
-reprt_code='11013', fs_div='CFS' (1분기보고서, 연결제무제표)'
-reprt_code='11012', fs_div='CFS' (반기보고서, 연결제무제표)'
-reprt_code='11014', fs_div='CFS' (3분기보고서, 연결제무제표)'
-reprt_code='11013', fs_div='CFS' (1분기보고서, 연결제무제표)'
-  ✅ 우리기술투자 검증 통과 PER 3.9 PBR 0.54 EPS 1413 BPS 10158
-  · 041190 우리기술투자: EPS=1413 BPS=10158 ROE=14.9 DPS=None 성장=-15.3
-reprt_code='11011', fs_div='CFS' (사업보고서, 연결제무제표)'
-reprt_code='11011', fs_div='CFS' (사업보고서, 연결제무제표)'
-reprt_code='11011', fs_div='CFS' (사업보고서, 연결제무제표)'
-{'status': '013', 'message': '조회된 데이타가 없습니다.'}
-
-reprt_code='11011', fs_div='OFS' (사업보고서, 별도(개별)제무제표)'
-reprt_code='11011', fs_div='CFS' (사업보고서, 연결제무제표)'
-reprt_code='11013', fs_div='CFS' (1분기보고서, 연결제무제표)'
-reprt_code='11012', fs_div='CFS' (반기보고서, 연결제무제표)'
-reprt_code='11014', fs_div='CFS' (3분기보고서, 연결제무제표)'
-reprt_code='11013', fs_div='CFS' (1분기보고서, 연결제무제표)'
-  ❌ HLB이노베이션 중대오류 차단 → 해당 지표 숨김: EPS -238↔ref -1178.0
-  · 024850 HLB이노베이션: EPS=None BPS=6991 ROE=-3.3 DPS=None 성장=27.2
-reprt_code='11011', fs_div='CFS' (사업보고서, 연결제무제표)'
-reprt_code='11011', fs_div='CFS' (사업보고서, 연결제무제표)'
-reprt_code='11011', fs_div='CFS' (사업보고서, 연결제무제표)'
-reprt_code='11011', fs_div='CFS' (사업보고서, 연결제무제표)'
-reprt_code='11013', fs_div='CFS' (1분기보고서, 연결제무제표)'
-reprt_code='11012', fs_div='CFS' (반기보고서, 연결제무제표)'
-reprt_code='11014', fs_div='CFS' (3분기보고서, 연결제무제표)'
-reprt_code='11013', fs_div='CFS' (1분기보고서, 연결제무제표)'
-  ✅ 카페24 검증 통과 PER 11.5 PBR 1.76 EPS 1655 BPS 10821
-  · 042000 카페24: EPS=1655 BPS=10821 ROE=16.7 DPS=0.0 성장=4.1
-reprt_code='11011', fs_div='CFS' (사업보고서, 연결제무제표)'
-{'status': '013', 'message': '조회된 데이타가 없습니다.'}
-
-reprt_code='11011', fs_div='OFS' (사업보고서, 별도(개별)제무제표)'
-reprt_code='11011', fs_div='CFS' (사업보고서, 연결제무제표)'
-{'status': '013', 'message': '조회된 데이타가 없습니다.'}
-
-reprt_code='11011', fs_div='OFS' (사업보고서, 별도(개별)제무제표)'
-reprt_code='11011', fs_div='CFS' (사업보고서, 연결제무제표)'
-{'status': '013', 'message': '조회된 데이타가 없습니다.'}
-
-reprt_code='11011', fs_div='OFS' (사업보고서, 별도(개별)제무제표)'
-reprt_code='11011', fs_div='CFS' (사업보고서, 연결제무제표)'
-{'status': '013', 'message': '조회된 데이타가 없습니다.'}
-
-reprt_code='11011', fs_div='OFS' (사업보고서, 별도(개별)제무제표)'
-{'status': '013', 'message': '조회된 데이타가 없습니다.'}
-
 reprt_code='11013', fs_div='CFS' (1분기보고서, 연결제무제표)'
 {'status': '013', 'message': '조회된 데이타가 없습니다.'}
 
@@ -489,8 +381,8 @@ reprt_code='11013', fs_div='OFS' (1분기보고서, 별도(개별)제무제표)'
 {'status': '013', 'message': '조회된 데이타가 없습니다.'}
 
 {'status': '013', 'message': '조회된 데이타가 없습니다.'}
-  ✅ 삼성FN리츠 검증 통과 PER None PBR None EPS None BPS None
-  · 448730 삼성FN리츠: EPS=None BPS=None ROE=None DPS=73.0 성장=20.1
+  ✅ 코람코더원리츠 검증 통과 PER None PBR None EPS None BPS None
+  · 417310 코람코더원리츠: EPS=None BPS=None ROE=None DPS=94.0 성장=2.0
 reprt_code='11011', fs_div='CFS' (사업보고서, 연결제무제표)'
 reprt_code='11011', fs_div='CFS' (사업보고서, 연결제무제표)'
 reprt_code='11011', fs_div='CFS' (사업보고서, 연결제무제표)'
@@ -499,8 +391,8 @@ reprt_code='11013', fs_div='CFS' (1분기보고서, 연결제무제표)'
 reprt_code='11012', fs_div='CFS' (반기보고서, 연결제무제표)'
 reprt_code='11014', fs_div='CFS' (3분기보고서, 연결제무제표)'
 reprt_code='11013', fs_div='CFS' (1분기보고서, 연결제무제표)'
-  ✅ 펌텍코리아 검증 통과 PER 12.5 PBR 1.52 EPS 2956 BPS 24313
-  · 251970 펌텍코리아: EPS=2956 BPS=24313 ROE=12.4 DPS=450.0 성장=10.2
+  ❌ 다날 중대오류 차단 → 해당 지표 숨김: BPS 4862↔ref 4105.0
+  · 064260 다날: EPS=-875 BPS=None ROE=-19.7 DPS=0.0 성장=-13.6
 reprt_code='11011', fs_div='CFS' (사업보고서, 연결제무제표)'
 reprt_code='11011', fs_div='CFS' (사업보고서, 연결제무제표)'
 reprt_code='11011', fs_div='CFS' (사업보고서, 연결제무제표)'
@@ -509,38 +401,8 @@ reprt_code='11013', fs_div='CFS' (1분기보고서, 연결제무제표)'
 reprt_code='11012', fs_div='CFS' (반기보고서, 연결제무제표)'
 reprt_code='11014', fs_div='CFS' (3분기보고서, 연결제무제표)'
 reprt_code='11013', fs_div='CFS' (1분기보고서, 연결제무제표)'
-  ✅ 한솔아이원스 검증 통과 PER 19.3 PBR 2.09 EPS 839 BPS 7757
-  · 114810 한솔아이원스: EPS=839 BPS=7757 ROE=11.4 DPS=0.0 성장=26.5
-reprt_code='11011', fs_div='CFS' (사업보고서, 연결제무제표)'
-reprt_code='11011', fs_div='CFS' (사업보고서, 연결제무제표)'
-reprt_code='11011', fs_div='CFS' (사업보고서, 연결제무제표)'
-reprt_code='11011', fs_div='CFS' (사업보고서, 연결제무제표)'
-{'status': '013', 'message': '조회된 데이타가 없습니다.'}
-
-reprt_code='11011', fs_div='OFS' (사업보고서, 별도(개별)제무제표)'
-{'status': '013', 'message': '조회된 데이타가 없습니다.'}
-
-reprt_code='11013', fs_div='CFS' (1분기보고서, 연결제무제표)'
-reprt_code='11012', fs_div='CFS' (반기보고서, 연결제무제표)'
-reprt_code='11014', fs_div='CFS' (3분기보고서, 연결제무제표)'
-reprt_code='11013', fs_div='CFS' (1분기보고서, 연결제무제표)'
-  ✅ DB증권 검증 통과 PER 4.8 PBR 0.39 EPS 2245 BPS 27246
-  · 016610 DB증권: EPS=2245 BPS=27246 ROE=8.5 DPS=550.0 성장=45.8
-reprt_code='11011', fs_div='CFS' (사업보고서, 연결제무제표)'
-reprt_code='11011', fs_div='CFS' (사업보고서, 연결제무제표)'
-reprt_code='11011', fs_div='CFS' (사업보고서, 연결제무제표)'
-reprt_code='11011', fs_div='CFS' (사업보고서, 연결제무제표)'
-{'status': '013', 'message': '조회된 데이타가 없습니다.'}
-
-reprt_code='11011', fs_div='OFS' (사업보고서, 별도(개별)제무제표)'
-{'status': '013', 'message': '조회된 데이타가 없습니다.'}
-
-reprt_code='11013', fs_div='CFS' (1분기보고서, 연결제무제표)'
-reprt_code='11012', fs_div='CFS' (반기보고서, 연결제무제표)'
-reprt_code='11014', fs_div='CFS' (3분기보고서, 연결제무제표)'
-reprt_code='11013', fs_div='CFS' (1분기보고서, 연결제무제표)'
-  ✅ 유진투자증권 검증 통과 PER 3.9 PBR 0.37 EPS 1211 BPS 12714
-  · 001200 유진투자증권: EPS=1211 BPS=12714 ROE=10.0 DPS=180.0 성장=2.5
+  ✅ BGF 검증 통과 PER 6.3 PBR 0.21 EPS 668 BPS 20118
+  · 027410 BGF: EPS=668 BPS=20118 ROE=3.5 DPS=130.0 성장=8.2
 reprt_code='11011', fs_div='CFS' (사업보고서, 연결제무제표)'
 reprt_code='11011', fs_div='CFS' (사업보고서, 연결제무제표)'
 reprt_code='11011', fs_div='CFS' (사업보고서, 연결제무제표)'
@@ -549,8 +411,8 @@ reprt_code='11013', fs_div='CFS' (1분기보고서, 연결제무제표)'
 reprt_code='11012', fs_div='CFS' (반기보고서, 연결제무제표)'
 reprt_code='11014', fs_div='CFS' (3분기보고서, 연결제무제표)'
 reprt_code='11013', fs_div='CFS' (1분기보고서, 연결제무제표)'
-  ✅ 삼양사 검증 통과 PER None PBR 0.27 EPS -28554 BPS 160201
-  · 145990 삼양사: EPS=-28554 BPS=160201 ROE=-17.5 DPS=1750.0 성장=-4.1
+  ✅ 오킨스전자 검증 통과 PER 33.7 PBR 6.29 EPS 568 BPS 3041
+  · 080580 오킨스전자: EPS=568 BPS=3041 ROE=23.7 DPS=0.0 성장=41.5
 reprt_code='11011', fs_div='CFS' (사업보고서, 연결제무제표)'
 reprt_code='11011', fs_div='CFS' (사업보고서, 연결제무제표)'
 reprt_code='11011', fs_div='CFS' (사업보고서, 연결제무제표)'
@@ -559,8 +421,8 @@ reprt_code='11013', fs_div='CFS' (1분기보고서, 연결제무제표)'
 reprt_code='11012', fs_div='CFS' (반기보고서, 연결제무제표)'
 reprt_code='11014', fs_div='CFS' (3분기보고서, 연결제무제표)'
 reprt_code='11013', fs_div='CFS' (1분기보고서, 연결제무제표)'
-  ✅ 월덱스 검증 통과 PER 9.7 PBR 1.25 EPS 2832 BPS 22059
-  · 101160 월덱스: EPS=2832 BPS=22059 ROE=13.7 DPS=100.0 성장=-4.9
+  ✅ 한중엔시에스 검증 통과 PER 69.2 PBR 3.97 EPS 642 BPS 11201
+  · 107640 한중엔시에스: EPS=642 BPS=11201 ROE=6.4 DPS=0.0 성장=-1.1
 reprt_code='11011', fs_div='CFS' (사업보고서, 연결제무제표)'
 reprt_code='11011', fs_div='CFS' (사업보고서, 연결제무제표)'
 reprt_code='11011', fs_div='CFS' (사업보고서, 연결제무제표)'
@@ -569,9 +431,18 @@ reprt_code='11013', fs_div='CFS' (1분기보고서, 연결제무제표)'
 reprt_code='11012', fs_div='CFS' (반기보고서, 연결제무제표)'
 reprt_code='11014', fs_div='CFS' (3분기보고서, 연결제무제표)'
 reprt_code='11013', fs_div='CFS' (1분기보고서, 연결제무제표)'
-  ✅ 한국기업평가 검증 통과 PER 17.4 PBR 4.42 EPS 5735 BPS 22631
-  · 034950 한국기업평가: EPS=5735 BPS=22631 ROE=24.8 DPS=8009.0 성장=5.5
+  ❌ 덴티움 중대오류 차단 → 해당 지표 숨김: EPS 2434↔ref 1933.0
+  · 145720 덴티움: EPS=None BPS=68508 ROE=3.6 DPS=600.0 성장=-15.0
 reprt_code='11011', fs_div='CFS' (사업보고서, 연결제무제표)'
+reprt_code='11011', fs_div='CFS' (사업보고서, 연결제무제표)'
+reprt_code='11011', fs_div='CFS' (사업보고서, 연결제무제표)'
+reprt_code='11011', fs_div='CFS' (사업보고서, 연결제무제표)'
+reprt_code='11013', fs_div='CFS' (1분기보고서, 연결제무제표)'
+reprt_code='11012', fs_div='CFS' (반기보고서, 연결제무제표)'
+reprt_code='11014', fs_div='CFS' (3분기보고서, 연결제무제표)'
+reprt_code='11013', fs_div='CFS' (1분기보고서, 연결제무제표)'
+  ✅ 삼영무역 검증 통과 PER 6.3 PBR 0.63 EPS 3432 BPS 34690
+  · 002810 삼영무역: EPS=3432 BPS=34690 ROE=10.3 DPS=1181.0 성장=-6.9
 reprt_code='11011', fs_div='CFS' (사업보고서, 연결제무제표)'
 {'status': '013', 'message': '조회된 데이타가 없습니다.'}
 
@@ -581,95 +452,82 @@ reprt_code='11011', fs_div='CFS' (사업보고서, 연결제무제표)'
 
 reprt_code='11011', fs_div='OFS' (사업보고서, 별도(개별)제무제표)'
 reprt_code='11011', fs_div='CFS' (사업보고서, 연결제무제표)'
+reprt_code='11011', fs_div='CFS' (사업보고서, 연결제무제표)'
+reprt_code='11013', fs_div='CFS' (1분기보고서, 연결제무제표)'
+{'status': '013', 'message': '조회된 데이타가 없습니다.'}
+
+reprt_code='11013', fs_div='OFS' (1분기보고서, 별도(개별)제무제표)'
+reprt_code='11012', fs_div='CFS' (반기보고서, 연결제무제표)'
+{'status': '013', 'message': '조회된 데이타가 없습니다.'}
+
+reprt_code='11012', fs_div='OFS' (반기보고서, 별도(개별)제무제표)'
+reprt_code='11014', fs_div='CFS' (3분기보고서, 연결제무제표)'
+{'status': '013', 'message': '조회된 데이타가 없습니다.'}
+
+reprt_code='11014', fs_div='OFS' (3분기보고서, 별도(개별)제무제표)'
+reprt_code='11013', fs_div='CFS' (1분기보고서, 연결제무제표)'
+{'status': '013', 'message': '조회된 데이타가 없습니다.'}
+
+reprt_code='11013', fs_div='OFS' (1분기보고서, 별도(개별)제무제표)'
+  ✅ 유바이오로직스 검증 통과 PER 13.6 PBR 2.21 EPS 797 BPS 4908
+  · 206650 유바이오로직스: EPS=797 BPS=4908 ROE=17.8 DPS=0.0 성장=55.4
+reprt_code='11011', fs_div='CFS' (사업보고서, 연결제무제표)'
+reprt_code='11011', fs_div='CFS' (사업보고서, 연결제무제표)'
+reprt_code='11011', fs_div='CFS' (사업보고서, 연결제무제표)'
+reprt_code='11011', fs_div='CFS' (사업보고서, 연결제무제표)'
+reprt_code='11013', fs_div='CFS' (1분기보고서, 연결제무제표)'
+reprt_code='11012', fs_div='CFS' (반기보고서, 연결제무제표)'
+reprt_code='11014', fs_div='CFS' (3분기보고서, 연결제무제표)'
+reprt_code='11013', fs_div='CFS' (1분기보고서, 연결제무제표)'
+  ✅ DB 검증 통과 PER 6.5 PBR 0.76 EPS 303 BPS 2574
+  · 012030 DB: EPS=303 BPS=2574 ROE=12.7 DPS=0.0 성장=9.5
+reprt_code='11011', fs_div='CFS' (사업보고서, 연결제무제표)'
 {'status': '013', 'message': '조회된 데이타가 없습니다.'}
 
 reprt_code='11011', fs_div='OFS' (사업보고서, 별도(개별)제무제표)'
+reprt_code='11011', fs_div='CFS' (사업보고서, 연결제무제표)'
+{'status': '013', 'message': '조회된 데이타가 없습니다.'}
+
+reprt_code='11011', fs_div='OFS' (사업보고서, 별도(개별)제무제표)'
+{'status': '013', 'message': '조회된 데이타가 없습니다.'}
+
+reprt_code='11011', fs_div='CFS' (사업보고서, 연결제무제표)'
+{'status': '013', 'message': '조회된 데이타가 없습니다.'}
+
+reprt_code='11011', fs_div='OFS' (사업보고서, 별도(개별)제무제표)'
+{'status': '013', 'message': '조회된 데이타가 없습니다.'}
+
+reprt_code='11011', fs_div='CFS' (사업보고서, 연결제무제표)'
+{'status': '013', 'message': '조회된 데이타가 없습니다.'}
+
+reprt_code='11011', fs_div='OFS' (사업보고서, 별도(개별)제무제표)'
+{'status': '013', 'message': '조회된 데이타가 없습니다.'}
+
 reprt_code='11013', fs_div='CFS' (1분기보고서, 연결제무제표)'
+{'status': '013', 'message': '조회된 데이타가 없습니다.'}
+
+reprt_code='11013', fs_div='OFS' (1분기보고서, 별도(개별)제무제표)'
+{'status': '013', 'message': '조회된 데이타가 없습니다.'}
+
 reprt_code='11012', fs_div='CFS' (반기보고서, 연결제무제표)'
+{'status': '013', 'message': '조회된 데이타가 없습니다.'}
+
+reprt_code='11012', fs_div='OFS' (반기보고서, 별도(개별)제무제표)'
+{'status': '013', 'message': '조회된 데이타가 없습니다.'}
+
 reprt_code='11014', fs_div='CFS' (3분기보고서, 연결제무제표)'
+{'status': '013', 'message': '조회된 데이타가 없습니다.'}
+
+reprt_code='11014', fs_div='OFS' (3분기보고서, 별도(개별)제무제표)'
+{'status': '013', 'message': '조회된 데이타가 없습니다.'}
+
 reprt_code='11013', fs_div='CFS' (1분기보고서, 연결제무제표)'
-  ✅ 큐렉소 검증 통과 PER 215.7 PBR 4.66 EPS 51 BPS 2360
-  · 060280 큐렉소: EPS=51 BPS=2360 ROE=2.2 DPS=None 성장=34.2
-reprt_code='11011', fs_div='CFS' (사업보고서, 연결제무제표)'
-reprt_code='11011', fs_div='CFS' (사업보고서, 연결제무제표)'
-reprt_code='11011', fs_div='CFS' (사업보고서, 연결제무제표)'
-reprt_code='11011', fs_div='CFS' (사업보고서, 연결제무제표)'
-reprt_code='11013', fs_div='CFS' (1분기보고서, 연결제무제표)'
-reprt_code='11012', fs_div='CFS' (반기보고서, 연결제무제표)'
-reprt_code='11014', fs_div='CFS' (3분기보고서, 연결제무제표)'
-reprt_code='11013', fs_div='CFS' (1분기보고서, 연결제무제표)'
-  ✅ 율촌화학 검증 통과 PER None PBR 1.56 EPS -119 BPS 11694
-  · 008730 율촌화학: EPS=-119 BPS=11694 ROE=-1.0 DPS=None 성장=6.2
-reprt_code='11011', fs_div='CFS' (사업보고서, 연결제무제표)'
-reprt_code='11011', fs_div='CFS' (사업보고서, 연결제무제표)'
-reprt_code='11011', fs_div='CFS' (사업보고서, 연결제무제표)'
-reprt_code='11011', fs_div='CFS' (사업보고서, 연결제무제표)'
-reprt_code='11013', fs_div='CFS' (1분기보고서, 연결제무제표)'
-reprt_code='11012', fs_div='CFS' (반기보고서, 연결제무제표)'
-reprt_code='11014', fs_div='CFS' (3분기보고서, 연결제무제표)'
-reprt_code='11013', fs_div='CFS' (1분기보고서, 연결제무제표)'
-  ✅ 브이티 검증 통과 PER 7.9 PBR 1.7 EPS 1627 BPS 7556
-  · 018290 브이티: EPS=1627 BPS=7556 ROE=22.4 DPS=None 성장=1.3
-reprt_code='11011', fs_div='CFS' (사업보고서, 연결제무제표)'
-reprt_code='11011', fs_div='CFS' (사업보고서, 연결제무제표)'
-reprt_code='11011', fs_div='CFS' (사업보고서, 연결제무제표)'
-reprt_code='11011', fs_div='CFS' (사업보고서, 연결제무제표)'
-reprt_code='11013', fs_div='CFS' (1분기보고서, 연결제무제표)'
-reprt_code='11012', fs_div='CFS' (반기보고서, 연결제무제표)'
-reprt_code='11014', fs_div='CFS' (3분기보고서, 연결제무제표)'
-reprt_code='11013', fs_div='CFS' (1분기보고서, 연결제무제표)'
-  ✅ 아난티 검증 통과 PER None PBR 0.6 EPS -560 BPS 7652
-  · 025980 아난티: EPS=-560 BPS=7652 ROE=-7.1 DPS=None 성장=-9.5
-reprt_code='11011', fs_div='CFS' (사업보고서, 연결제무제표)'
-reprt_code='11011', fs_div='CFS' (사업보고서, 연결제무제표)'
-reprt_code='11011', fs_div='CFS' (사업보고서, 연결제무제표)'
-reprt_code='11011', fs_div='CFS' (사업보고서, 연결제무제표)'
-reprt_code='11013', fs_div='CFS' (1분기보고서, 연결제무제표)'
-reprt_code='11012', fs_div='CFS' (반기보고서, 연결제무제표)'
-reprt_code='11014', fs_div='CFS' (3분기보고서, 연결제무제표)'
-reprt_code='11013', fs_div='CFS' (1분기보고서, 연결제무제표)'
-  ✅ NICE 검증 통과 PER 9.7 PBR 0.57 EPS 1256 BPS 21280
-  · 034310 NICE: EPS=1256 BPS=21280 ROE=5.9 DPS=560.0 성장=6.7
-reprt_code='11011', fs_div='CFS' (사업보고서, 연결제무제표)'
-reprt_code='11011', fs_div='CFS' (사업보고서, 연결제무제표)'
-reprt_code='11011', fs_div='CFS' (사업보고서, 연결제무제표)'
-reprt_code='11011', fs_div='CFS' (사업보고서, 연결제무제표)'
-reprt_code='11013', fs_div='CFS' (1분기보고서, 연결제무제표)'
-reprt_code='11012', fs_div='CFS' (반기보고서, 연결제무제표)'
-reprt_code='11014', fs_div='CFS' (3분기보고서, 연결제무제표)'
-reprt_code='11013', fs_div='CFS' (1분기보고서, 연결제무제표)'
-  ✅ 명신산업 검증 통과 PER 6.1 PBR 0.54 EPS 1408 BPS 15715
-  · 009900 명신산업: EPS=1408 BPS=15715 ROE=9.7 DPS=100.0 성장=2.9
-reprt_code='11011', fs_div='CFS' (사업보고서, 연결제무제표)'
-reprt_code='11011', fs_div='CFS' (사업보고서, 연결제무제표)'
-reprt_code='11011', fs_div='CFS' (사업보고서, 연결제무제표)'
-reprt_code='11011', fs_div='CFS' (사업보고서, 연결제무제표)'
-reprt_code='11013', fs_div='CFS' (1분기보고서, 연결제무제표)'
-reprt_code='11012', fs_div='CFS' (반기보고서, 연결제무제표)'
-reprt_code='11014', fs_div='CFS' (3분기보고서, 연결제무제표)'
-reprt_code='11013', fs_div='CFS' (1분기보고서, 연결제무제표)'
-  ✅ 더블유씨피 검증 통과 PER None PBR 0.5 EPS -5233 BPS 26232
-  · 393890 더블유씨피: EPS=-5233 BPS=26232 ROE=-19.1 DPS=None 성장=-65.6
-reprt_code='11011', fs_div='CFS' (사업보고서, 연결제무제표)'
-reprt_code='11011', fs_div='CFS' (사업보고서, 연결제무제표)'
-reprt_code='11011', fs_div='CFS' (사업보고서, 연결제무제표)'
-reprt_code='11011', fs_div='CFS' (사업보고서, 연결제무제표)'
-reprt_code='11013', fs_div='CFS' (1분기보고서, 연결제무제표)'
-reprt_code='11012', fs_div='CFS' (반기보고서, 연결제무제표)'
-reprt_code='11014', fs_div='CFS' (3분기보고서, 연결제무제표)'
-reprt_code='11013', fs_div='CFS' (1분기보고서, 연결제무제표)'
-  ❌ 삼천리 중대오류 차단 → 해당 지표 숨김: EPS 36339↔ref 30693.0
-  · 004690 삼천리: EPS=None BPS=517642 ROE=7.3 DPS=3000.0 성장=3.0
-reprt_code='11011', fs_div='CFS' (사업보고서, 연결제무제표)'
-reprt_code='11011', fs_div='CFS' (사업보고서, 연결제무제표)'
-reprt_code='11011', fs_div='CFS' (사업보고서, 연결제무제표)'
-reprt_code='11011', fs_div='CFS' (사업보고서, 연결제무제표)'
-reprt_code='11013', fs_div='CFS' (1분기보고서, 연결제무제표)'
-reprt_code='11012', fs_div='CFS' (반기보고서, 연결제무제표)'
-reprt_code='11014', fs_div='CFS' (3분기보고서, 연결제무제표)'
-reprt_code='11013', fs_div='CFS' (1분기보고서, 연결제무제표)'
-  ✅ 부광약품 검증 통과 PER 27.1 PBR 1.32 EPS 165 BPS 3398
-  · 003000 부광약품: EPS=165 BPS=3398 ROE=4.8 DPS=125.0 성장=25.4
+{'status': '013', 'message': '조회된 데이타가 없습니다.'}
+
+reprt_code='11013', fs_div='OFS' (1분기보고서, 별도(개별)제무제표)'
+{'status': '013', 'message': '조회된 데이타가 없습니다.'}
+  ❌ 아이엠바이오로직스 중대오류 차단 → 해당 지표 숨김: BPS 18658↔ref 8651.0
+  · 493280 아이엠바이오로직스: EPS=None BPS=None ROE=None DPS=None 성장=None
 reprt_code='11011', fs_div='CFS' (사업보고서, 연결제무제표)'
 {'status': '013', 'message': '조회된 데이타가 없습니다.'}
 
@@ -702,8 +560,21 @@ reprt_code='11013', fs_div='CFS' (1분기보고서, 연결제무제표)'
 {'status': '013', 'message': '조회된 데이타가 없습니다.'}
 
 reprt_code='11013', fs_div='OFS' (1분기보고서, 별도(개별)제무제표)'
-  ✅ 감성코퍼레이션 검증 통과 PER 11.6 PBR 3.17 EPS 420 BPS 1537
-  · 036620 감성코퍼레이션: EPS=420 BPS=1537 ROE=29.4 DPS=0.0 성장=13.5
+  ✅ 퍼스텍 검증 통과 PER 27.5 PBR 4.73 EPS 293 BPS 1701
+  · 010820 퍼스텍: EPS=293 BPS=1701 ROE=19.2 DPS=0.0 성장=42.2
+reprt_code='11011', fs_div='CFS' (사업보고서, 연결제무제표)'
+reprt_code='11011', fs_div='CFS' (사업보고서, 연결제무제표)'
+reprt_code='11011', fs_div='CFS' (사업보고서, 연결제무제표)'
+reprt_code='11011', fs_div='CFS' (사업보고서, 연결제무제표)'
+{'status': '013', 'message': '조회된 데이타가 없습니다.'}
+
+reprt_code='11011', fs_div='OFS' (사업보고서, 별도(개별)제무제표)'
+reprt_code='11013', fs_div='CFS' (1분기보고서, 연결제무제표)'
+reprt_code='11012', fs_div='CFS' (반기보고서, 연결제무제표)'
+reprt_code='11014', fs_div='CFS' (3분기보고서, 연결제무제표)'
+reprt_code='11013', fs_div='CFS' (1분기보고서, 연결제무제표)'
+  ❌ 저스템 중대오류 차단 → 해당 지표 숨김: EPS 155↔ref 301.0
+  · 417840 저스템: EPS=None BPS=2856 ROE=6.1 DPS=0.0 성장=24.8
 reprt_code='11011', fs_div='CFS' (사업보고서, 연결제무제표)'
 reprt_code='11011', fs_div='CFS' (사업보고서, 연결제무제표)'
 reprt_code='11011', fs_div='CFS' (사업보고서, 연결제무제표)'
@@ -712,8 +583,8 @@ reprt_code='11013', fs_div='CFS' (1분기보고서, 연결제무제표)'
 reprt_code='11012', fs_div='CFS' (반기보고서, 연결제무제표)'
 reprt_code='11014', fs_div='CFS' (3분기보고서, 연결제무제표)'
 reprt_code='11013', fs_div='CFS' (1분기보고서, 연결제무제표)'
-  ✅ 한전산업 검증 통과 PER 122.8 PBR 4.62 EPS 110 BPS 2927
-  · 130660 한전산업: EPS=110 BPS=2927 ROE=3.5 DPS=None 성장=7.4
+  ✅ 오이솔루션 검증 통과 PER None PBR 4.91 EPS -1926 BPS 6424
+  · 138080 오이솔루션: EPS=-1926 BPS=6424 ROE=-27.2 DPS=0.0 성장=79.2
 reprt_code='11011', fs_div='CFS' (사업보고서, 연결제무제표)'
 reprt_code='11011', fs_div='CFS' (사업보고서, 연결제무제표)'
 reprt_code='11011', fs_div='CFS' (사업보고서, 연결제무제표)'
@@ -722,8 +593,55 @@ reprt_code='11013', fs_div='CFS' (1분기보고서, 연결제무제표)'
 reprt_code='11012', fs_div='CFS' (반기보고서, 연결제무제표)'
 reprt_code='11014', fs_div='CFS' (3분기보고서, 연결제무제표)'
 reprt_code='11013', fs_div='CFS' (1분기보고서, 연결제무제표)'
-  ✅ 삼양홀딩스 검증 통과 PER None PBR 0.22 EPS -26259 BPS 253712
-  · 000070 삼양홀딩스: EPS=-26259 BPS=253712 ROE=-10.1 DPS=3500.0 성장=-5.8
+  ✅ 티이엠씨 검증 통과 PER 25.9 PBR 1.69 EPS 704 BPS 10782
+  · 425040 티이엠씨: EPS=704 BPS=10782 ROE=7.6 DPS=None 성장=-9.8
+reprt_code='11011', fs_div='CFS' (사업보고서, 연결제무제표)'
+{'status': '013', 'message': '조회된 데이타가 없습니다.'}
+
+reprt_code='11011', fs_div='OFS' (사업보고서, 별도(개별)제무제표)'
+{'status': '013', 'message': '조회된 데이타가 없습니다.'}
+
+reprt_code='11011', fs_div='CFS' (사업보고서, 연결제무제표)'
+{'status': '013', 'message': '조회된 데이타가 없습니다.'}
+
+reprt_code='11011', fs_div='OFS' (사업보고서, 별도(개별)제무제표)'
+{'status': '013', 'message': '조회된 데이타가 없습니다.'}
+
+reprt_code='11011', fs_div='CFS' (사업보고서, 연결제무제표)'
+{'status': '013', 'message': '조회된 데이타가 없습니다.'}
+
+reprt_code='11011', fs_div='OFS' (사업보고서, 별도(개별)제무제표)'
+{'status': '013', 'message': '조회된 데이타가 없습니다.'}
+
+reprt_code='11011', fs_div='CFS' (사업보고서, 연결제무제표)'
+{'status': '013', 'message': '조회된 데이타가 없습니다.'}
+
+reprt_code='11011', fs_div='OFS' (사업보고서, 별도(개별)제무제표)'
+{'status': '013', 'message': '조회된 데이타가 없습니다.'}
+
+reprt_code='11013', fs_div='CFS' (1분기보고서, 연결제무제표)'
+{'status': '013', 'message': '조회된 데이타가 없습니다.'}
+
+reprt_code='11013', fs_div='OFS' (1분기보고서, 별도(개별)제무제표)'
+{'status': '013', 'message': '조회된 데이타가 없습니다.'}
+
+reprt_code='11012', fs_div='CFS' (반기보고서, 연결제무제표)'
+{'status': '013', 'message': '조회된 데이타가 없습니다.'}
+
+reprt_code='11012', fs_div='OFS' (반기보고서, 별도(개별)제무제표)'
+{'status': '013', 'message': '조회된 데이타가 없습니다.'}
+
+reprt_code='11014', fs_div='CFS' (3분기보고서, 연결제무제표)'
+{'status': '013', 'message': '조회된 데이타가 없습니다.'}
+
+reprt_code='11014', fs_div='OFS' (3분기보고서, 별도(개별)제무제표)'
+{'status': '013', 'message': '조회된 데이타가 없습니다.'}
+
+reprt_code='11013', fs_div='CFS' (1분기보고서, 연결제무제표)'
+{'status': '013', 'message': '조회된 데이타가 없습니다.'}
+{'status': '013', 'message': '조회된 데이타가 없습니다.'}
+  ✅ 마키나락스 검증 통과 PER None PBR 27.12 EPS None BPS 815
+  · 477850 마키나락스: EPS=None BPS=815 ROE=None DPS=None 성장=None
 reprt_code='11011', fs_div='CFS' (사업보고서, 연결제무제표)'
 reprt_code='11011', fs_div='CFS' (사업보고서, 연결제무제표)'
 reprt_code='11011', fs_div='CFS' (사업보고서, 연결제무제표)'
@@ -732,8 +650,87 @@ reprt_code='11013', fs_div='CFS' (1분기보고서, 연결제무제표)'
 reprt_code='11012', fs_div='CFS' (반기보고서, 연결제무제표)'
 reprt_code='11014', fs_div='CFS' (3분기보고서, 연결제무제표)'
 reprt_code='11013', fs_div='CFS' (1분기보고서, 연결제무제표)'
-  ❌ 이수화학 중대오류 차단 → 해당 지표 숨김: EPS -135↔ref -94.0
-  · 005950 이수화학: EPS=None BPS=4425 ROE=-3.3 DPS=0.0 성장=-13.4
+  ✅ 툴젠 검증 통과 PER None PBR 7.0 EPS -4217 BPS 6140
+  · 199800 툴젠: EPS=-4217 BPS=6140 ROE=-68.6 DPS=None 성장=46.6
+reprt_code='11011', fs_div='CFS' (사업보고서, 연결제무제표)'
+{'status': '013', 'message': '조회된 데이타가 없습니다.'}
+
+reprt_code='11011', fs_div='OFS' (사업보고서, 별도(개별)제무제표)'
+reprt_code='11011', fs_div='CFS' (사업보고서, 연결제무제표)'
+{'status': '013', 'message': '조회된 데이타가 없습니다.'}
+
+reprt_code='11011', fs_div='OFS' (사업보고서, 별도(개별)제무제표)'
+reprt_code='11011', fs_div='CFS' (사업보고서, 연결제무제표)'
+{'status': '013', 'message': '조회된 데이타가 없습니다.'}
+
+reprt_code='11011', fs_div='OFS' (사업보고서, 별도(개별)제무제표)'
+reprt_code='11011', fs_div='CFS' (사업보고서, 연결제무제표)'
+{'status': '013', 'message': '조회된 데이타가 없습니다.'}
+
+reprt_code='11011', fs_div='OFS' (사업보고서, 별도(개별)제무제표)'
+{'status': '013', 'message': '조회된 데이타가 없습니다.'}
+
+reprt_code='11013', fs_div='CFS' (1분기보고서, 연결제무제표)'
+{'status': '013', 'message': '조회된 데이타가 없습니다.'}
+
+reprt_code='11013', fs_div='OFS' (1분기보고서, 별도(개별)제무제표)'
+reprt_code='11012', fs_div='CFS' (반기보고서, 연결제무제표)'
+{'status': '013', 'message': '조회된 데이타가 없습니다.'}
+
+reprt_code='11012', fs_div='OFS' (반기보고서, 별도(개별)제무제표)'
+reprt_code='11014', fs_div='CFS' (3분기보고서, 연결제무제표)'
+{'status': '013', 'message': '조회된 데이타가 없습니다.'}
+
+reprt_code='11014', fs_div='OFS' (3분기보고서, 별도(개별)제무제표)'
+reprt_code='11013', fs_div='CFS' (1분기보고서, 연결제무제표)'
+{'status': '013', 'message': '조회된 데이타가 없습니다.'}
+
+reprt_code='11013', fs_div='OFS' (1분기보고서, 별도(개별)제무제표)'
+  ✅ 엔젤로보틱스 검증 통과 PER None PBR 12.52 EPS -646 BPS 2016
+  · 455900 엔젤로보틱스: EPS=-646 BPS=2016 ROE=-28.6 DPS=0.0 성장=10.2
+reprt_code='11011', fs_div='CFS' (사업보고서, 연결제무제표)'
+{'status': '013', 'message': '조회된 데이타가 없습니다.'}
+
+reprt_code='11011', fs_div='OFS' (사업보고서, 별도(개별)제무제표)'
+reprt_code='11011', fs_div='CFS' (사업보고서, 연결제무제표)'
+{'status': '013', 'message': '조회된 데이타가 없습니다.'}
+
+reprt_code='11011', fs_div='OFS' (사업보고서, 별도(개별)제무제표)'
+{'status': '013', 'message': '조회된 데이타가 없습니다.'}
+
+reprt_code='11011', fs_div='CFS' (사업보고서, 연결제무제표)'
+{'status': '013', 'message': '조회된 데이타가 없습니다.'}
+
+reprt_code='11011', fs_div='OFS' (사업보고서, 별도(개별)제무제표)'
+{'status': '013', 'message': '조회된 데이타가 없습니다.'}
+
+reprt_code='11011', fs_div='CFS' (사업보고서, 연결제무제표)'
+{'status': '013', 'message': '조회된 데이타가 없습니다.'}
+
+reprt_code='11011', fs_div='OFS' (사업보고서, 별도(개별)제무제표)'
+{'status': '013', 'message': '조회된 데이타가 없습니다.'}
+
+reprt_code='11013', fs_div='CFS' (1분기보고서, 연결제무제표)'
+{'status': '013', 'message': '조회된 데이타가 없습니다.'}
+
+reprt_code='11013', fs_div='OFS' (1분기보고서, 별도(개별)제무제표)'
+{'status': '013', 'message': '조회된 데이타가 없습니다.'}
+
+reprt_code='11012', fs_div='CFS' (반기보고서, 연결제무제표)'
+{'status': '013', 'message': '조회된 데이타가 없습니다.'}
+
+reprt_code='11012', fs_div='OFS' (반기보고서, 별도(개별)제무제표)'
+reprt_code='11014', fs_div='CFS' (3분기보고서, 연결제무제표)'
+{'status': '013', 'message': '조회된 데이타가 없습니다.'}
+
+reprt_code='11014', fs_div='OFS' (3분기보고서, 별도(개별)제무제표)'
+reprt_code='11013', fs_div='CFS' (1분기보고서, 연결제무제표)'
+{'status': '013', 'message': '조회된 데이타가 없습니다.'}
+
+reprt_code='11013', fs_div='OFS' (1분기보고서, 별도(개별)제무제표)'
+{'status': '013', 'message': '조회된 데이타가 없습니다.'}
+  ✅ 이뮨온시아 검증 통과 PER None PBR 12.86 EPS None BPS 329
+  · 424870 이뮨온시아: EPS=None BPS=329 ROE=None DPS=None 성장=None
 reprt_code='11011', fs_div='CFS' (사업보고서, 연결제무제표)'
 reprt_code='11011', fs_div='CFS' (사업보고서, 연결제무제표)'
 reprt_code='11011', fs_div='CFS' (사업보고서, 연결제무제표)'
@@ -742,8 +739,809 @@ reprt_code='11013', fs_div='CFS' (1분기보고서, 연결제무제표)'
 reprt_code='11012', fs_div='CFS' (반기보고서, 연결제무제표)'
 reprt_code='11014', fs_div='CFS' (3분기보고서, 연결제무제표)'
 reprt_code='11013', fs_div='CFS' (1분기보고서, 연결제무제표)'
-  ✅ 뉴파워프라즈마 검증 통과 PER 23.8 PBR 1.36 EPS 423 BPS 7394
-  · 144960 뉴파워프라즈마: EPS=423 BPS=7394 ROE=6.7 DPS=50.0 성장=11.2
+  ✅ AP시스템 검증 통과 PER 10.0 PBR 1.02 EPS 2554 BPS 25260
+  · 265520 AP시스템: EPS=2554 BPS=25260 ROE=10.6 DPS=340.0 성장=-10.9
+  ✅ 삼양바이오팜 검증 통과 PER None PBR None EPS None BPS None
+  · 0120G0 삼양바이오팜: EPS=None BPS=None ROE=None DPS=None 성장=None
+reprt_code='11011', fs_div='CFS' (사업보고서, 연결제무제표)'
+reprt_code='11011', fs_div='CFS' (사업보고서, 연결제무제표)'
+reprt_code='11011', fs_div='CFS' (사업보고서, 연결제무제표)'
+reprt_code='11011', fs_div='CFS' (사업보고서, 연결제무제표)'
+reprt_code='11013', fs_div='CFS' (1분기보고서, 연결제무제표)'
+reprt_code='11012', fs_div='CFS' (반기보고서, 연결제무제표)'
+reprt_code='11014', fs_div='CFS' (3분기보고서, 연결제무제표)'
+reprt_code='11013', fs_div='CFS' (1분기보고서, 연결제무제표)'
+  ❌ 풀무원 중대오류 차단 → 해당 지표 숨김: EPS 281↔ref 691.0
+  · 017810 풀무원: EPS=None BPS=8559 ROE=3.4 DPS=102.0 성장=5.2
+reprt_code='11011', fs_div='CFS' (사업보고서, 연결제무제표)'
+{'status': '013', 'message': '조회된 데이타가 없습니다.'}
+
+reprt_code='11011', fs_div='OFS' (사업보고서, 별도(개별)제무제표)'
+reprt_code='11011', fs_div='CFS' (사업보고서, 연결제무제표)'
+{'status': '013', 'message': '조회된 데이타가 없습니다.'}
+
+reprt_code='11011', fs_div='OFS' (사업보고서, 별도(개별)제무제표)'
+reprt_code='11011', fs_div='CFS' (사업보고서, 연결제무제표)'
+{'status': '013', 'message': '조회된 데이타가 없습니다.'}
+
+reprt_code='11011', fs_div='OFS' (사업보고서, 별도(개별)제무제표)'
+{'status': '013', 'message': '조회된 데이타가 없습니다.'}
+
+reprt_code='11011', fs_div='CFS' (사업보고서, 연결제무제표)'
+{'status': '013', 'message': '조회된 데이타가 없습니다.'}
+
+reprt_code='11011', fs_div='OFS' (사업보고서, 별도(개별)제무제표)'
+{'status': '013', 'message': '조회된 데이타가 없습니다.'}
+
+reprt_code='11013', fs_div='CFS' (1분기보고서, 연결제무제표)'
+{'status': '013', 'message': '조회된 데이타가 없습니다.'}
+
+reprt_code='11013', fs_div='OFS' (1분기보고서, 별도(개별)제무제표)'
+reprt_code='11012', fs_div='CFS' (반기보고서, 연결제무제표)'
+{'status': '013', 'message': '조회된 데이타가 없습니다.'}
+
+reprt_code='11012', fs_div='OFS' (반기보고서, 별도(개별)제무제표)'
+reprt_code='11014', fs_div='CFS' (3분기보고서, 연결제무제표)'
+{'status': '013', 'message': '조회된 데이타가 없습니다.'}
+
+reprt_code='11014', fs_div='OFS' (3분기보고서, 별도(개별)제무제표)'
+reprt_code='11013', fs_div='CFS' (1분기보고서, 연결제무제표)'
+{'status': '013', 'message': '조회된 데이타가 없습니다.'}
+
+reprt_code='11013', fs_div='OFS' (1분기보고서, 별도(개별)제무제표)'
+  ❌ 삼양엔씨켐 중대오류 차단 → 해당 지표 숨김: EPS 1277↔ref 769.0 / BPS 11572↔ref 5705.0
+  · 482630 삼양엔씨켐: EPS=None BPS=None ROE=14.5 DPS=0.0 성장=13.5
+reprt_code='11011', fs_div='CFS' (사업보고서, 연결제무제표)'
+reprt_code='11011', fs_div='CFS' (사업보고서, 연결제무제표)'
+reprt_code='11011', fs_div='CFS' (사업보고서, 연결제무제표)'
+reprt_code='11011', fs_div='CFS' (사업보고서, 연결제무제표)'
+reprt_code='11013', fs_div='CFS' (1분기보고서, 연결제무제표)'
+reprt_code='11012', fs_div='CFS' (반기보고서, 연결제무제표)'
+reprt_code='11014', fs_div='CFS' (3분기보고서, 연결제무제표)'
+reprt_code='11013', fs_div='CFS' (1분기보고서, 연결제무제표)'
+  ✅ 우진 검증 통과 PER 28.4 PBR 1.92 EPS 665 BPS 9837
+  · 105840 우진: EPS=665 BPS=9837 ROE=7.0 DPS=300.0 성장=6.9
+reprt_code='11011', fs_div='CFS' (사업보고서, 연결제무제표)'
+reprt_code='11011', fs_div='CFS' (사업보고서, 연결제무제표)'
+reprt_code='11011', fs_div='CFS' (사업보고서, 연결제무제표)'
+reprt_code='11011', fs_div='CFS' (사업보고서, 연결제무제표)'
+reprt_code='11013', fs_div='CFS' (1분기보고서, 연결제무제표)'
+reprt_code='11012', fs_div='CFS' (반기보고서, 연결제무제표)'
+reprt_code='11014', fs_div='CFS' (3분기보고서, 연결제무제표)'
+reprt_code='11013', fs_div='CFS' (1분기보고서, 연결제무제표)'
+  ✅ 우주일렉트로 검증 통과 PER 16.9 PBR 1.23 EPS 2433 BPS 33592
+  · 065680 우주일렉트로: EPS=2433 BPS=33592 ROE=16.4 DPS=350.0 성장=5.8
+reprt_code='11011', fs_div='CFS' (사업보고서, 연결제무제표)'
+{'status': '013', 'message': '조회된 데이타가 없습니다.'}
+
+reprt_code='11011', fs_div='OFS' (사업보고서, 별도(개별)제무제표)'
+reprt_code='11011', fs_div='CFS' (사업보고서, 연결제무제표)'
+{'status': '013', 'message': '조회된 데이타가 없습니다.'}
+
+reprt_code='11011', fs_div='OFS' (사업보고서, 별도(개별)제무제표)'
+reprt_code='11011', fs_div='CFS' (사업보고서, 연결제무제표)'
+{'status': '013', 'message': '조회된 데이타가 없습니다.'}
+
+reprt_code='11011', fs_div='OFS' (사업보고서, 별도(개별)제무제표)'
+reprt_code='11011', fs_div='CFS' (사업보고서, 연결제무제표)'
+{'status': '013', 'message': '조회된 데이타가 없습니다.'}
+
+reprt_code='11011', fs_div='OFS' (사업보고서, 별도(개별)제무제표)'
+reprt_code='11013', fs_div='CFS' (1분기보고서, 연결제무제표)'
+{'status': '013', 'message': '조회된 데이타가 없습니다.'}
+
+reprt_code='11013', fs_div='OFS' (1분기보고서, 별도(개별)제무제표)'
+{'status': '013', 'message': '조회된 데이타가 없습니다.'}
+
+reprt_code='11012', fs_div='CFS' (반기보고서, 연결제무제표)'
+{'status': '013', 'message': '조회된 데이타가 없습니다.'}
+
+reprt_code='11012', fs_div='OFS' (반기보고서, 별도(개별)제무제표)'
+reprt_code='11014', fs_div='CFS' (3분기보고서, 연결제무제표)'
+{'status': '013', 'message': '조회된 데이타가 없습니다.'}
+
+reprt_code='11014', fs_div='OFS' (3분기보고서, 별도(개별)제무제표)'
+{'status': '013', 'message': '조회된 데이타가 없습니다.'}
+
+reprt_code='11013', fs_div='CFS' (1분기보고서, 연결제무제표)'
+{'status': '013', 'message': '조회된 데이타가 없습니다.'}
+
+reprt_code='11013', fs_div='OFS' (1분기보고서, 별도(개별)제무제표)'
+{'status': '013', 'message': '조회된 데이타가 없습니다.'}
+
+{'status': '013', 'message': '조회된 데이타가 없습니다.'}
+
+{'status': '013', 'message': '조회된 데이타가 없습니다.'}
+
+{'status': '013', 'message': '조회된 데이타가 없습니다.'}
+
+{'status': '013', 'message': '조회된 데이타가 없습니다.'}
+  ✅ 코람코라이프인프라리츠 검증 통과 PER None PBR None EPS None BPS None
+  · 357120 코람코라이프인프라리츠: EPS=None BPS=None ROE=None DPS=163.0 성장=-20.5
+reprt_code='11011', fs_div='CFS' (사업보고서, 연결제무제표)'
+reprt_code='11011', fs_div='CFS' (사업보고서, 연결제무제표)'
+reprt_code='11011', fs_div='CFS' (사업보고서, 연결제무제표)'
+reprt_code='11011', fs_div='CFS' (사업보고서, 연결제무제표)'
+reprt_code='11013', fs_div='CFS' (1분기보고서, 연결제무제표)'
+reprt_code='11012', fs_div='CFS' (반기보고서, 연결제무제표)'
+reprt_code='11014', fs_div='CFS' (3분기보고서, 연결제무제표)'
+reprt_code='11013', fs_div='CFS' (1분기보고서, 연결제무제표)'
+  ✅ 네오티스 검증 통과 PER 65.1 PBR 6.16 EPS 423 BPS 4475
+  · 085910 네오티스: EPS=423 BPS=4475 ROE=9.8 DPS=200.0 성장=26.5
+reprt_code='11011', fs_div='CFS' (사업보고서, 연결제무제표)'
+{'status': '013', 'message': '조회된 데이타가 없습니다.'}
+
+reprt_code='11011', fs_div='OFS' (사업보고서, 별도(개별)제무제표)'
+reprt_code='11011', fs_div='CFS' (사업보고서, 연결제무제표)'
+{'status': '013', 'message': '조회된 데이타가 없습니다.'}
+
+reprt_code='11011', fs_div='OFS' (사업보고서, 별도(개별)제무제표)'
+reprt_code='11011', fs_div='CFS' (사업보고서, 연결제무제표)'
+reprt_code='11011', fs_div='CFS' (사업보고서, 연결제무제표)'
+reprt_code='11013', fs_div='CFS' (1분기보고서, 연결제무제표)'
+{'status': '013', 'message': '조회된 데이타가 없습니다.'}
+
+reprt_code='11013', fs_div='OFS' (1분기보고서, 별도(개별)제무제표)'
+reprt_code='11012', fs_div='CFS' (반기보고서, 연결제무제표)'
+{'status': '013', 'message': '조회된 데이타가 없습니다.'}
+
+reprt_code='11012', fs_div='OFS' (반기보고서, 별도(개별)제무제표)'
+reprt_code='11014', fs_div='CFS' (3분기보고서, 연결제무제표)'
+{'status': '013', 'message': '조회된 데이타가 없습니다.'}
+
+reprt_code='11014', fs_div='OFS' (3분기보고서, 별도(개별)제무제표)'
+reprt_code='11013', fs_div='CFS' (1분기보고서, 연결제무제표)'
+{'status': '013', 'message': '조회된 데이타가 없습니다.'}
+
+reprt_code='11013', fs_div='OFS' (1분기보고서, 별도(개별)제무제표)'
+  ✅ 미래반도체 검증 통과 PER 11.4 PBR 2.84 EPS 2299 BPS 9258
+  · 254490 미래반도체: EPS=2299 BPS=9258 ROE=29.7 DPS=0.0 성장=30.3
+reprt_code='11011', fs_div='CFS' (사업보고서, 연결제무제표)'
+reprt_code='11011', fs_div='CFS' (사업보고서, 연결제무제표)'
+reprt_code='11011', fs_div='CFS' (사업보고서, 연결제무제표)'
+reprt_code='11011', fs_div='CFS' (사업보고서, 연결제무제표)'
+reprt_code='11013', fs_div='CFS' (1분기보고서, 연결제무제표)'
+reprt_code='11012', fs_div='CFS' (반기보고서, 연결제무제표)'
+reprt_code='11014', fs_div='CFS' (3분기보고서, 연결제무제표)'
+reprt_code='11013', fs_div='CFS' (1분기보고서, 연결제무제표)'
+  ✅ 지엔씨에너지 검증 통과 PER 9.4 PBR 1.62 EPS 2454 BPS 14238
+  · 119850 지엔씨에너지: EPS=2454 BPS=14238 ROE=19.7 DPS=None 성장=16.0
+reprt_code='11011', fs_div='CFS' (사업보고서, 연결제무제표)'
+reprt_code='11011', fs_div='CFS' (사업보고서, 연결제무제표)'
+reprt_code='11011', fs_div='CFS' (사업보고서, 연결제무제표)'
+reprt_code='11011', fs_div='CFS' (사업보고서, 연결제무제표)'
+reprt_code='11013', fs_div='CFS' (1분기보고서, 연결제무제표)'
+reprt_code='11012', fs_div='CFS' (반기보고서, 연결제무제표)'
+reprt_code='11014', fs_div='CFS' (3분기보고서, 연결제무제표)'
+reprt_code='11013', fs_div='CFS' (1분기보고서, 연결제무제표)'
+  ✅ 엠씨넥스 검증 통과 PER 7.6 PBR 0.89 EPS 2839 BPS 24289
+  · 097520 엠씨넥스: EPS=2839 BPS=24289 ROE=12.1 DPS=800.0 성장=21.0
+reprt_code='11011', fs_div='CFS' (사업보고서, 연결제무제표)'
+reprt_code='11011', fs_div='CFS' (사업보고서, 연결제무제표)'
+reprt_code='11011', fs_div='CFS' (사업보고서, 연결제무제표)'
+reprt_code='11011', fs_div='CFS' (사업보고서, 연결제무제표)'
+reprt_code='11013', fs_div='CFS' (1분기보고서, 연결제무제표)'
+reprt_code='11012', fs_div='CFS' (반기보고서, 연결제무제표)'
+reprt_code='11014', fs_div='CFS' (3분기보고서, 연결제무제표)'
+reprt_code='11013', fs_div='CFS' (1분기보고서, 연결제무제표)'
+  ✅ 화신 검증 통과 PER 5.7 PBR 0.62 EPS 1897 BPS 17417
+  · 010690 화신: EPS=1897 BPS=17417 ROE=11.5 DPS=170.0 성장=14.6
+reprt_code='11011', fs_div='CFS' (사업보고서, 연결제무제표)'
+{'status': '013', 'message': '조회된 데이타가 없습니다.'}
+
+reprt_code='11011', fs_div='OFS' (사업보고서, 별도(개별)제무제표)'
+reprt_code='11011', fs_div='CFS' (사업보고서, 연결제무제표)'
+{'status': '013', 'message': '조회된 데이타가 없습니다.'}
+
+reprt_code='11011', fs_div='OFS' (사업보고서, 별도(개별)제무제표)'
+{'status': '013', 'message': '조회된 데이타가 없습니다.'}
+
+reprt_code='11011', fs_div='CFS' (사업보고서, 연결제무제표)'
+{'status': '013', 'message': '조회된 데이타가 없습니다.'}
+
+reprt_code='11011', fs_div='OFS' (사업보고서, 별도(개별)제무제표)'
+{'status': '013', 'message': '조회된 데이타가 없습니다.'}
+
+reprt_code='11011', fs_div='CFS' (사업보고서, 연결제무제표)'
+{'status': '013', 'message': '조회된 데이타가 없습니다.'}
+
+reprt_code='11011', fs_div='OFS' (사업보고서, 별도(개별)제무제표)'
+{'status': '013', 'message': '조회된 데이타가 없습니다.'}
+
+reprt_code='11013', fs_div='CFS' (1분기보고서, 연결제무제표)'
+{'status': '013', 'message': '조회된 데이타가 없습니다.'}
+
+reprt_code='11013', fs_div='OFS' (1분기보고서, 별도(개별)제무제표)'
+{'status': '013', 'message': '조회된 데이타가 없습니다.'}
+
+reprt_code='11012', fs_div='CFS' (반기보고서, 연결제무제표)'
+{'status': '013', 'message': '조회된 데이타가 없습니다.'}
+
+reprt_code='11012', fs_div='OFS' (반기보고서, 별도(개별)제무제표)'
+reprt_code='11014', fs_div='CFS' (3분기보고서, 연결제무제표)'
+{'status': '013', 'message': '조회된 데이타가 없습니다.'}
+
+reprt_code='11014', fs_div='OFS' (3분기보고서, 별도(개별)제무제표)'
+reprt_code='11013', fs_div='CFS' (1분기보고서, 연결제무제표)'
+{'status': '013', 'message': '조회된 데이타가 없습니다.'}
+
+reprt_code='11013', fs_div='OFS' (1분기보고서, 별도(개별)제무제표)'
+{'status': '013', 'message': '조회된 데이타가 없습니다.'}
+  ✅ 프로티나 검증 통과 PER None PBR 13.45 EPS None BPS 2535
+  · 468530 프로티나: EPS=None BPS=2535 ROE=None DPS=None 성장=None
+reprt_code='11011', fs_div='CFS' (사업보고서, 연결제무제표)'
+reprt_code='11011', fs_div='CFS' (사업보고서, 연결제무제표)'
+reprt_code='11011', fs_div='CFS' (사업보고서, 연결제무제표)'
+reprt_code='11011', fs_div='CFS' (사업보고서, 연결제무제표)'
+reprt_code='11013', fs_div='CFS' (1분기보고서, 연결제무제표)'
+reprt_code='11012', fs_div='CFS' (반기보고서, 연결제무제표)'
+reprt_code='11014', fs_div='CFS' (3분기보고서, 연결제무제표)'
+reprt_code='11013', fs_div='CFS' (1분기보고서, 연결제무제표)'
+  ✅ KCC글라스 검증 통과 PER None PBR 0.28 EPS -4987 BPS 85204
+  · 344820 KCC글라스: EPS=-4987 BPS=85204 ROE=-5.6 DPS=None 성장=-0.1
+reprt_code='11011', fs_div='CFS' (사업보고서, 연결제무제표)'
+{'status': '013', 'message': '조회된 데이타가 없습니다.'}
+
+reprt_code='11011', fs_div='OFS' (사업보고서, 별도(개별)제무제표)'
+reprt_code='11011', fs_div='CFS' (사업보고서, 연결제무제표)'
+reprt_code='11011', fs_div='CFS' (사업보고서, 연결제무제표)'
+reprt_code='11011', fs_div='CFS' (사업보고서, 연결제무제표)'
+reprt_code='11013', fs_div='CFS' (1분기보고서, 연결제무제표)'
+{'status': '013', 'message': '조회된 데이타가 없습니다.'}
+
+reprt_code='11013', fs_div='OFS' (1분기보고서, 별도(개별)제무제표)'
+reprt_code='11012', fs_div='CFS' (반기보고서, 연결제무제표)'
+{'status': '013', 'message': '조회된 데이타가 없습니다.'}
+
+reprt_code='11012', fs_div='OFS' (반기보고서, 별도(개별)제무제표)'
+reprt_code='11014', fs_div='CFS' (3분기보고서, 연결제무제표)'
+{'status': '013', 'message': '조회된 데이타가 없습니다.'}
+
+reprt_code='11014', fs_div='OFS' (3분기보고서, 별도(개별)제무제표)'
+reprt_code='11013', fs_div='CFS' (1분기보고서, 연결제무제표)'
+{'status': '013', 'message': '조회된 데이타가 없습니다.'}
+
+reprt_code='11013', fs_div='OFS' (1분기보고서, 별도(개별)제무제표)'
+  ❌ 페니트리움바이오 중대오류 차단 → 해당 지표 숨김: BPS 688↔ref 582.0
+  · 187660 페니트리움바이오: EPS=-268 BPS=None ROE=-74.6 DPS=0.0 성장=-4.8
+reprt_code='11011', fs_div='CFS' (사업보고서, 연결제무제표)'
+reprt_code='11011', fs_div='CFS' (사업보고서, 연결제무제표)'
+reprt_code='11011', fs_div='CFS' (사업보고서, 연결제무제표)'
+reprt_code='11011', fs_div='CFS' (사업보고서, 연결제무제표)'
+reprt_code='11013', fs_div='CFS' (1분기보고서, 연결제무제표)'
+reprt_code='11012', fs_div='CFS' (반기보고서, 연결제무제표)'
+reprt_code='11014', fs_div='CFS' (3분기보고서, 연결제무제표)'
+reprt_code='11013', fs_div='CFS' (1분기보고서, 연결제무제표)'
+  ✅ 티로보틱스 검증 통과 PER None PBR 6.48 EPS -1997 BPS 2570
+  · 117730 티로보틱스: EPS=-1997 BPS=2570 ROE=-83.7 DPS=None 성장=-27.8
+reprt_code='11011', fs_div='CFS' (사업보고서, 연결제무제표)'
+reprt_code='11011', fs_div='CFS' (사업보고서, 연결제무제표)'
+reprt_code='11011', fs_div='CFS' (사업보고서, 연결제무제표)'
+reprt_code='11011', fs_div='CFS' (사업보고서, 연결제무제표)'
+reprt_code='11013', fs_div='CFS' (1분기보고서, 연결제무제표)'
+reprt_code='11012', fs_div='CFS' (반기보고서, 연결제무제표)'
+reprt_code='11014', fs_div='CFS' (3분기보고서, 연결제무제표)'
+reprt_code='11013', fs_div='CFS' (1분기보고서, 연결제무제표)'
+  ✅ HLB생명과학 검증 통과 PER None PBR 1.28 EPS -413 BPS 2408
+  · 067630 HLB생명과학: EPS=-413 BPS=2408 ROE=-15.9 DPS=None 성장=-55.3
+reprt_code='11011', fs_div='CFS' (사업보고서, 연결제무제표)'
+reprt_code='11011', fs_div='CFS' (사업보고서, 연결제무제표)'
+reprt_code='11011', fs_div='CFS' (사업보고서, 연결제무제표)'
+reprt_code='11011', fs_div='CFS' (사업보고서, 연결제무제표)'
+reprt_code='11013', fs_div='CFS' (1분기보고서, 연결제무제표)'
+reprt_code='11012', fs_div='CFS' (반기보고서, 연결제무제표)'
+reprt_code='11014', fs_div='CFS' (3분기보고서, 연결제무제표)'
+reprt_code='11013', fs_div='CFS' (1분기보고서, 연결제무제표)'
+  ✅ 엑시콘 검증 통과 PER 31.5 PBR 1.9 EPS 912 BPS 15093
+  · 092870 엑시콘: EPS=912 BPS=15093 ROE=6.2 DPS=100.0 성장=108.9
+reprt_code='11011', fs_div='CFS' (사업보고서, 연결제무제표)'
+reprt_code='11011', fs_div='CFS' (사업보고서, 연결제무제표)'
+reprt_code='11011', fs_div='CFS' (사업보고서, 연결제무제표)'
+reprt_code='11011', fs_div='CFS' (사업보고서, 연결제무제표)'
+reprt_code='11013', fs_div='CFS' (1분기보고서, 연결제무제표)'
+reprt_code='11012', fs_div='CFS' (반기보고서, 연결제무제표)'
+reprt_code='11014', fs_div='CFS' (3분기보고서, 연결제무제표)'
+reprt_code='11013', fs_div='CFS' (1분기보고서, 연결제무제표)'
+  ✅ 아세아시멘트 검증 통과 PER 17.8 PBR 0.34 EPS 576 BPS 30216
+  · 183190 아세아시멘트: EPS=576 BPS=30216 ROE=1.9 DPS=250.0 성장=-7.9
+reprt_code='11011', fs_div='CFS' (사업보고서, 연결제무제표)'
+{'status': '013', 'message': '조회된 데이타가 없습니다.'}
+
+reprt_code='11011', fs_div='OFS' (사업보고서, 별도(개별)제무제표)'
+reprt_code='11011', fs_div='CFS' (사업보고서, 연결제무제표)'
+{'status': '013', 'message': '조회된 데이타가 없습니다.'}
+
+reprt_code='11011', fs_div='OFS' (사업보고서, 별도(개별)제무제표)'
+reprt_code='11011', fs_div='CFS' (사업보고서, 연결제무제표)'
+{'status': '013', 'message': '조회된 데이타가 없습니다.'}
+
+reprt_code='11011', fs_div='OFS' (사업보고서, 별도(개별)제무제표)'
+{'status': '013', 'message': '조회된 데이타가 없습니다.'}
+
+reprt_code='11011', fs_div='CFS' (사업보고서, 연결제무제표)'
+{'status': '013', 'message': '조회된 데이타가 없습니다.'}
+
+reprt_code='11011', fs_div='OFS' (사업보고서, 별도(개별)제무제표)'
+{'status': '013', 'message': '조회된 데이타가 없습니다.'}
+
+reprt_code='11013', fs_div='CFS' (1분기보고서, 연결제무제표)'
+{'status': '013', 'message': '조회된 데이타가 없습니다.'}
+
+reprt_code='11013', fs_div='OFS' (1분기보고서, 별도(개별)제무제표)'
+reprt_code='11012', fs_div='CFS' (반기보고서, 연결제무제표)'
+{'status': '013', 'message': '조회된 데이타가 없습니다.'}
+
+reprt_code='11012', fs_div='OFS' (반기보고서, 별도(개별)제무제표)'
+reprt_code='11014', fs_div='CFS' (3분기보고서, 연결제무제표)'
+{'status': '013', 'message': '조회된 데이타가 없습니다.'}
+
+reprt_code='11014', fs_div='OFS' (3분기보고서, 별도(개별)제무제표)'
+reprt_code='11013', fs_div='CFS' (1분기보고서, 연결제무제표)'
+{'status': '013', 'message': '조회된 데이타가 없습니다.'}
+
+reprt_code='11013', fs_div='OFS' (1분기보고서, 별도(개별)제무제표)'
+  ✅ 인투셀 검증 통과 PER None PBR 16.68 EPS -757 BPS 1493
+  · 287840 인투셀: EPS=-757 BPS=1493 ROE=-89.3 DPS=None 성장=-20.9
+reprt_code='11011', fs_div='CFS' (사업보고서, 연결제무제표)'
+reprt_code='11011', fs_div='CFS' (사업보고서, 연결제무제표)'
+reprt_code='11011', fs_div='CFS' (사업보고서, 연결제무제표)'
+reprt_code='11011', fs_div='CFS' (사업보고서, 연결제무제표)'
+reprt_code='11013', fs_div='CFS' (1분기보고서, 연결제무제표)'
+reprt_code='11012', fs_div='CFS' (반기보고서, 연결제무제표)'
+reprt_code='11014', fs_div='CFS' (3분기보고서, 연결제무제표)'
+reprt_code='11013', fs_div='CFS' (1분기보고서, 연결제무제표)'
+  ✅ 제우스 검증 통과 PER None PBR 1.12 EPS -366 BPS 10741
+  · 079370 제우스: EPS=-366 BPS=10741 ROE=-2.9 DPS=None 성장=-21.9
+reprt_code='11011', fs_div='CFS' (사업보고서, 연결제무제표)'
+reprt_code='11011', fs_div='CFS' (사업보고서, 연결제무제표)'
+reprt_code='11011', fs_div='CFS' (사업보고서, 연결제무제표)'
+reprt_code='11011', fs_div='CFS' (사업보고서, 연결제무제표)'
+reprt_code='11013', fs_div='CFS' (1분기보고서, 연결제무제표)'
+reprt_code='11012', fs_div='CFS' (반기보고서, 연결제무제표)'
+reprt_code='11014', fs_div='CFS' (3분기보고서, 연결제무제표)'
+reprt_code='11013', fs_div='CFS' (1분기보고서, 연결제무제표)'
+  ❌ 빛과전자 중대오류 차단 → 해당 지표 숨김: EPS -200↔ref -340.0
+  · 069540 빛과전자: EPS=None BPS=787 ROE=-28.6 DPS=None 성장=75.2
+reprt_code='11011', fs_div='CFS' (사업보고서, 연결제무제표)'
+reprt_code='11011', fs_div='CFS' (사업보고서, 연결제무제표)'
+reprt_code='11011', fs_div='CFS' (사업보고서, 연결제무제표)'
+reprt_code='11011', fs_div='CFS' (사업보고서, 연결제무제표)'
+reprt_code='11013', fs_div='CFS' (1분기보고서, 연결제무제표)'
+reprt_code='11012', fs_div='CFS' (반기보고서, 연결제무제표)'
+reprt_code='11014', fs_div='CFS' (3분기보고서, 연결제무제표)'
+reprt_code='11013', fs_div='CFS' (1분기보고서, 연결제무제표)'
+  ❌ 웹젠 중대오류 차단 → 해당 지표 숨김: EPS 1084↔ref 912.0
+  · 069080 웹젠: EPS=None BPS=23167 ROE=4.7 DPS=None 성장=-18.8
+reprt_code='11011', fs_div='CFS' (사업보고서, 연결제무제표)'
+reprt_code='11011', fs_div='CFS' (사업보고서, 연결제무제표)'
+reprt_code='11011', fs_div='CFS' (사업보고서, 연결제무제표)'
+reprt_code='11011', fs_div='CFS' (사업보고서, 연결제무제표)'
+reprt_code='11013', fs_div='CFS' (1분기보고서, 연결제무제표)'
+reprt_code='11012', fs_div='CFS' (반기보고서, 연결제무제표)'
+reprt_code='11014', fs_div='CFS' (3분기보고서, 연결제무제표)'
+reprt_code='11013', fs_div='CFS' (1분기보고서, 연결제무제표)'
+  ✅ PS일렉트로닉스 검증 통과 PER 12.2 PBR 2.53 EPS 649 BPS 3124
+  · 332570 PS일렉트로닉스: EPS=649 BPS=3124 ROE=22.3 DPS=None 성장=2.7
+reprt_code='11011', fs_div='CFS' (사업보고서, 연결제무제표)'
+reprt_code='11011', fs_div='CFS' (사업보고서, 연결제무제표)'
+reprt_code='11011', fs_div='CFS' (사업보고서, 연결제무제표)'
+reprt_code='11011', fs_div='CFS' (사업보고서, 연결제무제표)'
+{'status': '013', 'message': '조회된 데이타가 없습니다.'}
+
+reprt_code='11011', fs_div='OFS' (사업보고서, 별도(개별)제무제표)'
+{'status': '013', 'message': '조회된 데이타가 없습니다.'}
+
+reprt_code='11013', fs_div='CFS' (1분기보고서, 연결제무제표)'
+reprt_code='11012', fs_div='CFS' (반기보고서, 연결제무제표)'
+reprt_code='11014', fs_div='CFS' (3분기보고서, 연결제무제표)'
+reprt_code='11013', fs_div='CFS' (1분기보고서, 연결제무제표)'
+  ✅ 넥스틸 검증 통과 PER 19.7 PBR 0.79 EPS 722 BPS 17991
+  · 092790 넥스틸: EPS=722 BPS=17991 ROE=4.0 DPS=1155.0 성장=-0.2
+reprt_code='11011', fs_div='CFS' (사업보고서, 연결제무제표)'
+reprt_code='11011', fs_div='CFS' (사업보고서, 연결제무제표)'
+reprt_code='11011', fs_div='CFS' (사업보고서, 연결제무제표)'
+reprt_code='11011', fs_div='CFS' (사업보고서, 연결제무제표)'
+reprt_code='11013', fs_div='CFS' (1분기보고서, 연결제무제표)'
+reprt_code='11012', fs_div='CFS' (반기보고서, 연결제무제표)'
+reprt_code='11014', fs_div='CFS' (3분기보고서, 연결제무제표)'
+reprt_code='11013', fs_div='CFS' (1분기보고서, 연결제무제표)'
+  ❌ 트리니티항공 중대오류 차단 → 해당 지표 숨김: EPS -1278↔ref -1074.0 / BPS 334↔ref 261.0
+  · 091810 트리니티항공: EPS=None BPS=None ROE=-747.4 DPS=0.0 성장=17.0
+reprt_code='11011', fs_div='CFS' (사업보고서, 연결제무제표)'
+reprt_code='11011', fs_div='CFS' (사업보고서, 연결제무제표)'
+reprt_code='11011', fs_div='CFS' (사업보고서, 연결제무제표)'
+reprt_code='11011', fs_div='CFS' (사업보고서, 연결제무제표)'
+{'status': '013', 'message': '조회된 데이타가 없습니다.'}
+
+reprt_code='11011', fs_div='OFS' (사업보고서, 별도(개별)제무제표)'
+{'status': '013', 'message': '조회된 데이타가 없습니다.'}
+
+reprt_code='11013', fs_div='CFS' (1분기보고서, 연결제무제표)'
+reprt_code='11012', fs_div='CFS' (반기보고서, 연결제무제표)'
+reprt_code='11014', fs_div='CFS' (3분기보고서, 연결제무제표)'
+reprt_code='11013', fs_div='CFS' (1분기보고서, 연결제무제표)'
+  ✅ LS증권 검증 통과 PER 10.1 PBR 0.47 EPS 657 BPS 14097
+  · 078020 LS증권: EPS=657 BPS=14097 ROE=4.7 DPS=500.0 성장=38.8
+reprt_code='11011', fs_div='CFS' (사업보고서, 연결제무제표)'
+reprt_code='11011', fs_div='CFS' (사업보고서, 연결제무제표)'
+reprt_code='11011', fs_div='CFS' (사업보고서, 연결제무제표)'
+reprt_code='11011', fs_div='CFS' (사업보고서, 연결제무제표)'
+reprt_code='11013', fs_div='CFS' (1분기보고서, 연결제무제표)'
+reprt_code='11012', fs_div='CFS' (반기보고서, 연결제무제표)'
+reprt_code='11014', fs_div='CFS' (3분기보고서, 연결제무제표)'
+reprt_code='11013', fs_div='CFS' (1분기보고서, 연결제무제표)'
+  ❌ 케이씨 중대오류 차단 → 해당 지표 숨김: EPS 3999↔ref 3318.0
+  · 029460 케이씨: EPS=None BPS=85465 ROE=5.1 DPS=430.0 성장=8.0
+reprt_code='11011', fs_div='CFS' (사업보고서, 연결제무제표)'
+reprt_code='11011', fs_div='CFS' (사업보고서, 연결제무제표)'
+reprt_code='11011', fs_div='CFS' (사업보고서, 연결제무제표)'
+reprt_code='11011', fs_div='CFS' (사업보고서, 연결제무제표)'
+reprt_code='11013', fs_div='CFS' (1분기보고서, 연결제무제표)'
+reprt_code='11012', fs_div='CFS' (반기보고서, 연결제무제표)'
+reprt_code='11014', fs_div='CFS' (3분기보고서, 연결제무제표)'
+reprt_code='11013', fs_div='CFS' (1분기보고서, 연결제무제표)'
+  ✅ 에치에프알 검증 통과 PER None PBR 2.52 EPS -665 BPS 10933
+  · 230240 에치에프알: EPS=-665 BPS=10933 ROE=-5.6 DPS=0.0 성장=-9.6
+reprt_code='11011', fs_div='CFS' (사업보고서, 연결제무제표)'
+reprt_code='11011', fs_div='CFS' (사업보고서, 연결제무제표)'
+reprt_code='11011', fs_div='CFS' (사업보고서, 연결제무제표)'
+reprt_code='11011', fs_div='CFS' (사업보고서, 연결제무제표)'
+reprt_code='11013', fs_div='CFS' (1분기보고서, 연결제무제표)'
+reprt_code='11012', fs_div='CFS' (반기보고서, 연결제무제표)'
+reprt_code='11014', fs_div='CFS' (3분기보고서, 연결제무제표)'
+reprt_code='11013', fs_div='CFS' (1분기보고서, 연결제무제표)'
+  ✅ 유니셈 검증 통과 PER 33.9 PBR 1.43 EPS 352 BPS 8381
+  · 036200 유니셈: EPS=352 BPS=8381 ROE=4.4 DPS=80.0 성장=25.3
+reprt_code='11011', fs_div='CFS' (사업보고서, 연결제무제표)'
+reprt_code='11011', fs_div='CFS' (사업보고서, 연결제무제표)'
+reprt_code='11011', fs_div='CFS' (사업보고서, 연결제무제표)'
+reprt_code='11011', fs_div='CFS' (사업보고서, 연결제무제표)'
+reprt_code='11013', fs_div='CFS' (1분기보고서, 연결제무제표)'
+reprt_code='11012', fs_div='CFS' (반기보고서, 연결제무제표)'
+reprt_code='11014', fs_div='CFS' (3분기보고서, 연결제무제표)'
+reprt_code='11013', fs_div='CFS' (1분기보고서, 연결제무제표)'
+  ✅ 일진홀딩스 검증 통과 PER 9.0 PBR 0.61 EPS 820 BPS 12039
+  · 015860 일진홀딩스: EPS=820 BPS=12039 ROE=7.9 DPS=None 성장=26.8
+reprt_code='11011', fs_div='CFS' (사업보고서, 연결제무제표)'
+reprt_code='11011', fs_div='CFS' (사업보고서, 연결제무제표)'
+reprt_code='11011', fs_div='CFS' (사업보고서, 연결제무제표)'
+reprt_code='11011', fs_div='CFS' (사업보고서, 연결제무제표)'
+reprt_code='11013', fs_div='CFS' (1분기보고서, 연결제무제표)'
+reprt_code='11012', fs_div='CFS' (반기보고서, 연결제무제표)'
+reprt_code='11014', fs_div='CFS' (3분기보고서, 연결제무제표)'
+reprt_code='11013', fs_div='CFS' (1분기보고서, 연결제무제표)'
+  ✅ 에이스침대 검증 통과 PER 5.6 PBR 0.47 EPS 5824 BPS 70121
+  · 003800 에이스침대: EPS=5824 BPS=70121 ROE=8.5 DPS=1450.0 성장=-2.7
+reprt_code='11011', fs_div='CFS' (사업보고서, 연결제무제표)'
+reprt_code='11011', fs_div='CFS' (사업보고서, 연결제무제표)'
+{'status': '013', 'message': '조회된 데이타가 없습니다.'}
+
+reprt_code='11011', fs_div='OFS' (사업보고서, 별도(개별)제무제표)'
+{'status': '013', 'message': '조회된 데이타가 없습니다.'}
+
+reprt_code='11011', fs_div='CFS' (사업보고서, 연결제무제표)'
+{'status': '013', 'message': '조회된 데이타가 없습니다.'}
+
+reprt_code='11011', fs_div='OFS' (사업보고서, 별도(개별)제무제표)'
+{'status': '013', 'message': '조회된 데이타가 없습니다.'}
+
+reprt_code='11011', fs_div='CFS' (사업보고서, 연결제무제표)'
+{'status': '013', 'message': '조회된 데이타가 없습니다.'}
+
+reprt_code='11011', fs_div='OFS' (사업보고서, 별도(개별)제무제표)'
+{'status': '013', 'message': '조회된 데이타가 없습니다.'}
+
+reprt_code='11013', fs_div='CFS' (1분기보고서, 연결제무제표)'
+{'status': '013', 'message': '조회된 데이타가 없습니다.'}
+
+reprt_code='11013', fs_div='OFS' (1분기보고서, 별도(개별)제무제표)'
+{'status': '013', 'message': '조회된 데이타가 없습니다.'}
+
+reprt_code='11012', fs_div='CFS' (반기보고서, 연결제무제표)'
+reprt_code='11014', fs_div='CFS' (3분기보고서, 연결제무제표)'
+reprt_code='11013', fs_div='CFS' (1분기보고서, 연결제무제표)'
+  ✅ 한텍 검증 통과 PER None PBR 2.09 EPS None BPS 15572
+  · 098070 한텍: EPS=None BPS=15572 ROE=None DPS=450.0 성장=None
+reprt_code='11011', fs_div='CFS' (사업보고서, 연결제무제표)'
+reprt_code='11011', fs_div='CFS' (사업보고서, 연결제무제표)'
+{'status': '013', 'message': '조회된 데이타가 없습니다.'}
+
+reprt_code='11011', fs_div='OFS' (사업보고서, 별도(개별)제무제표)'
+reprt_code='11011', fs_div='CFS' (사업보고서, 연결제무제표)'
+{'status': '013', 'message': '조회된 데이타가 없습니다.'}
+
+reprt_code='11011', fs_div='OFS' (사업보고서, 별도(개별)제무제표)'
+reprt_code='11011', fs_div='CFS' (사업보고서, 연결제무제표)'
+{'status': '013', 'message': '조회된 데이타가 없습니다.'}
+
+reprt_code='11011', fs_div='OFS' (사업보고서, 별도(개별)제무제표)'
+reprt_code='11013', fs_div='CFS' (1분기보고서, 연결제무제표)'
+{'status': '013', 'message': '조회된 데이타가 없습니다.'}
+
+reprt_code='11013', fs_div='OFS' (1분기보고서, 별도(개별)제무제표)'
+reprt_code='11012', fs_div='CFS' (반기보고서, 연결제무제표)'
+reprt_code='11014', fs_div='CFS' (3분기보고서, 연결제무제표)'
+reprt_code='11013', fs_div='CFS' (1분기보고서, 연결제무제표)'
+  ✅ HLB제약 검증 통과 PER 96.1 PBR 2.36 EPS 114 BPS 4635
+  · 047920 HLB제약: EPS=114 BPS=4635 ROE=2.9 DPS=None 성장=50.0
+reprt_code='11011', fs_div='CFS' (사업보고서, 연결제무제표)'
+reprt_code='11011', fs_div='CFS' (사업보고서, 연결제무제표)'
+reprt_code='11011', fs_div='CFS' (사업보고서, 연결제무제표)'
+reprt_code='11011', fs_div='CFS' (사업보고서, 연결제무제표)'
+reprt_code='11013', fs_div='CFS' (1분기보고서, 연결제무제표)'
+reprt_code='11012', fs_div='CFS' (반기보고서, 연결제무제표)'
+reprt_code='11014', fs_div='CFS' (3분기보고서, 연결제무제표)'
+reprt_code='11013', fs_div='CFS' (1분기보고서, 연결제무제표)'
+  ✅ 진성티이씨 검증 통과 PER 8.2 PBR 1.05 EPS 1992 BPS 15483
+  · 036890 진성티이씨: EPS=1992 BPS=15483 ROE=13.8 DPS=None 성장=18.8
+reprt_code='11011', fs_div='CFS' (사업보고서, 연결제무제표)'
+reprt_code='11011', fs_div='CFS' (사업보고서, 연결제무제표)'
+reprt_code='11011', fs_div='CFS' (사업보고서, 연결제무제표)'
+reprt_code='11011', fs_div='CFS' (사업보고서, 연결제무제표)'
+reprt_code='11013', fs_div='CFS' (1분기보고서, 연결제무제표)'
+reprt_code='11012', fs_div='CFS' (반기보고서, 연결제무제표)'
+reprt_code='11014', fs_div='CFS' (3분기보고서, 연결제무제표)'
+reprt_code='11013', fs_div='CFS' (1분기보고서, 연결제무제표)'
+  ✅ 한세실업 검증 통과 PER 8.0 PBR 0.49 EPS 1119 BPS 18313
+  · 105630 한세실업: EPS=1119 BPS=18313 ROE=6.6 DPS=None 성장=8.0
+reprt_code='11011', fs_div='CFS' (사업보고서, 연결제무제표)'
+reprt_code='11011', fs_div='CFS' (사업보고서, 연결제무제표)'
+reprt_code='11011', fs_div='CFS' (사업보고서, 연결제무제표)'
+reprt_code='11011', fs_div='CFS' (사업보고서, 연결제무제표)'
+reprt_code='11013', fs_div='CFS' (1분기보고서, 연결제무제표)'
+reprt_code='11012', fs_div='CFS' (반기보고서, 연결제무제표)'
+reprt_code='11014', fs_div='CFS' (3분기보고서, 연결제무제표)'
+reprt_code='11013', fs_div='CFS' (1분기보고서, 연결제무제표)'
+  ✅ 신라젠 검증 통과 PER None PBR 3.39 EPS -175 BPS 761
+  · 215600 신라젠: EPS=-175 BPS=761 ROE=-20.8 DPS=0.0 성장=134.9
+reprt_code='11011', fs_div='CFS' (사업보고서, 연결제무제표)'
+reprt_code='11011', fs_div='CFS' (사업보고서, 연결제무제표)'
+reprt_code='11011', fs_div='CFS' (사업보고서, 연결제무제표)'
+reprt_code='11011', fs_div='CFS' (사업보고서, 연결제무제표)'
+reprt_code='11013', fs_div='CFS' (1분기보고서, 연결제무제표)'
+reprt_code='11012', fs_div='CFS' (반기보고서, 연결제무제표)'
+reprt_code='11014', fs_div='CFS' (3분기보고서, 연결제무제표)'
+reprt_code='11013', fs_div='CFS' (1분기보고서, 연결제무제표)'
+  ✅ 삼립 검증 통과 PER None PBR 0.72 EPS -307 BPS 57869
+  · 005610 삼립: EPS=-307 BPS=57869 ROE=-0.5 DPS=1000.0 성장=-1.7
+reprt_code='11011', fs_div='CFS' (사업보고서, 연결제무제표)'
+reprt_code='11011', fs_div='CFS' (사업보고서, 연결제무제표)'
+reprt_code='11011', fs_div='CFS' (사업보고서, 연결제무제표)'
+reprt_code='11011', fs_div='CFS' (사업보고서, 연결제무제표)'
+reprt_code='11013', fs_div='CFS' (1분기보고서, 연결제무제표)'
+reprt_code='11012', fs_div='CFS' (반기보고서, 연결제무제표)'
+reprt_code='11014', fs_div='CFS' (3분기보고서, 연결제무제표)'
+reprt_code='11013', fs_div='CFS' (1분기보고서, 연결제무제표)'
+  ✅ 글로벌텍스프리 검증 통과 PER 10.2 PBR 2.35 EPS 499 BPS 2155
+  · 204620 글로벌텍스프리: EPS=499 BPS=2155 ROE=25.9 DPS=0.0 성장=18.8
+reprt_code='11011', fs_div='CFS' (사업보고서, 연결제무제표)'
+reprt_code='11011', fs_div='CFS' (사업보고서, 연결제무제표)'
+reprt_code='11011', fs_div='CFS' (사업보고서, 연결제무제표)'
+reprt_code='11011', fs_div='CFS' (사업보고서, 연결제무제표)'
+reprt_code='11013', fs_div='CFS' (1분기보고서, 연결제무제표)'
+reprt_code='11012', fs_div='CFS' (반기보고서, 연결제무제표)'
+reprt_code='11014', fs_div='CFS' (3분기보고서, 연결제무제표)'
+reprt_code='11013', fs_div='CFS' (1분기보고서, 연결제무제표)'
+  ❌ 동아에스티 중대오류 차단 → 해당 지표 숨김: EPS -874↔ref -1199.0
+  · 170900 동아에스티: EPS=None BPS=74748 ROE=-1.2 DPS=700.0 성장=15.9
+reprt_code='11011', fs_div='CFS' (사업보고서, 연결제무제표)'
+reprt_code='11011', fs_div='CFS' (사업보고서, 연결제무제표)'
+reprt_code='11011', fs_div='CFS' (사업보고서, 연결제무제표)'
+reprt_code='11011', fs_div='CFS' (사업보고서, 연결제무제표)'
+reprt_code='11013', fs_div='CFS' (1분기보고서, 연결제무제표)'
+reprt_code='11012', fs_div='CFS' (반기보고서, 연결제무제표)'
+reprt_code='11014', fs_div='CFS' (3분기보고서, 연결제무제표)'
+reprt_code='11013', fs_div='CFS' (1분기보고서, 연결제무제표)'
+  ✅ 수산인더스트리 검증 통과 PER 5.6 PBR 0.62 EPS 4437 BPS 39958
+  · 126720 수산인더스트리: EPS=4437 BPS=39958 ROE=11.6 DPS=900.0 성장=6.6
+reprt_code='11011', fs_div='CFS' (사업보고서, 연결제무제표)'
+reprt_code='11011', fs_div='CFS' (사업보고서, 연결제무제표)'
+reprt_code='11011', fs_div='CFS' (사업보고서, 연결제무제표)'
+reprt_code='11011', fs_div='CFS' (사업보고서, 연결제무제표)'
+reprt_code='11013', fs_div='CFS' (1분기보고서, 연결제무제표)'
+reprt_code='11012', fs_div='CFS' (반기보고서, 연결제무제표)'
+reprt_code='11014', fs_div='CFS' (3분기보고서, 연결제무제표)'
+reprt_code='11013', fs_div='CFS' (1분기보고서, 연결제무제표)'
+  ✅ KPX홀딩스 검증 통과 PER 2.8 PBR 0.29 EPS 29305 BPS 283473
+  · 092230 KPX홀딩스: EPS=29305 BPS=283473 ROE=11.0 DPS=5250.0 성장=-4.9
+reprt_code='11011', fs_div='CFS' (사업보고서, 연결제무제표)'
+reprt_code='11011', fs_div='CFS' (사업보고서, 연결제무제표)'
+reprt_code='11011', fs_div='CFS' (사업보고서, 연결제무제표)'
+reprt_code='11011', fs_div='CFS' (사업보고서, 연결제무제표)'
+reprt_code='11013', fs_div='CFS' (1분기보고서, 연결제무제표)'
+reprt_code='11012', fs_div='CFS' (반기보고서, 연결제무제표)'
+reprt_code='11014', fs_div='CFS' (3분기보고서, 연결제무제표)'
+reprt_code='11013', fs_div='CFS' (1분기보고서, 연결제무제표)'
+  ✅ TCC스틸 검증 통과 PER None PBR 1.42 EPS -342 BPS 9420
+  · 002710 TCC스틸: EPS=-342 BPS=9420 ROE=-3.5 DPS=70.0 성장=5.1
+reprt_code='11011', fs_div='CFS' (사업보고서, 연결제무제표)'
+reprt_code='11011', fs_div='CFS' (사업보고서, 연결제무제표)'
+reprt_code='11011', fs_div='CFS' (사업보고서, 연결제무제표)'
+reprt_code='11011', fs_div='CFS' (사업보고서, 연결제무제표)'
+reprt_code='11013', fs_div='CFS' (1분기보고서, 연결제무제표)'
+reprt_code='11012', fs_div='CFS' (반기보고서, 연결제무제표)'
+reprt_code='11014', fs_div='CFS' (3분기보고서, 연결제무제표)'
+reprt_code='11013', fs_div='CFS' (1분기보고서, 연결제무제표)'
+  ✅ 디아이씨 검증 통과 PER None PBR 2.34 EPS -333 BPS 3831
+  · 092200 디아이씨: EPS=-333 BPS=3831 ROE=-8.8 DPS=None 성장=5.3
+reprt_code='11011', fs_div='CFS' (사업보고서, 연결제무제표)'
+reprt_code='11011', fs_div='CFS' (사업보고서, 연결제무제표)'
+{'status': '013', 'message': '조회된 데이타가 없습니다.'}
+
+reprt_code='11011', fs_div='OFS' (사업보고서, 별도(개별)제무제표)'
+reprt_code='11011', fs_div='CFS' (사업보고서, 연결제무제표)'
+{'status': '013', 'message': '조회된 데이타가 없습니다.'}
+
+reprt_code='11011', fs_div='OFS' (사업보고서, 별도(개별)제무제표)'
+reprt_code='11011', fs_div='CFS' (사업보고서, 연결제무제표)'
+{'status': '013', 'message': '조회된 데이타가 없습니다.'}
+
+reprt_code='11011', fs_div='OFS' (사업보고서, 별도(개별)제무제표)'
+reprt_code='11013', fs_div='CFS' (1분기보고서, 연결제무제표)'
+reprt_code='11012', fs_div='CFS' (반기보고서, 연결제무제표)'
+reprt_code='11014', fs_div='CFS' (3분기보고서, 연결제무제표)'
+reprt_code='11013', fs_div='CFS' (1분기보고서, 연결제무제표)'
+  ✅ HEM파마 검증 통과 PER None PBR 239.11 EPS -3618 BPS 202
+  · 376270 HEM파마: EPS=-3618 BPS=202 ROE=-197.4 DPS=0.0 성장=-13.9
+reprt_code='11011', fs_div='CFS' (사업보고서, 연결제무제표)'
+reprt_code='11011', fs_div='CFS' (사업보고서, 연결제무제표)'
+reprt_code='11011', fs_div='CFS' (사업보고서, 연결제무제표)'
+reprt_code='11011', fs_div='CFS' (사업보고서, 연결제무제표)'
+reprt_code='11013', fs_div='CFS' (1분기보고서, 연결제무제표)'
+reprt_code='11012', fs_div='CFS' (반기보고서, 연결제무제표)'
+reprt_code='11014', fs_div='CFS' (3분기보고서, 연결제무제표)'
+reprt_code='11013', fs_div='CFS' (1분기보고서, 연결제무제표)'
+  ❌ 유티아이 중대오류 차단 → 해당 지표 숨김: EPS -1520↔ref -2150.0
+  · 179900 유티아이: EPS=None BPS=2881 ROE=-50.2 DPS=None 성장=7.6
+reprt_code='11011', fs_div='CFS' (사업보고서, 연결제무제표)'
+reprt_code='11011', fs_div='CFS' (사업보고서, 연결제무제표)'
+reprt_code='11011', fs_div='CFS' (사업보고서, 연결제무제표)'
+reprt_code='11011', fs_div='CFS' (사업보고서, 연결제무제표)'
+reprt_code='11013', fs_div='CFS' (1분기보고서, 연결제무제표)'
+reprt_code='11012', fs_div='CFS' (반기보고서, 연결제무제표)'
+reprt_code='11014', fs_div='CFS' (3분기보고서, 연결제무제표)'
+reprt_code='11013', fs_div='CFS' (1분기보고서, 연결제무제표)'
+  ✅ 국도화학 검증 통과 PER 18.2 PBR 0.37 EPS 2049 BPS 100302
+  · 007690 국도화학: EPS=2049 BPS=100302 ROE=2.1 DPS=1300.0 성장=6.9
+reprt_code='11011', fs_div='CFS' (사업보고서, 연결제무제표)'
+reprt_code='11011', fs_div='CFS' (사업보고서, 연결제무제표)'
+reprt_code='11011', fs_div='CFS' (사업보고서, 연결제무제표)'
+reprt_code='11011', fs_div='CFS' (사업보고서, 연결제무제표)'
+reprt_code='11013', fs_div='CFS' (1분기보고서, 연결제무제표)'
+reprt_code='11012', fs_div='CFS' (반기보고서, 연결제무제표)'
+reprt_code='11014', fs_div='CFS' (3분기보고서, 연결제무제표)'
+reprt_code='11013', fs_div='CFS' (1분기보고서, 연결제무제표)'
+{'status': '013', 'message': '조회된 데이타가 없습니다.'}
+
+reprt_code='11013', fs_div='OFS' (1분기보고서, 별도(개별)제무제표)'
+{'status': '013', 'message': '조회된 데이타가 없습니다.'}
+
+{'status': '013', 'message': '조회된 데이타가 없습니다.'}
+  ✅ 한스바이오메드 검증 통과 PER None PBR None EPS None BPS None
+  · 042520 한스바이오메드: EPS=None BPS=None ROE=None DPS=0.0 성장=10.7
+reprt_code='11011', fs_div='CFS' (사업보고서, 연결제무제표)'
+reprt_code='11011', fs_div='CFS' (사업보고서, 연결제무제표)'
+reprt_code='11011', fs_div='CFS' (사업보고서, 연결제무제표)'
+reprt_code='11011', fs_div='CFS' (사업보고서, 연결제무제표)'
+reprt_code='11013', fs_div='CFS' (1분기보고서, 연결제무제표)'
+reprt_code='11012', fs_div='CFS' (반기보고서, 연결제무제표)'
+reprt_code='11014', fs_div='CFS' (3분기보고서, 연결제무제표)'
+reprt_code='11013', fs_div='CFS' (1분기보고서, 연결제무제표)'
+  ❌ 휴온스 중대오류 차단 → 해당 지표 숨김: BPS 56347↔ref 31800.0
+  · 243070 휴온스: EPS=2634 BPS=None ROE=8.5 DPS=920.0 성장=5.2
+reprt_code='11011', fs_div='CFS' (사업보고서, 연결제무제표)'
+reprt_code='11011', fs_div='CFS' (사업보고서, 연결제무제표)'
+reprt_code='11011', fs_div='CFS' (사업보고서, 연결제무제표)'
+reprt_code='11011', fs_div='CFS' (사업보고서, 연결제무제표)'
+{'status': '013', 'message': '조회된 데이타가 없습니다.'}
+
+reprt_code='11011', fs_div='OFS' (사업보고서, 별도(개별)제무제표)'
+{'status': '013', 'message': '조회된 데이타가 없습니다.'}
+
+reprt_code='11013', fs_div='CFS' (1분기보고서, 연결제무제표)'
+reprt_code='11012', fs_div='CFS' (반기보고서, 연결제무제표)'
+reprt_code='11014', fs_div='CFS' (3분기보고서, 연결제무제표)'
+reprt_code='11013', fs_div='CFS' (1분기보고서, 연결제무제표)'
+  ❌ 알멕 중대오류 차단 → 해당 지표 숨김: BPS 29761↔ref 24158.0
+  · 354320 알멕: EPS=334 BPS=None ROE=1.4 DPS=0.0 성장=19.7
+reprt_code='11011', fs_div='CFS' (사업보고서, 연결제무제표)'
+reprt_code='11011', fs_div='CFS' (사업보고서, 연결제무제표)'
+reprt_code='11011', fs_div='CFS' (사업보고서, 연결제무제표)'
+reprt_code='11011', fs_div='CFS' (사업보고서, 연결제무제표)'
+reprt_code='11013', fs_div='CFS' (1분기보고서, 연결제무제표)'
+reprt_code='11012', fs_div='CFS' (반기보고서, 연결제무제표)'
+reprt_code='11014', fs_div='CFS' (3분기보고서, 연결제무제표)'
+reprt_code='11013', fs_div='CFS' (1분기보고서, 연결제무제표)'
+  ✅ 휴온스글로벌 검증 통과 PER 13.9 PBR 0.6 EPS 1948 BPS 45075
+  · 084110 휴온스글로벌: EPS=1948 BPS=45075 ROE=4.4 DPS=880.0 성장=4.2
+reprt_code='11011', fs_div='CFS' (사업보고서, 연결제무제표)'
+reprt_code='11011', fs_div='CFS' (사업보고서, 연결제무제표)'
+reprt_code='11011', fs_div='CFS' (사업보고서, 연결제무제표)'
+reprt_code='11011', fs_div='CFS' (사업보고서, 연결제무제표)'
+reprt_code='11013', fs_div='CFS' (1분기보고서, 연결제무제표)'
+reprt_code='11012', fs_div='CFS' (반기보고서, 연결제무제표)'
+reprt_code='11014', fs_div='CFS' (3분기보고서, 연결제무제표)'
+reprt_code='11013', fs_div='CFS' (1분기보고서, 연결제무제표)'
+  ❌ 인탑스 중대오류 차단 → 해당 지표 숨김: EPS 904↔ref 1272.0
+  · 049070 인탑스: EPS=None BPS=43060 ROE=2.3 DPS=200.0 성장=-3.9
+reprt_code='11011', fs_div='CFS' (사업보고서, 연결제무제표)'
+reprt_code='11011', fs_div='CFS' (사업보고서, 연결제무제표)'
+reprt_code='11011', fs_div='CFS' (사업보고서, 연결제무제표)'
+reprt_code='11011', fs_div='CFS' (사업보고서, 연결제무제표)'
+reprt_code='11013', fs_div='CFS' (1분기보고서, 연결제무제표)'
+reprt_code='11012', fs_div='CFS' (반기보고서, 연결제무제표)'
+reprt_code='11014', fs_div='CFS' (3분기보고서, 연결제무제표)'
+reprt_code='11013', fs_div='CFS' (1분기보고서, 연결제무제표)'
+  ✅ 서연이화 검증 통과 PER 3.7 PBR 0.27 EPS 3370 BPS 46182
+  · 200880 서연이화: EPS=3370 BPS=46182 ROE=7.7 DPS=250.0 성장=11.5
+reprt_code='11011', fs_div='CFS' (사업보고서, 연결제무제표)'
+reprt_code='11011', fs_div='CFS' (사업보고서, 연결제무제표)'
+reprt_code='11011', fs_div='CFS' (사업보고서, 연결제무제표)'
+reprt_code='11011', fs_div='CFS' (사업보고서, 연결제무제표)'
+reprt_code='11013', fs_div='CFS' (1분기보고서, 연결제무제표)'
+reprt_code='11012', fs_div='CFS' (반기보고서, 연결제무제표)'
+reprt_code='11014', fs_div='CFS' (3분기보고서, 연결제무제표)'
+reprt_code='11013', fs_div='CFS' (1분기보고서, 연결제무제표)'
+  ❌ 포스코스틸리온 중대오류 차단 → 해당 지표 숨김: EPS 1387↔ref 240.0
+  · 058430 포스코스틸리온: EPS=None BPS=6418 ROE=21.8 DPS=None 성장=-7.0
+reprt_code='11011', fs_div='CFS' (사업보고서, 연결제무제표)'
+reprt_code='11011', fs_div='CFS' (사업보고서, 연결제무제표)'
+reprt_code='11011', fs_div='CFS' (사업보고서, 연결제무제표)'
+reprt_code='11011', fs_div='CFS' (사업보고서, 연결제무제표)'
+reprt_code='11013', fs_div='CFS' (1분기보고서, 연결제무제표)'
+reprt_code='11012', fs_div='CFS' (반기보고서, 연결제무제표)'
+reprt_code='11014', fs_div='CFS' (3분기보고서, 연결제무제표)'
+reprt_code='11013', fs_div='CFS' (1분기보고서, 연결제무제표)'
+  ✅ 제이에스코퍼레이션 검증 통과 PER 4.4 PBR 0.63 EPS 2672 BPS 18591
+  · 194370 제이에스코퍼레이션: EPS=2672 BPS=18591 ROE=15.4 DPS=600.0 성장=15.3
+reprt_code='11011', fs_div='CFS' (사업보고서, 연결제무제표)'
+{'status': '013', 'message': '조회된 데이타가 없습니다.'}
+
+reprt_code='11011', fs_div='OFS' (사업보고서, 별도(개별)제무제표)'
+reprt_code='11011', fs_div='CFS' (사업보고서, 연결제무제표)'
+{'status': '013', 'message': '조회된 데이타가 없습니다.'}
+
+reprt_code='11011', fs_div='OFS' (사업보고서, 별도(개별)제무제표)'
+reprt_code='11011', fs_div='CFS' (사업보고서, 연결제무제표)'
+{'status': '013', 'message': '조회된 데이타가 없습니다.'}
+
+reprt_code='11011', fs_div='OFS' (사업보고서, 별도(개별)제무제표)'
+{'status': '013', 'message': '조회된 데이타가 없습니다.'}
+
+reprt_code='11011', fs_div='CFS' (사업보고서, 연결제무제표)'
+{'status': '013', 'message': '조회된 데이타가 없습니다.'}
+
+reprt_code='11011', fs_div='OFS' (사업보고서, 별도(개별)제무제표)'
+{'status': '013', 'message': '조회된 데이타가 없습니다.'}
+
+reprt_code='11013', fs_div='CFS' (1분기보고서, 연결제무제표)'
+{'status': '013', 'message': '조회된 데이타가 없습니다.'}
+
+reprt_code='11013', fs_div='OFS' (1분기보고서, 별도(개별)제무제표)'
+reprt_code='11012', fs_div='CFS' (반기보고서, 연결제무제표)'
+{'status': '013', 'message': '조회된 데이타가 없습니다.'}
+
+reprt_code='11012', fs_div='OFS' (반기보고서, 별도(개별)제무제표)'
+reprt_code='11014', fs_div='CFS' (3분기보고서, 연결제무제표)'
+{'status': '013', 'message': '조회된 데이타가 없습니다.'}
+
+reprt_code='11014', fs_div='OFS' (3분기보고서, 별도(개별)제무제표)'
+reprt_code='11013', fs_div='CFS' (1분기보고서, 연결제무제표)'
+{'status': '013', 'message': '조회된 데이타가 없습니다.'}
+
+reprt_code='11013', fs_div='OFS' (1분기보고서, 별도(개별)제무제표)'
+  ✅ 넥스트바이오메디컬 검증 통과 PER None PBR 6.87 EPS -4 BPS 5977
+  · 389650 넥스트바이오메디컬: EPS=-4 BPS=5977 ROE=-0.1 DPS=None 성장=72.7
+reprt_code='11011', fs_div='CFS' (사업보고서, 연결제무제표)'
+reprt_code='11011', fs_div='CFS' (사업보고서, 연결제무제표)'
+reprt_code='11011', fs_div='CFS' (사업보고서, 연결제무제표)'
+reprt_code='11011', fs_div='CFS' (사업보고서, 연결제무제표)'
+reprt_code='11013', fs_div='CFS' (1분기보고서, 연결제무제표)'
+reprt_code='11012', fs_div='CFS' (반기보고서, 연결제무제표)'
+reprt_code='11014', fs_div='CFS' (3분기보고서, 연결제무제표)'
+reprt_code='11013', fs_div='CFS' (1분기보고서, 연결제무제표)'
+  ✅ KISCO홀딩스 검증 통과 PER None PBR 0.26 EPS -1673 BPS 92906
+  · 001940 KISCO홀딩스: EPS=-1673 BPS=92906 ROE=-2.1 DPS=1850.0 성장=-18.5
 reprt_code='11011', fs_div='CFS' (사업보고서, 연결제무제표)'
 reprt_code='11011', fs_div='CFS' (사업보고서, 연결제무제표)'
 reprt_code='11011', fs_div='CFS' (사업보고서, 연결제무제표)'
@@ -760,8 +1558,8 @@ reprt_code='11013', fs_div='CFS' (1분기보고서, 연결제무제표)'
 reprt_code='11012', fs_div='CFS' (반기보고서, 연결제무제표)'
 reprt_code='11014', fs_div='CFS' (3분기보고서, 연결제무제표)'
 reprt_code='11013', fs_div='CFS' (1분기보고서, 연결제무제표)'
-  ✅ 큐로셀 검증 통과 PER None PBR 16.82 EPS -3346 BPS 1712
-  · 372320 큐로셀: EPS=-3346 BPS=1712 ROE=-203.8 DPS=None 성장=None
+  ✅ 아이씨티케이 검증 통과 PER None PBR 7.88 EPS -418 BPS 3071
+  · 456010 아이씨티케이: EPS=-418 BPS=3071 ROE=-13.5 DPS=0.0 성장=-39.9
 reprt_code='11011', fs_div='CFS' (사업보고서, 연결제무제표)'
 reprt_code='11011', fs_div='CFS' (사업보고서, 연결제무제표)'
 reprt_code='11011', fs_div='CFS' (사업보고서, 연결제무제표)'
@@ -770,8 +1568,8 @@ reprt_code='11013', fs_div='CFS' (1분기보고서, 연결제무제표)'
 reprt_code='11012', fs_div='CFS' (반기보고서, 연결제무제표)'
 reprt_code='11014', fs_div='CFS' (3분기보고서, 연결제무제표)'
 reprt_code='11013', fs_div='CFS' (1분기보고서, 연결제무제표)'
-  ✅ 흥아해운 검증 통과 PER 15.6 PBR 1.62 EPS 116 BPS 1120
-  · 003280 흥아해운: EPS=116 BPS=1120 ROE=11.2 DPS=None 성장=-3.8
+  ✅ 현대코퍼레이션 검증 통과 PER 4.1 PBR 0.42 EPS 6161 BPS 59912
+  · 011760 현대코퍼레이션: EPS=6161 BPS=59912 ROE=10.7 DPS=700.0 성장=8.0
 reprt_code='11011', fs_div='CFS' (사업보고서, 연결제무제표)'
 reprt_code='11011', fs_div='CFS' (사업보고서, 연결제무제표)'
 reprt_code='11011', fs_div='CFS' (사업보고서, 연결제무제표)'
@@ -780,8 +1578,8 @@ reprt_code='11013', fs_div='CFS' (1분기보고서, 연결제무제표)'
 reprt_code='11012', fs_div='CFS' (반기보고서, 연결제무제표)'
 reprt_code='11014', fs_div='CFS' (3분기보고서, 연결제무제표)'
 reprt_code='11013', fs_div='CFS' (1분기보고서, 연결제무제표)'
-  ✅ 농심홀딩스 검증 통과 PER 3.7 PBR 0.32 EPS 25538 BPS 292526
-  · 072710 농심홀딩스: EPS=25538 BPS=292526 ROE=9.2 DPS=3000.0 성장=7.6
+  ✅ 넥센 검증 통과 PER 3.1 PBR 0.23 EPS 2048 BPS 27727
+  · 005720 넥센: EPS=2048 BPS=27727 ROE=7.8 DPS=175.0 성장=11.6
 reprt_code='11011', fs_div='CFS' (사업보고서, 연결제무제표)'
 reprt_code='11011', fs_div='CFS' (사업보고서, 연결제무제표)'
 reprt_code='11011', fs_div='CFS' (사업보고서, 연결제무제표)'
@@ -790,8 +1588,8 @@ reprt_code='11013', fs_div='CFS' (1분기보고서, 연결제무제표)'
 reprt_code='11012', fs_div='CFS' (반기보고서, 연결제무제표)'
 reprt_code='11014', fs_div='CFS' (3분기보고서, 연결제무제표)'
 reprt_code='11013', fs_div='CFS' (1분기보고서, 연결제무제표)'
-  ✅ 서울바이오시스 검증 통과 PER 76.0 PBR 4.73 EPS 124 BPS 1993
-  · 092190 서울바이오시스: EPS=124 BPS=1993 ROE=9.9 DPS=0.0 성장=9.2
+  ✅ 유니테스트 검증 통과 PER None PBR 3.33 EPS -836 BPS 4776
+  · 086390 유니테스트: EPS=-836 BPS=4776 ROE=-16.1 DPS=0.0 성장=19.2
 reprt_code='11011', fs_div='CFS' (사업보고서, 연결제무제표)'
 reprt_code='11011', fs_div='CFS' (사업보고서, 연결제무제표)'
 reprt_code='11011', fs_div='CFS' (사업보고서, 연결제무제표)'
@@ -800,8 +1598,8 @@ reprt_code='11013', fs_div='CFS' (1분기보고서, 연결제무제표)'
 reprt_code='11012', fs_div='CFS' (반기보고서, 연결제무제표)'
 reprt_code='11014', fs_div='CFS' (3분기보고서, 연결제무제표)'
 reprt_code='11013', fs_div='CFS' (1분기보고서, 연결제무제표)'
-  ✅ 한양디지텍 검증 통과 PER 25.4 PBR 2.17 EPS 1112 BPS 13046
-  · 078350 한양디지텍: EPS=1112 BPS=13046 ROE=9.2 DPS=None 성장=9.4
+  ❌ 디바이스 중대오류 차단 → 해당 지표 숨김: EPS 4130↔ref 2054.0 / BPS 23285↔ref 12465.0
+  · 187870 디바이스: EPS=None BPS=None ROE=18.3 DPS=650.0 성장=78.3
 reprt_code='11011', fs_div='CFS' (사업보고서, 연결제무제표)'
 reprt_code='11011', fs_div='CFS' (사업보고서, 연결제무제표)'
 reprt_code='11011', fs_div='CFS' (사업보고서, 연결제무제표)'
@@ -810,49 +1608,1606 @@ reprt_code='11013', fs_div='CFS' (1분기보고서, 연결제무제표)'
 reprt_code='11012', fs_div='CFS' (반기보고서, 연결제무제표)'
 reprt_code='11014', fs_div='CFS' (3분기보고서, 연결제무제표)'
 reprt_code='11013', fs_div='CFS' (1분기보고서, 연결제무제표)'
-  ✅ 신성이엔지 검증 통과 PER None PBR 1.86 EPS -154 BPS 11193
-  · 011930 신성이엔지: EPS=-154 BPS=11193 ROE=-1.4 DPS=0.0 성장=-2.5
+  ✅ 파인엠텍 검증 통과 PER None PBR 1.75 EPS -199 BPS 4555
+  · 441270 파인엠텍: EPS=-199 BPS=4555 ROE=-5.2 DPS=0.0 성장=-37.4
 reprt_code='11011', fs_div='CFS' (사업보고서, 연결제무제표)'
 reprt_code='11011', fs_div='CFS' (사업보고서, 연결제무제표)'
 reprt_code='11011', fs_div='CFS' (사업보고서, 연결제무제표)'
 reprt_code='11011', fs_div='CFS' (사업보고서, 연결제무제표)'
-reprt_code='11013', fs_div='CFS' (1분기보고서, 연결제무제표)'
-reprt_code='11012', fs_div='CFS' (반기보고서, 연결제무제표)'
-reprt_code='11014', fs_div='CFS' (3분기보고서, 연결제무제표)'
-reprt_code='11013', fs_div='CFS' (1분기보고서, 연결제무제표)'
-  ✅ 네오위즈 검증 통과 PER 6.6 PBR 0.7 EPS 2976 BPS 28429
-  · 095660 네오위즈: EPS=2976 BPS=28429 ROE=10.5 DPS=303.0 성장=18.0
-reprt_code='11011', fs_div='CFS' (사업보고서, 연결제무제표)'
-reprt_code='11011', fs_div='CFS' (사업보고서, 연결제무제표)'
-reprt_code='11011', fs_div='CFS' (사업보고서, 연결제무제표)'
-reprt_code='11011', fs_div='CFS' (사업보고서, 연결제무제표)'
-reprt_code='11013', fs_div='CFS' (1분기보고서, 연결제무제표)'
-reprt_code='11012', fs_div='CFS' (반기보고서, 연결제무제표)'
-reprt_code='11014', fs_div='CFS' (3분기보고서, 연결제무제표)'
-reprt_code='11013', fs_div='CFS' (1분기보고서, 연결제무제표)'
-  ✅ 디케이티 검증 통과 PER 12.9 PBR 1.91 EPS 1645 BPS 11119
-  · 290550 디케이티: EPS=1645 BPS=11119 ROE=16.1 DPS=0.0 성장=5.6
-reprt_code='11011', fs_div='CFS' (사업보고서, 연결제무제표)'
-reprt_code='11011', fs_div='CFS' (사업보고서, 연결제무제표)'
-reprt_code='11011', fs_div='CFS' (사업보고서, 연결제무제표)'
-reprt_code='11011', fs_div='CFS' (사업보고서, 연결제무제표)'
-reprt_code='11013', fs_div='CFS' (1분기보고서, 연결제무제표)'
-reprt_code='11012', fs_div='CFS' (반기보고서, 연결제무제표)'
-reprt_code='11014', fs_div='CFS' (3분기보고서, 연결제무제표)'
-reprt_code='11013', fs_div='CFS' (1분기보고서, 연결제무제표)'
-  ✅ 가비아 검증 통과 PER 23.1 PBR 2.24 EPS 1361 BPS 14029
-  · 079940 가비아: EPS=1361 BPS=14029 ROE=10.1 DPS=100.0 성장=18.9
-reprt_code='11011', fs_div='CFS' (사업보고서, 연결제무제표)'
-reprt_code='11011', fs_div='CFS' (사업보고서, 연결제무제표)'
-reprt_code='11011', fs_div='CFS' (사업보고서, 연결제무제표)'
-reprt_code='11011', fs_div='CFS' (사업보고서, 연결제무제표)'
-reprt_code='11013', fs_div='CFS' (1분기보고서, 연결제무제표)'
-reprt_code='11012', fs_div='CFS' (반기보고서, 연결제무제표)'
-reprt_code='11014', fs_div='CFS' (3분기보고서, 연결제무제표)'
-reprt_code='11013', fs_div='CFS' (1분기보고서, 연결제무제표)'
-  ✅ 쏘카 검증 통과 PER None PBR 2.38 EPS -721 BPS 4681
-  · 403550 쏘카: EPS=-721 BPS=4681 ROE=-14.1 DPS=92.0 성장=9.0
-- ⏳ 시간예산 초과 — 저장 후 종료(다음 실행 이어받기). 처리 58건
+{'status': '013', 'message': '조회된 데이타가 없습니다.'}
 
-✅ 밸류에이션 수집 — 이번 58건 신규 / 건너뜀 517 / 보유 952/2687개 / 갱신필요 2112개
-- VALUATION_REMAINING 2112개 (다음 실행에서 이어받기)
+reprt_code='11011', fs_div='OFS' (사업보고서, 별도(개별)제무제표)'
+{'status': '013', 'message': '조회된 데이타가 없습니다.'}
+
+reprt_code='11013', fs_div='CFS' (1분기보고서, 연결제무제표)'
+reprt_code='11012', fs_div='CFS' (반기보고서, 연결제무제표)'
+reprt_code='11014', fs_div='CFS' (3분기보고서, 연결제무제표)'
+reprt_code='11013', fs_div='CFS' (1분기보고서, 연결제무제표)'
+  ✅ 에이직랜드 검증 통과 PER None PBR 4.53 EPS -1927 BPS 6772
+  · 445090 에이직랜드: EPS=-1927 BPS=6772 ROE=-27.8 DPS=0.0 성장=-22.5
+reprt_code='11011', fs_div='CFS' (사업보고서, 연결제무제표)'
+reprt_code='11011', fs_div='CFS' (사업보고서, 연결제무제표)'
+reprt_code='11011', fs_div='CFS' (사업보고서, 연결제무제표)'
+reprt_code='11011', fs_div='CFS' (사업보고서, 연결제무제표)'
+reprt_code='11013', fs_div='CFS' (1분기보고서, 연결제무제표)'
+reprt_code='11012', fs_div='CFS' (반기보고서, 연결제무제표)'
+reprt_code='11014', fs_div='CFS' (3분기보고서, 연결제무제표)'
+reprt_code='11013', fs_div='CFS' (1분기보고서, 연결제무제표)'
+  ✅ 현대퓨처넷 검증 통과 PER 33.8 PBR 0.46 EPS 90 BPS 6550
+  · 126560 현대퓨처넷: EPS=90 BPS=6550 ROE=1.3 DPS=150.0 성장=22.6
+reprt_code='11011', fs_div='CFS' (사업보고서, 연결제무제표)'
+reprt_code='11011', fs_div='CFS' (사업보고서, 연결제무제표)'
+reprt_code='11011', fs_div='CFS' (사업보고서, 연결제무제표)'
+reprt_code='11011', fs_div='CFS' (사업보고서, 연결제무제표)'
+reprt_code='11013', fs_div='CFS' (1분기보고서, 연결제무제표)'
+reprt_code='11012', fs_div='CFS' (반기보고서, 연결제무제표)'
+reprt_code='11014', fs_div='CFS' (3분기보고서, 연결제무제표)'
+reprt_code='11013', fs_div='CFS' (1분기보고서, 연결제무제표)'
+  ✅ 덕산테코피아 검증 통과 PER None PBR 3.0 EPS -3708 BPS 5395
+  · 317330 덕산테코피아: EPS=-3708 BPS=5395 ROE=-50.8 DPS=0.0 성장=12.4
+reprt_code='11011', fs_div='CFS' (사업보고서, 연결제무제표)'
+reprt_code='11011', fs_div='CFS' (사업보고서, 연결제무제표)'
+reprt_code='11011', fs_div='CFS' (사업보고서, 연결제무제표)'
+reprt_code='11011', fs_div='CFS' (사업보고서, 연결제무제표)'
+reprt_code='11013', fs_div='CFS' (1분기보고서, 연결제무제표)'
+reprt_code='11012', fs_div='CFS' (반기보고서, 연결제무제표)'
+reprt_code='11014', fs_div='CFS' (3분기보고서, 연결제무제표)'
+reprt_code='11013', fs_div='CFS' (1분기보고서, 연결제무제표)'
+  ✅ 헥토파이낸셜 검증 통과 PER 27.5 PBR 1.71 EPS 865 BPS 13897
+  · 234340 헥토파이낸셜: EPS=865 BPS=13897 ROE=7.8 DPS=220.0 성장=17.7
+reprt_code='11011', fs_div='CFS' (사업보고서, 연결제무제표)'
+{'status': '013', 'message': '조회된 데이타가 없습니다.'}
+
+reprt_code='11011', fs_div='OFS' (사업보고서, 별도(개별)제무제표)'
+reprt_code='11011', fs_div='CFS' (사업보고서, 연결제무제표)'
+{'status': '013', 'message': '조회된 데이타가 없습니다.'}
+
+reprt_code='11011', fs_div='OFS' (사업보고서, 별도(개별)제무제표)'
+{'status': '013', 'message': '조회된 데이타가 없습니다.'}
+
+reprt_code='11011', fs_div='CFS' (사업보고서, 연결제무제표)'
+{'status': '013', 'message': '조회된 데이타가 없습니다.'}
+
+reprt_code='11011', fs_div='OFS' (사업보고서, 별도(개별)제무제표)'
+{'status': '013', 'message': '조회된 데이타가 없습니다.'}
+
+reprt_code='11011', fs_div='CFS' (사업보고서, 연결제무제표)'
+{'status': '013', 'message': '조회된 데이타가 없습니다.'}
+
+reprt_code='11011', fs_div='OFS' (사업보고서, 별도(개별)제무제표)'
+{'status': '013', 'message': '조회된 데이타가 없습니다.'}
+
+reprt_code='11013', fs_div='CFS' (1분기보고서, 연결제무제표)'
+{'status': '013', 'message': '조회된 데이타가 없습니다.'}
+
+reprt_code='11013', fs_div='OFS' (1분기보고서, 별도(개별)제무제표)'
+{'status': '013', 'message': '조회된 데이타가 없습니다.'}
+
+reprt_code='11012', fs_div='CFS' (반기보고서, 연결제무제표)'
+{'status': '013', 'message': '조회된 데이타가 없습니다.'}
+
+reprt_code='11012', fs_div='OFS' (반기보고서, 별도(개별)제무제표)'
+reprt_code='11014', fs_div='CFS' (3분기보고서, 연결제무제표)'
+{'status': '013', 'message': '조회된 데이타가 없습니다.'}
+
+reprt_code='11014', fs_div='OFS' (3분기보고서, 별도(개별)제무제표)'
+reprt_code='11013', fs_div='CFS' (1분기보고서, 연결제무제표)'
+{'status': '013', 'message': '조회된 데이타가 없습니다.'}
+
+reprt_code='11013', fs_div='OFS' (1분기보고서, 별도(개별)제무제표)'
+{'status': '013', 'message': '조회된 데이타가 없습니다.'}
+  ❌ 삼양컴텍 중대오류 차단 → 해당 지표 숨김: BPS 4543↔ref 3851.0
+  · 484590 삼양컴텍: EPS=None BPS=None ROE=None DPS=None 성장=None
+reprt_code='11011', fs_div='CFS' (사업보고서, 연결제무제표)'
+reprt_code='11011', fs_div='CFS' (사업보고서, 연결제무제표)'
+reprt_code='11011', fs_div='CFS' (사업보고서, 연결제무제표)'
+reprt_code='11011', fs_div='CFS' (사업보고서, 연결제무제표)'
+reprt_code='11013', fs_div='CFS' (1분기보고서, 연결제무제표)'
+reprt_code='11012', fs_div='CFS' (반기보고서, 연결제무제표)'
+reprt_code='11014', fs_div='CFS' (3분기보고서, 연결제무제표)'
+reprt_code='11013', fs_div='CFS' (1분기보고서, 연결제무제표)'
+  ✅ 파트론 검증 통과 PER 8.9 PBR 0.64 EPS 741 BPS 10404
+  · 091700 파트론: EPS=741 BPS=10404 ROE=7.3 DPS=310.0 성장=-9.2
+reprt_code='11011', fs_div='CFS' (사업보고서, 연결제무제표)'
+reprt_code='11011', fs_div='CFS' (사업보고서, 연결제무제표)'
+reprt_code='11011', fs_div='CFS' (사업보고서, 연결제무제표)'
+reprt_code='11011', fs_div='CFS' (사업보고서, 연결제무제표)'
+reprt_code='11013', fs_div='CFS' (1분기보고서, 연결제무제표)'
+reprt_code='11012', fs_div='CFS' (반기보고서, 연결제무제표)'
+reprt_code='11014', fs_div='CFS' (3분기보고서, 연결제무제표)'
+reprt_code='11013', fs_div='CFS' (1분기보고서, 연결제무제표)'
+  ✅ 케이프 검증 통과 PER 4.1 PBR 1.07 EPS 2624 BPS 10027
+  · 064820 케이프: EPS=2624 BPS=10027 ROE=30.5 DPS=0.0 성장=12.2
+reprt_code='11011', fs_div='CFS' (사업보고서, 연결제무제표)'
+reprt_code='11011', fs_div='CFS' (사업보고서, 연결제무제표)'
+reprt_code='11011', fs_div='CFS' (사업보고서, 연결제무제표)'
+reprt_code='11011', fs_div='CFS' (사업보고서, 연결제무제표)'
+{'status': '013', 'message': '조회된 데이타가 없습니다.'}
+
+reprt_code='11011', fs_div='OFS' (사업보고서, 별도(개별)제무제표)'
+{'status': '013', 'message': '조회된 데이타가 없습니다.'}
+
+reprt_code='11013', fs_div='CFS' (1분기보고서, 연결제무제표)'
+reprt_code='11012', fs_div='CFS' (반기보고서, 연결제무제표)'
+reprt_code='11014', fs_div='CFS' (3분기보고서, 연결제무제표)'
+reprt_code='11013', fs_div='CFS' (1분기보고서, 연결제무제표)'
+  ✅ 에스바이오메딕스 검증 통과 PER None PBR 39.67 EPS -663 BPS 663
+  · 304360 에스바이오메딕스: EPS=-663 BPS=663 ROE=-88.0 DPS=None 성장=20.5
+reprt_code='11011', fs_div='CFS' (사업보고서, 연결제무제표)'
+reprt_code='11011', fs_div='CFS' (사업보고서, 연결제무제표)'
+reprt_code='11011', fs_div='CFS' (사업보고서, 연결제무제표)'
+reprt_code='11011', fs_div='CFS' (사업보고서, 연결제무제표)'
+reprt_code='11013', fs_div='CFS' (1분기보고서, 연결제무제표)'
+reprt_code='11012', fs_div='CFS' (반기보고서, 연결제무제표)'
+reprt_code='11014', fs_div='CFS' (3분기보고서, 연결제무제표)'
+reprt_code='11013', fs_div='CFS' (1분기보고서, 연결제무제표)'
+  ✅ 애경산업 검증 통과 PER 13.0 PBR 0.76 EPS 945 BPS 16206
+  · 018250 애경산업: EPS=945 BPS=16206 ROE=6.0 DPS=None 성장=-3.6
+reprt_code='11011', fs_div='CFS' (사업보고서, 연결제무제표)'
+{'status': '013', 'message': '조회된 데이타가 없습니다.'}
+
+reprt_code='11011', fs_div='OFS' (사업보고서, 별도(개별)제무제표)'
+reprt_code='11011', fs_div='CFS' (사업보고서, 연결제무제표)'
+{'status': '013', 'message': '조회된 데이타가 없습니다.'}
+
+reprt_code='11011', fs_div='OFS' (사업보고서, 별도(개별)제무제표)'
+reprt_code='11011', fs_div='CFS' (사업보고서, 연결제무제표)'
+{'status': '013', 'message': '조회된 데이타가 없습니다.'}
+
+reprt_code='11011', fs_div='OFS' (사업보고서, 별도(개별)제무제표)'
+reprt_code='11011', fs_div='CFS' (사업보고서, 연결제무제표)'
+{'status': '013', 'message': '조회된 데이타가 없습니다.'}
+
+reprt_code='11011', fs_div='OFS' (사업보고서, 별도(개별)제무제표)'
+reprt_code='11013', fs_div='CFS' (1분기보고서, 연결제무제표)'
+{'status': '013', 'message': '조회된 데이타가 없습니다.'}
+
+reprt_code='11013', fs_div='OFS' (1분기보고서, 별도(개별)제무제표)'
+reprt_code='11012', fs_div='CFS' (반기보고서, 연결제무제표)'
+{'status': '013', 'message': '조회된 데이타가 없습니다.'}
+
+reprt_code='11012', fs_div='OFS' (반기보고서, 별도(개별)제무제표)'
+reprt_code='11014', fs_div='CFS' (3분기보고서, 연결제무제표)'
+{'status': '013', 'message': '조회된 데이타가 없습니다.'}
+
+reprt_code='11014', fs_div='OFS' (3분기보고서, 별도(개별)제무제표)'
+reprt_code='11013', fs_div='CFS' (1분기보고서, 연결제무제표)'
+{'status': '013', 'message': '조회된 데이타가 없습니다.'}
+
+reprt_code='11013', fs_div='OFS' (1분기보고서, 별도(개별)제무제표)'
+  ✅ 한국철강 검증 통과 PER None PBR 0.39 EPS -511 BPS 22616
+  · 104700 한국철강: EPS=-511 BPS=22616 ROE=-2.1 DPS=750.0 성장=-18.9
+reprt_code='11011', fs_div='CFS' (사업보고서, 연결제무제표)'
+{'status': '013', 'message': '조회된 데이타가 없습니다.'}
+
+reprt_code='11011', fs_div='OFS' (사업보고서, 별도(개별)제무제표)'
+reprt_code='11011', fs_div='CFS' (사업보고서, 연결제무제표)'
+{'status': '013', 'message': '조회된 데이타가 없습니다.'}
+
+reprt_code='11011', fs_div='OFS' (사업보고서, 별도(개별)제무제표)'
+reprt_code='11011', fs_div='CFS' (사업보고서, 연결제무제표)'
+{'status': '013', 'message': '조회된 데이타가 없습니다.'}
+
+reprt_code='11011', fs_div='OFS' (사업보고서, 별도(개별)제무제표)'
+reprt_code='11011', fs_div='CFS' (사업보고서, 연결제무제표)'
+{'status': '013', 'message': '조회된 데이타가 없습니다.'}
+
+reprt_code='11011', fs_div='OFS' (사업보고서, 별도(개별)제무제표)'
+reprt_code='11013', fs_div='CFS' (1분기보고서, 연결제무제표)'
+{'status': '013', 'message': '조회된 데이타가 없습니다.'}
+
+reprt_code='11013', fs_div='OFS' (1분기보고서, 별도(개별)제무제표)'
+reprt_code='11012', fs_div='CFS' (반기보고서, 연결제무제표)'
+{'status': '013', 'message': '조회된 데이타가 없습니다.'}
+
+reprt_code='11012', fs_div='OFS' (반기보고서, 별도(개별)제무제표)'
+reprt_code='11014', fs_div='CFS' (3분기보고서, 연결제무제표)'
+{'status': '013', 'message': '조회된 데이타가 없습니다.'}
+
+reprt_code='11014', fs_div='OFS' (3분기보고서, 별도(개별)제무제표)'
+reprt_code='11013', fs_div='CFS' (1분기보고서, 연결제무제표)'
+{'status': '013', 'message': '조회된 데이타가 없습니다.'}
+
+reprt_code='11013', fs_div='OFS' (1분기보고서, 별도(개별)제무제표)'
+  ✅ 진에어 검증 통과 PER None PBR 1.3 EPS -655 BPS 4765
+  · 272450 진에어: EPS=-655 BPS=4765 ROE=-12.9 DPS=0.0 성장=-5.5
+reprt_code='11011', fs_div='CFS' (사업보고서, 연결제무제표)'
+{'status': '013', 'message': '조회된 데이타가 없습니다.'}
+
+reprt_code='11011', fs_div='OFS' (사업보고서, 별도(개별)제무제표)'
+reprt_code='11011', fs_div='CFS' (사업보고서, 연결제무제표)'
+{'status': '013', 'message': '조회된 데이타가 없습니다.'}
+
+reprt_code='11011', fs_div='OFS' (사업보고서, 별도(개별)제무제표)'
+reprt_code='11011', fs_div='CFS' (사업보고서, 연결제무제표)'
+{'status': '013', 'message': '조회된 데이타가 없습니다.'}
+
+reprt_code='11011', fs_div='OFS' (사업보고서, 별도(개별)제무제표)'
+reprt_code='11011', fs_div='CFS' (사업보고서, 연결제무제표)'
+{'status': '013', 'message': '조회된 데이타가 없습니다.'}
+
+reprt_code='11011', fs_div='OFS' (사업보고서, 별도(개별)제무제표)'
+reprt_code='11013', fs_div='CFS' (1분기보고서, 연결제무제표)'
+{'status': '013', 'message': '조회된 데이타가 없습니다.'}
+
+reprt_code='11013', fs_div='OFS' (1분기보고서, 별도(개별)제무제표)'
+reprt_code='11012', fs_div='CFS' (반기보고서, 연결제무제표)'
+{'status': '013', 'message': '조회된 데이타가 없습니다.'}
+
+reprt_code='11012', fs_div='OFS' (반기보고서, 별도(개별)제무제표)'
+reprt_code='11014', fs_div='CFS' (3분기보고서, 연결제무제표)'
+{'status': '013', 'message': '조회된 데이타가 없습니다.'}
+
+reprt_code='11014', fs_div='OFS' (3분기보고서, 별도(개별)제무제표)'
+reprt_code='11013', fs_div='CFS' (1분기보고서, 연결제무제표)'
+{'status': '013', 'message': '조회된 데이타가 없습니다.'}
+
+reprt_code='11013', fs_div='OFS' (1분기보고서, 별도(개별)제무제표)'
+  ✅ 휴메딕스 검증 통과 PER 5.9 PBR 0.96 EPS 4886 BPS 30091
+  · 200670 휴메딕스: EPS=4886 BPS=30091 ROE=18.7 DPS=920.0 성장=5.1
+reprt_code='11011', fs_div='CFS' (사업보고서, 연결제무제표)'
+reprt_code='11011', fs_div='CFS' (사업보고서, 연결제무제표)'
+reprt_code='11011', fs_div='CFS' (사업보고서, 연결제무제표)'
+reprt_code='11011', fs_div='CFS' (사업보고서, 연결제무제표)'
+reprt_code='11013', fs_div='CFS' (1분기보고서, 연결제무제표)'
+reprt_code='11012', fs_div='CFS' (반기보고서, 연결제무제표)'
+reprt_code='11014', fs_div='CFS' (3분기보고서, 연결제무제표)'
+reprt_code='11013', fs_div='CFS' (1분기보고서, 연결제무제표)'
+  ✅ 한라IMS 검증 통과 PER 12.1 PBR 1.66 EPS 1557 BPS 11399
+  · 092460 한라IMS: EPS=1557 BPS=11399 ROE=14.3 DPS=620.0 성장=28.1
+reprt_code='11011', fs_div='CFS' (사업보고서, 연결제무제표)'
+{'status': '013', 'message': '조회된 데이타가 없습니다.'}
+
+reprt_code='11011', fs_div='OFS' (사업보고서, 별도(개별)제무제표)'
+{'status': '013', 'message': '조회된 데이타가 없습니다.'}
+
+reprt_code='11011', fs_div='CFS' (사업보고서, 연결제무제표)'
+{'status': '013', 'message': '조회된 데이타가 없습니다.'}
+
+reprt_code='11011', fs_div='OFS' (사업보고서, 별도(개별)제무제표)'
+{'status': '013', 'message': '조회된 데이타가 없습니다.'}
+
+reprt_code='11011', fs_div='CFS' (사업보고서, 연결제무제표)'
+{'status': '013', 'message': '조회된 데이타가 없습니다.'}
+
+reprt_code='11011', fs_div='OFS' (사업보고서, 별도(개별)제무제표)'
+{'status': '013', 'message': '조회된 데이타가 없습니다.'}
+
+reprt_code='11011', fs_div='CFS' (사업보고서, 연결제무제표)'
+{'status': '013', 'message': '조회된 데이타가 없습니다.'}
+
+reprt_code='11011', fs_div='OFS' (사업보고서, 별도(개별)제무제표)'
+{'status': '013', 'message': '조회된 데이타가 없습니다.'}
+
+reprt_code='11013', fs_div='CFS' (1분기보고서, 연결제무제표)'
+{'status': '013', 'message': '조회된 데이타가 없습니다.'}
+
+reprt_code='11013', fs_div='OFS' (1분기보고서, 별도(개별)제무제표)'
+{'status': '013', 'message': '조회된 데이타가 없습니다.'}
+
+reprt_code='11012', fs_div='CFS' (반기보고서, 연결제무제표)'
+{'status': '013', 'message': '조회된 데이타가 없습니다.'}
+
+reprt_code='11012', fs_div='OFS' (반기보고서, 별도(개별)제무제표)'
+{'status': '013', 'message': '조회된 데이타가 없습니다.'}
+
+reprt_code='11014', fs_div='CFS' (3분기보고서, 연결제무제표)'
+{'status': '013', 'message': '조회된 데이타가 없습니다.'}
+
+reprt_code='11014', fs_div='OFS' (3분기보고서, 별도(개별)제무제표)'
+{'status': '013', 'message': '조회된 데이타가 없습니다.'}
+
+reprt_code='11013', fs_div='CFS' (1분기보고서, 연결제무제표)'
+{'status': '013', 'message': '조회된 데이타가 없습니다.'}
+
+reprt_code='11013', fs_div='OFS' (1분기보고서, 별도(개별)제무제표)'
+{'status': '013', 'message': '조회된 데이타가 없습니다.'}
+
+{'status': '013', 'message': '조회된 데이타가 없습니다.'}
+
+{'status': '013', 'message': '조회된 데이타가 없습니다.'}
+
+{'status': '013', 'message': '조회된 데이타가 없습니다.'}
+
+{'status': '013', 'message': '조회된 데이타가 없습니다.'}
+
+{'status': '013', 'message': '조회된 데이타가 없습니다.'}
+  ⚠️ 이엠티: 참조값 없음 — 자체 PER·EPS 미검증
+  · 232530 이엠티: EPS=None BPS=None ROE=None DPS=None 성장=None
+reprt_code='11011', fs_div='CFS' (사업보고서, 연결제무제표)'
+{'status': '013', 'message': '조회된 데이타가 없습니다.'}
+
+reprt_code='11011', fs_div='OFS' (사업보고서, 별도(개별)제무제표)'
+reprt_code='11011', fs_div='CFS' (사업보고서, 연결제무제표)'
+{'status': '013', 'message': '조회된 데이타가 없습니다.'}
+
+reprt_code='11011', fs_div='OFS' (사업보고서, 별도(개별)제무제표)'
+{'status': '013', 'message': '조회된 데이타가 없습니다.'}
+
+reprt_code='11011', fs_div='CFS' (사업보고서, 연결제무제표)'
+{'status': '013', 'message': '조회된 데이타가 없습니다.'}
+
+reprt_code='11011', fs_div='OFS' (사업보고서, 별도(개별)제무제표)'
+{'status': '013', 'message': '조회된 데이타가 없습니다.'}
+
+reprt_code='11011', fs_div='CFS' (사업보고서, 연결제무제표)'
+{'status': '013', 'message': '조회된 데이타가 없습니다.'}
+
+reprt_code='11011', fs_div='OFS' (사업보고서, 별도(개별)제무제표)'
+{'status': '013', 'message': '조회된 데이타가 없습니다.'}
+
+reprt_code='11013', fs_div='CFS' (1분기보고서, 연결제무제표)'
+{'status': '013', 'message': '조회된 데이타가 없습니다.'}
+
+reprt_code='11013', fs_div='OFS' (1분기보고서, 별도(개별)제무제표)'
+{'status': '013', 'message': '조회된 데이타가 없습니다.'}
+
+reprt_code='11012', fs_div='CFS' (반기보고서, 연결제무제표)'
+{'status': '013', 'message': '조회된 데이타가 없습니다.'}
+
+reprt_code='11012', fs_div='OFS' (반기보고서, 별도(개별)제무제표)'
+{'status': '013', 'message': '조회된 데이타가 없습니다.'}
+
+reprt_code='11014', fs_div='CFS' (3분기보고서, 연결제무제표)'
+{'status': '013', 'message': '조회된 데이타가 없습니다.'}
+
+reprt_code='11014', fs_div='OFS' (3분기보고서, 별도(개별)제무제표)'
+{'status': '013', 'message': '조회된 데이타가 없습니다.'}
+
+reprt_code='11013', fs_div='CFS' (1분기보고서, 연결제무제표)'
+{'status': '013', 'message': '조회된 데이타가 없습니다.'}
+
+reprt_code='11013', fs_div='OFS' (1분기보고서, 별도(개별)제무제표)'
+{'status': '013', 'message': '조회된 데이타가 없습니다.'}
+  ❌ 비츠로넥스텍 중대오류 차단 → 해당 지표 숨김: BPS 2503↔ref 1932.0
+  · 488900 비츠로넥스텍: EPS=None BPS=None ROE=None DPS=None 성장=None
+reprt_code='11011', fs_div='CFS' (사업보고서, 연결제무제표)'
+reprt_code='11011', fs_div='CFS' (사업보고서, 연결제무제표)'
+reprt_code='11011', fs_div='CFS' (사업보고서, 연결제무제표)'
+reprt_code='11011', fs_div='CFS' (사업보고서, 연결제무제표)'
+reprt_code='11013', fs_div='CFS' (1분기보고서, 연결제무제표)'
+reprt_code='11012', fs_div='CFS' (반기보고서, 연결제무제표)'
+reprt_code='11014', fs_div='CFS' (3분기보고서, 연결제무제표)'
+reprt_code='11013', fs_div='CFS' (1분기보고서, 연결제무제표)'
+  ✅ 남해화학 검증 통과 PER 24.3 PBR 0.58 EPS 267 BPS 11259
+  · 025860 남해화학: EPS=267 BPS=11259 ROE=2.1 DPS=90.0 성장=5.6
+reprt_code='11011', fs_div='CFS' (사업보고서, 연결제무제표)'
+reprt_code='11011', fs_div='CFS' (사업보고서, 연결제무제표)'
+reprt_code='11011', fs_div='CFS' (사업보고서, 연결제무제표)'
+reprt_code='11011', fs_div='CFS' (사업보고서, 연결제무제표)'
+reprt_code='11013', fs_div='CFS' (1분기보고서, 연결제무제표)'
+reprt_code='11012', fs_div='CFS' (반기보고서, 연결제무제표)'
+reprt_code='11014', fs_div='CFS' (3분기보고서, 연결제무제표)'
+reprt_code='11013', fs_div='CFS' (1분기보고서, 연결제무제표)'
+  ✅ LB세미콘 검증 통과 PER None PBR 1.17 EPS -2479 BPS 4748
+  · 061970 LB세미콘: EPS=-2479 BPS=4748 ROE=-45.3 DPS=None 성장=6.4
+reprt_code='11011', fs_div='CFS' (사업보고서, 연결제무제표)'
+reprt_code='11011', fs_div='CFS' (사업보고서, 연결제무제표)'
+reprt_code='11011', fs_div='CFS' (사업보고서, 연결제무제표)'
+reprt_code='11011', fs_div='CFS' (사업보고서, 연결제무제표)'
+reprt_code='11013', fs_div='CFS' (1분기보고서, 연결제무제표)'
+reprt_code='11012', fs_div='CFS' (반기보고서, 연결제무제표)'
+reprt_code='11014', fs_div='CFS' (3분기보고서, 연결제무제표)'
+reprt_code='11013', fs_div='CFS' (1분기보고서, 연결제무제표)'
+  ✅ KG케미칼 검증 통과 PER 4.4 PBR 0.31 EPS 1098 BPS 15240
+  · 001390 KG케미칼: EPS=1098 BPS=15240 ROE=7.5 DPS=150.0 성장=2.7
+reprt_code='11011', fs_div='CFS' (사업보고서, 연결제무제표)'
+reprt_code='11011', fs_div='CFS' (사업보고서, 연결제무제표)'
+reprt_code='11011', fs_div='CFS' (사업보고서, 연결제무제표)'
+reprt_code='11011', fs_div='CFS' (사업보고서, 연결제무제표)'
+reprt_code='11013', fs_div='CFS' (1분기보고서, 연결제무제표)'
+reprt_code='11012', fs_div='CFS' (반기보고서, 연결제무제표)'
+reprt_code='11014', fs_div='CFS' (3분기보고서, 연결제무제표)'
+reprt_code='11013', fs_div='CFS' (1분기보고서, 연결제무제표)'
+  ✅ 아세아제지 검증 통과 PER 12.2 PBR 0.37 EPS 666 BPS 22014
+  · 002310 아세아제지: EPS=666 BPS=22014 ROE=3.1 DPS=200.0 성장=-4.0
+reprt_code='11011', fs_div='CFS' (사업보고서, 연결제무제표)'
+reprt_code='11011', fs_div='CFS' (사업보고서, 연결제무제표)'
+reprt_code='11011', fs_div='CFS' (사업보고서, 연결제무제표)'
+reprt_code='11011', fs_div='CFS' (사업보고서, 연결제무제표)'
+reprt_code='11013', fs_div='CFS' (1분기보고서, 연결제무제표)'
+reprt_code='11012', fs_div='CFS' (반기보고서, 연결제무제표)'
+reprt_code='11014', fs_div='CFS' (3분기보고서, 연결제무제표)'
+reprt_code='11013', fs_div='CFS' (1분기보고서, 연결제무제표)'
+  ✅ 대원강업 검증 통과 PER 5.9 PBR 0.54 EPS 867 BPS 9437
+  · 000430 대원강업: EPS=867 BPS=9437 ROE=9.7 DPS=110.0 성장=16.9
+reprt_code='11011', fs_div='CFS' (사업보고서, 연결제무제표)'
+reprt_code='11011', fs_div='CFS' (사업보고서, 연결제무제표)'
+reprt_code='11011', fs_div='CFS' (사업보고서, 연결제무제표)'
+reprt_code='11011', fs_div='CFS' (사업보고서, 연결제무제표)'
+reprt_code='11013', fs_div='CFS' (1분기보고서, 연결제무제표)'
+reprt_code='11012', fs_div='CFS' (반기보고서, 연결제무제표)'
+reprt_code='11014', fs_div='CFS' (3분기보고서, 연결제무제표)'
+reprt_code='11013', fs_div='CFS' (1분기보고서, 연결제무제표)'
+  ✅ 지노믹트리 검증 통과 PER None PBR 2.52 EPS -333 BPS 5053
+  · 228760 지노믹트리: EPS=-333 BPS=5053 ROE=-6.6 DPS=None 성장=59.2
+reprt_code='11011', fs_div='CFS' (사업보고서, 연결제무제표)'
+reprt_code='11011', fs_div='CFS' (사업보고서, 연결제무제표)'
+reprt_code='11011', fs_div='CFS' (사업보고서, 연결제무제표)'
+reprt_code='11011', fs_div='CFS' (사업보고서, 연결제무제표)'
+{'status': '013', 'message': '조회된 데이타가 없습니다.'}
+
+reprt_code='11011', fs_div='OFS' (사업보고서, 별도(개별)제무제표)'
+{'status': '013', 'message': '조회된 데이타가 없습니다.'}
+
+reprt_code='11013', fs_div='CFS' (1분기보고서, 연결제무제표)'
+reprt_code='11012', fs_div='CFS' (반기보고서, 연결제무제표)'
+reprt_code='11014', fs_div='CFS' (3분기보고서, 연결제무제표)'
+reprt_code='11013', fs_div='CFS' (1분기보고서, 연결제무제표)'
+  ✅ 한국토지신탁 검증 통과 PER 15.2 PBR 0.26 EPS 82 BPS 4768
+  · 034830 한국토지신탁: EPS=82 BPS=4768 ROE=2.1 DPS=None 성장=-22.0
+reprt_code='11011', fs_div='CFS' (사업보고서, 연결제무제표)'
+reprt_code='11011', fs_div='CFS' (사업보고서, 연결제무제표)'
+reprt_code='11011', fs_div='CFS' (사업보고서, 연결제무제표)'
+reprt_code='11011', fs_div='CFS' (사업보고서, 연결제무제표)'
+reprt_code='11013', fs_div='CFS' (1분기보고서, 연결제무제표)'
+reprt_code='11012', fs_div='CFS' (반기보고서, 연결제무제표)'
+reprt_code='11014', fs_div='CFS' (3분기보고서, 연결제무제표)'
+reprt_code='11013', fs_div='CFS' (1분기보고서, 연결제무제표)'
+  ✅ 슈프리마 검증 통과 PER 9.1 PBR 1.11 EPS 4925 BPS 40362
+  · 236200 슈프리마: EPS=4925 BPS=40362 ROE=13.0 DPS=None 성장=26.9
+reprt_code='11011', fs_div='CFS' (사업보고서, 연결제무제표)'
+reprt_code='11011', fs_div='CFS' (사업보고서, 연결제무제표)'
+reprt_code='11011', fs_div='CFS' (사업보고서, 연결제무제표)'
+reprt_code='11011', fs_div='CFS' (사업보고서, 연결제무제표)'
+reprt_code='11013', fs_div='CFS' (1분기보고서, 연결제무제표)'
+reprt_code='11012', fs_div='CFS' (반기보고서, 연결제무제표)'
+reprt_code='11014', fs_div='CFS' (3분기보고서, 연결제무제표)'
+reprt_code='11013', fs_div='CFS' (1분기보고서, 연결제무제표)'
+  ❌ 광동제약 중대오류 차단 → 해당 지표 숨김: EPS 515↔ref 417.0
+  · 009290 광동제약: EPS=None BPS=13075 ROE=3.5 DPS=100.0 성장=1.1
+reprt_code='11011', fs_div='CFS' (사업보고서, 연결제무제표)'
+reprt_code='11011', fs_div='CFS' (사업보고서, 연결제무제표)'
+reprt_code='11011', fs_div='CFS' (사업보고서, 연결제무제표)'
+reprt_code='11011', fs_div='CFS' (사업보고서, 연결제무제표)'
+reprt_code='11013', fs_div='CFS' (1분기보고서, 연결제무제표)'
+reprt_code='11012', fs_div='CFS' (반기보고서, 연결제무제표)'
+reprt_code='11014', fs_div='CFS' (3분기보고서, 연결제무제표)'
+reprt_code='11013', fs_div='CFS' (1분기보고서, 연결제무제표)'
+  ✅ 칩스앤미디어 검증 통과 PER 37.8 PBR 3.56 EPS 388 BPS 4121
+  · 094360 칩스앤미디어: EPS=388 BPS=4121 ROE=9.9 DPS=116.0 성장=5.1
+reprt_code='11011', fs_div='CFS' (사업보고서, 연결제무제표)'
+reprt_code='11011', fs_div='CFS' (사업보고서, 연결제무제표)'
+reprt_code='11011', fs_div='CFS' (사업보고서, 연결제무제표)'
+reprt_code='11011', fs_div='CFS' (사업보고서, 연결제무제표)'
+{'status': '013', 'message': '조회된 데이타가 없습니다.'}
+
+reprt_code='11011', fs_div='OFS' (사업보고서, 별도(개별)제무제표)'
+{'status': '013', 'message': '조회된 데이타가 없습니다.'}
+
+reprt_code='11013', fs_div='CFS' (1분기보고서, 연결제무제표)'
+reprt_code='11012', fs_div='CFS' (반기보고서, 연결제무제표)'
+reprt_code='11014', fs_div='CFS' (3분기보고서, 연결제무제표)'
+reprt_code='11013', fs_div='CFS' (1분기보고서, 연결제무제표)'
+  ✅ DSC인베스트먼트 검증 통과 PER 14.9 PBR 2.29 EPS 791 BPS 5135
+  · 241520 DSC인베스트먼트: EPS=791 BPS=5135 ROE=17.7 DPS=40.0 성장=16.9
+reprt_code='11011', fs_div='CFS' (사업보고서, 연결제무제표)'
+reprt_code='11011', fs_div='CFS' (사업보고서, 연결제무제표)'
+reprt_code='11011', fs_div='CFS' (사업보고서, 연결제무제표)'
+reprt_code='11011', fs_div='CFS' (사업보고서, 연결제무제표)'
+{'status': '013', 'message': '조회된 데이타가 없습니다.'}
+
+reprt_code='11011', fs_div='OFS' (사업보고서, 별도(개별)제무제표)'
+{'status': '013', 'message': '조회된 데이타가 없습니다.'}
+
+reprt_code='11013', fs_div='CFS' (1분기보고서, 연결제무제표)'
+reprt_code='11012', fs_div='CFS' (반기보고서, 연결제무제표)'
+reprt_code='11014', fs_div='CFS' (3분기보고서, 연결제무제표)'
+reprt_code='11013', fs_div='CFS' (1분기보고서, 연결제무제표)'
+  ❌ 이노스페이스 중대오류 차단 → 해당 지표 숨김: EPS -4171↔ref -3483.0 / BPS 1989↔ref 1673.0
+  · 462350 이노스페이스: EPS=None BPS=None ROE=-141.7 DPS=None 성장=18573.4
+reprt_code='11011', fs_div='CFS' (사업보고서, 연결제무제표)'
+reprt_code='11011', fs_div='CFS' (사업보고서, 연결제무제표)'
+reprt_code='11011', fs_div='CFS' (사업보고서, 연결제무제표)'
+reprt_code='11011', fs_div='CFS' (사업보고서, 연결제무제표)'
+reprt_code='11013', fs_div='CFS' (1분기보고서, 연결제무제표)'
+reprt_code='11012', fs_div='CFS' (반기보고서, 연결제무제표)'
+reprt_code='11014', fs_div='CFS' (3분기보고서, 연결제무제표)'
+reprt_code='11013', fs_div='CFS' (1분기보고서, 연결제무제표)'
+  ✅ 상아프론테크 검증 통과 PER 42.4 PBR 1.5 EPS 462 BPS 13054
+  · 089980 상아프론테크: EPS=462 BPS=13054 ROE=3.6 DPS=200.0 성장=14.1
+reprt_code='11011', fs_div='CFS' (사업보고서, 연결제무제표)'
+reprt_code='11011', fs_div='CFS' (사업보고서, 연결제무제표)'
+reprt_code='11011', fs_div='CFS' (사업보고서, 연결제무제표)'
+reprt_code='11011', fs_div='CFS' (사업보고서, 연결제무제표)'
+reprt_code='11013', fs_div='CFS' (1분기보고서, 연결제무제표)'
+reprt_code='11012', fs_div='CFS' (반기보고서, 연결제무제표)'
+reprt_code='11014', fs_div='CFS' (3분기보고서, 연결제무제표)'
+reprt_code='11013', fs_div='CFS' (1분기보고서, 연결제무제표)'
+  ❌ 드림시큐리티 중대오류 차단 → 해당 지표 숨김: BPS 3042↔ref 1253.0
+  · 203650 드림시큐리티: EPS=69 BPS=None ROE=6.0 DPS=None 성장=18.6
+reprt_code='11011', fs_div='CFS' (사업보고서, 연결제무제표)'
+reprt_code='11011', fs_div='CFS' (사업보고서, 연결제무제표)'
+reprt_code='11011', fs_div='CFS' (사업보고서, 연결제무제표)'
+reprt_code='11011', fs_div='CFS' (사업보고서, 연결제무제표)'
+reprt_code='11013', fs_div='CFS' (1분기보고서, 연결제무제표)'
+reprt_code='11012', fs_div='CFS' (반기보고서, 연결제무제표)'
+reprt_code='11014', fs_div='CFS' (3분기보고서, 연결제무제표)'
+reprt_code='11013', fs_div='CFS' (1분기보고서, 연결제무제표)'
+  ✅ LX하우시스 검증 통과 PER None PBR 0.4 EPS -1098 BPS 87379
+  · 108670 LX하우시스: EPS=-1098 BPS=87379 ROE=-1.3 DPS=1000.0 성장=-11.0
+reprt_code='11011', fs_div='CFS' (사업보고서, 연결제무제표)'
+reprt_code='11011', fs_div='CFS' (사업보고서, 연결제무제표)'
+reprt_code='11011', fs_div='CFS' (사업보고서, 연결제무제표)'
+reprt_code='11011', fs_div='CFS' (사업보고서, 연결제무제표)'
+reprt_code='11013', fs_div='CFS' (1분기보고서, 연결제무제표)'
+reprt_code='11012', fs_div='CFS' (반기보고서, 연결제무제표)'
+reprt_code='11014', fs_div='CFS' (3분기보고서, 연결제무제표)'
+reprt_code='11013', fs_div='CFS' (1분기보고서, 연결제무제표)'
+  ❌ 퍼시스 중대오류 차단 → 해당 지표 숨김: EPS 4199↔ref 3268.0
+  · 016800 퍼시스: EPS=None BPS=66843 ROE=6.4 DPS=1000.0 성장=-7.1
+reprt_code='11011', fs_div='CFS' (사업보고서, 연결제무제표)'
+reprt_code='11011', fs_div='CFS' (사업보고서, 연결제무제표)'
+reprt_code='11011', fs_div='CFS' (사업보고서, 연결제무제표)'
+reprt_code='11011', fs_div='CFS' (사업보고서, 연결제무제표)'
+reprt_code='11013', fs_div='CFS' (1분기보고서, 연결제무제표)'
+reprt_code='11012', fs_div='CFS' (반기보고서, 연결제무제표)'
+reprt_code='11014', fs_div='CFS' (3분기보고서, 연결제무제표)'
+reprt_code='11013', fs_div='CFS' (1분기보고서, 연결제무제표)'
+  ✅ 대상홀딩스 검증 통과 PER None PBR 0.5 EPS -2214 BPS 17226
+  · 084690 대상홀딩스: EPS=-2214 BPS=17226 ROE=-11.8 DPS=300.0 성장=5.1
+reprt_code='11011', fs_div='CFS' (사업보고서, 연결제무제표)'
+reprt_code='11011', fs_div='CFS' (사업보고서, 연결제무제표)'
+reprt_code='11011', fs_div='CFS' (사업보고서, 연결제무제표)'
+reprt_code='11011', fs_div='CFS' (사업보고서, 연결제무제표)'
+reprt_code='11013', fs_div='CFS' (1분기보고서, 연결제무제표)'
+reprt_code='11012', fs_div='CFS' (반기보고서, 연결제무제표)'
+reprt_code='11014', fs_div='CFS' (3분기보고서, 연결제무제표)'
+reprt_code='11013', fs_div='CFS' (1분기보고서, 연결제무제표)'
+  ❌ 컴투스 중대오류 차단 → 해당 지표 숨김: BPS 114052↔ref 84820.0
+  · 078340 컴투스: EPS=1629 BPS=None ROE=2.1 DPS=1300.0 성장=0.4
+reprt_code='11011', fs_div='CFS' (사업보고서, 연결제무제표)'
+reprt_code='11011', fs_div='CFS' (사업보고서, 연결제무제표)'
+reprt_code='11011', fs_div='CFS' (사업보고서, 연결제무제표)'
+reprt_code='11011', fs_div='CFS' (사업보고서, 연결제무제표)'
+reprt_code='11013', fs_div='CFS' (1분기보고서, 연결제무제표)'
+reprt_code='11012', fs_div='CFS' (반기보고서, 연결제무제표)'
+reprt_code='11014', fs_div='CFS' (3분기보고서, 연결제무제표)'
+reprt_code='11013', fs_div='CFS' (1분기보고서, 연결제무제표)'
+  ❌ 대한제강 중대오류 차단 → 해당 지표 숨김: EPS 315↔ref 232.0 / BPS 51579↔ref 27618.0
+  · 084010 대한제강: EPS=None BPS=None ROE=0.9 DPS=500.0 성장=1.8
+reprt_code='11011', fs_div='CFS' (사업보고서, 연결제무제표)'
+reprt_code='11011', fs_div='CFS' (사업보고서, 연결제무제표)'
+reprt_code='11011', fs_div='CFS' (사업보고서, 연결제무제표)'
+reprt_code='11011', fs_div='CFS' (사업보고서, 연결제무제표)'
+reprt_code='11013', fs_div='CFS' (1분기보고서, 연결제무제표)'
+reprt_code='11012', fs_div='CFS' (반기보고서, 연결제무제표)'
+reprt_code='11014', fs_div='CFS' (3분기보고서, 연결제무제표)'
+reprt_code='11013', fs_div='CFS' (1분기보고서, 연결제무제표)'
+  ❌ 롯데이노베이트 중대오류 차단 → 해당 지표 숨김: BPS 41074↔ref 28022.0
+  · 286940 롯데이노베이트: EPS=752 BPS=None ROE=2.7 DPS=700.0 성장=-0.9
+reprt_code='11011', fs_div='CFS' (사업보고서, 연결제무제표)'
+reprt_code='11011', fs_div='CFS' (사업보고서, 연결제무제표)'
+reprt_code='11011', fs_div='CFS' (사업보고서, 연결제무제표)'
+reprt_code='11011', fs_div='CFS' (사업보고서, 연결제무제표)'
+reprt_code='11013', fs_div='CFS' (1분기보고서, 연결제무제표)'
+reprt_code='11012', fs_div='CFS' (반기보고서, 연결제무제표)'
+reprt_code='11014', fs_div='CFS' (3분기보고서, 연결제무제표)'
+reprt_code='11013', fs_div='CFS' (1분기보고서, 연결제무제표)'
+  ✅ 하림 검증 통과 PER 7.8 PBR 0.94 EPS 369 BPS 3080
+  · 136480 하림: EPS=369 BPS=3080 ROE=12.7 DPS=40.0 성장=12.0
+reprt_code='11011', fs_div='CFS' (사업보고서, 연결제무제표)'
+reprt_code='11011', fs_div='CFS' (사업보고서, 연결제무제표)'
+reprt_code='11011', fs_div='CFS' (사업보고서, 연결제무제표)'
+reprt_code='11011', fs_div='CFS' (사업보고서, 연결제무제표)'
+{'status': '013', 'message': '조회된 데이타가 없습니다.'}
+
+reprt_code='11011', fs_div='OFS' (사업보고서, 별도(개별)제무제표)'
+{'status': '013', 'message': '조회된 데이타가 없습니다.'}
+
+reprt_code='11013', fs_div='CFS' (1분기보고서, 연결제무제표)'
+reprt_code='11012', fs_div='CFS' (반기보고서, 연결제무제표)'
+reprt_code='11014', fs_div='CFS' (3분기보고서, 연결제무제표)'
+reprt_code='11013', fs_div='CFS' (1분기보고서, 연결제무제표)'
+  ✅ 필에너지 검증 통과 PER None PBR 2.53 EPS -663 BPS 5572
+  · 378340 필에너지: EPS=-663 BPS=5572 ROE=-11.4 DPS=67.0 성장=-88.4
+reprt_code='11011', fs_div='CFS' (사업보고서, 연결제무제표)'
+reprt_code='11011', fs_div='CFS' (사업보고서, 연결제무제표)'
+reprt_code='11011', fs_div='CFS' (사업보고서, 연결제무제표)'
+reprt_code='11011', fs_div='CFS' (사업보고서, 연결제무제표)'
+reprt_code='11013', fs_div='CFS' (1분기보고서, 연결제무제표)'
+reprt_code='11012', fs_div='CFS' (반기보고서, 연결제무제표)'
+reprt_code='11014', fs_div='CFS' (3분기보고서, 연결제무제표)'
+reprt_code='11013', fs_div='CFS' (1분기보고서, 연결제무제표)'
+  ❌ 동국홀딩스 중대오류 차단 → 해당 지표 숨김: BPS 11658↔ref 14614.0
+  · 001230 동국홀딩스: EPS=132 BPS=None ROE=1.2 DPS=100.0 성장=-0.7
+reprt_code='11011', fs_div='CFS' (사업보고서, 연결제무제표)'
+reprt_code='11011', fs_div='CFS' (사업보고서, 연결제무제표)'
+reprt_code='11011', fs_div='CFS' (사업보고서, 연결제무제표)'
+reprt_code='11011', fs_div='CFS' (사업보고서, 연결제무제표)'
+reprt_code='11013', fs_div='CFS' (1분기보고서, 연결제무제표)'
+reprt_code='11012', fs_div='CFS' (반기보고서, 연결제무제표)'
+reprt_code='11014', fs_div='CFS' (3분기보고서, 연결제무제표)'
+reprt_code='11013', fs_div='CFS' (1분기보고서, 연결제무제표)'
+  ✅ 비츠로테크 검증 통과 PER 59.6 PBR 1.2 EPS 194 BPS 9673
+  · 042370 비츠로테크: EPS=194 BPS=9673 ROE=2.1 DPS=60.0 성장=0.9
+reprt_code='11011', fs_div='CFS' (사업보고서, 연결제무제표)'
+reprt_code='11011', fs_div='CFS' (사업보고서, 연결제무제표)'
+reprt_code='11011', fs_div='CFS' (사업보고서, 연결제무제표)'
+{'status': '013', 'message': '조회된 데이타가 없습니다.'}
+
+reprt_code='11011', fs_div='OFS' (사업보고서, 별도(개별)제무제표)'
+{'status': '013', 'message': '조회된 데이타가 없습니다.'}
+
+reprt_code='11011', fs_div='CFS' (사업보고서, 연결제무제표)'
+{'status': '013', 'message': '조회된 데이타가 없습니다.'}
+
+reprt_code='11011', fs_div='OFS' (사업보고서, 별도(개별)제무제표)'
+{'status': '013', 'message': '조회된 데이타가 없습니다.'}
+
+reprt_code='11013', fs_div='CFS' (1분기보고서, 연결제무제표)'
+reprt_code='11012', fs_div='CFS' (반기보고서, 연결제무제표)'
+reprt_code='11014', fs_div='CFS' (3분기보고서, 연결제무제표)'
+reprt_code='11013', fs_div='CFS' (1분기보고서, 연결제무제표)'
+  ✅ 씨메스로보틱스 검증 통과 PER None PBR 5.54 EPS -1395 BPS 4643
+  · 475400 씨메스로보틱스: EPS=-1395 BPS=4643 ROE=-26.3 DPS=None 성장=89.5
+reprt_code='11011', fs_div='CFS' (사업보고서, 연결제무제표)'
+reprt_code='11011', fs_div='CFS' (사업보고서, 연결제무제표)'
+reprt_code='11011', fs_div='CFS' (사업보고서, 연결제무제표)'
+reprt_code='11011', fs_div='CFS' (사업보고서, 연결제무제표)'
+reprt_code='11013', fs_div='CFS' (1분기보고서, 연결제무제표)'
+reprt_code='11012', fs_div='CFS' (반기보고서, 연결제무제표)'
+reprt_code='11014', fs_div='CFS' (3분기보고서, 연결제무제표)'
+reprt_code='11013', fs_div='CFS' (1분기보고서, 연결제무제표)'
+  ✅ 케이엔제이 검증 통과 PER 11.0 PBR 2.83 EPS 3406 BPS 13209
+  · 272110 케이엔제이: EPS=3406 BPS=13209 ROE=30.6 DPS=None 성장=35.7
+reprt_code='11011', fs_div='CFS' (사업보고서, 연결제무제표)'
+{'status': '013', 'message': '조회된 데이타가 없습니다.'}
+
+reprt_code='11011', fs_div='OFS' (사업보고서, 별도(개별)제무제표)'
+reprt_code='11011', fs_div='CFS' (사업보고서, 연결제무제표)'
+{'status': '013', 'message': '조회된 데이타가 없습니다.'}
+
+reprt_code='11011', fs_div='OFS' (사업보고서, 별도(개별)제무제표)'
+reprt_code='11011', fs_div='CFS' (사업보고서, 연결제무제표)'
+{'status': '013', 'message': '조회된 데이타가 없습니다.'}
+
+reprt_code='11011', fs_div='OFS' (사업보고서, 별도(개별)제무제표)'
+reprt_code='11011', fs_div='CFS' (사업보고서, 연결제무제표)'
+{'status': '013', 'message': '조회된 데이타가 없습니다.'}
+
+reprt_code='11011', fs_div='OFS' (사업보고서, 별도(개별)제무제표)'
+{'status': '013', 'message': '조회된 데이타가 없습니다.'}
+
+reprt_code='11013', fs_div='CFS' (1분기보고서, 연결제무제표)'
+{'status': '013', 'message': '조회된 데이타가 없습니다.'}
+
+reprt_code='11013', fs_div='OFS' (1분기보고서, 별도(개별)제무제표)'
+reprt_code='11012', fs_div='CFS' (반기보고서, 연결제무제표)'
+{'status': '013', 'message': '조회된 데이타가 없습니다.'}
+
+reprt_code='11012', fs_div='OFS' (반기보고서, 별도(개별)제무제표)'
+reprt_code='11014', fs_div='CFS' (3분기보고서, 연결제무제표)'
+{'status': '013', 'message': '조회된 데이타가 없습니다.'}
+
+reprt_code='11014', fs_div='OFS' (3분기보고서, 별도(개별)제무제표)'
+reprt_code='11013', fs_div='CFS' (1분기보고서, 연결제무제표)'
+{'status': '013', 'message': '조회된 데이타가 없습니다.'}
+
+reprt_code='11013', fs_div='OFS' (1분기보고서, 별도(개별)제무제표)'
+  ✅ 사피엔반도체 검증 통과 PER None PBR 22.08 EPS -332 BPS 1644
+  · 452430 사피엔반도체: EPS=-332 BPS=1644 ROE=-19.0 DPS=None 성장=116.6
+reprt_code='11011', fs_div='CFS' (사업보고서, 연결제무제표)'
+{'status': '013', 'message': '조회된 데이타가 없습니다.'}
+
+reprt_code='11011', fs_div='OFS' (사업보고서, 별도(개별)제무제표)'
+reprt_code='11011', fs_div='CFS' (사업보고서, 연결제무제표)'
+{'status': '013', 'message': '조회된 데이타가 없습니다.'}
+
+reprt_code='11011', fs_div='OFS' (사업보고서, 별도(개별)제무제표)'
+reprt_code='11011', fs_div='CFS' (사업보고서, 연결제무제표)'
+{'status': '013', 'message': '조회된 데이타가 없습니다.'}
+
+reprt_code='11011', fs_div='OFS' (사업보고서, 별도(개별)제무제표)'
+reprt_code='11011', fs_div='CFS' (사업보고서, 연결제무제표)'
+{'status': '013', 'message': '조회된 데이타가 없습니다.'}
+
+reprt_code='11011', fs_div='OFS' (사업보고서, 별도(개별)제무제표)'
+reprt_code='11013', fs_div='CFS' (1분기보고서, 연결제무제표)'
+{'status': '013', 'message': '조회된 데이타가 없습니다.'}
+
+reprt_code='11013', fs_div='OFS' (1분기보고서, 별도(개별)제무제표)'
+reprt_code='11012', fs_div='CFS' (반기보고서, 연결제무제표)'
+{'status': '013', 'message': '조회된 데이타가 없습니다.'}
+
+reprt_code='11012', fs_div='OFS' (반기보고서, 별도(개별)제무제표)'
+reprt_code='11014', fs_div='CFS' (3분기보고서, 연결제무제표)'
+{'status': '013', 'message': '조회된 데이타가 없습니다.'}
+
+reprt_code='11014', fs_div='OFS' (3분기보고서, 별도(개별)제무제표)'
+reprt_code='11013', fs_div='CFS' (1분기보고서, 연결제무제표)'
+{'status': '013', 'message': '조회된 데이타가 없습니다.'}
+
+reprt_code='11013', fs_div='OFS' (1분기보고서, 별도(개별)제무제표)'
+  ❌ 큐라클 중대오류 차단 → 해당 지표 숨김: BPS 2573↔ref 1898.0
+  · 365270 큐라클: EPS=-967 BPS=None ROE=-50.3 DPS=None 성장=-99.6
+reprt_code='11011', fs_div='CFS' (사업보고서, 연결제무제표)'
+reprt_code='11011', fs_div='CFS' (사업보고서, 연결제무제표)'
+reprt_code='11011', fs_div='CFS' (사업보고서, 연결제무제표)'
+reprt_code='11011', fs_div='CFS' (사업보고서, 연결제무제표)'
+reprt_code='11013', fs_div='CFS' (1분기보고서, 연결제무제표)'
+reprt_code='11012', fs_div='CFS' (반기보고서, 연결제무제표)'
+reprt_code='11014', fs_div='CFS' (3분기보고서, 연결제무제표)'
+reprt_code='11013', fs_div='CFS' (1분기보고서, 연결제무제표)'
+  ❌ SIMPAC 중대오류 차단 → 해당 지표 숨김: EPS 345↔ref 246.0
+  · 009160 SIMPAC: EPS=None BPS=13168 ROE=2.9 DPS=300.0 성장=50.2
+reprt_code='11011', fs_div='CFS' (사업보고서, 연결제무제표)'
+{'status': '013', 'message': '조회된 데이타가 없습니다.'}
+
+reprt_code='11011', fs_div='OFS' (사업보고서, 별도(개별)제무제표)'
+reprt_code='11011', fs_div='CFS' (사업보고서, 연결제무제표)'
+{'status': '013', 'message': '조회된 데이타가 없습니다.'}
+
+reprt_code='11011', fs_div='OFS' (사업보고서, 별도(개별)제무제표)'
+reprt_code='11011', fs_div='CFS' (사업보고서, 연결제무제표)'
+{'status': '013', 'message': '조회된 데이타가 없습니다.'}
+
+reprt_code='11011', fs_div='OFS' (사업보고서, 별도(개별)제무제표)'
+reprt_code='11011', fs_div='CFS' (사업보고서, 연결제무제표)'
+{'status': '013', 'message': '조회된 데이타가 없습니다.'}
+
+reprt_code='11011', fs_div='OFS' (사업보고서, 별도(개별)제무제표)'
+reprt_code='11013', fs_div='CFS' (1분기보고서, 연결제무제표)'
+{'status': '013', 'message': '조회된 데이타가 없습니다.'}
+
+reprt_code='11013', fs_div='OFS' (1분기보고서, 별도(개별)제무제표)'
+reprt_code='11012', fs_div='CFS' (반기보고서, 연결제무제표)'
+{'status': '013', 'message': '조회된 데이타가 없습니다.'}
+
+reprt_code='11012', fs_div='OFS' (반기보고서, 별도(개별)제무제표)'
+reprt_code='11014', fs_div='CFS' (3분기보고서, 연결제무제표)'
+{'status': '013', 'message': '조회된 데이타가 없습니다.'}
+
+reprt_code='11014', fs_div='OFS' (3분기보고서, 별도(개별)제무제표)'
+reprt_code='11013', fs_div='CFS' (1분기보고서, 연결제무제표)'
+{'status': '013', 'message': '조회된 데이타가 없습니다.'}
+
+reprt_code='11013', fs_div='OFS' (1분기보고서, 별도(개별)제무제표)'
+  ✅ 유나이티드제약 검증 통과 PER 7.1 PBR 0.6 EPS 2630 BPS 31331
+  · 033270 유나이티드제약: EPS=2630 BPS=31331 ROE=9.1 DPS=610.0 성장=0.0
+reprt_code='11011', fs_div='CFS' (사업보고서, 연결제무제표)'
+reprt_code='11011', fs_div='CFS' (사업보고서, 연결제무제표)'
+{'status': '013', 'message': '조회된 데이타가 없습니다.'}
+
+reprt_code='11011', fs_div='OFS' (사업보고서, 별도(개별)제무제표)'
+reprt_code='11011', fs_div='CFS' (사업보고서, 연결제무제표)'
+{'status': '013', 'message': '조회된 데이타가 없습니다.'}
+
+reprt_code='11011', fs_div='OFS' (사업보고서, 별도(개별)제무제표)'
+reprt_code='11011', fs_div='CFS' (사업보고서, 연결제무제표)'
+{'status': '013', 'message': '조회된 데이타가 없습니다.'}
+
+reprt_code='11011', fs_div='OFS' (사업보고서, 별도(개별)제무제표)'
+reprt_code='11013', fs_div='CFS' (1분기보고서, 연결제무제표)'
+{'status': '013', 'message': '조회된 데이타가 없습니다.'}
+
+reprt_code='11013', fs_div='OFS' (1분기보고서, 별도(개별)제무제표)'
+reprt_code='11012', fs_div='CFS' (반기보고서, 연결제무제표)'
+{'status': '013', 'message': '조회된 데이타가 없습니다.'}
+
+reprt_code='11012', fs_div='OFS' (반기보고서, 별도(개별)제무제표)'
+reprt_code='11014', fs_div='CFS' (3분기보고서, 연결제무제표)'
+{'status': '013', 'message': '조회된 데이타가 없습니다.'}
+
+reprt_code='11014', fs_div='OFS' (3분기보고서, 별도(개별)제무제표)'
+reprt_code='11013', fs_div='CFS' (1분기보고서, 연결제무제표)'
+  ✅ 바이오다인 검증 통과 PER 202.7 PBR 6.97 EPS 49 BPS 1425
+  · 314930 바이오다인: EPS=49 BPS=1425 ROE=3.3 DPS=None 성장=33.3
+reprt_code='11011', fs_div='CFS' (사업보고서, 연결제무제표)'
+reprt_code='11011', fs_div='CFS' (사업보고서, 연결제무제표)'
+reprt_code='11011', fs_div='CFS' (사업보고서, 연결제무제표)'
+reprt_code='11011', fs_div='CFS' (사업보고서, 연결제무제표)'
+reprt_code='11013', fs_div='CFS' (1분기보고서, 연결제무제표)'
+reprt_code='11012', fs_div='CFS' (반기보고서, 연결제무제표)'
+reprt_code='11014', fs_div='CFS' (3분기보고서, 연결제무제표)'
+reprt_code='11013', fs_div='CFS' (1분기보고서, 연결제무제표)'
+  ✅ 삼영 검증 통과 PER None PBR 3.06 EPS None BPS 2831
+  · 003720 삼영: EPS=None BPS=2831 ROE=None DPS=20.0 성장=21.6
+reprt_code='11011', fs_div='CFS' (사업보고서, 연결제무제표)'
+{'status': '013', 'message': '조회된 데이타가 없습니다.'}
+
+reprt_code='11011', fs_div='OFS' (사업보고서, 별도(개별)제무제표)'
+reprt_code='11011', fs_div='CFS' (사업보고서, 연결제무제표)'
+reprt_code='11011', fs_div='CFS' (사업보고서, 연결제무제표)'
+{'status': '013', 'message': '조회된 데이타가 없습니다.'}
+
+reprt_code='11011', fs_div='OFS' (사업보고서, 별도(개별)제무제표)'
+reprt_code='11011', fs_div='CFS' (사업보고서, 연결제무제표)'
+{'status': '013', 'message': '조회된 데이타가 없습니다.'}
+
+reprt_code='11011', fs_div='OFS' (사업보고서, 별도(개별)제무제표)'
+{'status': '013', 'message': '조회된 데이타가 없습니다.'}
+
+reprt_code='11013', fs_div='CFS' (1분기보고서, 연결제무제표)'
+reprt_code='11012', fs_div='CFS' (반기보고서, 연결제무제표)'
+{'status': '013', 'message': '조회된 데이타가 없습니다.'}
+
+reprt_code='11012', fs_div='OFS' (반기보고서, 별도(개별)제무제표)'
+reprt_code='11014', fs_div='CFS' (3분기보고서, 연결제무제표)'
+{'status': '013', 'message': '조회된 데이타가 없습니다.'}
+
+reprt_code='11014', fs_div='OFS' (3분기보고서, 별도(개별)제무제표)'
+reprt_code='11013', fs_div='CFS' (1분기보고서, 연결제무제표)'
+{'status': '013', 'message': '조회된 데이타가 없습니다.'}
+
+reprt_code='11013', fs_div='OFS' (1분기보고서, 별도(개별)제무제표)'
+  ✅ 한양증권 검증 통과 PER 5.5 PBR 0.46 EPS 4185 BPS 50188
+  · 001750 한양증권: EPS=4185 BPS=50188 ROE=9.3 DPS=1600.0 성장=9.1
+reprt_code='11011', fs_div='CFS' (사업보고서, 연결제무제표)'
+reprt_code='11011', fs_div='CFS' (사업보고서, 연결제무제표)'
+reprt_code='11011', fs_div='CFS' (사업보고서, 연결제무제표)'
+reprt_code='11011', fs_div='CFS' (사업보고서, 연결제무제표)'
+reprt_code='11013', fs_div='CFS' (1분기보고서, 연결제무제표)'
+reprt_code='11012', fs_div='CFS' (반기보고서, 연결제무제표)'
+reprt_code='11014', fs_div='CFS' (3분기보고서, 연결제무제표)'
+reprt_code='11013', fs_div='CFS' (1분기보고서, 연결제무제표)'
+  ✅ 위메이드맥스 검증 통과 PER None PBR 0.61 EPS -541 BPS 5698
+  · 101730 위메이드맥스: EPS=-541 BPS=5698 ROE=-9.7 DPS=0.0 성장=98.5
+reprt_code='11011', fs_div='CFS' (사업보고서, 연결제무제표)'
+reprt_code='11011', fs_div='CFS' (사업보고서, 연결제무제표)'
+reprt_code='11011', fs_div='CFS' (사업보고서, 연결제무제표)'
+reprt_code='11011', fs_div='CFS' (사업보고서, 연결제무제표)'
+reprt_code='11013', fs_div='CFS' (1분기보고서, 연결제무제표)'
+reprt_code='11012', fs_div='CFS' (반기보고서, 연결제무제표)'
+reprt_code='11014', fs_div='CFS' (3분기보고서, 연결제무제표)'
+reprt_code='11013', fs_div='CFS' (1분기보고서, 연결제무제표)'
+  ✅ 한국정보통신 검증 통과 PER 7.5 PBR 0.83 EPS 1041 BPS 9413
+  · 025770 한국정보통신: EPS=1041 BPS=9413 ROE=11.4 DPS=290.0 성장=5.7
+reprt_code='11011', fs_div='CFS' (사업보고서, 연결제무제표)'
+reprt_code='11011', fs_div='CFS' (사업보고서, 연결제무제표)'
+reprt_code='11011', fs_div='CFS' (사업보고서, 연결제무제표)'
+reprt_code='11011', fs_div='CFS' (사업보고서, 연결제무제표)'
+reprt_code='11013', fs_div='CFS' (1분기보고서, 연결제무제표)'
+reprt_code='11012', fs_div='CFS' (반기보고서, 연결제무제표)'
+reprt_code='11014', fs_div='CFS' (3분기보고서, 연결제무제표)'
+reprt_code='11013', fs_div='CFS' (1분기보고서, 연결제무제표)'
+  ✅ JW홀딩스 검증 통과 PER 4.0 PBR 1.01 EPS 994 BPS 3906
+  · 096760 JW홀딩스: EPS=994 BPS=3906 ROE=27.7 DPS=215.0 성장=9.2
+reprt_code='11011', fs_div='CFS' (사업보고서, 연결제무제표)'
+reprt_code='11011', fs_div='CFS' (사업보고서, 연결제무제표)'
+reprt_code='11011', fs_div='CFS' (사업보고서, 연결제무제표)'
+reprt_code='11011', fs_div='CFS' (사업보고서, 연결제무제표)'
+reprt_code='11013', fs_div='CFS' (1분기보고서, 연결제무제표)'
+reprt_code='11012', fs_div='CFS' (반기보고서, 연결제무제표)'
+reprt_code='11014', fs_div='CFS' (3분기보고서, 연결제무제표)'
+reprt_code='11013', fs_div='CFS' (1분기보고서, 연결제무제표)'
+  ✅ 나이스정보통신 검증 통과 PER 5.2 PBR 0.63 EPS 5591 BPS 45838
+  · 036800 나이스정보통신: EPS=5591 BPS=45838 ROE=13.0 DPS=1100.0 성장=12.3
+reprt_code='11011', fs_div='CFS' (사업보고서, 연결제무제표)'
+reprt_code='11011', fs_div='CFS' (사업보고서, 연결제무제표)'
+reprt_code='11011', fs_div='CFS' (사업보고서, 연결제무제표)'
+reprt_code='11011', fs_div='CFS' (사업보고서, 연결제무제표)'
+reprt_code='11013', fs_div='CFS' (1분기보고서, 연결제무제표)'
+reprt_code='11012', fs_div='CFS' (반기보고서, 연결제무제표)'
+reprt_code='11014', fs_div='CFS' (3분기보고서, 연결제무제표)'
+reprt_code='11013', fs_div='CFS' (1분기보고서, 연결제무제표)'
+  ✅ 아스플로 검증 통과 PER None PBR 5.51 EPS -533 BPS 3947
+  · 159010 아스플로: EPS=-533 BPS=3947 ROE=-13.2 DPS=None 성장=-18.8
+reprt_code='11011', fs_div='CFS' (사업보고서, 연결제무제표)'
+reprt_code='11011', fs_div='CFS' (사업보고서, 연결제무제표)'
+reprt_code='11011', fs_div='CFS' (사업보고서, 연결제무제표)'
+reprt_code='11011', fs_div='CFS' (사업보고서, 연결제무제표)'
+{'status': '013', 'message': '조회된 데이타가 없습니다.'}
+
+reprt_code='11011', fs_div='OFS' (사업보고서, 별도(개별)제무제표)'
+{'status': '013', 'message': '조회된 데이타가 없습니다.'}
+
+reprt_code='11013', fs_div='CFS' (1분기보고서, 연결제무제표)'
+reprt_code='11012', fs_div='CFS' (반기보고서, 연결제무제표)'
+reprt_code='11014', fs_div='CFS' (3분기보고서, 연결제무제표)'
+reprt_code='11013', fs_div='CFS' (1분기보고서, 연결제무제표)'
+  ✅ 슈어소프트테크 검증 통과 PER 29.8 PBR 2.65 EPS 182 BPS 2047
+  · 298830 슈어소프트테크: EPS=182 BPS=2047 ROE=9.6 DPS=0.0 성장=5.8
+reprt_code='11011', fs_div='CFS' (사업보고서, 연결제무제표)'
+reprt_code='11011', fs_div='CFS' (사업보고서, 연결제무제표)'
+reprt_code='11011', fs_div='CFS' (사업보고서, 연결제무제표)'
+reprt_code='11011', fs_div='CFS' (사업보고서, 연결제무제표)'
+reprt_code='11013', fs_div='CFS' (1분기보고서, 연결제무제표)'
+reprt_code='11012', fs_div='CFS' (반기보고서, 연결제무제표)'
+reprt_code='11014', fs_div='CFS' (3분기보고서, 연결제무제표)'
+reprt_code='11013', fs_div='CFS' (1분기보고서, 연결제무제표)'
+  ✅ CJ프레시웨이 검증 통과 PER 5.9 PBR 0.64 EPS 4155 BPS 38073
+  · 051500 CJ프레시웨이: EPS=4155 BPS=38073 ROE=12.0 DPS=500.0 성장=7.9
+reprt_code='11011', fs_div='CFS' (사업보고서, 연결제무제표)'
+reprt_code='11011', fs_div='CFS' (사업보고서, 연결제무제표)'
+reprt_code='11011', fs_div='CFS' (사업보고서, 연결제무제표)'
+reprt_code='11011', fs_div='CFS' (사업보고서, 연결제무제표)'
+reprt_code='11013', fs_div='CFS' (1분기보고서, 연결제무제표)'
+reprt_code='11012', fs_div='CFS' (반기보고서, 연결제무제표)'
+reprt_code='11014', fs_div='CFS' (3분기보고서, 연결제무제표)'
+reprt_code='11013', fs_div='CFS' (1분기보고서, 연결제무제표)'
+  ✅ 에이블씨엔씨 검증 통과 PER 15.1 PBR 3.61 EPS 733 BPS 3075
+  · 078520 에이블씨엔씨: EPS=733 BPS=3075 ROE=22.1 DPS=437.0 성장=-8.3
+reprt_code='11011', fs_div='CFS' (사업보고서, 연결제무제표)'
+reprt_code='11011', fs_div='CFS' (사업보고서, 연결제무제표)'
+reprt_code='11011', fs_div='CFS' (사업보고서, 연결제무제표)'
+reprt_code='11011', fs_div='CFS' (사업보고서, 연결제무제표)'
+reprt_code='11013', fs_div='CFS' (1분기보고서, 연결제무제표)'
+reprt_code='11012', fs_div='CFS' (반기보고서, 연결제무제표)'
+reprt_code='11014', fs_div='CFS' (3분기보고서, 연결제무제표)'
+reprt_code='11013', fs_div='CFS' (1분기보고서, 연결제무제표)'
+  ✅ 바이오플러스 검증 통과 PER 20.4 PBR 1.62 EPS 229 BPS 2893
+  · 099430 바이오플러스: EPS=229 BPS=2893 ROE=8.5 DPS=70.0 성장=36.9
+reprt_code='11011', fs_div='CFS' (사업보고서, 연결제무제표)'
+reprt_code='11011', fs_div='CFS' (사업보고서, 연결제무제표)'
+reprt_code='11011', fs_div='CFS' (사업보고서, 연결제무제표)'
+reprt_code='11011', fs_div='CFS' (사업보고서, 연결제무제표)'
+reprt_code='11013', fs_div='CFS' (1분기보고서, 연결제무제표)'
+reprt_code='11012', fs_div='CFS' (반기보고서, 연결제무제표)'
+reprt_code='11014', fs_div='CFS' (3분기보고서, 연결제무제표)'
+reprt_code='11013', fs_div='CFS' (1분기보고서, 연결제무제표)'
+  ✅ 에프앤가이드 검증 통과 PER 21.8 PBR 4.08 EPS 1158 BPS 6194
+  · 064850 에프앤가이드: EPS=1158 BPS=6194 ROE=20.1 DPS=260.0 성장=12.0
+reprt_code='11011', fs_div='CFS' (사업보고서, 연결제무제표)'
+reprt_code='11011', fs_div='CFS' (사업보고서, 연결제무제표)'
+reprt_code='11011', fs_div='CFS' (사업보고서, 연결제무제표)'
+reprt_code='11011', fs_div='CFS' (사업보고서, 연결제무제표)'
+reprt_code='11013', fs_div='CFS' (1분기보고서, 연결제무제표)'
+reprt_code='11012', fs_div='CFS' (반기보고서, 연결제무제표)'
+reprt_code='11014', fs_div='CFS' (3분기보고서, 연결제무제표)'
+reprt_code='11013', fs_div='CFS' (1분기보고서, 연결제무제표)'
+  ✅ 우리로 검증 통과 PER 111.4 PBR 7.05 EPS 59 BPS 932
+  · 046970 우리로: EPS=59 BPS=932 ROE=6.6 DPS=None 성장=-10.3
+reprt_code='11011', fs_div='CFS' (사업보고서, 연결제무제표)'
+reprt_code='11011', fs_div='CFS' (사업보고서, 연결제무제표)'
+reprt_code='11011', fs_div='CFS' (사업보고서, 연결제무제표)'
+reprt_code='11011', fs_div='CFS' (사업보고서, 연결제무제표)'
+reprt_code='11013', fs_div='CFS' (1분기보고서, 연결제무제표)'
+reprt_code='11012', fs_div='CFS' (반기보고서, 연결제무제표)'
+reprt_code='11014', fs_div='CFS' (3분기보고서, 연결제무제표)'
+reprt_code='11013', fs_div='CFS' (1분기보고서, 연결제무제표)'
+  ✅ 바텍 검증 통과 PER 6.8 PBR 0.56 EPS 2845 BPS 34369
+  · 043150 바텍: EPS=2845 BPS=34369 ROE=8.5 DPS=None 성장=10.7
+reprt_code='11011', fs_div='CFS' (사업보고서, 연결제무제표)'
+{'status': '013', 'message': '조회된 데이타가 없습니다.'}
+
+reprt_code='11011', fs_div='OFS' (사업보고서, 별도(개별)제무제표)'
+reprt_code='11011', fs_div='CFS' (사업보고서, 연결제무제표)'
+{'status': '013', 'message': '조회된 데이타가 없습니다.'}
+
+reprt_code='11011', fs_div='OFS' (사업보고서, 별도(개별)제무제표)'
+reprt_code='11011', fs_div='CFS' (사업보고서, 연결제무제표)'
+{'status': '013', 'message': '조회된 데이타가 없습니다.'}
+
+reprt_code='11011', fs_div='OFS' (사업보고서, 별도(개별)제무제표)'
+reprt_code='11011', fs_div='CFS' (사업보고서, 연결제무제표)'
+{'status': '013', 'message': '조회된 데이타가 없습니다.'}
+
+reprt_code='11011', fs_div='OFS' (사업보고서, 별도(개별)제무제표)'
+reprt_code='11013', fs_div='CFS' (1분기보고서, 연결제무제표)'
+{'status': '013', 'message': '조회된 데이타가 없습니다.'}
+
+reprt_code='11013', fs_div='OFS' (1분기보고서, 별도(개별)제무제표)'
+reprt_code='11012', fs_div='CFS' (반기보고서, 연결제무제표)'
+{'status': '013', 'message': '조회된 데이타가 없습니다.'}
+
+reprt_code='11012', fs_div='OFS' (반기보고서, 별도(개별)제무제표)'
+reprt_code='11014', fs_div='CFS' (3분기보고서, 연결제무제표)'
+{'status': '013', 'message': '조회된 데이타가 없습니다.'}
+
+reprt_code='11014', fs_div='OFS' (3분기보고서, 별도(개별)제무제표)'
+reprt_code='11013', fs_div='CFS' (1분기보고서, 연결제무제표)'
+{'status': '013', 'message': '조회된 데이타가 없습니다.'}
+
+reprt_code='11013', fs_div='OFS' (1분기보고서, 별도(개별)제무제표)'
+  ✅ 광주신세계 검증 통과 PER 6.1 PBR 0.33 EPS 6174 BPS 112795
+  · 037710 광주신세계: EPS=6174 BPS=112795 ROE=5.5 DPS=2400.0 성장=0.3
+reprt_code='11011', fs_div='CFS' (사업보고서, 연결제무제표)'
+reprt_code='11011', fs_div='CFS' (사업보고서, 연결제무제표)'
+reprt_code='11011', fs_div='CFS' (사업보고서, 연결제무제표)'
+reprt_code='11011', fs_div='CFS' (사업보고서, 연결제무제표)'
+reprt_code='11013', fs_div='CFS' (1분기보고서, 연결제무제표)'
+reprt_code='11012', fs_div='CFS' (반기보고서, 연결제무제표)'
+reprt_code='11014', fs_div='CFS' (3분기보고서, 연결제무제표)'
+reprt_code='11013', fs_div='CFS' (1분기보고서, 연결제무제표)'
+  ✅ PKC 검증 통과 PER 48.7 PBR 1.28 EPS 131 BPS 4978
+  · 001340 PKC: EPS=131 BPS=4978 ROE=2.7 DPS=30.0 성장=11.0
+reprt_code='11011', fs_div='CFS' (사업보고서, 연결제무제표)'
+reprt_code='11011', fs_div='CFS' (사업보고서, 연결제무제표)'
+reprt_code='11011', fs_div='CFS' (사업보고서, 연결제무제표)'
+reprt_code='11011', fs_div='CFS' (사업보고서, 연결제무제표)'
+reprt_code='11013', fs_div='CFS' (1분기보고서, 연결제무제표)'
+reprt_code='11012', fs_div='CFS' (반기보고서, 연결제무제표)'
+reprt_code='11014', fs_div='CFS' (3분기보고서, 연결제무제표)'
+reprt_code='11013', fs_div='CFS' (1분기보고서, 연결제무제표)'
+  ✅ 이지홀딩스 검증 통과 PER 10.4 PBR 0.46 EPS 428 BPS 9642
+  · 035810 이지홀딩스: EPS=428 BPS=9642 ROE=4.3 DPS=1361.0 성장=3.2
+reprt_code='11011', fs_div='CFS' (사업보고서, 연결제무제표)'
+{'status': '013', 'message': '조회된 데이타가 없습니다.'}
+
+reprt_code='11011', fs_div='OFS' (사업보고서, 별도(개별)제무제표)'
+reprt_code='11011', fs_div='CFS' (사업보고서, 연결제무제표)'
+{'status': '013', 'message': '조회된 데이타가 없습니다.'}
+
+reprt_code='11011', fs_div='OFS' (사업보고서, 별도(개별)제무제표)'
+reprt_code='11011', fs_div='CFS' (사업보고서, 연결제무제표)'
+{'status': '013', 'message': '조회된 데이타가 없습니다.'}
+
+reprt_code='11011', fs_div='OFS' (사업보고서, 별도(개별)제무제표)'
+reprt_code='11011', fs_div='CFS' (사업보고서, 연결제무제표)'
+{'status': '013', 'message': '조회된 데이타가 없습니다.'}
+
+reprt_code='11011', fs_div='OFS' (사업보고서, 별도(개별)제무제표)'
+reprt_code='11013', fs_div='CFS' (1분기보고서, 연결제무제표)'
+{'status': '013', 'message': '조회된 데이타가 없습니다.'}
+
+reprt_code='11013', fs_div='OFS' (1분기보고서, 별도(개별)제무제표)'
+reprt_code='11012', fs_div='CFS' (반기보고서, 연결제무제표)'
+{'status': '013', 'message': '조회된 데이타가 없습니다.'}
+
+reprt_code='11012', fs_div='OFS' (반기보고서, 별도(개별)제무제표)'
+reprt_code='11014', fs_div='CFS' (3분기보고서, 연결제무제표)'
+{'status': '013', 'message': '조회된 데이타가 없습니다.'}
+
+reprt_code='11014', fs_div='OFS' (3분기보고서, 별도(개별)제무제표)'
+reprt_code='11013', fs_div='CFS' (1분기보고서, 연결제무제표)'
+{'status': '013', 'message': '조회된 데이타가 없습니다.'}
+
+reprt_code='11013', fs_div='OFS' (1분기보고서, 별도(개별)제무제표)'
+  ✅ 천일고속 검증 통과 PER None PBR 37.02 EPS -3770 BPS 5400
+  · 000650 천일고속: EPS=-3770 BPS=5400 ROE=-54.7 DPS=0.0 성장=1.9
+reprt_code='11011', fs_div='CFS' (사업보고서, 연결제무제표)'
+reprt_code='11011', fs_div='CFS' (사업보고서, 연결제무제표)'
+reprt_code='11011', fs_div='CFS' (사업보고서, 연결제무제표)'
+reprt_code='11011', fs_div='CFS' (사업보고서, 연결제무제표)'
+reprt_code='11013', fs_div='CFS' (1분기보고서, 연결제무제표)'
+reprt_code='11012', fs_div='CFS' (반기보고서, 연결제무제표)'
+reprt_code='11014', fs_div='CFS' (3분기보고서, 연결제무제표)'
+reprt_code='11013', fs_div='CFS' (1분기보고서, 연결제무제표)'
+  ✅ 콜마홀딩스 검증 통과 PER 5.6 PBR 0.45 EPS 1483 BPS 18513
+  · 024720 콜마홀딩스: EPS=1483 BPS=18513 ROE=6.3 DPS=270.0 성장=-6.9
+reprt_code='11011', fs_div='CFS' (사업보고서, 연결제무제표)'
+reprt_code='11011', fs_div='CFS' (사업보고서, 연결제무제표)'
+reprt_code='11011', fs_div='CFS' (사업보고서, 연결제무제표)'
+reprt_code='11011', fs_div='CFS' (사업보고서, 연결제무제표)'
+reprt_code='11013', fs_div='CFS' (1분기보고서, 연결제무제표)'
+reprt_code='11012', fs_div='CFS' (반기보고서, 연결제무제표)'
+reprt_code='11014', fs_div='CFS' (3분기보고서, 연결제무제표)'
+reprt_code='11013', fs_div='CFS' (1분기보고서, 연결제무제표)'
+  ❌ 서울가스 중대오류 차단 → 해당 지표 숨김: EPS 6870↔ref 5442.0
+  · 017390 서울가스: EPS=None BPS=286082 ROE=2.4 DPS=None 성장=7.3
+reprt_code='11011', fs_div='CFS' (사업보고서, 연결제무제표)'
+reprt_code='11011', fs_div='CFS' (사업보고서, 연결제무제표)'
+reprt_code='11011', fs_div='CFS' (사업보고서, 연결제무제표)'
+reprt_code='11011', fs_div='CFS' (사업보고서, 연결제무제표)'
+{'status': '013', 'message': '조회된 데이타가 없습니다.'}
+
+reprt_code='11011', fs_div='OFS' (사업보고서, 별도(개별)제무제표)'
+{'status': '013', 'message': '조회된 데이타가 없습니다.'}
+
+reprt_code='11013', fs_div='CFS' (1분기보고서, 연결제무제표)'
+reprt_code='11012', fs_div='CFS' (반기보고서, 연결제무제표)'
+reprt_code='11014', fs_div='CFS' (3분기보고서, 연결제무제표)'
+reprt_code='11013', fs_div='CFS' (1분기보고서, 연결제무제표)'
+  ✅ 한국자산신탁 검증 통과 PER 6.0 PBR 0.26 EPS 388 BPS 8841
+  · 123890 한국자산신탁: EPS=388 BPS=8841 ROE=4.5 DPS=150.0 성장=-9.8
+reprt_code='11011', fs_div='CFS' (사업보고서, 연결제무제표)'
+reprt_code='11011', fs_div='CFS' (사업보고서, 연결제무제표)'
+reprt_code='11011', fs_div='CFS' (사업보고서, 연결제무제표)'
+reprt_code='11011', fs_div='CFS' (사업보고서, 연결제무제표)'
+reprt_code='11013', fs_div='CFS' (1분기보고서, 연결제무제표)'
+reprt_code='11012', fs_div='CFS' (반기보고서, 연결제무제표)'
+reprt_code='11014', fs_div='CFS' (3분기보고서, 연결제무제표)'
+reprt_code='11013', fs_div='CFS' (1분기보고서, 연결제무제표)'
+  ❌ 나무기술 중대오류 차단 → 해당 지표 숨김: EPS -12↔ref -39.0
+  · 242040 나무기술: EPS=None BPS=1131 ROE=-1.2 DPS=None 성장=11.9
+reprt_code='11011', fs_div='CFS' (사업보고서, 연결제무제표)'
+reprt_code='11011', fs_div='CFS' (사업보고서, 연결제무제표)'
+reprt_code='11011', fs_div='CFS' (사업보고서, 연결제무제표)'
+reprt_code='11011', fs_div='CFS' (사업보고서, 연결제무제표)'
+reprt_code='11013', fs_div='CFS' (1분기보고서, 연결제무제표)'
+reprt_code='11012', fs_div='CFS' (반기보고서, 연결제무제표)'
+reprt_code='11014', fs_div='CFS' (3분기보고서, 연결제무제표)'
+reprt_code='11013', fs_div='CFS' (1분기보고서, 연결제무제표)'
+  ✅ TYM 검증 통과 PER 4.5 PBR 0.61 EPS 1497 BPS 11192
+  · 002900 TYM: EPS=1497 BPS=11192 ROE=14.0 DPS=290.0 성장=17.8
+reprt_code='11011', fs_div='CFS' (사업보고서, 연결제무제표)'
+reprt_code='11011', fs_div='CFS' (사업보고서, 연결제무제표)'
+reprt_code='11011', fs_div='CFS' (사업보고서, 연결제무제표)'
+reprt_code='11011', fs_div='CFS' (사업보고서, 연결제무제표)'
+reprt_code='11013', fs_div='CFS' (1분기보고서, 연결제무제표)'
+reprt_code='11012', fs_div='CFS' (반기보고서, 연결제무제표)'
+reprt_code='11014', fs_div='CFS' (3분기보고서, 연결제무제표)'
+reprt_code='11013', fs_div='CFS' (1분기보고서, 연결제무제표)'
+  ✅ 셀바스AI 검증 통과 PER None PBR 2.49 EPS -179 BPS 4186
+  · 108860 셀바스AI: EPS=-179 BPS=4186 ROE=-3.4 DPS=None 성장=2.1
+  ✅ 에스엔시스 검증 통과 PER None PBR None EPS None BPS None
+  · 0008Z0 에스엔시스: EPS=None BPS=None ROE=None DPS=None 성장=None
+reprt_code='11011', fs_div='CFS' (사업보고서, 연결제무제표)'
+reprt_code='11011', fs_div='CFS' (사업보고서, 연결제무제표)'
+reprt_code='11011', fs_div='CFS' (사업보고서, 연결제무제표)'
+reprt_code='11011', fs_div='CFS' (사업보고서, 연결제무제표)'
+reprt_code='11013', fs_div='CFS' (1분기보고서, 연결제무제표)'
+reprt_code='11012', fs_div='CFS' (반기보고서, 연결제무제표)'
+reprt_code='11014', fs_div='CFS' (3분기보고서, 연결제무제표)'
+reprt_code='11013', fs_div='CFS' (1분기보고서, 연결제무제표)'
+  [단위보정] 900140 ×1000 (천원/백만원 단위 공시 추정)
+  ❌ 엘브이엠씨홀딩스 중대오류 차단 → 해당 지표 숨김: EPS 56↔ref 84.0 / BPS 1850↔ref 2801.0
+  · 900140 엘브이엠씨홀딩스: EPS=None BPS=None ROE=3.3 DPS=0.0 성장=27.5
+reprt_code='11011', fs_div='CFS' (사업보고서, 연결제무제표)'
+reprt_code='11011', fs_div='CFS' (사업보고서, 연결제무제표)'
+reprt_code='11011', fs_div='CFS' (사업보고서, 연결제무제표)'
+reprt_code='11011', fs_div='CFS' (사업보고서, 연결제무제표)'
+reprt_code='11013', fs_div='CFS' (1분기보고서, 연결제무제표)'
+reprt_code='11012', fs_div='CFS' (반기보고서, 연결제무제표)'
+reprt_code='11014', fs_div='CFS' (3분기보고서, 연결제무제표)'
+reprt_code='11013', fs_div='CFS' (1분기보고서, 연결제무제표)'
+  ✅ KG이니시스 검증 통과 PER 5.5 PBR 0.52 EPS 1836 BPS 19350
+  · 035600 KG이니시스: EPS=1836 BPS=19350 ROE=9.8 DPS=600.0 성장=0.3
+reprt_code='11011', fs_div='CFS' (사업보고서, 연결제무제표)'
+reprt_code='11011', fs_div='CFS' (사업보고서, 연결제무제표)'
+reprt_code='11011', fs_div='CFS' (사업보고서, 연결제무제표)'
+reprt_code='11011', fs_div='CFS' (사업보고서, 연결제무제표)'
+reprt_code='11013', fs_div='CFS' (1분기보고서, 연결제무제표)'
+reprt_code='11012', fs_div='CFS' (반기보고서, 연결제무제표)'
+reprt_code='11014', fs_div='CFS' (3분기보고서, 연결제무제표)'
+reprt_code='11013', fs_div='CFS' (1분기보고서, 연결제무제표)'
+  ✅ KH바텍 검증 통과 PER 18.0 PBR 1.01 EPS 653 BPS 11668
+  · 060720 KH바텍: EPS=653 BPS=11668 ROE=5.7 DPS=365.0 성장=36.6
+reprt_code='11011', fs_div='CFS' (사업보고서, 연결제무제표)'
+reprt_code='11011', fs_div='CFS' (사업보고서, 연결제무제표)'
+reprt_code='11011', fs_div='CFS' (사업보고서, 연결제무제표)'
+reprt_code='11011', fs_div='CFS' (사업보고서, 연결제무제표)'
+{'status': '013', 'message': '조회된 데이타가 없습니다.'}
+
+reprt_code='11011', fs_div='OFS' (사업보고서, 별도(개별)제무제표)'
+{'status': '013', 'message': '조회된 데이타가 없습니다.'}
+
+reprt_code='11013', fs_div='CFS' (1분기보고서, 연결제무제표)'
+reprt_code='11012', fs_div='CFS' (반기보고서, 연결제무제표)'
+reprt_code='11014', fs_div='CFS' (3분기보고서, 연결제무제표)'
+reprt_code='11013', fs_div='CFS' (1분기보고서, 연결제무제표)'
+  ❌ 스틱인베스트먼트 중대오류 차단 → 해당 지표 숨김: EPS 640↔ref 556.0
+  · 026890 스틱인베스트먼트: EPS=None BPS=7138 ROE=9.4 DPS=250.0 성장=14.8
+reprt_code='11011', fs_div='CFS' (사업보고서, 연결제무제표)'
+reprt_code='11011', fs_div='CFS' (사업보고서, 연결제무제표)'
+reprt_code='11011', fs_div='CFS' (사업보고서, 연결제무제표)'
+reprt_code='11011', fs_div='CFS' (사업보고서, 연결제무제표)'
+reprt_code='11013', fs_div='CFS' (1분기보고서, 연결제무제표)'
+reprt_code='11012', fs_div='CFS' (반기보고서, 연결제무제표)'
+reprt_code='11014', fs_div='CFS' (3분기보고서, 연결제무제표)'
+reprt_code='11013', fs_div='CFS' (1분기보고서, 연결제무제표)'
+  ✅ KG에코솔루션 검증 통과 PER 2.6 PBR 0.17 EPS 2234 BPS 34754
+  · 151860 KG에코솔루션: EPS=2234 BPS=34754 ROE=6.6 DPS=150.0 성장=4.0
+reprt_code='11011', fs_div='CFS' (사업보고서, 연결제무제표)'
+reprt_code='11011', fs_div='CFS' (사업보고서, 연결제무제표)'
+reprt_code='11011', fs_div='CFS' (사업보고서, 연결제무제표)'
+reprt_code='11011', fs_div='CFS' (사업보고서, 연결제무제표)'
+reprt_code='11013', fs_div='CFS' (1분기보고서, 연결제무제표)'
+reprt_code='11012', fs_div='CFS' (반기보고서, 연결제무제표)'
+reprt_code='11014', fs_div='CFS' (3분기보고서, 연결제무제표)'
+reprt_code='11013', fs_div='CFS' (1분기보고서, 연결제무제표)'
+  ✅ 강원에너지 검증 통과 PER None PBR 8.26 EPS -283 BPS 1285
+  · 114190 강원에너지: EPS=-283 BPS=1285 ROE=-23.9 DPS=None 성장=-5.4
+reprt_code='11011', fs_div='CFS' (사업보고서, 연결제무제표)'
+{'status': '013', 'message': '조회된 데이타가 없습니다.'}
+
+reprt_code='11011', fs_div='OFS' (사업보고서, 별도(개별)제무제표)'
+reprt_code='11011', fs_div='CFS' (사업보고서, 연결제무제표)'
+{'status': '013', 'message': '조회된 데이타가 없습니다.'}
+
+reprt_code='11011', fs_div='OFS' (사업보고서, 별도(개별)제무제표)'
+reprt_code='11011', fs_div='CFS' (사업보고서, 연결제무제표)'
+{'status': '013', 'message': '조회된 데이타가 없습니다.'}
+
+reprt_code='11011', fs_div='OFS' (사업보고서, 별도(개별)제무제표)'
+reprt_code='11011', fs_div='CFS' (사업보고서, 연결제무제표)'
+{'status': '013', 'message': '조회된 데이타가 없습니다.'}
+
+reprt_code='11011', fs_div='OFS' (사업보고서, 별도(개별)제무제표)'
+reprt_code='11013', fs_div='CFS' (1분기보고서, 연결제무제표)'
+{'status': '013', 'message': '조회된 데이타가 없습니다.'}
+
+reprt_code='11013', fs_div='OFS' (1분기보고서, 별도(개별)제무제표)'
+reprt_code='11012', fs_div='CFS' (반기보고서, 연결제무제표)'
+{'status': '013', 'message': '조회된 데이타가 없습니다.'}
+
+reprt_code='11012', fs_div='OFS' (반기보고서, 별도(개별)제무제표)'
+reprt_code='11014', fs_div='CFS' (3분기보고서, 연결제무제표)'
+{'status': '013', 'message': '조회된 데이타가 없습니다.'}
+
+reprt_code='11014', fs_div='OFS' (3분기보고서, 별도(개별)제무제표)'
+reprt_code='11013', fs_div='CFS' (1분기보고서, 연결제무제표)'
+{'status': '013', 'message': '조회된 데이타가 없습니다.'}
+
+reprt_code='11013', fs_div='OFS' (1분기보고서, 별도(개별)제무제표)'
+  ❌ 와이씨켐 중대오류 차단 → 해당 지표 숨김: EPS 691↔ref 345.0 / BPS 4917↔ref 2458.0
+  · 112290 와이씨켐: EPS=None BPS=None ROE=28.8 DPS=0.0 성장=18.2
+reprt_code='11011', fs_div='CFS' (사업보고서, 연결제무제표)'
+reprt_code='11011', fs_div='CFS' (사업보고서, 연결제무제표)'
+reprt_code='11011', fs_div='CFS' (사업보고서, 연결제무제표)'
+reprt_code='11011', fs_div='CFS' (사업보고서, 연결제무제표)'
+reprt_code='11013', fs_div='CFS' (1분기보고서, 연결제무제표)'
+reprt_code='11012', fs_div='CFS' (반기보고서, 연결제무제표)'
+reprt_code='11014', fs_div='CFS' (3분기보고서, 연결제무제표)'
+reprt_code='11013', fs_div='CFS' (1분기보고서, 연결제무제표)'
+  ✅ HB테크놀러지 검증 통과 PER 5.6 PBR 0.88 EPS 530 BPS 3386
+  · 078150 HB테크놀러지: EPS=530 BPS=3386 ROE=17.0 DPS=20.0 성장=-1.3
+reprt_code='11011', fs_div='CFS' (사업보고서, 연결제무제표)'
+reprt_code='11011', fs_div='CFS' (사업보고서, 연결제무제표)'
+reprt_code='11011', fs_div='CFS' (사업보고서, 연결제무제표)'
+reprt_code='11011', fs_div='CFS' (사업보고서, 연결제무제표)'
+reprt_code='11013', fs_div='CFS' (1분기보고서, 연결제무제표)'
+reprt_code='11012', fs_div='CFS' (반기보고서, 연결제무제표)'
+reprt_code='11014', fs_div='CFS' (3분기보고서, 연결제무제표)'
+reprt_code='11013', fs_div='CFS' (1분기보고서, 연결제무제표)'
+  ✅ 오로스테크놀로지 검증 통과 PER None PBR 4.64 EPS -1208 BPS 6353
+  · 322310 오로스테크놀로지: EPS=-1208 BPS=6353 ROE=-17.6 DPS=0.0 성장=-15.1
+reprt_code='11011', fs_div='CFS' (사업보고서, 연결제무제표)'
+reprt_code='11011', fs_div='CFS' (사업보고서, 연결제무제표)'
+reprt_code='11011', fs_div='CFS' (사업보고서, 연결제무제표)'
+reprt_code='11011', fs_div='CFS' (사업보고서, 연결제무제표)'
+reprt_code='11013', fs_div='CFS' (1분기보고서, 연결제무제표)'
+reprt_code='11012', fs_div='CFS' (반기보고서, 연결제무제표)'
+reprt_code='11014', fs_div='CFS' (3분기보고서, 연결제무제표)'
+reprt_code='11013', fs_div='CFS' (1분기보고서, 연결제무제표)'
+{'status': '013', 'message': '조회된 데이타가 없습니다.'}
+
+reprt_code='11013', fs_div='OFS' (1분기보고서, 별도(개별)제무제표)'
+  ✅ 네오팜 검증 통과 PER 9.2 PBR 1.4 EPS 1874 BPS 12273
+  · 092730 네오팜: EPS=1874 BPS=12273 ROE=16.0 DPS=None 성장=11.1
+reprt_code='11011', fs_div='CFS' (사업보고서, 연결제무제표)'
+reprt_code='11011', fs_div='CFS' (사업보고서, 연결제무제표)'
+reprt_code='11011', fs_div='CFS' (사업보고서, 연결제무제표)'
+{'status': '013', 'message': '조회된 데이타가 없습니다.'}
+
+reprt_code='11011', fs_div='OFS' (사업보고서, 별도(개별)제무제표)'
+{'status': '013', 'message': '조회된 데이타가 없습니다.'}
+
+reprt_code='11011', fs_div='CFS' (사업보고서, 연결제무제표)'
+{'status': '013', 'message': '조회된 데이타가 없습니다.'}
+
+reprt_code='11011', fs_div='OFS' (사업보고서, 별도(개별)제무제표)'
+{'status': '013', 'message': '조회된 데이타가 없습니다.'}
+
+reprt_code='11013', fs_div='CFS' (1분기보고서, 연결제무제표)'
+reprt_code='11012', fs_div='CFS' (반기보고서, 연결제무제표)'
+reprt_code='11014', fs_div='CFS' (3분기보고서, 연결제무제표)'
+reprt_code='11013', fs_div='CFS' (1분기보고서, 연결제무제표)'
+  ✅ 아스테라시스 검증 통과 PER 34.8 PBR 6.08 EPS 209 BPS 1198
+  · 450950 아스테라시스: EPS=209 BPS=1198 ROE=19.3 DPS=105.0 성장=31.6
+reprt_code='11011', fs_div='CFS' (사업보고서, 연결제무제표)'
+reprt_code='11011', fs_div='CFS' (사업보고서, 연결제무제표)'
+reprt_code='11011', fs_div='CFS' (사업보고서, 연결제무제표)'
+reprt_code='11011', fs_div='CFS' (사업보고서, 연결제무제표)'
+reprt_code='11013', fs_div='CFS' (1분기보고서, 연결제무제표)'
+reprt_code='11012', fs_div='CFS' (반기보고서, 연결제무제표)'
+reprt_code='11014', fs_div='CFS' (3분기보고서, 연결제무제표)'
+reprt_code='11013', fs_div='CFS' (1분기보고서, 연결제무제표)'
+  ✅ 유진기업 검증 통과 PER 5.3 PBR 0.25 EPS 666 BPS 14016
+  · 023410 유진기업: EPS=666 BPS=14016 ROE=5.0 DPS=180.0 성장=-4.4
+reprt_code='11011', fs_div='CFS' (사업보고서, 연결제무제표)'
+reprt_code='11011', fs_div='CFS' (사업보고서, 연결제무제표)'
+reprt_code='11011', fs_div='CFS' (사업보고서, 연결제무제표)'
+reprt_code='11011', fs_div='CFS' (사업보고서, 연결제무제표)'
+reprt_code='11013', fs_div='CFS' (1분기보고서, 연결제무제표)'
+reprt_code='11012', fs_div='CFS' (반기보고서, 연결제무제표)'
+reprt_code='11014', fs_div='CFS' (3분기보고서, 연결제무제표)'
+reprt_code='11013', fs_div='CFS' (1분기보고서, 연결제무제표)'
+  ✅ 지씨셀 검증 통과 PER None PBR 1.42 EPS -17168 BPS 12169
+  · 144510 지씨셀: EPS=-17168 BPS=12169 ROE=-82.9 DPS=0.0 성장=-5.1
+reprt_code='11011', fs_div='CFS' (사업보고서, 연결제무제표)'
+reprt_code='11011', fs_div='CFS' (사업보고서, 연결제무제표)'
+reprt_code='11011', fs_div='CFS' (사업보고서, 연결제무제표)'
+reprt_code='11011', fs_div='CFS' (사업보고서, 연결제무제표)'
+{'status': '013', 'message': '조회된 데이타가 없습니다.'}
+
+reprt_code='11011', fs_div='OFS' (사업보고서, 별도(개별)제무제표)'
+{'status': '013', 'message': '조회된 데이타가 없습니다.'}
+
+reprt_code='11013', fs_div='CFS' (1분기보고서, 연결제무제표)'
+reprt_code='11012', fs_div='CFS' (반기보고서, 연결제무제표)'
+reprt_code='11014', fs_div='CFS' (3분기보고서, 연결제무제표)'
+reprt_code='11013', fs_div='CFS' (1분기보고서, 연결제무제표)'
+  ✅ 폰드그룹 검증 통과 PER 7.4 PBR 1.14 EPS 644 BPS 4165
+  · 472850 폰드그룹: EPS=644 BPS=4165 ROE=16.5 DPS=280.0 성장=31.7
+reprt_code='11011', fs_div='CFS' (사업보고서, 연결제무제표)'
+reprt_code='11011', fs_div='CFS' (사업보고서, 연결제무제표)'
+reprt_code='11011', fs_div='CFS' (사업보고서, 연결제무제표)'
+reprt_code='11011', fs_div='CFS' (사업보고서, 연결제무제표)'
+reprt_code='11013', fs_div='CFS' (1분기보고서, 연결제무제표)'
+reprt_code='11012', fs_div='CFS' (반기보고서, 연결제무제표)'
+reprt_code='11014', fs_div='CFS' (3분기보고서, 연결제무제표)'
+reprt_code='11013', fs_div='CFS' (1분기보고서, 연결제무제표)'
+  ✅ 삼영전자 검증 통과 PER 64.4 PBR 0.47 EPS 212 BPS 28783
+  · 005680 삼영전자: EPS=212 BPS=28783 ROE=0.7 DPS=300.0 성장=-8.1
+  ✅ 덕양에너젠 검증 통과 PER None PBR None EPS None BPS None
+  · 0001A0 덕양에너젠: EPS=None BPS=None ROE=None DPS=None 성장=None
+reprt_code='11011', fs_div='CFS' (사업보고서, 연결제무제표)'
+reprt_code='11011', fs_div='CFS' (사업보고서, 연결제무제표)'
+reprt_code='11011', fs_div='CFS' (사업보고서, 연결제무제표)'
+reprt_code='11011', fs_div='CFS' (사업보고서, 연결제무제표)'
+reprt_code='11013', fs_div='CFS' (1분기보고서, 연결제무제표)'
+reprt_code='11012', fs_div='CFS' (반기보고서, 연결제무제표)'
+reprt_code='11014', fs_div='CFS' (3분기보고서, 연결제무제표)'
+reprt_code='11013', fs_div='CFS' (1분기보고서, 연결제무제표)'
+{'status': '013', 'message': '조회된 데이타가 없습니다.'}
+
+reprt_code='11013', fs_div='OFS' (1분기보고서, 별도(개별)제무제표)'
+  ✅ 엠로 검증 통과 PER None PBR 2.91 EPS -47 BPS 7556
+  · 058970 엠로: EPS=-47 BPS=7556 ROE=-0.6 DPS=0.0 성장=5.7
+reprt_code='11011', fs_div='CFS' (사업보고서, 연결제무제표)'
+reprt_code='11011', fs_div='CFS' (사업보고서, 연결제무제표)'
+reprt_code='11011', fs_div='CFS' (사업보고서, 연결제무제표)'
+reprt_code='11011', fs_div='CFS' (사업보고서, 연결제무제표)'
+reprt_code='11013', fs_div='CFS' (1분기보고서, 연결제무제표)'
+reprt_code='11012', fs_div='CFS' (반기보고서, 연결제무제표)'
+reprt_code='11014', fs_div='CFS' (3분기보고서, 연결제무제표)'
+reprt_code='11013', fs_div='CFS' (1분기보고서, 연결제무제표)'
+  ✅ 피에이치에이 검증 통과 PER 5.1 PBR 0.29 EPS 2529 BPS 44234
+  · 043370 피에이치에이: EPS=2529 BPS=44234 ROE=5.9 DPS=400.0 성장=4.1
+reprt_code='11011', fs_div='CFS' (사업보고서, 연결제무제표)'
+reprt_code='11011', fs_div='CFS' (사업보고서, 연결제무제표)'
+reprt_code='11011', fs_div='CFS' (사업보고서, 연결제무제표)'
+reprt_code='11011', fs_div='CFS' (사업보고서, 연결제무제표)'
+reprt_code='11013', fs_div='CFS' (1분기보고서, 연결제무제표)'
+reprt_code='11012', fs_div='CFS' (반기보고서, 연결제무제표)'
+reprt_code='11014', fs_div='CFS' (3분기보고서, 연결제무제표)'
+reprt_code='11013', fs_div='CFS' (1분기보고서, 연결제무제표)'
+  ✅ 제이브이엠 검증 통과 PER 9.1 PBR 1.1 EPS 2444 BPS 20268
+  · 054950 제이브이엠: EPS=2444 BPS=20268 ROE=12.9 DPS=650.0 성장=8.6
+reprt_code='11011', fs_div='CFS' (사업보고서, 연결제무제표)'
+reprt_code='11011', fs_div='CFS' (사업보고서, 연결제무제표)'
+{'status': '013', 'message': '조회된 데이타가 없습니다.'}
+
+reprt_code='11011', fs_div='OFS' (사업보고서, 별도(개별)제무제표)'
+{'status': '013', 'message': '조회된 데이타가 없습니다.'}
+
+reprt_code='11011', fs_div='CFS' (사업보고서, 연결제무제표)'
+{'status': '013', 'message': '조회된 데이타가 없습니다.'}
+
+reprt_code='11011', fs_div='OFS' (사업보고서, 별도(개별)제무제표)'
+{'status': '013', 'message': '조회된 데이타가 없습니다.'}
+
+reprt_code='11011', fs_div='CFS' (사업보고서, 연결제무제표)'
+{'status': '013', 'message': '조회된 데이타가 없습니다.'}
+
+reprt_code='11011', fs_div='OFS' (사업보고서, 별도(개별)제무제표)'
+{'status': '013', 'message': '조회된 데이타가 없습니다.'}
+
+reprt_code='11013', fs_div='CFS' (1분기보고서, 연결제무제표)'
+{'status': '013', 'message': '조회된 데이타가 없습니다.'}
+
+reprt_code='11013', fs_div='OFS' (1분기보고서, 별도(개별)제무제표)'
+{'status': '013', 'message': '조회된 데이타가 없습니다.'}
+
+reprt_code='11012', fs_div='CFS' (반기보고서, 연결제무제표)'
+reprt_code='11014', fs_div='CFS' (3분기보고서, 연결제무제표)'
+reprt_code='11013', fs_div='CFS' (1분기보고서, 연결제무제표)'
+{'status': '013', 'message': '조회된 데이타가 없습니다.'}
+  ✅ 아이티켐 검증 통과 PER None PBR 4.39 EPS None BPS 4783
+  · 309710 아이티켐: EPS=None BPS=4783 ROE=None DPS=None 성장=None
+reprt_code='11011', fs_div='CFS' (사업보고서, 연결제무제표)'
+reprt_code='11011', fs_div='CFS' (사업보고서, 연결제무제표)'
+reprt_code='11011', fs_div='CFS' (사업보고서, 연결제무제표)'
+reprt_code='11011', fs_div='CFS' (사업보고서, 연결제무제표)'
+reprt_code='11013', fs_div='CFS' (1분기보고서, 연결제무제표)'
+reprt_code='11012', fs_div='CFS' (반기보고서, 연결제무제표)'
+reprt_code='11014', fs_div='CFS' (3분기보고서, 연결제무제표)'
+reprt_code='11013', fs_div='CFS' (1분기보고서, 연결제무제표)'
+  ✅ 바이넥스 검증 통과 PER None PBR 1.45 EPS -403 BPS 5647
+  · 053030 바이넥스: EPS=-403 BPS=5647 ROE=-7.0 DPS=None 성장=29.5
+reprt_code='11011', fs_div='CFS' (사업보고서, 연결제무제표)'
+reprt_code='11011', fs_div='CFS' (사업보고서, 연결제무제표)'
+reprt_code='11011', fs_div='CFS' (사업보고서, 연결제무제표)'
+reprt_code='11011', fs_div='CFS' (사업보고서, 연결제무제표)'
+reprt_code='11013', fs_div='CFS' (1분기보고서, 연결제무제표)'
+reprt_code='11012', fs_div='CFS' (반기보고서, 연결제무제표)'
+reprt_code='11014', fs_div='CFS' (3분기보고서, 연결제무제표)'
+reprt_code='11013', fs_div='CFS' (1분기보고서, 연결제무제표)'
+  ✅ 콜마비앤에이치 검증 통과 PER None PBR 0.69 EPS -61 BPS 13286
+  · 200130 콜마비앤에이치: EPS=-61 BPS=13286 ROE=-0.5 DPS=75.0 성장=-6.6
+reprt_code='11011', fs_div='CFS' (사업보고서, 연결제무제표)'
+reprt_code='11011', fs_div='CFS' (사업보고서, 연결제무제표)'
+reprt_code='11011', fs_div='CFS' (사업보고서, 연결제무제표)'
+reprt_code='11011', fs_div='CFS' (사업보고서, 연결제무제표)'
+reprt_code='11013', fs_div='CFS' (1분기보고서, 연결제무제표)'
+reprt_code='11012', fs_div='CFS' (반기보고서, 연결제무제표)'
+reprt_code='11014', fs_div='CFS' (3분기보고서, 연결제무제표)'
+reprt_code='11013', fs_div='CFS' (1분기보고서, 연결제무제표)'
+  ✅ 골프존 검증 통과 PER 12.2 PBR 0.53 EPS 3504 BPS 80906
+  · 215000 골프존: EPS=3504 BPS=80906 ROE=5.1 DPS=4000.0 성장=-22.1
+reprt_code='11011', fs_div='CFS' (사업보고서, 연결제무제표)'
+reprt_code='11011', fs_div='CFS' (사업보고서, 연결제무제표)'
+reprt_code='11011', fs_div='CFS' (사업보고서, 연결제무제표)'
+reprt_code='11011', fs_div='CFS' (사업보고서, 연결제무제표)'
+reprt_code='11013', fs_div='CFS' (1분기보고서, 연결제무제표)'
+reprt_code='11012', fs_div='CFS' (반기보고서, 연결제무제표)'
+reprt_code='11014', fs_div='CFS' (3분기보고서, 연결제무제표)'
+reprt_code='11013', fs_div='CFS' (1분기보고서, 연결제무제표)'
+  ✅ LIG아큐버 검증 통과 PER 91.6 PBR 1.6 EPS 383 BPS 21879
+  · 073490 LIG아큐버: EPS=383 BPS=21879 ROE=1.8 DPS=100.0 성장=-1.9
+reprt_code='11011', fs_div='CFS' (사업보고서, 연결제무제표)'
+reprt_code='11011', fs_div='CFS' (사업보고서, 연결제무제표)'
+reprt_code='11011', fs_div='CFS' (사업보고서, 연결제무제표)'
+reprt_code='11011', fs_div='CFS' (사업보고서, 연결제무제표)'
+reprt_code='11013', fs_div='CFS' (1분기보고서, 연결제무제표)'
+reprt_code='11012', fs_div='CFS' (반기보고서, 연결제무제표)'
+reprt_code='11014', fs_div='CFS' (3분기보고서, 연결제무제표)'
+reprt_code='11013', fs_div='CFS' (1분기보고서, 연결제무제표)'
+  ✅ 한국공항 검증 통과 PER 5.7 PBR 0.62 EPS 14718 BPS 136532
+  · 005430 한국공항: EPS=14718 BPS=136532 ROE=11.3 DPS=1000.0 성장=5.9
+reprt_code='11011', fs_div='CFS' (사업보고서, 연결제무제표)'
+reprt_code='11011', fs_div='CFS' (사업보고서, 연결제무제표)'
+reprt_code='11011', fs_div='CFS' (사업보고서, 연결제무제표)'
+reprt_code='11011', fs_div='CFS' (사업보고서, 연결제무제표)'
+{'status': '013', 'message': '조회된 데이타가 없습니다.'}
+
+reprt_code='11011', fs_div='OFS' (사업보고서, 별도(개별)제무제표)'
+{'status': '013', 'message': '조회된 데이타가 없습니다.'}
+
+reprt_code='11013', fs_div='CFS' (1분기보고서, 연결제무제표)'
+reprt_code='11012', fs_div='CFS' (반기보고서, 연결제무제표)'
+reprt_code='11014', fs_div='CFS' (3분기보고서, 연결제무제표)'
+reprt_code='11013', fs_div='CFS' (1분기보고서, 연결제무제표)'
+  ✅ DS단석 검증 통과 PER None PBR 0.97 EPS -1146 BPS 15378
+  · 017860 DS단석: EPS=-1146 BPS=15378 ROE=-7.2 DPS=10.0 성장=-0.7
+reprt_code='11011', fs_div='CFS' (사업보고서, 연결제무제표)'
+{'status': '013', 'message': '조회된 데이타가 없습니다.'}
+
+reprt_code='11011', fs_div='OFS' (사업보고서, 별도(개별)제무제표)'
+reprt_code='11011', fs_div='CFS' (사업보고서, 연결제무제표)'
+{'status': '013', 'message': '조회된 데이타가 없습니다.'}
+
+reprt_code='11011', fs_div='OFS' (사업보고서, 별도(개별)제무제표)'
+reprt_code='11011', fs_div='CFS' (사업보고서, 연결제무제표)'
+{'status': '013', 'message': '조회된 데이타가 없습니다.'}
+
+reprt_code='11011', fs_div='OFS' (사업보고서, 별도(개별)제무제표)'
+reprt_code='11011', fs_div='CFS' (사업보고서, 연결제무제표)'
+{'status': '013', 'message': '조회된 데이타가 없습니다.'}
+
+reprt_code='11011', fs_div='OFS' (사업보고서, 별도(개별)제무제표)'
+reprt_code='11013', fs_div='CFS' (1분기보고서, 연결제무제표)'
+{'status': '013', 'message': '조회된 데이타가 없습니다.'}
+
+reprt_code='11013', fs_div='OFS' (1분기보고서, 별도(개별)제무제표)'
+reprt_code='11012', fs_div='CFS' (반기보고서, 연결제무제표)'
+{'status': '013', 'message': '조회된 데이타가 없습니다.'}
+
+reprt_code='11012', fs_div='OFS' (반기보고서, 별도(개별)제무제표)'
+reprt_code='11014', fs_div='CFS' (3분기보고서, 연결제무제표)'
+{'status': '013', 'message': '조회된 데이타가 없습니다.'}
+
+reprt_code='11014', fs_div='OFS' (3분기보고서, 별도(개별)제무제표)'
+reprt_code='11013', fs_div='CFS' (1분기보고서, 연결제무제표)'
+{'status': '013', 'message': '조회된 데이타가 없습니다.'}
+
+reprt_code='11013', fs_div='OFS' (1분기보고서, 별도(개별)제무제표)'
+  ❌ 일성아이에스 중대오류 차단 → 해당 지표 숨김: EPS 164↔ref 91.0
+  · 003120 일성아이에스: EPS=None BPS=55254 ROE=0.6 DPS=1200.0 성장=-6.8
+reprt_code='11011', fs_div='CFS' (사업보고서, 연결제무제표)'
+{'status': '013', 'message': '조회된 데이타가 없습니다.'}
+
+reprt_code='11011', fs_div='OFS' (사업보고서, 별도(개별)제무제표)'
+reprt_code='11011', fs_div='CFS' (사업보고서, 연결제무제표)'
+{'status': '013', 'message': '조회된 데이타가 없습니다.'}
+
+reprt_code='11011', fs_div='OFS' (사업보고서, 별도(개별)제무제표)'
+reprt_code='11011', fs_div='CFS' (사업보고서, 연결제무제표)'
+{'status': '013', 'message': '조회된 데이타가 없습니다.'}
+
+reprt_code='11011', fs_div='OFS' (사업보고서, 별도(개별)제무제표)'
+reprt_code='11011', fs_div='CFS' (사업보고서, 연결제무제표)'
+{'status': '013', 'message': '조회된 데이타가 없습니다.'}
+
+reprt_code='11011', fs_div='OFS' (사업보고서, 별도(개별)제무제표)'
+reprt_code='11013', fs_div='CFS' (1분기보고서, 연결제무제표)'
+{'status': '013', 'message': '조회된 데이타가 없습니다.'}
+
+reprt_code='11013', fs_div='OFS' (1분기보고서, 별도(개별)제무제표)'
+reprt_code='11012', fs_div='CFS' (반기보고서, 연결제무제표)'
+{'status': '013', 'message': '조회된 데이타가 없습니다.'}
+
+reprt_code='11012', fs_div='OFS' (반기보고서, 별도(개별)제무제표)'
+reprt_code='11014', fs_div='CFS' (3분기보고서, 연결제무제표)'
+{'status': '013', 'message': '조회된 데이타가 없습니다.'}
+
+reprt_code='11014', fs_div='OFS' (3분기보고서, 별도(개별)제무제표)'
+reprt_code='11013', fs_div='CFS' (1분기보고서, 연결제무제표)'
+{'status': '013', 'message': '조회된 데이타가 없습니다.'}
+
+reprt_code='11013', fs_div='OFS' (1분기보고서, 별도(개별)제무제표)'
+  ✅ 한농화성 검증 통과 PER 64.4 PBR 1.47 EPS 264 BPS 11589
+  · 011500 한농화성: EPS=264 BPS=11589 ROE=2.4 DPS=40.0 성장=-13.3
+reprt_code='11011', fs_div='CFS' (사업보고서, 연결제무제표)'
+reprt_code='11011', fs_div='CFS' (사업보고서, 연결제무제표)'
+reprt_code='11011', fs_div='CFS' (사업보고서, 연결제무제표)'
+reprt_code='11011', fs_div='CFS' (사업보고서, 연결제무제표)'
+reprt_code='11013', fs_div='CFS' (1분기보고서, 연결제무제표)'
+reprt_code='11012', fs_div='CFS' (반기보고서, 연결제무제표)'
+reprt_code='11014', fs_div='CFS' (3분기보고서, 연결제무제표)'
+reprt_code='11013', fs_div='CFS' (1분기보고서, 연결제무제표)'
+  ❌ 엔케이젠바이오텍코리아 중대오류 차단 → 해당 지표 숨김: EPS -178↔ref -144.0 / BPS 119↔ref 85.0
+  · 182400 엔케이젠바이오텍코리아: EPS=None BPS=None ROE=147.6 DPS=None 성장=-10.7
+reprt_code='11011', fs_div='CFS' (사업보고서, 연결제무제표)'
+reprt_code='11011', fs_div='CFS' (사업보고서, 연결제무제표)'
+reprt_code='11011', fs_div='CFS' (사업보고서, 연결제무제표)'
+reprt_code='11011', fs_div='CFS' (사업보고서, 연결제무제표)'
+reprt_code='11013', fs_div='CFS' (1분기보고서, 연결제무제표)'
+reprt_code='11012', fs_div='CFS' (반기보고서, 연결제무제표)'
+reprt_code='11014', fs_div='CFS' (3분기보고서, 연결제무제표)'
+reprt_code='11013', fs_div='CFS' (1분기보고서, 연결제무제표)'
+  ✅ 심텍홀딩스 검증 통과 PER None PBR 15.75 EPS -336 BPS 318
+  · 036710 심텍홀딩스: EPS=-336 BPS=318 ROE=-190.5 DPS=10.0 성장=17.4
+reprt_code='11011', fs_div='CFS' (사업보고서, 연결제무제표)'
+reprt_code='11011', fs_div='CFS' (사업보고서, 연결제무제표)'
+reprt_code='11011', fs_div='CFS' (사업보고서, 연결제무제표)'
+reprt_code='11011', fs_div='CFS' (사업보고서, 연결제무제표)'
+reprt_code='11013', fs_div='CFS' (1분기보고서, 연결제무제표)'
+reprt_code='11012', fs_div='CFS' (반기보고서, 연결제무제표)'
+reprt_code='11014', fs_div='CFS' (3분기보고서, 연결제무제표)'
+reprt_code='11013', fs_div='CFS' (1분기보고서, 연결제무제표)'
+  ✅ 오리엔탈정공 검증 통과 PER 14.3 PBR 2.0 EPS 403 BPS 2886
+  · 014940 오리엔탈정공: EPS=403 BPS=2886 ROE=15.1 DPS=100.0 성장=-0.0
+reprt_code='11011', fs_div='CFS' (사업보고서, 연결제무제표)'
+{'status': '013', 'message': '조회된 데이타가 없습니다.'}
+
+reprt_code='11011', fs_div='OFS' (사업보고서, 별도(개별)제무제표)'
+reprt_code='11011', fs_div='CFS' (사업보고서, 연결제무제표)'
+{'status': '013', 'message': '조회된 데이타가 없습니다.'}
+
+reprt_code='11011', fs_div='OFS' (사업보고서, 별도(개별)제무제표)'
+reprt_code='11011', fs_div='CFS' (사업보고서, 연결제무제표)'
+{'status': '013', 'message': '조회된 데이타가 없습니다.'}
+
+reprt_code='11011', fs_div='OFS' (사업보고서, 별도(개별)제무제표)'
+reprt_code='11011', fs_div='CFS' (사업보고서, 연결제무제표)'
+{'status': '013', 'message': '조회된 데이타가 없습니다.'}
+
+reprt_code='11011', fs_div='OFS' (사업보고서, 별도(개별)제무제표)'
+reprt_code='11013', fs_div='CFS' (1분기보고서, 연결제무제표)'
+{'status': '013', 'message': '조회된 데이타가 없습니다.'}
+
+reprt_code='11013', fs_div='OFS' (1분기보고서, 별도(개별)제무제표)'
+reprt_code='11012', fs_div='CFS' (반기보고서, 연결제무제표)'
+{'status': '013', 'message': '조회된 데이타가 없습니다.'}
+
+reprt_code='11012', fs_div='OFS' (반기보고서, 별도(개별)제무제표)'
+reprt_code='11014', fs_div='CFS' (3분기보고서, 연결제무제표)'
+{'status': '013', 'message': '조회된 데이타가 없습니다.'}
+
+reprt_code='11014', fs_div='OFS' (3분기보고서, 별도(개별)제무제표)'
+reprt_code='11013', fs_div='CFS' (1분기보고서, 연결제무제표)'
+{'status': '013', 'message': '조회된 데이타가 없습니다.'}
+
+reprt_code='11013', fs_div='OFS' (1분기보고서, 별도(개별)제무제표)'
+  ✅ 소룩스 검증 통과 PER None PBR 2.94 EPS -233 BPS 1751
+  · 290690 소룩스: EPS=-233 BPS=1751 ROE=-13.1 DPS=0.0 성장=-24.5
+reprt_code='11011', fs_div='CFS' (사업보고서, 연결제무제표)'
+reprt_code='11011', fs_div='CFS' (사업보고서, 연결제무제표)'
+reprt_code='11011', fs_div='CFS' (사업보고서, 연결제무제표)'
+reprt_code='11011', fs_div='CFS' (사업보고서, 연결제무제표)'
+reprt_code='11013', fs_div='CFS' (1분기보고서, 연결제무제표)'
+reprt_code='11012', fs_div='CFS' (반기보고서, 연결제무제표)'
+reprt_code='11014', fs_div='CFS' (3분기보고서, 연결제무제표)'
+reprt_code='11013', fs_div='CFS' (1분기보고서, 연결제무제표)'
+  ❌ 한진 중대오류 차단 → 해당 지표 숨김: BPS 125789↔ref 92880.0
+  · 002320 한진: EPS=-229 BPS=None ROE=-0.3 DPS=600.0 성장=1.6
+reprt_code='11011', fs_div='CFS' (사업보고서, 연결제무제표)'
+reprt_code='11011', fs_div='CFS' (사업보고서, 연결제무제표)'
+reprt_code='11011', fs_div='CFS' (사업보고서, 연결제무제표)'
+reprt_code='11011', fs_div='CFS' (사업보고서, 연결제무제표)'
+reprt_code='11013', fs_div='CFS' (1분기보고서, 연결제무제표)'
+reprt_code='11012', fs_div='CFS' (반기보고서, 연결제무제표)'
+reprt_code='11014', fs_div='CFS' (3분기보고서, 연결제무제표)'
+reprt_code='11013', fs_div='CFS' (1분기보고서, 연결제무제표)'
+  ❌ 씨앤씨인터내셔널 중대오류 차단 → 해당 지표 숨김: BPS 33520↔ref 26470.0
+  · 352480 씨앤씨인터내셔널: EPS=1296 BPS=None ROE=5.5 DPS=1000.0 성장=2.0
+reprt_code='11011', fs_div='CFS' (사업보고서, 연결제무제표)'
+reprt_code='11011', fs_div='CFS' (사업보고서, 연결제무제표)'
+reprt_code='11011', fs_div='CFS' (사업보고서, 연결제무제표)'
+reprt_code='11011', fs_div='CFS' (사업보고서, 연결제무제표)'
+reprt_code='11013', fs_div='CFS' (1분기보고서, 연결제무제표)'
+reprt_code='11012', fs_div='CFS' (반기보고서, 연결제무제표)'
+reprt_code='11014', fs_div='CFS' (3분기보고서, 연결제무제표)'
+reprt_code='11013', fs_div='CFS' (1분기보고서, 연결제무제표)'
+{'status': '013', 'message': '조회된 데이타가 없습니다.'}
+
+reprt_code='11013', fs_div='OFS' (1분기보고서, 별도(개별)제무제표)'
+  ✅ 노바렉스 검증 통과 PER 5.9 PBR 0.98 EPS 2421 BPS 14673
+  · 194700 노바렉스: EPS=2421 BPS=14673 ROE=17.8 DPS=400.0 성장=35.8
+- ⏳ 시간예산 초과 — 저장 후 종료(다음 실행 이어받기). 처리 210건
+
+✅ 밸류에이션 수집 — 이번 210건 신규 / 건너뜀 575 / 보유 952/2687개 / 갱신필요 1902개
+- VALUATION_REMAINING 1902개 (다음 실행에서 이어받기)
