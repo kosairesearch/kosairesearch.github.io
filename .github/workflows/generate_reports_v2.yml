@@ -12,6 +12,9 @@ on:
       top_n:
         description: '시총 상위 N개 (tickers 비울 때 적용)'
         default: '10'
+      recover_batch_id:
+        description: 'recover 모드용 배치 ID(비우면 최근 배치)'
+        default: ''
 
 concurrency:
   group: kos-reports
@@ -20,7 +23,7 @@ concurrency:
 jobs:
   reports-v2:
     runs-on: ubuntu-latest
-    timeout-minutes: 200
+    timeout-minutes: 350
     permissions:
       contents: write
     steps:
@@ -44,6 +47,7 @@ jobs:
           REPORT_MODEL_TOP_N: '500'
           REPORT_TICKERS: ${{ inputs.tickers }}
           REPORT_TOP_N: ${{ inputs.top_n }}
+          RECOVER_BATCH_ID: ${{ inputs.recover_batch_id }}
           BATCH_MAX_WAIT_SEC: '10800'
         run: |
           python scripts/generate_reports_v2.py "${{ inputs.mode }}" 2>&1 | tee data/reports_v2_run.log || true

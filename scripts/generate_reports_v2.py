@@ -877,6 +877,35 @@ def patch_quant(as_of):
     log(f"\n✅ 정량 patch 완료: {n}건 (본문 텍스트 유지)")
 
 
+def recover(cl, as_of, batch_id=""):
+    """취소된 run에서 제출됐으나 회수 못한 배치를 ID로 회수한다(재과금 없음).
+    제출 시점 quant(state)가 유실됐으므로 현재 데이터로 재수집해 채운다(표시용이라 무방).
+    batch_id 비우면 가장 최근 배치를 사용."""
+    if not batch_id:
+        recent = list(cl.messages.batches.list(limit=1))
+        if not recent:
+            log("❌ 배치가 없습니다.")
+            return
+        batch_id = recent[0].id
+        log(f"- batch_id 미지정 → 최근 배치 사용: {batch_id}")
+    b = cl.messages.batches.retrieve(batch_id)
+    log(f"- 배치 {batch_id} 상태: {b.processing_status} · 성공 {b.request_counts.succeeded}")
+    if b.processing_status != "ended":
+        log("- 아직 처리 끝나지 않음 — 나중에 다시 recover")
+        return
+    data, targets = pick_targets()
+    ranked = sorted(data["stocks"], key=lambda s: s.get("mcap", 0) or 0, reverse=True)
+    rank_of = {s["ticker"]: i + 1 for i, s in enumerate(ranked)}
+    log(f"- 정량 재수집 {len(targets)}개(제출시점 quant 유실분 재구성)...")
+    quants = collect_all_quant(targets, data)
+    models = {st["ticker"]: model_for(rank_of.get(st["ticker"])) for st in targets}
+    state = {"batch_id": batch_id, "created": as_of, "model": MODEL, "models": models,
+             "dataDate": data.get("dataDate", ""), "count": len(quants), "quant": quants}
+    STATE_JS.write_text(json.dumps(state, ensure_ascii=False, indent=1), encoding="utf-8")
+    log(f"- 상태 재구성 완료(quant {len(quants)}) → 회수 시작")
+    collect(cl, as_of)
+
+
 def main():
     mode = sys.argv[1] if len(sys.argv) > 1 else "auto"
     as_of = datetime.datetime.now(datetime.timezone(datetime.timedelta(hours=9))).strftime("%Y-%m-%d %H:%M")
@@ -900,6 +929,19 @@ def main():
         submit(cl, as_of)
     elif mode == "collect":
         collect(cl, as_of)
+    elif mode == "batches":
+        # 최근 배치 목록 — 취소된 run에서 제출된 배치 회수 여부 진단용
+        lines = ["# 최근 Anthropic 배치"]
+        for b in cl.messages.batches.list(limit=20):
+            rc = b.request_counts
+            tot = rc.processing + rc.succeeded + rc.errored + rc.canceled + rc.expired
+            lines.append(f"{b.id} | {b.processing_status} | created {b.created_at} | "
+                         f"성공 {rc.succeeded}/{tot} (처리 {rc.processing}·오류 {rc.errored}·만료 {rc.expired})")
+        (ROOT / "data" / "_batches.txt").write_text("\n".join(lines), encoding="utf-8")
+        log("\n".join(lines))
+    elif mode == "recover":
+        # 취소된 배치 회수: ID로 배치 지정 → 정량 재수집 후 결과 회수(재과금 없음)
+        recover(cl, as_of, os.getenv("RECOVER_BATCH_ID", ""))
     else:
         bid = submit(cl, as_of)
         if bid and poll(cl, bid):
