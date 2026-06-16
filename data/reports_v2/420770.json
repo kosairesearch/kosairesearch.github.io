@@ -1,0 +1,341 @@
+{
+ "title": {
+  "ko": "FC-BGA 검사 1위, 업황 회복의 길목",
+  "en": "No.1 in FC-BGA Inspection, at the Cusp of a Recovery"
+ },
+ "lead": {
+  "ko": "기가비스는 FC-BGA 기판 광학검사·수리 장비 글로벌 선두 업체로, AI향 기판 증설 사이클과 신제품(유리기판·PLP·2/2μm) 상용화 여부가 실적 방향을 가른다.",
+  "en": "GigaVis is a global leader in FC-BGA substrate optical inspection and repair equipment, with its earnings trajectory hinging on the AI-driven substrate capex cycle and the commercialization of new products such as glass substrate, PLP and 2/2μm tools."
+ },
+ "keypoints": [
+  {
+   "ko": "패키지 기판 회로 패턴을 검사하는 AOI와 결함을 레이저로 수리하는 AOR이 주력으로, AOI·AOR·VRS·소프트웨어를 아우르는 통합 솔루션을 소수 업체만 제공한다.",
+   "en": "Its core products are AOI (inspects circuit patterns on package substrates) and AOR (repairs defects with lasers), and it is one of only a handful of firms offering an integrated AOI–AOR–VRS–software solution."
+  },
+  {
+   "ko": "2024년 전방 투자 위축으로 매출이 급감했으나, 2025년 4분기 대규모 수주 인식으로 연간 흑자 전환에 성공했다.",
+   "en": "Revenue plunged in 2024 amid weak downstream investment, but a large order recognition in Q4 2025 returned the company to a full-year profit."
+  },
+  {
+   "ko": "AI 가속기·HPC용 FC-BGA 수요 증가로 이비덴 등 글로벌 기판 업체의 증설이 재개되는 사이클 초입에 위치한다.",
+   "en": "It sits at the start of a cycle in which global substrate makers such as Ibiden are resuming capacity expansion, driven by rising FC-BGA demand for AI accelerators and HPC."
+  },
+  {
+   "ko": "유리기판·PLP·2/2μm 등 신제품의 고객사 퀄 테스트가 진행 중이며, 정식 수주(PO) 전환 여부가 중장기 성장의 관건이다.",
+   "en": "Customer qualification tests for new products including glass substrate, PLP and 2/2μm tools are underway, and their conversion into firm purchase orders is key to medium- to long-term growth."
+  },
+  {
+   "ko": "사실상 무차입의 순현금 구조와 풍부한 유동성을 보유해 재무 안정성은 높은 편이나, 분기 실적 변동성이 크다.",
+   "en": "It maintains a virtually debt-free net-cash structure with ample liquidity, lending high financial stability, but quarterly earnings are highly volatile."
+  }
+ ],
+ "business": {
+  "ko": "기가비스는 2004년 설립돼 2023년 5월 코스닥에 상장한 반도체 패키지 기판 검사·수리 장비 전문기업이다. 패키지 기판 내부 회로 패턴을 검사하는 AOI 장비와 불량을 수리하는 AOR 장비를 제조한다. AOI가 초고해상도 카메라로 미세 회로의 끊김이나 단락을 찾아내면 AOR은 이를 레이저로 정교하게 깎아내 정상 제품으로 되살리며, 검사(AOI)부터 확인(VRS), 수리(AOR)로 이어지는 통합 솔루션을 전 세계 극소수 업체만 제공한다. 2024년 기준 매출 비중은 AOI 34%, AOR 10%, VRS 7%, 소프트웨어 4% 등이다. 주요 고객은 이비덴, 신코와 같은 FC-BGA(ABF) 기판 업체들로 글로벌 Top 10 기판 업체 대부분에 장비를 공급하고 있다. 주요 경쟁사로는 KLA(미국), Camtek(이스라엘), Inspec(일본) 등이 있다. 글로벌 AOI/AOR 기판 검사장비 시장에서 2024년 기준 약 50% 점유율을 확보하며 업계 1위를 기록한 것으로 파악된다. 검사 장비 선폭은 과거 10μm에서 최근 5/5μm급이 주류로 자리잡았고, 해당 장비 시장은 동사와 KLA가 양분하되 5/5μm급으로 갈수록 동사의 점유율은 더 높아진 것으로 파악된다. 일본·대만·중화권·국내 등 글로벌 FC-BGA 업체를 고객으로 두고 수출 비중이 높은 점도 특징이다.",
+  "en": "Founded in 2004 and listed on KOSDAQ in May 2023, GigaVis specializes in inspection and repair equipment for semiconductor package substrates. It manufactures AOI tools that inspect internal circuit patterns of package substrates and AOR tools that repair defects. The AOI uses ultra-high-resolution cameras to detect breaks or shorts in fine circuits, while the AOR precisely laser-trims them back to good products; the integrated AOI–VRS–AOR solution is offered by only a very small number of firms worldwide. As of 2024, its revenue mix was roughly AOI 34%, AOR 10%, VRS 7% and software 4%. Its main customers are FC-BGA (ABF) substrate makers such as Ibiden and Shinko, and it supplies equipment to most of the global top-10 substrate makers. Its main competitors include KLA (US), Camtek (Israel) and Inspec (Japan). It is estimated to have held about a 50% share of the global AOI/AOR substrate-inspection equipment market as of 2024, ranking first. Inspection line width has moved from 10μm in the past to a 5/5μm-class mainstream; this market is split between GigaVis and KLA, and the company's share appears even higher as it moves toward the 5/5μm class. With FC-BGA customers across Japan, Taiwan, Greater China and Korea, the company also has a high export ratio."
+ },
+ "earnings": {
+  "ko": "실적은 전방 기판 업체의 설비투자 사이클에 따라 변동성이 매우 크다. 2023년 매출 914억원, 영업이익 350억원, 영업이익률 38.3%로 고점을 찍은 뒤, 2024년에는 매출이 261억원으로 급감하고 영업손익은 18억원 적자로 전환됐다(영업이익률 -6.8%). 2025년에는 매출 524억원, 영업이익 121억원, 순이익 154억원으로 영업이익률 23.1%를 회복하며 흑자 전환에 성공했다. 회복의 핵심은 4분기였는데, 2025년 4분기 매출 317억원, 영업이익 111억원, 순이익 123억원으로 연간 실적 대부분이 이 분기에 집중됐다. 반면 1~3분기는 분기 매출 46억~89억원 수준에 머물렀고, 1분기는 영업손익이 19억원 적자였다. 이처럼 대규모 수주의 매출 인식 시점에 따라 분기 실적이 출렁이는 구조다. 2026년 1분기 역시 매출 60억원, 영업손익 10억원 적자로 전형적인 비수기 흐름을 보였으나, 순이익은 6억원으로 흑자를 유지했다. 영업이익률은 호황기(2023년) 38%대에서 회복기(2025년) 23%대로, 매출 규모에 따른 고정비 레버리지가 마진을 크게 좌우함을 보여준다. 영업활동현금흐름은 2025년 257억원으로 순이익을 웃돌았고, 부채비율은 13.4%로 낮은 수준을 유지했다.",
+  "en": "Earnings are highly volatile, tracking the capex cycle of downstream substrate makers. After peaking in 2023 with revenue of KRW 91.4bn, operating profit of KRW 35.0bn and a 38.3% operating margin, revenue plunged to KRW 26.1bn in 2024 and operating profit swung to a loss of KRW 1.8bn (operating margin of -6.8%). In 2025, revenue recovered to KRW 52.4bn with operating profit of KRW 12.1bn and net profit of KRW 15.5bn, restoring a 23.1% operating margin and returning to profit. The recovery was concentrated in Q4 2025, which delivered revenue of KRW 31.7bn, operating profit of KRW 11.1bn and net profit of KRW 12.3bn—most of the full-year result. By contrast, Q1–Q3 ranged from KRW 4.6bn to KRW 8.9bn in quarterly revenue, with Q1 posting an operating loss of KRW 1.9bn. This reflects a structure where quarterly results swing with the timing of revenue recognition on large orders. Q1 2026 again showed a typical low-season pattern with revenue of KRW 6.0bn and an operating loss of KRW 1.0bn, though net profit stayed positive at KRW 0.6bn. The operating margin fell from the ~38% boom level of 2023 to the ~23% recovery level of 2025, illustrating how fixed-cost leverage tied to sales scale strongly drives margins. Operating cash flow reached KRW 25.7bn in 2025, exceeding net profit, while the debt ratio stayed low at 13.4%."
+ },
+ "industry": {
+  "ko": "전방 시장은 AI 가속기·고성능컴퓨팅(HPC)용 FC-BGA 수요 급증이 핵심 동인이다. 2026년 FC-BGA 증설 확대 방향성이 명확해지고 있으며, AI 가속기용 기판 수요 증가로 2025년 FC-BGA 기판 고객사들의 가동률과 수익성이 회복됐고 2026년에는 타이트한 기판 수급이 예상된다. TSMC는 향후 3개년(2026~2028년) 투자 규모를 이전 3개년 대비 약 2배 확대하겠다고 발표했고, 같은 기간 기판 업체들의 CAPEX도 동반 성장할 것으로 전망된다. 이비덴, 유니마이크론 등 AI 가속기향 FC-BGA를 과점하는 업체들이 선제적으로 증설에 나서며 장비 발주가 시작된 것으로 파악되고, 삼성전기·젠딩 등 후발주자도 ABF 기판 증설을 진행 또는 검토 중이다. 검사·수리는 기판 미세화·고다층화로 수율 안정화가 핵심 과제가 될수록 의존도가 높아지는 영역이다. 경쟁사가 제한적인 상황에서 고객사의 증설이 본격화될 경우 장비 수주로 이어질 가능성이 높고, 고사양 기판 비중이 늘수록 고성능 검사 장비 의존도는 더 높아진다. 차세대 유리기판은 또 다른 잠재 시장이나, SKC가 앱솔릭스를 통해 추진하는 유리기판 상업화는 당초 2024년 6월에서 2025년 양산, 다시 2026년 인증 완료로 일정이 거듭 지연되는 등 시장 개화 시점이 불확실하다.",
+  "en": "The downstream market is driven primarily by surging FC-BGA demand for AI accelerators and high-performance computing (HPC). The direction toward FC-BGA capacity expansion in 2026 is becoming clear; rising demand for AI accelerator substrates lifted FC-BGA customers' utilization and profitability in 2025, and tight substrate supply-demand is expected in 2026. TSMC announced it would roughly double its investment over the next three years (2026–2028) versus the prior three, and substrate makers' capex is expected to grow in tandem. Makers that dominate AI-accelerator FC-BGA, such as Ibiden and Unimicron, are seen to have begun pre-emptive expansion and equipment orders, while later entrants like Samsung Electro-Mechanics and Zhen Ding are expanding or considering ABF substrate capacity. Inspection and repair become more essential as substrate miniaturization and higher layer counts make yield stabilization a critical task. With limited competition, full-scale customer expansion is likely to translate into equipment orders, and reliance on high-performance inspection tools rises as the share of high-spec substrates grows. Next-generation glass substrates are another potential market, but SKC's glass-substrate commercialization via Absolics has repeatedly slipped—from an original June 2024 target to 2025 mass production and then to 2026 certification completion—leaving the timing of market take-off uncertain."
+ },
+ "outlook": {
+  "ko": "회복의 가시성은 수주잔고와 신제품 진척에서 확인된다. 2025년 1분기에 받은 334억원 수주를 포함해 3분기 누적 수주액이 473억원으로 2024년 제품 매출액을 이미 넘어섰고, 3분기 말 수주잔고 346억원의 상당 부분이 4분기 매출로 반영됐다. 신제품 측면에서 세계 최초로 개발한 2/2μm 검사장비가 글로벌 대기업의 최종 테스트 마무리 단계에 있으며, FC-BGA용 샘플이 경쟁사 대비 긍정적인 평가를 받은 것으로 확인됐다. 또한 PLP용 2/2μm 검사장비 샘플도 최종 테스트가 진행 중이다. 유리기판은 앱솔릭스의 퀄 획득과 수주를 연내 목표로 하며, 정식 PO 전환 여부가 관건이다. 재무적으로는 현금 및 단기금융상품 등 1년 내 현금화 가능한 핵심 유동 자산이 약 1467억원으로 유동부채를 크게 상회해 사실상 순현금 경영을 유지 중이다. 한편 IPO 공모 자금 중 약 400억원이 내부에 유보돼 있고 이 중 300억원가량이 M&A 용도였으나 3년째 투자처를 찾지 못했으며, 회사는 상반기 윤곽이 드러날 것이라고 밝혔다. 증권가는 2026년 매출 성장과 이익 레버리지를 기대하나, 추정치 편차가 크고 구체적 수주 이벤트 확인이 필요하다는 점에 유의해야 한다.",
+  "en": "Visibility on the recovery comes from the order backlog and new-product progress. Including KRW 33.4bn of orders received in Q1 2025, cumulative orders through Q3 reached KRW 47.3bn—already exceeding 2024 product revenue—and much of the KRW 34.6bn backlog at the end of Q3 was recognized as Q4 revenue. On new products, a 2/2μm inspection tool developed for the first time in the world is in the final stage of testing at a major global company, and its FC-BGA sample received positive feedback versus competitors. In addition, a 2/2μm inspection tool sample for PLP is also undergoing final testing. For glass substrates, the company targets obtaining Absolics qualification and orders within the year, with conversion into a formal purchase order being the key factor. Financially, core liquid assets convertible to cash within a year—cash and short-term financial instruments—total about KRW 146.7bn, far exceeding current liabilities, sustaining what is effectively net-cash management. Separately, about KRW 40.0bn of IPO proceeds remains internally retained, of which roughly KRW 30.0bn was earmarked for M&A but has gone unused for three years, with the company stating that an outline would emerge in the first half. Analysts expect 2026 revenue growth and earnings leverage, but it should be noted that estimates vary widely and concrete order events need to be confirmed."
+ },
+ "valuation_comment": {
+  "ko": "헤드라인 기준 자기자본이익률(ROE)은 8.3%, 주당순이익(EPS)은 1,292원, 주당순자산(BPS)은 15,851원 수준이다. 현재 주가수익비율은 과거 증권가가 언급해온 거래 밴드(대체로 20~30배 안팎)를 크게 웃도는 구간에 있는데, 이는 2025년 회복 단계의 이익 규모에 비해 향후 증설 사이클 기대가 선반영된 결과로 해석된다. 순자산 대비로도 프리미엄이 큰 구간으로, 기판 검사 과점 지위와 신제품 기대가 가치에 반영돼 있다. 배당은 주당 800원이 책정돼 있으나 배당수익률은 성장주 특성상 낮은 편이다. 글로벌 검사장비 동종업체(KLA·Onto·Camtek) 대비로는 전방이 패키지 기판에 집중돼 있다는 점이 차별화 요인이자 변동성 요인으로 함께 작용한다. 적자에서 흑자로 전환한 직후 구간인 만큼, 향후 이익 회복의 속도와 지속성이 밸류에이션 정당화의 핵심 변수다.",
+  "en": "On a headline basis, return on equity (ROE) is about 8.3%, earnings per share (EPS) about KRW 1,292, and book value per share (BPS) about KRW 15,851. The current price-to-earnings ratio sits well above the trading band analysts have historically cited (broadly around 20–30x), which can be read as the market pre-reflecting expectations for the coming capex cycle relative to the scale of profit in the 2025 recovery phase. The premium to net assets is also large, with the oligopolistic position in substrate inspection and new-product expectations embedded in the valuation. A dividend of KRW 800 per share is set, but the dividend yield is relatively low, as is typical for a growth stock. Versus global inspection-equipment peers (KLA, Onto, Camtek), its concentration on package substrates acts as both a differentiator and a source of volatility. As it has just moved from loss to profit, the pace and durability of the earnings recovery are the key variables for justifying the valuation."
+ },
+ "bull": [
+  {
+   "title": {
+    "ko": "과점적 시장 지위",
+    "en": "Oligopolistic market position"
+   },
+   "body": {
+    "ko": "기가비스는 FC-BGA 기판 AOI·AOR 시장에서 2024년 기준 약 50%, 일부 추정으로는 더 높은 점유율을 확보한 선두 업체다. 검사·확인·수리를 잇는 통합 솔루션을 소수만 제공하며, 5/5μm급 고사양으로 갈수록 점유율이 더 높아진 것으로 파악된다. 경쟁 강도가 낮은 구조는 증설 사이클에서 수주 집중 효과를 키운다.",
+    "en": "GigaVis is a leader holding about a 50% share—higher by some estimates—of the FC-BGA AOI/AOR market as of 2024. Only a few players offer its integrated inspect–verify–repair solution, and its share appears even higher in the high-spec 5/5μm class. The low competitive intensity amplifies order concentration during the expansion cycle."
+   }
+  },
+  {
+   "title": {
+    "ko": "AI 기판 증설 사이클",
+    "en": "AI substrate capex cycle"
+   },
+   "body": {
+    "ko": "AI 가속기·HPC 수요로 FC-BGA 수급이 타이트해지며 글로벌 기판 업체의 증설이 재개되고 있다. TSMC의 대규모 투자 확대와 이비덴·유니마이크론 등의 선제적 증설은 검사·수리 장비 발주로 연결될 가능성이 높다. 전방 CAPEX가 매출로 직접 연결되는 구조라 사이클 회복기에 실적 레버리지가 크게 나타날 수 있다.",
+    "en": "Tight FC-BGA supply-demand from AI accelerator and HPC demand is prompting global substrate makers to resume expansion. TSMC's large investment increase and pre-emptive expansion by Ibiden and Unimicron are likely to translate into inspection and repair equipment orders. As downstream capex feeds directly into revenue, earnings leverage can be large during a cyclical recovery."
+   }
+  },
+  {
+   "title": {
+    "ko": "신제품·신시장 옵션",
+    "en": "New-product and new-market optionality"
+   },
+   "body": {
+    "ko": "세계 최초 2/2μm 검사장비가 글로벌 고객사 최종 테스트 단계에 있고, PLP·유리기판·컬러 AOI 등 라인업을 확장 중이다. 유리기판 검사는 앱솔릭스 퀄 통과 이력을 보유해 시장 개화 시 선점 효과가 기대된다. 신제품이 정식 수주로 전환되면 평균판매단가(ASP) 상승과 믹스 개선이 가능하다.",
+    "en": "Its world-first 2/2μm inspection tool is in final testing at a global customer, and it is expanding its lineup with PLP, glass substrate and color AOI. With a track record of passing Absolics qualification for glass-substrate inspection, it could gain first-mover advantage if that market opens up. Conversion of new products into firm orders could raise ASP and improve the product mix."
+   }
+  }
+ ],
+ "bear": [
+  {
+   "title": {
+    "ko": "극심한 실적 변동성",
+    "en": "Extreme earnings volatility"
+   },
+   "body": {
+    "ko": "매출이 전방 CAPEX 사이클에 직결돼 2023년 914억원에서 2024년 261억원으로 급감하는 등 변동 폭이 크다. 분기 실적도 대규모 수주의 인식 시점에 따라 출렁여, 2025년 4분기에 연간 실적이 집중되고 2026년 1분기에는 다시 영업손익 적자를 기록했다. 사이클 둔화 시 고정비 부담으로 마진이 빠르게 악화될 수 있다.",
+    "en": "Revenue is tied directly to the downstream capex cycle, swinging sharply—from KRW 91.4bn in 2023 to KRW 26.1bn in 2024. Quarterly results also lurch with the timing of large-order recognition, concentrating in Q4 2025 and returning to an operating loss in Q1 2026. In a cyclical slowdown, fixed-cost burdens can deteriorate margins quickly."
+   }
+  },
+  {
+   "title": {
+    "ko": "신제품 상용화 불확실성",
+    "en": "Uncertain new-product commercialization"
+   },
+   "body": {
+    "ko": "유리기판은 기술 표준이 정립되지 않은 초기 시장으로, SKC 앱솔릭스의 양산 일정이 3년째 지연되는 등 개화 시점이 불투명하다. 2/2μm·PLP 장비도 최종 테스트·퀄 단계로 정식 수주(PO) 전환이 확정되지 않았다. 신제품 기대가 주가에 선반영된 만큼, 일정 지연이나 수주 실패는 실망 요인이 될 수 있다.",
+    "en": "Glass substrate is an early-stage market without established technical standards, and its take-off timing is murky, as SKC Absolics' mass-production schedule has slipped for three years. The 2/2μm and PLP tools are still at the final-test and qualification stage, with no confirmed conversion into firm purchase orders. Since new-product expectations are pre-reflected in the share price, schedule delays or order failures could disappoint."
+   }
+  },
+  {
+   "title": {
+    "ko": "고객·전방 집중도",
+    "en": "Customer and end-market concentration"
+   },
+   "body": {
+    "ko": "매출이 FC-BGA 패키지 기판이라는 단일 전방 시장과 소수 대형 고객에 집중돼 있다. 특정 고객의 투자 지연이나 발주 연기가 곧바로 실적에 큰 영향을 미친다. 전방이 패키지 기판에 한정된다는 점은 글로벌 검사장비 동종업체 대비 밸류에이션 할인 요인으로도 거론된다.",
+    "en": "Revenue is concentrated in a single end-market—FC-BGA package substrates—and a few large customers. A specific customer's investment delay or order deferral directly and significantly affects results. The confinement of its end-market to package substrates is also cited as a valuation-discount factor versus global inspection-equipment peers."
+   }
+  }
+ ],
+ "risks": [
+  {
+   "cat": {
+    "ko": "사이클·수요 리스크",
+    "en": "Cycle and demand risk"
+   },
+   "body": {
+    "ko": "AI 투자 열기가 식거나 기판 업체의 증설이 지연되면 장비 발주가 위축될 수 있다. 과거 2024년처럼 전방 CAPEX 축소가 매출 급감과 적자 전환으로 직결된 사례가 있다. 전방 가동률·증설 발표가 실적의 선행지표 역할을 한다.",
+    "en": "If the AI investment boom cools or substrate makers delay expansion, equipment orders could contract. As in 2024, downstream capex cuts have led directly to plunging revenue and a swing to losses. Downstream utilization and expansion announcements serve as leading indicators for earnings."
+   }
+  },
+  {
+   "cat": {
+    "ko": "기술·경쟁 리스크",
+    "en": "Technology and competition risk"
+   },
+   "body": {
+    "ko": "KLA 등 글로벌 강자가 고사양 검사 시장에서 경쟁하며, 기판 미세화·소재 전환(유리기판 등) 과정에서 기술 표준 변화가 빠르게 진행된다. 신제품 개발 속도가 고객 로드맵을 따라가지 못하면 점유율이 흔들릴 수 있다. T-Glass 등 소재 쇼티지가 고객 양산 일정에 영향을 줄 가능성도 거론된다.",
+    "en": "Global heavyweights such as KLA compete in the high-spec inspection market, and technical standards shift rapidly amid substrate miniaturization and material transitions (e.g., glass substrate). If new-product development fails to keep pace with customer roadmaps, share could waver. Material shortages such as T-Glass are also cited as a potential influence on customers' mass-production schedules."
+   }
+  },
+  {
+   "cat": {
+    "ko": "자본배분·M&A 리스크",
+    "en": "Capital-allocation and M&A risk"
+   },
+   "body": {
+    "ko": "IPO 자금 중 M&A 용도로 편성된 약 300억원이 3년째 집행되지 못해 자본 효율성에 대한 의문이 있다. M&A가 성사되더라도 통합 리스크와 가격 적정성 문제가 따른다. 풍부한 현금이 적시에 성장 동력으로 전환되는지가 관전 포인트다.",
+    "en": "About KRW 30.0bn of IPO proceeds earmarked for M&A has gone unspent for three years, raising questions about capital efficiency. Even if M&A materializes, it carries integration risk and price-appropriateness concerns. Whether ample cash is converted into growth drivers in a timely manner is a key point to watch."
+   }
+  }
+ ],
+ "checkpoints": [
+  {
+   "when": {
+    "ko": "2026년 8월 (2분기 실적)",
+    "en": "August 2026 (Q2 results)"
+   },
+   "what": {
+    "ko": "1분기 비수기 적자 이후 2분기 매출·영업이익 회복 폭과 수주잔고 추이를 확인해야 한다. 분기 실적 변동성이 큰 만큼 연간 회복 궤도 진입 여부의 가늠자가 된다.",
+    "en": "After the Q1 low-season loss, the extent of the Q2 revenue and operating-profit recovery and the order-backlog trend should be checked. Given high quarterly volatility, this serves as a gauge of whether the company is on a full-year recovery track."
+   }
+  },
+  {
+   "when": {
+    "ko": "2026년 내",
+    "en": "Within 2026"
+   },
+   "what": {
+    "ko": "2/2μm FC-BGA·PLP 검사장비의 최종 테스트 통과 및 정식 수주(PO) 전환 여부. 글로벌 대형 고객의 퀄 통과는 매출 기여와 레퍼런스 확보의 분기점이다.",
+    "en": "Whether the 2/2μm FC-BGA and PLP inspection tools pass final testing and convert into firm purchase orders. Passing qualification at a major global customer is a turning point for revenue contribution and reference value."
+   }
+  },
+  {
+   "when": {
+    "ko": "2026년 내",
+    "en": "Within 2026"
+   },
+   "what": {
+    "ko": "유리기판 검사 솔루션의 앱솔릭스 등 고객사 퀄 획득·수주 여부와 SKC 양산 일정. 시장 개화가 지연될 경우 신사업 기여 시점도 함께 밀린다.",
+    "en": "Whether the glass-substrate inspection solution wins qualification and orders from customers such as Absolics, and SKC's mass-production schedule. If market take-off is delayed, the timing of the new business's contribution slips as well."
+   }
+  },
+  {
+   "when": {
+    "ko": "2026년 상반기~하반기",
+    "en": "First to second half of 2026"
+   },
+   "what": {
+    "ko": "회사가 언급한 M&A 윤곽 구체화 여부와 자금 집행 방향. 약 300억원 규모 M&A 재원의 활용은 자본 효율성 관점에서 주요 이벤트다.",
+    "en": "Whether the M&A outline the company referred to becomes concrete and the direction of fund deployment. Use of the roughly KRW 30.0bn M&A war chest is a key event from a capital-efficiency standpoint."
+   }
+  },
+  {
+   "when": {
+    "ko": "분기별 공시",
+    "en": "Quarterly disclosures"
+   },
+   "what": {
+    "ko": "이비덴·젠딩·삼성전기 등 주요 FC-BGA 고객의 증설·CAPEX 발표와 신규 단일판매·공급계약 공시. 전방 발주가 동사 수주로 이어지는지를 추적하는 핵심 지표다.",
+    "en": "Expansion and capex announcements from key FC-BGA customers such as Ibiden, Zhen Ding and Samsung Electro-Mechanics, and disclosures of new single-sale or supply contracts. These are key indicators for tracking whether downstream orders translate into the company's own orders."
+   }
+  }
+ ],
+ "verdict": {
+  "body": {
+   "ko": "기가비스는 FC-BGA 기판 광학검사·수리 장비 시장의 과점적 1위 업체로, AI 가속기향 기판 수요 확대와 글로벌 기판 업체의 증설 사이클 초입에 위치해 있다. 2024년 전방 투자 위축으로 적자를 냈으나 2025년 대규모 수주 인식과 함께 흑자로 전환했고, 사실상 순현금 구조로 재무 안정성은 높은 편이다. 다만 매출이 전방 CAPEX 사이클과 소수 고객, 수주 인식 시점에 크게 좌우돼 분기·연간 실적 변동성이 매우 크다는 점은 분명한 약점이다. 유리기판·PLP·2/2μm 등 신제품은 성장 옵션이지만 상용화 시점과 정식 수주 전환의 불확실성이 남아 있다. 밸류에이션은 과거 거래 밴드와 순자산 대비 프리미엄이 큰 구간으로, 향후 증설 사이클 기대가 상당 부분 선반영돼 있다. 따라서 분기 실적 회복 속도, 신제품 수주 전환, 전방 고객의 증설·발주 흐름을 함께 점검하며 강세·약세 요인을 균형 있게 추적할 필요가 있다. 본 자료는 정보 제공 목적이며 투자 권유가 아니다.",
+   "en": "GigaVis is the oligopolistic No.1 in the FC-BGA substrate optical inspection and repair equipment market, positioned at the start of an expansion cycle driven by AI-accelerator substrate demand and global substrate makers' capex. It posted a loss in 2024 amid weak downstream investment but returned to profit in 2025 alongside large-order recognition, and its effectively net-cash structure lends high financial stability. A clear weakness, however, is that revenue is heavily swayed by the downstream capex cycle, a few customers and order-recognition timing, making both quarterly and annual earnings highly volatile. New products such as glass substrate, PLP and 2/2μm tools are growth options, but uncertainty remains over their commercialization timing and conversion into firm orders. The valuation sits at a large premium to its historical trading band and to net assets, with expectations for the coming capex cycle substantially pre-reflected. Investors should therefore track the pace of quarterly earnings recovery, the conversion of new products into orders, and downstream customers' expansion and order flows, balancing bullish and bearish factors. This material is for informational purposes only and is not investment advice."
+  }
+ },
+ "sources": [
+  "https://m.thinkpool.com/compDiscuss/cont/1012180",
+  "https://m.thinkpool.com/compDiscuss/cont/1023432",
+  "https://www.samsungpop.com/common.do?cmd=down&contentType=application%2Fpdf&inlineYn=Y&saveKey=research.pdf&fileName=2010%2F2025122308324053K_02_02.pdf",
+  "http://home.imeritz.com/include/resource/research/WorkFlow/20251001064400678K_02.pdf",
+  "https://kbthink.com/securities-view.html?docId=20260126173555143K",
+  "https://bbn.kiwoom.com/rfCR11874",
+  "https://valueline.co.kr/finance/summary/420770",
+  "https://m.newsprime.co.kr/section_view.html?no=649856",
+  "https://kr.investing.com/news/stock-market-news/article-1971775",
+  "https://alphasquare.co.kr/home/stock-summary?code=420770",
+  "https://www.goodkyung.com/news/articleView.html?idxno=288153",
+  "https://comp.wisereport.co.kr/wiseReport/summary/ReportSummary.aspx?cn=&cmp_cd=025750",
+  "https://m.thinkpool.com/compDiscuss/cont/1024537",
+  "https://www.investing.com/equities/gigavis",
+  "https://comp.wisereport.co.kr/company/c1010001.aspx?cmp_cd=420770",
+  "https://news.infostock.co.kr/a",
+  "https://www.pinpointnews.co.kr/news/articleView.html?idxno=435517",
+  "https://alphasquare.co.kr/home/theme-factor?theme-id=500"
+ ],
+ "v": 2,
+ "model": "claude-opus-4-8",
+ "ticker": "420770",
+ "name": "기가비스",
+ "name_en": "GigaVis Co., Ltd.",
+ "sector": "반도체",
+ "categories": [
+  "반도체"
+ ],
+ "market": "코스닥",
+ "reportDate": "2026-06-16",
+ "reportTs": "2026-06-16 21:25",
+ "dataDate": "20260616",
+ "quant": {
+  "asOf": "2026-06-16",
+  "fs_basis": "연결(CFS) · DART 공시 확정치 · 지배주주 기준 순이익",
+  "annual": [
+   {
+    "year": 2025,
+    "rev": 52434995936,
+    "op": 12100818200,
+    "np": 15452197332,
+    "np_owner": 15452197332,
+    "equity": 211003350241,
+    "equity_owner": 211003350241,
+    "liab": 28273719287,
+    "cfo": 25653570139,
+    "eps_basic": 1219,
+    "opm": 23.1,
+    "roe": 7.3,
+    "debt_ratio": 13.4
+   },
+   {
+    "year": 2024,
+    "rev": 26133336219,
+    "op": -1786928658,
+    "np": 3412006437,
+    "np_owner": 3412006437,
+    "equity": 205694783038,
+    "equity_owner": 205694783038,
+    "liab": 23973068318,
+    "cfo": 2986703835,
+    "eps_basic": 269,
+    "opm": -6.8,
+    "roe": 1.7,
+    "debt_ratio": 11.7
+   },
+   {
+    "year": 2023,
+    "rev": 91422516772,
+    "op": 35013634833,
+    "np": 32663084523,
+    "np_owner": 32663084523,
+    "equity": 212614532291,
+    "equity_owner": 212614532291,
+    "liab": 13241843016,
+    "cfo": 13148870871,
+    "eps_basic": 2752,
+    "opm": 38.3,
+    "roe": 15.4,
+    "debt_ratio": 6.2
+   }
+  ],
+  "quarterly": [
+   {
+    "q": "2025Q1",
+    "rev": 4608434443,
+    "op": -1928339725,
+    "np_owner": -292807639
+   },
+   {
+    "q": "2025Q2",
+    "rev": 8893890020,
+    "op": 2033681704,
+    "np_owner": 1393996186
+   },
+   {
+    "q": "2025Q3",
+    "rev": 7225894009,
+    "op": 866413774,
+    "np_owner": 2066987275
+   },
+   {
+    "q": "2025Q4",
+    "rev": 31706777464,
+    "op": 11129062447,
+    "np_owner": 12284021510
+   },
+   {
+    "q": "2026Q1",
+    "rev": 5988316933,
+    "op": -970610832,
+    "np_owner": 635627565
+   }
+  ],
+  "valuation": {
+   "price": 141800,
+   "mcap": 1.7974,
+   "shares": 12675758,
+   "total_shares": 12675758,
+   "wavg_shares": 12712551,
+   "per": 109.8,
+   "eps": 1292,
+   "pbr": 8.95,
+   "bps": 15851,
+   "roe_ttm": 8.3,
+   "ttm_window": "2025Q2~2026Q1",
+   "ttm_np_owner": 16380632536,
+   "pbr_krx": 8.52,
+   "bps_krx": 16646.0,
+   "basis": "PER·EPS·PBR·BPS 모두 자체 산출(네이버·토스와 동일 방식) · 배당은 DART 공시 주당현금배당금(보완:KRX) ÷ 현재가",
+   "dps": 800.0,
+   "div": 0.56
+  }
+ }
+}
