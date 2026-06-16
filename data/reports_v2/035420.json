@@ -1,179 +1,159 @@
 {
  "title": {
-  "ko": "AI 투자기와 두나무 변수의 교차점",
-  "en": "AI Investment Phase Meets the Dunamu Variable"
+  "ko": "커머스가 끄는 성장, AI 수익화는 시험대",
+  "en": "Commerce Drives Growth as AI Monetization Faces Its Test"
  },
  "lead": {
-  "ko": "사상 최대 외형 성장 속에 AI 인프라 투자로 마진과 순이익은 눌렸고, 두나무 편입·AI 수익화 일정이 다음 분기들의 핵심 점검 대상이다.",
-  "en": "Record-high revenue growth coincides with margin and net-profit pressure from AI infrastructure spending, while the Dunamu integration and AI monetization timeline become the key items to watch in coming quarters."
+  "ko": "검색·커머스 본업이 사상 최대 매출을 이끄는 가운데, AI 인프라 투자 확대가 마진과 성장 스토리의 핵심 변수로 떠올랐다.",
+  "en": "Core search and commerce are powering record revenue, while heavy AI infrastructure spending has become the key swing factor for both margins and the growth narrative."
  },
  "keypoints": [
   {
-   "ko": "2026년 1분기 매출 3조2,411억원으로 분기 사상 최대를 기록했으나, AI 인프라 투자로 영업이익률은 전년보다 낮아졌다.",
-   "en": "Q1 2026 revenue hit a record 3.24 trillion won, but the operating margin slipped from a year earlier due to AI infrastructure investment."
+   "ko": "2025년 연결 매출 12.0조원·영업이익 2.2조원으로 외형과 이익이 동반 성장했고, 영업이익률은 18%대를 유지했다.",
+   "en": "FY2025 consolidated revenue reached KRW 12.0tn and operating profit KRW 2.2tn, with both top line and profit growing and the operating margin holding in the 18% range."
   },
   {
-   "ko": "광고·커머스·결제를 잇는 플랫폼 구조에 '버티컬 AI(실행형 AI)' 전략을 접목하는 방향으로 사업이 재편되고 있다.",
-   "en": "The business is being reorganized around grafting a 'vertical/actionable AI' strategy onto its ad-commerce-payments platform."
+   "ko": "성장 엔진이 검색 광고에서 커머스로 이동 중이며, 네이버플러스 스토어·N배송·멤버십을 묶은 서비스 매출이 두드러진 성장세를 보였다.",
+   "en": "The growth engine is shifting from search advertising to commerce, with service revenue bundling Naver Plus Store, N-delivery and membership showing standout growth."
   },
   {
-   "ko": "C2C(왈라팝·포시마크·크림·소다) 등 글로벌 도전 부문이 고성장하나 수익성 기여는 아직 제한적이다.",
-   "en": "The global-ventures segment (C2C: Wallapop, Poshmark, Kream, Soda) is growing fast but its profit contribution is still limited."
+   "ko": "AI 경쟁력 확보를 위한 GPU·인프라 투자로 비용이 늘며 영업이익률이 소폭 둔화됐다.",
+   "en": "Spending on GPUs and infrastructure to secure AI competitiveness has lifted costs, slightly compressing the operating margin."
   },
   {
-   "ko": "네이버파이낸셜의 두나무 100% 자회사 편입은 일정이 9월 30일로 연기됐고 디지털자산기본법 등 절차적 불확실성이 남아 있다.",
-   "en": "Naver Financial's plan to fully absorb Dunamu has been pushed to September 30, with procedural uncertainty around digital-asset legislation remaining."
+   "ko": "쿠팡의 개인정보 유출 사태에 따른 반사 수혜로 커머스 이용자·거래액 지표가 동반 개선됐다.",
+   "en": "A spillover benefit from Coupang's data-breach episode has lifted Naver's commerce user and transaction metrics."
   },
   {
-   "ko": "자체 대중형 LLM 서비스(클로바X·Cue:)를 종료하고 검색·커머스 내재화로 전환하면서 AI 전략에 대한 시장 평가가 갈린다.",
-   "en": "After shutting down its consumer-facing LLM services (CLOVA X, Cue:) and pivoting to embedding AI into search and commerce, market views on its AI strategy are divided."
+   "ko": "독립형 생성 AI(클로바X·Cue:)를 정리하고 검색·커머스에 AI를 내재화하는 '버티컬·실용' 전략으로 선회했다.",
+   "en": "Naver has wound down standalone generative AI services (CLOVA X and Cue:) and pivoted to a pragmatic 'vertical' strategy of embedding AI into search and commerce."
   }
  ],
  "business": {
-  "ko": "NAVER는 국내 1위 검색 포털을 기반으로 광고·커머스·핀테크·콘텐츠·클라우드를 아우르는 플랫폼 기업이다. 2026년 1분기부터 매출 구분을 기존 5개 부문(서치플랫폼·커머스·핀테크·콘텐츠·엔터프라이즈)에서 3개 부문으로 개편했다. 핵심 사업과 신규 사업 기회를 명확하게 반영하기 위해 매출 구분을 네이버 플랫폼·파이낸셜 플랫폼·글로벌 도전으로 바꿨다. 네이버 플랫폼은 광고(검색/디스플레이/커머스 광고)와 서비스(쇼핑·멤버십·플레이스), 파이낸셜 플랫폼은 네이버페이, 글로벌 도전은 C2C(크림·소다·포시마크·왈라팝)·콘텐츠(웹툰·SNOW)·엔터프라이즈(클라우드·라인웍스·랩스)로 나뉜다. 1분기 부문별 매출은 네이버 플랫폼 1조8,398억원, 파이낸셜 플랫폼 4,597억원, 글로벌 도전 9,416억원이다. 결제 부문에서는 1분기 네이버페이 결제액이 스마트스토어 성장과 외부 생태계 확장으로 전년 대비 23.4% 증가한 24조2,000억원을 달성했다. 커머스에서는 네이버플러스 스토어와 N배송 등 자체 생태계를 강화하고 있으며, 콘텐츠 부문에서는 웹툰 자회사가 2024년 6월 미국 나스닥에 상장돼 있다. 경쟁 구도 측면에서 국내 검색·광고에서는 구글, 커머스에서는 쿠팡·이마트, 핀테크에서는 카카오페이·토스 등과 맞서고 있다. 회사는 검색·커머스·결제 인프라를 하나의 흐름으로 보유한 점을 차별화 요인으로 내세우고 있다.",
-  "en": "NAVER is a platform company built on Korea's leading search portal, spanning advertising, commerce, fintech, content, and cloud. From Q1 2026 it overhauled its revenue breakdown from the previous five segments into three. To more clearly reflect core businesses versus new opportunities, it changed the segments to Naver Platform, Financial Platform, and Global Ventures. Naver Platform covers advertising (search/display/commerce ads) and services (shopping, membership, Place); Financial Platform is Naver Pay; and Global Ventures spans C2C (Kream, Soda, Poshmark, Wallapop), content (Webtoon, SNOW), and enterprise (cloud, LINE WORKS, Labs). First-quarter segment revenue was Naver Platform 1.84 trillion won, Financial Platform 459.7 billion won, and Global Ventures 941.6 billion won. In payments, Q1 Naver Pay transaction value rose 23.4% year over year to 24.2 trillion won, driven by SmartStore growth and external ecosystem expansion. In commerce it is strengthening its own ecosystem through Naver Plus Store and N-delivery, while in content its webtoon subsidiary has been listed on the US Nasdaq since June 2024. Competitively, it faces Google in domestic search/advertising, Coupang and E-Mart in commerce, and Kakao Pay and Toss in fintech. The company highlights its integrated ownership of search, commerce, and payments infrastructure as a differentiator."
+  "ko": "네이버는 검색·광고를 기반으로 커머스, 핀테크, 콘텐츠, 클라우드까지 아우르는 국내 최대 인터넷 플랫폼 사업자다. 2026년 1분기부터 회사는 매출 구분을 기존 5개 부문(서치플랫폼·커머스·핀테크·콘텐츠·엔터프라이즈)에서 3개 부문(네이버 플랫폼·파이낸셜 플랫폼·글로벌 도전)으로 바꿨다. 네이버 플랫폼은 광고(검색/디스플레이 광고, 커머스 광고 등)와 서비스(쇼핑, 멤버십, 플레이스 등), 파이낸셜 플랫폼은 엔페이(Npay), 글로벌 도전 부문은 C2C(크림, 소다, 포시마크, 왈라팝), 콘텐츠(웹툰, SNOW), 엔터프라이즈(네이버클라우드, 라인웍스 등)로 나뉜다. 2026년 1분기 기준 네이버 플랫폼 부문이 1조8398억원으로 가장 큰 비중을 차지했고, 파이낸셜 플랫폼은 4597억원, 글로벌 도전 부문은 9416억원의 매출을 기록했다. 핀테크의 핵심인 네이버페이는 1분기 결제액이 스마트스토어 성장 및 외부 생태계 확장으로 전년 동기 대비 23.4% 증가한 24.2조 원을 달성했다. 글로벌 부문에서는 포시마크와 소다의 거래액 성장과 신규 편입된 왈라팝이 C2C 외형 확대를 이끌었다. 또한 회사는 LINE·Yahoo Japan·PayPay 생태계의 지분을 보유한 일본 비즈니스를 두고 있으며, 네이버와 소프트뱅크가 50:50 지분을 가진 A홀딩스 산하에 라인야후가 있다. 콘텐츠 부문은 미국 상장 자회사 웹툰엔터테인먼트를 통해 글로벌 웹툰 IP 사업을 전개한다.",
+  "en": "Naver is Korea's largest internet platform operator, spanning search and advertising, commerce, fintech, content and cloud. From the first quarter of 2026, the company changed its revenue breakdown from the previous five segments (Search Platform, Commerce, Fintech, Content, Enterprise) to three segments (Naver Platform, Financial Platform, Global Challenge). Naver Platform covers advertising (search/display ads, commerce ads) and services (shopping, membership, Place); Financial Platform covers Npay; and Global Challenge covers C2C (Kream, Soda, Poshmark, Wallapop), content (Webtoon, SNOW) and enterprise (Naver Cloud, LINE WORKS). In the first quarter of 2026, the Naver Platform segment was the largest at KRW 1.8398tn, followed by Financial Platform at KRW 459.7bn and Global Challenge at KRW 941.6bn. Naver Pay, the core of fintech, saw first-quarter payment volume rise 23.4% year on year to KRW 24.2tn on smart-store growth and external ecosystem expansion. In the global business, transaction growth at Poshmark and Soda, plus the newly consolidated Wallapop, drove C2C top-line expansion. The company also holds a Japanese business with stakes in the LINE, Yahoo Japan and PayPay ecosystem, with LY Corporation sitting under A Holdings, jointly owned 50:50 by Naver and SoftBank. Its content arm runs a global webtoon IP business through US-listed subsidiary Webtoon Entertainment."
  },
  "earnings": {
-  "ko": "연간 실적은 외형과 이익 모두 꾸준한 성장 추세다. 매출은 2022년 8조2,201억원에서 2023년 9조6,706억원, 2024년 10조7,377억원, 2025년 12조350억원으로 확대됐다. 영업이익은 같은 기간 1조3,047억원→1조4,888억원→1조9,793억원→2조2,081억원으로 늘었고, 영업이익률은 2022~2023년 15%대에서 2024~2025년 18%대로 올라섰다. 지배주주 순이익은 2022년 6,732억원, 2023년 9,850억원에서 2024년 1조9,232억원, 2025년 1조8,187억원으로 회복됐고, ROE는 2022년 3.0%에서 2025년 6.6%로 개선됐다. 현금흐름도 견조해 2025년 영업활동현금흐름은 3조958억원, 부채비율은 41.9%로 2023년 47.4%에서 낮아졌다. 분기 추이를 보면 매출은 2025년 1분기 2조7,868억원에서 2026년 1분기 3조2,411억원까지 우상향했고, 2026년 1분기 매출 3조2,411억원, 영업이익 5,418억원으로 분기 사상 최대를 기록했다. 다만 순이익 변동성은 크게 나타나, 분기 지배주주 순이익이 2025년 3분기 7,264억원에서 2025년 4분기 1,787억원으로 급감하는 등 영업외 손익 영향이 컸다. 1분기 매출은 전년 대비 16.3% 증가하고 영업이익은 7.2% 늘었으나, AI 인프라 투자와 글로벌 사업 확대로 영업이익률이 하락했고 당기순이익은 31.3% 감소했다. 광고 매출은 타겟팅 고도화로 AI의 매출 성장 기여도가 50% 이상을 기록하며 9.3% 성장했고, 서비스 매출은 커머스 생태계가 견인하며 35.6% 증가했다.",
-  "en": "Annual results show a steady uptrend in both scale and profit. Revenue grew from 8.22 trillion won in 2022 to 9.67 trillion in 2023, 10.74 trillion in 2024, and 12.04 trillion in 2025. Operating profit rose over the same period from 1.30 trillion to 1.49 trillion, 1.98 trillion, and 2.21 trillion won, with operating margin climbing from the mid-15% range in 2022-2023 to the 18% range in 2024-2025. Owners' net profit recovered from 673.2 billion won in 2022 and 985.0 billion in 2023 to 1.92 trillion in 2024 and 1.82 trillion in 2025, while ROE improved from 3.0% in 2022 to 6.6% in 2025. Cash generation was solid, with 2025 operating cash flow of 3.10 trillion won and the debt ratio falling to 41.9% from 47.4% in 2023. By quarter, revenue rose steadily from 2.79 trillion won in Q1 2025 to 3.24 trillion in Q1 2026, and Q1 2026 revenue of 3.24 trillion won and operating profit of 541.8 billion won marked a quarterly record. Net profit, however, was volatile: owners' net profit swung from 726.4 billion won in Q3 2025 to just 178.7 billion in Q4 2025, reflecting large non-operating items. Q1 revenue rose 16.3% and operating profit 7.2% year over year, but the operating margin declined on AI infrastructure investment and global expansion, and net profit fell 31.3%. Ad revenue grew 9.3% with AI contributing over 50% of growth via improved targeting, while service revenue rose 35.6%, led by the commerce ecosystem."
+  "ko": "확정 실적 기준 매출은 2022년 8.22조원에서 2023년 9.67조원, 2024년 10.74조원, 2025년 12.04조원으로 꾸준히 성장했다. 영업이익은 같은 기간 1.30조원→1.49조원→1.98조원→2.21조원으로 늘었고, 영업이익률은 2022~2023년 15%대에서 2024년 18.4%, 2025년 18.3%로 한 단계 올라섰다. 지배주주 순이익은 2022년 6732억원, 2023년 9850억원에서 2024년 1.92조원, 2025년 1.82조원으로 크게 회복됐는데, 2024년에는 일부 일회성 요인이 반영된 것으로 보인다. 영업활동현금흐름은 2022년 1.45조원에서 2025년 3.10조원으로 두 배 이상 증가해 현금창출력이 개선됐고, 부채비율은 2023년 47.4%에서 2025년 41.9%로 낮아졌다. 분기 흐름을 보면 2025년 매출이 2.79조→2.92조→3.14조→3.20조원으로 순증했고 영업이익도 5053억→5216억→5706억→6106억원으로 우상향했다. 다만 지배주주 순이익은 2025년 3분기 7264억원으로 크게 튄 뒤 4분기 1787억원으로 급감해 분기별 변동성이 컸다. 2026년 1분기는 연결 매출 3조2411억원, 영업이익 5418억원으로 전년 동기 대비 매출 16.3%, 영업이익 7.2% 증가했다. 다만 GPU 확보 등 AI 인프라 투자로 인프라 비용이 전년 대비 32.5% 늘면서 영업이익률은 16.7%로 하락했고, 같은 분기 지배주주 순이익(2853억원)도 전년 동기 대비 감소했다.",
+  "en": "On a confirmed basis, revenue grew steadily from KRW 8.22tn in 2022 to KRW 9.67tn in 2023, KRW 10.74tn in 2024 and KRW 12.04tn in 2025. Operating profit rose over the same period from KRW 1.30tn to KRW 1.49tn, KRW 1.98tn and KRW 2.21tn, with the operating margin stepping up from the 15% range in 2022-2023 to 18.4% in 2024 and 18.3% in 2025. Net profit attributable to owners recovered sharply from KRW 673.2bn in 2022 and KRW 985.0bn in 2023 to KRW 1.92tn in 2024 and KRW 1.82tn in 2025, with 2024 appearing to reflect some one-off items. Operating cash flow more than doubled from KRW 1.45tn in 2022 to KRW 3.10tn in 2025, improving cash generation, while the debt-to-equity ratio fell from 47.4% in 2023 to 41.9% in 2025. By quarter, 2025 revenue rose sequentially from KRW 2.79tn to KRW 2.92tn, KRW 3.14tn and KRW 3.20tn, with operating profit also climbing from KRW 505.3bn to KRW 521.6bn, KRW 570.6bn and KRW 610.6bn. However, owner net profit spiked to KRW 726.4bn in the third quarter of 2025 before dropping to KRW 178.7bn in the fourth quarter, reflecting high quarter-to-quarter volatility. In the first quarter of 2026, consolidated revenue was KRW 3.2411tn and operating profit KRW 541.8bn, up 16.3% and 7.2% year on year respectively. However, infrastructure costs rose 32.5% year on year on AI investment such as GPU procurement, pushing the operating margin down to 16.7%, and owner net profit for the quarter (KRW 285.3bn) also declined year on year."
  },
  "industry": {
-  "ko": "국내 인터넷 플랫폼 산업은 검색·광고의 안정적 캐시카우 위에 커머스·핀테크·콘텐츠가 성장축을 형성하는 구조다. 최근 산업 화두는 생성형 AI 확산에 따른 검색 패러다임 변화로, 네이버는 AI 브리핑 적용 범위를 2배로 확대하고 AI 탭을 2026년 상반기에 출시하는 계획을 공개했다. 광고 시장에서 AI의 기여가 커지는 흐름은 명확하나, 검색 광고 시장 성장률이 연 10% 수준인 반면 AI 커머스는 20~30% 성장이 가능한 영역으로 평가된다. 경쟁 측면에서 구글은 크롬에 AI를 내장하며 국내 검색 시장 변화를 노리고 있어 네이버의 검색 지위에 압박 요인으로 거론된다. 커머스에서는 쿠팡과의 경쟁이 지속되는 가운데, 네이버플러스 스토어가 경쟁 플랫폼 이탈 이용자를 흡수하고 있다는 분석도 나온다. 핀테크에서는 두나무 편입이 성사될 경우 디지털 자산 영역으로 외연이 확장돼 산업 내 포지션이 달라질 수 있다. 전반적으로 네이버는 내수 플랫폼 1위 지위를 바탕으로 AI를 기존 서비스에 접목하는 '방어적 동시에 공격적' 전환기에 위치해 있다.",
-  "en": "Korea's internet platform industry is structured around stable cash-generating search/advertising, with commerce, fintech, and content forming the growth axes. A central industry theme is the shift in the search paradigm from generative AI; NAVER unveiled plans to double the coverage of its AI Briefing and launch an AI Tab in the first half of 2026. While AI's growing contribution to advertising is clear, the search-ad market is seen growing around 10% annually versus 20-30% potential growth in AI commerce. On the competitive front, Google is embedding AI into Chrome and eyeing changes in the domestic search market, cited as a pressure point on NAVER's search position. In commerce, competition with Coupang continues, while analysts note Naver Plus Store has been absorbing users leaving rival platforms. In fintech, a completed Dunamu integration could extend NAVER into digital assets and shift its industry positioning. Overall, NAVER sits in a transition that is both defensive and offensive, leveraging its top domestic-platform position to embed AI into existing services."
+  "ko": "네이버의 전방시장은 국내 검색·디스플레이 광고, 이커머스, 핀테크, 글로벌 콘텐츠·클라우드로 나뉜다. 이커머스에서는 쿠팡과 양강 구도를 형성하고 있으며, 국가데이터처 기준 2024년 말 거래액 기준 점유율은 네이버 20.7%, 쿠팡 22.7%로 알려졌다. 최근에는 쿠팡이 정보유출 사건 여파로 1분기 3545억원 규모의 대규모 적자를 기록할 때 네이버가 탈팡족을 흡수하며 가장 큰 반사이익을 봤다는 평가가 나온다. 사업 구조 측면에서 쿠팡은 직매입 중심으로 구매자·배송에 초점을 맞추는 반면, 네이버는 오픈마켓이라 판매자·중개·광고에 집중한다. 검색 영역에서는 생성형 AI 확산이 구조적 압력으로 작용하는데, 최근 4개년 서치플랫폼 매출 비중은 2022년 65.7%에서 2025년 60.3%로 하락 추세를 보였다. 콘텐츠에서는 웹툰을 통한 글로벌 IP 경쟁을, 클라우드·AI에서는 국내외 B2B 시장을 놓고 빅테크와 경쟁한다. 전반적으로 안정적 본업과 신성장 영역의 수익화 속도 차이가 업종 내 포지션을 좌우하는 국면이다.",
+  "en": "Naver's end markets span domestic search and display advertising, e-commerce, fintech, and global content and cloud. In e-commerce it forms a two-horse race with Coupang, and based on government data, 2024 year-end transaction-value share was reportedly 20.7% for Naver and 22.7% for Coupang. Recently, when Coupang posted a large quarterly operating loss of around KRW 354.5bn in the wake of its data-breach incident, Naver was seen as the biggest beneficiary, absorbing departing customers. Structurally, Coupang centers on direct sourcing with a focus on buyers and delivery, while Naver, as an open marketplace, focuses on sellers, intermediation and advertising. In search, the spread of generative AI is a structural pressure: over the past four years the search-platform revenue share fell from 65.7% in 2022 to 60.3% in 2025. In content it competes on global IP through webtoons, and in cloud and AI it competes with big tech for domestic and overseas B2B markets. Overall, the gap between a stable core business and the pace of monetization in new growth areas is shaping its position within the sector."
  },
  "outlook": {
-  "ko": "회사와 증권가가 제시한 확인된 일정 중심으로 보면, AI 수익화와 두나무 편입이 향후 실적의 핵심 변수다. 네이버는 1분기에 쇼핑 에이전트를 출시했고 2분기에는 대화형 AI 검색 'AI탭'을 선보인 뒤, 쇼핑·검색·광고를 통합하는 AI 에이전트로 발전시킬 계획이다. AI 검색에 광고를 접목하는 수익화 테스트는 2026년 하반기에 진행할 계획을 제시했다. 커머스에서는 빠른배송 확대를 최우선 과제로 제시하며 3년 내 N배송 거래액 50% 목표를 발표했다. 인프라 측면에서는 '각 세종' 데이터센터 증설과 GPU 서버 도입에 총사업비 9,221억원이 투입되며, 이 중 4,000억원은 저리대출로 지원받고 나머지는 자체 조달해 하이퍼클로바X 고도화와 서비스 전반의 AI 확대에 활용된다. 두나무 편입의 경우 주주총회는 8월 18일, 거래 완료 일정은 9월 30일로 연기됐다. 한 증권사는 2026년 연결 영업수익 13조1,464억원, 영업이익 2조5,109억원으로 전망하면서 두나무 인수로 인한 재무적 영향은 이후 반영 예정이라고 밝혔다. 다만 AI 서비스가 실제 매출 성장으로 이어지는 속도와 두나무 절차의 진행 여부가 전망의 가장 큰 불확실성으로 남아 있다.",
-  "en": "Focusing on confirmed schedules from the company and brokerages, AI monetization and the Dunamu integration are the key swing factors for future results. NAVER launched a shopping agent in Q1 and plans to introduce a conversational AI search 'AI Tab' in Q2, later evolving these into an integrated AI agent across shopping, search, and advertising. It has flagged a plan to run a monetization test grafting ads onto AI search in the second half of 2026. In commerce, it set faster-delivery expansion as a top priority and announced a target of 50% of transaction value via N-delivery within three years. On infrastructure, a total of 922.1 billion won is being invested in expanding the 'Gak Sejong' data center and adding GPU servers, of which 400 billion won comes via low-rate loans and the rest is self-funded, supporting HyperCLOVA X upgrades and broader AI adoption across services. For the Dunamu deal, the shareholder meeting was pushed to August 18 and deal completion to September 30. One brokerage projected 2026 consolidated revenue of 13.15 trillion won and operating profit of 2.51 trillion won, noting the financial impact of the Dunamu acquisition would be reflected later. The pace at which AI services translate into actual revenue growth, and whether the Dunamu process proceeds, remain the biggest uncertainties in the outlook."
+  "ko": "회사는 커머스와 AI 수익화를 향후 핵심 과제로 제시했다. 1분기 컨퍼런스콜에서 최수연 대표는 \"배송은 네이버 커머스 전략의 최우선 과제\"라고 밝혔고, 중장기적으로 N배송 비중을 50% 이상으로 끌어올리겠다는 목표를 제시했다. 또한 핵심 상품의 N배송 전환 지원과 물류 직계약 확대를 추진하고, 하반기에는 멤버십과 연계된 무제한 무료배송을 시작할 계획이라고 밝혔다. AI 수익화와 관련해서는 AI 탭의 수익화를 4분기로 제시한 것으로 전해진다. 모델 측면에서는 네이버클라우드가 하반기 하이퍼클로바X의 성능 개선 버전을 서비스하겠다며 \"하반기부터는 기대해도 좋다\"고 밝혔다. 동시에 회사는 AI 검색을 넘어 'AI 통합 에이전트' 구현을 목표로 차세대 모델과 하네스 엔지니어링 역량을 본격 적용하겠다고 밝혔다. 다만 이러한 투자 확대가 매출·수익성 개선으로 이어질지는 향후 분기 실적으로 확인이 필요하다.",
+  "en": "The company has flagged commerce and AI monetization as its key future tasks. On the first-quarter call, CEO Choi Soo-yeon said \"delivery is the top priority of Naver's commerce strategy,\" and over the medium to long term set a target of raising the N-delivery share above 50%. The company also said it would push N-delivery conversion support for core products and expand direct logistics contracts, and start membership-linked unlimited free delivery in the second half. On AI monetization, the AI tab is reported to be targeted for the fourth quarter. On the model side, Naver Cloud said it would launch an improved version of HyperCLOVA X in the second half, adding that the second half is \"something to look forward to.\" At the same time, the company said it would fully apply next-generation models and harness-engineering capabilities, aiming to build an 'integrated AI agent' beyond AI search. Whether this expanded investment translates into revenue and margin improvement, however, will need to be confirmed in coming quarters."
  },
  "valuation_comment": {
-  "ko": "헤드라인 기준 자기자본이익률(ROE)은 약 6.0%, 주당순이익(EPS)은 12,117원, 주당순자산(BPS)은 195,071원 수준이다. 과거 수년간 적자에 가까운 저조한 이익 구간을 지나 흑자 기반의 이익 회복이 진행되어 온 점은 분모(EPS·ROE)에 우호적이나, 최근 AI 인프라 투자 확대로 순이익 변동성이 커진 점은 함께 봐야 한다. 주가수익배수(PER)는 과거 거래 밴드(대체로 10~20배대)와 비교해 그 상단 부근에 위치하며, 시장에서는 글로벌 동종 플랫폼 대비 낮은 수준이라는 평가와 AI 회사로 인정받지 못한 결과라는 해석이 엇갈린다. 주가순자산배수(PBR)는 순자산을 다소 웃도는 구간으로, 자산가치 대비 큰 프리미엄이 형성된 상태는 아니다. 배당의 경우 주당 현금배당(DPS)이 책정돼 있으나 배당수익률은 일반적으로 성숙 가치주 대비 낮은 편이며, 이익 성장과 신사업 투자에 무게가 실린 배당 정책이라는 점을 감안할 필요가 있다. 결국 밸류에이션의 방향은 AI 수익화와 두나무 편입이라는 이벤트가 실제 이익으로 확인되는지에 크게 좌우될 구조다.",
-  "en": "On a headline basis, return on equity (ROE) is about 6.0%, earnings per share (EPS) is 12,117 won, and book value per share (BPS) is 195,071 won. The recovery from near-loss-level earnings in prior years to a profit-based footing is favorable for the EPS/ROE denominators, but the recent rise in net-profit volatility from expanded AI infrastructure spending must be considered alongside it. The price-to-earnings multiple sits near the upper end of its historical trading band (broadly the 10-20x range), and views diverge between those calling it low versus global platform peers and those reading it as a result of NAVER not yet being recognized as an AI company. The price-to-book ratio is in a zone modestly above net assets, so no large premium to asset value has formed. A cash dividend per share has been set, but the dividend yield is generally lower than that of mature value stocks, and the policy weights earnings growth and new-business investment. Ultimately the direction of valuation will hinge heavily on whether the AI-monetization and Dunamu-integration events are confirmed in actual profits."
+  "ko": "헤드라인 기준 자기자본이익률은 약 6.0% 수준, 주당순이익은 약 12,117원, 주당순자산은 약 195,071원이다. 주가수익비율은 과거 거래 밴드에 견주면 상단에 가까운 구간에서 형성돼 있고, 시장 일각에서는 아직 시장이 네이버를 AI 기업으로 인정하지 않는 점이 멀티플의 발목을 잡는다는 시각이 있다. 순자산 대비로는 1배를 다소 웃도는 프리미엄 구간이며, 주당배당금(DPS)은 2,630원으로 배당수익률은 업종 평균을 크게 웃돈다고 보기 어려운 편이다. 이익은 과거 부진에서 회복 흐름을 보였으나, AI 인프라 투자로 인한 비용 부담이 이익률에 영향을 주고 있어 밸류에이션 재평가 여부는 수익화 성과 확인에 좌우될 전망이다. 정확한 현재 수치는 화면의 실시간 카드를 참고하는 것이 정확하다.",
+  "en": "On a headline basis, return on equity is around 6.0%, earnings per share about KRW 12,117, and book value per share about KRW 195,071. The price-to-earnings ratio sits near the upper part of its historical trading band, and some in the market argue that the fact that the market does not yet recognize Naver as an AI company is holding back its multiple. Relative to net assets it trades at a modest premium above one times, and with a dividend per share of KRW 2,630 the dividend yield is not far above sector norms. Earnings have shown a recovery from past weakness, but cost pressure from AI infrastructure investment is weighing on margins, so any re-rating will likely hinge on confirmation of monetization results. For exact current figures, the real-time on-screen cards are the accurate reference."
  },
  "bull": [
   {
    "title": {
-    "ko": "AI 접목 광고·커머스의 외형 성장",
-    "en": "AI-driven growth in advertising and commerce"
+    "ko": "커머스 반사 수혜와 점유율 추격",
+    "en": "Commerce spillover and share catch-up"
    },
    "body": {
-    "ko": "1분기 매출이 분기 사상 최대를 기록했고 서비스(커머스) 매출이 두 자릿수 고성장을 이어갔다. 광고는 AI의 매출 성장 기여도가 50% 이상으로 9.3% 성장했고, 서비스 매출은 커머스 생태계 견인으로 35.6% 증가했다. 네이버페이 결제액도 전년 대비 23.4% 늘며 핵심 플랫폼이 견조한 성장을 보였다.",
-    "en": "Q1 revenue hit a quarterly record and service (commerce) revenue continued double-digit growth. Advertising grew 9.3% with AI contributing over 50% of growth, while service revenue rose 35.6% on the commerce ecosystem. Naver Pay transaction value also grew 23.4% year over year, showing solid momentum in the core platform."
+    "ko": "쿠팡의 정보유출 사태로 이탈한 이용자를 네이버가 흡수하며 거래액·멤버십 지표가 동반 개선되고 있다. 와이즈앱 기준 4월 네이버플러스 스토어 MAU가 838만명까지 확대됐다는 분석이 있다. 오픈마켓 기반 수수료 모델은 직매입 대비 수익성이 높다는 점도 강점이다.",
+    "en": "Naver is absorbing users who left Coupang after its data breach, lifting both transaction value and membership metrics. Some analyses cite Naver Plus Store MAU expanding to 8.38mn in April per WiseApp. Its open-marketplace fee model also offers higher profitability than a direct-sourcing model."
    }
   },
   {
    "title": {
-    "ko": "두나무 편입에 따른 이익 확장 기대",
-    "en": "Profit-expansion potential from absorbing Dunamu"
+    "ko": "AI 내재화로 본업 효율 개선",
+    "en": "AI embedding improves core efficiency"
    },
    "body": {
-    "ko": "네이버파이낸셜이 업비트 운영사 두나무를 100% 자회사로 편입하면 디지털 자산 영역으로 외연이 넓어진다. 기존 플랫폼 사업자에서 금융형 디지털 자산 사업자로 확장이 가능하고, 업계에서는 연간 영업이익이 3조원 내외로 크게 확대될 것으로 보고 있다. 다만 이는 절차 완료를 전제로 한 기대치다.",
-    "en": "If Naver Financial fully absorbs Upbit operator Dunamu, NAVER extends into digital assets. It could expand from a platform operator to a financial digital-asset player, with the industry expecting annual operating profit to widen substantially to around 3 trillion won. This, however, is an expectation premised on the deal closing."
+    "ko": "네이버는 광고·커머스 등 핵심 서비스에 AI를 접목해 타겟팅과 구매 전환을 높이고 있다. 1분기 광고 매출에서 AI의 성장 기여도가 50% 이상을 기록했다고 회사는 설명했다. 독립형 AI 대신 버티컬·실용 전략으로 선회해 비용 대비 효율을 추구한다.",
+    "en": "Naver is embedding AI into core services such as advertising and commerce to improve targeting and purchase conversion. The company said AI contributed more than 50% of first-quarter ad-revenue growth. It has pivoted to a pragmatic, vertical strategy rather than standalone AI to pursue cost efficiency."
    }
   },
   {
    "title": {
-    "ko": "글로벌 C2C 고성장",
-    "en": "High growth in global C2C"
+    "ko": "글로벌 C2C·콘텐츠 외형 확대",
+    "en": "Global C2C and content scale-up"
    },
    "body": {
-    "ko": "해외 C2C 사업이 빠르게 성장하며 글로벌 외형을 키우고 있다. C2C 매출은 왈라팝 편입 완료와 포시마크·크림·소다의 성장으로 전년 대비 57.7%, 전 분기 대비 22.9% 증가했다. 글로벌 도전 부문 전체 매출도 전년 대비 18.4% 증가해 해외 성장 기반이 확대되고 있다.",
-    "en": "Overseas C2C is growing rapidly, expanding NAVER's global footprint. C2C revenue rose 57.7% year over year and 22.9% quarter over quarter, on the completed Wallapop consolidation and growth at Poshmark, Kream, and Soda. Total Global Ventures revenue also rose 18.4% year over year, broadening the overseas growth base."
+    "ko": "포시마크·소다·크림에 더해 스페인 왈라팝 편입으로 글로벌 C2C 외형이 빠르게 커지고 있다. 1분기 C2C 매출은 전년 대비 57.7% 증가했다. 웹툰 IP의 영상화 등 글로벌 콘텐츠 사업도 중장기 성장 옵션을 제공한다.",
+    "en": "Beyond Poshmark, Soda and Kream, the addition of Spain's Wallapop is rapidly scaling global C2C. First-quarter C2C revenue rose 57.7% year on year. Globalizing webtoon IP through film and TV adaptations also offers medium- to long-term growth optionality."
    }
   }
  ],
  "bear": [
   {
    "title": {
-    "ko": "AI 투자에 따른 마진·순이익 압박",
-    "en": "Margin and net-profit pressure from AI spending"
+    "ko": "AI 투자에 따른 마진 압박",
+    "en": "Margin pressure from AI investment"
    },
    "body": {
-    "ko": "외형은 커졌지만 수익성 지표는 눌렸다. 1분기 당기순이익은 2,910억원으로 31.3% 감소했다. 영업이익 증가폭은 매출 대비 제한됐는데, 이는 AI 경쟁력 확보를 위한 인프라 투자 확대가 영향을 미친 것으로 분석된다. 투자 회수 시점이 불확실한 점이 부담이다.",
-    "en": "Revenue grew but profitability metrics were suppressed. Q1 net profit fell 31.3% to 291 billion won. Operating-profit growth was limited relative to revenue, attributed to expanded infrastructure investment to secure AI competitiveness. The uncertain timing of returns on that investment is a burden."
+    "ko": "GPU 확보 등 인프라 투자로 1분기 인프라 비용이 전년 대비 32.5% 늘며 영업이익률이 16.7%로 하락했다. 회사는 2분기 이후에도 커머스 마케팅과 투자를 지속하겠다는 입장이다. 투자 확대가 이익으로 환원되기까지 시차가 존재한다.",
+    "en": "Infrastructure spending such as GPU procurement raised first-quarter infrastructure costs 32.5% year on year, pushing the operating margin to 16.7%. The company says it will keep up commerce marketing and investment beyond the second quarter. There is a lag before this expanded investment converts into profit."
    }
   },
   {
    "title": {
-    "ko": "AI 전략 신뢰도와 글로벌 경쟁",
-    "en": "AI-strategy credibility and global competition"
+    "ko": "검색 매출 비중 하락과 생성 AI 압력",
+    "en": "Declining search share and generative-AI pressure"
    },
    "body": {
-    "ko": "자체 대중형 AI 서비스를 접으며 전략 우려가 제기됐다. 클로바X와 Cue: 서비스는 2026년 4월 9일부로 종료됐고, 이는 AI 전략이 초기 기대만큼 시장 반응을 얻지 못했다는 신호로 읽힌다. 한국형 챗GPT로 기대를 모았던 모델의 정리는 글로벌 확장 기대를 약화시키며 주가의 성장 기대감을 꺾는 배경이 됐다.",
-    "en": "Shutting down its consumer AI services raised strategy concerns. CLOVA X and Cue: were terminated on April 9, 2026, read as a sign the AI strategy did not draw the market response initially hoped for. Winding down a model once touted as a 'Korean ChatGPT' weakened global-expansion expectations and dampened the growth premium in the stock."
+    "ko": "서치플랫폼 매출 비중이 2022년 65.7%에서 2025년 60.3%로 하락 추세를 보였다. 생성형 AI 확산으로 검색 패러다임이 변화하면서 기존 검색·광고 경쟁력 유지가 과제다. 일각에서는 네이버의 AI 대응이 성장보다 방어 성격이 강하다는 지적도 있다.",
+    "en": "The search-platform revenue share trended down from 65.7% in 2022 to 60.3% in 2025. As generative AI shifts the search paradigm, maintaining the competitiveness of legacy search and advertising is a challenge. Some argue Naver's AI response is more defensive than growth-oriented."
    }
   },
   {
    "title": {
-    "ko": "두나무 딜 지연·절차 불확실성",
-    "en": "Dunamu deal delays and procedural uncertainty"
+    "ko": "AI 수익화 불확실성과 전략 의문",
+    "en": "AI monetization uncertainty and strategy doubts"
    },
    "body": {
-    "ko": "두나무 편입 일정이 미뤄지며 기대 효과 반영도 지연되고 있다. 합병은 약 3개월 연기됐는데, 디지털자산기본법 제정 지연이 결정적 요인으로 꼽혔다. 규제 공백에 따른 합병 기일 불확실성이 존재하며, 예정 기일보다 더 미뤄질 가능성도 배제할 수 없다는 견해가 있다. 주식매수청구권 규모도 변수다.",
-    "en": "The Dunamu integration timeline has slipped, delaying the realization of expected benefits. The merger was postponed about three months, with delayed digital-asset legislation cited as the decisive factor. Uncertainty around the closing date persists amid a regulatory vacuum, and some view a further delay as not ruled out. The scale of appraisal/buyback rights is another variable."
+    "ko": "하이퍼클로바X 공개 후에도 투자 대비 매출 기여도가 뚜렷하지 않다는 평가가 있다. 클로바X와 Cue: 서비스 종료는 초기 기대만큼 시장 반응을 확보하지 못했다는 신호로도 읽혔다. 버티컬·내수 집중 전략이 글로벌 확장 기대를 약화시킬 수 있다는 우려가 제기된다.",
+    "en": "Even after HyperCLOVA X's debut, some say its revenue contribution relative to investment remains unclear. The wind-down of CLOVA X and Cue: was read as a signal that uptake fell short of early expectations. There is concern that a vertical, domestic-focused strategy could weaken hopes for global expansion."
    }
   }
  ],
  "risks": [
   {
    "cat": {
-    "ko": "규제·법제화",
-    "en": "Regulation and legislation"
+    "ko": "규제·거버넌스(라인야후)",
+    "en": "Regulatory/governance (LY Corp)"
    },
    "body": {
-    "ko": "두나무 편입은 공정위 기업결합 심사와 금융당국 승인, 디지털자산기본법 등 법제화에 좌우된다. 디지털자산기본법이 표류 중이고, 대주주 지분 제한과 가상자산거래소 지분 항목이 양사 거래를 막을 수 있다는 지적이 있다. 법안 향방에 따라 거래 구조가 달라질 수 있다.",
-    "en": "The Dunamu integration depends on antitrust review, financial-regulator approval, and legislation such as the digital-asset framework act. That act has stalled, and concerns exist that major-shareholder ownership limits and crypto-exchange stake provisions could block the deal. The deal structure could change depending on how the legislation evolves."
+    "ko": "2024년부터 이어진 일본 정부의 라인야후 행정지도 사태로 지분 관계 재편 압박이 현재진행형이다. 네이버는 소프트뱅크와 협상을 이어왔다. 지분·경영권 구도 변화는 일본 사업 가치와 연결 실적에 영향을 줄 수 있다.",
+    "en": "Pressure to restructure the shareholding from the Japanese government's administrative guidance on LY Corp, ongoing since 2024, remains live. Naver has continued negotiations with SoftBank. Changes in the equity and control structure could affect the value of the Japan business and consolidated results."
    }
   },
   {
    "cat": {
-    "ko": "경쟁 심화",
-    "en": "Intensifying competition"
+    "ko": "경쟁 심화(이커머스)",
+    "en": "Intensifying competition (e-commerce)"
    },
    "body": {
-    "ko": "검색·광고에서 구글의 AI 검색 확장, 커머스에서 쿠팡과의 경쟁이 지속된다. 검색 의존도 하락 속 생성형 AI 확산이 압박 요인으로 작용하고, 구글은 검색·AI 동반 성장으로 네이버와 대비되는 흐름을 보인다. 국내 검색 지위가 흔들릴 경우 핵심 광고 캐시카우가 영향을 받을 수 있다.",
-    "en": "Competition persists, with Google's AI-search expansion in search/advertising and Coupang in commerce. The spread of generative AI amid declining search dependence acts as pressure, and Google shows search-and-AI growth in contrast to NAVER. Should NAVER's domestic search position weaken, its core advertising cash cow could be affected."
+    "ko": "쿠팡이 정보유출 충격을 조기에 수습하면 반사 수혜가 약화될 수 있다. 쿠팡은 와우 회원의 상당 부분을 회복하고 있다고 밝혔다. 도심 외곽 배송 밀도 등에서 네이버는 아직 쿠팡 인프라에 미치지 못한다는 평가가 있다.",
+    "en": "If Coupang resolves its data-breach shock quickly, the spillover benefit could fade. Coupang said it has recovered a large share of its WOW members. Naver is still seen as trailing Coupang's infrastructure in areas such as delivery density in outer urban regions."
    }
   },
   {
    "cat": {
-    "ko": "투자비 회수 및 순이익 변동성",
-    "en": "Investment recovery and net-profit volatility"
+    "ko": "비용·투자 부담",
+    "en": "Cost and investment burden"
    },
    "body": {
-    "ko": "대규모 AI 인프라 투자와 M&A가 단기 비용·현금 부담으로 작용한다. 관건은 투자 확대가 실제 매출 성장과 수익성 개선으로 이어질지이며, 하반기 AI 광고 수익화와 물류 투자 효율화, C2C 수익 구조 안정화가 핵심 변수로 지목된다. 분기 순이익 변동성도 함께 점검해야 한다.",
-    "en": "Large AI infrastructure investment and M&A act as near-term cost and cash burdens. The key is whether expanded investment translates into actual revenue growth and improved profitability, with second-half AI ad monetization, logistics-investment efficiency, and stabilizing C2C profit structures cited as core variables. Quarterly net-profit volatility also needs monitoring."
+    "ko": "AI 인프라와 물류 투자 확대가 동시에 진행되며 비용 부담이 누적되고 있다. 1분기 잉여현금흐름이 전년 동기 대비 줄고 차입금이 늘었다는 보도가 있다. 무제한 무료배송 등 커머스 투자 확대 가능성도 단기 수익성에 부담이 될 수 있다.",
+    "en": "AI infrastructure and logistics investment are expanding simultaneously, accumulating cost pressure. Reports note first-quarter free cash flow fell year on year while borrowings rose. The potential expansion of commerce investment, such as unlimited free delivery, could also weigh on near-term profitability."
    }
   }
  ],
  "checkpoints": [
   {
    "when": {
-    "ko": "2026년 7~8월 (2분기 실적 발표)",
-    "en": "July-August 2026 (Q2 earnings)"
+    "ko": "2026년 7월 말~8월 초",
+    "en": "Late July to early August 2026"
    },
    "what": {
-    "ko": "2분기 실적에서 광고·커머스 성장 지속 여부와 AI 인프라 투자에 따른 영업이익률 추이를 확인. 'AI탭' 출시 효과의 초기 지표가 관전 포인트.",
-    "en": "Check in Q2 results whether ad/commerce growth continues and how the operating margin trends under AI infrastructure spending. Early indicators of the 'AI Tab' launch effect are key to watch."
-   }
-  },
-  {
-   "when": {
-    "ko": "2026년 8월 18일",
-    "en": "August 18, 2026"
-   },
-   "what": {
-    "ko": "네이버파이낸셜-두나무 포괄적 주식교환 승인 주주총회 예정일. 주주매수청구권 행사 규모(1조2,000억원 초과 시 계약 해제 가능)가 핵심 변수.",
-    "en": "Scheduled shareholder meeting to approve the Naver Financial-Dunamu comprehensive share swap. The scale of appraisal-rights exercises (the deal can be terminated above 1.2 trillion won) is the key variable."
-   }
-  },
-  {
-   "when": {
-    "ko": "2026년 9월 30일",
-    "en": "September 30, 2026"
-   },
-   "what": {
-    "ko": "두나무 주식교환·이전 예정일. 실제 거래 종결 여부와 연결 편입 시점이 향후 실적·재무에 미칠 영향을 점검. 법제화 지연 시 추가 연기 가능성도 주시.",
-    "en": "Scheduled date for the Dunamu share swap and transfer. Watch whether the deal actually closes and the consolidation timing's impact on future earnings/financials; note possible further delay if legislation stalls."
+    "ko": "2026년 2분기 실적 발표. 커머스 서비스 매출 성장률 유지 여부와 AI 인프라 비용에 따른 영업이익률 추이를 확인할 핵심 분기.",
+    "en": "Second-quarter 2026 earnings. A key quarter to check whether commerce service-revenue growth holds and how the operating margin trends amid AI infrastructure costs."
    }
   },
   {
@@ -182,36 +162,66 @@
     "en": "Second half of 2026"
    },
    "what": {
-    "ko": "AI 검색에 광고를 접목하는 수익화 테스트 진행 예정. AI 브리핑 적용 범위가 40% 수준으로 확대되는 과정에서 광고 매출 기여가 가시화되는지 확인.",
-    "en": "A test grafting ads onto AI search is planned. Check whether ad-revenue contribution becomes visible as AI Briefing coverage expands toward the 40% level."
+    "ko": "성능 개선판 하이퍼클로바X(멀티모달·VLM 등) 출시 일정과 외부 B2B 고객 확보 성과. AI 모델 경쟁력과 수익화 가능성의 가늠자.",
+    "en": "The launch timeline for the upgraded HyperCLOVA X (multimodal, VLM, etc.) and external B2B customer wins, a gauge of AI model competitiveness and monetization potential."
+   }
+  },
+  {
+   "when": {
+    "ko": "2026년 하반기",
+    "en": "Second half of 2026"
+   },
+   "what": {
+    "ko": "멤버십 연계 무제한 무료배송 도입과 N배송 전환 진척도. 커머스 점유율 추격 전략의 실행 강도와 비용 영향을 확인.",
+    "en": "The rollout of membership-linked unlimited free delivery and progress on N-delivery conversion, to assess the intensity of the commerce share-catch-up strategy and its cost impact."
+   }
+  },
+  {
+   "when": {
+    "ko": "2026년 4분기",
+    "en": "Fourth quarter of 2026"
+   },
+   "what": {
+    "ko": "AI 탭·쇼핑 에이전트의 수익화 개시 여부. 회사가 제시한 일정대로 광고 등 수익 모델이 실제 매출로 확인되는지가 관건.",
+    "en": "Whether monetization of the AI tab and shopping agent begins. The key is whether revenue models such as advertising materialize on the company's stated schedule."
+   }
+  },
+  {
+   "when": {
+    "ko": "상시",
+    "en": "Ongoing"
+   },
+   "what": {
+    "ko": "라인야후 지분 재편 관련 일본 정부·소프트뱅크 협상 진전. 일본 사업 가치와 거버넌스에 직결되는 사안.",
+    "en": "Progress in negotiations with the Japanese government and SoftBank over the LY Corp shareholding restructuring, directly tied to the value of the Japan business and governance."
    }
   }
  ],
  "verdict": {
   "body": {
-   "ko": "NAVER는 검색·광고의 안정적 기반 위에 커머스·결제·글로벌 C2C가 외형 성장을 견인하며 2026년 1분기 분기 사상 최대 매출을 기록했다. 다만 AI 인프라 투자 확대로 영업이익률과 순이익이 눌렸고, 분기 순이익 변동성도 커진 상태다. 자체 대중형 LLM 서비스를 정리하고 검색·커머스 내재화의 '버티컬 AI' 전략으로 전환하면서 AI 경쟁력에 대한 시장 평가는 엇갈린다. 두나무 편입은 이익 확장의 기대 요인이지만 일정이 9월 30일로 연기됐고 디지털자산 법제화 등 절차적 불확실성이 남아 있다. 밸류에이션은 과거 거래 밴드 상단 부근에서 AI 수익화와 두나무 이벤트의 실현 여부를 저울질하는 구간으로 보인다. 강세 요인(고성장 커머스·글로벌 C2C·두나무 잠재력)과 약세 요인(마진 압박·AI 전략 신뢰도·딜 지연)이 팽팽히 맞서 있어, 다가오는 분기 실적과 두나무 절차 진행이 방향을 가를 핵심 변수다. 본 자료는 정보 제공 목적이며 투자 권유가 아니다.",
-   "en": "NAVER posted record quarterly revenue in Q1 2026, with commerce, payments, and global C2C driving top-line growth atop a stable search/advertising base. However, expanded AI infrastructure investment suppressed the operating margin and net profit, and quarterly net-profit volatility has risen. After winding down its consumer LLM services and pivoting to a 'vertical AI' strategy embedded in search and commerce, market views on its AI competitiveness are divided. The Dunamu integration is a potential profit-expansion catalyst, but its timing has been pushed to September 30 and procedural uncertainties such as digital-asset legislation remain. Valuation appears to sit near the top of its historical trading band as the market weighs whether AI monetization and the Dunamu event materialize. Bull factors (high-growth commerce, global C2C, Dunamu potential) and bear factors (margin pressure, AI-strategy credibility, deal delays) are finely balanced, making upcoming quarterly results and the Dunamu process the decisive swing variables. This material is for informational purposes only and is not investment advice."
+   "ko": "네이버는 검색·광고와 커머스를 중심으로 사상 최대 매출과 18%대 영업이익률을 기록하며 본업의 견조함을 입증했다. 성장 엔진이 검색에서 커머스로 이동하는 가운데, 쿠팡의 부진에 따른 반사 수혜가 단기 모멘텀으로 작용하고 있다. 동시에 회사는 독립형 생성 AI를 정리하고 검색·커머스에 AI를 내재화하는 실용 전략으로 선회했으며, 하반기 모델 업그레이드와 4분기 AI 수익화 일정을 제시했다. 다만 GPU·물류 등 투자 확대가 이익률에 부담을 주고 있어, 매출 성장과 수익성 개선이 동시에 확인되는지가 향후 관건이다. 검색 매출 비중 하락과 생성형 AI 압력, 라인야후 지분 재편 등 구조적 변수도 병존한다. 본 자료는 정보 제공을 목적으로 하며 투자의견이나 목표주가를 제시하지 않는다. 투자 판단을 위해서는 다가오는 분기 실적과 가이던스 이행 여부를 직접 확인할 필요가 있다.",
+   "en": "Naver has demonstrated the resilience of its core business, posting record revenue and an operating margin in the 18% range led by search advertising and commerce. As the growth engine shifts from search to commerce, the spillover benefit from Coupang's weakness is acting as near-term momentum. At the same time, the company has wound down standalone generative AI and pivoted to a pragmatic strategy of embedding AI into search and commerce, flagging a second-half model upgrade and a fourth-quarter AI monetization timeline. However, expanded investment in GPUs and logistics is pressuring margins, so the key going forward is whether revenue growth and margin improvement are confirmed together. Structural variables also coexist, including a declining search-revenue share, generative-AI pressure and the LY Corp shareholding restructuring. This material is for information only and does not present an investment opinion or target price. To form an investment view, readers should directly verify upcoming quarterly results and the execution of guidance."
   }
  },
  "sources": [
+  "https://www.thelec.kr/news/articleView.html?idxno=55899",
   "https://incheontimes.co.kr/news/view.php?bIdx=37133",
   "https://www.investchosun.com/site/data/html_dir/2026/04/30/2026043080044.html",
-  "https://www.thelec.kr/news/articleView.html?idxno=55899",
-  "https://www.inews24.com/view/1964797",
-  "https://www.investing.com/equities/nhn-corp-earnings",
-  "https://59sececonomy.com/naver-stock-2026/",
   "https://www.cbci.co.kr/news/articleView.html?idxno=571305",
+  "https://www.investing.com/equities/nhn-corp-earnings",
+  "https://www.inews24.com/view/1964797",
+  "https://zdnet.co.kr/view/?no=20260430082221",
   "https://www.pressman.kr/news/articleView.html?idxno=100988",
   "https://www.sentv.co.kr/article/view/sentv202603050087",
-  "https://m.thinkpool.com/compDiscuss/cont/1019150",
-  "http://www.dealbada.com/bbs/board.php?bo_table=forum_study&wr_id=259612",
-  "https://v.daum.net/v/20260407060407765",
-  "https://dealsite.co.kr/articles/160266",
+  "https://valuedeepdive.com/naver-stock-price-ai-commerce-analysis/",
+  "https://www.aitimes.com/news/articleView.html?idxno=211020",
+  "https://m.ddaily.co.kr/page/view/2026043010325149023",
+  "https://www.etnews.com/20260520000317",
+  "http://www.spochoo.com/news/articleView.html?idxno=124178",
+  "https://m.thebell.co.kr/m/newsview.asp?newskey=202602091336050720107072",
   "https://news.mtn.co.kr/news-detail/2026040615314452381",
-  "https://www.thebell.co.kr/front/newsview.asp?key=202603301743589280105962",
-  "https://www.insight.co.kr/news/555898",
-  "https://www.topdaily.kr/articles/106992",
-  "https://magazine.hankyung.com/business/article/202511267383b"
+  "https://www.dealbada.com/bbs/board.php?bo_table=forum_study&wr_id=243795&device=pc",
+  "https://www.investing.com/equities/webtoon-entertainment-earnings"
  ],
  "v": 2,
  "model": "claude-opus-4-8",
@@ -224,10 +234,10 @@
  ],
  "market": "코스피",
  "reportDate": "2026-06-16",
- "reportTs": "2026-06-16 00:38",
- "dataDate": "20260612",
+ "reportTs": "2026-06-16 09:52",
+ "dataDate": "20260615",
  "quant": {
-  "asOf": "2026-06-15",
+  "asOf": "2026-06-16",
   "fs_basis": "연결(CFS) · DART 공시 확정치 · 지배주주 기준 순이익",
   "annual": [
    {
@@ -324,20 +334,20 @@
    }
   ],
   "valuation": {
-   "price": 247000,
-   "mcap": 38.7478,
+   "price": 248000,
+   "mcap": 38.9047,
    "shares": 156873776,
    "total_shares": 156852638,
    "wavg_shares": 151046526,
-   "per": 20.4,
+   "per": 20.5,
    "eps": 12117,
    "pbr": 1.27,
    "bps": 195071,
    "roe_ttm": 6.0,
    "ttm_window": "2025Q2~2026Q1",
    "ttm_np_owner": 1679231201168,
-   "pbr_krx": 1.34,
-   "bps_krx": 184396.0,
+   "pbr_krx": null,
+   "bps_krx": null,
    "basis": "PER·EPS·PBR·BPS 모두 자체 산출(네이버·토스와 동일 방식) · 배당은 DART 공시 주당현금배당금(보완:KRX) ÷ 현재가",
    "dps": 2630.0,
    "div": 1.06
