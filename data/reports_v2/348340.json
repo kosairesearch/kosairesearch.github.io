@@ -1,0 +1,357 @@
+{
+ "title": {
+  "ko": "흑자 도전과 1500억 증자의 갈림길",
+  "en": "At the crossroads of a profit push and a KRW150bn raise"
+ },
+ "lead": {
+  "ko": "협동로봇·피지컬 AI로 사업을 확장하는 뉴로메카는 매출 정체와 적자 지속 속에 대규모 유·무상증자로 성장 실탄을 조달하는 전환점에 있다.",
+  "en": "Expanding from collaborative robots into physical AI, Neuromeka stands at a turning point—funding growth through a large rights-and-bonus issue while still battling flat revenue and persistent losses."
+ },
+ "keypoints": [
+  {
+   "ko": "협동로봇 '인디'와 용접로봇 '옵티', 자동화 솔루션을 핵심부품부터 내재화한 B2B 딥테크 기업으로, 2025년 3분기 기준 로봇 제품과 자동화 솔루션이 매출의 대부분을 차지한다.",
+   "en": "A B2B deep-tech firm that internalizes core components for its 'Indy' cobots, 'OPTi' welding robots and automation solutions; as of Q3 2025 robot products and automation solutions made up most of revenue."
+  },
+  {
+   "ko": "2025년 매출은 전년 대비 감소했고 영업손실·순손실이 이어졌으며, 2026년 1분기에는 영업손실을 크게 웃도는 순손실이 발생했다.",
+   "en": "2025 revenue fell year on year with continued operating and net losses, and Q1 2026 saw a net loss far exceeding the operating loss."
+  },
+  {
+   "ko": "약 1500억원 규모 유상증자와 1주당 0.5주 무상증자를 병행해 포항 생산설비·운영·채무상환 자금을 조달 중이다.",
+   "en": "The company is raising about KRW150bn via a rights offering plus a 0.5-for-1 bonus issue to fund Pohang facilities, operations and debt repayment."
+  },
+  {
+   "ko": "CES 2026에서 '제로샷' 휴머노이드 '에이르(EIR)'를 공개하고 연내 안전인증·양산 체계 구축을 추진한다.",
+   "en": "It unveiled the 'zero-shot' humanoid 'EIR' at CES 2026 and is pursuing safety certification and a production system within the year."
+  },
+  {
+   "ko": "포스코·HD현대삼호·DN솔루션즈·한국콜마 등 대기업 고객 기반을 넓히고 수출 비중을 끌어올리고 있으나, 수익성 회복은 아직 입증되지 않았다.",
+   "en": "It is broadening its blue-chip customer base (POSCO, HD Hyundai Samho, DN Solutions, Kolmar) and lifting export share, though a profitability recovery is yet to be proven."
+  }
+ ],
+ "business": {
+  "ko": "뉴로메카는 2013년 설립된 협동로봇·자동화 솔루션 전문 B2B 딥테크 기업으로, 협동로봇을 중소·중견 제조기업에 공급하는 사업을 핵심으로 한다. <co index=\"6-1\">협동로봇과 자동화 솔루션을 개발·제조하며 다양한 로봇 제품과 서비스를 제공한다.</co> 주력 제품은 협동로봇 '인디(Indy)', 용접 특화 로봇 '옵티(OPTi)', 자율주행로봇 '모비', 연구용 휴머노이드 등이며, <co index=\"5-9\">2025년 3분기 기준 매출 비중은 로봇 제품이 약 50%, 자동화 솔루션 부문이 약 45%를 차지했다.</co> 회사의 차별점은 부품 내재화로, <co index=\"5-9,5-10\">부품 자체 생산 능력이 핵심 경쟁력이며 최근 감속기·모터·드라이브를 통합한 스마트 액추에이터 '뉴로드라이브' 개발에 성공했다.</co> 자동화 솔루션은 단품 공급을 넘어 <co index=\"7-12\">공정 분석부터 시스템 설계, 설치·시운전, 유지보수까지 일괄 제공하는 턴키 방식의 로봇 시스템 통합(SI) 역량을 갖추고 있다.</co> 고객 기반은 대기업으로 확대되고 있는데, <co index=\"7-16,7-17\">포스코와는 제철 현장 자동화 과제를 수행하며 공동연구센터를 운영하고, HD현대삼호중공업에 조선 용접특화 협동로봇을, DN솔루션즈·DN오토모티브에 머신텐딩 솔루션을 공급했다.</co> <co index=\"7-18\">최근에는 글로벌 화장품 ODM 기업 한국콜마에 보존력 시험 공정 자동화 시스템을 납품하고 현장 수락시험을 통과했다.</co> RaaS(서비스형 로봇) 모델 'IndyGO'를 통해 리스·월정액 방식으로 중소기업의 초기 투자 부담을 낮추는 구독형 사업도 운영한다. 국내 시장 의존도가 높다는 지적이 있으나, 미국·베트남·중국 거점을 통해 해외 비중 확대를 시도하고 있다.",
+  "en": "Founded in 2013, Neuromeka is a B2B deep-tech firm specializing in collaborative robots and automation solutions, with its core business supplying cobots to small and mid-sized manufacturers. <co index=\"6-1\">It develops and manufactures collaborative robots and automation solutions, providing a range of robot products and services.</co> Its flagship products include the 'Indy' cobot, welding-specialized 'OPTi' robot, the 'Moby' autonomous mobile robot and research humanoids; <co index=\"5-9\">as of Q3 2025, robot products made up roughly 50% of revenue and the automation solutions segment about 45%.</co> Its key differentiator is in-house components: <co index=\"5-9,5-10\">self-production of parts is a core strength, and it recently succeeded in developing the 'NeuroDrive' smart actuator integrating reducer, motor and drive.</co> Its automation solutions go beyond single units, offering <co index=\"7-12\">turnkey robot system integration covering process analysis, system design, installation, commissioning and maintenance.</co> Its customer base is expanding toward large firms: <co index=\"7-16,7-17\">it runs automation projects and a joint research center with POSCO, has supplied shipbuilding welding cobots to HD Hyundai Samho, and provided machine-tending solutions to DN Solutions and DN Automotive.</co> <co index=\"7-18\">It recently delivered a cosmetics preservation-testing process automation system to global cosmetics ODM Kolmar and passed site acceptance testing.</co> It also runs a subscription-style Robot-as-a-Service model, 'IndyGO,' lowering small firms' upfront investment through lease and monthly fees. While heavy reliance on the domestic market has been noted, it is attempting to widen its overseas share via bases in the US, Vietnam and China."
+ },
+ "earnings": {
+  "ko": "실적은 외형 성장과 만성적 적자가 공존하는 구조다. 2025년 연결 매출은 189억5420만원으로 2024년 252억6940만원 대비 25% 감소했고, 영업손실은 148억5658만원, 지배주주 순손실은 219억7307만원을 기록했다. 매출 감소 배경에 대해 <co index=\"24-17\">회사 측은 대외 경제 불확실성에 따른 제조업 투자 지연과 일부 프로젝트 매출 인식 이연을 꼽았다.</co> 다년 추이를 보면 2022년 97억5464만원, 2023년 137억4297만원, 2024년 252억6940만원으로 외형은 성장해 왔으나 영업손실은 2022년 -77억9812만원에서 2023년 -148억2533만원, 2024년 -190억1501만원으로 확대됐다가 2025년 -148억5658만원으로 줄었다. 영업이익률은 2022~2025년 내내 마이너스(-78%~-108%)를 벗어나지 못했고, 영업활동현금흐름도 매년 순유출이 이어졌다. 분기 흐름을 보면 2025년 매출은 1분기 31억7246만원에서 4분기 78억6870만원으로 후반부 회복세를 보였으나, 2026년 1분기 매출은 29억9163만원으로 다시 위축됐다. 특히 2026년 1분기는 영업손실(-43억1423만원)을 크게 웃도는 지배주주 순손실 -256억1833만원을 기록해 영업외 비용 등 비영업 요인이 대규모로 반영된 것으로 보인다. 비용 측면에서는 <co index=\"29-10,29-11\">2026년 1분기 매출 대비 연구개발비 비중이 55.9%로 전년 동기 26.1% 대비 두 배 이상 급증했는데,</co> 이는 매출 위축과 R&D 절대액 증가가 동시에 작용한 결과다. 부채비율은 2022년 10.3%에서 2025년 557.6%로 크게 높아져 재무 부담이 가중된 상태다.",
+  "en": "Earnings combine top-line growth with chronic losses. 2025 consolidated revenue was KRW18.95bn, down 25% from KRW25.27bn in 2024, with an operating loss of KRW14.86bn and a net loss attributable to owners of KRW21.97bn. On the revenue decline, <co index=\"24-17\">the company cited delayed manufacturing investment amid external economic uncertainty and deferred revenue recognition on some projects.</co> Over multiple years, revenue grew from KRW9.75bn (2022) to KRW13.74bn (2023) and KRW25.27bn (2024), while the operating loss widened from KRW7.80bn (2022) to KRW14.83bn (2023) and KRW19.02bn (2024) before narrowing to KRW14.86bn in 2025. The operating margin stayed negative throughout 2022-2025 (-78% to -108%), and operating cash flow saw net outflows every year. Quarterly, 2025 revenue recovered from KRW3.17bn in Q1 to KRW7.87bn in Q4, but Q1 2026 revenue shrank again to KRW2.99bn. Notably, Q1 2026 posted a net loss to owners of KRW25.62bn—far above the operating loss of KRW4.31bn—suggesting large non-operating items were reflected. On costs, <co index=\"29-10,29-11\">R&D as a share of revenue reached 55.9% in Q1 2026, more than double the 26.1% a year earlier,</co> reflecting both shrinking revenue and a rise in absolute R&D spending. The debt ratio climbed sharply from 10.3% in 2022 to 557.6% in 2025, intensifying financial strain."
+ },
+ "industry": {
+  "ko": "협동로봇과 휴머노이드를 아우르는 로봇 산업은 글로벌 자본과 정책이 몰리는 성장 테마다. <co index=\"4-1,4-5\">삼성·현대·LG 등 국내 대기업들이 로봇을 전략 사업으로 선정했고, 로봇은 미래 먹거리 신사업으로 꼽히며 국내 대기업의 사업 추진이 본격화되고 있다.</co> 글로벌 휴머노이드 진영의 대규모 투자 유치 소식은 국내 로봇주 전반의 투자심리를 자극하는 요인이다. <co index=\"33-17,33-18\">하나증권에 따르면 피규어AI와 스킬드AI 등이 높은 기업가치를 인정받으며 자본을 끌어모으고 있고, 국내에선 현대차의 아틀라스 양산 로드맵과 삼성전자의 피지컬 AI 투자가 호재로 작용했다.</co> 뉴로메카는 국내 제조용 협동로봇 분야에서 입지를 다져온 업체로, 두산로보틱스 등과 함께 대표적 로봇주로 거론된다. 경쟁 환경은 글로벌 대기업과 중국 업체들의 가격·물량 공세가 거센 가운데, 뉴로메카는 부품 내재화와 도메인 특화 SI 역량으로 차별화를 시도한다. 전방 수요는 철강·조선·자동차·화장품 등 제조 자동화 전반으로 확산되고 있으나, 제조업 설비투자 사이클의 변동성에 실적이 민감하게 노출된다. 또한 휴머노이드는 아직 상용화 초기 단계로, 기술 시연과 실제 현장 매출 사이의 간극이 산업 공통의 과제다.",
+  "en": "The robotics industry spanning cobots and humanoids is a growth theme attracting global capital and policy support. <co index=\"4-1,4-5\">Korean conglomerates such as Samsung, Hyundai and LG have designated robotics as a strategic business, and robots are seen as a future growth engine, accelerating large firms' push into the field.</co> News of large funding rounds among global humanoid players stimulates sentiment across Korean robot stocks. <co index=\"33-17,33-18\">According to Hana Securities, firms like Figure AI and Skild AI are raising capital at high valuations, while domestically Hyundai's Atlas mass-production roadmap and Samsung's physical AI investment acted as catalysts.</co> Neuromeka has built a position in Korea's manufacturing cobot space and is cited as a representative robot stock alongside Doosan Robotics. The competitive landscape features intense price and volume offensives from global majors and Chinese players, against which Neuromeka seeks to differentiate through in-house components and domain-specific SI capabilities. Front-end demand is spreading across manufacturing automation in steel, shipbuilding, autos and cosmetics, yet earnings remain sensitive to the volatility of the manufacturing capex cycle. Humanoids are also at an early commercialization stage, with the gap between technology demos and actual on-site revenue a challenge shared across the industry."
+ },
+ "outlook": {
+  "ko": "회사는 피지컬 AI 플랫폼 기업으로의 전환을 전면에 내세우며 휴머노이드 사업화에 속도를 내고 있다. <co index=\"31-2,31-3\">CES 2026에서 차세대 휴머노이드 '에이르(EIR)'를 공개하고, 별도 학습 없이 물체를 인식·조작하는 '제로샷 픽앤플레이스' 기술을 선보였다.</co> <co index=\"37-1\">에이르의 현재 버전에 대해 상반기 내 안전인증(KCs)을 완료해 국내 제조 현장 판매 및 과제 수행을 위한 필수 요건을 확보할 계획이다.</co> <co index=\"40-3,40-4\">올해부터 에이르 양산 체계 구축에 착수했으며, 휴머노이드 생산라인에 자체 개발 안전인증 제어기를 적용하고 있다.</co> <co index=\"40-5\">화신정공·아진산업·에스엘 등 국내 주요 제조기업과 피지컬 AI 양팔 로봇의 현장 실증을 대구시 메가시티 사업을 통해 추진 중이다.</co> 자금 측면에서는 <co index=\"24-9,24-10\">시설자금 800억원, 운영자금 600억원, 채무상환자금 100억원으로 배정된 유상증자를 통해 포항 생산 인프라 확장에 투입할 계획이다.</co> 다만 회사가 처한 재무 현실은 녹록지 않은데, <co index=\"24-20\">매출 감소와 적자 지속, 유동부채 부담을 동시에 안고 있다.</co> 시장 일각에서 거론되는 '2026년 첫 흑자 전환' 기대는 고객사 확대와 신제품 양산 성과에 달려 있어, 실제 실적으로 확인되기 전까지는 목표에 머문다.",
+  "en": "The company is foregrounding its transition into a physical AI platform business and accelerating humanoid commercialization. <co index=\"31-2,31-3\">At CES 2026 it unveiled the next-generation humanoid 'EIR' and demonstrated 'zero-shot pick-and-place' technology that recognizes and manipulates objects without separate training.</co> <co index=\"37-1\">It plans to complete safety certification (KCs) for the current EIR version within the first half, securing a prerequisite for domestic factory sales and project work.</co> <co index=\"40-3,40-4\">It began building an EIR mass-production system this year, applying its own safety-certified controller to the humanoid production line.</co> <co index=\"40-5\">It is running field demonstrations of physical AI dual-arm robots with major domestic manufacturers such as Hwashin, Ajin Industrial and SL through Daegu City's mega-city project.</co> On funding, <co index=\"24-9,24-10\">the rights offering—allocated as KRW80bn for facilities, KRW60bn for operations and KRW10bn for debt repayment—will be directed toward expanding Pohang production infrastructure.</co> Yet its financial reality is challenging: <co index=\"24-20\">it simultaneously carries falling revenue, continued losses and current-liability burdens.</co> Market expectations of a 'first profit turnaround in 2026' hinge on customer expansion and new-product mass-production results, and remain a target until confirmed by actual earnings."
+ },
+ "valuation_comment": {
+  "ko": "뉴로메카는 연속 적자 기업으로 이익 기반 지표는 산출되지 않으며, 시장은 매출 성장성과 피지컬 AI·휴머노이드 모멘텀에 가치를 부여하는 구간으로 보인다. 순자산 대비로는 상당한 프리미엄이 반영된 상태이며, 자체 산출 기준과 KRX 공시 기준의 주당순자산(BPS)이 크게 달라 해석에 주의가 필요하다. 주가는 <co index=\"25-22,25-23\">2026년 1월 두 차례 상한가와 장중 13만9000원의 역대 최고가를 기록한 뒤 조정을 거쳤다.</co> 진행 중인 유·무상증자는 주식 수를 늘려 주당 지표를 희석시키는 요인으로, 신주 상장 일정 전후 지표 변동에 유의해야 한다. 배당은 적자 지속으로 실시되지 않고 있어 배당수익률 관점의 비교는 의미가 제한적이다. 동종 로봇주 대비 위치는 매출 규모와 적자 폭, 증자에 따른 희석을 함께 고려해 판단할 사안이다.",
+  "en": "As a company with consecutive losses, Neuromeka has no meaningful profit-based multiples, and the market appears to be assigning value to revenue growth and physical AI/humanoid momentum. A considerable premium to net assets is embedded, and caution is warranted as book value per share differs substantially between the company's own calculation basis and the KRX disclosure basis. The share price <co index=\"25-22,25-23\">recorded two limit-ups and an all-time intraday high of KRW139,000 in January 2026 before correcting.</co> The ongoing rights-and-bonus issue increases share count and dilutes per-share metrics, so watch for shifts around the new-share listing schedule. No dividend is paid given continued losses, limiting the relevance of a yield-based comparison. Its position relative to peer robot stocks should be assessed alongside its revenue scale, loss magnitude and dilution from the capital raise."
+ },
+ "bull": [
+  {
+   "title": {
+    "ko": "피지컬 AI·휴머노이드 모멘텀",
+    "en": "Physical AI and humanoid momentum"
+   },
+   "body": {
+    "ko": "CES 2026에서 공개한 '에이르'의 제로샷 기술이 글로벌 관심을 끌었고, 행사 첫 이틀간 북미·유럽 기업들과 10여 건 이상의 도입·파트너십 미팅이 성사됐다. 회사는 협동로봇을 넘어 산업용 피지컬 AI 플랫폼 기업으로의 도약을 표방한다. 글로벌 휴머노이드 투자 붐 속에서 테마 수혜 기대가 형성돼 있다.",
+    "en": "The 'EIR' zero-shot technology unveiled at CES 2026 drew global attention, with over ten adoption and partnership meetings held with North American and European firms in the first two days. The company is positioning itself as an industrial physical AI platform business beyond cobots. Theme tailwinds have formed amid the global humanoid investment boom."
+   }
+  },
+  {
+   "title": {
+    "ko": "대기업 고객·산업 다변화",
+    "en": "Blue-chip customers and industry diversification"
+   },
+   "body": {
+    "ko": "포스코·HD현대삼호중공업·DN솔루션즈·한국콜마 등 철강·조선·자동차·화장품 전반으로 고객 기반이 확대되고 있다. 턴키 SI 역량과 부품 내재화로 단품 경쟁을 넘어선 솔루션 사업을 추진한다. 수출 비중도 2023년 1% 미만에서 2025년 상반기 9%로 확대됐다.",
+    "en": "Its customer base is broadening across steel, shipbuilding, autos and cosmetics, including POSCO, HD Hyundai Samho, DN Solutions and Kolmar. With turnkey SI capability and in-house components, it pursues solutions business beyond single-unit competition. Export share also expanded from below 1% in 2023 to 9% in the first half of 2025."
+   }
+  },
+  {
+   "title": {
+    "ko": "성장 실탄 확보",
+    "en": "Securing growth funding"
+   },
+   "body": {
+    "ko": "약 1500억원 규모의 유상증자로 포항 생산설비, 운영, 채무상환 자금을 동시에 조달한다. 1주당 0.5주 무상증자를 병행해 희석 부담 완화와 청약 유도를 노렸다. 확보 자금은 R&D 확대와 신공장 투자로 중장기 성장동력 마련에 쓰일 계획이다.",
+    "en": "A roughly KRW150bn rights offering funds Pohang facilities, operations and debt repayment simultaneously. A 0.5-for-1 bonus issue accompanies it to ease dilution concerns and encourage subscription. The proceeds are intended for R&D expansion and new-plant investment to build medium-to-long-term growth drivers."
+   }
+  }
+ ],
+ "bear": [
+  {
+   "title": {
+    "ko": "만성 적자와 현금흐름 부담",
+    "en": "Chronic losses and cash-flow strain"
+   },
+   "body": {
+    "ko": "2022~2025년 영업이익률이 줄곧 마이너스이고 영업활동현금흐름도 매년 순유출이다. 2025년 매출은 전년 대비 25% 감소했고 지배주주 순손실은 219억원에 달했다. 누적 결손금이 쌓이며 수익성 회복 시점이 불투명하다.",
+    "en": "Operating margins stayed negative through 2022-2025 and operating cash flow saw net outflows every year. 2025 revenue fell 25% year on year and the net loss to owners reached KRW21.9bn. Accumulated deficits are building, leaving the timing of any profitability recovery unclear."
+   }
+  },
+  {
+   "title": {
+    "ko": "증자 희석과 재무 부담",
+    "en": "Dilution and financial burden"
+   },
+   "body": {
+    "ko": "유상증자 신주 약 298만주는 기존 발행주식의 24%에 달해 지분 희석이 불가피하다. 부채비율은 2022년 10.3%에서 2025년 557.6%로 급등했다. 최대주주도 전량이 아닌 일부 청약 계획을 밝혀 청약률이 자금 조달의 변수다.",
+    "en": "The roughly 2.98 million new rights-offering shares equal 24% of existing shares, making dilution unavoidable. The debt ratio surged from 10.3% in 2022 to 557.6% in 2025. With even the largest shareholder planning only partial subscription, the subscription rate is a variable for the fundraising."
+   }
+  },
+  {
+   "title": {
+    "ko": "휴머노이드 상용화 불확실성",
+    "en": "Humanoid commercialization uncertainty"
+   },
+   "body": {
+    "ko": "에이르는 안전인증과 양산 체계 구축이 진행 중인 초기 단계로, 기술 시연이 실제 매출로 이어질지는 검증되지 않았다. R&D 비용 급증은 단기 손익에 부담을 준다. 국내 제조업 설비투자 지연 등 전방 수요 변동에도 실적이 민감하다.",
+    "en": "EIR is at an early stage with safety certification and a production system still in progress, and whether tech demos translate into actual revenue is unproven. Surging R&D costs weigh on near-term earnings. Earnings are also sensitive to front-end demand swings such as delays in domestic manufacturing capex."
+   }
+  }
+ ],
+ "risks": [
+  {
+   "cat": {
+    "ko": "재무·유동성",
+    "en": "Financial and liquidity"
+   },
+   "body": {
+    "ko": "적자 지속과 높은 부채비율 속에서 단기차입(연 7.7% 금리)에 의존하는 등 자금 사정이 빠듯하다. 증자 납입과 청약률이 자금 계획 달성의 관건이다. 흑자 전환이 지연될 경우 추가 조달 필요성이 제기될 수 있다.",
+    "en": "Amid continued losses and a high debt ratio, funding is tight, with reliance on short-term borrowing (at 7.7% annual rate). Capital-raise payment and subscription rates are key to meeting the funding plan. A delayed turnaround could raise the need for additional financing."
+   }
+  },
+  {
+   "cat": {
+    "ko": "실적 변동성",
+    "en": "Earnings volatility"
+   },
+   "body": {
+    "ko": "분기 매출이 30억~79억원 사이에서 큰 폭으로 출렁이며, 프로젝트 매출 인식 시점에 따라 실적이 흔들린다. 2026년 1분기 순손실이 영업손실을 크게 웃돈 점은 비영업 요인의 변동성을 보여준다. 매출 규모가 고정비를 감당할 수준에 아직 이르지 못했다.",
+    "en": "Quarterly revenue swings widely between KRW3bn and KRW7.9bn, with earnings shifting on project revenue-recognition timing. Q1 2026's net loss far exceeding the operating loss highlights non-operating volatility. Revenue scale has yet to reach a level that covers fixed costs."
+   }
+  },
+  {
+   "cat": {
+    "ko": "경쟁·시장",
+    "en": "Competition and market"
+   },
+   "body": {
+    "ko": "글로벌 대기업과 중국 업체의 가격 공세가 거센 협동로봇 시장에서 점유율 방어가 과제다. 휴머노이드 분야는 다수 기업이 진입하며 경쟁이 치열해지고 있다. 국내 시장 편중에 대한 지적이 있어 해외 진출 성과가 중요하다.",
+    "en": "Defending market share is a challenge in a cobot market facing intense price offensives from global majors and Chinese players. The humanoid field is intensifying as many firms enter. With reliance on the domestic market noted, overseas progress is important."
+   }
+  }
+ ],
+ "checkpoints": [
+  {
+   "when": {
+    "ko": "2026년 7월 16일",
+    "en": "July 16, 2026"
+   },
+   "what": {
+    "ko": "유상증자 확정 발행가액이 결정된다. 예정가(5만300원) 대비 변동 폭은 조달 규모와 희석률에 직접 영향을 준다.",
+    "en": "The rights-offering final issue price is set. The deviation from the planned price (KRW50,300) directly affects the amount raised and dilution."
+   }
+  },
+  {
+   "when": {
+    "ko": "2026년 7월 22~23일",
+    "en": "July 22-23, 2026"
+   },
+   "what": {
+    "ko": "구주주 청약이 진행된다. 최대주주의 부분 청약 방침 속에서 청약률이 자금 조달 성패의 시험대가 된다.",
+    "en": "Existing-shareholder subscription takes place. Given the largest shareholder's partial-subscription stance, the subscription rate is a test of the fundraising's success."
+   }
+  },
+  {
+   "when": {
+    "ko": "2026년 8월 14·25일",
+    "en": "August 14 & 25, 2026"
+   },
+   "what": {
+    "ko": "유상증자 신주(8/14)와 무상증자 신주(8/25)가 상장된다. 발행주식 수 증가로 주당 지표가 변동되므로 확인이 필요하다.",
+    "en": "Rights-offering new shares (Aug 14) and bonus-issue new shares (Aug 25) list. Per-share metrics shift as share count rises, warranting attention."
+   }
+  },
+  {
+   "when": {
+    "ko": "2026년 상반기 내",
+    "en": "Within H1 2026"
+   },
+   "what": {
+    "ko": "휴머노이드 '에이르'의 안전인증(KCs) 완료 여부. 국내 제조 현장 판매와 과제 수행의 필수 요건으로, 상용화 진척의 가늠자다.",
+    "en": "Whether humanoid 'EIR' completes safety certification (KCs). It is a prerequisite for domestic factory sales and project work, and a gauge of commercialization progress."
+   }
+  },
+  {
+   "when": {
+    "ko": "2026년 8월 중",
+    "en": "Mid-August 2026"
+   },
+   "what": {
+    "ko": "2026년 2분기 실적 발표. 매출 회복 여부, R&D 비중 추이, 영업손실 축소 속도로 '흑자 전환' 기대의 현실성을 점검할 수 있다.",
+    "en": "Q2 2026 earnings release. Revenue recovery, R&D-share trends and the pace of operating-loss narrowing will test the realism of 'turnaround' expectations."
+   }
+  }
+ ],
+ "verdict": {
+  "body": {
+   "ko": "뉴로메카는 협동로봇과 자동화 솔루션에서 부품 내재화 경쟁력을 갖추고 포스코·HD현대 등 대기업 고객으로 사업을 넓혀온 국내 대표 로봇 기업이다. CES 2026의 제로샷 휴머노이드 '에이르' 공개와 피지컬 AI 플랫폼 전환은 중장기 성장 서사를 강화하는 요소다. 그러나 2025년 매출은 전년 대비 25% 줄었고, 영업·순손실이 이어지는 가운데 2026년 1분기에는 영업손실을 크게 웃도는 순손실이 발생했다. 부채비율 급등과 R&D 비용 급증으로 자금 사정이 빠듯해 약 1500억원 규모 유·무상증자로 실탄을 조달 중이며, 이는 성장 투자인 동시에 주주가치 희석 요인이다. 흑자 전환 기대는 고객 확대와 신제품 양산, 안전인증 등 실행 성과에 달려 있어 아직 검증 단계다. 향후 증자 일정과 청약률, 분기 실적, 휴머노이드 인증·수주 진척을 균형 있게 확인할 필요가 있다. 본 자료는 정보 제공용이며 투자 권유가 아니다.",
+   "en": "Neuromeka is a leading Korean robotics firm with in-house component competitiveness in cobots and automation solutions, having expanded its business to blue-chip customers like POSCO and HD Hyundai. The CES 2026 unveiling of the zero-shot humanoid 'EIR' and its pivot to a physical AI platform strengthen its medium-to-long-term growth narrative. However, 2025 revenue fell 25% year on year, and amid continued operating and net losses, Q1 2026 saw a net loss far exceeding the operating loss. With a surging debt ratio and soaring R&D costs leaving funding tight, it is raising capital through a roughly KRW150bn rights-and-bonus issue—both a growth investment and a source of shareholder dilution. Turnaround expectations hinge on execution such as customer expansion, new-product mass production and safety certification, and remain at a verification stage. Going forward, the capital-raise schedule and subscription rate, quarterly earnings, and progress on humanoid certification and orders warrant balanced monitoring. This material is for informational purposes only and is not investment advice."
+  }
+ },
+ "sources": [
+  "https://alphasquare.co.kr/home/stock-summary?code=348340",
+  "https://www.businesspost.co.kr/BP?command=article_view&num=419092",
+  "https://www.jobkorea.co.kr/recruit/co_read/c/neuromeka",
+  "https://alphasquare.co.kr/home/theme-factor?theme-id=76",
+  "https://m.thinkpool.com/compDiscuss/cont/1023021",
+  "https://goinsider.kr/stock/01336461",
+  "https://news.nate.com/view/20260615n08274",
+  "https://ko.wikipedia.org/wiki/%EB%89%B4%EB%A1%9C%EB%A9%94%EC%B9%B4",
+  "https://daily.hankooki.com/news/articleView.html?idxno=1376407",
+  "https://www.finance-scope.com/article/view/scp202412100011",
+  "https://kind.krx.co.kr/common/disclsviewer.do?method=search&acptno=20260514001470&docno=&viewerhost=",
+  "https://comp.fnguide.com/SVO2/ASP/SVD_Main.asp?gicode=A348340",
+  "https://comp.wisereport.co.kr/wiseReport/summary/ReportSummary.aspx?cn=&cmp_cd=025750",
+  "https://kr.investing.com/equities/neuromeka-earnings",
+  "https://www.hankyung.com/article/2026061198066",
+  "https://www.judal.co.kr/?view=stockAI&shareToken=q9gnEtfosTyt8Vj9",
+  "https://www.goodkyung.com/news/articleView.html?idxno=288153",
+  "https://kind.krx.co.kr/common/disclsviewer.do?method=search&acptno=20260312001594&docno=&viewerhost="
+ ],
+ "v": 2,
+ "model": "claude-opus-4-8",
+ "ticker": "348340",
+ "name": "뉴로메카",
+ "name_en": "Neuromeka Co., Ltd.",
+ "sector": "기계·장비",
+ "categories": [
+  "기계·장비",
+  "로봇"
+ ],
+ "market": "코스닥",
+ "reportDate": "2026-06-18",
+ "reportTs": "2026-06-18 03:24",
+ "dataDate": "20260617",
+ "quant": {
+  "asOf": "2026-06-17",
+  "fs_basis": "연결(CFS) · DART 공시 확정치 · 지배주주 기준 순이익",
+  "annual": [
+   {
+    "year": 2025,
+    "rev": 18954203205,
+    "op": -14856577614,
+    "np": -21991151206,
+    "np_owner": -21973074921,
+    "equity": 13894569938,
+    "equity_owner": 13884727038,
+    "liab": 77480914810,
+    "cfo": -11358377537,
+    "eps_basic": -1956,
+    "opm": -78.4,
+    "roe": -158.3,
+    "debt_ratio": 557.6
+   },
+   {
+    "year": 2024,
+    "rev": 25269404825,
+    "op": -19015005988,
+    "np": -16754713008,
+    "np_owner": -16669005952,
+    "equity": 10869158059,
+    "equity_owner": 10869158059,
+    "liab": 84360388822,
+    "cfo": -21930316073,
+    "eps_basic": -1589,
+    "opm": -75.2,
+    "roe": -153.4,
+    "debt_ratio": 776.1
+   },
+   {
+    "year": 2023,
+    "rev": 13742971105,
+    "op": -14825326473,
+    "np": -17653500201,
+    "np_owner": -17660247411,
+    "equity": 24056338423,
+    "equity_owner": 24056338423,
+    "liab": 71664638731,
+    "cfo": -12434038635,
+    "eps_basic": -1694,
+    "opm": -107.9,
+    "roe": -73.4,
+    "debt_ratio": 297.9
+   },
+   {
+    "year": 2022,
+    "rev": 9754641463,
+    "op": -7798121485,
+    "np": -8200588555,
+    "np_owner": -8200588555,
+    "equity": 39726633404,
+    "equity_owner": 39726633404,
+    "liab": 4103488046,
+    "cfo": -7999114014,
+    "eps_basic": -953,
+    "opm": -79.9,
+    "roe": -20.6,
+    "debt_ratio": 10.3
+   }
+  ],
+  "quarterly": [
+   {
+    "q": "2025Q1",
+    "rev": 3172459792,
+    "op": -4016861472,
+    "np_owner": -7312957017
+   },
+   {
+    "q": "2025Q2",
+    "rev": 3439506785,
+    "op": -4163623006,
+    "np_owner": -4623573832
+   },
+   {
+    "q": "2025Q3",
+    "rev": 4473538562,
+    "op": -3163951570,
+    "np_owner": -4292739141
+   },
+   {
+    "q": "2025Q4",
+    "rev": 7868698066,
+    "op": -3512141566,
+    "np_owner": -5743804931
+   },
+   {
+    "q": "2026Q1",
+    "rev": 2991632100,
+    "op": -4314234495,
+    "np_owner": -25618328850
+   }
+  ],
+  "valuation": {
+   "price": 50400,
+   "mcap": 0.6254,
+   "shares": 12409151,
+   "total_shares": 12362151,
+   "wavg_shares": 12170227,
+   "per": null,
+   "eps": -3388,
+   "pbr": 15.2,
+   "bps": 3316,
+   "roe_ttm": -127.1,
+   "ttm_window": "2025Q2~2026Q1",
+   "ttm_np_owner": -40278446754,
+   "pbr_krx": 41.62,
+   "bps_krx": 1211.0,
+   "basis": "PER·EPS·PBR·BPS 모두 자체 산출(네이버·토스와 동일 방식) · 배당은 DART 공시 주당현금배당금(보완:KRX) ÷ 현재가",
+   "dps": 0.0,
+   "div": 0.0
+  }
+ }
+}

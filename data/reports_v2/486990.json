@@ -1,0 +1,312 @@
+{
+ "title": {
+  "ko": "수주잔고 쌓는 온디바이스 AI, 적자는 진행형",
+  "en": "On-Device AI Builds Backlog While Losses Persist"
+ },
+ "lead": {
+  "ko": "노타는 AI 모델 경량화·최적화 플랫폼 '넷츠프레소'를 앞세워 글로벌 반도체 생태계와의 협력과 수주잔고를 빠르게 키우고 있으나, 외형 성장 초입 단계로 영업적자는 이어지고 있다.",
+  "en": "Nota is rapidly expanding partnerships across the global semiconductor ecosystem and growing its order backlog with its NetsPresso AI model optimization platform, but it remains in an early growth phase with operating losses ongoing."
+ },
+ "keypoints": [
+  {
+   "ko": "2015년 설립된 온디바이스 AI 전문기업으로 2025년 11월 코스닥 기술특례 상장. 클라우드 의존 없이 기기에서 AI를 구동하는 경량화·최적화 기술이 핵심.",
+   "en": "Founded in 2015 as an on-device AI specialist, Nota listed on KOSDAQ via the technology-special track in November 2025. Its core is lightweight optimization technology that runs AI on devices without cloud dependence."
+  },
+  {
+   "ko": "삼성전자 엑시노스(2400·2500·2600), Arm, 엔비디아, 퀄컴, 퓨리오사AI 등 글로벌 반도체 기업과의 협력 관계가 차별화 포인트.",
+   "en": "Partnerships with global chip players including Samsung Exynos (2400/2500/2600), Arm, NVIDIA, Qualcomm and FuriosaAI are a key differentiator."
+  },
+  {
+   "ko": "2025년 연간 매출은 약 131억원으로 사상 최대였으나 영업손실·순손실이 지속되며 손익분기점에는 미도달.",
+   "en": "FY2025 revenue hit a record of about KRW 13.1bn, but operating and net losses continued and the company has not yet reached breakeven."
+  },
+  {
+   "ko": "2026년 1분기 말 수주잔고 약 121억원, 이 중 플랫폼 비중이 84%로 반복매출 구조 강화 기대.",
+   "en": "As of Q1 2026 the order backlog was about KRW 12.1bn, of which 84% was platform-based, supporting hopes for a recurring-revenue structure."
+  },
+  {
+   "ko": "매출 인식이 분기별로 들쭉날쭉한 점, 적자 지속, 순자산 대비 높은 시장 평가가 함께 고려해야 할 요소.",
+   "en": "Lumpy quarterly revenue recognition, ongoing losses, and a rich market valuation relative to net assets are factors to weigh together."
+  }
+ ],
+ "business": {
+  "ko": "노타는 2015년 설립된 온디바이스 AI 전문기업으로, 클라우드에 의존하지 않고 기기 자체에서 실행 가능한 경량화 AI 기술을 통해 스마트폰·IoT·반도체·자동차 등에서 AI 모델을 경량화·최적화하는 솔루션을 제공한다. 핵심 제품은 프루닝(가지치기)·양자화·지식 증류 등 다양한 경량화 기법을 결합해 타깃 하드웨어에 맞춘 모델을 자동 생성하는 AI 최적화 플랫폼 '넷츠프레소(NetsPresso)'다. 회사에 따르면 모델 크기를 최대 90% 이상 줄이면서도 정확도를 유지할 수 있다고 설명한다. 사업은 크게 넷츠프레소 플랫폼 부문과, 생성형 AI(VLM) 기반 영상 관제 솔루션 'NVA(Nota Vision Agent)'를 중심으로 한 솔루션 부문으로 나뉜다. 수익 구조는 B2B 라이선스, 기술 지원·유지보수, 커스터마이징 프로젝트로 구성된다. 주요 고객·협력사로는 삼성전자, Arm, 엔비디아, 퀄컴, 소니, 퓨리오사AI, 모빌린트, 르네사스, 텔레칩스 등 국내외 반도체·임베디드 기업이 있다. 노타는 AI 모델 경량화 전문기업 중 최초로 Arm·르네사스 등과 직접 납품 계약을 체결했으며, NVIDIA TAO·Qualcomm AI Hub 등 주요 반도체사의 개발 SDK에 플랫폼을 연동해 세일즈 채널로 활용하고 있다. 미국·일본 법인과 중동 진출을 위한 두바이 법인을 두는 등 해외 확장도 병행하고 있다.",
+  "en": "Founded in 2015, Nota is an on-device AI specialist that provides solutions to lighten and optimize AI models for smartphones, IoT, semiconductors and automobiles using technology that runs on devices without relying on the cloud. Its core product is NetsPresso, an AI optimization platform that combines techniques such as pruning, quantization and knowledge distillation to automatically generate models tailored to target hardware. The company says it can reduce model size by more than 90% while maintaining accuracy. The business is split broadly into the NetsPresso platform segment and a solution segment centered on NVA (Nota Vision Agent), a generative-AI (VLM) based video monitoring solution. Revenue comes from B2B licenses, technical support and maintenance, and customization projects. Customers and partners include domestic and global semiconductor and embedded firms such as Samsung Electronics, Arm, NVIDIA, Qualcomm, Sony, FuriosaAI, Mobilint, Renesas and Telechips. Nota was the first AI model-lightweighting specialist to sign direct supply contracts with the likes of Arm and Renesas, and it integrates its platform into major chipmakers' development SDKs such as NVIDIA TAO and Qualcomm AI Hub as sales channels. It is also pursuing overseas expansion, with subsidiaries in the US and Japan and a Dubai entity for the Middle East."
+ },
+ "earnings": {
+  "ko": "노타는 2025년 연결 기준 매출 약 131억원을 기록하며 사상 최대 외형을 달성했으나, 영업손실 약 153억원, 지배주주 순손실 약 166억원으로 적자가 이어졌다. 영업이익률은 -116.6%로, 매출 대비 비용 부담이 여전히 큰 외형 성장 초입 구간임을 보여준다. 분기 흐름을 보면 2025년 4분기 매출이 약 95억원으로 연간 매출의 상당 부분이 4분기에 집중됐고, 영업손실은 약 27억원이었다. 이어 2026년 1분기 매출은 약 36억원으로, 회사는 전년 동기 대비 약 53.6배 증가했다고 밝혔다. 다만 1분기 영업손실은 약 42억원으로 분기 기준 손실 폭이 다시 확대됐는데, 플랫폼 매출이 계약 기간에 걸쳐 순차 인식되는 구조여서 분기별 매출 변동성이 크다는 점을 감안할 필요가 있다. 회사는 2026년부터 신규 솔루션 계약에 진행률 기준 회계를 적용해 사업 성과를 보다 적시에 반영하고 있다고 설명했다. 2026년 1분기 말 수주잔고는 약 121억원으로 전년 동기 대비 두 배 이상 늘었고, 이 가운데 플랫폼 비중이 84%에 달해 향후 매출 인식 가시성이 핵심 관전 포인트다. 영업활동 현금흐름은 2025년 약 -118억원으로 순유출을 나타냈고, 자본총계는 약 275억원, 부채비율은 54.0% 수준이다.",
+  "en": "On a consolidated basis Nota posted FY2025 revenue of about KRW 13.1bn, a record top line, but losses continued with an operating loss of roughly KRW 15.3bn and a net loss attributable to owners of about KRW 16.6bn. Its operating margin of -116.6% shows it is still in an early growth phase where costs remain heavy relative to revenue. By quarter, Q4 2025 revenue was about KRW 9.5bn, meaning much of the annual revenue was concentrated in the fourth quarter, with an operating loss of about KRW 2.7bn. Q1 2026 revenue was about KRW 3.6bn, which the company said was up roughly 53.6-fold year on year. However, the Q1 operating loss widened again to about KRW 4.2bn; given that platform revenue is recognized progressively over contract periods, quarterly revenue volatility should be kept in mind. The company said that from 2026 it applies percentage-of-completion accounting to new solution contracts to reflect business results more promptly. As of Q1 2026 the order backlog was about KRW 12.1bn, more than double a year earlier, with platform accounting for 84%, making future revenue-recognition visibility a key watch point. Operating cash flow was about negative KRW 11.8bn in 2025, total equity was around KRW 27.5bn, and the debt-to-equity ratio was about 54.0%."
+ },
+ "industry": {
+  "ko": "AI 산업은 클라우드 기반 대규모 모델 학습 경쟁에서 실제 서비스 운영과 추론 중심으로 빠르게 이동하고 있으며, 제한된 연산·전력·메모리 환경에서 모델을 안정적으로 구동하는 경량화·최적화 기술의 중요성이 커지고 있다. 스마트폰·자율주행·IoT·로봇·스마트팩토리 등에서 온디바이스 AI와 엣지 AI가 핵심 기반 기술로 자리잡으면서 다양한 하드웨어에 맞춘 최적화 수요가 늘고 있다. 노타는 국내 상장사 중 온디바이스 AI 최적화 테마를 가장 직접적으로 대변할 수 있는 기업 중 하나로 평가받으며, Arm·엔비디아 등 글로벌 인프라 생태계와 연결된 희소성을 보유했다고 BNK투자증권은 분석했다. 정부 역시 'K-온디바이스 AI 반도체 기술개발' 사업 등을 통해 2030년까지 AI 반도체 10종 개발을 목표로 생태계 조성에 나서고 있어 공공 수요도 우호적이다. 한편 스퀴즈비츠 등 AI 모델 압축·최적화 기술 기업들도 추론 인프라 시장을 공략하고 있어 경쟁이 형성되고 있다. 노타는 엔비디아·퀄컴·삼성·인텔·애플 등과 함께 '2025 MAD Landscape' 엣지 AI 부문에 2년 연속 등재됐고, CB 인사이트 'AI 100'에도 선정된 바 있다. 로봇·모빌리티·산업 자동화에서 비전-언어-행동(VLA) 모델 등 복합 AI의 효율적 구동이 새로운 과제로 부상하면서 피지컬 AI가 전방 시장으로 떠오르고 있다.",
+  "en": "The AI industry is shifting rapidly from competition over large-scale cloud model training toward real-world service operation and inference, raising the importance of lightweighting and optimization that keep models running stably under limited compute, power and memory. As on-device and edge AI become core enabling technologies in smartphones, autonomous driving, IoT, robots and smart factories, demand for hardware-specific optimization is growing. BNK Securities views Nota as one of the listed Korean companies that most directly represents the on-device AI optimization theme, citing the scarcity value of its links to global infrastructure ecosystems such as Arm and NVIDIA. The government is also fostering the ecosystem through programs such as 'K-on-device AI semiconductor development,' targeting 10 AI chips by 2030, making public-sector demand favorable. Meanwhile, firms such as SqueezeBits are also targeting the inference infrastructure market with model compression and optimization, creating competition. Nota was listed in the edge AI category of the '2025 MAD Landscape' for a second consecutive year alongside NVIDIA, Qualcomm, Samsung, Intel and Apple, and was selected for CB Insights' 'AI 100.' As efficient operation of complex AI such as vision-language-action (VLA) models becomes a new challenge in robotics, mobility and industrial automation, physical AI is emerging as a downstream market."
+ },
+ "outlook": {
+  "ko": "노타는 확보된 플랫폼 수주잔고를 바탕으로 매출 지속성을 높이고, 신규 파트너 확대를 통해 반복매출 구조를 강화하겠다는 방침이다. 삼성전자와는 엑시노스 2400·2500에 이어 2600까지 세대별 칩 로드맵에 연동된 협력을 이어가고 있으며, 2026년 연간 AI 소프트웨어 개발·공급 계약도 체결했다. 2026년 3월에는 Arm과 2028년 3월까지의 AI 소프트웨어 공급계약을 체결해 글로벌 반도체 IP 생태계에 진입했고, 퓨리오사AI(데이터센터)·모빌린트(엣지)·텔레칩스(차량)·시마AI 등으로 적용 범위를 넓히고 있다. 공공 분야에서는 천안시 컨소시엄과 함께 약 107억원 규모의 '2026년 온디바이스 AI 서비스 실증·확산' 도시안전망 사업에 선정돼 2027년 12월까지 수행한다. 회사는 기존 AI 최적화 기술을 VLA 모델 최적화까지 확장해 로봇·모빌리티 등 피지컬 AI 시장 공략을 강화할 계획이다. 증권가 추정으로는 NH투자증권이 2026년 매출 254억원, 영업손실 39억원을 제시하며 2027년 흑자 전환 가능성을 언급했고, 또 다른 추정에서는 2026년 매출 224억원·2027년 373억원·손익분기점 2027년 달성 시나리오가 제시됐다. 이러한 전망치는 증권사·평가기관의 추정이며 실제 결과와 다를 수 있어 분기 실적과 수주 흐름으로 검증이 필요하다.",
+  "en": "Based on its secured platform backlog, Nota aims to improve revenue durability and strengthen its recurring-revenue structure by adding new partners. With Samsung it has continued collaboration tied to the chip roadmap from Exynos 2400 and 2500 through to 2600, and it signed an annual AI software development and supply contract for 2026. In March 2026 it signed an AI software supply contract with Arm running through March 2028, entering the global semiconductor IP ecosystem, while broadening its reach to FuriosaAI (data center), Mobilint (edge), Telechips (automotive) and SiMa.ai. In the public sector, it was selected with a Cheonan city consortium for a roughly KRW 10.7bn '2026 on-device AI service demonstration and diffusion' city safety network project, which runs through December 2027. The company plans to extend its AI optimization technology to VLA model optimization to strengthen its push into physical AI markets such as robotics and mobility. Among brokerage estimates, NH Investment & Securities projected 2026 revenue of KRW 25.4bn and an operating loss of KRW 3.9bn, citing the possibility of a swing to profit in 2027, while another estimate laid out a scenario of 2026 revenue of KRW 22.4bn, 2027 revenue of KRW 37.3bn and breakeven in 2027. These projections are estimates by brokerages and rating agencies and may differ from actual results, so they need to be verified through quarterly earnings and order trends."
+ },
+ "valuation_comment": {
+  "ko": "노타는 적자가 지속되는 외형 성장 초기 기업으로, 이익 기반 지표보다 매출 성장성과 수주잔고 같은 미래 가시성에 시장의 무게가 실려 있다. 현재 시장 평가는 회사의 주당순자산(BPS 약 1,117원) 대비 큰 폭의 프리미엄이 형성된 구간으로, 흑자 기업 중심의 소프트웨어 업종 평균적 잣대로 단순 비교하기 어려운 성격이다. 영업이익이 아직 흑자가 아니어서 이익 기반 멀티플은 산출 자체가 의미를 갖기 어렵고, 배당도 실시하지 않아 배당수익률은 사실상 부재하다. 증권가가 제시한 2027년 흑자 전환 시나리오가 현실화되는지, 그리고 플랫폼 비중이 높은 수주잔고가 실제 매출과 마진으로 전환되는지가 평가의 핵심 변수다. 따라서 현재의 순자산 대비 프리미엄은 성장 기대를 선반영한 결과로 볼 수 있으며, 분기별 실적 변동성이 크다는 점에서 수치 변화에 따라 평가 수준도 빠르게 달라질 수 있다.",
+  "en": "Nota is an early-growth company with ongoing losses, so the market weighs future visibility such as revenue growth and order backlog more than earnings-based metrics. The current market valuation sits at a substantial premium to its book value per share (BPS of about KRW 1,117), making simple comparison against profit-based software-sector averages difficult. Because it is not yet operating-profitable, earnings-based multiples are hard to compute meaningfully, and with no dividend paid the dividend yield is effectively absent. The key valuation variables are whether the brokerage scenario of a 2027 swing to profit materializes and whether the platform-heavy backlog converts into actual revenue and margin. The current premium to net assets can thus be seen as pre-reflecting growth expectations, and given high quarterly earnings volatility the valuation level can shift quickly as the numbers change."
+ },
+ "bull": [
+  {
+   "title": {
+    "ko": "글로벌 반도체 생태계와의 협력 희소성",
+    "en": "Scarcity of global chip ecosystem ties"
+   },
+   "body": {
+    "ko": "노타는 삼성전자 엑시노스 세대별 협력에 더해 2026년 3월 Arm과 2028년까지의 공급계약을 체결하며 글로벌 반도체 IP 생태계에 진입했다. NVIDIA TAO·Qualcomm AI Hub 등 주요 반도체사의 개발 SDK에 플랫폼이 연동돼 세일즈 채널로 활용되는 점은 진입장벽으로 작용할 수 있다. 국내 상장사 중 온디바이스 AI 최적화 테마를 직접 대변하는 희소성을 보유했다는 평가다.",
+    "en": "Beyond generational collaboration on Samsung's Exynos, Nota entered the global semiconductor IP ecosystem by signing a supply contract with Arm through 2028 in March 2026. Having its platform integrated into major chipmakers' SDKs such as NVIDIA TAO and Qualcomm AI Hub as sales channels can act as an entry barrier. It is seen as one of the few listed Korean firms directly representing the on-device AI optimization theme."
+   }
+  },
+  {
+   "title": {
+    "ko": "플랫폼 중심 수주잔고와 반복매출 기대",
+    "en": "Platform-led backlog and recurring revenue"
+   },
+   "body": {
+    "ko": "2026년 1분기 말 수주잔고는 약 121억원으로 전년 동기 대비 두 배 이상 확대됐고, 이 중 플랫폼 비중이 84%에 달한다. 플랫폼 매출은 계약 기간에 걸쳐 반복적으로 인식되는 구조여서 매출 안정성과 수익성 개선에 기여할 수 있다. 신규 파트너 확대로 반복매출 구조를 더 강화한다는 게 회사 방침이다.",
+    "en": "As of Q1 2026 the backlog was about KRW 12.1bn, more than double a year earlier, with platform accounting for 84%. Platform revenue is recognized recurringly over contract periods, which can contribute to revenue stability and margin improvement. The company plans to strengthen its recurring-revenue structure further by adding new partners."
+   }
+  },
+  {
+   "title": {
+    "ko": "추론·피지컬 AI로의 전방시장 확장",
+    "en": "Expansion into inference and physical AI"
+   },
+   "body": {
+    "ko": "AI 시장이 학습에서 추론·서비스 운영 중심으로 이동하면서 경량화·최적화 수요가 구조적으로 늘고 있다. 노타는 모바일·반도체 IP·데이터센터·엣지를 넘어 클라우드 인프라까지 적용 범위를 넓히고 있으며, VLA 모델 최적화로 로봇·모빌리티 등 피지컬 AI 시장 공략을 강화한다. 약 107억원 규모 천안 도시안전망 실증사업 선정은 공공 분야 레퍼런스로 작용할 수 있다.",
+    "en": "As the AI market shifts from training toward inference and service operation, demand for lightweighting and optimization is rising structurally. Nota is broadening its reach beyond mobile, semiconductor IP, data center and edge to cloud infrastructure, and is strengthening its push into physical AI such as robotics and mobility via VLA model optimization. Its selection for the roughly KRW 10.7bn Cheonan city safety network demonstration project can serve as a public-sector reference."
+   }
+  }
+ ],
+ "bear": [
+  {
+   "title": {
+    "ko": "지속되는 영업적자와 현금 유출",
+    "en": "Persistent operating losses and cash outflow"
+   },
+   "body": {
+    "ko": "2025년 영업손실은 약 153억원, 영업이익률은 -116.6%로 비용 부담이 매출을 크게 웃돈다. 영업활동 현금흐름도 2025년 약 -118억원으로 순유출이 지속됐다. 외형이 빠르게 늘어도 손익분기점 도달 시점은 증권가 추정으로도 2027년으로 제시되는 등 흑자 전환까지 시간이 필요하다.",
+    "en": "The 2025 operating loss was about KRW 15.3bn with a margin of -116.6%, meaning costs far exceed revenue. Operating cash flow also remained a net outflow of about negative KRW 11.8bn in 2025. Even as the top line grows fast, brokerage estimates place breakeven around 2027, so a swing to profit will take time."
+   }
+  },
+  {
+   "title": {
+    "ko": "분기별 매출의 높은 변동성",
+    "en": "High quarterly revenue volatility"
+   },
+   "body": {
+    "ko": "2025년 4분기 매출이 약 95억원으로 연간 매출의 상당 부분이 4분기에 집중된 반면, 2026년 1분기 매출은 약 36억원으로 분기 간 편차가 크다. 플랫폼 매출이 계약 기간에 걸쳐 순차 인식되는 구조여서 특정 분기 수치만으로 추세를 단정하기 어렵다. 진행률 기준 회계 적용 등 회계정책 변경도 분기 비교를 복잡하게 만든다.",
+    "en": "Q4 2025 revenue of about KRW 9.5bn meant much of the annual total was concentrated in the fourth quarter, while Q1 2026 revenue of about KRW 3.6bn shows large swings between quarters. Because platform revenue is recognized progressively over contract periods, it is hard to confirm a trend from a single quarter. Accounting policy changes such as percentage-of-completion accounting also complicate quarter-on-quarter comparison."
+   }
+  },
+  {
+   "title": {
+    "ko": "높은 시장 기대와 경쟁 심화",
+    "en": "Lofty expectations and intensifying competition"
+   },
+   "body": {
+    "ko": "순자산 대비 큰 프리미엄이 형성된 만큼 성장 기대가 실적으로 확인되지 않으면 평가 수준이 빠르게 조정될 수 있다. 스퀴즈비츠 등 AI 모델 압축·최적화 기업들이 추론 인프라 시장을 함께 공략하고 있어 경쟁이 형성되고 있다. 상장 직후 주가가 공모가 대비 급등했다가 큰 폭으로 등락한 이력도 변동성 위험을 시사한다.",
+    "en": "Given the large premium to net assets, the valuation can adjust quickly if growth expectations are not confirmed by results. Competitors such as SqueezeBits are also targeting the inference infrastructure market with model compression and optimization. The stock's history of surging far above its IPO price right after listing and then swinging sharply also points to volatility risk."
+   }
+  }
+ ],
+ "risks": [
+  {
+   "cat": {
+    "ko": "고객 집중·계약 의존",
+    "en": "Customer concentration and contract dependence"
+   },
+   "body": {
+    "ko": "삼성전자 등 일부 대형 고객·계약에 대한 의존도가 높을 경우 계약 갱신이나 단가 협상 결과가 실적에 큰 영향을 줄 수 있다. 엑시노스 관련 계약 금액 일부는 고객사 요청에 따라 유보기간 종료 이후 공개될 예정이라 가시성이 제한적이다. 멀티 플랫폼으로 다변화 중이라는 평가가 있으나 실제 매출 분산 정도는 지속 확인이 필요하다.",
+    "en": "If dependence on a few large customers and contracts such as Samsung is high, the outcome of contract renewals or pricing negotiations could materially affect results. Some Exynos-related contract amounts are to be disclosed only after a deferral period at the customer's request, limiting visibility. While the business is said to be diversifying into multiple platforms, the actual degree of revenue diversification needs continued verification."
+   }
+  },
+  {
+   "cat": {
+    "ko": "기술·R&D 투자 부담",
+    "en": "Technology and R&D investment burden"
+   },
+   "body": {
+    "ko": "AI 경량화·최적화는 빠른 기술 변화와 다양한 하드웨어 대응이 요구돼 지속적인 연구개발·인건비 투자가 불가피하다. 이는 단기 수익성에 부담으로 작용하며, 적자가 길어질 경우 자금 소요가 커질 수 있다. 신규 칩셋·모델 아키텍처 변화에 대한 대응 속도가 경쟁력을 좌우한다.",
+    "en": "AI lightweighting and optimization require responding to fast technological change and diverse hardware, making continued R&D and labor investment unavoidable. This weighs on near-term profitability, and if losses persist, funding needs could grow. The speed of adapting to new chipsets and model architectures will determine competitiveness."
+   }
+  },
+  {
+   "cat": {
+    "ko": "정책·환율·해외사업 변수",
+    "en": "Policy, FX and overseas business factors"
+   },
+   "body": {
+    "ko": "정부의 온디바이스 AI 반도체 지원 정책은 우호적이나, 공공 실증사업은 예산·일정·정책 방향에 따라 변동될 수 있다. 미국·일본·중동 등 해외사업 비중이 늘수록 환율과 현지 규제·발주 환경의 영향이 커진다. 글로벌 반도체 업황과 AI 투자 사이클의 흐름도 전방 수요에 영향을 줄 수 있다.",
+    "en": "Government support for on-device AI chips is favorable, but public demonstration projects can shift with budgets, schedules and policy direction. As overseas business in the US, Japan and the MiddEast grows, exposure to FX and local regulatory and ordering conditions increases. The global semiconductor cycle and the AI investment cycle can also affect downstream demand."
+   }
+  }
+ ],
+ "checkpoints": [
+  {
+   "when": {
+    "ko": "2026년 8월 (2분기 실적)",
+    "en": "August 2026 (Q2 results)"
+   },
+   "what": {
+    "ko": "2026년 2분기 매출·손실 폭과 수주잔고 변화. 플랫폼 매출이 실제 인식으로 전환되는 속도와 분기 변동성 완화 여부를 확인.",
+    "en": "Q2 2026 revenue, loss magnitude and backlog changes. Check the pace at which platform revenue converts into recognized sales and whether quarterly volatility eases."
+   }
+  },
+  {
+   "when": {
+    "ko": "2026년 말",
+    "en": "End of 2026"
+   },
+   "what": {
+    "ko": "삼성전자 엑시노스 관련 계약 금액의 유보기간 종료 후 공개 여부. 주요 고객 계약 규모가 드러나면 매출 가시성 판단에 도움.",
+    "en": "Whether Samsung Exynos-related contract amounts are disclosed after the deferral period ends. Visibility on key customer contract scale would aid revenue assessment."
+   }
+  },
+  {
+   "when": {
+    "ko": "2026~2027년",
+    "en": "2026–2027"
+   },
+   "what": {
+    "ko": "약 107억원 규모 천안 도시안전망 실증사업(2027년 12월까지)의 진행률과 매출 기여. 공공 레퍼런스의 전국 확산 가능성도 관전 포인트.",
+    "en": "Progress and revenue contribution of the roughly KRW 10.7bn Cheonan city safety network project (through December 2027). Potential nationwide diffusion of the public reference is also worth watching."
+   }
+  },
+  {
+   "when": {
+    "ko": "2027년 (손익분기점 시점)",
+    "en": "2027 (breakeven timing)"
+   },
+   "what": {
+    "ko": "증권가가 제시한 2027년 흑자 전환 시나리오의 실현 여부. 플랫폼 비중 확대와 매출 성장세가 실제 마진 개선으로 이어지는지 확인.",
+    "en": "Whether the brokerage scenario of a 2027 swing to profit materializes. Verify whether a rising platform share and revenue growth translate into actual margin improvement."
+   }
+  },
+  {
+   "when": {
+    "ko": "수시 (수주·파트너십 공시)",
+    "en": "Ongoing (orders and partnership disclosures)"
+   },
+   "what": {
+    "ko": "Arm(2028년 3월까지)·퓨리오사AI·모빌린트·텔레칩스·시마AI 등과의 협력 진척과 신규 수주. VLA·피지컬 AI 등 신규 영역의 상용화 성과를 추적.",
+    "en": "Progress and new orders from collaborations with Arm (through March 2028), FuriosaAI, Mobilint, Telechips and SiMa.ai. Track commercialization in new areas such as VLA and physical AI."
+   }
+  }
+ ],
+ "verdict": {
+  "body": {
+   "ko": "노타는 온디바이스 AI 경량화·최적화라는 구조적 성장 테마의 한복판에 있는 기업으로, 넷츠프레소 플랫폼과 NVA 솔루션을 기반으로 글로벌 반도체 생태계와의 협력을 빠르게 확대하고 있다. 2025년 매출은 약 131억원으로 사상 최대였으나 영업손실 약 153억원·순손실 약 166억원이 이어졌고, 영업활동 현금흐름도 순유출 상태다. 2026년 1분기 말 수주잔고 약 121억원(플랫폼 비중 84%)은 향후 매출 가시성을 뒷받침하는 긍정적 신호지만, 분기별 매출 변동성이 크고 손익분기점 도달까지 시간이 필요하다. 시장은 이익보다 성장 기대를 선반영하고 있어, 순자산 대비 높은 프리미엄이 실적으로 검증되는지가 관건이다. 삼성·Arm·엔비디아 등과의 협력 확대와 피지컬 AI·공공 실증사업은 중장기 모멘텀이나, 고객 집중·R&D 부담·경쟁 심화는 함께 고려할 위험이다. 본 자료는 정보 제공을 목적으로 하며 투자의견이나 목표주가를 제시하지 않는다.",
+   "en": "Nota sits at the center of the structural growth theme of on-device AI lightweighting and optimization, rapidly expanding collaboration with the global semiconductor ecosystem on the back of its NetsPresso platform and NVA solution. FY2025 revenue of about KRW 13.1bn was a record, but an operating loss of roughly KRW 15.3bn and a net loss of about KRW 16.6bn persisted, with operating cash flow also in net outflow. The Q1 2026 backlog of about KRW 12.1bn (84% platform) is a positive signal supporting future revenue visibility, but quarterly revenue volatility is high and reaching breakeven will take time. The market is pre-reflecting growth expectations rather than earnings, so the key is whether the high premium to net assets is validated by results. Expanding collaboration with Samsung, Arm and NVIDIA, plus physical AI and public demonstration projects, are medium-to-long-term momentum, while customer concentration, R&D burden and intensifying competition are risks to weigh together. This material is for informational purposes only and does not provide an investment opinion or target price."
+  }
+ },
+ "sources": [
+  "https://www.stockplus.com/m/stocks/KOREA-A486990",
+  "https://www.tossinvest.com/stocks/A486990/order",
+  "https://m.finance.daum.net/quotes/A486990/news/stock/20251229145042704",
+  "https://m.thinkpool.com/compDiscuss/cont/1022971",
+  "https://alphasquare.co.kr/home/stock-summary?code=486990",
+  "https://comp.fnguide.com/SVO2/ASP/SVD_Main.asp?gicode=A486990",
+  "https://www.sedaily.com/NewsView/2H0B7J08YV",
+  "https://thevc.kr/nota",
+  "https://www.kr.nota.ai/",
+  "https://www.kr.nota.ai/newsroom",
+  "https://notaaipresskit.oopy.io/",
+  "https://startup.kaist.ac.kr/boards/view/board_interveiw/444",
+  "https://www.fnnews.com/news/202605181014332058",
+  "https://news.nate.com/view/20250425n07826",
+  "https://www.e4ds.com/sub_view.asp?ch=31&t=0&idx=21575",
+  "https://m.newsprime.co.kr/section_view.html?no=728495&menu=1",
+  "https://www.newspim.com/news/view/20260612000515",
+  "https://www.seoulexchange.kr/stocks/%EB%85%B8%ED%83%80-3540/"
+ ],
+ "v": 2,
+ "model": "claude-opus-4-8",
+ "ticker": "486990",
+ "name": "노타",
+ "name_en": "Nota Inc.",
+ "sector": "IT·소프트웨어",
+ "categories": [
+  "IT·소프트웨어",
+  "인공지능(AI)"
+ ],
+ "market": "코스닥",
+ "reportDate": "2026-06-18",
+ "reportTs": "2026-06-18 03:24",
+ "dataDate": "20260617",
+ "quant": {
+  "asOf": "2026-06-17",
+  "fs_basis": "연결(CFS) · DART 공시 확정치 · 지배주주 기준 순이익",
+  "annual": [
+   {
+    "year": 2025,
+    "rev": 13100933426,
+    "op": -15279286074,
+    "np": -16629628581,
+    "np_owner": -16629628581,
+    "equity": 27455221253,
+    "equity_owner": 27455221253,
+    "liab": 14828335681,
+    "cfo": -11788125418,
+    "eps_basic": -999,
+    "opm": -116.6,
+    "roe": -60.6,
+    "debt_ratio": 54.0
+   }
+  ],
+  "quarterly": [
+   {
+    "q": "2025Q1",
+    "rev": null,
+    "op": null,
+    "np_owner": null
+   },
+   {
+    "q": "2025Q2",
+    "rev": null,
+    "op": null,
+    "np_owner": null
+   },
+   {
+    "q": "2025Q3",
+    "rev": null,
+    "op": null,
+    "np_owner": null
+   },
+   {
+    "q": "2025Q4",
+    "rev": 9503208193,
+    "op": -2736448557,
+    "np_owner": -2692190927
+   },
+   {
+    "q": "2026Q1",
+    "rev": 3584548582,
+    "op": -4197671191,
+    "np_owner": -4015414543
+   }
+  ],
+  "valuation": {
+   "price": 26450,
+   "mcap": 0.5646,
+   "shares": 21346230,
+   "total_shares": 21346230,
+   "wavg_shares": 21358587,
+   "per": null,
+   "eps": null,
+   "pbr": 23.68,
+   "bps": 1117,
+   "roe_ttm": null,
+   "ttm_window": null,
+   "ttm_np_owner": null,
+   "pbr_krx": 20.54,
+   "bps_krx": 1288.0,
+   "basis": "PER·EPS·PBR·BPS 모두 자체 산출(네이버·토스와 동일 방식) · 배당은 DART 공시 주당현금배당금(보완:KRX) ÷ 현재가",
+   "dps": 0.0,
+   "div": 0.0
+  }
+ }
+}
