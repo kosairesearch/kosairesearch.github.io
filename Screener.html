@@ -773,15 +773,14 @@ const FIELDS={
   per:{label:'PER',type:'range',unit:'배',quick:[{l:'10배 이하',max:10},{l:'20배 이하',max:20}]},
   pbr:{label:'PBR',type:'range',unit:'배',quick:[{l:'1배 이하',max:1},{l:'2배 이하',max:2}]},
   div:{label:'배당수익률',type:'range',unit:'%',quick:[{l:'2% 이상',min:2},{l:'4% 이상',min:4}]},
-  roe:{label:'ROE',type:'range',unit:'%',quick:[{l:'10% 이상',min:10},{l:'20% 이상',min:20}]},
 };
-const FIELD_ORDER=['market','sector','mcap','per','pbr','div','roe'];
+const FIELD_ORDER=['market','sector','mcap','per','pbr','div'];
 
 const PRESETS={
   '저PER 가치주':{per:{min:null,max:10}},
   '고배당':{div:{min:4,max:null}},
   '고성장주':{rev:{min:25,max:null}},
-  '우량 대형주':{mcap:{min:10,max:null},roe:{min:10,max:null}},
+  '대형 저평가':{mcap:{min:10,max:null},per:{min:null,max:15}},
 };
 
 /* ===== state ===== */

@@ -874,7 +874,7 @@ KOSi18n.register({
 
   var UI={
     ko:{ home:'홈', reports:'리포트', watch:'워치리스트 추가', watched:'워치리스트 추가됨', watchShort:'워치리스트',
-      mk:{price:'현재가',chg:'전일 대비',mcap:'시가총액',amt:'거래대금',vol:'거래량',shares:'상장주식수',market:'시장',sector:'업종',per:'PER',pbr:'PBR',roe:'ROE',divy:'배당수익률'},
+      mk:{price:'현재가',chg:'전일 대비',mcap:'시가총액',amt:'거래대금',vol:'거래량',shares:'상장주식수',market:'시장',sector:'업종',per:'PER',pbr:'PBR',roe:'ROE',eps:'EPS',divy:'배당수익률'},
       sec:{overview:'리포트 개요',business:'사업 구조',recent:'최근 실적·주가',outlook:'전망',bull:'강세 요인',bear:'약세 요인',risk:'리스크 요인',verdict:'종합 의견',sources:'참고 출처',fin:'실적 추이',earnings:'실적 분석',industry:'산업 분석',valuation:'밸류에이션',chk:'다음 체크포인트'},
       fin:{annual:'연간 실적 (연결)',quarterly:'분기 실적 (연결)',year:'연도',q:'분기',rev:'매출액',op:'영업이익',np:'지배주주 순이익',opm:'영업이익률',roe:'ROE',debt:'부채비율',per:'PER',pbr:'PBR',divy:'배당수익률',eps:'EPS',bps:'BPS',dps:'주당배당금',na:'산출 불가 (적자)',nodata:'—',chartAnnual:'연간 매출·영업이익 추이',chartQuarter:'분기 매출·영업이익 추이',unitJo:'단위: 조원',
         foot:'· 재무는 DART 공시 연결 확정치 · PER·EPS는 최근 4개 분기({win}) 지배주주 순이익, PBR·BPS는 최근 분기말 지배주주 자본 기준 · 배당은 DART 공시 주당현금배당금 기준'},
@@ -884,7 +884,7 @@ KOSi18n.register({
       disc:'· 본 콘텐츠는 AI가 시장 데이터와 웹 검색 결과를 분석한 정보 제공용이며, 투자 권유나 추천이 아닙니다. 투자 판단과 그 책임은 투자자 본인에게 있습니다. 데이터는 지연되거나 오류가 포함될 수 있습니다.',
       none:'이 종목의 AI 리포트는 아직 준비되지 않았습니다. 시가총액 상위 종목부터 순차적으로 생성하고 있습니다.' },
     en:{ home:'Home', reports:'Reports', watch:'Add to watchlist', watched:'Added to watchlist', watchShort:'Watchlist',
-      mk:{price:'Price',chg:'Day change',mcap:'Market cap',amt:'Trading value',vol:'Volume',shares:'Shares out.',market:'Market',sector:'Sector',per:'P/E',pbr:'P/B',roe:'ROE',divy:'Div. yield'},
+      mk:{price:'Price',chg:'Day change',mcap:'Market cap',amt:'Trading value',vol:'Volume',shares:'Shares out.',market:'Market',sector:'Sector',per:'P/E',pbr:'P/B',roe:'ROE',eps:'EPS',divy:'Div. yield'},
       sec:{overview:'Report Overview',business:'Business',recent:'Recent Results & Price',outlook:'Outlook',bull:'Bull Factors',bear:'Bear Factors',risk:'Risk Factors',verdict:'Verdict',sources:'Sources',fin:'Financial Trends',earnings:'Earnings Analysis',industry:'Industry',valuation:'Valuation',chk:'What to Watch Next'},
       fin:{annual:'Annual (consolidated)',quarterly:'Quarterly (consolidated)',year:'Year',q:'Quarter',rev:'Revenue',op:'Operating profit',np:'Net profit (owners)',opm:'OP margin',roe:'ROE',debt:'Debt ratio',per:'P/E',pbr:'P/B',divy:'Div. yield',eps:'EPS',bps:'BPS',dps:'DPS',na:'n/a (loss)',nodata:'—',chartAnnual:'Annual revenue & operating profit',chartQuarter:'Quarterly revenue & operating profit',unitJo:'Unit: ₩ trillion',
         foot:'· Financials are confirmed DART consolidated figures · P/E & EPS use trailing-4-quarter net profit attributable to owners ({win}); P/B & BPS use latest-quarter equity attributable to owners · Dividend is based on DART-disclosed cash dividend per share'},
@@ -1145,6 +1145,7 @@ KOSi18n.register({
     var mult=function(v){ return v==null?'—':v.toFixed(1)+(L()==='en'?'x':'배'); };
     var pctv=function(v){ return v==null?'—':v.toFixed(2)+'%'; };
     var roep=function(v){ return v==null?'—':v.toFixed(1)+'%'; };
+    var epsf=function(v){ return v==null?'—':(L()==='en'?'₩'+Math.round(v).toLocaleString():Math.round(v).toLocaleString()+'원'); };
     var mk=u.mk, metrics=[
       [mk.mcap, mcap(STOCK.mcap), ''],
       [mk.amt, amt(STOCK.trading_value), ''],
@@ -1152,7 +1153,7 @@ KOSi18n.register({
       [mk.shares, shN(STOCK.shares), ''],
       [mk.per, mult(perV), ''],
       [mk.pbr, mult(pbrV), ''],
-      [mk.roe, roep(roeV), ''],
+      [mk.eps, epsf(VAL.eps), ''],
       [mk.divy, pctv(divV), '']
     ];
     document.getElementById('mgrid').innerHTML=metrics.map(function(m){return '<div class="m"><div class="k">'+esc(m[0])+'</div><div class="val">'+m[1]+'</div>'+(m[2]?'<div class="peer">'+esc(m[2])+'</div>':'')+'</div>';}).join('');
