@@ -964,39 +964,34 @@ KOSi18n.register({
   function kBarChart(labels, bars, line, lineUnit){
     var W=620, H=232, padL=14, padR=14, padT=16, padB=34;
     var plotW=W-padL-padR, plotH=H-padT-padB, base=padT+plotH;
-    // 적응형 단위: 대형주는 조, 소형주는 억(소형주가 0.0으로 뭉개지던 버그 수정)
-    var en=L()==='en', maxabs=0;
+    // 막대마다 값에 맞는 단위(조/억)를 붙인다 — fwon이 '1.5조'·'300억'처럼 자체 단위 표기.
+    // (공통 단위 1개로 표시하면 매출은 조, 영업이익은 0.0으로 뭉개지던 버그 수정)
+    var maxabs=0;
     bars.forEach(function(b){ b.vals.forEach(function(v){ if(v!=null) maxabs=Math.max(maxabs,Math.abs(v)); }); });
     if(maxabs===0) return {svg:'',unit:''};
-    var big=maxabs>=1e12, udiv=big?1e12:(en?1e9:1e8);
-    var uname=big?(en?'₩ trillion':'조원'):(en?'₩ billion':'억원');
-    var jo=function(won){ return won==null?null:won/udiv; };
-    var joLabel=function(j){ if(j==null)return ''; var a=Math.abs(j);
-      if(big) return a>=100?(''+Math.round(j)):(a>=10?j.toFixed(0):j.toFixed(1));
-      return Math.round(j).toLocaleString('en-US'); };
-    var vals=[]; bars.forEach(function(b){ b.vals.forEach(function(v){ if(v!=null)vals.push(jo(v)); }); });
+    var vals=[]; bars.forEach(function(b){ b.vals.forEach(function(v){ if(v!=null)vals.push(v); }); });
     if(!vals.length) return {svg:'',unit:''};
     var vmax=Math.max.apply(null,vals.concat([0])), vmin=Math.min.apply(null,vals.concat([0]));
     if(vmax===vmin) vmax=vmin+1;
     var span=vmax-vmin, zeroY=padT+plotH*(vmax/span);
-    function y(j){ return padT+plotH*((vmax-j)/span); }
+    function y(v){ return padT+plotH*((vmax-v)/span); }
     var n=labels.length, slot=plotW/n, nb=bars.length, gap=slot*0.16, bw=(slot-gap*2)/nb;
     var svg='<svg class="kchart" viewBox="0 0 '+W+' '+H+'" preserveAspectRatio="xMidYMid meet" role="img">';
     // 0선
     svg+='<line x1="'+padL+'" x2="'+(W-padR)+'" y1="'+zeroY.toFixed(1)+'" y2="'+zeroY.toFixed(1)+'" stroke="var(--hair)" stroke-width="1"/>';
-    // 막대
+    // 막대 — 높이는 원 단위 실측치로 스케일, 라벨은 값마다 조/억 자동
     for(var i=0;i<n;i++){
       var x0=padL+slot*i+gap;
       for(var b=0;b<nb;b++){
         var v=bars[b].vals[i]; if(v==null) continue;
-        var jv=jo(v), yy=y(jv), bx=x0+bw*b;
+        var yy=y(v), bx=x0+bw*b;
         var top=Math.min(yy,zeroY), hgt=Math.max(2,Math.abs(zeroY-yy));
-        var col=(jv<0)?'var(--c-loss)':bars[b].color;
+        var col=(v<0)?'var(--c-loss)':bars[b].color;
         svg+='<rect x="'+bx.toFixed(1)+'" y="'+top.toFixed(1)+'" width="'+(bw-2).toFixed(1)+'" height="'+hgt.toFixed(1)+'" rx="2.5" fill="'+col+'"/>';
-        // 값 라벨(영업이익 계열 또는 단일 계열만; 과밀 방지 위해 마지막 계열에만)
+        // 값 라벨(2계열 이하일 때만; 과밀 방지)
         if(nb<=2){
-          var ly=(jv<0)?(top+hgt+11):(top-4);
-          svg+='<text class="blabel" x="'+(bx+(bw-2)/2).toFixed(1)+'" y="'+ly.toFixed(1)+'" text-anchor="middle" fill="var(--fg-3)">'+joLabel(jv)+'</text>';
+          var ly=(v<0)?(top+hgt+11):(top-4);
+          svg+='<text class="blabel" x="'+(bx+(bw-2)/2).toFixed(1)+'" y="'+ly.toFixed(1)+'" text-anchor="middle" fill="var(--fg-3)">'+fwon(v)+'</text>';
         }
       }
       // x축 라벨
@@ -1018,7 +1013,7 @@ KOSi18n.register({
       svg+='<polyline points="'+pts.join(' ')+'" fill="none" stroke="var(--c-line)" stroke-width="1.6" stroke-linejoin="round"/>'+dots;
     }
     svg+='</svg>';
-    return {svg:svg, unit:uname};
+    return {svg:svg, unit:''};
   }
   function chartCard(cap, legend, svg){
     if(!svg) return '';
@@ -1041,14 +1036,13 @@ KOSi18n.register({
     /* 차트: 연간·분기 매출·영업이익 */
     var legBase='<span><i style="background:var(--c-rev)"></i>'+esc(revLbl)+'</span>'
       +'<span><i style="background:var(--c-op)"></i>'+esc(f.op)+'</span>';
-    var uniCap=function(un){ return '<span style="margin-left:auto;color:var(--fg-3)">'+esc((L()==='en'?'Unit: ':'단위: ')+un)+'</span>'; };
     if(ann.length>=2){
       var aLabels=ann.map(function(a){return ''+a.year;});
       var aBars=[{color:'var(--c-rev)',vals:ann.map(function(a){return a.rev;})},
                  {color:'var(--c-op)',vals:ann.map(function(a){return a.op;})}];
       var aLine={vals:ann.map(function(a){return a.opm;})};
       var aC=kBarChart(aLabels,aBars,aLine,'%');
-      h+=chartCard(f.chartAnnual, legBase+'<span><i class="line"></i>'+esc(f.opm)+'</span>'+uniCap(aC.unit), aC.svg);
+      h+=chartCard(f.chartAnnual, legBase+'<span><i class="line"></i>'+esc(f.opm)+'</span>', aC.svg);
     }
     var qtc=(Q.quarterly||[]);
     if(qtc.length>=2){
@@ -1056,7 +1050,7 @@ KOSi18n.register({
       var qBars=[{color:'var(--c-rev)',vals:qtc.map(function(r){return r.rev;})},
                  {color:'var(--c-op)',vals:qtc.map(function(r){return r.op;})}];
       var qC=kBarChart(qLabels,qBars,null,'');
-      h+=chartCard(f.chartQuarter, legBase+uniCap(qC.unit), qC.svg);
+      h+=chartCard(f.chartQuarter, legBase, qC.svg);
     }
     if(ann.length){
       h+='<div class="tbl-card glass"><div class="tbl-cap">'+esc(f.annual)+'</div><div class="tbl-scroll"><table class="dt"><thead><tr>'
