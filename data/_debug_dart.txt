@@ -1,191 +1,198 @@
-# 432320 2025 11011
-[네이버] {'lastcloseprice': 1390.0, 'openprice': 1411.0, 'highprice': 1411.0, 'lowprice': 1352.0, 'accumulatedtradingvolume': 1659083.0, 'foreignrate': 2.91, 'highpriceof52weeks': 4045.0, 'lowpriceof52weeks': 1352.0, 'eps': -191.0, 'pbr': 0.79, 'bps': 1772.0, 'dividendyieldratio': 22.21, 'dividend': 312.0}
-[주식총수] 202828570
+# 005930 2025 11011
+[네이버] {'lastcloseprice': 343000.0, 'openprice': 339500.0, 'highprice': 348000.0, 'lowprice': 331000.0, 'accumulatedtradingvolume': 35525270.0, 'foreignrate': 47.6, 'highpriceof52weeks': 377000.0, 'lowpriceof52weeks': 57600.0, 'per': 28.01, 'eps': 12372.0, 'cnsper': 7.89, 'cnseps': 43912.0, 'pbr': 4.82, 'bps': 71907.0, 'dividendyieldratio': 0.48, 'dividend': 1668.0}
+[주식총수] 6735612586
 
 [CFS] 핵심계정:
-  [BS] id=ifrs-full_Assets | nm=자산총계 | amt=1048135011577 | add=nan
-  [BS] id=dart_CurrentNontradeReceivables | nm=매출채권 외의 유동채권 | amt=8096860724 | add=nan
-  [BS] id=ifrs-full_Equity | nm=자본총계 | amt=262894426368 | add=nan
-  [BS] id=ifrs-full_EquityAttributableToOwnersOfParent | nm=지배기업의 소유주에게 귀속되는 자본 | amt=262894426368 | add=nan
-  [BS] id=dart_CapitalAdjustments | nm=자본조정 | amt=-168637483 | add=nan
-  [BS] id=dart_CapitalSurplus | nm=자본잉여금 | amt=391598934045 | add=nan
-  [BS] id=dart_OtherComprehensiveIncomeLossAccumulatedAmount | nm=기타포괄손익누계액 | amt=-11712118214 | add=nan
-  [BS] id=ifrs-full_IssuedCapital | nm=자본금 | amt=50707142500 | add=nan
-  [BS] id=ifrs-full_RetainedEarnings | nm=이익잉여금 | amt=-167530894480 | add=nan
-  [BS] id=ifrs-full_NoncontrollingInterests | nm=비지배지분 | amt=0 | add=nan
-  [BS] id=ifrs-full_EquityAndLiabilities | nm=자본과부채총계 | amt=1048135011577 | add=nan
-  [BS] id=ifrs-full_Liabilities | nm=부채총계 | amt=785240585209 | add=nan
-  [CIS] id=dart_NonOperatingProfitLoss | nm=영업외손익 | amt=-26964829115 | add=
-  [CIS] id=dart_OtherGains | nm=기타이익 | amt=444539702 | add=
-  [CIS] id=ifrs-full_FinanceIncome | nm=금융수익 | amt=6216596482 | add=
-  [CIS] id=dart_OperatingIncomeLoss | nm=영업이익(손실) | amt=-72447633526 | add=
-  [CIS] id=ifrs-full_ComprehensiveIncome | nm=포괄손익 | amt=-101398440455 | add=
-  [CIS] id=ifrs-full_ComprehensiveIncomeAttributableToNoncontrollingInterests | nm=포괄손익, 비지배지분 | amt=0 | add=
-  [CIS] id=ifrs-full_ComprehensiveIncomeAttributableToOwnersOfParent | nm=포괄손익, 지배기업의 소유주에게 귀속되는 지분 | amt=-101398440455 | add=
-  [CIS] id=ifrs-full_BasicEarningsLossPerShare | nm=기본주당이익(손실) | amt=-980 | add=
-  [CIS] id=ifrs-full_IncomeTaxExpenseContinuingOperations | nm=법인세비용(수익) | amt=0 | add=
-  [CIS] id=ifrs-full_OperatingExpense | nm=영업비용 | amt=102841559662 | add=
-  [CIS] id=ifrs-full_OtherComprehensiveIncome | nm=기타포괄손익 | amt=-1985977814 | add=
-  [CIS] id=ifrs-full_OtherComprehensiveIncomeNetOfTaxCashFlowHedges | nm=세후기타포괄손익, 현금흐름위험회피 | amt=-17969760292 | add=
-  [CIS] id=ifrs-full_OtherComprehensiveIncomeNetOfTaxExchangeDifferencesOnTranslationOfForeignOperationsAndHedgesOfNetInvestmentsInForeignOperations | nm=세후 기타포괄손익, 해외사업장환산 외환차이와 해외사업장순투자 위험회피 | amt=15983782478 | add=
-  [CIS] id=ifrs-full_ProfitLoss | nm=당기순이익(손실) | amt=-99412462641 | add=
-  [CIS] id=ifrs-full_ProfitLossAttributableToNoncontrollingInterests | nm=비지배지분에 귀속되는 당기순이익(손실) | amt=0 | add=
-  [CIS] id=ifrs-full_ProfitLossAttributableToOwnersOfParent | nm=지배기업의 소유주에게 귀속되는 당기순이익(손실) | amt=-99412462641 | add=
-  [CIS] id=ifrs-full_ProfitLossBeforeTax | nm=법인세비용차감전순이익(손실) | amt=-99412462641 | add=
-  [CIS] id=ifrs-full_Revenue | nm=수익(매출액) | amt=30393926136 | add=
-  [CF] id=ifrs-full_CashFlowsFromUsedInOperatingActivities | nm=영업활동현금흐름 | amt=13774995308 | add=nan
-  [CF] id=ifrs-full_CashFlowsFromUsedInOperations | nm=영업에서 창출된 현금흐름 | amt=23513530832 | add=nan
-  [CF] id=ifrs-full_InterestPaidClassifiedAsOperatingActivities | nm=이자지급(영업) | amt=13437460950 | add=nan
-  [CF] id=ifrs-full_InterestReceivedClassifiedAsOperatingActivities | nm=영업활동으로 분류된 이자수취 | amt=6080415216 | add=nan
-  [SCE] id=dart_EquityAtBeginningOfPeriod | nm=기초자본 | amt=-9726140400 | add=nan
-  [SCE] id=dart_EquityAtBeginningOfPeriod | nm=기초자본 | amt=-49863860539 | add=nan
-  [SCE] id=dart_EquityAtBeginningOfPeriod | nm=기초자본 | amt=50707142500 | add=nan
-  [SCE] id=dart_EquityAtBeginningOfPeriod | nm=기초자본 | amt=-168637483 | add=nan
-  [SCE] id=dart_EquityAtBeginningOfPeriod | nm=기초자본 | amt=382547438123 | add=nan
-  [SCE] id=dart_EquityAtBeginningOfPeriod | nm=기초자본 | amt=0 | add=nan
-  [SCE] id=dart_EquityAtBeginningOfPeriod | nm=기초자본 | amt=382547438123 | add=nan
-  [SCE] id=dart_EquityAtBeginningOfPeriod | nm=기초자본 | amt=391598934045 | add=nan
-  [SCE] id=dart_OtherTransactions | nm=자본잉여금의 이익잉여금전입 | amt=0 | add=nan
-  [SCE] id=dart_OtherTransactions | nm=자본잉여금의 이익잉여금전입 | amt=0 | add=nan
-  [SCE] id=dart_OtherTransactions | nm=자본잉여금의 이익잉여금전입 | amt=0 | add=nan
-  [SCE] id=dart_OtherTransactions | nm=자본잉여금의 이익잉여금전입 | amt=0 | add=nan
-  [SCE] id=dart_OtherTransactions | nm=자본잉여금의 이익잉여금전입 | amt=0 | add=nan
-  [SCE] id=dart_OtherTransactions | nm=자본잉여금의 이익잉여금전입 | amt=0 | add=nan
-  [SCE] id=dart_OtherTransactions | nm=자본잉여금의 이익잉여금전입 | amt=0 | add=nan
-  [SCE] id=dart_OtherTransactions | nm=자본잉여금의 이익잉여금전입 | amt=0 | add=nan
-  [SCE] id=ifrs-full_Equity | nm=자본총계 | amt=50707142500 | add=nan
-  [SCE] id=ifrs-full_Equity | nm=자본총계 | amt=-167530894480 | add=nan
-  [SCE] id=ifrs-full_Equity | nm=자본총계 | amt=-11712118214 | add=nan
-  [SCE] id=ifrs-full_Equity | nm=자본총계 | amt=-168637483 | add=nan
-  [SCE] id=ifrs-full_Equity | nm=자본총계 | amt=262894426368 | add=nan
-  [SCE] id=ifrs-full_Equity | nm=자본총계 | amt=0 | add=nan
-  [SCE] id=ifrs-full_Equity | nm=자본총계 | amt=262894426368 | add=nan
-  [SCE] id=ifrs-full_Equity | nm=자본총계 | amt=391598934045 | add=nan
-  [SCE] id=ifrs-full_OtherComprehensiveIncomeNetOfTaxCashFlowHedges | nm=세후기타포괄손익, 현금흐름위험회피 | amt=0 | add=nan
-  [SCE] id=ifrs-full_OtherComprehensiveIncomeNetOfTaxCashFlowHedges | nm=세후기타포괄손익, 현금흐름위험회피 | amt=0 | add=nan
-  [SCE] id=ifrs-full_OtherComprehensiveIncomeNetOfTaxCashFlowHedges | nm=세후기타포괄손익, 현금흐름위험회피 | amt=-35345691910 | add=nan
-  [SCE] id=ifrs-full_OtherComprehensiveIncomeNetOfTaxCashFlowHedges | nm=세후기타포괄손익, 현금흐름위험회피 | amt=0 | add=nan
-  [SCE] id=ifrs-full_OtherComprehensiveIncomeNetOfTaxCashFlowHedges | nm=세후기타포괄손익, 현금흐름위험회피 | amt=-35345691910 | add=nan
-  [SCE] id=ifrs-full_OtherComprehensiveIncomeNetOfTaxCashFlowHedges | nm=세후기타포괄손익, 현금흐름위험회피 | amt=0 | add=nan
-  [SCE] id=ifrs-full_OtherComprehensiveIncomeNetOfTaxCashFlowHedges | nm=세후기타포괄손익, 현금흐름위험회피 | amt=-17969760292 | add=nan
-  [SCE] id=ifrs-full_OtherComprehensiveIncomeNetOfTaxCashFlowHedges | nm=세후기타포괄손익, 현금흐름위험회피 | amt=0 | add=nan
-  [SCE] id=ifrs-full_OtherComprehensiveIncomeNetOfTaxExchangeDifferencesOnTranslationOfForeignOperationsAndHedgesOfNetInvestmentsInForeignOperations | nm=세후 기타포괄손익, 해외사업장환산 외환차이와 해외사업장순투자 위험회피 | amt=0 | add=nan
-  [SCE] id=ifrs-full_OtherComprehensiveIncomeNetOfTaxExchangeDifferencesOnTranslationOfForeignOperationsAndHedgesOfNetInvestmentsInForeignOperations | nm=세후 기타포괄손익, 해외사업장환산 외환차이와 해외사업장순투자 위험회피 | amt=0 | add=nan
-  [SCE] id=ifrs-full_OtherComprehensiveIncomeNetOfTaxExchangeDifferencesOnTranslationOfForeignOperationsAndHedgesOfNetInvestmentsInForeignOperations | nm=세후 기타포괄손익, 해외사업장환산 외환차이와 해외사업장순투자 위험회피 | amt=15983782478 | add=nan
-  [SCE] id=ifrs-full_OtherComprehensiveIncomeNetOfTaxExchangeDifferencesOnTranslationOfForeignOperationsAndHedgesOfNetInvestmentsInForeignOperations | nm=세후 기타포괄손익, 해외사업장환산 외환차이와 해외사업장순투자 위험회피 | amt=0 | add=nan
-  [SCE] id=ifrs-full_OtherComprehensiveIncomeNetOfTaxExchangeDifferencesOnTranslationOfForeignOperationsAndHedgesOfNetInvestmentsInForeignOperations | nm=세후 기타포괄손익, 해외사업장환산 외환차이와 해외사업장순투자 위험회피 | amt=15983782478 | add=nan
-  [SCE] id=ifrs-full_OtherComprehensiveIncomeNetOfTaxExchangeDifferencesOnTranslationOfForeignOperationsAndHedgesOfNetInvestmentsInForeignOperations | nm=세후 기타포괄손익, 해외사업장환산 외환차이와 해외사업장순투자 위험회피 | amt=0 | add=nan
-  [SCE] id=ifrs-full_OtherComprehensiveIncomeNetOfTaxExchangeDifferencesOnTranslationOfForeignOperationsAndHedgesOfNetInvestmentsInForeignOperations | nm=세후 기타포괄손익, 해외사업장환산 외환차이와 해외사업장순투자 위험회피 | amt=15983782478 | add=nan
-  [SCE] id=ifrs-full_OtherComprehensiveIncomeNetOfTaxExchangeDifferencesOnTranslationOfForeignOperationsAndHedgesOfNetInvestmentsInForeignOperations | nm=세후 기타포괄손익, 해외사업장환산 외환차이와 해외사업장순투자 위험회피 | amt=0 | add=nan
-  [SCE] id=ifrs-full_ProfitLoss | nm=당기순이익(손실) | amt=-99412462641 | add=nan
-  [SCE] id=ifrs-full_ProfitLoss | nm=당기순이익(손실) | amt=0 | add=nan
-  [SCE] id=ifrs-full_ProfitLoss | nm=당기순이익(손실) | amt=0 | add=nan
-  [SCE] id=ifrs-full_ProfitLoss | nm=당기순이익(손실) | amt=0 | add=nan
-  [SCE] id=ifrs-full_ProfitLoss | nm=당기순이익(손실) | amt=-99412462641 | add=nan
-  [SCE] id=ifrs-full_ProfitLoss | nm=당기순이익(손실) | amt=0 | add=nan
-  [SCE] id=ifrs-full_ProfitLoss | nm=당기순이익(손실) | amt=0 | add=nan
-  [SCE] id=ifrs-full_ProfitLoss | nm=당기순이익(손실) | amt=-99412462641 | add=nan
-  [SCE] id=ifrs-full_ReclassificationAdjustmentsOnCashFlowHedgesNetOfTax | nm=세후기타포괄손익, 현금흐름위험회피의 재분류조정 | amt=17375931618 | add=nan
-  [SCE] id=ifrs-full_ReclassificationAdjustmentsOnCashFlowHedgesNetOfTax | nm=세후기타포괄손익, 현금흐름위험회피의 재분류조정 | amt=0 | add=nan
-  [SCE] id=ifrs-full_ReclassificationAdjustmentsOnCashFlowHedgesNetOfTax | nm=세후기타포괄손익, 현금흐름위험회피의 재분류조정 | amt=0 | add=nan
-  [SCE] id=ifrs-full_ReclassificationAdjustmentsOnCashFlowHedgesNetOfTax | nm=세후기타포괄손익, 현금흐름위험회피의 재분류조정 | amt=17375931618 | add=nan
-  [SCE] id=ifrs-full_ReclassificationAdjustmentsOnCashFlowHedgesNetOfTax | nm=세후기타포괄손익, 현금흐름위험회피의 재분류조정 | amt=0 | add=nan
-  [SCE] id=ifrs-full_ReclassificationAdjustmentsOnCashFlowHedgesNetOfTax | nm=세후기타포괄손익, 현금흐름위험회피의 재분류조정 | amt=17375931618 | add=nan
-  [SCE] id=ifrs-full_ReclassificationAdjustmentsOnCashFlowHedgesNetOfTax | nm=세후기타포괄손익, 현금흐름위험회피의 재분류조정 | amt=0 | add=nan
-  [SCE] id=ifrs-full_ReclassificationAdjustmentsOnCashFlowHedgesNetOfTax | nm=세후기타포괄손익, 현금흐름위험회피의 재분류조정 | amt=0 | add=nan
+  [BS] id=ifrs-full_Assets | nm=자산총계 | amt=566942110000000 | add=nan
+  [BS] id=ifrs-full_CurrentFinancialAssetsAtFairValueThroughProfitOrLoss | nm=단기당기손익-공정가치금융자산 | amt=25715000000 | add=nan
+  [BS] id=ifrs-full_CurrentPrepaidExpenses | nm=선급비용 | amt=3627172000000 | add=nan
+  [BS] id=ifrs-full_CurrentTradeReceivables | nm=매출채권 | amt=51127642000000 | add=nan
+  [BS] id=ifrs-full_NoncurrentFinancialAssetsAtFairValueThroughProfitOrLoss | nm=당기손익-공정가치금융자산 | amt=1280501000000 | add=nan
+  [BS] id=ifrs-full_NoncurrentInvestmentsInEquityInstrumentsDesignatedAtFairValueThroughOtherComprehensiveIncome | nm=기타포괄손익-공정가치금융자산 | amt=16295005000000 | add=nan
+  [BS] id=ifrs-full_Equity | nm=자본총계 | amt=436320337000000 | add=nan
+  [BS] id=ifrs-full_EquityAttributableToOwnersOfParent | nm=지배기업 소유주지분 | amt=424313255000000 | add=nan
+  [BS] id=dart_ElementsOfOtherStockholdersEquity | nm=기타자본항목 | amt=16876248000000 | add=nan
+  [BS] id=ifrs-full_IssuedCapital | nm=자본금 | amt=897514000000 | add=nan
+  [BS] id=dart_IssuedCapitalOfCommonStock | nm=보통주자본금 | amt=778047000000 | add=nan
+  [BS] id=dart_IssuedCapitalOfPreferredStock | nm=우선주자본금 | amt=119467000000 | add=nan
+  [BS] id=ifrs-full_RetainedEarnings | nm=이익잉여금 | amt=402135600000000 | add=nan
+  [BS] id=ifrs-full_NoncontrollingInterests | nm=비지배지분 | amt=12007082000000 | add=nan
+  [BS] id=ifrs-full_EquityAndLiabilities | nm=부채와자본총계 | amt=566942110000000 | add=nan
+  [BS] id=ifrs-full_AccrualsClassifiedAsCurrent | nm=미지급비용 | amt=32707431000000 | add=nan
+  [BS] id=ifrs-full_Liabilities | nm=부채총계 | amt=130621773000000 | add=nan
+  [IS] id=dart_OperatingIncomeLoss | nm=영업이익 | amt=43601051000000 | add=
+  [IS] id=dart_OtherGains | nm=기타수익 | amt=2267083000000 | add=
+  [IS] id=dart_OtherLosses | nm=기타비용 | amt=1575901000000 | add=
+  [IS] id=ifrs-full_CostOfSales | nm=매출원가 | amt=202235513000000 | add=
+  [IS] id=ifrs-full_BasicEarningsLossPerShare | nm=기본주당이익 | amt=6605 | add=
+  [IS] id=ifrs-full_DilutedEarningsLossPerShare | nm=희석주당이익 | amt=6603 | add=
+  [IS] id=ifrs-full_FinanceCosts | nm=금융비용 | amt=11733764000000 | add=
+  [IS] id=ifrs-full_FinanceIncome | nm=금융수익 | amt=16240302000000 | add=
+  [IS] id=ifrs-full_GrossProfit | nm=매출총이익 | amt=131370425000000 | add=
+  [IS] id=ifrs-full_IncomeTaxExpenseContinuingOperations | nm=법인세비용(수익) | amt=4274666000000 | add=
+  [IS] id=ifrs-full_ProfitLoss | nm=당기순이익 | amt=45206805000000 | add=
+  [IS] id=ifrs-full_ProfitLossAttributableToNoncontrollingInterests | nm=비지배지분 | amt=945849000000 | add=
+  [IS] id=ifrs-full_ProfitLossAttributableToOwnersOfParent | nm=지배기업 소유주지분 | amt=44260956000000 | add=
+  [IS] id=ifrs-full_ProfitLossBeforeTax | nm=법인세비용차감전순이익 | amt=49481471000000 | add=
+  [IS] id=ifrs-full_Revenue | nm=매출액 | amt=333605938000000 | add=
+  [IS] id=ifrs-full_ShareOfProfitLossOfAssociatesAndJointVenturesAccountedForUsingEquityMethod | nm=지분법이익 | amt=682700000000 | add=
+  [CIS] id=ifrs-full_ComprehensiveIncome | nm=총포괄손익 | amt=51290524000000 | add=
+  [CIS] id=ifrs-full_ComprehensiveIncomeAttributableToNoncontrollingInterests | nm=비지배지분 | amt=1386561000000 | add=
+  [CIS] id=ifrs-full_ComprehensiveIncomeAttributableToOwnersOfParent | nm=지배기업 소유주지분 | amt=49903963000000 | add=
+  [CIS] id=ifrs-full_OtherComprehensiveIncome | nm=연결기타포괄손익 | amt=6083719000000 | add=
+  [CIS] id=ifrs-full_OtherComprehensiveIncomeThatWillBeReclassifiedToProfitOrLossNetOfTax | nm=후속적으로 당기손익으로 재분류되는 포괄손익 | amt=1205886000000 | add=
+  [CIS] id=ifrs-full_GainsLossesOnCashFlowHedgesNetOfTax | nm=현금흐름위험회피파생상품평가손익 | amt=1706000000 | add=
+  [CIS] id=ifrs-full_ShareOfOtherComprehensiveIncomeOfAssociatesAndJointVenturesAccountedForUsingEquityMethodThatWillBeReclassifiedToProfitOrLossNetOfTax | nm=관계기업 및 공동기업의 기타포괄손익에 대한 지분 | amt=244161000000 | add=
+  [CIS] id=ifrs-full_OtherComprehensiveIncomeThatWillNotBeReclassifiedToProfitOrLossNetOfTax | nm=후속적으로 당기손익으로 재분류되지 않는 포괄손익 | amt=4877833000000 | add=
+  [CIS] id=ifrs-full_OtherComprehensiveIncomeNetOfTaxGainsLossesFromInvestmentsInEquityInstruments | nm=기타포괄손익-공정가치금융자산평가손익 | amt=4678338000000 | add=
+  [CIS] id=ifrs-full_ShareOfOtherComprehensiveIncomeOfAssociatesAndJointVenturesAccountedForUsingEquityMethodThatWillNotBeReclassifiedToProfitOrLossNetOfTax | nm=관계기업 및 공동기업의 기타포괄손익에 대한 지분 | amt=92804000000 | add=
+  [CIS] id=ifrs-full_ProfitLoss | nm=당기순이익 | amt=45206805000000 | add=
+  [CF] id=dart_DecreaseInNoncontrollingInterests | nm=비지배지분의 증감 | amt=973000000 | add=nan
+  [CF] id=dart_ProceedsFromSalesOfFairValueFinancialAsset | nm=당기손익-공정가치금융자산의 처분 | amt=142584000000 | add=nan
+  [CF] id=dart_ProceedsFromSalesOfFinancialAssetsAtFairValueThroughOtherComprehensiveIncome | nm=기타포괄손익-공정가치금융자산의 처분 | amt=851834000000 | add=nan
+  [CF] id=dart_PurchaseOfFairValueFinancialAsset | nm=당기손익-공정가치금융자산의 취득 | amt=146774000000 | add=nan
+  [CF] id=dart_PurchaseOfFinancialAssetsAtFairValueThroughOtherComprehensiveIncome | nm=기타포괄손익-공정가치금융자산의 취득 | amt=129636000000 | add=nan
+  [CF] id=-표준계정코드 미사용- | nm=단기당기손익-공정가치금융자산의 순감소(증가) | amt=11163000000 | add=nan
+  [CF] id=ifrs-full_CashFlowsFromUsedInOperatingActivities | nm=영업활동현금흐름 | amt=85315148000000 | add=nan
+  [CF] id=ifrs-full_CashFlowsFromUsedInOperations | nm=영업에서 창출된 현금흐름 | amt=87988515000000 | add=nan
+  [CF] id=dart_AdjustmentsForAssetsLiabilitiesOfOperatingActivities | nm=영업활동으로 인한 자산부채의 변동 | amt=-9613906000000 | add=nan
+  [CF] id=ifrs-full_ProfitLoss | nm=당기순이익 | amt=45206805000000 | add=nan
+  [SCE] id=dart_EquityAtBeginningOfPeriod | nm=기초자본 | amt=897514000000 | add=nan
+  [SCE] id=dart_EquityAtBeginningOfPeriod | nm=기초자본 | amt=370513188000000 | add=nan
+  [SCE] id=dart_EquityAtBeginningOfPeriod | nm=기초자본 | amt=15873008000000 | add=nan
+  [SCE] id=dart_EquityAtBeginningOfPeriod | nm=기초자본 | amt=391687603000000 | add=nan
+  [SCE] id=dart_EquityAtBeginningOfPeriod | nm=기초자본 | amt=10504467000000 | add=nan
+  [SCE] id=dart_EquityAtBeginningOfPeriod | nm=기초자본 | amt=402192070000000 | add=nan
+  [SCE] id=dart_EquityAtBeginningOfPeriod | nm=기초자본 | amt=4403893000000 | add=nan
+  [SCE] id=dart_IntercompanyAcquisition | nm=연결실체내 자본거래 등 | amt=-973000000 | add=nan
+  [SCE] id=dart_IntercompanyAcquisition | nm=연결실체내 자본거래 등 | amt=-973000000 | add=nan
+  [SCE] id=dart_IntercompanyAcquisition | nm=연결실체내 자본거래 등 | amt=0 | add=nan
+  [SCE] id=dart_IntercompanyAcquisition | nm=연결실체내 자본거래 등 | amt=0 | add=nan
+  [SCE] id=dart_IntercompanyAcquisition | nm=연결실체내 자본거래 등 | amt=0 | add=nan
+  [SCE] id=dart_IntercompanyAcquisition | nm=연결실체내 자본거래 등 | amt=0 | add=nan
+  [SCE] id=dart_IntercompanyAcquisition | nm=연결실체내 자본거래 등 | amt=0 | add=nan
+  [SCE] id=ifrs-full_Equity | nm=자본총계 | amt=897514000000 | add=nan
+  [SCE] id=ifrs-full_Equity | nm=자본총계 | amt=402135600000000 | add=nan
+  [SCE] id=ifrs-full_Equity | nm=자본총계 | amt=16876248000000 | add=nan
+  [SCE] id=ifrs-full_Equity | nm=자본총계 | amt=424313255000000 | add=nan
+  [SCE] id=ifrs-full_Equity | nm=자본총계 | amt=12007082000000 | add=nan
+  [SCE] id=ifrs-full_Equity | nm=자본총계 | amt=436320337000000 | add=nan
+  [SCE] id=ifrs-full_Equity | nm=자본총계 | amt=4403893000000 | add=nan
+  [SCE] id=ifrs-full_GainsLossesOnCashFlowHedgesNetOfTax | nm=현금흐름위험회피파생상품평가손익 | amt=0 | add=nan
+  [SCE] id=ifrs-full_GainsLossesOnCashFlowHedgesNetOfTax | nm=현금흐름위험회피파생상품평가손익 | amt=0 | add=nan
+  [SCE] id=ifrs-full_GainsLossesOnCashFlowHedgesNetOfTax | nm=현금흐름위험회피파생상품평가손익 | amt=1706000000 | add=nan
+  [SCE] id=ifrs-full_GainsLossesOnCashFlowHedgesNetOfTax | nm=현금흐름위험회피파생상품평가손익 | amt=1706000000 | add=nan
+  [SCE] id=ifrs-full_GainsLossesOnCashFlowHedgesNetOfTax | nm=현금흐름위험회피파생상품평가손익 | amt=0 | add=nan
+  [SCE] id=ifrs-full_GainsLossesOnCashFlowHedgesNetOfTax | nm=현금흐름위험회피파생상품평가손익 | amt=1706000000 | add=nan
+  [SCE] id=ifrs-full_GainsLossesOnCashFlowHedgesNetOfTax | nm=현금흐름위험회피파생상품평가손익 | amt=0 | add=nan
+  [SCE] id=ifrs-full_OtherComprehensiveIncomeNetOfTaxGainsLossesFromInvestmentsInEquityInstruments | nm=기타포괄손익-공정가치금융자산평가손익 | amt=4213173000000 | add=nan
+  [SCE] id=ifrs-full_OtherComprehensiveIncomeNetOfTaxGainsLossesFromInvestmentsInEquityInstruments | nm=기타포괄손익-공정가치금융자산평가손익 | amt=465165000000 | add=nan
+  [SCE] id=ifrs-full_OtherComprehensiveIncomeNetOfTaxGainsLossesFromInvestmentsInEquityInstruments | nm=기타포괄손익-공정가치금융자산평가손익 | amt=4678338000000 | add=nan
+  [SCE] id=ifrs-full_OtherComprehensiveIncomeNetOfTaxGainsLossesFromInvestmentsInEquityInstruments | nm=기타포괄손익-공정가치금융자산평가손익 | amt=3993948000000 | add=nan
+  [SCE] id=ifrs-full_OtherComprehensiveIncomeNetOfTaxGainsLossesFromInvestmentsInEquityInstruments | nm=기타포괄손익-공정가치금융자산평가손익 | amt=219225000000 | add=nan
+  [SCE] id=ifrs-full_OtherComprehensiveIncomeNetOfTaxGainsLossesFromInvestmentsInEquityInstruments | nm=기타포괄손익-공정가치금융자산평가손익 | amt=0 | add=nan
+  [SCE] id=ifrs-full_OtherComprehensiveIncomeNetOfTaxGainsLossesFromInvestmentsInEquityInstruments | nm=기타포괄손익-공정가치금융자산평가손익 | amt=0 | add=nan
+  [SCE] id=ifrs-full_ProfitLoss | nm=당기순이익 | amt=44260956000000 | add=nan
+  [SCE] id=ifrs-full_ProfitLoss | nm=당기순이익 | amt=945849000000 | add=nan
+  [SCE] id=ifrs-full_ProfitLoss | nm=당기순이익 | amt=45206805000000 | add=nan
+  [SCE] id=ifrs-full_ProfitLoss | nm=당기순이익 | amt=0 | add=nan
+  [SCE] id=ifrs-full_ProfitLoss | nm=당기순이익 | amt=0 | add=nan
+  [SCE] id=ifrs-full_ProfitLoss | nm=당기순이익 | amt=0 | add=nan
+  [SCE] id=ifrs-full_ProfitLoss | nm=당기순이익 | amt=44260956000000 | add=nan
+  [SCE] id=ifrs-full_ShareOfOtherComprehensiveIncomeOfAssociatesAndJointVenturesAccountedForUsingEquityMethod | nm=관계기업 및 공동기업의 기타포괄손익에 대한 지분 | amt=336965000000 | add=nan
+  [SCE] id=ifrs-full_ShareOfOtherComprehensiveIncomeOfAssociatesAndJointVenturesAccountedForUsingEquityMethod | nm=관계기업 및 공동기업의 기타포괄손익에 대한 지분 | amt=713000000 | add=nan
+  [SCE] id=ifrs-full_ShareOfOtherComprehensiveIncomeOfAssociatesAndJointVenturesAccountedForUsingEquityMethod | nm=관계기업 및 공동기업의 기타포괄손익에 대한 지분 | amt=336252000000 | add=nan
+  [SCE] id=ifrs-full_ShareOfOtherComprehensiveIncomeOfAssociatesAndJointVenturesAccountedForUsingEquityMethod | nm=관계기업 및 공동기업의 기타포괄손익에 대한 지분 | amt=0 | add=nan
+  [SCE] id=ifrs-full_ShareOfOtherComprehensiveIncomeOfAssociatesAndJointVenturesAccountedForUsingEquityMethod | nm=관계기업 및 공동기업의 기타포괄손익에 대한 지분 | amt=0 | add=nan
+  [SCE] id=ifrs-full_ShareOfOtherComprehensiveIncomeOfAssociatesAndJointVenturesAccountedForUsingEquityMethod | nm=관계기업 및 공동기업의 기타포괄손익에 대한 지분 | amt=336252000000 | add=nan
+  [SCE] id=ifrs-full_ShareOfOtherComprehensiveIncomeOfAssociatesAndJointVenturesAccountedForUsingEquityMethod | nm=관계기업 및 공동기업의 기타포괄손익에 대한 지분 | amt=0 | add=nan
 
 [OFS] 핵심계정:
-  [BS] id=ifrs-full_Assets | nm=자산총계 | amt=444316685965 | add=nan
-  [BS] id=dart_CurrentNontradeReceivables | nm=매출채권 외의 유동채권 | amt=138659413 | add=nan
-  [BS] id=dart_CapitalSurplus | nm=자본잉여금 | amt=391598934045 | add=nan
-  [BS] id=ifrs-full_Equity | nm=자본총계 | amt=269221998923 | add=nan
-  [BS] id=ifrs-full_IssuedCapital | nm=자본금 | amt=50707142500 | add=nan
-  [BS] id=ifrs-full_RetainedEarnings | nm=이익잉여금 | amt=-173084077622 | add=nan
-  [BS] id=ifrs-full_EquityAndLiabilities | nm=자본과부채총계 | amt=444316685965 | add=nan
-  [BS] id=ifrs-full_Liabilities | nm=부채총계 | amt=175094687042 | add=nan
-  [CIS] id=dart_NonOperatingProfitLoss | nm=영업외손익 | amt=-3154844264 | add=
-  [CIS] id=dart_OtherGains | nm=기타이익 | amt=1998084 | add=
-  [CIS] id=ifrs-full_FinanceIncome | nm=금융수익 | amt=399271888 | add=
-  [CIS] id=dart_OperatingIncomeLoss | nm=영업이익(손실) | amt=-172649340574 | add=
-  [CIS] id=ifrs-full_ComprehensiveIncome | nm=포괄손익 | amt=-175804184838 | add=
-  [CIS] id=ifrs-full_BasicEarningsLossPerShare | nm=기본주당이익(손실) | amt=-1734 | add=
-  [CIS] id=ifrs-full_IncomeTaxExpenseContinuingOperations | nm=법인세비용(수익) | amt=0 | add=
-  [CIS] id=ifrs-full_OperatingExpense | nm=영업비용 | amt=190112381518 | add=
-  [CIS] id=ifrs-full_OtherComprehensiveIncome | nm=기타포괄손익 | amt=0 | add=
-  [CIS] id=ifrs-full_ProfitLoss | nm=당기순이익(손실) | amt=-175804184838 | add=
-  [CIS] id=ifrs-full_ProfitLossBeforeTax | nm=법인세비용차감전순이익(손실) | amt=-175804184838 | add=
-  [CIS] id=ifrs-full_Revenue | nm=수익(매출액) | amt=17463040944 | add=
-  [CF] id=ifrs-full_CashFlowsFromUsedInOperatingActivities | nm=영업활동현금흐름 | amt=14930708258 | add=nan
-  [CF] id=ifrs-full_CashFlowsFromUsedInOperations | nm=영업에서 창출된 현금흐름 | amt=16954904137 | add=nan
-  [CF] id=ifrs-full_InterestPaidClassifiedAsOperatingActivities | nm=이자지급(영업) | amt=2389204302 | add=nan
-  [CF] id=ifrs-full_InterestReceivedClassifiedAsOperatingActivities | nm=영업활동으로 분류된 이자수취 | amt=285353443 | add=nan
-  [SCE] id=dart_EquityAtBeginningOfPeriod | nm=기초자본 | amt=20974678516 | add=nan
-  [SCE] id=dart_EquityAtBeginningOfPeriod | nm=기초자본 | amt=463280755061 | add=nan
-  [SCE] id=dart_EquityAtBeginningOfPeriod | nm=기초자본 | amt=50707142500 | add=nan
-  [SCE] id=dart_EquityAtBeginningOfPeriod | nm=기초자본 | amt=391598934045 | add=nan
-  [SCE] id=dart_OtherTransactions | nm=자본잉여금의 이익잉여금전입 | amt=0 | add=nan
-  [SCE] id=dart_OtherTransactions | nm=자본잉여금의 이익잉여금전입 | amt=0 | add=nan
-  [SCE] id=dart_OtherTransactions | nm=자본잉여금의 이익잉여금전입 | amt=0 | add=nan
-  [SCE] id=dart_OtherTransactions | nm=자본잉여금의 이익잉여금전입 | amt=0 | add=nan
-  [SCE] id=ifrs-full_Equity | nm=자본총계 | amt=269221998923 | add=nan
-  [SCE] id=ifrs-full_Equity | nm=자본총계 | amt=-173084077622 | add=nan
-  [SCE] id=ifrs-full_Equity | nm=자본총계 | amt=50707142500 | add=nan
-  [SCE] id=ifrs-full_Equity | nm=자본총계 | amt=391598934045 | add=nan
-  [SCE] id=ifrs-full_ProfitLoss | nm=당기순이익(손실) | amt=-175804184838 | add=nan
-  [SCE] id=ifrs-full_ProfitLoss | nm=당기순이익(손실) | amt=-175804184838 | add=nan
-  [SCE] id=ifrs-full_ProfitLoss | nm=당기순이익(손실) | amt=0 | add=nan
-  [SCE] id=ifrs-full_ProfitLoss | nm=당기순이익(손실) | amt=0 | add=nan
+  [BS] id=ifrs-full_Assets | nm=자산총계 | amt=358902051000000 | add=nan
+  [BS] id=ifrs-full_CurrentPrepaidExpenses | nm=선급비용 | amt=1474647000000 | add=nan
+  [BS] id=ifrs-full_CurrentTradeReceivables | nm=매출채권 | amt=42081734000000 | add=nan
+  [BS] id=ifrs-full_NoncurrentFinancialAssetsAtFairValueThroughProfitOrLoss | nm=당기손익-공정가치금융자산 | amt=0 | add=nan
+  [BS] id=ifrs-full_NoncurrentInvestmentsInEquityInstrumentsDesignatedAtFairValueThroughOtherComprehensiveIncome | nm=기타포괄손익-공정가치금융자산 | amt=4248587000000 | add=nan
+  [BS] id=dart_ElementsOfOtherStockholdersEquity | nm=기타자본항목 | amt=-5538154000000 | add=nan
+  [BS] id=ifrs-full_Equity | nm=자본총계 | amt=254330083000000 | add=nan
+  [BS] id=ifrs-full_IssuedCapital | nm=자본금 | amt=897514000000 | add=nan
+  [BS] id=dart_IssuedCapitalOfCommonStock | nm=보통주자본금 | amt=778047000000 | add=nan
+  [BS] id=dart_IssuedCapitalOfPreferredStock | nm=우선주자본금 | amt=119467000000 | add=nan
+  [BS] id=ifrs-full_RetainedEarnings | nm=이익잉여금 | amt=254566830000000 | add=nan
+  [BS] id=ifrs-full_EquityAndLiabilities | nm=부채와자본총계 | amt=358902051000000 | add=nan
+  [BS] id=ifrs-full_AccrualsClassifiedAsCurrent | nm=미지급비용 | amt=11031657000000 | add=nan
+  [BS] id=ifrs-full_Liabilities | nm=부채총계 | amt=104571968000000 | add=nan
+  [IS] id=dart_OperatingIncomeLoss | nm=영업이익 | amt=23603619000000 | add=
+  [IS] id=dart_OtherGains | nm=기타수익 | amt=9815254000000 | add=
+  [IS] id=dart_OtherLosses | nm=기타비용 | amt=247096000000 | add=
+  [IS] id=ifrs-full_CostOfSales | nm=매출원가 | amt=165994290000000 | add=
+  [IS] id=ifrs-full_BasicEarningsLossPerShare | nm=기본주당이익 | amt=5027 | add=
+  [IS] id=ifrs-full_DilutedEarningsLossPerShare | nm=희석주당이익 | amt=5026 | add=
+  [IS] id=ifrs-full_FinanceCosts | nm=금융비용 | amt=7181098000000 | add=
+  [IS] id=ifrs-full_FinanceIncome | nm=금융수익 | amt=7445403000000 | add=
+  [IS] id=ifrs-full_GrossProfit | nm=매출총이익 | amt=72048719000000 | add=
+  [IS] id=ifrs-full_IncomeTaxExpenseContinuingOperations | nm=법인세비용(수익) | amt=-250519000000 | add=
+  [IS] id=ifrs-full_ProfitLoss | nm=당기순이익 | amt=33686601000000 | add=
+  [IS] id=ifrs-full_ProfitLossBeforeTax | nm=법인세비용차감전순이익 | amt=33436082000000 | add=
+  [IS] id=ifrs-full_Revenue | nm=매출액 | amt=238043009000000 | add=
+  [CIS] id=ifrs-full_ComprehensiveIncome | nm=총포괄손익 | amt=35219970000000 | add=
+  [CIS] id=ifrs-full_OtherComprehensiveIncome | nm=연결기타포괄손익 | amt=1533369000000 | add=
+  [CIS] id=ifrs-full_OtherComprehensiveIncomeThatWillBeReclassifiedToProfitOrLossNetOfTax | nm=후속적으로 당기손익으로 재분류되는 포괄손익 | amt=0 | add=
+  [CIS] id=ifrs-full_OtherComprehensiveIncomeThatWillNotBeReclassifiedToProfitOrLossNetOfTax | nm=후속적으로 당기손익으로 재분류되지 않는 포괄손익 | amt=1533369000000 | add=
+  [CIS] id=ifrs-full_OtherComprehensiveIncomeNetOfTaxGainsLossesFromInvestmentsInEquityInstruments | nm=기타포괄손익-공정가치금융자산평가손익 | amt=1545804000000 | add=
+  [CIS] id=ifrs-full_ProfitLoss | nm=당기순이익 | amt=33686601000000 | add=
+  [CF] id=dart_ProceedsFromSalesOfFairValueFinancialAsset | nm=당기손익-공정가치금융자산의 처분 | amt=0 | add=nan
+  [CF] id=dart_ProceedsFromSalesOfFinancialAssetsAtFairValueThroughOtherComprehensiveIncome | nm=기타포괄손익-공정가치금융자산의 처분 | amt=26604000000 | add=nan
+  [CF] id=dart_PurchaseOfFinancialAssetsAtFairValueThroughOtherComprehensiveIncome | nm=기타포괄손익-공정가치금융자산의 취득 | amt=0 | add=nan
+  [CF] id=ifrs-full_CashFlowsFromUsedInOperatingActivities | nm=영업활동현금흐름 | amt=68733956000000 | add=nan
+  [CF] id=ifrs-full_CashFlowsFromUsedInOperations | nm=영업에서 창출된 현금흐름 | amt=62631899000000 | add=nan
+  [CF] id=dart_AdjustmentsForAssetsLiabilitiesOfOperatingActivities | nm=영업활동으로 인한 자산부채의 변동 | amt=-4707300000000 | add=nan
+  [CF] id=ifrs-full_ProfitLoss | nm=당기순이익 | amt=33686601000000 | add=nan
+  [SCE] id=dart_EquityAtBeginningOfPeriod | nm=기초자본 | amt=897514000000 | add=nan
+  [SCE] id=dart_EquityAtBeginningOfPeriod | nm=기초자본 | amt=233734316000000 | add=nan
+  [SCE] id=dart_EquityAtBeginningOfPeriod | nm=기초자본 | amt=236396657000000 | add=nan
+  [SCE] id=dart_EquityAtBeginningOfPeriod | nm=기초자본 | amt=-2639066000000 | add=nan
+  [SCE] id=dart_EquityAtBeginningOfPeriod | nm=기초자본 | amt=4403893000000 | add=nan
+  [SCE] id=ifrs-full_Equity | nm=자본총계 | amt=254330083000000 | add=nan
+  [SCE] id=ifrs-full_Equity | nm=자본총계 | amt=-5538154000000 | add=nan
+  [SCE] id=ifrs-full_Equity | nm=자본총계 | amt=254566830000000 | add=nan
+  [SCE] id=ifrs-full_Equity | nm=자본총계 | amt=897514000000 | add=nan
+  [SCE] id=ifrs-full_Equity | nm=자본총계 | amt=4403893000000 | add=nan
+  [SCE] id=ifrs-full_OtherComprehensiveIncomeNetOfTaxGainsLossesFromInvestmentsInEquityInstruments | nm=기타포괄손익-공정가치금융자산평가손익 | amt=0 | add=nan
+  [SCE] id=ifrs-full_OtherComprehensiveIncomeNetOfTaxGainsLossesFromInvestmentsInEquityInstruments | nm=기타포괄손익-공정가치금융자산평가손익 | amt=3682000000 | add=nan
+  [SCE] id=ifrs-full_OtherComprehensiveIncomeNetOfTaxGainsLossesFromInvestmentsInEquityInstruments | nm=기타포괄손익-공정가치금융자산평가손익 | amt=1542122000000 | add=nan
+  [SCE] id=ifrs-full_OtherComprehensiveIncomeNetOfTaxGainsLossesFromInvestmentsInEquityInstruments | nm=기타포괄손익-공정가치금융자산평가손익 | amt=1545804000000 | add=nan
+  [SCE] id=ifrs-full_OtherComprehensiveIncomeNetOfTaxGainsLossesFromInvestmentsInEquityInstruments | nm=기타포괄손익-공정가치금융자산평가손익 | amt=0 | add=nan
+  [SCE] id=ifrs-full_ProfitLoss | nm=당기순이익 | amt=33686601000000 | add=nan
+  [SCE] id=ifrs-full_ProfitLoss | nm=당기순이익 | amt=0 | add=nan
+  [SCE] id=ifrs-full_ProfitLoss | nm=당기순이익 | amt=33686601000000 | add=nan
+  [SCE] id=ifrs-full_ProfitLoss | nm=당기순이익 | amt=0 | add=nan
+  [SCE] id=ifrs-full_ProfitLoss | nm=당기순이익 | amt=0 | add=nan
 
 [배당 공시 행]
-  2025 se=주당액면가액(원) knd=- thstrm=500 frmtrm=500
-  2025 se=주당액면가액(원) knd=- thstrm=500 frmtrm=500
-  2025 se=(연결)주당순이익(원) knd=- thstrm=187 frmtrm=-313
-  2025 se=(연결)주당순이익(원) knd=- thstrm=-980 frmtrm=187
-  2025 se=현금배당금총액(백만원) knd=- thstrm=18,254 frmtrm=19,066
-  2025 se=현금배당금총액(백만원) knd=- thstrm=17,240 frmtrm=18,254
+  2025 se=주당액면가액(원) knd=- thstrm=100 frmtrm=100
+  2025 se=(연결)주당순이익(원) knd=- thstrm=6,605 frmtrm=4,950
+  2025 se=현금배당금총액(백만원) knd=- thstrm=11,107,906 frmtrm=9,810,767
   2025 se=주식배당금총액(백만원) knd=- thstrm=- frmtrm=-
-  2025 se=주식배당금총액(백만원) knd=- thstrm=- frmtrm=-
-  2025 se=(연결)현금배당성향(%) knd=- thstrm=96.26 frmtrm=-59.97
-  2025 se=(연결)현금배당성향(%) knd=- thstrm=-17.34 frmtrm=96.26
-  2025 se=현금배당수익률(%) knd=보통주 thstrm=5.10 frmtrm=4.10
-  2025 se=현금배당수익률(%) knd=우선주 thstrm=- frmtrm=-
+  2025 se=(연결)현금배당성향(%) knd=- thstrm=25.10 frmtrm=29.20
+  2025 se=현금배당수익률(%) knd=보통주 thstrm=1.50 frmtrm=2.70
+  2025 se=현금배당수익률(%) knd=우선주 thstrm=1.90 frmtrm=3.30
   2025 se=주식배당수익률(%) knd=보통주 thstrm=- frmtrm=-
   2025 se=주식배당수익률(%) knd=우선주 thstrm=- frmtrm=-
-  2025 se=주당현금배당금(원) knd=보통주 thstrm=180 frmtrm=188
-  2025 se=주당현금배당금(원) knd=우선주 thstrm=- frmtrm=-
+  2025 se=주당현금배당금(원) knd=보통주 thstrm=1,668 frmtrm=1,446
+  2025 se=주당현금배당금(원) knd=우선주 thstrm=1,669 frmtrm=1,447
   2025 se=주당주식배당(주) knd=보통주 thstrm=- frmtrm=-
   2025 se=주당주식배당(주) knd=우선주 thstrm=- frmtrm=-
-  2025 se=현금배당수익률(%) knd=보통주 thstrm=4.20 frmtrm=5.10
-  2025 se=현금배당수익률(%) knd=우선주 thstrm=- frmtrm=-
-  2025 se=주식배당수익률(%) knd=보통주 thstrm=- frmtrm=-
-  2025 se=주식배당수익률(%) knd=우선주 thstrm=- frmtrm=-
-  2025 se=주당현금배당금(원) knd=보통주 thstrm=170 frmtrm=180
-  2025 se=주당현금배당금(원) knd=우선주 thstrm=- frmtrm=-
-  2025 se=주당주식배당(주) knd=보통주 thstrm=- frmtrm=-
-  2025 se=주당주식배당(주) knd=우선주 thstrm=- frmtrm=-
-  2024 se=주당액면가액(원) knd=- thstrm=500 frmtrm=500
-  2024 se=주당액면가액(원) knd=- thstrm=500 frmtrm=500
-  2024 se=(연결)주당순이익(원) knd=- thstrm=503 frmtrm=-546
-  2024 se=(연결)주당순이익(원) knd=- thstrm=-313 frmtrm=503
-  2024 se=현금배당금총액(백만원) knd=- thstrm=19,066 frmtrm=19,066
-  2024 se=현금배당금총액(백만원) knd=- thstrm=19,066 frmtrm=19,066
+  2024 se=주당액면가액(원) knd=- thstrm=100 frmtrm=100
+  2024 se=(연결)주당순이익(원) knd=- thstrm=4,950 frmtrm=2,131
+  2024 se=현금배당금총액(백만원) knd=- thstrm=9,810,767 frmtrm=9,809,438
   2024 se=주식배당금총액(백만원) knd=- thstrm=- frmtrm=-
-  2024 se=주식배당금총액(백만원) knd=- thstrm=- frmtrm=-
-  2024 se=(연결)현금배당성향(%) knd=- thstrm=34.87 frmtrm=-34.42
-  2024 se=(연결)현금배당성향(%) knd=- thstrm=-59.97 frmtrm=37.34
-  2024 se=현금배당수익률(%) knd=보통주 thstrm=4.60 frmtrm=4.50
-  2024 se=현금배당수익률(%) knd=우선주 thstrm=- frmtrm=-
+  2024 se=(연결)현금배당성향(%) knd=- thstrm=29.20 frmtrm=67.80
+  2024 se=현금배당수익률(%) knd=보통주 thstrm=2.70 frmtrm=1.90
+  2024 se=현금배당수익률(%) knd=우선주 thstrm=3.30 frmtrm=2.40
   2024 se=주식배당수익률(%) knd=보통주 thstrm=- frmtrm=-
   2024 se=주식배당수익률(%) knd=우선주 thstrm=- frmtrm=-
-  2024 se=주당현금배당금(원) knd=보통주 thstrm=188 frmtrm=188
-  2024 se=주당현금배당금(원) knd=우선주 thstrm=- frmtrm=-
-  2024 se=주당주식배당(주) knd=보통주 thstrm=- frmtrm=-
-  2024 se=주당주식배당(주) knd=우선주 thstrm=- frmtrm=-
-  2024 se=현금배당수익률(%) knd=보통주 thstrm=4.10 frmtrm=4.60
-  2024 se=현금배당수익률(%) knd=우선주 thstrm=- frmtrm=-
-  2024 se=주식배당수익률(%) knd=보통주 thstrm=- frmtrm=-
-  2024 se=주식배당수익률(%) knd=우선주 thstrm=- frmtrm=-
-  2024 se=주당현금배당금(원) knd=보통주 thstrm=188 frmtrm=188
-  2024 se=주당현금배당금(원) knd=우선주 thstrm=- frmtrm=-
+  2024 se=주당현금배당금(원) knd=보통주 thstrm=1,446 frmtrm=1,444
+  2024 se=주당현금배당금(원) knd=우선주 thstrm=1,447 frmtrm=1,445
   2024 se=주당주식배당(주) knd=보통주 thstrm=- frmtrm=-
   2024 se=주당주식배당(주) knd=우선주 thstrm=- frmtrm=-
