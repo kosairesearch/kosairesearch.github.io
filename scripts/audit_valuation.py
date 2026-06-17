@@ -126,11 +126,32 @@ def main():
         ok = sum(1 for r in results.values() if r.get(field) == "ok")
         return blank, mism, ok, label
 
+    # 대형 오차(>25%) 색출 — 우선 수정 대상(정밀격차가 아닌 진짜 버그)
+    big = []
+    for tk, r in results.items():
+        for field in ("per", "pbr", "eps", "bps", "div", "roe"):
+            s = str(r.get(field, ""))
+            mm = re.search(r"mismatch\(([\-\d.]+) vs ([\d.]+)\)", s)
+            if mm:
+                o, ref = float(mm.group(1)), float(mm.group(2))
+                if ref and abs(o - ref) / abs(ref) > 0.25:
+                    big.append((abs(o - ref) / abs(ref), field, tk, o, ref))
+    big.sort(reverse=True)
+
     lines = [f"# 밸류에이션 자동 검증 — {datetime.datetime.utcnow()+datetime.timedelta(hours=9):%Y-%m-%d %H:%M} KST",
              f"# 데이터일자 {day} · 검증 {len(results)}/{len(val)}종목 · 허용오차 {TOL*100:.0f}%",
              f"# 네이버 제공 항목(코드): {', '.join(state.get('naver_codes', []))}", ""]
+    lines.append(f"⛔ 대형 오차(>25%) — 우선 수정 대상: {len(big)}건")
+    for d, field, tk, o, ref in big[:60]:
+        lines.append(f"   {d*100:4.0f}% [{field}] {nm.get(tk,tk)}({tk}) {o} vs {ref}")
+    lines.append("")
     for field, label in (("per", "PER"), ("pbr", "PBR"), ("eps", "EPS"), ("bps", "BPS"), ("div", "배당수익률"), ("roe", "ROE")):
         blank, mism, ok, lab = tally(field, label)
+        # 오차 크기순 정렬(큰 것 먼저)
+        def _mag(t):
+            mm = re.search(r"mismatch\(([\-\d.]+) vs ([\d.]+)\)", str(results[t].get(field, "")))
+            return abs(float(mm.group(1)) - float(mm.group(2))) / abs(float(mm.group(2))) if (mm and float(mm.group(2))) else 0
+        mism.sort(key=_mag, reverse=True)
         lines.append(f"[{lab}] 일치 {ok} · 빈칸 {len(blank)} · 불일치 {len(mism)}")
         if mism:
             lines.append("   ⚠️ 불일치(틀린값 노출 위험): " +
