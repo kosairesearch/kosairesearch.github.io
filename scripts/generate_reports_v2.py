@@ -472,26 +472,21 @@ def dart_dps(dart, ticker):
             df = None
         if df is None or getattr(df, "empty", True):
             continue
-        best, saw_row = None, False
+        # 보통주 '주당현금배당금'을 전부 합산 — 리츠(반기)·분기/중간배당은 행이 여러 개라
+        #   하나만 잡으면 연간 배당이 과소계상된다. 일반 기업은 행이 1개라 합=그 값.
+        total, saw_row = 0.0, False
         for _, r in df.iterrows():
             se = str(r.get("se", "")).replace(" ", "")
             knd = str(r.get("stock_knd", "")).replace(" ", "")
             if "주당현금배당금" in se:
-                if knd and "보통" not in knd:
+                if knd and "보통" not in knd:        # 우선주 제외
                     continue
                 saw_row = True
-                v = g._num(r.get("thstrm"))   # '-'/공란 → None
-                if v is not None and v >= 0:
-                    best = v
-                    if not knd or "보통" in knd:
-                        break
-        if best is not None:
-            return float(best)
-        # 배당 항목은 있으나 값이 '-' → 해당 연도 현금배당 없음(0). 단, 그 전년도 먼저 재확인.
-        if saw_row and year == cur - 1:
-            continue
+                v = g._num(r.get("thstrm"))          # '-'/공란 → None
+                if v is not None and v > 0:
+                    total += v
         if saw_row:
-            return 0.0
+            return float(total)                       # 0이면 무배당(유효)
     return None
 
 
