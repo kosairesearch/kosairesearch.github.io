@@ -96,8 +96,8 @@ def main():
             ("bps", e.get("bps"), nvget("bps")),
             ("per", per(),        nvget("per")),
             ("pbr", pbr(),        nvget("pbr")),
-            ("div", div_ours,     nvget("dividend", "dividendyield", "dvr", "dividendratio")),
-            ("roe", roe_ours,     nvget("roe")),
+            ("div", div_ours,     nvget("dividendyieldratio")),   # 배당수익률(%) — 'dividend'(원)와 혼동 금지
+            ("roe", roe_ours,     nvget("roe")),                  # 네이버 미제공 → 내부 sanity로만 검증
         )
         rec = {"naver": bool(nv)}
         for key, ours, ref in checks:
