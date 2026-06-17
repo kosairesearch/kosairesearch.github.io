@@ -639,7 +639,8 @@ def pick_targets():
 
 
 def naver_valuation(ticker):
-    """네이버 모바일 증권 API에서 PER/PBR/EPS/BPS 참조값. 실패 시 {}."""
+    """네이버 모바일 증권 API 참조값(전 항목). totalInfos의 모든 숫자 코드를 수집한다.
+    PER/PBR/EPS/BPS 외에 배당수익률·ROE 등도 제공되면 함께 담겨 검증에 쓰인다. 실패 시 {}."""
     import requests
     try:
         r = requests.get(f"https://m.stock.naver.com/api/stock/{ticker}/integration",
@@ -647,13 +648,12 @@ def naver_valuation(ticker):
         out = {}
         for it in (r.json().get("totalInfos") or []):
             cd = str(it.get("code", "")).lower()
-            if cd in ("per", "pbr", "eps", "bps"):
-                v = str(it.get("value", "")).replace(",", "")
-                v = v.replace("배", "").replace("원", "").replace("%", "").strip()
-                try:
-                    out[cd] = float(v)
-                except ValueError:
-                    pass
+            v = str(it.get("value", "")).replace(",", "")
+            v = v.replace("배", "").replace("원", "").replace("%", "").replace("주", "").strip()
+            try:
+                out[cd] = float(v)
+            except ValueError:
+                pass
         return out
     except Exception:
         return {}

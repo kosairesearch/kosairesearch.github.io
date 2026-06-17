@@ -80,11 +80,27 @@ def main():
         def pbr():
             return round(p / e["bps"], 2) if (e.get("bps") and p) else None
 
-        nv = v2.naver_valuation(tk)
+        nv = v2.naver_valuation(tk) or {}
+
+        def nvget(*ks):
+            for k in ks:
+                if nv.get(k) not in (None, 0):
+                    return nv.get(k)
+            return None
+
+        # 우리가 화면에 '표시하는' 모든 지표를 네이버와 대조
+        div_ours = round(e["dps"] / p * 100, 2) if (e.get("dps") and p) else None
+        roe_ours = e.get("roe")
+        checks = (
+            ("eps", e.get("eps"), nvget("eps")),
+            ("bps", e.get("bps"), nvget("bps")),
+            ("per", per(),        nvget("per")),
+            ("pbr", pbr(),        nvget("pbr")),
+            ("div", div_ours,     nvget("dividend", "dividendyield", "dvr", "dividendratio")),
+            ("roe", roe_ours,     nvget("roe")),
+        )
         rec = {"naver": bool(nv)}
-        for key, ours in (("eps", e.get("eps")), ("bps", e.get("bps")),
-                          ("per", per()), ("pbr", pbr())):
-            ref = nv.get(key) if nv else None
+        for key, ours, ref in checks:
             if ref in (None, 0):
                 rec[key] = "no_naver" if ours is None else "ok_unverified"
             elif ours is None:
@@ -92,7 +108,12 @@ def main():
             else:
                 diff = abs(ours - ref) / abs(ref)
                 rec[key] = "ok" if diff <= TOL else f"mismatch({ours} vs {ref})"
+        # ROE 내부 sanity(네이버 미제공 대비): 비현실적 값은 외부대조 없이도 잡는다
+        if roe_ours is not None and abs(roe_ours) > 120 and not str(rec.get("roe", "")).startswith("mismatch"):
+            rec["roe"] = f"mismatch(sanity {roe_ours})"
         results[tk] = rec
+        if checked == 0:  # 첫 종목: 네이버 제공 코드 확인용(필드명 검증)
+            state["naver_codes"] = sorted(nv.keys())
         checked += 1
         time.sleep(0.1)
 
@@ -106,8 +127,9 @@ def main():
         return blank, mism, ok, label
 
     lines = [f"# 밸류에이션 자동 검증 — {datetime.datetime.utcnow()+datetime.timedelta(hours=9):%Y-%m-%d %H:%M} KST",
-             f"# 데이터일자 {day} · 검증 {len(results)}/{len(val)}종목 · 허용오차 {TOL*100:.0f}%", ""]
-    for field, label in (("per", "PER"), ("pbr", "PBR"), ("eps", "EPS"), ("bps", "BPS")):
+             f"# 데이터일자 {day} · 검증 {len(results)}/{len(val)}종목 · 허용오차 {TOL*100:.0f}%",
+             f"# 네이버 제공 항목(코드): {', '.join(state.get('naver_codes', []))}", ""]
+    for field, label in (("per", "PER"), ("pbr", "PBR"), ("eps", "EPS"), ("bps", "BPS"), ("div", "배당수익률"), ("roe", "ROE")):
         blank, mism, ok, lab = tally(field, label)
         lines.append(f"[{lab}] 일치 {ok} · 빈칸 {len(blank)} · 불일치 {len(mism)}")
         if mism:
@@ -120,10 +142,10 @@ def main():
     OUT.write_text("\n".join(lines), encoding="utf-8")
 
     # 콘솔 요약
-    for field, label in (("per", "PER"), ("pbr", "PBR"), ("eps", "EPS"), ("bps", "BPS")):
+    for field, label in (("per", "PER"), ("pbr", "PBR"), ("eps", "EPS"), ("bps", "BPS"), ("div", "배당수익률"), ("roe", "ROE")):
         blank, mism, ok, lab = tally(field, label)
         log(f"  [{lab}] 일치 {ok} · 빈칸 {len(blank)} · 불일치 {len(mism)}")
-    total_mism = sum(1 for r in results.values() for f in ("per", "pbr", "eps", "bps")
+    total_mism = sum(1 for r in results.values() for f in ("per", "pbr", "eps", "bps", "div", "roe")
                      if str(r.get(f, "")).startswith("mismatch"))
     if len(results) >= len(val):
         log(f"\n✅ AUDIT_COMPLETE — 전 종목 검증. 불일치 총 {total_mism}건(0이어야 정상) → data/valuation_audit.txt")
