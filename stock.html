@@ -961,14 +961,21 @@ KOSi18n.register({
   function fx(v,suf){ return v==null?'—':(+v).toLocaleString('en-US')+(suf||''); }
   function negc(v){ return (v!=null&&v<0)?' class="neg"':''; }
   /* 실적 막대차트(매출·영업이익) + 선택적 라인(영업이익률). 외부 라이브러리 없는 inline SVG. */
-  function jo(won){ return won==null?null:won/1e12; }   // 원 → 조
-  function joLabel(j){ if(j==null)return ''; var a=Math.abs(j);
-    var s=(a>=100?Math.round(j):a>=10?j.toFixed(0):j.toFixed(1)); return s; }
   function kBarChart(labels, bars, line, lineUnit){
     var W=620, H=232, padL=14, padR=14, padT=16, padB=34;
     var plotW=W-padL-padR, plotH=H-padT-padB, base=padT+plotH;
+    // 적응형 단위: 대형주는 조, 소형주는 억(소형주가 0.0으로 뭉개지던 버그 수정)
+    var en=L()==='en', maxabs=0;
+    bars.forEach(function(b){ b.vals.forEach(function(v){ if(v!=null) maxabs=Math.max(maxabs,Math.abs(v)); }); });
+    if(maxabs===0) return {svg:'',unit:''};
+    var big=maxabs>=1e12, udiv=big?1e12:(en?1e9:1e8);
+    var uname=big?(en?'₩ trillion':'조원'):(en?'₩ billion':'억원');
+    var jo=function(won){ return won==null?null:won/udiv; };
+    var joLabel=function(j){ if(j==null)return ''; var a=Math.abs(j);
+      if(big) return a>=100?(''+Math.round(j)):(a>=10?j.toFixed(0):j.toFixed(1));
+      return Math.round(j).toLocaleString('en-US'); };
     var vals=[]; bars.forEach(function(b){ b.vals.forEach(function(v){ if(v!=null)vals.push(jo(v)); }); });
-    if(!vals.length) return '';
+    if(!vals.length) return {svg:'',unit:''};
     var vmax=Math.max.apply(null,vals.concat([0])), vmin=Math.min.apply(null,vals.concat([0]));
     if(vmax===vmin) vmax=vmin+1;
     var span=vmax-vmin, zeroY=padT+plotH*(vmax/span);
@@ -1011,7 +1018,7 @@ KOSi18n.register({
       svg+='<polyline points="'+pts.join(' ')+'" fill="none" stroke="var(--c-line)" stroke-width="1.6" stroke-linejoin="round"/>'+dots;
     }
     svg+='</svg>';
-    return svg;
+    return {svg:svg, unit:uname};
   }
   function chartCard(cap, legend, svg){
     if(!svg) return '';
@@ -1032,26 +1039,24 @@ KOSi18n.register({
     h+=secOpen(pad(n++),'FINANCIALS',u.sec.fin);
     var ann=(Q.annual||[]).slice().reverse();
     /* 차트: 연간·분기 매출·영업이익 */
-    var legend='<span><i style="background:var(--c-rev)"></i>'+esc(revLbl)+'</span>'
-      +'<span><i style="background:var(--c-op)"></i>'+esc(f.op)+'</span>'
-      +'<span><i class="line"></i>'+esc(f.opm)+'</span>'
-      +'<span style="margin-left:auto;color:var(--fg-3)">'+esc(f.unitJo)+'</span>';
+    var legBase='<span><i style="background:var(--c-rev)"></i>'+esc(revLbl)+'</span>'
+      +'<span><i style="background:var(--c-op)"></i>'+esc(f.op)+'</span>';
+    var uniCap=function(un){ return '<span style="margin-left:auto;color:var(--fg-3)">'+esc((L()==='en'?'Unit: ':'단위: ')+un)+'</span>'; };
     if(ann.length>=2){
       var aLabels=ann.map(function(a){return ''+a.year;});
       var aBars=[{color:'var(--c-rev)',vals:ann.map(function(a){return a.rev;})},
                  {color:'var(--c-op)',vals:ann.map(function(a){return a.op;})}];
       var aLine={vals:ann.map(function(a){return a.opm;})};
-      h+=chartCard(f.chartAnnual, legend, kBarChart(aLabels,aBars,aLine,'%'));
+      var aC=kBarChart(aLabels,aBars,aLine,'%');
+      h+=chartCard(f.chartAnnual, legBase+'<span><i class="line"></i>'+esc(f.opm)+'</span>'+uniCap(aC.unit), aC.svg);
     }
     var qtc=(Q.quarterly||[]);
     if(qtc.length>=2){
       var qLabels=qtc.map(function(r){return r.q.replace(/^20/,'').replace('Q','Q');});
       var qBars=[{color:'var(--c-rev)',vals:qtc.map(function(r){return r.rev;})},
                  {color:'var(--c-op)',vals:qtc.map(function(r){return r.op;})}];
-      var legendQ='<span><i style="background:var(--c-rev)"></i>'+esc(revLbl)+'</span>'
-        +'<span><i style="background:var(--c-op)"></i>'+esc(f.op)+'</span>'
-        +'<span style="margin-left:auto;color:var(--fg-3)">'+esc(f.unitJo)+'</span>';
-      h+=chartCard(f.chartQuarter, legendQ, kBarChart(qLabels,qBars,null,''));
+      var qC=kBarChart(qLabels,qBars,null,'');
+      h+=chartCard(f.chartQuarter, legBase+uniCap(qC.unit), qC.svg);
     }
     if(ann.length){
       h+='<div class="tbl-card glass"><div class="tbl-cap">'+esc(f.annual)+'</div><div class="tbl-scroll"><table class="dt"><thead><tr>'
