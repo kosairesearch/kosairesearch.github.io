@@ -252,7 +252,7 @@
     "cfo": -31692468019,
     "eps_basic": -762,
     "opm": -4.8,
-    "roe": 137.0,
+    "roe": null,
     "debt_ratio": -4706.9
    },
    {
@@ -267,7 +267,7 @@
     "cfo": -63971954951,
     "eps_basic": -5532,
     "opm": -58.7,
-    "roe": 528.5,
+    "roe": null,
     "debt_ratio": -2509.6
    }
   ],
@@ -311,9 +311,9 @@
    "wavg_shares": 20605929,
    "per": null,
    "eps": -2035,
-   "pbr": -5.61,
-   "bps": -701,
-   "roe_ttm": 1057.1,
+   "pbr": null,
+   "bps": null,
+   "roe_ttm": null,
    "ttm_window": "2025Q2~2026Q1",
    "ttm_np_owner": -41929363919,
    "pbr_krx": null,

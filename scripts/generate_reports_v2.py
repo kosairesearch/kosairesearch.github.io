@@ -220,7 +220,8 @@ def collect_quant(dart, ticker, krx_row, stock):
         row["opm"] = round(op / rev * 100, 1) if (op is not None and rev) else None
         base_np = row["np_owner"]
         base_eq = eqo if eqo is not None else eq
-        row["roe"] = round(base_np / base_eq * 100, 1) if (base_np is not None and base_eq) else None
+        # 자본잠식(자본 ≤ 0) 연도는 ROE 무의미 → 숨김
+        row["roe"] = round(base_np / base_eq * 100, 1) if (base_np is not None and base_eq and base_eq > 0) else None
         row["debt_ratio"] = round(li / eq * 100, 1) if (li is not None and eq) else None
         annual.append(row)
         time.sleep(0.3)
@@ -380,7 +381,8 @@ def collect_quant(dart, ticker, krx_row, stock):
     eqo_q = (_bs(dq1c, "equity_owner") or _bs(dq1c, "equity"))
     if eqo_q is not None:
         eqo_q *= unit
-    bps_q = int(eqo_q / bps_denom) if (eqo_q and bps_denom) else None
+    # 자본잠식(자본 ≤ 0)이면 BPS·PBR은 무의미 → 숨김
+    bps_q = int(eqo_q / bps_denom) if (eqo_q and eqo_q > 0 and bps_denom) else None
     pbr_q = round(price / bps_q, 2) if (bps_q and price) else None
 
     # ROE(TTM) = 최근 4개 분기 지배순이익 ÷ 평균 지배자본(TTM 시작시점~끝시점) — 토스와 정합
@@ -388,8 +390,9 @@ def collect_quant(dart, ticker, krx_row, stock):
     eqo_begin = (_bs(dq1, "equity_owner") or _bs(dq1, "equity"))   # TTM 시작(작년 1Q말) 자본
     if eqo_begin is not None:
         eqo_begin *= unit
-    def _roe(eq): return round(ttm_np / eq * 100, 1) if (ttm_np is not None and eq) else None
-    avg_win = ((eqo_begin + eqo_q) / 2) if (eqo_begin and eqo_q) else None
+    # 자본이 양(+)일 때만 ROE 산출 — 자본잠식이면 ROE는 무의미(예: 1057%)라 숨김
+    def _roe(eq): return round(ttm_np / eq * 100, 1) if (ttm_np is not None and eq and eq > 0) else None
+    avg_win = ((eqo_begin + eqo_q) / 2) if (eqo_begin and eqo_q and (eqo_begin + eqo_q) > 0) else None
     roe_ttm = _roe(avg_win) or _roe(fy_eqo) or _roe(eqo_q)
 
     valuation = {
