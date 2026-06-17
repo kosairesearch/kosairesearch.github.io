@@ -1,0 +1,356 @@
+{
+ "title": {
+  "ko": "캐파 부족 국면 진입, HBM·STO 수혜 구간 진입",
+  "en": "Entering Capacity-Constrained Upswing on HBM & STO Demand"
+ },
+ "lead": {
+  "ko": "2023~2024년 두 해 연속 영업적자를 딛고 2025년 흑자 전환에 성공한 타이거일렉이, 2026년 1분기 분기 최대 실적을 경신하며 HBM·메모리 테스트 PCB 수요의 구조적 성장 수혜 국면에 본격 진입했다.",
+  "en": "Having emerged from two consecutive years of operating losses to achieve a full-year turnaround in 2025, Tiger Elec posted record quarterly results in Q1 2026, signaling its entry into a structural growth phase driven by HBM and memory-test PCB demand."
+ },
+ "keypoints": [
+  {
+   "ko": "2025년 연결 매출 807억원(YoY +31%)·영업이익 72억원(OPM 8.9%)으로 흑자 전환 성공, 2026년 1분기 매출 268억원·영업이익 35억원으로 분기 최대치 경신",
+   "en": "FY2025 consolidated revenue of KRW 80.7 bn (+31% YoY) and operating profit of KRW 7.2 bn (OPM 8.9%) marked a full turnaround; Q1 2026 revenue/OP of KRW 26.8 bn / KRW 3.5 bn set new quarterly records"
+  },
+  {
+   "ko": "2025년 4분기부터 메모리 테스트용 PCB 수요가 공급을 초과하는 '캐파 부족' 국면 진입, 납기 대응력이 실적 상단을 결정하는 구간으로 전환",
+   "en": "From Q4 2025, demand for memory-test PCBs began exceeding available supply, shifting the primary profit driver from demand growth to delivery lead-time capability"
+  },
+  {
+   "ko": "2026년 5월 300억원 무이자 전환사채 발행으로 MLB 라인 증설(51억)·STO 라인 고도화(91억) 등 설비투자 재원 선제 확보",
+   "en": "In May 2026, Tiger Elec raised KRW 30 bn via zero-coupon convertible bonds to fund MLB line expansion (KRW 5.1 bn) and STO line upgrades (KRW 9.1 bn)"
+  },
+  {
+   "ko": "STO(Space Transformer Organic) 신사업이 일본 과점 시장의 국산화 대안으로 부상, 2026년 수율·납기 안정화 시 미국·일본 신규 고객사 확대 기대",
+   "en": "The STO (Space Transformer Organic) new business is emerging as a domestic Korean substitute in the Japanese-dominated market; yield and delivery stabilization in 2026 could unlock new US and Japanese customer opportunities"
+  },
+  {
+   "ko": "전환사채 희석 가능성(전환가 58,879원·잠재 주식 약 51만주), 부채비율 상승(31.1%→54.9%), 낮은 영업현금흐름 전환율 등 재무 리스크도 병존",
+   "en": "Potential CB dilution (conversion price KRW 58,879, ~510K new shares), a rising debt-to-equity ratio (31.1%→54.9%), and a low operating cash-conversion rate coexist as financial risk factors"
+  }
+ ],
+ "business": {
+  "ko": "타이거일렉은 1991년 설립된 반도체 검사공정용 고다층·고밀도 인쇄회로기판(PCB) 전문 제조업체로, 2011년 반도체 테스트 장비 기업 티에스이(TSE) 그룹에 편입되어 2015년 코스닥에 상장했다. 주요 제품은 프로브카드(Probe Card) PCB, 로드보드(Load Board) PCB, 소켓보드(Socket Board) PCB, 번인보드(Burn-in Board) PCB로 구성되며, 2023년 3분기 누적 기준 Probe Card PCB가 매출의 약 53%, Load Board 20%, Burn-in Board 18%, Socket Board 8%를 차지한다. 국내 최초로 100레이어(Layer) 이상의 초고사양 프로브카드 PCB 양산에 성공한 기술력을 바탕으로, 미국 FormFactor·Technoprobe(이탈리아)·Intel 등 글로벌 주요 프로브카드 업체에 공급하며 해외 고객 기반을 확장하고 있다. 연간 약 6,000종에 달하는 소량 다품종·다공정 생산 구조는 인력과 공정 노하우 중심의 높은 기술 진입장벽을 형성한다. 한국(인천) 본공장 외에 베트남 공장(메가일렉)을 해외 생산 기지로 운영하며, 이 공장은 국내 생산 능력의 약 80% 수준까지 추가 생산이 가능하다. 신사업으로 STO(Space Transformer Organic, MLO)를 개발·양산화 중인데, 이는 CPU·GPU·HBM 등 초고속 반도체 검사에서 프로브카드와 테스트 인터페이스 보드를 연결하는 기판으로 일본 업체 과점 시장의 국산화 대안이다. 경쟁사로는 일본의 Fujitsu, 미국의 Gorilla Circuits, 대만의 CHPT 등이 있으나 높은 기술 난이도로 공급자 수가 제한적이다. 모기업 티에스이가 HBM용 프로브카드 사업을 영위하면서 타이거일렉은 수직 계열화된 그룹 내에서 PCB 핵심 공급자 역할을 담당한다.",
+  "en": "Tiger Elec is a specialist manufacturer of high-layer-count, high-density PCBs for semiconductor inspection, established in 1991 and listed on KOSDAQ in 2015 after joining the TSE semiconductor test equipment group in 2011. Core products include Probe Card PCBs (~53% of revenue as of Q3 2023 YTD), Load Board PCBs (~20%), Burn-in Board PCBs (~18%), and Socket Board PCBs (~8%). Having achieved Korea's first successful mass production of ultra-high-spec Probe Card PCBs with 100+ layers, the company supplies global probe card leaders including FormFactor (US), Technoprobe (Italy), and Intel (US). Its annual production of approximately 6,000 product varieties in a high-mix, low-volume, multi-process structure creates significant know-how-based barriers to entry. In addition to its domestic plant in Incheon, Tiger Elec operates a Vietnam facility (Mega Elec) capable of supplementing up to ~80% of domestic capacity. The company is commercializing STO (Space Transformer Organic / MLO), a substrate connecting vertical probe cards to test interface boards for high-speed semiconductor inspection—a domestic substitute for the Japanese-dominated market. Competitors include Fujitsu (Japan), Gorilla Circuits (US), and CHPT (Taiwan), though the high technical complexity limits the effective supplier pool. As the PCB arm within the vertically integrated TSE group, Tiger Elec benefits from close alignment with the parent's HBM probe card business."
+ },
+ "earnings": {
+  "ko": "2023년은 반도체 업황 침체로 매출 486억원(YoY -16%), 영업손실 31억원(OPM -6.3%), 당기순손실 26억원을 기록하며 수익성이 크게 악화됐다. 2024년에는 매출이 618억원으로 회복(YoY +27%)됐으나 영업손실 19억원(OPM -3.1%)이 지속됐고, 당기순이익은 2.7억원으로 손익분기점 수준에 그쳤다. 2025년에는 HBM·DRAM 수요 회복과 판가 인상이 본격화되며 매출 807억원(YoY +31%)·영업이익 72억원(OPM 8.9%)으로 완전한 흑자 전환에 성공했으며, 당기순이익 53억원을 기록했다. 분기별로는 2분기(매출 192억원·영업이익 29억원)와 4분기(매출 241억원·영업이익 23억원)가 실적을 견인했고, 3분기는 영업이익이 10억원으로 일시 둔화됐다. 2026년 1분기는 매출 268억원(YoY +58%), 영업이익 35억원(YoY +251%), 당기순이익 28억원을 기록해 분기 최대 실적을 경신했으며, HBM향 수요 급증과 고사양 제품 중심 판가 인상이 동시에 반영된 결과다. 한편 2025년 영업현금흐름은 약 5.3억원으로 당기순이익(53억원) 대비 현금 전환율이 10% 미만에 그쳐, 운전자본 동향에 대한 모니터링이 필요하다. 부채비율은 2022년 31.1%에서 2025년 54.9%로 상승 추세이며, 2026년 CB 발행으로 추가 증가가 예정돼 있다.",
+  "en": "In 2023, semiconductor sector headwinds drove revenue down 16% YoY to KRW 48.6 bn, with operating loss of KRW 3.1 bn (OPM -6.3%) and a net loss of KRW 2.6 bn. In 2024, revenue recovered to KRW 61.8 bn (+27% YoY) but operating losses persisted at KRW 1.9 bn (OPM -3.1%), with net income barely positive at KRW 0.27 bn. FY2025 brought a full turnaround: revenue grew 31% YoY to KRW 80.7 bn, operating income of KRW 7.2 bn (OPM 8.9%) marked the strongest margin since 2022, and net income was KRW 5.3 bn. Quarterly, Q2 2025 (revenue KRW 19.2 bn, OP KRW 2.9 bn) and Q4 2025 (revenue KRW 24.1 bn, OP KRW 2.3 bn) were the strongest periods, while Q3 saw OP dip temporarily to KRW 1.0 bn. Q1 2026 was a record quarter: revenue KRW 26.8 bn (+58% YoY), OP KRW 3.5 bn (+251% YoY), and net income KRW 2.8 bn, reflecting the simultaneous tailwinds of surging HBM demand and cumulative price increases for high-spec products. A key caution is that FY2025 operating cash flow of only ~KRW 0.5 bn versus reported net income of KRW 5.3 bn implies a sub-10% cash conversion rate, warranting close monitoring of working capital dynamics. The debt-to-equity ratio has risen steadily from 31.1% (2022) to 54.9% (2025), with the 2026 CB issuance set to lift it further."
+ },
+ "industry": {
+  "ko": "글로벌 프로브카드 시장은 AI 반도체·HBM 수요 확대를 배경으로 2026년 약 36억 5,000만 달러 규모에서 2035년까지 연평균 약 9.85% 성장하며 85억 달러에 달할 전망이다. HBM용 프로브카드는 낸드 대비 기술 난이도가 높고 단가도 2~3배 수준으로, 고사양 제품 포트폴리오를 보유한 타이거일렉에 유리한 환경이 조성되고 있다. 프로브카드 PCB 시장은 공급자 수가 제한적이며, 수요 급증 시에도 기존 업체들의 공격적인 캐파 확대가 구조적으로 어렵다. 그간 일본 Fujitsu 등이 STO 시장을 주도했으나, 납기 단축과 국산화 요구 확대로 한국·대만 업체의 시장 진입 기회가 열리고 있다. 모기업 티에스이가 메모리 3사의 HBM용 프로브카드 퀄 승인을 획득하면서 그룹 내 수직 계열화를 통한 타이거일렉의 PCB 공급 역할이 한층 부각되고 있다. 수요 다변화 측면에서도 비메모리(시스템 반도체·차량용) 테스트 수요 증가로 메모리 사이클 외 성장 축이 형성되는 추세다. 반면 미·중 무역 갈등 및 관세 정책 변화는 글로벌 반도체 설비 투자 사이클에 불확실성을 더하는 구조적 변수로 작용한다.",
+  "en": "The global probe card market is projected to grow from approximately USD 3.65 bn in 2026 to USD 8.5 bn by 2035 at a CAGR of ~9.85%, driven by AI semiconductor and HBM demand. HBM probe cards command 2–3x higher unit prices and greater technical complexity versus NAND cards, creating an advantageous environment for Tiger Elec's high-spec product portfolio. Supply for probe card PCBs remains structurally constrained due to high technical barriers, limiting the ability of incumbents to rapidly scale capacity. While Japan's Fujitsu has historically dominated the STO substrate segment, growing demand for faster lead times and domestic sourcing is opening market opportunities for Korean and Taiwanese players. TSE's qualification wins for HBM probe cards across all three major memory chipmakers increases Tiger Elec's strategic visibility as the critical PCB supplier within the vertically integrated group. Demand diversification into non-memory (logic, automotive) test PCBs is also creating a growth vector independent of the memory cycle. However, US-China trade tensions and tariff policy shifts remain structural variables that could affect global semiconductor capex cycles and, consequently, probe card demand."
+ },
+ "outlook": {
+  "ko": "미래에셋증권(2026년 1월 리포트)은 2026년 타이거일렉 매출 941억원, 영업이익 185억원을 전망하며, 베트남 공장 안정화와 추가 설비 투자를 통한 가동률·납기·품질의 선순환 구조 형성을 근거로 제시했다. 메리츠증권도 2026년 4월 리포트에서 'HBM향 수요와 판가 인상에 힘입어 분기 최대 실적 경신'을 전망하며 구조적 순풍이 지속되고 있다고 평가했다. 2026년 5월 300억원 규모의 표면·만기이자율 0% 사모 전환사채가 확정됐으며, 조달 자금의 MLB 라인 증설(50.7억원)·STO 라인 고도화 설비(91.3억원) 등 시설투자 142억원이 우선 집행 예정이다. STO 부문은 2026년 내 수율·납기 안정화가 확인될 경우 미국·일본 신규 고객사 공급이 본격화되며 비메모리 시장으로의 사업 확장이 기대된다. 커스터마이징 비중이 높은 사업 특성상 '업스트림 과제' 확대—2024년 5개에서 2025년 25개로 급증—가 판가 인상의 구조적 동인으로 강화되고 있다. 다만 전환사채의 주당 전환가(58,879원)와 잠재 전환 주식(약 51만주) 등 희석 요인, 설비 투자 확대에 따른 감가상각 부담 증가가 이익 모멘텀에 부분적으로 상쇄 작용할 수 있다.",
+  "en": "Mirae Asset Securities (January 2026 report) projects FY2026 revenue of KRW 94.1 bn and operating income of KRW 18.5 bn, citing the positive feedback loop of Vietnam factory stabilization and improved utilization rates, delivery times, and quality. Meritz Securities (April 2026 report) also confirmed structural tailwinds, noting that 'HBM demand and price increases are expected to drive record quarterly results.' The May 2026 issuance of a KRW 30 bn zero-coupon private CB (maturity 2031.05) has secured KRW 14.2 bn in facility investment funding, covering MLB line expansion (KRW 5.07 bn) and STO line upgrades (KRW 9.13 bn). The STO segment could see full commercial momentum if yield and delivery metrics stabilize within 2026, potentially unlocking new US and Japanese customers in the non-memory test space. The structurally expanding number of upstream customization tasks (from 5 in 2024 to 25 in 2025) reflects deepening product complexity, supporting sustained pricing power. Offsetting factors include potential EPS dilution from CB conversion (KRW 58,879 per share, ~510K shares) and rising depreciation from accelerated capex."
+ },
+ "valuation_comment": {
+  "ko": "현재 주가는 주당순자산(BPS 9,694원)을 큰 폭으로 웃도는 구간으로, 2023~2024년 적자 기간 대비 이익 회복 속도와 성장 기대감이 복합적으로 반영된 결과다. 2024년 초 증권사 리포트 당시 과거 역사적 PBR 밴드 중단 수준인 약 2.8~3.8배 대비 현재 배율은 상당폭 확대된 상태로, 실적 개선 및 STO 신사업 기업가치 재평가(리레이팅) 기대가 복합적으로 작용한 것으로 보인다. 주당순이익(EPS 1,159원)은 적자에서 흑자 방향으로 회복한 흐름을 반영하나, 분기별 이익 변동성이 여전히 존재한다는 점에서 실적의 지속성 확인이 중요하다. 배당수익률은 직전 사업연도 주당현금배당금 0원으로 무배당 상태이며, 수익 환원보다 설비 투자·성장에 자금을 집중하는 전략으로 해석된다. 5년 만기 무이자 전환사채(전환가 58,879원) 발행은 향후 전환 시점에 따라 주당 가치에 영향을 미치는 잠재 변수다.",
+  "en": "The current share price trades at a substantial premium to book value per share (BPS KRW 9,694), reflecting the rapid earnings recovery and forward growth expectations relative to the two-year loss period. The current price-to-book multiple has expanded meaningfully versus the historical mid-band of approximately 2.8–3.8x referenced by analysts in early 2024, driven by a combination of operational turnaround and STO re-rating expectations. The headline EPS of KRW 1,159 traces the directional shift from loss to profit, but quarterly earnings volatility remains, making earnings quality and sustainability the primary metrics to track. The dividend yield is zero, as the company disclosed no cash dividend for the prior fiscal year, consistent with a strategy of prioritizing capacity expansion and new-business investment over shareholder income returns. The zero-coupon CB convertible at KRW 58,879 per share introduces a dilution variable whose timing will affect per-share metrics going forward."
+ },
+ "bull": [
+  {
+   "title": {
+    "ko": "캐파 부족이 견인하는 판가 인상 선순환",
+    "en": "Capacity Shortage Enabling Sustained Pricing Power"
+   },
+   "body": {
+    "ko": "2025년 4분기부터 메모리 테스트용 PCB 수요가 공급을 초과하는 구조로 전환됐다. 커스터마이징 제품 비중이 높아 원가 상승분을 판가에 전가하는 구조적 가격 협상력을 보유하며, 이는 일반 기판 업체와 차별화되는 수익 방어력이다. 업스트림 과제 확대(2024년 5개→2025년 25개)는 고사양·고난이도 제품 비중 증가를 의미하며 평균판매단가(ASP) 상승의 지속 가능성을 높인다.",
+    "en": "From Q4 2025, memory-test PCB demand has been exceeding available supply. Tiger Elec's high share of customized products provides structural pricing power to pass through cost increases—unlike commodity PCB makers. The rapid expansion of upstream customization tasks (from 5 in 2024 to 25 in 2025) reflects a rising mix of high-spec, high-difficulty products, supporting continued ASP improvement."
+   }
+  },
+  {
+   "title": {
+    "ko": "HBM·비메모리 수요의 구조적 성장 수혜",
+    "en": "Structural Growth in HBM and Non-Memory Test Demand"
+   },
+   "body": {
+    "ko": "글로벌 프로브카드 시장은 AI 반도체·HBM 확대로 2035년까지 연평균 약 10% 성장이 전망된다. HBM 프로브카드는 낸드 대비 기술 난이도와 단가가 2~3배 높아 타이거일렉의 고사양 제품 포트폴리오와 부합한다. 모기업 티에스이가 메모리 3사의 HBM 프로브카드 퀄 승인을 획득하면서 그룹 내 수직 계열화 시너지가 수주 경쟁력으로 직결될 수 있다.",
+    "en": "The global probe card market is projected to grow at ~10% CAGR through 2035, driven by AI semiconductors and HBM expansion. HBM probe cards command 2–3x higher prices and technical difficulty versus NAND, aligning well with Tiger Elec's high-spec product portfolio. TSE's qualification wins for HBM probe cards across all three major memory makers could translate directly into higher PCB orders via group synergies."
+   }
+  },
+  {
+   "title": {
+    "ko": "STO 신사업의 기업가치 재평가 잠재력",
+    "en": "STO New Business as a Valuation Re-Rating Catalyst"
+   },
+   "body": {
+    "ko": "STO(Space Transformer Organic)는 CPU·GPU·HBM 검사에 필수적인 고부가 기판으로, 일본 업체 과점 시장에서 타이거일렉이 국산화 대안으로 부상 중이다. 2026년 STO 라인 고도화(전환사채 조달 91.3억원) 완료 시 미국·일본 신규 글로벌 고객사 납품이 가시화될 전망이다. 수익성 높은 STO 매출 비중이 확대될수록 마진 믹스 개선과 기업가치 재평가 모멘텀이 동시에 발생할 수 있다.",
+    "en": "STO substrates are high-value components essential for testing CPUs, GPUs, and HBM, and Tiger Elec is emerging as a Korean domestic alternative in the historically Japanese-dominated market. Completion of the STO line upgrade (funded by KRW 9.13 bn of CB proceeds) in 2026 could make commercial delivery to new US and Japanese customers visible. A rising mix of high-margin STO revenue would simultaneously improve the gross margin profile and serve as a valuation re-rating catalyst."
+   }
+  }
+ ],
+ "bear": [
+  {
+   "title": {
+    "ko": "낮은 영업현금흐름 전환율과 부채비율 상승",
+    "en": "Weak Cash Conversion and Rising Financial Leverage"
+   },
+   "body": {
+    "ko": "2025년 순이익 53억원에 비해 영업현금흐름이 5.3억원에 그쳐, 이익의 현금화 비율이 10% 미만으로 매우 낮다. 부채비율은 2022년 31.1%에서 2025년 54.9%로 꾸준히 상승했고, 2026년 300억원 CB 발행으로 단기적 추가 상승이 불가피하다. 설비 투자 확대에 따른 감가상각 증가가 향후 이익 레버리지를 일부 상쇄할 수 있다.",
+    "en": "Against FY2025 net income of KRW 5.3 bn, operating cash flow was only ~KRW 0.5 bn, implying a sub-10% earnings-to-cash conversion rate. The debt-to-equity ratio has risen from 31.1% (2022) to 54.9% (2025), with the KRW 30 bn CB issuance in 2026 set to drive it higher near-term. Rising depreciation from accelerated facility investment may partially offset the operating profit momentum."
+   }
+  },
+  {
+   "title": {
+    "ko": "반도체 업황 사이클 리스크와 수주 변동성",
+    "en": "Semiconductor Cycle Risk and Order Volatility"
+   },
+   "body": {
+    "ko": "2023년 OPM -6.3%, 2024년 -3.1%에서 드러나듯 반도체 업황 악화 시 이익 변동성이 매우 크다. 주요 고객이 국내 반도체 테스트 장비·프로브카드 업체에 집중돼 있어 특정 고객 수요 감소가 실적에 직접적인 영향을 미친다. 분기 영업이익이 2025년 2분기 29억원에서 3분기 10억원으로 급감한 사례는 계절성·수주 변동성이 여전히 존재함을 시사한다.",
+    "en": "As evidenced by OPMs of -6.3% (2023) and -3.1% (2024), earnings are highly sensitive to semiconductor demand cycles. Customer concentration in domestic semiconductor test equipment and probe card players means any demand pullback from key accounts directly impacts results. The sequential OP drop from Q2 2025's KRW 2.9 bn to Q3 2025's KRW 1.0 bn confirms that quarterly order volatility and seasonality remain meaningful risks."
+   }
+  },
+  {
+   "title": {
+    "ko": "전환사채 희석 및 신사업 수율 리스크",
+    "en": "CB Dilution Risk and STO Yield Uncertainty"
+   },
+   "body": {
+    "ko": "2026년 5월 발행된 전환사채는 주당 전환가 58,879원, 잠재 전환 주식 약 51만주로 현재 발행주식 수(631만주) 대비 약 8%의 희석을 유발할 수 있다. STO 양산화는 베트남 공장 수율 안정화 여부에 달려 있으며, 수율 문제가 장기화될 경우 설비 투자 대비 매출 기여가 지연될 수 있다. 시장이 STO 리레이팅 기대를 선반영한 측면이 있어 상용화 일정이 지연될 경우 밸류에이션 조정 가능성이 있다.",
+    "en": "The May 2026 CB features a conversion price of KRW 58,879 and potential issuance of ~510K new shares, representing ~8% dilution versus the current 6.31M shares outstanding. The STO ramp-up is contingent on yield stabilization at the Vietnam facility; prolonged yield difficulties would delay revenue contribution relative to the investment made. Given that STO re-rating expectations may already be partially priced in, delays in commercialization could trigger a valuation correction."
+   }
+  }
+ ],
+ "risks": [
+  {
+   "cat": {
+    "ko": "업황·수요 리스크",
+    "en": "Cycle & Demand Risk"
+   },
+   "body": {
+    "ko": "반도체 테스트 PCB 수요는 전방 메모리·비메모리 반도체 설비 투자 사이클과 직결된다. 글로벌 경기 둔화, 반도체 재고 조정, AI 투자 속도 조정이 맞물릴 경우 수요가 급감하며 2023년과 유사한 적자 국면이 재현될 수 있다. 미·중 무역 갈등 심화에 따른 글로벌 반도체 설비투자 위축도 중기 수주에 부정적 영향을 미칠 수 있다.",
+    "en": "Demand for semiconductor test PCBs is directly tied to memory and non-memory semiconductor capex cycles. A global economic slowdown, inventory correction, or deceleration in AI infrastructure spending could sharply reduce demand, potentially recreating loss conditions similar to 2023. Escalation of US-China trade tensions and resulting cutbacks in global semiconductor capex could also weigh on medium-term order intake."
+   }
+  },
+  {
+   "cat": {
+    "ko": "재무·유동성 리스크",
+    "en": "Financial & Liquidity Risk"
+   },
+   "body": {
+    "ko": "영업현금흐름의 낮은 이익 전환율은 운전자본 관리 또는 이익의 질에 대한 지속적인 모니터링을 요구한다. 부채비율이 지속 상승하는 상황에서 300억원 CB 전액이 부채로 잔존할 경우 이자보상 능력과 재융자 리스크가 높아진다. CB 만기(2031년 5월) 시 전환이 이루어지지 않으면 원금 일시 상환 부담이 재무 리스크로 잔존한다.",
+    "en": "Low operating cash conversion versus reported earnings warrants continuous monitoring of working capital management and earnings quality. If the KRW 30 bn CB remains unconverted and stays on the balance sheet, it raises concerns about interest coverage capacity and refinancing risk. Should conversion not occur by the May 2031 maturity date, a lump-sum principal repayment obligation would materialize as a meaningful financial risk."
+   }
+  },
+  {
+   "cat": {
+    "ko": "기술·생산 리스크",
+    "en": "Technology & Production Risk"
+   },
+   "body": {
+    "ko": "소량 다품종 초고다층 PCB 제조는 숙련 인력과 공정 노하우에 크게 의존하며, 핵심 인력 이탈 또는 베트남 공장 확장 과정의 수율 저하는 납기 차질과 매출 손실로 직결된다. STO 양산 수율이 기대치에 미치지 못할 경우 91.3억원 규모 설비 투자 수익률이 저하될 수 있다. 글로벌 주요 고객의 공급처 다변화 추진 또는 퀄리피케이션(인증) 재심사 시 수주 리스크가 발생할 수 있다.",
+    "en": "Ultra-high-layer-count, high-mix PCB manufacturing relies heavily on skilled labor and process know-how; key personnel attrition or yield degradation during Vietnam factory expansion would directly impair delivery timelines and revenues. If STO mass production yields fall short of expectations, the return on the KRW 9.13 bn equipment investment would be at risk. Re-qualification requirements or supply chain diversification by major global customers could also create order disruption risks."
+   }
+  }
+ ],
+ "checkpoints": [
+  {
+   "when": {
+    "ko": "2026년 8월 중순",
+    "en": "Mid-August 2026"
+   },
+   "what": {
+    "ko": "2026년 2분기 실적 발표: 분기 매출·영업이익이 1분기 최대 기록(매출 268억원, 영업이익 35억원)을 유지하거나 상회하는지 확인. 판가 인상 지속 여부, HBM 수주 강도, 베트남 가동률이 핵심 지표다.",
+    "en": "Q2 2026 earnings release: verify whether revenue and OP sustain or exceed the Q1 record (revenue KRW 26.8 bn, OP KRW 3.5 bn). Pricing trend continuity, HBM order strength, and Vietnam utilization rate are the key metrics to watch."
+   }
+  },
+  {
+   "when": {
+    "ko": "2026년 하반기 (수시)",
+    "en": "H2 2026 (ongoing)"
+   },
+   "what": {
+    "ko": "STO 라인 고도화 설비(91.3억원) 설치 완료 및 수율 안정화 일정 확인: 수율 기준 충족 시 미국·일본 신규 고객사 납품 개시 여부가 중장기 성장 내러티브의 핵심 촉매가 된다.",
+    "en": "Monitor STO line upgrade completion (KRW 9.13 bn) and yield stabilization milestones: first commercial shipments to new US/Japanese customers would be the key catalyst for the medium-term growth narrative."
+   }
+  },
+  {
+   "when": {
+    "ko": "2026년 11월 중순",
+    "en": "Mid-November 2026"
+   },
+   "what": {
+    "ko": "2026년 3분기 실적 발표: 2025년 3분기(영업이익 10억원)처럼 계절적 이익 둔화가 반복되는지, 아니면 MLB·STO 라인 증설 효과로 변동성이 축소되고 있는지 확인이 필요하다.",
+    "en": "Q3 2026 earnings release: determine whether the sharp Q3 seasonal OP dip pattern (as in Q3 2025, KRW 1.0 bn) recurs, or whether the MLB and STO line expansions are narrowing quarterly earnings volatility."
+   }
+  },
+  {
+   "when": {
+    "ko": "2026~2027년 (수시)",
+    "en": "2026–2027 (ongoing)"
+   },
+   "what": {
+    "ko": "전환사채 조기 전환 청구 동향 점검: 전환가(58,879원) 대비 주가 추이에 따라 희석 일정이 결정되며, 전환 진행 시 부채비율 개선, 미진행 시 2031년 원금 상환 부담이 각각 재무 방향성을 결정한다.",
+    "en": "Track CB conversion activity: the timing relative to the KRW 58,879 conversion price will determine the dilution schedule; conversion would improve the debt-to-equity ratio, while non-conversion preserves a lump-sum repayment liability through 2031."
+   }
+  },
+  {
+   "when": {
+    "ko": "2026년 연간 (매 분기)",
+    "en": "Throughout 2026 (each quarter)"
+   },
+   "what": {
+    "ko": "영업현금흐름 추이 점검: 분기별 당기순이익 대비 영업현금흐름 비율이 정상화되는지, 운전자본(매출채권·재고) 관리 상황이 개선되는지 확인이 이익의 질 평가에 핵심적이다.",
+    "en": "Monitor operating cash flow each quarter versus net income: normalization of the cash conversion ratio and improvement in working capital (receivables, inventory) management would signal higher earnings quality and reduce financial risk."
+   }
+  }
+ ],
+ "verdict": {
+  "body": {
+   "ko": "타이거일렉은 반도체 검사공정 특화 초고다층 PCB 전문 기업으로, 2023~2024년 업황 침체와 베트남 공장 수율 안정화 비용이 겹치며 두 해 연속 영업손실을 겪었으나 2025년 완전한 흑자 전환에 성공했다. 2026년 1분기 분기 최대 실적 경신은 HBM·메모리 테스트 PCB 수요의 구조적 성장과 고부가 제품 중심 판가 인상의 복합 효과를 입증했다. 300억원 CB 발행을 통한 MLB 라인 증설 및 STO 라인 고도화는 일본 과점 STO 시장 진입과 중장기 외형 성장을 위한 전략적 포석이다. 다만 2025년 영업현금흐름이 순이익 대비 크게 낮은 수준에 그친 점, 부채비율의 지속 상승, CB 희석 가능성, 계절별 이익 변동성 등은 균형 있게 주시해야 할 리스크 요소다. STO 사업의 수율·납기 안정화 여부와 베트남 증설 가동률이 향후 기업 실적의 방향성을 결정하는 핵심 변수가 될 것이며, 이를 중심으로 분기 실적 추이를 면밀히 추적하는 것이 중요하다.",
+   "en": "Tiger Elec is a specialist ultra-high-layer-count PCB manufacturer for semiconductor inspection, having endured two years of operating losses in 2023–2024 due to a sector downturn and Vietnam factory ramp-up costs before achieving a full-year turnaround in 2025. The Q1 2026 record result validates the structural thesis for HBM and memory-test PCB demand alongside cumulative ASP gains from a higher mix of high-spec products. The KRW 30 bn CB issuance to fund MLB expansion and STO line upgrades represents a strategic move to penetrate the Japanese-dominated STO market and sustain longer-term topline growth. However, the wide gap between FY2025 reported earnings and operating cash flow, the steadily rising debt-to-equity ratio, potential CB dilution, and quarter-to-quarter earnings variability are risk factors that warrant balanced monitoring. STO yield and delivery stabilization and Vietnam utilization rates will be the primary determinants of the company's earnings trajectory going forward, making quarterly result tracking around these milestones the most important analytical focus."
+  }
+ },
+ "sources": [
+  "https://www.butler.works/ko/companies/00617314",
+  "https://m.thinkpool.com/compDiscuss/cont/1026282",
+  "https://m.irgo.co.kr/IR-COMP/219130/%ED%83%80%EC%9D%B4%EA%B1%B0%EC%9D%BC%EB%A0%89-%EA%B8%B0%EC%97%85%EC%A0%95%EB%B3%B4",
+  "https://ssl.pstatic.net/imgstock/upload/research/company/1714434179121.pdf",
+  "https://w4.kirs.or.kr/download/research/240124_%ED%83%80%EC%9D%B4%EA%B1%B0%EC%9D%BC%EB%A0%89.pdf",
+  "https://comp.fnguide.com/SVO2/ASP/SVD_Main.asp?gicode=A219130",
+  "https://kind.krx.co.kr/common/disclsviewer.do?method=search&acptno=20250319000859&docno=&viewerhost=",
+  "http://www.thinkpool.com/itemanal/i/index.jsp?code=219130",
+  "https://comp.wisereport.co.kr/wiseReport/summary/ReportSummary.aspx?cn=&cmp_cd=025750",
+  "https://m.irgo.co.kr/IR-COMP/161390/%ED%95%9C%EA%B5%AD%ED%83%80%EC%9D%B4%EC%96%B4%EC%95%A4%ED%85%8C%ED%81%AC%EB%86%80%EB%A1%9C%EC%A7%80-IR-PAGE",
+  "https://info.zzangnews.com/2026/06/2026_091543041.html",
+  "https://kind.krx.co.kr/corpgeneral/irschedule.do?method=searchIRScheduleMain&gubun=iRSchedule",
+  "https://www.incruit.com/company/3382448/",
+  "http://www.dailyinvest.kr/news/articleView.html?idxno=58387",
+  "https://stockinfo7.com/jji/view/852815",
+  "https://www.thebell.co.kr/free/content/ArticleView.asp?key=202305261605410840104121&lcode=00",
+  "http://www.dailyinvest.kr/news/articleView.html?idxno=51626",
+  "https://www.kpca.or.kr/kor/activity/sub05?viewMode=view&page=74&idx=1691"
+ ],
+ "v": 2,
+ "model": "claude-sonnet-4-6",
+ "ticker": "219130",
+ "name": "타이거일렉",
+ "name_en": "TIGER ELEC CO.,LTD.",
+ "sector": "전자·부품",
+ "categories": [
+  "전자·부품"
+ ],
+ "market": "코스닥",
+ "reportDate": "2026-06-18",
+ "reportTs": "2026-06-18 01:38",
+ "dataDate": "20260617",
+ "quant": {
+  "asOf": "2026-06-17",
+  "fs_basis": "연결(CFS) · DART 공시 확정치 · 지배주주 기준 순이익",
+  "annual": [
+   {
+    "year": 2025,
+    "rev": 80678580109,
+    "op": 7219453124,
+    "np": 5271825225,
+    "np_owner": 5271825225,
+    "equity": 58255502349,
+    "equity_owner": 58255502349,
+    "liab": 31998999193,
+    "cfo": 526684643,
+    "eps_basic": 835,
+    "opm": 8.9,
+    "roe": 9.0,
+    "debt_ratio": 54.9
+   },
+   {
+    "year": 2024,
+    "rev": 61822374891,
+    "op": -1917120511,
+    "np": 274948716,
+    "np_owner": 274948716,
+    "equity": 52961621182,
+    "equity_owner": 52961621182,
+    "liab": 24147984217,
+    "cfo": 192126270,
+    "eps_basic": 44,
+    "opm": -3.1,
+    "roe": 0.5,
+    "debt_ratio": 45.6
+   },
+   {
+    "year": 2023,
+    "rev": 48569682585,
+    "op": -3076374667,
+    "np": -2557794000,
+    "np_owner": -2557794000,
+    "equity": 52802721212,
+    "equity_owner": 52802721212,
+    "liab": 18348159679,
+    "cfo": 80302778,
+    "eps_basic": -405,
+    "opm": -6.3,
+    "roe": -4.8,
+    "debt_ratio": 34.7
+   },
+   {
+    "year": 2022,
+    "rev": 58072250651,
+    "op": 3114183364,
+    "np": 3590222364,
+    "np_owner": 3590222364,
+    "equity": 55445585445,
+    "equity_owner": 55445585445,
+    "liab": 17224125675,
+    "cfo": 7128240172,
+    "eps_basic": 569,
+    "opm": 5.4,
+    "roe": 6.5,
+    "debt_ratio": 31.1
+   }
+  ],
+  "quarterly": [
+   {
+    "q": "2025Q1",
+    "rev": 17015530857,
+    "op": 1001902339,
+    "np_owner": 797202890
+   },
+   {
+    "q": "2025Q2",
+    "rev": 19236196609,
+    "op": 2899010852,
+    "np_owner": 1268091331
+   },
+   {
+    "q": "2025Q3",
+    "rev": 20374571398,
+    "op": 1035217747,
+    "np_owner": 1308609133
+   },
+   {
+    "q": "2025Q4",
+    "rev": 24052281245,
+    "op": 2283322186,
+    "np_owner": 1897921871
+   },
+   {
+    "q": "2026Q1",
+    "rev": 26835480439,
+    "op": 3515279427,
+    "np_owner": 2841357211
+   }
+  ],
+  "valuation": {
+   "price": 67000,
+   "mcap": 0.4231,
+   "shares": 6314290,
+   "total_shares": 6314290,
+   "wavg_shares": 6313563,
+   "per": 57.8,
+   "eps": 1159,
+   "pbr": 6.91,
+   "bps": 9694,
+   "roe_ttm": 12.7,
+   "ttm_window": "2025Q2~2026Q1",
+   "ttm_np_owner": 7315979546,
+   "pbr_krx": 7.53,
+   "bps_krx": 9226.0,
+   "basis": "PER·EPS·PBR·BPS 모두 자체 산출(네이버·토스와 동일 방식) · 배당은 DART 공시 주당현금배당금(보완:KRX) ÷ 현재가",
+   "dps": 0.0,
+   "div": 0.0
+  }
+ }
+}

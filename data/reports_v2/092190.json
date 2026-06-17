@@ -1,0 +1,356 @@
+{
+ "title": {
+  "ko": "적자 터널 빠져나온 광반도체, 차세대 성장 변곡점",
+  "en": "Photonics Leader Exits Loss Cycle, Targeting Next-Gen Growth Inflection"
+ },
+ "lead": {
+  "ko": "2022~2023년 합산 1,350억원을 초과하는 영업손실을 겪은 서울바이오시스는 2024년 영업흑자 전환 후 2025년 연간 영업이익을 사실상 균형점(2.3억원)에 맞추고, 2025년 4분기·2026년 1분기 두 분기 연속 영업흑자를 유지하며 마이크로LED·VCSEL을 통한 프리미엄 광반도체 기업으로의 전환을 모색하고 있다.",
+  "en": "After posting combined operating losses exceeding KRW 135 billion in 2022–2023, Seoul Viosys returned to operating profit in 2024, reached near-breakeven for full-year 2025, and sustained consecutive operating profits in Q4 2025 and Q1 2026, as it pivots toward premium photonics via Micro LED and VCSEL."
+ },
+ "keypoints": [
+  {
+   "ko": "2025년 연간 영업이익 2.3억원(사실상 손익분기점)으로 2년 연속 적자 구간 탈출, 2025Q4(151억원)·2026Q1(103.7억원) 두 분기 연속 영업흑자 지속",
+   "en": "Full-year 2025 operating profit at near-breakeven (KRW 230M), breaking two consecutive years of losses; operating profitability sustained in Q4 2025 (KRW 15.1B) and Q1 2026 (KRW 10.4B)"
+  },
+  {
+   "ko": "UV LED 세계 1위 점유율(바이오레즈/Violeds) 6년 이상 연속 유지, 글로벌 UV LED 시장은 2026~2035년 연평균 23% 이상 성장 전망",
+   "en": "Maintains global #1 UV LED share (Violeds brand) for 6+ consecutive years; global UV LED market projected to grow at 23%+ CAGR through 2026–2035"
+  },
+  {
+   "ko": "세계 최초 RGB 원칩 마이크로LED 기술(WICOP Pixel) 양산 착수 및 VCSEL 전방시장 적용 진행 중, AR 글라스 모듈 사업재편계획 산업부 승인(2026년 4월)",
+   "en": "World-first RGB one-chip Micro LED (WICOP Pixel) in mass production and VCSEL entering front-market deployment; AR glasses display module business officially approved by Korea's MoTIE in April 2026"
+  },
+  {
+   "ko": "2026년 2분기 매출 가이던스 2,100억원(범위 2,050~2,150억원), '글로벌 전방시장 수요 증가' 근거 제시 — 2026Q1 실적은 가이던스(1,950억원) 대비 3.7% 소폭 하회",
+   "en": "Q2 2026 revenue guidance of KRW 210 billion (range: KRW 205–215B) citing global demand growth; Q1 2026 actual revenue missed guidance (KRW 195B) by 3.7%"
+  },
+  {
+   "ko": "부채비율 2023년 689.1%→2025년 322.5%로 대폭 개선, 영업현금흐름은 4개년 연속 600억원 이상 유지해 재무 완충 역할",
+   "en": "Debt-to-equity ratio improved sharply from 689.1% (2023) to 322.5% (2025); operating cash flow exceeded KRW 60 billion for four consecutive years, providing a financial buffer"
+  }
+ ],
+ "business": {
+  "ko": "서울바이오시스는 2002년 설립된 광반도체 소자 전문기업으로, 모회사 서울반도체(코스닥 046890)와 함께 자외선(UV)부터 가시광선·적외선(IR)까지 200nm~1,600nm 전 파장대 LED·레이저 제품 포트폴리오를 갖추고 있다. 사업은 크게 ①자동차용·조명·디스플레이 BLU용 가시광 LED 칩(대부분 서울반도체向 납품), ②UV LED(바이오레즈·Violeds 브랜드, 살균·정수·UV 경화 응용), ③마이크로LED 디스플레이(WICOP Pixel 기반), ④VCSEL(빅셀, 3D 센서·AI 광통신·자율주행 LiDAR용)로 구성된다. 매출의 주요 부분은 모회사 서울반도체로의 LED 칩 공급에서 발생하며, UV LED·마이크로LED·VCSEL 모듈은 외부 고객에게 직접 판매한다. 핵심 기술 경쟁력은 '와이캅(WICOP)'—와이어와 별도 패키지 없이 LED 칩을 PCB에 직접 실장하는 노와이어 기술—으로, 광밀도·열전도율이 높고 소형화에 유리하다. 세계 최초로 RGB 3칩을 하나의 기판에 집적한 'WICOP Pixel' 기술은 마이크로LED 제조 원가를 기존 대비 최대 3분의 1 수준으로 낮출 수 있는 것으로 파악된다. UV LED 분야에서는 6년 이상 연속 세계 1위 점유율을 보유하며, 서울반도체와 합산 1만 5,000개 이상의 특허를 앞세워 중국 업체의 해외 진출을 IP 장벽으로 견제하고 있다. 주요 경쟁사로는 Nichia(일본), Lumileds, Crystal IS 등이 있으나, UV LED 및 WICOP 기반 마이크로LED 영역에서의 특허 장벽이 높게 평가된다.",
+  "en": "Founded in 2002, Seoul Viosys is a photonics semiconductor specialist and subsidiary of Seoul Semiconductor (KOSDAQ: 046890), offering a full-spectrum product portfolio from UV (200nm) to IR (1,600nm). The business comprises: ① visible LED chips for automotive lighting, general illumination, and display BLU (largely supplied to the parent company); ② UV LED (Violeds brand) for sterilization, water purification, and UV curing; ③ Micro LED displays based on WICOP Pixel technology; and ④ VCSEL (Vicsel) for 3D sensing, AI optical interconnects, and LiDAR. Most revenue originates from LED chip supply to Seoul Semiconductor, while UV LED, Micro LED, and VCSEL modules are sold directly to external customers. The company's core technological moat is WICOP—a no-wire, package-free chip mounting technology that enhances optical density, thermal conductivity, and miniaturization. Its world-first WICOP Pixel, which integrates RGB into a single substrate, can reduce Micro LED manufacturing costs by up to two-thirds. In UV LED, the company has held the global #1 market share for six or more consecutive years; combined with Seoul Semiconductor, the group holds 15,000+ patents, creating formidable IP barriers against Chinese competitors' overseas expansion. Key rivals include Nichia (Japan), Lumileds, and Crystal IS, but Seoul Viosys's IP position in UV LED and WICOP-based Micro LED is widely acknowledged as a significant competitive advantage."
+ },
+ "earnings": {
+  "ko": "2022·2023년 서울바이오시스는 각각 영업손실 621억원, 729억원을 기록하며 연속 적자 국면을 겪었다. 전방 수요 부진과 마이크로LED·VCSEL 등 차세대 기술 투자비용 집중이 주된 원인이었다. 2024년에는 매출이 6,992억원(전년 대비 +38.7%)으로 급증하며 영업이익 34.9억원 흑자전환에 성공했고, 지배주주 귀속 순이익도 71억원으로 돌아섰다. 2025년 연간 매출은 7,638억원(+9.2%)으로 성장을 이어갔으나, IT 디스플레이 BLU 부문의 비용 부담 지속으로 영업이익은 2.3억원에 그쳐 사실상 손익분기점 수준이었다. 2025년 지배주주 귀속 순손실은 136억원으로 재확대되었으나, 영업현금흐름은 803억원으로 안정적이었다. 분기별로는 뚜렷한 개선 흐름이 확인된다. 2025Q1 영업손실 131억원에서 Q2(△9억원)·Q3(△8억원)으로 적자 폭이 급격히 좁아졌고, Q4에는 영업이익 151억원(영업이익률 약 6.8%)을 달성했다. 이 기조는 2026Q1에도 유지되어 매출 1,878억원, 영업이익 103.7억원(영업이익률 약 5.5%)으로 전년동기 대비 흑자전환했다. 부채비율은 2023년 689.1% 정점에서 2025년 322.5%까지 낮아졌으며, 4개년 연속 600억원 이상(2024년 최고 954억원)의 영업현금흐름이 재무 완충 역할을 지속하고 있다.",
+  "en": "In 2022 and 2023, Seoul Viosys posted operating losses of KRW 62.1 billion and KRW 72.9 billion, respectively, driven by sluggish end-market demand and front-loaded R&D investments in Micro LED and VCSEL. A sharp reversal came in 2024, when revenue surged 38.7% to KRW 699.2 billion and operating profit turned positive at KRW 3.5 billion, with net profit attributable to controlling shareholders of KRW 7.1 billion. Revenue growth continued into 2025, rising 9.2% to KRW 763.8 billion, but profitability remained near breakeven (operating profit: KRW 230 million) as IT display BLU cost headwinds persisted. Net loss attributable to owners widened to KRW 13.6 billion, yet operating cash flow held firm at KRW 80.3 billion. The quarterly trend reveals a more encouraging trajectory: from an operating loss of KRW 13.1 billion in Q1 2025, losses narrowed sharply in Q2 (KRW –920M) and Q3 (KRW –780M), before swinging to a KRW 15.1 billion profit in Q4 2025 (OPM: ~6.8%). Q1 2026 sustained this momentum with KRW 10.4 billion in operating profit (OPM: ~5.5%) on revenue of KRW 187.8 billion, representing a year-over-year swing to profitability. The debt-to-equity ratio peaked at 689.1% in 2023 and has since declined to 322.5% in 2025. Operating cash flow has exceeded KRW 60 billion in each of the past four years (peaking at KRW 95.4 billion in 2024), providing a meaningful financial buffer independent of accounting profit cycles."
+ },
+ "industry": {
+  "ko": "글로벌 UV LED 시장은 2025년 약 16억 달러 규모로, 2026~2035년 연평균 23.5% 이상의 고성장이 전망된다. 수은 램프 대체 규제 강화, 살균·정수·UV 경화 수요 확대, 에너지 효율성에 대한 산업적 요구가 주된 성장 촉매이며, UV-C(살균) 세그먼트가 전체 시장에서 가장 큰 비중을 차지한다. 마이크로LED 시장은 자동차 콕핏 디스플레이, 대형 사이니지, AR/VR 헤드셋을 중심으로 성장 중이며, 약 60억 달러 규모로 전망된다. 자동차 디스플레이 영역은 '콕핏 플랫폼 경쟁 단계'로 진입, 초대형화·투명화·HUD 고도화가 핵심 키워드로 부상하면서 고밝기·장수명이 강점인 마이크로LED 채택이 가속될 전망이다. VCSEL 시장은 AI 데이터센터 광통신·자율주행 LiDAR·AR/VR 3D 센싱과 연동되어 구조적 성장이 기대되는 영역이다. 반면 전통 LED 조명·BLU 영역에서는 중국 업체들의 저가 공세가 마진을 지속적으로 압박한다. 서울바이오시스는 UV LED의 IP 장벽과 WICOP Pixel의 원가 우위를 바탕으로 고부가 응용시장에 집중하는 전략적 포지셔닝으로 차별화를 도모하고 있다.",
+  "en": "The global UV LED market was valued at approximately USD 1.6 billion in 2025 and is projected to expand at a CAGR of over 23.5% through 2035, driven by tightening mercury-lamp replacement regulations, expanding disinfection, water purification, and UV curing applications, and rising industrial demand for energy efficiency; UV-C (sterilization) represents the largest segment. The Micro LED market is emerging around automotive cockpit displays, large-format signage, and AR/VR headsets, with total addressable market estimated at around USD 6 billion. In automotive displays, competition has entered a 'cockpit platform' phase—with ultra-large format, transparency, and advanced HUD as key themes—favoring Micro LED's brightness and longevity advantages over OLED. VCSEL represents a structurally growing domain aligned with AI data center optical interconnects, autonomous driving LiDAR, and AR/VR 3D sensing. In contrast, conventional LED lighting and BLU segments face persistent margin erosion from aggressive Chinese price competition. Seoul Viosys is positioned to capture premium application markets by leveraging its UV LED IP fortress and WICOP Pixel's manufacturing cost advantages."
+ },
+ "outlook": {
+  "ko": "회사는 2026년 2분기 연결기준 매출액을 2,100억원(범위: 2,050~2,150억원)으로 공시하며 '글로벌 전방시장 수요 증가'를 근거로 제시했다. 다만 2026년 1분기 실제 매출(1,878억원)이 가이던스(1,950억원)를 3.7% 하회한 점은 집행 리스크로 유의할 필요가 있다. 전략적으로 자동차용 광반도체 등 고부가가치 제품 중심 매출 확대와 계절적 비수기 완화가 2분기 이후 매출 탄력의 근거로 제시되었다. 마이크로LED 기반 광통신 및 AR 사업은 차세대 핵심 성장 분야로 공식화되었으며, 2026년 4월 산업통상자원부로부터 'AR 글라스용 디스플레이 모듈' 사업재편계획 승인을 받아 신규 시장 진출의 제도적 기반을 마련했다. VCSEL은 \"AI·AR/VR·자율주행 산업과 함께 성장할 수 있는 기술\"로, R&D 완성 단계에서 전방시장 순차 적용 단계로 전환 중이다. 중장기적으로 WICOP Pixel 기반 자동차 마이크로LED 디자인윈 확대와 UV LED의 의료·가전·농업 영역 침투 가속이 성장 가시성을 결정짓는 핵심 변수로 평가된다.",
+  "en": "The company disclosed Q2 2026 revenue guidance of KRW 210 billion (range: KRW 205–215 billion), citing global end-market demand growth. However, Q1 2026 actual revenue of KRW 187.8 billion fell 3.7% short of guidance (KRW 195 billion), flagging modest execution risk to monitor. The Q2 growth case rests on easing seasonal headwinds and a shift toward higher-value automotive photonics products. Micro LED-based optical communications and AR applications have been formally designated as next-generation growth pillars; in April 2026, Seoul Viosys received government approval from Korea's Ministry of Trade, Industry, and Energy for its AR glasses display module business restructuring plan. VCSEL, described internally as 'a technology poised to grow alongside AI, AR/VR, and autonomous driving industries,' is transitioning from R&D completion to sequential front-market deployment. Over the medium term, the pace of WICOP Pixel automotive Micro LED design-win expansion and deeper UV LED penetration into medical, appliance, and agriculture segments will be the decisive growth visibility drivers."
+ },
+ "valuation_comment": {
+  "ko": "현재 주가는 주당순자산(BPS 1,993원) 대비 상당한 프리미엄 구간에 형성되어 있어, 단순 장부가치보다 마이크로LED·VCSEL·UV LED 글로벌 확장이라는 성장 옵션의 기대가 선반영된 구조임을 시사한다. 주당이익(EPS 124원)을 기준으로 산출되는 현재 주가 배수는 IT 부품 업종 평균을 큰 폭으로 상회하는 수준으로, 이익 규모 자체보다 성장 전환 스토리에 프리미엄이 부여되어 있다. 2023~2025년 영업 적자 또는 사실상 제로 수준의 이익 구간에서는 이익 기반 밸류에이션을 적용하기 어려웠으나, 2025년 4분기부터 두 분기 연속 영업흑자가 유지되면서 이익 정상화 여부가 밸류에이션의 핵심 기준점으로 부상했다. 배당은 현재 지급되지 않아 배당수익률은 업종 평균을 크게 하회한다. 부채비율이 여전히 높은 수준인 만큼, 이익 회복 지속과 재무구조 추가 개선이 현 프리미엄 밸류에이션의 선결 조건으로 평가된다.",
+  "en": "The current share price reflects a substantial premium over book value per share (BPS: KRW 1,993), suggesting the market is pricing in growth options—Micro LED, VCSEL, and global UV LED expansion—well ahead of realized earnings. The price-to-earnings multiple based on EPS (KRW 124) significantly exceeds the IT components sector average, indicating that a growth re-rating premium has been assigned beyond current earnings capacity. During the 2023–2025 period of operating losses or near-zero profits, earnings-based valuation was largely inapplicable; the return to sustained quarterly profitability from Q4 2025 now makes earnings normalization the critical valuation anchor. No dividends are currently being paid, so the dividend yield falls well short of sector averages. Given still-elevated financial leverage, continued profitability improvement and further debt ratio reduction remain prerequisite conditions for the current premium valuation to be sustained."
+ },
+ "bull": [
+  {
+   "title": {
+    "ko": "UV LED 세계 1위 + 고성장 구조적 시장 수혜",
+    "en": "Global UV LED Leader in a High-Growth Structural Market"
+   },
+   "body": {
+    "ko": "서울바이오시스는 UV LED(바이오레즈) 분야에서 세계 1위 점유율을 6년 이상 연속 유지하고 있다. 글로벌 UV LED 시장은 수은 램프 대체 규제와 살균·정수·경화 수요 확대로 2026~2035년 연평균 23.5% 이상의 고성장이 전망되며, 이는 서울바이오시스의 중장기 매출 기반을 구조적으로 뒷받침한다. 약 6,000개 이상의 광반도체 특허가 형성하는 높은 IP 장벽은 중국 업체의 해외 시장 침투를 제한하고, 프리미엄 포지셔닝을 보호하는 핵심 방어선이다.",
+    "en": "Seoul Viosys has held the global #1 UV LED (Violeds) market position for six or more consecutive years. The global UV LED market is forecast to grow at a CAGR of 23.5%+ through 2026–2035, driven by mercury lamp replacement mandates and surging demand for disinfection, water purification, and UV curing—structurally underpinning the company's medium-term revenue base. Some 6,000+ photonics patents constitute a high IP barrier that restricts Chinese competitors' access to overseas markets, serving as a critical defensive moat."
+   }
+  },
+  {
+   "title": {
+    "ko": "마이크로LED·VCSEL: 고부가 차세대 성장 촉매",
+    "en": "Micro LED & VCSEL: High-Value Next-Generation Growth Catalysts"
+   },
+   "body": {
+    "ko": "세계 최초 RGB 원칩 마이크로LED(WICOP Pixel)는 칩 제조 및 SMT 공정 비용을 기존 대비 3분의 1로 낮춰, 자동차 콕핏·AR 글라스·대형 사이니지 등 고마진 응용처 진입에 유리한 원가 우위를 확보했다. VCSEL은 AI 데이터센터 광통신·자율주행·AR/VR 등 빠르게 성장하는 전방 수요와 연동되어 구조적 중장기 성장이 기대된다. 2026년 4월 산업부로부터 AR 글라스 모듈 사업재편계획 승인을 받아 신사업 진출의 제도적 근거가 마련된 점도 긍정적이다.",
+    "en": "The world-first RGB one-chip Micro LED (WICOP Pixel) reduces chip manufacturing and SMT process costs by up to two-thirds, providing a decisive cost advantage for entry into high-margin markets such as automotive cockpits, AR glasses, and large-format signage. VCSEL is aligned with fast-growing demand in AI data center optical interconnects, autonomous driving, and AR/VR, offering structural long-term growth potential. The April 2026 government approval for the AR glasses display module business restructuring plan provides an institutional foundation for new market entry."
+   }
+  },
+  {
+   "title": {
+    "ko": "이익 정상화 흐름 + 견조한 영업현금흐름",
+    "en": "Earnings Normalization Trend and Robust Operating Cash Flow"
+   },
+   "body": {
+    "ko": "2025년 4분기 영업이익 151억원에 이어 2026년 1분기 영업이익 103.7억원을 달성하며 두 분기 연속 영업흑자를 확인했다. 회사가 제시한 2026년 2분기 매출 가이던스는 2,100억원으로, 계절적 비수기 완화와 자동차용 고부가 제품 확대가 근거로 제시되었다. 2022년 이후 4개년 연속 600억원 이상의 영업현금흐름이 실현되어, 회계적 손익과 독립적으로 현금 창출 기반이 안정적으로 유지되고 있다.",
+    "en": "Following KRW 15.1 billion in operating profit in Q4 2025, the company posted KRW 10.4 billion in Q1 2026, confirming two consecutive quarters of operating profitability. Q2 2026 revenue guidance of KRW 210 billion, supported by seasonal improvement and automotive photonics expansion, indicates continued momentum. Operating cash flow has exceeded KRW 60 billion in each of the past four years, underscoring a healthy cash generation base independent of accounting profit volatility."
+   }
+  }
+ ],
+ "bear": [
+  {
+   "title": {
+    "ko": "높은 부채비율·모회사 의존 구조적 취약성",
+    "en": "Elevated Debt Ratio and Structural Revenue Dependency on Parent Company"
+   },
+   "body": {
+    "ko": "2025년 부채비율은 322.5%로 2023년 689.1% 대비 크게 개선되었으나, 동업종 대비 여전히 높은 수준이다. 매출의 주요 부분이 모회사 서울반도체向 LED 칩 납품에서 발생하므로, 서울반도체의 수요·재고 정책 변화에 매출이 직접 영향을 받는 구조다. IT 디스플레이 BLU 부문은 중국 경쟁사의 저가 공세로 마진 확보가 어려운 상황이 지속되어, 전체 수익성 개선의 발목을 잡는 요인으로 작용하고 있다.",
+    "en": "The debt-to-equity ratio of 322.5% in 2025 represents a meaningful improvement from the 689.1% peak in 2023, yet remains elevated relative to sector peers. A substantial portion of revenue is generated by supplying LED chips to parent Seoul Semiconductor, making the top line directly sensitive to the parent's demand and inventory management decisions. The IT display BLU segment continues to face structural margin compression from aggressive Chinese price competition, constraining overall profitability improvement."
+   }
+  },
+  {
+   "title": {
+    "ko": "마이크로LED 상용화 일정 불확실성",
+    "en": "Uncertain Timeline for Micro LED Mass-Market Commercialization"
+   },
+   "body": {
+    "ko": "마이크로LED의 자동차·AR/VR 시장 대규모 침투는 아직 초기 단계이며, 수익 기여가 가시화되는 시점이 명확히 확인되지 않은 상황이다. 양산 초기 단계에서 수율 불안정에 따른 재료비 상승·고객 샘플 비용 발생은 단기 수익성을 압박할 수 있다. 2025년 연간 영업이익이 사실상 제로 수준에 그친 사례에서 드러나듯, 신사업 투자비와 기존 사업 마진 사이의 균형 유지가 단기적으로 쉽지 않은 과제로 남아 있다.",
+    "en": "Micro LED adoption at scale in automotive and AR/VR markets remains at an early stage, and the timeline for material revenue contribution is not yet clearly visible. Early-stage mass production typically involves yield instability, higher material costs, and unpaid customer samples that compress near-term margins. The near-zero full-year 2025 operating profit illustrates how difficult it is to simultaneously absorb new technology investment costs while maintaining acceptable margins on the existing business."
+   }
+  },
+  {
+   "title": {
+    "ko": "실적 가이던스 달성률 변동성",
+    "en": "Volatility in Guidance Achievement Rate"
+   },
+   "body": {
+    "ko": "2026년 1분기 실제 매출(1,878억원)은 자체 가이던스(1,950억원)를 3.7% 하회했으며, 2025년 4분기에는 가이던스(1,850억원) 대비 실적(2,203억원)이 크게 상회하는 등 예측 정확도 변동성이 양방향으로 존재한다. 이 같은 가이던스 오차율은 단기 실적 예측을 어렵게 하고 주가 변동성을 높이는 요인이 될 수 있다. 2026년 2분기 가이던스(2,100억원)는 전분기 대비 12% 이상의 성장을 상정하고 있어, 달성 여부를 면밀히 모니터링할 필요가 있다.",
+    "en": "Q1 2026 actual revenue (KRW 187.8 billion) missed company guidance (KRW 195 billion) by 3.7%, while Q4 2025 materially exceeded its own guidance (actual KRW 220.3 billion vs. guided KRW 185 billion), highlighting bidirectional guidance volatility. Such forecasting variance complicates near-term earnings prediction and can amplify share price swings. Q2 2026 guidance of KRW 210 billion implies sequential revenue growth of over 12%, warranting close monitoring for execution."
+   }
+  }
+ ],
+ "risks": [
+  {
+   "cat": {
+    "ko": "중국 업체 가격 경쟁 및 특허 분쟁",
+    "en": "Chinese Competitor Price War and Patent Disputes"
+   },
+   "body": {
+    "ko": "중국 LED 제조업체들은 자국 시장 포화와 구조조정 압력 속에서 해외 시장 확장을 도모하고 있으며, 조명·BLU 같은 범용 LED 영역에서의 지속적 저가 경쟁은 서울바이오시스의 해당 부문 마진을 구조적으로 압박한다. UV LED·마이크로LED 고부가 영역은 특허 장벽으로 일정 부분 보호되고 있으나, 특허 소송 대응 비용과 법적 리스크도 함께 수반된다. 중국 업체들의 기술력 향상 속도가 예상보다 빠를 경우 IP 방어선이 약화될 가능성도 배제할 수 없다.",
+    "en": "Chinese LED manufacturers are increasingly pursuing overseas market expansion amid domestic saturation and consolidation pressure; ongoing low-price competition in commodity LED lighting and BLU segments structurally compresses margins. While IP barriers protect UV LED and Micro LED premium segments to a degree, patent litigation costs and legal risk are ongoing concerns. Faster-than-expected improvement in Chinese competitors' technological capabilities could erode the IP defensive line over time."
+   }
+  },
+  {
+   "cat": {
+    "ko": "전방 수요 사이클 및 IT·자동차 세트 수요 변동",
+    "en": "Cyclical End-Market Demand and IT/Automotive Set Demand Volatility"
+   },
+   "body": {
+    "ko": "LED 소자 수요는 IT·가전·자동차 세트 산업의 경기 사이클과 긴밀하게 연동된다. 글로벌 경기 둔화, 완성차 생산 가동률 하락, 스마트폰·TV 판매 위축은 모회사 서울반도체의 수요를 즉각 감소시키고, 서울바이오시스 매출에 직접 파급된다. 2022~2023년 두 해에 걸쳐 합산 1,350억원을 초과하는 영업손실이 발생한 것은 이 같은 사이클 리스크를 방증한다.",
+    "en": "LED component demand closely tracks cyclical patterns in IT, consumer electronics, and automotive end markets. A global economic slowdown, reduced vehicle production rates, or weak smartphone and TV sales would directly reduce demand from Seoul Semiconductor and ripple through to Seoul Viosys' revenue. Combined operating losses exceeding KRW 135 billion over 2022–2023 demonstrate the material impact of such cyclical downturns."
+   }
+  },
+  {
+   "cat": {
+    "ko": "마이크로LED·VCSEL 기술 및 상업화 리스크",
+    "en": "Micro LED and VCSEL Technology and Commercialization Risk"
+   },
+   "body": {
+    "ko": "WICOP Pixel 기반 마이크로LED와 VCSEL은 양산 초기 단계로, 수율 안정화·원가 하락 곡선·고객사 채택 속도가 당초 예상보다 지연될 가능성이 있다. AR 글라스·자율주행 시장은 규제·기술·소비자 수용성 측면에서 불확실성이 크다. 차세대 기술에 대한 지속적 R&D 투자는 단기 수익성을 제한하는 요인으로, 기술 성숙 전 외부 환경이 악화될 경우 재무적 부담이 가중될 수 있다.",
+    "en": "WICOP Pixel-based Micro LED and VCSEL are at early stages of mass production; yield stabilization, cost reduction curves, and customer adoption timelines may prove slower than initially anticipated. The AR glasses and autonomous driving markets carry substantial regulatory, technological, and consumer adoption uncertainty. Ongoing R&D spending on next-generation technologies structurally limits near-term profitability, and an adverse macro environment prior to technology maturity could amplify financial stress."
+   }
+  }
+ ],
+ "checkpoints": [
+  {
+   "when": {
+    "ko": "2026년 8월 중순",
+    "en": "Mid-August 2026"
+   },
+   "what": {
+    "ko": "2026년 2분기 실적 발표 — 가이던스(2,100억원)로 제시한 매출 달성 여부 및 2026Q1(103.7억원) 수준의 영업이익 유지 여부가 핵심. 두 분기 연속 영업이익이 이어진다면 이익 정상화 신뢰도가 높아진다.",
+    "en": "Q2 2026 earnings release — Key check: whether revenue meets the KRW 210 billion guidance and whether operating profit sustains Q1 2026 levels (KRW 10.4 billion). A second consecutive double-digit operating profit would substantially raise earnings normalization credibility."
+   }
+  },
+  {
+   "when": {
+    "ko": "2026년 3~4분기 중",
+    "en": "Q3–Q4 2026"
+   },
+   "what": {
+    "ko": "자동차용 마이크로LED(WICOP Pixel) 디자인윈 신규 공개 및 양산 납기 일정 — 특정 완성차 OEM과의 공급 계약 또는 프로그램 진입이 공시될 경우 중장기 매출 가시성이 크게 높아진다.",
+    "en": "New automotive Micro LED (WICOP Pixel) design-win announcements and mass production delivery schedules — Any disclosed supply agreement or program entry with a major OEM would materially improve medium-term revenue visibility."
+   }
+  },
+  {
+   "when": {
+    "ko": "2026년 하반기",
+    "en": "H2 2026"
+   },
+   "what": {
+    "ko": "AR 글라스용 디스플레이 모듈 사업(산업부 재편계획 승인 후속) 추진 현황 — 시제품 공급·파일럿 고객 확보·양산 로드맵 업데이트 등 구체적 이정표가 사업 실현 가능성의 판단 근거가 된다.",
+    "en": "Progress on the AR glasses display module business (following April 2026 government restructuring approval) — Concrete milestones such as prototype supply, pilot customer acquisition, and mass-production roadmap updates will inform assessments of business viability."
+   }
+  },
+  {
+   "when": {
+    "ko": "2026년 연말(연간 결산)",
+    "en": "End of 2026 (Full-Year Results)"
+   },
+   "what": {
+    "ko": "2026년 연간 영업이익률 및 부채비율 방향 확인 — 분기 흑자가 연간 실적으로 이어지는지, 부채비율이 322.5%에서 추가 하락하는지를 점검해야 한다. 이익 지속성과 재무구조 개선이 동반될 때 밸류에이션 안정성 근거가 마련된다.",
+    "en": "Full-year 2026 operating margin and debt-to-equity ratio trajectory — Confirming whether quarterly profitability translates to a full-year profit, and whether the debt ratio declines further from 322.5%, will determine if both earnings sustainability and balance sheet improvement are progressing simultaneously."
+   }
+  },
+  {
+   "when": {
+    "ko": "2026~2027년 상시 모니터링",
+    "en": "Ongoing 2026–2027"
+   },
+   "what": {
+    "ko": "VCSEL 전방시장(AI 데이터센터 광통신·자율주행 LiDAR) 수주 및 공급 계약 동향 — AI 인프라 투자 확대와 자율주행 기술 고도화에 따른 VCSEL 수주 공시 여부를 지속적으로 점검해야 한다.",
+    "en": "VCSEL end-market demand from AI data center optical interconnects and autonomous driving LiDAR — Any announced orders or supply agreements tied to expanding AI infrastructure and autonomous driving technology development should be monitored closely."
+   }
+  }
+ ],
+ "verdict": {
+  "body": {
+   "ko": "서울바이오시스는 2022~2023년 대규모 영업손실을 거쳐 2024년 흑자전환에 성공했고, 2025년 연간으로는 사실상 손익분기점 수준을 유지했으나 2025년 4분기·2026년 1분기 두 분기 연속 영업흑자를 달성하며 이익 정상화의 첫 발을 내디뎠다. UV LED 세계 1위 지위는 연평균 23% 이상 성장이 전망되는 글로벌 시장과 결합해 중장기 안정적 성장 기반이 되고 있으며, 세계 최초 RGB 원칩 마이크로LED(WICOP Pixel)·VCSEL은 자동차·AR/VR·AI 광통신 등 고부가 전방시장과 연결된 잠재적 성장 촉매로 평가된다. 반면 부채비율이 여전히 높은 편이며, 모회사 의존 매출 구조, 마이크로LED 상용화 일정 불확실성, 분기 가이던스 달성률 변동성은 주의해야 할 리스크 요인이다. 4개년 연속 600억원 이상의 영업현금흐름은 기술 투자와 재무 안정성 사이의 완충 역할을 하고 있다. 2026년 2분기 실적(가이던스 2,100억원)을 통해 이익 회복 신뢰성이 추가 검증되고, 자동차·AR향 마이크로LED 디자인윈의 구체화 속도가 향후 시장의 핵심 관심 사항이 될 전망이다. 이 보고서는 정보 제공을 목적으로 하며, 투자 권유가 아님을 밝힌다.",
+   "en": "Seoul Viosys navigated through heavy operating losses in 2022–2023, achieved a return to profitability in 2024, and essentially broke even for full-year 2025, before sustaining consecutive quarterly operating profits in Q4 2025 and Q1 2026—marking the early stages of an earnings normalization cycle. Its global #1 UV LED position, tied to a market projected to grow at 23%+ annually, underpins a reliable medium-term revenue foundation, while the world-first RGB one-chip Micro LED (WICOP Pixel) and VCSEL represent high-value growth catalysts linked to automotive, AR/VR, and AI optical interconnect markets. On the risk side, an still-elevated debt ratio, heavy parent-company revenue dependency, uncertain Micro LED commercialization timelines, and quarterly guidance execution volatility are meaningful concerns. Operating cash flow consistently above KRW 60 billion over four years provides a buffer between technology investment and financial stability. Q2 2026 results (guided at KRW 210 billion) will be an important next data point for earnings recovery credibility, and the pace at which automotive and AR Micro LED design wins materialize will remain the market's central focus. This report is provided for informational purposes only and does not constitute investment advice."
+  }
+ },
+ "sources": [
+  "http://www.seoulviosys.com/kr/company/press/press-release/press_view_contents.asp?idx=354",
+  "https://www.seoulviosys.com/kr/technology/violeds",
+  "https://www.seoulviosys.com/kr",
+  "http://www.seoulviosys.com/kr/product/PKG/?sub=12&seq=20",
+  "https://www.seoulviosys.com/kr/application/appliance",
+  "https://www.jobkorea.co.kr/company/42593531",
+  "https://www.seoulviosys.com/files/main-report/f5d99100-be44-4e35-b2f2-dd6e4e3b3746.pdf",
+  "https://www.seoulviosys.com/kr/product/new.asp",
+  "https://www.seoulviosys.com/kr/company/information",
+  "https://www.digitaltoday.co.kr/news/articleView.html?idxno=664457",
+  "https://alphasquare.co.kr/home/stock-summary?code=092190",
+  "https://m.thinkpool.com/compDiscuss/cont/1026044",
+  "https://kr.investing.com/equities/seoul-viosys-co-ltd-earnings",
+  "https://comp.fnguide.com/SVO2/ASP/SVD_main_chosunbiz.asp?pGB=1&gicode=A092190&NewMenuID=11&cID=CB&MenuYn=Y",
+  "https://m.irgo.co.kr/IR-COMP/092190/",
+  "https://news.nate.com/view/20260211n38452",
+  "https://www.investing.com/equities/seoul-viosys-co-ltd",
+  "https://valueline.co.kr/finance/mri/092190"
+ ],
+ "v": 2,
+ "model": "claude-sonnet-4-6",
+ "ticker": "092190",
+ "name": "서울바이오시스",
+ "name_en": "SEOUL VIOSYS CO., LTD.",
+ "sector": "전자·부품",
+ "categories": [
+  "전자·부품"
+ ],
+ "market": "코스닥",
+ "reportDate": "2026-06-18",
+ "reportTs": "2026-06-18 01:38",
+ "dataDate": "20260617",
+ "quant": {
+  "asOf": "2026-06-17",
+  "fs_basis": "연결(CFS) · DART 공시 확정치 · 지배주주 기준 순이익",
+  "annual": [
+   {
+    "year": 2025,
+    "rev": 763809147116,
+    "op": 225831786,
+    "np": -13622448242,
+    "np_owner": -13622448242,
+    "equity": 169883679260,
+    "equity_owner": 77829298807,
+    "liab": 547889526226,
+    "cfo": 80332717617,
+    "eps_basic": -341,
+    "opm": 0.0,
+    "roe": -17.5,
+    "debt_ratio": 322.5
+   },
+   {
+    "year": 2024,
+    "rev": 699232725004,
+    "op": 3487592223,
+    "np": 18090606055,
+    "np_owner": 7108122144,
+    "equity": 133929571681,
+    "equity_owner": 38752203265,
+    "liab": 661884283938,
+    "cfo": 95352392641,
+    "eps_basic": 157,
+    "opm": 0.5,
+    "roe": 18.3,
+    "debt_ratio": 494.2
+   },
+   {
+    "year": 2023,
+    "rev": 503960846284,
+    "op": -72949875244,
+    "np": -101695477014,
+    "np_owner": -88922175299,
+    "equity": 92945671478,
+    "equity_owner": 17828013841,
+    "liab": 640478073512,
+    "cfo": 63606814096,
+    "eps_basic": -2335,
+    "opm": -14.5,
+    "roe": -498.8,
+    "debt_ratio": 689.1
+   },
+   {
+    "year": 2022,
+    "rev": 438791591285,
+    "op": -62117967238,
+    "np": -93690297846,
+    "np_owner": -86447293443,
+    "equity": 167512347836,
+    "equity_owner": 79314751505,
+    "liab": 588482789441,
+    "cfo": 65539894373,
+    "eps_basic": -2299,
+    "opm": -14.2,
+    "roe": -109.0,
+    "debt_ratio": 351.3
+   }
+  ],
+  "quarterly": [
+   {
+    "q": "2025Q1",
+    "rev": 167806757438,
+    "op": -13149046642,
+    "np_owner": -13131214768
+   },
+   {
+    "q": "2025Q2",
+    "rev": 188143307953,
+    "op": -916558926,
+    "np_owner": -7899990047
+   },
+   {
+    "q": "2025Q3",
+    "rev": 187519818310,
+    "op": -778704940,
+    "np_owner": -4051546843
+   },
+   {
+    "q": "2025Q4",
+    "rev": 220339263415,
+    "op": 15070142294,
+    "np_owner": 11460303416
+   },
+   {
+    "q": "2026Q1",
+    "rev": 187795508810,
+    "op": 10371187521,
+    "np_owner": 7926827669
+   }
+  ],
+  "valuation": {
+   "price": 9500,
+   "mcap": 0.4357,
+   "shares": 45868383,
+   "total_shares": 45868383,
+   "wavg_shares": 45296158,
+   "per": 76.6,
+   "eps": 124,
+   "pbr": 4.77,
+   "bps": 1993,
+   "roe_ttm": 9.9,
+   "ttm_window": "2025Q2~2026Q1",
+   "ttm_np_owner": 5687679492,
+   "pbr_krx": 5.44,
+   "bps_krx": 1721.0,
+   "basis": "PER·EPS·PBR·BPS 모두 자체 산출(네이버·토스와 동일 방식) · 배당은 DART 공시 주당현금배당금(보완:KRX) ÷ 현재가",
+   "dps": 0.0,
+   "div": 0.0
+  }
+ }
+}
