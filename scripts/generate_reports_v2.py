@@ -680,6 +680,12 @@ def cross_check(tk, name, valuation):
     if gross_error(valuation.get("bps"), nv.get("bps")):
         issues.append(f"BPS {valuation.get('bps')}↔ref {nv.get('bps')}")
         valuation["bps"] = valuation["pbr"] = None
+    # 배당수익률 게이트 — 네이버 배당수익률과 30% 넘게 어긋나면 DPS 숨김.
+    #   액면분할(분할 전 DPS) 등 배당 오류를 자동 차단. 배당은 시점·특별배당 차이로 30% 허용.
+    our_div, nv_div = valuation.get("div"), nv.get("dividendyieldratio")
+    if our_div and nv_div and abs(our_div - nv_div) / abs(nv_div) > 0.30:
+        issues.append(f"배당 {our_div}%↔ref {nv_div}%")
+        valuation["dps"] = valuation["div"] = None
     if issues:
         log(f"  ❌ {name} 중대오류 차단 → 해당 지표 숨김: {' / '.join(issues)}")
     else:
