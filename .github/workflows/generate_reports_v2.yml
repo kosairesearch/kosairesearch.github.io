@@ -13,7 +13,16 @@ on:
         description: '시총 상위 N개 (tickers 비울 때 적용 / fill 청크 크기)'
         default: '10'
       fill_to:
-        description: '자동 백필: 시총 상위 N개를 다 채울 때까지 청크 단위로 self-chain (0=비활성)'
+        description: '자동 백필: 시총 상위 N위까지 채울 때까지 self-chain (0=비활성)'
+        default: '0'
+      fill_from:
+        description: '백필 시작 시총 순위(이 순위부터). 병렬 구간 분담용'
+        default: '0'
+      fill_shards:
+        description: '백필 샤드 총 개수(병렬 run 수). 1=단일'
+        default: '1'
+      fill_shard:
+        description: '이 run의 샤드 인덱스(0..shards-1)'
         default: '0'
       recover_batch_id:
         description: 'recover 모드용 배치 ID(비우면 최근 배치)'
@@ -60,6 +69,9 @@ jobs:
           REPORT_TICKERS: ${{ inputs.tickers }}
           REPORT_TOP_N: ${{ inputs.top_n }}
           REPORT_FILL_TO: ${{ inputs.fill_to }}
+          REPORT_FILL_FROM: ${{ inputs.fill_from }}
+          REPORT_FILL_SHARDS: ${{ inputs.fill_shards }}
+          REPORT_FILL_SHARD: ${{ inputs.fill_shard }}
           RECOVER_BATCH_ID: ${{ inputs.recover_batch_id }}
           BATCH_MAX_WAIT_SEC: '10800'
         run: |
@@ -92,9 +104,10 @@ jobs:
           echo "백필: 시작 $before → 종료 $after · 상위 ${{ inputs.fill_to }} 남은 $remaining"
           added=$(( after - before ))
           if [ "$remaining" -gt 0 ] && [ "$added" -gt 0 ]; then
-            echo "→ 다음 청크 재실행(남은 $remaining개)"
+            echo "→ 다음 청크 재실행(샤드 ${{ inputs.fill_shard }}/${{ inputs.fill_shards }}, 전체 남은 $remaining개)"
             gh workflow run generate_reports_v2.yml \
-              -f mode=auto -f top_n='${{ inputs.top_n }}' -f fill_to='${{ inputs.fill_to }}'
+              -f mode=auto -f top_n='${{ inputs.top_n }}' -f fill_to='${{ inputs.fill_to }}' \
+              -f fill_from='${{ inputs.fill_from }}' -f fill_shards='${{ inputs.fill_shards }}' -f fill_shard='${{ inputs.fill_shard }}'
           else
-            echo "→ 종료(남은 $remaining개, 이번 진척 $added개 — 더 생성 가능한 종목 없음)"
+            echo "→ 이 샤드 종료(전체 남은 $remaining개, 이번 진척 $added개)"
           fi

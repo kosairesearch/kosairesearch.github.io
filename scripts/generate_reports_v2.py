@@ -644,13 +644,21 @@ def pick_targets():
         want = [t for t in env.split(",") if t]
         by = {s["ticker"]: s for s in data["stocks"]}
         return data, [by[t] for t in want if t in by]
-    # 자동 백필(fill): 시총 상위 FILL_TO개 중 아직 v2 리포트가 없는 종목을 위에서부터 TOP_N개
+    # 자동 백필(fill): 시총 순위 [FILL_FROM, FILL_TO) 구간 중 아직 v2 리포트가 없는 종목.
+    #   SHARDS/SHARD로 종목을 안정적으로 분할 → 여러 run이 겹치지 않게 병렬 백필 가능.
     fill_to = int(os.getenv("REPORT_FILL_TO", "0") or "0")
     if fill_to:
+        import zlib
+        fill_from = int(os.getenv("REPORT_FILL_FROM", "0") or "0")
+        shards = int(os.getenv("REPORT_FILL_SHARDS", "1") or "1")
+        shard = int(os.getenv("REPORT_FILL_SHARD", "0") or "0")
         skip = load_skip()
         ranked = sorted(data["stocks"], key=lambda x: x.get("mcap", 0) or 0, reverse=True)[:fill_to]
+        ranked = ranked[fill_from:]
         missing = [s for s in ranked
                    if not (OUT_DIR / f"{s['ticker']}.json").exists() and s["ticker"] not in skip]
+        if shards > 1:
+            missing = [s for s in missing if zlib.crc32(s["ticker"].encode()) % shards == shard]
         return data, missing[:TOP_N]
     stocks = sorted(data["stocks"], key=lambda x: x.get("mcap", 0) or 0, reverse=True)[:TOP_N]
     return data, stocks

@@ -6,7 +6,7 @@ name: 리포트 백필 워치독 (자동 재가동)
 
 on:
   schedule:
-    - cron: '15 * * * *'   # 매시 15분 (GitHub cron은 지연될 수 있으나 안전망으로 충분)
+    - cron: '*/30 * * * *'   # 30분마다 점검 (한 번 켜지면 self-chain이 이어가므로 시작 지연만 줄임)
   workflow_dispatch:
 
 concurrency:
@@ -30,8 +30,10 @@ jobs:
         env:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
-          remaining=$(python scripts/_fill_remaining.py 1000)
-          echo "상위 1000 중 남은 리포트: $remaining"
+          SHARDS=5          # 병렬 샤드 수
+          FILL_TO=3000      # 전 종목(~2,687)까지 — 넉넉히
+          remaining=$(python scripts/_fill_remaining.py "$FILL_TO")
+          echo "전 종목 중 남은 v2 리포트: $remaining"
           if [ "$remaining" -le 0 ]; then
             echo "→ 완료 상태. 재가동 불필요."
             exit 0
@@ -46,6 +48,12 @@ jobs:
             echo "→ 이미 진행 중. 워치독 대기."
             exit 0
           fi
-          echo "→ 진행 중인 run 없음 + 남은 $remaining개 → 백필 재가동"
-          gh workflow run generate_reports_v2.yml \
-            -f mode=auto -f top_n=100 -f fill_to=1000
+          echo "→ 진행 중인 run 없음 + 남은 $remaining개 → 샤드 ${SHARDS}개 병렬 백필 재가동"
+          i=0
+          while [ "$i" -lt "$SHARDS" ]; do
+            gh workflow run generate_reports_v2.yml \
+              -f mode=auto -f top_n=100 -f fill_to="$FILL_TO" \
+              -f fill_from=0 -f fill_shards="$SHARDS" -f fill_shard="$i"
+            i=$((i+1))
+            sleep 2
+          done
