@@ -1,0 +1,356 @@
+{
+ "title": {
+  "ko": "Thuraya-4 재개·KPS 양산 전환 — V자 회복의 기로에 선 AP위성",
+  "en": "AP위성: At an Inflection Point as Thuraya-4 Restart and KPS Production Transition Define 2026 Trajectory"
+ },
+ "lead": {
+  "ko": "2025년 설립 이래 첫 연간 영업적자를 기록한 AP위성이, Thuraya-4 서비스 정상화·Inmarsat 고객 다변화·KPS·AIS 탑재체 양산 전환이라는 세 가지 모멘텀을 바탕으로 2026년 반등을 모색하고 있으나, 2026년 1분기 실적이 재차 크게 부진하면서 회복 속도의 가시성이 핵심 관전 포인트로 부상하고 있다.",
+  "en": "After recording its first annual operating loss since founding in 2025, AP위성 is targeting a 2026 rebound on three concurrent drivers — Thuraya-4 service normalization, Inmarsat customer diversification, and a structural shift of its satellite segment to mass production — but a sharply disappointing Q1 2026 result has put the pace of that recovery squarely in focus."
+ },
+ "keypoints": [
+  {
+   "ko": "2025년 Thuraya-3호 L밴드 페이로드 장애 + Inmarsat 초도 원가율 급등이 겹치며 설립 이래 첫 영업적자(OPM -9.0%) 기록; 2026년에는 Thuraya-4 위성 서비스 재개와 통신사업부 매출 정상화 여부가 핵심 변수",
+   "en": "A Thuraya-3 L-band payload failure combined with Inmarsat ramp-up cost overruns drove AP위성's first-ever annual operating loss in 2025 (OPM -9.0%); Thuraya-4 service reinstatement is the key swing factor for 2026 revenue normalization."
+  },
+  {
+   "ko": "위성사업부가 2026년을 기점으로 개발 중심에서 양산 구조로 전환: KPS 수신·송신부(납기 2026년 11월)와 AIS 탑재체 40기(약 120억원) 양산 매출 인식이 하반기에 집중될 전망",
+   "en": "The satellite segment is transitioning from development-heavy to mass-production in 2026: KPS navigation payload delivery (due November 2026) and 40-unit AIS transponder production (approx. KRW 12bn) are both back-loaded toward H2."
+  },
+  {
+   "ko": "창사 이래 첫 고객 다변화: Inmarsat과 146억원 규모 신규 계약을 체결하며 Thuraya 단일 고객 구조에서 벗어나는 구조적 전환이 진행 중",
+   "en": "First-ever customer diversification: a KRW 14.6bn new contract with Inmarsat marks AP위성's break from its historical single-customer (Thuraya) dependency, representing a structural shift in the Communications segment."
+  },
+  {
+   "ko": "KPS(총 3.7조원, 8기, 2035년까지)는 10년 이상의 장기 반복 납품 구조를 형성하며, 1호기 확정 수주 합계 약 250억원을 기반으로 2호기~8호기 반복 납품이 순차 예정",
+   "en": "The Korea Positioning System (KPS, total KRW 3.7tn, 8 satellites by 2035) creates over a decade of recurring production deliveries; confirmed orders for satellite #1 total approx. KRW 25bn with identical components required for satellites 2–8."
+  },
+  {
+   "ko": "2026년 1분기 매출 41억원·영업손실 26억원으로 재차 급락: 사업 일정 조정·원가·환율 압박이 지속되며 하반기 실적 집중 패턴 실현 여부가 연간 결과를 결정할 변수",
+   "en": "Q1 2026 revenue of KRW 4.1bn and operating loss of KRW 2.6bn signal a renewed setback; whether the H2-heavy revenue pattern materializes as expected will determine the full-year 2026 outcome."
+  }
+ ],
+ "business": {
+  "ko": "AP위성은 2011년 설립된 위성 전문기업으로, 위성통신 단말기를 개발·생산하는 통신사업부(2025년 매출 비중 약 64%)와 인공위성 본체·탑재체를 제조하는 위성사업부(약 36%)를 양대 축으로 영위하고 있다. 통신사업부의 핵심 경쟁력은 ETSI GMR-1 규격을 커스터마이징한 Baseband Modem SoC 설계 역량으로, 이 기술을 전 세계에서 유일하게 보유함으로써 UAE 두바이 소재 이동위성통신 사업자 Thuraya(뚜라야)에 대한 20년 이상의 독점 공급자 지위를 구조적으로 유지하고 있다. 최근에는 글로벌 위성통신 사업자 Inmarsat과 146억원 규모의 신규 공급계약을 체결하며 창사 이래 처음으로 단일 고객 구조에서 벗어나는 고객 다변화 전략을 추진 중이다. 위성사업부는 탑재컴퓨터(OBC), 고속자료처리장치(SDR), 지상시험지원장비(EGSE) 등 핵심 위성 부품 및 탑재체를 제조하며, 플라이트 소프트웨어를 자체 보유한 국내 2개사 중 하나로서 완제품 제조 역량을 확보하고 있다. OBC·SDR·EGSE 영역에서 국내 최다 납품 이력을 보유하고 있으며, SAR·광학 탑재체를 주로 담당하는 한화시스템, 레이더·통신 체계를 담당하는 LIG넥스원과는 하도급 또는 컨소시엄 방식으로 협력하는 구조다. 현재는 한국형위성항법시스템(KPS) 위성 탑재컴퓨터·수신부·송신부, 초소형 군집위성용 선박자동식별시스템(AIS) 탑재체 등 국가 우주개발 핵심 사업에 참여하고 있으며, 달탐사 2단계 및 차세대 위성 사업 등 신규 수주 파이프라인도 추진 중이다. ICEYE OY와의 전략적 제휴를 통해 소형 고성능 SAR 위성 이미지 공급계약도 체결, 위성 데이터 서비스 영역으로의 저변 확대도 모색하고 있다.",
+  "en": "AP위성 was established in 2011 and operates through two main segments: a Communications Division (approx. 64% of 2025 revenue) that develops and manufactures satellite communications terminals, and a Satellite Division (approx. 36%) that produces satellite buses, payloads, and subsystems. The Communications Division's core competitive advantage rests on its proprietary Baseband Modem SoC designed to the ETSI GMR-1 standard — a technology it holds uniquely worldwide — enabling a 20-plus-year sole-vendor relationship with UAE-based mobile satellite operator Thuraya Telecommunications. The company recently secured a new KRW 14.6bn supply contract with global operator Inmarsat, marking its first-ever customer diversification away from Thuraya. The Satellite Division produces critical satellite subsystems including onboard computers (OBC), software-defined radios (SDR), and electrical ground support equipment (EGSE); AP위성 is one of only two domestic companies with in-house flight software and full satellite manufacturing capability. It holds the most extensive domestic delivery track record in Korea for OBC, SDR, and EGSE, and works collaboratively as a subcontractor or consortium partner with Hanwha Systems (SAR/optical payloads) and LIG Nex1 (radar/communications systems). Current active programs include navigation payload hardware for the Korea Positioning System (KPS) and AIS transponders for the national micro-satellite constellation, with lunar exploration phase 2 and next-generation satellite programs cited as additional pipeline opportunities. A strategic alliance and imagery supply agreement with ICEYE OY also signals ambitions in satellite data services."
+ },
+ "earnings": {
+  "ko": "4개년 연간 실적 추이를 보면, 2022년 매출 536억원·영업이익 45억원(OPM 8.4%)에서 2023년 매출 494억원(-7.9% YoY)에도 불구하고 영업이익이 101억원(OPM 20.4%)으로 급개선됐다. 2024년에는 매출이 586억원으로 역대 최고 수준에 도달했으나 OPM은 12.5%로 하락했고, 영업현금흐름이 -71억원으로 전환돼 이익의 현금 창출력 저하 신호가 감지됐다. 2025년에는 매출 478억원(-18.4% YoY), 영업손실 43억원(OPM -9.0%), 지배주주 순손실 28억원으로 설립 이래 첫 연간 적자를 기록했다. 실적 악화의 직접 요인은 세 가지다: ① Thuraya-3호 위성 L밴드 페이로드 고장에 따른 단말기 수요 공백, ② Inmarsat향 신규 단말기 초도 양산 과정의 원가율 급등, ③ KPS·AIS 탑재체 개발비 선행 투입에 따른 고정비 증가(인력 약 30명 충원 포함). 분기별로는 2025Q1 매출 102억원·영업손실 8억원 → 2025Q2 164억원·손실 19억원 → 2025Q3 54억원·손실 24억원(영업손실률 -44%대 극대화)으로 악화됐다가, 2025Q4에는 159억원·영업이익 7억원으로 반등했다. 그러나 2026Q1에는 매출 41억원·영업손실 26억원으로 재차 급락하며, 사업 일정 조정 및 환율·원가 압박이 지속되고 있음이 확인됐다. 재무 안전성 측면에서 부채비율은 2023년 52.0%에서 2025년 21.6%로 크게 낮아졌고 자기자본은 1,039억원으로 안정적이나, 영업현금흐름이 2023년 +283억원에서 2025년 -45억원으로 반전된 점은 회복 전까지 지속 모니터링이 요구된다.",
+  "en": "Reviewing four years of annual results: OPM improved sharply from 8.4% in 2022 (revenue KRW 53.6bn, operating profit KRW 4.5bn) to 20.4% in 2023 (revenue KRW 49.4bn, OP KRW 10.1bn) despite lower sales. In 2024, revenue rose to a record KRW 58.6bn but OPM slipped to 12.5%, and operating cash flow turned negative at KRW -7.1bn — an early warning sign. In 2025, revenue fell 18.4% YoY to KRW 47.8bn, producing an operating loss of KRW 4.3bn (OPM -9.0%) and a net loss attributable to equity holders of KRW 2.8bn — the company's first annual loss since founding. Three factors drove the deterioration: (1) Thuraya-3 L-band payload failure eliminating terminal demand from that satellite, (2) elevated initial production costs on new Inmarsat terminal models, and (3) front-loaded KPS/AIS development costs including approx. 30 new engineering hires. Quarterly, losses deepened from Q1 (KRW 10.2bn revenue, KRW -0.8bn OP) through Q2 (KRW 16.4bn, KRW -1.9bn) to a Q3 trough (KRW 5.4bn, KRW -2.4bn) before a partial Q4 recovery (KRW 15.9bn, KRW +0.7bn). Q1 2026 then re-collapsed to KRW 4.1bn revenue and KRW -2.6bn operating loss, confirming ongoing schedule slippage and cost/FX headwinds. The debt ratio has improved substantially from 52.0% in 2023 to 21.6% in 2025 with equity of KRW 103.9bn, but the swing from KRW +28.3bn operating cash flow in 2023 to KRW -4.5bn in 2025 warrants close monitoring until profitability recovers."
+ },
+ "industry": {
+  "ko": "글로벌 저궤도(LEO) 위성통신 시장은 2025년 약 126억 달러에서 2033년 413억 달러 규모로의 성장이 전망되는 고성장 전방시장으로, 스페이스X·스타링크, 유텔셋 원웹 등 글로벌 빅테크가 LEO 서비스 경쟁을 주도하고 있다. 국내에서도 방위사업청 주도로 2026년 2월 저궤도위성통신산업협의회(K-LEO)가 출범, 한화시스템·LIG넥스원·KAI·AP위성 등 80여 개 기업이 민·관·군 협력 체계 구축에 참여하고 있다. 우주항공청(KASA)은 2026년 R&D 예산을 9,495억원(전년 대비 +4.5%)으로 확대했으며, KPS 개발(383억원), 초소형위성체계 개발(590억원), 저궤도 위성통신 기술개발(153억원) 등 AP위성의 핵심 수혜 분야에 예산이 집중 배분됐다. AP위성의 통신사업부가 집중하는 GEO(정지궤도) L밴드 위성통신 단말기 세그먼트는 LEO 서비스의 급성장으로 장기적 수요 구조 변화에 직면하고 있으나, 군사·항공·해양 보안 수요는 비교적 견고하다는 평가다. 국내 위성 제조 생태계는 탑재체·부품 단계에서 전문 영역이 분화된 협력 구조를 형성하며, AP위성은 OBC·SDR·EGSE 분야 국내 최다 납품 이력을 바탕으로 사실상의 기술적 독점 포지셔닝을 유지하고 있다. 수주 이후 실적 반영까지 통상 1~3년의 시차가 발생하는 국책사업 특성상, 현 적자 구간은 미래 이익을 위한 '선행 비용 투입기'로 해석되는 측면이 있다.",
+  "en": "The global LEO satellite communications market is projected to expand from approximately USD 12.6bn in 2025 to USD 41.3bn by 2033, with SpaceX Starlink, Eutelsat OneWeb, and other hyperscalers driving competition. In Korea, a government-led LEO industry council (K-LEO) launched in February 2026 with 80-plus companies — including Hanwha Systems, LIG Nex1, KAI, and AP위성 — committing to build a domestic LEO communications architecture for both civilian and defence applications. The Korea Aerospace Administration (KASA) increased its 2026 R&D budget by 4.5% to KRW 949.5bn, with meaningful allocations to KPS (KRW 38.3bn), micro-satellite systems (KRW 59.0bn), and LEO communications technology (KRW 15.3bn) — all primary revenue domains for AP위성. AP위성's Communications Division operates in the GEO L-band satellite terminal niche, which faces long-term demand displacement risk from LEO services, though military, aviation, and maritime security applications remain structurally resilient. Domestically, the satellite manufacturing ecosystem is highly collaborative at the subsystem level, with AP위성 holding Korea's most extensive delivery track record in OBC, SDR, and EGSE — effectively a near-monopoly technical position in its core niches. Given that national program revenues typically lag contract awards by 1–3 years, the current loss period may be interpreted in part as a front-loaded cost phase preceding multi-year production revenues."
+ },
+ "outlook": {
+  "ko": "통신사업부 회복의 핵심 트리거는 Thuraya-4 위성의 서비스 정상화로, 궤도 안착에 따라 기저 단말기 수요가 회복되고 기존 독점 공급 계약이 재가동될 전망이다. Inmarsat과의 146억원 신규 계약은 창사 이래 첫 고객 다변화로, 초도 양산 원가가 소멸하는 시점부터 마진 개선 효과도 기대된다. 위성사업부에서는 KPS 항법탑재체 수신·송신부가 2026년 6월 개발 완료 후 납기(2026년 11월)에 맞춰 매출 인식이 예정돼 있으며, 1호기 수주 합계 약 250억원을 기반으로 2호기~8호기 반복 납품 수주가 순차적으로 확대될 구조다. AIS 탑재체(40기, 약 120억원)는 2026년 검증위성 발사를 시작으로 본격 양산 매출이 인식될 전망이며, 초소형 위성 수명 약 3년을 감안한 주기적 재발주 구조가 중장기 반복 매출 기반을 형성한다. 달탐사 2단계, 천리안 후속위성 수주는 추가 파이프라인으로 거론되나 계약 체결 시점은 아직 미확정이다. 증권사 추정(한국IR협의회 리서치센터, 2026년 3월 기준) 기준으로는 2026년 매출 631억원(+32% YoY), 영업이익 87억원(OPM 13.8%)의 V자 회복이 전망됐으나, 2026Q1 실적이 이 경로를 크게 하회하고 있어 하반기 실적 집중 여부에 대한 추가 확인이 요구된다.",
+  "en": "The primary trigger for Communications Division recovery is Thuraya-4 service normalization; once the satellite becomes operational, the company's sole-vendor supply agreements should re-activate and restore baseline terminal demand. The new Inmarsat contract (KRW 14.6bn) represents the first customer diversification in AP위성's history, with margin improvement expected once the elevated initial production costs of the new terminal design are absorbed. In the Satellite Division, KPS navigation payload receivers and transmitters are targeted for development completion in June 2026, with delivery due in November 2026; the confirmed approx. KRW 25bn in orders for satellite #1 should cascade into repeat orders for satellites 2–8 over the following decade. AIS transponders (40 units, approx. KRW 12bn) are expected to begin contributing production revenue with the 2026 verification satellite launch, with periodic re-orders likely given the approximately 3-year satellite lifespan. Lunar exploration phase 2 and Chollian follow-on satellite contracts represent additional pipeline opportunities without confirmed award timelines. Sell-side estimates (Korea IR Consult Research Center, March 2026) project 2026 revenue of KRW 63.1bn (+32% YoY) and operating profit of KRW 8.7bn (OPM 13.8%), but with Q1 2026 actuals tracking well below that path, validation of H2 back-loading is essential."
+ },
+ "valuation_comment": {
+  "ko": "현재 주당순이익(EPS)이 손실(-276원)을 기록 중이어서 수익 기반 배수 산출이 제한되는 구간이며, 이익 정상화가 선결 조건이다. 주당순자산(BPS) 7,250원 대비 현 주가는 소폭의 프리미엄이 형성된 수준으로, 순자산 가치에 비교적 근접한 구간에서 거래되고 있다. 이익이 정상화될 경우, AP위성의 과거 PER 거래 밴드는 약 13~30배 수준이었으며, 국내 우주항공 피어 기업군이 평균 90배를 크게 웃도는 배수에 거래되는 것과 비교하면 동종 업종 평균을 상당히 하회하는 구간이다. 배당은 최근 사업연도 기준 지급되지 않았으며(DPS 0원), 수익성 회복 전까지는 배당 매력보다 이익 정상화 경로와 속도가 주가 방향성을 결정하는 핵심 변수로 작용할 것이다.",
+  "en": "With EPS currently in loss territory (-KRW 276), earnings-based valuation multiples are not directly applicable, and profitability restoration is a prerequisite for meaningful multiple analysis. The current share price trades at a modest premium to book value per share (BPS: KRW 7,250), positioning it comparatively close to net asset value. When earnings normalize, AP위성's historical PER trading band has been approximately 13–30x; compared to domestic aerospace and satellite peers trading at average multiples well exceeding 90x, the stock sits at a meaningful discount to its sector peer group. No dividend was paid in the most recent fiscal year (DPS: KRW 0), and until profitability is restored, the pace and trajectory of earnings recovery — rather than yield — will be the dominant driver of share price direction."
+ },
+ "bull": [
+  {
+   "title": {
+    "ko": "SoC 독점 기반 Thuraya 솔-벤더 + Inmarsat 고객 다변화 전환",
+    "en": "SoC-Locked Thuraya Monopoly Augmented by First-Ever Inmarsat Diversification"
+   },
+   "body": {
+    "ko": "AP위성은 ETSI GMR-1 커스터마이징 SoC를 세계에서 유일하게 보유함으로써, Thuraya에 대한 20년 이상의 독점 공급 지위를 구조적으로 유지하고 있다. Thuraya-4 위성이 서비스에 안착하면 이 기술적 lock-in이 즉각적인 매출 회복으로 이어진다. 여기에 Inmarsat과의 146억원 신규 계약은 단일 고객 집중 리스크를 창사 최초로 분산하는 전환점으로, 통신사업부의 매출 기반을 구조적으로 다각화하는 효과가 기대된다.",
+    "en": "AP위성's globally unique ETSI GMR-1 SoC design capability creates a structural technology lock-in that has sustained a 20-plus-year sole-vendor position with Thuraya. Thuraya-4 becoming operational should translate directly into immediate terminal revenue recovery. The KRW 14.6bn Inmarsat contract simultaneously marks the company's first-ever break from single-customer dependency, laying the structural groundwork for a diversified Communications Division revenue base that reduces concentration risk."
+   }
+  },
+  {
+   "title": {
+    "ko": "KPS·AIS 양산 전환: 개발비 소멸 + 장기 반복 납품 수익 구조 진입",
+    "en": "KPS/AIS Production Transition: Development Costs Expire, Long-Cycle Recurring Revenue Begins"
+   },
+   "body": {
+    "ko": "KPS 탑재컴퓨터·수신·송신부(1호기 수주 합계 약 250억원)와 AIS 탑재체(40기, 약 120억원)의 개발이 완료됨에 따라, 추가 R&D 비용 없이 반복 납품이 가능한 양산 단계로 진입한다. 양산 전환 시 단위당 원가 하락과 고정비 레버리지 효과가 동시에 작동하여 마진 체질이 개선될 것으로 기대된다. KPS는 총 3.7조원, 8기 구축(2035년까지)으로 10년 이상의 장기 반복 납품 구조가 형성되며, AIS 역시 위성 수명(약 3년) 기반 주기적 재발주가 예상된다.",
+    "en": "With development completions in sight for KPS navigation payload hardware (confirmed orders approx. KRW 25bn for satellite #1) and AIS transponders (40 units, approx. KRW 12bn), the satellite segment enters a production phase requiring no incremental R&D spend. Production transitions typically compress unit costs and generate operating leverage, improving the margin profile. KPS's 8-satellite program through 2035 creates over a decade of structurally recurring deliveries, while AIS's ~3-year satellite lifecycle should generate cyclical replacement orders at comparable volumes."
+   }
+  },
+  {
+   "title": {
+    "ko": "정부 우주항공 예산 확대 및 K-LEO 생태계 핵심 공급자 포지셔닝",
+    "en": "Expanding Government Space Budget and Privileged K-LEO Ecosystem Positioning"
+   },
+   "body": {
+    "ko": "우주항공청은 2026년 R&D 예산을 9,495억원으로 전년 대비 확대했으며, KPS·저궤도 위성통신·초소형위성 등 AP위성의 핵심 수혜 분야에 집중 배분됐다. 2026년 2월 출범한 K-LEO 협의회에 AP위성이 핵심 부품·탑재체 공급사로 참여, 향후 국가 LEO 체계 구축 과정에서의 수혜 가능성이 높다. OBC·SDR·EGSE 분야 국내 최다 납품 이력이라는 기술 진입장벽이 후발 경쟁자 진입을 사실상 억제하고 있다.",
+    "en": "KASA raised its 2026 R&D budget to KRW 949.5bn with concentrated allocations to KPS, LEO communications, and micro-satellite programs — all primary revenue domains for AP위성. AP위성 participates in the K-LEO council (launched February 2026) as a key subsystem supplier, positioning it favorably to capture awards as Korea builds its national LEO infrastructure. Its track record of the most domestic deliveries in OBC, SDR, and EGSE creates meaningful barriers to entry that protect its incumbent position across established and future national programs."
+   }
+  }
+ ],
+ "bear": [
+  {
+   "title": {
+    "ko": "2026Q1 실적 재급락: 회복 가시성과 예측 가능성 저하",
+    "en": "Q1 2026 Renewed Collapse: Recovery Visibility and Earnings Predictability Remain Low"
+   },
+   "body": {
+    "ko": "2025Q4 반등(매출 159억원, 영업이익 7억원) 이후 기대됐던 회복 모멘텀이 2026Q1(매출 41억원, 영업손실 26억원)에 재차 단절됐다. 사업 일정 조정, 수주 여건 변화, 원가율 상승 및 환율 변동이 복합적으로 작용하며 분기 실적의 예측 가능성이 낮은 상황이다. 하반기 집중 패턴이 전제되지만, 이를 뒷받침할 수주잔고 및 납기 스케줄의 공시 정보가 제한적인 점이 투자자 불확실성을 높이고 있다.",
+    "en": "The partial Q4 2025 recovery (KRW 15.9bn revenue, KRW +0.7bn operating profit) gave way to a renewed collapse in Q1 2026 (KRW 4.1bn revenue, KRW -2.6bn operating loss). A combination of schedule slippage, temporary demand softness, rising cost rates, and FX headwinds has materially impaired near-term earnings predictability. While the business model naturally back-loads revenues to H2, limited public disclosure on backlog composition and delivery schedules makes this difficult to independently verify from the outside."
+   }
+  },
+  {
+   "title": {
+    "ko": "Thuraya 고객 집중 및 GEO L밴드 세그먼트의 장기 구조 변화",
+    "en": "Thuraya Concentration Risk and Secular GEO L-Band Displacement Threat"
+   },
+   "body": {
+    "ko": "통신사업부 매출의 대부분은 여전히 Thuraya에 집중돼 있어, Thuraya-4 위성 서비스 재개 지연 또는 추가 기술 이상 발생 시 Thuraya-3호 사태와 같은 실적 충격이 재현될 수 있다. 보다 구조적으로는 스타링크 등 LEO 서비스가 해상·항공·오지 통신 시장에서 GEO 기반 서비스를 빠르게 대체하고 있다. 장기적으로 GEO L밴드 단말기 수요의 성장 정체 또는 감소가 예상되며, Inmarsat 다변화만으로 이 구조적 압력을 완전히 상쇄하기는 어렵다.",
+    "en": "A large proportion of Communications Division revenue remains concentrated in Thuraya, meaning any further technical issues with Thuraya-4 or delays in service restoration could replay the severe revenue disruption of 2025. More structurally, LEO services including Starlink are rapidly displacing GEO-based satellite communications in maritime, aviation, and remote connectivity markets. Long-term demand growth for GEO L-band terminals faces secular headwinds, and Inmarsat diversification alone may be insufficient to fully offset this structural displacement pressure over the medium term."
+   }
+  },
+  {
+   "title": {
+    "ko": "국책사업 일정 변동성: 수주→매출 시차와 고정비 부담의 장기화 리스크",
+    "en": "Government Program Schedule Risk: Long Revenue Recognition Lag with Persistent Fixed Cost Burden"
+   },
+   "body": {
+    "ko": "위성사업부의 국책사업은 수주 이후 실적 반영까지 통상 1~3년의 시차가 발생하는 구조로, KPS·AIS 개발 완료 일정이 추가 지연될 경우 고정비 부담이 지속되는 가운데 매출 인식이 미뤄지는 리스크가 있다. 달탐사 2단계, 천리안 후속위성 등 기대 파이프라인도 계약 시점이 미확정이어서 외형 성장의 불확실성을 높인다. 2025년 선행 인력 충원(약 30명)에 따른 고정비와 매출 회복 속도 간 미스매치가 지속될 경우, 영업손실이 예상보다 장기화될 가능성이 있다.",
+    "en": "The satellite segment's government contracts involve a typical 1–3-year lag between award and revenue recognition, meaning any further slippage in KPS or AIS development timelines would extend the period of fixed cost absorption without corresponding revenue. Pipeline programs (lunar exploration phase 2, Chollian follow-on) lack confirmed award dates, adding to top-line growth uncertainty. The approximately 30 new engineers hired in 2025 in anticipation of production ramp represent a fixed cost base that could amplify operating losses if revenue recovery proves slower than anticipated."
+   }
+  }
+ ],
+ "risks": [
+  {
+   "cat": {
+    "ko": "위성 가용성 및 고객 집중 리스크",
+    "en": "Satellite Availability and Customer Concentration Risk"
+   },
+   "body": {
+    "ko": "Thuraya-3호 페이로드 고장이 2025년 실적 악화의 핵심 원인이었듯이, Thuraya-4 위성의 추가 기술 결함 또는 서비스 재개 지연은 통신사업부 매출에 즉각적·직접적 충격을 줄 수 있다. Inmarsat으로의 다변화가 진행 중이나, 단기적으로는 여전히 Thuraya에 대한 매출 의존도가 매우 높은 상태다. 위성 자산의 기술 결함은 제조사의 통제 범위 밖에 있어 예측 및 사전 대응이 어렵다는 점이 구조적 취약성으로 남아 있다.",
+    "en": "As demonstrated in 2025, a technical failure of the Thuraya satellite asset directly and immediately disrupts Communications Division revenue in a manner that AP위성 cannot control or anticipate. Despite the Inmarsat diversification initiative, near-term revenue concentration in Thuraya remains high. Satellite asset failures lie outside AP위성's control, making this a difficult risk to hedge or mitigate operationally."
+   }
+  },
+  {
+   "cat": {
+    "ko": "원가율 상승 및 환율 리스크",
+    "en": "Cost Rate and Foreign Exchange Risk"
+   },
+   "body": {
+    "ko": "신제품 초도 양산 시 원가율 급등은 2025년에 이어 2026Q1에서도 재차 확인됐다. 위성통신 단말기 핵심 부품의 상당 부분이 수입 의존적이어서 원·달러 환율 상승 시 원가 압박이 심화될 수 있다. 회사 측은 국제정세에 따른 신제품 원가율 상승 및 환율 변동을 2026Q1 실적 악화의 주요 원인으로 명시했으며, 이 압박이 신제품 원가 곡선이 정상화되는 시점까지 지속될 수 있다.",
+    "en": "Elevated initial production cost rates on new terminal models were a key earnings driver in both 2025 and Q1 2026. Imported components for satellite terminals expose the company to KRW/USD exchange rate risk, with KRW depreciation directly elevating input costs. Management explicitly cited geopolitical cost pressures and FX volatility as primary contributors to Q1 2026 weakness; these dynamics may persist through H1 2026 until new product cost curves normalize."
+   }
+  },
+  {
+   "cat": {
+    "ko": "국책사업 일정 변동성 및 정책·조달 방식 변화 리스크",
+    "en": "Government Program Schedule Variability and Procurement Policy Risk"
+   },
+   "body": {
+    "ko": "KPS, AIS 탑재체 등 국책사업은 정부 예산 조정, 발사 일정 변경, 기술 검증 지연 등 복수의 외부 변수에 의해 납기 및 매출 인식 시점이 변경될 수 있다. 우주항공청 출범 이후 민간 주도 생태계로의 전환 과정에서 발주 구조나 계약 방식이 변화할 경우, 기존 수의계약 방식이 경쟁 입찰로 전환될 가능성이 있다. 달탐사 2단계, 천리안 후속 등 신규 파이프라인 수주 지연 또는 취소도 중기 외형 성장에 영향을 줄 수 있다.",
+    "en": "National programs such as KPS and AIS are subject to government budget adjustments, launch schedule changes, and technical validation delays that can shift revenue recognition timelines materially. As KASA transitions the industry toward more private-sector-led contracting, procurement methods may evolve from sole-source toward competitive bidding, potentially affecting AP위성's historical incumbency advantages. Delays or cancellations in pipeline programs such as the lunar exploration phase 2 would impact medium-term revenue growth assumptions."
+   }
+  }
+ ],
+ "checkpoints": [
+  {
+   "when": {
+    "ko": "2026년 8월 중순",
+    "en": "Mid-August 2026"
+   },
+   "what": {
+    "ko": "2026년 2분기 실적 발표: Thuraya-4 서비스 재개에 따른 단말기 수요 회복 규모 및 Inmarsat 초도 물량 매출 인식 여부를 확인. 2분기 영업이익 흑자 전환 여부가 연간 V자 회복 경로의 핵심 확인 지점.",
+    "en": "Q2 2026 earnings release: assess the magnitude of terminal demand recovery from Thuraya-4 service reinstatement and whether initial Inmarsat shipments are recognized as revenue. A return to operating profit in Q2 would be a key validation point for the full-year recovery thesis."
+   }
+  },
+  {
+   "when": {
+    "ko": "2026년 11월 말",
+    "en": "Late November 2026"
+   },
+   "what": {
+    "ko": "KPS 항법탑재체 수신·송신부 납기(2026년 11월) 이행 여부 확인: 납기 내 전액 매출 인식이 이루어질 경우 위성사업부 흑자 전환 가시성 확보. 납기 지연 발생 시 연간 실적 목표에 직접 영향.",
+    "en": "KPS navigation payload receiver and transmitter delivery deadline (November 2026): on-time full delivery would confirm the satellite segment's return to profitability and validate the mass-production transition thesis. Any slippage directly impacts full-year 2026 earnings delivery."
+   }
+  },
+  {
+   "when": {
+    "ko": "2026년 하반기",
+    "en": "H2 2026"
+   },
+   "what": {
+    "ko": "AIS 탑재체 검증위성 발사 일정 및 본양산 계약 착수 여부: 검증위성 발사 성공과 본양산 개시가 확인될 경우 40기 납품 일정이 구체화되고, 위성 수명(약 3년) 기반 재발주 구조의 장기 가시성이 높아짐.",
+    "en": "AIS transponder verification satellite launch and initial production contract commencement: a successful launch and production start would confirm the 40-unit delivery schedule and give concrete visibility into the recurring re-order structure driven by the approximately 3-year satellite replacement cycle."
+   }
+  },
+  {
+   "when": {
+    "ko": "2026년 중(상시 모니터링)",
+    "en": "Throughout 2026 (Ongoing)"
+   },
+   "what": {
+    "ko": "달탐사 2단계 및 천리안 후속위성 수주 공시 여부: 두 사업의 계약 체결 확인 시 위성사업부 수주잔고가 크게 확대되며 2027년 이후 실적 레버리지의 토대 형성. 미공시 지속 시 파이프라인 지연 리스크 점검 필요.",
+    "en": "Lunar Exploration Phase 2 and Chollian follow-on satellite contract award announcements: confirmed awards would materially expand the satellite segment backlog and establish the foundation for significant earnings leverage post-2027. Continued absence of announcements would signal pipeline execution risk."
+   }
+  },
+  {
+   "when": {
+    "ko": "2027년 초",
+    "en": "Early 2027"
+   },
+   "what": {
+    "ko": "KPS 위성탑재컴퓨터(약 100억원 수주, 2027년 개발 완료 예정) 납기 이행 및 2호기 이후 반복 수주 확보 여부: KPS 반복 납품 구조가 현실화될 경우 위성사업부의 구조적 장기 이익 기여가 본격 확인됨.",
+    "en": "KPS OBC delivery (approx. KRW 10bn, targeted for 2027 development completion) and confirmation of repeat orders for satellites #2 onward: this milestone would validate the structural, multi-year recurring revenue thesis for the satellite segment that underpins the long-term investment case."
+   }
+  }
+ ],
+ "verdict": {
+  "body": {
+   "ko": "AP위성은 위성통신 단말기(통신사업부)와 위성 탑재체(위성사업부)라는 두 축을 통합한 국내 유일의 위성 전문기업으로, ETSI GMR-1 SoC 독점 기술과 OBC·SDR·EGSE 분야 국내 최다 납품 이력을 바탕으로 강한 기술 진입장벽을 보유하고 있다. 2025년의 연간 적자는 Thuraya-3호 위성 장애라는 외생적 충격과 KPS·AIS 개발비 선행 투입이 겹친 복합 요인으로, 구조적 경쟁력 훼손보다는 일시적 사이클 하단으로 해석하는 시각이 지배적이다. 2026년에는 Thuraya-4 재개·Inmarsat 다변화·KPS·AIS 양산 전환이라는 세 가지 모멘텀이 동시에 가동될 경우 뚜렷한 실적 회복이 가능한 구조지만, 2026Q1 실적이 재차 크게 부진하여 하반기 집중 패턴의 실현 여부가 단기 관건이다. 재무 안전성 측면에서 부채비율 21.6%, 자기자본 1,039억원은 회복 국면까지의 완충 역할을 하나, 영업현금흐름이 마이너스로 전환된 점은 지속 모니터링이 요구된다. 중장기적으로는 KPS 8기(2035년까지) 장기 반복 납품 구조와 AIS 재발주 주기성이 위성사업부의 안정적 이익 기반으로 자리 잡을 수 있으며, 이는 현재 순자산 대비 소폭 프리미엄 구간에서의 주가를 지지하는 핵심 근거다. 분기 실적 발표와 KPS·AIS 납기 마일스톤을 중심으로 회복의 속도와 방향을 지속적으로 추적하는 것이 중요하다.",
+   "en": "AP위성 is Korea's only fully integrated satellite specialist combining communications terminal manufacturing with satellite payload production, backed by globally unique ETSI GMR-1 SoC technology and the most extensive domestic delivery track record in its OBC, SDR, and EGSE categories. The 2025 annual loss resulted from the confluence of an exogenous Thuraya-3 satellite failure and front-loaded development costs for KPS/AIS programs — broadly viewed as cyclical rather than a structural competitive deterioration. The 2026 recovery thesis rests on three simultaneous drivers — Thuraya-4 service normalization, Inmarsat customer diversification, and satellite segment production transition — but Q1 2026 results tracking well below expectations mean H2 back-loading must materialize to validate the full-year recovery case. The balance sheet, with a debt ratio of 21.6% and equity of KRW 103.9bn, provides adequate buffer through the recovery period, though the shift to negative operating cash flow warrants monitoring. Over the medium to long term, recurring KPS deliveries through 2035 and AIS re-order cycles could establish a structurally durable earnings foundation for the satellite segment, supporting the current modest premium to net asset value. Tracking quarterly results against the KPS delivery deadline and AIS production launch milestones is the most actionable near-term monitoring framework for assessing whether the recovery path is on track."
+  }
+ },
+ "sources": [
+  "https://m.irgo.co.kr/IR-COMP/211270/",
+  "https://alphasquare.co.kr/home/stock-summary?code=211270",
+  "https://file.alphasquare.co.kr/media/pdfs/market-report/AP%EC%9C%84%EC%84%B1%EC%9C%84%EC%84%B120260323%ED%95%9C%EA%B5%ADIR%ED%98%91%EC%9D%98%ED%9A%8C.",
+  "https://comp.fnguide.com/SVO2/ASP/SVD_Main.asp?gicode=A211270",
+  "https://www.investing.com/equities/asia-pacific-satellite-communicatio",
+  "https://www.paxnet.co.kr/tbbs/list?tbbsType=L&id=211270",
+  "https://goinsider.kr/stock/00874803",
+  "https://library.kisdi.re.kr/$/10160/contents/3934566?checkinId=733669&articleId=525445",
+  "http://www.dailyinvest.kr/news/articleView.html?idxno=69753",
+  "https://apsi.co.kr/",
+  "https://ettrends.etri.re.kr/ettrends/208/0905208004/0905208004.html",
+  "https://www.joongangenews.com/news/articleView.html?idxno=487969",
+  "https://comp.wisereport.co.kr/company/c1010001.aspx?cmp_cd=211270",
+  "https://comp.fnguide.com/SVO2/ASP/SVD_Main.asp?pGB=1&gicode=A211270&MenuYn=Y&ReportGB=D&NewMenuID=Y&stkGb=701",
+  "https://www.finance-scope.com/article/view/scp202603230020",
+  "http://www.dailyinvest.kr/news/articleView.html?idxno=53928",
+  "http://www.dailyinvest.kr/news/articleView.html?idxno=70372",
+  "https://www.ntoday.co.kr/news/articleView.html?idxno=125008"
+ ],
+ "v": 2,
+ "model": "claude-sonnet-4-6",
+ "ticker": "211270",
+ "name": "AP위성",
+ "name_en": "Asia Pacific Satellite lnc.",
+ "sector": "항공·방산",
+ "categories": [
+  "항공·방산"
+ ],
+ "market": "코스닥",
+ "reportDate": "2026-06-19",
+ "reportTs": "2026-06-19 01:30",
+ "dataDate": "20260618",
+ "quant": {
+  "asOf": "2026-06-18",
+  "fs_basis": "연결(CFS) · DART 공시 확정치 · 지배주주 기준 순이익",
+  "annual": [
+   {
+    "year": 2025,
+    "rev": 47812373057,
+    "op": -4301222143,
+    "np": -2769859560,
+    "np_owner": -2769859560,
+    "equity": 103864391012,
+    "equity_owner": 103864391012,
+    "liab": 22412797176,
+    "cfo": -4460659186,
+    "eps_basic": -195,
+    "opm": -9.0,
+    "roe": -2.7,
+    "debt_ratio": 21.6
+   },
+   {
+    "year": 2024,
+    "rev": 58631773787,
+    "op": 7300333201,
+    "np": 10428439996,
+    "np_owner": 10428439996,
+    "equity": 105220711236,
+    "equity_owner": 105220711236,
+    "liab": 29936745897,
+    "cfo": -7110307117,
+    "eps_basic": 738,
+    "opm": 12.5,
+    "roe": 9.9,
+    "debt_ratio": 28.5
+   },
+   {
+    "year": 2023,
+    "rev": 49434135093,
+    "op": 10071432183,
+    "np": 10514932202,
+    "np_owner": 10514932202,
+    "equity": 95077662865,
+    "equity_owner": 95077662865,
+    "liab": 49478944805,
+    "cfo": 28310238978,
+    "eps_basic": 739,
+    "opm": 20.4,
+    "roe": 11.1,
+    "debt_ratio": 52.0
+   },
+   {
+    "year": 2022,
+    "rev": 53604126086,
+    "op": 4494271143,
+    "np": 4077471425,
+    "np_owner": 4077471425,
+    "equity": 85351038402,
+    "equity_owner": 85351038402,
+    "liab": 23948345977,
+    "cfo": 7638559894,
+    "eps_basic": 287,
+    "opm": 8.4,
+    "roe": 4.8,
+    "debt_ratio": 28.1
+   }
+  ],
+  "quarterly": [
+   {
+    "q": "2025Q1",
+    "rev": 10214584779,
+    "op": -779128423,
+    "np_owner": -138317601
+   },
+   {
+    "q": "2025Q2",
+    "rev": 16366840771,
+    "op": -1879992584,
+    "np_owner": -2292292085
+   },
+   {
+    "q": "2025Q3",
+    "rev": 5359975587,
+    "op": -2380972661,
+    "np_owner": -1548890242
+   },
+   {
+    "q": "2025Q4",
+    "rev": 15870971920,
+    "op": 738871525,
+    "np_owner": 1209640368
+   },
+   {
+    "q": "2026Q1",
+    "rev": 4067282220,
+    "op": -2555002810,
+    "np_owner": -1290034924
+   }
+  ],
+  "valuation": {
+   "price": 11060,
+   "mcap": 0.1668,
+   "shares": 15082304,
+   "total_shares": 15082304,
+   "wavg_shares": 14204408,
+   "per": null,
+   "eps": -276,
+   "pbr": 1.53,
+   "bps": 7250,
+   "roe_ttm": -3.8,
+   "ttm_window": "2025Q2~2026Q1",
+   "ttm_np_owner": -3921576883,
+   "pbr_krx": 1.52,
+   "bps_krx": 7297.0,
+   "basis": "PER·EPS·PBR·BPS 모두 자체 산출(네이버·토스와 동일 방식) · 배당은 DART 공시 주당현금배당금(보완:KRX) ÷ 현재가",
+   "dps": 0.0,
+   "div": 0.0
+  }
+ }
+}

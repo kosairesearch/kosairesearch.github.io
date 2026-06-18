@@ -1,0 +1,311 @@
+{
+ "title": {
+  "ko": "레거시 디자인하우스, 피지컬 AI 센서로 사업 재편 기로",
+  "en": "Legacy Design House at a Crossroads: Pivoting to Physical AI Sensors"
+ },
+ "lead": {
+  "ko": "SK하이닉스시스템IC 공식 디자인하우스 싸이닉솔루션은 CIS·PMIC 중심의 안정적 수주 기반을 유지하면서도 MEMS·SWIR 센서 신사업으로 전환을 모색하고 있으나, 2025년 영업이익률 1.6%·2026년 1분기 영업 적자 전환이라는 수익성 과제를 동시에 안고 있다.",
+  "en": "Synic Solution, the official design house for SK Hynix System IC, is pivoting toward MEMS and SWIR sensor businesses while maintaining its stable CIS/PMIC-driven revenue base, yet faces a pressing profitability challenge with a 2025 operating margin of just 1.6% and a slip into operating loss in Q1 2026."
+ },
+ "keypoints": [
+  {
+   "ko": "220개 이상의 팹리스 고객 기반, 매출의 90% 이상 해외 발생으로 분기별 경기 변동에 비교적 강한 수주 구조 보유",
+   "en": "A 220+ fabless customer base with over 90% overseas revenue provides structural resilience against domestic semiconductor cycle swings"
+  },
+  {
+   "ko": "2025년 연간 매출 1,546억원·영업이익 25억원으로 전년 대비 각각 7.7%·51.7% 감소 — 대손상각비 증가와 외화환산손실이 복합 요인",
+   "en": "FY2025 revenue of KRW 154.6bn and operating profit of KRW 2.5bn declined 7.7% and 51.7% YoY, respectively, driven by higher bad-debt provisions and FX translation losses"
+  },
+  {
+   "ko": "MEMS 마이크로폰·초음파·SWIR 센서 등 피지컬 AI 대응 신사업을 2026~2027년 양산 목표로 추진 — 실현 속도가 중기 밸류에이션 핵심 변수",
+   "en": "MEMS microphone, ultrasonic, and SWIR sensor lines target mass production in 2026–2027; execution speed is the pivotal factor for medium-term re-rating"
+  },
+  {
+   "ko": "2026년 1분기 영업이익 -3.2천만원(손익분기점 근접), 지배주주 순이익 15.6억원은 비영업 항목 기여가 큰 구조로 본업 마진 회복이 선행 과제",
+   "en": "Q1 2026 operating profit of -KRW 32mn (near breakeven) signals ongoing margin pressure; the KRW 1.56bn owner net income was largely non-operating, making core margin recovery the top priority"
+  },
+  {
+   "ko": "레거시 공정(45nm 이상, 8인치) 중심 구조로 첨단 AI 칩 수주 직접 수혜보다는 IoT·전장·결제·이미지센서 등 다변화 응용이 성장 축",
+   "en": "A legacy-process focus (45nm+, 8-inch) limits direct exposure to the AI chip boom; growth relies instead on diversified IoT, automotive, payment, and imaging applications"
+  }
+ ],
+ "business": {
+  "ko": "싸이닉솔루션은 2005년 설립된 시스템반도체 디자인하우스로, 생산 설비를 보유하지 않고 반도체 회로설계와 공급을 전담하는 팹리스 구조다. 핵심 사업은 팹리스 고객의 설계를 파운드리 공정에 최적화해 생산·납품까지 연계하는 토탈 솔루션 제공이며, SK하이닉스시스템IC(중국 우시 소재)의 국내 유일 공식 디자인하우스이자 SK키파운드리·대만 PSMC·싱가포르 AMF 등 멀티 파운드리 파트너십을 운영한다. 주요 제품은 CIS(이미지센서)와 PMIC(전력관리반도체)가 매출의 약 88%를 차지하며, DDI(디스플레이 구동), 결제 IC, IR 수신 IC 등이 포트폴리오를 구성한다. 국내외 220개 이상의 팹리스 고객을 보유하고, 중국·대만 자회사 및 오피스를 통해 매출의 90% 이상을 해외에서 창출한다. 레거시 공정(45nm 이상, 8인치 웨이퍼 중심)을 기반으로 IoT, 전장, 스마트홈, 결제 단말기 등 다양한 산업에 칩을 공급하며, 반도체 IP 개발부터 패키징·테스트까지 밸류체인 전 영역에 걸친 매출 파이프라인을 구축하고 있다. 차세대 성장 사업으로 MEMS 마이크로폰 센서, 초음파 센서, Ge-on-Si 기반 단파장 적외선(SWIR) 이미지센서를 중심으로 한 센서 파운드리 디자인하우스 전략을 추진 중이다. 프랑스 Cortus사와 RISC-V 기반 전장 SoC, 미국 Elevation Microsystems와 전력반도체, 적외선 AI 전문기업 스트라티오(Stratio Inc.)와 SWIR 센서 등 글로벌 파트너십을 통해 사업 범위를 확장하고 있다. 이를 통해 청각(마이크로폰)·촉각(초음파)·시각(SWIR) 세 가지 센서 역량을 내재화한 '피지컬 AI 전문 디자인하우스'로의 전환을 표방한다.",
+  "en": "Synic Solution, founded in 2005, is a fabless system semiconductor design house that owns no production fabs and specializes in circuit design, foundry optimization, and chip supply. Its core business is providing total solutions—from design-for-manufacturing to chip delivery—for fabless customers. The company serves as SK Hynix System IC's (Wuxi, China) sole official design house in Korea and also maintains multi-foundry partnerships with SK Keyfoundry, Taiwan's PSMC, and Singapore's AMF. CIS (image sensors) and PMIC (power management ICs) account for approximately 88% of product development revenue, with DDI, payment ICs, and IR receiver ICs rounding out the portfolio. With 220+ fabless clients globally, the company derives over 90% of revenue from overseas markets through subsidiaries and offices in China and Taiwan. Operations are anchored in legacy processes (45nm+, 8-inch wafers) serving IoT, automotive, smart-home, and payment terminal markets, with a value chain spanning IP development through packaging and test. On the growth side, the company is pursuing a sensor foundry design-house strategy centered on MEMS microphone sensors, ultrasonic sensors, and Ge-on-Si SWIR image sensors. Global partnerships with France's Cortus (RISC-V automotive SoC), U.S.-based Elevation Microsystems (power semiconductors), and infrared AI specialist Stratio Inc. (SWIR sensor co-development) are expanding the addressable market. The company positions itself as a physical AI design house with in-house acoustic, tactile, and visual sensing capability."
+ },
+ "earnings": {
+  "ko": "2025년 연결 연간 매출액은 1,546억원으로, DART 공시 기준 전년(1,674억원) 대비 7.7% 감소하였다. 영업이익은 25억원(OPM 1.6%)으로 전년(53억원) 대비 51.7% 급감했고, 지배주주 귀속 순이익은 17억원으로 68.9% 줄었으며, 주당기본이익(EPS_basic)은 79원이다. 회사는 판관비(대손상각비) 증가가 영업이익 감소의 주된 원인이며, 환율 변동에 따른 외화환산손실 확대가 순이익 추가 감소 요인이었다고 공시를 통해 설명했다. 연간 영업현금흐름(CFO)은 -24억원을 기록해, 장부상 순이익에도 불구하고 실질 현금 창출이 제한적임을 보여준다. 분기별로는 2025년 4분기 매출 420억원, 영업이익 8.8억원, 지배주주 순이익 10.3억원으로 하반기 일부 회복이 확인되었다. 그러나 2026년 1분기에는 매출 404억원, 영업이익 -3.2천만원으로 다시 손익분기점 이하로 전환되었다. 2026년 1분기 지배주주 순이익은 15.6억원으로 흑자를 유지했으나, 영업손실 대비 순이익 규모가 큰 점은 비영업 항목(환율 반전 효과 등)의 기여가 크다는 점을 시사한다. 자본총계 365억원, 부채비율 74.4%로 재무 레버리지는 관리 가능한 수준이나, 본업 마진 회복이 현금흐름 개선의 선결 과제로 남아 있다.",
+  "en": "FY2025 consolidated revenue came in at KRW 154.6bn, down 7.7% from the prior year (KRW 167.4bn per DART disclosure). Operating profit collapsed 51.7% to KRW 2.5bn (OPM 1.6%), while net income attributable to owners fell 68.9% to KRW 1.73bn, with basic EPS of KRW 79. Per the DART filing, management cited higher SGA—particularly bad-debt provisions—as the primary driver of operating profit erosion, while expanded FX translation losses further compressed net income. Operating cash flow (CFO) was -KRW 2.4bn for the year, indicating constrained cash generation despite book profitability. In Q4 2025, revenue recovered to KRW 42bn with operating profit of KRW 883mn and owner net income of KRW 1.03bn, suggesting some second-half stabilization. However, Q1 2026 showed revenue of KRW 40.4bn with an operating loss of -KRW 32mn, indicating a return to near-breakeven on the operating line. The Q1 2026 owner net income of KRW 1.56bn—materially above the operating result—implies significant non-operating income contributions, likely including FX reversals. With total equity of KRW 36.5bn and a debt ratio of 74.4%, the balance sheet remains manageable, yet core operating margin recovery is the prerequisite for a meaningful improvement in cash generation."
+ },
+ "industry": {
+  "ko": "WSTS 기준 2024년 글로벌 시스템반도체 시장 규모는 약 4,598억 달러로 전체 반도체 시장의 70% 이상을 차지하며, AI·자율주행·데이터센터 수요 확산으로 설계 복잡도가 급증해 디자인하우스의 전략적 가치가 높아지고 있다. 국내 디자인하우스 경쟁 구도는 삼성전자 DSP 파트너인 에이디테크놀로지·가온칩스·코아시아, TSMC 파트너인 에이직랜드, 세미파이브, 싸이닉솔루션(SK하이닉스시스템IC 파트너) 등 소수 업체가 담당한다. 최근 삼성전자 파운드리 회복 기조와 AI 반도체 수요 급증으로 삼성·TSMC 파트너 디자인하우스들이 수주 확대와 밸류에이션 재평가를 경험하고 있다. 업계 흐름은 2나노 이하 첨단 공정 기반 AI·HPC 칩 설계로 이동하고 있으며, 이는 레거시 공정 기반의 싸이닉솔루션이 직접 수혜를 받기 어려운 구조적 흐름이다. 싸이닉솔루션의 주 기반인 SK하이닉스시스템IC는 8인치 레거시 공정 특화 파운드리로, IoT·전장·결제·이미지센서 등 안정 시장에서 꾸준한 수요가 발생하고 있다. 한편 피지컬 AI(휴머노이드 로봇, 자율주행, AI 엣지 디바이스) 성장으로 MEMS·SWIR 등 특수 센서 수요가 중장기 확대될 전망이며, 이 분야에서 싸이닉솔루션이 선점적으로 포지셔닝하고 있는 점은 차별화 요인이다. 다만 MEMS·SWIR 센서는 아직 양산 및 수익화 초기 단계로, 본업 마진 회복과 신사업 성과가 동시에 확인되어야 할 시점이다.",
+  "en": "According to WSTS, the global system semiconductor market reached approximately $459.8bn in 2024, exceeding 70% of total semiconductor revenue; design complexity is surging on the back of AI, autonomous driving, and data center demand, elevating the strategic importance of design houses. The domestic design house sector is contested by a handful of specialists: ADTechnology, Gaonchips, and COREASIA (Samsung DSP partners), ASICLAND (TSMC partner), Semifive, and Synic Solution (SK Hynix System IC partner). Rebounding Samsung foundry momentum and soaring AI chip demand have driven order growth and valuation re-ratings for Samsung- and TSMC-aligned peers. The industry migration toward sub-2nm advanced nodes for AI and HPC chips is a structural trend that Synic Solution, anchored in legacy processes, is less positioned to capture directly. SK Hynix System IC, Synic Solution's primary partner, specializes in 8-inch legacy processes and caters to IoT, automotive, payment, and imaging segments—stable but lower-growth markets. On the upside, the rise of physical AI (humanoid robots, autonomous vehicles, AI edge devices) is expected to drive mid-to-long-term demand for specialty MEMS and SWIR sensors—an area where Synic Solution is making early moves. However, these sensor lines remain in early mass-production and commercialization phases, requiring simultaneous core margin recovery and new business traction before they move the needle."
+ },
+ "outlook": {
+  "ko": "2026년 핵심 일정은 두 축으로 요약된다: ① 기존 디자인하우스 사업의 수익성 회복, ② 센서 신사업의 양산 전환. MEMS 마이크로폰 센서는 2026년 양산을 목표로 최종 단계에 진입했으며, SK하이닉스시스템IC 우시 공장의 MEMS 전용 공정을 통해 생산이 예정되어 있다. 초음파 센서는 6인치·8인치 공정 확보를 위한 시제품 단계로, 의료기기·미용기기·피지컬 AI 분야까지 적용 확대를 추진 중이다. Ge-on-Si 기반 SWIR 이미지센서는 스트라티오와 공동 개발 중이며 2024~2027년 로드맵상에 있고, 가전·오토모티브·국방·로보틱스 적용을 목표로 한다. 중장기 R&D 과제인 엣지 AI용 IMC SCM 컨트롤러 IP(2022~2026), Batteryless BLE AI SoC(2023~2026), 지능형 결제 단말기용 SoC(2024~2026)가 모두 2026년 완료를 목표로 진행 중이다. 전장 분야에서는 프랑스 Cortus사와 RISC-V 기반 SoC를 완성차 업체 등 전장 고객에게 공급하기 위한 협력이 지속되고 있다. 피지컬 AI 생태계가 구체화됨에 따라 청각·촉각·시각 센서 역량을 모두 내재화한 디자인하우스라는 포지셔닝은 중장기 차별화 포인트가 될 수 있다. 그러나 센서 사업이 의미 있는 매출 기여로 이어지기까지는 시간이 소요될 것이며, 기존 사업에서 판관비 통제와 마진 회복이 단기 재무 성과의 가늠자가 될 전망이다.",
+  "en": "The 2026 outlook centers on two tracks: (1) restoring profitability in the core design house business and (2) transitioning sensor products to mass production. The MEMS microphone sensor has entered its final stage toward 2026 mass production through SK Hynix System IC's Wuxi MEMS-dedicated fab. The ultrasonic sensor is in prototype stage for 6- and 8-inch processes, targeting medical devices, beauty devices, and physical AI applications. The Ge-on-Si SWIR sensor, co-developed with Stratio Inc., follows a 2024–2027 roadmap targeting home appliances, automotive, defense, and robotics. Multiple mid-to-long-term R&D initiatives are all scheduled for completion in 2026, including edge AI In-Memory Computing SCM controller IP (2022–2026), Batteryless BLE AI SoC (2023–2026), and intelligent payment terminal SoC (2024–2026). In the automotive space, collaboration with France's Cortus on RISC-V SoC for automotive customers is ongoing. As the physical AI ecosystem matures, Synic Solution's in-house coverage across acoustic, tactile, and visual sensing could become a meaningful medium-term differentiator. That said, sensor revenue contribution will likely require time to scale, and near-term financials will hinge primarily on SGA cost discipline and margin recovery in the core business."
+ },
+ "valuation_comment": {
+  "ko": "주당순자산(BPS) 1,862원 대비 현재 주가는 상당한 프리미엄 구간에 형성되어 있으며, 이는 시장이 단순 장부가치를 넘는 성장 옵션—특히 피지컬 AI 센서 신사업—을 일부 선반영하고 있음을 시사한다. 다만 2025년 연간 영업이익률 1.6%, 2026년 1분기 영업 손익분기점 수준이라는 현실을 감안하면, 이익 창출 능력 대비 현재 프리미엄 수준은 내재 기대치가 높게 설정되어 있다는 점을 고려해야 한다. 주당현금배당금(DPS)은 0원(무배당)으로 주주환원 관점에서는 업종 내 여타 흑자 기업 대비 하회하는 상태이며, 현재의 주가는 성장 옵션 기대에 전적으로 의존하는 구조다. MEMS 센서 양산 가시화나 본업 마진의 의미 있는 회복이 확인되는 시점이 도래한다면, 이익 기반의 밸류에이션 재평가가 가능한 구조이나 그 전까지는 순자산 프리미엄을 정당화할 이익 지표의 개선 확인이 선행되어야 할 것이다.",
+  "en": "The current share price carries a meaningful premium over the book value per share (BPS: KRW 1,862), suggesting that the market is already pricing in value beyond tangible assets—particularly the physical AI sensor growth option. However, the 2025 operating margin of 1.6% and the near-breakeven operating result in Q1 2026 mean the premium to current earnings power is elevated, reflecting high embedded expectations. With DPS at zero (no cash dividend), the stock offers no shareholder return beyond potential price appreciation, placing it below sector peers in terms of yield. Should MEMS sensor mass production materialize or core margins recover meaningfully, an earnings-based re-rating is a plausible path—but the logical prerequisite is a sustained improvement in profitability metrics before the current premium to net assets can be fully justified."
+ },
+ "bull": [
+  {
+   "title": {
+    "ko": "220개 이상 고객·멀티 파운드리 기반의 안정적 수주 구조",
+    "en": "220+ Customers and Multi-Foundry Platform Underpin Stable Order Flow"
+   },
+   "body": {
+    "ko": "싸이닉솔루션은 국내 디자인하우스 중 가장 넓은 고객 기반(220개 이상)을 보유하고, SK하이닉스시스템IC·SK키파운드리·대만 PSMC·싱가포르 AMF 등 다양한 파운드리와 파트너십을 운영한다. 매출의 90% 이상이 해외에서 발생하며, 특정 애플리케이션 편중 없이 IoT·전장·결제·이미지센서 등 다변화된 포트폴리오를 유지해 반도체 경기 사이클 변동에 비교적 강한 수주 구조를 갖추고 있다. 2025년 매출이 감소한 상황에서도 영업이익 흑자를 유지한 것은 이 안정성의 단면을 보여준다.",
+    "en": "Synic Solution holds the broadest customer base (220+) among domestic design houses and runs multi-foundry partnerships across SK Hynix System IC, SK Keyfoundry, Taiwan's PSMC, and Singapore's AMF. With over 90% of revenue generated overseas and a diversified application portfolio spanning IoT, automotive, payments, and imaging, the order structure is relatively resilient to semiconductor cycles. The fact that operating profit remained positive despite a revenue decline in 2025 reflects this structural stability."
+   }
+  },
+  {
+   "title": {
+    "ko": "피지컬 AI 대응 센서 3종 내재화 — 중장기 사업 고부가화 가능성",
+    "en": "In-House Physical AI Sensor Trio Opens Medium-Term Upside"
+   },
+   "body": {
+    "ko": "회사는 MEMS 마이크로폰(청각)·초음파(촉각)·SWIR 이미지센서(시각)를 모두 내재화한 센서 전문 디자인하우스를 표방한다. MEMS 마이크로폰은 2026년 양산 목표로 최종 단계에 진입했고, SWIR 센서는 적외선 AI 전문기업 스트라티오와 공동 개발 중이다. 피지컬 AI, 휴머노이드 로봇, 자율주행 등 고성장 전방 시장이 구체화될 경우 이 센서 포트폴리오는 기존 CIS·PMIC 사업 대비 높은 부가가치를 창출할 수 있는 잠재력을 지닌다.",
+    "en": "The company positions itself as a sensor-focused design house with in-house coverage across all three physical AI sensing modalities: acoustic (MEMS microphone), tactile (ultrasonic), and visual (SWIR imager). The MEMS microphone has entered its final stage toward 2026 mass production, while the SWIR sensor is under co-development with infrared AI specialist Stratio Inc. If demand from high-growth end markets—physical AI, humanoid robots, and autonomous vehicles—materializes, this sensor portfolio holds the potential to generate significantly higher value-add than the legacy CIS/PMIC business."
+   }
+  },
+  {
+   "title": {
+    "ko": "2026년 완료 예정 복수의 R&D 과제 — IP 상용화·신규 수주 진입 기대",
+    "en": "Multiple R&D Projects Due in 2026 Open IP Licensing and Order Entry Windows"
+   },
+   "body": {
+    "ko": "엣지 AI용 IMC SCM 컨트롤러 IP(2022~2026), Batteryless BLE AI SoC(2023~2026), 지능형 결제 단말기용 SoC(2024~2026) 등 복수의 중장기 R&D 과제가 2026년 완료를 목표로 하고 있다. 이 성과물들이 상용화 단계에 진입하면 IP 라이선싱이나 신규 양산 수주로 연결될 수 있으며, 사업 구조 고부가화 가능성을 높인다. 프랑스 Cortus와의 RISC-V 전장 SoC 협력 등 글로벌 파트너십도 신규 수주 경로로 기능할 수 있다.",
+    "en": "Multiple mid-to-long-term R&D initiatives are scheduled for completion in 2026, including an edge AI In-Memory Computing SCM controller IP (2022–2026), a Batteryless BLE AI SoC for smart home (2023–2026), and an intelligent payment terminal SoC (2024–2026). Once commercialized, these can translate into IP licensing arrangements or new mass-production orders, lifting the business's value-add profile. Global partnerships such as the RISC-V automotive SoC collaboration with France's Cortus also represent potential new order channels."
+   }
+  }
+ ],
+ "bear": [
+  {
+   "title": {
+    "ko": "레거시 공정 의존 — 첨단 AI 칩 수주 성장으로부터 소외 위험",
+    "en": "Legacy Process Dependency Creates Structural Distance from AI Chip Order Growth"
+   },
+   "body": {
+    "ko": "싸이닉솔루션의 핵심 파운드리 파트너인 SK하이닉스시스템IC는 8인치 레거시 공정(350~90nm) 특화 업체로, 경쟁 디자인하우스들이 2~5나노 첨단 공정 기반 AI·HPC 칩 수주를 확대하는 흐름에서 상대적으로 소외될 수 있다. 실제로 2025년에 매출이 전년 대비 감소한 반면, 삼성·TSMC 파운드리 생태계에 속한 경쟁사들은 AI 수요 확대에 힘입어 성장 모멘텀을 유지했다. 레거시 공정의 장기 수요 감소는 핵심 사업 기반에 구조적 압력이 될 수 있다.",
+    "en": "Synic Solution's primary foundry partner, SK Hynix System IC, specializes in 8-inch legacy processes (350–90nm). As competitors expand AI and HPC chip orders through 2–5nm advanced nodes, Synic Solution risks being structurally sidelined from the fastest-growing segment of the market. In 2025, revenue declined year-over-year while competing design houses tied to Samsung or TSMC foundries maintained growth momentum driven by AI demand. A secular decline in legacy process demand could impose structural headwinds on the core business."
+   }
+  },
+  {
+   "title": {
+    "ko": "수익성 악화와 영업현금흐름 적자 — 본업 마진 회복 불확실성",
+    "en": "Deteriorating Profitability and Negative CFO Raise Core Margin Recovery Uncertainty"
+   },
+   "body": {
+    "ko": "2025년 영업이익률은 1.6%에 불과하고, 2026년 1분기 영업이익은 소폭 적자로 전환되었다. 연간 영업현금흐름은 -24억원으로, 장부상 흑자에도 불구하고 실질 현금 창출이 이루어지지 않고 있다. 대손상각비 증가는 매출채권 회수 리스크를 내포하며, 반복 발생 시 손익 변동성이 커질 수 있다. 마진 개선이 선행되지 않으면 센서 신사업에 필요한 R&D 및 설비 투자 여력도 제약받을 가능성이 있다.",
+    "en": "The 2025 operating margin stood at just 1.6%, and Q1 2026 slipped to a small operating loss. Annual operating cash flow was -KRW 2.4bn, meaning that despite book profits, no net cash is being generated from operations. Higher bad-debt provisions imply receivables collection risk that could recur and amplify earnings volatility. Without margin recovery, the company's capacity to fund R&D and capital expenditures for sensor development may also be constrained."
+   }
+  },
+  {
+   "title": {
+    "ko": "중국·대만 매출 집중에 따른 지정학·무역 규제 리스크",
+    "en": "Geopolitical and Trade Regulation Risks from Heavy China/Taiwan Revenue Concentration"
+   },
+   "body": {
+    "ko": "매출의 90% 이상이 해외, 특히 중국·대만 팹리스 고객에서 발생하며, 주요 파운드리 파트너 SK하이닉스시스템IC도 중국 우시에 위치한다. 미중 반도체 규제 강화나 양안 관계 악화 시 공급망 교란이나 고객 이탈이 발생할 수 있다. 2022년 SK하이닉스시스템IC의 중국 우시 이전이 외부 환경 변화에 따른 사업 노출의 선례이며, 추가적인 규제 조치는 영업 환경에 직접적인 영향을 미칠 수 있다.",
+    "en": "Over 90% of revenue is derived from overseas—primarily Chinese and Taiwanese fabless clients—and the key foundry partner SK Hynix System IC is based in Wuxi, China. An escalation in U.S.-China semiconductor restrictions or a deterioration in cross-strait relations could disrupt supply chains or trigger customer attrition. The 2022 relocation of SK Hynix System IC's fab to Wuxi illustrates how geopolitical shifts can materially reshape the operating landscape, and further regulatory actions may have a direct impact on revenue sustainability."
+   }
+  }
+ ],
+ "risks": [
+  {
+   "cat": {
+    "ko": "센서 신사업 양산 일정 지연 리스크",
+    "en": "MEMS/SWIR Sensor Mass Production Delay Risk"
+   },
+   "body": {
+    "ko": "MEMS 마이크로폰·초음파·SWIR 센서의 양산 전환은 기술 난도가 높고 파운드리 공정 확보, 고객 품질 검증 등 복수의 과제가 선행되어야 한다. 양산 일정이 지연될 경우 성장 모멘텀 약화와 함께 R&D 비용 부담이 장기화될 수 있다. 특히 Ge-on-Si 기반 SWIR 센서는 2027년 이후 완료 로드맵으로, 실질 매출 기여 시점이 당초 기대보다 늦어질 가능성이 있다.",
+    "en": "Transitioning MEMS microphone, ultrasonic, and SWIR sensors to mass production requires clearing multiple technical hurdles including advanced process capability, customer qualification, and quality validation. Delays would dampen growth momentum and prolong elevated R&D costs. Notably, the Ge-on-Si SWIR sensor follows a roadmap extending beyond 2027, meaning material revenue contribution could arrive later than the market currently anticipates."
+   }
+  },
+  {
+   "cat": {
+    "ko": "대손상각비 등 판관비 재확대 리스크",
+    "en": "Recurrence of SGA Spikes (Bad-Debt Provisions) Risk"
+   },
+   "body": {
+    "ko": "2025년 영업이익 급감의 주된 원인은 대손상각비를 포함한 판관비 증가였다. 중국·대만 고객 편중 구조에서 글로벌 경기 둔화나 특정 고객의 재무 악화 시 대손 비용이 재확대될 수 있다. 영업현금흐름이 이미 마이너스인 상황에서 판관비 재확대는 유동성과 수익성에 동시 압박을 가할 수 있다.",
+    "en": "The primary driver of the 2025 operating profit decline was a spike in SGA, notably bad-debt provisions. Concentrated exposure to Chinese and Taiwanese customers means that a global economic slowdown or deterioration in any major client's financial position could re-trigger elevated bad-debt charges. Given that operating cash flow is already negative, a resurgence in SGA expenses could simultaneously pressure both liquidity and profitability."
+   }
+  },
+  {
+   "cat": {
+    "ko": "환율 변동성 리스크",
+    "en": "Foreign Exchange Volatility Risk"
+   },
+   "body": {
+    "ko": "매출의 90% 이상이 외화로 발생하는 반면 상당 비용은 원화로 지출되는 구조다. 2025년에는 외화환산손실 확대가 순이익 추가 감소 요인으로 작용했고, 2026년 1분기 순이익이 영업손실 대비 큰 폭으로 흑자를 기록한 배경에도 환율 반전 효과가 포함되어 있을 가능성이 높다. 이는 환율 방향에 따라 순이익 변동성이 영업이익 변동폭을 크게 상회할 수 있음을 의미한다.",
+    "en": "More than 90% of revenues are denominated in foreign currencies while a substantial portion of costs is incurred in KRW. In 2025, expanded FX translation losses were a key factor dragging net income below the operating line. Conversely, the Q1 2026 owner net income materially exceeding the small operating loss likely reflects an FX reversal benefit. This asymmetry means net income volatility can exceed operating income swings significantly in either direction depending on currency movements."
+   }
+  }
+ ],
+ "checkpoints": [
+  {
+   "when": {
+    "ko": "2026년 8월 중순(예상)",
+    "en": "Mid-August 2026 (expected)"
+   },
+   "what": {
+    "ko": "2026년 2분기 실적 발표: 매출 회복 추세 지속 여부, 영업이익 흑자 전환 여부, 판관비(대손상각비) 통제 상황을 확인해야 한다. 2분기 연속 영업 손익분기점 이하라면 마진 회복 경로가 기대보다 장기화될 수 있다.",
+    "en": "Q2 2026 earnings release: key items to watch are revenue trend recovery, return to positive operating profit, and SGA (bad-debt) containment. Two consecutive quarters near or below operating breakeven would signal that margin recovery is taking longer than expected."
+   }
+  },
+  {
+   "when": {
+    "ko": "2026년 하반기",
+    "en": "H2 2026"
+   },
+   "what": {
+    "ko": "MEMS 마이크로폰 센서 양산 개시 여부: 회사 공시 또는 초도 납품 확인이 신사업 수익화의 첫 번째 구체적 증거가 되며, 양산 단가와 고객 확보 규모가 중기 실적 가시성에 직결된다.",
+    "en": "MEMS microphone sensor mass production launch: an official disclosure or initial delivery confirmation would be the first tangible evidence of new business monetization; production unit pricing and the breadth of initial customers will directly inform medium-term earnings visibility."
+   }
+  },
+  {
+   "when": {
+    "ko": "2026년 내 (R&D 완료 예정 시점)",
+    "en": "Within 2026 (R&D completion targets)"
+   },
+   "what": {
+    "ko": "IMC SCM 컨트롤러 IP, Batteryless BLE AI SoC, 지능형 결제 단말기 SoC 등 2026년 완료 예정 R&D 과제의 기술 이전 또는 상용화 계약 공시 여부를 모니터링해야 한다.",
+    "en": "Completion of the 2026-targeted R&D initiatives (IMC SCM controller IP, Batteryless BLE AI SoC, intelligent payment terminal SoC) and any related technology transfer or commercialization contract disclosures should be tracked."
+   }
+  },
+  {
+   "when": {
+    "ko": "2026~2027년",
+    "en": "2026–2027"
+   },
+   "what": {
+    "ko": "초음파 센서 및 SWIR 센서의 시제품 검증 완료와 전략 파운드리 양산 공정 계약 체결 여부: 이 두 품목이 수주 단계에 진입하는지 여부가 신사업의 중기 성장 스케줄을 가늠하는 핵심 지표다.",
+    "en": "Ultrasonic and SWIR sensor prototype validation completions, and any strategic foundry production process agreements: whether these two product lines enter an active design-win stage will be the key indicator of the new business medium-term growth schedule."
+   }
+  },
+  {
+   "when": {
+    "ko": "상시 모니터링",
+    "en": "Ongoing"
+   },
+   "what": {
+    "ko": "분기 영업현금흐름(CFO) 부호 전환 여부, 판관비(대손상각비) 수준 변화, 미중 반도체 수출 규제 동향: 세 지표 모두 본업의 지속가능성과 사업 환경 변화에 직결되는 핵심 관찰 항목이다.",
+    "en": "Quarterly operating cash flow (CFO) sign change, SGA/bad-debt expense trends, and U.S.-China semiconductor export control developments: all three are directly tied to core business sustainability and the operating environment."
+   }
+  }
+ ],
+ "verdict": {
+  "body": {
+   "ko": "싸이닉솔루션은 SK하이닉스시스템IC 공식 디자인하우스로서 220개 이상의 다변화된 고객 기반과 멀티 파운드리 네트워크를 바탕으로 레거시 공정 중심의 안정적 매출 구조를 유지하고 있다. 그러나 2025년에는 매출·영업이익·순이익이 전년 대비 일제히 큰 폭으로 감소하고, 2026년 1분기에도 영업이익이 손익분기점 수준에 머물러 본업 수익성 회복이 아직 확인되지 않고 있다. 동시에 MEMS 마이크로폰·초음파·SWIR 센서 등 피지컬 AI 분야를 겨냥한 고부가 신사업을 적극 추진 중이며, 2026년 내 양산 전환을 목표로 하는 제품이 있어 중기 사업 구조 개선의 가능성은 열려 있다. 다만 센서 신사업의 수익화 속도와 기존 사업의 마진 회복 모두 아직 불확실한 상황으로, 현재 순자산 대비 높은 프리미엄은 미래 성장 기대치를 상당 부분 선반영한 구조다. 투자자 입장에서는 2026년 하반기 MEMS 센서 양산 개시 공시, 복수 R&D 과제의 상용화 계약, 분기 영업이익 흑자 복귀라는 세 가지 이벤트가 이후 사업 방향성과 밸류에이션 재평가의 방아쇠가 될 것이다.",
+   "en": "As SK Hynix System IC's official design house, Synic Solution maintains a structurally stable revenue base anchored by 220+ diversified clients and a multi-foundry network. However, FY2025 saw broad-based declines across revenue, operating profit, and net income, and Q1 2026 remained near operating breakeven, leaving core margin recovery unconfirmed. Simultaneously, the company is aggressively pursuing high-value physical AI sensor applications—MEMS microphone, ultrasonic, and SWIR—with 2026 mass-production targets in sight, keeping the door open for a medium-term business upgrade. That said, both the pace of sensor commercialization and core margin recovery remain uncertain, and the current share price—trading at a meaningful premium to net asset value—embeds substantial forward growth expectations. For observers, the three critical verification events in H2 2026 will be: an official MEMS sensor mass-production launch disclosure, commercial agreements following R&D project completions, and a return to positive quarterly operating profit—any or all of which could serve as catalysts for re-assessing the business trajectory."
+  }
+ },
+ "sources": [
+  "https://m.thinkpool.com/compDiscuss/cont/1023142",
+  "https://m.thinkpool.com/stockDiscuss/234030/cont/11847884",
+  "https://www.valueline.co.kr/finance/summary/234030",
+  "https://comp.fnguide.com/SVO2/ASP/SVD_Main.asp?pGB=1&gicode=A234030&cID=&MenuYn=Y&ReportGB=D&NewMenuID=Y&stkGb=701",
+  "https://itooza.com/vscore/234030",
+  "https://www.digitaltoday.co.kr/news/articleView.html?idxno=630382",
+  "https://markets.hankyung.com/stock/234030",
+  "https://www.sedaily.com/NewsView/2GV9B6Z58R",
+  "https://www.newstof.com/news/articleView.html?idxno=28045",
+  "https://ko.wikipedia.org/wiki/%EC%8B%B8%EC%9D%B4%EB%8B%89%EC%86%94%EB%A3%A8%EC%85%98",
+  "https://synic.co.kr/",
+  "https://www.saramin.co.kr/zf_user/company-info/view/csn/VktRb2RiaXVvaTBBNzlHd1hKMWN2UT09/company_nm/(%EC%A3%BC)%EC%8B%B8%EC%9D%B4%EB%8B%89%EC%86%94%EB%A3%A8%EC%85%98",
+  "https://www.jobkorea.co.kr/company/46422335",
+  "https://www.hellot.net/news/article.html?no=101106",
+  "https://kind.krx.co.kr/listinvstg/listinvstgcom.do?method=searchListInvstgCorpDetail&bizProcNo=20250106000326",
+  "https://comp.fnguide.com/SVO2/ASP/SVD_Main.asp?gicode=A234030",
+  "http://www.dailyinvest.kr/news/articleView.html?idxno=67459",
+  "https://www.thelec.kr/news/articleView.html?idxno=55559"
+ ],
+ "v": 2,
+ "model": "claude-sonnet-4-6",
+ "ticker": "234030",
+ "name": "싸이닉솔루션",
+ "name_en": "SYNIC SOLUTION CO., LTD.",
+ "sector": "반도체",
+ "categories": [
+  "반도체"
+ ],
+ "market": "코스닥",
+ "reportDate": "2026-06-19",
+ "reportTs": "2026-06-19 01:30",
+ "dataDate": "20260618",
+ "quant": {
+  "asOf": "2026-06-18",
+  "fs_basis": "연결(CFS) · DART 공시 확정치 · 지배주주 기준 순이익",
+  "annual": [
+   {
+    "year": 2025,
+    "rev": 154563595625,
+    "op": 2512181957,
+    "np": 1770374325,
+    "np_owner": 1726158391,
+    "equity": 36545999573,
+    "equity_owner": 36545999573,
+    "liab": 27179754048,
+    "cfo": -2382603460,
+    "eps_basic": 79,
+    "opm": 1.6,
+    "roe": 4.7,
+    "debt_ratio": 74.4
+   }
+  ],
+  "quarterly": [
+   {
+    "q": "2025Q1",
+    "rev": null,
+    "op": null,
+    "np_owner": null
+   },
+   {
+    "q": "2025Q2",
+    "rev": null,
+    "op": null,
+    "np_owner": null
+   },
+   {
+    "q": "2025Q3",
+    "rev": null,
+    "op": null,
+    "np_owner": null
+   },
+   {
+    "q": "2025Q4",
+    "rev": 42049731985,
+    "op": 883523349,
+    "np_owner": 1025904457
+   },
+   {
+    "q": "2026Q1",
+    "rev": 40386799922,
+    "op": -31702756,
+    "np_owner": 1561422615
+   }
+  ],
+  "valuation": {
+   "price": 4435,
+   "mcap": 0.1047,
+   "shares": 23605000,
+   "total_shares": 23605000,
+   "wavg_shares": 20545034,
+   "per": null,
+   "eps": null,
+   "pbr": 2.38,
+   "bps": 1862,
+   "roe_ttm": null,
+   "ttm_window": null,
+   "ttm_np_owner": null,
+   "pbr_krx": 2.86,
+   "bps_krx": 1548.0,
+   "basis": "PER·EPS·PBR·BPS 모두 자체 산출(네이버·토스와 동일 방식) · 배당은 DART 공시 주당현금배당금(보완:KRX) ÷ 현재가",
+   "dps": 0.0,
+   "div": 0.0
+  }
+ }
+}

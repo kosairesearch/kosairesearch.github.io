@@ -1,0 +1,326 @@
+{
+ "title": {
+  "ko": "AI 데이터센터 수혜 가시화·수익성 정상화 여부 주목",
+  "en": "AI Data Center Tailwinds Clear; Earnings Quality Recovery in Focus"
+ },
+ "lead": {
+  "ko": "중국 AI 데이터센터 투자 사이클을 등에 업고 2025년 연결 매출이 전년 대비 약 100% 성장했으나, 2026년 1분기 영업이익 플러스에도 불구하고 지배주주 귀속 순이익이 대규모 손실로 전환되면서 이익 구조의 안정성이 핵심 관전 포인트로 부상했다.",
+  "en": "Riding China's AI data center investment cycle, 2025 consolidated revenue nearly doubled year-over-year; however, a substantial net loss to controlling shareholders in 2026 Q1—despite positive operating profit—has elevated earnings quality to the central variable for investor assessment."
+ },
+ "keypoints": [
+  {
+   "ko": "2025년 연결 매출 약 965억원(전년 대비 +100%), 영업이익 약 115억원(OPM 12.0%)으로 외형 성장과 마진 확대 동시 달성",
+   "en": "2025 consolidated revenue ~KRW 96.5 bn (+~100% YoY) and operating profit ~KRW 11.5 bn (OPM 12.0%), achieving simultaneous top-line growth and margin expansion"
+  },
+  {
+   "ko": "중국 '동수서산' 8개 데이터센터 SSD 공급자 선정 확정—중국향 매출 비중 95% 이상으로 AI 인프라 수요의 직접 수혜 구조",
+   "en": "Confirmed selection as SSD supplier for China's 8-site 'Dongsu Seosan' data center project; China-derived revenue exceeds 95%, providing direct leverage to AI infrastructure demand"
+  },
+  {
+   "ko": "2026년 1분기 영업이익 약 +32억원(OPM 15.4%, 역대 최고)에도 지배주주 귀속 순이익 약 -81억원—영업외 손익 불투명성이 최대 불확실성",
+   "en": "2026 Q1 operating profit ~+KRW 3.2 bn (OPM 15.4%, record high) yet controlling shareholders' net income was ~-KRW 8.1 bn—opacity of non-operating items is the primary uncertainty"
+  },
+  {
+   "ko": "2025년 부채비율 102%·영업현금흐름 약 -171억원으로, 토탈 서버 솔루션 사업 확장에 따른 운전자본 부담이 재무 건전성 지표에 반영",
+   "en": "2025 debt ratio of 102% and operating cash flow of ~-KRW 17.1 bn reflect mounting working capital pressure from Total Server Solution business expansion"
+  },
+  {
+   "ko": "PCIe Gen5 전환·HBM 어드밴스드 패키징(AVP) 사업 진출 등 다각화 추진 중이나, 구체적 수익 기여 시점은 미확정",
+   "en": "Diversification underway via PCIe Gen5 transition and HBM Advanced Package (AVP) business entry, but concrete revenue contribution timelines remain unconfirmed"
+  }
+ ],
+ "business": {
+  "ko": "엠디바이스(구 메가일렉트로닉스)는 메모리 반도체(DRAM·NAND)와 SSD 컨트롤러를 결합한 SSD를 설계부터 제조·조립·검사·판매·유통까지 전 과정을 수직통합 방식으로 수행하는 반도체 스토리지 전문 기업이다. 2019년 SSD 상업화에 성공하고 2023년 기업용(엔터프라이즈) SSD 시장에 본격 진출하면서 고성장 국면에 진입했다. 주요 제품은 기업용 SSD, 소비자용 SSD, BGA SSD(임베디드·산업용)이며, 키움증권 2025년 5월 보고서 기준 2024년 기업용 SSD 매출 비중은 약 96.8%에 달한다. 핵심 원재료인 NAND 플래시 웨이퍼는 삼성전자와 SK하이닉스의 고정 거래처로 등록돼 안정적으로 공급받고 있으며, PCIe Gen4·Gen5 기반 NVMe SSD와 최대 30TB 이상 엔터프라이즈급 라인업을 보유한다. 매출의 지역 구조는 중국에 95% 이상 집중돼 있고, 주요 고객은 중국 서버 시장 핵심 공급사인 H사(칭화유니그룹 계열)와 B사(대만·중국 합작사)이다. 2025년 이후에는 SSD 단품 공급에서 나아가, 대만 OEM 서버에 자사 SSD를 탑재해 납품하는 '토탈 서버 솔루션' 사업으로 외연 확장을 모색 중이다. 2025년 3월 코스닥 상장으로 조달한 공모자금을 HBM 하이브리드 본딩 기술 기반의 어드밴스드 패키징(AVP) 라인 구축에 투입하며 신사업 기반을 마련하고 있다. 2017년 세계에서 네 번째로 BGA SSD를 독자 개발한 이력을 보유하고 있으며, 중국 현지 경쟁사 대비 1~1.5세대 앞선 제품 세대 경쟁력을 핵심 강점으로 내세우고 있다.",
+  "en": "MDevice (formerly Mega Electronics) is a vertically integrated semiconductor storage specialist that handles the entire value chain—design, manufacturing, assembly, inspection, sales, and distribution—for SSDs combining DRAM/NAND memory and SSD controllers. The company commercialized SSDs in 2019 and entered the enterprise market in 2023, initiating a high-growth phase. Key products include enterprise SSDs, consumer SSDs, and BGA SSDs (embedded/industrial); per a Kiwoom Securities report of May 2025, enterprise SSDs accounted for approximately 96.8% of 2024 revenue. Core NAND flash wafers are sourced under registered vendor agreements with Samsung Electronics and SK Hynix, with a lineup spanning PCIe Gen4/Gen5 NVMe SSDs and enterprise-grade solutions exceeding 30 TB. China accounts for over 95% of revenue, with key customers being H Company (a Tsinghua Unigroup affiliate and a leading Chinese server manufacturer) and B Company (a Taiwan-China joint venture). Since 2025, MDevice has been expanding beyond SSD supply toward a 'Total Server Solution' model—sourcing servers from Taiwanese OEMs, integrating its SSDs, and delivering complete server packages. IPO proceeds from its March 2025 KOSDAQ listing are being deployed into an Advanced Package (AVP) manufacturing line based on HBM hybrid bonding technology. MDevice was the world's fourth company to independently develop a BGA SSD (2017) and claims a 1–1.5 generation product advantage over Chinese domestic competitors."
+ },
+ "earnings": {
+  "ko": "2024년 연결 기준 매출액 약 483억원, 영업이익 약 50억원(OPM 10.3%), 지배주주 귀속 순이익 약 32억원으로, 2022~2023년 연속 적자에서 이익 회복의 원년을 맞이했다. 2025년에는 중국 데이터센터향 기업용 SSD 수요가 급증하며 매출 약 965억원(전년 대비 약 +100%), 영업이익 약 115억원(+133%, OPM 12.0%), 지배주주 귀속 순이익 약 107억원으로 고성장을 이어갔다. 분기별로는 2025년 2분기(매출 약 253억원, 영업이익 약 33억원, OPM 13.0%)와 4분기(매출 약 330억원, 영업이익 약 39억원)가 연간 성장을 견인했으며, 4분기 지배주주 귀속 순이익은 약 66억원으로 연간 합계의 약 62%를 차지해 이익의 계절적 편중도가 높은 편이다. 2026년 1분기는 매출 약 205억원, 영업이익 약 32억원(OPM 15.4%, 분기 기준 역대 최고)을 기록했으나, 지배주주 귀속 순이익은 약 -81억원의 대규모 손실로 전환됐다. 영업이익(+약 32억원)과 순이익(-약 81억원) 사이의 약 113억원 이상의 괴리는 영업외 항목에서 상당한 손실이 발생했음을 시사하며, 파생상품 평가손, 환율 관련 손실, 자산 평가손 등 가능성이 있으나 DART 분기 보고서 주석을 통한 원인 확인이 필요하다. 부채비율은 2024년 34%에서 2025년 102%로 급등했으며, 이는 토탈 서버 솔루션 사업 추진에 따른 차입금 증가와 서버 재고 매입 등에 기인한 것으로 추정된다. 영업활동 현금흐름은 2024년 약 -31억원에서 2025년 약 -171억원으로 확대됐으며, 순이익 대비 현금 창출의 대규모 괴리는 운전자본(재고 및 매출채권) 증가가 주원인으로 분석된다. 외형 성장 가속화와 함께 이익의 질과 현금 창출력의 안정화가 구조적 과제로 남아 있다.",
+  "en": "In 2024, consolidated revenue was ~KRW 48.3 bn, operating profit ~KRW 5.0 bn (OPM 10.3%), and controlling shareholders' net profit ~KRW 3.2 bn, marking a return to profitability after two consecutive years of operating losses in 2022–2023. In 2025, surging enterprise SSD demand from Chinese data centers drove revenue to ~KRW 96.5 bn (+~100% YoY), operating profit to ~KRW 11.5 bn (+133%, OPM 12.0%), and controlling shareholders' net profit to ~KRW 10.7 bn. Quarterly performance was led by Q2 2025 (revenue ~KRW 25.3 bn, OP ~KRW 3.3 bn, OPM 13.0%) and Q4 2025 (revenue ~KRW 33.0 bn, OP ~KRW 3.9 bn); Q4 net profit attributable to owners was ~KRW 6.6 bn, representing ~62% of the full-year total, indicating high seasonal earnings concentration. In 2026 Q1, revenue was ~KRW 20.5 bn and operating profit ~KRW 3.2 bn (OPM 15.4%, a quarterly record)—yet controlling shareholders' net income swung to a loss of ~-KRW 8.1 bn. The ~KRW 11.3 bn+ gap between operating profit and net income strongly implies substantial non-operating losses, potentially from derivatives, foreign exchange, or asset impairment; the specific cause requires verification from DART quarterly filing footnotes. The debt ratio surged from 34% in 2024 to 102% in 2025, attributable to borrowings and server inventory procurement for the Total Server Solution expansion. Operating cash flow widened from ~-KRW 3.1 bn in 2024 to ~-KRW 17.1 bn in 2025, with the large divergence from net income driven by working capital build-up (inventory and receivables). While topline momentum is accelerating, improving earnings quality and cash flow stability remain structural priorities."
+ },
+ "industry": {
+  "ko": "글로벌 AI 인프라 투자 확대는 GPU 연산 성능 고도화와 함께 대규모 데이터 저장·처리 수요를 폭발적으로 키우고 있으며, 엔터프라이즈 SSD는 이 흐름의 핵심 수혜 부품으로 부상했다. 데이터센터 환경에서 학습 데이터 저장, 추론 처리, 로그 관리 등에서 SSD 활용도가 구조적으로 확대되고 있어, AI 서버 증설이 곧 기업용 SSD 수요 증가로 직결되는 구조가 형성되고 있다. 중국 시장에서는 정부 주도의 '동수서산(東數西算)' 정책—동부 데이터를 서부 지역에서 연산하는 약 77조원 규모의 민관 합동 데이터센터 클러스터—이 스토리지 수요의 주요 촉매로 작용하고 있다. 미국의 대중국 첨단 반도체 수출 규제 강화로 글로벌 IDM들의 중국 진입이 제한되는 상황에서, 10nm 이상 레거시 제품 라인업을 보유한 중소형 전문 공급사에게는 틈새 시장 기회가 열리고 있다. 글로벌 엔터프라이즈 SSD 시장의 주요 경쟁자는 Western Digital, Seagate, Kioxia 등 대형 스토리지 기업들이며, 중국 내 현지 신흥 제조사와의 경쟁도 심화되는 양상이다. 소비자용 SSD 시장에서는 중국 업체들의 저가 공세로 경쟁이 격화되고 있으나, 기업용 SSD는 고객 인증 진입 장벽이 높고 장기 공급 계약 구조가 일반적이어서 레퍼런스를 확보한 공급사에게는 매출 견고성이 유지된다. NAND 플래시 가격은 2024년 하락 후 회복 기조로 전환됐으며, 재료비 변동을 판매단가에 연동하는 계약 구조가 수익성의 일부 완충 역할을 한다.",
+  "en": "The global AI infrastructure investment surge, alongside GPU performance scaling, is generating explosive demand for large-scale data storage and processing, positioning enterprise SSDs as a key beneficiary component. In AI server environments, SSD usage for training data storage, inference, and log management is structurally expanding, making AI server buildout directly equivalent to enterprise SSD demand growth. In China, the government-led 'Dongsu Seosan' policy—a ~KRW 77 trillion public-private data center cluster build routing eastern data to western compute hubs—is a major demand catalyst for storage. Tightening U.S. export controls on advanced semiconductors are limiting global IDM access to China, opening niche opportunities for specialists with legacy (10nm+) product lineups. Major global competitors in enterprise SSD include Western Digital, Seagate, and Kioxia, while Chinese domestic manufacturers are intensifying competitive pressure. Consumer SSD faces severe price competition from Chinese players, but enterprise SSD maintains higher entry barriers given multi-month qualification cycles; once qualified, vendors typically secure durable long-term supply agreements. NAND flash prices have been recovering since their 2024 decline, with cost pass-through pricing structures providing partial insulation from raw material swings."
+ },
+ "outlook": {
+  "ko": "엠디바이스는 2026년부터 주력 제품을 PCIe 5세대(Gen5)로 전환할 계획이며, 이는 단가 개선과 중국 고객사 내 기술 우위 유지에 기여할 전망이다. 중국 8개 데이터센터를 조성하는 동수서산 프로젝트의 SSD 공급자 선정은 대표이사 IPO 간담회에서 공식 확인됐으며, 실질적인 납품 물량과 시점이 구체화되는 시점이 2026년 하반기 이후 실적의 핵심 변수가 될 것이다. 토탈 서버 솔루션(대만 OEM 서버 + 자사 SSD 탑재) 사업은 삼성증권 2025년 12월 보고서 기준 주요 고객사 최종 테스트 단계에 있으며, NAND 수급 및 가격 조율 이후 계약 규모와 납품 시점이 확정될 예정이다. AVP(하이브리드 본딩 기반 HBM 패키징) 사업은 특허 출원과 제조라인 설치를 완료하고 삼성전자·SK하이닉스 대상 업체 등록을 진행 중이나, 샘플 공급 및 양산 진입까지는 통상 1~2년 이상의 검증 기간이 소요되는 구조다. 2025년 1분기 기준 중국 주요 고객사향 매출 비중이 99%에 달하는 상황에서, 유럽 시장 대상의 기업용 SSD 인증 테스트가 진행 중이나 실질적인 유럽향 매출 기여 시점은 미정이다. 2026년 1분기 대규모 순손실의 원인 규명과 이후 분기에서의 수익성 정상화 여부가 단기 전망에서 가장 중요한 확인 포인트로 꼽힌다.",
+  "en": "MDevice plans to transition its main product lineup to PCIe Gen5 starting in 2026, expected to support unit price improvement and sustain its technological edge with Chinese customers. The company's selection as an SSD supplier for China's eight-site Dongsu Seosan data center project was officially confirmed at the CEO's IPO press conference; the timing and volume of actual deliveries will be the key earnings variable from H2 2026 onward. Per a Samsung Securities report dated December 2025, the Total Server Solution business (Taiwanese OEM servers integrated with company SSDs) was in final customer testing, with contract size and delivery schedule to be finalized after NAND supply and pricing coordination. The AVP (HBM hybrid bonding-based advanced packaging) business has completed patent filings and production line installation and is undergoing vendor registration with Samsung and SK Hynix; however, validation through sample supply to mass production entry typically requires 1–2+ years. With China-derived revenue at 99% as of 2025 Q1, enterprise SSD qualification testing for Europe is ongoing but the timeline for meaningful revenue contribution remains undetermined. Identifying the cause of the 2026 Q1 net loss and confirming earnings normalization in subsequent quarters are the most critical near-term monitoring points."
+ },
+ "valuation_comment": {
+  "ko": "현재 주가는 2025년 말 기준 장부가치(BPS 3,692원) 대비 상당한 프리미엄 구간에 위치하며, 이는 중장기 실적 성장 기대를 선반영한 수준으로 해석된다. 2025년 연간 이익 기준으로는 이익 배수가 의미 있게 낮아지나, 2026년 1분기 대규모 순손실로 인해 최근 네 개 분기 누적 이익이 현저히 위축된 상태이며, 이를 반영한 EPS(92원)가 화면 카드에 표시되고 있다. 2025년 3월 신규 상장 기업 특성상 역사적 주가 배수 밴드 데이터가 제한적이고, 공모가 대비 상장 이후 주가 변동성이 컸다는 점도 밸류에이션 산정의 불확실성을 높인다. 배당은 공시된 주당 배당금이 0원으로 배당수익률이 없으며, 이는 코스닥 성장 소형주 평균을 하회하는 수준이다. 향후 2026년 2분기 이후 수익성 정상화 여부와 동수서산·서버 솔루션·AVP 사업의 구체적 성과가 주가 배수 재평가의 핵심 기준으로 작용할 전망이다.",
+  "en": "The current share price trades at a substantial premium to the 2025 year-end book value (BPS KRW 3,692), suggesting significant forward earnings growth expectations are embedded in the market price. On a full-year 2025 earnings basis, the implied earnings multiple compresses meaningfully; however, the large net loss in 2026 Q1 has sharply reduced the trailing four-quarter cumulative profit, as reflected in the headline EPS of KRW 92 shown on the data card. As a company that only listed on KOSDAQ in March 2025, historical trading multiple band data is limited, and the stock exhibited notable post-IPO price volatility relative to the IPO price—adding to valuation uncertainty. Disclosed DPS is zero, yielding no dividend return, which is below the KOSDAQ small-cap growth peer average. Earnings normalization from 2026 Q2 onward and tangible progress across the Dongsu Seosan, Total Server Solution, and AVP businesses will be the primary drivers for any valuation multiple re-rating."
+ },
+ "bull": [
+  {
+   "title": {
+    "ko": "AI 데이터센터 투자 사이클의 직접 수혜 구조",
+    "en": "Direct Beneficiary of the AI Data Center Investment Cycle"
+   },
+   "body": {
+    "ko": "AI 서버 증설에 따른 엔터프라이즈 SSD 수요 증가는 구조적으로 지속될 전망이며, 엠디바이스는 이미 중국 주요 서버 공급사들과의 공급 계약을 통해 이 사이클에 직접 참여하고 있다. 중국 정부가 약 77조원 민관 투자 유발을 목표로 추진 중인 동수서산 프로젝트의 SSD 공급자로 선정된 사실은 대규모 신규 수요원과의 직접 연결을 의미한다. 동수서산 외에도 중국 내 화웨이 등 빅테크의 AI 연산 수요 확대로 데이터센터향 스토리지 수요가 꾸준히 증가하고 있어, 구조적 성장 가시성이 뒷받침된다.",
+    "en": "Enterprise SSD demand driven by AI server buildout is expected to remain structurally elevated, and MDevice is already directly participating in this cycle through supply agreements with leading Chinese server providers. Selection as the SSD supplier for China's Dongsu Seosan project—targeting ~KRW 77 trillion in public-private investment across eight data center sites—represents a direct link to a major new demand source. Beyond Dongsu Seosan, expanding AI compute demand from Chinese big-tech players is driving sustained growth in data center storage, underpinning long-term demand visibility."
+   }
+  },
+  {
+   "title": {
+    "ko": "기술 세대 우위와 높은 진입 장벽",
+    "en": "Technological Generation Lead and High Entry Barriers"
+   },
+   "body": {
+    "ko": "엠디바이스는 중국 현지 경쟁사 대비 1~1.5세대 앞선 SSD를 공급 중이며, PCIe Gen5 전환으로 이 기술 격차를 유지하는 전략을 구사하고 있다. 삼성전자와 SK하이닉스의 고정 거래처로 등록돼 고품질 NAND 소재를 안정적으로 조달할 수 있는 공급망 위치도 경쟁 차별점이다. 기업용 SSD 시장은 고객 인증 획득에 수개월 이상이 소요되는 진입 장벽이 존재하며, 레퍼런스가 쌓일수록 장기 공급 계약으로 이어지는 구조여서 일단 주요 고객에 진입하면 매출 견고성이 높다.",
+    "en": "MDevice supplies SSDs that are 1–1.5 generations ahead of Chinese domestic competitors and is executing a strategy to maintain this gap through the PCIe Gen5 transition. Its registered vendor status with Samsung Electronics and SK Hynix ensures stable, high-quality NAND supply chain access as a key competitive differentiator. Enterprise SSD qualification processes require months of rigorous testing before approval; once a vendor is qualified, the relationship typically transitions to long-term supply contracts, lending significant revenue durability once key customer relationships are established."
+   }
+  },
+  {
+   "title": {
+    "ko": "사업 다각화: 토탈 서버 솔루션 및 AVP 신성장 옵션",
+    "en": "Business Diversification: Total Server Solution and AVP as New Growth Options"
+   },
+   "body": {
+    "ko": "SSD 단품 의존도를 낮추기 위한 '토탈 서버 솔루션'(대만 OEM 서버 + 자사 SSD 탑재 납품) 사업이 고객 최종 테스트 단계에 있으며, 성공적으로 개시될 경우 매출 기반 확대와 납품 단위당 부가가치 향상에 기여할 수 있다. HBM 하이브리드 본딩 기반 AVP 사업은 AI 반도체 후공정 시장 진입을 위한 장기 성장 옵션으로, 삼성전자·SK하이닉스와의 기존 공급망 관계를 활용한 벤더 등록을 목표로 한다. 두 신사업이 가시화되면 현재 중국·기업용 SSD에 집중된 이익 구조가 분산돼 기업 안정성과 성장 잠재력 평가 모두에 긍정적으로 작용할 수 있다.",
+    "en": "The 'Total Server Solution' business—bundling Taiwanese OEM servers with MDevice's SSDs—is in final customer testing and, upon successful launch, could expand the revenue base and improve per-unit value-add. The AVP business based on HBM hybrid bonding technology represents a long-term growth option for AI semiconductor back-end processing market entry, targeting vendor registration leveraging existing relationships with Samsung and SK Hynix. If both new businesses gain traction, the current concentration of earnings in China-facing enterprise SSD would diversify, positively affecting assessments of both corporate resilience and future growth potential."
+   }
+  }
+ ],
+ "bear": [
+  {
+   "title": {
+    "ko": "중국 단일 시장·단일 고객 고(高)집중 리스크",
+    "en": "High Concentration in China Single-Market and Single-Customer"
+   },
+   "body": {
+    "ko": "2025년 1분기 기준 중국 고객향 매출 비중이 99%에 달하며, 실질적으로는 칭화유니그룹 계열사인 H사 한 곳이 매출의 대부분을 차지하는 구조다. 이처럼 고도로 집중된 매출 구조는 핵심 고객의 발주 패턴 변화, 재무 상황 변화, 또는 중국 정부 정책 방향 전환 시 실적이 급격히 악화될 수 있는 구조적 취약점을 내포한다. 고객 다변화(유럽 테스트, 중국 내 B사 공급 확대 등) 노력이 진행 중이나 아직 실질적인 매출 분산 효과가 나타나지 않고 있다.",
+    "en": "As of 2025 Q1, China-derived revenue accounted for 99% of total revenue, with the vast majority effectively attributable to H Company (a Tsinghua Unigroup affiliate). This highly concentrated revenue structure represents a structural vulnerability whereby changes in key customer order patterns, financial difficulties, or Chinese government policy shifts could cause sharp revenue deterioration. While customer diversification efforts—European market testing, expanded B Company supply in China—are underway, meaningful revenue dispersion has yet to materialize."
+   }
+  },
+  {
+   "title": {
+    "ko": "2026년 1분기 대규모 순손실과 이익 가시성 저하",
+    "en": "Large Net Loss in 2026 Q1 and Deteriorated Earnings Visibility"
+   },
+   "body": {
+    "ko": "2026년 1분기는 영업이익 기준 역대 최고 마진(OPM 15.4%)을 기록했음에도 지배주주 귀속 순이익이 약 -81억원의 대규모 손실로 전환됐다. 영업이익(약 +32억원)과 순이익(약 -81억원) 사이의 약 113억원 이상의 괴리는 파생상품 평가손, 환율 관련 손실, 자산 평가손 등 영업외 항목에서 상당한 손실이 발생했음을 강력히 시사한다. 이처럼 영업 기반이 견조한 상황에서도 대규모 비경상 손실이 발생할 경우 이익 예측 가능성이 크게 낮아져, 밸류에이션 산정과 투자 판단을 어렵게 한다.",
+    "en": "Despite achieving a record operating margin of 15.4% in 2026 Q1, controlling shareholders' net income swung to a loss of ~-KRW 8.1 bn. The ~KRW 11.3 bn+ gap between operating profit (~+KRW 3.2 bn) and net income strongly implies substantial non-operating losses—potentially from derivatives, foreign exchange, or asset impairment—that have yet to be publicly explained. Recurring large non-recurring losses despite a sound operating base would significantly reduce earnings predictability, complicating valuation and investor decision-making."
+   }
+  },
+  {
+   "title": {
+    "ko": "음(-)의 영업현금흐름과 가속되는 재무 레버리지",
+    "en": "Negative Operating Cash Flow and Accelerating Financial Leverage"
+   },
+   "body": {
+    "ko": "2025년 영업활동 현금흐름은 약 -171억원으로, 약 107억원의 지배주주 귀속 순이익에도 불구하고 실질 현금 창출력이 크게 미치지 못한다. 이는 토탈 서버 솔루션 사업 추진에 따른 서버 재고 매입 및 매출채권 증가로 운전자본이 대규모로 소요된 데 기인하며, 사업 규모 확대와 함께 자금 소요가 지속될 수 있다. 부채비율이 2024년 34%에서 2025년 102%로 급등한 점은 금리 비용 증가와 재무 유연성 감소로 이어질 수 있으며, 시장 환경 악화 또는 고객 발주 지연 시 리스크 확대 요인으로 작용할 수 있다.",
+    "en": "Operating cash flow was ~-KRW 17.1 bn in 2025 despite ~KRW 10.7 bn in net income attributable to owners, reflecting a sharp divergence in cash conversion. This was driven by large working capital absorption—server inventory procurement and accounts receivable growth—from the Total Server Solution expansion, with further capital requirements likely as business scale increases. The debt ratio surging from 34% in 2024 to 102% in 2025 implies rising interest costs and reduced financial flexibility, amplifying downside risk in the event of market deterioration or customer order delays."
+   }
+  }
+ ],
+ "risks": [
+  {
+   "cat": {
+    "ko": "지정학·무역 리스크",
+    "en": "Geopolitical / Trade Risk"
+   },
+   "body": {
+    "ko": "미국의 대중국 반도체 수출 규제가 지속적으로 강화되는 상황에서 엠디바이스는 현재 레거시(10nm 이상) 제품 라인업으로 제재를 피하고 있으나, 규제 범위가 더 확대될 경우 공급망이나 고객사 조달에 영향이 미칠 수 있다. 중국의 반도체 공급망 자립화 정책이 강화될 경우, 한국산 부품 조달 대신 중국 내 대체 공급사로 전환하려는 유인이 높아질 수 있다. 대만해협 긴장 등 지정학적 사건은 주요 고객사의 사업 환경과 발주 패턴에 즉각적인 영향을 미칠 수 있는 불확실성 요인이다.",
+    "en": "While MDevice currently avoids U.S. export controls through a legacy (10nm+) product lineup, an expansion of regulatory scope could impact supply chain arrangements or customer procurement. China's industrial policy push for domestic semiconductor supply chain self-sufficiency could increase incentives for customers to shift toward domestic alternative suppliers. Geopolitical events such as Taiwan Strait tensions represent immediate uncertainty factors that could impact key customers' business environment and order patterns."
+   }
+  },
+  {
+   "cat": {
+    "ko": "NAND 플래시 가격 변동 및 재고 리스크",
+    "en": "NAND Flash Price Volatility and Inventory Risk"
+   },
+   "body": {
+    "ko": "NAND 플래시는 엠디바이스 제품의 핵심 원재료로, 가격 변동이 매출원가율과 수익성에 직접 영향을 미친다. 재료비 변동을 판매단가에 연동하는 계약 구조로 일부 완충이 이루어지나, 가격 반영 시차로 인한 단기 마진 압박이 발생할 수 있다. 특히 메모리 사이클 하강 국면에서 재고 평가손 리스크가 부각될 수 있으며, 2025년 부채 증가와 함께 급격히 늘어난 것으로 추정되는 재고 자산 규모를 감안할 때 지속적인 모니터링이 필요하다.",
+    "en": "NAND flash is the primary raw material in MDevice's products, and price swings directly affect cost of goods sold and profitability. The cost pass-through pricing structure provides partial buffering, but timing lags can create short-term margin pressure. In particular, inventory write-down risk could heighten in a memory cycle downturn; given the significant inventory build-up inferred from the 2025 working capital expansion, ongoing monitoring of inventory valuation is warranted."
+   }
+  },
+  {
+   "cat": {
+    "ko": "신사업 실행 및 투자 회수 리스크",
+    "en": "New Business Execution and Return-on-Investment Risk"
+   },
+   "body": {
+    "ko": "토탈 서버 솔루션 사업은 대만 OEM 서버 조달, SSD 탑재, 중국 고객사 납품으로 이어지는 과정에서 서버 가격 변동, 공급망 차질, 고객 인증 지연 등의 리스크에 노출되어 있다. AVP(HBM 하이브리드 본딩) 사업은 기술 개발 및 설비 구축이 완료됐으나, 삼성전자·SK하이닉스 벤더 등록 승인부터 샘플 검증 및 양산 진입까지 통상 1~2년 이상의 사이클이 소요된다. 양 신사업에 투입된 선행 투자 비용이 실적화까지 장기간 소요될 경우, 이자 비용을 포함한 고정비 부담 증가와 재무 건전성 저하로 이어질 수 있다.",
+    "en": "The Total Server Solution business is exposed to risks including server price fluctuations, supply chain disruptions, and customer qualification delays across its procurement-assembly-delivery chain. The AVP (HBM hybrid bonding) business has completed development and equipment installation, but the cycle from Samsung/SK Hynix vendor registration through sample validation to mass production typically requires 1–2+ years. If upfront investments for both new businesses take an extended period to translate into revenue, fixed costs including interest expenses will rise and financial health may deteriorate."
+   }
+  }
+ ],
+ "checkpoints": [
+  {
+   "when": {
+    "ko": "2026년 8월 중순 (추정)",
+    "en": "Mid-August 2026 (est.)"
+   },
+   "what": {
+    "ko": "2026년 2분기 실적 발표: 1분기 대규모 순손실의 원인이 된 영업외 항목의 성격(일회성 vs. 반복성) 확인과 수익성 정상화 궤도 진입 여부를 검증하는 핵심 이벤트다.",
+    "en": "2026 Q2 earnings release: Critical event to determine whether the non-operating losses behind Q1's net loss are one-time or recurring, and to verify whether earnings are returning to a normalized trajectory."
+   }
+  },
+  {
+   "when": {
+    "ko": "2026년 하반기",
+    "en": "H2 2026"
+   },
+   "what": {
+    "ko": "동수서산 프로젝트 납품 개시 및 계약 공시: 선정 이후 실질 수주 계약 규모와 납품 물량이 DART 공시 또는 공식 발표를 통해 확인되면, 중장기 실적 기대치와 현실 괴리를 검증할 수 있다.",
+    "en": "Commencement of Dongsu Seosan deliveries and contract disclosures: Once actual contract size and delivery volumes are confirmed via DART filings or official announcements post-selection, the gap between market expectations and reality can be assessed."
+   }
+  },
+  {
+   "when": {
+    "ko": "2026년 하반기~2027년 초",
+    "en": "H2 2026 – Early 2027"
+   },
+   "what": {
+    "ko": "토탈 서버 솔루션 계약 체결 공시: 대만 OEM 서버 + SSD 통합 납품 계약의 체결 여부와 규모가 확인되면, 2026년 이후 매출 성장의 추가 동력 여부를 평가할 수 있다.",
+    "en": "Total Server Solution contract announcement: Confirmation of contract signing and scale for the integrated server+SSD bundled delivery business would allow assessment of additional revenue growth drivers beyond 2026."
+   }
+  },
+  {
+   "when": {
+    "ko": "2026년 연내",
+    "en": "Within 2026"
+   },
+   "what": {
+    "ko": "삼성전자·SK하이닉스 AVP 벤더 등록 완료 여부: 등록 승인 시 HBM 패키징 사업의 샘플 공급 및 양산 타임라인이 구체화되어 장기 성장 스토리의 신뢰도를 높일 수 있다.",
+    "en": "AVP vendor registration completion with Samsung/SK Hynix: Approval would crystallize the sample supply and mass-production timeline for the HBM packaging business, enhancing the credibility of the long-term growth narrative."
+   }
+  },
+  {
+   "when": {
+    "ko": "2026년 하반기",
+    "en": "H2 2026"
+   },
+   "what": {
+    "ko": "PCIe Gen5 제품 양산 전환 및 단가 영향 확인: Gen5 전환이 단가 개선과 중국 고객 공급 확대로 연결되는지, 전환 과정에서 수율·재고 리스크는 없는지 점검이 필요하다.",
+    "en": "PCIe Gen5 product transition and unit price dynamics: Monitoring whether the Gen5 shift translates into unit price improvement and expanded Chinese customer supply, while checking for yield and inventory risks during the transition period."
+   }
+  }
+ ],
+ "verdict": {
+  "body": {
+   "ko": "엠디바이스는 AI 데이터센터 투자 확대라는 거시 흐름을 직접 활용하는 기업용 SSD 전문 기업으로, 2024~2025년 동안 매출 고성장과 영업이익률 확대를 동시에 달성하며 이익 회복 능력을 입증했다. 중국 동수서산 프로젝트 공급자 선정, PCIe Gen5 전환, 토탈 서버 솔루션, HBM 패키징(AVP) 등 복수의 성장 동력이 중장기 사업 기반을 지지하는 구조는 유의미하다. 그러나 2026년 1분기 영업이익 플러스에도 불구하고 대규모 순손실이 발생한 점은 이익 구조의 투명성 측면에서 명확한 설명이 요구되며, 해당 불확실성이 해소되기 전까지 이익 예측 가능성은 제한적이다. 중국 단일 시장·사실상 단일 고객 집중 구조와 두 해 연속 음(-)의 영업현금흐름은 고성장 이면에 자리한 구조적 취약점이며, 고객 다변화와 현금 창출력 회복이 성장 지속 가능성의 선결 조건이다. 부채비율의 빠른 상승도 신사업 투자 재원 확보와 재무 유연성 관리 측면에서 지속 주시가 필요하다. 2026년 2분기 실적 발표, 동수서산 실질 납품 공시, 서버 솔루션 계약 공시, AVP 벤더 등록 결과 등이 순차적으로 확인되는 시점이 기업 가치 재평가의 분기점이 될 것이다.",
+   "en": "MDevice is an enterprise SSD specialist directly leveraging the macro tailwind of accelerating AI data center investment, having demonstrated earnings recovery capability through simultaneous high revenue growth and operating margin expansion in 2024–2025. Multiple growth drivers—Dongsu Seosan project participation, PCIe Gen5 transition, Total Server Solution, and HBM packaging (AVP)—support a credible medium- to long-term growth narrative. However, the large net loss in 2026 Q1 despite positive operating profit demands clear disclosure, and earnings predictability remains limited until this uncertainty is resolved. China single-market, effectively single-customer concentration exceeding 95% and two consecutive years of negative operating cash flow are structural vulnerabilities beneath the high-growth surface; customer diversification and cash flow recovery are prerequisites for sustainable growth. The rapid leverage build-up also warrants close monitoring from a financial flexibility standpoint. The sequential confirmation of the 2026 Q2 earnings release, actual Dongsu Seosan delivery announcements, server solution contract disclosures, and AVP vendor registration outcomes will collectively serve as the inflection points for any fundamental re-assessment of the company's value."
+  }
+ },
+ "sources": [
+  "https://comp.fnguide.com/SVO2/ASP/SVD_Main.asp?gicode=A226590",
+  "https://m.thinkpool.com/compDiscuss/cont/1024166",
+  "https://www.valueline.co.kr/finance/summary/226590",
+  "https://www.samsungpop.com/common.do?cmd=down&contentType=application/pdf&inlineYn=Y&saveKey=research.pdf&fileName=2010/2025120213275493K_02_04.pdf",
+  "https://www.butler.works/ko/companies/01022142",
+  "https://www.kokstock.com/stock/item.asp?item_cd=226590",
+  "https://www.valueline.co.kr/finance/investment/226590",
+  "https://m.jobkorea.co.kr/company/42859882",
+  "https://comp.fnguide.com/SVO2/ASP/SVD_Finance.asp?pGB=1&gicode=A226590&MenuYn=Y&ReportGB=&NewMenuID=103",
+  "https://m.thinkpool.com/item/226590",
+  "https://ko.wikipedia.org/wiki/%EC%97%A0%EB%94%94%EB%B0%94%EC%9D%B4%EC%8A%A4",
+  "https://m.thebell.co.kr/m/newsview.asp?svccode=&newskey=202403201610120200104813",
+  "https://redhorseblog.co.kr/%EC%97%A0%EB%94%94%EB%B0%94%EC%9D%B4%EC%8A%A4-%EA%B3%B5%EB%AA%A8%EC%A3%BC-%EB%B6%84%EC%84%9D-%EC%A0%84%EB%A7%9D-%EC%B2%AD%EC%95%BD/",
+  "https://engine.roa.ai/companies/hEOHz4g31l/summary",
+  "http://www.dailyinvest.kr/news/articleView.html?idxno=70338",
+  "https://marketin.edaily.co.kr/News/ReadE?newsId=03086486645384304",
+  "https://www.widedaily.com/news/articleView.html?idxno=261837",
+  "https://v.daum.net/v/20251021135753417"
+ ],
+ "v": 2,
+ "model": "claude-sonnet-4-6",
+ "ticker": "226590",
+ "name": "엠디바이스",
+ "name_en": "Mdevice Co., Ltd",
+ "sector": "전자·부품",
+ "categories": [
+  "전자·부품"
+ ],
+ "market": "코스닥",
+ "reportDate": "2026-06-19",
+ "reportTs": "2026-06-19 01:30",
+ "dataDate": "20260618",
+ "quant": {
+  "asOf": "2026-06-18",
+  "fs_basis": "연결(CFS) · DART 공시 확정치 · 지배주주 기준 순이익",
+  "annual": [
+   {
+    "year": 2025,
+    "rev": 96491049515,
+    "op": 11542472268,
+    "np": 10677826023,
+    "np_owner": 10730971280,
+    "equity": 47928405877,
+    "equity_owner": 47331551134,
+    "liab": 48880091893,
+    "cfo": -17140943812,
+    "eps_basic": null,
+    "opm": 12.0,
+    "roe": 22.7,
+    "debt_ratio": 102.0
+   },
+   {
+    "year": 2024,
+    "rev": 48305247339,
+    "op": 4976243658,
+    "np": 3190068169,
+    "np_owner": 3190068169,
+    "equity": 26285702635,
+    "equity_owner": 26285702635,
+    "liab": 8932877898,
+    "cfo": -3106421460,
+    "eps_basic": null,
+    "opm": 10.3,
+    "roe": 12.1,
+    "debt_ratio": 34.0
+   }
+  ],
+  "quarterly": [
+   {
+    "q": "2025Q1",
+    "rev": 20084265140,
+    "op": 2125218049,
+    "np_owner": 1599862529
+   },
+   {
+    "q": "2025Q2",
+    "rev": 25320184615,
+    "op": 3299068480,
+    "np_owner": 1535081318
+   },
+   {
+    "q": "2025Q3",
+    "rev": 18099109168,
+    "op": 2197882953,
+    "np_owner": 988272109
+   },
+   {
+    "q": "2025Q4",
+    "rev": 32987490592,
+    "op": 3920302786,
+    "np_owner": 6606054332
+   },
+   {
+    "q": "2026Q1",
+    "rev": 20460873687,
+    "op": 3151212263,
+    "np_owner": -8144979276
+   }
+  ],
+  "valuation": {
+   "price": 15080,
+   "mcap": 0.1616,
+   "shares": 10716784,
+   "total_shares": 10630784,
+   "wavg_shares": 10633132,
+   "per": 163.9,
+   "eps": 92,
+   "pbr": 4.08,
+   "bps": 3692,
+   "roe_ttm": 2.6,
+   "ttm_window": "2025Q2~2026Q1",
+   "ttm_np_owner": 986129475,
+   "pbr_krx": 3.39,
+   "bps_krx": 4452.0,
+   "basis": "PER·EPS·PBR·BPS 모두 자체 산출(네이버·토스와 동일 방식) · 배당은 DART 공시 주당현금배당금(보완:KRX) ÷ 현재가",
+   "dps": 0.0,
+   "div": 0.0
+  }
+ }
+}
