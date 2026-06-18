@@ -10,8 +10,11 @@ on:
         description: '쉼표 구분 티커 (비우면 시총 상위 N)'
         default: ''
       top_n:
-        description: '시총 상위 N개 (tickers 비울 때 적용)'
+        description: '시총 상위 N개 (tickers 비울 때 적용 / fill 청크 크기)'
         default: '10'
+      fill_to:
+        description: '자동 백필: 시총 상위 N개를 다 채울 때까지 청크 단위로 self-chain (0=비활성)'
+        default: '0'
       recover_batch_id:
         description: 'recover 모드용 배치 ID(비우면 최근 배치)'
         default: ''
@@ -26,6 +29,7 @@ jobs:
     timeout-minutes: 350
     permissions:
       contents: write
+      actions: write
     steps:
       - uses: actions/checkout@v4
 
@@ -35,6 +39,13 @@ jobs:
 
       - name: 의존성 설치
         run: pip install -r requirements.txt
+
+      - name: 백필 진행 측정(시작)
+        id: before
+        run: |
+          n=$(ls data/reports_v2/*.json 2>/dev/null | wc -l | tr -d ' ')
+          echo "count=$n" >> "$GITHUB_OUTPUT"
+          echo "시작 v2 리포트 수: $n"
 
       - name: 리포트 v2 실행
         env:
@@ -47,6 +58,7 @@ jobs:
           REPORT_MODEL_TOP_N: '500'
           REPORT_TICKERS: ${{ inputs.tickers }}
           REPORT_TOP_N: ${{ inputs.top_n }}
+          REPORT_FILL_TO: ${{ inputs.fill_to }}
           RECOVER_BATCH_ID: ${{ inputs.recover_batch_id }}
           BATCH_MAX_WAIT_SEC: '10800'
         run: |
@@ -65,3 +77,34 @@ jobs:
             sleep $((i*3))
           done
           [ -n "$ok" ] || exit 1
+
+      # 자동 백필 self-chain: 상위 fill_to개 중 남은 종목이 있고 이번에 진척이 있었으면 다음 청크 재실행.
+      # 진척 0(생성 불가 종목만 남음)이면 멈춰서 무한루프 방지.
+      - name: 다음 청크 self-chain
+        if: ${{ inputs.fill_to != '0' && inputs.fill_to != '' }}
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          before='${{ steps.before.outputs.count }}'
+          after=$(ls data/reports_v2/*.json 2>/dev/null | wc -l | tr -d ' ')
+          remaining=$(python - <<'PY'
+import json, re, os
+from pathlib import Path
+fill_to=int("${{ inputs.fill_to }}")
+t=Path("data/stocks.js").read_text(encoding="utf-8")
+m=re.search(r"=\s*(\{.*)", t, re.S)
+obj=json.loads(m.group(1).strip().rstrip(";"))
+stocks=sorted(obj["stocks"], key=lambda x: x.get("mcap",0) or 0, reverse=True)[:fill_to]
+have={p.stem for p in Path("data/reports_v2").glob("*.json")}
+print(sum(1 for s in stocks if s["ticker"] not in have))
+PY
+)
+          echo "백필: 시작 $before → 종료 $after · 상위 ${{ inputs.fill_to }} 남은 $remaining"
+          added=$(( after - before ))
+          if [ "$remaining" -gt 0 ] && [ "$added" -gt 0 ]; then
+            echo "→ 다음 청크 재실행(남은 $remaining개)"
+            gh workflow run generate_reports_v2.yml \
+              -f mode=auto -f top_n='${{ inputs.top_n }}' -f fill_to='${{ inputs.fill_to }}'
+          else
+            echo "→ 종료(남은 $remaining개, 이번 진척 $added개 — 더 생성 가능한 종목 없음)"
+          fi

@@ -629,6 +629,12 @@ def pick_targets():
         want = [t for t in env.split(",") if t]
         by = {s["ticker"]: s for s in data["stocks"]}
         return data, [by[t] for t in want if t in by]
+    # 자동 백필(fill): 시총 상위 FILL_TO개 중 아직 v2 리포트가 없는 종목을 위에서부터 TOP_N개
+    fill_to = int(os.getenv("REPORT_FILL_TO", "0") or "0")
+    if fill_to:
+        ranked = sorted(data["stocks"], key=lambda x: x.get("mcap", 0) or 0, reverse=True)[:fill_to]
+        missing = [s for s in ranked if not (OUT_DIR / f"{s['ticker']}.json").exists()]
+        return data, missing[:TOP_N]
     stocks = sorted(data["stocks"], key=lambda x: x.get("mcap", 0) or 0, reverse=True)[:TOP_N]
     return data, stocks
 
