@@ -1,0 +1,356 @@
+{
+ "title": {
+  "ko": "그래프 AI·공공 AX 확장, 수익 전환 가시성이 관건",
+  "en": "Graph AI & Public-Sector AX Expansion: Profitability Inflection Is the Deciding Variable"
+ },
+ "lead": {
+  "ko": "국내 유일 그래프 DB 특허 기반의 AI 에이전트 기업 SKAI는 K-AI 정책 수혜로 공공 수주를 늘리며 영업손실을 대폭 줄이고 있으나, 3년 연속 매출 감소·CB 오버행·분기별 실적 변동성이 중장기 과제로 병존한다.",
+  "en": "SKAI, Korea's only graph-database patent holder turned AI-agent provider, is narrowing operating losses on the back of government AX policy-driven public-sector wins, yet faces persistent revenue decline, CB overhang, and high quarter-to-quarter earnings volatility as concurrent medium-term headwinds."
+ },
+ "keypoints": [
+  {
+   "ko": "2025년 영업손실 약 44억원으로 전년(약 121억원) 대비 63% 이상 축소 — 비용 구조 개선이 실제 수치로 확인됨",
+   "en": "FY2025 operating loss narrowed by over 63% YoY to approx. KRW 4.4 billion (vs. approx. KRW 12.1 billion in FY2024), confirming tangible cost-structure improvement"
+  },
+  {
+   "ko": "2025Q2 분기 영업흑자(약 +26억원, 매출 69억원) 달성 — 수익화 모델 가능성 실증, 단 분기간 변동성은 높음",
+   "en": "2025Q2 delivered a quarterly operating profit of approx. KRW 2.6 billion on revenue of approx. KRW 6.9 billion, proving the monetization model can work—though inter-quarter volatility remains elevated"
+  },
+  {
+   "ko": "2026년 3월까지 30여 건 수주(공공 약 75%), AI 바우처 공급기업 선정으로 민간 시장 진입 본격화",
+   "en": "30+ contracts won through March 2026 (~75% public sector) and AI Voucher program supplier designation accelerate entry into private SME and healthcare markets"
+  },
+  {
+   "ko": "CB 전환 반복·유상증자로 주식 희석 지속, 비영업 손실(CB 파생상품 평가손 등)이 순이익을 영업손실 이상으로 확대하는 구조적 요인",
+   "en": "Recurring CB conversions and rights issuances continue to dilute shares; non-operating losses from CB embedded-derivative revaluations structurally amplify net losses well beyond operating results"
+  },
+  {
+   "ko": "매출 3년 연속 감소(2023년 278억→2024년 199억→2025년 156억), 반복 매출 모델 정착이 핵심 과제",
+   "en": "Revenue has declined for three consecutive years (approx. KRW 27.8bn → 19.8bn → 15.6bn); establishing a stable recurring-revenue base remains the central strategic challenge"
+  }
+ ],
+ "business": {
+  "ko": "SKAI(스카이월드와이드)는 2013년 설립되어 2021년 코스닥에 기술특례 상장됐으며, 2025년 1월 구 사명 '비트나인'에서 현재 상호로 변경한 국내 유일의 그래프 DB 전문 AI 솔루션 기업이다. 핵심 제품 라인은 세계 최초로 관계형 DB(RDB)와 그래프 DB(GDB)를 결합한 하이브리드 멀티모델 DBMS '아젠스그래프(AgensGraph)', PostgreSQL 기반 엔터프라이즈 RDBMS '아젠스SQL(AgensSQL)', 그리고 2025년 7월 출시한 그래프 온톨로지 기반 AI 에이전트 '온토비아(ONTOVIA)'로 구성된다. 온토비아는 조직 내 데이터를 지식 그래프로 구조화하고 LLM과 연결하여 AI 환각(Hallucination)을 줄이고 기업 특화 업무 자동화를 지원하는 조직형 AX 인프라다. 자회사 스카이인텔리전스(SKAI Intelligence)는 생성형 AI 기반 3D 광고 영상·SaaS 마케팅 솔루션을 제공하며, 2026년 5월 합성데이터(Synthetic Data) 생성 인프라 확장을 위한 기업부설연구소를 설립했다. 수익 모델은 소프트웨어 라이선스·기술 서비스·유지보수와 SI 프로젝트 기반 매출이 혼합된 구조이고, 공공기관(기획재정부·국민건강보험·경찰청 등)·금융·제조·헬스케어가 주요 고객군이다. 오픈소스 프로젝트 'Apache AGE'는 아파치소프트웨어재단(ASF) 인큐베이션 과제로 선정되어 PostgreSQL 생태계 내 글로벌 인지도를 쌓고 있으며, 레노보(Lenovo) 파트너십 및 엔비디아 국내 유일 공식 리테일 파트너 지위도 B2B 영업 자산으로 활용된다. 임직원은 2026년 6월 기준 약 40명으로 소규모이며 미국 실리콘밸리 R&D 센터를 병행 운영하고 있다.",
+  "en": "SKAI (SKAI Worldwide Co., Ltd.), founded in 2013 and listed on KOSDAQ in 2021 via a technology-special listing, rebranded from Bitnine in January 2025 and is Korea's only graph-database patent holder now positioned as an AI solution provider. Its core product portfolio consists of AgensGraph (the world's first hybrid multi-model DBMS combining relational and graph databases), AgensSQL (a PostgreSQL-based enterprise RDBMS), and ONTOVIA—a graph-ontology AI agent launched in July 2025 that structures enterprise data into knowledge graphs, connects them to LLMs, and reduces AI hallucinations to automate domain-specific workflows. Subsidiary SKAI Intelligence operates a generative-AI-powered 3D advertising video and SaaS marketing solution, and in May 2026 established a corporate research institute to scale synthetic-data generation infrastructure for the physical-AI era. The revenue model blends software licensing, technical services, maintenance contracts, and SI project-based revenues; primary customers span public agencies (Ministry of Economy and Finance, National Health Insurance Service, National Police Agency, etc.), financial institutions, manufacturers, and healthcare organizations. The open-source Apache AGE project, accepted into the Apache Software Foundation incubation program, builds global mindshare in the PostgreSQL ecosystem, while a Lenovo hardware partnership and exclusive domestic NVIDIA retail-partner status support enterprise sales. The company employs approximately 40 people as of June 2026 and operates an R&D center in Silicon Valley, California."
+ },
+ "earnings": {
+  "ko": "2022년은 매출 약 192억원·영업이익 약 16억원(영업이익률 +8.5%)으로 4개 연도 중 유일한 영업흑자 해였으며, 영업현금흐름도 약 29억원 흑자를 기록했다. 2023년에는 매출이 약 278억원으로 급증했으나 비용 확대로 영업손실이 약 133억원(영업이익률 -47.7%)으로 급증하고 부채비율이 239.4%까지 상승했다. 2024년에는 매출이 약 199억원으로 되돌아왔지만 영업손실이 약 121억원(영업이익률 -60.8%)으로 정점을 기록했고, 투자 자산 손상 등이 겹쳐 지배주주 귀속 순손실은 약 248억원에 달해 자기자본이 급격히 줄었다. 2025년에는 매출이 약 156억원으로 추가 하락했음에도 영업손실이 약 44억원(영업이익률 -28.1%)으로 대폭 개선되어 전년 대비 64% 이상 손실 폭이 축소됐다. 분기별로는 2025년 1분기 매출 약 21억원·영업손실 약 30억원으로 부진했다가, 2분기에 매출 약 69억원·영업이익 약 26억원으로 분기 흑자를 달성해 수익화 가능성을 실증했다. 그러나 3분기(매출 약 25억, 영업손실 약 27억)와 4분기(매출 약 42억, 영업손실 약 14억)에 다시 적자로 전환하며 대형 프로젝트 일시 인식에 의존하는 구조적 취약성이 드러났다. 2026년 1분기는 매출 약 32억원·영업손실 약 17억원으로 전년동기 대비 매출은 증가했으나 흑자 전환에는 미치지 못했다. 특히 2026년 1분기의 지배주주순손실은 약 56억원으로 영업손실(약 17억원)을 크게 상회해, 전환사채 내재파생상품 평가손실 등 비영업 항목이 순손익을 구조적으로 악화시키고 있음을 보여준다. 영업활동현금흐름은 2025년 약 -38억원으로 전년(-118억원) 대비 크게 개선됐으나 4년 연속 마이너스 기조는 지속되고 있다.",
+  "en": "FY2022—the only year with a positive operating result—delivered revenue of approx. KRW 19.2 billion, an operating profit of approx. KRW 1.6 billion (OPM +8.5%), and positive operating cash flow of approx. KRW 2.9 billion. Revenue surged to approx. KRW 27.8 billion in FY2023 but was accompanied by an operating loss of approx. KRW 13.3 billion (OPM -47.7%) and a debt ratio of 239.4%. FY2024 saw revenue revert to approx. KRW 19.8 billion while the operating loss reached its worst level at approx. KRW 12.1 billion (OPM -60.8%), and investment asset impairments pushed the net loss attributable to parent shareholders to approx. KRW 24.8 billion, sharply eroding equity. FY2025 brought an encouraging improvement: despite revenue declining further to approx. KRW 15.6 billion, the operating loss narrowed to approx. KRW 4.4 billion (OPM -28.1%), a reduction of over 64% year-over-year. Quarterly detail reveals a lumpy profile: 2025Q1 (revenue ~KRW 2.1bn, op. loss ~KRW 3.0bn) was weak, but 2025Q2 generated revenue of ~KRW 6.9 billion and an operating profit of ~KRW 2.6 billion, proving profitability is achievable; however, 2025Q3 (~KRW 2.5bn / -KRW 2.7bn) and 2025Q4 (~KRW 4.2bn / -KRW 1.3bn) reverted to losses, exposing dependence on large, one-off project completions. In 2026Q1, revenue of ~KRW 3.2 billion and an operating loss of ~KRW 1.7 billion showed YoY revenue growth but no return to break-even; the attributable net loss of ~KRW 5.6 billion—more than three times the operating loss—signals that CB embedded-derivative revaluation losses and similar non-operating charges continue to amplify the bottom line. Operating cash outflow improved substantially to approx. -KRW 3.8 billion in FY2025 from approx. -KRW 11.8 billion in FY2024, but remained in deficit for the fourth consecutive year."
+ },
+ "industry": {
+  "ko": "B2B AI 에이전트 및 기업 AI 전환(AX) 시장은 생성형 AI 확산에 따른 자동화·지식 관리 수요 급증으로 고성장 국면에 접어들고 있다. 한국 정부의 'K-AI 정책'·행정안전부 인공지능정부실 신설·공공기관 '2030년 클라우드 네이티브 90% 전환' 목표 등이 동시에 추진되면서 공공 AX 솔루션 공급사에게 수요 가시성이 높아진 국면이다. 특히 그래프 DB 기반 GraphRAG 기술은 LLM의 환각 문제를 줄이는 핵심 수단으로 부상하여 지식 그래프·온톨로지 솔루션에 대한 수요가 점증하는 추세다. 경쟁 구도는 다층적으로, 삼성SDS·NAVER 등 자체 AI 인프라를 보유한 대기업 IT 서비스사들이 유사 솔루션을 빠르게 내재화하고 있으며, 글로벌 그래프 DB 선도 기업(Neo4j 등)도 국내 존재감을 키우고 있다. 다만 국가 폐쇄망 환경의 보안 규제가 국내 독자 DB 기술을 선호하는 방향으로 작동하며, 외국계 솔루션 진입에 사실상의 장벽을 형성하는 측면이 있어 국내 전문 기업에게 유리한 요인으로 작용한다. 오픈소스 Apache AGE 기반 PostgreSQL 생태계 참여와 엔비디아·레노보 글로벌 파트너십은 기술 신뢰도 제고와 해외 레퍼런스 확보를 병행 지원한다. AI 이커머스 타겟팅, 금융 리스크 분석, 헬스케어 데이터, 공급망 관리(SCM) 등 그래프 AI의 적용 범위가 확대되는 것은 장기 성장의 구조적 배경으로 기능한다.",
+  "en": "The B2B AI-agent and enterprise AI-transformation (AX) market is entering a high-growth phase driven by surging automation and knowledge-management demand from generative AI adoption. Korea's K-AI Policy, the establishment of the Ministry of the Interior's AI Government Office, and a national target to convert 90% of public systems to cloud-native by 2030 collectively improve demand visibility for public-sector AX solution providers. Graph-DB-based GraphRAG technology has emerged as a key mechanism for reducing LLM hallucinations, lifting demand for knowledge-graph and ontology-based solutions. The competitive landscape is multi-layered: major domestic IT service firms such as Samsung SDS and NAVER are rapidly internalizing similar AI capabilities, while global graph-DB leaders such as Neo4j are extending their Korean market presence. However, government security regulations requiring domestically developed database technologies for classified or isolated network environments create de facto barriers for foreign vendors, partially favoring domestic specialists. Participation in the Apache AGE open-source ecosystem and global partnerships with NVIDIA and Lenovo simultaneously build technical credibility and generate overseas references. The broadening application scope of graph AI—spanning e-commerce targeting, financial risk detection, healthcare analytics, and supply-chain management—provides a structural long-term tailwind."
+ },
+ "outlook": {
+  "ko": "2026년 4월 공시 기준으로 SKAI는 2025년 1월부터 2026년 3월까지 14개 정부·공공기관을 포함한 30여 건의 프로젝트를 수주했으며, 공공 부문이 전체의 약 75%를 점하고 있다. 주요 수주 사례로는 기획재정부 공급망 조기경보 시스템 구축, 국민건강보험 허위취득 탐지 시스템 구축, 경찰청 전기통신금융사기 통합신고대응센터 시스템 고도화, 경기도청 생성형 AI 플랫폼 구축 등이 확인됐다. 2026년 AI 바우처 지원사업 공급기업으로 선정되면서 중소기업·중견기업·의료기관 등 민간 수요처로의 사업 확장을 공식화했다. 한국지능정보사회진흥원(NIA)이 발주한 '차세대 전자정부 표준프레임워크 발전방안 수립(ISP)' 사업에도 참여, 하이브리드 RAG·MCP(Model Context Protocol) 기술 검증을 수행할 예정이어서 향후 대규모 공공 정보화 사업의 레퍼런스 확보 기회가 된다. 스카이인텔리전스는 피지컬 AI 시대 합성데이터 수요 확대에 대응해 2026년 5월 기업부설연구소를 설립했으며, 엔비디아 GCT 2026에서 LVMH와의 공동 세션 참여로 글로벌 파트너십 강화에도 나서고 있다. 재무 측면에서는 2026년 1월 최대주주 디렉터스컴퍼니가 144억원 규모 제3자 배정 유상증자에 단독 참여해 운영 자금을 보완했으나, 잔여 CB의 주식 전환이 지속되어 희석과 자금 조달이 병행되는 구조다. 2025년 2분기 수준의 분기 흑자를 안정적으로 재현할 수 있는지가 단기 핵심 모니터링 포인트다.",
+  "en": "As of April 2026, SKAI had secured more than 30 project wins from January 2025 through March 2026, including contracts with 14 government and public agencies, which accounted for approximately 75% of the total. Confirmed contract highlights include the Ministry of Economy and Finance's supply-chain early-warning system, the National Health Insurance Service's fraudulent-enrollment detection system, the National Police Agency's telecommunications-fraud response center upgrade, and Gyeonggi Province's generative-AI platform build-out. Selection as a supplier for the government's 2026 AI Voucher Program formalizes expansion into private-sector SME, mid-cap, and healthcare clients. Participation in the NIA's Next-Generation E-Government Standard Framework Development (ISP) project positions SKAI to conduct technical validation of hybrid RAG and MCP technologies for future national public-sector IT architecture, representing a pivotal reference opportunity. SKAI Intelligence established a corporate research institute in May 2026 to scale synthetic-data generation infrastructure for the physical-AI era, and appeared alongside LVMH at NVIDIA GTC 2026 to showcase technology globally. On the financing side, controlling shareholder Directus Company subscribed KRW 14.4 billion in a third-party private placement in January 2026 to replenish working capital; however, ongoing CB conversions continue to dilute shares. The near-term benchmark is whether the company can consistently replicate the quarterly profitability demonstrated in 2025Q2."
+ },
+ "valuation_comment": {
+  "ko": "SKAI는 최근 4개 연도 가운데 3개 연도에서 영업적자를 기록하고 있어 PER(주가수익비율) 기반의 가치 평가가 적용되지 않으며, 배당도 실시되지 않고 있다. 주당 순자산가치(BPS)가 370원으로 산출되어 있어 주가는 순자산 대비 상당한 프리미엄 구간에서 형성되고 있는데, 이는 미래 AI 에이전트·그래프 RAG 사업에 대한 성장 기대감이 현 주가 수준에 반영된 결과로 해석된다. 다만 영업손실이 지속되고 자기자본이 수차례 자금 조달에 의존해 유지되어온 상황에서는 BPS 자체의 질적 신뢰도도 함께 점검할 필요가 있다. CB 전환과 유상증자가 반복되며 발행 주식 수가 늘어나는 구조는 주당 가치 지표에 지속적인 희석 압력을 가하는 요인이다. 동종 소규모 AI·SW 플랫폼 기업들이 성장 기대를 바탕으로 순자산 대비 높은 프리미엄 구간에서 거래되는 경향이 있으나, 이는 실적 가시성이 급격히 바뀌는 시점에 빠르게 재조정될 수 있는 구조임을 유의할 필요가 있다.",
+  "en": "SKAI has posted operating losses in three of the past four fiscal years, making PER-based valuation inapplicable; the company also pays no dividend. The calculated book value per share (BPS) stands at KRW 370, implying the stock trades at a substantial premium to net asset value—a premium that appears to embed market expectations for future growth in AI-agent and GraphRAG business lines. However, with operating losses persisting and equity maintained largely through repeated capital raises, the quality of the underlying book value warrants scrutiny alongside the headline figure. Recurring CB conversions and rights issuances continuously dilute per-share metrics. Small-cap AI and software platform peers frequently command elevated asset-to-price premiums on growth expectations, but such premiums are structurally fragile and can reprice sharply when earnings visibility shifts in either direction."
+ },
+ "bull": [
+  {
+   "title": {
+    "ko": "K-AI 정책 수혜와 공공 AX 수주 파이프라인 확대",
+    "en": "K-AI Policy Tailwind and Expanding Public-Sector AX Contract Pipeline"
+   },
+   "body": {
+    "ko": "K-AI 정책·행정안전부 인공지능정부실 신설·AI 바우처 지원사업 등 정부 주도 AI 전환 정책이 공공 수주 파이프라인을 구조적으로 확대하고 있다. 기획재정부·국민건강보험·경찰청 등 핵심 정부 부처의 레퍼런스를 보유한 점은 후속 공공 입찰에서 경쟁 우위로 기능할 수 있다. 국가 폐쇄망 환경의 보안 규제가 국내 독자 DB 기술을 선호하는 방향으로 작동함에 따라 대형 글로벌 업체 진입에 사실상의 장벽이 형성된다.",
+    "en": "Government-led AI transformation initiatives—the K-AI Policy, the new AI Government Office, and the AI Voucher Program—structurally expand the public-sector contract pipeline. References secured at high-profile agencies such as the Ministry of Economy and Finance, National Health Insurance Service, and National Police Agency provide a competitive edge in subsequent public procurement. Security regulations requiring domestically developed database technologies in classified network environments erect de facto barriers against large global vendors."
+   }
+  },
+  {
+   "title": {
+    "ko": "그래프 RAG·온톨로지 기술의 차별적 포지셔닝",
+    "en": "Differentiated Positioning in GraphRAG and Ontology-Based AI"
+   },
+   "body": {
+    "ko": "세계 최초로 관계형 DB와 그래프 DB를 결합한 하이브리드 DBMS 특허와 GraphRAG·온톨로지 기반 AI 에이전트 '온토비아'는 LLM 환각 문제를 줄이는 솔루션으로 기업·공공 시장에서 경쟁력을 인정받고 있다. 엔터프라이즈 AI 에이전트 수요가 폭발적으로 증가하는 국면에서 도메인 지식 기반 검색 정확도 제고 수요가 늘어나 기술적 포지셔닝이 유리하다. ASF 인큐베이션 선정과 엔비디아·레노보 글로벌 파트너십은 기술 신뢰도와 국제 레퍼런스를 동시에 강화하는 자산이다.",
+    "en": "The company's patented world-first hybrid DBMS combining relational and graph databases, together with its graph-ontology AI agent ONTOVIA, are recognized in enterprise and public-sector markets as effective solutions for reducing LLM hallucinations. The explosive growth of enterprise AI-agent demand elevates the value of domain-knowledge-grounded search accuracy, placing SKAI's technology in a favorable position. Apache Software Foundation incubation status and global partnerships with NVIDIA and Lenovo simultaneously reinforce technical credibility and international references."
+   }
+  },
+  {
+   "title": {
+    "ko": "영업손실 큰 폭 축소, 분기 흑자 가능성 내재",
+    "en": "Substantial Operating Loss Reduction with Demonstrated Quarterly Profitability"
+   },
+   "body": {
+    "ko": "2025년 영업손실이 약 44억원으로 전년(약 121억원) 대비 63% 이상 축소되어 비용 구조 개선이 실제 숫자로 확인됐다. 2025년 2분기에 매출 약 69억원·영업이익 약 26억원의 분기 흑자를 달성한 사례는 사업 모델의 수익화 실현 가능성을 구체적으로 증명했다. 마케팅솔루션사업부가 출범 10개월 만에 30억원 규모 신규 수주를 달성하는 등 사업부 다각화도 추가 수익원 발굴을 뒷받침하고 있다.",
+    "en": "FY2025 operating losses narrowed by over 63% to approx. KRW 4.4 billion from approx. KRW 12.1 billion the prior year, providing concrete evidence of structural cost improvement. The 2025Q2 quarterly operating profit of approx. KRW 2.6 billion on revenue of approx. KRW 6.9 billion offers a concrete proof-of-concept that the monetization model can generate positive returns. The newly created Marketing Solutions Division also secured over KRW 3.0 billion in contracts within its first ten months, demonstrating initial business diversification."
+   }
+  }
+ ],
+ "bear": [
+  {
+   "title": {
+    "ko": "3년 연속 매출 감소와 불안정한 프로젝트 의존형 수익 구조",
+    "en": "Three Consecutive Years of Revenue Decline and Unstable Project-Driven Revenue Model"
+   },
+   "body": {
+    "ko": "매출이 2023년 약 278억원에서 2025년 약 156억원으로 3년 연속 하락하며 사업 기반의 구조적 위축이 우려된다. 2025년 분기별 매출 편차(최저 약 21억~최고 약 69억)는 대형 단발성 프로젝트 인식에 의존하는 불안정한 수익 구조를 보여준다. 2026년 1분기도 매출이 약 32억원에 그쳐 2025년 2분기 피크의 절반에도 못 미치며, 안정적 성장 궤도 진입의 검증이 여전히 부족하다.",
+    "en": "Revenue has declined for three consecutive years to approx. KRW 15.6 billion in FY2025 from approx. KRW 27.8 billion in FY2023, raising concerns about structural erosion of the business base. The wide intra-year quarterly revenue range in 2025 (approx. KRW 2.1bn low to approx. KRW 6.9bn high) reflects heavy dependence on large one-off project completions. At approx. KRW 3.2 billion, 2026Q1 revenue remained less than half the 2025Q2 peak, providing insufficient evidence of a consistent growth trajectory."
+   }
+  },
+  {
+   "title": {
+    "ko": "CB 오버행·주식 희석과 지속적 외부 자금 의존",
+    "en": "CB Overhang, Share Dilution, and Persistent Reliance on External Financing"
+   },
+   "body": {
+    "ko": "복수의 사모 전환사채(CB) 잔여 물량이 지속적으로 주식으로 전환되며 잠재 매도 물량 부담이 상존한다. CB 전환·제3자 배정 유상증자 반복은 영업 현금흐름만으로는 운영 자금이 충당되지 않음을 시사한다. 2025년 부채비율 190.5%, 4년 연속 영업현금흐름 마이너스라는 재무 지표는 구조적 취약성의 지속적 모니터링을 요구한다.",
+    "en": "Multiple private-placement CB tranches continue to convert into shares, maintaining a persistent overhang of potential selling supply. Repeated recourse to CB issuance and third-party private placements signals that operating cash flows alone are insufficient to fund operations. A debt-to-equity ratio of 190.5% in FY2025 and four consecutive years of negative operating cash flow require ongoing monitoring of financial health."
+   }
+  },
+  {
+   "title": {
+    "ko": "비영업 손실이 영업 개선을 희석, 자회사·투자 성과 부진",
+    "en": "Non-Operating Losses Dilute Operational Progress; Weak Returns from Subsidiaries and Investments"
+   },
+   "body": {
+    "ko": "CB 내재파생상품 평가손실 등 비영업 항목이 지배주주순손실을 영업손실 대비 수 배 이상으로 확대시키고 있다(2026Q1 영업손실 약 17억원 vs. 지배순손실 약 56억원). 투자했던 그래프㈜ 지분 가치를 사실상 '0원'으로 손상 처리하는 등 종속·관계기업 투자 성과가 전반적으로 미흡하다. 스카이인텔리전스 지분 취득 관련 대규모 선급금 처리 방식에 대한 외부 의문도 거버넌스 불확실성을 높이는 요인이다.",
+    "en": "Non-operating items—primarily CB embedded-derivative revaluation losses—expand the attributable net loss far beyond operating losses (2026Q1 operating loss approx. KRW 1.7 billion vs. attributable net loss approx. KRW 5.6 billion). The write-down of the equity stake in Graph Co. to effectively zero, alongside broader underperformance from subsidiaries and affiliates, reflects weak returns from past investment activity. Externally raised questions about the scale and handling of advance payments related to the SKAI Intelligence share acquisition add to governance uncertainty."
+   }
+  }
+ ],
+ "risks": [
+  {
+   "cat": {
+    "ko": "재무·유동성 리스크",
+    "en": "Financial & Liquidity Risk"
+   },
+   "body": {
+    "ko": "2025년 부채비율 190.5%, 4년 연속 영업현금흐름 마이너스, CB 발행과 유상증자 반복으로 인한 주식 희석이 재무 구조의 구조적 취약성을 나타낸다. 영업 현금 창출이 안정화되기 전까지는 추가 외부 자금 조달이 불가피할 수 있으며, 이는 기존 주주 가치에 추가적인 희석 압력을 가한다. 낮은 현금흐름 신용등급(2026년 5월 기준 C3)은 금융 비용 상승 가능성도 내포하고 있다.",
+    "en": "A debt-to-equity ratio of 190.5% in FY2025, four consecutive years of negative operating cash flow, and persistent share dilution from CB conversions and rights issuances highlight structural balance-sheet vulnerabilities. Additional external financing may be unavoidable before operating cash generation stabilizes, imposing further dilutive pressure on existing shareholders. A low cash-flow credit rating (C3 as of May 2026) also raises the risk of increasing financing costs."
+   }
+  },
+  {
+   "cat": {
+    "ko": "경쟁·기술 대체 리스크",
+    "en": "Competitive & Technology Displacement Risk"
+   },
+   "body": {
+    "ko": "삼성SDS·NAVER 등 대형 국내 IT 기업들이 지식 그래프·AI 에이전트 기능을 자체 AI 플랫폼에 빠르게 내재화하고 있어 소규모 전문 기업의 경쟁력이 압박을 받을 수 있다. 글로벌 그래프 DB 선도 기업들의 국내 시장 진출 강화와 LLM 제공사들의 그래프 기능 기본 탑재 가능성은 독립 솔루션의 차별성을 잠식할 위험을 내포한다. 오픈소스 생태계 확장은 기술 확산에 유리하지만 동시에 진입 장벽을 낮춰 경쟁을 심화시키는 양면성을 갖는다.",
+    "en": "Major domestic IT players such as Samsung SDS and NAVER are rapidly internalizing knowledge-graph and AI-agent capabilities into their own AI platforms, potentially eroding the competitive advantage of specialized smaller vendors. Intensifying market entry by global graph-DB leaders and the possibility of LLM providers natively embedding graph functionalities could undermine the differentiation of stand-alone solutions. Open-source ecosystem expansion is favorable for technology diffusion but simultaneously lowers entry barriers, potentially intensifying competitive pressure."
+   }
+  },
+  {
+   "cat": {
+    "ko": "거버넌스·경영 리스크",
+    "en": "Governance & Management Risk"
+   },
+   "body": {
+    "ko": "2024년 11월 최대주주가 디렉터스컴퍼니로 변경된 이후 CB 발행·철회·유상증자 발표가 반복되며 자금 운용 투명성에 대한 의문이 제기됐다. 스카이인텔리전스 지분 취득 관련 대규모 선급금(약 185.5억원) 처리 방식이 외부 이해관계자들의 우려를 낳았으며, 약 40명의 소규모 임직원 구조는 핵심 인력 의존도와 조직 실행력 리스크를 내포한다. 과거 '투자 경고' 종목 지정 이력과 CB 주식 전환 반복에 따른 수급 불안은 단기 변동성을 높이는 요인으로 기능한다.",
+    "en": "Following the change of controlling shareholder to Directus Company in November 2024, a series of CB issuances, withdrawals, and rights-offering announcements raised questions about financial management transparency. The handling of approx. KRW 18.5 billion in advance payments related to the SKAI Intelligence share acquisition generated concerns among external stakeholders. Operating with approximately 40 employees creates key-person dependency and execution-capacity risk. The stock's prior 'trading-warning' designation and recurring CB conversion-driven supply additions represent elevated near-term volatility factors."
+   }
+  }
+ ],
+ "checkpoints": [
+  {
+   "when": {
+    "ko": "2026년 8월 중순",
+    "en": "Mid-August 2026"
+   },
+   "what": {
+    "ko": "2026년 2분기 실적 발표: 공공 AX 수주의 매출 인식 규모가 2025년 2분기 분기 흑자를 재현할 수 있는 수준인지 확인하고, 영업이익과 지배주주순손실 간 격차(비영업 손실 규모)가 축소되고 있는지를 점검한다.",
+    "en": "2026Q2 earnings release: confirm whether recognized revenue from public-sector AX contracts approaches a level sufficient to replicate the 2025Q2 quarterly profit, and assess whether the gap between operating income and attributable net loss—reflecting non-operating charges—is narrowing."
+   }
+  },
+  {
+   "when": {
+    "ko": "2026년 7~9월 (CB 잔여 물량 전환 일정)",
+    "en": "July–September 2026 (Residual CB Conversion Schedule)"
+   },
+   "what": {
+    "ko": "잔여 전환사채 미상환 물량의 추가 전환 청구 건수와 신주 상장 일정을 추적해 오버행 해소 속도를 확인한다. 전환가액 수준에 따라 수급 부담의 경중이 달라지므로 전환 잔액과 전환가액을 병행 모니터링한다.",
+    "en": "Track additional CB conversion requests and new-share listing dates for remaining unconverted CB tranches to gauge the pace of overhang resolution; monitor the outstanding balance and conversion prices in parallel, as the magnitude of supply-side pressure varies with the gap between conversion prices and the prevailing market price."
+   }
+  },
+  {
+   "when": {
+    "ko": "2026년 하반기 (NIA ISP 사업 결과 및 AI 바우처 성과)",
+    "en": "H2 2026 (NIA ISP Project Outcome & AI Voucher Results)"
+   },
+   "what": {
+    "ko": "한국지능정보사회진흥원(NIA) 차세대 전자정부 표준프레임워크 ISP 사업의 기술 검증 결과와 AI 바우처 지원사업을 통해 확보한 민간 고객 건수를 확인한다. 성공적 레퍼런스는 대규모 공공 프로젝트 수주 확대로 이어질 수 있는 핵심 변수다.",
+    "en": "Monitor the technical validation outcome of the NIA's Next-Generation E-Government Standard Framework ISP project and the number of private clients acquired through the AI Voucher Program; successful references here could translate into materially expanded public-sector contract wins."
+   }
+  },
+  {
+   "when": {
+    "ko": "2026년 연말~2027년 초 (스카이인텔리전스 합성데이터 사업)",
+    "en": "Late 2026 – Early 2027 (SKAI Intelligence Synthetic Data Business)"
+   },
+   "what": {
+    "ko": "2026년 5월 기업부설연구소 설립 이후 스카이인텔리전스의 합성데이터 관련 수주 건수와 연결 기준 매출 기여도를 추적한다. 피지컬 AI 시대 합성데이터 수요가 가시화될 경우 그룹 차원의 신규 수익원이 될 수 있다.",
+    "en": "Following the establishment of SKAI Intelligence's corporate research institute in May 2026, track synthetic-data contract wins and their contribution to consolidated revenue; if physical-AI-driven synthetic-data demand materializes, this line could become a meaningful new revenue stream at the group level."
+   }
+  },
+  {
+   "when": {
+    "ko": "지속 모니터링 (영업현금흐름 흑자 전환 시점)",
+    "en": "Ongoing (Operating Cash Flow Breakeven)"
+   },
+   "what": {
+    "ko": "영업활동현금흐름이 플러스로 전환되는 시점은 외부 자금 조달 의존도 감소와 CB·유증 발행 사이클 완화를 의미하는 가장 중요한 구조적 전환점이다. 분기별 수주 잔고와 선수금 흐름을 병행 점검하면 전환 속도를 사전에 가늠할 수 있다.",
+    "en": "Positive operating cash flow marks the most important structural inflection point, signaling reduced reliance on external financing and a potential easing of the CB and rights-issuance cycle; tracking quarterly contract backlog and advance payment inflows in parallel allows early gauging of the pace of this transition."
+   }
+  }
+ ],
+ "verdict": {
+  "body": {
+   "ko": "SKAI는 국내 유일 그래프 DB 특허를 기반으로 AI 에이전트·GraphRAG 솔루션으로 사업을 피벗하며 K-AI 정책 수혜 구조 안에서 수주를 늘려가고 있다. 2025년 영업손실이 약 44억원으로 전년 대비 64% 이상 축소됐고, 2025년 2분기에는 분기 영업흑자를 달성해 수익화 가능성을 실증한 점은 긍정적 변화다. 그러나 3년 연속 매출 감소, 프로젝트 기반 실적의 높은 변동성, CB 오버행에 따른 주식 희석, 비영업 손실로 인한 순손실 확대 구조는 중장기 과제로 명확히 남아 있다. 공공 수주 30여 건 확보와 AI 바우처 공급기업 선정은 사업 저변 확대의 신호이나, 이것이 안정적인 반복 매출과 플러스 영업현금흐름으로 전환되기까지는 추가 실적 검증이 필요하다. 기술적 차별성과 정책 수혜라는 구조적 지지 요인이 확인된 만큼, 현 단계에서의 핵심 모멘텀은 수익성 전환의 가시성이 높아지는 것이며 투자자로서는 분기별 매출 인식 속도, CB 오버행 해소 추이, 영업현금흐름 전환 시점을 지속 추적해야 한다.",
+   "en": "SKAI occupies a structurally advantaged position as Korea's only graph-DB patent holder pivoting into AI-agent and GraphRAG solutions, with government AX policy driving an expanding public-sector contract base. The FY2025 operating loss narrowing of over 64% year-over-year and the 2025Q2 quarterly operating profit together provide meaningful evidence that the monetization model is viable. Nevertheless, three consecutive years of revenue decline, high quarter-to-quarter earnings volatility rooted in project-based revenue recognition, ongoing share dilution from CB conversions, and structurally amplified net losses from non-operating items remain clear medium-term challenges that require resolution. Securing 30+ project wins and gaining AI Voucher supplier status signal a broadening commercial footprint, but validating whether these translate into stable recurring revenue and positive operating cash flow requires further evidence. With technical differentiation and policy tailwinds confirmed as structural supports, the central catalyst at this stage is improving visibility into a durable return to profitability; investors should track quarterly contract recognition pace, the rate of CB overhang resolution, and the timeline to positive operating cash flow as primary monitoring parameters."
+  }
+ },
+ "sources": [
+  "https://comp.fnguide.com/SVO2/ASP/SVD_Main.asp?gicode=A357880&MenuYn=Y",
+  "https://deepsearch.com/analytics/company-analysis/KRX:357880?c-name=SKAI&c-symbol=KRX%3A357880",
+  "https://www.valueline.co.kr/finance/summary/357880",
+  "https://kr.investing.com/equities/bitnine",
+  "https://thevc.kr/skaiworldwide",
+  "https://comp.fnguide.com/SVO2/asp/SVD_Invest.asp?pGB=1&cID=&MenuYn=Y&ReportGB=D&NewMenuID=105&stkGb=701&gicode=A357880",
+  "https://stockevents.app/kr/stock/357880.KQ",
+  "https://comp.wisereport.co.kr/company/c1010001.aspx?cmp_cd=357880",
+  "https://markets.hankyung.com/stock/357880/financial-summary",
+  "https://www.skaiintelligence.com/",
+  "https://www.daoavi.com/pro/skydio-2/",
+  "http://ir-brain.com/default/product/product_01.php?com_board_basic=read_form&com_board_idx=2&topmenu=3&left=1&com_board_idx=11&com_board_id=14",
+  "https://skywork.ai/",
+  "https://www.skydio.com/",
+  "https://www.youtube.com/playlist?list=PLWgxs-uSPhCgnaDLCfLrD8ggRlVrVJH-w&cbrd=1",
+  "https://isky.co.kr/",
+  "http://www.itdaily.kr/news/articleView.html?idxno=239417",
+  "https://www.irobotnews.com/news/articleView.html?idxno=46455"
+ ],
+ "v": 2,
+ "model": "claude-sonnet-4-6",
+ "ticker": "357880",
+ "name": "SKAI",
+ "name_en": "SKAI worldwide Co., Ltd.",
+ "sector": "IT·소프트웨어",
+ "categories": [
+  "IT·소프트웨어"
+ ],
+ "market": "코스닥",
+ "reportDate": "2026-06-18",
+ "reportTs": "2026-06-18 23:44",
+ "dataDate": "20260618",
+ "quant": {
+  "asOf": "2026-06-18",
+  "fs_basis": "연결(CFS) · DART 공시 확정치 · 지배주주 기준 순이익",
+  "annual": [
+   {
+    "year": 2025,
+    "rev": 15641618670,
+    "op": -4391455139,
+    "np": -15069950433,
+    "np_owner": -15069950433,
+    "equity": 13241668735,
+    "equity_owner": 12573093435,
+    "liab": 25230483597,
+    "cfo": -3829677942,
+    "eps_basic": null,
+    "opm": -28.1,
+    "roe": -119.9,
+    "debt_ratio": 190.5
+   },
+   {
+    "year": 2024,
+    "rev": 19848856622,
+    "op": -12065103096,
+    "np": -24789096345,
+    "np_owner": -24789096345,
+    "equity": 11413848104,
+    "equity_owner": 10360744998,
+    "liab": 19352909023,
+    "cfo": -11790067020,
+    "eps_basic": null,
+    "opm": -60.8,
+    "roe": -239.3,
+    "debt_ratio": 169.6
+   },
+   {
+    "year": 2023,
+    "rev": 27840337672,
+    "op": -13292681427,
+    "np": -17105422489,
+    "np_owner": -16651559350,
+    "equity": 17726898575,
+    "equity_owner": 15283920274,
+    "liab": 42443145364,
+    "cfo": -9929718048,
+    "eps_basic": -1596,
+    "opm": -47.7,
+    "roe": -108.9,
+    "debt_ratio": 239.4
+   },
+   {
+    "year": 2022,
+    "rev": 19175152815,
+    "op": 1620879293,
+    "np": -528858705,
+    "np_owner": -439918806,
+    "equity": 34786187044,
+    "equity_owner": 33500837792,
+    "liab": 37313020566,
+    "cfo": 2891486838,
+    "eps_basic": -42,
+    "opm": 8.5,
+    "roe": -1.3,
+    "debt_ratio": 107.3
+   }
+  ],
+  "quarterly": [
+   {
+    "q": "2025Q1",
+    "rev": 2057102964,
+    "op": -3017260586,
+    "np_owner": -3554712196
+   },
+   {
+    "q": "2025Q2",
+    "rev": 6864837863,
+    "op": 2640884886,
+    "np_owner": 1194164892
+   },
+   {
+    "q": "2025Q3",
+    "rev": 2515144498,
+    "op": -2667169282,
+    "np_owner": -3799514802
+   },
+   {
+    "q": "2025Q4",
+    "rev": 4204533345,
+    "op": -1347910157,
+    "np_owner": -8909888327
+   },
+   {
+    "q": "2026Q1",
+    "rev": 3233990009,
+    "op": -1653705605,
+    "np_owner": -5624691874
+   }
+  ],
+  "valuation": {
+   "price": 4075,
+   "mcap": 0.2157,
+   "shares": 52940048,
+   "total_shares": 50824477,
+   "wavg_shares": null,
+   "per": null,
+   "eps": null,
+   "pbr": 11.01,
+   "bps": 370,
+   "roe_ttm": -132.6,
+   "ttm_window": "2025Q2~2026Q1",
+   "ttm_np_owner": -17139930111,
+   "pbr_krx": 14.16,
+   "bps_krx": 268.0,
+   "basis": "PER·EPS·PBR·BPS 모두 자체 산출(네이버·토스와 동일 방식) · 배당은 DART 공시 주당현금배당금(보완:KRX) ÷ 현재가",
+   "dps": 0.0,
+   "div": 0.0
+  }
+ }
+}
