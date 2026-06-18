@@ -1,0 +1,356 @@
+{
+ "title": {
+  "ko": "흑자 전환 시점 불투명 속 양자보안·V2X 기술 변곡점 탐색",
+  "en": "Profitability Inflection Elusive; PQC and V2X Technology Ramp-Up on Watch"
+ },
+ "lead": {
+  "ko": "국내 ETCS(하이패스) 칩 시장 91% 이상의 압도적 점유율과 2026년 4월 양자내성암호(PQC) 보안 칩 신제품 출시를 기반으로 신성장 경로를 탐색 중이나, 4년 연속 영업 적자 심화와 매출 정체가 수익화 일정의 핵심 변수로 부각된다.",
+  "en": "Ranix is charting a new growth course on the back of its 91%+ domestic ETCS market dominance and the April 2026 launch of a commercialized PQC quantum-security chip, yet four consecutive years of deepening operating losses and stagnant revenues keep the profitability timeline as the pivotal question."
+ },
+ "keypoints": [
+  {
+   "ko": "국내 ETCS Before Market 점유율 91% 이상 유지로 안정적 매출 기반 확보 중이며, 보안 기능이 강화된 신규 칩 교체 수요가 2026년부터 본격화될 가능성이 있음",
+   "en": "Stable revenue base underpinned by 91%+ domestic ETCS Before Market share; security-enhanced chip replacement demand may accelerate from 2026"
+  },
+  {
+   "ko": "PQC 보안칩 RQ2722 출시(2026년 4월)로 국방·에너지·금융 등 국가 인프라 보안 시장 진출 시도; 후속 KpqC 알고리즘 탑재 모델과 KCMVP 3등급 칩이 2026년 말 완료 목표",
+   "en": "PQC security chip RQ2722 launched (Apr 2026) opens national defense and infrastructure security markets; KpqC-algorithm successor and KCMVP Level-3 chip both targeted for year-end 2026 completion"
+  },
+  {
+   "ko": "2019년 기술특례 상장 이후 한 번도 흑자를 기록하지 못했으며, 2025년 영업손실률 -81.0%로 심화되어 연간 영업 현금 유출이 지속되고 있음",
+   "en": "Zero profitable year since 2019 tech-exception IPO; FY2025 operating margin of -81.0% reflects deepening losses with persistently negative operating cash flow"
+  },
+  {
+   "ko": "국내 유일 5G V2X 통합 솔루션 보유 기업으로 2026년 강릉 ITS 세계총회용 자율주행차 V2X OBU 납품을 완료, 완성차 V2X 의무화 확산이 중장기 수요 촉매",
+   "en": "Sole domestic provider of integrated 5G V2X solutions; completed OBU supply for the 2026 Gangneung ITS World Congress, with global V2X installation mandates serving as a medium-term demand catalyst"
+  },
+  {
+   "ko": "부채비율이 2022년 193.1%에서 2025년 103.9%로 크게 낮아졌으나, 영업 현금흐름 개선이 아닌 자본 확충의 결과임에 유의 필요",
+   "en": "Debt ratio improved significantly from 193.1% (2022) to 103.9% (2025), primarily reflecting equity financing rather than operational improvement as operating cash flow remains negative"
+  }
+ ],
+ "business": {
+  "ko": "라닉스는 2003년 설립된 차량용 시스템 반도체 팹리스 기업으로, 자동차 통신 및 보안·인증 솔루션을 주력으로 한다. 사업 부문은 Automotive MCU(하이패스 ETCS 칩), Autonomous Vehicle(V2X 통신 솔루션), Smart Life(IoT 통신·보안), 용역서비스로 구성된다. Automotive MCU 부문의 하이패스용 DSRC 칩(Maat-V 등)은 국내 ETCS Before Market에서 점유율 91% 이상을 유지하며 현재 핵심 매출원 역할을 한다. 2008년 현대기아차 하이패스 단말기 탑재를 시작으로 시장을 주도했으며, 현재 국내외 완성차 업체에 공급하고 있다. 자율주행 부문에서는 V2X 모뎀칩(T-WAVE), RF칩, 보안칩, SW 스택을 아우르는 종합 솔루션을 보유하며, 전 세계적으로 이 네 가지 구성요소를 내재화한 사실상 유일한 기업으로 알려져 있다. 최근에는 PQC 보안칩 RQ2622 양산(2025년 3분기)과 RQ2722 출시(2026년 4월)를 통해 국방·인프라 보안 시장으로 사업 영역을 확장 중이다. Smart Life 부문에서는 개인응급응답시스템(mPERS), 동작·호흡감지 레이다 솔루션(CPD) 등 IoT 보안과 스마트 헬스케어를 추진 중이다. 경쟁 구도에서 글로벌 V2X 칩 개발사는 퀄컴(미국), 오토톡스(이스라엘), 화웨이(중국) 등이며, 차량용 보안칩 시장은 인피니언·NXP 등 외산이 주도하는 구도다.",
+  "en": "Ranix, founded in 2003, is a fabless semiconductor company specializing in automotive communication and security/authentication solutions. Its divisions encompass Automotive MCU (ETCS/haipass chips), Autonomous Vehicle (V2X), Smart Life (IoT security and healthcare), and service consulting. The Automotive MCU division's DSRC chips (including Maat-V) command over 91% of Korea's ETCS Before Market and constitute the primary revenue driver. After securing placement in Hyundai-Kia haipass terminals in 2008, the company has since expanded to domestic and overseas automakers. In autonomous vehicles, Ranix holds a V2X solution integrating modem (T-WAVE), RF, security chips, and SW stack — reportedly one of the few players globally to in-house all four components. The PQC security chip RQ2622 entered mass production (Q3 2025) and RQ2722 was commercially launched (April 2026), targeting national defense and infrastructure security markets. The Smart Life segment pursues IoT security and smart healthcare, including personal emergency response systems (mPERS) and radar-based motion/respiration sensors (CPD). Globally, Ranix competes in V2X against Qualcomm, Autotalks, and Huawei, while automotive security chips remain dominated by Infineon and NXP."
+ },
+ "earnings": {
+  "ko": "연간 매출은 2023년 약 115억 원을 정점으로 2024년 약 77억 원, 2025년 약 75억 원으로 2년 연속 감소했다. 매출 감소에도 비용은 확대되어 영업손실률이 2022년 -16.4%, 2023년 -25.6%, 2024년 -70.3%, 2025년 -81.0%로 급격히 악화됐다. 2025년 영업손실은 약 60억 원으로 전년 54억 원에서 확대됐으며, 매출(약 75억 원)의 80%를 초과하는 수준이다. 순손실 역시 2022년 약 49억 원에서 2025년 약 78억 원으로 누적 심화됐고, 영업 현금흐름도 4년 연속 마이너스로 2025년에는 약 -51억 원을 기록했다. 분기 실적을 보면 2025년 3분기(매출 약 21억 원, 영업손실 약 9억 원)에 일시 개선됐다가 4분기(매출 약 18억 원, 영업손실 약 18억 원)에 재악화되는 변동성이 컸다. 2026년 1분기에는 매출 약 16억 원에 영업손실 약 16억 원으로, 영업손실이 매출과 거의 같은 수준에 도달해 손익분기점까지의 거리가 상당하다. 영업손실 확대의 주된 배경은 V2X·PQC 칩 개발 관련 연구개발비 증가와 저가 수주 경쟁 회피에 따른 기존 ETCS 매출 감소가 맞물린 결과다. 한국IR협의회 분석에 따르면 보안 기능 강화 신규 칩 교체 수요가 2026년부터 국내 ETC 매출 회복을 견인할 것으로 기대되나, 현재까지 실적으로 확인되지는 않고 있다.",
+  "en": "Annual revenue peaked at approximately ₩11.5 billion in 2023 before contracting to ₩7.71 billion in 2024 and ₩7.47 billion in 2025. Despite shrinking revenues, cost structures expanded, driving the operating margin from -16.4% in 2022 to -25.6% in 2023, -70.3% in 2024, and -81.0% in 2025 — meaning the 2025 operating loss of approximately ₩6.05 billion exceeded 80% of the ₩7.47 billion in revenues. Net losses deepened from ₩4.93 billion in 2022 to ₩7.77 billion in 2025, with operating cash flow remaining negative for four consecutive years at approximately ₩-5.12 billion in 2025. On a quarterly basis, a temporary improvement in Q3 2025 (revenue ₩2.11 billion, operating loss ₩0.93 billion) reversed sharply in Q4 2025 (revenue ₩1.79 billion, operating loss ₩1.75 billion), illustrating high revenue volatility. In Q1 2026, an operating loss of approximately ₩1.57 billion virtually equaled revenues of ₩1.56 billion, underscoring the distance remaining to breakeven. The primary drivers of escalating losses are rising R&D expenditure for V2X and PQC development combined with deliberate withdrawal from low-margin ETCS bids. Korea IR Council research anticipated ETC revenue recovery in 2026 from the new security-enhanced chip replacement cycle, but this has yet to appear in reported financials."
+ },
+ "industry": {
+  "ko": "차량용 반도체 시장은 전동화 및 자율주행 고도화에 따른 차량 1대당 반도체 탑재 수량 급증으로 구조적 성장 국면에 있다. V2X 통신 표준화가 5G 기반으로 수렴되면서 중국·유럽·미국 등 주요 시장에서 V2X 의무 탑재 로드맵이 구체화되고 있다. 한국 정부는 2026년 강릉 ITS 세계총회 등 C-ITS 인프라 구축 투자를 지속 확대 중이며 V2X 단말기 수요가 단계적으로 증가할 전망이다. 보안 시장에서는 UNECE의 WP.29 차량 사이버보안 법규(2021년 발효)가 하드웨어 보안 모듈(HSM) 탑재를 사실상 의무화하는 방향으로 업계를 이끌고 있다. PQC 분야에서는 NIST 표준 공표 이후 미국·유럽·한국 정부가 공공 인프라 암호체계 전환 로드맵을 발표했으며, 과기정통부는 2030년까지 범국가 PQC 전환 핵심기술 개발 사업을 추진 중이다. 그러나 V2X와 PQC 모두 현재 상용화 초기 단계로 실제 대규모 매출이 발생하기까지 시간이 필요하다는 것이 업계의 공통된 인식이다. 글로벌 V2X 칩 공급사로는 퀄컴, 오토톡스, 화웨이 등이 경쟁하며 국내에서도 신규 진입자가 등장하는 등 경쟁이 심화되고 있다.",
+  "en": "The automotive semiconductor market is in a structural growth phase as electrification and advanced autonomy drive sharply higher chip content per vehicle. With V2X communication standards converging on 5G, China, Europe, and the United States are materializing V2X installation mandates. The Korean government continues expanding C-ITS infrastructure investment around the 2026 ITS World Congress in Gangneung, supporting a gradual ramp in V2X terminal demand. In vehicle security, the UNECE's WP.29 automotive cybersecurity regulation (effective 2021) is pushing automakers toward mandatory Hardware Security Module (HSM) adoption. In PQC, the publication of NIST quantum-resistant standards has prompted the US, EU, and Korean governments to announce migration roadmaps, with Korea's Ministry of Science and ICT pursuing national-scale PQC transition R&D through 2030. Both V2X and PQC remain in early commercialization stages, however, and the consensus view is that significant revenue generation will take time. Global V2X chip suppliers include Qualcomm, Autotalks, and Huawei, with new domestic entrants intensifying competitive pressure."
+ },
+ "outlook": {
+  "ko": "라닉스는 2026년 국내 ETC(하이패스) 매출 회복을 최우선 과제로 제시하고 있다. 보안 기능을 강화한 신규 ETCS 칩으로 고객사 공급을 재개하고 단가와 물량을 동시에 회복한다는 전략이다. PQC 보안칩 RQ2722(2026년 4월 출시)로 국방·에너지·통신·금융 등 국가 핵심 인프라 사업화를 추진 중이며, 회사는 국방 분야 첨단 군사장비 통신 보안 강화가 2026년 최종 개발 완료 시 가시화될 것으로 기대한다. 후속 모델에는 한국형 양자내성암호(KpqC) 알고리즘을 추가 탑재해 2026년 하반기 출시를 목표로 하며, KCMVP 3등급 암호모듈 역시 2026년 말 CS 완료를 목표로 개발 중이다. V2X 부문에서는 22nm 공정 기반의 5G-NR-V2X 멀티 프로세서 개발이 진행 중으로, 파운드리로 글로벌파운드리가 검토되고 있다. 강릉 ITS 세계총회(2026년 예정)를 위한 V2X OBU 공급이 완료된 가운데, 스마트 팩토리 물류 자동화 등 비(非)차량 V2X 수요도 탐색 중이다. 중국 시장 진출은 현지 고객사와 교류를 이어가고 있으나 구체적인 양산 공급 시점은 아직 확정되지 않은 상태다.",
+  "en": "Ranix's top priority for 2026 is the recovery of domestic ETC revenue by resuming customer shipments with a security-enhanced new ETCS chip, targeting simultaneous recovery in both volumes and selling prices. The PQC security chip RQ2722, launched in April 2026, is targeting national defense, energy, communications, and financial infrastructure, with the company expecting defense-segment communication security improvements to materialize upon 2026 final development completion. A successor model incorporating Korea's KpqC algorithm targets H2 2026 launch, while the KCMVP Level-3 security module has a year-end 2026 customer sample milestone. In V2X, development of a 22nm 5G-NR-V2X multi-processor is ongoing with GlobalFoundries under consideration as the manufacturing partner. V2X OBU supply for the Gangneung 2026 ITS World Congress has been completed, and non-automotive V2X applications including smart factory logistics are being explored. China market entry continues through customer dialogue but lacks a confirmed mass-production timeline."
+ },
+ "valuation_comment": {
+  "ko": "회사는 4년 연속 영업 적자를 기록 중으로, 이익 기반 배수(PER)는 현재 산출이 불가하다. 주당순자산(BPS, 자체 산출 약 1,279원)을 기준으로 주가는 순자산 대비 소폭 프리미엄 구간에서 거래 중이며, 이 프리미엄은 시장이 기술 파이프라인(PQC, V2X)에 부여하는 미래 기대를 반영한다. 배당 지급 실적이 없어 배당수익률은 0%이며, 주당손실(EPS -511원) 기준으로 손실 폭이 꾸준히 확대됐다. 흑자 전환 시점이 가시화되기 전까지 이익 기반 밸류에이션 적용이 어렵고, 향후 실적 개선 여부가 순자산 프리미엄의 지속성을 결정할 핵심 변수가 된다. ETCS 신규 칩의 매출 기여와 PQC 칩 첫 수주 확인이 밸류에이션 재평가의 핵심 트리거로 작용할 것이다.",
+  "en": "With four consecutive years of operating losses, earnings-based multiples (P/E) cannot be calculated. Based on the internally computed book value per share (BPS of approximately ₩1,279), the stock trades at a modest premium to net asset value — a premium that reflects market expectations attached to the PQC and V2X technology pipelines. No dividends have been paid, yielding a 0% dividend yield, and the per-share loss (EPS of ₩-511) has widened steadily. Earnings-based valuation metrics remain inapplicable until a credible path to profitability emerges. Whether the net asset premium is sustained will depend primarily on whether revenue contribution from the new ETCS chip and the first confirmed PQC chip orders materialize as anticipated."
+ },
+ "bull": [
+  {
+   "title": {
+    "ko": "ETCS 독점에 가까운 점유율 — 교체 수요 재점화 기대",
+    "en": "Near-Monopoly ETCS Share — Replacement Cycle Reignition Potential"
+   },
+   "body": {
+    "ko": "국내 ETCS Before Market에서 91% 이상의 점유율을 유지해 경쟁 진입 장벽이 높다. 보안 기능이 강화된 신규 칩으로의 교체 수요가 2026년부터 본격화되면 매출 회복과 단가 개선이 동시에 기대된다. 장기 납품 이력이 만들어낸 품질 인증과 고객 신뢰가 재공급 계약의 밑거름이 될 수 있다.",
+    "en": "Ranix commands over 91% of Korea's ETCS Before Market, creating a high-entry-barrier revenue base. A replacement cycle driven by security-enhanced new chips is expected to accelerate from 2026, potentially lifting both volumes and average selling prices simultaneously. Long-standing supply relationships and quality certifications underpin the re-contracting prospects."
+   }
+  },
+  {
+   "title": {
+    "ko": "국내 유일 V2X 통합 솔루션 — 의무화 법규 수혜 기대",
+    "en": "Korea's Sole Integrated V2X Solution — Regulatory Mandate Beneficiary"
+   },
+   "body": {
+    "ko": "국내에서 5G V2X 모뎀·보안·RF·SW 스택을 모두 내재화한 유일한 기업이다. 중국·유럽 등의 V2X 탑재 의무화 정책이 시행되면 완성차 업체들의 국산 대안 수요가 라닉스로 집중될 가능성이 있다. 강릉 ITS 세계총회 V2X OBU 납품 레퍼런스는 향후 공공 조달 수주 경쟁에서 활용 가능한 실증 이력이다.",
+    "en": "Ranix is the only domestic company to in-house V2X modem, security, RF, and SW stack components in a single integrated solution. As V2X installation mandates take effect in China and Europe, demand from Korean automakers for domestic alternatives could concentrate on Ranix. The Gangneung ITS World Congress OBU supply reference provides a credible proof-of-concept for future public procurement bids."
+   }
+  },
+  {
+   "title": {
+    "ko": "PQC 보안칩 상용화 — 국방·인프라 신시장 개척",
+    "en": "PQC Security Chip Commercialization — Defense and Infrastructure Market Entry"
+   },
+   "body": {
+    "ko": "NIST PQC 표준 알고리즘(ML-KEM, ML-DSA)을 탑재한 RQ2722를 2026년 4월 출시해 국방·에너지·통신 분야 사업화를 추진 중이다. 중소벤처기업부·과기정통부 주관 국책 과제 수행 기관으로서 공공 조달 접근성이 높다. 2026년 말 KCMVP 3등급 목표의 후속 칩까지 출시되면 고신뢰도 공공 시장에서 경쟁 기반이 강화될 수 있다.",
+    "en": "The April 2026 launch of RQ2722 — embedding NIST-standard ML-KEM and ML-DSA algorithms — marks active entry into national defense, energy, and communications sectors. Ranix's role as a performer of government-sponsored PQC national research projects (under MoSIT and MSV) provides an advantage in accessing public procurement channels. Successful completion of the KCMVP Level-3 security chip by year-end 2026 could further strengthen its position in high-assurance government markets."
+   }
+  }
+ ],
+ "bear": [
+  {
+   "title": {
+    "ko": "4년 연속 적자 심화 — 수익화 가시성 부재",
+    "en": "Four Consecutive Years of Deepening Losses — No Near-Term Profitability Visibility"
+   },
+   "body": {
+    "ko": "2019년 기술특례 상장 이후 단 한 번도 영업 흑자를 기록하지 못했으며, 영업손실률은 2022년 -16.4%에서 2025년 -81.0%로 급격히 악화됐다. 2026년 1분기에도 영업손실이 매출과 거의 같은 수준이어서 손익분기점 도달 시점이 불분명하다. 4년 연속 마이너스 영업 현금흐름은 추가 자본 조달 필요성을 높여 기존 주주 희석 위험을 내포한다.",
+    "en": "Ranix has posted an operating loss in every year since its 2019 tech-exception IPO, with the operating margin deteriorating from -16.4% in 2022 to -81.0% in 2025. Q1 2026 continued this trend with operating losses nearly matching revenues, leaving the breakeven timeline undefined. Four consecutive years of negative operating cash flow raise the probability of further equity raises, creating ongoing dilution risk for existing shareholders."
+   }
+  },
+  {
+   "title": {
+    "ko": "매출 규모 미미 — 신사업 수익화 지연 리스크",
+    "en": "Minimal Revenue Scale — Risk of Prolonged New-Business Monetization Delays"
+   },
+   "body": {
+    "ko": "2025년 연간 매출이 약 75억 원으로 소규모이며, 분기별로도 15억~21억 원 수준에서 변동이 크다. V2X와 PQC 모두 개발 이력은 길지만 아직 대규모 상업 양산 매출이 확인되지 않는다. 중국 시장 진출도 수년 전부터 추진 중이나 구체적인 양산 수주 실적 없이 지연이 반복되고 있다.",
+    "en": "Annual revenues of approximately ₩7.47 billion (2025) remain at a modest absolute scale, with quarterly revenue fluctuating between ₩1.5 and ₩2.1 billion. Despite lengthy development histories, neither V2X nor PQC has generated confirmed large-scale commercial production revenue. China market entry has been pursued for years without confirmed mass-production orders, making the growth scenario timeline difficult to forecast."
+   }
+  },
+  {
+   "title": {
+    "ko": "경쟁 심화 — 글로벌 대기업과 국내 신규 진입자 추격",
+    "en": "Intensifying Competition — Global Majors and Domestic New Entrants Encroaching"
+   },
+   "body": {
+    "ko": "V2X 시장에서 퀄컴·오토톡스·화웨이 등 자금력과 규모가 큰 글로벌 업체들이 경쟁하고 있다. 차량용 보안칩 분야는 인피니언·NXP 등 외산 기업이 지배하고 있어 신규 진입 장벽이 높다. 국내에서도 V2X 칩 전문 후발 업체가 등장해 '국내 유일' 지위가 희석될 가능성이 생겼다.",
+    "en": "In V2X, Ranix faces Qualcomm, Autotalks, and Huawei — all with substantially larger financial resources and global customer bases. Automotive security chips remain dominated by Infineon and NXP, presenting high barriers to large-scale market penetration. Domestically, emerging V2X chip developers are challenging Ranix's sole-provider positioning, diluting the 'unique domestic player' narrative."
+   }
+  }
+ ],
+ "risks": [
+  {
+   "cat": {
+    "ko": "유동성·자본 조달 리스크",
+    "en": "Liquidity and Capital Raising Risk"
+   },
+   "body": {
+    "ko": "영업 현금흐름이 4년 연속 마이너스(-51억~-57억 원 수준)인 상황에서 연구개발 투자를 지속해야 하는 구조다. V2X·PQC 개발 완료 및 양산 전환 시점까지 추가적인 자본 확충이 필요할 수 있으며, 이는 신주 발행에 따른 주주 희석으로 이어질 가능성이 있다. 부채비율 개선이 이익으로 인한 자본 증가가 아닌 외부 자본 조달의 결과임을 감안하면 자본 소진 속도에 주목할 필요가 있다.",
+    "en": "Ranix must sustain R&D investment while operating cash flow has been negative for four consecutive years (approximately ₩-5.1 to ₩-5.7 billion annually). Additional equity raises are probable before V2X and PQC products reach full-scale production, creating ongoing dilution risk. The improved debt ratio reflects external capital infusions rather than retained earnings improvement, warranting attention to the rate of cash consumption."
+   }
+  },
+  {
+   "cat": {
+    "ko": "기술·표준화 리스크",
+    "en": "Technology and Standardization Risk"
+   },
+   "body": {
+    "ko": "C-ITS(V2X) 통신 표준화가 10년 이상 표류한 전례에서 보듯, 기술 표준 결정이 재차 지연되거나 방향이 변경될 경우 개발 투자가 무산될 위험이 있다. PQC 분야도 NIST 표준 이후 추가 알고리즘 변경 가능성이 상존하며, 상용화 전 규격 변경 시 재개발 비용이 발생한다. 차량용 반도체는 양산까지 통상 3~5년 이상의 인증 기간이 필요해 사업화 가속이 구조적으로 쉽지 않다.",
+    "en": "As evidenced by over a decade of C-ITS V2X standardization delays, shifts or delays in technical standards could strand development investments. PQC algorithms may see further revisions post-NIST, potentially triggering costly redesigns before commercialization. Automotive semiconductor qualification cycles of three to five or more years structurally limit the pace at which new chip revenues can ramp."
+   }
+  },
+  {
+   "cat": {
+    "ko": "고객 집중·지정학적 리스크",
+    "en": "Customer Concentration and Geopolitical Risk"
+   },
+   "body": {
+    "ko": "매출의 상당 부분이 국내 ETCS 하이패스 단말기 시장에 집중되어 있어, 완성차 업체 정책 변경이나 차세대 통신 방식 전환에 취약하다. 중국 시장 진출은 미·중 반도체 규제 등 지정학적 리스크로 인해 계획 대비 지연이 반복될 수 있다. 스마트 헬스케어 등 신사업 부문의 시장 성숙도가 낮아 단기 매출 기여가 제한적이다.",
+    "en": "A significant portion of revenue is concentrated in the domestic ETCS haipass module market, making Ranix vulnerable to OEM policy changes or migration to next-generation communication protocols. China market ambitions face ongoing delays from geopolitical risks including US-China semiconductor export restrictions. Smart healthcare and other new segments remain at early market maturity, limiting near-term revenue contributions."
+   }
+  }
+ ],
+ "checkpoints": [
+  {
+   "when": {
+    "ko": "2026년 7월 말~8월 초",
+    "en": "Late July – Early August 2026"
+   },
+   "what": {
+    "ko": "2026년 2분기 실적 발표: 보안 강화 신규 ETCS 칩 공급 재개에 따른 Automotive MCU 매출 회복 여부가 핵심. 1분기에 영업손실이 매출과 거의 같았던 수준에서 손실률이 개선됐는지 확인 필요.",
+    "en": "Q2 2026 earnings release: key focus on whether Automotive MCU revenue is recovering from renewed shipments of the security-enhanced ETCS chip and whether the operating margin shows improvement from the near -100% level recorded in Q1 2026."
+   }
+  },
+  {
+   "when": {
+    "ko": "2026년 하반기 (연도 말)",
+    "en": "H2 2026 (Year-End)"
+   },
+   "what": {
+    "ko": "KpqC 알고리즘 탑재 PQC 보안칩 후속 모델 출시 및 KCMVP 3등급 암호모듈 개발 완료 여부 확인. 국방·공공 기관의 첫 수주 공시 유무가 PQC 사업 상업화의 핵심 신호.",
+    "en": "Confirmation of the launch of the PQC successor model (with KpqC algorithm) and completion of the KCMVP Level-3 security module. A first announced contract in the national defense or public sector would be a key signal of PQC commercialization."
+   }
+  },
+  {
+   "when": {
+    "ko": "2026년 10월 (강릉 ITS 세계총회)",
+    "en": "October 2026 — ITS World Congress, Gangneung"
+   },
+   "what": {
+    "ko": "라닉스 V2X OBU의 강릉 ITS 세계총회 실증 성과와 이를 기반으로 한 추가 공공·민간 수주 연결 여부 모니터링. 글로벌 완성차·인프라 업체와의 접촉이 V2X 사업 가시성을 높이는 계기가 될 수 있다.",
+    "en": "Real-world performance results of Ranix's V2X OBU at the 2026 ITS World Congress and any follow-on contracts or partnerships. Global OEM and infrastructure operator engagement at the event could meaningfully improve V2X commercialization visibility."
+   }
+  },
+  {
+   "when": {
+    "ko": "2026년 내 (중국 ETCS 시장)",
+    "en": "Throughout 2026 — China ETCS Market"
+   },
+   "what": {
+    "ko": "중국 ETCS Before Market 진입을 위한 구체적인 공급 계약 체결 여부 모니터링. 수년간 기대 대비 지연 중이며, 미·중 반도체 규제 변화가 추가 변수가 될 수 있다.",
+    "en": "Monitor whether firm supply contracts are signed for China's ETCS Before Market entry. China revenue has lagged expectations for several years, with US-China semiconductor restrictions adding further uncertainty to timing."
+   }
+  },
+  {
+   "when": {
+    "ko": "2026년 말~2027년 초 (5G V2X 칩 개발)",
+    "en": "End-2026 to Early 2027 — 5G V2X Chip Development Progress"
+   },
+   "what": {
+    "ko": "22nm 기반 5G-NR-V2X 멀티 프로세서의 시제품 완성 및 파운드리 테이프아웃 착수 여부 확인. 동 칩 개발 완료는 V2X 본격 상업화의 선행 조건이며, 완성차·티어1 고객사와의 파일럿 계약 공시도 주목 포인트.",
+    "en": "Confirmation of prototype completion and foundry tape-out for the 22nm 5G-NR-V2X multi-processor. Completion of this chip is a prerequisite for full-scale V2X commercialization; any pilot agreement announcements with automakers or Tier-1 suppliers would represent a significant milestone."
+   }
+  }
+ ],
+ "verdict": {
+  "body": {
+   "ko": "라닉스는 국내 ETCS 하이패스 칩 시장에서 91% 이상의 압도적 점유율을 바탕으로 안정적 기반 매출을 확보하고 있으며, V2X 통합 솔루션과 PQC 양자보안 칩 상용화라는 두 축의 중장기 성장 모멘텀을 동시에 추진하는 기술 집약형 팹리스 기업이다. 2026년 4월 PQC 칩 RQ2722 출시와 강릉 ITS 세계총회 V2X OBU 레퍼런스 확보는 신사업 추진력이 구체화되고 있음을 보여준다. 그러나 2019년 상장 이후 단 한 번도 흑자를 기록하지 못했고, 2025년 영업손실률은 -81.0%로 심화됐으며 2026년 1분기에도 영업손실이 매출을 거의 상회해 수익화 전환까지 상당한 시간이 필요한 상황이다. 4년 연속 마이너스 영업 현금흐름은 향후 추가 자본 조달 가능성을 높이며, 이는 주주 희석 위험을 내재한다. ETCS 신규 칩의 실적 반영 여부, PQC 칩의 국방·공공 조달 첫 수주 확인, 5G V2X 칩 개발 완료가 단기~중기 핵심 확인 포인트다. 기술 파이프라인의 잠재력과 현재의 재무적 취약성이 공존하는 이중 구조에서, 투자자는 기술 상용화 속도와 자금 소진 속도 간의 균형을 면밀히 모니터링할 필요가 있다.",
+   "en": "Ranix is a technology-intensive fabless semiconductor company holding a dominant 91%+ share of Korea's ETCS Before Market while simultaneously advancing two medium-to-long-term growth pillars — integrated 5G V2X solutions and commercialized PQC quantum security chips. The April 2026 launch of RQ2722 and the Gangneung ITS World Congress V2X OBU supply reference represent tangible progress on the new business roadmap. However, the company has not recorded a profitable year since its 2019 IPO; the 2025 operating margin deteriorated to -81.0%, and Q1 2026 operating losses nearly equaled revenues, leaving the path to breakeven lengthy and uncertain. Four consecutive years of negative operating cash flow raise the probability of additional equity raises and the attendant dilution risk. Near-term to mid-term checkpoints to monitor include: revenue impact from the new ETCS chip replacement cycle, a first confirmed PQC defense or public sector contract, and the completion of the 5G V2X chip prototype. The investment case embodies a dual structure of significant technology optionality alongside substantial financial fragility — a balance that warrants careful tracking of commercialization pace against cash consumption rate."
+  }
+ },
+ "sources": [
+  "https://comp.fnguide.com/SVO2/ASP/SVD_Main.asp?gicode=A317120",
+  "https://m.irgo.co.kr/IR-COMP/317120/%EB%9D%BC%EB%8B%89%EC%8A%A4-%EA%B8%B0%EC%97%85%EC%A0%95%EB%B3%B4",
+  "https://www.investing.com/equities/ranix-inc",
+  "https://comp.fnguide.com/SVO2/asp/SVD_Invest.asp?pGB=1&cID=&MenuYn=Y&ReportGB=D&NewMenuID=105&stkGb=701&gicode=A317120",
+  "https://stocks.pluconnect.com/317120_%EB%9D%BC%EB%8B%89%EC%8A%A4/",
+  "https://m.thinkpool.com/item/317120",
+  "https://www.google.com/finance/quote/317120:KOSDAQ?hl=en",
+  "https://www.cadgraphics.co.kr/newsview.php?pages=directory&sub=directory07&catecode=40&num=70452",
+  "https://m.irgo.co.kr/IR-COMP/317120/%EB%9D%BC%EB%8B%89%EC%8A%A4-IR-ROOM",
+  "https://file.alphasquare.co.kr/media/pdfs/company-ir/20220920%EB%9D%BC%EB%8B%89%EC%8A%A4-IR%ED%81%90%EB%8D%94%EC%8A%A4-%EB%A6%AC%ED%8F%AC%ED%8A%B8-%EC%9E%90%EB%8F%99%EC%B0%A8-%ED%86%B5%EC%8B%A0-%EB%B0%8F-%EB%B3%B4%EC%95%88%EC%B9%A9-%EC%86%94%EB%A3%A8%EC%85%98-%EC%A0%84%EB%AC%B8%EA%B8%B0%EC%97%85-%EB%9D%BC%EB%8B%89%EC%8A%A4.pdf",
+  "http://www.ranix.co.kr/ko/",
+  "https://ko.wikipedia.org/wiki/%EB%9D%BC%EB%8B%89%EC%8A%A4",
+  "https://m.ddaily.co.kr/page/view/2021120513242049778",
+  "https://www.ibtomato.com/Mobile/mView.aspx?no=2640&type=1",
+  "https://www.thebell.co.kr/front/newsview.asp?key=202604161103443640108241",
+  "https://alphasquare.co.kr/home/theme-factor?theme-id=88",
+  "https://m.thinkpool.com/compDiscuss/cont/1026629",
+  "https://www.bloter.net/news/articleView.html?idxno=659777"
+ ],
+ "v": 2,
+ "model": "claude-sonnet-4-6",
+ "ticker": "317120",
+ "name": "라닉스",
+ "name_en": "RANIX INC.",
+ "sector": "반도체",
+ "categories": [
+  "반도체"
+ ],
+ "market": "코스닥",
+ "reportDate": "2026-06-19",
+ "reportTs": "2026-06-19 04:07",
+ "dataDate": "20260618",
+ "quant": {
+  "asOf": "2026-06-18",
+  "fs_basis": "연결(CFS) · DART 공시 확정치 · 지배주주 기준 순이익",
+  "annual": [
+   {
+    "year": 2025,
+    "rev": 7467703331,
+    "op": -6051812572,
+    "np": -7772020734,
+    "np_owner": -7772020734,
+    "equity": 21311835054,
+    "equity_owner": 21311835054,
+    "liab": 22139778253,
+    "cfo": -5116841657,
+    "eps_basic": null,
+    "opm": -81.0,
+    "roe": -36.5,
+    "debt_ratio": 103.9
+   },
+   {
+    "year": 2024,
+    "rev": 7713262716,
+    "op": -5419034462,
+    "np": -6733850580,
+    "np_owner": -6733850580,
+    "equity": 19554595672,
+    "equity_owner": 19554595672,
+    "liab": 23529974126,
+    "cfo": -5678238001,
+    "eps_basic": null,
+    "opm": -70.3,
+    "roe": -34.4,
+    "debt_ratio": 120.3
+   },
+   {
+    "year": 2023,
+    "rev": 11543221600,
+    "op": -2957186931,
+    "np": -5369729462,
+    "np_owner": -5369729462,
+    "equity": 10631958230,
+    "equity_owner": 10631958230,
+    "liab": 18597348105,
+    "cfo": -1302209421,
+    "eps_basic": null,
+    "opm": -25.6,
+    "roe": -50.5,
+    "debt_ratio": 174.9
+   },
+   {
+    "year": 2022,
+    "rev": 10984971091,
+    "op": -1800111623,
+    "np": -4930203244,
+    "np_owner": -4930203244,
+    "equity": 14321987349,
+    "equity_owner": 14321987349,
+    "liab": 27652712250,
+    "cfo": -1592699234,
+    "eps_basic": null,
+    "opm": -16.4,
+    "roe": -34.4,
+    "debt_ratio": 193.1
+   }
+  ],
+  "quarterly": [
+   {
+    "q": "2025Q1",
+    "rev": 2074406182,
+    "op": -1443300931,
+    "np_owner": -1778949717
+   },
+   {
+    "q": "2025Q2",
+    "rev": 1501318719,
+    "op": -1920986648,
+    "np_owner": -2419846488
+   },
+   {
+    "q": "2025Q3",
+    "rev": 2106563138,
+    "op": -933939427,
+    "np_owner": -1372098039
+   },
+   {
+    "q": "2025Q4",
+    "rev": 1785415292,
+    "op": -1753585566,
+    "np_owner": -2201126490
+   },
+   {
+    "q": "2026Q1",
+    "rev": 1563396745,
+    "op": -1568941804,
+    "np_owner": -1813031082
+   }
+  ],
+  "valuation": {
+   "price": 1640,
+   "mcap": 0.025,
+   "shares": 15260000,
+   "total_shares": 15260000,
+   "wavg_shares": null,
+   "per": null,
+   "eps": -511,
+   "pbr": 1.28,
+   "bps": 1279,
+   "roe_ttm": -41.8,
+   "ttm_window": "2025Q2~2026Q1",
+   "ttm_np_owner": -7806102099,
+   "pbr_krx": 1.17,
+   "bps_krx": 1399.0,
+   "basis": "PER·EPS·PBR·BPS 모두 자체 산출(네이버·토스와 동일 방식) · 배당은 DART 공시 주당현금배당금(보완:KRX) ÷ 현재가",
+   "dps": 0.0,
+   "div": 0.0
+  }
+ }
+}

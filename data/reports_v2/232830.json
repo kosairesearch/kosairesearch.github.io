@@ -1,0 +1,331 @@
+{
+ "title": {
+  "ko": "보안·PQC 플랫폼 전환기, 지속 흑자화가 관건",
+  "en": "Security & PQC Platform at Inflection Point: Sustainable Profitability the Key Test"
+ },
+ "lead": {
+  "ko": "씨플랫폼 연결 편입으로 3년 만에 매출이 약 17배 팽창했으나, 분기 영업흑자는 2025년 2분기 단 한 차례에 그쳐 지속적 수익 창출력의 입증이 핵심 과제로 부각된다.",
+  "en": "Revenue has expanded roughly 17-fold over three years through the consolidation of subsidiary C Platform, yet an operating profit was achieved only once—Q2 2025—making sustainable earnings the defining challenge ahead."
+ },
+ "keypoints": [
+  {
+   "ko": "씨플랫폼 연결 효과로 2023년 162억 → 2025년 2,696억, 3년간 매출 약 17배 급팽창. 단, 수익 기여는 제한적",
+   "en": "C Platform consolidation drove roughly 17-fold revenue growth from KRW 16.2bn (2023) to KRW 269.6bn (2025), though bottom-line contribution remains limited"
+  },
+  {
+   "ko": "영업흑자는 2025Q2(+15억) 단 한 차례. 나머지 2025Q1·Q3·Q4·2026Q1은 연속 영업손실로 흑자 지속성 미확인",
+   "en": "Operating profit was recorded only in Q2 2025 (+KRW 1.5bn); all other recent quarters—Q1, Q3, Q4 2025 and Q1 2026—posted operating losses, leaving profit sustainability unproven"
+  },
+  {
+   "ko": "PQC 선도 입지: NIST 표준 기반 iEnxection PQC를 금융망에 실제 적용, 하나은행 제로트러스트 과제 수행으로 레퍼런스 확보",
+   "en": "PQC leadership: iEnxection PQC (NIST-standard) deployed in live financial networks; Hana Bank zero-trust project builds critical commercial references"
+  },
+  {
+   "ko": "연결 부채비율 681%(2025): 씨플랫폼 IT솔루션 총판 구조에 내재된 단기 차입이 근본 원인이며, 금리·유동성 리스크 내포",
+   "en": "Consolidated debt-to-equity of 681% (2025) reflects short-term borrowings embedded in C Platform's IT solution distribution model, carrying rate and liquidity risk"
+  },
+  {
+   "ko": "2025년 영업현금흐름 +115억으로 플러스 전환, 이익 적자와의 괴리는 감가상각 등 비현금 항목 반영",
+   "en": "Operating cash flow turned positive at +KRW 11.5bn in 2025, diverging from net losses due to non-cash charges and working capital movements"
+  }
+ ],
+ "business": {
+  "ko": "아이티센피엔에스는 2011년 설립된 보안 플랫폼 전문기업으로, 2025년 3월 주주총회를 통해 구 시큐센(Secucen)에서 현재 사명으로 변경했다. PNS는 플랫폼(Platform)·보안(Security)·솔루션(Solution)의 약자로, AI 기반 생체인증·IT보안·핀테크 보안·양자내성암호(PQC)를 핵심 사업으로 영위한다. 연결 종속회사로는 비상장사 씨플랫폼(지분율 98.5%)과 투케이엠시스템즈가 있으며, 씨플랫폼은 팔로알토네트웍스·사이버아크 등 글로벌 보안 벤더의 국내 총판 및 AI·클라우드·데이터 솔루션 전문 공급을 담당한다. 연결 매출의 대부분이 씨플랫폼의 IT솔루션 유통 사업에서 발생하며, 별도 법인의 자체 보안 소프트웨어 사업은 규모가 상대적으로 작다. 주요 고객군은 금융권(은행·보험)과 공공기관이며, 모바일뱅킹 생체인증 전자서명 시스템 등을 공급하고 있다. 경쟁사로는 드림시큐리티·아톤·라온시큐어 등 인증·보안 플랫폼 업체들이 있으며, 양자보안 분야에서는 케이씨에스·엑스게이트·아이씨티케이 등과도 경합한다. 아이티센그룹의 보안 전문 계열사로서 아이티센씨티에스·아이티센엔텍 등 그룹 계열사와의 교차 판매 시너지를 추구한다. 2016년 11월 코넥스 상장 후 2023년 6월 코스닥으로 이전 상장했으며, 경기도 과천 아이티센타워에 본사를 두고 있다.",
+  "en": "ITCEN PNS was founded in 2011 and renamed from Secucen at its March 2025 AGM. 'PNS' stands for Platform, Security, and Solution, reflecting its identity as a security platform specialist offering AI-based biometric authentication, IT security, fintech security, and post-quantum cryptography (PQC). Two non-listed subsidiaries are consolidated: C Platform (98.5%-owned) and 2KM Systems. C Platform is the domestic distributor for global security vendors including Palo Alto Networks and CyberArk, specializing in AI, cloud, and data solutions. The vast majority of consolidated revenue originates from C Platform's IT solution distribution operations, while the parent's proprietary security software business is comparatively smaller. Key customers include financial institutions (banks, insurers) and the public sector, with mobile banking biometric e-signature systems as flagship products. Competitors in the authentication and security platform space include DreamSecurity, ATON, and Raonsecure, while KCS, Xgate, and ICTK contest the emerging quantum-security segment. As ITCEN Group's dedicated security arm, the company pursues cross-selling synergies with affiliates ITCEN CTS and ITCEN ENTEC. Listed on KONEX in November 2016, the company transferred to KOSDAQ in June 2023 and is headquartered at ITCEN Tower in Gwacheon, Gyeonggi-do."
+ },
+ "earnings": {
+  "ko": "2023년에는 별도 중심 사업구조에서 매출 162억, 영업손실 -13억(OPM -7.9%), 순손실 -10억을 기록했고 영업현금흐름도 -26억 적자였다. 2024년 씨플랫폼 연결 편입(연중 개시)으로 매출이 1,044억으로 급증했으나 영업손실 -16억, 연결 총 순손실 -25억이 지속됐으며, 지배주주 귀속 순손익은 실질적으로 손익분기(약 -0.01억) 수준이었다. 영업현금흐름은 +2억으로 간신히 플러스로 돌아섰다. 2025년에는 씨플랫폼 연간 기여가 본격화되며 매출 2,696억으로 재차 크게 팽창했고, 영업손실이 -3억으로 거의 손익분기점 수준까지 축소됐다. 그러나 고레버리지에 따른 금융비용 등의 영향으로 지배주주 귀속 순손실은 -45억을 기록했으며, 긍정 신호로 영업현금흐름은 +115억으로 대폭 개선됐다. 분기 흐름을 보면 2025Q1(매출 559억, 영업손실 -11억)→2025Q2(매출 768억, 영업이익 +15억, 지배 순이익 +9억)→2025Q3(매출 756억, 영업손실 -3억)→2025Q4(매출 612억, 영업손실 -4억)로 Q2에만 흑자를 기록했다. 2026Q1은 매출 539억으로 전 분기(612억) 대비 역성장했고, 영업손실 -8억·지배주주 귀속 순손실 -23억으로 손실 폭이 다시 확대됐다. 별도 기준 자체 보안 소프트웨어 사업의 분기 매출은 약 40억 수준으로 제한적이어서, 연결 이익 전환은 씨플랫폼의 수익성 확보에 크게 달려 있다.",
+  "en": "In 2023, operating on a largely standalone basis, revenue was KRW 16.2bn, operating loss was KRW -1.3bn (OPM -7.9%), net loss KRW -960mn, and operating cash flow was -KRW 2.6bn. The mid-year consolidation of C Platform in 2024 pushed revenue to KRW 104.4bn, but operating loss widened to KRW -1.6bn and total net loss to KRW -2.5bn; net loss attributable to controlling interests was effectively at breakeven (-KRW 1mn), while operating cash flow barely turned positive at KRW 192mn. In 2025, C Platform's full-year contribution lifted revenue to KRW 269.6bn, narrowing the operating loss to just KRW -303mn—near breakeven—while operating cash flow surged to +KRW 11.5bn. Finance charges on the high-leverage structure, however, drove the net loss attributable to controlling shareholders to KRW -4.5bn. Quarterly, the pattern was Q1 2025 (revenue KRW 55.9bn, OP -KRW 1.1bn) → Q2 2025 (revenue KRW 76.8bn, OP +KRW 1.5bn, net +KRW 877mn) → Q3 2025 (revenue KRW 75.6bn, OP -KRW 310mn) → Q4 2025 (revenue KRW 61.2bn, OP -KRW 388mn)—with Q2 the sole profitable quarter. Q1 2026 showed a sequential revenue decline (KRW 53.9bn vs KRW 61.2bn in Q4 2025) and a widening operating loss of -KRW 836mn alongside a controlling-interest net loss of -KRW 2.3bn. The parent's standalone security software business generates roughly KRW 4bn per quarter, meaning earnings inflection depends predominantly on C Platform's profitability trajectory."
+ },
+ "industry": {
+  "ko": "국내 사이버보안 시장은 2026년 약 4.3조~4.8조 원 규모로 성장할 것으로 전망되며, AI 기술 도입 확산과 사이버 위협 고도화가 수요를 견인하고 있다. 2024년 8월 미국 NIST의 PQC 표준 알고리즘 공표를 계기로 글로벌 보안 패러다임이 전환됐고, 국내에서는 KISA를 중심으로 한국형 양자내성암호(KpqC) 표준화 및 금융·공공 분야 시범 사업이 활발히 진행 중이다. AI와 기존 보안 프레임워크의 통합, 생성형 AI 기반 위협 대응, 제로트러스트 아키텍처 확산이 2026년 주요 업황 트렌드로 꼽힌다. IT솔루션 총판 사업(씨플랫폼 영역)은 팔로알토네트웍스·사이버아크 등 글로벌 벤더의 한국 시장 확대에 연동되며, AI 인프라 보안 수요가 증가 추세에 있다. 경쟁 환경에서는 드림시큐리티·아톤·라온시큐어·한컴위드 등이 인증·보안 플랫폼 시장을 다투고, 양자내성암호 분야에서는 케이씨에스·엑스게이트·아이씨티케이 등도 존재감을 높이고 있다. 아이티센피엔에스는 실제 금융망 PQC 적용 레퍼런스를 확보한 점에서 차별화 요소를 보유하고 있으나, 독자 규모로는 대형 IT서비스 기업 대비 제한적인 입지다.",
+  "en": "The domestic cybersecurity market is forecast to reach KRW 4.3–4.8 trillion in 2026, driven by widespread AI adoption and increasingly sophisticated cyber threats. NIST's August 2024 publication of PQC standard algorithms triggered a global security paradigm shift, and within Korea, KISA is spearheading KpqC standardization alongside pilot programs in the financial and public sectors. Key 2026 industry themes include AI-security framework integration, generative-AI-powered threat response, and broad zero-trust architecture adoption. The IT solution distribution segment (C Platform's domain) tracks Korean market expansion by global vendors such as Palo Alto Networks and CyberArk, with AI infrastructure security demand on an upward trajectory. In the authentication and security platform competitive arena, DreamSecurity, ATON, Raonsecure, and Hancom Widd are active participants, while KCS, Xgate, and ICTK are gaining profile in post-quantum cryptography. ITCEN PNS holds a differentiated position through live financial-network PQC deployments, though its standalone scale remains modest relative to large-cap IT service players."
+ },
+ "outlook": {
+  "ko": "회사는 2025년 1분기 실적 발표 시 '하반기에 기존 보안 포트폴리오 외에 양자내성암호 기반 전자지갑 솔루션 엣지큐월렛(EdgeQwallet)으로 시장을 공략하겠다'는 방침을 밝혔다. KISA 주관 2025년 제로트러스트 도입 시범사업의 일환으로 하나은행 국내외 금융망에 PQC 기반 기술을 적용하고 있으며, 향후 KpqC 표준 알고리즘 확정 시 즉시 솔루션에 반영해 규제 대응력을 강화하고 아태 시장으로 영향력을 확대할 계획이다. 씨플랫폼과의 시너지는 AI·클라우드·웹3 보안 포트폴리오 확충 방향으로 진행 중이며, 팔로알토네트웍스 AI 기반 위협 대응 플랫폼 및 사이버아크 제로트러스트 솔루션이 주요 제품군을 이루고 있다. 2026년 국내 양자 보안 시장은 정부의 PQC 시범 전환 사업 확대와 함께 전 산업으로 실증 사업이 확대되는 구간으로, 아이티센피엔에스가 NIST 표준 기반 제품을 금융망에 이미 적용한 레퍼런스는 신규 수주 경쟁에서 강점 요소다. 다만 2026Q1 매출이 전 분기 대비 역성장한 점은 씨플랫폼의 계절성과 수주 변동성을 환기시키며, 2026년 하반기 수익성 회복 여부가 연간 실적의 관건이 될 전망이다. 그룹 차원에서는 'AgentGo' AI 에이전트 관리 플랫폼 등 신규 솔루션이 출시되며 그룹 보안 역량을 통합 제공하는 전략이 병행 추진 중이다.",
+  "en": "At its Q1 2025 results announcement, management outlined plans to attack new markets in H2 with EdgeQwallet, a PQC-based digital wallet. Under KISA's 2025 zero-trust pilot program, the company is applying PQC-based technology to Hana Bank's domestic and international financial networks, with plans to instantly incorporate the forthcoming KpqC standard and expand into the Asia-Pacific market. C Platform synergies are being developed around AI, cloud, and Web3 security portfolios, with Palo Alto Networks AI threat response and CyberArk zero-trust solutions as the current flagships. In 2026, the domestic quantum security market is accelerating as government-led PQC transition pilots expand across industries, and ITCEN PNS's live financial-network PQC references are a competitive advantage in new project bids. However, the sequential revenue decline in Q1 2026 highlights inherent seasonality and project-based volatility at C Platform, making H2 2026 profitability recovery the pivotal watch point for full-year results. At the group level, the newly launched AgentGo multi-agent AI management platform is being promoted alongside ITCEN PNS's integrated security capabilities."
+ },
+ "valuation_comment": {
+  "ko": "연결 기준 지속 순손실로 주가수익비율(PER)은 현시점 산출이 불가한 상태다. 주당순자산(BPS) 825원 대비 현재 주가는 상당한 프리미엄 구간에 형성되어 있으며, 이는 PQC·AI 보안 성장 내러티브와 아이티센그룹 계열 시너지 기대가 반영된 것으로 해석된다. 배당은 지급되지 않아 인컴 투자 유인이 없고, 현금흐름 우선 창출 단계에 있다. 이익 적자가 지속되는 구간에서 순자산 대비 프리미엄이 유지되는 구조인 만큼, 향후 분기 흑자 재현 여부와 씨플랫폼의 레버리지 축소 속도가 밸류에이션의 핵심 변수로 작용할 전망이다. 소형주 특성상 거래량이 제한적일 수 있어 유동성 측면에서도 주의가 필요하다.",
+  "en": "Persistent consolidated net losses render a price-to-earnings multiple incalculable at this time. Relative to the book value per share (BPS) of KRW 825, the current share price sits at a substantial premium to net assets, reflecting the market's pricing of the PQC/AI security growth narrative and expected group-level synergies. No dividends have been paid, removing income-investment appeal; the company is squarely in a cash-flow-first phase. Given that a premium to book value persists despite ongoing losses, the pace of quarterly profit restoration and C Platform's deleveraging trajectory are expected to be the central valuation anchors going forward. Limited liquidity typical of micro-cap names also warrants attention from a trading standpoint."
+ },
+ "bull": [
+  {
+   "title": {
+    "ko": "PQC 선도 기술력과 실제 금융망 레퍼런스",
+    "en": "PQC Technology Leadership with Live Financial Network References"
+   },
+   "body": {
+    "ko": "NIST 표준 기반 iEnxection PQC를 실제 금융망에 적용한 이력은 경쟁사 대비 유의미한 차별화 포인트다. KISA 주관 제로트러스트 시범사업에서 하나은행 금융망에 PQC 기반 기술을 적용 중이며, 레퍼런스 축적이 신규 금융·공공 수주 경쟁력으로 이어질 수 있다. KpqC 표준 확정 시 솔루션 즉시 업데이트 계획은 규제 대응 속도 면에서 강점이며, 정부 주도 PQC 시범 전환 사업이 전 산업으로 확대되는 환경에서 선점 효과를 기대할 수 있다.",
+    "en": "Deploying NIST-standard iEnxection PQC in live financial networks provides a meaningful differentiator versus peers. Ongoing application of PQC-based technology to Hana Bank's networks under KISA's zero-trust pilot is accumulating references that could translate into competitive wins in new financial and public sector bids. Plans to immediately update solutions upon KpqC standard finalization highlight regulatory agility, and first-mover benefits are attainable as government-led PQC transition pilots expand industry-wide."
+   }
+  },
+  {
+   "title": {
+    "ko": "씨플랫폼 편입으로 확장된 글로벌 보안 포트폴리오",
+    "en": "Expanded Global Security Portfolio via C Platform Integration"
+   },
+   "body": {
+    "ko": "씨플랫폼과의 결합으로 팔로알토네트웍스·사이버아크 등 글로벌 보안 벤더 총판 역량이 더해져, 단순 솔루션 개발사에서 종합 보안 서비스 기업으로 포지션이 격상됐다. AI 인프라 보안·클라우드 워크로드 보안 등 고성장 영역에서 제품 포트폴리오가 갖춰졌다. 씨플랫폼의 AI 인프라스트럭처 사업 시너지가 본격화될 경우 연결 수익성 개선 속도가 빨라질 수 있다.",
+    "en": "The C Platform integration transformed the company from a standalone solution developer into a comprehensive security service provider, adding domestic distribution rights for global vendors such as Palo Alto Networks and CyberArk. The expanded portfolio now covers high-growth areas including AI infrastructure security and cloud workload security. Should the AI infrastructure business synergies at C Platform gain traction, the pace of consolidated margin improvement could accelerate."
+   }
+  },
+  {
+   "title": {
+    "ko": "아이티센그룹 내 보안 허브로서의 교차 판매 기회",
+    "en": "Cross-Selling Opportunities as ITCEN Group's Dedicated Security Hub"
+   },
+   "body": {
+    "ko": "아이티센그룹은 아이티센엔텍·아이티센씨티에스·아이티센클로잇 등 대형 IT서비스 계열사를 거느리고 있으며, 아이티센피엔에스는 그룹 전체의 보안 역량을 전담한다. 그룹 IT사업 부문이 전년 대비 10% 이상 성장한 것으로 알려진 가운데, 계열사 간 협업을 KPI로 설정하는 그룹 전략이 내부 교차 매출 기회를 제공한다. 과천 아이티센타워 신사옥 입주로 계열사 간 물리적·문화적 통합이 강화된 점도 시너지 실현 가능성을 높인다.",
+    "en": "ITCEN Group encompasses large IT service affiliates—ITCEN ENTEC, ITCEN CTS, and ITCEN Cloit—with ITCEN PNS serving as the group-wide security competency center. Group IT business reportedly grew over 10% year-on-year, and a corporate strategy that designates inter-affiliate collaboration as a KPI generates internal cross-selling opportunities. The co-location of group entities at the new ITCEN Tower headquarters in Gwacheon further strengthens integration and synergy realization prospects."
+   }
+  }
+ ],
+ "bear": [
+  {
+   "title": {
+    "ko": "지속적 영업손실과 2026Q1 손실 재확대",
+    "en": "Persistent Operating Losses and Q1 2026 Loss Widening"
+   },
+   "body": {
+    "ko": "2023년 이후 매출이 약 17배 팽창했음에도 영업흑자 분기는 2025Q2 단 한 차례에 그쳤다. 2026Q1에는 영업손실 -8억·지배주주 귀속 순손실 -23억으로 전 분기 대비 손실이 확대됐으며, 매출도 역성장했다. 별도 기준 자체 보안 소프트웨어 사업의 분기 매출 규모가 제한적이어서, 실질 이익 전환은 씨플랫폼의 마진 개선에 크게 의존하는 구조다.",
+    "en": "Despite roughly 17-fold revenue expansion since 2023, only a single quarter (Q2 2025) produced an operating profit. Q1 2026 saw operating loss widen to -KRW 836mn and controlling-interest net loss reach -KRW 2.3bn alongside a sequential revenue decline. The parent's standalone security software revenue remains modest on a quarterly basis, meaning a genuine profitability inflection depends heavily on margin improvement at C Platform."
+   }
+  },
+  {
+   "title": {
+    "ko": "씨플랫폼발 고레버리지와 재무 건전성 리스크",
+    "en": "C Platform-Driven High Leverage and Financial Health Risk"
+   },
+   "body": {
+    "ko": "2025년 연결 부채비율 681%는 씨플랫폼의 IT솔루션 총판 구조에 내재된 대규모 단기 차입 및 매입채무에서 비롯된다. 씨플랫폼의 2024년 결산 기준으로 자산 1,200억에 부채 1,106억으로 자본은 94억에 불과했다. 금리 환경 변화나 주요 거래처 신용 이슈 발생 시 현금흐름에 급격한 압박이 올 수 있으며, 모회사가 씨플랫폼에 25억 채무보증(최대 30억 한도)을 제공하고 있는 점도 연대 리스크로 작용한다.",
+    "en": "The 2025 consolidated debt-to-equity ratio of 681% stems from large short-term borrowings and trade payables inherent in C Platform's IT solution distribution model; C Platform's 2024 year-end balance sheet showed assets of KRW 120bn against liabilities of KRW 110.6bn, leaving equity of only KRW 9.4bn. Rising interest rates or credit issues at key counterparties could create acute cash flow pressure, and the parent's debt guarantee for C Platform (KRW 2.5bn in actual debt, up to KRW 3bn limit) adds contingent liability exposure."
+   }
+  },
+  {
+   "title": {
+    "ko": "소형주 유동성 제약과 성장 스토리 실현 불확실성",
+    "en": "Micro-Cap Liquidity Constraints and Growth Story Execution Risk"
+   },
+   "body": {
+    "ko": "시가총액 약 350억 원 수준의 소형주로서 기관·외국인 매수 접근성이 제한되며 주가 변동성이 클 수 있다. PQC·양자보안 시장은 정부 시범 사업 단계에 있어 실질적 상업화 및 수익 기여 시기는 불확실하다. 씨플랫폼의 IT솔루션 총판 사업은 대형 벤더와의 협력 조건 변화나 경쟁 총판사 등장에 따른 마진 압박 리스크가 상존한다.",
+    "en": "With a market capitalization of roughly KRW 35bn, the stock faces limited accessibility for institutional and foreign investors and elevated price volatility. The PQC/quantum security market remains at a government pilot stage, leaving the timeline for meaningful commercial revenues uncertain. C Platform's IT solution distribution business faces ongoing margin pressure risk from changes in vendor partnership terms and competition from rival distributors."
+   }
+  }
+ ],
+ "risks": [
+  {
+   "cat": {
+    "ko": "재무 리스크: 고레버리지 및 금융비용 부담",
+    "en": "Financial Risk: High Leverage and Finance Cost Burden"
+   },
+   "body": {
+    "ko": "씨플랫폼의 고레버리지 구조로 연결 부채비율이 681%에 달하며, 2025년 영업손실이 거의 손익분기 수준임에도 지배주주 귀속 순손실이 -45억에 이른 주된 원인은 금융비용이다. 금리 상승 또는 씨플랫폼 거래 금융기관의 여신 축소 발생 시 유동성 위기 가능성이 있다. 모회사의 씨플랫폼 채무보증은 잠재적 우발 채무를 내포한다.",
+    "en": "C Platform's high-leverage structure drives the consolidated debt-to-equity ratio to 681%, and finance charges are the primary reason the controlling-interest net loss reached -KRW 4.5bn despite near-breakeven operating results in 2025. A rise in interest rates or reduction in credit lines from C Platform's lending banks could trigger a liquidity squeeze. The parent's debt guarantee for C Platform represents contingent liability exposure."
+   }
+  },
+  {
+   "cat": {
+    "ko": "사업 리스크: PQC 상업화 지연 가능성",
+    "en": "Business Risk: PQC Commercialization Delay"
+   },
+   "body": {
+    "ko": "양자내성암호(PQC) 관련 매출은 현재 주로 파일럿·시범 사업 단계에 머물러 있으며, KpqC 표준 최종 확정 시기와 전 산업 확산 속도에 따라 수익화 시점이 지연될 수 있다. 경쟁사들도 동일한 NIST 표준을 적용 가능하여 차별적 기술 우위의 지속성이 도전받을 수 있다. 정부 예산 삭감이나 정책 우선순위 변화도 시범 사업 확대에 영향을 줄 수 있다.",
+    "en": "PQC-related revenues are currently concentrated in pilot and government demonstration projects, and the timing of meaningful monetization depends on when KpqC standards are finalized and how quickly adoption scales across industries. Competitors can apply the same NIST standards, challenging the durability of any technical differentiation. Government budget cuts or shifts in policy priorities could also impede pilot program expansion."
+   }
+  },
+  {
+   "cat": {
+    "ko": "구조적 리스크: 씨플랫폼 매출·마진 집중도",
+    "en": "Structural Risk: Revenue and Margin Concentration in C Platform"
+   },
+   "body": {
+    "ko": "연결 매출의 대부분이 씨플랫폼의 IT솔루션 유통 사업에서 발생하는 구조이며, 팔로알토네트웍스 등 주요 벤더와의 계약 조건 변경 또는 국내 총판권 조건 변화 시 매출·마진에 직접적 영향이 발생한다. 모회사의 자체 보안 소프트웨어 사업은 규모가 작아 씨플랫폼 의존도를 단기에 낮추기 어렵다. 씨플랫폼 경영 악화 시 연결 재무제표 전반에 미치는 영향이 클 수 있다.",
+    "en": "Consolidated revenues are heavily concentrated in C Platform's IT solution distribution operations, meaning any change in contractual terms or domestic distribution rights from key vendors such as Palo Alto Networks would directly impact revenues and margins. The parent's own security software business is too small to meaningfully reduce this concentration in the near term. Deterioration in C Platform's operations could have outsized effects on the consolidated financial statements."
+   }
+  }
+ ],
+ "checkpoints": [
+  {
+   "when": {
+    "ko": "2026년 8월 중순",
+    "en": "Mid-August 2026"
+   },
+   "what": {
+    "ko": "2026년 반기보고서(6월 말 기준) 발표 — 2026Q2 영업손익 흑자 재현 여부가 핵심. 전년 동기(2025Q2 영업이익 +15억)와의 비교를 통해 수익성 지속성과 씨플랫폼 매출·마진 추이를 점검.",
+    "en": "H1 2026 semi-annual report (ending June 30): key focus is whether Q2 2026 restores operating profitability. Comparison with Q2 2025 (+KRW 1.5bn operating profit) tests sustainability, alongside C Platform's revenue and margin trajectory."
+   }
+  },
+  {
+   "when": {
+    "ko": "2026년 하반기 수시",
+    "en": "H2 2026 (ongoing)"
+   },
+   "what": {
+    "ko": "KpqC(한국형 양자내성암호) 표준 알고리즘 최종 확정 시기 및 금융·공공 분야 PQC 시범 사업 수주 공시 여부. PQC 솔루션이 파일럿을 넘어 반복 매출로 이어지는지가 중장기 사업가치 변수다.",
+    "en": "Finalization timing of KpqC standard algorithms and any PQC project award disclosures in financial and public sector pilots. Whether PQC solutions progress beyond pilot stage into recurring commercial revenues is a medium-to-long-term business value driver."
+   }
+  },
+  {
+   "when": {
+    "ko": "2026년 11월 중순",
+    "en": "Mid-November 2026"
+   },
+   "what": {
+    "ko": "2026년 3분기 분기보고서 발표 — 전년 동기(2025Q3 영업손실 -3억)와 비교해 개선 여부 확인. 연결 부채비율의 점진적 변화와 씨플랫폼 레버리지 구조 개선 여부도 동시 점검.",
+    "en": "Q3 2026 quarterly report: comparison with Q3 2025 (operating loss -KRW 310mn) to gauge profitability trajectory. Also monitor whether the consolidated debt-to-equity ratio shows gradual improvement, signaling C Platform's deleveraging progress."
+   }
+  },
+  {
+   "when": {
+    "ko": "2026년 수시 공시",
+    "en": "Ad-hoc Disclosures, 2026"
+   },
+   "what": {
+    "ko": "팔로알토네트웍스·사이버아크 등 주요 벤더와의 총판 계약 갱신·확장 공시, 씨플랫폼 관련 추가 채무보증 결정 여부, 양자내성암호 관련 정부 과제 수주 공시를 수시로 모니터링.",
+    "en": "Monitor ad-hoc disclosures for renewal or expansion of distribution agreements with key vendors (Palo Alto Networks, CyberArk), any additional debt guarantee decisions related to C Platform, and government PQC project award announcements."
+   }
+  }
+ ],
+ "verdict": {
+  "body": {
+   "ko": "아이티센피엔에스는 구 시큐센에서 아이티센그룹의 보안 전문 계열사로 탈바꿈하는 전환기에 있으며, 씨플랫폼 연결 편입으로 매출 규모는 3년간 약 17배 팽창했다. 핵심 강점은 NIST 표준 기반 PQC 솔루션의 실제 금융망 적용 레퍼런스와 팔로알토네트웍스·사이버아크 등 글로벌 벤더 총판을 통한 포트폴리오 다양성이다. 그러나 영업흑자는 2025년 2분기 단 한 차례에 그쳤고, 2026Q1에도 손실이 다시 확대됐으며, 연결 부채비율 681%는 금융비용을 통해 영업 수준의 성과를 잠식하는 구조를 지속시키고 있다. 씨플랫폼 의존도가 높은 연결 구조에서 이익 전환의 열쇠는 씨플랫폼의 마진 개선과 레버리지 축소 속도에 달려 있다. 2026년 하반기 반기보고서에서의 영업흑자 재현 여부, KpqC 표준 확정에 따른 PQC 사업 가시화, 씨플랫폼 레버리지 개선 추이가 향후 사업 진전을 가늠하는 핵심 모니터링 포인트다.",
+   "en": "ITCEN PNS is at a pivotal transformation juncture, having evolved from Secucen into ITCEN Group's dedicated security arm, with consolidated revenues expanding roughly 17-fold over three years through the C Platform consolidation. Core strengths lie in live financial-network PQC deployments based on NIST standards and a broadened portfolio via global vendor distribution agreements. However, operating profitability was achieved only once (Q2 2025), losses widened again in Q1 2026, and the 681% debt-to-equity ratio ensures that finance charges continue to erode near-breakeven operating performance. In a consolidated structure heavily dependent on C Platform, the key to earnings inflection lies in C Platform's margin improvement and deleveraging pace. Whether the H1 2026 semi-annual report restores an operating profit, the pace of PQC revenue materialization following KpqC standard finalization, and C Platform's leverage trajectory are the three central monitoring points for assessing the company's forward progress."
+  }
+ },
+ "sources": [
+  "https://m.irgo.co.kr/IR-COMP/232830/%EC%8B%9C%ED%81%90%EC%84%BC-IR-ROOM",
+  "https://kind.krx.co.kr/external/2026/05/14/001104/20260514002408/11013.htm",
+  "https://news.infostock.co.kr/a",
+  "https://goinsider.kr/stock/00186559",
+  "https://m.irgo.co.kr/IR-COMP/124500/-IR-PAGE",
+  "https://file.alphasquare.co.kr/media/pdfs/market-report/%EC%95%84%EC%9D%B4%ED%8B%B0%EC%84%BC%EC%97%94%ED%85%8D1Q2620260521%EC%9C%A0%EC%A7%84%ED%88%AC%EC%9E%90%EC%A6%9D%EA%B6%8C.",
+  "https://www.etnews.com/20260305000149",
+  "https://itcen.com/",
+  "https://m.saramin.co.kr/job-search/company-info-view?csn=elMvWHE2V1pBVFNxYVhDRWgxZzBrdz09",
+  "https://itcenentec.com/",
+  "https://www.cplatform.co.kr/bbs/board.php?bo_table=notice&wr_id=43&sca=%EB%B3%B4%EB%8F%84%EC%9E%90%EB%A3%8C",
+  "https://v.daum.net/v/9s2cSIEQgq",
+  "https://www.mt.co.kr/tech/2025/04/14/2025041406542370380",
+  "https://m.jobkorea.co.kr/company/45043562/Recruit",
+  "https://itcencts.com/Introduce/about",
+  "https://www.bloter.net/news/articleView.html?idxno=625699",
+  "https://itcenglobal.com/",
+  "https://byline.network/2025/10/1-1362/"
+ ],
+ "v": 2,
+ "model": "claude-sonnet-4-6",
+ "ticker": "232830",
+ "name": "아이티센피엔에스",
+ "name_en": "ITCENPNS CO.,LTD.",
+ "sector": "IT·소프트웨어",
+ "categories": [
+  "IT·소프트웨어"
+ ],
+ "market": "코스닥",
+ "reportDate": "2026-06-19",
+ "reportTs": "2026-06-19 04:07",
+ "dataDate": "20260618",
+ "quant": {
+  "asOf": "2026-06-18",
+  "fs_basis": "연결(CFS) · DART 공시 확정치 · 지배주주 기준 순이익",
+  "annual": [
+   {
+    "year": 2025,
+    "rev": 269551291750,
+    "op": -302711455,
+    "np": -4594086807,
+    "np_owner": -4549430613,
+    "equity": 26006165423,
+    "equity_owner": 15900089974,
+    "liab": 177142007289,
+    "cfo": 11462394856,
+    "eps_basic": -370,
+    "opm": -0.1,
+    "roe": -28.6,
+    "debt_ratio": 681.2
+   },
+   {
+    "year": 2024,
+    "rev": 104423115134,
+    "op": -1569770960,
+    "np": -2515762751,
+    "np_owner": -991856,
+    "equity": 11127870768,
+    "equity_owner": 10873121275,
+    "liab": 135118349124,
+    "cfo": 191740909,
+    "eps_basic": -215,
+    "opm": -1.5,
+    "roe": -0.0,
+    "debt_ratio": 1214.2
+   },
+   {
+    "year": 2023,
+    "rev": 16219150218,
+    "op": -1283047422,
+    "np": -958968643,
+    "np_owner": -958968643,
+    "equity": 13154432361,
+    "equity_owner": 13154432361,
+    "liab": 7609283308,
+    "cfo": -2575912496,
+    "eps_basic": -91,
+    "opm": -7.9,
+    "roe": -7.3,
+    "debt_ratio": 57.8
+   }
+  ],
+  "quarterly": [
+   {
+    "q": "2025Q1",
+    "rev": 55866558654,
+    "op": -1128201122,
+    "np_owner": -2053316326
+   },
+   {
+    "q": "2025Q2",
+    "rev": 76841769705,
+    "op": 1524204718,
+    "np_owner": 877074514
+   },
+   {
+    "q": "2025Q3",
+    "rev": 75628219164,
+    "op": -310443357,
+    "np_owner": -1726080887
+   },
+   {
+    "q": "2025Q4",
+    "rev": 61214744227,
+    "op": -388271694,
+    "np_owner": -1647107914
+   },
+   {
+    "q": "2026Q1",
+    "rev": 53878239170,
+    "op": -836094755,
+    "np_owner": -2263510766
+   }
+  ],
+  "valuation": {
+   "price": 2105,
+   "mcap": 0.0348,
+   "shares": 16533726,
+   "total_shares": 16533726,
+   "wavg_shares": 16521976,
+   "per": null,
+   "eps": -332,
+   "pbr": 2.55,
+   "bps": 825,
+   "roe_ttm": -42.4,
+   "ttm_window": "2025Q2~2026Q1",
+   "ttm_np_owner": -4759625053,
+   "pbr_krx": 2.19,
+   "bps_krx": 962.0,
+   "basis": "PER·EPS·PBR·BPS 모두 자체 산출(네이버·토스와 동일 방식) · 배당은 DART 공시 주당현금배당금(보완:KRX) ÷ 현재가",
+   "dps": 0.0,
+   "div": 0.0
+  }
+ }
+}

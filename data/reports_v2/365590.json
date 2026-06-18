@@ -1,0 +1,356 @@
+{
+ "title": {
+  "ko": "기술 검증 완료, 양산 전환이 생존의 분기점",
+  "en": "Technical Validation Complete — Mass Production the Survival Inflection Point"
+ },
+ "lead": {
+  "ko": "하이딥은 배터리·센서 필름 없는 터치·스타일러스 통합 IC라는 독자 기술을 보유하고 있으나, 상장 이후 4년 연속 영업손실이 누적되고 2026년 1분기 매출이 사실상 소멸 수준으로 떨어지면서 양산 모델 확보가 사업 지속 가능성의 핵심 분기점으로 부각되고 있다.",
+  "en": "HiDeep possesses proprietary battery-free, sensor-film-free touch-stylus integrated IC technology, but four consecutive years of operating losses since listing and near-zero Q1 2026 revenue have elevated securing a mass-production model to a critical business continuity inflection point."
+ },
+ "keypoints": [
+  {
+   "ko": "터치·스타일러스 통합 솔루션이 글로벌 고객사 핵심 성능 검증을 완료했으나, 양산 모델 확정까지 시간 소요로 2026년 1분기 매출이 약 2,193만원으로 사실상 소멸",
+   "en": "The integrated touch-stylus solution has cleared core performance evaluations at major global customers, yet pending mass-production model confirmation drove Q1 2026 revenue to approximately KRW 21.9 million — effectively zero"
+  },
+  {
+   "ko": "2022년 상장 당시 제시한 2025년 매출 예측치(3,834억원) 대비 실제 매출(약 17.7억원)의 괴리율이 99.5%를 초과, 스타일러스 양산 매출이 3년 연속 발생하지 않아 IPO 공약과의 괴리가 심각",
+   "en": "The gap between the 2022 IPO-projected 2025 revenue of KRW 383.4 billion and actual KRW 1.77 billion exceeded 99.5%, with stylus mass-production revenue failing to materialize for three consecutive years"
+  },
+  {
+   "ko": "2025년 부채비율 461.8%로 전년(144.2%) 대비 급등, 2026년 1월 5대1 무상감자(80%)·6월 제3자배정 유상증자(약 65억원 조달)로 재무 압박 반복",
+   "en": "Debt ratio surged to 461.8% in 2025 from 144.2% in 2024; a 5-for-1 reverse split in January 2026 and a ~KRW 6.5 billion third-party capital increase in June 2026 reflect recurring financial strain"
+  },
+  {
+   "ko": "온디바이스 AI 확산이 스마트폰 OEM의 원가 절감 요구를 높이는 가운데, 센서 필름 제거·배터리 없는 스타일러스 기술은 구조적 수요 흐름과 방향성이 일치",
+   "en": "As on-device AI proliferation intensifies OEM cost-reduction demands, HiDeep's sensor-film-free and battery-free stylus technologies are directionally aligned with structural industry trends"
+  },
+  {
+   "ko": "회사는 2026년 중 주요 고객사로부터 양산 모델 확보를 공식 목표로 제시했으나, 과거 매년 1~2년씩 일정이 지연돼 온 패턴이 존재해 신뢰 형성이 쉽지 않은 상황",
+   "en": "The company officially targets securing a mass-production model within 2026, but annual schedule slippages of one to two years since 2022 create credibility challenges for this target"
+  }
+ ],
+ "business": {
+  "ko": "하이딥은 2010년 4월 설립된 팹리스 반도체 기업으로, 스마트폰·태블릿·웨어러블 기기용 휴먼-머신 인터페이스(HMI) 솔루션을 개발·공급한다. 핵심 제품은 2D/3D 포스터치 컨트롤러 IC, 압력 레벨 감지 정전식 센서, 그리고 터치와 스타일러스를 하나의 SoC에 통합한 차세대 컨트롤러이다. 하드웨어·소프트웨어·알고리즘을 아우르는 '토탈 솔루션' 체계를 구축하고 있으며, 국내외 808개 특허를 보유해 기술 방어선을 형성하고 있다. 회사는 2015년 애플보다 앞서 스마트폰에서 압력을 인식하는 3D 터치 기술을 상용화한 바 있으며, 삼성디스플레이 등과 On-cell Flexible OLED 디스플레이용 차세대 스타일러스 기술을 공동 개발해 온 것으로 알려졌다. 최근 매출 구조는 용역매출(57.01%)이 가장 큰 비중을 차지하고, 카지노 디스플레이용 터치 IC(33.33%)가 뒤를 이으며, 모바일 기기용 스타일러스 양산 매출은 아직 발생하지 않고 있다. 주요 잠재 고객군은 글로벌 스마트폰·태블릿 OEM이며, 삼성전자·중국 스마트폰 제조사를 핵심 타겟으로 협의 중이다. 경쟁 구도는 삼성·애플 등 세트사의 자체 내재화 움직임, Wacom·Synaptics 등 글로벌 터치 IC 업체와의 경쟁이 복합적으로 작용하고 있어 독립 팹리스로서의 입지가 쉽지 않은 환경이다.",
+  "en": "HiDeep, founded in April 2010, is a fabless semiconductor company developing and supplying human-machine interface (HMI) solutions for smartphones, tablets, and wearable devices. Core products include 2D/3D force-touch controller ICs, capacitive pressure-sensing sensors, and a next-generation SoC integrating touch and stylus functions in a single chip. The company has built a total solution framework spanning hardware, software, and algorithms, supported by 808 domestic and international patents. HiDeep commercialized 3D force-touch recognition ahead of Apple in 2015, and is reported to have co-developed next-generation stylus technology for On-cell Flexible OLED displays alongside Samsung Display. The recent revenue mix is led by service revenue (57.01%), followed by touch ICs for casino displays (33.33%), while mass-production stylus revenue for mobile devices has yet to materialize. Primary target customers are global smartphone and tablet OEMs, with Samsung Electronics and Chinese smartphone manufacturers as key negotiation targets. The competitive environment features accelerating in-house integration by major OEMs such as Samsung and Apple, and rivalry from global touch IC players including Wacom and Synaptics, making independent fabless positioning increasingly challenging."
+ },
+ "earnings": {
+  "ko": "하이딥의 연간 매출은 2022년 약 181억원에서 2023년 약 105억원, 2024년 약 59억원, 2025년 약 17.7억원으로 4년 연속 하락하며 스타일러스 양산 지연이 주된 원인임을 확인시켜 준다. 영업손실은 2022년 약 -23억원(영업손실률 -12.5%)에서 2023년 약 -86억원(-82.2%), 2024년 약 -91억원(-154.8%), 2025년 약 -117억원(-664.1%)으로 확대됐으며, 고정 R&D 비용이 매출 급감 속에도 유지된 것이 구조적 원인이다. 분기 추이를 보면 2025년 1분기 매출 약 10.2억원에서 2분기 약 3.4억원, 3분기 약 1.9억원, 4분기 약 2.1억원으로 추락했고, 특히 4분기 영업손실은 약 -49.2억원으로 연간 합산의 약 42%가 4분기에 집중됐다. 2026년 1분기 매출은 약 2,193만원, 영업손실은 약 -28.2억원으로 사실상 수익 창출이 중단된 상태에 가깝다. 지배주주 귀속 순손실은 2025년 약 -148억원에 달해 자본을 빠르게 잠식하고 있으며, 자본총계는 2022년 약 182억원에서 2025년 약 22억원으로 4년 만에 88% 감소했다. 영업현금흐름 역시 약 -38억원(2022)에서 -71억원(2025)으로 악화됐으며, 외부 자금 조달 없이는 운영 지속이 불가능한 구조다. 부채비율이 2024년 144.2%에서 2025년 461.8%로 급등한 것은 손실에 따른 자본 잠식과 차입 의존도 증가를 복합적으로 반영한다.",
+  "en": "HiDeep's annual revenue declined for four consecutive years: approximately KRW 18.1 billion (2022), KRW 10.5 billion (2023), KRW 5.9 billion (2024), and KRW 1.77 billion (2025), consistently confirming stylus mass-production delays as the primary driver. Operating losses widened from approximately KRW -2.3 billion (OPM -12.5%) in 2022, to KRW -8.6 billion (-82.2%) in 2023, KRW -9.1 billion (-154.8%) in 2024, and KRW -11.7 billion (-664.1%) in 2025, as the fixed R&D cost base proved resilient to the revenue collapse. Quarterly, 2025 Q1 revenue of ~KRW 1.0 billion fell to ~KRW 342 million in Q2, ~KRW 193 million in Q3, and ~KRW 213 million in Q4; Q4 alone logged an operating loss of approximately KRW -4.9 billion, roughly 42% of the full-year total. Q1 2026 revenue of approximately KRW 21.9 million, with an operating loss of ~KRW -2.8 billion, signals near-complete cessation of commercial activity. Net losses attributable to controlling shareholders reached approximately KRW -14.8 billion in 2025, rapidly eroding equity from ~KRW 18.2 billion in 2022 to ~KRW 2.2 billion — an 88% decline over four years. Operating cash flow deteriorated from approximately KRW -3.8 billion in 2022 to KRW -7.1 billion in 2025, making external financing structurally necessary. The debt ratio's surge from 144.2% (2024) to 461.8% (2025) reflects both cumulative equity erosion from losses and increasing reliance on external borrowings."
+ },
+ "industry": {
+  "ko": "하이딥이 속한 터치 IC 및 스타일러스 솔루션 시장은 온디바이스 AI 확산과 스마트폰 폼팩터 혁신(폴더블·울트라슬림)에 따른 구조적 수요를 배경으로 한다. 시장조사업체들은 온디바이스 AI 시장이 연평균 약 25% 성장할 것으로 전망하고 있으며, AI PC 출하 비중도 올해 59%까지 확대될 것으로 예상된다. AI 기능 강화로 스마트폰 제조사들의 원가 절감 압박이 증가하는 가운데 배터리·센서 필름이 불필요한 통합 솔루션의 경제성이 부각되고 있다. 삼성 갤럭시S·Z폴드·갤럭시탭 등 고급 라인업에서 스타일러스(S펜) 수요는 꾸준하며, 애플펜슬도 태블릿·노트북 시장에서 성장세를 유지하고 있다. 다만 삼성(디지타이저 내장·배터리 없음)과 애플(배터리 탑재·디지타이저 불필요)의 비호환 표준 구조는 지속돼, 크로스-표준 솔루션의 잠재 수요는 존재하지만 실제 채택 리드타임이 긴 편이다. 터치 IC 시장은 대형 OEM의 내재화 가속화로 독립 팹리스의 입지가 좁아지는 구조적 도전에 직면해 있으며, 이 점은 하이딥에 있어 핵심 경쟁 위협이다. 글로벌 반도체 시장은 2024년 약 0.6조 달러에서 2030년 1조 달러를 넘어설 전망이나, 수혜는 AI 가속기·메모리 중심으로 집중되는 양상이다.",
+  "en": "HiDeep's touch IC and stylus solution market is underpinned by structural demand from on-device AI proliferation and smartphone form-factor innovation such as foldables and ultra-slim designs. Market research firms project on-device AI to grow at approximately 25% CAGR, and AI PC shipment share is expected to reach 59% this year. As AI feature integration intensifies OEM cost pressures, the economics of eliminating batteries and sensor films become increasingly compelling. Demand for stylus input in premium lineups — Samsung Galaxy S, Z Fold, Galaxy Tab — remains steady, and Apple Pencil continues expanding in tablets and laptops. However, Samsung's digitizer-embedded, battery-free standard and Apple's battery-powered, digitizer-free standard remain incompatible, creating latent demand for cross-standard solutions while extending adoption lead times. The touch IC market faces structural headwinds from accelerating OEM in-house integration, narrowing the addressable market for independent fabless players — a key competitive threat to HiDeep. The global semiconductor market is projected to grow from approximately USD 0.6 trillion in 2024 to over USD 1 trillion by 2030, though benefits are concentrated in AI accelerators and memory."
+ },
+ "outlook": {
+  "ko": "하이딥은 2026년 내 주요 글로벌 고객사로부터 터치·스타일러스 통합 솔루션을 탑재한 양산 모델 확보를 공식 목표로 제시하고 있으며, 다수의 글로벌 고객사와 협의 중임을 밝히고 있다. 회사 측은 통합 솔루션이 이미 글로벌 메이저 고객사의 핵심 성능 평가와 검증을 마쳤다고 설명한다. 매그나칩반도체와의 모바일·소형가전용 차세대 OLED 디스플레이 개발 파트너십은 기술 생태계 확장의 단초로 평가된다. 2026년 6월 18일 납입을 완료한 약 65억원 규모의 제3자배정 유상증자(운영자금 약 30.9억원, 채무상환자금 35억원)를 통해 단기 유동성을 확보했으며, 신주 580만8766주는 2026년 7월 9일 코스닥 상장 예정이다. 대표이사 고범규가 기존 대여금 28억원을 출자전환함으로써 부채 구조가 일부 개선됐다. 다만 양산 일정은 2022년 이후 매년 1~2년씩 지연돼 온 전력이 있어, 2026년 목표 실현은 고객사의 양산 의사결정에 크게 의존하며 일정이 추가로 밀릴 가능성을 배제할 수 없다. 향후 핵심 모멘텀은 ① 첫 스타일러스 양산 모델 공개, ② 2026년 하반기 매출 가시화, ③ 추가 자금 조달 필요 여부의 세 가지로 집약된다.",
+  "en": "HiDeep publicly targets securing a mass-production model embedding its integrated touch-stylus solution from a major global customer within 2026, and reports ongoing negotiations with multiple global OEMs. The company states the integrated solution has already cleared core performance evaluations at major global customers. A development partnership with MagnaChip Semiconductor for next-generation mobile and small-appliance OLED displays offers a potential pathway for technology ecosystem expansion. The third-party capital increase of approximately KRW 6.5 billion — KRW 3.09 billion in operating funds and KRW 3.5 billion in debt repayment — was paid in on June 18, 2026, and the 5,808,766 new shares are scheduled for KOSDAQ listing on July 9, 2026. CEO Ko Bum-gyu's conversion of KRW 2.8 billion in existing loans into equity partially improved the liability structure. However, mass-production schedules have slipped by one to two years each cycle since 2022, making the 2026 target highly dependent on customer procurement decisions and leaving additional delay as a material scenario. Key forward catalysts are: (1) announcement of the first stylus mass-production model, (2) revenue recovery visible in H2 2026, and (3) the extent and terms of further financing needs."
+ },
+ "valuation_comment": {
+  "ko": "하이딥은 4년 연속 영업·순손실 구조여서 이익 배수(PER) 기반의 평가는 현 단계에서 적용이 어렵다. 주당순자산(BPS)은 무상감자와 손실 누적으로 72원 수준으로 극도로 낮아졌으며, 현재 주가는 이 장부가치 대비 수십 배의 프리미엄 영역에서 형성되어 있다 — 이는 시장이 현재의 이익 창출 능력보다 미래 양산 성공 가능성을 주가에 반영하는 구조임을 시사한다. 주당순손실(EPS)은 -570원으로, 주가 수준 대비 큰 폭의 적자가 지속되고 있으며, 무상감자·유상증자의 반복이 주당 지표를 지속적으로 희석시키는 요인이 된다. 배당은 공시상 무배(DPS 0원)이고 영업현금흐름도 지속 마이너스 상태여서 배당 재개 시점을 현 단계에서 가늠하기 어렵다. 양산 매출 가시화 전까지는 기술 기대감이 밸류에이션의 거의 전부를 설명하는 구조이며, 그 기대가 얼마나 신속히 수익으로 전환되느냐가 주가 결정의 핵심 변수가 될 것이다.",
+  "en": "With four consecutive years of operating and net losses, earnings-based (PER) valuation is not applicable at this stage. Book value per share (BPS) has fallen to KRW 72 following the reverse split and cumulative losses, and the current share price trades at a substantial multiple of this book value — implying the market is pricing in a future mass-production success scenario rather than current earnings power. EPS stands at -KRW 570, reflecting persistent per-share losses well in excess of book support, while recurring reverse splits and equity issuances continue to dilute per-share metrics. The company pays zero dividends (DPS: KRW 0), and consistently negative free cash flow makes any near-term dividend resumption difficult to anticipate. Until mass-production revenue becomes visible, technology expectation value accounts for virtually the entire valuation basis, and the pace at which that expectation converts into actual sales will be the primary driver of share price."
+ },
+ "bull": [
+  {
+   "title": {
+    "ko": "세계 유일 수준의 터치·스타일러스 통합 기술 — 성능 검증 완료",
+    "en": "Globally Differentiated Touch-Stylus Integration Technology — Performance Validation Achieved"
+   },
+   "body": {
+    "ko": "배터리와 센서 필름 없이 터치와 스타일러스를 하나의 IC로 통합한 솔루션은 세계적으로 유사 사례가 드문 독자 기술이다. 회사 측에 따르면 이 통합 솔루션은 이미 글로벌 메이저 고객사의 핵심 성능 평가를 통과한 상태로, 기술 실현 가능성 자체는 확인됐다. 808개의 국내외 특허가 기술 방어선을 형성하고 있어, 양산 채택 시 진입 장벽 역할을 기대할 수 있다.",
+    "en": "A solution integrating touch and stylus in a single IC without battery or sensor film represents a globally rare proprietary technology. According to the company, this integrated solution has already passed core performance evaluations at major global customers, confirming technical feasibility. With 808 domestic and international patents underpinning a defensive moat, adoption in mass production could create meaningful barriers to competitive entry."
+   }
+  },
+  {
+   "title": {
+    "ko": "온디바이스 AI 확산이 핵심 기술의 구조적 수요와 맞닿아",
+    "en": "On-Device AI Expansion Structurally Aligned with Core Technology Value"
+   },
+   "body": {
+    "ko": "온디바이스 AI 탑재가 확대되면서 스마트폰 OEM은 부품 수를 줄이고 원가를 낮출 유인이 커지고 있으며, 이 흐름은 센서 필름 제거 기술의 경제적 가치를 부각시킨다. 시장조사업체들은 온디바이스 AI 시장이 연평균 약 25% 성장할 것으로 전망하는 가운데, AI 스마트폰에서 스타일러스 활용 수요도 동반 성장하는 추세다. 기술 방향성과 전방 시장 수요가 일치하는 구간에 회사가 위치하고 있다는 점은 중장기 관점에서 긍정적 요소다.",
+    "en": "As on-device AI integration accelerates, smartphone OEMs face mounting incentives to reduce component counts and lower costs, highlighting the economic value of sensor-film elimination. Market research firms project on-device AI to grow at approximately 25% CAGR, and stylus usage in AI smartphones is trending upward in parallel. The alignment between HiDeep's technology direction and end-market demand represents a constructive structural backdrop over the medium to long term."
+   }
+  },
+  {
+   "title": {
+    "ko": "2026년 6월 유상증자로 단기 유동성 확보 및 부채 구조 일부 개선",
+    "en": "June 2026 Capital Increase Secures Near-Term Liquidity and Partially Improves Debt Structure"
+   },
+   "body": {
+    "ko": "2026년 6월 18일 납입이 완료된 약 65억원 규모 제3자배정 유상증자를 통해 운영자금과 최대주주 대여금 채무 상환을 동시에 해결했다. 최대주주 고범규 대표가 기존 대여금 28억원을 주식으로 출자전환함으로써 단기 부채가 자본으로 전환되어 재무구조가 일부 개선됐다. 확보된 운영자금은 기술 개발 지속과 고객사 협의 기간의 유동성 완충 역할을 할 수 있다.",
+    "en": "The approximately KRW 6.5 billion third-party allotment capital increase, with payment completed June 18, 2026, simultaneously resolved operating funding needs and repaid major shareholder loans. CEO Ko Bum-gyu's conversion of KRW 2.8 billion in loans into equity transferred short-term liabilities to capital, partially improving the balance sheet structure. The fresh operating capital can serve as a liquidity buffer during ongoing customer negotiations and technology development."
+   }
+  }
+ ],
+ "bear": [
+  {
+   "title": {
+    "ko": "4년 연속 양산 미달·IPO 공약 대비 99%+ 괴리 — 일정 지연 패턴 고착",
+    "en": "Four Years of Mass-Production Failures — Entrenched Pattern of 99%+ IPO Projection Miss"
+   },
+   "body": {
+    "ko": "2022년 상장 당시 투자설명서에서 제시한 2025년 매출 예측치(3,834억원) 대비 실제 매출(약 17.7억원)의 괴리율이 99.54%에 달하며, 스타일러스 양산 매출이 3년 연속 발생하지 않았다. 양산 일정 지연이 매년 반복되는 패턴이 이미 굳어진 상태로, '2026년 내 양산 모델 확보'라는 목표에 대해 시장이 신뢰를 형성하기 어려운 상황이다. 2026년 1분기 매출이 약 2,193만원으로 사실상 0에 가까운 수준은 기존 매출 기반마저 소실됐음을 의미한다.",
+    "en": "The gap between the IPO-projected 2025 revenue of KRW 383.4 billion and the actual KRW 1.77 billion stood at 99.54%, with stylus mass-production revenue failing for three consecutive years. An entrenched pattern of annual schedule slippage makes it difficult for the market to build confidence in the company's '2026 mass-production model' target. Q1 2026 revenue of approximately KRW 21.9 million — effectively zero — indicates the near-complete loss of even legacy revenue streams."
+   }
+  },
+  {
+   "title": {
+    "ko": "빠른 자본 잠식·부채비율 급등으로 재무 지속 가능성 위협",
+    "en": "Rapid Equity Erosion and Surging Debt Ratio Threaten Financial Sustainability"
+   },
+   "body": {
+    "ko": "자본총계가 2022년 약 182억원에서 2025년 약 22억원으로 4년 만에 약 88% 감소했고, 부채비율은 같은 기간 109.5%에서 461.8%로 급등했다. 영업현금흐름이 약 -71억원(2025년)으로 지속 마이너스인 상태에서 자체 자금 조달 능력이 사실상 없으며, 무상감자와 유상증자 반복에 따른 주주 가치 희석이 지속될 수 있다. 2025년 4분기에만 영업손실 약 -49.2억원이 집중된 것은 구조적 비용 악화나 추가 일회성 요인이 작용했을 가능성을 시사한다.",
+    "en": "Consolidated equity shrank by approximately 88% from KRW 18.2 billion in 2022 to KRW 2.2 billion in 2025, while the debt ratio surged from 109.5% to 461.8% over the same period. With operating cash flow at approximately KRW -7.1 billion in 2025, the company has virtually no organic funding capacity, and the recurrence of reverse splits and equity offerings subjects shareholders to persistent dilution. The concentration of approximately KRW -4.9 billion in operating losses in Q4 2025 alone suggests structural cost deterioration or additional one-time charges."
+   }
+  },
+  {
+   "title": {
+    "ko": "터치 IC 내재화 압력과 표준 분열로 독립 팹리스 입지 구조적으로 약화",
+    "en": "OEM In-Housing Pressure and Fragmented Standards Structurally Weaken Independent Fabless Position"
+   },
+   "body": {
+    "ko": "터치 IC 시장은 대형 OEM의 자체 내재화가 가속화되는 구조적 추세에 있으며, 삼성(S펜)과 애플(애플펜슬)이 각각 비호환 독자 규격을 유지해 크로스-표준 통합 솔루션의 채택 범위가 제한될 수 있다. 이종 표준 통합 수요가 현실화되려면 주요 OEM의 전략적 방향 전환이 선행돼야 하며, 이는 하이딥이 통제할 수 없는 변수다. 소규모 팹리스로서 대형 경쟁사 대비 고객 협상력과 양산 준비 역량이 상대적으로 열위에 있을 수 있다.",
+    "en": "The touch IC market faces structural headwinds from accelerating OEM in-house integration, and Samsung's (S Pen) and Apple's (Apple Pencil) divergent, incompatible proprietary standards limit the addressable scope for a cross-standard integrated solution. For cross-standard demand to materialize, a strategic pivot from major OEMs would be required — a variable outside HiDeep's control. As a small-scale fabless company, customer negotiating leverage and mass-production readiness may be structurally disadvantaged relative to larger incumbents."
+   }
+  }
+ ],
+ "risks": [
+  {
+   "cat": {
+    "ko": "유동성·추가 자금 조달 리스크",
+    "en": "Liquidity and Additional Funding Risk"
+   },
+   "body": {
+    "ko": "영업현금흐름이 4년 연속 마이너스를 기록하고 2026년 1분기 매출이 사실상 소멸한 가운데, 자체 운영자금 확보 능력은 극히 제한적이다. 추가 자금 조달(전환사채 발행, 유상증자 등) 필요 시 기존 주주의 지분 희석이 불가피하며, 조달 여건이 악화될 경우 사업 지속 자체가 어려워질 수 있다. 최근 유상증자가 최대주주 대여금의 출자전환을 포함하고 있어 특수관계인 의존도가 높다는 점도 외부 투자자 관점에서 유의해야 할 요소다.",
+    "en": "With four consecutive years of negative operating cash flow and near-zero Q1 2026 revenue, the company's self-funding capacity is extremely limited. Any further capital-raising — convertible bonds or equity offerings — would inevitably dilute existing shareholders, and deteriorating financing conditions could threaten business continuity. The recent capital increase included a conversion of related-party loans, indicating elevated dependence on major shareholders and related parties — a consideration for outside investors."
+   }
+  },
+  {
+   "cat": {
+    "ko": "양산 재지연 및 고객사 이탈 리스크",
+    "en": "Mass-Production Re-Delay and Customer Attrition Risk"
+   },
+   "body": {
+    "ko": "스타일러스 양산 매출은 2022년 상장 이후 3년 연속 발생하지 않았으며, 양산 일정 지연 패턴이 반복되고 있다. 고객사 내부의 모델 기획 변경, 경쟁 솔루션 채택, 또는 자체 개발 전환이 발생할 경우 기술 검증 성과가 매출로 이어지지 못할 수 있다. 양산 일정의 추가 지연은 현재의 현금 소진 속도를 감안할 때 재무적 임계 상황을 앞당기는 결과로 직결될 수 있다.",
+    "en": "Stylus mass-production revenue has failed to materialize for three consecutive years since the 2022 IPO, establishing a pattern of repeated delays. Changes in customer product roadmaps, adoption of competing solutions, or shifts to in-house development could prevent validated technology from translating into revenue. Further schedule slippage, given the current cash burn rate, could directly accelerate the onset of a financial critical juncture."
+   }
+  },
+  {
+   "cat": {
+    "ko": "기술 표준 분화 및 경쟁 심화 리스크",
+    "en": "Technology Standard Fragmentation and Competitive Intensification Risk"
+   },
+   "body": {
+    "ko": "글로벌 OEM들이 독자 스타일러스 표준을 강화할 경우, 하이딥의 크로스-표준 통합 솔루션의 시장 기회가 의미 있게 축소될 수 있다. 글로벌 경쟁사들의 특허 공세나 대응 특허 확보로 하이딥의 특허 포트폴리오 경쟁력이 약화될 가능성도 배제할 수 없다. 반도체 업계의 기술 사이클이 빠른 만큼, 장기간 사업화 지연이 지속될 경우 보유 기술의 상대적 경쟁 우위가 약화될 위험이 있다.",
+    "en": "If global OEMs further entrench proprietary stylus standards, the addressable market for HiDeep's cross-standard integrated solution could shrink materially. Aggressive patenting by global competitors or counter-IP challenges could weaken HiDeep's patent portfolio over time. Given the fast innovation cycle in semiconductors, prolonged commercialization delays risk eroding the company's relative technological competitive advantage."
+   }
+  }
+ ],
+ "checkpoints": [
+  {
+   "when": {
+    "ko": "2026년 7월 9일",
+    "en": "July 9, 2026"
+   },
+   "what": {
+    "ko": "제3자배정 신주(580만8766주) 코스닥 상장 예정일. 상장 이후 수급 변화와 최대주주 보호예수(1년) 기간 중 매도 제한 여부를 확인해야 한다.",
+    "en": "Expected KOSDAQ listing date for the 5,808,766 new shares from the third-party allotment. Monitor post-listing supply-demand dynamics and the one-year lock-up status of the major shareholder."
+   }
+  },
+  {
+   "when": {
+    "ko": "2026년 8월 중순 전후",
+    "en": "Around Mid-August 2026"
+   },
+   "what": {
+    "ko": "2026년 2분기(4~6월) 실적 공시 예정. 매출 회복 여부, 특히 스타일러스 관련 첫 양산 매출 발생 여부가 핵심 관찰 포인트이며, 영업손실 추이와 현금 잔액도 중요 지표다.",
+    "en": "Q2 2026 (April–June) earnings disclosure expected. Key watch item is whether revenue recovers, especially any initial stylus mass-production revenue; operating loss trajectory and cash balance are additional focal metrics."
+   }
+  },
+  {
+   "when": {
+    "ko": "2026년 하반기 중 수시 공시",
+    "en": "Ad-hoc Disclosures in H2 2026"
+   },
+   "what": {
+    "ko": "회사가 목표로 제시한 '2026년 중 주요 고객사 양산 모델 확보' 관련 공시 또는 보도 여부. 고객사명, 제품 출시 일정, 공급 규모가 핵심 확인 사항이다.",
+    "en": "Watch for any DART disclosure or news related to the company's stated goal of securing a mass-production model within 2026. Key details to track: customer identity, product launch schedule, and supply volumes."
+   }
+  },
+  {
+   "when": {
+    "ko": "2026년 11월 중순 전후",
+    "en": "Around Mid-November 2026"
+   },
+   "what": {
+    "ko": "2026년 3분기 실적 공시. 연간 양산 성공 여부를 판단하는 중간 검토 시점으로, 매출 회복세의 지속 여부 및 판관비·R&D 비용 구조 변화를 점검해야 한다.",
+    "en": "Q3 2026 earnings disclosure, serving as an intermediate checkpoint for assessing annual mass-production progress; monitor revenue recovery momentum and SG&A and R&D cost structure changes."
+   }
+  },
+  {
+   "when": {
+    "ko": "2026년 12월~2027년 1월",
+    "en": "December 2026 – January 2027"
+   },
+   "what": {
+    "ko": "추가 자금 조달 필요 여부 및 전환사채·유상증자 공시 가능성. 현재 현금 소진 속도를 감안할 때 추가 조달 이슈가 재부상할 수 있으며, 조달 방식과 조건이 주주 가치에 미치는 영향을 면밀히 점검해야 한다.",
+    "en": "Watch for potential disclosures of additional funding requirements — convertible bonds or equity offerings. Given the current cash burn rate, refinancing risk may re-emerge around this period; assess the terms and potential dilutive impact of any such actions."
+   }
+  }
+ ],
+ "verdict": {
+  "body": {
+   "ko": "하이딥은 배터리·센서 필름이 불필요한 터치·스타일러스 통합 IC라는 독자적 기술을 보유하고 있으며, 온디바이스 AI 확산이라는 구조적 트렌드와 기술 방향성이 일치한다는 점에서 잠재적 성장 시나리오가 존재한다. 그러나 2022년 상장 이후 4년 연속 영업·순손실이 누적됐고, 실제 매출이 IPO 예측치 대비 99%를 초과 괴리하는 등 기술 잠재력과 재무적 현실 사이의 거리가 매우 크다. 2026년 1분기 매출이 사실상 소멸 수준이고 부채비율이 461.8%에 달하는 상황에서, 양산 전환이 더 지연될 경우 재무 지속 가능성에 직접적 위협이 된다. 2026년 6월 유상증자로 단기 유동성을 확보했으나, 이는 양산 수익화가 이루어지지 않는 한 유사한 자금 조달이 반복될 가능성이 높은 미봉책의 성격을 지닌다. 투자자로서는 회사가 밝힌 '2026년 양산 모델 확보' 목표의 실현 여부를 가장 핵심적인 지표로 추적해야 하며, 이를 뒷받침하는 구체적인 공시(고객사·출시 일정·공급 규모)가 나오기 전까지는 기술 기대감과 재무 리스크 사이의 팽팽한 긴장 관계가 지속될 것이다.",
+   "en": "HiDeep possesses proprietary technology — a battery-free, sensor-film-free touch-stylus integrated IC — that is directionally aligned with the structural trend of on-device AI proliferation, making a potential growth scenario conceivable. However, the gap between technological potential and financial reality is substantial: four consecutive years of operating and net losses since listing, and actual revenues deviating more than 99% from IPO projections. With Q1 2026 revenue effectively at zero and a debt ratio of 461.8%, further delays in mass-production adoption pose a material threat to financial sustainability. The June 2026 equity offering secured short-term liquidity but is effectively a stopgap; similar capital actions are likely to recur absent a mass-production revenue breakthrough. The single most critical metric to monitor is whether the company's stated 2026 target of securing a mass-production model is achieved — until concrete disclosures emerge covering customer identity, launch schedule, and supply volumes, the tension between technology promise and financial risk will remain the defining characteristic of this investment case."
+  }
+ },
+ "sources": [
+  "https://comp.fnguide.com/SVO2/ASP/SVD_Main.asp?pGB=1&gicode=A365590&MenuYn=Y&ReportGB=D&NewMenuID=Y&stkGb=701",
+  "https://m.irgo.co.kr/IR-COMP/365590/%ED%95%98%EC%9D%B4%EB%94%A5-IR-PAGE",
+  "https://littlebproject.com/stock/365590/87/27278",
+  "https://www.valueline.co.kr/finance/mri/365590",
+  "https://www.digitaltoday.co.kr/news/articleView.html?idxno=673823",
+  "https://m.thinkpool.com/item/365590",
+  "https://comp.fnguide.com/SVO2/asp/SVD_Invest.asp?pGB=1&MenuYn=Y&ReportGB=D&NewMenuID=105&stkGb=701&gicode=A365590",
+  "https://www.investing.com/equities/nh-special-purpose-acquisition-18",
+  "https://www.magnachip.com/kr/%EB%A7%A4%EA%B7%B8%EB%82%98%EC%B9%A9-%ED%95%98%EC%9D%B4%EB%94%A5hideep%EC%82%AC%EC%99%80-%EB%AA%A8%EB%B0%94%EC%9D%BC-%EB%B0%8F-%EC%86%8C%ED%98%95%EA%B0%80%EC%A0%84%EC%9A%A9-%EC%B0%A8%EC%84%B8/",
+  "https://www.pinpointnews.co.kr/news/articleView.html?idxno=369182",
+  "https://ko.wikipedia.org/wiki/%ED%95%98%EC%9D%B4%EB%94%A5",
+  "https://zdnet.co.kr/view/?no=20260320123908",
+  "https://ssl.pstatic.net/imgstock/upload/research/company/1682637188775.pdf",
+  "http://www.dailyinvest.kr/news/articleView.html?idxno=55968",
+  "https://www.google.com/finance/quote/365590:KOSDAQ?hl=en",
+  "https://www.topstarnews.net/news/articleView.html?idxno=15903087",
+  "https://kr.investing.com/news/stock-market-news/article-1676977",
+  "https://www.pinpointnews.co.kr/news/articleView.html?idxno=387636"
+ ],
+ "v": 2,
+ "model": "claude-sonnet-4-6",
+ "ticker": "365590",
+ "name": "하이딥",
+ "name_en": "HiDeep Inc.",
+ "sector": "전자·부품",
+ "categories": [
+  "전자·부품"
+ ],
+ "market": "코스닥",
+ "reportDate": "2026-06-19",
+ "reportTs": "2026-06-19 04:07",
+ "dataDate": "20260618",
+ "quant": {
+  "asOf": "2026-06-18",
+  "fs_basis": "연결(CFS) · DART 공시 확정치 · 지배주주 기준 순이익",
+  "annual": [
+   {
+    "year": 2025,
+    "rev": 1766991674,
+    "op": -11733752112,
+    "np": -14801817193,
+    "np_owner": -14801817193,
+    "equity": 2235802722,
+    "equity_owner": 2235802722,
+    "liab": 10325140261,
+    "cfo": -7093537660,
+    "eps_basic": -484,
+    "opm": -664.1,
+    "roe": -662.0,
+    "debt_ratio": 461.8
+   },
+   {
+    "year": 2024,
+    "rev": 5889970051,
+    "op": -9120516576,
+    "np": -9436778843,
+    "np_owner": -9436778843,
+    "equity": 7521586351,
+    "equity_owner": 7521586351,
+    "liab": 10843414437,
+    "cfo": -3929553474,
+    "eps_basic": -66,
+    "opm": -154.8,
+    "roe": -125.5,
+    "debt_ratio": 144.2
+   },
+   {
+    "year": 2023,
+    "rev": 10483522724,
+    "op": -8614527090,
+    "np": -9377440990,
+    "np_owner": -9377440990,
+    "equity": 15401609147,
+    "equity_owner": 15401609147,
+    "liab": 10686983241,
+    "cfo": -3498126550,
+    "eps_basic": -67,
+    "opm": -82.2,
+    "roe": -60.9,
+    "debt_ratio": 69.4
+   },
+   {
+    "year": 2022,
+    "rev": 18145498845,
+    "op": -2271588709,
+    "np": -6982900895,
+    "np_owner": -6982900895,
+    "equity": 18207155178,
+    "equity_owner": 18207155178,
+    "liab": 19939227676,
+    "cfo": -3774503155,
+    "eps_basic": -53,
+    "opm": -12.5,
+    "roe": -38.4,
+    "debt_ratio": 109.5
+   }
+  ],
+  "quarterly": [
+   {
+    "q": "2025Q1",
+    "rev": 1019231773,
+    "op": -2209191028,
+    "np_owner": -2221615882
+   },
+   {
+    "q": "2025Q2",
+    "rev": 341812800,
+    "op": -2306437831,
+    "np_owner": -2335810042
+   },
+   {
+    "q": "2025Q3",
+    "rev": 193388946,
+    "op": -2294597071,
+    "np_owner": -2511368959
+   },
+   {
+    "q": "2025Q4",
+    "rev": 212558155,
+    "op": -4923526182,
+    "np_owner": -7733022310
+   },
+   {
+    "q": "2026Q1",
+    "rev": 21934080,
+    "op": -2819928528,
+    "np_owner": -3134674779
+   }
+  ],
+  "valuation": {
+   "price": 1240,
+   "mcap": 0.0384,
+   "shares": 31005784,
+   "total_shares": 30956622,
+   "wavg_shares": 30582266,
+   "per": null,
+   "eps": -570,
+   "pbr": null,
+   "bps": null,
+   "roe_ttm": -315.4,
+   "ttm_window": "2025Q2~2026Q1",
+   "ttm_np_owner": -15714876090,
+   "pbr_krx": 17.22,
+   "bps_krx": 72.0,
+   "basis": "PER·EPS·PBR·BPS 모두 자체 산출(네이버·토스와 동일 방식) · 배당은 DART 공시 주당현금배당금(보완:KRX) ÷ 현재가",
+   "dps": 0.0,
+   "div": 0.0
+  }
+ }
+}

@@ -1,0 +1,326 @@
+{
+ "title": {
+  "ko": "하이엔드 보안 플랫폼, 수주 사이클 회복이 관건",
+  "en": "High-End Security Platform Awaits Order Cycle Recovery"
+ },
+ "lead": {
+  "ko": "카티스는 공공·국방 특화 공간인지 보안 플랫폼 전문기업으로, 2025년 연간 순손실 폭을 전년 대비 약 93% 줄이고 4분기 흑자 전환에 성공했으나, 2026년 1분기 매출이 급격히 위축되며 수주 회복 속도가 향후 실적의 핵심 변수로 부상했다.",
+  "en": "Catis is a high-end space-aware security platform provider serving public and defense clients; while its annual net loss narrowed by ~93% in FY2025 and Q4 turned operationally profitable, a steep revenue contraction in Q1 2026 has made the pace of order recovery the key earnings variable to watch."
+ },
+ "keypoints": [
+  {
+   "ko": "2025년 연간 순손실이 전년(약 51억 원)에서 약 3.5억 원으로 대폭 축소되며 재무 건전성이 개선됐으나, 영업이익률은 -1.9%로 영업 흑자 전환에는 이르지 못했다.",
+   "en": "FY2025 annual net loss shrank from ~KRW 5.1bn to ~KRW 352mn (a ~93% reduction), improving financial health, though the operating margin remained negative at -1.9%."
+  },
+  {
+   "ko": "2025년 4분기 영업이익 약 15.7억 원으로 분기 흑자를 실현했으나, 2026년 1분기 매출이 약 24.3억 원으로 전 분기 대비 74% 급락해 공공 수주 계절성 리스크를 재확인했다.",
+   "en": "Q4 2025 delivered operating profit of ~KRW 1.57bn, but Q1 2026 revenue plunged ~74% quarter-on-quarter to ~KRW 2.4bn, reaffirming the sharp seasonality risk from public-sector order concentration."
+  },
+  {
+   "ko": "차세대 플랫폼 '엑시퀀트(AxiQuant)'에 양자내성암호(PQC)·사족보행 로봇·드론을 연동하여, 통합방위법 '가급' 국가주요시설 및 방산 시장으로 포트폴리오 확장을 추진 중이다.",
+   "en": "The next-gen 'AxiQuant' platform integrates PQC, quadruped robots, and drones, underpinning an expansion strategy targeting 'Class-A' national priority facilities under Korea's Integrated Defense Act and the broader defense market."
+  },
+  {
+   "ko": "글로벌 파트너 Genetec 협력 및 인도디펜스 2025 전시 참가로 해외 시장 개척을 본격화하고 있으나, 수출 매출 가시화까지는 상당한 리드타임이 예상된다.",
+   "en": "International expansion is underway via the Genetec partnership and participation in India Defence 2025, though export revenue conversion will require a meaningful lead time."
+  },
+  {
+   "ko": "2025년 11월 200% 무상증자로 유통 주식수를 확대했고, 추가 주주환원 정책 검토를 예고했으나 현금 배당은 아직 없다.",
+   "en": "A 200% bonus share issuance in November 2025 enlarged the public float and signaled shareholder-friendly intent, though no cash dividend has been paid to date."
+  }
+ ],
+ "business": {
+  "ko": "카티스는 2006년 설립된 공간인지 보안 플랫폼 전문기업으로, 보안 대상 공간을 네트워크로 정의하여 사람·로봇 등 이동체의 상태 정보를 실시간으로 전달·처리하는 하이엔드 플랫폼을 개발·공급한다. 사업 부문은 ▲산업인프라 보안 플랫폼 ▲경계선방호시스템(PIDS) ▲기술 서비스로 구성되며, 정부기관·원자력발전소·공항·데이터센터·금융기관 등 고보안 수요처가 핵심 고객군이다. 분산데이터처리 및 임베디드 시스템 기술로 구현된 플랫폼은 이중화·분산화 설계를 통해 장치 일부 고장 시에도 무중단 출입통제를 지원한다. 주요 제품으로는 출입·방범·안전관리를 통합한 전자식 물리보안 설비 '엑시로그(AxiLog)'와, 2025년 출시한 양자내성암호(PQC) 기반 차세대 통합보안 플랫폼 '엑시퀀트(AxiQuant)'가 있다. 엑시퀀트는 경계방호·통합관제·침입탐지 기능을 단일 플랫폼에 통합하고, 사족보행 로봇 및 드론과 연동해 입체적 경계방어 체계를 구현한다. 경계선방호(PIDS) 부문에서는 머신러닝 기반 경보필터링 기술을 탑재한 IHS 센서를 공급하고, AxiCos 소프트웨어는 국내 소프트웨어 품질인증(GS인증)을 획득했다. 2024년 5월 KB제22호스팩과의 합병 방식으로 코스닥에 상장했으며, 글로벌 물리보안 플랫폼 기업 Genetec과 파트너십을 체결해 해외 채널을 구축하고 있다. 경쟁 구도는 에스원·KT텔레캅·ADT캡스 등 대형 통합보안 서비스 그룹, 아이디스·하이트론씨스템즈 등 중소형 장비 업체로 양분되나, 카티스는 국가핵심시설 대상 하이엔드 플랫폼이라는 차별화된 니치 포지션을 유지하고 있다.",
+  "en": "Catis, founded in 2006, is a specialized space-aware security platform company that defines secured environments as networks and delivers real-time state-data processing for people, robots, and other moving objects. Its business segments comprise industrial infrastructure security platforms, perimeter intrusion detection systems (PIDS), and technology services, with government agencies, nuclear power plants, airports, data centers, and financial institutions forming the core customer base. Platforms leveraging distributed data processing and embedded systems feature redundant, distributed architectures that maintain access control even during partial hardware failures. Key products include 'AxiLog,' an integrated electronic physical-security appliance covering access control, surveillance, and safety management, and 'AxiQuant,' launched in 2025, a next-generation integrated platform incorporating post-quantum cryptography (PQC), perimeter defense, unified command-and-control, and intrusion detection. AxiQuant is further enhanced with quadruped robot and drone integration for layered perimeter defense. In the PIDS segment, IHS sensors with ML-based alarm filtering are supplied, while AxiCos software holds Korea's GS quality certification. Listed on KOSDAQ in May 2024 via a SPAC merger (KB SPAC No. 22), the company is expanding its global channel through a partnership with Genetec. The competitive landscape is divided between large integrated security conglomerates (S1, KT Telecop, ADT Caps) and mid-tier device and solution vendors (IDIS, Haitron Systems), with Catis maintaining a differentiated niche position as a high-end platform provider for critical national infrastructure."
+ },
+ "earnings": {
+  "ko": "2024년 연결 기준 매출액 약 316.7억 원, 영업이익 약 15.9억 원(영업이익률 5.0%)으로 영업단에서는 흑자였으나, 대규모 영업외손실로 인해 순손실이 약 50.9억 원에 달했다. 2025년에는 매출액이 약 279.0억 원으로 전년 대비 11.9% 감소하고 영업이익률도 -1.9%(영업손실 약 5.4억 원)로 악화됐으나, 순손실은 약 3.5억 원으로 대폭 개선되어 전년도 대규모 영업외손실 부담에서 벗어났음을 시사한다. 영업활동현금흐름도 2024년 약 -30.6억 원에서 2025년 약 +0.5억 원으로 전환되며 현금 창출 기반이 일부 회복됐다. 분기별로 보면 2025년 1·2·3분기는 모두 영업 적자(1Q -9.0억, 2Q -6.2억, 3Q -5.9억)였으며, 특히 3분기 매출은 약 44.6억 원으로 분기 최저치를 기록했다. 2025년 4분기에는 공공 발주 집행이 집중되면서 매출 약 93.7억 원, 영업이익 약 15.7억 원, 순이익 약 19.4억 원을 기록해 분기 기준 뚜렷한 흑자 전환에 성공했다. 그러나 2026년 1분기 매출은 약 24.3억 원으로 직전 분기 대비 74% 급감했고, 영업손실도 약 14.2억 원으로 확대돼 수주 공백 구간의 고정비 부담이 다시 표면화됐다. 부채비율은 2024년 70.2%에서 2025년 62.7%로 개선되어 재무 레버리지 위험은 다소 완화됐다.",
+  "en": "On a consolidated basis, FY2024 revenue was ~KRW 31.7bn with operating profit of ~KRW 1.59bn (OPM 5.0%); however, a large non-operating loss resulted in a net loss of ~KRW 5.09bn. FY2025 revenue fell ~11.9% year-over-year to ~KRW 27.9bn and operating margin turned negative at -1.9% (operating loss ~KRW 537mn), but the net loss narrowed dramatically to ~KRW 352mn—signaling that the prior-year exceptional non-operating burden had largely dissipated. Operating cash flow recovered from approximately -KRW 3.06bn in FY2024 to marginally positive KRW 52mn in FY2025. Quarterly, all three of Q1–Q3 2025 were in operating loss territory (Q1: -KRW 895mn, Q2: -KRW 624mn, Q3: -KRW 587mn), with Q3 also recording the lowest quarterly revenue at ~KRW 4.5bn. Q4 2025 delivered a decisive turnaround—revenue surged to ~KRW 9.4bn, operating profit reached ~KRW 1.57bn, and net profit came in at ~KRW 1.94bn—driven by concentrated year-end public-sector order execution. However, Q1 2026 revenue plunged 74% sequentially to ~KRW 2.4bn, and operating loss widened to ~KRW 1.42bn, reaffirming that fixed-cost absorption deteriorates sharply in order-gap quarters. The debt-to-equity ratio improved from 70.2% in FY2024 to 62.7% in FY2025, easing leverage risk modestly."
+ },
+ "industry": {
+  "ko": "국내 물리보안 시장은 2026년 약 6조 6,000억 원 규모로 성장이 전망되며, 전년 대비 약 12.2% 증가가 예상된다. 출입통제·생체인식 분야는 2026년 약 1조 5,700억 원으로 15.6% 성장이 전망되고, AI 기반 영상보안과 통합관제·공공 인프라 보안 수요가 시장 확대를 이끌고 있다. 글로벌 물리보안 시장도 2025년 약 1,165억 달러 규모에서 2034년까지 연평균 약 10.5% 성장이 예상되며, AI·IoT 통합 감시 및 양자내성암호 적용이 새로운 기술 패러다임으로 부상했다. 국내 물리보안 서비스 시장은 소수 대형 기업이 90% 이상을 점유하는 과점 구조이지만, 하이엔드 시설 대상 플랫폼·솔루션 영역은 기술력 보유 중소기업이 경쟁할 수 있는 공간이다. 최근 국제 정세 불안 심화와 사이버·물리 복합 위협 증가로 국가핵심시설에 대한 통합 보안 수요가 구조적으로 확대되는 추세다. 카티스가 타깃으로 하는 통합방위법 기반 '가급' 국가주요시설 보안 사업은 기술 적합성과 납품 실적이 수주의 핵심 요소여서, 가격 경쟁보다는 기술 진입장벽이 높은 특성이 있다. 경쟁력 유지를 위해서는 PQC, AI 기반 이상탐지, 로봇·드론 연동 등 기술 융합 속도가 중요한 차별화 축이 되고 있다.",
+  "en": "Korea's domestic physical security market is projected to grow ~12.2% year-over-year to approximately KRW 6.6tn in 2026, with the access control and biometrics sub-segment forecast to grow ~15.6% to ~KRW 1.57tn, driven by AI-powered video surveillance, integrated control systems, and public infrastructure security demand. Globally, the physical security market was valued at ~USD 116.6bn in 2025 and is projected to grow at a CAGR of ~10.5% through 2034, with AI/IoT-integrated surveillance and post-quantum cryptography emerging as transformative technology paradigms. Korea's physical security services sector is heavily concentrated, with a handful of large players controlling over 90% of the market, yet high-end platform segments serving critical infrastructure remain accessible to technology-differentiated SMEs. Intensifying geopolitical tension and growing hybrid cyber-physical threats are structurally expanding integrated security demand at key national facilities. Catis's target market—'Class-A' national priority facility security governed by Korea's Integrated Defense Act—places technical compliance and delivery track record above price, providing a measure of competitive insulation. Rapid integration of PQC, AI-based anomaly detection, and robot/drone connectivity is becoming the critical differentiation axis, setting a continuously rising bar for incumbents and new entrants alike."
+ },
+ "outlook": {
+  "ko": "카티스는 2025년 11월 엑시퀀트 1.5를 출시하고 통합방위법상 '가급' 국가주요시설 및 최고보안시설을 우선 공급 대상으로 설정했으며, 2026년에도 관련 수주 확보를 주력 과제로 추진 중이다. 2026년 3월 SECON & eGISEC 2026 전시에서는 라이온로보틱스와의 협업을 통해 사족보행 로봇 연동 경계방호 솔루션을 공개 시연하며 실전 보안 대응 역량을 강조했다. 향후 로봇·드론 연동 외곽 경계방어 솔루션 확대와 함께, 군사·국방·산업단지·민간 고보안 시설로의 신규 버티컬 진입도 전략 방향으로 제시됐다. PQC 기반 보안 아키텍처는 양자컴퓨팅 위협에 대비한 미래 대응 플랫폼으로 포지셔닝되고 있으며, 이 기술을 기반으로 공공·국방 분야의 경쟁력 강화를 추진한다. 해외 시장 전략으로는 Genetec 채널을 통한 아시아·중동·유럽 시장 진입 타진 및 인도디펜스 2025 참가를 통한 방산 분야 직접 탐색이 진행됐다. 다만 2026년 1분기 실적에서 드러났듯 공공 수주의 인식 시기 집중은 단기 실적의 핵심 변수로 남아 있으며, 상반기 수주 공백 극복을 위한 파이프라인 확충이 시급한 과제다. 2025년 200% 무상증자에 이어 추가 주주환원 정책 검토도 예고된 만큼, 구체적인 실행 방안 발표 여부도 수급 측면의 모니터링 포인트다.",
+  "en": "Following the November 2025 launch of AxiQuant 1.5, Catis designated 'Class-A' national priority and top-security facilities under Korea's Integrated Defense Act as the primary supply targets, with related order conversion remaining the foremost business objective for 2026. At the SECON & eGISEC 2026 exhibition in March 2026, it publicly demonstrated a quadruped-robot-integrated perimeter defense scenario in collaboration with Lion Robotics, underscoring its real-world response capabilities. The strategic roadmap also envisions expanding robot- and drone-integrated perimeter defense into military/defense, industrial complexes, and high-security civilian facilities. The PQC-based security architecture is positioned as a future-proof platform against quantum-computing threats, providing a foundation for competitive differentiation in public and defense sectors. Internationally, the company is evaluating entry into Asian, Middle Eastern, and European markets via the Genetec channel, supported by direct defense-market prospecting at India Defence 2025. Nevertheless, as Q1 2026 results highlighted, the timing concentration of public-sector order recognition remains the dominant near-term earnings variable, making H1 2026 pipeline development a pressing operational priority. The previously announced review of further shareholder return measures following the 2025 bonus share issuance is an additional factor to monitor from a supply-demand perspective."
+ },
+ "valuation_comment": {
+  "ko": "현재 주가는 주당 순자산(BPS 3,541원)을 하회하는 구간에서 거래되고 있어, 시장이 순자산 대비 할인을 적용하고 있는 상태다. 손익의 분기별 변동성이 크고 이익이 아직 안정화되지 않은 탓에 수익 기반 밸류에이션 지표는 현 시점에서 적용이 어려우며, 순자산 대비 주가 비율이 실질적인 참고 지표로 기능하고 있다. 배당은 현재 지급되지 않아, 배당수익을 기대하는 투자자 층에서는 업종 내 배당 지급 기업 대비 상대적으로 열위한 환경이다. 소형주 특성상 일별 거래량이 제한될 경우 수급 변동에 따른 단기 주가 변동성이 상대적으로 높다는 점도 고려해야 한다.",
+  "en": "The stock is currently trading below its reported book value per share (BPS: KRW 3,541), indicating the market applies a discount to net assets. Given the high quarter-to-quarter earnings variability and the absence of stabilized profitability, earnings-based valuation multiples are not readily applicable at this stage, leaving the price-to-book relationship as the primary reference. With no cash dividend in place, the stock is at a relative disadvantage versus dividend-paying peers for income-oriented investors. As a small-cap issue, periods of thin daily volume can amplify price volatility in response to short-term supply-demand shifts, a factor that should be weighed alongside fundamental considerations."
+ },
+ "bull": [
+  {
+   "title": {
+    "ko": "국가안보 수요 확대와 기술 진입장벽",
+    "en": "Structural National Security Demand & Technical Barriers to Entry"
+   },
+   "body": {
+    "ko": "국제 정세 불안 심화와 통합방위법 기반 '가급' 시설 보안 강화 의무화 흐름은 카티스의 핵심 타깃 시장 수요를 구조적으로 뒷받침한다. 엑시퀀트의 PQC·로봇·드론 연동은 일반 보안 장비 업체 대비 높은 기술 진입장벽을 형성하며, 하이엔드 프로젝트 수주 경쟁에서의 우위를 뒷받침한다. 국내 물리보안 출입통제 시장이 2026년 15.6% 성장이 전망되는 우호적인 거시 환경 속에서, 시장 확대의 직접 수혜를 입을 포지션에 있다.",
+    "en": "Intensifying geopolitical instability and mandatory security enhancement at 'Class-A' national facilities under Korea's Integrated Defense Act provide structural demand tailwinds for Catis's core market. AxiQuant's integration of PQC, robotics, and drones creates meaningful technical barriers versus commodity security vendors, supporting competitiveness in high-end project bidding. With the domestic access control segment projected to grow ~15.6% in 2026, the company is positioned to benefit from expanding market conditions."
+   }
+  },
+  {
+   "title": {
+    "ko": "2025년 재무 건전성 개선 및 수익 레버리지 확인",
+    "en": "FY2025 Financial Improvement & Demonstrated Earnings Leverage"
+   },
+   "body": {
+    "ko": "2025년 연간 순손실이 대폭 축소됐고 영업활동현금흐름도 플러스로 전환됐으며, 부채비율도 62.7%로 개선되어 재무 탄력성이 높아졌다. 2025년 4분기에 매출 약 93.7억 원, 영업이익 약 15.7억 원을 기록하며, 수주가 집중되는 구간에서 높은 이익 레버리지가 실현 가능함을 확인했다. 하반기 공공 발주 집행이 증가하면 빠른 이익 회복이 가능한 수익 구조적 특성이 있다.",
+    "en": "FY2025 net loss shrank dramatically, operating cash flow turned positive, and the debt-to-equity ratio improved to 62.7%, signaling enhanced financial resilience. Q4 2025's revenue of ~KRW 9.4bn and operating profit of ~KRW 1.57bn demonstrated strong earnings leverage—when contracts execute, profitability can recover sharply. This structural characteristic means that an increase in H2 public-sector order execution could translate into outsized profitability improvement."
+   }
+  },
+  {
+   "title": {
+    "ko": "글로벌 시장 진출 옵션과 로봇·방산 신규 버티컬",
+    "en": "Global Expansion Options & Robot-Defense New Verticals"
+   },
+   "body": {
+    "ko": "Genetec 글로벌 채널과 인도디펜스 2025 참가는 현재 미미한 해외 매출 기여도를 감안할 때, 성공 시 매출 구조 다변화 효과가 클 수 있다. 사족보행 로봇·드론 연동 보안 솔루션은 방산·스마트시티·산업시설 등 신규 버티컬로의 확장 가능성을 제공한다. 국내외 보안 시장에서 AI·양자암호 기반 통합보안 수요가 빠르게 성장함에 따라 기술 포트폴리오의 시장 적합성이 높아지는 방향으로 전개되고 있다.",
+    "en": "The Genetec global channel and India Defence 2025 participation represent material revenue diversification upside given the currently minimal export contribution. Robot- and drone-integrated security solutions open new verticals including defense, smart cities, and industrial facilities. Rapidly growing global demand for AI- and quantum-crypto-based integrated security is increasing the market relevance of Catis's technology portfolio over time."
+   }
+  }
+ ],
+ "bear": [
+  {
+   "title": {
+    "ko": "극심한 수주 계절성과 2026년 1분기 실적 충격",
+    "en": "Severe Order Seasonality & Q1 2026 Revenue Shock"
+   },
+   "body": {
+    "ko": "2026년 1분기 매출 약 24.3억 원은 직전 분기(93.7억 원) 대비 74% 급감하며, 공공 예산 집행 편중에서 비롯된 계절성 리스크를 적나라하게 보여줬다. 영업손실도 약 14.2억 원으로 확대돼 수주 공백기에는 고정비 부담이 증폭되는 구조임을 재확인했다. 이 같은 분기별 변동성은 연간 이익 목표 달성에 대한 예측 가능성을 낮추고 투자 불확실성을 높이는 요인이다.",
+    "en": "Q1 2026 revenue of ~KRW 2.4bn—a 74% sequential plunge from Q4 2025's ~KRW 9.4bn—starkly illustrated the concentration risk of public-sector procurement timing. The operating loss widened to ~KRW 1.42bn, reconfirming that fixed costs amplify losses sharply in order-gap quarters. This earnings volatility materially reduces annual forecast reliability and elevates investment uncertainty."
+   }
+  },
+  {
+   "title": {
+    "ko": "소규모 매출 기반과 이익 지속성 불확실성",
+    "en": "Narrow Revenue Base & Earnings Sustainability Uncertainty"
+   },
+   "body": {
+    "ko": "연간 매출 약 280억~320억 원 규모에서 소수의 대형 프로젝트 수주 여부가 연간 실적을 좌우하는 구조로, 특정 계약 하나의 이탈이 실적에 즉각적으로 큰 영향을 미친다. 2025년 매출이 전년 대비 감소했고, 2026년 1분기에도 회복 징후가 뚜렷하지 않아 기저 수요의 안정성에 의문이 제기될 수 있다. 영업이익이 흑자와 적자를 오가는 분기 사이클은 이익 지속성에 대한 시장 신뢰를 제한하는 구조적 약점이다.",
+    "en": "With annual revenue in the ~KRW 28–32bn range, the outcome of a handful of large contracts effectively determines full-year earnings, meaning any single contract loss has an outsized P&L impact. FY2025 revenue declined year-over-year, and Q1 2026 showed no clear recovery signal, raising questions about the stability of underlying demand. The oscillation between operating profit and loss across quarters is a structural weakness that limits market confidence in earnings sustainability."
+   }
+  },
+  {
+   "title": {
+    "ko": "대형 경쟁사 대비 자원·브랜드 열위",
+    "en": "Resource & Brand Disadvantage vs. Large Competitors"
+   },
+   "body": {
+    "ko": "에스원, KT텔레캅, ADT캡스 등 대형 보안 그룹은 광범위한 영업망과 풍부한 자본을 바탕으로 공공·국방 시장에서도 토탈 솔루션 경쟁을 확대하고 있다. 중소기업 규모의 한계로 대규모 R&D 투자와 단기 이익 창출 사이의 균형 유지가 구조적으로 어렵다. PQC·AI·로봇 통합 등 신기술 개발 속도가 예상보다 늦어질 경우 현재의 기술 차별화 우위가 빠르게 희석될 수 있다.",
+    "en": "Large security conglomerates such as S1, KT Telecop, and ADT Caps are expanding total-solution competition in public and defense markets, backed by extensive sales networks and deep capital resources. As an SME, Catis faces structural difficulty in simultaneously sustaining large-scale R&D spending and delivering near-term profitability. Should the pace of technology development in PQC, AI, or robotics integration slow, the current competitive differentiation advantage could erode more quickly than anticipated."
+   }
+  }
+ ],
+ "risks": [
+  {
+   "cat": {
+    "ko": "공공 예산·정책 리스크",
+    "en": "Public Budget & Policy Risk"
+   },
+   "body": {
+    "ko": "매출의 상당 부분이 공공·국방 예산 집행에 연동되어 있어, 정부 예산 삭감이나 조달 지연, 사업 우선순위 변경이 즉각적인 매출 충격으로 이어질 수 있다. '가급' 시설 보안 사업은 계획에서 계약·납품까지 장기 리드타임이 수반되어 예상 수주가 실적에 반영되기까지 시차가 발생할 수 있다. 새로운 정부 정책 방향이나 국방 예산 구조 조정은 주요 발주 기관의 집행 속도에 불확실성을 더한다.",
+    "en": "A significant portion of revenue is tied to public- and defense-sector budget execution, meaning government spending cuts, procurement delays, or policy priority shifts could rapidly impair revenue. 'Class-A' facility security projects carry long lead times from planning to contract award and delivery, creating potential gaps between announced wins and reported revenue. Changes in government policy direction or defense budget reallocation add uncertainty to the execution pace of key procurement agencies."
+   }
+  },
+  {
+   "cat": {
+    "ko": "기술 경쟁 심화 및 R&D 비용 부담",
+    "en": "Intensifying Technology Competition & R&D Cost Pressure"
+   },
+   "body": {
+    "ko": "PQC, AI 이상탐지, 로봇·드론 연동 등 신기술 영역에 글로벌 대형 업체들도 빠르게 진입하고 있어, 기술 리더십 유지를 위한 지속적인 R&D 투자가 필요하다. 소규모 재무 기반에서 대규모 기술 투자와 단기 이익 목표를 동시에 충족하는 것은 구조적으로 쉽지 않다. 엑시퀀트 등 신제품의 상용화와 매출 전환 시기가 예상보다 길어지면 판관비 부담이 먼저 증가할 수 있다.",
+    "en": "Global vendors are rapidly entering PQC, AI-based anomaly detection, and robot/drone-integrated security, requiring continuous R&D investment to sustain technology leadership. Simultaneously delivering large-scale technology investment and near-term profit targets is structurally challenging given the company's constrained financial base. If the time-to-revenue for new products such as AxiQuant exceeds expectations, operating expense growth may precede top-line conversion."
+   }
+  },
+  {
+   "cat": {
+    "ko": "소형주 유동성 및 주가 변동성",
+    "en": "Small-Cap Liquidity & Share Price Volatility"
+   },
+   "body": {
+    "ko": "총 발행주식 약 1,069만 주 규모로 일별 거래량이 얇은 시기에는 소규모 매매에도 주가가 크게 움직일 수 있다. 테마주 순환매나 시장 위험 회피 환경에서 기업 펀더멘털과 무관한 급격한 주가 변동에 노출될 가능성이 있다. 유동성 제약은 기관·외국인 투자자의 진입을 제한해 중장기 주주 기반의 다양화에 걸림돌이 될 수 있다.",
+    "en": "With total shares of ~10.7mn, thin daily trading volumes can cause disproportionate price moves from small-lot trades. Thematic rotation trades or broad risk-off environments can trigger sharp price dislocations unconnected to company fundamentals. Liquidity constraints limit institutional and foreign investor participation, potentially hindering the diversification of the long-term shareholder base."
+   }
+  }
+ ],
+ "checkpoints": [
+  {
+   "when": {
+    "ko": "2026년 8월 중순",
+    "en": "Mid-August 2026"
+   },
+   "what": {
+    "ko": "2026년 2분기(4~6월) 실적 공시: 1분기 부진에서의 매출 반등 여부와 영업손익 방향을 확인해야 한다. 유의미한 매출 회복이 나타나지 않으면 연간 실적 회복 경로에 대한 불확실성이 커진다.",
+    "en": "Q2 2026 (April–June) earnings release: assess whether revenue rebounds from Q1's contraction and track the operating profit/loss direction. Absence of a meaningful sequential recovery would increase uncertainty around the full-year earnings recovery path."
+   }
+  },
+  {
+   "when": {
+    "ko": "2026년 하반기 수시",
+    "en": "H2 2026, as announced"
+   },
+   "what": {
+    "ko": "통합방위법 기반 '가급' 국가주요시설 대상 엑시퀀트 공급 계약 체결 공시: 2025년 이후 회사가 공급 목표로 제시한 핵심 과제인 만큼, 계약 체결 여부가 실적 회복의 분수령이 될 수 있다.",
+    "en": "Contract award disclosure for AxiQuant supply to 'Class-A' national priority facilities under Korea's Integrated Defense Act: as the company's stated primary supply target since late 2025, any contract announcement could serve as a pivotal indicator of earnings recovery."
+   }
+  },
+  {
+   "when": {
+    "ko": "2026년 하반기 수시",
+    "en": "H2 2026, ongoing"
+   },
+   "what": {
+    "ko": "Genetec 파트너십을 통한 첫 해외 수주 또는 레퍼런스 계약 체결 여부: 수출 매출이 현재 미미한 만큼 첫 계약 체결은 매출 다각화 가능성을 시장에 알리는 중요한 신호가 될 수 있다.",
+    "en": "First overseas contract or reference account via the Genetec partnership: given currently negligible export revenue, a first contract award would serve as an important signal of revenue diversification potential to the market."
+   }
+  },
+  {
+   "when": {
+    "ko": "2026년 11월 중순",
+    "en": "Mid-November 2026"
+   },
+   "what": {
+    "ko": "2026년 3분기 실적 공시: 상반기 수주가 3분기 매출로 연결되는 강도를 확인하고, 계절적 강세 구간인 4분기 진입 전 실적 회복 기반의 안정성을 점검한다.",
+    "en": "Q3 2026 earnings release: gauge whether H1 orders are converting into Q3 revenue and assess the stability of the earnings recovery base ahead of the seasonally stronger Q4 public-sector execution window."
+   }
+  },
+  {
+   "when": {
+    "ko": "2027년 3~4월",
+    "en": "March–April 2027"
+   },
+   "what": {
+    "ko": "2026년 연간 사업보고서 공시: 연간 수주 총액 및 부문별 매출 구성, R&D 투자 규모, 추가 주주환원 정책 실행 여부 등 중장기 사업 방향의 실마리를 확인한다.",
+    "en": "FY2026 annual report filing: review total order backlog, segment revenue breakdown, R&D spending levels, and any implementation of additional shareholder return measures as indicators of the medium-term business direction."
+   }
+  }
+ ],
+ "verdict": {
+  "body": {
+   "ko": "카티스는 공항·원전·데이터센터 등 국가핵심시설 대상 하이엔드 공간인지 보안 플랫폼이라는 차별화된 시장 포지션을 보유하고 있으며, PQC·로봇·드론 연동 기술로 구성된 차세대 제품 포트폴리오를 통해 통합방위법 기반 '가급' 시설 및 방산 시장으로 영역을 확대하고 있다. 2025년 재무 건전성은 전년 대비 큰 폭으로 개선됐고, 4분기 분기 흑자 전환으로 수주 집중 구간에서 높은 이익 레버리지가 실현 가능함을 확인했다. 그러나 2026년 1분기 매출이 직전 분기 대비 74% 급감하며 수주 계절성에 따른 구조적 취약성이 재현됐고, 영업손실도 확대돼 단기 이익 가시성이 낮은 상황이다. 국내 물리보안 시장의 구조적 성장 추세와 AI·양자암호 융합 보안 수요 확대는 긍정적인 거시 환경을 형성하지만, 실적 회복의 현실화 여부는 '가급' 시설 수주 계약 체결과 하반기 공공 발주 집행 규모에 달려 있다. 소형주 특성상 수급 변동성이 크고 수익 기반 밸류에이션이 제한적으로 적용되는 환경에서, 투자자들은 수주 공시 및 분기별 매출 회복 속도를 가장 중요한 모니터링 지표로 삼아야 한다. 해외 시장 개척과 로봇·드론 연동 솔루션은 중장기 성장 옵션으로서의 의미가 있으나, 단기 매출 기여까지는 상당한 리드타임이 예상된다.",
+   "en": "Catis holds a differentiated market position as a high-end space-aware security platform provider for critical national infrastructure—airports, nuclear plants, and data centers—and is extending its footprint toward 'Class-A' national priority facilities and the defense market through a next-generation portfolio integrating PQC, robotics, and drones. FY2025 financial health improved markedly, and Q4 2025's swing to operating profitability demonstrated meaningful earnings leverage once contract execution concentrates. However, Q1 2026's 74% sequential revenue drop reconfirmed the structural vulnerability created by public-sector order timing concentration, leaving near-term earnings visibility limited. Korea's physical security market's structural growth trajectory and expanding demand for AI- and quantum-crypto-integrated security provide favorable macro conditions, but actual earnings recovery hinges on converting 'Class-A' facility bids into signed contracts and the scale of H2 2026 public-sector execution. Given the small-cap liquidity profile and limited applicability of earnings-based valuation multiples in the current environment, order disclosure announcements and the pace of quarterly revenue recovery should be treated as the most critical monitoring metrics. Global expansion and robot/drone-integrated solutions represent meaningful medium-to-long-term growth options, though a substantial lead time before material revenue contribution should be anticipated."
+  }
+ },
+ "sources": [
+  "https://comp.fnguide.com/SVO2/ASP/SVD_Main.asp?gicode=A140430",
+  "https://www.valueline.co.kr/finance/summary/140430",
+  "https://www.kokstock.com/stock/item.asp?item_cd=140430",
+  "https://comp.fnguide.com/SVO2/asp/SVD_Invest.asp?pGB=1&cID=&MenuYn=Y&ReportGB=D&NewMenuID=105&stkGb=701&gicode=A140430",
+  "https://m.irgo.co.kr/IR-COMP/140430/%EC%B9%B4%ED%8B%B0%EC%8A%A4-IR-PAGE",
+  "https://www.investing.com/equities/catis",
+  "https://valueline.co.kr/finance/mri/140430",
+  "https://www.newswell.co.kr/news/articleView.html?idxno=9732",
+  "https://www.komachine.com/ko/companies/securetech",
+  "https://comp.fnguide.com/SVO2/ASP/SVD_Main.asp?pGB=1&gicode=A140430&MenuYn=Y&ReportGB=D&NewMenuID=Y&stkGb=701",
+  "https://m.boannews.com/html/detail.html?idx=136015",
+  "https://www.pinpointnews.co.kr/news/articleView.html?idxno=393787",
+  "https://www.pointdaily.co.kr/news/articleView.html?idxno=282790",
+  "https://www.saramin.co.kr/zf_user/company-info/view/csn/SFZFdWlwMnVHSUxBQTFabU4xRXFEdz09/company_nm/(%EC%A3%BC)%EC%B9%B4%ED%8B%B0%EC%8A%A4",
+  "https://www.edrawsoft.com/kr/diagram-tutorial/top7-software-development-companies.html",
+  "https://kr.investing.com/indices/kosdaq-it-software-components",
+  "https://alphasquare.co.kr/home/stock-summary?code=140430",
+  "https://m.boannews.com/html/detail.html?tab_type=1&idx=142713"
+ ],
+ "v": 2,
+ "model": "claude-sonnet-4-6",
+ "ticker": "140430",
+ "name": "카티스",
+ "name_en": "CATIS INC.",
+ "sector": "IT·소프트웨어",
+ "categories": [
+  "IT·소프트웨어"
+ ],
+ "market": "코스닥",
+ "reportDate": "2026-06-19",
+ "reportTs": "2026-06-19 04:07",
+ "dataDate": "20260618",
+ "quant": {
+  "asOf": "2026-06-18",
+  "fs_basis": "연결(CFS) · DART 공시 확정치 · 지배주주 기준 순이익",
+  "annual": [
+   {
+    "year": 2025,
+    "rev": 27901348150,
+    "op": -536774819,
+    "np": -352139751,
+    "np_owner": -352139751,
+    "equity": 39040067845,
+    "equity_owner": 39040067845,
+    "liab": 24463667617,
+    "cfo": 52282642,
+    "eps_basic": -7,
+    "opm": -1.9,
+    "roe": -0.9,
+    "debt_ratio": 62.7
+   },
+   {
+    "year": 2024,
+    "rev": 31672914120,
+    "op": 1594081524,
+    "np": -5088285185,
+    "np_owner": -5088285185,
+    "equity": 33012807316,
+    "equity_owner": 33012807316,
+    "liab": 23184531131,
+    "cfo": -3057528567,
+    "eps_basic": -332,
+    "opm": 5.0,
+    "roe": -15.4,
+    "debt_ratio": 70.2
+   }
+  ],
+  "quarterly": [
+   {
+    "q": "2025Q1",
+    "rev": 7041396243,
+    "op": -895304740,
+    "np_owner": -932260850
+   },
+   {
+    "q": "2025Q2",
+    "rev": 7026753719,
+    "op": -623905438,
+    "np_owner": -672990036
+   },
+   {
+    "q": "2025Q3",
+    "rev": 4463358970,
+    "op": -587304873,
+    "np_owner": -685379981
+   },
+   {
+    "q": "2025Q4",
+    "rev": 9369839218,
+    "op": 1569740232,
+    "np_owner": 1938491116
+   },
+   {
+    "q": "2026Q1",
+    "rev": 2426950317,
+    "op": -1420433452,
+    "np_owner": -1196798014
+   }
+  ],
+  "valuation": {
+   "price": 2210,
+   "mcap": 0.0236,
+   "shares": 10689507,
+   "total_shares": 10689507,
+   "wavg_shares": null,
+   "per": null,
+   "eps": null,
+   "pbr": 0.62,
+   "bps": 3541,
+   "roe_ttm": 0.7,
+   "ttm_window": "2025Q2~2026Q1",
+   "ttm_np_owner": 256548168,
+   "pbr_krx": 0.58,
+   "bps_krx": 3790.0,
+   "basis": "PER·EPS·PBR·BPS 모두 자체 산출(네이버·토스와 동일 방식) · 배당은 DART 공시 주당현금배당금(보완:KRX) ÷ 현재가",
+   "dps": 0.0,
+   "div": 0.0
+  }
+ }
+}
