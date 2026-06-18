@@ -36,7 +36,7 @@ concurrency:
 jobs:
   reports-v2:
     runs-on: ubuntu-latest
-    timeout-minutes: 350
+    timeout-minutes: 360
     permissions:
       contents: write
       actions: write
@@ -73,7 +73,7 @@ jobs:
           REPORT_FILL_SHARDS: ${{ inputs.fill_shards }}
           REPORT_FILL_SHARD: ${{ inputs.fill_shard }}
           RECOVER_BATCH_ID: ${{ inputs.recover_batch_id }}
-          BATCH_MAX_WAIT_SEC: '10800'
+          BATCH_MAX_WAIT_SEC: '18000'
         run: |
           python scripts/generate_reports_v2.py "${{ inputs.mode }}" 2>&1 | tee data/reports_v2_run.log || true
 
