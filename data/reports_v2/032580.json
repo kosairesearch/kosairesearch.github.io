@@ -1,0 +1,356 @@
+{
+ "title": {
+  "ko": "레거시 공백이 여는 턴어라운드: 2026 반전 국면 진입",
+  "en": "Legacy Supply Gap Drives Turnaround: Fidelix Enters Profit Recovery Phase in 2026"
+ },
+ "lead": {
+  "ko": "삼성전자·SK하이닉스의 LPDDR4 생산 종료(EOL) 흐름이 조성한 레거시 메모리 공급 부족을 직접 수혜 구조로 전환하며, 피델릭스는 2025년 4분기 분기 흑자전환에 이어 2026년 1분기 영업이익률 약 20%의 실질 이익 개선을 달성했다.",
+  "en": "By capitalizing on the legacy memory supply vacuum created by Samsung and SK Hynix's LPDDR4 end-of-life transition, Fidelix swung to profitability in Q4 2025 and posted an operating margin of approximately 20% in Q1 2026, marking a decisive earnings recovery."
+ },
+ "keypoints": [
+  {
+   "ko": "2026년 1분기 매출 약 214.9억 원(전년 동기比 +97.5%), 영업이익 약 43.3억 원으로 분기 기준 큰 폭의 흑자 확대 — 레거시 메모리 가격 급등이 직접 수혜로 작용",
+   "en": "Q1 2026 revenue of ~₩21.5B (+97.5% YoY) and operating profit of ~₩4.3B confirm a decisive swing to profitability, driven directly by surging legacy memory prices."
+  },
+  {
+   "ko": "삼성·SK하이닉스의 LPDDR4 EOL로 발생한 공급 공백을 자체 설계 기반 LPDDR4 신제품(2026년 말 개발 목표)으로 정조준 — 자체 설계 오너십 확보 시 수익성 구조 개선 기대",
+   "en": "Fidelix is targeting the supply vacuum from LPDDR4 EOL with an in-house designed product (target: end-2026), which would improve margins through proprietary design ownership."
+  },
+  {
+   "ko": "KAIST와 NPU 기반 Wide-I/O DRAM 공동 개발(4년 국가 R&D) 착수 — 2026년 하반기 설계 완료 및 3분기 초도 시제품 목표로 AI 엣지 메모리 신사업의 씨앗 마련",
+   "en": "A joint 4-year national R&D project with KAIST for NPU-based Wide-I/O DRAM targets design completion in H2 2026 and a first prototype in Q3 2026, seeding an AI edge memory growth vector."
+  },
+  {
+   "ko": "팹리스 구조(파운드리 파트너: 대만 파워칩 등)로 고정자산 부담은 낮지만, 파운드리 가격·가용성 변화 및 미·중 무역 갈등에 따른 공급망 이중 리스크 상존",
+   "en": "The asset-light fabless model (foundry partner: Taiwan's Powerchip) keeps capex low, but exposes the company to foundry pricing/availability risks and ongoing US-China trade tensions."
+  },
+  {
+   "ko": "오토모티브(차량용 인포테인먼트·자율주행 보조) 및 IoT로의 응용처 다변화 추진 중이나, 인증 사이클이 길어 실질적 실적 기여까지는 중장기 시간이 필요",
+   "en": "Diversification into automotive (infotainment, ADAS) and IoT is underway, but long qualification cycles mean meaningful revenue contribution will take time."
+  }
+ ],
+ "business": {
+  "ko": "피델릭스는 자체 생산 설비 없이 반도체를 설계·판매하는 코스닥 팹리스 메모리 전문 기업으로, 제품은 Mobile DRAM(LPDDR 계열), NOR/NAND Flash Memory, MCP(Multi-Chip Package), 초고속 메모리(네트워크 통신장비용) 등으로 구성된다. 모바일 애플리케이션용 저전력 메모리인 PSRAM과 Mobile SDRAM/DDR을 핵심 축으로 성장해왔으며, 최근에는 PSRAM·Mobile DDR·Serial NOR Flash까지 제품 라인업을 공격적으로 확장하고 있다. 비즈니스 모델은 자체 설계 KGD(Known Good Die) 판매와 삼성전자·SK하이닉스 메모리를 외부 조달해 완제품 형태로 재판매하는 이중 구조로, 외부 조달 재판매 비중도 상당하다. 파운드리는 대만 파워칩(Powerchip) 등과 협력해 생산을 아웃소싱하며 생산 설비 투자 없이 설계 역량에 집중하는 자산 경량형 구조다. 주요 경쟁사는 국내 제주반도체, 대만의 Winbond·Macronix 등 팹리스 메모리 업체이며, 삼성·SK하이닉스 같은 IDM과 직접 경쟁하기보다 이들이 포기한 레거시 틈새 시장을 공략하는 포지셔닝을 취한다. 수출 비중은 약 70% 수준으로 미국·유럽·중국·일본 등 글로벌 공급망에 폭넓게 납품 중이다. 최근에는 차량용 인포테인먼트와 자율주행 보조 시스템에 최적화된 저전력·고신뢰성 메모리 솔루션을 개발하며 오토모티브 시장으로 영역을 확장 중이다. 글로벌 대형 메모리 업체들이 HBM·DDR5 등 고부가 제품으로 포트폴리오를 재편하면서 레거시 메모리 시장의 구조적 공급 공백이 확대되고, 이것이 현 업황에서 피델릭스의 포지셔닝을 부각시키는 핵심 배경이 되고 있다.",
+  "en": "Fidelix is a KOSDAQ-listed fabless memory semiconductor company that designs and sells chips without owning production facilities. Its product portfolio spans Mobile DRAM (LPDDR family), NOR/NAND Flash Memory, MCP (Multi-Chip Package), and high-speed memory for network equipment. The company's core products are low-power mobile memories including PSRAM and Mobile SDRAM/DDR, and it has recently expanded aggressively into PSRAM, Mobile DDR, and Serial NOR Flash. Its business model combines proprietary KGD (Known Good Die) design sales with the resale of externally procured memory from Samsung Electronics and SK Hynix — with the resale portion representing a significant share. Manufacturing is fully outsourced to foundries including Taiwan's Powerchip, enabling an asset-light structure focused on design capability. Key competitors include domestic Jeju Semiconductor and Taiwan-based Winbond and Macronix. Rather than competing head-to-head with IDMs such as Samsung or SK Hynix, Fidelix targets legacy niche markets those giants have abandoned. Exports account for approximately 70% of revenue, with supply relationships spanning the US, Europe, China, and Japan. The company is also developing low-power, high-reliability memory solutions for automotive infotainment and ADAS applications. As major global memory players pivot toward HBM and DDR5, the structural supply gap in legacy memory has widened — placing Fidelix's positioning squarely in focus for the current market environment."
+ },
+ "earnings": {
+  "ko": "연간 기준으로 2022년은 매출 725.6억 원, 영업이익 62.8억 원(OPM 8.7%), 순이익 82.5억 원으로 최근 4개년 중 최대 실적이었다. 이후 메모리 업황 하강과 수요 위축으로 2023년 매출이 527.8억 원으로 감소하고 영업이익은 7.1억 원(OPM 1.3%)으로 급감했으며, 2024년에는 매출이 448.1억 원까지 줄고 영업손실 45.3억 원(OPM -10.1%)으로 적자가 심화됐다. 2025년에는 매출이 536.2억 원으로 전년 대비 19.7% 회복됐으나 영업손실 20.7억 원(-3.9%), 순손실 29.6억 원을 기록해 연간 기준 적자가 지속됐다. 분기별로는 2025년 1~3분기에 각각 영업손실 6.2억, 15.9억, 8.9억 원으로 적자가 이어졌으나, 2025년 4분기에 매출 182.5억 원·영업이익 10.4억 원을 기록하며 분기 흑자전환에 성공했다. 2026년 1분기에는 매출 214.9억 원(전년 동기비 약 97.5% 급증), 영업이익 43.3억 원으로 영업이익률 약 20%라는 이례적 수준을 달성했으며, 이는 레거시 메모리 가격 급등 효과가 직접 반영된 결과로 풀이된다. 2022년 피크 OPM 8.7%를 크게 웃도는 이 수치가 단기 사이클 효과인지 구조적 개선의 시작인지가 향후 핵심 판단 포인트다. 재무 건전성 면에서 2025년 말 자기자본 448.0억 원, 부채비율 28.2%로 레버리지는 낮지만, 영업활동 현금흐름은 -24.3억 원으로 현금 창출력 회복이 아직 과제로 남아 있다.",
+  "en": "Annually, fiscal 2022 was the strongest recent year, with revenue of ₩72.6B, operating profit of ₩6.3B (8.7% OPM), and net profit of ₩8.2B. The memory downcycle then hit hard: 2023 revenue fell to ₩52.8B with operating profit collapsing to ₩0.71B (1.3% OPM), and 2024 saw revenue drop further to ₩44.8B with an operating loss of ₩4.5B (-10.1% OPM). In 2025, revenue partially recovered to ₩53.6B (+19.7% YoY), but the operating loss narrowed only to ₩2.1B (-3.9%), with a net loss of ₩3.0B keeping the company in the red on an annual basis. At the quarterly level, the first three quarters of 2025 each recorded operating losses of ₩0.62B, ₩1.59B, and ₩0.89B, respectively, before Q4 2025 turned profitable with revenue of ₩18.2B and operating profit of ₩1.04B. Q1 2026 then delivered a sharp acceleration: revenue of ₩21.5B (up ~97.5% YoY) and operating profit of ₩4.3B — implying an operating margin of approximately 20%, well above the 2022 peak OPM of 8.7%. Whether this extraordinary margin is a transient cycle effect or the start of structural improvement is the pivotal question for investors. On the balance sheet, year-end 2025 equity was ₩44.8B with a debt ratio of 28.2%, indicating manageable leverage. However, operating cash flow remained negative at -₩2.4B in 2025, indicating that cash generation has yet to fully normalize."
+ },
+ "industry": {
+  "ko": "글로벌 메모리 반도체 시장은 AI·데이터센터 수요 급증으로 HBM과 고성능 DDR5가 제조 캐파의 핵심을 점유하는 구조 재편 국면에 있다. 삼성전자는 2025년 6월을 기점으로 LPDDR4 신규 주문 접수를 사실상 중단했고, SK하이닉스도 2026년 1~2분기 중 DDR4 계열 양산 종료 일정을 밟고 있다. 카운터포인트리서치에 따르면 메모리 가격은 2025년 4분기에 40~50% 급등한 데 이어 2026년 1분기 추가 40~50%, 2분기 약 20% 추가 상승이 전망됐으며, 트렌드포스는 이 수급 불균형이 2027년까지 지속될 것으로 분석했다. 차량용 시장에서는 도요타·덴소·보쉬 등 글로벌 Tier-1 업체들이 LPDDR4/5와 eMMC 등 레거시 메모리의 심각한 공급 공백을 보고하고 있으며, AI 서버 우선 공급 기조가 이어지는 한 이 현상은 구조적으로 유지될 가능성이 크다. 팹리스 경쟁 구도에서는 대만의 Winbond·Macronix·Nanya 등이 레거시 DRAM 시장에서 경쟁력을 강화하고 있으며, 국내 제주반도체도 LPDDR4X·NAND 영역에서 경쟁 중이다. 피델릭스의 차별점은 국내 팹리스 가운데 DRAM과 Flash를 동시에 보유한 드문 사례라는 점과, 중국 시장 영업망 및 현지 파운드리와의 협력을 통해 미·중 반도체 갈등 속에서도 독자적 공급 경로를 갖추고 있다는 점이다.",
+  "en": "The global memory semiconductor market is undergoing structural realignment as HBM and high-performance DDR5 absorb the bulk of manufacturing capacity driven by AI and data center demand. Samsung effectively stopped accepting new LPDDR4 orders from mid-2025, while SK Hynix is on track to complete DDR4 family production in Q1–Q2 2026. Counterpoint Research projected memory prices rose 40–50% in Q4 2025, with additional 40–50% and ~20% gains in Q1 and Q2 2026, respectively; TrendForce expects supply-demand imbalances to persist through 2027. In the automotive sector, global Tier-1 suppliers including Toyota, Denso, and Bosch are reporting severe LPDDR4/5 and eMMC shortages, a structural gap that is likely to persist as long as AI server demand commands supply priority. In the fabless competitive landscape, Taiwan's Winbond, Macronix, and Nanya are strengthening their positions in legacy DRAM, while domestically, Jeju Semiconductor competes in LPDDR4X and NAND. Fidelix is differentiated as one of the very few domestic fabless companies with both DRAM and Flash capabilities, and its Chinese market distribution network and local foundry cooperation provide independent supply routes amid ongoing US-China semiconductor friction."
+ },
+ "outlook": {
+  "ko": "피델릭스는 연말을 목표로 자체 설계 기반 LPDDR4 제품 개발을 진행 중이라고 공시를 통해 밝혔다. 회사 측은 이 제품이 양산에 진입하면 외부 조달 의존 재판매 구조에서 벗어나 자체 설계 오너십 확보로 수익성 구조가 개선될 것으로 기대한다고 설명했다. KAIST와 공동으로 추진 중인 NPU 기반 Wide-I/O DRAM 개발 프로젝트(4년 규모 국가 R&D)는 2026년 하반기 설계 완료 및 3분기 초도 시제품 제작을 목표로 하고 있어, 중장기 AI 엣지 메모리 신사업의 씨앗이 될 수 있다. 차량용 인포테인먼트와 자율주행 보조 시스템을 겨냥한 저전력·고신뢰성 메모리 솔루션도 추진 중이며, 일부 차량용 칩셋 업체와의 인증을 완료 단계로 알려져 있다. 회사 측은 레거시 메모리 공급 부족에 따른 가격 및 마진 개선 흐름이 2026년과 2027년까지 지속될 가능성이 크다는 시각을 공개적으로 밝힌 바 있다. 단기적으로는 2026년 2분기 실적(8월 공시 예상)이 1분기 이익 모멘텀의 지속 여부를 가늠하는 첫 번째 검증 포인트가 된다. 다만 자체 설계 LPDDR4 양산까지는 파운드리 협력, 고객 인증(Qualification) 일정 등 실행 리스크가 존재하며, KAIST 공동 AI 칩의 상용화는 4년 이상의 장기 과제임을 감안해야 한다.",
+  "en": "Fidelix has publicly stated its target of completing in-house LPDDR4 design by end-2026, with management indicating that upon successful ramp, transitioning from externally procured resale to proprietary-design products would structurally improve margins through design ownership. The joint 4-year national R&D project with KAIST targeting NPU-based Wide-I/O DRAM aims for design completion in H2 2026 and a first prototype in Q3 2026, potentially seeding entry into the AI edge memory market over the medium term. The company is also developing low-power, high-reliability memory solutions for automotive infotainment and ADAS, with qualification reportedly near completion at certain automotive chipset vendors. Management has openly stated its view that the favorable pricing and margin environment from the legacy memory supply imbalance is likely to persist through 2026 and 2027. In the near term, Q2 2026 earnings (expected around August 2026) will be the first key test of whether Q1's momentum can be sustained. However, execution risks remain for the LPDDR4 self-design ramp — including foundry coordination and customer qualification timelines — and the KAIST AI chip project is a multi-year commercialization effort."
+ },
+ "valuation_comment": {
+  "ko": "피델릭스의 주가순자산배율은 현재 순자산(BPS 약 1,503원) 대비 상당한 프리미엄 구간에 형성되어 있으며, 이는 레거시 메모리 공급 부족 수혜와 이익 회복 기대가 선반영된 측면이 크다. 주당순이익(EPS)은 적자에서 이익 회복 국면으로 전환하며 93원을 기록 중으로, 이익 회복 초기 단계에서는 주가수익배율이 구조적으로 높게 형성되는 경향이 있어 수치 자체보다 이익 개선의 방향성과 지속성이 핵심 판단 기준이 된다. 배당은 과거 지급 실적이 없어 배당수익률이 업종 평균을 크게 밑돈다. 과거 메모리 업황 호황기와 현재 사이클의 비교, 그리고 자체 설계 제품 양산으로의 전환이 실현되는지 여부가 순자산 대비 프리미엄의 정당성을 가늠하는 핵심 변수다. 이익 회복 추세가 구조적으로 이어진다면 프리미엄의 근거가 강화되지만, 메모리 가격 사이클이 반전되거나 자체 설계 양산이 지연될 경우 밸류에이션 부담이 부각될 수 있다.",
+  "en": "Fidelix's price-to-book ratio stands at a significant premium relative to its per-share net asset value (BPS of approximately ₩1,503), reflecting expectations of ongoing legacy memory supply shortage benefits and earnings recovery that are already priced in to a degree. Earnings per share (EPS) of ₩93 represents an early-stage transition from losses to profitability; at such inflection points, price-to-earnings multiples structurally tend to appear elevated, making the direction and sustainability of earnings improvement more meaningful than the multiple itself. The company has no dividend history, placing its yield well below sector averages. The key valuation variables are how long the favorable legacy memory pricing cycle sustains and whether the transition to proprietary-design products materializes — these factors determine whether the current premium to book value is justified. If the earnings recovery proves structural, the premium strengthens; if the memory price cycle reverses or the in-house product ramp faces delays, valuation pressure could emerge."
+ },
+ "bull": [
+  {
+   "title": {
+    "ko": "레거시 메모리 공급 부족의 구조적 수혜",
+    "en": "Structural Beneficiary of the Legacy Memory Supply Crunch"
+   },
+   "body": {
+    "ko": "삼성전자와 SK하이닉스가 LPDDR4 계열 생산을 순차적으로 종료하면서 소형 가전·통신 모듈·IoT·자동차용 레거시 메모리 수요처에 구조적 공급 공백이 발생했다. 피델릭스는 이 공백을 외부 조달 재판매와 자체 설계 제품으로 동시에 공략할 수 있는 국내 거의 유일한 팹리스 DRAM+Flash 업체라는 점에서 포지셔닝 우위가 있다. 카운터포인트리서치와 트렌드포스는 이 수급 불균형이 2027년까지 이어질 것으로 전망해 사이클 수혜 기간이 길 수 있다.",
+    "en": "As Samsung and SK Hynix sequentially wind down LPDDR4 production, a structural supply gap has opened across consumer electronics, communication modules, IoT, and automotive legacy memory applications. Fidelix is one of the very few domestic fabless companies with both DRAM and Flash capabilities to address this gap through both procured resale and proprietary products. Counterpoint Research and TrendForce expect supply-demand imbalances to persist through 2027, suggesting an extended cycle benefit."
+   }
+  },
+  {
+   "title": {
+    "ko": "자체 설계 LPDDR4 양산 시 수익성 레버리지 확대",
+    "en": "Proprietary LPDDR4 Design to Expand Margin Leverage"
+   },
+   "body": {
+    "ko": "현재 수익의 상당 부분이 삼성·SK하이닉스 제품을 조달해 마진을 붙여 재판매하는 구조에 의존한다. 연말 목표로 개발 중인 자체 설계 LPDDR4가 양산에 진입하면 설계 오너십 확보로 원가 구조가 개선되고 파운드리 가용성에 따른 공급 불확실성도 줄어든다. 이는 2026년 1분기에 달성한 높은 영업이익률을 중장기적으로 유지·강화하는 구조적 기반이 될 수 있다.",
+    "en": "A substantial portion of current revenue relies on margin-spread resale of Samsung and SK Hynix products. If the in-house LPDDR4 design — targeted for completion by end-2026 — enters production, proprietary design ownership would improve the cost structure and reduce supply uncertainty linked to foundry availability. This could sustainably support and potentially enhance the strong operating margins demonstrated in Q1 2026."
+   }
+  },
+  {
+   "title": {
+    "ko": "오토모티브·AI 엣지로의 응용처 다변화",
+    "en": "Diversification into Automotive and AI Edge Applications"
+   },
+   "body": {
+    "ko": "차량 내 인포테인먼트와 자율주행 보조 시스템에 최적화된 저전력·고신뢰성 메모리 솔루션 개발을 진행하고 있으며 주요 차량용 칩셋 업체와의 인증도 완료 단계인 것으로 알려졌다. KAIST와의 NPU 기반 Wide-I/O DRAM 공동 개발은 AI 엣지 연산용 맞춤형 메모리 시장을 겨냥한 중장기 성장 씨앗이다. 자동차용 반도체 시장은 전기차·자율주행 확산으로 수년간 구조적 성장이 예상돼 응용처 다변화에 따른 장기 매출 안정성을 높일 수 있다.",
+    "en": "The company is developing low-power, high-reliability memory solutions for automotive infotainment and ADAS, with qualification reportedly near completion at key automotive chipset vendors. The joint KAIST project on NPU-based Wide-I/O DRAM seeds entry into the custom AI edge memory market over the medium term. Structural growth in the automotive semiconductor market driven by EV and autonomous driving adoption could underpin long-term revenue stability."
+   }
+  }
+ ],
+ "bear": [
+  {
+   "title": {
+    "ko": "이익 개선이 사이클 의존적 — 가격 반전 시 취약",
+    "en": "Earnings Improvement is Cycle-Dependent — Vulnerable to a Price Reversal"
+   },
+   "body": {
+    "ko": "2026년 1분기의 높은 영업이익률은 레거시 메모리 가격 급등이라는 외생 변수에 크게 기인한다. 글로벌 메모리 대형사들의 레거시 생산 재개, 중국 CXMT 등의 공급 확대, 또는 수요 위축이 발생하면 가격 정상화가 빠르게 진행될 수 있다. 2022~2024년 실적 사이클이 보여주듯 메모리 업황에 따른 이익 변동성이 극히 크다는 점이 구조적 리스크다.",
+    "en": "The strong operating margins in Q1 2026 are heavily reliant on the exogenous variable of surging legacy memory prices. Should major global players resume legacy production, China's CXMT or others ramp supply, or demand softens, price normalization could be swift. The 2022–2024 earnings cycle clearly demonstrates the company's extreme sensitivity to memory market conditions."
+   }
+  },
+  {
+   "title": {
+    "ko": "팹리스 구조상 파운드리 의존 리스크",
+    "en": "Foundry Dependency Inherent to the Fabless Model"
+   },
+   "body": {
+    "ko": "자체 생산 시설이 없어 대만 파워칩 등 파운드리에 전적으로 의존하는 구조다. 파운드리 가격 인상, 웨이퍼 할당 축소, 지정학적 리스크(대만 해협 긴장)가 발생하면 원가 상승과 납기 차질이 직결된다. 자체 설계 LPDDR4의 양산 일정도 파운드리 협력 및 고객 인증 절차에 달려 있어 지연 가능성이 내재한다.",
+    "en": "Without its own fabs, the company is entirely dependent on foundries such as Taiwan's Powerchip. Foundry price increases, wafer allocation cuts, or geopolitical risks surrounding Taiwan would directly impact costs and delivery schedules. The production ramp of the in-house LPDDR4 design also hinges on foundry cooperation and customer qualification timelines, embedding meaningful execution risk."
+   }
+  },
+  {
+   "title": {
+    "ko": "미·중 무역 갈등에 따른 공급망 이중 노출",
+    "en": "Dual Supply Chain Exposure from US-China Trade Tensions"
+   },
+   "body": {
+    "ko": "미국의 대중국 반도체 수출 통제가 저사양 AI 칩까지 확대되면서 SMIC 등 중국 파운드리와의 협력 관계에 규제 리스크가 생기고 있다. 반면 중국 반도체 자립화 흐름에서 수혜주로 부각되기도 하지만, 정책 환경 변화에 따라 중국 내 영업망이 타격받을 수 있다. 수출 비중 약 70%에 달하는 글로벌 공급망이 미·중 양측 규제 모두에 노출된 구조적 양면성이 있다.",
+    "en": "Tightening US export controls on China — now extending to low-end AI chips — create regulatory risk for cooperation with Chinese foundries such as SMIC. While Fidelix has been highlighted as a potential beneficiary of China's semiconductor self-sufficiency push, a policy reversal could harm its Chinese distribution network. With exports representing ~70% of revenue, the company's global supply chain is structurally exposed to regulatory risk from both sides of the US-China divide."
+   }
+  }
+ ],
+ "risks": [
+  {
+   "cat": {
+    "ko": "메모리 가격 사이클 반전 리스크",
+    "en": "Memory Price Cycle Reversal Risk"
+   },
+   "body": {
+    "ko": "현재 실적 회복의 핵심 동인은 레거시 메모리 가격 급등이다. 공급 측에서 글로벌 대형사의 레거시 생산 재개나 중국 업체들의 공급 확대가 발생하거나, 수요 측에서 글로벌 경기 둔화 또는 스마트폰·IoT 수요 감소가 현실화되면 가격 급락이 발생할 수 있다. 2023~2024년 연속 영업적자 사례가 이 리스크의 현실성을 보여준다.",
+    "en": "The current earnings recovery is primarily driven by surging legacy memory prices. Supply-side restarts by major global players or output increases from Chinese competitors, and demand-side softening from global economic slowdown or reduced smartphone/IoT demand, could trigger a sharp price decline. The consecutive operating losses of 2023–2024 clearly illustrate the severity of this risk."
+   }
+  },
+  {
+   "cat": {
+    "ko": "자체 설계 LPDDR4 개발·양산 지연 리스크",
+    "en": "In-House LPDDR4 Development and Ramp Execution Risk"
+   },
+   "body": {
+    "ko": "연말을 목표로 개발 중인 자체 설계 LPDDR4 제품은 설계 오류, 파운드리 공정 매칭, 고객 인증 절차에서 지연 가능성이 있다. 제품 출시가 지연되면 공급 공백 수혜 기간과 맞물리지 못해 기회를 잃을 수 있고, 개발 비용 증가로 이익 모멘텀이 희석될 수 있다. KAIST 공동 AI 칩도 상용화까지 4년 이상이 소요되는 장기 과제임을 감안해야 한다.",
+    "en": "The in-house LPDDR4 design product targeted for year-end 2026 faces execution risks including design errors, foundry process matching, and customer qualification procedures. Delays could cause the company to miss the supply shortage window, while development cost overruns could dilute earnings momentum. The KAIST AI chip project is also a multi-year commercialization effort with a timeline exceeding four years."
+   }
+  },
+  {
+   "cat": {
+    "ko": "지정학·규제 리스크",
+    "en": "Geopolitical and Regulatory Risk"
+   },
+   "body": {
+    "ko": "미국의 대중국 반도체 수출 규제가 저사양 AI 칩까지 확대되는 추세로, 피델릭스의 중국 파운드리 협력이나 중국 시장 공급에 새로운 규제 장벽이 생길 수 있다. 주요 파운드리가 집중된 대만의 지정학적 리스크도 상시 잠재하며, 이 두 가지 리스크가 동시에 현실화되면 공급망 전반에 큰 충격이 발생할 수 있다. 글로벌 반도체 공급망 재편 속도에 따라 사업 환경 변화가 빠르게 진행될 수 있다.",
+    "en": "US export controls on China are expanding to cover low-end AI chips, potentially creating new regulatory barriers for Fidelix's cooperation with Chinese foundries or supply into the Chinese market. Geopolitical risk surrounding Taiwan — where key foundries including Powerchip are concentrated — is a persistent latent threat. Simultaneous materialization of both risks could deliver a severe supply chain shock, and the pace of global semiconductor supply chain restructuring adds further environmental volatility."
+   }
+  }
+ ],
+ "checkpoints": [
+  {
+   "when": {
+    "ko": "2026년 8월 중순",
+    "en": "Mid-August 2026"
+   },
+   "what": {
+    "ko": "2026년 2분기 실적 공시 — 1분기에 달성한 약 20% 영업이익률이 지속되는지, 레거시 메모리 가격 상승분이 수익에 계속 반영되는지가 핵심 확인 포인트.",
+    "en": "Q2 2026 earnings disclosure — key check on whether the ~20% operating margin from Q1 is sustainable and whether legacy memory price tailwinds continue to flow through to profits."
+   }
+  },
+  {
+   "when": {
+    "ko": "2026년 3분기 중",
+    "en": "Within Q3 2026"
+   },
+   "what": {
+    "ko": "KAIST 공동 개발 NPU 기반 Wide-I/O DRAM 초도 시제품 제작 일정 확인 — 계획 대비 진행 상황이 AI 엣지 메모리 신사업의 가시성을 결정한다.",
+    "en": "Check on KAIST joint NPU-based Wide-I/O DRAM first prototype fabrication — on-time execution would raise the visibility of the AI edge memory growth track; delays would signal higher R&D risk."
+   }
+  },
+  {
+   "when": {
+    "ko": "2026년 4분기~2027년 초",
+    "en": "Q4 2026 – Early 2027"
+   },
+   "what": {
+    "ko": "자체 설계 LPDDR4 제품 개발 완료 및 파운드리 양산 일정 발표 여부 — 자체 설계 오너십 확보 실현과 파운드리 Qualification 진행 상황이 중장기 수익성 구조를 결정하는 분기점.",
+    "en": "Monitor for announcements on in-house LPDDR4 design completion and foundry mass production schedule — the key bifurcation point for whether proprietary margin improvement materializes or remains aspirational."
+   }
+  },
+  {
+   "when": {
+    "ko": "2026년 하반기 상시",
+    "en": "Ongoing in H2 2026"
+   },
+   "what": {
+    "ko": "글로벌 레거시 DRAM(LPDDR4, DDR4) 현물 가격 동향 및 삼성·SK하이닉스·마이크론의 공급 확대 여부 — 가격 사이클 반전의 조기 신호를 모니터링해 업황 변화를 선제적으로 파악.",
+    "en": "Track global legacy DRAM (LPDDR4, DDR4) spot price trends and any signals of supply expansion by Samsung, SK Hynix, or Micron — early warning indicators of a price cycle reversal that would directly impact earnings."
+   }
+  },
+  {
+   "when": {
+    "ko": "2026년 연간 실적 발표 (2027년 초)",
+    "en": "Full-Year 2026 Results (Early 2027)"
+   },
+   "what": {
+    "ko": "연간 기준 완전 흑자 전환 여부 및 영업활동 현금흐름의 플러스 전환 확인 — 2025년 말 -24.3억 원이었던 영업 현금흐름 개선이 재무 체력 회복의 핵심 지표.",
+    "en": "Confirmation of full-year 2026 profitability and a positive swing in operating cash flow — recovering from the -₩2.4B operating cash flow of 2025 is the critical indicator of underlying financial health restoration."
+   }
+  }
+ ],
+ "verdict": {
+  "body": {
+   "ko": "피델릭스는 삼성·SK하이닉스의 LPDDR4 EOL이 만든 레거시 메모리 공급 공백을 팹리스 포지셔닝으로 직접 수혜화하며 2025년 4분기 분기 흑자전환, 2026년 1분기 큰 폭의 영업이익 확대를 달성했다. 자체 설계 LPDDR4 양산(2026년 말 목표)과 KAIST 공동 AI 칩 개발(4년 R&D)은 단기 수혜를 중장기 경쟁력으로 전환하려는 전략적 시도로 평가되며, 이 두 과제의 실행 진척도가 향후 기업 가치의 방향을 가를 핵심 변수다. 반면 현재의 높은 수익성은 레거시 메모리 가격 급등이라는 외생 변수에 크게 의존하므로, 공급 증가 또는 수요 위축 시 사이클 반전에 취약한 구조임을 간과해선 안 된다. 팹리스 특성상 파운드리 의존도, 대만 지정학 리스크, 미·중 무역 규제 변화도 상시 모니터링이 필요한 요소들이다. 2026년 2분기 실적과 자체 설계 LPDDR4 개발 진행 상황이 현재 이익 개선이 구조적인지 사이클적인지를 판단하는 핵심 근거가 될 것이며, 2025년 말 마이너스였던 영업활동 현금흐름의 플러스 전환 여부도 주목할 재무 지표다.",
+   "en": "Fidelix has leveraged its fabless positioning to directly benefit from the legacy memory supply gap created by LPDDR4 EOL at Samsung and SK Hynix, delivering a return to quarterly profitability in Q4 2025 and a sharp operating profit expansion in Q1 2026. The in-house LPDDR4 design initiative (targeting year-end 2026) and the joint KAIST AI chip R&D project are strategic attempts to convert short-term cyclical benefits into longer-term competitive advantage — and progress on these two initiatives will be the key determinant of the company's forward trajectory. However, the current strong profitability is heavily reliant on the exogenous variable of surging legacy memory prices, making the company structurally vulnerable to a cycle reversal if supply rises or demand softens. The fabless model's foundry dependency, Taiwan geopolitical risk, and evolving US-China trade regulations all warrant ongoing monitoring. Q2 2026 earnings results and in-house LPDDR4 development milestones will be pivotal evidence for determining whether the earnings improvement is structural or cyclical; a positive swing in operating cash flow from its negative 2025 level will also be a critical indicator of underlying financial health restoration."
+  }
+ },
+ "sources": [
+  "https://alphasquare.co.kr/home/stock-summary?code=032580",
+  "https://m.thinkpool.com/compDiscuss/cont/1026004",
+  "https://comp.fnguide.com/SVO2/ASP/SVD_Main.asp?gicode=A032580",
+  "https://m.thinkpool.com/item/032580",
+  "https://www.investing.com/equities/fidelix-co-ltd",
+  "https://ssl.pstatic.net/imgstock/upload/research/company/1704236865551.pdf",
+  "https://valueline.co.kr/finance/summary/032580",
+  "https://valueline.co.kr/finance/turnaround/032580",
+  "https://moneypie.net/wiki/v/피델릭스",
+  "https://www.thedailymoney.com/news/articleView.html?idxno=1139720",
+  "https://www.pinpointnews.co.kr/news/articleView.html?idxno=451865",
+  "https://www.graniteriverlabs.com/en-us/technical-blog/latest-ddr-overview-lpddr-comparison",
+  "https://cokenpike.com/lpddr-%EA%B4%80%EB%A0%A8%EC%A3%BC-%EB%8C%80%EC%9E%A5%EC%A3%BC-1%EB%B6%84-%EC%A0%95%EB%A6%AC-%EB%B0%98%EB%8F%84%EC%B2%B4-%EA%B4%80%EB%A0%A8-%EC%A3%BC%EC%8B%9D-%EC%8B%9C%EB%A6%AC%EC%A6%88-4%ED%8E%B8/",
+  "https://www.incruit.com/company/354034/",
+  "https://www.etoday.co.kr/news/view/2583324",
+  "https://m.thinkpool.com/stockDiscuss/200470/cont/11884557",
+  "https://www.etoday.co.kr/news/view/2588412",
+  "http://forum.38.co.kr/html/news/?o=v&m=&key=&no=1962336&page=25"
+ ],
+ "v": 2,
+ "model": "claude-sonnet-4-6",
+ "ticker": "032580",
+ "name": "피델릭스",
+ "name_en": "Fidelix Co., Ltd.",
+ "sector": "반도체",
+ "categories": [
+  "반도체"
+ ],
+ "market": "코스닥",
+ "reportDate": "2026-06-19",
+ "reportTs": "2026-06-19 00:25",
+ "dataDate": "20260618",
+ "quant": {
+  "asOf": "2026-06-18",
+  "fs_basis": "연결(CFS) · DART 공시 확정치 · 지배주주 기준 순이익",
+  "annual": [
+   {
+    "year": 2025,
+    "rev": 53615518212,
+    "op": -2066008789,
+    "np": -2963388471,
+    "np_owner": -2963388471,
+    "equity": 44800604681,
+    "equity_owner": 44800604681,
+    "liab": 12621503614,
+    "cfo": -2431900454,
+    "eps_basic": -89,
+    "opm": -3.9,
+    "roe": -6.6,
+    "debt_ratio": 28.2
+   },
+   {
+    "year": 2024,
+    "rev": 44810331384,
+    "op": -4528465335,
+    "np": -2206307623,
+    "np_owner": -2206307623,
+    "equity": 47550626152,
+    "equity_owner": 47550626152,
+    "liab": 9129957344,
+    "cfo": -1545445780,
+    "eps_basic": -67,
+    "opm": -10.1,
+    "roe": -4.6,
+    "debt_ratio": 19.2
+   },
+   {
+    "year": 2023,
+    "rev": 52783978412,
+    "op": 710092106,
+    "np": 1061919010,
+    "np_owner": 1061919010,
+    "equity": 49963549023,
+    "equity_owner": 49963549023,
+    "liab": 7463702735,
+    "cfo": 2423950906,
+    "eps_basic": 32,
+    "opm": 1.3,
+    "roe": 2.1,
+    "debt_ratio": 14.9
+   },
+   {
+    "year": 2022,
+    "rev": 72559081230,
+    "op": 6281389514,
+    "np": 8246655718,
+    "np_owner": 8246655718,
+    "equity": 49066283806,
+    "equity_owner": 49066283806,
+    "liab": 8700926916,
+    "cfo": 760729169,
+    "eps_basic": 249,
+    "opm": 8.7,
+    "roe": 16.8,
+    "debt_ratio": 17.7
+   }
+  ],
+  "quarterly": [
+   {
+    "q": "2025Q1",
+    "rev": 10879557541,
+    "op": -624412172,
+    "np_owner": -767150078
+   },
+   {
+    "q": "2025Q2",
+    "rev": 11948325874,
+    "op": -1586627034,
+    "np_owner": -2870000607
+   },
+   {
+    "q": "2025Q3",
+    "rev": 12540490283,
+    "op": -894471353,
+    "np_owner": -580515519
+   },
+   {
+    "q": "2025Q4",
+    "rev": 18247144514,
+    "op": 1039501770,
+    "np_owner": 1254277733
+   },
+   {
+    "q": "2026Q1",
+    "rev": 21489395543,
+    "op": 4331943526,
+    "np_owner": 5254231977
+   }
+  ],
+  "valuation": {
+   "price": 6000,
+   "mcap": 0.1988,
+   "shares": 33132064,
+   "total_shares": 33132064,
+   "wavg_shares": 33296499,
+   "per": 64.5,
+   "eps": 93,
+   "pbr": 3.99,
+   "bps": 1503,
+   "roe_ttm": 6.3,
+   "ttm_window": "2025Q2~2026Q1",
+   "ttm_np_owner": 3057993584,
+   "pbr_krx": 4.43,
+   "bps_krx": 1353.0,
+   "basis": "PER·EPS·PBR·BPS 모두 자체 산출(네이버·토스와 동일 방식) · 배당은 DART 공시 주당현금배당금(보완:KRX) ÷ 현재가",
+   "dps": 0.0,
+   "div": 0.0
+  }
+ }
+}
