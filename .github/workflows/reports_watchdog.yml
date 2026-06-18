@@ -1,0 +1,51 @@
+name: 리포트 백필 워치독 (자동 재가동)
+
+# self-chain이 어떤 이유로든 끊겨도(런 실패·취소·디스패치 유실) 주기적으로 점검해
+# 상위 1000개 중 남은 리포트가 있고 진행 중인 run이 없으면 백필을 다시 시작한다.
+# → 컨테이너/세션 수명과 무관하게 "완성될 때까지 절대 멈추지 않음"을 보장.
+
+on:
+  schedule:
+    - cron: '15 * * * *'   # 매시 15분 (GitHub cron은 지연될 수 있으나 안전망으로 충분)
+  workflow_dispatch:
+
+concurrency:
+  group: reports-watchdog
+  cancel-in-progress: false
+
+permissions:
+  contents: read
+  actions: write
+
+jobs:
+  watchdog:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: 남은 리포트 점검 후 필요 시 재가동
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          remaining=$(python scripts/_fill_remaining.py 1000)
+          echo "상위 1000 중 남은 리포트: $remaining"
+          if [ "$remaining" -le 0 ]; then
+            echo "→ 완료 상태. 재가동 불필요."
+            exit 0
+          fi
+          # 진행 중인 리포트 v2 run이 있으면 건드리지 않음(중복 방지)
+          active=$(gh run list --workflow=generate_reports_v2.yml \
+                     --status in_progress --json databaseId --jq 'length')
+          queued=$(gh run list --workflow=generate_reports_v2.yml \
+                     --status queued --json databaseId --jq 'length')
+          echo "진행 중 $active · 대기 $queued"
+          if [ "${active:-0}" -gt 0 ] || [ "${queued:-0}" -gt 0 ]; then
+            echo "→ 이미 진행 중. 워치독 대기."
+            exit 0
+          fi
+          echo "→ 진행 중인 run 없음 + 남은 $remaining개 → 백필 재가동"
+          gh workflow run generate_reports_v2.yml \
+            -f mode=auto -f top_n=100 -f fill_to=1000

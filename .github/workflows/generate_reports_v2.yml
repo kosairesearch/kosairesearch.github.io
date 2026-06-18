@@ -19,8 +19,9 @@ on:
         description: 'recover 모드용 배치 ID(비우면 최근 배치)'
         default: ''
 
+# run마다 독립 그룹 → 백필 청크를 병렬 실행 가능(각 run은 별도 체크아웃, 파일 충돌 없음).
 concurrency:
-  group: kos-reports
+  group: kos-reports-${{ github.run_id }}
   cancel-in-progress: false
 
 jobs:
@@ -81,7 +82,7 @@ jobs:
       # 자동 백필 self-chain: 상위 fill_to개 중 남은 종목이 있고 이번에 진척이 있었으면 다음 청크 재실행.
       # 진척 0(생성 불가 종목만 남음)이면 멈춰서 무한루프 방지.
       - name: 다음 청크 self-chain
-        if: ${{ inputs.fill_to != '0' && inputs.fill_to != '' }}
+        if: ${{ always() && inputs.fill_to != '0' && inputs.fill_to != '' }}
         env:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |

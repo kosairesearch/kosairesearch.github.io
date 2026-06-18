@@ -33,6 +33,21 @@ import generate_reports as g  # log/extract_text/collect_sources/load_stocks 재
 
 OUT_DIR = ROOT / "data" / "reports_v2"
 STATE_JS = ROOT / "data" / "batch_state_v2.json"
+# 생성 불가 종목(DART 재무 없음: 인프라펀드·스팩·일부 지주 등) — 백필이 영원히 재시도하지 않도록 기록
+SKIP_FILE = ROOT / "data" / "reports_v2_skip.txt"
+
+
+def load_skip():
+    if SKIP_FILE.exists():
+        return {ln.strip() for ln in SKIP_FILE.read_text(encoding="utf-8").splitlines() if ln.strip()}
+    return set()
+
+
+def add_skip(tickers):
+    if not tickers:
+        return
+    merged = sorted(load_skip() | set(tickers))
+    SKIP_FILE.write_text("\n".join(merged) + "\n", encoding="utf-8")
 
 MODEL = os.getenv("REPORT_MODEL_V2", "claude-opus-4-8")  # 폴백
 # 모델 정책: 시총 상위 MODEL_TOP_N개는 고급 모델(Opus), 나머지는 효율 모델(Sonnet)
@@ -632,8 +647,10 @@ def pick_targets():
     # 자동 백필(fill): 시총 상위 FILL_TO개 중 아직 v2 리포트가 없는 종목을 위에서부터 TOP_N개
     fill_to = int(os.getenv("REPORT_FILL_TO", "0") or "0")
     if fill_to:
+        skip = load_skip()
         ranked = sorted(data["stocks"], key=lambda x: x.get("mcap", 0) or 0, reverse=True)[:fill_to]
-        missing = [s for s in ranked if not (OUT_DIR / f"{s['ticker']}.json").exists()]
+        missing = [s for s in ranked
+                   if not (OUT_DIR / f"{s['ticker']}.json").exists() and s["ticker"] not in skip]
         return data, missing[:TOP_N]
     stocks = sorted(data["stocks"], key=lambda x: x.get("mcap", 0) or 0, reverse=True)[:TOP_N]
     return data, stocks
@@ -734,11 +751,12 @@ def submit(cl, as_of):
     log(f"## 🤖 리포트 v2 Batch 제출 — {len(targets)}개 · 상위{MODEL_TOP_N} {MODEL_TOP} / 나머지 {MODEL_REST}")
     quants = collect_all_quant(targets, data)
 
-    reqs, models = [], {}
+    reqs, models, excluded = [], {}, []
     for st in targets:
         tk = st["ticker"]
         if tk not in quants or not quants[tk]["annual"]:
             log(f"  · ⚠️ {tk} 정량 데이터 없음 — 제외")
+            excluded.append(tk)
             continue
         mdl = model_for(rank_of.get(tk))
         models[tk] = mdl
@@ -753,9 +771,15 @@ def submit(cl, as_of):
                 messages=[{"role": "user", "content": prompt}],
             ),
         ))
+    # 백필(fill) 모드에서 정량 데이터가 없어 제외된 종목은 skip 목록에 기록 →
+    # self-chain/watchdog이 같은 종목을 영원히 재시도하지 않고 정상 종료한다.
+    # (명시적 티커 지정 run은 skip을 건드리지 않아 병렬 실행 시 파일 충돌이 없다.)
+    if os.getenv("REPORT_FILL_TO", "0") not in ("0", "") and excluded:
+        add_skip(excluded)
+        log(f"- 생성 불가 {len(excluded)}개 skip 기록 → data/reports_v2_skip.txt")
     if not reqs:
         log("❌ 제출할 요청이 없습니다.")
-        sys.exit(1)
+        sys.exit(0)
     n_top = sum(1 for m in models.values() if m == MODEL_TOP)
     log(f"- 모델 배분: {MODEL_TOP} {n_top}개 · {MODEL_REST} {len(models)-n_top}개")
 

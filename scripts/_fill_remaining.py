@@ -12,14 +12,24 @@ ROOT = Path(__file__).resolve().parent.parent
 fill_to = int(sys.argv[1]) if len(sys.argv) > 1 else 1000
 ref = sys.argv[2] if len(sys.argv) > 2 else None
 
+def _skip(text):
+    return {ln.strip() for ln in (text or "").splitlines() if ln.strip()}
+
+
 if ref:
     stocks_js = subprocess.check_output(["git", "show", f"{ref}:data/stocks.js"], cwd=ROOT, text=True)
     names = subprocess.check_output(["git", "ls-tree", "-r", "--name-only", ref, "data/reports_v2"], cwd=ROOT, text=True)
     have = {Path(n).stem for n in names.splitlines() if n.endswith(".json")}
+    try:
+        skip = _skip(subprocess.check_output(["git", "show", f"{ref}:data/reports_v2_skip.txt"], cwd=ROOT, text=True, stderr=subprocess.DEVNULL))
+    except Exception:
+        skip = set()
 else:
     stocks_js = (ROOT / "data" / "stocks.js").read_text(encoding="utf-8")
     have = {p.stem for p in (ROOT / "data" / "reports_v2").glob("*.json")}
+    sf = ROOT / "data" / "reports_v2_skip.txt"
+    skip = _skip(sf.read_text(encoding="utf-8")) if sf.exists() else set()
 
 obj = json.loads(re.search(r"=\s*(\{.*)", stocks_js, re.S).group(1).strip().rstrip(";"))
 stocks = sorted(obj["stocks"], key=lambda x: x.get("mcap", 0) or 0, reverse=True)[:fill_to]
-print(sum(1 for s in stocks if s["ticker"] not in have))
+print(sum(1 for s in stocks if s["ticker"] not in have and s["ticker"] not in skip))
