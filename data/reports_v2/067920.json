@@ -1,0 +1,356 @@
+{
+ "title": {
+  "ko": "SIEM 강자 이글루, AI·XDR 전환기 실적 변동성",
+  "en": "IGLOO: SIEM Incumbent Navigating AI/XDR Transition Amid Earnings Volatility"
+ },
+ "lead": {
+  "ko": "국내 SIEM 시장 20년 이상 1위를 지켜온 이글루코퍼레이션이 연결 범위 확대·AI-Open XDR 전환으로 외형 고성장 국면에 진입했으나, 극단적 Q4 계절성과 지배주주 귀속 이익 가시성 저하가 단기 투자 판단의 핵심 변수로 부각된다.",
+  "en": "IGLOO Corporation, Korea's 20-year SIEM market leader, has entered a high-revenue-growth phase through consolidation and an AI-driven Open XDR pivot, but extreme Q4 seasonality and reduced controlling-shareholder earnings visibility have emerged as the defining near-term variables."
+ },
+ "keypoints": [
+  {
+   "ko": "공공 통합보안관리 시장점유율 70% 이상, 국내 SIEM 1위 20년 유지 — 인증 기반의 높은 진입장벽",
+   "en": "70%+ share in public-sector integrated security management; 20-year domestic SIEM leadership — certification-backed entry barriers"
+  },
+  {
+   "ko": "2025년 매출 1,433억원(+28.8%), 영업이익률 11.2%(전년 5.5%), CFO 185억원으로 현금 창출력 대폭 개선",
+   "en": "FY2025 revenue KRW 143.3B (+28.8% YoY), OPM 11.2% (vs. 5.5% in 2024), CFO KRW 18.5B — materially stronger cash generation"
+  },
+  {
+   "ko": "2026Q1 매출 389억원(전년동기比 +65.8%)에도 영업손실 -32억원으로 확대 — 연결 고정비 구조 점검 필요",
+   "en": "Q1 2026 revenue up 65.8% YoY to KRW 38.9B yet operating loss widened to KRW -3.2B — consolidated fixed-cost structure warrants close monitoring"
+  },
+  {
+   "ko": "2026년 국내 사이버보안 시장 4조원 돌파(+16.1%) 전망, AI·MSS 수요 확대로 구조적 성장 국면 지속",
+   "en": "Domestic cybersecurity market forecast to exceed KRW 4T in 2026 (+16.1%), with structural growth driven by AI and MSS demand"
+  },
+  {
+   "ko": "연결 확대로 비지배주주지분 급증, 지배주주 귀속 순이익이 영업이익 대비 현저히 작아지는 이익 구조 변화 확인 필요",
+   "en": "Rapid NCI expansion from consolidation has created a large gap between operating profit and controlling-shareholder net income — earnings structure requires scrutiny"
+  }
+ ],
+ "business": {
+  "ko": "이글루코퍼레이션(대표 이득춘)은 1999년 11월 설립된 국내 정보보안 1세대 기업으로, 통합보안관리솔루션(SIEM)과 보안관제서비스(MSS)를 양대 축으로 사업을 영위한다. 핵심 제품 SPiDER TM은 이기종 정보보호시스템의 보안 데이터를 통합 저장·검색·분석하는 국내 최초 SIEM 솔루션으로, 20년 이상 시장점유율 1위를 유지하고 있다. 2024년에는 XDR 기반 차세대 보안관제 플랫폼 SPiDER ExD로 플래그십을 업그레이드해 네트워크·클라우드·OT 환경에 대한 통합 가시성을 제공한다. 보안 오케스트레이션·자동화·대응(SOAR) 솔루션 SPiDER SOAR는 국내 보안기업 최초로 국가정보원 보안기능확인서를 획득했으며, 클라우드 SaaS 형태로 NHN클라우드·KT클라우드 마켓플레이스에도 입점되어 있다. 공공 통합보안관리 분야 시장점유율이 70% 이상에 달하며, 중앙정부·지자체·공공기관이 주요 고객군으로 반복 계약 기반의 안정적인 매출 구조를 갖는다. 연결 종속회사로는 대구 소재 디아이섹(물리보안·IT 인프라)과 일본 도쿄 소재 씨아이씨를 보유하며, 2025년 연결 범위 확대로 비지배주주지분이 크게 늘었다. 중장기 전략은 'AI-driven Open XDR'로, SIEM을 허브로 CTI·SOAR·클라우드 보안을 유기적으로 연동하는 플랫폼화에 집중하고 있다. 한국인공지능산업협회 주관 '이머징 AI+X 톱 100'에 2년 연속 선정되며 AI 보안 기술력을 대외 인증받았으며, 선박·OT 보안 분야로도 신규 사업 영역을 확장 중이다. 경쟁 환경은 국내 안랩·SK쉴더스 등 대형 보안사, 글로벌 Microsoft Sentinel·Splunk·IBM QRadar 등과 경합하나, 공공 CC인증·국정원 검증 요건이 방어막 역할을 한다.",
+  "en": "IGLOO Corporation (CEO Lee Deuk-chun), founded in November 1999, is a first-generation Korean cybersecurity company with Integrated Security Management (SIEM) and Managed Security Services (MSS) as its twin business pillars. Its flagship product, SPiDER TM—Korea's first SIEM solution to integrate security data from heterogeneous systems—has held the domestic market-share top spot for over 20 years. In 2024, the company upgraded to SPiDER ExD, an XDR-based next-generation security operations platform offering integrated visibility across network, cloud, and OT environments. The SOAR product SPiDER SOAR became the first domestic offering to receive the National Intelligence Service's Security Function Verification Certificate and is now available as a cloud SaaS on NHN Cloud and KT Cloud marketplaces. IGLOO commands over 70% share in the public-sector integrated security management market, with central government agencies, local governments, and public institutions forming a stable, recurring-contract revenue base. Consolidated subsidiaries include Daegu-based Disec (physical security/IT infrastructure) and Tokyo-based CIC; a significant consolidation expansion in 2025 materially increased non-controlling interests. The medium-to-long-term strategic direction is AI-driven Open XDR—positioning SIEM as the hub for integrating CTI, SOAR, and cloud security into a unified platform. IGLOO has been recognized for two consecutive years on the 'Emerging AI+X Top 100' list and is extending into maritime and OT cybersecurity verticals. Competitively, the company faces AhnLab and SK Shieldus domestically and Microsoft Sentinel, Splunk, and IBM QRadar globally, with domestic public-sector certification requirements serving as a meaningful defensive moat."
+ },
+ "earnings": {
+  "ko": "2025년 연결 기준 매출은 1,433억원으로 전년(1,112억원) 대비 28.8% 성장했고, 영업이익은 160억원(영업이익률 11.2%)으로 2024년(5.5%) 대비 대폭 개선됐다. 영업현금흐름(CFO)도 185억원으로 전년(49억원) 대비 약 3.8배 증가해 실질 현금 창출력이 강화됐다. 다만 지배주주 귀속 순이익은 36억원으로 2024년(62억원) 대비 약 42% 감소했으며, 이는 연결 범위 확대 이후 비운영 항목·금융비용 등이 영업이익 개선 효과를 상당 부분 상쇄한 결과로 판단된다. 특히 2025년 Q4 영업이익(148억원) 대비 동 분기 지배주주 귀속 순이익(20억원)의 괴리가 크게 확대됐는데, 비운영 비용의 Q4 집중이 주요 원인으로 보인다. 분기별 계절성이 매우 극단적이다. 2025년 Q4 매출(672억원)이 연간 매출의 약 47%를 차지하고, Q4 영업이익(148억원)이 연간 영업이익의 약 93%에 달하는 반면, Q1(매출 235억원, 영업손실 -9억원)·Q2(257억원, +6억원)·Q3(268억원, +14억원)는 비수기 특성을 뚜렷이 보였다. 2026년 1분기는 매출 389억원으로 전년동기(235억원) 대비 65.8% 증가했으나, 영업손실이 -32억원으로 전년동기(-9억원) 대비 크게 확대됐다. 연결 고정비 증가가 비수기에 집중적으로 영향을 미치는 구조적 패턴이 형성되고 있음을 시사한다. 2022~2024년 3개년 매출은 1,030억→1,070억→1,112억원으로 연평균 3~4%의 완만한 성장을 보였으나, 2025년 급성장은 연결 범위 확대 효과가 상당 부분 기여한 것으로 추정된다. 부채비율은 2024년 19.7%에서 2025년 28.8%로 상승했으나 절대 수준은 낮고, 전체 자산 규모는 연결 확대로 전년 대비 약 88% 증가했다.",
+  "en": "FY2025 consolidated revenue reached KRW 143.3B, up 28.8% from KRW 111.2B in 2024, while operating profit rose to KRW 16.0B (OPM 11.2%), a sharp improvement from 5.5% the prior year. Operating cash flow (CFO) surged to KRW 18.5B from KRW 4.9B—roughly 3.8× higher—reflecting materially strengthened underlying cash generation. However, controlling-shareholder net income fell approximately 42% to KRW 3.6B (from KRW 6.2B in 2024), as non-operating charges and financing costs associated with the expanded consolidation substantially offset the operating gains. Notably, Q4 2025's operating profit of KRW 14.8B contrasted sharply with KRW 2.0B in controlling-shareholder net income for the same period, indicating a heavy concentration of below-the-line charges in Q4. Seasonality is extreme: Q4 2025 revenue of KRW 67.2B accounted for approximately 47% of the full year, and Q4 operating profit of KRW 14.8B represented approximately 93% of annual operating profit—compared with operating losses in Q1 (KRW -0.9B) and modest recoveries in Q2 (KRW +0.6B) and Q3 (KRW +1.4B). In Q1 2026, revenue jumped 65.8% year-over-year to KRW 38.9B, but the operating loss widened to KRW -3.2B from KRW -0.9B a year earlier, suggesting that higher consolidated fixed costs are weighing disproportionately on off-peak quarters. Over the 2022–2024 period, revenue grew at a modest 3–4% CAGR (KRW 103.0B to KRW 111.2B); the 2025 step-change is largely attributable to consolidation effects. The debt ratio rose from 19.7% in 2024 to 28.8% in 2025, while total assets nearly doubled year-over-year, consistent with a major new consolidation event."
+ },
+ "industry": {
+  "ko": "국내 사이버보안 시장은 2026년 4조 88억원으로 전년 대비 16.1% 성장이 예상된다(보안뉴스·시큐리티월드 '2024~2026 보안시장 조사'). 2025년에는 주요 사이버 사고가 연말에 집중되어 보안 예산 집행이 2026년으로 이월되는 효과가 더해지면서 2026년 수요 가속이 전망된다. AI 기반 보안 솔루션은 2026년까지 국내 시장의 약 35%를 차지할 것으로 전망되며, SIEM·SOAR·XDR 통합 플랫폼이 그 중심 수요처다. 클라우드 보안은 전 품목 중 가장 빠른 성장률(2026년 +17.9%)이 예상되어, 이글루의 SaaS 전환 전략과 방향이 일치한다. 2027년부터 모든 상장사에 대한 정보보호 공시 의무화가 시행될 예정으로, 민간 기업의 선제적 보안 투자 수요가 이미 가시화되고 있다. 경쟁 측면에서는 Microsoft Sentinel·Splunk(Cisco)·IBM QRadar 등 글로벌 클라우드 기반 SIEM이 국내 진입을 강화하고 있으나, 국내 공공기관은 CC인증·국정원 검증 등 인증 요건으로 인해 국내 솔루션 선호도가 여전히 높다. 다만 공공기관의 클라우드 전환이 가속될수록 글로벌 클라우드 네이티브 SIEM의 경쟁력이 부각될 가능성이 있어 중장기 시장 구도 변화에 유의해야 한다.",
+  "en": "The domestic cybersecurity market is projected to reach KRW 4.0 trillion in 2026, growing 16.1% year-on-year (per the 2024–2026 Security Market Research by Boannews and SecurityWorld). A deferred spending effect—major cyber incidents concentrating in late 2025 and pushing budget execution into 2026—is expected to further accelerate 2026 demand. AI-driven security solutions are forecast to account for approximately 35% of the domestic market by 2026, with integrated SIEM/SOAR/XDR platforms at the center of that demand. Cloud security is projected to be the fastest-growing sub-segment (+17.9% in 2026), aligning directly with IGLOO's SaaS transition strategy. The upcoming 2027 mandatory information-security disclosure requirement for all Korean listed companies is triggering visible pre-compliance investment from private enterprises. On the competitive front, global cloud-native SIEM vendors such as Microsoft Sentinel, Splunk (Cisco), and IBM QRadar are intensifying their push into Korea, though domestic public-sector certification requirements (CC certification, NIS verification) continue to favor locally certified vendors. That said, accelerating public-sector cloud migration could increasingly highlight global cloud-native SIEM capabilities, posing a medium-to-long-term competitive risk."
+ },
+ "outlook": {
+  "ko": "이글루는 AI-driven Open XDR을 중장기 핵심 전략으로 채택하고, SIEM을 허브로 CTI·SOAR·클라우드 보안을 통합한 플랫폼 고도화에 집중하고 있다. 2024년 출시된 차세대 SIEM SPiDER ExD의 공급 확대와 클라우드 SaaS형 SOAR(NHN·KT 클라우드 마켓플레이스 입점)의 판로 확장이 민간·클라우드 매출 성장의 단기 동력으로 꼽힌다. 선박 사이버안전성 분야에서는 글로벌 선급기관 인증을 획득했으며, 산업통상자원부 '선박 사이버안전성 평가 및 통합보안관리 솔루션 개발' 과제를 수행 중이어서 OT·해사(maritime) 보안 사업화가 중기 성장 축으로 부각된다. 2027년 정보보호 공시 의무화를 앞두고 민간 기업의 선제 투자가 이어질 것으로 예상되어, 전통적으로 공공 의존도가 높았던 매출 구조의 민간 다변화 가능성이 높아지고 있다. 키르기스스탄 사이버안전센터 구축 수주 등 해외 사업 사례가 있어 글로벌 확장 가능성도 열려 있으나, 아직 본격화 단계는 아니다. 다만 2026Q1 영업손실이 전년동기 대비 확대된 점은 연결 비용 구조 관리가 2026년 수익성의 핵심 변수임을 시사하며, 하반기 특히 Q4 공공 수주·납품 집중도가 연간 이익 달성 여부를 결정짓는 만큼 예산 집행 동향 모니터링이 필수적이다.",
+  "en": "IGLOO has adopted AI-driven Open XDR as its core strategic direction, prioritizing the integration of CTI, SOAR, and cloud security around SIEM as a platform hub. Near-term revenue catalysts include the ramp-up of the SPiDER ExD next-generation SIEM (launched in 2024) and expanded SaaS SOAR distribution through NHN Cloud and KT Cloud marketplaces. In maritime cybersecurity, IGLOO has obtained global classification society certifications and is executing a Ministry of Trade, Industry and Energy project on ship cybersecurity assessment and integrated security management, positioning this as a medium-term growth vertical. The forthcoming 2027 mandatory information-security disclosure requirement for all Korean listed companies is expected to drive proactive private-sector security investment, creating an opportunity to diversify the traditionally public-sector-heavy revenue base. Prior overseas project wins—including the Kyrgyzstan Cyber Safety Center construction contract—illustrate international expansion potential, though this avenue remains in an early commercialization stage. However, the widening of the Q1 2026 operating loss versus the prior-year period underscores that consolidated cost management is a critical 2026 profitability variable; the pace of public IT budget execution in H2, especially Q4, remains the most critical near-term monitoring indicator."
+ },
+ "valuation_comment": {
+  "ko": "현재 주가는 주당 순자산(BPS 약 6,323원) 대비 할인된 구간에 위치해 장부가치를 하회하는 수준에서 거래되고 있다. 최근 TTM 기간 지배주주 귀속 순이익이 적자로 전환돼 이익 배수 기반의 통상적 밸류에이션 적용이 제한적인 국면이다. 2022~2024년 이익 흑자 기조를 유지했던 시기 KOSDAQ IT 서비스 동종군이 PER 10~20배 수준에서 거래됐음을 감안하면, 이익 회복 가시성 확보가 배수 기반 재평가의 선결 조건이다. 최근 공시 기준 주당 배당금(DPS) 210원 수준이 유지된다면, 현 금리 환경 대비 배당 매력이 상대적 고려 요인이 될 수 있다. 장부가치 이하의 할인은 공공 SIEM 프랜차이즈 가치, 특허 포트폴리오(138건), 보안관제 데이터 자산 등 무형 요소가 장부에 충분히 반영되지 않을 가능성과 함께 해석할 필요가 있다. 결국 연결 손익 구조의 투명성 개선과 지배주주 귀속 이익의 회복 경로 구체화가 현 밸류에이션 할인 해소의 핵심 열쇠다.",
+  "en": "The current share price sits below per-share book value (BPS of approximately KRW 6,323), placing the stock in a sub-book-value trading zone. With controlling-shareholder net income having turned negative on a trailing basis, conventional earnings-multiple valuation is currently less straightforward to apply. Referencing the 2022–2024 period when the company maintained positive earnings, comparable KOSDAQ IT services peers generally traded in a PER range of roughly 10–20x, suggesting that a meaningful earnings recovery is a prerequisite for a multiple-based re-rating. If the most recently declared dividend per share (DPS) of KRW 210 is sustained, it could represent a yield-floor consideration relative to prevailing market rates. The discount to book value should be interpreted alongside the possibility that intangible value—including the company's dominant public-sector franchise, 138-patent portfolio, and proprietary threat intelligence data assets—is not fully captured on the balance sheet. Ultimately, improved transparency in the consolidated earnings structure and a clearer path to controlling-shareholder income recovery are the essential prerequisites for closing the current valuation discount."
+ },
+ "bull": [
+  {
+   "title": {
+    "ko": "공공 SIEM 독점적 지위 — 대체 난이도 높은 진입장벽",
+    "en": "Quasi-Monopoly in Public SIEM — High-Barrier Incumbent Franchise"
+   },
+   "body": {
+    "ko": "SPiDER TM은 20년 이상 국내 SIEM 시장 1위를 유지하고 있으며, 공공 통합보안관리 분야에서 70% 이상의 점유율을 확보하고 있다. 국가정보원 보안기능확인서, CC 인증 등 다수의 공공 인증이 신규 진입자의 교두보를 차단해 계약 갱신율이 높고 매출 기반이 견고하다. MSS(보안관제서비스)의 장기 계약 특성상 경기 변동에 대한 방어력이 있으며, 공공 IT 보안 예산이 지속 확대되는 한 안정적인 기저 수요가 유지된다.",
+    "en": "SPiDER TM has held the top SIEM ranking in Korea for over two decades and commands more than 70% of the public-sector integrated security management market. National Intelligence Service security certifications, CC certifications, and other public-sector verifications act as structural barriers that effectively prevent new entrants from displacing the incumbent, sustaining high renewal rates and a durable revenue base. The long-term contract nature of MSS engagements provides resilience against economic cycles, and continued expansion of public-sector cybersecurity budgets underpins a stable demand floor."
+   }
+  },
+  {
+   "title": {
+    "ko": "사이버보안 구조적 성장 — 정책·AI 규제 쌍끌이 수혜",
+    "en": "Structural Cybersecurity Growth — Dual Policy and AI Tailwinds"
+   },
+   "body": {
+    "ko": "2026년 국내 사이버보안 시장은 4조원을 돌파하며 16.1% 성장이 예상되고, AI 기반 보안 솔루션이 시장의 약 35%로 확대될 전망이다. 2027년 모든 상장사 대상 정보보호 공시 의무화는 민간 기업의 보안 투자를 강제하는 규제 수요 창출 효과를 갖는다. 이글루의 AI 기반 위협 탐지·SOAR 자동화 포트폴리오는 이 흐름에 가장 직접적으로 수혜를 받는 포지션에 있다.",
+    "en": "The domestic cybersecurity market is projected to grow 16.1% to over KRW 4 trillion in 2026, with AI-driven security solutions expanding to approximately 35% of the market. The 2027 mandatory information-security disclosure requirement for all Korean listed companies will compel private enterprises to increase cybersecurity investment, acting as a regulatory demand-creation catalyst. IGLOO's AI-powered threat detection and SOAR automation portfolio is directly positioned to capture this structural demand shift."
+   }
+  },
+  {
+   "title": {
+    "ko": "외형 확대 + CFO 급증 — 플랫폼 전환 재투자 여력 확보",
+    "en": "Revenue Scaling and Surging CFO — Financial Capacity for Platform Transition Investment"
+   },
+   "body": {
+    "ko": "2025년 매출 1,433억원(+28.8%)과 CFO 185억원은 모두 최근 수년 내 최고치다. 연결 확대로 인한 비용 증가에도 불구하고 영업이익률이 11.2%로 최근 3년 내 최고 수준을 기록했다. 강화된 현금 창출력을 바탕으로 AI·XDR R&D 투자, SaaS 사업화 확대, 선박·OT 보안 등 신규 수직 시장 진입에 필요한 재원을 내부적으로 확보할 수 있는 여건이 마련됐다.",
+    "en": "FY2025 revenue of KRW 143.3B (+28.8%) and CFO of KRW 18.5B both represent multi-year highs. Despite elevated consolidation-related costs, the OPM of 11.2% was the highest in at least three years. This strengthened cash generation capacity provides the internal financial firepower to accelerate AI/XDR R&D, scale the SaaS business, and invest in new verticals such as maritime and OT cybersecurity without relying heavily on external financing."
+   }
+  }
+ ],
+ "bear": [
+  {
+   "title": {
+    "ko": "극단적 Q4 계절성 — 공공 예산 지연 시 연간 이익 전체가 위협",
+    "en": "Extreme Q4 Seasonality — Full-Year Earnings Acutely Vulnerable to Public Budget Delays"
+   },
+   "body": {
+    "ko": "2025년 Q4 매출(672억원)이 연간의 약 47%, Q4 영업이익(148억원)이 연간 영업이익의 약 93%를 차지할 정도로 편중이 심각하다. 공공 IT 예산이 하반기에 집중 집행되는 구조 특성상, 정부 재정 긴축이나 예산 집행 지연이 발생하면 연간 수익 계획 전체가 훼손될 위험이 크다. 전반기(Q1~Q3) 누적 영업이익이 미미한 수준에 그치는 만큼, 연간 이익 예측 가능성이 타 섹터 대비 현저히 낮다.",
+    "en": "Q4 2025 revenue (KRW 67.2B) represented roughly 47% of the full-year total, and Q4 operating profit (KRW 14.8B) accounted for approximately 93% of annual operating profit—an extreme structural imbalance. The concentration of public IT budget execution in H2 means that any government fiscal tightening or procurement delays could jeopardize the entire annual earnings plan. With H1 (Q1–Q3 combined) contributing only marginally to annual profitability, full-year earnings predictability is materially lower than for most peer sectors."
+   }
+  },
+  {
+   "title": {
+    "ko": "연결 확대로 지배주주 이익 희석 — 이익 질(Quality of Earnings) 불투명성 확대",
+    "en": "Consolidation Diluting Controlling-Shareholder Earnings — Reduced Quality-of-Earnings Transparency"
+   },
+   "body": {
+    "ko": "2025년 연결 범위 확대로 비지배주주지분이 사실상 없는 수준에서 약 679억원으로 급증한 결과, 지배주주 귀속 순이익이 영업이익 증가에도 불구하고 전년 대비 약 42% 감소했다. 영업이익(160억원)과 지배주주 귀속 순이익(36억원)의 대폭적인 괴리는 비운영 비용·금융비용·PPA 상각 등 연결 구조에 내재된 비용이 상당함을 시사한다. 2026Q1에도 영업손실(-32억원)과 지배주주 귀속 순손실(-26억원)이 동반되어 이 구조가 지속되고 있어 수익성 회복의 시기와 폭에 대한 불확실성이 높다.",
+    "en": "In 2025, the consolidation expansion caused non-controlling interests to balloon from near-zero to approximately KRW 67.9B, and controlling-shareholder net income fell roughly 42% to KRW 3.6B despite higher operating profit. The large divergence between operating income (KRW 16.0B) and controlling-shareholder net income (KRW 3.6B) suggests significant non-operating costs, financing charges, and potential PPA amortization embedded in the expanded consolidation structure. The coexistence of an operating loss (KRW -3.2B) and a controlling-shareholder net loss (KRW -2.6B) in Q1 2026 indicates this dynamic persists, creating high uncertainty around the timing and magnitude of an earnings recovery."
+   }
+  },
+  {
+   "title": {
+    "ko": "글로벌 클라우드 SIEM의 공공시장 침투 위협",
+    "en": "Global Cloud SIEM Vendors Intensifying Threat to Public-Sector Market Share"
+   },
+   "body": {
+    "ko": "Microsoft Sentinel, Splunk(Cisco), IBM QRadar 등 글로벌 빅테크는 클라우드 네이티브 SIEM을 앞세워 국내 공공·민간 시장 공략을 강화하고 있다. 국내 공공기관의 클라우드 전환이 가속될수록 비용·기능 측면의 글로벌 솔루션 경쟁력이 부각되며, 이글루의 온프레미스 기반 프리미엄이 희석될 수 있다. 이글루의 클라우드 SaaS 전환은 진행 중이나 아직 초기 단계로, 클라우드 SIEM에서 점유율을 방어할 수 있는지가 중장기 핵심 과제다.",
+    "en": "Global technology leaders such as Microsoft Sentinel, Splunk (Cisco), and IBM QRadar are aggressively targeting the Korean public and private security markets with cloud-native SIEM offerings. As public-sector cloud migration accelerates, the cost and functionality advantages of global solutions will become increasingly prominent, potentially eroding IGLOO's on-premises incumbency premium. While IGLOO is transitioning to a cloud SaaS model, this initiative remains in early stages; the ability to defend market share in cloud-native SIEM is a critical long-term strategic challenge."
+   }
+  }
+ ],
+ "risks": [
+  {
+   "cat": {
+    "ko": "공공 IT 예산 변동 리스크",
+    "en": "Public-Sector IT Budget Volatility Risk"
+   },
+   "body": {
+    "ko": "매출의 상당 부분이 공공기관 예산 집행에 연동되어 있어, 정부 재정 긴축이나 IT 예산 변화가 직접적인 실적 하락 요인이 된다. 특히 연간 영업이익의 대부분이 Q4에 집중된 구조상, Q4 수주 지연이나 예산 미집행은 연간 실적 전체를 훼손한다. 과학기술정보통신부·행정안전부 등 주요 발주 기관의 정보보호 예산 편성 추이와 정부 재정 상황이 핵심 모니터링 지표다.",
+    "en": "A significant share of revenue is directly tied to public-sector budget execution, meaning government fiscal tightening or shifts in IT appropriations translate directly into revenue and earnings pressure. Given that the overwhelming majority of annual operating profit is concentrated in Q4, any procurement delays or unexecuted budget allocations in that quarter could jeopardize the full-year result. Key monitoring indicators include cybersecurity budget trends at major procuring ministries (MSIT, MoIS) and the overall government fiscal outlook."
+   }
+  },
+  {
+   "cat": {
+    "ko": "연결 수익성 악화 및 비지배주주지분 리스크",
+    "en": "Consolidated Profitability Deterioration and Non-Controlling Interest Risk"
+   },
+   "body": {
+    "ko": "2025년 연결 범위 확대로 비지배주주지분이 급증하면서 지배주주 귀속 이익이 영업이익 대비 현저히 작아졌다. 종속회사의 영업 성과가 기대에 미치지 못하거나 추가 손실이 발생할 경우, 지배주주 순이익은 더욱 압박을 받을 수 있다. 연결 범위 확대의 전략적 합리성과 각 종속회사의 수익 기여 시기에 대한 투자자 관점의 명확한 소통이 필요하다.",
+    "en": "The rapid expansion of non-controlling interests following the 2025 consolidation has created a large and growing gap between operating profit and controlling-shareholder net income. If subsidiary operating performance falls short of expectations or additional losses materialize, controlling-shareholder profitability will face further pressure. Greater investor transparency regarding the strategic rationale for the expanded consolidation scope and each subsidiary's earnings contribution timeline is needed."
+   }
+  },
+  {
+   "cat": {
+    "ko": "사이버보안 전문 인력 부족 및 비용 상승 리스크",
+    "en": "Cybersecurity Talent Shortage and Rising Personnel Cost Risk"
+   },
+   "body": {
+    "ko": "국내 정보보안 인력 수요가 공급을 초과하는 구조적 미스매치가 심화되고 있다. 임직원 약 1,122명(2026년 1월 기준) 규모인 이글루는 AI·XDR 고도화와 신규 사업 수행에 필요한 보안 전문 인력 확보가 지속적인 과제다. 인건비 상승이 비수기(Q1~Q3)의 고정비 부담을 가중시킬 경우, 계절적 영업적자의 구조적 확대로 이어질 수 있다.",
+    "en": "The structural mismatch between rising demand for domestic cybersecurity professionals and insufficient supply is intensifying. With approximately 1,122 employees (as of January 2026), IGLOO faces an ongoing challenge in attracting and retaining the cybersecurity specialists needed to advance its AI/XDR capabilities and execute new business initiatives. Rising personnel costs, if they compound during off-peak quarters (Q1–Q3), risk structurally widening the seasonal operating loss pattern."
+   }
+  }
+ ],
+ "checkpoints": [
+  {
+   "when": {
+    "ko": "2026년 8월 중 (2026Q2 실적 발표)",
+    "en": "Mid-August 2026 (Q2 2026 Earnings Release)"
+   },
+   "what": {
+    "ko": "2026년 2분기 매출·영업이익이 Q1의 영업손실(-32억원)에서 계절적으로 회복됐는지, 연결 매출 성장세가 유지되는지 확인이 필요하다. 분기 영업이익 방향성이 연간 수익 달성 가시성을 가늠하는 핵심 선행 지표다.",
+    "en": "Confirm whether Q2 2026 operating profit has recovered seasonally from the Q1 operating loss of KRW -3.2B and whether the consolidated revenue growth trajectory is sustained. The quarterly operating profit direction is the key leading indicator of full-year earnings visibility."
+   }
+  },
+  {
+   "when": {
+    "ko": "2026년 10~12월 (공공 IT 예산 집행 시즌)",
+    "en": "October–December 2026 (Public IT Budget Execution Season)"
+   },
+   "what": {
+    "ko": "연간 이익의 대부분이 집중되는 Q4 공공 수주·납품 진행 현황을 모니터링해야 한다. 주요 공공기관 정보보호 프로젝트 공고 및 수주 공시가 연간 실적의 실질적인 선행 지표 역할을 하며, 예산 지연 신호가 나타날 경우 이익 추정치 하향 가능성이 있다.",
+    "en": "Monitor public-sector procurement announcements and contract award disclosures for major cybersecurity projects—the practical leading indicators of full-year results. Any signals of budget execution delays should be treated as a downside risk to annual earnings estimates."
+   }
+  },
+  {
+   "when": {
+    "ko": "2026년 하반기 (수시)",
+    "en": "H2 2026 (Ongoing)"
+   },
+   "what": {
+    "ko": "AI-XDR 플랫폼(SPiDER ExD)·클라우드 SaaS 보안 신규 계약 공시: 민간·해외 매출 다변화가 실현되는지 가늠하는 이정표다. 수주 건수와 계약 규모가 공공 의존 구조 탈피 속도를 판단하는 기준이 된다.",
+    "en": "Monitor new contract disclosures for the AI-XDR platform (SPiDER ExD) and cloud SaaS security: a milestone indicator of whether private-sector and overseas revenue diversification is materializing. The number and scale of new wins will gauge the pace of reduction in public-sector concentration."
+   }
+  },
+  {
+   "when": {
+    "ko": "2026년 중 (수시)",
+    "en": "Throughout 2026 (Ongoing)"
+   },
+   "what": {
+    "ko": "2027년 상장사 정보보호 공시 의무화 관련 민간 기업 보안 투자 동향: 이 제도가 SIEM·SOAR 민간 수요를 어느 정도 자극하는지, 이글루의 민간 부문 신규 계약이 증가하는지를 모니터링하면 중기 매출 다변화 실현 가능성을 가늠할 수 있다.",
+    "en": "Track private-sector security investment trends related to the 2027 mandatory disclosure requirement for all listed companies. Monitoring whether IGLOO's private-sector new contract wins increase will help assess the feasibility and pace of medium-term revenue diversification away from the public sector."
+   }
+  },
+  {
+   "when": {
+    "ko": "2027년 3월 (2026년 연간 실적 발표)",
+    "en": "March 2027 (FY2026 Annual Earnings Release)"
+   },
+   "what": {
+    "ko": "연간 영업이익률 및 지배주주 귀속 순이익 회복 여부 확인: 2025년에 발생한 영업이익-지배순이익 간의 대폭 괴리가 좁혀지는지, 연결 비용 구조가 안정화되는지가 이익 질(Quality of Earnings) 판단의 핵심 시금석이 될 것이다.",
+    "en": "Verify whether full-year OPM and controlling-shareholder net income recover: the critical quality-of-earnings test is whether the large gap between operating income and controlling-shareholder net income narrows in FY2026 and whether consolidated cost structures stabilize—the litmus test for improved earnings quality."
+   }
+  }
+ ],
+ "verdict": {
+  "body": {
+   "ko": "이글루코퍼레이션은 국내 SIEM·보안관제 시장에서 20년 이상 구축한 공공 인프라 기반의 독점적 지위와 AI-driven Open XDR로의 전략 전환을 동시에 추진하는 정보보안 전문기업이다. 2025년 매출(1,433억원)과 영업이익률(11.2%), CFO(185억원)의 동반 개선은 플랫폼 성장 투자를 위한 재무적 기반이 강화되고 있음을 보여준다. 그러나 Q4 단일 분기 의존도가 연간 영업이익의 약 93%에 달하는 구조적 계절성, 연결 확대에 따른 지배주주 귀속 순이익 감소와 영업이익 대비 대폭 괴리, 2026Q1 영업손실 확대는 단기 이익 가시성을 제약하는 핵심 리스크다. 2026년 국내 사이버보안 시장 16.1% 성장 전망과 2027년 정보보호 공시 의무화라는 제도적 수요 창출 요인이 구조적 성장의 긍정적 배경을 제공한다. 궁극적으로 투자자는 ①Q4 공공 예산 집행의 안정성, ②연결 비용 구조의 정상화 속도, ③민간·해외 매출 다변화 실현 여부를 순서대로 검증해 가는 과정이 필요하다. 현재 주가가 장부가치를 하회하는 구간에 있는 것은, 공공 SIEM 프랜차이즈의 유무형 가치와 이익 회복 가시성 간의 시장 관점 차이를 반영하고 있으며, 이 불확실성의 해소 경로가 중기 주가 방향성의 핵심 변수가 될 것이다.",
+   "en": "IGLOO Corporation is a cybersecurity specialist simultaneously leveraging a dominant public-sector franchise built over more than 20 years in Korea's SIEM and security operations market and actively executing a strategic pivot toward an AI-driven Open XDR platform. The FY2025 improvements in revenue (KRW 143.3B), OPM (11.2%), and CFO (KRW 18.5B) demonstrate a strengthening financial foundation for platform investment. However, the extreme structural concentration of roughly 93% of annual operating profit in Q4, the large and persistent gap between operating income and controlling-shareholder net income from the expanded consolidation, and the widening Q1 2026 operating loss are the primary constraints on near-term earnings visibility. The structural tailwinds are constructive: a 16.1% projected growth in the domestic cybersecurity market in 2026 and an upcoming mandatory information-security disclosure requirement set to drive private-sector demand from 2027. Ultimately, investors will need to sequentially validate: (1) the stability of Q4 public-sector budget execution, (2) the pace at which consolidated cost structures normalize, and (3) whether private-sector and overseas revenue diversification actually materializes. The current sub-book-value share price reflects the ongoing market debate between the tangible and intangible value of IGLOO's public-sector SIEM franchise and the timeline for a meaningful controlling-shareholder earnings recovery—and the resolution of this uncertainty will be the central driver of medium-term share price direction."
+  }
+ },
+ "sources": [
+  "https://comp.fnguide.com/SVO2/asp/SVD_Main.asp?gicode=A067920",
+  "https://m.irgo.co.kr/IR-ROOM/067920",
+  "https://www.k5.co.kr/stock/067920",
+  "https://comp.fnguide.com/SVO2/ASP/SVD_Finance.asp?pGB=1&gicode=A067920&MenuYn=Y&ReportGB=&NewMenuID=103",
+  "https://comp.fnguide.com/SVO2/asp/SVD_Corp.asp?pGB=1&gicode=A067920&MenuYn=Y&NewMenuID=102&stkGb=701",
+  "https://thevc.kr/igloo",
+  "http://comp.fnguide.com/SVO2/asp/SVD_shareanalysis.asp?pGB=1&gicode=A067920&cID=&MenuYn=Y&ReportGB=&NewMenuID=109&stkGb=701",
+  "https://goinsider.kr/stock/00364847",
+  "https://www.investing.com/equities/igloo-security-inc",
+  "https://www.jobplanet.co.kr/companies/59375/landing/%EC%9D%B4%EA%B8%80%EB%A3%A8%EC%BD%94%ED%8D%BC%EB%A0%88%EC%9D%B4%EC%85%98",
+  "https://zdnet.co.kr/view/?no=20250415144106",
+  "https://www.igloo.co.kr/security-information/%EB%B9%85%EB%8D%B0%EC%9D%B4%ED%84%B0-%EA%B4%80%EC%A0%9C%EB%A5%BC-%EC%9C%84%ED%95%9C-siem-%EA%B5%AC%EC%B6%95-%EA%B0%80%EC%9D%B4%EB%93%9C/",
+  "https://www.igloo.co.kr/search/SIEM/",
+  "https://www.inews24.com/view/1464026",
+  "https://www.igloo.co.kr/security-information/siem-ai-soar-%EA%B5%AC%EC%B6%95%EB%B6%80%ED%84%B0-%EC%9A%B4%EC%98%81%EA%B9%8C%EC%A7%80/",
+  "https://www.teamblind.com/kr/company/%EC%9D%B4%EA%B8%80%EB%A3%A8%EC%BD%94%ED%8D%BC%EB%A0%88%EC%9D%B4%EC%85%98/",
+  "https://www.jobkorea.co.kr/company/1447356",
+  "https://www.igloo.co.kr/security-information/%ED%86%B5%ED%95%A9%EB%B3%B4%EC%95%88%EA%B4%80%EC%A0%9C%EC%8B%9C%EC%8A%A4%ED%85%9C-%EA%B5%AC%EC%B6%95-%EC%82%AC%EB%A1%80-siem-%EA%B5%AC%EC%B6%95/"
+ ],
+ "v": 2,
+ "model": "claude-sonnet-4-6",
+ "ticker": "067920",
+ "name": "이글루",
+ "name_en": "IGLOO Corporation",
+ "sector": "IT·소프트웨어",
+ "categories": [
+  "IT·소프트웨어"
+ ],
+ "market": "코스닥",
+ "reportDate": "2026-06-19",
+ "reportTs": "2026-06-19 02:25",
+ "dataDate": "20260618",
+ "quant": {
+  "asOf": "2026-06-18",
+  "fs_basis": "연결(CFS) · DART 공시 확정치 · 지배주주 기준 순이익",
+  "annual": [
+   {
+    "year": 2025,
+    "rev": 143257199274,
+    "op": 16009426307,
+    "np": 3629261620,
+    "np_owner": 3629261620,
+    "equity": 141551024661,
+    "equity_owner": 73693627281,
+    "liab": 40703811271,
+    "cfo": 18515077663,
+    "eps_basic": -4,
+    "opm": 11.2,
+    "roe": 4.9,
+    "debt_ratio": 28.8
+   },
+   {
+    "year": 2024,
+    "rev": 111217234533,
+    "op": 6068314076,
+    "np": 6239692822,
+    "np_owner": 6239692822,
+    "equity": 80784037031,
+    "equity_owner": 80776613879,
+    "liab": 15938665712,
+    "cfo": 4892122733,
+    "eps_basic": 623,
+    "opm": 5.5,
+    "roe": 7.7,
+    "debt_ratio": 19.7
+   },
+   {
+    "year": 2023,
+    "rev": 106955419497,
+    "op": 5716998998,
+    "np": 7277688440,
+    "np_owner": 7277688440,
+    "equity": 76369944189,
+    "equity_owner": 76077089626,
+    "liab": 18072860450,
+    "cfo": 6148248826,
+    "eps_basic": 835,
+    "opm": 5.3,
+    "roe": 9.6,
+    "debt_ratio": 23.7
+   },
+   {
+    "year": 2022,
+    "rev": 103006024592,
+    "op": 8007600293,
+    "np": 7555317308,
+    "np_owner": 7555317308,
+    "equity": 70728388801,
+    "equity_owner": 69333657495,
+    "liab": 20303454856,
+    "cfo": 10599780450,
+    "eps_basic": 692,
+    "opm": 7.8,
+    "roe": 10.9,
+    "debt_ratio": 28.7
+   }
+  ],
+  "quarterly": [
+   {
+    "q": "2025Q1",
+    "rev": 23486670543,
+    "op": -899005541,
+    "np_owner": -887741615
+   },
+   {
+    "q": "2025Q2",
+    "rev": 25742639828,
+    "op": 648460435,
+    "np_owner": 1106754785
+   },
+   {
+    "q": "2025Q3",
+    "rev": 26798366064,
+    "op": 1426369777,
+    "np_owner": 1415298353
+   },
+   {
+    "q": "2025Q4",
+    "rev": 67229522839,
+    "op": 14833601636,
+    "np_owner": 1994950097
+   },
+   {
+    "q": "2026Q1",
+    "rev": 38939910548,
+    "op": -3182623401,
+    "np_owner": -2560825986
+   }
+  ],
+  "valuation": {
+   "price": 5190,
+   "mcap": 0.0571,
+   "shares": 10996119,
+   "total_shares": 10996119,
+   "wavg_shares": null,
+   "per": null,
+   "eps": null,
+   "pbr": 0.82,
+   "bps": 6323,
+   "roe_ttm": -0.9,
+   "ttm_window": "2025Q2~2026Q1",
+   "ttm_np_owner": -637774902,
+   "pbr_krx": 0.71,
+   "bps_krx": 7266.0,
+   "basis": "PER·EPS·PBR·BPS 모두 자체 산출(네이버·토스와 동일 방식) · 배당은 DART 공시 주당현금배당금(보완:KRX) ÷ 현재가",
+   "dps": 210.0,
+   "div": 4.05
+  }
+ }
+}

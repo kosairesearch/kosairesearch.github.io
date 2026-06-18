@@ -1,0 +1,356 @@
+{
+ "title": {
+  "ko": "AMIGO·아크차단기 이중 수혜, 성장 지속성 점검",
+  "en": "Dual Tailwinds from AMIGO Upgrade and Arc Breaker Mandates — Testing Earnings Durability"
+ },
+ "lead": {
+  "ko": "한전 차세대 스마트미터(AMIGO) 본격 도입과 아크차단기 의무 설치 법제화라는 두 가지 정책 수혜를 동시에 받으며 2024년 대규모 적자에서 벗어난 아이앤씨는, 분기 실적의 극단적 계절성과 한전 집중 구조를 넘어 안정적 이익 체력을 입증할 수 있는지가 핵심 관전 포인트다.",
+  "en": "Having escaped a deep FY2024 operating loss via KEPCO's AMIGO next-generation meter rollout and the push to legally mandate arc circuit breakers, I&C Technology now faces the key question of whether it can sustain profitability across all four quarters rather than rely on one front-loaded peak."
+ },
+ "keypoints": [
+  {
+   "ko": "FY2025 매출 368.8억원(+57.8% YoY)·영업이익 40.5억원(OPM 11.0%)으로 대규모 적자(-106.7억원 OP)에서 단일 연도 만에 전면 흑자전환",
+   "en": "FY2025 revenue of KRW 36.9bn (+57.8% YoY) and operating profit of KRW 4.1bn (OPM 11.0%) marked a full-year turnaround from the KRW -10.7bn operating loss posted in FY2024"
+  },
+  {
+   "ko": "한전 차세대 전력량계 AMIGO 공급사 선정(2025년 3월 낙찰, 2026년 4월 추가 참여 확인)으로 스마트에너지 부문 매출 가시성 확대",
+   "en": "Secured KEPCO AMIGO smart meter contracts (March 2025 award, April 2026 follow-on confirmed), improving near-term revenue visibility for the Smart Energy segment"
+  },
+  {
+   "ko": "산업부 KEC 개정으로 물류창고·전통시장 아크차단기 설치 의무화 추진 중; 3세대 초소형 SoC 기반 제품으로 수천억 원 규모 신규 시장 진입 준비",
+   "en": "Government KEC revision mandating arc circuit breakers in logistics facilities and traditional markets creates a large new addressable market for I&C's 3rd-gen ultra-compact SoC arc breakers"
+  },
+  {
+   "ko": "분기 실적 변동성 극심: 2025Q2 영업이익 34.6억원 vs 2025Q4 -22.6억원으로 동일 연도 내 극단적 편차가 한전 발주 타이밍 의존도를 반영",
+   "en": "High quarterly earnings volatility — KRW 3.5bn operating profit in Q2 2025 vs. KRW -2.3bn in Q4 2025 — underscores heavy reliance on KEPCO procurement timing"
+  },
+  {
+   "ko": "2026Q1 영업이익 10.2억원(OPM ~11.4%)으로 Q4 부진 후 점진적 회복세; NB-IoT 칩(NB5000)·ZEMS 등 신사업이 고객 다변화 여부를 좌우",
+   "en": "Q1 2026 operating profit of KRW 1.0bn (~11.4% OPM) reflects gradual recovery from the Q4 trough, with NB-IoT chips (NB5000) and ZEMS as emerging diversification levers"
+  }
+ ],
+ "business": {
+  "ko": "아이앤씨테크놀로지(이하 아이앤씨)는 1996년 설립·2009년 코스닥 상장한 팹리스(Fabless) 시스템 반도체 설계 전문기업으로, 스마트에너지·무선(IoT)·멀티미디어·AE(전기화재방지) 4개 사업 부문을 영위한다. 스마트에너지 부문은 한국전력공사 AMI(지능형전력계량인프라) 사업에 IoT PLC 칩셋·모뎀·DCU(데이터집중장치)를 공급하며 전체 매출의 핵심 축을 형성하고 있으며, 2025년부터는 보안이 강화된 차세대 전력량계 AMIGO(AMI Gear for Open platform) 시장에도 진입했다. 무선·IoT 부문은 국내 유일의 Wi-Fi 칩셋 자체 설계사로, IoT 보안 모듈과 2024년 출시한 협대역 IoT 통신칩 NB5000을 통해 제품군을 확장하고 있다. 멀티미디어 부문은 지상파 DMB 수신칩(T-DMB SoC) 등 모바일 TV·디지털라디오 수신 IC를 공급하나, 스마트폰 TV 수신 내장 축소 추세로 기여도가 낮아지는 추세다. AE 부문은 전기화재의 주요 원인인 아크(Arc) 방전을 실시간 감지·차단하는 스마트 아크차단기를 개발·판매하며, 아크 검출 기능을 단일 SoC로 구현한 3세대 초소형 제품을 보유한다. 주력 고객은 한국전력공사 및 AMI 관련 국내 대형 계량기·전기기기 제조사로, B2B 내수 중심 구조이며 일부 Wi-Fi·IoT 칩 해외 공급도 병행한다. 경쟁구도상 AMI PLC 칩셋 분야에서는 국내 최대 공급사 지위를 유지하는 반면, 아크차단기 시장에서는 제일일렉트릭 등 전통 전기기기 업체들과 경쟁 중이다.",
+  "en": "I&C Technology is a fabless system-on-chip designer established in 1996 and listed on KOSDAQ in 2009, operating across four segments: Smart Energy, Wireless/IoT, Multimedia, and AE (Arc/Electric Fire Prevention). The Smart Energy segment — the core revenue driver — supplies IoT PLC chipsets, modems, and DCUs to KEPCO's AMI infrastructure program, and since 2025 has entered the next-generation AMIGO smart meter market featuring enhanced security and remote switching capabilities. The Wireless/IoT segment is the only domestic developer of Wi-Fi chipsets in Korea, and expanded its product lineup with the 2024 launch of the NB-IoT chip NB5000 for narrowband IoT applications. The Multimedia segment, which supplies T-DMB SoC chips for mobile TV and digital radio, has seen declining contribution as embedded TV reception in smartphones diminishes. The AE segment produces smart arc circuit breakers capable of real-time arc fault detection and interruption, highlighted by a 3rd-generation ultra-compact SoC-integrated product in which arc detection is implemented on a single chip. The company operates primarily as a B2B domestic supplier concentrated on KEPCO and AMI-related meter manufacturers, with a smaller international footprint through Wi-Fi and IoT chip sales. In the competitive landscape, I&C Tech holds the leading position in domestic AMI PLC chipsets, while facing competition from established electrical equipment makers such as JeilElectric in the arc circuit breaker space."
+ },
+ "earnings": {
+  "ko": "연간 실적은 한전 AMI 발주 사이클에 강하게 연동돼 극단적인 등락을 반복하는 특성을 보인다. 2023년에는 AMI 5-2차 사업 진행에 힘입어 매출이 642.9억원으로 정점에 달했으나, 영업이익률은 2.2%(영업이익 14.3억원)에 그쳤고 당기순이익도 0.5억원에 머물러 외형 성장 대비 수익성이 매우 낮았다. 2024년에는 대규모 AMI 프로젝트 종료 후 발주 공백이 겹치며 매출이 233.7억원으로 63.7% 급감했고, 영업손실 -106.7억원(OPM -45.7%), 순손실 -119.9억원을 기록하는 극심한 부진에 빠졌다. 2025년은 한전 AMIGO 공급 낙찰(3월), AMI 사업 참여 확대, 2세대 IoT PLC 칩셋 적용 등으로 매출 368.8억원(+57.8%), 영업이익 40.5억원(OPM 11.0%), 순이익 42.8억원으로 전면 흑자전환했다. 분기별로는 2025Q2가 매출 143.6억원·영업이익 34.6억원(OPM ~24%)으로 연간 이익의 대부분을 단기 집중하는 구조를 보였고, 2025Q3도 매출 82.0억원·영업이익 22.8억원으로 양호했으나 2025Q4는 매출 49.1억원에 영업손실 -22.6억원으로 재차 적자를 기록했다. 이는 한전 발주 집중 시기(상반기)에 따른 구조적 계절성을 반영한다. 2026Q1은 매출 89.9억원·영업이익 10.2억원(OPM ~11.4%)으로 전 분기 부진에서 벗어나 점진적 회복 흐름을 보인다. 영업현금흐름(CFO)은 2025년 84.4억원으로 대폭 개선됐으며, 부채비율도 2024년 68.3%에서 2025년 48.3%로 하락해 재무 건전성이 안정화됐다.",
+  "en": "Annual results show pronounced swings driven by KEPCO AMI procurement cycles. In FY2023, revenue peaked at KRW 64.3bn on the AMI 5-2nd-phase project, yet operating margin was a thin 2.2% (operating profit KRW 1.4bn) and net profit was nearly nil at KRW 47mn, indicating heavy project execution costs relative to revenue. FY2024 saw a sharp 63.7% revenue drop to KRW 23.4bn as the major AMI project ended and a procurement gap emerged, producing an operating loss of KRW -10.7bn (OPM -45.7%) and a net loss of KRW -12.0bn. FY2025 staged a full turnaround, with revenue rising 57.8% to KRW 36.9bn and operating profit recovering to KRW 4.1bn (OPM 11.0%), driven by the AMIGO contract win, expanded AMI participation, and 2nd-generation IoT PLC chipsets. At the quarterly level, Q2 2025 was the standout period with revenue of KRW 14.4bn and operating profit of KRW 3.5bn (~24% OPM), capturing the bulk of full-year earnings in a single quarter; Q4 2025 swung back to an operating loss of KRW -2.3bn on revenue of only KRW 4.9bn, illustrating the structural seasonal pattern tied to KEPCO's first-half procurement concentration. Q1 2026 showed gradual recovery with revenue of KRW 9.0bn and operating profit of KRW 1.0bn (~11.4% OPM). Operating cash flow improved markedly to KRW 8.4bn in FY2025, and the debt ratio stabilized from 68.3% in FY2024 to 48.3% in FY2025."
+ },
+ "industry": {
+  "ko": "한국전력은 2010년 시범사업을 시작으로 총 7차에 걸친 AMI 보급 사업을 2024년 완료해 2,005만 호에 스마트미터를 설치했으며, 이후 차세대 전력량계 AMIGO로의 교체·신규 수요를 중심으로 새로운 발주 사이클이 열리고 있다. AMIGO는 KCMVP 보안 모듈·원격 On/Off 제어·다양한 전력 데이터 수집 기능을 탑재한 고부가가치 전력량계로, 2025년부터 본격 도입됐다. 한전은 스마트그리드 확산사업을 2026~2030년으로 연장해 AI 기반 데이터 비즈니스 모델 고도화를 추진 중이며, 이는 AMIGO 연관 반도체·모뎀 수요의 중기 지속성을 뒷받침한다. 아크차단기 시장에서는 기후에너지환경부의 한국전기설비규정(KEC) 개정으로 신축·개보수하는 물류창고·전통시장에 아크차단기 설치가 의무화됐으며, 업계는 아파트 750만 호·상가·전통시장 649만 호·주택 및 기타 1,947만 호를 잠재 교체 대상으로 추산해 수천억 원대 시장 형성을 전망한다. 글로벌 스마트미터 시장은 EU 의무화·중국 보급계획·북미 업그레이드 사이클이 맞물려 지속 성장하고 있으며, 한전은 K-AMI 기술규격의 글로벌 표준화와 수출형 스마트미터링 패키지 개발을 중장기 전략으로 삼고 있다. AMI PLC 칩셋 분야에서는 아이앤씨가 한전 사업 내 핵심 공급사 지위를 유지하고 있으나, AMIGO 물량의 연간 규모와 발주 빈도는 기존 AMI 사이클과 다를 수 있다. 아크차단기는 의무화 기대감으로 제일일렉트릭 등 전통 전기기기 업체들도 공급 역량을 강화하고 있어, SoC 기반 기술 차별화가 시장점유 확대의 관건이 될 전망이다.",
+  "en": "KEPCO completed a seven-phase AMI deployment in 2024, installing smart meters in 20.05 million households, and a new procurement cycle is opening around AMIGO replacements and incremental demand. AMIGO features KCMVP-certified encryption, remote switching, and advanced power data analytics, and has been in active deployment since 2025. KEPCO plans to extend its smart grid expansion program through 2026–2030 with AI-driven data business models, supporting medium-term continuity for AMIGO-related semiconductor and modem demand. In arc circuit breakers, the government's KEC revision mandating installation in newly built or renovated logistics centers and traditional markets points to a large addressable market — industry estimates cover 7.5mn apartment units, 6.49mn commercial/traditional market premises, and 19.47mn other facilities — potentially worth several hundred billion won. Globally, the smart meter market continues growing as EU mandates, China's deployment plan, and North American upgrade cycles converge, with KEPCO targeting K-AMI as a global standard and developing an exportable smart metering package. In AMI PLC chipsets, I&C Tech retains a key supplier role within the KEPCO ecosystem, though AMIGO procurement volumes and frequency may differ from prior AMI phases. Competition in arc circuit breakers is intensifying as established electrical device makers ramp up supply capabilities, making SoC-based technical differentiation essential for I&C's market share ambitions."
+ },
+ "outlook": {
+  "ko": "2026년 4월 한전 AMIGO 사업 추가 참여가 확인되면서 스마트에너지 부문의 단기 매출 가시성은 유지되고 있다. 아크차단기는 3세대 초소형 재난안전제품 인증(2025년 12월)과 KB손해보험 공동마케팅 MOU(2025년 7월)를 통해 공공기관·보험 연계 채널을 구축했으며, KEC 의무화 시행이 본격화될 경우 전통시장·물류창고·아파트 등으로 광범위하게 수요가 확산될 가능성이 있다. 2026년 3월 주주총회 소집공고에 따르면 LH를 비롯한 공공·민간 건설 부문의 ZEMS(Zero Energy Management System) 수요 증가에 대응해 해당 시스템 개발·공급을 확대 중이며, 이는 에너지 효율화 시장에서의 신규 수익원이 될 수 있다. 2024년 출시한 협대역 IoT 칩 NB5000은 스마트미터·각종 IoT 기기에 적용 가능해 중장기 매출 다각화 역할이 기대된다. 한전 발주 집중 시기(통상 상반기)를 고려하면 2026년에도 Q2 전후 매출·이익 집중이 반복될 가능성이 높아, 하반기 실적 지속 여부가 연간 이익 품질을 가늠하는 핵심이 된다. 아크차단기 규제 시행 속도와 ZEMS·NB-IoT의 실질 매출 기여 시점은 아직 확정되지 않아, 단기 이익 가시성을 단정하기 어렵다.",
+  "en": "Near-term revenue visibility in the Smart Energy segment is supported by the confirmed April 2026 KEPCO AMIGO follow-on contract. On the arc circuit breaker front, the company secured disaster safety product certification for its ultra-compact 3rd-gen unit (December 2025) and signed a co-marketing MOU with KB Insurance (July 2025), building distribution channels through public-sector and insurance linkages that could broaden as KEC mandatory installation requirements take effect. Per the company's March 2026 AGM filing, I&C Tech is expanding its ZEMS (Zero Energy Management System) offering to meet growing demand from LH and public/private construction sectors, representing a potential new revenue stream in the energy efficiency market. The NB-IoT chip NB5000, launched in 2024, targets smart meter and IoT sensing applications and may serve as a medium-term revenue diversification driver. Given KEPCO's procurement concentration in the first half of the year, Q2 2026 is again likely to account for a disproportionate share of full-year earnings, making second-half performance the critical test of earnings durability. The pace at which KEC mandatory installation and ZEMS/NB-IoT revenue contributions materialize remains uncertain, limiting near-term earnings predictability."
+ },
+ "valuation_comment": {
+  "ko": "현재 주가는 주당순자산(BPS 2,286원·자체 산출 기준)에 대해 상당한 프리미엄이 형성된 구간에 위치하며, 이는 AMIGO 발주 사이클과 아크차단기 의무화라는 정책 성장 기대를 선반영한 수준으로 해석된다. 주당순이익(EPS 316원) 대비 배수는 소형 팹리스 반도체·전력IT 업종 국내 동종 기업 평균과 크게 다르지 않은 편이나, 분기 실적의 극단적 변동성과 한전 집중 리스크를 감안하면 프리미엄 정당화를 위해 사업 다각화 진전이 중요한 조건이다. 배당은 현재 무배당 기조(DPS 0원)로 배당 수익 기대는 사실상 없다. 2024년 대규모 적자에서 2025년 흑자전환이라는 단기 이익 진폭을 감안하면, 향후 2~3개 분기에 걸친 이익 안정성이 확인될 때 현 밸류에이션 수준의 지속 가능성을 평가할 수 있다.",
+  "en": "The current share price implies a meaningful premium over book value per share (BPS KRW 2,286, self-calculated), reflecting market anticipation of growth from the AMIGO procurement cycle and the KEC arc circuit breaker mandate. The price-to-earnings multiple on per-share earnings (EPS KRW 316) is broadly in line with domestic small-cap fabless semiconductor and power-IT peers, though the high quarterly earnings volatility and KEPCO concentration risk mean that progress in business diversification is essential to sustaining any premium. The company pays no dividend (DPS KRW 0), making income return negligible. Given the sharp swing from a large FY2024 loss to profitability in FY2025, confirmation of earnings stability over the next two to three quarters will be a key input for assessing whether the current valuation level is sustainable."
+ },
+ "bull": [
+  {
+   "title": {
+    "ko": "AMIGO 교체 사이클 + 아크차단기 의무화 이중 정책 수혜",
+    "en": "Dual Policy Tailwinds: AMIGO Upgrade Cycle + Arc Breaker KEC Mandate"
+   },
+   "body": {
+    "ko": "한전 차세대 전력량계 AMIGO는 2025년부터 본격 도입되어 기존 1세대 스마트미터 교체 및 신규 보급 수요를 창출하고 있으며, 아이앤씨는 2025년 3월 공급 낙찰에 이어 2026년 4월 추가 참여를 확인했다. KEC 개정으로 물류창고·전통시장 아크차단기 설치가 의무화 추진 중이며, 업계는 아파트 750만 호·상가 649만 호·기타 1,947만 호를 잠재 교체 대상으로 추산해 수천억 원 규모의 시장 형성을 전망한다. 두 사업이 동시에 성장 궤도에 진입할 경우 매출·이익의 동반 확대가 기대된다.",
+    "en": "KEPCO's AMIGO next-gen smart meter rollout, which started in earnest in 2025, is generating replacement and incremental demand, with I&C Tech confirming a supply contract in March 2025 and a follow-on engagement in April 2026. The KEC revision mandating arc circuit breakers for newly built or renovated logistics centers and traditional markets is expected to open a multi-hundred-billion won addressable market, covering an estimated 7.5mn apartment units, 6.49mn commercial premises, and 19.47mn other facilities. Should both growth drivers gain traction simultaneously, meaningful operating leverage is achievable."
+   }
+  },
+  {
+   "title": {
+    "ko": "흑자전환 이후 개선된 현금 창출과 재무 건전성",
+    "en": "Improved Cash Generation and Balance Sheet Strength After Turnaround"
+   },
+   "body": {
+    "ko": "2025년 영업현금흐름(CFO) 84.4억원으로 실질적인 현금 창출 능력을 회복했고, 부채비율은 2024년 68.3%에서 2025년 48.3%로 하락했다. 지배주주 귀속 순자산이 352.8억원으로 탄탄한 재무 기반을 갖췄으며, 영업이익률이 11.0%로 2022년(6.2%)·2023년(2.2%)을 상회하는 마진 개선이 확인됐다. 이는 R&D 투자 지속 및 신규 사업 진입에 필요한 재무적 여유를 제공한다.",
+    "en": "FY2025 operating cash flow of KRW 8.4bn restored genuine cash generation capacity, and the debt ratio declined from 68.3% in FY2024 to 48.3% in FY2025. Controlling-shareholder equity of KRW 35.3bn provides a solid financial foundation, and the 11.0% operating margin in FY2025 represents clear improvement over FY2022 (6.2%) and FY2023 (2.2%). This financial improvement affords headroom for sustained R&D investment and new business entry."
+   }
+  },
+  {
+   "title": {
+    "ko": "국내 유일 Wi-Fi 칩셋 역량 + NB-IoT·ZEMS 다변화 가능성",
+    "en": "Unique Domestic Wi-Fi Chipset Capability + NB-IoT and ZEMS Diversification Potential"
+   },
+   "body": {
+    "ko": "아이앤씨는 국내 유일의 Wi-Fi 칩셋 자체 개발사로, IoT 보안 강화 수요와 직결되는 핵심 기술 자산을 보유한다. 2024년 출시한 NB-IoT 칩 NB5000은 스마트미터·각종 IoT 기기에 적용 가능한 통신 칩으로 중장기 추가 매출원 역할이 기대된다. LH 등 건설 부문 ZEMS 공급 확대까지 더해질 경우 한전 단일 고객 집중도를 단계적으로 낮추는 방향으로 수익 구조가 다변화될 수 있다.",
+    "en": "I&C Tech holds a unique competitive moat as the sole domestic developer of Wi-Fi chipsets, directly relevant to the growing IoT security demand. The NB5000 NB-IoT chip, launched in 2024, is applicable across smart meters and IoT sensing devices, offering a medium-to-long-term incremental revenue stream. Combined with ZEMS deliveries to LH and the broader construction sector, these initiatives could gradually reduce the company's single-customer (KEPCO) concentration and broaden its revenue base."
+   }
+  }
+ ],
+ "bear": [
+  {
+   "title": {
+    "ko": "한전 발주 집중에 따른 구조적 분기 변동성",
+    "en": "Structural Quarterly Volatility from KEPCO Procurement Concentration"
+   },
+   "body": {
+    "ko": "2025년 연간 영업이익 40.5억원의 대부분이 Q2(34.6억원)·Q3(22.8억원)에 집중됐고, Q4는 -22.6억원 적자를 기록했다. 이 같은 분기 편차는 한전 발주 사이클이 조금이라도 어긋나면 반기 이익이 급격히 훼손될 수 있음을 의미한다. 구조적 계절성이 해소되지 않는 한 연간 이익의 안정성에 대한 신뢰가 제한될 수밖에 없다.",
+    "en": "In FY2025, most of the KRW 4.1bn full-year operating profit was concentrated in Q2 (KRW 3.5bn) and Q3 (KRW 2.3bn), while Q4 slipped to a KRW -2.3bn operating loss. Any shift in KEPCO procurement timing could rapidly erode half-year earnings, as the 2024 experience demonstrated. Until this structural seasonality is addressed, long-term earnings predictability remains constrained."
+   }
+  },
+  {
+   "title": {
+    "ko": "KEPCO 단일 고객 의존 및 AMI 발주 공백 반복 가능성",
+    "en": "KEPCO Single-Customer Risk and Risk of Recurring AMI Procurement Gaps"
+   },
+   "body": {
+    "ko": "2024년 실적 붕괴(매출 -63.7%, 영업손실 -106.7억원)는 한전 AMI 대형 사업 종료 후 발주 공백 발생 시 이익이 얼마나 취약한지를 극단적으로 보여줬다. AMIGO 발주 규모와 빈도는 기존 AMI 사이클과 다를 수 있으며, 한전의 재무 여건·정부 에너지 정책 변화가 발주 속도를 좌우한다. 고객 다변화 없이는 동일한 사이클이 반복될 위험이 구조적으로 상존한다.",
+    "en": "The FY2024 collapse — revenue down 63.7%, operating loss of KRW -10.7bn — starkly illustrated how vulnerable earnings are when KEPCO procurement gaps emerge after major AMI project completions. AMIGO procurement scale and frequency may differ from prior AMI cycles, and KEPCO's financial position and government energy policy priorities will govern the cadence of orders. Without meaningful customer diversification, the risk of a repeat earnings cycle remains structurally embedded."
+   }
+  },
+  {
+   "title": {
+    "ko": "아크차단기 경쟁 격화 및 KEC 의무화 일정 불확실성",
+    "en": "Intensifying Arc Breaker Competition and KEC Mandate Timeline Uncertainty"
+   },
+   "body": {
+    "ko": "KEC 개정에 따른 아크차단기 의무화는 아이앤씨 외에도 제일일렉트릭 등 기존 전기기기 업체와 신규 진입자를 동시에 자극하고 있어, 수혜 분산 가능성이 크다. 의무화 시행 일정은 정책 우선순위 변화에 따라 지연될 수 있으며, 민간 시장의 자발적 교체 수요는 법제화 속도에 크게 의존한다. 3세대 SoC 기반 제품의 상용화 일정과 양산 규모도 아직 확정되지 않아, 단기 매출 기여 시점의 불확실성이 남아 있다.",
+    "en": "The KEC-driven arc circuit breaker mandate is simultaneously attracting established electrical device makers such as JeilElectric and potential new entrants, raising the risk of fragmented market share gains for I&C Tech. Regulatory implementation timelines can slip as policy priorities shift, and private-sector retrofit demand in commercial and industrial facilities is heavily dependent on the pace of enforcement. Additionally, the commercial validation and mass production timeline for the 3rd-gen SoC arc breaker remains undisclosed, adding uncertainty to near-term revenue contribution."
+   }
+  }
+ ],
+ "risks": [
+  {
+   "cat": {
+    "ko": "정책·규제 리스크",
+    "en": "Policy & Regulatory Risk"
+   },
+   "body": {
+    "ko": "한전 AMI·AMIGO 사업 발주 규모와 시기는 한전의 재무 여건 및 정부 전력망 투자 정책에 직결된다. KEC 아크차단기 의무화 시행 일정 변경, 스마트그리드 확산사업 예산 조정 등 정책 변수가 단기 실적에 직접 영향을 미칠 수 있다. 에너지 정책 방향이 원전·LNG 중심으로 전환될 경우 스마트그리드·AMI 관련 예산 배분이 축소될 가능성도 배제할 수 없다.",
+    "en": "The scale and timing of KEPCO AMI/AMIGO procurement are directly linked to KEPCO's financial health and government power infrastructure investment policy. Changes in the KEC arc circuit breaker mandate timeline or smart grid program budget adjustments could directly affect near-term results. A shift in energy policy priorities toward nuclear or LNG could reduce budget allocations for smart grid and AMI-related programs."
+   }
+  },
+  {
+   "cat": {
+    "ko": "고객 집중 및 수주 편중 리스크",
+    "en": "Customer Concentration & Order Lumpiness Risk"
+   },
+   "body": {
+    "ko": "매출의 상당 부분을 한국전력공사 및 AMI 관련 납품에 의존하는 구조는 단일 고객 협상력 열위와 발주 공백 시 실적 급락 위험을 내포한다. 확정 재무 기준 4개년(2022~2025년) 연간 매출이 233.7억원(최저)~642.9억원(최고)으로 약 2.75배 편차를 보인 것이 이를 방증한다. 신규 사업(아크차단기, ZEMS, NB-IoT)이 충분한 매출 기반을 구축하기 전까지 이 구조적 취약성은 지속된다.",
+    "en": "Heavy reliance on KEPCO and AMI-related deliveries exposes the company to concentrated customer bargaining power and sharp earnings declines during procurement gaps. The nearly 2.75x spread between the annual revenue low (KRW 23.4bn in FY2024) and high (KRW 64.3bn in FY2023) over the four-year period illustrates this vulnerability vividly. Until arc circuit breaker, ZEMS, and NB-IoT revenues build a meaningful base, this structural risk persists."
+   }
+  },
+  {
+   "cat": {
+    "ko": "원가 및 경쟁 환경 리스크",
+    "en": "Cost Structure & Competitive Landscape Risk"
+   },
+   "body": {
+    "ko": "팹리스 특성상 파운드리(위탁생산) 비용 상승이나 핵심 반도체 부품 조달 차질 시 원가 구조가 악화될 수 있다. 아크차단기 시장 확대로 신규 참가자가 증가하면 단가 경쟁이 심화될 수 있으며, 기존 전기기기 업체들의 SoC 내재화 시 아이앤씨의 기술적 차별성이 희석될 위험이 있다. Wi-Fi·NB-IoT 칩 분야에서는 글로벌 반도체 대기업과의 간접 경쟁도 중장기 가격 압력 요인으로 작용할 수 있다.",
+    "en": "As a fabless company, I&C Tech faces the risk of foundry cost inflation or component supply disruptions that could pressure its cost structure. Growing arc circuit breaker market attractiveness may invite new entrants and intensify price competition, while vertical integration of SoC capabilities by traditional electrical device manufacturers could erode I&C's technology differentiation. In Wi-Fi and NB-IoT chips, indirect competition from global semiconductor majors poses a medium-to-long-term pricing headwind."
+   }
+  }
+ ],
+ "checkpoints": [
+  {
+   "when": {
+    "ko": "2026년 8월 중순 (2026Q2 실적 발표 예상)",
+    "en": "Mid-August 2026 (Expected Q2 2026 Earnings Release)"
+   },
+   "what": {
+    "ko": "2026Q2 매출·영업이익이 전년 동기(143.6억원, 34.6억원)에 근접하는지 확인. 이는 AMIGO 물량의 지속성과 한전 발주 타이밍을 검증하는 핵심 지표다.",
+    "en": "Check whether Q2 2026 revenue and operating profit approach the prior-year figures (KRW 14.4bn, KRW 3.5bn). This is the primary test of AMIGO volume continuity and KEPCO procurement timing."
+   }
+  },
+  {
+   "when": {
+    "ko": "2026년 하반기 (KEC 아크차단기 의무화 세부 시행 일정 공표)",
+    "en": "Second Half 2026 (KEC Arc Breaker Mandate Formal Implementation Details)"
+   },
+   "what": {
+    "ko": "기후에너지환경부 KEC 개정 시행령 공포 여부 및 물류창고·전통시장 의무화 적용 시점 확인. 법제화 속도가 아크차단기 수주 증가 시점과 시장 형성 속도를 결정한다.",
+    "en": "Monitor whether the revised KEC mandate is formally enacted and when the arc circuit breaker obligation applies to logistics centers and traditional markets. The enforcement timeline will determine when arc breaker order acceleration begins and how quickly the addressable market crystallizes."
+   }
+  },
+  {
+   "when": {
+    "ko": "2026년 연중 (AMIGO 추가 발주 및 신규 KEPCO 입찰 공고)",
+    "en": "Throughout 2026 (AMIGO Follow-on Orders / New KEPCO Tenders)"
+   },
+   "what": {
+    "ko": "한전 AMIGO 계량기 후속 낙찰 공고 및 수량·금액 공시 여부 모니터링. AMIGO 연간 발주 물량이 2025년 수준을 유지 또는 상회하는지가 스마트에너지 부문 매출 기반을 좌우한다.",
+    "en": "Track new KEPCO AMIGO tender announcements and disclosed contract volumes. Maintaining AMIGO order volumes at or above FY2025 levels is critical for sustaining the Smart Energy segment's revenue base and the broader earnings recovery."
+   }
+  },
+  {
+   "when": {
+    "ko": "2026년 하반기~2027년 초 (ZEMS·NB-IoT 매출 기여 가시화)",
+    "en": "H2 2026–Early 2027 (ZEMS & NB-IoT Revenue Materialization)"
+   },
+   "what": {
+    "ko": "ZEMS 수주 규모 및 NB5000 칩 납품 실적이 분기 공시나 IR 자료를 통해 확인되는지 모니터링. 두 신사업의 매출 기여가 가시화될 경우 한전 집중 리스크 완화의 증거로 해석할 수 있다.",
+    "en": "Monitor whether ZEMS order volumes and NB5000 chip shipment figures appear in quarterly disclosures or IR materials. Visible revenue contribution from these two initiatives would serve as concrete evidence of reduced KEPCO concentration risk."
+   }
+  },
+  {
+   "when": {
+    "ko": "2026년 11월 말 (2026Q3 실적 발표 예상)",
+    "en": "Late November 2026 (Expected Q3 2026 Earnings Release)"
+   },
+   "what": {
+    "ko": "2025Q3(영업이익 22.8억원) 대비 수익성 유지·개선 여부 확인. 2025년 Q3 이후 Q4에서 급격히 악화된 패턴이 반복되는지를 점검해 연간 이익 안정성의 구조적 변화 여부를 판단하는 데 중요하다.",
+    "en": "Assess whether operating profit in Q3 2026 holds up relative to the KRW 2.3bn posted in Q3 2025. Given the sharp Q4 2025 deterioration after a solid Q3, confirming whether the second-half seasonal cliff is narrowing will be critical for evaluating full-year earnings stability."
+   }
+  }
+ ],
+ "verdict": {
+  "body": {
+   "ko": "아이앤씨는 한전 AMIGO 차세대 스마트미터 도입과 KEC 아크차단기 의무화라는 두 가지 구조적 정책 흐름을 동시에 수혜 받는 국내 유일의 팹리스 반도체 기업이다. 2024년 극단적 적자(영업손실 -106.7억원)를 딛고 2025년 매출 368.8억원·영업이익 40.5억원으로 흑자전환했으며, 2026Q1에도 OPM ~11%의 이익 기조가 이어지고 있다. 그러나 매출과 이익이 한전 발주 사이클에 강하게 연동돼 2025년 단일 연도에도 Q2 흑자(34.6억원)에서 Q4 적자(-22.6억원)까지 극단적 편차가 반복됐다는 점은 구조적 취약성으로 남아 있다. 아크차단기·ZEMS·NB-IoT 등 신사업의 실질적 매출 기여가 확인되기 전까지는 한전 집중도 완화 여부를 판단하기 이르다. 순자산 대비 상당한 프리미엄 구간에 위치한 현 주가를 지지하려면 향후 2~3개 분기에 걸친 이익 안정성 입증이 선결 조건이다. 투자자로서는 2026Q2 실적 발표, AMIGO 추가 발주 공시, KEC 의무화 시행 일정을 주요 확인 이벤트로 삼아 지속적으로 모니터링하는 것이 중요하다.",
+   "en": "I&C Technology is the only domestic fabless semiconductor company simultaneously positioned to benefit from two structural policy tailwinds: KEPCO's AMIGO next-gen smart meter rollout and the government's push to legally mandate arc circuit breakers. After a severe FY2024 operating loss of KRW -10.7bn, the company returned to profitability in FY2025 with revenue of KRW 36.9bn and operating profit of KRW 4.1bn, a recovery that has continued into Q1 2026 at approximately 11% OPM. However, the structural earnings volatility tied to KEPCO procurement timing — demonstrated by the swing from a KRW 3.5bn operating profit in Q2 2025 to a KRW -2.3bn loss in Q4 2025 within the same fiscal year — remains a key challenge. Customer diversification from arc circuit breakers, ZEMS, and NB-IoT is strategically necessary but has yet to generate material and independently verifiable revenue. The current share price sits at a meaningful premium over book value, making the confirmation of earnings stability across the next two to three quarters a critical condition for sustaining that valuation. Investors should closely monitor the Q2 2026 earnings release, new AMIGO contract announcements, and the regulatory timeline for KEC arc circuit breaker mandates as the primary near-term checkpoints."
+  }
+ },
+ "sources": [
+  "https://comp.fnguide.com/SVO2/ASP/SVD_Main.asp?gicode=A052860",
+  "https://m.irgo.co.kr/IR-COMP/052860/%EC%95%84%EC%9D%B4%EC%95%A4%EC%94%A8-IR-ROOM",
+  "https://markets.hankyung.com/stock/052860",
+  "https://m.finance.daum.net/quotes/A052860",
+  "https://m.thinkpool.com/item/052860",
+  "https://www.google.com/finance/quote/052860:KOSDAQ?hl=en",
+  "https://comp.fnguide.com/SVO2/asp/SVD_Invest.asp?pGB=1&cID=&MenuYn=Y&ReportGB=D&NewMenuID=105&stkGb=701&gicode=A052860",
+  "http://stock.landmoa.net/?acmode=b_s&curjong=stock001010&no=052860&page=1&orgcstyle=&cstyle=4&keyfield=sttag&oldkeyfield=&key=%EB%B6%80%ED%92%88&oldkey=&keycal=&ksearch=",
+  "https://ssl.pstatic.net/imgstock/upload/research/company/1604535447646.pdf",
+  "http://www.thinkpool.com/itemanal/i/index.jsp?code=052860",
+  "http://www.infostock.co.kr/site/3d/3d_show.asp?codename=052860",
+  "https://www.kokstock.com/stock/item.asp?item_cd=052860",
+  "https://www.jobkorea.co.kr/recruit/co_read/c/inc78",
+  "https://ko.wikipedia.org/wiki/%EC%95%84%EC%9D%B4%EC%95%A4%EC%94%A8%ED%85%8C%ED%81%AC%EB%86%80%EB%A1%9C%EC%A7%80",
+  "https://alphasquare.co.kr/home/stock-summary?code=052860",
+  "http://en.inctech.co.kr/",
+  "https://www.investing.com/equities/ic-technology-co-ltd",
+  "https://finance.finup.co.kr/Stock/052860"
+ ],
+ "v": 2,
+ "model": "claude-sonnet-4-6",
+ "ticker": "052860",
+ "name": "아이앤씨",
+ "name_en": "I&C Technology Co., Ltd.",
+ "sector": "반도체",
+ "categories": [
+  "반도체"
+ ],
+ "market": "코스닥",
+ "reportDate": "2026-06-19",
+ "reportTs": "2026-06-19 02:25",
+ "dataDate": "20260618",
+ "quant": {
+  "asOf": "2026-06-18",
+  "fs_basis": "연결(CFS) · DART 공시 확정치 · 지배주주 기준 순이익",
+  "annual": [
+   {
+    "year": 2025,
+    "rev": 36878556322,
+    "op": 4050146283,
+    "np": 4284956489,
+    "np_owner": 4284956489,
+    "equity": 35681190456,
+    "equity_owner": 35284093656,
+    "liab": 17241195987,
+    "cfo": 8441824762,
+    "eps_basic": 281,
+    "opm": 11.0,
+    "roe": 12.1,
+    "debt_ratio": 48.3
+   },
+   {
+    "year": 2024,
+    "rev": 23374281444,
+    "op": -10673994878,
+    "np": -11991193465,
+    "np_owner": -11937656459,
+    "equity": 30480555064,
+    "equity_owner": 29802135531,
+    "liab": 20808353151,
+    "cfo": 1069969392,
+    "eps_basic": -718,
+    "opm": -45.7,
+    "roe": -40.1,
+    "debt_ratio": 68.3
+   },
+   {
+    "year": 2023,
+    "rev": 64285596112,
+    "op": 1433685935,
+    "np": 46912304,
+    "np_owner": 46912304,
+    "equity": 44505586945,
+    "equity_owner": 43775079381,
+    "liab": 22747496214,
+    "cfo": 5649919338,
+    "eps_basic": -17,
+    "opm": 2.2,
+    "roe": 0.1,
+    "debt_ratio": 51.1
+   },
+   {
+    "year": 2022,
+    "rev": 39384695654,
+    "op": 2449098030,
+    "np": 1029325811,
+    "np_owner": 963210810,
+    "equity": 44322265740,
+    "equity_owner": 43918834724,
+    "liab": 21074827571,
+    "cfo": -2226394488,
+    "eps_basic": 56,
+    "opm": 6.2,
+    "roe": 2.2,
+    "debt_ratio": 47.5
+   }
+  ],
+  "quarterly": [
+   {
+    "q": "2025Q1",
+    "rev": 9408718335,
+    "op": 563446919,
+    "np_owner": 478918211
+   },
+   {
+    "q": "2025Q2",
+    "rev": 14355043352,
+    "op": 3462978042,
+    "np_owner": 3448636521
+   },
+   {
+    "q": "2025Q3",
+    "rev": 8204676499,
+    "op": 2280665819,
+    "np_owner": 2279375717
+   },
+   {
+    "q": "2025Q4",
+    "rev": 4910118136,
+    "op": -2256944497,
+    "np_owner": -1921973960
+   },
+   {
+    "q": "2026Q1",
+    "rev": 8989681533,
+    "op": 1024548397,
+    "np_owner": 1034025678
+   }
+  ],
+  "valuation": {
+   "price": 4965,
+   "mcap": 0.0887,
+   "shares": 17862854,
+   "total_shares": 17862854,
+   "wavg_shares": 15908087,
+   "per": 15.7,
+   "eps": 316,
+   "pbr": 2.17,
+   "bps": 2286,
+   "roe_ttm": 14.5,
+   "ttm_window": "2025Q2~2026Q1",
+   "ttm_np_owner": 4840063956,
+   "pbr_krx": 2.32,
+   "bps_krx": 2140.0,
+   "basis": "PER·EPS·PBR·BPS 모두 자체 산출(네이버·토스와 동일 방식) · 배당은 DART 공시 주당현금배당금(보완:KRX) ÷ 현재가",
+   "dps": 0.0,
+   "div": 0.0
+  }
+ }
+}
