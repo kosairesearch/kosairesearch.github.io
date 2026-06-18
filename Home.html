@@ -235,6 +235,16 @@ body::before{
 :root[data-theme="dark"] .ac-nm mark{color:var(--brand-cyan)}
 .ac-sec{font:500 12.5px var(--font-sans);color:var(--fg-3);margin-left:auto;flex:0 0 auto;white-space:nowrap}
 .ac-empty{padding:18px 14px;font:500 14px var(--font-sans);color:var(--fg-3);text-align:center}
+/* recent searches */
+.ac-head{display:flex;align-items:center;justify-content:space-between;padding:8px 12px 5px}
+.ac-head span{font:600 12px var(--font-sans);color:var(--fg-3);letter-spacing:.02em}
+.ac-clear{background:none;border:0;font:500 12px var(--font-sans);color:var(--fg-3);cursor:pointer;padding:3px 5px;border-radius:6px}
+.ac-clear:hover{color:var(--fg-1);text-decoration:underline}
+.ac-recent{cursor:pointer}
+.ac-x{margin-left:auto;background:none;border:0;color:var(--fg-3);font-size:17px;line-height:1;cursor:pointer;
+  padding:2px 7px;border-radius:7px;flex:0 0 auto}
+.ac-x:hover{color:var(--fg-1);background:rgba(0,0,0,.07)}
+:root[data-theme="dark"] .ac-x:hover{background:rgba(255,255,255,.1)}
 .hero-chips{display:flex;gap:8px;justify-content:center;flex-wrap:wrap}
 .chip{display:inline-flex;align-items:center;gap:6px;font:500 13px var(--font-sans);
   color:var(--fg-2);background:rgba(255,255,255,.55);border:1px solid rgba(255,255,255,.5);
@@ -1053,11 +1063,30 @@ const input = document.getElementById('searchInput');
 const acList = document.getElementById('acList');
 let acItems = [], acActive = -1;
 
+/* 최근 본 종목(기기 저장) — stock.html에서 방문 시 기록됨 */
+const RKEY='kos-recent';
+function getRecent(){ try{ return JSON.parse(localStorage.getItem(RKEY)||'[]').filter(x=>x&&x.t); }catch(e){ return []; } }
+function setRecent(a){ try{ localStorage.setItem(RKEY, JSON.stringify(a)); }catch(e){} }
+function renderRecent(){
+  const rec=getRecent();
+  if(!rec.length){ closeAC(); return; }
+  acItems = rec.map(x=>({ticker:x.t, name:x.n})); acActive=-1;
+  acList.innerHTML =
+    `<div class="ac-head"><span>${KOS.T('최근 본 종목')}</span><button type="button" class="ac-clear" id="acClear">${KOS.T('전체 삭제')}</button></div>`
+    + rec.map((x,i)=>
+      `<div class="ac-item ac-recent" data-i="${i}" data-tk="${x.t}" role="option">
+        <span class="ac-tk">${x.t}</span>
+        <span class="ac-nm">${KOS.T(x.n)}</span>
+        <button type="button" class="ac-x" data-tk="${x.t}" aria-label="${KOS.T('삭제')}">×</button>
+      </div>`).join('');
+  acList.classList.add('show'); input.setAttribute('aria-expanded','true');
+}
+
 function renderAC(){
   const q=input.value;
+  if(!q.trim()){ renderRecent(); return; }
   acItems = searchStocks(q);
   acActive = -1;
-  if(!q.trim()){ closeAC(); return; }
   if(acItems.length===0){
     acList.innerHTML = `<div class="ac-empty">"${q.trim()}" ${KOS.T('검색 결과가 없습니다')}</div>`;
   } else {
@@ -1079,7 +1108,14 @@ function setActive(n){
 }
 
 input.addEventListener('input', ()=>{ renderReports(input.value); renderAC(); });
-input.addEventListener('focus', ()=>{ if(input.value.trim()) renderAC(); });
+input.addEventListener('focus', ()=>{ input.value.trim()?renderAC():renderRecent(); });
+acList.addEventListener('click', e=>{
+  const x=e.target.closest('.ac-x');
+  if(x){ e.preventDefault(); e.stopPropagation(); setRecent(getRecent().filter(r=>r.t!==x.dataset.tk)); renderRecent(); return; }
+  if(e.target.closest('#acClear')){ e.preventDefault(); setRecent([]); closeAC(); return; }
+  const row=e.target.closest('.ac-recent');
+  if(row){ window.location.href='stock.html?ticker='+row.dataset.tk; }
+});
 input.addEventListener('keydown', e=>{
   if(!acList.classList.contains('show')) return;
   if(e.key==='ArrowDown'){ e.preventDefault(); setActive(acActive+1); }
@@ -1132,6 +1168,9 @@ const HOME_DICT = {
   "업종별 페이지로":"Go to Industries",
   "검색 결과가 없습니다.":"No results found.",
   "검색 결과가 없습니다":"No results found",
+  "최근 본 종목":"Recently viewed",
+  "전체 삭제":"Clear all",
+  "삭제":"Remove",
   "검색":"Search",
   "배당":"Yield",
   "전체":"All",
@@ -1154,7 +1193,7 @@ if(window.KOSi18n){
     renderTabs();
     renderReports(input.value);
     renderMovers();
-    if(input.value.trim()) renderAC();
+    if(acList.classList.contains('show')){ input.value.trim()?renderAC():renderRecent(); }
   });
 }
 </script>

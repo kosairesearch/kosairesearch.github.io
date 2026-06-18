@@ -1236,6 +1236,13 @@ KOSi18n.register({
   render();
   // 한 번만 집계(render는 언어 토글 시 재실행되므로 여기서 1회)
   if(window.KOSA) KOSA.track(REP?'report_view':'stock_view', { ticker: TK, name: tname(STOCK.name) });
+  // 최근 본 종목 기록(검색창 드롭다운용) — 기기에만 저장(localStorage). 캐논 한글명 저장→홈에서 언어별 번역.
+  try{
+    var _RK='kos-recent';
+    var _r=JSON.parse(localStorage.getItem(_RK)||'[]').filter(function(x){return x&&x.t&&x.t!==TK;});
+    _r.unshift({t:TK, n:(STOCK.name||TK)});
+    localStorage.setItem(_RK, JSON.stringify(_r.slice(0,8)));
+  }catch(e){}
   var wb=document.getElementById('watchBtn');
   if(wb)wb.addEventListener('click',function(){
     if(!window.KOSWatch) return;
