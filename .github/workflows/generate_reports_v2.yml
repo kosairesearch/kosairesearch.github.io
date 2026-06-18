@@ -81,10 +81,15 @@ jobs:
         run: |
           git config --global user.email "bot@kosairesearch.github.io"
           git config --global user.name "KOS ai Bot"
-          git add -A data/
+          # 병렬 run은 '서로 겹치지 않는' 파일만 커밋한다(종목별 리포트 JSON + skip 마커).
+          # 전역 파일(reports-index.js·index.json·batch_state·run.log)은 커밋하지 않아 rebase 충돌이 없다.
+          # → reports-index.js는 워치독의 reindex(단일 직렬)가 재생성한다.
+          git add data/reports_v2 data/reports_v2_skip 2>/dev/null || true
+          git reset -q data/reports_v2/index.json 2>/dev/null || true
+          # 스크립트가 건드린 전역 파일은 되돌려 rebase를 깨끗하게 유지
+          git checkout -q -- data/batch_state_v2.json data/reports_v2_run.log data/reports-index.js data/reports_v2/index.json 2>/dev/null || true
           git commit -m "📊 리포트 v2 (${{ inputs.mode }}) $(TZ='Asia/Seoul' date +'%Y-%m-%d %H:%M KST')" || exit 0
-          # 병렬 run이 많아 push 경쟁이 큼. 파일은 서로 겹치지 않아 rebase는 항상 깨끗 →
-          # 충분한 재시도 + 랜덤 백오프로 각자 push 창을 확보(생성 결과 유실 방지).
+          # 겹치지 않는 파일만 커밋하므로 rebase는 항상 깨끗. 재시도+랜덤 백오프로 push 창 확보.
           ok=""
           for i in $(seq 1 25); do
             git fetch origin main -q 2>/dev/null || true

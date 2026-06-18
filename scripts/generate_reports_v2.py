@@ -33,21 +33,28 @@ import generate_reports as g  # log/extract_text/collect_sources/load_stocks 재
 
 OUT_DIR = ROOT / "data" / "reports_v2"
 STATE_JS = ROOT / "data" / "batch_state_v2.json"
-# 생성 불가 종목(DART 재무 없음: 인프라펀드·스팩·일부 지주 등) — 백필이 영원히 재시도하지 않도록 기록
-SKIP_FILE = ROOT / "data" / "reports_v2_skip.txt"
+# 생성 불가 종목(DART 재무 없음: 인프라펀드·스팩·일부 지주 등) — 백필이 영원히 재시도하지 않도록 기록.
+# 종목별 마커 파일(디렉터리)로 저장 → 병렬 run이 서로 겹치지 않아 git 커밋 충돌이 없다.
+SKIP_DIR = ROOT / "data" / "reports_v2_skip"
 
 
 def load_skip():
-    if SKIP_FILE.exists():
-        return {ln.strip() for ln in SKIP_FILE.read_text(encoding="utf-8").splitlines() if ln.strip()}
-    return set()
+    out = set()
+    if SKIP_DIR.exists():
+        out |= {p.name for p in SKIP_DIR.iterdir() if p.is_file() and not p.name.startswith(".")}
+    # 구버전 단일 파일도 함께 읽어 호환
+    legacy = ROOT / "data" / "reports_v2_skip.txt"
+    if legacy.exists():
+        out |= {ln.strip() for ln in legacy.read_text(encoding="utf-8").splitlines() if ln.strip()}
+    return out
 
 
 def add_skip(tickers):
     if not tickers:
         return
-    merged = sorted(load_skip() | set(tickers))
-    SKIP_FILE.write_text("\n".join(merged) + "\n", encoding="utf-8")
+    SKIP_DIR.mkdir(parents=True, exist_ok=True)
+    for t in tickers:
+        (SKIP_DIR / t).write_text("", encoding="utf-8")
 
 MODEL = os.getenv("REPORT_MODEL_V2", "claude-opus-4-8")  # 폴백
 # 모델 정책: 시총 상위 MODEL_TOP_N개는 고급 모델(Opus), 나머지는 효율 모델(Sonnet)
@@ -866,10 +873,9 @@ def collect(cl, as_of):
             fail += 1
             log(f"  · ⚠️ {tk} 파싱 실패: {type(e).__name__}: {e}")
 
-    # 인덱스(존재하는 v2 리포트 목록)
+    # 전역 인덱스(reports-index.js)는 병렬 커밋 충돌을 피하려 여기서 쓰지 않는다.
+    # → 워치독이 reindex(단일 직렬)로 전체 v2에서 재생성한다. 이 run은 자기 종목 JSON만 커밋.
     have = sorted(p.stem for p in OUT_DIR.glob("*.json") if p.stem.isdigit())
-    (OUT_DIR / "index.json").write_text(json.dumps(have), encoding="utf-8")
-    sync_list_index(have)
     log(f"\n✅ v2 회수 완료 · 성공 {ok}/실패 {fail} → data/reports_v2/ ({len(have)}개)")
     return True
 

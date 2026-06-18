@@ -16,19 +16,28 @@ def _skip(text):
     return {ln.strip() for ln in (text or "").splitlines() if ln.strip()}
 
 
+def _gitout(args):
+    try:
+        return subprocess.check_output(args, cwd=ROOT, text=True, stderr=subprocess.DEVNULL)
+    except Exception:
+        return ""
+
+
 if ref:
     stocks_js = subprocess.check_output(["git", "show", f"{ref}:data/stocks.js"], cwd=ROOT, text=True)
     names = subprocess.check_output(["git", "ls-tree", "-r", "--name-only", ref, "data/reports_v2"], cwd=ROOT, text=True)
     have = {Path(n).stem for n in names.splitlines() if n.endswith(".json")}
-    try:
-        skip = _skip(subprocess.check_output(["git", "show", f"{ref}:data/reports_v2_skip.txt"], cwd=ROOT, text=True, stderr=subprocess.DEVNULL))
-    except Exception:
-        skip = set()
+    # skip: 디렉터리 마커 + 구버전 단일 파일
+    skip = {Path(n).name for n in _gitout(["git", "ls-tree", "-r", "--name-only", ref, "data/reports_v2_skip"]).splitlines() if n and not n.endswith("/")}
+    skip |= _skip(_gitout(["git", "show", f"{ref}:data/reports_v2_skip.txt"]))
 else:
     stocks_js = (ROOT / "data" / "stocks.js").read_text(encoding="utf-8")
     have = {p.stem for p in (ROOT / "data" / "reports_v2").glob("*.json")}
+    sd = ROOT / "data" / "reports_v2_skip"
+    skip = {p.name for p in sd.iterdir() if p.is_file() and not p.name.startswith(".")} if sd.exists() else set()
     sf = ROOT / "data" / "reports_v2_skip.txt"
-    skip = _skip(sf.read_text(encoding="utf-8")) if sf.exists() else set()
+    if sf.exists():
+        skip |= _skip(sf.read_text(encoding="utf-8"))
 
 obj = json.loads(re.search(r"=\s*(\{.*)", stocks_js, re.S).group(1).strip().rstrip(";"))
 stocks = sorted(obj["stocks"], key=lambda x: x.get("mcap", 0) or 0, reverse=True)[:fill_to]

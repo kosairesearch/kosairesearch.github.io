@@ -14,7 +14,7 @@ concurrency:
   cancel-in-progress: false
 
 permissions:
-  contents: read
+  contents: write
   actions: write
 
 jobs:
@@ -25,6 +25,26 @@ jobs:
       - uses: actions/setup-python@v5
         with:
           python-version: '3.11'
+
+      # 병렬 리포트 run은 종목 JSON만 커밋하므로, 목록 페이지용 reports-index.js는
+      # 여기서 단일 직렬로 전체 v2에서 재생성한다(충돌 없음, 표준 라이브러리만 사용).
+      - name: 리포트 인덱스 재생성(직렬)
+        run: |
+          git config --global user.email "bot@kosairesearch.github.io"
+          git config --global user.name "KOS ai Bot"
+          python scripts/_reindex.py || true
+          git add data/reports-index.js
+          if git diff --cached --quiet; then
+            echo "인덱스 변경 없음"
+          else
+            git commit -m "🔄 리포트 인덱스 동기화 $(TZ='Asia/Seoul' date +'%Y-%m-%d %H:%M KST')"
+            for i in $(seq 1 25); do
+              git fetch origin main -q 2>/dev/null || true
+              if git rebase origin/main 2>/dev/null && git push origin main 2>/dev/null; then break; fi
+              git rebase --abort 2>/dev/null || true
+              sleep $(( (RANDOM % 9) + 2 ))
+            done
+          fi
 
       - name: 남은 리포트 점검 후 필요 시 재가동
         env:
