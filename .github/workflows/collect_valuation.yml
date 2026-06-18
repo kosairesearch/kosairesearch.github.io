@@ -54,10 +54,11 @@ jobs:
           git add -A data/valuation.js data/valuation_run.log
           git commit -m "📊 밸류에이션 수집 $(TZ='Asia/Seoul' date +'%Y-%m-%d %H:%M KST')" || exit 0
           ok=""
-          for i in 1 2 3 4 5; do
-            if git pull --rebase origin main && git push origin main; then ok=1; break; fi
+          for i in $(seq 1 25); do
+            git fetch origin main -q 2>/dev/null || true
+            if git rebase origin/main 2>/dev/null && git push origin main 2>/dev/null; then ok=1; break; fi
             git rebase --abort 2>/dev/null || true
-            sleep $((i*3))
+            sleep $(( (RANDOM % 9) + 2 ))
           done
           [ -n "$ok" ] || exit 1
 

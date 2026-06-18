@@ -83,11 +83,14 @@ jobs:
           git config --global user.name "KOS ai Bot"
           git add -A data/
           git commit -m "📊 리포트 v2 (${{ inputs.mode }}) $(TZ='Asia/Seoul' date +'%Y-%m-%d %H:%M KST')" || exit 0
+          # 병렬 run이 많아 push 경쟁이 큼. 파일은 서로 겹치지 않아 rebase는 항상 깨끗 →
+          # 충분한 재시도 + 랜덤 백오프로 각자 push 창을 확보(생성 결과 유실 방지).
           ok=""
-          for i in 1 2 3 4 5; do
-            if git pull --rebase origin main && git push origin main; then ok=1; break; fi
+          for i in $(seq 1 25); do
+            git fetch origin main -q 2>/dev/null || true
+            if git rebase origin/main 2>/dev/null && git push origin main 2>/dev/null; then ok=1; break; fi
             git rebase --abort 2>/dev/null || true
-            sleep $((i*3))
+            sleep $(( (RANDOM % 9) + 2 ))
           done
           [ -n "$ok" ] || exit 1
 
