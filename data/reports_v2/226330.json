@@ -1,0 +1,357 @@
+{
+ "title": {
+  "ko": "AI 플랫폼 상업화 첫걸음, 수익화 경로 검증이 관건",
+  "en": "AI Platform Commercialization Begins: Revenue Path Verification Is Key"
+ },
+ "lead": {
+  "ko": "2025년 AI 신약개발 플랫폼 상용화로 매출이 약 34억 원으로 급증하며 상업화의 첫 신호를 보였으나, 영업손실이 연간 약 107억 원 규모로 지속되어 지속 가능한 수익 창출 경로의 확인이 핵심 과제다.",
+  "en": "2025 marked a first signal of commercialization with revenue surging to approximately KRW 3.4 billion on AI platform adoption, yet operating losses remain deep at approximately KRW 10.7 billion—confirming a sustainable monetization pathway is the critical challenge ahead."
+ },
+ "keypoints": [
+  {
+   "ko": "2025년 연결 매출이 전년 대비 약 2,737% 급증(1.2억 원→34억 원), AI 신약개발 플랫폼 상용화 효과가 처음으로 가시화됐고 영업손실도 25.5% 축소됐다.",
+   "en": "2025 consolidated revenue surged approximately 2,737% year-over-year to ~KRW 3.4 billion as the AI drug discovery platform generated its first meaningful commercial revenues, with operating losses narrowing by 25.5%."
+  },
+  {
+   "ko": "미국 Pragma Biosciences와 최대 45억 원 규모 딥매처 기반 후보물질 발굴 계약, 글로벌 동물의약품사 공동 R&D 계약, 칸젠 기술이전 등 글로벌 파트너십이 다각화되고 있다.",
+   "en": "Global partnerships are diversifying, including a DeepMatcher-based drug discovery contract with U.S.-based Pragma Biosciences (up to KRW 4.5 billion), a joint R&D agreement with a global animal pharmaceutical company, and a technology transfer to Kangen."
+  },
+  {
+   "ko": "미국 FDA의 동물실험 단계적 폐지 정책은 AI 기반 독성 예측 플랫폼 수요 확대의 외부 구조적 촉매로 작용할 수 있으며, 신테카바이오는 오가노이드·제브라피쉬 협업 체계를 이미 갖추고 있다.",
+   "en": "The FDA's phased elimination of animal testing serves as a structural external catalyst for AI-based toxicity prediction platforms, and Syntekabio has already established alternative-testing capabilities through organoid and zebrafish model partnerships."
+  },
+  {
+   "ko": "2026년 1분기 매출은 약 4.2억 원으로 2025년 4분기(17.6억 원) 대비 크게 감소하고 영업손실도 약 35억 원으로 확대되어, 수주 파이프라인의 계속성 확인이 시급하다.",
+   "en": "Q1 2026 revenue fell sharply to KRW 422 million from Q4 2025's KRW 1.76 billion while operating losses widened to ~KRW 3.5 billion, underscoring the urgency of confirming a continuous contract pipeline."
+  },
+  {
+   "ko": "연간 영업손실 규모(약 107억~143억 원)와 현 매출 수준의 격차를 감안하면, 흑자 전환을 위해 계약 수주 건수·단가의 근본적인 확대가 수년간 지속돼야 한다.",
+   "en": "Given the gap between annual operating losses (~KRW 10.7–14.3 billion) and current revenue levels, fundamental scale-up in contract volume and pricing must be sustained over multiple years to achieve breakeven."
+  }
+ ],
+ "business": {
+  "ko": "신테카바이오는 AI 기반 합성신약 후보물질 발굴 플랫폼 '딥매처(DeepMatcher®)'와 AI 암 신생항원 예측 플랫폼 'NEO-ARS®'를 핵심 자산으로 보유한 코스닥 상장 AI 신약 전문기업이다. 핵심 서비스인 STB CLOUD는 대전 둔곡지구 ABS(AI Bio-Supercom) 센터의 3,000대 규모 자체 슈퍼컴퓨팅 인프라 위에 구축된 클라우드형 토탈 서비스로, 표적 단백질만 지정하면 원클릭으로 신약 후보물질 발굴이 가능한 자동화 프로세스를 제공한다. 딥매처는 10억 종 이상의 화합물 가상 스크리닝 능력을 바탕으로 유효물질 발굴(Hit)부터 선도물질 최적화(Lead Optimization)까지 지원하며, NEO-ARS는 암 신생항원 예측을 통해 개인 맞춤형 면역항암 치료 전략 수립에 활용된다. 2024년 국내 최대 규모 환자유래 오가노이드(PDO) 바이오뱅킹 기업 그래디언트, 2023년 제브라피쉬 질환 모델 전문기업 재핏과 협업 체계를 구축해 동물대체시험 역량도 갖추고 있다. 자동화 발굴 프로세스에는 자가면역, 신경계, 혈액암, 고형암, 심혈관계 등 주요 질환 관련 100여 개 표적이 선별돼 있다. 수익 모델은 플랫폼 클라우드 서비스 용역, 공동 R&D 계약, 기술이전(라이선스아웃) 등 세 축으로 구성되나 아직 대부분 매출이 용역계약에 의존하는 초기 상업화 단계다. 경쟁사로는 Schrödinger, Insilico Medicine 등 글로벌 전문 기업과 국내의 스탠다임, 파로스아이바이오 등이 있으며, 구글 딥마인드(AlphaFold 계열) 등 빅테크의 플랫폼 공개 확산도 기술 차별화 유지의 도전 요인이다.",
+  "en": "Syntekabio is a KOSDAQ-listed AI drug discovery company whose core assets are the DeepMatcher® synthetic drug candidate discovery platform and the NEO-ARS® AI neoantigen prediction platform. Its flagship service, STB CLOUD, is built on proprietary AI supercomputing infrastructure (~3,000 servers) at the Daejeon ABS (AI Bio-Supercom) Center, enabling one-click drug candidate discovery once a target protein is specified—a fully automated pipeline. DeepMatcher supports virtual screening of over one billion compounds from hit discovery through lead optimization, while NEO-ARS predicts tumor neoantigens to support personalized cancer immunotherapy. The company has established alternative-to-animal-testing capabilities through partnerships with Gradient (PDO organoid biobanking, 2024) and ZeafIT (zebrafish disease models, 2023). Its automated discovery pipeline covers approximately 100 high-priority therapeutic targets across autoimmune, neurological, hematologic oncology, solid tumor, and cardiovascular disease categories. The revenue model rests on three pillars—cloud platform service contracts, collaborative R&D agreements, and technology out-licensing—but the company remains in early-stage commercialization with most revenues from service contracts. Key competitors include global specialists Schrödinger and Insilico Medicine, domestic peers Standigm and Pharos iBio, and growing big-tech platform offerings such as Google DeepMind's AlphaFold ecosystem."
+ },
+ "earnings": {
+  "ko": "2025년 연결 기준 매출은 약 34억 원으로 전년(약 1.2억 원) 대비 2,737% 급증했으며, 이는 AI 신약개발 플랫폼 상용화에 따라 복수의 제약사와 공동 R&D 및 용역 계약이 실행된 결과다. 영업손실은 약 107억 원으로 전년(-143억 원) 대비 25.5% 축소됐다. 그러나 당기순손실은 약 174억 원으로 전년(-72억 원) 대비 141.5% 확대됐는데, 전년도 파생상품평가이익의 기저효과 소멸과 이자비용 등 비영업 항목에 기인한다. 분기별로는 2025년 1분기(8.7억 원)→2분기(3.5억 원)→3분기(4.6억 원)→4분기(17.6억 원)로 4분기에 계약 성과가 집중됐다. 2026년 1분기 매출은 4.2억 원으로 전 분기 대비 급감했고 영업손실은 약 35억 원으로 2025년 4분기(-25억 원) 대비 확대되어 계약 시점에 따른 변동성이 상당히 큰 구조임을 재확인했다. 2022~2024년 3개년 매출이 1.2억~2.4억 원 수준에 머물렀던 점을 감안하면 2025년 매출 급증은 의미 있는 전환점이나, 총 영업비용(매출+영업손실 규모 기준 약 141억 원)과의 격차는 여전히 크다. 영업현금유출은 2025년 약 -107억 원으로 전년(-105억 원)과 거의 동수준에 머물렀다. 자기자본은 2025년 약 318억 원으로 전년(249억 원) 대비 증가했는데, 유상증자(자본금 76.3억 원→121.3억 원)를 통한 자금 보충이 주요 원인이다. 부채비율도 75.3%(2024년)에서 46.4%(2025년)로 크게 개선됐다.",
+  "en": "Syntekabio's 2025 consolidated revenue surged approximately 2,737% year-over-year to ~KRW 3.4 billion from ~KRW 120 million in 2024, driven by AI platform commercialization through multiple joint R&D and service contracts. Operating losses narrowed 25.5% to approximately KRW -10.7 billion from KRW -14.3 billion in 2024, an early sign of operating leverage. However, net losses widened sharply to approximately KRW -17.4 billion (from KRW -7.2 billion), largely due to the base effect from prior-year derivative valuation gains and rising interest expenses. Quarterly revenue was back-loaded: KRW 0.87B (Q1), 0.35B (Q2), 0.46B (Q3), and 1.76B (Q4) in 2025. In Q1 2026, revenue fell back to KRW 422 million while operating losses widened to approximately KRW -3.5 billion from KRW -2.5 billion in Q4 2025, confirming significant contract-timing volatility. While 2025's jump is a genuine turning point versus the KRW 120–244 million range seen in 2022–2024, total operating costs (approximately KRW 14.1 billion in 2025) remain far above revenue levels. Operating cash outflows in 2025 were approximately KRW -10.6 billion, barely changed from KRW -10.5 billion in 2024. Equity grew to ~KRW 31.8 billion from ~KRW 24.9 billion in 2024 primarily through a capital raise (paid-in capital expanding from KRW 7.63 billion to KRW 12.13 billion), pushing the debt ratio down sharply from 75.3% in 2024 to 46.4% in 2025."
+ },
+ "industry": {
+  "ko": "글로벌 AI 기반 신약 탐색·개발 시장은 2024년 약 17억~19억 달러 규모에서 2030년에는 80억 달러를 웃돌 것으로 전망되며, 글로벌 생명공학 분야 AI 시장 전체는 연평균 19.1%의 성장이 예측된다. 2026년은 AI 신약개발 프로세스가 본격 표준화되는 전환점으로 업계가 평가하는 가운데, FDA의 동물실험 단계적 폐지 정책(AI 기반 독성 예측 모델을 대체 기술로 공식 인정)은 구조적 수요 전환을 가속화하는 촉매다. 전통 신약개발에서 후보물질 발굴 단계에만 평균 5~6년이 소요되는 반면 AI는 기간과 비용을 대폭 단축해 제약사 채택 유인을 높이고 있다. 2025~2030년 블록버스터 의약품 특허 절벽이 본격화되면서 글로벌 빅파마의 외부 AI 플랫폼 채택 수요도 증가할 것으로 전망된다. 경쟁 환경도 급격히 치열해지고 있는데, 구글 딥마인드·엔비디아 등 빅테크 플랫폼의 공개 확산, Insilico Medicine·Schrödinger 등 글로벌 선도 전문 기업과의 자원 격차가 상당하다. 국내에서도 스탠다임, 파로스아이바이오 등 동종 기업이 성장 중이며, 한정된 제약사 R&D 예산을 두고 경쟁이 심화되는 구도다. 한국 식약처의 동물대체시험법 표준화 연구(2028년까지) 추진과 이재명 정부의 동물대체시험 활성화 공약은 국내 AI 신약 플랫폼 기업에 중장기 우호적 규제 환경을 조성하고 있다.",
+  "en": "The global AI-assisted drug discovery and development market is projected to grow from approximately USD 1.7–1.9 billion in 2024 to over USD 8 billion by 2030, with the broader biotech AI market expanding at ~19.1% CAGR. Industry observers characterize 2026 as the year when AI drug development processes begin formal standardization. The FDA's phased elimination of animal testing—formally recognizing AI-based toxicity prediction models as accepted alternatives—represents an accelerating structural demand shift. The fact that traditional drug discovery's hit-finding stage alone takes 5–6 years, a timeline AI can dramatically compress, is driving pharmaceutical adoption. Accelerating blockbuster patent expiries through 2025–2030 are expected to increase big pharma demand for external AI platforms. Competitive intensity is also rising sharply: big-tech platforms from Google DeepMind and Nvidia have proliferated, while global specialists like Insilico Medicine and Schrödinger command significant resource advantages. Domestically, Standigm and Pharos iBio are growing competitors. Korea's MFDS-led alternative-testing standardization program (targeting 2028 completion) and government policy support are gradually building a favorable regulatory backdrop for domestic AI drug platform companies."
+ },
+ "outlook": {
+  "ko": "2025년 3월 미국 Pragma Biosciences와 최대 45억 원 규모의 딥매처 기반 신약 후보물질 발굴 5단계 계약(타깃 화합물 발굴→리드 최적화→동물실험 포함)을 체결했으며, 특정 조건 미충족 시 신약개발물 지분 취득 조항도 포함돼 있어 업사이드 구조를 갖추고 있다. 2025년 6월에는 글로벌 동물의약품 전문기업(100개국 이상 사업)과 딥매처 기반 동물용 치료제 공동 R&D 계약을 체결하며 플랫폼 적용 범위를 확장했고, 글로벌 동물용 치료제 시장이 2030년 약 20조 원 규모로 성장할 것으로 전망돼 신규 어드레서블 마켓이 추가됐다. 2026년에는 칸젠과 아토피 피부염·건선·원형탈모 치료 후보물질 관련 특허 3건을 기술이전하며 라이선스아웃 수익 모델도 실증했다. ABS 센터 기반 공장 단위(Factory-wise) 자동화 플랫폼을 통해 자가면역, 신경계, 혈액암, 고형암, 심혈관계 등 100여 개 표적에 대한 후보물질 파이프라인이 지속 축적 중이다. 다만 2026년 1분기 실적이 전 분기 대비 크게 하락해, 수주 파이프라인의 연속성과 규모가 실제로 확인되기까지 기간이 필요하다. 회사는 STB CLOUD 미국 시장 공략 및 글로벌 파트너십 확장을 통한 해외 수주 극대화를 최대 목표로 제시한 바 있다.",
+  "en": "In March 2025, Syntekabio signed a contract with U.S.-based Pragma Biosciences worth up to KRW 4.5 billion for a five-stage DeepMatcher-based drug discovery program (from compound discovery through lead optimization and animal studies), with provisions allowing equity stake acquisition if certain milestones are not met. In June 2025, the company signed a joint R&D agreement for animal drug development using DeepMatcher with a global animal pharmaceutical company operating across 100+ countries, adding a new addressable market that is projected to reach approximately KRW 20 trillion by 2030. In 2026, the company demonstrated its license-out model by transferring three patents—for atopic dermatitis, psoriasis, and alopecia areata compounds—to Kangen. The factory-scale automated platform at the ABS Center is continuously building a pipeline across approximately 100 therapeutic targets in autoimmune, neurological, hematologic, solid tumor, and cardiovascular disease categories. However, the sharp sequential decline in Q1 2026 results means the continuity and scale of the contract pipeline require further validation. The company has stated that maximizing overseas contracts through U.S. STB CLOUD market expansion and global partnerships is its primary strategic objective."
+ },
+ "valuation_comment": {
+  "ko": "계속 순손실이 발생하고 있어 이익 기반 배수(PER)는 산출 의미가 없다. 현재 주가는 주당순자산(BPS 1,168원)을 상회하는 프리미엄 구간에서 거래되고 있으며, 이는 현재의 순자산 가치보다 AI 플랫폼 기술의 미래 성장성에 시장이 기대 프리미엄을 부여하고 있음을 시사한다. 주당순손실(EPS -781원)이 지속되는 상황에서 순자산 대비 프리미엄의 유지 여부는 수주 계약 규모 확대와 적자 축소 속도에 달려 있다. 배당은 현재 지급되지 않아(DPS 0원) 배당 기반 투자 유인은 없으며, 수익화 이전까지 배당 재원 확보는 구조적으로 어렵다. 상장 이래 주가는 AI 신약 업황 테마 및 계약 공시에 민감하게 반응하는 이벤트 드리븐 성격이 강해, 재무 펀더멘털 변화보다 정책 이벤트와 수주 공시가 단기 주가 방향을 주도하는 패턴이 반복되고 있다.",
+  "en": "With persistent net losses, earnings-based multiples (PER) are not meaningful. The current share price trades at a premium above book value per share (BPS: KRW 1,168), indicating the market is assigning a forward-looking premium for AI platform growth potential over tangible net asset value. The sustainability of this premium over book value depends on the pace of contract expansion and loss reduction, given that earnings per share (EPS: KRW -781) remains deeply negative. The company pays no dividend (DPS: 0), and dividend funding will remain structurally unavailable until profitability is established. Since listing, the stock has traded with a strong event-driven character—highly sensitive to AI drug development policy news and contract announcements—meaning near-term price direction has been more consistently driven by catalysts and thematic sentiment than by changes in underlying financial fundamentals."
+ },
+ "bull": [
+  {
+   "title": {
+    "ko": "FDA 동물실험 폐지 — 구조적 수요 전환 촉매",
+    "en": "FDA Animal Testing Phase-Out — Structural Demand Shift Catalyst"
+   },
+   "body": {
+    "ko": "미국 FDA가 AI 기반 독성 예측 모델을 동물실험의 공식 대체 기술로 인정하고 단계적 폐지 로드맵을 발표하면서, 딥매처처럼 독성 예측과 후보물질 발굴을 통합한 플랫폼에 대한 글로벌 수요 기반이 구조적으로 확대될 전망이다. 신테카바이오는 오가노이드 바이오뱅킹 기업(그래디언트)·제브라피쉬 질환 모델 기업(재핏)과의 협업 체계를 이미 갖춰 동물대체시험 규제 전환에 선제적으로 대응 가능한 국내 기업 중 하나다. 국내외 규제기관의 동물대체시험 표준화 확산(한국 2028년, EU 유럽약전 12판 등)도 중장기적 수요 확대 배경이 된다.",
+    "en": "The FDA's formal recognition of AI-based toxicity prediction models as accepted alternatives to animal testing—and its phased elimination roadmap—structurally expands the global demand base for integrated platforms like DeepMatcher. Syntekabio is among the best-positioned domestic companies to benefit, having pre-established partnerships with organoid biobanking firm Gradient and zebrafish disease model specialist ZeafIT. Ongoing regulatory standardization of alternative testing methods (Korea targeting 2028, EU's European Pharmacopeia 12th edition) reinforces the medium- to long-term demand expansion backdrop."
+   }
+  },
+  {
+   "title": {
+    "ko": "글로벌 파트너십 다각화 — 기술 상업화 신뢰도 축적",
+    "en": "Diversifying Global Partnerships — Building Commercial Credibility"
+   },
+   "body": {
+    "ko": "Pragma Biosciences(미국, 최대 45억 원), 글로벌 동물의약품 전문기업(100개국 이상, 2025년 6월), 칸젠(기술이전 3건, 2026년) 등 최근 2년 사이 계약 유형과 지역이 다각화되고 있다. 미국 시장 직접 수주는 글로벌 플랫폼으로서의 기술 검증을 의미하며, 기술이전 라이선스아웃은 용역 매출 이외의 수익원 다각화 가능성을 처음으로 입증했다. 향후 계약 건수 누적 시 플랫폼 활용 사례(레퍼런스)가 쌓여 신규 파트너사 유치 가속도가 높아지는 구조다.",
+    "en": "Contract types and geographies have diversified meaningfully over the past two years: Pragma Biosciences (U.S., up to KRW 4.5 billion), a global animal pharmaceutical company (100+ countries, June 2025), and Kangen (three technology transfers, 2026). Direct U.S. market wins provide global platform validation, and the license-out technology transfers represent the first demonstrated revenue diversification beyond service fees. As reference cases accumulate, the platform's track record should accelerate new partner acquisition."
+   }
+  },
+  {
+   "title": {
+    "ko": "ABS 센터 공장 단위 자동화 — 파이프라인 자산 축적 모델",
+    "en": "ABS Center Factory-Scale Automation — Pipeline Asset Accumulation Model"
+   },
+   "body": {
+    "ko": "대전 ABS 센터의 AI 슈퍼컴퓨팅 인프라 기반으로 자가면역, 신경계, 혈액암, 고형암, 심혈관계 등 100여 개 표적에 대한 후보물질 자동 연속 생성 체계가 가동 중이다. 이는 단순 수주형 서비스를 넘어 특허 자산을 지속적으로 축적해 기술이전 또는 공동개발로 연결하는 '자산 공장' 모델로, 칸젠 기술이전이 그 첫 번째 사례다. 자동화 수준이 고도화될수록 단위 표적당 한계 비용이 하락해 서비스 단가 경쟁력 및 마진 구조 개선이 가능해진다.",
+    "en": "The Daejeon ABS Center's AI supercomputing infrastructure powers a factory-scale automated drug candidate discovery pipeline covering approximately 100 therapeutic targets across autoimmune, neurological, hematologic, solid tumor, and cardiovascular disease areas. This goes beyond on-demand service contracting, creating an 'asset factory' model that continuously builds a patent portfolio linkable to technology licensing or co-development—the Kangen technology transfer being the first realized case. As automation deepens, per-target marginal costs should fall, improving service pricing competitiveness and margin structure."
+   }
+  }
+ ],
+ "bear": [
+  {
+   "title": {
+    "ko": "구조적 대규모 적자 — 흑자 전환 경로 불명확",
+    "en": "Deep Structural Losses — Uncertain Profitability Path"
+   },
+   "body": {
+    "ko": "2022~2025년 4개년 영업손실 합계는 약 490억 원에 달하며, 2025년 매출이 34억 원까지 성장했음에도 총 영업비용(약 141억 원)과의 격차가 여전히 4배 이상이다. 2026년 1분기에도 영업손실이 약 35억 원으로 확대되었으며, 현재 계약 성장 속도로는 수백억 원 매출 수준 달성까지 상당한 기간이 소요될 가능성이 높다. 연간 영업현금 유출(약 107억 원)도 거의 개선되지 않아, 자기자본의 지속적 잠식을 막으려면 추가 외부 자금 조달이 불가피하다.",
+    "en": "The cumulative operating loss from 2022 to 2025 exceeds approximately KRW 49 billion. Despite 2025 revenue reaching ~KRW 3.4 billion, total operating costs (~KRW 14.1 billion) exceed revenue by more than four times. Q1 2026 showed widening operating losses of ~KRW 3.5 billion. At the current pace of contract growth, reaching the level of revenue required for breakeven appears to require considerable additional time. Annual operating cash outflows (~KRW 10.7 billion) have seen little improvement, making continued external funding necessary to prevent ongoing equity erosion."
+   }
+  },
+  {
+   "title": {
+    "ko": "매출 변동성 심화 — 반복 예측 가능 수익 기반 미약",
+    "en": "High Revenue Volatility — Weak Recurring Revenue Foundation"
+   },
+   "body": {
+    "ko": "2025년 분기별 매출이 3.5억 원(2분기)에서 17.6억 원(4분기)까지 5배 이상 변동했고, 2026년 1분기는 4.2억 원으로 재차 급감했다. 이는 계약 성과의 특정 분기 집중과 공백이 반복되는 구조로, 플랫폼 SaaS 기업의 이상적인 반복·예측 가능 수익(ARR) 모델과 거리가 있다. 대형 계약 지연·취소 시 특정 분기 실적에 미치는 충격이 크고, 이로 인한 투자자 신뢰도 변화가 주가 변동성을 높이는 요인이 된다.",
+    "en": "Quarterly revenue in 2025 ranged more than fivefold from KRW 346 million (Q2) to KRW 1.76 billion (Q4), with Q1 2026 again dropping sharply to KRW 422 million. This pattern of contract-timing concentration and lulls contrasts with the stable, recurring revenue model of mature SaaS platform companies. Large contract delays or cancellations create outsized quarterly earnings shocks, contributing to elevated stock price volatility and eroding investor confidence in revenue predictability."
+   }
+  },
+  {
+   "title": {
+    "ko": "경쟁 심화와 기술 위협 — 빅테크·글로벌 전문기업 압박",
+    "en": "Intensifying Competition — Big Tech and Global Specialist Pressure"
+   },
+   "body": {
+    "ko": "구글 딥마인드(AlphaFold 등), 엔비디아(BioNeMo 등)의 대규모 AI 신약 플랫폼이 무료 또는 저비용으로 공개 확산되면서 소규모 전문 플랫폼의 기술 차별화 유지 난이도가 높아지고 있다. 글로벌 AI 신약 선도 기업인 Insilico Medicine은 이미 AI로 발굴한 후보물질을 임상 2a상까지 진입시켜 임상적 증거를 축적 중이다. 국내에서도 동종 AI 신약 플랫폼 기업이 증가하고 있어, 한정된 국내 제약사 R&D 예산을 두고 경쟁이 심화될 우려가 있다.",
+    "en": "The proliferation of large-scale AI drug discovery platforms from Google DeepMind (AlphaFold) and Nvidia (BioNeMo)—many freely accessible—is raising the bar for maintaining differentiation as a smaller specialist. Globally, Insilico Medicine has already advanced an AI-discovered candidate to Phase 2a clinical trials, building clinical proof points. Domestically, the number of AI drug platform competitors is growing, intensifying competition for Korean pharmaceutical companies' limited R&D budgets."
+   }
+  }
+ ],
+ "risks": [
+  {
+   "cat": {
+    "ko": "자금 조달 위험",
+    "en": "Funding Risk"
+   },
+   "body": {
+    "ko": "연간 영업현금 유출이 약 107억 원 수준에서 유지되는 가운데, 현재 자기자본(약 318억 원)이 점진적으로 잠식될 수 있다. 회사는 2025년 유상증자(자본금 약 45억 원 증가)를 통해 자금을 보충했으나, 흑자 전환 이전까지 추가 증자나 외부 자금 조달이 필요할 가능성이 높다. 자본 시장 환경 악화 시 자금 조달 여건이 불리해져 R&D 투자와 ABS 센터 인프라 유지에 직접적 영향을 줄 수 있다.",
+    "en": "Annual operating cash outflows of approximately KRW 10.7 billion continue to gradually erode equity (~KRW 31.8 billion). While a capital raise in 2025 (paid-in capital up ~KRW 4.5 billion) replenished cash, further equity raises or external financing are likely required before profitability is achieved. A deteriorating capital market environment could impair the company's ability to raise funds, directly affecting R&D investment and ABS Center infrastructure maintenance."
+   }
+  },
+  {
+   "cat": {
+    "ko": "기술 검증 위험",
+    "en": "Technology Validation Risk"
+   },
+   "body": {
+    "ko": "AI 플랫폼이 도출한 후보물질의 임상 전환율과 성공률은 아직 충분히 검증되지 않은 상황이다. 딥매처 기반 물질이 임상 진입 또는 상업화 성공으로 이어지는 사례가 누적되지 않으면 파트너사의 플랫폼 채택 유인이 약화될 수 있다. AI 신약개발 전반에서 제기되는 모델 환각(hallucination), 데이터 편향, 임상 결과 예측 정확도 한계도 플랫폼 신뢰도에 영향을 줄 수 있다.",
+    "en": "The clinical translation rate and success probability of AI platform-derived candidates remain insufficiently validated. Without accumulating documented cases of DeepMatcher-derived compounds advancing into clinical trials or achieving commercialization, partner willingness to adopt the platform may weaken. Broader AI drug development challenges—including model hallucinations, data bias, and limitations in predicting clinical outcomes—pose ongoing risks to platform credibility."
+   }
+  },
+  {
+   "cat": {
+    "ko": "규제·정책 위험",
+    "en": "Regulatory and Policy Risk"
+   },
+   "body": {
+    "ko": "FDA의 동물실험 대체 정책이 기대보다 느리게 진행되거나 AI 예측 모델의 규제 승인 요건이 불리하게 설정될 경우, 주요 성장 촉매가 약화될 수 있다. 개인정보 보호 및 유전체 데이터 활용 규제 강화는 NEO-ARS처럼 유전체 데이터를 활용하는 서비스에 영업 제약으로 작용할 수 있다. 한국 정부의 AI 신약개발 지원 예산 방향 변화도 회사의 사업 환경에 영향을 줄 수 있는 정책 변수다.",
+    "en": "If the FDA's animal testing replacement policy progresses more slowly than anticipated or if regulatory requirements for AI predictive models are set unfavorably, the primary structural growth catalyst could be delayed. Tightening personal data protection and genomic data regulations could constrain services like NEO-ARS that depend on genomic data. Changes in Korean government AI drug development funding priorities also represent a policy variable that could affect the company's operating environment."
+   }
+  }
+ ],
+ "checkpoints": [
+  {
+   "when": {
+    "ko": "2026년 7월 말~8월 초",
+    "en": "Late July–Early August 2026"
+   },
+   "what": {
+    "ko": "2026년 2분기(4~6월) 분기보고서 공시 예정. 1분기 매출 급감(4.2억 원)·영업손실 확대(-35억 원)가 계약 타이밍에 따른 일시적 현상인지 아니면 수주 파이프라인 약화 신호인지를 판단할 첫 번째 데이터 포인트.",
+    "en": "Q2 2026 (April–June) quarterly report expected. This will be the first data point to determine whether the Q1 2026 revenue drop (KRW 422 million) and widened operating loss represent temporary timing issues or a weakening contract pipeline."
+   }
+  },
+  {
+   "when": {
+    "ko": "2026년 하반기 (상시)",
+    "en": "H2 2026 (Rolling)"
+   },
+   "what": {
+    "ko": "Pragma Biosciences 5단계 용역 계약 이행 현황 및 추가 글로벌 파트너십 계약 공시 여부. 특히 미국 현지법인 중심의 STB CLOUD 글로벌 수주 규모가 2026년 연간 수익 방향을 결정하는 핵심 변수다.",
+    "en": "Progress on the five-stage Pragma Biosciences contract and any new global partnership announcements. The scale of global contracts won through the U.S. STB CLOUD operation is the pivotal variable determining 2026 full-year revenue direction."
+   }
+  },
+  {
+   "when": {
+    "ko": "2026년 9월 말~10월 초",
+    "en": "Late September–Early October 2026"
+   },
+   "what": {
+    "ko": "2026년 3분기 분기보고서 공시. 2025년과 같이 하반기 계약 집중이 반복되는지 또는 분기별 매출이 고르게 실현되는지 확인. ABS 센터 기반 100여 개 표적 파이프라인 중 기술이전 또는 공동개발 연결 신규 사례 발생 여부도 병행 점검.",
+    "en": "Q3 2026 earnings release. Key: whether the H2 2025 back-loaded revenue pattern repeats or quarterly revenues are becoming more evenly distributed. Also monitor whether any additional candidates from the 100+ target ABS Center pipeline convert to technology licensing or co-development agreements."
+   }
+  },
+  {
+   "when": {
+    "ko": "2026년 하반기~2027년 (규제 이벤트)",
+    "en": "H2 2026–2027 (Regulatory Event)"
+   },
+   "what": {
+    "ko": "FDA 비동물 기반 시험 파일럿 프로그램 개시 및 AI 기반 독성 예측 모델이 실제 심사 과정에서 인정받는 사례 발생 여부. 이 이벤트가 현실화되면 신테카바이오 플랫폼 서비스 수요의 구조적 확대가 가시화되는 시점이 된다.",
+    "en": "Launch of the FDA's non-animal-based testing pilot program and whether AI toxicity prediction models receive formal recognition in actual drug review processes. If this occurs, it will mark the point at which structural demand expansion for Syntekabio's platform services becomes visible."
+   }
+  },
+  {
+   "when": {
+    "ko": "2027년 초 (2026년 연간 결산)",
+    "en": "Early 2027 (FY2026 Results)"
+   },
+   "what": {
+    "ko": "2026년 연간 매출과 영업손실 추이 확인. 2025년 34억 원 매출의 반복 또는 추가 성장 여부, 영업손실 축소 속도가 흑자 전환 시계를 가늠하는 핵심 지표다. 추가 유상증자 여부와 자기자본 잔존 수준도 함께 점검.",
+    "en": "Full-year 2026 revenue and operating loss trends. Confirming whether 2025's ~KRW 3.4 billion revenue is repeatable or growing, and the pace of operating loss reduction, are the key metrics for gauging the profitability timeline. Any additional capital raise and remaining equity level should also be monitored."
+   }
+  }
+ ],
+ "verdict": {
+  "body": {
+   "ko": "신테카바이오는 AI 기반 합성신약 후보물질 발굴 플랫폼을 클라우드 서비스 형태로 국내외 제약·바이오 기업에 제공하는 초기 상업화 단계의 기업으로, 2025년은 최초로 의미 있는 연간 매출(약 34억 원)을 기록하며 '기술 개발 단계'에서 '플랫폼 상업화 단계'로의 전환 신호를 보였다. 미국 FDA의 동물실험 폐지 정책, 글로벌 AI 신약 시장의 고성장, 빅파마 파트너십 수요 확대라는 외부 환경이 중장기 성장 모멘텀으로 작용할 수 있다. 그러나 연간 영업손실이 매출 규모를 수배 초과하고, 2026년 1분기에도 영업손실이 확대된 만큼 수익화 경로의 가시성은 여전히 제한적이다. 글로벌 빅테크·전문 경쟁사와의 기술 격차 유지, 분기별 수주 집중으로 인한 매출 변동성, 흑자 전환 이전까지의 지속적 자금 조달 필요성이 핵심 리스크다. 기업의 중장기 가치는 딥매처 기반 후보물질이 임상 단계로 전환되거나 대형 글로벌 파트너사와의 반복 계약이 안정화되는 시점에 가시화될 것이며, 그 전까지는 신규 계약 공시와 분기 실적 추이가 가장 중요한 관찰 지표다.",
+   "en": "Syntekabio is an early-stage commercialization company providing AI-based synthetic drug candidate discovery platforms as cloud services to pharmaceutical and biotech companies. The year 2025 marked its first meaningful annual revenues (~KRW 3.4 billion), signaling a transition from technology development to platform commercialization. Favorable external tailwinds—including the FDA's animal testing phase-out policy, high growth in the global AI drug development market, and expanding big pharma demand for external platform partnerships—may serve as medium-to-long-term growth drivers. However, annual operating losses still exceed revenues by a multiple, and Q1 2026 showed widening losses, leaving near-term profitability visibility limited. Key risks include maintaining technical differentiation against global big-tech and specialist competitors, high revenue volatility from contract timing concentration, and the ongoing need for external funding before breakeven is reached. The company's long-term investment thesis will become visible when DeepMatcher-derived candidates advance into clinical trials or when large-scale recurring contracts with global partners stabilize; until then, new contract announcements and quarterly revenue trends remain the most critical observation metrics."
+  }
+ },
+ "sources": [
+  "https://news.nate.com/view/20260212n41503",
+  "https://comp.fnguide.com/SVO2/ASP/SVD_Main.asp?gicode=A226330",
+  "https://markets.hankyung.com/stock/226330",
+  "https://m.irgo.co.kr/IR-COMP/226330",
+  "https://m.thinkpool.com/item/226330",
+  "https://www.google.com/finance/quote/226330:KOSDAQ?hl=en",
+  "https://www.paxnet.co.kr/stock/analysis/main?abbrSymbol=226330",
+  "https://www.investing.com/equities/syntekabio-inc",
+  "https://www.econovill.com/news/articleView.html?idxno=520316",
+  "https://www.syntekabio.com/ko/about/vision",
+  "https://www.newspim.com/news/view/20241204001085",
+  "https://www.pharmnews.com/news/articleView.html?idxno=215684",
+  "https://medigatenews.com/news/2183629521",
+  "https://www.biotimes.co.kr/news/articleView.html?idxno=9340",
+  "https://webzine.boryung.co.kr/html/vol07/insight_01.php",
+  "https://www.medigatenews.com/news/2610235900",
+  "https://pharm.edaily.co.kr/News/Read?newsId=02656806642135136&mediaCodeNo=257",
+  "https://m.thinkpool.com/compDiscuss/cont/1019363"
+ ],
+ "v": 2,
+ "model": "claude-sonnet-4-6",
+ "ticker": "226330",
+ "name": "신테카바이오",
+ "name_en": "SyntekaBio,Inc.",
+ "sector": "바이오·제약",
+ "categories": [
+  "바이오·제약",
+  "인공지능(AI)"
+ ],
+ "market": "코스닥",
+ "reportDate": "2026-06-19",
+ "reportTs": "2026-06-19 07:50",
+ "dataDate": "20260618",
+ "quant": {
+  "asOf": "2026-06-18",
+  "fs_basis": "연결(CFS) · DART 공시 확정치 · 지배주주 기준 순이익",
+  "annual": [
+   {
+    "year": 2025,
+    "rev": 3429231736,
+    "op": -10764609170,
+    "np": -17378023885,
+    "np_owner": -17378023885,
+    "equity": 31779056306,
+    "equity_owner": 31779056306,
+    "liab": 14755693293,
+    "cfo": -10649965541,
+    "eps_basic": -1115,
+    "opm": -313.9,
+    "roe": -54.7,
+    "debt_ratio": 46.4
+   },
+   {
+    "year": 2024,
+    "rev": 120887133,
+    "op": -14269530180,
+    "np": -7213184096,
+    "np_owner": -7213184096,
+    "equity": 24943253107,
+    "equity_owner": 24943253107,
+    "liab": 18771721887,
+    "cfo": -10508848713,
+    "eps_basic": -473,
+    "opm": -11804.0,
+    "roe": -28.9,
+    "debt_ratio": 75.3
+   },
+   {
+    "year": 2023,
+    "rev": 123405804,
+    "op": -12276297771,
+    "np": -11397644740,
+    "np_owner": -11397644740,
+    "equity": 31228289972,
+    "equity_owner": 31228289972,
+    "liab": 21688347914,
+    "cfo": -8078039562,
+    "eps_basic": -796,
+    "opm": -9947.9,
+    "roe": -36.5,
+    "debt_ratio": 69.5
+   },
+   {
+    "year": 2022,
+    "rev": 243991568,
+    "op": -11792093799,
+    "np": -4506425723,
+    "np_owner": -4506425723,
+    "equity": 31460774571,
+    "equity_owner": 31460774571,
+    "liab": 24227949489,
+    "cfo": -8510818342,
+    "eps_basic": -333,
+    "opm": -4833.0,
+    "roe": -14.3,
+    "debt_ratio": 77.0
+   }
+  ],
+  "quarterly": [
+   {
+    "q": "2025Q1",
+    "rev": 868805202,
+    "op": -2957763887,
+    "np_owner": -7292538687
+   },
+   {
+    "q": "2025Q2",
+    "rev": 345912019,
+    "op": -3002386683,
+    "np_owner": -3774175662
+   },
+   {
+    "q": "2025Q3",
+    "rev": 455460091,
+    "op": -2314558756,
+    "np_owner": -2303310857
+   },
+   {
+    "q": "2025Q4",
+    "rev": 1759054424,
+    "op": -2489899844,
+    "np_owner": -4007998679
+   },
+   {
+    "q": "2026Q1",
+    "rev": 422309918,
+    "op": -3505778986,
+    "np_owner": -3491896357
+   }
+  ],
+  "valuation": {
+   "price": 1822,
+   "mcap": 0.0442,
+   "shares": 24258475,
+   "total_shares": 24258475,
+   "wavg_shares": 24249280,
+   "per": null,
+   "eps": -781,
+   "pbr": 1.56,
+   "bps": 1168,
+   "roe_ttm": -58.9,
+   "ttm_window": "2025Q2~2026Q1",
+   "ttm_np_owner": -13577381555,
+   "pbr_krx": 1.39,
+   "bps_krx": 1310.0,
+   "basis": "PER·EPS·PBR·BPS 모두 자체 산출(네이버·토스와 동일 방식) · 배당은 DART 공시 주당현금배당금(보완:KRX) ÷ 현재가",
+   "dps": 0.0,
+   "div": 0.0
+  }
+ }
+}
