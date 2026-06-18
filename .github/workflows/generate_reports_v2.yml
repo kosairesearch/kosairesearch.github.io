@@ -87,18 +87,7 @@ jobs:
         run: |
           before='${{ steps.before.outputs.count }}'
           after=$(ls data/reports_v2/*.json 2>/dev/null | wc -l | tr -d ' ')
-          remaining=$(python - <<'PY'
-import json, re, os
-from pathlib import Path
-fill_to=int("${{ inputs.fill_to }}")
-t=Path("data/stocks.js").read_text(encoding="utf-8")
-m=re.search(r"=\s*(\{.*)", t, re.S)
-obj=json.loads(m.group(1).strip().rstrip(";"))
-stocks=sorted(obj["stocks"], key=lambda x: x.get("mcap",0) or 0, reverse=True)[:fill_to]
-have={p.stem for p in Path("data/reports_v2").glob("*.json")}
-print(sum(1 for s in stocks if s["ticker"] not in have))
-PY
-)
+          remaining=$(python scripts/_fill_remaining.py '${{ inputs.fill_to }}')
           echo "백필: 시작 $before → 종료 $after · 상위 ${{ inputs.fill_to }} 남은 $remaining"
           added=$(( after - before ))
           if [ "$remaining" -gt 0 ] && [ "$added" -gt 0 ]; then
