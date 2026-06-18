@@ -1,0 +1,311 @@
+{
+ "title": {
+  "ko": "틸론 — VDI 원천기술 강점, 재무 건전성이 관건",
+  "en": "Tilon — Proprietary VDI/DaaS Moat Meets Critical Financial Rehabilitation Test"
+ },
+ "lead": {
+  "ko": "국내 최다 VDI 구축 레퍼런스와 이중 보안 인증(국정원·KISA)이라는 독보적 진입 장벽을 갖춘 클라우드 가상화 선도 기업이나, 2024년 연결 부채비율 2,739.9%·지배주주 순손실 28.9억원으로 재무 건전성 회복이 사업 모멘텀 현실화의 전제 조건이다.",
+  "en": "Tilon commands Korea's VDI/DaaS market through the country's most extensive deployment track record and a dual security-certification moat (NIS + KISA), yet with a FY2024 consolidated D/E ratio of 2,739.9% and owners' net loss of ₩2.89 billion, financial rehabilitation is the prerequisite for translating policy tailwinds into durable earnings growth."
+ },
+ "keypoints": [
+  {
+   "ko": "국내 VDI 최다 구축·국정원 보안기능확인서 보유 → 공공·금융 논리적 망분리 정책의 직접 수혜 기업",
+   "en": "Korea's most VDI deployments and sole NIS Security Function Certificate among domestic VDI vendors — direct beneficiary of public-sector logical network-separation mandates."
+  },
+  {
+   "ko": "2024년 연결 부채비율 2,739.9%·OCF –24.4억원 — 극단적 재무 레버리지와 현금 소진이 핵심 리스크",
+   "en": "FY2024 consolidated D/E ratio of 2,739.9% and operating cash flow of –₩2.44 billion represent the defining financial risk."
+  },
+  {
+   "ko": "VMware·Citrix 가격 인상 → 국산 솔루션 전이 가속화, 단기 수주 모멘텀 존재",
+   "en": "License price hikes by VMware and Citrix are accelerating customer migration to domestic VDI, creating near-term order momentum."
+  },
+  {
+   "ko": "AI 네이티브 DaaS 플랫폼 'Theother.space'·소버린 AI 수주 — 신성장 축 구축 진행 중",
+   "en": "New AI-native DaaS platform 'Theother.space' and Sovereign AI project wins represent emerging new growth vectors."
+  },
+  {
+   "ko": "전환사채 전환가액 하향 조정 반복 → 주식 희석 및 자본잠식 여부가 2026년 최우선 모니터링 포인트",
+   "en": "Repeated downward resets of CB conversion prices heighten dilution risk and capital-erosion risk — the top monitoring items for 2026."
+  }
+ ],
+ "business": {
+  "ko": "틸론은 2000년 설립된 국내 대표 클라우드 가상화 기술 기업으로, 2015년 코넥스에 상장했으며 종속회사 틸론소프트를 연결 편입하고 있다. 핵심 제품군은 구축형 VDI 솔루션 '디스테이션(Dstation)', 구독형 DaaS 플랫폼 '엘클라우드(elcloud)', 제로 클라이언트 단말 '제로플렉스(Zeroflex)'이며, 자체 개발 ATC(Accord Transmission Control) 프로토콜로 고화질 영상·3D 환경에서 외산 대비 성능 우위를 내세운다. 매출 구조는 영구 라이선스를 판매하는 구축형과 월·연 단위 과금 방식의 DaaS 구독형으로 이분화되며, 구독형 비중은 2024년 기준 여전히 초기 단계다. 주요 고객은 공공기관·금융권에 집중되어 있으며, 한국도로공사·부산시청·한양증권·KTB증권 등의 망분리 레퍼런스를 보유한다. KT 클라우드와 협업해 KISA CSAP DaaS 인증을 획득했고, 국정원 보안기능확인서를 국내 VDI 사업자 중 최초로 취득해 공공 조달 경쟁력을 차별화하고 있다. LG CNS·KT 등 대형 SI·통신사와의 파트너십을 통해 대규모 수주 파이프라인에도 접근하고 있으며, 서울대학교 클라우드 PC 사업 수주 등 교육기관 레퍼런스도 넓히는 중이다. 임직원 수는 약 45명으로 소규모 전문 인력 체계를 유지하며, 일본·카메룬·몽골 등 글로벌 공공시장 진출을 병행하고 있다.",
+  "en": "Tilon, founded in 2000 and listed on KONEX in 2015, is Korea's leading cloud virtualization company, consolidating subsidiary Tilon Soft. Core products are the on-premises VDI solution 'Dstation,' the subscription DaaS platform 'elcloud,' and the 'Zeroflex' zero-client terminal, all underpinned by the proprietary ATC (Accord Transmission Control) protocol, which the company cites as offering performance advantages over foreign solutions in high-definition video and 3D environments. Revenue divides between perpetual-license on-premises deployments and subscription-based DaaS, with the subscription share still at an early-stage level in 2024. Customer concentration is heavily public-sector and financial, with deployment references at Korea Expressway Corporation, Busan City Hall, Hanyang Securities, and KTB Securities. Tilon obtained the KISA CSAP DaaS certification in partnership with KT Cloud and became the first Korean VDI vendor to receive the NIS Security Function Certificate, conferring a unique compliance advantage in government procurement. Partnerships with LG CNS and KT provide access to large-scale project pipelines, and university reference wins such as Seoul National University continue to broaden the customer base. The workforce numbers approximately 45, and the company is pursuing international public-sector engagements in Japan, Cameroon, and Mongolia."
+ },
+ "earnings": {
+  "ko": "DART 확정 연결(CFS) 기준 2024년 연간 매출은 약 76.6억원(7,664,284,649원), 영업손실 약 3.1억원(영업이익률 –4.0%), 지배주주 귀속 순손실은 약 28.9억원을 기록했다. 영업손실(-3.1억원)과 순손실(-28.9억원)의 격차가 약 25.9억원에 달하는 것은 전환사채(CB) 이자 비용 등 대규모 금융비용이 영업외 단에서 발생하고 있음을 시사한다. 기본 주당순손실(EPS)은 –269원이며, 영업현금흐름은 –24.4억원으로 자체 현금 창출이 전무한 상태다. 2024년 말 지배주주 자기자본은 약 11.3억원으로 극히 얇은 완충에 그치며, 총부채 약 310.6억원 대비 부채비율이 2,739.9%에 달한다. FnGuide 별도기준 2025년 결산(확정 연결 미공시)에서는 매출이 전년 대비 5.5% 증가한 반면, 재고평가손실 환입 축소·성과급 충당 등 일회성 비용 증가로 매출총이익이 감소하고 연구개발비·판관비 증가 등으로 영업손실이 87.9% 확대됐다. 같은 별도기준 2025년 순손실은 38.1% 감소했는데, 이는 금융비용 구조 변동에 따른 일회성 요인이 작용했을 것으로 추정된다. 2025년 상반기 별도 기준으로는 자본총계가 마이너스로 전환된 완전 자본잠식이 보도됐으며, 연결 기준 2025년 이후 분기 실적 공시 확정치는 현재 제공되지 않아 최신 추세 정밀 파악에는 제약이 있다.",
+  "en": "On a DART-confirmed consolidated (CFS) basis, FY2024 revenue was approximately ₩7.66 billion, operating loss approximately ₩306 million (OPM –4.0%), and net loss attributable to owners approximately ₩2.89 billion. The roughly ₩2.59 billion gap between the operating loss and the far larger net loss implies substantial non-operating financial costs, primarily convertible bond (CB) interest. Basic EPS stood at –₩269, and operating cash flow was –₩2.44 billion, with no self-generated cash surplus. Year-end 2024 owners' equity of approximately ₩1.13 billion is an extremely thin buffer against total liabilities of approximately ₩31.06 billion, yielding a D/E ratio of 2,739.9%. FnGuide standalone FY2025 data (not yet confirmed as CFS) shows a 5.5% revenue gain, but operating losses widened 87.9% due to reduced inventory revaluation reversals, performance-bonus accruals, and higher R&D and SG&A expenses. Standalone net loss narrowed 38.1% in FY2025, likely reflecting one-off non-operating items. Press reports noted full capital erosion on a standalone basis in H1 2025, while confirmed quarterly data for 2025 and 2026 Q1 on a consolidated basis are not yet available, limiting precise trend analysis."
+ },
+ "industry": {
+  "ko": "국내 VDI·DaaS 시장은 공공·금융 분야의 망분리 의무화 정책을 핵심 수요 동력으로 삼아 성장해 왔다. 2024년 8월 금융감독원의 금융분야 망분리 개선 조치와 9월 국가정보원의 다층보안체계(MLS) 발표를 계기로 물리적 망분리에서 논리적 망분리 중심으로 패러다임이 전환되고 있으며, 이는 VDI 수요의 구조적 확대 요인이다. 브로드컴에 인수된 VMware와 Citrix의 라이선스 가격 인상은 공공·금융기관의 국산 솔루션 전환을 가속화하고 있으며, 틸론이 직접적인 수혜 포지션에 있다는 평가다. 경쟁 구도는 나무기술·가비아 등 국내 사업자와의 직접 경쟁이 형성되어 있으며, 이들도 CSAP 인증 취득을 추진 중이어서 공공 조달 채널의 독점적 지위는 장기적으로 도전받을 수 있다. AI 네이티브 업무 환경 도입과 소버린 클라우드(데이터 주권) 개념의 확산은 VDI·DaaS 수요에 새로운 성장 레이어를 더하고 있다. 정부의 N2SF(국가망보안체계) 시행과 디지털 서비스 전문계약제도 확대는 CSAP 인증 보유 사업자에게 수의계약 기회를 제공하는 중요한 채널이다. 다만 공공 사업 특유의 낮은 단가와 긴 결제 주기, 예산 사이클 집중(하반기)은 분기 매출 변동성을 높이고 수익성 개선을 더디게 하는 구조적 제약으로 남는다.",
+  "en": "Korea's VDI/DaaS market has been driven primarily by network-separation mandates in the public and financial sectors. The FSS network-separation reform (August 2024) and NIS Multi-Layer Security (MLS) framework announcement (September 2024) are shifting the paradigm from physical to logical separation, structurally expanding VDI demand. Post-Broadcom VMware and Citrix license price hikes are accelerating migration to domestic solutions, with Tilon cited as the most direct beneficiary. Domestically, Namu Technology and Gabia are direct competitors, both pursuing CSAP certifications that may erode Tilon's exclusive access to sole-source government procurement channels over time. AI-native workplace adoption and the growing sovereign-cloud (data-sovereignty) concept add new demand layers on top of the traditional network-separation use case. The government's N2SF (National Network Security Framework) rollout and the Digital Service Specialized Contract System expansion provide important direct-award channels for CSAP-certified vendors. However, characteristically low unit prices, long payment cycles, and H2-concentrated public budget disbursements structurally constrain margin improvement and create quarterly revenue volatility."
+ },
+ "outlook": {
+  "ko": "틸론은 2026년을 AI 네이티브 가상화로의 전환 원년으로 설정하고 'DAVEIT DAY 2026'을 통해 VDI를 넘어선 AI Native 비전을 공유했다. 핵심 전략 축은 ①VDI·AI 기반 스마트워크, ②제로트러스트 보안(N2SF 대응), ③구독형 DaaS 플랫폼 'Theother.space' 확대, ④글로벌 공공시장 진출이다. 지방 거점 국립대학교의 '소버린 AI 기반 AI 교육·연구 플랫폼' 사업 수주로 AI 인프라 레퍼런스를 확보했으며, 서울대학교 클라우드 PC 사업 수주 등 교육기관 파이프라인도 넓어지고 있다. KT 클라우드와의 CSAP DaaS 플랫폼이 디지털 서비스 전문계약제도에 등록될 경우 복잡한 공개 입찰 없이 공공기관 수의계약이 가능해져 수주 사이클이 단축될 수 있다. 글로벌 측면에서는 2026년 4월 몽골 검찰청 대표단 방한 프로그램 주관에 이어 카메룬 국방 정보시스템 현대화 MOU, 일본 지자체 레퍼런스 확보 등으로 중앙아시아·아프리카·동아시아 공공시장 진출 기반을 다지고 있다. 다만 구독형 매출 비중이 아직 초기 단계인 점과 CB 상환·희석 압력이 중단기 재무 불확실성의 주요 변수로 남아 있어, 정책 모멘텀이 실질 이익으로 전환되는 속도에 주목해야 한다.",
+  "en": "Tilon has positioned 2026 as a pivot year toward AI-native virtualization, sharing an 'AI Native' vision at DAVEIT DAY 2026 that extends beyond traditional VDI. The four strategic pillars are: (1) AI-based smart work integrated with VDI, (2) Zero Trust security aligned with N2SF, (3) scaling the subscription DaaS platform 'Theother.space,' and (4) expanding into global public markets. A project win for a 'Sovereign AI-Based AI Education and Research Platform' at a regional national university and a cloud PC procurement win at Seoul National University have strengthened the company's AI infrastructure reference base. Completion of registration for the KT Cloud CSAP DaaS platform in the government's Digital Service Specialized Contract System would enable direct contract awards to public agencies, potentially accelerating the order pipeline. On the international front, following the April 2026 Mongolia Prosecution Service delegation program, the Cameroon defense MOU, and Japanese local government installations, the company is building a foundation across Central Asian, African, and East Asian public markets. However, the still-nascent subscription revenue mix and ongoing CB repayment and dilution pressure remain key variables for near-to-medium-term financial uncertainty."
+ },
+ "valuation_comment": {
+  "ko": "2024년 연결 결산 기준 지배주주 순손실이 지속되고 있어 PER 산출이 불가능하며, 배당 실적도 없다. 지배주주 자기자본이 약 11.3억원으로 극히 얇은 수준이기 때문에, 현재 시장에서 형성된 시가총액은 장부 순자산 대비 상당한 프리미엄을 내포한 구간에 위치한다. 2025년 10월 6회차 전환사채 전환가액이 5,000원에서 3,500원으로 하향 조정된 데서 드러나듯, CB 전환 시 주식 수 증가에 따른 희석 효과가 주당 순자산 기반을 추가로 약화시킬 수 있다. 주가는 2023년 초 11,000원대 고점 이후 지속 하락해 현 수준에 이르렀으며, 적자 국면이 지속되는 한 전통적인 수익가치 기반 밸류에이션 기준점을 세우기가 어렵다. 재무 건전성 회복(자본 확충, CB 상환)과 구독형 매출의 유의미한 성장이 선행되어야 밸류에이션 재평가 논의가 가능해진다.",
+  "en": "With consecutive net losses on a consolidated basis, PER is currently incalculable, and the company pays no dividends. Owners' equity of approximately ₩1.13 billion is extremely thin, meaning the current market capitalization is in a zone that embeds a substantial premium over stated book value. As illustrated by the October 2025 downward reset of the 6th-tranche CB conversion price from ₩5,000 to ₩3,500, equity dilution upon conversion would further erode per-share net assets. The stock peaked above ₩11,000 in early 2023 and has trended lower since; establishing a conventional earnings-based valuation anchor is difficult as long as the loss cycle continues. Financial rehabilitation — including balance-sheet recapitalization and CB repayment — alongside meaningful growth in subscription revenue, are prerequisite conditions before a valuation re-rating discussion becomes practical."
+ },
+ "bull": [
+  {
+   "title": {
+    "ko": "국산 VDI 정책 수혜 — 외산 가격 인상과 논리적 망분리 전환",
+    "en": "Domestic VDI Policy Tailwind — Foreign Price Hikes and Logical Separation Shift"
+   },
+   "body": {
+    "ko": "VMware·Citrix 등 글로벌 VDI 기업의 라이선스 가격 인상이 공공·금융기관의 국산 솔루션 전환을 가속화하고 있으며, 틸론이 가장 직접적인 수혜 기업으로 거론된다. 2024년 8월 금융감독원 망분리 개선 조치와 9월 국정원 다층보안체계(MLS) 발표는 논리적 망분리 수요를 구조적으로 확대시키는 정책 촉매다. 국정원 보안기능확인서와 KISA CSAP 이중 인증이라는 진입 장벽은 단기간에 복제되기 어렵고, 공공 조달에서의 경쟁 우위를 견고히 한다.",
+    "en": "License price hikes by VMware and Citrix are driving public and financial institutions toward domestic VDI alternatives, with Tilon cited as the most direct beneficiary. The FSS network-separation reform (August 2024) and NIS MLS announcement (September 2024) structurally expand demand for logical separation. The dual barrier of the NIS Security Function Certificate and KISA CSAP accreditation is difficult for rivals to replicate quickly, solidifying Tilon's government procurement advantage."
+   }
+  },
+  {
+   "title": {
+    "ko": "AI·소버린 클라우드 수요 선점 — 신성장 플랫폼 구축",
+    "en": "First-Mover Positioning in AI and Sovereign Cloud Demand"
+   },
+   "body": {
+    "ko": "틸론은 소버린 AI 기반 AI 교육·연구 플랫폼 구축 사업을 수주하며 AI 인프라 시장에 초기 레퍼런스를 확보했다. 신규 DaaS 플랫폼 'Theother.space'는 소버린 클라우드 개념과 멀티테넌시 구조를 접목해 데이터 주권 및 법적 규제를 준수하는 AI 네이티브 업무 환경을 제공한다. AI 워크플로우 도입 시 데이터 보안이 핵심 요건으로 부상하는 흐름은 VDI·DaaS 수요의 신규 성장 레이어를 형성한다.",
+    "en": "Tilon secured an early AI infrastructure reference with a project win for a Sovereign AI-based AI education and research platform at a national university. The new DaaS platform 'Theother.space' incorporates sovereign cloud principles and multi-tenancy architecture, offering an AI-native workplace compliant with data sovereignty and regulatory requirements. As data security becomes a non-negotiable requirement for AI workflow adoption, VDI/DaaS demand stands to gain an incremental new growth layer."
+   }
+  },
+  {
+   "title": {
+    "ko": "글로벌 공공시장 확장 — 몽골·일본·카메룬 파이프라인 형성",
+    "en": "Global Public-Sector Pipeline — Mongolia, Japan, Cameroon"
+   },
+   "body": {
+    "ko": "2026년 4월 몽골 검찰총장실 대표단 방한 프로그램을 주관하며 중앙아시아 공공 디지털 전환 시장 진입 기반을 마련했다. 카메룬 국방 정보시스템 현대화 MOU와 일본 지자체 레퍼런스 구축을 통해 국내와 경쟁 구도가 다른 해외 공공시장에서 성장 가능성을 모색 중이다. 해외 수주가 구체화될 경우 국내 공공시장 의존도를 낮추고 매출 다변화에 기여할 수 있다.",
+    "en": "Hosting the Mongolia Prosecution Service delegation in April 2026 established a foundation for Central Asian public digital-transformation engagement. An MOU for Cameroon's defense information system modernization and reference installations for Japanese local governments explore growth in markets with a less intense competitive environment than Korea. Successful overseas project closings would reduce dependence on the domestic public sector and meaningfully diversify revenue."
+   }
+  }
+ ],
+ "bear": [
+  {
+   "title": {
+    "ko": "극단적 레버리지와 현금 소진 — 재무 지속 가능성 우려",
+    "en": "Extreme Leverage and Cash Burn — Financial Sustainability Concern"
+   },
+   "body": {
+    "ko": "2024년 말 연결 기준 부채비율이 2,739.9%에 달하며, 영업현금흐름은 –24.4억원으로 자체 현금 창출이 없다. 영업손실(–3.1억원)을 크게 상회하는 순손실(–28.9억원)은 CB 이자 등 금융비용이 대규모로 누적되고 있음을 반영한다. 2025년 상반기 별도 기준 자본 전액 잠식이 보도된 바 있어, 연결 기준 자본 안정성 여부를 조기에 확인하는 것이 급선무다.",
+    "en": "The FY2024 consolidated D/E ratio reached 2,739.9% with operating cash flow at –₩2.44 billion — no self-generated cash surplus. The net loss (–₩2.89 billion) far exceeding the operating loss (–₩306 million) reflects heavy accumulation of financial costs, primarily CB interest. Reports of full capital erosion on a standalone basis in H1 2025 make early verification of consolidated balance-sheet solvency an urgent priority."
+   }
+  },
+  {
+   "title": {
+    "ko": "전환사채 희석 압력 — 주당 가치 희석 및 전환가 하향 반복",
+    "en": "Convertible Bond Dilution Pressure — Repeated Price Resets Erode Per-Share Value"
+   },
+   "body": {
+    "ko": "2025년 10월 6회차 전환사채의 전환가액이 5,000원에서 3,500원으로 하향 조정됐다. 전환가액 하향 조정은 전환 시 발행 주식 수 증가로 이어져 기존 주주의 지분 가치를 희석시킨다. CB 상환 재원이 부족할 경우 추가 전환가 조정이나 신규 CB 발행이 반복될 가능성이 있으며, 이는 주주 가치에 부정적으로 작용한다.",
+    "en": "In October 2025, the 6th-tranche CB conversion price was reset from ₩5,000 to ₩3,500. Each downward reset increases shares issued upon conversion, directly diluting existing shareholders. If repayment funds remain insufficient, additional price resets or new CB issuances may recur, which would structurally weigh on per-share value."
+   }
+  },
+  {
+   "title": {
+    "ko": "소규모 매출 기반과 공공 집중 — 수익성 개선 지연 구조",
+    "en": "Small Revenue Base and Public-Sector Concentration — Structural Profitability Headwinds"
+   },
+   "body": {
+    "ko": "2024년 연결 매출 약 76.6억원은 구조적 성장을 견인하기에 좁은 기반이며, 고객이 공공·금융에 집중되어 수주 변동성이 크다. 구독형 DaaS 비중이 아직 낮은 수준이어서 안정적 반복 수익 모델 전환까지 상당한 시간이 필요하다. 공공 사업 특유의 낮은 단가와 하반기 집중 지출 패턴은 연간 영업현금흐름 개선을 더디게 하는 구조적 제약으로 작용한다.",
+    "en": "FY2024 consolidated revenue of approximately ₩7.66 billion is a narrow base from which to project structural growth, and heavy public and financial sector concentration creates inherent order volatility. The subscription DaaS mix remains at an early-stage level, requiring significant time to transition to a stable recurring-revenue model. Characteristically low unit prices and H2-concentrated public budget disbursements structurally slow annual operating cash flow improvement."
+   }
+  }
+ ],
+ "risks": [
+  {
+   "cat": {
+    "ko": "자본잠식·유동성 위험",
+    "en": "Capital Erosion and Liquidity Risk"
+   },
+   "body": {
+    "ko": "부채비율 2,739.9%와 음의 영업현금흐름이 지속될 경우 자본 완전 잠식 및 코넥스 상장 유지 요건 미충족 가능성이 있다. CB 만기 도래 시 상환 재원이 부족하면 추가 주식 발행이나 자산 매각이 불가피할 수 있다. 자본 확충 수단이 조기에 마련되지 않을 경우 기업 존속 자체가 위협받을 수 있어 투자자는 매 분기 재무 공시를 면밀히 점검해야 한다.",
+    "en": "If the 2,739.9% D/E ratio and negative OCF persist, full capital erosion and potential non-compliance with KONEX listing requirements become real scenarios. CB maturities may force additional share issuance or asset disposals if repayment funds are inadequate. Without timely recapitalization, going-concern risk escalates, requiring close monitoring of each quarterly filing."
+   }
+  },
+  {
+   "cat": {
+    "ko": "규제 변화 및 경쟁 심화",
+    "en": "Regulatory Change and Competitive Intensification"
+   },
+   "body": {
+    "ko": "AWS·MS 등 글로벌 클라우드 기업이 CSAP 인증을 취득하며 공공 DaaS 시장에 진입하는 경우 틸론의 경쟁 우위가 희석될 수 있다. 금융감독원 망분리 규정 완화가 VDI 수요 대신 클라우드 직접 도입을 촉진하는 방향으로 귀결될 경우 기존 사업 모델에 역풍이 된다. 나무기술·가비아 등 국내 경쟁사의 CSAP 인증 취득 진전이 수의계약 채널에서의 독점적 지위를 장기적으로 약화시킬 수 있다.",
+    "en": "If global cloud providers such as AWS and Microsoft obtain CSAP certifications and enter the public DaaS market, Tilon's competitive advantage could erode significantly. If FSS network-separation reforms stimulate direct cloud adoption rather than VDI, the existing business model faces headwinds. Progress by domestic rivals Namu Technology and Gabia in acquiring CSAP may gradually diminish Tilon's exclusive advantage in sole-source government contracting."
+   }
+  },
+  {
+   "cat": {
+    "ko": "기술 진부화·플랫폼 전환 지연",
+    "en": "Technology Obsolescence and Platform Transition Lag"
+   },
+   "body": {
+    "ko": "VDI·DaaS 시장이 AI 에이전트·제로트러스트·엣지 컴퓨팅과 빠르게 융합되는 가운데, 임직원 약 45명 규모의 소규모 기업이 R&D 투자를 충분히 유지할 수 있는지에 대한 의문이 남는다. 구독형 플랫폼 전환이 예상보다 느릴 경우 단발성 구축 매출 변동성이 지속되고 실적 가시성이 낮아진다. 글로벌 MOU가 실질 매출 계약으로 전환되지 못할 경우 해외 사업 비용이 수익성을 추가로 잠식할 수 있다.",
+    "en": "As VDI/DaaS converges rapidly with AI agents, Zero Trust, and edge computing, it is uncertain whether Tilon — with a workforce of approximately 45 — can sustain sufficient R&D intensity to remain competitive. If the subscription platform transition is slower than anticipated, one-off deployment revenue volatility will persist and earnings visibility will remain low. Failure to convert international MOUs into revenue-generating contracts could make overseas expansion costs an additional drag on profitability."
+   }
+  }
+ ],
+ "checkpoints": [
+  {
+   "when": {
+    "ko": "2026년 8월(예상) — 연결 반기보고서",
+    "en": "August 2026 (expected) — Consolidated H1 Report"
+   },
+   "what": {
+    "ko": "2026년 1반기 연결 재무제표를 통해 자본잠식 여부, CB 잔액, 구독형 매출 비중 변화를 확인한다. 자본총계 마이너스 전환 시 코넥스 상장 유지 요건 충족 여부도 판단해야 한다.",
+    "en": "The H1 2026 consolidated financial statements will clarify whether capital erosion has occurred, reveal remaining CB balances, and show any shift in subscription revenue mix — all determining KONEX listing compliance."
+   }
+  },
+  {
+   "when": {
+    "ko": "2026년 하반기 공공 조달 시즌",
+    "en": "H2 2026 Public Procurement Season"
+   },
+   "what": {
+    "ko": "디지털 서비스 전문계약제도를 통한 공공 DaaS 수의계약 체결 건수와 규모를 모니터링한다. KT CSAP DaaS 플랫폼 등록 완료 여부와 실질 수주 전환 속도가 매출 성장 가시성의 핵심 지표다.",
+    "en": "Track the number and scale of public DaaS contracts awarded via the Digital Service Specialized Contract System. The completion of KT CSAP DaaS platform registration and the pace of conversion to actual orders are the primary leading indicators for revenue growth visibility."
+   }
+  },
+  {
+   "when": {
+    "ko": "2026년 하반기~2027년 초 — CB 만기 및 전환 동향",
+    "en": "H2 2026–Early 2027 — CB Maturity and Conversion Dynamics"
+   },
+   "what": {
+    "ko": "6회차 및 기타 CB의 만기·전환 행사 현황을 점검한다. 3,500원으로 하향 조정된 전환가액에서 전환이 집중될 경우 주식 수 증가 규모를 재산정해 희석 효과를 평가해야 한다.",
+    "en": "Monitor maturity and conversion activity for the 6th-tranche CB and any remaining tranches. Concentrated conversions at the reset ₩3,500 price would require a revised dilution assessment."
+   }
+  },
+  {
+   "when": {
+    "ko": "2026년 연말",
+    "en": "End of 2026"
+   },
+   "what": {
+    "ko": "몽골 검찰청·카메룬·일본 등 해외 파이프라인이 MOU 단계에서 실질 매출 인식 계약으로 전환되는지 확인한다. 전환 여부가 글로벌 성장 전략의 실효성을 가리는 핵심 지표다.",
+    "en": "Confirm whether the Mongolia, Cameroon, and Japan engagements advance from MOU to signed, revenue-generating contracts — the definitive test of the global public-sector growth strategy."
+   }
+  },
+  {
+   "when": {
+    "ko": "연중 수시 — N2SF 시행 및 예산 동향",
+    "en": "Ongoing — N2SF Implementation and Budget Allocation"
+   },
+   "what": {
+    "ko": "N2SF 시행 세칙 확정과 공공기관 연도별 예산 배분에서 VDI·DaaS 관련 항목이 얼마나 배정되는지를 추적한다. 정책 집행 속도가 틸론의 실제 매출 전환 시점을 결정하는 외생 변수다.",
+    "en": "Track N2SF implementation guidelines and VDI/DaaS budget allocations in public-sector procurement plans. The pace of policy execution is the key exogenous variable determining when regulatory demand converts into Tilon's actual revenue."
+   }
+  }
+ ],
+ "verdict": {
+  "body": {
+   "ko": "틸론은 국내 VDI·DaaS 시장에서 최다 구축 레퍼런스와 이중 보안 인증(국정원·KISA)이라는 독보적 기술·규제 진입 장벽을 보유한 클라우드 가상화 전문 기업이다. 글로벌 VDI 기업의 가격 인상, 공공기관 논리적 망분리 정책 전환, AI 네이티브 소버린 클라우드 수요라는 구조적 성장 기회가 동시에 맞물리는 시점에 있다. 그러나 이를 수익으로 연결하기 위한 재무 여건이 2024년 연결 기준 극도로 취약하며, 부채비율 2,739.9%·OCF 마이너스·전환사채 희석 리스크·자본잠식 우려가 복합적으로 작용하고 있다. 2025년 별도 기준 매출 소폭 증가는 긍정적 신호이나, 연결 기준 손익 개선과 자본 안정성 확인이 선행되어야 사업 지속 가능성을 판단할 수 있다. 구독형 DaaS 비중 확대, 공공 수의계약 채널 활용, 해외 수주 가시화 세 가지 조건이 동시에 충족되고 자본 확충이 뒷받침될 때 비로소 중장기 성장 스토리가 구체화될 수 있다.",
+   "en": "Tilon occupies a defensible position in Korea's VDI/DaaS market, underpinned by the country's most extensive deployment record and a dual security-certification moat (NIS + KISA). It stands at the confluence of three structural growth catalysts: foreign VDI vendor price hikes, the public-sector shift to logical network separation, and emerging sovereign-AI demand for data-protection-compliant compute environments. However, the financial foundation to capitalize on these tailwinds is severely strained as of FY2024, with a D/E ratio of 2,739.9%, negative operating cash flow, convertible bond dilution risk, and potential capital erosion all in play simultaneously. A modest standalone revenue uptick in FY2025 is encouraging, but recovery in consolidated profitability and verification of capital stability must come first before business sustainability can be confirmed. The company's medium-term growth narrative becomes tangible only when three conditions are met simultaneously — meaningful growth in subscription DaaS revenue, active utilization of the sole-source public procurement channel, and conversion of international pipelines into realized contracts — backed by a credible recapitalization plan."
+  }
+ },
+ "sources": [
+  "https://comp.fnguide.com/SVO2/ASP/SVD_Main.asp?gicode=A217880",
+  "https://thevc.kr/tilon",
+  "https://kind.krx.co.kr/external/dst/corpReport/64817120251203093435.pdf",
+  "https://comp.fnguide.com/SVO2/ASP/SVD_Corp.asp?gicode=A217880",
+  "https://markets.hankyung.com/stock/217880/financial-summary",
+  "https://m.irgo.co.kr/IR-COMP/217880/%ED%8B%B8%EB%A1%A0-IR-ROOM",
+  "https://www.investing.com/equities/tilon-co-ltd-earnings",
+  "https://www.prestocknews.com/news/articleView.html?idxno=22329",
+  "https://kr.tradingview.com/symbols/KRX-217880/",
+  "https://www.saramin.co.kr/zf_user/company-info/view-inner-finance/csn/cUhqTmtwVXBVVzFGSjJoY05Cd3dHZz09/company_nm/(%EC%A3%BC)%ED%8B%B8%EB%A1%A0",
+  "https://www.pinpointnews.co.kr/news/articleView.html?idxno=398028",
+  "https://www.datanet.co.kr/news/articleView.html?idxno=170393",
+  "https://v.daum.net/v/20230113140211535",
+  "https://www.epnc.co.kr/news/articleView.html?idxno=314444",
+  "https://www.koit.co.kr/news/articleView.html?idxno=93021",
+  "https://www.thelec.kr/news/articleView.html?idxno=30533",
+  "https://www.koit.co.kr/news/articleView.html?idxno=108479",
+  "https://www.financialpost.co.kr/news/articleView.html?idxno=164242"
+ ],
+ "v": 2,
+ "model": "claude-sonnet-4-6",
+ "ticker": "217880",
+ "name": "틸론",
+ "name_en": "TILON Co.,Ltd.",
+ "sector": "IT·소프트웨어",
+ "categories": [
+  "IT·소프트웨어"
+ ],
+ "market": "코넥스",
+ "reportDate": "2026-06-19",
+ "reportTs": "2026-06-19 06:06",
+ "dataDate": "20260618",
+ "quant": {
+  "asOf": "2026-06-18",
+  "fs_basis": "연결(CFS) · DART 공시 확정치 · 지배주주 기준 순이익",
+  "annual": [
+   {
+    "year": 2024,
+    "rev": 7664284649,
+    "op": -305788849,
+    "np": -2892274131,
+    "np_owner": -2892274131,
+    "equity": 1133459524,
+    "equity_owner": 1133459524,
+    "liab": 31055828506,
+    "cfo": -2436262069,
+    "eps_basic": -269,
+    "opm": -4.0,
+    "roe": -255.2,
+    "debt_ratio": 2739.9
+   }
+  ],
+  "quarterly": [
+   {
+    "q": "2025Q1",
+    "rev": null,
+    "op": null,
+    "np_owner": null
+   },
+   {
+    "q": "2025Q2",
+    "rev": null,
+    "op": null,
+    "np_owner": null
+   },
+   {
+    "q": "2025Q3",
+    "rev": null,
+    "op": null,
+    "np_owner": null
+   },
+   {
+    "q": "2025Q4",
+    "rev": null,
+    "op": null,
+    "np_owner": null
+   },
+   {
+    "q": "2026Q1",
+    "rev": null,
+    "op": null,
+    "np_owner": null
+   }
+  ],
+  "valuation": {
+   "price": 1076,
+   "mcap": 0.0115,
+   "shares": 10727290,
+   "total_shares": 11127290,
+   "wavg_shares": null,
+   "per": null,
+   "eps": null,
+   "pbr": null,
+   "bps": null,
+   "roe_ttm": null,
+   "ttm_window": null,
+   "ttm_np_owner": null,
+   "pbr_krx": null,
+   "bps_krx": null,
+   "basis": "PER·EPS·PBR·BPS 모두 자체 산출(네이버·토스와 동일 방식) · 배당은 DART 공시 주당현금배당금(보완:KRX) ÷ 현재가",
+   "dps": null,
+   "div": null
+  }
+ }
+}

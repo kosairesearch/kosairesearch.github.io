@@ -1,0 +1,356 @@
+{
+ "title": {
+  "ko": "영업흑자 회복 · 재성장 가시화가 관건",
+  "en": "Operating Profit Restored — Re-Growth Visibility Is the Critical Test"
+ },
+ "lead": {
+  "ko": "2023~2024년의 연속 영업손실 터널을 빠져나와 2025년 영업흑자(OPM 1.5%)를 회복하고 2026년 1분기에도 흑자 기조를 이어가고 있으나, 4년 연속 매출 하락과 구조적 학령인구 감소라는 역풍 속에서 AI 차별화·공공사업 확대를 통한 재성장 가시화가 투자자들의 핵심 관심사로 부상해 있다.",
+  "en": "Having exited the consecutive operating-loss cycle of 2023–2024, i-Scream Edu returned to operating profitability (OPM 1.5%) in FY2025 and maintained the trend into Q1 2026, yet four consecutive years of revenue decline and structural school-age demographic erosion mean that demonstrating credible re-growth via AI differentiation and public-sector expansion is the central focus for investors."
+ },
+ "keypoints": [
+  {
+   "ko": "2025년 영업이익 14억원(OPM 1.5%) 흑자 전환 · 2026년 1분기 영업이익 흑자(+8.5억원) 유지",
+   "en": "FY2025 operating profit of KRW 1.4bn (OPM 1.5%) marks a return to the black; Q1 2026 operating profit of KRW 0.85bn confirms the trend"
+  },
+  {
+   "ko": "영업현금흐름 2023년 -80억원→2025년 97억원 급반등 — 실질 현금 창출력 회복",
+   "en": "Operating cash flow rebounded from KRW −8.0bn in 2023 to KRW 9.7bn in 2025, signalling genuine cash generation recovery"
+  },
+  {
+   "ko": "부채비율 2023년 106.2%→2025년 57.3%로 급격 개선 — 재무 건전성 복원",
+   "en": "Debt-to-equity ratio sharply improved from 106.2% (2023) to 57.3% (2025), reflecting a materially healthier balance sheet"
+  },
+  {
+   "ko": "매출 2022년 1,338억원→2025년 916억원으로 4년간 31.6% 감소 — 학령인구 축소·경쟁 심화 복합 작용",
+   "en": "Revenue contracted 31.6% from KRW 133.8bn (2022) to KRW 91.6bn (2025) over four years amid demographic decline and intensified competition"
+  },
+  {
+   "ko": "AI드림쌤·늘봄학교 B2G·리틀홈런 신성장 채널 확장 중 — 실질 기여 시기가 관건",
+   "en": "New growth channels (AI DreamTeacher, 늘봄 B2G supply, Little HomeRun) are under way — the timing of material revenue contribution is key"
+  }
+ ],
+ "business": {
+  "ko": "아이스크림에듀(289010)는 2013년 4월 아이스크림미디어(구 시공테크)에서 인적분할하여 설립된 에듀테크 기업으로, 전시문화 기업 시공테크 그룹의 계열사다. 핵심 사업은 2011년 국내 최초로 전용 학습기 기반으로 선보인 디지털 홈러닝 서비스 '아이스크림 홈런(Home-Learn)'이며, 매출의 절대 비중이 초등학생 대상 B2C 구독 요금에서 창출된다. 서비스 포트폴리오는 초등 홈런 외에 유아 대상 '리틀홈런', 중등 대상 '홈런중등', 공부방 형태의 '홈런 스마트학습센터' 등으로 연령대를 확장해 사업 기반 다각화를 모색 중이다. 관계사 아이스크림미디어는 전국 초등학급 99% 이상에서 활용되는 교사용 플랫폼 'i-Scream'을 운영하며, 이 연계를 통해 공교육 교과과정과의 높은 정합성이 독보적 차별점으로 작용한다. AI 기술 면에서는 전용 학습기를 통해 일일 1,600만 건의 학습 빅데이터를 분석하는 'AI생활기록부'와 자체 개발 교육 특화 sLLM(소형언어모델) 기반 AI교사 'AI드림쌤'을 운영하고 있으며, AI생활기록부는 국제 표준화 기구 IMS GLC의 Caliper Analytics 1.1 인증을 획득했다. 최근에는 전북특별자치도 늘봄학교에 홈런 AI 코스웨어를 공급하고 국립특수교육원 연수에 리틀홈런으로 참가하는 등 B2G 공공사업 채널을 넓히고 있다. 경쟁 구도는 웅진씽크빅(스마트올), 천재교과서(밀크T), 메가스터디교육(엘리하이), 대교(마카다미아) 등 대형 플레이어들이 AI 개인화 학습을 내세워 각축하는 형태다. 아이스크림에듀는 초등 스마트러닝 회원수 기준 선두권을 주장하고 있으나, 홈런 B2C 구독에 대한 집중도가 여전히 높아 매출 다변화가 구조적 과제로 남아 있다.",
+  "en": "i-Scream Edu (289010) was carved out from i-Scream Media (formerly Sigong-Tech) in April 2013, operating as a subsidiary of the Sigong-Tech group. Its core product is 'i-Scream HomeRun (Home-Learn)', Korea's first device-based digital home-learning service launched in 2011, with the vast majority of revenue derived from B2C subscription fees targeting elementary-school students. The product portfolio has been extended to preschoolers ('Little HomeRun'), middle-schoolers ('HomeRun Junior'), and private study centers ('HomeRun Smart Learning Center'). Affiliate i-Scream Media operates the teacher platform 'i-Scream', used in over 99% of elementary classrooms nationwide, creating a unique content alignment with the public-school curriculum. On the technology front, the company deploys 'AI Report Card'—analysing 16 million daily learning data points through its proprietary device—and 'AI DreamTeacher', powered by a self-developed education-specific small language model (sLLM); the AI Report Card holds Caliper Analytics 1.1 certification from IMS GLC. Recent public-sector moves include supplying HomeRun AI courseware to 늘봄 after-school programs in North Jeolla Province and showcasing Little HomeRun at a national special-education conference, broadening the B2G channel. Competitors include Woongjin ThinkBig (SmartAll), Chunjae Education (MilkT), Mega Study Education (Elihai), and Daekyo (Macademia), all competing aggressively on AI-personalized learning. i-Scream Edu claims a leading membership position in the elementary smart-learning segment, but high concentration in HomeRun B2C subscriptions leaves revenue diversification as a persistent structural challenge."
+ },
+ "earnings": {
+  "ko": "연간 매출은 2022년 1,338억원을 정점으로 4년 연속 감소해 2025년 916억원으로 축소됐으며, 누적 감소율은 약 31.6%에 달한다. 영업수익성은 더욱 극적인 흐름을 보였다. 2022년 영업이익 21억원(OPM 1.6%)에서, 서비스 고도화·마케팅 투자 확대 여파로 2023년 영업손실 167억원(OPM -14.2%)으로 급락했고, 2024년에도 영업손실 19억원(OPM -1.8%)을 기록했다. 2025년에는 비용 효율화와 구독 구조 안정화에 힘입어 영업이익 14억원(OPM 1.5%)으로 흑자를 회복했다. 지배주주 귀속 순이익은 2023년 -235억원, 2024년 -62억원에서 2025년 -11억원으로 적자 폭이 대폭 축소됐으나, 연간 순이익 완전 흑자 전환은 아직 달성하지 못했다. 분기 흐름을 보면, 2025년 1분기에 영업손실 -36억원의 계절적 약세를 보인 이후 2분기부터 흑자 기조(2분기 +7.2억원, 3분기 +10.0억원, 4분기 +32.5억원)로 전환됐으며, 4분기가 연간 가장 강한 계절 패턴을 보였다. 2026년 1분기는 매출이 203억원으로 전년 동기(244억원) 대비 감소했음에도 영업이익 8.5억원의 흑자를 유지해, 수익 개선의 지속성과 비용 구조 정상화를 입증했다. 영업현금흐름은 2023년 -80억원의 현금 유출에서 2024년 46억원, 2025년 97억원으로 빠르게 회복돼 실질 현금 창출력이 뚜렷이 향상됐다. 부채비율도 2023년 106.2%에서 2024년 99.6%, 2025년 57.3%로 단계적으로 낮아져, 자본총계(지배주주 기준) 426억원·부채총계 244억원으로 재무 건전성이 회복됐다.",
+  "en": "Annual revenue peaked at KRW 133.8bn in 2022 and contracted for four consecutive years to KRW 91.6bn in 2025, a cumulative decline of roughly 31.6%. Operating profitability followed an even more dramatic arc: from KRW 2.1bn profit (OPM 1.6%) in 2022 to an operating loss of KRW 16.7bn (OPM −14.2%) in 2023—reflecting heavy investment in service upgrades and marketing—and a smaller loss of KRW 1.9bn (OPM −1.8%) in 2024. FY2025 marked a recovery, with operating profit of KRW 1.4bn (OPM 1.5%) driven by cost rationalization and a stabilized subscription base. The controlling-interest net loss narrowed sharply from KRW −23.5bn (2023) to KRW −6.2bn (2024) and KRW −1.1bn (2025), but full net-profit turnaround on an annual basis has not yet been achieved. On a quarterly basis, a seasonal operating loss of KRW −3.6bn in Q1 2025 gave way to consecutive operating profits: KRW +0.7bn (Q2), KRW +1.0bn (Q3), and a robust KRW +3.2bn in Q4, which is the strongest seasonal quarter. In Q1 2026, revenue declined to KRW 20.3bn year-on-year from KRW 24.4bn in Q1 2025, yet operating profit of KRW 0.85bn was maintained, confirming the durability of the cost-structure improvement. Operating cash flow rebounded from KRW −8.0bn (2023) to KRW 4.6bn (2024) and KRW 9.7bn (2025), demonstrating genuine rather than merely accounting cash recovery. The debt-to-equity ratio declined stepwise from 106.2% (2023) to 99.6% (2024) and 57.3% (2025), with controlling-interest equity recovering to KRW 42.6bn and total liabilities falling to KRW 24.4bn."
+ },
+ "industry": {
+  "ko": "국내 초·중등 스마트러닝 시장은 코로나19 이후 급성장 국면에서 성숙기로 진입했으며, 웅진씽크빅·교원·대교·천재교과서·메가스터디교육 등 대형 플레이어 간 AI 기반 개인화 학습 경쟁이 날로 심화되고 있다. 구조적 역풍의 핵심은 저출생에 따른 학령인구 감소로, 매년 줄어드는 초등학교 입학 인구는 시장 전체의 유효 수요 기반을 지속적으로 축소시키고 있다. 반면 정부의 AI 디지털교과서 정책과 늘봄학교 확대 추진은 에듀테크 기업들에게 새로운 B2G 공공사업 기회를 열어주고 있어, 공교육 디지털 전환이 민간 에듀테크 업체의 새로운 성장 경로가 될 수 있다. AI를 활용한 초개인화(hyper-personalization) 학습 서비스에 대한 학부모·학생 수요는 증가 추세로, 단순 콘텐츠 제공을 넘어 AI 튜터링과 빅데이터 기반 학습 진단 역량이 차별화의 핵심 축이 됐다. 비상교육의 '온리원' 사업부가 최근 구조조정을 단행하는 등 경쟁사들도 수익성 관리에 집중하는 국면으로, 이는 시장 재편 속 효율화에 성공한 사업자에게 점유율 회수 기회를 줄 수 있다. 초등 스마트러닝 월 구독료가 10만원대 초중반으로 형성돼 있는 가운데, 가격 경쟁보다 서비스 품질·AI 차별화를 통한 구독 유지율(리텐션) 확보가 수익성의 관건으로 부상하고 있다.",
+  "en": "Korea's elementary and middle-school smart-learning market has shifted from a post-COVID growth phase into a mature, highly competitive stage, with major players—Woongjin ThinkBig, Kyowon, Daekyo, Chunjae Education, and Mega Study Education—engaged in intensifying AI-personalization competition. The principal structural headwind is declining school-age population driven by persistently low birthrates, which continuously shrinks the addressable new-subscriber base for all market participants. On the positive side, the government's AI digital textbook policy and rapid expansion of 늘봄 after-school programs are creating new B2G public-procurement opportunities, making public-education digitalization a potential new growth avenue for private edtech operators. Demand from parents and students for hyper-personalized AI-driven learning services continues to rise, elevating AI tutoring and big-data-based learning diagnostics to the core of competitive differentiation. Bisang Education's restructuring of its 'OnlyOne' smart-learning unit signals competitive easing in one segment, which could create market-share recovery opportunities for operators that achieve operational efficiency. With monthly smart-learning subscription fees in the KRW 100,000–130,000 range, retention-driven profitability rather than price competition is increasingly the decisive battleground."
+ },
+ "outlook": {
+  "ko": "업계 분석기관들은 2026년을 아이스크림에듀의 '안정 속 재성장' 시험대로 규정하며, 2025년에 구축한 구독 기반을 발판으로 구독 유지율 제고와 고객 생애가치(LTV) 확대 전략의 본격 실행이 요구된다고 분석한다. AI 차별화 측면에서는 자사가 보유한 방대한 교과 데이터와 일일 1,600만 건의 학습 빅데이터 위에 AI드림쌤을 고도화함으로써 경쟁사와의 격차를 벌릴 수 있는지가 핵심 관전 포인트다. B2G 공공사업의 경우, 전북특별자치도 늘봄학교 공급 사례가 추가 지자체·학교로 확산될 경우 매출 다변화 측면에서 의미 있는 기여가 가능하다. 홈런중등 인강 강화(AI 맞춤형 '수학의세포들' 등)와 리틀홈런의 유아·특수교육 시장 침투는 중기 성장 경로로 계속 추진 중이다. 단순 가입자 수 확대보다 장기 이용자 중심의 업셀링과 수익 구조 정교화가 2026년의 실질적 성장 동력이 될 것으로 분석되며, 이 전략의 수치적 성과 확인이 시장의 관심사다. 2026년 3월 정기주주총회에서 분기배당 가능 정관 변경이 가결됐으나, 배당 실시에 관한 공시는 아직 없어 주주환원 정책 변화 여부는 추이를 지켜볼 필요가 있다.",
+  "en": "Industry analysts characterise 2026 as i-Scream Edu's 'stability-to-regrowth test,' requiring the company to build on the subscription foundation laid in 2025 through concrete improvements in retention rates and customer lifetime value (LTV). Whether AI DreamTeacher—built atop the company's extensive curriculum dataset and 16 million daily learning data points—can create measurable differentiation from rivals is the central strategic question. On the B2G front, the ability of the North Jeolla 늘봄-school supply contract to be replicated across additional municipalities and institutions would represent a meaningful step toward revenue diversification. Initiatives to strengthen HomeRun Junior (including AI-personalized math courses) and expand Little HomeRun into the preschool and special-education segments remain ongoing medium-term growth paths. Rather than subscriber-count expansion, upselling existing long-term users and refining the revenue mix are identified as the practical growth engine for 2026, and quantifiable evidence of these strategies is what the market awaits. The March 2026 AGM resolution enabling quarterly dividends via articles-of-incorporation amendments opens the door for future shareholder returns, but no formal dividend announcement has been made, leaving the timeline open."
+ },
+ "valuation_comment": {
+  "ko": "최근 4개 분기 합산 기준으로 주당순이익(EPS)이 278원을 기록하며 다년간의 적자 기조에서 흑자로 돌아섰다. 주당순자산(BPS)은 3,269원으로, 현 주가는 장부가치 대비 큰 폭으로 할인된 구간에서 거래되고 있으며, 이는 과거 평균 약 1.5배 수준에서 형성됐던 PBR 밴드의 하단을 크게 밑도는 수준이다. 수익성 회복에도 불구하고 순자산 대비 할인 폭이 크게 유지되는 것은, 시장이 매출 하락 지속 및 이익 지속 가능성에 대한 불확실성을 여전히 반영하고 있기 때문으로 해석된다. 배당은 현재 미지급(DPS 0원) 상태로 배당수익률은 존재하지 않으며, 주주환원 측면의 메리트는 없다. 이익 회복 추세가 이후 분기에도 지속되고 매출 하락세 반전의 신호가 가시화된다면 순자산 할인 폭이 축소될 여지가 있으나, 그 전까지는 이익 지속 가능성이 밸류에이션 재평가의 선행 조건이 될 것이다.",
+  "en": "On a trailing four-quarter basis, earnings per share (EPS) has turned positive at KRW 278, marking a transition from a multi-year loss position to the black. Book value per share (BPS) stands at KRW 3,269, and the stock is trading at a substantial discount to net asset value—well below the historical average PBR band of approximately 1.5× and below even the lows observed in earlier downturns. The persistence of a wide net-asset discount despite the ongoing profitability recovery reflects the market's continued skepticism regarding both the durability of the revenue floor and the sustainability of the earnings recovery. No dividends are currently paid (DPS: KRW 0), meaning there is no yield-based investment merit at this juncture. Should the earnings-recovery trajectory be sustained over coming quarters and a credible top-line inflection emerge, the net-asset discount could narrow; until then, earnings sustainability remains the prerequisite for any meaningful valuation re-rating."
+ },
+ "bull": [
+  {
+   "title": {
+    "ko": "연속 손실 탈출 · 영업흑자 및 현금 창출력 회복",
+    "en": "Exit from Consecutive Losses; Operating Profit and Cash Generation Restored"
+   },
+   "body": {
+    "ko": "2023년 영업손실 167억원, 2024년 19억원 적자에서 2025년 영업이익 14억원으로 흑자 전환에 성공했고, 2026년 1분기에도 전년 동기 영업손실(-36억원)에서 흑자(+8.5억원)로 전환하며 비용 구조 개선의 지속성을 입증했다. 영업현금흐름도 2023년 -80억원에서 2025년 97억원으로 급반등해, 단순 회계 이익이 아닌 실질 현금 창출력의 복원을 확인시켰다. 이러한 흐름은 매출 하락 국면에서도 비용 통제만으로 수익성 유지가 가능한 구조가 구축됐음을 보여준다.",
+    "en": "From operating losses of KRW 16.7bn (2023) and KRW 1.9bn (2024), the company returned to operating profit of KRW 1.4bn in 2025; Q1 2026 confirmed durability with a swing from a KRW −3.6bn operating loss in Q1 2025 to a KRW +0.85bn profit. Operating cash flow rebounded from KRW −8.0bn (2023) to KRW 9.7bn (2025), demonstrating genuine rather than merely accounting cash generation. This trajectory shows a cost structure capable of sustaining profitability even during top-line contraction."
+   }
+  },
+  {
+   "title": {
+    "ko": "재무 건전성 급격 회복 · 부채비율 57%대",
+    "en": "Sharp Balance-Sheet Recovery; Debt Ratio Normalised at 57%"
+   },
+   "body": {
+    "ko": "부채비율이 2023년 106.2%(자본 대비 부채 초과)에서 2025년 57.3%로 빠르게 낮아져 재무 안정성이 크게 개선됐다. 자본총계(지배주주 기준)는 426억원으로 회복됐으며, 부채총계는 244억원으로 축소됐다. 이러한 재무 건전성 회복은 추가 구조조정 없이 영업 자생력 강화와 선택적 재투자 여력을 동시에 확보했음을 의미한다.",
+    "en": "The debt-to-equity ratio recovered rapidly from 106.2% (liabilities exceeding equity) in 2023 to 57.3% in 2025, with controlling-interest equity restored to KRW 42.6bn and total liabilities reduced to KRW 24.4bn. This balance-sheet repair suggests the company can sustain and selectively reinvest without further restructuring, providing meaningful financial flexibility."
+   }
+  },
+  {
+   "title": {
+    "ko": "AI 차별화 자산 · B2G 공공사업 확대로 구조 다변화 진행",
+    "en": "Proprietary AI Assets and B2G Expansion Drive Structural Diversification"
+   },
+   "body": {
+    "ko": "자체 개발 sLLM 기반 AI드림쌤과 일일 1,600만 건 학습 빅데이터를 분석하는 AI생활기록부는 플랫폼 점착성을 높이는 핵심 기술 자산이다. 전북 늘봄학교 AI 코스웨어 공급, 특수교육 기관 대상 리틀홈런 제공 등 B2G 채널 확장은 B2C 의존도를 낮추는 구조적 다변화 경로다. 공교육 디지털 전환 정책이 가속화될수록 이러한 공공 레퍼런스의 확산 가능성이 높아진다.",
+    "en": "The proprietary sLLM-powered AI DreamTeacher and the AI Report Card—analysing 16 million daily learning data points—represent high-value platform-stickiness assets. B2G channel expansion (HomeRun AI courseware to 늘봄 schools in North Jeolla Province, Little HomeRun outreach to special-education institutions) provides a structural path away from near-total B2C reliance. As government-led public-school digitalization accelerates, the public-sector reference base could scale meaningfully."
+   }
+  }
+ ],
+ "bear": [
+  {
+   "title": {
+    "ko": "4년 연속 매출 감소 · 구조적 학령인구 역풍",
+    "en": "Four Consecutive Years of Revenue Decline; Structural Demographic Headwind"
+   },
+   "body": {
+    "ko": "매출이 2022년 1,338억원에서 2025년 916억원으로 4년간 31.6% 감소했으며, 근본 원인인 저출생에 따른 학령인구 감소는 단기에 해소할 수 없는 구조적 문제다. 2026년 1분기 매출(203억원)도 전년 동기 대비 감소해 상단 성장 트리거가 아직 확인되지 않고 있다. 현재의 영업흑자가 주로 비용 절감에 의존하는 구조에서, 비용 절감 여력이 소진될 경우 매출 하락이 곧 수익성 훼손으로 이어질 수 있다.",
+    "en": "Revenue has contracted 31.6% from KRW 133.8bn (2022) to KRW 91.6bn (2025) over four years, and the underlying cause—falling school-age population driven by structural low birthrates—cannot be resolved in the near term. Q1 2026 revenue of KRW 20.3bn also declined year-on-year, leaving the top-line growth catalyst unconfirmed. With current operating profitability resting heavily on cost savings, exhausting further efficiency gains while revenue continues to decline could rapidly translate into renewed losses."
+   }
+  },
+  {
+   "title": {
+    "ko": "B2C 단일 채널 편중 · 매출 다변화 미완",
+    "en": "B2C Channel Concentration; Revenue Diversification Remains Incomplete"
+   },
+   "body": {
+    "ko": "매출의 대부분이 홈런 B2C 구독에서 창출되는 단일 채널 구조로, 소비자 교육비 긴축이나 경쟁 강화 시 취약성이 부각된다. AI·출판·글로벌 진출 등 신사업이 추진되고 있으나 아직 안정적 반복 수익으로 전환되지 못했다는 분석이 제기된다. B2G 공공사업 채널도 초기 단계여서 의미 있는 매출 기여까지는 추가 시간이 필요하다.",
+    "en": "Revenue is heavily concentrated in HomeRun B2C subscriptions, making the top line vulnerable to consumer education-spending cutbacks or subscriber poaching by rivals. AI services, publishing, and international initiatives remain in formative stages without yet converting into stable, recurring revenue streams. B2G public-sector revenue is nascent, requiring time before making a material top-line contribution."
+   }
+  },
+  {
+   "title": {
+    "ko": "경쟁 심화 · AI 차별화 효과 수치 검증 미완",
+    "en": "Intense Competition; AI Differentiation Benefit Not Yet Quantified at Scale"
+   },
+   "body": {
+    "ko": "웅진씽크빅, 대교, 천재교과서 등 대형 경쟁사들이 AI 개인화 학습 경쟁을 지속하면서, 차별화 우위 유지에 마케팅·R&D 비용 재확대 압력이 잠재한다. AI드림쌤 등 신규 AI 서비스가 실질적인 구독자 이탈 방지 및 신규 유입에 기여하는지는 수치로 아직 검증되지 않았다. 2026년에도 경쟁사들이 AI 투자를 강화할 경우, 현재의 비용 효율화 기조를 유지하기 어려울 수 있다.",
+    "en": "Major rivals—Woongjin ThinkBig, Daekyo, and Chunjae Education—continue to intensify AI-personalization investment, maintaining latent pressure to increase marketing and R&D expenditure. Whether AI DreamTeacher and related services measurably reduce churn or attract net new subscribers has not yet been quantifiably demonstrated. If competitors escalate AI investments in 2026, sustaining the current cost-efficiency posture may become increasingly difficult."
+   }
+  }
+ ],
+ "risks": [
+  {
+   "cat": {
+    "ko": "학령인구 감소 (구조적·장기)",
+    "en": "School-Age Population Decline (Structural, Long-Term)"
+   },
+   "body": {
+    "ko": "국내 저출생 추세가 지속되며 초등학교 학령인구는 매년 줄어들고 있어, 홈런 신규 가입자 풀이 구조적으로 수축 중이다. 단기 마케팅 강화나 가격 정책으로 극복하기 어려운 장기 역풍이다. 중등·유아 시장으로의 확장이 부분 완충 역할을 할 수 있으나, 초등 시장 위축을 완전히 상쇄하기에 충분한지는 중·장기 추이를 지켜봐야 한다.",
+    "en": "Korea's persistently low birthrate continues to shrink the elementary school-age population, structurally contracting the addressable new-subscriber pool for HomeRun. This headwind cannot be reversed by near-term marketing or pricing measures. Expansion into preschool and middle-school segments may partially offset the impact, but whether it is sufficient to fully counterbalance elementary-market attrition requires monitoring over the medium-to-long term."
+   }
+  },
+  {
+   "cat": {
+    "ko": "이익 지속 가능성 · 비용 절감 여력 소진 위험",
+    "en": "Earnings Sustainability; Risk of Exhausting Cost-Cutting Headroom"
+   },
+   "body": {
+    "ko": "2025~2026년 1분기의 영업흑자는 주로 비용 절감에 기인하는 측면이 있어, 매출 하락이 지속되는 가운데 비용 절감 여력이 소진될 경우 재적자 가능성이 있다. 2025년 지배주주 귀속 순이익은 여전히 -11억원으로 순이익 완전 흑자 전환은 미완이며, 이자비용 등 비영업 항목의 변동이 손익에 영향을 미칠 수 있다. 계절적 변동성(1분기 구조적 약세 패턴)도 크므로, 연간 흑자 유지 여부를 분기별로 확인해야 한다.",
+    "en": "The operating profits of 2025 and Q1 2026 are partly the result of cost-cutting, and if further efficiency gains are exhausted while revenue continues to decline, a return to losses is possible. The FY2025 controlling-interest net loss of KRW −1.1bn shows that full annual net-profit turnaround remains incomplete, with non-operating items such as interest expense remaining a swing factor. Significant seasonal variability (pronounced structural Q1 weakness) means annual profitability must be reconfirmed on a quarter-by-quarter basis."
+   }
+  },
+  {
+   "cat": {
+    "ko": "경쟁 심화에 따른 가격 압박 및 비용 재증가",
+    "en": "Competitive Pressure Leading to Pricing Constraints and Cost Re-escalation"
+   },
+   "body": {
+    "ko": "스마트러닝 시장의 경쟁 심화는 구독료 인상 또는 마진 확대를 제한하고, 경쟁 대응을 위한 마케팅·R&D 비용 재확대 압력으로 이어질 수 있다. 현재 비용 효율화로 구축된 수익성 기반이 경쟁 강화에 따른 비용 재증가로 훼손될 위험이 있다. 월 10만원대 초중반의 스마트러닝 구독료 수준에서 장기 가격 경쟁이 지속될 경우 ARPU 개선 경로도 제한된다.",
+    "en": "Intensifying competition in the smart-learning market constrains the ability to raise subscription fees or expand margins, and may force renewed increases in marketing and R&D spending to stay competitive. The profitability base built on cost efficiency could be eroded if competitive pressures require re-escalating expenditure. Prolonged price competition in the KRW 100,000–130,000 monthly subscription tier would also limit ARPU improvement opportunities."
+   }
+  }
+ ],
+ "checkpoints": [
+  {
+   "when": {
+    "ko": "2026년 7월 말~8월 초",
+    "en": "Late July – Early August 2026"
+   },
+   "what": {
+    "ko": "2026년 2분기(4~6월) 실적 공시 예정. 2분기는 계절적으로 구독 갱신 수요가 있는 구간으로, 영업이익 수준과 매출 감소폭이 전년 동기(영업이익 7.2억원, 매출 229억원) 대비 개선됐는지 확인이 필요하다.",
+    "en": "Q2 2026 (Apr–Jun) earnings are expected to be disclosed. Q2 benefits from seasonal subscription renewals; compare operating profit and revenue against Q2 2025 (operating profit KRW 0.7bn, revenue KRW 22.9bn) to gauge the pace of recovery."
+   }
+  },
+  {
+   "when": {
+    "ko": "2026년 하반기 (수시 공시)",
+    "en": "H2 2026 (as disclosed)"
+   },
+   "what": {
+    "ko": "늘봄학교 및 공공교육 AI 코스웨어 추가 계약 공시 여부. 전북 공급 사례가 타 지자체로 확산되는지, B2G 매출 비중이 의미 있는 수준으로 증가하는지 추적이 필요하다.",
+    "en": "Watch for additional B2G supply contracts for 늘봄 after-school and public-education AI courseware. Monitor whether the North Jeolla pilot scales to other municipalities and whether the B2G revenue share grows meaningfully."
+   }
+  },
+  {
+   "when": {
+    "ko": "2026년 연중 (수시)",
+    "en": "Throughout 2026 (as disclosed)"
+   },
+   "what": {
+    "ko": "AI드림쌤 업데이트 및 관련 구독 지표(구독 유지율·업셀 전환율 등) IR 자료 공개 여부. AI 차별화 전략이 실제 가입자 이탈 감소와 ARPU 개선으로 이어지는지 확인.",
+    "en": "Track AI DreamTeacher update releases and any IR-disclosed subscription metrics (retention rate, upsell conversion). Assess whether the AI differentiation strategy produces measurable churn reduction and ARPU improvement."
+   }
+  },
+  {
+   "when": {
+    "ko": "2026년 4분기 / 연간 결산 (2027년 초 공시)",
+    "en": "Q4 2026 / Full-Year Settlement (Disclosed Early 2027)"
+   },
+   "what": {
+    "ko": "2026년 연간 지배주주 귀속 순이익의 완전 흑자 전환 여부. 4분기는 연간 가장 강한 계절 구간이므로, 연간 순이익 흑자 전환 가시화 여부와 함께 정관 개정으로 허용된 배당 재개 가능성도 주목.",
+    "en": "Verify whether controlling-interest net profit achieves a full positive turnaround on a full-year 2026 basis. Q4 is the seasonally strongest quarter; also watch for any signal on dividend resumption, now permitted under the amended articles of incorporation."
+   }
+  },
+  {
+   "when": {
+    "ko": "2027년 초 (통계청 학령인구 통계)",
+    "en": "Early 2027 (Statistics Korea Demographic Data)"
+   },
+   "what": {
+    "ko": "연간 출생아 수 및 초등학교 입학 예정 인구 통계 발표. 감소폭이 예상보다 빠를 경우 중기 매출 전망에 추가 하방 압력, 감소세가 완만해지면 구독자 풀 안정화 시나리오 검토.",
+    "en": "Statistics Korea's annual birth and projected elementary-school enrollment data release. A faster-than-expected demographic decline would add downward pressure on medium-term revenue forecasts; a moderation in the decline rate would support a subscriber-pool stabilization scenario."
+   }
+  }
+ ],
+ "verdict": {
+  "body": {
+   "ko": "아이스크림에듀는 2023~2024년의 연속 대규모 손실 국면을 통과해 2025년 영업흑자(OPM 1.5%)를 회복했으며, 2026년 1분기에도 전년 동기 영업손실에서 흑자로 전환하며 비용 구조 개선의 지속성을 입증했다. 영업현금흐름의 강한 회복(2025년 97억원)과 부채비율 57.3% 달성은 재무 건전성 측면의 중요한 이정표다. 다만 매출은 2022년 이후 4년 연속 감소 중이며, 저출생에 따른 학령인구 감소라는 구조적 역풍은 단기에 해소될 수 없어, AI 차별화·B2G 공공사업 확대·중등·유아 포트폴리오 강화가 이를 얼마나 상쇄할 수 있는지가 중·장기 사업의 핵심 변수다. 지배주주 귀속 순이익은 2025년 연간 기준 아직 적자(-11억원)이나, 최근 4개 분기 합산 EPS는 흑자로 전환됐다. 2026년은 단순 비용 절감을 넘어 구독 유지율·ARPU 개선·신규 사업 채널의 실질적 기여 등 재성장의 질적 증거를 제시해야 하는 해로, 이 과제의 수행 결과에 따라 시장의 재평가 방향이 결정될 것으로 판단된다.",
+   "en": "i-Scream Edu has successfully navigated through the severe consecutive-loss cycle of 2023–2024, restoring operating profitability (OPM 1.5%) in FY2025 and extending the trend into Q1 2026 with a swing from operating loss to profit year-on-year. Strong operating cash flow recovery (KRW 9.7bn in 2025) and a debt-to-equity ratio of 57.3% represent meaningful financial milestones. However, revenue has declined for four consecutive years since 2022, and the structural headwind of a shrinking school-age population driven by persistently low birthrates is not resolvable in the near term—the extent to which AI differentiation, B2G public-sector expansion, and a broadened product portfolio can offset demographic erosion will define the medium-to-long-term trajectory. Controlling-interest net profit remained marginally negative (KRW −1.1bn) on a full-year 2025 basis, though the most recent four-quarter aggregate EPS has crossed into positive territory. FY2026 is the year when the company must demonstrate qualitative evidence of re-growth—improved retention, rising ARPU, and material contributions from new channels—moving beyond cost-cutting as the primary profitability lever. The market's re-rating direction will ultimately be shaped by how well and how quickly these strategic initiatives translate into visible numbers."
+  }
+ },
+ "sources": [
+  "https://news.nate.com/view/20260326n39338",
+  "https://comp.fnguide.com/SVO2/asp/SVD_Main.asp?gicode=A289010",
+  "https://m.thinkpool.com/item/289010",
+  "https://valueline.co.kr/finance/summary/289010",
+  "https://valueline.co.kr/finance/investment/289010",
+  "https://m.etnews.com/stats/detail_stats.html?id=51947",
+  "https://www.butler.works/ko/companies/00983934",
+  "https://comp.fnguide.com/SVO2/asp/SVD_Invest.asp?pGB=1&cID=&MenuYn=Y&ReportGB=D&NewMenuID=105&stkGb=701&gicode=A289010",
+  "https://www.beyondpost.co.kr/view.php?ud=202512171704242921a4002294a6_30",
+  "https://www.i-screamedu.co.kr/front/business02.html",
+  "https://www.ice.go.kr/common/nttFileDownload.do?fileKey=70af7ce736fa1fd168b5f91d558a4b58",
+  "https://www.edtechkorea.or.kr/fairBbs.do?selAction=view&FAIRMENU_IDX=11306&BOARD_IDX=70825",
+  "https://biz.heraldcorp.com/article/10725082",
+  "https://www.saramin.co.kr/zf_user/company-info/view/csn/RDNhTjdPaDhJTHNROU91bmpNTllVdz09/company_nm/(%EC%A3%BC)%EC%95%84%EC%9D%B4%EC%8A%A4%ED%81%AC%EB%A6%BC%EC%97%90%EB%93%80",
+  "https://www.incruit.com/company/22792967/",
+  "https://edtechkorea.or.kr/fairContents.do?FAIRMENU_IDX=20457&hl=KOR",
+  "https://aidt.i-scream.co.kr/",
+  "https://thevc.kr/i-screamedu"
+ ],
+ "v": 2,
+ "model": "claude-sonnet-4-6",
+ "ticker": "289010",
+ "name": "아이스크림에듀",
+ "name_en": "i-Scream Edu Co., Ltd.",
+ "sector": "IT·소프트웨어",
+ "categories": [
+  "IT·소프트웨어"
+ ],
+ "market": "코스닥",
+ "reportDate": "2026-06-19",
+ "reportTs": "2026-06-19 06:06",
+ "dataDate": "20260618",
+ "quant": {
+  "asOf": "2026-06-18",
+  "fs_basis": "연결(CFS) · DART 공시 확정치 · 지배주주 기준 순이익",
+  "annual": [
+   {
+    "year": 2025,
+    "rev": 91587213109,
+    "op": 1401677361,
+    "np": -1057960650,
+    "np_owner": -1057960650,
+    "equity": 42567459598,
+    "equity_owner": 42567459598,
+    "liab": 24404234476,
+    "cfo": 9671993134,
+    "eps_basic": -80,
+    "opm": 1.5,
+    "roe": -2.5,
+    "debt_ratio": 57.3
+   },
+   {
+    "year": 2024,
+    "rev": 107627285871,
+    "op": -1939876034,
+    "np": -6212111382,
+    "np_owner": -6212111382,
+    "equity": 38736622061,
+    "equity_owner": 38731113690,
+    "liab": 38595165432,
+    "cfo": 4564564084,
+    "eps_basic": -496,
+    "opm": -1.8,
+    "roe": -16.0,
+    "debt_ratio": 99.6
+   },
+   {
+    "year": 2023,
+    "rev": 117613662193,
+    "op": -16703739012,
+    "np": -23465565405,
+    "np_owner": -23465565405,
+    "equity": 44559536946,
+    "equity_owner": 44122876824,
+    "liab": 47303122484,
+    "cfo": -7999478285,
+    "eps_basic": -1874,
+    "opm": -14.2,
+    "roe": -53.2,
+    "debt_ratio": 106.2
+   },
+   {
+    "year": 2022,
+    "rev": 133842491685,
+    "op": 2092800853,
+    "np": 817712848,
+    "np_owner": 817712848,
+    "equity": 67239469773,
+    "equity_owner": 67239469773,
+    "liab": 25451275599,
+    "cfo": 423618207,
+    "eps_basic": 65,
+    "opm": 1.6,
+    "roe": 1.2,
+    "debt_ratio": 37.9
+   }
+  ],
+  "quarterly": [
+   {
+    "q": "2025Q1",
+    "rev": 24386817969,
+    "op": -3568637172,
+    "np_owner": -3887777465
+   },
+   {
+    "q": "2025Q2",
+    "rev": 22931657298,
+    "op": 720655604,
+    "np_owner": 2779434647
+   },
+   {
+    "q": "2025Q3",
+    "rev": 20957806069,
+    "op": 1001424858,
+    "np_owner": -1516537868
+   },
+   {
+    "q": "2025Q4",
+    "rev": 23310931773,
+    "op": 3248234071,
+    "np_owner": 1565349185
+   },
+   {
+    "q": "2026Q1",
+    "rev": 20299193744,
+    "op": 853438508,
+    "np_owner": 675160636
+   }
+  ],
+  "valuation": {
+   "price": 1262,
+   "mcap": 0.0176,
+   "shares": 13945256,
+   "total_shares": 13945256,
+   "wavg_shares": 13224508,
+   "per": 4.5,
+   "eps": 278,
+   "pbr": 0.39,
+   "bps": 3269,
+   "roe_ttm": 9.0,
+   "ttm_window": "2025Q2~2026Q1",
+   "ttm_np_owner": 3504977451,
+   "pbr_krx": 0.41,
+   "bps_krx": 3052.0,
+   "basis": "PER·EPS·PBR·BPS 모두 자체 산출(네이버·토스와 동일 방식) · 배당은 DART 공시 주당현금배당금(보완:KRX) ÷ 현재가",
+   "dps": 0.0,
+   "div": 0.0
+  }
+ }
+}
