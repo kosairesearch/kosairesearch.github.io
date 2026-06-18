@@ -1,0 +1,356 @@
+{
+ "title": {
+  "ko": "고사양 비메모리 다각화로 수익성 회복 기로",
+  "en": "At the Crossroads of Profitability Recovery via High-End Non-Memory Diversification"
+ },
+ "lead": {
+  "ko": "2023년 코스닥 상장 후 설비 증설 부담으로 2년 연속 영업손실을 기록했으나, 메모리컨트롤러·eSSD 테스트로 제품군을 확장하며 2025년 4분기 분기 첫 흑자를 달성했고, 제2공장 가동이 본격화되는 2026년 하반기 지속 흑자 여부가 핵심 관전 포인트다.",
+  "en": "After posting operating losses for two consecutive years following its 2023 KOSDAQ listing due to heavy CAPEX burden, ALT achieved its first quarterly operating profit in Q4 2025 by diversifying into memory controller and eSSD testing; whether sustained profitability can be maintained as the second factory ramps up in H2 2026 is now the central question."
+ },
+ "keypoints": [
+  {
+   "ko": "2025년 매출 약 484억원으로 전년 대비 32% 반등, 영업손실 폭은 약 74억원으로 전년(약 122억원) 대비 크게 축소",
+   "en": "Revenue rebounded ~32% YoY to ~KRW 48.4B in 2025; operating loss narrowed significantly to ~KRW 7.4B from ~KRW 12.2B in 2024"
+  },
+  {
+   "ko": "2025년 4분기 영업이익 약 8억원으로 8분기 만에 첫 분기 흑자 달성, 그러나 2026년 1분기 매출 약 138억원·영업손실 약 -9억원으로 재차 적자 전환",
+   "en": "Q4 2025 delivered the first quarterly operating profit (~KRW 0.83B) in eight quarters, but Q1 2026 reverted to an operating loss of ~KRW -0.86B on revenue of ~KRW 13.8B"
+  },
+  {
+   "ko": "웨이퍼 테스트 품목을 DDI 중심에서 메모리컨트롤러(HBM 연관)·CIS·SoC·eSSD 컨트롤러로 확장해 매출 믹스 고도화 진행 중",
+   "en": "Wafer test product mix diversifying from DDI-centric toward memory controller (HBM-adjacent), CIS, SoC, and eSSD controller, upgrading revenue mix quality"
+  },
+  {
+   "ko": "청주 서오창 제2공장 증설로 총 연간 캐파 2,000억원 이상 목표, 2026년 하반기 가동 본격화 예정",
+   "en": "Second factory in Seochang Technovalley targets total annual CAPA exceeding KRW 200B, with full-scale operation expected in H2 2026"
+  },
+  {
+   "ko": "소니세미컨덕터솔루션즈 CIS 후공정 파트너 선정 작업 진행 중(최종 수요처: 삼성전자), 국내 유일 상용화 림컷 기술은 차별화 근거",
+   "en": "Pursuing selection as Sony Semiconductor Solutions' Korean CIS back-end partner (Samsung Electronics as end customer); commercially unique Rim-Cut technology serves as a key differentiator"
+  }
+ ],
+ "business": {
+  "ko": "에이엘티는 2003년 설립된 비메모리 반도체 후공정 테스트 전문기업으로, 2023년 7월 코스닥에 상장했다. 충청북도 청주 오창과학산업단지에 본사를 두며, 종속회사 에이지피(AJP)가 CCTV·차량용 등에 사용되는 CMOS 이미지센서(CIS) 패키징을 담당한다. 매출 구조는 웨이퍼 테스트(81.9%), 패키징(9.0%), 림컷(8.8%), 기타(0.3%)로 이루어지며 웨이퍼 테스트가 핵심 수익원이다. 웨이퍼 테스트 내 품목별 비중은 DDI(디스플레이 구동IC) 52.4%, CIS 14.8%, PMIC(전력관리반도체) 6.4%, MCU 6.0%, 메모리컨트롤러(MC) 0.5%이며, MC 비중은 HBM 수요 확대와 함께 빠르게 늘고 있다. 주요 고객사는 삼성전자, 매그나칩, 루셈 등이며, 소니세미컨덕터솔루션즈를 신규 CIS 후공정 고객으로 확보하는 작업이 진행 중이고 최종 수요처는 삼성전자다. 에이엘티는 국내 유일하게 Si 반도체에 적용되는 림컷(Rim-Cut) 기술을 자동화 단일 공정으로 상용화해 기존 블레이드 방식 대비 수율을 약 90% 이상으로 끌어올렸다. SiC 웨이퍼 후공정 다이싱 특허도 출원해 전력반도체 시장 진입 기반을 구축했다. 경쟁사로는 두산테스나(엔지온), 하나마이크론, LB세미콘 등이 있으며, 에이엘티는 비메모리 후공정 순수 전문성과 공정 특화 기술로 차별화를 추구한다.",
+  "en": "ALT was founded in 2003 as a non-memory semiconductor back-end test specialist and listed on KOSDAQ in July 2023. Headquartered at the Ochang Science Industrial Complex in Cheongju, North Chungcheong Province, its subsidiary AJP handles CIS packaging for CCTV and automotive applications. Revenue is composed of wafer test (81.9%), packaging (9.0%), rim-cut (8.8%), and others (0.3%), with wafer testing as the core profit engine. Within the wafer test segment, product mix is DDI 52.4%, CIS 14.8%, PMIC 6.4%, MCU 6.0%, and memory controller (MC) 0.5%, with the MC share expanding rapidly alongside HBM demand growth. Key customers include Samsung Electronics, Magnachip, and Luxsemi; onboarding Sony Semiconductor Solutions as a new CIS back-end partner is underway, with Samsung Electronics as the ultimate end customer. ALT is the only domestic company to commercially deploy an automated single-process Rim-Cut technology for Si semiconductor wafers, achieving yields exceeding approximately 90% versus around 60% with conventional blade methods. The company has also filed patents for SiC wafer back-end dicing, building a beachhead into the power semiconductor market. Competitors include Doosan Tesna (Ngizone), Hana Micron, and LB Semicon; ALT differentiates through its pure non-memory back-end specialization and proprietary process technologies."
+ },
+ "earnings": {
+  "ko": "2022년 매출 약 443억원·영업이익률 18.1%로 상장 전 최고 수익성을 기록했으나, 업황 둔화와 설비 투자 확대가 맞물리며 2023년 영업이익률이 10.3%로 하락했다. 2024년에는 매출이 약 367억원으로 전년 대비 23% 감소하고 영업손실이 약 122억원까지 확대됐으며 부채비율도 112.7%로 상승했다. 2025년에는 매출이 약 484억원으로 전년 대비 약 32% 반등하며 2023년 수준을 소폭 상회했고, 영업손실 폭은 약 74억원으로 크게 축소됐다. 분기 흐름을 보면 2025년 1분기 영업손실 약 -31억원, 2분기 약 -22억원, 3분기 약 -28억원으로 적자가 이어지다가 4분기에 매출 약 151억원·영업이익 약 +8억원으로 처음 분기 흑자를 달성했다. 이는 메모리컨트롤러·패키징 테스트 매출이 전년 동기 대비 50% 이상 증가하며 제품 믹스가 개선된 결과다. 그러나 2026년 1분기에는 매출이 약 138억원으로 소폭 감소하면서 영업손실 약 -9억원으로 재차 적자 전환했다. 2025년 영업활동현금흐름은 약 130억원으로 2024년의 약 72억원 대비 크게 회복됐다. 지배주주 귀속 순손실은 2024년 약 -93억원, 2025년 약 -90억원으로 유사한 수준을 유지해 영업외 비용 부담이 여전히 존재함을 보여준다.",
+  "en": "In 2022, ALT recorded revenue of ~KRW 44.3B and an OPM of 18.1%—its highest pre-listing profitability—but a combination of industry softness and rising investment costs pushed the OPM down to 10.3% in 2023. Revenue fell ~23% YoY to ~KRW 36.7B in 2024, the operating loss widened to ~KRW 12.2B, and the debt ratio climbed to 112.7%. In 2025, revenue rebounded ~32% YoY to ~KRW 48.4B, modestly topping the 2023 level, while the operating loss narrowed significantly to ~KRW 7.4B. Quarterly progression showed operating losses of ~KRW -3.1B in Q1, ~KRW -2.2B in Q2, and ~KRW -2.8B in Q3 2025, before Q4 2025 delivered the first quarterly operating profit of ~KRW +0.83B on revenue of ~KRW 15.1B—driven by a 50%+ YoY surge in memory controller and packaging test revenues with improved product mix. However, Q1 2026 returned to an operating loss of ~KRW -0.86B as revenue edged down to ~KRW 13.8B. Operating cash flow recovered materially to ~KRW 13.0B in 2025 from ~KRW 7.2B in 2024. Controlling shareholder net loss remained nearly flat at ~KRW -9.0B in 2025 versus ~KRW -9.3B in 2024, underscoring persistent non-operating cost burden."
+ },
+ "industry": {
+  "ko": "SEMI에 따르면 반도체 테스트 장비 시장은 2024년 20.3% 성장에 이어 2025년 23.2% 증가한 93억 달러로 역대 최대치를 기록할 것으로 전망되며, 2026년에도 5% 추가 성장이 예상된다. AI 인프라 확산에 따른 고대역폭메모리(HBM) 수요 급증과 메모리컨트롤러 테스트 물량 증가는 비메모리 후공정 업체에 새로운 수요 창구가 되고 있다. 글로벌 시스템반도체 시장은 2022년 약 2,695억 달러에서 2030년 약 4,231억 달러로 성장이 전망돼 전방 시장 구조는 장기적으로 견조하다. 반면 DDI 시장은 스마트폰 출하 사이클에 직접 연동돼 분기 수요 변동성이 크고, 이것이 에이엘티 실적의 단기 불확실성 요인으로 남는다. 소니세미컨덕터솔루션즈의 CIS 후공정 한국 파트너 선정 경쟁에는 에이엘티 외에 LB세미콘·두산테스나·ASE코리아 등이 후보군에 포함돼 있어 수주 경쟁이 치열하다. 카운터포인트리서치는 AI 고객사들이 후공정 업체와 장기 계약을 확대하며 2026년 첨단 패키징 캐파가 최대 80% 증가할 수 있다고 분석했는데, 이는 에이엘티의 제2공장 증설 전략과 방향이 일치한다.",
+  "en": "According to SEMI, the semiconductor test equipment market is projected to reach a record $9.3B in 2025 (+23.2% after +20.3% in 2024), with a further 5% growth expected in 2026. The surge in HBM demand tied to AI infrastructure build-out and the resulting increase in memory controller test volumes are opening new demand channels for non-memory back-end test providers. The global system semiconductor market is forecast to expand from ~$269.5B in 2022 to ~$423.1B by 2030, underpinning a structurally positive long-term demand outlook. By contrast, the DDI market is tightly linked to smartphone shipment cycles, creating material near-term revenue volatility for ALT. Beyond ALT, LB Semicon, Doosan Tesna, and ASE Korea are also vying to become Sony Semiconductor Solutions' Korean CIS back-end partner, making the competition fierce. Counterpoint Research has noted that AI customers are increasingly signing long-term contracts with OSAT providers, potentially lifting advanced packaging CAPA by up to 80% in 2026—a trend that aligns with ALT's second-factory expansion strategy."
+ },
+ "outlook": {
+  "ko": "청주 서오창테크노밸리 제2공장은 2025년 9월 준공을 목표로 건설이 진행됐으며, 2026년 하반기 본격 가동이 예정돼 있다. 이를 통해 기존 841억원 규모의 연간 생산능력에 1,144억원을 추가해 총 2,000억원 이상의 캐파를 확보하게 되며, 고객 대응력이 현재 대비 약 1.4배 확대될 전망이다. 메모리컨트롤러 테스트 설비 투자는 HBM 수요 확대와 함께 지속 중이며, 메리츠증권 리포트(2026년 2월)는 eSSD 컨트롤러 테스트가 실적 반등의 핵심 동인이 될 것으로 제시했다. 소니세미컨덕터솔루션즈와의 CIS 후공정 협력이 확정될 경우 DDI 편중 매출 구조를 완화하는 안정적 물량원이 추가될 수 있다. 기관투자자들이 참여한 200억원 규모 전환사채(전환가 25,500원, 리픽싱 없음)는 2026년 12월부터 조기상환 청구가 가능해 자금 운용 계획의 변수로 작용할 수 있다. 2026년 하반기 제2공장 가동 안정화와 고사양 제품 테스트 물량 확대가 맞물릴 경우 연간 영업이익 흑자 전환의 가시성이 높아질 것으로 기대되나, DDI 물량의 회복 속도와 스마트폰 교체 사이클 시점이 단기 실적의 핵심 불확실성으로 남는다.",
+  "en": "The second factory in Seochang Technovalley, Cheongju, was targeted for completion by September 2025, with full-scale operation expected in H2 2026. The build-out is designed to add KRW 114.4B to annual CAPA on top of the existing KRW 84.1B, bringing total targeted CAPA above KRW 200B and expanding customer responsiveness by roughly 1.4x. Investment in memory controller test equipment continues alongside HBM demand expansion, and a Meritz Securities report from February 2026 identified eSSD controller testing as a key earnings recovery driver. If the Sony Semiconductor Solutions CIS back-end partnership is formalized, it would add a stable volume base that eases the DDI-heavy revenue concentration. The KRW 20B convertible bond (conversion price KRW 25,500, no refixing) subscribed by institutional investors including Focus Asset Management becomes callable from December 2026, introducing a cash management variable. If H2 2026 second-factory ramp stabilization coincides with growing volumes of higher-value-add tests, visibility for an annual operating profit turnaround should increase, though the pace of DDI volume recovery and the smartphone replacement cycle remain key near-term uncertainties."
+ },
+ "valuation_comment": {
+  "ko": "주가는 주당순자산(BPS 10,882원) 대비 소폭의 프리미엄 구간에서 거래되고 있다. 이익이 회복되지 않은 구간에서의 순자산 프리미엄은 시장이 향후 수익성 전환 가능성을 일부 선반영하는 구도로 해석할 수 있다. 주당순이익(EPS -825원) 기준으로 최근 손실 기조가 지속 중이어서 이익 배수(PER) 적용이 어렵고, 흑자 전환 시점과 폭이 재평가의 핵심 변수가 된다. 배당수익률은 무배당(DPS 0원)이어서 인컴 메리트는 없으며, 동종 비메모리 후공정 테스트 업체들도 수익성 회복 여부에 따라 멀티플이 크게 차별화되는 환경이다. CB 전환가(25,500원)와 공모가(35,000원) 모두 현 시장가를 크게 상회하고 있어 역사적 진입 가격과의 괴리가 뚜렷하며, 이 두 기준선이 단기 수급 심리에서 저항 수준으로 인식될 수 있다.",
+  "en": "The stock trades at a modest premium to book value per share (BPS: KRW 10,882). A premium above book in the absence of an earnings recovery can be read as the market partially pricing in a potential future profitability turnaround. With the most recent EPS at -KRW 825 reflecting an ongoing loss, a price-to-earnings multiple cannot be applied; the timing and magnitude of the profit inflection are the critical re-rating variables. There is no dividend (DPS: KRW 0), so income merit is absent, and peers in the non-memory back-end test space are experiencing widening multiple differentiation based on individual profitability recovery progress. Both the CB conversion price of KRW 25,500 and the IPO price of KRW 35,000 substantially exceed the current trading level, creating visible gaps between historical reference prices and the present market value that may act as near-term overhead resistance in market sentiment."
+ },
+ "bull": [
+  {
+   "title": {
+    "ko": "4분기 분기 흑자 달성, 수익성 전환 현실화 가능성 확인",
+    "en": "Quarterly Profitability Already Demonstrated, Turnaround Potential Validated"
+   },
+   "body": {
+    "ko": "2025년 4분기에 매출 약 151억원·영업이익 약 8억원을 기록하며 처음으로 분기 흑자를 달성했다. 메모리컨트롤러와 패키징 테스트 매출이 전년 동기 대비 50% 이상 증가하며 제품 믹스 개선이 수익성 회복을 이끌었다. 제2공장 가동과 함께 고부가 테스트 물량이 추가될 경우 높은 고정비 구조 하에서도 영업 레버리지 효과가 빠르게 나타날 수 있다.",
+    "en": "Q4 2025 delivered the first-ever quarterly operating profit of ~KRW 0.83B on revenue of ~KRW 15.1B. Memory controller and packaging test revenues rose 50%+ YoY, with the improved product mix driving the profitability recovery. As the second factory ramps up and adds higher-value-add test volumes, operating leverage could materialize rapidly even under the high fixed-cost structure."
+   }
+  },
+  {
+   "title": {
+    "ko": "메모리컨트롤러·eSSD 확장으로 DDI 의존도 구조적 감소",
+    "en": "Memory Controller & eSSD Expansion Structurally Reduces DDI Dependency"
+   },
+   "body": {
+    "ko": "HBM 수요 확대에 연동된 메모리컨트롤러 테스트 수요가 구조적으로 증가하고 있으며, eSSD 컨트롤러 테스트도 새로운 고부가 매출축으로 부각됐다. DDI(52.4%) 편중에서 벗어날수록 스마트폰 출하 사이클 노출이 줄고 분기 매출 안정성이 높아진다. 고사양 비메모리 제품의 테스트 단가는 DDI 대비 높아 믹스 개선이 수익성 레버리지에도 직접 기여한다.",
+    "en": "Memory controller test demand tied to HBM expansion is growing structurally, and eSSD controller testing has emerged as a new high-value revenue pillar. Reducing the DDI concentration (52.4%) lowers smartphone cycle exposure and improves quarterly revenue stability. Higher-ASP non-memory products also directly enhance profitability leverage compared to DDI."
+   }
+  },
+  {
+   "title": {
+    "ko": "소니 CIS 파트너십·림컷 기술로 신규 고객 기반 확장",
+    "en": "Sony CIS Partnership Prospect & Unique Rim-Cut Technology Expand Customer Base"
+   },
+   "body": {
+    "ko": "소니세미컨덕터솔루션즈의 한국 CIS 후공정 파트너로 선정될 경우, 삼성전자를 최종 수요처로 하는 안정적 장기 물량을 확보하게 된다. 국내 유일 상용화 림컷 기술(수율 약 90% 이상)과 SiC 다이싱 특허는 경쟁사와의 차별화를 뒷받침하며 신규 수주의 근거가 된다. 제2공장의 CIS·AP 전용 테스트 라인 구축은 고객 확보 즉시 매출로 전환할 수 있는 인프라를 사전 확보하는 의미다.",
+    "en": "If selected as Sony Semiconductor Solutions' Korean CIS back-end partner, ALT would secure a stable, long-term volume stream with Samsung Electronics as the ultimate end customer. The domestically unique commercialized Rim-Cut technology (yield exceeding ~90%) and SiC dicing patent provide defensible differentiation to support new order wins. The CIS and AP dedicated test lines under construction in the second factory represent pre-positioned infrastructure ready to convert customer wins into revenue immediately."
+   }
+  }
+ ],
+ "bear": [
+  {
+   "title": {
+    "ko": "높은 고정비 구조, 2026년 1분기 재차 영업손실 전환",
+    "en": "High Fixed-Cost Structure: Q1 2026 Back in the Red"
+   },
+   "body": {
+    "ko": "에이엘티는 설비집약적 사업 특성상 감가상각비 등 고정비 비중이 높아, 매출 감소 시 영업손실 확대 폭이 크다. 2026년 1분기 매출이 2025년 4분기 대비 약 14% 감소하자 곧바로 약 -9억원 영업손실로 전환된 것이 이를 방증한다. 증설 투자 완료 전까지 손익분기점 매출액이 높게 유지되는 구조적 취약성은 단기 이익 가시성을 낮춘다.",
+    "en": "ALT's asset-intensive model means depreciation and other fixed costs comprise a large share of total costs, translating revenue declines quickly into amplified operating losses. When Q1 2026 revenue declined ~14% from Q4 2025, the company immediately reverted to an operating loss of ~KRW -0.86B—illustrating this vulnerability. The structurally elevated break-even point, which persists until CAPEX is complete, suppresses near-term earnings visibility."
+   }
+  },
+  {
+   "title": {
+    "ko": "부채비율 119.7% 상승·CB 조기상환 청구 시점 도래",
+    "en": "Debt Ratio Rose to 119.7% and CB Early Redemption Window Approaching"
+   },
+   "body": {
+    "ko": "부채비율은 IPO 직후인 2023년 83.9%에서 투자 확대로 2025년 119.7%까지 상승해 재무 부담이 누적됐다. 2024년 발행한 200억원 CB는 2026년 12월부터 조기상환 청구가 가능하며, CB 전환가(25,500원)가 현 시장가를 크게 상회해 전환 유인이 없는 상황이다. 수익성 회복이 지연될 경우 차환 또는 현금 상환 부담이 재무 건전성을 추가로 압박할 수 있다.",
+    "en": "The debt ratio has climbed from 83.9% immediately after the IPO in 2023 to 119.7% in 2025, reflecting accumulated financial pressure from investment activity. The KRW 20B CB issued in 2024 becomes callable by holders from December 2026; the CB conversion price of KRW 25,500 substantially exceeds the current market price, making conversion unattractive and raising the prospect of cash redemption. Delayed profitability recovery could add incremental strain on financial health."
+   }
+  },
+  {
+   "title": {
+    "ko": "DDI 매출 스마트폰 사이클 종속 및 후공정 테스트 경쟁 심화",
+    "en": "DDI Revenue Tied to Smartphone Cycle; Back-End Test Competition Intensifying"
+   },
+   "body": {
+    "ko": "DDI는 웨이퍼 테스트 내 여전히 가장 큰 비중(52.4%)을 차지하며 스마트폰 출시 시즌에 따라 분기 매출이 크게 흔들린다. 하나마이크론·두산테스나(엔지온)·LB세미콘 등 동종 후공정 테스트 업체들도 비메모리 캐파를 공격적으로 확대 중이어서 물량 확보 경쟁이 심화되고 있다. 소니 CIS 파트너 선정도 복수 후보군(LB세미콘·두산테스나·ASE코리아 등)과의 경쟁 속에서 수주 결과가 불확실하다.",
+    "en": "DDI remains the largest wafer test segment (52.4%), causing quarterly revenue to swing significantly with smartphone launch cycles. Competitors including Hana Micron, Doosan Tesna (Ngizone), and LB Semicon are aggressively expanding non-memory CAPA, intensifying competition for customer volumes. The Sony CIS partner selection also remains uncertain given multiple competing candidates including LB Semicon, Doosan Tesna, and ASE Korea."
+   }
+  }
+ ],
+ "risks": [
+  {
+   "cat": {
+    "ko": "재무·유동성 리스크",
+    "en": "Financial & Liquidity Risk"
+   },
+   "body": {
+    "ko": "200억원 CB의 조기상환 청구 가능 시점(2026년 12월)이 도래함에 따라 흑자 전환이 지연될 경우 차환 또는 현금 상환 부담이 현실화될 수 있다. 설비 감가상각비 중심의 고정비 구조로 인해 손익분기점 매출액이 분기 150억원 내외로 높게 형성돼 있다. 부채비율이 120% 수준에서 추가 설비 투자가 병행될 경우 재무 건전성 지표가 더욱 악화될 수 있다.",
+    "en": "As the CB early redemption window opens in December 2026, delayed profitability could trigger cash redemption or refinancing pressure. The depreciation-heavy fixed-cost structure implies a high quarterly revenue break-even around KRW 15B. Additional CAPEX while the debt ratio remains near 120% could further deteriorate financial soundness indicators."
+   }
+  },
+  {
+   "cat": {
+    "ko": "업황·수요 사이클 리스크",
+    "en": "Industry Cycle & Demand Risk"
+   },
+   "body": {
+    "ko": "글로벌 스마트폰 출하 부진 또는 디스플레이 교체 사이클 지연은 DDI 테스트 수요를 단기 급감시킬 수 있다. AI 인프라 투자 사이클 둔화나 미·중 반도체 수출 규제 강화 시 메모리컨트롤러·HBM 연관 수요도 예상보다 늦게 확대될 수 있다. 미국 행정부의 반도체 관세 정책 변화는 고객사 생산 계획 조정과 단기 발주 감소를 유발할 수 있는 외생 변수로 작용한다.",
+    "en": "A slowdown in global smartphone shipments or a delay in the display refresh cycle could cause DDI test demand to fall sharply in the near term. Moderation in AI infrastructure investment cycles or tightened US-China semiconductor export restrictions could delay the expected ramp in memory controller and HBM-adjacent demand. Changes in US semiconductor tariff policy represent an exogenous variable that could prompt customer production plan revisions and near-term order reductions."
+   }
+  },
+  {
+   "cat": {
+    "ko": "고객 집중 및 파트너십 불확실성",
+    "en": "Customer Concentration & Partnership Uncertainty"
+   },
+   "body": {
+    "ko": "매출의 상당 부분이 삼성전자 및 연관 공급망에 집중돼 있어 특정 고객사의 발주 변동이 실적에 직결된다. 소니세미컨덕터솔루션즈 CIS 후공정 파트너십은 아직 확정되지 않아 제2공장 캐파 활용률에 잠재적 불확실성이 존재한다. 림컷 등 핵심 기술 인력의 유출이나 특허 분쟁 발생 시 고유 기술력 기반의 경쟁 우위가 훼손될 수 있다.",
+    "en": "A significant portion of revenues is concentrated in Samsung Electronics and its supply chain, making order fluctuations at key customers directly impactful on earnings. The Sony Semiconductor Solutions CIS back-end partnership has not been finalized, creating potential CAPA utilization uncertainty at the second factory. Loss of key technical personnel skilled in Rim-Cut and related technologies, or intellectual property disputes, could undermine ALT's technology-driven competitive advantage."
+   }
+  }
+ ],
+ "checkpoints": [
+  {
+   "when": {
+    "ko": "2026년 8월 중순",
+    "en": "Mid-August 2026"
+   },
+   "what": {
+    "ko": "2026년 2분기(4~6월) 잠정 실적 발표: 영업이익 흑자 복귀 여부와 매출 규모가 2025년 4분기 수준 재현 가능성을 가늠하는 가장 근접한 확인 지표다.",
+    "en": "Q2 2026 (April–June) preliminary results release: Whether ALT returns to operating profit and whether revenue is tracking toward Q4 2025 levels is the most proximate confirmation point."
+   }
+  },
+  {
+   "when": {
+    "ko": "2026년 하반기(7~12월)",
+    "en": "H2 2026"
+   },
+   "what": {
+    "ko": "청주 제2공장 가동 안정화 확인: 메모리컨트롤러·CIS·SoC 전용 라인의 실제 가동률과 캐파 2,000억원 이상 달성 시점이 연간 수익성 전환 속도를 결정한다.",
+    "en": "Confirmation of second-factory ramp stabilization in Cheongju: Actual utilization rates on memory controller, CIS, and SoC dedicated lines—and when total CAPA exceeds KRW 200B—will determine the pace of the annual profitability turnaround."
+   }
+  },
+  {
+   "when": {
+    "ko": "2026년 내 (공식 발표 시)",
+    "en": "2026 (upon official announcement)"
+   },
+   "what": {
+    "ko": "소니세미컨덕터솔루션즈 CIS 후공정 한국 파트너 선정 발표: 선정 여부와 예상 물량·기간 등 계약 조건은 중장기 매출 가시성과 제2공장 캐파 활용률에 직접적 영향을 준다.",
+    "en": "Official announcement of Sony Semiconductor Solutions' Korean CIS back-end partner selection: Whether ALT is chosen and the contract terms (estimated volume, duration) will directly affect medium-to-long-term revenue visibility and second-factory utilization."
+   }
+  },
+  {
+   "when": {
+    "ko": "2026년 12월~2027년 초",
+    "en": "December 2026 – Early 2027"
+   },
+   "what": {
+    "ko": "200억원 CB 조기상환 청구 가능 시점 도달: CB 보유자의 청구 여부와 회사 측 대응(현금 상환·차환·전환 유도)이 단기 유동성 지표와 재무 건전성에 영향을 준다.",
+    "en": "KRW 20B CB early redemption window opens: Whether bondholders exercise early redemption and how the company responds (cash repayment, refinancing, or conversion incentivization) will affect near-term liquidity and financial health indicators."
+   }
+  },
+  {
+   "when": {
+    "ko": "2027년 2~3월(FY2026 연간 실적 발표 예상)",
+    "en": "February–March 2027 (expected FY2026 annual results)"
+   },
+   "what": {
+    "ko": "2026년 연간 영업이익 흑자 전환 여부: 단일 분기 흑자(2025년 4분기)에서 연간 흑자로 연결되는지가 밸류에이션 재평가를 위한 최중요 확인 지표다.",
+    "en": "Whether FY2026 annual operating profit turns positive: The transition from a single-quarter profit (Q4 2025) to full-year profitability is the single most important indicator for a potential valuation re-rating."
+   }
+  }
+ ],
+ "verdict": {
+  "body": {
+   "ko": "에이엘티는 20년 이상의 비메모리 반도체 후공정 테스트 전문성을 바탕으로 DDI·CIS·PMIC·메모리컨트롤러 등 시스템반도체 테스트 역량을 축적한 코스닥 소형 기업이다. 2024년 업황 침체와 대규모 증설 부담으로 영업손실이 약 122억원까지 확대됐으나, 2025년에는 매출이 약 32% 반등하고 4분기 분기 흑자를 달성하며 회복 궤도에 진입했다. 메모리컨트롤러·eSSD·소니 CIS 등 고부가 테스트 물량 확장은 DDI 편중 구조를 분산하고 중장기 수익성 개선 경로를 열어준다는 점에서 긍정적 변화다. 반면 고정비 비중이 높아 손익분기점이 높고 2026년 1분기 재차 적자로 전환된 만큼 지속적 흑자 기조는 아직 증명되지 않았으며, 2026년 12월부터 시작되는 CB 조기상환 청구 가능 시점도 재무 불확실성으로 작용한다. 청주 제2공장 가동 안정화와 소니 CIS 파트너십 확정이 2026년 하반기의 핵심 모니터링 이벤트이며, 이 두 가지의 진행 상황이 연간 흑자 전환 가시성과 향후 밸류에이션 방향을 결정하는 핵심 변수가 될 것이다.",
+   "en": "ALT is a small-cap KOSDAQ company with over two decades of non-memory semiconductor back-end testing expertise spanning DDI, CIS, PMIC, and memory controller segments. After suffering operating losses of ~KRW 12.2B in 2024 amid industry weakness and heavy CAPEX, it entered a recovery trajectory in 2025 with ~32% revenue growth and a first quarterly operating profit in Q4 2025. The expansion toward higher-value-add tests—memory controller, eSSD controller, and Sony CIS—represents a positive structural shift that diversifies the DDI-heavy revenue mix and opens a path toward medium-term profitability improvement. However, the high fixed-cost structure keeps the break-even point elevated, and the Q1 2026 return to an operating loss means sustained profitability has yet to be demonstrated; the CB early redemption window opening in December 2026 adds a financial uncertainty layer. The two most critical H2 2026 monitoring events are the stabilization of the Cheongju second-factory ramp and the finalization of the Sony CIS partnership—together they will be the primary determinants of annual earnings turnaround visibility and the direction of any potential valuation re-rating."
+  }
+ },
+ "sources": [
+  "https://comp.fnguide.com/SVO2/ASP/SVD_Main.asp?gicode=A172670&MenuYn=Y",
+  "https://m.thinkpool.com/compDiscuss/cont/1015585",
+  "https://comp.fnguide.com/SVO2/asp/SVD_Invest.asp?pGB=1&gicode=A172670&cID=&MenuYn=Y&ReportGB=B&NewMenuID=105&stkGb=701",
+  "https://m.irgo.co.kr/IR-COMP/172670/",
+  "https://comp.fnguide.com/SVO2/ASP/SVD_Finance.asp?pGB=1&gicode=A172670&cID=&MenuYn=Y&ReportGB=&NewMenuID=103&stkGb=701",
+  "https://m.thinkpool.com/compDiscuss/cont/1016113",
+  "http://www.paxnet.co.kr/tbbs/list?tbbsType=L&id=172670",
+  "https://kr.acrofan.com/detail.php?number=422144",
+  "https://www.judal.co.kr/?view=stockAI&shareToken=PnuzPHXelNXms8KZ",
+  "https://www.alt-s.kr/customer/list.php?boardid=1",
+  "https://www.alt-s.kr/about/greeting.php",
+  "https://thevc.kr/alt",
+  "https://thevc.kr/alt-1",
+  "https://www.incruit.com/company/9981701/",
+  "https://www.alt-s.kr/cn_inc/file_down.php?pid=51",
+  "https://www.jobkorea.co.kr/recruit/co_read/c/altech2",
+  "https://ko.wikipedia.org/wiki/ALT_(%EA%B8%B0%EC%97%85)",
+  "https://www.jobkorea.co.kr/recruit/co_read/c/altsemicon"
+ ],
+ "v": 2,
+ "model": "claude-sonnet-4-6",
+ "ticker": "172670",
+ "name": "에이엘티",
+ "name_en": "ALT Co.,Ltd.",
+ "sector": "반도체",
+ "categories": [
+  "반도체"
+ ],
+ "market": "코스닥",
+ "reportDate": "2026-06-19",
+ "reportTs": "2026-06-19 02:18",
+ "dataDate": "20260618",
+ "quant": {
+  "asOf": "2026-06-18",
+  "fs_basis": "연결(CFS) · DART 공시 확정치 · 지배주주 기준 순이익",
+  "annual": [
+   {
+    "year": 2025,
+    "rev": 48358194953,
+    "op": -7394799659,
+    "np": -8866390769,
+    "np_owner": -8966328891,
+    "equity": 93469155823,
+    "equity_owner": 92752616134,
+    "liab": 111906317183,
+    "cfo": 12951697350,
+    "eps_basic": -1012,
+    "opm": -15.3,
+    "roe": -9.7,
+    "debt_ratio": 119.7
+   },
+   {
+    "year": 2024,
+    "rev": 36667038178,
+    "op": -12207682757,
+    "np": -9243440543,
+    "np_owner": -9281977433,
+    "equity": 102335546592,
+    "equity_owner": 101718945025,
+    "liab": 115323316556,
+    "cfo": 7157303634,
+    "eps_basic": -1043,
+    "opm": -33.3,
+    "roe": -9.1,
+    "debt_ratio": 112.7
+   },
+   {
+    "year": 2023,
+    "rev": 47687929129,
+    "op": 4895328861,
+    "np": 5022563707,
+    "np_owner": 5022563707,
+    "equity": 107680749347,
+    "equity_owner": 107102684670,
+    "liab": 90352233544,
+    "cfo": 15041575926,
+    "eps_basic": 635,
+    "opm": 10.3,
+    "roe": 4.7,
+    "debt_ratio": 83.9
+   },
+   {
+    "year": 2022,
+    "rev": 44318854365,
+    "op": 8025839545,
+    "np": 14260090631,
+    "np_owner": 14260090631,
+    "equity": 69353166571,
+    "equity_owner": 68603646680,
+    "liab": 114526768259,
+    "cfo": 15823291738,
+    "eps_basic": 1955,
+    "opm": 18.1,
+    "roe": 20.8,
+    "debt_ratio": 165.1
+   }
+  ],
+  "quarterly": [
+   {
+    "q": "2025Q1",
+    "rev": 10074081999,
+    "op": -3139323259,
+    "np_owner": -4030358258
+   },
+   {
+    "q": "2025Q2",
+    "rev": 11228778877,
+    "op": -2246322386,
+    "np_owner": -4513620173
+   },
+   {
+    "q": "2025Q3",
+    "rev": 11988918433,
+    "op": -2842666715,
+    "np_owner": -3787601115
+   },
+   {
+    "q": "2025Q4",
+    "rev": 15066415644,
+    "op": 833512701,
+    "np_owner": 3365250655
+   },
+   {
+    "q": "2026Q1",
+    "rev": 13804423176,
+    "op": -858189039,
+    "np_owner": -2225611266
+   }
+  ],
+  "valuation": {
+   "price": 12870,
+   "mcap": 0.1153,
+   "shares": 8960259,
+   "total_shares": 8960259,
+   "wavg_shares": 8304519,
+   "per": null,
+   "eps": -825,
+   "pbr": 1.18,
+   "bps": 10882,
+   "roe_ttm": -7.6,
+   "ttm_window": "2025Q2~2026Q1",
+   "ttm_np_owner": -7161581899,
+   "pbr_krx": 1.23,
+   "bps_krx": 10470.0,
+   "basis": "PER·EPS·PBR·BPS 모두 자체 산출(네이버·토스와 동일 방식) · 배당은 DART 공시 주당현금배당금(보완:KRX) ÷ 현재가",
+   "dps": 0.0,
+   "div": 0.0
+  }
+ }
+}

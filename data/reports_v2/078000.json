@@ -1,0 +1,356 @@
+{
+ "title": {
+  "ko": "5G SA 전환 수혜 기대, 지배구조 불확실성 상존",
+  "en": "5G SA Transition Upside Tempered by Governance Overhang"
+ },
+ "lead": {
+  "ko": "국내 5G 코어망 솔루션 1위 사업자로서 SKT·LGU+의 5G SA 전환 시 직접 수혜가 기대되나, 자진 상장폐지 재추진 여부와 극단적인 매출 계절성이 핵심 불확실성으로 작용하고 있다.",
+  "en": "As South Korea's leading telecom core-network software provider, Telcoware is positioned for direct upside from the impending SKT and LGU+ 5G SA migration, while a potential second voluntary-delisting bid and extreme revenue seasonality remain the defining uncertainties."
+ },
+ "keypoints": [
+  {
+   "ko": "5G SA 직접 수혜: SKT·LGU+의 코어망 SA 전환 시 HLR/UDM·IMS·NRF 등 핵심 솔루션 교체 수요가 텔코웨어로 직결되며, 이미 KT를 통해 SA 상용화 레퍼런스를 확보하고 있다.",
+   "en": "Direct 5G SA beneficiary: Nationwide SA migration by SKT and LGU+ requires full core-network software replacement, directly benefiting Telcoware's HLR/UDM, IMS, and NRF solutions—already proven through a live KT SA deployment."
+  },
+  {
+   "ko": "극단적 계절성: 2025년 연간 매출의 약 49%가 Q4에 집중되어 Q1~Q3 영업손실이 반복되며, 분기 단위 실적만으로 연간 흐름을 판단하기 어려운 구조다.",
+   "en": "Extreme seasonality: Approximately 49% of 2025 annual revenue fell in Q4, making quarterly figures an unreliable gauge of full-year performance as Q1–Q3 operating losses are a recurring pattern."
+  },
+  {
+   "ko": "자진 상폐 리스크 지속: 2025년 5월 주당 1만 3,000원의 공개매수가 소액주주 반발로 실패한 뒤, 2차 공개매수·교부금 주식교환 등 다양한 시나리오가 열린 상태다.",
+   "en": "Delisting overhang persists: After the failed KRW 13,000 tender offer in May 2025, the controlling shareholder is reassessing options including a second tender or a cash-consideration share swap, leaving the situation unresolved."
+  },
+  {
+   "ko": "순자산 할인 구간: BPS ₩22,075원 대비 현재 주가가 할인된 영역에 위치하며, 44.1%에 달하는 자사주는 주주가치의 잠재 레버인 동시에 지배구조 변수다.",
+   "en": "Trading below book value: The share price sits below reported BPS of KRW 22,075, and the 44.1% treasury-share position functions simultaneously as a potential shareholder-value lever and a governance wildcard."
+  },
+  {
+   "ko": "현금흐름 급개선: 2025년 영업현금흐름이 ₩169억원으로 전년(₩44억원) 대비 4배 가까이 증가하며, 실질 무차입·대규모 자기자본과 함께 재무 안전판을 강화했다.",
+   "en": "Sharp CFO improvement: Operating cash flow surged to KRW 16.9 billion in 2025, nearly four times the KRW 4.4 billion in 2024, reinforcing a debt-free balance sheet backed by substantial equity."
+  }
+ ],
+ "business": {
+  "ko": "텔코웨어는 2000년 설립된 국내 유무선 통신 코어망 솔루션 전문기업으로, 2004년 코스피에 상장해 26년의 업력을 보유하고 있다. 사업 구조는 ① 음성핵심망 솔루션(HLR/UDM, IMS 등 가입자 정보 관리 및 멀티미디어 서비스 플랫폼), ② 무선데이터 솔루션(5G 코어 NRF·NSSF·MEC·클라우드 플랫폼 등), ③ 요소기술(빅데이터·AI·영상관제 플랫폼 등)의 세 축으로 구성된다. 주요 고객은 SK텔레콤·KT·LG유플러스 등 국내 이통 3사로, 국가 기간 통신망의 두뇌에 해당하는 코어 네트워크 소프트웨어를 독자 원천기술 기반으로 공급하며 해당 분야 시장점유율 1위로 평가된다. 2019년부터는 5G SA 및 MEC 시장을 겨냥해 NRF·NSSF 등 차세대 코어망 필수 기능을 신규 공급하며 기술 포트폴리오를 확장했다. 가상화(VNF·CNF) 및 클라우드 네이티브 환경 관리 솔루션도 제공하며, 'Beyond Telecomm' 전략 하에 AI·빅데이터 기반 신사업도 추진 중이다. 경쟁사로는 에릭슨·노키아·화웨이 등 글로벌 통신장비사가 있으나, 국내 이통사의 현지화 요구와 유지보수 연속성, 독자 원천기술을 바탕으로 국내 시장에서 확고한 진입장벽을 구축하고 있다. 발행주식 총수(9,240,077주) 중 약 44.1%를 자기주식으로 보유하고 있으며, 대표이사(금한태)와 특별관계자의 합산 지분은 총발행주식 기준 41.09%(의결권 기준 약 73.5%)에 달한다. 총자산 ₩1,000억 이상·실질 무차입 경영을 유지하는 재무 구조는 안정적이나, 이통 3사 의존도와 통신사 CAPEX 사이클에 대한 노출이 핵심 사업 리스크로 지목된다.",
+  "en": "Telcoware was founded in 2000 as a specialized telecom core-network software company and listed on KOSPI in 2004, building a 26-year operating track record. Its business is organized around three pillars: (1) Voice Core Network Solutions covering HLR/UDM, IMS, and related subscriber-management and multimedia-service platforms; (2) Wireless Data Solutions encompassing 5G core NRF, NSSF, MEC, and cloud-platform solutions; and (3) Component Technologies including big data, AI, and video-surveillance platforms. The company's primary customers are South Korea's three major mobile operators—SK Telecom, KT, and LG U+—and Telcoware is recognized as the domestic market-share leader in core-network software, supplying the systems that function as the brain of the national telecom infrastructure using proprietary technology. Since 2019 it has expanded its portfolio into 5G SA and MEC markets by supplying next-generation core functions such as NRF and NSSF. Virtualization (VNF/CNF) and cloud-native management solutions are also available as part of a broader 'Beyond Telecomm' strategy that includes AI and big-data ventures. Competition from global vendors such as Ericsson, Nokia, and Huawei is real, but Telcoware maintains a strong domestic moat built on localization, maintenance continuity, and proprietary technology. Roughly 44.1% of total shares outstanding are held as treasury stock, while the CEO and related parties collectively own 41.09% of total shares—approximately 73.5% on a voting-rights basis. The company's total assets exceed KRW 100 billion and it operates on a debt-free basis, though revenue concentration in three domestic operators and exposure to telco capex cycles remain the principal business risks."
+ },
+ "earnings": {
+  "ko": "2025년 연결 매출은 ₩383억원으로 전년(₩449억원) 대비 14.5% 감소했으며, 이는 무선데이터 솔루션 부문에서 통신사의 투자 계획 변화와 프로젝트 일정 조정이 반영된 결과다. 반면 영업이익률은 8.6%로 2024년(7.5%)보다 개선됐고, 2022년(6.7%) 이후 4년 연속 우상향 추세를 이어갔다. 지배주주 귀속 순이익은 ₩62억원으로 전년(₩50억원) 대비 약 24% 증가했는데, ₩1,000억원대 자기자본에서 발생하는 비영업 금융수익이 매년 영업이익을 큰 폭 상회하는 구조적 특성을 반영한다. 영업현금흐름은 ₩169억원으로 전년(₩44억원) 대비 약 3.8배 급증했으며, 수금 구조 개선과 대규모 Q4 수주 확정이 복합 작용한 결과로 판단된다. 분기별 패턴을 보면 2025년 Q1~Q3의 분기 매출은 ₩61~71억원에 그쳤고 모두 영업손실을 기록한 반면, Q4에만 매출 ₩187억원·영업이익 ₩65억원이 집중됐다. 이 극단적 계절성은 4개년 연속 반복되는 구조적 현상이다. 2026년 Q1은 매출 ₩68억원으로 전년 동기(₩64억원) 대비 소폭 개선됐으나 영업손실 ₩14억원으로 계절적 적자 패턴이 이어졌다. 반면 2026년 Q1 지배주주 귀속 순이익은 ₩52억원에 달하는 이례적 수준을 기록했는데, 이는 투자이익 등 비영업 항목에서 상당한 규모의 일회성 요인이 있었음을 시사한다. 부채비율은 2024년 13.4%에서 2025년 26.5%로 상승했으나, 부채 절대 규모(₩298억원) 대비 자기자본(₩1,124억원)의 비중이 압도적이어서 재무 건전성은 양호한 수준을 유지하고 있다.",
+  "en": "Consolidated revenue for fiscal 2025 was KRW 38.4 billion, a 14.5% decline from KRW 44.9 billion in 2024, primarily attributable to changes in telecom operators' investment plans and project scheduling adjustments in the wireless data solutions segment. Despite the top-line contraction, the operating profit margin improved to 8.6% from 7.5% in 2024, extending a four-consecutive-year upward trend that began at 6.7% in 2022. Net income attributable to controlling shareholders rose roughly 24% year-on-year to KRW 6.2 billion, reflecting the company's structural tendency to earn substantial non-operating financial income from its large equity base—income that consistently exceeds operating profit. Operating cash flow surged to KRW 16.9 billion from KRW 4.4 billion in 2024—an approximately 3.8-fold increase—driven by improvements in collections and the concentration of large Q4 contracts. On a quarterly basis, Q1 through Q3 2025 each generated revenues of only KRW 6.1–7.1 billion and all posted operating losses, while Q4 alone delivered KRW 18.7 billion in revenue and KRW 6.5 billion in operating profit—a pattern that has now repeated for at least four consecutive years. In Q1 2026, revenue of KRW 6.8 billion was modestly above the prior-year quarter (KRW 6.4 billion), but an operating loss of KRW 1.4 billion continued the seasonal pattern. Notably, Q1 2026 net income attributable to controlling shareholders reached an unusual KRW 5.2 billion despite the operating loss, strongly implying a significant non-recurring or non-operating item in the period. The debt ratio rose from 13.4% in 2024 to 26.5% in 2025; however, with total liabilities of KRW 29.8 billion against equity of KRW 112.4 billion, the absolute financial health of the company remains sound."
+ },
+ "industry": {
+  "ko": "국내 이통 3사는 2026년 주파수 재할당과 연계해 5G SA(단독모드) 전환을 의무화할 예정으로, 이는 코어망 소프트웨어의 전면 교체를 수반하는 대규모 투자 이벤트다. 현재 KT만 5G SA 상용망을 구축한 상태이며, SKT와 LGU+는 여전히 4G LTE 코어 기반의 5G NSA 방식으로 운영 중이어서 이들의 SA 전환이 텔코웨어의 핵심 성장 트리거다. 5G SA는 네트워크 슬라이싱·초저지연 등 진정한 5G 기능을 구현하며, AI 기반 6G로 진화하기 위해 반드시 거쳐야 하는 기술적 전제 조건으로 GSMA 등 글로벌 기관이 강조하고 있다. 이통 3사의 보수적 CAPEX 집행 기조, SA 전환 비용 부담, 요금제 개편 지연 가능성 등은 실제 발주 시점을 늦출 수 있는 변수로 거론된다. 글로벌 통신장비 시장에서는 AI-RAN·오픈랜 아키텍처 확산과 중국산 통신 장비에 대한 서방 제재 강화가 맞물리며, 원천기술을 보유한 국내 통신 소프트웨어 기업의 해외 진출 기회가 점차 넓어지고 있다. 미래에셋증권(2026년 5월)이 통신장비 업종에 대해 '슈퍼 사이클 진입'을 언급하는 등, 5G SA~6G 전환 투자에 대한 시장의 기대가 고조되고 있는 국면이다.",
+  "en": "South Korea's three major mobile operators are mandated to transition to 5G SA (Standalone) networks in conjunction with the 2026 frequency reallocation, requiring a complete replacement of core-network software and representing a significant capex event. Currently only KT operates a commercial 5G SA network, while SK Telecom and LG U+ still run their 5G services over an LTE-based core (5G NSA)—making their transition to SA the primary growth catalyst for Telcoware. 5G SA enables true capabilities such as network slicing and ultra-low latency, and global bodies including GSMA emphasize it as the indispensable prerequisite for the transition to AI-native 6G networks. The domestic operators' conservative capex posture, rising transition costs, and potential delays in tariff restructuring are cited as variables that could push back actual order timing. On a global level, the accelerating adoption of AI-RAN and Open RAN architectures, combined with intensifying Western restrictions on Chinese telecom equipment, is gradually broadening the international expansion opportunity for domestic Korean telecom software specialists with proprietary technology. Industry sentiment is constructive: Mirae Asset Securities described the telecom equipment sector as entering a 'super cycle' in its May 2026 sector report, reflecting rising market conviction around the 5G SA-to-6G transition investment wave."
+ },
+ "outlook": {
+  "ko": "2026년은 SKT와 LGU+의 5G SA 전환 원년이 될 가능성이 높으며, 코어망 소프트웨어 수주가 텔코웨어 실적에 반영되는 시점이 핵심 관전 포인트다. 2025년 11월의 '5G SA 코어 솔루션 공급 확대' 보도와 2026년 2월의 '5G SA 전환 가속 수혜 기대' 시장 분위기를 감안하면, 2026년 하반기 대규모 수주 공시 가능성이 있다. 5G SA 전환과 클라우드 네이티브 코어망 이행이 연계되는 추세가 가속화되고 있어, 텔코웨어의 VNF·CNF 클라우드 솔루션 수요도 함께 증가할 여지가 있다. 지배구조 측면에서는 대표이사의 2차 공개매수 또는 교부금 주식교환 방식 추진 여부가 여전히 불확실하며, 회사는 원점 검토 입장을 유지하고 있다. 소액주주들은 44.1% 자사주의 전량 소각을 요구하고 있어, 자사주 처리 방향이 향후 주주가치의 핵심 변수로 작용할 것이다. 계절성 패턴이 반복된다면 2026년 역시 Q1~Q3 영업손실 이후 Q4에 이익이 집중되는 구조가 예상되며, 연간 수익성은 이통 3사의 SA 전환 발주 규모에 크게 의존할 전망이다.",
+  "en": "2026 is likely to mark the first year of substantive 5G SA deployment by SKT and LGU+, making the timing and scale of resulting core-network software orders the central variable in Telcoware's outlook. Reports of expanded 5G SA core solution supply in November 2025 and positive market sentiment around '5G SA transition beneficiaries' in February 2026 point to a potential for significant order disclosures in the second half of the year. The accelerating convergence of 5G SA transitions with cloud-native core upgrades also implies growing incremental demand for Telcoware's VNF and CNF cloud solutions. On the governance front, the company has stated it is conducting a full review of whether and how to proceed with voluntary delisting, leaving the situation open; any renewed initiative—whether a second tender offer or a cash-consideration share swap—would be a material event. Minority shareholders' persistent calls for full cancellation of the 44.1% treasury-share position mean that the ultimate disposition of these shares will be another key driver of shareholder value. Assuming the seasonal pattern holds, full-year 2026 results are likely to show operating losses in Q1–Q3 followed by a heavily back-loaded Q4, with annual profitability heavily dependent on the scale of actual 5G SA contract awards from the domestic carriers."
+ },
+ "valuation_comment": {
+  "ko": "현재 주가는 주당순자산(BPS ₩22,075원)을 하회하는 구간에 위치해 있어, 실질 무차입·재무 안정성이 높은 통신 소프트웨어 기업으로서는 순자산 대비 할인 상태가 이례적으로 지속되고 있다. 2022년부터 2025년까지 지배주주 귀속 순이익이 꾸준히 흑자를 유지해왔으며, 비영업 금융수익이 영업이익을 구조적으로 상회하는 특성 덕분에 영업 변동성 대비 순이익 레벨은 상대적으로 안정적이다. 주당현금배당금(DPS ₩640원)을 기준으로 산출되는 배당수익률은 국내 IT·소프트웨어 업종 평균을 상회하는 편이며, 대규모 자사주 보유로 실제 배당 총지급 규모는 상대적으로 제한적이다. 1차 공개매수 실패 이후 재추진 가능성이 남아 있고, 이 경우 공개매수 가격과 현재 주가의 관계가 밸류에이션에 일종의 하방 지지 요인으로 시장에서 인식되는 측면이 있다. 그러나 5G SA 수주의 실제 집행 시점과 지배구조 이벤트의 방향이 불확실한 현 상황에서, 순자산 할인이 구조적 저평가인지 또는 실적 불확실성과 지배구조 리스크를 적정 반영한 것인지는 향후 공시를 통해 확인해야 할 사항이다.",
+  "en": "The share price currently sits below the company's reported book value per share (BPS KRW 22,075), an unusual and persistent discount for a telecom software business with a debt-free balance sheet and strong financial stability. Net income attributable to controlling shareholders has remained consistently positive from 2022 through 2025, and the structural contribution of non-operating financial income—generated by the large equity base—provides a degree of earnings stability that exceeds what operating-profit figures alone might suggest. The annual cash dividend (DPS KRW 640) implies a yield that compares favorably to the domestic IT and software sector average; in absolute terms, total dividend outflow is limited by the substantial treasury-share position. The failed tender offer leaves an implicit pricing floor in the market's psychology, as any renewed delisting attempt would likely need to be priced at a premium to the current level. Whether the current book-value discount represents structural undervaluation or a reasonable reflection of earnings uncertainty and governance risk is an empirical question that will be resolved by upcoming order disclosures and corporate-action announcements."
+ },
+ "bull": [
+  {
+   "title": {
+    "ko": "5G SA 전환의 직접 수혜와 레퍼런스 우위",
+    "en": "Direct 5G SA transition beneficiary with proven reference"
+   },
+   "body": {
+    "ko": "2026년 주파수 재할당에 연계된 SKT·LGU+의 5G SA 전환은 코어망 소프트웨어의 전면 교체를 요구하며, 텔코웨어는 HLR/UDM·IMS·NRF·NSSF 등 필수 장비를 원천기술로 공급하는 사실상 유일한 국내 독립 소프트웨어 벤더다. 이미 KT를 통해 5G SA 상용화 레퍼런스를 확보한 점은 경쟁 입찰에서 결정적 우위 요인이 될 수 있다. 5G SA 사이클이 6G 기반 마련(2030년 목표)으로 이어지는 장기 투자 사이클임을 감안하면, 수주가 본격화될 경우 매출 외형이 크게 확대될 수 있다.",
+    "en": "The 5G SA transition mandated alongside the 2026 frequency reallocation requires a full replacement of core-network software, and Telcoware is effectively the only independent domestic software vendor capable of supplying the essential components—HLR/UDM, IMS, NRF, and NSSF—based on proprietary technology. Its existing commercial 5G SA reference through KT represents a decisive advantage in competitive bidding by SKT and LGU+. Since the 5G SA cycle is part of a long-term investment roadmap extending toward 6G (targeted for 2030), order conversion could lead to a meaningful and sustained expansion of annual revenue."
+   }
+  },
+  {
+   "title": {
+    "ko": "탄탄한 재무 기반과 배당 지속성",
+    "en": "Robust balance sheet and sustained dividend capacity"
+   },
+   "body": {
+    "ko": "자기자본 ₩1,124억원, 실질 무차입 기조, 2025년 영업현금흐름 ₩169억원이라는 탄탄한 재무 구조는 통신사 CAPEX 사이클의 부침에 대한 내성을 제공한다. DPS ₩640원 배당은 최소 4개년(2022~2025) 일관되게 유지됐으며, 이통 3사 대상 유지보수·서비스 매출이 기본 수익 기반을 지탱한다. 대규모 자사주(44.1%)는 소각 압력과 맞물려 주당 이익·배당 지표의 희석 없이 주주가치를 제고할 수 있는 잠재적 레버로 남아 있다.",
+    "en": "With equity of KRW 112.4 billion, an effectively debt-free balance sheet, and 2025 operating cash flow of KRW 16.9 billion, Telcoware has meaningful financial resilience against cyclical capex downturns. An annual DPS of KRW 640 has been maintained consistently for at least four consecutive years (2022–2025), supported by stable service and maintenance revenues from the domestic top-three operators. The large 44.1% treasury-share position represents a potential lever for enhancing per-share metrics without dilution, particularly if minority shareholder pressure for cancellation is eventually addressed."
+   }
+  },
+  {
+   "title": {
+    "ko": "원천기술 기반 진입장벽과 해외 시장 잠재력",
+    "en": "Proprietary-technology moat and untapped international potential"
+   },
+   "body": {
+    "ko": "글로벌 통신장비 시장의 탈중국화 흐름과 오픈랜·클라우드 네이티브 코어망 전환 추세는 자체 원천기술을 보유한 텔코웨어에 해외 수출 기회를 제공한다. 국내 이통사 레퍼런스를 기반으로 5G SA 전환을 추진하는 동남아·중동 등 신흥 시장에 진출한다면 매출 다각화가 가능하다. 국내 시장에서 확인된 강고한 진입장벽이 해외에서도 재현될 수 있는지가 장기 성장 경로를 좌우하는 핵심 검증 포인트다.",
+    "en": "The global shift away from Chinese telecom equipment, together with the trend toward Open RAN and cloud-native core networks, creates an international export opportunity for Telcoware's proprietary solutions. Leveraging domestic telco references to target emerging 5G SA markets in Southeast Asia or the Middle East could meaningfully diversify revenues. Whether the competitive moat proven in the domestic market can be replicated internationally will be the defining long-term growth validation point."
+   }
+  }
+ ],
+ "bear": [
+  {
+   "title": {
+    "ko": "극단적 매출 계절성과 이통사 CAPEX 종속",
+    "en": "Extreme revenue seasonality and telco capex dependency"
+   },
+   "body": {
+    "ko": "2025년 전체 매출의 약 49%가 Q4에 몰릴 정도로 계절성이 심해, 이통사의 투자 일정 변화 한 번이 연간 실적 전체를 뒤흔들 수 있다. 실제로 2025년 매출이 2024년 대비 14.5% 급감한 주된 이유도 통신사의 투자 계획 변화와 프로젝트 일정 조정이었다. 고객이 국내 이통 3사에 집중되어 있어, 이들의 5G 투자 속도가 실적 예측 가능성을 사실상 지배하는 구조다.",
+    "en": "With approximately 49% of 2025 revenues falling in Q4, a single shift in operator spending plans can destabilize full-year results. The 14.5% revenue decline in 2025 was driven precisely by such a shift—changes in telecom operator investment plans and project schedule adjustments. Revenue concentration in just three domestic customers means Telcoware's earnings predictability is essentially a function of their individual capex cycles, with very limited ability to offset a slowdown from any one operator."
+   }
+  },
+  {
+   "title": {
+    "ko": "자진 상장폐지 불확실성과 소액주주 갈등",
+    "en": "Voluntary-delisting uncertainty and minority shareholder conflict"
+   },
+   "body": {
+    "ko": "2025년 5월 주당 ₩13,000에 진행된 공개매수가 소액주주 반발로 실패하면서 지배주주와 소액주주 간의 갈등이 표면화됐다. 2차 공개매수, 교부금 주식교환(주주총회 특별결의 필요), 또는 상폐 포기 등 다양한 시나리오가 열려 있으며, 결정 전까지 불확실성이 주가에 지속적으로 반영될 수 있다. 소액주주 행동주의 강화 및 상법 개정 논의가 진행되는 환경에서, 어떤 방식이든 재추진 시 법적·평판 리스크를 수반할 가능성이 크다.",
+    "en": "The failure of the May 2025 tender offer at KRW 13,000 per share—rejected by minority shareholders demanding a higher price—brought a latent governance conflict to the surface. Multiple scenarios remain open: a second tender offer, a cash-consideration stock swap (requiring a two-thirds special shareholder resolution), or abandonment of the delisting plan; until a decision is made, the overhang will continue to weigh on the stock. In an environment of intensifying minority-shareholder activism and ongoing National Assembly debate on corporate-law reform, any renewed delisting initiative carries meaningful legal and reputational risk."
+   }
+  },
+  {
+   "title": {
+    "ko": "5G SA 투자 지연 및 클라우드 네이티브 전환 경쟁 심화",
+    "en": "5G SA investment delays and intensifying cloud-native competition"
+   },
+   "body": {
+    "ko": "국내 이통사의 SA 전환 CAPEX 부담, 요금제 개편 지연, 재무 유인 부족 등이 맞물릴 경우 실제 수주 시점은 예상보다 지연될 수 있다. 에릭슨·노키아 등 글로벌 벤더는 풀 클라우드 스택 패키지를 앞세워 국내 통신사에 적극 영업하고 있어, 소프트웨어 레이어에서의 경쟁이 심화되고 있다. 한 해 매출(₩383억원)이 자기자본(₩1,124억원)의 3분의 1 수준에 그치는 구조에서, 수주 지연이 이어지면 성장 모멘텀이 시장 기대에 지속적으로 미달할 위험이 있다.",
+    "en": "Rising capex burdens from the SA upgrade, delays in telco tariff restructuring, and insufficient financial incentives could push actual order intake well beyond current expectations. Global vendors such as Ericsson and Nokia are aggressively marketing full-stack cloud-native core packages to domestic operators, intensifying competition at the software layer. In a structure where annual revenues of KRW 38.4 billion represent roughly one-third of equity of KRW 112.4 billion, prolonged order delays could leave growth momentum consistently below market expectations."
+   }
+  }
+ ],
+ "risks": [
+  {
+   "cat": {
+    "ko": "고객 집중 및 통신사 CAPEX 사이클 민감성",
+    "en": "Customer concentration and telco capex-cycle sensitivity"
+   },
+   "body": {
+    "ko": "텔코웨어 매출은 국내 이통 3사의 투자 결정에 거의 전적으로 의존하며, 단 한 건의 대형 프로젝트 지연이 분기 전체를 적자로 전환시킬 만큼 집중도가 높다. 거시경제 불확실성, 통신사 수익성 악화, 정책 지원 부재 등이 겹치면 연간 목표 달성 자체가 어려워질 수 있다. 해외 수출이나 신사업 매출로의 다각화 속도가 이 리스크를 얼마나 빠르게 완화하느냐가 장기 안정성의 핵심이다.",
+    "en": "Telcoware's revenues are almost entirely dependent on the capex decisions of three domestic mobile operators, and a single large-project delay can swing a quarter from profit to loss. A combination of macroeconomic headwinds, deteriorating operator profitability, or absent policy support could make annual targets difficult to achieve. The pace at which international orders or new-business revenues are developed is the primary mitigant of this structural concentration risk."
+   }
+  },
+  {
+   "cat": {
+    "ko": "지배구조·상장폐지 관련 법률 및 평판 리스크",
+    "en": "Governance, delisting-related legal, and reputational risk"
+   },
+   "body": {
+    "ko": "1차 공개매수 실패 이후 지배주주가 추진할 수 있는 2차 방안(교부금 주식교환 포함)은 소액주주 행동주의·소송·의결권 분쟁 등 법적·평판 리스크를 수반한다. 자사주 소각 요구와 공개매수 가격의 적정성 논쟁이 지속될 경우 경영 집중도가 저하되고 기관 투자자의 기피가 이어질 수 있다. 소액주주 보호 강화를 위한 상법 개정 논의가 진행 중인 점도 지배주주가 선택 가능한 방식을 제약하는 규제 변수다.",
+    "en": "Any second attempt at voluntary delisting—whether through a new tender offer or a cash-consideration stock swap—carries legal and reputational risks in the form of minority-shareholder activism, litigation, and voting disputes. Ongoing public debate over treasury-share cancellation and bid-price adequacy can divert management attention and deter institutional investors. Continued legislative discussions aimed at strengthening minority-shareholder protections represent a regulatory constraint on the mechanisms available to the controlling shareholder."
+   }
+  },
+  {
+   "cat": {
+    "ko": "클라우드 네이티브·AI 코어망 기술 전환 대응 리스크",
+    "en": "Technology transition risk: cloud-native and AI-native core network adoption"
+   },
+   "body": {
+    "ko": "5G SA 전환과 동시에 코어망의 클라우드 네이티브·AI 네이티브 아키텍처로의 이행이 가속화되고 있어, 기존 독자 개발 솔루션의 업그레이드 경로가 경쟁력의 핵심으로 부상하고 있다. 에릭슨·노키아 등 글로벌 벤더가 풀 클라우드 스택을 패키지로 제공하면서 소프트웨어 레이어에서의 진입장벽이 낮아질 위험이 있다. 텔코웨어가 클라우드 네이티브·AI 코어망 패러다임으로 충분히 빠르게 이행하지 못할 경우, 일부 시장 점유율 잠식이 현실화될 수 있다.",
+    "en": "The 5G SA transition coincides with accelerating adoption of cloud-native and AI-native core-network architectures, making the upgrade path of legacy proprietary solutions increasingly critical to competitive positioning. Global vendors such as Ericsson and Nokia compete on full-stack cloud packages, potentially eroding the software-layer entry barriers that Telcoware has historically relied upon. If the company cannot transition its solutions to the cloud-native and AI-native paradigm at sufficient speed, some erosion of its domestic market-share position could materialize."
+   }
+  }
+ ],
+ "checkpoints": [
+  {
+   "when": {
+    "ko": "2026년 7~8월",
+    "en": "July–August 2026"
+   },
+   "what": {
+    "ko": "2026년 Q2 분기 실적 발표: 계절적 영업손실 폭의 축소 여부와 비영업 손익의 규모를 확인하고, 5G SA 수주 일정 관련 경영진 코멘트를 주목해야 한다.",
+    "en": "Q2 2026 earnings release: Assess whether the seasonal operating loss is narrowing and the scale of non-operating income items; management commentary on 5G SA order timing will be a critical forward signal."
+   }
+  },
+  {
+   "when": {
+    "ko": "2026년 하반기 (시점 미확정)",
+    "en": "H2 2026 (exact date uncertain)"
+   },
+   "what": {
+    "ko": "SKT·LGU+ 5G SA 코어망 수주 공시(DART): 이통사의 SA 전환 발주가 집행될 경우, 수주 공시를 통해 계약 규모와 매출 인식 시점을 확인해야 한다.",
+    "en": "DART disclosures of 5G SA core-network orders from SKT and/or LGU+: Order filings will clarify the scale and expected revenue recognition timeline, providing the clearest test of the 5G SA thesis."
+   }
+  },
+  {
+   "when": {
+    "ko": "2026년 내 (시점 미확정)",
+    "en": "2026, date undetermined"
+   },
+   "what": {
+    "ko": "지배주주의 2차 공개매수·교부금 주식교환 추진 발표: 대표이사의 상폐 추진 방식 재결정은 주가와 기업 구조 전반에 중대한 영향을 미치는 이벤트이므로 DART 공시를 통한 확인이 필수다.",
+    "en": "Announcement of a second tender offer or cash-consideration share-swap by the controlling shareholder: Any renewed delisting initiative will be a material event; monitor DART filings closely for any public disclosure of revised plans."
+   }
+  },
+  {
+   "when": {
+    "ko": "2026년 연내",
+    "en": "Within 2026"
+   },
+   "what": {
+    "ko": "주파수 재할당 연계 5G SA 의무화 진행 상황: 과기정통부의 재할당 처리 속도와 SA 전환 요건 최종 확정이 이통사 CAPEX 집행 시점을 결정하므로, 정책 발표를 지속 모니터링해야 한다.",
+    "en": "Progress on the 5G SA mandate linked to frequency reallocation: The pace of the Ministry of Science and ICT's reallocation process and the finalization of SA-transition requirements will directly determine the timing of operator capex execution."
+   }
+  },
+  {
+   "when": {
+    "ko": "2027년 초 (2026년 연간 실적 확정 시)",
+    "en": "Early 2027 (FY2026 annual results)"
+   },
+   "what": {
+    "ko": "2026년 연간 매출·영업이익·영업현금흐름 확인: 5G SA 수주 반영 여부와 Q4 집중 매출 규모를 통해 비즈니스 모멘텀이 본격 전환됐는지 여부를 판단해야 한다.",
+    "en": "FY2026 annual revenue, operating profit, and CFO: Confirm whether 5G SA orders have materialized in reported figures and assess whether the extreme Q4 revenue-concentration pattern is beginning to normalize, signaling a genuine inflection in business momentum."
+   }
+  }
+ ],
+ "verdict": {
+  "body": {
+   "ko": "텔코웨어는 국내 이통 코어망 소프트웨어 시장의 독보적 지위와 독자 원천기술을 바탕으로, 2026년 주파수 재할당에 연계된 SKT·LGU+의 5G SA 전환이라는 구조적 수요 증가 국면의 최전선에 서 있다. 2025년 연간 실적은 매출이 전년 대비 감소했음에도 영업이익률(8.6%)이 4년 연속 개선됐고, 순이익(₩62억원)과 영업현금흐름(₩169억원)이 모두 전년을 상회해 비용 효율성과 현금 창출력이 입증됐다. 대규모 자기자본(₩1,124억원)과 실질 무차입 구조는 CAPEX 사이클 하강기에도 재무 내구성을 제공하며, 주당 BPS(₩22,075원)를 하회하는 현 주가는 이 재무적 안전판을 수치로 확인해 준다. 다만 매출의 절반 가까이가 Q4에 집중되는 극단적 계절성과 이통 3사 의존 구조는 실적 예측 가능성을 낮추는 구조적 약점이다. 2025년 5월 공개매수 실패 이후 자진 상장폐지 재추진 여부가 미결로 남아 있어 지배구조 불확실성이 지속되고 있으며, 소액주주와의 갈등도 완전히 해소되지 않은 상태다. 결국 5G SA 수주의 실제 집행 시점과 규모, 그리고 지배구조 이벤트의 방향이라는 두 가지 핵심 불확실성의 해소 속도가, 재무 기초와 산업 모멘텀이 주가에 반영되는 속도를 결정하는 가장 중요한 변수가 될 것이다.",
+   "en": "Telcoware occupies an enviable position at the forefront of a structural demand shift—the 5G SA transition by SKT and LGU+ linked to the 2026 frequency reallocation—backed by proprietary core-network technology and an entrenched domestic market leadership. Despite a top-line decline in 2025, a four-year consecutive improvement in operating margins (reaching 8.6%), rising net income (KRW 6.2 billion), and a sharp increase in operating cash flow (KRW 16.9 billion) collectively demonstrate improving operational efficiency and cash generation. A substantial equity base (KRW 112.4 billion) and effectively zero net debt provide strong financial durability across capex cycles, while the share price below reported BPS of KRW 22,075 gives numerical expression to this financial cushion. These strengths are counterbalanced by structural weaknesses: extreme revenue seasonality—with nearly half of annual revenue concentrated in Q4—and near-total customer concentration in three domestic operators undermine earnings predictability. The governance overhang from the failed May 2025 tender offer remains unresolved, with the controlling shareholder still weighing its options and the conflict with minority shareholders unabated. Ultimately, the rate at which these twin uncertainties—the timing and scale of 5G SA order conversion, and the direction of the governance situation—are resolved will determine how quickly the company's sound fundamentals and favorable industry positioning translate into stock-price performance."
+  }
+ },
+ "sources": [
+  "https://comp.fnguide.com/SVO2/asp/SVD_Main.asp?gicode=A078000",
+  "https://www.k5.co.kr/stock/078000?site_type=d&page=3",
+  "https://m.thinkpool.com/item/078000",
+  "http://www.thinkpool.com/itemanal/i/index.jsp?code=078000",
+  "https://www.valueline.co.kr/finance/summary/078000",
+  "http://asp01.fnguide.com/SVO2/asp/SVD_Main.asp?pGB=&gicode=A078000&cID=&MenuYn=&ReportGB=&NewMenuID=101&stkGb=",
+  "https://www.saramin.co.kr/zf_user/company-info/view/csn/UTBnSmxjVmJ4NUhXeU9vamJCaXBQdz09/company_nm/%ED%85%94%EC%BD%94%EC%9B%A8%EC%96%B4(%EC%A3%BC)",
+  "https://www.investing.com/equities/telcoware",
+  "https://www.telcoware.com/",
+  "https://ko.wikipedia.org/wiki/%ED%85%94%EC%BD%94%EC%9B%A8%EC%96%B4",
+  "https://www.jobplanet.co.kr/companies/5838",
+  "https://www.pinpointnews.co.kr/news/articleView.html?idxno=429456",
+  "https://www.incruit.com/company/1774018/",
+  "https://alphasquare.co.kr/home/stock-summary?code=078000",
+  "https://www.etnews.com/20250224000304",
+  "https://www.bizinfo.go.kr/web/lay1/bbs/S1T122C128/AS/74/view.do?pblancId=PBLN_000000000113072",
+  "https://dealsite.co.kr/articles/143026",
+  "https://www.news1.kr/industry/sb-founded/5947442"
+ ],
+ "v": 2,
+ "model": "claude-sonnet-4-6",
+ "ticker": "078000",
+ "name": "텔코웨어",
+ "name_en": "TELCOWARE CO.,LTD.",
+ "sector": "IT·소프트웨어",
+ "categories": [
+  "IT·소프트웨어"
+ ],
+ "market": "코스피",
+ "reportDate": "2026-06-19",
+ "reportTs": "2026-06-19 02:18",
+ "dataDate": "20260618",
+ "quant": {
+  "asOf": "2026-06-18",
+  "fs_basis": "연결(CFS) · DART 공시 확정치 · 지배주주 기준 순이익",
+  "annual": [
+   {
+    "year": 2025,
+    "rev": 38351279931,
+    "op": 3285832222,
+    "np": 6169453158,
+    "np_owner": 6169453158,
+    "equity": 112356934345,
+    "equity_owner": 112356934345,
+    "liab": 29814380209,
+    "cfo": 16934383564,
+    "eps_basic": 1195,
+    "opm": 8.6,
+    "roe": 5.5,
+    "debt_ratio": 26.5
+   },
+   {
+    "year": 2024,
+    "rev": 44852925328,
+    "op": 3375021568,
+    "np": 4975514486,
+    "np_owner": 4975514486,
+    "equity": 109396406008,
+    "equity_owner": 109396406008,
+    "liab": 14609886894,
+    "cfo": 4444574715,
+    "eps_basic": 942,
+    "opm": 7.5,
+    "roe": 4.5,
+    "debt_ratio": 13.4
+   },
+   {
+    "year": 2023,
+    "rev": 40637609678,
+    "op": 3042871954,
+    "np": 5336791438,
+    "np_owner": 5336791438,
+    "equity": 112622664084,
+    "equity_owner": 112622664084,
+    "liab": 14189706820,
+    "cfo": 3127913646,
+    "eps_basic": 950,
+    "opm": 7.5,
+    "roe": 4.7,
+    "debt_ratio": 12.6
+   },
+   {
+    "year": 2022,
+    "rev": 42568934878,
+    "op": 2855339110,
+    "np": 3869096895,
+    "np_owner": 3869096895,
+    "equity": 111521033992,
+    "equity_owner": 111521033992,
+    "liab": 20552807021,
+    "cfo": 7330326658,
+    "eps_basic": 688,
+    "opm": 6.7,
+    "roe": 3.5,
+    "debt_ratio": 18.4
+   }
+  ],
+  "quarterly": [
+   {
+    "q": "2025Q1",
+    "rev": 6373230111,
+    "op": -1816402622,
+    "np_owner": -1108502646
+   },
+   {
+    "q": "2025Q2",
+    "rev": 6116345272,
+    "op": -1390395002,
+    "np_owner": -376583776
+   },
+   {
+    "q": "2025Q3",
+    "rev": 7136006441,
+    "op": -29978196,
+    "np_owner": 727176873
+   },
+   {
+    "q": "2025Q4",
+    "rev": 18725698107,
+    "op": 6522608042,
+    "np_owner": 6927362707
+   },
+   {
+    "q": "2026Q1",
+    "rev": 6823209103,
+    "op": -1350297002,
+    "np_owner": 5226476052
+   }
+  ],
+  "valuation": {
+   "price": 14040,
+   "mcap": 0.1297,
+   "shares": 9240077,
+   "total_shares": 9240077,
+   "wavg_shares": 5164502,
+   "per": null,
+   "eps": null,
+   "pbr": 0.64,
+   "bps": 22075,
+   "roe_ttm": 20.5,
+   "ttm_window": "2025Q2~2026Q1",
+   "ttm_np_owner": 22379466494,
+   "pbr_krx": 0.65,
+   "bps_krx": 21758.0,
+   "basis": "PER·EPS·PBR·BPS 모두 자체 산출(네이버·토스와 동일 방식) · 배당은 DART 공시 주당현금배당금(보완:KRX) ÷ 현재가",
+   "dps": 640.0,
+   "div": 4.56
+  }
+ }
+}
