@@ -1,0 +1,356 @@
+{
+ "title": {
+  "ko": "USIM 1위 기술력, CB 오버행과 1Q26 실적 급락이 변수",
+  "en": "USIM Market Leader Faces CB Overhang and Sharp Q1 2026 Revenue Collapse"
+ },
+ "lead": {
+  "ko": "엑스큐어는 국내 NFC-USIM 시장 점유율 1위의 스마트카드 임베디드 소프트웨어 기업으로, 2025년 연간 실적이 영업흑자로 회복됐음에도 불구하고 2026년 1분기 매출·손익이 급격히 악화되고 잇따른 전환사채 발행·유상증자에 따른 주주 희석 부담이 동시에 높아지고 있다.",
+  "en": "XCure is Korea's top-ranked NFC-USIM smart card embedded software supplier; despite recovering to operating profitability in FY2025, the company confronts a sharp Q1 2026 revenue and earnings deterioration alongside mounting shareholder dilution from successive CB issuances and rights offerings."
+ },
+ "keypoints": [
+  {
+   "ko": "SKT·KT 동시 공급 유일 업체로 국내 USIM 시장점유율 1위 — COS 원천기술 기반의 높은 진입장벽",
+   "en": "Sole domestic vendor supplying NFC-USIM to both SKT and KT, maintaining the No. 1 USIM market share backed by proprietary Card Operating System (COS) technology."
+  },
+  {
+   "ko": "FY2025 매출 185.4억 원(+72.5% YoY)·OPM 10.3% 흑자 회복 — 2·3분기에 실적 정점 형성",
+   "en": "FY2025 revenue of KRW 18.5 bn (+72.5% YoY) with an operating margin of 10.3%, driven by Q2 and Q3 performance peaks."
+  },
+  {
+   "ko": "2026년 1분기 매출 16.2억 원·영업손실 19.3억 원 — 분기 손실이 매출을 초과하는 비정상적 악화",
+   "en": "Q1 2026 revenue collapsed to KRW 1.6 bn with an operating loss of KRW 1.9 bn, an abnormal structure in which losses exceeded revenue."
+  },
+  {
+   "ko": "2026년 4월 PQC 적용 USIM·eSIM 개발 착수 및 정관에 양자컴퓨팅·피지컬 AI 신사업 추가",
+   "en": "Initiated PQC-enabled USIM/eSIM development in April 2026 and formally expanded corporate purpose to quantum computing cloud services and physical AI."
+  },
+  {
+   "ko": "4·5회차 CB 발행 및 유상증자로 발행 주식 수 급증 — 미전환 CB 잔액에서 추가 오버행 지속",
+   "en": "Share count has expanded significantly from 4th and 5th CB conversions plus a rights offering, with remaining unconverted CB balances sustaining further dilution risk."
+  }
+ ],
+ "business": {
+  "ko": "엑스큐어(070300)는 2000년 설립·2010년 코스닥 상장 스마트카드 임베디드 소프트웨어 개발·공급 기업이다. 일부 데이터 제공사가 '게임' 업종으로 분류하고 있으나 실제 핵심 사업은 통신·금융·보안 분야 솔루션이며, 이에 따라 시장지위·경쟁 분석도 해당 업종 기준으로 기술한다. 국내 이동통신사 중 SKT·KT 양사에 NFC-USIM 및 5G USIM을 공급하는 유일한 업체로 국내 USIM 벤더 가운데 시장점유율 1위를 유지하고 있으며, 누적 공급량은 6,000만 장을 넘는다. 카드운영체제(COS) 원천기술을 보유해 USIM 칩 설계·운영에서 경쟁사 대비 기술 차별성을 확보하고 있다. IoT 디바이스 시장 성장에 대응해 자체 IoT eSIM 기술과 통신보안 기반 원격관리시스템으로 사업 영역을 확장 중이다. 2025년에는 아하에셋자산운용을 연결 실체로 편입해 금융 서비스 부문이 연결 재무제표에 포함됐으며, 이는 연도별 매출 변동성의 주요 원인 중 하나다. 2026년 3월 정기주주총회에서는 양자컴퓨팅 클라우드 서비스 플랫폼 구축, 양자내성암호(PQC) 보안 솔루션 개발, 피지컬 AI 알고리즘 개발을 사업 목적으로 공식 추가했으며, 기존 비핵심 사업 목적(광고대행업·쿠폰판매업 등)은 삭제됐다. 경쟁사로는 유비벨록스 등이 있으나, 이통사 2사와의 공급 계약을 동시에 보유한 업체는 엑스큐어가 유일하다.",
+  "en": "XCure (070300) is a KOSDAQ-listed smart card embedded software developer and supplier, established in 2000 and listed in 2010. Although classified under the 'game' sector by some data providers, its actual core business spans communications, financial, and security solutions, and this analysis treats it accordingly. The company is the only domestic vendor simultaneously supplying NFC-USIM and 5G USIM chips to both major carriers SKT and KT, holding Korea's top USIM market share with cumulative shipments exceeding 60 million chips. Ownership of proprietary Card Operating System (COS) technology provides meaningful technical differentiation in chip design and operation. XCure is expanding into IoT eSIM solutions and communications-security-based remote management systems in response to growing IoT device demand. The 2025 incorporation of Ahha Asset Management as a consolidated subsidiary introduced a financial services element into the consolidated financials, which is a key driver of inter-year revenue volatility. At the March 2026 AGM, the company formally added quantum computing cloud services, PQC security solutions, and physical AI algorithm development to its corporate charter, while removing legacy non-core activities. Domestically, XCure competes with vendors such as Ubvelox, but remains unique in holding dual-carrier supply approvals from both SKT and KT."
+ },
+ "earnings": {
+  "ko": "확정 재무 기준으로 2022년 매출 102.8억 원·영업이익 3.2억 원(OPM 3.2%)으로 수익성을 유지했다. 2023년에는 연결 편입 법인 효과로 추정되는 매출 급증(347.6억 원)이 있었으나 영업손실 1.2억 원(OPM -0.3%)·당기순손실 27.9억 원을 기록했다. 2024년에는 연결 구조 변경 및 대규모 자산·금융손실이 반영되며 매출 107.5억 원, 영업손실 21.8억 원(OPM -20.3%), 지배주주 귀속 순손실 160.8억 원에 달했다. 2025년에는 매출 185.4억 원(+72.5%), 영업이익 19억 원(OPM 10.3%)으로 뚜렷한 회복세를 보였고 영업현금흐름도 -45.4억 원(2024)에서 +36.7억 원으로 개선됐다. 분기별로 2025년 2분기(매출 52.2억·영업이익 11.8억)와 3분기(매출 56.2억·영업이익 12.9억)가 실적 정점을 형성했다. 그러나 2025년 4분기에는 매출 48억 원, 영업손실 5억 원, 지배주주 순손실 38.4억 원으로 하강 전환했다. 2026년 1분기에는 매출 16.2억 원(전년 동기 29억 원의 절반 수준), 영업손실 19.3억 원, 지배주주 순손실 47.4억 원으로 추가 악화됐으며, 영업손실이 매출을 상회하는 비정상적인 비용 구조가 나타났다. 이 같은 급격한 변동이 일회성 비용에 기인하는지, 아니면 사업 구조 자체의 변화에서 비롯됐는지는 후속 분기 결과와 공시를 통해 확인이 필요하다.",
+  "en": "Based on the confirmed financial data, FY2022 revenue of KRW 10.3 bn with operating profit of KRW 0.3 bn (OPM 3.2%) reflected a stable profitability baseline. In FY2023, revenue surged to KRW 34.8 bn, likely reflecting the consolidation of newly incorporated entities, but operating losses of KRW 0.1 bn (OPM -0.3%) and a net loss of KRW 2.8 bn were recorded. FY2024 saw a dramatic revenue decline to KRW 10.7 bn alongside an operating loss of KRW 2.2 bn (OPM -20.3%) and a controlling-shareholder net loss of KRW 16.1 bn, attributable to structural consolidation changes and significant asset and financial losses. FY2025 recovered to KRW 18.5 bn in revenue (+72.5% YoY) and operating profit of KRW 1.9 bn (OPM 10.3%), with operating cash flow swinging from -KRW 4.5 bn in FY2024 to +KRW 3.7 bn. Within FY2025, Q2 (revenue KRW 5.2 bn, operating profit KRW 1.2 bn) and Q3 (revenue KRW 5.6 bn, operating profit KRW 1.3 bn) were the strongest quarters. Q4 2025 then reversed sharply with revenue of KRW 4.8 bn, an operating loss of KRW 0.5 bn, and a controlling-interest net loss of KRW 3.8 bn. Q1 2026 deteriorated further to revenue of KRW 1.6 bn (roughly half of Q1 2025's KRW 2.9 bn), an operating loss of KRW 1.9 bn, and a controlling-interest net loss of KRW 4.7 bn — a structurally abnormal quarter where operating losses exceeded revenue. Whether this reflects one-time charges or a more fundamental business-level change requires confirmation through subsequent quarters and disclosure."
+ },
+ "industry": {
+  "ko": "국내 USIM 시장은 5G 초기의 가입자 급증 국면을 지나 기기 교체 주기 및 IoT 수요에 의존하는 구조로 전환되고 있다. 2025년 SKT 해킹 사건 이후 가입자 USIM 교체 수요가 일시적으로 급증해 유심 공급사들에 단기 특수가 발생했다. eSIM은 스마트워치·커넥티드카 등 다양한 디바이스로 탑재 범위가 확대되며 물리 USIM 감소를 일부 상쇄할 중장기 성장 동인으로 부상하고 있다. 양자컴퓨터 위협에 대응하는 양자내성암호(PQC) 기술은 NIST 표준화가 완료되며 통신·금융 보안 하드웨어 전반의 교체 수요를 예고하고 있으며, USIM·eSIM은 단말 내 핵심 보안 영역으로 PQC 초기 상용화의 접점이 될 수 있다. 경쟁 측면에서 이통사 공급 계약은 인증·검증 비용이 높아 일단 선정된 벤더의 교체가 쉽지 않아 상대적으로 안정적인 수주 기반을 제공하나, 글로벌 USIM 시장에서는 중국·유럽계 업체와의 가격 경쟁이 심화되고 있다. 국내 대형 게임사들의 신작 출시 경쟁이 격화되는 '게임' 산업 동향은 엑스큐어의 실제 사업과 직접적 연관성이 없으며, 동사 업황은 통신·보안 산업 사이클을 따른다.",
+  "en": "The domestic USIM market has transitioned from the initial 5G subscriber surge to a replacement-cycle and IoT-driven demand structure. The 2025 SKT network breach triggered a surge in USIM replacement requests, providing a temporary demand uplift for suppliers. eSIM's expanding penetration across wearables, connected cars, and other devices is emerging as a medium-to-long-term offset to declining physical USIM volumes. Post-quantum cryptography (PQC), following the completion of NIST standardization, is expected to drive a broad replacement wave across telecommunications and financial security hardware; USIM and eSIM chips, as core security elements within devices, are positioned as early commercial PQC entry points. On the competitive landscape, the high certification and verification costs of carrier supply approvals provide relative stability once a vendor is selected, though intensifying price competition from Chinese and European players in the global USIM market poses a structural profitability challenge. Trends in Korea's game industry — including the surge in major new title launches in 2026 — have no direct relevance to XCure's actual business, whose cycles track the telecoms and security sectors."
+ },
+ "outlook": {
+  "ko": "가장 최근 공식화된 성장 방향은 양자내성암호(PQC) 적용 USIM·eSIM 개발로, 2026년 4월 나오리스 퀀텀 프로토콜과의 협력을 추진하고 글로벌 보안 연구기관과 공동 기술 검증(PoC)을 진행 중이다. 회사는 COS 원천기술과 IoT eSIM 역량을 PQC와 결합하면 통신·금융·IoT 보안 시장에서 새로운 성장축이 될 것으로 기대한다고 밝혔다. 2026년 3월 주주총회 정관 변경으로 양자컴퓨팅 클라우드 서비스와 피지컬 AI 알고리즘 개발도 사업 목적으로 추가됐으나, 이러한 신사업들은 현재 기술 검증 초기 단계에 있어 매출 기여 시점에 관한 공식 가이던스는 제시되지 않은 상태다. 자금 조달 측면에서는 2026년 4월 제3자배정 유상증자(약 60억 원) 및 제5회 CB(100억 원, 표면이자율 5%, 만기 2029년 5월)를 통해 운영자금을 추가 확보했다. 제4회 CB의 미전환 잔액 65억 원(전환가 1,195원)에 대한 추가 전환 가능성이 남아 있으며, 제5회 CB 조기상환청구권은 2027년 5월 이후 행사 가능하다. 5G B2B 사업 활성화와 IoT USIM 수요가 하반기 실적 회복의 핵심 변수이나, 구체적인 신규 수주 공시나 계약 공시는 현재 확인되지 않는다.",
+  "en": "The most recently formalized growth direction is PQC-enabled USIM and eSIM development, with a partnership being pursued with Naorys Quantum Protocol (announced April 2026) and joint proof-of-concept research underway with global security institutions. Management has stated that integrating PQC and distributed consensus verification with existing COS and IoT eSIM capabilities could establish a new growth axis across telecoms, financial, and IoT security markets. The March 2026 AGM also added quantum computing cloud services and physical AI algorithm development as corporate purposes, though all new initiatives remain at an early R&D stage with no official revenue guidance timelines disclosed. On the capital side, approximately KRW 6.0 bn from a third-party rights offering and KRW 10.0 bn from the 5th CB (5% coupon, maturing May 2029) were secured in April 2026 for operating expenses. The KRW 6.5 bn unconverted 4th CB balance (conversion price KRW 1,195) retains further conversion potential, while the 5th CB put option becomes exercisable from May 2027. A recovery in 5G B2B services and IoT USIM demand remains central to any 2H 2026 earnings rebound, but no specific new contract or order pipeline disclosures have been made."
+ },
+ "valuation_comment": {
+  "ko": "현재 주가는 주당순자산(BPS 1,160원) 수준과 근접해 거래되고 있어, 시장이 본업 수익성 회복에 의미 있는 프리미엄을 부여하지 않고 있음을 시사한다. 주당순이익(EPS -291원)이 순손실 상태를 반영함에 따라 이익 배수 기반 밸류에이션은 수익이 회복되기 전까지 의미 있는 기준을 제공하기 어렵다. 2026년 상반기에 집행된 CB 발행과 유상증자로 발행 주식 수가 빠르게 늘어났으며, 미전환 CB 잔액이 잠재적 오버행으로 작용해 상방 탄력을 제약하는 요인이 된다. 배당은 지급되지 않아 배당수익률은 0으로, 이익 회복 전까지 배당 기여는 기대하기 어렵다. 향후 수익성 안정화와 PQC·양자컴퓨팅 신사업의 가시화 속도가 순자산 가치 대비 프리미엄 형성 여부를 가르는 핵심 변수가 될 것이다.",
+  "en": "The current share price trades in close proximity to the reported net asset value per share (BPS: KRW 1,160), indicating the market is assigning minimal premium for future earnings recovery at this time. With EPS at -291 won reflecting ongoing net losses, an earnings-multiple framework provides limited analytical traction until profitability is meaningfully restored. The accelerated share count expansion from CB conversions and rights offerings in the first half of 2026, combined with remaining unconverted CB balances as a latent overhang, constrains near-term price upside. With no dividend being paid, income-oriented investor interest remains absent until earnings recover. The pace of operational stabilization and the credibility of PQC and quantum computing new business prospects will ultimately determine whether the stock can command a durable premium above net asset value."
+ },
+ "bull": [
+  {
+   "title": {
+    "ko": "양대 이통사 공급 독점적 지위와 높은 진입장벽",
+    "en": "Dual-Carrier Supply Position and High Entry Barriers"
+   },
+   "body": {
+    "ko": "SKT·KT 양사에 동시에 NFC-USIM을 공급하는 국내 유일 사업자로, 이통사 공급 계약 특성상 교체 비용이 높아 안정적인 기저 수요를 유지한다. 누적 6,000만 장 이상의 공급 이력과 COS 원천기술은 신규 진입자에 대한 실질적 장벽을 형성한다. 2025년 SKT 해킹 사건 이후 발생한 대규모 USIM 교체 수요는 시장 내 엑스큐어의 존재감을 확인시켜 주는 계기가 됐다.",
+    "en": "As the sole domestic vendor with simultaneous NFC-USIM supply approvals from both SKT and KT, XCure benefits from high switching costs that sustain a stable base demand. A cumulative supply track record of over 60 million USIM chips and proprietary COS technology constitute meaningful barriers to new entrants. The large-scale USIM replacement wave triggered by the 2025 SKT network breach confirmed XCure's entrenched market position."
+   }
+  },
+  {
+   "title": {
+    "ko": "PQC USIM 개발 — 기존 기술력과 신흥 시장의 교차점",
+    "en": "PQC USIM Development — Intersection of Core Expertise and Emerging Market"
+   },
+   "body": {
+    "ko": "양자내성암호(PQC)를 USIM·eSIM에 접목하는 사업은 COS 및 IoT eSIM 원천기술을 보유한 엑스큐어에 비교우위를 줄 수 있는 영역이다. 나오리스 퀀텀 프로토콜과의 협력 및 글로벌 연구기관과의 공동 기술 검증이 2026년 4월 개시됐으며, 상용화에 성공할 경우 통신·금융·IoT 보안 시장에서 신규 수익원이 형성될 수 있다. NIST PQC 표준 확정으로 글로벌 수요 형성 일정이 구체화되고 있는 점은 중장기적으로 긍정적인 시장 환경이다.",
+    "en": "Integrating PQC into USIM and eSIM chips plays directly into XCure's proprietary COS and IoT eSIM expertise, positioning it as a potential first-mover in a nascent but structurally driven security market. The April 2026 initiation of collaboration with Naorys Quantum Protocol and joint PoC work with global research institutions marks the start of a concrete commercialization effort. The completion of NIST PQC standardization provides growing global demand visibility over the medium to long term."
+   }
+  },
+  {
+   "title": {
+    "ko": "5G IoT·eSIM 수요 확대에 따른 중장기 구조적 성장 기반",
+    "en": "Structural Medium-Term Growth from 5G IoT and eSIM Demand Expansion"
+   },
+   "body": {
+    "ko": "5G 기반 B2B 서비스(스마트팩토리·자율주행·원격관리 등)의 확산은 IoT 디바이스 대상 USIM·eSIM 공급 수요를 중장기적으로 견인할 구조적 성장 동인이다. 엑스큐어는 자체 IoT eSIM 기술과 통신보안 기반 원격관리 시스템을 보유하고 있어 이 성장에 직접 참여할 수 있는 포지션을 갖추고 있다. 커넥티드 디바이스 보급 확대와 함께 eSIM 시장의 장기 성장 경로는 유효하다.",
+    "en": "The proliferation of 5G B2B services — including smart factories, autonomous vehicles, and remote management — represents a structural medium-to-long-term driver of IoT USIM and eSIM demand, an area where XCure's proprietary IoT eSIM technology provides a direct participation pathway. The company's communications-security-based remote management platform further extends its addressable market in this segment. The long-term growth trajectory of the eSIM market alongside rising connected device penetration remains intact."
+   }
+  }
+ ],
+ "bear": [
+  {
+   "title": {
+    "ko": "2026년 1분기 실적 급락과 비정상적 비용 구조",
+    "en": "Sharp Q1 2026 Earnings Collapse and Abnormal Cost Structure"
+   },
+   "body": {
+    "ko": "2026년 1분기 매출은 16.2억 원으로 전년 동기(29억 원) 대비 44% 급감했고, 영업손실 19.3억 원은 매출 자체를 초과하는 구조적으로 비정상적인 결과다. 이러한 급변이 연결 실체 변동, 일회성 비용, 혹은 핵심 고객 발주 감소 중 어느 원인에 기인하는지 현재 명확히 공시되지 않아 불확실성이 크다. 이 추세가 2분기 이상 이어진다면 2025년 한 해 동안 회복했던 영업 흑자 기반이 빠르게 잠식될 수 있다.",
+    "en": "Q1 2026 revenue fell 44% YoY to KRW 1.6 bn, with the operating loss of KRW 1.9 bn exceeding revenue — a structurally anomalous outcome. The root cause, whether from changes in consolidated entities, one-off charges, or a decline in core customer orders, has not been clearly disclosed, leaving significant uncertainty. If this trajectory persists into Q2 2026 and beyond, the operating profitability rebuilt throughout FY2025 could quickly be eroded."
+   }
+  },
+  {
+   "title": {
+    "ko": "잇따른 CB 발행과 유상증자로 인한 지속적 주주 희석",
+    "en": "Persistent Shareholder Dilution from Sequential CB Issuances and Rights Offerings"
+   },
+   "body": {
+    "ko": "2026년 상반기에만 제5회 CB(100억 원, 전환가 2,450원) 발행과 제3자배정 유상증자(약 60억 원)가 집행됐고, 제4회 CB 미전환 잔액 65억 원(전환가 1,195원)도 남아 있다. 더벨 보도에 따르면 CB 투자자들이 유상증자 납입 후 전환가 하향 조정을 계기로 차익 실현에 나서면서 전환 속도가 빨라졌다. 발행 주식 수 확대에 따른 주당가치 희석 압력이 구조적으로 지속되고 있다.",
+    "en": "In the first half of 2026 alone, the company issued a 5th CB of KRW 10.0 bn (conversion price KRW 2,450) and executed a third-party rights offering of approximately KRW 6.0 bn, while KRW 6.5 bn of the 4th CB remains unconverted (conversion price KRW 1,195). According to The Bell's reporting, CB investors accelerated conversion activity following the rights offering-driven downward adjustment to conversion prices. Ongoing share count expansion creates structural per-share dilution pressure."
+   }
+  },
+  {
+   "title": {
+    "ko": "자금 운용 투명성 논란과 지배구조 불확실성",
+    "en": "Fund Use Transparency Concerns and Governance Uncertainty"
+   },
+   "body": {
+    "ko": "2025년 11월 아시아경제 보도에서 엑스큐어가 유상증자·CB로 조달한 자금을 공시된 사용 목적과 달리 고위험 대부업에 활용한 것으로 지적됐으며, 이는 거버넌스 측면의 신뢰를 훼손하는 요인이다. 2024년 지배주주 귀속 순손실 160.8억 원은 이러한 외부 금융 거래와 관련된 손실을 반영했을 가능성이 있다. 2026년 3월 주주총회에서 주식병합 안건이 부결되며 주주와 경영진 사이의 갈등이 일부 표면화됐고, 이는 향후 주요 의사결정 과정에서 불확실성 요인으로 남는다.",
+    "en": "November 2025 reporting by Asia Economy alleged that XCure deployed shareholder-raised funds into high-risk lending activities contrary to stated use-of-proceeds disclosures, raising material governance concerns. The KRW 16.1 bn controlling-interest net loss in FY2024 may partially reflect losses associated with such off-business financial activities. The rejection of a stock consolidation proposal at the March 2026 AGM also surfaced shareholder-management tension, adding uncertainty to future key corporate decisions."
+   }
+  }
+ ],
+ "risks": [
+  {
+   "cat": {
+    "ko": "고객 집중 및 이통사 정책 변화 리스크",
+    "en": "Customer Concentration and Carrier Policy Change Risk"
+   },
+   "body": {
+    "ko": "매출이 SKT·KT 두 이통사에 집중되어 있어, 어느 한 통신사의 공급사 교체나 계약 조건 변경이 실적에 큰 충격을 줄 수 있다. 이통사가 eSIM 전환을 가속화할 경우 물리적 USIM 수요가 구조적으로 감소할 수 있으며, 자체 USIM 개발 또는 외산 채택이 진행될 경우 현재의 시장지위가 약화될 수 있다. 이통사 발주 규모와 계약 갱신 주기는 외부에서 확인이 어려운 불투명 영역이다.",
+    "en": "Revenue concentration in two carriers — SKT and KT — means that any contract renegotiation or supplier substitution at either carrier could cause a material earnings impact. An accelerated carrier shift to eSIM could structurally compress physical USIM demand, while in-house USIM development or foreign vendor adoption by carriers could erode XCure's current market position. Carrier order volumes and contract renewal cycles are difficult for external investors to observe."
+   }
+  },
+  {
+   "cat": {
+    "ko": "유동성 및 CB 상환 리스크",
+    "en": "Liquidity and CB Redemption Risk"
+   },
+   "body": {
+    "ko": "2026년 1분기의 대규모 영업·순손실은 현금 소진을 가속화할 수 있으며, 운영자금 확보를 위한 CB 발행과 유상증자가 반복되는 패턴은 자체 창출 현금흐름에 대한 의문을 제기한다. 제5회 CB 조기상환청구권이 2027년 5월부터 행사 가능하고, 이 시점에 현금흐름이 충분히 회복되지 않을 경우 유동성 압박이 발생할 수 있다. 2025년 부채비율이 59.8%로 전년(15.9%) 대비 크게 상승한 점도 레버리지 증가를 반영한다.",
+    "en": "The substantial operating and net losses in Q1 2026 risk accelerating cash consumption, while the recurring pattern of CB issuances and rights offerings to fund operations raises questions about underlying free cash flow generation. The 5th CB put option becomes exercisable from May 2027, and if cash flow has not sufficiently recovered by then, early redemption demands could create liquidity pressure. The debt ratio rising sharply to 59.8% in FY2025 from 15.9% in FY2024 reflects meaningfully higher leverage."
+   }
+  },
+  {
+   "cat": {
+    "ko": "신사업 실행 불확실성 및 R&D 비용 부담",
+    "en": "New Business Execution Uncertainty and R&D Cost Burden"
+   },
+   "body": {
+    "ko": "PQC USIM·eSIM 및 양자컴퓨팅 클라우드 서비스는 글로벌 표준화가 진행 중인 초기 시장으로 상용화 일정과 경쟁 구도가 불확실하다. 핵심 기술을 외부 파트너(나오리스 퀀텀 프로토콜 등)와의 협력에 의존하는 구조에서는 기술 검증 실패나 파트너십 해소 시 일정이 지연될 수 있다. 신사업 투자 비용이 현재의 취약한 영업현금흐름을 추가로 잠식할 경우 재무 건전성이 더욱 악화될 우려가 있다.",
+    "en": "PQC USIM/eSIM and quantum computing cloud services are nascent markets where global standardization is still ongoing, making commercialization timelines and competitive dynamics highly uncertain. Dependence on external partnerships (e.g., Naorys Quantum Protocol) for core technology development means delays are possible if proof-of-concept efforts fail or partnerships dissolve. New business investment costs risk further eroding the company's currently fragile operating cash flow, potentially aggravating its financial condition."
+   }
+  }
+ ],
+ "checkpoints": [
+  {
+   "when": {
+    "ko": "2026년 8월 중순 (2026년 2분기 실적 공시 예정)",
+    "en": "Mid-August 2026 (Q2 2026 Earnings Release)"
+   },
+   "what": {
+    "ko": "2026년 1분기의 급격한 실적 악화(매출 16.2억, 영업손실 19.3억)가 일시적 요인에 의한 것인지, 구조적 하락인지를 판단하는 핵심 데이터 포인트. 매출 회복 여부와 영업손실 규모 축소 여부를 주목한다.",
+    "en": "Key data point to assess whether Q1 2026's sharp deterioration (revenue KRW 1.6 bn, operating loss KRW 1.9 bn) was temporary or structural; monitor for revenue recovery and a meaningful narrowing of operating losses."
+   }
+  },
+  {
+   "when": {
+    "ko": "2026년 하반기 중 (PQC USIM·eSIM 기술 검증 결과 공시)",
+    "en": "2H 2026 (PQC USIM/eSIM PoC Result Disclosures)"
+   },
+   "what": {
+    "ko": "나오리스 퀀텀 프로토콜 및 연구기관과의 공동 기술 검증(PoC) 결과와 상용화 로드맵 공개 여부를 확인한다. 구체적인 일정과 파트너십 범위가 제시될 경우 신사업 프리미엄 형성의 기준이 될 수 있다.",
+    "en": "Watch for disclosures on the joint PoC outcomes with Naorys Quantum Protocol and partner research institutions; a concrete commercialization roadmap, if presented, would serve as a basis for attributing new-business value."
+   }
+  },
+  {
+   "when": {
+    "ko": "2026년 하반기 (제4회 CB 잔액 전환 동향 모니터링)",
+    "en": "Ongoing 2H 2026 (4th CB Remaining Balance Conversion Activity)"
+   },
+   "what": {
+    "ko": "제4회 CB 미전환 잔액 65억 원(전환가 1,195원)에 대한 추가 전환청구 공시를 추적한다. 전환 속도가 빨라질수록 발행 주식 수 증가에 따른 주당가치 희석 압력이 커지므로 총발행 주식 수 변화를 지속 점검해야 한다.",
+    "en": "Monitor DART for further conversion disclosures on the KRW 6.5 bn unconverted 4th CB balance (conversion price KRW 1,195); an acceleration in conversions would intensify per-share dilution, requiring ongoing tracking of total share count."
+   }
+  },
+  {
+   "when": {
+    "ko": "2027년 5월 이후 (제5회 CB 조기상환청구권 행사 가능 개시)",
+    "en": "From May 2027 Onward (5th CB Put Option Exercise Window Opens)"
+   },
+   "what": {
+    "ko": "제5회 CB(100억 원, 표면이자율 5%) 조기상환청구권 행사 가능 기간이 2027년 5월 13일부터 개시된다. 이 시점의 주가 수준 및 현금흐름 회복 여부가 유동성 위험을 판단하는 주요 지표가 된다.",
+    "en": "The 5th CB (KRW 10.0 bn, 5% coupon) put option becomes exercisable from May 2027; the company's share price and cash flow recovery by that date will be key determinants of potential liquidity stress."
+   }
+  },
+  {
+   "when": {
+    "ko": "2026년 하반기 지속 (이통사 5G·IoT USIM 발주 동향)",
+    "en": "Ongoing 2H 2026 (Carrier 5G and IoT USIM Order Trends)"
+   },
+   "what": {
+    "ko": "SKT·KT의 5G USIM 및 IoT eSIM 신규 발주 규모 변화가 실적 회복의 선행 지표다. 신규 계약 공시나 IR 자료를 통해 이통사 발주 트렌드가 개선되고 있는지 여부를 확인한다.",
+    "en": "Changes in SKT and KT's 5G USIM and IoT eSIM ordering volumes serve as leading indicators for any earnings recovery; new contract disclosures or IR materials providing carrier ordering trend visibility should be closely monitored."
+   }
+  }
+ ],
+ "verdict": {
+  "body": {
+   "ko": "엑스큐어는 국내 NFC-USIM 시장에서 독보적인 점유율 1위를 유지하고 COS 원천기술이라는 진입장벽을 보유한 소형 기술 기업으로, 2025년 연간 기준으로는 영업 흑자 전환에 성공하며 기초체력을 회복했다. 그러나 2026년 1분기 실적이 매출 16.2억 원·영업손실 19.3억 원으로 급격히 악화된 점은 사업 지속성에 대한 검증이 시급한 사안이며, 2분기 결과를 통해 이 흐름의 성격을 확인해야 한다. 양자내성암호(PQC) USIM과 양자컴퓨팅 클라우드 등 신사업 방향은 기술적 논리가 있으나 현재 기술 검증 초기 단계로, 실적 기여까지는 상당한 시간이 필요하다. 잇따른 CB 발행과 유상증자에 따른 주식 수 급증은 기존 주주의 주당가치를 희석하고 있으며, 과거 자금 운용 투명성 논란은 지배구조 측면의 추가 관찰이 요구된다. 현재 주가가 주당순자산(BPS 1,160원) 수준 근방에서 형성되어 있다는 점은 수익성 회복 시 재평가 여지가 있음을 의미하지만, CB 오버행과 실적 불확실성이 동시에 상존하는 구간임을 유념해야 한다.",
+   "en": "XCure is a small-cap technology company with an unrivaled No. 1 position in Korea's NFC-USIM market and proprietary COS technology barriers to entry; the FY2025 recovery to operating profitability confirmed a degree of underlying resilience. However, the sharp Q1 2026 deterioration — with revenue of KRW 1.6 bn against an operating loss of KRW 1.9 bn — raises urgent questions about business continuity that only Q2 2026 results can begin to answer. The pivot toward PQC-USIM and quantum computing cloud services is technologically coherent but currently in an early R&D stage, with considerable time likely required before new-business revenue materializes. The rapid share count expansion from successive CB issuances and rights offerings creates structural per-share dilution for existing shareholders, while prior fund-use transparency concerns warrant continued governance scrutiny. The share price hovering near reported net asset value per share (BPS: KRW 1,160) implies re-rating potential if profitability is meaningfully restored, but this potential coexists with material CB overhang and substantial near-term earnings uncertainty."
+  }
+ },
+ "sources": [
+  "https://comp.fnguide.com/SVO2/ASP/SVD_Main.asp?gicode=A070300",
+  "https://comp.fnguide.com/SVO2/asp/SVD_Invest.asp?pGB=1&cID=&MenuYn=Y&ReportGB=D&NewMenuID=105&stkGb=701&gicode=A070300",
+  "https://www.digitaltoday.co.kr/news/articleView.html?idxno=663593",
+  "https://www.investing.com/equities/solacia-inc",
+  "https://markets.hankyung.com/stock/070300/financial-summary",
+  "https://alphasquare.co.kr/home/stock-summary?code=070300",
+  "https://news.nate.com/view/20260326n37342",
+  "https://goinsider.kr/stock/00683007",
+  "https://www.ekoreanews.co.kr/news/articleView.html?idxno=83683",
+  "https://www.gamevu.co.kr/news/articleView.html?idxno=54754",
+  "https://www.dailyesports.com/view.php?ud=20260521180403913321ad998911_26",
+  "https://www.xlgames.com/",
+  "https://svrforum.com/game/2943150",
+  "https://m.cafe.daum.net/dotax/Elgq/4639646?svc=topRank",
+  "https://www.gametoc.co.kr/news/articleView.html?idxno=105343",
+  "https://www.gamevu.co.kr/news/articleView.html?idxno=54977",
+  "https://comp.fnguide.com/SVO2/ASP/SVD_Main.asp?pGB=1&gicode=A070300&NewMenuID=11&cID=AA&MenuYn=Y",
+  "https://edaily.co.kr/News/Read?mediaCodeNo=257&newsId=02676486645418416"
+ ],
+ "v": 2,
+ "model": "claude-sonnet-4-6",
+ "ticker": "070300",
+ "name": "엑스큐어",
+ "name_en": "Xcure Corp.",
+ "sector": "게임",
+ "categories": [
+  "게임"
+ ],
+ "market": "코스닥",
+ "reportDate": "2026-06-19",
+ "reportTs": "2026-06-19 05:52",
+ "dataDate": "20260618",
+ "quant": {
+  "asOf": "2026-06-18",
+  "fs_basis": "연결(CFS) · DART 공시 확정치 · 지배주주 기준 순이익",
+  "annual": [
+   {
+    "year": 2025,
+    "rev": 18537408816,
+    "op": 1902204247,
+    "np": -498302509,
+    "np_owner": 233414501,
+    "equity": 32085393396,
+    "equity_owner": 31800976768,
+    "liab": 19202051596,
+    "cfo": 3673369364,
+    "eps_basic": 16,
+    "opm": 10.3,
+    "roe": 0.7,
+    "debt_ratio": 59.8
+   },
+   {
+    "year": 2024,
+    "rev": 10747200049,
+    "op": -2176868091,
+    "np": -16289593205,
+    "np_owner": -16081299850,
+    "equity": 20922099577,
+    "equity_owner": 20922099577,
+    "liab": 3334635904,
+    "cfo": -4541029544,
+    "eps_basic": -2037,
+    "opm": -20.3,
+    "roe": -76.9,
+    "debt_ratio": 15.9
+   },
+   {
+    "year": 2023,
+    "rev": 34762870874,
+    "op": -118173951,
+    "np": -2787452493,
+    "np_owner": -2673541407,
+    "equity": 24930288834,
+    "equity_owner": 21520701619,
+    "liab": 24018143271,
+    "cfo": 1941931594,
+    "eps_basic": -363,
+    "opm": -0.3,
+    "roe": -12.4,
+    "debt_ratio": 96.3
+   },
+   {
+    "year": 2022,
+    "rev": 10275641565,
+    "op": 324729576,
+    "np": 890575255,
+    "np_owner": 890575255,
+    "equity": 24533006308,
+    "equity_owner": 24533006308,
+    "liab": 1487098049,
+    "cfo": 867708491,
+    "eps_basic": 121,
+    "opm": 3.2,
+    "roe": 3.6,
+    "debt_ratio": 6.1
+   }
+  ],
+  "quarterly": [
+   {
+    "q": "2025Q1",
+    "rev": 2903115676,
+    "op": -69889192,
+    "np_owner": 2281998458
+   },
+   {
+    "q": "2025Q2",
+    "rev": 5216641442,
+    "op": 1180549121,
+    "np_owner": -765794260
+   },
+   {
+    "q": "2025Q3",
+    "rev": 5620528544,
+    "op": 1291574814,
+    "np_owner": 1829646760
+   },
+   {
+    "q": "2025Q4",
+    "rev": 4797123154,
+    "op": -500030496,
+    "np_owner": -3844153467
+   },
+   {
+    "q": "2026Q1",
+    "rev": 1620927774,
+    "op": -1928022128,
+    "np_owner": -4739700314
+   }
+  ],
+  "valuation": {
+   "price": 1325,
+   "mcap": 0.0471,
+   "shares": 35524729,
+   "total_shares": 23307078,
+   "wavg_shares": 23348277,
+   "per": null,
+   "eps": -291,
+   "pbr": 1.14,
+   "bps": 1160,
+   "roe_ttm": -27.0,
+   "ttm_window": "2025Q2~2026Q1",
+   "ttm_np_owner": -6788284271,
+   "pbr_krx": 0.97,
+   "bps_krx": 1365.0,
+   "basis": "PER·EPS·PBR·BPS 모두 자체 산출(네이버·토스와 동일 방식) · 배당은 DART 공시 주당현금배당금(보완:KRX) ÷ 현재가",
+   "dps": 0.0,
+   "div": 0.0
+  }
+ }
+}
