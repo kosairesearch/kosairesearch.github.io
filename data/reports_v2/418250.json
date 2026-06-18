@@ -1,0 +1,341 @@
+{
+ "title": {
+  "ko": "N2SF 수혜 맞물려 손실 급축소, 재무 회복이 관건",
+  "en": "Loss Compression Accelerates via N2SF Tailwind; Balance Sheet Durability Decisive"
+ },
+ "lead": {
+  "ko": "2026년 1분기 매출 약 13.0억원(직전 분기 대비 +91%)·영업손실 약 2.4억원으로 상장 이래 최대 분기 매출·최소 분기 손실을 동시에 달성하며 수익성 변곡점 가능성이 가시권에 들어왔으나, 3년 연속 누적 적자로 자기자본이 약 36.5억원(2025년 말)까지 잠식된 재무 건전성 회복이 핵심 과제로 남아 있다.",
+  "en": "Q1 2026 delivered the best-ever quarterly revenue (~KRW 1.30 billion, +91% QoQ) and smallest quarterly operating loss (~KRW 242 million) since listing, putting profitability within reach; yet three consecutive years of net losses have eroded equity to ~KRW 3.65 billion, making balance sheet restoration the central challenge."
+ },
+ "keypoints": [
+  {
+   "ko": "2026Q1 매출 13.0억원·영업손실 2.4억원 — 상장 후 최대 분기 매출, 최소 분기 손실로 수익 구조 개선이 수치로 확인",
+   "en": "Q1 2026 revenue ~KRW 1.30 billion and operating loss ~KRW 242 million are post-IPO records on both metrics, quantitatively confirming a structural shift in the revenue-cost profile."
+  },
+  {
+   "ko": "N2SF(국가망보안체계) 전환이 CDR·망연계 수요를 공공 전역으로 확산 — 시큐레터 MARS Platform·SLCDR이 정책 규격에 직결되는 수혜 포지션",
+   "en": "Korea's N2SF framework—transitioning from blanket network separation to zero-trust/data-centric security—mandates external-file disarming (CDR), directly aligning SecuLetter's MARS Platform and SLCDR with public-sector compliance requirements."
+  },
+  {
+   "ko": "2024→2025 영업손실 약 41% 축소(–72.6억원→–42.9억원) — 비용 구조조정이 가시적 성과로 연결",
+   "en": "Annual operating losses narrowed ~41% from ~KRW 7.26 billion (2024) to ~KRW 4.29 billion (2025) through rigorous cost discipline, delivering tangible restructuring results."
+  },
+  {
+   "ko": "에어코드(세종텔레콤 계열) CDR 공급계약으로 채널 다각화 — N2SF 요건 충족 이중 방어 솔루션(RBI+CDR) 시장 접근 확대",
+   "en": "A CDR supply agreement with AirCode (Sejong Telecom subsidiary) embeds SecuLetter's engine into the AirRBI remote browser isolation product, creating an N2SF-compliant dual-defense architecture and expanding channel reach."
+  },
+  {
+   "ko": "자기자본 36.5억원(2025년 말) 대비 연간 영업현금유출 약 64억원 — 단기 흑자전환 또는 추가 자금조달 여부가 재무 지속가능성의 분수령",
+   "en": "Year-end 2025 equity of ~KRW 3.65 billion against annual operating cash outflows of ~KRW 6.42 billion makes near-term break-even or additional capital raising the critical determinant of financial sustainability."
+  }
+ ],
+ "business": {
+  "ko": "시큐레터는 2015년 설립된 보안 소프트웨어 전문기업으로, 2023년 8월 기술성장기업 특례 방식으로 코스닥에 입성했다. 핵심 기술은 자동화 리버스 엔지니어링 기반의 악성코드 탐지·진단·분석·차단 플랫폼 'MARS(Malware Analysis Reengineering System)'로, 기존 시그니처·행위(샌드박스) 방식이 탐지하기 어려운 비실행형(Non-PE) 문서 파일(HWP·PDF·MS Office 등) 내 익스플로잇을 가상 메모리 로딩 시점에 수초 내 선제 탐지·차단한다는 것이 기술적 차별점이다. 제품 포트폴리오는 이메일 악성코드 전문 솔루션 SLE, 망연계 구간 파일 보안 솔루션 SLF, 309종 이상의 파일을 파일당 34ms 속도로 처리하는 콘텐츠 무해화 솔루션 SLCDR, 구독형 클라우드 이메일 보안 서비스 SLCS로 구성된다. 사업 영역은 이메일 보안, 망간 자료전송 파일 보안, 웹서비스 파일 보안, 문서 중앙화 파일 보안, 클라우드 보안, 보안 위협 인텔리전스 등 6개 분야이며 SECaaS(보안 서비스형) 모델 확장도 병행 추진 중이다. 주요 고객으로는 BNK부산은행·한국투자증권·KB증권 등 금융기관, 국민건강보험공단·국민연금공단·한국전력기술·문화체육관광부 산하 10개 기관 등 공공기관, 삼성전자판매·현대오일뱅크 등 민간 기업이 포함되어 금융·공공·기업 전 산업에 걸친 레퍼런스를 확보하고 있다. 경쟁 구도에서는 안랩·이글루코퍼레이션·윈스·한싹 등 대형 국내 보안업체와 글로벌 솔루션 공급사가 공존하며, 시큐레터는 비실행형 파일 리버스 엔지니어링 기술 특화를 차별점으로 포지셔닝하고 있다. 해외에서는 인도네시아·말레이시아·태국 등 동남아에 레퍼런스를 보유하고 태국 현지에 클라우드 이메일 보안 서비스용 데이터센터(IDC)를 운영 중이다. 2026년 1월 세종텔레콤 계열사 에어코드와 CDR 솔루션 공급계약을 체결해 에어코드 원격 브라우저 격리 제품 AirRBI에 무해화 엔진을 탑재, N2SF 외부 유입 파일 무해화 요건을 충족하는 이중 방어 아키텍처를 선보였다. 2026년 1월 기준 임직원 약 26명의 소규모 조직으로, 창업자 퇴진 이후 정동진 CSO가 대표이사직을 맡아 전략적 재편을 추진하고 있다.",
+  "en": "SecuLetter was founded in 2015 and listed on KOSDAQ in August 2023 under the technology-growth company fast-track scheme. Its core asset is the MARS (Malware Analysis Reengineering System) platform—built on proprietary automated reverse engineering—that detects and blocks exploits embedded in non-PE (non-executable) document files (HWP, PDF, MS Office, etc.) at the moment of virtual-memory loading, within seconds, without waiting for behavioral execution as sandbox-based solutions must. The product portfolio comprises SLE (email security), SLF (inter-network file server security), SLCDR (CDR solution supporting 309+ file types at 34 ms per file), and SLCS (subscription-based cloud email security service). Six business segments span email security, inter-network file transfer security, web-service file security, document-centralization security, cloud security, and threat intelligence, with concurrent expansion into the SECaaS (Security-as-a-Service) model. Key customer references include financial institutions (BNK Busan Bank, Korea Investment Securities, KB Securities), public agencies (NHIS, NPS, KEPCO Technology, ten MCST-affiliated bodies), and enterprises (Samsung Electronics Sales, Hyundai Oilbank). Competitive peers include major domestic players—AhnLab, IGLOO Corporation, Wins, Hansak—and global vendors; SecuLetter differentiates through its proprietary non-PE reverse-engineering specialization. Internationally, the company holds multiple Southeast Asian deployments (Indonesia, Malaysia, Thailand) and operates a cloud email security IDC in Thailand. In January 2026, a CDR supply agreement with AirCode (Sejong Telecom subsidiary) embedded SecuLetter's CDR engine in AirCode's AirRBI product, delivering an N2SF-compliant dual-defense architecture. With approximately 26 employees as of January 2026, the company is led by CEO Jeong Dong-jin—former CSO who succeeded the founder—and is executing a strategic repositioning."
+ },
+ "earnings": {
+  "ko": "연결 기준 연간 매출은 2023년 약 21.4억원, 2024년 약 14.1억원, 2025년 약 11.7억원으로 3년 연속 하락세를 보였으며, 영업손실률(OPM)은 2023년 –275.9%, 2024년 –514.5%, 2025년 –366.9%로 매출을 크게 웃도는 적자 구조가 지속됐다. 2024년에는 영업손실 약 –72.6억원에도 당기순손실이 약 –94.4억원에 달해 약 21.8억원 규모의 비영업 손실이 발생했으며, 이로 인해 자기자본이 160.6억원(2023년 말)에서 68.9억원(2024년 말)으로 급감했다. 2025년에는 비용 통제 강화로 영업손실이 약 –42.9억원(전년 대비 약 41% 개선)으로 줄었고 당기순손실도 –42.9억원으로 비영업 손익이 안정화됐으나, 자기자본은 36.5억원까지 추가 감소하며 부채비율은 2024년 58.4%에서 2025년 40.4%로 다소 개선됐다. 연간 기본주당순손실(EPS)은 2024년 –1,182원을 저점으로 2025년 –617원으로 개선됐으며, 영업현금유출(CFO)도 –66.8억원(2024)→ –64.2억원(2025)으로 소폭 줄었으나 여전히 대규모 현금 유출이 지속됐다. 분기별로는 2025년 1분기 영업손실 약 –18.5억원을 고점으로 2분기 –9.9억원, 3분기 –7.1억원, 4분기 –7.4억원으로 꾸준히 축소됐으며, 분기 매출은 1~3분기 각각 약 1.6억원에서 4분기 약 6.8억원으로 공공기관 예산 집행 시즌에 계절적 도약이 나타났다. 2026년 1분기에는 매출 약 13.0억원(전분기 대비 +91%), 영업손실 약 –2.4억원으로 상장 이후 최대 분기 매출과 최소 분기 손실을 동시에 기록했으며, 같은 분기 당기순손실도 약 –2.4억원으로 비영업 손익이 거의 중립에 가까워졌다. 이 같은 실적 개선은 N2SF 정책 전환과 연계된 공공·기관 프로젝트 수주 증가가 주요 동인으로 추정되며, 영업 레버리지 효과가 처음으로 가시화된 분기로 평가된다.",
+  "en": "On a consolidated basis, annual revenue declined for three consecutive years: ~KRW 21.4 billion (2023), ~KRW 14.1 billion (2024), and ~KRW 11.7 billion (2025), with operating margins remaining deeply negative at −275.9%, −514.5%, and −366.9%, respectively. In 2024, a net loss of ~KRW 9.44 billion substantially outpaced the operating loss of ~KRW 7.26 billion—reflecting ~KRW 2.18 billion of non-operating charges—causing equity to collapse from ~KRW 16.1 billion (end-2023) to ~KRW 6.89 billion (end-2024). In 2025, disciplined cost management cut operating losses ~41% to ~KRW 4.29 billion; net losses converged at the same level (non-operating items largely neutralized), and the debt ratio improved from 58.4% to 40.4%, though equity eroded further to ~KRW 3.65 billion. Annual basic EPS improved from −KRW 1,182 (2024) to −KRW 617 (2025), and operating cash outflows marginally narrowed from ~KRW 6.68 billion to ~KRW 6.42 billion. Quarterly operating losses declined sequentially throughout 2025—from ~KRW 1.85 billion in Q1 to ~KRW 0.99 billion in Q2, ~KRW 0.71 billion in Q3, and ~KRW 0.74 billion in Q4—while revenue was flat at ~KRW 163 million per quarter through Q3 before a seasonal Q4 uplift to ~KRW 680 million. Q1 2026 delivered a dramatic inflection: revenue of ~KRW 1.30 billion (+91% QoQ; >7× YoY) and an operating loss of only ~KRW 242 million—the smallest quarterly loss since listing—with net losses nearly identical, confirming near-zero non-operating charges. This result, likely driven by substantial N2SF-related public-sector contract wins, is the first quarter in which operating leverage has been meaningfully demonstrated."
+ },
+ "industry": {
+  "ko": "국내 사이버보안 시장은 2026년 약 4조 88억원 규모로 전년 대비 16.1% 성장이 전망되며, 2024~2026년 연평균 성장률(CAGR)은 약 14%로 추정된다. 2025년 SK텔레콤·KT 등 통신사의 대형 해킹 사고가 공공·민간 전반에 보안 투자 필요성을 부각시키며 2026년 예산 집행 확대의 기폭제가 됐다. 2025년 9월 국가정보원이 발표한 국가망보안체계(N2SF)는 획일적 물리 망분리를 데이터 중심 제로 트러스트 보안 구조로 대체하는 정책 전환으로, 외부 유입 파일 무해화(CDR)·망연계·웹 격리 수요를 구조적으로 확대시키는 핵심 촉매다. 한국인터넷진흥원(KISA)은 55억원 규모의 N2SF 도입·실증 사업을 본격화하고 있으며, 국정원 사이버보안 평가지표에 N2SF 구축 기관에 가점이 부여돼 공공기관의 조기 도입 유인이 높아지고 있다. 경쟁 구도에서는 2,300여 개 레퍼런스를 보유한 한싹(최근 N2SF 대응형 시큐어게이트 V4.0 출시), 안랩·이글루코퍼레이션 등 대형 국내 보안업체가 시장 선점을 위해 신제품을 쏟아내고 있으며 글로벌 벤더도 국내 파트너십을 강화 중이다. 시큐레터가 집중하는 비실행형 파일 리버스 엔지니어링 기반 APT 탐지·CDR 세그먼트는 기존 샌드박스 방식의 탐지 공백을 보완하는 포지션으로 N2SF의 파일 무해화 요건과 직접 연결된다. 클라우드 보안 세그먼트는 2026년 17.9% 성장으로 전 품목 중 최고 성장이 예상돼 SECaaS 전환을 추진 중인 시큐레터에게 중장기 성장 기회로 작용할 수 있다.",
+  "en": "Korea's domestic cybersecurity market is projected to reach ~KRW 4.01 trillion in 2026, growing 16.1% year-on-year, with a 2024–2026 CAGR of approximately 14%. High-profile 2025 telecom data breaches (SKT, KT) significantly elevated corporate and government security investment urgency, accelerating budget execution into 2026. The NIS's September 2025 N2SF framework—replacing blanket physical network separation with zero-trust, data-centric security controls—is the pivotal structural catalyst, directly creating demand for CDR, inter-network file security, and web isolation products. KISA has mobilized a KRW 5.5 billion N2SF adoption-and-pilot program, and the NIS's cybersecurity evaluation criteria awards accreditation points to N2SF-compliant agencies, creating strong early-adoption incentives across public bodies. Competition is intensifying: Hansak (2,300+ references, recently launched N2SF-targeted SecureGate V4.0), AhnLab, IGLOO Corporation, and global vendors are all competing for the same N2SF-driven budget. SecuLetter's non-PE reverse-engineering APT detection and CDR niche fills a specific gap left by sandbox-based solutions, aligning directly with N2SF's external-file disarming requirement. Cloud security is forecast to be the fastest-growing sub-segment at ~17.9% in 2026, offering a medium-term opportunity for the company's SECaaS expansion."
+ },
+ "outlook": {
+  "ko": "2026년 핵심 성장 동인은 N2SF 정책 본격 시행에 따른 공공기관·금융기관의 CDR·파일 보안 도입 확산으로, KISA 55억원 규모의 N2SF 도입·실증 사업 추진 및 정부 범정부 정보보호 종합대책이 보안 예산 집행을 구조적으로 뒷받침하고 있다. 시큐레터는 N2SF 공식 파트너사로서 에어코드와 공동 구성한 '웹 격리(AirRBI)+파일 무해화(SLCDR)' 이중 방어 솔루션을 통해 공공 조달 경쟁력을 높이고 있다. 2026년 1분기 매출 급증이 지속 가능한 구조인지, 아니면 특정 대형 프로젝트 집중 효과인지가 가장 중요한 점검 사항으로, 2분기 이후 수주 건수 및 매출 유지 여부가 연간 실적 향방을 결정할 전망이다. 비용 측면에서는 약 26명의 소규모 조직으로 이미 최소 비용 구조에 근접해 있어 추가 절감 여력이 제한적인 만큼, 매출 증가를 통한 영업 레버리지가 수익성 전환의 핵심 변수다. 재무적으로는 2025년 말 자기자본 36.5억원과 연간 64억원 내외의 영업현금유출을 감안할 때, 흑자 전환 속도에 따라 2026년 하반기 추가 자금 조달 가능성을 면밀히 모니터링할 필요가 있다. 해외에서는 태국 IDC를 거점으로 한 동남아 클라우드 이메일 보안 서비스 확대와 AI 기반 위협 인텔리전스 고도화가 중장기 성장축으로 추진 중이다.",
+  "en": "The primary 2026 growth driver is the N2SF public-sector rollout, underpinned by KISA's KRW 5.5 billion adoption-and-pilot program and the government's comprehensive cybersecurity masterplan, which are structurally accelerating security budget execution. As an official N2SF partner, SecuLetter's joint AirCode solution—combining web isolation (AirRBI) and CDR (SLCDR)—strengthens its competitive position in public tenders by offering a single-architecture N2SF-compliant dual-defense system. The most critical near-term question is whether Q1 2026's revenue surge reflects durable structural demand or concentration in a few large project wins; revenue sustainability from Q2 2026 onward will determine the full-year trajectory. With the cost base already lean (~26 employees), further fixed-cost reduction is limited—making revenue-driven operating leverage the primary profitability lever. Financially, with year-end 2025 equity of ~KRW 3.65 billion and ongoing operating cash outflows exceeding KRW 6 billion annually, the pace of break-even will determine whether capital-raising activity materializes in H2 2026. Internationally, expanding cloud email security services through the Thailand IDC and upgrading AI-based threat intelligence represent the medium-term growth roadmap."
+ },
+ "valuation_comment": {
+  "ko": "시큐레터는 손실이 지속되고 있어 주당순이익(EPS) –420원을 기록 중이며, 이익 배수(PER)에 의한 전통적 기업가치 평가는 적용되지 않는다. 주당순자산(BPS) 481원에 비해 현 주가는 순자산 대비 매우 높은 프리미엄 구간에서 거래되고 있으며, 시장이 현재의 순자산 가치보다 미래 실적 회복 가능성에 상당한 기대치를 반영하고 있음을 나타낸다. 무배당 기조가 유지되어 배당수익률은 국내 보안 소프트웨어 동종 기업과 비교해도 낮은 수준이다. 손실 축소 또는 흑자 전환이 현실화된다면 순자산 대비 프리미엄이 점진적으로 압축될 수 있는 구조적 경로가 열리지만, 자본 조달 과정에서 신주가 추가 발행될 경우 BPS와 EPS가 동시에 희석되어 그 경로를 복잡하게 만들 수 있다. 분기 실적 발표가 순자산 프리미엄 수준의 정당화 여부를 가늠하는 핵심 정보원이 된다는 점에서, 향후 실적 공시에 대한 주가 민감도가 높게 유지될 가능성이 있다.",
+  "en": "With ongoing losses, the company's EPS stands at −KRW 420, rendering traditional earnings-multiple (PER) valuation inapplicable. The current share price trades at a substantial premium to BPS of KRW 481, implying that the market is pricing in meaningful future profitability recovery rather than current net asset value. The company pays no dividend, placing its dividend yield well below domestic software security peer averages. If losses materially narrow or turn to profit, a structural path toward premium-to-book compression opens; however, any dilutive equity issuance to shore up the balance sheet would simultaneously deflate both BPS and EPS, complicating that trajectory. Quarterly earnings disclosures serve as the primary checkpoints for assessing whether the premium-to-book-value level is fundamentally supported, keeping price sensitivity to each reporting event elevated."
+ },
+ "bull": [
+  {
+   "title": {
+    "ko": "N2SF 정책 전환 — CDR·외부 유입 파일 무해화 요건이 공공 수요를 구조적으로 확대",
+    "en": "N2SF Policy Shift — Structural Public-Sector Demand Expansion for CDR & External-File Disarming"
+   },
+   "body": {
+    "ko": "국가정보원의 N2SF 가이드라인은 외부 유입 파일에 대한 검증 및 무해화를 핵심 보안 요건으로 명시해 공공기관 전반의 CDR 도입을 사실상 의무화하는 방향으로 작용하고 있다. 시큐레터의 SLCDR은 309종 파일·파일당 34ms 처리 속도로 N2SF 요건에 직결되며, N2SF 파트너사로서 입찰 시 공신력을 확보하고 있다. KISA 55억원 규모의 N2SF 실증 사업 외에도 정부 범정부 정보보호 종합대책에 따른 보안 예산 증가가 중장기적 수요 견인 역할을 할 것으로 기대된다.",
+    "en": "The NIS's N2SF guidelines explicitly designate external-file verification and disarming as a core security control, effectively mandating CDR adoption across thousands of public-sector agencies. SecuLetter's SLCDR—supporting 309+ file types at 34 ms per file—is directly aligned with these requirements, and its N2SF partner status provides procurement credibility. Beyond KISA's KRW 5.5 billion pilot program, the government's broader cybersecurity masterplan is expected to sustain structural CDR demand growth over the medium term."
+   }
+  },
+  {
+   "title": {
+    "ko": "2026Q1 실적이 입증한 영업 레버리지 — 비용 기반 최적화 후 매출 증가가 손실 압축으로 직결",
+    "en": "Q1 2026 Validates Operating Leverage — Revenue Growth Converts Rapidly to Loss Compression"
+   },
+   "body": {
+    "ko": "2025년 1분기 영업손실 약 –18.5억원에서 2026년 1분기 약 –2.4억원으로 단 4개 분기 만에 손실이 약 87% 축소됐으며, 비용 기반이 이미 최소화된 상태에서 매출 증가분이 곧바로 영업손실 축소로 연결되는 레버리지 구조가 수치로 확인됐다. 2026년 1분기 수준의 매출이 분기마다 유지되거나 증가한다면 연간 단위 흑자 전환이 현실적으로 가능해지는 변곡점에 도달했다고 볼 수 있다. 이 레버리지 효과는 대규모 추가 투자 없이도 매출 확대만으로 수익 구조가 개선될 수 있는 잠재력을 내포한다.",
+    "en": "Operating losses narrowed ~87% in just four quarters—from ~KRW 1.85 billion in Q1 2025 to ~KRW 242 million in Q1 2026—confirming that the optimized cost structure converts incremental revenue gains into loss compression with high efficiency. If Q1 2026 revenue levels are sustained or grow, annual break-even becomes a realistic near-term scenario. This operating leverage means the business can improve its financial profile substantially without major additional fixed-cost investment."
+   }
+  },
+  {
+   "title": {
+    "ko": "독자 리버스 엔지니어링 기술 — 샌드박스 우회 위협에 대한 기술적 공백 해소",
+    "en": "Proprietary Reverse-Engineering Moat — Addressing the Gap Left by Sandbox-Evading Threats"
+   },
+   "body": {
+    "ko": "MARS 플랫폼은 악성 행위 발생을 기다리지 않고 가상 메모리 로딩 시점에 어셈블리 레벨로 익스플로잇 여부를 판단하므로, 샌드박스 탐지를 우회하는 지연 실행형·조건부 실행형 악성코드에도 대응 가능한 기술적 독자성을 갖는다. 32개의 특허와 한국전력기술·우정사업정보센터·한국인터넷진흥원 등 국가기관 레퍼런스는 기술 신뢰성의 대외적 근거가 된다. AI가 결합된 문서 기반 APT 공격이 고도화될수록 탐지보다 원천 무해화(CDR) 중심 방어 전략이 부각돼 시큐레터의 기술 방향성과 부합하는 환경이 조성될 가능성이 높다.",
+    "en": "The MARS platform's assembly-level analysis at virtual-memory loading time provides inherent defense against time-delayed and condition-triggered malware that evades sandbox detection—a genuine technical moat backed by 32 patents and deployments at national entities including KEPCO Technology, Korea Post, and KISA. As AI-enhanced document-borne APT attacks grow more sophisticated, a disarming-first (CDR) defense paradigm aligns well with the evolving threat landscape, reinforcing the company's strategic positioning without requiring additional architectural changes."
+   }
+  }
+ ],
+ "bear": [
+  {
+   "title": {
+    "ko": "자기자본 급감과 대규모 현금 유출 — 단기 흑자전환 지연 시 추가 자금조달 불가피",
+    "en": "Rapidly Eroding Equity & Large Cash Burn — Additional Financing Unavoidable if Break-Even Is Delayed"
+   },
+   "body": {
+    "ko": "자기자본이 2023년 160.6억원에서 2025년 말 36.5억원으로 3년 만에 약 77% 감소했으며, 연간 영업현금유출이 64억원 수준을 유지하고 있어 현 추세가 지속되면 자본 추가 확충이 불가피하다. 유상증자는 주당 가치 희석을, 전환사채 등 부채성 자금 조달은 이자 및 상환 부담 증가를 수반한다. 재무 취약성은 대형 고객·공공기관 파트너와의 계약 협상에서도 불리하게 작용할 수 있다.",
+    "en": "Equity has shrunk ~77% from ~KRW 16.1 billion (end-2023) to ~KRW 3.65 billion (end-2025) in three years, while annual operating cash outflows of ~KRW 6+ billion continue—making additional capital raises virtually certain absent an accelerated break-even. Equity issuances dilute per-share value; debt-based financing adds interest expense and repayment risk. Financial fragility may also weaken negotiating leverage with large customers and public-agency partners."
+   }
+  },
+  {
+   "title": {
+    "ko": "매출의 계절성·집중 위험 — 2026Q1 급등이 특정 대형 계약 집중 효과일 가능성",
+    "en": "Revenue Seasonality & Concentration Risk — Q1 2026 Surge May Reflect One-Off Large Contract(s)"
+   },
+   "body": {
+    "ko": "2025년 1~3분기 분기 매출이 각각 약 1.6억원에 그쳤다가 4분기 6.8억원, 2026년 1분기 13.0억원으로 급등한 패턴은 공공기관 예산 집행 시점 또는 특정 대형 계약에 집중된 매출 구조를 시사한다. 2분기 이후 매출이 이전 낮은 수준으로 회귀할 경우 영업손실이 재확대될 수 있다. 소수 대형 고객 의존도가 높은 구조에서는 단일 계약의 갱신 실패 또는 지연만으로도 연간 실적이 크게 흔들릴 수 있다.",
+    "en": "Revenue flat at ~KRW 163 million per quarter in Q1–Q3 2025, then spiking to ~KRW 680 million in Q4 and ~KRW 1.30 billion in Q1 2026, strongly suggests dependence on lumpy, project-based contract timing rather than a stable recurring revenue base. A reversion toward historically low quarterly levels in Q2 2026 and beyond would cause operating losses to widen materially. Heavy concentration in a small number of large contracts means a single non-renewal or delayed procurement decision could significantly impair full-year results."
+   }
+  },
+  {
+   "title": {
+    "ko": "대형 경쟁사의 N2SF 시장 경쟁 — 소규모 조직의 영업·지원 역량 한계",
+    "en": "Intensifying N2SF Competition from Large Rivals — Small Organizational Scale Constrains Sales & Support"
+   },
+   "body": {
+    "ko": "N2SF 전환이 촉발하는 공공 보안 수요를 두고 2,300여 개 레퍼런스를 보유한 한싹(N2SF 대응형 시큐어게이트 V4.0 출시), 안랩·이글루코퍼레이션 등 훨씬 큰 조직의 경쟁사들이 시장 선점에 나서고 있다. 임직원 약 26명의 시큐레터는 영업 인력·사후지원 역량·마케팅 예산 모든 면에서 경쟁사에 비해 취약하다. 공공 입찰에서 레퍼런스 규모와 브랜드 신뢰도가 중요한 평가 기준이 되는 만큼, 신규 레퍼런스 축적 속도가 경쟁사를 따라잡지 못할 경우 N2SF 수혜의 상당 부분을 대형 업체에게 빼앗길 위험이 있다.",
+    "en": "The N2SF-driven public-sector opportunity is fiercely contested by Hansak (2,300+ references, recently launched N2SF-targeted SecureGate V4.0), AhnLab, IGLOO Corporation, and global vendors—all far larger organizations. With approximately 26 employees, SecuLetter is structurally outmatched in direct-sales coverage, after-sales support capacity, and marketing spend. Since public-procurement decisions heavily weight reference depth and brand credibility, SecuLetter risks ceding meaningful N2SF budget share to larger competitors if reference accumulation cannot keep pace."
+   }
+  }
+ ],
+ "risks": [
+  {
+   "cat": {
+    "ko": "재무 지속가능성 리스크",
+    "en": "Financial Sustainability Risk"
+   },
+   "body": {
+    "ko": "2025년 말 자기자본 약 36.5억원에 연간 영업현금유출이 64억원에 달해 단기 흑자 전환 없이는 자본 잠식 위기가 현실화될 수 있다. 추가 유상증자는 주당 가치 희석을, 전환사채 등 부채성 조달은 이자 부담과 상환 리스크를 야기한다. 이 같은 재무 취약성은 대형 고객·공공기관과의 파트너십 유지에도 부정적 신호를 줄 수 있어 영업 측면에서도 간접 리스크로 작용한다.",
+    "en": "With year-end 2025 equity of ~KRW 3.65 billion and annual operating cash outflows of ~KRW 6.42 billion, capital depletion could materialize within 2026 without near-term break-even. Equity issuances dilute per-share value; debt financing adds interest expense and repayment risk. Financial fragility may also send negative signals to large customers and public-agency partners, creating indirect operational risk."
+   }
+  },
+  {
+   "cat": {
+    "ko": "공공 예산 사이클·정책 실행 지연 리스크",
+    "en": "Public Budget Cycle & Policy Execution Lag Risk"
+   },
+   "body": {
+    "ko": "매출의 상당 부분이 공공기관 프로젝트 집행 시점에 연동되어 있어, N2SF 도입 일정이 지연되거나 예산 조정 등으로 우선순위가 변경될 경우 예상 수요가 이연·취소될 수 있다. 공공 조달 시장의 최저가 경쟁 관행이 계약 단가와 마진을 압박할 수 있으며, 대형 통합사업자를 통한 간접 공급 구조는 수익성 측면에서 불리하게 작용할 수 있다. 민간 기업 고객 기반의 다변화가 공공 의존도를 줄이는 장기적 과제로 남아 있다.",
+    "en": "With a significant portion of revenue tied to public-sector project timing, delays in N2SF implementation schedules or government budget reallocations could defer or cancel anticipated demand. Low-price competition in public procurement can pressure unit pricing and margins, and reliance on large system integrators for indirect supply may further compress profitability. Diversifying toward a broader private-sector client base remains a long-term mitigation priority."
+   }
+  },
+  {
+   "cat": {
+    "ko": "기술 진부화 및 글로벌 경쟁 리스크",
+    "en": "Technology Obsolescence & Global Competition Risk"
+   },
+   "body": {
+    "ko": "AI를 결합한 차세대 공격 기술의 빠른 발전은 리버스 엔지니어링 기반 탐지 플랫폼에도 지속적인 R&D 투자를 요구하나, 소규모 조직과 현금 제약 환경에서 충분한 R&D 자원 배분이 어렵다. 기술 공백이 발생할 경우 탐지율 저하로 이어져 고객 신뢰를 훼손하고 경쟁 지위를 약화시킬 수 있다. Proofpoint·Mimecast 등 글로벌 보안 벤더가 국내 파트너십을 강화하며 이메일·파일 보안 시장에 더 깊이 침투할 경우 시큐레터의 대기업·금융기관 시장 점유율이 잠식될 위험이 상존한다.",
+    "en": "The rapid advancement of AI-enhanced attack techniques requires continuous R&D to keep the reverse-engineering platform current—challenging under a cash-constrained operating model with limited headcount. Any technological gap could lead to detection-rate degradation, eroding customer trust and competitive positioning. Global security vendors such as Proofpoint and Mimecast deepening Korean market presence through local partnerships could encroach on SecuLetter's large-enterprise and financial-sector email and file security market share over time."
+   }
+  }
+ ],
+ "checkpoints": [
+  {
+   "when": {
+    "ko": "2026년 8월 중순",
+    "en": "Mid-August 2026"
+   },
+   "what": {
+    "ko": "2026년 2분기 분기보고서 공시 — 1분기 매출(약 13.0억원)의 지속성 여부 및 영업손실 추가 축소 여부가 연간 흑자 전환 경로의 현실 가능성을 판단하는 핵심 지표.",
+    "en": "Q2 2026 quarterly report disclosure—the primary test of whether Q1 2026 revenue (~KRW 1.30 billion) is sustainable and whether operating losses continue to narrow, validating or challenging the break-even trajectory."
+   }
+  },
+  {
+   "when": {
+    "ko": "2026년 하반기 (수시)",
+    "en": "H2 2026 (As announced)"
+   },
+   "what": {
+    "ko": "공공기관 N2SF 관련 보안 사업 수주 공시 — KISA 55억원 N2SF 도입 사업 등 공공 프로젝트 수주 건수·규모가 2026년 매출 전망의 주요 가시화 지표로 작용.",
+    "en": "Public-sector N2SF procurement bid outcomes—including KISA's KRW 5.5 billion N2SF program—are the key revenue visibility indicators for H2 2026 and primary evidence of the N2SF thesis materializing in concrete contract wins."
+   }
+  },
+  {
+   "when": {
+    "ko": "2026년 9~11월",
+    "en": "Sep–Nov 2026"
+   },
+   "what": {
+    "ko": "추가 자금 조달 가능성 공시(유상증자·전환사채 등) — 자기자본 36.5억원과 현금 유출 구조를 감안할 때 조달 규모·방식·희석률이 주당 가치에 직접 영향을 미치는 핵심 변수.",
+    "en": "Any capital-raising disclosures (rights offering, CB issuance, etc.)—given equity of ~KRW 3.65 billion and ongoing cash burn, the scale, structure, and per-share dilutive impact of any financing will directly and materially affect shareholder value."
+   }
+  },
+  {
+   "when": {
+    "ko": "2026년 4분기~2027년 1분기",
+    "en": "Q4 2026 – Q1 2027"
+   },
+   "what": {
+    "ko": "에어코드 AirRBI+SLCDR 통합 솔루션의 실제 매출 기여 확인 — 기술 파트너십이 채널 매출로 전환되는 속도와 규모가 간접 영업 모델의 유효성을 검증하는 모니터링 포인트.",
+    "en": "Actual revenue contribution from the AirCode AirRBI+SLCDR integrated solution—the pace at which this technology partnership converts into channel-driven sales will validate or challenge the indirect-channel distribution model."
+   }
+  },
+  {
+   "when": {
+    "ko": "2027년 3월 말",
+    "en": "Late March 2027"
+   },
+   "what": {
+    "ko": "2026년 연간 사업보고서(DART 공시) — 연간 흑자 전환 달성 여부, 자기자본 방향, 영업현금흐름 개선도가 회사의 재무 지속가능성을 최종 검증하는 기준점.",
+    "en": "FY2026 annual business report (DART)—the definitive checkpoint confirming whether the company achieved annual profitability, the direction of equity, and the degree of operating cash flow improvement, which together determine the long-term financial sustainability verdict."
+   }
+  }
+ ],
+ "verdict": {
+  "body": {
+   "ko": "시큐레터는 비실행형 문서 파일 내 악성코드를 리버스 엔지니어링으로 탐지·차단하는 독자 MARS 플랫폼을 보유한 틈새 보안 소프트웨어 기업으로, 국가망보안체계(N2SF) 정책 전환이 촉발하는 CDR·망연계 수요 확대라는 구조적 업황 호조가 회사의 기술 포지션과 직결된다는 점은 명확한 강점이다. 2026년 1분기 매출 약 13.0억원·영업손실 약 2.4억원은 비용 통제와 N2SF 수혜가 맞물린 결과로 상장 이래 가장 좋은 분기 실적이며, 손실 축소 가속화라는 방향성은 긍정적으로 평가된다. 그러나 3년 연속 적자로 자기자본이 약 36.5억원에 불과한 상태에서 연간 64억원 이상의 영업현금이 유출되고 있어, 흑자 전환이 늦어질 경우 추가 자금 조달이 불가피하고 이는 주당 가치 희석 위험을 수반한다. 경쟁 구도에서는 N2SF 수혜를 노리는 대형 국내 보안업체들과의 입찰 경쟁이 격화되고 있어, 소규모 조직의 기술 차별화와 에어코드 등 파트너십을 통한 채널 확대가 시장 점유율 방어의 핵심 변수가 된다. 단기적으로는 2026년 2분기 이후 매출 지속성, N2SF 관련 공공 수주 성과, 추가 자금 조달 공시 여부가 핵심 모니터링 지표이며, 연간 흑자 전환 시나리오의 현실화 여부가 중장기 기업가치를 가를 분수령이 될 전망이다.",
+   "en": "SecuLetter occupies a well-defined niche in Korea's cybersecurity market with its proprietary MARS platform for non-PE document-borne malware detection and CDR; the N2SF policy transition—structurally expanding demand for CDR and inter-network file security across thousands of public-sector agencies—directly aligns with the company's core product strengths and represents a clear structural tailwind. Q1 2026's best-ever quarterly result (revenue ~KRW 1.30 billion, operating loss ~KRW 242 million) provides the first concrete evidence that the combination of cost restructuring and N2SF demand tailwinds can drive meaningful profitability improvement. However, three consecutive years of losses have eroded equity to ~KRW 3.65 billion while annual operating cash outflows exceed KRW 6 billion, creating genuine capital-adequacy risk: any delay in break-even will likely require dilutive financing. Competition for N2SF-driven public spending is intensifying among much larger domestic players, and SecuLetter's ~26-person organization must rely on technology differentiation and partner-channel leverage (notably AirCode) to compete effectively in procurement. Revenue durability beyond Q1 2026, public N2SF procurement outcomes, and capital-raise disclosures are the key near-term monitoring points, while sustained annual profitability is the medium-term inflection that would fundamentally reframe the company's financial story."
+  }
+ },
+ "sources": [
+  "https://comp.fnguide.com/SVO2/ASP/SVD_Main.asp?pGB=1&gicode=A418250&MenuYn=Y&ReportGB=D&NewMenuID=Y&stkGb=701",
+  "https://m.irgo.co.kr/IR-COMP/418250/",
+  "https://comp.fnguide.com/SVO2/asp/SVD_Invest.asp?pGB=1&gicode=A418250&cID=&MenuYn=Y&ReportGB=B&NewMenuID=105&stkGb=701",
+  "https://thevc.kr/seculetter",
+  "https://www.valueline.co.kr/finance/summary/418250",
+  "https://markets.hankyung.com/stock/418250/chart",
+  "https://stockplus.com/m/stocks/KOREA-A418250",
+  "https://www.dailysecu.com/news/articleView.html?idxno=133650",
+  "https://elec4.co.kr/contents/article_detail?article_idx=27520",
+  "https://biz.seconexpo.com/event/secon-and-egisec/exhibitor/RXhoaWJpdG9yXzcyODA3Ng==",
+  "https://besuccess.com/seculetter/",
+  "https://www.seculetter.com/company/news-event/news/%EB%B3%B4%EB%8F%84%EC%9E%90%EB%A3%8C-bnk%EB%B6%80%EC%82%B0%EC%9D%80%ED%96%89-%EC%8B%9C%ED%81%90%EB%A0%88%ED%84%B0-slf-%EB%B3%B4%EC%95%88%EC%86%94%EB%A3%A8%EC%85%98-%EB%8F%84/",
+  "https://www.seculetter.com/resources/materials/customer-success-stories/blocking-intelligent-email-hacking-attacks/",
+  "https://www.seculetter.com/en/",
+  "https://www.seculetter.com/resources/materials/customer-success-stories/strengthening-information-protection-on-civil-service-bulletin-boards/",
+  "https://www.seculetter.com/company/news-event/news/%EB%B3%B4%EB%8F%84%EC%9E%90%EB%A3%8C-%EC%8B%9C%ED%81%90%EB%A0%88%ED%84%B0-%EB%B3%B4%EC%95%88-%EC%84%B8%EB%AF%B8%EB%82%98-%EC%8B%9C%ED%81%90%EB%A6%AC%ED%8B%B0-%EC%84%9C%EB%B0%8B-2023/",
+  "https://alphasquare.co.kr/home/stock-summary?code=203650",
+  "https://news.infostock.co.kr/a"
+ ],
+ "v": 2,
+ "model": "claude-sonnet-4-6",
+ "ticker": "418250",
+ "name": "시큐레터",
+ "name_en": "SecuLetter Co., Ltd.",
+ "sector": "IT·소프트웨어",
+ "categories": [
+  "IT·소프트웨어"
+ ],
+ "market": "코스닥",
+ "reportDate": "2026-06-19",
+ "reportTs": "2026-06-19 03:56",
+ "dataDate": "20260618",
+ "quant": {
+  "asOf": "2026-06-18",
+  "fs_basis": "연결(CFS) · DART 공시 확정치 · 지배주주 기준 순이익",
+  "annual": [
+   {
+    "year": 2025,
+    "rev": 1168573306,
+    "op": -4286950415,
+    "np": -4287634762,
+    "np_owner": -4287634762,
+    "equity": 3650863442,
+    "equity_owner": 3650863442,
+    "liab": 1474484905,
+    "cfo": -6416079702,
+    "eps_basic": -617,
+    "opm": -366.9,
+    "roe": -117.4,
+    "debt_ratio": 40.4
+   },
+   {
+    "year": 2024,
+    "rev": 1411766617,
+    "op": -7263579966,
+    "np": -9435751464,
+    "np_owner": -9435751464,
+    "equity": 6891666077,
+    "equity_owner": 6891666077,
+    "liab": 4024049864,
+    "cfo": -6676283477,
+    "eps_basic": -1182,
+    "opm": -514.5,
+    "roe": -136.9,
+    "debt_ratio": 58.4
+   },
+   {
+    "year": 2023,
+    "rev": 2143877357,
+    "op": -5914101807,
+    "np": -5786419940,
+    "np_owner": -5786419940,
+    "equity": 16064427286,
+    "equity_owner": 16064427286,
+    "liab": 2918023798,
+    "cfo": -5319962288,
+    "eps_basic": -820,
+    "opm": -275.9,
+    "roe": -36.0,
+    "debt_ratio": 18.2
+   }
+  ],
+  "quarterly": [
+   {
+    "q": "2025Q1",
+    "rev": 163108789,
+    "op": -1847496334,
+    "np_owner": -1832205042
+   },
+   {
+    "q": "2025Q2",
+    "rev": 162547059,
+    "op": -994428770,
+    "np_owner": -967682806
+   },
+   {
+    "q": "2025Q3",
+    "rev": 163133720,
+    "op": -706911864,
+    "np_owner": -663176754
+   },
+   {
+    "q": "2025Q4",
+    "rev": 679783738,
+    "op": -738113447,
+    "np_owner": -824570160
+   },
+   {
+    "q": "2026Q1",
+    "rev": 1298396392,
+    "op": -242348158,
+    "np_owner": -242531099
+   }
+  ],
+  "valuation": {
+   "price": 6550,
+   "mcap": 0.0476,
+   "shares": 7271605,
+   "total_shares": 7271605,
+   "wavg_shares": 6949164,
+   "per": null,
+   "eps": -420,
+   "pbr": 13.62,
+   "bps": 481,
+   "roe_ttm": -63.5,
+   "ttm_window": "2025Q2~2026Q1",
+   "ttm_np_owner": -2697960819,
+   "pbr_krx": 13.05,
+   "bps_krx": 502.0,
+   "basis": "PER·EPS·PBR·BPS 모두 자체 산출(네이버·토스와 동일 방식) · 배당은 DART 공시 주당현금배당금(보완:KRX) ÷ 현재가",
+   "dps": 0.0,
+   "div": 0.0
+  }
+ }
+}

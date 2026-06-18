@@ -1,0 +1,326 @@
+{
+ "title": {
+  "ko": "NFC 유일 국산 팹리스, 턴어라운드 교차로에 서다",
+  "en": "Korea's Sole NFC Fabless: At the Crossroads of a Turnaround"
+ },
+ "lead": {
+  "ko": "2024년 흑자전환 이후 2025년 재차 적자로 후퇴한 쓰리에이로직스가 ESL 대형 수주·차량용 NFC 확대·EU DPP 신시장을 삼각 동력으로 2026년 실적 정상화를 시도하고 있다.",
+  "en": "After turning profitable in 2024 and then sliding back into a loss in 2025, 3A Logics is pursuing a 2026 earnings recovery fueled by a landmark ESL supply contract, expanding automotive NFC adoption, and the nascent EU Digital Product Passport market."
+ },
+ "keypoints": [
+  {
+   "ko": "2024년 흑자전환→2025년 매출 20% 감소·영업손실 전환: Q4 단독으로 연간 영업손실의 약 80%가 집중된 이례적 비용 구조가 핵심 변수",
+   "en": "After a 2024 profitability recovery, 2025 saw a ~20% revenue decline and an operating loss swing, with Q4 alone absorbing ~80% of the full-year operating loss — pointing to material one-time charges"
+  },
+  {
+   "ko": "2026년 1분기 매출 61.3억원(YoY +52%)·영업·순이익 흑자 전환 — NFC 태그 IC 매출 121% 급증이 주도한 분기 V자 반등 확인",
+   "en": "Q1 2026 revenue surged 52% YoY to KRW 6.1B with a swing to operating and net profit, led by a 121% YoY jump in NFC Tag IC revenue — confirming a V-shaped quarterly recovery"
+  },
+  {
+   "ko": "2026년 4월 솔루엠과 북미·유럽향 ESL용 NFC 칩 113.7억원 수출 계약 체결: 2025년 연간 매출의 78% 규모로 회사 역대 최대 단일 수주",
+   "en": "April 2026 landmark ESL NFC chip supply contract with SoluM (KRW 11.37B for North America/Europe) equals 78% of 2025 full-year revenue — the largest single order in company history"
+  },
+  {
+   "ko": "전 세계 차량용 NFC 리더칩 인증 3사(NXP·ST마이크로·쓰리에이로직스) 중 하나: 현대차그룹 45개 모델 및 중국 OEM 납품 파이프라인 구축 중",
+   "en": "One of only three globally certified automotive NFC reader chip makers (NXP, STMicro, 3A Logics); expanding toward 45 Hyundai Motor Group models and building a Chinese OEM pipeline via YF Tech"
+  },
+  {
+   "ko": "2025년 가이던스(300억원 수준) 대비 실제 매출(144.9억원)의 큰 괴리 확인: 실행 신뢰성 회복이 밸류에이션 재평가의 전제 조건",
+   "en": "2025 actual revenue (KRW 14.5B) fell sharply short of the ~KRW 30B guidance cited at IPO, making restored execution credibility a prerequisite for any valuation re-rating"
+  }
+ ],
+ "business": {
+  "ko": "쓰리에이로직스는 2004년 설립된 국내 유일의 NFC(근거리무선통신) 반도체 팹리스 기업으로, 2006년 13.56MHz RFID 리더칩을 국산화하며 시장에 진입했다. 주력 제품은 전자가격표시기(ESL)에 내장되는 NFC 태그 IC와 자동차 디지털키·도어록에 적용되는 NFC 리더 IC로, 2025년 1분기 기준 매출 비중은 각각 48.3%와 26.5%를 차지했다. ESL 부문에서는 세계 ESL 시장 2위 기업인 솔루엠의 독점 공급선 지위를 확보하고 있으며, 차량 응용처에서는 국내 업체 최초로 'AEC-Q100' 차량용 반도체 인증과 NFC포럼 '디지털키2.0' 인증을 획득해 현대차그룹·KG모빌리티·중국 YF테크 등을 고객으로 보유한다. 전 세계에서 차량용 NFC 리더칩 인증 및 상용화에 성공한 기업은 NXP·ST마이크로·쓰리에이로직스 단 3곳으로, 진입장벽이 높은 과점적 경쟁구도를 형성한다. NFC 관련 특허 108건을 보유하고 있으며, 해외 10여 개국에 직접 수출하는 글로벌 공급망을 운영 중이다. 중장기 신성장 축으로는 EU 에코디자인 규정(ESPR) 시행에 따른 디지털 제품여권(DPP), 스마트 가전·산업용 IoT, K-바이오·뷰티 정품인증 등을 육성하고 있으며, 세계 최초 8채널 듀얼밴드 NFC·RFID 통합칩 개발도 진행 중이다. 정부 지원금 103억원을 활용해 3세대 차량용 반도체 칩 등 차세대 제품 개발을 병행하고 있으며, 국내 도어록 시장에서도 70~80% 수준의 높은 점유율을 유지하고 있다.",
+  "en": "3A Logics (founded 2004) is Korea's only NFC semiconductor fabless company, having domesticated the 13.56 MHz RFID reader chip in 2006. Its two flagship product lines are the NFC Tag IC (embedded in electronic shelf labels, or ESL) and the NFC Reader IC (used in automotive digital keys and smart door locks), accounting for approximately 48.3% and 26.5% of Q1 2025 revenue, respectively. In ESL, the company holds exclusive supplier status for SoluM, the world's second-largest ESL maker. In the automotive segment, it was the first Korean firm to obtain AEC-Q100 automotive semiconductor certification and the NFC Forum 'Digital Key 2.0' certification, counting Hyundai Motor Group, KG Mobility, and China's YF Tech among its customers. Globally, only NXP, STMicroelectronics, and 3A Logics have certified and commercially shipped automotive NFC reader chips, creating a high-barrier oligopoly. The company holds 108 NFC-related patents and exports directly to more than 10 countries. Emerging growth vectors include the Digital Product Passport (DPP) driven by EU ESPR regulations, smart-home IoT, and K-beauty/bio product authentication. The company is also developing what it describes as the world's first 8-channel dual-band NFC/RFID integrated chip, supported by KRW 10.3B in government R&D funding. It maintains a dominant 70–80% share of Korea's digital door-lock NFC market."
+ },
+ "earnings": {
+  "ko": "2024년은 실적 전환의 해였다. 연결 매출 181.1억원(전년 대비 +27.9%), 영업이익 17.5억원(OPM +9.7%)으로 전년 대규모 영업적자에서 흑자로 전환했다. 당기순이익은 영업외 항목 기여가 더해져 영업이익을 크게 상회하는 85.6억원을 기록했다. 그러나 2025년에는 연결 매출이 144.9억원으로 전년 대비 약 20% 역성장하고, 영업이익은 -26.9억원(OPM -18.5%)으로 재차 적자 전환했다. 분기별로 보면 2025년 1분기는 영업이익 1.0억원으로 흑자를 유지했으나, 2분기 -2.0억원, 3분기 -4.4억원으로 적자폭이 점차 확대됐으며, 4분기에는 영업손실이 -21.5억원으로 급증했다. 4분기는 매출이 27.5억원으로 연중 최저치를 기록하는 동시에 연간 영업손실 대부분이 집중된 구간으로, 일회성 자산평가손실 또는 대규모 비용 인식이 동반된 것으로 추정된다. 그 결과 연간 지배주주 순손실 36.1억원, 영업현금흐름 -18.7억원을 기록했다. 2026년 1분기에는 뚜렷한 반전이 나타났다. 매출 61.3억원(전년동기 40.3억원 대비 +52%), 영업이익 2.7억원, 지배주주 순이익 4.5억원으로 흑자 전환하며 Q4 바닥 탈출을 시사했다. 이는 ESL용 NFC 태그 IC 매출이 전년동기 대비 121% 급증한 데 힘입은 것으로, 솔루엠향 물량 확대가 주된 동인이었다. 자동차 디지털키용 IC 'TNR200'의 글로벌 완성차 공급 증가와 DPP 관련 듀얼 RFID 기술 신규 수주도 실적 개선에 기여했다고 회사 측은 밝혔다. 부채비율은 2025년 기준 45.0%로 상장 이전 대비 크게 낮아진 상태이나, 지속적인 수익 창출을 통한 재무 안정화가 계속 과제로 남는다.",
+  "en": "Fiscal 2024 was a recovery year: consolidated revenue grew ~27.9% to KRW 18.1B, and operating profit turned positive at KRW 1.75B (9.7% OPM), reversing a large prior-year operating loss. Net income reached KRW 8.56B, substantially exceeding operating profit due to non-operating income contributions. However, 2025 saw a reversal: revenue fell ~20% to KRW 14.5B while operating income swung to a loss of KRW 2.69B (OPM –18.5%). Quarterly, operating profit was barely positive in Q1 2025 (+KRW 0.1B) but deteriorated through Q2 (–KRW 0.2B) and Q3 (–KRW 0.4B), with Q4 recording an outsized operating loss of –KRW 2.15B against only KRW 2.75B in revenue — suggesting one-time asset impairments or large cost recognition concentrated in the final quarter. This resulted in a full-year net loss of KRW 3.61B (attributable to owners) and negative operating cash flow of –KRW 1.87B. Q1 2026 delivered a decisive reversal: revenue surged 52% YoY to KRW 6.13B with operating profit of KRW 274M and attributable net income of KRW 449M, confirming an exit from the Q4 trough. The recovery was driven primarily by a 121% YoY jump in NFC Tag IC sales for ESL applications (SoluM), supplemented by growing shipments of the automotive digital-key IC 'TNR200' and new DPP-related dual-RFID orders. The debt-to-equity ratio stood at 45.0% as of 2025, substantially improved from pre-IPO levels, though achieving sustainable profitability remains the critical path to further balance sheet stabilization."
+ },
+ "industry": {
+  "ko": "글로벌 NFC 시장은 2023년 약 250억 달러에서 2028년 약 502억 달러로 연평균 14.9% 성장이 전망되며, 자동차·유통 분야가 각각 14.4%, 15.1%의 고성장 축을 형성하고 있다. 전방 수요처인 ESL 시장도 2024년 19.7억 달러에서 2029년 34.2억 달러로 연평균 11.7%의 안정적 성장이 예상되며, 소매업체의 가격 최적화 수요와 IoT·디지털 전환 트렌드가 수요를 지속 견인하고 있다. 솔루엠의 ESL 사업도 2026년 1분기 전년동기 대비 45% 성장하는 등 주요 고객사의 전방 수요가 살아나고 있다. 자동차용 NFC 시장은 2022~2032년 연평균 30%대 초반의 고성장이 전망되는 가운데, 차량 한 대당 4~5개의 NFC 칩이 탑재되는 높은 침투율 상승 구조가 물량 확대를 구조적으로 뒷받침한다. 반도체 업황 전반으로는 2026년 글로벌 반도체 시장이 17.8% 성장하며 약 9,100억 달러로 확대될 전망이나, IoT·차량용 비메모리 부문은 AI·데이터센터 중심의 메모리 성장과 다소 분리된 움직임을 보인다. 경쟁 구도 측면에서 글로벌 NFC 칩 시장은 NXP·ST마이크로가 과점적 지위를 유지하고 있으며, 쓰리에이로직스는 차량용 분야 3번째 상용화 기업으로 국산 대체재 포지션을 강화 중이다. EU 에코디자인 규정(ESPR)에 따른 DPP 의무화 추진은 NFC·RFID 이력 추적 칩 수요를 규제 차원에서 새롭게 창출하는 중장기 드라이버로 작동할 전망이다.",
+  "en": "The global NFC market is projected to grow at a 14.9% CAGR from ~USD 25B in 2023 to ~USD 50B by 2028, with automotive and retail segments each growing at approximately 14–15% annually. The ESL end-market is expected to expand from USD 1.97B in 2024 to USD 3.42B by 2029 (11.7% CAGR), supported by retailer demand for dynamic pricing and digital-transformation momentum. SoluM's own ESL business grew ~45% YoY in Q1 2026, confirming robust downstream demand. Automotive NFC is growing even faster — at a CAGR in the low-30% range — as vehicles increasingly require 4–5 NFC chips per unit for digital key, in-vehicle payments, and wireless charging. Broadly, the global semiconductor market is projected to grow 17.8% to ~USD 909B in 2026, though IoT and automotive non-memory chips are tracking more moderately relative to the AI/data-center surge. Competitively, the global NFC chip market is dominated by NXP and STMicroelectronics, with 3A Logics positioned as the third certified automotive NFC vendor and a cost-competitive domestic alternative. The EU's ESPR-driven DPP mandate is an emerging regulatory tailwind that would structurally create new demand for NFC/RFID traceability chips across European supply chains."
+ },
+ "outlook": {
+  "ko": "2026년은 쓰리에이로직스의 실적 구조 전환 원년이 될 가능성이 높다. 가장 큰 모멘텀은 2026년 4월 공시된 솔루엠과의 113.7억원 규모 북미·유럽향 ESL용 NFC 다이나믹 태그 칩 공급계약으로, 이는 2025년 연간 매출의 78%에 달하는 역대 최대 수주다. 미래에셋증권은 2026년 6월 리포트에서 이 수주를 근거로 '연간 실적 가시성이 높아졌으며, 하반기 공급 물량 확대 시 추가 외형 성장도 가능하다'고 평가했다. 차량용 NFC 리더칩은 현대차그룹 기준 2026년까지 45개 모델로 확대되며, KG모빌리티·중국 YF테크(샤오미·리샹 등 10개 모델)의 납품 파이프라인도 순차적으로 매출에 반영될 예정이다. DPP 분야에서는 세계 최초 8채널 듀얼밴드 NFC·RFID 통합 칩을 통해 EU ESPR 시행에 대응하는 구체적 제품을 준비 중이며, 파마리서치 등 국내 바이오·뷰티 고객을 레퍼런스로 유럽 시장 진출을 추진하고 있다. 스마트 가전(IoT) 분야에서도 글로벌 가전 업체 프리미엄 라인 탑재용 NFC 칩 공급 확대를 추진한다는 방침이다. 다만 2025년 최종 매출이 당초 가이던스 대비 절반 수준에 그쳤다는 점에서, 하반기 ESL 물량 납품 개시와 차량용 양산 매출 전환 속도가 연간 목표 달성의 핵심 가늠자가 된다.",
+  "en": "2026 is shaping up as a potential structural inflection year. The single largest near-term catalyst is the April 2026 SoluM ESL supply agreement (KRW 11.37B for North America and Europe), the company's largest-ever contract. Mirae Asset Securities (June 2026) noted that 'ESL large-order visibility has increased meaningfully' and flagged H2 volume ramp as an upside driver. On the automotive side, Hyundai Motor Group is expanding NFC deployment to 45 models by end-2026, with KG Mobility and China's YF Tech (covering Xiaomi EVs and Li Auto) also in ramp-up phases. In the DPP segment, the company is commercializing what it describes as the world's first 8-channel dual-band NFC/RFID chip, targeting EU ESPR mandates and using domestic bio/beauty brand Pharma Research as an early reference customer. Smart-appliance IoT chip supply expansion to global OEM premium lineups is also in progress. However, with 2025 actual revenue reaching only roughly half of the guidance-level target, H2 2026 ESL delivery execution and the pace of automotive NFC revenue recognition are the primary variables determining whether the recovery narrative materializes."
+ },
+ "valuation_comment": {
+  "ko": "현재 주가는 주당순자산(BPS) 5,030원에 근접한 구간에서 거래되고 있어, 순자산 대비 소폭의 프리미엄 또는 근접 수준에 위치한다. 상장 초기(2024년 12월) 기록한 52주 고점 대비로는 큰 폭의 조정이 이루어진 상태이며, 공모가(11,000원) 기준으로도 현재 절반 수준에 머물고 있어 IPO 당시 제시했던 중기 성장 가이던스에 대한 시장의 재평가가 주가에 반영된 것으로 해석된다. 주당순이익(EPS)은 최근 누적 기준 -315원의 적자 국면이어서 수익 기반 배수는 현재 의미 있는 비교 기준으로 기능하기 어렵다. 배당은 무배당 기조가 유지되고 있어 배당수익률은 업종 평균을 대폭 하회하는 수준이다. 밸류에이션 재평가의 핵심 트리거는 2026년 수익성의 지속적 회복 여부로, 솔루엠 ESL 수주 물량과 차량용 NFC 양산 매출이 재무제표에 반영되며 적자 국면을 탈피하는 시점이 분기점이 될 것으로 판단된다.",
+  "en": "The stock is currently trading near its book value per share (BPS: KRW 5,030), implying a modest premium or near-parity to net assets — a historically low valuation band for the company. The shares have corrected substantially from the 52-week high set at IPO launch and remain well below the IPO price of KRW 11,000, reflecting the market's reassessment of the ambitious mid-term guidance provided at listing. With trailing EPS at –KRW 315 reflecting recent losses, earnings-based multiples are not a meaningful valuation anchor at present. The company pays no dividend, placing it materially below the sector average on yield metrics. The key trigger for any re-rating is sustained profitability recovery in 2026 — specifically, the point at which SoluM ESL contract volumes and automotive NFC ramp revenue begin flowing through the income statement, establishing a consistent earnings track record."
+ },
+ "bull": [
+  {
+   "title": {
+    "ko": "ESL 대형 수주: 역대 최대 규모 계약의 하반기 인도",
+    "en": "ESL Mega-Contract: Record-Largest Order with H2 Delivery Ramp"
+   },
+   "body": {
+    "ko": "2026년 4월 체결된 솔루엠과의 113.7억원 규모 ESL 수주는 2025년 연간 매출의 78%에 달하는 역대 최대 계약으로, 북미·유럽향 물량의 하반기 인도가 본격화될 경우 연간 실적을 단번에 레벨업시킬 잠재력을 보유한다. 솔루엠의 자체 ESL 사업도 2026년 1분기 전년동기 대비 45% 성장하는 등 전방 수요가 견고하여 수주 이행 가시성을 높인다. 솔루엠 외 3개 추가 ESL 고객사로의 칩 공급 목표도 제시되어, 고객 다변화에 성공할 경우 매출 집중도 리스크 완화와 외형 성장 가속화를 동시에 기대할 수 있다.",
+    "en": "The April 2026 SoluM ESL supply contract (KRW 11.37B) is the company's largest-ever order at 78% of 2025 full-year revenue, with H2 delivery providing a potential step-change in annual revenue. SoluM's own ESL business grew 45% YoY in Q1 2026, confirming robust end-demand and improving delivery visibility. A stated goal of supplying an additional 81 million chips to three more ESL customers in 2026 offers the prospect of simultaneous revenue diversification and volume acceleration."
+   }
+  },
+  {
+   "title": {
+    "ko": "글로벌 3위 차량용 NFC 칩: 과점 진입장벽과 레퍼런스 확장",
+    "en": "Global #3 Automotive NFC: High-Barrier Oligopoly with Growing Reference Base"
+   },
+   "body": {
+    "ko": "전 세계에서 차량용 NFC 리더칩 인증 및 상용화에 성공한 기업은 NXP·ST마이크로·쓰리에이로직스 단 3곳으로, 신규 진입이 구조적으로 어려운 과점 구도다. 현대차그룹이 2026년까지 45개 모델에 NFC를 적용 확대하고, YF테크를 통한 중국 OEM 10개 모델 납품 파이프라인이 구축되어 있어 물량 증가의 구체적 일정이 존재한다. 고기능 인증 기반 제품의 특성상 레퍼런스 우위를 통한 고마진 구조로의 전환이 기대되며, 차량 한 대당 4~5개 탑재 밀도도 물량 성장의 구조적 배경이 된다.",
+    "en": "With only NXP, STMicro, and 3A Logics globally certified for automotive NFC reader chips, near-term new entrants face significant structural barriers. Hyundai Motor Group is expanding NFC-equipped models to 45 by end-2026, and a pipeline for 10+ Chinese EV models via YF Tech is under development, providing a tangible ramp schedule. The certification-driven nature of automotive chip supply favors reference-based pricing over commodity competition, and the 4–5 chips-per-vehicle adoption density provides a structural volume multiplier."
+   }
+  },
+  {
+   "title": {
+    "ko": "DPP·IoT 신시장: EU 규제 드라이버와 세계 최초 듀얼밴드 칩",
+    "en": "DPP & IoT New Markets: EU Regulatory Tailwind and World-First Dual-Band Chip"
+   },
+   "body": {
+    "ko": "EU 에코디자인 규정(ESPR)에 따른 디지털 제품여권(DPP) 의무화 추진은 NFC·RFID 기반 이력 추적 칩 수요를 규제 차원에서 구조적으로 창출하는 장기 드라이버다. 쓰리에이로직스는 NFC와 RFID를 단일 칩에 구현한 세계 최초 8채널 듀얼밴드 제품을 보유하고 있어 DPP 적합 솔루션으로서 기술적 선점 우위를 확보했다. 스마트 가전·산업용 IoT·헬스케어 등으로의 응용 확장은 현재 ESL·차량 이외의 수익원 다각화 경로를 추가로 열어주는 중장기 옵션으로 기능한다.",
+    "en": "The EU's ESPR-mandated Digital Product Passport rollout structurally creates new mandated demand for NFC/RFID traceability chips across European supply chains. 3A Logics holds what it describes as the world's first 8-channel dual-band NFC/RFID chip, providing a differentiated technology position for DPP compliance solutions. Ongoing expansion into smart appliances, industrial IoT, and healthcare adds long-term optionality beyond the current ESL and automotive revenue pillars, with the DPP opportunity potentially pulling forward a new wave of customer adoption."
+   }
+  }
+ ],
+ "bear": [
+  {
+   "title": {
+    "ko": "가이던스 신뢰성: 2025년 목표 대비 실제 매출의 큰 괴리",
+    "en": "Guidance Credibility Gap: 2025 Actual Revenue ~Half of Targets"
+   },
+   "body": {
+    "ko": "IPO 기자간담회 및 증권사 추정을 통해 제시된 2025년 매출 300억원 수준의 가이던스는, 실제 확정 매출 144.9억원과 큰 괴리를 보이며 ESL 물량 확대와 차량용 양산 매출 반영이 예상보다 크게 지연됐음을 입증했다. 이는 시장 신뢰 훼손으로 이어져 주가 조정의 핵심 원인이 됐다. 2026년에도 유사한 실행 리스크가 상존하며, 하반기 ESL 납품 이행과 차량용 수주 매출화 속도가 실제로 확인되기 전까지 전망 불확실성이 지속된다.",
+    "en": "The 2025 revenue target of ~KRW 30.4B, referenced across IPO materials and broker estimates, was nearly halved by the KRW 14.5B actual outcome — a significant credibility gap driven by material delays in both ESL volume ramp-up and automotive NFC revenue recognition. This miss was a primary driver of the post-IPO share price decline. A similar execution risk persists for 2026, with H2 ESL deliveries and automotive production volumes yet to be independently verified."
+   }
+  },
+  {
+   "title": {
+    "ko": "2025년 4분기 대규모 손실: 비용 구조 투명성과 반복 가능성",
+    "en": "Q4 2025 Outsized Loss: Cost Structure Opacity and Recurrence Risk"
+   },
+   "body": {
+    "ko": "2025년 4분기 영업손실은 -21.5억원으로, 분기 매출 27.5억원 대비 이례적으로 큰 규모였다. 연간 영업손실 26.9억원의 약 80%가 단일 분기에 집중됐으며, 일회성 자산평가손실·재고평가손실 또는 연구개발비 일시 인식 등이 원인으로 추정된다. 일회성 요인으로 확인될 경우 2026년 재현 가능성은 낮지만, 구체적 내용이 명확히 공시되지 않은 상황에서 비용 구조 투명성에 대한 불안이 지속될 수 있다. 영업현금흐름도 2025년 -18.7억원을 기록해 현금 창출 능력 개선이 시급한 과제다.",
+    "en": "The Q4 2025 operating loss of –KRW 2.15B was disproportionately large relative to the quarter's KRW 2.75B in revenue, concentrating ~80% of the full-year operating loss in a single quarter. The likely cause is one-time items such as asset impairments, inventory write-downs, or lumped R&D charges, but the lack of explicit disclosure creates ongoing uncertainty about the underlying cost structure. Operating cash flow was also negative at –KRW 1.87B in 2025, underscoring the urgency of converting top-line growth into genuine cash generation."
+   }
+  },
+  {
+   "title": {
+    "ko": "솔루엠 고객 집중도: 단일 고객 과의존 구조의 리스크",
+    "en": "SoluM Concentration Risk: Vulnerability to Single-Customer Demand Shifts"
+   },
+   "body": {
+    "ko": "ESL 부문 매출은 솔루엠에 대한 독점 공급에 크게 의존하고 있으며, 2026년 체결한 대형 수주 역시 솔루엠이 단일 카운터파티다. 솔루엠의 수요 변동, 재고 조정, 또는 멀티소싱 전략 전환 시 회사 매출에 직접적 충격이 전달된다. 다변화 목표(솔루엠 외 3개 ESL 업체)가 제시되어 있으나 계약 확정은 아직 미공시 상태이며, 차량용 분야도 현대차그룹 의존도가 높아 전반적 고객 집중도 리스크가 여전하다.",
+    "en": "3A Logics's ESL revenue is heavily concentrated in SoluM as an exclusive supplier, and the landmark April 2026 contract is again a single-customer deal. Any shift in SoluM's demand outlook, inventory destocking, or multi-sourcing decision would directly impact revenue. While management has stated a goal of adding three ESL customers beyond SoluM in 2026, no confirmed additional contracts have been publicly disclosed. Automotive revenue is similarly concentrated in Hyundai Motor Group, leaving overall customer concentration risk elevated across both key segments."
+   }
+  }
+ ],
+ "risks": [
+  {
+   "cat": {
+    "ko": "실적 실행 리스크",
+    "en": "Earnings Execution Risk"
+   },
+   "body": {
+    "ko": "솔루엠 ESL 수주 물량의 실제 납품 일정 및 차량용 NFC 양산 물량이 분기 재무제표에 반영되는 속도가 2026년 연간 실적의 핵심 변수다. 2025년 대규모 가이던스 미달 사례가 있는 만큼, 하반기 물량 이행의 객관적 검증 전까지 전망 불확실성이 높은 상태가 지속된다. 분기 실적 발표 때마다 매출 인식 시점과 비용 구조에 대한 면밀한 모니터링이 필요하다.",
+    "en": "The timing and pace of SoluM ESL contract deliveries and automotive NFC production shipments hitting the quarterly income statement are the primary 2026 earnings wildcards. Given the 2025 guidance shortfall, forward estimates carry elevated uncertainty until H2 delivery is independently verifiable. Close monitoring of revenue recognition timing and cost dynamics is essential at each quarterly results announcement."
+   }
+  },
+  {
+   "cat": {
+    "ko": "경쟁·기술 추격 리스크",
+    "en": "Competitive and Technology Catch-Up Risk"
+   },
+   "body": {
+    "ko": "글로벌 NFC 칩 시장은 NXP·ST마이크로 등 대형 반도체 기업이 장악하고 있으며, 쓰리에이로직스 대비 압도적인 R&D 투자 규모와 글로벌 영업망을 보유한다. 차량용 NFC 진입장벽이 높긴 하나, 중국 로컬 팹리스 기업의 빠른 기술 추격 가능성도 배제하기 어렵다. 차세대 제품(듀얼밴드, 온디바이스 AI 융합 등)의 상용화 일정 지연은 신시장 선점 기회를 훼손할 수 있다.",
+    "en": "The global NFC chip market is dominated by NXP and STMicroelectronics, which far exceed 3A Logics in R&D budget and global distribution reach. While automotive NFC certification barriers are high, the risk of Chinese fabless firms closing the technology gap cannot be dismissed. Delays in commercializing next-generation products (dual-band, on-device AI integration) could erode first-mover advantages in emerging markets such as DPP."
+   }
+  },
+  {
+   "cat": {
+    "ko": "거시·환율·지정학 리스크",
+    "en": "Macro, FX, and Geopolitical Risk"
+   },
+   "body": {
+    "ko": "매출의 상당 부분이 북미·유럽·중국 수출로 구성되어 원달러·원유로 환율 변동에 따른 수익성 노출이 존재한다. 중국 OEM 고객 비중 확대에 따른 미중 무역 분쟁·수출 규제 리스크와 중국 내 로컬 기업과의 경쟁 심화 가능성에 주의가 필요하다. EU ESPR·DPP 의무화 일정 지연이나 기술 표준 변경 시 DPP 시장 진입 모멘텀이 약화될 수 있다.",
+    "en": "A significant portion of revenue derives from exports to North America, Europe, and China, creating meaningful FX exposure to USD and EUR movements. Expanding Chinese OEM relationships introduces geopolitical risks from US-China trade friction and potential export controls, as well as intensifying competition from Chinese local fabless players. Delays to EU ESPR/DPP implementation timelines or shifts in technical standards could weaken the anticipated DPP market entry momentum."
+   }
+  }
+ ],
+ "checkpoints": [
+  {
+   "when": {
+    "ko": "2026년 7월 말 (2026년 2분기 실적 발표)",
+    "en": "Late July 2026 (Q2 2026 Earnings Release)"
+   },
+   "what": {
+    "ko": "2분기 매출 및 영업이익이 1분기 흑자 전환 흐름을 이어가는지 확인. 솔루엠 ESL 수주 물량의 실제 매출 인식 개시 여부와 분기 영업이익률 추이가 핵심 지표.",
+    "en": "Confirm whether Q2 sustains the Q1 profitability recovery. Key metrics: onset of SoluM ESL contract revenue recognition and sequential operating margin trend."
+   }
+  },
+  {
+   "when": {
+    "ko": "2026년 3~4분기 (솔루엠 ESL 물량 인도 속도 확인)",
+    "en": "Q3–Q4 2026 (SoluM ESL Contract Delivery Pace Verification)"
+   },
+   "what": {
+    "ko": "113.7억원 규모 솔루엠 계약의 실제 납품 진행 속도를 분기 공시 및 IR을 통해 검증. 연간 실적 목표 달성 가능성의 직접적 가늠자이며, 물량 지연 여부는 2025년 재현 리스크와 직결된다.",
+    "en": "Verify the pace of shipments under the KRW 11.37B SoluM contract via quarterly disclosures and IR communications. This is the direct barometer for full-year guidance feasibility and any replication of the 2025 delivery-lag scenario."
+   }
+  },
+  {
+   "when": {
+    "ko": "2026년 하반기~2027년 초 (차량용 NFC 양산 매출 반영 확인)",
+    "en": "H2 2026–Early 2027 (Automotive NFC Production Revenue Ramp)"
+   },
+   "what": {
+    "ko": "현대차그룹 45개 모델 및 중국 OEM(YF테크 경유) 향 차량용 NFC 리더칩의 분기 매출 기여도 확인. 리더칩 비중 상승은 수익성 구조 개선의 핵심 신호로, 실제 양산 납품 수량과 ASP 추이를 함께 점검해야 한다.",
+    "en": "Monitor quarterly revenue contribution from automotive NFC reader chips across Hyundai Motor Group's 45-model rollout and Chinese OEM supply via YF Tech. Rising reader IC revenue mix is the key structural signal for a margin-improvement narrative — track both shipment volumes and ASP trends."
+   }
+  },
+  {
+   "when": {
+    "ko": "2026년 하반기~2027년 (EU DPP 규제 일정 및 신규 수주 동향)",
+    "en": "H2 2026–2027 (EU DPP Regulation Timeline and New Order Flow)"
+   },
+   "what": {
+    "ko": "EU 에코디자인 규정(ESPR)에 따른 DPP 의무화 구체적 시행 일정 확인과 쓰리에이로직스의 듀얼밴드 칩 신규 고객 계약 공시 여부 모니터링. 규제 지연 시 DPP 수익 기여 시점이 후퇴할 수 있다.",
+    "en": "Track the EU ESPR DPP mandatory rollout schedule and watch for new customer contract announcements for the dual-band chip. Regulatory delays would push out expected DPP revenue contribution, while accelerated adoption could become an upside catalyst."
+   }
+  },
+  {
+   "when": {
+    "ko": "2026년 연간 결산 (솔루엠 외 ESL 고객 다변화 성과 확인)",
+    "en": "FY 2026 Annual Results (ESL Customer Diversification Beyond SoluM)"
+   },
+   "what": {
+    "ko": "회사가 목표로 제시한 솔루엠 이외 3개 ESL 업체와의 계약 체결 및 8,100만 개 칩 공급 달성 여부를 연간 공시로 확인. 고객 다변화 성공 여부는 솔루엠 집중도 리스크 완화의 핵심 지표다.",
+    "en": "Verify via annual disclosures whether the company achieves its goal of contracting with three additional ESL customers beyond SoluM and supplying 81 million chips in aggregate. Successful diversification is the central long-term indicator of concentration risk reduction."
+   }
+  }
+ ],
+ "verdict": {
+  "body": {
+   "ko": "쓰리에이로직스는 국내 유일의 NFC 팹리스 기업으로서 ESL·차량용 디지털키·DPP·IoT 등 다양한 전방 응용처를 보유한 독특한 포지션에 있다. 2024년 흑자전환 후 2025년 실적 급락을 겪었으나, 2026년 1분기 매출 61.3억원(YoY +52%)·흑자 전환과 솔루엠과의 113.7억원 대형 ESL 수주(2026년 4월)는 실적 정상화의 구체적 근거를 제공한다. 차량용 NFC 글로벌 3위 인증 지위와 세계 최초 듀얼밴드 칩은 중장기 기술 경쟁력을 뒷받침하며, 자동차용 NFC 시장의 연평균 30% 이상 고성장 전망은 구조적 성장 배경이 된다. 다만 2025년 가이던스 대비 실제 매출의 큰 괴리, 4분기 대규모 일회성 손실, 솔루엠 집중 리스크는 검증이 필요한 핵심 과제로 남아있다. 현재 주가는 순자산에 근접한 낮은 배수에서 거래되고 있어, 2026년 하반기 ESL 물량 이행과 차량용 양산 매출 확인이 향후 방향성을 결정하는 분기점이 될 전망이다.",
+   "en": "3A Logics occupies a structurally unique position as Korea's only NFC fabless company, with genuine optionality across ESL, automotive digital key, DPP, and IoT end-markets. After a 2024 profitability recovery and a 2025 setback, Q1 2026's 52% YoY revenue surge and return to profitability — combined with the landmark April 2026 SoluM contract (KRW 11.37B) — provide tangible evidence of a demand recovery. The company's globally certified automotive NFC position and world-first dual-band DPP chip offer compelling medium-term growth credentials, supported by an automotive NFC market growing at 30%+ annually. Nevertheless, the 2025 guidance shortfall, the Q4 2025 outsized loss, and high customer concentration in SoluM remain unresolved risks requiring ongoing verification. Trading near book value, the stock sits at a valuation level where successful H2 2026 ESL delivery and automotive ramp execution could re-rate the multiple, while continued execution gaps would sustain current discounted levels. H2 2026 delivery data points will be decisive for the investment narrative."
+  }
+ },
+ "sources": [
+  "https://comp.fnguide.com/SVO2/ASP/SVD_Main.asp?gicode=A177900",
+  "https://m.thinkpool.com/compDiscuss/cont/1017313",
+  "https://comp.fnguide.com/SVO2/asp/SVD_Invest.asp?pGB=1&gicode=A177900&cID=&MenuYn=Y&ReportGB=B&NewMenuID=105&stkGb=701",
+  "https://www.kokstock.com/stock/item.asp?item_cd=177900",
+  "https://www.valueline.co.kr/finance/summary/177900",
+  "https://finance.finup.co.kr/Stock/177900",
+  "https://markets.hankyung.com/stock/177900",
+  "https://m.finance.daum.net/quotes/A177900",
+  "http://www.dailyinvest.kr/news/articleView.html?idxno=67746",
+  "https://www.datatooza.com/article/2025062511353688043f2b9af007_80",
+  "https://edaily.co.kr/News/Read?mediaCodeNo=257&newsId=03286566645449248",
+  "https://www.saramin.co.kr/zf_user/company-info/view/csn/dDM0RmpiVjVOaHE1OGhEUThHaTZGUT09/company_nm/%EC%93%B0%EB%A6%AC%EC%97%90%EC%9D%B4%EB%A1%9C%EC%A7%81%EC%8A%A4(%EC%A3%BC)",
+  "https://www.saramin.co.kr/zf_user/company-info/view-inner-finance/csn/dDM0RmpiVjVOaHE1OGhEUThHaTZGUT09/company_nm/%EC%93%B0%EB%A6%AC%EC%97%90%EC%9D%B4%EB%A1%9C%EC%A7%81%EC%8A%A4(%EC%A3%BC)",
+  "https://www.jobkorea.co.kr/company/43991690",
+  "https://www.catch.co.kr/Comp/CompSummary/367684",
+  "https://www.newspim.com/news/view/20260610000394",
+  "https://www.hellot.net/news/article.html?no=102562",
+  "https://www.sisajournal-e.com/news/articleView.html?idxno=407882"
+ ],
+ "v": 2,
+ "model": "claude-sonnet-4-6",
+ "ticker": "177900",
+ "name": "쓰리에이로직스",
+ "name_en": "3ALogics. Inc.",
+ "sector": "반도체",
+ "categories": [
+  "반도체"
+ ],
+ "market": "코스닥",
+ "reportDate": "2026-06-19",
+ "reportTs": "2026-06-19 03:56",
+ "dataDate": "20260618",
+ "quant": {
+  "asOf": "2026-06-18",
+  "fs_basis": "연결(CFS) · DART 공시 확정치 · 지배주주 기준 순이익",
+  "annual": [
+   {
+    "year": 2025,
+    "rev": 14494595306,
+    "op": -2686355904,
+    "np": -3607181939,
+    "np_owner": -3607181939,
+    "equity": 47197174990,
+    "equity_owner": 47197174990,
+    "liab": 21221742502,
+    "cfo": -1868637565,
+    "eps_basic": -379,
+    "opm": -18.5,
+    "roe": -7.6,
+    "debt_ratio": 45.0
+   },
+   {
+    "year": 2024,
+    "rev": 18114302063,
+    "op": 1749439298,
+    "np": 8561586080,
+    "np_owner": 8561586080,
+    "equity": 49349891560,
+    "equity_owner": 49349891560,
+    "liab": 23259078855,
+    "cfo": 94576491,
+    "eps_basic": 1366,
+    "opm": 9.7,
+    "roe": 17.3,
+    "debt_ratio": 47.1
+   }
+  ],
+  "quarterly": [
+   {
+    "q": "2025Q1",
+    "rev": 4033156927,
+    "op": 103810898,
+    "np_owner": -163448330
+   },
+   {
+    "q": "2025Q2",
+    "rev": 4481953253,
+    "op": -203211111,
+    "np_owner": -629975953
+   },
+   {
+    "q": "2025Q3",
+    "rev": 3231970446,
+    "op": -435749219,
+    "np_owner": -496071642
+   },
+   {
+    "q": "2025Q4",
+    "rev": 2747514680,
+    "op": -2151206472,
+    "np_owner": -2317686014
+   },
+   {
+    "q": "2026Q1",
+    "rev": 6127299259,
+    "op": 274147247,
+    "np_owner": 449234604
+   }
+  ],
+  "valuation": {
+   "price": 5290,
+   "mcap": 0.0509,
+   "shares": 9627600,
+   "total_shares": 9584800,
+   "wavg_shares": 9517630,
+   "per": null,
+   "eps": -315,
+   "pbr": 1.05,
+   "bps": 5030,
+   "roe_ttm": -6.1,
+   "ttm_window": "2025Q2~2026Q1",
+   "ttm_np_owner": -2994499005,
+   "pbr_krx": 1.07,
+   "bps_krx": 4924.0,
+   "basis": "PER·EPS·PBR·BPS 모두 자체 산출(네이버·토스와 동일 방식) · 배당은 DART 공시 주당현금배당금(보완:KRX) ÷ 현재가",
+   "dps": 0.0,
+   "div": 0.0
+  }
+ }
+}

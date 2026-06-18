@@ -1,0 +1,356 @@
+{
+ "title": {
+  "ko": "AI 인프라 피벗, Q4 편중이 핵심 변수",
+  "en": "AI Infrastructure Pivot Clouded by Extreme Q4 Profit Concentration"
+ },
+ "lead": {
+  "ko": "2025년 창사 이래 최대 매출을 기록하며 AI 인프라 구축 수혜를 입증했으나, 이익이 단일 분기(Q4)에 집중되는 구조와 2026년 초 급격한 실적 부진이 연간 이익의 지속 가능성에 대한 물음표를 남기고 있다.",
+  "en": "Record 2025 revenue validated the AI infrastructure buildout thesis, but virtually all profits concentrated in a single quarter combined with a sharp 2026 Q1 downturn raise fundamental questions about earnings sustainability."
+ },
+ "keypoints": [
+  {
+   "ko": "2025년 매출 2,065억원(전년比 +105%)·영업이익 80억원·순이익 101억원으로 흑자 전환 — AI 인프라 프로젝트 수주 효과 가시화",
+   "en": "2025 revenue of KRW 206.5 billion (+105% YoY), operating profit of KRW 8.0 billion, net profit of KRW 10.1 billion — AI infrastructure project wins driving an earnings turnaround"
+  },
+  {
+   "ko": "분기 이익 극단적 편중: Q4 영업이익 114억원이 Q1~Q3 합산 적자(-34억원)를 단독 상쇄하는 구조가 반복됨",
+   "en": "Extreme quarterly skew: Q4 operating profit of KRW 11.4 billion single-handedly offset the combined KRW 3.4 billion Q1–Q3 operating losses"
+  },
+  {
+   "ko": "2026년 Q1 매출 163억원(전년 동기 403억원 대비 급감)·영업손실 25억원 — 계절성 구조 재확인, 연간 가시성 낮음",
+   "en": "2026 Q1 revenue of KRW 16.3 billion (vs. KRW 40.3 billion a year earlier) and an operating loss of KRW 2.5 billion — seasonal concentration reaffirmed, full-year visibility low"
+  },
+  {
+   "ko": "GPU 기반 AI 데이터센터 설계·구축 및 Full-Stack AI 서비스로 사업 다각화, AI HW·SW 제조사 파트너십 보유",
+   "en": "Business diversifying into GPU-based AI data center construction and Full-Stack AI services, backed by hardware and software manufacturer partnerships"
+  },
+  {
+   "ko": "주당순자산(BPS 3,572원) 근접 수준에서 거래, 연간 주당 현금배당금(DPS 100원) 지급 — 소형주 특성상 배당 연속성 불확실",
+   "en": "Stock trading near book value (BPS: KRW 3,572) with an annual cash dividend of KRW 100 per share; dividend continuity uncertain given small-cap characteristics"
+  }
+ ],
+ "business": {
+  "ko": "아이크래프트는 2000년 1월 설립되어 2004년 12월 코스닥에 상장한 IT 인프라 전문기업으로, 인터넷 네트워크 구축 및 시스템 통합(SI)을 핵심 사업으로 영위한다. 기간통신사업자의 네트워크 핵심망 공급 레퍼런스를 바탕으로, 일반 기업 및 공공 부문에 광대역통합망(BcN)·전송망·보안 솔루션 등 토탈 네트워크 구축 서비스를 제공한다. 매출 구조는 용역(서비스) 약 44%, 상품(네트워크 장비 등) 약 43%, 제품 약 13%로 구성되어 있으며, 프로젝트성 용역과 장비 공급이 매출의 대부분을 차지한다. 시엔스 등 3개 계열사를 보유하고 있으며, 연결 기준 재무제표를 통해 그룹 실적을 통합 관리한다. 최근에는 GPU 기반 AI 데이터센터 설계·구축 및 Full-Stack AI 서비스 사업을 적극 추진하며 포트폴리오를 다변화하고 있다. AI 하드웨어·소프트웨어 제조사와의 파트너십을 통해 다양한 인프라 환경 제공 역량을 갖추고 있으며, 위조방지·추적 솔루션 '브랜드세이퍼'도 보유한다. 주요 고객은 이동통신 3사 등 기간통신사업자, 일반 기업, 공공기관으로, 개별 대형 프로젝트 의존도가 높아 분기별 매출 편차가 두드러지는 사업 구조다. 경쟁 구도 측면에서는 삼성SDS·LG CNS·SK AX 등 대형 SI 3사 대비 중소형 전문 SI 포지션을 점하며, 통신 인프라와 AI 인프라의 교차 영역에서 틈새 시장을 공략하고 있다.",
+  "en": "iCraft was incorporated in January 2000 and listed on KOSDAQ in December 2004, with its core business in internet network construction and systems integration (SI). Building on a reference base of supplying core networks to major telecom carriers, the company provides total network construction services to enterprises and the public sector, covering broadband convergence networks (BcN), transmission networks, and security solutions. Revenue is split approximately 44% services, 43% product resales (network equipment), and 13% manufactured goods, with project-based services and equipment supply constituting the bulk of sales. The group includes three subsidiaries — including Ciens — with consolidated financial statements capturing total group performance. In recent years, the company has actively expanded into GPU-based AI data center design and construction and Full-Stack AI services, diversifying its portfolio. Partnerships with AI hardware and software manufacturers underpin the ability to serve complex multi-vendor infrastructure environments; the company also offers a brand protection and tracing solution called BrandSafer. Key customers include the three major Korean telecom carriers, general enterprises, and public-sector bodies, creating significant quarter-to-quarter revenue volatility due to reliance on individual large-scale project awards. Competitively, iCraft occupies a mid-tier specialist SI position relative to the dominant big-three groups, targeting niche opportunities at the intersection of telecom infrastructure and AI data center buildouts."
+ },
+ "earnings": {
+  "ko": "2025년 연결 매출액은 2,065억원으로 전년(1,005억원) 대비 약 105% 증가하며 창사 이래 최대치를 달성했고, 영업이익은 80억원(OPM 3.9%)으로 전년(16억원, 1.6%) 대비 크게 개선되었다. 지배주주 귀속 순이익은 101억원으로 2024년 순손실(약 8.5억원, EPS -77원)에서 흑자 전환해 주당순이익(EPS) 842원을 기록했다. 분기별 흐름을 보면, 2025년 Q1~Q3는 각각 영업손실 16억원·7억원·10억원을 기록한 반면 Q4 단독으로 매출 1,091억원(연간의 약 53%)·영업이익 114억원을 실현하며 연간 수익 전부를 독점적으로 견인했다. 이 같은 Q4 극단 집중 구조는 대형 인프라·SI 프로젝트의 준공 및 매출 인식이 연말에 몰리는 업종 특성과 직결된다. 2024년은 매출 1,005억원에 영업이익 16억원이었으나 순손실로 마무리됐고, 2023년은 매출 1,387억원·영업이익 51억원(OPM 3.7%)·순이익 45.6억원(EPS 381원)으로 상대적으로 안정적이었다. 2022년은 매출 1,129억원이었지만 영업이익률이 0.2%에 불과해 수익성 최저점이었다. 영업현금흐름은 2022년 -72.8억원, 2024년 -6.7억원의 적자를 거쳐 2025년 +66.5억원으로 전환되어 실제 현금 창출력 회복을 확인할 수 있다. 2026년 Q1에는 매출 163억원·영업손실 25억원을 기록하며 전년 동기(매출 403억원·영업손실 16억원) 대비 매출이 급격히 축소되고 손실 폭도 확대되어 연간 실적의 Q4 의존도가 구조적 취약점으로 다시 부각되고 있다.",
+  "en": "Consolidated 2025 revenue reached KRW 206.5 billion, approximately doubling year-on-year from KRW 100.5 billion to set an all-time record, while operating profit improved markedly to KRW 8.0 billion (OPM 3.9%) from KRW 1.6 billion (1.6%) the prior year. Net profit attributable to controlling shareholders swung to KRW 10.1 billion from a KRW 0.85 billion loss in 2024 (EPS: KRW -77), delivering basic EPS of KRW 842. The quarterly breakdown reveals an extreme skew: Q1, Q2, and Q3 each posted operating losses of KRW 1.6 billion, KRW 0.7 billion, and KRW 1.0 billion, respectively, while Q4 alone generated KRW 109.1 billion in revenue (roughly 53% of the full year) and KRW 11.4 billion in operating profit, carrying the entire annual result. This Q4 concentration reflects the industry norm of recognizing revenue upon project completion, which clusters at year-end. In 2023, the company posted KRW 138.7 billion in revenue and KRW 4.6 billion in net profit (EPS: KRW 381), reflecting a relatively stable base, whereas 2022 saw an operating margin of only 0.2%, the lowest in the review period. Operating cash flow turned positive to KRW +6.7 billion in 2025 after negative readings of KRW -7.3 billion (2022) and KRW -0.7 billion (2024), confirming improved underlying cash generation. In 2026 Q1, revenue contracted sharply to KRW 16.3 billion with an operating loss of KRW 2.5 billion — well below the prior-year Q1 figures of KRW 40.3 billion in revenue and KRW 1.6 billion in operating losses — underscoring the structural reliance on Q4 and casting doubt on full-year earnings replication."
+ },
+ "industry": {
+  "ko": "국내외 AI 인프라 투자 붐이 아이크래프트가 속한 IT 인프라·네트워크·SI 업종의 전방 수요를 빠르게 확대하고 있다. 한국 정부는 국가 AI 컴퓨팅 인프라 확충 마스터플랜에 따라 연내 GPU 1만장 확보, 2026년 상반기 GPU 8,500장 규모의 슈퍼컴 6호기 구축을 추진 중이며, 2027년까지 국가 AI 컴퓨팅센터 본격 가동을 목표로 하고 있다. 글로벌 AI 데이터센터 시장은 2025년 2,360억 달러에서 2030년 9,340억 달러 규모(CAGR 약 31.6%)로의 성장이 전망되며, 고급 GPU 서버도 2026년 35% 추가 성장이 예상되는 등 전방 수요가 가파르다. 2026년 국내 SI 업계는 AI전환(AX)이 본격화되는 '실질적 수익 창출의 원년'으로 평가받고 있으며, 에이전틱 AI와 AI·클라우드·데이터센터를 아우르는 디지털 인프라 구축 수요가 빠르게 확대되고 있다. 다만 삼성SDS·LG CNS·SK AX 등 대형 SI 3사가 공공·금융 AX 대형 수주를 집중 공략하면서 중소형 SI 기업의 단독 수주 역량은 상대적으로 제한적인 상황이다. 5G SA(단독모드) 전환 등 통신망 고도화 사이클도 통신 레퍼런스를 보유한 아이크래프트에 중기적 수요 창출 기회를 제공할 수 있다. GPU 수급 병목과 AI 데이터센터의 전력·냉각 인프라 제약은 프로젝트 일정에 영향을 줄 수 있는 공급 측 리스크로 상존한다.",
+  "en": "A global AI infrastructure investment boom is rapidly expanding demand across the IT infrastructure, network, and SI sectors where iCraft operates. The Korean government's national AI computing infrastructure master plan targets securing 10,000 GPUs within the year, constructing a supercomputer with 8,500 GPUs by H1 2026, and fully activating a National AI Computing Center by 2027. The global AI data center market is projected to grow from approximately $236 billion in 2025 to $934 billion by 2030 (roughly 31.6% CAGR), and advanced GPU server shipments are forecast to grow a further 35% in 2026, signaling strong underlying demand. The domestic SI industry in 2026 is widely described as entering the first genuine year of AI monetization, with agentic AI and integrated AI-cloud-data center infrastructure buildouts rapidly expanding project pipelines. However, the dominant big-three SI groups — Samsung SDS, LG CNS, and SK AX — are aggressively pursuing large public-sector and financial AX contracts, compressing the independent contracting opportunity for mid-tier SI firms. The 5G standalone (SA) transition cycle in telecommunications represents an additional medium-term demand catalyst for a company with deep carrier infrastructure credentials. Supply-side constraints — including GPU procurement bottlenecks and power and cooling infrastructure limitations in AI data centers — pose scheduling risks that could defer project timelines and revenue recognition."
+ },
+ "outlook": {
+  "ko": "AI 데이터센터 구축 수요 급증과 정부의 AI 컴퓨팅 인프라 투자 확대 기조는 아이크래프트의 중장기 사업 기회를 구조적으로 넓히는 핵심 요인으로 작용할 것으로 보인다. GPU 기반 AI 인프라 구축 레퍼런스와 AI HW·SW 제조사 파트너십은 공공·민간 부문 신규 수주에서 기술 경쟁력의 기반이 된다. 다만 2026년 Q1의 급격한 매출 감소와 영업손실 확대는 연간 수익이 여전히 하반기, 특히 Q4 대형 프로젝트 완공·매출 인식에 집중되는 구조임을 재확인해, Q4 수주 동향이 연간 실적의 결정적 변수로 작용할 전망이다. 2026년 연간 가이던스나 수주 잔고에 대한 공식 공시는 현재 확인되지 않아 외부 투자자 입장에서 실적 가시성이 낮은 상황이다. 국가 AI 컴퓨팅센터(2027년 개소 목표) 구축·운영 및 5G SA 전환 등 중기 이벤트가 현실화되면 아이크래프트의 통신 네트워크 레퍼런스가 일부 수주 기회로 연결될 가능성이 있다. 소형주 특성상 단일 대형 프로젝트의 수주 성공 여부에 따라 연간 실적이 크게 달라지는 구조이며, 경쟁 심화 속 영업이익률 방어가 중기 수익성의 핵심 과제다. 시엔스 등 계열사와의 AI 솔루션·네트워크 사업 시너지 확대 여부도 향후 실적 궤적을 결정하는 추가 변수가 될 것이다.",
+  "en": "Surging demand for AI data center buildouts and an expanding government AI infrastructure investment commitment represent structural tailwinds that should broaden iCraft's medium-to-long-term project pipeline. GPU-based AI infrastructure references and hardware and software manufacturer partnerships form the technical foundation for securing new contracts in both public and private sectors. However, the sharp 2026 Q1 revenue contraction and widening operating loss reconfirm that annual profits remain structurally concentrated in the second half — particularly Q4 project completions — making Q4 order momentum the single most decisive variable for full-year results. No official 2026 annual guidance or order backlog disclosures have been identified, structurally limiting earnings visibility for external observers. The eventual launch of the National AI Computing Center (targeted for 2027) and the 5G SA transition cycle could translate into tangible contract opportunities given the company's carrier infrastructure credentials. As a small-cap, annual results can swing dramatically based on the success of one or two major project awards, and defending operating margins in an increasingly competitive landscape is the central medium-term challenge. Synergy realization with subsidiaries including Ciens in AI solutions and network services will also be an important factor shaping the future earnings trajectory."
+ },
+ "valuation_comment": {
+  "ko": "현재 주가는 주당순자산(BPS 3,572원) 수준에 근접하거나 소폭 할인된 구간에서 형성되어 있어, 순자산 대비 프리미엄이 크지 않은 상태다. 최근 확정 EPS가 산출되지 않아 이익 배수 방식의 직접 비교 적용이 어렵고, 2022~2024년에 걸친 실적 변동성(적자·소폭 흑자 교차)이 이익 기반 밸류에이션의 안정성을 낮추는 요인이다. 2025년의 큰 폭 흑자 전환은 이익 회복 프리미엄으로 반영될 수 있으나, Q4 집중 구조와 2026년 초 부진으로 이익 재현성에 대한 할인 요인이 동시에 상존한다. 연간 주당 현금배당금(DPS 100원)을 지급하고 있어 최소한의 주주 환원이 이루어지고 있으나, 코스닥 소형 IT 서비스 종목 내에서 배당수익률은 업종 평균 수준 내외이며 배당 연속성은 향후 실적에 따라 유동적이다. 부채비율이 다년간 완화 추세를 보이다 2025년에 소폭 반등한 점은 프로젝트 사이클에 따른 운전자본 부담을 반영하는 것으로 재무 레버리지 관점에서 지속 모니터링이 필요하다.",
+  "en": "The stock is trading at or slightly below book value per share (BPS: KRW 3,572), implying limited premium to net assets at current levels. With no confirmed headline EPS available for direct earnings-multiple comparison, and given a multi-year track record of alternating between small profits and losses (2022–2024), earnings-based valuation multiples remain inherently unstable. The strong 2025 profit recovery could justify some recovery premium, but the Q4 concentration structure and the weak 2026 Q1 start provide a countervailing discount for earnings repeatability. The company distributes an annual cash dividend of KRW 100 per share, placing the dividend yield roughly in line with the small-cap KOSDAQ IT services peer range, though continuity depends on future earnings performance. The uptick in the debt ratio during 2025 — after a multi-year improvement trend — reflects working capital demands from large-scale project cycles and warrants ongoing monitoring of financial leverage."
+ },
+ "bull": [
+  {
+   "title": {
+    "ko": "AI 인프라 구축 레퍼런스와 정부 수요 확대",
+    "en": "AI Infrastructure References and Expanding Government Demand"
+   },
+   "body": {
+    "ko": "GPU 기반 AI 데이터센터 설계·구축과 Full-Stack AI 서비스로 사업 영역을 확장하며 중기 성장 가시성이 높아지고 있다. 기간통신사 핵심망 레퍼런스에 더해 AI 인프라 구축 경험까지 보유함으로써 공공·민간 AI 인프라 프로젝트 수주에서 중소형 SI 기업 중 차별화된 경쟁력을 확보하고 있다. 한국 정부의 연내 GPU 1만장 확보, 슈퍼컴 6호기(2026년 상반기) 및 국가 AI 컴퓨팅센터(2027년) 구축 계획은 공공 부문 수주 기회를 구조적으로 확대하는 요인이다.",
+    "en": "Expansion into GPU-based AI data center construction and Full-Stack AI services is building medium-term growth visibility. The combination of telecom carrier core network references and an emerging AI infrastructure portfolio gives iCraft a differentiated edge among mid-tier SI firms competing for public and private AI projects. The Korean government's plans to secure 10,000 GPUs this year, construct a supercomputer by H1 2026, and launch a National AI Computing Center in 2027 structurally expand the public-sector addressable pipeline."
+   }
+  },
+  {
+   "title": {
+    "ko": "2025년 실적 입증과 순자산 기반 안정성",
+    "en": "2025 Earnings Validation and Net Asset Support"
+   },
+   "body": {
+    "ko": "2025년 매출 2,065억원·순이익 101억원으로 이익 창출력을 입증하며 지배주주 귀속 자기자본이 2022년 331억원에서 2025년 465억원으로 성장했다. 현재 주가가 주당순자산(BPS 3,572원) 수준에 근접하게 형성되어 있어 순자산 가치 관점에서의 하방 지지 효과가 기대된다. 2025년 영업현금흐름이 플러스로 전환되어 실질 현금 창출력 회복을 확인함으로써 재무 건전성 개선 기대도 높아지고 있다.",
+    "en": "Record 2025 revenue of KRW 206.5 billion and net profit of KRW 10.1 billion demonstrated genuine earnings power, growing controlling shareholders' equity from KRW 33.1 billion (2022) to KRW 46.5 billion (2025). The stock trading near book value per share (BPS: KRW 3,572) provides a potential net asset floor on the downside. The recovery of operating cash flow to positive territory in 2025 further validates improving underlying financial health."
+   }
+  },
+  {
+   "title": {
+    "ko": "SI 업종 AX 골든타임과 실적 레버리지 가능성",
+    "en": "SI Sector AX Golden Window and Earnings Leverage Potential"
+   },
+   "body": {
+    "ko": "2026년 하반기 국내 SI 시장은 생성형 AI의 본격 대중화와 함께 역대 최대 B2B 수익화 기회를 맞이하고 있다는 평가를 받고 있다. 공공·금융·제조 등 전 산업의 AI 전환 투자가 확대되면서 네트워크·인프라 구축 역량을 보유한 SI 기업의 수주 기회가 늘어나고 있다. 소형주 특성상 하나의 대형 프로젝트 수주가 실적을 크게 레버리지할 수 있는 구조로, 시장 사이클이 우호적일 경우 실적 상향 탄력이 클 수 있다.",
+    "en": "The domestic SI market in the second half of 2026 is widely seen as entering a historic B2B monetization window as generative AI goes mainstream. Expanding AI transformation investments across public, financial, and manufacturing sectors broaden the addressable market for SI firms with network and infrastructure expertise. Given the small-cap structure, a single large project award can meaningfully lever annual results, creating substantial upside potential when the market cycle turns favorable."
+   }
+  }
+ ],
+ "bear": [
+  {
+   "title": {
+    "ko": "극단적 Q4 편중과 2026년 초 실적 급락",
+    "en": "Extreme Q4 Revenue Concentration and Weak 2026 Start"
+   },
+   "body": {
+    "ko": "2025년 영업이익의 사실상 전부를 Q4 단독(114억원)이 창출하고, Q1~Q3는 합산 34억원의 영업손실을 기록하는 극단적 편중 구조가 반복되고 있다. 2026년 Q1에도 매출 163억원·영업손실 25억원으로 전년 동기 대비 매출이 급감하면서 2026년 연간 실적이 2025년 수준을 재현할 가능성이 불투명하다. Q4 이전까지 분기별 적자가 반복되는 구조이므로 대형 프로젝트 지연·취소 시 연간 실적 전체가 급격히 악화될 수 있다.",
+    "en": "The Q4 concentration pattern persists, with virtually all of 2025's operating profit (KRW 11.4 billion) generated in a single quarter while the combined Q1–Q3 operating loss reached KRW 3.4 billion. In 2026 Q1, revenue contracted sharply to KRW 16.3 billion and the operating loss widened to KRW 2.5 billion, calling into question whether 2025's annual performance is repeatable. Because the business runs at operating losses for most of the year, any delay or cancellation of key Q4 projects could rapidly and severely deteriorate the full-year result."
+   }
+  },
+  {
+   "title": {
+    "ko": "소규모·낮은 마진과 대형 경쟁사의 시장 지배",
+    "en": "Small Scale, Thin Margins, and Dominant Competition"
+   },
+   "body": {
+    "ko": "연간 매출이 2,000억원 안팎이고 영업이익률이 최근 수년 3~4%대에 불과해 삼성SDS·LG CNS·SK AX 등 대형 SI 3사 대비 절대 규모와 수익성 모두 크게 뒤처진다. 대형 경쟁사들이 공공·금융 AX 대형 수주를 선점하고 있어 아이크래프트의 독자 수주 영역이 제한적이며, 하도급·파트너 형태의 참여가 마진을 추가 압박할 수 있다. 낮은 영업이익률 구조에서 원가 상승이나 프로젝트 추가 비용이 발생하면 영업이익이 빠르게 잠식된다.",
+    "en": "With annual revenue around KRW 200 billion and operating margins persistently in the low single digits, iCraft trails the dominant big-three SI groups significantly in both absolute scale and profitability. The dominance of Samsung SDS, LG CNS, and SK AX in large public-sector and financial AX contracts limits iCraft's independent contracting scope, and subcontractor or partner-tier participation typically compresses margins further. At thin operating margins, any cost overruns or project delays can rapidly erode annual profit."
+   }
+  },
+  {
+   "title": {
+    "ko": "재무 레버리지 상승과 실적 가시성 부재",
+    "en": "Rising Leverage and Structural Earnings Opacity"
+   },
+   "body": {
+    "ko": "부채비율이 2024년 80.4%에서 2025년 104.8%로 상승해 재무 레버리지가 높아졌으며, 2022년(168.4%) 대비 개선됐으나 절대 수준이 여전히 100%를 상회한다. 공식 수주 잔고 또는 연간 가이던스 공시가 없어 외부 투자자 입장에서 연간 실적 가시성이 구조적으로 낮다. 소형주 특성상 유동성이 제한적이고 개별 프로젝트 결과에 따른 이익 불확실성으로 주가 변동성이 높은 편이다.",
+    "en": "The debt ratio climbed from 80.4% in 2024 to 104.8% in 2025, reflecting increased financial leverage as large-scale projects were executed, with the ratio still above 100% in absolute terms. The absence of formal order backlog disclosures or annual guidance structurally limits earnings visibility for external stakeholders. Low liquidity as a small-cap combined with high dependence on individual project outcomes sustains elevated price volatility and earnings uncertainty."
+   }
+  }
+ ],
+ "risks": [
+  {
+   "cat": {
+    "ko": "프로젝트 집중·발주 지연 리스크",
+    "en": "Project Concentration and Procurement Delay Risk"
+   },
+   "body": {
+    "ko": "연간 수익의 대부분이 Q4에 인식되는 구조로, 주요 프로젝트 1~2건의 수주 결과 또는 준공 시점 변경이 연간 실적 전체를 좌우하는 집중 리스크가 크다. 2025년 Q4 매출(1,091억원)이 연간 총매출의 약 53%를 차지한 점이 이 취약성을 단적으로 보여준다. 기간통신사업자 또는 공공기관의 예산 삭감·발주 지연 시 실적에 즉각적 충격이 발생할 수 있다.",
+    "en": "With the majority of annual profits recognized in Q4, the failure to secure or timely complete one or two key projects can swing the entire year's results materially. The fact that Q4 2025 revenue of KRW 109.1 billion represented roughly 53% of full-year revenue vividly illustrates this concentration. Budget cuts or procurement delays by telecom carriers or public-sector customers could immediately and severely impact results."
+   }
+  },
+  {
+   "cat": {
+    "ko": "경쟁 심화·수익성 압박 리스크",
+    "en": "Intensifying Competition and Margin Compression Risk"
+   },
+   "body": {
+    "ko": "대형 SI 3사 외에 AI 인프라 분야의 전문 스타트업과 글로벌 IT 기업의 국내 시장 공략이 강화되면서 경쟁 압력이 심화되고 있다. 비용 절감 중심 단기 프로젝트 수행 시 수익성 제약이 반복될 수 있으며, AI 인프라 특화 역량이 아직 검증 단계에 있어 차별화된 가격 협상력 확보가 쉽지 않다. 낮은 마진 구조에서의 경쟁 격화는 중기 수익성 개선 속도를 제한하는 구조적 요인으로 작용한다.",
+    "en": "Competition is intensifying beyond the big-three SI groups, with AI infrastructure-focused startups and global IT vendors expanding their domestic presence. Reliance on cost-reduction-focused short-term projects can repeatedly constrain margins, and AI infrastructure capabilities remain in an early validation stage, limiting pricing power. Escalating competition within an already thin-margin structure is a structural constraint on the pace of medium-term profitability improvement."
+   }
+  },
+  {
+   "cat": {
+    "ko": "매크로·기술·공급망 리스크",
+    "en": "Macro, Technology, and Supply Chain Risk"
+   },
+   "body": {
+    "ko": "국내 IT 예산 삭감이나 경기 둔화 시 대형 인프라 프로젝트의 발주 지연·취소 리스크가 확대된다. GPU 수급 병목(2026년 초 기준 글로벌 주문 약 200만장 대비 실제 확보 가능 물량이 약 70만장 수준으로 알려짐)과 AI 데이터센터 전력·냉각 인프라 제약이 프로젝트 일정을 지연시켜 매출 인식 시점을 미룰 수 있다. 급격한 AI 기술 발전에 따른 파트너십 업데이트 비용과 내부 역량 유지 부담도 지속적인 고정 비용 증가 요인이 된다.",
+    "en": "Macro deterioration or IT budget contractions can trigger delays or cancellations of large infrastructure projects, a key cyclical risk for a project-dependent business model. GPU supply bottlenecks — with available supply estimated at roughly 700,000 units versus global orders of approximately 2 million units as of early 2026 — and power and cooling infrastructure constraints in AI data centers can delay project timelines and defer revenue recognition. Rapid AI technology evolution also entails ongoing costs to update partnerships and maintain internal technical competencies, adding persistent upward pressure on fixed costs."
+   }
+  }
+ ],
+ "checkpoints": [
+  {
+   "when": {
+    "ko": "2026년 8월 중순",
+    "en": "Mid-August 2026"
+   },
+   "what": {
+    "ko": "2026년 2분기(Q2) 실적 발표: Q1 부진 이후 매출 회복 여부와 상반기 수주 파이프라인·하반기 프로젝트 잔고를 확인해 연간 실적 방향성을 가늠하는 핵심 지점이다.",
+    "en": "Q2 2026 earnings release: the primary checkpoint to assess whether Q1's slump is reversing, and to gauge H2 project backlog as the key leading indicator for full-year direction."
+   }
+  },
+  {
+   "when": {
+    "ko": "2026년 Q3 수시 공시",
+    "en": "Q3 2026 Ad-hoc DART Disclosures"
+   },
+   "what": {
+    "ko": "대형 AI 데이터센터·네트워크 인프라 수주 공시 여부: Q4 편중 구조상 하반기 계약 공시가 연간 실적의 선행 지표 역할을 하므로 DART 수시 공시를 주시해야 한다.",
+    "en": "Watch for major AI data center or network infrastructure contract announcements on DART: given the Q4-heavy model, H2 contract disclosures serve as the leading indicators for the full-year earnings outcome."
+   }
+  },
+  {
+   "when": {
+    "ko": "2026년 11월 중순",
+    "en": "Mid-November 2026"
+   },
+   "what": {
+    "ko": "2026년 3분기(Q3) 실적 발표: Q4 이전 최종 누적 실적을 확인하는 시점으로, Q1~Q3 누계 적자 규모와 Q4 예상 프로젝트 가시성을 바탕으로 연간 실적 추정치를 업데이트할 수 있다.",
+    "en": "Q3 2026 earnings: the last data point before Q4, enabling updated full-year estimates based on the cumulative Q1–Q3 loss and visible Q4 project completion prospects."
+   }
+  },
+  {
+   "when": {
+    "ko": "2027년 1~2월",
+    "en": "January–February 2027"
+   },
+   "what": {
+    "ko": "2026년 연간 잠정 실적 및 배당 결정 공시: 2025년 수준의 이익 재현 여부와 DPS 유지·변경 여부를 확인함으로써 이익 지속 가능성과 주주 환원 정책을 재평가할 수 있다.",
+    "en": "2026 preliminary full-year results and dividend decision: confirming whether 2025-level profitability is repeatable and whether the DPS is maintained or revised — key inputs for reassessing earnings sustainability and shareholder return policy."
+   }
+  },
+  {
+   "when": {
+    "ko": "2027년 상반기",
+    "en": "H1 2027"
+   },
+   "what": {
+    "ko": "국가 AI 컴퓨팅센터 개소 관련 공공 수주 동향: 정부 AI 인프라 예산 집행 현황과 아이크래프트의 직간접 참여 여부가 중기 수주 성장 가시성에 미치는 영향을 확인해야 한다.",
+    "en": "National AI Computing Center launch-related public-sector contracting activity: the degree of direct or indirect project participation by iCraft will be a critical indicator of medium-term order growth visibility."
+   }
+  }
+ ],
+ "verdict": {
+  "body": {
+   "ko": "아이크래프트는 통신 네트워크 구축 전문기업에서 AI 데이터센터·인프라 솔루션 사업자로 전환을 모색 중인 코스닥 소형 IT 기업이다. 2025년 창사 이래 최대 매출과 흑자 전환은 AI 인프라 수혜가 실제 실적으로 연결됐음을 보여주지만, 수익 대부분이 Q4 단독으로 집중되는 구조는 해소되지 않은 구조적 취약점이다. AI 인프라 투자 확대와 정부의 국가 AI 컴퓨팅 인프라 계획은 중기 수주 기회를 넓히는 긍정적 요인이나, 대형 SI 3사와의 경쟁 심화와 낮은 영업이익률은 성장 및 수익성 개선 속도를 제한하는 구조적 제약으로 작용한다. 2026년 Q1 부진은 연간 실적이 Q4 프로젝트 결과에 전적으로 달려 있음을 재확인하며, 공식 가이던스 부재로 연간 실적 가시성이 낮은 상황이다. 순자산에 근접한 주가 수준은 자산 가치 측면에서 하방을 지지하는 요인이 될 수 있으나, 이익 변동성이 높은 구조에서 밸류에이션 안정성 판단은 신중을 요한다. 투자자는 Q4 집중 구조에 따른 분기 변동성과 수주 불확실성을 핵심 리스크로 인식하고, 하반기 수주 공시와 Q2·Q3 실적 발표를 2026년 연간 궤적의 핵심 확인 포인트로 모니터링할 필요가 있다.",
+   "en": "iCraft is a small-cap KOSDAQ IT company in transition, moving from a telecom network construction specialist toward an AI data center and infrastructure solutions provider. Record 2025 revenue and an earnings recovery demonstrate that the AI infrastructure thesis translated into real results, but the structural reliance on Q4 projects remains an unresolved vulnerability. Expanding AI infrastructure investment and the government's national AI computing plan widen the medium-term contract pipeline, while intensifying competition from the big-three SI groups and persistently thin operating margins are structural constraints limiting the pace of growth and profitability improvement. The weak 2026 Q1 reconfirms that full-year performance once again hinges entirely on Q4 project outcomes, with low earnings visibility compounded by the absence of official guidance. The stock trading near book value provides some asset-based support, though high earnings volatility calls for caution in interpreting valuation stability. Investors should treat the Q4 concentration structure and order uncertainty as the primary risks and monitor H2 contract disclosures alongside Q2 and Q3 earnings releases as the decisive checkpoints for the 2026 annual trajectory."
+  }
+ },
+ "sources": [
+  "https://comp.fnguide.com/SVO2/ASP/SVD_Main.asp?gicode=A052460",
+  "https://www.k5.co.kr/stock/052460",
+  "https://kr.investing.com/equities/icraft-co-ltd",
+  "https://markets.hankyung.com/stock/052460",
+  "https://m.thinkpool.com/item/052460",
+  "https://finance.finup.co.kr/Stock/052460",
+  "https://comp.fnguide.com/SVO2/asp/SVD_shareanalysis.asp?pGB=1&gicode=A052460&cID=&MenuYn=Y&ReportGB=&NewMenuID=109&stkGb=701",
+  "https://comp.fnguide.com/SVO2/ASP/SVD_Finance.asp?pGB=1&gicode=A052460&MenuYn=Y&ReportGB=&NewMenuID=103",
+  "https://comp.fnguide.com/SVO2/ASP/SVD_Main.asp?pGB=1&gicode=A052460&MenuYn=Y&ReportGB=B&NewMenuID=Y&stkGb=701",
+  "https://m.thinkpool.com/stockDiscuss/052460/cont/773230",
+  "https://www.k5.co.kr/stock/052460/official_notice_read?sfm_idx=259696",
+  "https://news.nate.com/view/20260511n29161",
+  "https://alphasquare.co.kr/home/stock-summary?code=052460",
+  "https://kind.krx.co.kr/common/disclsviewer.do?method=search&acptno=20260306001465",
+  "https://tech.ktcloud.com/entry/2026-01-ktcloud-ai-datacenter-%EC%9D%B8%ED%94%84%EB%9D%BC-%ED%88%AC%EC%9E%90",
+  "https://itskorea.kr/boardDetail.do?type=8&idx=18461&currentPage=127&searchType=&searchText=",
+  "https://introl.com/blog/ai-infrastructure-capacity-planning-forecasting-gpu-2025-2030",
+  "https://www.xdnode.co.kr/insight/articles/gpu-shortage-2026-ai-procurement-strategy"
+ ],
+ "v": 2,
+ "model": "claude-sonnet-4-6",
+ "ticker": "052460",
+ "name": "아이크래프트",
+ "name_en": "iCRAFTCo.,Ltd.",
+ "sector": "IT·소프트웨어",
+ "categories": [
+  "IT·소프트웨어"
+ ],
+ "market": "코스닥",
+ "reportDate": "2026-06-19",
+ "reportTs": "2026-06-19 03:56",
+ "dataDate": "20260618",
+ "quant": {
+  "asOf": "2026-06-18",
+  "fs_basis": "연결(CFS) · DART 공시 확정치 · 지배주주 기준 순이익",
+  "annual": [
+   {
+    "year": 2025,
+    "rev": 206499542172,
+    "op": 8014943926,
+    "np": 10143990865,
+    "np_owner": 10148885036,
+    "equity": 46778196760,
+    "equity_owner": 46512835790,
+    "liab": 49028737967,
+    "cfo": 6652652001,
+    "eps_basic": 842,
+    "opm": 3.9,
+    "roe": 21.8,
+    "debt_ratio": 104.8
+   },
+   {
+    "year": 2024,
+    "rev": 100488003614,
+    "op": 1598422014,
+    "np": -845898036,
+    "np_owner": -845898036,
+    "equity": 36091205895,
+    "equity_owner": 35820950754,
+    "liab": 29021324257,
+    "cfo": -674550357,
+    "eps_basic": -77,
+    "opm": 1.6,
+    "roe": -2.4,
+    "debt_ratio": 80.4
+   },
+   {
+    "year": 2023,
+    "rev": 138664496786,
+    "op": 5149045968,
+    "np": 4591745863,
+    "np_owner": 4555441418,
+    "equity": 37893738811,
+    "equity_owner": 37703690338,
+    "liab": 37525247049,
+    "cfo": 8669275806,
+    "eps_basic": 381,
+    "opm": 3.7,
+    "roe": 12.1,
+    "debt_ratio": 99.0
+   },
+   {
+    "year": 2022,
+    "rev": 112898330825,
+    "op": 247175358,
+    "np": 323155060,
+    "np_owner": 323155060,
+    "equity": 33301992948,
+    "equity_owner": 33148248920,
+    "liab": 56094693249,
+    "cfo": -7279154208,
+    "eps_basic": 42,
+    "opm": 0.2,
+    "roe": 1.0,
+    "debt_ratio": 168.4
+   }
+  ],
+  "quarterly": [
+   {
+    "q": "2025Q1",
+    "rev": 40293839023,
+    "op": -1636614026,
+    "np_owner": -1091944733
+   },
+   {
+    "q": "2025Q2",
+    "rev": 29380493428,
+    "op": -721866803,
+    "np_owner": 2053442255
+   },
+   {
+    "q": "2025Q3",
+    "rev": 27731664273,
+    "op": -1045755658,
+    "np_owner": 995242660
+   },
+   {
+    "q": "2025Q4",
+    "rev": 109093545448,
+    "op": 11419180413,
+    "np_owner": 8192144854
+   },
+   {
+    "q": "2026Q1",
+    "rev": 16341978429,
+    "op": -2499223109,
+    "np_owner": -1941706850
+   }
+  ],
+  "valuation": {
+   "price": 3335,
+   "mcap": 0.0487,
+   "shares": 14607936,
+   "total_shares": 14607936,
+   "wavg_shares": 12135667,
+   "per": null,
+   "eps": null,
+   "pbr": 0.93,
+   "bps": 3572,
+   "roe_ttm": 23.8,
+   "ttm_window": "2025Q2~2026Q1",
+   "ttm_np_owner": 9299122919,
+   "pbr_krx": 0.87,
+   "bps_krx": 3826.0,
+   "basis": "PER·EPS·PBR·BPS 모두 자체 산출(네이버·토스와 동일 방식) · 배당은 DART 공시 주당현금배당금(보완:KRX) ÷ 현재가",
+   "dps": 100.0,
+   "div": 3.0
+  }
+ }
+}

@@ -1,0 +1,356 @@
+{
+ "title": {
+  "ko": "광전송 흑자 복귀 · 양자보안이 쏘는 다음 스텝",
+  "en": "Optical Transmission Back to Profit; Quantum Security Seeks New Ground"
+ },
+ "lead": {
+  "ko": "코위버는 2024년 대규모 영업적자에서 2025년 영업흑자로 전환했으나, 수익이 4분기에 집중되는 뚜렷한 계절성과 2026년 1분기 재적자가 이익 지속성에 의문을 남기며, 양자암호 통합 솔루션 상용화 수주가 차기 성장 레버의 핵심 변수로 부상하고 있다.",
+  "en": "Coweaver returned to operating profit in FY2025 after a steep loss year in FY2024, yet an extreme fourth-quarter earnings concentration and a renewed operating loss in Q1 2026 raise questions about profit sustainability, while the conversion of its integrated quantum-security solutions into visible contract wins emerges as the pivotal next-stage growth driver."
+ },
+ "keypoints": [
+  {
+   "ko": "2025년 흑자 전환: 매출 626억원·영업이익 3억원(OPM 0.5%)으로 2024년 OPM -16.3%에서 반등 성공",
+   "en": "FY2025 return to profit: revenue ~KRW 62.6bn, operating profit ~KRW 0.3bn (OPM 0.5%), recovering from FY2024's OPM of -16.3%"
+  },
+  {
+   "ko": "극단적 4분기 쏠림: 2025년 연간 영업이익의 실질적 전부가 Q4(46억원)에서 발생, Q1~Q3 합산 영업손실 -43억원",
+   "en": "Extreme Q4 concentration: virtually all FY2025 operating profit (~KRW 4.6bn) earned in Q4 alone, while Q1–Q3 combined posted ~KRW 4.3bn in operating losses"
+  },
+  {
+   "ko": "양자보안 선점: 국내 최초 QENC 국가공인인증 획득, WIS 2026서 QKD·PQC·QENC 통합 솔루션 공개",
+   "en": "Quantum-security lead: Korea's first nationally certified QENC device; integrated QKD-PQC-QENC solution unveiled at WIS 2026 in April"
+  },
+  {
+   "ko": "재무 안정화: 부채비율 28.2%(2022)→16.1%(2025), 2025년 영업현금흐름 +37억원으로 흑자 전환",
+   "en": "Balance-sheet improvement: debt ratio declined from 28.2% (2022) to 16.1% (2025); operating cash flow turned positive at ~KRW 3.7bn in FY2025"
+  },
+  {
+   "ko": "2026년 1분기 재확인된 계절성: 매출 124억원·영업손실 22억원·지배순손실 17억원으로 상반기 부진 지속",
+   "en": "Seasonality reaffirmed in Q1 2026: revenue ~KRW 12.4bn, operating loss ~KRW 2.2bn, controlling-shareholder net loss ~KRW 1.7bn"
+  }
+ ],
+ "business": {
+  "ko": "코위버는 2000년 설립된 유선 광전송장비 전문기업으로 2001년 코스닥에 상장했으며, 자회사 위버브릿지(주)가 단말장비 개발·제조를 담당해 네트워크 인프라부터 엔드포인트까지 솔루션을 제공한다. 주요 제품군은 전송시장 주류인 ROADM(기간망), POTN·OTN(메트로망), 5G-PON·광단말장치(액세스망)로 구성되며, WDM·PTN·MSPP 등 핵심 원천기술을 자체 보유하고 있다. 주요 매출처는 KT·LG유플러스·SK브로드밴드 등 국내 통신 3사로, 이들 대형 통신사업자의 장비 발주 사이클에 실적이 직접 연동된다. 최근에는 기존 광전송장비에 양자암호 기술을 결합하는 방향으로 제품군을 확장하고 있다. 2024년 10월에는 국내 최초로 1G/10G/100G급 양자통신암호장비(QENC) 국가공인인증을 획득했으며, 2026년 4월 월드IT쇼(WIS)에서는 단일 ROADM 섀시(UTRANS-6300p V9) 내에 QKD·PQC·QENC 블레이드를 통합한 차세대 솔루션을 공개해 통신사와 공공기관의 긍정적 평가를 받았다. 전체 임직원 169명 중 66%가 기술 인력이며 연구소 인력의 34% 이상이 15년 이상의 현장 경력자로, 기술 집약적 구조를 유지하고 있다. 경쟁 환경에서는 국내 PTN 시장 선두인 우리넷 등과 직접 경합하며, 글로벌 대형 장비사와의 간접 경쟁도 상존한다.",
+  "en": "Coweaver, founded in 2000 and KOSDAQ-listed since 2001, is a specialist in wired optical transmission equipment; subsidiary Weaverbridge handles terminal device development and manufacturing, enabling end-to-end network infrastructure coverage. Its core product lineup spans ROADM (backbone), POTN/OTN (metro), and 5G-PON/optical terminal devices (access), underpinned by proprietary WDM, PTN, and MSPP source technologies. Revenue is primarily driven by Korea's three major telecom carriers—KT, LG Uplus, and SK Broadband—making earnings highly sensitive to their equipment procurement cycles. The company has been expanding its portfolio by embedding quantum-encryption technology into existing optical transmission equipment. In October 2024, it became the first domestic firm to obtain Korea's national certification for 1G/10G/100G-class quantum encryption communication equipment (QENC). At WIS 2026 in April, Coweaver unveiled a next-generation integrated solution fitting QKD, PQC, and QENC blades into a single ROADM chassis (UTRANS-6300p V9), earning positive feedback from telecom and public-sector clients. Of its 169 total employees, 66% are technical staff and more than 34% of R&D personnel have over 15 years of field experience, reflecting a deeply technology-intensive structure. On the competitive front, the company directly competes with domestic PTN market leader Woori Networks and faces indirect pressure from large global equipment vendors."
+ },
+ "earnings": {
+  "ko": "2022년 매출 896억원·영업이익 3억원(OPM 0.3%)을 기록한 코위버는 2023년 매출이 834억원으로 소폭 감소하며 영업손실 -26억원(OPM -3.1%)으로 전환했다. 2024년에는 매출이 468억원으로 급감하며 영업손실 -76억원(OPM -16.3%)·당기순손실 -41억원을 기록해 4년 중 가장 어려운 해였고, 영업현금흐름도 -114억원까지 악화됐다. 2025년에는 매출이 626억원으로 회복하고 영업이익 3억원(OPM 0.5%)·당기순이익 35억원으로 흑자 전환에 성공했으며, 영업현금흐름도 +37억원으로 플러스 반전했다. 다만 분기별로 보면 극단적인 4분기 집중 구조가 뚜렷하다. 2025년 1~3분기 합산 영업손실은 약 -43억원인 반면, 4분기 단독 영업이익은 46억원이었다. 4분기 매출 264억원은 연간 전체의 약 42%에 달하며, 4분기 지배순이익만 55억원을 기록했다. 2026년 1분기는 매출 124억원·영업손실 22억원·지배순손실 17억원으로 재적자를 기록해 계절성이 재확인됐다. 재무 건전성 측면에서는 부채비율이 2022년 28.2%에서 2025년 16.1%로 지속 하락했으며, 자기자본은 1,585억원 수준으로 안정적이다.",
+  "en": "Coweaver recorded FY2022 revenue of ~KRW 89.6bn with an operating profit of ~KRW 0.3bn (OPM 0.3%). In FY2023 revenue edged down to ~KRW 83.4bn, tipping to an operating loss of ~KRW 2.6bn (OPM -3.1%). FY2024 proved the most difficult year in the recent cycle: revenue collapsed to ~KRW 46.8bn, the operating loss widened to ~KRW 7.6bn (OPM -16.3%), the net loss attributable to controlling shareholders reached ~KRW 4.1bn, and operating cash flow deteriorated to –KRW 11.4bn. FY2025 marked a recovery—revenue rose to ~KRW 62.6bn, operating profit turned positive at ~KRW 0.3bn (OPM 0.5%), net profit attributable to owners reached ~KRW 3.5bn, and operating cash flow swung to +KRW 3.7bn. However, the quarterly breakdown reveals extreme fourth-quarter concentration: Q1–Q3 2025 combined operating loss was approximately –KRW 4.3bn, while Q4 alone delivered ~KRW 4.6bn in operating profit on ~KRW 26.4bn in revenue (roughly 42% of the full-year total), with Q4 controlling-shareholder net profit at ~KRW 5.5bn. Q1 2026 reverted to a loss—revenue ~KRW 12.4bn, operating loss ~KRW 2.2bn, controlling-shareholder net loss ~KRW 1.7bn—reaffirming the seasonal pattern. The debt ratio has declined steadily from 28.2% (2022) to 16.1% (2025), and shareholders' equity stands at ~KRW 158.5bn."
+ },
+ "industry": {
+  "ko": "국내 광전송장비 산업은 KT·SK텔레콤·LG유플러스 등 통신 3사의 설비투자(CAPEX) 사이클에 직접 연동된다. 2025년 국내 통신 3사 합산 CAPEX는 약 7.6조원 수준으로 전망되며, 5G 네트워크 성숙기 진입과 함께 이동통신 분야 전통적 장비 투자는 감소 추세에 있다. 다만 KT가 국내 통신사 중 유일하게 5G 단독모드(SA) 전국 상용망을 구축 완료하고, SKT가 AI 인프라 슈퍼 하이웨이 구축에 나서면서 네트워크 고도화 수요는 구조적으로 유지되고 있다. 업계에서는 2030년까지 ROADM·POTN 장비 수요가 지속될 것으로 전망하며, AI 데이터센터 트래픽 급증이 광전송 인프라 업그레이드 필요성을 높이는 요인으로 부각되고 있다. 양자암호 시장은 AI 시대 보안 수요 확대 및 정부 정책 지원을 배경으로 초기 성장 궤도에 진입했으며, 공공기관·금융기관 전용망에서 QENC·QKD 기반 양자보안 장비 도입 수요가 확대되고 있다. 글로벌 네트워크 장비 시장은 2023~2032년 CAGR 약 5%로 성장이 전망되나, 중국산 저가 장비의 침투와 글로벌 대형 장비사와의 경쟁은 국내 중소형 통신장비 업체들의 가격 결정력을 제약하는 구조적 요인이다.",
+  "en": "Korea's optical transmission equipment industry is closely tied to the CAPEX cycles of three domestic telecom carriers—KT, SK Telecom, and LG Uplus—with their combined CAPEX estimated at approximately KRW 7.6 trillion in 2025 and traditional wireless equipment investment on a declining trend as 5G networks mature. Nonetheless, KT's completion of the country's only nationwide 5G standalone (SA) network and SK Telecom's AI infrastructure expansion plans sustain structural demand for network upgrading. Industry projections point to continued ROADM and POTN device demand through 2030, and the surge in AI data-center traffic elevates the urgency of optical transmission infrastructure upgrades. The quantum-security market is entering a nascent growth phase underpinned by AI-era security requirements and government policy support, with QENC and QKD device adoption accelerating in government agency and financial-sector dedicated networks. Globally, the network equipment market is projected to grow at approximately 5% CAGR through 2032, though penetration by low-cost Chinese equipment vendors and competition from large global players structurally constrain the pricing power of smaller Korean suppliers."
+ },
+ "outlook": {
+  "ko": "2026년 4월 WIS에서 코위버가 공개한 단일 섀시 통합형 양자암호 솔루션은 기존 대비 구축 비용과 운용 복잡도를 낮추는 차별화 포인트로, 통신사와 공공기관으로부터 긍정적인 반응을 받았다. KT를 양자보안 파트너로 삼아 차세대 POTN 장비 공급을 가속하고 있으며, 공공기관·금융기관 전용망으로의 시장 확대 가능성도 열려 있다. 5G Advanced 장비 투자가 국내에서 본격화될 경우 코위버의 5G-PON·ROADM 장비 수요가 추가로 확대될 수 있다. 다만 2026년 상반기 실적은 계절성 구조상 부진이 이어질 것으로 예상되며, 하반기 통신사 CAPEX 집행 규모가 연간 수익성을 결정하는 핵심 변수로 작용할 전망이다. 재무적으로는 부채비율 16.1%·자기자본 1,585억원으로 신규 수주 대응 역량이 충분하며, 2025년 영업현금흐름이 플러스로 전환되어 단기 유동성 우려는 제한적이다. DPS 50원의 현금배당은 2025년 기준으로 유지됐으나, 이익 구조가 안정되기 전까지는 배당 확대 여력이 제한적일 수 있다. 해외 시장(동남아·중동 등) 진출 가능성은 정성적 성장 옵션으로 존재하나, 현 시점에서 확인된 수주 공시는 없다.",
+  "en": "Coweaver's single-chassis integrated quantum-security solution unveiled at WIS 2026 in April lowers deployment cost and operational complexity relative to separate-component builds, earning favorable feedback from telecom and public-sector clients. With KT designated as a quantum-security partner, Coweaver is accelerating next-generation POTN equipment supply, and prospects exist for expansion into government agency and financial-sector dedicated networks. If 5G Advanced equipment investment accelerates domestically, incremental demand for 5G-PON and ROADM products could emerge. That said, H1 2026 results are expected to remain subdued given seasonal patterns, and H2 2026 telecom carrier CAPEX deployment will be the critical variable for full-year profitability. Financially, a 16.1% debt ratio and ~KRW 158.5bn in shareholders' equity provide adequate capacity to pursue new orders, and the return to positive operating cash flow in FY2025 limits near-term liquidity concerns. The cash dividend of KRW 50 per share (DPS) was maintained for FY2025, though dividend growth may remain constrained until earnings stability is achieved. Overseas expansion into Southeast Asia and the Middle East represents a qualitative growth option, but no confirmed procurement disclosures have been made as of the report date."
+ },
+ "valuation_comment": {
+  "ko": "현재 주가는 주당순자산(BPS 17,073원) 대비 상당한 할인 구간에서 형성되어 있으며, 이는 2022~2025년 4개년에 걸쳐 영업이익률이 0.3%→-3.1%→-16.3%→0.5%로 등락을 반복하며 이익 창출력의 안정성이 낮다는 점을 시장이 반영한 결과로 풀이된다. 주당이익(EPS 407원) 기준으로 보면, 이익의 대부분이 4분기에 집중되는 계절성으로 인해 연간 단순 환산 수치의 대표성이 제한적이며 분기별 변동폭도 크다. DPS 50원의 현금배당은 2025년 기준 유지됐으나, 배당수익률은 동종 코스닥 통신장비 업종 평균을 하회하는 수준으로 배당 매력이 두드러지지 않는다. 양자보안 신사업이 가시적 수주로 이어져 이익 분포가 분기별로 고르게 분산되기 시작하면 순자산 대비 할인 구간의 완화 가능성이 있으나, 현재의 계절성·낮은 마진 구조가 유지되는 한 할인은 지속될 개연성이 높다.",
+  "en": "The stock is trading at a meaningful discount to book value on a per-share basis (BPS: KRW 17,073), reflecting the market's assessment of inconsistent earnings power—operating margins oscillated at 0.3%, -3.1%, -16.3%, and 0.5% across FY2022–FY2025. On a per-share earnings basis (EPS: KRW 407), the annual figure has limited representativeness given that virtually all profit is earned in Q4, resulting in large intra-year swings. The cash dividend of KRW 50 per share (DPS) was maintained for FY2025, but the yield trails the KOSDAQ communications equipment sector average, making dividend appeal relatively modest. Should quantum-security business wins become visible in financial disclosures and quarterly earnings distribution begin to normalize, the book-value discount could narrow; however, as long as the extreme Q4 concentration and thin margin structure persist, the discount to net asset value is likely to remain."
+ },
+ "bull": [
+  {
+   "title": {
+    "ko": "양자보안 신시장 선점과 국가 인증 경쟁우위",
+    "en": "First-Mover Advantage in Quantum-Security Market with National Certification"
+   },
+   "body": {
+    "ko": "코위버는 국내 최초로 1G/10G/100G급 QENC 국가공인인증을 획득했으며, 2026년 WIS에서 단일 ROADM 섀시 내 QKD·PQC·QENC를 통합한 차세대 솔루션을 공개해 기술 선도 포지션을 확보했다. 통합형 구조는 별도 구축 대비 비용과 운용 복잡도를 낮추는 차별화 포인트로, 통신사·공공기관·금융기관의 채택 장벽을 낮추는 효과가 기대된다. 정부의 양자암호 정책 지원과 공공망 보안 강화 기조가 이어질수록 선도 인증 보유자로서의 수주 경쟁력은 강화된다.",
+    "en": "Coweaver holds Korea's first nationally certified QENC for 1G/10G/100G-class speeds and unveiled an integrated QKD-PQC-QENC solution within a single ROADM chassis at WIS 2026, establishing a clear technology lead. The all-in-one design lowers deployment cost and operational complexity relative to separate-component builds, reducing customer adoption barriers for telecom carriers, government agencies, and financial institutions. As government quantum-communication policy support and public network security mandates intensify, Coweaver's certified-supplier status should strengthen its competitiveness in contract bidding."
+   }
+  },
+  {
+   "title": {
+    "ko": "재무 안정화와 이익 복귀로 사이클 최저점 통과",
+    "en": "Financial Stabilization and Return to Profit Signal Cycle Trough Has Passed"
+   },
+   "body": {
+    "ko": "2024년 대규모 영업손실(-76억원, OPM -16.3%) 이후 2025년 영업이익 3억원·당기순이익 35억원으로 흑자 전환했고, 영업현금흐름도 -114억원에서 +37억원으로 반전했다. 부채비율은 2022년 28.2%에서 2025년 16.1%로 지속 하락했으며, 자기자본 1,585억원을 바탕으로 차입 없이 수주 확대에 대응할 수 있는 재무 여력을 갖추고 있다. 낮은 부채 구조는 금리 환경 변화에 대한 민감도도 낮춰 중장기 이익 방어력을 높이는 요인이다.",
+    "en": "After a large operating loss of ~KRW 7.6bn (OPM -16.3%) in FY2024, FY2025 returned to operating profit of ~KRW 0.3bn and net profit attributable to owners of ~KRW 3.5bn, while operating cash flow swung from –KRW 11.4bn to +KRW 3.7bn. The debt ratio has steadily declined from 28.2% in 2022 to 16.1% in 2025, and shareholders' equity of ~KRW 158.5bn provides capacity to pursue new orders without additional borrowing. The low-leverage structure also reduces interest-rate sensitivity, enhancing medium-to-long-term earnings resilience."
+   }
+  },
+  {
+   "title": {
+    "ko": "5G SA·AI 인프라 투자 확대에 따른 전방 수요 성장 가능성",
+    "en": "Upside Potential from 5G SA and AI Infrastructure Investment Expansion"
+   },
+   "body": {
+    "ko": "KT가 국내 유일의 5G SA 전국망을 구축 완료한 가운데, AI-RAN 및 5G Advanced 투자가 본격화될 경우 기간망(ROADM)·메트로망(POTN)·액세스망(5G-PON)을 아우르는 코위버의 전 구간 장비 수요가 동시에 확대될 수 있다. 업계에서는 2030년까지 ROADM·POTN 장비 수요가 지속될 것으로 전망하며, AI 데이터센터 트래픽 급증이 광전송 인프라 업그레이드 필요성을 더욱 높이고 있다. 통신 3사의 AI 투자 기조 전환이 광전송 장비 발주 증가로 이어지면 코위버의 외형 성장 가속도가 높아질 수 있다.",
+    "en": "With KT having completed the country's only nationwide 5G SA network, the onset of AI-RAN and 5G Advanced network upgrades could simultaneously stimulate demand across Coweaver's full product range—backbone (ROADM), metro (POTN/OTN), and access (5G-PON). Industry projections anticipate sustained ROADM and POTN device demand through 2030, and the surge in AI data-center traffic elevates the urgency of optical transmission infrastructure upgrades. If the domestic carriers' strategic pivot toward AI infrastructure translates into rising equipment orders, Coweaver's top-line growth trajectory could steepen meaningfully."
+   }
+  }
+ ],
+ "bear": [
+  {
+   "title": {
+    "ko": "극단적 계절성과 이익 가시성 부재",
+    "en": "Extreme Seasonality and Lack of Earnings Visibility"
+   },
+   "body": {
+    "ko": "2025년 연간 영업이익의 사실상 전부가 4분기(46억원)에서 발생한 반면, 1~3분기 합산 영업손실은 약 -43억원이었다. 2026년 1분기도 영업손실 22억원을 기록해 계절성이 재확인됐다. 이러한 구조에서는 분기별 실적 발표 때마다 주가 변동성이 높게 나타날 수 있으며, 연간 이익의 방향성 예측이 어렵다. 4분기 수주 집중이 고객사의 예산 사이클에 종속된 구조적 취약점임을 감안하면, 이익 분산화 없이는 시장 신뢰 회복에 한계가 있다.",
+    "en": "Virtually all of FY2025's operating profit (~KRW 4.6bn) was earned in Q4 alone, while Q1–Q3 combined posted an operating loss of approximately –KRW 4.3bn. Q1 2026 again recorded an operating loss of ~KRW 2.2bn, reconfirming the seasonal pattern. This structure implies elevated quarterly share-price volatility and makes annual earnings directional forecasting difficult. The fourth-quarter revenue concentration, driven by customer budget cycles, represents a structural vulnerability, and without broader quarterly earnings diversification, restoring market confidence in earnings predictability will be challenging."
+   }
+  },
+  {
+   "title": {
+    "ko": "통신사 CAPEX 감소 추세와 전통 장비 발주 불확실성",
+    "en": "Declining Telecom CAPEX Trend and Uncertainty in Traditional Equipment Orders"
+   },
+   "body": {
+    "ko": "국내 통신 3사의 연간 CAPEX는 5G 네트워크 성숙기 진입과 함께 감소 추세이며, 2025년 예상치는 약 7.6조원으로 5G 초기 대비 낮은 수준이다. 통신사들이 CAPEX 중 AI 서비스·데이터센터 비중을 높이면 전통 광전송 장비 발주 몫이 줄어들 수 있다. 2024년 코위버 매출이 468억원으로 급감한 것도 통신사 발주 감소와 직결된 것으로 풀이되며, 발주 재개 타이밍을 예측하기 어렵다는 점이 실적 불확실성을 높인다.",
+    "en": "Domestic telecom carrier CAPEX has been on a declining trend as 5G matures, with the combined estimate for 2025 at approximately KRW 7.6 trillion—below 5G rollout-era peaks. As carriers redirect CAPEX toward AI services and data centers, the share allocated to traditional optical transmission equipment procurement may shrink further. The steep drop in Coweaver's revenue to ~KRW 46.8bn in FY2024 appears directly linked to reduced carrier ordering, illustrating the company's vulnerability to telecom investment cycles, and the difficulty of predicting order resumption timing elevates earnings uncertainty."
+   }
+  },
+  {
+   "title": {
+    "ko": "구조적 저마진과 양자 사업 수주 전환 불확실성",
+    "en": "Structurally Thin Margins and Uncertain Quantum-Business Contract Conversion"
+   },
+   "body": {
+    "ko": "코위버의 2022~2025년 4개년 영업이익률은 0.3%, -3.1%, -16.3%, 0.5%로, 실질적인 이익 창출력이 매우 취약한 구조다. 양자암호 솔루션의 국가공인인증과 WIS 전시는 기술 완성도를 입증했지만, 공공·금융기관의 양자보안 도입 타임라인과 계약 규모는 현 시점에서 확인되지 않는다. 양자 사업의 매출 기여가 가시화되기 전까지는 기존 광전송 장비의 이익 변동성에 전적으로 노출되는 구조가 지속된다.",
+    "en": "Operating margins over FY2022–FY2025 stood at 0.3%, -3.1%, -16.3%, and 0.5% respectively, indicating structurally thin profitability. While national certification and the WIS 2026 exhibition validate Coweaver's quantum-security technical maturity, the adoption timeline and contract scale for public-sector and financial-sector quantum-security deployments remain unconfirmed. Until quantum-business revenue contributions become visible in financial statements, the company remains fully exposed to the earnings volatility of its legacy optical transmission business."
+   }
+  }
+ ],
+ "risks": [
+  {
+   "cat": {
+    "ko": "고객 집중 리스크",
+    "en": "Customer Concentration Risk"
+   },
+   "body": {
+    "ko": "매출의 대부분이 KT·LG유플러스·SK브로드밴드 등 국내 통신 3사에서 발생하는 구조로, 특정 통신사의 발주 축소나 장비 공급업체 교체 결정이 실적에 즉각적이고 큰 타격을 줄 수 있다. 2024년 매출 급감(-약 44%)은 이러한 집중 리스크가 현실화된 사례로 해석된다. 해외 고객 다변화나 공공·금융 부문 확대 없이는 이 리스크 구조가 중장기적으로 지속될 가능성이 높다.",
+    "en": "The bulk of revenue derives from Korea's three major telecom carriers—KT, LG Uplus, and SK Broadband—meaning a reduction in orders or a vendor change decision by any single carrier can have an immediate and outsized impact on results. The roughly 44% revenue decline in FY2024 can be viewed as a materialization of this concentration risk. Without geographic diversification into overseas markets or meaningful expansion into public-sector and financial-sector clients, this structural vulnerability is likely to persist over the medium term."
+   }
+  },
+  {
+   "cat": {
+    "ko": "가격 경쟁 및 기술 대체 리스크",
+    "en": "Price Competition and Technology Substitution Risk"
+   },
+   "body": {
+    "ko": "국내 광전송장비 시장은 우리넷 등 국내 경쟁사와의 경쟁은 물론, 글로벌 대형 장비사 및 중국산 저가 장비의 침투 위협에 노출되어 있다. 장비 사이클이 빠르게 전환되는 경우 기존 제품군의 진부화 위험이 존재하며, 6G·AI-RAN 등 차세대 기술로의 전환 속도가 코위버의 기존 제품 수명 주기를 단축시킬 수 있다. 마진이 이미 얇은 구조에서 가격 인하 압력이 더해지면 수익성이 빠르게 악화될 수 있다.",
+    "en": "The domestic optical transmission equipment market is exposed to competition from domestic rivals such as Woori Networks and threats from large global equipment vendors and low-cost Chinese alternatives. Rapid technology transitions carry product obsolescence risk, and the pace of next-generation shifts to 6G and AI-RAN could compress the life cycle of Coweaver's existing product lines. Given an already-thin margin structure, any additional pricing pressure from competitors could rapidly erode profitability."
+   }
+  },
+  {
+   "cat": {
+    "ko": "양자보안 규제·인증·예산 지연 리스크",
+    "en": "Quantum-Security Regulatory, Certification, and Budget Delay Risk"
+   },
+   "body": {
+    "ko": "양자암호 통신장비의 공공 도입은 정부 정책·규제 일정·예산 배정에 크게 의존하며, 공공기관의 조달 사이클은 일반 기업 대비 길고 예측이 어렵다. 추가 인증 획득 요건 변경 시 재개발 비용이 발생할 수 있으며, 글로벌 PQC 표준(NIST FIPS 203·204 등) 개정이 기술 투자 가치를 희석시킬 가능성도 있다. 양자보안 시장 자체가 아직 초기 형성 단계에 있어 대규모 수주로의 전환 시점이 당초 기대보다 지연될 수 있다.",
+    "en": "Public-sector adoption of quantum-crypto equipment depends heavily on government policy timelines, regulatory schedules, and budget allocations; government procurement cycles are longer and less predictable than private-sector ones. Product re-development costs could arise if certification requirements change, and revisions to global PQC standards (e.g., NIST FIPS 203/204) could dilute the value of existing R&D investments. The quantum-security market itself remains in an early formation stage, and the timeline for conversion into large-scale contracts could slip beyond initial expectations."
+   }
+  }
+ ],
+ "checkpoints": [
+  {
+   "when": {
+    "ko": "2026년 8월 초",
+    "en": "Early August 2026"
+   },
+   "what": {
+    "ko": "2026년 2분기 실적 발표: 상반기 매출·영업손익 추이를 통해 2026년 전체 실적 방향성 및 계절성 완화 여부 확인. 양자보안 장비 관련 매출이 분기 실적에 처음 반영되는지도 주목.",
+    "en": "Q2 2026 earnings release: review H1 2026 revenue and operating profit/loss trends to assess the full-year earnings trajectory and any moderation of the extreme seasonal pattern; watch specifically for any initial quantum-security equipment revenue recognition in the quarterly figures."
+   }
+  },
+  {
+   "when": {
+    "ko": "2026년 하반기 수시",
+    "en": "Throughout H2 2026"
+   },
+   "what": {
+    "ko": "통신 3사·공공·금융기관의 광전송·양자암호 장비 수주 DART 공시: 가시적 수주 공시가 나타날 경우 신규 성장 동력 진입의 신호이며, 발주 규모와 납기 스케줄이 2027년 실적 방향성을 결정.",
+    "en": "DART contract disclosures for optical-transmission and quantum-encryption equipment orders from telecom carriers, government agencies, and financial institutions: visible procurement announcements would signal entry into a new growth phase, with order size and delivery schedules shaping the FY2027 earnings direction."
+   }
+  },
+  {
+   "when": {
+    "ko": "2026년 하반기 통신사 CAPEX 집행 동향",
+    "en": "H2 2026 Telecom Carrier CAPEX Deployment"
+   },
+   "what": {
+    "ko": "KT·LG유플러스·SK브로드밴드의 하반기 네트워크 장비 발주 규모: 코위버의 연간 매출이 전년 수준을 유지할지, 5G Advanced 관련 발주 일정이 앞당겨질지 확인하는 핵심 지표.",
+    "en": "Carrier network equipment order flow for H2 2026: monitor whether Coweaver's full-year revenue can sustain or exceed the prior year and whether 5G Advanced procurement timelines are being accelerated—key determinants of full-year profitability."
+   }
+  },
+  {
+   "when": {
+    "ko": "2026년 정부 양자 예산 발표 시점(하반기)",
+    "en": "Government Quantum Budget Announcement (H2 2026)"
+   },
+   "what": {
+    "ko": "과학기술정보통신부의 2027년도 양자암호통신 관련 예산 배정 및 조달 계획 발표: 예산 규모에 따라 공공기관 양자장비 조달 타임라인이 결정되며, 코위버의 QENC·통합 솔루션 수주 시기에 직접 영향.",
+    "en": "Ministry of Science and ICT's FY2027 quantum-communication budget and procurement plan announcement: the scale of public funding will determine the government quantum-equipment procurement timeline, directly affecting the timing of Coweaver's QENC and integrated-solution contract wins."
+   }
+  },
+  {
+   "when": {
+    "ko": "2027년 3월 말",
+    "en": "Late March 2027"
+   },
+   "what": {
+    "ko": "2026년 연간 사업보고서 및 배당 확정: 양자보안 신사업의 연간 매출 기여도, 영업이익률 지속 여부, DPS 50원 배당 정책의 유지·변경 여부를 통해 이익 안정성 개선을 최종 검증.",
+    "en": "FY2026 annual report and final dividend declaration: assess the quantum-security segment's annual revenue contribution, sustainability of positive operating margin, and any change to the KRW 50 per share DPS policy as a comprehensive validation of whether earnings stability has genuinely improved."
+   }
+  }
+ ],
+ "verdict": {
+  "body": {
+   "ko": "코위버는 국내 광전송장비 시장에서 ROADM·POTN 원천기술을 보유한 전문 기업으로, 2024년 대규모 적자에서 2025년 흑자 전환에 성공하며 실적 사이클의 최악 구간을 통과했다. 부채비율 16.1%·자기자본 1,585억원의 안정적 재무 구조와 양자암호 국가 인증이라는 기술적 자산은 긍정적 기반이 된다. 그러나 이익의 대부분이 4분기에 집중되는 계절성과 2026년 1분기 재적자는 이익 지속성과 가시성에 대한 시장의 신뢰를 제한하는 요소다. 2026년 WIS에서 공개된 통합형 양자암호 솔루션이 통신사·공공기관의 실질 수주로 이어지기까지는 시간이 걸릴 수 있으며, 그 전까지는 기존 광전송 장비 사업의 발주 사이클 변동에 실적이 크게 좌우된다. 결국 코위버의 중기 방향성은 양자보안 수주 가시화 속도, 하반기 통신사 CAPEX 집행 규모, 그리고 분기별 이익 분산화 진행 여부라는 세 가지 변수가 동시에 확인되어야 입체적으로 평가할 수 있다. 본 보고서는 공시·언론·시장 데이터를 근거로 정보 제공 목적으로 작성되었으며, 투자 권유가 아닙니다.",
+   "en": "Coweaver is a specialist optical transmission equipment manufacturer with proprietary ROADM and POTN source technology, having navigated through its most severe earnings trough in FY2024 and returning to profitability in FY2025. A debt ratio of 16.1%, shareholders' equity of ~KRW 158.5bn, and Korea's first QENC national certification represent tangible positive foundations. However, the concentration of profits in Q4 and the renewed operating loss in Q1 2026 limit market confidence in earnings sustainability and predictability. Converting the integrated quantum-security solution unveiled at WIS 2026 into real procurement contracts with telecom carriers and government clients will likely take time; until then, results will remain heavily driven by fluctuations in traditional optical-transmission equipment order cycles. Ultimately, a complete picture of Coweaver's medium-term trajectory requires simultaneous confirmation of three variables: the pace at which quantum-security contracts become visible in DART disclosures, the scale of H2 2026 telecom carrier CAPEX deployment, and evidence that quarterly earnings distribution is beginning to normalize. This report is prepared for informational purposes based on public disclosures, press reports, and market data, and does not constitute investment advice."
+  }
+ },
+ "sources": [
+  "https://fairvalueresearch.net/listedcompanyInfo/listedcompanySearch.php?stock=056360",
+  "https://m.irgo.co.kr/IR-COMP/056360/%EC%BD%94%EC%9C%84%EB%B2%84-%EA%B8%B0%EC%97%85%EC%A0%95%EB%B3%B4",
+  "https://comp.fnguide.com/SVO2/ASP/SVD_Main.asp?pGB=1&gicode=A056360&MenuYn=Y&ReportGB=B&NewMenuID=Y&stkGb=701",
+  "https://kr.investing.com/equities/coweaver-co-ltd-earnings",
+  "https://www.k5.co.kr/stock/056360",
+  "https://comp.fnguide.com/SVO2/asp/SVD_Corp.asp?pGB=1&gicode=A056360&cID=&MenuYn=Y&ReportGB=&NewMenuID=102&stkGb=701",
+  "https://www.paxnet.co.kr/tbbs/list?tbbsType=L&id=056360",
+  "https://www.investing.com/equities/coweaver-co-ltd",
+  "http://home.imeritz.com/include/resource/research/WorkFlow/20210718213355590K_02.pdf",
+  "https://tmsstory.co.kr/optical-communication-stocks-korea/",
+  "https://m.thinkpool.com/stockDiscuss/010170/cont/11872169",
+  "https://m.thinkpool.com/compDiscuss/cont/1025913",
+  "https://www.marketresearchfuture.com/ko/reports/network-equipment-market-33523",
+  "https://alphasquare.co.kr/home/theme-factor?theme-id=414",
+  "https://coinexpert.co.kr/%EA%B4%91%ED%86%B5%EC%8B%A0-%EA%B4%80%EB%A0%A8%EC%A3%BC-best-6-%EA%B5%AD%EB%82%B4-%ED%95%9C%EA%B5%AD-%EB%8C%80%EC%9E%A5%EC%A3%BC/",
+  "https://comp.fnguide.com/SVO2/ASP/SVD_main.asp?NewMenuID=&gicode=A056360",
+  "https://m.thinkpool.com/item/056360",
+  "https://markets.hankyung.com/stock/056360"
+ ],
+ "v": 2,
+ "model": "claude-sonnet-4-6",
+ "ticker": "056360",
+ "name": "코위버",
+ "name_en": "COWEAVER Co.,Ltd.",
+ "sector": "통신",
+ "categories": [
+  "통신"
+ ],
+ "market": "코스닥",
+ "reportDate": "2026-06-19",
+ "reportTs": "2026-06-19 03:56",
+ "dataDate": "20260618",
+ "quant": {
+  "asOf": "2026-06-18",
+  "fs_basis": "연결(CFS) · DART 공시 확정치 · 지배주주 기준 순이익",
+  "annual": [
+   {
+    "year": 2025,
+    "rev": 62599540297,
+    "op": 306265207,
+    "np": 3470240657,
+    "np_owner": 3470240657,
+    "equity": 158499321346,
+    "equity_owner": 158499321346,
+    "liab": 25523102724,
+    "cfo": 3667274784,
+    "eps_basic": 379,
+    "opm": 0.5,
+    "roe": 2.2,
+    "debt_ratio": 16.1
+   },
+   {
+    "year": 2024,
+    "rev": 46836215609,
+    "op": -7634892172,
+    "np": -4074396606,
+    "np_owner": -4074396606,
+    "equity": 126647805083,
+    "equity_owner": 126647805083,
+    "liab": 24442609577,
+    "cfo": -11444852148,
+    "eps_basic": -440,
+    "opm": -16.3,
+    "roe": -3.2,
+    "debt_ratio": 19.3
+   },
+   {
+    "year": 2023,
+    "rev": 83354203788,
+    "op": -2603185111,
+    "np": 798680040,
+    "np_owner": 798680040,
+    "equity": 131938420851,
+    "equity_owner": 131938420851,
+    "liab": 34031017375,
+    "cfo": 16194375697,
+    "eps_basic": 85,
+    "opm": -3.1,
+    "roe": 0.6,
+    "debt_ratio": 25.8
+   },
+   {
+    "year": 2022,
+    "rev": 89638154238,
+    "op": 296798885,
+    "np": 4493107897,
+    "np_owner": 4493107897,
+    "equity": 131700944666,
+    "equity_owner": 4898400000,
+    "liab": 37193425163,
+    "cfo": -14053846329,
+    "eps_basic": 480,
+    "opm": 0.3,
+    "roe": 91.7,
+    "debt_ratio": 28.2
+   }
+  ],
+  "quarterly": [
+   {
+    "q": "2025Q1",
+    "rev": 8758373758,
+    "op": -1858536452,
+    "np_owner": -1958300011
+   },
+   {
+    "q": "2025Q2",
+    "rev": 14232237131,
+    "op": -667703164,
+    "np_owner": 484662800
+   },
+   {
+    "q": "2025Q3",
+    "rev": 13247079997,
+    "op": -1756869916,
+    "np_owner": -527094032
+   },
+   {
+    "q": "2025Q4",
+    "rev": 26361849411,
+    "op": 4589374739,
+    "np_owner": 5470971900
+   },
+   {
+    "q": "2026Q1",
+    "rev": 12410689361,
+    "op": -2189280772,
+    "np_owner": -1708171376
+   }
+  ],
+  "valuation": {
+   "price": 6770,
+   "mcap": 0.0663,
+   "shares": 9796800,
+   "total_shares": 9796800,
+   "wavg_shares": 9156307,
+   "per": 16.6,
+   "eps": 407,
+   "pbr": 0.4,
+   "bps": 17073,
+   "roe_ttm": 2.7,
+   "ttm_window": "2025Q2~2026Q1",
+   "ttm_np_owner": 3720369292,
+   "pbr_krx": 0.39,
+   "bps_krx": 17332.0,
+   "basis": "PER·EPS·PBR·BPS 모두 자체 산출(네이버·토스와 동일 방식) · 배당은 DART 공시 주당현금배당금(보완:KRX) ÷ 현재가",
+   "dps": 50.0,
+   "div": 0.74
+  }
+ }
+}
