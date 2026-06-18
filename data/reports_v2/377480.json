@@ -1,0 +1,357 @@
+{
+ "title": {
+  "ko": "흑자 실마리 vs. 2026 매출 역성장 — 갈림길의 마음AI",
+  "en": "Turnaround Glimpse vs. 2026 Revenue Headwinds — Maum AI at a Crossroads"
+ },
+ "lead": {
+  "ko": "2025년 자본 확충·4분기 순이익 흑자 전환이라는 긍정 신호가 있었음에도, 2026년 1분기 매출 역성장과 영업손실 재확대가 실적 개선 궤도 안착 여부를 다시 시험대에 올리고 있다.",
+  "en": "Despite balance-sheet stabilization and a rare quarterly net profit in 2025Q4, re-widening operating losses and falling revenue in 2026Q1 reopen questions about whether Maum AI can sustain a credible path toward profitability."
+ },
+ "keypoints": [
+  {
+   "ko": "2025년 연간 매출 97.9억 원(+25.9% YoY)으로 회복됐으나, 2026Q1 매출 17.1억 원(-16.5% YoY)으로 다시 역성장 전환 — AI 시스템 구축 수주 환경 위축이 주요 원인",
+   "en": "FY2025 revenue recovered to KRW 9.79bn (+25.9% YoY), but 2026Q1 reversed course to KRW 1.71bn (-16.5% YoY) as AI System Construction project wins softened"
+  },
+  {
+   "ko": "부채비율 2024년 275.0% → 2025년 108.1%로 급격히 개선 — 대규모 자본 확충에 따른 자기자본 회복(지배주주 26.2억 원)이 주도",
+   "en": "Debt-to-equity ratio dramatically improved from 275.0% (2024) to 108.1% (2025), driven by a large-scale capital raise that restored parent equity to KRW 26.19bn"
+  },
+  {
+   "ko": "2025Q4 지배주주 순이익 +2.4억 원 — 수년 만의 분기 순흑자이나, 직후 2026Q1에 다시 -22.0억 원 적자로 전환돼 지속성 검증이 필요",
+   "en": "2025Q4 parent net income of +KRW 0.24bn marked a rare quarterly net profit, but 2026Q1 immediately reverted to -KRW 2.20bn, leaving profitability sustainability unconfirmed"
+  },
+  {
+   "ko": "MAAL·SUDA·WoRV 3대 파운데이션 모델 기반 피지컬 AI 확장 — 농기계 자율주행·서비스 로봇 실증 완료·CES 2025 제품 공개 등 상용화 초입 단계",
+   "en": "Physical AI expansion via three foundation models (MAAL, SUDA, WoRV) — agricultural machinery autonomy and service robot pilots completed, product showcased at CES 2025, commercial revenues still at very early stage"
+  },
+  {
+   "ko": "4년 중 3년 영업현금흐름 적자 지속(최근 -58.5억 원) — 흑자 전환 전까지 외부 자금 의존과 주주 희석 리스크가 상존",
+   "en": "Operating cash flow was negative in three of the past four years (most recently -KRW 5.85bn) — reliance on external funding and shareholder dilution risk persist until cash break-even is reached"
+  }
+ ],
+ "business": {
+  "ko": "마음AI(구 마인즈랩)는 2014년 설립되어 2021년 코스닥에 기술성장기업으로 상장한 AI 전문기업이다. maum.ai 플랫폼을 기반으로 MAAL(대규모 언어모델), SUDA(음성 통합 온디바이스 AI), WoRV(자율주행·로봇 제어) 등 3대 파운데이션 모델을 개발·운용하며 언어·음성·시각·행동 제어를 통합한 범용 AI 역량을 보유하고 있다. 사업은 AI 시스템 구축(AICC·AI 휴먼 디바이스 포함)·AI 컨설팅·AI API·데이터 및 기타로 구분되며, 2023년 상반기 누적 기준 AI 시스템 구축 73.3%, AI 컨설팅 18.2%, AI API 3.9%, 기타 4.6%로 프로젝트형 시스템 구축 의존도가 높다. 주요 고객은 기업(B2B)과 정부·공공(B2G)이며, AICC·AI 챗봇·AI Human 로봇이 핵심 제품군이다. 피지컬 AI 영역에서는 도구공간의 서비스 로봇 '에이든'에 SUDA와 WoRV를 탑재해 한국로봇산업진흥원 실증사업을 완료했고, 국내 농기계 자율주행 스타트업과 협업 계약을 체결하는 등 상용화 포트폴리오를 확장하고 있다. 2025년 CES에서 온디바이스 AI 음성 대화 제품 '수다(SUDA)'를 공개하며 글로벌 인지도 제고에도 나섰다. 종속기업으로는 소프트웨어 개발사 그린망고와 미국·캐나다 현지법인이 있다. 경쟁 구도는 AICC 분야에서 KT·SKT·LG U+ 통신 3사 및 페르소나AI 등 전문 스타트업, 피지컬 AI 분야에서는 레인보우로보틱스·두산로보틱스 등 로봇 완성품 업체들과 간접 경쟁하는 복합적 구도다.",
+  "en": "Maum AI (formerly Minds Lab), established in 2014 and listed on KOSDAQ in 2021 as a technology growth company, is an AI specialist built around the maum.ai platform. The company develops and operates three foundation models: MAAL (large language model), SUDA (voice-integrated on-device AI), and WoRV (autonomous driving and robot control), offering integrated capabilities across language, voice, vision, and action. Business segments comprise AI System Construction (including AICC and AI Human Devices), AI Consulting, AI API, and Data/Other. Based on 2023 H1 accumulated revenue, AI System Construction accounted for 73.3%, AI Consulting 18.2%, AI API 3.9%, and Other 4.6%, reflecting heavy dependence on project-based integration work. Key customers span B2B enterprises and B2G government entities, with AICC, AI chatbots, and AI Human robots as core products. In Physical AI, Maum AI deployed SUDA and WoRV on the 'AIden' service robot in partnership with DoguSpace, completing a Korea Robot Industry Promotion Agency pilot, and signed an autonomous driving collaboration agreement with an agricultural machinery startup. The company also showcased its on-device voice AI 'SUDA' at CES 2025. Subsidiaries include Greenmango (software) and U.S./Canadian local entities. Competitive dynamics are layered: in AICC, against telcos (KT, SKT, LG U+) and AI-native startups; in Physical AI, in indirect competition with robot OEMs such as Rainbow Robotics and Doosan Robotics."
+ },
+ "earnings": {
+  "ko": "연간 실적을 보면 2023년 매출 102.2억 원(영업손실률 -37.7%)이 최근 4년 중 최대였고, 그 이듬해인 2024년 매출이 77.7억 원으로 약 24% 급감하며 영업손실률이 -91.6%로 악화됐다. 부채비율도 275.0%까지 치솟아 재무 건전성이 크게 훼손됐다. 2025년에는 대규모 자본 확충으로 지배주주 자기자본이 261.9억 원으로 회복되고 부채비율이 108.1%로 정상화됐으며, 매출도 97.9억 원(+25.9% YoY)으로 반등해 영업손실률이 -65.1%로 개선됐다. 그러나 영업현금흐름은 -58.5억 원으로 현금 소진이 여전히 상당했다. 분기 흐름을 보면 2025년 영업손실이 Q1(-19.0억 원) → Q2(-16.0억 원) → Q3(-16.1억 원) → Q4(-12.6억 원)로 완만하게 개선됐고, Q4에는 지배주주 순이익이 +2.4억 원으로 전환돼 수년 만의 분기 순흑자를 기록했다. 그러나 2026년 1분기 매출은 17.1억 원으로 전년 동기(20.5억 원) 대비 16.5% 감소하고 영업손실은 20.9억 원으로 전년 동기(19.0억 원) 대비 10.0% 확대됐다. AI 시스템 구축 프로젝트 수주 환경 위축이 주요 원인으로 지목된다. 한편 2026Q1 지배주주 순손실(-22.0억 원)은 전년 동기(-42.6억 원)보다 크게 줄었는데, 이는 비영업 항목의 변동이 반영된 결과로 해석된다.",
+  "en": "Annually, revenue peaked at KRW 10.22bn in 2023 (operating margin -37.7%), then slumped roughly 24% to KRW 7.77bn in 2024 as the operating margin deteriorated sharply to -91.6%. The debt-to-equity ratio surged to 275.0% in 2024, signaling a balance-sheet emergency. In 2025, a large-scale capital raise restored parent equity to KRW 26.19bn and normalized the debt ratio to 108.1%, while revenue rebounded to KRW 9.79bn (+25.9% YoY), narrowing the operating margin deficit to -65.1%. However, operating cash outflow remained heavy at -KRW 5.85bn. Quarterly progression through 2025 showed steady improvement in operating losses: Q1 (-KRW 1.90bn) → Q2 (-KRW 1.60bn) → Q3 (-KRW 1.61bn) → Q4 (-KRW 1.26bn), with 2025Q4 achieving parent net income of +KRW 0.24bn — the company's first quarterly net profit in years. However, 2026Q1 reversed the trend: revenue fell 16.5% YoY to KRW 1.71bn while the operating loss widened 10.0% YoY to KRW 2.09bn, primarily due to a soft AI System Construction project backlog. The parent net loss in 2026Q1 of KRW 2.20bn was meaningfully narrower than the KRW 4.26bn loss in 2025Q1, which reflects favorable non-operating item movements."
+ },
+ "industry": {
+  "ko": "AICC(AI 컨택센터) 시장은 국내외에서 고성장 국면에 있다. 글로벌 시장 규모는 연평균 25% 성장세로 2025년 약 361억 달러(약 46조 원)에 달할 전망이며, 국내 시장도 연평균 23.7% 성장해 2030년 약 4,850억 원 규모가 예상된다. 그러나 국내 시장의 주도권은 전국 콜센터 인프라와 자본력을 보유한 통신 3사(KT·SKT·LG U+)가 쥐고 있어 독립 AI 전문기업의 직접 경쟁이 쉽지 않다. 2026년부터 AI 시장의 무게추는 대화형 챗봇에서 에이전틱 AI(자율 작업 실행)와 피지컬 AI(현실 공간 구현)로 빠르게 이동하고 있어, 마음AI의 WoRV·SUDA 모델 포트폴리오는 구조적 수혜 가능성을 내포한다. 한편 삼성전자·네이버·현대차 등 대기업들도 자체 파운데이션 모델을 기반으로 피지컬 AI 생태계 구축에 속도를 내고 있어 경쟁 강도는 높아지는 추세다. 기업들의 AI 투자 ROI 검증 수요가 강화되면서, 단순 컨설팅에서 실제 운영 효율 향상이 입증된 솔루션 중심으로 수주 구조가 재편되는 것도 주목할 변화다.",
+  "en": "The AICC market is in a high-growth phase both domestically and globally. Global market size is forecast at approximately USD 36.1bn (~KRW 46tn) for 2025, growing at a ~25% CAGR, while the Korean domestic market is projected to reach approximately KRW 485bn by 2030 at a 23.7% CAGR. However, Korea's domestic AICC landscape is dominated by the three major telcos (KT, SKT, LG U+), which leverage existing call center infrastructure and deep capital, making direct competition challenging for independent AI firms. From 2026, the industry's center of gravity is rapidly shifting from conversational chatbots toward agentic AI (autonomous task execution) and Physical AI (real-world embodiment) — a structural tailwind for Maum AI's WoRV and SUDA model portfolio. At the same time, large conglomerates including Samsung, Naver, and Hyundai are accelerating Physical AI ecosystem builds with proprietary foundation models, intensifying competitive pressure on smaller specialists. A notable market shift is the growing enterprise demand for demonstrated AI ROI, redirecting procurement away from pure consulting toward deployment-ready solutions with measurable operational efficiency gains."
+ },
+ "outlook": {
+  "ko": "회사는 671B 파라미터 규모의 MAAL-Albatross 모델 출시와 함께 에이전트 AI·피지컬 AI 사업 확장을 가속하고 있다. WoRV를 탑재한 농기계 자율주행 제품은 실제 납품 단계에 진입했으며, SUDA를 통한 서비스 로봇 분야의 실증은 상용화 가능성을 입증했다. 그러나 피지컬 AI 상용화 매출이 전체 매출에서 차지하는 비중은 아직 초기 단계여서 단기 실적 기여 규모는 제한적이다. 2026Q1 실적이 보여주듯 프로젝트형 AI 시스템 구축 사업의 수주 불규칙성이 단기 매출 예측 가시성을 낮추고 있다. 재무 안전성 측면에서는 2025년 자본 확충으로 단기 압박이 완화됐으나, 영업현금흐름이 지속적으로 부(-)를 기록하고 있어 중기적으로 추가 자금 조달 필요성이 상존한다. 2025Q4 순이익 흑자 전환이 지속 가능한 수익 구조 개선의 시작인지, 아니면 일시적 요인인지를 2026년 연간 실적을 통해 확인하는 것이 핵심 과제다.",
+  "en": "The company is accelerating Agent AI and Physical AI expansion with the release of the MAAL-Albatross model (671B parameters) alongside SUDA and WoRV. WoRV-equipped agricultural machinery autonomous driving products have entered active delivery, and SUDA-powered service robot deployments have demonstrated commercialization viability. However, Physical AI commercial revenues remain a small fraction of total sales, limiting near-term earnings impact. As evidenced by 2026Q1, the inherently lumpy project cycle in AI System Construction continues to cloud near-term revenue visibility. On the financial side, the 2025 capital raise eased immediate balance-sheet pressure, but persistently negative operating cash flow means the need for further external funding over the medium term remains. The pivotal question is whether 2025Q4's return to net profitability represents the start of a structurally improving earnings trajectory or was driven by transitory non-operating factors — a question 2026 full-year results must answer."
+ },
+ "valuation_comment": {
+  "ko": "마음AI는 지속적인 영업적자 상황으로 이익 배수 기반의 전통적 가치평가가 적용되지 않는다. 주당 장부가치(BPS 3,370원)를 기준으로 보면 현재 주가는 순자산 대비 상당한 프리미엄 구간에 위치해 있어, 시장이 피지컬 AI 사업의 미래 성장 잠재력을 선반영하고 있음을 시사한다. 주당 손실(EPS -784원)이 반영하듯 수익 창출력은 아직 형성 단계이며, 배당은 부재해 현재로서는 주가 차익이 유일한 수익 경로다. 코스닥 AI·소프트웨어 동종 그룹과 비교할 때 순자산 대비 프리미엄은 상단에 가까운 편으로, 이는 피지컬 AI 상용화 기대가 밸류에이션에 이미 반영돼 있음을 의미한다. 향후 프리미엄의 정당화 여부는 피지컬 AI·AICC 수주 가속화와 영업손실 축소 속도가 결정할 것이다.",
+  "en": "Maum AI's persistent operating losses make traditional earnings-multiple valuation inapplicable. Based on a book value per share (BPS) of KRW 3,370, the current share price commands a substantial premium to net asset value, implying the market has priced in significant future growth optionality from Physical AI commercialization. With an EPS of -784 KRW, earnings power is still in formation, and no dividends are paid — making capital gains the sole return pathway for shareholders at this stage. Relative to KOSDAQ AI and software peers, the premium to book value sits toward the upper end of the range, signaling that Physical AI expectations are already embedded in the valuation. Whether that premium is ultimately justified will hinge on the pace of Physical AI and AICC order acceleration and the speed of operating loss reduction."
+ },
+ "bull": [
+  {
+   "title": {
+    "ko": "피지컬 AI 사업의 구조적 성장 잠재력",
+    "en": "Structural Growth Potential in Physical AI"
+   },
+   "body": {
+    "ko": "WoRV 모델을 탑재한 차량·로봇 자율주행 제품이 농기계 분야에서 실제 납품 단계에 진입했고, 서비스 로봇 분야에서 한국로봇산업진흥원 실증사업을 성공적으로 마쳤다. 전 세계적으로 에이전틱 AI와 피지컬 AI가 차세대 핵심 기술로 부상하는 구조적 흐름은 MAAL·SUDA·WoRV 포트폴리오의 중장기 수요 기반을 확대할 수 있다. 상용화 매출이 본격화될 경우 프로젝트형 사업 위주의 기존 매출 구조를 다변화하고 재현 가능한 수익을 창출하는 전환점이 될 수 있다.",
+    "en": "WoRV-equipped autonomous products have entered active delivery in agricultural machinery, and the service robot pilot with Korea Robot Industry Promotion Agency was completed successfully. The global structural shift toward agentic and Physical AI as the next technology frontier expands the medium-to-long-term demand base for Maum AI's MAAL·SUDA·WoRV portfolio. Should Physical AI revenues ramp materially, this could diversify the current project-heavy revenue mix and create a more scalable, recurring income stream."
+   }
+  },
+  {
+   "title": {
+    "ko": "재무 구조 정상화와 2025Q4 분기 순흑자 달성",
+    "en": "Balance Sheet Normalization and 2025Q4 Quarterly Net Profit"
+   },
+   "body": {
+    "ko": "2025년 대규모 자본 확충으로 부채비율이 275.0%에서 108.1%로 급락하면서 단기 재무 리스크가 크게 완화됐다. 2025년 4분기 지배주주 순이익 +2.4억 원은 수년 만의 분기 순흑자로, 비용 구조 최적화와 매출 믹스 변화가 점진적 성과를 내고 있다는 신호로 해석될 수 있다. 분기별 영업손실도 2025년 Q1 -19.0억 원에서 Q4 -12.6억 원으로 완만하게 개선됐다.",
+    "en": "A large-scale capital raise in 2025 reduced the debt-to-equity ratio from 275.0% to 108.1%, significantly easing near-term financial risk. The 2025Q4 parent net income of +KRW 0.24bn — the company's first quarterly net profit in years — can be interpreted as a signal that cost-structure optimization and revenue mix shifts are beginning to produce results. The sequential narrowing of quarterly operating losses through 2025, from -KRW 1.90bn in Q1 to -KRW 1.26bn in Q4, confirms a gradual positive trend."
+   }
+  },
+  {
+   "title": {
+    "ko": "B2B·B2G AI 전환 수요 확대와 포트폴리오 다양성",
+    "en": "Expanding B2B/B2G AI Transformation Demand and Portfolio Breadth"
+   },
+   "body": {
+    "ko": "국내 기업·공공기관들의 AI 전환(AX) 수요 확대로 AI 컨설팅 및 AI 시스템 구축 수주가 중장기 성장 궤도에 진입하고 있으며, 2025년 매출 반등이 이를 뒷받침했다. 도메인 특화 마음GPT 12종과 AICC 솔루션의 포트폴리오 다양성은 특정 산업 내 고객 침투율 확대에 유리하게 작용할 수 있다. CES 2025 참가를 통한 글로벌 인지도 제고는 해외 기업·정부 고객 확보 가능성을 열어 두고 있다.",
+    "en": "Growing AI transformation (AX) demand among Korean enterprises and public institutions supports a medium-to-long-term growth trajectory for AI Consulting and System Construction orders — a trend backed by the 2025 revenue rebound. A portfolio breadth spanning 12 domain-specific MaumGPT models and an AICC solution suite positions the company to deepen penetration within target verticals. Global visibility gained at CES 2025 opens potential pathways to international enterprise and government customers."
+   }
+  }
+ ],
+ "bear": [
+  {
+   "title": {
+    "ko": "2026Q1 매출 역성장과 영업손실 재확대",
+    "en": "2026Q1 Revenue Decline and Re-widening Operating Loss"
+   },
+   "body": {
+    "ko": "2026년 1분기 매출은 17.1억 원으로 전년 동기 대비 16.5% 감소했고 영업손실은 20.9억 원으로 10.0% 확대됐다. AI 시스템 구축 프로젝트 수주 환경 위축이 원인으로, 이 사업 모델의 고질적인 수주 불규칙성을 재확인한다. 2025Q4의 실적 개선이 지속 가능한 추세인지, 아니면 연말 일시적 요인에 의한 것인지에 대한 의문이 남는다.",
+    "en": "2026Q1 revenue fell 16.5% YoY to KRW 1.71bn and the operating loss widened 10.0% to KRW 2.09bn, driven by a soft AI System Construction project backlog — reaffirming the business model's chronically lumpy order patterns. This result casts doubt on whether 2025Q4's improvement was the start of a genuine inflection or primarily driven by year-end one-off effects."
+   }
+  },
+  {
+   "title": {
+    "ko": "지속적 영업현금흐름 적자와 자금 조달 부담",
+    "en": "Persistent Negative Operating Cash Flow and Funding Risk"
+   },
+   "body": {
+    "ko": "영업현금흐름은 2022년(-40.7억 원), 2024년(-51.4억 원), 2025년(-58.5억 원) 모두 부(負)로, 사업 운영 자체가 현금을 지속 소진하는 구조다. 2023년 유일하게 +2.7억 원의 소규모 영업현금이 발생했으나 규모가 미미했다. 분기별 손실이 이어지는 한 외부 자금 의존은 불가피하며, 추가 유상증자 시 주주의 주당 순자산 희석 위험이 상존한다.",
+    "en": "Operating cash flow was negative in 2022 (-KRW 4.07bn), 2024 (-KRW 5.14bn), and 2025 (-KRW 5.85bn), meaning the core business consistently consumes cash. The sole exception — a modest +KRW 0.27bn in 2023 — was negligible in scale. As long as quarterly losses persist, reliance on external capital is unavoidable, and any future equity offering carries meaningful book-value-per-share dilution risk for existing shareholders."
+   }
+  },
+  {
+   "title": {
+    "ko": "통신 대기업 및 빅테크와의 경쟁 심화",
+    "en": "Intensifying Competition from Telco Giants and Big Tech"
+   },
+   "body": {
+    "ko": "국내 AICC 시장은 KT·SKT·LG U+ 통신 3사가 대규모 자본과 기존 고객 기반을 앞세워 지배력을 강화하고 있으며, 이들의 AICC 목표 매출 규모는 마음AI 연간 매출과 단순 비교가 어려운 수준이다. 삼성·네이버 등 대기업들도 자체 파운데이션 모델을 기반으로 피지컬 AI 생태계 구축에 진입하면서 중소 AI 전문기업의 기술 차별화 공간이 점차 좁아질 수 있다. 글로벌 빅테크의 지속적인 최신 모델 출시는 자체 파운데이션 모델의 경쟁력 유지 비용을 높이는 구조적 압박 요인이다.",
+    "en": "Korea's domestic AICC market is increasingly dominated by major telcos (KT, SKT, LG U+) with massive capital and existing enterprise customer bases, whose AICC revenue targets are on a scale difficult to compare with Maum AI's annual revenues. With Samsung, Naver, and other conglomerates entering the Physical AI space via proprietary foundation models, the differentiation space for smaller AI specialists is gradually narrowing. Continuous global Big Tech model releases structurally increase the cost of maintaining competitive proprietary foundation models."
+   }
+  }
+ ],
+ "risks": [
+  {
+   "cat": {
+    "ko": "재무 위험: 현금 소진 및 희석 리스크",
+    "en": "Financial Risk: Cash Burn and Dilution"
+   },
+   "body": {
+    "ko": "회사는 상장 이후 수년간 영업현금흐름이 대부분 부(負)로, 2024년에는 부채비율이 275.0%까지 급등하며 대규모 자본 확충이 불가피했다. 2025년 자본 확충 후에도 영업손실이 지속되는 한 추가 유상증자나 전환사채 발행 가능성이 있으며, 이는 기존 주주의 주당 순자산 희석으로 이어질 수 있다. 영업현금흐름 플러스 전환 시점이 재무 리스크 해소의 핵심 이정표다.",
+    "en": "The company has generated negative operating cash flow for most years since listing, and the debt ratio surging to 275.0% in 2024 necessitated a major recapitalization. If losses continue after the 2025 capital raise, additional equity offerings or convertible bond issuances remain possible, which would dilute existing shareholders' book value per share. A durable turn to positive operating cash flow is the key milestone for resolving this financial risk."
+   }
+  },
+  {
+   "cat": {
+    "ko": "수주 불규칙성과 매출 가시성 부재",
+    "en": "Order Lumpiness and Revenue Visibility Risk"
+   },
+   "body": {
+    "ko": "매출의 약 73%가 AI 시스템 구축 프로젝트에서 발생하며, 이 사업은 수주 사이클이 불규칙적이고 프로젝트 단위로 매출이 집중되는 특성이 있다. 2026Q1 매출이 2025Q4의 절반 수준에 그친 것이 단적인 사례다. 장기 수주 잔고나 반복 수익 기반이 충분히 형성되기 전까지 분기별 실적 변동성은 높게 유지될 가능성이 크다.",
+    "en": "Approximately 73% of revenue derives from AI System Construction projects, a business characterized by irregular order cycles and lumpy, project-milestone revenue recognition. The fact that 2026Q1 revenue was barely half the 2025Q4 level illustrates this acutely. Until a sufficient recurring revenue base or long-term backlog is established, quarterly earnings volatility is likely to remain elevated."
+   }
+  },
+  {
+   "cat": {
+    "ko": "기술 경쟁 및 파운데이션 모델 진부화 리스크",
+    "en": "Technology Competition and Foundation Model Obsolescence Risk"
+   },
+   "body": {
+    "ko": "생성형 AI와 파운데이션 모델 분야는 전 세계적으로 개발 속도가 매우 빠르며, OpenAI·Meta·구글 등 글로벌 빅테크의 최신 모델이 지속적으로 출시되고 있다. 마음AI의 MAAL·SUDA·WoRV가 특화 영역에서 기술 차별화를 유지하지 못할 경우 경쟁력이 빠르게 희석될 수 있다. 국내에서도 네이버·카카오·삼성의 AI 투자 확대는 독립 AI 전문기업이 유지해야 하는 기술 격차를 지속적으로 좁히는 압력 요인이다.",
+    "en": "The generative AI and foundation model landscape evolves at an exceptional pace globally, with continuous model releases from OpenAI, Meta, Google, and others. If Maum AI's MAAL, SUDA, and WoRV models fail to maintain differentiation in their specialized domains, their competitive moat could erode rapidly. Domestically, escalating AI investments from Naver, Kakao, and Samsung create continuous pressure on the technology gap that smaller specialized AI firms must maintain."
+   }
+  }
+ ],
+ "checkpoints": [
+  {
+   "when": {
+    "ko": "2026년 8월 말 (2026Q2 실적 발표)",
+    "en": "Late August 2026 (2026Q2 Earnings Release)"
+   },
+   "what": {
+    "ko": "2026Q1의 매출 역성장 및 영업손실 확대가 일시적인지 구조적인지 판단하는 핵심 기회. AI 시스템 구축 수주 회복 여부와 피지컬 AI 사업의 실제 매출 기여 규모 확인이 필요하다.",
+    "en": "Key opportunity to assess whether 2026Q1's revenue decline and operating loss widening were transient or structural. Focus on AI System Construction order recovery and the actual revenue contribution from Physical AI."
+   }
+  },
+  {
+   "when": {
+    "ko": "2026년 하반기 (피지컬 AI 수주·납품 공시)",
+    "en": "2026 H2 (Physical AI Order and Delivery Disclosures)"
+   },
+   "what": {
+    "ko": "농기계 자율주행 제품 납품 완료 및 서비스 로봇 양산 계약 등 WoRV·SUDA 기반 피지컬 AI 사업의 실제 수주·납품 DART 공시를 통해 상용화 모멘텀의 실체를 점검해야 한다.",
+    "en": "Track DART disclosures on WoRV/SUDA-based Physical AI orders and deliveries, including completion of agricultural machinery autonomous driving deliveries and service robot mass-production contract announcements."
+   }
+  },
+  {
+   "when": {
+    "ko": "상시 모니터링 (영업현금흐름 플러스 전환 시점)",
+    "en": "Ongoing (Operating Cash Flow Inflection Point)"
+   },
+   "what": {
+    "ko": "영업현금흐름이 최초로 의미 있는 규모로 플러스 전환하는 분기가 재무 지속가능성의 핵심 증거가 된다. 매 분기 사업보고서의 현금흐름표를 통해 현금 소진 속도를 모니터링해야 한다.",
+    "en": "The first quarter of meaningfully positive operating cash flow will serve as critical evidence of financial sustainability. Monitor the cash flow statement in each quarterly filing to track the pace of cash burn."
+   }
+  },
+  {
+   "when": {
+    "ko": "2026년 내 (추가 자본 조달 공시)",
+    "en": "Within 2026 (Additional Capital Raise Disclosures)"
+   },
+   "what": {
+    "ko": "지속적인 영업손실 상황에서 추가 유상증자나 전환사채 발행이 결정될 경우, DART 공시를 통해 조달 규모·조건·희석 효과를 즉시 확인해야 한다.",
+    "en": "If ongoing operating losses prompt additional equity issuances or convertible bond offerings, promptly verify the size, terms, and dilution impact via DART disclosures."
+   }
+  },
+  {
+   "when": {
+    "ko": "2026년 하반기 (정부 AI 예산 집행 및 조달 동향)",
+    "en": "2026 H2 (Government AI Budget Execution and Procurement)"
+   },
+   "what": {
+    "ko": "2026년 정부 AI 예산 약 9.9조 원의 실제 집행 및 조달 공고가 B2G 수주 파이프라인에 직접 영향을 미친다. 특히 피지컬 AI·무인체계 관련 정부 발주 동향을 모니터링해야 한다.",
+    "en": "Actual execution of Korea's approximately KRW 9.9tn government AI budget and related procurement tenders directly impacts the B2G order pipeline. Monitor government procurement activity in Physical AI and unmanned systems specifically."
+   }
+  }
+ ],
+ "verdict": {
+  "body": {
+   "ko": "마음AI는 maum.ai 플랫폼 기반으로 AICC(AI 컨택센터)에서 피지컬 AI(로봇·자율주행)로 사업 영역을 확장하는 코스닥 AI 전문기업이다. 2025년 자본 확충과 연간 매출 반등, 그리고 2025Q4 분기 순흑자 전환은 긍정적인 변화 신호를 제공한다. 반면 2026년 1분기의 매출 역성장과 영업손실 재확대는 프로젝트형 수주 사업 구조의 취약성을 재확인했고, 4년 중 3년에 걸친 영업현금흐름 적자는 지속 가능성에 의문 부호를 남긴다. 피지컬 AI 상용화 매출의 가시화와 영업현금흐름의 플러스 전환이 투자 논리를 검증할 핵심 기준이 될 것이며, 그 시점까지 통신사·빅테크 대비 경쟁 열위와 순자산 대비 프리미엄이 공존하는 현 상황은 균형 잡힌 시각이 필요한 구간이다. 본 리포트는 정보 제공 목적이며 특정 투자 의견이나 목표주가를 제시하지 않는다.",
+   "en": "Maum AI is a KOSDAQ-listed AI specialist expanding from its AICC base into Physical AI via the maum.ai platform. The 2025 capital raise, annual revenue recovery, and a rare quarterly net profit in 2025Q4 provide constructive signals. However, 2026Q1's revenue decline and widening operating loss reaffirm the inherent fragility of a project-dependent revenue model, while negative operating cash flow in three of the past four years leaves sustainability questions open. The critical proof points are clear: credible commercialization of Physical AI revenues and a durable turn to positive operating cash flow. Until those are demonstrated, the coexistence of competitive disadvantage versus well-capitalized incumbents and a substantial premium to net asset value calls for a balanced, evidence-based perspective. This report is provided for informational purposes only and does not constitute any investment recommendation or target price."
+  }
+ },
+ "sources": [
+  "https://comp.fnguide.com/SVO2/ASP/SVD_Main.asp?gicode=A377480",
+  "https://comp.fnguide.com/SVO2/asp/SVD_Invest.asp?pGB=1&cID=&MenuYn=Y&ReportGB=D&NewMenuID=105&stkGb=701&gicode=A377480",
+  "https://deepsearch.com/analytics/company-analysis/KRX:377480?c-name=%EB%A7%88%EC%9D%8CAI&c-symbol=KRX%3A377480&cd-cat=topic&cd-df=2024-10-18&cd-dt=2024-10-25",
+  "https://stock1.brokdam.com/%EB%A7%88%EC%9D%8Cai-%EC%A3%BC%EA%B0%80-%EB%B0%98%ED%86%A0%EB%A7%89-%ED%9B%84-%EB%B0%98%EB%93%B1-%EC%A7%80%EA%B8%88-%EB%93%A4%EC%96%B4%EA%B0%80%EB%A9%B4-%EB%8A%A6%EC%97%88%EC%9D%84%EA%B9%8C/",
+  "https://kr.linkedin.com/pulse/%EC%98%A4%EB%8A%98%EC%9D%98-ir-038-%EB%A7%88%EC%9D%8Cai377480-%ED%9A%8C%EC%82%AC-%EC%86%8C%EA%B0%9C-%EB%B0%8F-%EC%82%AC%EC%97%85-%ED%98%84%ED%99%A9-%EC%84%A4%EB%AA%85-hyoung-bae-kim-p4ctc",
+  "https://comp.fnguide.com/SVO2/ASP/SVD_Finance.asp?pGB=1&gicode=A377480&cID=&MenuYn=Y&ReportGB=B&NewMenuID=103&stkGb=701",
+  "https://www.investing.com/equities/minds-lab",
+  "https://littlebproject.com/stock/377480/326/47120",
+  "https://m.irgo.co.kr/IR-COMP/377480/",
+  "https://m.thinkpool.com/compDiscuss/cont/1016493",
+  "https://comp.wisereport.co.kr/company/c1010001.aspx?cmp_cd=377480",
+  "https://comp.fnguide.com/svo2/fncompany.asp?gicode=A377480&cId=CB",
+  "https://asp01.fnguide.com/SVO2/ASP/SVD_Main.asp?pGB=1&gicode=A377480&MenuYn=Y&ReportGB=B&NewMenuID=Y&stkGb=701",
+  "https://alphasquare.co.kr/home/stock-summary?code=377480",
+  "https://finance.daum.net/quotes/A377480",
+  "https://blog.richyeon.com/posts/physical-ai-stocks-2026/",
+  "https://www.judal.co.kr/?view=stockAI&shareToken=UTAvM0oEhZgvcNVh",
+  "https://alphasquare.co.kr/home/theme-factor?theme-id=67"
+ ],
+ "v": 2,
+ "model": "claude-sonnet-4-6",
+ "ticker": "377480",
+ "name": "마음AI",
+ "name_en": "MAUM.AI, INC.",
+ "sector": "IT·소프트웨어",
+ "categories": [
+  "IT·소프트웨어",
+  "인공지능(AI)"
+ ],
+ "market": "코스닥",
+ "reportDate": "2026-06-19",
+ "reportTs": "2026-06-19 01:03",
+ "dataDate": "20260618",
+ "quant": {
+  "asOf": "2026-06-18",
+  "fs_basis": "연결(CFS) · DART 공시 확정치 · 지배주주 기준 순이익",
+  "annual": [
+   {
+    "year": 2025,
+    "rev": 9786361142,
+    "op": -6375714178,
+    "np": -7660349196,
+    "np_owner": -7635980157,
+    "equity": 26095408701,
+    "equity_owner": 26187052750,
+    "liab": 28196132829,
+    "cfo": -5854070805,
+    "eps_basic": null,
+    "opm": -65.1,
+    "roe": -29.2,
+    "debt_ratio": 108.1
+   },
+   {
+    "year": 2024,
+    "rev": 7773951858,
+    "op": -7118425314,
+    "np": -8679568878,
+    "np_owner": -8676254452,
+    "equity": 13239152383,
+    "equity_owner": 13306427393,
+    "liab": 36413443879,
+    "cfo": -5142335205,
+    "eps_basic": null,
+    "opm": -91.6,
+    "roe": -65.2,
+    "debt_ratio": 275.0
+   },
+   {
+    "year": 2023,
+    "rev": 10223567292,
+    "op": -3856539651,
+    "np": -5555549863,
+    "np_owner": -5528127567,
+    "equity": 20056198421,
+    "equity_owner": 20120159005,
+    "liab": 35568979690,
+    "cfo": 271964495,
+    "eps_basic": null,
+    "opm": -37.7,
+    "roe": -27.5,
+    "debt_ratio": 177.3
+   },
+   {
+    "year": 2022,
+    "rev": 8243676344,
+    "op": -5470640452,
+    "np": -4763870752,
+    "np_owner": -4676782149,
+    "equity": 25576054722,
+    "equity_owner": 25612593010,
+    "liab": 12212469544,
+    "cfo": -4068428095,
+    "eps_basic": null,
+    "opm": -66.4,
+    "roe": -18.3,
+    "debt_ratio": 47.7
+   }
+  ],
+  "quarterly": [
+   {
+    "q": "2025Q1",
+    "rev": 2047703050,
+    "op": -1897005434,
+    "np_owner": -4257569550
+   },
+   {
+    "q": "2025Q2",
+    "rev": 2301187717,
+    "op": -1602965353,
+    "np_owner": -1852425404
+   },
+   {
+    "q": "2025Q3",
+    "rev": 2083056828,
+    "op": -1614156659,
+    "np_owner": -1764829659
+   },
+   {
+    "q": "2025Q4",
+    "rev": 3354413547,
+    "op": -1261586732,
+    "np_owner": 238844456
+   },
+   {
+    "q": "2026Q1",
+    "rev": 1710585794,
+    "op": -2086363745,
+    "np_owner": -2197384214
+   }
+  ],
+  "valuation": {
+   "price": 13000,
+   "mcap": 0.0924,
+   "shares": 7110275,
+   "total_shares": 7110275,
+   "wavg_shares": null,
+   "per": null,
+   "eps": -784,
+   "pbr": 3.86,
+   "bps": 3370,
+   "roe_ttm": -25.1,
+   "ttm_window": "2025Q2~2026Q1",
+   "ttm_np_owner": -5575794821,
+   "pbr_krx": 3.48,
+   "bps_krx": 3622.0,
+   "basis": "PER·EPS·PBR·BPS 모두 자체 산출(네이버·토스와 동일 방식) · 배당은 DART 공시 주당현금배당금(보완:KRX) ÷ 현재가",
+   "dps": 0.0,
+   "div": 0.0
+  }
+ }
+}

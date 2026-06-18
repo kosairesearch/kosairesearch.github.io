@@ -1,0 +1,311 @@
+{
+ "title": {
+  "ko": "다크웹 AI 선도 기업, 흑자 전환 시험대에 서다",
+  "en": "Dark Web AI Pioneer Faces Its Profitability Test"
+ },
+ "lead": {
+  "ko": "국내 유일 다크웹 특화 AI 기업으로 인터폴·MS 파트너십과 고객유지율 기반 SaaS 반복 매출 구조를 갖춘 에스투더블유는, 2026년 1분기 영업손실 확대와 SAIP 매출 공백이라는 두 변수가 연간 흑자 전환 가이던스의 핵심 관문으로 부상한 상황이다.",
+  "en": "S2W, Korea's only dark-web-specialised AI firm backed by Interpol and Microsoft partnerships and near-perfect SaaS retention rates, faces a critical juncture: a Q1 2026 operating loss that exceeded quarterly revenue and a persistent SAIP revenue gap cast doubt on the company's full-year profitability turnaround guidance."
+ },
+ "keypoints": [
+  {
+   "ko": "세계 최초 다크웹 전용 AI 언어모델 'DarkBERT'와 지식그래프 기반 교차분석 기술이 핵심 해자—국내 사실상 경쟁사 부재",
+   "en": "DarkBERT (world's first dark-web-specific AI language model) and knowledge-graph cross-analysis technology form a near-unmatched moat with no meaningful domestic rival"
+  },
+  {
+   "ko": "인터폴·국정원·일본·싱가포르·사우디아라비아 등 글로벌 정부기관 레퍼런스 및 MS 시큐리티 코파일럿 유일 한국 파트너 지위로 해외 수주 저변 확대 중",
+   "en": "Global government-client references (Interpol, Japan, Singapore, Saudi Arabia) and sole-Korean-partner status in Microsoft Security Copilot underpin a broadening international order base"
+  },
+  {
+   "ko": "자비스(고객유지율 ~100%)·퀘이사(~91%) SaaS 구조로 반복 매출 기반 확립, 그러나 SAIP는 2025년 매출 제로로 세 축 중 한 축이 공백 상태",
+   "en": "XARVIS (~100% retention) and QUAXAR (~91%) anchor a predictable SaaS recurring-revenue base, but SAIP recorded zero revenue in 2025, leaving one of three product pillars dormant"
+  },
+  {
+   "ko": "2025년 연간 영업손실률 -55.9%, 2026년 1분기 영업손실이 분기 매출을 초과—하반기 SAIP 대형 수주와 국방 ISP 사업 발주가 흑자 전환의 분수령",
+   "en": "A -55.9% operating margin in 2025 was followed by a Q1 2026 operating loss exceeding quarterly revenue; H2 SAIP contract wins and a defence-ISP award are the make-or-break milestones for 2026 profitability"
+  },
+  {
+   "ko": "대표이사 서상덕의 수차례 공개시장 자사주 매입으로 내부자 신뢰 신호 발신, 상장 후 주가 하락에 따른 오버행 우려도 상존",
+   "en": "CEO Seo Sang-deok's repeated open-market share purchases signal insider confidence, while post-IPO price weakness keeps residual overhang concerns relevant"
+  }
+ ],
+ "business": {
+  "ko": "에스투더블유(S2W)는 2018년 설립된 AI 기반 빅데이터 분석 전문 기업으로, 2025년 9월 코스닥 기술성장기업 특례상장을 통해 공개시장에 입성하였다. 핵심 사업은 세 솔루션군으로 구성된다: 공공·정보기관 대상 안보 AI 플랫폼 '자비스(XARVIS)', 기업 및 기관용 사이버위협 인텔리전스·공격표면관리 플랫폼 '퀘이사(QUAXAR)', 온톨로지 기반 산업 특화 생성형 AI 플랫폼 'SAIP(S2W AI Platform)'이다. 자비스는 다크웹·텔레그램·SNS 등 히든 채널의 비정형 데이터를 실시간 수집·분석해 위협 행위자 식별과 프로파일링을 지원하며, 국가정보원과 인터폴이 핵심 고객이다. 퀘이사는 ASM·디지털 리스크 보호(DRP)·위협 인텔리전스 기능을 통합 제공하는 기업용 플랫폼으로, 에이수스(ASUS)·에버그린해운 등 글로벌 대기업과 그리스·사우디아라비아 정부기관에 공급 중이다. SAIP는 기업 내부 데이터를 지식그래프로 변환해 도메인 특화 AI 환경을 구축하는 AI 전환(AX) 솔루션으로, 금융·제조·물류 등 산업 AI 시장을 겨냥한다. 2024년 기준 제품별 매출 비중은 퀘이사 42.1%, 자비스 40.5%, SAIP 15.2%였으나(유진투자증권 IPO 리포트, 2025년 9월), 2025년에는 SAIP 매출이 사실상 소멸되면서 퀘이사·자비스 양축 구조로 재편되었다. SaaS 매출 비중이 약 70~80%에 달해 안정적 반복 수익 구조를 갖추며, KAIST 출신 연구진 중심으로 설립돼 2023년 ACL에서 세계 최초 다크웹 특화 AI 모델 'DarkBERT'를 발표하는 등 학술 기반 기술력을 겸비한다. MS 시큐리티 코파일럿의 유일한 한국 파트너로 선정되는 등 25개 글로벌 파트너 네트워크를 갖추며, 북미 사업을 담당하는 종속회사를 포함한 연결 체계로 운영된다.",
+  "en": "S2W was founded in 2018 and listed on KOSDAQ in September 2025 under the technology-growth-company track. Its business spans three solution lines: XARVIS, a government and intelligence-agency security-AI platform; QUAXAR, an enterprise CTI and ASM platform; and SAIP (S2W AI Platform), an ontology-based domain-specific generative-AI environment. XARVIS ingests real-time data from dark web forums, Telegram, and other covert channels to identify and profile threat actors; core clients include Korea's National Intelligence Service (NIS) and Interpol. QUAXAR integrates ASM, digital-risk protection (DRP) and threat intelligence for enterprise and institutional clients, with recent supply wins including ASUS, Evergreen Marine, and government agencies in Greece and Saudi Arabia. SAIP converts corporate data into knowledge graphs to build domain-specific enterprise AI environments, targeting financial, manufacturing, and other verticals in the AI-transformation market. Based on 2024 product mix, QUAXAR accounted for 42.1% of revenue, XARVIS 40.5%, and SAIP 15.2% (Eugene Investment Research, September 2025); SAIP revenue effectively disappeared in 2025, leaving the business anchored by the two core platforms. SaaS revenue accounts for approximately 70–80% of total sales, providing a predictable recurring base. S2W was co-founded by KAIST researchers and published DarkBERT—the world's first dark-web LLM—at the ACL conference in 2023. It is Korea's sole partner in Microsoft Security Copilot and maintains a 25-company global partner network, with a US subsidiary handling North American business."
+ },
+ "earnings": {
+  "ko": "2025년 연결 기준 매출액은 약 100.9억원으로 전년 대비 5.0% 증가하였으나, 영업손실은 56.4억원(OPM -55.9%)으로 전년 대비 25.4% 확대되었다. 연구개발 투자 및 시장 확장 비용 증가, 그리고 국책과제 종료 후 상용화 전환 비용이 손실 확대의 주된 요인이다. 지배주주 귀속 순손실은 52.9억원이며, 영업활동 현금흐름은 -42.8억원으로 지속적인 현금 유출이 이어졌다. 자기자본은 231.3억원, 부채비율은 31.9%로 단기 재무 건전성은 비교적 양호한 수준이다. 분기별로는 2025년 4분기에 매출 37.0억원·영업손실 4.8억원으로 연간 평균 대비 큰 폭의 개선세를 보였는데, 이는 B2G 사업의 전형적인 연말 매출 집중 현상을 반영한다. 반면 2026년 1분기는 매출 21.8억원·영업손실 22.5억원으로 손실이 분기 매출을 초과하는 이례적인 상황이 나타났으며, 비용 선행 집행과 상장 후 인력·인프라 확충 효과가 반영된 것으로 해석된다. 제품별로는 퀘이사(2025년 약 47억원, 전년 대비 +16.5%)와 자비스(약 43억원, 전년 대비 +10.4%)가 안정적 성장을 유지한 반면, SAIP는 저가형 LLM 경쟁 심화로 2025년 수주가 전무하여 전체 성장률을 제한하였다(신한투자증권, 2026년 4월). 주당순손실(EPS)은 -561원으로 확정 기재되어 있으며 누적 적자 국면이 지속 중이다.",
+  "en": "Consolidated 2025 revenue reached approximately KRW 10.09 billion, a 5.0% year-on-year increase, while the operating loss widened 25.4% to KRW 5.64 billion (OPM -55.9%). Higher R&D spend, market-expansion costs, and post-national-R&D commercialisation expenses were the primary drivers of the wider loss. Net loss attributable to controlling shareholders was KRW 5.29 billion, and operating cash flow was negative KRW 4.28 billion. Total equity of KRW 23.1 billion and a debt ratio of 31.9% indicate a manageable near-term financial position. On a quarterly basis, Q4 2025 showed material improvement—revenue of KRW 3.70 billion and an operating loss of only KRW 481 million—consistent with the back-half government-procurement weighting typical in B2G software businesses. Q1 2026 deteriorated sharply: revenue of KRW 2.18 billion was accompanied by an operating loss of KRW 2.25 billion, with the loss exceeding sales, likely reflecting front-loaded headcount and infrastructure investment following the IPO. By product line, QUAXAR (approximately KRW 4.7 billion in 2025, +16.5% YoY) and XARVIS (approximately KRW 4.3 billion, +10.4% YoY) maintained steady growth, while SAIP posted zero revenue in 2025 due to intensified competition from low-cost LLM alternatives (Shinhan Investment Securities, April 2026). Basic EPS stands at -₩561, reflecting continued per-share losses."
+ },
+ "industry": {
+  "ko": "글로벌 AI 기반 사이버보안 시장 규모는 2026년 약 362억 달러로 추산되며, 2035년까지 연평균 약 20%의 고성장이 예상된다. 세계경제포럼(WEF)은 2026년을 '사이버 위험이 가속화되는 해'로 규정하며, AI 기반 공격 고도화·지정학적 분열·공급망 복잡성이 전통적 보안 모델의 구조적 한계를 드러내고 있다고 경고하였다. 이에 따라 위협 인텔리전스(CTI)·공격표면관리(ASM) 등 사전 예방형 AI 보안 솔루션이 사후 차단 중심의 전통 솔루션을 대체하는 흐름이 심화되고 있다. 국내에서는 2026년 1월 AI 기본법이 본격 시행되고 '국가 망 보안체계(N2SF)'가 공공 부문에 도입되면서 AI 보안 관련 공공 발주 확대가 기대된다. 다크웹 특화 위협 인텔리전스 분야에서 에스투더블유의 국내 직접 경쟁사는 사실상 부재하나, 글로벌로는 Recorded Future·Mandiant(Google)·CrowdStrike 등 대형 플랫폼 업체와 간접 경쟁 구도가 존재한다. AI 기반 사이버 공격 자동화가 가속화되면서 에이전트에 대체되지 않는 경쟁력은 특화 도메인·특화 데이터에서 나온다는 인식이 확산되어, 다크웹 독점 데이터와 DarkBERT의 차별적 가치가 재조명되고 있다. 방산·국방 AI 전환 수요도 신규 시장으로 부상 중이며, 에스투더블유는 이 영역을 차기 성장 축으로 명시적으로 공략하고 있다.",
+  "en": "The global AI-based cybersecurity market is estimated at approximately USD 36 billion in 2026, with a projected CAGR of around 20% through 2035. The WEF's Global Cybersecurity Outlook 2026 designates the year as one of 'accelerating cyber risk', citing AI-driven attack automation, geopolitical fragmentation and supply-chain complexity as forces exposing the structural limits of conventional security models. Proactive, intelligence-led solutions—CTI, ASM, threat-actor profiling—are increasingly displacing reactive tools. In Korea, the AI Basic Act came into force in January 2026 and the National Network Security Framework (N2SF) is rolling out across the public sector, generating incremental government procurement. In dark-web threat intelligence, S2W faces effectively no domestic rival; globally it competes indirectly with large platforms such as Recorded Future (Mastercard), Mandiant (Google), and CrowdStrike. As AI-automated attacks accelerate, the perception that competitive moats reside in domain-specific data rather than generic LLMs—consistent with S2W's proprietary dark-web corpus and DarkBERT—is gaining traction. Defence and military AI-transformation is also emerging as an addressable new vertical, one the company has explicitly targeted."
+ },
+ "outlook": {
+  "ko": "회사는 2026년 매출 목표로 239억원, 영업이익 39억원(첫 연간 흑자 전환)을 공식 제시하였으나, 2026년 1분기 실적을 감안하면 달성을 위해 잔여 3개 분기에 분기당 평균 약 72억원 이상의 매출이 필요하다. 서상덕 대표는 '2026년 하반기부터 국방부의 정보화전략계획(ISP) 관련 사업 발주가 본격화될 것으로 예상한다'고 밝혀 방산·안보 분야 신시장 진입 의지를 명확히 했다. 신한투자증권은 MS를 포함한 25개 파트너사를 통해 2026년 해외 매출이 전년 대비 2배를 상회할 것으로 전망하며, SAIP 구축형 수주가 2026년 하반기부터 본격화될 것으로 예상하고 있다. 2026년 3월에는 에이수스(ASUS)에 퀘이사를 공급하는 계약을 체결하였고, 4월에는 우주 AI 기업 텔레픽스와 위성·사이버 인텔리전스 교차분석을 위한 MOU를 맺는 등 글로벌 레퍼런스 확장이 지속되고 있다. 싱가포르 법인 설립은 2026년 중으로 계획되어 있으며, 인도네시아 정부 대형 수주 협의도 진행 중이다. 유럽에서는 2026년 4월 프랑스에서 열린 '인사이버 포럼 유럽 2026', 싱가포르 'MTX 2026' 등 주요 안보 전시회 연이어 참가하며 현지 파트너 네트워크를 확충하고 있다. 중장기적으로는 AX 사업 매출 비중을 절반 이상으로 확대하고, 2027년 해외 매출 비중 40% 이상 달성을 목표로 제시하고 있다.",
+  "en": "Management has set a 2026 revenue target of KRW 23.9 billion and operating profit of KRW 3.9 billion (the company's first-ever annual profitability), though reaching these figures from Q1 2026 levels would require the remaining three quarters to average over KRW 7.2 billion each in revenue. CEO Seo explicitly stated he expects Ministry of Defence ISP project procurement to become 'active from H2 2026', signalling a concrete entry path into a new defence-AI vertical. Shinhan Investment Securities projects overseas revenue to more than double year-on-year via a 25-partner network including Microsoft, and anticipates SAIP enterprise-contract revival from H2 2026. In March 2026, S2W concluded a QUAXAR supply agreement with ASUS; in April 2026 it signed an MOU with satellite-AI firm TelePIX to develop cyber-space intelligence fusion capabilities, continuing a string of reference expansions. A Singapore subsidiary is planned for 2026 and Indonesia government contract discussions are ongoing. On the conference circuit, S2W participated in INCYBER Forum Europe 2026 (Lille, April) and MTX 2026 (Singapore, May/June), building local partner networks. Medium-term targets include raising the AX business revenue share to above 50% of total and achieving overseas revenue above 40% of total by 2027."
+ },
+ "valuation_comment": {
+  "ko": "에스투더블유는 현재 적자 구간에 있어 PER 지표는 산출되지 않으며, 주당순자산(BPS) 2,015원 대비 현 주가는 수 배에 달하는 성장 기대 프리미엄을 반영한다—이는 흑자 전환 이전의 AI 소프트웨어 성장주에 통상 부여되는 구조와 유사하다. 증권가(신한투자증권·DS투자증권·NH투자증권)는 2026년 예상 실적 기준 EV/Sales가 AI 소프트웨어 동종 기업 중 상대적으로 낮은 수준임을 주목하나, SAIP 수주 재개와 해외 매출 확대가 실제로 확인되어야 그 논거가 지지된다. 2026년 1분기의 영업손실 확대는 가이던스 달성에 대한 불확실성을 높이며, 실적 개선이 검증되지 않는 한 현재 프리미엄 수준에 대한 지속적인 압박이 예상된다. 배당은 미실시 상태로 흑자 전환이 선행 과제인 만큼 업종 평균 대비 배당수익률은 현저히 낮은 구조다. 공모가 수준으로 회귀한 주가 흐름과 대표이사의 수차례 자사주 매입 공시가 병존하는 구도는 시장 참여자 간의 뚜렷한 평가 괴리를 시사하며, 2026년 하반기 분기 실적과 주요 수주 공시가 밸류에이션 방향을 결정짓는 핵심 이벤트가 될 것이다.",
+  "en": "With the company in ongoing net-loss territory, the P/E ratio is not applicable, and the stock trades at a multiple of its book value per share (BPS: ₩2,015), reflecting a growth-expectation premium typical of pre-profitability AI-software names. Sell-side analysts (Shinhan, DS Securities, NH Investment) cite a relatively low EV/Sales multiple within the AI-software peer set as a potential valuation support argument, but this thesis requires actual validation through SAIP contract revival and overseas revenue expansion. The deepening Q1 2026 operating loss raises execution risk and sustains pressure on the embedded growth premium. No cash dividends are currently paid, leaving the yield well below any sector benchmark, with a profitability turnaround serving as the prerequisite. The coexistence of a share price that has retraced toward its IPO-issuance level alongside multiple CEO open-market purchases signals a visible divergence in near-term market sentiment; H2 2026 quarterly earnings and contract announcements are the most direct catalysts for any valuation re-rating."
+ },
+ "bull": [
+  {
+   "title": {
+    "ko": "세계 유일 다크웹 AI 해자와 무결점에 가까운 고객유지율",
+    "en": "World-Unique Dark-Web AI Moat and Near-Perfect SaaS Retention"
+   },
+   "body": {
+    "ko": "약 4억 페이지의 다크웹 데이터로 학습된 DarkBERT와 지식그래프 기반 교차분석 기술은 단기간에 복제하기 어려운 기술적 해자를 형성한다. 자비스의 고객유지율 ~100%, 퀘이사의 ~91%는 SaaS 기반 반복 매출의 높은 이탈 방어력을 입증하며, 고객 기반이 확장될수록 손익분기점 이후 이익 레버리지 효과가 빠르게 나타나는 구조다. 인터폴·국정원 등 최고 수준의 안보기관 레퍼런스는 신규 정부 고객 유치에서 강력한 신뢰 자산 역할을 한다.",
+    "en": "DarkBERT, trained on approximately 400 million dark-web pages, and proprietary knowledge-graph cross-analysis create a technically difficult-to-replicate competitive moat. XARVIS's ~100% and QUAXAR's ~91% client retention rates demonstrate exceptionally strong SaaS stickiness, and the cost structure means that operating leverage amplifies sharply once break-even is crossed. References from top-tier clients such as Interpol and Korea's NIS serve as the most powerful credential for winning new government contracts worldwide."
+   }
+  },
+  {
+   "title": {
+    "ko": "25개 글로벌 파트너망과 해외 정부 수주 확대 모멘텀",
+    "en": "25-Company Global Partner Network and Expanding Government Order Momentum"
+   },
+   "body": {
+    "ko": "MS 시큐리티 코파일럿 유일 한국 파트너 지위를 포함한 25개 글로벌 파트너를 통해 해외 매출이 전년 대비 2배 이상 확대될 수 있는 파이프라인이 구축되어 있다. 에이수스 퀘이사 공급, 그리스 정부기관 공급, 인도네시아·사우디아라비아 레퍼런스 등 2026년 초에도 해외 수주 공시가 이어지고 있다. 중동·아시아·유럽 등 정부기관 보안 예산이 지속 확대되는 지역에서 자비스 수주가 예상을 상회할 경우 연간 가이던스 초과 달성 시나리오도 열린다.",
+    "en": "A pipeline including 25 global partners—anchored by the sole-Korean-partner position in Microsoft Security Copilot—supports a credible case for overseas revenue more than doubling year-on-year. ASUS QUAXAR supply, Greek government delivery, and ongoing Indonesia and Saudi Arabia references demonstrate a continued flow of 2026 international contract announcements. Should XARVIS government wins in Middle Eastern, Asian, or European security budgets outpace expectations, an above-guidance revenue scenario becomes feasible."
+   }
+  },
+  {
+   "title": {
+    "ko": "AI 기본법·N2SF 시행과 방산 신시장 개화",
+    "en": "AI Act and N2SF Regulatory Tailwinds Plus a New Defence-Market Opportunity"
+   },
+   "body": {
+    "ko": "2026년 AI 기본법 시행·N2SF 도입은 공공 부문에서 신규 AI 보안 수요를 창출하며 SAIP·자비스의 수주 기회를 확대한다. 서상덕 대표가 '2026년 하반기부터 국방부 ISP 발주 본격화'를 직접 언급한 만큼 방산 AI 신시장 진입의 가시성이 높아지고 있다. SAIP 구축형 수주가 하반기 대형 계약으로 재개된다면, 단일 프로젝트가 연간 영업이익 흑자 전환의 직접 촉매가 될 수 있는 구조다.",
+    "en": "The January 2026 AI Basic Act and N2SF rollout in Korea's public sector create fresh demand for AI-security platforms, directly expanding SAIP and XARVIS pipeline opportunities. The CEO's explicit statement that MOD ISP project tenders will become active from H2 2026 enhances visibility into a new defence-AI vertical. If SAIP secures a large on-premise enterprise contract in H2 2026, a single deal could be the direct catalyst for the first-ever annual operating profit."
+   }
+  }
+ ],
+ "bear": [
+  {
+   "title": {
+    "ko": "2026년 1분기 급락 실적—가이던스 신뢰성에 대한 의문",
+    "en": "Q1 2026 Earnings Slump — Guidance Credibility Under Scrutiny"
+   },
+   "body": {
+    "ko": "2026년 1분기 매출 21.8억원에 영업손실 22.5억원으로, 연간 가이던스(매출 239억원·영업이익 흑자 전환)를 달성하려면 잔여 3개 분기에 분기당 평균 약 72억원의 매출이 필요한데 이는 분기 최대치(2025년 4분기 37억원)보다 두 배에 가까운 수준이다. 정부 계약의 하반기 집중 현상이 있다 해도 이 수준의 급격한 매출 반등은 실현 가능성이 높지 않아, 실적 발표 때마다 가이던스 하향 조정 리스크가 상존한다. 오버행 물량이 완전히 소화되지 않은 상황에서 실망스러운 실적이 이어질 경우 주가 변동성이 확대될 수 있다.",
+    "en": "Q1 2026 revenue of KRW 2.18 billion and operating loss of KRW 2.25 billion imply that achieving the full-year guidance of KRW 23.9 billion revenue and first-ever operating profit would require the remaining three quarters to average nearly KRW 7.2 billion each—approaching twice the Q4 2025 quarterly record of KRW 3.7 billion. Even granting government-procurement seasonality, such a steep ramp appears highly demanding and leaves a persistent risk of guidance downgrades with each earnings release. If disappointing results continue while residual post-IPO overhang is unresolved, share-price volatility could intensify."
+   }
+  },
+  {
+   "title": {
+    "ko": "SAIP 매출 공백과 저가 LLM 경쟁 지속",
+    "en": "SAIP Revenue Gap and Sustained Low-Cost LLM Competition"
+   },
+   "body": {
+    "ko": "SAIP는 2024년 약 15억원의 매출을 기록했으나 2025년에는 저가형 LLM 솔루션과의 경쟁 심화로 수주가 전무하였다. 세 번째 성장 축인 SAIP가 2026년에도 회복되지 않는다면 퀘이사·자비스만으로 연간 가이던스 달성은 사실상 불가능하다. 클로드·GPT-4·제미나이 등 범용 LLM의 급격한 성능 고도화가 지속되는 가운데, SAIP의 '보안성과 도메인 전문성' 차별화 포지셔닝이 시장에서 실질적으로 수용될지에 대한 추가 검증이 필요하다.",
+    "en": "SAIP generated approximately KRW 1.5 billion in 2024 but recorded zero revenue in 2025 as low-cost LLM-based alternatives competed aggressively. Without SAIP recovery, meeting the full-year guidance relying solely on QUAXAR and XARVIS growth is essentially impossible. As commodity LLMs (Claude, GPT-4o, Gemini) continue to improve rapidly, S2W's 'security-hardened domain-specialist AI' positioning for SAIP still requires real-world market validation—a risk that has already materialised once in SAIP's zero-revenue year."
+   }
+  },
+  {
+   "title": {
+    "ko": "높은 순자산 프리미엄과 현금 유출 지속 리스크",
+    "en": "Large Premium to Book Value and Continued Cash-Burn Risk"
+   },
+   "body": {
+    "ko": "현재 주가는 주당순자산(BPS 2,015원) 대비 상당한 프리미엄 구간에서 거래되고 있어, 실적 가시성이 확보되지 않으면 재평가 압력에 지속적으로 노출된다. 2025년 영업활동 현금흐름이 -42.8억원을 기록하였고 2026년 1분기에도 대규모 손실이 지속되고 있어, 가이던스대로 흑자 전환이 이루어지지 않을 경우 추가 자금 조달 가능성이 부각될 수 있다. 배당 부재와 상장 후 오버행 물량 미소화는 수급 측면의 추가 부담 요인이다.",
+    "en": "The stock trades at a substantial premium above its book value per share (BPS: ₩2,015), leaving it persistently exposed to de-rating risk if earnings visibility fails to improve. Operating cash flow was negative KRW 4.28 billion in 2025, and the Q1 2026 result indicates continued large cash outflows, raising the possibility of additional capital raises if the profitability turnaround is delayed. The absence of dividends and residual post-IPO overhang add further supply-side headwinds."
+   }
+  }
+ ],
+ "risks": [
+  {
+   "cat": {
+    "ko": "고객 집중 및 공공 예산 사이클 의존",
+    "en": "Customer Concentration and Public-Sector Budget-Cycle Dependence"
+   },
+   "body": {
+    "ko": "매출의 상당 부분이 국정원·인터폴 등 소수의 정부기관 고객에 집중되어 있어, 계약 갱신 실패나 정부 예산 삭감이 매출에 즉각적이고 큰 영향을 미칠 수 있다. B2G 특성상 계약 주기와 예산 승인 타이밍에 따라 분기별 매출 편차가 극심하며, 2026년 1분기 실적에서 보듯 비수기의 현금 유출이 상당히 크다. 신규 정부 고객 확보는 레퍼런스 의존도가 높고 영업 주기가 길어, 수주 다각화 속도에 구조적 제약이 따른다.",
+    "en": "A significant proportion of revenue is concentrated in a small number of government clients, making S2W highly sensitive to contract non-renewals or government budget cuts. B2G procurement cycles create extreme quarter-to-quarter revenue swings, as dramatically illustrated by Q1 2026's cash-burn level relative to quarterly sales. Acquiring new government clients is a reference-dependent process with long sales cycles, placing structural constraints on the pace of order diversification."
+   }
+  },
+  {
+   "cat": {
+    "ko": "기술 진부화: 범용 LLM 고도화 및 AI 에이전트 경쟁",
+    "en": "Technology Obsolescence: Commodity LLM Advancement and AI Agent Competition"
+   },
+   "body": {
+    "ko": "OpenAI·Anthropic·Google 등 글로벌 빅테크의 범용 LLM이 빠르게 발전하면서 다크웹 분석·이상 탐지 등 일부 기능이 대체될 가능성이 제기된다. AI 에이전트 기반 보안 툴의 등장은 특화 솔루션 업체들에게 새로운 경쟁 위협이 될 수 있으며, 이는 이미 2025년 SAIP 매출 소멸로 일부 현실화된 전례가 있다. DarkBERT 이후의 차세대 모델 개발과 독점 데이터의 지속적 고도화가 뒷받침되지 않으면 경쟁 우위가 점진적으로 잠식될 수 있다.",
+    "en": "Rapid advancement by OpenAI, Anthropic, and Google raises the prospect that dark-web analysis and anomaly-detection functions could be commoditised over time. The emergence of AI-agent-based security tools poses new competitive threats to domain-specialist vendors—a risk that has already partially materialised in SAIP's zero-revenue year in 2025. Without continuous next-generation model development and ongoing proprietary data enhancement beyond DarkBERT, competitive advantages could erode gradually."
+   }
+  },
+  {
+   "cat": {
+    "ko": "해외 시장 규제·지정학적 불확실성",
+    "en": "Overseas Regulatory and Geopolitical Uncertainty"
+   },
+   "body": {
+    "ko": "사우디아라비아·인도네시아·일본 등 신흥 수출 시장은 각국의 데이터 주권 규제, 정부 조달 법규, 외국 보안 솔루션 도입 제한 등 다양한 규제 리스크를 내포한다. 지정학적 갈등 심화나 특정 국가의 보안 규제 강화는 진행 중인 수주 프로세스를 중단시키거나 계약 조건을 불리하게 변경할 수 있다. 해외 매출 비중 확대 시 환율 변동도 수익성에 영향을 주는 추가 변수가 된다.",
+    "en": "Emerging export markets—Saudi Arabia, Indonesia, Japan—carry diverse regulatory risks including data-sovereignty mandates, government procurement restrictions on foreign security solutions, and sector-specific security regulations. Escalating geopolitical tensions or tightening security regulations in specific countries could interrupt ongoing procurement processes or adversely alter contract terms. Currency fluctuations will become an increasingly significant profitability variable as the overseas revenue share expands."
+   }
+  }
+ ],
+ "checkpoints": [
+  {
+   "when": {
+    "ko": "2026년 8월 중순",
+    "en": "Mid-August 2026"
+   },
+   "what": {
+    "ko": "2026년 2분기 실적 발표: 매출이 1분기 대비 의미 있게 반등하는지, 특히 SAIP 수주 재개 여부와 해외 매출 비중 변화가 연간 가이던스 달성 가능성을 가늠하는 핵심 신호다.",
+    "en": "Q2 2026 earnings release: a meaningful sequential revenue rebound—specifically SAIP order intake and the overseas revenue share—is the key signal for gauging whether full-year guidance remains achievable."
+   }
+  },
+  {
+   "when": {
+    "ko": "2026년 하반기 중",
+    "en": "H2 2026"
+   },
+   "what": {
+    "ko": "SAIP 구축형 대형 수주 공시: 단일 SAIP 프로젝트 수주가 수십 억원 규모라면 연간 흑자 전환의 직접 촉매가 되므로 DART 공시 또는 IR 업데이트에 주목해야 한다.",
+    "en": "SAIP large on-premise contract announcement: a single SAIP deal in the multi-billion KRW range would be a direct catalyst for the first-ever annual operating profit; monitor for DART filings or IR pipeline updates."
+   }
+  },
+  {
+   "when": {
+    "ko": "2026년 하반기~2027년 초",
+    "en": "H2 2026 – Early 2027"
+   },
+   "what": {
+    "ko": "국방부 정보화전략계획(ISP) 사업 입찰 공고 여부: CEO가 직접 언급한 '2026년 하반기 국방 ISP 발주 본격화' 실현 여부와 수주 규모가 방산 AI 신시장 진입의 가시성을 결정한다.",
+    "en": "Ministry of Defence ISP project tender announcement: the CEO explicitly cited H2 2026 for MOD ISP procurement to begin; tender notices and eventual contract size will determine visibility into S2W's entry into the defence-AI vertical."
+   }
+  },
+  {
+   "when": {
+    "ko": "2026년 하반기",
+    "en": "H2 2026"
+   },
+   "what": {
+    "ko": "싱가포르 법인 설립 완료 및 인도네시아 정부 대형 수주 확정 여부: 두 이벤트 모두 아세안 B2G 시장 진입의 이정표로, DART 공시 또는 IR에서 진행 상황을 확인할 필요가 있다.",
+    "en": "Singapore subsidiary establishment and Indonesia government contract confirmation: both would mark concrete ASEAN B2G market entry milestones; monitor DART disclosures or IR announcements for progress."
+   }
+  },
+  {
+   "when": {
+    "ko": "2027년 1~2월",
+    "en": "January–February 2027"
+   },
+   "what": {
+    "ko": "2026년 연간 실적 잠정치 발표: 회사 공식 가이던스(첫 연간 흑자 전환) 달성 여부를 확인하는 최종 관문으로, 영업이익 흑자 달성과 영업활동 현금흐름 개선 여부가 중장기 밸류에이션 재정립의 기준점이 된다.",
+    "en": "Preliminary 2026 annual results: the definitive test of whether the first-ever annual operating profit guidance was met; the sign of operating profit and direction of operating cash flow will set the baseline for medium-term valuation re-rating."
+   }
+  }
+ ],
+ "verdict": {
+  "body": {
+   "ko": "에스투더블유는 다크웹 특화 AI와 지식그래프 교차분석 기술을 바탕으로 글로벌 안보·사이버보안 시장에서 독보적인 포지션을 확보한 국내 유일 기업으로, 인터폴·MS 파트너십과 자비스·퀘이사의 높은 고객유지율은 중장기 성장 구조의 내구성을 지지한다. 그러나 2025년 영업손실 확대, SAIP 매출 공백, 2026년 1분기 영업손실이 분기 매출을 초과하는 이례적 결과는 단기 실적 가시성을 제한하고 있으며, 연간 가이던스 달성을 위해서는 하반기 유례없는 매출 반등이 필요하다. AI 기반 사이버보안 전방 시장은 연평균 20% 이상의 고성장 구간에 있고, AI 기본법·N2SF·방산 ISP 발주 등 국내외 제도적 변화는 신규 수주 기회를 창출하는 우호적 환경을 조성 중이다. 현재 주가는 주당순자산(BPS 2,015원)을 크게 상회하는 성장 기대 프리미엄을 내포하고 있어, SAIP 수주 재개와 해외 매출 확대 실적이 이 프리미엄의 정당성을 판가름하는 핵심 관문이 된다. 대표이사의 반복적인 자사주 매입과 글로벌 파트너십 확장은 긍정적 신호이나, 실제 실적 개선이 수반되지 않는 한 검증 불확실성은 지속된다. 2026년 하반기 실적과 SAIP·방산 수주 공시가 근시일 내 방향성의 분수령이 될 것이며, 2026년 연간 실적이 중장기 밸류에이션 재정립의 최종 기준점으로 작용할 것이다.",
+   "en": "S2W occupies a unique position in global security AI, underpinned by a dark-web-specialised technology moat and blue-chip government references—Interpol, Korea's NIS, Microsoft Security Copilot—that competitors cannot easily replicate; XARVIS and QUAXAR's near-perfect SaaS retention rates support the structural durability of the recurring-revenue base. However, the widening 2025 operating loss, complete absence of SAIP revenue, and a Q1 2026 operating loss that exceeded quarterly sales sharply constrain near-term earnings visibility, with the full-year guidance requiring an unprecedented H2 revenue ramp to materialise. The AI-cybersecurity market backdrop remains highly favourable—approximately 20% CAGR—and domestic catalysts including the AI Basic Act, N2SF adoption, and expected MOD ISP tenders create a constructive pipeline environment. The stock's substantial premium above book value per share (BPS: ₩2,015) makes tangible proof of SAIP contract revival and confirmed overseas order expansion the critical gateway for premium justification. The CEO's repeated open-market share purchases and expanding global partnerships are constructive signals, but without hard earnings evidence, execution uncertainty persists. H2 2026 results and SAIP/defence contract announcements will be the near-term inflection point, while 2026 full-year results will set the definitive baseline for any medium-term valuation re-rating."
+  }
+ },
+ "sources": [
+  "https://comp.fnguide.com/SVO2/ASP/SVD_Main.asp?pGB=1&gicode=A488280&cID=&MenuYn=Y&ReportGB=&NewMenuID=101&stkGb=701",
+  "https://thevc.kr/s2w",
+  "https://m.thinkpool.com/compDiscuss/cont/1025923",
+  "https://www.eugenefn.com/common/files/amail/20250902_B_jongsun.park_2451.pdf",
+  "https://m.thinkpool.com/compDiscuss/cont/1025460",
+  "https://www.ustockplus.com/stock/sw-488280",
+  "https://eureka.hankyung.com/insight/detail/15311",
+  "https://m.thinkpool.com/stockDiscuss/488280/cont/11874897",
+  "https://kr.investing.com/equities/s2w-earnings",
+  "https://s2w.inc/ko/",
+  "https://zdnet.co.kr/view/?no=20260517151840",
+  "https://www.hankyung.com/article/202605146584i",
+  "https://m.view.nate.com/enter/view/375331/",
+  "https://www.thelec.kr/news/articleView.html?idxno=50966",
+  "https://zdnet.co.kr/view/?no=20240709100743",
+  "https://www.hankyung.com/article/2026051719791",
+  "https://www.etoday.co.kr/news/view/2546844",
+  "https://news.nate.com/view/20260416n20037"
+ ],
+ "v": 2,
+ "model": "claude-sonnet-4-6",
+ "ticker": "488280",
+ "name": "에스투더블유",
+ "name_en": "S2W Inc.",
+ "sector": "IT·소프트웨어",
+ "categories": [
+  "IT·소프트웨어"
+ ],
+ "market": "코스닥",
+ "reportDate": "2026-06-19",
+ "reportTs": "2026-06-19 01:03",
+ "dataDate": "20260618",
+ "quant": {
+  "asOf": "2026-06-18",
+  "fs_basis": "연결(CFS) · DART 공시 확정치 · 지배주주 기준 순이익",
+  "annual": [
+   {
+    "year": 2025,
+    "rev": 10088850738,
+    "op": -5640472823,
+    "np": -5290915573,
+    "np_owner": -5290915573,
+    "equity": 23127585865,
+    "equity_owner": 23127585865,
+    "liab": 7386050188,
+    "cfo": -4281455149,
+    "eps_basic": -561,
+    "opm": -55.9,
+    "roe": -22.9,
+    "debt_ratio": 31.9
+   }
+  ],
+  "quarterly": [
+   {
+    "q": "2025Q1",
+    "rev": null,
+    "op": null,
+    "np_owner": null
+   },
+   {
+    "q": "2025Q2",
+    "rev": null,
+    "op": null,
+    "np_owner": null
+   },
+   {
+    "q": "2025Q3",
+    "rev": null,
+    "op": null,
+    "np_owner": null
+   },
+   {
+    "q": "2025Q4",
+    "rev": 3702657883,
+    "op": -481718166,
+    "np_owner": -310896668
+   },
+   {
+    "q": "2026Q1",
+    "rev": 2176940127,
+    "op": -2251582443,
+    "np_owner": -1954935695
+   }
+  ],
+  "valuation": {
+   "price": 15690,
+   "mcap": 0.1695,
+   "shares": 10803486,
+   "total_shares": 10659263,
+   "wavg_shares": 10682708,
+   "per": null,
+   "eps": null,
+   "pbr": 7.79,
+   "bps": 2015,
+   "roe_ttm": null,
+   "ttm_window": null,
+   "ttm_np_owner": null,
+   "pbr_krx": 7.5,
+   "bps_krx": 2170.0,
+   "basis": "PER·EPS·PBR·BPS 모두 자체 산출(네이버·토스와 동일 방식) · 배당은 DART 공시 주당현금배당금(보완:KRX) ÷ 현재가",
+   "dps": 0.0,
+   "div": 0.0
+  }
+ }
+}
