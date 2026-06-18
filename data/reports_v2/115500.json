@@ -1,0 +1,356 @@
+{
+ "title": {
+  "ko": "금융IT 핵심 인프라 + 양자암호, 구조 전환의 갈림길",
+  "en": "Core Financial IT Meets Quantum Encryption: At a Structural Crossroads"
+ },
+ "lead": {
+  "ko": "국내 금융 결제망의 미션 크리티컬 시스템(HP NonStop)에서 사실상 독점적 지위를 보유한 케이씨에스가, SKT와 공동 개발한 국정원 KCMVP 최고 등급 인증 양자암호칩(QKEV7)으로 국방·공공 보안 시장 진출을 모색하는 가운데, 매출 규모 축소와 영업현금흐름 저하가 단기 주시 요인으로 부상하고 있다.",
+  "en": "KCS, holding a de facto monopoly in Korea's mission-critical HP NonStop financial payment infrastructure, is pursuing entry into defense and public security markets with its KCMVP Level-2 certified quantum encryption chip (QKEV7) co-developed with SK Telecom, while a shrinking revenue base and weak 2025 operating cash flow have emerged as near-term watch points."
+ },
+ "keypoints": [
+  {
+   "ko": "수익성 구조 개선: 영업이익률이 2022년 1.3%에서 2025년 8.3%로 상승—매출 감소에도 마진이 뚜렷이 회복",
+   "en": "Structural margin improvement: Operating margin rose from 1.3% (2022) to 8.3% (2025), demonstrating profitability resilience despite top-line contraction."
+  },
+  {
+   "ko": "양자암호칩 QKEV7, 국정원 KCMVP 보안 수준 2등급(현재까지 부여된 최고 등급) 인증—국가·공공기관 보안 장비 납품의 필수 진입 요건 충족",
+   "en": "QKEV7 earned KCMVP Level-2 certification (the highest level currently awarded by Korea's NIS), satisfying the mandatory credential for supply to national and public-sector security systems."
+  },
+  {
+   "ko": "4분기 매출 집중 구조: 2025년 4분기 매출 약 119억원이 연간 전체의 약 48%를 차지하는 뚜렷한 계절성",
+   "en": "Q4 revenue concentration: 2025Q4 revenue of ~KRW 11.9bn represented approximately 48% of full-year revenue, highlighting sharp year-end seasonality tied to large system-replacement deliveries."
+  },
+  {
+   "ko": "중기 수주 가시성 확보: 우리카드 승인 시스템 교체(43.3억원)·롯데카드 2026~2028 통합유지보수(31.5억원)·탠덤 DR 교체(87.9억원) 수주 공시 확인",
+   "en": "Medium-term order visibility: Confirmed contracts include Woori Card system replacement (~KRW 4.3bn), Lotte Card integrated maintenance 2026-2028 (~KRW 3.15bn), and Tandem DR equipment replacement (~KRW 8.79bn)."
+  },
+  {
+   "ko": "재무 구조 정상화: 부채비율이 2022년 113.6%에서 2025년 40.8%로 대폭 축소되며 재무 건전성 회복",
+   "en": "Balance sheet normalization: Debt-to-equity ratio dropped sharply from 113.6% (2022) to 40.8% (2025), fully restoring financial stability."
+  }
+ ],
+ "business": {
+  "ko": "케이씨에스(Korea Computer & Systems)는 1974년 창립 이후 국내 금융 전산화를 선도해 온 한국지주(주)에서 2002년 12월 물적 분할되어 설립됐으며, 2010년 4월 코스닥에 상장했다. 사업은 크게 ① NonStop SI, ② 엔터프라이즈 솔루션, ③ 교통 인프라, ④ KIOSK 단말 등 4개 부문으로 구성된다. NonStop SI는 HP NonStop(구 탠덤) 서버 기반의 24시간 무정지·실시간 시스템을 금융·통신·공공 부문에 공급하는 핵심 사업으로, 1986년 금융결제원 금융공동망 시스템을 최초 납품한 이래 국내 유일 전문 사업자로 자리매김하고 있다. 엔터프라이즈 솔루션 사업은 BI·가상화·보안 솔루션을 담당하고, 교통 인프라 사업은 스마트 정거장·도로·철도 시스템을 운영하며, ASIC 사업 부문에서는 자체 설계 보안 반도체를 개발 중이다. 2023년 상반기 기준 매출 구성은 H/W 판매 약 38%, S/W 판매 약 14%, 유지보수 및 용역 약 47%로 반복 수익 성격의 유지보수 비중이 가장 크다. 주요 고객은 KB국민카드·삼성카드·하나카드·현대카드·우리카드·롯데카드 등 국내 주요 카드사로, 결제 승인 시스템 교체 및 유지보수 이력이 지속 확인된다. 2024년 11월 SKT와 공동 개발한 양자암호 원칩 QKEV7이 국정원 KCMVP 보안 수준 2등급 인증을 획득하며 보안 반도체가 신규 성장 축으로 추가됐다. 계열사로 한국컴퓨터(주)·한네트(주)·로지시스(주)·케이씨티(주) 등이 있으며, 한국컴퓨터지주(주) 산하에 있다.",
+  "en": "Korea Computer & Systems (KCS) was established in December 2002 as a spin-off from Korea Holdings, which had pioneered domestic financial computerization since 1974, and listed on KOSDAQ in April 2010. The business comprises four segments: (1) NonStop SI, (2) Enterprise Solution, (3) Transportation Infrastructure, and (4) KIOSK Terminals. NonStop SI—the core segment—supplies HP NonStop (formerly Tandem) server-based 24/7 mission-critical systems to financial institutions, telecoms, and public bodies; since its first delivery to the Korea Financial Telecommunications & Clearings Institute in 1986, KCS has established itself as the de facto sole specialized provider in Korea. Enterprise Solution covers BI, virtualization, and security solutions; Transportation Infrastructure handles smart transit stations, roads, and railways; and the ASIC segment develops proprietary security semiconductors. As of the first half of 2023, revenue was approximately 38% hardware, 14% software, and 47% maintenance and services—with recurring maintenance representing the largest share. Key customers include Korea's major card issuers: KB Kookmin Card, Samsung Card, Hana Card, Hyundai Card, Woori Card, and Lotte Card, with a consistent track record of system replacement and maintenance contracts. In November 2024, the QKEV7 quantum encryption chip co-developed with SK Telecom earned KCMVP Level-2 certification from Korea's National Intelligence Service, adding security semiconductors as a new growth pillar. Affiliates include Korea Computer Co., Hannet Co., Logisys Co., and KCT Co., all under Korea Computer Holdings."
+ },
+ "earnings": {
+  "ko": "2022년 연결 매출 약 417억원, 영업이익 약 5억원(OPM 1.3%)으로 수익성이 극도로 부진한 기저를 형성했다. 2023년에는 KB국민카드·삼성카드 등 대형 카드사의 탠덤 시스템 교체 수주가 집중되며 매출이 약 477억원, 영업이익 약 32억원(OPM 6.6%)으로 큰 폭 회복됐다. 2024년 매출은 약 295억원으로 전년 대비 38% 감소했으나 영업이익률은 6.7%를 유지했고, 2025년에는 매출이 약 249억원으로 추가 감소했음에도 OPM이 8.3%로 개선됐다—매출 축소 속에서 비용 구조 최적화가 진행 중임을 보여준다. 분기별로는 계절성이 극명하게 나타났다: 2025년 Q1·Q2·Q3 매출이 각각 약 40억·47억·43억원에 그친 반면, Q4에만 약 119억원이 집중돼 연간 전체의 약 48%를 차지했다—우리카드 승인 시스템 교체(계약금 43.3억원, 2025년 12월 착수) 등 대형 프로젝트가 연말 인도 방식으로 계상된 영향이다. 2025년 지배주주 귀속 순이익은 약 25억원으로 전년(약 20억원) 대비 26% 증가했다. 그러나 2025년 영업활동 현금흐름이 약 0.6억원으로 순이익 대비 현저히 낮아, 연말 대형 계약 이행에 따른 매출채권 증가 등 운전자본 부담이 발생했을 가능성이 있다. 2026년 1분기 매출은 약 51억원으로 전년 동기(약 40억원) 대비 약 27% 증가해 수주 기반의 회복 신호가 포착된다. 부채비율은 2022년 113.6%에서 2025년 40.8%로 대폭 축소되며 재무 안정성이 정상화됐다.",
+  "en": "FY2022 consolidated revenue of approximately KRW 41.7bn and operating income of approximately KRW 0.5bn (OPM 1.3%) established a severely depressed base. In 2023, concurrent system-replacement orders from KB Kookmin Card and Samsung Card drove a sharp recovery, lifting revenue to ~KRW 47.7bn and operating income to ~KRW 3.2bn (OPM 6.6%). Revenue declined 38% to ~KRW 29.5bn in 2024 as those large projects rolled off, yet operating margin held at 6.7%; in 2025, revenue contracted further to ~KRW 24.9bn while OPM improved to 8.3%, reflecting ongoing cost structure optimization amid the revenue decline. Quarterly distribution in 2025 was highly uneven: Q1, Q2, and Q3 revenues reached only ~KRW 4.0bn, ~KRW 4.7bn, and ~KRW 4.3bn, respectively, while Q4 alone contributed ~KRW 11.9bn (~48% of the full year)—driven by the Woori Card approval system replacement contract (KRW 4.33bn, commenced December 2025) and other year-end deliveries. FY2025 net income attributable to parent shareholders reached ~KRW 2.5bn, up 26% year-on-year from ~KRW 2.0bn. However, 2025 operating cash flow of approximately KRW 0.06bn was significantly below reported net income, potentially reflecting a buildup of trade receivables from large year-end project deliveries—a working-capital dynamic to monitor. The 2026Q1 revenue of ~KRW 5.1bn rose approximately 27% year-on-year from ~KRW 4.0bn, signaling early contract execution momentum. The debt-to-equity ratio fell sharply from 113.6% in 2022 to 40.8% in 2025, normalizing the balance sheet."
+ },
+ "industry": {
+  "ko": "국내 금융IT 인프라 시장은 은행·카드사의 핵심 시스템 교체 주기(통상 7~10년)에 따라 대형 수주가 불규칙하게 집중되는 구조로, HP NonStop 플랫폼에 특화된 케이씨에스가 사실상 유일한 국내 전문 SI 사업자 지위를 유지하고 있다. 글로벌 경기 둔화와 고객사의 TCO(총소유비용) 절감 압박으로 신규 하드웨어 도입이 지연되는 경향이 있으나, 유지보수·운영 수요는 상대적으로 안정적이다. 양자암호 시장은 정부 주도의 KCMVP 인증 의무화와 함께 빠르게 확장 중이다. 과학기술정보통신부 양자정보기술 백서에 따르면 글로벌 양자 통신 시장은 2022년 기준 연평균 약 39.8% 성장해 2030년 약 24.6조원 규모에 이를 전망이다. 국내에서도 양자내성암호(PQC) 시범 전환 사업이 본격화됨에 따라 금융 인프라 보안 고도화 수요가 증가할 것으로 예상된다. 양자암호 시장의 경쟁 구도는 SKT·KT 등 통신사가 수요를 주도하고, 원칩·VPN 하드웨어를 보유한 솔루션 기업이 공급망 핵심을 담당하는 형태로, 케이씨에스는 KCMVP 최고 등급 인증으로 공공·국방 시장 진입의 제도적 요건을 갖췄다. 교통인프라 사업은 스마트시티·자율주행 인프라 확대와 연동될 잠재력이 있으나 시장 형성 단계로 불확실성이 남아 있다.",
+  "en": "Korea's financial IT infrastructure market features irregular cycles of large-scale projects tied to the 7-to-10-year replacement cycles of core systems at banks and card issuers. KCS has maintained its position as the de facto sole specialized HP NonStop SI provider in the country, having accumulated decades of irreplaceable domain expertise. Global macroeconomic headwinds and client-side TCO reduction pressure can delay new hardware adoptions, but maintenance and operations demand remains comparatively stable. The quantum cryptography market is expanding rapidly, driven by government-mandated KCMVP certification requirements. According to the Ministry of Science and ICT's quantum information technology white paper, the global quantum communication market is projected to grow at a CAGR of approximately 39.8%, reaching roughly KRW 24.6 trillion by 2030. As Korea's post-quantum cryptography (PQC) pilot transition program accelerates, demand for higher-grade financial infrastructure security is also expected to rise. In the quantum security competitive landscape, telecoms (SKT, KT) drive demand while chip and VPN hardware solution providers occupy critical supply-chain positions; KCS's KCMVP Level-2 certification satisfies the formal prerequisite for defense and public-sector procurement. The transportation infrastructure segment holds potential alignment with smart-city and autonomous-driving infrastructure buildout, though this market remains at an early formation stage."
+ },
+ "outlook": {
+  "ko": "단기적으로는 2025년 11월 체결된 우리카드 승인 운영 시스템 교체 계약(43.3억원, 기간 ~2026년 6월)이 2026년 상반기 매출에 인식될 예정이다. 2026년 1월 체결된 롯데카드 통합유지보수 계약(31.5억원, 2026~2028년)은 중기 안정적 수익원을 제공한다. 공시된 탠덤 DR 장비 노후화 교체 계약(약 87.9억원)도 향후 매출 인식이 기대되는 파이프라인이다. 양자암호 사업에서는 KCMVP 인증을 기반으로 국방·공공 분야 QC-VPN 수주 영업에 주력하고 있으며, 회사는 QKEV7 칩을 드론 등 군용 IoT 장비에 2025~2026년 탑재 목표로 제시했다. SKT와는 차세대 양자암호칩 Q-HSM(세계 최초 PQC 탑재)을 통해 국가 보안 관련 실증 사업에 힘을 쏟고 있다. 2026년 1분기 매출의 전년 동기 대비 27% 개선은 수주 이행이 본격화되고 있음을 시사한다. 다만 2026년 하반기 이후 매출 가시성은 추가 카드사 시스템 교체 발주 여부에 따라 크게 달라질 수 있다. 회사의 중장기 방향성은 기존 금융 뱅킹 시스템과 키오스크 라인업에 QKEV7 칩을 탑재해 금융 보안 생태계를 고도화하는 것으로 제시되고 있다.",
+  "en": "In the near term, the Woori Card approval system replacement contract (KRW 4.33bn, contracted November 2025 through June 2026) is scheduled to be recognized in first-half 2026 revenue. The Lotte Card integrated maintenance contract (KRW 3.15bn, 2026-2028) provides a medium-term recurring revenue anchor. A separately disclosed Tandem DR equipment replacement order (~KRW 8.79bn) represents an additional pipeline item. On the quantum encryption front, the company is actively pursuing QC-VPN orders from defense and public agencies, supported by its KCMVP Level-2 certification; management indicated that QKEV7 chips are targeted for deployment in drones and military IoT devices during 2025-2026. KCS and SKT are also pushing forward with national security pilot demonstration projects using the next-generation Q-HSM chip—reportedly the world's first quantum encryption chip embedding PQC. The 27% year-on-year improvement in 2026Q1 revenue suggests contract execution is accelerating. However, revenue visibility beyond the second half of 2026 depends significantly on whether additional major card issuers place new system replacement orders. The company's stated medium-to-long-term direction is to embed QKEV7 chips across existing financial banking and kiosk product lines to build a premium financial security ecosystem."
+ },
+ "valuation_comment": {
+  "ko": "주당순이익(EPS) 220원, 주당순자산(BPS) 1,492원을 기준으로 보면, 현재 주가는 과거 5년 평균 거래 배수(약 40~60배 구간)의 상단 부근에 위치하며, 순자산 대비로는 상당한 프리미엄 구간에 형성되어 있다. 이 프리미엄은 HP NonStop 플랫폼에서의 사실상 독점적 포지션과 KCMVP 최고 등급 인증 양자암호칩이라는 무형 기술 가치에 대한 시장의 평가가 반영된 결과로 해석할 수 있다. 주당 현금배당금(DPS) 180원이 유지되고 있으나, 이에 따른 배당수익률은 국내 IT 업종 평균 대비 낮은 편에 속한다. 2022년 수익성 저점 이후 이익 회복세가 현재 주가 수준을 일부 지지하지만, 2025년 영업현금흐름이 이익 수준에 크게 미치지 못한 점은 현금 창출 측면에서 유의할 부분이다.",
+  "en": "Based on reported EPS of KRW 220 and BPS of KRW 1,492, the current share price places the stock near the upper end of its historical five-year trading band of approximately 40-60x earnings, while reflecting a substantial premium over net asset value. This premium can be interpreted as the market pricing in KCS's de facto monopoly positioning in HP NonStop SI and the intangible value of its KCMVP Level-2 certified quantum encryption chip. The annual cash dividend per share (DPS) of KRW 180 has been maintained, though the resulting dividend yield falls below the domestic IT sector average. The earnings recovery since the 2022 trough provides some support for current valuation levels, but the significant divergence between reported net income and operating cash flow in 2025 warrants attention from a cash generation quality perspective."
+ },
+ "bull": [
+  {
+   "title": {
+    "ko": "KCMVP 최고 등급 인증으로 국방·공공 보안 시장 진입 교두보 확보",
+    "en": "KCMVP Level-2 Certification Opens Door to Defense and Public Security Markets"
+   },
+   "body": {
+    "ko": "국내 최초로 양자난수생성기(QRNG) 적용 보안칩에 대해 국정원 KCMVP 보안 수준 2등급 인증을 획득한 QKEV7은 국가·공공기관용 정보보호 시스템 납품의 필수 요건을 충족한다. SKT와 공동으로 국방·AI CCTV·드론·5G 특화망 등 고보안 요구 산업으로의 공급을 추진 중이며, 세계 최초로 PQC를 탑재한 Q-HSM을 통한 국가급 실증 사업도 진행되고 있다. 정부의 양자내성암호(PQC) 전환 사업이 가속화되면 케이씨에스는 기술 기반의 구조적 수혜를 받을 위치에 있다.",
+    "en": "QKEV7, Korea's first QRNG-integrated security chip to earn KCMVP Level-2 certification, satisfies the mandatory requirement for information-protection systems supplied to national and public agencies. In partnership with SKT, KCS is pursuing supply into high-security segments including defense, AI CCTV, drones, and 5G private networks, and is conducting a national-scale pilot project using Q-HSM, reportedly the world's first quantum encryption chip with embedded PQC. The government's accelerating PQC transition program positions KCS as a structural beneficiary with a technology-certified competitive advantage."
+   }
+  },
+  {
+   "title": {
+    "ko": "매출 감소 속 수익성 구조 개선과 재무 건전성 강화",
+    "en": "Structural Margin Recovery and Strengthened Financial Health Despite Revenue Decline"
+   },
+   "body": {
+    "ko": "영업이익률이 2022년 1.3%에서 2025년 8.3%로 뚜렷하게 높아지며, 매출 감소에도 불구하고 수익 창출 구조가 강화됐다. 부채비율이 2022년 113.6%에서 2025년 40.8%로 대폭 낮아져 재무 안정성이 확보됐고, 이는 추가 투자 및 배당 지속 여력 확대로 이어질 수 있다. 2025년 지배주주 순이익은 약 25.3억원으로 전년 대비 26% 증가해 이익 방향성이 긍정적이다.",
+    "en": "Operating margin has risen markedly from 1.3% in 2022 to 8.3% in 2025, demonstrating a strengthened earnings structure despite top-line contraction. The debt-to-equity ratio plunged from 113.6% to 40.8% over the same period, restoring financial stability and potentially expanding future investment and dividend capacity. Net income attributable to parent shareholders grew 26% year-on-year to approximately KRW 2.5bn in 2025, providing a positive directional signal on profitability."
+   }
+  },
+  {
+   "title": {
+    "ko": "카드사 교체 파이프라인 가시성과 독점적 NonStop SI 지위",
+    "en": "Visible Card-Issuer Replacement Pipeline Underpinned by Monopoly NonStop SI Positioning"
+   },
+   "body": {
+    "ko": "1986년 국내 금융공동망 최초 납품 이래 축적된 HP NonStop 전문성으로 케이씨에스는 사실상 국내 유일의 NonStop SI 전문 사업자 지위를 유지하며, 주요 카드사 6~7곳을 고정 고객으로 보유하고 있다. 우리카드 교체(43.3억원)·롯데카드 장기 유지보수(31.5억원)·탠덤 DR 교체(87.9억원) 등 공시된 수주 파이프라인이 구체적으로 확인된다. 국내 카드사의 NonStop 시스템 교체 사이클이 이어질 경우 수십억 원 단위의 대형 수주가 주기적으로 반복될 가능성이 높다.",
+    "en": "Having delivered Korea's first financial network system in 1986, KCS maintains its de facto monopoly in HP NonStop SI, retaining six to seven major card issuers as captive customers. Confirmed orders include the Woori Card replacement (~KRW 4.3bn), Lotte Card long-term maintenance (~KRW 3.15bn), and Tandem DR equipment replacement (~KRW 8.79bn). As domestic card issuers continue their NonStop system replacement cycles, the company is well positioned to capture recurring multi-billion-won contracts periodically."
+   }
+  }
+ ],
+ "bear": [
+  {
+   "title": {
+    "ko": "매출 규모 급감과 고객·사업 집중 위험",
+    "en": "Sharp Revenue Decline and Customer/Business Concentration Risk"
+   },
+   "body": {
+    "ko": "2023년 약 477억원이었던 매출이 2025년 약 249억원으로 2년 만에 약 48% 감소했으며, 2026년 1분기 연환산 기준으로도 규모 회복에는 상당한 시간이 필요하다. 매출의 대부분이 소수 카드사의 대형 시스템 교체 프로젝트에 집중되어 있어, 주요 고객의 예산 삭감이나 교체 일정 연기가 실적에 직접적이고 큰 영향을 미친다. 4분기 매출 집중(연간의 약 48%)은 분기 실적 가시성을 낮추고 이익 예측을 어렵게 만든다.",
+    "en": "Revenue fell approximately 48% from ~KRW 47.7bn in 2023 to ~KRW 24.9bn in 2025, and the annualized run-rate implied by 2026Q1 still points to a lengthy recovery path. A large share of revenue is concentrated in sporadic large system-replacement projects for a handful of card issuers, making results directly and acutely sensitive to budget cuts or schedule delays at key customers. The sharp Q4 revenue concentration (~48% of annual) reduces quarterly visibility and complicates earnings forecasting."
+   }
+  },
+  {
+   "title": {
+    "ko": "영업현금흐름과 순이익의 괴리—현금 창출 불확실성",
+    "en": "Operating Cash Flow vs. Net Income Divergence: Cash Generation Uncertainty"
+   },
+   "body": {
+    "ko": "2025년 영업활동 현금흐름이 약 0.6억원으로 지배주주 귀속 순이익 약 25.3억원 대비 현저히 낮아, 연말 대형 계약 이행에 따른 매출채권 증가 등 운전자본 부담이 발생했을 가능성이 있다. 이 괴리가 일시적이라면 2026년 상반기 현금 회수로 해소될 수 있으나, 구조적 요인이 있다면 이익 품질을 재검토할 필요가 있다. 현금 창출 능력이 저하된 상태가 지속될 경우 배당 안정성 및 신사업 투자 여력에 제약이 생길 수 있다.",
+    "en": "In 2025, operating cash flow of approximately KRW 0.06bn was dramatically below parent net income of ~KRW 2.5bn, potentially reflecting a trade receivables buildup from large year-end contract deliveries. If temporary, cash collection should normalize in first-half 2026; if structural, it would raise earnings-quality concerns. A sustained gap between accrual-based profits and actual cash generation could constrain both dividend sustainability and the capacity to fund new business investment."
+   }
+  },
+  {
+   "title": {
+    "ko": "양자보안 사업의 매출 기여 가시화 지연 위험",
+    "en": "Risk of Delayed Revenue Materialization in the Quantum Security Business"
+   },
+   "body": {
+    "ko": "KCMVP 인증과 SKT 협력은 기술적 신뢰도를 높였지만, QKEV7·Q-HSM의 실제 매출 기여 시점과 규모는 아직 공개된 수치로 확인되지 않는다. 국방·방산 분야 수주는 긴 의사결정 주기와 정부 예산 배정에 의존하며, 민간 금융권 채택도 추가 실증 및 검증 절차를 필요로 한다. 양자컴퓨팅 테마 기대감이 주가에 이미 일부 반영된 상황에서 실적 가시화가 기대보다 늦어질 경우 밸류에이션 프리미엄이 조정될 수 있다.",
+    "en": "While KCMVP certification and the SKT partnership have enhanced technical credibility, the actual timing and scale of revenue contributions from QKEV7 and Q-HSM have not been confirmed by publicly disclosed figures. Defense and public-sector procurement involves long decision cycles dependent on government budget allocations, while private financial-sector adoption requires additional validation steps. If revenue realization lags expectations that have already partially priced in a quantum security premium, valuation multiples may face downward adjustment."
+   }
+  }
+ ],
+ "risks": [
+  {
+   "cat": {
+    "ko": "고객 집중 및 수주 사이클 리스크",
+    "en": "Customer Concentration and Order Cycle Risk"
+   },
+   "body": {
+    "ko": "매출의 대부분이 국내 카드사 6~7곳의 시스템 교체 발주에 집중되어 있어, 특정 고객의 예산 삭감·일정 변경·IT 전략 전환이 실적 전반에 직접적이고 큰 영향을 미친다. 2023년처럼 여러 고객의 교체 주기가 겹치면 호황이 오지만, 교체 사이클이 엇갈리면 매출 공백이 발생한다. 고객 포트폴리오를 방산·공공·교통인프라 부문으로 다변화하는 것이 이 위험을 분산하는 핵심 과제다.",
+    "en": "Revenue is heavily concentrated among six to seven domestic card issuers' system replacement orders, making overall performance directly and acutely vulnerable to budget cuts, schedule changes, or strategic IT shifts at any key customer. Overlapping replacement cycles—as in 2023—generate boom years, while staggered cycles create revenue gaps. Diversifying the customer portfolio into defense, public, and transportation-infrastructure sectors is the essential structural mitigation for this risk."
+   }
+  },
+  {
+   "cat": {
+    "ko": "HP NonStop 플랫폼 의존 및 기술 대체 리스크",
+    "en": "HP NonStop Platform Dependency and Technology Displacement Risk"
+   },
+   "body": {
+    "ko": "NonStop SI 사업은 HP NonStop 하드웨어의 글로벌 공급 지속성과 플랫폼 로드맵에 종속된다. 글로벌 IT 벤더의 전략 변화 또는 금융고객의 클라우드 네이티브 결제 아키텍처 전환이 장기적으로 전통적인 탠덤 시스템 수요를 약화할 수 있다. 엔터프라이즈 솔루션·보안 반도체 등 플랫폼 독립적인 사업 비중을 확대해 플랫폼 의존도를 낮추는 것이 구조적 대응 방향이다.",
+    "en": "The NonStop SI segment is inherently tied to the supply continuity and product roadmap of HP's NonStop hardware platform. A strategic shift by the global IT vendor, or a client-led migration toward cloud-native payment architectures, could structurally erode demand for traditional Tandem systems over the long term. Expanding platform-independent businesses such as enterprise solutions and security semiconductors is the structural hedge against this platform dependency risk."
+   }
+  },
+  {
+   "cat": {
+    "ko": "양자암호 상업화 지연 및 경쟁 심화 리스크",
+    "en": "Quantum Encryption Commercialization Delay and Intensifying Competition"
+   },
+   "body": {
+    "ko": "양자보안 기술의 상업화는 정부 정책 일정·예산 사이클·인증 절차에 크게 의존하며, 예상보다 지연될 수 있다. 국내외 대형 보안·반도체 기업이 동 시장에 진입하면 케이씨에스의 선도자 우위가 희석될 수 있다. SKT와의 공동개발 구조는 기술 협력의 강점이지만, 향후 파트너십 조건 변화가 기술 독점성에 영향을 미칠 수 있는 변수다.",
+    "en": "The commercialization timeline for quantum security technologies is heavily policy-dependent and subject to government budget cycles and certification procedures, which may delay revenue realization beyond expectations. Entry by large domestic or international security or semiconductor players could erode KCS's first-mover advantage in quantum encryption. While the SKT co-development structure is a competitive strength, any future changes in the partnership terms represent a variable that could affect the exclusivity and competitive moat of core technologies."
+   }
+  }
+ ],
+ "checkpoints": [
+  {
+   "when": {
+    "ko": "2026년 8월 중 (2026년 2분기 실적 발표)",
+    "en": "Mid-August 2026 (2026 Q2 Earnings Release)"
+   },
+   "what": {
+    "ko": "우리카드 승인 시스템 교체 계약(2026년 6월 완료 예정)의 매출 인식 규모를 확인하고, 상반기 영업현금흐름이 2025년의 이익-현금 괴리로부터 회복됐는지 점검한다.",
+    "en": "Confirm revenue recognized from the Woori Card approval system replacement (scheduled to complete June 2026), and assess whether first-half operating cash flow has recovered from the net income–cash flow divergence seen in 2025."
+   }
+  },
+  {
+   "when": {
+    "ko": "2026년 하반기 (신규 카드사 시스템 교체 수주 공시)",
+    "en": "2H 2026 (New Card-Issuer System Replacement Order Disclosure)"
+   },
+   "what": {
+    "ko": "하나카드·KB국민카드 등 추가 대형 카드사의 탠덤/NonStop 시스템 교체 수주 여부가 2027년 이후 매출 가시성을 결정하는 핵심 변수다. 탠덤 DR 교체 계약(약 87.9억원) 이행 진도도 함께 확인한다.",
+    "en": "Whether additional major card issuers (e.g., Hana Card, KB Kookmin Card) place new Tandem/NonStop system replacement orders is the key variable for revenue visibility from 2027 onward; also track the execution progress of the confirmed Tandem DR replacement order (~KRW 8.79bn)."
+   }
+  },
+  {
+   "when": {
+    "ko": "2026년 내 수시 (QKEV7·QC-VPN 국방·공공 수주 공시)",
+    "en": "Ongoing in 2026 (QKEV7 / QC-VPN Defense and Public-Sector Contract Disclosures)"
+   },
+   "what": {
+    "ko": "드론·군용 IoT 장비 탑재 계약 또는 QC-VPN 공공기관 납품 계약 공시 여부가 양자암호 사업의 실질 매출화 시점과 초기 규모를 가늠하는 첫 번째 증거가 될 것이다.",
+    "en": "Any disclosed contract for QKEV7 chip integration into drones or military IoT equipment, or QC-VPN supply to public agencies, will serve as the first concrete evidence of when and at what initial scale the quantum encryption segment begins generating material revenues."
+   }
+  },
+  {
+   "when": {
+    "ko": "2026년 11월 중 (2026년 3분기 실적 발표)",
+    "en": "Mid-November 2026 (2026 Q3 Earnings Release)"
+   },
+   "what": {
+    "ko": "2026년 4분기 대형 프로젝트 인도 여부를 가늠하는 수주잔고 공개 여부와, 연간 매출 규모가 2025년 대비 회복 궤도에 있는지를 확인하는 중간 점검 시점이다.",
+    "en": "A key interim checkpoint to gauge whether Q4 2026 large-project deliveries are on track and whether full-year 2026 revenue is on a recovery trajectory relative to 2025, including any guidance or backlog disclosures."
+   }
+  },
+  {
+   "when": {
+    "ko": "2027년 초 (2026 사업보고서 및 배당 확정)",
+    "en": "Early 2027 (FY2026 Annual Report and Dividend Confirmation)"
+   },
+   "what": {
+    "ko": "DPS 180원 수준의 배당 지속 여부와 함께, 연간 부문별 매출 분해·영업현금흐름 세부 항목을 통해 양자보안 매출 기여의 첫 연간 집계를 확인한다.",
+    "en": "Verify whether the DPS of KRW 180 is sustained, and review annual segment-level revenue breakdown and detailed operating cash flow components to capture the first full-year tally of quantum security revenue contributions."
+   }
+  }
+ ],
+ "verdict": {
+  "body": {
+   "ko": "케이씨에스는 국내 금융 결제 인프라의 핵심 플랫폼(HP NonStop)에서 사실상 독점적 전문성을 보유한 방어적 사업 구조를 갖추고 있으며, 주요 카드사를 고정 고객으로 유지하고 있다. 2023년 매출 정점 이후 규모는 크게 줄었으나 영업이익률은 8%대로 개선됐고, 부채비율도 안전 수준으로 낮아지며 재무 체질이 강화됐다. SKT와 공동 개발한 QKEV7의 KCMVP 최고 등급 인증은 국방·공공 보안 시장 진입의 제도적 장벽을 넘은 의미 있는 성과로, 중장기 성장 옵션으로 주목된다. 그러나 매출 회복 속도, 2025년 이익-현금흐름 괴리의 해소 여부, 양자보안 매출 기여의 실질 가시화 시점은 여전히 불확실한 핵심 변수다. 이 기업에 대한 판단은 ① 카드사 교체 수주 파이프라인의 연속성, ② 양자보안 사업의 매출화 속도, ③ 현금 창출력 회복이라는 세 축을 중심으로 분기 실적과 수주 공시를 통해 지속적으로 검증하는 것이 유효하다.",
+   "en": "KCS holds a defensively structured business anchored by its de facto monopoly expertise in the HP NonStop platform—the mission-critical backbone of Korea's financial payment infrastructure—with major card issuers as captive customers. Despite a significant revenue contraction from the 2023 peak, operating margins have improved into the 8% range and the debt-to-equity ratio has been restored to healthy levels, reflecting a stronger financial foundation. The KCMVP Level-2 certification of the jointly developed QKEV7 chip—an important milestone that clears the formal barrier for defense and public-sector security procurement—represents a credible medium-to-long-term growth option. However, the pace of revenue recovery, the resolution of the 2025 earnings-to-cash-flow gap, and the timeline for meaningful quantum security revenue contributions remain critical unresolved variables. Assessment of this company should be grounded in ongoing verification across three axes: (1) the continuity of the card-issuer replacement order pipeline, (2) the speed of quantum security business commercialization, and (3) the restoration of operating cash generation—tracked through quarterly earnings releases and contract disclosures."
+  }
+ },
+ "sources": [
+  "https://www.butler.works/ko/companies/00441650",
+  "https://comp.fnguide.com/SVO2/ASP/SVD_Main.asp?gicode=A115500",
+  "https://comp.wisereport.co.kr/company/c1010001.aspx?cmp_cd=115500",
+  "https://dart.fss.or.kr/navi/searchNavi.do?naviCrpCik=00441650&naviCrpNm=%EC%BC%80%EC%9D%B4%EC%94%A8%EC%97%90%EC%8A%A4&naviCode=A002",
+  "https://m.thinkpool.com/compDiscuss/cont/1015674",
+  "https://www.k5.co.kr/stock/115500?site_type=k",
+  "https://m.thinkpool.com/compDiscuss/cont/1016928",
+  "https://itooza.com/vscore/115500",
+  "https://www.investing.com/equities/korea-computer-systems-inc",
+  "https://kind.krx.co.kr/common/disclsviewer.do?method=search&acptno=20251114000824&docno=&viewerhost=",
+  "http://www.kcins.co.kr/subpage/corporate/overview.php",
+  "http://www.kcins.co.kr/subpage/corporate/ceo.php",
+  "https://www.koscom.co.kr/portal/main/contents.do?menuNo=200659",
+  "https://www.koscom.co.kr/portal/main/contents.do?menuNo=200005",
+  "http://member.kcins.co.kr/kcs/kcs-site/subpage/ir/ir_01",
+  "https://ko.wikipedia.org/wiki/%EC%BC%80%EC%9D%B4%EC%94%A8%EC%97%90%EC%8A%A4_(%EA%B8%B0%EC%97%85)",
+  "https://www.gnict.org/%ED%9A%8C%EC%9B%90%EC%82%AC/%EC%A3%BC%EC%BC%80%EC%9D%B4%EC%94%A8%EC%97%90%EC%8A%A4/",
+  "http://www.kcins.co.kr/subpage/board_view.php?page=news%2Fnews_01.php&table=tbl_notice&boardNum=410"
+ ],
+ "v": 2,
+ "model": "claude-sonnet-4-6",
+ "ticker": "115500",
+ "name": "케이씨에스",
+ "name_en": "Korea Computer & Systems Inc.",
+ "sector": "IT·소프트웨어",
+ "categories": [
+  "IT·소프트웨어"
+ ],
+ "market": "코스닥",
+ "reportDate": "2026-06-19",
+ "reportTs": "2026-06-19 03:58",
+ "dataDate": "20260618",
+ "quant": {
+  "asOf": "2026-06-18",
+  "fs_basis": "연결(CFS) · DART 공시 확정치 · 지배주주 기준 순이익",
+  "annual": [
+   {
+    "year": 2025,
+    "rev": 24863482484,
+    "op": 2063210418,
+    "np": 2527450060,
+    "np_owner": 2527450060,
+    "equity": 19680713875,
+    "equity_owner": 19680713875,
+    "liab": 8031678492,
+    "cfo": 62790389,
+    "eps_basic": 211,
+    "opm": 8.3,
+    "roe": 12.8,
+    "debt_ratio": 40.8
+   },
+   {
+    "year": 2024,
+    "rev": 29539354935,
+    "op": 1983143623,
+    "np": 1999174860,
+    "np_owner": 1999174860,
+    "equity": 18878320893,
+    "equity_owner": 18878320893,
+    "liab": 4996788834,
+    "cfo": 2355960139,
+    "eps_basic": 167,
+    "opm": 6.7,
+    "roe": 10.6,
+    "debt_ratio": 26.5
+   },
+   {
+    "year": 2023,
+    "rev": 47725941122,
+    "op": 3154888846,
+    "np": 2769225118,
+    "np_owner": 2769225118,
+    "equity": 19427365571,
+    "equity_owner": 19427365571,
+    "liab": 7111166509,
+    "cfo": 1238794203,
+    "eps_basic": 231,
+    "opm": 6.6,
+    "roe": 14.3,
+    "debt_ratio": 36.6
+   },
+   {
+    "year": 2022,
+    "rev": 41688296303,
+    "op": 544992865,
+    "np": 829033742,
+    "np_owner": 829033742,
+    "equity": 18281203200,
+    "equity_owner": 18281203200,
+    "liab": 20761310846,
+    "cfo": 3295761722,
+    "eps_basic": 69,
+    "opm": 1.3,
+    "roe": 4.5,
+    "debt_ratio": 113.6
+   }
+  ],
+  "quarterly": [
+   {
+    "q": "2025Q1",
+    "rev": 4005469299,
+    "op": 229427971,
+    "np_owner": 199074302
+   },
+   {
+    "q": "2025Q2",
+    "rev": 4699295960,
+    "op": 681040082,
+    "np_owner": 854369846
+   },
+   {
+    "q": "2025Q3",
+    "rev": 4297436760,
+    "op": 286544190,
+    "np_owner": 354489540
+   },
+   {
+    "q": "2025Q4",
+    "rev": 11861280465,
+    "op": 866198175,
+    "np_owner": 1119516372
+   },
+   {
+    "q": "2026Q1",
+    "rev": 5102488923,
+    "op": 239209094,
+    "np_owner": 314422872
+   }
+  ],
+  "valuation": {
+   "price": 11770,
+   "mcap": 0.1412,
+   "shares": 12000000,
+   "total_shares": 12000000,
+   "wavg_shares": 11978436,
+   "per": 53.5,
+   "eps": 220,
+   "pbr": 7.89,
+   "bps": 1492,
+   "roe_ttm": 15.3,
+   "ttm_window": "2025Q2~2026Q1",
+   "ttm_np_owner": 2642798630,
+   "pbr_krx": 7.18,
+   "bps_krx": 1640.0,
+   "basis": "PER·EPS·PBR·BPS 모두 자체 산출(네이버·토스와 동일 방식) · 배당은 DART 공시 주당현금배당금(보완:KRX) ÷ 현재가",
+   "dps": 180.0,
+   "div": 1.53
+  }
+ }
+}
