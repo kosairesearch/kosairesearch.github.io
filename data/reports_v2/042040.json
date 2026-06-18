@@ -1,0 +1,356 @@
+{
+ "title": {
+  "ko": "PCB 매출 급반등에도 4년 연속 영업적자 — 재무 정상화가 관건",
+  "en": "PCB Revenue Surges but Four-Year Operating-Loss Streak Persists — Financial Repair Is the Overriding Test"
+ },
+ "lead": {
+  "ko": "케이피엠테크는 2025년 매출이 전년 대비 169% 급증하며 화학사업 수요 회복을 확인했으나, 4년 연속 영업적자·부채비율 급등·영업현금흐름 지속 마이너스로 재무 안정성 확보가 최우선 과제로 부각된다.",
+  "en": "KPM Tech's 2025 revenue surged 169% YoY, confirming a recovery in surface-treatment chemicals demand, yet four consecutive years of operating losses, a sharply rising debt ratio, and persistently negative operating cash flows make financial stabilization the company's overriding challenge."
+ },
+ "keypoints": [
+  {
+   "ko": "2025년 연결 매출 769억원으로 전년(286억원) 대비 169% 급증했으나, 영업손실 172억원(OPM -22.3%)으로 수익성 회복 미달",
+   "en": "FY2025 consolidated revenue surged 169% YoY to ₩76.9B, while a ₩17.2B operating loss (OPM −22.3%) kept the company loss-making for a fourth straight year"
+  },
+  {
+   "ko": "부채비율 2022년 32.2% → 2025년 129.1%로 급등, 영업현금흐름은 2025년 -199억원으로 4년 연속 마이너스",
+   "en": "Debt ratio nearly quadrupled from 32.2% (2022) to 129.1% (2025), with operating cash flow at −₩19.9B—negative for four consecutive years"
+  },
+  {
+   "ko": "2026년 1분기 매출 198억원으로 2025년 분기 평균에 근접하나, 영업손실 37억원으로 4분기(10억원) 대비 적자폭 확대",
+   "en": "2026 Q1 revenue of ₩19.8B held near the 2025 quarterly average, but the operating loss widened to ₩3.7B from ₩1.0B in Q4 2025"
+  },
+  {
+   "ko": "글로벌 PCB 시장은 AI 서버·전기차·5G 수요에 힘입어 2030년까지 성장 기조, 표면처리약품 시장도 구조적 확대 국면",
+   "en": "The global PCB market is projected to grow through 2030 on AI, EV, and 5G demand; the surface-treatment chemicals sub-market is in a structural expansion phase"
+  },
+  {
+   "ko": "관계사 에이비온의 항암신약 개발·라이선스아웃 결과가 지분법 손익을 통해 순이익에 비경상적 영향을 미치는 구조",
+   "en": "Affiliate Abion's oncology pipeline progress flows into KPM Tech's bottom line via equity-method accounting, adding meaningful non-recurring volatility to reported net income"
+  }
+ ],
+ "business": {
+  "ko": "케이피엠테크는 1971년 도금약품 국산화를 목표로 설립되어 2003년 코스닥에 상장한 표면처리 전문기업이다. 사업은 약품사업본부와 기계사업본부 두 축으로 구성된다. 약품사업본부는 PCB·전자통신반도체·자동차 부품용 종합 표면처리약품, 은나노파우더, 금속박막코팅 표면처리 가공 등을 생산·판매한다. 기계사업본부는 전자동 도금설비를 제조·공급하며 PCB 제조사 등 전자산업 전방 고객을 주요 수요처로 둔다. 과거 공개 자료(2022년 기준)에 따르면 표면처리약품이 전체 매출의 약 75%, 전자동 도금설비가 약 24%, 임대용역 등이 나머지를 차지한다. 주요 경쟁사로는 와이엠티(YMT), 디에이피, 미코, 나노캠텍 등이 있다. 본사는 경기도 안산시에 위치하며, 알리코제약·비보존 등과 임상시험용 외용제 위탁생산 계약을 체결하는 등 제약·바이오 부문에도 일부 관여하고 있다. 에이비온(항암신약 ABN-401 개발사) 등 관계사 지분을 보유하고 있어, 이들 관계사의 실적이 지분법 손익을 통해 연결 순이익에 비경상적 영향을 미친다.",
+  "en": "KPM Tech was founded in 1971 to localize plating chemicals and listed on KOSDAQ in 2003, establishing itself as a surface-treatment specialist. The business is organized into two core divisions: a Chemicals Unit and a Machinery Unit. The Chemicals Unit manufactures and sells comprehensive surface-treatment chemicals for PCBs, electronic-communications semiconductors, and automotive components, along with silver nano-powder and metal thin-film coating services. The Machinery Unit produces and supplies fully automated plating equipment primarily to PCB manufacturers and other electronics-industry customers. Based on historically disclosed data (circa 2022), surface-treatment chemicals accounted for approximately 75% of revenues, automated plating equipment for roughly 24%, and rental and other services for the remainder. Key domestic competitors include YMT, DAP, MICO, and Nanocamtech. The company is headquartered in Ansan, Gyeonggi Province, and also engages in contract manufacturing of clinical-trial formulations for Alico Pharma and Vivozon. KPM Tech holds equity stakes in biotech affiliates, including cancer-drug developer Abion, whose financial results feed into consolidated net income through equity-method accounting, introducing recurring non-recurring variability."
+ },
+ "earnings": {
+  "ko": "2025년 연결 매출액은 769억원으로 전년(286억원) 대비 168.9% 급증하며 최근 4개년 중 최대를 기록했다. 그러나 영업손실 172억원(OPM -22.3%)이 지속되어 본업 수익성은 아직 회복되지 않았다. 지배주주 귀속 순손실은 147억원으로, 2024년의 392억원 대비 크게 축소됐는데, 에이비온 등 관계사 지분법 손실 규모가 감소한 데 주로 기인한다. 2024년의 대규모 순손실(392억원)은 관계사 지분법 손실이 본업 영업손실(46억원)을 크게 웃돈 결과이며, 2023년에는 반대로 비경상 투자 이익이 영업손실(-145억원, OPM -31.8%)을 상쇄해 지배주주 순이익이 +51억원을 기록한 전례도 있다. 분기별로는 2025년 2분기에 지배주주 순이익이 +36억원으로 일시 흑자 전환했으나, 같은 분기 영업손실 41억원으로 본업 적자는 지속됐다. 2026년 1분기 매출은 198억원으로 2025년 분기 평균(192억원)에 근접했으나, 영업손실이 37억원으로 4분기(10억원) 대비 확대됐다. 영업현금흐름은 2022년 -28억원, 2023년 -117억원, 2024년 -9억원, 2025년 -199억원으로 4년 연속 마이너스를 기록해 현금 소모가 누적되고 있다. 부채비율은 2022년 32.2%에서 2025년 129.1%로 급등하며 자기자본 훼손이 가속화되고 있다.",
+  "en": "FY2025 consolidated revenue of ₩76.9B surged 168.9% YoY, the highest level in the four-year review window, yet an operating loss of ₩17.2B (OPM −22.3%) kept profitability out of reach. The loss attributable to owners narrowed sharply to ₩14.7B from ₩39.2B in FY2024, largely because equity-method losses from affiliates, including Abion, were substantially smaller year-over-year. The large FY2024 net loss of ₩39.2B was driven by affiliate equity-method losses that far exceeded the ₩4.6B operating loss; conversely, in FY2023, non-recurring investment gains offset a ₩14.5B operating loss (OPM −31.8%), turning owner-attributable net income to a positive ₩5.1B. Quarterly data show 2025 Q2 briefly turned net-profitable at the owner level (+₩3.6B), though the operating loss in the same quarter remained at −₩4.1B. 2026 Q1 revenue of ₩19.8B was close to the 2025 quarterly average of ₩19.2B, while the operating loss widened to ₩3.7B from ₩1.0B in Q4 2025. Operating cash flow has been negative in each of the past four years—2022: −₩2.8B; 2023: −₩11.7B; 2024: −₩0.9B; 2025: −₩19.9B—representing sustained cumulative cash depletion. The debt ratio has surged from 32.2% in 2022 to 129.1% in 2025, reflecting rapid erosion of equity."
+ },
+ "industry": {
+  "ko": "글로벌 PCB 시장은 2024년 약 862억 달러(약 117조원) 규모로 집계됐으며, AI 서버·전기차·5G 인프라 확장을 주요 동력으로 2030년까지 완만한 성장세가 전망된다. 표면처리약품 시장은 2021년 62억 달러에서 2028년 94억 달러로 확대가 예상되며, 케이피엠테크의 핵심 전방시장이 구조적 성장 국면임을 뒷받침한다. 고밀도 인터커넥트(HDI)·AI 가속기용 다층 기판 등 고부가 PCB로의 전환이 가속화되며, 표면처리 소재에 대한 기술 요건도 높아지고 있다. 자동차용 PCB는 전기차 1대당 탑재 단가가 내연기관차 대비 5~6배 수준으로, 강력한 단가 상승 드라이버를 제공한다. 국내 PCB 산업은 IC 패키지 기판·고다층 PCB 분야에서 중요한 글로벌 공급국으로 자리매김하고 있으나, 대규모 생산역량과 정부 지원을 앞세운 중국 업체와의 가격 경쟁이 소규모 협력사에 지속적인 부담을 준다. 소비가전·스마트폰 등 전통 수요처의 회복 지연이 단기 불확실성을 더하고 있으며, 이 부문이 전 세계 PCB 최종 사용의 절반 이상을 차지하는 만큼 수요 침체 장기화 시 업황이 재약화될 수 있다.",
+  "en": "The global PCB market was sized at approximately $86.2B (₩117.6T) in 2024 and is projected to grow moderately through 2030, fueled by AI-server infrastructure buildout, electric-vehicle adoption, and 5G network expansion. The surface-treatment chemicals sub-market is forecast to expand from $6.2B in 2021 to $9.4B by 2028, confirming that KPM Tech's core end-market is in a structural growth phase. The ongoing migration toward high-density interconnect (HDI) boards and AI-accelerator multi-layer substrates is raising technical standards for surface-treatment materials, potentially rewarding vendors with advanced formulations. In the automotive segment, the average PCB content per electric vehicle is 5–6× that of a conventional internal-combustion vehicle, providing a powerful unit-value tailwind. South Korea holds a strong global position in IC package substrates and high-layer-count PCBs, though Chinese producers—backed by large-scale capacity and government support—maintain intense pricing pressure on smaller component suppliers. Near-term uncertainty persists from sluggish consumer-electronics demand, which historically accounts for more than half of global PCB end-use applications, meaning a protracted weakness there could re-suppress the sector."
+ },
+ "outlook": {
+  "ko": "2025년 매출 769억원으로의 급반등은 약품 사업 수요 회복이 본격화됐다는 신호로 해석되며, 2026년 1분기 매출이 198억원으로 2025년 분기 평균에 근접해 있어 단기적으로 현재 매출 궤도가 유지될 가능성이 있다. 회사는 표면처리약품 분야에서 혁신 제품 개발을 통해 시장 경쟁력을 확보한다는 방침을 밝히고 있다. 관계사 에이비온은 c-Met 표적 항암신약 ABN-401의 글로벌 임상 및 라이선스아웃을 추진 중이며, 이 진행 결과가 케이피엠테크의 지분법 손익에 직접 영향을 미친다. AI·데이터센터·전기차 분야의 PCB 고부가 수요가 중장기적으로 표면처리약품 공급량 확대 기회를 열어줄 수 있다. 다만 부채비율 129.1%와 4년 연속 마이너스 영업현금흐름을 고려하면, 대규모 설비 투자나 사업 확장 시 외부 자금 조달이 불가피할 수 있다. 향후 수분기 동안 영업손실의 지속적 축소 여부, 현금흐름 개선 시점, 관계사 임상 이벤트 결과가 중기 전망의 핵심 변수가 될 것이다.",
+  "en": "The sharp revenue rebound to ₩76.9B in 2025 signals a more substantive demand recovery in the chemicals segment, and 2026 Q1 revenues near the 2025 quarterly average suggest the near-term revenue base may be sustained. Management has stated its intention to develop innovative products in the surface-treatment chemicals space to strengthen competitive positioning. Affiliate Abion is advancing global clinical development and a potential license-out of its c-Met-targeted oncology candidate ABN-401, with the outcome likely to introduce material swings in KPM Tech's equity-method income. AI data-center expansion, rising EV penetration, and 5G rollout could provide a medium-to-long-term structural tailwind for PCB surface-treatment demand. However, the 129.1% debt ratio and sustained operating cash outflows materially constrain capacity for large-scale capital investment without external financing. Over the next several quarters, the pace of operating-loss reduction, any early turn in operating cash flows, and Abion's clinical milestones will be the critical signposts for assessing the company's forward trajectory."
+ },
+ "valuation_comment": {
+  "ko": "주가는 주당순자산(BPS 2,850원)을 현저히 하회하는 수준에서 형성되어 있어, 순자산 대비 큰 폭의 할인 구간에 위치해 있다. 영업손실이 4년 연속 지속되고 있어 이익 기반 밸류에이션 지표는 유효한 비교 기준을 제시하기 어려운 상황이다. 배당은 최근 수년간 실시되지 않았으며, 이익 실현 이전까지 주주환원 재개를 기대하기 어렵다. 부채비율 급등과 자기자본 훼손 추세를 고려하면, 장부가치 자체의 유지 가능성이 순자산 기반 평가의 신뢰도를 결정하는 변수로 작용한다. 동종 PCB 소재·화학 업종 내 수익성을 유지하는 기업들과 비교할 때, 적자 기조와 재무 부담이 지속되는 한 업종 평균 대비 할인이 불가피한 구조적 여건이다.",
+  "en": "The current share price sits at a pronounced discount to book value per share (BPS ₩2,850), placing the stock in a clearly discounted zone relative to net asset value. With operating losses now four years running, earnings-based valuation metrics provide little useful reference in the current environment. No dividends have been paid in recent years, and shareholder returns are unlikely to resume before profitability is restored. Given the rapid rise in the debt ratio and ongoing equity erosion, the sustainability of the present book value is itself an important variable in any net-asset-value-based assessment. Relative to specialty-chemicals and PCB-materials peers that maintain positive earnings, KPM Tech's loss-making streak and elevated leverage structurally justify a discount to sector-average multiples."
+ },
+ "bull": [
+  {
+   "title": {
+    "ko": "PCB 전방 수요 회복, 매출 기반 재구축",
+    "en": "PCB Demand Recovery Rebuilds Revenue Base"
+   },
+   "body": {
+    "ko": "2025년 매출이 전년 대비 169% 급증하며 2022~2023년 수준을 회복했고, AI·전기차·5G 중심의 전방 고성장 수요가 표면처리약품 발주를 중장기적으로 지지할 수 있다. 글로벌 표면처리약품 시장이 2028년까지 연평균 성장이 기대되어, 시장 성장분을 흡수할 경우 매출의 점진적 확대가 가능하다. 2026년 1분기 매출이 2025년 분기 평균에 근접한 수준을 유지하고 있어, 당분간 현재 매출 기반이 이어질 가능성이 있다.",
+    "en": "FY2025 revenue surged 169% YoY, recovering to the 2022–2023 range, and the structural shift to AI, EV, and 5G-driven PCB demand could provide sustained downstream pull for surface-treatment chemicals over the medium term. With the global surface-treatment chemicals market expected to expand through 2028, the company is positioned to capture sector-level tailwinds. 2026 Q1 revenues held near 2025 quarterly levels, suggesting the current run-rate may be durable in the near term."
+   }
+  },
+  {
+   "title": {
+    "ko": "순자산 대비 큰 폭 할인, 자산가치 재평가 여지",
+    "en": "Steep Discount to Net Asset Value — Re-Rating Optionality"
+   },
+   "body": {
+    "ko": "주가가 주당순자산(BPS 2,850원)을 현저히 하회하는 할인 구간에서 거래되고 있어, 사업 정상화 또는 자산 재평가 시 주가 재조정 여지가 존재한다. 자기자본의 상당 부분이 투자 자산 및 유형 자산으로 구성되어, 청산 혹은 자산 매각가치 측면에서 일정한 하방 지지 요인이 될 수 있다. 과거 주가가 높은 수준에서 거래된 이력이 있어, 업황 개선 시 빠른 멀티플 회복 가능성도 내포하고 있다.",
+    "en": "The stock trades at a steep discount to book value per share (BPS ₩2,850), suggesting potential for re-rating should the business stabilize or asset values be re-appraised. A meaningful portion of shareholders' equity is backed by invested and tangible assets, providing some floor from a liquidation or asset-sale perspective. The stock has historically traded at significantly higher levels, implying significant upside optionality if operating conditions improve."
+   }
+  },
+  {
+   "title": {
+    "ko": "바이오 관계사 이벤트의 잠재 상방 요인",
+    "en": "Latent Upside from Biotech Affiliate Events"
+   },
+   "body": {
+    "ko": "관계사 에이비온은 c-Met 표적 항암신약 ABN-401의 글로벌 임상 및 라이선스아웃을 추진 중이며, 성공 시 케이피엠테크에 지분법 이익이 인식돼 순이익 흑자 전환의 트리거가 될 수 있다. 2023년에도 비경상 투자 이익이 영업적자를 상쇄하며 지배주주 순이익이 +51억원으로 전환된 전례가 있어, 관계사 이벤트가 연간 손익을 단기간에 급격히 개선할 수 있다는 점이 확인된다. 임상 결과나 글로벌 제약사와의 기술이전 계약 체결이 주가 재평가의 비경상적 촉매로 작용할 가능성이 있다.",
+    "en": "Affiliate Abion is pursuing global clinical development and a potential license-out of its c-Met-targeted oncology candidate ABN-401, which—if successful—could generate equity-method income for KPM Tech and trigger a swing to net profitability. In 2023, non-recurring investment gains already turned owner-attributable net income to a positive ₩5.1B despite a large operating loss, demonstrating the magnitude of impact a single affiliate event can have on annual results. Progress toward a major licensing deal or positive clinical data represents a meaningful non-core catalyst for the consolidated bottom line."
+   }
+  }
+ ],
+ "bear": [
+  {
+   "title": {
+    "ko": "4년 연속 영업적자, 수익성 개선 경로 불투명",
+    "en": "Four Consecutive Years of Operating Losses — No Clear Profitability Path"
+   },
+   "body": {
+    "ko": "2022년부터 2025년까지 4년 연속 영업손실을 기록했으며, 2026년 1분기에도 영업손실 37억원이 지속됐다. 영업이익률(OPM)은 2022년 -1.1%에서 2025년 -22.3%로 오히려 악화됐으며, 매출 증가가 영업 레버리지로 이어지지 않고 있다. 비용 구조의 근본적인 개선 없이는 매출 반등이 흑자 전환으로 이어지기 어렵다.",
+    "en": "Operating losses were recorded in each of the four years from 2022 to 2025, and the trend extended into 2026 Q1 with a ₩3.7B operating loss. The operating margin actually deteriorated from −1.1% in 2022 to −22.3% in 2025, meaning revenue growth has not translated into meaningful operating leverage. Without fundamental improvement in the cost structure, a revenue rebound alone is insufficient to restore profitability."
+   }
+  },
+  {
+   "title": {
+    "ko": "부채비율 급등과 현금 소모 지속",
+    "en": "Sharply Rising Debt Ratio and Sustained Cash Burn"
+   },
+   "body": {
+    "ko": "부채비율이 2022년 32.2%에서 2025년 129.1%로 4년간 약 4배 급등했으며, 자기자본이 빠르게 훼손되고 있다. 영업현금흐름은 2022년 -28억원, 2023년 -117억원, 2024년 -9억원, 2025년 -199억원으로 4년 연속 마이너스를 기록하며 누적 현금 소모가 상당하다. 자금 조달 여건이 악화되거나 추가 신용 비용이 발생할 경우, 유동성 부족 리스크가 현실화될 수 있다.",
+    "en": "The debt ratio nearly quadrupled from 32.2% in 2022 to 129.1% in 2025, reflecting rapid equity erosion. Operating cash flows have been negative in each of the past four years (2022: −₩2.8B; 2023: −₩11.7B; 2024: −₩0.9B; 2025: −₩19.9B), representing cumulative cash depletion. Should financing conditions tighten or incremental credit costs rise, a liquidity squeeze could materialize."
+   }
+  },
+  {
+   "title": {
+    "ko": "관계사 투자 손실의 구조적 불확실성",
+    "en": "Structural Uncertainty from Biotech Investment Losses"
+   },
+   "body": {
+    "ko": "2024년 지배주주 순손실 392억원의 핵심 원인은 에이비온 등 관계사에서 발생한 대규모 지분법 손실로, 본업 영업손실(46억원)을 크게 초과했다. 바이오·제약 투자에서의 손실이 본업 외 실적 변동성을 높이고 있으며, 투자 손실의 규모와 발생 시기를 예측하기 어렵다. 임상 실패나 라이선스아웃 지연 시 관계사 자산가치 하락으로 인한 추가 손상차손이 발생할 수 있다.",
+    "en": "The ₩39.2B owner-attributable net loss in FY2024 was dominated by large equity-method losses from affiliates including Abion, far exceeding the ₩4.6B operating loss from core operations. Biotech and pharma investments inject significant non-core volatility into reported results, and the timing and magnitude of such losses are inherently difficult to forecast. Clinical failures or delays in license-out negotiations could trigger additional impairment charges on affiliate assets."
+   }
+  }
+ ],
+ "risks": [
+  {
+   "cat": {
+    "ko": "재무 안정성 리스크",
+    "en": "Financial Stability Risk"
+   },
+   "body": {
+    "ko": "부채비율 129.1%, 4년 연속 마이너스 영업현금흐름은 유동성 위기의 잠재적 선행 신호다. 신규 자금 조달이 필요할 경우 유상증자를 통한 주주 희석이나 고금리 차입 비용 부담이 수반될 수 있다. 자금 조달 실패 또는 지연 시 사업 운영 능력 자체가 직접적으로 제약받을 수 있다.",
+    "en": "A debt ratio of 129.1% and four years of negative operating cash flow represent potential early-warning signals for a liquidity squeeze. Any external financing requirement could expose existing shareholders to dilution via equity issuance or subject the company to elevated borrowing costs. Failure to secure adequate funding could directly constrain operating capacity."
+   }
+  },
+  {
+   "cat": {
+    "ko": "경쟁·시장 리스크",
+    "en": "Competitive and Market Risk"
+   },
+   "body": {
+    "ko": "중국계 표면처리약품 업체의 저가 공세가 국내 중소 업체의 점유율 유지를 어렵게 만들고 있다. PCB 전방 고객들의 소싱 다변화 전략과 원가 절감 압박은 케이피엠테크의 단가·물량 협상력을 구조적으로 약화시킬 수 있다. 글로벌 경기 둔화나 소비가전 수요 침체가 장기화될 경우 매출 재하락 리스크가 존재한다.",
+    "en": "Chinese surface-treatment chemical producers apply persistent pricing pressure that makes market-share defense difficult for smaller Korean suppliers. The sourcing diversification strategies and cost-reduction mandates of PCB customers structurally weaken KPM Tech's pricing and volume negotiating power. A global economic slowdown or prolonged weakness in consumer-electronics demand could re-suppress revenues."
+   }
+  },
+  {
+   "cat": {
+    "ko": "바이오 투자·임상 리스크",
+    "en": "Biotech Investment and Clinical Risk"
+   },
+   "body": {
+    "ko": "에이비온 등 관계사 바이오 자산의 임상 실패 또는 가치 훼손 시 추가적인 지분법 손실·손상차손이 발생하며 자기자본이 추가 훼손될 수 있다. 바이오 임상은 고비용·고실패율 사업으로, 성과 불확실성이 높은 상황에서 재무 여력을 소모한다. 신약 허가 지연·불승인·경쟁 약물 등장 등 규제·기술 리스크가 현실화될 경우 비경상 손실이 반복될 수 있다.",
+    "en": "Clinical failures or value impairment at biotech affiliates such as Abion could trigger further equity-method losses and asset write-downs, eroding KPM Tech's equity base. Biopharmaceutical clinical development is inherently high-cost and high-failure-rate, consuming financial resources against uncertain outcomes. Regulatory setbacks, approval delays, or the emergence of competing drugs could cause recurring non-recurring losses on the affiliate portfolio."
+   }
+  }
+ ],
+ "checkpoints": [
+  {
+   "when": {
+    "ko": "2026년 8월 중순",
+    "en": "Mid-August 2026"
+   },
+   "what": {
+    "ko": "2026년 2분기 분기보고서 공시. 매출 모멘텀 유지 여부, 영업손실 축소 진행 상황, 현금 잔고 변화를 확인하며 연간 실적 방향성을 가늠할 수 있다.",
+    "en": "2026 Q2 quarterly report. Key checks: whether revenue momentum is maintained, the pace of operating-loss reduction, and cash balance changes—providing a gauge of full-year trajectory."
+   }
+  },
+  {
+   "when": {
+    "ko": "2026년 9월 말",
+    "en": "Late September 2026"
+   },
+   "what": {
+    "ko": "2026년 상반기 반기보고서 공시. 연결 기준 부채비율·자기자본·유동비율 등 재무 안전성 지표와 관계사 지분법 손익 규모를 점검할 수 있다.",
+    "en": "2026 H1 semi-annual report. A key opportunity to assess consolidated debt ratio, equity balance, current ratio, and the equity-method income or loss from affiliates for the first half."
+   }
+  },
+  {
+   "when": {
+    "ko": "2026년 하반기 수시",
+    "en": "Rolling, H2 2026"
+   },
+   "what": {
+    "ko": "에이비온 임상 진행 현황 및 라이선스아웃 협상 관련 공시. 성패에 따라 케이피엠테크의 연간 순이익 방향성을 좌우할 수 있는 핵심 비경상 변수다.",
+    "en": "Disclosures on Abion's clinical progress and license-out negotiations. The outcome is a critical non-recurring variable that could materially shift KPM Tech's full-year net income in either direction."
+   }
+  },
+  {
+   "when": {
+    "ko": "2026년 상시",
+    "en": "Ongoing, 2026"
+   },
+   "what": {
+    "ko": "유상증자·전환사채·대규모 차입 등 자본 조달 관련 DART 공시. 재무 긴장 완화 신호인지, 주주 희석 요인인지 여부를 판단하는 핵심 이벤트다.",
+    "en": "Any DART disclosures on equity offerings, convertible bonds, or large borrowings—critical signals for assessing whether financial stress is being relieved or shareholder dilution is imminent."
+   }
+  },
+  {
+   "when": {
+    "ko": "2026년 연간",
+    "en": "Full-Year 2026"
+   },
+   "what": {
+    "ko": "AI 서버·전기차 관련 PCB 표면처리약품 수주·납품 동향. 전방 수요의 실질적 발주 반영 여부가 2027년 매출 성장 지속 가능성의 신뢰 지표가 된다.",
+    "en": "Trends in PCB surface-treatment chemical orders and deliveries tied to AI and EV customers. Whether front-end demand is translating into real bookings will determine the credibility of any revenue growth outlook into 2027."
+   }
+  }
+ ],
+ "verdict": {
+  "body": {
+   "ko": "케이피엠테크는 PCB용 표면처리약품과 전자동 도금설비를 핵심으로 하는 소규모 특화기업으로, 2025년 매출이 769억원으로 전년 대비 급반등하며 화학사업의 수요 회복을 일부 확인했다. 그러나 4년 연속 영업적자(2025년 OPM -22.3%), 2026년 1분기에도 지속된 영업손실, 4년 연속 마이너스 영업현금흐름(-28억→-117억→-9억→-199억원 추이), 부채비율 급등(32.2%→129.1%)은 재무 건전성에 대한 심각한 점검을 요한다. 비경상 투자 손익이 연간 순이익에 구조적으로 큰 영향을 미치기 때문에, 본업 경쟁력은 영업손익 기준으로 독립적으로 평가해야 하며, 이 지표는 아직 일관된 개선 신호를 보내지 못하고 있다. AI·전기차·5G 기반의 PCB 전방 수요 성장은 중장기 긍정 요인이지만, 이를 이익으로 전환하려면 원가 효율화와 규모의 경제 확보가 선행되어야 한다. 관계사 에이비온의 임상·라이선스아웃 결과는 연간 순손익 방향을 단기간에 급격히 바꿀 수 있는 비경상 변수로, 본업과 별도로 추적이 필요하다. 향후 수분기 동안 영업손실의 지속적 축소, 부채비율 안정화, 영업현금흐름 전환 여부가 기업 신뢰도 회복의 세 가지 핵심 관문이 될 것이다.",
+   "en": "KPM Tech is a small-cap specialist in PCB surface-treatment chemicals and automated plating equipment whose 2025 revenue surged to ₩76.9B, confirming a partial recovery in chemicals demand. However, four consecutive years of operating losses (2025 OPM −22.3%), continuing operating losses into 2026 Q1, sustained negative operating cash flows (trending from −₩2.8B in 2022 to −₩19.9B in 2025), and a sharply elevated debt ratio (32.2% to 129.1%) raise serious concerns about financial soundness that cannot be overlooked. Because non-recurring investment gains and losses structurally dominate the reported net-income line, the operating profit figure is the more reliable measure of core business health—and it has yet to show a consistent improvement trend. AI, EV, and 5G tailwinds to PCB demand represent a genuine medium-term positive, but converting revenue growth into profitability requires cost efficiency and economies of scale that remain elusive. The outcome of affiliate Abion's clinical and licensing pipeline is a non-recurring wildcard that could rapidly swing annual net income in either direction, and investors should track it independently from core business performance. Over the coming quarters, the three critical tests of credibility will be whether operating losses are consistently narrowing, whether the debt ratio can be stabilized, and when operating cash flows show a durable turn toward positive."
+  }
+ },
+ "sources": [
+  "https://www.investing.com/equities/kpm-tech-co-ltd",
+  "https://comp.fnguide.com/SVO2/ASP/SVD_Main.asp?gicode=A042040",
+  "https://www.butler.works/ko/companies/00206686",
+  "https://comp.fnguide.com/SVO2/asp/SVD_Corp.asp?pGB=1&gicode=A042040&cID=&MenuYn=Y&ReportGB=&NewMenuID=102&stkGb=701",
+  "https://www.paxnet.co.kr/stock/analysis/main?abbrSymbol=042040",
+  "https://m.thinkpool.com/item/042040",
+  "https://www.investing.com/equities/kpm-tech-co-ltd-earnings",
+  "https://comp.wisereport.co.kr/company/c1010001.aspx?cmp_cd=042040",
+  "https://deepsearch.com/analytics/company-analysis/KRX:042040?c-symbol=KRX:042040",
+  "https://m.finance.daum.net/quotes/A042040/news/stock/ajPtzbeffV",
+  "https://m.thinkpool.com/stockDiscuss/042040/cont/11774086",
+  "https://kind.krx.co.kr/common/disclsviewer.do?method=search&acptno=20240516002346&docno=&viewerhost=",
+  "https://comp.wisereport.co.kr/wiseReport/summary/ReportSummary.aspx?cn=&cmp_cd=025750",
+  "https://m.irgo.co.kr/IR-ROOM/064820/%EC%BC%80%EC%9D%B4%ED%94%84-IR-ROOM",
+  "https://thevc.kr/kpmtech",
+  "https://www.saramin.co.kr/zf_user/company-info/view/csn/ZmplQ0tVa2V2c1hsdjJxQkhVaGhJZz09/company_nm/(%EC%A3%BC)%EC%BC%80%EC%9D%B4%ED%94%BC%EC%97%A0%ED%85%8C%ED%81%AC",
+  "https://moneypie.net/wiki/v/%EC%BC%80%EC%9D%B4%ED%94%BC%EC%97%A0%ED%85%8C%ED%81%AC",
+  "https://purplenty.com/042040-21y4q-stock-analysis-target-stock/"
+ ],
+ "v": 2,
+ "model": "claude-sonnet-4-6",
+ "ticker": "042040",
+ "name": "케이피엠테크",
+ "name_en": "KPM TECH CO., LTD.",
+ "sector": "유통·소비재",
+ "categories": [
+  "유통·소비재"
+ ],
+ "market": "코스닥",
+ "reportDate": "2026-06-19",
+ "reportTs": "2026-06-19 04:36",
+ "dataDate": "20260618",
+ "quant": {
+  "asOf": "2026-06-18",
+  "fs_basis": "연결(CFS) · DART 공시 확정치 · 지배주주 기준 순이익",
+  "annual": [
+   {
+    "year": 2025,
+    "rev": 76924052907,
+    "op": -17154337059,
+    "np": -30909860530,
+    "np_owner": -14676605602,
+    "equity": 62494163001,
+    "equity_owner": 55575058989,
+    "liab": 80674502533,
+    "cfo": -19852854701,
+    "eps_basic": -60,
+    "opm": -22.3,
+    "roe": -26.4,
+    "debt_ratio": 129.1
+   },
+   {
+    "year": 2024,
+    "rev": 28643942128,
+    "op": -4562035338,
+    "np": -40365492366,
+    "np_owner": -39232415174,
+    "equity": 89195359349,
+    "equity_owner": 76147045541,
+    "liab": 80913578365,
+    "cfo": -918790275,
+    "eps_basic": -224,
+    "opm": -15.9,
+    "roe": -51.5,
+    "debt_ratio": 90.7
+   },
+   {
+    "year": 2023,
+    "rev": 45501203395,
+    "op": -14460083741,
+    "np": -8941162078,
+    "np_owner": 5050080555,
+    "equity": 125390566287,
+    "equity_owner": 107745037320,
+    "liab": 49061791741,
+    "cfo": -11704003658,
+    "eps_basic": 29,
+    "opm": -31.8,
+    "roe": 4.7,
+    "debt_ratio": 39.1
+   },
+   {
+    "year": 2022,
+    "rev": 41285686236,
+    "op": -448350232,
+    "np": -12052466476,
+    "np_owner": -11620974789,
+    "equity": 97350478720,
+    "equity_owner": 99736324343,
+    "liab": 31327509571,
+    "cfo": -2810829602,
+    "eps_basic": -74,
+    "opm": -1.1,
+    "roe": -11.7,
+    "debt_ratio": 32.2
+   }
+  ],
+  "quarterly": [
+   {
+    "q": "2025Q1",
+    "rev": 14279952786,
+    "op": -6821623560,
+    "np_owner": -9314523402
+   },
+   {
+    "q": "2025Q2",
+    "rev": 20491948439,
+    "op": -4063249291,
+    "np_owner": 3609709437
+   },
+   {
+    "q": "2025Q3",
+    "rev": 22891474102,
+    "op": -5235967196,
+    "np_owner": -3184683261
+   },
+   {
+    "q": "2025Q4",
+    "rev": 19260677580,
+    "op": -1033497012,
+    "np_owner": -5787108376
+   },
+   {
+    "q": "2026Q1",
+    "rev": 19821695191,
+    "op": -3742392290,
+    "np_owner": -6728779319
+   }
+  ],
+  "valuation": {
+   "price": 749,
+   "mcap": 0.0185,
+   "shares": 24709362,
+   "total_shares": 24709362,
+   "wavg_shares": null,
+   "per": null,
+   "eps": null,
+   "pbr": null,
+   "bps": null,
+   "roe_ttm": -2.0,
+   "ttm_window": "2025Q2~2026Q1",
+   "ttm_np_owner": -1136630652,
+   "pbr_krx": 0.26,
+   "bps_krx": 2850.0,
+   "basis": "PER·EPS·PBR·BPS 모두 자체 산출(네이버·토스와 동일 방식) · 배당은 DART 공시 주당현금배당금(보완:KRX) ÷ 현재가",
+   "dps": 0.0,
+   "div": 0.0
+  }
+ }
+}
