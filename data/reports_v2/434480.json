@@ -1,0 +1,341 @@
+{
+ "title": {
+  "ko": "제로트러스트·N2SF 수혜 속 수익성 개선 경로 확인 중",
+  "en": "Zero Trust & N2SF Tailwind — Profitability Recovery Path Under Verification"
+ },
+ "lead": {
+  "ko": "국내 웹방화벽 시장점유율 1위 모니터랩은 SECaaS·SASE 전환 투자를 이어가는 가운데 2025년 연간 영업 흑자전환을 달성했으나, 2026년 1분기 계절성 적자와 인건비 고정비 부담이 연간 수익성 개선 속도를 가늠하는 핵심 변수로 부상했다.",
+  "en": "Monitorapp, South Korea's No.1 web application firewall vendor by market share, returned to full-year operating profit in 2025 amid ongoing SECaaS/SASE investment, yet a typical first-quarter seasonal loss in 2026 and elevated fixed personnel costs have become the key variables determining the pace of full-year margin recovery."
+ },
+ "keypoints": [
+  {
+   "ko": "2025년 연간 매출 191.7억원(+28.6% YoY), 영업이익 9.4억원으로 흑자전환 — 3년간의 손익 사이클을 마감했으나 이익 절대 규모는 아직 소규모",
+   "en": "FY2025 revenue of KRW 19.2bn (+28.6% YoY) and operating profit of KRW 940mn mark a return to operating profitability, closing a three-year loss cycle — but the absolute earnings base remains modest"
+  },
+  {
+   "ko": "2026 Q1 영업손실 -71억원: 하반기 집중 매출 구조(2025년 Q4 비중 약 36%)와 선제적 R&D 인건비가 맞물리며 반복되는 상반기 적자 패턴",
+   "en": "2026 Q1 operating loss of KRW -710mn reflects persistent first-half seasonality — 2025 Q4 accounted for ~36% of annual revenue — compounded by proactive headcount investment"
+  },
+  {
+   "ko": "국가망보안체계(N2SF) 실증 참여 및 과기부 제로트러스트 시범사업 주관사 선정 — 공공·민간 수요 전환기의 레퍼런스 확보 단계",
+   "en": "Selected as the lead operator of the government's 2025 Zero Trust Pilot Project (KISA) and participated in N2SF validation — building key references ahead of the public-sector security paradigm shift"
+  },
+  {
+   "ko": "주력 제품 AIWAF → AIWAAP 리브랜딩(2026년 2월) 및 GenAI Security 기능 추가 — API 보안·생성형 AI 위협 대응으로 제품 포트폴리오 고도화",
+   "en": "Flagship rebranded from AIWAF to AIWAAP (February 2026) with API-centric enhancements and GenAI Security features added — broadening the product portfolio to address AI-era threats"
+  },
+  {
+   "ko": "자기자본 비율 75.7%의 무차입에 가까운 재무구조(부채비율 32.1%) — 신규 투자 여력과 재무 안정성 동시 확보",
+   "en": "Near-debt-free balance sheet with an equity ratio of ~75.7% (debt-to-equity 32.1%) provides both investment headroom and financial stability"
+  }
+ ],
+ "business": {
+  "ko": "모니터랩은 2005년 설립, 2023년 코스닥에 상장한 B2B 애플리케이션 보안 전문기업이다. 자체 개발한 고성능 프록시 엔진 'AIOS'를 핵심 기술 기반으로 삼아 온프레미스 보안 제품과 SECaaS(서비스형 보안) 플랫폼을 함께 공급한다. 2025년 매출 기준으로 제품 판매(AIWAAP·AISWG·AISVA 등 온프레미스 어플라이언스 및 SW)가 약 43%, 클라우드 보안 서비스(AIONCLOUD 기반 SECaaS)가 약 35%를 차지하며, 나머지는 유지보수·매니지드서비스 등으로 구성된다. 대표 제품인 AIWAAP(구 AIWAF)는 국내 웹방화벽 시장점유율 1위로 공공·금융·일반기업 등 약 4,000개 레퍼런스를 보유하고 있다. SECaaS 플랫폼 AIONCLOUD는 WAF, SWG, ZTNA, CASB, RBI, GenAI Security 등을 단일 플랫폼에 통합한 SSE(Security Service Edge) 구조로 제공되며 구독형 수익 모델을 지향한다. 경쟁 구도 측면에서는 파이오링크, 펜타시큐리티시스템과 함께 국내 웹방화벽 시장의 3강을 형성하고 있으며, 글로벌 시장에서는 F5·Imperva·Cloudflare 등 대형 벤더와 간접 경쟁 관계에 있다. 해외 거점은 일본 법인을 중심으로 운영되며 태국·말레이시아·베트남·인도네시아 등 동남아시아에서 현지 파트너를 통한 영업을 전개하고 있다. 위협 인텔리전스 플랫폼 'AILabs'를 기반으로 2026년 과기부 데이터바우처 지원사업 공급기업에 선정되는 등 데이터 기반 보안 역량도 강화하고 있다.",
+  "en": "Monitorapp, founded in 2005 and listed on KOSDAQ in 2023, is a B2B application security specialist that leverages its proprietary high-performance proxy engine 'AIOS' to deliver both on-premises security appliances and a SECaaS platform. Based on FY2025 revenue, product sales (AIWAAP, AISWG, AISVA hardware and software appliances) accounted for approximately 43% and cloud security services (AIONCLOUD-based SECaaS) approximately 35%, with the remainder comprising maintenance and managed services. The flagship AIWAAP (formerly AIWAF) holds the No.1 position in the South Korean web application firewall market with roughly 4,000 customer references across public institutions, financial firms, and enterprises. The AIONCLOUD SECaaS platform integrates WAF, SWG, ZTNA, CASB, RBI, and GenAI Security into a single SSE (Security Service Edge) architecture with a subscription-based revenue model. Domestically, the company competes in a three-way rivalry with Piolink and Penta Security, while globally it faces indirect competition from F5, Imperva, and Cloudflare. International operations are anchored by a Japan subsidiary, supplemented by local partner networks in Thailand, Malaysia, Vietnam, and Indonesia. The company was also selected as a supplier for the government's 2026 Data Voucher Program via its threat intelligence platform AILabs, further deepening its data-driven security capabilities."
+ },
+ "earnings": {
+  "ko": "2023년 매출 141.9억원에 영업이익 0.07억원(이익률 0.1%), 순손실 -13.7억원이었던 모니터랩은 2024년 매출 149.1억원, 영업손실 -6.4억원(-4.3%)을 기록하며 오히려 영업 적자가 심화됐다. 다만 2024년 순이익은 20.8억원으로 흑자 전환됐는데, 이는 영업 외 부문의 일회성 이익이 반영된 결과로 해석된다. 2025년은 매출 191.7억원(+28.6% YoY)으로 외형이 크게 성장했고 영업이익도 9.4억원(이익률 4.9%)으로 흑자전환에 성공했다. 분기 추이를 보면 2025년 상반기(Q1 -4.6억원, Q2 -1.2억원)는 영업 적자 기조가 이어졌으나, Q3(+4.4억원)부터 흑자로 전환된 뒤 Q4(+10.9억원)에 이익이 집중되는 강한 하반기 편중 패턴이 확인된다. 2025년 Q4 매출만 68.2억원으로 연간 매출의 약 36%가 4분기에 쏠리는 구조다. 영업현금흐름은 2025년 8.6억원으로 2024년 27.5억원 대비 감소했는데, 이는 하반기 매출 집중에 따른 미수금 증가와 SECaaS 확대를 위한 선투자 비용이 영향을 준 것으로 판단된다. 2026년 Q1은 매출 36.4억원으로 전년 동기 34.3억원 대비 소폭 증가(+6%)에 그쳤으나, 영업손실은 -7.1억원으로 2025 Q1(-4.6억원)보다 적자 폭이 확대됐다. 미래에셋증권(2026.06.18 기준) 분석에 따르면 2026 Q1 인건비가 매출의 61%에 달하는 22억원 수준으로 전년 동기 대비 14% 급증한 것이 수익성 악화의 주요 원인이다. 연간 이익 구조는 적자에서 흑자로 전환된 궤도에 올라 있으나, 상반기 계절성 손실과 인건비 고정비 부담이 연간 영업이익률 개선 속도를 제약하는 요인으로 작용하고 있다.",
+  "en": "Monitorapp posted FY2023 revenue of KRW 14.2bn with a near-breakeven operating profit of KRW 7mn (0.1% margin) and a net loss of KRW -1.4bn. In FY2024, revenue grew modestly to KRW 14.9bn, but operating losses deepened to KRW -640mn (-4.3% margin); the FY2024 net profit of KRW 2.08bn reflected a one-time non-operating gain rather than operating improvement. FY2025 marked the meaningful inflection, with revenue surging 28.6% YoY to KRW 19.2bn and operating profit returning to KRW 940mn (4.9% margin). The quarterly trajectory reveals a pronounced second-half skew: Q1 2025 (KRW -464mn) and Q2 2025 (KRW -121mn) both carried operating losses, before Q3 (KRW +442mn) turned profitable and Q4 accelerated strongly to KRW +1.09bn — with Q4 revenue alone (KRW 6.82bn) comprising roughly 36% of the full year. Operating cash flow contracted to KRW 861mn in FY2025 from KRW 2.75bn in FY2024, reflecting rising receivables from back-weighted revenue and SECaaS investment outflows. In Q1 2026, revenue reached KRW 3.64bn (+6% YoY) but the operating loss widened to KRW -710mn from KRW -464mn in Q1 2025. A Mirae Asset Securities note (June 18, 2026) cited personnel costs equating to approximately 61% of quarterly revenue — up 14% YoY — as the primary drag. Overall, the company has successfully pivoted from operating losses to a positive annual trend, but seasonal first-half deficits and sticky fixed labor costs continue to temper the pace of margin expansion."
+ },
+ "industry": {
+  "ko": "국내 사이버보안 시장은 제로트러스트, SASE, SSE로 대표되는 클라우드 네이티브 보안 아키텍처로의 전환이 구조적으로 진행되고 있다. 국가정보원의 국가망보안체계(N2SF) 가이드라인 1.0 발표(2025년 9월) 이후 기존 물리적 망분리 패러다임이 데이터 등급·위험 기반 통제 체계로 전환되며 공공 보안 시장의 수요 구조가 재편되고 있다. 또한 2026년부터 범부처 정보보호대책 강화 및 개인정보보호법 개정, 정보보호 공시 의무 확대, 다층 보안체계(MLS) 도입이 예정돼 보안 산업 전반의 법제 수요가 증가할 전망이다. 모니터랩은 웹방화벽 캐시카우와 SASE 기반 클라우드 보안 서비스를 동시에 보유한 포지션으로 이 전환의 수혜권에 있다. 경쟁 측면에서는 국내 보안 기업 간의 기능 통합 경쟁이 격화되고 있으며, 해외에서는 Cloudflare·Zscaler 등 글로벌 SSE 플랫폼 사업자가 국내 엔터프라이즈 시장에 침투를 가속화하고 있어 중장기적 경쟁 압력 요인이다. 공공 수요의 경우 예산 집행 시점에 따른 분기 실적 변동성이 크고, BMT(벤치마크테스트) 단계에서 실제 수주까지 시차가 발생하는 구조적 특성이 사이버 보안 기업 공통의 실적 예측 난이도를 높이는 요인이다.",
+  "en": "South Korea's cybersecurity market is undergoing a structural transition toward cloud-native security architectures — Zero Trust, SASE, and SSE. The National Intelligence Service's publication of the National Network Security Framework (N2SF) guideline 1.0 in September 2025 is reshaping public-sector security procurement by shifting from physical network separation toward data classification and risk-based controls. Starting in 2026, tighter cross-ministry data protection mandates, amendments to the Personal Information Protection Act, expanded disclosure obligations, and adoption of Multi-Level Security (MLS) frameworks are set to materially expand regulatory-driven security spend. Monitorapp occupies a favorable dual position as both a traditional WAF incumbent and an emerging SSE/SECaaS platform provider. On the competitive front, domestic peers are intensifying product consolidation, while global SSE operators such as Cloudflare and Zscaler are accelerating enterprise penetration in South Korea — representing a medium-to-long-term competitive headwind. Public-sector orders remain highly seasonal, and the lag between benchmark testing (BMT) and actual contract award structurally elevates earnings volatility for all domestic cybersecurity vendors."
+ },
+ "outlook": {
+  "ko": "모니터랩은 2025년 과기부·KISA 주관 '제로트러스트 도입 시범사업' 주관사로 선정되어 LG유플러스·안랩·라온시큐어와 컨소시엄을 구성, 제조(KMW)·금융(신영증권) 수요기관을 대상으로 실증을 완료하고 성과를 공개 발표했다. 이 레퍼런스를 기반으로 국가망보안체계(N2SF) 가이드라인과의 연계 확장을 검토 중이라고 회사는 밝혔다. 2026년 2월에는 주력 제품명을 AIWAF에서 AIWAAP으로 변경하고 API 자동 프로파일링, DDoS 완화, 봇 관리 기능을 강화했으며, 3월 eGISEC 2026에서 N2SF 대응 솔루션을 공개했다. 생성형 AI 위협에 특화된 'GenAI Security' 기능을 AIONCLOUD 플랫폼에 통합해 AI 전환 시대의 새로운 보안 수요에 대응하는 포트폴리오 고도화도 진행 중이다. 아울러 자사 CTI(위협 인텔리전스) 플랫폼 'AILabs'가 2026년 과기부 데이터바우처 지원사업 공급기업으로 선정돼 위협 인텔리전스 사업 영역을 확대하고 있다. 해외 시장에서는 일본 법인을 통한 매출과 동남아시아 파트너십 확대를 병행하며 글로벌 매출 다변화를 추진 중이다. 공개된 구체적인 연간 가이던스 수치는 확인되지 않으나, 계절성을 감안하면 2026년 연간 손익의 핵심은 하반기 공공·민간 수주 전환 속도와 인건비 레버리지 여부에 달려 있다.",
+  "en": "Monitorapp completed its government-backed Zero Trust Pilot Project in 2025, serving as the lead operator in a consortium with LG Uplus, AhnLab, and RaonSecure, with manufacturing (KMW) and financial (Shinyoung Securities) institutions as demand organizations — and publicly presented the results at the 2025 Zero Trust & Integrated Security Summit. The company has stated it is exploring extension of the validated architecture to align with the N2SF guidelines. In February 2026, it relaunched its flagship product as AIWAAP, adding real-time API auto-profiling, DDoS mitigation, and bot management, and unveiled the N2SF-aligned solution set at eGISEC 2026 in March. Integration of 'GenAI Security' into the AIONCLOUD platform is ongoing, targeting prompt injection, AI abuse, and sensitive data exfiltration — positioning the company for the generative AI security demand wave. The AILabs CTI platform was also selected as a supplier for the government's 2026 Data Voucher Program, expanding the threat intelligence service footprint. Overseas, the company continues to pursue revenue diversification via its Japan subsidiary and Southeast Asian partner networks. No specific full-year guidance figures have been publicly disclosed; based on the company's seasonal pattern, annual profitability in 2026 will hinge primarily on the pace of second-half public and private contract conversions and the degree to which revenue growth outpaces fixed personnel costs."
+ },
+ "valuation_comment": {
+  "ko": "현재 주가는 주당순자산(BPS 3,246원) 대비 할인된 구간에서 형성되어 있다. 이는 아직 이익 창출 규모가 제한적인 상황에서 자산 가치 중심으로 주가가 수렴하고 있음을 시사한다. 배당은 지급되지 않고 있어 배당수익률은 업종 평균을 크게 하회한다. 2023년 상장 직후에는 기대감 프리미엄으로 고평가 구간에 있었으나, 이후 영업 적자 지속과 이익 회복 지연을 거치며 주가는 상당폭 조정됐다. 연간 손익이 적자에서 흑자로 전환되었음에도 분기 이익의 하반기 집중 구조와 인건비 고정비 부담이 밸류에이션 프리미엄 회복을 제약하고 있다. 향후 SECaaS 구독 매출 비중 상승에 따라 이익의 분기 평준화와 수익성 레버리지가 확인될 경우, 시장이 인식하는 이익 가시성이 개선되는 국면이 될 수 있다.",
+  "en": "The current share price trades at a discount to book value per share (BPS KRW 3,246), reflecting the market's caution given a still-limited earnings base. No dividend has been paid, placing the yield well below the sector average. Following the high premium observed at the time of the 2023 IPO, the stock de-rated materially as operating losses persisted and the profitability recovery lagged expectations. Despite the return to annual operating profitability, the persistent first-half deficit structure and heavy fixed personnel costs continue to limit the re-rating of valuation multiples. Should the rising share of SECaaS subscription revenue contribute to more uniform quarterly earnings distribution and visible operating leverage, earnings predictability as perceived by the market could improve meaningfully."
+ },
+ "bull": [
+  {
+   "title": {
+    "ko": "N2SF·제로트러스트 도입 의무화로 공공 수요 구조적 확대",
+    "en": "Structural Public-Sector Demand Expansion via N2SF and Mandatory Zero Trust"
+   },
+   "body": {
+    "ko": "국가망보안체계(N2SF) 가이드라인이 본격 시행되고 2026년부터 공공기관의 제로트러스트 도입이 의무화 방향으로 추진됨에 따라 모니터랩의 SSE·ZTNA 솔루션에 대한 공공 수요가 구조적으로 확대될 전망이다. 회사는 이미 2025년 시범사업 주관사로 선정돼 공공·민간 레퍼런스를 확보했으며, N2SF 가이드라인과의 연계 확장을 검토 중이다. 이 정책 사이클이 가시화될수록 회사가 보유한 솔루션 포트폴리오의 실수요 전환율이 높아질 수 있다.",
+    "en": "As the N2SF guidelines take effect and the government pushes toward mandatory Zero Trust adoption in public institutions from 2026, structural demand for Monitorapp's SSE and ZTNA solutions should expand. Having already secured public and private references as the 2025 pilot program leader, the company is positioned to convert policy momentum into revenue. The more concrete the policy timeline becomes, the higher the probability of converting its validated solution portfolio into actual contracts."
+   }
+  },
+  {
+   "title": {
+    "ko": "SECaaS 구독 매출 성장에 따른 이익 구조 개선 잠재력",
+    "en": "Subscription Revenue Growth Offering Structural Margin Improvement Potential"
+   },
+   "body": {
+    "ko": "2025년 클라우드 보안(SECaaS) 매출 비중이 약 35%까지 성장했으며, 구독형 SaaS 모델은 반복 수익과 예측 가능한 현금흐름을 창출한다는 점에서 온프레미스 제품 판매 대비 이익 안정성이 높다. SECaaS 비중이 높아질수록 분기 매출의 하반기 편중이 완화되고, 고정 인건비에 대한 매출 레버리지가 작동할 수 있다. AIONCLOUD 플랫폼에 ZTNA, CASB, GenAI Security 등 신규 기능이 통합됨에 따라 평균 계약 단가(ARPU) 상승 가능성도 존재한다.",
+    "en": "With cloud security (SECaaS) revenue reaching approximately 35% of FY2025 sales, the subscription model's recurring and predictable cash flow dynamics are superior to one-time appliance sales. A rising SECaaS mix would gradually smooth the pronounced second-half revenue seasonality and unlock operating leverage against the fixed personnel cost base. The ongoing integration of ZTNA, CASB, and GenAI Security into the AIONCLOUD platform also creates potential for higher average contract values over time."
+   }
+  },
+  {
+   "title": {
+    "ko": "견고한 재무 구조 — 위기 대응력과 투자 여력 동시 확보",
+    "en": "Robust Balance Sheet Providing Crisis Resilience and Investment Capacity"
+   },
+   "body": {
+    "ko": "2025년 말 기준 부채비율 32.1%, 자기자본 384.8억원으로 사실상 무차입에 가까운 재무 구조를 유지하고 있다. 이는 경기 위축 또는 투자 확대 국면에서 외부 자금조달 없이 운영 안정성을 유지할 수 있는 기반을 제공한다. 자본 대비 부채 부담이 낮아 신규 제품 개발, 해외 법인 확대, M&A 등 성장 투자를 자체 재원으로 집행할 수 있는 유연성이 있다.",
+    "en": "Monitorapp closed FY2025 with a debt-to-equity ratio of 32.1% and total equity of KRW 38.5bn, maintaining a virtually debt-free balance sheet. This provides operational stability without external financing even in a downturn or high-investment period. The low leverage ratio affords strategic flexibility for new product R&D, overseas subsidiary expansion, or M&A using internal resources."
+   }
+  }
+ ],
+ "bear": [
+  {
+   "title": {
+    "ko": "인건비 고정비 부담 — 매출 성장이 이익으로 전환되는 속도 제약",
+    "en": "High Fixed Personnel Costs Constraining Revenue-to-Profit Conversion Speed"
+   },
+   "body": {
+    "ko": "2026 Q1 인건비는 매출의 약 61%(22억원)에 달하며 전년 동기 대비 14% 급증했다. 이처럼 높은 고정비 구조 하에서는 매출이 증가하더라도 영업이익률 개선이 제한적일 수 있으며, 하반기 수주가 예상보다 지연될 경우 연간 흑자 달성이 불확실해진다. 보안 전문 인력 확보를 위한 선제적 채용이 단기 수익성 회복을 지연시키는 구조적 요인으로 작용하고 있다.",
+    "en": "Personnel costs equated to approximately 61% of Q1 2026 revenue (KRW 2.2bn), surging 14% YoY. Under this high fixed-cost structure, even meaningful top-line growth may yield limited operating margin expansion, and any delay in second-half order conversion could put full-year profitability at risk. Proactive hiring of scarce cybersecurity specialists constitutes a structural drag on near-term margin recovery."
+   }
+  },
+  {
+   "title": {
+    "ko": "강한 하반기 매출 집중 구조 — 연간 이익 예측 가시성 저하",
+    "en": "Pronounced Second-Half Revenue Skew Reducing Annual Earnings Visibility"
+   },
+   "body": {
+    "ko": "2025년 기준 Q4 매출이 전체의 약 36%를 차지하는 극단적인 하반기 집중 패턴이 반복되고 있다. 상반기는 구조적으로 영업 적자가 발생하며, 하반기 공공기관 예산 집행 지연이나 BMT 시차가 발생하면 연간 실적이 크게 훼손될 수 있다. 이러한 변동성은 주가 측면에서도 실적 불확실성 할인 요인으로 작용한다.",
+    "en": "The company exhibits a consistently extreme second-half concentration pattern — Q4 2025 alone accounted for approximately 36% of annual revenue — meaning the first half is structurally loss-making. Any budget execution delay by public-sector clients or time lag between benchmark tests and contract awards could significantly impair full-year results. This inherent volatility also acts as an earnings-uncertainty discount on the share price."
+   }
+  },
+  {
+   "title": {
+    "ko": "글로벌 SSE 플랫폼 사업자의 국내 침투 심화 — 중장기 경쟁 압력",
+    "en": "Intensifying Domestic Penetration by Global SSE Vendors — Medium-Term Competitive Risk"
+   },
+   "body": {
+    "ko": "Cloudflare, Zscaler 등 글로벌 SSE/SASE 플랫폼 사업자들이 국내 대기업·금융 시장에 대한 영업을 가속화하고 있다. 이들은 글로벌 인프라 규모와 광범위한 PoP(접속 포인트) 네트워크를 바탕으로 모니터랩 대비 서비스 수준 경쟁에서 유리한 포지션에 있다. 규모 경쟁에서의 열세는 중장기적으로 클라우드 보안 서비스 단가와 고객 이탈률에 부정적 영향을 줄 수 있다.",
+    "en": "Global SSE/SASE operators such as Cloudflare and Zscaler are accelerating their Korean enterprise and financial sector sales motions. Their superior global infrastructure scale and extensive PoP networks give them a structural service-level advantage over Monitorapp. This scale disadvantage could negatively affect cloud security service pricing power and customer churn over the medium to long term."
+   }
+  }
+ ],
+ "risks": [
+  {
+   "cat": {
+    "ko": "정책·규제 리스크",
+    "en": "Policy & Regulatory Risk"
+   },
+   "body": {
+    "ko": "N2SF 도입 및 제로트러스트 의무화 일정이 예산 편성 사이클이나 정부 정책 우선순위 변화로 지연될 경우, 회사가 선점하려는 공공 수요의 실현 시점이 후퇴할 수 있다. 정보보호 공시 의무 확대나 개인정보보호법 개정의 실제 집행 강도가 시장 기대치를 하회할 경우 민간 보안 투자 증가 속도도 둔화될 수 있다. 규제 환경의 불확실성은 연간 실적 예측 신뢰도를 낮추는 배경 요인이다.",
+    "en": "If the N2SF rollout or Zero Trust mandate timeline slips due to budget cycle constraints or shifting policy priorities, the realization of anticipated public-sector demand could be deferred. If enforcement of the expanded information security disclosure requirements or PIPA amendments proves softer than expected, the pace of private-sector security investment growth could also moderate. Regulatory uncertainty reduces the reliability of full-year earnings forecasts."
+   }
+  },
+  {
+   "cat": {
+    "ko": "기술·경쟁 리스크",
+    "en": "Technology & Competition Risk"
+   },
+   "body": {
+    "ko": "AI 기반 위협 탐지, API 보안, 생성형 AI 보안 등 사이버 보안 기술의 진화 속도가 빨라지고 있어, 제품 업데이트 주기 및 R&D 투자 규모가 경쟁 유지의 핵심이다. 글로벌 대형 벤더가 AI·ML 기능을 조기에 내재화할 경우 국내 중소형 보안 기업의 기술 격차 리스크가 현실화될 수 있다. 특히 생성형 AI 위협 대응 솔루션 시장은 초기 단계로, 선점 효과보다 기술 표준화 방향에 따라 경쟁 지형이 재편될 가능성이 있다.",
+    "en": "The rapid evolution of AI-driven threat detection, API security, and generative AI security means product update velocity and R&D investment scale are critical competitive factors. If global vendors accelerate AI/ML feature integration, domestic mid-sized security firms risk falling behind on technical differentiation. The GenAI security market in particular is nascent, and competitive dynamics may be reshaped more by emerging technical standards than by first-mover advantages."
+   }
+  },
+  {
+   "cat": {
+    "ko": "인력·운영 리스크",
+    "en": "Human Capital & Operational Risk"
+   },
+   "body": {
+    "ko": "전체 인력의 약 50%가 기술 인력인 구조에서 핵심 보안 전문가의 이탈은 제품 개발 연속성과 고객 서비스 품질에 직접적인 영향을 미친다. 국내 사이버 보안 인력 수요가 산업 전반에서 증가하고 있어 경쟁사 또는 글로벌 기업으로의 인재 유출 가능성이 상존한다. 인건비 상승 압력이 지속될 경우 수익성 개선 시나리오의 전제 조건이 흔들릴 수 있다.",
+    "en": "With approximately 50% of the workforce comprising technical staff, the departure of key cybersecurity professionals would directly impact product development continuity and service quality. Rising industry-wide demand for cybersecurity talent increases the risk of attrition to competitors or global firms. Sustained personnel cost inflation could undermine the preconditions for the profitability improvement scenario."
+   }
+  }
+ ],
+ "checkpoints": [
+  {
+   "when": {
+    "ko": "2026년 8월 중순 (2026 Q2 실적 발표)",
+    "en": "Mid-August 2026 (Q2 2026 Earnings Release)"
+   },
+   "what": {
+    "ko": "2026년 상반기 누적 매출 및 영업손실 규모를 확인하고, 클라우드 보안(SECaaS) 매출 비중이 전년 동기 대비 확대되고 있는지 점검. 영업손실 축소 폭이 인건비 레버리지의 가시화 여부를 가름하는 중간 신호가 된다.",
+    "en": "Monitor first-half cumulative revenue and the scale of operating losses; assess whether cloud security (SECaaS) revenue share is expanding YoY. The degree of operating loss reduction will serve as an interim signal of whether personnel cost leverage is beginning to materialize."
+   }
+  },
+  {
+   "when": {
+    "ko": "2026년 하반기 공공 예산 집행 시점 (9~11월)",
+    "en": "Second-Half 2026 Public-Sector Budget Execution Window (Sep–Nov)"
+   },
+   "what": {
+    "ko": "N2SF 대응 솔루션 및 제로트러스트 관련 공공 수주가 예산 집행 시기에 맞춰 실적으로 반영되는지 모니터링. 시범사업 레퍼런스가 본사업 수주로 전환되는 계약 흐름이 연간 실적의 핵심 드라이버다.",
+    "en": "Track whether N2SF-aligned and Zero Trust-related public-sector orders convert to bookings and revenue during the budget execution window. The conversion of pilot program references into full-scale contracts is the central driver of annual earnings."
+   }
+  },
+  {
+   "when": {
+    "ko": "2026년 3분기 내 (AIWAAP·GenAI Security 수주 동향)",
+    "en": "Within Q3 2026 (AIWAAP & GenAI Security Order Traction)"
+   },
+   "what": {
+    "ko": "2026년 2월 출시된 AIWAAP 및 AIONCLOUD GenAI Security 기능의 민간 기업 채택 현황을 확인. 신제품이 기존 고객 업셀링 또는 신규 고객 획득으로 이어지는지 여부가 SECaaS ARPU 개선의 선행 지표다.",
+    "en": "Assess the enterprise adoption rate of AIWAAP (launched February 2026) and the GenAI Security module within AIONCLOUD. Conversion of new features into upsell revenue from existing customers or new customer acquisitions will be a leading indicator of SECaaS average revenue improvement."
+   }
+  },
+  {
+   "when": {
+    "ko": "2026년 수시 (해외 매출 및 일본 법인 성과 공시)",
+    "en": "Ongoing 2026 (Overseas Revenue & Japan Subsidiary Performance)"
+   },
+   "what": {
+    "ko": "일본 법인 매출 및 동남아시아 파트너 채널 성과가 분기·연간 보고서에 어느 수준으로 반영되는지 추적. 해외 매출 다변화는 국내 공공 수요 계절성을 완충하는 구조적 완충재로 작용할 수 있다.",
+    "en": "Track the contribution of Japan subsidiary revenue and Southeast Asian partner channel sales in quarterly and annual filings. Overseas revenue diversification can structurally buffer the seasonal volatility driven by domestic public-sector procurement cycles."
+   }
+  },
+  {
+   "when": {
+    "ko": "2026년 11월 중순 (2026 Q3 실적 발표)",
+    "en": "Mid-November 2026 (Q3 2026 Earnings Release)"
+   },
+   "what": {
+    "ko": "2025년 패턴과 비교해 Q3 흑자 전환 여부 및 이익 규모를 점검. 연간 가이던스가 없는 상황에서 Q3 흑자 전환과 수익성 개선 폭은 연간 이익 가시성을 판단하는 핵심 근거가 된다.",
+    "en": "Compare Q3 2026 profitability against the Q3 2025 KRW 442mn operating profit baseline. In the absence of formal annual guidance, whether and by how much the company beats the prior-year Q3 figure will be a key gauge of full-year earnings visibility."
+   }
+  }
+ ],
+ "verdict": {
+  "body": {
+   "ko": "모니터랩은 국내 웹방화벽 시장의 1위 사업자로서 캐시카우 제품 기반과 SECaaS 성장 동력을 동시에 보유한 이중 포트폴리오 보안 기업이다. 2025년 연간 영업 흑자전환은 3년간의 적자 사이클 이후 이익 궤도 진입을 공식화했다는 의미가 있다. 그러나 2026 Q1 영업손실 확대와 인건비 부담 가중은 연간 수익성 개선 속도가 상반기 계절성과 투자 집행 타이밍에 크게 의존함을 재확인시켰다. 긍정 요인으로는 N2SF·제로트러스트 도입 의무화로 대표되는 정책 수요, AIWAAP·GenAI Security 등 제품 포트폴리오 고도화, 그리고 무차입에 가까운 재무 건전성이 있다. 반면 고정 인건비 구조, 하반기 매출 집중 패턴, 글로벌 SSE 사업자와의 경쟁 심화는 지속적으로 점검이 필요한 제약 요인이다. 투자자 입장에서는 하반기 공공 수주 전환 속도, SECaaS 매출 비중 확대 추이, 분기 영업이익률 개선 여부를 이정표로 삼아 이익 구조 변화를 추적하는 것이 적절하다.",
+   "en": "Monitorapp is a dual-portfolio cybersecurity company that combines a dominant domestic WAF position with a growing SECaaS platform, providing both revenue stability and a long-term growth vector. The return to full-year operating profitability in FY2025 formally marks its entry into a profit-generating trajectory after a three-year loss cycle. However, the widening Q1 2026 operating loss and increasing personnel cost burden confirm that the pace of annual margin recovery is heavily dependent on second-half seasonality and investment timing. Positive catalysts include structural policy demand from N2SF and Zero Trust mandates, a maturing product portfolio with AIWAAP and GenAI Security additions, and a near-debt-free balance sheet. Counterbalancing factors — including a sticky fixed-cost base, extreme second-half revenue concentration, and intensifying competition from global SSE vendors — warrant ongoing scrutiny. For tracking the earnings inflection, the key milestones to monitor are the conversion rate of public-sector pilot references into full contracts in the second half, the trajectory of SECaaS revenue share, and whether quarterly operating margins demonstrate sustained improvement."
+  }
+ },
+ "sources": [
+  "https://m.irgo.co.kr/IR-COMP/434480/",
+  "https://comp.fnguide.com/SVO2/ASP/SVD_main.asp?gicode=A434480&NewMenuID=101",
+  "https://wcomp.fnguide.com/?cmp_cd=434480",
+  "http://www.paxnet.co.kr/stock/analysis/main?abbrSymbol=434480",
+  "https://littlebproject.com/stock/434480",
+  "https://m.thinkpool.com/item/434480",
+  "https://comp.fnguide.com/SVO2/ASP/SVD_Finance.asp?pGB=1&gicode=A434480&MenuYn=Y&NewMenuID=103&stkGb=701",
+  "https://thevc.kr/monitorapp",
+  "https://www.valueline.co.kr/finance/mri/434480",
+  "https://comp.fnguide.com/SVO2/ASP/SVD_Main.asp?pGB=1&gicode=A434480&cID=&MenuYn=Y&ReportGB=B&NewMenuID=Y&stkGb=701",
+  "https://ket.kr/news/article.html?no=38760",
+  "https://www.monitorapp.com/en",
+  "https://ko.wikipedia.org/wiki/%EB%AA%A8%EB%8B%88%ED%84%B0%EB%9E%A9",
+  "https://www.monitorapp.com/waf/",
+  "https://www.newswell.co.kr/news/articleView.html?idxno=8249",
+  "https://www.monitorapp.com/ko/products/aiwaf",
+  "http://www.softwarecatalog.co.kr/src/Item/ItemMaster.aspx?Serial=B536",
+  "http://www.datanet.co.kr/news/articleView.html?idxno=124657"
+ ],
+ "v": 2,
+ "model": "claude-sonnet-4-6",
+ "ticker": "434480",
+ "name": "모니터랩",
+ "name_en": "MONITORAPP CO., LTD.",
+ "sector": "IT·소프트웨어",
+ "categories": [
+  "IT·소프트웨어"
+ ],
+ "market": "코스닥",
+ "reportDate": "2026-06-19",
+ "reportTs": "2026-06-19 03:37",
+ "dataDate": "20260618",
+ "quant": {
+  "asOf": "2026-06-18",
+  "fs_basis": "연결(CFS) · DART 공시 확정치 · 지배주주 기준 순이익",
+  "annual": [
+   {
+    "year": 2025,
+    "rev": 19168619599,
+    "op": 943352791,
+    "np": 668916167,
+    "np_owner": 665079594,
+    "equity": 38478768084,
+    "equity_owner": 38333838748,
+    "liab": 12339301852,
+    "cfo": 861036213,
+    "eps_basic": 60,
+    "opm": 4.9,
+    "roe": 1.7,
+    "debt_ratio": 32.1
+   },
+   {
+    "year": 2024,
+    "rev": 14909186498,
+    "op": -643806101,
+    "np": 2080063052,
+    "np_owner": 2080063052,
+    "equity": 37525814632,
+    "equity_owner": 37525814632,
+    "liab": 7137920860,
+    "cfo": 2753556291,
+    "eps_basic": 177,
+    "opm": -4.3,
+    "roe": 5.5,
+    "debt_ratio": 19.0
+   },
+   {
+    "year": 2023,
+    "rev": 14186630550,
+    "op": 7200025,
+    "np": -1368578967,
+    "np_owner": -1368578967,
+    "equity": 35374725461,
+    "equity_owner": 35374725461,
+    "liab": 6580014594,
+    "cfo": 1781871999,
+    "eps_basic": -128,
+    "opm": 0.1,
+    "roe": -3.9,
+    "debt_ratio": 18.6
+   }
+  ],
+  "quarterly": [
+   {
+    "q": "2025Q1",
+    "rev": 3430455089,
+    "op": -464448957,
+    "np_owner": -298791840
+   },
+   {
+    "q": "2025Q2",
+    "rev": 3804813204,
+    "op": -120903262,
+    "np_owner": -236302747
+   },
+   {
+    "q": "2025Q3",
+    "rev": 5109487463,
+    "op": 442031019,
+    "np_owner": 309092761
+   },
+   {
+    "q": "2025Q4",
+    "rev": 6823863843,
+    "op": 1086673991,
+    "np_owner": 891081420
+   },
+   {
+    "q": "2026Q1",
+    "rev": 3639192564,
+    "op": -710338713,
+    "np_owner": -489722664
+   }
+  ],
+  "valuation": {
+   "price": 2735,
+   "mcap": 0.0337,
+   "shares": 12310300,
+   "total_shares": 12918350,
+   "wavg_shares": 11660063,
+   "per": null,
+   "eps": null,
+   "pbr": 0.84,
+   "bps": 3246,
+   "roe_ttm": 1.3,
+   "ttm_window": "2025Q2~2026Q1",
+   "ttm_np_owner": 474148770,
+   "pbr_krx": 0.89,
+   "bps_krx": 3084.0,
+   "basis": "PER·EPS·PBR·BPS 모두 자체 산출(네이버·토스와 동일 방식) · 배당은 DART 공시 주당현금배당금(보완:KRX) ÷ 현재가",
+   "dps": 0.0,
+   "div": 0.0
+  }
+ }
+}

@@ -1,0 +1,326 @@
+{
+ "title": {
+  "ko": "AI 전환 비용 정점 통과 여부 — 흑자 복귀 조건 점검",
+  "en": "AI Pivot Costs Near Peak? — Conditions for Profit Recovery Under Scrutiny"
+ },
+ "lead": {
+  "ko": "국내 모바일 플랫폼 1위 유라클은 AI 플랫폼 '아테나'로의 사업 전환 과정에서 2025년 영업손실 67.7억원을 기록했으나, 2026년 1분기 손실이 전분기 대비 큰 폭 축소되며 비용 정점 가능성이 시야에 들어왔고, 흑자 복귀를 위해서는 기존 모바일 사업 회복과 AI 매출 본격화라는 두 과제를 동시에 해결해야 한다.",
+  "en": "Korea's #1 mobile platform provider, Uracle, booked an operating loss of 6.77B KRW in 2025 amid its pivot to the AI platform 'Athena'; a sharp sequential loss reduction in 2026 Q1 raises the possibility that peak investment costs may be passing, but a return to profitability requires simultaneously recovering the core mobile business and scaling AI revenue."
+ },
+ "keypoints": [
+  {
+   "ko": "모피어스 플랫폼으로 국내 모바일 플랫폼 시장 1위 유지 — 1,000개 이상 기업 고객 기반의 유지보수 반복 수익이 사업 기저를 지탱",
+   "en": "Domestic mobile platform market leader via Morpheus with 1,000+ enterprise clients — recurring maintenance revenue forms a stable earnings floor"
+  },
+  {
+   "ko": "2025년 AI 인력·GPU 투자 급증 및 B2G 매출 지연이 맞물려 영업이익이 2024년 +19.7억원에서 2025년 -67.7억원으로 전환",
+   "en": "Surging AI personnel and GPU investment costs, combined with B2G revenue delays, swung operating income from +1.97B KRW (2024) to -6.77B KRW (2025)"
+  },
+  {
+   "ko": "LG AI연구원 엑사원 LLM과 아테나 플랫폼 결합 협약 체결 — 행정안전부 안전신문고 공공 레퍼런스 포함 10건 이상의 POC 파이프라인 진행 중",
+   "en": "Partnership with LG AI Research to integrate EXAONE LLM with Athena — 10+ POCs underway, including the Ministry of Interior's Safety Report as a public-sector reference"
+  },
+  {
+   "ko": "2026년 1분기 영업손실 8.0억원 — 직전 4분기(33.1억원) 대비 약 75% 축소, 전년 동기(9.8억원) 대비로도 개선되며 비용 구조 정상화 신호 가시화",
+   "en": "2026 Q1 operating loss narrowed to 0.80B KRW — down ~75% from Q4 2025 (3.31B KRW) and improved year-over-year, signaling cost structure normalization"
+  },
+  {
+   "ko": "부채비율 2024년 44.4% → 2025년 89.7%로 급등 — 연속 적자 지속 시 재무 건전성 훼손 속도가 빠를 수 있어 흑자 전환 시점이 분기점",
+   "en": "Debt-to-equity surged from 44.4% (2024) to 89.7% (2025) — prolonged losses could accelerate financial deterioration, making the timing of profit recovery a pivotal inflection point"
+  }
+ ],
+ "business": {
+  "ko": "유라클은 2001년 설립되어 2024년 8월 코스닥에 상장한 AI·모바일 플랫폼 전문기업이다. 핵심 제품 '모피어스 스위트'는 기업용 모바일 앱 개발 프레임워크로, 하이브리드 앱·푸시 알림·통합메시징(UMS)·CMS·쿠폰·콘텐츠 관리 등 모바일 채널 생태계 전반을 아우르는 솔루션 패밀리를 구성한다. 매출 구조는 소프트웨어 구축 수주에서 발생하는 일회성 매출과 이후 다년간 반복 발생하는 유지보수(M-ITO) 매출로 이원화되어 있어 후자가 안정적인 수익 기저 역할을 담당한다. 현대자동차·LG·SK 등 주요 대기업 그룹사를 포함해 1,000개 이상의 기업 고객을 보유하며 국내 모바일 플랫폼 시장 1위를 유지하고 있다. 매년 출시되는 신규 안드로이드·iOS 버전에 맞게 최적화된 라이브러리와 API를 개발해 고객사의 모바일 비즈니스 연속성을 지원하는 것도 핵심 역할이다. 자회사를 통해 업무용 스마트폰·태블릿·IoT 단말기 등 단말기 유통 사업도 병행한다. 2025년부터는 기업용 AI 플랫폼 '아테나(Athena)'를 신성장 축으로 본격 운영하며 LLM 최적화·운영 자동화·AI 에이전트·챗봇·코드 어시스턴트·AI 인프라 관리 솔루션(오르다AI) 등 다양한 AI 서비스를 제공한다. LG AI연구원의 초거대 멀티모달 모델 '엑사원(EXAONE)'과 아테나를 결합한 기업용 AI 공급 모델을 구체화하며 공공·금융·물류 등 다양한 산업 영역으로 레퍼런스를 확장 중이다.",
+  "en": "Uracle was founded in 2001 and listed on KOSDAQ in August 2024, operating as a specialist in AI and mobile platform solutions. Its flagship product, the Morpheus Suite, is an enterprise mobile app development framework encompassing hybrid app development, push notifications, unified messaging (UMS), CMS, coupon management, and content services — forming a comprehensive mobile channel ecosystem. Revenue is structured in two layers: one-time software implementation fees and multi-year recurring maintenance (M-ITO) contracts, with the latter providing a stable earnings floor. The company holds the #1 position in Korea's mobile platform market with 1,000+ enterprise clients, including major conglomerates such as Hyundai Motor, LG, and SK. A core service is developing OS-optimized libraries and APIs for each new Android and iOS release to ensure clients' mobile business continuity. Through subsidiaries, Uracle also distributes business smartphones, tablets, and IoT devices in bulk. From 2025, the company has been scaling its enterprise AI platform 'Athena' as a second growth engine, offering LLM optimization, operation automation, AI agents, chatbots, code assistants, and AI infrastructure management (OrdaAI). A key strategic initiative is combining Athena with LG AI Research's EXAONE large language model to target enterprise and public-sector AI deployments across finance, logistics, and government."
+ },
+ "earnings": {
+  "ko": "2024년은 마지막 흑자 연도로, 매출 475.8억원, 영업이익 19.7억원(OPM 4.1%), 지배주주 순이익 22.0억원, 영업현금흐름 31.9억원을 기록하며 양호한 수익 기반을 유지했다. 2025년에는 매출이 437.5억원(-8.0% YoY)으로 감소한 가운데 영업손실 67.7억원(OPM -15.5%), 지배주주 순손실 68.3억원, 영업현금흐름 -35.5억원으로 전방위 악화가 나타났다. 키움증권(2025년 12월 리포트)에 따르면 이는 ①기존 모바일 플랫폼의 B2G 매출 지연과 ②AI 전환을 위한 인력 및 GPU 구입 비용 급증이 동시에 작용한 결과다. 분기별로는 2025년 1~3분기 영업손실이 각각 9.8억·12.7억·12.1억원으로 비교적 일정한 수준을 유지했으나, 4분기에 33.1억원으로 급증하며 연간 손실 폭을 크게 키웠다. 2025년 4분기 매출 역시 78.1억원으로 1~3분기 평균(약 116.4억원)을 큰 폭 하회해 계절성 또는 일회성 비용·수주 공백의 영향이 집중된 것으로 파악된다. 자기자본은 283.5억원에서 193.5억원으로 감소해 부채비율이 89.7%로 상승했고, 영업현금흐름도 전년 +31.9억원에서 -35.5억원으로 전환됐다. 2026년 1분기에는 매출 86.8억원, 영업손실 8.0억원, 지배주주 순손실 7.6억원을 기록해 직전 4분기 대비 손실이 약 75% 축소됐으며, 전년 동기(2025년 1분기 OP -9.8억원)와 비교해도 손실 규모가 줄어 분기 기준 YoY 개선세가 처음으로 확인됐다.",
+  "en": "FY2024 was the last profitable year: revenue of 47.58B KRW, operating income of 1.97B KRW (OPM 4.1%), controlling-shareholder net income of 2.20B KRW, and operating cash flow of 3.19B KRW — solid across all metrics. FY2025 deteriorated sharply across the board: revenue fell to 43.75B KRW (-8.0% YoY), operating loss widened to 6.77B KRW (OPM -15.5%), net loss attributable to owners reached 6.83B KRW, and operating cash flow turned negative at -3.55B KRW. Per Kiwoom Securities (December 2025), two concurrent factors drove the deterioration: ① B2G contract revenue delays in the existing mobile platform, and ② a sharp rise in AI-related costs including headcount additions and GPU procurement. On a quarterly basis, operating losses were relatively stable at -0.98B, -1.27B, and -1.21B KRW in Q1–Q3 2025, but spiked to -3.31B KRW in Q4, suggesting concentrated one-time charges or project settlement impacts. Q4 2025 revenue of 7.81B KRW also fell far below the Q1–Q3 quarterly average of approximately 11.64B KRW. Equity contracted from 28.35B to 19.35B KRW, pushing the debt ratio to 89.7% and swinging operating cash flow from +3.19B to -3.55B KRW year-on-year. In 2026 Q1, revenue recovered to 8.68B KRW, operating loss narrowed to -0.80B KRW (from -3.31B KRW in Q4 2025) — a nearly 75% sequential improvement — and YoY improvement was also confirmed for the first time, with Q1 2025 operating loss having been -0.98B KRW."
+ },
+ "industry": {
+  "ko": "국내 기업용 모바일 플랫폼 시장은 성숙 단계에 접어들었지만, 매년 새로운 안드로이드·iOS 버전이 출시되는 구조적 특성 덕분에 기존 고객의 유지보수 수요가 안정적으로 유지된다. 디지털 전환(DX) 기조가 이어지면서 공공·금융·제조·물류 등 다양한 산업에서 모바일 채널 확장 및 고도화 수요도 꾸준히 발생한다. 기업용 AI 플랫폼 시장은 생성형 AI 확산과 함께 LLMOps·AI 에이전트 수요가 급증하는 고성장 국면에 있으며, 국내에서는 네이버(클로바X)·카카오엔터프라이즈·삼성SDS 등 대형 플레이어와 다수 스타트업이 치열하게 경쟁 중이다. 유라클은 모바일 구축 전문성과 1,000개 이상의 기업 레퍼런스를 기반으로, 기업 내부 데이터를 외부로 내보내지 않고 처리할 수 있는 온프레미스·프라이빗 AI 아키텍처를 핵심 차별점으로 내세운다. 특히 코딩 어시스턴트 제품에서 사내 코드가 외부 서버를 경유하지 않는 구조가 보안에 민감한 기업 고객에게 경쟁 우위로 작용하고 있다. 글로벌 AI 시장이 연평균 20% 이상의 성장률을 유지하는 가운데, 비용 효율적인 AI 솔루션을 원하는 중소·중견기업 수요 확대는 아테나 플랫폼의 잠재적 기회로 작용할 수 있다. 다만 대형 IT 기업 대비 자원·브랜드 인지도 격차를 극복하는 것이 시장 확장의 구조적 과제로 남는다.",
+  "en": "Korea's enterprise mobile platform market has matured, but the annual release of new Android and iOS versions sustains consistent maintenance demand from existing clients. Ongoing digital transformation across public, financial, manufacturing, and logistics sectors also generates steady demand for new and upgraded mobile channel deployments. The enterprise AI platform market, by contrast, is in a high-growth phase driven by surging demand for LLMOps and AI agents alongside generative AI adoption — domestically, Uracle competes with major players such as Naver (CLOVA X), Kakao Enterprise, and Samsung SDS, as well as numerous startups. Uracle's key differentiation is an on-premise/private AI processing architecture that prevents sensitive corporate data from leaving the enterprise environment, a meaningful selling point for security-conscious clients. This architecture is particularly relevant for the code assistant product, where companies are reluctant to allow internal code to pass through external servers. With the global AI market estimated to grow at over 20% CAGR, expanding mid-market demand for cost-effective AI solutions represents a structural opportunity for the Athena platform. However, overcoming the resource and brand recognition gap relative to large IT incumbents remains a structural constraint on market expansion."
+ },
+ "outlook": {
+  "ko": "경영진은 2025년을 'AI 사업 본격 상용화와 글로벌 시장 진출의 원년'으로 설정하고, AI와 클라우드 융합을 통해 글로벌 IT 시장에서의 존재감을 높이겠다는 방향을 공개적으로 제시했다. LG AI연구원과의 파트너십에서는 아테나에 엑사원 LLM을 결합한 기업 공급 모델이 LG 그룹사 및 외부 기업으로 제안되고 있으며, 행정안전부 안전신문고 구축이 공공 부문 핵심 레퍼런스로 확보됐다. 2025년 초 기준 아테나 관련 POC가 10건 이상 진행 중이었으며, HMM(국내 최대 해운사) 모바일 예약 앱 구축 등 모피어스 기반 신규 고객 프로젝트도 이어지고 있다. 코드 어시스턴트와 오르다AI(AI 인프라 관리) 등 신제품이 런칭되어 아테나 플랫폼의 수직 확장이 진행 중이다. 키움증권(2025년 12월)은 2026년 흑자 전환을 전망했으나, 그 전제로 ①기존 모바일 사업 회복과 ②AI 매출의 큰 폭 성장이 동시에 필요하다고 명시했다. 실제 2025년 연간 실적은 키움증권의 2025년 12월 시점 예측치(매출 483억, 영업손실 43억)보다 저조하게 마무리됐다는 점에서, 2026년 흑자 전환 시나리오의 난이도가 높아진 상황이다. 2026년 1분기 손실 축소는 긍정적 신호이나, 연간 흑자 전환 여부는 하반기 AI 수주 전환율과 B2G 매출 회복 속도에 달려 있다.",
+  "en": "Management has publicly positioned 2025 as 'the first year of AI commercialization and global market entry,' aiming to raise Uracle's profile in the global IT market through AI and cloud convergence. Under the LG AI Research partnership, proposals combining Athena with EXAONE are being fielded at LG group companies and external corporates, with the Ministry of Interior's Safety Report system secured as a key public-sector reference. As of early 2025, 10+ Athena POC projects were underway, and new Morpheus customer projects — including a multilingual (Korean/English/Chinese) mobile logistics booking app for HMM, Korea's largest shipping company — continue to be delivered. New product launches including Code Assistant and OrdaAI (AI infrastructure management) are expanding the Athena platform vertically. Kiwoom Securities (December 2025) forecast a return to profitability in 2026, but stipulated that ① recovery in the core mobile business and ② significant AI revenue growth must occur simultaneously. Notably, the actual FY2025 results came in below Kiwoom's then-current estimates (revenue 48.3B vs. actual 43.75B KRW; operating loss 4.3B vs. actual 6.77B KRW), raising the bar for the 2026 breakeven scenario. The Q1 2026 loss narrowing is an encouraging sign, but achieving a full-year turnaround will hinge on AI contract conversion rates and B2G revenue recovery speed from Q2 onwards."
+ },
+ "valuation_comment": {
+  "ko": "유라클의 주가는 2024년 8월 공모가(2만1,000원) 대비 큰 폭 아래 수준에서 거래되고 있어, 상장 당시 시장이 부여했던 성장 프리미엄이 2025년 적자 전환과 함께 상당 부분 반납된 상태다. 현재 주가는 주당순자산(BPS 4,735원)을 웃도는 구간에서 형성되어 있어 순자산 대비 일정한 프리미엄이 유지되고 있는데, 이는 AI 사업 전환 옵션 가치에 대한 시장의 잔존 기대를 반영한다. 손실이 지속되는 구간에서는 PER 산출이 불가능하며, 주당순자산(BPS 4,735원) 수준이 하방 가격 기준선으로 기능할 수 있다. 회사가 무배당 상태를 유지함에 따라 배당수익률은 0%로, 배당 기반의 투자 유인은 없는 상태다. 향후 분기별 손익 개선 속도와 AI 매출 가시화 시점이 밸류에이션 재평가 여부를 결정하는 핵심 변수로 작용할 전망이다.",
+  "en": "Uracle's shares are trading well below the IPO price of 21,000 KRW (August 2024), meaning the growth premium assigned at listing has largely been unwound alongside the shift to operating losses in 2025. The stock still trades above net asset value per share (BPS: 4,735 KRW), implying some residual premium reflecting the market's remaining expectation of value from the AI platform pivot. With losses ongoing, PER calculation is not currently possible; the BPS per share (4,735 KRW) therefore serves as a practical downside reference anchor. The company pays no dividend, so there is no income-based yield support. The pace of quarterly loss improvement and the timing of visible AI revenue contribution will be the primary drivers of any potential valuation re-rating."
+ },
+ "bull": [
+  {
+   "title": {
+    "ko": "모피어스 기반 구조적 해자 — 강한 고객 잠금과 안정적 유지보수 수익",
+    "en": "Structural Moat from Morpheus — Strong Client Lock-in and Recurring Maintenance Revenue"
+   },
+   "body": {
+    "ko": "1,000개 이상 기업에 구축된 모피어스 플랫폼은 높은 전환 비용과 OS 업데이트 의존성 덕분에 장기 유지보수 계약으로 이어지는 강한 고객 잠금 효과를 가진다. 현대자동차·LG·SK 등 대기업 그룹사 고객은 새로운 AI 서비스를 도입할 때도 기존 벤더를 우선 협상 대상으로 삼을 가능성이 높다. 이 반복 수익 기반은 AI 전환 투자 기간 동안 사업 존속의 안전판이자 향후 수익 레버리지의 토대가 된다.",
+    "en": "The Morpheus platform, embedded across 1,000+ enterprises, generates strong client lock-in through high switching costs and OS update dependency that translate into long-term maintenance contracts. Major conglomerate clients such as Hyundai Motor, LG, and SK are likely to treat Uracle as a preferred vendor when evaluating new AI service deployments. This recurring revenue base serves as a financial buffer during the AI transition and a foundation for operating leverage once growth resumes."
+   }
+  },
+  {
+   "title": {
+    "ko": "LG 엑사원 파트너십 기반 AI 파이프라인 — 그룹사·공공 수요 동시 공략",
+    "en": "AI Pipeline via LG EXAONE Partnership — Dual Targeting of Group Companies and Public Sector"
+   },
+   "body": {
+    "ko": "LG AI연구원의 엑사원은 저비용 고성능 LLM으로 해외에서도 경쟁력을 인정받고 있어 아테나와의 결합 시 기업 시장 공략력이 높아진다. 행정안전부 안전신문고 구축이 공공 레퍼런스로 확보됐고 LG 그룹사향 제안도 동시에 진행 중이다. 10건 이상의 POC 파이프라인이 상업 계약으로 전환될 경우 AI 매출의 가시적 성장이 가능해지며 고정비 레버리지 효과도 기대할 수 있다.",
+    "en": "LG AI Research's EXAONE is recognized as a cost-effective, high-performance LLM with competitive credentials internationally, enhancing Athena's competitiveness in the enterprise market when combined. A public-sector reference has been secured through the Ministry of Interior's Safety Report, and proposals are being directed at LG group companies in parallel. If the 10+ POC pipeline converts to commercial contracts, meaningful AI revenue growth and operating leverage become achievable."
+   }
+  },
+  {
+   "title": {
+    "ko": "2026년 1분기 손실 급감 — 비용 구조 정상화와 실적 반등의 단서",
+    "en": "Sharp Q1 2026 Loss Reduction — Evidence of Cost Normalization and Recovery Path"
+   },
+   "body": {
+    "ko": "2025년 4분기 영업손실 33.1억원에서 2026년 1분기 8.0억원으로의 급격한 개선은 단순 계절성을 초과하는 비용 구조 변화를 시사한다. 전년 동기(2025년 1분기 OP -9.8억원) 대비로도 손실이 줄어 YoY 개선 추세가 확인됐다. GPU 초기 투자가 2025년에 집중 집행됐다면, 향후 신규 자본 지출 부담이 경감되며 매출 성장의 이익 레버리지 효과가 높아질 수 있다.",
+    "en": "The sharp narrowing from a 3.31B KRW operating loss in Q4 2025 to 0.80B KRW in Q1 2026 suggests a structural improvement beyond seasonal effects. The loss also narrowed year-over-year from Q1 2025 (-0.98B KRW), confirming an emerging YoY recovery trend. If the bulk of GPU capital expenditure was front-loaded in 2025, incremental capex pressure should diminish, increasing the operating leverage effect as revenues recover."
+   }
+  }
+ ],
+ "bear": [
+  {
+   "title": {
+    "ko": "매출 역성장과 AI 매출 불투명 — 비용 통제만으로는 흑자 전환 불충분",
+    "en": "Revenue Contraction and Opaque AI Revenue — Cost Control Alone Insufficient for Breakeven"
+   },
+   "body": {
+    "ko": "2025년 매출은 전년 대비 8.0% 감소한 437.5억원으로, 비용 절감만으로 흑자 전환을 달성하기 어려운 구도다. AI 부문 단독 매출 규모와 POC 전환율이 외부에 공개되지 않아 진척 속도를 객관적으로 확인하기 어렵다. 키움증권의 2026년 흑자 전환 전망이 나온 이후 실제 2025년 결과가 예측치를 하회한 점은 향후 추정치 신뢰도에도 부담을 준다.",
+    "en": "Revenue fell 8.0% YoY to 43.75B KRW in 2025, making it structurally difficult to achieve breakeven through cost discipline alone. The AI segment's standalone revenue contribution and POC-to-contract conversion rates are not publicly disclosed, making it hard for external observers to objectively track progress. The fact that actual 2025 results came in below Kiwoom's December 2025 estimates adds uncertainty to the reliability of future projections."
+   }
+  },
+  {
+   "title": {
+    "ko": "재무 완충 여력 축소 — 부채비율 급등·현금흐름 악화",
+    "en": "Shrinking Financial Buffer — Debt Ratio Surge and Negative Operating Cash Flow"
+   },
+   "body": {
+    "ko": "2025년 자기자본이 1년 만에 약 90억원 감소해 193.5억원으로 줄었으며, 영업현금흐름도 -35.5억원으로 전환됐다. 분기당 수십억원의 손실이 2026년에도 이어진다면 자본 잠식 우려가 현실화될 수 있다. 외부 자금 조달 필요성이 부각될 경우 전환사채 발행이나 유상증자에 따른 주주가치 희석 가능성을 배제하기 어렵다.",
+    "en": "Equity contracted by approximately 9.0B KRW within a single year to 19.35B KRW, while operating cash flow turned negative at -3.55B KRW in 2025. If losses of several billion KRW per quarter persist into 2026, the risk of capital impairment could become real. Should the need for external financing arise, the potential for shareholder dilution via convertible bond issuance or a rights offering cannot be ruled out."
+   }
+  },
+  {
+   "title": {
+    "ko": "기업용 AI 시장 경쟁 심화 — 대형 플레이어와의 구조적 자원 격차",
+    "en": "Intensifying Enterprise AI Competition — Structural Resource Gap vs. Large Incumbents"
+   },
+   "body": {
+    "ko": "네이버·카카오·삼성SDS 등 대형 IT기업도 기업용 AI 플랫폼 시장을 적극 공략하고 있어 아테나가 차별화된 수주 경쟁력을 지속적으로 입증해야 하는 부담이 크다. 소형 소프트웨어 기업 특성상 대규모 고객의 보안·컴플라이언스 요건 충족을 위한 인증 취득과 투자도 경쟁의 진입 장벽으로 작용한다. 대형 클라우드 기업의 번들 가격 전략이 강화될 경우 기존 모피어스 유지보수 고객 기반이 잠식될 위험도 배제하기 어렵다.",
+    "en": "Large IT players such as Naver, Kakao, and Samsung SDS are aggressively targeting the enterprise AI market, requiring Athena to continuously demonstrate differentiated competitiveness to win contracts. As a small-cap software firm, Uracle also faces significant costs in obtaining security certifications and meeting enterprise compliance requirements — a structural barrier that consumes resources and extends sales cycles. If large cloud vendors intensify bundle pricing strategies, the risk of gradual erosion of Uracle's existing Morpheus maintenance client base also cannot be dismissed."
+   }
+  }
+ ],
+ "risks": [
+  {
+   "cat": {
+    "ko": "AI 투자 회수 지연 리스크",
+    "en": "Delayed AI Investment Recovery Risk"
+   },
+   "body": {
+    "ko": "AI 전환을 위해 집행된 인력·GPU 투자가 상업 매출로 이어지는 데 예상보다 오랜 시간이 걸릴 경우, 자기자본 추가 잠식 및 외부 자금 조달 필요성이 높아진다. 키움증권이 2026년 흑자 전환의 동시 충족 조건으로 기존 사업 회복과 AI 매출 큰 폭 성장을 제시했듯, 어느 한 축이 부진하더라도 전체 시나리오 지연이 불가피하다. POC에서 상업 수주로의 전환율이 기대 이하일 경우 실적 개선 시점이 추가로 연기될 수 있다.",
+    "en": "If the personnel and GPU investments made for the AI pivot take longer than expected to generate commercial revenue, the risk of further equity impairment and the need for external capital increases materially. As Kiwoom Securities stipulated, both a core business recovery and significant AI revenue growth must occur simultaneously for a 2026 turnaround — underperformance in either pillar would inevitably delay the overall scenario. Lower-than-expected POC-to-contract conversion rates could push the breakeven timeline further out."
+   }
+  },
+  {
+   "cat": {
+    "ko": "B2G 매출 집중·지연 리스크",
+    "en": "B2G Revenue Concentration and Delay Risk"
+   },
+   "body": {
+    "ko": "2025년 실적 악화의 주요 원인 중 하나가 정부·공공기관향(B2G) 매출 지연이었으며, 이 구조가 반복될 경우 연간 실적 변동성이 매우 클 수밖에 없다. 정부 예산 삭감, 조달 프로세스 지연, 우선순위 변경 등은 회사가 통제하기 어려운 외부 변수로 작용한다. 공공 부문 AI 사업 레퍼런스를 확대하는 전략이 동시에 B2G 매출 의존도를 높이는 방향으로 작용할 경우 리스크가 심화될 수 있다.",
+    "en": "One of the primary drivers of 2025's underperformance was delays in B2G (business-to-government) revenue, and if this pattern repeats, annual earnings volatility will remain high. Government budget cuts, procurement process delays, and changes in project priorities represent external variables beyond Uracle's control. If the strategy of expanding public-sector AI references simultaneously increases B2G revenue concentration, this structural risk could intensify."
+   }
+  },
+  {
+   "cat": {
+    "ko": "경쟁 심화와 가격 압박 리스크",
+    "en": "Competitive Pressure and Pricing Risk"
+   },
+   "body": {
+    "ko": "기업용 AI 솔루션 시장이 빠르게 팽창하면서 저가 경쟁 가능성도 함께 높아지고 있다. 대형 클라우드·IT 기업이 번들 가격 전략으로 유라클의 핵심 고객에 접근할 경우, 모피어스 유지보수 매출의 점진적 잠식과 신규 AI 수주 단가 하락 압력이 동시에 발생할 수 있다. 특히 소형 기업 특성상 영업·마케팅 자원이 한정되어 있어 대형 경쟁사 대비 시장 가시성 확보가 지속적인 과제로 남는다.",
+    "en": "As the enterprise AI solution market expands rapidly, the risk of price-based competition is rising in parallel. If large cloud and IT vendors leverage bundle pricing to approach Uracle's key clients, both gradual erosion of Morpheus maintenance revenue and downward unit price pressure on new AI contracts could materialize simultaneously. As a small-cap firm with limited sales and marketing resources, maintaining market visibility against well-resourced incumbents remains a persistent structural challenge."
+   }
+  }
+ ],
+ "checkpoints": [
+  {
+   "when": {
+    "ko": "2026년 8월 중순 (2분기 실적 발표)",
+    "en": "Mid-August 2026 (Q2 Earnings Release)"
+   },
+   "what": {
+    "ko": "2026년 2분기 영업손익 및 매출 추이를 확인한다. 전년 동기(2025년 2분기 OP -12.7억원) 대비 손실 축소 여부와 AI 부문의 매출 기여 가시화 정도가 연간 흑자 전환 시나리오 실현 가능성을 가늠하는 핵심 지표다.",
+    "en": "Monitor Q2 2026 operating income and revenue trends. Whether losses narrow year-over-year from Q2 2025 (-1.27B KRW) and the degree to which AI segment revenue becomes visible are the primary indicators for assessing the feasibility of a full-year 2026 recovery."
+   }
+  },
+  {
+   "when": {
+    "ko": "2026년 하반기 중 (아테나 AI 상업 수주 공시·IR 발표)",
+    "en": "H2 2026 (Athena AI Commercial Contract Disclosure or IR Event)"
+   },
+   "what": {
+    "ko": "POC 단계를 넘어 정식 상업 계약으로 전환된 아테나 AI 수주 건수 및 규모를 추적한다. LG 엑사원 결합 제품의 그룹사 납품 계약 체결 여부, 그리고 안전신문고 이후 추가 공공 레퍼런스 확보 여부가 AI 사업 모멘텀의 실질적 진척을 판단하는 잣대가 된다.",
+    "en": "Track the number and scale of Athena AI contracts that advance from POC to commercial stage. Whether the LG EXAONE-integrated product secures formal LG group-company contracts, and whether additional public-sector references beyond the Safety Report system are won, will be key measures of substantive AI business progress."
+   }
+  },
+  {
+   "when": {
+    "ko": "2026년 11월 중순 (3분기 실적 발표)",
+    "en": "Mid-November 2026 (Q3 Earnings Release)"
+   },
+   "what": {
+    "ko": "전통적으로 연간 실적에서 비중이 큰 3분기 결과를 통해 연간 흑자 전환 달성 가능성을 가늠한다. 누적 9개월 영업손익이 소폭 흑자 내지 최소화 수준을 달성한다면 연간 흑자 전환 시나리오의 현실성이 높아진다.",
+    "en": "Q3 has historically carried significant seasonal weight — the cumulative 9-month operating result will serve as a key gauge for whether full-year profitability is achievable. A near-breakeven or narrowly positive cumulative figure would materially increase confidence in the full-year recovery scenario."
+   }
+  },
+  {
+   "when": {
+    "ko": "수시 공시 모니터링 (자금 조달·유상증자·CB 발행 등)",
+    "en": "Ongoing Monitoring (Capital Raises, Rights Offerings, CB Issuance)"
+   },
+   "what": {
+    "ko": "자기자본이 급감한 상황에서 외부 자금 조달 가능성을 상시 모니터링해야 한다. 전환사채(CB) 발행, 유상증자, 담보대출 등 자금 조달 관련 공시는 재무 건전성 변화와 주주가치 희석 리스크를 사전에 파악하는 중요한 시그널이다.",
+    "en": "Given the significant equity erosion, continuous monitoring of any capital-raising disclosures is warranted. Announcements of convertible bond (CB) issuances, rights offerings, or secured loans serve as early signals of changes in financial health and potential shareholder dilution risk."
+   }
+  },
+  {
+   "when": {
+    "ko": "2026년 4분기 내 (B2G 예산 집행 사이클)",
+    "en": "Q4 2026 (B2G Government Budget Execution Cycle)"
+   },
+   "what": {
+    "ko": "정부·공공기관의 연간 IT 예산은 통상 4분기에 집중 집행된다. 2025년 4분기에 매출이 78.1억원으로 급감했던 선례를 감안할 때, 2026년 4분기 B2G 수주 및 매출 회복 여부가 연간 최종 실적을 결정하는 핵심 변수가 될 것이다.",
+    "en": "Government and public-sector IT budgets are typically concentrated in Q4. Given the sharp Q4 2025 revenue drop to 7.81B KRW, the recovery of B2G contract wins and revenue in Q4 2026 will be a decisive variable for the final full-year 2026 outcome."
+   }
+  }
+ ],
+ "verdict": {
+  "body": {
+   "ko": "유라클은 국내 모바일 플랫폼 1위의 안정적 기반 위에 기업용 AI 플랫폼 '아테나'를 새로운 성장축으로 구축 중인 소형 IT 기업으로, 2025년에는 AI 전환 투자와 B2G 매출 지연이 맞물려 영업손실 67.7억원과 자기자본 90억원가량 감소라는 큰 폭의 재무적 충격을 받았다. 2026년 1분기에는 영업손실이 8.0억원으로 전분기 대비 큰 폭 축소되며 비용 구조 정상화의 초기 신호가 포착됐으나, 아직 적자 단계를 벗어나지는 못했다. LG AI연구원 엑사원 파트너십, 공공 부문 레퍼런스, 10건 이상의 POC 파이프라인 등이 AI 사업 전환의 근거로 제시되나, 상업 수주 전환 속도와 규모는 아직 외부에서 검증되지 않은 핵심 불확실성으로 남아 있다. 재무 측면에서는 부채비율 89.7% 상승과 영업현금흐름 마이너스 전환으로 완충 여력이 제한적이며, 연속 적자 시 추가 자금 조달 필요성이 현실화될 수 있다. 흑자 전환을 위해서는 기존 모바일 사업의 안정적 회복과 AI 매출의 실질적 기여가 동시에 이루어져야 하며, 2026년 하반기 실적 발표 및 AI 수주 공시가 방향을 가늠하는 핵심 이정표가 될 것이다.",
+   "en": "Uracle is a small-cap Korean IT company building its AI platform 'Athena' as a second growth engine atop a stable, market-leading mobile platform business; the 2025 pivot year brought a painful 6.77B KRW operating loss and approximately 9.0B KRW in equity erosion from the combined impact of heavy AI investment and B2G revenue delays. The sharp Q1 2026 loss narrowing to 0.80B KRW provided an early signal of cost structure normalization, but the company has not yet exited loss territory. The LG AI Research (EXAONE) partnership, public-sector references, and a 10+ POC pipeline provide a credible basis for the AI transition narrative, but the pace and scale of POC-to-commercial conversion remain the central unverified variable. Financially, the debt ratio has risen to 89.7% and operating cash flow has turned negative, leaving limited buffer if losses persist; the potential need for external financing cannot be ruled out. For profitability to recover, both a meaningful rebound in the core mobile business and material AI revenue contribution must materialize concurrently — the H2 2026 earnings releases and AI commercial contract disclosures will serve as the key milestones for assessing the company's trajectory."
+  }
+ },
+ "sources": [
+  "https://www.butler.works/ko/companies/00407294",
+  "https://comp.fnguide.com/SVO2/ASP/SVD_Finance.asp?pGB=1&gicode=A088340&cID=&MenuYn=Y&ReportGB=B&NewMenuID=103&stkGb=701",
+  "https://comp.fnguide.com/SVO2/ASP/SVD_Main.asp?pGB=1&gicode=A088340&cID=&MenuYn=Y&ReportGB=D&NewMenuID=Y&stkGb=701",
+  "https://m.thinkpool.com/compDiscuss/cont/1018197",
+  "https://m.thinkpool.com/compDiscuss/cont/1017583",
+  "https://www.valueline.co.kr/finance/summary/088340",
+  "https://m.irgo.co.kr/IR-COMP/088340",
+  "https://littlebproject.com/stock/088340",
+  "https://comp.fnguide.com/SVO2/asp/SVD_Invest.asp?pGB=1&gicode=A088340&cID=&MenuYn=Y&ReportGB=D&NewMenuID=105&stkGb=701",
+  "https://www.investing.com/equities/uracle",
+  "https://comp.fnguide.com/SVO2/ASP/SVD_Main.asp?gicode=A088340",
+  "https://uracle.co.kr/",
+  "https://comp.fnguide.com/SVO2/asp/SVD_Invest.asp?pGB=1&gicode=A088340&cID=&MenuYn=Y&ReportGB=B&NewMenuID=105&stkGb=701",
+  "https://uracle.co.kr/pr-ir/pr/",
+  "https://uracle.co.kr/sr_ito.html",
+  "https://www.newswell.co.kr/news/articleView.html?idxno=10133",
+  "https://www.etoday.co.kr/news/view/2537744",
+  "https://alphasquare.co.kr/home/theme-factor?theme-id=67"
+ ],
+ "v": 2,
+ "model": "claude-sonnet-4-6",
+ "ticker": "088340",
+ "name": "유라클",
+ "name_en": "URACLE. Co. Ltd",
+ "sector": "IT·소프트웨어",
+ "categories": [
+  "IT·소프트웨어"
+ ],
+ "market": "코스닥",
+ "reportDate": "2026-06-19",
+ "reportTs": "2026-06-19 03:37",
+ "dataDate": "20260618",
+ "quant": {
+  "asOf": "2026-06-18",
+  "fs_basis": "연결(CFS) · DART 공시 확정치 · 지배주주 기준 순이익",
+  "annual": [
+   {
+    "year": 2025,
+    "rev": 43754173452,
+    "op": -6774588931,
+    "np": -6832926692,
+    "np_owner": -6832926692,
+    "equity": 19346779615,
+    "equity_owner": 19346779615,
+    "liab": 17363597391,
+    "cfo": -3553018854,
+    "eps_basic": -1740,
+    "opm": -15.5,
+    "roe": -35.3,
+    "debt_ratio": 89.7
+   },
+   {
+    "year": 2024,
+    "rev": 47577265822,
+    "op": 1966275079,
+    "np": 2197652437,
+    "np_owner": 2197652437,
+    "equity": 28353431628,
+    "equity_owner": 28353431628,
+    "liab": 12587474155,
+    "cfo": 3193156839,
+    "eps_basic": 566,
+    "opm": 4.1,
+    "roe": 7.8,
+    "debt_ratio": 44.4
+   }
+  ],
+  "quarterly": [
+   {
+    "q": "2025Q1",
+    "rev": 11634899301,
+    "op": -980911463,
+    "np_owner": -859285692
+   },
+   {
+    "q": "2025Q2",
+    "rev": 11626423072,
+    "op": -1271670521,
+    "np_owner": -1281382036
+   },
+   {
+    "q": "2025Q3",
+    "rev": 12685048536,
+    "op": -1207233901,
+    "np_owner": -1232482284
+   },
+   {
+    "q": "2025Q4",
+    "rev": 7807802543,
+    "op": -3314773046,
+    "np_owner": -3459776680
+   },
+   {
+    "q": "2026Q1",
+    "rev": 8684459379,
+    "op": -798990866,
+    "np_owner": -755254542
+   }
+  ],
+  "valuation": {
+   "price": 8190,
+   "mcap": 0.0357,
+   "shares": 4364368,
+   "total_shares": 4364368,
+   "wavg_shares": 3926969,
+   "per": null,
+   "eps": -1711,
+   "pbr": 1.73,
+   "bps": 4735,
+   "roe_ttm": -30.9,
+   "ttm_window": "2025Q2~2026Q1",
+   "ttm_np_owner": -6728895542,
+   "pbr_krx": 1.66,
+   "bps_krx": 4922.0,
+   "basis": "PER·EPS·PBR·BPS 모두 자체 산출(네이버·토스와 동일 방식) · 배당은 DART 공시 주당현금배당금(보완:KRX) ÷ 현재가",
+   "dps": 0.0,
+   "div": 0.0
+  }
+ }
+}
