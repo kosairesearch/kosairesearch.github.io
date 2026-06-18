@@ -1,0 +1,356 @@
+{
+ "title": {
+  "ko": "흑자 복귀 후 AI·N2SF 수혜 지속성이 관건",
+  "en": "Back in the Black: AI and N2SF Tailwinds Under Scrutiny"
+ },
+ "lead": {
+  "ko": "2025년 매출 53% 급증·영업이익 흑자전환으로 3년 만에 수익성을 회복했으나, 2026년 1분기 확대된 영업적자와 내부 횡령 사건의 후처리가 성장 지속성 검증의 핵심 변수로 떠올랐다.",
+  "en": "SoftCamp recovered profitability in 2025 with revenue surging 53% and operating income turning positive for the first time in three years, but a wider Q1 2026 operating loss and the unresolved aftermath of a 2025 internal embezzlement incident have emerged as key variables testing the durability of this turnaround."
+ },
+ "keypoints": [
+  {
+   "ko": "2025년 매출 257.2억 원(+52.3% YoY)·영업이익 29.8억 원 흑자전환 — 2023~24년 연속 영업적자 터널 탈출",
+   "en": "FY2025 revenue of KRW 25.72 billion (+52.3% YoY) and operating income of KRW 2.98 billion marked an exit from two consecutive years of operating losses in 2023–2024."
+  },
+  {
+   "ko": "국가 망 보안체계(N2SF) 전환 정책이 제로트러스트·문서보안 수요를 구조적으로 확대 — KISA의 55억 원 N2SF 사업과 SHIELD 포트폴리오 직접 연계",
+   "en": "The government-mandated N2SF shift to data-centric zero-trust security structurally expands demand for SoftCamp's SHIELD suite, with KISA committing KRW 5.5 billion for N2SF adoption projects as a direct near-term catalyst."
+  },
+  {
+   "ko": "2026년 1분기 영업적자 –11.3억 원(전년 동기 –6.0억 원 대비 확대) — 강한 계절성 속 비용 선행 증가가 연간 이익 가시성을 제한",
+   "en": "Q1 2026 operating loss widened to KRW –1.13 billion vs. KRW –0.60 billion in Q1 2025, reflecting elevated cost loading ahead of the heavily H2-weighted revenue cycle and limiting near-term earnings visibility."
+  },
+  {
+   "ko": "2025년 6월 재무 직원 횡령(약 9.3억 원, 자기자본 대비 약 8%) 공시·거래 정지 후 복귀 — 내부통제 개선 이행 지속 모니터링 요구",
+   "en": "A June 2025 disclosure of approximately KRW 927 million in employee embezzlement (≈8% of equity) triggered a trading suspension; trading has since resumed, but governance remediation progress remains a key monitoring item."
+  },
+  {
+   "ko": "'AX 보안 인에이블러' 전략 하 일본 IT Week Spring 2026 참가 및 솔루션 데이 2025 개최 — AI 보안 시장 선점 행보 가속화",
+   "en": "Participation in Japan IT Week Spring 2026 and hosting of Solution Day 2025 at Fairmont Seoul signal an accelerating push toward the AI Security Enabler positioning in both domestic and Japan markets."
+  }
+ ],
+ "business": {
+  "ko": "소프트캠프는 1999년 컴퓨터공학 박사 출신 배환국 대표가 창업한 국내 1세대 사이버보안 전문기업으로, 2019년 코스닥에 이전 상장했다. 제품 포트폴리오는 전통적 캐시카우인 문서보안(DRM)과 신성장 축인 제로트러스트 보안의 두 축으로 구성되며, 총 8종 이상의 솔루션을 시장에 공급한다. 문서보안 영역에서는 엔드포인트 문서보안 오케스트레이션 제품 Document Security 6, 클라우드 환경의 SHIELDRM, 클라우드 스토리지 보안 브로커 SHIELDrive, 등급 관리 솔루션 SHIELDInfo가 핵심이다. 제로트러스트 영역에서는 IAP·RBI 기술을 결합한 보안 원격접속 SHIELDGate, 통합 계정 관리 SHIELD ID, AI 기반 소프트웨어 공급망 취약점 분석 XSCAN 등 SHIELD 계열 솔루션을 운영한다. 주요 고객은 KB·신한·하나 등 금융지주사와 KT그룹·현대기아차·SK·신세계 등 국내 대형 기업·기관으로, B2B 라이선스·구독 수익 구조를 갖는다. 해외에서는 일본의 ALSI·NEC와 파트너십을 통해 문서보안 시장에 진출해 있으며, 2010년대 초 일본 IRM 시장 점유율 1위를 기록한 바 있다. 국내 DRM 시장의 직접 경쟁사는 파수와 마크애니이며, 제로트러스트 공간에서는 SGA솔루션즈·프라이빗테크놀로지·지니언스 등과 경쟁한다. 2021년에는 엔키와 합작법인 레드펜소프트를 설립해 소프트웨어 공급망 보안 서비스를 제공하고 있으며, 2025년 말 기준 임직원 수는 약 147명이다.",
+  "en": "SoftCamp is a first-generation Korean cybersecurity company founded in 1999 by computer science PhD Bae Hwan-guk, transferred to KOSDAQ in December 2019. Its portfolio is organized around two strategic axes — DRM (the established cashcow) and zero trust security (the growth engine) — with over eight distinct solutions in market. The DRM axis includes Document Security 6 (endpoint DRM orchestration), cloud-native SHIELDRM, cloud storage security broker SHIELDrive, and classification management solution SHIELDInfo. The zero trust axis features SHIELDGate (combining IAP and RBI technology for secure remote access), integrated identity management SHIELD ID, and AI-powered supply chain vulnerability scanner XSCAN, among other SHIELD-branded services. Major clients include KB, Shinhan, and Hana financial groups, KT Group, Hyundai-Kia Automotive, SK Group, and Shinsegae, supporting a B2B license and subscription revenue model. In Japan, the company operates via ALSI and NEC partnerships and briefly held the top IRM market-share position in the early 2010s. Domestic DRM competitors include Fasoo and MarkAny; in the zero trust space, SGA Solutions, Private Technology, and Genians are key rivals. In 2021, SoftCamp co-founded Redpen Soft with Enki for software supply-chain security services, and headcount stood at approximately 147 employees as of late 2025."
+ },
+ "earnings": {
+  "ko": "2022년 매출 190.2억 원, 영업이익 13.4억 원(OPM 7.1%)으로 소폭 흑자를 유지했으나, 2023년에는 DRM 핵심 시장 포화와 신사업 투자 비용 증가가 맞물리며 매출이 184.9억 원으로 줄고 영업적자 –25.7억 원(OPM –13.9%), 지배주주 귀속 순손실 –58.2억 원까지 급락했다. 2024년에는 매출이 168.9억 원으로 추가 감소(–8.6% YoY)했으나, 비용 통제 효과로 영업적자가 –18.3억 원으로 축소됐고 지배주주 순이익은 0.3억 원으로 손익분기점에 근접했다. 2025년은 명확한 변곡점으로, 매출이 257.2억 원(+52.3% YoY)으로 급증했고 영업이익 29.8억 원(OPM 11.6%), 지배주주 귀속 순이익 36.9억 원을 기록했다. 회사 측은 클라우드 전환 가속화와 기업 AI 도입 확대에 따른 보안 투자 증가를 실적 개선의 주요 배경으로 밝혔다. 분기별 수익 구조의 계절성이 뚜렷한데, 2025년 1분기 영업적자 –6.0억 원·2분기 +1.5억 원·3분기 +7.7억 원·4분기 +26.6억 원으로 4분기 집중도가 심하고, 4분기 매출(99.8억 원)이 연간의 약 39%를 차지했다. 2026년 1분기 매출은 45.8억 원으로 전년 동기 대비 14.1% 증가했으나, 영업적자는 –11.3억 원으로 전년 동기(–6.0억 원) 대비 크게 확대됐고 지배주주 귀속 순손실도 –12.1억 원에 달해 비용 선행 부담이 전년보다 강화됐음을 시사한다. 재무 구조 측면에서 부채비율은 2024년 237.5%에서 2025년 173.3%로 개선됐으나 여전히 높은 수준이며, 영업현금흐름은 2024년 35.9억 원에서 2025년 25.1억 원으로 감소해 현금 창출 효율성 추이도 주목할 필요가 있다.",
+  "en": "In 2022, SoftCamp generated revenue of KRW 19.02 billion and operating income of KRW 1.34 billion (OPM 7.1%), maintaining modest profitability. By 2023, DRM market saturation combined with elevated new-segment investment costs pushed revenue down to KRW 18.49 billion, with operating loss deepening to KRW –2.57 billion (OPM –13.9%) and controlling-interest net loss reaching KRW –5.82 billion. In 2024, revenue contracted further to KRW 16.89 billion (–8.6% YoY), though cost management narrowed the operating loss to KRW –1.83 billion and controlling-interest net income nearly broke even at KRW 33 million. The 2025 fiscal year was a clear inflection: revenue surged to KRW 25.72 billion (+52.3%), operating income recovered to KRW 2.98 billion (OPM 11.6%), and controlling-interest net profit reached KRW 3.69 billion. The company cited accelerated enterprise cloud migration and rising AI-driven security investment as the key demand drivers. Pronounced seasonal skew toward H2 is evident: in 2025, operating income progressed from KRW –0.60 billion in Q1 to +KRW 0.15 billion in Q2, +KRW 0.77 billion in Q3, and +KRW 2.66 billion in Q4, with Q4 revenue of KRW 9.98 billion comprising roughly 39% of the full year. In Q1 2026, revenue grew 14.1% YoY to KRW 4.58 billion, but the operating loss widened to KRW –1.13 billion vs. KRW –0.60 billion in Q1 2025, and the controlling-interest net loss reached KRW –1.21 billion, signaling heavier cost front-loading than the prior year. The debt ratio improved from 237.5% in 2024 to 173.3% in 2025, though it remains elevated; operating cash flow declined from KRW 3.59 billion in 2024 to KRW 2.51 billion in 2025 despite the profit turnaround, warranting attention to cash conversion trends."
+ },
+ "industry": {
+  "ko": "국내 사이버보안 시장은 국가정보원 주도의 '국가 망 보안체계(N2SF)' 전환이라는 대형 제도적 변화를 맞고 있다. N2SF는 기존 획일적 망 분리 정책에서 탈피해 정보를 기밀(C)·민감(S)·공개(O) 등급으로 분류하고 차등 보안 통제를 적용하는 데이터 중심 프레임워크로, 2025년 9월 가이드라인 1.0이 공개됐다. 한국인터넷진흥원(KISA)은 N2SF 도입·실증 사업에 55억 원 규모 예산을 편성해 정부 주도 수요 촉매가 구체화되고 있다. 업계 전문가들은 공공 영역의 N2SF와 민간 영역의 제로트러스트가 동일한 보안 철학을 공유하는 상호 보완적 두 축이라 평가하며, 이중 수요가 2026년 이후 시장 성장을 견인할 것으로 본다. 민간 시장에서는 생성형 AI·SaaS 확산이 경계 기반 보안의 한계를 드러내며 제로트러스트 전환 수요를 동반 창출하고 있다. 경쟁 구도 측면에서는 SGA솔루션즈·프라이빗테크놀로지·지니언스 등 전문 업체와 안랩·SK쉴더스 등 대형 보안사가 N2SF 레퍼런스 확보를 위한 공공 실증 사업을 두고 경쟁 중이다. 가트너는 RBI(원격 브라우저 격리) 기술을 웹 기반 공격 방어의 가장 효과적 수단 중 하나로 평가했으며, 이는 소프트캠프 SHIELDGate의 핵심 기술이다. 일본에서도 기업 AI 전환 가속과 함께 AI 보안 수요가 가시화되어, 2026년 4월 Japan IT Week Spring에 약 4만 명 이상의 IT 의사결정권자가 방문하는 등 시장 관심이 고조되고 있다.",
+  "en": "The Korean cybersecurity market is undergoing a landmark structural transition driven by the government-mandated N2SF, which shifts away from uniform network separation toward a data-centric model classifying government information as Classified (C), Sensitive (S), or Open (O), with differentiated security controls; N2SF Guideline 1.0 was published in September 2025. KISA has committed KRW 5.5 billion for N2SF adoption and demonstration projects, providing concrete near-term procurement stimulus. Industry experts describe public-sector N2SF and private-sector zero trust as complementary pillars of the same security philosophy, with their combined demand expected to drive market growth through 2026 and beyond. In the private sector, generative AI and SaaS proliferation are exposing the limits of perimeter security, concurrently expanding zero-trust migration demand. Competitive intensity is high, with specialist firms SGA Solutions, Private Technology, and Genians competing alongside large integrators AhnLab and SK Shieldus for N2SF public reference projects. From a global product validation standpoint, Gartner has assessed Remote Browser Isolation (RBI) — the core technology powering SoftCamp's SHIELDGate — as one of the most effective defenses against web-based attacks. In Japan, enterprise AI adoption is driving visible AI security demand, as illustrated by over 40,000 IT decision-makers attending Japan IT Week Spring 2026 in April."
+ },
+ "outlook": {
+  "ko": "2026년 소프트캠프의 핵심 전략 방향은 N2SF 수요 대응과 'AX 보안 인에이블러' 시장 선점이다. N2SF 관련 공공 조달은 정부 예산 집행 주기상 하반기 집중이 예상되며, SHIELD ID·SHIELDGate·문서보안 오케스트레이션 솔루션은 N2SF 보안통제 항목 중 권한·인증·분리격리 영역에 직접 대응한다. 배환국 대표는 2026년 4월 일본 Japan IT Week Spring에 단독 부스를 운영해 생성형 AI 보안 시나리오를 라이브 데모로 공개하고 일본 시장 공략 본격화를 밝혔다. 2025년 6월에는 서울 여의도 페어몬트 호텔에서 '솔루션 데이 2025'를 개최해 N2SF 대응 전략, AI·SaaS 보안 시나리오, 고객사 도입 사례를 공유하며 영업 파이프라인을 강화했다. 금융권 SaaS 도입 확대와 망분리 완화 흐름도 잠재적 성장 기회로, 혁신금융서비스 규제 샌드박스 및 AI SaaS 사용 활성화와 함께 SHIELDRM·SHIELDGate 수요가 동반 확대될 여지가 있다. 2026년 1분기 영업적자 확대가 시사하듯 비용 기조가 전년보다 높아진 상황으로, 하반기 N2SF·AI 보안 수주가 비용을 충분히 흡수할 수 있는지 여부가 연간 수익성의 핵심 변수다. 2025년 횡령 사건 이후 내부통제 개선 작업이 진행 중임을 회사 측이 명시했으며, 그 이행 여부가 거버넌스 관련 투자자 신뢰 회복의 선결 조건으로 남아 있다.",
+  "en": "SoftCamp's 2026 strategic priorities center on capturing N2SF-driven public sector demand and establishing a leading position as an AX Security Enabler. Public procurement under N2SF is expected to concentrate in H2 2026 following government fiscal cycles, with SHIELD ID, SHIELDGate, and the document security orchestration suite directly addressing N2SF's authorization, authentication, and separation/isolation control requirements. CEO Bae Hwan-guk publicly committed to accelerating Japan market expansion following SoftCamp's standalone booth at Japan IT Week Spring 2026, where live AI security scenarios were demonstrated to prospective clients. The 'Solution Day 2025' at Fairmont Seoul in June 2025 showcased N2SF compliance strategies, AI-SaaS security scenarios, and customer case studies to deepen the domestic sales pipeline. Relaxation of financial-sector network separation rules and expanding enterprise SaaS adoption in banking and insurance represent additional demand opportunities for SHIELDRM and SHIELDGate. The elevated Q1 2026 operating loss signals a higher cost base vs. 2025, making H2 N2SF and AI security order conversion the critical variable for full-year profitability. The company has stated that internal control improvements are underway following the 2025 embezzlement disclosure; demonstrable progress on those measures is a prerequisite for restoring investor governance confidence."
+ },
+ "valuation_comment": {
+  "ko": "현재 주가는 주당순자산(BPS 2,849원)을 상회하는 수준에 형성되어, 시장이 장부가치 대비 일정한 프리미엄을 반영 중임을 나타낸다. 배당은 지급되지 않아(DPS 0원) 수익 환원 측면에서 업종 내 배당 지급 기업 대비 불리한 위치에 있다. 2023~2024년 연속 영업적자 구간을 거쳐 2025년 흑자 전환에 성공했으나, 2026년 1분기 손실 확대로 이익 기반 밸류에이션의 안정성이 아직 확인 단계에 있다. 과거 보안·재택근무 테마가 부각됐던 구간에서는 순자산 대비 프리미엄이 크게 확대된 반면, 실적 부진 구간에서는 순자산 수준으로 수렴하는 패턴을 보였다. 2025년 횡령 공시·거래 정지 이력은 거버넌스 심사를 중시하는 일부 기관 투자자에게 할인 요인으로 작용할 수 있으며, 내부통제 개선의 실질적 이행 여부가 밸류에이션 재평가의 선결 조건 중 하나다.",
+  "en": "The stock currently trades above the stated book value per share (BPS: KRW 2,849), indicating the market assigns a moderate premium to net asset value. With no dividends paid (DPS: KRW 0), the stock offers no yield return, placing it at a disadvantage relative to dividend-paying sector peers. Following two consecutive years of operating losses, the company returned to profitability in 2025, but the widened Q1 2026 operating loss means earnings-based valuation stability has not yet been firmly reestablished. Historically, the stock commanded significant premiums to book value during cybersecurity and remote-work theme cycles, while converging toward net asset levels during loss periods — the current positioning sits between those historical ranges. The 2025 embezzlement disclosure and associated trading suspension may continue to function as a governance discount factor for ESG-sensitive institutional investors, and demonstrable progress on internal control remediation is a key prerequisite for a sustained valuation re-rating."
+ },
+ "bull": [
+  {
+   "title": {
+    "ko": "N2SF 정책 전환의 직접 수혜 포지셔닝",
+    "en": "Direct Beneficiary Positioning in the N2SF Policy Transition"
+   },
+   "body": {
+    "ko": "국정원 주도의 N2SF는 획일적 망 분리에서 데이터 중심 보안으로의 전환을 강제하며, 문서 등급 관리·접근통제·원격 격리 등 소프트캠프의 핵심 제품 카테고리에 구조적 수요를 창출한다. KISA의 55억 원 규모 N2SF 도입·실증 예산은 레퍼런스 확보의 구체적 기회이며, 공공기관 도입을 시작점으로 금융·민간으로 확산하는 연쇄 수요가 중기적으로 기대된다. 소프트캠프는 SHIELD ID·SHIELDGate·문서보안 오케스트레이션 솔루션을 N2SF 보안통제 항목에 직접 매핑하며 영업·마케팅 활동을 전개하고 있어, 정책 수혜를 수주로 전환할 실질적 준비가 되어 있다.",
+    "en": "N2SF mandates a structural shift from uniform network separation to data-centric security, generating direct demand for document classification, access control, and remote isolation — the core product categories in SoftCamp's portfolio. KISA's KRW 5.5 billion adoption and demonstration budget provides concrete reference-building opportunities, with cascading demand from public agencies to financial institutions and private enterprises expected over the medium term. SoftCamp is actively mapping its SHIELD ID, SHIELDGate, and document security orchestration suite against N2SF's security control domains, demonstrating readiness to convert policy tailwinds into contract wins."
+   }
+  },
+  {
+   "title": {
+    "ko": "AI 보안 시장의 초기 선점 전략",
+    "en": "Early-Mover Positioning in AI Security"
+   },
+   "body": {
+    "ko": "기업의 AI 전환(AX) 확산과 함께 생성형 AI 사용 중 발생하는 문서 유출·악성코드 유입 등 신규 보안 위협이 부상하고 있다. 소프트캠프는 RBI 기술 기반 브라우저 격리·문서 AI 안전 변환·ZTNA 접근통제를 결합한 'AX 보안 인에이블러' 포지셔닝을 2025년부터 선제적으로 추진하며 일본 IT Week Spring 2026에서 라이브 데모로 공개했다. 가트너가 RBI를 웹 기반 공격 방어의 가장 효과적 기술 중 하나로 평가한 점은 SHIELDGate의 기술 차별성을 외부에서 확인하는 근거로 작용한다.",
+    "en": "The enterprise shift toward AI transformation is spawning new security threats — document exfiltration and malware injection via generative AI tools — that perimeter-based defenses cannot address. SoftCamp proactively launched its 'AX Security Enabler' positioning in 2025, combining RBI-based browser isolation, secure document-to-AI conversion, and ZTNA access control, publicly demonstrated via live scenarios at Japan IT Week Spring 2026. Gartner's recognition of RBI as one of the most effective web-attack defenses provides important external validation of SHIELDGate's technical differentiation."
+   }
+  },
+  {
+   "title": {
+    "ko": "일본 시장 재활성화 잠재력",
+    "en": "Potential for Japan Market Reactivation"
+   },
+   "body": {
+    "ko": "소프트캠프는 2010년대 초 일본 IRM 시장 점유율 1위를 기록한 경험을 토대로 현재도 ALSI·NEC와의 파트너십을 유지하고 있다. 2026년 4월 Japan IT Week Spring에 단독 부스를 운영하며 일본 기업들의 AI 보안 수요를 직접 확인했고, 배환국 대표는 후속 협의를 통해 일본 시장 공략을 본격화하겠다고 밝혔다. 일본의 AI 보안 수요가 계약으로 전환될 경우, 국내 4분기 집중 계절성 리스크를 분산하는 지리적 다각화 효과와 추가 매출 성장을 기대할 수 있다.",
+    "en": "SoftCamp retains its established ALSI and NEC channel partnerships in Japan, backed by a track record that included the top IRM market share in the early 2010s. The company operated a standalone booth at Japan IT Week Spring 2026 and CEO Bae confirmed plans to pursue follow-on commercial engagements based on confirmed AI security demand. Successful monetization of Japan's emerging AI security market through existing channel partners would provide meaningful geographic revenue diversification and reduce dependence on the highly concentrated domestic Q4 earnings cycle."
+   }
+  }
+ ],
+ "bear": [
+  {
+   "title": {
+    "ko": "지속되는 상반기 영업적자와 극단적 계절성",
+    "en": "Persistent H1 Operating Losses and Extreme Earnings Seasonality"
+   },
+   "body": {
+    "ko": "소프트캠프의 영업 구조는 공공기관 예산 집행 주기와 맞물려 연간 매출의 약 39%가 4분기에 집중되는 극단적 계절성을 보인다. 2026년 1분기 영업적자는 –11.3억 원으로 전년 동기(–6.0억 원) 대비 확대됐고, 지배주주 귀속 순손실도 –12.1억 원에 달해 비용 기조 상승이 확인됐다. 하반기 수주 및 납품이 지연되거나 예상에 못 미칠 경우, 연간 수익성이 빠르게 훼손될 수 있는 구조다.",
+    "en": "SoftCamp's revenue is heavily weighted toward Q4, with roughly 39% of annual revenue concentrated in that quarter due to public-sector budget execution timing. The Q1 2026 operating loss widened to KRW –1.13 billion from KRW –0.60 billion in Q1 2025, with the controlling-interest net loss reaching KRW –1.21 billion, confirming an elevated cost base. Should H2 contract wins and revenue recognition fall short of expectations or be delayed, annual profitability can deteriorate rapidly given this structural concentration."
+   }
+  },
+  {
+   "title": {
+    "ko": "2025년 횡령 사건의 거버넌스 후유증",
+    "en": "Governance Overhang from the 2025 Embezzlement Incident"
+   },
+   "body": {
+    "ko": "2025년 6월, 재무 담당 직원의 약 9.3억 원(자기자본 대비 8.01%) 횡령 혐의가 공시되어 거래가 정지됐다. 상장적격성 실질심사 절차를 거쳐 거래는 재개됐으나, 내부통제 취약성이 외부에 노출된 상황이다. 민·형사 절차가 진행 중이며, 추가적인 내부 이슈 발생이나 자금 회수 실패 시 추가 손실 계상 가능성이 잠재적 리스크로 남아 있다.",
+    "en": "In June 2025, the embezzlement of approximately KRW 927 million (8.01% of equity) by a finance employee triggered a trading suspension. Trading resumed following the listing adequacy review process, but internal control weaknesses have been publicly exposed. Civil and criminal proceedings remain ongoing; failure to recover funds or the emergence of additional internal irregularities could result in further charges and earnings impact."
+   }
+  },
+  {
+   "title": {
+    "ko": "DRM 시장 포화와 제로트러스트 경쟁 심화",
+    "en": "DRM Market Saturation and Intensifying Zero Trust Competition"
+   },
+   "body": {
+    "ko": "소프트캠프의 전통 캐시카우인 DRM 시장은 이미 포화 단계로, 2022~2024년 3년 연속 매출 감소가 이를 방증한다. 신성장 축인 제로트러스트·N2SF 공간에는 SGA솔루션즈·프라이빗테크놀로지 등 전문 벤더와 안랩·SK쉴더스 같은 대형 보안사가 동시에 진입하며 레퍼런스 확보 경쟁이 치열해지고 있다. 마이크로소프트·팔로알토 등 글로벌 플랫폼 벤더의 국내 시장 진출이 심화될 경우, 전문 니치 솔루션 업체로서의 가격 협상력과 독립적 계약 유지 능력이 압박받을 수 있다.",
+    "en": "SoftCamp's traditional DRM cashcow has reached saturation, evidenced by three consecutive years of revenue decline from 2022 to 2024. The zero trust and N2SF growth space is attracting intensified competition from specialists (SGA Solutions, Private Technology) and large security integrators (AhnLab, SK Shieldus). If global platform vendors such as Microsoft and Palo Alto deepen Korean market penetration, pricing power and standalone contract retention ability for niche specialists like SoftCamp could face structural pressure."
+   }
+  }
+ ],
+ "risks": [
+  {
+   "cat": {
+    "ko": "정책·규제 리스크",
+    "en": "Policy and Regulatory Risk"
+   },
+   "body": {
+    "ko": "N2SF 도입 일정이 지연되거나 보안통제 항목 기준이 변경될 경우, 소프트캠프가 기대하는 공공 조달 수요가 이연될 수 있다. 금융권 망분리 완화 속도가 예상보다 느려지거나 금융당국이 SaaS 사용에 추가 제한 조건을 부과할 경우, 민간 클라우드 보안 수요 확대가 제약될 수 있다. 규제 환경의 변화는 단기 수주 사이클을 불안정하게 만드는 외부 변수로, 연간 실적 가시성을 낮추는 요인 중 하나다.",
+    "en": "Delays in N2SF rollout timelines or revisions to security control specifications could defer anticipated public-sector procurement demand. If financial-sector network separation reforms progress more slowly than expected or regulators impose additional conditions on SaaS usage, private-sector cloud security monetization could be constrained. Regulatory uncertainty is a key external variable that can destabilize near-term contract cycles and reduce annual earnings visibility."
+   }
+  },
+  {
+   "cat": {
+    "ko": "법적·거버넌스 리스크",
+    "en": "Legal and Governance Risk"
+   },
+   "body": {
+    "ko": "2025년 횡령 사건으로 시작된 형사 수사와 민사 채권 회수 절차가 진행 중으로, 수사 과정에서 추가 회계·내부통제 이슈가 부상할 경우 상장 적격성 재심사 등 규제 조치로 이어질 수 있다. 내부통제 개선이 충분히 이행되지 않은 상태에서 유사 사건이 재발하면 시장 신뢰 및 주가에 직접적 타격이 우려된다. 이 리스크는 소프트캠프 고유 리스크로, 업종 평균 대비 별도의 할인 근거를 제공한다.",
+    "en": "Criminal investigations and civil asset recovery proceedings from the 2025 embezzlement remain active; if additional accounting or internal control issues emerge during investigations, regulatory actions including listing adequacy re-reviews could follow. A recurrence of similar misconduct before adequate remediation is in place could directly damage market confidence and the share price. This company-specific risk provides grounds for a governance discount relative to sector peers."
+   }
+  },
+  {
+   "cat": {
+    "ko": "기술 대체 및 경쟁 심화 리스크",
+    "en": "Technology Displacement and Competitive Intensification Risk"
+   },
+   "body": {
+    "ko": "사이버보안 분야는 AI 기반 플랫폼화와 SASE·SSE 통합 솔루션 트렌드가 가속 중으로, 글로벌 대형 벤더의 국내 시장 공세가 강화되고 있다. 기업 고객이 단일 벤더 통합 보안 플랫폼으로 이행할 경우, 전문 솔루션 업체는 개별 계약 감소 및 번들 프라이싱 압박을 받을 수 있다. 소프트캠프가 경쟁 우위를 유지하려면 제품 포트폴리오의 지속적 업데이트와 타 에코시스템과의 연동 역량이 필수적이다.",
+    "en": "The cybersecurity sector is accelerating toward AI-powered platform consolidation with SASE and SSE bundled offerings, and global vendors are intensifying Korean market pressure. If enterprise customers shift to single-vendor integrated security platforms, specialized providers like SoftCamp could face declining standalone contract volumes and bundled pricing pressure. Sustaining competitive advantage requires continuous product portfolio refresh and broad interoperability with third-party security ecosystems."
+   }
+  }
+ ],
+ "checkpoints": [
+  {
+   "when": {
+    "ko": "2026년 8월 중순",
+    "en": "Mid-August 2026"
+   },
+   "what": {
+    "ko": "2026년 2분기 실적 발표 — 영업이익 흑자 복귀 여부 및 매출 성장세 유지 확인. 전년 동기(영업이익 +1.5억 원, 매출 50.9억 원) 대비 개선 방향이 하반기 성장 궤적의 조기 점검 포인트다.",
+    "en": "Q2 2026 earnings release: whether operating income returns to positive territory and whether revenue growth is sustained vs. Q2 2025 (operating income +KRW 0.15 billion, revenue KRW 5.09 billion) — a key early read on the H2 growth trajectory."
+   }
+  },
+  {
+   "when": {
+    "ko": "2026년 하반기(9~12월)",
+    "en": "H2 2026 (September–December)"
+   },
+   "what": {
+    "ko": "N2SF 공공 조달 수주 가시화 — 부처·기관의 예산 집행 집중 구간으로, 수주 규모와 납품 일정이 2026년 연간 수익성의 핵심 변수이며, 계약 체결 공시를 통해 구체적 확인이 가능하다.",
+    "en": "N2SF public sector contract awards: as government agencies concentrate fiscal budget execution in H2, the size and delivery schedule of N2SF contract wins will be the primary determinant of FY2026 profitability, confirmable via public disclosure."
+   }
+  },
+  {
+   "when": {
+    "ko": "2026년 상시 모니터링",
+    "en": "Ongoing through 2026"
+   },
+   "what": {
+    "ko": "2025년 횡령 사건 법적 절차 진행 상황 — 형사 수사 결과·민사 자금 회수·내부통제 개선 이행 여부에 관한 DART 공시를 주기적으로 확인. 추가 이슈 부재 확인이 거버넌스 우려 해소의 전제 조건이다.",
+    "en": "Progress of 2025 embezzlement legal proceedings: periodic DART disclosures on criminal investigation outcomes, civil recovery status, and internal control compliance require ongoing monitoring; absence of new issues is a prerequisite for resolving governance concerns."
+   }
+  },
+  {
+   "when": {
+    "ko": "2026년 11월 초",
+    "en": "Early November 2026"
+   },
+   "what": {
+    "ko": "2026년 3분기 실적 발표 — 전년 동기(매출 66.4억 원, 영업이익 +7.7억 원) 대비 성장 지속 여부를 확인. 4분기 어닝 시즌 전 연간 목표 달성 가능성을 점검하는 중간 점검점이다.",
+    "en": "Q3 2026 earnings release: whether Q3 2025's revenue of KRW 6.64 billion and operating income of KRW 0.77 billion can be matched or exceeded, serving as a critical pre-Q4 checkpoint for assessing full-year target achievement."
+   }
+  },
+  {
+   "when": {
+    "ko": "2027년 초(FY2026 결산)",
+    "en": "Early 2027 (FY2026 Annual Results)"
+   },
+   "what": {
+    "ko": "일본 AI 보안 사업 성과 공개 — Japan IT Week 이후 파이프라인에서 계약으로 전환된 규모와 일본 매출 비중 변화가 해외 매출 다각화 실현 여부를 판단하는 기준이 된다.",
+    "en": "Japan AI security revenue disclosure: the conversion rate of post-Japan IT Week pipeline to signed contracts and any change in Japan's revenue contribution will be the key indicator of whether international diversification is materializing."
+   }
+  }
+ ],
+ "verdict": {
+  "body": {
+   "ko": "소프트캠프는 DRM 전문기업에서 제로트러스트·AI 보안 플랫폼으로의 전환을 진행 중인 코스닥 중소형 보안주로, 매력적인 중기 성장 스토리와 단기 이익 변동성이 공존하는 국면에 있다. 2025년 매출 53% 급증과 영업이익 흑자전환은 수년간의 신사업 투자가 수익으로 가시화되기 시작했음을 증명하며, N2SF라는 정책 수요 촉매가 하반기 공공 조달을 구조적으로 견인할 경우 성장 궤도 유지에 긍정적이다. 반면 2026년 1분기의 확대된 영업적자와 급증한 순손실은 비용 기조 상승과 극단적 계절성 리스크를 재확인시키며, 연간 실적이 하반기 수주 결과에 크게 의존하는 구조임을 보여준다. 2025년 횡령 사건은 내부통제 및 거버넌스 관점에서 소프트캠프 고유의 지속 모니터링 요소로 남아 있다. RBI·ZTNA·문서보안 오케스트레이션이 결합된 포트폴리오는 N2SF 보안통제 요건과의 정합성이 높으나, 동일한 방향을 추구하는 경쟁사가 다수 존재해 차별화된 레퍼런스 확보 속도가 시장 점유율을 가를 핵심 변수다. 2026년 실적의 방향성 확인은 2분기(8월)·3분기(11월) 발표와 N2SF 조달 공시가 집중되는 하반기에 이루어질 것이다.",
+   "en": "SoftCamp is a KOSDAQ small-cap cybersecurity company midway through a strategic transformation from DRM specialist to zero-trust and AI security platform provider, at a juncture where a compelling medium-term growth narrative coexists with significant near-term earnings volatility. The 2025 turnaround — 53% revenue growth and an operating profit swing — validates that multi-year product investments are beginning to yield scale, and the N2SF policy catalyst structurally supports H2-weighted public procurement. However, the wider Q1 2026 operating loss and sharply elevated net loss reconfirm the real risks of elevated cost loading and extreme earnings seasonality, with full-year results heavily dependent on H2 order execution. The 2025 embezzlement incident remains a company-specific governance risk requiring ongoing scrutiny. The portfolio combining RBI, ZTNA, and document security orchestration is well-aligned with N2SF's security control framework, but with numerous competitors converging on the same positioning, the pace of differentiated reference contract accumulation is the decisive competitive factor. Key earnings confirmation milestones — Q2 (August) and Q3 (November) results alongside N2SF procurement disclosures — are concentrated in H2 2026."
+  }
+ },
+ "sources": [
+  "https://m.irgo.co.kr/IR-COMP/258790/%EC%86%8C%ED%94%84%ED%8A%B8%EC%BA%A0%ED%94%84-IR-PAGE",
+  "https://www.catch.co.kr/Comp/CompSummary/HV3954",
+  "https://comp.fnguide.com/SVO2/ASP/SVD_Main.asp?gicode=A258790",
+  "https://thevc.kr/softcamp",
+  "https://www.jobkorea.co.kr/company/16151463",
+  "https://www.valueline.co.kr/finance/summary/258790",
+  "https://m.thinkpool.com/item/258790",
+  "http://www.paxnet.co.kr/tbbs/list?tbbsType=L&id=258790",
+  "https://kr.investing.com/equities/kb-11-special-purpose",
+  "https://www.kokstock.com/stock/item.asp?item_cd=258790",
+  "https://zdnet.co.kr/view/?no=20250218075904",
+  "https://www.dailysecu.com/news/articleView.html?idxno=163381",
+  "https://m.boannews.com/html/detail.html?idx=136065",
+  "https://news.nate.com/view/20250616n28992",
+  "https://ko.wikipedia.org/wiki/%EC%86%8C%ED%94%84%ED%8A%B8%EC%BA%A0%ED%94%84",
+  "https://www.softcamp.co.kr/en/company",
+  "https://byline.network/2024/12/19-404/",
+  "https://www.dailysecu.com/news/articleView.html?idxno=164835"
+ ],
+ "v": 2,
+ "model": "claude-sonnet-4-6",
+ "ticker": "258790",
+ "name": "소프트캠프",
+ "name_en": "SOFTCAMP Co., Ltd.",
+ "sector": "IT·소프트웨어",
+ "categories": [
+  "IT·소프트웨어"
+ ],
+ "market": "코스닥",
+ "reportDate": "2026-06-19",
+ "reportTs": "2026-06-19 05:32",
+ "dataDate": "20260618",
+ "quant": {
+  "asOf": "2026-06-18",
+  "fs_basis": "연결(CFS) · DART 공시 확정치 · 지배주주 기준 순이익",
+  "annual": [
+   {
+    "year": 2025,
+    "rev": 25721722546,
+    "op": 2981626076,
+    "np": 3690266539,
+    "np_owner": 3690266539,
+    "equity": 15422578821,
+    "equity_owner": 15444141929,
+    "liab": 26724803456,
+    "cfo": 2509774906,
+    "eps_basic": 158,
+    "opm": 11.6,
+    "roe": 23.9,
+    "debt_ratio": 173.3
+   },
+   {
+    "year": 2024,
+    "rev": 16887234056,
+    "op": -1831061034,
+    "np": 33017149,
+    "np_owner": 33017149,
+    "equity": 11650825883,
+    "equity_owner": 11627042306,
+    "liab": 27669420871,
+    "cfo": 3587846773,
+    "eps_basic": 9,
+    "opm": -10.8,
+    "roe": 0.3,
+    "debt_ratio": 237.5
+   },
+   {
+    "year": 2023,
+    "rev": 18485371904,
+    "op": -2568547973,
+    "np": -5960747715,
+    "np_owner": -5815389459,
+    "equity": 11504180553,
+    "equity_owner": 11355862234,
+    "liab": 12794327083,
+    "cfo": 106030778,
+    "eps_basic": -243,
+    "opm": -13.9,
+    "roe": -51.2,
+    "debt_ratio": 111.2
+   },
+   {
+    "year": 2022,
+    "rev": 19017389288,
+    "op": 1341910575,
+    "np": 649253886,
+    "np_owner": 649253886,
+    "equity": 16819457750,
+    "equity_owner": 16708021416,
+    "liab": 15824216634,
+    "cfo": 663564567,
+    "eps_basic": 37,
+    "opm": 7.1,
+    "roe": 3.9,
+    "debt_ratio": 94.1
+   }
+  ],
+  "quarterly": [
+   {
+    "q": "2025Q1",
+    "rev": 4011086277,
+    "op": -603250349,
+    "np_owner": -146307935
+   },
+   {
+    "q": "2025Q2",
+    "rev": 5090332577,
+    "op": 153559294,
+    "np_owner": -231493798
+   },
+   {
+    "q": "2025Q3",
+    "rev": 6639050377,
+    "op": 774282562,
+    "np_owner": 607527312
+   },
+   {
+    "q": "2025Q4",
+    "rev": 9981253315,
+    "op": 2657034569,
+    "np_owner": 3460540960
+   },
+   {
+    "q": "2026Q1",
+    "rev": 4577476575,
+    "op": -1134212264,
+    "np_owner": -1207437155
+   }
+  ],
+  "valuation": {
+   "price": 4260,
+   "mcap": 0.0213,
+   "shares": 4998256,
+   "total_shares": 4998256,
+   "wavg_shares": null,
+   "per": null,
+   "eps": null,
+   "pbr": 1.5,
+   "bps": 2849,
+   "roe_ttm": 4.4,
+   "ttm_window": "2025Q2~2026Q1",
+   "ttm_np_owner": 569801184,
+   "pbr_krx": 1.32,
+   "bps_krx": 3220.0,
+   "basis": "PER·EPS·PBR·BPS 모두 자체 산출(네이버·토스와 동일 방식) · 배당은 DART 공시 주당현금배당금(보완:KRX) ÷ 현재가",
+   "dps": 0.0,
+   "div": 0.0
+  }
+ }
+}

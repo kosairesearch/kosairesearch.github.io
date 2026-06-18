@@ -1,0 +1,356 @@
+{
+ "title": {
+  "ko": "서버보안 원조, 순자산 할인 구간의 고마진 방어주",
+  "en": "Korea's Pioneer Secure OS Vendor: High-Margin Defensive Play at Net Asset Discount"
+ },
+ "lead": {
+  "ko": "국내 최초 보안 OS 'Secuve TOS' 개발사 시큐브는 30%대 영업이익률과 사실상 무부채 재무구조를 갖추고 있으나, 공공 예산 사이클에 종속된 극단적 Q4 편중 실적 구조와 제한적 외형 성장이 중장기 핵심 과제로 병존한다.",
+  "en": "As Korea's first developer of a commercial secure OS, Secuve sustains operating margins above 30% and an effectively debt-free balance sheet, yet faces the structural challenge of extreme Q4 earnings concentration tied to public-sector budget cycles alongside limited top-line growth."
+ },
+ "keypoints": [
+  {
+   "ko": "국내 최초 보안 OS 'Secuve TOS' 개발사로 금융·공공·국방 분야 장기 레퍼런스와 높은 고객 전환 장벽 확보",
+   "en": "As developer of Korea's first secure OS ('Secuve TOS'), the company holds long-standing customer references in finance, public institutions, and national defense, creating substantial switching costs"
+  },
+  {
+   "ko": "2025년 영업이익률 32.1% 회복 — 4개년 연속 30%대 유지로 소프트웨어 고마진 구조의 내구성 확인",
+   "en": "2025 operating margin recovered to 32.1%, maintaining the 30%-plus margin profile for four consecutive years and affirming the durability of the high-margin software model"
+  },
+  {
+   "ko": "2025년 Q4 단일 분기가 연간 영업이익의 약 78% 담당 — 공공 IT 예산 집행 사이클에 연동된 극단적 계절성 지속",
+   "en": "Q4 2025 alone accounted for approximately 78% of full-year operating profit, confirming persistent extreme seasonality driven by public IT budget execution patterns"
+  },
+  {
+   "ko": "국내 사이버보안 시장 2026년 4조원 돌파·16.1% 성장 전망 — AI 위협 고도화가 시스템보안 수요 구조적 견인",
+   "en": "Korea's cybersecurity market is projected to surpass KRW 4 trillion in 2026 (+16.1%), with escalating AI-powered threats structurally driving systems security demand"
+  },
+  {
+   "ko": "순자산(BPS 6,369원) 대비 주가 할인 구간, 연간 DPS 150원 배당 지속 — 자산가치·배당 기반 논거 병존",
+   "en": "Stock trades at a discount to book value (BPS KRW 6,369) with a sustained annual DPS of KRW 150, supporting both asset-value and income-oriented analytical frameworks"
+  }
+ ],
+ "business": {
+  "ko": "시큐브는 2000년 설립되어 2011년 코스닥에 상장한 서버 시스템 보안 전문기업으로, 핵심 제품은 국내 최초로 개발·상용화한 보안 운영체제 'Secuve TOS'다. TOS는 서버 커널 수준에서 비인가 접근과 악성 행위를 원천 차단하며, 국산 보안 OS 분야의 선도적 위치를 점하고 있다. 이를 기반으로 시스템통합계정권한관리 솔루션 'iGRIFFIN', 통합로그관리 솔루션 'LogGRIFFIN', 통합보안관제 솔루션 'tGRIFFIN'으로 구성된 GRIFFIN 패밀리를 통해 시스템보안 토탈 솔루션을 제공한다. AI 기반 랜섬웨어 탐지 기술 특허, BPF 루트킷 대응 솔루션, 생체 수기 서명 인증 등 고부가가치 기술 영역으로 포트폴리오 확장도 진행 중이다. 주요 고객은 금융권·대기업·공공기관·국방 분야로, 높은 보안 인증 장벽과 장기 납품 레퍼런스가 경쟁사 진입을 억제하는 구조다. 클라우드 보안 확장을 위해 국산 OS 업체와 협업하여 Secuve TOS를 클라우드 환경에 탑재하는 방향으로 사업 영역을 모색하고 있으며, 모바일 인증·생체인증 R&D도 병행한다. 2025년 사이버보안 업계 분석에서 '내실형' 기업으로 분류되었으며, 이는 외형 확장보다 수익성과 기존 고객 유지에 강점을 갖는 특성을 반영한다. 경쟁 구도 측면에서는 서버보안 OS 영역의 SGA솔루션즈 등과 경합하며, 매출 구조는 소프트웨어 라이선스와 유지보수 중심으로 영업이익률이 구조적으로 30% 내외를 유지한다.",
+  "en": "Secuve was founded in 2000 and listed on KOSDAQ in 2011, specializing in server system security. Its flagship product, 'Secuve TOS', is Korea's first commercially deployed secure OS, providing kernel-level server protection that blocks unauthorized access and malicious behavior at the root. Built around this core, the GRIFFIN family—comprising iGRIFFIN (integrated privileged account management), LogGRIFFIN (unified log management), and tGRIFFIN (integrated security operations)—delivers an end-to-end systems security suite. The portfolio is also being extended into AI-based ransomware detection patents, BPF rootkit countermeasures, and biometric handwritten-signature authentication. Key customers span the financial sector, large enterprises, public institutions, and national defense, where stringent security certification requirements and long-standing deployment references create high switching costs. To expand into cloud security, the company has pursued partnerships with domestic OS vendors to embed TOS in cloud-native environments, alongside parallel R&D in mobile and biometric authentication. A 2025 cybersecurity industry analysis categorized Secuve as an 'internally solid' player, reflecting strengths in profitability and customer retention over aggressive top-line expansion. The revenue model, centered on software licensing and maintenance contracts, structurally supports operating margins in the 30% range."
+ },
+ "earnings": {
+  "ko": "2025년 연결 기준 매출액은 134억 4천만원으로 전년(120억 8천만원) 대비 11.3% 증가하며 2024년 부진에서 회복했다. 영업이익은 43억 1천만원(이익률 32.1%)으로 전년(34억 2천만원, 28.3%)보다 크게 개선됐으나, 2022년 고점(53억원, 38.7%)에 비해 이익률 완전 회복은 미달 상태다. 당기순이익 47억원은 영업이익을 상회했는데, 이는 무부채·대규모 자기자본(약 496억원) 구조에서 발생하는 이자·투자수익 등 영업외 이익의 기여로 풀이된다. 분기별 편중은 더욱 극명하다. 2025년 Q4 매출 58억 2천만원은 연간의 43%를 차지하고, Q4 영업이익 33억 8천만원은 연간 영업이익의 약 78%에 해당한다. Q1~Q3 영업이익은 각각 2억 7천만원·1억원·5억 6천만원에 불과해 상반기 이익이 거의 발생하지 않는 구조다. 2026년 1분기 매출은 23억 2천만원으로 전년 동기(26억 7천만원) 대비 13.0% 감소했고, 영업이익은 약 694만원으로 실질적으로 소멸해 계절성 패턴이 재확인됐다. 영업현금흐름(CFO)은 2025년 63억 2천만원으로 전년(31억 2천만원) 대비 두 배 이상 증가해 현금 창출력이 이익 수준을 상회하는 건전성을 확인했다. 2024년은 매출 감소와 마진 압축이 겹쳤으나, 2025년에는 매출 회복과 비용 관리 개선이 맞물리며 이익 구조가 의미 있게 회복됐다.",
+  "en": "In fiscal year 2025 (consolidated basis), revenue rose 11.3% to KRW 13.44 billion from KRW 12.08 billion in 2024, recovering from a cyclical trough. Operating profit improved to KRW 4.31 billion (OPM 32.1%) from KRW 3.42 billion (28.3%) in 2024, though it has yet to reclaim the 2022 peak of KRW 5.30 billion (OPM 38.7%). Net profit of KRW 4.70 billion exceeded operating profit, attributable to non-operating income—interest and investment returns—generated by the near-zero-debt, large equity base of approximately KRW 49.6 billion. Quarterly seasonality is extreme: Q4 2025 revenue of KRW 5.82 billion represented 43% of the full-year total, while Q4 2025 operating profit of KRW 3.38 billion accounted for approximately 78% of the annual figure. Q1 through Q3 operating profit was only KRW 0.27 billion, KRW 0.10 billion, and KRW 0.56 billion, respectively, meaning meaningful profitability barely materializes before Q4. Q1 2026 confirmed the recurring pattern: revenue fell 13.0% year-over-year to KRW 2.32 billion, with operating profit essentially evaporating to approximately KRW 6.9 million. Operating cash flow surged to KRW 6.32 billion in 2025 from KRW 3.12 billion in 2024—more than doubling—affirming that underlying cash generation materially exceeded reported earnings. Fiscal 2024 suffered simultaneous revenue contraction and margin compression, while 2025 saw a meaningful earnings recovery as revenue rebounded and cost discipline improved."
+ },
+ "industry": {
+  "ko": "국내 사이버보안 시장(보안뉴스·시큐리티월드 시장백서 기준)은 2026년 4조원을 돌파하며 전년 대비 16.1% 성장할 것으로 전망된다. 과기정통부·KISIA의 2025년 정보보호산업 실태조사에 따르면 2024년 전체 정보보호 산업 매출은 18조 6천억원(+10.5%)이며, 정보보안 부문만으로도 7조 1천억원(+15.9%)에 달해 ICT 산업 전체 성장률을 상회했다. 시큐브의 핵심 영역인 시스템보안 세그먼트는 2025년 4,730억원(+12.3%), 2026년 5,452억원(+15.3%)으로 확대 기조가 이어질 전망이다. 수요의 핵심 동인은 AI 기반 위협 고도화다. 생성형 AI는 딥페이크·맞춤형 악성코드·고도화된 피싱 등 공격 수준을 끌어올리고 있으며, AI 기반 자율 랜섬웨어와 RaaS(서비스형 랜섬웨어)의 확산으로 공격 진입 장벽이 낮아지고 있다. 정부의 국가망보안체계(N2SF) 전환과 제로트러스트 기반 보안 체계 도입 가속화는 공공·금융 부문의 시스템보안 업그레이드 사이클을 자극한다. 반면 보안 업계 전반에서 AI·위협인텔리전스·SIEM·SOAR를 하나로 묶는 통합 플랫폼화(Platformization) 흐름이 빨라지고 있어, 단독 솔루션 중심의 소형 벤더에게는 경쟁 심화 요인으로 작용한다. 2025년 보안 업계 분석에서 시큐브는 인증·암호화 보안군 내 '내실형'으로 분류되어 성장성보다 수익성 중심의 사업 기조를 유지하는 것으로 평가된다.",
+  "en": "Korea's domestic cybersecurity market (per the Boannews/SecurityWorld Market White Paper) is projected to surpass KRW 4 trillion in 2026, representing 16.1% year-over-year growth. The MSIT/KISIA 2025 Information Security Industry Survey reported that Korea's total information protection industry revenue reached KRW 18.6 trillion in 2024 (+10.5%), with the information security subsector alone reaching KRW 7.1 trillion (+15.9%), outpacing broader ICT industry growth. The systems security segment—Secuve's core addressable market—is expected to expand to KRW 473 billion in 2025 (+12.3%) and KRW 545 billion in 2026 (+15.3%). The primary demand driver is the escalation of AI-powered threats: generative AI is amplifying attack sophistication through deepfakes, customized malware, and advanced phishing, while the proliferation of autonomous ransomware and Ransomware-as-a-Service (RaaS) lowers the barrier to entry for attackers. The government's rollout of the National Network Security Framework (N2SF) and the broader transition to zero-trust security architectures are expected to catalyze system security upgrade cycles in public and financial sector clients. Conversely, an industry-wide acceleration toward Platformization—integrating AI, threat intelligence, SIEM, and SOAR into unified threat-response platforms—poses competitive headwinds for smaller standalone-product vendors. A 2025 industry analysis categorized Secuve as an 'internally solid' player within the authentication and encryption security group, reflecting a profitability-over-growth operating stance."
+ },
+ "outlook": {
+  "ko": "2026년 하반기는 공공기관 IT 예산의 연말 집중 집행 사이클과 맞물려 시큐브의 전통적 수주 성수기에 해당한다. 과거 4개년 연속 확인된 Q4 집중 패턴은 2026년에도 반복될 가능성이 높으며, 상반기 부진이 하반기로 상쇄되는 구조가 지속될 것으로 예상된다. 정부의 N2SF 체계 전환이 본격화될 경우 보안 OS 및 통합계정관리 솔루션에 대한 공공기관 신규 수주가 가속화될 수 있다. AI 기반 랜섬웨어 탐지 기술 특허와 BPF 루트킷 대응 솔루션을 보유하고 있어, AI 위협 고도화 흐름을 기술적 차별성으로 연결할 여지가 있다. 클라우드 보안 영역에서는 국산 OS 파트너와의 협업으로 Secuve TOS 클라우드 버전을 개발 중이나, 이를 통한 매출 기여의 구체적 시점은 현재 공식 발표로 확인되지 않는다. 모바일 인증·생체 수기 서명 인증 R&D가 진행 중으로 중장기 수익 다각화의 씨앗이 될 수 있으나, 단기 실적 기여는 불투명하다. 2026Q1이 전년 동기 대비 부진했고, 연간 실적의 Q4 집중 구조가 지속되는 한 상반기 지표만으로 연간 방향성을 확단하기 어려운 구조적 한계가 있다.",
+  "en": "The second half of 2026 coincides with Secuve's traditional peak order season, driven by the year-end public-sector IT budget execution cycle. The Q4 concentration pattern, confirmed over four consecutive years, is likely to persist in 2026, suggesting H1 weakness will again be offset by H2 momentum. A full rollout of the government's National Network Security Framework (N2SF) could directly accelerate new orders for secure OS and privileged access management solutions from public-sector clients. The company's patents in AI-based ransomware detection and BPF rootkit countermeasures provide potential technical differentiation aligned with the evolving AI threat landscape. Collaborative development of a cloud-compatible version of Secuve TOS with domestic OS partners is underway, though a specific commercialization timeline or revenue contribution target has not been formally disclosed. Ongoing R&D in mobile authentication and biometric handwritten-signature verification represents a potential medium-to-long-term revenue diversification vector, though near-term contributions remain uncertain. Given that Q1 2026 results came in below the prior year, and given the structurally back-half-loaded earnings model, first-half data points alone cannot reliably indicate full-year direction."
+ },
+ "valuation_comment": {
+  "ko": "현재 주가는 BPS 6,369원을 유의미하게 하회하는 구간에서 형성되어 있어 순자산 대비 할인 상태다. EPS 632원 기준 이익배수는 코스닥 IT 소프트웨어 업종의 장기 거래 평균을 상당히 하회하는 수준으로, 이익 규모에 비해 멀티플이 압축된 구간을 반영한다. DPS 150원이 시사하는 배당 수익률은 코스닥 IT 섹터 평균을 상회하는 편으로, 절대 이익 규모 대비 주주 환원 의지가 확인된다. 자기자본 약 496억원이 현 시가총액을 크게 웃도는 구조이며, 순현금에 가까운 자산 구성이 영업 가치에 더해 내재 자산가치를 지지한다. 다만 소형주 특성에 따른 시장 유동성 할인, Q4 편중으로 인한 이익 가시성 제한, 외형 성장 모멘텀 부재 등이 멀티플 확장을 구조적으로 제약하는 요인으로 작용하며, 이 같은 요인들이 현재 할인 수준의 배경으로 풀이된다.",
+  "en": "The stock currently trades at a meaningful discount to its book value (BPS KRW 6,369), indicating the price is below the level of net assets per share. Based on EPS of KRW 632, the earnings multiple falls well below the long-run trading average for KOSDAQ IT software peers, reflecting a compressed valuation relative to current earnings capacity. The dividend income implied by DPS of KRW 150 represents a yield level that exceeds the KOSDAQ IT sector average, suggesting meaningful shareholder returns relative to the company's earnings base. Equity of approximately KRW 49.6 billion substantially exceeds the current market capitalization, and the near-net-cash asset composition provides intrinsic asset value beyond the operating business. The persistent discount likely reflects a combination of small-cap liquidity constraints, limited earnings visibility from extreme Q4 concentration, and the absence of visible top-line growth momentum—structural factors that continue to cap multiple expansion."
+ },
+ "bull": [
+  {
+   "title": {
+    "ko": "무부채·대형 순현금 재무구조의 안전판",
+    "en": "Near-Zero Debt and Large Net Cash Provide a Durable Financial Buffer"
+   },
+   "body": {
+    "ko": "부채비율 6.7%로 업종 내 최하위 수준의 레버리지를 유지하며 이자비용 부담이 사실상 없다. 약 496억원에 달하는 자기자본의 상당 부분이 현금성·금융성 자산으로 구성되어 영업외 수익이 영업이익을 보완하는 구조다. 이 같은 재무구조는 공공 보안 예산 삭감이나 경기 하강 국면에서도 유동성 위기 없이 사업을 지속할 수 있는 완충 역할을 한다. 또한 DPS 150원의 배당 지속과 추가적인 주주 환원 여력을 재무적으로 뒷받침한다.",
+    "en": "A debt ratio of 6.7% positions Secuve at the low end of industry leverage, with virtually no interest expense. A substantial portion of the approximately KRW 49.6 billion equity base is held in cash and financial assets, generating non-operating returns that supplement operating profit. This structure provides a liquidity buffer allowing continued operations even during public-sector security budget reductions or economic downturns. It also underpins the sustained DPS of KRW 150 and potential future capacity for incremental shareholder returns."
+   }
+  },
+  {
+   "title": {
+    "ko": "금융·공공·국방 레퍼런스가 만드는 높은 고객 전환 장벽",
+    "en": "Deep Switching Costs Created by Finance, Public-Sector, and Defense References"
+   },
+   "body": {
+    "ko": "보안 OS는 서버 핵심 인프라에 깊이 연동되어 교체 시 재인증·재구축 비용이 상당해 고객 이탈률이 구조적으로 낮다. 금융권·공공기관·국방 분야의 장기 납품 레퍼런스는 신규 경쟁자의 진입을 억제하는 실질적 장벽으로 기능한다. 연간 유지보수 계약에서 발생하는 경상 매출은 기저 수익을 안정화하는 역할을 한다. N2SF 등 정부 주도 보안 체계 전환 수요가 발생할 때 기존 납품사로서 우선 협상 대상에 오를 가능성이 크다.",
+    "en": "Secure operating systems are deeply integrated into core server infrastructure, and replacement requires significant recertification and re-deployment costs, creating structurally low customer churn. Long-standing delivery references in finance, public institutions, and national defense function as durable entry barriers for new competitors. Recurring revenue from annual maintenance contracts provides a stable earnings floor. When government-led security modernization programs such as N2SF create upgrade demand, incumbent vendors like Secuve are well-positioned as preferred negotiating partners."
+   }
+  },
+  {
+   "title": {
+    "ko": "AI 위협 고도화가 견인하는 시스템보안 구조적 수요",
+    "en": "Escalating AI-Powered Threats Drive Structural Demand for Systems Security"
+   },
+   "body": {
+    "ko": "AI 기반 자율 랜섬웨어와 BPF 루트킷 등 커널 수준 공격이 고도화되면서 서버 OS 기반 선제 차단 솔루션의 전략적 가치가 재부각되고 있다. 국내 시스템보안 세그먼트는 2026년 15% 이상 성장이 전망되어 수요 기반이 구조적으로 확대되는 흐름이다. 시큐브는 AI 기반 랜섬웨어 탐지 관련 특허를 보유하고 있어 차세대 위협 대응 솔루션으로의 기술 전환 기반이 마련되어 있다. 정부의 N2SF 전환과 공공 클라우드 확산은 보안 솔루션 업그레이드 사이클을 추가로 촉진할 수 있다.",
+    "en": "The sophistication of AI-driven autonomous ransomware and kernel-level BPF rootkit attacks is reinvigorating the strategic importance of OS-level server security solutions. Korea's systems security segment is projected to grow over 15% in 2026, indicating structurally expanding addressable demand. Secuve holds patents in AI-based ransomware detection, providing a technical foundation for transitioning to next-generation threat-response products. The government's N2SF transition and the broader push toward public cloud adoption are expected to catalyze additional security solution upgrade cycles."
+   }
+  }
+ ],
+ "bear": [
+  {
+   "title": {
+    "ko": "극단적 Q4 편중과 연간 실적 불확실성",
+    "en": "Extreme Q4 Earnings Concentration and Annual Uncertainty"
+   },
+   "body": {
+    "ko": "2025년 Q4 영업이익이 연간의 약 78%를 차지하는 극단적 계절성은 공공 IT 예산의 연말 집중 집행이라는 구조적 특성에서 비롯된다. 하반기 공공 발주 지연 또는 취소 시 연간 실적 전체가 급격히 훼손될 위험이 상존한다. 2026Q1 영업이익이 약 694만원에 불과했던 것도 이 패턴의 재확인으로, 투자자에게 상시적인 이익 가시성 문제를 야기한다. 상·하반기 수익 양극화는 연간 실적 추정의 오차 범위를 크게 넓혀 분석의 불확실성을 증폭시킨다.",
+    "en": "Q4 2025 accounting for approximately 78% of full-year operating profit reflects extreme seasonality structurally tied to year-end public IT budget execution. Any delay or cancellation of H2 public procurement orders poses a risk of sharp full-year earnings deterioration. Q1 2026 operating profit of approximately KRW 6.9 million reconfirms this recurring pattern, creating a persistent earnings visibility problem for investors. The sharp H1/H2 profit asymmetry significantly widens the error range of full-year earnings forecasts."
+   }
+  },
+  {
+   "title": {
+    "ko": "4개년 외형 성장 정체와 규모의 한계",
+    "en": "Four-Year Revenue Stagnation and Scale Constraints"
+   },
+   "body": {
+    "ko": "4개년 연간 매출액이 120~144억원 구간에서 반복되며 외형 성장이 제한적이다. 2023년 정점(144억원) 대비 2024년 부진을 거쳐 2025년에 134억원으로 일부 회복했으나 절대적 성장 모멘텀은 뚜렷하지 않다. 소규모 매출 기반은 신규 R&D 투자·인력 확충·해외 진출 등 성장 투자에 활용 가능한 절대 자원을 구조적으로 제한한다. 강한 영업현금흐름에도 불구하고 외형 확대로 이어지는 재투자 모멘텀이 가시화되지 않으면 멀티플 재평가의 계기를 만들기 어렵다.",
+    "en": "Annual revenue has oscillated in the KRW 12–14.4 billion range over four years, reflecting limited top-line growth. After peaking at KRW 14.4 billion in 2023 and declining in 2024, revenue partially recovered to KRW 13.4 billion in 2025, but underlying growth momentum remains subdued. A small revenue base structurally limits resources available for new R&D investment, workforce expansion, and international market entry. Even with strong operating cash flow, the absence of visible reinvestment-driven growth makes catalyzing a meaningful multiple re-rating difficult."
+   }
+  },
+  {
+   "title": {
+    "ko": "클라우드·플랫폼화 전환 대응 속도 위험",
+    "en": "Risk of Lagging Cloud and Platform-Centric Transition"
+   },
+   "body": {
+    "ko": "보안 업계가 AI·SIEM·SOAR를 통합하는 플랫폼화 방향으로 빠르게 이동하는 가운데, 시큐브는 구축형 단독 솔루션 중심의 수익 구조를 유지하고 있다. 클라우드 전환이 가속화될 경우 온프레미스 보안 OS 수요 기반이 점진적으로 잠식될 위험이 있다. SaaS 또는 구독형 매출 전환이 지연될 경우 신규 고객 유입보다 기존 고객 유지 중심의 방어적 사업 구조가 고착화될 수 있다. 대형 보안 플레이어의 통합 플랫폼 공세가 시스템보안 단독 벤더의 입지를 지속적으로 좁혀나갈 위험도 병존한다.",
+    "en": "The broader security industry is rapidly shifting toward Platformization—integrating AI, SIEM, and SOAR into unified solutions—yet Secuve's business remains centered on standalone on-premises software. Accelerated cloud migration could gradually erode the demand base for on-premises secure OS products. A delayed transition to SaaS or subscription-based revenue could entrench a defensive, customer-retention-oriented model at the expense of new customer acquisition. Large security players' aggressive integrated-platform expansion may continue to narrow the competitive space for standalone systems security vendors."
+   }
+  }
+ ],
+ "risks": [
+  {
+   "cat": {
+    "ko": "공공 IT 예산 집행 리스크",
+    "en": "Public IT Budget Execution Risk"
+   },
+   "body": {
+    "ko": "정부 재정 건전화 기조 강화 또는 공공기관 IT 예산 삭감이 주요 수요원인 공공 발주를 축소할 수 있다. 연말 발주 집중 구조에서 Q4 집행이 다음 연도로 이월될 경우 단기 실적 충격이 크게 증폭된다. 정치·행정 이슈로 인한 예산 편성 지연이나 정책 우선순위 변화도 발주 불확실성을 가중한다. 공공 조달 프로세스의 경쟁 방식 변화(예: 개방형 경쟁 입찰 확대)는 단가 및 수주 구조에 추가적인 압력을 가할 수 있다.",
+    "en": "A tightening of fiscal policy or reduction in public IT budgets could shrink Secuve's primary demand source. In a year-end-concentrated order structure, any Q4 budget slippage into the following year amplifies near-term earnings impact significantly. Political or administrative disruptions and policy priority shifts add further order uncertainty. Changes in public procurement competitive dynamics—such as expanded open-tender requirements—could pressure pricing and order structures."
+   }
+  },
+  {
+   "cat": {
+    "ko": "경쟁 심화와 시장 점유율 방어 리스크",
+    "en": "Intensified Competition and Market Share Defense Risk"
+   },
+   "body": {
+    "ko": "서버보안·접근제어 시장에서 기존 경쟁사뿐 아니라 대형 IT 기업의 통합 플랫폼이 해당 세그먼트를 흡수할 위험이 있다. 제로트러스트·클라우드 네이티브 환경에 최적화된 신규 솔루션이 기존 레퍼런스 기반 시장을 잠식할 수 있다. 외산 보안 벤더의 공격적 국내 시장 진입 시 중장기 점유율 압박이 발생할 수 있다. 점유율 방어를 위한 가격 인하 압력이 구조적 고마진을 훼손할 가능성도 배제할 수 없다.",
+    "en": "In server security and access management, the risk extends beyond traditional rivals to large IT companies whose integrated platforms could absorb discrete product segments. New solutions optimized for zero-trust and cloud-native environments may erode existing reference-based market position. Aggressive domestic market entry by foreign security vendors could exert mid-to-long-term market share pressure. Competitive pricing pressure to defend market share could also erode the structurally high operating margin."
+   }
+  },
+  {
+   "cat": {
+    "ko": "기술 전환 지연과 제품 주기 위험",
+    "en": "Technology Transition Lag and Product Lifecycle Risk"
+   },
+   "body": {
+    "ko": "보안 OS의 클라우드 네이티브 버전 개발 및 상용화 속도가 시장 전환 속도를 따라가지 못할 경우 중장기 경쟁력이 훼손될 수 있다. AI 기반 위협 탐지와 생체 인증 등 신규 영역에서의 수익화 시점이 불명확해 중단기 성장 기여 예측이 어렵다. 핵심 제품 Secuve TOS의 클라우드 전환 적기를 놓칠 경우 온프레미스 시장 축소와 함께 외형 감소 위험이 현실화될 수 있다. 소규모 R&D 조직과 제한적 자원 배분이 기술 혁신 속도를 제약하는 구조적 리스크로 상존한다.",
+    "en": "If the development and commercialization of a cloud-native version of Secuve TOS fails to keep pace with market transitions, mid-to-long-term competitiveness could be undermined. The monetization timeline for AI-based threat detection and biometric authentication remains uncertain, making near-to-medium-term growth contribution difficult to forecast. Missing the window for timely cloud transition of core product TOS could materialize the risk of revenue contraction alongside a shrinking on-premises market. The small scale of R&D organization and constrained resource allocation represent a persistent structural cap on innovation pace."
+   }
+  }
+ ],
+ "checkpoints": [
+  {
+   "when": {
+    "ko": "2026년 8월 중순",
+    "en": "Mid-August 2026"
+   },
+   "what": {
+    "ko": "2026년 2분기 및 상반기 실적 공시 — 상반기 매출·영업이익 규모가 연간 이익 목표 달성 가능성과 하반기에 필요한 이익 부담 규모를 가늠하는 첫 번째 공식 체크포인트다.",
+    "en": "Q2 and H1 2026 earnings disclosure — H1 revenue and operating profit serve as the first formal checkpoint for assessing full-year trajectory and the earnings magnitude required in H2."
+   }
+  },
+  {
+   "when": {
+    "ko": "2026년 11월 중순",
+    "en": "Mid-November 2026"
+   },
+   "what": {
+    "ko": "2026년 3분기 실적 공시 — 9개월 누적 영업이익을 통해 Q4 단일 분기가 달성해야 하는 이익 규모를 역산할 수 있어 연간 실적 전망의 정밀도가 크게 높아진다.",
+    "en": "Q3 2026 earnings disclosure — Cumulative 9-month operating profit reveals the magnitude of Q4 delivery needed to meet full-year targets, significantly narrowing the range of annual estimates."
+   }
+  },
+  {
+   "when": {
+    "ko": "2026년 10~12월 (공공 발주 성수기)",
+    "en": "October–December 2026 (Public-Sector Procurement Season)"
+   },
+   "what": {
+    "ko": "공공기관·국방 분야 보안 솔루션 발주 공고 및 수주 동향 모니터링 — N2SF 체계 전환 관련 신규 수주 포함 여부와 Q4 발주 규모가 연간 실적을 좌우하는 핵심 변수다.",
+    "en": "Monitor public institution and defense procurement notices and contract awards — whether N2SF-related new orders materialize and the scale of Q4 orders is the single most important variable determining full-year earnings."
+   }
+  },
+  {
+   "when": {
+    "ko": "2027년 3~4월",
+    "en": "March–April 2027"
+   },
+   "what": {
+    "ko": "2026년 연간 실적 확정 및 DPS 결정 공시 — 배당 유지·상향 여부와 함께 클라우드·AI 보안 신사업의 초기 매출 기여 반영 여부를 확인할 수 있는 시점이다.",
+    "en": "Final FY2026 earnings confirmation and DPS announcement — Key watch items are DPS sustainability or increase and any first measurable revenue contribution from cloud and AI security initiatives."
+   }
+  },
+  {
+   "when": {
+    "ko": "상시 모니터링 (2026년 하반기)",
+    "en": "Ongoing (H2 2026)"
+   },
+   "what": {
+    "ko": "정부 N2SF 가이드라인 이행 후속 조치 및 조달청 보안 솔루션 발주 공고 모니터링 — 정책 집행 속도와 시큐브 관련 제품군의 수요 방향성을 선행 가늠할 수 있는 지표다.",
+    "en": "Monitor government follow-up actions on N2SF implementation and public procurement notices for security solutions — early leading indicators of policy-driven demand that can precede formal earnings confirmation."
+   }
+  }
+ ],
+ "verdict": {
+  "body": {
+   "ko": "시큐브는 국내 서버보안 분야에서 독보적인 기술 원천과 장기 레퍼런스를 보유한 방어적 소형 소프트웨어 기업으로, 30%대 영업이익률과 무부채에 가까운 재무구조가 핵심 강점이다. 2025년 매출·이익 모두 회복세를 기록했고, 63억원에 달하는 강한 영업현금흐름이 재무 건전성을 뒷받침한다. 자기자본 약 496억원이 시가총액을 크게 웃도는 구조와 DPS 150원의 배당 지속은 자산가치 및 배당 기반의 분석 논거를 제공한다. 반면 연간 이익의 대부분을 Q4 단일 분기에 의존하는 계절성, 4개년 외형 성장 정체, SaaS·클라우드 전환 가시성 부재는 멀티플 확장을 구조적으로 제한하는 과제다. 국내 사이버보안 시장의 구조적 성장과 AI·랜섬웨어 위협 고도화는 시스템보안 수요의 중장기 우호적 기반을 제공하나, 이를 가시적 외형 성장으로 연결하는 실행력의 확인이 필요하다. 2026년 하반기 공공 발주 실현 규모, N2SF 관련 신규 수주 여부, 클라우드·AI 보안 신사업의 매출 기여 가시화가 향후 전망의 핵심 관전 포인트다.",
+   "en": "Secuve is a defensively positioned micro-cap software company with a unique heritage and long-standing references in domestic server system security, underpinned by sustained operating margins above 30% and a near-zero-debt balance sheet. The recovery in both revenue and operating profit in 2025, alongside operating cash flow of KRW 6.32 billion, affirms solid financial resilience. Equity of approximately KRW 49.6 billion substantially exceeding the current market capitalization, combined with sustained DPS of KRW 150, supports value-oriented and income-oriented analytical frameworks. Structural challenges persist, however: near-total dependence on a single Q4 for annual earnings, four years of limited top-line growth, and unclear timelines for cloud and subscription model transition remain caps on multiple expansion. The structurally growing domestic cybersecurity market and escalating AI-powered threats provide a favorable mid-to-long-term demand backdrop for systems security, but translation into visible revenue growth requires demonstrable execution. The scale of H2 2026 public-sector order realization, any N2SF-related new contract wins, and early signals of revenue contribution from cloud and AI security initiatives are the key forward-looking watch items."
+  }
+ },
+ "sources": [
+  "https://comp.fnguide.com/SVO2/asp/SVD_Main.asp?gicode=A131090",
+  "https://m.finance.daum.net/quotes/A131090/news/disclosure/20250318025144",
+  "https://m.thinkpool.com/item/131090",
+  "https://m.irgo.co.kr/IR-COMP/131090/%EC%8B%9C%ED%81%90%EB%B8%8C-%EA%B8%B0%EC%97%85%EC%A0%95%EB%B3%B4",
+  "https://comp.fnguide.com/SVO2/asp/SVD_Invest.asp?pGB=1&cID=&MenuYn=Y&ReportGB=D&NewMenuID=105&stkGb=701&gicode=A131090",
+  "https://www.investing.com/equities/secuve-co-ltd",
+  "http://www.paxnet.co.kr/stock/analysis/main?abbrSymbol=131090",
+  "https://kind.krx.co.kr/common/disclsviewer.do?method=search&acptno=20260515003271&docno=&viewerhost=",
+  "https://alphasquare.co.kr/home/stock-summary?code=131090",
+  "https://m.boannews.com/html/detail.html?idx=140055",
+  "https://www.saramin.co.kr/zf_user/company-info/view/csn/QjRWcU1adVhoNmNrTGprOGtSL21aQT09/company_nm/(%EC%A3%BC)%EC%8B%9C%ED%81%90%EB%B8%8C",
+  "https://m.boannews.com/html/detail.html?idx=132367",
+  "https://ko.wikipedia.org/wiki/%EC%8B%9C%ED%81%90%EB%B8%8C_(%EC%86%8C%ED%94%84%ED%8A%B8%EC%9B%A8%EC%96%B4_%EA%B8%B0%EC%97%85)",
+  "https://www.saramin.co.kr/zf_user/company-info/view/csn/bkVJMzRVczdpTFVERGtQVEVEQjBnZz09/company_nm/(%EC%A3%BC)%EC%8B%9C%ED%81%90%EC%95%84%EC%9D%B4",
+  "https://www.koit.co.kr/news/articleView.html?idxno=99231",
+  "https://www.jobkorea.co.kr/recruit/co_read/c/securityplatform",
+  "https://m.boannews.com/html/detail.html?idx=107932",
+  "https://m.boannews.com/html/detail.html?idx=137107&kind=3"
+ ],
+ "v": 2,
+ "model": "claude-sonnet-4-6",
+ "ticker": "131090",
+ "name": "시큐브",
+ "name_en": "SECUVE Co., Ltd.",
+ "sector": "IT·소프트웨어",
+ "categories": [
+  "IT·소프트웨어"
+ ],
+ "market": "코스닥",
+ "reportDate": "2026-06-19",
+ "reportTs": "2026-06-19 05:32",
+ "dataDate": "20260618",
+ "quant": {
+  "asOf": "2026-06-18",
+  "fs_basis": "연결(CFS) · DART 공시 확정치 · 지배주주 기준 순이익",
+  "annual": [
+   {
+    "year": 2025,
+    "rev": 13438054169,
+    "op": 4313922657,
+    "np": 4698796110,
+    "np_owner": 4698796110,
+    "equity": 49629200916,
+    "equity_owner": 49629200916,
+    "liab": 3323461394,
+    "cfo": 6324541140,
+    "eps_basic": 614,
+    "opm": 32.1,
+    "roe": 9.5,
+    "debt_ratio": 6.7
+   },
+   {
+    "year": 2024,
+    "rev": 12075656393,
+    "op": 3420835998,
+    "np": 3027423444,
+    "np_owner": 3027423444,
+    "equity": 45897760141,
+    "equity_owner": 45897760141,
+    "liab": 2634226873,
+    "cfo": 3116198231,
+    "eps_basic": 77,
+    "opm": 28.3,
+    "roe": 6.6,
+    "debt_ratio": 5.7
+   },
+   {
+    "year": 2023,
+    "rev": 14445671814,
+    "op": 4453118488,
+    "np": 5786793032,
+    "np_owner": 5786793032,
+    "equity": 44845315325,
+    "equity_owner": 44845315325,
+    "liab": 4069633650,
+    "cfo": 3577777059,
+    "eps_basic": 143,
+    "opm": 30.8,
+    "roe": 12.9,
+    "debt_ratio": 9.1
+   },
+   {
+    "year": 2022,
+    "rev": 13702794762,
+    "op": 5304365069,
+    "np": 4825964033,
+    "np_owner": 4825964033,
+    "equity": 41762825842,
+    "equity_owner": 41762825842,
+    "liab": 4988273346,
+    "cfo": 7600418732,
+    "eps_basic": 118,
+    "opm": 38.7,
+    "roe": 11.6,
+    "debt_ratio": 11.9
+   }
+  ],
+  "quarterly": [
+   {
+    "q": "2025Q1",
+    "rev": 2669600064,
+    "op": 272446225,
+    "np_owner": 502731424
+   },
+   {
+    "q": "2025Q2",
+    "rev": 2251407930,
+    "op": 100886695,
+    "np_owner": 273812082
+   },
+   {
+    "q": "2025Q3",
+    "rev": 2697747879,
+    "op": 564495342,
+    "np_owner": 701706947
+   },
+   {
+    "q": "2025Q4",
+    "rev": 5819298296,
+    "op": 3376094395,
+    "np_owner": 3220545657
+   },
+   {
+    "q": "2026Q1",
+    "rev": 2323573352,
+    "op": 6936631,
+    "np_owner": 233682957
+   }
+  ],
+  "valuation": {
+   "price": 3815,
+   "mcap": 0.0292,
+   "shares": 7658221,
+   "total_shares": 7658221,
+   "wavg_shares": 7652762,
+   "per": 6.0,
+   "eps": 632,
+   "pbr": 0.6,
+   "bps": 6369,
+   "roe_ttm": 9.4,
+   "ttm_window": "2025Q2~2026Q1",
+   "ttm_np_owner": 4429747643,
+   "pbr_krx": 0.59,
+   "bps_krx": 6487.0,
+   "basis": "PER·EPS·PBR·BPS 모두 자체 산출(네이버·토스와 동일 방식) · 배당은 DART 공시 주당현금배당금(보완:KRX) ÷ 현재가",
+   "dps": 150.0,
+   "div": 3.93
+  }
+ }
+}
