@@ -61,3 +61,17 @@ jobs:
           done
           [ -n "$ok" ] || exit 1
 
+      # 미완료(VALUATION_REMAINING)면 다음 청크를 스스로 재실행 → 불안정한 cron에 의존하지 않고
+      # 전 종목 수집을 끝까지 진행. VALUATION_COMPLETE면 멈춤(cron이 주기적으로 다시 시작).
+      - name: 미완료 시 self-chain
+        if: ${{ always() && inputs.tickers == '' && inputs.force == '' }}
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          if grep -q "VALUATION_COMPLETE" data/valuation_run.log 2>/dev/null; then
+            echo "→ 수집 완료. self-chain 중단."
+          else
+            echo "→ 미완료(남은 종목 있음). 다음 수집 청크 재실행."
+            gh workflow run collect_valuation.yml -f budget_min=50
+          fi
+

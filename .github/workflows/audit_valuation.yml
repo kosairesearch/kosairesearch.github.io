@@ -19,6 +19,7 @@ jobs:
     timeout-minutes: 70
     permissions:
       contents: write
+      actions: write
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-python@v5
@@ -42,3 +43,17 @@ jobs:
             git rebase --abort 2>/dev/null || true; sleep $((i*3))
           done
           [ -n "$ok" ] || exit 1
+
+      # 미완료(AUDIT_REMAINING)면 다음 검증 청크를 스스로 재실행 → cron에 의존하지 않고
+      # 전 종목 검증을 끝까지 진행. AUDIT_COMPLETE면 멈춤(cron이 주기적으로 재시작).
+      - name: 미완료 시 self-chain
+        if: ${{ always() }}
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          if grep -q "AUDIT_COMPLETE" data/audit_run.log 2>/dev/null; then
+            echo "→ 검증 완료. self-chain 중단."
+          else
+            echo "→ 미완료(남은 종목 있음). 다음 검증 청크 재실행."
+            gh workflow run audit_valuation.yml -f budget_min=50
+          fi
