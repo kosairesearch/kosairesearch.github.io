@@ -58,17 +58,20 @@ jobs:
             echo "→ 완료 상태. 재가동 불필요."
             exit 0
           fi
-          # 진행 중인 리포트 v2 run이 있으면 건드리지 않음(중복 방지)
+          # 진행 중인 run 수가 샤드 수 이상이면 충분 → 대기.
+          # 샤드 일부가 죽어 부족해지면(전부 0이 아니어도) 풀세트 재가동해 병렬도를 회복한다.
+          # 파일이 겹치지 않게 커밋되므로 약간의 중복은 충돌 없이 무해(소량 배치 낭비뿐).
           active=$(gh run list --workflow=generate_reports_v2.yml \
                      --status in_progress --json databaseId --jq 'length')
           queued=$(gh run list --workflow=generate_reports_v2.yml \
                      --status queued --json databaseId --jq 'length')
-          echo "진행 중 $active · 대기 $queued"
-          if [ "${active:-0}" -gt 0 ] || [ "${queued:-0}" -gt 0 ]; then
-            echo "→ 이미 진행 중. 워치독 대기."
+          running=$(( ${active:-0} + ${queued:-0} ))
+          echo "진행 중 $active · 대기 $queued (합계 $running / 목표 $SHARDS)"
+          if [ "$running" -ge "$SHARDS" ]; then
+            echo "→ 충분히 진행 중. 워치독 대기."
             exit 0
           fi
-          echo "→ 진행 중인 run 없음 + 남은 $remaining개 → 샤드 ${SHARDS}개 병렬 백필 재가동"
+          echo "→ 진행 $running < $SHARDS + 남은 $remaining개 → 샤드 ${SHARDS}개 병렬 백필 재가동"
           i=0
           while [ "$i" -lt "$SHARDS" ]; do
             gh workflow run generate_reports_v2.yml \
