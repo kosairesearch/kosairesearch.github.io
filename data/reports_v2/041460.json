@@ -1,0 +1,356 @@
+{
+ "title": {
+  "ko": "이익률 배증 달성, 글로벌 인증이 다음 고리",
+  "en": "Profitability Doubled; Global Authentication Is the Next Growth Driver"
+ },
+ "lead": {
+  "ko": "공동인증 핵심 시장의 수익성을 2년 만에 회복·배증시킨 데 이어, 2026년 1분기 매출이 전년 동기 대비 15.8% 증가하며 다년간의 외형 감소 추세를 처음으로 반전시킬 시험대에 올랐다.",
+  "en": "Having effectively doubled operating margins within two years through cost efficiency and service-mix management, Q1 2026 revenue surged 15.8% year-on-year — the first credible test of whether the multi-year revenue slide is genuinely reversing."
+ },
+ "keypoints": [
+  {
+   "ko": "영업이익률 2023년 8.2% → 2025년 18.3%로 2년간 10%p 이상 구조적 개선 달성",
+   "en": "Operating margin expanded structurally by over 10 percentage points in two years, from 8.2% (2023) to 18.3% (2025)"
+  },
+  {
+   "ko": "2026년 1분기 매출 110억 원(+15.8% YoY)·영업이익 25억 원(+21.6%)으로 최근 분기 최대치 기록",
+   "en": "Q1 2026 revenue of ₩11.0bn (+15.8% YoY) and operating profit of ₩2.5bn (+21.6%) represent the strongest quarterly figures in recent periods"
+  },
+  {
+   "ko": "2025년 12월 기준 법인용 공동인증서 시장 점유율 약 29% 유지; 개인 영역은 4%로 민간인증에 잠식",
+   "en": "~29% market share in corporate universal joint-certificates maintained (as of December 2025); personal-segment share limited to ~4% amid private-certificate proliferation"
+  },
+  {
+   "ko": "TuringSign 브랜드로 2025년 1월부터 아시아·유럽 SSL 인증서 본격 공급, 미국 멘로파크 거점 추가",
+   "en": "TuringSign brand began active SSL certificate supply to Asian and European markets in January 2025, with a US presence anchored in Menlo Park"
+  },
+  {
+   "ko": "KISA·과기정통부의 2026년 양자내성암호(PQC) 시범전환 사업 추진으로 차세대 인증 전환 수요 기대",
+   "en": "KISA and the Ministry of Science are advancing a 2026 PQC pilot migration program, expected to generate next-generation authentication transition demand"
+  }
+ ],
+ "business": {
+  "ko": "한국전자인증(브랜드명 CrossCert)은 1999년 3월에 설립된 국내 공인인증 선도 기업으로, 2010년 11월 코스닥에 상장됐다. 사업은 공동인증서비스·글로벌인증서비스·인증솔루션의 세 부문으로 구성되며, 공동인증서비스가 전체 매출의 약 63%를 차지하는 핵심 축이다. 공동인증서비스는 기업·공공기관 대상 법인용 범용 공동인증서 발급·관리를 중심으로 하며, 2025년 12월 말 기준 법인용 시장 점유율 약 29%를 확보해 한국정보인증과 함께 과점 체계를 형성하고 있다. 글로벌인증서비스(매출 비중 약 13%)는 SSL/TLS 인증서 리셀러 사업과 자체 브랜드 TuringSign을 통한 직접 발급 서비스로 구성된다. 인증솔루션(약 23%)은 PKI 기반 전자서명·전자계약·전자세금계산서 등 솔루션 구축 사업이 주를 이룬다. 경쟁 구도는 전통 PKI 사업자(한국정보인증·드림시큐리티·이니텍 등)와 민간 간편인증 플랫폼(카카오페이·PASS·네이버·토스)으로 양분된다. 글로벌 확장 전략으로는 스위스 WISeKey와 제휴해 설립한 TuringSign Global SA가 2025년 1월부터 아시아·유럽 시장에 SSL 인증서를 공급하고 있으며, 미국 멘로파크를 거점으로 북미 사업도 추진 중이다. 차세대 기술로는 FIDO 기반 간편인증·클라우드 전자서명·Zero Trust 보안·양자내성암호(PQC) 연구개발을 병행하고 있다.",
+  "en": "Korea Electronic Certification Authority (brand name CrossCert) was founded in March 1999 and listed on KOSDAQ in November 2010. Business is organized across three segments — joint certificate services, global certification services, and certification solutions — with joint certificate services accounting for approximately 63% of consolidated revenue. This core segment centers on issuing and managing corporate and public-sector universal joint certificates, holding an estimated 29% market share in the corporate segment as of December 2025, forming a duopoly alongside Korea Information Certificate Authority. Global certification services (~13% of revenue) includes SSL/TLS certificate reselling and direct issuance under the proprietary TuringSign brand. The certification solutions segment (~23%) covers PKI-based project deployments for electronic signatures, e-contracts, and e-tax invoices. Competition comes from traditional PKI operators (Korea Information Certificate Authority, Dream Security, Initec) and private easy-authentication platforms (KakaoPay, PASS, Naver, Toss). On the global front, TuringSign Global SA — established in Geneva in June 2023 in partnership with WISeKey — began actively supplying SSL certificates to Asian and European markets from January 2025, with a US operation anchored in Menlo Park. Next-generation R&D encompasses FIDO-based easy authentication, cloud e-signatures, Zero Trust architecture, and post-quantum cryptography (PQC)."
+ },
+ "earnings": {
+  "ko": "연결 연간 매출은 2022년 385억 원을 고점으로 2023년 383억 원, 2024년 371억 원, 2025년 367억 원으로 4년간 완만한 감소세를 이어왔다. 반면 영업이익은 2023년 저점(31억 원, OPM 8.2%) 이후 2024년 47억 원(OPM 12.7%), 2025년 67억 원(OPM 18.3%)으로 2년 만에 뚜렷하게 회복·배증됐다. 이 마진 개선의 배경은 인건비·감가상각 등 고정비 효율화와 고수익 인증서비스 매출 비중 유지로 해석된다. 영업활동현금흐름 역시 2023년 45억 원에서 2025년 65억 원으로 증가해 이익 개선이 현금 기반으로도 뒷받침됐다. 분기 흐름을 보면 2025년 2분기(영업이익 12억 원, OPM 13.3%)가 계절적 비수기임을 확인할 수 있으며, 1·3분기는 OPM이 21% 내외로 양호한 수준을 기록했다. 2025년 4분기는 영업이익 16억 원에 비해 지배주주 귀속 순이익이 7억 원에 그쳐, 영업외 비용 증가 또는 법인세 부담이 반영된 것으로 추정된다. 2026년 1분기는 매출 110억 원(전년 동기 대비 +15.8%), 영업이익 25억 원(+21.6%), 지배주주 귀속 순이익 23억 원(+45.2%)을 기록하며 최근 분기 최대 실적을 시현했고, OPM도 약 23%로 한층 높아졌다. 부채비율은 2022년 46.7%에서 2025년 33.6%로 꾸준히 낮아지며 재무 건전성도 개선 중이다.",
+  "en": "Consolidated annual revenue declined gradually from ₩38.5bn in 2022 to ₩38.3bn (2023), ₩37.1bn (2024), and ₩36.7bn in 2025. Operating profit, however, troughed in 2023 at ₩3.1bn (OPM 8.2%) before recovering sharply to ₩4.7bn (OPM 12.7%) in 2024 and ₩6.7bn (OPM 18.3%) in 2025 — effectively doubling from the trough within two years. This margin recovery is attributed to fixed-cost efficiency (labor, depreciation management) and maintenance of a high-margin service mix. Operating cash flow reinforced the trend, rising from ₩4.5bn in 2023 to ₩6.5bn in 2025. On a quarterly basis, Q2 2025 (operating profit ₩1.2bn, OPM 13.3%) is the seasonally soft period, while Q1 and Q3 2025 both registered OPMs around 21%. In Q4 2025, controlling-interest net profit of ₩0.65bn fell well short of operating profit of ₩1.6bn, suggesting elevated non-operating charges or tax expense. Q1 2026 delivered the strongest quarterly results in recent history: revenue of ₩11.0bn (+15.8% YoY), operating profit of ₩2.5bn (+21.6%), and controlling-interest net profit of ₩2.3bn (+45.2%), with OPM reaching approximately 23%. The debt ratio also declined steadily from 46.7% in 2022 to 33.6% in 2025, reflecting accumulating retained earnings."
+ },
+ "industry": {
+  "ko": "2020년 12월 공인전자서명제도 폐지 이후 한국 인증 시장은 공동인증서와 민간 간편인증이 공존하는 복수 체계로 전환됐다. 카카오페이·PASS·네이버·토스 등 민간인증서는 개인 사용자 영역을 빠르게 확대하고 있으나, 법적 효력이 필요한 기업·공공기관 법인 인증에서는 PKI 기반 공동인증서가 여전히 핵심 인프라로 기능한다. PKI 기반 인증솔루션 시장은 경쟁 심화로 가격 하락 압력이 지속되는 반면, 전자계약·전자입찰·전자세금계산서 등 전자문서 영역은 규제 환경을 등에 업고 안정적 수요를 유지한다. 글로벌 전자서명 시장은 2025년 약 98억 5천만 달러에서 2032년 약 1,044억 달러로 연평균 40.1% 성장이 전망되는 고성장 섹터로, AI·블록체인 융합이 시장 변화를 이끌고 있다. KISA와 과기정통부는 2026년 양자내성암호(PQC) 시범전환 사업을 본격 추진 중이며, 이는 중기적으로 PKI 인프라 전환 수요를 창출해 관련 기술을 내재화한 인증 사업자에게 새로운 시장 기회를 열어줄 것으로 기대된다. 국내 인증 시장은 법적 표준 인증체계와 민간 편의성 서비스 간 경쟁이 구조화되는 가운데, 공공·금융권의 법인 인증 수요가 안정적 방어선 역할을 지속하고 있다.",
+  "en": "Since the abolition of Korea's mandatory public-certificate system in December 2020, the authentication market has bifurcated into the legacy joint-certificate framework and an expanding private easy-authentication ecosystem. Private certificates from KakaoPay, PASS, Naver, and Toss have rapidly captured the personal-user segment, but PKI-based joint certificates remain critical infrastructure for legally enforceable corporate and public-sector authentication. PKI-based solution deployments face intensifying price competition, while electronic document platforms (e-contracts, e-bidding, e-invoices) continue to benefit from a favorable regulatory environment. The global digital-signature market is projected to grow from approximately USD 9.85bn in 2025 to USD 104.49bn by 2032 at a CAGR of 40.1%, driven by AI and blockchain integration. KISA and the Ministry of Science are actively advancing a PQC pilot migration program in 2026, expected to generate medium-term demand for PKI infrastructure upgrades and opening a new market for companies with embedded cryptographic expertise. In the domestic market, the structural tension between legally-standardized authentication and consumer-convenience-focused services continues, while stable corporate and financial-sector demand for legally binding authentication provides a durable revenue floor."
+ },
+ "outlook": {
+  "ko": "TuringSign 브랜드의 글로벌 확장은 2025년 1월 아시아·유럽 시장 공급 개시를 기점으로 구체화되고 있으며, 미국 멘로파크 거점을 통해 북미 시장 진입도 진행 중이다. 국내 공동인증 부문은 법인 시장 점유율 방어와 함께 클라우드 전자서명·FIDO 간편인증·비대면 인증서비스 등 차세대 서비스 전환을 통해 수익 기반을 유지하는 방향이다. 양자내성암호(PQC) 연구개발도 지속 중으로, KISA 2026년 시범전환 사업이 진전될 경우 인증솔루션 공급 기회가 열릴 수 있다. 인공지능과 인증 기술을 융합한 AI 강화 글로벌 인증 서비스도 TuringSign 플랫폼을 통해 확산이 추진되고 있다. 2026년 1분기의 강한 매출 반등이 구조적 추세 전환인지 확인하기 위해서는 계절적 비수기인 2분기와 3분기 실적 흐름을 지속 모니터링할 필요가 있다. 연간 주당배당금(DPS) 96원 기조가 유지되는 한, 이익 성장과 연동한 배당 확대 가능성도 주주환원 측면에서 관심 사항이 된다.",
+  "en": "TuringSign's global expansion has been taking concrete shape since January 2025, when active SSL certificate supply to Asian and European markets began, with North American operations advancing through a Menlo Park base. The domestic joint-certificate segment aims to defend corporate market share while pivoting revenue toward cloud e-signatures, FIDO-based easy authentication, and non-face-to-face services. Ongoing PQC R&D could yield solution-supply opportunities as KISA's 2026 pilot migration program advances. AI-enhanced global authentication services are also being expanded through the TuringSign platform. Confirming whether Q1 2026's sharp revenue rebound marks a structural reversal will require monitoring Q2 (seasonally soft) and Q3 results. Provided the annual DPS of ₩96 is maintained, any upward revision in line with earnings improvement would represent a positive shareholder-return signal."
+ },
+ "valuation_comment": {
+  "ko": "헤드라인 주당순이익(EPS) 295원과 주당순자산(BPS) 3,572원을 기준으로 보면, 현재 주가는 순자산 가치와 유사한 수준에 형성되어 있어 순자산 대비 실질적인 프리미엄이 없는 구간에 해당한다. 수익성 회복이 가시화된 현 시점은 마진이 압박됐던 2023년에 코스닥 IT소프트웨어 섹터 평균을 하회하는 배수로 거래됐던 시기와 비교해 일정한 재평가가 이루어진 상태다. 연간 DPS 96원 기조 하에 동종 IT서비스 섹터 내 평균과 근접하는 배당 매력을 갖추고 있다. TuringSign 글로벌 매출 기여가 가시화되거나 PQC 수주가 현실화될 경우, 성장 옵션에 대한 추가 밸류에이션 인정 여부가 향후 주요 관심 포인트가 될 것이다. 소형 시가총액에 따른 낮은 거래량과 유동성 할인은 지속적으로 평가 배수를 제약하는 요인으로 작용하고 있다.",
+  "en": "With headline EPS of ₩295 and BPS of ₩3,572, the share price is in a zone proximate to book value, leaving little meaningful premium above net assets. Relative to 2023 — when weak margins drove the stock to multiples below the KOSDAQ IT-software sector average — the recent profitability recovery has supported a partial re-rating. At the current annual DPS of ₩96, the dividend yield is broadly in line with the IT services sector average. If TuringSign's global revenue contribution becomes tangible, or PQC project wins materialize, whether the market assigns incremental value to these growth options will be a key debate. The persistent liquidity discount stemming from a small market capitalization and thin trading volumes continues to constrain the overall valuation multiple."
+ },
+ "bull": [
+  {
+   "title": {
+    "ko": "수익성 구조적 배증 및 현금창출력 강화",
+    "en": "Structural Margin Doubling and Strengthened Cash Generation"
+   },
+   "body": {
+    "ko": "영업이익률이 2023년 8.2%에서 2025년 18.3%로 2년간 10%p 이상 확대됐으며, 영업활동현금흐름도 같은 기간 45억 원에서 65억 원으로 증가했다. 비용 효율화와 고마진 인증서비스 비중 유지가 핵심 드라이버로 작용했고, 부채비율도 2022년 46.7%에서 2025년 33.6%로 낮아져 재무 안전성이 동반 강화됐다. 수익성 개선이 손익계산서와 현금흐름표 모두에서 확인된다는 점에서 구조적 체질 개선으로 평가할 수 있다.",
+    "en": "Operating margin expanded more than 10 percentage points in two years from 8.2% (2023) to 18.3% (2025), while operating cash flow rose from ₩4.5bn to ₩6.5bn over the same period. Cost efficiency and a maintained high-margin service mix were the primary drivers; the debt ratio declining from 46.7% to 33.6% reinforces the overall financial improvement. The fact that profitability improvement is confirmed in both the income statement and cash flow statement supports its characterization as a structural quality improvement."
+   }
+  },
+  {
+   "title": {
+    "ko": "2026년 1분기 매출·이익 동반 두 자릿수 반등",
+    "en": "Double-Digit Revenue and Profit Rebound in Q1 2026"
+   },
+   "body": {
+    "ko": "2026년 1분기 매출 110억 원(전년 동기 대비 +15.8%), 영업이익 25억 원(+21.6%), 지배주주 귀속 순이익 23억 원(+45.2%)으로 최근 분기 중 가장 강한 실적을 기록했다. OPM 약 23%는 2025년 연간 OPM 18.3%를 상회하는 수준으로, 단기적 이익 레버리지가 확대되고 있음을 보여준다. 이는 4년간 지속됐던 연간 매출 감소 추세가 반전될 가능성을 시사하는 첫 번째 구체적인 신호로 해석된다.",
+    "en": "Q1 2026 delivered revenue of ₩11.0bn (+15.8% YoY), operating profit of ₩2.5bn (+21.6%), and controlling-interest net profit of ₩2.3bn (+45.2%) — the strongest quarterly results in recent history. An OPM of approximately 23% exceeds the full-year 2025 OPM of 18.3%, indicating expanding earnings leverage. This represents the first concrete signal that the four-year annual revenue decline may be poised to reverse."
+   }
+  },
+  {
+   "title": {
+    "ko": "TuringSign 글로벌 확장 및 PQC 성장 옵션 내재",
+    "en": "TuringSign Global Expansion and Embedded PQC Growth Option"
+   },
+   "body": {
+    "ko": "TuringSign Global SA를 통한 아시아·유럽·북미 SSL 인증서 공급이 본격화되면서 국내 시장 성숙의 한계를 글로벌에서 돌파할 구조가 마련됐다. KISA·과기정통부가 2026년 PQC 시범전환 사업을 추진 중이어서 PKI 핵심 기술을 내재화한 동사에게 관련 솔루션 수주 기회가 열릴 수 있다. 글로벌 전자서명 시장의 고성장 전망(CAGR 40.1%)과 PQC 전환 수요는 장기 성장 옵션으로서의 가치를 뒷받침한다.",
+    "en": "TuringSign Global SA's active SSL certificate supply to Asian, European, and US markets provides a structural path to overcome domestic market saturation limitations. With KISA and the Ministry of Science advancing a 2026 PQC pilot migration program, the company's core PKI competencies position it as a potential solution provider. The high projected growth rate of the global digital-signature market (CAGR 40.1%) and rising PQC transition demand underpin the long-term growth option value."
+   }
+  }
+ ],
+ "bear": [
+  {
+   "title": {
+    "ko": "연간 매출 4년 연속 감소 추세",
+    "en": "Four Consecutive Years of Annual Revenue Decline"
+   },
+   "body": {
+    "ko": "연결 매출은 2022년 385억 원에서 2025년 367억 원으로 4년 연속 줄었으며, 개인용 공동인증서 시장 점유율은 4%로 낮아진 상태다. 민간 간편인증의 개인 시장 잠식이 지속되고 있어 공동인증 외형 성장에 구조적 제약이 남아 있다. 2026년 1분기의 매출 반등이 지속 가능한 추세 전환인지는 2~3분기 데이터가 더 쌓여야 확인이 가능하다.",
+    "en": "Consolidated revenue fell for four consecutive years from ₩38.5bn in 2022 to ₩36.7bn in 2025, and the personal-segment joint-certificate share has declined to approximately 4%. The continued erosion of the personal market by private easy-authentication services represents a structural headwind to joint-certificate revenue growth. Whether Q1 2026's revenue rebound constitutes a durable trend reversal will only become clear as Q2 and Q3 data accumulate."
+   }
+  },
+  {
+   "title": {
+    "ko": "Q4 2025 순이익 급감과 분기 이익 변동성",
+    "en": "Sharp Q4 2025 Net Profit Drop and Quarterly Earnings Volatility"
+   },
+   "body": {
+    "ko": "2025년 4분기 지배주주 귀속 순이익은 7억 원으로, 영업이익(16억 원)의 절반에도 미치지 못했다. 영업이익과 최종 순이익 간의 큰 괴리 원인(비용 증가·일회성 손실·법인세 부담 등)이 명확하지 않아 수익 예측 가능성을 낮춘다. 이러한 분기별 순이익 변동이 재현된다면 연간 이익 추정치의 신뢰도가 떨어질 수 있다.",
+    "en": "Q4 2025 controlling-interest net profit of ₩0.65bn was less than half of operating profit of ₩1.6bn. The cause of this large operating-to-net profit divergence — whether elevated non-operating costs, one-off losses, or higher tax charges — remains unclear, reducing earnings predictability. Recurrence of such quarterly net-profit volatility would lower confidence in full-year earnings estimates."
+   }
+  },
+  {
+   "title": {
+    "ko": "소형 시총·유동성 제약 및 글로벌 사업 초기 투자 부담",
+    "en": "Small-Cap Liquidity Constraints and Early-Stage Global Investment Burden"
+   },
+   "body": {
+    "ko": "소규모 시가총액으로 인해 기관 투자자의 접근성이 제한되고 거래량이 낮아 유동성 프리미엄 할인이 수반된다. TuringSign의 아시아·유럽·미국 시장 진출은 마케팅·인프라 비용이 선행돼야 하므로 단기 수익성에 부담이 될 수 있다. 글로벌 인증 시장에서 DigiCert·Sectigo 등 대형 경쟁사 대비 의미 있는 점유율 확보까지는 상당한 시간과 자원이 소요될 전망이다.",
+    "en": "The small market capitalization limits institutional access and attaches a persistent liquidity discount due to thin trading volumes. TuringSign's expansion into Asian, European, and US markets requires upfront marketing and infrastructure costs that could pressure near-term profitability. Capturing meaningful market share against established global competitors such as DigiCert and Sectigo is expected to require considerable time and resources."
+   }
+  }
+ ],
+ "risks": [
+  {
+   "cat": {
+    "ko": "시장 구조 리스크 — 민간인증 확산",
+    "en": "Market Structure Risk — Private Authentication Proliferation"
+   },
+   "body": {
+    "ko": "공인전자서명제도 폐지 이후 카카오페이·PASS·네이버 등 민간인증서가 개인 시장을 빠르게 잠식했으며, 이 흐름이 기업·공공 영역으로 확산될 경우 공동인증서비스의 수익 기반이 추가 위협을 받을 수 있다. 정부가 다양한 인증 수단 간 상호운용성을 확대하는 방향으로 규제를 정비하고 있어, 공동인증서의 법적·제도적 우위가 점차 희석될 가능성이 있다. 이 리스크는 개인 인증 영역에서 시장 점유율 4%로 이미 현실화된 상태다.",
+    "en": "Since the 2020 abolition of mandatory public-certificate requirements, private certificates from KakaoPay, PASS, and Naver have rapidly displaced joint certificates in the personal segment; extension of this trend to corporate and public domains could further erode the joint-certificate revenue base. Government moves toward broader interoperability among authentication methods could gradually dilute the legal and institutional advantages of joint certificates. This risk has already materialized in the personal segment, where market share stands at approximately 4%."
+   }
+  },
+  {
+   "cat": {
+    "ko": "기술 패러다임 리스크 — PKI와 양자컴퓨팅",
+    "en": "Technology Paradigm Risk — PKI and Quantum Computing"
+   },
+   "body": {
+    "ko": "현재 전자인증 기반인 PKI는 충분한 연산력의 양자컴퓨터가 실현될 경우 공개키 암호체계의 안전성 가정이 훼손될 수 있다. 이는 기존 사업 모델에 장기적 위협인 동시에 PQC 기반 전환 서비스를 선점하면 새로운 수익원이 되는 양면적 위험이다. 동사가 PQC R&D를 진행하고 있으나, 전환 사업의 수익화 시점과 규모는 여전히 불확실하다.",
+    "en": "The PKI infrastructure underlying current electronic authentication could have its security assumptions undermined by sufficiently powerful quantum computers, threatening the existing business model while simultaneously offering a new revenue stream to proactive PQC transition service providers. Although the company is conducting PQC R&D, the timing and scale of commercialization remain uncertain."
+   }
+  },
+  {
+   "cat": {
+    "ko": "해외 사업 리스크 — TuringSign 수익화 지연",
+    "en": "Overseas Business Risk — TuringSign Monetization Delay"
+   },
+   "body": {
+    "ko": "TuringSign의 글로벌 SSL 인증서 사업은 DigiCert·Sectigo 등 기존 대형 플레이어와의 경쟁 구도 속에서 초기 단계에 있다. 마케팅·인프라 투자 비용이 선행되는 구조에서 의미 있는 점유율 확보까지 상당한 시간이 소요될 수 있으며, 해외 자회사 손익에 대한 환율 변동 영향도 고려해야 한다. 수익화가 예상보다 지연될 경우 초기 투자 비용이 그룹 전체 수익성에 부담이 될 수 있다.",
+    "en": "TuringSign's global SSL certificate business is in its early stages and competes against established players such as DigiCert and Sectigo. With marketing and infrastructure costs preceding meaningful market-share gains, the path to profitability for the global segment may be lengthy, and foreign-exchange fluctuations could affect overseas subsidiary earnings. If monetization is delayed beyond expectations, initial investment costs could weigh on group-level profitability."
+   }
+  }
+ ],
+ "checkpoints": [
+  {
+   "when": {
+    "ko": "2026년 8월 중순",
+    "en": "Mid-August 2026"
+   },
+   "what": {
+    "ko": "2026년 2분기 실적 발표: 1분기의 매출 성장(+15.8% YoY)이 계절적 비수기인 2분기에도 유지되는지, OPM이 전년 동기 수준(13.3%)을 웃도는지 확인해 연간 이익 방향성을 점검.",
+    "en": "Q2 2026 earnings release: confirm whether Q1's 15.8% YoY revenue growth extends into the seasonally soft Q2 and whether OPM exceeds the prior-year Q2 level of 13.3% — key inputs for full-year earnings directional assessment."
+   }
+  },
+  {
+   "when": {
+    "ko": "2026년 11월 중순",
+    "en": "Mid-November 2026"
+   },
+   "what": {
+    "ko": "2026년 3분기 실적 발표: 계절적 강세 분기(Q3)의 OPM이 2025년 3분기(약 21%)를 상회하는지 확인해 수익성 개선 지속 여부 및 연간 달성 궤도를 점검.",
+    "en": "Q3 2026 earnings release: verify whether OPM in the seasonally strong Q3 exceeds the approximately 21% recorded in Q3 2025, serving as a check on the sustainability of profitability improvement and full-year trajectory."
+   }
+  },
+  {
+   "when": {
+    "ko": "2026년 연중",
+    "en": "Throughout 2026"
+   },
+   "what": {
+    "ko": "KISA PQC 시범전환 사업 수주 동향: 과기정통부·KISA가 추진하는 2026년 양자내성암호 시범전환 사업에서 인증솔루션 공급자로의 수주 여부와 계약 규모를 확인. 수주 성사 시 차세대 성장 가시성이 높아지는 트리거가 될 수 있음.",
+    "en": "KISA PQC pilot project contract awards: monitor whether the company secures a role as a certification solution provider in KISA/MSIT's 2026 PQC pilot migration program and the scale of any resulting contracts — a potential trigger that raises next-generation growth visibility."
+   }
+  },
+  {
+   "when": {
+    "ko": "2026년 하반기 지속 모니터링",
+    "en": "Ongoing H2 2026 Monitoring"
+   },
+   "what": {
+    "ko": "TuringSign 글로벌 매출 기여 가시화: 아시아·유럽·미국 시장에서의 SSL 인증서 판매가 공시나 IR 자료를 통해 구체적으로 확인될 경우, 글로벌 성장 옵션의 실현 가능성을 재평가할 밸류에이션 트리거로 작용.",
+    "en": "TuringSign global revenue visibility: if SSL certificate sales in Asia, Europe, and the US become quantifiable through DART disclosures or IR materials, this will serve as a trigger to reassess the probability of the global growth option materializing."
+   }
+  },
+  {
+   "when": {
+    "ko": "2027년 3월 (연간 배당 결정)",
+    "en": "March 2027 (Annual Dividend Decision)"
+   },
+   "what": {
+    "ko": "주당배당금(DPS) 유지·증가 여부 확인: 2025년 DPS 96원 기조가 이어지는지, 또는 이익 개선에 따라 상향될지 점검. 축소 시 주주환원 정책 변화의 신호로 해석 가능.",
+    "en": "DPS maintenance or increase: check whether the 2025 annual DPS of ₩96 is upheld or raised in line with improved earnings; a reduction would signal a shift in shareholder-return policy."
+   }
+  }
+ ],
+ "verdict": {
+  "body": {
+   "ko": "한국전자인증은 공동인증 시장의 성숙화와 민간 간편인증 경쟁이라는 구조적 압력 속에서도 비용 효율화와 서비스 믹스 관리를 통해 영업이익률을 2023년 저점(8.2%) 대비 두 배 이상인 18.3%(2025년)까지 끌어올렸다. 2026년 1분기에는 매출과 이익이 모두 전년 동기 대비 두 자릿수 성장을 기록하며 4년간 이어진 매출 감소 추세 반전의 첫 번째 유력한 신호를 제시했다. TuringSign 글로벌 확장과 PQC 연구개발은 국내 시장 성숙을 넘을 장기 성장 옵션을 내포하지만, 수익 기여의 시점과 규모는 초기 단계의 불확실성을 내포한다. 재무 건전성 측면에서는 부채비율 33.6%와 꾸준한 플러스 영업현금흐름(2025년 65억 원)이 안정적 기반을 형성하고 있다. 현 주가는 순자산 가치에 근접해 이익 대비 과도한 프리미엄 부담이 없는 구간에 위치한다. 향후 핵심 모니터링 포인트는 ① 2026년 2~3분기 매출 회복세 지속 여부, ② TuringSign 글로벌 매출의 가시적 기여 시점, ③ KISA PQC 시범전환 사업 수주 가시화의 세 가지로 압축된다.",
+   "en": "Despite structural pressures from joint-certificate market maturation and private easy-authentication competition, Korea Electronic Certification has successfully more than doubled its operating margin from the 2023 trough of 8.2% to 18.3% in 2025 through cost efficiency and service-mix management. Q1 2026 delivered double-digit growth in both revenue and profits versus the prior year, providing the first compelling signal that the four-year annual revenue decline may be reversing. TuringSign's global expansion and PQC R&D embed long-term growth options beyond domestic market saturation, but the timing and scale of revenue contribution carry early-stage uncertainties. Financially, the 33.6% debt ratio and consistently positive operating cash flow (₩6.5bn in 2025) provide a stable foundation. The share price near book value carries no excessive earnings-based premium at current levels. The three key monitoring points going forward are: (1) whether revenue growth extends through Q2–Q3 2026, (2) when TuringSign global revenues become visibly material, and (3) whether KISA PQC pilot project awards become concrete."
+  }
+ },
+ "sources": [
+  "https://www.investing.com/equities/korea-electronic-certification-auth",
+  "https://comp.fnguide.com/SVO2/ASP/SVD_Main.asp?gicode=A041460",
+  "https://comp.wisereport.co.kr/company/c1010001.aspx?cmp_cd=041460",
+  "https://m.thinkpool.com/item/041460",
+  "https://comp.fnguide.com/SVO2/asp/SVD_Corp.asp?pGB=1&gicode=A041460&cID=&MenuYn=Y&ReportGB=&NewMenuID=102&stkGb=701",
+  "http://www.thinkpool.com/itemanal/i/analysis/reporting.jsp?code=041460",
+  "https://thevc.kr/koreaelectroniccertificationauthority",
+  "https://kind.krx.co.kr/external/2026/05/15/003172/20260515007249/11013.htm",
+  "https://www.gpki.go.kr/",
+  "https://www.kisa.or.kr/1050609",
+  "https://www.epki.go.kr/",
+  "https://www.crosscert.com/",
+  "https://www.fortunebusinessinsights.com/industry-reports/digital-signature-market-100356",
+  "https://ecoproin.com/2025%EB%85%84-%EA%B3%B5%EC%9D%B8%EC%9D%B8%EC%A6%9D%EC%84%9C-%EC%A2%85%EB%A5%98%EC%99%80-%EC%82%AC%EC%9A%A9%EC%B2%98-%EC%B4%9D%EC%A0%95%EB%A6%AC/",
+  "https://www.igunsul.net/detail_bid/index/bid7928241",
+  "https://www.jobkorea.co.kr/recruit/co_read/c/ccert",
+  "https://news.samsung.com/kr/%EC%82%BC%EC%84%B1%EC%A0%84%EC%9E%90-2026%EB%85%84-1%EB%B6%84%EA%B8%B0-%EC%8B%A4%EC%A0%81-%EB%B0%9C%ED%91%9C",
+  "https://www.thelec.kr/news/articleView.html?idxno=55934"
+ ],
+ "v": 2,
+ "model": "claude-sonnet-4-6",
+ "ticker": "041460",
+ "name": "한국전자인증",
+ "name_en": "KOREA ELECTRONIC CERTIFICATION AUTHORITY",
+ "sector": "IT·소프트웨어",
+ "categories": [
+  "IT·소프트웨어"
+ ],
+ "market": "코스닥",
+ "reportDate": "2026-06-19",
+ "reportTs": "2026-06-19 00:51",
+ "dataDate": "20260618",
+ "quant": {
+  "asOf": "2026-06-18",
+  "fs_basis": "연결(CFS) · DART 공시 확정치 · 지배주주 기준 순이익",
+  "annual": [
+   {
+    "year": 2025,
+    "rev": 36746209552,
+    "op": 6726887202,
+    "np": 4662899834,
+    "np_owner": 4668169063,
+    "equity": 64688853208,
+    "equity_owner": 64573408563,
+    "liab": 21739139118,
+    "cfo": 6453435232,
+    "eps_basic": 252,
+    "opm": 18.3,
+    "roe": 7.2,
+    "debt_ratio": 33.6
+   },
+   {
+    "year": 2024,
+    "rev": 37086529359,
+    "op": 4724845238,
+    "np": 3951063529,
+    "np_owner": 3963448611,
+    "equity": 60613999564,
+    "equity_owner": 60497960132,
+    "liab": 20837523086,
+    "cfo": 5808924742,
+    "eps_basic": 209,
+    "opm": 12.7,
+    "roe": 6.6,
+    "debt_ratio": 34.4
+   },
+   {
+    "year": 2023,
+    "rev": 38340871020,
+    "op": 3140593441,
+    "np": 2374830638,
+    "np_owner": 2376271629,
+    "equity": 53768698184,
+    "equity_owner": 53641254337,
+    "liab": 19371479775,
+    "cfo": 4490295468,
+    "eps_basic": 126,
+    "opm": 8.2,
+    "roe": 4.4,
+    "debt_ratio": 36.0
+   },
+   {
+    "year": 2022,
+    "rev": 38522794762,
+    "op": 4960327256,
+    "np": 3493242776,
+    "np_owner": 3499822507,
+    "equity": 46854807961,
+    "equity_owner": 46729134745,
+    "liab": 21864525190,
+    "cfo": 5365862256,
+    "eps_basic": 185,
+    "opm": 12.9,
+    "roe": 7.5,
+    "debt_ratio": 46.7
+   }
+  ],
+  "quarterly": [
+   {
+    "q": "2025Q1",
+    "rev": 9485764323,
+    "op": 2075665008,
+    "np_owner": 1610836926
+   },
+   {
+    "q": "2025Q2",
+    "rev": 9366791601,
+    "op": 1245171488,
+    "np_owner": 934449744
+   },
+   {
+    "q": "2025Q3",
+    "rev": 8663701047,
+    "op": 1821860520,
+    "np_owner": 1472193086
+   },
+   {
+    "q": "2025Q4",
+    "rev": 9229952581,
+    "op": 1584190186,
+    "np_owner": 650689307
+   },
+   {
+    "q": "2026Q1",
+    "rev": 10979568051,
+    "op": 2524509649,
+    "np_owner": 2339036393
+   }
+  ],
+  "valuation": {
+   "price": 3495,
+   "mcap": 0.0664,
+   "shares": 19000000,
+   "total_shares": 19000000,
+   "wavg_shares": 18273721,
+   "per": 11.8,
+   "eps": 295,
+   "pbr": 0.98,
+   "bps": 3572,
+   "roe_ttm": 8.6,
+   "ttm_window": "2025Q2~2026Q1",
+   "ttm_np_owner": 5396368530,
+   "pbr_krx": 0.97,
+   "bps_krx": 3523.0,
+   "basis": "PER·EPS·PBR·BPS 모두 자체 산출(네이버·토스와 동일 방식) · 배당은 DART 공시 주당현금배당금(보완:KRX) ÷ 현재가",
+   "dps": 96.0,
+   "div": 2.75
+  }
+ }
+}

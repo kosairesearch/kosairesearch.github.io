@@ -1,0 +1,356 @@
+{
+ "title": {
+  "ko": "수주 사이클 저점 통과 여부가 관건 — 4개 사업부 재정비 국면",
+  "en": "Watching for Order-Cycle Trough — Four Segments Under Reorganization"
+ },
+ "lead": {
+  "ko": "2025년 매출 급감·영업손실 전환 후 Q4부터 분기 흑자를 회복했으나, 2차전지 소재 및 물류 자동화 업황 변수가 중기 실적 방향성을 좌우한다.",
+  "en": "After a sharp revenue decline and operating-loss turn in 2025, quarterly profitability returned from Q4; the medium-term earnings trajectory hinges on cathode-material and logistics-automation demand cycles."
+ },
+ "keypoints": [
+  {
+   "ko": "2025년 연간 매출 301억원으로 전년(555억원) 대비 45.8% 급감, 영업손실 27.4억원·순손실 29.0억원으로 전환",
+   "en": "FY2025 revenue fell 45.8% YoY to KRW 30.1bn, swinging to a KRW 2.7bn operating loss and KRW 2.9bn net loss."
+  },
+  {
+   "ko": "2025Q4 영업이익 9.3억원으로 흑자 전환, 2026Q1에도 영업이익 2.0억원 유지하며 손익 개선 연속성 확인",
+   "en": "Operating profitability returned in Q4 2025 (KRW +0.93bn) and held in Q1 2026 (KRW +0.20bn), marking two consecutive quarters of operating income."
+  },
+  {
+   "ko": "K-LAS는 에코프로비엠·엘앤에프 등 양극재 업체에 독점 공급, K-MAS는 CJ대한통운·쿠팡을 핵심 고객으로 보유한 독점적 레퍼런스",
+   "en": "K-LAS is exclusively supplied to cathode-material makers (Ecopro BM, L&F); K-MAS counts CJ Logistics and Coupang as anchor customers."
+  },
+  {
+   "ko": "부채비율 2025년 말 96.4%로 급등(2024년 50.2%), 영업현금흐름 -49.4억원으로 재무 건전성 모니터링 필요",
+   "en": "Debt ratio surged to 96.4% at end-2025 (from 50.2%), and operating cash flow turned negative at KRW -4.9bn, warranting ongoing balance-sheet vigilance."
+  },
+  {
+   "ko": "2026년 주총 렌탈업 사업목적 추가, 미국 MAG IA와 자성이물 검출 설비 공동개발 등 사업 다각화 시도 가시화",
+   "en": "The 2026 AGM added equipment rental to the business scope; joint development with U.S. startup MAG IA targets battery magnetic-impurity detection equipment."
+  }
+ ],
+ "business": {
+  "ko": "코닉오토메이션은 2003년 설립 후 2022년 NH스팩합병을 통해 코스닥에 상장한 산업 자동화 솔루션 기업이다. 사업은 ①제어SW, ②스마트팩토리, ③로봇물류, ④IT인프라 등 4개 부문으로 구성된다. 핵심 제품은 반도체·디스플레이 장비 제어용 EasyCluster, 2차전지 양극재 품질검사 자동화 시스템 K-LAS, AGV 기반 물류 이송 자동화 시스템 K-MAS이며, IT 네트워크 인프라와 보안 솔루션도 함께 제공한다. EasyCluster는 복잡한 반도체 장치 제어 과정을 단순화해 장비 효율을 극대화하는 솔루션으로 창업 초기부터 이어온 핵심 역량이다. K-LAS는 에코프로비엠, 에코프로이엠, 엘앤에프 등 국내 주요 양극재 기업에 독점 공급하며 품질검사 인력을 76% 절감하는 효율성이 강점으로 보고된 바 있다. K-MAS는 CJ대한통운과 쿠팡 대구 물류센터 AGV 기반 물류 자동화 프로젝트를 수주한 레퍼런스를 보유하며, 한 반기 기준으로 전체 매출의 약 63%를 차지할 만큼 비중이 높아진 성장 동력이다. 소프트웨어와 하드웨어 역량을 동시에 갖춘 이기종 시스템 통합 미들웨어 기술이 경쟁 차별점이며, 최대주주는 코스닥 상장사 APS로 2023년 말 기준 약 42.9%의 지분을 보유하고 있다.",
+  "en": "Kornic Automation was founded in 2003 and listed on KOSDAQ in 2022 via a SPAC merger with NH SPAC No. 21. The company operates four segments: (1) Control Software, (2) Smart Factory, (3) Robot Logistics, and (4) IT Infrastructure. Its flagship products are EasyCluster for semiconductor and display device control, K-LAS for automated quality inspection of battery cathode materials, and K-MAS for AGV-based logistics automation, supplemented by IT network infrastructure and security solutions. EasyCluster streamlines complex semiconductor process control, a capability developed since the company's founding. K-LAS is exclusively supplied to major domestic cathode-material producers including Ecopro BM, Ecopro EM, and L&F, with reported labor savings of up to 76% in quality-inspection processes. K-MAS has completed logistics automation projects at CJ Logistics and Coupang's Daegu fulfillment center; at its peak, robot logistics represented approximately 63% of half-year revenues. Integrated middleware technology combining software and hardware expertise serves as its competitive differentiator. The largest shareholder is APS, a KOSDAQ-listed company, which held approximately 42.9% as of late 2023."
+ },
+ "earnings": {
+  "ko": "2022년 매출 301억원에 영업이익률 11.1%로 견고한 수익성을 나타냈으나 순손실(-55.7억원)이 발생해 비영업 요인이 손익을 압박했다. 2023년은 매출 273억원·OPM 6.7%·순이익 23.4억원으로 정상화됐다. 2024년은 K-MAS 대형 프로젝트 효과로 매출이 555억원으로 103% 급증했으나 물류 프로젝트의 높은 원가 구조로 OPM이 0.1%로 급락하고 영업이익은 0.45억원에 그쳤다; 순이익 10.2억원 흑자를 유지했고 영업현금흐름도 22.1억원으로 양호했다. 2025년은 전방 2차전지 소재 업황 부진과 대형 물류 프로젝트 완료 후 신규 수주 공백이 겹치며 매출이 301억원(-45.8%)으로 급감했다; 영업손실 27.4억원(OPM -9.1%), 순손실 29.0억원, 영업현금흐름 -49.4억원으로 현금 소진이 뚜렷했다. 분기별로는 2025Q1(-16.2억원 OP)·Q2(-17.4억원)에 적자가 극심했다가 Q3(-3.0억원)부터 개선되고 Q4(+9.3억원)에 분기 흑자를 회복했다. 2026Q1은 매출 86.0억원·영업이익 2.0억원으로 흑자 기조를 유지했으나 비영업 비용으로 지배주주 귀속 순손실 -0.9억원이 소폭 발생했다. 부채비율은 2024년 50.2%에서 2025년 96.4%로 급등해 자기자본(246억원) 대비 부채(237억원)의 무게가 확연히 커졌다.",
+  "en": "In FY2022, Kornic posted revenue of KRW 30.1bn with an operating margin of 11.1%, though a net loss of KRW -5.6bn was recorded due to non-operating factors. FY2023 returned to normalcy with revenue of KRW 27.3bn, OPM of 6.7%, and net income of KRW 2.3bn. FY2024 saw revenue surge 103% to KRW 55.5bn driven by large K-MAS logistics projects, but OPM collapsed to 0.1% as high project costs compressed margins; operating income was just KRW 0.045bn, net income held at KRW 1.0bn, and operating cash flow was a healthy KRW 2.2bn. FY2025 was severely impacted by a slump in cathode-material end-markets and a new-order lull following project completions, sending revenue down 45.8% to KRW 30.1bn; operating loss reached KRW -2.7bn (OPM -9.1%), net loss KRW -2.9bn, and operating cash flow KRW -4.9bn, signaling meaningful cash burn. Quarterly trends show losses deepened in Q1 (KRW -1.6bn) and Q2 (KRW -1.7bn), before narrowing sharply in Q3 (KRW -0.3bn) and returning to profit in Q4 (KRW +0.93bn). Q1 2026 maintained operating income of KRW 0.20bn on revenue of KRW 8.6bn, though non-operating items resulted in a minor controlling-shareholder net loss of KRW -0.09bn. The debt ratio spiked from 50.2% in 2024 to 96.4% by end-2025, with liabilities of KRW 23.7bn now approaching equity of KRW 24.6bn."
+ },
+ "industry": {
+  "ko": "글로벌 스마트팩토리 시장은 2026년 약 4,267억 달러 규모로 2031년까지 연평균 9.64% 성장이 예상된다. 한국 자동화·산업 제어 시장도 2026년부터 2031년까지 연평균 5.57% 확장이 전망된다. 국내에서는 산업통상자원부가 2026년 스마트공장 보조금으로 4,365억원을 책정하고 제4차 지능형 로봇 기본계획으로 2030년까지 산업용 로봇 100만 대 보급을 목표하는 등 정책 지원이 강화되고 있다. AI 수요 확대와 반도체 생산설비 증설(SK하이닉스 용인 122조원 프로젝트 등)이 장비 제어 소프트웨어 수요를 견인하는 긍정적 흐름이 있다. 반면 2차전지 소재(양극재) 업황은 전기차 수요 둔화로 회복세가 더딘 상황이다. 물류 자동화 분야에서는 인구 구조 변화와 인건비 상승으로 대형 이커머스·물류기업의 풀필먼트 자동화 투자가 중장기 성장 동력으로 자리잡고 있으나, 거시 불확실성에 따른 기업 투자 위축이 단기 변수다. 경쟁 구도에서는 티엑스알로보틱스, 제닉스로보틱스, 현대무벡스 등 로봇물류 경쟁사들이 빠르게 성장 중이고, 반도체 제어SW와 스마트팩토리 영역에서도 국내외 경쟁 심화 추세가 나타나고 있다.",
+  "en": "The global smart factory market is estimated at approximately USD 427bn in 2026 and is forecast to grow at a CAGR of 9.64% through 2031. South Korea's automation and industrial control market is also expected to expand at a 5.57% CAGR from 2026 to 2031. Policy tailwinds are strengthening: the Ministry of Trade, Industry and Energy allocated KRW 436.6bn in smart-factory subsidies for 2026, while the 4th Intelligent Robot Basic Plan targets one million industrial robots by 2030. AI-driven demand and semiconductor capex expansions—including SK Hynix's KRW 122tn Yongin project—support the control-software segment. However, the cathode-material end-market for K-LAS remains sluggish amid a slower-than-expected EV demand recovery. In robot logistics, demographic shifts and rising labor costs are making fulfillment automation a structural necessity for large e-commerce and logistics operators, though near-term corporate capex restraint is a headwind. Competitive pressure is intensifying across all segments, with peers such as TX Robotics, Genics Robotics, and Hyundai WIA rapidly scaling their robot-logistics capabilities alongside increasing competition in semiconductor control software."
+ },
+ "outlook": {
+  "ko": "분기 실적의 방향 전환은 이미 진행 중이다. 2025Q4 영업흑자 전환(+9.3억원)에 이어 2026Q1에도 영업이익 2.0억원을 기록하며 사업 정상화 기조가 유지되고 있다. 회사는 2026년 주주총회에서 렌탈업을 사업목적에 추가해 사업 다각화를 통한 매출 기반 확대를 선언했다. K-LAS 부문은 에코프로비엠 등 양극재 주요 고객의 업황 회복이 핵심 변수로, 전기차 수요 재가속과 함께 독점 공급 지위를 바탕으로 수혜가 기대된다. K-MAS 부문에서는 미국 스타트업 MAG IA와 2차전지 자성이물 검출 표준화 설비 공동개발을 진행하며 글로벌 배터리·완성차 고객사 확장을 도모하고 있다. 경영진은 복수의 대기업 대상 스마트팩토리 턴키 수주를 협의 중이라고 밝힌 바 있어, 계약 성사 여부가 하반기 실적의 핵심 변수다. AGV 자체 플랫폼 개발 완성이 이뤄질 경우 외산 의존도 감소를 통한 로봇물류 마진 개선 여지도 존재한다. 다만 2025년 말 부채비율 96.4%와 영업현금흐름 적자가 지속된 만큼, 재무 여력 회복이 신규 성장 투자의 선결 조건이다.",
+  "en": "The direction of quarterly earnings has already shifted. Following the return to operating profit in Q4 2025 (KRW +0.93bn), Q1 2026 maintained operating income of KRW 0.20bn, sustaining the normalization trend. At the 2026 AGM, the company added equipment rental to its stated business purposes, laying the groundwork for revenue diversification. The K-LAS segment's recovery is closely tied to a rebound among cathode-material customers such as Ecopro BM; an acceleration in EV demand and Kornic's exclusive-supply position could translate into meaningful upside for this segment. For K-MAS, joint development with U.S.-based startup MAG IA on standardized battery magnetic-impurity detection equipment opens a potential global pipeline to OEM and battery customers. Management has indicated ongoing negotiations for multiple large-scale turnkey smart-factory contracts with major corporates—contract outcomes represent the key swing factor for H2 2026 results. Completion of an in-house AGV platform could also reduce reliance on imported hardware and improve robot-logistics margins. However, with a debt ratio of 96.4% and negative operating cash flow at end-2025, balance-sheet recovery is a prerequisite for growth reinvestment."
+ },
+ "valuation_comment": {
+  "ko": "현재 주가는 확정 장부가치(BPS 577~584원)에 비해 상당한 프리미엄을 반영하고 있다. 최근 4개 분기 합산 손익이 적자인 상태에서 PER 산출이 불가능하며, 이익 회복의 속도와 지속성이 프리미엄 정당화의 핵심 조건이다. 회사가 꾸준히 흑자를 기록했던 2023년과 비교하면 현재의 순자산 대비 배율은 실적 개선 기대가 선반영된 구간으로 볼 수 있다. 제어SW 사업의 경우 20~25%대의 높은 마진이 보고된 바 있어, 이 부문의 매출 비중이 회복될 경우 전사 수익성 개선 속도가 빠를 수 있다. 배당은 DART 공시 기준 DPS 0원으로, 현 단계에서 배당수익 기대는 유효하지 않으며 이는 업종 평균을 크게 밑도는 수준이다. 스마트팩토리·로봇물류의 구조적 성장 프리미엄과 실제 이익 가시화 사이의 간극을 지속적으로 점검하는 것이 중요하다.",
+  "en": "The current share price reflects a substantial premium over the confirmed book value per share (BPS of KRW 577–584). With the aggregate net result over the most recent four quarters in deficit, price-to-earnings is not calculable; the speed and durability of earnings recovery are the central conditions for justifying any premium. Compared with the company's consistently profitable period in 2023, the current price-to-book multiple implies meaningful forward expectations already priced in. The control-software business has historically operated with reported margins of 20–25%, meaning a higher revenue contribution from this segment could accelerate group-level margin normalization. Dividends are zero (DPS: KRW 0 per confirmed DART filings), making dividend income a non-factor at this stage and well below sector norms. Investors should continuously monitor the gap between structural-growth premiums attributed to the smart-factory and robot-logistics themes and the actual visibility of sustained profitability recovery."
+ },
+ "bull": [
+  {
+   "title": {
+    "ko": "분기 손익 반전 — Q4 2025·Q1 2026 연속 영업흑자",
+    "en": "Sequential Earnings Inflection — Q4 2025 and Q1 2026 Both Operating-Profitable"
+   },
+   "body": {
+    "ko": "2025Q4에 영업이익 9.3억원으로 흑자 전환한 뒤 2026Q1에도 2.0억원 영업이익을 달성하며 손익 개선 흐름이 이어지고 있다. 2025년 상반기의 극심한 적자 국면에서 벗어나 매출 회복과 함께 고정비 레버리지가 작동하기 시작한 것으로 해석된다. 제어SW 사업의 매출 비중이 회복될 경우 보고된 20~25%대 마진율이 전사 수익성을 추가로 끌어올리는 역할을 할 수 있다.",
+    "en": "Operating profitability returned in Q4 2025 (KRW +0.93bn) and was sustained in Q1 2026 (KRW +0.20bn), marking two consecutive quarters of operating income after the deep losses of H1 2025. Fixed-cost leverage appears to be engaging as revenues recover from their trough. A higher contribution from the control-software segment—which has historically carried 20–25% margins—could further accelerate group-level margin improvement."
+   }
+  },
+  {
+   "title": {
+    "ko": "독점 공급 구조 — K-LAS의 양극재 업황 회복 시 수혜 기대",
+    "en": "Exclusive Supply Position — K-LAS Set to Benefit When Cathode Market Recovers"
+   },
+   "body": {
+    "ko": "K-LAS는 에코프로비엠, 에코프로이엠, 엘앤에프 등 국내 주요 양극재 기업에 독점 공급 중으로, 한국 배터리 소재 공급망에서의 진입 장벽이 높다. 전기차 수요 회복과 함께 양극재 업체의 설비 가동률이 올라올 경우 품질검사 자동화 수요가 빠르게 살아날 가능성이 있다. 미국 MAG IA와의 자성이물 검출 설비 공동개발은 글로벌 완성차·배터리 업체로의 고객 확장이라는 추가 성장 옵션을 제공한다.",
+    "en": "K-LAS holds an exclusive-supply relationship with leading domestic cathode-material producers including Ecopro BM, Ecopro EM, and L&F, creating a high barrier to entry within Korea's battery-material supply chain. A recovery in EV demand and cathode-maker capacity utilization rates could rapidly revive demand for quality-inspection automation. Joint development with U.S.-based MAG IA for magnetic-impurity detection systems further opens pathways to global OEM and battery customers."
+   }
+  },
+  {
+   "title": {
+    "ko": "구조적 성장 시장 — 정부 정책·로봇물류 투자 장기 지속",
+    "en": "Structural Growth Market — Government Policy and Logistics Automation Drive Long-Term Demand"
+   },
+   "body": {
+    "ko": "산업통상자원부의 2026년 스마트공장 보조금 4,365억원 책정과 2030년 로봇 100만 대 보급 목표는 코닉의 전 사업 부문에 우호적 환경을 조성한다. 인건비 상승과 인구 구조 변화로 인한 노동력 부족은 로봇물류·스마트팩토리 도입을 선택이 아닌 필수로 만들고 있다. 쿠팡·CJ대한통운 등 이커머스·물류기업의 대규모 풀필먼트 자동화 투자는 K-MAS 수주 파이프라인을 중장기적으로 지지한다.",
+    "en": "The Ministry of Trade, Industry and Energy's KRW 436.6bn smart-factory subsidy for 2026, combined with a national plan targeting one million industrial robots by 2030, creates a favorable long-term policy environment across all of Kornic's segments. Rising labor costs and demographic-driven workforce shortages are making robot logistics and smart-factory adoption a necessity rather than an option. Large-scale fulfillment-automation investments by e-commerce and logistics leaders such as Coupang and CJ Logistics provide a durable medium-to-long-term pipeline for K-MAS."
+   }
+  }
+ ],
+ "bear": [
+  {
+   "title": {
+    "ko": "2차전지 소재 업황 불투명 — K-LAS 회복 시점 불확실",
+    "en": "Cathode-Material Cycle Overhang — K-LAS Recovery Timing Uncertain"
+   },
+   "body": {
+    "ko": "K-LAS 주요 고객인 에코프로비엠·엘앤에프 등 양극재 업체들은 전기차 수요 둔화에 따른 가동률 하락과 재고 조정을 겪고 있다. 양극재 시장 회복 시점이 지연될 경우 K-LAS의 신규 수주가 늦어지고 전사 실적 개선 속도도 제한될 수 있다. 중국 경쟁사의 저가 공세도 국내 양극재 기업의 설비투자 여력을 지속적으로 압박하는 구조적 리스크 요인이다.",
+    "en": "Kornic's primary K-LAS customers—cathode-material makers such as Ecopro BM and L&F—continue to face capacity utilization pressure and inventory adjustments as EV demand growth moderates. A delayed recovery in the cathode-material market would postpone K-LAS orders and slow the overall earnings recovery trajectory. Persistent pricing pressure from Chinese competitors further constrains domestic cathode-makers' capital-spending capacity."
+   }
+  },
+  {
+   "title": {
+    "ko": "재무 건전성 악화 — 부채비율 96.4%·영업현금 소진",
+    "en": "Deteriorating Balance Sheet — Debt Ratio 96.4%, Negative Operating Cash Flow"
+   },
+   "body": {
+    "ko": "2025년 말 부채비율이 96.4%로 급등(2024년 50.2%)하고 영업현금흐름이 -49.4억원을 기록하면서 재무 완충력이 크게 약화됐다. 신규 대형 프로젝트 수주를 위한 선투자나 운전자본 확대 시 추가 차입이 필요할 수 있으며, 이는 이자 비용 부담을 높인다. 매출 회복이 지연될 경우 재무 압박이 가중될 수 있어 현금흐름의 지속적 모니터링이 요구된다.",
+    "en": "The debt ratio jumped to 96.4% by end-2025 (from 50.2% in 2024), and operating cash flow was KRW -4.9bn, significantly eroding financial buffers. Front-loaded investments or working-capital expansion required for new large-scale project wins could necessitate additional borrowing, raising interest-cost burdens. If revenue recovery is delayed, financial stress may intensify, making ongoing cash-flow monitoring essential."
+   }
+  },
+  {
+   "title": {
+    "ko": "프로젝트 수주 편중 구조 — 매출 변동성 극심",
+    "en": "Project-Order Concentration — Extreme Revenue Volatility"
+   },
+   "body": {
+    "ko": "로봇물류(K-MAS) 사업이 한 반기 기준 전체 매출의 약 63%를 차지한 적이 있을 만큼 특정 부문·고객에 편중된 구조다. 대형 프로젝트 완료 후 신규 수주가 지연되면 매출이 급감하는 패턴이 2025년에 그대로 재현됐다. 소수 대형 고객의 투자 일정 변동에 따라 분기 실적 변동성이 매우 크며, 연간 수익 예측 가시성이 낮은 사업 구조적 특징을 갖는다.",
+    "en": "Robot logistics (K-MAS) has at times accounted for approximately 63% of half-year revenues, reflecting heavy concentration in a single segment and a small number of anchor customers. The 2025 revenue collapse demonstrated the post-project-completion revenue gap risk when large-scale orders are not immediately replaced. Quarterly earnings volatility is extreme, driven by the investment schedules of a handful of major clients, resulting in structurally low annual earnings visibility."
+   }
+  }
+ ],
+ "risks": [
+  {
+   "cat": {
+    "ko": "전방 산업 사이클 리스크",
+    "en": "End-Market Cycle Risk"
+   },
+   "body": {
+    "ko": "2차전지 소재 시장과 대형 이커머스·물류 업체의 자동화 설비투자 사이클이 코닉의 실적을 크게 좌우한다. 전기차 수요 회복 지연 또는 쿠팡·CJ대한통운의 투자 계획 변동은 K-LAS·K-MAS 수주에 직접적 영향을 미친다. 거시경제 침체 국면에서 기업들이 설비투자를 후순위로 미루는 경향이 있어, 경기 변동이 중요한 상시 리스크 요인이다.",
+    "en": "Kornic's results are highly sensitive to the capex cycles of the secondary-battery material and large logistics sectors. Delays in EV demand recovery or changes to Coupang's or CJ Logistics' investment plans would directly impact K-LAS and K-MAS order flows. Macro-driven capex deferrals during economic downturns remain a meaningful and recurring risk."
+   }
+  },
+  {
+   "cat": {
+    "ko": "경쟁 심화 및 기술 대체 리스크",
+    "en": "Intensifying Competition and Technology Displacement Risk"
+   },
+   "body": {
+    "ko": "로봇물류 분야에서 티엑스알로보틱스, 제닉스로보틱스, 현대무벡스 등 국내 경쟁사들이 빠르게 성장하고 있으며, 중국계 AGV 업체의 저가 공세도 거세다. 반도체 제어SW 분야에서도 해외 솔루션 침투 가능성을 배제할 수 없다. 기술 혁신 속도가 빠른 산업인 만큼 자체 R&D 역량 유지에 실패할 경우 핵심 제품의 경쟁력이 빠르게 약화될 수 있다.",
+    "en": "In robot logistics, domestic competitors such as TX Robotics, Genics Robotics, and Hyundai WIA are growing rapidly, and Chinese AGV makers continue to compete aggressively on price. In semiconductor control software, penetration by foreign solutions cannot be ruled out. Given the fast pace of technological change across all its markets, failure to sustain R&D investment could rapidly erode the competitiveness of core products."
+   }
+  },
+  {
+   "cat": {
+    "ko": "재무 유동성 및 자본 조달 리스크",
+    "en": "Liquidity and Capital-Raising Risk"
+   },
+   "body": {
+    "ko": "2025년 말 부채비율 96.4%와 영업현금흐름 적자는 추가 차입이나 자본 조달 필요성을 높인다. 금리 환경 변동이나 신용 여건 악화 시 자금 조달 비용이 상승할 수 있으며, 자본 증자 시 기존 주주의 지분 희석 리스크가 수반된다. 대형 수주 계약이 지연될 경우 운전자본 부담이 가중되어 재무 유연성이 추가로 훼손될 수 있다.",
+    "en": "The end-2025 debt ratio of 96.4% and negative operating cash flow raise the prospect of additional borrowing or equity financing. Rising interest rates or tightening credit conditions would increase funding costs, while equity issuance risks diluting existing shareholders. Delays in securing large contract wins could further strain working capital and erode financial flexibility."
+   }
+  }
+ ],
+ "checkpoints": [
+  {
+   "when": {
+    "ko": "2026년 8월 중순",
+    "en": "Mid-August 2026"
+   },
+   "what": {
+    "ko": "2026년 반기(2분기) 실적 공시: 매출·영업이익의 연속 개선 여부 및 지배주주 귀속 순이익 흑자 전환 확인. K-LAS 양극재 고객 회복 기여도와 K-MAS 신규 수주 반영 규모가 핵심 점검 지표.",
+    "en": "H1 2026 earnings release: verify sequential revenue and operating-profit improvement, and whether controlling-shareholder net income turns positive. Key indicators: K-LAS recovery from cathode customers and new K-MAS order revenue recognition."
+   }
+  },
+  {
+   "when": {
+    "ko": "2026년 하반기 수시",
+    "en": "H2 2026, As Announced"
+   },
+   "what": {
+    "ko": "대기업 대상 스마트팩토리 턴키 수주 계약 공시 여부 확인. 계약 규모와 납기 일정이 하반기·2027년 실적 추정의 핵심 변수로 작용한다.",
+    "en": "Monitor for announcements of large-scale turnkey smart-factory contract wins with major corporates; contract size and delivery schedules are the primary swing factors for H2 2026 and FY2027 earnings estimates."
+   }
+  },
+  {
+   "when": {
+    "ko": "2026년 하반기 수시",
+    "en": "H2 2026, As Announced"
+   },
+   "what": {
+    "ko": "MAG IA 공동 개발 자성이물 검출 설비의 완성차·배터리 업체 납품 계약 체결 여부. 글로벌 배터리 고객사 확대의 첫 번째 실질적 신호가 될 수 있다.",
+    "en": "Watch for supply contracts with automotive OEMs or battery makers for the magnetic-impurity detection system co-developed with MAG IA—the first tangible signal of global battery-customer expansion."
+   }
+  },
+  {
+   "when": {
+    "ko": "2026년 연말 결산 공시 (2027년 3~4월)",
+    "en": "FY2026 Annual Filing (March–April 2027)"
+   },
+   "what": {
+    "ko": "연간 부채비율 및 영업현금흐름 흑자 전환 여부 확인. 2025년 말 96.4%까지 상승한 부채비율이 이익 창출과 함께 하락 추세로 전환되는지가 재무 정상화의 핵심 기준이다.",
+    "en": "Assess full-year debt ratio trajectory and whether operating cash flow returns to positive; a declining debt ratio from the 96.4% end-2025 peak would signal meaningful balance-sheet normalization."
+   }
+  },
+  {
+   "when": {
+    "ko": "2027년 상반기",
+    "en": "H1 2027"
+   },
+   "what": {
+    "ko": "렌탈업 신사업의 초기 매출 기여 가시화 및 AGV 자체 플랫폼 구축 진전도 확인. 사업 다각화가 실질적인 매출·마진 개선으로 이어지는지를 판단하는 첫 번째 데이터포인트다.",
+    "en": "Check for initial revenue contributions from the newly added equipment-rental business and progress on the proprietary AGV platform—the first meaningful data point to assess whether business diversification translates into tangible revenue and margin improvement."
+   }
+  }
+ ],
+ "verdict": {
+  "body": {
+   "ko": "코닉오토메이션은 제어SW·스마트팩토리·로봇물류·IT인프라 등 4개 사업 부문을 보유한 산업 자동화 솔루션 기업으로, 반도체·2차전지·물류 등 국가 전략 산업의 자동화 수요를 전방위로 겨냥하고 있다. 2025년 전방 업황 악화와 프로젝트 수주 공백이 겹치며 매출이 절반 이하로 급감하고 영업손실·현금 소진이 심화됐으나, 2025Q4와 2026Q1의 연속 영업흑자 달성은 구조적 손익 개선이 시작됐음을 알리는 신호다. K-LAS의 양극재 고객 회복과 K-MAS의 대형 턴키 수주 성사가 중기 실적 반등의 두 축이며, 정부의 스마트팩토리 정책 지원과 로봇 보급 목표가 장기적 사업 환경을 우호적으로 유지한다. 반면 96.4%로 급등한 부채비율과 음(-)의 영업현금흐름은 재무 안정성에 대한 경계를 늦출 수 없는 대목이다. 수주 편중·프로젝트 의존적 비즈니스 모델 특성상 분기 실적 변동성이 크고 이익 가시성이 낮다는 구조적 특징이 지속되므로, 수주 공시·고객 업황 회복·재무 지표 변화를 지속적으로 추적하는 것이 핵심이다.",
+   "en": "Kornic Automation is an industrial automation solutions company with four segments—control software, smart factory, robot logistics, and IT infrastructure—targeting automation demand across strategically important industries including semiconductors, secondary batteries, and logistics. A combination of adverse end-market conditions and a post-project order lull drove revenue well below half its prior-year level in 2025, with operating losses and cash burn intensifying. However, two consecutive quarters of operating profit (Q4 2025 and Q1 2026) signal that a structural earnings recovery is underway. The two pillars of the medium-term rebound are a revival of K-LAS orders as cathode-material customers recover, and the closing of large-scale turnkey K-MAS contracts. Government smart-factory subsidies and the national robotics deployment plan maintain a favorable long-term operating environment. On the other side, a debt ratio surging to 96.4% and negative operating cash flow demand continued scrutiny of balance-sheet health. The inherently lumpy, project-order-dependent business model will continue to produce significant quarterly earnings volatility and limited near-term profit visibility, making ongoing tracking of contract announcements, customer sector trends, and financial metrics essential."
+  }
+ },
+ "sources": [
+  "https://m.finance.daum.net/quotes/A391710/news/disclosure/20250218012755",
+  "https://news.nate.com/view/20260326n34865",
+  "https://comp.fnguide.com/SVO2/ASP/SVD_Main.asp?gicode=A391710",
+  "https://kind.krx.co.kr/common/disclsviewer.do?method=searchInitInfo&acptNo=20220519000376&docno=",
+  "https://www.investing.com/equities/nh-spac-21",
+  "https://valueline.co.kr/finance/summary/391710",
+  "https://comp.nicebizline.com/co/CO0100M010GE.nice?stockcd=391710&nav=2",
+  "https://comp.fnguide.com/SVO2/asp/SVD_Invest.asp?pGB=1&gicode=A391710&MenuYn=Y&ReportGB=B&NewMenuID=105&stkGb=701",
+  "https://m.irgo.co.kr/IR-COMP/391710/",
+  "https://comp.wisereport.co.kr/wiseReport/summary/ReportSummary.aspx?cn=&cmp_cd=025750",
+  "https://w4.kirs.or.kr/misc/info_search_pop.html?keyword=",
+  "https://m.irgo.co.kr/IR-COMP/010170/-IR-PAGE",
+  "https://www.saramin.co.kr/zf_user/company-info/view/csn/YmlLaG9JQmxtUm1hWm5kQjJSem9SQT09/company_nm/%EC%BD%94%EB%8B%89%EC%98%A4%ED%86%A0%EB%A9%94%EC%9D%B4%EC%85%98(%EC%A3%BC)",
+  "https://www.pinpointnews.co.kr/news/articleView.html?idxno=375387",
+  "https://m.thebell.co.kr/m/newsview.asp?svccode=&newskey=202409251421209000103440",
+  "https://www.widedaily.com/news/articleView.html?idxno=280573",
+  "http://www.finomy.com/news/articleView.html?idxno=238275",
+  "https://www.widedaily.com/news/articleView.html?idxno=281526"
+ ],
+ "v": 2,
+ "model": "claude-sonnet-4-6",
+ "ticker": "391710",
+ "name": "코닉오토메이션",
+ "name_en": "Kornic Automation Co.Ltd.",
+ "sector": "기계·장비",
+ "categories": [
+  "기계·장비"
+ ],
+ "market": "코스닥",
+ "reportDate": "2026-06-19",
+ "reportTs": "2026-06-19 00:51",
+ "dataDate": "20260618",
+ "quant": {
+  "asOf": "2026-06-18",
+  "fs_basis": "연결(CFS) · DART 공시 확정치 · 지배주주 기준 순이익",
+  "annual": [
+   {
+    "year": 2025,
+    "rev": 30100048633,
+    "op": -2741701591,
+    "np": -2900443112,
+    "np_owner": -2900443112,
+    "equity": 24593341543,
+    "equity_owner": 24593341543,
+    "liab": 23698821253,
+    "cfo": -4938513774,
+    "eps_basic": -69,
+    "opm": -9.1,
+    "roe": -11.8,
+    "debt_ratio": 96.4
+   },
+   {
+    "year": 2024,
+    "rev": 55510910029,
+    "op": 45433465,
+    "np": 1023995819,
+    "np_owner": 1023995819,
+    "equity": 26114656893,
+    "equity_owner": 26114656893,
+    "liab": 13112062563,
+    "cfo": 2210051896,
+    "eps_basic": 25,
+    "opm": 0.1,
+    "roe": 3.9,
+    "debt_ratio": 50.2
+   },
+   {
+    "year": 2023,
+    "rev": 27347504225,
+    "op": 1842558733,
+    "np": 2337095178,
+    "np_owner": 2337095178,
+    "equity": 26173693471,
+    "equity_owner": 26173693471,
+    "liab": 16471765827,
+    "cfo": 336764514,
+    "eps_basic": 56,
+    "opm": 6.7,
+    "roe": 8.9,
+    "debt_ratio": 62.9
+   },
+   {
+    "year": 2022,
+    "rev": 30092723073,
+    "op": 3354830122,
+    "np": -5570285261,
+    "np_owner": -5570285261,
+    "equity": 22358911809,
+    "equity_owner": 22358911809,
+    "liab": 9043858638,
+    "cfo": 3195272705,
+    "eps_basic": -154,
+    "opm": 11.1,
+    "roe": -24.9,
+    "debt_ratio": 40.4
+   }
+  ],
+  "quarterly": [
+   {
+    "q": "2025Q1",
+    "rev": 3910672318,
+    "op": -1624561643,
+    "np_owner": -1518304636
+   },
+   {
+    "q": "2025Q2",
+    "rev": 5859075972,
+    "op": -1744063358,
+    "np_owner": -1795292861
+   },
+   {
+    "q": "2025Q3",
+    "rev": 7405853748,
+    "op": -300377686,
+    "np_owner": -294518339
+   },
+   {
+    "q": "2025Q4",
+    "rev": 12924446595,
+    "op": 927301096,
+    "np_owner": 707672724
+   },
+   {
+    "q": "2026Q1",
+    "rev": 8599887992,
+    "op": 199437532,
+    "np_owner": -89801924
+   }
+  ],
+  "valuation": {
+   "price": 1644,
+   "mcap": 0.0701,
+   "shares": 42620470,
+   "total_shares": 42620470,
+   "wavg_shares": 42035407,
+   "per": null,
+   "eps": -35,
+   "pbr": 2.82,
+   "bps": 584,
+   "roe_ttm": -6.0,
+   "ttm_window": "2025Q2~2026Q1",
+   "ttm_np_owner": -1471940400,
+   "pbr_krx": 2.77,
+   "bps_krx": 577.0,
+   "basis": "PER·EPS·PBR·BPS 모두 자체 산출(네이버·토스와 동일 방식) · 배당은 DART 공시 주당현금배당금(보완:KRX) ÷ 현재가",
+   "dps": 0.0,
+   "div": 0.0
+  }
+ }
+}
