@@ -1,0 +1,356 @@
+{
+ "title": {
+  "ko": "DID·AI 보안 플랫폼 주도권, 구독형 전환 가속",
+  "en": "DID & AI Security Platform Leadership Amid Accelerating Subscription Pivot"
+ },
+ "lead": {
+  "ko": "국가 모바일 신분증 블록체인 DID 인프라를 사실상 독점 구축한 라온시큐어는 구독형(IDaaS·PTaaS) 매출 비중을 빠르게 늘리며 영업 레버리지 인플렉션 구간에 진입했고, 에이전틱AI·PQC 등 차세대 보안 키워드와의 정합성이 부각되고 있다.",
+  "en": "Having built the exclusive blockchain DID infrastructure underpinning South Korea's national mobile ID system, RaonSecure is entering an operating-leverage inflection point as subscription-based (IDaaS/PTaaS) revenue share expands rapidly, while its strategic alignment with agentic AI and post-quantum cryptography draws growing market attention."
+ },
+ "keypoints": [
+  {
+   "ko": "행안부 모바일 공무원증·운전면허증·주민등록증 등 국가 신분증 인프라 전반에서 블록체인 DID 기술(옴니원)을 독점 공급 — 대체 비용이 높은 고진입 장벽 구조",
+   "en": "Sole provider of blockchain DID technology (OmniOne) for South Korea's national mobile ID infrastructure, including civil servant ID, driver's license, and resident registration card — creating a high-barrier, high-switching-cost structure"
+  },
+  {
+   "ko": "플랫폼 서비스(IDaaS·PTaaS) 매출 비중 2023년 30% → 2024년 40% → 2025년 50%로 확대되며 연간 반복 매출(ARR) 기반 수익성 개선 구조 정착 중(유진투자증권, 2026.03.31)",
+   "en": "Subscription platform (IDaaS/PTaaS) revenue share expanded from 30% in 2023 to 40% in 2024 and 50% in 2025, establishing an ARR-driven profitability improvement structure (Eugene Investment Securities, March 31, 2026)"
+  },
+  {
+   "ko": "2025년 매출 637.5억원(창사 최대)·영업이익 27.8억원(OPM 4.4%)으로 2023년 영업적자 이후 수익성 회복 궤도; 부채비율 37.7%·영업현금흐름 67.2억원으로 재무 안정성 강화",
+   "en": "FY2025 revenue of ₩63.8bn (all-time high) with operating profit of ₩2.8bn (OPM 4.4%), recovering from a 2023 operating loss; debt ratio of 37.7% and operating cash flow of ₩6.7bn underscore balance-sheet improvement"
+  },
+  {
+   "ko": "업스테이지와 공동으로 에이전틱AI 기반 보안 자동화 플랫폼(AAM 포함) 2026년 연내 출시 예정 — AI 에이전트 신원·권한 통제 시장의 선점 시도(라온시큐어 공식 발표, 2026.04.02)",
+   "en": "Plans to launch an agentic AI security automation platform (including AAM) in 2026 in partnership with Upstage — an early-mover attempt to capture the AI agent identity and authorization control market (official announcement, April 2, 2026)"
+  },
+  {
+   "ko": "연간 매출의 약 36%가 4분기에 집중되는 뚜렷한 계절성으로 2026년 1분기에도 영업손실이 재현됐으며, 전년동기 대비 손실 규모는 축소됐으나 분기 단독 실적 해석 시 유의 필요",
+   "en": "~36% of annual revenue is concentrated in Q4, causing a recurring Q1 operating loss that reappeared in Q1 2026; the loss magnitude narrowed year-over-year, but single-quarter results must be interpreted with this seasonality in mind"
+  }
+ ],
+ "business": {
+  "ko": "라온시큐어는 1998년 설립된 AI 보안·인증 플랫폼 기업으로, 금융·공공·국방·통신 등 전 산업을 대상으로 IT 통합보안인증 솔루션을 제공한다. 사업은 크게 ① FIDO 생체인증·MDM·제로트러스트 IAM 등 모바일 보안 솔루션, ② 블록체인 기반 분산신원인증(DID) 플랫폼 '옴니원', ③ IDaaS 구독형 인증 플랫폼, ④ 자회사 라온화이트햇㈜의 화이트햇 컨설팅(PTaaS) 네 축으로 구성된다. 주요 고객은 케이뱅크·BC카드·KB저축은행 등 금융권(파이낸셜뉴스, 2026.05.26)과 행정안전부·병무청 등 공공기관이며, 500여 기업과의 레퍼런스를 보유하고 있다. DID 경쟁 구도에서는 아이콘루프(마이아이디), SK텔레콤(이니셜) 등이 경쟁사로 존재하지만, 행안부 모바일 신분증 인프라 수준의 대규모 레퍼런스에서는 옴니원이 독보적 지위를 확보하고 있다. 플랫폼 서비스 매출 비중은 2023년 30%에서 2024년 40%, 2025년 50%로 꾸준히 확대되어(유진투자증권, 2026.03.31), 구축형(On-premise) 중심에서 ARR 기반 구독형 구조로의 체질 전환이 가속되고 있다. 자회사 라온화이트햇㈜는 국가 지정 정보보호 전문서비스 기업으로, 국내 유일의 프리미엄 모의해킹 서비스를 제공하며 최근 PTaaS 전환 이후 가장 빠른 성장률을 기록하고 있다. 해외에서는 일본 생체인증 플랫폼 '터치엔 원패스' 월간 활성이용자(MAU)가 1,000만명을 돌파했으며, 동남아시아·중남미에서도 디지털 인증 사업 기회를 확대 중이다. 라온시큐어는 FIDO Alliance 이사회 멤버로 아시아 정보보안기업 최초로 선임됐으며, PQC(양자내성암호) 분야에서도 한국형(KpqC) 및 미국 NIST 표준 알고리즘을 모두 상용화하는 등 기술 스펙트럼을 넓혀 나가고 있다.",
+  "en": "RaonSecure, established in 1998, is an AI security and authentication platform company providing integrated IT security solutions across financial, public, defense, and telecom sectors. Its business comprises four pillars: (1) mobile security solutions including FIDO biometric authentication, MDM, and zero-trust IAM; (2) the blockchain-based DID platform 'OmniOne'; (3) IDaaS subscription authentication; and (4) white-hat security consulting (PTaaS) provided by subsidiary RaonWhiteHat. Key customers include K Bank, BC Card, and KB Savings Bank (Financial News, May 26, 2026), along with the Ministry of the Interior and Safety and the Military Manpower Administration, with references spanning more than 500 organizations. In the DID competitive landscape, ICONLOOP (MyID) and SK Telecom (Initial) are present as rivals, but OmniOne holds an uncontested position at the national ID infrastructure level. Subscription platform revenue as a share of total sales expanded from 30% in 2023 to 50% in 2025 (Eugene Investment Securities, March 31, 2026), marking an accelerating structural shift from on-premise to ARR-based subscription. Subsidiary RaonWhiteHat, a government-designated information security professional services firm, is recording the fastest growth within the group following its transition to a PTaaS subscription model. Globally, the 'TouchEn OnePass' biometric platform in Japan has surpassed 10 million monthly active users, and the company is expanding into Southeast Asia and Latin America. RaonSecure is one of the first Asian information security firms elected to the FIDO Alliance Board of Directors, and has commercially deployed both Korean-standard KpqC and U.S. NIST post-quantum cryptography algorithms, broadening its technology footprint."
+ },
+ "earnings": {
+  "ko": "2022년 매출 468.2억원·영업이익 42.9억원(OPM 9.2%)으로 수익성 고점을 기록했으나, 2023년 구축형에서 구독형으로의 전환 과정에서 매출 518.4억원에도 불구하고 영업손실 16.5억원(OPM -3.2%)이 발생해 일시적인 수익성 악화를 겪었다. 2024년에는 매출 624.9억원·영업이익 19.7억원(OPM 3.1%)으로 흑자 전환에 성공했으며, 2025년에는 창사 이래 최대인 매출 637.5억원·영업이익 27.8억원(OPM 4.4%)을 달성해 수익성 회복 기조를 이어갔다. 부문별로는 화이트햇 컨설팅·IDaaS 인증·블록체인 서비스가 각각 전년 대비 47.5%, 33.3%, 17.2% 성장해 실적 성장을 이끌었다(유진투자증권, 2026.03.31). 2025년 영업현금흐름은 67.2억원으로 2024년의 4.7억원 대비 큰 폭으로 개선돼 이익 품질과 현금창출력이 동반 회복됐다. 부채비율도 2022년 70.5%에서 2025년 37.7%로 지속 하락해 재무 안정성이 크게 강화됐다. 분기별 계절성이 뚜렷해 2025년 4분기 매출 229.9억원·영업이익 50.9억원이 연간 이익의 대부분을 차지한 반면, 2025년 1분기는 매출 108.9억원·영업이익 -31.1억원으로 구조적 적자 패턴이 반복됐다. 2026년 1분기 매출 94.2억원·영업이익 -21.5억원으로 전년동기 대비 매출이 소폭 감소하고 영업적자가 재현됐으나, 손실 규모 자체는 전년동기(-31.1억원) 대비 축소됐다.",
+  "en": "Revenue and operating profit peaked in FY2022 at ₩46.8bn and ₩4.3bn (OPM 9.2%), before a structural shift from on-premise to subscription revenue triggered a temporary operating loss of ₩1.7bn (OPM -3.2%) in FY2023 despite revenue growing to ₩51.8bn. The company returned to profitability in FY2024 with ₩62.5bn in revenue and ₩2.0bn operating profit (OPM 3.1%), then achieved a record-high revenue of ₩63.8bn and ₩2.8bn operating profit (OPM 4.4%) in FY2025, extending the recovery trajectory. By segment, white-hat consulting, IDaaS authentication, and blockchain services grew 47.5%, 33.3%, and 17.2% year-over-year, respectively, driving the overall improvement (Eugene Investment Securities, March 31, 2026). Operating cash flow surged from ₩0.5bn in FY2024 to ₩6.7bn in FY2025, confirming a meaningful recovery in cash generation quality alongside reported earnings. The debt ratio declined steadily from 70.5% in FY2022 to 37.7% in FY2025, substantially strengthening the balance sheet. Pronounced quarterly seasonality persists: Q4 2025 delivered ₩23.0bn in revenue and ₩5.1bn in operating profit, accounting for the bulk of full-year earnings, while Q1 2025 recorded ₩10.9bn in revenue and an operating loss of ₩3.1bn, repeating the structural Q1 deficit pattern. In Q1 2026, revenue fell modestly year-over-year to ₩9.4bn and an operating loss of ₩2.1bn recurred, though the magnitude of the loss narrowed compared with the ₩3.1bn deficit in Q1 2025."
+ },
+ "industry": {
+  "ko": "국내 보안 시장은 2026년 약 10.6조원 규모로 전년 대비 13.6% 성장이 전망되며(보안뉴스), AI 해킹 위협과 양자컴퓨팅 부상이 보안 패러다임 전환을 가속하고 있다. 앤트로픽 미토스 등 자율 해킹 능력을 갖춘 AI 에이전트의 등장으로 기업들의 선제적 보안 투자가 확대되고 있어 화이트햇 컨설팅과 취약점 점검 서비스 수요가 구조적으로 증가하는 국면이다. 보안 아키텍처 자체가 '경계형(Perimeter)'에서 AI 신원·권한 기반의 '제로트러스트·IAM' 중심으로 전환되고 있어, 라온시큐어의 핵심 역량 포트폴리오와 정합성이 높다. 정부는 2026년 상장사 정보보호 공시 의무화, 다중인증(MFA) 의무화, 모바일 신분증 법제화, 양자내성암호 전환 정책 등을 추진하고 있어(이투데이, 2026.04.29) 정책 기반 수요 확대가 기대된다. 글로벌 비인간 신원 접근관리 시장은 2024년 약 94억 5,000만달러에서 2030년 약 187억 1,000만달러로 성장이 전망돼(마켓앤드마켓), AI 에이전트 증가에 따른 신원 관리 수요는 중장기 성장 동력으로 부각된다. 국내 DID 경쟁 구도에서 라온시큐어는 국가 신분증 인프라 수준의 구축 레퍼런스에서 압도적 우위를 유지하고 있어 공공 신규 수주에서의 진입 장벽이 높다.",
+  "en": "The domestic security market is projected to grow 13.6% year-over-year to approximately ₩10.6 trillion in 2026 (Security News), as AI-based cyber threats and the rise of quantum computing accelerate a paradigm shift in security architecture. The emergence of AI agents with autonomous hacking capabilities—such as Anthropic's Mythic—is driving preemptive enterprise security investment and structurally increasing demand for white-hat consulting and vulnerability assessment services. Security architecture is migrating from perimeter-based models to zero-trust and IAM frameworks centered on AI identity and authorization management, closely aligning with RaonSecure's core competency portfolio. Government initiatives including mandatory information security disclosures for listed companies in 2026, MFA requirements, mobile ID legislation, and PQC transition policies (E-Today, April 29, 2026) are expected to generate meaningful policy-driven demand. The global non-human identity access management market is forecast to grow from approximately USD 9.45 billion in 2024 to USD 18.71 billion by 2030 (MarketsandMarkets), with AI agent proliferation emerging as a structural long-term demand driver. In the domestic DID competitive landscape, RaonSecure maintains a commanding lead through its large-scale national ID infrastructure references, creating high barriers to entry for new public-sector project wins."
+ },
+ "outlook": {
+  "ko": "라온시큐어는 업스테이지와의 업무협약을 통해 에이전틱AI 기반 보안 자동화 플랫폼을 2026년 연내 출시할 계획이며, AI 에이전트의 신원·권한·행위를 통합 관리하는 AAM(Agentic AI Management) 체계도 병행 개발 중이다(라온시큐어 공식 발표, 2026.04.02). 전략 방향은 중소기업(SMB) 대상 구독형 서비스인 '옴니원 억세스'와 '라온 PTaaS' 매출 비중 추가 확대를 통해 연간 반복 매출(ARR) 기반을 강화하는 것이다. PQC 분야에서는 과기정통부·KISA의 양자내성암호 시범전환 지원사업 의료 분야 주관기업으로 선정돼 실증사업을 진행 중이며, 한국형(KpqC)·미국 NIST 표준 알고리즘을 모두 지원하는 점이 경쟁 우위로 작용한다(아시아경제, 2026.04.22). 2026년 상장사 정보보호 공시 의무화와 정부 '정보보호 종합대책'에 따른 정책 수요 확대로 모바일 신분증·화이트햇 컨설팅·IDaaS·블록체인 서비스 전 부문 성장이 기대된다(유진투자증권 예상: 2026년 매출 700억원·영업이익 58억원, 2026.03.31). 글로벌 시장에서는 일본 MAU 1,000만명 이상을 기반으로 동남아시아·중남미 신규 시장 확장을 추진 중이다. 한편 2026년 3월 DART에 공시된 Convertible Promissory Note 취득의 구체적 내용(투자 대상·금액·전환 조건)은 추가 공시를 통해 확인이 필요하다.",
+  "en": "Under its MOU with Upstage signed in April 2026, RaonSecure plans to launch an agentic AI-based security automation platform within 2026, while concurrently developing AAM (Agentic AI Management) to govern AI agent identity, authorization, and behavior (official announcement, April 2, 2026). Strategically, the company aims to strengthen its ARR base by growing subscription-based revenue from 'OmniOne Access' and 'RaonSecure PTaaS' targeting SMBs. In PQC, RaonSecure was selected as lead company for a government PQC pilot in the healthcare sector by the Ministry of Science and ICT and KISA, and supports both Korean-standard (KpqC) and U.S. NIST standard algorithms—a key technical differentiator (Asia Economy, April 22, 2026). Policy-driven demand from the mandatory information security disclosure for listed companies in 2026 and the government's Information Security Comprehensive Plan is expected to lift revenue across mobile ID, white-hat consulting, IDaaS, and blockchain service segments (Eugene Investment Securities 2026 forecast: revenue ₩70bn, operating profit ₩5.8bn, March 31, 2026). Globally, the company is pursuing expansion into Southeast Asia and Latin America, building on its 10-million-plus MAU base in Japan. Separately, a Convertible Promissory Note acquisition disclosed in DART in March 2026 requires further clarification of the investment target, amount, and conversion terms through subsequent disclosures."
+ },
+ "valuation_comment": {
+  "ko": "주당순자산(BPS) 4,794원을 기준으로, 현재 주가는 순자산 대비 소폭 프리미엄이 형성된 구간에 위치하고 있다. 2023년 영업적자에서 2024·2025년 흑자 전환 후 이익 회복이 진행 중이나, 이익 절대 규모가 제한적인 만큼 수익 배수를 통한 가치 측정은 이익 성장 속도에 비례해 의미가 달라지는 국면이다. 현재 배당은 실시하지 않아(DPS 0원) 배당수익률이 업종 평균을 크게 하회하며, 주주환원보다는 플랫폼 전환 투자에 집중하는 사이클에 있다. 국내 보안 SW 피어 그룹 평균 예상 수익 배수(유진투자증권 기준 약 15~16배, 2026.03.31)와 비교할 때, 이익 성장의 본격화 여부가 현재의 배수 수준을 정당화할 핵심 변수다. 2025년 영업현금흐름이 전년 대비 크게 개선되고 부채비율이 역사적 저점 수준으로 하락해 재무 안정성이 밸류에이션을 하방에서 지지하고 있다.",
+  "en": "Based on a book value per share (BPS) of ₩4,794, the stock currently trades at a modest premium to its net asset value. With earnings recovering after a 2023 operating loss, the absolute level of profits remains limited, meaning the significance of earnings-based valuation multiples will scale with the pace of profit improvement. The company currently pays no dividend (DPS ₩0), placing its dividend yield well below the sector average—consistent with a reinvestment-over-distribution cycle during the platform transition. Relative to the estimated average earnings multiple of domestic security software peers at approximately 15–16x (Eugene Investment Securities, March 31, 2026), whether profit growth materializes as expected is the pivotal variable for justifying the current multiple level. Meaningfully improved operating cash flow and a debt ratio near a historical low provide sound balance-sheet support from the downside."
+ },
+ "bull": [
+  {
+   "title": {
+    "ko": "국가 DID 인프라의 사실상 독점적 지위",
+    "en": "De Facto Monopoly on National DID Infrastructure"
+   },
+   "body": {
+    "ko": "행안부 모바일 공무원증·운전면허증·주민등록증·장애인등록증 등 국가 신분증 인프라 전반에서 블록체인 DID 기술을 독점 공급하고 있어, 한 번 구축된 국가 인프라의 높은 교체 비용이 견고한 해자로 작용한다. 라온시큐어는 정부 모바일 신분증 플랫폼의 DID 솔루션 제조사로서, 신규 모바일 신분증 종류 추가 시에도 가장 빠른 기술 지원이 가능하다는 구조적 이점을 보유한다. 모바일 신분증 법제화와 디지털 자격증명 활용 범위 확대가 진행될수록 운영·유지보수·연계 솔루션 수익이 구조적으로 성장할 수 있다.",
+    "en": "The company is the sole blockchain DID technology provider for South Korea's national ID infrastructure spanning mobile civil servant, driver's, resident registration, and disabled person IDs—with high switching costs forming a durable structural moat. As the manufacturer of the government's mobile ID platform DID solution, RaonSecure retains the structural advantage of fastest technical support whenever new mobile ID types are added. As mobile ID legislation advances and digital credential adoption broadens, operations, maintenance, and integration service revenues should grow structurally."
+   }
+  },
+  {
+   "title": {
+    "ko": "구독형 전환에 따른 수익성 레버리지 확대",
+    "en": "Expanding Profitability Leverage from Subscription Transition"
+   },
+   "body": {
+    "ko": "플랫폼 서비스(IDaaS·PTaaS) 매출 비중이 2023년 30%에서 2025년 50%로 상승하면서, 한계 비용이 낮은 구독형 매출의 비중 확대가 영업 레버리지 효과를 발생시키고 있다. 화이트햇 컨설팅은 PTaaS 전환 후 전 부문 중 가장 빠른 성장률을 기록하고 있으며, IDaaS·블록체인 서비스도 두 자릿수 성장을 이어가고 있다. 구독형 비중이 높아질수록 1분기 계절성 영향이 완화되는 구조로 전환될 가능성이 있어 연간 실적 가시성이 개선될 수 있다.",
+    "en": "As the share of platform services (IDaaS/PTaaS) grew from 30% in 2023 to 50% in 2025, the rising proportion of low-marginal-cost subscription revenue is generating measurable operating leverage. White-hat consulting has posted the fastest growth among all segments following its PTaaS transition, while IDaaS and blockchain services continue to sustain double-digit growth. A higher subscription mix may gradually smooth the pronounced Q1 seasonality, potentially improving full-year earnings predictability."
+   }
+  },
+  {
+   "title": {
+    "ko": "에이전틱AI·PQC 차세대 보안 수요와의 높은 정합성",
+    "en": "Strong Alignment with Agentic AI and PQC Next-Generation Security Demand"
+   },
+   "body": {
+    "ko": "AI 에이전트의 신원·권한 통제를 위한 AAM 기술과 PQC 상용화는 기존 보안 패러다임을 구조적으로 재편하는 신시장으로, 라온시큐어는 두 영역 모두에서 기술 레퍼런스와 상용화 실적을 보유하고 있다. 업스테이지와의 에이전틱AI 보안 자동화 플랫폼 공동 개발은 LLM과 보안 노하우의 결합을 통해 고부가가치 시장을 선점할 기회를 제공한다. AI 해킹 위협의 현실화(앤트로픽 미토스 등)는 기업·기관의 선제 보안 투자 의무화 분위기를 고조시켜, 라온시큐어 화이트햇 컨설팅 수요를 구조적으로 키우는 촉매로 작용하고 있다.",
+    "en": "The emerging markets for AAM (AI agent identity and authorization control) and PQC commercialization are structurally reshaping the security landscape—and RaonSecure holds technology references and commercial deployments in both domains. The joint development of an agentic AI security automation platform with Upstage offers an opportunity to capture a high-value market by combining LLM capabilities with deep security expertise. Demonstrated AI hacking threats (e.g., Anthropic's Mythic) intensify pressure for mandatory preemptive security investment, serving as a structural demand catalyst for RaonSecure's white-hat consulting services."
+   }
+  }
+ ],
+ "bear": [
+  {
+   "title": {
+    "ko": "뚜렷한 1분기 계절적 적자의 구조적 반복",
+    "en": "Persistent Structural Q1 Seasonal Operating Losses"
+   },
+   "body": {
+    "ko": "연간 매출의 약 36%가 4분기에 집중되는 구조로 인해 매년 1분기에 구조적 영업적자가 발생하며, 2026년 1분기에도 영업손실 21.5억원이 재현됐다. 이 같은 계절성은 분기별 실적 해석을 어렵게 하고 1분기 실적 발표 전후 주가 하락 압력으로 이어질 수 있다. 구독형 비중이 높아지더라도 공공기관 예산 집행 사이클이 하반기에 편중되는 한, 계절성의 완전한 해소는 점진적일 수밖에 없다.",
+    "en": "With approximately 36% of annual revenue concentrated in Q4, structural operating losses recur every Q1—a pattern that repeated in Q1 2026 with an operating loss of ₩2.1bn. This seasonality complicates quarter-by-quarter earnings interpretation and can create share price pressure around Q1 results announcements. Even as the subscription mix rises, the concentration of public-sector budget disbursements in the second half means full resolution of this seasonal pattern will be gradual."
+   }
+  },
+  {
+   "title": {
+    "ko": "수익성 회복 속도 제한 및 비용 부담 가능성",
+    "en": "Constrained Pace of Profitability Recovery and Potential Cost Headwinds"
+   },
+   "body": {
+    "ko": "2025년 영업이익률 4.4%는 수익성 고점이었던 2022년(9.2%)의 절반 수준으로, 완전 회복까지 상당한 이익 성장이 필요한 상황이다. 에이전틱AI 플랫폼 출시를 위한 R&D 인력 충원(2026년 공채 경쟁률 130대 1, 머니투데이, 2026.02.26)과 기술 투자 가속이 단기 비용 압력으로 작용할 수 있다. 구축형→구독형 전환 과정에서 기존 구축형 매출의 역성장과 플랫폼 초기 투자 비용이 동시에 발생해 단기 수익성 개선 폭을 제한할 수 있다.",
+    "en": "The FY2025 OPM of 4.4% represents roughly half the FY2022 peak of 9.2%, requiring substantial earnings growth before a full recovery is achieved. R&D headcount additions (the 2026 recruitment attracted a 130-to-1 application ratio, Money Today, February 26, 2026) and accelerated technology investment for the agentic AI platform may exert near-term cost pressure. The concurrent decline of legacy on-premise revenue and upfront platform investment costs during the subscription transition may constrain near-term profitability improvement."
+   }
+  },
+  {
+   "title": {
+    "ko": "제한된 증권사 커버리지와 테마 쏠림에 따른 변동성",
+    "en": "Limited Sell-Side Coverage and Thematic Volatility Risk"
+   },
+   "body": {
+    "ko": "공식 커버리지를 제공하는 증권사가 제한적이어 기업 가치에 대한 정보 비대칭이 크고 주가 가격 발견의 효율성이 낮다. 에이전틱AI·양자보안 관련 테마주로 분류되어 엔비디아 발표, 앤트로픽 미토스 등 외부 이슈에 주가가 과민 반응하는 경향이 있어 실제 사업 진척과 무관한 변동성이 반복된다. 테마 모멘텀 소멸 또는 기대를 하회하는 신제품 출시 성과는 단기 주가에 불리하게 작용할 수 있다.",
+    "en": "With limited formal sell-side analyst coverage, information asymmetry is pronounced and price discovery efficiency is relatively low. The stock is increasingly treated as a theme play on agentic AI and quantum security, causing it to react sharply to external catalysts such as NVIDIA announcements and Anthropic's Mythic—generating volatility disconnected from actual business progress. A fading of thematic momentum or underwhelming new product launch results could weigh on the near-term share price."
+   }
+  }
+ ],
+ "risks": [
+  {
+   "cat": {
+    "ko": "정책·규제 리스크",
+    "en": "Policy and Regulatory Risk"
+   },
+   "body": {
+    "ko": "정부 보안·인증 정책의 방향 변화나 DID 표준 경쟁에서의 우위 약화는 모바일 신분증·공공 DID 수주 파이프라인에 직접적 영향을 미칠 수 있다. 2026년 상장사 정보보호 공시 의무화는 수요 확대의 촉매이나, 이행 기준이 기업들의 기대치보다 완화될 경우 시장 성장이 당초 전망에 못 미칠 수 있다. 해외(일본·동남아·중남미)에서의 개인정보보호 규제 강화는 DID·생체인증 서비스의 현지화 비용을 높이는 요인이다.",
+    "en": "Changes in government security and authentication policy direction, or an erosion of DID standard leadership, could directly impact the mobile ID and public-sector DID project pipeline. While mandatory information security disclosures for listed companies in 2026 serve as a demand catalyst, softer-than-expected implementation standards could lead to market growth below initial projections. Tightening personal data regulations in Japan, Southeast Asia, and Latin America may raise localization costs for DID and biometric authentication services."
+   }
+  },
+  {
+   "cat": {
+    "ko": "기술·경쟁 리스크",
+    "en": "Technology and Competitive Risk"
+   },
+   "body": {
+    "ko": "빅테크(국내외)의 AI 기반 보안·인증 시장 진출 또는 글로벌 DID 플랫폼 기업과의 직접 경쟁 심화는 현재의 기술 우위를 희석시킬 수 있다. 에이전틱AI 플랫폼의 출시 지연 또는 기대 이하의 시장 반응은 성장 모멘텀을 약화시키는 리스크다. PQC 분야에서 NIST 표준 변경이나 국내 KpqC 표준 확정 지연이 발생할 경우 초기 상용화 선점 효과가 희석될 수 있다.",
+    "en": "Market entry by large domestic or global technology companies into AI-based security and authentication, or intensified competition from global DID platform providers, could dilute the company's current technological advantage. Delays in launching the agentic AI platform or a weaker-than-expected market reception represent a risk to the growth trajectory. In PQC, potential changes to NIST standards or delays in finalizing the domestic KpqC standard could erode the first-mover advantage gained through early commercialization."
+   }
+  },
+  {
+   "cat": {
+    "ko": "재무·자본 구조 리스크",
+    "en": "Financial and Capital Structure Risk"
+   },
+   "body": {
+    "ko": "2026년 3월 DART에 공시된 Convertible Promissory Note 취득의 구체적 내용(투자 대상·금액·전환 조건)이 아직 명확하지 않아, 잠재적 주식 희석 또는 투자 손실 가능성에 대한 지속적 모니터링이 필요하다. 매출의 계절 편중으로 인해 실질 현금 유입이 하반기에 집중되며, 1분기 운전자본 부담이 단기 유동성에 영향을 줄 수 있다. 외국인 지분율이 제한적인 수준에 머물러 있어 수급 다변화가 제한적이고 유동성 리스크가 상존한다.",
+    "en": "The Convertible Promissory Note acquisition disclosed in DART in March 2026 lacks full transparency regarding the investment target, amount, and conversion terms, warranting ongoing monitoring for potential equity dilution or investment loss. Revenue seasonality concentrates cash inflows in the second half of the year, with Q1 working capital demands potentially pressuring near-term liquidity. Foreign investor ownership remains limited, constraining diversification of the shareholder base and leaving some liquidity risk in place."
+   }
+  }
+ ],
+ "checkpoints": [
+  {
+   "when": {
+    "ko": "2026년 7~8월",
+    "en": "July–August 2026"
+   },
+   "what": {
+    "ko": "2026년 2분기 실적 발표: 1분기 계절적 적자 이후 매출 및 영업이익 회복 여부 확인. 전년동기(2025Q2: 매출 139.0억원·영업이익 -8.0억원) 대비 개선 폭이 하반기 연간 수익성 전망의 가늠자.",
+    "en": "Q2 2026 earnings release: assess whether revenue and operating profit recover from Q1 seasonal losses. The degree of improvement versus Q2 2025 (revenue ₩13.9bn, operating loss ₩0.8bn) will be a key indicator for second-half and full-year profitability prospects."
+   }
+  },
+  {
+   "when": {
+    "ko": "2026년 하반기 중",
+    "en": "Second Half of 2026"
+   },
+   "what": {
+    "ko": "에이전틱AI 기반 보안 자동화 플랫폼(업스테이지 협력) 출시 여부 및 초기 수주·고객 반응 확인. 플랫폼 공식 출시와 파이프라인의 구체화 여부가 중장기 성장 모멘텀의 핵심 변수로 작용한다.",
+    "en": "Confirm whether the agentic AI security automation platform (jointly developed with Upstage) launches as planned and assess initial orders and customer reception. The official launch and concreteness of the go-to-market pipeline are central variables for the medium- to long-term growth narrative."
+   }
+  },
+  {
+   "when": {
+    "ko": "2026년 하반기(연내)",
+    "en": "Late 2026"
+   },
+   "what": {
+    "ko": "Convertible Promissory Note 관련 추가 DART 공시: 투자 대상·금액·전환 조건 상세 확인 필요. 주식 희석 가능 여부는 주주가치에 직결되는 사안으로 공시 내용에 따라 시장 반응이 달라질 수 있다.",
+    "en": "Monitor follow-up DART disclosures on the Convertible Promissory Note to verify the investment target, amount, and conversion terms. Any potential equity dilution is a direct shareholder value concern, and market reaction may hinge on the disclosed details."
+   }
+  },
+  {
+   "when": {
+    "ko": "2026년 3~4분기",
+    "en": "Q3–Q4 2026"
+   },
+   "what": {
+    "ko": "2026년 상장사 정보보호 공시 의무화 시행 이후 기업 보안 예산 집행 현황 확인. 의무화 실시가 실질적 보안 투자 확대로 연결되는지, 그 수혜가 라온시큐어 부문별 수주에 반영되는지 점검한다.",
+    "en": "Track whether the mandatory information security disclosures for listed companies translate into concrete enterprise security spending. Verify whether the benefits flow through to RaonSecure's segment-level order intake in the second half of the year."
+   }
+  },
+  {
+   "when": {
+    "ko": "2026년 4분기~2027년 초",
+    "en": "Q4 2026 – Early 2027"
+   },
+   "what": {
+    "ko": "연간 실적 성수기에서의 수익성 레버리지 실현 여부 확인: 구독형 전환 효과로 영업이익률이 과거 수준으로 재근접하는지, 그리고 모바일 장애인등록증 등 신규 모바일 신분증 연계 솔루션 추가 수주가 매출에 반영되는지 점검한다.",
+    "en": "Assess whether operating leverage from the subscription transition is realized in the peak revenue season, tracking OPM progression toward its prior cyclical level. Also verify whether newly added mobile ID-linked solution orders (e.g., mobile disabled person registration card) are reflected in revenue."
+   }
+  }
+ ],
+ "verdict": {
+  "body": {
+   "ko": "라온시큐어는 국가 모바일 신분증 블록체인 DID 인프라의 사실상 독점 공급자로서, 높은 진입 장벽의 공공 레퍼런스를 기반으로 금융·공공 디지털 인증 시장의 핵심에 위치해 있다. 2023년 영업적자 이후 구독형 매출 전환이 가속되면서 2024~2025년 수익성 회복 궤도에 진입했으며, 영업현금흐름도 크게 개선되어 재무 안정성이 강화됐다. 에이전틱AI 보안 자동화 플랫폼(업스테이지 협력)과 PQC 사업은 국내 보안 패러다임 전환의 핵심 기술 영역과의 높은 정합성을 바탕으로 중장기 성장 모멘텀으로 부각된다. 반면 연간 매출의 약 36%가 4분기에 집중되는 뚜렷한 계절성, 영업이익률의 과거 고점 대비 회복 미흡, Convertible Promissory Note 관련 불확실성은 단기 리스크 요인으로 지속적 모니터링이 필요하다. 에이전틱AI 플랫폼의 연내 출시 여부와 초기 수주 성과, 구독형 매출 비중의 추가 확대, 4분기 수익성 레버리지 실현 여부가 향후 기업 가치 방향성을 가를 핵심 확인 포인트다.",
+   "en": "RaonSecure occupies a central position in Korea's digital authentication ecosystem as the de facto sole provider of blockchain DID infrastructure for the national mobile ID system, backed by high-barrier public-sector references. Following an operating loss in 2023, the accelerating transition to subscription-based revenue has placed the company on a profitability recovery trajectory through 2024 and 2025, with a significant improvement in operating cash flow lending balance-sheet support. The agentic AI security automation platform developed with Upstage and the PQC business line align closely with the structural shift in Korea's security paradigm, positioning them as material medium- to long-term growth catalysts. On the other hand, the pronounced seasonality (~36% of annual revenue in Q4), an OPM that remains below its prior cyclical peak, and residual uncertainty from the undisclosed Convertible Promissory Note are near-term risk factors that warrant ongoing monitoring. The key confirmation points for the company's trajectory are whether the agentic AI platform launches and gains traction on schedule in 2026, whether subscription revenue share continues to expand, and whether Q4 2026 delivers the operating leverage implied by the subscription transformation."
+  }
+ },
+ "sources": [
+  "https://comp.fnguide.com/SVO2/asp/SVD_Main.asp?gicode=A042510",
+  "https://alphadistill.com/report/651",
+  "https://www.fnnews.com/news/202605261008157262",
+  "https://dealsite.co.kr/articles/162440",
+  "http://www.saramin.co.kr/zf_user/company-info/view/csn/1388116484/company_nm/%EB%9D%BC%EC%98%A8%EC%8B%9C%ED%81%90%EC%96%B4(%EC%A3%BC)",
+  "https://alphasquare.co.kr/home/stock-summary?code=042510",
+  "https://www.paxnet.co.kr/tbbs/list?tbbsType=L&id=042510",
+  "https://www.eugenefn.com/common/files/amail//20251117_042510_jongsun.park_2496.pdf",
+  "https://www.raonsecure.com/ko",
+  "https://news.nate.com/view/20260331n13702",
+  "https://ket.kr/news/article.html?no=37838",
+  "https://comp.wisereport.co.kr/company/c1010001.aspx?cmp_cd=042510",
+  "https://news.nate.com/view/20260331n13327",
+  "https://v.daum.net/v/Fsn9Csx2yQ?f=p",
+  "https://www.mt.co.kr/stock/2026/05/07/2026050705487031392",
+  "https://www.asiae.co.kr/article/2026033111040310187",
+  "https://www.raonsecure.com/ko/main/search",
+  "https://www.fnnews.com/news/202201271327582218"
+ ],
+ "v": 2,
+ "model": "claude-sonnet-4-6",
+ "ticker": "042510",
+ "name": "라온시큐어",
+ "name_en": "RaonSecure Co., Ltd.",
+ "sector": "IT·소프트웨어",
+ "categories": [
+  "IT·소프트웨어"
+ ],
+ "market": "코스닥",
+ "reportDate": "2026-06-18",
+ "reportTs": "2026-06-18 23:40",
+ "dataDate": "20260618",
+ "quant": {
+  "asOf": "2026-06-18",
+  "fs_basis": "연결(CFS) · DART 공시 확정치 · 지배주주 기준 순이익",
+  "annual": [
+   {
+    "year": 2025,
+    "rev": 63751052492,
+    "op": 2782270207,
+    "np": 3551657406,
+    "np_owner": 3382038377,
+    "equity": 54097272526,
+    "equity_owner": 53762938071,
+    "liab": 20391488370,
+    "cfo": 6719210859,
+    "eps_basic": 313,
+    "opm": 4.4,
+    "roe": 6.3,
+    "debt_ratio": 37.7
+   },
+   {
+    "year": 2024,
+    "rev": 62492539475,
+    "op": 1967382723,
+    "np": 4108357384,
+    "np_owner": 4018244835,
+    "equity": 50475846205,
+    "equity_owner": 50311440972,
+    "liab": 21031929083,
+    "cfo": 473975401,
+    "eps_basic": 74,
+    "opm": 3.1,
+    "roe": 8.0,
+    "debt_ratio": 41.7
+   },
+   {
+    "year": 2023,
+    "rev": 51841445278,
+    "op": -1653091109,
+    "np": 6047265641,
+    "np_owner": 4163919538,
+    "equity": 45884951073,
+    "equity_owner": 46111675356,
+    "liab": 29709808858,
+    "cfo": 7996141519,
+    "eps_basic": 104,
+    "opm": -3.2,
+    "roe": 9.0,
+    "debt_ratio": 64.7
+   },
+   {
+    "year": 2022,
+    "rev": 46823337387,
+    "op": 4291104685,
+    "np": 8305276543,
+    "np_owner": 6668876317,
+    "equity": 45095494365,
+    "equity_owner": 38002612492,
+    "liab": 31795926332,
+    "cfo": 7672453196,
+    "eps_basic": 172,
+    "opm": 9.2,
+    "roe": 17.5,
+    "debt_ratio": 70.5
+   }
+  ],
+  "quarterly": [
+   {
+    "q": "2025Q1",
+    "rev": 10887832423,
+    "op": -3107111914,
+    "np_owner": -2841498431
+   },
+   {
+    "q": "2025Q2",
+    "rev": 13896828006,
+    "op": -801575376,
+    "np_owner": 1338382
+   },
+   {
+    "q": "2025Q3",
+    "rev": 15979821680,
+    "op": 1597577478,
+    "np_owner": 803666875
+   },
+   {
+    "q": "2025Q4",
+    "rev": 22986570383,
+    "op": 5093380019,
+    "np_owner": 5418531551
+   },
+   {
+    "q": "2026Q1",
+    "rev": 9419644586,
+    "op": -2148008595,
+    "np_owner": -2071677837
+   }
+  ],
+  "valuation": {
+   "price": 8700,
+   "mcap": 0.0966,
+   "shares": 11105828,
+   "total_shares": 11205174,
+   "wavg_shares": 10789988,
+   "per": null,
+   "eps": null,
+   "pbr": 1.81,
+   "bps": 4794,
+   "roe_ttm": 3.9,
+   "ttm_window": "2025Q2~2026Q1",
+   "ttm_np_owner": 1949700276,
+   "pbr_krx": 1.69,
+   "bps_krx": 4975.0,
+   "basis": "PER·EPS·PBR·BPS 모두 자체 산출(네이버·토스와 동일 방식) · 배당은 DART 공시 주당현금배당금(보완:KRX) ÷ 현재가",
+   "dps": 0.0,
+   "div": 0.0
+  }
+ }
+}
