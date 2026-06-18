@@ -1,0 +1,356 @@
+{
+ "title": {
+  "ko": "BLU 수익 압박 속 Micro LED 상용화로 활로 모색",
+  "en": "Legacy BLU Margins Squeezed as Lumens Bets on Micro LED Commercialization"
+ },
+ "lead": {
+  "ko": "TV BLU 중심의 저마진 구조와 중국발 공급과잉으로 2년 연속 영업손실을 기록한 루멘스가, 2026년 1분기 영업이익 흑자 전환과 방산·전장 분야 Micro LED 수주 확대를 통해 구조적 체질 개선을 시험하고 있다.",
+  "en": "Having posted operating losses for two consecutive years amid commoditized TV BLU pricing and Chinese oversupply, Lumens is testing a structural turnaround through its 2026 Q1 return to operating profit and efforts to expand Micro LED shipments into defense and automotive markets."
+ },
+ "keypoints": [
+  {
+   "ko": "2022→2025년 연간 매출은 1,663억→1,755억으로 완만하게 성장했으나 영업이익률은 0.7%→-2.9%로 4년간 지속 하락, 수익성 구조 개선이 최대 과제로 부각",
+   "en": "Revenue grew modestly from KRW 166.3B (2022) to KRW 175.5B (2025), but the operating margin deteriorated from 0.7% to -2.9% over the same period, making profitability restructuring the top strategic priority"
+  },
+  {
+   "ko": "2026년 1분기 영업이익 9.1억원·지배주주 순이익 23.2억원으로 흑자 전환, 2025년 2~4분기 3개 분기 연속 영업손실 이후 첫 반등 확인",
+   "en": "2026 Q1 delivered operating profit of KRW 0.9B and controlling shareholder net profit of KRW 2.3B, the first return to profitability after three consecutive quarters of operating losses from 2025 Q2 through Q4"
+  },
+  {
+   "ko": "세계 최초 적층형(Monolithic) RGB Micro LED 칩 개발 완료 및 스웨덴 방산업체 에임포인트에 군용 조준경용 패널 납품 중; 회사는 2026년 내 전장·방산 신규 고객사 수주를 목표로 제시",
+   "en": "Completed development of the world's first monolithic stacked RGB Micro LED chip; currently delivering military scope displays to Swedish defense firm Aimpoint, with a stated 2026 target to secure new customers in automotive and defense"
+  },
+  {
+   "ko": "Micro LED 시장은 2033년까지 연평균 73% 고성장이 전망되나, 애플 워치 적용이 수차례 연기된 데서 알 수 있듯 대중화 시점 불확실성이 상존",
+   "en": "The global Micro LED market is projected to grow at ~73% CAGR through 2033, but mass-market timing remains highly uncertain, as evidenced by repeated delays to Apple's Micro LED wearable product roadmap"
+  },
+  {
+   "ko": "2025년 순손실(-66.5억원)에도 영업현금흐름은 +149.5억원으로 양(+) 유지, 부채비율은 51.0%→47.4%로 개선되어 재무 기초 체력 일정 수준 보전",
+   "en": "Despite a net loss of KRW 6.7B in 2025, operating cash flow remained positive at KRW 14.9B, and the debt-to-equity ratio improved from 51.0% to 47.4%, indicating a maintained baseline of financial resilience"
+  }
+ ],
+ "business": {
+  "ko": "루멘스는 1996년 설립되어 2006년 코스닥에 상장한 LED 전문기업으로, 사업 부문은 LED(TV·IT BLU·일반 조명), 도광판(LGP), 자동차 전장의 세 축으로 구성된다. LED 부문은 TV·노트북용 백라이트유닛(BLU)에 공급하는 LED 패키지가 핵심이며, 삼성전자 영상디스플레이(VD)사업부가 주요 고객으로 알려져 있다. LGP 부문은 LED TV용 도광판을 생산하며, 2018년 베트남 현지법인(Lumens VINA)으로 주요 설비를 이전해 원가 경쟁력을 강화했다. 자동차 전장 부문은 헤드램프 LED 모듈과 주간상시등(DRL) 등을 생산하며, 중국 쿤산 법인(곤산류명광전유한공사)이 생산을 전담한다. 신성장 사업으로는 대형 사이니지용 Micro LED Display(MLD), 0.57인치 초소형 AR/VR·HUD용 Micro LED Panel(MLP), 플렉시블 LED 디스플레이(FLD)를 추진 중이다. 특히 R·G·B 발광층을 하나의 에피웨이퍼에 적층 구현한 Monolithic RGB Micro LED 칩 개발을 완료해, 전사(Transfer) 공정을 기존 3회에서 1회로 단축하는 기술 차별화를 확보했다. 스웨덴 방산업체 에임포인트에 밀스펙(MIL-STD) 군용 조준경용 Micro LED 패널을 납품하며 방산 틈새 시장에서 실제 양산 신뢰성을 쌓고 있다. 경쟁사로는 서울반도체, 서울바이오시스, 그리고 과잉 투자로 단가 압박을 심화시키는 중국 후발 업체들이 있다.",
+  "en": "Founded in 1996 and listed on KOSDAQ in 2006, Lumens is a specialized LED manufacturer operating three main segments: LED (TV/IT BLU and general lighting), LGP (light guide plates for LED TVs), and Automotive Electronics. The LED segment is anchored by LED packages for TV and notebook backlight units, with Samsung Electronics' Visual Display division understood to be the key customer. The LGP business produces light guide panels for LED TVs; in 2018, major production equipment was relocated to the Vietnamese subsidiary Lumens VINA to enhance cost competitiveness. The Automotive Electronics segment produces headlamp LED modules and daytime running lights (DRL), with production handled exclusively by the Chinese subsidiary in Kunshan (Gongsanryu). New-growth businesses include Micro LED Display (MLD, targeting large-format digital signage), a 0.57-inch Micro LED Panel (MLP, for AR/VR devices and automotive HUDs), and a Flexible LED Display (FLD). The company has completed development of a monolithic stacked RGB Micro LED chip—placing R, G, and B emitters on a single epiwafer—reducing the mass transfer process from three steps to one. Lumens is already delivering MIL-STD-compliant military scope displays to Swedish defense company Aimpoint, building a production-grade reliability track record in a niche defense market. Key competitors include Seoul Semiconductor, Seoul Viosys, and Chinese manufacturers whose aggressive capacity additions have intensified pricing pressure in the TV BLU market."
+ },
+ "earnings": {
+  "ko": "연간 매출은 2022년 1,663억원에서 2023년 1,712억원, 2024년 1,742억원, 2025년 1,755억원으로 완만한 성장세를 이어갔으나, 영업이익률은 같은 기간 0.7% → 1.6% → -0.9% → -2.9%로 등락 끝에 결국 2년 연속 적자 구조에 빠졌다. 2024년에는 영업손실 16.2억원에도 당기순이익이 88.4억원으로 흑자를 기록했는데, 이는 비영업 수익(자산처분·환율 등 일회성 요인 추정)이 영업 적자를 크게 상쇄한 결과로 해석된다. 2025년에는 영업손실이 50.3억원으로 확대되고, 순손실도 66.5억원을 기록하며 전년 흑자에서 적자로 반전됐다. 회사 측은 글로벌 경기침체에 따른 전방산업 부진으로 매출원가가 상승했고 경쟁환경 악화로 이익이 감소했다고 설명했다. 분기별로는 2025년 1분기(OP +8.5억원, NP +7.0억원)만 유일하게 흑자였고, 2분기에 영업손실 20.6억원·순손실 50.8억원으로 최악의 분기를 기록한 이후 3·4분기에도 영업손실이 지속됐다. 2025년 2분기에 영업손실(20.6억원) 대비 순손실(50.8억원)이 현저히 컸다는 점은 영업 외 비용 발생 가능성을 시사한다. 주목할 점은 2025년 영업현금흐름이 +149.5억원으로 순손실에도 양(+)의 현금 창출을 유지했다는 것인데, 이는 감가상각 등 비현금 비용 및 운전자본 효율화 효과로 풀이된다. 2026년 1분기에는 영업이익 9.1억원·지배주주 순이익 23.2억원으로 흑자 전환에 성공하며 악화 사이클 탈출의 첫 신호탄을 쐈다.",
+  "en": "Annual revenue grew modestly from KRW 166.3B in 2022 to KRW 171.2B (2023), KRW 174.2B (2024), and KRW 175.5B (2025), but operating margins oscillated as follows: 0.7% → 1.6% → -0.9% → -2.9%, ultimately entering two consecutive years of operating losses. In 2024, despite an operating loss of KRW 1.6B, net profit reached KRW 8.8B—likely because significant non-operating income (estimated to include asset disposals or FX gains) more than offset the operating deficit. In 2025, the operating loss widened to KRW 5.0B and net loss reached KRW 6.7B, reversing the prior-year net profit. Management attributed the deterioration to higher cost of goods sold due to downstream industry weakness amid global economic headwinds and intensifying competition. On a quarterly basis, 2025 Q1 was the only profitable quarter (OP +KRW 0.85B, NP +KRW 0.70B). The worst quarter was 2025 Q2, which recorded an operating loss of KRW 2.1B and a net loss of KRW 5.1B—a gap far exceeding the operating loss that suggests additional non-operating charges. Losses persisted through Q3 and Q4 of 2025. Notably, operating cash flow remained positive at KRW 14.9B in 2025 despite the net loss, reflecting non-cash charges and working capital efficiency. The 2026 Q1 results confirmed a turnaround, with operating profit of KRW 0.9B and controlling shareholder net profit of KRW 2.3B, signaling the first exit from the deterioration cycle."
+ },
+ "industry": {
+  "ko": "글로벌 LED 산업은 TV BLU·조명 등 전통 시장에서 공급과잉과 단가 하락 압력이 지속되는 반면, Mini LED와 Micro LED 분야에서는 고성장 기회가 열리고 있다. Mini LED BLU 시장은 2027년까지 연평균 23.9% 성장이 전망되며, 삼성·LG 등 주요 TV 제조사의 프리미엄 TV 채택이 확산되는 구조다. Micro LED 시장은 유비리서치 기준 2030년까지 출하량 2,400만 대·매출 125억 달러 규모로 성장이 예상되고, 또 다른 시장 전망에서는 2033년까지 연평균 73% 성장해 약 150억 달러 규모에 달할 것으로 추정된다. 자동차 LED 시장도 전기차·자율주행차 확산으로 헤드램프·내장 HUD 수요가 구조적으로 증가하고 있다. 그러나 전통 TV BLU용 LED 시장에서는 중국 후발 업체들의 과도한 설비 투자로 공급과잉이 심화돼 단가 하락 압력이 구조적으로 이어지고 있으며, 국내 LED 업체들의 수익성에 직접적인 악영향을 주고 있다. 삼성전자가 LCD에서 OLED(QD-OLED 포함)로 점진적으로 전환하는 흐름은 TV BLU용 LED 수요의 구조적 감소 위험을 내포한다. 결국 업체들은 고부가가치 Mini/Micro LED 및 전장·방산 시장으로의 전환이 중장기 경쟁력의 핵심이 되는 구도에 처해 있다.",
+  "en": "The global LED industry faces persistent oversupply and pricing pressure in traditional TV BLU and lighting markets, while high-growth opportunities are emerging in Mini LED and Micro LED. The Mini LED BLU market is projected to grow at a CAGR of 23.9% through 2027, supported by widening premium TV adoption at major manufacturers. The Micro LED market is forecast to exceed 24 million units shipped and USD 12.5 billion in revenue by 2030 (UBI Research), with another market estimate projecting approximately 73% CAGR through 2033 toward approximately USD 15 billion. The automotive LED segment also shows structural demand growth for advanced headlamps and HUDs driven by EV and autonomous vehicle proliferation. However, aggressive capacity buildout by Chinese manufacturers continues to cause oversupply in the commodity TV BLU LED market, directly compressing margins for Korean LED makers. Samsung Electronics' gradual shift from LCD toward OLED (including QD-OLED) adds a structural headwind to TV BLU LED demand. Against this backdrop, pivoting to high-value Mini/Micro LED, automotive electronics, and defense applications is becoming critical for long-term competitive positioning."
+ },
+ "outlook": {
+  "ko": "루멘스는 2026년 전장·방산 분야에서 Micro LED 신규 고객사 수주라는 구체적 목표를 공개적으로 밝혔다. 현재 스웨덴 에임포인트에 군용 조준경용 Micro LED 패널을 지속 납품 중이며, 이를 발판으로 추가 방산 고객과의 협상이 진행 중인 것으로 확인된다. Monolithic RGB Micro LED 칩 기술의 완성은 전사 공정을 3분의 1로 단축함으로써 Micro LED TV·XR 기기 적용 상용화를 앞당길 수 있는 기반 기술로 평가된다. 자동차 전장 부문은 전기차·자율주행 확산에 따른 헤드램프 및 HUD 수요 증가가 중기 성장 동인으로 작용할 전망이다. 2026년 1분기 흑자 전환이 확인된 만큼, 2025년 2분기 대규모 손실 구간과의 전년 동기 비교(YoY) 효과가 2026년 2분기 실적에서 나타날 가능성이 있다. 다만 글로벌 경기 불확실성과 중국 경쟁사의 단가 공세가 지속되면 TV BLU·LGP 부문의 마진 회복 속도는 제한될 수 있다. 애플의 Micro LED 워치 적용이 2026년에도 연기됐다는 보도가 잇따르고 있어, 소비자 Micro LED 시장의 대중화 일정은 아직 불투명한 상태다.",
+  "en": "Lumens has publicly stated a 2026 objective of securing new Micro LED customers in the defense and automotive sectors. The company continues to deliver Micro LED panels for military gun scopes to Sweden's Aimpoint, and confirmed negotiations are underway with additional defense and automotive customers targeting results within 2026. The completed monolithic stacked RGB Micro LED chip—reducing mass transfer steps to one-third of conventional processes—is a foundational technology asset that could accelerate commercialization for Micro LED TVs and extended reality (XR) devices. The automotive segment is expected to benefit from structural demand growth in advanced headlamps and HUDs as EV and autonomous vehicle penetration expands. With 2026 Q1 operating profitability confirmed, a favorable year-over-year comparison is possible for 2026 Q2, given that 2025 Q2 was the worst quarter on record. However, continued global macro uncertainty and Chinese pricing competition may limit the pace of margin recovery in TV BLU and LGP. Reports of further delays to Apple's Micro LED wearable integration in 2026 keep the mass consumer Micro LED timeline uncertain."
+ },
+ "valuation_comment": {
+  "ko": "현재 주가는 주당순자산(BPS 2,275원)을 상당 폭 하회하는 수준에서 거래되고 있어, 순자산 대비 뚜렷한 할인 구간에 위치한다. 이는 2024~2025년 지속된 영업 적자와 순손실 전환에 대한 시장의 신중한 시각이 반영된 결과로 볼 수 있다. 최근 12개월 기준 지배주주 EPS는 -104원으로 적자 상태이며, 이 때문에 주가수익비율(PER)은 현 시점에서 비교 지표로서의 의미가 제한된다. 배당은 2025년에도 지급되지 않았으며, 이는 업종 평균 대비 배당 매력이 낮은 상태임을 의미한다. 2026년 1분기 영업이익 흑자 전환이 확인된 만큼, 이익 회복의 지속성 여부와 Micro LED 신규 수주 성과가 순자산 대비 할인 폭을 좁히는 핵심 변수가 될 것이다.",
+  "en": "The current share price trades at a meaningful discount to book value (BPS KRW 2,275), reflecting the market's cautious stance toward two consecutive years of operating losses and the 2025 net loss reversal. The trailing twelve-month controlling shareholder EPS stands at -104 won (a loss position), making price-to-earnings a limited comparative metric at this time. No dividends were paid for fiscal year 2025, placing the dividend yield well below typical industry averages. With 2026 Q1 confirming a return to operating profitability, the sustainability of that earnings recovery—alongside any concrete Micro LED contract wins—will be the decisive variable in determining whether the current discount to book value narrows."
+ },
+ "bull": [
+  {
+   "title": {
+    "ko": "Micro LED 기술 선점: 세계 최초 Monolithic RGB 칩 및 방산 양산 납품 실적",
+    "en": "Micro LED First-Mover Advantage: World-First Monolithic RGB Chip and Verified Defense Production"
+   },
+   "body": {
+    "ko": "루멘스는 R·G·B를 단일 에피웨이퍼에 적층 구현한 Monolithic Micro LED 칩을 세계 최초로 개발해, 전사 공정을 기존 3회에서 1회로 단축하는 기술 자산을 보유하고 있다. 이미 스웨덴 방산업체 에임포인트에 밀스펙(MIL-STD) 군용 조준경용 Micro LED 패널을 납품하며 실제 양산 신뢰성을 입증했다. 2030년까지 약 125억 달러 규모로 성장이 전망되는 Micro LED 시장에서 기술 진입 장벽을 먼저 쌓은 위치는 중장기 경쟁 우위의 씨앗이 될 수 있다.",
+    "en": "Lumens holds a pioneering technology asset in the world's first monolithic stacked RGB Micro LED chip, reducing mass transfer steps from three to one and meaningfully improving manufacturability. The company has demonstrated production-level reliability through deliveries of MIL-STD-compliant military scope displays to Aimpoint in Sweden. In a Micro LED market projected to reach approximately USD 12.5 billion by 2030, these early-mover technological barriers to entry could become significant competitive advantages over the medium to long term."
+   }
+  },
+  {
+   "title": {
+    "ko": "2026년 1분기 수익성 반전: 최악의 손실 사이클 탈출 신호",
+    "en": "2026 Q1 Profitability Reversal: First Signal of Exit from the Worst Loss Cycle"
+   },
+   "body": {
+    "ko": "2025년 2~4분기 3개 분기 연속 영업손실 이후, 2026년 1분기에 영업이익 9.1억원·지배주주 순이익 23.2억원으로 흑자 전환에 성공했다. 2025년 2분기가 영업손실 20.6억원·순손실 50.8억원으로 최악이었던 만큼, 2026년 2분기 전년 동기 대비 개선 효과가 수치상 두드러지게 나타날 수 있다. 또한 부채비율이 51.0%에서 47.4%로 하락하며 재무 건전성도 점진적 회복 추세를 보이고 있다.",
+    "en": "After three consecutive quarters of operating losses from 2025 Q2 through Q4, the company returned to operating profit of KRW 0.9B and controlling shareholder net profit of KRW 2.3B in 2026 Q1. Given that 2025 Q2 was the worst quarter on record (operating loss KRW 2.1B, net loss KRW 5.1B), the year-over-year comparison for 2026 Q2 could show a pronounced statistical improvement. Additionally, the debt-to-equity ratio declined from 51.0% to 47.4%, indicating a gradual recovery in financial health."
+   }
+  },
+  {
+   "title": {
+    "ko": "Mini/Micro LED·자동차 전장 성장 전방 시장의 구조적 수혜 포지셔닝",
+    "en": "Structural Positioning in High-Growth Mini/Micro LED and Automotive Electronics Markets"
+   },
+   "body": {
+    "ko": "Mini LED BLU 시장은 2027년까지 연평균 23.9% 성장이 전망되고, Micro LED 시장은 2033년까지 연평균 약 73%의 고성장이 예상된다. 전기차·자율주행차 확산으로 자동차용 헤드램프 LED 모듈 및 HUD 수요도 구조적으로 증가하고 있다. 루멘스는 TV BLU, LGP, 자동차 전장, Micro LED 전 세그먼트에 걸쳐 포트폴리오를 보유하고 있어, 전방 시장 회복 국면에서 레버리지 효과를 기대할 수 있는 구도다.",
+    "en": "The Mini LED BLU market is forecast to grow at a CAGR of 23.9% through 2027, while the Micro LED market is projected to expand at approximately 73% CAGR through 2033. Structural demand growth in automotive headlamp LED modules and HUDs is accelerating with EV and autonomous vehicle adoption. Lumens maintains a portfolio spanning TV BLU, LGP, automotive electronics, and Micro LED across all of these high-growth segments, positioning the company to generate meaningful leverage when upstream market conditions recover."
+   }
+  }
+ ],
+ "bear": [
+  {
+   "title": {
+    "ko": "만성 저마진 구조: 중국 경쟁사 공세로 수익성 정상화 경로 불투명",
+    "en": "Chronic Low-Margin Structure: Chinese Competition Clouds the Path to Profitability Normalization"
+   },
+   "body": {
+    "ko": "2022~2025년 영업이익률은 각각 0.7%, 1.6%, -0.9%, -2.9%로, 4년 평균이 사실상 마이너스 수준에 머물렀다. 중국 후발 업체들의 과도한 설비 투자로 TV BLU·LGP 시장의 단가 하락 압력이 구조적으로 지속되고 있어, 단기간 내 마진 정상화를 기대하기 어렵다. 같은 기간 매출 성장률은 4년 누적 5.6%에 그쳐, 외형 성장만으로 수익성을 회복하기에는 근본적 한계가 있음을 보여준다.",
+    "en": "Operating margins over 2022 to 2025 were 0.7%, 1.6%, -0.9%, and -2.9%, respectively, averaging effectively below zero over the four-year period. Structural pricing pressure from Chinese manufacturers' excess capacity in the TV BLU and LGP markets makes near-term margin normalization difficult to forecast. Revenue growth totaled only approximately 5.6% over the same four years, highlighting the fundamental limitations of relying on top-line expansion alone to restore profitability."
+   }
+  },
+  {
+   "title": {
+    "ko": "Micro LED 상용화 지연 리스크: 기술 선점과 매출 기여 사이의 벌어진 간극",
+    "en": "Micro LED Commercialization Delay Risk: Widening Gap Between Technology Leadership and Revenue Contribution"
+   },
+   "body": {
+    "ko": "애플의 Micro LED 애플워치 적용은 2024년, 2025년에 이어 2026년에도 연기됐다는 보도가 이어지며, 소비자용 대량 시장 진입 시점이 불투명하다. 현재 Micro LED 매출 기여는 방산 틈새(에임포인트) 납품 위주로 전체 매출 대비 제한적이며, 기술 선점이 아직 의미 있는 현금흐름으로 전환되지 않고 있다. 전사(Transfer) 수율과 제조 단가 개선이 충분히 이뤄지지 않으면 상용화 시점이 더 늦춰질 수 있다.",
+    "en": "Apple's Micro LED Apple Watch integration has reportedly been delayed again into 2026, following prior delays in 2024 and 2025, leaving the mass consumer market entry timeline uncertain. Current Micro LED revenue is largely confined to niche defense supply (Aimpoint) and remains limited relative to total sales. Until mass transfer yield improvements and manufacturing cost reductions are sufficiently achieved, the commercialization timeline could extend further, keeping the technology-to-cash-flow conversion rate low."
+   }
+  },
+  {
+   "title": {
+    "ko": "핵심 고객 집중 및 삼성전자의 OLED 전환 가속화에 따른 BLU 수요 구조적 위협",
+    "en": "Key Customer Concentration and Structural BLU Demand Headwind from Samsung's OLED Transition"
+   },
+   "body": {
+    "ko": "삼성전자 영상디스플레이(VD)사업부가 TV BLU LED의 핵심 고객으로 알려져 있어, 삼성의 TV 제품 믹스 변화(LCD→OLED·QD-OLED)는 루멘스 BLU 매출에 구조적 위협이 된다. 주요 TV 제조사의 자발광(OLED, Micro LED) 전환 속도가 빨라질수록 루멘스의 전통 BLU 사업 기반이 점진적으로 약화될 수 있다. LGP 부문도 Direct-type LED TV 확산으로 성장 동력이 약해지는 구조적 압력을 받고 있다.",
+    "en": "Samsung Electronics' Visual Display division is understood to be the primary customer for TV BLU LEDs, making any shift in Samsung's product mix from LCD toward OLED or QD-OLED a structural threat to Lumens' BLU revenues. As major TV manufacturers accelerate adoption of self-emissive display technologies, Lumens' traditional BLU business base could erode progressively. The LGP segment also faces structural pressure as direct-type LED TVs displace edge-type configurations, limiting growth prospects."
+   }
+  }
+ ],
+ "risks": [
+  {
+   "cat": {
+    "ko": "공급망·지정학 리스크",
+    "en": "Supply Chain and Geopolitical Risk"
+   },
+   "body": {
+    "ko": "베트남(Lumens VINA)과 중국 쿤산(곤산류명광전유한공사)에 주요 생산 기지를 두고 있어, 미·중 무역 갈등 심화, 동남아 공급망 리스크, 환율 변동에 직접적으로 노출돼 있다. 특히 중국 법인은 자동차 전장 LED 양산을 전담하고 있어, 미·중 관계 악화나 중국 정부의 규제 변화가 사업에 영향을 미칠 수 있다. 원·달러 및 원·베트남 동 환율 변동도 원가 구조에 직접 영향을 준다.",
+    "en": "With major production bases in Vietnam (Lumens VINA) and Kunshan, China (Gongsanryu), Lumens is directly exposed to U.S.-China trade tensions, Southeast Asian supply chain disruptions, and currency fluctuations. The Chinese subsidiary is solely responsible for automotive LED production, meaning deterioration in U.S.-China relations or changes in Chinese regulatory policies could disrupt operations. Fluctuations in the KRW/USD and KRW/VND exchange rates also directly affect the cost structure."
+   }
+  },
+  {
+   "cat": {
+    "ko": "기술 전환 리스크",
+    "en": "Technology Transition Risk"
+   },
+   "body": {
+    "ko": "Micro LED 대중화의 핵심 과제인 초소형 칩 전사 수율 및 제조 단가 개선이 예상보다 지연될 경우, 경쟁사(삼성전자, 소니, 중국 업체 등) 대비 선점 우위가 희석될 수 있다. TV·AR/VR 시장에서 OLED가 대안 기술로서 지위를 더욱 굳힌다면 Micro LED 전환 시점이 더욱 늦어질 수 있다. 대규모 신규 기술 투자에 필요한 자본 조달 부담도 재무 건전성에 부담 요인으로 작용할 수 있다.",
+    "en": "If mass transfer yield improvements and manufacturing cost reductions for ultra-small Micro LED chips are delayed beyond expectations, Lumens' first-mover advantage could be eroded by competitors including Samsung Electronics, Sony, or Chinese manufacturers. Should OLED further consolidate its position as the dominant display alternative in TV and AR/VR markets, the Micro LED adoption timeline could extend further. Capital requirements for scaling up new technology production could also add pressure to the balance sheet."
+   }
+  },
+  {
+   "cat": {
+    "ko": "수익성 회복 지속성 불확실성",
+    "en": "Uncertainty Over Sustainability of Profitability Recovery"
+   },
+   "body": {
+    "ko": "2026년 1분기 흑자 전환이 확인됐으나, 이것이 지속 가능한 구조적 회복인지 계절성·일회성 요인에 의한 일시적 반등인지 아직 추가 검증이 필요하다. 2024년에도 영업 적자 상태에서 순이익 흑자를 기록한 전례가 있어, 비영업 손익의 변동이 표면적 실적 개선을 왜곡할 가능성을 배제할 수 없다. 글로벌 매크로 환경 악화 및 TV BLU 단가 추가 하락 시 수익성 회복세가 재차 꺾일 수 있다.",
+    "en": "While 2026 Q1 confirmed a return to profitability, further validation is needed to determine whether this represents a sustainable structural recovery or a temporary rebound driven by seasonal or one-time factors. The precedent of 2024—where net profit was positive despite an operating loss—means that volatility in non-operating items could mask the true underlying earnings trend. A deterioration in the global macro environment or further price declines in TV BLU LEDs could reverse the recovery momentum."
+   }
+  }
+ ],
+ "checkpoints": [
+  {
+   "when": {
+    "ko": "2026년 8월 초~중순",
+    "en": "Early to Mid-August 2026"
+   },
+   "what": {
+    "ko": "2026년 2분기 실적 발표. 2025년 2분기 최악의 손실(영업손실 20.6억원·순손실 50.8억원)과의 YoY 비교가 핵심이며, 1분기 흑자 기조의 지속 여부 및 매출 회복 속도를 확인해야 한다.",
+    "en": "2026 Q2 earnings release. The key focus is the year-over-year comparison against the worst quarter on record (2025 Q2 operating loss KRW 2.1B, net loss KRW 5.1B). Confirming whether the Q1 profitability is sustained and assessing the pace of revenue recovery are essential."
+   }
+  },
+  {
+   "when": {
+    "ko": "2026년 중~하반기 중",
+    "en": "Mid to Late 2026"
+   },
+   "what": {
+    "ko": "Micro LED 전장·방산 신규 고객사 수주 공시 여부. 회사가 연내 영업 성과를 목표로 공식 발표한 만큼, DART 공시 또는 IR 자료를 통한 구체적 수주 계약 확인이 중장기 사업 전환의 실질적 분기점이 된다.",
+    "en": "Disclosure of new Micro LED customer wins in automotive or defense applications. As the company has publicly stated a 2026 target for commercial results, any DART filing or IR confirmation of a concrete supply contract would mark a pivotal milestone for the medium-term business transformation thesis."
+   }
+  },
+  {
+   "when": {
+    "ko": "2026년 하반기 TV 시장 동향",
+    "en": "2H 2026 Global TV Market Dynamics"
+   },
+   "what": {
+    "ko": "삼성·LG 등 주요 TV 제조사의 Mini LED vs. OLED 제품 믹스 변화 및 하반기 패널 주문 동향 모니터링. TV BLU 및 LGP 부문 매출에 직결되므로 루멘스 핵심 고객의 수요 가시성을 제공한다.",
+    "en": "Monitor major TV manufacturers' (Samsung, LG, etc.) Mini LED vs. OLED product mix shifts and second-half panel order trends. These directly impact the TV BLU and LGP segments and provide the most immediate demand visibility for Lumens' core customer revenue base."
+   }
+  },
+  {
+   "when": {
+    "ko": "2026년 11월 중순",
+    "en": "Mid-November 2026"
+   },
+   "what": {
+    "ko": "DART 3분기 분기보고서 제출 시 사업 부문별 매출 구성과 Micro LED 관련 신규 계약·수주 현황 확인. 전장·방산 매출 비중 변화가 사업 구조 전환의 실질적 증거가 되는지 점검 필요.",
+    "en": "Review the Q3 2026 quarterly report (DART filing) for segment revenue breakdown and any new Micro LED order or contract disclosures. A measurable shift in the automotive/defense revenue share would serve as concrete evidence of the intended structural business transformation."
+   }
+  },
+  {
+   "when": {
+    "ko": "2026년 하반기 (상시 모니터링)",
+    "en": "2H 2026 (Ongoing)"
+   },
+   "what": {
+    "ko": "애플 Micro LED 제품 로드맵 업데이트. 이미 수차례 연기됐으나, 공식 제품 출시 일정 발표는 루멘스의 소비자용 Micro LED 수혜 기대와 시장 밸류에이션 인식에 영향을 미칠 수 있다.",
+    "en": "Monitor updates to Apple's Micro LED product roadmap. Despite repeated delays, any official announcement of a Micro LED product launch timeline could materially affect the market's perception of Lumens as a Micro LED beneficiary and influence valuation expectations."
+   }
+  }
+ ],
+ "verdict": {
+  "body": {
+   "ko": "루멘스는 TV BLU·LGP 중심 전통 LED 사업에서 구조적 수익성 압박에 직면해 있으며, 2024~2025년 2년 연속 영업손실로 체질 개선의 필요성이 수치로 입증됐다. 그러나 2026년 1분기 영업이익 흑자 전환은 악화 사이클 탈출의 첫 신호로 해석될 수 있으며, 2025년에도 영업현금흐름이 양(+)을 유지해 재무 기초 체력이 일정 수준 보전됐다는 점은 긍정적이다. 중장기 관점에서는 세계 최초 Monolithic RGB Micro LED 칩 기술과 방산 납품 트랙 레코드가 기술 진입 장벽을 형성하고 있으나, 이 기술이 실질적인 매출 성장과 마진 개선으로 전환되기까지의 속도와 규모가 핵심 변수다. 현재 주가는 주당순자산(BPS 2,275원) 대비 상당한 할인 구간에 있으며, 이익 회복 지속성과 Micro LED 신규 수주 공시 여부가 재평가 방향을 결정할 것이다. 전체적으로 기술 잠재력은 인정되나, 이를 재무 성과로 전환하는 실행력을 시장이 검증하는 국면에 있다는 점을 균형 있게 인식할 필요가 있다.",
+   "en": "Lumens faces structural profitability pressure in its traditional TV BLU and LGP businesses, with two consecutive years of operating losses in 2024 and 2025 providing quantitative evidence of the urgency for business transformation. However, the return to operating profit in 2026 Q1 can be interpreted as the first signal of an exit from the deterioration cycle, while the maintenance of positive operating cash flow throughout 2025 despite the net loss indicates that underlying financial resilience remains intact. From a medium-to-long-term perspective, the world's first monolithic RGB Micro LED chip and the verified defense supply track record constitute meaningful technology barriers to entry, but the pace and scale at which this technology translates into tangible revenue growth and margin improvement is the decisive variable. The current share price trades at a significant discount to book value (BPS KRW 2,275), and the sustainability of the earnings recovery—alongside any concrete Micro LED contract announcements—will determine the direction of any potential re-rating. Overall, while the company's technological potential is acknowledged, it is important to recognize that the market is currently in the phase of verifying management's ability to convert that potential into demonstrable financial performance."
+  }
+ },
+ "sources": [
+  "https://comp.fnguide.com/SVO2/ASP/SVD_Main.asp?gicode=A038060",
+  "https://www.digitaltoday.co.kr/news/articleView.html?idxno=629699",
+  "https://comp.wisereport.co.kr/company/c1010001.aspx?cmp_cd=038060",
+  "https://alphasquare.co.kr/home/stock-summary?code=038060",
+  "https://comp.wisereport.co.kr/company/c1020001.aspx?cmp_cd=038060&cn=",
+  "https://news.nate.com/view/20260330n19247",
+  "https://kind.krx.co.kr/common/disclsviewer.do?method=search&acptno=20260319000619&rcpno=20260319000497&orgid=F&tran=Y&langTpCd=0",
+  "https://comp.fnguide.com/SVO2/asp/SVD_Invest.asp?pGB=1&cID=&MenuYn=Y&ReportGB=D&NewMenuID=105&stkGb=701&gicode=A038060",
+  "https://valueline.co.kr/finance/investment/038060",
+  "https://thevc.kr/lumens",
+  "https://biz.heraldcorp.com/article/3654121",
+  "https://www.jobplanet.co.kr/companies/78606/landing/%EB%A3%A8%EB%A9%98%EC%8A%A4",
+  "https://www.thelec.kr/news/articleView.html?idxno=1168",
+  "https://www.saramin.co.kr/zf_user/company-info/view/csn/WU1pTnJIcW5KM1BuU0NkUmwxL2xaZz09/company_nm/(%EC%A3%BC)%EB%A3%A8%EB%A9%98%EC%8A%A4",
+  "https://www.thelec.kr/news/articleView.html?idxno=236",
+  "https://www.valley.town/space/@1percent/articles/69b7f60b9c6e491942c0e365",
+  "https://comp.fnguide.com/SVO2/asp/SVD_Main.asp?gicode=A038060",
+  "https://www.investing.com/equities/lumens-co-ltd"
+ ],
+ "v": 2,
+ "model": "claude-sonnet-4-6",
+ "ticker": "038060",
+ "name": "루멘스",
+ "name_en": "LUMENS CO., LTD.",
+ "sector": "전자·부품",
+ "categories": [
+  "전자·부품"
+ ],
+ "market": "코스닥",
+ "reportDate": "2026-06-19",
+ "reportTs": "2026-06-19 05:28",
+ "dataDate": "20260618",
+ "quant": {
+  "asOf": "2026-06-18",
+  "fs_basis": "연결(CFS) · DART 공시 확정치 · 지배주주 기준 순이익",
+  "annual": [
+   {
+    "year": 2025,
+    "rev": 175538081725,
+    "op": -5026078971,
+    "np": -6651372956,
+    "np_owner": -6651372956,
+    "equity": 105936884258,
+    "equity_owner": 105936884258,
+    "liab": 50173363972,
+    "cfo": 14947868096,
+    "eps_basic": -138,
+    "opm": -2.9,
+    "roe": -6.3,
+    "debt_ratio": 47.4
+   },
+   {
+    "year": 2024,
+    "rev": 174227991930,
+    "op": -1620317061,
+    "np": 8836564928,
+    "np_owner": 8836564928,
+    "equity": 111439312894,
+    "equity_owner": 111439312894,
+    "liab": 56878008806,
+    "cfo": 4327175423,
+    "eps_basic": null,
+    "opm": -0.9,
+    "roe": 7.9,
+    "debt_ratio": 51.0
+   },
+   {
+    "year": 2023,
+    "rev": 171236881677,
+    "op": 2742020759,
+    "np": 4005286642,
+    "np_owner": 4005286642,
+    "equity": 97803951319,
+    "equity_owner": 97803951319,
+    "liab": 48651958356,
+    "cfo": 24664549966,
+    "eps_basic": null,
+    "opm": 1.6,
+    "roe": 4.1,
+    "debt_ratio": 49.7
+   },
+   {
+    "year": 2022,
+    "rev": 166304887331,
+    "op": 1189859515,
+    "np": 15889721031,
+    "np_owner": 15889721031,
+    "equity": 93676767562,
+    "equity_owner": 93676767562,
+    "liab": 43923272104,
+    "cfo": -20049082113,
+    "eps_basic": null,
+    "opm": 0.7,
+    "roe": 17.0,
+    "debt_ratio": 46.9
+   }
+  ],
+  "quarterly": [
+   {
+    "q": "2025Q1",
+    "rev": 47903579292,
+    "op": 845041712,
+    "np_owner": 695181257
+   },
+   {
+    "q": "2025Q2",
+    "rev": 36719652098,
+    "op": -2056952019,
+    "np_owner": -5084750316
+   },
+   {
+    "q": "2025Q3",
+    "rev": 44401409477,
+    "op": -1939478397,
+    "np_owner": -138872064
+   },
+   {
+    "q": "2025Q4",
+    "rev": 46513440858,
+    "op": -1874690267,
+    "np_owner": -2122931833
+   },
+   {
+    "q": "2026Q1",
+    "rev": 38235016074,
+    "op": 912500224,
+    "np_owner": 2319159505
+   }
+  ],
+  "valuation": {
+   "price": 878,
+   "mcap": 0.0422,
+   "shares": 48103069,
+   "total_shares": 48103069,
+   "wavg_shares": 48198354,
+   "per": null,
+   "eps": -104,
+   "pbr": 0.39,
+   "bps": 2275,
+   "roe_ttm": -4.5,
+   "ttm_window": "2025Q2~2026Q1",
+   "ttm_np_owner": -5027394708,
+   "pbr_krx": 0.4,
+   "bps_krx": 2202.0,
+   "basis": "PER·EPS·PBR·BPS 모두 자체 산출(네이버·토스와 동일 방식) · 배당은 DART 공시 주당현금배당금(보완:KRX) ÷ 현재가",
+   "dps": 0.0,
+   "div": 0.0
+  }
+ }
+}

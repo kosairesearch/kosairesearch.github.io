@@ -1,0 +1,341 @@
+{
+ "title": {
+  "ko": "기술 마일스톤 달성, 수익화 전환 속도가 핵심",
+  "en": "Key Tech Milestones Hit; Speed of Monetization Is the Deciding Factor"
+ },
+ "lead": {
+  "ko": "ESD·센서·전력 소자 전문 IDM으로서 GaN 방산·우주 반도체 국산화 등 기술 마일스톤을 잇달아 달성하고 있으나, 3년 연속 매출원가 초과·영업손실 심화 구조가 지속되면서 2026년 흑자전환 실현 여부가 핵심 관전 포인트다.",
+  "en": "As a domestic IDM with an expanding compound-semiconductor portfolio spanning defense and space, Sigetronics has hit successive technical milestones, yet a structural gross-margin deficit deepening for three consecutive years makes the timing of its 2026 profitability turnaround the central question."
+ },
+ "keypoints": [
+  {
+   "ko": "3년 연속 영업손실 심화: 매출 121~128억원 정체 속 영업손실률 -43.5%(2023)→-51.6%(2024)→-59.5%(2025), 2026년 1분기도 약 -63% 수준 지속.",
+   "en": "Three years of deepening losses: Revenue locked at KRW 12.2–12.7 bn while the operating margin worsened to -59.5% in FY2025 and ~-63% in 2026Q1."
+  },
+  {
+   "ko": "M-FAB 월 2만매 생산능력 완비: Si·GaAs·GaN·SiC 다소재 처리 가능한 특화 팹 구축 완료(2026년 3월 공시), IDM 수직계열화 체계 및 포트폴리오 다각화 실행 중.",
+   "en": "20,000-wafer/month M-FAB now fully operational (announced March 2026): Multi-material (Si, GaAs, GaN, SiC) specialty fab underpins the company's IDM vertical-integration and diversification strategy."
+  },
+  {
+   "ko": "방산·우주 기술 마일스톤: 항우연과 우주급 SBD 국산화 성공, GaN S밴드 RF 전력반도체 상용화(2025년 12월), X밴드 PA MMIC(20W, GaN-on-SiC) 성능 검증 완료(2026년 6월).",
+   "en": "Defense/space tech milestones: Space-grade SBD localization with KARI, GaN S-Band RF IC commercialized (Dec 2025), and 20W X-Band PA MMIC for AESA radar performance-verified (Jun 2026)."
+  },
+  {
+   "ko": "2025년 11월 약 60억원 유상증자: 운영자금 33.9억·시설투자 26.0억으로 배정, 부채비율은 53.9%로 상승·자기자본은 221.1억원으로 축소.",
+   "en": "~KRW 6 bn rights offering (Nov 2025): KRW 3.4 bn for operations, KRW 2.6 bn for capex; debt ratio rose to 53.9% as accumulated losses eroded equity to KRW 22.1 bn."
+  },
+  {
+   "ko": "소비자 전자 수요 회복·센서 신제품 채택률이 2026년 핵심 변수: 경영진은 2026년 흑자전환을 공식 목표로 제시, 방산 고부가 제품의 양산 전환도 단계적 진행 예상.",
+   "en": "Consumer electronics recovery and sensor adoption rates are the 2026 swing factors; management has formally targeted profitability this year, with defense high-margin products expected to phase into mass production progressively."
+  }
+ ],
+ "business": {
+  "ko": "시지트로닉스(2008년 설립, 2023년 8월 코스닥 상장)는 비메모리 광·개별 소자 분야의 IDM(종합반도체) 기업으로, 설계·제조·판매를 수직계열화하여 전북 완주 본사 M-FAB에서 직접 생산한다. 주요 제품은 ESD(정전기 방호) 소자, 센서(APD·IRED·포토센서) 소자, Power(전력) 소자의 세 축으로 구성되며, 언론 보도 기준 ESD는 2023년 전체 매출의 약 64%를 점했다(출처: ZDNet Korea, 2024년 11월). 핵심 생산 인프라인 M-FAB은 실리콘(Si)·갈륨비소(GaAs)·질화갈륨(GaN)·탄화규소(SiC)·산화갈륨(Ga2O3) 등 다양한 첨단 소재를 처리할 수 있으며, 2026년 3월 기준 월 2만매 생산능력을 완비했다. 고객은 한국·중국·대만·일본의 주요 대기업을 중심으로 한 순수 B2B 모델로 운영되며, APD 기반 광센서 파운드리 서비스도 외부 고객에게 제공한다. 포트폴리오 전환 측면에서 최근에는 고부가 방산 반도체로 영역을 적극 확대하고 있다. 1400V급 MCT(전력 스위칭 소자) 국내 최초 양산, GaN S밴드 RF 전력반도체(10W~150W급) 상용화, AESA 레이더용 X밴드 PA MMIC(20W, GaN-on-SiC) 개발 완료가 주요 성과다. 기술 경쟁력의 핵심은 한국전자통신연구원(ETRI) 이전 원천기술과 자체 GaN 에피(Epi) 공정 역량이며, 4월 2026년 한국방위산업진흥회(KADIA) 준회원사로 등록해 방산 공급망에 공식 편입됐다. 대표이사 심규환 박사는 ETRI 18년 및 전북대 교수 경력을 갖춘 GaN 반도체 전문가로, 기술 내재화 중심의 경영 전략을 주도하고 있다.",
+  "en": "Sigetronics (founded 2008, KOSDAQ-listed August 2023) is a domestic IDM specializing in non-memory photonic and discrete semiconductors, with design, fabrication, and sales vertically integrated at its M-FAB in Wanju, North Jeolla Province. The product portfolio comprises three pillars: ESD (electrostatic discharge) devices, sensor devices (APD, IRED, photosensors), and power devices—with ESD reportedly accounting for approximately 64% of 2023 revenue per ZDNet Korea (November 2024). The M-FAB processes multiple advanced materials including Si, GaAs, GaN, SiC, and Ga2O3, with monthly wafer output reaching 20,000 units as of March 2026. Customers span major corporations across Korea, China, Taiwan, and Japan in a pure B2B model; the company also offers APD-based optical sensor foundry services to third-party clients. On the defense side, Sigetronics has achieved a domestic first in mass-producing 1400V-class MOS-Controlled Thyristors (MCT), commercialized GaN S-Band RF power ICs (10W–150W) in December 2025, and completed performance verification of a 20W X-Band PA MMIC (GaN-on-SiC) for AESA radar in June 2026. In April 2026, the company joined the Korea Defense Industry Association (KADIA) as an associate member, formalizing its entry into the defense supply chain. Core technology assets rest on ETRI-transferred IP and proprietary GaN Epi process capabilities; CEO Dr. Kyuhwan Shim, a GaN semiconductor specialist with 18 years at ETRI and a professorship at Chonbuk National University, leads the technology-first strategy."
+ },
+ "earnings": {
+  "ko": "연결(CFS) 기준 2023~2025년 매출은 125.1억원→121.7억원→127.5억원으로 3년간 사실상 정체됐다. 영업손실은 54.4억원(OPM -43.5%)→62.9억원(-51.6%)→75.9억원(-59.5%)으로 매년 확대됐으며, 이는 매출총이익 단계에서도 이미 손실이 발생하는 구조적 원가 문제를 반영한다. 2025년 당기순손실은 80.1억원으로 전년 56.9억원 대비 40.8% 확대됐고, 회사는 소재 가격 상승에 따른 재료비 증가와 외환차손 확대를 주요 원인으로 DART에 공시했다. 영업활동현금흐름도 -40.7억원(2023)→-41.5억원(2024)→-50.4억원(2025)으로 음(-)의 현금 유출이 심화되는 추세다. 분기별로는 2025년 3분기(매출 39.2억원, 영업손실 16.4억원)가 연내 최고 매출·최소 손실을 기록했으나, 4분기(매출 28.1억원, 영업손실 25.1억원, OPM 약 -89%)에 급격히 악화됐다. 2026년 1분기는 매출 35.9억원으로 직전 분기 대비 회복됐지만, 영업손실 22.6억원(OPM 약 -63%), 지배주주 귀속 순손실 20.6억원으로 여전히 손실 깊이가 상당하다. 3년간 누적 영업손실은 193억원을 초과하며, 자기자본은 2023년 말 290.0억원에서 2025년 말 221.1억원으로 감소했고 부채비율은 36.5%→42.8%→53.9%로 상승했다. 2025년 11월 유상증자가 없었다면 재무 완충 여력이 더 빠르게 소진됐을 것으로 판단된다.",
+  "en": "On a consolidated basis, revenues have been essentially flat for three years: KRW 12.5 bn (2023), KRW 12.2 bn (2024), and KRW 12.7 bn (2025). Operating losses expanded every year—KRW 5.4 bn (OPM -43.5%), KRW 6.3 bn (-51.6%), and KRW 7.6 bn (-59.5%)—reflecting a structural gross-margin deficit where cost of goods sold persistently exceeds revenue. The FY2025 net loss of KRW 8.0 bn widened 40.8% year-on-year, driven by higher raw-material costs and an increase in FX losses as disclosed in the DART filing. Operating cash outflows deepened from KRW -4.1 bn in 2023 to KRW -5.0 bn in 2025. Quarterly trends show a partial improvement in 2025Q3 (revenue KRW 3.9 bn, operating loss KRW 1.6 bn), followed by a sharp deterioration in 2025Q4 (revenue KRW 2.8 bn, operating loss KRW 2.5 bn, OPM ~-89%). In 2026Q1, revenue recovered to KRW 3.6 bn on a sequential basis, yet the operating loss remained at KRW 2.3 bn (~-63% OPM) and the controlling-interest net loss was KRW 2.1 bn. Three-year cumulative operating losses now exceed KRW 19.3 bn, compressing equity from KRW 29.0 bn at end-2023 to KRW 22.1 bn at end-2025 and pushing the debt ratio from 36.5% to 53.9%; without the November 2025 rights offering, the financial buffer would have eroded more rapidly."
+ },
+ "industry": {
+  "ko": "글로벌 광센서 시장은 2024년 약 245억달러에서 연평균 10% 이상 성장해 2032년 약 719억달러에 달할 전망이며, 시지트로닉스가 주력하는 외부 환경 광센서 분야가 전체 시장의 절반 이상을 점한다. 웨어러블·헬스케어 기기 분야에서는 APD 기반 심박수·혈압·혈중 산소포화도 모니터링 수요가 빠르게 확대되고 있으며, 애플 등 글로벌 빅테크가 차세대 스마트워치에 탑재 센서를 대폭 늘리는 추세다. 전력반도체 세계 시장도 2024년 약 525억달러에서 2034년 약 817억달러로 성장이 전망돼, GaN 전력 소자 사업에 우호적인 배경이 형성된다. AI 데이터센터의 서버 집적도·전력 밀도 상승으로 ESD/TVS 보호 소자와 APD 기반 광트랜시버 부품 수요가 동반 증가하고 있으며, 플립칩 기반 TVS 기술은 고밀도 서버 환경 대응에 적합한 기술로 평가된다. K-방산 수출 확대와 글로벌 재무장 기조는 국산 군용 반도체 수요를 자극하고 있으며, AESA 레이더·전자전 장비용 GaN RF 전력반도체에 대한 국내 수요도 증가하는 흐름이다. 경쟁 구도 면에서 Wolfspeed·Infineon·Qorvo 등 글로벌 대기업이 GaN 상업 시장을 주도하지만, 공급망 국산화 수요가 강한 방산·우주 분야에서는 국내 중소 IDM이 기술 자립 모델로 틈새를 공략할 여지가 있다. GaN RF 전력반도체부터 광센서까지 독자 팹에서 설계·생산할 수 있는 국내 기업이 사실상 시지트로닉스 한 곳이라는 점이 경쟁 차별화의 핵심으로 평가된다.",
+  "en": "The global optical sensor market is projected to grow from approximately USD 24.5 bn in 2024 at 10%+ CAGR to around USD 71.9 bn by 2032, with the ambient and environmental light sensor segment—where Sigetronics competes—representing more than half the total market. In wearables and healthcare, demand for APD-based monitoring of heart rate, blood pressure, and SpO2 is growing rapidly, with major tech companies expanding multi-sensor integration in next-generation smartwatches. The global power semiconductor market (~USD 52.5 bn in 2024) is projected to reach ~USD 81.7 bn by 2034, providing a constructive backdrop for GaN power device ambitions. AI data center buildout—driven by surging server density and power consumption—is simultaneously lifting demand for ESD/TVS protection components and APD-based optical transceiver parts. K-defense export growth and global rearmament trends are stimulating domestic demand for military-grade semiconductors, including GaN RF power ICs for AESA radar and electronic warfare systems. On the competitive front, global GaN leaders such as Wolfspeed, Infineon, and Qorvo dominate commercial markets, but supply-chain localization pressure in the defense and space sectors creates a viable niche for domestic IDMs with proven qualification records. Sigetronics is reportedly the only Korean company capable of fabricating both GaN RF power semiconductors and optical sensors in a proprietary fab—a differentiator particularly valued by domestic defense integrators."
+ },
+ "outlook": {
+  "ko": "회사는 2026년 3월 26일 정기주주총회에서 '2026년 흑자전환 로드맵'을 공식 선언했으며, 약 60억원 유상증자 자금(운영자금 33.9억원, 시설투자 26.0억원)을 고부가 신제품 양산 설비에 집중 투입하고 있다. 신규 수주 측면에서는 2026년 상반기를 경과하면서 Power 소자 부문에서 다수 고객사향 수주가 늘어나는 추세이며, 방산 고부가 제품은 2026년 이후 양산 체제 전환이 점진적으로 실적에 반영될 것으로 기대된다. 2025년 12월에 상용화한 GaN S밴드(2~4GHz) RF 전력반도체 라인업(10W~150W)은 군용 레이더·전자전 시스템 수요를 겨냥하며, 2026년 6월 성능 검증을 완료한 X밴드 PA MMIC(20W, GaN-on-SiC)는 AESA 레이더용 핵심 부품으로 양산 체계 구축이 다음 단계다. 센서 부문에서는 스마트워치·헬스케어 기기향 포토센서 신제품의 고객사 채택 확대 여부가 소비자 가전 매출 회복의 핵심 변수로 작용한다. 전북 익산 신규 팹은 2025년 착공에 들어가 2026년부터 화합물반도체 주력 양산을 목표로 하며, 완공 후 생산량 증대가 고정비 분산 효과를 기대할 수 있다. 회사는 2025년 개발을 마친 6종의 신제품을 중심으로 △LED·디스플레이 △산업용 로봇·스마트팩토리 △글로벌 스마트폰·웨어러블 △OEM/ODM 파운드리를 4대 성장 축으로 상업화를 추진 중이다. 단, 2026년 1분기 기준 영업손실률이 여전히 -63% 수준이어서 흑자전환을 위해서는 매출 성장과 원가 구조 개선이 동시에 이루어져야 한다.",
+  "en": "At the March 26, 2026 AGM, management formally declared a 2026 profitability turnaround roadmap and is deploying rights-offering proceeds—KRW 3.4 bn for operations, KRW 2.6 bn for capex—into high-value new product capacity. On the order front, power device wins from multiple customers have been growing through the first half of 2026, and defense high-margin products are expected to transition into mass-production volumes progressively. The GaN S-Band (2–4 GHz) RF power IC lineup (10W–150W), commercialized in December 2025, targets military radar and electronic warfare applications; the 20W X-Band PA MMIC (GaN-on-SiC) performance-verified in June 2026 moves next toward mass-production qualification for AESA radar platforms. In the sensor segment, adoption of new photosensor products by wearable and healthcare device makers is the pivotal variable for recovering consumer electronics revenue. The new compound-semiconductor fab in Iksan, construction of which began in 2025, targets the start of mass production in 2026 and is expected to improve fixed-cost absorption once operational. The company is commercializing six new products developed in 2025 across four growth axes—LED/display, industrial robotics/smart-factory, smartphones/wearables, and OEM/ODM foundry. That said, with the operating margin still at approximately -63% in 2026Q1, a simultaneous revenue ramp and cost-structure improvement are needed to achieve the stated full-year profitability target."
+ },
+ "valuation_comment": {
+  "ko": "연속 영업적자로 PER 산출이 불가하며, 이익 기반의 전통적인 가치 평가 지표는 현 단계에서 의미 있게 적용되지 않는다. 주당순자산(BPS)은 제공 데이터 기준 3,108원으로 집계되며, 현재 주가는 이 장부가치를 상당 폭 상회하는 수준에 형성돼 있어 시장이 기술 잠재력 및 방산·센서 성장 옵션에 대한 프리미엄을 반영하고 있음을 시사한다. 다만 3년 연속 순손실로 BPS 자체가 꾸준히 축소되고 있으며, 2026년 흑자전환에 실패할 경우 이 순자산 가치가 추가로 잠식될 위험이 있다. 배당은 확인 가능한 기간 내내 지급된 바 없으며(DPS 0원), 배당수익률은 업종 평균을 크게 하회한다. 향후 복합 반도체 신사업의 매출화 속도와 2026년 흑자전환 여부가 BPS 하락 전환 여부를 결정하는 핵심 변수로, 이 두 가지 진척 상황이 중기 순자산 수준의 방향을 좌우할 전망이다.",
+  "en": "With persistent operating losses, earnings-based valuation multiples are not applicable. Book value per share (BPS) stands at KRW 3,108 per the provided data, and the stock is currently priced at a meaningful premium to this figure—indicating that the market attributes significant option value to the company's compound-semiconductor and defense technology pipeline. However, three consecutive years of net losses have steadily eroded BPS, and failure to achieve profitability in 2026 would compress it further. No dividends have been paid during any period on record (DPS: KRW 0), placing the dividend yield well below sector benchmarks. The pace of new compound-semiconductor revenue monetization and whether the FY2026 profitability target is met will determine whether BPS erosion halts or accelerates, making these the key medium-term anchors for any book-value-based analysis."
+ },
+ "bull": [
+  {
+   "title": {
+    "ko": "방산·우주 반도체 국산화 선점 지위",
+    "en": "First-Mover Position in Defense and Space Semiconductor Localization"
+   },
+   "body": {
+    "ko": "국내에서 GaN RF 전력반도체, AESA 레이더용 X밴드 PA MMIC, 우주급 SBD, MCT를 자체 팹으로 독자 설계·생산할 수 있는 기업은 사실상 시지트로닉스가 유일한 것으로 평가된다. K-방산 수출 붐과 글로벌 재무장 사이클은 이 분야의 중장기 수요를 구조적으로 뒷받침한다. 방산 조달은 납기·규격 적합성·공급망 신뢰성이 우선시돼 국내 독점적 공급사 지위가 장기 수주 관계로 이어질 가능성이 있다. 항공우주연구원(KARI)과의 우주급 SBD 국산화 성공은 우주 분야 공급망 진입의 의미 있는 레퍼런스가 됐으며, KADIA 회원사 등록으로 방산 네트워크 접근성도 높아졌다.",
+    "en": "Sigetronics is reportedly the only Korean company able to design and produce GaN RF power ICs, X-Band PA MMICs for AESA radar, space-grade SBDs, and MCTs in a proprietary fab. The K-defense export boom and global rearmament cycle underpin structural long-term demand in this segment. Defense procurement prioritizes qualified domestic suppliers with reliable delivery records, creating sticky long-term relationships once a vendor passes qualification. The successful SBD localization with KARI serves as a critical reference for further space supply-chain integration, while KADIA membership broadens access to the domestic defense network."
+   }
+  },
+  {
+   "title": {
+    "ko": "AI 데이터센터·웨어러블 이중 수요 성장 동력",
+    "en": "Dual Tailwind from AI Data Centers and Wearable Sensors"
+   },
+   "body": {
+    "ko": "AI 서버 집적도 상승으로 ESD/TVS 보호 소자 수요가 늘고 있으며, 회사의 플립칩 기반 TVS 기술은 고밀도 서버 환경 대응에 적합한 기술로 업계에서 평가된다. APD 기반 광센서는 AI 데이터센터의 광통신 인프라(CPO·실리콘 포토닉스) 확장에 따라 적용 범위가 넓어질 수 있다. 스마트워치·헬스케어 기기 시장 성장과 글로벌 빅테크의 센서 탑재 확대 전략은 포토센서 수요의 구조적 성장 동력이다. 회사의 APD는 300~1100nm 대역 고감도 동작과 1000배 신호 증폭 특성을 갖춰 글로벌 경쟁사 대비 기술 차별화가 인정된다는 평가가 있다.",
+    "en": "Rising AI server density is structurally expanding demand for ESD/TVS protection components, and the company's flip-chip TVS technology is viewed by the industry as suited to high-density server environments. APD-based optical sensors could expand into AI data center optical interconnect infrastructure (CPO, silicon photonics) as those ecosystems scale. Structural growth in the smartwatch and healthcare wearable market—with global tech companies doubling sensor counts—underpins long-term photosensor demand. The company's APD, operating across 300–1100nm with 1000x signal amplification, is regarded as technically differentiated relative to global peers."
+   }
+  },
+  {
+   "title": {
+    "ko": "M-FAB 규모의 경제 전환 및 포트폴리오 다각화 기반",
+    "en": "M-FAB Operating Leverage Potential and Portfolio Diversification Platform"
+   },
+   "body": {
+    "ko": "월 2만매 생산능력 완비로 규모의 경제 기반이 마련됐으며, 매출 증가 시 고정비 분산 효과로 수익성 개선이 나타날 수 있는 구조가 형성됐다. 2025년 개발 완료된 6종 신제품의 상업화와 OEM/ODM 파운드리 서비스 확대는 기존 ESD 편중 매출 구조를 다변화하는 계기가 된다. 유상증자로 확보된 자금이 고부가 신제품 양산 설비에 투입되고 있어 2026년 매출 구조 개선의 기반이 조성됐다. ETRI 원천기술 이전과 15년 이상 경력의 전문 인력 구성은 기술 연속성과 신제품 개발 속도에 긍정적인 요소다.",
+    "en": "Reaching 20,000-wafer monthly capacity creates an operating leverage structure where incremental revenue gains can translate more efficiently into margin improvement. Commercialization of six new products developed in 2025 and the expansion of OEM/ODM foundry services diversify revenue away from the legacy ESD concentration. Rights-offering proceeds are being deployed toward high-margin new product capacity, laying the groundwork for a revenue-mix shift in 2026. ETRI-transferred IP and a team of engineers with 15+ years of specialized experience support technological continuity and development velocity."
+   }
+  }
+ ],
+ "bear": [
+  {
+   "title": {
+    "ko": "3년 연속 구조적 매출총손실 및 영업적자 심화",
+    "en": "Structural Gross-Margin Deficit and Deepening Losses for Three Straight Years"
+   },
+   "body": {
+    "ko": "매출원가가 매출액을 초과하는 구조가 2023~2025년 내내 지속됐으며, 영업손실률은 -43.5%에서 -59.5%로 악화됐다. 2025년 4분기 영업손실률은 약 -89%에 달했고, 2026년 1분기도 약 -63%로 흑자전환까지는 매출의 대폭 성장 또는 원가 구조의 근본적 전환이 필요하다. 3년간 누적 영업손실이 193억원을 넘어 자기자본을 290억원에서 221억원으로 감소시켰으며, 영업활동현금흐름도 3년 연속 음(-)이다. 신제품 채택이 기대보다 지연될 경우 손실 지속 기간이 장기화할 위험이 있다.",
+    "en": "Cost of goods sold has exceeded revenue for three consecutive years, with the operating margin deteriorating from -43.5% to -59.5%. The 2025Q4 operating margin reached approximately -89%, and 2026Q1 remains at ~-63%, implying that either a significant revenue ramp or a fundamental cost restructuring is needed before break-even. Three-year cumulative operating losses exceeding KRW 19.3 bn have compressed equity from KRW 29 bn to KRW 22 bn; operating cash flows have been negative for all three years. If new product adoption lags expectations, the loss-extension period could be prolonged materially."
+   }
+  },
+  {
+   "title": {
+    "ko": "자본 잠식 위험 및 추가 자금 조달 필요 가능성",
+    "en": "Capital Erosion Risk and Potential Need for Additional Fundraising"
+   },
+   "body": {
+    "ko": "2025년 말 자기자본이 221.1억원으로 축소된 상황에서 연간 56~80억원 수준의 순손실이 지속된다면 수년 내 자본이 추가로 훼손될 가능성이 있다. 2025년 11월 유상증자의 상당 부분이 운영자금에 배정된 만큼, 흑자전환이 지연될수록 추가 자금 조달 가능성도 배제하기 어렵다. 반복적인 희석은 기존 주주의 주당 순자산을 지속적으로 낮추는 요인으로 작용한다. 부채비율도 36.5%→53.9%로 상승해 재무 레버리지 부담이 점차 커지고 있다.",
+    "en": "With equity at KRW 22.1 bn at end-2025 and annual net losses running at KRW 5.7–8.0 bn, further equity erosion is a realistic concern over the next few years if losses persist. The November 2025 rights offering allocated a significant portion to operational funding—meaning sustained losses could trigger additional capital raises. Repeated dilution continuously compresses BPS for existing shareholders. The debt ratio has risen from 36.5% to 53.9%, increasing financial leverage pressure incrementally."
+   }
+  },
+  {
+   "title": {
+    "ko": "신제품 채택률 불확실성 및 글로벌 경쟁 압박",
+    "en": "New Product Adoption Uncertainty and Global Competitive Pressure"
+   },
+   "body": {
+    "ko": "2025년 하반기 기준 센서 신제품(PD)의 고객사 채택률이 기대에 못 미친 사례가 있으며, 소비자 전자 수요 회복 시기도 여전히 불확실하다. GaN RF·전력반도체 분야에서는 Wolfspeed·Infineon·Qorvo 등 글로벌 대기업이 규모·브랜드·가격 측면에서 압도적 우위를 보유하고 있다. 국내 방산 수주는 퀄리피케이션부터 본격 납품까지 수년이 소요되는 특성이 있어 개발 완료가 즉각적인 매출로 이어지지 않는다. 일부 제품은 전략물자에 해당할 가능성이 있어 수출 승인 절차가 국제 판매 속도를 제약하는 요인이 될 수 있다.",
+    "en": "In the second half of 2025, the adoption rate of new sensor products (PDs) at key customers fell short of initial expectations, and the timing of consumer electronics demand recovery remains uncertain. In GaN RF and power devices, global majors such as Wolfspeed, Infineon, and Qorvo hold overwhelming scale, brand, and pricing advantages. Defense orders in Korea typically require multi-year qualification-to-volume cycles, meaning development success does not translate immediately into revenue recognition. Certain products may qualify as strategic materials, potentially subjecting international sales to export approval processes that constrain delivery timelines."
+   }
+  }
+ ],
+ "risks": [
+  {
+   "cat": {
+    "ko": "재무 리스크: 지속 손실에 따른 자본 잠식 및 추가 희석",
+    "en": "Financial Risk: Capital Erosion from Sustained Losses and Dilution"
+   },
+   "body": {
+    "ko": "2025년 말 부채비율 53.9%, 3년 누적 영업손실 193억원 초과, 3년 연속 음(-)의 영업활동현금흐름이 재무 취약성을 높이고 있다. 흑자전환에 실패할 경우 추가 유상증자·전환사채 발행 등 자금 조달이 불가피해질 수 있으며, 이는 기존 주주 희석 및 BPS 추가 하락 요인이다. 유상증자 대금의 실투자 효과가 매출 성장으로 연결되지 않으면 재무 완충 여력이 빠르게 소진될 수 있다. 소규모 특화반도체 제조업체 특성상 외부 자금 조달 비용이 상대적으로 높을 수 있다.",
+    "en": "With a debt ratio of 53.9% at end-2025, more than KRW 19.3 bn in cumulative three-year operating losses, and persistently negative operating cash flows, financial vulnerability is elevated. Failure to achieve profitability could necessitate additional equity issuances or convertible bond placements, diluting existing shareholders and further compressing BPS. If rights-offering proceeds do not translate into revenue growth, the financial buffer could be consumed rapidly. As a small specialty semiconductor manufacturer, external financing costs may be relatively high."
+   }
+  },
+  {
+   "cat": {
+    "ko": "기술·시장 리스크: 신제품 채택 지연 및 경쟁 압력",
+    "en": "Technology/Market Risk: Delayed Product Adoption and Competitive Pressure"
+   },
+   "body": {
+    "ko": "센서 신제품의 고객사 채택률이 목표를 하회할 경우 2026년 매출 가이던스 달성이 불투명해진다. 글로벌 GaN 대기업들이 공격적인 증설·가격 전략을 취할 경우 시장 진입이 어려워질 수 있다. 방산 제품은 퀄리피케이션→인증→양산 단계까지 수년이 걸릴 수 있어 개발 성공이 즉각적인 매출로 이어지지 않는 특성이 있다. 기술 난이도가 높은 화합물반도체 특성상 예상치 못한 공정 이슈 발생 시 납기·원가에 영향을 줄 수 있다.",
+    "en": "If new sensor product adoption at key customers falls short of targets, the 2026 revenue outlook becomes harder to achieve. Aggressive capacity and pricing strategies by global GaN majors could impede market entry in commercial segments. Defense products typically require multi-year qualification, certification, and mass-production ramp cycles, meaning development success does not translate immediately into revenue. The inherently high process complexity of compound semiconductors introduces execution risk—unexpected process issues could affect delivery schedules and production costs."
+   }
+  },
+  {
+   "cat": {
+    "ko": "거시·수급 리스크: 소비자 수요 지연 및 소재 가격 변동",
+    "en": "Macro/Supply Risk: Consumer Demand Delay and Raw Material Volatility"
+   },
+   "body": {
+    "ko": "2025년 실적 악화의 주요 원인 중 하나가 소재 가격 상승에 따른 재료비 증가였으며, 원자재 가격 재상승 시 마진 압박이 재현될 수 있다. 글로벌 소비자 전자 수요 회복이 당초 예상보다 지연되면 센서·ESD 소자의 주력 판매처인 스마트폰·웨어러블 업황이 계획 대비 부진해진다. 외환 리스크도 상존하며, 2025년 외환차손이 순손실 확대의 주요 원인 중 하나로 DART에 공시됐다. 전방 IT·가전 수요의 방향성은 회사가 직접 통제할 수 없는 외부 변수로, 실적 전망의 불확실성을 높이는 요인이다.",
+    "en": "One of the primary drivers of the FY2025 loss expansion was rising raw-material costs; a recurrence of input-price inflation would re-exert margin pressure. If global consumer electronics demand recovery is delayed beyond current expectations, the smartphone and wearable segments—primary markets for ESD and sensor products—will underperform plan. FX risk also persists; foreign exchange losses were cited as a material contributor to the widened net loss in the company's FY2025 DART disclosure. Upstream IT and consumer electronics demand trends are external variables beyond the company's direct control, adding uncertainty to revenue forecasts."
+   }
+  }
+ ],
+ "checkpoints": [
+  {
+   "when": {
+    "ko": "2026년 7월 말~8월",
+    "en": "Late July–August 2026"
+   },
+   "what": {
+    "ko": "2026년 2분기(4~6월) 실적 공시 예정. 매출 회복세의 지속 여부, 영업손실률 개선 폭, 센서·방산 신제품 부문 매출 기여 여부를 확인하는 핵심 시점이다.",
+    "en": "2026Q2 (April–June) earnings are expected to be released. Key items: whether the revenue recovery trend holds, the magnitude of any operating-margin improvement, and initial revenue contributions from new sensor and defense products."
+   }
+  },
+  {
+   "when": {
+    "ko": "2026년 하반기",
+    "en": "Second Half 2026"
+   },
+   "what": {
+    "ko": "GaN S밴드 RF 전력반도체 및 X밴드 PA MMIC의 방산 고객사 대상 공식 양산 수주 공시 여부, MCT 및 우주급 SBD 납품 실적의 구체화 여부를 주목해야 한다.",
+    "en": "Monitor for official mass-production order announcements from defense customers for GaN S-Band RF ICs and X-Band PA MMICs, and for disclosure of actual delivery volumes of MCT and space-grade SBD products."
+   }
+  },
+  {
+   "when": {
+    "ko": "2026년 하반기~연말",
+    "en": "2H 2026 Through Year-End"
+   },
+   "what": {
+    "ko": "소비자 가전 전방 고객사(스마트폰·웨어러블)의 신규 센서 채택 결정 또는 양산 물량 반영 여부. 회사가 목표로 제시한 2026년 흑자전환 실현 가능성을 가늠하는 핵심 지표다.",
+    "en": "Watch for design wins or volume production confirmation from consumer electronics customers (smartphones, wearables) for new sensor products—this is the most direct indicator of whether the stated FY2026 profitability target is achievable."
+   }
+  },
+  {
+   "when": {
+    "ko": "2026~2027년",
+    "en": "2026–2027"
+   },
+   "what": {
+    "ko": "전북 익산 신규 화합물반도체 팹의 준공 및 초기 가동 시점 확인. 팹 완공 후 생산 캐파 증대와 고정비 분산 효과가 수익성에 미치는 영향을 추적해야 한다.",
+    "en": "Track the completion and initial ramp of the new compound-semiconductor fab in Iksan; once operational, the impact of expanded capacity and improved fixed-cost absorption on gross margins will be a key variable to follow."
+   }
+  },
+  {
+   "when": {
+    "ko": "2027년 초 (2026년 연간 실적 공시)",
+    "en": "Early 2027 (FY2026 Annual Results)"
+   },
+   "what": {
+    "ko": "DART 연간 보고서를 통해 흑자전환 여부, 매출 성장률, 부채비율 및 자기자본 변동을 최종 확인. 경영진이 제시한 수익성 개선 로드맵의 이행 여부를 최종 검증하는 결정적 시점이다.",
+    "en": "The FY2026 annual DART filing will provide the definitive test of whether the profitability turnaround was achieved, alongside revenue growth rate, debt ratio trend, and equity preservation—the ultimate verification of management's stated roadmap."
+   }
+  }
+ ],
+ "verdict": {
+  "body": {
+   "ko": "시지트로닉스는 2008년 설립 이후 ESD·센서·전력 소자 분야의 IDM 기업으로 성장해 GaN 방산 반도체 국산화, 우주급 전력소자, AESA 레이더용 MMIC 등 국내 독보적인 기술 포트폴리오를 구축했다. 그러나 2023~2025년 3년 연속 매출 정체와 영업손실 심화(-43.5%→-59.5%), 2026년 1분기까지 이어진 적자 지속은 기술력이 아직 충분한 수익화로 전환되지 못했음을 나타낸다. 2026년 3월 공시된 월 2만매 M-FAB 완비, 11월 약 60억원 유상증자, 6종 신제품 개발 완료, X밴드 MMIC 성능 검증 등 기술·생산 기반은 한 단계 올라섰으며, 경영진은 2026년을 흑자전환의 원년으로 공식 선언했다. 이 목표의 실현 조건은 ①소비자 전자 부문 수요 회복에 따른 센서·ESD 매출 확대, ②방산 고부가 제품의 양산 수주 성사, ③익산 신규 팹 가동을 통한 원가 구조 개선이 얼마나 빠르게 맞물리느냐에 달려 있다. 지속적인 자본 유출과 누적 손실에 따른 재무 체력 소진 위험은 기술 모멘텀과 함께 반드시 병행 점검해야 할 핵심 리스크다. 기술 잠재력과 전방 시장 성장성의 방향성은 확인되나, 그 잠재력이 실적으로 구현되는 속도와 시점이 향후 기업 가치의 핵심 결정 요인이 될 전망이다.",
+   "en": "Sigetronics has built a technically differentiated domestic IDM platform since its 2008 founding, establishing a uniquely capable Korean position across GaN defense semiconductors, space-grade power devices, and AESA radar MMICs. However, three consecutive years of flat revenue and deepening operating losses (from -43.5% to -59.5% OPM), extending into 2026Q1, demonstrate that technical capabilities have not yet translated into sufficient monetization. The production and technology foundation has stepped up—20,000-wafer monthly M-FAB capacity completed in March 2026, a ~KRW 6 bn rights offering completed in November 2025, six new products developed, and X-Band MMIC verification completed in June 2026—and management has formally committed to a 2026 profitability turnaround. The realization of that target hinges on how quickly three conditions converge: consumer electronics demand recovery lifting ESD and sensor volumes, defense customer orders transitioning to mass-production, and the new Iksan fab improving cost absorption. The ongoing risk of financial attrition from cumulative losses remains a critical factor that warrants close monitoring alongside any positive technology developments. Technology potential and favorable end-market trajectories are clearly present, but the pace and timing of converting that potential into actual earnings will be the definitive yardstick for assessing the company's medium-term prospects."
+  }
+ },
+ "sources": [
+  "https://kind.krx.co.kr/external/dst/newListReport/20251226000759500/%EC%8B%9C%EC%A7%80%ED%8A%B8%EB%A1%9C%EB%8B%89%EC%8A%A4_20251226.pdf",
+  "https://m.irgo.co.kr/IR-COMP/429270/",
+  "https://news.nate.com/view/20260211n38435",
+  "https://m.finance.daum.net/quotes/A429270/news/disclosure/20260326036316",
+  "https://stocks.pluconnect.com/429270_%EC%8B%9C%EC%A7%80%ED%8A%B8%EB%A1%9C%EB%8B%89%EC%8A%A4/",
+  "https://kind.krx.co.kr/common/disclsviewer.do?method=search&acptno=20260318000139&docno=&viewerhost=",
+  "https://antwinner.com/stock/%EC%8B%9C%EC%A7%80%ED%8A%B8%EB%A1%9C%EB%8B%89%EC%8A%A4",
+  "https://m.thinkpool.com/stockDiscuss/429270/cont/11820419",
+  "https://m.thinkpool.com/item/429270",
+  "https://m.thinkpool.com/compDiscuss/cont/1025291",
+  "https://m.theinvest.co.kr/article/540",
+  "https://sigetronics.com/",
+  "https://file.alphasquare.co.kr/media/pdfs/company-ir/20240705%EC%8B%9C%EC%A7%80%ED%8A%B8%EB%A1%9C%EB%8B%89%EC%8A%A4_%ED%9A%8C%EC%82%AC_%EC%86%8C%EA%B0%9C_%EB%B0%8F_%EC%A3%BC%EC%9A%94_%EC%82%AC%EC%97%85_%ED%98%84%ED%99%A9_%EC%84%A4%EB%AA%85.pdf",
+  "https://m.irgo.co.kr/IR-ROOM/033170/%EC%8B%9C%EA%B7%B8%EB%84%A4%ED%8B%B1%EC%8A%A4-IR-ROOM",
+  "https://comp.fnguide.com/SVO2/ASP/SVD_Main.asp?pGB=1&gicode=A429270&cID=&MenuYn=Y&ReportGB=D&NewMenuID=Y&stkGb=701",
+  "https://comp.fnguide.com/SVO2/asp/SVD_Invest.asp?pGB=1&cID=&MenuYn=Y&ReportGB=D&NewMenuID=105&stkGb=701&gicode=A429270",
+  "https://comp.wisereport.co.kr/wiseReport/summary/ReportSummary.aspx?cmp_cd=294870",
+  "https://kind.krx.co.kr/common/disclsviewer.do?method=search&acptno=20251223000706&docno=&viewerhost="
+ ],
+ "v": 2,
+ "model": "claude-sonnet-4-6",
+ "ticker": "429270",
+ "name": "시지트로닉스",
+ "name_en": "Sigetronics, Inc.",
+ "sector": "반도체",
+ "categories": [
+  "반도체"
+ ],
+ "market": "코스닥",
+ "reportDate": "2026-06-19",
+ "reportTs": "2026-06-19 05:28",
+ "dataDate": "20260618",
+ "quant": {
+  "asOf": "2026-06-18",
+  "fs_basis": "연결(CFS) · DART 공시 확정치 · 지배주주 기준 순이익",
+  "annual": [
+   {
+    "year": 2025,
+    "rev": 12748957402,
+    "op": -7585557629,
+    "np": -8013303350,
+    "np_owner": -8013303350,
+    "equity": 22113260759,
+    "equity_owner": 22113260759,
+    "liab": 11924012799,
+    "cfo": -5040951165,
+    "eps_basic": null,
+    "opm": -59.5,
+    "roe": -36.2,
+    "debt_ratio": 53.9
+   },
+   {
+    "year": 2024,
+    "rev": 12172663876,
+    "op": -6285180565,
+    "np": -5691293867,
+    "np_owner": -5691293867,
+    "equity": 23529281193,
+    "equity_owner": 23529281193,
+    "liab": 10059885608,
+    "cfo": -4148389023,
+    "eps_basic": null,
+    "opm": -51.6,
+    "roe": -24.2,
+    "debt_ratio": 42.8
+   },
+   {
+    "year": 2023,
+    "rev": 12513645275,
+    "op": -5442515302,
+    "np": -5535741609,
+    "np_owner": -5535741609,
+    "equity": 28985865393,
+    "equity_owner": 28985865393,
+    "liab": 10574342494,
+    "cfo": -4069938616,
+    "eps_basic": null,
+    "opm": -43.5,
+    "roe": -19.1,
+    "debt_ratio": 36.5
+   }
+  ],
+  "quarterly": [
+   {
+    "q": "2025Q1",
+    "rev": 2609072069,
+    "op": -1527156736,
+    "np_owner": -1583623041
+   },
+   {
+    "q": "2025Q2",
+    "rev": 3407905608,
+    "op": -1903735391,
+    "np_owner": null
+   },
+   {
+    "q": "2025Q3",
+    "rev": 3924110113,
+    "op": -1640951192,
+    "np_owner": null
+   },
+   {
+    "q": "2025Q4",
+    "rev": 2807869612,
+    "op": -2513714310,
+    "np_owner": null
+   },
+   {
+    "q": "2026Q1",
+    "rev": 3586327530,
+    "op": -2261810793,
+    "np_owner": -2063035824
+   }
+  ],
+  "valuation": {
+   "price": 5390,
+   "mcap": 0.0348,
+   "shares": 6449231,
+   "total_shares": 6449231,
+   "wavg_shares": null,
+   "per": null,
+   "eps": null,
+   "pbr": 1.73,
+   "bps": 3108,
+   "roe_ttm": -40.4,
+   "ttm_window": "2025Q2~2026Q1",
+   "ttm_np_owner": -8492716133,
+   "pbr_krx": 1.57,
+   "bps_krx": 3429.0,
+   "basis": "PER·EPS·PBR·BPS 모두 자체 산출(네이버·토스와 동일 방식) · 배당은 DART 공시 주당현금배당금(보완:KRX) ÷ 현재가",
+   "dps": 0.0,
+   "div": 0.0
+  }
+ }
+}
