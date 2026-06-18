@@ -1,0 +1,341 @@
+{
+ "title": {
+  "ko": "AI 인터페이스 IP 국산화 선도, 수익화 경로가 관건",
+  "en": "Domestic AI Interface IP Pioneer — Monetization Timeline Remains the Central Question"
+ },
+ "lead": {
+  "ko": "SerDes 기반 초고속 인터페이스 IP 국내 유일 전문기업으로, 2026년 1분기 매출이 전년동기 대비 약 174% 급등하며 외형 회복의 신호를 보이고 있으나, 3년 연속 심화된 영업적자와 부채비율 급등이 수익화 시점을 둘러싼 핵심 변수로 작용하고 있다.",
+  "en": "Korea's sole specialist in SerDes-based high-speed interface IP posted a roughly 174% YoY revenue surge in 2026 Q1, signaling a potential inflection, yet three consecutive years of deepening operating losses and a sharp rise in leverage make the monetization timeline the pivotal issue for this company."
+ },
+ "keypoints": [
+  {
+   "ko": "2026년 1분기 매출 약 51.5억원으로 전년동기 대비 약 174% 급등 — 2025년 연간 매출(약 53.5억원)에 육박하는 분기 실적을 단 한 분기 만에 달성",
+   "en": "2026 Q1 revenue of approximately KRW 5.15 billion surged ~174% YoY, nearly matching full-year 2025 revenue in a single quarter — a meaningful external recovery signal"
+  },
+  {
+   "ko": "2025년 매출 구성은 MIPI IP 약 50% · Display Chipset IP 약 31% · PCIe IP 약 18%로, AI·자동차·로보틱스로 MIPI 적용처가 확대되는 구조적 흐름이 진행 중",
+   "en": "2025 revenue comprised ~50% MIPI IP, ~31% Display Chipset IP, and ~18% PCIe IP; MIPI application scope is structurally expanding into automotive and robotics"
+  },
+  {
+   "ko": "글로벌 인터페이스 IP 시장은 2024년 약 24억 달러에서 2029년 약 54억 달러로 연평균 두 자릿수 성장이 전망되며, 퀄리타스반도체의 전방 수요 기반이 구조적으로 확대되고 있음",
+   "en": "The global interface IP market is projected to grow from ~USD 2.4 billion in 2024 to ~USD 5.4 billion by 2029 at double-digit CAGR, expanding the company's structural demand base"
+  },
+  {
+   "ko": "PCIe 6.0 PHY IP · 100G SerDes · UCIe 칩렛 인터페이스 국책과제 주관기관 선정 — 차세대 고부가 IP 포트폴리오 구축과 AI 반도체 국산화 수혜가 동시에 진행 중",
+   "en": "Designated as lead institution for government-funded projects on PCIe 6.0 PHY, 100G SerDes, and UCIe chiplet interface IP — next-generation high-value portfolio development progressing alongside AI semiconductor nationalization benefits"
+  },
+  {
+   "ko": "2025년 말 부채비율 128.6%로 전년(26.4%) 대비 급등, 3년 연속 영업현금흐름 마이너스 — 수익화 지연 시 추가 자금 조달 가능성에 대한 모니터링이 필요",
+   "en": "Debt ratio spiked to 128.6% at end-2025 (vs. 26.4% in 2024) alongside three consecutive years of negative operating cash flow, warranting close attention to potential capital needs if monetization is delayed"
+  }
+ ],
+ "business": {
+  "ko": "퀄리타스반도체는 2017년 설립되어 2023년 코스닥에 기술성장기업 특례상장한 반도체 IP 전문기업이다. 핵심 역량은 SerDes(직렬화·병렬화 변환) 기술 기반의 하드 매크로(Hard Macro) 형태 고속 인터페이스 PHY IP 설계로, 특정 파운드리 공정에 맞게 물리적으로 회로를 구현하는 것이 비즈니스 모델의 근간이다. 2025년 사업보고서 기준 매출 비중은 MIPI IP 약 50%, Display Chipset IP 약 31%, PCIe IP 약 18%, 기타 약 1%로 구성되어 있다. 주요 고객은 삼성전자 파운드리를 이용하는 팹리스 SoC 개발사와 디자인하우스이며, IP 라이선싱과 디자인 서비스 두 축으로 매출이 발생한다. 글로벌 경쟁사는 시높시스(Synopsys)·케이던스(Cadence) 등이 시장을 과점하고 있으나, 하드 매크로 IP는 공정·파운드리·규격별로 물리적 구현이 필요하기 때문에 글로벌 업체도 전 공정을 커버하지 못하는 틈새가 존재한다. 회사는 최대 2nm 수준의 선단 공정 대응 역량을 보유하고 있으며, PCIe·UCIe·MIPI 등 다양한 표준 규격에 맞는 IP를 개발해 고객사에 공급하고 있다. 컨트롤러까지 요구하는 고객 수요에 대응하기 위해 소프트 매크로 단까지 사업을 확장하며 토탈 솔루션 형태의 비즈니스 모델을 구축하고 있다. 광통신(실리콘 포토닉스·CPO) 분야에서도 기술 대응 역량을 갖추고 있어, 차세대 초고속 인터커넥트 솔루션 전문업체로의 사업 영역 확장을 추진하고 있다.",
+  "en": "Qualitas Semiconductor was founded in 2017 and listed on KOSDAQ in 2023 under the technology growth company special listing scheme. Its core competence is designing high-speed interface PHY IP in hard-macro form based on SerDes technology, with its primary business model centered on physically implementing circuits optimized for specific foundry processes and nodes. Based on the 2025 annual business report, the revenue mix is approximately 50% MIPI IP, 31% Display Chipset IP, 18% PCIe IP, and 1% other. Primary customers are fabless SoC developers and design houses utilizing Samsung Foundry, with revenue generated from IP licensing and design services. While Synopsys and Cadence globally dominate, hard-macro IP requires process-specific physical implementation, leaving market niches that even global leaders cannot fully cover. The company holds advanced-node capabilities up to 2nm and has developed IP across PCIe, UCIe, and MIPI standards. To address customers requiring controller IP alongside PHY, Qualitas is expanding into soft-macro IP as well, building out a total-solution business model. The company also possesses technical capabilities in silicon photonics and co-packaged optics (CPO), actively pursuing expansion into next-generation optical interconnect solutions."
+ },
+ "earnings": {
+  "ko": "연간 매출은 2023년 약 107.7억원에서 2024년 약 60.7억원(전년 대비 약 -43.6%), 2025년 약 53.5억원(약 -11.9%)으로 2개년 연속 감소했다. 영업손실은 같은 기간 약 111.9억원(OPM -103.8%) → 약 226.9억원(-373.6%) → 약 244.7억원(-457.4%)으로 매출 감소 속도보다 훨씬 빠르게 확대됐다. 이는 IP 개발에 수반되는 연구개발비·인건비 등 고정비 구조 때문에 매출이 줄어도 비용이 줄지 않는 초기 성장 기업의 전형적 패턴이다. 2025년 순손실은 약 230.9억원이었으며, 영업현금흐름은 약 -164.6억원으로 2023년(-112.7억원)·2024년(-171.1억원)에 이어 3년 연속 마이너스가 지속됐다. 분기별로는 2025년 1분기 약 18.8억원, 2분기 약 9.2억원, 3분기 약 8.4억원으로 전반적 부진이 심화됐다가 4분기에 약 17.1억원으로 소폭 반등했다. 2026년 1분기는 약 51.5억원으로 2025년 1분기(약 18.8억원) 대비 약 174% 급등하며 2025년 연간 매출에 육박하는 분기 실적을 달성했다. 2026년 1분기 영업손실도 약 47.4억원으로 2025년 1분기(-50.4억원) 대비 소폭 개선돼, 적자 폭 축소의 초기 신호가 나타났다. 재무 안정성 측면에서는 2025년 말 부채비율이 128.6%로 2024년(26.4%)에서 크게 악화됐는데, 이는 누적 순손실로 자기자본이 약 506.6억원(2024년)에서 약 363.2억원(2025년)으로 감소하는 동시에 운영 자금 조달을 위한 부채가 약 133.6억원에서 약 467.2억원으로 증가한 결과로 분석된다.",
+  "en": "Annual revenue declined from approximately KRW 10.77 billion in 2023 to KRW 6.07 billion in 2024 (approximately -43.6% YoY) and further to KRW 5.35 billion in 2025 (approximately -11.9%). Operating losses deepened far more rapidly than revenue fell, widening from approximately KRW 11.19 billion in 2023 (OPM -103.8%) to KRW 22.69 billion in 2024 (-373.6%) and KRW 24.47 billion in 2025 (-457.4%), reflecting the high fixed-cost structure inherent to early-stage IP development businesses where R&D and personnel expenses persist regardless of revenue levels. Full-year 2025 net loss reached approximately KRW 23.09 billion, while operating cash flow was negative KRW 16.46 billion for a third consecutive year following -KRW 11.27 billion in 2023 and -KRW 17.11 billion in 2024. Quarterly revenue trends in 2025 showed persistent weakness — approximately KRW 1.88 billion, KRW 0.92 billion, and KRW 0.84 billion in Q1 through Q3 respectively — before a partial recovery to KRW 1.71 billion in Q4. A more meaningful shift emerged in 2026 Q1, when revenue surged to approximately KRW 5.15 billion — a roughly 174% YoY increase that nearly matched full-year 2025 revenue in a single quarter — while operating loss narrowed modestly to approximately KRW 4.74 billion from KRW 5.04 billion in 2025 Q1, providing an early signal of operating leverage improvement. On the balance sheet, the debt ratio deteriorated sharply from 26.4% at end-2024 to 128.6% at end-2025, reflecting simultaneous equity erosion from cumulative losses (equity declining from approximately KRW 50.66 billion to KRW 36.32 billion) and a significant increase in liabilities (from approximately KRW 13.36 billion to KRW 46.72 billion) to fund ongoing operations."
+ },
+ "industry": {
+  "ko": "글로벌 반도체 시장은 2026년 1조 달러에 근접할 것으로 전망되는 가운데, AI 인프라 확산을 중심으로 성장이 가속되고 있다. 인터페이스 IP 시장은 AI 섹터의 수요가 견고한 가운데 2024년 약 24억 달러에서 2029년 약 54억 달러로 연평균 두 자릿수 성장이 전망되며, PCIe·DDR(각 연평균 17%)·이더넷(연평균 21%) 등 하이엔드 인터페이스 IP가 성장을 주도할 것으로 보인다. 공급 측면에서는 시높시스·케이던스 등 극소수 글로벌 업체가 시장을 과점하고 있으며, 전 세계적으로 IP 공급사는 20여 개에 불과해 구조적 공급 부족이 지속될 전망이다. 칩렛 패러다임 전환에 따라 UCIe 등 Die-to-Die 인터페이스 수요가 새롭게 형성되고 있으며, 2026년 한 해 UCIe IP 채택이 약 30% 증가하는 등 빠른 성장세가 확인되고 있다. 광통신 인터커넥트(CPO·실리콘 포토닉스) 전환 흐름도 AI 서버 및 데이터센터에서 전기 기반 인터커넥트의 대역폭 한계를 해결하기 위한 차세대 솔루션으로 부각되고 있다. 국내 반도체 IP 시장에서는 오픈엣지테크놀로지(NPU·메모리 인터페이스 IP 중심)·칩스앤미디어(영상 코덱 IP) 등이 있으나, 고속 SerDes/PHY 특화 분야에서 퀄리타스반도체의 직접적 국내 경쟁상대는 제한적이다. 정부의 AI 반도체 국산화 지원 정책(국민성장펀드·K-온디바이스 AI 반도체 지원 등)이 국내 팹리스·파운드리 생태계 투자를 촉진하며 국산 IP 수요 확대의 간접적 촉매로 작용하고 있다.",
+  "en": "The global semiconductor market is approaching USD 1 trillion in 2026, with AI infrastructure buildout as the primary growth driver. The interface IP segment is projected to expand from approximately USD 2.4 billion in 2024 to USD 5.4 billion by 2029 at a double-digit CAGR, with PCIe and DDR (each ~17% CAGR) and Ethernet (~21% CAGR) leading growth in the high-end subsegment. On the supply side, the market remains highly concentrated — with Synopsys and Cadence among only around 20 IP vendors globally — pointing to a structural supply shortage that is expected to persist. The industry shift toward chiplet architectures is generating fresh demand for UCIe and other Die-to-Die interface IP, with UCIe adoption reportedly growing approximately 30% in 2026 alone. The emerging transition toward optical interconnects (CPO, silicon photonics) is also gaining momentum as a next-generation solution for addressing bandwidth bottlenecks in copper-based AI server interconnects. In the domestic Korean market, OpenEdge Technology (NPU and memory interface IP) and Chips&Media (video codec IP) are notable IP peers, but Qualitas faces relatively limited direct competition in the high-speed SerDes/PHY niche. Government-backed AI semiconductor nationalization policies, including the national growth fund of approximately KRW 30 trillion in 2026, are acting as indirect catalysts for broader domestic fabless and foundry ecosystem investment, which could expand the domestic demand base for Korean interface IP."
+ },
+ "outlook": {
+  "ko": "회사는 2026년 전략의 핵심을 IP 커버리지 확장에서 기존 IP의 성능 고도화로 전환해, 삼성파운드리와의 협업을 바탕으로 고부가 고객사 확보에 집중할 계획이다. MIPI 중심의 안정적 수요가 이어지는 가운데, PCIe·UCIe 등 메이저 인터페이스 IP를 고도화해 AI·HPC·자동차 등 고부가 어플리케이션 고객 기반을 넓히는 방향을 추구하고 있다. 과기정통부 주관 국책과제('AI·자동차 SoC용 칩렛 인터페이스 개발을 위한 Tbps급 IP 및 실리콘 포토닉스 응용기술 개발')가 진행 중으로, UCIe·광통신 분야 기술력의 가시화가 기대된다. 2025년 신규 수주가 100억원 이상으로 파악됨에 따라, 이 수주가 단계적으로 매출로 전환될 경우 2026년 외형 성장의 추진력이 될 것으로 보인다. 증권사 리서치(2026년 4월 기준)는 AI 반도체 국산화 수혜와 라이선스 매출 정상화에 따른 외형 성장 가능성은 긍정적으로 평가하면서도, 당장의 흑자 전환보다는 중장기적인 체질 개선 경로를 전망했다. 2026년 1분기 실적이 기존 시장 추정치를 크게 상회한 점은 연간 전망의 재검토 트리거가 될 수 있다. 중장기적으로는 광통신 관련 프로젝트(CPO·실리콘 포토닉스) 구체화 여부와 PCIe 6.0·100G SerDes IP의 고객사 채택 속도가 이익 전환의 강도를 결정짓는 핵심 요인이 될 전망이다.",
+  "en": "The company's 2026 strategic focus has shifted from broadening IP coverage to deepening the performance of existing IP assets, with plans to leverage Samsung Foundry collaboration to secure higher-value customers. While stable MIPI-driven demand continues, Qualitas is upgrading PCIe and UCIe IP to expand its customer base in high-value applications including AI, HPC, and automotive. An ongoing government project led by the Ministry of Science targeting Tbps-level interface IP and silicon photonics application technologies for AI and automotive SoC chiplets is expected to advance UCIe and optical interconnect capabilities toward commercialization. With 2025 new orders reportedly exceeding KRW 10 billion, the progressive conversion of this pipeline into recognized revenue is expected to provide external growth momentum through 2026. Sell-side research as of April 2026 viewed the prospects for revenue growth from AI semiconductor nationalization and IP sales normalization positively but framed the profitability path as a medium-to-long-term trajectory rather than a near-term event. The substantially stronger-than-anticipated 2026 Q1 result may serve as a trigger for consensus estimate revisions. Over the medium to long term, the pace of commercialization for CPO and silicon photonics projects and customer adoption rates for PCIe 6.0 and 100G SerDes IP are expected to be the decisive factors in determining the magnitude of any eventual profitability inflection."
+ },
+ "valuation_comment": {
+  "ko": "지속적인 적자 구조 아래 PER 적용은 의미가 없으며, 주가는 순자산가치(BPS 2,293원)에 비해 상당한 프리미엄 구간에 형성되어 있다. 이는 시장이 현재의 이익 창출 능력이 아닌 AI 인터페이스 IP 국산화·차세대 포트폴리오 구축을 통한 미래 잠재력에 상당한 옵션가치를 부여하고 있음을 반영한다. 배당은 지급되지 않으며(DPS 0원), 현금 소진이 지속되는 현 단계에서 배당 정책 변화 가능성은 낮다. 글로벌 IP 전문기업(Synopsys, Cadence 등)이 이익 기반의 배수를 적용받는 반면, 퀄리타스반도체는 대규모 R&D 투자 중인 성장 초기 단계이므로 직접적 멀티플 비교 적용이 제한적이다. 이익 전환 시점의 가시화와 고부가 IP 수주 누적 속도가 순자산 대비 현재의 프리미엄 수준이 정당화될 수 있는지를 판단하는 핵심 변수가 될 것이다.",
+  "en": "With the company in a sustained loss-making phase, earnings-based valuation multiples lack meaningful applicability; the stock is trading at a substantial premium to net asset value per share (BPS: KRW 2,293), indicating that the market is assigning significant option value to the company's future monetization potential in AI interface IP nationalization and next-generation portfolio development rather than its current earnings power. No dividend has been paid (DPS: KRW 0), and with ongoing cash consumption, any near-term shift in dividend policy appears unlikely. While global IP majors such as Synopsys and Cadence trade on established profit-based multiples, direct comparison with Qualitas is constrained by its heavy R&D investment profile at an early growth stage. The timing of a visible profitability inflection and the pace at which high-value IP orders accumulate will be the primary factors determining whether the current premium to book value can be justified."
+ },
+ "bull": [
+  {
+   "title": {
+    "ko": "2026Q1 매출 급등 — 의미 있는 외형 회복의 신호탄",
+    "en": "2026 Q1 Revenue Surge — A Meaningful Recovery Inflection Signal"
+   },
+   "body": {
+    "ko": "2026년 1분기 매출이 약 51.5억원으로 전년동기(약 18.8억원) 대비 약 174% 급등해, 직전 4개 분기 평균을 크게 웃돌았다. AI 시장 개화에 따른 DDR5·HBM 메모리 컨트롤러·PCIe 등 인터페이스 IP 수요 증가와 라이선스 매출 인식이 맞물린 결과로 해석된다. 2025년 연간 신규 수주가 100억원 이상으로 파악된 만큼, 이 수주가 단계적으로 매출로 전환될 경우 2026년 외형 성장의 추진력이 이어질 수 있다.",
+    "en": "2026 Q1 revenue of approximately KRW 5.15 billion surged roughly 174% YoY from KRW 1.88 billion in 2025 Q1, substantially exceeding the average of the prior four quarters. This is interpreted as a convergence of growing demand for DDR5, HBM memory controller, and PCIe interface IP driven by AI market maturation with sequential license revenue recognition. With 2025 new orders reportedly exceeding KRW 10 billion, progressive conversion of this backlog into revenue could sustain external growth momentum through 2026."
+   }
+  },
+  {
+   "title": {
+    "ko": "AI·칩렛·광통신 전방 수요의 구조적 성장",
+    "en": "Structural Growth Across AI, Chiplet, and Optical Interconnect End Markets"
+   },
+   "body": {
+    "ko": "인터페이스 IP 시장은 AI 인프라 확산을 바탕으로 2024년 24억 달러에서 2029년 54억 달러로 연평균 두 자릿수 성장이 전망된다. MIPI 표준은 스마트폰·태블릿을 넘어 자동차·로보틱스 분야로 적용처가 확대되고 있고, UCIe 기반 칩렛 인터페이스 수요도 구조적으로 증가하고 있다. 광통신(CPO·실리콘 포토닉스) 인터커넥트로의 전환 흐름도 회사가 보유한 광통신 기술 대응 역량을 감안할 때 중장기 성장 옵션으로 작용할 수 있다.",
+    "en": "The interface IP market is projected to grow from USD 2.4 billion in 2024 to USD 5.4 billion by 2029 at a double-digit CAGR, driven by AI infrastructure expansion. MIPI standard applications are broadening beyond smartphones and tablets into automotive and robotics, while UCIe-based chiplet interface demand is growing structurally. The transition toward optical interconnects (CPO, silicon photonics) represents a medium-to-long-term growth option given the company's established technical capabilities in optical interface design."
+   }
+  },
+  {
+   "title": {
+    "ko": "정부 지원 국산화 모멘텀 — 고부가 IP 수주 기반 확충",
+    "en": "Government-Backed Nationalization Momentum — Expanding High-Value IP Order Pipeline"
+   },
+   "body": {
+    "ko": "과기정통부 주관 칩렛 인터페이스 국책과제 주관연구기관으로 선정되는 등 AI 반도체 국산화 정책의 직접 수혜 포지션에 있다. 국민성장펀드(2026년 약 30조원 규모) 등 정부 지원 정책이 국내 팹리스·파운드리 생태계 투자를 촉진하면, 삼성파운드리 생태계 내 IP 수요가 증가하는 선순환이 형성될 수 있다. 글로벌 업체 대비 국내 파운드리 공정 최적화 측면에서 유리한 포지션을 갖춘 국산 IP 공급사로서의 입지가 점차 강화되고 있다.",
+    "en": "Designated as the lead institution for a government-sponsored national project on Tbps-level interface IP and silicon photonics for AI and automotive SoC chiplets, the company is well-positioned as a direct beneficiary of Korea's AI semiconductor nationalization agenda. If the approximately KRW 30 trillion national growth fund catalyzes investment across the domestic fabless and foundry ecosystem in 2026, demand for IP within the Samsung Foundry ecosystem could increase in a self-reinforcing cycle. Qualitas's positioning as a domestically optimized IP provider with process-specific advantages over offshore incumbents is progressively strengthening."
+   }
+  }
+ ],
+ "bear": [
+  {
+   "title": {
+    "ko": "3년 연속 심화된 영업적자와 재무 안정성 훼손",
+    "en": "Three Consecutive Years of Deepening Operating Losses and Deteriorating Balance Sheet"
+   },
+   "body": {
+    "ko": "영업손실이 2023년 약 111.9억원에서 2024년 약 226.9억원, 2025년 약 244.7억원으로 매년 확대됐고, 영업현금흐름도 3년 연속 마이너스다. 2025년 말 부채비율이 128.6%로 전년(26.4%) 대비 급등했으며, 자기자본도 누적 순손실로 지속 감소 중이다. 수익화 시점이 예상보다 지연될수록 추가 차입 또는 유상증자 가능성이 높아져 재무비용 증가 혹은 주주 희석으로 이어질 수 있다.",
+    "en": "Operating losses have deepened consecutively from approximately KRW 11.19 billion in 2023 to KRW 22.69 billion in 2024 and KRW 24.47 billion in 2025, accompanied by three straight years of negative operating cash flow. The debt ratio spiked from 26.4% at end-2024 to 128.6% at end-2025, while equity has been steadily eroded by cumulative net losses. Any delay in monetization beyond current expectations increases the probability of additional debt issuance or an equity offering, which would heighten financial costs or dilute existing shareholders."
+   }
+  },
+  {
+   "title": {
+    "ko": "삼성파운드리 생태계 집중도와 고객 기반 편중 리스크",
+    "en": "High Concentration in Samsung Foundry Ecosystem and Customer Base Concentration Risk"
+   },
+   "body": {
+    "ko": "주요 고객이 삼성전자 파운드리를 이용하는 SoC 개발사·디자인하우스에 집중되어 있어 삼성파운드리의 경쟁력 변화나 수주 환경이 퀄리타스반도체 매출에 직접적인 영향을 미친다. TSMC 등 해외 선도 파운드리와의 경쟁에서 삼성파운드리의 선단 공정 포지션이 변동될 경우, 고객사 이탈 또는 신규 수주 감소가 발생할 수 있다. IP 라이선싱 특성상 소수 고객의 프로젝트 지연이나 취소가 분기 매출 변동성을 높이는 구조적 취약점이 된다.",
+    "en": "Revenue is heavily concentrated among SoC developers and design houses using Samsung Foundry, making Qualitas's top line directly exposed to shifts in Samsung Foundry's competitive positioning. Any deterioration in Samsung Foundry's leading-edge process standing relative to TSMC could lead to customer attrition or reduced new order intake. The project-based nature of IP licensing also creates structural revenue volatility, as delays or cancellations by even a small number of customers can materially affect quarterly results."
+   }
+  },
+  {
+   "title": {
+    "ko": "글로벌 대형 IP 업체 대비 자원·스케일 열위",
+    "en": "Resource and Scale Disadvantage Versus Global IP Majors"
+   },
+   "body": {
+    "ko": "시높시스·케이던스 등 글로벌 IP 대기업은 방대한 IP 포트폴리오와 막대한 R&D 자원을 보유하며, 퀄리타스반도체가 목표로 하는 PCIe 6.0·UCIe 등 고부가 하이엔드 IP 분야에도 적극 진출하고 있다. 글로벌 업체가 삼성파운드리 공정 대응 범위를 확대할 경우, 퀄리타스반도체가 의존하는 틈새 시장이 좁아질 수 있다. 초미세 공정 IP 개발에는 EDA 툴·시제품 제작(Test Chip) 비용이 지속적으로 수반되어 연구개발 비용 부담이 구조적으로 높을 수밖에 없다.",
+    "en": "Global IP majors such as Synopsys and Cadence hold vast portfolios and enormous R&D budgets, and are actively targeting the same high-value PCIe 6.0 and UCIe markets that Qualitas is pursuing. Should global vendors expand their foundry process coverage to include Samsung Foundry nodes, the niche currently occupied by Qualitas could narrow. Ultra-fine-node IP development also entails ongoing significant expenditure on EDA tools and test chip fabrication, maintaining a structurally high R&D cost burden regardless of revenue performance."
+   }
+  }
+ ],
+ "risks": [
+  {
+   "cat": {
+    "ko": "유동성·자본 조달 리스크",
+    "en": "Liquidity and Capital Funding Risk"
+   },
+   "body": {
+    "ko": "3년 연속 대규모 영업·현금 적자가 이어지고 부채비율이 128.6%로 급등한 상황에서, 수익화가 지연될 경우 추가 차입이나 유상증자를 통한 자본 확충이 필요해질 수 있다. 유상증자는 기존 주주 지분을 희석시키고, 추가 차입은 이자비용 증가와 재무 위험 심화로 이어진다. IP 라이선싱 매출 인식 속도가 현금 소진 속도를 하회할 경우 유동성 리스크가 현실화될 가능성을 배제할 수 없다.",
+    "en": "With three consecutive years of large operating and cash deficits and a sharp increase in the debt ratio to 128.6%, any delay in monetization could necessitate additional debt financing or a rights offering to shore up capital. A rights offering would dilute existing shareholders, while additional borrowing would increase interest costs and elevate financial risk. Should the pace of IP license revenue recognition fall behind the rate of cash consumption, liquidity risk could materialize in a meaningful way."
+   }
+  },
+  {
+   "cat": {
+    "ko": "차세대 IP 개발 지연·상용화 불확실성",
+    "en": "Next-Generation IP Development Delays and Commercialization Uncertainty"
+   },
+   "body": {
+    "ko": "PCIe 6.0 PHY·100G SerDes·UCIe 등 차세대 IP는 초미세 공정에서의 설계·검증 난이도가 높아 개발 지연 리스크가 내재한다. 국책과제 수행 중 기술 목표 미달 또는 고객사 채택 부진이 발생할 경우 기대 매출이 이연될 수 있다. IP 라이선싱의 특성상 고객사 SoC 개발 일정에 종속되므로, 외부 요인에 의한 프로젝트 지연이 분기 매출 변동성을 높이는 리스크 요인으로 작용한다.",
+    "en": "Next-generation IP programs including PCIe 6.0 PHY, 100G SerDes, and UCIe carry inherent development delay risks given the high design and verification complexity at ultra-fine process nodes. Failure to meet technical milestones or insufficient customer adoption of resulting IP could defer anticipated revenues from these programs. The structural dependence on customers' SoC development timelines means that project delays driven by external factors may frequently create quarterly revenue volatility."
+   }
+  },
+  {
+   "cat": {
+    "ko": "반도체 경기 사이클 및 전방산업 수요 변동",
+    "en": "Semiconductor Industry Cycle and End-Market Demand Volatility"
+   },
+   "body": {
+    "ko": "반도체 IP 사업은 인프라 특성상 경기변동에 비교적 덜 민감하나, 전방 팹리스·SoC 개발사들의 신규 설계 활동이 위축될 경우 IP 라이선싱 및 디자인 서비스 수요도 함께 감소할 수 있다. AI 투자 사이클 조정, 주요 고객사 SoC 프로젝트 축소, 또는 삼성파운드리 수주 환경 변화가 간접적인 리스크 요인으로 작용할 수 있다. 2024~2025년 매출 감소가 전방산업 수요 부진에서 기인한 것으로 분석된 바 있어, 경기 민감도 리스크를 완전히 배제하기 어렵다.",
+    "en": "While semiconductor IP is relatively insulated from cyclical downturns due to its infrastructure characteristics, a reduction in new design activity among downstream fabless companies and SoC developers could dampen demand for both IP licensing and design services. Corrections in the AI investment cycle, reductions in major customers' SoC project pipelines, or shifts in Samsung Foundry's order environment represent indirect risk factors. The revenue declines observed in 2024 and 2025 were attributed primarily to end-market demand weakness, suggesting that cyclical sensitivity cannot be fully discounted."
+   }
+  }
+ ],
+ "checkpoints": [
+  {
+   "when": {
+    "ko": "2026년 8월 중순(2026년 2분기 실적 발표)",
+    "en": "Mid-August 2026 (2026 Q2 Earnings Release)"
+   },
+   "what": {
+    "ko": "2026년 1분기의 매출 급등 추세가 2분기에도 지속되는지, 영업손실 축소 속도가 가속화되는지를 확인. 2026년 연간 수익화 경로 가시성을 높이는 핵심 데이터 포인트.",
+    "en": "Assess whether the 2026 Q1 revenue surge is sustained in Q2 and whether operating loss reduction is accelerating — the primary data point for improving visibility into the full-year monetization trajectory."
+   }
+  },
+  {
+   "when": {
+    "ko": "2026년 하반기(PCIe 6.0 · 100G SerDes IP 고도화 진행 상황)",
+    "en": "H2 2026 (PCIe 6.0 and 100G SerDes IP Advancement Progress)"
+   },
+   "what": {
+    "ko": "PCIe 6.0 PHY IP 및 100G SerDes PHY IP의 고객사 공급·테이프아웃 완료 여부와 신규 고객사 레퍼런스 확보 현황을 모니터링. 고부가 IP 매출 전환 속도를 가늠하는 핵심 지표.",
+    "en": "Monitor delivery schedule and tape-out completion for PCIe 6.0 PHY and 100G SerDes PHY IP, along with any new customer reference wins — the key metric for gauging the pace of transition to higher-margin IP revenue."
+   }
+  },
+  {
+   "when": {
+    "ko": "2026~2027년(UCIe 칩렛 인터페이스 국책과제 연도별 마일스톤)",
+    "en": "2026–2027 (UCIe Chiplet Interface Government Project Annual Milestones)"
+   },
+   "what": {
+    "ko": "과기정통부 주관 'Tbps급 인터페이스 IP·실리콘 포토닉스 응용기술' 국책과제의 연도별 기술 목표 달성 현황과 UCIe IP 시제품(Test Chip) 제작 진행 상황을 확인. 국산 칩렛 IP 상용화 로드맵의 중요한 이정표.",
+    "en": "Track annual technical milestone achievement for the government's Tbps-level interface IP and silicon photonics project, and the progress of UCIe IP test chip fabrication — a critical signpost on the commercialization roadmap for domestically developed chiplet interface IP."
+   }
+  },
+  {
+   "when": {
+    "ko": "2026년 하반기(자금 조달 및 자본구조 변동 여부)",
+    "en": "H2 2026 (Capital Structure and Funding Activity)"
+   },
+   "what": {
+    "ko": "부채비율이 128.6%까지 상승한 상황에서 추가 차입 또는 유상증자 공시 여부를 주시. 자금 조달 방식과 규모에 따라 주주 희석 여부 및 재무 안정성 방향이 결정된다.",
+    "en": "Watch for any announcements of additional debt issuance or equity offerings given the elevated debt ratio. The method and scale of any capital raise will determine the degree of shareholder dilution and the direction of balance sheet stability."
+   }
+  },
+  {
+   "when": {
+    "ko": "2027년 1분기(2026년 연간 실적 확정 및 흑자 전환 가시성 판단)",
+    "en": "Q1 2027 (Full-Year 2026 Results and Profitability Inflection Assessment)"
+   },
+   "what": {
+    "ko": "2026년 연간 매출 규모와 영업손실 축소 폭을 통해 2027년 흑자 전환 가능성을 판단. 증권사 리서치가 제시한 중장기 흑자 전환 시나리오의 실현 가능성을 확인하는 중요한 관문.",
+    "en": "Full-year 2026 revenue and the magnitude of operating loss reduction will serve as the basis for assessing the feasibility of a profitability inflection in 2027 — the key gateway to evaluating sell-side medium-term turnaround scenarios."
+   }
+  }
+ ],
+ "verdict": {
+  "body": {
+   "ko": "퀄리타스반도체는 SerDes·PHY 기반 초고속 인터페이스 IP 분야에서 국내 유일한 전문기업으로, AI·칩렛·광통신이라는 구조적 성장 테마의 기술적 교차점에 위치해 있다는 점은 중장기 관점에서 유의미한 포지셔닝이다. 2026년 1분기 매출이 전년동기 대비 약 174% 급등하며 의미 있는 외형 회복 신호가 나타났고, 정부 국산화 정책의 직접 수혜 포지션과 삼성파운드리 생태계 내 협업 기반도 강점으로 평가된다. 반면 2023~2025년 3년간 영업손실이 매년 심화되고 부채비율이 128.6%로 급등하는 등 재무 부담이 누적되고 있으며, 수익화 시점의 불확실성은 여전히 크다. 글로벌 대형 IP 업체와의 자원·스케일 격차, 삼성파운드리 생태계 의존도, IP 라이선싱 특유의 매출 변동성도 지속 관리가 필요한 리스크다. 2026년 2분기 이후의 매출 추세, PCIe 6.0·UCIe 등 차세대 고부가 IP의 상용화 속도, 그리고 추가 자금 조달 여부가 기업가치 방향성을 결정짓는 핵심 변수가 될 것이다. 이 리포트는 투자 권유가 아닌 정보 제공 목적으로 작성되었으며, 모든 투자 결정은 개인의 판단과 책임 하에 이루어져야 한다.",
+   "en": "Qualitas Semiconductor occupies a unique domestic position as Korea's sole specialist in SerDes/PHY-based high-speed interface IP, sitting at the technological intersection of three structural growth themes — AI computing, chiplet architecture adoption, and the emerging shift to optical interconnects — which represents a strategically meaningful positioning in a medium-to-long-term context. The approximately 174% YoY revenue surge in 2026 Q1 constitutes a meaningful external recovery signal, and the company's standing as a direct beneficiary of government semiconductor nationalization policy and its Samsung Foundry ecosystem partnership are genuine structural advantages. Against these positives, three consecutive years of deepening operating losses, a sharp rise in the debt ratio to 128.6%, and persistent uncertainty around the monetization timeline represent significant countervailing concerns. The resource and scale gap relative to global IP majors, high dependence on the Samsung Foundry ecosystem, and structural revenue volatility inherent to project-based IP licensing warrant ongoing monitoring. The trajectory of revenue from 2026 Q2 onward, the pace of commercial adoption of next-generation high-value IP including PCIe 6.0 and UCIe, and the nature of any additional capital-raising activity will be the decisive variables shaping the company's enterprise value direction. This report is prepared for informational purposes only and does not constitute investment advice; all investment decisions remain the sole responsibility of the individual investor."
+  }
+ },
+ "sources": [
+  "https://m.irgo.co.kr/IR-COMP/432720",
+  "https://comp.fnguide.com/SVO2/ASP/SVD_Main.asp?pGB=1&gicode=A432720&cID=&MenuYn=Y&ReportGB=D&NewMenuID=Y&stkGb=701",
+  "https://markets.hankyung.com/stock/432720",
+  "https://m.finance.daum.net/quotes/A432720/news/disclosure/20251121089367",
+  "https://comp.wisereport.co.kr/company/c1010001.aspx?cmp_cd=432720",
+  "https://comp.wisereport.co.kr/company/c1040001.aspx?cmp_cd=432720&cn=",
+  "https://comp.wisereport.co.kr/company/c1030001.aspx?cmp_cd=432720&cn=",
+  "https://www.iprovest.com/upload/research/report/cominf/20260408/20260408_B4520_20250069_34.pdf",
+  "https://m.thinkpool.com/item/432720",
+  "https://www.q-semi.com/kor/products/interface_ip.php",
+  "https://www.q-semi.com/kor/company/about.php",
+  "https://q-semi.com/kr",
+  "https://ssl.pstatic.net/imgstock/upload/research/company/1713223424156.pdf",
+  "https://m.thinkpool.com/stockDiscuss/432720/cont/11875408",
+  "https://comp.fnguide.com/SVO2/ASP/SVD_Main.asp?pGB=1&gicode=A432720&MenuYn=Y&ReportGB=D&NewMenuID=Y&stkGb=701",
+  "https://www.inews24.com/view/1702602",
+  "https://www.q-semi.com/kor/products/serdes.php",
+  "https://kr.investing.com/equities/qualitas-semiconductor-earnings"
+ ],
+ "v": 2,
+ "model": "claude-sonnet-4-6",
+ "ticker": "432720",
+ "name": "퀄리타스반도체",
+ "name_en": "QUALITAS SEMICONDUCTOR CO., LTD.",
+ "sector": "반도체",
+ "categories": [
+  "반도체"
+ ],
+ "market": "코스닥",
+ "reportDate": "2026-06-19",
+ "reportTs": "2026-06-19 00:29",
+ "dataDate": "20260618",
+ "quant": {
+  "asOf": "2026-06-18",
+  "fs_basis": "연결(CFS) · DART 공시 확정치 · 지배주주 기준 순이익",
+  "annual": [
+   {
+    "year": 2025,
+    "rev": 5350047190,
+    "op": -24471844867,
+    "np": -23090473943,
+    "np_owner": -23090473943,
+    "equity": 36318366066,
+    "equity_owner": 36318366066,
+    "liab": 46718953361,
+    "cfo": -16464566738,
+    "eps_basic": -1644,
+    "opm": -457.4,
+    "roe": -63.6,
+    "debt_ratio": 128.6
+   },
+   {
+    "year": 2024,
+    "rev": 6074683889,
+    "op": -22694310411,
+    "np": -19057342437,
+    "np_owner": -19057342437,
+    "equity": 50664367455,
+    "equity_owner": 50664367455,
+    "liab": 13356309236,
+    "cfo": -17109944614,
+    "eps_basic": -1560,
+    "opm": -373.6,
+    "roe": -37.6,
+    "debt_ratio": 26.4
+   },
+   {
+    "year": 2023,
+    "rev": 10774541164,
+    "op": -11186432731,
+    "np": -8108505639,
+    "np_owner": -8108505639,
+    "equity": 27722500504,
+    "equity_owner": 27722500504,
+    "liab": 12989172974,
+    "cfo": -11267798428,
+    "eps_basic": -960,
+    "opm": -103.8,
+    "roe": -29.2,
+    "debt_ratio": 46.9
+   }
+  ],
+  "quarterly": [
+   {
+    "q": "2025Q1",
+    "rev": 1879977032,
+    "op": -5043450371,
+    "np_owner": -4733134910
+   },
+   {
+    "q": "2025Q2",
+    "rev": 915321852,
+    "op": -6371080237,
+    "np_owner": -5571132480
+   },
+   {
+    "q": "2025Q3",
+    "rev": 841629105,
+    "op": -6570469969,
+    "np_owner": -4967130680
+   },
+   {
+    "q": "2025Q4",
+    "rev": 1713119201,
+    "op": -6486844290,
+    "np_owner": -7819075873
+   },
+   {
+    "q": "2026Q1",
+    "rev": 5153686910,
+    "op": -4740378317,
+    "np_owner": -4160697400
+   }
+  ],
+  "valuation": {
+   "price": 14240,
+   "mcap": 0.202,
+   "shares": 14187572,
+   "total_shares": 14143012,
+   "wavg_shares": 14045300,
+   "per": null,
+   "eps": -1599,
+   "pbr": 6.21,
+   "bps": 2293,
+   "roe_ttm": -57.6,
+   "ttm_window": "2025Q2~2026Q1",
+   "ttm_np_owner": -22518036433,
+   "pbr_krx": 5.55,
+   "bps_krx": 2568.0,
+   "basis": "PER·EPS·PBR·BPS 모두 자체 산출(네이버·토스와 동일 방식) · 배당은 DART 공시 주당현금배당금(보완:KRX) ÷ 현재가",
+   "dps": 0.0,
+   "div": 0.0
+  }
+ }
+}
