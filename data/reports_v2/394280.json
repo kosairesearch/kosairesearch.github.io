@@ -1,0 +1,357 @@
+{
+ "title": {
+  "ko": "NPU·메모리 통합 IP 전략, 흑자전환 가시성 점검",
+  "en": "Integrated NPU & Memory IP: Examining Turnaround Visibility"
+ },
+ "lead": {
+  "ko": "세계 유일의 NPU·토탈 메모리시스템 통합 IP 플랫폼 기업으로 AI·자율주행 수요 확대의 직접 수혜 포지션이나, 4개년 연속 영업적자와 자기자본 급감이라는 재무 임계 상황을 동시에 직면하고 있다.",
+  "en": "As the world's only provider of integrated NPU and total memory system semiconductor IP, OpenEdge Technology is positioned for structural AI and autonomous driving demand growth, yet simultaneously faces a critical financial juncture defined by four consecutive years of operating losses and sharply declining equity."
+ },
+ "keypoints": [
+  {
+   "ko": "세계 유일의 NPU(인라이트)·메모리시스템(오르빗)·NoC 통합 'AI 플랫폼 IP 솔루션' — 직접적 글로벌 대항마가 없는 차별적 포지션",
+   "en": "Globally unique AI Platform IP Solution integrating NPU (ENLIGHT), memory system (ORBIT), and NoC interconnect — differentiated by the absence of a direct global equivalent"
+  },
+  {
+   "ko": "2025년 매출 161억원으로 소폭 반등했으나 영업손실 289억원·순손실 301억원으로 역대 최대 적자 기록; 자기자본이 607억원(2024년 말)→171억원(2025년 말)으로 급감, 부채비율 42.8%→178.5% 급등",
+   "en": "2025 revenue modestly recovered to KRW 16.1bn, but operating loss widened to a record KRW 28.9bn; equity plunged from KRW 60.7bn (end-2024) to KRW 17.1bn (end-2025), with the debt ratio surging from 42.8% to 178.5%"
+  },
+  {
+   "ko": "2026년 1분기 영업손실 90억원으로 분기 역대 최대 기록 — 연간 BEP 달성을 위해 2분기 이후 대폭적인 매출 회복이 필수 전제 조건",
+   "en": "2026Q1 posted an all-time record quarterly operating loss of KRW 9.0bn — a sharp sequential revenue ramp from Q2 onward is a prerequisite for any full-year breakeven scenario"
+  },
+  {
+   "ko": "K-온디바이스 AI 반도체 프로젝트 사실상 단독 IP 공급자로 지목 — 2026년 상반기 수주 확정 후 하반기 실적 반영 기대",
+   "en": "Identified as de facto sole IP supplier for the K-On-Device AI semiconductor program — order wins expected in H1 2026 with revenue impact anticipated in H2 2026"
+  },
+  {
+   "ko": "르네사스·아이신 차량용 레퍼런스 확보, ISO 26262 인증 NoC IP까지 확대, LPDDR6·칩렛·UCIe·PCIe IP 로드맵 순차 진행 중",
+   "en": "Automotive references accumulating with Renesas and Aisin; ISO 26262 certification extended to NoC IP; LPDDR6, chiplet, UCIe, and PCIe IPs progressing sequentially on the product roadmap"
+  }
+ ],
+ "business": {
+  "ko": "오픈엣지테크놀로지는 2017년 12월 삼성전자 시스템LSI 사업부 출신 이성현 대표가 설립한 반도체 설계자산(IP) 전문기업으로, 2022년 9월 코스닥에 상장했다. 주력 제품은 엣지 환경용 신경망처리장치(NPU) IP '인라이트(ENLIGHT)', DDR 메모리 컨트롤러·PHY·NoC 인터커넥트를 아우르는 고성능 메모리 시스템 IP '오르빗(ORBIT)', 그리고 이를 통합한 'AI 플랫폼 IP 솔루션'으로 구성된다. 세계에서 유일하게 NPU와 토탈 메모리시스템 IP를 단일 플랫폼으로 공급하는 사업모델을 보유하며, 고객사는 이를 통해 AI 반도체 설계 기간 단축과 개발 비용 절감이라는 이중 효익을 누릴 수 있다. 수익 구조는 IP 라이선스 수수료(계약 초기), 유지보수 비용(정기 발생), 로열티(칩 양산 이후 누적)의 3단계로 구성되며, 메모리시스템 IP는 높은 단가와 넓은 적용 범위로 매출의 핵심축을 형성한다. 국내 주요 고객사로는 삼성전자·SK하이닉스·텔레칩스·LX세미콘이 있으며, 해외에는 마이크론·르네사스·도요타 그룹 아이신·세미파이브 등 글로벌 티어-1 기업이 포함된다. 2019년 캐나다 IP 설계 기업 TSS(The Six Semiconductor)를 인수해 AMD 출신 아날로그 설계 엔지니어 역량을 확보했으며, 2021년에는 미국 산호세·오스틴에 R&D 캠퍼스를 설립했다. 비용 절감 차원에서 미국 법인은 2025년 말 청산을 완료했고, 캐나다 법인은 규모를 축소했다. 전체 인력 약 200명 중 90%가 엔지니어로 국내 반도체 IP 기업 최대 규모이며, 최근에는 칩렛 연결용 UCIe·PCIe 등 인터페이스 IP와 자동차 기능안전(ISO 26262) 인증 제품으로 포트폴리오를 지속 확장 중이다.",
+  "en": "OpenEdge Technology was founded in December 2017 by CEO Lee Seong-hyun, formerly of Samsung's System LSI division, and listed on KOSDAQ in September 2022. Its core products are the edge-AI NPU IP 'ENLIGHT,' the high-performance memory system IP 'ORBIT' encompassing DDR memory controllers, PHY, and NoC interconnect, and the unified 'AI Platform IP Solution' integrating both. The company is the only provider worldwide offering NPU and total memory system IP in a single platform, enabling customers to shorten AI chip design cycles while reducing development costs. Revenue follows a three-stage model: one-time IP license fees at contract inception, recurring maintenance fees, and royalties accruing after chip production — with memory system IP serving as the revenue backbone due to its high unit price and broad applicability. Key domestic clients include Samsung Electronics, SK Hynix, Telecorp, and LX Semicon; overseas Tier-1 references include Micron, Renesas, Toyota Group's Aisin, and Semifive. In 2019, the company acquired Canadian IP firm TSS (The Six Semiconductor) to gain AMD-trained analog engineering talent, and in 2021 established R&D campuses in San Jose and Austin. To reduce fixed costs, the U.S. entity was wound down at end-2025 and the Canadian subsidiary was scaled back. Approximately 90% of its ~200-strong workforce are engineers — the largest engineering headcount among Korean semiconductor IP firms — and the company continues to expand its portfolio into chiplet interconnect interfaces (UCIe, PCIe) and ISO 26262-certified automotive semiconductor products."
+ },
+ "earnings": {
+  "ko": "연간 매출은 2022년 100억원에서 2023년 196억원으로 두 배 가까이 성장했으나, 2024년 153억원으로 역성장한 뒤 2025년에는 161억원으로 소폭 반등에 그쳤다. 영업손실은 2022년 253억원→2023년 159억원으로 일시 축소됐다가 2024년 246억원→2025년 289억원으로 재차 확대됐으며, 영업손실률도 2023년 -81.0%에서 2025년 -180.0%로 악화됐다. 순손실 역시 2022년 252억원→2023년 149억원→2024년 273억원→2025년 301억원으로 2023년 이후 계속 확대되는 추세다. 영업현금흐름(CFO)은 4개년 모두 음수로 각각 -267억원·-199억원·-103억원·-186억원을 기록했으며, 2024년의 일시적 개선 이후 2025년에 다시 악화됐다. 분기별로는 2025년 1분기(48억원)와 3분기(53억원)에 상대적으로 높은 매출이 인식된 반면, 2분기(26억원)와 4분기(34억원)에 급감해 IP 라이선스 인식 타이밍에 따른 변동성이 크게 나타났다. 2025년 4분기 지배주주 귀속 순손실이 92억원으로 분기 중 최대를 기록했으나, 2026년 1분기에는 영업손실 90억원·순손실 91억원으로 영업손실 기준 분기 역대 최대를 다시 경신했다. 자기자본은 2025년 말 171억원으로 급감했으며, 부채비율도 178.5%로 급등해 재무 안전성이 빠르게 약화되고 있다. 회사는 2025년 말 미국 법인 청산·캐나다 법인 축소 및 전환우선주(CPS) 발행을 통해 비용 절감과 유동성 확보를 동시에 추진하고 있다.",
+  "en": "Annual revenue nearly doubled from KRW 10.0bn in 2022 to KRW 19.6bn in 2023, then reversed to KRW 15.3bn in 2024 before a modest recovery to KRW 16.1bn in 2025. Operating losses briefly narrowed from KRW 25.3bn in 2022 to KRW 15.9bn in 2023, before widening again to KRW 24.6bn in 2024 and a record KRW 28.9bn in 2025; the operating margin deteriorated from -81.0% in 2023 to -180.0% in 2025. Net losses followed a similar trajectory: KRW 25.2bn (2022), KRW 14.9bn (2023), KRW 27.3bn (2024), and KRW 30.1bn (2025). Operating cash flow remained negative across all four years at KRW -26.7bn, -19.9bn, -10.3bn, and -18.6bn respectively, with 2024 representing a temporary relative improvement. Quarterly revenue in 2025 was highly variable: KRW 4.8bn in Q1 and KRW 5.3bn in Q3 contrasted sharply with KRW 2.6bn in Q2 and KRW 3.4bn in Q4, reflecting the lumpiness of IP license recognition timing. While 2025Q4 posted the largest quarterly net loss at KRW 9.2bn, 2026Q1 set a new record for quarterly operating loss at KRW 9.0bn (net loss KRW 9.1bn), confirming that no improvement inflection has yet materialized. Equity fell to KRW 17.1bn at end-2025 as the debt ratio surged to 178.5%, reflecting cumulative losses and related comprehensive income adjustments. To address liquidity, the company completed the wind-down of its U.S. subsidiary, scaled back Canadian operations, and issued convertible preferred shares (CPS) to raise additional working capital."
+ },
+ "industry": {
+  "ko": "글로벌 반도체 IP 시장은 2024년 약 75억달러에서 2029년 약 112억달러로 연평균 8.5% 성장이 전망되며, AI·자동차·데이터센터 수요가 핵심 성장 동인이다. 제조 공정 미세화가 한계에 가까워지면서 반도체 성능 차별화의 무게 중심이 '설계 자산'으로 이동하고 있어, 시장의 구조적 수요 확대가 뒷받침된다. 메모리 IP 세그먼트는 LPDDR6·HBM4 등 차세대 표준 전환 사이클과 맞물려 최고 성장률이 기대되며, 인터페이스 IP(UCIe·PCIe·CXL)도 칩렛 아키텍처 확산과 데이터센터 초고속 연결 수요에 힘입어 빠르게 확대되고 있다. 글로벌 경쟁 구도는 ARM·Synopsys·Cadence·CEVA 등 소수 대형사가 생태계를 주도하는 가운데, 오픈엣지는 NPU와 메모리시스템 IP의 통합 솔루션이라는 차별적 가치 제안으로 이들과 보완·경쟁 관계를 형성하고 있다. 국내에서는 산업통상자원부 주관 K-온디바이스 AI 반도체 프로젝트가 오픈엣지를 사실상의 단독 IP 공급자로 포지셔닝시키며 시장 지위 강화 기회를 제공하고 있다. 반면 Synopsys·Imagination Technologies 등도 LPDDR·HBM 관련 메모리 IP 포트폴리오를 적극 강화하고 있어 핵심 영역에서의 경쟁이 점차 격화될 전망이다. 미중 반도체 수출 규제는 중국 팹리스 고객사 접근을 제한하는 한편, 공급망 다변화 흐름 속에서 비미국계 IP 기업에 대한 수요를 높이는 양면성을 지닌다.",
+  "en": "The global semiconductor IP market is forecast to grow from approximately USD 7.5bn in 2024 to USD 11.2bn by 2029, at a CAGR of roughly 8.5%, driven by AI, automotive, and data center demand. As semiconductor process node advancement approaches physical limits, chip differentiation is increasingly driven by design assets — a structural tailwind for the IP licensing market. The memory IP segment is expected to post the highest growth rate as next-generation standards such as LPDDR6 and HBM4 drive technology transition cycles, and interface IP (UCIe, PCIe, CXL) is rapidly expanding on the back of chiplet architecture adoption and high-speed data center interconnect requirements. The competitive landscape is dominated by global majors — ARM, Synopsys, Cadence, and CEVA — with OpenEdge maintaining both complementary and competitive relationships through its unique integrated NPU-plus-memory-system value proposition. Domestically, the government-led K-On-Device AI Semiconductor Development Program (Ministry of Trade, Industry and Energy) has created a major opportunity for OpenEdge as a prospective sole IP supplier across automotive, IoT, defense, and robotics segments. On the other hand, Synopsys, Imagination Technologies, and others are actively strengthening their LPDDR and HBM memory IP portfolios, intensifying competitive pressure in OpenEdge's core territories. U.S.-China semiconductor export controls present a dual dynamic: restricting access to Chinese customers while potentially boosting demand for non-U.S. IP providers amid global supply chain diversification."
+ },
+ "outlook": {
+  "ko": "국내외 증권사 컨센서스는 2026년 연간 매출을 300~318억원으로 전망하며, 이는 2025년 대비 최대 98% 성장에 해당한다. 핵심 성장 동력은 ①2025년 말 완료된 미국 법인 청산·캐나다 법인 축소의 고정비 절감 효과(2026년 하반기부터 가시화), ②K-온디바이스 AI 반도체 프로젝트 수주(2026년 상반기 예상)와 하반기 실적 반영, ③르네사스·아이신 등 글로벌 차량용 고객 수주 지속이다. 회사는 분기별 고정비를 80억원 미만 수준으로 통제해 연간 BEP(손익분기점) 달성 가시성을 높이겠다는 구체적 목표를 제시하고 있다. 제품 로드맵 측면에서는 삼성파운드리 5나노(SF5A) 공정용 LPDDR5X PHY IP 성능 검증이 완료됐으며, LPDDR6·칩렛 플랫폼(세미파이브와 협력)·UCIe(2025년)·PCIe(2026년)·USB·MIPI(2027년) IP가 순차적으로 개발 중이다. 차량용 분야에서는 르네사스의 차세대 MPU 플랫폼에 메모리 서브시스템 IP가 공식 채택됐고, ISO 26262 인증이 NoC IP까지 확대돼 고부가 계약 기반이 강화되고 있다. 국내 방산 기업 복수 사와 NPU IP 칩 국산화 사업 협의가 진행 중이어서 추가 수주 파이프라인으로 기대된다. 다만 2026년 1분기 실적이 기대를 하회한 상황에서, 연간 컨센서스 달성을 위해서는 2분기 이후 대규모 계약 인식이 집중 발생해야 하며, IP 공급 지연이 재발할 경우 가이던스 하향 조정 가능성을 배제하기 어렵다.",
+  "en": "Securities firm consensus projects 2026 annual revenue of KRW 30–31.8bn, representing growth of up to 98% versus 2025. The three main growth catalysts are: (1) fixed-cost savings from the U.S. subsidiary wind-down and Canadian entity downsizing completed at end-2025, becoming visible from H2 2026; (2) anticipated K-On-Device AI semiconductor program order wins in H1 2026 with revenue recognition in H2; and (3) continued automotive contract expansion with Renesas, Aisin, and other Tier-1 customers. Management has set a specific goal of keeping quarterly fixed costs below KRW 8bn to maximize full-year breakeven visibility. On the product roadmap, LPDDR5X PHY IP for Samsung Foundry's 5nm SF5A process has been silicon-validated, with LPDDR6, chiplet platforms (developed with Semifive), UCIe (2025), PCIe (2026), and USB/MIPI (2027) IPs progressing sequentially. On the automotive side, Renesas has officially adopted OpenEdge's memory subsystem IP for its next-generation MPU platform, and ISO 26262 certification has been extended to NoC IP — strengthening the foundation for high-value automotive contract wins. Separately, ongoing NPU IP discussions with multiple domestic defense companies for chip nationalization represent an additional pipeline. That said, with 2026Q1 coming in below expectations, consensus achievement requires a significant concentration of large contract recognitions from Q2 onward, and repeated IP delivery delays remain a non-trivial guidance downside risk."
+ },
+ "valuation_comment": {
+  "ko": "4개년 연속 적자로 주가수익비율(PER) 산출이 불가능하며, 현재 주당순손실(EPS)은 -1,311원이다. 주당순자산(BPS)은 378원으로, 현 주가는 순자산 대비 상당한 시장 프리미엄이 형성된 구간에 해당하며, 이는 시장이 흑자전환 이후의 성장 잠재력을 선반영하고 있음을 시사한다. 이익 전환이 지연될수록 매 분기 순자산 잠식이 심화돼 해당 프리미엄의 정당성이 약해질 수 있다는 점은 대칭적 하방 요인이다. 동사는 설립 이후 배당을 실시한 이력이 없으며(DPS 0원), 배당수익 측면의 투자 유인은 부재하다. 적자 성장 기업 특성상 전통적 이익 지표보다 매출 성장 속도·흑자전환 분기·이후 이익 레버리지 가시성이 밸류에이션 재평가의 핵심 조건으로 작용할 것이다.",
+  "en": "With four consecutive years of losses, the price-to-earnings ratio (PER) cannot be calculated; the current per-share net loss (EPS) stands at -KRW 1,311. Book value per share (BPS) of KRW 378 implies the stock trades at a material premium to net asset value, suggesting the market is pricing in post-turnaround growth potential in advance. However, the longer profitability is delayed, the more each quarter's equity erosion weakens the justification for that premium — a symmetric downside consideration. The company has no dividend history since inception (DPS KRW 0), offering no income return component. Given its pre-profit growth profile, revenue growth trajectory, the quarter of first profitability, and subsequent earnings leverage will serve as the primary re-rating catalysts rather than traditional earnings-based multiples."
+ },
+ "bull": [
+  {
+   "title": {
+    "ko": "AI 반도체 IP 시장 구조적 성장과 통합 솔루션 차별화",
+    "en": "Structural AI Semiconductor IP Market Growth and Integrated Solution Differentiation"
+   },
+   "body": {
+    "ko": "글로벌 반도체 IP 시장은 AI·자동차·데이터센터 수요에 힘입어 2029년까지 연평균 8.5% 성장이 예상되며, 메모리 IP와 인터페이스 IP 세그먼트가 가장 높은 성장률을 주도할 전망이다. 오픈엣지는 세계 유일의 NPU·토탈 메모리시스템 통합 IP 공급자로서 엣지 AI·온디바이스 AI·자율주행 반도체 시장 확대의 직접 수혜 포지션에 있다. 아젠틱(Agentic) AI 전환으로 NoC·고성능 메모리 인터페이스의 설계 복잡도가 급증하면서, 통합 솔루션이 제공하는 설계 단기화와 비용 절감 가치가 더욱 부각될 것이다.",
+    "en": "The global semiconductor IP market is forecast to grow at a CAGR of 8.5% through 2029, driven by AI, automotive, and data center demand, with memory IP and interface IP segments leading in growth rate. As the world's only provider of integrated NPU and total memory system IP, OpenEdge is in direct beneficiary position for the expansion of edge AI, on-device AI, and autonomous driving semiconductor markets. The transition to Agentic AI is rapidly escalating NoC and high-speed memory interface design complexity, making the design cycle and cost reduction benefits of the integrated solution increasingly compelling."
+   }
+  },
+  {
+   "title": {
+    "ko": "K-온디바이스 프로젝트 사실상 단독 IP 공급자 기회",
+    "en": "De Facto Sole IP Supplier Opportunity in the K-On-Device Program"
+   },
+   "body": {
+    "ko": "산업통상자원부 주관 K-온디바이스 AI 반도체 개발 프로젝트는 자동차·IoT가전·기계로봇·방산 4개 부문의 맞춤형 AI 반도체를 풀스택으로 개발하는 대규모 국가 과제다. 오픈엣지는 온디바이스 AI에 필요한 NPU·메모리시스템·인터페이스 IP를 모두 보유한 국내 유일 기업으로, 증권가에서는 4개 부문 전체의 사실상 단독 공급자(sole player)로 평가하고 있다. 2026년 상반기 수주 확정 후 하반기 실적에 반영될 경우, 복수 부문 동시 수주는 단일 분기 매출을 구조적으로 끌어올리며 영업 레버리지를 크게 확대시킬 수 있다.",
+    "en": "The K-On-Device AI Semiconductor Development Program, led by Korea's Ministry of Trade, Industry and Energy, is a large-scale national initiative to develop full-stack customized AI chips across four sectors: automotive, IoT/appliances, robotics, and defense. OpenEdge is the only Korean company possessing all required NPU, memory system, and interface IPs for on-device AI applications, and securities firms view it as the de facto sole supplier across all four segments. If contracts are confirmed in H1 2026 with revenue recognized in H2, simultaneous wins across multiple verticals could structurally lift single-quarter revenue and substantially expand operating leverage."
+   }
+  },
+  {
+   "title": {
+    "ko": "글로벌 차량용 레퍼런스 누적 및 방산 신규 파이프라인 확충",
+    "en": "Accumulating Global Automotive References and Emerging Defense Pipeline"
+   },
+   "body": {
+    "ko": "르네사스의 차세대 MPU 플랫폼에 메모리 서브시스템 IP가 공식 채택됐고, 도요타 그룹 아이신과의 차량용 IP 라이선스 계약 및 ISO 26262 인증의 NoC IP 확대 적용으로 자동차 반도체 레퍼런스가 빠르게 쌓이고 있다. 차량용 반도체 IP는 한번 채택되면 5~10년 이상의 장기 로열티 수익이 발생하는 구조여서, 레퍼런스 누적은 중장기 수익 안정성에 직접 기여한다. 국내 방산 기업 복수 사와 NPU IP 칩 국산화 사업 협의가 진행 중이며, 방산 계약 수주 시 단가와 수익성 측면에서도 질적 개선이 기대된다.",
+    "en": "Renesas has officially adopted OpenEdge's memory subsystem IP for its next-generation MPU platform, while an IP license agreement with Toyota Group's Aisin and ISO 26262 certification extended to NoC IP are rapidly building the automotive semiconductor reference base. Automotive semiconductor IP embedded in a chip design typically generates royalty revenues over a 5–10 year product lifecycle, meaning reference accumulation directly underpins medium-to-long-term earnings stability. Concurrent discussions with multiple Korean defense companies for NPU IP chip nationalization represent a high-value incremental pipeline that, if converted, would improve both revenue scale and margin profile."
+   }
+  }
+ ],
+ "bear": [
+  {
+   "title": {
+    "ko": "4개년 적자 심화 및 자기자본 임계 수준 도달",
+    "en": "Four-Year Deepening Losses and Equity at a Critical Threshold"
+   },
+   "body": {
+    "ko": "2022년부터 2025년까지 영업손실이 253억→159억→246억→289억원으로 (2023년 일시 축소 제외) 확대 추세이며, 자기자본은 2025년 말 171억원으로 급감해 부채비율이 178.5%에 달했다. 2026년 1분기 영업손실이 90억원으로 분기 역대 최대를 기록해 비용 절감의 실질 효과가 아직 수치로 확인되지 않은 상태다. 추가 자본 확충 없이 현 추세가 지속된다면 2026년 중 자본 잠식이 현실화될 가능성도 배제하기 어렵다.",
+    "en": "Operating losses have broadly trended from KRW 25.3bn (2022) to KRW 28.9bn (2025), with 2023 as a temporary exception; equity fell to KRW 17.1bn at end-2025, sending the debt ratio to 178.5%. The record quarterly operating loss of KRW 9.0bn in 2026Q1 provides no evidence of an inflection point from cost restructuring efforts. Without additional capital raises, continued losses at this pace raise a non-trivial risk of partial equity impairment during 2026."
+   }
+  },
+  {
+   "title": {
+    "ko": "IP 라이선스 인식 타이밍 불확실성과 높은 분기 실적 변동성",
+    "en": "IP Revenue Recognition Timing Uncertainty and High Quarterly Earnings Volatility"
+   },
+   "body": {
+    "ko": "반도체 IP 라이선스 매출은 계약 체결 후 IP 공급 완료 시점에 인식되어, IP 개발 지연 시 분기 매출이 급감하는 구조적 변동성을 내포한다. 2025년 분기 매출은 최소 26억원에서 최대 53억원까지 편차가 크며, 2025년 상반기 IP 제공 지연이 연간 실적 부진의 핵심 원인이 됐다. 2026년 1분기 매출도 27억원에 그쳐 타이밍 리스크가 재연될 가능성이 있으며, 연간 컨센서스 달성을 위해서는 이후 분기에 대형 계약 인식이 집중적으로 이루어져야 한다.",
+    "en": "Semiconductor IP licensing revenue is recognized upon IP delivery rather than at contract signing, creating structural quarterly volatility whenever development delays occur. In 2025, quarterly revenue swung from a low of KRW 2.6bn to a high of KRW 5.3bn, with IP delivery delays in H1 a primary driver of the full-year earnings shortfall. With 2026Q1 revenue also at KRW 2.7bn, timing risk appears to be recurring, and meeting the full-year consensus requires a heavy concentration of large contract recognitions in subsequent quarters."
+   }
+  },
+  {
+   "title": {
+    "ko": "글로벌 대형 IP 기업과의 경쟁 심화",
+    "en": "Intensifying Competition from Global IP Majors"
+   },
+   "body": {
+    "ko": "ARM·Synopsys·Cadence·Imagination Technologies 등 글로벌 대형 IP 기업들이 LPDDR·HBM 관련 메모리 IP와 인터페이스 IP 포트폴리오를 적극 강화하고 있어, 오픈엣지의 핵심 영역에서도 경쟁이 격화되고 있다. 대형사들은 방대한 레퍼런스와 자본력을 바탕으로 선단 공정(3나노 이하) IP 개발을 선점할 수 있는 구조적 강점을 지니며, 오픈엣지보다 훨씬 풍부한 글로벌 영업·지원 네트워크를 보유하고 있다. 오픈엣지가 통합 솔루션의 차별성을 고객에게 지속적으로 입증하지 못할 경우 일부 시장이 대형사 포트폴리오에 잠식될 위험이 있다.",
+    "en": "Global IP majors including ARM, Synopsys, Cadence, and Imagination Technologies are actively expanding their LPDDR, HBM, and interface IP portfolios, sharpening competitive pressure in OpenEdge's core segments. These incumbents possess structural advantages including extensive customer references, deep capital resources, and the capacity to develop and verify sub-3nm process IPs ahead of smaller peers, along with far broader global sales and support networks. Failure to continuously demonstrate the differentiated value of its integrated solution could expose portions of OpenEdge's addressable market to displacement by these larger players."
+   }
+  }
+ ],
+ "risks": [
+  {
+   "cat": {
+    "ko": "유동성·자본 구조 리스크",
+    "en": "Liquidity and Capital Structure Risk"
+   },
+   "body": {
+    "ko": "4개년 연속 음의 영업현금흐름(2025년 -186억원)과 자기자본 급감으로 운전자금 부담이 임계치에 가까워지고 있으며, 전환우선주(CPS) 발행으로 단기 유동성을 보완했으나 전환 시 기존 주주의 주식 희석이 수반된다. 흑자전환이 지연될 경우 추가 자본 확충 필요성이 높아지며, 이는 신주 발행에 따른 추가 희석 위험으로 이어질 수 있다. 현재의 부채비율 수준에서는 차입 여력도 제한적이어서, 영업 레버리지가 본격화되기 전까지의 유동성 관리가 핵심 과제다.",
+    "en": "Four consecutive years of negative operating cash flow (KRW -18.6bn in 2025) and rapidly shrinking equity have pushed working capital pressure toward a critical threshold; CPS issuance has partially addressed near-term liquidity but will dilute common shareholders upon conversion. Any further delay in reaching profitability would likely necessitate additional capital raises, creating incremental dilution risk for existing shareholders. At current debt ratio levels, borrowing capacity is also constrained, making liquidity management the central operational challenge until operating leverage materializes."
+   }
+  },
+  {
+   "cat": {
+    "ko": "지정학·수출 규제 리스크",
+    "en": "Geopolitical and Export Control Risk"
+   },
+   "body": {
+    "ko": "미국의 대중국 반도체 기술 수출 규제 강화는 중국 팹리스 고객사(오픈엣지의 잠재 수주 시장의 상당 부분을 점유)에 대한 IP 공급을 제한할 수 있다. 규제 확대 시 오픈엣지의 중국 발 라이선스 수주 파이프라인이 위축될 수 있으며, 이미 협의 중인 계약도 영향을 받을 수 있다. 지정학적 불확실성의 장기화는 해외 IP 계약 협상 속도를 저해하고 글로벌 수주 예측 가능성을 낮출 수 있다.",
+    "en": "Tightening U.S. export controls on semiconductor technology to China could restrict IP supply to Chinese fabless customers, who constitute a meaningful portion of OpenEdge's potential licensing market. Expansion of export restrictions could curtail the China-sourced licensing pipeline and potentially affect contracts already in negotiation. Prolonged geopolitical uncertainty may also slow overseas IP contract negotiations and reduce global order visibility more broadly."
+   }
+  },
+  {
+   "cat": {
+    "ko": "기술 진부화·IP 개발 지연 리스크",
+    "en": "Technology Obsolescence and IP Development Delay Risk"
+   },
+   "body": {
+    "ko": "반도체 메모리 표준은 LPDDR5X→LPDDR6, HBM3→HBM4 등으로 2~3년 주기로 빠르게 진화하며, IP 기업은 각 세대에 대응하는 검증된 IP를 적시에 공급해야 한다. 고정비 절감을 위한 해외 R&D 인력 축소가 차세대 IP 개발 속도를 둔화시킬 경우, 선단 공정 계약 수주 경쟁에서 경쟁 열위로 이어질 수 있다. IP 공급 지연이 반복될 경우 고객사의 신뢰도가 저하되고 계약 갱신 가능성이 낮아질 수 있다.",
+    "en": "Memory standards evolve rapidly on 2–3 year cycles (LPDDR5X to LPDDR6, HBM3 to HBM4), requiring IP companies to deliver timely silicon-verified next-generation IP for each new process node. If overseas R&D headcount reductions made for cost control slow next-generation IP development, OpenEdge could face competitive disadvantage in advanced-node contract bidding. Repeated IP delivery delays risk eroding customer confidence and reducing the probability of future contract renewals and expansions."
+   }
+  }
+ ],
+ "checkpoints": [
+  {
+   "when": {
+    "ko": "2026년 8월 중 (예상)",
+    "en": "August 2026 (Expected)"
+   },
+   "what": {
+    "ko": "2026년 2분기 실적 공시. 분기 매출의 반등 규모와 영업손실 축소 폭이 연간 BEP 달성 가능성을 가늠하는 가장 중요한 선행 지표다.",
+    "en": "2026Q2 earnings release: the magnitude of sequential revenue recovery and narrowing of operating loss are the most critical leading indicators for assessing full-year breakeven feasibility."
+   }
+  },
+  {
+   "when": {
+    "ko": "2026년 상반기 내",
+    "en": "Within H1 2026"
+   },
+   "what": {
+    "ko": "K-온디바이스 AI 반도체 프로젝트 수주 계약 공시 여부. 수주 부문 수와 계약 규모에 따라 2026년 하반기 실적 가시성이 크게 달라진다.",
+    "en": "Formal K-On-Device AI semiconductor program contract announcements: the number of sectors contracted and total deal size will determine H2 2026 revenue visibility and full-year earnings trajectory."
+   }
+  },
+  {
+   "when": {
+    "ko": "2026년 하반기",
+    "en": "H2 2026"
+   },
+   "what": {
+    "ko": "TSMC 오픈 이노베이션 플랫폼(OIP) 편입 심사 및 결과. 편입 성공 시 TSMC 생태계 내 글로벌 팹리스를 대상으로 한 IP 공급 파이프라인이 대폭 확대된다.",
+    "en": "TSMC Open Innovation Platform (OIP) inclusion audit and outcome: successful inclusion would substantially broaden OpenEdge's IP licensing pipeline to global fabless companies within the TSMC ecosystem."
+   }
+  },
+  {
+   "when": {
+    "ko": "2026년 중 (공시 일정 미확정)",
+    "en": "2026 (Date TBD)"
+   },
+   "what": {
+    "ko": "전환우선주(CPS) 전환 규모·시기 공시. 보통주 전환 시 유통 주식 수가 증가해 주당 지표에 영향을 미치므로, 전환 내용이 확정되면 희석 규모를 확인해야 한다.",
+    "en": "CPS conversion timing and scale disclosure: conversion to common shares will increase the share count and dilute per-share metrics; the actual conversion terms will be a material variable to monitor upon announcement."
+   }
+  },
+  {
+   "when": {
+    "ko": "2026년 4분기 실적 발표 전후",
+    "en": "Around Q4 2026 Earnings Release"
+   },
+   "what": {
+    "ko": "연간 매출 300억원 돌파 및 분기 또는 연간 BEP 달성 여부 확인. 흑자 전환 성공 여부가 2027년 가이던스 신뢰성과 밸류에이션 재평가의 기준점이 된다.",
+    "en": "Confirmation of full-year revenue exceeding KRW 30bn and achievement of quarterly or annual breakeven: profitability or its absence will establish the credibility baseline for 2027 guidance and any subsequent valuation re-rating."
+   }
+  }
+ ],
+ "verdict": {
+  "body": {
+   "ko": "오픈엣지테크놀로지는 세계 유일의 NPU·토탈 메모리시스템 통합 반도체 IP 플랫폼 기업으로, AI 반도체와 자율주행 시장의 구조적 성장이라는 강력한 장기 테마를 보유하고 있다. 삼성전자·SK하이닉스·마이크론·르네사스·아이신 등 글로벌 티어-1 레퍼런스를 축적하고 있으며, K-온디바이스 프로젝트와 방산 NPU IP 국산화 등 대형 국내 수주 파이프라인도 형성돼 있다. 그러나 4개년 연속 영업적자 확대, 2025년 말 자기자본 171억원(부채비율 178.5%)으로의 급감, 2026년 1분기 분기 역대 최대 영업손실(90억원) 기록이 맞물리며 재무적 취약성이 임계 수준에 가까워지고 있다. 연간 BEP 달성 시나리오는 2분기 이후 매출의 대폭 성장을 전제로 하며, 이를 위한 핵심 선결 조건은 K-온디바이스 수주 확정과 대형 해외 계약의 조기 인식이다. 회사는 해외 법인 구조조정과 CPS 발행으로 유동성을 확보하며 고정비 절감을 추진 중이나, IP 공급 타이밍의 불확실성이 높아 단기 실적 예측 가능성이 낮다는 점은 유념해야 한다. K-온디바이스 수주 공시·분기 매출 가시적 회복·고정비 80억원 이하 유지라는 이정표들이 순차적으로 확인될 경우 재무 개선 스토리의 신뢰성이 높아질 것이며, 반대로 지연이 반복된다면 추가 자본 확충 필요성이 커져 주당 지표에 추가적 부담이 될 수 있다.",
+   "en": "OpenEdge Technology is a globally unique provider of integrated NPU and total memory system semiconductor IP, underpinned by the structural growth themes of AI chips and autonomous driving. It has accumulated global Tier-1 references including Samsung Electronics, SK Hynix, Micron, Renesas, and Aisin, and holds a substantial domestic pipeline through the K-On-Device program and defense NPU IP nationalization discussions. However, four consecutive years of deepening operating losses, a sharp equity contraction to KRW 17.1bn at end-2025 (debt ratio 178.5%), and an all-time record quarterly operating loss in 2026Q1 at KRW 9.0bn collectively place the company at a financially critical threshold. The full-year breakeven scenario requires a significant revenue ramp from Q2 onward, with K-On-Device contract wins and early recognition of large overseas contracts serving as the key prerequisites. The company is addressing liquidity through overseas subsidiary restructuring and CPS issuance while targeting fixed-cost reduction, but high IP delivery timing uncertainty keeps near-term earnings predictability low. Confidence in the financial recovery story will build progressively only as each milestone is confirmed in sequence — K-On-Device contract announcements, sequential revenue recovery post-Q1, and sustained quarterly fixed costs below KRW 8bn; conversely, repeated delays would heighten the need for further dilutive capital raises, placing additional pressure on per-share metrics."
+  }
+ },
+ "sources": [
+  "https://file.myasset.com/sitemanager/upload/2026/0421/165616/20260421165616230_0_ko.pdf",
+  "https://comp.fnguide.com/SVO2/ASP/SVD_Main.asp?gicode=A394280",
+  "https://m.irgo.co.kr/IR-COMP/394280/%EC%98%A4%ED%94%88%EC%97%A3%EC%A7%80%ED%85%8C%ED%81%AC%EB%86%80%EB%A1%9C%EC%A7%80-IR-PAGE",
+  "https://comp.fnguide.com/SVO2/ASP/SVD_Invest.asp?gicode=A394280&MenuYn=Y",
+  "https://markets.hankyung.com/stock/394280",
+  "https://www.valueline.co.kr/finance/summary/394280",
+  "https://www.investing.com/equities/openedges-technologies-inc",
+  "https://zdnet.co.kr/view/?no=20230509153057",
+  "https://www.openedges.com/",
+  "https://www.businesspost.co.kr/BP?command=article_view&num=412598",
+  "https://www.epnc.co.kr/news/articleView.html?idxno=230467",
+  "https://www.etnews.com/20250820000095",
+  "https://www.thebell.co.kr/free/content/ArticleView.asp?key=202301111016384800108964&lcode=00",
+  "http://www.businessreport.kr/news/articleView.html?idxno=49154",
+  "https://news.nate.com/view/20250729n06770",
+  "https://ko.wikipedia.org/wiki/%EC%98%A4%ED%94%88%EC%97%A3%EC%A7%80%ED%85%8C%ED%81%AC%EB%86%80%EB%A1%9C%EC%A7%80",
+  "https://m.thinkpool.com/compDiscuss/cont/1016562",
+  "http://www.dailyinvest.kr/news/articleView.html?idxno=70398"
+ ],
+ "v": 2,
+ "model": "claude-sonnet-4-6",
+ "ticker": "394280",
+ "name": "오픈엣지테크놀로지",
+ "name_en": "Openedges Technology, Inc.",
+ "sector": "반도체",
+ "categories": [
+  "반도체",
+  "인공지능(AI)"
+ ],
+ "market": "코스닥",
+ "reportDate": "2026-06-18",
+ "reportTs": "2026-06-18 21:40",
+ "dataDate": "20260618",
+ "quant": {
+  "asOf": "2026-06-18",
+  "fs_basis": "연결(CFS) · DART 공시 확정치 · 지배주주 기준 순이익",
+  "annual": [
+   {
+    "year": 2025,
+    "rev": 16058809323,
+    "op": -28907297350,
+    "np": -30132691582,
+    "np_owner": -30132691582,
+    "equity": 17069337165,
+    "equity_owner": 17069337165,
+    "liab": 30476112940,
+    "cfo": -18637225167,
+    "eps_basic": -1208,
+    "opm": -180.0,
+    "roe": -176.5,
+    "debt_ratio": 178.5
+   },
+   {
+    "year": 2024,
+    "rev": 15328473450,
+    "op": -24612257562,
+    "np": -27287195585,
+    "np_owner": -27287195585,
+    "equity": 60717226016,
+    "equity_owner": 60717226016,
+    "liab": 25961007587,
+    "cfo": -10326049904,
+    "eps_basic": -1184,
+    "opm": -160.6,
+    "roe": -44.9,
+    "debt_ratio": 42.8
+   },
+   {
+    "year": 2023,
+    "rev": 19594562678,
+    "op": -15863858723,
+    "np": -14856026689,
+    "np_owner": -14856026689,
+    "equity": 20571164503,
+    "equity_owner": 20571164503,
+    "liab": 24120855174,
+    "cfo": -19888542644,
+    "eps_basic": -697,
+    "opm": -81.0,
+    "roe": -72.2,
+    "debt_ratio": 117.3
+   },
+   {
+    "year": 2022,
+    "rev": 10011687568,
+    "op": -25261358390,
+    "np": -25226550275,
+    "np_owner": -25226550275,
+    "equity": 32249347246,
+    "equity_owner": 32249347246,
+    "liab": 21605851110,
+    "cfo": -26690718325,
+    "eps_basic": -1376,
+    "opm": -252.3,
+    "roe": -78.2,
+    "debt_ratio": 67.0
+   }
+  ],
+  "quarterly": [
+   {
+    "q": "2025Q1",
+    "rev": 4801111702,
+    "op": -6609859665,
+    "np_owner": -6366667479
+   },
+   {
+    "q": "2025Q2",
+    "rev": 2597055028,
+    "op": -8758274146,
+    "np_owner": -8888533612
+   },
+   {
+    "q": "2025Q3",
+    "rev": 5256269701,
+    "op": -5974708939,
+    "np_owner": -5637377018
+   },
+   {
+    "q": "2025Q4",
+    "rev": 3404372892,
+    "op": -7564454600,
+    "np_owner": -9240113473
+   },
+   {
+    "q": "2026Q1",
+    "rev": 2673764184,
+    "op": -9017562312,
+    "np_owner": -9135007668
+   }
+  ],
+  "valuation": {
+   "price": 14800,
+   "mcap": 0.3899,
+   "shares": 26346530,
+   "total_shares": 25009285,
+   "wavg_shares": 25516781,
+   "per": null,
+   "eps": -1311,
+   "pbr": 39.15,
+   "bps": 378,
+   "roe_ttm": -107.7,
+   "ttm_window": "2025Q2~2026Q1",
+   "ttm_np_owner": -32901031771,
+   "pbr_krx": 20.79,
+   "bps_krx": 683.0,
+   "basis": "PER·EPS·PBR·BPS 모두 자체 산출(네이버·토스와 동일 방식) · 배당은 DART 공시 주당현금배당금(보완:KRX) ÷ 현재가",
+   "dps": 0.0,
+   "div": 0.0
+  }
+ }
+}

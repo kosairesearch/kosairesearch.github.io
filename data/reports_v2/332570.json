@@ -1,0 +1,356 @@
+{
+ "title": {
+  "ko": "RF 전력증폭기에서 전장·AI 서버로 전환 가속",
+  "en": "From RF Power Amplifiers to EV Electronics & AI Servers — Transformation Accelerating"
+ },
+ "lead": {
+  "ko": "삼성전자 5G 스마트폰 PAM 독점 공급이라는 탄탄한 기술 기반 위에 전기차 텔레매틱스·차량용 무선충전·AI 서버·반도체 장비로 사업 축을 급속 확장 중이나, 연이은 M&A 통합 비용이 단기 영업 수익성을 강하게 압박하는 전환기에 위치해 있다.",
+  "en": "Leveraging its position as Korea's sole domestic RF power amplifier module supplier to Samsung's 5G smartphones, PS Electronics is rapidly diversifying into EV telematics, vehicle wireless charging, AI servers, and semiconductor equipment — yet ongoing M&A integration costs continue to weigh heavily on near-term operating margins."
+ },
+ "keypoints": [
+  {
+   "ko": "국내 유일 글로벌 RF 전력증폭기 공급사: 도허티 방식 PAM 기술로 삼성전자 5G 스마트폰에 독점 납품, 스카이웍스·퀄컴·코보 등 글로벌 6개 경쟁사와 직접 대결",
+   "en": "Korea's only global RF PA module supplier: Exclusive PAM provider for Samsung 5G smartphones via proprietary Doherty-architecture technology, competing head-to-head with six global rivals including Skyworks, Qualcomm, and Qorvo"
+  },
+  {
+   "ko": "전기차 전장 수주 본격화: 북미 최대 전기차 업체 2026년형 미주 전 차종에 5G 텔레매틱스 RF FEM 납품 확정(연 300~400억 기대), 유럽 1위 완성차로부터 350억원 규모 무선충전 코일 수주·납품 개시",
+   "en": "EV electronics orders ramping: Confirmed RF FEM supply for all 2026 North American EV models (KRW 30–40bn annual revenue expected), plus a KRW 35bn wireless charging coil order from Europe's largest automaker now in delivery"
+  },
+  {
+   "ko": "AI 서버 사업 진입: SMCI 국내 공식 파트너 선정(2025.7), 1,029억원 고성능 서버 공급계약 체결(2026.4~8월 납기) — 2025년 연간 매출의 약 82% 규모의 단기 초대형 계약",
+   "en": "AI server market entry: Named SMCI's domestic business partner (July 2025); KRW 102.9bn high-performance server supply contract signed with April–August 2026 delivery window — equivalent to roughly 82% of FY2025 annual revenue"
+  },
+  {
+   "ko": "M&A 통합 비용의 수익성 압박: 영진하이텍 흡수합병(2025.1) 관련 인건비·무형자산상각비 증가로 2025년 영업이익률 3.1% 급락, Q4 2025(-11.8억) 및 Q1 2026(+0.6억) 2개 분기 연속 영업이익 사실상 제로",
+   "en": "M&A integration dragging margins: Yeong-jin Hi-Tech merger (Jan 2025) personnel costs and intangible amortization drove FY2025 OPM to 3.1%; operating income was near zero for two consecutive quarters — Q4 2025 (–KRW 1.2bn) and Q1 2026 (+KRW 0.06bn)"
+  },
+  {
+   "ko": "비영업 금융자산 손익이 순이익 왜곡: 당기손익공정가치측정금융자산 평가이익이 2025년·2026Q1 순이익을 영업손익과 큰 차이로 과대 반영, 이익의 질 해석에 별도 유의 필요",
+   "en": "Non-operating items distort net income: Fair-value gains on FVTPL financial assets inflated net profit well above operating profit in both FY2025 and Q1 2026, requiring careful distinction between core earnings and one-time gains"
+  }
+ ],
+ "business": {
+  "ko": "PS일렉트로닉스(구 와이팜, 2025년 5월 사명 변경)는 이동통신용 RF 프론트엔드 모듈(FEM) — 전력증폭기모듈(PAM), 스위치, 필터 — 을 개발·제조하는 국내 유일의 글로벌 RF 부품 공급 기업이다. 독자 개발한 도허티(Doherty) 방식 전력증폭기 설계 기술을 바탕으로 삼성전자 5G 스마트폰 PAM을 독점 공급하고 있으며, 글로벌 6개 경쟁사(스카이웍스·퀄컴·코보 등)와 경쟁한다. 2024년 기준 별도 RFFE 매출 내 모바일용이 93.56%, 차량용이 5.61%였으나, 2025년 1분기에는 차량용 비중이 23.49%까지 급격히 확대되는 믹스 변화가 진행 중이다. 연결 자회사는 피에스시스템(2017년 인수, KEPCO 계량기 통신모뎀 납품), PS오닉스(2024년 7월 인수, 구 싸니코전자, 차량용 MEMS 마이크·무선충전 코일 모듈·음향 부품), 영진하이텍(2025년 1월 312억원 흡수합병, IT기기·반도체 공정 자동화 장비)으로 구성된다. 영진하이텍은 반도체 테스트 핸들러 신사업 및 AI 탑재 로봇팔 개발도 병행하고 있으며, 베트남 1공장 증설을 통한 메모리 웨이퍼 핸들러 시장 진출을 준비 중이다. 2025년 7월 SMCI(슈퍼마이크로컴퓨터)의 국내 공식 비즈니스 파트너로 선정돼 AI 서버 유통·유지보수 사업에 진입했으며, 중장기적으로 OEM 역할 확대를 모색 중이다. 2018년부터 국내 완성차 H사에 RF 프론트엔드 모듈을 공급해 왔으며 추가 차종 확대를 협의하고 있다. 모바일→차량→AI 인프라로 이어지는 수직 확장 전략과 함께, 6G 정부 과제 최대 규모 사업에 선정되어 2028년 시장 개화를 위한 선행 기술 포지셔닝도 진행 중이다.",
+  "en": "PS Electronics (formerly Waifarm, renamed May 2025) is Korea's only domestic manufacturer with the capability to supply RF front-end modules (FEM) — power amplifier modules (PAM), switches, and filters — directly to global OEMs. Its proprietary Doherty-architecture PA design technology underpins an exclusive PAM supply relationship with Samsung Electronics for 5G smartphones, with the company competing against six global rivals including Skyworks, Qualcomm, and Qorvo. Within the standalone RF business, mobile applications accounted for approximately 93.6% and automotive 5.6% of RFFE revenue in 2024, though the vehicle share expanded rapidly to around 23.5% by Q1 2025, signaling a meaningful product mix shift. The consolidated group comprises three key subsidiaries: PS System (acquired 2017, KEPCO meter communication modem supplier), PS Onix (acquired July 2024, formerly Ssanico Electronics, automotive MEMS microphones and wireless charging coil modules), and Yeong-jin Hi-Tech (absorbed for KRW 31.2bn in January 2025, IT device and semiconductor process automation equipment). Yeong-jin Hi-Tech is also developing semiconductor test handlers, AI-integrated robotic arms, and is preparing Vietnam factory expansion to enter the memory wafer handler segment. In July 2025, the company was appointed SMCI's official domestic business partner, entering the AI server distribution and maintenance market with a longer-term aim to expand into OEM manufacturing. It has supplied RF front-end modules to domestic automaker 'H' since 2018 and is pursuing additional vehicle model expansions. The overarching strategy follows a vertical path — mobile to automotive to AI infrastructure — while selection for Korea's largest 6G government research program positions the company to capture early gains when the 6G market opens around 2028."
+ },
+ "earnings": {
+  "ko": "2022~2025년 4개년 실적은 외형 성장과 M&A 통합 비용이 교차하는 복잡한 궤적을 보인다. 매출은 2022년 514억원에서 2023년 682억원, 2024년 1,221억원(PS오닉스 편입 효과 포함), 2025년 1,255억원으로 꾸준히 확대됐다. 반면 영업이익률은 2023년 9.4%를 정점으로 2024년 8.8%, 2025년 3.1%로 급격히 하락했는데, 회사는 영진하이텍 인수합병에 따른 인건비성 비용·무형자산상각비·지급수수료 증가를 주원인으로 DART 공시를 통해 밝혔다. 분기 흐름을 보면 Q4 2025 영업이익이 -11.8억원으로 적자 전환했고, Q1 2026에도 영업이익 0.6억원에 그쳐 2개 분기 연속 영업손익이 사실상 제로 수준이다. 순이익 흐름은 영업손익과 뚜렷하게 분리된다. 2025년 지배주주 귀속 순이익은 163.9억원으로 2024년 -78.3억원 적자에서 흑자 전환했는데, 회사는 당기손익공정가치측정금융자산 평가이익 증가가 주요 원인이라고 설명했다. Q1 2026에서도 영업이익 0.6억원에 불과하나 지배주주 순이익은 153.5억원에 달해 금융자산 평가손익의 영향이 지속되고 있다. 영업현금흐름은 2025년 230억원, 2024년 263억원으로 안정적이어서 현금 창출력 자체는 양호하며, 부채비율도 2022년 91.4%에서 2025년 73.9%로 지속 개선됐다.",
+  "en": "The 2022–2025 earnings trajectory reflects a complex interplay of revenue growth and M&A-driven integration costs. Revenue expanded from KRW 51.4bn in 2022 to KRW 68.1bn in 2023, KRW 122.1bn in 2024 (incorporating PS Onix consolidation), and KRW 125.5bn in 2025. Operating profit margins, however, peaked at 9.4% in 2023 and deteriorated sharply to 8.8% in 2024 and 3.1% in 2025; the company cited higher personnel expenses, intangible asset amortization, and fees from the Yeong-jin Hi-Tech merger as the primary drivers in its DART filing. At the quarterly level, Q4 2025 swung to an operating loss of KRW 1.2bn, and Q1 2026 generated near-zero operating income of KRW 56mn — two consecutive quarters of effectively zero operating profitability. Net profit trends diverge sharply from operating performance. FY2025 net profit attributable to controlling shareholders recovered to KRW 16.4bn from a KRW 7.8bn loss in 2024, with the company attributing the improvement to fair-value gains on FVTPL financial assets. The same pattern repeated in Q1 2026, where KRW 0.06bn in operating income co-existed with KRW 15.4bn in attributable net profit. Operating cash flow remained solid at KRW 23.0bn in 2025 and KRW 26.3bn in 2024, and the debt ratio improved steadily from 91.4% in 2022 to 73.9% in 2025."
+ },
+ "industry": {
+  "ko": "RF FEM 시장은 5G 스마트폰 보급 확대와 커넥티드카 전환이라는 두 가지 성장 동력이 공존한다. 글로벌 스마트폰 출하량은 성숙기에 접어들어 볼륨 성장이 제한적이나, 5G 침투율 확대와 기기당 RF 부품 복잡도 증가로 ASP 상승 효과가 일부 이를 상쇄한다. 차량용 RF FEM은 텔레매틱스가 LTE에서 5G로 전환되면서 성장 속도가 빠르며, 회사의 2025년 1분기 차량용 별도 매출이 전년 동기 대비 104% 증가한 것이 이 흐름을 방증한다. AI 데이터센터 투자 확대에 따라 GPU 기반 고성능 서버 수요가 급증하고 있으며, SMCI 같은 AI 서버 ODM이 엔비디아 H100·H200 수요를 흡수하는 핵심 인프라 플레이어로 부상했다. 모바일 RF 부품 시장은 스카이웍스·퀄컴·코보·무라타·브로드컴 등 글로벌 대기업이 과점하고 있어, PS일렉트로닉스는 틈새 고효율 기술력을 통해 삼성전자 공급망 내 입지를 유지하고 있다. 6G 상용화(2028~2030년 예상)를 앞두고 정부 R&D 과제가 본격화되고 있으며, 회사는 국내 최대 규모 6G 정부 과제에 선정되어 선행 기술 포지션을 확보했다. 스마트팩토리 자동화 장비 시장은 반도체·전자 제조업체의 생산 효율화 수요 증가로 중장기 성장이 기대되며 영진하이텍 편입이 이 시장 진입 교두보를 마련했다.",
+  "en": "The RF FEM market is driven by two concurrent growth forces: expanding 5G smartphone adoption and the transition of connected vehicles from LTE to 5G telematics. Global smartphone shipment growth has slowed as the market matures, but rising 5G penetration rates and increasing RF content complexity per device provide partial ASP uplift. Automotive RF FEM is growing faster, as 5G telematics displaces LTE — a trend reflected in the company's standalone vehicle RFFE revenue growing approximately 104% year-over-year in Q1 2025. The boom in AI data center capital spending is driving surging demand for GPU-based high-performance servers, with ODMs such as SMCI emerging as critical AI infrastructure suppliers through their NVIDIA H100/H200-optimized platforms. The global mobile RF component market is dominated by large players — Skyworks, Qualcomm, Qorvo, Murata, and Broadcom — meaning PS Electronics must maintain its position within Samsung's supply chain through specialized high-efficiency technology differentiation. With 6G commercialization targeted around 2028–2030, government-funded R&D programs are accelerating, and the company has secured a leading role in one of Korea's largest 6G research initiatives. The smart factory automation equipment segment is also expected to benefit from growing demand for production efficiency among semiconductor and electronics manufacturers, a market PS Electronics entered more substantively through the Yeong-jin Hi-Tech merger."
+ },
+ "outlook": {
+  "ko": "2026년 하반기는 복수의 신규 매출원이 동시에 실적에 반영되는 구체적인 전환점이다. 북미 최대 전기차 업체향 5G 텔레매틱스 RF FEM은 퀄컴·스카이웍스 등과의 입찰 경쟁에서 최종 선정된 사안으로, 2026년 미주 모델 전 차종에 탑재되며 연간 300~400억원 규모의 신규 매출 기여가 기대된다. PS오닉스는 유럽 1위 완성차 기업으로부터 350억원 규모의 마그넷 타입 무선충전 코일 모듈을 수주해 2026년 1분기부터 납품 중이며, 회사는 이번 물량이 해당 기업 연간 차량 생산량의 약 25%에 해당한다고 밝혀 잔여 물량 추가 수주 가능성도 열려 있다. AI 서버 사업에서는 4월 30일 체결된 1,029억원 규모 고성능 서버 공급계약이 8월 14일까지 납기로 2~3분기 매출에 집중 반영될 전망이다. 이 계약 수행을 위해 220억원 교환사채를 발행해 운영자금을 확보했으며, 신주 발행 구조가 아닌 보유 타법인 주식을 교환 대상으로 한 방식이어서 주식 희석 우려는 제한적이다. 영진하이텍은 반도체 테스트 핸들러 초도 수주를 완료하고 베트남 공장 증설을 통한 메모리 웨이퍼 핸들러 시장 진출을 준비 중이다. 국내 최대 규모 6G 정부 과제 선정으로 2028년 시장 개화 시 선점 효과를 극대화하는 장기 포지셔닝도 진행 중이다.",
+  "en": "The second half of 2026 represents a concrete inflection point at which multiple new revenue streams are expected to converge in consolidated results. The confirmed RF FEM supply for all 2026 North American models of the largest US EV maker — secured through competitive bidding against Qualcomm, Skyworks, and others — is projected to add KRW 30–40bn in annual revenue. PS Onix began delivering a KRW 35bn order for magnet-type wireless charging coil modules to Europe's largest automaker in Q1 2026; the company has disclosed this represents approximately 25% of the customer's annual vehicle production, suggesting further volume expansion potential. On the AI server front, the KRW 102.9bn high-performance server supply contract executed on April 30, 2026 is scheduled for delivery by August 14, with revenue expected to concentrate in Q2 and Q3 2026. To fund this contract, the company raised KRW 22bn through exchangeable bonds backed by its holdings in listed securities — not new shares — limiting dilution concerns. Yeong-jin Hi-Tech has completed an initial semiconductor test handler order and is preparing factory expansion in Vietnam to enter the memory wafer handler market. The company's selection for Korea's largest 6G government research program is building the long-term technical foundation to capture early benefits when the 6G market materializes around 2028."
+ },
+ "valuation_comment": {
+  "ko": "최근 4개 분기(2025Q2~2026Q1) 합산 지배주주 귀속 순이익 기준으로 산출된 주당순이익(EPS)은 649원이나, 이 수치에는 당기손익공정가치측정금융자산 평가이익 등 비영업 항목이 상당 부분 포함돼 있어 핵심 영업 수익력과 직접 대응하기 어렵다. 주당순자산(BPS) 3,124원 대비 현재 주가는 상당한 프리미엄 구간에 위치하며, 이는 신사업 성장 기대치가 주가에 선행 반영되어 있음을 시사한다. 최근 Q4 2025·Q1 2026 두 분기 연속 영업이익이 사실상 제로 수준에 그친 점을 고려하면, 표면적인 이익 배수만으로 영업 가치를 평가하기 어려운 국면이다. 배당은 현재 미지급 상태(DPS 0원)이며 직접적인 현금 수익은 없으나, 회사는 2025년 7월 자기주식 976,562주 소각, 2026년 3월 30억원 자사주 취득신탁 체결 후 소각 결정 등 간접적 주주환원 의지를 지속적으로 표명하고 있다.",
+  "en": "The most recent four-quarter cumulative earnings per share (EPS) stands at KRW 649, but this figure incorporates material non-operating items — notably fair-value gains on FVTPL securities — making it difficult to use as a direct proxy for core operating earning power. Against book value per share (BPS of KRW 3,124), the current share price trades at a substantial premium, implying that growth expectations from new businesses are already embedded in the valuation. Given that operating income was essentially at zero for two consecutive quarters (Q4 2025 and Q1 2026), headline earnings multiples may overstate the health of the core business at this juncture. The company currently pays no cash dividend (DPS zero); however, management has demonstrated a consistent commitment to indirect shareholder returns through a series of share buybacks and cancellations — including cancellation of 976,562 treasury shares in July 2025 and completion of a KRW 3bn buyback trust in March 2026 with subsequent planned cancellation."
+ },
+ "bull": [
+  {
+   "title": {
+    "ko": "전기차·커넥티드카향 RF FEM 수주 본격 매출화",
+    "en": "EV and Connected Car RF FEM Orders Converting to Revenue"
+   },
+   "body": {
+    "ko": "북미 최대 전기차 업체의 2026년형 미주 전 차종에 5G 텔레매틱스 RF FEM 공급이 확정됐으며, 연간 300~400억원 신규 매출이 기대된다. 입찰 경쟁에서 퀄컴·스카이웍스를 제치고 선정됐다는 점은 기술·가격 경쟁력을 동시에 검증한 사례다. PS오닉스를 통해 유럽 1위 완성차로부터 350억원 무선충전 모듈을 수주해 2026년 1분기부터 납품 중이며 추가 수주 협상도 진행 중이다. 차량용 별도 매출이 전년 동기 대비 104% 성장한 것은 전장 사업이 실질적 성장 단계에 진입했음을 방증한다.",
+    "en": "RF FEM supply has been confirmed for all 2026 North American models of the largest US EV maker, with KRW 30–40bn in annual revenue expected. Winning the competitive bid over Qualcomm and Skyworks simultaneously validates the company's technological and pricing competitiveness. Through PS Onix, a KRW 35bn wireless charging coil order from Europe's largest automaker is now in delivery, with follow-on negotiations underway. The reported 104% year-over-year growth in standalone vehicle RFFE revenue demonstrates that the automotive segment has entered a genuine growth phase."
+   }
+  },
+  {
+   "title": {
+    "ko": "1,029억원 AI 서버 계약과 SMCI 파트너십 기반 신성장",
+    "en": "KRW 102.9bn AI Server Contract and SMCI Partnership as New Growth Engine"
+   },
+   "body": {
+    "ko": "2026년 4월 30일 체결된 1,029억원 규모 고성능 서버 공급계약은 2025년 연간 매출의 약 82%에 달하는 초대형 단기 계약으로, 8월 납기 완료 시 2~3분기 매출을 크게 끌어올릴 것이다. SMCI는 엔비디아 H100·H200 GPU 최적화 서버 플랫폼을 경쟁사 대비 약 6개월 빠르게 공급하는 AI 인프라 핵심 기업으로, 국내 최대 벤더 지위 확보는 후속 계약 가능성을 높인다. 초기 유통·유지보수 중심에서 중장기 OEM 제조로 전환하는 전략이 성공하면 마진 구조가 개선된다. AI 데이터센터 투자 사이클이 지속되는 한 추가 계약 가능성이 열려 있다.",
+    "en": "The KRW 102.9bn high-performance server supply contract executed in late April 2026 — equivalent to approximately 82% of FY2025 annual revenue — has the potential to significantly lift Q2 and Q3 2026 revenues if delivered on schedule by August. SMCI, capable of bringing NVIDIA H100/H200 GPU-optimized server platforms to market roughly six months ahead of competitors, is a key AI infrastructure partner; holding the top domestic vendor position improves the odds of follow-on contracts. The strategy to transition from initial distribution and maintenance toward longer-term OEM manufacturing offers a margin improvement pathway. Additional contract opportunities remain open as long as the AI data center investment cycle continues."
+   }
+  },
+  {
+   "title": {
+    "ko": "도허티 PA 기술 독점성과 6G 선행 기술 포지셔닝",
+    "en": "Doherty PA Technical Moat and Early 6G Positioning"
+   },
+   "body": {
+    "ko": "고효율·고선형성을 동시에 달성하는 도허티 방식 PA 설계 기술은 글로벌 경쟁사들도 구현에 어려움을 겪은 독보적 역량으로, 삼성전자와의 독점 공급 관계를 뒷받침한다. 국내 업체 중 유일하게 전력증폭기를 포함한 RF 관련 부품을 글로벌 기업에 직접 공급할 수 있는 위상을 유지하고 있다. 6G 정부 과제 최대 규모 사업 선정으로 2028년 시장 개화 시 기술 선점 효과를 기대할 수 있으며, 본업인 모바일 RF 사업의 2028년 이후 6G 업그레이드 수요도 새로운 성장 촉매가 될 수 있다.",
+    "en": "The Doherty-architecture PA design — which simultaneously achieves high efficiency and high linearity in ways global rivals have found difficult to replicate — is a genuine technical moat underpinning the exclusive Samsung supply relationship. The company retains its status as the only domestic Korean firm capable of supplying PA-integrated RF modules directly to global OEMs. Selection for Korea's largest 6G government R&D program positions the company to capture early competitive benefits when that market opens around 2028, and the anticipated 6G technology upgrade cycle from 2028 onward could serve as a further catalyst for the core mobile RF business."
+   }
+  }
+ ],
+ "bear": [
+  {
+   "title": {
+    "ko": "영업수익성 급락 및 2개 분기 연속 영업이익 제로",
+    "en": "Sharp Margin Decline — Near-Zero Operating Profit for Two Consecutive Quarters"
+   },
+   "body": {
+    "ko": "영업이익률이 2023년 9.4%에서 2025년 3.1%로 빠르게 하락했고, Q4 2025는 영업손실(-11.8억원), Q1 2026은 영업이익 0.6억원으로 사실상 영업 수익이 없는 구간이 이어지고 있다. 영진하이텍 합병 관련 인건비·무형자산상각비는 통합 완료까지 중단기 지속될 수 있어 영업 레버리지 회복 시점이 불분명하다. 본업인 모바일 RF FEM은 스마트폰 시장 성숙화로 볼륨 성장에 한계가 있으며, 차량·AI 서버 신사업 초기 비용이 동시에 발생하는 구간이다. 고성장 전략을 실행하는 비용이 현재 수익성을 잠식하고 있다.",
+    "en": "Operating margin fell from 9.4% in 2023 to 3.1% in 2025, and the two most recent quarters (Q4 2025 and Q1 2026) delivered essentially zero operating income. Personnel costs and intangible asset amortization arising from the Yeong-jin Hi-Tech merger may persist for several quarters, leaving the timeline for margin recovery uncertain. The core mobile RF FEM business faces structural volume headwinds from a maturing smartphone market, while initial costs for automotive and AI server new businesses are also being absorbed simultaneously. The execution costs of the growth strategy are currently eroding operating profitability."
+   }
+  },
+  {
+   "title": {
+    "ko": "AI 서버 사업 마진 불확실성과 신사업 실행 리스크",
+    "en": "AI Server Margin Uncertainty and New Business Execution Risk"
+   },
+   "body": {
+    "ko": "1,029억원 AI 서버 계약은 초기 유통·공급 중심이어서 마진율이 낮을 것으로 예상되며, 현재의 영업이익 구조 대비 과도한 기대가 형성될 위험이 있다. 차량용 RF FEM·무선충전·반도체 핸들러·로봇팔·AI 서버 등 다수 신사업이 동시에 진행되어 경영 자원이 분산될 수 있다. 전기차 고객사의 생산 계획 변동은 RF FEM 주문 시기를 지연시킬 수 있으며, 반도체 산업 특성상 3개월 이상 소요되는 공정으로 실적 반영 시점 리스크가 상존한다. 대규모 수주 이후 후속 계약 여부는 여전히 불확실하다.",
+    "en": "The KRW 102.9bn AI server contract is primarily distribution-focused in its initial phase, likely carrying thin margins, raising the risk that financial results may disappoint relative to elevated expectations. The simultaneous pursuit of multiple new business lines — EV RF FEM, wireless charging, semiconductor handlers, robotic arms, and AI servers — risks dispersing management attention and capital allocation. Customer production plan changes at the EV customer could delay RF FEM orders, and semiconductor product lead times exceeding three months add execution timing uncertainty. The sustainability of large-scale contracts after the initial delivery period also remains uncertain."
+   }
+  },
+  {
+   "title": {
+    "ko": "비영업 금융자산 손익에 의존하는 순이익 구조의 취약성",
+    "en": "Fragility of Net Income Structure Reliant on Non-Operating Financial Asset Gains"
+   },
+   "body": {
+    "ko": "2025년 순이익 163.9억원과 Q1 2026 순이익 153.5억원 모두 금융자산 평가이익이 핵심 기여 요인으로, 이는 시장 가격 연동 비반복 항목이다. 보유 상장사 주식(두산테스나·하나마이크론·코리아써키트 등)의 가격이 하락하거나 평가이익이 소멸될 경우 순이익이 크게 감소할 수 있다. 교환사채 발행을 위해 이 주식들을 담보로 활용하는 구조여서, 보유 금융자산의 가치 변동이 자금 조달과 손익 모두에 영향을 준다. 영업 수익성과 순이익 간의 큰 괴리는 기업 가치 평가를 어렵게 만드는 구조적 요인이다.",
+    "en": "Both FY2025 net income of KRW 16.4bn and Q1 2026 net income of KRW 15.4bn were primarily driven by fair-value gains on FVTPL financial assets — non-recurring items tied to market prices. If the valuations of equity holdings (Doosan Tesna, Hana Micron, Korea Circuit, etc.) reverse or revaluation gains dissipate, reported net income could contract sharply. As these holdings are simultaneously pledged for exchangeable bond issuance, changes in their market value affect both financing capacity and the income statement. The persistent and large gap between operating income and reported net profit creates a structural complexity that complicates fundamental valuation."
+   }
+  }
+ ],
+ "risks": [
+  {
+   "cat": {
+    "ko": "단일 핵심 고객 집중 위험",
+    "en": "Single Key-Customer Concentration Risk"
+   },
+   "body": {
+    "ko": "모바일 RF FEM 사업의 핵심 매출이 삼성전자 5G 스마트폰 라인업에 집중돼 있어, 삼성전자의 구매 정책 변경·벤더 다변화·RF 부품 내재화 가능성이 회사 실적에 직접 영향을 미친다. 글로벌 5G 스마트폰 시장이 성숙기에 접어들면서 볼륨 성장이 제한되고, 교체 주기가 예상보다 늦어질 경우 타격이 크다. 전기차·AI 서버 사업이 본궤도에 오르기 전까지는 모바일 RF 의존 구조가 지속된다.",
+    "en": "A substantial portion of mobile RF FEM revenue is concentrated in Samsung Electronics' 5G smartphone lineup, meaning any change in Samsung's procurement policy, vendor diversification, or potential in-house RF development could directly impact results. With the global 5G smartphone market entering maturity, volume growth is constrained, and a prolonged replacement cycle would amplify this concentration risk. Until the EV and AI server businesses reach sufficient scale, dependence on the core mobile RF relationship will persist."
+   }
+  },
+  {
+   "cat": {
+    "ko": "M&A 통합 실패 및 복수 신사업 동시 추진 리스크",
+    "en": "M&A Integration Failure and Parallel Multi-Business Launch Risk"
+   },
+   "body": {
+    "ko": "2024~2025년 단기간에 PS오닉스 인수(2024.7)·영진하이텍 흡수합병(2025.1)을 연속 진행한 만큼, 조직·문화·시스템 통합이 불완전할 경우 추가 비용과 수익성 압박이 장기화될 수 있다. 차량용 RF FEM, 무선충전 코일, 반도체 테스트 핸들러, AI 탑재 로봇팔, AI 서버 유통 등 복수 신사업이 동시에 초기 단계에 있어 자원 분산과 실행 품질 저하 위험이 있다. 신사업별 고객사 본계약 체결·양산 일정은 외부 변수에 민감하여 실적 가시성이 낮다.",
+    "en": "Completing two back-to-back acquisitions (PS Onix in July 2024 and Yeong-jin Hi-Tech in January 2025) within a short timeframe means incomplete organizational and system integration could extend the cost burden and suppress profitability for longer than anticipated. Multiple new businesses — vehicle RF FEM, wireless charging coils, semiconductor test handlers, AI robotic arms, and AI server distribution — are simultaneously in early-stage development, creating resource-dispersion and execution quality risks. Customer contract finalization and mass-production timelines for each new business are sensitive to external variables, limiting near-term earnings visibility."
+   }
+  },
+  {
+   "cat": {
+    "ko": "글로벌 무역 정책·환율·공급망 리스크",
+    "en": "Global Trade Policy, FX, and Supply Chain Risk"
+   },
+   "body": {
+    "ko": "RF 부품은 반도체 기반 제품으로 웨이퍼 제조·패키징 공정에 3개월 이상 소요되어 수요 변동에 즉각 대응이 어렵다. 미국 관세 정책 및 전기차 IRA 보조금 규정 변화는 북미 전기차 고객사의 생산 계획에 영향을 주어 RF FEM 주문량을 변동시킬 수 있다. 달러 표시 수출 비중이 높은 모바일·차량용 RF 사업은 환율 변동에 따른 매출·원가 구조 변화에 노출돼 있다.",
+    "en": "RF components are semiconductor-based products with wafer fabrication and packaging cycles exceeding three months, limiting the ability to respond quickly to demand changes. Shifts in US tariff policy and EV-related subsidy rules (such as IRA provisions) could affect North American EV customers' production schedules and, by extension, RF FEM order volumes. With a significant proportion of mobile and vehicle RF revenues denominated in US dollars, the company's revenue and cost structure are exposed to currency fluctuations."
+   }
+  }
+ ],
+ "checkpoints": [
+  {
+   "when": {
+    "ko": "2026년 8월 14일 전후",
+    "en": "Around August 14, 2026"
+   },
+   "what": {
+    "ko": "1,029억원 고성능 서버 공급계약 납기 완료 여부 및 실제 매출·이익 기여 규모: 2분기~3분기 연결 실적을 크게 결정할 변수로, 계약 이행 속도와 실현 마진율이 핵심 확인 포인트다.",
+    "en": "Delivery completion of the KRW 102.9bn AI server supply contract and the magnitude of revenue and profit recognized: This is the single most important variable for Q2–Q3 consolidated results; both execution pace and margin realization are key metrics to monitor."
+   }
+  },
+  {
+   "when": {
+    "ko": "2026년 7~8월(2분기 실적 발표)",
+    "en": "July–August 2026 (Q2 Results Disclosure)"
+   },
+   "what": {
+    "ko": "영업이익의 2개 분기 연속 제로 국면 탈출 여부와 북미 전기차향 RF FEM 양산 실적의 첫 반영 확인: 영업이익률 반등이 시작되는지 여부가 수익성 회복 경로 판단의 첫 번째 시금석이 된다.",
+    "en": "Whether operating income breaks out of its two-quarter near-zero run, and first confirmation of North American EV RF FEM mass-production revenue: A return to positive operating margins would be the first concrete signal of a profitability recovery path."
+   }
+  },
+  {
+   "when": {
+    "ko": "2026년 하반기 상시",
+    "en": "Throughout H2 2026"
+   },
+   "what": {
+    "ko": "북미 전기차향 5G 텔레매틱스 RF FEM 실주문·납품량이 기대치(연 300~400억원)에 부합하는지 분기 매출 믹스 변화를 통해 파악: 차량용 비중 확대 속도가 전장 사업 전환의 실질적 진척도를 반영한다.",
+    "en": "Whether actual order and delivery volumes for North American EV 5G telematics RF FEM match the expected KRW 30–40bn annual level, as reflected in quarterly revenue mix shifts: The speed at which the vehicle segment grows as a share of total revenue is the clearest indicator of tangible progress in the EV electronics transformation."
+   }
+  },
+  {
+   "when": {
+    "ko": "2026년 11월(3분기 실적 발표)",
+    "en": "November 2026 (Q3 Results Disclosure)"
+   },
+   "what": {
+    "ko": "영진하이텍·PS오닉스 통합 시너지 가시화 여부와 전사 영업이익률 반등 확인: M&A 통합 비용이 점차 소멸되면서 수익성이 정상화되는지를 판단할 수 있는 중요한 기점이다.",
+    "en": "Visibility into Yeong-jin Hi-Tech and PS Onix integration synergies and confirmation of a recovery in group-level operating margins: As merger integration costs dissipate, Q3 2026 results will be an important inflection point to assess whether profitability is normalizing."
+   }
+  },
+  {
+   "when": {
+    "ko": "2026년 하반기~2027년 상반기",
+    "en": "H2 2026 – H1 2027"
+   },
+   "what": {
+    "ko": "유럽 1위 완성차 무선충전 코일 후속 수주 공시 여부: 이번 계약은 해당 기업 연간 생산량의 약 25%이며, 잔여 75%에 대한 추가 수주 협상 결과가 IR 또는 공시를 통해 확인될 경우 전장 사업 성장 모멘텀을 재평가하게 된다.",
+    "en": "Disclosure of follow-on wireless charging coil orders from the European automaker: The initial order covers roughly 25% of the customer's annual vehicle production volume; any confirmed order for the remaining 75% would be a material positive signal warranting reassessment of the automotive electronics growth trajectory."
+   }
+  }
+ ],
+ "verdict": {
+  "body": {
+   "ko": "PS일렉트로닉스는 국내 유일 글로벌 RF 전력증폭기 공급사라는 독보적 기술 기반 위에 전기차 전장·AI 서버·반도체 장비라는 세 가지 신성장 축을 동시에 구축하는 전환 가속기에 있다. 2026년은 북미 전기차향 RF FEM 양산, 유럽 완성차 무선충전 납품, 1,029억원 AI 서버 계약 이행이 모두 실적에 반영될 수 있는 '검증의 해'로서, 전략의 실질 성과를 처음으로 확인할 수 있는 해가 될 전망이다. 그러나 Q4 2025~Q1 2026 두 분기 연속 영업이익 제로 수준이 시사하듯, M&A 통합 비용과 신사업 초기 투자 부담이 단기 영업 수익성을 강하게 압박하고 있으며 이 압박의 소멸 시점이 핵심 불확실성이다. 대규모 순이익에 기여하는 금융자산 평가이익은 반복 가능한 영업이익이 아니므로, 핵심 영업 수익력 기준의 별도 분석이 필요하다. AI 서버 계약 마진율·전기차 수주 실체화 속도·M&A 통합 비용 소멸 여부를 분기별로 점검하면서 전략 전환의 실적 가시화를 확인하는 것이 중요하다. 본 리포트는 정보 제공 목적으로 작성된 것으로, 특정 투자·매수·매도를 권유하지 않는다.",
+   "en": "PS Electronics is at a genuine strategic inflection, leveraging its unique position as Korea's only global RF power amplifier module supplier to simultaneously build three new growth pillars — EV electronics, AI servers, and semiconductor equipment. The year 2026 stands as the first meaningful verification period for this transformation strategy, with North American EV RF FEM mass production, European automaker wireless charging deliveries, and the KRW 102.9bn AI server contract all expected to feed into consolidated results. However, as evidenced by near-zero operating income for two consecutive quarters, M&A integration costs and early-stage new business expenditures are significantly suppressing near-term operating profitability, and the timeline for relief is the central uncertainty. The large net income figures are heavily influenced by non-recurring financial asset revaluation gains rather than operating earnings, requiring separate analysis focused on core business performance. Investors should monitor quarterly operating margin recovery, actual margin realization on the AI server contract, and the pace of EV customer order conversion as the key metrics to track whether the strategic transformation is delivering tangible, sustainable financial results. This report is prepared for informational purposes only and does not constitute a recommendation to buy, sell, or hold any securities."
+  }
+ },
+ "sources": [
+  "https://comp.fnguide.com/SVO2/ASP/SVD_Main.asp?gicode=A332570",
+  "https://m.thinkpool.com/compDiscuss/cont/1021314",
+  "https://www.butler.works/ko/companies/01015160",
+  "https://marketin.edaily.co.kr/News/ReadE?newsId=04811766645349208",
+  "https://news.nate.com/view/20260210n37204",
+  "https://m.thinkpool.com/stockDiscuss/332570/cont/11810791",
+  "https://alphasquare.co.kr/home/stock-summary?code=332570",
+  "https://comp.fnguide.com/SVO2/asp/SVD_Invest.asp?pGB=1&cID=&MenuYn=Y&ReportGB=D&NewMenuID=105&stkGb=701&gicode=A332570",
+  "https://m.finance.daum.net/quotes/A332570/news/disclosure/20260324034914",
+  "https://www.pselectronics.co.kr/",
+  "https://m.thinkpool.com/item/332570",
+  "https://stockplus.com/m/stocks/KOREA-A332570",
+  "https://m.irgo.co.kr/IR-COMP/332570/%ED%94%BC%EC%97%90%EC%8A%A4%EC%9D%BC%EB%A0%89%ED%8A%B8%EB%A1%9C%EB%8B%89%EC%8A%A4-IR-PAGE",
+  "http://www.dailyinvest.kr/news/articleView.html?idxno=68069",
+  "https://www.nicebizinfo.com/ep/EP0100M002GE.nice?kiscode=492006",
+  "https://www.pselectronics.co.kr/company/history",
+  "https://stockhandbook.blog/2025/08/25/ps%EC%9D%BC%EB%A0%89%ED%8A%B8%EB%A1%9C%EB%8B%89%EC%8A%A4/",
+  "https://news.dealsitetv.com/articles/157660"
+ ],
+ "v": 2,
+ "model": "claude-sonnet-4-6",
+ "ticker": "332570",
+ "name": "PS일렉트로닉스",
+ "name_en": "Pentastone Electronics, Inc.",
+ "sector": "전자·부품",
+ "categories": [
+  "전자·부품"
+ ],
+ "market": "코스닥",
+ "reportDate": "2026-06-18",
+ "reportTs": "2026-06-18 21:40",
+ "dataDate": "20260618",
+ "quant": {
+  "asOf": "2026-06-18",
+  "fs_basis": "연결(CFS) · DART 공시 확정치 · 지배주주 기준 순이익",
+  "annual": [
+   {
+    "year": 2025,
+    "rev": 125476577087,
+    "op": 3908628660,
+    "np": 16391787281,
+    "np_owner": 16391787281,
+    "equity": 133326752449,
+    "equity_owner": 130375990176,
+    "liab": 98557893184,
+    "cfo": 23044997551,
+    "eps_basic": 394,
+    "opm": 3.1,
+    "roe": 12.6,
+    "debt_ratio": 73.9
+   },
+   {
+    "year": 2024,
+    "rev": 122129660010,
+    "op": 10771020985,
+    "np": -7717133288,
+    "np_owner": -7833852738,
+    "equity": 90075397803,
+    "equity_owner": 86193779285,
+    "liab": 74524973499,
+    "cfo": 26277378044,
+    "eps_basic": -192,
+    "opm": 8.8,
+    "roe": -9.1,
+    "debt_ratio": 82.7
+   },
+   {
+    "year": 2023,
+    "rev": 68149317459,
+    "op": 6424251685,
+    "np": 19457636930,
+    "np_owner": 19292837945,
+    "equity": 83023014539,
+    "equity_owner": 82826722319,
+    "liab": 59805172910,
+    "cfo": 6000061323,
+    "eps_basic": 529,
+    "opm": 9.4,
+    "roe": 23.3,
+    "debt_ratio": 72.0
+   },
+   {
+    "year": 2022,
+    "rev": 51388503167,
+    "op": 4325015868,
+    "np": -10389635536,
+    "np_owner": -10107362920,
+    "equity": 61977750855,
+    "equity_owner": 61965307808,
+    "liab": 56653911695,
+    "cfo": 22526000148,
+    "eps_basic": -285,
+    "opm": 8.4,
+    "roe": -16.3,
+    "debt_ratio": 91.4
+   }
+  ],
+  "quarterly": [
+   {
+    "q": "2025Q1",
+    "rev": 36012381565,
+    "op": 1947516776,
+    "np_owner": 3035730666
+   },
+   {
+    "q": "2025Q2",
+    "rev": 33953647571,
+    "op": 1688950601,
+    "np_owner": -1112462966
+   },
+   {
+    "q": "2025Q3",
+    "rev": 26872462510,
+    "op": 1455737032,
+    "np_owner": 10162425341
+   },
+   {
+    "q": "2025Q4",
+    "rev": 28638085441,
+    "op": -1183575749,
+    "np_owner": 4306094240
+   },
+   {
+    "q": "2026Q1",
+    "rev": 35658729216,
+    "op": 56460345,
+    "np_owner": 15354227492
+   }
+  ],
+  "valuation": {
+   "price": 7370,
+   "mcap": 0.3443,
+   "shares": 46711563,
+   "total_shares": 46711563,
+   "wavg_shares": 46247673,
+   "per": 11.4,
+   "eps": 649,
+   "pbr": 2.36,
+   "bps": 3124,
+   "roe_ttm": 22.3,
+   "ttm_window": "2025Q2~2026Q1",
+   "ttm_np_owner": 28710284107,
+   "pbr_krx": 2.6,
+   "bps_krx": 2734.0,
+   "basis": "PER·EPS·PBR·BPS 모두 자체 산출(네이버·토스와 동일 방식) · 배당은 DART 공시 주당현금배당금(보완:KRX) ÷ 현재가",
+   "dps": 0.0,
+   "div": 0.0
+  }
+ }
+}
