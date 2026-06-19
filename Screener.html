@@ -786,12 +786,14 @@ const FIELDS={
   per:{label:'PER',type:'range',unit:'배',quick:[{l:'10배 이하',max:10},{l:'20배 이하',max:20}]},
   pbr:{label:'PBR',type:'range',unit:'배',quick:[{l:'1배 이하',max:1},{l:'2배 이하',max:2}]},
   div:{label:'배당수익률',type:'range',unit:'%',quick:[{l:'2% 이상',min:2},{l:'4% 이상',min:4}]},
+  rev:{label:'매출 성장률',type:'range',unit:'%',quick:[{l:'10% 이상',min:10},{l:'20% 이상',min:20},{l:'25% 이상',min:25}]},
 };
-const FIELD_ORDER=['market','sector','mcap','per','pbr','div'];
+const FIELD_ORDER=['market','sector','mcap','per','pbr','div','rev'];
 
 const PRESETS={
   '저PER 가치주':{mcap:{min:0.5,max:null},per:{min:null,max:10}},
   '고배당주':{mcap:{min:0.5,max:null},div:{min:4,max:null}},
+  '고성장주':{mcap:{min:0.5,max:null},rev:{min:25,max:null}},
   '대형 우량주':{mcap:{min:10,max:null},per:{min:null,max:15}},
   '저PBR 자산주':{mcap:{min:0.5,max:null},pbr:{min:null,max:1}},
 };
@@ -1075,7 +1077,7 @@ const SCREENER_DICT={
   "10배 이하":"≤ 10×","20배 이하":"≤ 20×","30배 이하":"≤ 30×","1배 이하":"≤ 1×","2배 이하":"≤ 2×",
   "2% 이상":"≥ 2%","4% 이상":"≥ 4%","10% 이상":"≥ 10%","15% 이상":"≥ 15%","20% 이상":"≥ 20%","25% 이상":"≥ 25%","50% 이하":"≤ 50%","100% 이하":"≤ 100%",
   "테마":"Themes",
-  "저PER 가치주":"Low P/E Value","고배당주":"High Dividend","대형 우량주":"Large-cap Blue Chips","저PBR 자산주":"Low P/B"
+  "저PER 가치주":"Low P/E Value","고배당주":"High Dividend","고성장주":"High Growth","대형 우량주":"Large-cap Blue Chips","저PBR 자산주":"Low P/B"
 };
 if(window.KOSi18n) KOSi18n.register(SCREENER_DICT, render);
 
