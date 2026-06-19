@@ -792,12 +792,12 @@ const FIELDS={
 const FIELD_ORDER=['market','sector','mcap','per','pbr','div','rev','roe'];
 
 const PRESETS={
-  '저PER 가치주':{per:{min:null,max:10}},
-  '고배당주':{div:{min:4,max:null}},
-  '고성장주':{rev:{min:25,max:null}},
+  '저PER 가치주':{mcap:{min:0.5,max:null},per:{min:null,max:10}},
+  '고배당주':{mcap:{min:0.5,max:null},div:{min:4,max:null}},
+  '고성장주':{mcap:{min:0.5,max:null},rev:{min:25,max:null}},
   '대형 우량주':{mcap:{min:10,max:null},per:{min:null,max:15}},
-  '고ROE 우량주':{roe:{min:15,max:null}},
-  '저PBR 자산주':{pbr:{min:null,max:1}},
+  '고ROE 우량주':{mcap:{min:1,max:null},roe:{min:15,max:null}},
+  '저PBR 자산주':{mcap:{min:0.5,max:null},pbr:{min:null,max:1}},
 };
 
 /* ===== state ===== */
