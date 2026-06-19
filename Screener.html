@@ -160,6 +160,16 @@ body::before{content:"";position:fixed;inset:0;z-index:-1;pointer-events:none;
 .clear-all:hover{color:var(--fg-1)}
 .chips-empty{font:500 13px var(--font-sans);color:var(--fg-3)}
 
+/* presets (테마) */
+.presets{display:flex;align-items:center;gap:8px;flex-wrap:wrap;margin-bottom:12px}
+.presets .plabel{font:600 12px var(--font-sans);color:var(--fg-3);margin-right:2px}
+.preset-pill{font:600 13px var(--font-sans);color:var(--fg-2);background:rgba(0,0,0,.05);border:1px solid transparent;padding:8px 14px;border-radius:var(--pill);cursor:pointer;transition:.14s;white-space:nowrap}
+.preset-pill:hover{color:var(--fg-1);background:rgba(0,0,0,.08)}
+:root[data-theme="dark"] .preset-pill{background:rgba(255,255,255,.07)}
+:root[data-theme="dark"] .preset-pill:hover{background:rgba(255,255,255,.12)}
+.preset-pill.on{color:#fff;background:var(--brand-blue);border-color:var(--brand-blue)}
+:root[data-theme="dark"] .preset-pill.on{color:#0b1220;background:var(--brand-cyan);border-color:var(--brand-cyan)}
+
 /* count */
 .count-row{display:flex;align-items:baseline;gap:8px;margin-bottom:14px}
 .count-row .n{font:700 22px var(--font-sans);letter-spacing:-.02em}
@@ -596,7 +606,6 @@ KOSi18n.register({
     <a href="Home.html">홈</a>
     <a href="Reports.html">리포트</a>
     <a href="industry.html">업종별</a>
-    <a href="themes.html">테마</a>
     <a href="Screener.html" class="active">스크리너</a>
     <a href="Watchlist.html">워치리스트</a>
   </div>
@@ -612,7 +621,6 @@ KOSi18n.register({
   <a href="Home.html">홈</a>
   <a href="Reports.html">리포트</a>
   <a href="industry.html">업종별</a>
-    <a href="themes.html">테마</a>
   <a href="Screener.html" class="active">스크리너</a>
   <a href="Watchlist.html">워치리스트</a>
 </div>
@@ -646,6 +654,9 @@ KOSi18n.register({
       </div>
     </div>
   </div>
+
+  <!-- PRESETS (테마) -->
+  <div class="presets" id="presetRow" data-i18n-skip></div>
 
   <!-- ACTIVE FILTER CHIPS -->
   <div class="chips" id="chips" data-i18n-skip></div>
@@ -685,8 +696,7 @@ KOSi18n.register({
     <div class="foot-inner glass">
       <div class="foot-grid">
         <div class="foot-brand"><a class="brand" href="Home.html"><img class="brand-logo brand-logo--light" src="assets/kosai-wordmark-black.png" alt="KOSAI" width="148" height="24"><img class="brand-logo brand-logo--dark" src="assets/kosai-wordmark-white.png" alt="KOSAI" width="148" height="24"></a><p>한국 상장사를 위한 AI 투자 리서치. 데이터와 분석을 한 페이지에.</p></div>
-        <div class="foot-col"><h4>서비스</h4><ul><li><a href="Home.html">홈</a></li><li><a href="Reports.html">리포트</a></li><li><a href="industry.html">업종별</a>
-    <a href="themes.html">테마</a></li><li><a href="Screener.html">스크리너</a></li><li><a href="Watchlist.html">워치리스트</a></li></ul></div>
+        <div class="foot-col"><h4>서비스</h4><ul><li><a href="Home.html">홈</a></li><li><a href="Reports.html">리포트</a></li><li><a href="industry.html">업종별</a></li><li><a href="Screener.html">스크리너</a></li><li><a href="Watchlist.html">워치리스트</a></li></ul></div>
         <div class="foot-col"><h4>회사</h4><ul><li><a href="About.html">About</a></li><li><a href="Contact.html">문의하기</a></li><li><a href="Feedback.html">피드백</a></li></ul></div>
         
         <div class="foot-col"><h4>정책</h4><ul><li><a href="Terms.html">이용약관</a></li><li><a href="Privacy.html">개인정보처리방침</a></li></ul></div>
@@ -777,14 +787,17 @@ const FIELDS={
   pbr:{label:'PBR',type:'range',unit:'배',quick:[{l:'1배 이하',max:1},{l:'2배 이하',max:2}]},
   div:{label:'배당수익률',type:'range',unit:'%',quick:[{l:'2% 이상',min:2},{l:'4% 이상',min:4}]},
   rev:{label:'매출 성장률',type:'range',unit:'%',quick:[{l:'10% 이상',min:10},{l:'20% 이상',min:20},{l:'25% 이상',min:25}]},
+  roe:{label:'ROE',type:'range',unit:'%',quick:[{l:'10% 이상',min:10},{l:'15% 이상',min:15},{l:'20% 이상',min:20}]},
 };
-const FIELD_ORDER=['market','sector','mcap','per','pbr','div','rev'];
+const FIELD_ORDER=['market','sector','mcap','per','pbr','div','rev','roe'];
 
 const PRESETS={
   '저PER 가치주':{per:{min:null,max:10}},
-  '고배당':{div:{min:4,max:null}},
+  '고배당주':{div:{min:4,max:null}},
   '고성장주':{rev:{min:25,max:null}},
-  '대형 저평가':{mcap:{min:10,max:null},per:{min:null,max:15}},
+  '대형 우량주':{mcap:{min:10,max:null},per:{min:null,max:15}},
+  '고ROE 우량주':{roe:{min:15,max:null}},
+  '저PBR 자산주':{pbr:{min:null,max:1}},
 };
 
 /* ===== state ===== */
@@ -841,7 +854,7 @@ function render(){
   for(let i=bs;i<=be;i++)b+=`<button class="${i===state.page?'active':''}" data-pg="${i}">${i}</button>`;
   b+=`<button ${state.page>=pages?'disabled':''} data-pg="next">›</button>`;
   ctl.innerHTML=pages>1?b:'';
-  renderChips();renderHead();repaintControls();
+  renderChips();renderPresets();renderHead();repaintControls();
 }
 function renderHead(){
   document.querySelectorAll('#headRow th').forEach(th=>{
@@ -870,6 +883,27 @@ function renderChips(){
     `<span class="fchip" data-field="${k}"><span class="lab">${chipLabel(k)}</span><span class="x" data-remove="${k}">✕</span></span>`).join('')
     +`<button class="clear-all" id="clearAll">${T('모두 지우기')}</button>`;
 }
+
+/* ===== presets (테마) ===== */
+function presetActive(name){
+  const p=PRESETS[name],keys=Object.keys(p),fk=Object.keys(state.filters);
+  if(fk.length!==keys.length) return false;
+  return keys.every(k=>{const a=state.filters[k],b=p[k];
+    return a&&((a.min??null)===(b.min??null))&&((a.max??null)===(b.max??null));});
+}
+function renderPresets(){
+  const row=document.getElementById('presetRow');if(!row)return;
+  row.innerHTML=`<span class="plabel">${T('테마')}</span>`+Object.keys(PRESETS).map(n=>
+    `<button class="preset-pill${presetActive(n)?' on':''}" data-preset="${n}">${T(n)}</button>`).join('');
+}
+function applyPreset(name){
+  if(presetActive(name)){state.filters={};}
+  else{const p=PRESETS[name];state.filters={};for(const k in p)state.filters[k]={min:p[k].min??null,max:p[k].max??null};}
+  state.page=1;render();
+}
+document.getElementById('presetRow').addEventListener('click',e=>{
+  const b=e.target.closest('[data-preset]');if(b)applyPreset(b.dataset.preset);
+});
 
 /* ===== popover ===== */
 const backdrop=document.getElementById('popBackdrop'),popover=document.getElementById('popover');
@@ -1043,7 +1077,9 @@ const SCREENER_DICT={
   "삼성전자":"Samsung Electronics","SK하이닉스":"SK Hynix","한미반도체":"Hanmi Semiconductor","리노공업":"Leeno Industrial","NAVER":"NAVER","카카오":"Kakao","LG에너지솔루션":"LG Energy Solution","삼성SDI":"Samsung SDI","포스코퓨처엠":"POSCO Future M","에코프로비엠":"EcoPro BM","셀트리온":"Celltrion","삼성바이오로직스":"Samsung Biologics","알테오젠":"Alteogen","현대차":"Hyundai Motor","기아":"Kia","KB금융":"KB Financial","신한지주":"Shinhan Financial","JYP Ent.":"JYP Ent.","에스엠":"SM Entertainment","HD현대중공업":"HD Hyundai Heavy","한화에어로스페이스":"Hanwha Aerospace",
   "1조원 이하":"≤ ₩1T","1조원 이상 ~ 10조원 이하":"₩1T–₩10T","10조원 이상":"≥ ₩10T",
   "10배 이하":"≤ 10×","20배 이하":"≤ 20×","30배 이하":"≤ 30×","1배 이하":"≤ 1×","2배 이하":"≤ 2×",
-  "2% 이상":"≥ 2%","4% 이상":"≥ 4%","10% 이상":"≥ 10%","15% 이상":"≥ 15%","20% 이상":"≥ 20%","25% 이상":"≥ 25%","50% 이하":"≤ 50%","100% 이하":"≤ 100%"
+  "2% 이상":"≥ 2%","4% 이상":"≥ 4%","10% 이상":"≥ 10%","15% 이상":"≥ 15%","20% 이상":"≥ 20%","25% 이상":"≥ 25%","50% 이하":"≤ 50%","100% 이하":"≤ 100%",
+  "테마":"Themes","ROE":"ROE",
+  "저PER 가치주":"Low P/E Value","고배당주":"High Dividend","고성장주":"High Growth","대형 우량주":"Large-cap Blue Chips","고ROE 우량주":"High ROE","저PBR 자산주":"Low P/B"
 };
 if(window.KOSi18n) KOSi18n.register(SCREENER_DICT, render);
 
