@@ -1026,9 +1026,9 @@ themeBtn.addEventListener('click',()=>applyTheme(root.getAttribute('data-theme')
     }
     // 종목 리스트(시총순 상위 20)
     var rowsHtml=row.list.slice(0,20).map(function(s){
-      var sd=dir(s.change);var hasRep=!!REPORTS[s.ticker];
+      var sd=dir(s.change);
       return '<tr onclick="location.href=\'stock.html?ticker='+s.ticker+'\'">'
-        +'<td><span class="nm">'+esc(tn(s.name))+'</span>'+(hasRep?' <span class="rep">'+T('리포트')+'</span>':'')+'</td>'
+        +'<td><span class="nm">'+esc(tn(s.name))+'</span></td>'
         +'<td>'+won(s.price)+'</td>'
         +'<td class="ic-chg '+sd+'">'+pct(s.change)+'</td>'
         +'<td>'+mcap(s.mcap)+'</td></tr>';
