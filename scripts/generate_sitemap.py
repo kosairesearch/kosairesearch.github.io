@@ -8,6 +8,7 @@ import json
 import re
 from datetime import date
 from pathlib import Path
+from urllib.parse import quote
 
 ROOT = Path(__file__).resolve().parent.parent
 SITE = "https://kosai.kr"
@@ -32,6 +33,16 @@ def main():
     data = json.loads(m.group(1).rstrip().rstrip(";"))
     tickers = [s["ticker"] for s in data["stocks"]]
 
+    # 업종 상세 페이지(industry.html?sector=...) — AI 분석이 있는 섹터를 색인 대상에 포함
+    sectors = []
+    sec_path = ROOT / "data" / "sectors.js"
+    if sec_path.exists():
+        sraw = sec_path.read_text(encoding="utf-8")
+        sm = re.search(r"window\.KOS_SECTORS\s*=\s*(\{.*)", sraw, re.S)
+        if sm:
+            sdata = json.loads(sm.group(1).rstrip().rstrip(";"))
+            sectors = list(sdata.get("sectors", {}).keys())
+
     dd = data.get("dataDate", "")
     lastmod = (
         f"{dd[:4]}-{dd[4:6]}-{dd[6:8]}" if len(dd) == 8 else date.today().isoformat()
@@ -44,6 +55,12 @@ def main():
             f"<url><loc>{SITE}{path}</loc><lastmod>{lastmod}</lastmod>"
             f"<changefreq>{freq}</changefreq><priority>{prio}</priority></url>"
         )
+    for sec in sectors:
+        loc = f"{SITE}/industry.html?sector={quote(sec)}"
+        out.append(
+            f"<url><loc>{loc}</loc><lastmod>{lastmod}</lastmod>"
+            f"<changefreq>weekly</changefreq><priority>0.6</priority></url>"
+        )
     for t in tickers:
         out.append(
             f"<url><loc>{SITE}/stock.html?ticker={t}</loc>"
@@ -53,7 +70,10 @@ def main():
     out.append("</urlset>\n")
 
     (ROOT / "sitemap.xml").write_text("\n".join(out), encoding="utf-8")
-    print(f"sitemap.xml: 정적 {len(STATIC_PAGES)} + 종목 {len(tickers)} URL")
+    print(
+        f"sitemap.xml: 정적 {len(STATIC_PAGES)} + 업종 {len(sectors)} "
+        f"+ 종목 {len(tickers)} URL"
+    )
 
 
 if __name__ == "__main__":
