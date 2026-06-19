@@ -1,6 +1,8 @@
 name: 🏭 업종 AI 분석 생성
 
 on:
+  schedule:
+    - cron: '0 18 1 * *'   # 매월 1일 03:00 KST — 업종 AI 분석 본문 자동 갱신
   workflow_dispatch:
     inputs:
       mode:
