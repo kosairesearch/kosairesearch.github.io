@@ -944,7 +944,7 @@ themeBtn.addEventListener('click',()=>applyTheme(root.getAttribute('data-theme')
     "한국 상장사를 업종으로 나눠 시가총액·등락률과 AI 업종 분석을 제공합니다.":"Korean listed companies grouped by industry — market cap, returns, and AI sector analysis.",
     "시가총액 합계":"Total market cap","시장 비중":"Market weight","종목 수":"Stocks","평균 등락률":"Avg. change",
     "업종 개요":"Overview","산업 구조·가치사슬":"Structure & value chain","최근 동향":"Recent trends","향후 전망":"Outlook",
-    "리스크 요인":"Risk factors","업종 내 주요 종목":"Key stocks","AI 업종 분석 준비 중입니다.":"AI sector analysis coming soon.",
+    "리스크 요인":"Risk factors","업종 내 주요 종목":"Key stocks","AI 업종 분석 준비 중입니다.":"AI sector analysis coming soon.","테마":"Themes",
     "분석 참고: 업종 상장사 종합 + 웹 검색":"Source: aggregated listed peers + web search",
     "종목":"Stock","현재가":"Price","등락률":"Change","시가총액":"Market Cap","리포트":"Report"
   });}
@@ -975,7 +975,10 @@ themeBtn.addEventListener('click',()=>applyTheme(root.getAttribute('data-theme')
     });
     var rows=Object.keys(byRep).map(function(sec){return mkRow(sec,byRep[sec],total);});
     rows.sort(function(a,b){return b.mc-a.mc;});
-    return {rows:rows,total:total,byCat:byCat};
+    // 테마(AI·로봇 등): byCat에만 있고 대표 업종 파티션엔 없는 항목 — 100% 파티션과 별개로 표시
+    var themeRows=Object.keys(byCat).filter(function(c){return byRep[c]==null;}).map(function(sec){return mkRow(sec,byCat[sec],total);});
+    themeRows.sort(function(a,b){return b.mc-a.mc;});
+    return {rows:rows,themeRows:themeRows,total:total,byCat:byCat};
   }
   var app=document.getElementById('indApp');
   function renderList(){
@@ -992,7 +995,8 @@ themeBtn.addEventListener('click',()=>applyTheme(root.getAttribute('data-theme')
     app.innerHTML='<div class="ind-head"><div class="ind-bc">'+T('홈')+' / '+T('업종별')+'</div>'
       +'<h1 class="ind-title">'+T('업종별 분석')+'</h1>'
       +'<p class="ind-sub">'+T('한국 상장사를 업종으로 나눠 시가총액·등락률과 AI 업종 분석을 제공합니다.')+'</p></div>'
-      +'<div class="ind-grid">'+cards+'</div>';
+      +'<div class="ind-grid">'+cards+'</div>'
+      +((a.themeRows||[]).length?('<h2 style="margin:38px 0 14px;font:700 18px var(--font-sans);letter-spacing:-.02em;color:var(--fg-2)">'+T('테마')+'</h2><div class="ind-grid">'+a.themeRows.map(function(r){var d=dir(r.chg);var tops=r.list.slice(0,3).map(function(s){return '<span>'+esc(tn(s.name))+'</span>';}).join('');return '<a class="ind-card glass" href="industry.html?sector='+encodeURIComponent(r.sec)+'"><div class="ic-top"><span class="ic-name">'+esc(tn(r.sec))+'</span></div><div class="ic-mc">'+mcap(r.mc)+'</div><div class="ic-meta">'+(EN()?r.n+' stocks':r.n+'개')+' · <span class="ic-chg '+d+'">'+pct(r.chg)+'</span></div><div class="ic-top3">'+tops+'</div></a>';}).join('')+'</div>'):'');
   }
   function renderDetail(sec){
     var a=agg();
