@@ -997,13 +997,14 @@ themeBtn.addEventListener('click',()=>applyTheme(root.getAttribute('data-theme')
   function renderDetail(sec){
     var a=agg();
     var row=null;a.rows.forEach(function(r){if(r.sec===sec)row=r;});
-    if(!row && a.byCat[sec]) row=mkRow(sec,a.byCat[sec],a.total);  // AI·로봇 등 테마: categories 기반 폴백(직접 링크·검색·sitemap 유지)
+    var isTheme=!row;  // 대표 업종 파티션에 없는 항목 = 테마(AI·로봇 등) — 시장 비중은 100% 파티션과 겹치므로 표시 안 함
+    if(!row && a.byCat[sec]) row=mkRow(sec,a.byCat[sec],a.total);  // 테마: categories 기반 폴백(직접 링크·검색·sitemap 유지)
     if(!row){renderList();return;}
     var an=SECTORS[sec]||null;
     var d=dir(row.chg);
     var kpis='<div class="ind-kpis">'
       +'<div class="ind-kpi"><div class="k">'+T('시가총액 합계')+'</div><div class="v">'+mcap(row.mc)+'</div></div>'
-      +'<div class="ind-kpi"><div class="k">'+T('시장 비중')+'</div><div class="v">'+row.w.toFixed(1)+'%</div></div>'
+      +(isTheme?'':'<div class="ind-kpi"><div class="k">'+T('시장 비중')+'</div><div class="v">'+row.w.toFixed(1)+'%</div></div>')
       +'<div class="ind-kpi"><div class="k">'+T('종목 수')+'</div><div class="v">'+(EN()?row.n+' stocks':row.n+'개')+'</div></div>'
       +'<div class="ind-kpi"><div class="k">'+T('평균 등락률')+'</div><div class="v ic-chg '+d+'">'+pct(row.chg)+'</div></div></div>';
     var ai='';
