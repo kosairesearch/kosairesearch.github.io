@@ -957,17 +957,25 @@ themeBtn.addEventListener('click',()=>applyTheme(root.getAttribute('data-theme')
   function tn(x){return T(x);}
   function qp(k){return new URLSearchParams(location.search).get(k);}
   function scats(s){return (s.categories&&s.categories.length)?s.categories:[s.sector||'기타'];}
+  function mkRow(sec,lst,total){
+    var mc=0,wc=0;
+    lst.forEach(function(s){mc+=(s.mcap||0);wc+=(s.change||0)*(s.mcap||0);});
+    lst=lst.slice().sort(function(a,b){return (b.mcap||0)-(a.mcap||0);});
+    return {sec:sec,n:lst.length,mc:mc,w:total?mc/total*100:0,chg:mc?wc/mc:0,list:lst};
+  }
   function agg(){
-    var total=0,by={};
-    STOCKS.forEach(function(s){var m=s.mcap||0;total+=m;scats(s).forEach(function(c){(by[c]=by[c]||[]).push(s);});});
-    var rows=Object.keys(by).map(function(sec){
-      var lst=by[sec],mc=0,wc=0;
-      lst.forEach(function(s){mc+=(s.mcap||0);wc+=(s.change||0)*(s.mcap||0);});
-      lst.sort(function(a,b){return (b.mcap||0)-(a.mcap||0);});
-      return {sec:sec,n:lst.length,mc:mc,w:total?mc/total*100:0,chg:mc?wc/mc:0,list:lst};
+    /* 업종 분석 한정: 대표 업종(sector) 1개로 집계 → 시가총액 비중 합이 100%로 떨어짐.
+       (스크리너 등 다른 곳은 categories(복수 테마)를 그대로 사용 — 여기서만 단일 집계) */
+    var total=0,byRep={},byCat={};
+    STOCKS.forEach(function(s){
+      var m=s.mcap||0;total+=m;
+      var rep=s.sector||'기타';
+      (byRep[rep]=byRep[rep]||[]).push(s);
+      scats(s).forEach(function(c){(byCat[c]=byCat[c]||[]).push(s);});
     });
+    var rows=Object.keys(byRep).map(function(sec){return mkRow(sec,byRep[sec],total);});
     rows.sort(function(a,b){return b.mc-a.mc;});
-    return {rows:rows,total:total};
+    return {rows:rows,total:total,byCat:byCat};
   }
   var app=document.getElementById('indApp');
   function renderList(){
@@ -989,6 +997,7 @@ themeBtn.addEventListener('click',()=>applyTheme(root.getAttribute('data-theme')
   function renderDetail(sec){
     var a=agg();
     var row=null;a.rows.forEach(function(r){if(r.sec===sec)row=r;});
+    if(!row && a.byCat[sec]) row=mkRow(sec,a.byCat[sec],a.total);  // AI·로봇 등 테마: categories 기반 폴백(직접 링크·검색·sitemap 유지)
     if(!row){renderList();return;}
     var an=SECTORS[sec]||null;
     var d=dir(row.chg);
