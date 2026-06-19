@@ -139,15 +139,18 @@ function unlock(){ clearGate(); document.documentElement.classList.remove('kos-l
 window.KOSGate = { showLoginPopup: showLoginPopup, lockPage: lockPage };
 
 /* ---- 페이지 보호 ---- */
-var GATED = /^(industry|stock|watchlist)\.html$/i;
+var GATED = /^(watchlist)\.html$/i;
 var page;
 try{ page = decodeURIComponent(here()); }catch(e){ page = here(); }
 
 if(GATED.test(page)){
   if(!isConfigured){ unlock(); }
   else onAuthStateChanged(auth, function(u){
-    if(!u){ lockPage('이 리포트는 로그인 후 보실 수 있어요.'); }
+    if(!u){ lockPage('이 기능은 로그인 후 이용할 수 있어요.'); }
     else if(verified(u)){ unlock(); }
     else { lockVerify(u); }
   });
+} else {
+  // 공개 페이지(종목·업종 포함): 콘텐츠 게이트 없이 즉시 잠금 해제
+  unlock();
 }

@@ -6,7 +6,7 @@
 <!-- 로그인 게이트: 로그인 확인 전 화면 숨김 -->
 <script>document.documentElement.classList.add('kos-locked');</script>
 <style>html.kos-locked body{visibility:hidden}</style>
-<title>KOSAI — 업종 분석 · 반도체</title>
+<title>업종별 분석 — 코스피·코스닥 업종 동향과 주요 종목 | KOSAI</title>
 <meta name="description" content="업종별 시세와 종목 동향, 업종 내 주요 종목 비교 분석." />
 <link rel="canonical" href="https://kosai.kr/industry.html" />
 <meta property="og:type" content="website" />
@@ -22,6 +22,19 @@
 <meta name="twitter:title" content="업종 분석 — KOSAI" />
 <meta name="twitter:description" content="업종별 시세와 종목 동향, 업종 내 주요 종목 비교 분석." />
 <meta name="twitter:image" content="https://kosai.kr/assets/og-image.png?v=3" />
+<script>
+/* 업종별 canonical/og:url 즉시 보정 — sector 파라미터가 있으면 해당 업종 URL로.
+   상세 메타·타이틀은 데이터 로드 후 setSEO()가 마저 채운다. */
+(function(){try{
+  var m=location.search.match(/[?&]sector=([^&]+)/);
+  if(!m) return;
+  var s=m[1];
+  var u='https://kosai.kr/industry.html?sector='+s;
+  function set(sel,attr,val){var e=document.querySelector(sel);if(e)e.setAttribute(attr,val);}
+  set('link[rel=canonical]','href',u);
+  set('meta[property="og:url"]','content',u);
+}catch(e){}})();
+</script>
 <style>
 @font-face{font-family:"Pretendard";font-weight:400;font-style:normal;font-display:swap;src:url("fonts/Pretendard-Regular.woff2") format("woff2"), url("fonts/Pretendard-Regular.otf") format("opentype")}
 @font-face{font-family:"Pretendard";font-weight:500;font-style:normal;font-display:swap;src:url("fonts/Pretendard-Medium.woff2") format("woff2"), url("fonts/Pretendard-Medium.otf") format("opentype")}
