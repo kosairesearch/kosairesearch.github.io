@@ -1150,15 +1150,15 @@ KOSi18n.register({
   }
   function render(){
     var u=U(), Ln=L();
-    var up=(STOCK.change>=0), cc=up?'up':'down', sign=up?'+':'';
     var chg=(STOCK.change==null?0:STOCK.change);
+    var cc=chg>0?'up':chg<0?'down':'flat', sign=chg>0?'+':'';
 
     document.getElementById('crumb').innerHTML='<a href="Home.html">'+esc(u.home)+'</a> / <a href="Reports.html">'+esc(u.reports)+'</a> / <b>'+esc(tname(STOCK.name))+' ('+TK+')</b>';
     document.getElementById('thId').innerHTML='<span>'+TK+'</span><span class="sep">·</span><span>'+esc(tname(STOCK.market))+'</span><span class="sep">·</span><span>'+esc(tname(STOCK.sector))+'</span>';
     document.getElementById('thName').textContent=tname(STOCK.name);
     document.getElementById('thMeta').textContent = REP ? (u.reportDate+' '+(REP.reportDate||'')) : '';
     document.getElementById('thNow').textContent=won(STOCK.price);
-    var tc=document.getElementById('thChg'); tc.className='th-chg '+cc; tc.textContent=(up?'▲ ':'▼ ')+sign+chg.toFixed(2)+'%';
+    var tc=document.getElementById('thChg'); tc.className='th-chg '+cc; tc.textContent=(chg>0?'▲ ':chg<0?'▼ ':'– ')+sign+chg.toFixed(2)+'%';
 
     // 밸류에이션 데이터: valuation.js 우선, 없으면 v2 리포트 quant 폴백
     var VAL=(window.KOS_VALUATION&&KOS_VALUATION.stocks&&KOS_VALUATION.stocks[TK])||null;

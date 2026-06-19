@@ -1,7 +1,8 @@
 /* ============================================================
    KOSAI — 로그인 게이트 (비로그인 차단)
    ------------------------------------------------------------
-   1) 보호 페이지(업종 분석·종목 상세·워치리스트)는 로그인해야 볼 수 있습니다.
+   1) 보호 페이지(워치리스트)는 로그인해야 이용할 수 있습니다.
+      (종목 상세·업종 분석은 SEO를 위해 공개 — 게이트 없음)
       <head> 의 인라인 스크립트가 먼저 body 를 숨기고(html.kos-locked),
       이 모듈이 로그인 상태를 확인해 통과(unlock) 또는 게이트(lockPage) 처리합니다.
    2) window.KOSGate.showLoginPopup(msg) — 워치리스트 추가 등 액션 차단용 팝업.
@@ -14,6 +15,7 @@ import { sendVerifyEmail } from "./auth-emails.js";
 if(window.KOSi18n) window.KOSi18n.register({
   "로그인이 필요합니다":"Sign-in required",
   "이 리포트는 로그인 후 보실 수 있어요.":"Please sign in to view this report.",
+  "이 기능은 로그인 후 이용할 수 있어요.":"Please sign in to use this feature.",
   "워치리스트에 추가하려면 로그인이 필요해요.":"Please sign in to add to your watchlist.",
   "이메일 인증 후 워치리스트를 사용할 수 있어요.":"Verify your email to use the watchlist.",
   "로그인":"Sign in", "회원가입":"Sign up", "홈으로":"Back to home",
