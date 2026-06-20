@@ -244,7 +244,13 @@ table.dt .pos{color:var(--up);font-weight:700}table.dt .neg{color:var(--down);fo
 .chart-legend i{width:11px;height:11px;border-radius:3px;display:inline-block}
 .chart-legend i.line{width:14px;height:0;border-top:2px solid var(--fg-2);border-radius:0}
 .chart-scroll-wrap{position:relative}
-.chart-scroll{overflow-x:auto;-webkit-overflow-scrolling:touch}
+.chart-scroll{overflow-x:auto;-webkit-overflow-scrolling:touch;scrollbar-width:thin;scrollbar-color:rgba(0,0,0,.35) rgba(0,0,0,.06);padding-bottom:2px}
+.chart-scroll::-webkit-scrollbar{height:8px;-webkit-appearance:none}
+.chart-scroll::-webkit-scrollbar-track{background:rgba(0,0,0,.06);border-radius:4px}
+.chart-scroll::-webkit-scrollbar-thumb{background:rgba(0,0,0,.32);border-radius:4px}
+:root[data-theme="dark"] .chart-scroll{scrollbar-color:rgba(255,255,255,.35) rgba(255,255,255,.08)}
+:root[data-theme="dark"] .chart-scroll::-webkit-scrollbar-track{background:rgba(255,255,255,.08)}
+:root[data-theme="dark"] .chart-scroll::-webkit-scrollbar-thumb{background:rgba(255,255,255,.32)}
 .kchart{width:100%;height:auto;display:block;overflow:visible}
 .kchart .blabel{font:600 10.5px var(--font-sans)}
 .kchart .axlabel{font:500 11px var(--font-sans)}
@@ -333,12 +339,6 @@ table.dt .pos{color:var(--up);font-weight:700}table.dt .neg{color:var(--down);fo
   .chart-scroll .kchart{min-width:580px}
   .kchart .blabel{font-size:12px}
   .kchart .axlabel{font-size:12px}
-  /* 스크롤 가능 신호: 오른쪽 페이드 + 화살표(모바일은 차트가 항상 화면보다 넓음) */
-  .chart-scroll-wrap::after{content:'›';position:absolute;top:0;right:0;height:100%;width:30px;
-    display:flex;align-items:center;justify-content:flex-end;padding-right:5px;
-    font:700 22px var(--font-sans);color:var(--fg-3);pointer-events:none;
-    background:linear-gradient(to left, rgba(0,0,0,.13), transparent)}
-  :root[data-theme="dark"] .chart-scroll-wrap::after{background:linear-gradient(to left, rgba(0,0,0,.5), transparent)}
 }
 @media (max-width:767px){
   .m{padding:10px 7px;overflow:hidden}
