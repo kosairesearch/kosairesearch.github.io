@@ -76,6 +76,25 @@ TOOLS = [{"type": "web_search_20250305", "name": "web_search", "max_uses": 6,
 log = g.log
 
 
+import re as _re_src
+# 저신뢰 출처(블로그·위키·커뮤니티) 차단 — 신뢰도 하락 방지
+LOW_TRUST_SRC = (
+    "blog.naver.com", "blog.daum.net", "tistory.com", "brunch.co.kr",
+    "velog.io", "medium.com", "blogspot.", "wordpress.com", "postype.com",
+    "egloos.com", "steemit.com", "namu.wiki", "wikipedia.org", "fandom.com",
+    "wikidocs.net", "dcinside.com", "fmkorea.com", "clien.net", "ruliweb.com",
+    "inven.co.kr", "cafe.naver.com", "cafe.daum.net", "ppomppu.co.kr",
+)
+def _low_trust_src(url):
+    try:
+        host = _re_src.sub(r"^https?://", "", url or "").split("/")[0].lower()
+    except Exception:
+        return False
+    if host.startswith("blog.") or host.startswith("m.blog."):
+        return True
+    return any(b in host for b in LOW_TRUST_SRC)
+
+
 def collect_sources_v2(message):
     """출처 URL을 인용(citations) + 웹검색 결과(web_search_tool_result) 양쪽에서 수집한다.
     모델이 JSON만 출력해 인용 태그가 안 붙어도, 실제 검색이 반환한 URL을 확보한다."""
@@ -98,7 +117,7 @@ def collect_sources_v2(message):
     for u in searched:
         if u not in out:
             out.append(u)
-    return out
+    return [u for u in out if not _low_trust_src(u)]
 
 
 # ── 정량 1: DART 전체 재무제표 ────────────────────────────────────────

@@ -339,14 +339,33 @@ def extract_text(message):
     return re.sub(r"</?cite[^>]*>", "", text)
 
 
+import re as _re_src
+# 저신뢰 출처(블로그·위키·커뮤니티) 차단
+LOW_TRUST_SRC = (
+    "blog.naver.com", "blog.daum.net", "tistory.com", "brunch.co.kr",
+    "velog.io", "medium.com", "blogspot.", "wordpress.com", "postype.com",
+    "egloos.com", "steemit.com", "namu.wiki", "wikipedia.org", "fandom.com",
+    "wikidocs.net", "dcinside.com", "fmkorea.com", "clien.net", "ruliweb.com",
+    "inven.co.kr", "cafe.naver.com", "cafe.daum.net", "ppomppu.co.kr",
+)
+def _low_trust_src(url):
+    try:
+        host = _re_src.sub(r"^https?://", "", url or "").split("/")[0].lower()
+    except Exception:
+        return False
+    if host.startswith("blog.") or host.startswith("m.blog."):
+        return True
+    return any(b in host for b in LOW_TRUST_SRC)
+
+
 def collect_sources(message):
-    """웹검색 인용(citations)에서 실제 출처 URL을 수집(중복 제거)."""
+    """웹검색 인용(citations)에서 실제 출처 URL을 수집(중복 제거, 저신뢰 도메인 제외)."""
     urls = []
     for block in message.content:
         cits = getattr(block, "citations", None) or []
         for c in cits:
             u = getattr(c, "url", None)
-            if u and u not in urls:
+            if u and u not in urls and not _low_trust_src(u):
                 urls.append(u)
     return urls
 
