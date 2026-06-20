@@ -243,7 +243,14 @@ table.dt .pos{color:var(--up);font-weight:700}table.dt .neg{color:var(--down);fo
 .chart-legend span{display:inline-flex;align-items:center;gap:6px;font:500 12px var(--font-sans);color:var(--fg-3)}
 .chart-legend i{width:11px;height:11px;border-radius:3px;display:inline-block}
 .chart-legend i.line{width:14px;height:0;border-top:2px solid var(--fg-2);border-radius:0}
-.chart-scroll,.tbl-scroll{overflow-x:auto;-webkit-overflow-scrolling:touch}
+/* 네이티브 스크롤바는 모바일에서 자동숨김 → 숨기고, 네이티브처럼 생긴(얇은 thumb·트랙 없음) 커스텀 스크롤바를 상시 표시 */
+.chart-scroll,.tbl-scroll{overflow-x:auto;-webkit-overflow-scrolling:touch;scrollbar-width:none}
+.chart-scroll::-webkit-scrollbar,.tbl-scroll::-webkit-scrollbar{display:none}
+.cbar{position:relative;height:5px;margin:5px 0 0;display:none;touch-action:none}
+.cbar.on{display:block}
+.cbar-thumb{position:absolute;top:0;left:0;height:100%;min-width:30px;border-radius:3px;background:rgba(0,0,0,.28);cursor:grab}
+.cbar-thumb:active{cursor:grabbing}
+:root[data-theme="dark"] .cbar-thumb{background:rgba(255,255,255,.3)}
 .kchart{width:100%;height:auto;display:block;overflow:visible}
 .kchart .blabel{font:600 10.5px var(--font-sans)}
 .kchart .axlabel{font:500 11px var(--font-sans)}
@@ -1082,7 +1089,7 @@ KOSi18n.register({
   function chartCard(cap, legend, svg){
     if(!svg) return '';
     return '<div class="chart-card glass"><div class="chart-cap">'+esc(cap)+'</div>'
-      +'<div class="chart-legend">'+legend+'</div><div class="chart-scroll">'+svg+'</div></div>';
+      +'<div class="chart-legend">'+legend+'</div><div class="chart-scroll">'+svg+'</div><div class="cbar"><div class="cbar-thumb"></div></div></div>';
   }
   function renderV2(u){
     var Q=REP.quant||{}, V=Q.valuation||{}, f=u.fin;
@@ -1123,7 +1130,7 @@ KOSi18n.register({
         h+='<tr><td>'+a.year+'</td><td>'+fwon(a.rev)+'</td><td'+negc(a.op)+'>'+fwon(a.op)+'</td><td'+negc(a.np_owner)+'>'+fwon(a.np_owner)+'</td>'
           +'<td>'+fpct(a.opm)+'</td><td'+negc(a.roe)+'>'+fpct(a.roe)+'</td><td>'+fpct(a.debt_ratio)+'</td></tr>';
       });
-      h+='</tbody></table></div></div>';
+      h+='</tbody></table></div><div class="cbar"><div class="cbar-thumb"></div></div></div>';
     }
     var qt=Q.quarterly||[];
     if(qt.length){
@@ -1132,7 +1139,7 @@ KOSi18n.register({
       qt.forEach(function(r){
         h+='<tr><td>'+esc(r.q)+'</td><td>'+fwon(r.rev)+'</td><td'+negc(r.op)+'>'+fwon(r.op)+'</td><td'+negc(r.np_owner)+'>'+fwon(r.np_owner)+'</td></tr>';
       });
-      h+='</tbody></table></div></div>';
+      h+='</tbody></table></div><div class="cbar"><div class="cbar-thumb"></div></div></div>';
     }
     h+='<div class="tbl-foot">'+esc(f.foot.replace('{win}',V.ttm_window||'-').split(' · ')[0])+'</div>';
     h+='</section><hr class="hairline" />';
@@ -1255,6 +1262,29 @@ KOSi18n.register({
       h+='<div class="col"><div class="rep-meta rep-meta-end"><span><b>'+esc(u.reportDate)+'</b>'+esc(REP.reportDate||'')+'</span></div></div>';
       rb.innerHTML=h;
     }
+
+    // 차트/재무표 가로 스크롤바(상시 표시) — 어느 렌더 분기든 rb 채워진 뒤 실행
+    rb.querySelectorAll('.chart-scroll, .tbl-scroll').forEach(function(sc){
+      var bar=sc.nextElementSibling;
+      if(!bar||!bar.classList.contains('cbar')) return;
+      var thumb=bar.firstElementChild;
+      function sync(){
+        var cw=sc.clientWidth, swid=sc.scrollWidth;
+        if(!cw||!swid||swid-cw<=2){ bar.classList.remove('on'); return; }
+        bar.classList.add('on');
+        var tw=Math.max(cw/swid*cw,30); thumb.style.width=tw+'px';
+        var max=swid-cw;
+        thumb.style.left=(sc.scrollLeft/max)*(cw-tw)+'px';
+      }
+      sc.addEventListener('scroll',sync,{passive:true});
+      if(window.ResizeObserver){ try{ new ResizeObserver(sync).observe(sc); }catch(_){ } }
+      window.addEventListener('resize',sync);
+      var drag=false,sx=0,sl=0;
+      thumb.addEventListener('pointerdown',function(e){drag=true;sx=e.clientX;sl=sc.scrollLeft;try{thumb.setPointerCapture(e.pointerId);}catch(_){ } e.preventDefault();});
+      thumb.addEventListener('pointermove',function(e){if(!drag)return;var tw=thumb.offsetWidth,max=sc.scrollWidth-sc.clientWidth,denom=(sc.clientWidth-tw)||1;sc.scrollLeft=sl+(e.clientX-sx)*(max/denom);});
+      window.addEventListener('pointerup',function(){drag=false;});
+      sync(); requestAnimationFrame(sync); setTimeout(sync,250); setTimeout(sync,800);
+    });
 
     document.getElementById('disclaimer').innerHTML='<b>'+esc(u.discT)+'</b> '+esc(u.disc);
     (function setSEO(){
