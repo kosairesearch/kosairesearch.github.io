@@ -465,6 +465,29 @@ KOSi18n.register({
 <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon.png?v=k2">
 <link rel="apple-touch-icon" sizes="180x180" href="assets/apple-touch-icon.png?v=k2">
   <script src="analytics.js"></script>
+<script>
+/* i18n: title·aria-label 속성 번역(영어 모드). 동적(data-i18n-skip) 영역은 각 페이지 템플릿의 T()가 담당 */
+(function(){
+  if(!window.KOSi18n) return;
+  var D={"라이트/다크 전환":"Switch light/dark","테마 전환":"Toggle theme","메뉴":"Menu","관심종목 추가/해제":"Add/remove from watchlist","관심종목":"Watchlist","제거":"Remove","닫기":"Close","뒤로":"Back","필터 설정":"Filter settings","정렬":"Sort","로딩":"Loading","검색":"Search","삭제":"Delete"};
+  function nm(s){return (s==null?'':String(s)).replace(/\s+/g,' ').trim();}
+  var orig=new WeakMap();
+  function fix(l){
+    if(!document.body) return;
+    document.querySelectorAll('[title],[aria-label]').forEach(function(el){
+      if(el.closest('[data-i18n-skip]')) return;
+      var rec=orig.get(el); if(!rec){rec={};orig.set(el,rec);}
+      ['title','aria-label'].forEach(function(a){
+        if(!el.hasAttribute(a)) return;
+        if(rec[a]==null) rec[a]=el.getAttribute(a);
+        var v=(l==='en')?KOSi18n.t(nm(rec[a])):rec[a];
+        if(el.getAttribute(a)!==v) el.setAttribute(a,v);
+      });
+    });
+  }
+  KOSi18n.register(D, fix);
+})();
+</script>
 </head>
 <body>
 

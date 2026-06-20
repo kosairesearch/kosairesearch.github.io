@@ -596,6 +596,29 @@ KOSi18n.register({
 <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon.png?v=k2">
 <link rel="apple-touch-icon" sizes="180x180" href="assets/apple-touch-icon.png?v=k2">
   <script src="analytics.js"></script>
+<script>
+/* i18n: title·aria-label 속성 번역(영어 모드). 동적(data-i18n-skip) 영역은 각 페이지 템플릿의 T()가 담당 */
+(function(){
+  if(!window.KOSi18n) return;
+  var D={"라이트/다크 전환":"Switch light/dark","테마 전환":"Toggle theme","메뉴":"Menu","관심종목 추가/해제":"Add/remove from watchlist","관심종목":"Watchlist","제거":"Remove","닫기":"Close","뒤로":"Back","필터 설정":"Filter settings","정렬":"Sort","로딩":"Loading","검색":"Search","삭제":"Delete"};
+  function nm(s){return (s==null?'':String(s)).replace(/\s+/g,' ').trim();}
+  var orig=new WeakMap();
+  function fix(l){
+    if(!document.body) return;
+    document.querySelectorAll('[title],[aria-label]').forEach(function(el){
+      if(el.closest('[data-i18n-skip]')) return;
+      var rec=orig.get(el); if(!rec){rec={};orig.set(el,rec);}
+      ['title','aria-label'].forEach(function(a){
+        if(!el.hasAttribute(a)) return;
+        if(rec[a]==null) rec[a]=el.getAttribute(a);
+        var v=(l==='en')?KOSi18n.t(nm(rec[a])):rec[a];
+        if(el.getAttribute(a)!==v) el.setAttribute(a,v);
+      });
+    });
+  }
+  KOSi18n.register(D, fix);
+})();
+</script>
 </head>
 <body>
 
@@ -823,7 +846,7 @@ const tbody=document.getElementById('tbody');
 function rowHtml(s){
   const dir=s.change>0?'up':s.change<0?'down':'flat',arw=s.change>0?'▲':s.change<0?'▼':'–';
   return `<tr data-ticker="${s.ticker}">
-    <td><div class="c-name"><span class="wl-btn ${isW(s.ticker)?'on':''}" data-wl="${s.ticker}" role="button" aria-label="관심종목" title="관심종목 추가/해제"><svg viewBox="0 0 24 24"><path d="M19 21l-7-5-7 5V5a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2z"/></svg></span><div class="nm"><span class="n">${T(s.name)}</span><span class="s">${T(s.sector)}</span></div></div></td>
+    <td><div class="c-name"><span class="wl-btn ${isW(s.ticker)?'on':''}" data-wl="${s.ticker}" role="button" aria-label="${T('관심종목')}" title="${T('관심종목 추가/해제')}"><svg viewBox="0 0 24 24"><path d="M19 21l-7-5-7 5V5a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2z"/></svg></span><div class="nm"><span class="n">${T(s.name)}</span><span class="s">${T(s.sector)}</span></div></div></td>
     <td class="c-center"><span class="mkt-tag">${T(s.market)}</span></td>
     <td>${KOS.won(s.price)}</td>
     <td><span class="chg ${dir}"><span class="a">${arw}</span> ${KOS.pct(s.change)}</span></td>
