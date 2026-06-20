@@ -66,7 +66,7 @@
   --shadow-3:0 1px 0 rgba(0,0,0,.3),0 24px 48px rgba(0,0,0,.55);
 }
 *{box-sizing:border-box}
-html{scroll-behavior:smooth;scrollbar-gutter:stable}
+html{scroll-behavior:smooth;scrollbar-gutter:stable;overflow-x:clip}
 body{margin:0;font-family:var(--font-sans);color:var(--fg-1);background:#eef1ff;
   -webkit-font-smoothing:antialiased;min-height:100vh;position:relative;font-variant-numeric:tabular-nums}
 body::after{content:"";position:fixed;inset:0;z-index:-2;
@@ -321,6 +321,11 @@ table.dt .pos{color:var(--up);font-weight:700}table.dt .neg{color:var(--down);fo
   .th-ts{margin-left:0;width:100%}
   .risk{grid-template-columns:1fr}
   .foot-grid{grid-template-columns:repeat(3,1fr);gap:16px}.foot-brand{grid-column:1/-1}.foot-bottom{flex-direction:column;gap:8px}
+  /* 실적 표: 모바일 가독성 — 숫자 키우고 패딩 줄여 가로스크롤로 다 보이게 */
+  table.dt th,table.dt td{font-size:15px;padding:10px 11px}
+  table.dt thead th{font-size:12.5px}
+  table.dt td.note,table.dt tr.sub td{font-size:13px}
+  .tbl-scroll{-webkit-overflow-scrolling:touch}
 }
 @media (max-width:767px){
   .m{padding:10px 7px;overflow:hidden}
