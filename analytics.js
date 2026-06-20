@@ -8,7 +8,7 @@
    ▸ 전역 헬퍼: KOSA.track('event_name', { ...params })
    ============================================================ */
 (function () {
-  var GA4_ID = "G-XRYHGM36GS";    // GA4 측정 ID
+  var GA4_ID = "G-8ZHG2KXW6Z";    // GA4 측정 ID
   var NAVER_ID = "1aa82ad75b71490";  // 네이버 애널리틱스 ID
 
   // ── Google Analytics 4 ──
