@@ -243,8 +243,13 @@ table.dt .pos{color:var(--up);font-weight:700}table.dt .neg{color:var(--down);fo
 .chart-legend span{display:inline-flex;align-items:center;gap:6px;font:500 12px var(--font-sans);color:var(--fg-3)}
 .chart-legend i{width:11px;height:11px;border-radius:3px;display:inline-block}
 .chart-legend i.line{width:14px;height:0;border-top:2px solid var(--fg-2);border-radius:0}
-/* industry 주요종목 표와 동일한 네이티브 스크롤바(스크롤 시 표시) */
-.chart-scroll,.tbl-scroll{overflow-x:auto;-webkit-overflow-scrolling:touch}
+/* 네이티브 스크롤바(스크롤 시 표시) — 라이트모드 색 대비 강화(배경과 겹쳐 안 보이던 문제) */
+.chart-scroll,.tbl-scroll{overflow-x:auto;-webkit-overflow-scrolling:touch;scrollbar-color:rgba(0,0,0,.4) rgba(0,0,0,.07)}
+.chart-scroll::-webkit-scrollbar,.tbl-scroll::-webkit-scrollbar{height:10px}
+.chart-scroll::-webkit-scrollbar-thumb,.tbl-scroll::-webkit-scrollbar-thumb{background:rgba(0,0,0,.36);border-radius:6px;border:2px solid transparent;background-clip:content-box}
+.chart-scroll::-webkit-scrollbar-track,.tbl-scroll::-webkit-scrollbar-track{background:transparent}
+:root[data-theme="dark"] .chart-scroll,:root[data-theme="dark"] .tbl-scroll{scrollbar-color:rgba(255,255,255,.38) rgba(255,255,255,.08)}
+:root[data-theme="dark"] .chart-scroll::-webkit-scrollbar-thumb,:root[data-theme="dark"] .tbl-scroll::-webkit-scrollbar-thumb{background:rgba(255,255,255,.36);background-clip:content-box;border:2px solid transparent}
 .kchart{width:100%;height:auto;display:block;overflow:visible}
 .kchart .blabel{font:600 10.5px var(--font-sans)}
 .kchart .axlabel{font:500 11px var(--font-sans)}
