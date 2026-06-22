@@ -29,6 +29,6 @@ jobs:
           git add -A marketing/
           git commit -m "🐦 X 스레드 초안 $(TZ='Asia/Seoul' date +'%Y-%m-%d')" || exit 0
           for i in 1 2 3 4 5; do
-            if git pull --rebase origin main && git push origin main; then break; fi
+            if git fetch origin main && git rebase -X theirs origin/main && git push origin main; then break; fi
             git rebase --abort 2>/dev/null || true; sleep $((i*3))
           done

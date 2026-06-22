@@ -77,7 +77,7 @@ jobs:
           git commit --allow-empty -m "🤖📦 AI 리포트 배치 ${{ inputs.mode }} $(TZ='Asia/Seoul' date +'%Y-%m-%d %H:%M KST')"
           ok=0
           for i in 1 2 3 4 5; do
-            git pull --rebase origin main && git push origin main && { ok=1; break; }
+            git fetch origin main && git rebase -X theirs origin/main && git push origin main && { ok=1; break; }
             git rebase --abort 2>/dev/null || true
             echo "push 재시도 $i..."; sleep $((i*5))
           done

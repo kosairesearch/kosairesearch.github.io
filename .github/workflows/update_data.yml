@@ -78,10 +78,12 @@ jobs:
           git config --global user.name "KOS ai Bot"
           git add -A data/ sitemap.xml
           git commit --allow-empty -m "📊 데이터 업데이트 $(TZ='Asia/Seoul' date +'%Y-%m-%d %H:%M KST')"
-          # 원격이 앞서간 경우(동시 커밋) rebase 후 재시도
+          # 원격이 앞서간 경우(동시 커밋) rebase 후 재시도. 충돌 시 봇이 새로 만든
+          # 데이터/사이트맵을 우선(-X theirs)해 자동 해결 — 충돌로 결과 유실 방지.
           ok=""
           for i in 1 2 3 4 5; do
-            if git pull --rebase origin main && git push origin main; then ok=1; break; fi
+            git fetch origin main || true
+            if git rebase -X theirs origin/main && git push origin main; then ok=1; break; fi
             git rebase --abort 2>/dev/null || true
             echo "push 재시도 $i..."; sleep $((i*3))
           done

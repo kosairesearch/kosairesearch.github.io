@@ -37,7 +37,7 @@ jobs:
           git add data/probe_result.txt
           git commit -m "🔍 KRX 밸류에이션 프로브 결과" || exit 0
           for i in 1 2 3 4 5; do
-            git pull --rebase origin main && git push origin main && exit 0
+            git fetch origin main && git rebase -X theirs origin/main && git push origin main && exit 0
             git rebase --abort 2>/dev/null || true
             sleep $((i*3))
           done

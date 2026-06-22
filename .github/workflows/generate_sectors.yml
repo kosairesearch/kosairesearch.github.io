@@ -47,6 +47,6 @@ jobs:
           git add -A data/
           git commit -m "🏭 업종 AI 분석 $(TZ='Asia/Seoul' date +'%Y-%m-%d %H:%M KST')" || echo "변경 없음"
           for i in 1 2 3 4 5; do
-            git pull --rebase origin main && git push origin main && break
+            git fetch origin main && git rebase -X theirs origin/main && git push origin main && break
             echo "push 재시도 $i..."; sleep $((i*3))
           done

@@ -22,4 +22,4 @@ jobs:
           git config --global user.email "bot@kosairesearch.github.io"; git config --global user.name "KOS ai Bot"
           git add -A data/_debug_dart.txt data/_debug_dart.log
           git commit -m "🐞 DART 덤프" || exit 0
-          for i in 1 2 3 4 5; do git pull --rebase origin main && git push origin main && break; git rebase --abort 2>/dev/null||true; sleep $((i*3)); done
+          for i in 1 2 3 4 5; do git fetch origin main && git rebase -X theirs origin/main && git push origin main && break; git rebase --abort 2>/dev/null||true; sleep $((i*3)); done

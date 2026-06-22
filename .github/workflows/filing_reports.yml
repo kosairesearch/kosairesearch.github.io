@@ -73,6 +73,6 @@ jobs:
           git add -A data/
           git commit --allow-empty -m "🗓️ 공시 트리거 리포트 $(TZ='Asia/Seoul' date +'%Y-%m-%d %H:%M KST')"
           for i in 1 2 3 4 5; do
-            git pull --rebase origin main && git push origin main && break
+            git fetch origin main && git rebase -X theirs origin/main && git push origin main && break
             echo "push 재시도 $i..."; sleep $((i*3))
           done
