@@ -160,6 +160,10 @@ def main():
     if not (TG_TOKEN and TG_CHAT):
         log("⚠ TELEGRAM_BOT_TOKEN/CHAT_ID 미설정 — 종료(셋업 후 동작).")
         return
+    if os.getenv("NEWS_TEST", "").lower() in ("1", "true", "yes"):
+        ok = tg_send("✅ KOSAI 알림봇 연결 성공 — 이제 이슈가 뜨면 여기로 초안이 옵니다.")
+        log("테스트 전송:", ok)
+        return
     seen = load_seen()
     first_run = len(seen) == 0
     items = fetch_items()

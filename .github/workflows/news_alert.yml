@@ -4,6 +4,11 @@ on:
   schedule:
     - cron: '*/10 * * * *'   # 10분마다 (GH Actions 특성상 지연될 수 있음)
   workflow_dispatch:
+    inputs:
+      test:
+        description: '연결 테스트 (텔레그램으로 확인 메시지 1건 발송)'
+        type: boolean
+        default: false
 
 concurrency:
   group: kos-news-alert
@@ -33,4 +38,5 @@ jobs:
           TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
           ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
           NEWS_MODEL: claude-sonnet-4-6
+          NEWS_TEST: ${{ inputs.test }}
         run: python scripts/news_alert.py
