@@ -150,9 +150,11 @@ def tg_send(text):
             data={"chat_id": TG_CHAT, "text": text, "disable_web_page_preview": "true"},
             timeout=20,
         )
+        if not r.ok:
+            log("텔레그램 응답 오류:", r.status_code, r.text[:300])
         return r.ok
     except Exception as e:
-        log("텔레그램 실패:", e)
+        log("텔레그램 예외:", e)
         return False
 
 
