@@ -1,0 +1,36 @@
+name: 🚨 뉴스 이슈 알림(텔레그램)
+
+on:
+  schedule:
+    - cron: '*/10 * * * *'   # 10분마다 (GH Actions 특성상 지연될 수 있음)
+  workflow_dispatch:
+
+concurrency:
+  group: kos-news-alert
+  cancel-in-progress: false
+
+jobs:
+  alert:
+    runs-on: ubuntu-latest
+    timeout-minutes: 8
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+          cache: 'pip'
+      - run: pip install -r requirements.txt
+      # 중복방지 상태(_news_seen.json)를 캐시로 보존 — 레포 커밋/Pages 재배포 안 함
+      - name: 상태 복원/저장 (캐시)
+        uses: actions/cache@v4
+        with:
+          path: data/_news_seen.json
+          key: news-seen-${{ github.run_id }}
+          restore-keys: news-seen-
+      - name: 뉴스 감지 → 텔레그램 알림
+        env:
+          TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
+          TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+          NEWS_MODEL: claude-sonnet-4-6
+        run: python scripts/news_alert.py
