@@ -1,61 +1,25 @@
 DART_KEY_SET=true (len=40)
-=== 스크립트 시작 Tue Jun 23 21:20:17 UTC 2026 ===
+=== 스크립트 시작 Tue Jun 23 22:53:15 UTC 2026 ===
 =======================================================
   KOS ai 데이터 수집 시작
 =======================================================
 KRX 로그인 시도...
   로그인 ID: qjawnsdla
-Traceback (most recent call last):
-  File "/opt/hostedtoolcache/Python/3.11.15/x64/lib/python3.11/site-packages/requests/models.py", line 1116, in json
-    return complexjson.loads(self.text, **kwargs)
-           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/opt/hostedtoolcache/Python/3.11.15/x64/lib/python3.11/json/__init__.py", line 346, in loads
-    return _default_decoder.decode(s)
-           ^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/opt/hostedtoolcache/Python/3.11.15/x64/lib/python3.11/json/decoder.py", line 337, in decode
-    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
-               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/opt/hostedtoolcache/Python/3.11.15/x64/lib/python3.11/json/decoder.py", line 355, in raw_decode
-    raise JSONDecodeError("Expecting value", s, err.value) from None
-json.decoder.JSONDecodeError: Expecting value: line 1 column 1 (char 0)
+KRX 로그인 완료.
+  로그인 시간: 2026-06-23 22:53:18
+  만료 시간: 2026-06-23 23:53:18
+  기준일: 20260623
 
-During handling of the above exception, another exception occurred:
-
-Traceback (most recent call last):
-  File "/home/runner/work/kosairesearch.github.io/kosairesearch.github.io/scripts/collect_data.py", line 1277, in <module>
-    main()
-  File "/home/runner/work/kosairesearch.github.io/kosairesearch.github.io/scripts/collect_data.py", line 1198, in main
-    date = get_latest_trading_date()
-           ^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/home/runner/work/kosairesearch.github.io/kosairesearch.github.io/scripts/collect_data.py", line 368, in get_latest_trading_date
-    from pykrx import stock as krx
-  File "/opt/hostedtoolcache/Python/3.11.15/x64/lib/python3.11/site-packages/pykrx/__init__.py", line 7, in <module>
-    from . import bond, stock
-  File "/opt/hostedtoolcache/Python/3.11.15/x64/lib/python3.11/site-packages/pykrx/bond/__init__.py", line 1, in <module>
-    from .bond import *
-  File "/opt/hostedtoolcache/Python/3.11.15/x64/lib/python3.11/site-packages/pykrx/bond/bond.py", line 5, in <module>
-    from pykrx.website import krx
-  File "/opt/hostedtoolcache/Python/3.11.15/x64/lib/python3.11/site-packages/pykrx/website/krx/__init__.py", line 3, in <module>
-    from .bond import *
-  File "/opt/hostedtoolcache/Python/3.11.15/x64/lib/python3.11/site-packages/pykrx/website/krx/bond/__init__.py", line 2, in <module>
-    from .wrap import *
-  File "/opt/hostedtoolcache/Python/3.11.15/x64/lib/python3.11/site-packages/pykrx/website/krx/bond/wrap.py", line 5, in <module>
-    from pykrx.website.comm import dataframe_empty_handler
-  File "/opt/hostedtoolcache/Python/3.11.15/x64/lib/python3.11/site-packages/pykrx/website/comm/__init__.py", line 8, in <module>
-    from pykrx.website.comm.webio import get_session, set_session
-  File "/opt/hostedtoolcache/Python/3.11.15/x64/lib/python3.11/site-packages/pykrx/website/comm/webio.py", line 12, in <module>
-    _session = build_krx_session()
-               ^^^^^^^^^^^^^^^^^^^
-  File "/opt/hostedtoolcache/Python/3.11.15/x64/lib/python3.11/site-packages/pykrx/website/comm/auth.py", line 192, in build_krx_session
-    success = krxs.refresh(login_id, login_pw)
-              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/opt/hostedtoolcache/Python/3.11.15/x64/lib/python3.11/site-packages/pykrx/website/comm/auth.py", line 53, in refresh
-    success = login_krx(login_id, login_pw, self.session)
-              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/opt/hostedtoolcache/Python/3.11.15/x64/lib/python3.11/site-packages/pykrx/website/comm/auth.py", line 153, in login_krx
-    data = resp.json()
-           ^^^^^^^^^^^
-  File "/opt/hostedtoolcache/Python/3.11.15/x64/lib/python3.11/site-packages/requests/models.py", line 1120, in json
-    raise RequestsJSONDecodeError(e.msg, e.doc, e.pos)
-requests.exceptions.JSONDecodeError: Expecting value: line 1 column 1 (char 0)
-
+## KOS ai 데이터 수집 — 20260623
+  [krx-cache] 2026-06-23 CSV 2875행 로드
+  [krx-cache] 가격 유효 2687개 종목 (우선주·스팩 188개 제외)
+- pykrx 수집: 2687개 종목
+- 영문명 이월: 2686개
+  [DART] 영문명 미보강 1개 종목 DART 수집 중...
+  [DART] 영문명·시총 보강 완료
+  [분류] AI 업종 캐시 2693개 적용
+  [분류] 카테고리 부여 완료 — 기타 34/2687개
+- 전 종목 수집 2687개(기존 2687) — 상폐 자동 정리 적용
+✅ data/stocks.js 생성 완료 — 2687개 종목 (2026-06-24 07:57 KST)
+- 최종 출력: 2687개 종목
+=======================================================
