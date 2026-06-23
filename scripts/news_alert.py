@@ -175,7 +175,9 @@ def main():
 
     new = []
     for it in items:
-        iid = hashlib.sha1(it["link"].encode()).hexdigest()[:16]
+        # 중복방지: 링크는 매번 바뀌므로(구글 리다이렉트) 제목 기준으로 식별
+        key = re.sub(r"\s+", " ", (it["title"] or "").lower()).strip()
+        iid = hashlib.sha1(key.encode("utf-8")).hexdigest()[:16]
         if iid in seen:
             continue
         seen.add(iid)
