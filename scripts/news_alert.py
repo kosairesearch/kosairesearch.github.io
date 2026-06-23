@@ -30,17 +30,17 @@ TG_CHAT = os.getenv("TELEGRAM_CHAT_ID", "").strip()
 ANTHROPIC_KEY = os.getenv("ANTHROPIC_API_KEY", "").strip()
 MODEL = os.getenv("NEWS_MODEL", "claude-sonnet-4-6")
 MAX_PER_RUN = int(os.getenv("NEWS_MAX_PER_RUN", "4"))
-RECENCY_MIN = int(os.getenv("NEWS_RECENCY_MIN", "35"))  # 최근 N분 내 기사만
+RECENCY_MIN = int(os.getenv("NEWS_RECENCY_MIN", "120"))  # 최근 N분 내 기사만(크론 지연 대비 넓게)
 
 # 감시 키워드(이 중 하나라도 제목에 있어야 후보) + Google News 검색식
 QUERIES = [
-    '("SK Hynix" OR "Samsung Electronics" OR HBM OR DRAM) memory chip Korea',
-    'KOSPI OR KOSDAQ Korean stock semiconductor',
+    '("SK Hynix" OR "Samsung Electronics" OR HBM OR DRAM) chip Korea',
+    'KOSPI OR KOSDAQ OR "Korean stocks" OR "Korea stocks" OR "Korean won"',
 ]
 KEYWORDS = [
     "hynix", "samsung", "hbm", "dram", "nand", "micron", "memory chip",
-    "kospi", "kosdaq", "korea chip", "korean chip", "tsmc", "nvidia",
-    "반도체", "하이닉스", "삼성전자", "메모리",
+    "kospi", "kosdaq", "korea", "korean", "tsmc", "nvidia", "won",
+    "반도체", "하이닉스", "삼성전자", "메모리", "코스피", "코스닥", "증시",
 ]
 
 
@@ -112,8 +112,10 @@ def draft(item):
         "Rules for the post: hook in line 1; short (2-4 short lines / 1-2 paragraphs); one idea; "
         "numbers over adjectives; confident brand voice but human; NO em-dashes, NO '~', "
         "NO phrases like 'worth noting'; NO emojis; NO links; neutral (not buy/sell advice). "
-        "Only flag as worthy if it's genuinely notable (milestone, big move, surprising data, policy). "
-        "Skip routine/duplicate/PR fluff."
+        "Worthy = genuinely notable: a sharp index move (KOSPI/KOSDAQ falling or rising hard, "
+        "a sell-off or rally), a big single-stock move, earnings surprise, M&A, regulation/policy, "
+        "a milestone, or a supply/demand shift. A big market drop IS worthy. "
+        "Skip routine/duplicate/PR fluff, small daily noise, and listicles."
     )
     usr = (
         f"Headline: {item['title']}\nSource: {item['source']}\n\n"
