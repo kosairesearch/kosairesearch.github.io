@@ -1,12 +1,15 @@
 name: 🚨 뉴스 이슈 알림(텔레그램)
 
+# GitHub의 잦은 크론(*/10)은 부하 때 자주 건너뛰므로, 타이머를 GitHub에 맡기지 않고
+# "한 번 시작된 작업이 약 5.5시간 동안 내부에서 10분마다 점검"하도록 함.
+# 신뢰도 높은 5시간 간격 크론으로 새 작업을 띄워 끊김 없이 이어지게 한다.
 on:
   schedule:
-    - cron: '*/10 * * * *'   # 10분마다 (GH Actions 특성상 지연될 수 있음)
+    - cron: '11 0,5,10,15,20 * * *'   # 5시간마다 — 각 실행이 5.5h 동안 10분 간격 점검(겹쳐서 연속 커버)
   workflow_dispatch:
     inputs:
       test:
-        description: '연결 테스트 (텔레그램으로 확인 메시지 1건 발송)'
+        description: '연결 테스트 (텔레그램 확인 메시지 1건)'
         type: boolean
         default: false
 
@@ -17,7 +20,7 @@ concurrency:
 jobs:
   alert:
     runs-on: ubuntu-latest
-    timeout-minutes: 8
+    timeout-minutes: 345
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-python@v5
@@ -25,18 +28,24 @@ jobs:
           python-version: '3.11'
           cache: 'pip'
       - run: pip install -r requirements.txt
-      # 중복방지 상태(_news_seen.json)를 캐시로 보존 — 레포 커밋/Pages 재배포 안 함
+      # 중복방지 상태(_news_seen.json) 보존 — 레포 커밋/Pages 재배포 없음
       - name: 상태 복원/저장 (캐시)
         uses: actions/cache@v4
         with:
           path: data/_news_seen.json
           key: news-seen-${{ github.run_id }}
           restore-keys: news-seen-
-      - name: 뉴스 감지 → 텔레그램 알림
+      - name: 10분 간격 점검 루프 (약 5.5시간)
         env:
           TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
           TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
           ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
           NEWS_MODEL: claude-sonnet-4-6
           NEWS_TEST: ${{ inputs.test }}
-        run: python scripts/news_alert.py
+        run: |
+          if [ "${NEWS_TEST}" = "true" ]; then python scripts/news_alert.py; exit 0; fi
+          end=$(( SECONDS + 19500 ))   # 약 5시간 25분
+          while [ "$SECONDS" -lt "$end" ]; do
+            python scripts/news_alert.py || true
+            sleep 600
+          done
