@@ -54,21 +54,110 @@ def save_state(st):
     STATE.write_text(json.dumps(st, ensure_ascii=False), encoding="utf-8")
 
 
-def pick_ticker(st):
-    """오늘 올릴 종목 1개 선정 — 리포트 있는 상위 시총에서 미사용분 우선."""
-    forced = os.getenv("X_TICKER", "").strip()
+def _stats(stock, valmap):
+    p = stock.get("price")
+    e = valmap.get(stock["ticker"], {})
+    eps, bps, dps = e.get("eps"), e.get("bps"), e.get("dps")
+    per = round(p / eps, 1) if (eps and eps > 0 and p) else None
+    pbr = round(p / bps, 2) if (bps and bps > 0 and p) else None
+    div = round(dps / p * 100, 2) if (dps and p) else None
+    return per, pbr, div
+
+
+def _thesis(tk):
+    try:
+        rp = json.loads((ROOT / "data" / "reports_v2" / f"{tk}.json").read_text(encoding="utf-8"))
+        return t2(rp.get("title")), t2(rp.get("lead"))
+    except Exception:
+        return "", ""
+
+
+def build_candidates(st):
+    """오늘 올릴 만한 후보 추림 — ① 당일 상승(긍정적 이슈 프록시) ② 저평가 셋업."""
     live = loadjs("data/stocks.js", "window.KOS_LIVE_DATA")["stocks"]
-    have_report = set(p.stem for p in (ROOT / "data" / "reports_v2").glob("*.json"))
+    valmap = loadjs("data/valuation.js", "window.KOS_VALUATION")["stocks"]
+    have = set(p.stem for p in (ROOT / "data" / "reports_v2").glob("*.json"))
     by_mcap = sorted(live, key=lambda x: x.get("mcap", 0) or 0, reverse=True)
-    pool = [s for s in by_mcap if s["ticker"] in have_report][:POOL]
-    if forced:
-        hit = next((s for s in live if s["ticker"] == forced), None)
-        return hit
+    rankpool = [s for s in by_mcap if s["ticker"] in have][:POOL]   # 인지도 컷
     recent = set(st.get("recent", [])[-NO_REPEAT:])
-    for s in pool:                       # 시총 큰 순 + 최근 미사용
-        if s["ticker"] not in recent:
-            return s
-    return pool[0] if pool else None      # 전부 썼으면 맨 위부터 재시작
+    pool = [s for s in rankpool if s["ticker"] not in recent]
+
+    # ① 모멘텀: 당일 +1.5% 이상 & 거래대금 충분(유동성 있는 실제 이슈)
+    movers = sorted(
+        [s for s in pool if (s.get("change") or 0) >= 1.5 and (s.get("trading_value") or 0) >= 1e10],
+        key=lambda s: s.get("change") or 0, reverse=True)[:10]
+
+    # ② 밸류: 흑자(eps>0) & 합리적 저PER·저PBR(부실·이상치 제외)
+    def cheap(s):
+        per, pbr, _ = _stats(s, valmap)
+        return per is not None and pbr is not None and 2 <= per <= 12 and 0.2 <= pbr <= 1.5
+    value = sorted([s for s in pool if cheap(s)],
+                   key=lambda s: (_stats(s, valmap)[0] or 99))[:10]
+
+    seen, cands = set(), []
+    for tag, lst in (("mover", movers), ("value", value)):
+        for s in lst:
+            if s["ticker"] in seen:
+                continue
+            seen.add(s["ticker"])
+            per, pbr, div = _stats(s, valmap)
+            title, lead = _thesis(s["ticker"])
+            cands.append({"stock": s, "tag": tag, "per": per, "pbr": pbr, "div": div,
+                          "change": s.get("change"), "title": title, "lead": lead})
+    fallback = pool[0] if pool else (rankpool[0] if rankpool else None)
+    return cands, fallback
+
+
+def choose_with_judgment(cands):
+    """후보 중 '오늘 올릴 1개'를 Claude 편집 판단으로 선정."""
+    if len(cands) == 1:
+        return cands[0]["stock"]
+    import anthropic
+    client = anthropic.Anthropic(api_key=ANTHROPIC_KEY)
+    rows = []
+    for c in cands:
+        s = c["stock"]
+        rows.append(
+            f'{s["ticker"]} {s.get("name")} | {s.get("sector")} | 당일 {c["change"]}% '
+            f'| 시총 {round(s.get("mcap",0),1)}조 | PER {c["per"]} | PBR {c["pbr"]} '
+            f'| 배당 {c["div"]}% | [{c["tag"]}] | 논지: {(c["lead"] or c["title"])[:160]}')
+    sys_p = (
+        "You are the editor of KOSAI, an English research brand on Korean stocks. "
+        "Pick exactly ONE stock from the list that is the most worth a single research post TODAY. "
+        "Prefer (a) a clear positive development today (a strong up-move usually reflects real news/catalyst), "
+        "or (b) a genuinely interesting valuation or quality setup with a solid business. "
+        "Avoid names whose only story is decline, distress, or a one-off spike with no substance. "
+        "KOSAI is neutral: do NOT pick because 'it will go up' — pick what is most informative and discussion-worthy. "
+        "Return ONLY JSON: {\"ticker\":\"<6 digits>\",\"why\":\"<short reason in Korean>\"}."
+    )
+    usr = "후보:\n" + "\n".join(rows)
+    try:
+        msg = client.messages.create(model=MODEL, max_tokens=300, system=sys_p,
+                                     messages=[{"role": "user", "content": usr}])
+        txt = "".join(b.text for b in msg.content if getattr(b, "type", "") == "text")
+        m = re.search(r"\{.*\}", txt, re.S)
+        data = json.loads(m.group(0)) if m else {}
+        tk = (data.get("ticker") or "").strip()
+        log("편집 선정:", tk, "|", data.get("why", ""))
+        hit = next((c["stock"] for c in cands if c["stock"]["ticker"] == tk), None)
+        return hit or cands[0]["stock"]
+    except Exception as e:
+        log("선정 판단 실패, 첫 후보 사용:", e)
+        return cands[0]["stock"]
+
+
+def pick_ticker(st):
+    """오늘 올릴 종목 1개 — 모멘텀/밸류 후보군에서 Claude가 편집 선정(시총순 아님)."""
+    forced = os.getenv("X_TICKER", "").strip()
+    if forced:
+        live = loadjs("data/stocks.js", "window.KOS_LIVE_DATA")["stocks"]
+        return next((s for s in live if s["ticker"] == forced), None)
+    cands, fallback = build_candidates(st)
+    if not cands:
+        log("후보 없음 — 폴백(시총 상위 미사용분) 사용.")
+        return fallback
+    log(f"후보 {len(cands)}종목(모멘텀+밸류) 중 선정 진행.")
+    return choose_with_judgment(cands)
 
 
 def t2(node, lang="en"):
