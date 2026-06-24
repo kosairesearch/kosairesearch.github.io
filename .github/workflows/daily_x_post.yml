@@ -1,0 +1,52 @@
+name: 📅 오늘의 X 종목글(텔레그램)
+
+# 하루 1종목 — 정해진 시간에 X 게시용 글을 텔레그램으로 푸시.
+# GitHub 크론은 자주 밀리므로 백업 크론을 여러 개 두고, 스크립트의 '오늘 날짜
+# 가드'로 하루 1번만 전송되게 한다(먼저 도는 크론이 보내면 나머지는 스킵).
+on:
+  schedule:
+    - cron: '0 12 * * *'    # 21:00 KST (1차 — 미국장 개장 전 한국 저녁)
+    - cron: '30 12 * * *'   # 21:30 KST (지연 백업)
+    - cron: '0 13 * * *'    # 22:00 KST (지연 백업)
+  workflow_dispatch:
+    inputs:
+      ticker:
+        description: '특정 종목 강제(6자리 코드). 비우면 자동 로테이션.'
+        type: string
+        default: ''
+      force:
+        description: '오늘 이미 보냈어도 재전송(테스트용)'
+        type: boolean
+        default: false
+
+concurrency:
+  group: kos-x-daily
+  cancel-in-progress: false
+
+jobs:
+  post:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+          cache: 'pip'
+      - run: pip install -r requirements.txt
+      # 전송 상태(_x_daily.json) 보존 — 날짜 가드/로테이션. 커밋·Pages 재배포 없음.
+      - name: 상태 복원/저장 (캐시)
+        uses: actions/cache@v4
+        with:
+          path: data/_x_daily.json
+          key: x-daily-${{ github.run_id }}
+          restore-keys: x-daily-
+      - name: 종목글 생성 → 텔레그램
+        env:
+          TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
+          TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+          NEWS_MODEL: claude-sonnet-4-6
+          X_TICKER: ${{ inputs.ticker }}
+          X_FORCE: ${{ inputs.force && '1' || '' }}
+        run: python scripts/daily_x_post.py

@@ -175,9 +175,12 @@ def main():
 
     new = []
     for it in items:
-        # 중복방지: 링크는 매번 바뀌므로(구글 리다이렉트) 제목 기준으로 식별
-        key = re.sub(r"\s+", " ", (it["title"] or "").lower()).strip()
-        iid = hashlib.sha1(key.encode("utf-8")).hexdigest()[:16]
+        # 중복방지: 링크는 매번 바뀌므로(구글 리다이렉트) 제목 '핵심'으로 식별.
+        #  - 구글뉴스 제목 끝의 ' - 출처' 꼬리 제거(같은 기사 타 매체 중복 차단)
+        #  - 소문자화 + 영숫자/한글만 남겨 표기 차이 흡수
+        core = re.sub(r"\s+-\s+[^-]+$", "", (it["title"] or "")).lower()
+        core = re.sub(r"[^0-9a-z가-힣]+", "", core)
+        iid = hashlib.sha1(core.encode("utf-8")).hexdigest()[:16]
         if iid in seen:
             continue
         seen.add(iid)
