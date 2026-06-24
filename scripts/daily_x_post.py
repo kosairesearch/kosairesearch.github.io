@@ -13,6 +13,7 @@
 """
 import os
 import re
+import sys
 import json
 from datetime import datetime, timezone, timedelta
 from pathlib import Path
@@ -145,18 +146,25 @@ def draft(brief, snap):
         "\"ko\": \"<Korean gloss so the operator can verify accuracy and tone>\"}."
     )
     msg = client.messages.create(
-        model=MODEL, max_tokens=900, system=sys_p,
+        model=MODEL, max_tokens=2500, system=sys_p,
         messages=[{"role": "user", "content": usr}],
     )
     txt = "".join(b.text for b in msg.content if getattr(b, "type", "") == "text")
+    if getattr(msg, "stop_reason", "") == "max_tokens":
+        log("⚠ 응답이 max_tokens로 잘림 — 상한을 더 올려야 할 수 있음.")
     m = re.search(r"\{.*\}", txt, re.S)
     if not m:
+        log("draft 파싱 실패. 응답 앞부분:", txt[:200].replace("\n", " "))
         return None
     try:
         from json_repair import repair_json
         return json.loads(repair_json(m.group(0)))
-    except Exception:
-        return json.loads(m.group(0))
+    except Exception as e:
+        log("draft JSON 복구 실패:", e, "| 응답 앞부분:", txt[:200].replace("\n", " "))
+        try:
+            return json.loads(m.group(0))
+        except Exception:
+            return None
 
 
 def tg_send(text):
