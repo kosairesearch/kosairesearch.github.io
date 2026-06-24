@@ -175,25 +175,29 @@ def tg_send(text):
 
 
 def main():
-    if not (TG_TOKEN and TG_CHAT and ANTHROPIC_KEY):
-        log("⚠ 시크릿(TELEGRAM/ANTHROPIC) 미설정 — 종료.")
-        return
+    miss = [n for n, v in (("TELEGRAM_BOT_TOKEN", TG_TOKEN),
+                           ("TELEGRAM_CHAT_ID", TG_CHAT),
+                           ("ANTHROPIC_API_KEY", ANTHROPIC_KEY)) if not v]
+    if miss:
+        log("❌ 시크릿 미설정:", ", ".join(miss), "— 레포 Settings>Secrets 확인 필요.")
+        sys.exit(1)
     today = datetime.now(KST).strftime("%Y%m%d")
     force = os.getenv("X_FORCE", "").lower() in ("1", "true", "yes")
     st = load_state()
     if st.get("last_date") == today and not force and not os.getenv("X_TICKER"):
-        log(f"오늘({today}) 이미 전송함 — 스킵.")   # 백업 크론 중복 방지
+        log(f"⏭ 오늘({today}) 이미 전송함 — 스킵(재전송하려면 force 체크).")  # 백업 크론 중복 방지
         return
 
     stock = pick_ticker(st)
     if not stock:
-        log("후보 종목 없음 — 종료.")
-        return
+        log("❌ 후보 종목 없음 — 종료.")
+        sys.exit(1)
+    log(f"선정: {stock['ticker']} {stock.get('name')}")
     brief, snap = build_brief(stock)
     d = draft(brief, snap)
     if not d or not d.get("en"):
-        log("초안 생성 실패 — 종료.")
-        return
+        log("❌ 초안 생성 실패(Claude 응답 파싱 불가) — 종료.")
+        sys.exit(1)
 
     tk = stock["ticker"]
     head = (f"📅 오늘의 X 종목글 — {snap['name_ko']} ({tk}) · {snap.get('sector','')}\n"
@@ -207,9 +211,10 @@ def main():
         st.setdefault("recent", []).append(tk)
         st["recent"] = st["recent"][-200:]
         save_state(st)
-        log(f"전송 완료 — {tk} {snap['name_ko']}")
+        log(f"✅ 전송 완료 — {tk} {snap['name_ko']}")
     else:
-        log("전송 실패.")
+        log("❌ 텔레그램 전송 실패 — 위 '텔레그램 응답 오류' 로그 확인.")
+        sys.exit(1)
 
 
 if __name__ == "__main__":
