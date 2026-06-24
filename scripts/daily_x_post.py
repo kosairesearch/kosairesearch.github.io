@@ -167,7 +167,7 @@ def draft(brief, snap):
             return None
 
 
-def tg_send(text):
+def _send_one(text):
     try:
         r = requests.post(
             f"https://api.telegram.org/bot{TG_TOKEN}/sendMessage",
@@ -180,6 +180,32 @@ def tg_send(text):
     except Exception as e:
         log("텔레그램 예외:", e)
         return False
+
+
+def _chunk(text, limit=4000):
+    """텔레그램 4096자 한도 대비 — 줄 경계 우선으로 분할."""
+    if len(text) <= limit:
+        return [text]
+    parts, cur = [], ""
+    for line in text.split("\n"):
+        if len(cur) + len(line) + 1 > limit and cur:
+            parts.append(cur)
+            cur = ""
+        # 한 줄 자체가 한도를 넘으면 강제 분할
+        while len(line) > limit:
+            parts.append(line[:limit])
+            line = line[limit:]
+        cur = line if not cur else cur + "\n" + line
+    if cur:
+        parts.append(cur)
+    return parts
+
+
+def tg_send(text):
+    ok = True
+    for part in _chunk(text):
+        ok = _send_one(part) and ok
+    return ok
 
 
 def main():
@@ -210,11 +236,12 @@ def main():
     tk = stock["ticker"]
     head = (f"📅 오늘의 X 종목글 — {snap['name_ko']} ({tk}) · {snap.get('sector','')}\n"
             f"{snap.get('price_krw')}원 · 시총 {snap.get('mcap_tn_krw')}조 "
-            f"· PER {snap.get('PER')} · PBR {snap.get('PBR')}")
-    text = (f"{head}\n\n— EN (X에 복붙) —\n{d['en']}\n"
-            f"\n— KR (검수) —\n{d.get('ko','')}\n"
-            f"\n링크: https://kosai.kr/stock.html?ticker={tk}")
-    if tg_send(text):
+            f"· PER {snap.get('PER')} · PBR {snap.get('PBR')}\n"
+            f"링크: https://kosai.kr/stock.html?ticker={tk}")
+    # 메시지 2건 분리 — ① X 복붙용 영어글(깔끔하게 단독), ② 한국어 검수본
+    msg_en = f"{head}\n\n— EN (아래만 X에 복붙) —\n{d['en']}"
+    msg_ko = f"— KR (검수용) —\n{d.get('ko','')}"
+    if tg_send(msg_en) and tg_send(msg_ko):
         st["last_date"] = today
         st.setdefault("recent", []).append(tk)
         st["recent"] = st["recent"][-200:]
