@@ -48,5 +48,6 @@ jobs:
           ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
           NEWS_MODEL: claude-sonnet-4-6
           X_TICKER: ${{ inputs.ticker }}
-          X_FORCE: ${{ inputs.force && '1' || '' }}
+          # 수동 실행(Run workflow)은 항상 발송 — 날짜 가드는 자동 크론 중복 방지용으로만 적용.
+          X_FORCE: ${{ (github.event_name == 'workflow_dispatch' || inputs.force) && '1' || '' }}
         run: python scripts/daily_x_post.py
