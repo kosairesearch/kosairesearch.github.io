@@ -13,9 +13,10 @@ on:
         type: boolean
         default: false
 
+# 새 실행이 시작되면 '옛 코드로 돌던' 기존 실행을 취소·교체 — 수정 즉시 반영.
 concurrency:
   group: kos-news-alert
-  cancel-in-progress: false
+  cancel-in-progress: true
 
 jobs:
   alert:

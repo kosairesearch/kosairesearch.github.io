@@ -29,7 +29,8 @@ TG_TOKEN = os.getenv("TELEGRAM_BOT_TOKEN", "").strip()
 TG_CHAT = os.getenv("TELEGRAM_CHAT_ID", "").strip()
 ANTHROPIC_KEY = os.getenv("ANTHROPIC_API_KEY", "").strip()
 MODEL = os.getenv("NEWS_MODEL", "claude-sonnet-4-6")
-MAX_PER_RUN = int(os.getenv("NEWS_MAX_PER_RUN", "4"))
+MAX_PER_RUN = int(os.getenv("NEWS_MAX_PER_RUN", "2"))
+DAILY_MAX = int(os.getenv("NEWS_DAILY_MAX", "8"))       # 하루 알림 하드캡(폭주 방지)
 RECENCY_MIN = int(os.getenv("NEWS_RECENCY_MIN", "120"))  # 최근 N분 내 기사만(크론 지연 대비 넓게)
 
 # 감시 키워드(이 중 하나라도 제목에 있어야 후보) + Google News 검색식
@@ -48,16 +49,23 @@ def log(*a):
     print(*a, flush=True)
 
 
-def load_seen():
+def load_state():
+    """{'seen':[id...], 'day':'YYYYMMDD', 'sent_today':N}. 구버전(list)도 호환."""
     try:
-        return set(json.loads(SEEN.read_text(encoding="utf-8")))
+        d = json.loads(SEEN.read_text(encoding="utf-8"))
+        if isinstance(d, list):
+            return {"seen": d, "day": "", "sent_today": 0}
+        return {"seen": list(d.get("seen", [])), "day": d.get("day", ""),
+                "sent_today": int(d.get("sent_today", 0))}
     except Exception:
-        return set()
+        return {"seen": [], "day": "", "sent_today": 0}
 
 
-def save_seen(s):
+def save_state(stt):
     SEEN.parent.mkdir(parents=True, exist_ok=True)
-    SEEN.write_text(json.dumps(list(s)[-800:], ensure_ascii=False), encoding="utf-8")
+    # seen은 '리스트(순서 보존)'로 저장 — 최근 1000개만(set 정렬불가 버그 방지)
+    stt["seen"] = stt["seen"][-1000:]
+    SEEN.write_text(json.dumps(stt, ensure_ascii=False), encoding="utf-8")
 
 
 def fetch_items():
@@ -112,10 +120,12 @@ def draft(item):
         "Rules for the post: hook in line 1; short (2-4 short lines / 1-2 paragraphs); one idea; "
         "numbers over adjectives; confident brand voice but human; NO em-dashes, NO '~', "
         "NO phrases like 'worth noting'; NO emojis; NO links; neutral (not buy/sell advice). "
-        "Worthy = genuinely notable: a sharp index move (KOSPI/KOSDAQ falling or rising hard, "
-        "a sell-off or rally), a big single-stock move, earnings surprise, M&A, regulation/policy, "
-        "a milestone, or a supply/demand shift. A big market drop IS worthy. "
-        "Skip routine/duplicate/PR fluff, small daily noise, and listicles."
+        "Be STRICT: most headlines are NOT worthy. Default to worthy=false. Only flag a genuinely "
+        "market-moving event: a sharp index move (KOSPI/KOSDAQ selling off or rallying hard), a "
+        "major single-stock move with a real catalyst, a clear earnings surprise, sizable M&A, "
+        "significant regulation/policy, or a major supply/demand shift. "
+        "Skip routine updates, opinion/analysis pieces, previews/recaps, PR fluff, listicles, "
+        "small daily noise, and anything that merely restates a known story. When in doubt, skip."
     )
     usr = (
         f"Headline: {item['title']}\nSource: {item['source']}\n\n"
@@ -168,10 +178,15 @@ def main():
         ok = tg_send("✅ KOSAI 알림봇 연결 성공 — 이제 이슈가 뜨면 여기로 초안이 옵니다.")
         log("테스트 전송:", ok)
         return
-    seen = load_seen()
+    stt = load_state()
+    seen = set(stt["seen"])
     first_run = len(seen) == 0
+    today = datetime.now(timezone(timedelta(hours=9))).strftime("%Y%m%d")
+    if stt.get("day") != today:           # 자정(KST) 일일 카운터 리셋
+        stt["day"] = today
+        stt["sent_today"] = 0
     items = fetch_items()
-    log(f"후보 {len(items)}건, seen {len(seen)}건, first_run={first_run}")
+    log(f"후보 {len(items)}건, seen {len(seen)}건, 오늘발송 {stt['sent_today']}/{DAILY_MAX}, first_run={first_run}")
 
     new = []
     for it in items:
@@ -184,6 +199,7 @@ def main():
         if iid in seen:
             continue
         seen.add(iid)
+        stt["seen"].append(iid)
         if first_run:
             continue  # 첫 실행은 폭주 방지: 전부 seen 처리만, 알림 X
         if relevant(it["title"]) and recent(it["pub"]):
@@ -191,6 +207,9 @@ def main():
 
     sent = 0
     for it in new[:MAX_PER_RUN]:
+        if stt["sent_today"] >= DAILY_MAX:
+            log(f"⛔ 일일 상한({DAILY_MAX}) 도달 — 추가 알림 보류.")
+            break
         if not ANTHROPIC_KEY:
             break
         d = draft(it)
@@ -203,9 +222,10 @@ def main():
         )
         if tg_send(text):
             sent += 1
+            stt["sent_today"] += 1
 
-    save_seen(seen)
-    log(f"신규 {len(new)}건 / 알림 {sent}건 전송. 완료.")
+    save_state(stt)
+    log(f"신규 {len(new)}건 / 알림 {sent}건 전송(오늘 누적 {stt['sent_today']}/{DAILY_MAX}). 완료.")
 
 
 if __name__ == "__main__":
