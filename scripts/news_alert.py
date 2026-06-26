@@ -63,8 +63,10 @@ def load_state():
 
 def save_state(stt):
     SEEN.parent.mkdir(parents=True, exist_ok=True)
-    # seen은 '리스트(순서 보존)'로 저장 — 최근 1000개만(set 정렬불가 버그 방지)
+    # seen은 '리스트(순서 보존)'로 저장 — 최근 N개만(set 정렬불가 버그 방지)
     stt["seen"] = stt["seen"][-1000:]
+    if "titles" in stt:
+        stt["titles"] = stt["titles"][-120:]   # 최근 제목 핵심단어(유사중복 비교용)
     SEEN.write_text(json.dumps(stt, ensure_ascii=False), encoding="utf-8")
 
 
@@ -107,6 +109,43 @@ def recent(pub):
 def relevant(title):
     t = title.lower()
     return any(k in t for k in KEYWORDS)
+
+
+# 유사(같은 사건·다른 제목) 중복 차단용 — 너무 흔해 변별력 없는 단어 제외
+_STOP = set((
+    "the a an to of in on for and or as at is are was be by with after amid over from "
+    "up down vs into out new news report reports says say said will would could may "
+    "korea korean koreas kospi kosdaq stock stocks share shares market markets won "
+    "this that it its their his her than more most amid set sets year years day days "
+    "등 것 중 그 및 또 더 약 위 이 가 의 에 를 은 는 도 한 수"
+).split())
+
+
+def _tokens(title):
+    """제목 → 핵심 단어 집합(출처 꼬리 제거, 불용어/짧은 토큰 제외)."""
+    t = re.sub(r"\s+-\s+[^-]+$", "", title or "").lower()
+    out = set()
+    for w in re.split(r"[^0-9a-z가-힣]+", t):
+        if len(w) >= 2 and w not in _STOP:
+            out.add(w)
+    return out
+
+
+def _near_dup(toks, recent_sets):
+    """이미 본 제목들과 핵심 단어가 크게 겹치면(같은 사건) True."""
+    if len(toks) < 3:
+        return False
+    for ps in recent_sets:
+        if len(ps) < 3:
+            continue
+        inter = len(toks & ps)
+        if inter < 3:                              # 핵심단어 3개 미만 공유면 별개로 봄
+            continue
+        if inter / len(toks | ps) >= 0.45:         # 자카드 유사도
+            return True
+        if inter / min(len(toks), len(ps)) >= 0.6:  # 한쪽이 다른 쪽에 상당부분 포함
+            return True
+    return False
 
 
 def draft(item):
@@ -186,22 +225,27 @@ def main():
         stt["day"] = today
         stt["sent_today"] = 0
     items = fetch_items()
+    recent_sets = [set(x) for x in stt.get("titles", [])]   # 최근 제목 핵심단어
     log(f"후보 {len(items)}건, seen {len(seen)}건, 오늘발송 {stt['sent_today']}/{DAILY_MAX}, first_run={first_run}")
 
     new = []
     for it in items:
-        # 중복방지: 링크는 매번 바뀌므로(구글 리다이렉트) 제목 '핵심'으로 식별.
-        #  - 구글뉴스 제목 끝의 ' - 출처' 꼬리 제거(같은 기사 타 매체 중복 차단)
-        #  - 소문자화 + 영숫자/한글만 남겨 표기 차이 흡수
+        # 1) 완전 동일 제목: 글자 기준 해시(출처 꼬리 제거 + 영숫자/한글만)
         core = re.sub(r"\s+-\s+[^-]+$", "", (it["title"] or "")).lower()
         core = re.sub(r"[^0-9a-z가-힣]+", "", core)
         iid = hashlib.sha1(core.encode("utf-8")).hexdigest()[:16]
         if iid in seen:
             continue
+        # 2) 유사 제목(같은 사건·다른 문장): 핵심단어 겹침으로 차단
+        toks = _tokens(it["title"])
+        dup = _near_dup(toks, recent_sets)
         seen.add(iid)
         stt["seen"].append(iid)
-        if first_run:
-            continue  # 첫 실행은 폭주 방지: 전부 seen 처리만, 알림 X
+        if not dup and len(toks) >= 3:
+            recent_sets.append(toks)                 # 이후 항목·다음 실행과 비교용
+            stt.setdefault("titles", []).append(sorted(toks))
+        if first_run or dup:
+            continue  # 첫 실행/유사중복은 기록만, 알림 X
         if relevant(it["title"]) and recent(it["pub"]):
             new.append(it)
 
