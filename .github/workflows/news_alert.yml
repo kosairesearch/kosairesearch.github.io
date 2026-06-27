@@ -36,7 +36,7 @@ jobs:
           path: data/_news_seen.json
           key: news-seen-${{ github.run_id }}
           restore-keys: news-seen-
-      - name: 10분 간격 점검 루프 (약 5.5시간)
+      - name: 10분 간격 점검 루프 (약 4.5시간)
         env:
           TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
           TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
@@ -45,7 +45,9 @@ jobs:
           NEWS_TEST: ${{ inputs.test }}
         run: |
           if [ "${NEWS_TEST}" = "true" ]; then python scripts/news_alert.py; exit 0; fi
-          end=$(( SECONDS + 19500 ))   # 약 5시간 25분
+          # ⚠ 루프는 크론 간격(5h)보다 '짧게' 끝나야 함 — 그래야 작업이 정상 종료되며
+          #   상태 캐시(_news_seen.json) post 저장이 실행됨. 길면 다음 크론이 취소→상태 유실→중복.
+          end=$(( SECONDS + 16200 ))   # 4시간 30분(크론 5h보다 짧게 → 정상 종료·상태 저장 보장)
           while [ "$SECONDS" -lt "$end" ]; do
             python scripts/news_alert.py || true
             sleep 600

@@ -148,8 +148,8 @@ def _near_dup(toks, recent_sets):
     return False
 
 
-def draft(item):
-    """Claude로 게시 가치 판단 + 초안 생성. 가치 없으면 None."""
+def draft(item, recent_headlines=None):
+    """Claude로 게시 가치 판단 + 의미 기반 중복 차단 + 초안 생성. 가치 없으면 None."""
     import anthropic
     client = anthropic.Anthropic(api_key=ANTHROPIC_KEY)
     sys_p = (
@@ -164,13 +164,21 @@ def draft(item):
         "major single-stock move with a real catalyst, a clear earnings surprise, sizable M&A, "
         "significant regulation/policy, or a major supply/demand shift. "
         "Skip routine updates, opinion/analysis pieces, previews/recaps, PR fluff, listicles, "
-        "small daily noise, and anything that merely restates a known story. When in doubt, skip."
+        "small daily noise, and anything that merely restates a known story. When in doubt, skip. "
+        "DEDUP RULE (critical): you will get a list of headlines we ALREADY posted recently. If the "
+        "new headline is about the SAME underlying event or story as ANY of them, even if worded "
+        "differently, from another outlet, or a follow-up/update, it is a DUPLICATE. Return "
+        "{\"worthy\": false}. Only worthy if it is a genuinely NEW event not yet covered."
     )
+    already = ""
+    if recent_headlines:
+        already = ("\n\nAlready posted recently (do NOT repeat the same story):\n"
+                   + "\n".join(f"- {h}" for h in recent_headlines[-25:]))
     usr = (
-        f"Headline: {item['title']}\nSource: {item['source']}\n\n"
+        f"New headline: {item['title']}\nSource: {item['source']}{already}\n\n"
         "Return ONLY JSON: {\"worthy\": true|false, \"en\": \"<post in English>\", "
         "\"ko\": \"<Korean translation for the operator to verify>\"}. "
-        "If not worthy, return {\"worthy\": false}."
+        "If not worthy or duplicate, return {\"worthy\": false}."
     )
     try:
         msg = client.messages.create(
@@ -250,13 +258,14 @@ def main():
             new.append(it)
 
     sent = 0
+    sent_titles = stt.get("sent_titles", [])      # 최근 '실제 발송' 제목(의미 기반 중복차단용)
     for it in new[:MAX_PER_RUN]:
         if stt["sent_today"] >= DAILY_MAX:
             log(f"⛔ 일일 상한({DAILY_MAX}) 도달 — 추가 알림 보류.")
             break
         if not ANTHROPIC_KEY:
             break
-        d = draft(it)
+        d = draft(it, recent_headlines=sent_titles)   # Claude가 같은 사건이면 worthy=false
         if not d:
             continue
         text = (
@@ -267,6 +276,8 @@ def main():
         if tg_send(text):
             sent += 1
             stt["sent_today"] += 1
+            sent_titles.append(it["title"])
+    stt["sent_titles"] = sent_titles[-60:]
 
     save_state(stt)
     log(f"신규 {len(new)}건 / 알림 {sent}건 전송(오늘 누적 {stt['sent_today']}/{DAILY_MAX}). 완료.")
