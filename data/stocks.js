@@ -1,6 +1,6 @@
 // KOS ai — 자동 생성 데이터 파일. 직접 수정하지 마세요.
 window.KOS_LIVE_DATA = {
-  "lastUpdated": "2026-06-30 06:29",
+  "lastUpdated": "2026-06-30 07:39",
   "dataDate": "20260629",
   "stocks": [
     {
@@ -15216,7 +15216,7 @@ window.KOS_LIVE_DATA = {
       "name": "져스텍",
       "name_en": "Justek, Inc.",
       "market": "코스닥",
-      "sector": "전기장비",
+      "sector": "기계·장비",
       "price": 17530,
       "change": 40.24,
       "volume": 25034802,
@@ -15225,7 +15225,7 @@ window.KOS_LIVE_DATA = {
       "shares": 12050305,
       "induty_code": "28111",
       "categories": [
-        "전기장비"
+        "기계·장비"
       ],
       "rank": 845
     },
