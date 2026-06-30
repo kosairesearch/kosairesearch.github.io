@@ -1,6 +1,6 @@
 // KOS ai — 자동 생성 데이터 파일. 직접 수정하지 마세요.
 window.KOS_LIVE_DATA = {
-  "lastUpdated": "2026-07-01 03:28",
+  "lastUpdated": "2026-07-01 05:37",
   "dataDate": "20260630",
   "stocks": [
     {
@@ -10208,17 +10208,18 @@ window.KOS_LIVE_DATA = {
     {
       "ticker": "475040",
       "name": "스트라드비젼",
-      "name_en": "",
+      "name_en": "StradVision, Inc.",
       "market": "코스닥",
-      "sector": "기타",
+      "sector": "IT·소프트웨어",
       "price": 7200,
       "change": -40.0,
       "volume": 21745171,
       "trading_value": 184185869455,
       "mcap": 0.3834,
       "shares": 53255138,
+      "induty_code": "582",
       "categories": [
-        "기타"
+        "IT·소프트웨어"
       ],
       "rank": 567
     },
@@ -48417,24 +48418,6 @@ window.KOS_LIVE_DATA = {
         "유통·소비재"
       ],
       "rank": 2686
-    },
-    {
-      "ticker": "227100",
-      "name": "프로브잇",
-      "name_en": "Prove it Co., Ltd.",
-      "market": "코스닥",
-      "sector": "부동산·리츠",
-      "price": 2,
-      "change": -60.0,
-      "volume": 9783570,
-      "trading_value": 22771364,
-      "mcap": 0.0001,
-      "shares": 28630584,
-      "induty_code": "682",
-      "categories": [
-        "부동산·리츠"
-      ],
-      "rank": 2687
     }
   ]
 };
