@@ -1,6 +1,6 @@
 // KOS ai — 자동 생성 데이터 파일. 직접 수정하지 마세요.
 window.KOS_LIVE_DATA = {
-  "lastUpdated": "2026-07-01 05:37",
+  "lastUpdated": "2026-07-01 06:17",
   "dataDate": "20260630",
   "stocks": [
     {
@@ -48418,6 +48418,24 @@ window.KOS_LIVE_DATA = {
         "유통·소비재"
       ],
       "rank": 2686
+    },
+    {
+      "ticker": "227100",
+      "name": "프로브잇",
+      "name_en": "Prove it Co., Ltd.",
+      "market": "코스닥",
+      "sector": "부동산·리츠",
+      "price": 2,
+      "change": -60.0,
+      "volume": 9783570,
+      "trading_value": 22771364,
+      "mcap": 0.0001,
+      "shares": 28630584,
+      "induty_code": "682",
+      "categories": [
+        "부동산·리츠"
+      ],
+      "rank": 2687
     }
   ]
 };
