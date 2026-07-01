@@ -587,7 +587,7 @@ body::after,body::before{display:none}
           <a class="btn lp-btn lp-btn-soft" href="Reports.html">리포트 둘러보기</a>
         </div>
         <div class="lp-stats">
-          <div class="lp-stat"><b id="lpRepN" data-i18n-skip>2,700여</b><span>AI 리포트</span></div>
+          <div class="lp-stat"><b id="lpRepN" data-i18n-skip>2,684</b><span>AI 리포트</span></div>
           <div class="lp-stat"><b>29개</b><span>업종 분석</span></div>
           <div class="lp-stat"><b>매 거래일</b><span>데이터 갱신</span></div>
         </div>
@@ -635,12 +635,13 @@ if(window.KOSi18n) KOSi18n.register({
 });
 </script>
 <script>
-/* AI 리포트 수 — 실제 데이터(reports-index)에서 읽어 정확히 표시 */
+/* AI 리포트 수 — 리포트 페이지와 동일 기준(전 종목 수 stockCount)으로 통일 표시.
+   stockCount가 없으면(구버전 인덱스) 리포트 항목 수로 폴백. */
 (function(){
   function upd(){
     fetch('data/reports-index.js',{cache:'no-cache'}).then(function(r){return r.text();}).then(function(t){
       var d=JSON.parse(t.slice(t.indexOf('=')+1).trim().replace(/;$/,''));
-      var n=Object.keys(d.reports||{}).length;
+      var n=d.stockCount||Object.keys(d.reports||{}).length;
       var el=document.getElementById('lpRepN');
       if(n>0&&el) el.textContent=n.toLocaleString();
     }).catch(function(){});

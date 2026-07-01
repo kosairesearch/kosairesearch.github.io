@@ -1,0 +1,55 @@
+name: 리포트 없는 종목 자동 백필
+
+# universe(data/stocks.js)에는 있는데 리포트가 아예 없는 종목을 주기적으로 찾아
+# 리포트 생성을 재시도한다. 신규 상장·일시적 DART 누락으로 skip된 종목도 대상에 포함해,
+# '리포트 없는 종목'이 결국 채워지도록(랜딩/리포트 카운트가 전 종목 수와 수렴) 보장한다.
+#
+# 워치독(reports_watchdog.yml)은 fill 모드로 상위 N개를 채우되 skip 종목은 영구 제외하므로,
+# skip된 소수 종목은 워치독만으로는 영영 안 채워진다. 이 워크플로가 그 빈틈을 메운다.
+# 명시적 티커 지정(REPORT_TICKERS) run은 skip 목록을 건드리지 않아 병렬 실행에도 안전하다.
+
+on:
+  schedule:
+    - cron: '17 20 * * *'   # 매일 05:17 KST — 데이터 갱신·워치독과 겹치지 않는 조용한 시간
+  workflow_dispatch:
+    inputs:
+      limit:
+        description: '한 번에 백필할 최대 종목 수'
+        default: '50'
+
+concurrency:
+  group: backfill-missing
+  cancel-in-progress: false
+
+permissions:
+  contents: read
+  actions: write
+
+jobs:
+  backfill:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: 리포트 없는 종목 탐지 후 백필 디스패치
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          LIMIT='${{ inputs.limit }}'
+          LIMIT="${LIMIT:-50}"
+          missing=$(python scripts/_missing_tickers.py "$LIMIT")
+          if [ -z "$missing" ]; then
+            echo "→ 리포트 없는 종목 없음. 백필 불필요."
+            exit 0
+          fi
+          count=$(echo "$missing" | tr ',' '\n' | grep -c .)
+          echo "리포트 없는 종목 $count개 → 백필 디스패치: $missing"
+          # 명시적 티커 지정(tickers) → skip을 건드리지 않고 재시도. fill_to=0(백필 self-chain 미사용).
+          gh workflow run generate_reports_v2.yml \
+            -f mode=auto \
+            -f tickers="$missing" \
+            -f top_n="$count" \
+            -f fill_to='0'
