@@ -16548,7 +16548,7 @@ window.KOS_LIVE_DATA = {
     {
       "ticker": "0039P0",
       "name": "매드업",
-      "name_en": "",
+      "name_en": "MADUP",
       "market": "코스닥",
       "sector": "기타",
       "price": 10080,

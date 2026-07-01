@@ -51,6 +51,7 @@ NAME_EN_OVERRIDE = {
     "0010V0": "JPI Healthcare",
     "0010F0": "Bowon Chemical",
     "0070X0": "S-Tech M",
+    "0039P0": "MADUP",
 }
 
 # 우선주(전환·신주·우B·우C 등 포함)·스팩 판별 정규식 — universe(회사 리서치)에서 제외.

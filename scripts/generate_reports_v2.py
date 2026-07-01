@@ -877,7 +877,8 @@ def collect(cl, as_of):
             rep.update({
                 "v": 2, "model": (state.get("models", {}).get(tk) or state.get("model", MODEL)),
                 "ticker": tk, "name": st.get("name", tk),
-                "name_en": st.get("name_en", st.get("name", tk)),
+                # name_en이 빈 문자열이어도(DART 영문명 없음) 한글명으로 폴백 — 빈 영문명 방지.
+                "name_en": st.get("name_en") or st.get("name") or tk,
                 "sector": st.get("sector", ""), "categories": st.get("categories", []),
                 "market": st.get("market", ""),
                 "reportDate": now.strftime("%Y-%m-%d"),
