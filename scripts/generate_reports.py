@@ -110,7 +110,31 @@ def write_reports(reports, model, as_of):
                 pass
         return e
     index = {tk: _idx(tk, r) for tk, r in reports.items()}
+    # v2 전용 종목(v1 파일 없이 v2 리포트만 있는 종목 — 예: 백필로 생성된 신규상장분)도
+    # 인덱스에 포함한다. 없으면 v1 인덱스 재작성 때 그런 리포트가 목록에서 사라진다(475040 사례).
+    for p in sorted(v2_dir.glob("*.json")):
+        tk = p.stem
+        if tk in index or not re.fullmatch(r"[0-9][0-9A-Za-z]{5}", tk):
+            continue
+        try:
+            v2 = json.loads(p.read_text(encoding="utf-8"))
+        except Exception:
+            continue
+        if v2.get("title"):
+            index[tk] = {"title": v2.get("title"),
+                         "reportDate": v2.get("reportDate"),
+                         "reportTs": v2.get("reportTs") or v2.get("reportDate")}
     payload = {"lastUpdated": as_of, "model": model, "reports": index}
+    # 유령 리포트 정리(universe에 없는 상폐 종목) + 랜딩/리포트 카운트 통일용 stockCount.
+    # 여러 인덱스 작성 주체(_reindex·v1 생성기)가 같은 형태를 만들어 카운트가 튀지 않게 한다.
+    try:
+        universe = {s["ticker"] for s in load_stocks()["stocks"]}
+    except Exception:
+        universe = set()
+    if universe:
+        for tk in [t for t in index if t not in universe]:
+            del index[tk]
+        payload["stockCount"] = len(universe)
     REPORTS_INDEX_JS.write_text(
         "// KOS ai — 리포트 인덱스(자동 생성). 전체 본문은 data/reports 폴더의 종목별 JSON 참조.\n"
         "window.KOS_REPORTS = " + json.dumps(payload, ensure_ascii=False) + ";\n",
