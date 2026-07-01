@@ -1038,8 +1038,11 @@ def enrich_with_dart(results):
     debug_info = {}
     # 영문명(name_en)이 아직 없는 종목만 시총순으로 보강(상한 ENRICH_TOP).
     # 이미 보강된 종목은 main에서 기존값을 이월하므로 매번 다시 안 함 → 수렴.
+    # 단, 수동 폴백(NAME_EN_OVERRIDE) 종목은 매번 다시 DART를 조회한다 —
+    # DART에 나중에 진짜 영문명이 생기면 수동값("MADUP" 등)을 그 값으로 자동 교체하기 위함.
     ranked = sorted(results.values(), key=lambda x: (x.get("mcap", 0) or 0), reverse=True)
-    targets = [s for s in ranked if not s.get("name_en")][:ENRICH_TOP]
+    targets = [s for s in ranked
+               if not s.get("name_en") or s["ticker"] in NAME_EN_OVERRIDE][:ENRICH_TOP]
     print(f"  [DART] 영문명 미보강 {len(targets)}개 종목 DART 수집 중...")
 
     for i, stock in enumerate(targets):
