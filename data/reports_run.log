@@ -101,3 +101,15 @@
 - 🧹 유니버스 제외 종목 리포트 정리: 2건 (008500, 230360)
 
 ✅ 회수 완료 · 성공 0/실패 1 · 총 보유 2686개 → data/reports/ + reports-index.js
+## 🤖 Batch 제출 — 대상 1개 / 상위 100개 (최근 1개 건너뜀) · 모델 claude-sonnet-4-6
+  · 준비 0039P0 매드업 (DART X)
+- ✅ 배치 제출 완료: msgbatch_01Shi8iPS8CtP1Jr49PHq7mA (1건) → data/batch_state.json
+  · 상태 in_progress · 처리 1/성공 0/오류 0
+  · 상태 in_progress · 처리 1/성공 0/오류 0
+  · 상태 in_progress · 처리 1/성공 0/오류 0
+  · 상태 in_progress · 처리 1/성공 0/오류 0
+  · 상태 in_progress · 처리 1/성공 0/오류 0
+  · 상태 in_progress · 처리 1/성공 0/오류 0
+  · 상태 ended · 처리 0/성공 1/오류 0
+
+✅ 회수 완료 · 성공 1/실패 0 · 총 보유 2683개 → data/reports/ + reports-index.js
