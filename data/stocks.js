@@ -1,6 +1,6 @@
 // KOS ai — 자동 생성 데이터 파일. 직접 수정하지 마세요.
 window.KOS_LIVE_DATA = {
-  "lastUpdated": "2026-07-02 01:56",
+  "lastUpdated": "2026-07-02 02:23",
   "dataDate": "20260701",
   "stocks": [
     {
@@ -16550,7 +16550,7 @@ window.KOS_LIVE_DATA = {
       "name": "매드업",
       "name_en": "MADUP",
       "market": "코스닥",
-      "sector": "기타",
+      "sector": "IT·소프트웨어",
       "price": 10080,
       "change": 26.0,
       "volume": 72622267,
@@ -16558,7 +16558,7 @@ window.KOS_LIVE_DATA = {
       "mcap": 0.189,
       "shares": 18746800,
       "categories": [
-        "기타"
+        "IT·소프트웨어"
       ],
       "rank": 919
     },
