@@ -1,227 +1,227 @@
 {
  "title": {
-  "ko": "화합물 반도체 원천기술 위에 올라선 다층 성장 시나리오",
-  "en": "Compound Semiconductor IP Underpins Multi-Layered Growth Scenarios"
+  "ko": "광반도체 원천기술 3축 포트폴리오, 수익성 반등 확인",
+  "en": "Triple-Pillar Photonic Semiconductor Platform: Profitability Rebound Confirmed"
  },
  "lead": {
-  "ko": "큐에스아이는 레이저다이오드 본업의 매출 회복과 함께 2026년 1분기 영업이익률이 뚜렷하게 개선됐으며, 양자컴퓨팅·6G·마이크로LED 등 신사업의 상업화 진전 여부가 향후 핵심 관전 포인트다.",
-  "en": "QSI's core laser diode business has seen revenue recovery with a sharp improvement in 1Q2026 operating margin, while the commercialization pace of new businesses—MMIC for quantum computing, 6G, and Micro LED—will be the key narrative going forward."
+  "ko": "주력 레이저다이오드 사업의 분기 연속 매출 성장 속에서 2026년 1분기 영업이익이 급반등하며 수익성 구조 개선이 확인되는 가운데, VCSEL·MMIC·InP 파운드리라는 세 신성장 축의 상업화 성패가 중장기 핵심 변수로 부상하고 있다.",
+  "en": "As QSI's core laser diode business delivers consecutive quarterly revenue growth, a sharp rebound in Q1 2026 operating profit signals improving profitability, while the commercialization outcomes of VCSEL, MMIC, and InP foundry services emerge as the critical long-term variables."
  },
  "keypoints": [
   {
-   "ko": "2026Q1 영업이익 5.34억 원으로 전년 동기(-0.33억 원) 대비 흑자 전환, 영업이익률 약 8.7%로 2022년 연간 수준(8.1%)에 근접",
-   "en": "1Q2026 operating profit of ₩534M reversed from a ₩33M operating loss in 1Q2025, with OPM of ~8.7% approaching the 2022 full-year level of 8.1%"
+   "ko": "2026년 1분기 영업이익 약 5.3억 원·OPM 약 8.7%로 급반등 — 제공된 분기 데이터 중 최고 수준의 영업이익률 회복",
+   "en": "Q1 2026 operating profit of ~KRW 534M with OPM ~8.7%, the highest quarterly operating margin in the available quarterly data set, marks a decisive profitability recovery."
   },
   {
-   "ko": "2025년 11월 스웨덴 LNF(글로벌 극저온 저잡음증폭기 시장 약 99% 점유)에 InP HEMT 기반 MMIC 납품 완료 및 양산 전환 공식 승인 획득",
-   "en": "Completed InP HEMT-based MMIC delivery to Sweden's LNF (~99% of the global cryogenic LNA market) in November 2025 and received formal mass-production performance approval"
+   "ko": "부채비율 6.4%·자기자본 874억 원의 초보수적 재무구조 — 사실상 무차입 경영으로 영업 적자기에도 재무 안정성 유지",
+   "en": "A 6.4% debt ratio and KRW 87.4 billion in equity result in virtually debt-free operations, preserving balance-sheet stability even through periods of operating losses."
   },
   {
-   "ko": "부채비율 6.4%(2025년)·자기자본 874억 원의 초저레버리지 구조와 2022~2025년 연속 플러스 영업현금흐름(연 32억~55억 원)",
-   "en": "Ultra-low leverage with a 6.4% debt ratio (2025) and ₩87.4B in equity, alongside consistently positive operating cash flow of ₩3.2B–₩5.5B annually from 2022 to 2025"
+   "ko": "VCSEL 8중접합 고출력·InP MMIC 파운드리·Micro LED 에피 파운드리 등 신사업 동시 추진 — 자율주행·양자컴퓨팅·디스플레이로 이어지는 포트폴리오 다변화",
+   "en": "Four concurrent new business lines — high-power 8-junction VCSEL, InP MMIC foundry, and Micro LED epi-foundry — connect to distinct end markets including autonomous driving, quantum computing, and displays."
   },
   {
-   "ko": "차세대 PDK 'INP-DHEMT-050'(50nm 게이트) 2026년 6월 목표 개발 중, 6G 기지국 배열 안테나 국책과제 참여로 RF 사업 확장 추진",
-   "en": "Next-gen PDK 'INP-DHEMT-050' (50nm gate) in development targeting June 2026, alongside participation in a government-funded 6G base station array antenna project"
+   "ko": "글로벌 반도체 레이저 시장 2025~2034년 CAGR 약 7.86% 성장 전망 — 자동차용 LiDAR 응용이 가장 높은 성장률을 견인",
+   "en": "The global semiconductor laser market is projected to grow at ~7.86% CAGR through 2034, with automotive LiDAR driving the highest sub-segment growth rate."
   },
   {
-   "ko": "연간 매출 3년 연속 성장(186.9억→213.6억→232.8억 원), 영업이익 단기 변동성은 크나 영업현금흐름은 전 기간 플러스 유지",
-   "en": "Three consecutive years of annual revenue growth (₩18.7B→₩21.4B→₩23.3B), with high operating profit volatility but positive operating cash flow maintained in every year"
+   "ko": "발행 주식 약 927만 주의 초소형 플로트 — 주가 변동폭이 매우 크고 기관 자금 유입이 구조적으로 제한됨",
+   "en": "With approximately 9.27 million shares outstanding, QSI is an ultra-small-float stock with structurally limited institutional participation and elevated price volatility."
   }
  ],
  "business": {
-  "ko": "큐에스아이는 2000년 반도체 레이저 제조·판매를 목적으로 설립돼 2006년 11월 코스닥에 상장된 화합물 반도체 전문 기업이다. 설계(Design)부터 에피택시(Epitaxy)·소자 제조(Fabrication)·패키징(Package)까지 전 공정을 자체 보유해 고객 맞춤형 통합 솔루션을 공급한다. 주력 제품은 레이저다이오드(LD)로, 레이저 프린터·바코드 스캐너·파워툴·공장 자동화·파티클 센서·의료기기·3D 뎁스 센서 등 다양한 산업군의 글로벌 기업에 공급된다. 여기에 더해 VCSEL 에피 파운드리 서비스, 자율주행·산업용 LiDAR용 고출력 펄스 레이저다이오드, 차세대 XR·마이크로디스플레이를 겨냥한 적색 마이크로LED 에피 파운드리 서비스도 사업 포트폴리오에 포함된다. 가장 최근에 상업화에 근접한 신사업은 InP HEMT 기반 MMIC RF 파운드리로, 양자컴퓨팅·6G·우주·방산 분야를 겨냥하고 있다. 수출 비중이 80%를 상회하며 미국·유럽·중국·일본 등 세계 주요 시장에 지역별 영업 체계를 갖추고 있다. 일본 대기업과 달리 소량 다품종 맞춤 대응이 가능한 점이 핵심 경쟁 차별화 요소이며, 본사 및 생산설비는 충남 천안시에 소재한다.",
-  "en": "QSI is a compound semiconductor specialist established in 2000 to manufacture and sell semiconductor lasers, listed on KOSDAQ in November 2006. The company owns a fully integrated in-house process spanning design, epitaxial growth, chip fabrication, and packaging, enabling a Total Solution approach with highly customized products. Its primary product is the laser diode (LD), supplied to global customers across laser printers, barcode scanners, power tools, factory automation, particle sensors, medical devices, and 3D depth sensors. The portfolio also includes VCSEL epi foundry services, high-power pulsed LDs for autonomous-driving and industrial LiDAR, and a red Micro LED epi foundry service targeting next-generation XR and micro-display applications. The most commercially advanced new business is InP HEMT-based MMIC RF foundry, aimed at quantum computing, 6G, aerospace, and defense markets. Export revenue accounts for over 80% of the total, with a region-based sales and customer management structure covering the US, Europe, China, and Japan. The ability to handle small-lot, high-mix custom orders—unlike Japanese industry giants—is a core competitive differentiator. The company is headquartered and manufactures in Cheonan, South Chungcheong Province."
+  "ko": "큐에스아이는 2000년 7월 반도체 레이저 및 광반도체 제품 전문업체로 설립되어 2006년 코스닥에 상장한 화합물 반도체 기업이다. EPI(에피택시)·FAB(칩 제조)·PKG(패키징)까지의 수직통합 생산 체계를 자체 보유하여, 설계부터 완제품 납품까지 원스톱 솔루션을 제공한다. 주력 제품은 반도체 레이저다이오드로, 전동공구(Power Tool)·바코드 스캐너·레이저 프린터·공장자동화·파티클 센서·의료기기·3D Depth Sensor 등 다양한 응용 분야에 공급하고 있다. 일본 대기업이 표준 대량 생산 시장을 장악하는 구조 속에서, 동사는 고객 맞춤형 소·중량산 제품 대응 능력과 빠른 납기를 차별화 경쟁력으로 삼는다. 신성장 사업으로는 자율주행·산업용 LiDAR를 겨냥한 고출력 펄스 레이저다이오드, VCSEL(수직공진 표면발광 레이저) 에피 파운드리, InP HEMT 기반 MMIC 파운드리, 그리고 적색 Micro LED 에피 파운드리의 네 개 축을 동시에 추진하고 있다. MMIC 분야에서는 극저온 저잡음 증폭기 모듈 세계 점유율의 대부분을 보유한 스웨덴 Low Noise Factory와 EU·산업부 주관 유로스타 프로그램을 통해 양자컴퓨팅용 MMIC를 공동 개발 중이다. 경북대학교와 InP 기반 극저온 반도체 공동연구도 병행하고 있으며, 중국 웨이하이 거점을 통해 글로벌 제조 역량을 보완하고 있다. 미국·영국·터키·중국 등 다수 국가의 잠재 고객에게 파운드리 서비스를 홍보 중이며, 무상 MPW(Multi-Project Wafer) 서비스를 통해 국내외 연구기관과의 생태계 구축에도 나서고 있다.",
+  "en": "QSI was established in July 2000 as a specialist in semiconductor laser and optical semiconductor products and listed on KOSDAQ in 2006. The company owns a vertically integrated production system spanning EPI (epitaxy), FAB (chip fabrication), and PKG (packaging), enabling one-stop solutions from design through finished-product delivery. Its primary products are semiconductor laser diodes supplied to diverse applications including power tools, barcode scanners, laser printers, factory automation, particle sensors, medical devices, and 3D depth sensors. In a market dominated by large Japanese manufacturers in standardized mass production, QSI differentiates itself through customized small-to-medium batch product capabilities and rapid turnaround. New business initiatives encompass four concurrent pillars: high-power pulsed laser diodes for autonomous vehicle and industrial LiDAR, VCSEL (vertical-cavity surface-emitting laser) epi-foundry services, InP HEMT-based MMIC foundry services, and red Micro LED epi-foundry services. In the MMIC segment, QSI is jointly developing core chips for cryogenic low-noise amplifier modules through the EU and Ministry of Industry-sponsored Eurostars program alongside Sweden's Low Noise Factory, a dominant player in cryogenic low-noise amplifier modules for quantum computing. A joint development of InP-based cryogenic semiconductor technology with Kyungpook National University is also underway, while a manufacturing base in Weihai, China supplements global production capacity. QSI is actively marketing its foundry services to potential customers across the U.S., UK, Turkey, and China, and is building an R&D ecosystem with domestic and international institutions through complimentary MPW services."
  },
  "earnings": {
-  "ko": "연간 매출은 2023년 186.9억 원(영업손실 42.4억 원·OPM -22.7%)을 저점으로, 2024년 213.6억 원(영업이익 11.8억 원·OPM 5.5%)으로 흑자 전환했고, 2025년에는 232.8억 원으로 3년 연속 성장을 이어갔다. 그러나 2025년 상반기 비용 압력으로 연간 영업이익이 2.9억 원(OPM 1.3%)으로 뚜렷하게 축소됐다. 분기별로는 2025Q1·Q2 영업이익이 각각 -0.33억 원·+0.15억 원에 불과했다가 3분기 2.16억 원·4분기 0.96억 원으로 단계적으로 회복됐으며, 2026Q1에는 매출 61.4억 원·영업이익 5.34억 원(OPM 약 8.7%)으로 전년 동기(매출 56.3억 원·영업손실 0.33억 원) 대비 뚜렷하게 개선됐다. 순이익은 매년 영업이익을 크게 웃도는 구조로, 비영업 항목(금융·투자 손익 등)이 연간 지배주주 순이익에 상당한 영향을 미치고 있어 헤드라인 순이익만으로 영업 실적을 가늠하기에는 한계가 있다. 영업현금흐름은 2022년 52.8억 원·2023년 54.7억 원·2024년 32.3억 원·2025년 47.5억 원으로 영업이익의 단기 부침과 무관하게 플러스를 유지해 실질 현금 창출 능력의 안정성을 보여준다. 재무구조는 자기자본 874억 원·부채 56억 원(부채비율 6.4%)의 초저레버리지로 외부 차입 리스크는 낮다.",
-  "en": "Annual revenue troughed at ₩18.7B in 2023 (operating loss ₩4.24B, OPM –22.7%), then recovered to ₩21.4B in 2024 (OP ₩1.18B, OPM 5.5%) and continued rising to ₩23.3B in 2025 for a third consecutive year of growth. However, cost pressures in the first half of 2025 compressed full-year operating profit to just ₩293M (OPM 1.3%). Quarterly operating profit was near breakeven in 1Q and 2Q 2025 (–₩33M and +₩15M, respectively) before recovering to ₩216M in 3Q and ₩96M in 4Q. In 1Q2026, revenue of ₩6.14B and operating profit of ₩534M (OPM ~8.7%) represented a sharp improvement from the ₩5.63B revenue and ₩33M operating loss in 1Q2025, approaching the company's 2022 full-year OPM of 8.1%. Net profit has consistently exceeded operating profit each year due to material non-operating income (financial and investment gains), making headline net earnings an imperfect proxy for underlying operating performance. Operating cash flow remained positive in every year from 2022 to 2025 (₩3.2B–₩5.5B annually), demonstrating stable underlying cash generation independent of operating profit swings. The balance sheet—₩87.4B in equity against only ₩5.6B in liabilities (debt ratio: 6.4%)—maintains ultra-low leverage with minimal refinancing risk."
+  "ko": "2022년 연결 매출 226.9억 원·영업이익 18.5억 원(OPM 8.1%)으로 양호한 수익성을 기록한 후, 2023년에는 매출이 186.9억 원으로 줄고 영업손실 42.4억 원(OPM -22.7%)이라는 큰 폭의 적자가 발생했다. 그러나 2023년에도 당기순이익은 27.1억 원의 플러스를 유지했는데, 이는 874억 원 규모의 자기자본에서 발생하는 금융·투자수익 등 영업외 수익이 영업 적자를 상쇄하는 구조적 특성에 기인한다. 2024년에는 매출 213.6억 원으로 회복하고 영업이익 11.8억 원(OPM 5.5%)을 달성했으며, 당기순이익도 32.5억 원으로 증가했다. 2025년 연간 매출은 232.8억 원(전년 대비 +9.0%)으로 외형 성장을 이어갔으나, 분기별로는 1분기 영업손실 -3.3억 원·2분기 영업이익 0.2억 원에 그치는 상반기 부진이 있었다. 3분기에 영업이익 21.6억 원으로 큰 폭 회복이 나타났다가 4분기에 다시 1.0억 원으로 축소되어 연간 영업이익은 2.9억 원(OPM 1.3%)에 그쳤다. 2026년 1분기에는 매출 61.4억 원(전년 동기 대비 +9.1%)·영업이익 5.3억 원(OPM 약 8.7%)을 기록하며, 제공된 분기 데이터 중 가장 높은 영업이익률을 회복했다. 1분기 단독 당기순이익(22.5억 원)은 이미 2025년 연간 순이익(25.2억 원)의 89%에 달하며, 이 역시 비영업 수익의 기여가 영업이익을 크게 상회하는 손익 구조의 특성을 반영한다. 영업현금흐름은 2022~2025년 연간 32억~55억 원으로 꾸준히 플러스를 유지하며 현금 창출의 기반 안정성을 보여주고 있다.",
+  "en": "QSI recorded solid performance in 2022 with consolidated revenue of KRW 22.7 billion and operating profit of KRW 1.85 billion (OPM 8.1%), before suffering a sharp reversal in 2023, when revenue fell to KRW 18.7 billion and an operating loss of KRW 4.24 billion (OPM -22.7%) was incurred. Despite this, net profit remained positive at KRW 2.71 billion in 2023, as non-operating income — primarily financial and investment returns generated from the approximately KRW 87.4 billion equity base — more than offset the operating deficit, a recurring structural characteristic. A recovery followed in 2024 with revenue rebounding to KRW 21.4 billion and operating profit recovering to KRW 1.18 billion (OPM 5.5%), with net profit rising to KRW 3.25 billion. Full-year 2025 revenue grew further to KRW 23.3 billion (+9.0% YoY), though quarterly profitability was uneven: Q1 posted an operating loss of KRW 330M and Q2 barely broke even at KRW 152M, before Q3 rebounded to KRW 2.16 billion, then softened again to KRW 961M in Q4, resulting in a full-year operating profit of only KRW 294M (OPM 1.3%). Q1 2026 delivered a marked improvement with revenue of KRW 6.14 billion (+9.1% YoY) and operating profit of KRW 534M (OPM ~8.7%), the highest quarterly operating margin in the available quarterly data set. The Q1 2026 net profit of KRW 2.25 billion already represents 89% of full-year 2025 net profit, again reflecting the significant contribution of non-operating income relative to operating profit. Annual operating cash flow has been consistently positive at KRW 3.2–5.5 billion throughout 2022–2025, demonstrating stable underlying cash generation."
  },
  "industry": {
-  "ko": "AI 인프라 수요 급증에 따라 광반도체(포토닉스) 기술이 차세대 데이터센터·칩 연결 아키텍처의 핵심으로 부상하고 있다. 엔비디아 젠슨 황 CEO는 2026년 GTC에서 광반도체를 미래 AI 인프라의 핵심 기술 중 하나로 거론했으며, 삼성전자·TSMC 등도 광반도체 기술 선점 경쟁에 나선 것으로 알려져 있다. 양자컴퓨팅 시장에서는 극저온 저잡음 증폭기 분야의 기술 장벽이 높아 스웨덴 LNF를 비롯한 글로벌 소수 기업이 독과점 지위를 보유하고 있으며, 상용화 타임라인에 대한 업계 시각은 단기 낙관론부터 '20년 이상 소요' 전망까지 편차가 매우 크다. 6G 통신은 표준화 및 인프라 구축 초기 단계이나 고주파·저잡음 RF 소자에 대한 장기 수요는 확대 방향이다. 자율주행용 LiDAR 시장은 플래그십 차량 위주의 초기 침투 단계로, 고출력 레이저다이오드 수요는 자율주행 보급 속도에 연동된다. 레이저다이오드 핵심 전방 시장인 산업용 장비·프린팅·바코드·의료기기 수요는 글로벌 제조업 경기 사이클과 높은 상관관계를 보인다.",
-  "en": "Surging AI infrastructure demand has elevated photonics and compound semiconductors to the forefront of next-generation data center and chip interconnect architectures. NVIDIA's Jensen Huang cited photonics as a key future AI infrastructure technology at GTC 2026, and Samsung Electronics and TSMC are reportedly racing to establish early leadership in optical semiconductor technology. In quantum computing, the cryogenic LNA segment carries very high barriers to entry, with only a handful of global players—including Sweden's LNF—holding dominant market positions; industry views on commercialization timelines range widely from near-term optimism to forecasts exceeding 20 years. 6G communications remains in early standardization and infrastructure stages, but long-term demand for high-frequency, low-noise RF components is expected to grow. The LiDAR market for autonomous driving is in an early penetration phase concentrated in flagship vehicles, with high-power LD demand tied to autonomous vehicle adoption rates. Core LD end markets—industrial equipment, printing, barcode scanning, and medical devices—show high correlation with global manufacturing capex cycles."
+  "ko": "글로벌 반도체 레이저 시장은 2025년 약 94억 달러 규모로 평가되며, 2034년까지 약 185억 달러로 연평균 약 7.86%의 성장이 전망된다. 응용 분야 중 자동차용 LiDAR가 약 8.75%의 연평균 성장률로 가장 빠른 확대가 예측되며, 2030년까지 레벨 2 이상 자율주행차가 전체 출하의 약 70%에 달할 것이라는 전망이 이 수요를 뒷받침한다. 한국 정부는 2026년까지 인구 50만 명 이하 중소 도시 전체를 자율주행 시범 도시로 조성하는 정책을 추진 중으로, 국내 LiDAR 부품 수요의 구조적 촉진 요인이 될 수 있다. 경쟁 구도 측면에서는 Coherent, Sharp, Nichia 등 글로벌 대형 업체들이 표준화된 대량 생산 시장을 주도하며, 큐에스아이는 고객 맞춤형 소·중량산 틈새 시장을 공략하는 포지셔닝을 취한다. 양자컴퓨팅 인프라용 극저온 부품은 현재 초기 시장이나, 엔비디아 GTC 2026에서 광반도체가 AI 인프라 핵심 기술로 언급되는 등 산업계 관심이 증대하고 있다. 한국의 471조 원 규모 반도체 메가 클러스터 조성 계획은 국내 광학 부품 수요의 중장기 확대를 견인할 것으로 시장은 보고 있다. 다만 GaN·희토류 소재에 대한 수출 규제 강화가 이미 반도체 레이저 제조원가를 끌어올리기 시작했다는 시장 조사 결과가 공유되고 있어, 원재료 공급망 리스크도 업계 전반의 과제로 지목된다.",
+  "en": "The global semiconductor laser market was valued at approximately USD 9.4 billion in 2025 and is projected to reach approximately USD 18.5 billion by 2034 at a CAGR of ~7.86%. Among end applications, automotive LiDAR is forecast to exhibit the highest growth rate at approximately 8.75% CAGR, supported by industry projections that Level 2+ autonomous vehicles will account for approximately 70% of total vehicle shipments by 2030. South Korea's government policy to designate all cities with populations under 500,000 as autonomous driving pilot zones by 2026 may serve as a structural domestic demand catalyst for LiDAR components. In the competitive landscape, global majors such as Coherent, Sharp, and Nichia dominate standardized high-volume markets, while QSI occupies a niche positioning in customized low-to-medium volume applications. The cryogenic components segment for quantum computing infrastructure remains nascent, but industry attention is growing, highlighted by references to optical semiconductors as a key AI infrastructure technology at NVIDIA GTC 2026. South Korea's planned KRW 471 trillion semiconductor mega-cluster is expected to generate sustained long-term demand for domestic optical components. On the risk side, market research indicates that tightening GaN and rare-earth material export restrictions have already begun pushing up semiconductor laser manufacturing costs, presenting a cross-industry supply chain challenge."
  },
  "outlook": {
-  "ko": "큐에스아이는 2025년 11월 자체 개발 PDK(INP-DHEMT-100)를 기반으로 스웨덴 LNF에 MMIC 납품을 완료하고 양산 성능 공식 승인을 받았다. 회사는 이를 발판으로 게이트 길이 50nm의 차세대 PDK(INP-DHEMT-050) 개발을 2026년 6월 목표로 추진 중이며, 완성 시 THz 대역 접근 가능성이 열려 양자컴퓨팅·우주·방산·통신 등 고부가가치 시장에서의 기술 경쟁력 강화가 기대된다. 유로스타3 사업이 2026년 마무리를 앞두고 있어 MMIC를 탑재한 저잡음 증폭기 모듈의 양자컴퓨팅 제조사 납품이 계획돼 있다. 2025년 8월에는 차세대 XR·마이크로디스플레이용 초소형 적색 마이크로LED 고효율 에피 플랫폼 개발을 발표했다. 2024년 7월부터 6G 기지국 배열 안테나 국책과제에 참여 중이며, InP HEMT 소자 기반 PDK 공개 및 무상 MPW 서비스 제공으로 국내 고주파 반도체 생태계 활성화에도 기여하고 있다. 신사업의 실제 매출 기여 시점과 규모는 과제 완료 이후 상업 계약 확보 여부에 달려 있어, 공시를 통한 수주 내역 확인이 중요하다.",
-  "en": "In November 2025, QSI completed MMIC delivery to Sweden's LNF based on its proprietary INP-DHEMT-100 PDK and received official mass-production performance approval from the customer. Building on this, the company is pursuing development of a next-generation INP-DHEMT-050 PDK with a 50nm gate length by June 2026; its completion would open access to THz frequency bands, strengthening competitive positioning in quantum computing, space, defense, and communications. The Eurostars3 project is approaching its conclusion in 2026, with MMIC-embedded LNA module supply to quantum computing manufacturers planned as a follow-on commercial step. In August 2025, QSI announced the development of an ultra-small red Micro LED high-efficiency epi platform targeting next-generation XR and micro-display applications. Since July 2024, the company has participated in a national project for 6G base station array antennas, and is providing free MPW foundry services alongside a PDK release to stimulate the domestic high-frequency semiconductor ecosystem. The timing and scale of actual revenue contributions from new businesses hinge on whether commercial contracts are secured following project completions, making DART disclosure of material supply agreements a key monitoring item."
+  "ko": "2026년 최대의 관심 이벤트는 유로스타3 과제의 종료로, 동사가 개발한 MMIC 칩을 탑재한 극저온 저잡음 증폭기 모듈을 Low Noise Factory를 통해 양자컴퓨팅 제조사에 납품하는 단계로 진입할 수 있는지 여부다. 성사될 경우 새로운 매출원의 개시를 알리는 의미 있는 이정표가 된다. InP 파운드리 서비스는 PDK(공정 설계 키트)가 이미 공개됐고 무상 MPW 서비스를 통해 국내외 기관과의 기술 검증이 진행 중이므로, 유상 고객 전환 시점이 핵심 체크포인트다. VCSEL 분야에서는 940nm 대역 8중접합 고출력 다채널 어레이 광원 기술의 상업화를 통해 글로벌 자율주행 OEM 2차 벤더 진입을 목표로 하고 있어, 양산 샘플 출하 공시 여부를 주목할 필요가 있다. 2026년 1분기의 영업이익률 급회복이 이후 분기로 이어질 수 있는지는, 레이저다이오드 기존 사업의 수주 흐름 및 평균 판매 단가(ASP) 방어 여부에 달려 있다. 회사는 레이저 프린터·파티클 센서·전동공구 등 기존 주력 응용처에서 꾸준한 수요를 확보하는 한편, 산업용 로봇 및 자율주행향 신규 매출을 점진적으로 추가하고 있다. 배당은 주당 100원(DPS)이 최근 공시됐으며, 현금 환원 정책의 연속성도 관찰 가능한 지표 중 하나다.",
+  "en": "The most significant 2026 milestone to watch is the conclusion of the Eurostars 3 program, which will determine whether QSI can advance to commercial supply of MMIC-equipped cryogenic low-noise amplifier modules to quantum computing manufacturers through Low Noise Factory. A successful supply arrangement would represent a meaningful new revenue stream initiation. On the InP foundry front, the PDK has already been released and free MPW services are underway, making the conversion to paid customer contracts the critical next milestone. For VCSEL, QSI is targeting Tier 2 supplier qualification to global automotive OEMs with its 8-junction high-power multichannel VCSEL array technology, and mass-production sample shipment announcements would be the next confirmable data point. Whether Q1 2026's sharp operating margin recovery can be sustained in subsequent quarters depends primarily on order flow and average selling price trends in the core laser diode business. The company is building on steady demand from its traditional application areas — laser printers, particle sensors, and power tools — while incrementally adding revenue from industrial robotics and autonomous driving customers. The recently confirmed annual DPS of KRW 100 per share provides a reference point for the continuity of the company's dividend policy."
  },
  "valuation_comment": {
-  "ko": "현 주가는 주당 순자산가치(BPS 9,840원)를 하회하는 구간에 위치해 있어 장부가 대비 할인 상태가 지속되고 있다. 최근 12개월 주당순이익(EPS 508원)에는 비영업 손익이 상당 부분 반영돼 있어, 영업 실적만으로는 이 EPS를 그대로 해석하기 어려운 측면이 있다. 주당 현금배당금(DPS 100원) 기준 배당수익률(약 1.27%)은 높지 않아 인컴형 접근의 매력이 제한적이다. 52주 거래 범위가 6,610~22,750원으로 진폭이 매우 넓었는데, 이는 양자컴퓨팅 테마 기대감이 반영됐다가 되돌려지는 사이클을 보여준다. 신사업(MMIC·마이크로LED)의 상업화가 가시화될 경우 현재의 영업이익 규모가 실질적으로 달라질 수 있는 반면, 그 진전이 더딜 경우 본업 실적에 대한 평가가 지배적이 될 수 있어 양방향 불확실성이 공존한다.",
-  "en": "The current share price sits below book value per share (BPS: ₩9,840), reflecting a continuing discount to net asset value. The trailing twelve-month EPS of ₩508 embeds significant non-operating income, making it an imperfect measure of pure operating performance. The annual cash dividend per share of ₩100 translates to a yield of approximately 1.27%—modest and not sufficient to drive income-oriented demand. The 52-week trading range of approximately ₩6,610 to ₩22,750 illustrates a wide premium-and-deflation cycle tied to quantum computing theme sentiment. Should new business commercialization (MMIC, Micro LED) become more tangible, the operating earnings base could change materially; absent visible progress, the market's assessment may gravitate toward the core business alone—a two-way uncertainty that warrants continued monitoring rather than a one-directional conclusion."
+  "ko": "현재 주가는 주당 순자산가치(BPS) 9,840원을 하회하는 수준으로, 순자산 대비 할인 구간에 위치한다. 코스닥 반도체 업종의 상당수 기업이 순자산 대비 프리미엄을 받는 환경과 비교하면 눈에 띄는 특성이나, 영업이익률이 4개년에 걸쳐 -22.7%~+8.1%를 오간 변동성을 감안하면 단순한 자산 할인으로만 해석하기에는 주의가 필요하다. 주당 순이익(EPS) 508원을 기준으로 한 수익 배수는, 영업이익의 기여보다 비영업 수익(금융·투자수익)의 기여 비중이 높은 손익 구조라는 점에서 업종 단순 비교에 한계가 있다. 배당은 주당 100원(DPS)이 공시됐으나, 현재의 배당수익률은 코스닥 시장 전체 평균 대비 하회하는 편이다. 발행 주식 수 약 927만 주의 초소형 플로트 구조는 기관·외국인의 지수 연계 자금 유입이 사실상 차단되어 있으며, 이는 유동성 프리미엄보다 유동성 디스카운트가 적용될 수 있는 구조적 요인이다.",
+  "en": "The current share price trades below the company's book value per share (BPS: KRW 9,840), placing it in a discount-to-book-value position. While many KOSDAQ semiconductor peers tend to trade at premiums to net assets, the wide four-year oscillation in operating margins — from -22.7% to +8.1% — warrants caution in interpreting this discount straightforwardly. The earnings multiple based on EPS of KRW 508 is difficult to compare on a simple sector basis given that non-operating income (financial and investment returns) has consistently outweighed operating profit as the driver of net income. The annual dividend of KRW 100 per share (DPS) has been maintained, but the implied dividend yield remains below the broader KOSDAQ market average. The ultra-small float of approximately 9.27 million shares structurally excludes index-linked institutional and foreign investor flows, which may result in a structural liquidity discount rather than a premium being applied to the stock."
  },
  "bull": [
   {
    "title": {
-    "ko": "2026Q1 영업이익률 급반등 — 본업 수익성 회복 시그널",
-    "en": "Sharp 1Q2026 OPM Rebound — Signal of Core Profitability Recovery"
+    "ko": "2026년 1분기 수익성 급반등 — 구조적 개선의 초기 신호",
+    "en": "Sharp Q1 2026 Profitability Recovery: Early Signal of Structural Improvement"
    },
    "body": {
-    "ko": "2026년 1분기 영업이익 5.34억 원(OPM 약 8.7%)은 전년 동기 영업손실 대비 뚜렷한 전환점이다. 레이저 프린터·센서·파워툴 주력 제품군에서 매출이 증가하고 고마진 제품 비중이 확대된 결과로 분석된다. 2025Q3→Q4→2026Q1로 이어지는 분기 연속 개선 흐름은 2023년 적자 이후 수익성 구조가 점진적으로 회복되고 있음을 시사하며, 개선 추세가 2026년 하반기에도 지속될지 추가 확인이 필요하다.",
-    "en": "1Q2026 operating profit of ₩534M (OPM ~8.7%) marks a clear reversal from the prior-year operating loss. The improvement is attributed to higher revenue across core product lines—laser printers, sensors, and power tools—alongside a greater mix of higher-margin products. The sequential quarterly improvement running from 3Q2025 through 1Q2026 suggests a gradual recovery in the profitability structure since the 2023 loss year, though whether this trend extends into 2H2026 requires further verification."
+    "ko": "2026년 1분기 영업이익 5.3억 원(OPM 약 8.7%)은 제공된 분기 데이터 내 최고 수준의 분기 영업이익률로, 2025년 상반기 부진에서의 확연한 반등이다. 매출도 전년 동기 대비 9.1% 증가하며 5개 분기 연속 상승 흐름을 이어가고 있다. 이 추세가 2~4분기로 이어진다면 연간 영업이익이 최근 수년 대비 의미 있는 개선이 가능하다. 영업현금흐름도 2022~2025년 연간 32억~55억 원으로 꾸준히 플러스를 유지하며 현금 기반의 안정성을 뒷받침하고 있다.",
+    "en": "Q1 2026 operating profit of KRW 534M (OPM ~8.7%) represents the highest quarterly operating margin in the available quarterly data, a clear rebound from the weak first half of 2025. Revenue also grew 9.1% year-over-year, extending a five-quarter consecutive upward trend in the top line. If this trajectory extends through Q2–Q4, full-year operating profit could improve meaningfully relative to recent years. Annual operating cash flow has remained consistently positive at KRW 3.2–5.5 billion throughout 2022–2025, underpinning the stability of the company's cash generation base."
    }
   },
   {
    "title": {
-    "ko": "MMIC 납품 성공 — 양자컴퓨팅·RF 파운드리 시장 첫 교두보",
-    "en": "Successful MMIC Delivery — First Foothold in Quantum Computing & RF Foundry Market"
+    "ko": "무차입에 가까운 재무구조 — 위기 내성과 투자 여력 동시 확보",
+    "en": "Near-Zero Leverage: Balance Sheet Resilience and Investment Capacity Combined"
    },
    "body": {
-    "ko": "2025년 11월 글로벌 극저온 저잡음 증폭기 시장에서 약 99% 점유율을 보유한 스웨덴 LNF에 InP HEMT 기반 MMIC 납품을 완료하고 양산 성능 공식 승인을 받은 것은 한국 기업 최초 사례로 평가된다. 세계 최고 수준의 813GHz급 고주파 성능을 가진 InP HEMT 트랜지스터를 개발했으며, 미국·영국·터키·중국 등 글로벌 잠재 고객사로부터 파운드리 서비스 관심 의사가 접수됐다. 유로스타3 과제 종료 이후 저잡음 증폭기 모듈의 양자컴퓨팅 제조사 납품이 계획돼 있어 신규 매출 다각화 경로가 열려 있다.",
-    "en": "QSI completed InP HEMT-based MMIC delivery to Sweden's LNF—which holds approximately 99% of the global cryogenic LNA market—in November 2025 and received formal mass-production approval, reportedly a first for a Korean company in this segment. The company has developed InP HEMT transistors with world-class high-frequency performance (~813GHz), drawing foundry service inquiries from potential customers in the US, UK, Turkey, and China. Planned LNA module delivery to quantum computing manufacturers following the Eurostars3 project conclusion represents a tangible near-term revenue diversification pathway."
+    "ko": "2025년 기준 자기자본 874억 원에 부채비율 6.4%로, 사실상 무차입 경영 상태를 유지하고 있다. 2023년처럼 영업 적자가 대규모로 발생하는 상황에서도 재무구조가 전혀 흔들리지 않았다는 점이 이를 증명한다. 대규모 자기자본에서 창출되는 금융·투자수익이 순이익의 안정적 완충 역할을 하며, 신규 R&D 지출이나 설비 투자도 외부 자금 조달 없이 가능한 구조다. 자기자본은 2022~2025년 매년 소폭 증가하는 추세로, 내부 유보가 지속적으로 이루어지고 있음을 보여준다.",
+    "en": "With equity of KRW 87.4 billion and a debt ratio of just 6.4% as of end-2025, QSI effectively operates without financial leverage. The absence of any balance-sheet deterioration even during the significant operating loss of 2023 demonstrates the structural resilience this provides. The large equity base generates recurring financial and investment income that serves as a stable buffer for net profit, and new R&D or capex can be funded internally without external financing. Equity has grown incrementally each year from 2022 through 2025, reflecting consistent internal accumulation."
    }
   },
   {
    "title": {
-    "ko": "초저레버리지 재무구조 — 신사업 R&D 지속 투자 여력",
-    "en": "Ultra-Low Leverage Balance Sheet — Capacity to Sustain New Business R&D Investment"
+    "ko": "복수의 신성장 옵션 — 포트폴리오 분산과 성장 기대",
+    "en": "Multiple Growth Options: Portfolio Diversification Across High-Growth End Markets"
    },
    "body": {
-    "ko": "2025년 말 자기자본 874억 원·부채 56억 원·부채비율 6.4%로 코스닥 반도체 업종 내 최상위 수준의 재무 건전성을 유지하고 있다. 2022~2025년 연간 영업현금흐름이 일관되게 플러스를 기록해 R&D 비용과 설비 투자를 자체 조달할 여력이 뒷받침된다. 재무적 완충력은 단기 영업이익이 부진한 시기에도 MMIC·마이크로LED 등 중장기 신사업 투자를 지속할 수 있는 기반이 된다.",
-    "en": "As of end-2025, QSI carried ₩87.4B in equity against just ₩5.6B in liabilities (debt ratio: 6.4%), maintaining balance sheet health at the top end of the KOSDAQ semiconductor peer group. Consistently positive annual operating cash flow across 2022–2025 demonstrates a capacity to self-fund recurring R&D and capital expenditure. This financial buffer provides the operational latitude to sustain medium- to long-term investment in new businesses such as MMIC and Micro LED even during periods of thin near-term profitability."
+    "ko": "동사는 자율주행 LiDAR용 고출력 VCSEL, 양자컴퓨팅용 MMIC, InP 파운드리, Micro LED 에피 등 각기 다른 전방 시장을 겨냥한 4개의 신성장 사업을 동시에 추진 중이다. 독립리서치 스터닝밸류리서치(2026년 4월)는 큐에스아이를 자율주행 로봇 및 피지컬 AI 시장의 핵심 수혜주로, 지엘리서치(2026년 3월)는 차세대 LiDAR 부품 기술력과 파운드리 서비스 사업에 주목해야 할 시기라고 평가했다. 유로스타3 과제의 2026년 종료와 함께 MMIC 상업 납품이 가시화될 경우 양자컴퓨팅 인프라라는 신규 매출 채널이 열리는 이정표가 된다. 개별 사업이 서로 다른 고객·시장과 연결되어 있어, 특정 전방 시장의 부진 시에도 다른 축이 보완할 수 있는 포트폴리오 구조를 갖추고 있다.",
+    "en": "QSI is simultaneously advancing four distinct new business lines — high-power VCSEL for autonomous LiDAR, MMIC for quantum computing, InP foundry, and Micro LED epi-foundry — each targeting a different end market. Independent research firm Stunning Value Research (April 2026) highlighted QSI as a key beneficiary of the physical AI and autonomous robotics market expansion, while GL Research (March 2026) noted that the company's next-generation LiDAR component capabilities and foundry services merit attention. Completion of the Eurostars 3 project in 2026 and potential MMIC commercial supply would represent a meaningful new revenue channel in quantum computing infrastructure. Each business line is linked to distinct customers and markets, providing portfolio resilience if any single segment underperforms."
    }
   }
  ],
  "bear": [
   {
    "title": {
-    "ko": "영업이익 변동성 과대 — 마진 안정성 미검증",
-    "en": "Excessive Operating Profit Volatility — Margin Stability Unproven"
+    "ko": "영업이익률의 극단적 변동성 — 이익 예측 가능성 낮음",
+    "en": "Extreme Operating Margin Volatility: Low Earnings Predictability"
    },
    "body": {
-    "ko": "연간 OPM이 2022년 8.1% → 2023년 -22.7% → 2024년 5.5% → 2025년 1.3%로 극단적인 진폭을 보였다. 2026Q1의 개선이 제품 믹스·발주 타이밍에 따른 일시적 요인인지 구조적 전환인지 아직 확인되지 않았다. 흑자와 적자를 반복한 이력은 수익성 예측 가능성을 낮추고, 비용 구조에 내재된 고정비 레버리지를 가늠하기 어렵게 한다.",
-    "en": "Annual OPM swung from 8.1% in 2022 to –22.7% in 2023, then 5.5% in 2024, and 1.3% in 2025—extreme volatility for an industrial component manufacturer. Whether the 1Q2026 OPM improvement reflects a structural shift or one-off factors (product mix, order timing) remains unconfirmed. The track record of alternating profitable and loss-making years reduces earnings predictability and makes the fixed-cost leverage embedded in the cost structure difficult to assess with confidence."
+    "ko": "동사의 연간 영업이익률은 2022년 +8.1%에서 2023년 -22.7%로 급락한 후 2024년 +5.5%, 2025년 +1.3%로 좀처럼 안정화되지 않는 양상을 보인다. 분기 단위로는 영업손실과 흑자를 빠르게 오가며 이익 예측이 어렵고, 이는 200억~230억 원 규모의 소규모 매출에 일정 수준의 고정비가 결합된 사업 구조에서 기인한다. 영업외 수익에 의한 당기순이익 방어가 지속되더라도, 영업이익 자체의 변동성은 사업 기초 체력 평가에 있어 부정적 요인으로 작용한다. 2026년 1분기의 수익성 개선이 일시적인 요인에 기반하고 있을 가능성을 배제하기 어렵다.",
+    "en": "QSI's annual operating margins have been highly erratic, swinging from +8.1% in 2022 to -22.7% in 2023, then recovering to +5.5% in 2024 before decelerating again to +1.3% in 2025. At the quarterly level, results oscillate between profit and loss, making reliable forecasting difficult — a direct function of a small revenue base of KRW 20–23 billion against a relatively fixed cost structure. Even if non-operating income continues to cushion net profit, persistent operating margin volatility is a negative factor in any assessment of fundamental business health. It cannot be ruled out that the Q1 2026 profitability improvement is partly attributable to transient factors."
    }
   },
   {
    "title": {
-    "ko": "신사업 매출 기여 불확실 — 상업화 시점·규모 미검증",
-    "en": "New Business Revenue Contribution Unverified — Commercialization Timing and Scale Unknown"
+    "ko": "신사업 상업화 시점의 불확실성 — 기대와 실적 간 시차 위험",
+    "en": "Uncertain Commercialization Timeline: Execution Gap Between Expectation and Revenue"
    },
    "body": {
-    "ko": "MMIC·마이크로LED·LiDAR 신사업은 대부분 기술 개발 또는 샘플 납품 단계로, 아직 연간 재무제표에서 확인 가능한 유의미한 매출 기여를 보이지 않는다. 양자컴퓨팅 상용화 타임라인에 대한 업계 시각 차이가 크며, 과제 종료 이후 실제 대량 공급 계약이 확보되지 않을 경우 신사업 R&D 비용이 영업이익에 지속적인 부담으로 작용할 수 있다. 기술 완성도와 상업 성과 사이의 시차(time lag)가 상당할 수 있다는 점은 유의해야 한다.",
-    "en": "MMIC, Micro LED, and LiDAR new businesses remain mostly in technology development or sample delivery stages, with no verifiable material revenue contribution visible in audited financial statements to date. Industry views on quantum computing commercialization timelines diverge widely, and if large-scale supply contracts do not materialize following project completions, ongoing R&D costs for new businesses will weigh on operating profit. The potential time lag between technology achievement and commercial outcomes is a material consideration."
+    "ko": "VCSEL·MMIC·InP 파운드리 등 신성장 사업은 현재 연구개발·기술 검증 단계에서 실질 매출 기여로 전환되는 일정이 불확실하다. MMIC의 경우 유로스타3 과제가 2026년 종료되더라도, 양자컴퓨팅 제조사 공급망 편입에는 추가적인 인증·검증 과정이 필요할 수 있다. VCSEL의 글로벌 OEM 2차 벤더 진입도 고객사의 개발·인증 사이클에 크게 의존하므로 외부 변수가 크다. 신사업 매출 기여 시점이 시장 기대보다 지연될 경우, 주력 레이저다이오드 사업만으로 현재의 기대 수준을 뒷받침하기에 수익성이 충분하지 않을 수 있다.",
+    "en": "New business lines including VCSEL, MMIC, and InP foundry remain in R&D and technology validation stages, with uncertain timelines for meaningful revenue contribution. Even if the Eurostars 3 project concludes in 2026, supply chain qualification by quantum computing manufacturers may require additional certification cycles. Qualification as a Tier 2 VCSEL supplier to global OEMs is similarly dependent on customers' development and certification schedules, introducing significant external timing variables. If commercialization timelines extend beyond current expectations, the core laser diode business may not independently generate sufficient profitability to sustain market-implied expectations."
    }
   },
   {
    "title": {
-    "ko": "소규모 매출 기반 — 고정비 충격 취약성",
-    "en": "Small Revenue Base — Vulnerability to Fixed-Cost Shocks"
+    "ko": "초소형 플로트·유동성 제약 — 주가 변동성 증폭 구조",
+    "en": "Ultra-Small Float and Liquidity Constraints: Structurally Amplified Price Volatility"
    },
    "body": {
-    "ko": "연간 매출 232.8억 원(2025년)은 국내 반도체 업종 내에서도 소규모로, 원자재·에너지·인건비 등 고정비 충격에 민감한 구조다. 자기자본(874억 원)이 매출을 크게 상회하는 구조는 자산 효율성 측면에서 과제를 남기며, 장기적으로 자본 대비 이익 창출 능력이 낮은 상태가 유지될 경우 가치 훼손 우려가 있다. 수출 비중 80% 이상인 가운데 달러·유로·엔 환율 변동이 이익 구조에 직접 영향을 미친다.",
-    "en": "Annual revenue of ₩23.3B (2025) is modest even within Korea's semiconductor sector, leaving the company structurally exposed to fixed-cost shocks from raw materials, energy, and labor. The fact that equity capital (₩87.4B) dramatically exceeds revenue scale raises questions about asset efficiency; if earnings power on capital remains subdued over the long run, there is a risk of gradual value erosion. With over 80% of revenue from exports, the profit structure is directly sensitive to fluctuations in USD, EUR, and JPY exchange rates."
+    "ko": "발행 주식 수가 약 927만 주에 불과한 초소형 플로트 구조는, 소규모 매수·매도 주문만으로도 주가가 과도하게 반응하는 환경을 만든다. 코스닥 반도체 업종 내에서도 시가총액 최하위권에 속해 기관·외국인의 지수 연계 자금 유입이 사실상 차단돼 있다. 특정 테마(양자컴퓨팅, 자율주행 등)와 연결된 단기 수급 변동이 펀더멘털과 무관하게 주가 급등락을 유발할 수 있다. 유동성이 낮은 구간에서 실적 실망이 발생할 경우 가격 충격이 크게 나타날 수 있다.",
+    "en": "With approximately 9.27 million shares outstanding, QSI's ultra-small float means that even modest buy or sell orders can exert disproportionate influence on the share price. As one of the smallest-market-cap names in the KOSDAQ semiconductor sector, the stock is effectively excluded from index-linked institutional and foreign investor flows. Short-term thematic demand swings — linked to quantum computing or autonomous driving news cycles — can drive sharp price moves that are disconnected from fundamental developments. In low-liquidity conditions, earnings disappointments can translate into particularly severe price dislocations."
    }
   }
  ],
  "risks": [
   {
    "cat": {
-    "ko": "양자컴퓨팅 상용화 지연 리스크",
-    "en": "Quantum Computing Commercialization Delay Risk"
+    "ko": "전방 수요 사이클 리스크",
+    "en": "End-Market Demand Cycle Risk"
    },
    "body": {
-    "ko": "양자컴퓨팅 시장은 높은 기술적 난이도와 하드웨어·소프트웨어 에코시스템 미성숙으로 상용화 시점에 대한 전망이 엇갈리고 있다. 엔비디아 젠슨 황 CEO가 '20년 이상 소요'를 언급했으나 빌 게이츠 등 낙관론도 공존하는 상황이다. 큐에스아이의 MMIC 사업이 양자컴퓨팅 인프라 확산에 연동돼 있어, 상용화 지연은 신사업 매출 인식 시점을 상당 기간 후퇴시킬 수 있다.",
-    "en": "The quantum computing market faces wide divergence in commercialization timelines, given high technical complexity and the immaturity of the hardware and software ecosystem. NVIDIA CEO Jensen Huang has stated the technology may require 20+ years while others, including Bill Gates, hold more optimistic near-term views. Since QSI's MMIC business is directly tied to quantum computing infrastructure deployment, a delay in commercialization could materially push back the revenue recognition window for this new business segment."
+    "ko": "주력 레이저다이오드의 전방 시장인 전동공구·레이저 프린터·산업자동화는 글로벌 경기 및 제조업 사이클에 민감하다. OEM 고객의 발주 지연·감소가 즉각적으로 매출에 반영되며, 2023년 영업 적자 사례가 이를 잘 보여준다. 특정 고객사에 대한 매출 집중도가 높을 경우, 해당 고객의 구매 전략 변화만으로도 실적이 급변할 수 있다. 자율주행·로봇 향 신규 매출이 기존 수요 사이클을 충분히 보완하는 데에는 추가적인 시간이 필요하다.",
+    "en": "QSI's primary end markets for laser diodes — power tools, laser printers, and industrial automation — are sensitive to global economic and manufacturing cycles. Order delays or reductions by OEM customers translate directly into revenue shortfalls, as demonstrated by the significant operating loss in 2023. High revenue concentration in any individual customer amplifies the impact of changes in that customer's purchasing strategy. Revenue from new autonomous driving and robotics applications will require additional time before it can meaningfully offset cyclical demand patterns in the legacy business."
    }
   },
   {
    "cat": {
-    "ko": "수출 의존 및 지역 집중 리스크",
-    "en": "Export Dependency and Geographic Concentration Risk"
+    "ko": "기술·상업화 리스크",
+    "en": "Technology and Commercialization Risk"
    },
    "body": {
-    "ko": "매출의 80% 이상이 수출이며, 미국·유럽·중국·일본 등 특정 지역 의존도가 높다. 미·중 간 반도체 수출 규제 강화, 특정 지역 경기 침체, 주요 고객사의 발주 감소 등이 단기 실적에 직접 영향을 줄 수 있다. 다품종 소량 생산 체제임에도 불구하고 일부 대형 고객의 구매 결정이 분기 실적 변동성에 미치는 영향이 클 것으로 추정된다.",
-    "en": "Over 80% of revenue is export-derived, with high concentration in the US, Europe, China, and Japan. Escalating US-China semiconductor export restrictions, regional economic downturns, or reduced ordering by major customers could directly impact near-term results. Despite a high-mix, low-volume production model, the purchasing decisions of a few large accounts are likely to be a significant driver of quarterly earnings volatility."
+    "ko": "VCSEL·MMIC·InP 파운드리 등 신성장 사업은 기술 개발과 양산 사이의 간극(Valley of Death)을 반드시 통과해야 한다. 예상 기간 내에 양산 품질 확보에 실패하거나, 경쟁사가 유사 기술을 먼저 시장에 내놓을 경우 선행 R&D 투자가 매출로 이어지지 못할 위험이 있다. 양자컴퓨팅용 MMIC는 시장 자체가 초기 단계여서 전체 산업 성숙도가 사업화 속도를 제약할 수 있다. InP 파운드리 서비스 또한 대형 글로벌 파운드리와의 경쟁에서 충분한 고객 기반을 확보하는 것이 과제다.",
+    "en": "New business lines — VCSEL, MMIC, and InP foundry — must successfully cross the commercialization valley-of-death from development to mass production. Failure to achieve mass-production quality within expected timelines, or the earlier market arrival of competing technologies, could prevent prior R&D investments from translating into revenue. The quantum computing MMIC market remains early-stage, and overall industry maturation timelines could constrain QSI's pace of commercialization. InP foundry services also face the challenge of building a sufficient customer base in competition with larger, better-resourced global foundries."
    }
   },
   {
    "cat": {
-    "ko": "고정비 레버리지 및 R&D 비용 증가 리스크",
-    "en": "Fixed-Cost Leverage and R&D Expense Escalation Risk"
+    "ko": "글로벌 공급망·지정학적 리스크",
+    "en": "Global Supply Chain and Geopolitical Risk"
    },
    "body": {
-    "ko": "연간 200억 원대 매출 규모에서 연구개발비·인건비 등 고정 비용이 일정 수준으로 유지될 경우, 매출이 소폭만 감소해도 영업이익 흑·적자 전환이 반복될 수 있다. 2023년 OPM -22.7%는 이 구조적 레버리지를 명확히 보여준 사례다. 신사업(MMIC·마이크로LED·LiDAR) 투자 확대 시 R&D 비용이 늘어 단기 이익 압박이 더욱 심화될 수 있다.",
-    "en": "With annual revenue in the ₩20B range, if fixed costs—R&D expenditure, labor—remain at current levels, even modest revenue declines can repeatedly flip operating profit between positive and negative territory. The 2023 OPM of –22.7% is a clear illustration of this structural operating leverage. Any acceleration of investment in new businesses (MMIC, Micro LED, LiDAR) would increase R&D expenses, risking additional near-term profit compression."
+    "ko": "화합물 반도체 제조에 필수적인 인듐·갈륨·인화인듐(InP) 등 원재료는 중국 의존도가 높아, 수출 규제 강화 시 원가 상승과 조달 차질 위험이 있다. GaN·희토류 소재에 대한 수출 제한이 이미 반도체 레이저 제조원가를 끌어올리기 시작했다는 시장 조사 결과가 이를 뒷받침한다. 동사가 중국 웨이하이에 생산 거점을 보유하고 있다는 점도 미-중 기술 분쟁 심화 시 이중 리스크 요인이 될 수 있다. 일본 대기업과의 경쟁에서 환율 변동이 상대적 가격 경쟁력에 영향을 미치는 변수이기도 하다.",
+    "en": "Key raw materials for compound semiconductor manufacturing — including indium, gallium, and indium phosphide — are heavily sourced from China, creating supply and cost risks if export controls are tightened. Market research indicates that restrictions on GaN and rare-earth materials have already begun driving up semiconductor laser manufacturing costs, and prolonged shortages could constrain industry-wide growth rates. QSI's manufacturing presence in Weihai, China, could also become a dual-risk factor in the event of escalating U.S.-China technology tensions. Exchange rate movements between the Korean won and Japanese yen also affect QSI's relative price competitiveness against its primary Japanese industry rivals."
    }
   }
  ],
  "checkpoints": [
   {
    "when": {
-    "ko": "2026년 7~8월 (2026Q2 실적 발표 예정)",
-    "en": "July–August 2026 (Expected 2Q2026 Earnings Release)"
+    "ko": "2026년 8월 중 (예상)",
+    "en": "August 2026 (Expected)"
    },
    "what": {
-    "ko": "2026Q1의 OPM 약 8.7% 개선이 2분기에도 지속되는지가 수익성 구조 전환의 핵심 검증 지점이다. 분기 매출 성장세와 원가율 변화를 함께 확인해야 한다.",
-    "en": "Whether the ~8.7% OPM recovery in 1Q2026 is sustained in 2Q2026 is the key test of a structural profitability shift. Quarterly revenue trajectory and changes in cost ratios should be assessed together."
+    "ko": "2026년 2분기 실적 공시 예정. 1분기 영업이익률(약 8.7%) 회복세의 지속 여부와 매출 성장의 분기 연속성을 확인하는 핵심 지표로, 수익성 반등이 구조적인지 일시적인지를 판단하는 첫 번째 기회다.",
+    "en": "Q2 2026 earnings release expected. This is the first opportunity to determine whether Q1's ~8.7% operating margin recovery is structural or transient, and whether top-line growth continues for a sixth consecutive quarter."
    }
   },
   {
    "when": {
-    "ko": "2026년 6월 (INP-DHEMT-050 PDK 개발 완료 목표)",
-    "en": "June 2026 (INP-DHEMT-050 PDK Development Target Date)"
+    "ko": "2026년 하반기",
+    "en": "Second Half of 2026"
    },
    "what": {
-    "ko": "회사가 발표한 50nm 게이트 기반 차세대 PDK 개발 완료 여부와, 이후 THz 대역 응용 분야 잠재 고객사와의 파운드리 계약 진전 여부를 확인해야 한다.",
-    "en": "Verify whether the company completes the 50nm gate next-generation PDK on its stated schedule, and monitor whether follow-on foundry contract discussions with THz-band application customers make concrete progress."
+    "ko": "유로스타3 과제 종료 및 Low Noise Factory 향 MMIC 납품 공시 여부. 양자컴퓨팅용 MMIC 상업화 개시를 확인하는 최초의 이정표로, 신사업 실현 가능성을 판단하는 핵심 이벤트다.",
+    "en": "Completion of the Eurostars 3 project and potential MMIC delivery announcement to Low Noise Factory. This would be the first confirmable milestone for MMIC commercialization in quantum computing, providing a direct test of new business viability."
    }
   },
   {
    "when": {
-    "ko": "2026년 하반기 (유로스타3 과제 종료·MMIC 모듈 납품)",
-    "en": "2H2026 (Eurostars3 Project Conclusion & MMIC Module Delivery)"
+    "ko": "2026년 하반기~연말",
+    "en": "H2 2026 – Year-End 2026"
    },
    "what": {
-    "ko": "유로스타3 완료 이후 MMIC 탑재 저잡음 증폭기 모듈의 양자컴퓨팅 제조사 실공급 여부, 계약 규모 및 반복 수주 가능성을 DART 공시를 통해 확인해야 한다.",
-    "en": "After the Eurostars3 project concludes, verify via DART disclosures whether LNA module deliveries to quantum computing manufacturers actually occur, and assess the contract scale and potential for recurring orders."
+    "ko": "InP HEMT 파운드리 서비스의 첫 유상 고객 계약 체결 공시 여부. PDK 공개와 무상 MPW 이후 유상 계약 전환이 이루어지는지가 파운드리 사업 수익화 가능성의 바로미터다.",
+    "en": "Announcement of the first paid InP HEMT foundry contract. Following the PDK release and complimentary MPW service, conversion to a paid customer relationship is the key indicator of whether the foundry business can generate real revenue."
    }
   },
   {
    "when": {
-    "ko": "2026년 하반기 (마이크로LED 에피 상업 계약 여부)",
-    "en": "2H2026 (Micro LED Epi Commercial Contract Status)"
+    "ko": "2026년 연내",
+    "en": "Throughout 2026"
    },
    "what": {
-    "ko": "2025년 8월 발표된 초소형 적색 마이크로LED 고효율 에피 플랫폼이 XR·마이크로디스플레이 고객사 검증을 통과해 상업 공급 계약으로 이어지는지를 점검해야 한다.",
-    "en": "Track whether the ultra-small red Micro LED high-efficiency epi platform announced in August 2025 passes customer qualification at XR and micro-display accounts and advances to commercial supply agreements."
+    "ko": "940nm 8중접합 VCSEL 고출력 어레이 제품의 양산 샘플 출하 또는 글로벌 OEM 고객 확보 공시 모니터링. 자율주행 부품 공급망 진입 여부를 확인하는 시금석이다.",
+    "en": "Watch for mass-production sample shipment announcements of 940nm 8-junction VCSEL arrays or OEM qualification disclosures. This would confirm tangible entry into the autonomous driving component supply chain."
    }
   },
   {
    "when": {
-    "ko": "수시 (DART 공시 — 단일판매·공급계약 체결)",
-    "en": "Ongoing (DART Disclosures — Material Supply/Sales Contract Filings)"
+    "ko": "2027년 3월 (예상)",
+    "en": "March 2027 (Expected)"
    },
    "what": {
-    "ko": "MMIC·마이크로LED·LiDAR 신사업의 매출 기여가 가시화되려면 DART상 단일판매·공급계약 체결 공시가 선행 지표가 된다. 계약 상대방, 계약 규모, 공급 기간을 수시로 모니터링할 필요가 있다.",
-    "en": "Material supply/sales contract filings on DART will serve as leading indicators for when new business revenue contributions become visible. Contract counterparty, contract value, and supply duration should be monitored on a rolling basis."
+    "ko": "2026년 연간 사업보고서(DART) 공시. 신사업 부문별 매출 기여 현실화 여부, 연간 영업이익률의 방향성, 그리고 배당 결정을 종합 검토할 수 있는 최종 확인 지점이다.",
+    "en": "FY2026 annual report (DART) expected in March 2027. This provides the comprehensive view of actual new business revenue contributions, full-year operating margin direction, and the dividend decision for a holistic evaluation of the year's progress."
    }
   }
  ],
  "verdict": {
   "body": {
-   "ko": "큐에스아이는 레이저다이오드·VCSEL·InP HEMT 기반의 화합물 반도체 원천기술을 보유하고, 에피택시부터 패키징까지 전 공정을 내재화한 국내 유일에 가까운 광반도체 통합 솔루션 기업이다. 본업인 레이저다이오드 사업은 2023년 대규모 영업손실에서 회복해 2024~2025년 매출이 연속 성장했으며, 2026년 1분기에는 영업이익률이 2022년 수준에 근접하는 뚜렷한 개선을 보였다. 스웨덴 LNF에 대한 MMIC 납품 성공·양산 승인 획득(2025년 11월), 6G 국책과제 참여, 마이크로LED 에피 플랫폼 개발은 중장기 사업 확장 가능성을 열어두고 있으나 아직 대부분이 초기 상업화 단계다. 초저레버리지 재무구조(부채비율 6.4%)와 4년 연속 플러스 영업현금흐름은 불확실한 환경에서도 사업 지속성을 뒷받침하는 토대다. 반면 연간 OPM의 극단적 변동성, 소규모 매출 기반에서 비롯된 고정비 레버리지, 신사업 상업화 불확실성은 지속적으로 모니터링이 필요한 약세 요인이다. 2026년 하반기 유로스타3 과제 종료 이후 MMIC 모듈 실공급 여부, INP-DHEMT-050 PDK 완성 시점, 2분기 이후 분기 영업이익 추이가 회사의 실질적 전환 모멘텀을 가늠할 핵심 체크포인트가 될 것이다.",
-   "en": "QSI is a compound semiconductor specialist with proprietary technology in laser diodes, VCSEL, and InP HEMT, operating one of the only fully integrated epitaxy-to-packaging photonics solution platforms in Korea. Its core laser diode business recovered from a large 2023 operating loss with two consecutive years of revenue growth in 2024–2025, and 1Q2026 showed a clear OPM recovery approaching 2022 levels. Successful MMIC delivery and mass-production approval from Sweden's LNF in November 2025, participation in a 6G national project, and the development of a Micro LED epi platform present meaningful medium- to long-term expansion optionality—but most of these remain in early commercialization stages with limited impact on annual financials to date. The ultra-low leverage balance sheet (debt ratio: 6.4%) and four consecutive years of positive operating cash flow provide a foundation for business continuity in a high-uncertainty environment. On the other hand, extreme annual OPM volatility, fixed-cost leverage inherent in a modest revenue base, and new business commercialization uncertainty remain bear-case factors requiring ongoing scrutiny. Actual MMIC module supply following the Eurostars3 project conclusion in 2H2026, the INP-DHEMT-050 PDK completion timeline, and the quarterly operating profit trend from 2Q2026 onward will be the critical checkpoints for assessing whether genuine business momentum is taking hold."
+   "ko": "큐에스아이는 반도체 레이저 원천기술과 수직통합 생산 체계를 기반으로, 전동공구·레이저 프린터·산업자동화 등 다양한 전방 시장에 공급하는 화합물 반도체 전문 기업이다. 2023년 대규모 영업 적자 이후 단계적으로 수익성을 회복하여 2026년 1분기에 의미 있는 영업이익률 반등을 확인한 점은 긍정적 변화다. 재무적으로는 부채비율 6.4%·자기자본 874억 원의 보수적 구조가 영업 변동성을 방어하며, 대규모 자기자본에서 발생하는 비영업 수익이 당기순이익의 완충 역할을 지속적으로 해 왔다. 중장기적으로는 VCSEL·MMIC·InP 파운드리·Micro LED라는 네 개 신성장 사업의 상업화 성패가 수익성 도약의 핵심 변수다. 반면 영업이익률의 높은 변동성, 신사업 매출 기여 시점의 불확실성, 초소형 플로트에 따른 유동성·변동성 리스크는 균형 있게 고려해야 할 불확실성 요인이다. 투자자는 분기별 영업이익률 지속성, 유로스타3 MMIC 납품 성사, InP 파운드리 유상 계약 등 구체적 이정표를 체크포인트 삼아 진행 상황을 모니터링하는 접근이 적절하다.",
+   "en": "QSI is a compound semiconductor specialist with semiconductor laser source technology and a vertically integrated production system, supplying a wide range of downstream markets from power tools and laser printers to industrial automation. A positive development is the meaningful operating margin rebound in Q1 2026, following a staged recovery from the significant operating loss of 2023. The balance sheet remains conservatively structured — with a 6.4% debt ratio and KRW 87.4 billion in equity — providing resilience through periods of operating volatility, while non-operating income from the large equity base has consistently served as a net profit buffer. Over the medium to long term, the commercialization success of four new business lines — VCSEL, MMIC, InP foundry, and Micro LED — will be the pivotal variable for any potential step-change in profitability. Balancing these opportunities are meaningful uncertainties: persistent operating margin volatility, unclear timelines for new business revenue contribution, and structural liquidity and volatility risks inherent to the ultra-small float. A milestone-based monitoring approach — tracking quarterly operating margin sustainability, Eurostars 3 MMIC delivery confirmation, and InP foundry paid contract announcements — provides a practical framework for assessing the company's trajectory."
   }
  },
  "sources": [
   "https://www.investing.com/equities/qsi-co-ltd",
-  "https://comp.fnguide.com/SVO2/ASP/SVD_Main.asp?gicode=A066310",
   "https://m.thinkpool.com/compDiscuss/cont/1016311",
+  "https://comp.fnguide.com/SVO2/ASP/SVD_Main.asp?gicode=A066310",
   "https://alphasquare.co.kr/home/stock-summary?code=066310",
   "https://m.thinkpool.com/compDiscuss/cont/1016415",
   "https://www.investing.com/equities/qsi-co-ltd-earnings",
   "https://dartpoint.ai/company_report/00411446",
-  "https://kind.krx.co.kr/common/disclsviewer.do?method=search&acptno=20260316001670",
   "https://comp.fnguide.com/SVO2/asp/SVD_Invest.asp?pGB=1&gicode=A066310&cID=&MenuYn=Y&ReportGB=&NewMenuID=105&stkGb=701",
+  "https://kind.krx.co.kr/common/disclsviewer.do?method=search&acptno=20260316001670",
   "https://www.qsilaser.com/kor/",
-  "https://www.thebell.co.kr/free/content/ArticleView.asp?key=202103231326279400102266&lcode=00",
-  "https://www.qsilaser.com/kor/company/stock.php",
-  "https://www.jobkorea.co.kr/Recruit/Co_Read/C/qsilaser",
-  "https://www.saramin.co.kr/zf_user/company-info/view/csn/S3BVeld3OWhNZXF2aWlwSWpqckcxZz09/company_nm/(%EC%A3%BC)%ED%81%90%EC%97%90%EC%8A%A4%EC%95%84%EC%9D%B4",
+  "https://www.qsilaser.com/product/foundry.php",
   "http://english.qsilaser.com/company/greeting.php",
-  "https://m.thinkpool.com/compDiscuss/cont/1016046",
-  "https://www.newswire.co.kr/newsRead.php?no=1022373&sourceType=rss",
-  "https://m.newsprime.co.kr/section_view.html?no=710724&menu=1"
+  "https://www.saramin.co.kr/zf_user/company-info/view/csn/S3BVeld3OWhNZXF2aWlwSWpqckcxZz09/company_nm/(%EC%A3%BC)%ED%81%90%EC%97%90%EC%8A%A4%EC%95%84%EC%9D%B4",
+  "https://www.qsilaser.com/rnd/vcsel.php",
+  "https://www.qsilaser.com/product/pkg.php",
+  "http://www.thedailymoney.com/news/articleView.html?idxno=1137827",
+  "https://www.qsilaser.com/kor/company/stock.php",
+  "https://t2.kirs.or.kr/misc/info_search_pop.html?code="
  ],
  "v": 2,
  "model": "claude-sonnet-4-6",
@@ -233,11 +233,11 @@
   "반도체"
  ],
  "market": "코스닥",
- "reportDate": "2026-06-25",
- "reportTs": "2026-06-25 20:39",
- "dataDate": "20260625",
+ "reportDate": "2026-07-02",
+ "reportTs": "2026-07-02 22:27",
+ "dataDate": "20260702",
  "quant": {
-  "asOf": "2026-06-25",
+  "asOf": "2026-07-02",
   "fs_basis": "연결(CFS) · DART 공시 확정치 · 지배주주 기준 순이익",
   "annual": [
    {
@@ -334,23 +334,23 @@
    }
   ],
   "valuation": {
-   "price": 7880,
-   "mcap": 0.0731,
+   "price": 7480,
+   "mcap": 0.0694,
    "shares": 9271621,
    "total_shares": 9271621,
    "wavg_shares": 9079038,
-   "per": 15.5,
+   "per": 14.7,
    "eps": 508,
-   "pbr": 0.8,
+   "pbr": 0.76,
    "bps": 9840,
    "roe_ttm": 5.3,
    "ttm_window": "2025Q2~2026Q1",
    "ttm_np_owner": 4574023307,
-   "pbr_krx": 0.82,
+   "pbr_krx": 0.78,
    "bps_krx": 9645.0,
    "basis": "PER·EPS·PBR·BPS 모두 자체 산출(네이버·토스와 동일 방식) · 배당은 DART 공시 주당현금배당금(보완:KRX) ÷ 현재가",
    "dps": 100.0,
-   "div": 1.27
+   "div": 1.34
   }
  }
 }
