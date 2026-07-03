@@ -194,6 +194,15 @@ def main():
 
     actors = [a.strip() for a in os.getenv("X_STYLE_ACTORS", "").split(",") if a.strip()] or DEFAULT_ACTORS
     queries = [q.strip() for q in os.getenv("X_STYLE_QUERIES", "").split("|") if q.strip()] or DEFAULT_QUERIES
+
+    # kaito는 sort:Top·minimumFavorites를 무시하고 '최신순(좋아요 0)'을 반환한다.
+    # → X 고급검색 연산자를 검색어에 직접 넣어 인기 글만 받는다(kaito는 X 검색을 실제 수행).
+    def with_ops(q):
+        if "min_faves" in q or "filter:" in q:
+            return q
+        return f"{q} min_faves:{MIN_LIKES} lang:en -filter:replies -filter:nativeretweets"
+    queries = [with_ops(q) for q in queries]
+
     print(f"🔎 actor {len(actors)}개 시도 · maxItems {MAXITEMS} · 최소좋아요 {MIN_LIKES} · KEEP {KEEP}")
     print(f"   검색어: {queries}")
 
