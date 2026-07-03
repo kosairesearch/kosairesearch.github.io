@@ -5,13 +5,17 @@ data/x_style_examples.json 에 인기순으로 저장한다.
 이 파일은 daily_x_post.py가 '문체 참고(스타일)'로만 읽는다 — 내용·종목·매수추천은
 절대 따라 쓰지 않고, 사람 같은 톤·리듬·훅(첫 문장)만 학습시키기 위한 것.
 
+여러 X 스크래퍼 액터를 순서대로 시도해, 트윗을 실제로 반환하는 첫 액터의 결과를 쓴다
+(어떤 액터가 X 차단 등으로 noResults만 주면 다음 액터로 폴백). pay-per-result라
+결과 0건 액터는 비용이 거의 없다.
+
 환경변수:
   APIFY_TOKEN            (필수) Apify API 토큰
-  X_STYLE_ACTOR          Apify actor id (기본 apidojo~tweet-scraper)
-  X_STYLE_QUERIES        검색어들을 '|'로 구분(비우면 기본 금융 키워드). 평범한 키워드 권장.
-  X_STYLE_MAXITEMS       Apify가 긁어올 최대 트윗 수(기본 1000 — 무료 한도 내 대량)
+  X_STYLE_ACTORS         시도할 actor id들(콤마 구분). 비우면 기본 목록.
+  X_STYLE_QUERIES        검색어들을 '|'로 구분(비우면 기본 금융 키워드).
+  X_STYLE_MAXITEMS       actor당 최대 수집 트윗 수(기본 1000)
   X_STYLE_MIN_LIKES      채택 최소 좋아요(기본 200)
-  X_STYLE_KEEP           최종 저장할 예시 개수(기본 60, 인기순)
+  X_STYLE_KEEP           최종 저장 예시 개수(기본 80, 인기순)
 """
 import json
 import os
@@ -27,13 +31,17 @@ OUT = ROOT / "data" / "x_style_examples.json"
 KST = timezone(timedelta(hours=9))
 
 TOKEN = os.getenv("APIFY_TOKEN", "").strip()
-ACTOR = os.getenv("X_STYLE_ACTOR", "apidojo~tweet-scraper").strip().replace("/", "~")
 MAXITEMS = int(os.getenv("X_STYLE_MAXITEMS", "1000") or "1000")
 MIN_LIKES = int(os.getenv("X_STYLE_MIN_LIKES", "200") or "200")
-KEEP = int(os.getenv("X_STYLE_KEEP", "60") or "60")
+KEEP = int(os.getenv("X_STYLE_KEEP", "80") or "80")
 
-# 평범한 키워드(고급검색 연산자 없이) — 연산자는 액터가 못 먹어 noResults가 났다.
-# 최소 좋아요는 아래 payload의 minimumFavorites(액터 전용 필드)로 건다.
+# 신뢰도 순으로 여러 액터 시도 — 앞의 것이 트윗을 못 주면 다음으로 폴백.
+DEFAULT_ACTORS = [
+    "kaitoeasyapi~twitter-x-data-tweet-scraper-pay-per-result-cheapest",
+    "apidojo~tweet-scraper",
+    "apidojo~twitter-scraper-lite",
+]
+
 DEFAULT_QUERIES = [
     "stock market", "stocks", "earnings", "semiconductor",
     "chip stocks", "tech stocks", "investing", "Korean stocks",
@@ -97,57 +105,42 @@ def _author(d):
     return str(a or "")
 
 
-def run_apify(queries):
-    url = f"https://api.apify.com/v2/acts/{ACTOR}/run-sync-get-dataset-items?token={TOKEN}"
+def run_actor(actor, queries):
+    """actor 하나 실행 → 아이템 리스트 반환(실패 시 빈 리스트)."""
+    url = f"https://api.apify.com/v2/acts/{actor}/run-sync-get-dataset-items?token={TOKEN}"
     payload = {
         "searchTerms": queries,
-        "sort": "Top",                 # 인기순(반응 좋은 글부터)
+        "sort": "Top",
         "maxItems": MAXITEMS,
+        "maxTweets": MAXITEMS,          # 액터별 필드명 차이 대비(무시되면 그만)
         "tweetLanguage": "en",
-        "minimumFavorites": MIN_LIKES,  # 액터 전용 '최소 좋아요' 필터
+        "minimumFavorites": MIN_LIKES,
         "includeSearchTerms": False,
     }
-    print(f"- Apify 입력: {json.dumps({k: v for k, v in payload.items() if k != 'searchTerms'})} · 검색어 {queries}")
-    r = requests.post(url, json=payload, timeout=290)
+    try:
+        r = requests.post(url, json=payload, timeout=290)
+    except Exception as e:
+        print(f"  · {actor}: 요청 예외 {e}")
+        return []
     if not r.ok:
-        print(f"❌ Apify 응답 오류 {r.status_code}: {r.text[:500]}")
-        sys.exit(1)
+        print(f"  · {actor}: HTTP {r.status_code} {r.text[:200]}")
+        return []
     try:
         data = r.json()
-    except Exception as e:
-        print(f"❌ Apify 결과 파싱 실패: {e}")
-        sys.exit(1)
+    except Exception:
+        return []
     if isinstance(data, dict):
-        if data.get("error"):
-            print(f"❌ Apify 에러: {json.dumps(data)[:500]}")
-            sys.exit(1)
         data = data.get("items") or data.get("results") or []
-    return data if isinstance(data, list) else []
+    if not isinstance(data, list):
+        return []
+    return data
 
 
-def main():
-    if not TOKEN:
-        print("❌ APIFY_TOKEN 미설정 — GitHub Secrets에 APIFY_TOKEN 등록 필요.")
-        sys.exit(1)
-
-    env_q = [q.strip() for q in os.getenv("X_STYLE_QUERIES", "").split("|") if q.strip()]
-    queries = env_q or DEFAULT_QUERIES
-    print(f"🔎 Apify actor {ACTOR} · maxItems {MAXITEMS} · 최소좋아요 {MIN_LIKES} · KEEP {KEEP}")
-
-    items = run_apify(queries)
-    # 검색 결과 없음 마커 제거
-    real = [d for d in items if isinstance(d, dict) and not d.get("noResults")]
-    print(f"- 수집 원본 {len(items)}건 (유효 {len(real)}건)")
-    if not real:
-        print("⚠ 유효 트윗 0건 — 검색이 결과를 반환하지 않음. 기존 예시 보존. "
-              "검색어(X_STYLE_QUERIES)나 actor(X_STYLE_ACTOR)를 조정하세요.")
-        if items:
-            print(f"- 원본 샘플: {json.dumps(items[0], ensure_ascii=False)[:400]}")
-        sys.exit(0)
-    print(f"- 유효 첫 항목 키: {sorted(real[0].keys())}")
-
+def extract(items):
     seen, cand = set(), []
-    for d in real:
+    for d in items:
+        if not isinstance(d, dict) or d.get("noResults"):
+            continue
         text = _text(d)
         if not text or text.startswith("RT @") or d.get("isRetweet") or d.get("retweeted"):
             continue
@@ -170,19 +163,42 @@ def main():
             "text": clean, "likes": likes, "retweets": _count(d, RT_KEYS),
             "author": _author(d), "url": d.get("url") or d.get("twitterUrl") or "",
         })
+    return cand
 
-    cand.sort(key=lambda x: x["likes"], reverse=True)   # 인기순(좋아요 많은 순)
-    top = cand[:KEEP]
-    print(f"- 필터 통과 {len(cand)}건 → 인기순 상위 {len(top)}건 저장")
 
-    if len(top) < 3:
-        print("⚠ 채택 예시가 3건 미만 — 기존 예시 파일 보존(덮어쓰지 않음).")
+def main():
+    if not TOKEN:
+        print("❌ APIFY_TOKEN 미설정 — GitHub Secrets에 APIFY_TOKEN 등록 필요.")
+        sys.exit(1)
+
+    actors = [a.strip() for a in os.getenv("X_STYLE_ACTORS", "").split(",") if a.strip()] or DEFAULT_ACTORS
+    queries = [q.strip() for q in os.getenv("X_STYLE_QUERIES", "").split("|") if q.strip()] or DEFAULT_QUERIES
+    print(f"🔎 actor {len(actors)}개 시도 · maxItems {MAXITEMS} · 최소좋아요 {MIN_LIKES} · KEEP {KEEP}")
+    print(f"   검색어: {queries}")
+
+    cand = []
+    for actor in actors:
+        items = run_actor(actor, queries)
+        real = [d for d in items if isinstance(d, dict) and not d.get("noResults")]
+        print(f"  · {actor}: 원본 {len(items)}건 · 유효 {len(real)}건")
+        if real:
+            print(f"      첫 항목 키: {sorted(real[0].keys())[:20]}")
+        cand = extract(items)
+        print(f"      필터 통과 {len(cand)}건")
+        if len(cand) >= 3:
+            print(f"  ✅ 사용 액터: {actor}")
+            break
+
+    if len(cand) < 3:
+        print("⚠ 어떤 액터도 트윗을 반환하지 않음(모두 noResults/차단 추정). 기존 예시 보존. "
+              "X_STYLE_ACTORS로 다른 액터를 지정해보세요.")
         sys.exit(0)
 
+    cand.sort(key=lambda x: x["likes"], reverse=True)   # 인기순
+    top = cand[:KEEP]
     OUT.parent.mkdir(parents=True, exist_ok=True)
     OUT.write_text(json.dumps({
         "updated": datetime.now(KST).strftime("%Y-%m-%d %H:%M KST"),
-        "source": f"apify:{ACTOR}",
         "note": "문체(스타일) 참고용. 내용·종목·추천은 daily_x_post에서 절대 인용하지 않음.",
         "count": len(top),
         "examples": top,

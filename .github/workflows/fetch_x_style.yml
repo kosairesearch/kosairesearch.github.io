@@ -18,6 +18,9 @@ on:
       max_items:
         description: 'Apify 최대 수집 트윗 수(무료 한도 고려, 기본 1000)'
         default: '1000'
+      actors:
+        description: '시도할 actor id들(콤마 구분, 비우면 기본 목록)'
+        default: ''
 
 concurrency:
   group: x-style-fetch
@@ -44,6 +47,7 @@ jobs:
           X_STYLE_QUERIES: ${{ inputs.queries }}
           X_STYLE_MIN_LIKES: ${{ inputs.min_likes }}
           X_STYLE_MAXITEMS: ${{ inputs.max_items }}
+          X_STYLE_ACTORS: ${{ inputs.actors }}
         run: python scripts/fetch_x_style.py
 
       - name: 결과 커밋
