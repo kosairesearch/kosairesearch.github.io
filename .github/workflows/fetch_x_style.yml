@@ -21,6 +21,9 @@ on:
       actors:
         description: '시도할 actor id들(콤마 구분, 비우면 기본 목록)'
         default: ''
+      accounts:
+        description: '스타일 참고할 특정 X 계정들(콤마 구분, @없이. 비우면 serenity)'
+        default: ''
 
 concurrency:
   group: x-style-fetch
@@ -48,6 +51,7 @@ jobs:
           X_STYLE_MIN_LIKES: ${{ inputs.min_likes }}
           X_STYLE_MAXITEMS: ${{ inputs.max_items }}
           X_STYLE_ACTORS: ${{ inputs.actors }}
+          X_STYLE_ACCOUNTS: ${{ inputs.accounts }}
         run: python scripts/fetch_x_style.py
 
       - name: 결과 커밋

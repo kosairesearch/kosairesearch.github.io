@@ -224,10 +224,11 @@ def build_style_block(n=5):
     pick = random.sample(ex, min(n, len(ex)))
     joined = "\n\n".join(f"- {t}" for t in pick)
     return (
-        " STYLE REFERENCE (voice only): below are real, high-engagement posts from finance X. "
-        "Study their human VOICE, rhythm, sentence shape, and how they open. Match that natural, "
-        "un-AI energy. Do NOT borrow their tickers, facts, opinions, or any buy/sell stance — "
-        "those are theirs, not ours; the COMPLIANCE and content rules above always win.\n"
+        " STYLE REFERENCE (voice + format, NOT content): below are real, high-engagement posts "
+        "from finance X. Closely emulate their human VOICE, rhythm, sentence shape, how they open, "
+        "and how they BREAK LINES and structure the post — write like these were written. Do NOT "
+        "borrow their tickers, facts, opinions, or any buy/sell stance; those are theirs, not "
+        "ours, and the COMPLIANCE and content rules above always win.\n"
         + joined
     )
 
@@ -240,14 +241,14 @@ def draft(brief, snap):
         "brand covering Korean stocks (KOSPI/KOSDAQ). Audience: global finance Twitter. "
         "You are given ONE company's live snapshot and our research notes. Write one strong, "
         "self-contained post about that company. "
-        "LENGTH & SHAPE: a short, skimmable mini-narrative, readability first. Keep EACH "
-        "paragraph to 1-2 sentences and put a BLANK LINE between paragraphs (a double newline, "
-        "\\n\\n, in the text). Aim for about 4-6 such short paragraphs, a touch tighter and "
-        "shorter overall than a full write-up. Cover, in order: (1) a hook with what just "
-        "happened and the key numbers, (2) the main driver, (3) capital return or another "
-        "supporting point if relevant, (4) the bear side / what cuts the other way, (5) one "
-        "line of valuation and earnings-trend context. Drop the least essential point rather "
-        "than padding; not a clipped list, not a long essay. Every paragraph earns its place. "
+        "LENGTH & SHAPE: keep it short and skimmable, not an essay. Let the STYLE REFERENCE posts "
+        "below set the actual shape — match how they break lines, how long their paragraphs run, "
+        "and how punchy they are (some are one tight block, some use single-line breaks). Use "
+        "blank lines between thoughts only where it reads naturally; do NOT force a fixed "
+        "paragraph template. Cover, roughly in order: the hook (what just happened + key numbers), "
+        "the main driver, a supporting point if relevant, the bear side / what cuts the other way, "
+        "and one line of valuation and earnings-trend context. Drop the least essential point "
+        "rather than padding. "
         "STYLE: concrete numbers (revenue, operating profit, growth, multiple) woven into "
         "sentences, not bullet dumps; confident but human voice; vary sentence length. "
         "NO em-dashes, NO '~', NO 'worth noting', NO 'in a world where', NO dramatic colon "
