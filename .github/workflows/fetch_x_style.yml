@@ -46,6 +46,9 @@ jobs:
         run: |
           git config --global user.email "bot@kosairesearch.github.io"
           git config --global user.name "KOS ai Bot"
+          if [ ! -f data/x_style_examples.json ]; then
+            echo "예시 파일 없음(수집 결과 부족) — 커밋 건너뜀"; exit 0
+          fi
           git add data/x_style_examples.json
           if git diff --cached --quiet; then
             echo "변경 없음"; exit 0
