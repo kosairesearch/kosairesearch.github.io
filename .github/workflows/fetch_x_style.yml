@@ -1,0 +1,59 @@
+name: 🎨 X 스타일 예시 수집(Apify)
+
+# 반응 좋은 영어 금융/투자 X 글을 Apify로 긁어와 data/x_style_examples.json 갱신.
+# daily_x_post가 이 파일을 '문체 참고'로 읽어 사람 같은(AI 티 안 나는) 글을 쓴다.
+# 내용·종목·추천은 인용하지 않고 톤·리듬만 학습.
+
+on:
+  schedule:
+    - cron: '23 21 * * 0'   # 매주 일요일 06:23 KST
+  workflow_dispatch:
+    inputs:
+      queries:
+        description: "검색어들을 '|'로 구분(비우면 기본 금융 키워드)"
+        default: ''
+      min_likes:
+        description: '예시 채택 최소 좋아요'
+        default: '500'
+
+concurrency:
+  group: x-style-fetch
+  cancel-in-progress: false
+
+permissions:
+  contents: write
+
+jobs:
+  fetch:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+          cache: 'pip'
+      - run: pip install -r requirements.txt
+
+      - name: 스타일 예시 수집
+        env:
+          APIFY_TOKEN: ${{ secrets.APIFY_TOKEN }}
+          X_STYLE_QUERIES: ${{ inputs.queries }}
+          X_STYLE_MIN_LIKES: ${{ inputs.min_likes }}
+        run: python scripts/fetch_x_style.py
+
+      - name: 결과 커밋
+        run: |
+          git config --global user.email "bot@kosairesearch.github.io"
+          git config --global user.name "KOS ai Bot"
+          git add data/x_style_examples.json
+          if git diff --cached --quiet; then
+            echo "변경 없음"; exit 0
+          fi
+          git commit -m "🎨 X 스타일 예시 갱신 $(TZ='Asia/Seoul' date +'%Y-%m-%d %H:%M KST')"
+          for i in $(seq 1 10); do
+            git fetch origin main -q 2>/dev/null || true
+            if git rebase origin/main 2>/dev/null && git push origin HEAD:main 2>/dev/null; then break; fi
+            git rebase --abort 2>/dev/null || true
+            sleep $(( (RANDOM % 9) + 2 ))
+          done
