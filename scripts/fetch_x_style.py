@@ -205,7 +205,7 @@ def main():
 
     # 특정 계정 스타일도 참고 — X_STYLE_ACCOUNTS(콤마 구분, @없이). 해당 계정 글은
     # 좋아요 하한을 낮게(from: 계정은 이미 큐레이션된 소스) 잡아 폭넓게 수집.
-    accounts = [a.strip().lstrip("@") for a in (os.getenv("X_STYLE_ACCOUNTS", "").strip() or "serenity").split(",") if a.strip()]
+    accounts = [a.strip().lstrip("@") for a in (os.getenv("X_STYLE_ACCOUNTS", "").strip() or "aleabitoreddit").split(",") if a.strip()]
     acct_min = max(20, MIN_LIKES // 5)
     for acct in accounts:
         queries.append(f"from:{acct} min_faves:{acct_min} lang:en -filter:replies -filter:nativeretweets")
