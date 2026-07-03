@@ -207,6 +207,31 @@ def build_brief(stock):
     return "\n".join(lines), snap
 
 
+STYLE_FILE = ROOT / "data" / "x_style_examples.json"
+
+
+def build_style_block(n=5):
+    """data/x_style_examples.json(반응 좋은 실제 X 글)에서 몇 개를 뽑아 '문체 참고' 블록을 만든다.
+    내용·종목·추천은 절대 인용 금지 — 톤·리듬·훅만 학습. 파일이 없으면 빈 문자열(기존 동작 유지)."""
+    try:
+        data = json.loads(STYLE_FILE.read_text(encoding="utf-8"))
+        ex = [e.get("text", "").strip() for e in data.get("examples", []) if e.get("text")]
+    except Exception:
+        return ""
+    if not ex:
+        return ""
+    import random
+    pick = random.sample(ex, min(n, len(ex)))
+    joined = "\n\n".join(f"- {t}" for t in pick)
+    return (
+        " STYLE REFERENCE (voice only): below are real, high-engagement posts from finance X. "
+        "Study their human VOICE, rhythm, sentence shape, and how they open. Match that natural, "
+        "un-AI energy. Do NOT borrow their tickers, facts, opinions, or any buy/sell stance — "
+        "those are theirs, not ours; the COMPLIANCE and content rules above always win.\n"
+        + joined
+    )
+
+
 def draft(brief, snap):
     import anthropic
     client = anthropic.Anthropic(api_key=ANTHROPIC_KEY)
@@ -230,8 +255,18 @@ def draft(brief, snap):
         "COMPLIANCE (hard rules, KOSAI is not a registered advisor): neutral only. "
         "NO buy/sell calls, NO price targets, NO 'will go up/down', NO 'undervalued, should rerate'. "
         "Present what is happening and the bull vs bear setup with equal weight; let the reader "
-        "judge. Numbers must come only from the snapshot/notes; never invent figures."
+        "judge. Numbers must come only from the snapshot/notes; never invent figures. "
+        "SOUND HUMAN, NOT AI (important): write like a sharp human markets person, not a language "
+        "model. Avoid AI tells completely: no 'moreover', 'furthermore', 'notably', 'it's worth "
+        "noting', 'in conclusion', 'in summary', 'overall', 'that said' as a crutch, and no tidy "
+        "wrap-up sentence. Skip robotic perfectly-balanced hedging and formulaic transitions. Use "
+        "contractions, plain words, and a real point of view on what's interesting (still neutral "
+        "on direction). Vary rhythm hard: mix a punchy short line with a longer one; a sentence "
+        "fragment is fine. Open with something a person would actually say, not a template."
     )
+    style = build_style_block()
+    if style:
+        sys_p += style
     usr = (
         f"{brief}\n\n"
         "Write the post. Return ONLY JSON: {\"en\": \"<the X post>\", "
