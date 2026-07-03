@@ -151,7 +151,7 @@ def run_actor(actor, queries):
     return items if isinstance(items, list) else []
 
 
-def extract(items):
+def extract(items, acct_set=frozenset()):
     seen, cand = set(), []
     rej = {"notext": 0, "rt": 0, "lang": 0, "likes": 0, "len": 0, "block": 0, "dup": 0}
     for d in items:
@@ -165,8 +165,10 @@ def extract(items):
         lang = str(d.get("lang") or d.get("language") or "").lower()
         if lang and not lang.startswith("en"):   # 언어 정보 있고 영어 아니면 제외(없으면 통과)
             rej["lang"] += 1; continue
+        author = _author(d)
         likes = _count(d, LIKE_KEYS)
-        if likes < MIN_LIKES:
+        # 지정 계정(참고 소스)의 글은 좋아요 수와 무관하게 포함 — 스타일 학습이 목적.
+        if likes < MIN_LIKES and author.lower() not in acct_set:
             rej["likes"] += 1; continue
         clean = re.sub(r"https?://\S+", "", text).strip()
         clean = re.sub(r"\s+\n", "\n", clean).strip()
@@ -180,7 +182,7 @@ def extract(items):
         seen.add(key)
         cand.append({
             "text": clean, "likes": likes, "retweets": _count(d, RT_KEYS),
-            "author": _author(d), "url": d.get("url") or d.get("twitterUrl") or "",
+            "author": author, "url": d.get("url") or d.get("twitterUrl") or "",
         })
     if not cand and any(rej.values()):
         print(f"      제외 사유: {rej}")
@@ -205,10 +207,10 @@ def main():
 
     # 특정 계정 스타일도 참고 — X_STYLE_ACCOUNTS(콤마 구분, @없이). 해당 계정 글은
     # 좋아요 하한을 낮게(from: 계정은 이미 큐레이션된 소스) 잡아 폭넓게 수집.
-    accounts = [a.strip().lstrip("@") for a in (os.getenv("X_STYLE_ACCOUNTS", "").strip() or "serenity").split(",") if a.strip()]
-    acct_min = max(20, MIN_LIKES // 5)
-    for acct in accounts:
-        queries.append(f"from:{acct} min_faves:{acct_min} lang:en -filter:replies -filter:nativeretweets")
+    accounts = [a.strip().lstrip("@") for a in (os.getenv("X_STYLE_ACCOUNTS", "").strip() or "aleabitoreddit").split(",") if a.strip()]
+    for acct in accounts:   # 지정 계정 글은 좋아요 하한 낮게(스타일 학습이 목적, 인기무관)
+        queries.append(f"from:{acct} min_faves:5 lang:en -filter:replies -filter:nativeretweets")
+    acct_set = frozenset(a.lower() for a in accounts)
 
     print(f"🔎 actor {len(actors)}개 시도 · maxItems {MAXITEMS} · 최소좋아요 {MIN_LIKES} · KEEP {KEEP}")
     print(f"   검색어: {queries}")
@@ -220,8 +222,9 @@ def main():
         print(f"  · {actor}: 원본 {len(items)}건 · 유효 {len(real)}건")
         if real:
             print(f"      첫 항목 샘플: {json.dumps(real[0], ensure_ascii=False)[:600]}")
-        cand = extract(items)
-        print(f"      필터 통과 {len(cand)}건")
+        cand = extract(items, acct_set)
+        acct_hits = sum(1 for c in cand if c["author"].lower() in acct_set)
+        print(f"      필터 통과 {len(cand)}건 (지정계정 {acct_hits}건)")
         if len(cand) >= 3:
             print(f"  ✅ 사용 액터: {actor}")
             break
