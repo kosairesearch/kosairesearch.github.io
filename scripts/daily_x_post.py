@@ -275,7 +275,7 @@ def draft(brief, snap):
         "\"ko\": \"<Korean gloss so the operator can verify accuracy and tone>\"}."
     )
     msg = client.messages.create(
-        model=MODEL, max_tokens=900, system=sys_p,
+        model=MODEL, max_tokens=2000, system=sys_p,
         messages=[{"role": "user", "content": usr}],
     )
     txt = "".join(b.text for b in msg.content if getattr(b, "type", "") == "text")
