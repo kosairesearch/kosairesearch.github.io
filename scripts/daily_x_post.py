@@ -258,6 +258,8 @@ def draft(brief, snap):
         "NO buy/sell calls, NO price targets, NO 'will go up/down', NO 'undervalued, should rerate'. "
         "Present what is happening and the bull vs bear setup with equal weight; let the reader "
         "judge. Numbers must come only from the snapshot/notes; never invent figures. "
+        "TICKER: the FIRST time you mention the company name, put its 6-digit ticker (from the "
+        "snapshot) in parentheses right after it, e.g. 'ISC (095340)'. Only on that first mention. "
         "SOUND HUMAN, NOT AI (important): write like a sharp human markets person, not a language "
         "model. Avoid AI tells completely: no 'moreover', 'furthermore', 'notably', 'it's worth "
         "noting', 'in conclusion', 'in summary', 'overall', 'that said' as a crutch, and no tidy "
@@ -364,12 +366,8 @@ def main():
     log("=== 생성된 EN 글 ===\n" + d["en"] + "\n=== 끝 ===")
 
     tk = stock["ticker"]
-    head = (f"📅 오늘의 X 종목글 — {snap['name_ko']} ({tk}) · {snap.get('sector','')}\n"
-            f"{snap.get('price_krw')}원 · 시총 {snap.get('mcap_tn_krw')}조 "
-            f"· PER {snap.get('PER')} · PBR {snap.get('PBR')}\n"
-            f"링크: https://kosai.kr/stock.html?ticker={tk}")
-    # 메시지 2건 분리 — ① X 복붙용 영어글(깔끔하게 단독), ② 한국어 검수본
-    msg_en = f"{head}\n\n— EN (아래만 X에 복붙) —\n{d['en']}"
+    # 상단 헤더(종목·시세·링크)는 넣지 않는다 — 영어 글만 단독으로 보내 바로 X에 복붙.
+    msg_en = d["en"]
     msg_ko = f"— KR (검수용) —\n{d.get('ko','')}"
     if tg_send(msg_en) and tg_send(msg_ko):
         st["last_date"] = today
