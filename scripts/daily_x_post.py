@@ -222,6 +222,7 @@ def build_style_block(n=5):
         return ""
     import random
     pick = random.sample(ex, min(n, len(ex)))
+    log(f"🎨 스타일 예시 {len(ex)}개 중 {len(pick)}개 반영")
     joined = "\n\n".join(f"- {t}" for t in pick)
     return (
         " STYLE REFERENCE (voice + format, NOT content): below are real, high-engagement posts "
@@ -241,11 +242,14 @@ def draft(brief, snap):
         "brand covering Korean stocks (KOSPI/KOSDAQ). Audience: global finance Twitter. "
         "You are given ONE company's live snapshot and our research notes. Write one strong, "
         "self-contained post about that company. "
-        "LENGTH & SHAPE: SHORT. Write like a real viral finance tweet — about 2 to 5 tight lines, "
-        "roughly 250-500 characters, never more than ~600. One sharp hook with the single key "
-        "number, then one line of the real tension (the bull vs bear in a phrase). That is it. "
-        "NO 5-part breakdown, NO essay, NO covering every angle. Short punchy lines with line "
-        "breaks like the STYLE REFERENCE posts; cut every non-essential word. If in doubt, shorter. "
+        "ABOVE ALL, WRITE IN THE EXACT STYLE of the STYLE REFERENCE posts at the end: copy their "
+        "sentence length, their heavy line breaks, their punchy casual human voice. "
+        "SENTENCES: keep them SHORT. If a sentence runs long, split it into two. No long "
+        "analytical run-on sentences. "
+        "PARAGRAPHS: SHORT. Mostly one short sentence per line, with frequent line breaks, like the "
+        "references — not dense blocks. "
+        "You MAY cover the full story (what happened, the driver, the bull case, the bear case, "
+        "valuation) — but each as its own short punchy line, never as long paragraphs. Cut filler. "
         "STYLE: concrete numbers (revenue, operating profit, growth, multiple) woven into "
         "sentences, not bullet dumps; confident but human voice; vary sentence length. "
         "NO em-dashes, NO '~', NO 'worth noting', NO 'in a world where', NO dramatic colon "
@@ -357,6 +361,7 @@ def main():
     if not d or not d.get("en"):
         log("❌ 초안 생성 실패(Claude 응답 파싱 불가) — 종료.")
         sys.exit(1)
+    log("=== 생성된 EN 글 ===\n" + d["en"] + "\n=== 끝 ===")
 
     tk = stock["ticker"]
     head = (f"📅 오늘의 X 종목글 — {snap['name_ko']} ({tk}) · {snap.get('sector','')}\n"
