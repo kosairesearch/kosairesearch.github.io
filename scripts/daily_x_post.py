@@ -241,14 +241,11 @@ def draft(brief, snap):
         "brand covering Korean stocks (KOSPI/KOSDAQ). Audience: global finance Twitter. "
         "You are given ONE company's live snapshot and our research notes. Write one strong, "
         "self-contained post about that company. "
-        "LENGTH & SHAPE: keep it short and skimmable, not an essay. Let the STYLE REFERENCE posts "
-        "below set the actual shape — match how they break lines, how long their paragraphs run, "
-        "and how punchy they are (some are one tight block, some use single-line breaks). Use "
-        "blank lines between thoughts only where it reads naturally; do NOT force a fixed "
-        "paragraph template. Cover, roughly in order: the hook (what just happened + key numbers), "
-        "the main driver, a supporting point if relevant, the bear side / what cuts the other way, "
-        "and one line of valuation and earnings-trend context. Drop the least essential point "
-        "rather than padding. "
+        "LENGTH & SHAPE: SHORT. Write like a real viral finance tweet — about 2 to 5 tight lines, "
+        "roughly 250-500 characters, never more than ~600. One sharp hook with the single key "
+        "number, then one line of the real tension (the bull vs bear in a phrase). That is it. "
+        "NO 5-part breakdown, NO essay, NO covering every angle. Short punchy lines with line "
+        "breaks like the STYLE REFERENCE posts; cut every non-essential word. If in doubt, shorter. "
         "STYLE: concrete numbers (revenue, operating profit, growth, multiple) woven into "
         "sentences, not bullet dumps; confident but human voice; vary sentence length. "
         "NO em-dashes, NO '~', NO 'worth noting', NO 'in a world where', NO dramatic colon "
@@ -274,7 +271,7 @@ def draft(brief, snap):
         "\"ko\": \"<Korean gloss so the operator can verify accuracy and tone>\"}."
     )
     msg = client.messages.create(
-        model=MODEL, max_tokens=2500, system=sys_p,
+        model=MODEL, max_tokens=900, system=sys_p,
         messages=[{"role": "user", "content": usr}],
     )
     txt = "".join(b.text for b in msg.content if getattr(b, "type", "") == "text")
