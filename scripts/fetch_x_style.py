@@ -153,31 +153,37 @@ def run_actor(actor, queries):
 
 def extract(items):
     seen, cand = set(), []
+    rej = {"notext": 0, "rt": 0, "lang": 0, "likes": 0, "len": 0, "block": 0, "dup": 0}
     for d in items:
         if not isinstance(d, dict) or d.get("noResults"):
             continue
         text = _text(d)
-        if not text or text.startswith("RT @") or d.get("isRetweet") or d.get("retweeted"):
-            continue
-        lang = (d.get("lang") or d.get("language") or "en").lower()
-        if lang not in ("en", "en-gb", "en-us", ""):
-            continue
+        if not text:
+            rej["notext"] += 1; continue
+        if text.startswith("RT @") or d.get("isRetweet") or d.get("retweeted"):
+            rej["rt"] += 1; continue
+        lang = str(d.get("lang") or d.get("language") or "").lower()
+        if lang and not lang.startswith("en"):   # 언어 정보 있고 영어 아니면 제외(없으면 통과)
+            rej["lang"] += 1; continue
         likes = _count(d, LIKE_KEYS)
         if likes < MIN_LIKES:
-            continue
+            rej["likes"] += 1; continue
         clean = re.sub(r"https?://\S+", "", text).strip()
-        if not (60 <= len(clean) <= 1200):
-            continue
+        clean = re.sub(r"\s+\n", "\n", clean).strip()
+        if not (40 <= len(clean) <= 1500):
+            rej["len"] += 1; continue
         if BLOCK.search(clean):
-            continue
+            rej["block"] += 1; continue
         key = re.sub(r"\W+", "", clean.lower())[:80]
         if key in seen:
-            continue
+            rej["dup"] += 1; continue
         seen.add(key)
         cand.append({
             "text": clean, "likes": likes, "retweets": _count(d, RT_KEYS),
             "author": _author(d), "url": d.get("url") or d.get("twitterUrl") or "",
         })
+    if not cand and any(rej.values()):
+        print(f"      제외 사유: {rej}")
     return cand
 
 
@@ -197,7 +203,7 @@ def main():
         real = [d for d in items if isinstance(d, dict) and not d.get("noResults")]
         print(f"  · {actor}: 원본 {len(items)}건 · 유효 {len(real)}건")
         if real:
-            print(f"      첫 항목 키: {sorted(real[0].keys())[:20]}")
+            print(f"      첫 항목 샘플: {json.dumps(real[0], ensure_ascii=False)[:600]}")
         cand = extract(items)
         print(f"      필터 통과 {len(cand)}건")
         if len(cand) >= 3:
