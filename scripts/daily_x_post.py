@@ -222,6 +222,7 @@ def build_style_block(n=5):
         return ""
     import random
     pick = random.sample(ex, min(n, len(ex)))
+    log(f"🎨 스타일 예시 {len(ex)}개 중 {len(pick)}개 반영")
     joined = "\n\n".join(f"- {t}" for t in pick)
     return (
         " STYLE REFERENCE (voice + format, NOT content): below are real, high-engagement posts "
@@ -241,14 +242,14 @@ def draft(brief, snap):
         "brand covering Korean stocks (KOSPI/KOSDAQ). Audience: global finance Twitter. "
         "You are given ONE company's live snapshot and our research notes. Write one strong, "
         "self-contained post about that company. "
-        "LENGTH & SHAPE: keep it short and skimmable, not an essay. Let the STYLE REFERENCE posts "
-        "below set the actual shape — match how they break lines, how long their paragraphs run, "
-        "and how punchy they are (some are one tight block, some use single-line breaks). Use "
-        "blank lines between thoughts only where it reads naturally; do NOT force a fixed "
-        "paragraph template. Cover, roughly in order: the hook (what just happened + key numbers), "
-        "the main driver, a supporting point if relevant, the bear side / what cuts the other way, "
-        "and one line of valuation and earnings-trend context. Drop the least essential point "
-        "rather than padding. "
+        "ABOVE ALL, WRITE IN THE EXACT STYLE of the STYLE REFERENCE posts at the end: copy their "
+        "sentence length, their heavy line breaks, their punchy casual human voice. "
+        "SENTENCES: keep them SHORT. If a sentence runs long, split it into two. No long "
+        "analytical run-on sentences. "
+        "PARAGRAPHS: SHORT. Mostly one short sentence per line, with frequent line breaks, like the "
+        "references — not dense blocks. "
+        "You MAY cover the full story (what happened, the driver, the bull case, the bear case, "
+        "valuation) — but each as its own short punchy line, never as long paragraphs. Cut filler. "
         "STYLE: concrete numbers (revenue, operating profit, growth, multiple) woven into "
         "sentences, not bullet dumps; confident but human voice; vary sentence length. "
         "NO em-dashes, NO '~', NO 'worth noting', NO 'in a world where', NO dramatic colon "
@@ -274,7 +275,7 @@ def draft(brief, snap):
         "\"ko\": \"<Korean gloss so the operator can verify accuracy and tone>\"}."
     )
     msg = client.messages.create(
-        model=MODEL, max_tokens=2500, system=sys_p,
+        model=MODEL, max_tokens=900, system=sys_p,
         messages=[{"role": "user", "content": usr}],
     )
     txt = "".join(b.text for b in msg.content if getattr(b, "type", "") == "text")
@@ -360,6 +361,7 @@ def main():
     if not d or not d.get("en"):
         log("❌ 초안 생성 실패(Claude 응답 파싱 불가) — 종료.")
         sys.exit(1)
+    log("=== 생성된 EN 글 ===\n" + d["en"] + "\n=== 끝 ===")
 
     tk = stock["ticker"]
     head = (f"📅 오늘의 X 종목글 — {snap['name_ko']} ({tk}) · {snap.get('sector','')}\n"
