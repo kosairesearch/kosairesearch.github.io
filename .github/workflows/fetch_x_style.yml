@@ -14,7 +14,10 @@ on:
         default: ''
       min_likes:
         description: '예시 채택 최소 좋아요'
-        default: '500'
+        default: '200'
+      max_items:
+        description: 'Apify 최대 수집 트윗 수(무료 한도 고려, 기본 1000)'
+        default: '1000'
 
 concurrency:
   group: x-style-fetch
@@ -40,6 +43,7 @@ jobs:
           APIFY_TOKEN: ${{ secrets.APIFY_TOKEN }}
           X_STYLE_QUERIES: ${{ inputs.queries }}
           X_STYLE_MIN_LIKES: ${{ inputs.min_likes }}
+          X_STYLE_MAXITEMS: ${{ inputs.max_items }}
         run: python scripts/fetch_x_style.py
 
       - name: 결과 커밋
