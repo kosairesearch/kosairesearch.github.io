@@ -31,15 +31,15 @@ OUT = ROOT / "data" / "x_style_examples.json"
 KST = timezone(timedelta(hours=9))
 
 TOKEN = os.getenv("APIFY_TOKEN", "").strip()
-MAXITEMS = int(os.getenv("X_STYLE_MAXITEMS", "1000") or "1000")
+MAXITEMS = int(os.getenv("X_STYLE_MAXITEMS", "500") or "500")
 MIN_LIKES = int(os.getenv("X_STYLE_MIN_LIKES", "200") or "200")
 KEEP = int(os.getenv("X_STYLE_KEEP", "80") or "80")
+POLL_SEC = int(os.getenv("X_STYLE_POLL_SEC", "600") or "600")  # 액터당 완료 대기 상한
 
-# 신뢰도 순으로 여러 액터 시도 — 앞의 것이 트윗을 못 주면 다음으로 폴백.
+# pay-per-result 액터 우선(무료 플랜에서도 동작). apidojo 계열은 무료 플랜에서
+# demo/noResults만 반환해 기본 목록에서 제외.
 DEFAULT_ACTORS = [
     "kaitoeasyapi~twitter-x-data-tweet-scraper-pay-per-result-cheapest",
-    "apidojo~tweet-scraper",
-    "apidojo~twitter-scraper-lite",
 ]
 
 DEFAULT_QUERIES = [
@@ -106,8 +106,10 @@ def _author(d):
 
 
 def run_actor(actor, queries):
-    """actor 하나 실행 → 아이템 리스트 반환(실패 시 빈 리스트)."""
-    url = f"https://api.apify.com/v2/acts/{actor}/run-sync-get-dataset-items?token={TOKEN}"
+    """actor 하나를 '비동기'로 실행: 시작 → 완료까지 폴링 → 데이터셋 회수.
+    run-sync의 300초 한도에 안 잘리므로 대량 스크래핑도 안전. 실패 시 빈 리스트."""
+    import time
+    base = "https://api.apify.com/v2"
     payload = {
         "searchTerms": queries,
         "sort": "Top",
@@ -118,22 +120,35 @@ def run_actor(actor, queries):
         "includeSearchTerms": False,
     }
     try:
-        r = requests.post(url, json=payload, timeout=290)
+        r = requests.post(f"{base}/acts/{actor}/runs?token={TOKEN}", json=payload, timeout=60)
     except Exception as e:
-        print(f"  · {actor}: 요청 예외 {e}")
+        print(f"  · {actor}: 시작 예외 {e}")
         return []
     if not r.ok:
-        print(f"  · {actor}: HTTP {r.status_code} {r.text[:200]}")
+        print(f"  · {actor}: 시작 HTTP {r.status_code} {r.text[:200]}")
+        return []
+    run = (r.json() or {}).get("data", {})
+    run_id, ds = run.get("id"), run.get("defaultDatasetId")
+    if not run_id:
+        print(f"  · {actor}: run id 없음")
+        return []
+    deadline, status = time.time() + POLL_SEC, run.get("status")
+    while time.time() < deadline and status not in ("SUCCEEDED", "FAILED", "ABORTED", "TIMED-OUT", "TIMED_OUT"):
+        time.sleep(8)
+        try:
+            s = (requests.get(f"{base}/actor-runs/{run_id}?token={TOKEN}", timeout=30).json() or {}).get("data", {})
+            status, ds = s.get("status", status), s.get("defaultDatasetId", ds)
+        except Exception:
+            continue
+    print(f"  · {actor}: 상태 {status}")
+    if status != "SUCCEEDED" or not ds:
         return []
     try:
-        data = r.json()
-    except Exception:
+        items = requests.get(f"{base}/datasets/{ds}/items?token={TOKEN}&clean=true&format=json", timeout=120).json()
+    except Exception as e:
+        print(f"  · {actor}: 데이터셋 회수 실패 {e}")
         return []
-    if isinstance(data, dict):
-        data = data.get("items") or data.get("results") or []
-    if not isinstance(data, list):
-        return []
-    return data
+    return items if isinstance(items, list) else []
 
 
 def extract(items):
