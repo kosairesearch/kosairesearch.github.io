@@ -347,6 +347,23 @@ def tg_send(text):
     return ok
 
 
+_ABBRS = ["Co.", "Ltd.", "Inc.", "Corp.", "Pharm.", "Ph.", "Dr.", "Mr.", "Ms.", "Mrs.",
+          "vs.", "U.S.", "e.g.", "i.e.", "No.", "St.", "Sr.", "Jr.", "etc.", "approx."]
+
+
+def format_paragraphs(text):
+    """문단을 코드로 강제 정리 — 문장 하나당 한 줄, 문장 사이 빈 줄.
+    모델 출력이 들쭉날쭉해도 항상 짧게 띄운 형태로 통일한다. 약어(Co.·Ltd.·U.S. 등)와
+    소수점(34.6)·통화(1,547.5bn)에서는 끊지 않는다."""
+    t = re.sub(r"\s*\n\s*", " ", (text or "")).strip()
+    for a in _ABBRS:                       # 약어 마침표 임시 보호
+        t = t.replace(a, a.replace(".", "\x00"))
+    # 문장부호 뒤 + 공백 + 다음이 대문자/숫자/$/따옴표일 때만 분리(소수점·약어 회피)
+    parts = re.split(r"(?<=[.!?])\s+(?=[A-Z0-9$\"'‘“])", t)
+    parts = [p.replace("\x00", ".").strip() for p in parts if p.strip()]
+    return "\n\n".join(parts)
+
+
 def main():
     miss = [n for n, v in (("TELEGRAM_BOT_TOKEN", TG_TOKEN),
                            ("TELEGRAM_CHAT_ID", TG_CHAT),
@@ -374,8 +391,8 @@ def main():
     log("=== 생성된 EN 글 ===\n" + d["en"] + "\n=== 끝 ===")
 
     tk = stock["ticker"]
-    # 상단 헤더(종목·시세·링크)는 넣지 않는다 — 영어 글만 단독으로 보내 바로 X에 복붙.
-    msg_en = d["en"]
+    # 상단 헤더 없이 영어 글만 단독 발송. 문단은 코드로 강제 정리(문장당 한 줄 + 빈 줄).
+    msg_en = format_paragraphs(d["en"])
     msg_ko = f"— KR (검수용) —\n{d.get('ko','')}"
     if tg_send(msg_en) and tg_send(msg_ko):
         st["last_date"] = today
