@@ -306,7 +306,15 @@ def _send_one(text):
             timeout=20,
         )
         if not r.ok:
-            log("텔레그램 응답 오류:", r.status_code, r.text[:300])
+            log("텔레그램 응답 오류:", r.status_code, r.text[:400])
+        else:
+            try:
+                res = r.json().get("result", {})
+                ch = res.get("chat", {})
+                log(f"텔레그램 OK · msg_id {res.get('message_id')} · chat_id {ch.get('id')} "
+                    f"· {ch.get('type')} · {ch.get('title') or ch.get('username') or ch.get('first_name')}")
+            except Exception:
+                pass
         return r.ok
     except Exception as e:
         log("텔레그램 예외:", e)
