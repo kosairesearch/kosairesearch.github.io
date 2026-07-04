@@ -351,17 +351,27 @@ _ABBRS = ["Co.", "Ltd.", "Inc.", "Corp.", "Pharm.", "Ph.", "Dr.", "Mr.", "Ms.", 
           "vs.", "U.S.", "e.g.", "i.e.", "No.", "St.", "Sr.", "Jr.", "etc.", "approx."]
 
 
-def format_paragraphs(text):
-    """문단을 코드로 강제 정리 — serenity(@aleabitoreddit) 스타일: 문장(포인트) 하나당
-    한 줄, 줄 사이 '빈 줄 없이' 단일 줄바꿈으로 촘촘히 쌓는다. 모델 출력이 들쭉날쭉해도
-    항상 이 형태로 통일. 약어(Co.·Ltd.·U.S. 등)·소수점(34.6)·통화(1,547.5bn)는 안 끊는다."""
-    t = re.sub(r"\s*\n\s*", " ", (text or "")).strip()
+def _sentences(block):
+    """한 블록 텍스트를 문장 리스트로. 약어·소수점·통화에서는 안 끊는다."""
+    t = re.sub(r"\s*\n\s*", " ", (block or "")).strip()
     for a in _ABBRS:                       # 약어 마침표 임시 보호
         t = t.replace(a, a.replace(".", "\x00"))
-    # 문장부호 뒤 + 공백 + 다음이 대문자/숫자/$/따옴표일 때만 분리(소수점·약어 회피)
     parts = re.split(r"(?<=[.!?])\s+(?=[A-Z0-9$\"'‘“])", t)
-    parts = [p.replace("\x00", ".").strip() for p in parts if p.strip()]
-    return "\n".join(parts)                # serenity: 빈 줄 없이 단일 줄바꿈으로 쌓기
+    return [p.replace("\x00", ".").strip() for p in parts if p.strip()]
+
+
+def format_paragraphs(text):
+    """문단을 코드로 강제 정리 — 짧은 문장 + 명확한 문단 구분(빈 줄).
+    · 그룹(문단) 사이는 빈 줄로 구분, 그룹 안은 문장마다 한 줄(단일 줄바꿈).
+    · 모델이 문단 구분을 했으면(빈 줄) 그 그룹을 존중하고, 안 했으면(한 덩어리)
+      문장 3개씩 묶어 구분을 만든다 → 항상 '짧은 줄 묶음 + 빈 줄'."""
+    blocks = [b for b in re.split(r"\n\s*\n", (text or "").strip()) if b.strip()]
+    if len(blocks) <= 1:                    # 모델이 안 나눔 → 문장 3개씩 그룹핑
+        s = _sentences(blocks[0]) if blocks else []
+        groups = ["\n".join(s[i:i + 3]) for i in range(0, len(s), 3)]
+    else:                                   # 모델 문단 그룹 존중, 그룹 안만 문장별 줄바꿈
+        groups = ["\n".join(_sentences(b)) for b in blocks]
+    return "\n\n".join(g for g in groups if g)
 
 
 def main():
