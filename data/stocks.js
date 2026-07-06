@@ -1,6 +1,6 @@
 // KOS ai — 자동 생성 데이터 파일. 직접 수정하지 마세요.
 window.KOS_LIVE_DATA = {
-  "lastUpdated": "2026-07-07 02:53",
+  "lastUpdated": "2026-07-07 05:37",
   "dataDate": "20260706",
   "stocks": [
     {
@@ -20818,7 +20818,7 @@ window.KOS_LIVE_DATA = {
     {
       "ticker": "365660",
       "name": "레몬헬스케어",
-      "name_en": "",
+      "name_en": "LEMON HEALTHCARE Co.",
       "market": "코스닥",
       "sector": "바이오·제약",
       "price": 9400,
@@ -20827,6 +20827,7 @@ window.KOS_LIVE_DATA = {
       "trading_value": 977838434365,
       "mcap": 0.1255,
       "shares": 13351559,
+      "induty_code": "58222",
       "categories": [
         "바이오·제약"
       ],
