@@ -1,169 +1,179 @@
 {
  "title": {
-  "ko": "흑자 전환 후 양산 투자기 진입",
-  "en": "Post-Turnaround, Entering a Mass-Production Investment Phase"
+  "ko": "흑자전환 첫해, 증설·양산의 시험대",
+  "en": "First Profit Year Meets the Scale-Up Test"
  },
  "lead": {
-  "ko": "로보티즈는 2025년 첫 연간 흑자를 낸 뒤 휴머노이드용 액추에이터 양산과 데이터 사업 확장에 자원을 집중하고 있으나, 2026년 1분기에는 자기주식 관련 일회성 비용으로 손익이 크게 흔들렸다.",
-  "en": "ROBOTIS posted its first full-year profit in 2025 and is now concentrating resources on humanoid actuator mass-production and a data business, though Q1 2026 earnings were heavily distorted by a one-off treasury-stock-related charge."
+  "ko": "로보티즈는 액추에이터 수요 확대로 2025년 흑자전환에 성공했으나, 2026년은 우즈베키스탄 증설·휴머노이드 양산이라는 대규모 투자 국면에 진입해 성장성과 초기 비용 부담이 동시에 부각되는 구간이다.",
+  "en": "ROBOTIS turned profitable in 2025 on rising actuator demand, but 2026 has entered a heavy-investment phase around Uzbekistan capacity and humanoid mass production, spotlighting growth potential and early-stage cost burdens at the same time."
  },
  "keypoints": [
   {
-   "ko": "매출의 대부분이 로봇 관절 부품인 다이나믹셀 액추에이터에서 발생하며, 피지컬 AI·휴머노이드 확산이 핵심 수요 동인이다.",
-   "en": "The bulk of revenue comes from the DYNAMIXEL actuator, the robot's joint component, with physical AI and humanoid adoption as the key demand driver."
+   "ko": "2025년 매출 389억원·영업이익 33억원으로 5년 만에 흑자전환했고, 액추에이터(다이나믹셀) 수요 확대가 실적을 견인했다.",
+   "en": "In 2025 the company posted KRW 38.9bn revenue and KRW 3.3bn operating profit, its first profit in five years, led by rising demand for its Dynamixel actuators."
   },
   {
-   "ko": "2025년 매출 389억원·영업이익 33.5억원으로 상장 이후 이어진 연간 적자에서 흑자로 전환했다.",
-   "en": "In 2025 the company turned to profit with KRW 38.9bn revenue and KRW 3.35bn operating profit, ending a run of annual losses since listing."
+   "ko": "2026년 1분기는 매출이 늘었음에도 임직원 성과보상용 자기주식 교부 117.8억원이 판관비에 반영되며 영업손실로 전환했다.",
+   "en": "In Q1 2026, despite higher revenue, an operating loss emerged after KRW 11.78bn of treasury-share compensation for employees was booked into SG&A."
   },
   {
-   "ko": "2026년 1분기는 매출이 늘었음에도 자기주식 교부에 따른 일회성 비용으로 영업·순손실을 기록했다.",
-   "en": "In Q1 2026, despite higher revenue, the company booked operating and net losses due to a one-off treasury-stock grant cost."
+   "ko": "회사는 우즈베키스탄에 600억원을 투자해 연 500만개 규모 액추에이터 공장을 짓고 있으며 2026년 10월 부분 가동을 계획한다.",
+   "en": "The company is investing KRW 60bn in an Uzbekistan actuator plant with 5mn-unit annual capacity, targeting partial operation in October 2026."
   },
   {
-   "ko": "LG전자가 2대 주주로 휴머노이드 공동 연구·자율주행 모듈 협력을 진행 중이다.",
-   "en": "LG Electronics, the second-largest shareholder, is engaged in joint humanoid research and autonomous-driving module cooperation."
+   "ko": "휴머노이드 전용 QDD 액추에이터 'Q시리즈'와 이족보행 로봇 'AI 사피엔스'를 하반기 출시해 중국·북미 시장을 겨냥한다.",
+   "en": "Its humanoid-focused QDD actuator 'Q series' and bipedal robot 'AI Sapiens' are slated for a second-half launch, targeting China and North America."
   },
   {
-   "ko": "Dynamixel-Q·AI 사피엔스·데이터 팩토리 등 신규 사업이 2026년 하반기~4분기에 본격화될 예정이다.",
-   "en": "New initiatives including Dynamixel-Q, AI Sapiens and the Data Factory are slated to ramp from H2 to Q4 2026."
+   "ko": "테슬라·구글·유니트리·보스턴다이내믹스 등을 고객으로 확보했으나, 대규모 R&D·증설 투자로 단기 수익성 변동성은 크다.",
+   "en": "It has secured customers such as Tesla, Google, Unitree and Boston Dynamics, but heavy R&D and capex make near-term profitability volatile."
   }
  ],
  "business": {
-  "ko": "로보티즈는 1999년 설립된 로봇 전문 기업으로 로봇 전용 부품 사업과 완제품 사업을 영위한다. 로봇의 구동·제어·자율성에 이르는 전 과정을 자체 기술로 개발·제조하며, 핵심 구동 부품인 다이나믹셀을 주력으로 생산한다. 다이나믹셀은 모터·감속기·제어기·통신 기능이 통합된 모듈형 구조로 로봇 개발의 편의성과 확장성을 제공한다. 매출 구성은 액추에이터 의존도가 매우 높아 액추에이터 매출 비중이 2023년 99.62%에서 2024년 98.47%로 줄어든 반면 자율주행 로봇은 0.38%에서 1.53%로 늘었다. 하나증권은 현재 매출의 대부분이 액추에이터에서 발생하며, 전체 매출의 약 90%가 X 시리즈 액추에이터에서 나와 연구·우주항공·의료·엔터테인먼트 등 다양한 산업에 공급된다고 설명했다. 완제품 측면에서는 자율주행 로봇 '개미'와 양팔 작업형 휴머노이드 'AI 워커'를 개발하고 있다. 지배구조 측면에서 창업자 김병수 대표가 최대주주이고 LG전자는 2018년 유상증자로 확보한 지분을 보유한 2대 주주다. 경쟁 구도에서는 부품 원천기술을 무기로 한 개방형 플랫폼 전략을 통해 미국식 폐쇄 모델·중국식 저가 물량 공세와 차별화를 시도하고 있다.",
-  "en": "Founded in 1999, ROBOTIS operates both a robot-component business and a finished-product business. It develops and manufactures the full chain of robot actuation, control and autonomy in-house, with the DYNAMIXEL drive component as its mainstay. DYNAMIXEL is a modular unit integrating motor, reducer, controller and communication, offering ease and scalability in robot development. Its revenue mix is heavily actuator-dependent: the actuator share fell from 99.62% in 2023 to 98.47% in 2024, while autonomous robots rose from 0.38% to 1.53%. Hana Securities noted that most revenue still comes from actuators, with roughly 90% of total sales from the X-series, supplied to research, aerospace, medical and entertainment fields. On the finished-product side, it is developing the autonomous robot 'GAEMI' and the dual-arm humanoid 'AI Worker.' On ownership, founder-CEO Kim Byoung-soo is the largest shareholder, with LG Electronics the second-largest holder via a 2018 capital increase. Competitively, it pursues an open-platform strategy built on its component IP to differentiate from the U.S. closed model and China's low-cost volume push."
+  "ko": "로보티즈는 로봇 전용 액추에이터와 완제품 로봇을 함께 다루는 로봇 솔루션 전문 기업이다. 액추에이터·감속기 등 국산화에 성공한 원천 기술을 보유하고, 로봇의 구동·제어·자율성 전 과정을 자체 기술로 개발·제조하며, 관절 역할을 하는 핵심 구동 부품 '다이나믹셀'을 주력으로 생산한다. 다이나믹셀은 모터·감속기·제어기·통신 기능이 통합된 모듈형 구조다. 현재 가장 많이 팔리는 제품은 초소형 X 시리즈로 전체 출하량의 70~80%를 차지한다. 완제품 사업에서는 자율주행 로봇 '개미'와 양팔 작업형 휴머노이드 'AI 워커'를 개발하며, AI 워커는 모방·강화학습을 통해 고난도 작업을 수행한다. 회사는 글로벌 로봇 기업을 고객사로 확보하며 기술력을 입증했고, 테슬라·구글·중국 유니트리 등에 액추에이터를 공급하고 최근 보스턴다이내믹스도 고객사로 확보했다. 최대주주는 김병수 외 27.3%이며 주요주주로 LG전자가 7.5%를 보유한다. 지난해 자율주행로봇 부문을 물적분할해 본사는 핵심인 액추에이터 사업에 역량을 집중하고 있다. 부품에서 완제품, 나아가 데이터 사업으로 이어지는 수직 통합 구조가 특징이다.",
+  "en": "ROBOTIS is a robotics solutions specialist that handles both robot actuators and finished robots. It holds proprietary localized technology in actuators and reducers, develops and manufactures the entire drive-control-autonomy chain in-house, and produces 'Dynamixel'—the core drive component that acts as a robot's joints—as its main product. Dynamixel has a modular structure integrating motor, reducer, controller and communication functions. Its best-selling product today is the ultra-compact X series, accounting for 70-80% of shipment volume. In finished products, it develops the autonomous robot 'Gaemi' and the dual-arm working humanoid 'AI Worker,' the latter performing complex tasks via imitation and reinforcement learning. The company has validated its technology by securing global robotics customers, supplying actuators to Tesla, Google and China's Unitree, and recently adding Boston Dynamics as a customer. The largest shareholder group led by Kim Byung-soo holds 27.3%, with LG Electronics as a major shareholder at 7.5%. Last year it spun off the autonomous-robot division so headquarters could concentrate on the core actuator business. Its distinguishing feature is a vertically integrated structure spanning components, finished products and, ultimately, data."
  },
  "earnings": {
-  "ko": "로보티즈는 2025년 연결 매출 389.4억원, 영업이익 33.5억원, 지배주주 순이익 50.7억원을 기록하며 흑자로 전환했다. 직전 연도들과 비교하면 변화가 뚜렷한데, 2024년은 매출 300.4억원에 영업손실 29.7억원(영업이익률 -9.9%), 2023년은 매출 291.3억원에 영업손실 53.0억원(영업이익률 -18.2%)으로 적자가 이어졌다. 2025년 영업이익률은 8.6%로 회복됐고 자기자본이익률(ROE)은 1.6%로 플러스로 돌아섰다. 분기별로 보면 2025년 1분기 매출 102.2억원·영업이익 8.26억원에서 4분기 매출 116.0억원·영업이익 20.55억원으로 분기 실적이 뚜렷하게 개선됐다. 다만 2026년 1분기에는 매출이 118.4억원으로 늘었음에도 영업손실 118.4억원, 지배주주 순손실 100.6억원을 기록해 손익이 급격히 악화됐다. Fn가이드는 2026년 1분기 매출이 전년 동기 대비 15.8% 증가했으나 중국 매출 비중 상승으로 액츄에이터 매출이 늘어난 가운데 자기주식 교부에 따른 일회성 비용 반영으로 영업이익이 크게 감소했다고 분석했다. 자본 측면에서는 2024년 말 960억원 수준이던 자기자본이 2025년 말 3,140.8억원으로 크게 늘었고, 부채비율은 1.8%로 매우 낮은 수준을 유지하고 있다. 2025년 영업활동현금흐름은 70.8억원 플러스로 영업이익 흑자와 함께 현금 창출이 동반됐다.",
-  "en": "ROBOTIS turned profitable in 2025 with consolidated revenue of KRW 38.9bn, operating profit of KRW 3.35bn and owners' net income of KRW 5.07bn. The shift is stark versus prior years: 2024 saw KRW 30.0bn revenue with a KRW 2.97bn operating loss (-9.9% margin), and 2023 KRW 29.1bn revenue with a KRW 5.30bn operating loss (-18.2% margin). The 2025 operating margin recovered to 8.6% and ROE turned positive at 1.6%. Quarterly, performance clearly improved from Q1 2025 (KRW 10.2bn revenue, KRW 0.83bn operating profit) to Q4 2025 (KRW 11.6bn revenue, KRW 2.06bn operating profit). However, Q1 2026 deteriorated sharply: despite revenue rising to KRW 11.8bn, it posted a KRW 11.84bn operating loss and KRW 10.06bn owners' net loss. FnGuide noted Q1 2026 revenue rose 15.8% year-on-year as actuator sales grew on a higher China mix, but operating profit fell sharply on a one-off cost tied to a treasury-stock grant. On the balance sheet, equity expanded from around KRW 96bn at end-2024 to KRW 314.1bn at end-2025, while the debt ratio stayed very low at 1.8%. Operating cash flow was positive at KRW 7.08bn in 2025, accompanying the swing to operating profit."
+  "ko": "로보티즈는 2025년 연결 매출 389.4억원, 영업이익 33.5억원, 지배주주 순이익 50.7억원을 기록하며 흑자전환했다. 이는 영업손실이었던 2024년(매출 300.4억·영업손실 -29.7억)과 2023년(매출 291.3억·영업손실 -53.0억)에서 뚜렷하게 개선된 수치다. 회사는 액추에이터 판매량 증가에 힘입어 지난해 매출 389억원, 영업이익 33억원을 기록하며 2020년부터 5년 동안 이어진 적자에서 벗어났다. 2025년 분기 흐름을 보면 1분기 영업이익 8.3억원에서 완만하게 이어지다 4분기에 매출 116.0억원·영업이익 20.6억원으로 이익이 크게 확대되며 연간 실적을 견인했다. 반면 2026년 1분기는 매출 118.4억원으로 전년 동기 대비 늘었지만 영업손실 -118.4억원, 순손실 -100.6억원으로 적자전환했다. 이는 지난 1월 임직원 성과보상을 위한 자기주식 117억8100만원이 교부돼 1분기 판매비와 관리비에 반영된 영향이 컸다. 여기에 1분기 연구개발비용이 94억1880만원으로 매출액 대비 79.54%에 달하는 등 투자성 비용이 높은 수준을 유지했다. 중국 매출 비중 상승으로 액추에이터 부문 매출은 증가했으나, 자기주식 교부에 따른 일회성 비용 반영으로 영업이익이 크게 감소했다. 즉 1분기 적자는 사업 부진보다 일회성·투자성 비용의 성격이 강하다는 점이 특징이다.",
+  "en": "ROBOTIS turned profitable in 2025 with consolidated revenue of KRW 38.9bn, operating profit of KRW 3.3bn and owner net income of KRW 5.1bn. This marks a clear improvement from the operating losses of 2024 (revenue KRW 30.0bn, operating loss KRW 3.0bn) and 2023 (revenue KRW 29.1bn, operating loss KRW 5.3bn). Driven by higher actuator sales, the company posted KRW 38.9bn revenue and KRW 3.3bn operating profit last year, escaping five straight years of losses since 2020. Within 2025, quarterly momentum built from Q1 operating profit of KRW 0.8bn and culminated in Q4 with revenue of KRW 11.6bn and operating profit of KRW 2.1bn, driving the full-year result. In contrast, Q1 2026 saw revenue rise to KRW 11.8bn year on year but swung to an operating loss of KRW 11.8bn and a net loss of KRW 10.1bn. This was largely due to KRW 11.781bn of treasury shares granted for employee performance compensation in January being booked into Q1 SG&A. On top of that, Q1 R&D spending reached KRW 9.42bn, or 79.54% of revenue, keeping investment costs high. Actuator revenue rose on a higher China sales mix, but operating profit fell sharply due to the one-off treasury-share cost. In short, the Q1 loss is characterized more by one-off and investment costs than by business weakness."
  },
  "industry": {
-  "ko": "로봇 산업의 무게중심이 피지컬 AI로 이동하면서 정밀 액추에이터의 전략적 가치가 부각되고 있다. 로봇 시장이 피지컬 AI로 이동하면서 로보티즈의 기업가치가 재평가되고 있으며, 사람처럼 움직이는 로봇에서 액추에이터는 필수 부품이다. 정책 측면에서도 우호적인 환경이 조성됐는데, 정부는 2026년 로봇산업 기술개발 예산을 전년 대비 18% 증액한 1,626억원으로 편성하고 국민성장펀드를 통해 1조원 규모 자금을 로봇 분야에 투입하기로 했다. 수요 측면에서 하나증권은 액추에이터 고객 주문량이 2025년 40만개에서 2026년 100만개 이상으로 증가할 것으로 추정하며 공급 대비 수요 초과 상황이 지속될 것으로 분석했다. 특히 중국이 2026년 휴머노이드 10만대 이상 생산을 목표로 하면서 시장이 전년 대비 약 7배 성장하고 최소 230만개의 신규 액추에이터 수요가 발생할 것으로 전망됐다. 경쟁 포지션과 관련해 회사는 신규 액추에이터 다이나믹셀-Q와 범용 휴머노이드 AI 사피엔스를 통해 액추에이터 기반의 개방형 플랫폼 비전을 제시했다. 다만 중국에서는 정부 보조금을 기반으로 휴머노이드 스타트업이 빠르게 늘며 부품 수요가 급증하는 한편, 품질 편차·유지보수 부담·내구성 문제가 반복적으로 지적되고 있어 경쟁 강도가 높은 시장이기도 하다.",
-  "en": "As the robotics center of gravity shifts toward physical AI, the strategic value of precision actuators is rising. As the market moves to physical AI, ROBOTIS's corporate value is being re-rated, and actuators are essential parts for human-like robots. The policy backdrop is also supportive: the government set the 2026 robotics R&D budget at KRW 162.6bn, up 18% year-on-year, and will channel about KRW 1tn into robotics via a national growth fund. On demand, Hana Securities estimated that actuator customer orders will rise from 400,000 units in 2025 to over 1mn in 2026, with demand persistently exceeding supply. Notably, with China targeting over 100,000 humanoids in 2026, the market is seen growing about sevenfold and generating demand for at least 2.3mn new actuators. On positioning, the company presented an actuator-based open-platform vision through its new Dynamixel-Q actuator and the general-purpose humanoid AI Sapiens. Still, in China, subsidy-fueled humanoid startups are multiplying and component demand is surging, while quality variance, maintenance burdens and durability problems are repeatedly flagged, making it a highly competitive market."
+  "ko": "로봇용 액추에이터는 이른바 '피지컬 AI'와 휴머노이드 시장 확대의 핵심 부품으로 부각되고 있다. LS증권에 따르면 휴머노이드 로봇 시장은 2024년 약 9억달러에서 2035년 2837억달러, 2050년 7조달러 규모까지 커질 전망이다. 하나증권은 중국이 2026년 휴머노이드 10만대 이상 생산을 목표로 해 시장이 전년 대비 약 7배 성장하고, 이에 따라 최소 230만개의 신규 액추에이터 수요가 발생할 것으로 분석했다. 국내에서는 삼현, 현대모비스, 레인보우로보틱스, 두산로보틱스 등이 로봇 부품·완제품 밸류체인에서 경쟁·협력 구도를 형성하고 있다. LS증권은 현대모비스가 보스턴다이내믹스의 액추에이터를 전량 수주해 2조5000억원 규모의 휴머노이드 액추에이터 매출이 나올 것으로 예상했다. 로보티즈가 우즈베키스탄에 공장을 짓는 이유는 저렴한 인건비를 활용해 중국산 액추에이터와 경쟁하기 위해서이며, 저가 Q 시리즈를 모두 현지에서 생산할 예정이다. 중국은 정부 보조금 기반으로 휴머노이드 스타트업이 빠르게 늘며 부품 수요가 급증하지만, 품질 편차·유지보수·내구성 문제가 반복적으로 지적되는 시장이다. 로보티즈는 다이나믹셀 기술력을 앞세워 이 틈새를 파고들려 하고 있다.",
+  "en": "Robot actuators are emerging as a core component for the so-called 'Physical AI' and humanoid market expansion. According to LS Securities, the humanoid robot market is expected to grow from about USD 0.9bn in 2024 to USD 283.7bn in 2035 and USD 7tn by 2050. Hana Securities estimated that China aims to produce over 100,000 humanoids in 2026—roughly 7x market growth year on year—generating demand for at least 2.3mn new actuators. Domestically, players such as Samhyun, Hyundai Mobis, Rainbow Robotics and Doosan Robotics form a competitive and cooperative landscape across the robot component and finished-product value chain. LS Securities expected Hyundai Mobis, having won the entire actuator order for Boston Dynamics, to generate around KRW 2.5tn in humanoid actuator revenue. ROBOTIS is building its Uzbekistan plant to leverage low labor costs and compete with Chinese actuators, planning to produce all of its low-cost Q series there. In China, government subsidies are fueling a rapid rise in humanoid startups and surging component demand, but the market is repeatedly flagged for quality variability, maintenance burdens and durability issues. ROBOTIS is seeking to exploit this gap on the strength of its Dynamixel technology."
  },
  "outlook": {
-  "ko": "회사는 부품을 넘어 완제품·데이터로 사업을 확장하는 로드맵을 제시하고 있다. 로봇 양산 시대 대응을 위해 휴머노이드 및 전용 액추에이터 Q 라인업 설비투자를 진행 중이며, 2026년 하반기 AI 사피엔스와 Dynamixel-Q 출시를 계획하고 있다. Q시리즈는 3분기 내 공식 출시를 목표로 하며, 4분기 우즈베키스탄 생산기지 가동을 통해 양산 체계를 구축하겠다는 구상이다. 완제품 측면에서는 양팔형 휴머노이드 AI 워커가 지난해 76대 판매를 기록한 데 이어 올해 200대 판매를 목표로 하며, 하반기에는 더 무겁고 복잡한 작업이 가능한 'AI 워커 파워 모델'을 공개할 계획이다. 신사업 측면에서 하나증권은 데이터 수집·로봇 학습용 데이터 사업이 2026년 4분기부터 매출을 내기 시작하고, 시간당 500~1200달러 수준의 가격 구조를 고려하면 고부가가치 사업이 될 가능성이 높다고 평가했다. 생산능력은 국내 연간 30만대 수준에서 증자 자금 투입 후 2027년 약 210만~300만대로 확대될 예정이다. 증권가 전망과 관련해 하나증권은 2026년 매출과 영업이익이 모두 전년 대비 2배 이상 성장할 것으로 전망했고, 다만 이러한 전망은 추정치로 실제 결과는 양산 안정화와 수주 추이에 따라 달라질 수 있다.",
-  "en": "The company has laid out a roadmap to expand beyond parts into finished products and data. To prepare for the mass-production era it is investing in humanoid and dedicated Q-line actuator facilities, with AI Sapiens and Dynamixel-Q launches planned for H2 2026. It targets an official Q-series launch within Q3 and aims to build a mass-production system via its Uzbekistan plant starting up in Q4. On finished products, the dual-arm humanoid AI Worker sold 76 units last year and targets 200 units this year, with a heavier-duty 'AI Worker Power Model' to be unveiled in H2. On new businesses, Hana Securities assessed that the data-collection and robot-training data business should begin generating revenue from Q4 2026 and, given a price structure of about USD 500–1,200 per hour, has strong potential to become a high-value business. Capacity is set to expand from about 300,000 units a year domestically to roughly 2.1–3.0mn units in 2027 after capital injection. On Street views, Hana Securities expects both 2026 revenue and operating profit to more than double year-on-year, though these are estimates and actual outcomes will hinge on production stabilization and order trends."
+  "ko": "회사는 액추에이터 물량 확대와 신제품 출시를 성장의 축으로 제시하고 있다. 지난해 로보티즈가 판매한 액추에이터 수량은 22만개였고, 올해 예상 출하량은 40~50만개, 내년엔 100만개 이상이 예상된다. 서울 마곡 공장의 생산능력은 연 30만대 수준인데, 신규 수주는 2024년 18만대에서 지난해 41만대로 늘며 이미 생산능력을 초과했다. 이에 회사는 우즈베키스탄에 600억원을 투자해 연 500만개 규모 액추에이터 공장을 짓고 있으며 올해 10월 부분 가동을 시작할 계획이다. 하반기에는 완성형 이족보행 휴머노이드 'AI 사피엔스'와 QDD 방식 휴머노이드 전용 액추에이터 '다이나믹셀-Q'를 출시할 예정이며, Q 시리즈는 내년부터 우즈베키스탄에서 양산된다. 회사는 이 투자 성과가 2027년 초부터 가시화될 것으로 예상했다. 경영진은 올해 매출 500억원, 내년 1000억원을 목표로 제시했고, 2028년부터 매출이 매년 2배씩 늘어 2031년에 액추에이터·데이터 사업을 합쳐 약 1조5000억원을 달성하겠다고 밝혔다. 아울러 하반기에는 라이다를 처음 탑재한 5세대 자율주행로봇을 출시해 정밀 사물 인식과 자율주행 능력을 개선할 계획이다.",
+  "en": "The company frames actuator volume expansion and new-product launches as its growth pillars. ROBOTIS sold 220,000 actuators last year, with expected shipments of 400,000-500,000 this year and over 1mn next year. The Seoul Magok plant has annual capacity of about 300,000 units, but new orders rose from 180,000 in 2024 to 410,000 last year, already exceeding capacity. In response, the company is investing KRW 60bn in an Uzbekistan actuator plant with 5mn-unit annual capacity, planning partial operation from October this year. In the second half it plans to launch the finished bipedal humanoid 'AI Sapiens' and the QDD humanoid-dedicated actuator 'Dynamixel-Q,' with the Q series to be mass-produced in Uzbekistan from next year. Management expects these investment results to become visible from early 2027. Executives have set targets of KRW 50bn revenue this year and KRW 100bn next year, aiming for revenue to double annually from 2028 to reach about KRW 1.5tn from combined actuator and data businesses by 2031. It also plans to launch its fifth-generation autonomous robot in the second half—its first with a LiDAR sensor—to improve precise object recognition and autonomous driving."
  },
  "valuation_comment": {
-  "ko": "로보티즈는 순자산 대비 상당한 프리미엄이 부여된 구간에서 거래되고 있다. 화면 카드 기준 주당순자산(BPS)은 24,438원으로, 현재 주가는 이 장부가치를 여러 배 웃도는 수준에 위치한다. 손익 측면에서는 최근 12개월 기준 자기자본이익률(ROE)이 -2.7%, 주당순이익(EPS)이 -393원으로 집계되는데, 이는 2026년 1분기의 일회성 비용이 반영된 결과로 흑자였던 연간 실적과는 방향이 다르다는 점을 유의할 필요가 있다. 적자에서 흑자로 전환한 직후 다시 일회성 손실이 반영되면서 이익 기반의 밸류에이션 지표는 의미를 갖기 어려운 구간이다. 따라서 시장은 현재 실적보다 휴머노이드 액추에이터 양산·데이터 사업이라는 미래 성장 시나리오에 가격을 매기고 있는 것으로 해석할 수 있다. 배당은 없어 배당수익률 측면의 매력은 제공하지 않는다. 결과적으로 밸류에이션은 성장 기대가 실제 매출·이익 성장으로 입증되는지 여부에 크게 좌우될 구조다.",
-  "en": "ROBOTIS trades at a substantial premium to its net assets. Per the on-screen card, book value per share (BPS) is KRW 24,438, with the current price sitting several times above that book value. On earnings, the trailing return on equity (ROE) reads -2.7% and earnings per share (EPS) -393, reflecting the Q1 2026 one-off charge—note this differs in direction from the profitable full-year result. Having just swung from loss to profit and then absorbed a one-off loss, earnings-based valuation metrics are of limited use in this window. The market thus appears to be pricing the future growth scenario of humanoid actuator mass-production and the data business rather than current results. With no dividend, the stock offers no dividend-yield appeal. Ultimately, the valuation will hinge heavily on whether growth expectations are validated by actual revenue and profit growth."
+  "ko": "로보티즈의 주가 지표는 이익 규모 대비 순자산 가치에 상당한 프리미엄이 붙은 구간에 위치한다. 화면 카드에 표시되는 주당순자산(BPS) 약 2만4438원 대비 현재가는 순자산 대비 프리미엄이 큰 수준이며, 최근 4개 분기 합산 손익이 마이너스여서 이익 기반 배수(PER)는 산출되지 않는다. 이는 현재 밸류에이션이 과거 실적보다는 증설·휴머노이드 양산에 따른 미래 성장 기대를 반영하고 있음을 시사한다. 주당순이익(EPS)은 1분기 자기주식 보상 등 일회성 비용 영향으로 마이너스(-393원)로 집계된다. 회사는 배당을 실시하지 않아 배당수익률 관점의 매력은 없는 상태다. 한편 다올투자증권은 하반기 우즈베키스탄 신공장 가동으로 연간 액추에이터 생산량이 전년 대비 약 67% 증가할 것으로 보며 목표주가를 34만원에서 43만5000원으로 상향했다고 평가했다. 실제 밸류에이션의 정당성은 증설 물량이 매출·이익으로 얼마나 빠르게 전환되는지에 달려 있다.",
+  "en": "ROBOTIS trades with a substantial premium to net asset value relative to its earnings scale. Against the book value per share of about KRW 24,438 shown on the display card, the current price sits at a large premium to net assets, and because the trailing four quarters' combined result is negative, an earnings-based multiple (PER) cannot be calculated. This suggests the current valuation reflects future growth expectations from capacity expansion and humanoid mass production rather than past earnings. Earnings per share come in negative at KRW -393, affected by one-off costs such as Q1 treasury-share compensation. The company pays no dividend, so there is no dividend-yield appeal. Meanwhile, Daol Investment & Securities raised its target price from KRW 340,000 to KRW 435,000, expecting annual actuator output to rise about 67% year on year as the new Uzbekistan plant starts up in the second half. The justification for the valuation ultimately depends on how quickly the expanded volume converts into revenue and profit."
  },
  "bull": [
   {
    "title": {
-    "ko": "피지컬 AI 액추에이터 수요 확대",
-    "en": "Expanding physical-AI actuator demand"
+    "ko": "구조적 수요 확대와 수주 급증",
+    "en": "Structural demand growth and surging orders"
    },
    "body": {
-    "ko": "휴머노이드와 피지컬 AI 로봇 확산은 관절 부품인 액추에이터 수요를 직접 끌어올린다. 하나증권은 액추에이터 주문량이 2025년 40만개에서 2026년 100만개 이상으로 늘어날 것으로 추정했다. 다이나믹셀 원천기술을 보유한 로보티즈는 이 수요 사이클의 직접 수혜 후보로 거론된다.",
-    "en": "The spread of humanoids and physical-AI robots directly lifts demand for joint actuators. Hana Securities estimated actuator orders would rise from 400,000 units in 2025 to over 1mn in 2026. With its DYNAMIXEL IP, ROBOTIS is cited as a direct beneficiary of this demand cycle."
+    "ko": "휴머노이드·피지컬 AI 확산으로 액추에이터 수요가 빠르게 늘고 있다. 회사의 신규 수주량은 2024년 18만대에서 지난해 41만대로 증가했고, 다이나믹셀-Q 출시에 따라 올해 수주 잔고가 100만대를 넘길 것이란 관측이 나온다. 회사 관계자는 이미 올해 액추에이터 수주잔고가 작년의 2배를 넘어섰다고 전했다.",
+    "en": "Actuator demand is rising quickly as humanoids and Physical AI spread. New orders rose from 180,000 units in 2024 to 410,000 last year, and some expect the order backlog to exceed 1mn units this year with the Dynamixel-Q launch. A company official said this year's actuator backlog already exceeds twice last year's level."
    }
   },
   {
    "title": {
-    "ko": "흑자 전환과 재무 건전성",
-    "en": "Profit turnaround and balance-sheet strength"
+    "ko": "저비용 증설과 원가 경쟁력",
+    "en": "Low-cost expansion and cost competitiveness"
    },
    "body": {
-    "ko": "2025년 매출 389.4억원·영업이익 33.5억원으로 상장 이후 이어진 연간 적자에서 흑자로 전환했다. 유상증자 등으로 자기자본이 크게 늘어 부채비율은 1.8%로 매우 낮다. 양산 투자를 감당할 재무적 여력을 확보한 점이 긍정적으로 평가된다.",
-    "en": "In 2025 the company swung to profit with KRW 38.9bn revenue and KRW 3.35bn operating profit after years of annual losses. Equity expanded sharply via a capital increase, leaving the debt ratio very low at 1.8%. Securing the financial capacity to fund mass-production investment is viewed positively."
+    "ko": "우즈베키스탄 공장은 저가 Q시리즈의 핵심 생산기지 역할을 맡는다. 회사는 우즈베키스탄에 600억원을 투자해 연 500만개 규모 공장을 짓고 있으며, 저렴한 인건비를 활용해 중국산 액추에이터와 경쟁하려는 전략이다. 회사는 Q시리즈 양산이 본격화되면 현재 10% 수준인 중국 매출 비중이 북미와 유사한 30% 수준까지 확대될 수 있을 것으로 기대한다고 밝혔다.",
+    "en": "The Uzbekistan plant serves as the key production base for the low-cost Q series. The company is investing KRW 60bn in a 5mn-unit annual-capacity plant, a strategy to leverage low labor costs and compete with Chinese actuators. It said that as Q series mass production ramps up, its China revenue mix could expand from about 10% now to around 30%, similar to North America."
    }
   },
   {
    "title": {
-    "ko": "LG전자와의 전략적 협력",
-    "en": "Strategic ties with LG Electronics"
+    "ko": "부품에서 완제품·데이터로 확장",
+    "en": "Expansion from components to finished products and data"
    },
    "body": {
-    "ko": "LG전자는 2018년부터 지분을 보유한 2대 주주로 로보티즈와 협력 관계를 이어오고 있다. 양사는 지난해 6월 휴머노이드 로봇 공동 연구 및 사업화 협약을 체결하고 연구용 제품을 납품했다. 대기업 수요·생태계와의 연결고리는 부품·완제품 사업 확장의 발판이 될 수 있다.",
-    "en": "LG Electronics, a second-largest shareholder since 2018, maintains a cooperative relationship with ROBOTIS. The two signed a humanoid-robot joint research and commercialization agreement last June and delivered research-use products. A link to a large-cap's demand and ecosystem can serve as a springboard for expanding the parts and finished-product businesses."
+    "ko": "로보티즈는 부품을 넘어 완제품과 데이터 사업으로 영역을 넓히고 있다. 양팔형 휴머노이드 'AI 워커'는 지난해 76대 판매를 기록했고 올해 공급 확대와 신규 모델 출시로 속도를 내고 있다. 메리츠증권은 AI 워커 등이 OpenAI향 납품이 논의될 정도로 물리 데이터 수집 플랫폼으로서 활용 기대감이 높다고 분석했다. 데이터 수집·로봇 학습용 데이터 사업은 2026년 4분기부터 매출이 발생할 것으로 예상된다.",
+    "en": "ROBOTIS is broadening beyond components into finished products and data. The dual-arm humanoid 'AI Worker' sold 76 units last year and is gaining pace this year with wider supply and new models. Meritz Securities noted high expectations for AI Worker as a physical-data collection platform, to the extent that supply to OpenAI is being discussed. The data-collection and robot-learning data business is expected to start generating revenue from Q4 2026."
    }
   }
  ],
  "bear": [
   {
    "title": {
-    "ko": "일회성 비용과 손익 변동성",
-    "en": "One-off costs and earnings volatility"
+    "ko": "선제적 투자에 따른 수익성 압박",
+    "en": "Profitability pressure from front-loaded investment"
    },
    "body": {
-    "ko": "2026년 1분기에는 매출 증가에도 영업손실 118.4억원, 지배주주 순손실 100.6억원을 기록했다. 자기주식 교부에 따른 일회성 비용이 반영되며 영업이익이 크게 감소했다. 손익이 한 분기 만에 크게 흔들리며 이익 안정성에 대한 시장 신뢰가 시험받는 구간이다.",
-    "en": "In Q1 2026, despite higher revenue, the company posted a KRW 11.84bn operating loss and KRW 10.06bn owners' net loss. A one-off cost tied to a treasury-stock grant sharply reduced operating profit. With earnings swinging widely in a single quarter, market confidence in profit stability is being tested."
+    "ko": "대규모 증설·R&D 투자로 단기 이익 변동성이 크다. 1분기 연구개발비용은 94억1880만원으로 매출액 대비 79.54%에 달했다. 회사는 휴머노이드 및 전용 액추에이터 Q 라인업 양산을 위한 설비투자를 진행 중이며, 그 성과가 2027년 초부터 가시화될 것으로 예상했다. 즉 성과가 나타나기까지 비용 선행 부담이 이어질 수 있다.",
+    "en": "Large-scale expansion and R&D investment create high near-term earnings volatility. Q1 R&D spending reached KRW 9.42bn, or 79.54% of revenue. The company is investing in facilities to mass-produce humanoids and the dedicated Q actuator lineup, expecting results to become visible from early 2027. In other words, cost burdens may run ahead until those results materialize."
    }
   },
   {
    "title": {
-    "ko": "단일 제품 의존과 중국 경쟁",
-    "en": "Single-product reliance and China competition"
+    "ko": "저가 전략에 따른 마진 제약",
+    "en": "Margin constraints from a low-price strategy"
    },
    "body": {
-    "ko": "매출의 대부분이 액추에이터 한 품목에 집중돼 있어 수요·가격 변동에 취약하다. 중국에서는 정부 보조금을 기반으로 휴머노이드 스타트업이 빠르게 늘며 부품 수요가 급증하고 있는데 이는 기회인 동시에 저가 물량 공세라는 경쟁 위협이기도 하다. 완제품·데이터로의 다각화가 아직 초기 단계라는 점이 부담이다.",
-    "en": "With most revenue concentrated in a single actuator line, the business is vulnerable to demand and price swings. In China, subsidy-fueled humanoid startups are multiplying and component demand is surging, which is both an opportunity and a low-cost competitive threat. Diversification into finished products and data is still at an early stage, which is a burden."
+    "ko": "Q시리즈는 물량 확대를 우선하는 저가 전략을 취하고 있다. 회사 관계자는 Q 시리즈가 마진을 챙기기보다 물량 공세로 점유율을 높이는 데 우선한다고 밝혔다. Q 시리즈가 X 시리즈와 1:1 비율로 판매되면 저가 제품 비중 확대로 전체 영업이익률 상승을 제한할 것으로 보인다. 점유율 확보 이후 마진 개선이 실제로 나타나는지가 관건이다.",
+    "en": "The Q series follows a low-price strategy prioritizing volume. A company official said the Q series prioritizes gaining share through volume over securing margins. If the Q series sells at a 1:1 ratio with the X series, a higher mix of low-cost products is likely to cap the overall operating margin. The key is whether margin improvement actually follows after share gains."
    }
   },
   {
    "title": {
-    "ko": "기대가 선반영된 밸류에이션",
-    "en": "Expectation-laden valuation"
+    "ko": "자율주행 부문 적자와 규제 부담",
+    "en": "Autonomous-division losses and regulatory burden"
    },
    "body": {
-    "ko": "현재 주가는 순자산 대비 큰 프리미엄이 부여된 구간에 있다. 최근 12개월 ROE(-2.7%)·EPS(-393원)가 마이너스인 점을 감안하면 이익 기반 지표로 현재 가격을 설명하기 어렵다. 양산·데이터 사업의 성장 시나리오가 실제 실적으로 입증되지 못하면 기대와 현실의 괴리가 부각될 수 있다.",
-    "en": "The current price sits at a large premium to net assets. Given negative trailing ROE (-2.7%) and EPS (-393), the price is hard to explain with earnings-based metrics. If the mass-production and data growth scenario fails to translate into actual results, the gap between expectation and reality could come to the fore."
+    "ko": "자율주행 로봇 사업은 여전히 적자 부담이 크다. 1분기 기준 자율주행 부문 영업이익률은 마이너스(-)1670%였고, 실외 서비스 로봇 특성상 규제 대응과 데이터 수집·초기 시설투자에 막대한 비용이 투입됐다. 업계에선 이 부문이 손익분기점을 넘어 적자에서 탈피하려면 적어도 3년 이상 걸릴 것이란 관측도 나온다.",
+    "en": "The autonomous-robot business still carries a heavy loss burden. As of Q1, the autonomous division's operating margin was minus 1,670%, with large costs going into regulatory compliance, data collection and early facility investment inherent to outdoor service robots. Some in the industry expect it to take at least three years for the division to break even and exit losses."
    }
   }
  ],
  "risks": [
   {
    "cat": {
-    "ko": "양산 안정화 리스크",
-    "en": "Mass-production stabilization risk"
+    "ko": "실행·양산 리스크",
+    "en": "Execution and ramp-up risk"
    },
    "body": {
-    "ko": "Q시리즈 양산과 우즈베키스탄 공장 가동이 실적의 핵심 변수다. 하반기부터 본격화될 대규모 양산 체제의 안정화 여부가 회사가 직면한 첫 번째 시험대가 될 전망이다. 양산 일정 지연이나 수율·품질 문제가 발생하면 비용 부담과 함께 실적 추정이 흔들릴 수 있다.",
-    "en": "Q-series mass production and the Uzbekistan plant ramp are key earnings variables. Stabilizing the large-scale mass-production system that ramps from H2 will be the company's first major test. Delays or yield and quality issues could pressure costs and shake earnings estimates."
+    "ko": "우즈베키스탄 공장의 가동 일정과 수율이 실적 전환의 핵심 변수다. 공장 규모는 액추에이터 기준 총 500만개 생산 수준이며 올해 10월 부분 가동을 시작할 계획이나, 지난해 판매량은 22만개에 그쳤다. 로보티즈 공장 자동화율은 50% 수준으로 알려졌다. 대규모 신규 캐파가 실제 수주·매출로 채워지는 속도가 관건이다.",
+    "en": "The plant's start-up schedule and yield are the key variables for an earnings turnaround. The plant has total capacity of 5mn actuators and is set for partial operation in October this year, but last year's sales were only 220,000 units. The plant's automation rate is reported at around 50%. The pace at which the large new capacity is filled with actual orders and revenue is critical."
    }
   },
   {
    "cat": {
-    "ko": "소프트웨어 내재화 과제",
-    "en": "Software in-house challenge"
+    "ko": "고객·지역 집중 및 경쟁",
+    "en": "Customer/regional concentration and competition"
    },
    "body": {
-    "ko": "하드웨어 강점과 달리 자율 사고·제어 소프트웨어 역량은 과제로 지적된다. 스스로 판단하고 경로를 생성하는 사고 지능 영역을 외부 파트너십에 기대고 있어, 독자 소프트웨어 역량을 내재화해 단순 하드웨어 공급처를 넘어서야 하는 과제를 안고 있다는 평가가 있다. 이를 해결하지 못하면 부가가치 확보가 제한될 수 있다.",
-    "en": "Unlike its hardware strength, autonomous reasoning and control software remains a challenge. It relies on external partnerships for the reasoning intelligence that judges and generates paths, and is seen as needing to internalize proprietary software to move beyond being a mere hardware supplier. Failure to resolve this could limit value capture."
+    "ko": "중국 시장 공략 확대는 기회인 동시에 위험이다. 중국 현지 저가 경쟁이 치열하고, 국내에서도 삼현 등 경쟁사가 액추에이터 양산 라인 구축을 확대하고 있다. 삼현은 올해 7월부터 내년 4월까지 400억원을 투입해 연간 액추에이터 50만개 등을 생산할 수 있는 공장을 짓겠다고 밝혔다. 부품 단가 하락과 점유율 경쟁이 수익성에 영향을 줄 수 있다.",
+    "en": "Expanding into China is both an opportunity and a risk. Local low-price competition is fierce, and domestic rivals such as Samhyun are also expanding actuator mass-production lines. Samhyun said it will invest KRW 40bn from July this year to April next year to build a plant capable of producing 500,000 actuators annually, among other components. Falling component prices and share competition could affect profitability."
    }
   },
   {
    "cat": {
-    "ko": "신사업 매출화 시점",
-    "en": "Timing of new-business monetization"
+    "ko": "일회성 비용·희석 가능성",
+    "en": "One-off costs and dilution potential"
    },
    "body": {
-    "ko": "데이터 팩토리 등 신사업의 본격 매출화 시점이 불확실하다. 데이터 사업은 2026년 4분기부터 매출이 발생할 것으로 예상되며, 향후 인력 확대를 통해 수익성 기여가 높아질 것으로 전망된다. 매출화가 지연되거나 규모가 기대에 못 미치면 성장 스토리에 대한 시장 평가가 조정될 수 있다.",
-    "en": "The timing of full monetization for new businesses such as the Data Factory is uncertain. The data business is expected to start generating revenue from Q4 2026, with profitability contribution rising as staff expand. Delays or smaller-than-expected scale could prompt a re-rating of the growth story."
+    "ko": "임직원 보상·자금조달 관련 비용이 수익성에 반영될 수 있다. 1분기 임직원 성과보상용 자기주식 117억8100만원이 판관비에 반영되며 적자전환에 큰 영향을 미쳤다. 앞서 회사는 1000억원 유상증자를 통해 600억원 시설자금과 400억원 운영자금을 조달했으며, 이는 지분 희석 요인이 될 수 있다. 추가 자금 소요 여부도 점검 대상이다.",
+    "en": "Employee-compensation and financing-related costs can weigh on profitability. In Q1, KRW 11.781bn of treasury shares for employee performance compensation were booked into SG&A, heavily driving the swing to a loss. The company earlier raised KRW 100bn via a rights issue—KRW 60bn for facilities and KRW 40bn for operations—which can be a dilution factor. Whether further funding is needed is also worth monitoring."
    }
   }
  ],
  "checkpoints": [
   {
    "when": {
-    "ko": "2026년 8월(2분기 실적)",
+    "ko": "2026년 8월 (2분기 실적)",
     "en": "August 2026 (Q2 results)"
    },
    "what": {
-    "ko": "1분기 일회성 비용의 소멸 여부와 액추에이터 매출·마진의 정상화 흐름을 확인. 본업 수익성이 흑자 기조로 복귀하는지가 핵심이다.",
-    "en": "Check whether the Q1 one-off cost has cleared and whether actuator revenue and margins normalize. The key is whether core profitability returns to a positive trend."
+    "ko": "1분기 자기주식 보상 일회성 비용 제거 후 영업이익이 정상화되는지, 액추에이터 매출·중국 비중 추이를 확인.",
+    "en": "Check whether operating profit normalizes after the Q1 one-off treasury-share cost is removed, and monitor actuator revenue and the China mix trend."
    }
   },
   {
    "when": {
-    "ko": "2026년 3분기",
-    "en": "Q3 2026"
+    "ko": "2026년 하반기",
+    "en": "Second half of 2026"
    },
    "what": {
-    "ko": "Dynamixel-Q(Q시리즈) 공식 출시와 우즈베키스탄 공장 가동 일정 진척을 점검. 양산 체계 구축이 실제 공급량 증가로 이어지는지가 관건이다.",
-    "en": "Track the official Dynamixel-Q (Q-series) launch and Uzbekistan plant ramp schedule. The question is whether mass-production buildout translates into higher actual supply."
+    "ko": "'다이나믹셀-Q'와 이족보행 '\"AI 사피엔스\"' 출시, 라이다 탑재 5세대 자율주행로봇 출시 여부 및 초기 반응 확인.",
+    "en": "Watch for the launch of 'Dynamixel-Q' and the bipedal 'AI Sapiens,' plus the LiDAR-equipped fifth-generation autonomous robot and initial reception."
+   }
+  },
+  {
+   "when": {
+    "ko": "2026년 10월",
+    "en": "October 2026"
+   },
+   "what": {
+    "ko": "우즈베키스탄 공장 부분 가동 개시 여부와 초도 물량(20만대 목표) 진행 상황이 증설 시나리오의 첫 검증대.",
+    "en": "Whether the Uzbekistan plant begins partial operation and progress on the initial 200,000-unit target is the first test of the expansion scenario."
    }
   },
   {
@@ -172,46 +182,46 @@
     "en": "Q4 2026"
    },
    "what": {
-    "ko": "데이터 팩토리 사업의 첫 매출 발생 여부와 AI 워커 연간 200대 판매 목표 달성도를 확인. 신사업의 초기 트랙레코드를 가늠하는 분기다.",
-    "en": "Confirm the first revenue from the Data Factory and progress toward the AI Worker 200-unit annual sales target. This quarter gauges the early track record of new businesses."
+    "ko": "데이터 팩토리 사업의 첫 매출 발생 여부와 Q시리즈의 중국향 실제 수주·공급 성과 확인.",
+    "en": "Check whether the data-factory business generates first revenue and the Q series achieves actual China orders and supply."
    }
   },
   {
    "when": {
-    "ko": "수시(LG전자 협력 공시)",
-    "en": "Ongoing (LG cooperation disclosures)"
+    "ko": "2027년 초",
+    "en": "Early 2027"
    },
    "what": {
-    "ko": "LG전자와의 휴머노이드·자율주행 협력의 구체적 계약·수주 공시 여부를 모니터링. 협력의 실질적 매출 기여가 가시화되는지가 중요하다.",
-    "en": "Monitor for concrete contract or order disclosures on humanoid and autonomous cooperation with LG Electronics. Whether the partnership yields tangible revenue is important."
+    "ko": "회사가 밝힌 투자 성과 가시화 시점으로, 증설·양산 투자가 매출·이익 성장으로 전환되는지 검증되는 구간.",
+    "en": "The point when the company expects investment results to become visible, testing whether expansion and mass-production spending converts into revenue and profit growth."
    }
   }
  ],
  "verdict": {
   "body": {
-   "ko": "로보티즈는 다이나믹셀 액추에이터를 핵심으로 2025년 첫 연간 흑자(매출 389.4억원·영업이익 33.5억원)를 달성하며 수익성 회복의 변곡점을 통과했다. 그러나 2026년 1분기에는 자기주식 교부에 따른 일회성 비용으로 영업손실 118.4억원을 기록하며 손익 변동성을 드러냈다. 회사는 휴머노이드 전용 Dynamixel-Q, 범용 휴머노이드 AI 사피엔스, 데이터 팩토리, 우즈베키스탄 양산기지 등 성장 로드맵을 제시하고 있으며 LG전자와의 협력도 이어지고 있다. 동시에 단일 제품 의존, 중국발 저가 경쟁, 소프트웨어 내재화, 신사업 매출화 시점 등 검증해야 할 과제가 상존한다. 현재 주가는 순자산 대비 큰 프리미엄 구간에 있어 시장이 현재 실적보다 미래 양산·데이터 성장 시나리오에 무게를 두고 있음을 시사한다. 향후 분기 실적에서 일회성 비용 소멸 후 본업 수익성 회복과 양산·신사업의 가시적 성과가 확인되는지가 관전 포인트다. 본 자료는 정보 제공용이며 투자 의견이나 목표주가를 제시하지 않는다.",
-   "en": "Centered on its DYNAMIXEL actuator, ROBOTIS passed an inflection point in profitability with its first full-year profit in 2025 (KRW 38.9bn revenue, KRW 3.35bn operating profit). However, Q1 2026 revealed earnings volatility, posting a KRW 11.84bn operating loss on a one-off treasury-stock grant cost. The company has laid out a growth roadmap including the humanoid-dedicated Dynamixel-Q, the general-purpose humanoid AI Sapiens, the Data Factory and the Uzbekistan mass-production base, while cooperation with LG Electronics continues. At the same time, challenges remain to be verified: single-product reliance, low-cost Chinese competition, software internalization and the timing of new-business monetization. The current price sits at a large premium to net assets, suggesting the market weighs the future mass-production and data growth scenario over current results. The watch points are whether upcoming quarters show core profitability recovering after the one-off cost clears and whether mass-production and new businesses deliver visible results. This material is for informational purposes only and does not present an investment opinion or target price."
+   "ko": "로보티즈는 2025년 액추에이터 수요 확대에 힘입어 5년 만에 흑자전환에 성공하며 실적 변곡점을 지났다. 다만 2026년 1분기는 매출이 늘었음에도 임직원 자기주식 보상 117.8억원이라는 일회성 비용과 높은 R&D 지출로 다시 영업손실을 기록했다. 회사는 우즈베키스탄 대규모 증설, 휴머노이드 전용 Q시리즈, AI 워커·AI 사피엔스, 데이터 팩토리로 이어지는 성장 로드맵을 제시하고 있으며 여러 증권사가 목표주가를 상향했다. 반면 저가 물량 전략에 따른 마진 제약, 자율주행 부문의 지속 적자, 증설 물량의 실제 수요 전환 속도, 경쟁 심화 등은 부담 요인이다. 밸류에이션은 과거 실적보다 미래 성장 기대를 반영해 순자산 대비 프리미엄이 큰 구간에 있다. 결국 증설·양산 투자가 2027년을 전후해 매출·이익으로 전환되는 속도가 강세와 약세 시나리오를 가르는 핵심 변수다. 본 자료는 정보 제공용이며 투자 판단의 책임은 독자에게 있다.",
+   "en": "ROBOTIS passed an earnings inflection point in 2025, turning profitable for the first time in five years on rising actuator demand. However, in Q1 2026 it swung back to an operating loss despite higher revenue, weighed down by a KRW 11.78bn one-off treasury-share compensation cost and high R&D spending. The company presents a growth roadmap spanning large-scale Uzbekistan expansion, the humanoid-dedicated Q series, AI Worker/AI Sapiens and a data factory, and several brokerages have raised their target prices. On the other hand, margin constraints from a low-price volume strategy, continued losses in the autonomous division, the pace of converting new capacity into real demand, and intensifying competition are burdens. The valuation sits at a large premium to net assets, reflecting future growth expectations rather than past earnings. Ultimately, how quickly the expansion and mass-production investment converts into revenue and profit around 2027 is the key variable separating the bull and bear scenarios. This material is for informational purposes only, and investment decisions remain the reader's responsibility."
   }
  },
  "sources": [
-  "https://comp.fnguide.com/SVO2/ASP/SVD_Main.asp?gicode=A108490",
-  "https://www.valueline.co.kr/finance/summary/108490",
-  "https://www.investing.com/equities/robotis",
-  "https://m.finance.daum.net/quotes/A108490/home",
-  "https://alphasquare.co.kr/home/stock-summary?code=108490",
-  "https://m.thinkpool.com/item/108490",
-  "https://www.butler.works/ko/companies/00946030",
-  "https://m.irgo.co.kr/IR-COMP/108490/-IR-PAGE",
-  "https://www.ntoday.co.kr/news/articleView.html?idxno=125699",
+  "https://www.newspim.com/news/view/20260423000081",
   "https://m.thinkpool.com/compDiscuss/cont/1022881",
-  "https://elec4.co.kr/contents/article_detail?article_idx=21507",
-  "https://www.fntimes.com/html/view.php?ud=202511302246372938dd55077bc2_18",
-  "https://www.ytn.co.kr/_ln/0102_202606021117448867",
-  "https://dealsite.co.kr/articles/154677/068020",
-  "https://www.irobotnews.com/news/articleView.html?idxno=46192",
-  "https://stockstalker.co.kr/lg-robot/",
-  "https://m.irgo.co.kr/IR-COMP/108490/",
-  "https://www.digitaltoday.co.kr/news/articleView.html?idxno=618500"
+  "https://alphasquare.co.kr/home/theme-factor?theme-id=76",
+  "https://foxcg.com/robot-stocks-to-watch",
+  "https://alphasquare.co.kr/home/stock-summary?code=108490",
+  "https://m.thinkpool.com/compDiscuss/cont/1025989",
+  "https://www.valueline.co.kr/finance/summary/108490",
+  "https://zdnet.co.kr/view/?no=20260529134003",
+  "https://comp.fnguide.com/SVO2/ASP/SVD_Main.asp?gicode=A108490",
+  "https://www.investing.com/equities/robotis",
+  "https://www.tossinvest.com/stocks/A108490/order",
+  "https://www.butler.works/ko/companies/00946030",
+  "https://markets.hankyung.com/stock/108490",
+  "https://m.thinkpool.com/item/108490",
+  "https://www.edaily.co.kr/News/Read?newsId=06717446645449248&mediaCodeNo=257",
+  "https://kind.krx.co.kr/common/disclsviewer.do?method=search&acptno=20260123000484&docno=&viewerhost=",
+  "https://www.stockplus.com/m/stocks/KOREA-A108490",
+  "https://kind.krx.co.kr/common/disclsviewer.do?method=search&acptno=20250926000235&docno=&viewerhost="
  ],
  "v": 2,
  "model": "claude-opus-4-8",
@@ -224,11 +234,11 @@
   "로봇"
  ],
  "market": "코스닥",
- "reportDate": "2026-06-16",
- "reportTs": "2026-06-16 19:21",
- "dataDate": "20260616",
+ "reportDate": "2026-07-08",
+ "reportTs": "2026-07-08 21:33",
+ "dataDate": "20260708",
  "quant": {
-  "asOf": "2026-06-16",
+  "asOf": "2026-07-08",
   "fs_basis": "연결(CFS) · DART 공시 확정치 · 지배주주 기준 순이익",
   "annual": [
    {
@@ -325,19 +335,19 @@
    }
   ],
   "valuation": {
-   "price": 323500,
-   "mcap": 4.7415,
-   "shares": 14657028,
+   "price": 194400,
+   "mcap": 2.8501,
+   "shares": 14661028,
    "total_shares": 14652728,
    "wavg_shares": 14582834,
    "per": null,
    "eps": -393,
-   "pbr": 13.24,
+   "pbr": 7.95,
    "bps": 24438,
    "roe_ttm": -2.7,
    "ttm_window": "2025Q2~2026Q1",
    "ttm_np_owner": -6128938054,
-   "pbr_krx": 14.47,
+   "pbr_krx": 8.96,
    "bps_krx": 21707.0,
    "basis": "PER·EPS·PBR·BPS 모두 자체 산출(네이버·토스와 동일 방식) · 배당은 DART 공시 주당현금배당금(보완:KRX) ÷ 현재가",
    "dps": 0.0,
