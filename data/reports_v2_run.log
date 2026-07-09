@@ -1,10 +1,97 @@
-=== 공시 트리거 v2 생성 Thu Jul  9 05:01:35 UTC 2026 · 대상 153890,394420,112190,0010F0,233250,185190,092590,332190 ===
-## 🤖 리포트 v2 Batch 제출 — 8개 · 상위500 claude-opus-4-8 / 나머지 claude-sonnet-4-6
+=== 공시 트리거 v2 생성 Thu Jul  9 13:42:20 UTC 2026 · 대상 003850,232530,153890,127710,112190,0010F0,233250,185190,332190,092590,215570 ===
+## 🤖 리포트 v2 Batch 제출 — 11개 · 상위500 claude-opus-4-8 / 나머지 claude-sonnet-4-6
 KRX 로그인 시도...
   로그인 ID: qjawnsdla
 KRX 로그인 완료.
-  로그인 시간: 2026-07-09 05:01:39
-  만료 시간: 2026-07-09 06:01:39
+  로그인 시간: 2026-07-09 13:42:23
+  만료 시간: 2026-07-09 14:42:23
+- 정량 수집 003850 보령...
+reprt_code='11011', fs_div='CFS' (사업보고서, 연결제무제표)'
+reprt_code='11011', fs_div='CFS' (사업보고서, 연결제무제표)'
+reprt_code='11011', fs_div='CFS' (사업보고서, 연결제무제표)'
+reprt_code='11011', fs_div='CFS' (사업보고서, 연결제무제표)'
+reprt_code='11013', fs_div='CFS' (1분기보고서, 연결제무제표)'
+reprt_code='11012', fs_div='CFS' (반기보고서, 연결제무제표)'
+reprt_code='11014', fs_div='CFS' (3분기보고서, 연결제무제표)'
+reprt_code='11013', fs_div='CFS' (1분기보고서, 연결제무제표)'
+  ✅ 보령 검증 통과 PER 6.4 PBR 0.77 EPS 1256 BPS 10415
+### 보령
+  2025: 매출 10,174억 영업이익 651억 지배순이익 643억 OPM 6.4% ROE 7.6% 부채비율 64.1%
+  2024: 매출 10,171억 영업이익 705억 지배순이익 696억 OPM 6.9% ROE 8.9% 부채비율 48.4%
+  2023: 매출 8,596억 영업이익 683억 지배순이익 402억 OPM 7.9% ROE 7.3% 부채비율 66.7%
+  2022: 매출 7,605억 영업이익 566억 지배순이익 419억 OPM 7.4% ROE 8.1% 부채비율 72.8%
+  2025Q1: 매출 2,406억 영업이익 109억 지배순이익 3억
+  2025Q2: 매출 2,515억 영업이익 254억 지배순이익 89억
+  2025Q3: 매출 2,800억 영업이익 294억 지배순이익 340억
+  2025Q4: 매출 2,453억 영업이익 -6억 지배순이익 211억
+  2026Q1: 매출 2,554억 영업이익 202억 지배순이익 414억
+  PER 6.4 | EPS 1256 | PBR 0.77 | BPS 10415 | ROE 12.8 | 배당 1.98% | DPS 160.0
+- 정량 수집 232530 이엠티...
+reprt_code='11011', fs_div='CFS' (사업보고서, 연결제무제표)'
+{'status': '013', 'message': '조회된 데이타가 없습니다.'}
+
+reprt_code='11011', fs_div='OFS' (사업보고서, 별도(개별)제무제표)'
+{'status': '013', 'message': '조회된 데이타가 없습니다.'}
+
+reprt_code='11011', fs_div='CFS' (사업보고서, 연결제무제표)'
+{'status': '013', 'message': '조회된 데이타가 없습니다.'}
+
+reprt_code='11011', fs_div='OFS' (사업보고서, 별도(개별)제무제표)'
+{'status': '013', 'message': '조회된 데이타가 없습니다.'}
+
+reprt_code='11011', fs_div='CFS' (사업보고서, 연결제무제표)'
+{'status': '013', 'message': '조회된 데이타가 없습니다.'}
+
+reprt_code='11011', fs_div='OFS' (사업보고서, 별도(개별)제무제표)'
+{'status': '013', 'message': '조회된 데이타가 없습니다.'}
+
+reprt_code='11011', fs_div='CFS' (사업보고서, 연결제무제표)'
+{'status': '013', 'message': '조회된 데이타가 없습니다.'}
+
+reprt_code='11011', fs_div='OFS' (사업보고서, 별도(개별)제무제표)'
+{'status': '013', 'message': '조회된 데이타가 없습니다.'}
+
+reprt_code='11013', fs_div='CFS' (1분기보고서, 연결제무제표)'
+{'status': '013', 'message': '조회된 데이타가 없습니다.'}
+
+reprt_code='11013', fs_div='OFS' (1분기보고서, 별도(개별)제무제표)'
+{'status': '013', 'message': '조회된 데이타가 없습니다.'}
+
+reprt_code='11012', fs_div='CFS' (반기보고서, 연결제무제표)'
+{'status': '013', 'message': '조회된 데이타가 없습니다.'}
+
+reprt_code='11012', fs_div='OFS' (반기보고서, 별도(개별)제무제표)'
+{'status': '013', 'message': '조회된 데이타가 없습니다.'}
+
+reprt_code='11014', fs_div='CFS' (3분기보고서, 연결제무제표)'
+{'status': '013', 'message': '조회된 데이타가 없습니다.'}
+
+reprt_code='11014', fs_div='OFS' (3분기보고서, 별도(개별)제무제표)'
+{'status': '013', 'message': '조회된 데이타가 없습니다.'}
+
+reprt_code='11013', fs_div='CFS' (1분기보고서, 연결제무제표)'
+{'status': '013', 'message': '조회된 데이타가 없습니다.'}
+
+reprt_code='11013', fs_div='OFS' (1분기보고서, 별도(개별)제무제표)'
+{'status': '013', 'message': '조회된 데이타가 없습니다.'}
+
+{'status': '013', 'message': '조회된 데이타가 없습니다.'}
+
+{'status': '013', 'message': '조회된 데이타가 없습니다.'}
+
+{'status': '013', 'message': '조회된 데이타가 없습니다.'}
+
+{'status': '013', 'message': '조회된 데이타가 없습니다.'}
+
+{'status': '013', 'message': '조회된 데이타가 없습니다.'}
+  ✅ 이엠티 검증 통과 PER None PBR None EPS None BPS None
+### 이엠티
+  2025Q1: 매출 — 영업이익 — 지배순이익 —
+  2025Q2: 매출 — 영업이익 — 지배순이익 —
+  2025Q3: 매출 — 영업이익 — 지배순이익 —
+  2025Q4: 매출 — 영업이익 — 지배순이익 —
+  2026Q1: 매출 — 영업이익 — 지배순이익 —
+  PER None | EPS None | PBR None | BPS None | ROE None | 배당 None% | DPS None
 - 정량 수집 153890 져스텍...
 reprt_code='11011', fs_div='CFS' (사업보고서, 연결제무제표)'
 {'status': '013', 'message': '조회된 데이타가 없습니다.'}
@@ -51,13 +138,6 @@ reprt_code='11014', fs_div='OFS' (3분기보고서, 별도(개별)제무제표)'
 reprt_code='11013', fs_div='CFS' (1분기보고서, 연결제무제표)'
 {'status': '013', 'message': '조회된 데이타가 없습니다.'}
 
-reprt_code='11013', fs_div='OFS' (1분기보고서, 별도(개별)제무제표)'
-{'status': '013', 'message': '조회된 데이타가 없습니다.'}
-
-{'status': '013', 'message': '조회된 데이타가 없습니다.'}
-
-{'status': '013', 'message': '조회된 데이타가 없습니다.'}
-
 {'status': '013', 'message': '조회된 데이타가 없습니다.'}
 
 {'status': '013', 'message': '조회된 데이타가 없습니다.'}
@@ -70,57 +150,29 @@ reprt_code='11013', fs_div='OFS' (1분기보고서, 별도(개별)제무제표)'
   2025Q2: 매출 — 영업이익 — 지배순이익 —
   2025Q3: 매출 — 영업이익 — 지배순이익 —
   2025Q4: 매출 — 영업이익 — 지배순이익 —
-  2026Q1: 매출 — 영업이익 — 지배순이익 —
+  2026Q1: 매출 35억 영업이익 — 지배순이익 —
   PER None | EPS None | PBR None | BPS None | ROE None | 배당 0.0% | DPS 0.0
-- 정량 수집 394420 리센스메디컬...
+- 정량 수집 127710 아시아경제...
 reprt_code='11011', fs_div='CFS' (사업보고서, 연결제무제표)'
 reprt_code='11011', fs_div='CFS' (사업보고서, 연결제무제표)'
-{'status': '013', 'message': '조회된 데이타가 없습니다.'}
-
-reprt_code='11011', fs_div='OFS' (사업보고서, 별도(개별)제무제표)'
-{'status': '013', 'message': '조회된 데이타가 없습니다.'}
-
 reprt_code='11011', fs_div='CFS' (사업보고서, 연결제무제표)'
-{'status': '013', 'message': '조회된 데이타가 없습니다.'}
-
-reprt_code='11011', fs_div='OFS' (사업보고서, 별도(개별)제무제표)'
-{'status': '013', 'message': '조회된 데이타가 없습니다.'}
-
 reprt_code='11011', fs_div='CFS' (사업보고서, 연결제무제표)'
-{'status': '013', 'message': '조회된 데이타가 없습니다.'}
-
-reprt_code='11011', fs_div='OFS' (사업보고서, 별도(개별)제무제표)'
-{'status': '013', 'message': '조회된 데이타가 없습니다.'}
-
 reprt_code='11013', fs_div='CFS' (1분기보고서, 연결제무제표)'
-{'status': '013', 'message': '조회된 데이타가 없습니다.'}
-
-reprt_code='11013', fs_div='OFS' (1분기보고서, 별도(개별)제무제표)'
-{'status': '013', 'message': '조회된 데이타가 없습니다.'}
-
 reprt_code='11012', fs_div='CFS' (반기보고서, 연결제무제표)'
-{'status': '013', 'message': '조회된 데이타가 없습니다.'}
-
-reprt_code='11012', fs_div='OFS' (반기보고서, 별도(개별)제무제표)'
-{'status': '013', 'message': '조회된 데이타가 없습니다.'}
-
 reprt_code='11014', fs_div='CFS' (3분기보고서, 연결제무제표)'
-{'status': '013', 'message': '조회된 데이타가 없습니다.'}
-
-reprt_code='11014', fs_div='OFS' (3분기보고서, 별도(개별)제무제표)'
-{'status': '013', 'message': '조회된 데이타가 없습니다.'}
-
 reprt_code='11013', fs_div='CFS' (1분기보고서, 연결제무제표)'
-{'status': '013', 'message': '조회된 데이타가 없습니다.'}
-  ❌ 리센스메디컬 중대오류 차단 → 해당 지표 숨김: BPS 3182↔ref 1941.0
-### 리센스메디컬
-  2025: 매출 88억 영업이익 -106억 지배순이익 -191억 OPM -120.5% ROE -274.0% 부채비율 72.1%
-  2025Q1: 매출 — 영업이익 — 지배순이익 —
-  2025Q2: 매출 — 영업이익 — 지배순이익 —
-  2025Q3: 매출 — 영업이익 — 지배순이익 —
-  2025Q4: 매출 — 영업이익 — 지배순이익 —
-  2026Q1: 매출 10억 영업이익 — 지배순이익 —
-  PER None | EPS None | PBR None | BPS None | ROE None | 배당 0.0% | DPS 0.0
+  ❌ 아시아경제 중대오류 차단 → 해당 지표 숨김: EPS 35↔ref 26.0
+### 아시아경제
+  2025: 매출 731억 영업이익 55억 지배순이익 31억 OPM 7.5% ROE 3.4% 부채비율 259.2%
+  2024: 매출 780억 영업이익 -352억 지배순이익 -768억 OPM -45.1% ROE -84.4% 부채비율 307.9%
+  2023: 매출 931억 영업이익 -285억 지배순이익 -235억 OPM -30.6% ROE -13.9% 부채비율 227.8%
+  2022: 매출 852억 영업이익 -11억 지배순이익 175억 OPM -1.3% ROE 9.2% 부채비율 278.9%
+  2025Q1: 매출 147억 영업이익 -10억 지배순이익 8억
+  2025Q2: 매출 194억 영업이익 0억 지배순이익 36억
+  2025Q3: 매출 176억 영업이익 79억 지배순이익 15억
+  2025Q4: 매출 214억 영업이익 -15억 지배순이익 -27억
+  2026Q1: 매출 145억 영업이익 -28억 지배순이익 -14억
+  PER None | EPS None | PBR 0.4 | BPS 2481 | ROE 1.6 | 배당 0.0% | DPS 0.0
 - 정량 수집 112190 KC산업...
 reprt_code='11011', fs_div='CFS' (사업보고서, 연결제무제표)'
 {'status': '013', 'message': '조회된 데이타가 없습니다.'}
@@ -328,72 +380,6 @@ reprt_code='11013', fs_div='OFS' (1분기보고서, 별도(개별)제무제표)'
   2025Q4: 매출 — 영업이익 — 지배순이익 —
   2026Q1: 매출 — 영업이익 — 지배순이익 —
   PER None | EPS None | PBR None | BPS None | ROE None | 배당 None% | DPS None
-- 정량 수집 092590 럭스피아...
-reprt_code='11011', fs_div='CFS' (사업보고서, 연결제무제표)'
-{'status': '013', 'message': '조회된 데이타가 없습니다.'}
-
-reprt_code='11011', fs_div='OFS' (사업보고서, 별도(개별)제무제표)'
-{'status': '013', 'message': '조회된 데이타가 없습니다.'}
-
-reprt_code='11011', fs_div='CFS' (사업보고서, 연결제무제표)'
-{'status': '013', 'message': '조회된 데이타가 없습니다.'}
-
-reprt_code='11011', fs_div='OFS' (사업보고서, 별도(개별)제무제표)'
-{'status': '013', 'message': '조회된 데이타가 없습니다.'}
-
-reprt_code='11011', fs_div='CFS' (사업보고서, 연결제무제표)'
-{'status': '013', 'message': '조회된 데이타가 없습니다.'}
-
-reprt_code='11011', fs_div='OFS' (사업보고서, 별도(개별)제무제표)'
-{'status': '013', 'message': '조회된 데이타가 없습니다.'}
-
-reprt_code='11011', fs_div='CFS' (사업보고서, 연결제무제표)'
-{'status': '013', 'message': '조회된 데이타가 없습니다.'}
-
-reprt_code='11011', fs_div='OFS' (사업보고서, 별도(개별)제무제표)'
-{'status': '013', 'message': '조회된 데이타가 없습니다.'}
-
-reprt_code='11013', fs_div='CFS' (1분기보고서, 연결제무제표)'
-{'status': '013', 'message': '조회된 데이타가 없습니다.'}
-
-reprt_code='11013', fs_div='OFS' (1분기보고서, 별도(개별)제무제표)'
-{'status': '013', 'message': '조회된 데이타가 없습니다.'}
-
-reprt_code='11012', fs_div='CFS' (반기보고서, 연결제무제표)'
-{'status': '013', 'message': '조회된 데이타가 없습니다.'}
-
-reprt_code='11012', fs_div='OFS' (반기보고서, 별도(개별)제무제표)'
-{'status': '013', 'message': '조회된 데이타가 없습니다.'}
-
-reprt_code='11014', fs_div='CFS' (3분기보고서, 연결제무제표)'
-{'status': '013', 'message': '조회된 데이타가 없습니다.'}
-
-reprt_code='11014', fs_div='OFS' (3분기보고서, 별도(개별)제무제표)'
-{'status': '013', 'message': '조회된 데이타가 없습니다.'}
-
-reprt_code='11013', fs_div='CFS' (1분기보고서, 연결제무제표)'
-{'status': '013', 'message': '조회된 데이타가 없습니다.'}
-
-reprt_code='11013', fs_div='OFS' (1분기보고서, 별도(개별)제무제표)'
-{'status': '013', 'message': '조회된 데이타가 없습니다.'}
-
-{'status': '013', 'message': '조회된 데이타가 없습니다.'}
-
-{'status': '013', 'message': '조회된 데이타가 없습니다.'}
-
-{'status': '013', 'message': '조회된 데이타가 없습니다.'}
-
-{'status': '013', 'message': '조회된 데이타가 없습니다.'}
-
-{'status': '013', 'message': '조회된 데이타가 없습니다.'}
-  ✅ 럭스피아 검증 통과 PER None PBR None EPS None BPS None
-### 럭스피아
-  2025Q1: 매출 — 영업이익 — 지배순이익 —
-  2025Q2: 매출 — 영업이익 — 지배순이익 —
-  2025Q3: 매출 — 영업이익 — 지배순이익 —
-  2025Q4: 매출 — 영업이익 — 지배순이익 —
-  2026Q1: 매출 — 영업이익 — 지배순이익 —
-  PER None | EPS None | PBR None | BPS None | ROE None | 배당 0.0% | DPS 0.0
 - 정량 수집 332190 오션스바이오...
 reprt_code='11011', fs_div='CFS' (사업보고서, 연결제무제표)'
 {'status': '013', 'message': '조회된 데이타가 없습니다.'}
@@ -460,39 +446,263 @@ reprt_code='11013', fs_div='OFS' (1분기보고서, 별도(개별)제무제표)'
   2025Q4: 매출 — 영업이익 — 지배순이익 —
   2026Q1: 매출 — 영업이익 — 지배순이익 —
   PER None | EPS None | PBR None | BPS None | ROE None | 배당 None% | DPS None
+- 정량 수집 092590 럭스피아...
+reprt_code='11011', fs_div='CFS' (사업보고서, 연결제무제표)'
+{'status': '013', 'message': '조회된 데이타가 없습니다.'}
+
+reprt_code='11011', fs_div='OFS' (사업보고서, 별도(개별)제무제표)'
+{'status': '013', 'message': '조회된 데이타가 없습니다.'}
+
+reprt_code='11011', fs_div='CFS' (사업보고서, 연결제무제표)'
+{'status': '013', 'message': '조회된 데이타가 없습니다.'}
+
+reprt_code='11011', fs_div='OFS' (사업보고서, 별도(개별)제무제표)'
+{'status': '013', 'message': '조회된 데이타가 없습니다.'}
+
+reprt_code='11011', fs_div='CFS' (사업보고서, 연결제무제표)'
+{'status': '013', 'message': '조회된 데이타가 없습니다.'}
+
+reprt_code='11011', fs_div='OFS' (사업보고서, 별도(개별)제무제표)'
+{'status': '013', 'message': '조회된 데이타가 없습니다.'}
+
+reprt_code='11011', fs_div='CFS' (사업보고서, 연결제무제표)'
+{'status': '013', 'message': '조회된 데이타가 없습니다.'}
+
+reprt_code='11011', fs_div='OFS' (사업보고서, 별도(개별)제무제표)'
+{'status': '013', 'message': '조회된 데이타가 없습니다.'}
+
+reprt_code='11013', fs_div='CFS' (1분기보고서, 연결제무제표)'
+{'status': '013', 'message': '조회된 데이타가 없습니다.'}
+
+reprt_code='11013', fs_div='OFS' (1분기보고서, 별도(개별)제무제표)'
+{'status': '013', 'message': '조회된 데이타가 없습니다.'}
+
+reprt_code='11012', fs_div='CFS' (반기보고서, 연결제무제표)'
+{'status': '013', 'message': '조회된 데이타가 없습니다.'}
+
+reprt_code='11012', fs_div='OFS' (반기보고서, 별도(개별)제무제표)'
+{'status': '013', 'message': '조회된 데이타가 없습니다.'}
+
+reprt_code='11014', fs_div='CFS' (3분기보고서, 연결제무제표)'
+{'status': '013', 'message': '조회된 데이타가 없습니다.'}
+
+reprt_code='11014', fs_div='OFS' (3분기보고서, 별도(개별)제무제표)'
+{'status': '013', 'message': '조회된 데이타가 없습니다.'}
+
+reprt_code='11013', fs_div='CFS' (1분기보고서, 연결제무제표)'
+{'status': '013', 'message': '조회된 데이타가 없습니다.'}
+
+reprt_code='11013', fs_div='OFS' (1분기보고서, 별도(개별)제무제표)'
+{'status': '013', 'message': '조회된 데이타가 없습니다.'}
+
+{'status': '013', 'message': '조회된 데이타가 없습니다.'}
+
+{'status': '013', 'message': '조회된 데이타가 없습니다.'}
+
+{'status': '013', 'message': '조회된 데이타가 없습니다.'}
+
+{'status': '013', 'message': '조회된 데이타가 없습니다.'}
+
+{'status': '013', 'message': '조회된 데이타가 없습니다.'}
+  ✅ 럭스피아 검증 통과 PER None PBR None EPS None BPS None
+### 럭스피아
+  2025Q1: 매출 — 영업이익 — 지배순이익 —
+  2025Q2: 매출 — 영업이익 — 지배순이익 —
+  2025Q3: 매출 — 영업이익 — 지배순이익 —
+  2025Q4: 매출 — 영업이익 — 지배순이익 —
+  2026Q1: 매출 — 영업이익 — 지배순이익 —
+  PER None | EPS None | PBR None | BPS None | ROE None | 배당 0.0% | DPS 0.0
+- 정량 수집 215570 크로넥스...
+reprt_code='11011', fs_div='CFS' (사업보고서, 연결제무제표)'
+{'status': '013', 'message': '조회된 데이타가 없습니다.'}
+
+reprt_code='11011', fs_div='OFS' (사업보고서, 별도(개별)제무제표)'
+{'status': '013', 'message': '조회된 데이타가 없습니다.'}
+
+reprt_code='11011', fs_div='CFS' (사업보고서, 연결제무제표)'
+{'status': '013', 'message': '조회된 데이타가 없습니다.'}
+
+reprt_code='11011', fs_div='OFS' (사업보고서, 별도(개별)제무제표)'
+{'status': '013', 'message': '조회된 데이타가 없습니다.'}
+
+reprt_code='11011', fs_div='CFS' (사업보고서, 연결제무제표)'
+{'status': '013', 'message': '조회된 데이타가 없습니다.'}
+
+reprt_code='11011', fs_div='OFS' (사업보고서, 별도(개별)제무제표)'
+{'status': '013', 'message': '조회된 데이타가 없습니다.'}
+
+reprt_code='11011', fs_div='CFS' (사업보고서, 연결제무제표)'
+{'status': '013', 'message': '조회된 데이타가 없습니다.'}
+
+reprt_code='11011', fs_div='OFS' (사업보고서, 별도(개별)제무제표)'
+{'status': '013', 'message': '조회된 데이타가 없습니다.'}
+
+reprt_code='11013', fs_div='CFS' (1분기보고서, 연결제무제표)'
+{'status': '013', 'message': '조회된 데이타가 없습니다.'}
+
+reprt_code='11013', fs_div='OFS' (1분기보고서, 별도(개별)제무제표)'
+{'status': '013', 'message': '조회된 데이타가 없습니다.'}
+
+reprt_code='11012', fs_div='CFS' (반기보고서, 연결제무제표)'
+{'status': '013', 'message': '조회된 데이타가 없습니다.'}
+
+reprt_code='11012', fs_div='OFS' (반기보고서, 별도(개별)제무제표)'
+{'status': '013', 'message': '조회된 데이타가 없습니다.'}
+
+reprt_code='11014', fs_div='CFS' (3분기보고서, 연결제무제표)'
+{'status': '013', 'message': '조회된 데이타가 없습니다.'}
+
+reprt_code='11014', fs_div='OFS' (3분기보고서, 별도(개별)제무제표)'
+{'status': '013', 'message': '조회된 데이타가 없습니다.'}
+
+reprt_code='11013', fs_div='CFS' (1분기보고서, 연결제무제표)'
+{'status': '013', 'message': '조회된 데이타가 없습니다.'}
+
+reprt_code='11013', fs_div='OFS' (1분기보고서, 별도(개별)제무제표)'
+{'status': '013', 'message': '조회된 데이타가 없습니다.'}
+
+{'status': '013', 'message': '조회된 데이타가 없습니다.'}
+
+{'status': '013', 'message': '조회된 데이타가 없습니다.'}
+
+{'status': '013', 'message': '조회된 데이타가 없습니다.'}
+
+{'status': '013', 'message': '조회된 데이타가 없습니다.'}
+
+{'status': '013', 'message': '조회된 데이타가 없습니다.'}
+  ✅ 크로넥스 검증 통과 PER None PBR None EPS None BPS None
+### 크로넥스
+  2025Q1: 매출 — 영업이익 — 지배순이익 —
+  2025Q2: 매출 — 영업이익 — 지배순이익 —
+  2025Q3: 매출 — 영업이익 — 지배순이익 —
+  2025Q4: 매출 — 영업이익 — 지배순이익 —
+  2026Q1: 매출 — 영업이익 — 지배순이익 —
+  PER None | EPS None | PBR None | BPS None | ROE None | 배당 0.0% | DPS 0.0
+  · ⚠️ 232530 정량 데이터 없음 — 제외
   · ⚠️ 153890 정량 데이터 없음 — 제외
   · ⚠️ 112190 정량 데이터 없음 — 제외
   · ⚠️ 0010F0 정량 데이터 없음 — 제외
   · ⚠️ 233250 정량 데이터 없음 — 제외
   · ⚠️ 185190 정량 데이터 없음 — 제외
-  · ⚠️ 092590 정량 데이터 없음 — 제외
   · ⚠️ 332190 정량 데이터 없음 — 제외
-- 모델 배분: claude-opus-4-8 0개 · claude-sonnet-4-6 1개
-- ✅ 배치 제출: msgbatch_01NQoqBC7DUVVTATcXUbj5m5 (1건)
-  · 상태 in_progress · 처리 1/성공 0/오류 0
-  · 상태 in_progress · 처리 1/성공 0/오류 0
-  · 상태 in_progress · 처리 1/성공 0/오류 0
-  · 상태 in_progress · 처리 1/성공 0/오류 0
-  · 상태 in_progress · 처리 1/성공 0/오류 0
-  · 상태 in_progress · 처리 1/성공 0/오류 0
-  · 상태 in_progress · 처리 1/성공 0/오류 0
-  · 상태 in_progress · 처리 1/성공 0/오류 0
-  · 상태 in_progress · 처리 1/성공 0/오류 0
-  · 상태 in_progress · 처리 1/성공 0/오류 0
-  · 상태 in_progress · 처리 1/성공 0/오류 0
-  · 상태 in_progress · 처리 1/성공 0/오류 0
-  · 상태 in_progress · 처리 1/성공 0/오류 0
-  · 상태 in_progress · 처리 1/성공 0/오류 0
-  · 상태 in_progress · 처리 1/성공 0/오류 0
-  · 상태 in_progress · 처리 1/성공 0/오류 0
-  · 상태 in_progress · 처리 1/성공 0/오류 0
-  · 상태 in_progress · 처리 1/성공 0/오류 0
-  · 상태 in_progress · 처리 1/성공 0/오류 0
-  · 상태 in_progress · 처리 1/성공 0/오류 0
-  · 상태 in_progress · 처리 1/성공 0/오류 0
-  · 상태 in_progress · 처리 1/성공 0/오류 0
-  · 상태 in_progress · 처리 1/성공 0/오류 0
-  · 상태 in_progress · 처리 1/성공 0/오류 0
-  · 상태 ended · 처리 0/성공 1/오류 0
+  · ⚠️ 092590 정량 데이터 없음 — 제외
+  · ⚠️ 215570 정량 데이터 없음 — 제외
+- 모델 배분: claude-opus-4-8 1개 · claude-sonnet-4-6 1개
+- ✅ 배치 제출: msgbatch_01JuAf6ExJrHDskphGZ4F8Va (2건)
+  · 상태 in_progress · 처리 2/성공 0/오류 0
+  · 상태 in_progress · 처리 2/성공 0/오류 0
+  · 상태 in_progress · 처리 2/성공 0/오류 0
+  · 상태 in_progress · 처리 2/성공 0/오류 0
+  · 상태 in_progress · 처리 2/성공 0/오류 0
+  · 상태 in_progress · 처리 2/성공 0/오류 0
+  · 상태 in_progress · 처리 2/성공 0/오류 0
+  · 상태 in_progress · 처리 2/성공 0/오류 0
+  · 상태 in_progress · 처리 2/성공 0/오류 0
+  · 상태 in_progress · 처리 2/성공 0/오류 0
+  · 상태 in_progress · 처리 2/성공 0/오류 0
+  · 상태 in_progress · 처리 2/성공 0/오류 0
+  · 상태 in_progress · 처리 2/성공 0/오류 0
+  · 상태 in_progress · 처리 2/성공 0/오류 0
+  · 상태 in_progress · 처리 2/성공 0/오류 0
+  · 상태 in_progress · 처리 2/성공 0/오류 0
+  · 상태 in_progress · 처리 2/성공 0/오류 0
+  · 상태 in_progress · 처리 2/성공 0/오류 0
+  · 상태 in_progress · 처리 2/성공 0/오류 0
+  · 상태 in_progress · 처리 2/성공 0/오류 0
+  · 상태 in_progress · 처리 2/성공 0/오류 0
+  · 상태 in_progress · 처리 2/성공 0/오류 0
+  · 상태 in_progress · 처리 2/성공 0/오류 0
+  · 상태 in_progress · 처리 2/성공 0/오류 0
+  · 상태 in_progress · 처리 2/성공 0/오류 0
+  · 상태 in_progress · 처리 2/성공 0/오류 0
+  · 상태 in_progress · 처리 2/성공 0/오류 0
+  · 상태 in_progress · 처리 2/성공 0/오류 0
+  · 상태 in_progress · 처리 2/성공 0/오류 0
+  · 상태 in_progress · 처리 2/성공 0/오류 0
+  · 상태 in_progress · 처리 2/성공 0/오류 0
+  · 상태 in_progress · 처리 2/성공 0/오류 0
+  · 상태 in_progress · 처리 2/성공 0/오류 0
+  · 상태 in_progress · 처리 2/성공 0/오류 0
+  · 상태 in_progress · 처리 2/성공 0/오류 0
+  · 상태 in_progress · 처리 2/성공 0/오류 0
+  · 상태 in_progress · 처리 2/성공 0/오류 0
+  · 상태 in_progress · 처리 2/성공 0/오류 0
+  · 상태 in_progress · 처리 2/성공 0/오류 0
+  · 상태 in_progress · 처리 2/성공 0/오류 0
+  · 상태 in_progress · 처리 2/성공 0/오류 0
+  · 상태 in_progress · 처리 2/성공 0/오류 0
+  · 상태 in_progress · 처리 2/성공 0/오류 0
+  · 상태 in_progress · 처리 2/성공 0/오류 0
+  · 상태 in_progress · 처리 2/성공 0/오류 0
+  · 상태 in_progress · 처리 2/성공 0/오류 0
+  · 상태 in_progress · 처리 2/성공 0/오류 0
+  · 상태 in_progress · 처리 2/성공 0/오류 0
+  · 상태 in_progress · 처리 2/성공 0/오류 0
+  · 상태 in_progress · 처리 2/성공 0/오류 0
+  · 상태 in_progress · 처리 2/성공 0/오류 0
+  · 상태 in_progress · 처리 2/성공 0/오류 0
+  · 상태 in_progress · 처리 2/성공 0/오류 0
+  · 상태 in_progress · 처리 2/성공 0/오류 0
+  · 상태 in_progress · 처리 2/성공 0/오류 0
+  · 상태 in_progress · 처리 2/성공 0/오류 0
+  · 상태 in_progress · 처리 2/성공 0/오류 0
+  · 상태 in_progress · 처리 2/성공 0/오류 0
+  · 상태 in_progress · 처리 2/성공 0/오류 0
+  · 상태 in_progress · 처리 2/성공 0/오류 0
+  · 상태 in_progress · 처리 2/성공 0/오류 0
+  · 상태 in_progress · 처리 2/성공 0/오류 0
+  · 상태 in_progress · 처리 2/성공 0/오류 0
+  · 상태 in_progress · 처리 2/성공 0/오류 0
+  · 상태 in_progress · 처리 2/성공 0/오류 0
+  · 상태 in_progress · 처리 2/성공 0/오류 0
+  · 상태 in_progress · 처리 2/성공 0/오류 0
+  · 상태 in_progress · 처리 2/성공 0/오류 0
+  · 상태 in_progress · 처리 2/성공 0/오류 0
+  · 상태 in_progress · 처리 2/성공 0/오류 0
+  · 상태 in_progress · 처리 2/성공 0/오류 0
+  · 상태 in_progress · 처리 2/성공 0/오류 0
+  · 상태 in_progress · 처리 2/성공 0/오류 0
+  · 상태 in_progress · 처리 2/성공 0/오류 0
+  · 상태 in_progress · 처리 2/성공 0/오류 0
+  · 상태 in_progress · 처리 2/성공 0/오류 0
+  · 상태 in_progress · 처리 2/성공 0/오류 0
+  · 상태 in_progress · 처리 2/성공 0/오류 0
+  · 상태 in_progress · 처리 2/성공 0/오류 0
+  · 상태 in_progress · 처리 2/성공 0/오류 0
+  · 상태 in_progress · 처리 2/성공 0/오류 0
+  · 상태 in_progress · 처리 2/성공 0/오류 0
+  · 상태 in_progress · 처리 2/성공 0/오류 0
+  · 상태 in_progress · 처리 2/성공 0/오류 0
+  · 상태 in_progress · 처리 2/성공 0/오류 0
+  · 상태 in_progress · 처리 2/성공 0/오류 0
+  · 상태 in_progress · 처리 2/성공 0/오류 0
+  · 상태 in_progress · 처리 2/성공 0/오류 0
+  · 상태 in_progress · 처리 2/성공 0/오류 0
+  · 상태 in_progress · 처리 2/성공 0/오류 0
+  · 상태 in_progress · 처리 2/성공 0/오류 0
+  · 상태 in_progress · 처리 2/성공 0/오류 0
+  · 상태 in_progress · 처리 2/성공 0/오류 0
+  · 상태 in_progress · 처리 2/성공 0/오류 0
+  · 상태 in_progress · 처리 2/성공 0/오류 0
+  · 상태 in_progress · 처리 2/성공 0/오류 0
+  · 상태 in_progress · 처리 2/성공 0/오류 0
+  · 상태 in_progress · 처리 2/성공 0/오류 0
+  · 상태 in_progress · 처리 2/성공 0/오류 0
+  · 상태 in_progress · 처리 2/성공 0/오류 0
+  · 상태 in_progress · 처리 2/성공 0/오류 0
+  · 상태 in_progress · 처리 2/성공 0/오류 0
+  · 상태 in_progress · 처리 2/성공 0/오류 0
+  · 상태 in_progress · 처리 2/성공 0/오류 0
+  · 상태 in_progress · 처리 2/성공 0/오류 0
+  · 상태 in_progress · 처리 2/성공 0/오류 0
+  · 상태 in_progress · 처리 2/성공 0/오류 0
+  · 상태 in_progress · 처리 2/성공 0/오류 0
+  · 상태 in_progress · 처리 2/성공 0/오류 0
+  · 상태 in_progress · 처리 2/성공 0/오류 0
+  · 상태 in_progress · 처리 2/성공 0/오류 0
+  · 상태 in_progress · 처리 2/성공 0/오류 0
+  · 상태 in_progress · 처리 2/성공 0/오류 0
+  · 상태 in_progress · 처리 2/성공 0/오류 0
+  · 상태 ended · 처리 0/성공 2/오류 0
 
-✅ v2 회수 완료 · 성공 1/실패 0 → data/reports_v2/ (2563개)
+✅ v2 회수 완료 · 성공 2/실패 0 → data/reports_v2/ (2563개)
