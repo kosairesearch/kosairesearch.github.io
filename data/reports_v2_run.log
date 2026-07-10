@@ -1,10 +1,10 @@
-=== 공시 트리거 v2 생성 Fri Jul 10 04:54:34 UTC 2026 · 대상 232530,153890,049180,112190,0010F0,233250,185190,092590,332190,215570 ===
-## 🤖 리포트 v2 Batch 제출 — 10개 · 상위500 claude-opus-4-8 / 나머지 claude-sonnet-4-6
+=== 공시 트리거 v2 생성 Fri Jul 10 13:09:26 UTC 2026 · 대상 232530,153890,112190,0010F0,233250,185190,092590,215570,332190 ===
+## 🤖 리포트 v2 Batch 제출 — 9개 · 상위500 claude-opus-4-8 / 나머지 claude-sonnet-4-6
 KRX 로그인 시도...
   로그인 ID: qjawnsdla
 KRX 로그인 완료.
-  로그인 시간: 2026-07-10 04:54:38
-  만료 시간: 2026-07-10 05:54:38
+  로그인 시간: 2026-07-10 13:09:30
+  만료 시간: 2026-07-10 14:09:30
 - 정량 수집 232530 이엠티...
 reprt_code='11011', fs_div='CFS' (사업보고서, 연결제무제표)'
 {'status': '013', 'message': '조회된 데이타가 없습니다.'}
@@ -131,27 +131,6 @@ reprt_code='11013', fs_div='CFS' (1분기보고서, 연결제무제표)'
   2025Q4: 매출 — 영업이익 — 지배순이익 —
   2026Q1: 매출 35억 영업이익 — 지배순이익 —
   PER None | EPS None | PBR None | BPS None | ROE None | 배당 0.0% | DPS 0.0
-- 정량 수집 049180 셀루메드...
-reprt_code='11011', fs_div='CFS' (사업보고서, 연결제무제표)'
-reprt_code='11011', fs_div='CFS' (사업보고서, 연결제무제표)'
-reprt_code='11011', fs_div='CFS' (사업보고서, 연결제무제표)'
-reprt_code='11011', fs_div='CFS' (사업보고서, 연결제무제표)'
-reprt_code='11013', fs_div='CFS' (1분기보고서, 연결제무제표)'
-reprt_code='11012', fs_div='CFS' (반기보고서, 연결제무제표)'
-reprt_code='11014', fs_div='CFS' (3분기보고서, 연결제무제표)'
-reprt_code='11013', fs_div='CFS' (1분기보고서, 연결제무제표)'
-  ❌ 셀루메드 중대오류 차단 → 해당 지표 숨김: EPS -29↔ref -41.0 / BPS 448↔ref 287.0
-### 셀루메드
-  2025: 매출 1,402억 영업이익 -51억 지배순이익 -22억 OPM -3.7% ROE -26.1% 부채비율 625.9%
-  2024: 매출 1,291억 영업이익 -68억 지배순이익 -315억 OPM -5.3% ROE -359.4% 부채비율 675.0%
-  2023: 매출 956억 영업이익 -105억 지배순이익 -373억 OPM -10.9% ROE -166.1% 부채비율 188.8%
-  2022: 매출 1,221억 영업이익 -27억 지배순이익 -54억 OPM -2.2% ROE -10.0% 부채비율 69.2%
-  2025Q1: 매출 392억 영업이익 -16억 지배순이익 -14억
-  2025Q2: 매출 354억 영업이익 -43억 지배순이익 -26억
-  2025Q3: 매출 373억 영업이익 14억 지배순이익 80억
-  2025Q4: 매출 283억 영업이익 -6억 지배순이익 -61억
-  2026Q1: 매출 234억 영업이익 -16억 지배순이익 -17억
-  PER None | EPS None | PBR None | BPS None | ROE -13.7 | 배당 0.0% | DPS 0.0
 - 정량 수집 112190 KC산업...
 reprt_code='11011', fs_div='CFS' (사업보고서, 연결제무제표)'
 {'status': '013', 'message': '조회된 데이타가 없습니다.'}
@@ -425,72 +404,6 @@ reprt_code='11013', fs_div='OFS' (1분기보고서, 별도(개별)제무제표)'
   2025Q4: 매출 — 영업이익 — 지배순이익 —
   2026Q1: 매출 — 영업이익 — 지배순이익 —
   PER None | EPS None | PBR None | BPS None | ROE None | 배당 0.0% | DPS 0.0
-- 정량 수집 332190 오션스바이오...
-reprt_code='11011', fs_div='CFS' (사업보고서, 연결제무제표)'
-{'status': '013', 'message': '조회된 데이타가 없습니다.'}
-
-reprt_code='11011', fs_div='OFS' (사업보고서, 별도(개별)제무제표)'
-{'status': '013', 'message': '조회된 데이타가 없습니다.'}
-
-reprt_code='11011', fs_div='CFS' (사업보고서, 연결제무제표)'
-{'status': '013', 'message': '조회된 데이타가 없습니다.'}
-
-reprt_code='11011', fs_div='OFS' (사업보고서, 별도(개별)제무제표)'
-{'status': '013', 'message': '조회된 데이타가 없습니다.'}
-
-reprt_code='11011', fs_div='CFS' (사업보고서, 연결제무제표)'
-{'status': '013', 'message': '조회된 데이타가 없습니다.'}
-
-reprt_code='11011', fs_div='OFS' (사업보고서, 별도(개별)제무제표)'
-{'status': '013', 'message': '조회된 데이타가 없습니다.'}
-
-reprt_code='11011', fs_div='CFS' (사업보고서, 연결제무제표)'
-{'status': '013', 'message': '조회된 데이타가 없습니다.'}
-
-reprt_code='11011', fs_div='OFS' (사업보고서, 별도(개별)제무제표)'
-{'status': '013', 'message': '조회된 데이타가 없습니다.'}
-
-reprt_code='11013', fs_div='CFS' (1분기보고서, 연결제무제표)'
-{'status': '013', 'message': '조회된 데이타가 없습니다.'}
-
-reprt_code='11013', fs_div='OFS' (1분기보고서, 별도(개별)제무제표)'
-{'status': '013', 'message': '조회된 데이타가 없습니다.'}
-
-reprt_code='11012', fs_div='CFS' (반기보고서, 연결제무제표)'
-{'status': '013', 'message': '조회된 데이타가 없습니다.'}
-
-reprt_code='11012', fs_div='OFS' (반기보고서, 별도(개별)제무제표)'
-{'status': '013', 'message': '조회된 데이타가 없습니다.'}
-
-reprt_code='11014', fs_div='CFS' (3분기보고서, 연결제무제표)'
-{'status': '013', 'message': '조회된 데이타가 없습니다.'}
-
-reprt_code='11014', fs_div='OFS' (3분기보고서, 별도(개별)제무제표)'
-{'status': '013', 'message': '조회된 데이타가 없습니다.'}
-
-reprt_code='11013', fs_div='CFS' (1분기보고서, 연결제무제표)'
-{'status': '013', 'message': '조회된 데이타가 없습니다.'}
-
-reprt_code='11013', fs_div='OFS' (1분기보고서, 별도(개별)제무제표)'
-{'status': '013', 'message': '조회된 데이타가 없습니다.'}
-
-{'status': '013', 'message': '조회된 데이타가 없습니다.'}
-
-{'status': '013', 'message': '조회된 데이타가 없습니다.'}
-
-{'status': '013', 'message': '조회된 데이타가 없습니다.'}
-
-{'status': '013', 'message': '조회된 데이타가 없습니다.'}
-
-{'status': '013', 'message': '조회된 데이타가 없습니다.'}
-  ✅ 오션스바이오 검증 통과 PER None PBR None EPS None BPS None
-### 오션스바이오
-  2025Q1: 매출 — 영업이익 — 지배순이익 —
-  2025Q2: 매출 — 영업이익 — 지배순이익 —
-  2025Q3: 매출 — 영업이익 — 지배순이익 —
-  2025Q4: 매출 — 영업이익 — 지배순이익 —
-  2026Q1: 매출 — 영업이익 — 지배순이익 —
-  PER None | EPS None | PBR None | BPS None | ROE None | 배당 None% | DPS None
 - 정량 수집 215570 크로넥스...
 reprt_code='11011', fs_div='CFS' (사업보고서, 연결제무제표)'
 {'status': '013', 'message': '조회된 데이타가 없습니다.'}
@@ -557,6 +470,72 @@ reprt_code='11013', fs_div='OFS' (1분기보고서, 별도(개별)제무제표)'
   2025Q4: 매출 — 영업이익 — 지배순이익 —
   2026Q1: 매출 — 영업이익 — 지배순이익 —
   PER None | EPS None | PBR None | BPS None | ROE None | 배당 0.0% | DPS 0.0
+- 정량 수집 332190 오션스바이오...
+reprt_code='11011', fs_div='CFS' (사업보고서, 연결제무제표)'
+{'status': '013', 'message': '조회된 데이타가 없습니다.'}
+
+reprt_code='11011', fs_div='OFS' (사업보고서, 별도(개별)제무제표)'
+{'status': '013', 'message': '조회된 데이타가 없습니다.'}
+
+reprt_code='11011', fs_div='CFS' (사업보고서, 연결제무제표)'
+{'status': '013', 'message': '조회된 데이타가 없습니다.'}
+
+reprt_code='11011', fs_div='OFS' (사업보고서, 별도(개별)제무제표)'
+{'status': '013', 'message': '조회된 데이타가 없습니다.'}
+
+reprt_code='11011', fs_div='CFS' (사업보고서, 연결제무제표)'
+{'status': '013', 'message': '조회된 데이타가 없습니다.'}
+
+reprt_code='11011', fs_div='OFS' (사업보고서, 별도(개별)제무제표)'
+{'status': '013', 'message': '조회된 데이타가 없습니다.'}
+
+reprt_code='11011', fs_div='CFS' (사업보고서, 연결제무제표)'
+{'status': '013', 'message': '조회된 데이타가 없습니다.'}
+
+reprt_code='11011', fs_div='OFS' (사업보고서, 별도(개별)제무제표)'
+{'status': '013', 'message': '조회된 데이타가 없습니다.'}
+
+reprt_code='11013', fs_div='CFS' (1분기보고서, 연결제무제표)'
+{'status': '013', 'message': '조회된 데이타가 없습니다.'}
+
+reprt_code='11013', fs_div='OFS' (1분기보고서, 별도(개별)제무제표)'
+{'status': '013', 'message': '조회된 데이타가 없습니다.'}
+
+reprt_code='11012', fs_div='CFS' (반기보고서, 연결제무제표)'
+{'status': '013', 'message': '조회된 데이타가 없습니다.'}
+
+reprt_code='11012', fs_div='OFS' (반기보고서, 별도(개별)제무제표)'
+{'status': '013', 'message': '조회된 데이타가 없습니다.'}
+
+reprt_code='11014', fs_div='CFS' (3분기보고서, 연결제무제표)'
+{'status': '013', 'message': '조회된 데이타가 없습니다.'}
+
+reprt_code='11014', fs_div='OFS' (3분기보고서, 별도(개별)제무제표)'
+{'status': '013', 'message': '조회된 데이타가 없습니다.'}
+
+reprt_code='11013', fs_div='CFS' (1분기보고서, 연결제무제표)'
+{'status': '013', 'message': '조회된 데이타가 없습니다.'}
+
+reprt_code='11013', fs_div='OFS' (1분기보고서, 별도(개별)제무제표)'
+{'status': '013', 'message': '조회된 데이타가 없습니다.'}
+
+{'status': '013', 'message': '조회된 데이타가 없습니다.'}
+
+{'status': '013', 'message': '조회된 데이타가 없습니다.'}
+
+{'status': '013', 'message': '조회된 데이타가 없습니다.'}
+
+{'status': '013', 'message': '조회된 데이타가 없습니다.'}
+
+{'status': '013', 'message': '조회된 데이타가 없습니다.'}
+  ✅ 오션스바이오 검증 통과 PER None PBR None EPS None BPS None
+### 오션스바이오
+  2025Q1: 매출 — 영업이익 — 지배순이익 —
+  2025Q2: 매출 — 영업이익 — 지배순이익 —
+  2025Q3: 매출 — 영업이익 — 지배순이익 —
+  2025Q4: 매출 — 영업이익 — 지배순이익 —
+  2026Q1: 매출 — 영업이익 — 지배순이익 —
+  PER None | EPS None | PBR None | BPS None | ROE None | 배당 None% | DPS None
   · ⚠️ 232530 정량 데이터 없음 — 제외
   · ⚠️ 153890 정량 데이터 없음 — 제외
   · ⚠️ 112190 정량 데이터 없음 — 제외
@@ -564,27 +543,6 @@ reprt_code='11013', fs_div='OFS' (1분기보고서, 별도(개별)제무제표)'
   · ⚠️ 233250 정량 데이터 없음 — 제외
   · ⚠️ 185190 정량 데이터 없음 — 제외
   · ⚠️ 092590 정량 데이터 없음 — 제외
-  · ⚠️ 332190 정량 데이터 없음 — 제외
   · ⚠️ 215570 정량 데이터 없음 — 제외
-- 모델 배분: claude-opus-4-8 0개 · claude-sonnet-4-6 1개
-- ✅ 배치 제출: msgbatch_01FUqUBond7HWinTbiSCeHfj (1건)
-  · 상태 in_progress · 처리 1/성공 0/오류 0
-  · 상태 in_progress · 처리 1/성공 0/오류 0
-  · 상태 in_progress · 처리 1/성공 0/오류 0
-  · 상태 in_progress · 처리 1/성공 0/오류 0
-  · 상태 in_progress · 처리 1/성공 0/오류 0
-  · 상태 in_progress · 처리 1/성공 0/오류 0
-  · 상태 in_progress · 처리 1/성공 0/오류 0
-  · 상태 in_progress · 처리 1/성공 0/오류 0
-  · 상태 in_progress · 처리 1/성공 0/오류 0
-  · 상태 in_progress · 처리 1/성공 0/오류 0
-  · 상태 in_progress · 처리 1/성공 0/오류 0
-  · 상태 in_progress · 처리 1/성공 0/오류 0
-  · 상태 in_progress · 처리 1/성공 0/오류 0
-  · 상태 in_progress · 처리 1/성공 0/오류 0
-  · 상태 in_progress · 처리 1/성공 0/오류 0
-  · 상태 in_progress · 처리 1/성공 0/오류 0
-  · 상태 in_progress · 처리 1/성공 0/오류 0
-  · 상태 ended · 처리 0/성공 1/오류 0
-
-✅ v2 회수 완료 · 성공 1/실패 0 → data/reports_v2/ (2563개)
+  · ⚠️ 332190 정량 데이터 없음 — 제외
+❌ 제출할 요청이 없습니다.
