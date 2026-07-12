@@ -64,8 +64,12 @@ def set_checkpoint(ts):
 
 
 # ---- 서술(narrative) 캐시: 종목_언어 분리, 생성일 포함 ----
+# CACHE_VER: 문체·프롬프트가 바뀌면 버전을 올려 기존 캐시를 통째로 무효화한다.
+_CACHE_VER = os.environ.get("CACHE_VER", "v2")
+
+
 def get_narrative(ticker, lang):
-    v = get(f"cache:{ticker}:{lang}")
+    v = get(f"cache:{_CACHE_VER}:{ticker}:{lang}")
     if not v:
         return None
     try:
@@ -75,7 +79,7 @@ def get_narrative(ticker, lang):
 
 
 def set_narrative(ticker, lang, data):
-    set(f"cache:{ticker}:{lang}", json.dumps(data, ensure_ascii=False))
+    set(f"cache:{_CACHE_VER}:{ticker}:{lang}", json.dumps(data, ensure_ascii=False))
 
 
 # ---- 처리 대기열(멘션 잡) — 감지와 생성을 분리해 함수 타임아웃을 피한다 ----

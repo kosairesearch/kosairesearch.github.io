@@ -19,12 +19,14 @@ _RULES_KO = (
     "- 비유·수사 금지. 어려운 용어는 괄호 안에 한 줄로 풀어라. 예: 파운드리(반도체 위탁생산).\n"
     "- 사건성 내용은 반드시 시점을 앵커링하라. 예: '올해 1월', '2024년 하반기'. 모르면 쓰지 마라.\n"
     "- 최신 사실은 web search로 확인하라. 추측·불확실한 수치는 쓰지 마라(숫자 지표는 코드가 따로 채운다).\n"
-    "- 규모가 작은 종목은 억지로 늘리지 말고 아는 만큼만 간결하게.\n"
+    "- 문체는 존댓말('~입니다/~합니다')로 쓴다. 반말('~이다/~한다') 금지.\n"
+    "- 확실히 아는 사실이 충분하면 자세히 써라(섹션 합계 600~1,000자 목표). 확실한 사실이 "
+    "부족한 소형 종목은 억지로 늘리지 말고 아는 만큼만.\n"
     "각 섹션을 JSON으로만 반환:\n"
     '{"definition":"이 회사가 무엇을 하는 회사인지 2~3문장. 핵심 정의가 맨 앞에 오게.",'
-    '"business":"무엇으로 돈을 버는지(사업/수익구조) 2~4문장.",'
-    '"recent":"최근 상황·핵심 사건 2~4문장(시점 앵커링 필수). 특이사항 없으면 빈 문자열.",'
-    '"risks":"참고할 리스크 1~3문장(중립적 사실). 없으면 빈 문자열."}'
+    '"business":"무엇으로 돈을 버는지 3~5문장. 주력 제품·서비스명, 주요 고객군, 수익원 구성을 구체적으로.",'
+    '"recent":"최근 상황·핵심 사건 2~4문장(시점 앵커링 필수). 제공된 공시 목록의 주요 건을 풀어 설명. 특이사항 없으면 빈 문자열.",'
+    '"risks":"참고할 리스크 2~3문장(중립적 사실). 없으면 빈 문자열."}'
 )
 _RULES_EN = (
     "You are a research bot explaining Korean stocks. Explain the company below in English, "
@@ -34,10 +36,11 @@ _RULES_EN = (
     "- Anchor any event in time, e.g. 'in January this year', 'in H2 2024'. If unknown, omit it.\n"
     "- Verify recent facts with web search. No speculation or uncertain figures (numeric metrics are "
     "filled separately by code).\n"
-    "- For small companies, keep it short; don't pad.\n"
+    "- If solid facts are plentiful, be detailed (600-1,000 chars across sections); for small "
+    "companies with little solid information, keep it short — don't pad.\n"
     "Return JSON only:\n"
     '{"definition":"2-3 sentences on what the company does; lead with the core definition.",'
-    '"business":"2-4 sentences on how it makes money.",'
+    '"business":"3-5 sentences on how it makes money — flagship products/services, key customers, revenue mix.",'
     '"recent":"2-4 sentences on recent situation/key events (must be time-anchored). Empty string if none.",'
     '"risks":"1-3 sentences of neutral risk factors. Empty string if none."}'
 )
