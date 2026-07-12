@@ -136,8 +136,11 @@ def _oauth_header(method, url, oauth):
 
 
 def post_reply(text, in_reply_to_id):
-    """답글 게시. 반환: (ok, detail)."""
+    """답글 게시. 반환: (ok, detail).
+    OAuth1.0a로 먼저 시도하고, 이 티어가 1.0a를 거부하면(Unsupported Authentication)
+    OAuth 2.0 사용자 토큰(lib/oauth2, /api/oauth2 승인으로 발급)으로 자동 폴백."""
     url = "https://api.x.com/2/tweets"
+    body = {"text": text, "reply": {"in_reply_to_tweet_id": str(in_reply_to_id)}}
     oauth = {
         "oauth_consumer_key": os.environ["X_API_KEY"],
         "oauth_token": os.environ["X_ACCESS_TOKEN"],
@@ -147,7 +150,6 @@ def post_reply(text, in_reply_to_id):
         "oauth_version": "1.0",
     }
     auth = _oauth_header("POST", url, oauth)
-    body = {"text": text, "reply": {"in_reply_to_tweet_id": str(in_reply_to_id)}}
     try:
         r = requests.post(url, json=body,
                           headers={"Authorization": auth, "Content-Type": "application/json"},
@@ -156,4 +158,23 @@ def post_reply(text, in_reply_to_id):
         return False, f"예외 {e}"
     if r.status_code in (200, 201):
         return True, r.json()
+    if r.status_code in (401, 403) and "Unsupported Authentication" in r.text:
+        try:
+            from lib import oauth2
+            tok = oauth2.user_token()
+        except Exception:
+            tok = None
+        if tok:
+            try:
+                r2 = requests.post(url, json=body,
+                                   headers={"Authorization": f"Bearer {tok}",
+                                            "Content-Type": "application/json"},
+                                   timeout=20)
+            except Exception as e:
+                return False, f"OAuth2 폴백 예외 {e}"
+            if r2.status_code in (200, 201):
+                return True, r2.json()
+            return False, f"OAuth2 폴백 HTTP {r2.status_code} {r2.text[:300]}"
+        return False, (f"HTTP {r.status_code} 1.0a 거부 — OAuth2 토큰 없음. "
+                       f"/api/oauth2?key=<POLL_SECRET> 로 승인 필요")
     return False, f"HTTP {r.status_code} {r.text[:300]}"
