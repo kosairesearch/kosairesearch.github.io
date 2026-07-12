@@ -3,6 +3,10 @@
 // ② POST: 멘션 이벤트 → 중복체크(SET NX) → Redis 큐 적재 → /api/work 깨우기 → 즉시 200
 // 무거운 생성·게시는 전부 work(Python, maxDuration 300s)가 한다. X는 수 초 안에
 // 응답이 없으면 웹훅을 실패 처리하므로 여기서는 절대 기다리지 않는다.
+//
+// 이벤트 형식은 구형(AAA: tweet_create_events)과 신형(v2: data/includes) 둘 다 받는다.
+// 디버깅용으로 마지막 수신 payload를 Redis(debug:last_event)에 24시간 보관 —
+// 파싱이 안 맞으면 /api/health 로 확인해 맞춘다.
 const crypto = require("crypto");
 const { waitUntil } = require("@vercel/functions");
 
@@ -21,18 +25,56 @@ async function redis(...args) {
   return (await r.json()).result;
 }
 
-// 이벤트 payload에서 "봇을 멘션한 남의 원본 트윗"만 추린다.
+// 다양한 필드명에서 첫 값을 꺼낸다(형식 방어).
+const pick = (o, keys) => {
+  for (const k of keys) if (o && o[k] != null && o[k] !== "") return o[k];
+  return null;
+};
+
+// author_id → username (v2 includes.users에서)
+function userById(body, id) {
+  const users = (body.includes && body.includes.users) || body.users || [];
+  const u = users.find((x) => String(x.id) === String(id));
+  return u ? u.username || u.screen_name : null;
+}
+
+function candidateAuthor(t, body) {
+  if (t.user) return t.user.screen_name || t.user.username;
+  if (t.author) return t.author.username || t.author.screen_name || t.author.userName;
+  if (t.author_id) return userById(body, t.author_id);
+  return null;
+}
+
+// 이벤트 payload에서 "봇을 멘션한 남의 트윗"들을 추린다 — 구형·신형 모두.
 function extractMentions(body) {
   const out = [];
-  for (const t of body.tweet_create_events || []) {
-    const author = ((t.user && t.user.screen_name) || "").toLowerCase();
-    if (!t.id_str || author === BOT) continue; // 내 답글이 다시 이벤트로 오는 것 무시
-    if (t.retweeted_status) continue;
+  const seen = new Set();
+
+  const consider = (t, requireBotMention) => {
+    if (!t || typeof t !== "object") return;
+    const id = pick(t, ["id_str", "id"]);
     const text =
-      t.truncated && t.extended_tweet ? t.extended_tweet.full_text : t.text || "";
-    if (!text.toLowerCase().includes("@" + BOT)) continue;
-    out.push({ id: t.id_str, text, attempts: 0 });
-  }
+      t.truncated && t.extended_tweet
+        ? t.extended_tweet.full_text
+        : pick(t, ["text", "full_text"]);
+    if (!id || !text || seen.has(String(id))) return;
+    if (t.retweeted_status) return;
+    const author = (candidateAuthor(t, body) || "").toLowerCase();
+    if (author === BOT) return; // 내 답글이 다시 이벤트로 오는 것 무시
+    if (requireBotMention && !text.toLowerCase().includes("@" + BOT)) return;
+    seen.add(String(id));
+    out.push({ id: String(id), text, attempts: 0 });
+  };
+
+  // 구형(AAA) — 계정의 모든 트윗이 오므로 @봇 포함 여부를 확인
+  for (const t of body.tweet_create_events || []) consider(t, true);
+  // 신형(v2) — 구독 자체가 'Post Mention Create'라 이미 멘션만 옴
+  const d = body.data;
+  if (Array.isArray(d)) for (const t of d) consider(t, false);
+  else if (d) consider(d, false);
+  for (const t of body.posts || body.tweets || []) consider(t, false);
+  if (body.post) consider(body.post, false);
+  if (body.tweet) consider(body.tweet, false);
   return out;
 }
 
@@ -77,17 +119,24 @@ module.exports = async (req, res) => {
     if (sig !== expected) return res.status(401).end();
   }
 
+  const body = req.body || {};
+  const mentions = extractMentions(body);
   let queued = 0;
-  for (const m of extractMentions(req.body || {})) {
-    try {
+  try {
+    // 디버깅용 — 마지막 수신 이벤트 24시간 보관(민감정보 아님, 공개 트윗)
+    await redis("SET", "debug:last_event_at", new Date().toISOString(), "EX", 86400);
+    await redis("SET", "debug:last_event",
+      JSON.stringify(body).slice(0, 4000), "EX", 86400);
+    await redis("SET", "debug:last_parsed", String(mentions.length), "EX", 86400);
+    for (const m of mentions) {
       const fresh = await redis("SET", `proc:${m.id}`, "1", "NX", "EX", PROC_TTL);
       if (fresh !== "OK") continue; // 이미 처리/예약된 멘션
       await redis("RPUSH", "jobs", JSON.stringify(m));
       queued++;
-    } catch (e) {
-      console.error("redis 오류:", e);
     }
+  } catch (e) {
+    console.error("redis 오류:", e);
   }
   if (queued) waitUntil(kickWork(req.headers.host));
-  return res.status(200).json({ ok: true, queued });
+  return res.status(200).json({ ok: true, parsed: mentions.length, queued });
 };

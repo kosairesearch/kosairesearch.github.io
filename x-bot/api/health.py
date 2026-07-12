@@ -15,6 +15,10 @@ class handler(BaseHTTPRequestHandler):
             from lib import store
             info["pending"] = store.jobs_len()
             info["checkpoint"] = store.get_checkpoint()
+            # 웹훅 디버깅 — 마지막 수신 이벤트 시각/파싱 결과/원문(4KB 한도)
+            info["last_event_at"] = store.get("debug:last_event_at")
+            info["last_event_parsed"] = store.get("debug:last_parsed")
+            info["last_event"] = store.get("debug:last_event")
         except Exception as e:
             info["store_error"] = str(e)
         for k in ("APIFY_TOKEN", "ANTHROPIC_API_KEY", "X_API_KEY", "X_ACCESS_TOKEN",
