@@ -260,6 +260,9 @@ def draft(brief, snap):
         "judge. Numbers must come only from the snapshot/notes; never invent figures. "
         "TICKER: the FIRST time you mention the company name, put its 6-digit ticker (from the "
         "snapshot) in parentheses right after it, e.g. 'ISC (095340)'. Only on that first mention. "
+        "TERMINOLOGY (this is for a global English audience, so use the terms they actually use): "
+        "write 'P/E' NOT 'PER', 'P/B' NOT 'PBR', and 'book value per share' NOT 'BPS'. Never use the "
+        "Korean/Japanese-style abbreviations PER/PBR/BPS. EPS, ROE, ROIC are fine as-is. "
         "SOUND HUMAN, NOT AI (important): write like a sharp human markets person, not a language "
         "model. Avoid AI tells completely: no 'moreover', 'furthermore', 'notably', 'it's worth "
         "noting', 'in conclusion', 'in summary', 'overall', 'that said' as a crutch, and no tidy "
@@ -351,6 +354,18 @@ _ABBRS = ["Co.", "Ltd.", "Inc.", "Corp.", "Pharm.", "Ph.", "Dr.", "Mr.", "Ms.", 
           "vs.", "U.S.", "e.g.", "i.e.", "No.", "St.", "Sr.", "Jr.", "etc.", "approx."]
 
 
+def normalize_terms(text):
+    """영어 글은 해외 독자용 — 한국/일본식 약어를 영어권 표준으로 강제 치환.
+    프롬프트가 어겨도 코드가 확실히 바꾼다(포맷 강제와 동일 원칙).
+    · PER → P/E, PBR → P/B (대문자 토큰만; 영어 단어 'per'는 건드리지 않음)
+    · BPS → book value per share (대문자 토큰만; 소수점/'50 bps'(basis points)는 소문자라 제외)"""
+    t = text or ""
+    t = re.sub(r"\bPER\b", "P/E", t)
+    t = re.sub(r"\bPBR\b", "P/B", t)
+    t = re.sub(r"\bBPS\b", "book value per share", t)
+    return t
+
+
 def _sentences(block):
     """한 블록 텍스트를 문장 리스트로. 약어·소수점·통화에서는 안 끊는다."""
     t = re.sub(r"\s*\n\s*", " ", (block or "")).strip()
@@ -402,7 +417,7 @@ def main():
 
     tk = stock["ticker"]
     # 상단 헤더 없이 영어 글만 단독 발송. 문단은 코드로 강제 정리(문장당 한 줄 + 빈 줄).
-    msg_en = format_paragraphs(d["en"])
+    msg_en = format_paragraphs(normalize_terms(d["en"]))
     msg_ko = f"— KR (검수용) —\n{d.get('ko','')}"
     if tg_send(msg_en) and tg_send(msg_ko):
         st["last_date"] = today
