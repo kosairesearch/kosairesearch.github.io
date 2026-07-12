@@ -29,11 +29,19 @@ def _usd(n):
     return f"${n:,.0f}"
 
 
+def _date(s):
+    """'20260710' → '2026-07-10' (이미 하이픈 있으면 그대로)."""
+    s = str(s or "")
+    return f"{s[:4]}-{s[4:6]}-{s[6:]}" if s.isdigit() and len(s) == 8 else s
+
+
 def _mcap_ko(trill):
     if trill is None:
         return None
-    if trill >= 1:
+    if trill >= 10:
         return f"{int(round(trill)):,}조원"
+    if trill >= 1:
+        return f"{trill:.1f}조원"
     return f"{int(round(trill*10000)):,}억원"
 
 
@@ -49,7 +57,7 @@ def _metrics_block(m, lang, fx):
     price = m.get("price")
     chg = m.get("change")
     if lang == "ko":
-        lines.append("■ 핵심 지표" + (f" ({m['data_date']} 기준)" if m.get("data_date") else ""))
+        lines.append("■ 핵심 지표" + (f" ({_date(m['data_date'])} 기준)" if m.get("data_date") else ""))
         if price:
             c = f" ({'+' if (chg or 0) >= 0 else ''}{chg}%)" if chg is not None else ""
             lines.append(f"현재가 {_fmt_won(price)}{c}")
@@ -68,7 +76,7 @@ def _metrics_block(m, lang, fx):
         if m.get("roe") is not None:
             lines.append(f"ROE {m['roe']}%")
     else:
-        lines.append("■ Key metrics" + (f" (as of {m['data_date']})" if m.get("data_date") else ""))
+        lines.append("■ Key metrics" + (f" (as of {_date(m['data_date'])})" if m.get("data_date") else ""))
         if price:
             c = f" ({'+' if (chg or 0) >= 0 else ''}{chg}%)" if chg is not None else ""
             lines.append(f"Price {_fmt_krw(price)} (~{_usd(price/fx)}){c}")

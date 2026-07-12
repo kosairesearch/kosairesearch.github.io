@@ -1,8 +1,11 @@
-"""실시간 지표 — kosai.kr가 매일 갱신하는 공개 데이터에서 채운다.
+"""실시간 지표 — 기본은 kosai.kr 일일 데이터, USE_PYKRX=1이면 pykrx 우선.
 
-가격·시총·상장주식수 = stocks.js, eps·bps·dps·roe·매출성장 = valuation.js.
+kosai 경로: 가격·시총·상장주식수 = stocks.js, eps·bps·dps·roe·매출성장 = valuation.js.
 PER=가격/eps, PBR=가격/bps, 배당수익률=dps/가격 을 코드로 계산(숫자는 모델이 안 쓴다).
-env: DATA_BASE(기본 https://kosai.kr/data)
+pykrx 경로: KRX에서 직접 조회(최근 영업일 종가·시총·PER·PBR·배당). pandas 번들이
+커서 Vercel 배포가 무거워지므로 옵션(requirements.txt에 pykrx 추가 + USE_PYKRX=1).
+pykrx 실패 시 자동으로 kosai 경로 폴백 — 어느 쪽이든 KRX 공식 일일 수치다.
+env: DATA_BASE(기본 https://kosai.kr/data), USE_PYKRX(기본 0)
 """
 import json
 import os
@@ -34,8 +37,48 @@ def _load():
     return stocks, val
 
 
+def _metrics_pykrx(ticker):
+    """pykrx로 최근 영업일 지표 조회. 미설치/실패 시 None."""
+    try:
+        from pykrx import stock as krx
+        day = krx.get_nearest_business_day_in_a_week()
+        cap = krx.get_market_cap_by_date(day, day, ticker)
+        if not len(cap):
+            return None
+        out = {"ticker": ticker,
+               "price": int(cap["종가"].iloc[-1]),
+               "mcap_trillion": round(int(cap["시가총액"].iloc[-1]) / 1e12, 4),
+               "data_date": f"{day[:4]}-{day[4:6]}-{day[6:]}"}
+        f = krx.get_market_fundamental(day, day, ticker)
+        if len(f):
+            row = f.iloc[-1]
+            if float(row["PER"]):
+                out["per"] = round(float(row["PER"]), 1)
+            if float(row["PBR"]):
+                out["pbr"] = round(float(row["PBR"]), 2)
+            if float(row["DIV"]):
+                out["div_yield"] = round(float(row["DIV"]), 2)
+        return out
+    except Exception:
+        return None
+
+
 def get_metrics(ticker):
     """종목 지표 dict. 데이터 없으면 None."""
+    if os.environ.get("USE_PYKRX") == "1":
+        m = _metrics_pykrx(ticker)
+        if m:
+            # 이름·섹터 등 부가정보는 kosai 데이터에서 보충
+            try:
+                stocks, _ = _load()
+                s = stocks.get(ticker) or {}
+                m.setdefault("name", s.get("name"))
+                m.setdefault("name_en", s.get("name_en"))
+                m.setdefault("market", s.get("market"))
+                m.setdefault("sector", s.get("sector"))
+            except Exception:
+                pass
+            return m
     stocks, val = _load()
     s = stocks.get(ticker)
     if not s:
