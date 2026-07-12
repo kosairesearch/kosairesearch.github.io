@@ -49,20 +49,29 @@ def generate(stock, disclosures, lang):
     client = anthropic.Anthropic(api_key=os.environ["ANTHROPIC_API_KEY"])
     name = stock.get("name") if lang == "ko" else (stock.get("name_en") or stock.get("name"))
     rules = _RULES_KO if lang == "ko" else _RULES_EN
+    if WEB_SEARCH_MAX <= 0:   # 웹서치 꺼짐 — 공시·확실한 지식만, 불확실하면 생략
+        rules += ("\n(웹검색 없음: 제공된 공시 목록과 확실히 아는 사실만 사용하고, "
+                  "불확실한 내용은 쓰지 말고 생략하라.)" if lang == "ko" else
+                  "\n(No web search available: use only the provided filings and facts "
+                  "you are certain of; omit anything uncertain.)")
     disc = "\n".join(f"- {d['date']}: {d['title']}" for d in (disclosures or [])[:8])
     ctx = (
         f"회사: {stock.get('name')} ({stock.get('name_en') or ''}) / 코드 {stock.get('ticker')}\n"
         f"시장: {stock.get('market')} / 섹터: {stock.get('sector')}\n"
         + (f"최근 DART 공시(근거·시점앵커용):\n{disc}\n" if disc else "")
     )
-    msg = client.messages.create(
+    kwargs = dict(
         model=MODEL,
         max_tokens=3000,
         system=rules,
-        tools=[{"type": "web_search_20250305", "name": "web_search", "max_uses": WEB_SEARCH_MAX}],
         messages=[{"role": "user", "content":
                    ctx + f"\n위 회사를 설명해줘. ({'한국어' if lang == 'ko' else 'English'})"}],
     )
+    # WEB_SEARCH_MAX=0 이면 웹서치 완전 비활성(비용 절감 모드) — 최근 사건 근거는 DART 공시만
+    if WEB_SEARCH_MAX > 0:
+        kwargs["tools"] = [{"type": "web_search_20250305", "name": "web_search",
+                            "max_uses": WEB_SEARCH_MAX}]
+    msg = client.messages.create(**kwargs)
     txt = "".join(b.text for b in msg.content if getattr(b, "type", "") == "text")
     m = re.search(r"\{.*\}", txt, re.S)
     if not m:
