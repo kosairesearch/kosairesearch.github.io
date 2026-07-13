@@ -1,6 +1,6 @@
 // KOS ai — 자동 생성 데이터 파일. 직접 수정하지 마세요.
 window.KOS_LIVE_DATA = {
-  "lastUpdated": "2026-07-14 02:26",
+  "lastUpdated": "2026-07-14 05:04",
   "dataDate": "20260713",
   "stocks": [
     {
@@ -17214,7 +17214,7 @@ window.KOS_LIVE_DATA = {
     {
       "ticker": "387690",
       "name": "레메디",
-      "name_en": "",
+      "name_en": "REMEDI Inc.",
       "market": "코스닥",
       "sector": "바이오·제약",
       "price": 22000,
@@ -17223,6 +17223,7 @@ window.KOS_LIVE_DATA = {
       "trading_value": 762021246000,
       "mcap": 0.1678,
       "shares": 7625791,
+      "induty_code": "27111",
       "categories": [
         "바이오·제약"
       ],
