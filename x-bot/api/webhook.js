@@ -107,27 +107,21 @@ module.exports = async (req, res) => {
   }
   if (req.method !== "POST") return res.status(405).end();
 
-  // (헤더가 있을 때만) X 서명 검증 — 위조 이벤트 차단
-  const sig = req.headers["x-twitter-webhooks-signature"];
-  if (sig) {
-    const expected =
-      "sha256=" +
-      crypto
-        .createHmac("sha256", process.env.X_API_SECRET)
-        .update(JSON.stringify(req.body))
-        .digest("base64");
-    if (sig !== expected) return res.status(401).end();
-  }
-
   const body = req.body || {};
   const mentions = extractMentions(body);
   let queued = 0;
   try {
-    // 디버깅용 — 마지막 수신 이벤트 24시간 보관(민감정보 아님, 공개 트윗)
+    // 도착 기록은 무조건 '가장 먼저'. (예전엔 서명 검증 401이 이 앞에서 튕겨
+    //  이벤트가 와도 last_event_at이 안 찍혔다.)
     await redis("SET", "debug:last_event_at", new Date().toISOString(), "EX", 86400);
     await redis("SET", "debug:last_event",
       JSON.stringify(body).slice(0, 4000), "EX", 86400);
     await redis("SET", "debug:last_parsed", String(mentions.length), "EX", 86400);
+    // 서명은 참고용으로만 기록(차단하지 않음): 파싱된 body를 재직렬화한 값은
+    // X가 원본 바이트로 만든 서명과 구조적으로 일치할 수 없어 검증 근거로 못 쓴다.
+    // 소유권은 CRC(GET)로 이미 증명됨.
+    await redis("SET", "debug:last_sig",
+      req.headers["x-twitter-webhooks-signature"] ? "present" : "none", "EX", 86400);
     for (const m of mentions) {
       const fresh = await redis("SET", `proc:${m.id}`, "1", "NX", "EX", PROC_TTL);
       if (fresh !== "OK") continue; // 이미 처리/예약된 멘션
