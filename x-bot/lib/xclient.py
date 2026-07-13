@@ -120,6 +120,68 @@ def scrape_mentions(limit=20, poll_sec=45):
     return out
 
 
+# ---------------- 공식 멘션 조회 (웹훅 배달이 안 될 때의 안정적 대체) ----------------
+def _oauth1_get(url):
+    """OAuth1.0a 사용자 컨텍스트 GET."""
+    oauth = {
+        "oauth_consumer_key": os.environ["X_API_KEY"],
+        "oauth_token": os.environ["X_ACCESS_TOKEN"],
+        "oauth_signature_method": "HMAC-SHA1",
+        "oauth_timestamp": str(int(time.time())),
+        "oauth_nonce": uuid.uuid4().hex,
+        "oauth_version": "1.0",
+    }
+    return requests.get(url, headers={"Authorization": _oauth_header("GET", url, oauth)},
+                        timeout=20)
+
+
+def bot_user_id(store=None):
+    """봇 계정 숫자 ID. env(X_BOT_ID) → Redis 캐시 → GET /2/users/me 순."""
+    envid = os.environ.get("X_BOT_ID", "").strip()
+    if envid:
+        return envid
+    if store is not None:
+        cached = store.get("bot:id")
+        if cached:
+            return cached
+    try:
+        r = _oauth1_get("https://api.x.com/2/users/me")
+        uid = (r.json().get("data") or {}).get("id") if r.ok else None
+    except Exception:
+        uid = None
+    if uid and store is not None:
+        store.set("bot:id", uid)
+    return uid
+
+
+def mentions_x(since_id=None, store=None, max_results=25):
+    """GET /2/users/:id/mentions — @봇 멘션을 공식 API로 조회.
+    since_id 이후의 새 멘션만 오래된→최신 순으로. 반환: [{id, text, author_id, ts}]."""
+    uid = bot_user_id(store)
+    if not uid:
+        return []
+    url = (f"https://api.x.com/2/users/{uid}/mentions"
+           f"?max_results={max_results}&tweet.fields=created_at,author_id")
+    if since_id:
+        url += f"&since_id={since_id}"
+    try:
+        r = _oauth1_get(url)
+        if not r.ok:
+            return []
+        data = r.json().get("data") or []
+    except Exception:
+        return []
+    out = []
+    for t in data:
+        if str(t.get("author_id")) == str(uid):           # 내 글 제외
+            continue
+        out.append({"id": str(t["id"]), "text": t.get("text", ""),
+                    "author_id": str(t.get("author_id") or ""),
+                    "ts": _to_epoch(t.get("created_at"))})
+    out.sort(key=lambda x: int(x["id"]))                  # id 오름차순 = 오래된→최신
+    return out
+
+
 # ---------------- X API v2 답글 게시 (OAuth1.0a) ----------------
 def _oauth_header(method, url, oauth):
     params = {k: v for k, v in oauth.items()}
