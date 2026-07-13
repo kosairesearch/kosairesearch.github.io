@@ -1,12 +1,16 @@
-"""GET /api/subscribe?key=<POLL_SECRET> — 신형 구독 API 경로 진단 + 구독 생성 시도.
+"""GET /api/subscribe?key=<POLL_SECRET> — X Activity API 구독 생성 (신형 규격).
 
-/api/oauth2 승인으로 저장된 OAuth 2.0 사용자 토큰을 사용해, 새 콘솔이 쓰는
-구독 엔드포인트 후보들을 차례로 호출한다. X의 에러 응답(필수 필드 안내 등)을
-그대로 보여줘서 올바른 규격을 역추적할 수 있게 한다. 2xx가 하나라도 나오면 성공.
+확인된 규격: POST /2/activity/subscriptions
+  body {"event_type": "...", "filter": {"user_id": "<숫자ID>"}, "webhook_id": "...", "tag": "..."}
+  인증: OAuth 1.0a 사용자 컨텍스트 (OAuth 2.0 사용자 토큰은 알려진 403 버그 — 폴백으로만 시도)
+멘션 이벤트 타입 문자열은 문서에 없어 후보를 차례로 시도하고,
+X 에러 응답(유효값 안내)을 그대로 노출해 확정한다.
 """
 import json
 import os
 import sys
+import time
+import uuid
 
 sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 
@@ -16,63 +20,85 @@ from urllib.parse import urlparse, parse_qs
 import requests
 
 from lib import oauth2
+from lib.xclient import _oauth_header
 
 API = "https://api.x.com/2"
 
+EVENT_CANDIDATES = ["post.mention.create", "post.mention_create",
+                    "mention.create", "post.mention"]
 
-def _req(method, url, bearer, body=None):
-    headers = {"Authorization": f"Bearer {bearer}"}
+
+def _oauth1(method, url, body=None):
+    oauth = {
+        "oauth_consumer_key": os.environ["X_API_KEY"],
+        "oauth_token": os.environ["X_ACCESS_TOKEN"],
+        "oauth_signature_method": "HMAC-SHA1",
+        "oauth_timestamp": str(int(time.time())),
+        "oauth_nonce": uuid.uuid4().hex,
+        "oauth_version": "1.0",
+    }
+    headers = {"Authorization": _oauth_header(method, url, oauth)}
     if body is not None:
         headers["Content-Type"] = "application/json"
-    r = requests.request(method, url, json=body, headers=headers, timeout=20)
+    return requests.request(method, url, json=body, headers=headers, timeout=20)
+
+
+def _rec(label, r, body=None):
     try:
         resp = r.json()
     except ValueError:
         resp = r.text[:400]
-    return {"method": method, "url": url.replace(API, ""), "body": body,
-            "http": r.status_code, "resp": resp}
+    return {"step": label, "body": body, "http": r.status_code, "resp": resp}
 
 
 def run():
     steps = []
-    # 앱 전용 토큰 — 웹훅 id 조회용
-    r = requests.post("https://api.x.com/oauth2/token",
-                      auth=(os.environ["X_API_KEY"], os.environ["X_API_SECRET"]),
-                      data={"grant_type": "client_credentials"}, timeout=15)
-    app_bearer = r.json().get("access_token") if r.ok else None
-    hook_id = os.environ.get("X_WEBHOOK_ID", "")
-    if app_bearer:
-        s = _req("GET", f"{API}/webhooks", app_bearer)
-        steps.append(s)
-        for h in ((s["resp"] or {}).get("data") or []) if isinstance(s["resp"], dict) else []:
-            if "/api/webhook" in (h.get("url") or ""):
-                hook_id = h.get("id")
+    # ① 봇 계정 숫자 ID (filter.user_id 용)
+    r = _oauth1("GET", f"{API}/users/me")
+    steps.append(_rec("users_me(oauth1)", r))
+    user_id = None
+    if r.ok:
+        user_id = (r.json().get("data") or {}).get("id")
+    if not user_id:
+        tok = oauth2.user_token()
+        if tok:
+            r = requests.get(f"{API}/users/me",
+                             headers={"Authorization": f"Bearer {tok}"}, timeout=15)
+            steps.append(_rec("users_me(oauth2)", r))
+            if r.ok:
+                user_id = (r.json().get("data") or {}).get("id")
+    if not user_id:
+        return {"ok": False, "reason": "봇 계정 user_id 조회 실패", "steps": steps}
 
-    user_tok = oauth2.user_token()
-    if not user_tok:
-        return {"ok": False, "reason": "사용자 토큰 없음 — /api/oauth2?key= 먼저 승인",
-                "steps": steps}
+    hook_id = os.environ.get("X_WEBHOOK_ID", "2076314919981436928")
 
-    handle = os.environ.get("BOT_HANDLE", "kosai_x").lstrip("@")
-    # 후보 엔드포인트 배터리 — 에러 메시지로 규격 역추적
-    battery = [
-        ("GET", f"{API}/account_activity/subscriptions", None),
-        ("POST", f"{API}/account_activity/subscriptions",
-         {"webhook_id": hook_id, "event_type": "post_mention_create"}),
-        ("POST", f"{API}/account_activity/subscriptions",
-         {"webhook_id": hook_id, "category": "post",
-          "event_type": "post_mention_create", "user_handle": handle}),
-        ("POST", f"{API}/webhooks/{hook_id}/subscriptions", {}),
-        ("POST", f"{API}/account_activity/webhooks/{hook_id}/subscriptions/all", None),
-    ]
-    ok = False
-    for method, url, body in battery:
-        s = _req(method, url, user_tok, body)
-        steps.append(s)
-        if method == "POST" and 200 <= s["http"] < 300:
-            ok = True
-            break
-    return {"ok": ok, "webhook_id": hook_id, "steps": steps}
+    # ② 기존 구독 목록
+    r = _oauth1("GET", f"{API}/activity/subscriptions")
+    steps.append(_rec("list_subscriptions(oauth1)", r))
+
+    # ③ 구독 생성 — 이벤트 타입 후보 × 인증(OAuth1 → OAuth2 폴백)
+    for ev in EVENT_CANDIDATES:
+        body = {"event_type": ev, "filter": {"user_id": str(user_id)},
+                "webhook_id": hook_id, "tag": "kosai-mention-bot"}
+        r = _oauth1("POST", f"{API}/activity/subscriptions", body)
+        steps.append(_rec(f"create(oauth1,{ev})", r, body))
+        if 200 <= r.status_code < 300:
+            return {"ok": True, "event_type": ev, "user_id": user_id,
+                    "webhook_id": hook_id, "steps": steps}
+        # event_type이 문제라는 응답이면 다음 후보로, 아니면(권한 등) OAuth2도 시도
+        txt = r.text.lower()
+        if "event_type" in txt or "event type" in txt:
+            continue
+        tok = oauth2.user_token()
+        if tok:
+            r2 = requests.post(f"{API}/activity/subscriptions", json=body,
+                               headers={"Authorization": f"Bearer {tok}",
+                                        "Content-Type": "application/json"}, timeout=20)
+            steps.append(_rec(f"create(oauth2,{ev})", r2, body))
+            if 200 <= r2.status_code < 300:
+                return {"ok": True, "event_type": ev, "user_id": user_id,
+                        "webhook_id": hook_id, "steps": steps}
+    return {"ok": False, "user_id": user_id, "webhook_id": hook_id, "steps": steps}
 
 
 class handler(BaseHTTPRequestHandler):
