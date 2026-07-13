@@ -25,6 +25,31 @@ def _max_id(a, b):
     return a if int(a) >= int(b) else b
 
 
+def diag():
+    """?debug=1 — users/me·mentions 원시 HTTP 상태를 그대로 노출(에러 원인 파악)."""
+    from lib.xclient import _oauth1_get
+    def body(r):
+        try:
+            return r.json()
+        except ValueError:
+            return r.text[:300]
+    out = {}
+    r = _oauth1_get("https://api.x.com/2/users/me")
+    out["users_me"] = {"http": r.status_code, "body": body(r)}
+    uid = None
+    try:
+        uid = (r.json().get("data") or {}).get("id")
+    except Exception:
+        pass
+    out["uid"] = uid
+    if uid:
+        url = (f"https://api.x.com/2/users/{uid}/mentions"
+               f"?max_results=10&tweet.fields=created_at,author_id")
+        r2 = _oauth1_get(url)
+        out["mentions"] = {"http": r2.status_code, "body": body(r2)}
+    return out
+
+
 def run():
     since = store.get("mention:since_id")
     mentions = xclient.mentions_x(since_id=since, store=store, max_results=25)
@@ -49,8 +74,8 @@ class handler(BaseHTTPRequestHandler):
         if os.environ.get("POLL_SECRET") and q.get("key", [""])[0] != os.environ["POLL_SECRET"]:
             self.send_response(403); self.end_headers(); self.wfile.write(b"forbidden"); return
         try:
-            out = run()
-            code, body = 200, json.dumps(out)
+            out = diag() if q.get("debug", [""])[0] else run()
+            code, body = 200, json.dumps(out, ensure_ascii=False)
         except Exception as e:
             code, body = 500, json.dumps({"error": str(e)})
         self.send_response(code)
