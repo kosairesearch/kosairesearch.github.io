@@ -184,17 +184,23 @@ def mentions_x(since_id=None, store=None, max_results=25):
 
 # ---------------- X API v2 답글 게시 (OAuth1.0a) ----------------
 def _oauth_header(method, url, oauth):
-    params = {k: v for k, v in oauth.items()}
     enc = lambda s: urllib.parse.quote(str(s), safe="~")
-    base_str = "&".join([
-        method.upper(), enc(url),
-        enc("&".join(f"{enc(k)}={enc(params[k])}" for k in sorted(params))),
-    ])
+    # OAuth1 서명 base string: (1) 쿼리 파라미터를 반드시 서명 대상에 포함하고
+    # (2) base URI에서는 쿼리를 제외해야 한다. (예전엔 URL을 통째로 넣어 쿼리 있는
+    #  엔드포인트에서 서명이 깨졌다 → mentions 401.)
+    split = urllib.parse.urlsplit(url)
+    base_uri = urllib.parse.urlunsplit((split.scheme, split.netloc, split.path, "", ""))
+    params = dict(oauth)
+    for k, v in urllib.parse.parse_qsl(split.query, keep_blank_values=True):
+        params[k] = v
+    param_str = "&".join(f"{enc(k)}={enc(params[k])}" for k in sorted(params))
+    base_str = "&".join([method.upper(), enc(base_uri), enc(param_str)])
     key = f"{enc(os.environ['X_API_SECRET'])}&{enc(os.environ['X_ACCESS_SECRET'])}"
     sig = hmac.new(key.encode(), base_str.encode(), hashlib.sha1).digest()
     import base64
-    oauth = dict(oauth, oauth_signature=base64.b64encode(sig).decode())
-    return "OAuth " + ", ".join(f'{enc(k)}="{enc(v)}"' for k, v in sorted(oauth.items()))
+    # Authorization 헤더에는 oauth_* 파라미터만 넣는다(쿼리 파라미터는 제외).
+    header = dict(oauth, oauth_signature=base64.b64encode(sig).decode())
+    return "OAuth " + ", ".join(f'{enc(k)}="{enc(v)}"' for k, v in sorted(header.items()))
 
 
 def post_reply(text, in_reply_to_id):
