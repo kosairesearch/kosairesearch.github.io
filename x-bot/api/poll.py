@@ -50,6 +50,21 @@ def diag():
     return out
 
 
+def flush():
+    """대기열을 비우고 체크포인트를 현재 최신 멘션으로 밀어 백로그를 건너뛴다.
+    이후엔 '지금 이후의 새 멘션'만 처리된다(종목명 있는 것만 답글은 기존과 동일)."""
+    dropped = store.jobs_len()
+    store._cmd("DEL", "jobs")
+    latest = xclient.mentions_x(since_id=None, store=store, max_results=25)
+    newest = None
+    for m in latest:
+        newest = _max_id(newest, m["id"])
+    if newest:
+        store.set("mention:since_id", newest)
+    return {"flushed_jobs": dropped, "since_id": newest,
+            "note": "백로그 건너뜀 — 이후 새 멘션만 처리"}
+
+
 def run():
     since = store.get("mention:since_id")
     mentions = xclient.mentions_x(since_id=since, store=store, max_results=25)
@@ -74,7 +89,12 @@ class handler(BaseHTTPRequestHandler):
         if os.environ.get("POLL_SECRET") and q.get("key", [""])[0] != os.environ["POLL_SECRET"]:
             self.send_response(403); self.end_headers(); self.wfile.write(b"forbidden"); return
         try:
-            out = diag() if q.get("debug", [""])[0] else run()
+            if q.get("flush", [""])[0]:
+                out = flush()
+            elif q.get("debug", [""])[0]:
+                out = diag()
+            else:
+                out = run()
             code, body = 200, json.dumps(out, ensure_ascii=False)
         except Exception as e:
             code, body = 500, json.dumps({"error": str(e)})
