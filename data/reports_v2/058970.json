@@ -1,159 +1,169 @@
 {
  "title": {
-  "ko": "국내 SRM 1위 엠로, 글로벌 투자기 수익성 회복이 관건",
-  "en": "Korea's No.1 SRM Software Leader: Profitability Recovery Is the Defining Test"
+  "ko": "글로벌 SaaS 전환 과도기, 수익성 회복이 핵심",
+  "en": "Global SaaS Pivot in Progress: Profitability Recovery in Focus"
  },
  "lead": {
-  "ko": "국내 AI 기반 구매 공급망관리(SRM) 소프트웨어 1위 기업 엠로는 삼성SDS를 최대주주로 맞아 글로벌 SaaS 시장 공략에 박차를 가하고 있으나, 2025년 영업이익률이 1.1%로 급락한 데 이어 2026년 1분기에도 대규모 영업손실이 발생하면서 해외 투자 회수 속도와 비용 구조 개선의 균형이 가장 중요한 관찰 변수로 부각된다.",
-  "en": "Emro, Korea's #1 AI-based SRM software company, is accelerating its global SaaS ambitions under majority shareholder Samsung SDS, but a sharp operating margin collapse to 1.1% in 2025 and a significant operating loss in Q1 2026 have made the balance between overseas cost recovery and cost structure normalization the central variable to watch."
+  "ko": "엠로는 국내 구매공급망관리(SRM) 시장 1위이자 삼성SDS 자회사로서 AI·SaaS 기반 글로벌 확장을 가속하고 있으나, 2025년 들어 해외 영업·R&D 선투자 비용이 집중되며 영업이익률이 대폭 축소됐고, 케이던시아(Caidentia)의 해외 수주가 실질적인 이익 기여로 이어지는 시점이 핵심 관찰 포인트로 부상하고 있다.",
+  "en": "Emro, Korea's No.1 procurement SRM software vendor and a Samsung SDS subsidiary, is accelerating its AI/SaaS-driven global push, yet 2025 has brought a steep operating margin decline driven by front-loaded overseas sales and R&D investment, making the timeline for Caidentia's international orders translating into material profit contribution the central variable to watch."
  },
  "keypoints": [
   {
-   "ko": "2000년 설립·2021년 코스닥 상장, 삼성SDS(지분 33.4%) 자회사로 국내외 600여 기업 고객 보유한 AI 기반 SRM 소프트웨어 국내 1위",
-   "en": "Founded 2000, KOSDAQ-listed 2021; subsidiary of Samsung SDS (33.4% stake) with 600+ domestic and international clients — Korea's #1 AI-based SRM software company."
+   "ko": "국내 SRM 1위 · 고객 600곳 이상 · 삼성·현대차·LG 등 핵심 대기업 레퍼런스 보유, 높은 Lock-in 효과로 매출 안정성 담보",
+   "en": "Korea's No.1 SRM vendor with 600+ clients including Samsung, Hyundai, LG — high lock-in dynamics underpin revenue stability"
   },
   {
-   "ko": "2025년 연결 매출 839억8천만원(+5.7% YoY) 역대 최대, 그러나 영업이익률 10.8%(2024)→1.1%(2025) 급락—해외 확장 비용 급증이 주요 원인",
-   "en": "2025 consolidated revenue hit an all-time high of KRW 84.0 billion (+5.7% YoY), but operating margin plunged from 10.8% in 2024 to 1.1% in 2025, driven by surging overseas expansion costs."
+   "ko": "2024년 매출 795억 원·영업이익 86억 원(OPM 10.8%)으로 역대 최대 실적 달성, 그러나 2025년 1~3분기 누적 영업이익은 14억 원 수준(OPM 약 2%)으로 수익성이 급격히 약화",
+   "en": "Record 2024 results (revenue ₩79.5B, OP ₩8.6B, OPM 10.8%), but Q1–Q3 2025 cumulative operating profit shrank to ~₩1.4B (OPM ~2%) amid rising investment costs"
   },
   {
-   "ko": "2026년 1분기 매출 147억6천만원으로 전년 동기 대비 약 28% 급감, 영업손실 -27억6천만원 발생—비용 고정화·수주 공백의 직접적 타격",
-   "en": "Q1 2026 revenue fell ~28% YoY to KRW 14.8 billion with an operating loss of KRW 2.8 billion — a direct hit from a fixed cost base colliding with a post-project contract gap."
+   "ko": "SaaS 플랫폼 '케이던시아'는 2026년 1월 SOC2 Type2 글로벌 보안 인증 획득; 북미 현지 고객 3사 확보 완료 및 유럽·다양한 산업군으로 파이프라인 확대 중",
+   "en": "Caidentia SaaS platform obtained SOC2 Type2 certification in January 2026; three North American clients secured, with pipeline expanding into Europe and multiple verticals"
   },
   {
-   "ko": "글로벌 SaaS '케이던시아(Caidentia)': SAP ICC·SOC2 Type2 인증 획득, 북미 3개 고객사 공급 및 북미·유럽 다수 PoC 진행 중",
-   "en": "Global SaaS 'Caidentia' has secured SAP ICC and SOC2 Type2 certifications, onboarded three North American clients, and is actively running PoC and demos across North America and Europe."
+   "ko": "글로벌 SCM 소프트웨어 시장은 2025년 약 350~390억 달러 규모로 연평균 10% 이상 성장 전망; AI·에이전틱 AI 기반 구매 자동화가 핵심 성장 동인",
+   "en": "Global SCM software market valued at ~$35–38B in 2025, forecast to grow at 10%+ CAGR; AI/Agentic AI-driven procurement automation is a core structural driver"
   },
   {
-   "ko": "2026년 코오롱인더스트리 차세대 구매포탈·휴니드테크놀러지스 전사 AX 시스템 수주 확보—하반기 매출 기여 및 연간 수익성 회복 가능 여부가 핵심 관전 포인트",
-   "en": "Recent wins including Kolon Industries' next-gen procurement portal and Huneed Technologies' enterprise AI transformation project provide H2 2026 revenue visibility; the key question is whether annual profitability recovers."
+   "ko": "배당 없음(DPS=0); 현재 주가는 순자산(BPS 7,728원) 대비 소폭 프리미엄 구간으로, 2025년 초 고점 대비 크게 낮아진 수준에서 거래 중",
+   "en": "No dividend (DPS=0); current stock is trading at a modest premium to book (BPS ₩7,728 per KRX), sharply below early-2025 peak levels"
   }
  ],
  "business": {
-  "ko": "엠로는 2000년 설립된 AI 기반 구매 공급망관리(SRM) 소프트웨어 전문 기업으로, 2021년 8월 코스닥에 상장했고 2023년 삼성SDS가 지분 33.4%(3,774,064주)를 1,118억원에 인수해 최대주주가 됐다. 사업은 ①시스템 구축·컨설팅(역사적 매출 비중 약 57%), ②소프트웨어 라이선스(약 18%), ③기술지원·유지보수(약 17%), ④클라우드·SaaS 서비스(약 8%)로 구성되며, SaaS 전환을 통해 반복 매출 비중을 높이는 방향으로 사업 구조를 전환하고 있다. 주요 제품은 구매 통합 솔루션 'SMARTSuite', 글로벌 SRM SaaS '케이던시아(Caidentia)', AI 기반 BOM(자재명세서) 자동 비교·분석 솔루션, 에이전틱 AI 솔루션 등이다. 고객 기반은 삼성·LG·현대차·SK·한화·포스코·현대중공업·롯데·CJ 등 10대 대기업 그룹사를 포함해 공기업·금융기관·방산·소비재 기업 등 국내외 600여 개사에 달한다. 글로벌 시장에서는 SAP Ariba·Oracle·Coupa 등 대형 벤더와 경쟁하며, 케이던시아는 SAP ICC(RISE with SAP S/4HANA Cloud Private Edition 연동) 인증과 SOC2 Type2 보안 인증을 획득해 글로벌 엔터프라이즈 고객의 신뢰도 기반을 마련했다. AI 핵심 특허(기계학습 기반 아이템 분류·유사 아이템 분석)를 한국·일본·미국에서 보유하고 있으며, 1,500건 이상의 프로젝트 수행 레퍼런스로 국내 시장 지배력을 유지한다. 삼성SDS·오나인솔루션즈와 통합 공급망관리 SaaS 플랫폼을 공동 개발해 글로벌 시장을 공략 중이며, 2026년 1월에는 구축·판매 파트너 생태계를 확대하기 위한 '엠로 파트너 포털'을 오픈했다.",
-  "en": "Emro was established in 2000 as an AI-based SRM software specialist and listed on KOSDAQ in August 2021. In 2023, Samsung SDS acquired a 33.4% stake (3,774,064 shares) for KRW 111.8 billion, becoming the largest shareholder. The business comprises four segments: system integration and consulting (historically ~57% of revenue), software licensing (~18%), technical support and maintenance (~17%), and cloud/SaaS services (~8%), with the company actively transitioning toward a higher proportion of recurring subscription revenue. Key products include the SMARTSuite integrated procurement solution, the global SRM SaaS 'Caidentia', an AI-powered BOM automatic comparison and analysis solution, and an Agentic AI solution suite. The client base spans 600+ domestic and international companies, including all of Korea's top-10 conglomerates (Samsung, LG, Hyundai Motor, SK, Hanwha, Posco, Hyundai Heavy Industries, Lotte, CJ) as well as public enterprises, financial institutions, and defense firms. Globally, Emro competes against large-scale vendors including SAP Ariba, Oracle, and Coupa; Caidentia has received SAP ICC certification (integrated with RISE with SAP S/4HANA Cloud Private Edition) and SOC2 Type2 security certification to support enterprise-level global sales. Emro holds AI core patents covering machine-learning-based item classification and similar-item analysis in Korea, Japan, and the US, while over 1,500 project references underpin domestic market leadership. In collaboration with Samsung SDS and o9 Solutions, Emro is co-developing an integrated supply chain management SaaS platform for global markets, and launched the 'Emro Partner Portal' in January 2026 to expand its implementation and reseller ecosystem."
+  "ko": "엠로는 2000년 설립된 국내 1위 AI 기반 구매공급망관리(SRM) 소프트웨어 기업으로, 삼성SDS의 자회사로 편입돼 그룹의 IT·클라우드 역량과 연계해 사업을 확장하고 있다. 핵심 솔루션은 구매 전략 컨설팅부터 원가관리·전자입찰·협력사 관리까지 구매 전 영역을 커버하는 'SMARTsuite'(온프레미스)와, 삼성SDS·공급망계획 글로벌 1위 기업 o9Solutions와 공동 개발한 글로벌 SaaS 플랫폼 '케이던시아(Caidentia)'다. 국내외 600여 고객사를 확보하고 있으며 삼성전자·현대차·LG전자·LG화학·한화·SK·현대중공업·CJ 등 국내 주요 대기업 그룹사뿐 아니라 공기업·금융권·방산 기업까지 다양한 수직시장에 걸친 레퍼런스를 보유하고 있다. 기존 SRM 시장이 간접구매 중심으로 구성돼 있는 데 반해, 엠로는 상대적으로 미개척 영역이던 직접구매 솔루션을 선제 개발해 차별화된 시장 포지션을 구축했다. 수익 구조는 소프트웨어 라이선스, 유지보수·기술료, 클라우드 서비스 구독료, 프로젝트 구축 용역(SI)으로 구성되며, 솔루션 도입 후 해지율이 극히 낮은 높은 Lock-in 효과가 안정적인 매출 기반을 받쳐 준다. 회사는 AI 기반 BOM(자재명세서) 자동 비교·분석 솔루션과 에이전틱 AI 솔루션 등 신규 AI 제품군을 출시하며 구매 업무 자동화 영역으로 사업 범위를 넓히고 있다. 파트너 생태계 역시 강화하고 있어 협력사 수가 2024년 42곳에서 2025년 말 59곳으로 약 40% 증가했다.",
+  "en": "Emro, founded in 2000 and a subsidiary of Samsung SDS, is Korea's No.1 AI-based supplier relationship management (SRM) software company, leveraging the Samsung SDS ecosystem to accelerate business growth. Its core offerings are SMARTsuite — an on-premise platform covering the full procurement lifecycle from strategic consulting and cost management to e-bidding and supplier collaboration — and Caidentia, a global SaaS platform co-developed with Samsung SDS and supply chain planning leader o9 Solutions. The company serves 600+ domestic and international clients, including Korea's major conglomerates (Samsung Electronics, Hyundai Motor, LG Electronics, LG Chem, Hanwha, SK, Hyundai Heavy Industries, CJ) as well as public enterprises, financial institutions, and defense firms. A key competitive differentiator is Emro's focus on direct procurement, a historically underserved segment relative to indirect procurement, where its 20+ years of domain expertise and AI integration create a proprietary moat. Revenue streams include software licenses, maintenance and technical fees, cloud service subscriptions, and project implementation services (SI), with exceptionally low customer churn underpinning revenue visibility. The company is expanding its AI product portfolio with an AI-driven BOM auto-comparison and analysis tool and Agentic AI solutions, extending its footprint into procurement automation. The partner ecosystem has also grown, with the number of certified partners rising approximately 40% to 59 companies by end-2025."
  },
  "earnings": {
-  "ko": "2025년 연결 매출은 839억8,000만원으로 전년(794억6,000만원) 대비 5.7% 증가해 역대 최대치를 경신했으나, 영업이익은 9억1,000만원(OPM 1.1%)으로 전년(86억1,000만원, OPM 10.8%)에서 크게 후퇴했다. 해외 시장 진출을 위한 인력 충원과 마케팅 비용 증가가 수익성 악화의 주요 원인이며, 소프트웨어 라이선스 매출과 클라우드 서비스 사용료는 전년 누계 대비 각각 4.4%, 6.6% 증가하는 등 반복 매출의 안정적 성장세는 유지됐다. 영업현금흐름은 87억8,000만원으로, 이익 대비 현금 창출 능력은 일정 수준 유지됐다. 2024년 지배주주 귀속 순이익 186억1,000만원이 영업이익(86억원)을 크게 상회한 것은 재무구조 정상화 과정의 비영업 수익이 반영된 결과이며, 2025년 순이익은 25억3,000만원으로 정상화됐다. 분기별로는 2025Q1(매출 206억3,000만원·영업이익 9억6,000만원)이 연중 최고였고, Q2(221억5,000만원·1억5,000만원)·Q3(212억9,000만원·3억1,000만원)로 이어졌으며, Q4(200억1,000만원·영업손실 -5억2,000만원)에 처음으로 분기 영업손실이 발생했다. 2026년 1분기에는 매출이 147억6,000만원으로 전년 동기(2025Q1) 대비 약 28% 급감했고, 영업손실은 -27억6,000만원으로 확대되면서 대형 프로젝트 완료 후 신규 수주 공백이 실적에 직접 반영됐다. 2023년에는 매출 631억7,000만원·영업이익 46억6,000만원에도 불구하고 지배주주 귀속 순손실 267억4,000만원이 발생했는데, 이는 지배주주 변경 및 자본구조 재편 과정의 일회성 요인에 기인했으며 당시 부채비율이 217.5%까지 급등했다가 2024년(15.1%)·2025년(18.7%)에 빠르게 안정화됐다.",
-  "en": "In 2025, consolidated revenue reached an all-time high of KRW 84.0 billion, up 5.7% YoY from KRW 79.5 billion, but operating income fell sharply to KRW 910 million (OPM 1.1%) from KRW 8.6 billion (OPM 10.8%) in 2024, driven by surging overseas expansion costs including headcount additions and marketing spend. Software license revenue and cloud usage fees grew 4.4% and 6.6% YoY respectively on a cumulative basis, maintaining a stable growth trend in the recurring revenue base. Operating cash flow remained at KRW 8.8 billion, reflecting continued underlying cash generation capacity. The unusually high 2024 net income attributable to controlling shareholders of KRW 18.6 billion — significantly above operating income — reflected non-recurring, non-operating income from balance sheet normalization, while 2025 normalized to KRW 2.5 billion. On a quarterly basis, 2025Q1 was the strongest (revenue KRW 20.6 billion, operating profit KRW 963 million), followed by Q2 (KRW 22.1 billion, KRW 152 million) and Q3 (KRW 21.3 billion, KRW 315 million), with Q4 recording the first quarterly operating loss (KRW 20.0 billion, -KRW 520 million). Q1 2026 saw a steep ~28% YoY revenue decline to KRW 14.8 billion with an operating loss of KRW 2.8 billion, directly reflecting a gap between large project completions and new contract revenue recognition. In 2023, despite KRW 63.2 billion in revenue and KRW 4.7 billion in operating income, a net loss attributable to controlling shareholders of KRW 26.7 billion occurred due to one-time factors linked to the change in controlling shareholder and capital structure reconfiguration, temporarily spiking the debt ratio to 217.5%; this normalized to 15.1% in 2024 and 18.7% in 2025."
+  "ko": "연간 실적을 보면, 2022년 매출 586억 원·영업이익 65억 원(OPM 11.1%)에서 2023년 매출 632억 원·영업이익 47억 원(OPM 7.4%)으로 외형은 소폭 성장했으나 마진이 축소됐다. 2023년에는 영업이익이 흑자(47억 원)였음에도 영업 외 대규모 손실이 발생해 지배주주 기준 순손실이 267억 원에 달했고, 이 과정에서 부채비율이 217.5%까지 급등했다. 반면 같은 해 영업 현금흐름은 67억 원으로 양호하게 유지돼 해당 손실이 비현금성 성격임을 시사한다. 2024년에는 매출 795억 원(YoY +25.8%), 영업이익 86억 원(OPM 10.8%), 지배주주 순이익 186억 원으로 대폭 회복하며 역대 최대 실적을 달성했다. 2024년 부채비율도 15.1%로 극적으로 개선됐고, 영업 현금흐름 역시 142억 원으로 이익 이상의 현금 창출력을 보여줬다. 그러나 2025년 분기별 실적은 수익성 면에서 두드러진 약화를 보이고 있다. 1분기 매출 206억 원·영업이익 9.6억 원, 2분기 매출 221억 원·영업이익 1.5억 원(순손실 4.0억 원 발생), 3분기 매출 213억 원·영업이익 3.1억 원을 기록했으며, 2025년 1~3분기 누적 매출은 전년 동기 대비 12.2% 증가한 640억 원을 달성했으나 누적 영업이익은 약 14억 원에 그쳐 이익률이 현저히 낮아진 상태다. 이는 케이던시아 해외 사업 확대를 위한 R&D·마케팅 비용이 매출 인식 전에 선투자되는 구조에서 비롯된 것으로 해석된다.",
+  "en": "In annual terms, revenue grew modestly from ₩58.6B in 2022 (OPM 11.1%) to ₩63.2B in 2023 (OPM 7.4%), with operating profit contracting. A significant anomaly in 2023 was a large non-operating loss that drove net income attributable to controlling interest to -₩26.7B despite positive operating profit of ₩4.7B, pushing the debt ratio to 217.5%. Operating cash flow remained healthy at ₩6.7B in 2023, indicating the net loss was largely non-cash in nature. A strong reversal came in 2024: revenue reached ₩79.5B (+25.8% YoY), operating profit recovered to ₩8.6B (OPM 10.8%), and net income attributable to controlling interest rebounded to ₩18.6B — all record-high figures. The debt ratio improved dramatically to 15.1% by year-end 2024, and operating cash flow reached a robust ₩14.2B. However, 2025 quarterly results show a pronounced profitability step-down: Q1 revenue ₩20.6B / OP ₩963M; Q2 revenue ₩22.1B / OP ₩152M (net loss ₩400M); Q3 revenue ₩21.3B / OP ₩315M. The Q1–Q3 2025 cumulative revenue of ₩64.0B grew 12.2% YoY, yet cumulative operating profit of approximately ₩1.4B represents a dramatic contraction from 2024 levels, attributable to front-loaded R&D and overseas marketing costs for the Caidentia global SaaS platform ahead of revenue recognition."
  },
  "industry": {
-  "ko": "글로벌 SRM(공급망관리) 소프트웨어 시장은 2024년 기준 약 52억 달러 규모로 추산되며, 2033년까지 약 111억 달러로 연평균 약 9%의 성장이 전망된다. AI 기능 통합, 클라우드·SaaS 전환 가속, 실시간 공급망 가시성 확보 수요, 미중 무역갈등 등 지정학적 불확실성에 따른 프렌드쇼어링 트렌드가 구조적 성장 동인으로 작용한다. 에이전틱 AI 확산으로 공급망 의사결정 자동화 솔루션에 대한 수요가 확대되는 점은 AI 역량을 내재화한 엠로에게 차별화 기회다. 국내에서는 엠로가 10대 대기업 그룹사 대부분을 고객으로 확보하며 독보적 1위 지위를 유지하고 있으며, 3년 연속 코스닥 '라이징스타'에 선정된 바 있다. 글로벌 시장에서는 SAP Ariba·Oracle·Coupa 등이 높은 브랜드 인지도와 기존 설치 기반(installed base)을 보유하고 있어, 엠로는 구매 특화 AI 기능과 삼성SDS 채널을 앞세운 틈새 진입 전략을 구사하고 있다. 엠로 매출의 상당 부분을 차지하는 시스템 구축·컨설팅은 고객사의 IT 투자 사이클에 민감하게 반응하며, 경기 둔화 국면에서는 프로젝트 발주 지연 리스크를 내포한다.",
-  "en": "The global SRM software market was estimated at approximately USD 5.2 billion in 2024 and is projected to grow at a CAGR of around 9% to reach approximately USD 11.1 billion by 2033. Structural growth drivers include AI integration, accelerating cloud and SaaS adoption, demand for real-time supply chain visibility, and 'friendshoring' trends stemming from geopolitical uncertainty such as US-China trade tensions. The proliferation of Agentic AI — enabling autonomous decision-making in supply chain processes — represents a differentiation opportunity for Emro, which has internally developed AI capabilities. In Korea, Emro holds an unrivaled #1 position, serving most of Korea's top-10 conglomerates, and was named a KOSDAQ 'Rising Star' for three consecutive years. Globally, established vendors like SAP Ariba, Oracle, and Coupa command large installed bases and brand recognition, positioning Emro as a niche challenger leveraging procurement-specific AI features and the Samsung SDS distribution channel. Emro's revenue is significantly weighted toward system integration and consulting, which is sensitive to enterprise IT capex cycles and carries inherent risk of project award delays during economic downturns."
+  "ko": "글로벌 공급망관리(SCM) 소프트웨어 시장은 2025년 약 353~385억 달러 규모로, 복수의 시장조사기관이 2030~2034년까지 연평균 8.7~10.9% 성장을 전망한다. 엠로가 특화한 SRM(구매·공급망관계관리) 소프트웨어 세부 시장은 2025년 약 136억 달러 규모이며 2026~2033년 연평균 약 8~9%의 성장이 예상된다. 아시아태평양 SRM 시장은 연평균 약 9.2% 성장률로 글로벌 평균을 상회할 것으로 전망된다. 성장 동인으로는 지정학적 리스크 확대에 따른 공급망 다변화 필요성, AI·에이전틱 AI를 활용한 구매 자동화 수요, 클라우드 기반 SaaS 도입 가속화 등이 꼽히며, 트럼프 2기 관세 정책으로 글로벌 기업들이 공급망 재편에 나서는 것도 SRM 솔루션 수요의 단기 구조적 기회로 작용하고 있다. 경쟁 구도 측면에서 글로벌 시장은 SAP Ariba, Oracle, Coupa, JAGGAER, Ivalua 등 대형 플레이어가 주도하는 가운데, 엠로는 20년 이상 국내 대기업 대상 직접구매 솔루션을 전문적으로 공급한 경험과 AI 융합 역량을 내세우며 차별화를 시도하고 있다. 국내 시장에서는 1위 지위가 확고하나, 글로벌 시장에서는 대형 선발 주자에 비해 브랜드 인지도와 영업 네트워크 측면에서 현실적 격차가 존재한다. 클라우드 기반 SCM 솔루션이 전체 시장의 58% 이상을 차지하고 있어 SaaS 전환 기조는 엠로의 전략 방향과 부합하는 구조다.",
+  "en": "The global supply chain management (SCM) software market is valued at approximately $35–38B in 2025, with multiple research firms forecasting 8.7–10.9% CAGR through 2030–2034. The SRM sub-market that Emro focuses on stood at approximately $13.6B in 2025, with 8–9% CAGR expected through 2033. The Asia-Pacific SRM market is projected to grow at ~9.2% CAGR, outpacing global averages. Structural growth drivers include geopolitical-driven supply chain diversification demand, AI and Agentic AI-powered procurement automation, and rapid cloud SaaS adoption; tariff policy under the second Trump administration is providing an additional near-term tailwind as global enterprises rush to restructure supply chains. In the competitive landscape, global leaders — SAP Ariba, Oracle, Coupa, JAGGAER, and Ivalua — dominate enterprise accounts, while Emro differentiates via its 20+ years of direct-procurement domain expertise and AI integration. Domestically Emro holds a commanding No.1 position, but brand recognition and sales network depth remain meaningful gaps versus global incumbents in international markets. Cloud-based SCM already accounts for over 58% of market revenue in 2025, aligning structurally with Emro's SaaS transition strategy."
  },
  "outlook": {
-  "ko": "엠로는 2026년 하반기를 글로벌·AI 사업의 성과 가시화 시점으로 제시하고 있다. 2026년 6월 수주가 공시된 코오롱인더스트리 차세대 구매포탈 구축은 하반기 완료가 목표이며, 2026년 4월 계약한 휴니드테크놀러지스 전사 AX 시스템 1단계는 2026년 6월 오픈이 예정돼 있어 하반기 매출 기여가 기대된다. 글로벌 전선에서는 케이던시아가 북미 3개 고객사 기반 위에서 북미·유럽 전역에서 하이테크·자동차·산업재·생명과학·소비재 분야 기업들을 대상으로 PoC와 데모를 확대하고 있다. 2026년 3월 기준 발간된 증권사 분석 리포트에서는 2026년 연간 매출액 881억원, 영업이익 29억원을 전망치로 제시한 바 있다. 2026년 1월 오픈한 '엠로 파트너 포털'을 통해 국내외 구축·판매 파트너 생태계를 확대하며 SaaS 전환을 가속화하는 계획도 병행된다. 다만 2026년 1분기의 급격한 매출 감소를 감안하면, 연간 전망치 달성을 위해서는 2분기 이후 수주 인식의 가파른 반등이 선행돼야 하므로 분기별 실적 모니터링이 핵심이다.",
-  "en": "Emro is positioning H2 2026 as the period when its global and AI investments begin to yield visible results. The Kolon Industries next-gen procurement portal — announced in June 2026 — is targeted for H2 2026 completion, and Phase 1 of the enterprise AI transformation system for Huneed Technologies (contracted April 2026) is scheduled to go live in June 2026, contributing to H2 revenue. On the global front, Caidentia continues to expand PoC and demo activities across North America and Europe in sectors including high-tech, automotive, industrial goods, life sciences, and consumer goods, building on three established North American client accounts. An analyst report published in March 2026 cited a 2026 consensus estimate of KRW 88.1 billion in revenue and KRW 2.9 billion in operating income. The January 2026 Partner Portal launch is aimed at expanding the implementation and reseller ecosystem to accelerate the SaaS transition. However, given the sharp Q1 2026 revenue decline, achieving the full-year consensus scenario requires a steep sequential revenue recovery from Q2 onward, making quarterly earnings tracking critical."
+  "ko": "엠로의 전략 방향은 '글로벌'과 'AI' 두 축으로 집약된다. 글로벌 SaaS 플랫폼 케이던시아는 2026년 1월 SOC2 Type2 국제 보안 인증을 획득해 북미·유럽 기업 고객 대상 영업의 핵심 전제 조건을 충족했다. 2025년 말 기준 북미에서 현지 고객사 3곳에 솔루션을 공급한 실적을 보유하고 있으며, 하이테크·자동차·산업재·생명과학·소비재 등 다양한 산업으로 파이프라인을 확대하고 북미·유럽 전역에서 데모·PoC를 활발히 진행하고 있다. AI 영역에서는 에이전틱 AI 솔루션 고도화와 함께, 글로벌 대표 PC·서버 제조사에 적용된 AI 기반 BOM 자동 비교·분석 솔루션의 추가 기능 도입 가능성도 진행 중이다. 국내에서는 방산기업 휴니드테크놀로지스와 전사 업무 AI 혁신 프로젝트를 추진하며 방산 수직시장으로 사업 범위를 넓혔고, 최근 파트너 포털을 새로 구축해 세일즈&구축 파트너 중심의 생태계 확대에도 속도를 내고 있다. 회사는 수익성이 높은 소프트웨어 라이선스 기반 매출 비중을 확대해 SaaS 기업으로 체질을 전환한다는 방침이며, 이를 통해 영업이익률 개선 여지를 확보할 수 있을 것으로 기대하고 있다. 단, 케이던시아 해외 계약의 실제 규모화 시점은 아직 가시화되지 않은 상태로, 향후 분기별 공시가 주요 모니터링 지표가 될 전망이다.",
+  "en": "Emro's strategic framework centers on two axes: 'Global' and 'AI.' Caidentia obtained SOC2 Type2 international security certification in January 2026, fulfilling a key prerequisite for enterprise sales engagements in North America and Europe. As of end-2025, Caidentia had been deployed at three North American clients, with the pipeline expanding across high-tech, automotive, industrial, life science, and consumer goods sectors, and demo/PoC activities ongoing across North America and Europe. On the AI front, the company is advancing Agentic AI capabilities while exploring further feature deployment at the global PC/server manufacturer that initially adopted its AI-based BOM auto-comparison tool. Domestically, a contract with defense firm Hunid Technologies for a company-wide AI business transformation project marks entry into the defense vertical. A newly launched partner portal is accelerating ecosystem development, targeting sales-and-implementation partners to expand indirect sales channels. The company has stated its intention to increase the share of high-margin software license revenue and accelerate the transition to a SaaS business model, which is expected to create room for operating margin improvement over the medium term. However, the timeline for Caidentia's overseas contracts reaching a scale meaningful to earnings remains the primary open variable, making quarterly contract disclosures the key monitoring benchmark."
  },
  "valuation_comment": {
-  "ko": "현재 주가는 주당 순자산(BPS 7,556원)을 상회하는 프리미엄 구간에서 형성되어 있어, 시장이 근접 이익 수준을 넘어서는 성장 기대를 반영하고 있다. 최근 12개월 누적 기준 주당순이익(EPS)은 -47원으로 이익 기반 밸류에이션 지표 산출이 불가능한 상황이며, 이익이 흑자와 적자를 오가는 높은 변동성이 이익 배수 활용의 한계를 더한다. 연간 DPS는 0원으로 주주 환원이 이루어지지 않고 있으며, 자본은 글로벌 SaaS 전환과 AI 솔루션 투자에 집중되는 구조다. 삼성SDS 인수 이슈가 시장의 주목을 받던 시기 대비 현재 주가 수준은 큰 폭으로 하락해 있으며, 이는 수익성 가시성 약화와 성장 기대의 재조정을 반영한다. 현재의 순자산 대비 프리미엄이 SaaS 전환 성과와 글로벌 수주 속도에 의해 정당화될 수 있는지는 향후 수 분기의 실적 추이가 판가름할 것이다.",
-  "en": "The current share price is trading at a premium to net asset value (BPS: KRW 7,556), indicating that the market is pricing in growth expectations beyond the near-term earnings level. The trailing twelve-month EPS of -47 won means that a price-to-earnings valuation cannot be applied at this time, and the high volatility between profitable and loss-making periods further limits the usefulness of earnings-based multiples. The company has paid no dividends (DPS: 0 won), reflecting capital allocation biased toward global SaaS transition and AI solution development over shareholder returns. Relative to the peak price levels seen when the Samsung SDS acquisition attracted market attention, the current price represents a substantial decline, reflecting reduced profitability visibility and a reassessment of growth expectations. Whether the current premium to book value can be justified by the pace of SaaS transition outcomes and global contract wins is a question that the trajectory of the next several quarters' results will need to address."
+  "ko": "현재 주가는 KRX 공시 기준 주당순자산(BPS 7,728원) 대비 소폭 프리미엄 수준으로, 2025년 초 AI 소프트웨어 테마 수혜 국면에서 형성됐던 고점 대비 크게 낮아진 구간이다. 2025년 수익성 급락을 반영한 빠른 밸류에이션 재평가가 진행됐으며, 현재는 사업 구조 전환 비용과 글로벌 수주 기대치가 균형점을 찾아가는 단계다. 배당은 지급되지 않아(DPS=0) 배당수익률은 0이며, 주주 환원 측면의 메리트는 현재 없는 상태다. 케이던시아 SaaS 매출이 유의미한 규모로 인식되거나 국내 대형 프로젝트 수주가 재개되어 2024년 수준의 이익이 복원된다면 멀티플 방향성에 변화가 생길 수 있는 구조이나, 글로벌 확장 비용 지속 여부와 그 회수 속도는 확인 중인 변수다. 현 구간에서 순자산 대비 멀티플이 과거 AI·SaaS 기대감이 최고조에 달했던 시기보다 현저히 낮아진 것은 사실이나, 수익성 가시성이 회복되기 전까지는 밸류에이션의 명확한 기준점을 설정하기 어려운 국면이다.",
+  "en": "The current stock price sits at a modest premium to the KRX-reported book value per share (BPS ₩7,728), representing a sharp de-rating from the highs reached during the early-2025 AI software thematic rally. The stock has undergone a rapid revaluation reflecting the steep 2025 profitability decline, and is now in a phase where the market is seeking equilibrium between ongoing business transformation costs and expectations for global order flow. With DPS at zero, there is no dividend yield support. A return toward 2024-level profitability — driven by a meaningful ramp in Caidentia SaaS revenue or a resumption of large domestic project wins — would be the most likely catalyst for a multiple inflection; however, the pace and timing of that earnings recovery remains an open variable while global expansion costs stay elevated. The current book-value-proximate pricing reflects a meaningful compression from the prior-year AI/SaaS premium, but the absence of near-term earnings visibility makes it difficult to establish a clear fundamental anchor."
  },
  "bull": [
   {
    "title": {
-    "ko": "삼성SDS 협력 기반 글로벌 SaaS 확장 가시화",
-    "en": "Global SaaS Expansion Supported by Samsung SDS Partnership"
+    "ko": "국내 1위 + 삼성SDS 후광·대형 프로젝트 수주력",
+    "en": "Domestic No.1 + Samsung SDS Halo and Large-Project Win Capability"
    },
    "body": {
-    "ko": "삼성SDS를 최대주주로 편입한 이후 삼성전자 차세대 구매 시스템 구축 등 대형 프로젝트가 연결됐으며, 글로벌 SaaS '케이던시아'는 SAP ICC 및 SOC2 Type2 인증을 획득해 해외 엔터프라이즈 고객 공략의 신뢰도 기반을 마련했다. 현재 북미 3개 고객사에 솔루션을 공급하고 있으며, 북미·유럽 전역에서 하이테크·자동차·생명과학 등 다양한 산업군 기업들과 PoC 및 데모가 활발하게 진행 중이다. 증권사 리포트에 따르면 삼성SDS와의 파트너십은 글로벌 기업 고객의 컴플라이언스·기술 전문성 요구를 충족하는 데 기여하며, 클라우드 기반 SaaS 매출의 두 자릿수 성장을 목표로 하고 있다.",
-    "en": "Since Samsung SDS became the majority shareholder, Emro has secured major projects including Samsung Electronics' next-gen procurement system. Caidentia has obtained SAP ICC and SOC2 Type2 certifications, providing enterprise-level credibility for global sales. Three North American client accounts have been established, with active PoC and demo engagements spanning high-tech, automotive, and life sciences across North America and Europe. According to an analyst report, the Samsung SDS partnership helps Emro meet global enterprise compliance and technical expertise requirements, with double-digit growth in cloud-based SaaS revenue targeted."
+    "ko": "엠로는 국내 SRM 시장 1위로 600여 고객사에 걸친 광범위한 레퍼런스를 보유하고 있으며, 삼성SDS 자회사 편입 이후 삼성전자 차세대 구매시스템 구축 등 대형 프로젝트 수주가 실적으로 나타났다. 삼성SDS 파트너십은 글로벌 영업의 신뢰도 기반 역할도 하며, 국내 주요 방산·금융·공기업 수직시장으로 고객군을 넓히고 있다. 산업 특성상 Lock-in 효과가 강해 기존 고객의 유지보수·기술료 매출은 경기 변동과 무관하게 안정적으로 유지된다.",
+    "en": "Emro holds the No.1 position in Korea's SRM market with 600+ client references, and since joining the Samsung SDS orbit, large-ticket project wins such as the Samsung Electronics next-gen procurement system have materially benefited top-line performance. The Samsung SDS partnership serves as a credibility anchor for global sales, while the customer base continues to expand into defense, finance, and public-sector verticals. High lock-in dynamics ensure that maintenance and technical fee revenues from existing clients remain stable regardless of IT spending cycles."
    }
   },
   {
    "title": {
-    "ko": "AI 내재화·에이전틱 AI로 솔루션 차별화 및 시장 확장",
-    "en": "Internally Developed AI and Agentic AI Drive Product Differentiation and Market Expansion"
+    "ko": "AI·에이전틱 AI 및 글로벌 SRM 수요 확대",
+    "en": "AI/Agentic AI Demand Surge and Expanding Global SRM Market"
    },
    "body": {
-    "ko": "엠로는 기계학습 기반 아이템 분류, 유사 아이템 분석 등 AI 핵심 특허를 한국·일본·미국에서 보유하고 있으며, AI 기반 BOM 자동 비교·분석 솔루션이 글로벌 대표 PC·서버 제조사에 적용되며 기술력을 검증받았다. 에이전틱 AI 솔루션은 구매 영역을 넘어 품질 관리·영업·사업 관리 등 전사 업무 혁신으로 적용 범위가 확대되고 있어 고객당 확장 매출 기회가 커지고 있다. 2026년 4월 국내 방산 기업 휴니드테크놀러지스와 전사 AX 시스템 계약을 체결하며 중견기업 AI 혁신 수요를 공략할 수 있는 플랫폼 확장성도 입증했다.",
-    "en": "Emro holds AI core patents in machine-learning-based item classification and similar-item analysis in Korea, Japan, and the US, and its AI-powered BOM auto-comparison solution has been deployed at a global leading PC/server manufacturer, validating its technical credibility. The Agentic AI solution suite is expanding beyond procurement into quality management, sales, and enterprise-wide process transformation, broadening the addressable market and increasing revenue expansion opportunities per client. In April 2026, the enterprise AI transformation contract with defense firm Huneed Technologies validated the platform's scalability into mid-sized enterprise AI demand beyond large conglomerates."
+    "ko": "글로벌 공급망관리 시장은 복수 기관 기준 연평균 10% 이상 성장이 전망되며, 지정학적 공급망 재편과 에이전틱 AI 기반 구매 자동화 트렌드가 SRM 솔루션의 중장기 수요를 구조적으로 뒷받침하고 있다. 케이던시아는 SOC2 Type2 인증 획득으로 글로벌 기업의 보안 요구를 공식 충족했고, AI 기반 BOM 분석 솔루션이 글로벌 PC·서버 제조사에 적용되며 기술력을 입증했다. 방산·하이테크·생명과학 등 고수익성 수직시장으로의 확장은 향후 SaaS 구독 매출 기반 확대로 이어질 가능성이 있다.",
+    "en": "The global SCM market is forecast to grow at 10%+ CAGR, with geopolitical supply chain restructuring and Agentic AI-driven procurement automation providing structural tailwinds for SRM demand. Caidentia's SOC2 Type2 certification formally satisfies global enterprise security requirements, and the AI-powered BOM analysis tool has been validated at a global PC/server manufacturer, demonstrating technical credibility. Expansion into high-value verticals such as defense, high-tech, and life sciences could broaden the SaaS subscription revenue base over the medium term."
    }
   },
   {
    "title": {
-    "ko": "견고한 재무 구조와 국내 1위 기반 안정적 현금 창출",
-    "en": "Sound Financial Structure and Stable Domestic Cash Generation"
+    "ko": "재무 건전성 회복과 강한 영업 현금흐름",
+    "en": "Restored Balance Sheet Strength and Robust Operating Cash Generation"
    },
    "body": {
-    "ko": "2025년 말 자기자본 956억원, 부채비율 18.7%로 재무 구조가 매우 건전하며, 영업이익률이 저하된 환경에서도 영업현금흐름 87억8,000만원을 창출해 유동성은 안정적이다. 기술지원·유지보수 및 클라우드 사용료 기반의 반복 매출은 경기 변동에 상대적으로 안정적인 수익 기반을 제공한다. 국내 600여 고객사와 1,500건 이상의 프로젝트 레퍼런스는 경쟁사 대비 높은 진입 장벽과 신규 수주 신뢰도를 동시에 제공한다.",
-    "en": "At end-2025, Emro's equity stood at KRW 95.7 billion with a debt ratio of 18.7%, reflecting a healthy financial structure. Even amid margin compression, operating cash flow remained at KRW 8.8 billion, supporting liquidity stability. Recurring revenues from technical support, maintenance, and cloud/SaaS subscriptions provide a measure of revenue resilience relative to cyclical swings. More than 600 domestic clients and 1,500+ project references create defensible competitive barriers and reinforce client acquisition credibility."
+    "ko": "2023년 217.5%까지 급등했던 부채비율이 2024년 말 15.1%로 극적으로 개선됐고, 2024년 영업 현금흐름은 142억 원으로 당기순이익을 상회하는 현금 창출력을 보여줬다. 이는 글로벌 확장 비용을 외부 자금 조달 없이 자체 충당할 수 있는 기반이 마련됐음을 의미한다. 운전자본 효율성이 높고 유형자산 투자 부담이 낮은 소프트웨어 사업 모델의 특성상, 이익률이 회복될 경우 현금 전환율도 높아질 구조다.",
+    "en": "The debt ratio plunged from 217.5% (2023) to 15.1% (end-2024), dramatically restoring financial stability, while 2024 operating cash flow of ₩14.2B exceeded reported net income, demonstrating strong underlying cash generation. This positions Emro to self-fund global expansion costs without requiring external capital raises. Given the asset-light software business model with high working capital efficiency and low capex intensity, a recovery in operating margins would translate into meaningfully higher cash conversion."
    }
   }
  ],
  "bear": [
   {
    "title": {
-    "ko": "2026Q1 매출 급감·영업손실 확대, 수익성 회복 시점 불투명",
-    "en": "Q1 2026 Revenue Slump and Widening Operating Loss Cloud the Recovery Timeline"
+    "ko": "2025년 수익성 급락과 회복 시점의 불확실성",
+    "en": "Steep 2025 Margin Compression and Uncertain Recovery Timeline"
    },
    "body": {
-    "ko": "2026년 1분기 매출은 147억6,000만원으로 전년 동기(206억3,000만원) 대비 약 28% 급감했고, 영업손실은 -27억6,000만원으로 확대됐다. 비용 구조의 고정화(인력·R&D·마케팅 비용)와 프로젝트 수주 공백이 맞물려 수익성 악화가 가속화됐으며, 증권사가 제시한 2026년 연간 영업이익(29억원) 달성을 위해서는 2분기 이후 가파른 매출·수주 반등이 전제돼야 한다. 이 시나리오가 실현되지 않을 경우 연간 이익 추정치 하향 조정 압력이 불가피하다.",
-    "en": "Q1 2026 revenue fell approximately 28% YoY to KRW 14.8 billion (from KRW 20.6 billion in Q1 2025), and the operating loss widened to KRW 2.8 billion. A fixed cost base — expanded for overseas growth — combined with a post-project gap in new awards has accelerated the margin deterioration. Achieving the analyst consensus of KRW 2.9 billion in full-year 2026 operating income requires a steep sequential revenue recovery from Q2; failure to do so would likely trigger downward revisions to full-year earnings estimates."
+    "ko": "2025년 1~3분기 누적 영업이익 약 14억 원은 2024년 연간 영업이익 86억 원의 16% 수준에 불과하고, 2분기에는 순손실도 발생했다. 매출이 전년 동기 대비 12.2% 성장했음에도 수익성이 이 정도로 약화된 것은 글로벌 투자 비용이 매출 회수보다 훨씬 빠른 속도로 집행되고 있음을 시사한다. 케이던시아 계약이 단기간에 빠르게 확대되지 않는다면 의미 있는 이익률 회복까지 시간이 걸릴 수 있다.",
+    "en": "Q1–Q3 2025 cumulative operating profit of ~₩1.4B represents only ~16% of 2024's full-year operating profit of ₩8.6B, with Q2 2025 recording a net loss. Despite 12.2% revenue growth, the severity of margin compression implies global investment costs are being deployed far faster than revenue recognition. Without a rapid ramp in Caidentia contract wins, meaningful margin recovery could take longer than expected."
    }
   },
   {
    "title": {
-    "ko": "글로벌 시장 침투 속도 불확실—대형 벤더와의 인지도 격차",
-    "en": "Uncertain Pace of Global Penetration Against Established Vendors"
+    "ko": "글로벌 SRM 시장 대형 선발 주자와의 경쟁 격차",
+    "en": "Competitive Gap vs. Established Global SRM Incumbents"
    },
    "body": {
-    "ko": "글로벌 SRM 시장에는 SAP Ariba·Oracle·Coupa 등이 높은 시장 점유율과 기존 고객 기반을 보유하고 있어, 케이던시아는 현재까지 북미 3개 고객사 공급에 그치는 초기 단계에 머물러 있다. 해외 엔터프라이즈 소프트웨어 영업은 PoC→파일럿→계약에 이르는 긴 사이클이 필요하며, 수주 속도가 기대를 하회할 경우 선집행된 해외 투자 비용의 회수가 지연될 수 있다. 글로벌 IT 예산 긴축 및 현지 데이터 보안·컴플라이언스 규제 강화가 추가적인 불확실성 요인으로 작용한다.",
-    "en": "The global SRM market is dominated by SAP Ariba, Oracle, and Coupa with extensive installed bases and brand recognition, leaving Caidentia at an early stage with only three North American clients to date. Enterprise software sales cycles involving PoC, pilot, and contract stages are inherently long, and if deal velocity underperforms expectations, the recovery of upfront overseas investment costs will be delayed. Global IT budget tightening and stricter local data security and compliance regulations add further uncertainty to the international pipeline."
+    "ko": "SAP Ariba, Oracle, Coupa, JAGGAER, Ivalua 등 글로벌 SRM 시장을 주도하는 대형 플레이어들은 수천 곳의 글로벌 고객 레퍼런스와 광범위한 영업 네트워크를 보유하고 있어, 후발 주자 케이던시아가 단기간에 유의미한 글로벌 점유율을 확보하기에는 상당한 장벽이 존재한다. 글로벌 인지도 확보와 현지 영업 조직 구축에 필요한 추가 비용은 중기적인 수익성 압박 요인으로 지속될 수 있다. 선발 주자들도 AI 솔루션을 강화하며 경쟁 수준을 높이고 있어 기술 차별화 유지도 지속적인 과제다.",
+    "en": "Global SRM leaders — SAP Ariba, Oracle, Coupa, JAGGAER, and Ivalua — command thousands of global client references and extensive sales networks, creating formidable barriers for Caidentia as a late entrant seeking to build meaningful market share. The ongoing cost of establishing global brand recognition and a local sales infrastructure could sustain margin pressure over the medium term. Established players are also aggressively enhancing their own AI capabilities, raising the bar for sustained technical differentiation."
    }
   },
   {
    "title": {
-    "ko": "대형 프로젝트 집중 매출 구조와 수주 공백 변동성",
-    "en": "Revenue Concentration in Large Projects and Post-Completion Gap Volatility"
+    "ko": "대형 고객 집중도 및 프로젝트성 매출 변동성",
+    "en": "Large-Client Concentration and Project Revenue Lumpiness"
    },
    "body": {
-    "ko": "삼성전자 차세대 구매 시스템 구축 등 대형 프로젝트가 2024년 실적에 크게 기여했으나, 이러한 대형 프로젝트는 완료 이후 매출 공백이 발생하기 쉬운 구조다. 2026년 1분기의 급격한 매출 감소는 대형 프로젝트 종료 후 신규 전환 지연의 전형적인 패턴을 반영한다. 삼성SDS와의 협력이 안정적인 프로젝트 파이프라인을 지속적으로 제공하는지, 아니면 특정 대형 계약 의존성을 심화하는지가 중장기 매출 가시성 측면에서 지속 관찰이 필요한 사안이다.",
-    "en": "Large Samsung Group-related projects, including the Samsung Electronics next-gen procurement system, were a significant 2024 revenue driver, but such concentrated large-project revenue is inherently susceptible to post-completion gaps. The sharp Q1 2026 revenue decline reflects a typical pattern of delayed new pipeline conversion following the completion of major contracts. Whether the Samsung SDS partnership delivers a sustainable and diversified project pipeline — or deepens reliance on episodic large contract awards — warrants ongoing monitoring from a medium-term revenue visibility perspective."
+    "ko": "삼성그룹 등 소수 대형 고객의 구매시스템 구축 프로젝트 수주 여부가 연간 실적에 미치는 영향이 크다. 2024년 실적 급성장의 배경으로 삼성전자 대형 프로젝트가 언급된 바 있으며, 이러한 비정기적 대형 프로젝트가 마무리되거나 다음 수주가 지연될 경우 연간 매출과 이익이 크게 흔들릴 수 있다. 기업 IT 투자 심리가 위축되는 구간에서는 구매 시스템 고도화 투자가 우선순위에서 밀려날 가능성도 배제할 수 없다.",
+    "en": "Annual performance is meaningfully influenced by large-ticket procurement system project wins from a handful of major clients, notably Samsung affiliates. The 2024 revenue surge was significantly driven by a large Samsung Electronics project, and the completion of such engagements — or delays in follow-on contracts — can introduce substantial annual revenue and profit volatility. In a corporate IT spending downturn, procurement system upgrade investments could be deprioritized, exacerbating the lumpiness risk."
    }
   }
  ],
  "risks": [
   {
    "cat": {
-    "ko": "글로벌 확장 실행 리스크",
-    "en": "Global Expansion Execution Risk"
+    "ko": "SaaS 전환 기간 구조적 수익성 희생",
+    "en": "Structural Profitability Dilution During SaaS Transition"
    },
    "body": {
-    "ko": "케이던시아의 북미·유럽 시장 침투 속도가 기대에 못 미칠 경우, 선집행된 인력·마케팅 비용에 대한 회수 기간이 장기화된다. 글로벌 IT 투자 심리 위축, 환율 변동, 현지 데이터 보안·컴플라이언스 규제 강화가 해외 계약 발주 시기를 지연시킬 수 있다. SAP·Oracle 등 기존 ERP 벤더와의 연동 의존성은 독립적 해외 영업 전략에 구조적 제약이 될 수 있다.",
-    "en": "If Caidentia's market penetration in North America and Europe is slower than expected, the recovery period for upfront headcount and marketing investments extends. Global IT spending caution, foreign exchange volatility, and tightening local data security and compliance regulations could delay international contract timing. Integration dependencies on existing ERP vendors such as SAP and Oracle may structurally constrain standalone sales motions in the global market."
+    "ko": "온프레미스 대형 프로젝트 중심 수익 구조에서 SaaS 구독 모델로 전환하는 과정에서는 매출 인식이 분산되는 반면 초기 비용은 선집중되는 구조적 수익성 희생이 불가피하다. 케이던시아 SaaS 매출이 충분한 규모와 속도로 성장하지 못하면 이 기간이 예상보다 길어질 수 있다. 비용 구조가 고정비화되는 경향이 있어 수주 공백기 수익성 회복이 더딜 가능성이 있다.",
+    "en": "The transition from on-premise large-project revenue to a SaaS subscription model inherently front-loads costs while spreading revenue recognition, creating structural near-term margin dilution. If Caidentia SaaS revenue does not scale sufficiently in volume and speed, this transitional gap could extend beyond current expectations. As the cost base becomes more fixed in nature, profitability recovery during order gaps may be slower than historical patterns suggest."
    }
   },
   {
    "cat": {
-    "ko": "수익성 지속 저하 및 비용 구조 고착화 리스크",
-    "en": "Sustained Margin Compression and Fixed Cost Structure Risk"
+    "ko": "환율 및 해외 규제·보안 인증 비용 리스크",
+    "en": "FX and Overseas Regulatory / Security Certification Cost Risk"
    },
    "body": {
-    "ko": "2025년 영업이익률이 1.1%로 하락한 데 이어 2026년 1분기에 대규모 영업손실이 발생했다. 인건비·R&D·해외 마케팅 등 고정 비용 구조가 팽창한 상황에서 매출 회복이 지연될 경우, 영업손실이 장기화될 위험이 있다. SaaS 전환 초기에는 구독 매출이 기존 SI·라이선스 매출을 완전히 대체하기 전까지 매출 공백 구간이 발생하는 구조적 과도기가 존재한다.",
-    "en": "Operating margin fell to 1.1% in 2025 and turned to a significant loss in Q1 2026. If revenue recovery is delayed while the fixed cost base (personnel, R&D, overseas marketing) remains elevated, operating losses could become sustained. The SaaS transition inherently creates a revenue gap period before subscription revenue fully replaces legacy SI and license revenues, representing a structural transitional risk."
+    "ko": "북미·유럽 매출 비중이 확대될수록 환율 변동이 실적에 미치는 영향이 커진다. 또한 각국의 데이터 주권·보안 규제 강화(GDPR, 미국 방산 분야 CMMC 등)는 시장 진입에 필요한 인증 획득 비용과 컴플라이언스 부담을 높이는 변수로 작용한다. SOC2 Type2 인증을 획득했으나 산업·지역별 추가 인증이 요구될 수 있어 관련 비용이 지속될 가능성이 있다.",
+    "en": "As North American and European revenue grows, foreign exchange exposure becomes a more material earnings variable. Strengthening data sovereignty and security regulations — including GDPR in Europe and CMMC in the U.S. defense sector — increase compliance costs and certification burdens for market entry. While SOC2 Type2 has been obtained, additional industry- or region-specific certifications may be required, sustaining related compliance expenditures."
    }
   },
   {
    "cat": {
-    "ko": "IT 투자 사이클 및 거시경제 민감도",
-    "en": "IT Capital Expenditure Cycle and Macroeconomic Sensitivity"
+    "ko": "삼성SDS 지배 구조 및 계열 의존도 리스크",
+    "en": "Samsung SDS Governance and Affiliate Revenue Dependency Risk"
    },
    "body": {
-    "ko": "엠로 매출의 상당 부분을 차지하는 시스템 구축·컨설팅은 고객사의 IT 자본지출 심리에 민감하다. 글로벌 경기 불확실성 심화, 지정학적 갈등, 주요 제조업 고객의 설비 투자 축소 등이 대형 프로젝트 발주 지연으로 이어질 수 있다. 특히 국내 대기업 고객의 경기 대응적 IT 예산 삭감은 엠로의 단기 실적 변동성을 확대하는 핵심 외생 변수다.",
-    "en": "System integration and consulting — historically the largest revenue segment — is sensitive to enterprise IT capex sentiment. Heightened global economic uncertainty, geopolitical tensions, and manufacturing capex reductions at major clients could delay large project awards. In particular, counter-cyclical IT budget cuts at Korea's large conglomerates represent a key exogenous variable that amplifies near-term earnings volatility."
+    "ko": "삼성SDS가 최대 주주로서 사업 전략·파트너십·경영진 구성에 영향을 미치는 구조이므로, 삼성SDS의 전략 변화나 IT 사업 방향 조정이 엠로의 독자적 의사결정에 제약을 줄 수 있다. 삼성 그룹사 향 매출 비중이 높을 경우 삼성그룹 IT 투자 사이클에 실적이 동조화될 가능성이 있다. 반면 삼성SDS와의 협력이 현재 수준보다 축소된다면 글로벌 영업 기반에도 영향이 미칠 수 있는 구조다.",
+    "en": "As the controlling shareholder, Samsung SDS influences Emro's business strategy, partnerships, and management composition, meaning shifts in Samsung SDS's strategic priorities could constrain Emro's independent decision-making. Heavy reliance on Samsung affiliate revenues creates a correlation between Emro's earnings cycle and Samsung Group's overall IT investment patterns. Conversely, any reduction in the scope of Samsung SDS collaboration could impact the global sales channel infrastructure."
    }
   }
  ],
  "checkpoints": [
   {
    "when": {
-    "ko": "2026년 8월 중순",
-    "en": "Mid-August 2026"
+    "ko": "2026년 8~9월",
+    "en": "August–September 2026"
    },
    "what": {
-    "ko": "2026년 2분기 실적 발표 예정. Q1 대비 매출 회복 속도(코오롱인더스트리·휴니드테크놀러지스 프로젝트 매출 인식 포함)와 영업손익 개선 폭이 연간 전망의 현실화 가능성을 판가름하는 핵심 지표다.",
-    "en": "Q2 2026 earnings release expected. The magnitude of sequential revenue recovery — including revenue recognition from Kolon Industries and Huneed Technologies contracts — and the operating profit/loss improvement will be the key signal for whether the full-year consensus scenario can be achieved."
+    "ko": "2026년 2분기 실적 공시(DART): 매출 성장세 유지 여부와 영업이익률 회복 여부를 확인하는 첫 분기. 케이던시아 관련 신규 해외 수주 공시가 병행되는지 주목.",
+    "en": "2026 Q2 earnings disclosure (DART): the first quarter to observe whether revenue growth continues and if operating margin shows recovery. Monitor for any concurrent Caidentia overseas contract announcements."
+   }
+  },
+  {
+   "when": {
+    "ko": "상시 모니터링",
+    "en": "Ongoing"
+   },
+   "what": {
+    "ko": "케이던시아 북미·유럽 신규 고객 계약 공시: 글로벌 SaaS 매출의 실제 성장 속도를 가늠할 수 있는 가장 직접적인 지표로, 현재 파이프라인이 계약으로 전환되는 속도를 판단하는 기준이 된다.",
+    "en": "Caidentia new client contract announcements in North America and Europe: the most direct indicator of the pace at which the global SaaS pipeline is converting into signed orders, and a key benchmark for medium-term earnings recovery trajectory."
    }
   },
   {
@@ -162,66 +172,56 @@
     "en": "H2 2026"
    },
    "what": {
-    "ko": "코오롱인더스트리 차세대 구매포탈 완료(하반기 목표) 및 휴니드테크놀러지스 AX 시스템 2단계 착수 여부 확인. 납기 준수 및 추가 모듈 확장 계약 발생 여부가 하반기 국내 매출 가시성을 결정하는 지표다.",
-    "en": "Completion of Kolon Industries' next-gen procurement portal (targeted H2 2026) and commencement of Phase 2 for Huneed Technologies' AX system. On-time delivery and whether additional module expansion contracts materialize will determine domestic H2 revenue visibility."
+    "ko": "DART 공시를 통한 2025년 연간 사업보고서 세부 항목 확인: 사업 부문별 매출 구성, R&D 및 인건비 증감을 분석해 2025년 마진 압박의 구체적 원인과 2026년 비용 구조 방향을 파악하는 데 활용.",
+    "en": "Full 2025 annual report details via DART: segment-level revenue breakdown and R&D/personnel cost trends will clarify the specific drivers of 2025 margin compression and indicate whether the cost structure is stabilizing heading into 2026."
    }
   },
   {
    "when": {
-    "ko": "2026년 수시",
-    "en": "On an ongoing basis in 2026"
+    "ko": "수시 공시",
+    "en": "Ad Hoc Disclosures"
    },
    "what": {
-    "ko": "글로벌 SRM SaaS '케이던시아'의 북미·유럽 신규 계약 공시. 현재 북미 3개 고객사에서 추가 고객 확보 여부와 PoC·데모 파이프라인의 실제 수주 전환 속도가 해외 비즈니스 모델의 시장 검증 핵심 척도다.",
-    "en": "New contract announcements for Caidentia in North America and Europe. Whether additional clients are onboarded beyond the current three North American accounts, and the conversion rate of active PoC/demo pipeline into signed contracts, are the primary validation metrics for the global SaaS business model."
+    "ko": "삼성SDS 연계 신규 협력 사업 발표 또는 방산·금융·공기업 대형 프로젝트 수주 공시: 국내 대형 거래 파이프라인의 가시성을 판단하고, 2024년 수준 실적 회복 가능성을 사전에 가늠하는 데 중요한 신호.",
+    "en": "New Samsung SDS joint business announcements or major domestic project wins in defense, finance, or public sectors: important leading signals for assessing domestic large-deal pipeline visibility and the feasibility of a return to 2024-level earnings."
    }
   },
   {
    "when": {
-    "ko": "2026년 11월 중순",
-    "en": "Mid-November 2026"
+    "ko": "2026년 연말",
+    "en": "End of 2026"
    },
    "what": {
-    "ko": "2026년 3분기 실적 발표. 연간 이익 목표(증권사 전망: 영업이익 약 29억원) 달성 가능성에 대한 경영진 코멘트와 4분기 수주 파이프라인 현황이 중요한 확인 포인트다.",
-    "en": "Q3 2026 earnings release. Management commentary on full-year operating income achievability (analyst consensus: ~KRW 2.9 billion) and the status of the Q4 project pipeline will be closely monitored."
-   }
-  },
-  {
-   "when": {
-    "ko": "2026년 내 수시",
-    "en": "Throughout 2026"
-   },
-   "what": {
-    "ko": "삼성 계열사 추가 수주 공시. 삼성전자 이외의 삼성 그룹 계열사로 공급이 확대되는지가 내부 수주 파이프라인의 안정성과 깊이를 가늠하는 보조 지표다.",
-    "en": "Additional contract disclosures with Samsung Group affiliates. Whether Emro successfully expands beyond Samsung Electronics to other group entities will serve as an indicator of the reliability and depth of its internal pipeline."
+    "ko": "파트너 생태계 규모(2025년 말 59개사 대비 증감) 및 파트너 교육 이수자 수 변화: 간접 영업 채널 확대가 해외 세일즈 효율성 개선으로 이어지고 있는지 점검하는 지표.",
+    "en": "Partner ecosystem metrics (vs. 59 partners at end-2025) and certified partner headcount growth: key indicators of whether indirect channel expansion is translating into improved overseas sales efficiency and reduced direct selling costs."
    }
   }
  ],
  "verdict": {
   "body": {
-   "ko": "엠로는 국내 AI 기반 SRM 소프트웨어 시장의 독보적 1위 사업자로, 삼성SDS 편입을 계기로 글로벌 SaaS 플랫폼 '케이던시아'를 앞세운 해외 확장과 에이전틱 AI 솔루션 고도화를 중장기 성장 전략으로 구사하고 있다. 재무 건전성(부채비율 18.7%·영업현금흐름 87억8천만원)은 양호하나, 2025년 영업이익률이 1.1%로 급락한 데 이어 2026년 1분기에 매출 약 28% 급감·영업손실 27억6천만원이 발생해 단기 수익성 가시성은 현저히 낮아진 상태다. 코오롱인더스트리·휴니드테크놀러지스 수주와 케이던시아 글로벌 인증 취득 등은 전략 실행이 진행되고 있음을 시사하지만, 글로벌 시장 침투 속도와 비용 구조 레버리지 발현 시점은 여전히 불확실하다. 강세 요인(삼성SDS 채널·AI 특허 차별화·국내 시장 지배력)과 약세 요인(비용 부담·수주 공백·글로벌 경쟁)이 병존하는 구조에서, 투자자 관점에서는 2026년 2분기 이후의 분기별 매출 회복 속도와 해외 신규 수주 공시를 실증적으로 확인하는 것이 합리적인 접근이다.",
-   "en": "Emro is the undisputed leader in Korea's AI-based SRM software market, pursuing a long-term strategy of global SaaS expansion with Caidentia and Agentic AI development, backed by majority shareholder Samsung SDS. While the balance sheet remains sound (debt ratio 18.7%, operating cash flow KRW 8.8 billion), near-term profitability visibility has diminished sharply: operating margin collapsed to 1.1% in 2025, and Q1 2026 delivered a ~28% YoY revenue decline alongside an operating loss of KRW 2.8 billion. Recent contract wins with Kolon Industries and Huneed Technologies, along with Caidentia's global certification achievements, indicate strategic execution is progressing, but the pace of global market penetration and the timing of operating leverage from the expanded cost base remain uncertain. With bullish factors (Samsung SDS channel, AI patent differentiation, domestic market leadership) and bearish factors (cost burden, project gap risk, global competition) coexisting, monitoring quarterly revenue recovery from Q2 2026 and new overseas contract announcements provides a practical framework for assessing the company's strategic progress."
+   "ko": "엠로는 국내 SRM 소프트웨어 1위라는 확고한 시장 지위와 삼성SDS 후광을 기반으로 AI·SaaS 글로벌 전환이라는 구조적 변화를 추진 중인 기업이다. 2024년 역대 최대 실적이 사업의 기초 체력을 확인해 주었으나, 2025년에는 글로벌 투자 비용 집중으로 수익성이 큰 폭으로 낮아진 과도기적 국면에 있다. 케이던시아 SOC2 Type2 인증, 방산·하이테크 등 신규 수직시장 진출, 에이전틱 AI 솔루션 확대, 파트너 생태계 성장 등은 사업의 방향성과 모멘텀을 보여 주는 긍정적 요소다. 반면 글로벌 대형 경쟁사 대비 인지도 격차, SaaS 전환 기간 단기 수익성 희생, 대형 고객 프로젝트 집중에 따른 실적 변동성, 삼성SDS 의존도 등은 균형 있게 살펴볼 위험 요인이다. 주가는 순자산가치(BPS 7,728원) 부근에서 거래되며 과거 성장 기대 구간 대비 크게 낮아진 상태이고, 케이던시아 해외 수주 확대 및 영업이익률 회복 속도가 향후 멀티플의 방향을 결정하는 핵심 변수다. 글로벌 SaaS 전환 시나리오의 실현 가능성과 속도에 대한 각자의 평가를 바탕으로 투자 판단이 이루어져야 한다.",
+   "en": "Emro is a company in structural transition — leveraging its dominant domestic SRM position and Samsung SDS backing to pursue an AI/SaaS-driven global expansion. Record 2024 financials validated underlying business strength, but 2025 represents a transitional phase with sharply compressed profitability as global investment costs are front-loaded. Positive directional indicators include the Caidentia SOC2 Type2 certification, expansion into defense and high-tech verticals, advancing Agentic AI capabilities, and growing partner ecosystem depth. Counterbalancing factors include the brand and network gap versus global SRM incumbents, near-term margin dilution inherent in SaaS transitions, project revenue concentration risk, and Samsung SDS dependency. The stock is trading close to book value (BPS ₩7,728) — a significant de-rating from its prior growth-premium valuation — and the pace at which Caidentia's overseas orders scale and operating margins recover will be the central determinants of future multiple direction. Investment judgment should be grounded in each investor's independent assessment of the feasibility and timeline of Emro's global SaaS transformation."
   }
  },
  "sources": [
   "https://m.irgo.co.kr/IR-COMP/058970",
   "https://www.emro.co.kr/index.php?tpf=common%2Fsave_as&file_path=%2Fattachment%2F202601&file_name=1769589108164101.pdf&orig_name=%ED%95%9C%EA%B5%AD%ED%88%AC%EC%9E%90%EC%A6%9D%EA%B6%8C%EC%9C%A4%EC%B2%A0%ED%99%98%EC%97%B0%EA%B5%AC%EC%9B%9020251118+%282%29.pdf",
+  "https://kr.investing.com/equities/emro-inc-earnings",
   "https://comp.fnguide.com/SVO2/ASP/SVD_Main.asp?gicode=A058970",
   "https://view.asiae.co.kr/news/view.htm?idxno=2025102415061215539",
-  "https://www.investing.com/equities/emro-inc",
   "https://comp.fnguide.com/SVO2/ASP/SVD_Invest.asp?gicode=A058970&MenuYn=Y",
   "https://www.asiae.co.kr/article/2025111417311266749",
+  "https://m.thinkpool.com/compDiscuss/cont/1016544",
+  "https://www.investing.com/equities/emro-inc",
   "https://markets.hankyung.com/stock/058970",
-  "https://invest.deepsearch.com/stock/058970/",
-  "https://news.nate.com/view/20260318n25909",
   "http://www.emro.co.kr/",
-  "https://www.digitaltoday.co.kr/news/articleView.html?idxno=619913",
-  "https://www.hellot.net/news/article.html?no=111340",
-  "https://www.topstarnews.net/news/articleView.html?idxno=15640116",
   "https://www.saramin.co.kr/zf_user/company-info/view/csn/OFVGS3NES1ZnWUloSEVtYWdISzN0Zz09/company_nm/(%EC%A3%BC)%EC%97%A0%EB%A1%9C",
+  "https://m.itooza.com/view.php?ud=2021122315350363100",
+  "https://m.irgo.co.kr/IR-COMP/058970/%EC%97%A0%EB%A1%9C-%EA%B8%B0%EC%97%85%EC%A0%95%EB%B3%B4",
   "https://www.emro.co.kr/index.html",
   "https://www.jobkorea.co.kr/company/16153914",
-  "https://www.topdaily.kr/articles/93731"
+  "http://www.dailyinvest.kr/news/articleView.html?idxno=47345",
+  "https://info.workmarket9.com/ko/blog/top4-procurement-management-solutions-101-guide"
  ],
  "v": 2,
  "model": "claude-sonnet-4-6",
@@ -233,28 +233,13 @@
   "IT·소프트웨어"
  ],
  "market": "코스닥",
- "reportDate": "2026-06-30",
- "reportTs": "2026-06-30 20:56",
- "dataDate": "20260630",
+ "reportDate": "2026-07-17",
+ "reportTs": "2026-07-17 01:45",
+ "dataDate": "20260716",
  "quant": {
-  "asOf": "2026-06-30",
+  "asOf": "2026-07-16",
   "fs_basis": "연결(CFS) · DART 공시 확정치 · 지배주주 기준 순이익",
   "annual": [
-   {
-    "year": 2025,
-    "rev": 83980244007,
-    "op": 909560044,
-    "np": 2534989213,
-    "np_owner": 2534989213,
-    "equity": 95660785759,
-    "equity_owner": 95514875340,
-    "liab": 17852714600,
-    "cfo": 8783029697,
-    "eps_basic": 238,
-    "opm": 1.1,
-    "roe": 2.7,
-    "debt_ratio": 18.7
-   },
    {
     "year": 2024,
     "rev": 79455970128,
@@ -322,31 +307,31 @@
    },
    {
     "q": "2025Q4",
-    "rev": 20011078876,
-    "op": -520225364,
-    "np_owner": 326710000
+    "rev": null,
+    "op": null,
+    "np_owner": null
    },
    {
     "q": "2026Q1",
-    "rev": 14757258873,
-    "op": -2764626454,
-    "np_owner": -2423576967
+    "rev": null,
+    "op": null,
+    "np_owner": null
    }
   ],
   "valuation": {
-   "price": 17410,
-   "mcap": 0.2152,
+   "price": 14150,
+   "mcap": 0.1749,
    "shares": 12362794,
    "total_shares": 12360904,
-   "wavg_shares": 12365188,
+   "wavg_shares": null,
    "per": null,
-   "eps": -47,
-   "pbr": 2.3,
-   "bps": 7556,
-   "roe_ttm": -0.6,
-   "ttm_window": "2025Q2~2026Q1",
-   "ttm_np_owner": -580962488,
-   "pbr_krx": 2.25,
+   "eps": null,
+   "pbr": null,
+   "bps": null,
+   "roe_ttm": null,
+   "ttm_window": null,
+   "ttm_np_owner": null,
+   "pbr_krx": 1.83,
    "bps_krx": 7728.0,
    "basis": "PER·EPS·PBR·BPS 모두 자체 산출(네이버·토스와 동일 방식) · 배당은 DART 공시 주당현금배당금(보완:KRX) ÷ 현재가",
    "dps": 0.0,
