@@ -67,12 +67,26 @@ def main():
             f"<lastmod>{lastmod}</lastmod><changefreq>daily</changefreq>"
             f"<priority>0.6</priority></url>"
         )
+    # GEO 정적 리포트 페이지(r/*.html) — 크롤러가 JS 없이 전문을 읽는 버전
+    geo = sorted((ROOT / "r").glob("*.html")) if (ROOT / "r").exists() else []
+    if geo:
+        out.append(
+            f"<url><loc>{SITE}/r/</loc><lastmod>{lastmod}</lastmod>"
+            f"<changefreq>daily</changefreq><priority>0.8</priority></url>"
+        )
+    for f in geo:
+        if f.name == "index.html":
+            continue
+        out.append(
+            f"<url><loc>{SITE}/r/{f.name}</loc><lastmod>{lastmod}</lastmod>"
+            f"<changefreq>daily</changefreq><priority>0.7</priority></url>"
+        )
     out.append("</urlset>\n")
 
     (ROOT / "sitemap.xml").write_text("\n".join(out), encoding="utf-8")
     print(
         f"sitemap.xml: 정적 {len(STATIC_PAGES)} + 업종 {len(sectors)} "
-        f"+ 종목 {len(tickers)} URL"
+        f"+ 종목 {len(tickers)} + GEO {len(geo)} URL"
     )
 
 
