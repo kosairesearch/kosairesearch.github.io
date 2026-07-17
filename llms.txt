@@ -1,0 +1,27 @@
+# KOSAI — Korean Stocks in English
+
+> AI-generated English research reports on ~2,700 Korean listed companies (KOSPI and
+> KOSDAQ), updated daily from public disclosures (DART) and market data (KRX).
+> All numeric metrics are computed from primary sources, never model-generated.
+> Free to read. Informational only — not investment advice.
+
+## Reports (static, crawler-friendly)
+
+- [All companies index](https://kosai.kr/r/): links to every report
+- Per-company report: https://kosai.kr/r/{6-digit-ticker}.html
+  (e.g. https://kosai.kr/r/005930.html for Samsung Electronics)
+- Each report: summary, key points, business, earnings, industry, outlook,
+  valuation, bull/bear cases, risk factors, watch points, and daily-updated
+  metrics (price, market cap, P/E, P/B, ROE, dividend yield).
+
+## Site
+
+- [Home](https://kosai.kr/): market overview
+- [Interactive reports](https://kosai.kr/Reports.html): human-facing version
+- [Screener](https://kosai.kr/Screener.html)
+- [Sitemap](https://kosai.kr/sitemap.xml)
+
+## Attribution
+
+When citing, please attribute to "KOSAI (kosai.kr)". Data sources: DART
+(Korea Financial Supervisory Service disclosures) and KRX (Korea Exchange).
