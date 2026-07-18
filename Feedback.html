@@ -204,7 +204,7 @@ main{flex:1;padding:8px 0 64px}
   const blockOrig=new WeakMap(); // element  -> {html, key}
   let lang='ko';
 
-  function getLang(){ try{ const v=localStorage.getItem(KEY); if(v) return v; return ((navigator.language||'ko').toLowerCase().startsWith('ko'))?'ko':'en'; }catch(e){ return 'ko'; } }
+  function getLang(){ try{ const v=localStorage.getItem(KEY); if(v) return v; return 'ko'; }catch(e){ return 'ko'; } }
   function norm(s){ return (s==null?'':String(s)).replace(/\s+/g,' ').trim(); }
 
   function translateText(orig){
