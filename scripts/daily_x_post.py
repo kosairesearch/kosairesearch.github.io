@@ -247,44 +247,48 @@ def build_style_block(n=5):
 
 
 def draft(brief, snap):
+    """모델은 각 섹션의 '내용'만 JSON으로 낸다. 제목·헤더·순서 같은 레이아웃은
+    코드(build_post)가 100% 조립한다 — 포맷·용어·면책을 코드로 강제한 것과 같은 원리.
+    이렇게 하면 모델이 헤더를 빠뜨리거나 순서를 바꿔도 최종 글 구조는 항상 동일하다."""
     import anthropic
     client = anthropic.Anthropic(api_key=ANTHROPIC_KEY)
     sys_p = (
         "너는 KOSAI의 리서치 애널리스트다. 그날 급등한 종목 하나에 대해, 증권사 리서치 노트 수준의 "
-        "한국어 종목 분석글 1개를 쓴다. 한국어로만. 개인 블로그 잡담이 아니라 '전문 리포트'다.\n\n"
-        "[출력 구조] 다음 순서로 쓴다.\n"
-        "· 1줄: 리포트 제목(헤드라인). 오늘 이 종목의 핵심 논지를 명사형으로 압축한 한 줄(15~35자).\n"
-        "· 2줄: '{종목명} ({코드}) · {섹터} · 당일 {등락}%'.\n"
-        "· 이어서 빈 줄 후, 아래 6개 ■ 섹션을 모두 포함한다(생략·통합·이름변경 금지). "
-        "섹션 사이 빈 줄. 서술 섹션은 1~2문장으로 짧게, 개조식 섹션은 '- ' 항목으로.\n"
-        "[제목 규칙] 제목은 증권사 리포트 헤드라인처럼 구체적 논지를 담는다. "
+        "한국어 종목 분석 '내용'을 만든다. 한국어로만. 개인 블로그 잡담이 아니라 '전문 리포트'다.\n\n"
+        "[중요] 너는 '내용'만 쓴다. 제목 줄·섹션 헤더(■)·메타 줄·면책 문구·순서는 코드가 조립하므로 "
+        "너는 절대 쓰지 않는다. 아래 JSON 필드에 각 섹션의 알맹이만 채운다.\n\n"
+        "[출력 — JSON만] 아래 스키마 그대로 반환:\n"
+        "{\n"
+        '  "headline": "<리포트 제목 한 줄(15~35자, 명사형). 오늘 이 종목의 핵심 논지를 압축>",\n'
+        '  "surge": "<오늘 상승의 맥락 1~2문장>",\n'
+        '  "business": "<무슨 회사이고 무엇으로 매출을 내는지 1~2문장>",\n'
+        '  "metrics": "<매출·영업이익·흑자전환 여부 등 숫자와 PER·PBR·배당수익률 서술 1~2문장>",\n'
+        '  "bull": ["<강세 논리1>", "<강세 논리2>", "<강세 논리3(선택)>"],\n'
+        '  "bear": ["<약세·리스크1>", "<약세·리스크2>", "<약세·리스크3(선택)>"],\n'
+        '  "verdict": "<중립적 결론 1~2문장. 방향성 단정 금지>"\n'
+        "}\n"
+        "bull·bear는 각각 2~3개 항목의 문자열 배열. 나머지는 문자열.\n\n"
+        "[제목(headline) 규칙] 증권사 리포트 헤드라인처럼 구체적 논지를 담는다. "
         "좋은 예: '본업 회복과 매각 모멘텀, 이중 촉매' / '국산 P-CAB 신약, 흑자 전환의 시작'. "
         "클릭베이트·AI 티 금지: '~의 모든 것·총정리·완벽정리·주목·이유·전망·살펴보기·바로 이것', "
-        "물음표 낚시, 이모지, 과장 형용사(폭발적·초강세 등)는 쓰지 마라.\n"
-        "■ 급등 포인트 — 오늘 상승의 맥락. 단, 구체적 촉매를 노트에서 확인할 수 없으면 지어내지 말고 "
-        "'구체적 촉매는 확인이 필요하다'고 명시한 뒤 실적·모멘텀 등 배경 요인으로 분석적으로 서술.\n"
-        "■ 기업 개요 — 무슨 회사이고 무엇으로 매출을 내는지(핵심 제품·수익원·시장 지위).\n"
-        "■ 실적·밸류에이션 — 매출/영업이익/흑자전환 여부 등 숫자와 PER·PBR·배당수익률. 노트/스냅샷 수치만.\n"
-        "■ 투자 포인트 — 강세 논리 2~3개(개조식).\n"
-        "■ 리스크 — 약세·리스크 요인 2~3개(개조식).\n"
-        "■ 총평 — 중립적 결론 1~2문장. 방향성 단정 금지.\n\n"
+        "물음표 낚시, 이모지, 과장 형용사(폭발적·초강세 등) 금지.\n"
+        "[surge] 오늘 상승의 맥락. 단, 구체적 촉매를 노트에서 확인할 수 없으면 지어내지 말고 "
+        "'구체적 촉매는 확인이 필요하다'는 취지를 명시한 뒤 실적·모멘텀 등 배경 요인으로 분석적으로 서술.\n"
+        "[metrics] 노트/스냅샷에 있는 수치만. 지어내지 마라.\n"
         "[문체] 전문 애널리스트의 문어체 '~다' 종결. 금융 용어는 정확히"
         "(P-CAB·원외처방액·마일스톤·부채비율 등 그대로). "
-        "구분 기호 ■와 '-'는 허용, 그 외 이모지·해시태그·링크·물결(~)·전각 대시(—)는 금지.\n"
-        "[분량·호흡] 문장은 짧고 명확하게 쓴다. 한 문장이 길어지면 반드시 두 문장으로 쪼갠다. "
-        "쉼표로 3개 이상 나열하지 말고 짧은 문장으로 나눠라. 서술형 섹션(급등 포인트·기업 개요·총평)은 "
-        "각각 1~2문장으로 간결하게. 전체 분량은 너무 길지 않게 압축한다.\n"
+        "각 필드 안에서 이모지·해시태그·링크·물결(~)·전각 대시(—)·■·머리기호(-) 금지(순수 문장만).\n"
+        "[분량·호흡] 문장은 짧고 명확하게. 한 문장이 길어지면 두 문장으로 쪼갠다. "
+        "쉼표로 3개 이상 나열하지 말고 짧은 문장으로 나눠라. 서술 필드는 각 1~2문장으로 간결하게.\n"
         "[AI 티 금지] '따라서·또한·한편·정리하면·결론적으로·요약하면·살펴보자' 같은 상투 접속/마무리, "
         "억지 좌우대칭 균형, 교과서식 전개 금지. 확신 있는 애널리스트의 목소리로.\n"
         "[컴플라이언스 — KOSAI는 등록 투자자문사가 아니다] 중립 엄수. 매수/매도 권유, 목표주가, "
         "'오른다/더 간다/지금 사라/저평가라 오를 것' 금지. 급등했다고 추격을 부추기지 마라. "
-        "강세와 리스크를 같은 무게로 제시하고 판단은 독자에게 맡겨라. 숫자는 노트/스냅샷에 있는 것만, 지어내지 마라.\n"
-        "[표기] 종목명 첫 등장에만 6자리 코드를 괄호로. 지표는 국내 관례대로 PER·PBR.\n"
-        "면책 문장은 네가 쓰지 마라(코드가 맨 끝에 자동으로 붙인다)."
+        "강세와 리스크를 같은 무게로 제시하고 판단은 독자에게 맡겨라."
     )
     usr = (
         f"{brief}\n\n"
-        "위 종목으로 X 게시글을 써라. JSON만 반환: {\"ko\": \"<한국어 X 게시글>\"}."
+        "위 종목으로 리서치 노트의 '내용'을 위 JSON 스키마로만 반환하라. 코드가 레이아웃을 조립한다."
     )
     msg = client.messages.create(
         model=MODEL, max_tokens=2000, system=sys_p,
@@ -306,6 +310,60 @@ def draft(brief, snap):
             return json.loads(m.group(0))
         except Exception:
             return None
+
+
+def _clean_field(s):
+    """모델이 필드 안에 실수로 넣은 레이아웃 기호(■·머리기호·전각대시)를 제거."""
+    s = re.sub(r"\s*[—–]\s*", ", ", (s or "")).strip()   # 전각 대시 → 쉼표(공백 정리)
+    s = re.sub(r"^[\s■\-·•]+", "", s).strip()   # 앞머리 기호 제거
+    return s
+
+
+def build_post(d, snap):
+    """모델 JSON 내용 + 고정 레이아웃을 코드가 조립 → 구조가 항상 동일.
+    제목 → 메타 줄 → 6개 ■ 섹션(순서·이름 고정) → 면책. 서술부는 문장별 줄바꿈."""
+    name = snap.get("name_ko") or ""
+    tk = snap.get("ticker") or ""
+    sector = snap.get("sector") or ""
+    chg = snap.get("당일등락_pct")
+    chg_s = f"+{chg}%" if isinstance(chg, (int, float)) and chg >= 0 else f"{chg}%"
+
+    headline = _clean_field(d.get("headline")) or f"{name}, 당일 {chg_s} 급등"
+    meta_bits = [f"{name}({tk})"]
+    if sector:
+        meta_bits.append(sector)
+    meta_bits.append(f"당일 {chg_s}")
+    meta = " · ".join(meta_bits)
+
+    def para(node):
+        return _clean_field(node)
+
+    def bullets(arr):
+        out = []
+        for it in (arr or []):
+            v = _clean_field(it if isinstance(it, str) else "")
+            if v:
+                out.append("- " + v)
+        return out
+
+    lines = [headline, meta, ""]
+    sections = [
+        ("■ 급등 포인트", para(d.get("surge")), None),
+        ("■ 기업 개요", para(d.get("business")), None),
+        ("■ 실적·밸류에이션", para(d.get("metrics")), None),
+        ("■ 투자 포인트", None, bullets(d.get("bull"))),
+        ("■ 리스크", None, bullets(d.get("bear"))),
+        ("■ 총평", para(d.get("verdict")), None),
+    ]
+    for header, prose, items in sections:
+        lines.append(header)
+        if items:
+            lines.extend(items)
+        elif prose:
+            lines.append(prose)
+        lines.append("")
+    raw = "\n".join(lines).strip()
+    return format_report(raw)
 
 
 def _send_one(text):
@@ -388,7 +446,7 @@ def _sentences(block):
 def format_report(text):
     """리포트 가독성 정리 — 섹션 헤더(■)·개조식(-)·제목줄은 그대로 두고, 서술형 문단은
     문장마다 줄을 바꿔 '따닥따닥' 붙는 걸 막는다. 섹션 사이 빈 줄은 유지."""
-    text = (text or "").replace("—", ", ").replace("–", ", ")   # 전각 대시 금지(코드 강제)
+    text = re.sub(r"\s*[—–]\s*", ", ", (text or ""))   # 전각 대시 → 쉼표(코드 강제, 공백 정리)
     out, seen_section = [], False
     for raw in text.split("\n"):
         s = raw.strip()
@@ -446,14 +504,14 @@ def main():
     log(f"선정: {stock['ticker']} {stock.get('name')} · 당일 {stock.get('change')}%")
     brief, snap = build_brief(stock)
     d = draft(brief, snap)
-    if not d or not d.get("ko"):
+    if not d or not (d.get("headline") or d.get("surge") or d.get("business")):
         log("❌ 초안 생성 실패(Claude 응답 파싱 불가) — 종료.")
         sys.exit(1)
-    log("=== 생성된 KO 글 ===\n" + d["ko"] + "\n=== 끝 ===")
 
     tk = stock["ticker"]
-    # 섹션 구조는 존중하되, 서술 문단은 문장별로 줄바꿈해 호흡을 준다. 면책은 코드가 자동 부착.
-    msg = format_report(d["ko"])
+    # 레이아웃(제목·헤더·순서)은 코드가 조립 → 구조가 항상 동일. 면책은 코드가 자동 부착.
+    msg = build_post(d, snap)
+    log("=== 생성된 KO 글 ===\n" + msg + "\n=== 끝 ===")
     msg += "\n\n※ 공시·공개데이터 기반 정보이며 투자 권유가 아닙니다."
     if tg_send(msg):
         st["last_date"] = today
