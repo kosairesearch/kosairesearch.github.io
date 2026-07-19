@@ -1,15 +1,20 @@
 #!/usr/bin/env python3
-"""하루 1종목 — X(트위터) 게시용 글을 텔레그램으로 푸시.
+"""하루 1종목 — X(트위터) 게시용 '한국어' 글을 텔레그램으로 푸시.
 
-매일 정해진 시간에 종목 1개를 골라(겹치지 않게 로테이션) 우리 리포트·시세를
-근거로 Claude가 X용 영어 글 + 한국어 검수본을 작성, 텔레그램으로 보낸다.
-사람은 검토 후 X에 복붙만 하면 됨. (자동 게시 X — 계정정지·스팸 방지)
+장 마감 후 실행. 그날 '급등한 종목'(거래대금·시총으로 거른 진짜 급등주) 중 1개를
+골라, 우리 리포트·시세를 근거로 Claude가 개인투자자가 흥미롭게 읽을 한국어 X 글을
+작성해 텔레그램으로 보낸다. 사람은 검토 후 X에 복붙만 하면 됨(자동 게시 X — 정지·스팸 방지).
 
-원칙: 중립. 매수/매도·목표주가·단정적 주가 방향성 금지. 사실+분석만.
+훅은 '오늘 몇 % 급등'이고, 본문은 '이 회사가 뭐 하는 곳인지'를 리포트로 풀어준다.
+급등 촉매를 확실히 모르면 지어내지 않는다.
+
+원칙: 중립. 매수/매도·목표주가·"오른다/추격" 금지. 사실+양면(강/약)만. 끝에 면책 1줄.
 
 필요 시크릿: TELEGRAM_BOT_TOKEN, TELEGRAM_CHAT_ID, ANTHROPIC_API_KEY
 환경변수(옵션): NEWS_MODEL(기본 claude-sonnet-4-6), X_TICKER(수동지정),
-              X_FORCE(1이면 같은 날 재전송 허용·테스트용)
+              X_FORCE(1이면 같은 날 재전송 허용·테스트용),
+              X_SURGE_MIN(급등 기준 %, 기본 7), X_TV_MIN(거래대금 하한 원, 기본 5e9),
+              X_MCAP_MIN(시총 하한 조, 기본 0.05)
 """
 import os
 import re
@@ -72,39 +77,41 @@ def _thesis(tk):
         return "", ""
 
 
+SURGE_MIN = float(os.getenv("X_SURGE_MIN", "7"))     # 급등 기준(%)
+TV_MIN = float(os.getenv("X_TV_MIN", "5e9"))          # 거래대금 하한(원) — 실제 관심의 증거
+MCAP_MIN = float(os.getenv("X_MCAP_MIN", "0.05"))     # 시총 하한(조) — 순수 잡주 제외
+
+
 def build_candidates(st):
-    """오늘 올릴 만한 후보 추림 — ① 당일 상승(긍정적 이슈 프록시) ② 저평가 셋업."""
+    """그날 '급등한 종목' 후보 추림. 순수 상위 상승주엔 초소형 잡주가 많으므로
+    거래대금(관심)·시총 하한으로 걸러 '진짜 급등주'만 남긴다. 리포트 있는 종목만."""
     live = loadjs("data/stocks.js", "window.KOS_LIVE_DATA")["stocks"]
     valmap = loadjs("data/valuation.js", "window.KOS_VALUATION")["stocks"]
     have = set(p.stem for p in (ROOT / "data" / "reports_v2").glob("*.json"))
-    by_mcap = sorted(live, key=lambda x: x.get("mcap", 0) or 0, reverse=True)
-    rankpool = [s for s in by_mcap if s["ticker"] in have][:POOL]   # 인지도 컷
     recent = set(st.get("recent", [])[-NO_REPEAT:])
-    pool = [s for s in rankpool if s["ticker"] not in recent]
+    base = [s for s in live if s["ticker"] in have and s["ticker"] not in recent
+            and (s.get("trading_value") or 0) >= TV_MIN
+            and (s.get("mcap") or 0) >= MCAP_MIN]
 
-    # ① 모멘텀: 당일 +1.5% 이상 & 거래대금 충분(유동성 있는 실제 이슈)
-    movers = sorted(
-        [s for s in pool if (s.get("change") or 0) >= 1.5 and (s.get("trading_value") or 0) >= 1e10],
-        key=lambda s: s.get("change") or 0, reverse=True)[:10]
+    # 급등 문턱을 점진적으로 완화(장 전체가 약한 날에도 항상 후보 확보)
+    movers = []
+    for thr in (SURGE_MIN, 5, 3, 1.5, 0.5):
+        movers = sorted([s for s in base if (s.get("change") or 0) >= thr],
+                        key=lambda s: s.get("change") or 0, reverse=True)[:15]
+        if movers:
+            log(f"급등 기준 {thr}% · 후보 {len(movers)}종목")
+            break
 
-    # ② 밸류: 흑자(eps>0) & 합리적 저PER·저PBR(부실·이상치 제외)
-    def cheap(s):
-        per, pbr, _ = _stats(s, valmap)
-        return per is not None and pbr is not None and 2 <= per <= 12 and 0.2 <= pbr <= 1.5
-    value = sorted([s for s in pool if cheap(s)],
-                   key=lambda s: (_stats(s, valmap)[0] or 99))[:10]
-
-    seen, cands = set(), []
-    for tag, lst in (("mover", movers), ("value", value)):
-        for s in lst:
-            if s["ticker"] in seen:
-                continue
-            seen.add(s["ticker"])
-            per, pbr, div = _stats(s, valmap)
-            title, lead = _thesis(s["ticker"])
-            cands.append({"stock": s, "tag": tag, "per": per, "pbr": pbr, "div": div,
-                          "change": s.get("change"), "title": title, "lead": lead})
-    fallback = pool[0] if pool else (rankpool[0] if rankpool else None)
+    cands = []
+    for s in movers:
+        per, pbr, div = _stats(s, valmap)
+        title, lead = _thesis(s["ticker"])
+        cands.append({"stock": s, "tag": "surge", "per": per, "pbr": pbr, "div": div,
+                      "change": s.get("change"), "title": title, "lead": lead})
+    # 최후 폴백: 그래도 없으면 거래대금 상위 상승주(리포트 보유) 1개
+    fb = sorted([s for s in live if s["ticker"] in have and (s.get("change") or 0) > 0],
+                key=lambda s: s.get("trading_value") or 0, reverse=True)
+    fallback = fb[0] if fb else None
     return cands, fallback
 
 
@@ -167,7 +174,7 @@ def t2(node, lang="en"):
 
 
 def build_brief(stock):
-    """Claude에 넘길 종목 브리프(영어) 구성 — 리포트 본문 + 시세 스냅샷."""
+    """Claude에 넘길 종목 브리프(한국어) — 당일 급등 + 리포트 본문 + 시세 스냅샷."""
     tk = stock["ticker"]
     rp = json.loads((ROOT / "data" / "reports_v2" / f"{tk}.json").read_text(encoding="utf-8"))
     val = loadjs("data/valuation.js", "window.KOS_VALUATION")["stocks"].get(tk, {})
@@ -176,34 +183,39 @@ def build_brief(stock):
     per = round(p / eps, 1) if (eps and eps > 0 and p) else None
     pbr = round(p / bps, 2) if (bps and p) else None
     div = round(dps / p * 100, 2) if (dps and p) else None
+    tv = stock.get("trading_value") or 0
     snap = {
-        "name_en": stock.get("name_en") or stock.get("name"),
         "name_ko": stock.get("name"),
+        "name_en": stock.get("name_en") or stock.get("name"),
         "ticker": tk,
         "sector": stock.get("sector"),
-        "price_krw": p,
-        "mcap_tn_krw": round(stock.get("mcap", 0), 1) if stock.get("mcap") else None,
-        "PER": per, "PBR": pbr, "div_yield_pct": div,
+        "당일등락_pct": stock.get("change"),
+        "현재가_원": p,
+        "거래대금_억": round(tv / 1e8) if tv else None,
+        "시총_조": round(stock.get("mcap", 0), 2) if stock.get("mcap") else None,
+        "PER": per, "PBR": pbr, "배당수익률_pct": div,
     }
-    lines = ["[LIVE SNAPSHOT]", json.dumps(snap, ensure_ascii=False)]
-    lines += ["", "[OUR REPORT — facts to draw from]"]
-    lines.append("Title: " + t2(rp.get("title")))
-    lines.append("Lead: " + t2(rp.get("lead")))
+    L = lambda node: t2(node, "ko")   # 리포트는 한국어로 뽑는다
+    lines = ["[오늘 시세 스냅샷]", json.dumps(snap, ensure_ascii=False)]
+    lines += ["", "[우리 리포트 — 여기 있는 사실만 활용]"]
+    lines.append("제목: " + L(rp.get("title")))
+    lines.append("리드: " + L(rp.get("lead")))
     kps = rp.get("keypoints") or []
     if kps:
-        lines.append("Key points:")
+        lines.append("핵심 포인트:")
         for k in kps[:5]:
-            lines.append(" - " + t2(k))
-    for sec in ("earnings", "outlook", "valuation_comment"):
-        v = t2(rp.get(sec))
+            lines.append(" - " + L(k))
+    for sec, label in (("business", "사업"), ("earnings", "실적"),
+                       ("outlook", "전망"), ("valuation_comment", "밸류에이션")):
+        v = L(rp.get(sec))
         if v:
-            lines.append(f"{sec}: {v}")
-    for side in ("bull", "bear"):
+            lines.append(f"{label}: {v}")
+    for side, label in (("bull", "강세논리"), ("bear", "약세논리")):
         arr = rp.get(side) or []
         if arr:
-            lines.append(f"{side}:")
+            lines.append(f"{label}:")
             for it in arr[:3]:
-                lines.append(f" - {t2(it.get('title'))}: {t2(it.get('body'))[:240]}")
+                lines.append(f" - {L(it.get('title'))}: {L(it.get('body'))[:240]}")
     return "\n".join(lines), snap
 
 
@@ -238,46 +250,31 @@ def draft(brief, snap):
     import anthropic
     client = anthropic.Anthropic(api_key=ANTHROPIC_KEY)
     sys_p = (
-        "You write a single daily X (Twitter) post for KOSAI, an English-language research "
-        "brand covering Korean stocks (KOSPI/KOSDAQ). Audience: global finance Twitter. "
-        "You are given ONE company's live snapshot and our research notes. Write one strong, "
-        "self-contained post about that company. "
-        "ABOVE ALL, WRITE IN THE EXACT STYLE of the STYLE REFERENCE posts at the end: copy their "
-        "sentence length, their heavy line breaks, their punchy casual human voice. "
-        "SENTENCES: keep them SHORT. If a sentence runs long, split it into two. No long "
-        "analytical run-on sentences. "
-        "PARAGRAPHS: SHORT. Mostly one short sentence per line, with frequent line breaks, like the "
-        "references — not dense blocks. "
-        "You MAY cover the full story (what happened, the driver, the bull case, the bear case, "
-        "valuation) — but each as its own short punchy line, never as long paragraphs. Cut filler. "
-        "STYLE: concrete numbers (revenue, operating profit, growth, multiple) woven into "
-        "sentences, not bullet dumps; confident but human voice; vary sentence length. "
-        "NO em-dashes, NO '~', NO 'worth noting', NO 'in a world where', NO dramatic colon "
-        "reveals, NO emojis, NO hashtags, NO links in the body. "
-        "COMPLIANCE (hard rules, KOSAI is not a registered advisor): neutral only. "
-        "NO buy/sell calls, NO price targets, NO 'will go up/down', NO 'undervalued, should rerate'. "
-        "Present what is happening and the bull vs bear setup with equal weight; let the reader "
-        "judge. Numbers must come only from the snapshot/notes; never invent figures. "
-        "TICKER: the FIRST time you mention the company name, put its 6-digit ticker (from the "
-        "snapshot) in parentheses right after it, e.g. 'ISC (095340)'. Only on that first mention. "
-        "TERMINOLOGY (this is for a global English audience, so use the terms they actually use): "
-        "write 'P/E' NOT 'PER', 'P/B' NOT 'PBR', and 'book value per share' NOT 'BPS'. Never use the "
-        "Korean/Japanese-style abbreviations PER/PBR/BPS. EPS, ROE, ROIC are fine as-is. "
-        "SOUND HUMAN, NOT AI (important): write like a sharp human markets person, not a language "
-        "model. Avoid AI tells completely: no 'moreover', 'furthermore', 'notably', 'it's worth "
-        "noting', 'in conclusion', 'in summary', 'overall', 'that said' as a crutch, and no tidy "
-        "wrap-up sentence. Skip robotic perfectly-balanced hedging and formulaic transitions. Use "
-        "contractions, plain words, and a real point of view on what's interesting (still neutral "
-        "on direction). Vary rhythm hard: mix a punchy short line with a longer one; a sentence "
-        "fragment is fine. Open with something a person would actually say, not a template."
+        "너는 KOSAI(한국 주식 리서치)의 X(트위터) 담당이다. 그날 '급등한 종목' 하나에 대해 "
+        "개인투자자가 흥미롭게 끝까지 읽을 한국어 게시글 1개를 쓴다. 한국어로만 쓴다.\n"
+        "훅(첫 줄): 스냅샷의 '당일등락_pct'를 활용해 오늘 급등했다는 사실로 시작한다. "
+        "예: '오늘 +23% 급등한 OO(123456), 대체 뭐 하는 회사길래.' 궁금하게 만들어라.\n"
+        "촉매 주의: 오늘 왜 올랐는지 '구체적 이유'를 우리가 모를 수 있다. 모르면 절대 지어내지 마라. "
+        "'급등 배경은 확인 필요' 정도로 두고, 대신 '이 회사가 어떤 회사고 뭘로 돈 버는지'를 리포트로 풀어라. "
+        "그게 이 글의 진짜 값이다.\n"
+        "구성(각 항목은 짧은 문장, 문단 사이는 빈 줄): ① 훅 ② 무슨 회사·뭘로 돈 버나 "
+        "③ 실적/밸류 숫자(스냅샷·노트의 매출·이익·PER·PBR 등) ④ 강세 포인트 vs 약세 포인트 "
+        "⑤ 짚어볼 리스크. 종목이 작아 쓸 내용이 적으면 억지로 늘리지 말고 짧게.\n"
+        "문체: 사람이 쓴 듯한 구어체. 문장 짧게, 줄바꿈 자주. 한 줄에 한 문장 위주. "
+        "이모지·해시태그·링크·물결(~)·전각 대시 금지.\n"
+        "AI 티 금지: '따라서, 또한, 한편, 결론적으로, 정리하면, 요약하면, 살펴보자' 같은 상투어와 "
+        "깔끔한 마무리 문장 쓰지 마라. 사람이 실제로 할 말로 시작하라.\n"
+        "컴플라이언스(엄수 — KOSAI는 등록 투자자문사가 아니다): 중립. 매수/매도 권유, 목표주가, "
+        "'오른다/더 간다/지금 사라/저평가라 오를 것' 절대 금지. 급등했다고 추격을 부추기지 마라. "
+        "무슨 일이 있었나 + 강세·약세를 같은 무게로 제시하고 판단은 독자에게 맡겨라. "
+        "숫자는 스냅샷/노트에 있는 것만. 지어내지 마라.\n"
+        "표기: 종목명을 처음 쓸 때 옆에 6자리 코드를 괄호로 붙인다(예: 'ISC (095340)'). 첫 언급에만. "
+        "지표는 국내 관례대로 PER·PBR로 쓴다.\n"
+        "면책 문장은 네가 쓰지 마라(코드가 맨 끝에 자동으로 붙인다)."
     )
-    style = build_style_block()
-    if style:
-        sys_p += style
     usr = (
         f"{brief}\n\n"
-        "Write the post. Return ONLY JSON: {\"en\": \"<the X post>\", "
-        "\"ko\": \"<Korean gloss so the operator can verify accuracy and tone>\"}."
+        "위 종목으로 X 게시글을 써라. JSON만 반환: {\"ko\": \"<한국어 X 게시글>\"}."
     )
     msg = client.messages.create(
         model=MODEL, max_tokens=2000, system=sys_p,
@@ -367,12 +364,15 @@ def normalize_terms(text):
 
 
 def _sentences(block):
-    """한 블록 텍스트를 문장 리스트로. 약어·소수점·통화에서는 안 끊는다."""
+    """한 블록을 문장 리스트로 분할(한/영 공용). 약어·소수점에서는 안 끊는다.
+    한글 문장('~했다. 다음은')과 영어 문장 모두 '문장부호+공백'에서 끊는다."""
     t = re.sub(r"\s*\n\s*", " ", (block or "")).strip()
-    for a in _ABBRS:                       # 약어 마침표 임시 보호
+    for a in _ABBRS:                       # 영어 약어 마침표 임시 보호
         t = t.replace(a, a.replace(".", "\x00"))
-    parts = re.split(r"(?<=[.!?])\s+(?=[A-Z0-9$\"'‘“])", t)
-    return [p.replace("\x00", ".").strip() for p in parts if p.strip()]
+    t = re.sub(r"(\d)\.(\d)", "\\1\x01\\2", t)   # 소수점(48.0 등) 보호
+    parts = re.split(r"(?<=[.!?])\s+", t)         # 한글·영어 공통: 종결부호+공백
+    return [p.replace("\x00", ".").replace("\x01", ".").strip()
+            for p in parts if p.strip()]
 
 
 def format_paragraphs(text):
@@ -407,24 +407,24 @@ def main():
     if not stock:
         log("❌ 후보 종목 없음 — 종료.")
         sys.exit(1)
-    log(f"선정: {stock['ticker']} {stock.get('name')}")
+    log(f"선정: {stock['ticker']} {stock.get('name')} · 당일 {stock.get('change')}%")
     brief, snap = build_brief(stock)
     d = draft(brief, snap)
-    if not d or not d.get("en"):
+    if not d or not d.get("ko"):
         log("❌ 초안 생성 실패(Claude 응답 파싱 불가) — 종료.")
         sys.exit(1)
-    log("=== 생성된 EN 글 ===\n" + d["en"] + "\n=== 끝 ===")
+    log("=== 생성된 KO 글 ===\n" + d["ko"] + "\n=== 끝 ===")
 
     tk = stock["ticker"]
-    # 상단 헤더 없이 영어 글만 단독 발송. 문단은 코드로 강제 정리(문장당 한 줄 + 빈 줄).
-    msg_en = format_paragraphs(normalize_terms(d["en"]))
-    msg_ko = f"— KR (검수용) —\n{d.get('ko','')}"
-    if tg_send(msg_en) and tg_send(msg_ko):
+    # 한국어 글만 단독 발송. 문단은 코드로 강제 정리(문장당 한 줄 + 빈 줄), 면책은 코드가 자동 부착.
+    msg = format_paragraphs(d["ko"]).rstrip()
+    msg += "\n\n※ 공시·공개데이터 기반 정보이며 투자 권유가 아닙니다."
+    if tg_send(msg):
         st["last_date"] = today
         st.setdefault("recent", []).append(tk)
         st["recent"] = st["recent"][-200:]
         save_state(st)
-        log(f"✅ 전송 완료 — {tk} {snap['name_ko']}")
+        log(f"✅ 전송 완료 — {tk} {snap['name_ko']} (당일 {stock.get('change')}%)")
     else:
         log("❌ 텔레그램 전송 실패 — 위 '텔레그램 응답 오류' 로그 확인.")
         sys.exit(1)
