@@ -32,7 +32,7 @@ concurrency:
 jobs:
   post:
     runs-on: ubuntu-latest
-    timeout-minutes: 10
+    timeout-minutes: 25
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-python@v5
@@ -40,6 +40,17 @@ jobs:
           python-version: '3.11'
           cache: 'pip'
       - run: pip install -r requirements.txt
+      # 정시 발송(외부 크론=workflow_dispatch) 경로에서는 '그날 종가'를 직접 수집한 뒤 글을 쓴다.
+      # 데이터 파이프라인(update_data)이 아직 안 돌았어도 최신 시세로 급등주를 고르기 위함.
+      # 실패해도(장 전·데이터 미게시) 기존 stocks.js로 발송하도록 continue-on-error. 커밋은 안 함.
+      - name: 그날 시세 즉시 수집 (수동/외부크론 실행 시)
+        if: github.event_name == 'workflow_dispatch'
+        continue-on-error: true
+        env:
+          DART_API_KEY: ${{ secrets.DART_API_KEY }}
+          KRX_ID: ${{ secrets.KRX_ID }}
+          KRX_PW: ${{ secrets.KRX_PW }}
+        run: python scripts/collect_data.py
       # 전송 상태(_x_daily.json) 보존 — 날짜 가드/로테이션. 커밋·Pages 재배포 없음.
       - name: 상태 복원/저장 (캐시)
         uses: actions/cache@v4
