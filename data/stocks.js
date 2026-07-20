@@ -1,6 +1,6 @@
 // KOS ai — 자동 생성 데이터 파일. 직접 수정하지 마세요.
 window.KOS_LIVE_DATA = {
-  "lastUpdated": "2026-07-21 01:47",
+  "lastUpdated": "2026-07-21 05:12",
   "dataDate": "20260720",
   "stocks": [
     {
