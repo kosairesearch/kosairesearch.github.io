@@ -1,6 +1,6 @@
 // KOS ai — 자동 생성 데이터 파일. 직접 수정하지 마세요.
 window.KOS_LIVE_DATA = {
-  "lastUpdated": "2026-07-22 01:05",
+  "lastUpdated": "2026-07-22 01:41",
   "dataDate": "20260721",
   "stocks": [
     {
@@ -46302,7 +46302,7 @@ window.KOS_LIVE_DATA = {
       "name": "송우인포텍",
       "name_en": "",
       "market": "코넥스",
-      "sector": "기타",
+      "sector": "IT·소프트웨어",
       "price": 4700,
       "change": 0.0,
       "volume": 0,
@@ -46310,7 +46310,7 @@ window.KOS_LIVE_DATA = {
       "mcap": 0.0141,
       "shares": 3000000,
       "categories": [
-        "기타"
+        "IT·소프트웨어"
       ],
       "rank": 2569
     },
