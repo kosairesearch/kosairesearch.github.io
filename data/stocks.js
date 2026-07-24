@@ -1,6 +1,6 @@
 // KOS ai — 자동 생성 데이터 파일. 직접 수정하지 마세요.
 window.KOS_LIVE_DATA = {
-  "lastUpdated": "2026-07-25 00:59",
+  "lastUpdated": "2026-07-25 01:57",
   "dataDate": "20260724",
   "stocks": [
     {
@@ -21165,7 +21165,7 @@ window.KOS_LIVE_DATA = {
       "name": "에이치엘지노믹스",
       "name_en": "",
       "market": "코스닥",
-      "sector": "기타",
+      "sector": "바이오·제약",
       "price": 14790,
       "change": -31.21,
       "volume": 19574730,
@@ -21173,7 +21173,7 @@ window.KOS_LIVE_DATA = {
       "mcap": 0.1151,
       "shares": 7782161,
       "categories": [
-        "기타"
+        "바이오·제약"
       ],
       "rank": 1175
     },
