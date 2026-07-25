@@ -14,7 +14,7 @@ KOSAI 리포트 v2 — '정량 + 정성 분리' 구조 (Message Batches API)
   auto     — submit 후 폴링, collect
 
 환경변수: ANTHROPIC_API_KEY, DART_API_KEY, KRX_ID, KRX_PW,
-          REPORT_MODEL_V2(기본 claude-opus-4-8), REPORT_TICKERS, REPORT_TOP_N(기본 10),
+          REPORT_MODEL_V2(기본 claude-opus-5), REPORT_TICKERS, REPORT_TOP_N(기본 10),
           BATCH_MAX_WAIT_SEC
 """
 
@@ -56,11 +56,11 @@ def add_skip(tickers):
     for t in tickers:
         (SKIP_DIR / t).write_text("", encoding="utf-8")
 
-MODEL = os.getenv("REPORT_MODEL_V2", "claude-opus-4-8")  # 폴백
+MODEL = os.getenv("REPORT_MODEL_V2", "claude-opus-5")  # 폴백
 # 모델 정책: 시총 상위 MODEL_TOP_N개는 고급 모델(Opus), 나머지는 효율 모델(Sonnet)
-MODEL_TOP = os.getenv("REPORT_MODEL_TOP", "claude-opus-4-8")
-MODEL_REST = os.getenv("REPORT_MODEL_REST", "claude-sonnet-4-6")
-MODEL_TOP_N = int(os.getenv("REPORT_MODEL_TOP_N", "500"))
+MODEL_TOP = os.getenv("REPORT_MODEL_TOP", "claude-opus-5")
+MODEL_REST = os.getenv("REPORT_MODEL_REST", "claude-sonnet-5")
+MODEL_TOP_N = int(os.getenv("REPORT_MODEL_TOP_N", "300"))
 TOP_N = int(os.getenv("REPORT_TOP_N", "10"))
 MAX_WAIT = int(os.getenv("BATCH_MAX_WAIT_SEC", "10800"))
 
