@@ -1,2 +1,4 @@
-- (DART 초기화 실패) HTTPSConnectionPool(host='opendart.fss.or.kr', port=443): Max retries exceeded with url: /api/corpCode.xml?crtfc_key=fe32f957e40b37428b0d5f4807aa495839506436 (Caused by ConnectTimeoutError(<HTTPSConnection(host='opendart.fss.or.kr', port=443) at 0x7f530b6ae210>, 'Connection to opendart.fss.or.kr timed out. (connect timeout=None)'))
-❌ DART 초기화 실패
+- 리포트 동기화 2558건 — 그리드=리포트 항상 일치(무료)
+
+✅ 밸류에이션 수집 — 이번 0건 신규 / 건너뜀 2684 / 보유 2695/2684개 / 갱신필요 0개
+- VALUATION_COMPLETE 전 종목 최신 — 추가 수집 없음
