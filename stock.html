@@ -238,7 +238,8 @@ table.dt .pos{color:var(--up);font-weight:700}table.dt .neg{color:var(--down);fo
 .tbl-foot{font:500 12px var(--font-sans);color:var(--fg-3);margin-top:10px}
 /* 실적 차트 (inline SVG) */
 .chart-card{padding:18px 18px 14px;margin-top:6px}
-.chart-card+.chart-card{margin-top:14px}
+/* 카드끼리 이어질 때 간격 통일(차트↔표 모두) — 섹션 첫 카드만 기본 6px */
+.chart-card+.chart-card,.chart-card+.tbl-card,.tbl-card+.tbl-card,.tbl-card+.chart-card{margin-top:14px}
 .chart-cap{font:600 13.5px var(--font-sans);color:var(--fg-2);margin-bottom:2px}
 .chart-legend{display:flex;gap:14px;flex-wrap:wrap;margin:8px 0 12px}
 .chart-legend span{display:inline-flex;align-items:center;gap:6px;font:500 12px var(--font-sans);color:var(--fg-3)}
@@ -1136,7 +1137,7 @@ KOSi18n.register({
     }
     var qt=Q.quarterly||[];
     if(qt.length){
-      h+='<div class="tbl-card glass" style="margin-top:14px"><div class="tbl-cap">'+esc(f.quarterly)+'</div><div class="tbl-scroll"><table class="dt"><thead><tr>'
+      h+='<div class="tbl-card glass"><div class="tbl-cap">'+esc(f.quarterly)+'</div><div class="tbl-scroll"><table class="dt"><thead><tr>'
         +'<th>'+esc(f.q)+'</th><th>'+esc(revLbl)+'</th><th>'+esc(f.op)+'</th><th>'+esc(f.np)+'</th></tr></thead><tbody>';
       qt.forEach(function(r){
         h+='<tr><td>'+esc(r.q)+'</td><td>'+fwon(r.rev)+'</td><td'+negc(r.op)+'>'+fwon(r.op)+'</td><td'+negc(r.np_owner)+'>'+fwon(r.np_owner)+'</td></tr>';
