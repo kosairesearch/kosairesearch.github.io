@@ -1,6 +1,6 @@
 // KOS ai — 자동 생성 데이터 파일. 직접 수정하지 마세요.
 window.KOS_LIVE_DATA = {
-  "lastUpdated": "2026-07-29 01:22",
+  "lastUpdated": "2026-07-29 01:52",
   "dataDate": "20260728",
   "stocks": [
     {
@@ -20465,7 +20465,7 @@ window.KOS_LIVE_DATA = {
       "name": "나노솔루션",
       "name_en": "",
       "market": "코넥스",
-      "sector": "기타",
+      "sector": "화학",
       "price": 103800,
       "change": 0.0,
       "volume": 0,
@@ -20473,7 +20473,7 @@ window.KOS_LIVE_DATA = {
       "mcap": 0.116,
       "shares": 1117640,
       "categories": [
-        "기타"
+        "화학"
       ],
       "rank": 1136
     },
