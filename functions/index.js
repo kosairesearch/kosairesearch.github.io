@@ -341,3 +341,80 @@ exports.submitForm = onCall(
     return { ok: true };
   }
 );
+
+/* ============================================================
+   유료 리포트 전달 — getReport
+   ------------------------------------------------------------
+   무료 구간은 정적 파일(data/reports_v2/{ticker}.json)로 공개되고,
+   유료 구간은 Firestore(reports_paid/{ticker})에만 두어 이 함수를 통해서만
+   나간다. 구독이 확인된 사용자에게만 응답한다.
+
+   전제(파이프라인이 만들어 줌):
+     reports_paid/{ticker}   — 유료 섹션(earnings·bull·bear·verdict 등)
+     subscriptions/{uid}     — { status, plan, currentPeriodEnd, trialEnd }
+                               status: trialing | active | canceled | expired
+
+   대량 수집 방어: 사용자별 일일 조회 수를 세어 상한을 넘으면 차단한다.
+   정상 사용자는 하루에 수십 건을 넘기 어렵고, 전 종목을 긁으려는 시도는
+   여기서 멈춘다.
+   ============================================================ */
+const PAID_DAILY_LIMIT = 120;   // 1인 1일 유료 리포트 열람 상한
+
+function subActive(sub) {
+  if (!sub) return false;
+  if (sub.status !== "active" && sub.status !== "trialing") return false;
+  const end = sub.status === "trialing" ? (sub.trialEnd || sub.currentPeriodEnd)
+                                        : sub.currentPeriodEnd;
+  if (!end) return false;
+  const ms = typeof end.toMillis === "function" ? end.toMillis() : Date.parse(end);
+  return Number.isFinite(ms) && ms > Date.now();
+}
+
+// 하루 단위 조회 카운터. 상한 초과 시 false.
+async function underDailyLimit(db, uid) {
+  const day = new Date().toISOString().slice(0, 10);           // YYYY-MM-DD (UTC)
+  const ref = db.doc(`report_reads/${uid}_${day}`);
+  const n = await db.runTransaction(async (tx) => {
+    const snap = await tx.get(ref);
+    const cur = (snap.exists && snap.data().count) || 0;
+    if (cur >= PAID_DAILY_LIMIT) return cur;
+    tx.set(ref, {
+      count: cur + 1,
+      day,
+      uid,
+      updatedAt: admin.firestore.FieldValue.serverTimestamp(),
+    }, { merge: true });
+    return cur + 1;
+  });
+  return n <= PAID_DAILY_LIMIT;
+}
+
+exports.getReport = onCall(
+  { region: REGION, cors: true },
+  async (req) => {
+    const ticker = String((req.data && req.data.ticker) || "").trim().toUpperCase();
+    if (!/^[0-9A-Z]{6}$/.test(ticker)) {
+      throw new HttpsError("invalid-argument", "종목코드가 올바르지 않습니다.");
+    }
+    const uid = req.auth && req.auth.uid;
+    if (!uid) throw new HttpsError("unauthenticated", "로그인이 필요합니다.");
+
+    const db = admin.firestore();
+
+    const subSnap = await db.doc(`subscriptions/${uid}`).get();
+    if (!subActive(subSnap.exists ? subSnap.data() : null)) {
+      // 결제/체험이 없거나 만료 — 프런트는 이 코드를 받아 잠금 UI를 띄운다.
+      throw new HttpsError("permission-denied", "멤버십이 필요합니다.");
+    }
+
+    if (!(await underDailyLimit(db, uid))) {
+      console.warn(`[getReport] 일일 상한 초과 uid=${uid}`);
+      throw new HttpsError("resource-exhausted", "오늘 열람 한도를 초과했습니다.");
+    }
+
+    const snap = await db.doc(`reports_paid/${ticker}`).get();
+    if (!snap.exists) throw new HttpsError("not-found", "리포트를 찾을 수 없습니다.");
+
+    return { ticker, paid: snap.data() };
+  }
+);
