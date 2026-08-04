@@ -1,15 +1,17 @@
 {
- "batch_id": "msgbatch_01AAHDdMbHd5QoUh2vomPkRL",
- "created": "2026-08-03 22:37",
+ "batch_id": "msgbatch_01U3vexyaSci5ERhYtGAD1We",
+ "created": "2026-08-04 21:56",
  "model": "claude-opus-5",
  "models": {
-  "044990": "claude-sonnet-5"
+  "160190": "claude-sonnet-5",
+  "494120": "claude-sonnet-5",
+  "063440": "claude-sonnet-5"
  },
- "dataDate": "20260803",
- "count": 1,
+ "dataDate": "20260804",
+ "count": 3,
  "quant": {
-  "232530": {
-   "asOf": "2026-08-03",
+  "496320": {
+   "asOf": "2026-08-04",
    "fs_basis": "연결(CFS) · DART 공시 확정치 · 지배주주 기준 순이익",
    "annual": [],
    "quarterly": [
@@ -45,8 +47,151 @@
     }
    ],
    "valuation": {
-    "price": 10250,
-    "mcap": 0.2625,
+    "price": 1023000,
+    "mcap": 1.0393,
+    "shares": 1015973,
+    "total_shares": 1387399,
+    "wavg_shares": null,
+    "per": null,
+    "eps": null,
+    "pbr": null,
+    "bps": null,
+    "roe_ttm": null,
+    "ttm_window": null,
+    "ttm_np_owner": null,
+    "pbr_krx": null,
+    "bps_krx": null,
+    "basis": "PER·EPS·PBR·BPS 모두 자체 산출(네이버·토스와 동일 방식) · 배당은 DART 공시 주당현금배당금(보완:KRX) ÷ 현재가",
+    "dps": null,
+    "div": null
+   }
+  },
+  "160190": {
+   "asOf": "2026-08-04",
+   "fs_basis": "연결(CFS) · DART 공시 확정치 · 지배주주 기준 순이익",
+   "annual": [
+    {
+     "year": 2025,
+     "rev": 73543971242,
+     "op": -8908556551,
+     "np": -7101548368,
+     "np_owner": -7064941328,
+     "equity": 106929208584,
+     "equity_owner": 106163568128,
+     "liab": 59593009434,
+     "cfo": -9685015063,
+     "eps_basic": -251,
+     "opm": -12.1,
+     "roe": -6.7,
+     "debt_ratio": 55.7
+    },
+    {
+     "year": 2024,
+     "rev": 75886180614,
+     "op": -369253550,
+     "np": -1092879556,
+     "np_owner": -1084348727,
+     "equity": 68373885015,
+     "equity_owner": 67584198048,
+     "liab": 51811416248,
+     "cfo": -2632697872,
+     "eps_basic": -41,
+     "opm": -0.5,
+     "roe": -1.6,
+     "debt_ratio": 75.8
+    }
+   ],
+   "quarterly": [
+    {
+     "q": "2025Q1",
+     "rev": 18169682248,
+     "op": -2376449860,
+     "np_owner": -2427661604
+    },
+    {
+     "q": "2025Q2",
+     "rev": 16711093054,
+     "op": -1391926870,
+     "np_owner": -1638178323
+    },
+    {
+     "q": "2025Q3",
+     "rev": 15884752499,
+     "op": -2088091383,
+     "np_owner": -2267230793
+    },
+    {
+     "q": "2025Q4",
+     "rev": 22778443441,
+     "op": -3052088438,
+     "np_owner": -731870608
+    },
+    {
+     "q": "2026Q1",
+     "rev": 18634338294,
+     "op": -3394944946,
+     "np_owner": -3209341194
+    }
+   ],
+   "valuation": {
+    "price": 15620,
+    "mcap": 0.4825,
+    "shares": 30888000,
+    "total_shares": 30888000,
+    "wavg_shares": 28912983,
+    "per": null,
+    "eps": -275,
+    "pbr": 4.35,
+    "bps": 3590,
+    "roe_ttm": -9.3,
+    "ttm_window": "2025Q2~2026Q1",
+    "ttm_np_owner": -7846620918,
+    "pbr_krx": 4.27,
+    "bps_krx": 3657.0,
+    "basis": "PER·EPS·PBR·BPS 모두 자체 산출(네이버·토스와 동일 방식) · 배당은 DART 공시 주당현금배당금(보완:KRX) ÷ 현재가",
+    "dps": 0.0,
+    "div": 0.0
+   }
+  },
+  "232530": {
+   "asOf": "2026-08-04",
+   "fs_basis": "연결(CFS) · DART 공시 확정치 · 지배주주 기준 순이익",
+   "annual": [],
+   "quarterly": [
+    {
+     "q": "2025Q1",
+     "rev": null,
+     "op": null,
+     "np_owner": null
+    },
+    {
+     "q": "2025Q2",
+     "rev": null,
+     "op": null,
+     "np_owner": null
+    },
+    {
+     "q": "2025Q3",
+     "rev": null,
+     "op": null,
+     "np_owner": null
+    },
+    {
+     "q": "2025Q4",
+     "rev": null,
+     "op": null,
+     "np_owner": null
+    },
+    {
+     "q": "2026Q1",
+     "rev": null,
+     "op": null,
+     "np_owner": null
+    }
+   ],
+   "valuation": {
+    "price": 11300,
+    "mcap": 0.2894,
     "shares": 25614304,
     "total_shares": 25614304,
     "wavg_shares": null,
@@ -64,110 +209,197 @@
     "div": null
    }
   },
-  "044990": {
-   "asOf": "2026-08-03",
+  "494120": {
+   "asOf": "2026-08-04",
    "fs_basis": "연결(CFS) · DART 공시 확정치 · 지배주주 기준 순이익",
    "annual": [
     {
      "year": 2025,
-     "rev": 81886784499,
-     "op": 9664357626,
-     "np": 8890504842,
-     "np_owner": 8890504842,
-     "equity": 102871621568,
-     "equity_owner": 102871621568,
-     "liab": 12890110191,
-     "cfo": 10698917686,
-     "eps_basic": 1216,
-     "opm": 11.8,
-     "roe": 8.6,
-     "debt_ratio": 12.5
-    },
-    {
-     "year": 2024,
-     "rev": 76160586579,
-     "op": 13370064318,
-     "np": 14667012102,
-     "np_owner": 14667012102,
-     "equity": 106040600479,
-     "equity_owner": 106040600479,
-     "liab": 8209323375,
-     "cfo": 17995920680,
-     "eps_basic": 1935,
-     "opm": 17.6,
-     "roe": 13.8,
-     "debt_ratio": 7.7
-    },
-    {
-     "year": 2023,
-     "rev": 80551938241,
-     "op": 13956323764,
-     "np": 30138955001,
-     "np_owner": 30138955001,
-     "equity": 87023079181,
-     "equity_owner": 87023079181,
-     "liab": 8945416934,
-     "cfo": 25132352593,
-     "eps_basic": 4017,
-     "opm": 17.3,
-     "roe": 34.6,
-     "debt_ratio": 10.3
+     "rev": 7302782626,
+     "op": -7525764117,
+     "np": -7864272237,
+     "np_owner": -7755949924,
+     "equity": 28201275143,
+     "equity_owner": 28201275143,
+     "liab": 6027331021,
+     "cfo": -7348638188,
+     "eps_basic": -1203,
+     "opm": -103.1,
+     "roe": -27.5,
+     "debt_ratio": 21.4
     }
    ],
    "quarterly": [
     {
      "q": "2025Q1",
-     "rev": 20268439935,
-     "op": 4262914751,
-     "np_owner": 3644082838
+     "rev": 1537396104,
+     "op": -1833513056,
+     "np_owner": -2196035281
     },
     {
      "q": "2025Q2",
-     "rev": 16471941053,
-     "op": -749094958,
-     "np_owner": -2011216836
+     "rev": 1932366102,
+     "op": -1322038681,
+     "np_owner": -1336625855
     },
     {
      "q": "2025Q3",
-     "rev": 23524320147,
-     "op": 4224031680,
-     "np_owner": 4376283041
+     "rev": 1150974066,
+     "op": -2079889397,
+     "np_owner": -2070853973
     },
     {
      "q": "2025Q4",
-     "rev": 21622083364,
-     "op": 1926506153,
-     "np_owner": 2881355799
+     "rev": 2682046354,
+     "op": -2290322983,
+     "np_owner": -2152434815
     },
     {
      "q": "2026Q1",
-     "rev": 22156339696,
-     "op": 3069256526,
-     "np_owner": 3644442285
+     "rev": 1145909256,
+     "op": -1606264856,
+     "np_owner": -1475378730
     }
    ],
    "valuation": {
-    "price": 11240,
-    "mcap": 0.0864,
-    "shares": 7685425,
-    "total_shares": 7685425,
-    "wavg_shares": 7303491,
-    "per": 9.1,
-    "eps": 1234,
-    "pbr": 0.78,
-    "bps": 14384,
-    "roe_ttm": 8.6,
+    "price": 11030,
+    "mcap": 0.0842,
+    "shares": 7629882,
+    "total_shares": 7616482,
+    "wavg_shares": 7605045,
+    "per": null,
+    "eps": null,
+    "pbr": null,
+    "bps": null,
+    "roe_ttm": -40.7,
     "ttm_window": "2025Q2~2026Q1",
-    "ttm_np_owner": 8890864289,
-    "pbr_krx": null,
-    "bps_krx": null,
+    "ttm_np_owner": -7035293373,
+    "pbr_krx": 5.96,
+    "bps_krx": 1852.0,
     "basis": "PER·EPS·PBR·BPS 모두 자체 산출(네이버·토스와 동일 방식) · 배당은 DART 공시 주당현금배당금(보완:KRX) ÷ 현재가",
-    "dps": 250.0,
-    "div": 2.22
+    "dps": 0.0,
+    "div": 0.0
+   }
+  },
+  "063440": {
+   "asOf": "2026-08-04",
+   "fs_basis": "연결(CFS) · DART 공시 확정치 · 지배주주 기준 순이익",
+   "annual": [
+    {
+     "year": 2025,
+     "rev": 53324973138,
+     "op": 4575636524,
+     "np": 5496856845,
+     "np_owner": 5496856845,
+     "equity": 67255542581,
+     "equity_owner": 67255542581,
+     "liab": 6211416337,
+     "cfo": 6759321262,
+     "eps_basic": null,
+     "opm": 8.6,
+     "roe": 8.2,
+     "debt_ratio": 9.2
+    },
+    {
+     "year": 2024,
+     "rev": 44780387467,
+     "op": 3526292536,
+     "np": 4870454585,
+     "np_owner": 4870454585,
+     "equity": 61795348671,
+     "equity_owner": 61795348671,
+     "liab": 7706707879,
+     "cfo": 7322945606,
+     "eps_basic": null,
+     "opm": 7.9,
+     "roe": 7.9,
+     "debt_ratio": 12.5
+    },
+    {
+     "year": 2023,
+     "rev": 47318501515,
+     "op": 2685360549,
+     "np": 4738244746,
+     "np_owner": 4738244746,
+     "equity": 57007605133,
+     "equity_owner": 57007605133,
+     "liab": 6477943192,
+     "cfo": 7672097567,
+     "eps_basic": null,
+     "opm": 5.7,
+     "roe": 8.3,
+     "debt_ratio": 11.4
+    },
+    {
+     "year": 2022,
+     "rev": 50307368054,
+     "op": 2526964547,
+     "np": 2487730793,
+     "np_owner": 2487730793,
+     "equity": 52268757016,
+     "equity_owner": 52268757016,
+     "liab": 15402903839,
+     "cfo": 3009978947,
+     "eps_basic": 54,
+     "opm": 5.0,
+     "roe": 4.8,
+     "debt_ratio": 29.5
+    }
+   ],
+   "quarterly": [
+    {
+     "q": "2025Q1",
+     "rev": 7205887659,
+     "op": 684989178,
+     "np_owner": 797666252
+    },
+    {
+     "q": "2025Q2",
+     "rev": 16878219095,
+     "op": 2357082912,
+     "np_owner": 2819359052
+    },
+    {
+     "q": "2025Q3",
+     "rev": 18481017508,
+     "op": 2469466031,
+     "np_owner": 2483943637
+    },
+    {
+     "q": "2025Q4",
+     "rev": 10759848876,
+     "op": -935901597,
+     "np_owner": -604112096
+    },
+    {
+     "q": "2026Q1",
+     "rev": 9690642328,
+     "op": 702947569,
+     "np_owner": 842582902
+    }
+   ],
+   "valuation": {
+    "price": 1120,
+    "mcap": 0.0508,
+    "shares": 45319364,
+    "total_shares": 46029154,
+    "wavg_shares": 46810161,
+    "per": 9.3,
+    "eps": 120,
+    "pbr": 0.78,
+    "bps": 1435,
+    "roe_ttm": 8.5,
+    "ttm_window": "2025Q2~2026Q1",
+    "ttm_np_owner": 5541773495,
+    "pbr_krx": 0.77,
+    "bps_krx": 1461.0,
+    "basis": "PER·EPS·PBR·BPS 모두 자체 산출(네이버·토스와 동일 방식) · 배당은 DART 공시 주당현금배당금(보완:KRX) ÷ 현재가",
+    "dps": 0.0,
+    "div": 0.0
    }
   },
   "0203K0": {
-   "asOf": "2026-08-03",
+   "asOf": "2026-08-04",
    "fs_basis": "연결(CFS) · DART 공시 확정치 · 지배주주 기준 순이익",
    "annual": [],
    "quarterly": [
@@ -223,7 +455,7 @@
    }
   },
   "243870": {
-   "asOf": "2026-08-03",
+   "asOf": "2026-08-04",
    "fs_basis": "연결(CFS) · DART 공시 확정치 · 지배주주 기준 순이익",
    "annual": [],
    "quarterly": [
@@ -259,8 +491,8 @@
     }
    ],
    "valuation": {
-    "price": 8170,
-    "mcap": 0.0236,
+    "price": 8600,
+    "mcap": 0.0249,
     "shares": 2892631,
     "total_shares": 2892631,
     "wavg_shares": null,
@@ -279,7 +511,7 @@
    }
   },
   "233250": {
-   "asOf": "2026-08-03",
+   "asOf": "2026-08-04",
    "fs_basis": "연결(CFS) · DART 공시 확정치 · 지배주주 기준 순이익",
    "annual": [],
    "quarterly": [
@@ -335,7 +567,7 @@
    }
   },
   "215570": {
-   "asOf": "2026-08-03",
+   "asOf": "2026-08-04",
    "fs_basis": "연결(CFS) · DART 공시 확정치 · 지배주주 기준 순이익",
    "annual": [],
    "quarterly": [
@@ -371,8 +603,8 @@
     }
    ],
    "valuation": {
-    "price": 800,
-    "mcap": 0.0053,
+    "price": 770,
+    "mcap": 0.0051,
     "shares": 6660151,
     "total_shares": 6308769,
     "wavg_shares": null,
