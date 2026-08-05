@@ -1,10 +1,10 @@
-=== 공시 트리거 v2 생성 Wed Aug  5 04:02:56 UTC 2026 · 대상 496320,232530,0203K0,243870,233250,215570 ===
-## 🤖 리포트 v2 Batch 제출 — 6개 · 상위300 claude-opus-5 / 나머지 claude-sonnet-5
+=== 공시 트리거 v2 생성 Wed Aug  5 12:35:46 UTC 2026 · 대상 496320,232530,0030R0,066670,032960,0203K0,243870,233250,215570 ===
+## 🤖 리포트 v2 Batch 제출 — 9개 · 상위300 claude-opus-5 / 나머지 claude-sonnet-5
 KRX 로그인 시도...
   로그인 ID: qjawnsdla
 KRX 로그인 완료.
-  로그인 시간: 2026-08-05 04:03:00
-  만료 시간: 2026-08-05 05:03:00
+  로그인 시간: 2026-08-05 12:35:49
+  만료 시간: 2026-08-05 13:35:49
 - 정량 수집 496320 본시스템즈...
 reprt_code='11011', fs_div='CFS' (사업보고서, 연결제무제표)'
 {'status': '013', 'message': '조회된 데이타가 없습니다.'}
@@ -137,6 +137,57 @@ reprt_code='11013', fs_div='OFS' (1분기보고서, 별도(개별)제무제표)'
   2025Q4: 매출 — 영업이익 — 지배순이익 —
   2026Q1: 매출 — 영업이익 — 지배순이익 —
   PER None | EPS None | PBR None | BPS None | ROE None | 배당 None% | DPS None
+- 정량 수집 0030R0 대신밸류리츠...
+  ✅ 대신밸류리츠 검증 통과 PER None PBR None EPS None BPS None
+### 대신밸류리츠
+  2025Q1: 매출 — 영업이익 — 지배순이익 —
+  2025Q2: 매출 — 영업이익 — 지배순이익 —
+  2025Q3: 매출 — 영업이익 — 지배순이익 —
+  2025Q4: 매출 — 영업이익 — 지배순이익 —
+  2026Q1: 매출 — 영업이익 — 지배순이익 —
+  PER None | EPS None | PBR None | BPS None | ROE None | 배당 None% | DPS None
+- 정량 수집 066670 디티씨...
+reprt_code='11011', fs_div='CFS' (사업보고서, 연결제무제표)'
+reprt_code='11011', fs_div='CFS' (사업보고서, 연결제무제표)'
+reprt_code='11011', fs_div='CFS' (사업보고서, 연결제무제표)'
+reprt_code='11011', fs_div='CFS' (사업보고서, 연결제무제표)'
+reprt_code='11013', fs_div='CFS' (1분기보고서, 연결제무제표)'
+reprt_code='11012', fs_div='CFS' (반기보고서, 연결제무제표)'
+reprt_code='11014', fs_div='CFS' (3분기보고서, 연결제무제표)'
+reprt_code='11013', fs_div='CFS' (1분기보고서, 연결제무제표)'
+  ❌ 디티씨 중대오류 차단 → 해당 지표 숨김: EPS 344↔ref 289.0
+### 디티씨
+  2025: 매출 1,886억 영업이익 -18억 지배순이익 -14억 OPM -0.9% ROE -0.9% 부채비율 22.6%
+  2024: 매출 119억 영업이익 24억 지배순이익 22억 OPM 20.5% ROE 1.3% 부채비율 3.7%
+  2023: 매출 346억 영업이익 20억 지배순이익 37억 OPM 5.8% ROE 2.3% 부채비율 3.2%
+  2022: 매출 691억 영업이익 31억 지배순이익 68억 OPM 4.5% ROE 4.3% 부채비율 9.8%
+  2025Q1: 매출 510억 영업이익 18억 지배순이익 11억
+  2025Q2: 매출 400억 영업이익 -15억 지배순이익 2억
+  2025Q3: 매출 475억 영업이익 -10억 지배순이익 -17억
+  2025Q4: 매출 501억 영업이익 -10억 지배순이익 -11억
+  2026Q1: 매출 416억 영업이익 19억 지배순이익 28억
+  PER None | EPS None | PBR 0.25 | BPS 10787 | ROE 3.9 | 배당 0.0% | DPS 0.0
+- 정량 수집 032960 동일기연...
+reprt_code='11011', fs_div='CFS' (사업보고서, 연결제무제표)'
+reprt_code='11011', fs_div='CFS' (사업보고서, 연결제무제표)'
+reprt_code='11011', fs_div='CFS' (사업보고서, 연결제무제표)'
+reprt_code='11011', fs_div='CFS' (사업보고서, 연결제무제표)'
+reprt_code='11013', fs_div='CFS' (1분기보고서, 연결제무제표)'
+reprt_code='11012', fs_div='CFS' (반기보고서, 연결제무제표)'
+reprt_code='11014', fs_div='CFS' (3분기보고서, 연결제무제표)'
+reprt_code='11013', fs_div='CFS' (1분기보고서, 연결제무제표)'
+  ❌ 동일기연 중대오류 차단 → 해당 지표 숨김: EPS 2600↔ref 476.0 / 배당 24.94%↔ref 4.99%
+### 동일기연
+  2025: 매출 216억 영업이익 -1억 지배순이익 65억 OPM -0.3% ROE 10.1% 부채비율 6.6%
+  2024: 매출 241억 영업이익 2억 지배순이익 8억 OPM 0.8% ROE 1.2% 부채비율 5.8%
+  2023: 매출 252억 영업이익 4억 지배순이익 22억 OPM 1.7% ROE 3.4% 부채비율 5.9%
+  2022: 매출 267억 영업이익 11억 지배순이익 10억 OPM 4.1% ROE 1.7% 부채비율 6.9%
+  2025Q1: 매출 61억 영업이익 1억 지배순이익 6억
+  2025Q2: 매출 49억 영업이익 -3억 지배순이익 18억
+  2025Q3: 매출 54억 영업이익 3억 지배순이익 14억
+  2025Q4: 매출 52억 영업이익 -2억 지배순이익 27억
+  2026Q1: 매출 61억 영업이익 6억 지배순이익 35억
+  PER None | EPS None | PBR 0.54 | BPS 3722 | ROE 69.6 | 배당 None% | DPS None
 - 정량 수집 0203K0 송우인포텍...
   ✅ 송우인포텍 검증 통과 PER None PBR None EPS None BPS None
 ### 송우인포텍
@@ -346,8 +397,202 @@ reprt_code='11013', fs_div='OFS' (1분기보고서, 별도(개별)제무제표)'
   PER None | EPS None | PBR None | BPS None | ROE None | 배당 0.0% | DPS 0.0
   · ⚠️ 496320 정량 데이터 없음 — 제외
   · ⚠️ 232530 정량 데이터 없음 — 제외
+  · ⚠️ 0030R0 정량 데이터 없음 — 제외
   · ⚠️ 0203K0 정량 데이터 없음 — 제외
   · ⚠️ 243870 정량 데이터 없음 — 제외
   · ⚠️ 233250 정량 데이터 없음 — 제외
   · ⚠️ 215570 정량 데이터 없음 — 제외
-❌ 제출할 요청이 없습니다.
+- 모델 배분: claude-opus-5 0개 · claude-sonnet-5 2개
+- ✅ 배치 제출: msgbatch_01Xrwm3SXPgUaiJwcMqzKrvy (2건)
+  · 상태 in_progress · 처리 2/성공 0/오류 0
+  · 상태 in_progress · 처리 2/성공 0/오류 0
+  · 상태 in_progress · 처리 2/성공 0/오류 0
+  · 상태 in_progress · 처리 2/성공 0/오류 0
+  · 상태 in_progress · 처리 2/성공 0/오류 0
+  · 상태 in_progress · 처리 2/성공 0/오류 0
+  · 상태 in_progress · 처리 2/성공 0/오류 0
+  · 상태 in_progress · 처리 2/성공 0/오류 0
+  · 상태 in_progress · 처리 2/성공 0/오류 0
+  · 상태 in_progress · 처리 2/성공 0/오류 0
+  · 상태 in_progress · 처리 2/성공 0/오류 0
+  · 상태 in_progress · 처리 2/성공 0/오류 0
+  · 상태 in_progress · 처리 2/성공 0/오류 0
+  · 상태 in_progress · 처리 2/성공 0/오류 0
+  · 상태 in_progress · 처리 2/성공 0/오류 0
+  · 상태 in_progress · 처리 2/성공 0/오류 0
+  · 상태 in_progress · 처리 2/성공 0/오류 0
+  · 상태 in_progress · 처리 2/성공 0/오류 0
+  · 상태 in_progress · 처리 2/성공 0/오류 0
+  · 상태 in_progress · 처리 2/성공 0/오류 0
+  · 상태 in_progress · 처리 2/성공 0/오류 0
+  · 상태 in_progress · 처리 2/성공 0/오류 0
+  · 상태 in_progress · 처리 2/성공 0/오류 0
+  · 상태 in_progress · 처리 2/성공 0/오류 0
+  · 상태 in_progress · 처리 2/성공 0/오류 0
+  · 상태 in_progress · 처리 2/성공 0/오류 0
+  · 상태 in_progress · 처리 2/성공 0/오류 0
+  · 상태 in_progress · 처리 2/성공 0/오류 0
+  · 상태 in_progress · 처리 2/성공 0/오류 0
+  · 상태 in_progress · 처리 2/성공 0/오류 0
+  · 상태 in_progress · 처리 2/성공 0/오류 0
+  · 상태 in_progress · 처리 2/성공 0/오류 0
+  · 상태 in_progress · 처리 2/성공 0/오류 0
+  · 상태 in_progress · 처리 2/성공 0/오류 0
+  · 상태 in_progress · 처리 2/성공 0/오류 0
+  · 상태 in_progress · 처리 2/성공 0/오류 0
+  · 상태 in_progress · 처리 2/성공 0/오류 0
+  · 상태 in_progress · 처리 2/성공 0/오류 0
+  · 상태 in_progress · 처리 2/성공 0/오류 0
+  · 상태 in_progress · 처리 2/성공 0/오류 0
+  · 상태 in_progress · 처리 2/성공 0/오류 0
+  · 상태 in_progress · 처리 2/성공 0/오류 0
+  · 상태 in_progress · 처리 2/성공 0/오류 0
+  · 상태 in_progress · 처리 2/성공 0/오류 0
+  · 상태 in_progress · 처리 2/성공 0/오류 0
+  · 상태 in_progress · 처리 2/성공 0/오류 0
+  · 상태 in_progress · 처리 2/성공 0/오류 0
+  · 상태 in_progress · 처리 2/성공 0/오류 0
+  · 상태 in_progress · 처리 2/성공 0/오류 0
+  · 상태 in_progress · 처리 2/성공 0/오류 0
+  · 상태 in_progress · 처리 2/성공 0/오류 0
+  · 상태 in_progress · 처리 2/성공 0/오류 0
+  · 상태 in_progress · 처리 2/성공 0/오류 0
+  · 상태 in_progress · 처리 2/성공 0/오류 0
+  · 상태 in_progress · 처리 2/성공 0/오류 0
+  · 상태 in_progress · 처리 2/성공 0/오류 0
+  · 상태 in_progress · 처리 2/성공 0/오류 0
+  · 상태 in_progress · 처리 2/성공 0/오류 0
+  · 상태 in_progress · 처리 2/성공 0/오류 0
+  · 상태 in_progress · 처리 2/성공 0/오류 0
+  · 상태 in_progress · 처리 2/성공 0/오류 0
+  · 상태 in_progress · 처리 2/성공 0/오류 0
+  · 상태 in_progress · 처리 2/성공 0/오류 0
+  · 상태 in_progress · 처리 2/성공 0/오류 0
+  · 상태 in_progress · 처리 2/성공 0/오류 0
+  · 상태 in_progress · 처리 2/성공 0/오류 0
+  · 상태 in_progress · 처리 2/성공 0/오류 0
+  · 상태 in_progress · 처리 2/성공 0/오류 0
+  · 상태 in_progress · 처리 2/성공 0/오류 0
+  · 상태 in_progress · 처리 2/성공 0/오류 0
+  · 상태 in_progress · 처리 2/성공 0/오류 0
+  · 상태 in_progress · 처리 2/성공 0/오류 0
+  · 상태 in_progress · 처리 2/성공 0/오류 0
+  · 상태 in_progress · 처리 2/성공 0/오류 0
+  · 상태 in_progress · 처리 2/성공 0/오류 0
+  · 상태 in_progress · 처리 2/성공 0/오류 0
+  · 상태 in_progress · 처리 2/성공 0/오류 0
+  · 상태 in_progress · 처리 2/성공 0/오류 0
+  · 상태 in_progress · 처리 2/성공 0/오류 0
+  · 상태 in_progress · 처리 2/성공 0/오류 0
+  · 상태 in_progress · 처리 2/성공 0/오류 0
+  · 상태 in_progress · 처리 2/성공 0/오류 0
+  · 상태 in_progress · 처리 2/성공 0/오류 0
+  · 상태 in_progress · 처리 2/성공 0/오류 0
+  · 상태 in_progress · 처리 2/성공 0/오류 0
+  · 상태 in_progress · 처리 2/성공 0/오류 0
+  · 상태 in_progress · 처리 2/성공 0/오류 0
+  · 상태 in_progress · 처리 2/성공 0/오류 0
+  · 상태 in_progress · 처리 2/성공 0/오류 0
+  · 상태 in_progress · 처리 2/성공 0/오류 0
+  · 상태 in_progress · 처리 2/성공 0/오류 0
+  · 상태 in_progress · 처리 2/성공 0/오류 0
+  · 상태 in_progress · 처리 2/성공 0/오류 0
+  · 상태 in_progress · 처리 2/성공 0/오류 0
+  · 상태 in_progress · 처리 2/성공 0/오류 0
+  · 상태 in_progress · 처리 2/성공 0/오류 0
+  · 상태 in_progress · 처리 2/성공 0/오류 0
+  · 상태 in_progress · 처리 2/성공 0/오류 0
+  · 상태 in_progress · 처리 2/성공 0/오류 0
+  · 상태 in_progress · 처리 2/성공 0/오류 0
+  · 상태 in_progress · 처리 2/성공 0/오류 0
+  · 상태 in_progress · 처리 2/성공 0/오류 0
+  · 상태 in_progress · 처리 2/성공 0/오류 0
+  · 상태 in_progress · 처리 2/성공 0/오류 0
+  · 상태 in_progress · 처리 2/성공 0/오류 0
+  · 상태 in_progress · 처리 2/성공 0/오류 0
+  · 상태 in_progress · 처리 2/성공 0/오류 0
+  · 상태 in_progress · 처리 2/성공 0/오류 0
+  · 상태 in_progress · 처리 2/성공 0/오류 0
+  · 상태 in_progress · 처리 2/성공 0/오류 0
+  · 상태 in_progress · 처리 2/성공 0/오류 0
+  · 상태 in_progress · 처리 2/성공 0/오류 0
+  · 상태 in_progress · 처리 2/성공 0/오류 0
+  · 상태 in_progress · 처리 2/성공 0/오류 0
+  · 상태 in_progress · 처리 2/성공 0/오류 0
+  · 상태 in_progress · 처리 2/성공 0/오류 0
+  · 상태 in_progress · 처리 2/성공 0/오류 0
+  · 상태 in_progress · 처리 2/성공 0/오류 0
+  · 상태 in_progress · 처리 2/성공 0/오류 0
+  · 상태 in_progress · 처리 2/성공 0/오류 0
+  · 상태 in_progress · 처리 2/성공 0/오류 0
+  · 상태 in_progress · 처리 2/성공 0/오류 0
+  · 상태 in_progress · 처리 2/성공 0/오류 0
+  · 상태 in_progress · 처리 2/성공 0/오류 0
+  · 상태 in_progress · 처리 2/성공 0/오류 0
+  · 상태 in_progress · 처리 2/성공 0/오류 0
+  · 상태 in_progress · 처리 2/성공 0/오류 0
+  · 상태 in_progress · 처리 2/성공 0/오류 0
+  · 상태 in_progress · 처리 2/성공 0/오류 0
+  · 상태 in_progress · 처리 2/성공 0/오류 0
+  · 상태 in_progress · 처리 2/성공 0/오류 0
+  · 상태 in_progress · 처리 2/성공 0/오류 0
+  · 상태 in_progress · 처리 2/성공 0/오류 0
+  · 상태 in_progress · 처리 2/성공 0/오류 0
+  · 상태 in_progress · 처리 2/성공 0/오류 0
+  · 상태 in_progress · 처리 2/성공 0/오류 0
+  · 상태 in_progress · 처리 2/성공 0/오류 0
+  · 상태 in_progress · 처리 2/성공 0/오류 0
+  · 상태 in_progress · 처리 2/성공 0/오류 0
+  · 상태 in_progress · 처리 2/성공 0/오류 0
+  · 상태 in_progress · 처리 2/성공 0/오류 0
+  · 상태 in_progress · 처리 2/성공 0/오류 0
+  · 상태 in_progress · 처리 2/성공 0/오류 0
+  · 상태 in_progress · 처리 2/성공 0/오류 0
+  · 상태 in_progress · 처리 2/성공 0/오류 0
+  · 상태 in_progress · 처리 2/성공 0/오류 0
+  · 상태 in_progress · 처리 2/성공 0/오류 0
+  · 상태 in_progress · 처리 2/성공 0/오류 0
+  · 상태 in_progress · 처리 2/성공 0/오류 0
+  · 상태 in_progress · 처리 2/성공 0/오류 0
+  · 상태 in_progress · 처리 2/성공 0/오류 0
+  · 상태 in_progress · 처리 2/성공 0/오류 0
+  · 상태 in_progress · 처리 2/성공 0/오류 0
+  · 상태 in_progress · 처리 2/성공 0/오류 0
+  · 상태 in_progress · 처리 2/성공 0/오류 0
+  · 상태 in_progress · 처리 2/성공 0/오류 0
+  · 상태 in_progress · 처리 2/성공 0/오류 0
+  · 상태 in_progress · 처리 2/성공 0/오류 0
+  · 상태 in_progress · 처리 2/성공 0/오류 0
+  · 상태 in_progress · 처리 2/성공 0/오류 0
+  · 상태 in_progress · 처리 2/성공 0/오류 0
+  · 상태 in_progress · 처리 2/성공 0/오류 0
+  · 상태 in_progress · 처리 2/성공 0/오류 0
+  · 상태 in_progress · 처리 2/성공 0/오류 0
+  · 상태 in_progress · 처리 2/성공 0/오류 0
+  · 상태 in_progress · 처리 2/성공 0/오류 0
+  · 상태 in_progress · 처리 2/성공 0/오류 0
+  · 상태 in_progress · 처리 2/성공 0/오류 0
+  · 상태 in_progress · 처리 2/성공 0/오류 0
+  · 상태 in_progress · 처리 2/성공 0/오류 0
+  · 상태 in_progress · 처리 2/성공 0/오류 0
+  · 상태 in_progress · 처리 2/성공 0/오류 0
+  · 상태 in_progress · 처리 2/성공 0/오류 0
+  · 상태 in_progress · 처리 2/성공 0/오류 0
+  · 상태 in_progress · 처리 2/성공 0/오류 0
+  · 상태 in_progress · 처리 2/성공 0/오류 0
+  · 상태 in_progress · 처리 2/성공 0/오류 0
+  · 상태 in_progress · 처리 2/성공 0/오류 0
+  · 상태 in_progress · 처리 2/성공 0/오류 0
+  · 상태 in_progress · 처리 2/성공 0/오류 0
+  · 상태 in_progress · 처리 2/성공 0/오류 0
+  · 상태 in_progress · 처리 2/성공 0/오류 0
+  · 상태 in_progress · 처리 2/성공 0/오류 0
+  · 상태 in_progress · 처리 2/성공 0/오류 0
+  · 상태 in_progress · 처리 2/성공 0/오류 0
+  · 상태 in_progress · 처리 2/성공 0/오류 0
+  · 상태 in_progress · 처리 2/성공 0/오류 0
+  · 상태 in_progress · 처리 2/성공 0/오류 0
+  · 상태 in_progress · 처리 2/성공 0/오류 0
+  · 상태 ended · 처리 0/성공 2/오류 0
+
+✅ v2 회수 완료 · 성공 2/실패 0 → data/reports_v2/ (2563개)
