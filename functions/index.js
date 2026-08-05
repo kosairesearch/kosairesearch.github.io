@@ -351,44 +351,49 @@ exports.submitForm = onCall(
 
    전제(파이프라인이 만들어 줌):
      reports_paid/{ticker}   — 유료 섹션(earnings·bull·bear·verdict 등)
-     subscriptions/{uid}     — { status, plan, currentPeriodEnd, trialEnd }
-                               status: trialing | active | canceled | expired
+     subscriptions/{uid}     — { status, plan, currentPeriodEnd }
+                               status: active | canceled | expired
+                               plan  : basic | pro
 
-   대량 수집 방어: 사용자별 일일 조회 수를 세어 상한을 넘으면 차단한다.
-   정상 사용자는 하루에 수십 건을 넘기 어렵고, 전 종목을 긁으려는 시도는
-   여기서 멈춘다.
+   열람 한도는 요금제로 갈린다. pricing.html에 고지한 수치와 반드시 같아야 한다.
    ============================================================ */
-// 1인 1일 유료 리포트 열람 상한. pricing.html에 고지한 수치와 반드시 같아야 한다.
-const PAID_DAILY_LIMIT = 120;    // 결제 구독자
-const TRIAL_DAILY_LIMIT = 5;     // 7일 무료체험 — 체험만 쓰고 전 종목을 훑는 것을 막는다
+const DAILY_LIMIT = { basic: 5, pro: 15 };   // 1일 '서로 다른 종목' 열람 수
 
 function subActive(sub) {
-  if (!sub) return false;
-  if (sub.status !== "active" && sub.status !== "trialing") return false;
-  const end = sub.status === "trialing" ? (sub.trialEnd || sub.currentPeriodEnd)
-                                        : sub.currentPeriodEnd;
+  if (!sub || sub.status !== "active") return false;
+  const end = sub.currentPeriodEnd;
   if (!end) return false;
   const ms = typeof end.toMillis === "function" ? end.toMillis() : Date.parse(end);
   return Number.isFinite(ms) && ms > Date.now();
 }
 
-// 하루 단위 조회 카운터. 상한 초과 시 false.
-async function underDailyLimit(db, uid, limit) {
-  const day = new Date().toISOString().slice(0, 10);           // YYYY-MM-DD (UTC)
+// 한국 시간 기준 날짜. UTC로 끊으면 한도가 오전 9시(장 시작)에 초기화된다.
+function kstDay() {
+  return new Date(Date.now() + 9 * 3600 * 1000).toISOString().slice(0, 10);
+}
+
+/* 하루 열람 한도 차감. 한도 안이면 true.
+
+   같은 종목을 다시 열 때는 차감하지 않는다. 새로고침·뒤로가기·다른 기기에서
+   다시 보기가 전부 한 건씩 깎으면, 사용자는 서로 다른 두 종목만 보고도
+   '한도 초과'를 만나게 된다. 그래서 횟수가 아니라 '오늘 본 종목'을 센다. */
+async function consumeDailyRead(db, uid, ticker, limit) {
+  const day = kstDay();
   const ref = db.doc(`report_reads/${uid}_${day}`);
-  const n = await db.runTransaction(async (tx) => {
+  return db.runTransaction(async (tx) => {
     const snap = await tx.get(ref);
-    const cur = (snap.exists && snap.data().count) || 0;
-    if (cur >= limit) return cur;
+    const seen = (snap.exists && snap.data().tickers) || [];
+    if (seen.includes(ticker)) return true;        // 오늘 이미 본 종목 — 추가 차감 없음
+    if (seen.length >= limit) return false;
     tx.set(ref, {
-      count: cur + 1,
+      tickers: admin.firestore.FieldValue.arrayUnion(ticker),
+      count: seen.length + 1,
       day,
       uid,
       updatedAt: admin.firestore.FieldValue.serverTimestamp(),
     }, { merge: true });
-    return cur + 1;
+    return true;
   });
-  return n <= limit;
 }
 
 exports.getReport = onCall(
@@ -410,15 +415,22 @@ exports.getReport = onCall(
       throw new HttpsError("permission-denied", "멤버십이 필요합니다.");
     }
 
-    const limit = sub.status === "trialing" ? TRIAL_DAILY_LIMIT : PAID_DAILY_LIMIT;
-    if (!(await underDailyLimit(db, uid, limit))) {
-      console.warn(`[getReport] 일일 상한(${limit}) 초과 uid=${uid}`);
-      throw new HttpsError("resource-exhausted", "오늘 열람 한도를 초과했습니다.");
+    const plan = String(sub.plan || "").toLowerCase();
+    const limit = DAILY_LIMIT[plan];
+    if (!limit) {
+      console.error(`[getReport] 알 수 없는 요금제 plan=${sub.plan} uid=${uid}`);
+      throw new HttpsError("failed-precondition", "요금제 정보를 확인할 수 없습니다.");
     }
 
+    // 리포트가 없으면 한도를 깎지 않는다 — 없는 종목을 눌러 한도를 잃으면 안 된다.
     const snap = await db.doc(`reports_paid/${ticker}`).get();
     if (!snap.exists) throw new HttpsError("not-found", "리포트를 찾을 수 없습니다.");
 
-    return { ticker, paid: snap.data() };
+    if (!(await consumeDailyRead(db, uid, ticker, limit))) {
+      console.warn(`[getReport] 일일 한도(${plan}=${limit}) 초과 uid=${uid}`);
+      throw new HttpsError("resource-exhausted", "오늘 열람 한도를 모두 사용했습니다.");
+    }
+
+    return { ticker, paid: snap.data(), plan, limit };
   }
 );
