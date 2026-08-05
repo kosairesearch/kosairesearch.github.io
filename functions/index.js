@@ -358,7 +358,9 @@ exports.submitForm = onCall(
    정상 사용자는 하루에 수십 건을 넘기 어렵고, 전 종목을 긁으려는 시도는
    여기서 멈춘다.
    ============================================================ */
-const PAID_DAILY_LIMIT = 120;   // 1인 1일 유료 리포트 열람 상한
+// 1인 1일 유료 리포트 열람 상한. pricing.html에 고지한 수치와 반드시 같아야 한다.
+const PAID_DAILY_LIMIT = 120;    // 결제 구독자
+const TRIAL_DAILY_LIMIT = 5;     // 7일 무료체험 — 체험만 쓰고 전 종목을 훑는 것을 막는다
 
 function subActive(sub) {
   if (!sub) return false;
@@ -371,13 +373,13 @@ function subActive(sub) {
 }
 
 // 하루 단위 조회 카운터. 상한 초과 시 false.
-async function underDailyLimit(db, uid) {
+async function underDailyLimit(db, uid, limit) {
   const day = new Date().toISOString().slice(0, 10);           // YYYY-MM-DD (UTC)
   const ref = db.doc(`report_reads/${uid}_${day}`);
   const n = await db.runTransaction(async (tx) => {
     const snap = await tx.get(ref);
     const cur = (snap.exists && snap.data().count) || 0;
-    if (cur >= PAID_DAILY_LIMIT) return cur;
+    if (cur >= limit) return cur;
     tx.set(ref, {
       count: cur + 1,
       day,
@@ -386,7 +388,7 @@ async function underDailyLimit(db, uid) {
     }, { merge: true });
     return cur + 1;
   });
-  return n <= PAID_DAILY_LIMIT;
+  return n <= limit;
 }
 
 exports.getReport = onCall(
@@ -402,13 +404,15 @@ exports.getReport = onCall(
     const db = admin.firestore();
 
     const subSnap = await db.doc(`subscriptions/${uid}`).get();
-    if (!subActive(subSnap.exists ? subSnap.data() : null)) {
+    const sub = subSnap.exists ? subSnap.data() : null;
+    if (!subActive(sub)) {
       // 결제/체험이 없거나 만료 — 프런트는 이 코드를 받아 잠금 UI를 띄운다.
       throw new HttpsError("permission-denied", "멤버십이 필요합니다.");
     }
 
-    if (!(await underDailyLimit(db, uid))) {
-      console.warn(`[getReport] 일일 상한 초과 uid=${uid}`);
+    const limit = sub.status === "trialing" ? TRIAL_DAILY_LIMIT : PAID_DAILY_LIMIT;
+    if (!(await underDailyLimit(db, uid, limit))) {
+      console.warn(`[getReport] 일일 상한(${limit}) 초과 uid=${uid}`);
       throw new HttpsError("resource-exhausted", "오늘 열람 한도를 초과했습니다.");
     }
 
