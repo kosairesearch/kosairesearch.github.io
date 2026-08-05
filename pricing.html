@@ -161,8 +161,16 @@ main{flex:1;padding:8px 0 64px}
 .cmp-t tbody th{font:500 14.5px var(--font-sans);color:var(--fg-1)}
 .cmp-t tbody th small{display:block;margin-top:3px;font:400 12px var(--font-sans);color:var(--fg-3)}
 .cmp-t tbody tr:last-child th,.cmp-t tbody tr:last-child td{border-bottom:0}
-.mk{display:inline-block;width:18px;height:18px;border-radius:50%;line-height:18px;text-align:center;
-  font:700 11px var(--font-sans)}
+/* 표시는 글자가 아니라 도형으로 그린다 — 폰트 메트릭에 따라 원 안에서
+   위아래로 흔들리지 않게. 스크린리더용 텍스트는 .mk i 에 숨겨둔다. */
+.mk{display:inline-flex;align-items:center;justify-content:center;vertical-align:middle;
+  width:18px;height:18px;border-radius:50%}
+.mk i{position:absolute;width:1px;height:1px;overflow:hidden;clip-path:inset(50%);white-space:nowrap}
+.mk::before{content:"";display:block;background:currentColor}
+.mk-y::before{width:10px;height:10px;
+  -webkit-mask:url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="black" stroke-width="3.4" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg>') center/contain no-repeat;
+  mask:url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="black" stroke-width="3.4" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg>') center/contain no-repeat}
+.mk-n::before{width:7px;height:2px;border-radius:1px}
 .mk-y{background:rgba(13,105,212,.12);color:var(--brand-blue)}
 .mk-n{background:rgba(0,0,0,.06);color:var(--fg-3)}
 :root[data-theme="dark"] .mk-y{background:rgba(95,197,255,.16);color:var(--brand-cyan)}
@@ -569,19 +577,19 @@ KOSi18n.register({
           <tr><th>리포트 섹션</th><th>무료</th><th>PRO</th></tr>
         </thead>
         <tbody>
-          <tr><th>핵심 지표<small>주가·시가총액·PER·PBR·ROE</small></th><td><span class="mk mk-y">✓</span></td><td><span class="mk mk-y">✓</span></td></tr>
-          <tr><th>리포트 개요<small>한 줄 요약과 핵심 포인트</small></th><td><span class="mk mk-y">✓</span></td><td><span class="mk mk-y">✓</span></td></tr>
-          <tr><th>사업 구조<small>사업부문·매출 구성</small></th><td><span class="mk mk-y">✓</span></td><td><span class="mk mk-y">✓</span></td></tr>
-          <tr><th>실적 추이<small>연간·분기 실적 표와 차트</small></th><td><span class="mk mk-y">✓</span></td><td><span class="mk mk-y">✓</span></td></tr>
-          <tr><th>실적 분석<small>숫자가 왜 그렇게 움직였는지</small></th><td><span class="mk mk-n">—</span></td><td><span class="mk mk-y">✓</span></td></tr>
-          <tr><th>산업 분석<small>업황과 경쟁 구도</small></th><td><span class="mk mk-n">—</span></td><td><span class="mk mk-y">✓</span></td></tr>
-          <tr><th>전망<small>앞으로의 시나리오</small></th><td><span class="mk mk-n">—</span></td><td><span class="mk mk-y">✓</span></td></tr>
-          <tr><th>밸류에이션 해설<small>현재 지표를 어떻게 읽을지</small></th><td><span class="mk mk-n">—</span></td><td><span class="mk mk-y">✓</span></td></tr>
-          <tr><th>강세 요인 · 약세 요인<small>양쪽 근거를 나란히</small></th><td><span class="mk mk-n">—</span></td><td><span class="mk mk-y">✓</span></td></tr>
-          <tr><th>리스크 요인<small>무엇이 어긋날 수 있는지</small></th><td><span class="mk mk-n">—</span></td><td><span class="mk mk-y">✓</span></td></tr>
-          <tr><th>다음 체크포인트<small>다음에 확인할 일정·지표</small></th><td><span class="mk mk-n">—</span></td><td><span class="mk mk-y">✓</span></td></tr>
-          <tr><th>종합 의견<small>전체를 묶은 정리</small></th><td><span class="mk mk-n">—</span></td><td><span class="mk mk-y">✓</span></td></tr>
-          <tr><th>참고 출처<small>근거로 삼은 공시·자료</small></th><td><span class="mk mk-y">✓</span></td><td><span class="mk mk-y">✓</span></td></tr>
+          <tr><th>핵심 지표<small>주가·시가총액·PER·PBR·ROE</small></th><td><span class="mk mk-y"><i>포함</i></span></td><td><span class="mk mk-y"><i>포함</i></span></td></tr>
+          <tr><th>리포트 개요<small>한 줄 요약과 핵심 포인트</small></th><td><span class="mk mk-y"><i>포함</i></span></td><td><span class="mk mk-y"><i>포함</i></span></td></tr>
+          <tr><th>사업 구조<small>사업부문·매출 구성</small></th><td><span class="mk mk-y"><i>포함</i></span></td><td><span class="mk mk-y"><i>포함</i></span></td></tr>
+          <tr><th>실적 추이<small>연간·분기 실적 표와 차트</small></th><td><span class="mk mk-y"><i>포함</i></span></td><td><span class="mk mk-y"><i>포함</i></span></td></tr>
+          <tr><th>실적 분석<small>매출·이익 변동의 원인</small></th><td><span class="mk mk-n"><i>미포함</i></span></td><td><span class="mk mk-y"><i>포함</i></span></td></tr>
+          <tr><th>산업 분석<small>업황과 경쟁 구도</small></th><td><span class="mk mk-n"><i>미포함</i></span></td><td><span class="mk mk-y"><i>포함</i></span></td></tr>
+          <tr><th>전망<small>향후 실적·업황 시나리오</small></th><td><span class="mk mk-n"><i>미포함</i></span></td><td><span class="mk mk-y"><i>포함</i></span></td></tr>
+          <tr><th>밸류에이션 해설<small>업종 평균 대비 현재 지표</small></th><td><span class="mk mk-n"><i>미포함</i></span></td><td><span class="mk mk-y"><i>포함</i></span></td></tr>
+          <tr><th>강세 요인 · 약세 요인<small>상승·하락 논거 정리</small></th><td><span class="mk mk-n"><i>미포함</i></span></td><td><span class="mk mk-y"><i>포함</i></span></td></tr>
+          <tr><th>리스크 요인<small>실적·주가의 하방 요인</small></th><td><span class="mk mk-n"><i>미포함</i></span></td><td><span class="mk mk-y"><i>포함</i></span></td></tr>
+          <tr><th>다음 체크포인트<small>다가오는 실적 발표·공시 일정</small></th><td><span class="mk mk-n"><i>미포함</i></span></td><td><span class="mk mk-y"><i>포함</i></span></td></tr>
+          <tr><th>종합 의견<small>앞선 분석의 종합</small></th><td><span class="mk mk-n"><i>미포함</i></span></td><td><span class="mk mk-y"><i>포함</i></span></td></tr>
+          <tr><th>참고 출처<small>인용한 공시·자료 목록</small></th><td><span class="mk mk-y"><i>포함</i></span></td><td><span class="mk mk-y"><i>포함</i></span></td></tr>
         </tbody>
       </table>
     </section>
@@ -715,15 +723,16 @@ if(window.KOSi18n) KOSi18n.register({
   "리포트 개요":"Report overview","한 줄 요약과 핵심 포인트":"One-line summary and key points",
   "사업부문·매출 구성":"Segments and revenue mix",
   "실적 추이":"Earnings history","연간·분기 실적 표와 차트":"Annual and quarterly tables and charts",
-  "실적 분석":"Earnings analysis","숫자가 왜 그렇게 움직였는지":"Why the numbers moved the way they did",
+  "실적 분석":"Earnings analysis","매출·이익 변동의 원인":"Why revenue and profit moved",
   "산업 분석":"Industry analysis","업황과 경쟁 구도":"Industry conditions and competitive landscape",
-  "전망":"Outlook","앞으로의 시나리오":"Scenarios ahead",
-  "밸류에이션 해설":"Valuation commentary","현재 지표를 어떻게 읽을지":"How to read the current multiples",
-  "강세 요인 · 약세 요인":"Bull case · Bear case","양쪽 근거를 나란히":"Both sides, side by side",
-  "리스크 요인":"Risk factors","무엇이 어긋날 수 있는지":"What could go wrong",
-  "다음 체크포인트":"What to watch next","다음에 확인할 일정·지표":"Upcoming dates and metrics to check",
-  "종합 의견":"Overall view","전체를 묶은 정리":"Everything pulled together",
-  "참고 출처":"Sources","근거로 삼은 공시·자료":"Filings and materials referenced",
+  "전망":"Outlook","향후 실적·업황 시나리오":"Scenarios for earnings and the industry",
+  "밸류에이션 해설":"Valuation commentary","업종 평균 대비 현재 지표":"Current multiples against the sector average",
+  "강세 요인 · 약세 요인":"Bull case · Bear case","상승·하락 논거 정리":"The case for and against, side by side",
+  "리스크 요인":"Risk factors","실적·주가의 하방 요인":"Downside factors for earnings and the share price",
+  "다음 체크포인트":"What to watch next","다가오는 실적 발표·공시 일정":"Upcoming earnings dates and filings",
+  "종합 의견":"Overall view","앞선 분석의 종합":"Everything above, pulled together",
+  "참고 출처":"Sources","인용한 공시·자료 목록":"The filings and materials cited",
+  "포함":"Included","미포함":"Not included",
   "자주 묻는 질문":"Frequently asked questions",
   "무료체험만 쓰고 해지해도 되나요?":"Can I use only the free trial and cancel?",
   "됩니다. 체험 7일이 끝나기 전에 해지하면 요금이 청구되지 않습니다. 체험 시작에는 결제수단 등록이 필요하고, 해지하지 않으면 8일째에 첫 결제가 이루어집니다.":
