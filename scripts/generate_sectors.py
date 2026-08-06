@@ -7,7 +7,7 @@ data/sectors.js (window.KOS_SECTORS) 를 만든다. 업종별 상위 종목·집
 프롬프트에 제공한다. 종목 리포트 배치 로직을 일부 재사용.
 
 모드: submit / collect / auto(기본)
-환경변수: ANTHROPIC_API_KEY(필수), REPORT_MODEL(기본 sonnet), SECTOR_FORCE, BATCH_MAX_WAIT_SEC
+환경변수: ANTHROPIC_API_KEY(필수), REPORT_MODEL(기본 claude-sonnet-5), SECTOR_FORCE, BATCH_MAX_WAIT_SEC
 """
 import os
 import sys
@@ -28,7 +28,7 @@ STOCKS_JS = ROOT / "data" / "stocks.js"
 OUT_JS = ROOT / "data" / "sectors.js"
 STATE = ROOT / "data" / "sector_batch_state.json"
 
-MODEL = os.getenv("REPORT_MODEL", "claude-sonnet-4-6")
+MODEL = os.getenv("REPORT_MODEL", "claude-sonnet-5")
 FORCE = os.getenv("SECTOR_FORCE", "") == "1"
 MAX_WAIT = int(os.getenv("BATCH_MAX_WAIT_SEC", "4800"))
 
