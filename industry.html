@@ -929,6 +929,7 @@ KOSi18n.register({
   .ind-back{display:inline-flex;align-items:center;gap:6px;font:600 13px var(--font-sans);color:var(--fg-3);text-decoration:none;margin-bottom:6px}
   /* '.ind-sec p'(0,1,1)가 '.ind-ainote'(0,1,0)를 이겨 각주가 본문 크기로 나오던 것을 바로잡는다 */
   .ind-ainote,.ind-sec p.ind-ainote{font:500 12px/1.6 var(--font-sans);color:var(--fg-3);margin-top:6px;max-width:860px}
+  .ind-stamp{margin:18px 0 0;font:500 12px/1.6 var(--font-sans);color:var(--fg-3);max-width:860px}
   </style>
   <div id="indApp" data-i18n-skip></div>
 </div>
@@ -987,7 +988,6 @@ themeBtn.addEventListener('click',()=>applyTheme(root.getAttribute('data-theme')
     "여러 업종에 걸쳐 있거나 기존 분류에 속하지 않는 기업을 모은 구간입니다. 사업 내용이 서로 달라 하나의 업황으로 묶이지 않으므로 AI 업종 분석을 제공하지 않습니다.":"This group holds companies that span several industries or fall outside the existing categories. Because their businesses differ too widely to share a single industry outlook, no AI sector analysis is provided.",
     "각 기업의 사업 구조와 실적은 아래 종목의 개별 리포트에서 확인하실 수 있습니다.":"Each company's business model and results are covered in its individual stock report below.",
     "AI 업종 분석은 분기별 갱신 시 반영됩니다.":"AI sector analysis is added at the quarterly refresh.",
-    "분석 참고: 업종 상장사 종합 + 웹 검색":"Source: aggregated listed peers + web search",
     "종목":"Stock","현재가":"Price","등락률":"Change","시가총액":"Market Cap","리포트":"Report"
   });}
   function esc(x){return String(x==null?'':x).replace(/[&<>"]/g,function(c){return {'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c];});}
@@ -1020,6 +1020,13 @@ themeBtn.addEventListener('click',()=>applyTheme(root.getAttribute('data-theme')
     return out;
   }
   function tn(x){return T(x);}
+  var EN_MON=['Jan','Feb','Mar','Apr','May','Jun','Jul','Aug','Sep','Oct','Nov','Dec'];
+  // "2026-08-06 14:16" → "2026년 8월 6일" / "Aug 6, 2026"
+  function fmtDay(s){
+    var m=/^(\d{4})-(\d{2})-(\d{2})/.exec(s||'');if(!m)return '';
+    var y=+m[1],mo=+m[2],d=+m[3];
+    return EN()?EN_MON[mo-1]+' '+d+', '+y:y+'년 '+mo+'월 '+d+'일';
+  }
   function qp(k){return new URLSearchParams(location.search).get(k);}
   function scats(s){return (s.categories&&s.categories.length)?s.categories:[s.sector||'기타'];}
   function mkRow(sec,lst,total){
@@ -1063,6 +1070,16 @@ themeBtn.addEventListener('click',()=>applyTheme(root.getAttribute('data-theme')
       +'<div class="ind-grid">'+cards+'</div>'
       +((a.themeRows||[]).length?('<h2 style="margin:38px 0 14px;font:700 18px var(--font-sans);letter-spacing:-.02em;color:var(--fg-2)">'+T('테마')+'</h2><div class="ind-grid">'+a.themeRows.map(function(r){var d=dir(r.chg);var tops=r.list.slice(0,3).map(function(s){return '<span>'+esc(tn(s.name))+'</span>';}).join('');return '<a class="ind-card glass" href="industry.html?sector='+encodeURIComponent(r.sec)+'"><div class="ic-top"><span class="ic-name">'+esc(tn(r.sec))+'</span></div><div class="ic-mc">'+mcap(r.mc)+'</div><div class="ic-meta">'+(EN()?r.n+' stocks':r.n+'개')+' · <span class="ic-chg '+d+'">'+pct(r.chg)+'</span></div><div class="ic-top3">'+tops+'</div></a>';}).join('')+'</div>'):'');
   }
+  // 분석 끝의 출처·작성일 한 줄. 본문의 시총·비중은 작성 시점 값이라 상단 실시간
+  // 지표와 다를 수밖에 없다 — 언제 쓴 글인지 밝혀 그 차이를 설명한다.
+  function stamp(an){
+    var d=fmtDay((an&&an.generatedAt)||(window.KOS_SECTORS&&KOS_SECTORS.lastUpdated));
+    if(!d)return '';
+    var src=an&&an.sources&&an.sources.length;
+    return '<p class="ind-stamp">'+esc(EN()
+      ?'Written '+d+(src?' · aggregated listed peers and web search':'')+' · figures in the text are as of that date; the metrics above are live.'
+      :d+' 작성'+(src?' · 업종 상장사 종합과 웹 검색 참고':'')+' · 본문 수치는 작성 시점 기준이며, 위 지표는 실시간입니다.')+'</p>';
+  }
   function renderDetail(sec){
     var a=agg();
     var row=null;a.rows.forEach(function(r){if(r.sec===sec)row=r;});
@@ -1091,7 +1108,8 @@ themeBtn.addEventListener('click',()=>applyTheme(root.getAttribute('data-theme')
         +sec2('산업 구조·가치사슬',paras(an.structure))
         +sec2('최근 동향',paras(an.trends))
         +sec2('향후 전망',paras(an.outlook))
-        +(risks?'<div class="ind-sec"><h2>'+T('리스크 요인')+'</h2><div class="ind-risk">'+risks+'</div></div>':'');
+        +(risks?'<div class="ind-sec"><h2>'+T('리스크 요인')+'</h2><div class="ind-risk">'+risks+'</div></div>':'')
+        +stamp(an);
     }else if(sec==='기타'){
       // '기타'는 업종 분석 생성 대상에서 제외된다(generate_sectors.py). 아무 설명 없이
       // AI 섹션만 비면 미완성 페이지로 보이므로, 왜 없는지를 명시한다.
@@ -1117,7 +1135,7 @@ themeBtn.addEventListener('click',()=>applyTheme(root.getAttribute('data-theme')
       +kpis+ai
       +'<div class="ind-sec"><h2>'+T('업종 내 주요 종목')+'</h2>'
       +'<div class="ind-tbl-wrap"><table class="ind-tbl"><thead><tr><th>'+T('종목')+'</th><th>'+T('현재가')+'</th><th>'+T('등락률')+'</th><th>'+T('시가총액')+'</th></tr></thead><tbody>'+rowsHtml+'</tbody></table></div>'
-      +(an&&an.sources&&an.sources.length?'<p class="ind-ainote">'+T('분석 참고: 업종 상장사 종합 + 웹 검색')+'</p>':'')+'</div>';
+      +'</div>';
   }
   function setSEO(sec){
     try{

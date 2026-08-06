@@ -10,6 +10,7 @@ data/sectors.js (window.KOS_SECTORS) 를 만든다. 업종별 상위 종목·집
 환경변수: ANTHROPIC_API_KEY(필수), REPORT_MODEL(기본 claude-sonnet-5), SECTOR_FORCE, BATCH_MAX_WAIT_SEC
 """
 import os
+import re
 import sys
 import json
 import time
@@ -43,18 +44,26 @@ SYSTEM = (
     "수치는 확인된 것만 쓰고 과장·날조하지 않는다. 전문 애널리스트 톤."
 )
 
-SCHEMA = """다음 JSON 스키마로만 출력하세요. 각 텍스트는 {"ko","en} 형식(한국어/영어 병기).
+# en 자리를 ""로 비워 보였더니 모델이 템플릿 그대로 빈 문자열을 내놓는 일이 있었다
+# (2026-08 생성분에서 조선·2차전지의 본문 영어가 통째로 비었다). 그래서 en 에도
+# 무엇을 쓸지 명시하고, 비우지 말라는 규칙을 따로 둔다.
+SCHEMA = """다음 JSON 스키마로만 출력하세요. 모든 텍스트는 {"ko":"한국어","en":"영어"} 형식입니다.
 ===JSON_START===
 {
-  "lead":     {"ko":"업종 한 줄 요약(매수/매도 표현 금지)","en":""},
-  "overview": {"ko":"업종 개요: 어떤 산업이고 한국 증시에서의 위치·특성 (4~6문장)","en":""},
-  "structure":{"ko":"산업 구조·가치사슬: 밸류체인 단계와 대표 종목 배치, 집중도 (4~6문장)","en":""},
-  "trends":   {"ko":"최근 업황·동향: 실적/수요/사이클 흐름 (4~6문장)","en":""},
-  "outlook":  {"ko":"향후 전망: 성장 동인과 관전 포인트 (4~6문장)","en":""},
-  "risks":    [ {"title":{"ko":"","en":""}, "body":{"ko":"2~3문장","en":""}}, ... 3개 ]
+  "lead":     {"ko":"업종 한 줄 요약(매수/매도 표현 금지)","en":"same, in English"},
+  "overview": {"ko":"업종 개요: 어떤 산업이고 한국 증시에서의 위치·특성 (4~6문장)","en":"same, in English"},
+  "structure":{"ko":"산업 구조·가치사슬: 밸류체인 단계와 대표 종목 배치, 집중도 (4~6문장)","en":"same, in English"},
+  "trends":   {"ko":"최근 업황·동향: 실적/수요/사이클 흐름 (4~6문장)","en":"same, in English"},
+  "outlook":  {"ko":"향후 전망: 성장 동인과 관전 포인트 (4~6문장)","en":"same, in English"},
+  "risks":    [ {"title":{"ko":"제목","en":"title in English"},
+                 "body":{"ko":"2~3문장","en":"same, in English"}}, ... 3개 ]
 }
 ===JSON_END===
-규칙: 마커 사이에 JSON만. 한국어는 자연스럽게, 영어는 전문 번역체로."""
+규칙
+- 마커 사이에 JSON만. 한국어는 자연스럽게, 영어는 전문 번역체로.
+- ko·en 어느 쪽도 빈 문자열로 두지 말 것. 모든 항목을 양쪽 언어로 채운다.
+- 문장은 반드시 끝맺을 것. 분량이 부담되면 문장 수를 줄이되 중간에 끊지 않는다.
+- 한자를 섞지 말 것(예: '고객사向' → '고객사 대상', '美' → '미국')."""
 
 
 def client():
@@ -111,7 +120,7 @@ def submit(cl, as_of):
         reqs.append(Request(
             custom_id=_cid(sec),
             params=MessageCreateParamsNonStreaming(
-                model=MODEL, max_tokens=16000,
+                model=MODEL, max_tokens=24000,
                 system=[{"type": "text", "text": SYSTEM, "cache_control": {"type": "ephemeral"}}],
                 thinking={"type": "adaptive"}, tools=TOOLS,
                 messages=[{"role": "user", "content": build_prompt(sec, sectors[sec])}],
@@ -152,6 +161,45 @@ def load_existing():
     return {}
 
 
+BODY_KEYS = ("lead", "overview", "structure", "trends", "outlook")
+_ENDS = re.compile(r'[.!?…"”\')\]]\s*$')
+
+
+def defects(rep, message=None):
+    """저장하면 안 되는 결함 목록. 비어 있으면 정상.
+
+    2026-08 생성분에서 실제로 나온 것들이다. 한 번 저장되면 다음 분기까지 그대로
+    사이트에 걸리므로, 여기서 걸러 다음 실행 때 다시 만들게 한다(대상은 '없는 업종').
+      · 영어 본문이 통째로 빈 채로 저장 → 영어 모드에서 한국어가 그대로 노출
+      · max_tokens 로 잘려 json_repair 가 문장 중간을 닫아버림
+      · 인코딩이 깨진 자리(U+FFFD)가 본문에 박힘
+    """
+    out = []
+    if getattr(message, "stop_reason", None) == "max_tokens":
+        out.append("max_tokens 로 잘림")
+    if not rep.get("risks") or len(rep["risks"]) < 3:
+        out.append("리스크 3개 미만")
+
+    def check(label, o):
+        for lang in ("ko", "en"):
+            s = (o or {}).get(lang, "")
+            if not (s or "").strip():
+                out.append(f"{label}.{lang} 빔")
+            elif not _ENDS.search(s):
+                out.append(f"{label}.{lang} 문장 안 끝남")
+
+    for k in BODY_KEYS:
+        check(k, rep.get(k))
+    for i, r in enumerate(rep.get("risks") or []):
+        check(f"risks[{i}].body", (r or {}).get("body"))
+        for lang in ("ko", "en"):
+            if not ((r or {}).get("title") or {}).get(lang, "").strip():
+                out.append(f"risks[{i}].title.{lang} 빔")
+    if "�" in json.dumps(rep, ensure_ascii=False):
+        out.append("깨진 문자(U+FFFD)")
+    return out
+
+
 def collect(cl, as_of):
     if not STATE.exists():
         log("❌ state 없음"); sys.exit(1)
@@ -171,12 +219,16 @@ def collect(cl, as_of):
         try:
             text = g.extract_text(result.result.message)
             rep = g.parse_report(text)
-            if not (rep.get("overview") and rep.get("risks")):
-                fail += 1; log(f"  · ⚠️ {sec} 불완전 — 건너뜀"); continue
+            why = defects(rep, result.result.message)
+            if why:
+                fail += 1; log(f"  · ⚠️ {sec} 불완전 — 건너뜀 ({'; '.join(why)})"); continue
             srcs = g.collect_sources(result.result.message)
             if srcs:
                 rep["sources"] = srcs[:10]
             rep["sector"] = sec
+            # 업종별 작성 시점. FORCE 없이 돌리면 새로 만든 업종과 예전 것이 섞이므로
+            # 전체 lastUpdated 만으로는 화면에 정확한 날짜를 못 쓴다.
+            rep["generatedAt"] = as_of
             sectors[sec] = rep
             ok += 1
         except Exception as e:
