@@ -355,11 +355,19 @@ def build_prompt(stock, as_of, dart_block=""):
 
 
 def extract_text(message):
+    """응답의 text 블록을 원문 그대로 이어 붙인다.
+
+    ⚠️ 구분자를 넣으면 안 된다. 웹 검색을 쓰면 API 가 '인용이 붙는 구간'마다 text
+    블록을 쪼개 내려주는데, 그 경계는 문장 중간이다. 여기서 "\\n" 으로 이었더니
+    JSON 문자열 값 안에 개행이 박혀 ① json.loads 가 깨져 매번 json_repair 폴백을
+    타고 ② 그 개행이 그대로 저장돼 화면에서 문장이 중간에 잘려 보였다
+    (업종 분석 637곳). 블록을 그냥 붙이면 원래 문장이 복원된다.
+    """
     parts = []
     for block in message.content:
         if getattr(block, "type", None) == "text":
             parts.append(block.text)
-    text = "\n".join(parts)
+    text = "".join(parts)
     # 웹검색 인용 태그(<cite index="..">..</cite>)가 본문에 새는 것 제거
     return re.sub(r"</?cite[^>]*>", "", text)
 
