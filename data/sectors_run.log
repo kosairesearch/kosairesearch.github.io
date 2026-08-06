@@ -92,3 +92,20 @@
   · ended · 처리 0/성공 30/오류 0
 
 ✅ 회수 완료 · 성공 30/실패 0 · 총 30개 → data/sectors.js
+## generate_sectors 시작 — mode='auto' · MODEL=claude-sonnet-5 · FORCE=False
+## 업종 분석 batch 제출 — 대상 4개 / 전체 31개 · 모델 claude-sonnet-5
+  · 준비 전자·부품 (241종목)
+  · 준비 2차전지 (39종목)
+  · 준비 조선 (19종목)
+  · 준비 정유 (6종목)
+- ✅ 배치 제출: msgbatch_01CyCVCqMwBG2fnu3nWN5xEK (4건)
+  · in_progress · 처리 4/성공 0/오류 0
+  · in_progress · 처리 4/성공 0/오류 0
+  · in_progress · 처리 4/성공 0/오류 0
+  · in_progress · 처리 4/성공 0/오류 0
+  · in_progress · 처리 4/성공 0/오류 0
+  · in_progress · 처리 4/성공 0/오류 0
+  · in_progress · 처리 4/성공 0/오류 0
+  · ended · 처리 0/성공 4/오류 0
+
+✅ 회수 완료 · 성공 4/실패 0 · 총 30개 → data/sectors.js

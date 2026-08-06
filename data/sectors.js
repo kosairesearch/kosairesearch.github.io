@@ -1,6 +1,6 @@
 // KOS ai — 업종 AI 분석 (자동 생성). 직접 수정 금지.
 window.KOS_SECTORS = {
-  "lastUpdated": "2026-08-06 14:16",
+  "lastUpdated": "2026-08-06 20:04",
   "model": "claude-sonnet-5",
   "sectors": {
     "유통·소비재": {
@@ -1592,6 +1592,233 @@ window.KOS_SECTORS = {
         "https://m.boannews.com/html/detail.html?idx=136736"
       ],
       "sector": "로봇"
+    },
+    "조선": {
+      "lead": {
+        "ko": "국내 조선업은 LNG선·탱커 중심의 고선가 수주와 미국 방산·MRO 협력 확대에 힘입어 다년간 이어질 수익성 개선 국면에 진입해 있다.",
+        "en": "Korea's shipbuilding sector is entering a multi-year profitability upcycle, driven by high-priced LNG carrier and tanker orders alongside expanding US defense and MRO cooperation."
+      },
+      "overview": {
+        "ko": "조선업은 상선·해양플랜트·특수선(함정)·엔진 등 중후장대형 자본재 산업으로, 국내 상장 종목 19개의 시가총액 합계는 약 148.3조원으로 전체 시장의 2.7% 수준을 차지한다. HD현대중공업, HD한국조선해양, 한화오션, 삼성중공업 등 이른바 '조선 빅3(4)' 체제가 업종 시총의 대부분을 차지하며 나머지는 마린솔루션·엔진·기자재 관련 중소형주로 구성되어 있다. 한국은 LNG운반선을 비롯한 고부가가치 선종에서 세계적 경쟁력을 보유하고 있으며, 이는 업종 밸류에이션의 핵심 근거로 작용한다. 최근에는 상선 건조를 넘어 미국 해군 MRO(유지·보수·정비)와 방산·무인함정 영역으로 사업 범위가 확장되며 수익 구조의 다변화가 진행되고 있다. 업종 전반이 과거 공급과잉·저선가 국면에서 벗어나 선별 수주 전략을 펼 수 있는 위치로 전환된 점이 특징적이다.",
+        "en": "Shipbuilding is a heavy capital-goods industry spanning commercial vessels, offshore plants, naval vessels, and marine engines, with the sector's 19 listed names totaling roughly KRW 148.3 trillion in market cap, or about 2.7% of the overall Korean market. HD Hyundai Heavy Industries, HD Korea Shipbuilding & Offshore Engineering, Hanwha Ocean, and Samsung Heavy Industries—the so-called 'Big 3/4'—account for the bulk of sector capitalization, while the remainder comprises smaller marine solutions, engine, and equipment-related names. Korea holds globally competitive positioning in high-value-added vessel types, particularly LNG carriers, which serves as a core rationale for sector valuations. Business scope has recently broadened beyond commercial shipbuilding into US Navy MRO (maintenance, repair, and overhaul), defense, and unmanned surface vessel programs, diversifying revenue structures. Notably, the industry has shifted from a prior oversupply and low-price environment to a position where selective order-taking is now feasible."
+      },
+      "structure": {
+        "ko": "밸류체인 최상단에는 HD현대중공업·HD한국조선해양·한화오션·삼성중공업 등 조선소가 위치하며, 이들은 LNG운반선·초대형 컨테이너선·유조선·해양플랜트·특수선(함정) 등 선종별로 건조 역량을 나눠 갖고 있다. HD현대마린솔루션은 선박 유지보수·부품·솔루션 등 애프터마켓 서비스를 담당하며 조선 건조 사이클과는 다른 수익 구조를 가진다. 엔진·기자재 부문에는 한화엔진, HD현대마린엔진, STX엔진이 있어 선박용 엔진을 공급하며, 세진중공업·현대힘스·케이프 등은 선체 블록·데크하우스 등 기자재를 조선 대형사에 공급하는 협력사 성격이 강하다. 대한조선은 탱커 등 중형선 건조에 특화된 중견 조선소로 분류된다. 업종 시총은 상위 4사(HD현대중공업·HD한국조선해양·한화오션·삼성중공업)에 극도로 집중되어 있어, 대형사의 수주·실적 흐름이 업종 전체의 방향성을 좌우하는 구조다.",
+        "en": "At the top of the value chain sit the shipbuilders—HD Hyundai Heavy Industries, HD Korea Shipbuilding & Offshore Engineering, Hanwha Ocean, and Samsung Heavy Industries—each holding differentiated construction capabilities across LNG carriers, ultra-large container ships, tankers, offshore plants, and naval vessels. HD Hyundai Marine Solution operates in vessel maintenance, parts, and aftermarket services, generating revenue on a cycle distinct from new-build shipbuilding. The engine and equipment segment includes Hanwha Engine, HD Hyundai Marine Engine, and STX Engine supplying marine engines, while Sejin Heavy Industries, Hyundai HIMS, and Cape function primarily as suppliers of hull blocks and deckhouses to the major shipbuilders. Daehan Shipbuilding is classified as a mid-tier yard specializing in tankers and mid-sized vessel construction. Sector market capitalization is heavily concentrated in the top four names, meaning their order intake and earnings trajectory largely determine the sector's overall direction."
+      },
+      "trends": {
+        "ko": "2026년 국내 조선 빅3의 1분기 합산 영업이익은 사상 최대치를 경신했으며, 1분기 합산 수주액도 큰 폭으로 늘어 5월 말 기준 누적 수주가 200억달러를 돌파했다. 업계는 2028년까지 인도 물량이 이미 꽉 찬 상태이며 2029년 인도 슬롯을 두고 선주 간 경쟁이 벌어지면서 선가가 점진적으로 오르는 추세라고 밝히고 있다. LNG선 신조선가는 2억5000만달러 이상 수준을 유지하며 상승 압력을 받고 있고, 유조선(탱커) 시장 역시 높은 운임을 바탕으로 선가 상승세를 보이고 있다. HD현대중공업과 한화오션은 2026년 들어 각각 미 해군 MRO 사업을 추가 수주했으며, 이는 지난해 연간 실적을 1분기 만에 넘어선 수치로 미국 방산 협력이 본격화되는 신호로 해석된다. 다만 중국 조선소의 저가 경쟁력 확대와 글로벌 해운 시황 둔화 우려도 동시에 제기되고 있다.",
+        "en": "In Q1 2026, the combined operating profit of Korea's Big 3 shipbuilders hit a record high, while combined order intake surged, pushing cumulative 2026 orders past USD 20 billion by late May. Industry sources note that delivery slots are already fully booked through 2028, with intensifying competition among shipowners for 2029 delivery slots gradually pushing up newbuild prices. LNG carrier newbuild prices have held above USD 250 million with continued upward pressure, while the tanker market has also seen rising prices on the back of strong freight rates. HD Hyundai Heavy Industries and Hanwha Ocean each secured additional US Navy MRO contracts in 2026, a figure that already surpassed their respective full-year 2025 totals within a single quarter, signaling accelerating US defense cooperation. At the same time, concerns persist over expanding low-cost competitiveness from Chinese shipyards and a potential slowdown in global shipping demand."
+      },
+      "outlook": {
+        "ko": "증권가는 컨테이너선 발주 둔화가 예상되는 가운데 LNG선 발주 규모가 2026년 조선 3사 상선 수주 실적의 핵심 변수가 될 것으로 보고 있으며, 중국 조선소의 LNG선 건조 슬롯이 제한적인 점을 감안하면 발주 물량의 상당 부분이 국내 조선업계로 집중될 가능성이 언급된다. 일부 증권사는 LNG선 발주와 한미 조선 협력 프로젝트가 맞물리는 시기가 조선 슈퍼사이클의 새로운 국면이 될 수 있다는 전망을 제시하고 있다. 미국 해군의 함정 전력 확대 계획과 이에 따른 동맹국 협력 필요성 증가는 국내 대형 조선사들의 MRO·신규 함정·무인함정 사업 확장에 우호적 환경을 조성하고 있다. 해양플랜트 시장 역시 장기간의 침체를 지나 회복 조짐을 보이고 있어, LNG선 사이클과 해양플랜트 사이클이 동시에 열릴 경우 대형사의 실적 레버리지가 확대될 수 있다는 분석도 나온다. 다만 실제 수주 성사 여부와 실적 반영까지는 상당한 시차가 존재해 개별 프로젝트의 진행 상황을 지속적으로 확인할 필요가 있다.",
+        "en": "Brokerages view LNG carrier order volumes as the key variable determining whether Korea's Big 3 commercial shipbuilding performance improves in 2026, amid an expected slowdown in container ship orders, with the limited LNG construction capacity at Chinese yards potentially channeling a large share of orders to Korean shipbuilders. Some brokerages project that the convergence of LNG carrier ordering and Korea-US shipbuilding cooperation projects could mark the opening of a new phase of the shipbuilding supercycle. The US Navy's fleet expansion plans and the resulting need for allied cooperation are creating a favorable environment for Korean major shipbuilders to expand into MRO, new naval vessel construction, and unmanned vessel programs. The offshore plant market also shows signs of recovery after a prolonged downturn, with analysts noting that simultaneous LNG carrier and offshore plant cycles could amplify earnings leverage for large shipbuilders. However, considerable lag exists between order finalization and earnings recognition, warranting continued monitoring of individual project progress."
+      },
+      "risks": [
+        {
+          "title": {
+            "ko": "환율 및 원자재 가격 변동",
+            "en": "Foreign Exchange and Raw Material Price Volatility"
+          },
+          "body": {
+            "ko": "수주가 달러 기반으로 이루어지는 만큼 원화 강세는 실적에 부정적으로 작용할 수 있으며, 철강 등 원자재 가격 상승은 조선사의 원가 부담을 확대시킬 수 있다. 이러한 변동성은 대형사뿐 아니라 기자재·엔진 공급 협력사의 마진에도 연쇄적으로 영향을 줄 수 있다.",
+            "en": "Since orders are denominated in US dollars, a stronger won could negatively affect earnings, while rising raw material prices such as steel could increase cost burdens for shipbuilders. This volatility can also ripple through to the margins of equipment and engine supply partners, not just the major shipbuilders."
+          }
+        },
+        {
+          "title": {
+            "ko": "중국 조선업 경쟁 심화",
+            "en": "Intensifying Competition from Chinese Shipbuilders"
+          },
+          "body": {
+            "ko": "중국 조선소들의 생산능력 확대와 저가 경쟁력 강화는 장기적으로 국내 조선업계의 시장점유율에 부담 요인이 될 수 있다. 다만 현재는 한국이 고부가가치 선종에서 기술 우위를 유지하며 시장점유율을 방어하고 있는 상황이나 이 격차가 지속될지는 지속적인 관찰이 필요하다.",
+            "en": "The expansion of production capacity and cost competitiveness at Chinese shipyards could pose a long-term burden on Korean shipbuilders' market share. While Korea currently defends its market position through technological superiority in high-value-added vessel types, whether this gap persists warrants ongoing monitoring."
+          }
+        },
+        {
+          "title": {
+            "ko": "인력 수급 및 인건비 부담",
+            "en": "Labor Supply and Rising Wage Costs"
+          },
+          "body": {
+            "ko": "조선업 전반의 숙련공 부족 문제가 심화되면서 외국인 근로자 비중이 늘어나고 있으며, 이는 인건비 상승과 원가 부담 확대로 이어질 수 있다. 노사 협상 과정에서의 비용 부담 확대 가능성도 잠재적 변수로 지목된다.",
+            "en": "A worsening shortage of skilled workers across the shipbuilding industry has increased reliance on foreign labor, which could lead to rising labor costs and expanded cost burdens. Potential cost increases arising from labor-management negotiations are also cited as a latent variable."
+          }
+        }
+      ],
+      "sector": "조선",
+      "generatedAt": "2026-08-06 20:04"
+    },
+    "2차전지": {
+      "lead": {
+        "ko": "2차전지 업종은 2023~2025년 전기차(EV) 캐즘과 고금리 국면에 따른 실적 저점을 지나, ESS·AI 데이터센터 전력 수요를 새로운 성장축으로 삼아 회복 국면 초입에 진입한 것으로 평가된다.",
+        "en": "The secondary battery sector, having passed through an earnings trough driven by the EV chasm and high-rate environment of 2023-2025, appears to be entering the early stage of a recovery, with ESS and AI data center power demand emerging as new growth drivers."
+      },
+      "overview": {
+        "ko": "2차전지 업종은 전기차·에너지저장장치(ESS)·전자기기용 배터리 셀과 이를 구성하는 양극재·음극재·분리막·전해액 등 4대 핵심소재, 그리고 리사이클링·부품까지 포괄하는 밸류체인 산업이다. 국내 상장 종목은 총 39개, 합산 시가총액은 약 157.4조원으로 전체 시장의 약 2.9%를 차지하며, 셀 제조사인 LG에너지솔루션과 삼성SDI가 시총 상위를 압도적으로 점유하고 있다. 한국은 LG에너지솔루션, 삼성SDI, SK온 등 글로벌 상위권 배터리 셀 제조사를 보유한 몇 안 되는 국가로, 소재 밸류체인까지 국내 상장사들이 폭넓게 형성하고 있어 산업 전반의 저변이 두텁다. 다만 업종 실적은 글로벌 완성차 업체의 전기차 판매 사이클, 미국·유럽의 보조금 및 관세 정책, 중국 업체와의 원가 경쟁 등 대외 변수에 민감하게 반응하는 구조다.",
+        "en": "The secondary battery sector encompasses the entire value chain from EV, ESS, and electronics battery cells to the four core materials—cathode, anode, separator, and electrolyte—as well as recycling and components. A total of 39 listed companies in this sector have a combined market capitalization of approximately KRW 157.4 trillion, representing about 2.9% of the total market, with cell manufacturers LG Energy Solution and Samsung SDI overwhelmingly dominating the top of the market-cap ranking. Korea is one of the few countries with globally top-tier battery cell makers such as LG Energy Solution, Samsung SDI, and SK On, and its listed materials value chain is also broadly developed, giving the industry a deep base. However, sector earnings remain highly sensitive to external variables such as the EV sales cycle of global automakers, US and European subsidy and tariff policies, and cost competition from Chinese manufacturers."
+      },
+      "structure": {
+        "ko": "밸류체인 최상단은 배터리 셀 제조사로, LG에너지솔루션과 삼성SDI 두 종목이 업종 시가총액의 약 73%를 차지할 정도로 집중도가 매우 높다. 양극재 부문은 포스코퓨처엠, 에코프로비엠, 엘앤에프, 코스모신소재가 대표적이며 하이니켈·LFP 등 제품 라인업에 따라 경쟁 구도가 형성돼 있다. 음극재·동박 등 하위 소재는 롯데에너지머티리얼즈가, 분리막은 SK아이이테크놀로지가 대표 종목으로 자리하고 있고, 대주전자재료는 실리콘 음극재 등 첨가제, 비츠로셀은 산업용 1차 리튬전지에 특화돼 있다. 폐배터리 리사이클링은 에코프로머티가, 배터리 팩 부품(버스바 등)은 LS머트리얼즈가 대응하고 있어, 셀-소재-리사이클링-부품에 이르는 국내 상장사 커버리지가 비교적 넓은 편이다. 다만 셀 2사를 제외하면 나머지 종목들의 개별 시총은 1~13조원 수준으로 상대적으로 작아, 업종 지수 움직임은 셀 대형주 두 종목의 실적·수급에 크게 좌우되는 구조다.",
+        "en": "At the top of the value chain are the battery cell manufacturers, with LG Energy Solution and Samsung SDI alone accounting for roughly 73% of the sector's total market capitalization, indicating very high concentration. In the cathode material segment, POSCO Future M, EcoPro BM, L&F, and Cosmo New Materials are the representative names, with competition shaped by product lines such as high-nickel and LFP. Lotte Energy Materials represents downstream materials such as copper foil, while SK IE Technology is the leading separator name; Daejoo Electronic Materials specializes in silicon anode additives, and Vitzrocell focuses on industrial primary lithium batteries. EcoPro Materials handles battery recycling and LS Materials covers battery pack components such as busbars, giving domestic listed coverage a relatively broad span from cells to materials, recycling, and components. However, aside from the two cell majors, the remaining names have individually smaller market caps in the KRW 1-13 trillion range, meaning sector index movements are heavily driven by the earnings and flows of the two large-cap cell makers."
+      },
+      "trends": {
+        "ko": "업종은 2023년 이후 이어진 EV 캐즘과 고금리 환경 속에서 수익성 최악 국면을 지났으며, 여러 증권사 리서치에서는 이러한 다운사이클이 마무리 단계에 접어들고 있다는 평가가 나오고 있다. 지역별로는 전기차 판매 비중이 가장 큰 중국이 성장 둔화 기저에 진입한 반면, 중국 외 지역의 전기차 판매는 저점을 지나 회복세를 보이는 것으로 관측된다. 미국은 2025년 9월 전기차 구매 보조금이 폐지되면서 단기적으로 수요 위축 우려가 부각됐고, 국내에서도 최근 발표된 6대 분야 국내생산세액공제(이른바 '한국판 IRA')에 전기차는 포함되지 않아 완성차 수요 측 정책 불확실성이 남아 있다. 반면 미국 AI 데이터센터발 전력 수요 급증에 따른 ESS(에너지저장장치) 시장 성장이 업종의 새로운 상승 트리거로 부각되고 있으며, 이 과정에서 비중국 LFP 양극재의 공급 부족 가능성이 제기되고 있다.",
+        "en": "The sector has passed through a period of severely depressed profitability amid the EV chasm and high-rate environment since 2023, and several brokerage research reports assess that this downcycle is now approaching its final stage. By region, China—the largest EV sales market—has entered a base-driven growth slowdown, while EV sales outside China are observed to be recovering from a 2024 trough. In the United States, the termination of EV purchase subsidies in September 2025 has raised near-term demand concerns, and Korea's recently announced production tax credit for six strategic sectors (dubbed the \"Korean version of the IRA\") excludes EVs, leaving policy uncertainty on the demand side for automakers. On the other hand, ESS market growth driven by surging power demand from AI data centers in the US is emerging as a new upside trigger for the sector, alongside concerns over a potential shortage of non-Chinese LFP cathode material supply."
+      },
+      "outlook": {
+        "ko": "향후 관전 포인트는 EV 중심 성장에서 ESS·AI 데이터센터 전력 인프라로의 수요 축 이동이 얼마나 빠르게 진행되는지에 있다. 데이터센터발 전력 수요 확대와 이에 연계된 배터리 에너지저장장치(BESS) 수요 성장이 국내 셀 및 소재 업체들의 실적 모멘텀 회복 속도를 좌우할 핵심 변수로 지목된다. 아울러 미국·유럽의 탈중국 공급망 정책이 본격화될 경우 국내 배터리 3사가 참여 중인 북미 현지 생산 능력이 상대적 수혜 요인으로 작용할 수 있다. 중장기적으로는 삼성SDI 등이 추진하는 전고체 배터리의 상용화 시점(2027년 이후 거론)과 46시리즈 등 차세대 원통형 배터리의 양산 확대도 업종 밸류에이션에 영향을 줄 수 있는 기술적 이벤트로 꼽힌다. 다만 완성차 업체들의 전기차 판매 전략 조정과 각국 보조금·세제 정책 변화 속도가 여전히 유동적인 만큼, 회복의 속도와 폭에 대한 눈높이는 보수적으로 유지될 필요가 있다.",
+        "en": "A key point to watch going forward is how quickly the demand axis shifts from EV-centric growth toward ESS and AI data center power infrastructure. Growth in data center-driven power demand and the associated battery energy storage system (BESS) demand is cited as a critical variable determining the pace of earnings momentum recovery for domestic cell and materials makers. In addition, if US and European de-risking-from-China supply chain policies advance further, the North American production capacity in which Korea's three battery makers participate could serve as a relative beneficiary factor. Over the medium to long term, the commercialization timeline for solid-state batteries being pursued by Samsung SDI and others (mentioned as potentially after 2027) and the expanding mass production of next-generation cylindrical batteries such as the 46-series are also flagged as technological events that could influence sector valuations. However, given that automakers' EV sales strategies and the pace of subsidy and tax policy changes across countries remain fluid, expectations for the speed and magnitude of recovery should be kept conservative."
+      },
+      "risks": [
+        {
+          "title": {
+            "ko": "전기차 수요·정책 불확실성",
+            "en": "EV Demand and Policy Uncertainty"
+          },
+          "body": {
+            "ko": "미국의 전기차 구매 보조금 폐지와 국내 개별소비세 감면 축소 등 주요국 지원 정책 변화가 겹치면서 전기차 판매 회복 속도에 대한 불확실성이 남아 있다. 완성차 업체들의 전기차 전환 속도 조정이 배터리 셀·소재 업체의 수주와 가동률에 직접적인 영향을 줄 수 있다.",
+            "en": "Overlapping changes in major-country support policies—such as the termination of US EV purchase subsidies and reduced Korean individual consumption tax breaks—leave uncertainty over the pace of EV sales recovery. Automakers' adjustments to their EV transition speed can directly affect order intake and utilization rates for battery cell and materials makers."
+          }
+        },
+        {
+          "title": {
+            "ko": "중국 업체와의 경쟁 및 LFP 점유율 확대",
+            "en": "Competition with Chinese Makers and Rising LFP Share"
+          },
+          "body": {
+            "ko": "중국은 여전히 전체 배터리 사용량의 절반 이상을 차지하는 최대 시장이며, 중국 완성차 업체와 배터리 업체의 점유율 확대가 국내 업체들의 글로벌 시장 지분 회복을 제약할 수 있다. 저가형 LFP 배터리의 비중 확대는 국내 하이니켈 중심 소재 업체들의 제품 믹스 전환 압력으로 이어질 수 있다.",
+            "en": "China remains the largest market, accounting for more than half of global battery usage, and the expanding share of Chinese automakers and battery makers could constrain the recovery of domestic firms' global market share. The growing weight of low-cost LFP batteries may also pressure domestic high-nickel-focused materials makers to shift their product mix."
+          }
+        },
+        {
+          "title": {
+            "ko": "업종 내 종목 집중도 및 원자재 가격 변동",
+            "en": "High Intra-Sector Concentration and Raw Material Price Volatility"
+          },
+          "body": {
+            "ko": "업종 시가총액의 대부분이 셀 제조사 2개 종목에 집중돼 있어, 개별 대형주의 실적·수급 변화가 업종 전체 지표에 과도하게 반영될 수 있다. 니켈·리튬 등 핵심 원자재 가격 변동은 소재 업체들의 원가 부담과 재고 평가손익에 직접 영향을 미치는 요인이다.",
+            "en": "Because most of the sector's market capitalization is concentrated in just two cell manufacturers, changes in the earnings or flows of individual large-cap stocks can be disproportionately reflected in overall sector indicators. Fluctuations in prices of key raw materials such as nickel and lithium are a direct factor affecting materials makers' cost burdens and inventory valuation gains or losses."
+          }
+        }
+      ],
+      "sector": "2차전지",
+      "generatedAt": "2026-08-06 20:04"
+    },
+    "정유": {
+      "lead": {
+        "ko": "국내 정유업종은 시가총액 기준 전체 증시의 약 0.6%에 불과한 소규모 업종이나, 최근 중동 지역 지정학적 리스크에 따른 유가 급등과 정제마진 강세로 SK이노베이션·S-Oil 양대 대형사의 실적이 크게 개선되는 흐름을 보이고 있다.",
+        "en": "Korea's refining sector accounts for only about 0.6% of total market capitalization, but recent geopolitical risk in the Middle East has driven sharp oil price spikes and strong refining margins, materially improving earnings at the sector's two large-cap names, SK Innovation and S-Oil."
+      },
+      "overview": {
+        "ko": "정유업은 원유를 정제하여 휘발유·경유·항공유 등 석유제품과 윤활기유, 석유화학 원료를 생산·판매하는 자본집약적 산업으로, 한국은 대규모 정제설비와 수출 비중이 높은 글로벌 정제 허브 중 하나로 꼽힌다. 국내 상장 정유업종은 6개 종목, 합산 시가총액 약 33.5조원으로 전체 시장 대비 비중은 크지 않으며, SK이노베이션과 S-Oil 두 종목이 업종 시총의 대부분을 차지하는 고도로 집중된 구조다. 한국쉘석유, 미창석유, 극동유화, 대원 등 나머지 종목은 시가총액이 1조원 미만인 중소형 윤활유·유통 중심 회사로 업종 내 비중은 제한적이다. 업종 실적은 국제유가와 정제마진(크랙 스프레드) 변동에 민감하며, 원유 가격 변동에 따른 재고평가손익이 분기 실적을 크게 좌우하는 특성을 지닌다. 대형사들은 정유 외에도 석유화학, 윤활기유, 배터리 등으로 사업을 다각화해 유가 사이클에 대한 민감도를 완화하려는 전략을 취하고 있다.",
+        "en": "Refining is a capital-intensive industry that processes crude oil into gasoline, diesel, jet fuel, lubricant base oils, and petrochemical feedstocks, and Korea is regarded as one of the world's major refining hubs given its large-scale facilities and high export orientation. The domestic listed refining sector comprises six companies with combined market capitalization of roughly KRW 33.5 trillion, a modest share of the overall market, and is highly concentrated, with SK Innovation and S-Oil accounting for the vast majority of sector capitalization. The remaining names—Korea Shell Petroleum, Michang Oil, Kukdong Oil & Chemicals, and Daewon—are smaller lubricant and distribution-focused companies each with market capitalization below KRW 1 trillion and limited sector weight. Sector earnings are highly sensitive to crude oil prices and refining margins (crack spreads), with inventory valuation gains or losses tied to oil price swings often driving quarterly results. Large players have diversified beyond pure refining into petrochemicals, lubricant base oils, and batteries in an effort to reduce sensitivity to the oil price cycle."
+      },
+      "structure": {
+        "ko": "정유 산업의 가치사슬은 원유 조달(상류)-정제 및 석유화학 생산(중류)-제품 유통 및 판매(하류)로 구성된다. SK이노베이션은 정유 자회사 SK에너지, 윤활기유 자회사 SK엔무브, 석유화학 자회사 SK지오센트릭, 배터리 자회사 SK온 등을 보유해 정유·화학·윤활유·배터리를 아우르는 종합 에너지 기업으로 확장한 구조다. S-Oil은 사우디 아람코가 최대주주인 정유·석유화학·윤활기유 기업으로, 정제마진 민감도가 상대적으로 높은 순수 정유·화학 사업 구조를 유지하고 있다. 한국쉘석유는 글로벌 브랜드 셀(Shell)의 국내 윤활유 사업을 담당하며, 미창석유·대원·극동유화는 윤활유 및 석유 유통 관련 중소형 사업자로 밸류체인의 하류 영역에 위치한다. 이처럼 업종은 상위 2개사의 수직 계열화된 대형 정제·화학 설비와 나머지 소형사들의 윤활유 유통 사업으로 뚜렷하게 이원화된 집중 구조를 보인다.",
+        "en": "The refining industry's value chain spans upstream crude oil procurement, midstream refining and petrochemical production, and downstream product distribution and sales. SK Innovation has expanded into an integrated energy company through subsidiaries spanning refining (SK Energy), lubricant base oils (SK Enmove), petrochemicals (SK Geo Centric), and batteries (SK On). S-Oil is a refining, petrochemical, and lubricant base oil company with Saudi Aramco as its largest shareholder, and it maintains a comparatively pure refining and chemicals business structure with higher sensitivity to refining margins. Korea Shell Petroleum operates the domestic lubricant business under the global Shell brand, while Michang Oil, Daewon, and Kukdong Oil & Chemicals are smaller lubricant and petroleum distribution operators positioned in the downstream segment of the value chain. The sector thus exhibits a clearly bifurcated, concentrated structure, with the two large-cap firms operating vertically integrated large-scale refining and chemical facilities, while the remaining smaller companies focus on lubricant distribution."
+      },
+      "trends": {
+        "ko": "2026년 상반기 국제 에너지 시장은 중동 지역 무력 충돌 등 대형 공급 차질 변수로 극심한 변동성을 겪었으며, 국제유가가 단기간 급등하면서 정유사들은 역대급 수준의 정제마진을 기록했다. 이후 국제유가는 전쟁 이전 수준으로 안정화되고 원유 공급망도 점차 정상화되는 흐름을 보이고 있다. SK이노베이션은 2026년 2분기 매출 29조1572억원, 영업이익 3조4873억원을 기록하며 전년 동기 영업손실에서 흑자로 전환했는데, 이는 윤활유(SK엔무브)와 배터리(SK온) 사업의 실적 호조에 힘입은 결과였다. 특히 SK엔무브는 중동 지역 경쟁사의 공급 차질로 윤활기유 마진이 오르면서 전분기 대비 영업이익이 크게 늘었으며, 정유 사업을 담당하는 SK에너지는 유가 상승에 따른 재고 관련 이익이 반영되며 견조한 실적을 냈으나 6월 미국-이란 종전 양해각서(MOU) 체결 이후 유가가 하락하며 이익 폭이 축소됐다. 업계 리포트에 따르면 2026년 하반기 복합정제마진은 배럴당 26달러 수준으로 예상되며, 이는 전쟁 이전인 2025년 4분기의 배럴당 10달러보다 높은 수준으로, 유가 안정화 이후에도 제품 공급 부족 여건이 이어지며 마진 개선 효과가 일부 지속될 가능성이 제기된다.",
+        "en": "In the first half of 2026, global energy markets experienced extreme volatility driven by major supply disruptions including Middle East military conflict, and a sharp short-term spike in international oil prices pushed refiners' margins to record levels. Since then, oil prices have stabilized back toward pre-conflict levels and crude supply chains have gradually normalized. SK Innovation posted second-quarter 2026 revenue of KRW 29.1572 trillion and operating profit of KRW 3.4873 trillion, turning profitable from an operating loss a year earlier, driven by strong performance in its lubricant (SK Enmove) and battery (SK On) businesses. In particular, SK Enmove's operating profit rose sharply quarter-on-quarter as lubricant base oil margins increased amid supply disruptions at Middle Eastern competitors, while its refining unit SK Energy posted solid results supported by inventory-related gains from rising oil prices, though profits narrowed after oil prices fell following the June US-Iran ceasefire memorandum of understanding. Industry reports project the combined refining margin for the second half of 2026 at around USD 26 per barrel, higher than the pre-conflict fourth-quarter 2025 level of USD 10 per barrel, suggesting that some margin improvement could persist even after oil price stabilization amid continued product supply tightness."
+      },
+      "outlook": {
+        "ko": "향후 업종의 관전 포인트는 지정학적 리스크 완화에 따른 유가 정상화 속도와 정제마진의 지속가능성이다. OPEC+의 증산과 아시아 지역 정제설비 가동률 상승이 예상되면서 3분기 이후 정유 시황이 다소 둔화될 가능성이 제기되는 한편, 제품 공급 부족과 원유 공급처 가격(OSP) 안정화가 동시에 나타날 경우 마진 개선이 이어질 여지도 남아 있다. 성장 동인으로는 SK엔무브의 고급 윤활기유(Group III) 사업 확대와 S-Oil의 샤힌(Shaheen) 프로젝트를 통한 석유화학 비중 확대 등 대형사들의 비정유 부문 다각화가 꼽힌다. 다만 장기적으로는 글로벌 석유제품 수요 증가율이 둔화되는 구조적 흐름이 예상되어, 업종 전반의 실적은 단기 유가·마진 사이클과 중장기 수요 둔화라는 상반된 변수를 동시에 반영할 필요가 있다. 결과적으로 업종 내에서도 사업 다각화 정도와 원유 조달 구조에 따라 종목별 실적 차별화가 심화될 가능성이 있다.",
+        "en": "Key factors to watch going forward include the pace of oil price normalization as geopolitical risk eases and the sustainability of refining margins. Expected OPEC+ output increases and rising refinery utilization in Asia raise the possibility of some moderation in refining conditions from the third quarter onward, while margin improvement could still continue if product supply tightness persists alongside stabilization of crude official selling prices. Growth drivers include large players' diversification into non-refining businesses, such as SK Enmove's expansion in premium Group III lubricant base oils and S-Oil's petrochemical capacity expansion through its Shaheen project. Over the longer term, however, a structural slowdown in global petroleum product demand growth is anticipated, meaning sector-wide performance will need to reflect both the short-term oil price and margin cycle and this longer-term demand deceleration simultaneously. As a result, earnings differentiation among individual names is likely to widen depending on the degree of business diversification and crude sourcing structure."
+      },
+      "risks": [
+        {
+          "title": {
+            "ko": "지정학적 리스크와 유가 변동성",
+            "en": "Geopolitical Risk and Oil Price Volatility"
+          },
+          "body": {
+            "ko": "중동 지역 무력 충돌이나 호르무즈 해협 관련 리스크가 재부각될 경우 유가와 정제마진이 다시 급변동할 수 있다. 2026년 상반기와 같이 급격한 유가 상승 이후 반락하는 구간에서는 재고평가손익의 변동성이 커져 정유사 분기 실적의 예측 가능성이 낮아질 수 있다.",
+            "en": "A resurgence of Middle East military conflict or Strait of Hormuz-related risk could trigger renewed sharp swings in oil prices and refining margins. As seen in the sharp rise-then-decline pattern of the first half of 2026, periods of rapid oil price reversal can amplify inventory valuation gain and loss volatility, reducing the predictability of refiners' quarterly earnings."
+          }
+        },
+        {
+          "title": {
+            "ko": "정제마진 정상화 가능성",
+            "en": "Potential Normalization of Refining Margins"
+          },
+          "body": {
+            "ko": "OPEC+의 증산과 아시아 지역 정제설비 가동률 상승이 예상되는 가운데, 공급 차질로 인해 확대된 정제마진이 정상화 국면에 접어들 경우 최근의 높은 실적 수준이 지속되기 어려울 수 있다. 이는 최근 정제마진 강세에 크게 의존한 실적 개선이 일시적일 가능성을 시사한다.",
+            "en": "With OPEC+ output increases and rising Asian refinery utilization anticipated, refining margins that widened due to supply disruptions may normalize, making it difficult to sustain recent elevated earnings levels. This suggests that recent earnings improvement, heavily reliant on strong refining margins, could prove partly temporary."
+          }
+        },
+        {
+          "title": {
+            "ko": "구조적 수요 둔화 및 에너지 전환",
+            "en": "Structural Demand Slowdown and Energy Transition"
+          },
+          "body": {
+            "ko": "글로벌 석유제품 수요 증가율이 장기적으로 둔화될 것으로 전망되는 가운데, 전기차 확산 등 에너지 전환 흐름이 지속되면 전통 정유사업의 성장 잠재력이 제약될 수 있다. 이에 따라 비정유 부문 다각화 여부가 업종 내 종목별 실적 차별화의 주요 변수가 될 전망이다.",
+            "en": "With global petroleum product demand growth expected to slow over the long term, continued momentum in energy transition trends such as electric vehicle adoption could constrain the growth potential of traditional refining businesses. As a result, the extent of diversification into non-refining segments is likely to be a key variable driving earnings differentiation among companies within the sector."
+          }
+        }
+      ],
+      "sources": [
+        "https://buffettlab.co.kr/news/view.php?idx=52052"
+      ],
+      "sector": "정유",
+      "generatedAt": "2026-08-06 20:04"
+    },
+    "전자·부품": {
+      "lead": {
+        "ko": "AI 서버·데이터센터 확산과 전장화가 국내 전자·부품 업종의 실적 개선을 견인하고 있으며, 대형사 중심으로 밸류에이션 재평가가 진행 중이다.",
+        "en": "Expansion of AI servers and data centers alongside vehicle electrification is driving earnings recovery across Korea's electronics/components sector, with valuation re-rating concentrated among large-cap names."
+      },
+      "overview": {
+        "ko": "전자·부품 업종은 스마트폰, 가전, 자동차, 서버 등 전방산업에 들어가는 카메라모듈, MLCC, 반도체 패키지 기판, 디스플레이 패널 등을 생산하는 부품·완제품 업체로 구성된다. 상장 종목 수가 241개에 달해 코스피·코스닥을 통틀어 종목 수가 가장 많은 업종 중 하나이며, 업종 시가총액은 약 186.5조원으로 전체 시장의 3.4% 수준을 차지한다. 삼성전기, LG전자, LG이노텍 등 대형 계열사가 시가총액의 대부분을 차지하는 반면 다수의 중소형 부품사가 후방에서 밸류체인을 형성하는 구조다. 글로벌 전자 대기업의 공급망에 깊이 편입돼 있어 업황은 전방산업인 스마트폰·가전 수요와 AI 인프라 투자 사이클에 민감하게 반응한다. 최근에는 전통적인 IT 부품 수요를 넘어 AI 서버, 자동차 전장, 데이터센터향 고부가 부품으로 사업 축이 확장되는 흐름이 뚜렷하다.",
+        "en": "The electronics/components sector comprises manufacturers of camera modules, MLCCs, semiconductor package substrates, and display panels used in smartphones, home appliances, automobiles, and servers. With 241 listed names, it is among the most populous sectors across KOSPI and KOSDAQ, while aggregate market capitalization stands at roughly KRW 186.5 trillion, about 3.4% of the total market. Large affiliates such as Samsung Electro-Mechanics, LG Electronics, and LG Innotek account for the bulk of sector value, while numerous small and mid-cap suppliers populate the value chain further downstream. Deep integration into global electronics giants' supply chains makes the sector highly sensitive to smartphone and appliance demand cycles as well as AI infrastructure investment trends. More recently, the sector's axis has been expanding beyond traditional IT component demand toward high-value-added products for AI servers, automotive electrification, and data centers."
+      },
+      "structure": {
+        "ko": "밸류체인은 크게 부품 소재(MLCC, 카메라모듈, 반도체 패키지 기판)와 완제품(가전, 디스플레이 패널)으로 나뉜다. 삼성전기는 MLCC와 반도체 패키지 기판(FC-BGA)을 양대 축으로 AI 서버·전장용 고부가 제품 비중을 확대하고 있으며, 이수페타시스는 서버·네트워크용 다층기판(MLB) 전문 업체로 밸류체인 상단에 위치한다. LG이노텍은 카메라모듈(광학솔루션)이 매출의 대부분을 차지하면서 반도체 패키지 기판 사업을 신성장동력으로 육성하고 있고, 코리아써키트는 인쇄회로기판(PCB) 생산을 담당한다. LG전자는 완제품(가전·전장) 영역의 대표 종목이며, LG디스플레이는 OLED·LCD 패널을 공급하는 상류 부품사로 분류된다. 한화비전(영상보안), 서진시스템(정밀가공·부품), RFHIC(RF 반도체)와 같이 특정 응용 분야에 특화된 중소형 종목들이 다수 존재해 업종 내 세부 밸류체인이 매우 세분화돼 있다.",
+        "en": "The value chain broadly splits into component/materials (MLCCs, camera modules, semiconductor package substrates) and finished products (appliances, display panels). Samsung Electro-Mechanics is expanding high-value MLCC and FC-BGA package substrate offerings for AI servers and automotive applications as its twin growth pillars, while Isu Petasys specializes in multilayer boards (MLBs) for servers and networking equipment further upstream. LG Innotek derives the majority of revenue from camera modules (Optical Solutions) while nurturing semiconductor package substrates as a new growth driver, and Korea Circuit handles printed circuit board (PCB) manufacturing. LG Electronics represents the finished-product segment in appliances and automotive components, while LG Display is classified as an upstream supplier of OLED and LCD panels. Numerous small and mid-cap names specialized in niche applications—such as Hanwha Vision (video security), Seojin System (precision processing/components), and RFHIC (RF semiconductors)—further fragment the sector's internal value chain."
+      },
+      "trends": {
+        "ko": "삼성전기는 AI 서버향 고성능 MLCC와 FC-BGA 판매 비중 확대에 힘입어 컴포넌트·패키지 사업부가 각각 두 자릿수 성장을 기록했고, 최근 실적 서프라이즈와 함께 3분기 사상 최대 실적 전망까지 제시되고 있다. LG이노텍은 계절적 비수기였던 1분기에도 매출·영업이익이 전년 대비 크게 늘며 어닝 서프라이즈를 기록했는데, 매출의 80% 이상을 차지하는 카메라모듈 사업의 견조한 흐름과 반도체 패키지 기판 사업의 성장이 배경으로 지목된다. LG디스플레이는 OLED 중심 사업구조 전환과 비용 효율화를 통해 2026년 상반기 5년 만에 흑자 전환에 성공했으며, 하반기에는 모바일 OLED 성수기 진입에 따른 추가 실적 개선이 기대되고 있다. 전반적으로 스마트폰·가전 등 전통 전방산업의 성장은 둔화된 반면, AI 인프라 투자와 전장화가 부품 수요의 새로운 축으로 자리잡으며 업종 내 실적 차별화가 진행되고 있다.",
+        "en": "Samsung Electro-Mechanics posted double-digit growth in both its component and package divisions on the back of expanding sales of high-performance MLCCs and FC-BGA substrates for AI servers, with recent earnings surprises accompanied by guidance for record-high third-quarter results. LG Innotek delivered an earnings surprise even in the seasonally slow first quarter, with revenue and operating profit rising sharply year-over-year, driven by resilient camera module sales—over 80% of total revenue—and growth in its semiconductor package substrate business. LG Display achieved its first half-year profit in five years in the first half of 2026 through OLED-centric restructuring and cost efficiencies, with further improvement expected in the second half as mobile OLED enters its peak season. Overall, while traditional end markets such as smartphones and appliances show slowing growth, AI infrastructure investment and vehicle electrification are emerging as new demand pillars, driving performance differentiation within the sector."
+      },
+      "outlook": {
+        "ko": "향후 관전 포인트는 AI 서버·데이터센터향 고부가 MLCC와 FC-BGA 수요가 실제 매출 비중 확대로 이어지는 속도, 그리고 관련 제품의 가격 인상 지속 여부다. LG이노텍의 경우 신규 가변 조리개 카메라 모듈 채용에 따른 평균판매단가 상승 효과와 서버향 FC-BGA 공급 개시가 추가 성장 동력으로 거론된다. LG디스플레이는 OLED 신규 인프라 투자를 확대하며 중소형·IT용 OLED 시장 지배력 강화를 도모하고 있어 투자 성과의 가시화 여부가 관건이다. 자동차 전장화에 따른 차량용 MLCC, 카메라모듈, 센싱 모듈 수요 확대는 스마트폰 의존도를 낮추는 구조적 변화 요인으로 주목받고 있다. 다만 반도체·부품 가격 상승이 지속될 수 있을지, 그리고 중국 경쟁사의 저가 공세가 카메라모듈·MLCC 등 범용 영역에서 어느 정도 압박을 가할지는 지속적으로 확인이 필요한 변수다.",
+        "en": "Key points to monitor going forward include the pace at which high-value-added MLCC and FC-BGA demand for AI servers and data centers translates into actual revenue mix shifts, and whether associated price increases can be sustained. For LG Innotek, average selling price gains from newly adopted variable-aperture camera modules and the start of server-bound FC-BGA supply are cited as additional growth drivers. LG Display is expanding investment in new OLED infrastructure to strengthen its position in small/medium and IT OLED markets, making the materialization of these investments a key consideration. Growing demand for automotive MLCCs, camera modules, and sensing modules tied to vehicle electrification is drawing attention as a structural factor reducing reliance on smartphones. Nonetheless, whether component price increases can be sustained, and the extent to which low-cost competition from Chinese rivals pressures commoditized segments such as camera modules and MLCCs, remain variables requiring continued monitoring."
+      },
+      "risks": [
+        {
+          "title": {
+            "ko": "전방산업 수요 둔화 리스크",
+            "en": "Downstream Demand Slowdown Risk"
+          },
+          "body": {
+            "ko": "스마트폰·가전 등 전통 전방산업의 성장 정체가 지속될 경우 카메라모듈, 디스플레이 패널 등 관련 부품 수요에 부정적 영향을 줄 수 있다. 업종 내 다수 중소형 부품사는 여전히 IT 완제품 수요에 대한 의존도가 높아 경기 민감도가 크다.",
+            "en": "Continued stagnation in traditional end markets such as smartphones and appliances could negatively affect demand for related components including camera modules and display panels. Many small and mid-cap suppliers in the sector remain heavily dependent on IT finished-product demand, leaving them highly exposed to cyclical swings."
+          }
+        },
+        {
+          "title": {
+            "ko": "중국 경쟁사와의 가격 경쟁",
+            "en": "Price Competition from Chinese Rivals"
+          },
+          "body": {
+            "ko": "카메라모듈, MLCC 등 범용 부품 영역에서 중국 업체들의 시장 진입이 확대되며 가격 경쟁 압력이 이어지고 있다. LG이노텍의 경우 최근 몇 년간 성장 정체의 주요 원인으로 세계 스마트폰 시장 성장 둔화와 중국 경쟁사의 시장 진입이 함께 지목된 바 있다.",
+            "en": "Chinese manufacturers' expanding presence in commoditized component segments such as camera modules and MLCCs continues to exert price competition pressure. In LG Innotek's case, the slowdown in growth in recent years has been attributed jointly to slowing global smartphone market growth and market entry by Chinese competitors."
+          }
+        },
+        {
+          "title": {
+            "ko": "고부가 제품 전환 및 투자 실행 리스크",
+            "en": "Execution Risk in High-Value Product Transition and Investment"
+          },
+          "body": {
+            "ko": "AI 서버·전장용 고부가 제품으로의 사업구조 전환은 대규모 설비투자와 신규 고객사 확보가 뒷받침돼야 하며, 계획대로 진행되지 않을 경우 밸류에이션 재평가 기대가 지연될 수 있다. LG디스플레이의 OLED 신규 인프라 투자 및 삼성전기·LG이노텍의 패키지 기판 증설 등이 대표적인 관전 대상이다.",
+            "en": "The shift toward high-value-added products for AI servers and automotive electrification requires substantial capital expenditure and securing new customers, and any deviation from planned execution could delay anticipated valuation re-rating. LG Display's new OLED infrastructure investment and package substrate capacity expansions at Samsung Electro-Mechanics and LG Innotek represent key items to watch."
+          }
+        }
+      ],
+      "sector": "전자·부품",
+      "generatedAt": "2026-08-06 20:04"
     }
   }
 };
