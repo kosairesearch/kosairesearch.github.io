@@ -17,6 +17,11 @@
 주의: quant(재무 수치)는 무료다. 상단 지표표·실적 차트가 이 값을 쓰고,
       숫자 자체는 DART·KRX에서 누구나 얻을 수 있어 상품성이 없다.
       파는 것은 '숫자'가 아니라 '해석'이다.
+
+구버전(v1) 리포트는 전부 무료다. DART에 재무가 공시되지 않아 v2 생성이
+불가능한 종목들(2026-08 기준 122개, 대부분 코넥스)이 여기 해당한다.
+v1 에는 quant·earnings·industry·valuation_comment·checkpoints 가 없어
+요금제에서 약속한 구성을 채우지 못한다. 못 채우는 걸 파는 대신 전부 연다.
 """
 
 # 유료 구간 — 이 키들만 서버가 결제 확인 후 내려준다.
@@ -44,12 +49,23 @@ FREE_KEYS = (
 )
 
 
+def is_v2(report):
+    """전체 구성을 갖춘 v2 리포트인가. v1 에는 'v' 키 자체가 없다."""
+    return report.get("v") == 2
+
+
 def split(report):
     """리포트 dict → (무료분, 유료분). 원본은 건드리지 않는다.
 
     FREE/PAID 어디에도 없는 키가 새로 생기면 '무료'로 흘러가 유료 콘텐츠가
     새는 사고가 난다. 그래서 미지의 키는 안전한 쪽(유료)으로 보낸다.
     """
+    # v1 은 유료 구간이 없다 — 전문을 무료로 공개한다(모듈 설명 참고).
+    if not is_v2(report):
+        free = dict(report)
+        free["hasPaid"] = False
+        return free, {}
+
     free, paid = {}, {}
     for k, v in report.items():
         if k in PAID_KEYS:
