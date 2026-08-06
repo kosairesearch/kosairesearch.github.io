@@ -54,11 +54,34 @@ def is_v2(report):
     return report.get("v") == 2
 
 
+def pick_report(ticker, root=None):
+    """그 종목에 대해 사이트가 실제로 서빙하는 리포트를 읽는다. 없으면 None.
+
+    ⚠️ 유료화 판단은 반드시 이 함수가 고른 리포트로 해야 한다.
+    대부분의 종목은 data/reports(v1)와 data/reports_v2 양쪽에 파일이 있고,
+    화면은 v2 를 쓴다(stock.html 931~939행의 v2 → v1 폴백). 그런데 split()
+    은 v1 을 받으면 전문을 무료로 연다. 그러니 v2 가 있는 종목의 v1 파일을
+    그대로 split() 에 넘기면 그 종목의 유료 구간이 통째로 열린다.
+    """
+    from pathlib import Path
+    root = Path(root) if root else Path(__file__).resolve().parent.parent
+    import json as _json
+    for sub in ("reports_v2", "reports"):          # stock.html 과 같은 우선순위
+        f = root / "data" / sub / f"{ticker}.json"
+        if f.exists():
+            rp = _json.loads(f.read_text(encoding="utf-8"))
+            if isinstance(rp, dict):
+                return rp
+    return None
+
+
 def split(report):
     """리포트 dict → (무료분, 유료분). 원본은 건드리지 않는다.
 
     FREE/PAID 어디에도 없는 키가 새로 생기면 '무료'로 흘러가 유료 콘텐츠가
     새는 사고가 난다. 그래서 미지의 키는 안전한 쪽(유료)으로 보낸다.
+
+    ⚠️ 넘기는 리포트는 pick_report() 로 고른 것이어야 한다. 사유는 그 함수 설명 참고.
     """
     # v1 은 유료 구간이 없다 — 전문을 무료로 공개한다(모듈 설명 참고).
     if not is_v2(report):
