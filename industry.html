@@ -975,7 +975,11 @@ themeBtn.addEventListener('click',()=>applyTheme(root.getAttribute('data-theme')
     "한국 상장사를 업종으로 나눠 시가총액·등락률과 AI 업종 분석을 제공합니다.":"Korean listed companies grouped by industry — market cap, returns, and AI sector analysis.",
     "시가총액 합계":"Total market cap","시장 비중":"Market weight","종목 수":"Stocks","평균 등락률":"Avg. change",
     "업종 개요":"Overview","산업 구조·가치사슬":"Structure & value chain","최근 동향":"Recent trends","향후 전망":"Outlook",
-    "리스크 요인":"Risk factors","업종 내 주요 종목":"Key stocks","AI 업종 분석 준비 중입니다.":"AI sector analysis coming soon.","테마":"Themes",
+    "리스크 요인":"Risk factors","업종 내 주요 종목":"Key stocks","테마":"Themes",
+    "분류 안내":"About this group",
+    "여러 업종에 걸쳐 있거나 기존 분류에 속하지 않는 기업을 모은 구간입니다. 사업 내용이 서로 달라 하나의 업황으로 묶이지 않으므로 AI 업종 분석을 제공하지 않습니다.":"This group holds companies that span several industries or fall outside the existing categories. Because their businesses differ too widely to share a single industry outlook, no AI sector analysis is provided.",
+    "각 기업의 사업 구조와 실적은 아래 종목의 개별 리포트에서 확인하실 수 있습니다.":"Each company's business model and results are covered in its individual stock report below.",
+    "AI 업종 분석은 분기별 갱신 시 반영됩니다.":"AI sector analysis is added at the quarterly refresh.",
     "분석 참고: 업종 상장사 종합 + 웹 검색":"Source: aggregated listed peers + web search",
     "종목":"Stock","현재가":"Price","등락률":"Change","시가총액":"Market Cap","리포트":"Report"
   });}
@@ -1052,8 +1056,14 @@ themeBtn.addEventListener('click',()=>applyTheme(root.getAttribute('data-theme')
         +sec2('최근 동향',paras(an.trends))
         +sec2('향후 전망',paras(an.outlook))
         +(risks?'<div class="ind-sec"><h2>'+T('리스크 요인')+'</h2><div class="ind-risk">'+risks+'</div></div>':'');
+    }else if(sec==='기타'){
+      // '기타'는 업종 분석 생성 대상에서 제외된다(generate_sectors.py). 아무 설명 없이
+      // AI 섹션만 비면 미완성 페이지로 보이므로, 왜 없는지를 명시한다.
+      ai='<div class="ind-sec"><h2>'+T('분류 안내')+'</h2>'
+        +'<p>'+T('여러 업종에 걸쳐 있거나 기존 분류에 속하지 않는 기업을 모은 구간입니다. 사업 내용이 서로 달라 하나의 업황으로 묶이지 않으므로 AI 업종 분석을 제공하지 않습니다.')+'</p>'
+        +'<p>'+T('각 기업의 사업 구조와 실적은 아래 종목의 개별 리포트에서 확인하실 수 있습니다.')+'</p></div>';
     }else{
-      ai='<div class="ind-sec"><p class="ind-ainote">'+T('AI 업종 분석 준비 중입니다.')+'</p></div>';
+      ai='<div class="ind-sec"><p class="ind-ainote">'+T('AI 업종 분석은 분기별 갱신 시 반영됩니다.')+'</p></div>';
     }
     // 종목 리스트(시총순 상위 20)
     var rowsHtml=row.list.slice(0,20).map(function(s){
