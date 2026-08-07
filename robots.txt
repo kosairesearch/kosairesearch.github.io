@@ -2,5 +2,6 @@ User-agent: *
 Allow: /
 Disallow: /auth-action.html
 Disallow: /Watchlist.html
+Disallow: /staging/   # 브랜치 미리보기 — 검색에 나오면 안 된다
 
 Sitemap: https://kosai.kr/sitemap.xml
