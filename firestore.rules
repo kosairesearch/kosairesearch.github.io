@@ -7,5 +7,27 @@ service cloud.firestore {
       allow read, write: if request.auth != null && request.auth.uid == uid;
     }
 
+    // 구독: 본인만 읽는다. 쓰기는 서버(Functions)만 — 클라이언트가 쓸 수 있으면
+    // 자기 문서의 plan 을 pro 로, currentPeriodEnd 를 10년 뒤로 고쳐 쓸 수 있다.
+    match /subscriptions/{uid} {
+      allow read: if request.auth != null && request.auth.uid == uid;
+      allow write: if false;
+    }
+
+    // 결제 내역: 본인만 읽는다. 기록은 서버만 남긴다.
+    match /payments/{uid}/items/{doc} {
+      allow read: if request.auth != null && request.auth.uid == uid;
+      allow write: if false;
+    }
+
+    // 유료 리포트 본문 · 열람 기록: 클라이언트 접근 금지.
+    // 유료 구간은 getReport 함수가 구독을 확인한 뒤에만 내보낸다.
+    match /reports_paid/{ticker} {
+      allow read, write: if false;
+    }
+    match /report_reads/{doc} {
+      allow read, write: if false;
+    }
+
   }
 }

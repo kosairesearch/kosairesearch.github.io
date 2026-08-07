@@ -363,7 +363,8 @@ function subActive(sub) {
   if (!sub || sub.status !== "active") return false;
   const end = sub.currentPeriodEnd;
   if (!end) return false;
-  const ms = typeof end.toMillis === "function" ? end.toMillis() : Date.parse(end);
+  const ms = typeof end.toMillis === "function" ? end.toMillis()
+           : typeof end === "number" ? end : Date.parse(end);
   return Number.isFinite(ms) && ms > Date.now();
 }
 
@@ -432,5 +433,317 @@ exports.getReport = onCall(
     }
 
     return { ticker, paid: snap.data(), plan, limit };
+  }
+);
+
+/* ============================================================
+   구독 결제 — 토스페이먼츠 정기결제(빌링)
+   ------------------------------------------------------------
+   비밀키는 Secret Manager 로만 넣는다:
+     firebase functions:secrets:set TOSS_SECRET_KEY
+
+   Firestore
+     subscriptions/{uid}      { status, plan, currentPeriodStart, currentPeriodEnd,
+                                cancelAtPeriodEnd, pendingPlan, billingKey, customerKey,
+                                card:{company,number}, startedAt, updatedAt }
+     payments/{uid}/items/{id}{ amount, description, status, paymentKey, orderId,
+                                plan, paidAt, createdAt }
+
+   ⚠️ 금액은 서버 표(PRICE)에서만 읽는다. 클라이언트가 보낸 금액은 쓰지 않는다.
+   ⚠️ 구독 문서는 서버만 쓴다(firestore.rules 에서 클라이언트 쓰기 금지).
+   ============================================================ */
+const { onSchedule } = require("firebase-functions/v2/scheduler");
+const TOSS_SECRET_KEY = defineSecret("TOSS_SECRET_KEY");
+
+const PRICE = { basic: 9900, pro: 14900 };        // pricing.html·payment-config.js 와 같아야 한다
+const PLAN_NAME = { basic: "BASIC", pro: "PRO" };
+const REFUND_FEE_RATE = 0.10;                     // 서비스 수수료 10% (요금제 페이지 고지)
+const FREE_WITHDRAW_DAYS = 7;                     // 미열람 시 전액 환불 기간
+
+const tossAuth = () =>
+  "Basic " + Buffer.from((TOSS_SECRET_KEY.value() || "") + ":").toString("base64");
+
+async function toss(path, body) {
+  const res = await fetch("https://api.tosspayments.com/v1" + path, {
+    method: "POST",
+    headers: { Authorization: tossAuth(), "Content-Type": "application/json" },
+    body: JSON.stringify(body || {}),
+  });
+  const text = await res.text();
+  let json; try { json = JSON.parse(text); } catch (e) { json = { raw: text }; }
+  if (!res.ok) {
+    console.error(`[toss] ${path} HTTP ${res.status}:`, text.slice(0, 500));
+    // 카드사 거절 메시지는 사용자에게 그대로 보여주는 편이 낫다(한도 초과·정지 등).
+    throw new HttpsError("failed-precondition", json.message || "결제에 실패했습니다.");
+  }
+  return json;
+}
+
+/** 한 달 뒤. 31일처럼 다음 달에 없는 날짜는 그 달의 마지막 날로 맞춘다. */
+function addMonth(from) {
+  const d = new Date(from);
+  const day = d.getDate();
+  d.setMonth(d.getMonth() + 1);
+  if (d.getDate() !== day) d.setDate(0);
+  return d;
+}
+const days = (ms) => ms / 86400000;
+function planOrThrow(p) {
+  const id = String(p || "").toLowerCase();
+  if (!PRICE[id]) throw new HttpsError("invalid-argument", "요금제를 확인할 수 없습니다.");
+  return id;
+}
+function uidOrThrow(req) {
+  const uid = req.auth && req.auth.uid;
+  if (!uid) throw new HttpsError("unauthenticated", "로그인이 필요합니다.");
+  return uid;
+}
+const orderId = (uid, tag) =>
+  `kosai_${tag}_${uid.slice(0, 12)}_${Date.now().toString(36)}`;
+
+async function writePayment(db, uid, data) {
+  await db.collection(`payments/${uid}/items`).add({
+    ...data,
+    createdAt: admin.firestore.FieldValue.serverTimestamp(),
+  });
+}
+
+/** 빌링키로 즉시 결제. 성공하면 결제 내역을 남기고 payment 객체를 돌려준다. */
+async function charge(db, uid, sub, amount, description, tag) {
+  if (amount <= 0) return null;
+  const pay = await toss(`/billing/${sub.billingKey}`, {
+    customerKey: sub.customerKey,
+    amount,
+    orderId: orderId(uid, tag),
+    orderName: description,
+  });
+  await writePayment(db, uid, {
+    amount, description, status: "paid", plan: sub.plan,
+    paymentKey: pay.paymentKey, orderId: pay.orderId,
+    paidAt: pay.approvedAt || new Date().toISOString(),
+  });
+  return pay;
+}
+
+/* ── 1) 카드 등록 + 첫 결제 ───────────────────────────────── */
+exports.confirmBilling = onCall(
+  { region: REGION, cors: true, secrets: [TOSS_SECRET_KEY] },
+  async (req) => {
+    const uid = uidOrThrow(req);
+    const plan = planOrThrow(req.data && req.data.plan);
+    const authKey = String((req.data && req.data.authKey) || "").trim();
+    const customerKey = String((req.data && req.data.customerKey) || "").trim();
+    if (!authKey || customerKey !== uid) {
+      // customerKey 는 uid 여야 한다 — 남의 카드로 내 구독을 만들 수 없게.
+      throw new HttpsError("invalid-argument", "결제 정보가 올바르지 않습니다.");
+    }
+
+    const db = admin.firestore();
+    const ref = db.doc(`subscriptions/${uid}`);
+    const cur = (await ref.get()).data() || null;
+    if (subActive(cur) && !cur.cancelAtPeriodEnd) {
+      throw new HttpsError("already-exists", "이미 이용 중인 구독이 있습니다.");
+    }
+
+    const issued = await toss("/billing/authorizations/issue", { authKey, customerKey });
+    const now = new Date();
+    const sub = {
+      billingKey: issued.billingKey, customerKey, plan,
+      card: { company: (issued.card && issued.card.issuerCode) || "", number: (issued.card && issued.card.number) || "" },
+    };
+    const pay = await charge(db, uid, sub, PRICE[plan], `${PLAN_NAME[plan]} 월 구독`, "new");
+
+    await ref.set({
+      ...sub,
+      status: "active",
+      currentPeriodStart: admin.firestore.Timestamp.fromDate(now),
+      currentPeriodEnd: admin.firestore.Timestamp.fromDate(addMonth(now)),
+      cancelAtPeriodEnd: false,
+      pendingPlan: null,
+      readsAtStart: 0,
+      startedAt: (cur && cur.startedAt) || admin.firestore.Timestamp.fromDate(now),
+      lastPaymentKey: pay ? pay.paymentKey : null,
+      updatedAt: admin.firestore.FieldValue.serverTimestamp(),
+    }, { merge: true });
+
+    return { ok: true, plan };
+  }
+);
+
+/* ── 2) 플랜 변경 ─────────────────────────────────────────────
+   업그레이드는 즉시 적용하고 남은 기간만큼 차감해 차액만 받는다(결제일 유지).
+   다운그레이드는 다음 결제일부터 — 즉시 내리면 환불이 생기고, 남은 기간
+   PRO 를 이미 쓴 사람에게 돈을 돌려주는 구조가 된다.
+   ─────────────────────────────────────────────────────────── */
+exports.changePlan = onCall(
+  { region: REGION, cors: true, secrets: [TOSS_SECRET_KEY] },
+  async (req) => {
+    const uid = uidOrThrow(req);
+    const next = planOrThrow(req.data && req.data.plan);
+    const db = admin.firestore();
+    const ref = db.doc(`subscriptions/${uid}`);
+    const sub = (await ref.get()).data();
+    if (!subActive(sub)) throw new HttpsError("failed-precondition", "이용 중인 구독이 없습니다.");
+    if (sub.plan === next && !sub.pendingPlan) {
+      throw new HttpsError("already-exists", "이미 해당 플랜을 이용 중입니다.");
+    }
+
+    if (PRICE[next] > PRICE[sub.plan]) {
+      const endMs = sub.currentPeriodEnd.toMillis();
+      const startMs = sub.currentPeriodStart ? sub.currentPeriodStart.toMillis() : endMs - 30 * 86400000;
+      const total = Math.max(1, days(endMs - startMs));
+      const left = Math.max(0, days(endMs - Date.now()));
+      // 남은 기간에 해당하는 두 요금의 차액. 원 단위 절사(사용자에게 유리하게).
+      const diff = Math.floor((PRICE[next] - PRICE[sub.plan]) * (left / total));
+      await charge(db, uid, sub, diff, `${PLAN_NAME[next]} 업그레이드 차액`, "up");
+      await ref.set({
+        plan: next, pendingPlan: null,
+        updatedAt: admin.firestore.FieldValue.serverTimestamp(),
+      }, { merge: true });
+      return { ok: true, plan: next, charged: diff };
+    }
+
+    await ref.set({
+      pendingPlan: next,
+      updatedAt: admin.firestore.FieldValue.serverTimestamp(),
+    }, { merge: true });
+    return { ok: true, pendingPlan: next };
+  }
+);
+
+/* ── 3) 해지 / 해지 취소 ─────────────────────────────────────
+   해지는 '지금 끊기'가 아니라 '갱신 안 함'이다. 이미 결제한 기간은 그대로 쓴다.
+   ─────────────────────────────────────────────────────────── */
+exports.cancelSubscription = onCall({ region: REGION, cors: true }, async (req) => {
+  const uid = uidOrThrow(req);
+  const ref = admin.firestore().doc(`subscriptions/${uid}`);
+  const sub = (await ref.get()).data();
+  if (!subActive(sub)) throw new HttpsError("failed-precondition", "이용 중인 구독이 없습니다.");
+  await ref.set({
+    cancelAtPeriodEnd: true, canceledAt: admin.firestore.FieldValue.serverTimestamp(),
+    updatedAt: admin.firestore.FieldValue.serverTimestamp(),
+  }, { merge: true });
+  return { ok: true };
+});
+
+exports.resumeSubscription = onCall({ region: REGION, cors: true }, async (req) => {
+  const uid = uidOrThrow(req);
+  const ref = admin.firestore().doc(`subscriptions/${uid}`);
+  const sub = (await ref.get()).data();
+  if (!subActive(sub)) throw new HttpsError("failed-precondition", "이용 중인 구독이 없습니다.");
+  await ref.set({
+    cancelAtPeriodEnd: false, canceledAt: null,
+    updatedAt: admin.firestore.FieldValue.serverTimestamp(),
+  }, { merge: true });
+  return { ok: true };
+});
+
+/* ── 4) 환불 ─────────────────────────────────────────────────
+   요금제 페이지에 고지한 기준 그대로 계산한다. 문구와 계산이 어긋나면
+   그건 그냥 거짓말이 된다.
+     · 리포트 미열람 + 7일 이내  → 전액
+     · 리포트 미열람 + 7일 경과  → 잔여 기간분 − 수수료 10%
+     · 리포트 열람              → 이용 일수 차감 후 − 수수료 10%
+   ─────────────────────────────────────────────────────────── */
+exports.requestRefund = onCall(
+  { region: REGION, cors: true, secrets: [TOSS_SECRET_KEY] },
+  async (req) => {
+    const uid = uidOrThrow(req);
+    const db = admin.firestore();
+    const ref = db.doc(`subscriptions/${uid}`);
+    const sub = (await ref.get()).data();
+    if (!subActive(sub)) throw new HttpsError("failed-precondition", "이용 중인 구독이 없습니다.");
+    if (!sub.lastPaymentKey) throw new HttpsError("failed-precondition", "환불할 결제 건이 없습니다.");
+
+    const startMs = sub.currentPeriodStart.toMillis();
+    const endMs = sub.currentPeriodEnd.toMillis();
+    const total = Math.max(1, days(endMs - startMs));
+    const used = Math.min(total, Math.max(0, days(Date.now() - startMs)));
+    const price = PRICE[sub.plan] || 0;
+
+    // 이번 결제 기간에 리포트를 한 건이라도 열었는가
+    const reads = await db.collection("report_reads")
+      .where("uid", "==", uid)
+      .where("updatedAt", ">=", sub.currentPeriodStart)
+      .limit(1).get();
+    const opened = !reads.empty;
+
+    let amount, reason;
+    if (!opened && used <= FREE_WITHDRAW_DAYS) {
+      amount = price;
+      reason = "청약철회(7일 이내·미열람)";
+    } else {
+      const leftRatio = Math.max(0, (total - used) / total);
+      amount = Math.floor(price * leftRatio * (1 - REFUND_FEE_RATE));
+      reason = opened ? "이용분 차감 환불" : "잔여 기간 환불";
+    }
+    if (amount <= 0) throw new HttpsError("failed-precondition", "환불 가능한 금액이 없습니다.");
+
+    await toss(`/payments/${sub.lastPaymentKey}/cancel`, {
+      cancelReason: reason, cancelAmount: amount,
+    });
+    await writePayment(db, uid, {
+      amount: -amount, description: `환불 · ${reason}`, status: "refunded",
+      plan: sub.plan, paymentKey: sub.lastPaymentKey, paidAt: new Date().toISOString(),
+    });
+    // 환불이 끝나면 이용 권한은 즉시 종료된다(요금제 페이지 고지와 동일).
+    await ref.set({
+      status: "refunded", cancelAtPeriodEnd: true,
+      currentPeriodEnd: admin.firestore.Timestamp.fromDate(new Date()),
+      refundedAt: admin.firestore.FieldValue.serverTimestamp(),
+      updatedAt: admin.firestore.FieldValue.serverTimestamp(),
+    }, { merge: true });
+
+    return { ok: true, amount };
+  }
+);
+
+/* ── 5) 정기결제 갱신 ────────────────────────────────────────
+   매일 한 번 돌며 기간이 끝난 구독을 갱신한다. 크론은 UTC 로만 해석되므로
+   02:00 UTC(= 같은 날 11:00 KST)로 적는다. 15시 이후로 잡으면 한국 날짜가 밀린다.
+   ─────────────────────────────────────────────────────────── */
+exports.renewSubscriptions = onSchedule(
+  { region: REGION, schedule: "0 2 * * *", timeZone: "Etc/UTC", secrets: [TOSS_SECRET_KEY] },
+  async () => {
+    const db = admin.firestore();
+    const now = new Date();
+    const due = await db.collection("subscriptions")
+      .where("status", "==", "active")
+      .where("currentPeriodEnd", "<=", admin.firestore.Timestamp.fromDate(now))
+      .limit(400).get();
+    console.log(`[renew] 대상 ${due.size}건`);
+
+    for (const d of due.docs) {
+      const uid = d.id, sub = d.data();
+      try {
+        if (sub.cancelAtPeriodEnd) {
+          await d.ref.set({ status: "expired", updatedAt: admin.firestore.FieldValue.serverTimestamp() }, { merge: true });
+          continue;
+        }
+        const plan = sub.pendingPlan || sub.plan;   // 예약된 다운그레이드를 여기서 적용
+        const pay = await charge(db, uid, { ...sub, plan }, PRICE[plan],
+          `${PLAN_NAME[plan]} 월 구독`, "renew");
+        await d.ref.set({
+          plan, pendingPlan: null, status: "active",
+          currentPeriodStart: admin.firestore.Timestamp.fromDate(now),
+          currentPeriodEnd: admin.firestore.Timestamp.fromDate(addMonth(now)),
+          lastPaymentKey: pay ? pay.paymentKey : sub.lastPaymentKey,
+          failedAt: null,
+          updatedAt: admin.firestore.FieldValue.serverTimestamp(),
+        }, { merge: true });
+      } catch (e) {
+        // 한도 초과·정지 카드 등. 바로 끊지 않고 상태만 남긴다 — 사용자가 카드를
+        // 바꿀 시간을 줘야 한다. 이용 권한은 currentPeriodEnd 가 지나 자연히 닫힌다.
+        console.error(`[renew] 실패 uid=${uid}`, e && e.message);
+        await d.ref.set({
+          status: "past_due", failedAt: admin.firestore.FieldValue.serverTimestamp(),
+          updatedAt: admin.firestore.FieldValue.serverTimestamp(),
+        }, { merge: true });
+        await writePayment(db, uid, {
+          amount: PRICE[sub.plan] || 0, description: "정기결제 실패",
+          status: "failed", plan: sub.plan, paidAt: null,
+        });
+      }
+    }
   }
 );

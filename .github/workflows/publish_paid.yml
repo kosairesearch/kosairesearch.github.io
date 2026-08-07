@@ -1,0 +1,61 @@
+name: 🔒 유료 구간 분리 · Firestore 업로드
+
+# 유료화 전환 작업. 리포트가 새로 생성될 때마다 돌려야 하지만, 처음 한 번은
+# 반드시 손으로 확인하며 돌린다 — 정적 파일에서 본문을 지우는 작업이라
+# 업로드가 실패한 채로 지우면 유료 구간이 어디에도 남지 않는다.
+#
+# 준비물
+#   secrets.FIREBASE_SERVICE_ACCOUNT — Firebase 콘솔 → 프로젝트 설정 →
+#   서비스 계정 → 새 비공개 키 생성으로 받은 JSON 전문
+on:
+  workflow_dispatch:
+    inputs:
+      mode:
+        description: 'dry(검사만) / upload(업로드만) / apply(업로드+정적파일 제거)'
+        type: choice
+        options: [dry, upload, apply]
+        default: dry
+
+concurrency:
+  group: kos-data
+  cancel-in-progress: false
+
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    timeout-minutes: 60
+    permissions:
+      contents: write
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+          cache: 'pip'
+      - name: 패키지 설치
+        run: pip install firebase-admin
+
+      - name: 유료 구간 분리
+        env:
+          FIREBASE_SERVICE_ACCOUNT: ${{ secrets.FIREBASE_SERVICE_ACCOUNT }}
+        run: |
+          case "${{ inputs.mode }}" in
+            upload) FLAGS="--upload" ;;
+            apply)  FLAGS="--write --upload" ;;
+            *)      FLAGS="" ;;
+          esac
+          python scripts/publish_paid.py $FLAGS 2>&1 | tee -a data/paid_run.log
+
+      - name: 커밋 & 푸시
+        if: ${{ inputs.mode == 'apply' }}
+        run: |
+          git config --global user.email "bot@kosairesearch.github.io"
+          git config --global user.name "KOS ai Bot"
+          git add -A data/
+          git commit -m "🔒 유료 구간 분리 $(TZ='Asia/Seoul' date +'%Y-%m-%d %H:%M KST')" || echo "변경 없음"
+          for i in 1 2 3 4 5; do
+            git fetch origin "$GITHUB_REF_NAME" \
+              && git rebase -X theirs "origin/$GITHUB_REF_NAME" \
+              && git push origin "HEAD:$GITHUB_REF_NAME" && break
+            echo "push 재시도 $i..."; sleep $((i*3))
+          done
