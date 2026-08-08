@@ -40,6 +40,8 @@ const T = {
     undoPlan: "변경 취소",
     dlgUndoT: "플랜 변경을 취소하시겠습니까?",
     dlgUndoB: "{date} 이후에도 {p} 플랜이 그대로 유지됩니다.",
+    alsoResume: " 예약해 두신 해지는 함께 취소됩니다.",
+    alsoDropPlan: " 예약해 두신 {p} 플랜 변경은 함께 취소됩니다.",
     pay: "결제 수단", noCard: "등록된 카드가 없습니다.", changeCard: "카드 변경",
     upgrade: "PRO로 업그레이드", downgrade: "BASIC으로 변경",
     cancel: "구독 해지", resume: "해지 취소", refund: "환불 신청",
@@ -78,6 +80,8 @@ const T = {
     undoPlan: "Undo change",
     dlgUndoT: "Undo the scheduled change?",
     dlgUndoB: "You stay on {p} after {date}.",
+    alsoResume: " Your scheduled cancellation will be undone.",
+    alsoDropPlan: " Your scheduled change to {p} will be dropped.",
     pay: "Payment method", noCard: "No card registered.", changeCard: "Change card",
     upgrade: "Upgrade to PRO", downgrade: "Switch to BASIC",
     cancel: "Cancel subscription", resume: "Keep subscription", refund: "Request refund",
@@ -227,8 +231,13 @@ function wire(st) {
       const act = btn.dataset.act;
       flash = null;
       let ok = false, fn = null, arg = null, done = "";
+      /* 해지 예약과 플랜 변경 예약은 함께 둘 수 없다 — 서버가 갱신할 때 해지를
+         먼저 보고 끝내므로, 둘 다 걸어 두면 변경은 조용히 사라진다. 한쪽을
+         고르면 다른 쪽이 풀린다는 걸 누르기 전에 말해 준다. */
+      const pending = sub.pendingPlan && sub.pendingPlan !== sub.plan ? planOf(sub.pendingPlan) : null;
       if (act === "cancel") {
-        ok = await ask(k.dlgCancelT, k.dlgCancelB.replace("{date}", endDay));
+        ok = await ask(k.dlgCancelT, k.dlgCancelB.replace("{date}", endDay)
+          + (pending ? k.alsoDropPlan.replace("{p}", pending.name) : ""));
         fn = "cancelSubscription"; done = k.okCancel;
       } else if (act === "resume") {
         ok = true; fn = "resumeSubscription"; done = k.okResume;
@@ -239,14 +248,15 @@ function wire(st) {
         const to = planOf(btn.dataset.to) || {};
         const undo = btn.dataset.to === sub.plan;
         const up = !undo && (to.price || 0) > (planOf(sub.plan) || {}).price;
+        const more = sub.cancelAtPeriodEnd ? k.alsoResume : "";
         if (undo) {
-          ok = await ask(k.dlgUndoT, k.dlgUndoB.replace("{date}", endDay).replace("{p}", to.name || ""));
+          ok = await ask(k.dlgUndoT, k.dlgUndoB.replace("{date}", endDay).replace("{p}", to.name || "") + more);
           done = k.okUndo;
         } else if (up) {
-          ok = await ask(k.dlgUpT, k.dlgUpB);
+          ok = await ask(k.dlgUpT, k.dlgUpB + more);
           done = k.okUp.replace("{p}", to.name || "");
         } else {
-          ok = await ask(k.dlgDownT, k.dlgDownB.replace("{date}", endDay));
+          ok = await ask(k.dlgDownT, k.dlgDownB.replace("{date}", endDay) + more);
           done = k.okDown.replace("{d}", endDay).replace("{p}", to.name || "");
         }
         fn = "changePlan"; arg = { plan: btn.dataset.to };

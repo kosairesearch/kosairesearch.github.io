@@ -599,6 +599,14 @@ exports.confirmBilling = onCall(
    업그레이드는 즉시 적용하고 남은 기간만큼 차감해 차액만 받는다(결제일 유지).
    다운그레이드는 다음 결제일부터 — 즉시 내리면 환불이 생기고, 남은 기간
    PRO 를 이미 쓴 사람에게 돈을 돌려주는 구조가 된다.
+
+   ⚠️ 해지 예약과 플랜 변경 예약은 함께 둘 수 없다. renewSubscriptions 는
+      cancelAtPeriodEnd 를 먼저 보고 끝내므로, 둘 다 걸려 있으면 해지가 이기고
+      예약해 둔 변경은 조용히 사라진다. 화면에는 둘 다 예약된 것처럼 보이니
+      그건 거짓말이 된다. 게다가 업그레이드는 그 자리에서 차액을 받는데 며칠
+      뒤 구독이 닫히면 돈만 받고 닫는 꼴이다.
+      다음 달 쓸 플랜을 고르는 건 계속 쓰겠다는 뜻이므로, 여기서 해지 예약을 푼다
+      (반대로 해지를 누르면 cancelSubscription 이 변경 예약을 지운다).
    ─────────────────────────────────────────────────────────── */
 exports.changePlan = onCall(
   { region: REGION, cors: true, secrets: [TOSS_SECRET_KEY] },
@@ -623,6 +631,8 @@ exports.changePlan = onCall(
       await charge(db, uid, sub, diff, `${PLAN_NAME[next]} 업그레이드 차액`, "up");
       await ref.set({
         plan: next, pendingPlan: null,
+        // 해지 예약과 함께 둘 수 없다 — 아래 설명 참고.
+        cancelAtPeriodEnd: false, canceledAt: null,
         updatedAt: admin.firestore.FieldValue.serverTimestamp(),
       }, { merge: true });
       return { ok: true, plan: next, charged: diff };
@@ -633,9 +643,10 @@ exports.changePlan = onCall(
     const pending = next === sub.plan ? null : next;
     await ref.set({
       pendingPlan: pending,
+      cancelAtPeriodEnd: false, canceledAt: null,
       updatedAt: admin.firestore.FieldValue.serverTimestamp(),
     }, { merge: true });
-    return { ok: true, pendingPlan: pending };
+    return { ok: true, pendingPlan: pending, resumed: !!sub.cancelAtPeriodEnd };
   }
 );
 
@@ -649,9 +660,11 @@ exports.cancelSubscription = onCall({ region: REGION, cors: true }, async (req) 
   if (!subActive(sub)) throw new HttpsError("failed-precondition", "이용 중인 구독이 없습니다.");
   await ref.set({
     cancelAtPeriodEnd: true, canceledAt: admin.firestore.FieldValue.serverTimestamp(),
+    // 해지하면 다음 결제 자체가 없다 — 예약해 둔 플랜 변경은 의미가 없다.
+    pendingPlan: null,
     updatedAt: admin.firestore.FieldValue.serverTimestamp(),
   }, { merge: true });
-  return { ok: true };
+  return { ok: true, droppedPlan: sub.pendingPlan || null };
 });
 
 exports.resumeSubscription = onCall({ region: REGION, cors: true }, async (req) => {
