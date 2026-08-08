@@ -1650,8 +1650,13 @@ document.addEventListener('click', function (e) {
           ttl=nm+'('+TK+') 주가·PER·PBR·배당·실적'+(hasRep?' AI 리포트':' 분석')+' | KOSAI';
         }
         var dsc;
-        if(REP&&REP.verdict&&REP.verdict.body){
-          dsc=String(pk(REP.verdict.body)).replace(/<[^>]*>/g,'').replace(/\s+/g,' ').trim().slice(0,155);
+        /* 요약문은 무료 구간인 lead 에서 뽑는다.
+           예전에는 verdict(종합 의견)를 썼는데 그건 유료 구간이다. 잠긴 사람에게
+           결론 155자를 meta 로 흘리고 있었고, publish_paid.py 를 돌려 verdict 가
+           빠지면 설명이 통째로 일반 문구로 떨어져 검색 노출도 같이 나빠진다. */
+        var dscSrc=(REP&&REP.lead)||(REP&&REP.verdict&&REP.verdict.body)||null;
+        if(dscSrc){
+          dsc=String(pk(dscSrc)).replace(/<[^>]*>/g,'').replace(/\s+/g,' ').trim().slice(0,155);
         }else{
           dsc=(Ln==='en') ? nm+' ('+TK+') stock: PER, PBR, ROE, dividend yield, earnings and valuation — free AI analysis from KOSAI.'
                           : nm+'('+TK+') 주가, PER·PBR·ROE·배당수익률, 실적과 밸류에이션을 한눈에 — KOSAI 무료 AI 분석.';
