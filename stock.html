@@ -1162,7 +1162,7 @@ KOSi18n.register({
      Firestore 에만 있고 paywall.js 가 getReport 로 받아온다. 전환 전 데이터에는
      hasPaid 자체가 없어 그대로 전부 보인다(기존 동작 유지).
      ?paywall=1 은 스테이징에서 잠금 화면을 확인하기 위한 강제 스위치. */
-  var PAID=null, _lockOff=null, FORCE_LOCK=(qp('paywall')==='1');
+  var PAID=null, _lockOff=null, _lockWait=false, FORCE_LOCK=(qp('paywall')==='1');
   function paywalled(){ return !PAID && (FORCE_LOCK || (REP&&REP.hasPaid===true)); }
 
   /* 잠금 카드. 두 번째 버튼은 스크립트가 못 떠도 죽지 않도록 링크로 두고,
@@ -1205,24 +1205,37 @@ KOSi18n.register({
     if(_lockOff){ _lockOff(); _lockOff=null; }
     if(!btn) return;
     var u=U(), k=u.lock, P=window.KOSPaywall;
-    if(!P) return;                       // 모듈이 못 떴으면 링크 그대로(로그인 페이지)
+    /* 본문은 같은 도메인의 JSON 한 번만 받으면 그려지는데, paywall.js 는 모듈이라
+       구글에서 파이어베이스 묶음까지 받아야 뜬다. 거의 항상 본문이 먼저다 —
+       그냥 돌아가면 로그인한 사람에게 '로그인하고 이어보기'가 박힌 채 끝난다.
+       모듈이 자리를 잡으면 알려 주니, 그때 다시 건다. */
+    if(!P){
+      if(!_lockWait){
+        _lockWait=true;
+        document.addEventListener('kos-paywall-ready',function(){ _lockWait=false; wireLock(); },{once:true});
+      }
+      return;                            // 끝내 안 뜨면 링크 그대로(로그인 페이지)
+    }
     function show(msg,isHtml){ err[isHtml?'innerHTML':'textContent']=msg; err.classList.add('show'); }
     var note=lockCardEl&&lockCardEl.querySelector('.lock-note');
     _lockOff=P.onChange(function(st){
       /* 상태가 셋이다. 로그인 여부만 보고 문구를 정하면, 로그인한 사람에게
          '로그인하고 이어보기'가 뜬다. */
-      if(st.active){                       // 구독 중 — 바로 열 수 있다
-        btn.style.display=''; btn.textContent=k.ctaOpen;
-        if(note) note.style.display='none';
-      }else if(st.user){                   // 로그인했지만 구독 없음 —
-        btn.style.display='none';          // '요금제 보기' 하나면 충분하다
-        if(note) note.style.display='none';
-      }else{                               // 비로그인
+      /* st.user 를 먼저 본다. 구독은 계정에 붙는 것이라 '로그인 안 했는데 구독 중'은
+         있을 수 없는 상태인데, 그런 답이 한 번이라도 오면 아래 자동 열기가 돌고
+         open() 이 로그인 페이지로 보내 버린다 — 돌아와도 같은 일이 반복된다. */
+      if(!st.user){                        // 비로그인
         btn.style.display=''; btn.textContent=k.ctaLogin;
         if(note) note.style.display='';
+      }else if(st.active){                 // 구독 중 — 바로 열 수 있다
+        btn.style.display=''; btn.textContent=k.ctaOpen;
+        if(note) note.style.display='none';
+      }else{                               // 로그인했지만 구독 없음 —
+        btn.style.display='none';          // '요금제 보기' 하나면 충분하다
+        if(note) note.style.display='none';
       }
       // 구독이 확인되면 누르지 않아도 바로 열어 준다(결제 직후 돌아온 경우).
-      if(st.active && !PAID && !btn.dataset.busy) open();
+      if(st.user && st.active && !PAID && !btn.dataset.busy) open();
     });
     async function open(ev){
       if(ev) ev.preventDefault();

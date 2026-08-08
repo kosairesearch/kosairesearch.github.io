@@ -100,3 +100,9 @@ window.KOSPaywall = {
   onChange(fn) { listeners.add(fn); fn(snapshot()); return () => listeners.delete(fn); },
   fetchPaid,
 };
+
+/* 이 모듈은 본문보다 늦게 뜬다. 리포트 본문은 같은 도메인의 JSON 하나만 받으면
+   그려지는데, 여기는 구글에서 파이어베이스 묶음까지 받아야 하니 거의 항상 진다.
+   먼저 그려진 화면이 window.KOSPaywall 을 못 찾고 그냥 지나가 버리지 않도록,
+   자리를 잡았다고 알린다. */
+document.dispatchEvent(new Event("kos-paywall-ready"));
