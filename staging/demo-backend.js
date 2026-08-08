@@ -142,9 +142,11 @@ function updateCard() {
 async function call(name, arg) {
   const sub = read(SUB_KEY, null);
   if (!sub) throw new Error("이용 중인 구독이 없습니다.");
-  if (name === "cancelSubscription") sub.cancelAtPeriodEnd = true;
+  // 해지 예약과 플랜 변경 예약은 함께 둘 수 없다(서버 changePlan 설명 참고).
+  if (name === "cancelSubscription") { sub.cancelAtPeriodEnd = true; sub.pendingPlan = null; }
   else if (name === "resumeSubscription") sub.cancelAtPeriodEnd = false;
   else if (name === "changePlan") {
+    sub.cancelAtPeriodEnd = false;
     const next = PLANS[(arg || {}).plan];
     if (!next) throw new Error("요금제를 확인할 수 없습니다.");
     if (next.price > PLANS[sub.plan].price) {
