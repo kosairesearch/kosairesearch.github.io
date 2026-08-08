@@ -315,10 +315,7 @@ table.dt .pos{color:var(--up);font-weight:700}table.dt .neg{color:var(--down);fo
 .lock{position:relative;padding:30px 26px 28px;text-align:center;overflow:hidden}
 .lock::before{content:"";position:absolute;left:0;right:0;top:-46px;height:46px;
   background:linear-gradient(to bottom,transparent,var(--bg-1))}
-.lock-badge{display:inline-flex;align-items:center;gap:6px;padding:5px 11px;border-radius:var(--pill);
-  background:rgba(0,0,0,.06);font:700 11px var(--font-sans);letter-spacing:.06em;color:var(--fg-2)}
-:root[data-theme="dark"] .lock-badge{background:rgba(255,255,255,.09)}
-.lock h3{margin:14px 0 8px;font:800 clamp(19px,2.4vw,23px)/1.3 var(--font-sans);letter-spacing:-.02em}
+.lock h3{margin:0 0 8px;font:800 clamp(19px,2.4vw,23px)/1.3 var(--font-sans);letter-spacing:-.02em}
 .lock .lock-sub{margin:0 auto;max-width:560px;font:400 15px/1.7 var(--font-sans);color:var(--fg-2);
   word-break:keep-all;overflow-wrap:break-word}
 .lock-list{display:flex;flex-wrap:wrap;justify-content:center;gap:7px;margin:20px auto 0;max-width:620px}
@@ -331,10 +328,8 @@ table.dt .pos{color:var(--up);font-weight:700}table.dt .neg{color:var(--down);fo
 .lock-err{margin:14px auto 0;max-width:560px;padding:11px 14px;border-radius:var(--radius-md);
   background:rgba(220,60,60,.09);font:500 13px/1.6 var(--font-sans);color:var(--fg-1);display:none}
 .lock-err.show{display:block}
-.lock-up{display:flex;flex-wrap:wrap;align-items:center;justify-content:center;gap:12px;
-  margin-top:12px;padding-top:12px;border-top:1px solid var(--border-2);text-align:left}
-.lock-up span{flex:1;min-width:220px;font:500 13px/1.6 var(--font-sans);color:var(--fg-2);
-  word-break:keep-all;overflow-wrap:break-word}
+.lock-up{display:flex;flex-wrap:wrap;align-items:center;justify-content:center;gap:12px}
+.lock-up span{font:500 13px/1.6 var(--font-sans);color:var(--fg-2);word-break:keep-all}
 
 /* disclaimer + footer */
 .disclaimer{margin:40px auto 0;max-width:880px;padding:18px 20px;border-radius:var(--radius-md);background:rgba(0,0,0,.04);border:1px solid var(--border-2);font:400 13px/1.65 var(--font-sans);color:var(--fg-2)}
@@ -1029,14 +1024,14 @@ document.addEventListener('click', function (e) {
       discT:'면책 조항',
       disc:'· 본 콘텐츠는 AI가 시장 데이터와 웹 검색 결과를 분석한 정보 제공용이며, 투자 권유나 추천이 아닙니다. 투자 판단과 그 책임은 투자자 본인에게 있습니다. 데이터는 지연되거나 오류가 포함될 수 있습니다.',
       none:'이 종목의 AI 리포트는 아직 준비되지 않았습니다. 시가총액 상위 종목부터 순차적으로 생성하고 있습니다.',
-      lock:{ badge:'여기부터 구독', title:'분석과 전망은 구독하신 분께 공개됩니다',
-        sub:'위 실적 수치는 공시 원문이지만, 아래는 그 수치가 무엇을 뜻하는지에 대한 해석입니다. BASIC 월 9,900원부터 이용하실 수 있습니다.',
-        items:['실적 분석','산업 분석','전망','밸류에이션 해설','강세 요인','약세 요인','리스크 요인','다음 체크포인트','종합 의견'],
+      lock:{ title:'이후 내용은 구독자에게 공개됩니다',
+        sub:'BASIC 월 9,900원부터',
+        items:['실적 분석','산업 분석','전망','밸류에이션','리스크','종합 의견'],
         cta:'요금제 보기', ctaLogin:'로그인하고 이어보기', ctaOpen:'이어서 읽기',
         note:'이미 구독 중이시라면 로그인해 주세요.',
         loading:'불러오는 중…',
-        errLimit:'오늘 열람 한도({n}개)를 모두 사용하셨습니다. 한도는 매일 자정(한국 시간)에 초기화됩니다.',
-        upsell:'더 보시려면 PRO로 변경하세요. 하루 {n}개까지 열람하실 수 있으며, 남은 기간만큼 차감해 차액만 결제됩니다.',
+        limitT:'오늘 열람 한도를 모두 쓰셨습니다', limitS:'한도는 자정(한국 시간)에 초기화됩니다.',
+        upsell:'PRO는 하루 {n}개입니다.',
         upgrade:'PRO로 업그레이드',
         errNone:'이 종목은 아직 유료 구간이 준비되지 않았습니다.',
         errFail:'불러오지 못했습니다. 잠시 후 다시 시도해 주세요.' } },
@@ -1050,14 +1045,14 @@ document.addEventListener('click', function (e) {
       discT:'Disclaimer',
       disc:'· This content is AI-generated analysis of market data and web search results, for information only — not investment solicitation or a recommendation. Investment decisions and their outcomes are your own responsibility. Data may be delayed or contain errors.',
       none:'An AI report for this stock is not ready yet. We are generating them in order of market cap.',
-      lock:{ badge:'SUBSCRIBERS FROM HERE', title:'The analysis and outlook are for subscribers',
-        sub:'The figures above are filed financials. What follows is our reading of what they mean. BASIC starts at KRW 9,900 a month.',
-        items:['Earnings analysis','Industry','Outlook','Valuation commentary','Bull factors','Bear factors','Risk factors','What to watch','Verdict'],
+      lock:{ title:'The rest is for subscribers',
+        sub:'BASIC from KRW 9,900 a month',
+        items:['Earnings','Industry','Outlook','Valuation','Risks','Verdict'],
         cta:'See plans', ctaLogin:'Sign in and continue', ctaOpen:'Continue reading',
         note:'Already subscribed? Sign in.',
         loading:'Loading…',
-        errLimit:'You have used today’s viewing limit ({n} reports). It resets at midnight (KST).',
-        upsell:'Switch to PRO to keep reading — {n} reports a day, and you only pay the difference for the days left.',
+        limitT:'You have used today’s limit', limitS:'It resets at midnight (KST).',
+        upsell:'PRO gives you {n} a day.',
         upgrade:'Upgrade to PRO',
         errNone:'The paid sections for this stock are not ready yet.',
         errFail:'Could not load it. Please try again in a moment.' } }
@@ -1201,7 +1196,6 @@ document.addEventListener('click', function (e) {
   function lockCard(u){
     var k=u.lock;
     return '<div class="lockwrap col"><div class="lock glass" id="lockCard">'
-      +'<span class="lock-badge">'+esc(k.badge)+'</span>'
       +'<h3>'+esc(k.title)+'</h3>'
       +'<p class="lock-sub">'+esc(k.sub)+'</p>'
       +'<div class="lock-list">'+k.items.map(function(x){return '<span>'+esc(x)+'</span>';}).join('')+'</div>'
@@ -1284,14 +1278,19 @@ document.addEventListener('click', function (e) {
       }catch(e){
         btn.disabled=false; delete btn.dataset.busy; btn.textContent=k.ctaOpen;
         if(e.code==='resource-exhausted'){
-          var st2=P.state(), lim=st2.limit, pro=(st2.plans&&st2.plans.pro)||{};
-          var html=esc(k.errLimit.replace('{n}',lim==null?'':lim));
-          // BASIC 이면 여기가 업그레이드를 권할 자리다. PRO 는 더 올릴 데가 없으니
-          // 초기화 시각만 알려 준다.
+          /* 이 사람은 이미 구독자다. 카드 머리에 걸린 'BASIC 월 9,900원부터'와
+             '요금제 보기'는 맞는 말이 아니다 — 카드를 한도 안내로 바꿔 단다. */
+          var st2=P.state(), pro=(st2.plans&&st2.plans.pro)||{};
+          var h3=lockCardEl&&lockCardEl.querySelector('h3');
+          var sb=lockCardEl&&lockCardEl.querySelector('.lock-sub');
+          var cta=lockCardEl&&lockCardEl.querySelector('.lock-cta');
+          if(h3) h3.textContent=k.limitT;
+          if(sb) sb.textContent=k.limitS;
+          if(cta) cta.style.display='none';
+          // BASIC 이면 여기가 업그레이드를 권할 자리다. PRO 는 더 올릴 데가 없다.
           if(st2.plan==='basic'&&pro.limit)
-            html+='<div class="lock-up"><span>'+esc(k.upsell.replace('{n}',pro.limit))+'</span>'
-                 +'<a class="btn btn-primary" href="billing.html">'+esc(k.upgrade)+'</a></div>';
-          show(html,true);
+            show('<div class="lock-up"><span>'+esc(k.upsell.replace('{n}',pro.limit))+'</span>'
+                +'<a class="btn btn-primary" href="billing.html">'+esc(k.upgrade)+'</a></div>',true);
         }
         else if(e.code==='not-found') show(k.errNone);
         else if(e.code==='unauthenticated') location.href='Login.html?next='+encodeURIComponent(location.pathname+location.search);
