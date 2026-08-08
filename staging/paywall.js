@@ -17,6 +17,7 @@
    한다 — 사용자가 자기 문서의 plan 을 pro 로 고쳐 쓸 수 있으면 안 된다.
    ============================================================ */
 import { app, auth, isConfigured, SOCIAL } from "./firebase-config.js";
+import { PLANS } from "./payment-config.js";
 import { onAuthStateChanged }
   from "https://www.gstatic.com/firebasejs/10.12.2/firebase-auth.js";
 import { getFirestore, doc, onSnapshot }
@@ -43,7 +44,11 @@ function activeNow(s) {
 }
 
 function snapshot() {
-  return { user, sub, active: activeNow(sub), plan: (sub && sub.plan) || null };
+  const plan = (sub && sub.plan) || null;
+  // 한도 숫자는 payment-config 한 곳에서 온다. 화면마다 5·15를 적어 두면
+  // 값을 바꿀 때 한 군데를 빼먹는다.
+  return { user, sub, active: activeNow(sub), plan,
+           limit: (PLANS[plan] || {}).limit || null, plans: PLANS };
 }
 
 function emit() {

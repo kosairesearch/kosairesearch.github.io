@@ -42,6 +42,9 @@ const T = {
     hDate: "일자", hDesc: "내용", hAmt: "금액", hSt: "상태",
     stPaid: "결제 완료", stRefund: "환불", stFail: "실패",
     noneT: "이용 중인 구독이 없습니다", noneD: "요금제를 선택하시면 리포트 전문을 바로 보실 수 있습니다.",
+    dueT: "정기결제가 처리되지 않았습니다",
+    dueD: "등록하신 카드로 결제가 이루어지지 않았습니다. 한도 초과이거나 카드가 정지·만료된 경우일 수 있습니다. 카드를 다시 등록하시면 이용이 이어집니다.",
+    endedT: "구독이 종료되었습니다", endedD: "다시 시작하시려면 요금제를 선택해 주세요.",
     toPricing: "요금제 보기",
     needT: "로그인이 필요합니다", needD: "구독 정보를 보려면 로그인해 주세요.", login: "로그인",
     note: '해지하시면 이미 결제하신 이용 기간이 끝날 때까지는 그대로 이용하실 수 있습니다. 환불 기준은 <a href="pricing.html#faq">요금제 페이지</a>에서 확인하실 수 있습니다.',
@@ -70,6 +73,9 @@ const T = {
     hDate: "Date", hDesc: "Description", hAmt: "Amount", hSt: "Status",
     stPaid: "Paid", stRefund: "Refunded", stFail: "Failed",
     noneT: "No active subscription", noneD: "Pick a plan and every report opens in full right away.",
+    dueT: "We could not process your renewal",
+    dueD: "The card on file was declined — it may be over its limit, suspended, or expired. Register a card again and your access continues.",
+    endedT: "Your subscription has ended", endedD: "Pick a plan to start again.",
     toPricing: "See plans",
     needT: "Sign in required", needD: "Please sign in to see your subscription.", login: "Sign in",
     note: 'If you cancel, you keep access until the period you have paid for ends. Refund terms are on the <a href="pricing.html#faq">pricing page</a>.',
@@ -252,6 +258,18 @@ if (window.KOSi18n) window.KOSi18n.register(null, () => { if (repaint) repaint()
     }
     if (!st.sub) {
       empty(k.noneT, k.noneD, `<a class="btn btn-primary" href="pricing.html">${esc(k.toPricing)}</a>`);
+      return;
+    }
+    // 구독 기록은 있는데 지금 유효하지 않은 경우. 그냥 '구독 없음'으로 보내면
+    // 갱신 결제가 실패한 사람이 이유도 모르고 카드를 바꿀 길도 없어진다.
+    if (!st.active) {
+      const plan = st.sub.plan || "basic";
+      if (st.sub.status === "past_due") {
+        empty(k.dueT, k.dueD,
+          `<a class="btn btn-primary" href="checkout.html?plan=${esc(plan)}">${esc(k.changeCard)}</a>`);
+      } else {
+        empty(k.endedT, k.endedD, `<a class="btn btn-primary" href="pricing.html">${esc(k.toPricing)}</a>`);
+      }
       return;
     }
     if (!payments.length) payments = await loadPayments(st.user.uid);
