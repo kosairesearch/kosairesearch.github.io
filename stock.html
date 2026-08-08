@@ -329,6 +329,10 @@ table.dt .pos{color:var(--up);font-weight:700}table.dt .neg{color:var(--down);fo
 .lock-err{margin:14px auto 0;max-width:560px;padding:11px 14px;border-radius:var(--radius-md);
   background:rgba(220,60,60,.09);font:500 13px/1.6 var(--font-sans);color:var(--fg-1);display:none}
 .lock-err.show{display:block}
+.lock-up{display:flex;flex-wrap:wrap;align-items:center;justify-content:center;gap:12px;
+  margin-top:12px;padding-top:12px;border-top:1px solid var(--border-2);text-align:left}
+.lock-up span{flex:1;min-width:220px;font:500 13px/1.6 var(--font-sans);color:var(--fg-2);
+  word-break:keep-all;overflow-wrap:break-word}
 
 /* disclaimer + footer */
 .disclaimer{margin:40px auto 0;max-width:880px;padding:18px 20px;border-radius:var(--radius-md);background:rgba(0,0,0,.04);border:1px solid var(--border-2);font:400 13px/1.65 var(--font-sans);color:var(--fg-2)}
@@ -1000,7 +1004,9 @@ KOSi18n.register({
         cta:'요금제 보기', ctaLogin:'로그인하고 이어보기', ctaOpen:'이어서 읽기',
         note:'이미 구독 중이시라면 로그인해 주세요.',
         loading:'불러오는 중…',
-        errLimit:'오늘 열람 한도를 모두 사용하셨습니다. 한도는 매일 자정(한국 시간)에 초기화됩니다.',
+        errLimit:'오늘 열람 한도({n}개)를 모두 사용하셨습니다. 한도는 매일 자정(한국 시간)에 초기화됩니다.',
+        upsell:'더 보시려면 PRO로 변경하세요. 하루 {n}개까지 열람하실 수 있으며, 남은 기간만큼 차감해 차액만 결제됩니다.',
+        upgrade:'PRO로 업그레이드',
         errNone:'이 종목은 아직 유료 구간이 준비되지 않았습니다.',
         errFail:'불러오지 못했습니다. 잠시 후 다시 시도해 주세요.' } },
     en:{ home:'Home', reports:'Reports', watch:'Add to watchlist', watched:'Added to watchlist', watchShort:'Watchlist',
@@ -1019,7 +1025,9 @@ KOSi18n.register({
         cta:'See plans', ctaLogin:'Sign in and continue', ctaOpen:'Continue reading',
         note:'Already subscribed? Sign in.',
         loading:'Loading…',
-        errLimit:'You have used today’s viewing limit. It resets at midnight (KST).',
+        errLimit:'You have used today’s viewing limit ({n} reports). It resets at midnight (KST).',
+        upsell:'Switch to PRO to keep reading — {n} reports a day, and you only pay the difference for the days left.',
+        upgrade:'Upgrade to PRO',
         errNone:'The paid sections for this stock are not ready yet.',
         errFail:'Could not load it. Please try again in a moment.' } }
   };
@@ -1196,7 +1204,7 @@ KOSi18n.register({
     if(!P) return;                       // 모듈이 못 떴으면 링크 그대로(로그인 페이지)
     // render() 는 언어 전환마다 다시 불린다 — 이전 구독 리스너를 떼지 않으면 쌓인다.
     if(_lockOff){ _lockOff(); _lockOff=null; }
-    function show(msg){ err.textContent=msg; err.classList.add('show'); }
+    function show(msg,isHtml){ err[isHtml?'innerHTML':'textContent']=msg; err.classList.add('show'); }
     var note=lockCardEl&&lockCardEl.querySelector('.lock-note');
     _lockOff=P.onChange(function(st){
       /* 상태가 셋이다. 로그인 여부만 보고 문구를 정하면, 로그인한 사람에게
@@ -1229,7 +1237,16 @@ KOSi18n.register({
         render();
       }catch(e){
         btn.disabled=false; delete btn.dataset.busy; btn.textContent=k.ctaOpen;
-        if(e.code==='resource-exhausted') show(k.errLimit);
+        if(e.code==='resource-exhausted'){
+          var st2=P.state(), lim=st2.limit, pro=(st2.plans&&st2.plans.pro)||{};
+          var html=esc(k.errLimit.replace('{n}',lim==null?'':lim));
+          // BASIC 이면 여기가 업그레이드를 권할 자리다. PRO 는 더 올릴 데가 없으니
+          // 초기화 시각만 알려 준다.
+          if(st2.plan==='basic'&&pro.limit)
+            html+='<div class="lock-up"><span>'+esc(k.upsell.replace('{n}',pro.limit))+'</span>'
+                 +'<a class="btn btn-primary" href="billing.html">'+esc(k.upgrade)+'</a></div>';
+          show(html,true);
+        }
         else if(e.code==='not-found') show(k.errNone);
         else if(e.code==='unauthenticated') location.href='Login.html?next='+encodeURIComponent(location.pathname+location.search);
         else if(e.code==='permission-denied') location.href='pricing.html';
