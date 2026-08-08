@@ -93,7 +93,7 @@ async function fetchPaid(ticker) {
   }
 }
 
-window.KOSPaywall = {
+if (!window.__KOSDEMO) window.KOSPaywall = {
   ready,
   isConfigured,
   state: snapshot,
