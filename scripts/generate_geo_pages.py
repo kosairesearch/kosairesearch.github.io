@@ -17,6 +17,10 @@ import re
 from datetime import date
 from pathlib import Path
 
+import sys
+sys.path.insert(0, str(Path(__file__).resolve().parent))
+from report_split import split                                   # noqa: E402
+
 ROOT = Path(__file__).resolve().parent.parent
 OUT = ROOT / "r"
 SITE = "https://kosai.kr"
@@ -174,6 +178,13 @@ def metrics_table(st, val, lang, data_date):
 
 
 def lang_sections(rep, st, val, lang, data_date):
+    """이 페이지에 실을 것은 무료 구간뿐이다.
+
+    ⚠️ 여기는 정적 HTML 이라 잠금이라는 게 없다. 유료 구간을 한 줄이라도 넣으면
+       r/{ticker}.html 주소만 알면 누구나 전문을 읽는다 — 화면에서 아무리 잘
+       잠가도 소용없다. 기준은 report_split 한 곳에서만 정한다.
+    """
+    rep, _paid = split(rep)          # 유료 구간을 여기서 잘라 낸다
     h = H[lang]
     parts = [para(h["summary"], rep.get("lead"), lang),
              bullets(h["keypoints"], rep.get("keypoints"), lang),
