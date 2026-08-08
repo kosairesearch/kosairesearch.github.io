@@ -23,6 +23,7 @@
 v1 에는 quant·earnings·industry·valuation_comment·checkpoints 가 없어
 요금제에서 약속한 구성을 채우지 못한다. 못 채우는 걸 파는 대신 전부 연다.
 """
+import re
 
 # 유료 구간 — 이 키들만 서버가 결제 확인 후 내려준다.
 PAID_KEYS = (
@@ -106,27 +107,21 @@ def split(report):
     return free, paid
 
 
-# 잠긴 구간의 '겉모습' — 섹션마다 첫 문장과 남은 분량.
-# 화면 순서는 stock.html renderV2 와 같아야 한다.
+# 잠긴 구간의 '겉모습' — 무엇이 몇 개, 얼마나 긴가. 글자는 주지 않는다.
+# 화면 순서와 종류는 stock.html renderV2 와 같아야 한다.
 TEASER_ORDER = (
-    ("earnings", "text"), ("industry", "text"), ("outlook", "text"),
-    ("valuation_comment", "text"),
-    ("bull", "factors"), ("bear", "factors"), ("risks", "risks"),
-    ("checkpoints", "checkpoints"), ("verdict", "verdict"),
+    ("earnings", "prose"), ("industry", "prose"), ("outlook", "prose"),
+    ("valuation_comment", "prose"),
+    ("bull", "factors"), ("bear", "factors"), ("risks", "pairs"),
+    ("checkpoints", "pairs"), ("verdict", "wrapup"),
 )
 
-_SENT = __import__("re").compile(r"([다요죠음함됨임]\.)\s+|([.!?])\s+(?=[A-Z가-힣\"'(])")
+# 문장 경계 — stock.html splitSentences 와 같은 기준이어야 문단 수가 맞는다.
+_SENT = re.compile(r"(?:[다요죠음함됨임]\.)\s+|(?:[.!?])\s+(?=[A-Z가-힣\"'(])")
 
 
 def _one_line(v):
     return " ".join(str(v or "").split())
-
-
-def _first_sentence(t):
-    """첫 문장만. 문장 경계는 stock.html splitSentences 와 같은 기준."""
-    t = _one_line(t)
-    m = _SENT.search(t)
-    return t[: m.end()].strip() if m else t
 
 
 def _lang(v, lang):
@@ -135,33 +130,68 @@ def _lang(v, lang):
     return v or ""
 
 
-def _flat(v, kind, lang):
-    """섹션 전체를 한 덩이 문자열로 — 분량을 재려는 것뿐이다."""
-    if kind == "text":
-        return _one_line(_lang(v, lang))
-    if kind == "verdict":
-        return _one_line(_lang((v or {}).get("body"), lang))
+def _sentences(t):
+    out, last = [], 0
+    for m in _SENT.finditer(t):
+        out.append(t[last:m.end()].strip())
+        last = m.end()
+    tail = t[last:].strip()
+    if tail:
+        out.append(tail)
+    return [x for x in out if x]
+
+
+def _para_lens(t, per=3):
+    """화면이 그릴 문단 하나하나의 길이. stock.html prose()/chunkPara() 와 같은 규칙.
+
+    문단 수와 길이가 맞아야 흐린 판의 덩어리 모양이 실제와 겹친다.
+    """
+    out = []
+    for block in str(t or "").split("\n\n"):
+        block = " ".join(block.split())
+        if not block:
+            continue
+        ss = _sentences(block)
+        if len(ss) <= per + 1:
+            out.append(len(block))
+            continue
+        for i in range(0, len(ss), per):
+            out.append(len(" ".join(ss[i:i + per])))
+    return out
+
+
+def _shape(v, kind, lang):
+    """섹션 하나의 뼈대. 글자는 없고 개수와 길이만 있다."""
+    if kind == "prose":
+        return {"paras": _para_lens(_lang(v, lang))}
+    if kind == "wrapup":
+        return {"paras": _para_lens(_lang((v or {}).get("body"), lang))}
     if kind == "factors":
-        return " ".join(_one_line(_lang(f.get("title"), lang) + ": " + _lang(f.get("body"), lang))
-                        for f in (v or []))
-    if kind == "risks":
-        return " ".join(_one_line(_lang(r.get("cat"), lang) + ": " + _lang(r.get("body"), lang))
-                        for r in (v or []))
-    if kind == "checkpoints":
-        return " ".join(_one_line(_lang(c.get("when"), lang) + ": " + _lang(c.get("what"), lang))
-                        for c in (v or []))
-    return ""
+        return {"items": [[len(_one_line(_lang(f.get("title"), lang))),
+                           len(_one_line(_lang(f.get("body"), lang)))] for f in (v or [])]}
+    if kind == "pairs":
+        # 리스크(cat/body)와 체크포인트(when/what) 는 모양이 같다 — 짧은 앞머리 + 본문.
+        out = []
+        for it in (v or []):
+            a = it.get("cat", it.get("when"))
+            b = it.get("body", it.get("what"))
+            out.append([len(_one_line(_lang(a, lang))), len(_one_line(_lang(b, lang)))])
+        return {"items": out}
+    return {}
 
 
 def teaser(report):
-    """비구독자 화면에 쓸 미리보기 뼈대를 만든다.
+    """비구독자에게 보여 줄 뼈대를 만든다 — 글자는 빼고 모양만.
 
-    잠금 카드만 덩그러니 두면 무엇을 사는지 알 수가 없다. 그렇다고 본문을
-    내려보내 놓고 CSS 로 흐리게 덮으면, 개발자 도구에서 한 줄 지우면 그대로
-    읽힌다 — 안 판 것과 같다. 그래서 첫 문장만 실제로 주고 나머지는 글자 수만
-    준다. 화면은 그 수만큼 흐린 글자를 깔아 분량을 보여 준다.
+    본문을 내려보내 놓고 CSS 로 흐리게 덮으면, 개발자 도구에서 filter 한 줄만
+    지우면 그대로 읽힌다. 안 판 것과 같다. 그래서 여기서 나가는 건 '무엇이 몇
+    개 있고 각각 몇 글자인가'뿐이다. 화면은 그 수만큼 아무 뜻 없는 글자를 깔고
+    크게 흐린다 — 벗겨도 나올 게 없다.
 
-    [{"k": 키, "head": {"ko","en"}, "n": 첫 문장을 뺀 남은 글자 수}]
+    대신 문단 수·항목 수·각 길이를 실제와 똑같이 맞춘다. 그래야 흐린 판의
+    덩어리 모양과 위치가 진짜 리포트와 겹친다.
+
+    [{"k": 키, "t": 종류, "paras"|"items": [...]}]
     """
     if not is_v2(report):
         return []
@@ -170,14 +200,10 @@ def teaser(report):
         v = report.get(key)
         if not v:
             continue
-        ko = _flat(v, kind, "ko")
-        if not ko:
+        sh = _shape(v, kind, "ko")
+        if not (sh.get("paras") or sh.get("items")):
             continue
-        en = _flat(v, kind, "en")
-        h_ko, h_en = _first_sentence(ko), _first_sentence(en)
-        out.append({"k": key,
-                    "head": {"ko": h_ko, "en": h_en},
-                    "n": max(0, len(ko) - len(h_ko))})
+        out.append(dict(k=key, t=kind, **sh))
     return out
 
 

@@ -322,7 +322,7 @@ table.dt .pos{color:var(--up);font-weight:700}table.dt .neg{color:var(--down);fo
   -webkit-mask-image:linear-gradient(to bottom,transparent,#000 6%,#000 88%,transparent);
   mask-image:linear-gradient(to bottom,transparent,#000 6%,#000 88%,transparent)}
 .tz-body .sec{padding-top:0}
-.tz-body p{margin:12px 0 0;font:400 16px/1.9 var(--font-sans);color:var(--fg-1);word-break:break-all}
+.tz-body{color:var(--fg-1)}
 /* 좁은 화면은 한 줄에 들어가는 글자가 절반이라 같은 분량이 두 배 길이가 된다.
    글자를 줄여 그만큼만 되돌린다 — 분량의 비례는 그대로 남는다. */
 @media (max-width:700px){
@@ -1094,72 +1094,132 @@ KOSi18n.register({
   function risksH(arr){ if(!arr||!arr.length)return ''; return '<div class="risk">'+arr.map(function(r){return '<div class="cat">'+esc(pk(r.cat))+'</div><div class="body">'+esc(pk(r.body))+'</div>';}).join('')+'</div>'; }
   function pad(x){ return x<10?'0'+x:''+x; }
 
+  function secOpen(num,kick,title){ return '<section class="sec col"><div class="sec-kicker"><span class="sec-num">'+num+'</span> · '+kick+'</div><h2 class="sec-title">'+esc(title)+'</h2>'; }
+
   /* ── 잠긴 구간 미리보기 ─────────────────────────────────────
-     서버가 주는 건 섹션마다 '첫 문장'과 '남은 글자 수'뿐이다(teaser).
-     첫 문장은 그대로 보여 주고, 남은 분량은 아래 fillerText 로 만든
-     무의미한 글자를 깔아 흐리게 처리한다. 읽히지 않지만 얼마나 더
-     있는지는 보인다. */
+     서버가 주는 건 '무엇이 몇 개 있고 각각 몇 글자인가'뿐이다(teaser).
+     글자는 여기서 아무 뜻 없이 만들어 깔고 크게 흐린다 — 진짜 본문을 내려보내
+     흐리게 덮으면 개발자 도구에서 filter 한 줄만 지워도 다 읽힌다.
+     대신 문단 수·항목 수·각 길이와 마크업을 실제 렌더와 똑같이 맞춘다.
+     그래야 흐린 판의 덩어리 모양과 위치가 진짜 리포트와 겹친다. */
   var TZ_SEC={ earnings:['EARNINGS','earnings'], industry:['INDUSTRY','industry'],
     outlook:['OUTLOOK','outlook'], valuation_comment:['VALUATION','valuation'],
     bull:['BULL CASE','bull'], bear:['BEAR CASE','bear'], risks:['RISK','risk'],
     checkpoints:['WHAT TO WATCH','chk'], verdict:['VERDICT','verdict'] };
 
-  /* 첫 문장의 글자를 섞어 길이만 맞춘 글자를 만든다. 같은 리포트면 늘 같은
-     모양이 나오도록 난수는 결정적으로 돌린다(다시 그릴 때 출렁이면 거슬린다). */
-  function fillerText(seed,len){
-    var pool=String(seed||'').replace(/[\s0-9A-Za-z.,%·~\-()]/g,'');
-    if(pool.length<8) pool='매출영업이익수요공급가격전망성장확대둔화개선부담경쟁점유율투자비용';
-    var out='',r=len*2654435761%2147483647||12345,gap=0,i;
+  /* 길이만 맞춘 글자. 같은 리포트면 늘 같은 모양이 나오도록 난수는 결정적으로
+     돌린다 — 다시 그릴 때마다 출렁이면 거슬린다. */
+  /* 한글만 깔면 실제보다 줄이 늘어난다. 리포트 본문에는 연도·금액·비율 같은
+     숫자와 라틴 글자가 섞여 있고, 그건 한글보다 좁다. 그 비율만큼 섞는다. */
+  var TZ_POOL='매출영업이익수요공급가격전망성장확대둔화개선부담경쟁점유율투자비용시장실적기준증가감소'
+             +'대비수익구조원가환율금리재고출하단가물량비중전년동기수준유지회복'
+             +'0123456789.%()0123456789조원억달러202520262027';
+  var _tzSeed=0;
+  function fillerText(len){
+    var out='',gap=0,i,r=(_tzSeed=(_tzSeed*1103515245+12345)&0x7fffffff)||9973;
+    len=Math.max(2,Math.round(len));
     for(i=0;i<len;i++){
       r=(r*1103515245+12345)&0x7fffffff;
-      out+=pool.charAt(r%pool.length);
-      if(++gap>=3+(r>>9)%6){ out+=' '; gap=0; }
+      out+=TZ_POOL.charAt(r%TZ_POOL.length);
+      // 한국어 산문은 서너 글자마다 띄어쓴다 — 줄바꿈 자리가 실제와 비슷해진다.
+      if(++gap>=2+(r>>9)%5 && i<len-1){ out+=' '; gap=0; }
     }
     return out;
   }
+  function tzP(n){ return '<p>'+esc(fillerText(n))+'</p>'; }
+
   /* publish_paid.py 를 아직 안 돌린 동안에는 정적 파일에 본문이 그대로 있다.
-     그 상태에서도 미리보기를 확인할 수 있도록 여기서 같은 모양을 만들어 둔다.
+     그 상태에서도 미리보기를 확인할 수 있도록 여기서 같은 뼈대를 만든다.
      서버가 teaser 를 주기 시작하면 이 함수는 쓰이지 않는다. */
   function deriveTeaser(){
-    var flat={
-      earnings:pk(REP.earnings), industry:pk(REP.industry), outlook:pk(REP.outlook),
-      valuation_comment:pk(REP.valuation_comment),
-      bull:(REP.bull||[]).map(function(f){return pk(f.title)+': '+pk(f.body);}).join(' '),
-      bear:(REP.bear||[]).map(function(f){return pk(f.title)+': '+pk(f.body);}).join(' '),
-      risks:(REP.risks||[]).map(function(r){return pk(r.cat)+': '+pk(r.body);}).join(' '),
-      checkpoints:(REP.checkpoints||[]).map(function(c){return pk(c.when)+': '+pk(c.what);}).join(' '),
-      verdict:REP.verdict?pk(REP.verdict.body):''
-    };
-    var out=[];
-    ['earnings','industry','outlook','valuation_comment','bull','bear','risks','checkpoints','verdict']
-      .forEach(function(k){
-        var t=String(flat[k]||'').replace(/\s+/g,' ').trim();
-        if(!t) return;
-        var head=splitSentences(t)[0]||t;
-        out.push({k:k, head:head, n:Math.max(0,t.length-head.length)});
+    function paras(o){
+      var t=pk(o); if(!t) return [];
+      var out=[];
+      String(t).split(/\n\n+/).forEach(function(b){
+        chunkPara(b.trim(),3).forEach(function(c){ if(c) out.push(c.length); });
       });
+      return out;
+    }
+    function items(arr,a,b){
+      return (arr||[]).map(function(x){ return [pk(x[a]).length, pk(x[b]).length]; });
+    }
+    var out=[];
+    function add(k,t,v){ if(v&&v.length) out.push({k:k,t:t,paras:(t==='prose'||t==='wrapup')?v:null,items:(t==='prose'||t==='wrapup')?null:v}); }
+    add('earnings','prose',paras(REP.earnings));
+    add('industry','prose',paras(REP.industry));
+    add('outlook','prose',paras(REP.outlook));
+    add('valuation_comment','prose',paras(REP.valuation_comment));
+    add('bull','factors',items(REP.bull,'title','body'));
+    add('bear','factors',items(REP.bear,'title','body'));
+    add('risks','pairs',items(REP.risks,'cat','body'));
+    add('checkpoints','pairs',items(REP.checkpoints,'when','what'));
+    add('verdict','wrapup',REP.verdict?paras(REP.verdict.body):[]);
     return out;
   }
-  /* 잠긴 구간 전체를 흐린 유리 한 장으로 덮는다. 섹션마다 따로 흐리게 하면
-     덩어리가 아홉 개 놓인 꼴이 되고, 잠금 카드까지 한참을 내려야 한다.
-     판의 높이는 화면에 맞춰 고정하고, 분량은 카드에 숫자로 적는다. */
+
+  /* 실제 렌더(prose/factors/risksH/timeline/wrapup)와 같은 마크업을 쓴다.
+     클래스가 달라지면 여백과 줄간격이 달라지고, 덩어리 위치가 어긋난다. */
+  function tzSection(t,cls){
+    var n=0;
+    if(t.t==='prose'){
+      (t.paras||[]).forEach(function(L){ n+=L; });
+      return {h:'<div class="prose">'+(t.paras||[]).map(tzP).join('')+'</div>', n:n};
+    }
+    if(t.t==='wrapup'){
+      (t.paras||[]).forEach(function(L){ n+=L; });
+      return {h:'<div class="wrapup glass">'+(t.paras||[]).map(tzP).join('')+'</div>', n:n};
+    }
+    if(t.t==='factors'){
+      var mk=(t.k==='bull'?'▲':'▼');
+      return {h:(t.items||[]).map(function(it){ n+=it[0]+it[1];
+        return '<div class="factor '+cls+'"><p class="fh"><span class="mk">'+mk+'</span>'
+              +esc(fillerText(it[0]))+'</p><p>'+esc(fillerText(it[1]))+'</p></div>';
+      }).join(''), n:n};
+    }
+    if(t.t==='pairs'&&t.k==='risks'){
+      return {h:'<div class="risk">'+(t.items||[]).map(function(it){ n+=it[0]+it[1];
+        return '<div class="cat">'+esc(fillerText(it[0]))+'</div>'
+              +'<div class="body">'+esc(fillerText(it[1]))+'</div>';
+      }).join('')+'</div>', n:n};
+    }
+    if(t.t==='pairs'){
+      return {h:'<div class="timeline">'+(t.items||[]).map(function(it){ n+=it[0]+it[1];
+        return '<div class="tl"><div class="tl-date"><span class="badge">'+esc(fillerText(it[0]))
+              +'</span></div><p>'+esc(fillerText(it[1]))+'</p></div>';
+      }).join('')+'</div>', n:n};
+    }
+    return {h:'', n:0};
+  }
+
   function teaserPane(u,n){
     var tz=REP.teaser;
     if(!tz||!tz.length) tz=deriveTeaser();
     if(!tz||!tz.length) return null;
+    _tzSeed=0;                              // 다시 그려도 같은 모양
     var h='', chars=0, secs=0;
     tz.forEach(function(t){
       var meta=TZ_SEC[t.k]; if(!meta) return;
-      var head=pk(t.head)||'';
-      secs++; chars+=head.length+(t.n||0);
-      h+=secOpen(pad(n++),meta[0],u.sec[meta[1]]);
-      h+='<div class="prose"><p>'+esc(fillerText(head,Math.max(110,t.n||0)))+'</p></div>';
-      h+='</section><hr class="hairline" />';
+      var body=tzSection(t,t.k);
+      if(!body.h) return;
+      /* 밸류에이션 섹션은 해설 앞에 기준일·지표표·각주가 붙는다(무료 구간 값).
+         그게 빠지면 이 섹션만 230px 짧아지고, 아래 섹션이 통째로 밀린다. */
+      if(t.k==='valuation_comment'){
+        var grid='';
+        for(var gi=0;gi<6;gi++)
+          grid+='<div class="vm"><div class="vk">'+esc(fillerText(3))+'</div>'
+               +'<div class="vv">'+esc(fillerText(4))+'</div></div>';
+        body.h='<div class="val-asof">'+esc(fillerText(14))+'</div>'
+              +'<div class="valgrid">'+grid+'</div>'
+              +'<div class="tbl-foot" style="margin-bottom:22px">'+esc(fillerText(90))+'</div>'
+              +body.h;
+      }
+      secs++; chars+=body.n;
+      h+=secOpen(pad(n++),meta[0],u.sec[meta[1]])+body.h+'</section><hr class="hairline" />';
     });
+    if(!secs) return null;
     // 한국어 묵독은 분당 500자 안팎으로 잡는다.
     return {html:h, n:n, secs:secs, mins:Math.max(1,Math.round(chars/500))};
   }
-  function secOpen(num,kick,title){ return '<section class="sec col"><div class="sec-kicker"><span class="sec-num">'+num+'</span> · '+kick+'</div><h2 class="sec-title">'+esc(title)+'</h2>'; }
 
   var watched=false;
   function syncWatch(){ var u=U();
