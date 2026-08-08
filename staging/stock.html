@@ -1167,7 +1167,7 @@ KOSi18n.register({
      Firestore 에만 있고 paywall.js 가 getReport 로 받아온다. 전환 전 데이터에는
      hasPaid 자체가 없어 그대로 전부 보인다(기존 동작 유지).
      ?paywall=1 은 스테이징에서 잠금 화면을 확인하기 위한 강제 스위치. */
-  var PAID=null, _lockOff=null, FORCE_LOCK=(qp('paywall')==='1');
+  var PAID=null, _lockOff=null, FORCE_LOCK=(qp('paywall')!=='0')   /* staging: 기본 잠금 */;
   function paywalled(){ return !PAID && (FORCE_LOCK || (REP&&REP.hasPaid===true)); }
 
   /* 잠금 카드. 두 번째 버튼은 스크립트가 못 떠도 죽지 않도록 링크로 두고,
