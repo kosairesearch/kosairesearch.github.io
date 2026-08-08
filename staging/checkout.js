@@ -265,14 +265,17 @@ async function confirm(authKey, customerKey, planId, method) {
   } catch (e) {
     console.error("[checkout] confirmBilling", e);
     const again = "checkout.html?plan=" + encodeURIComponent(planId) + (method ? "&method=1" : "");
-    state(k.failTitle, e.message || k.errConfirm,
-      `<a class="btn btn-primary" href="${again}">${esc(method ? k.mBtn : k.pay)}</a>`);
+    const msg = e.message || k.errConfirm;
+    screen(() => { const kk = t();
+      state(kk.failTitle, msg, `<a class="btn btn-primary" href="${again}">${esc(method ? kk.mBtn : kk.pay)}</a>`); });
   }
 }
 
-/* KO ⇄ EN 토글 시 다시 그린다. 이 영역은 data-i18n-skip 이라 엔진이 손대지 않는다. */
+/* KO ⇄ EN 토글 시 다시 그린다. 이 영역은 data-i18n-skip 이라 엔진이 손대지 않는다.
+   안내 화면도 빠짐없이 repaint 에 담는다 — 비워 두면 그 화면만 옛 언어로 남는다. */
 let repaint = null;
 if (window.KOSi18n) window.KOSi18n.register(null, () => { if (repaint) repaint(); });
+function screen(fn) { repaint = fn; fn(); }
 
 (async function main() {
   const k = t();
@@ -280,13 +283,19 @@ if (window.KOSi18n) window.KOSi18n.register(null, () => { if (repaint) repaint()
   const planId = String(qp("plan") || "").toLowerCase();
   const plan = planOf(planId);
   const here = "checkout.html?plan=" + planId + (method ? "&method=1" : "");
-  if (!plan) { state(k.badPlan, k.badPlanD, `<a class="btn btn-primary" href="pricing.html">${esc(k.toPricing)}</a>`); return; }
+  if (!plan) {
+    screen(() => { const kk = t();
+      state(kk.badPlan, kk.badPlanD, `<a class="btn btn-primary" href="pricing.html">${esc(kk.toPricing)}</a>`); });
+    return;
+  }
 
   // 결제창 실패로 돌아온 경우
   const failCode = qp("code");
   if (failCode) {
-    state(k.failTitle, qp("message") || k.errOpen,
-      `<a class="btn btn-primary" href="${esc(here)}">${esc(method ? k.mBtn : k.pay)}</a>`);
+    const m = qp("message");
+    screen(() => { const kk = t();
+      state(kk.failTitle, m || kk.errOpen,
+        `<a class="btn btn-primary" href="${esc(here)}">${esc(method ? kk.mBtn : kk.pay)}</a>`); });
     return;
   }
 
@@ -296,18 +305,31 @@ if (window.KOSi18n) window.KOSi18n.register(null, () => { if (repaint) repaint()
   const authKey = qp("authKey"), customerKey = qp("customerKey");
   if (authKey && customerKey) { await confirm(authKey, customerKey, plan.id, method); return; }
 
-  if (!isConfigured) { state(k.notReady, k.notReadyD, `<a class="btn btn-primary" href="pricing.html">${esc(k.toPricing)}</a>`); return; }
+  if (!isConfigured) {
+    screen(() => { const kk = t();
+      state(kk.notReady, kk.notReadyD, `<a class="btn btn-primary" href="pricing.html">${esc(kk.toPricing)}</a>`); });
+    return;
+  }
   if (!st.user) {
-    state(k.needLogin, k.needLoginD,
-      `<a class="btn btn-primary" href="Login.html?next=${encodeURIComponent(here)}">${esc(k.login)}</a>`);
+    screen(() => { const kk = t();
+      state(kk.needLogin, kk.needLoginD,
+        `<a class="btn btn-primary" href="Login.html?next=${encodeURIComponent(here)}">${esc(kk.login)}</a>`); });
     return;
   }
 
   /* 카드 변경은 '이미 구독 중'이 정상이다. 구독이 아예 없을 때만 돌려보낸다.
      결제가 밀려 멈춘(past_due) 구독도 여기로 와야 카드를 바꿔 되살릴 수 있다. */
   if (method) {
-    if (!st.sub) { state(k.mNoSub, k.mNoSubD, `<a class="btn btn-primary" href="pricing.html">${esc(k.toPricing)}</a>`); return; }
-    if (!payReady) { state(k.notReady, k.notReadyD, `<a class="btn btn-primary" href="billing.html">${esc(k.toBilling)}</a>`); return; }
+    if (!st.sub) {
+      screen(() => { const kk = t();
+        state(kk.mNoSub, kk.mNoSubD, `<a class="btn btn-primary" href="pricing.html">${esc(kk.toPricing)}</a>`); });
+      return;
+    }
+    if (!payReady) {
+      screen(() => { const kk = t();
+        state(kk.notReady, kk.notReadyD, `<a class="btn btn-primary" href="billing.html">${esc(kk.toBilling)}</a>`); });
+      return;
+    }
     const cur = planOf(st.sub.plan) || plan;
     /* 머리말이 '구독 시작하기'로 남아 있으면 카드만 바꾸러 온 사람이 또 결제되는
        줄 안다. i18n 엔진은 한국어 원문을 열쇠로 쓰므로 여기서 두 언어를 다 쓴다. */
@@ -316,24 +338,27 @@ if (window.KOSi18n) window.KOSi18n.register(null, () => { if (repaint) repaint()
       if (h1) { h1.textContent = kk.mH1; h1.setAttribute("data-i18n-skip", ""); }
       if (h2) { h2.textContent = kk.mH2; h2.setAttribute("data-i18n-skip", ""); }
     };
-    repaint = () => {
+    screen(() => {
       const kk = t();
       head(kk);
       app_.innerHTML = methodForm(cur, st.sub);
       wireForm(cur, st.user, { method: true });
-    };
-    repaint();
+    });
     return;
   }
 
   if (st.active) {
     const cur = PLANS[st.plan] ? PLANS[st.plan].name : String(st.plan || "").toUpperCase();
-    state(k.already, k.alreadyD.replace("{plan}", cur),
-      `<a class="btn btn-primary" href="billing.html">${esc(k.toBilling)}</a>`);
+    screen(() => { const kk = t();
+      state(kk.already, kk.alreadyD.replace("{plan}", cur),
+        `<a class="btn btn-primary" href="billing.html">${esc(kk.toBilling)}</a>`); });
     return;
   }
-  if (!payReady) { state(k.notReady, k.notReadyD, `<a class="btn btn-primary" href="pricing.html">${esc(k.toPricing)}</a>`); return; }
+  if (!payReady) {
+    screen(() => { const kk = t();
+      state(kk.notReady, kk.notReadyD, `<a class="btn btn-primary" href="pricing.html">${esc(kk.toPricing)}</a>`); });
+    return;
+  }
 
-  repaint = () => { app_.innerHTML = form(plan); wireForm(plan, st.user); };
-  repaint();
+  screen(() => { app_.innerHTML = form(plan); wireForm(plan, st.user); });
 })();

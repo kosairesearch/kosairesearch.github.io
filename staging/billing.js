@@ -298,35 +298,43 @@ async function loadPayments(uid) {
 let repaint = null;
 if (window.KOSi18n) window.KOSi18n.register(null, () => { if (repaint) repaint(); });
 
+/* 어떤 화면이든 repaint 에 담아 두고 그린다.
+   #blApp 은 data-i18n-skip 이라 번역 엔진이 손대지 않는다. 그래서 여기서 다시
+   그리지 않으면 언어를 바꿔도 그 화면만 옛 언어로 남는다 — 안내 화면들은
+   repaint 를 비워 둔 채였고, KO 로 바꿔도 영어가 그대로 있었다. */
+function screen(fn) { repaint = fn; fn(); }
+
 (async function main() {
   await window.KOSPaywall.ready;
   let payments = [];
   window.KOSPaywall.onChange(async (st) => {
-    const k = t();
-    repaint = null;
     if (!st.user) {
-      empty(k.needT, k.needD,
-        `<a class="btn btn-primary" href="Login.html?next=billing.html">${esc(k.login)}</a>`);
+      screen(() => { const k = t();
+        empty(k.needT, k.needD,
+          `<a class="btn btn-primary" href="Login.html?next=billing.html">${esc(k.login)}</a>`); });
       return;
     }
     if (!st.sub) {
-      empty(k.noneT, k.noneD, `<a class="btn btn-primary" href="pricing.html">${esc(k.toPricing)}</a>`);
+      screen(() => { const k = t();
+        empty(k.noneT, k.noneD, `<a class="btn btn-primary" href="pricing.html">${esc(k.toPricing)}</a>`); });
       return;
     }
     // 구독 기록은 있는데 지금 유효하지 않은 경우. 그냥 '구독 없음'으로 보내면
     // 갱신 결제가 실패한 사람이 이유도 모르고 카드를 바꿀 길도 없어진다.
     if (!st.active) {
       const plan = st.sub.plan || "basic";
-      if (st.sub.status === "past_due") {
-        empty(k.dueT, k.dueD,
-          `<a class="btn btn-primary" href="checkout.html?plan=${esc(plan)}&amp;method=1">${esc(k.changeCard)}</a>`);
-      } else {
-        empty(k.endedT, k.endedD, `<a class="btn btn-primary" href="pricing.html">${esc(k.toPricing)}</a>`);
-      }
+      const due = st.sub.status === "past_due";
+      screen(() => { const k = t();
+        if (due) {
+          empty(k.dueT, k.dueD,
+            `<a class="btn btn-primary" href="checkout.html?plan=${esc(plan)}&amp;method=1">${esc(k.changeCard)}</a>`);
+        } else {
+          empty(k.endedT, k.endedD, `<a class="btn btn-primary" href="pricing.html">${esc(k.toPricing)}</a>`);
+        }
+      });
       return;
     }
     if (!payments.length) payments = await loadPayments(st.user.uid);
-    repaint = () => view(st, payments);
-    repaint();
+    screen(() => view(st, payments));
   });
 })();
