@@ -34,7 +34,7 @@ const call = (n, d) => (window.__KOSDEMO
 const T = {
   ko: {
     welcome: "구독이 시작되었습니다. 이제 모든 리포트를 전문으로 보실 수 있습니다.",
-    cardOk: "결제 수단이 변경되었습니다. 다음 결제부터 새 카드로 청구됩니다.",
+    cardOk: "결제 수단이 변경되었습니다. 다음 결제일부터 새 카드로 청구됩니다.",
     cur: "현재 플랜", on: "이용 중", willEnd: "해지 예정", off: "만료됨",
     perMonth: "월", limitRow: "하루 열람 한도", nextRow: "다음 결제일", endRow: "이용 종료일",
     startRow: "구독 시작일", amountRow: "결제 금액", cards: "개",
@@ -46,7 +46,7 @@ const T = {
     stPaid: "결제 완료", stRefund: "환불", stFail: "실패",
     noneT: "이용 중인 구독이 없습니다", noneD: "요금제를 선택하시면 리포트 전문을 바로 보실 수 있습니다.",
     dueT: "정기결제가 처리되지 않았습니다",
-    dueD: "등록하신 카드로 결제가 이루어지지 않았습니다. 한도 초과이거나 카드가 정지·만료된 경우일 수 있습니다. 카드를 다시 등록하시면 이용이 이어집니다.",
+    dueD: "등록하신 카드로 결제가 승인되지 않았습니다. 한도 초과이거나 카드가 정지·만료된 경우일 수 있습니다. 카드를 다시 등록하시면 이용이 재개됩니다.",
     endedT: "구독이 종료되었습니다", endedD: "다시 시작하시려면 요금제를 선택해 주세요.",
     toPricing: "요금제 보기",
     needT: "로그인이 필요합니다", needD: "구독 정보를 보려면 로그인해 주세요.", login: "로그인",
@@ -66,7 +66,7 @@ const T = {
   },
   en: {
     welcome: "Your subscription is active. Every report is now open in full.",
-    cardOk: "Your payment method has been updated. The new card is charged from the next cycle.",
+    cardOk: "Your payment method has been updated. The new card will be charged from the next billing date.",
     cur: "Current plan", on: "Active", willEnd: "Ends soon", off: "Expired",
     perMonth: "mo", limitRow: "Daily limit", nextRow: "Next charge", endRow: "Access until",
     startRow: "Started", amountRow: "Amount", cards: "",
@@ -78,7 +78,7 @@ const T = {
     stPaid: "Paid", stRefund: "Refunded", stFail: "Failed",
     noneT: "No active subscription", noneD: "Pick a plan and every report opens in full right away.",
     dueT: "We could not process your renewal",
-    dueD: "The card on file was declined — it may be over its limit, suspended, or expired. Register a card again and your access continues.",
+    dueD: "The card on file was declined — it may be over its limit, suspended, or expired. Register a card again to restore access.",
     endedT: "Your subscription has ended", endedD: "Pick a plan to start again.",
     toPricing: "See plans",
     needT: "Sign in required", needD: "Please sign in to see your subscription.", login: "Sign in",
