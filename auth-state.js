@@ -16,7 +16,7 @@ import { getFunctions, httpsCallable }
 
 const T = m => (window.KOSi18n ? window.KOSi18n.t(m) : m);
 if(window.KOSi18n) window.KOSi18n.register({
-  "로그인":"Sign in", "로그아웃":"Sign out", "회원 탈퇴":"Delete account",
+  "로그인":"Sign in", "로그아웃":"Sign out", "회원 탈퇴":"Delete account", "구독 관리":"Subscription",
   "회원 탈퇴가 완료되었습니다. 그동안 이용해 주셔서 감사합니다.":
     "Your account has been deleted. Thank you for using KOSAI.",
   "보안을 위해 다시 로그인한 뒤 탈퇴를 진행해 주세요.":
@@ -165,10 +165,11 @@ function injectCss(){
   #navAuth .acct.open .menu{display:flex}
   #navAuth .menu .em{padding:9px 10px 10px;font:500 12px var(--font-sans);color:var(--fg-3);
     word-break:break-all;border-bottom:1px solid var(--hair);margin-bottom:4px}
-  #navAuth .menu button{text-align:left;border:0;background:transparent;cursor:pointer;
+  #navAuth .menu .mi{display:block;text-decoration:none;color:inherit}
+  #navAuth .menu button,#navAuth .menu .mi{text-align:left;border:0;background:transparent;cursor:pointer;
     font:600 14px var(--font-sans);color:var(--fg-1);padding:10px;border-radius:8px}
-  #navAuth .menu button:hover{background:rgba(0,0,0,.06)}
-  :root[data-theme="dark"] #navAuth .menu button:hover{background:rgba(255,255,255,.08)}
+  #navAuth .menu button:hover,#navAuth .menu .mi:hover{background:rgba(0,0,0,.06)}
+  :root[data-theme="dark"] #navAuth .menu button:hover,:root[data-theme="dark"] #navAuth .menu .mi:hover{background:rgba(255,255,255,.08)}
   #navAuth .menu button.withdraw{color:#c0282b;font-weight:500;font-size:12.5px;margin-top:2px;border-top:1px solid var(--hair);border-radius:0 0 8px 8px}
   :root[data-theme="dark"] #navAuth .menu button.withdraw{color:#ff8a8c}
   /* 모바일: 헤더 로그인/계정 숨기고 햄버거 메뉴 안으로 */
@@ -256,6 +257,7 @@ function renderLoggedIn(wrap, user){
        <button class="acct-btn" type="button" aria-label="account"><span class="avatar">${initial}</span></button>
        <div class="menu" role="menu">
          <div class="em">${email}</div>
+         <a class="mi" href="billing.html">구독 관리</a>
          <button type="button" class="logout">로그아웃</button>
          <button type="button" class="withdraw">회원 탈퇴</button>
        </div>
@@ -277,7 +279,7 @@ function renderMobileAuth(user){
   if(!el){ el = document.createElement('div'); el.id = 'mAuth'; mm.appendChild(el); }
   if(user){
     const email = user.email || (user.displayName || '');
-    el.innerHTML = `<div class="m-em">${email}</div><button type="button" class="m-logout">로그아웃</button><button type="button" class="m-withdraw">회원 탈퇴</button>`;
+    el.innerHTML = `<div class="m-em">${email}</div><a href="billing.html">구독 관리</a><button type="button" class="m-logout">로그아웃</button><button type="button" class="m-withdraw">회원 탈퇴</button>`;
     el.querySelector('.m-logout').addEventListener('click', async () => { try{ await signOut(auth); }catch(e){} location.href = 'Home.html'; });
     el.querySelector('.m-withdraw').addEventListener('click', deleteAccount);
   } else {
