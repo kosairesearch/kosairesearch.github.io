@@ -43,6 +43,7 @@ PAID_KEYS = (
 # 무료 구간 — 정적 파일로 공개된다(검색 유입·신뢰 확보용).
 FREE_KEYS = (
     "title", "lead", "keypoints", "business", "quant", "sources",
+    "hasPaid", "teaser",          # split() 이 만들어 붙이는 값
     # 메타데이터(화면 표시·정렬에 필요)
     "ticker", "name", "name_en", "sector", "categories", "market",
     "reportDate", "reportTs", "dataDate", "model", "v",
@@ -99,7 +100,85 @@ def split(report):
             paid[k] = v          # 미지의 키 → 보수적으로 유료 처리
     # 프런트가 "유료 구간이 존재하는지" 알아야 잠금 UI를 그린다.
     free["hasPaid"] = bool(paid)
+    # 잠긴 구간의 첫 문장과 분량. 본문이 아니라 '겉모습'이라 무료분에 둔다.
+    if paid:
+        free["teaser"] = teaser(report)
     return free, paid
+
+
+# 잠긴 구간의 '겉모습' — 섹션마다 첫 문장과 남은 분량.
+# 화면 순서는 stock.html renderV2 와 같아야 한다.
+TEASER_ORDER = (
+    ("earnings", "text"), ("industry", "text"), ("outlook", "text"),
+    ("valuation_comment", "text"),
+    ("bull", "factors"), ("bear", "factors"), ("risks", "risks"),
+    ("checkpoints", "checkpoints"), ("verdict", "verdict"),
+)
+
+_SENT = __import__("re").compile(r"([다요죠음함됨임]\.)\s+|([.!?])\s+(?=[A-Z가-힣\"'(])")
+
+
+def _one_line(v):
+    return " ".join(str(v or "").split())
+
+
+def _first_sentence(t):
+    """첫 문장만. 문장 경계는 stock.html splitSentences 와 같은 기준."""
+    t = _one_line(t)
+    m = _SENT.search(t)
+    return t[: m.end()].strip() if m else t
+
+
+def _lang(v, lang):
+    if isinstance(v, dict):
+        return v.get(lang) or v.get("ko") or v.get("en") or ""
+    return v or ""
+
+
+def _flat(v, kind, lang):
+    """섹션 전체를 한 덩이 문자열로 — 분량을 재려는 것뿐이다."""
+    if kind == "text":
+        return _one_line(_lang(v, lang))
+    if kind == "verdict":
+        return _one_line(_lang((v or {}).get("body"), lang))
+    if kind == "factors":
+        return " ".join(_one_line(_lang(f.get("title"), lang) + ": " + _lang(f.get("body"), lang))
+                        for f in (v or []))
+    if kind == "risks":
+        return " ".join(_one_line(_lang(r.get("cat"), lang) + ": " + _lang(r.get("body"), lang))
+                        for r in (v or []))
+    if kind == "checkpoints":
+        return " ".join(_one_line(_lang(c.get("when"), lang) + ": " + _lang(c.get("what"), lang))
+                        for c in (v or []))
+    return ""
+
+
+def teaser(report):
+    """비구독자 화면에 쓸 미리보기 뼈대를 만든다.
+
+    잠금 카드만 덩그러니 두면 무엇을 사는지 알 수가 없다. 그렇다고 본문을
+    내려보내 놓고 CSS 로 흐리게 덮으면, 개발자 도구에서 한 줄 지우면 그대로
+    읽힌다 — 안 판 것과 같다. 그래서 첫 문장만 실제로 주고 나머지는 글자 수만
+    준다. 화면은 그 수만큼 흐린 글자를 깔아 분량을 보여 준다.
+
+    [{"k": 키, "head": {"ko","en"}, "n": 첫 문장을 뺀 남은 글자 수}]
+    """
+    if not is_v2(report):
+        return []
+    out = []
+    for key, kind in TEASER_ORDER:
+        v = report.get(key)
+        if not v:
+            continue
+        ko = _flat(v, kind, "ko")
+        if not ko:
+            continue
+        en = _flat(v, kind, "en")
+        h_ko, h_en = _first_sentence(ko), _first_sentence(en)
+        out.append({"k": key,
+                    "head": {"ko": h_ko, "en": h_en},
+                    "n": max(0, len(ko) - len(h_ko))})
+    return out
 
 
 def unknown_keys(report):
