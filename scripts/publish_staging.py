@@ -52,6 +52,13 @@ def fix(html):
         html = re.sub(rf'((?:src|href)=")({kind}/)', r"\1../\2", html)
         html = re.sub(rf'(url\(")({kind}/)', r"\1../\2", html)
         html = re.sub(rf"((?:fetch\(|url\()')({kind}/)", r"\1../\2", html)
+    # 스테이징에서는 잠금을 기본으로 켠다.
+    # 잠금은 데이터가 정한다 — 리포트 JSON 에 hasPaid 가 붙어야 잠긴다. 그런데
+    # publish_paid.py 를 아직 안 돌려 정적 파일에 전문이 그대로 있고, 스테이징은
+    # 실제 사이트의 data/ 를 함께 쓴다. 그래서 그냥 두면 전부 열려 보인다.
+    # 스테이징은 '출시 후 모습'을 보는 곳이므로 여기서만 강제로 켠다(?paywall=0 이면 해제).
+    html = html.replace("FORCE_LOCK=(qp('paywall')==='1')",
+                        "FORCE_LOCK=(qp('paywall')!=='0')   /* staging: 기본 잠금 */")
     # 검색 노출 금지 — 미완성 화면이 색인되면 실제 페이지와 경쟁한다
     if 'name="robots"' not in html:
         html = html.replace("<head>", '<head>\n<meta name="robots" content="noindex,nofollow" />', 1)
