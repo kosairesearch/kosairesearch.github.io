@@ -92,7 +92,7 @@ body::before{content:"";position:fixed;inset:0;z-index:-1;pointer-events:none;
 :root[data-theme="dark"] .glass{background:rgba(28,30,42,0.62);border-color:rgba(255,255,255,0.10);
   box-shadow:var(--shadow-2),inset 0 1px 0 rgba(255,255,255,0.08)}
 
-.btn{display:inline-flex;align-items:center;justify-content:center;gap:6px;font:600 14px/1 var(--font-sans);
+.btn{text-decoration:none;display:inline-flex;align-items:center;justify-content:center;gap:6px;font:600 14px/1 var(--font-sans);
   border-radius:var(--radius-sm);cursor:pointer;border:0;transition:transform .12s,filter .15s,background .15s;white-space:nowrap}
 .btn:active{transform:scale(.98)}
 .btn-primary{background:#000;color:#fff;padding:11px 16px;box-shadow:var(--shadow-1)}
@@ -1203,14 +1203,27 @@ KOSi18n.register({
   /* 잠금 카드의 버튼 — 로그인 상태에 따라 문구와 동작이 달라진다. */
   function wireLock(){
     var btn=document.getElementById('lockBtn'), err=document.getElementById('lockErr');
+    var lockCardEl=document.getElementById('lockCard');
     if(!btn) return;
     var u=U(), k=u.lock, P=window.KOSPaywall;
     if(!P) return;                       // 모듈이 못 떴으면 링크 그대로(로그인 페이지)
     // render() 는 언어 전환마다 다시 불린다 — 이전 구독 리스너를 떼지 않으면 쌓인다.
     if(_lockOff){ _lockOff(); _lockOff=null; }
     function show(msg){ err.textContent=msg; err.classList.add('show'); }
+    var note=lockCardEl&&lockCardEl.querySelector('.lock-note');
     _lockOff=P.onChange(function(st){
-      btn.textContent = st.active ? k.ctaOpen : k.ctaLogin;
+      /* 상태가 셋이다. 로그인 여부만 보고 문구를 정하면, 로그인한 사람에게
+         '로그인하고 이어보기'가 뜬다. */
+      if(st.active){                       // 구독 중 — 바로 열 수 있다
+        btn.style.display=''; btn.textContent=k.ctaOpen;
+        if(note) note.style.display='none';
+      }else if(st.user){                   // 로그인했지만 구독 없음 —
+        btn.style.display='none';          // '요금제 보기' 하나면 충분하다
+        if(note) note.style.display='none';
+      }else{                               // 비로그인
+        btn.style.display=''; btn.textContent=k.ctaLogin;
+        if(note) note.style.display='';
+      }
       // 구독이 확인되면 누르지 않아도 바로 열어 준다(결제 직후 돌아온 경우).
       if(st.active && !PAID && !btn.dataset.busy) open();
     });
@@ -1222,7 +1235,9 @@ KOSi18n.register({
       btn.dataset.busy='1'; btn.disabled=true; btn.textContent=k.loading;
       try{
         var r=await P.fetchPaid(TK);
-        PAID=r.paid||{};
+        // 빈 응답으로 잠금을 풀면 유료 섹션이 텅 빈 채로 '열린' 화면이 된다.
+        if(!r||!r.paid||!Object.keys(r.paid).length){ var e0=new Error('빈 응답'); e0.code='not-found'; throw e0; }
+        PAID=r.paid;
         Object.keys(PAID).forEach(function(key){ REP[key]=PAID[key]; });
         render();
       }catch(e){
