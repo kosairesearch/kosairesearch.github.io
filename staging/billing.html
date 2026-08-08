@@ -507,7 +507,8 @@ KOSi18n.register({
 })();
 </script>
 <style>
-.bl{display:grid;gap:18px;margin-top:26px;max-width:820px}
+/* 가운데로. margin 을 빼면 1120px 짜리 .wrap 안에서 820px 가 왼쪽에 붙는다. */
+.bl{display:grid;gap:18px;margin:26px auto 0;max-width:820px}
 .bl-card{padding:24px 26px}
 @media(max-width:479px){.bl-card{padding:20px 18px}}
 .bl-card h2{margin:0 0 14px;font:700 17px var(--font-sans);letter-spacing:-.01em}
@@ -538,7 +539,7 @@ KOSi18n.register({
 .hist .st.ok{color:#1f9d57}
 .hist .st.rf{color:var(--fg-3)}
 .hist-wrap{overflow-x:auto;-webkit-overflow-scrolling:touch}
-.bl-empty{padding:40px 26px;text-align:center}
+.bl-empty{margin:26px auto 0;max-width:640px;padding:40px 26px;text-align:center}
 .bl-empty h2{margin:0 0 8px;font:800 21px var(--font-sans);letter-spacing:-.02em}
 .bl-empty p{margin:0 auto 20px;max-width:420px;font:400 15px/1.7 var(--font-sans);color:var(--fg-2);word-break:keep-all}
 .bl-msg{margin:13px 0 0;font:500 13px/1.6 var(--font-sans);color:var(--fg-3)}
