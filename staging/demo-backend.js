@@ -53,7 +53,11 @@ let resolveReady;
 const ready = new Promise((r) => { resolveReady = r; });
 
 function snapshot() {
-  const sub = read(SUB_KEY, null);
+  /* 로그인 없이는 구독도 없다. 서버에서 구독은 subscriptions/{uid} 라 로그인이
+     전제인데, 여기서는 브라우저에 두다 보니 로그인 전에도 '구독 있음'으로 답했다.
+     파이어베이스가 저장된 세션을 되살리는 몇백 밀리초 동안 화면은 '구독은 있는데
+     로그인은 안 된 사람'을 보고, 리포트를 열려다 로그인 페이지로 튕긴다. */
+  const sub = user ? read(SUB_KEY, null) : null;
   const plan = sub ? sub.plan : null;
   return { user, sub, active: activeNow(sub), plan,
            limit: (PLANS[plan] || {}).limit || null, plans: PLANS };
@@ -189,3 +193,6 @@ window.KOSPaywall = {
   onChange(fn) { listeners.add(fn); fn(snapshot()); return () => listeners.delete(fn); },
   fetchPaid,
 };
+
+// 본문이 먼저 그려졌을 수 있다 — 자리를 잡았다고 알린다(paywall.js 와 같은 신호).
+document.dispatchEvent(new Event("kos-paywall-ready"));
