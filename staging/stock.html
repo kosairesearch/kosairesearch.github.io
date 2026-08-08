@@ -314,16 +314,29 @@ table.dt .pos{color:var(--up);font-weight:700}table.dt .neg{color:var(--down);fo
       개발자 도구에서 한 줄 지우면 그대로 읽힌다 — 안 판 것과 같다. 서버가
       주는 건 첫 문장과 남은 글자 수뿐이고, 흐린 부분은 그 수만큼 화면에서
       만들어 낸 무의미한 글자다(scripts/report_split.py teaser). */
-.tz{position:relative;margin-top:8px;height:clamp(520px,62vh,740px);overflow:hidden}
-.tz-body{filter:blur(6px);-webkit-filter:blur(6px);
+/* 잠긴 구간은 잘라 내지 않는다. 분량이 얼마나 되는지 보여 주는 게 목적이라
+   길이를 줄이면 뜻이 사라진다. 대신 뒤로 물러난 배경처럼 크게 뭉개고,
+   안내 카드가 그 위에 선명하게 떠서 스크롤을 따라온다. */
+.tz{position:relative;margin-top:8px}
+.tz-body{filter:blur(11px);-webkit-filter:blur(11px);opacity:.9;
   user-select:none;-webkit-user-select:none;pointer-events:none;
-  -webkit-mask-image:linear-gradient(to bottom,#000 46%,transparent 92%);
-  mask-image:linear-gradient(to bottom,#000 46%,transparent 92%)}
+  /* 흐림이 위아래 경계에서 뚝 끊기지 않게 서서히 배경으로 넘긴다. */
+  -webkit-mask-image:linear-gradient(to bottom,transparent,#000 6%,#000 88%,transparent);
+  mask-image:linear-gradient(to bottom,transparent,#000 6%,#000 88%,transparent)}
 .tz-body .sec{padding-top:0}
-.tz-body p{margin:12px 0 0;font:400 16px/1.9 var(--font-sans);color:var(--fg-2);word-break:break-all}
-/* 안내 카드는 흐린 판 위에 얹는다 — filter 가 걸린 요소 안에 넣으면 카드까지 흐려진다. */
-.tz-lock{position:absolute;left:0;right:0;bottom:14px}
-.tz-lock .lockwrap{margin:0 auto}
+.tz-body p{margin:12px 0 0;font:400 16px/1.9 var(--font-sans);color:var(--fg-1);word-break:break-all}
+/* 좁은 화면은 한 줄에 들어가는 글자가 절반이라 같은 분량이 두 배 길이가 된다.
+   글자를 줄여 그만큼만 되돌린다 — 분량의 비례는 그대로 남는다. */
+@media (max-width:700px){
+  .tz-body p{font-size:12px;line-height:1.75}
+  .tz-body .sec-title{font-size:20px}
+}
+/* 카드는 .tz-body 밖에 둔다 — filter 가 걸린 요소 안에 넣으면 카드까지 흐려진다.
+   sticky 로 화면 가운데쯤에 붙여, 흐린 구간을 훑는 동안 계속 보이게 한다. */
+.tz-lock{position:absolute;left:0;right:0;top:0;bottom:0;pointer-events:none}
+.tz-lock .lockwrap{position:sticky;top:calc(50vh - 130px);margin:0 auto}
+.tz-lock .lock{pointer-events:auto}
+.tz-lock .lock::before{content:none}
 
 /* 유료 구간 잠금 — 미리보기 아래에 놓인다.
    앞 섹션이 잘린 게 아니라 '여기서부터 유료'임을 보여야 하므로,
@@ -1171,7 +1184,7 @@ document.addEventListener('click', function (e) {
       var head=pk(t.head)||'';
       secs++; chars+=head.length+(t.n||0);
       h+=secOpen(pad(n++),meta[0],u.sec[meta[1]]);
-      h+='<div class="prose"><p>'+esc(fillerText(head,Math.max(110,Math.min(t.n||0,240))))+'</p></div>';
+      h+='<div class="prose"><p>'+esc(fillerText(head,Math.max(110,t.n||0)))+'</p></div>';
       h+='</section><hr class="hairline" />';
     });
     // 한국어 묵독은 분당 500자 안팎으로 잡는다.
