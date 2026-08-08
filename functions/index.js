@@ -628,11 +628,14 @@ exports.changePlan = onCall(
       return { ok: true, plan: next, charged: diff };
     }
 
+    // 지금 쓰는 플랜을 다시 고르는 건 '예약 취소'다. 그대로 넣으면 예약이
+    // 남아 화면에 '9월 8일부터 PRO' 같은 말이 계속 붙는다.
+    const pending = next === sub.plan ? null : next;
     await ref.set({
-      pendingPlan: next,
+      pendingPlan: pending,
       updatedAt: admin.firestore.FieldValue.serverTimestamp(),
     }, { merge: true });
-    return { ok: true, pendingPlan: next };
+    return { ok: true, pendingPlan: pending };
   }
 );
 

@@ -154,7 +154,8 @@ async function call(name, arg) {
       sub.plan = next.id; sub.pendingPlan = null;
       pay({ amount: diff, description: `${next.name} 업그레이드 차액 (모의)`, status: "paid", plan: next.id });
     } else {
-      sub.pendingPlan = next.id;      // 다운그레이드는 다음 결제일부터
+      // 다운그레이드는 다음 결제일부터. 지금 쓰는 플랜을 다시 고르면 예약 취소.
+      sub.pendingPlan = next.id === sub.plan ? null : next.id;
     }
   } else if (name === "requestRefund") {
     const total = Math.max(1, (sub.currentPeriodEnd - sub.currentPeriodStart) / 86400e3);

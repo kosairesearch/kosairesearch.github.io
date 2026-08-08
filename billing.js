@@ -36,6 +36,10 @@ const T = {
     cur: "현재 플랜", on: "이용 중", willEnd: "해지 예정", off: "만료됨",
     perMonth: "월", limitRow: "하루 열람 한도", nextRow: "다음 결제일", endRow: "이용 종료일",
     startRow: "구독 시작일", amountRow: "결제 금액", cards: "개",
+    pendRow: "예정된 변경", pendVal: "{d}부터 {p}",
+    undoPlan: "변경 취소",
+    dlgUndoT: "플랜 변경을 취소하시겠습니까?",
+    dlgUndoB: "{date} 이후에도 {p} 플랜이 그대로 유지됩니다.",
     pay: "결제 수단", noCard: "등록된 카드가 없습니다.", changeCard: "카드 변경",
     upgrade: "PRO로 업그레이드", downgrade: "BASIC으로 변경",
     cancel: "구독 해지", resume: "해지 취소", refund: "환불 신청",
@@ -59,7 +63,9 @@ const T = {
     dlgRefundB: "환불이 완료되면 유료 플랜 이용 권한이 즉시 종료됩니다. 환불 금액은 열람 여부와 이용 일수에 따라 산정됩니다.",
     yes: "확인", no: "취소",
     okCancel: "해지 예약이 완료되었습니다.", okResume: "해지가 취소되었습니다.",
-    okPlan: "플랜이 변경되었습니다.", okRefund: "환불 신청이 접수되었습니다.",
+    okUp: "{p} 플랜이 바로 적용되었습니다.",
+    okDown: "{d}부터 {p} 플랜으로 변경됩니다.",
+    okUndo: "플랜 변경이 취소되었습니다.", okRefund: "환불 신청이 접수되었습니다.",
     fail: "처리에 실패했습니다. 잠시 후 다시 시도해 주세요.",
   },
   en: {
@@ -68,6 +74,10 @@ const T = {
     cur: "Current plan", on: "Active", willEnd: "Ends soon", off: "Expired",
     perMonth: "mo", limitRow: "Daily limit", nextRow: "Next charge", endRow: "Access until",
     startRow: "Started", amountRow: "Amount", cards: "",
+    pendRow: "Scheduled change", pendVal: "{p} from {d}",
+    undoPlan: "Undo change",
+    dlgUndoT: "Undo the scheduled change?",
+    dlgUndoB: "You stay on {p} after {date}.",
     pay: "Payment method", noCard: "No card registered.", changeCard: "Change card",
     upgrade: "Upgrade to PRO", downgrade: "Switch to BASIC",
     cancel: "Cancel subscription", resume: "Keep subscription", refund: "Request refund",
@@ -91,7 +101,9 @@ const T = {
     dlgRefundB: "Your paid plan ends as soon as the refund is processed. The amount depends on whether you opened reports and how many days you used.",
     yes: "Confirm", no: "Cancel",
     okCancel: "Your subscription will end at the period end.", okResume: "Your subscription continues.",
-    okPlan: "Your plan has been changed.", okRefund: "Your refund request has been received.",
+    okUp: "You are on {p} as of now.",
+    okDown: "You move to {p} on {d}.",
+    okUndo: "The scheduled change has been cancelled.", okRefund: "Your refund request has been received.",
     fail: "Something went wrong. Please try again shortly.",
   },
 };
@@ -129,12 +141,17 @@ function view(st, payments) {
   const card = sub.card || null;
   const other = sub.plan === "pro" ? PLANS.basic : PLANS.pro;
 
+  /* 다운그레이드는 다음 결제일부터라 지금 화면에는 아무것도 안 바뀐다.
+     예약된 걸 어디에도 안 적어 두면, 확인을 눌러도 아무 일도 안 일어난 것처럼 보인다. */
+  const pend = sub.pendingPlan && sub.pendingPlan !== sub.plan ? planOf(sub.pendingPlan) : null;
+
   const rows = [
     [k.amountRow, `${won(plan.price, EN())} / ${k.perMonth}`],
     [k.limitRow, `${plan.limit}${k.cards}`],
     [sub.cancelAtPeriodEnd ? k.endRow : k.nextRow, endDay],
+    pend ? [k.pendRow, k.pendVal.replace("{d}", endDay).replace("{p}", pend.name)] : null,
     [k.startRow, fmtDay(sub.startedAt, EN())],
-  ].filter((r) => r[1]);
+  ].filter((r) => r && r[1]);
 
   const hist = payments.length
     ? `<div class="hist-wrap"><table class="hist"><thead><tr>
@@ -162,8 +179,8 @@ function view(st, payments) {
       </div>
       <ul class="bl-rows">${rows.map((r) => `<li><span>${esc(r[0])}</span><b>${esc(r[1])}</b></li>`).join("")}</ul>
       <div class="bl-acts">
-        <button type="button" class="btn btn-soft" data-act="plan" data-to="${esc(other.id)}">
-          ${esc(sub.plan === "pro" ? k.downgrade : k.upgrade)}</button>
+        <button type="button" class="btn btn-soft" data-act="plan" data-to="${esc(pend ? sub.plan : other.id)}">
+          ${esc(pend ? k.undoPlan : sub.plan === "pro" ? k.downgrade : k.upgrade)}</button>
         ${sub.cancelAtPeriodEnd
           ? `<button type="button" class="btn btn-primary" data-act="resume">${esc(k.resume)}</button>`
           : `<button type="button" class="btn btn-soft" data-act="cancel">${esc(k.cancel)}</button>`}
@@ -193,15 +210,22 @@ function view(st, payments) {
   wire(st);
 }
 
+/* 처리 결과 문구. 화면 밖에 들고 있어야 한다 — 구독 문서가 바뀌면 화면이 통째로
+   다시 그려지는데, 그리기 전에 써 둔 글자는 떨어져 나간 옛 DOM 에 남는다.
+   그래서 확인을 눌러도 아무 말도 안 뜨는 것처럼 보였다. */
+let flash = null;
+
 function wire(st) {
   const k = t(), msg = document.getElementById("blMsg");
   const sub = st.sub || {};
   const endDay = fmtDay(sub.currentPeriodEnd, EN());
   const show = (text, err) => { msg.className = "bl-msg" + (err ? " err" : ""); msg.textContent = text; };
+  if (flash) show(flash.text, flash.err);
 
   root.querySelectorAll("[data-act]").forEach((btn) => {
     btn.addEventListener("click", async () => {
       const act = btn.dataset.act;
+      flash = null;
       let ok = false, fn = null, arg = null, done = "";
       if (act === "cancel") {
         ok = await ask(k.dlgCancelT, k.dlgCancelB.replace("{date}", endDay));
@@ -212,18 +236,30 @@ function wire(st) {
         ok = await ask(k.dlgRefundT, k.dlgRefundB);
         fn = "requestRefund"; done = k.okRefund;
       } else if (act === "plan") {
-        const up = btn.dataset.to === "pro";
-        ok = await ask(up ? k.dlgUpT : k.dlgDownT,
-          up ? k.dlgUpB : k.dlgDownB.replace("{date}", endDay));
-        fn = "changePlan"; arg = { plan: btn.dataset.to }; done = k.okPlan;
+        const to = planOf(btn.dataset.to) || {};
+        const undo = btn.dataset.to === sub.plan;
+        const up = !undo && (to.price || 0) > (planOf(sub.plan) || {}).price;
+        if (undo) {
+          ok = await ask(k.dlgUndoT, k.dlgUndoB.replace("{date}", endDay).replace("{p}", to.name || ""));
+          done = k.okUndo;
+        } else if (up) {
+          ok = await ask(k.dlgUpT, k.dlgUpB);
+          done = k.okUp.replace("{p}", to.name || "");
+        } else {
+          ok = await ask(k.dlgDownT, k.dlgDownB.replace("{date}", endDay));
+          done = k.okDown.replace("{d}", endDay).replace("{p}", to.name || "");
+        }
+        fn = "changePlan"; arg = { plan: btn.dataset.to };
       }
       if (!ok) return;
       root.querySelectorAll("[data-act]").forEach((b) => { b.disabled = true; });
       show("");
       try {
         await call(fn, arg);
-        show(done, false);
-        // subscriptions 문서를 실시간으로 보고 있으므로 곧 화면이 새로 그려진다.
+        // 화면은 구독 문서가 바뀌면 저절로 다시 그려진다. 결과 문구는 flash 에
+        // 담아 두고 한 번 더 그려, 그 사이에 지워지지 않게 한다.
+        flash = { text: done, err: false };
+        if (repaint) repaint(); else show(done, false);
       } catch (e) {
         console.error("[billing]", fn, e);
         show(e.message || k.fail, true);
