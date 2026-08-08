@@ -8,6 +8,10 @@
         서버가 빌링키를 발급하고 첫 결제를 승인한 뒤 subscriptions/{uid} 를 쓴다
      4) 구독 관리 페이지로 이동
 
+   ?method=1 이면 '카드만 바꾸기'다. 이용 중인 사람도 들어온다 — 카드가 만료되면
+   바꿀 데가 있어야 하고, 갱신이 실패해 멈춘 구독도 여기서 되살아난다. 이때는
+   결제하지 않는다(서버 confirmBilling 의 updateMethod).
+
    금액은 여기서 정하지 않는다. 클라이언트가 보낸 금액을 믿으면 9,900원짜리를
    100원에 파는 요청을 만들 수 있다. 서버가 plan 만 받아 자기 표에서 금액을 읽는다.
    ============================================================ */
@@ -53,6 +57,16 @@ const T = {
     errOpen: "결제창을 열지 못했습니다. 잠시 후 다시 시도해 주세요.",
     errConfirm: "결제 확인에 실패했습니다. 카드사 승인 내역을 확인하신 뒤 다시 시도해 주세요.",
     done: "구독이 시작되었습니다",
+    mStep: "새 결제 수단",
+    mDesc: "새로 등록하신 카드로 다음 결제일부터 자동 결제됩니다. 지금 결제되는 금액은 없습니다.",
+    mDue: "지난 정기결제가 처리되지 않았습니다. 카드를 등록하시면 즉시 결제되고 이용이 이어집니다.",
+    mBtn: "카드 등록하기",
+    mAgree: "등록하는 카드로 매월 자동 결제되는 것에 동의합니다. (필수)",
+    mFine: '기존에 등록된 카드는 새 카드로 대체됩니다. 구독은 <a href="billing.html">구독 관리</a>에서 언제든지 해지하실 수 있습니다.',
+    mSum: "현재 이용 중인 플랜", mCurCard: "현재 카드", mNoSub: "이용 중인 구독이 없습니다",
+    mH1: "결제 수단 변경", mH2: "새 카드를 등록하시면 다음 결제부터 새 카드로 청구됩니다.",
+    mNow: "지금 결제되는 금액",
+    mNoSubD: "결제 수단은 구독을 시작하신 뒤에 바꾸실 수 있습니다.",
   },
   en: {
     step1: "Order", step2: "Payment method", step3: "Agreements",
@@ -77,6 +91,16 @@ const T = {
     errOpen: "Could not open the payment window. Please try again shortly.",
     errConfirm: "We could not confirm the payment. Check your card statement and try again.",
     done: "Your subscription has started",
+    mStep: "New payment method",
+    mDesc: "Your new card will be charged from the next billing date. Nothing is charged now.",
+    mDue: "Your last renewal did not go through. Register a card and it is charged right away so your access continues.",
+    mBtn: "Register card",
+    mAgree: "I agree to recurring monthly charges to the card I register. (required)",
+    mFine: 'The card on file is replaced by the new one. You can cancel anytime on the <a href="billing.html">subscription page</a>.',
+    mSum: "Current plan", mCurCard: "Card on file", mNoSub: "No active subscription",
+    mH1: "Change payment method", mH2: "Register a new card and it is charged from your next billing date.",
+    mNow: "Charged now",
+    mNoSubD: "You can change your payment method once a subscription has started.",
   },
 };
 const t = () => (EN() ? T.en : T.ko);
@@ -142,15 +166,55 @@ function form(plan) {
   </div>`;
 }
 
-function wireForm(plan, user) {
+/* 카드만 바꾸는 화면. 금액 요약도, 청약철회 안내도 없다 — 지금 결제되는 돈이
+   없으니 그 자리에 금액을 띄우면 거짓말이 된다. */
+function methodForm(plan, sub) {
   const k = t();
+  const due = sub && sub.status === "past_due";
+  const cardNow = (sub && sub.card) || null;
+  return `
+  <div class="co">
+    <section class="co-card glass">
+      <div class="co-step"><span class="n">1</span><h3>${esc(k.mStep)}</h3></div>
+      <p class="co-fine" style="margin-top:0">${esc(due ? k.mDue : k.mDesc)}</p>
+      <div class="pm">
+        <label>
+          <input type="radio" name="pm" value="card" checked />
+          <span class="card"><span><span class="t">${esc(k.card)}</span><span class="d">${esc(k.cardD)}</span></span></span>
+        </label>
+      </div>
+      <div class="agree">
+        <label><input type="checkbox" class="ag" /><span>${esc(k.mAgree)}</span></label>
+      </div>
+      <button type="button" class="btn btn-primary co-btn" id="payBtn">${esc(k.mBtn)}</button>
+      <p class="co-msg" id="coMsg"></p>
+      <p class="co-fine">${k.mFine}</p>
+    </section>
+
+    <aside class="sum glass">
+      <span class="plan-badge">${esc(plan.name)}</span>
+      <div class="amt">${esc(won(0, EN()))}</div>
+      <div class="cyc">${esc(k.mNow)}</div>
+      <ul>
+        <li><span>${esc(k.mSum)}</span><b>${esc(plan.name)}</b></li>
+        ${cardNow ? `<li><span>${esc(k.mCurCard)}</span><b>${esc(cardNow.number || cardNow.company || "")}</b></li>` : ""}
+      </ul>
+    </aside>
+  </div>`;
+}
+
+function wireForm(plan, user, opts) {
+  const k = t();
+  const method = !!(opts && opts.method);
   const all = document.getElementById("agAll");
   const boxes = [...document.querySelectorAll(".agree .ag")];
   const btn = document.getElementById("payBtn");
   const msg = document.getElementById("coMsg");
-  const sync = () => { all.checked = boxes.every((b) => b.checked); };
-  all.addEventListener("change", () => { boxes.forEach((b) => { b.checked = all.checked; }); });
-  boxes.forEach((b) => b.addEventListener("change", sync));
+  if (all) {
+    const sync = () => { all.checked = boxes.every((b) => b.checked); };
+    all.addEventListener("change", () => { boxes.forEach((b) => { b.checked = all.checked; }); });
+    boxes.forEach((b) => b.addEventListener("change", sync));
+  }
 
   btn.addEventListener("click", async () => {
     msg.className = "co-msg";
@@ -165,6 +229,7 @@ function wireForm(plan, user) {
       back.searchParams.set("plan", plan.id);
       const fail = new URL(TOSS.failPath, location.href);
       fail.searchParams.set("plan", plan.id);
+      if (method) { back.searchParams.set("method", "1"); fail.searchParams.set("method", "1"); }
       await payment.requestBillingAuth({
         method: "CARD",
         successUrl: back.toString(),
@@ -182,17 +247,19 @@ function wireForm(plan, user) {
 }
 
 /* 결제창에서 돌아왔을 때 — 빌링키 발급과 첫 결제는 서버가 한다. */
-async function confirm(authKey, customerKey, planId) {
+async function confirm(authKey, customerKey, planId, method) {
   const k = t();
   busy(k.confirming);
   try {
     const fns = getFunctions(app, SOCIAL.functionsRegion || "asia-northeast3");
-    await httpsCallable(fns, "confirmBilling")({ authKey, customerKey, plan: planId });
-    location.replace("billing.html?welcome=1");
+    await httpsCallable(fns, "confirmBilling")(
+      { authKey, customerKey, plan: planId, updateMethod: method || undefined });
+    location.replace(method ? "billing.html?card=1" : "billing.html?welcome=1");
   } catch (e) {
     console.error("[checkout] confirmBilling", e);
+    const again = "checkout.html?plan=" + encodeURIComponent(planId) + (method ? "&method=1" : "");
     state(k.failTitle, e.message || k.errConfirm,
-      `<a class="btn btn-primary" href="checkout.html?plan=${encodeURIComponent(planId)}">${esc(k.pay)}</a>`);
+      `<a class="btn btn-primary" href="${again}">${esc(method ? k.mBtn : k.pay)}</a>`);
   }
 }
 
@@ -202,15 +269,17 @@ if (window.KOSi18n) window.KOSi18n.register(null, () => { if (repaint) repaint()
 
 (async function main() {
   const k = t();
+  const method = qp("method") === "1";
   const planId = String(qp("plan") || "").toLowerCase();
   const plan = planOf(planId);
+  const here = "checkout.html?plan=" + planId + (method ? "&method=1" : "");
   if (!plan) { state(k.badPlan, k.badPlanD, `<a class="btn btn-primary" href="pricing.html">${esc(k.toPricing)}</a>`); return; }
 
   // 결제창 실패로 돌아온 경우
   const failCode = qp("code");
   if (failCode) {
     state(k.failTitle, qp("message") || k.errOpen,
-      `<a class="btn btn-primary" href="checkout.html?plan=${encodeURIComponent(plan.id)}">${esc(k.pay)}</a>`);
+      `<a class="btn btn-primary" href="${esc(here)}">${esc(method ? k.mBtn : k.pay)}</a>`);
     return;
   }
 
@@ -218,14 +287,38 @@ if (window.KOSi18n) window.KOSi18n.register(null, () => { if (repaint) repaint()
   const st = await window.KOSPaywall.ready;
 
   const authKey = qp("authKey"), customerKey = qp("customerKey");
-  if (authKey && customerKey) { await confirm(authKey, customerKey, plan.id); return; }
+  if (authKey && customerKey) { await confirm(authKey, customerKey, plan.id, method); return; }
 
   if (!isConfigured) { state(k.notReady, k.notReadyD, `<a class="btn btn-primary" href="pricing.html">${esc(k.toPricing)}</a>`); return; }
   if (!st.user) {
     state(k.needLogin, k.needLoginD,
-      `<a class="btn btn-primary" href="Login.html?next=${encodeURIComponent("checkout.html?plan=" + plan.id)}">${esc(k.login)}</a>`);
+      `<a class="btn btn-primary" href="Login.html?next=${encodeURIComponent(here)}">${esc(k.login)}</a>`);
     return;
   }
+
+  /* 카드 변경은 '이미 구독 중'이 정상이다. 구독이 아예 없을 때만 돌려보낸다.
+     결제가 밀려 멈춘(past_due) 구독도 여기로 와야 카드를 바꿔 되살릴 수 있다. */
+  if (method) {
+    if (!st.sub) { state(k.mNoSub, k.mNoSubD, `<a class="btn btn-primary" href="pricing.html">${esc(k.toPricing)}</a>`); return; }
+    if (!payReady) { state(k.notReady, k.notReadyD, `<a class="btn btn-primary" href="billing.html">${esc(k.toBilling)}</a>`); return; }
+    const cur = planOf(st.sub.plan) || plan;
+    /* 머리말이 '구독 시작하기'로 남아 있으면 카드만 바꾸러 온 사람이 또 결제되는
+       줄 안다. i18n 엔진은 한국어 원문을 열쇠로 쓰므로 여기서 두 언어를 다 쓴다. */
+    const head = (kk) => {
+      const h1 = document.getElementById("coH1"), h2 = document.getElementById("coH2");
+      if (h1) { h1.textContent = kk.mH1; h1.setAttribute("data-i18n-skip", ""); }
+      if (h2) { h2.textContent = kk.mH2; h2.setAttribute("data-i18n-skip", ""); }
+    };
+    repaint = () => {
+      const kk = t();
+      head(kk);
+      app_.innerHTML = methodForm(cur, st.sub);
+      wireForm(cur, st.user, { method: true });
+    };
+    repaint();
+    return;
+  }
+
   if (st.active) {
     const cur = PLANS[st.plan] ? PLANS[st.plan].name : String(st.plan || "").toUpperCase();
     state(k.already, k.alreadyD.replace("{plan}", cur),

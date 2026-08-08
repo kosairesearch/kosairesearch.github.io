@@ -1199,11 +1199,13 @@ KOSi18n.register({
   function wireLock(){
     var btn=document.getElementById('lockBtn'), err=document.getElementById('lockErr');
     var lockCardEl=document.getElementById('lockCard');
+    // render() 는 언어 전환마다, 그리고 잠금이 풀릴 때마다 다시 불린다.
+    // 이전 구독 리스너를 먼저 떼야 한다 — 잠금이 풀려 버튼이 사라진 판(!btn)에서
+    // 그냥 돌아가면 사라진 DOM 을 붙든 리스너가 남는다.
+    if(_lockOff){ _lockOff(); _lockOff=null; }
     if(!btn) return;
     var u=U(), k=u.lock, P=window.KOSPaywall;
     if(!P) return;                       // 모듈이 못 떴으면 링크 그대로(로그인 페이지)
-    // render() 는 언어 전환마다 다시 불린다 — 이전 구독 리스너를 떼지 않으면 쌓인다.
-    if(_lockOff){ _lockOff(); _lockOff=null; }
     function show(msg,isHtml){ err[isHtml?'innerHTML':'textContent']=msg; err.classList.add('show'); }
     var note=lockCardEl&&lockCardEl.querySelector('.lock-note');
     _lockOff=P.onChange(function(st){

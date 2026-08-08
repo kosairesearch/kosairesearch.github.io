@@ -541,6 +541,31 @@ exports.confirmBilling = onCall(
     const db = admin.firestore();
     const ref = db.doc(`subscriptions/${uid}`);
     const cur = (await ref.get()).data() || null;
+
+    /* 카드만 바꾸는 경우. 이용 중인 사람도 여기로 온다 — 아래 '이미 구독 중'에서
+       막아 버리면 카드가 만료됐을 때 바꿀 길이 없어진다. 결제는 하지 않는다.
+       여기서 또 받으면 이중 청구다. */
+    if (req.data && req.data.updateMethod) {
+      if (!cur) throw new HttpsError("failed-precondition", "이용 중인 구독이 없습니다.");
+      const re = await toss("/billing/authorizations/issue", { authKey, customerKey });
+      const card = { company: (re.card && re.card.issuerCode) || "", number: (re.card && re.card.number) || "" };
+      const patch = { billingKey: re.billingKey, customerKey, card,
+                      updatedAt: admin.firestore.FieldValue.serverTimestamp() };
+      // 갱신 결제가 실패해 멈춰 있던 구독이라면, 새 카드로 바로 받아 되살린다.
+      // 카드만 갈아 끼우고 끝내면 다음 배치가 돌 때까지 하루를 잠긴 채로 둔다.
+      if (cur.status === "past_due") {
+        const at = new Date();
+        const pay = await charge(db, uid, { ...cur, ...patch, plan: cur.plan },
+          PRICE[cur.plan], `${PLAN_NAME[cur.plan]} 월 구독`, "retry");
+        patch.status = "active";
+        patch.currentPeriodStart = admin.firestore.Timestamp.fromDate(at);
+        patch.currentPeriodEnd = admin.firestore.Timestamp.fromDate(addMonth(at));
+        patch.lastPaymentKey = pay ? pay.paymentKey : null;
+      }
+      await ref.set(patch, { merge: true });
+      return { ok: true, plan: cur.plan, updated: true };
+    }
+
     if (subActive(cur) && !cur.cancelAtPeriodEnd) {
       throw new HttpsError("already-exists", "이미 이용 중인 구독이 있습니다.");
     }

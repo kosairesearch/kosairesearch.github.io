@@ -32,6 +32,7 @@ const call = (n, d) => httpsCallable(fns, n)(d || {});
 const T = {
   ko: {
     welcome: "구독이 시작되었습니다. 이제 모든 리포트를 전문으로 보실 수 있습니다.",
+    cardOk: "결제 수단이 변경되었습니다. 다음 결제부터 새 카드로 청구됩니다.",
     cur: "현재 플랜", on: "이용 중", willEnd: "해지 예정", off: "만료됨",
     perMonth: "월", limitRow: "하루 열람 한도", nextRow: "다음 결제일", endRow: "이용 종료일",
     startRow: "구독 시작일", amountRow: "결제 금액", cards: "개",
@@ -63,6 +64,7 @@ const T = {
   },
   en: {
     welcome: "Your subscription is active. Every report is now open in full.",
+    cardOk: "Your payment method has been updated. The new card is charged from the next cycle.",
     cur: "Current plan", on: "Active", willEnd: "Ends soon", off: "Expired",
     perMonth: "mo", limitRow: "Daily limit", nextRow: "Next charge", endRow: "Access until",
     startRow: "Started", amountRow: "Amount", cards: "",
@@ -149,7 +151,9 @@ function view(st, payments) {
 
   root.innerHTML = `
   <div class="bl">
-    ${qp("welcome") ? `<div class="bl-card glass"><p style="margin:0;font:600 15px/1.6 var(--font-sans)">${esc(k.welcome)}</p></div>` : ""}
+    ${qp("welcome") || qp("card")
+      ? `<div class="bl-card glass"><p style="margin:0;font:600 15px/1.6 var(--font-sans)">${esc(qp("card") ? k.cardOk : k.welcome)}</p></div>`
+      : ""}
 
     <section class="bl-card glass">
       <div class="bl-top">
@@ -266,7 +270,7 @@ if (window.KOSi18n) window.KOSi18n.register(null, () => { if (repaint) repaint()
       const plan = st.sub.plan || "basic";
       if (st.sub.status === "past_due") {
         empty(k.dueT, k.dueD,
-          `<a class="btn btn-primary" href="checkout.html?plan=${esc(plan)}">${esc(k.changeCard)}</a>`);
+          `<a class="btn btn-primary" href="checkout.html?plan=${esc(plan)}&amp;method=1">${esc(k.changeCard)}</a>`);
       } else {
         empty(k.endedT, k.endedD, `<a class="btn btn-primary" href="pricing.html">${esc(k.toPricing)}</a>`);
       }
