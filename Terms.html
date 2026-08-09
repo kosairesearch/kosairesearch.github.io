@@ -59,7 +59,7 @@ body::before{content:"";position:fixed;inset:0;z-index:-1;pointer-events:none;
   background-image:linear-gradient(to right, rgba(255,255,255,.06) 1px, transparent 1px),linear-gradient(to bottom, rgba(255,255,255,.06) 1px, transparent 1px);background-size:48px 48px}
 .glass{background:rgba(255,255,255,0.62);border:1px solid rgba(255,255,255,0.55);box-shadow:var(--shadow-2),inset 0 1px 0 rgba(255,255,255,0.6);-webkit-backdrop-filter:blur(20px);backdrop-filter:blur(20px);border-radius:var(--radius-xl)}
 :root[data-theme="dark"] .glass{background:rgba(28,30,42,0.62);border-color:rgba(255,255,255,0.10);box-shadow:var(--shadow-2),inset 0 1px 0 rgba(255,255,255,0.08)}
-.btn{text-decoration:none;display:inline-flex;align-items:center;justify-content:center;gap:6px;font:600 15px/1 var(--font-sans);border-radius:var(--radius-sm);cursor:pointer;border:0;transition:transform .12s,filter .15s;white-space:nowrap}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:6px;font:600 15px/1 var(--font-sans);border-radius:var(--radius-sm);cursor:pointer;border:0;transition:transform .12s,filter .15s;white-space:nowrap}
 .btn:active{transform:scale(.98)}
 .btn-primary{background:#000;color:#fff;padding:14px 20px;box-shadow:var(--shadow-1)}
 .btn-primary:hover{filter:brightness(1.1)}
@@ -74,10 +74,6 @@ body::before{content:"";position:fixed;inset:0;z-index:-1;pointer-events:none;
 .nav-links a{font:500 14px var(--font-sans);color:var(--fg-2);text-decoration:none;padding:8px 13px;border-radius:var(--radius-sm);transition:.15s;white-space:nowrap}
 .nav-links a:hover{color:var(--fg-1);background:rgba(0,0,0,.05)}
 :root[data-theme="dark"] .nav-links a:hover{background:rgba(255,255,255,.08)}
-/* 현재 페이지 표시. 이 규칙이 없으면 class="active" 를 달아도 아무 일이 없다 —
-   실제로 멤버십 페이지가 그랬다. */
-.nav-links a.active{color:var(--fg-1);background:rgba(0,0,0,.07);font-weight:600}
-:root[data-theme="dark"] .nav-links a.active{background:rgba(255,255,255,.10)}
 .nav-spacer{flex:1}
 .icon-btn{width:38px;height:38px;border-radius:var(--radius-sm);border:0;background:transparent;display:inline-flex;align-items:center;justify-content:center;cursor:pointer;color:var(--fg-2);transition:.15s}
 .icon-btn:hover{background:rgba(0,0,0,.06);color:var(--fg-1)}
@@ -89,8 +85,6 @@ body::before{content:"";position:fixed;inset:0;z-index:-1;pointer-events:none;
 .mobile-menu a{font:600 16px var(--font-sans);color:var(--fg-1);text-decoration:none;padding:13px 14px;border-radius:var(--radius-sm)}
 .mobile-menu a:hover{background:rgba(0,0,0,.06)}
 :root[data-theme="dark"] .mobile-menu a:hover{background:rgba(255,255,255,.08)}
-.mobile-menu a.active{background:rgba(0,0,0,.06)}
-:root[data-theme="dark"] .mobile-menu a.active{background:rgba(255,255,255,.08)}
 
 .crumb{font:500 13px var(--font-sans);color:var(--fg-3);padding-top:28px;margin-bottom:12px}
 .crumb a{color:var(--fg-3);text-decoration:none}.crumb a:hover{color:var(--fg-1)}
@@ -131,8 +125,6 @@ main{flex:1;padding:8px 0 64px}
 .disclaimer{margin-top:28px;padding:16px 18px;border-radius:var(--radius-md);background:rgba(0,0,0,.04);border:1px solid var(--border-2);font:400 13px/1.6 var(--font-sans);color:var(--fg-2)}
 :root[data-theme="dark"] .disclaimer{background:rgba(255,255,255,.04)}
 .disclaimer b{color:var(--fg-1)}
-.biz{display:flex;flex-wrap:wrap;gap:6px 18px;margin-top:18px;padding-top:16px;border-top:1px solid var(--border-2);font:500 12px/1.7 var(--font-sans);color:var(--fg-3)}
-.biz b{font-weight:600;color:var(--fg-2)}
 .foot-bottom{display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap;margin-top:22px;padding-top:18px;border-top:1px solid var(--border-2);font:500 12px var(--font-sans);color:var(--fg-3)}
 
 @media (min-width:768px){:root{--pad:24px}}
@@ -355,7 +347,7 @@ KOSi18n.register({
   "스크리너":"Screener",
   "업종별":"Industries",
   "리포트":"Reports",
-  "워치리스트":"Watchlist","상호":"Company","대표":"CEO","사업자등록번호":"Business Reg. No.","통신판매업 신고":"Mail-order Reg. No.","주소":"Address","대표전화":"Phone","전자우편":"Email","요금제":"Pricing","멤버십":"Pricing",
+  "워치리스트":"Watchlist",
   // footer headings
   "서비스":"Services",
   "회사":"Company",
@@ -434,7 +426,6 @@ KOSi18n.register({
     <a href="industry.html">업종별</a>
     <a href="Screener.html">스크리너</a>
     <a href="Watchlist.html">워치리스트</a>
-    <a href="pricing.html">멤버십</a>
   </div>
   <div class="nav-spacer"></div>
   <button class="icon-btn" id="themeBtn" aria-label="테마 전환" title="라이트/다크 전환">
@@ -450,7 +441,6 @@ KOSi18n.register({
   <a href="industry.html">업종별</a>
   <a href="Screener.html">스크리너</a>
   <a href="Watchlist.html">워치리스트</a>
-  <a href="pricing.html">멤버십</a>
 </div>
 
 <div class="wrap" data-screen-label="09 Contact">
@@ -499,17 +489,10 @@ KOSi18n.register({
       <p>회사가 회원에게 통지를 하는 경우, 회원이 등록한 전자우편 주소 또는 서비스 내 알림 등을 통해 할 수 있습니다.</p>
 
       <h2>제9조 (유료·구독 서비스 및 결제)</h2>
-      <p>서비스는 무료 구간과 유료 구독으로 나뉩니다. 종목의 핵심 지표, 리포트 개요, 사업 구조, 실적 추이, 참고 출처는 모든 이용자에게 무료로 제공되며, 실적 분석·산업 분석·전망·밸류에이션 해설·강세 및 약세 요인·리스크 요인·체크포인트·종합 의견은 유료 구독자에게 제공됩니다.</p>
-      <p>구독 요금은 BASIC 월 9,900원, PRO 월 14,900원이며 부가가치세가 포함된 금액입니다. 하루에 열람하실 수 있는 리포트는 BASIC 5개, PRO 15개이며, 같은 종목을 다시 열람하시는 경우에는 차감되지 않습니다. 한도는 매일 자정(한국 시간)에 초기화됩니다.</p>
-      <p>요금은 회원이 등록한 결제 수단으로 매월 같은 날짜에 자동으로 청구됩니다. 회사가 요금을 변경하는 경우 적용일 최소 30일 전에 전자우편 또는 서비스 내 알림으로 고지하며, 기존 구독자에게 사전 고지 없이 인상된 요금을 청구하지 않습니다.</p>
-      <p>회원은 구독 관리 페이지에서 언제든지 해지하실 수 있습니다. 해지하시면 다음 결제일부터 청구되지 않으며, 이미 결제하신 이용 기간이 종료될 때까지는 서비스를 그대로 이용하실 수 있습니다.</p>
+      <p>서비스는 현재 무료로 제공됩니다. 회사는 향후 일부 기능을 유료 또는 구독 형태로 전환할 수 있으며, 이 경우 요금·결제 수단·이용 조건 등을 사전에 고지하고 이용자의 동의를 받습니다.</p>
 
       <h2>제10조 (청약철회 및 환불)</h2>
-      <p>이용자는 「전자상거래 등에서의 소비자보호에 관한 법률」에 따라 결제일부터 7일 이내에 청약을 철회할 수 있습니다. 다만 같은 법 제17조 제2항에 따라 디지털 콘텐츠의 제공이 개시된 경우에는 청약철회가 제한될 수 있으며, 이 경우에도 아래 기준에 따라 잔여 이용 기간에 해당하는 금액을 환불합니다.</p>
-      <p>유료 리포트를 열람하지 않으신 경우, 결제 후 7일 이내에는 전액을 환불합니다. 7일이 지난 경우에는 잔여 이용 기간에 해당하는 금액에서 서비스 수수료 10%를 공제한 금액을 환불합니다.</p>
-      <p>유료 리포트를 열람하신 경우에는 이용하신 일수에 해당하는 금액을 공제하고, 남은 금액에서 서비스 수수료 10%를 공제한 금액을 환불합니다. 서비스 수수료는 「방문판매 등에 관한 법률」이 정한 위약금의 범위 내에서 산정합니다.</p>
-      <p>환불은 구독 관리 페이지에서 직접 신청하실 수 있으며, 환불이 완료되면 유료 구독 이용 권한은 즉시 종료됩니다. 환불 금액은 결제하신 수단으로 지급되며, 카드 결제의 경우 카드사의 처리 일정에 따라 영업일 기준 3일에서 5일이 소요될 수 있습니다.</p>
-      <p>회사의 귀책사유로 서비스를 이용하지 못한 경우에는 해당 기간에 해당하는 금액을 수수료 공제 없이 환불합니다.</p>
+      <p>유료 서비스가 도입되는 경우, 이용자는 「전자상거래 등에서의 소비자보호에 관한 법률」에 따라 계약일 또는 이용 가능일부터 7일 이내에 청약을 철회할 수 있습니다. 다만 디지털 콘텐츠의 제공이 개시된 경우 등 같은 법 제17조에서 정한 사유에 해당할 때에는 청약철회가 제한될 수 있습니다. 구체적인 환불 기준과 절차는 유료 서비스 도입 시 별도로 정하여 고지합니다.</p>
 
       <h2>제11조 (회사의 의무)</h2>
       <p>회사는 관련 법령과 이 약관이 금지하는 행위를 하지 않으며, 안정적인 서비스 제공을 위해 노력합니다. 회사는 이용자의 개인정보를 개인정보처리방침에 따라 보호합니다.</p>
@@ -554,20 +537,11 @@ KOSi18n.register({
     <div class="foot-inner glass">
       <div class="foot-grid">
         <div class="foot-brand"><a class="brand" href="Home.html"><img class="brand-logo brand-logo--light" src="assets/kosai-wordmark-black.png" alt="KOSAI" width="148" height="24"><img class="brand-logo brand-logo--dark" src="assets/kosai-wordmark-white.png" alt="KOSAI" width="148" height="24"></a><p>한국 상장사를 위한 AI 투자 리서치. 데이터와 분석을 한 페이지에.</p></div>
-        <div class="foot-col"><h4>서비스</h4><ul><li><a href="Home.html">홈</a></li><li><a href="Reports.html">리포트</a></li><li><a href="industry.html">업종별</a></li><li><a href="Screener.html">스크리너</a></li><li><a href="Watchlist.html">워치리스트</a></li><li><a href="pricing.html">멤버십</a></li></ul></div>
+        <div class="foot-col"><h4>서비스</h4><ul><li><a href="Home.html">홈</a></li><li><a href="Reports.html">리포트</a></li><li><a href="industry.html">업종별</a></li><li><a href="Screener.html">스크리너</a></li><li><a href="Watchlist.html">워치리스트</a></li></ul></div>
         <div class="foot-col"><h4>회사</h4><ul><li><a href="About.html">About</a></li><li><a href="Contact.html">문의하기</a></li><li><a href="Feedback.html">피드백</a></li></ul></div>
         <div class="foot-col"><h4>정책</h4><ul><li><a href="Terms.html">이용약관</a></li><li><a href="Privacy.html">개인정보처리방침</a></li></ul></div>
       </div>
       <div class="disclaimer"><b>면책 조항</b> · 본 사이트의 모든 AI 분석·리포트는 투자 참고용 정보이며, 투자 권유나 추천이 아닙니다. 투자 판단과 그 결과에 대한 책임은 전적으로 이용자 본인에게 있습니다. 데이터는 지연될 수 있으며 오류가 포함될 수 있습니다.</div>
-      <div class="biz">
-        <span>상호 <b>[상호]</b></span>
-        <span>대표 <b>[대표자명]</b></span>
-        <span>사업자등록번호 <b>[000-00-00000]</b></span>
-        <span>통신판매업 신고 <b>[제0000-0000-00000호]</b></span>
-        <span>주소 <b>[사업장 주소]</b></span>
-        <span>대표전화 <b>[00-0000-0000]</b></span>
-        <span>전자우편 <b>help@kosai.kr</b></span>
-      </div>
       <div class="foot-bottom"><span>© 2026 KOSAI — All rights reserved.</span></div>
     </div>
   </div>
@@ -588,6 +562,7 @@ themeBtn.addEventListener('click',()=>applyTheme(root.getAttribute('data-theme')
 if(window.KOSi18n) KOSi18n.register({
   "시행일 2026년 6월 6일 · 최종 개정일 2026년 6월 12일":"Effective June 6, 2026 · Last amended June 12, 2026",
   "이 약관은 공정거래위원회 전자상거래 표준약관의 구성을 참고하여 작성되었으며, KOSAI 서비스 이용에 관한 회사와 이용자의 권리·의무 및 책임 사항을 규정합니다.":"These Terms follow the structure of the KFTC's standard e-commerce terms and set out the rights, obligations, and responsibilities of the company and users regarding the KOSAI service.",
+  "제1조 (목적)":"Article 1 (Purpose)",
   "이 약관은 KOSAI(이하 \"회사\")가 제공하는 AI 기반 투자 리서치 서비스(이하 \"서비스\")의 이용과 관련하여 회사와 이용자 간의 권리·의무 및 책임 사항을 규정함을 목적으로 합니다.":"These Terms govern the rights, obligations, and responsibilities between KOSAI (the \"Company\") and users in connection with the AI-based investment research service (the \"Service\").",
   "제2조 (정의)":"Article 2 (Definitions)",
   "\"서비스\"란 회사가 제공하는 한국 상장기업의 시장 데이터 및 AI 분석·리포트 등 일체의 서비스를 말합니다.":"\"Service\" means all services provided by the Company, including market data on Korea-listed companies and AI analyses and reports.",
@@ -606,23 +581,19 @@ if(window.KOSi18n) KOSi18n.register({
   "제8조 (회원에 대한 통지)":"Article 8 (Notices to Members)",
   "회사가 회원에게 통지를 하는 경우, 회원이 등록한 전자우편 주소 또는 서비스 내 알림 등을 통해 할 수 있습니다.":"The Company may give notice to members via the registered email address or in-service notifications.",
   "제9조 (유료·구독 서비스 및 결제)":"Article 9 (Paid/Subscription Services and Payment)",
-    "서비스는 무료 구간과 유료 구독으로 나뉩니다. 종목의 핵심 지표, 리포트 개요, 사업 구조, 실적 추이, 참고 출처는 모든 이용자에게 무료로 제공되며, 실적 분석·산업 분석·전망·밸류에이션 해설·강세 및 약세 요인·리스크 요인·체크포인트·종합 의견은 유료 구독자에게 제공됩니다.":"The Service has a free tier and a paid subscription. Key metrics, the report overview, business structure, earnings history, and sources are free for everyone. Earnings analysis, industry analysis, outlook, valuation commentary, bull and bear factors, risk factors, what to watch, and the verdict are provided to paying subscribers.",
-  "구독 요금은 BASIC 월 9,900원, PRO 월 14,900원이며 부가가치세가 포함된 금액입니다. 하루에 열람하실 수 있는 리포트는 BASIC 5개, PRO 15개이며, 같은 종목을 다시 열람하시는 경우에는 차감되지 않습니다. 한도는 매일 자정(한국 시간)에 초기화됩니다.":"Subscriptions are KRW 9,900 per month for BASIC and KRW 14,900 per month for PRO, VAT included. Daily viewing is limited to 5 reports on BASIC and 15 on PRO; reopening the same stock does not count again. Limits reset at midnight (KST).",
-  "요금은 회원이 등록한 결제 수단으로 매월 같은 날짜에 자동으로 청구됩니다. 회사가 요금을 변경하는 경우 적용일 최소 30일 전에 전자우편 또는 서비스 내 알림으로 고지하며, 기존 구독자에게 사전 고지 없이 인상된 요금을 청구하지 않습니다.":"Fees are charged automatically to the registered payment method on the same date each month. If the Company changes prices, it will give notice by email or in-service notification at least 30 days before the change takes effect, and will never charge existing subscribers an increased price without prior notice.",
-  "회원은 구독 관리 페이지에서 언제든지 해지하실 수 있습니다. 해지하시면 다음 결제일부터 청구되지 않으며, 이미 결제하신 이용 기간이 종료될 때까지는 서비스를 그대로 이용하실 수 있습니다.":"Members may cancel at any time on the subscription page. After cancelling, you are not charged from the next billing date, and you keep access until the period you have already paid for ends.",
-  "이용자는 「전자상거래 등에서의 소비자보호에 관한 법률」에 따라 결제일부터 7일 이내에 청약을 철회할 수 있습니다. 다만 같은 법 제17조 제2항에 따라 디지털 콘텐츠의 제공이 개시된 경우에는 청약철회가 제한될 수 있으며, 이 경우에도 아래 기준에 따라 잔여 이용 기간에 해당하는 금액을 환불합니다.":"Under the E-Commerce Consumer Protection Act, users may withdraw their offer within 7 days of payment. Under Article 17(2) of that Act, withdrawal may be limited once delivery of digital content has begun; even then, the unused portion of the period is refunded under the standards below.",
-  "유료 리포트를 열람하지 않으신 경우, 결제 후 7일 이내에는 전액을 환불합니다. 7일이 지난 경우에는 잔여 이용 기간에 해당하는 금액에서 서비스 수수료 10%를 공제한 금액을 환불합니다.":"If you have not opened a paid report, you receive a full refund within 7 days of payment. After 7 days, the unused portion of the period is refunded less a 10% service fee.",
-  "유료 리포트를 열람하신 경우에는 이용하신 일수에 해당하는 금액을 공제하고, 남은 금액에서 서비스 수수료 10%를 공제한 금액을 환불합니다. 서비스 수수료는 「방문판매 등에 관한 법률」이 정한 위약금의 범위 내에서 산정합니다.":"If you have opened a paid report, the amount for the days you used is deducted, and the remainder is refunded less a 10% service fee. The service fee is set within the penalty limits of the Door-to-Door Sales Act.",
-  "환불은 구독 관리 페이지에서 직접 신청하실 수 있으며, 환불이 완료되면 유료 구독 이용 권한은 즉시 종료됩니다. 환불 금액은 결제하신 수단으로 지급되며, 카드 결제의 경우 카드사의 처리 일정에 따라 영업일 기준 3일에서 5일이 소요될 수 있습니다.":"You can request a refund yourself on the subscription page. Once processed, paid access ends immediately. Refunds are returned to the original payment method; for card payments this can take 3 to 5 business days depending on the card issuer.",
-  "회사의 귀책사유로 서비스를 이용하지 못한 경우에는 해당 기간에 해당하는 금액을 수수료 공제 없이 환불합니다.":"If the Service is unavailable due to the Company's fault, the amount for that period is refunded with no fee deducted.",
+  "서비스는 현재 무료로 제공됩니다. 회사는 향후 일부 기능을 유료 또는 구독 형태로 전환할 수 있으며, 이 경우 요금·결제 수단·이용 조건 등을 사전에 고지하고 이용자의 동의를 받습니다.":"The Service is currently free. The Company may convert some features to a paid or subscription model in the future, in which case fees, payment methods, and conditions will be announced in advance and the user's consent obtained.",
   "제10조 (청약철회 및 환불)":"Article 10 (Withdrawal of Offer and Refunds)",
-    "제11조 (회사의 의무)":"Article 11 (Company Obligations)",
+  "유료 서비스가 도입되는 경우, 이용자는 「전자상거래 등에서의 소비자보호에 관한 법률」에 따라 계약일 또는 이용 가능일부터 7일 이내에 청약을 철회할 수 있습니다. 다만 디지털 콘텐츠의 제공이 개시된 경우 등 같은 법 제17조에서 정한 사유에 해당할 때에는 청약철회가 제한될 수 있습니다. 구체적인 환불 기준과 절차는 유료 서비스 도입 시 별도로 정하여 고지합니다.":"If paid services are introduced, users may withdraw their offer within 7 days of the contract date or the date the service becomes available, under the E-Commerce Consumer Protection Act. Withdrawal may be limited in cases set out in Article 17 of that Act, such as where delivery of digital content has begun. Specific refund standards and procedures will be set and announced when paid services are introduced.",
+  "제11조 (회사의 의무)":"Article 11 (Company Obligations)",
   "회사는 관련 법령과 이 약관이 금지하는 행위를 하지 않으며, 안정적인 서비스 제공을 위해 노력합니다. 회사는 이용자의 개인정보를 개인정보처리방침에 따라 보호합니다.":"The Company does not engage in acts prohibited by law or these Terms and strives to provide a stable Service. The Company protects users' personal information in accordance with its Privacy Policy.",
   "제12조 (이용자의 계정·비밀번호 관리 의무)":"Article 12 (Account and Password Responsibility)",
   "이용자는 자신의 계정과 비밀번호를 안전하게 관리할 책임이 있으며, 이를 제3자가 이용하도록 하여서는 안 됩니다. 계정의 무단 사용을 인지한 경우 즉시 회사에 알려야 합니다.":"Users are responsible for keeping their account and password secure and must not allow third parties to use them. If you become aware of unauthorized use, notify the Company immediately.",
   "제13조 (이용자의 의무)":"Article 13 (User Obligations)",
+  "이용자는 다음 각 호의 행위를 하여서는 안 됩니다.":"Users must not engage in any of the following:",
   "자동화된 수단으로 서비스에 과도한 부하를 유발하거나 데이터를 대량으로 수집(크롤링)하는 행위":"Imposing excessive load on the Service or bulk-collecting data (crawling) by automated means",
+  "서비스의 정상적인 운영을 방해하거나 보안을 침해하는 행위":"Disrupting normal operation of the Service or breaching its security",
   "회사 또는 제3자의 지식재산권을 침해하거나 명예를 훼손하는 행위":"Infringing the intellectual property or defaming the reputation of the Company or third parties",
+  "관련 법령 또는 이 약관을 위반하는 행위":"Violating applicable laws or these Terms",
   "제14조 (지식재산권)":"Article 14 (Intellectual Property)",
   "서비스에 게시된 리포트·분석·디자인 등 모든 콘텐츠에 대한 저작권 및 기타 지식재산권은 회사에 귀속됩니다. 이용자는 회사의 사전 동의 없이 이를 복제·배포·전송하거나 상업적으로 이용할 수 없습니다.":"Copyright and other intellectual property rights in all content on the Service — including reports, analyses, and design — belong to the Company. Users may not reproduce, distribute, transmit, or commercially exploit such content without the Company's prior consent.",
   "제15조 (투자 관련 면책 고지)":"Article 15 (Investment Disclaimer)",

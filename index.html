@@ -71,7 +71,7 @@ body::before{content:"";position:fixed;inset:0;z-index:-1;pointer-events:none;
   background-image:linear-gradient(to right, rgba(255,255,255,.06) 1px, transparent 1px),linear-gradient(to bottom, rgba(255,255,255,.06) 1px, transparent 1px);background-size:48px 48px}
 .glass{background:rgba(255,255,255,0.62);border:1px solid rgba(255,255,255,0.55);box-shadow:var(--shadow-2),inset 0 1px 0 rgba(255,255,255,0.6);-webkit-backdrop-filter:blur(20px);backdrop-filter:blur(20px);border-radius:var(--radius-xl)}
 :root[data-theme="dark"] .glass{background:rgba(28,30,42,0.62);border-color:rgba(255,255,255,0.10);box-shadow:var(--shadow-2),inset 0 1px 0 rgba(255,255,255,0.08)}
-.btn{text-decoration:none;display:inline-flex;align-items:center;justify-content:center;gap:6px;font:600 15px/1 var(--font-sans);border-radius:var(--radius-sm);cursor:pointer;border:0;transition:transform .12s,filter .15s;white-space:nowrap}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:6px;font:600 15px/1 var(--font-sans);border-radius:var(--radius-sm);cursor:pointer;border:0;transition:transform .12s,filter .15s;white-space:nowrap}
 .btn:active{transform:scale(.98)}
 .btn-primary{background:#000;color:#fff;padding:14px 20px;box-shadow:var(--shadow-1)}
 .btn-primary:hover{filter:brightness(1.1)}
@@ -86,10 +86,6 @@ body::before{content:"";position:fixed;inset:0;z-index:-1;pointer-events:none;
 .nav-links a{font:500 14px var(--font-sans);color:var(--fg-2);text-decoration:none;padding:8px 13px;border-radius:var(--radius-sm);transition:.15s;white-space:nowrap}
 .nav-links a:hover{color:var(--fg-1);background:rgba(0,0,0,.05)}
 :root[data-theme="dark"] .nav-links a:hover{background:rgba(255,255,255,.08)}
-/* 현재 페이지 표시. 이 규칙이 없으면 class="active" 를 달아도 아무 일이 없다 —
-   실제로 멤버십 페이지가 그랬다. */
-.nav-links a.active{color:var(--fg-1);background:rgba(0,0,0,.07);font-weight:600}
-:root[data-theme="dark"] .nav-links a.active{background:rgba(255,255,255,.10)}
 .nav-spacer{flex:1}
 .icon-btn{width:38px;height:38px;border-radius:var(--radius-sm);border:0;background:transparent;display:inline-flex;align-items:center;justify-content:center;cursor:pointer;color:var(--fg-2);transition:.15s}
 .icon-btn:hover{background:rgba(0,0,0,.06);color:var(--fg-1)}
@@ -101,8 +97,6 @@ body::before{content:"";position:fixed;inset:0;z-index:-1;pointer-events:none;
 .mobile-menu a{font:600 16px var(--font-sans);color:var(--fg-1);text-decoration:none;padding:13px 14px;border-radius:var(--radius-sm)}
 .mobile-menu a:hover{background:rgba(0,0,0,.06)}
 :root[data-theme="dark"] .mobile-menu a:hover{background:rgba(255,255,255,.08)}
-.mobile-menu a.active{background:rgba(0,0,0,.06)}
-:root[data-theme="dark"] .mobile-menu a.active{background:rgba(255,255,255,.08)}
 
 .crumb{font:500 13px var(--font-sans);color:var(--fg-3);padding-top:28px;margin-bottom:12px}
 .crumb a{color:var(--fg-3);text-decoration:none}.crumb a:hover{color:var(--fg-1)}
@@ -171,8 +165,6 @@ main{flex:1;padding:8px 0 64px}
 .disclaimer{margin-top:28px;padding:16px 18px;border-radius:var(--radius-md);background:rgba(0,0,0,.04);border:1px solid var(--border-2);font:400 13px/1.6 var(--font-sans);color:var(--fg-2)}
 :root[data-theme="dark"] .disclaimer{background:rgba(255,255,255,.04)}
 .disclaimer b{color:var(--fg-1)}
-.biz{display:flex;flex-wrap:wrap;gap:6px 18px;margin-top:18px;padding-top:16px;border-top:1px solid var(--border-2);font:500 12px/1.7 var(--font-sans);color:var(--fg-3)}
-.biz b{font-weight:600;color:var(--fg-2)}
 .foot-bottom{display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap;margin-top:22px;padding-top:18px;border-top:1px solid var(--border-2);font:500 12px var(--font-sans);color:var(--fg-3)}
 
 @media (min-width:768px){:root{--pad:24px}}
@@ -395,7 +387,7 @@ KOSi18n.register({
   "스크리너":"Screener",
   "업종별":"Industries",
   "리포트":"Reports",
-  "워치리스트":"Watchlist","상호":"Company","대표":"CEO","사업자등록번호":"Business Reg. No.","통신판매업 신고":"Mail-order Reg. No.","주소":"Address","대표전화":"Phone","전자우편":"Email","요금제":"Pricing","멤버십":"Pricing",
+  "워치리스트":"Watchlist",
   // footer headings
   "서비스":"Services",
   "회사":"Company",
@@ -566,7 +558,6 @@ body::after,body::before{display:none}
     <a href="industry.html">업종별</a>
     <a href="Screener.html">스크리너</a>
     <a href="Watchlist.html">워치리스트</a>
-    <a href="pricing.html">멤버십</a>
   </div>
   <div class="nav-spacer"></div>
   <button class="icon-btn" id="themeBtn" aria-label="테마 전환" title="라이트/다크 전환">
@@ -582,7 +573,6 @@ body::after,body::before{display:none}
   <a href="industry.html">업종별</a>
   <a href="Screener.html">스크리너</a>
   <a href="Watchlist.html">워치리스트</a>
-  <a href="pricing.html">멤버십</a>
 </div>
 
 
@@ -613,20 +603,11 @@ body::after,body::before{display:none}
     <div class="foot-inner glass">
       <div class="foot-grid">
         <div class="foot-brand"><a class="brand" href="/"><img class="brand-logo brand-logo--light" src="assets/kosai-wordmark-black.png" alt="KOSAI" width="148" height="24"><img class="brand-logo brand-logo--dark" src="assets/kosai-wordmark-white.png" alt="KOSAI" width="148" height="24"></a><p>한국 상장사를 위한 AI 투자 리서치. 데이터와 분석을 한 페이지에.</p></div>
-        <div class="foot-col"><h4>서비스</h4><ul><li><a href="Home.html">홈</a></li><li><a href="Reports.html">리포트</a></li><li><a href="industry.html">업종별</a></li><li><a href="Screener.html">스크리너</a></li><li><a href="Watchlist.html">워치리스트</a></li><li><a href="pricing.html">멤버십</a></li></ul></div>
+        <div class="foot-col"><h4>서비스</h4><ul><li><a href="Home.html">홈</a></li><li><a href="Reports.html">리포트</a></li><li><a href="industry.html">업종별</a></li><li><a href="Screener.html">스크리너</a></li><li><a href="Watchlist.html">워치리스트</a></li></ul></div>
         <div class="foot-col"><h4>회사</h4><ul><li><a href="About.html">About</a></li><li><a href="Contact.html">문의하기</a></li><li><a href="Feedback.html">피드백</a></li></ul></div>
         <div class="foot-col"><h4>정책</h4><ul><li><a href="Terms.html">이용약관</a></li><li><a href="Privacy.html">개인정보처리방침</a></li></ul></div>
       </div>
       <div class="disclaimer"><b>면책 조항</b> · 본 사이트의 모든 AI 분석·리포트는 투자 참고용 정보이며, 투자 권유나 추천이 아닙니다. 투자 판단과 그 결과에 대한 책임은 전적으로 이용자 본인에게 있습니다. 데이터는 지연될 수 있으며 오류가 포함될 수 있습니다.</div>
-      <div class="biz">
-        <span>상호 <b>[상호]</b></span>
-        <span>대표 <b>[대표자명]</b></span>
-        <span>사업자등록번호 <b>[000-00-00000]</b></span>
-        <span>통신판매업 신고 <b>[제0000-0000-00000호]</b></span>
-        <span>주소 <b>[사업장 주소]</b></span>
-        <span>대표전화 <b>[00-0000-0000]</b></span>
-        <span>전자우편 <b>help@kosai.kr</b></span>
-      </div>
       <div class="foot-bottom"><span>© 2026 KOSAI — All rights reserved.</span></div>
     </div>
   </div>

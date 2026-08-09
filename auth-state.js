@@ -9,14 +9,14 @@
 import { app, auth, isConfigured } from "./firebase-config.js";
 import { onAuthStateChanged, signOut, deleteUser }
   from "https://www.gstatic.com/firebasejs/10.12.2/firebase-auth.js";
-import { getFirestore, doc, getDoc, deleteDoc }
+import { getFirestore, doc, deleteDoc }
   from "https://www.gstatic.com/firebasejs/10.12.2/firebase-firestore.js";
 import { getFunctions, httpsCallable }
   from "https://www.gstatic.com/firebasejs/10.12.2/firebase-functions.js";
 
 const T = m => (window.KOSi18n ? window.KOSi18n.t(m) : m);
 if(window.KOSi18n) window.KOSi18n.register({
-  "로그인":"Sign in", "로그아웃":"Sign out", "회원 탈퇴":"Delete account", "구독 관리":"Subscription",
+  "로그인":"Sign in", "로그아웃":"Sign out", "회원 탈퇴":"Delete account",
   "회원 탈퇴가 완료되었습니다. 그동안 이용해 주셔서 감사합니다.":
     "Your account has been deleted. Thank you for using KOSAI.",
   "보안을 위해 다시 로그인한 뒤 탈퇴를 진행해 주세요.":
@@ -24,12 +24,6 @@ if(window.KOSi18n) window.KOSi18n.register({
   "탈퇴 처리 중 오류가 발생했습니다. 잠시 후 다시 시도해 주세요.":
     "Something went wrong while deleting your account. Please try again later.",
   "정말 탈퇴하시겠어요?":"Delete your account?",
-  "이용 중인 구독이 있습니다":"You have an active subscription",
-  "탈퇴하시면 구독이 즉시 해지되고, 환불 기준에 따라 산정된 금액이 자동으로 환불됩니다. 금액을 먼저 확인하시려면 구독 관리에서 환불을 신청해 주세요.":
-    "Deleting your account cancels the subscription right away and refunds the amount due under our refund terms. To see the amount first, request the refund on the subscription page.",
-  "구독 관리로 이동":"Go to subscription",
-  "환불 처리에 실패해 탈퇴를 진행하지 않았습니다. 구독 관리에서 환불을 먼저 신청해 주세요.":
-    "We could not process the refund, so your account was not deleted. Please request the refund on the subscription page first.",
   "계정과 저장된 관심종목이 영구 삭제되며, 되돌릴 수 없습니다.":
     "Your account and saved watchlist will be permanently deleted. This cannot be undone.",
   "떠나시는 이유를 알려주시면 개선에 큰 도움이 됩니다 (선택)":
@@ -51,34 +45,15 @@ if(window.KOSi18n) window.KOSi18n.register({
 
 /* 회원 탈퇴 — 다단계 확인 모달:
    사유 설문(선택) → '되돌릴 수 없음' 동의 체크 → '탈퇴' 입력 시에만 버튼 활성화.
-   확정 시: 사유 기록(best-effort) → 서버 deleteAccount 호출.
-
-   ⚠️ 삭제는 서버가 한다. 여기서 deleteUser() 만 부르면 계정은 사라지는데
-      구독 문서는 살아 있어, 매일 도는 갱신 배치가 다음 달에도 카드를 긁는다.
-      당사자는 로그인도 해지도 못 한다. 서버 함수가 구독을 먼저 닫는다. */
+   확정 시: 사유를 이메일로 기록(best-effort) → 워치리스트 삭제 → 계정 삭제. */
 const WD_REASONS = ["원하는 종목·정보가 부족해요", "정보가 정확하지 않아요",
                     "자주 사용하지 않아요", "사용법이 불편해요", "기타"];
 
-/* 지금 유료 구독 중인가. 탈퇴하면 남은 기간을 잃으므로 미리 알려야 한다.
-   실패하면(규칙·네트워크) 경고만 못 붙일 뿐, 탈퇴 자체는 서버가 안전하게 처리한다. */
-async function activeSub(uid){
-  try{
-    const snap = await getDoc(doc(getFirestore(app), "subscriptions", uid));
-    const s = snap.exists() ? snap.data() : null;
-    if(!s || s.status !== "active") return null;
-    const end = s.currentPeriodEnd;
-    const ms = end && typeof end.toMillis === "function" ? end.toMillis()
-             : typeof end === "number" ? end : Date.parse(end);
-    return (Number.isFinite(ms) && ms > Date.now()) ? s : null;
-  }catch(e){ return null; }
-}
-
-async function openWithdrawModal(){
+function openWithdrawModal(){
   const user = auth.currentUser;
   if(!user) return;
   if(document.getElementById('wdModal')) return;
   injectCss();
-  const sub = await activeSub(user.uid);
   const email = user.email || user.displayName || '';
   const lang = (window.KOSi18n ? KOSi18n.lang : 'ko');
   const WORD = lang === 'en' ? 'DELETE' : '탈퇴';          // 언어별 확인 문구
@@ -91,11 +66,6 @@ async function openWithdrawModal(){
       <div class="wd-h">${T("정말 탈퇴하시겠어요?")}</div>
       <div class="wd-em">${email}</div>
       <p class="wd-warn">${T("계정과 저장된 관심종목이 영구 삭제되며, 되돌릴 수 없습니다.")}</p>
-      ${sub ? `<div class="wd-sub">
-        <b>${T("이용 중인 구독이 있습니다")}</b>
-        <p>${T("탈퇴하시면 구독이 즉시 해지되고, 환불 기준에 따라 산정된 금액이 자동으로 환불됩니다. 금액을 먼저 확인하시려면 구독 관리에서 환불을 신청해 주세요.")}</p>
-        <a href="billing.html">${T("구독 관리로 이동")}</a>
-      </div>` : ""}
       <div class="wd-q">${T("떠나시는 이유를 알려주시면 개선에 큰 도움이 됩니다 (선택)")}</div>
       <div class="wd-reasons">${WD_REASONS.map((r)=>
         `<label class="wd-r"><input type="checkbox" name="wdReason" value="${r}"><span>${T(r)}</span></label>`).join('')}</div>
@@ -124,7 +94,7 @@ async function openWithdrawModal(){
     go.disabled = true; go.textContent = '...';
     const reason = (ov.querySelector('input[name=wdReason]:checked') || {}).value || '';
     const detail = ov.querySelector('.wd-detail').value.trim();
-    await finishWithdraw(user, email, reason, detail, ov, !!sub);
+    await finishWithdraw(user, email, reason, detail, ov);
   });
 }
 
@@ -140,20 +110,11 @@ async function recordReason(email, reason, detail){
   }catch(_){ /* 사유 기록 실패해도 탈퇴는 진행 */ }
 }
 
-async function finishWithdraw(user, email, reason, detail, ov, hadSub){
+async function finishWithdraw(user, email, reason, detail, ov){
   try{
     await recordReason(email, reason, detail);
-    try{
-      const fns = getFunctions(app, "asia-northeast3");
-      await httpsCallable(fns, "deleteAccount")({});
-      try{ await signOut(auth); }catch(_){}    // 계정은 서버가 지웠다 — 토큰만 정리
-    }catch(e){
-      /* 함수가 아직 배포되지 않은 환경에서는 예전 방식으로 돌아간다. 단 구독이
-         있으면 절대 안 된다 — 계정만 지우면 카드가 계속 긁힌다. */
-      if(hadSub) throw e;
-      try{ await deleteDoc(doc(getFirestore(app), "watchlists", user.uid)); }catch(_){}
-      await deleteUser(user);
-    }
+    try{ await deleteDoc(doc(getFirestore(app), "watchlists", user.uid)); }catch(e){}
+    await deleteUser(user);
     // 완료 화면 — 자동으로 사라지지 않고, 사용자가 '홈으로'를 눌러야 닫힘
     ov.querySelector('.wd-card').innerHTML = `
       <div class="wd-done">
@@ -171,10 +132,7 @@ async function finishWithdraw(user, email, reason, detail, ov, hadSub){
       try{ await signOut(auth); }catch(_){}
       location.href = "Login.html?next=" + encodeURIComponent(here());
     }else{
-      // 서버가 이유를 준 경우(예: 환불 실패로 탈퇴 중단) 그대로 보여 준다.
-      const msg = (e && e.message && /환불|refund/i.test(e.message))
-        ? e.message : T("탈퇴 처리 중 오류가 발생했습니다. 잠시 후 다시 시도해 주세요.");
-      alert(msg);
+      alert(T("탈퇴 처리 중 오류가 발생했습니다. 잠시 후 다시 시도해 주세요."));
       ov.remove();
     }
   }
@@ -207,11 +165,10 @@ function injectCss(){
   #navAuth .acct.open .menu{display:flex}
   #navAuth .menu .em{padding:9px 10px 10px;font:500 12px var(--font-sans);color:var(--fg-3);
     word-break:break-all;border-bottom:1px solid var(--hair);margin-bottom:4px}
-  #navAuth .menu .mi{display:block;text-decoration:none;color:inherit}
-  #navAuth .menu button,#navAuth .menu .mi{text-align:left;border:0;background:transparent;cursor:pointer;
+  #navAuth .menu button{text-align:left;border:0;background:transparent;cursor:pointer;
     font:600 14px var(--font-sans);color:var(--fg-1);padding:10px;border-radius:8px}
-  #navAuth .menu button:hover,#navAuth .menu .mi:hover{background:rgba(0,0,0,.06)}
-  :root[data-theme="dark"] #navAuth .menu button:hover,:root[data-theme="dark"] #navAuth .menu .mi:hover{background:rgba(255,255,255,.08)}
+  #navAuth .menu button:hover{background:rgba(0,0,0,.06)}
+  :root[data-theme="dark"] #navAuth .menu button:hover{background:rgba(255,255,255,.08)}
   #navAuth .menu button.withdraw{color:#c0282b;font-weight:500;font-size:12.5px;margin-top:2px;border-top:1px solid var(--hair);border-radius:0 0 8px 8px}
   :root[data-theme="dark"] #navAuth .menu button.withdraw{color:#ff8a8c}
   /* 모바일: 헤더 로그인/계정 숨기고 햄버거 메뉴 안으로 */
@@ -233,11 +190,6 @@ function injectCss(){
   .wd-h{font:700 22px var(--font-sans);color:var(--fg-1);letter-spacing:-.02em}
   .wd-em{margin-top:6px;font:500 13px var(--font-sans);color:var(--fg-3);word-break:break-all}
   .wd-warn{margin:16px 0 0;font:400 14.5px/1.65 var(--font-sans);color:#c0282b}
-.wd-sub{margin:12px 0 0;padding:12px 14px;border-radius:12px;text-align:left;
-  background:rgba(220,120,20,.10);border:1px solid rgba(220,120,20,.28)}
-.wd-sub b{display:block;font:700 13px var(--font-sans);color:var(--fg-1)}
-.wd-sub p{margin:5px 0 0;font:400 12.5px/1.6 var(--font-sans);color:var(--fg-2);word-break:keep-all}
-.wd-sub a{display:inline-block;margin-top:8px;font:600 12.5px var(--font-sans);color:var(--fg-1)}
   :root[data-theme="dark"] .wd-warn{color:#ff8a8c}
   .wd-q{margin:28px 0 10px;font:600 13.5px var(--font-sans);color:var(--fg-2)}
   .wd-reasons{display:flex;flex-direction:column;gap:3px}
@@ -304,7 +256,6 @@ function renderLoggedIn(wrap, user){
        <button class="acct-btn" type="button" aria-label="account"><span class="avatar">${initial}</span></button>
        <div class="menu" role="menu">
          <div class="em">${email}</div>
-         <a class="mi" href="billing.html">구독 관리</a>
          <button type="button" class="logout">로그아웃</button>
          <button type="button" class="withdraw">회원 탈퇴</button>
        </div>
@@ -326,7 +277,7 @@ function renderMobileAuth(user){
   if(!el){ el = document.createElement('div'); el.id = 'mAuth'; mm.appendChild(el); }
   if(user){
     const email = user.email || (user.displayName || '');
-    el.innerHTML = `<div class="m-em">${email}</div><a href="billing.html">구독 관리</a><button type="button" class="m-logout">로그아웃</button><button type="button" class="m-withdraw">회원 탈퇴</button>`;
+    el.innerHTML = `<div class="m-em">${email}</div><button type="button" class="m-logout">로그아웃</button><button type="button" class="m-withdraw">회원 탈퇴</button>`;
     el.querySelector('.m-logout').addEventListener('click', async () => { try{ await signOut(auth); }catch(e){} location.href = 'Home.html'; });
     el.querySelector('.m-withdraw').addEventListener('click', deleteAccount);
   } else {
@@ -339,13 +290,7 @@ function start(){
   const wrap = mount();
   if(!wrap) return;
   if(!isConfigured){ renderLoggedOut(wrap); renderMobileAuth(null); return; }
-  onAuthStateChanged(auth, user => {
-    /* 이 브라우저가 로그인 상태였는지 표시해 둔다. 워치리스트는 인증이 끝날
-       때까지 화면을 감추는데, 이 값이 있으면 감추지 않고 바로 그린다 — 그래야
-       그 페이지만 깜빡이지 않는다. */
-    try{ user ? localStorage.setItem('kos-signed','1') : localStorage.removeItem('kos-signed'); }catch(e){}
-    user ? renderLoggedIn(wrap, user) : renderLoggedOut(wrap); renderMobileAuth(user);
-  });
+  onAuthStateChanged(auth, user => { user ? renderLoggedIn(wrap, user) : renderLoggedOut(wrap); renderMobileAuth(user); });
 }
 
 if(document.readyState === 'loading') document.addEventListener('DOMContentLoaded', start);
