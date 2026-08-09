@@ -49,13 +49,13 @@ const T = {
     hist: "결제 내역", histEmpty: "아직 결제 내역이 없습니다.",
     hDate: "일자", hDesc: "내용", hAmt: "금액", hSt: "상태",
     stPaid: "결제 완료", stRefund: "환불", stFail: "실패",
-    noneT: "이용 중인 구독이 없습니다", noneD: "요금제를 선택하시면 리포트 전문을 바로 보실 수 있습니다.",
+    noneT: "이용 중인 구독이 없습니다", noneD: "멤버십에서 플랜을 선택하시면 리포트 전문을 바로 보실 수 있습니다.",
     dueT: "정기결제가 처리되지 않았습니다",
     dueD: "등록하신 카드로 결제가 승인되지 않았습니다. 한도 초과이거나 카드가 정지·만료된 경우일 수 있습니다. 카드를 다시 등록하시면 이용이 재개됩니다.",
-    endedT: "구독이 종료되었습니다", endedD: "다시 시작하시려면 요금제를 선택해 주세요.",
-    toPricing: "요금제 보기",
+    endedT: "구독이 종료되었습니다", endedD: "다시 시작하시려면 멤버십에서 플랜을 선택해 주세요.",
+    toPricing: "멤버십 보기",
     needT: "로그인이 필요합니다", needD: "구독 정보를 보려면 로그인해 주세요.", login: "로그인",
-    note: '해지하시면 이미 결제하신 이용 기간이 끝날 때까지는 그대로 이용하실 수 있습니다. 환불 기준은 <a href="pricing.html#faq">요금제 페이지</a>에서 확인하실 수 있습니다.',
+    note: '해지하시면 이미 결제하신 이용 기간이 끝날 때까지는 그대로 이용하실 수 있습니다. 환불 기준은 <a href="pricing.html#faq">멤버십 페이지</a>에서 확인하실 수 있습니다.',
     dlgCancelT: "구독을 해지하시겠습니까?",
     dlgCancelB: "{date}까지는 그대로 이용하실 수 있으며, 그 이후 결제되지 않습니다. 해지는 언제든지 취소하실 수 있습니다.",
     dlgUpT: "PRO로 업그레이드하시겠습니까?",
@@ -132,8 +132,15 @@ function ask(title, body) {
   });
 }
 
-function empty(title, desc, actions) {
-  root.innerHTML = `<div class="bl-empty glass"><h2>${esc(title)}</h2><p>${esc(desc)}</p>${actions || ""}</div>`;
+/* 구독이 없거나 끝난 상태. 안내 카드만 덩그러니 두면 '구독을 안 하면 이 페이지는
+   볼 게 없다'가 되는데, 지난 결제 내역은 그때도 봐야 한다. 있으면 같이 그린다. */
+function empty(title, desc, actions, payments) {
+  const hist = payments && payments.length ? histSection(payments) : "";
+  root.innerHTML =
+    `<div class="bl">
+       <div class="bl-empty glass"><h2>${esc(title)}</h2><p>${esc(desc)}</p>${actions || ""}</div>
+       ${hist}
+     </div>`;
 }
 
 function statusPill(sub, k) {
@@ -144,6 +151,25 @@ function statusPill(sub, k) {
 /* 오늘 몇 개 남았는지. 서버만 아는 값이라(report_reads 는 클라이언트 읽기 차단)
    getUsage 로 받아 둔다. 한도에 부딪히기 전에는 알 길이 없었다. */
 let usage = null;
+
+/* 결제 내역. 구독이 끝났어도 본인 결제 기록은 볼 수 있어야 한다 —
+   전자상거래법상 우리가 5년간 보관하는 기록이기도 하다. */
+function histSection(payments) {
+  const k = t();
+  const body = payments.length
+    ? `<div class="hist-wrap"><table class="hist"><thead><tr>
+         <th>${esc(k.hDate)}</th><th>${esc(k.hDesc)}</th><th>${esc(k.hAmt)}</th><th>${esc(k.hSt)}</th></tr></thead><tbody>`
+      + payments.map((p) => {
+          const s = p.status === "refunded" ? `<span class="st rf">${esc(k.stRefund)}</span>`
+                  : p.status === "failed" ? `<span class="st rf">${esc(k.stFail)}</span>`
+                  : `<span class="st ok">${esc(k.stPaid)}</span>`;
+          const amt = (p.amount < 0 ? "-" : "") + won(Math.abs(p.amount || 0), EN());
+          return `<tr><td>${esc(fmtDay(p.paidAt || p.createdAt, EN()))}</td><td>${esc(p.description || "")}</td><td>${esc(amt)}</td><td>${s}</td></tr>`;
+        }).join("")
+      + "</tbody></table></div>"
+    : `<p class="bl-note">${esc(k.histEmpty)}</p>`;
+  return `<section class="bl-card glass"><h2>${esc(k.hist)}</h2>${body}</section>`;
+}
 
 function view(st, payments) {
   const k = t(), sub = st.sub || {}, plan = planOf(sub.plan) || { name: String(sub.plan || "").toUpperCase(), price: 0, limit: 0 };
@@ -167,18 +193,6 @@ function view(st, payments) {
     [k.startRow, fmtDay(sub.startedAt, EN())],
   ].filter((r) => r && r[1]);
 
-  const hist = payments.length
-    ? `<div class="hist-wrap"><table class="hist"><thead><tr>
-         <th>${esc(k.hDate)}</th><th>${esc(k.hDesc)}</th><th>${esc(k.hAmt)}</th><th>${esc(k.hSt)}</th></tr></thead><tbody>`
-      + payments.map((p) => {
-          const s = p.status === "refunded" ? `<span class="st rf">${esc(k.stRefund)}</span>`
-                  : p.status === "failed" ? `<span class="st rf">${esc(k.stFail)}</span>`
-                  : `<span class="st ok">${esc(k.stPaid)}</span>`;
-          const amt = (p.amount < 0 ? "-" : "") + won(Math.abs(p.amount || 0), EN());
-          return `<tr><td>${esc(fmtDay(p.paidAt || p.createdAt, EN()))}</td><td>${esc(p.description || "")}</td><td>${esc(amt)}</td><td>${s}</td></tr>`;
-        }).join("")
-      + "</tbody></table></div>"
-    : `<p class="bl-note">${esc(k.histEmpty)}</p>`;
 
   root.innerHTML = `
   <div class="bl">
@@ -215,10 +229,7 @@ function view(st, payments) {
       </div>
     </section>
 
-    <section class="bl-card glass">
-      <h2>${esc(k.hist)}</h2>
-      ${hist}
-    </section>
+    ${histSection(payments)}
   </div>`;
 
   wire(st);
@@ -333,9 +344,14 @@ function screen(fn) { repaint = fn; fn(); }
           `<a class="btn btn-primary" href="Login.html?next=billing.html">${esc(k.login)}</a>`); });
       return;
     }
+    /* 결제 내역은 구독 상태와 무관하게 불러온다. 구독이 없다고 지난 결제까지
+       감추면, 돈을 낸 적 있는 사람이 그 기록을 확인할 데가 없어진다. */
+    if (!payments.length) payments = await loadPayments(st.user.uid);
+
     if (!st.sub) {
       screen(() => { const k = t();
-        empty(k.noneT, k.noneD, `<a class="btn btn-primary" href="pricing.html">${esc(k.toPricing)}</a>`); });
+        empty(k.noneT, k.noneD,
+          `<a class="btn btn-primary" href="pricing.html">${esc(k.toPricing)}</a>`, payments); });
       return;
     }
     // 구독 기록은 있는데 지금 유효하지 않은 경우. 그냥 '구독 없음'으로 보내면
@@ -346,14 +362,15 @@ function screen(fn) { repaint = fn; fn(); }
       screen(() => { const k = t();
         if (due) {
           empty(k.dueT, k.dueD,
-            `<a class="btn btn-primary" href="checkout.html?plan=${esc(plan)}&amp;method=1">${esc(k.changeCard)}</a>`);
+            `<a class="btn btn-primary" href="checkout.html?plan=${esc(plan)}&amp;method=1">${esc(k.changeCard)}</a>`,
+            payments);
         } else {
-          empty(k.endedT, k.endedD, `<a class="btn btn-primary" href="pricing.html">${esc(k.toPricing)}</a>`);
+          empty(k.endedT, k.endedD,
+            `<a class="btn btn-primary" href="pricing.html">${esc(k.toPricing)}</a>`, payments);
         }
       });
       return;
     }
-    if (!payments.length) payments = await loadPayments(st.user.uid);
     usage = await loadUsage();
     screen(() => view(st, payments));
   });
