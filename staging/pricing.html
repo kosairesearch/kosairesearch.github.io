@@ -137,8 +137,13 @@ main{flex:1;padding:8px 0 64px}
 .plan-pro{border-color:rgba(13,105,212,.35);box-shadow:var(--shadow-2),inset 0 1px 0 rgba(255,255,255,.6),0 0 0 1px rgba(13,105,212,.18)}
 :root[data-theme="dark"] .plan-pro{border-color:rgba(95,197,255,.3);box-shadow:var(--shadow-2),inset 0 1px 0 rgba(255,255,255,.08),0 0 0 1px rgba(95,197,255,.16)}
 .plan-badge.js{left:auto;right:28px;background:linear-gradient(135deg,#1f9d55,#3fc07a)}
-.btn.is-current{background:rgba(0,0,0,.06);color:var(--fg-2);box-shadow:none}
-:root[data-theme="dark"] .btn.is-current{background:rgba(255,255,255,.09)}
+/* 지금 쓰는 플랜 버튼 — 파는 버튼이 아니므로 흰색을 뺀다.
+   ⚠️ 글자색도 같이 지정해야 한다. :root[data-theme="dark"] .btn-primary 는
+      선택자가 셋(0,3,0)이라 .btn.is-current(0,2,0)를 이긴다 — 배경만 바꾸면
+      흰 버튼용 검은 글자가 그대로 남아 어두운 배경에 검은 글자가 된다. */
+.btn.is-current{background:rgba(0,0,0,.06);color:var(--fg-1);box-shadow:none;
+  border:1px solid var(--border-2)}
+:root[data-theme="dark"] .btn.is-current{background:rgba(255,255,255,.09);color:var(--fg-1)}
 .plan-badge{position:absolute;top:-11px;left:28px;font:700 11px var(--font-sans);letter-spacing:.06em;color:#fff;
   background:linear-gradient(135deg,var(--brand-blue),var(--brand-cyan));padding:5px 11px;border-radius:var(--pill)}
 .plan-name{font:700 15px var(--font-sans);letter-spacing:-.01em;color:var(--fg-1)}
