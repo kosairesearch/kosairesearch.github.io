@@ -128,6 +128,9 @@ main{flex:1;padding:8px 0 64px}
 .plan{position:relative;padding:30px 28px 26px;display:flex;flex-direction:column}
 .plan-pro{border-color:rgba(13,105,212,.35);box-shadow:var(--shadow-2),inset 0 1px 0 rgba(255,255,255,.6),0 0 0 1px rgba(13,105,212,.18)}
 :root[data-theme="dark"] .plan-pro{border-color:rgba(95,197,255,.3);box-shadow:var(--shadow-2),inset 0 1px 0 rgba(255,255,255,.08),0 0 0 1px rgba(95,197,255,.16)}
+.plan-badge.js{left:auto;right:28px;background:linear-gradient(135deg,#1f9d55,#3fc07a)}
+.btn.is-current{background:rgba(0,0,0,.06);color:var(--fg-2);box-shadow:none}
+:root[data-theme="dark"] .btn.is-current{background:rgba(255,255,255,.09)}
 .plan-badge{position:absolute;top:-11px;left:28px;font:700 11px var(--font-sans);letter-spacing:.06em;color:#fff;
   background:linear-gradient(135deg,var(--brand-blue),var(--brand-cyan));padding:5px 11px;border-radius:var(--pill)}
 .plan-name{font:700 15px var(--font-sans);letter-spacing:-.01em;color:var(--fg-1)}
@@ -570,7 +573,7 @@ KOSi18n.register({
           <li class="on">국내 상장 2,500여 개 종목</li>
           <li class="on">하루 5개 리포트 열람</li>
         </ul>
-        <button type="button" class="btn btn-soft" data-plan="basic">BASIC 시작하기</button>
+        <button type="button" class="btn btn-soft" data-plan="basic" data-i18n-skip>BASIC 시작하기</button>
         <div class="plan-msg"></div>
       </section>
 
@@ -584,7 +587,7 @@ KOSi18n.register({
           <li class="on">국내 상장 2,500여 개 종목</li>
           <li class="on">하루 15개 리포트 열람</li>
         </ul>
-        <button type="button" class="btn btn-primary" data-plan="pro">PRO 시작하기</button>
+        <button type="button" class="btn btn-primary" data-plan="pro" data-i18n-skip>PRO 시작하기</button>
         <div class="plan-msg"></div>
       </section>
     </div>
@@ -839,22 +842,87 @@ if(window.KOSi18n) KOSi18n.register({
 });
 </script>
 <script type="module">
-/* 결제 진입점 — 비로그인이면 로그인부터, 로그인 상태면 결제 페이지로. */
-import { auth, isConfigured } from "./firebase-config.js";
-import { onAuthStateChanged } from "https://www.gstatic.com/firebasejs/10.12.2/firebase-auth.js";
+/* 결제 진입점. 이미 이용 중인 사람에게 'PRO 시작하기'를 보여 주면 안 된다 —
+   이미 낸 돈을 다시 팔고 있는 셈이고, 눌러 봐야 '이미 이용 중입니다'로 끝난다.
+   구독 상태에 맞게 버튼과 배지를 바꾼다. */
+import "./paywall.js";
 
-let user = null, ready = !isConfigured;
-if (isConfigured) onAuthStateChanged(auth, u => { user = u; ready = true; });
-// 인증 스크립트가 끝내 뜨지 않아도 버튼이 죽지 않도록 — 비로그인으로 간주하고 진행.
-setTimeout(() => { ready = true; }, 2500);
+const P = window.KOSPaywall;
+const btns = [...document.querySelectorAll('.plan [data-plan]')];
+const EN = () => {
+  try { const v = localStorage.getItem('kos-lang'); if (v) return v === 'en'; } catch (e) {}
+  return !!(window.KOSi18n && window.KOSi18n.lang === 'en');
+};
+const T = {
+  ko: { start: '{p} 시작하기', current: '이용 중', manage: '구독 관리',
+        up: 'PRO로 업그레이드', down: 'BASIC으로 변경', badge: '이용 중',
+        pend: '{d}부터 적용', pendBadge: '변경 예정' },
+  en: { start: 'Start {p}', current: 'Current plan', manage: 'Manage subscription',
+        up: 'Upgrade to PRO', down: 'Switch to BASIC', badge: 'Current',
+        pend: 'From {d}', pendBadge: 'Scheduled' },
+};
+const t = () => (EN() ? T.en : T.ko);
+const day = (v) => {
+  if (!v) return '';
+  const ms = typeof v?.toMillis === 'function' ? v.toMillis()
+           : typeof v === 'number' ? v : Date.parse(v);
+  if (!Number.isFinite(ms)) return '';
+  const d = new Date(ms), M = ['Jan','Feb','Mar','Apr','May','Jun','Jul','Aug','Sep','Oct','Nov','Dec'];
+  return EN() ? `${M[d.getMonth()]} ${d.getDate()}` : `${d.getMonth() + 1}월 ${d.getDate()}일`;
+};
 
-document.querySelectorAll('.plan [data-plan]').forEach((btn) => {
+let st = { user: null, active: false, plan: null, sub: null };
+
+function paint() {
+  const k = t();
+  const sub = st.sub || {};
+  const pend = st.active && sub.pendingPlan && sub.pendingPlan !== st.plan ? sub.pendingPlan : null;
+
+  btns.forEach((btn) => {
+    const id = btn.dataset.plan;
+    const card = btn.closest('.plan');
+    const name = id.toUpperCase();
+    card.querySelectorAll('.plan-badge.js').forEach((e) => e.remove());
+    btn.classList.remove('is-current');
+    btn.disabled = false;
+
+    let label = k.start.replace('{p}', name), badge = null;
+    if (st.active && id === st.plan) {
+      // 지금 쓰는 플랜 — 팔 게 아니라 관리로 보낸다.
+      label = k.manage; badge = k.badge;
+      btn.classList.add('is-current');
+    } else if (st.active && id === pend) {
+      label = k.manage; badge = k.pendBadge;
+    } else if (st.active) {
+      label = id === 'pro' ? k.up : k.down;
+    }
+    btn.textContent = label;
+    if (badge) {
+      const b = document.createElement('div');
+      b.className = 'plan-badge js';
+      b.textContent = badge + (id === pend ? ' · ' + k.pend.replace('{d}', day(sub.currentPeriodEnd)) : '');
+      card.appendChild(b);
+    }
+  });
+}
+
+btns.forEach((btn) => {
   btn.addEventListener('click', () => {
-    if (!ready) return;
-    if (!user) { location.href = 'Login.html?next=pricing.html'; return; }
+    if (!st.user) { location.href = 'Login.html?next=pricing.html'; return; }
+    // 이용 중이면 어느 카드를 눌러도 구독 관리로. 플랜 변경은 거기서 한다
+    // (업그레이드 차액·다운그레이드 시점 계산이 전부 그쪽에 있다).
+    if (st.active) { location.href = 'billing.html'; return; }
     location.href = 'checkout.html?plan=' + encodeURIComponent(btn.dataset.plan);
   });
 });
+
+if (P) {
+  P.onChange((s) => { st = s; paint(); });
+} else {
+  paint();
+}
+/* 이 버튼 글자는 스크립트가 쓰므로 번역 엔진이 손대지 않는다 — 직접 다시 그린다. */
+if (window.KOSi18n) window.KOSi18n.register(null, paint);
 </script>
 <script type="module" src="auth-state.js"></script>
 </body>
