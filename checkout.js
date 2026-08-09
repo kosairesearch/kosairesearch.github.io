@@ -17,8 +17,7 @@
    ============================================================ */
 import "./paywall.js";
 import { app, auth, isConfigured, SOCIAL } from "./firebase-config.js";
-import { PLANS, TOSS, payReady as _payReady, planOf, won } from "./payment-config.js";
-const payReady = window.__KOSDEMO ? true : _payReady;
+import { PLANS, TOSS, payReady, planOf, won } from "./payment-config.js";
 import { getFunctions, httpsCallable }
   from "https://www.gstatic.com/firebasejs/10.12.2/firebase-functions.js";
 
@@ -223,12 +222,6 @@ function wireForm(plan, user, opts) {
     btn.disabled = true;
     msg.innerHTML = `<span class="spin"></span>${esc(k.paying)}`;
     try {
-      if (window.__KOSDEMO) {
-        await new Promise((r) => setTimeout(r, 700));
-        if (method) { window.KOSDemo.updateCard(); location.replace('billing.html?card=1'); }
-        else { window.KOSDemo.subscribe(plan.id); location.replace('billing.html?welcome=1'); }
-        return;
-      }
       const { loadTossPayments } = await import("https://js.tosspayments.com/v2/standard");
       const toss = await loadTossPayments(TOSS.clientKey);
       const payment = toss.payment({ customerKey: user.uid });

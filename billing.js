@@ -27,9 +27,7 @@ const qp = (k) => new URLSearchParams(location.search).get(k);
 const esc = (x) => String(x == null ? "" : x)
   .replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;").replace(/"/g, "&quot;");
 const fns = isConfigured ? getFunctions(app, SOCIAL.functionsRegion || "asia-northeast3") : null;
-const call = (n, d) => (window.__KOSDEMO
-  ? window.KOSDemo.call(n, d || {})
-  : httpsCallable(fns, n)(d || {}));
+const call = (n, d) => httpsCallable(fns, n)(d || {});
 
 const T = {
   ko: {
@@ -305,7 +303,7 @@ function wire(st) {
 async function loadUsage() {
   if (!isConfigured) return null;
   try {
-    const res = await call("getUsage");
+    const res = await httpsCallable(fns, "getUsage")({});
     return res.data && res.data.active ? res.data : null;
   } catch (e) {
     // 아직 배포 안 됐거나 실패 — 이 줄만 빠지고 나머지는 그대로 보인다.
@@ -315,7 +313,6 @@ async function loadUsage() {
 }
 
 async function loadPayments(uid) {
-  if (window.__KOSDEMO) return window.KOSDemo.payments();
   if (!isConfigured) return [];
   try {
     const db = getFirestore(app);
