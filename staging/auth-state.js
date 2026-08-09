@@ -344,7 +344,13 @@ function start(){
   const wrap = mount();
   if(!wrap) return;
   if(!isConfigured){ renderLoggedOut(wrap); renderMobileAuth(null); return; }
-  onAuthStateChanged(auth, user => { user ? renderLoggedIn(wrap, user) : renderLoggedOut(wrap); renderMobileAuth(user); });
+  onAuthStateChanged(auth, user => {
+    /* 이 브라우저가 로그인 상태였는지 표시해 둔다. 워치리스트는 인증이 끝날
+       때까지 화면을 감추는데, 이 값이 있으면 감추지 않고 바로 그린다 — 그래야
+       그 페이지만 깜빡이지 않는다. */
+    try{ user ? localStorage.setItem('kos-signed','1') : localStorage.removeItem('kos-signed'); }catch(e){}
+    user ? renderLoggedIn(wrap, user) : renderLoggedOut(wrap); renderMobileAuth(user);
+  });
 }
 
 if(document.readyState === 'loading') document.addEventListener('DOMContentLoaded', start);

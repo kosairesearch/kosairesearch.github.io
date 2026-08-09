@@ -7,7 +7,9 @@
 <meta name="referrer" content="strict-origin-when-cross-origin" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <!-- 로그인 게이트: 로그인 확인 전 화면 숨김 -->
-<script>document.documentElement.classList.add('kos-locked');</script>
+<script>document.documentElement.classList.add('kos-locked');
+/* 스크립트가 끝내 안 뜨면 빈 화면으로 남는다 — 그건 안 뜨는 것보다 나쁘다. */
+setTimeout(function(){ document.documentElement.classList.remove('kos-locked'); }, 2500);</script>
 <style>html.kos-locked body{visibility:hidden}</style>
 <title>업종별 분석 — 코스피·코스닥 업종 동향과 주요 종목 | KOSAI</title>
 <meta name="description" content="업종별 시세와 종목 동향, 업종 내 주요 종목 비교 분석." />
@@ -583,7 +585,7 @@ KOSi18n.register({
   "스크리너":"Screener",
   "업종별":"Industries",
   "리포트":"Reports",
-  "워치리스트":"Watchlist","상호":"Company","대표":"CEO","사업자등록번호":"Business Reg. No.","통신판매업 신고":"Mail-order Reg. No.","주소":"Address","대표전화":"Phone","전자우편":"Email","요금제":"Pricing",
+  "워치리스트":"Watchlist","상호":"Company","대표":"CEO","사업자등록번호":"Business Reg. No.","통신판매업 신고":"Mail-order Reg. No.","주소":"Address","대표전화":"Phone","전자우편":"Email","요금제":"Pricing","멤버십":"Membership",
   // footer headings
   "서비스":"Services",
   "회사":"Company",
@@ -887,7 +889,7 @@ document.addEventListener('click', function (e) {
     <a href="industry.html" class="active">업종별</a>
     <a href="Screener.html">스크리너</a>
     <a href="Watchlist.html">워치리스트</a>
-    <a href="pricing.html">요금제</a>
+    <a href="pricing.html">멤버십</a>
   </div>
   <div class="nav-spacer"></div>
   <button class="icon-btn" id="themeBtn" aria-label="테마 전환" title="라이트/다크 전환">
@@ -903,7 +905,7 @@ document.addEventListener('click', function (e) {
   <a href="industry.html" class="active">업종별</a>
   <a href="Screener.html">스크리너</a>
   <a href="Watchlist.html">워치리스트</a>
-  <a href="pricing.html">요금제</a>
+  <a href="pricing.html">멤버십</a>
 </div>
 
 <div class="wrap" data-screen-label="04 Industry">
@@ -970,7 +972,7 @@ document.addEventListener('click', function (e) {
           <a class="brand" href="Home.html"><img class="brand-logo brand-logo--light" src="../assets/kosai-wordmark-black.png" alt="KOSAI" width="148" height="24"><img class="brand-logo brand-logo--dark" src="../assets/kosai-wordmark-white.png" alt="KOSAI" width="148" height="24"></a>
           <p>한국 상장사를 위한 AI 투자 리서치. 데이터와 분석을 한 페이지에.</p>
         </div>
-        <div class="foot-col"><h4>서비스</h4><ul><li><a href="Home.html">홈</a></li><li><a href="Reports.html">리포트</a></li><li><a href="industry.html">업종별</a></li><li><a href="Screener.html">스크리너</a></li><li><a href="Watchlist.html">워치리스트</a></li><li><a href="pricing.html">요금제</a></li></ul></div>
+        <div class="foot-col"><h4>서비스</h4><ul><li><a href="Home.html">홈</a></li><li><a href="Reports.html">리포트</a></li><li><a href="industry.html">업종별</a></li><li><a href="Screener.html">스크리너</a></li><li><a href="Watchlist.html">워치리스트</a></li><li><a href="pricing.html">멤버십</a></li></ul></div>
         <div class="foot-col"><h4>회사</h4><ul><li><a href="About.html">About</a></li><li><a href="Contact.html">문의하기</a></li><li><a href="Feedback.html">피드백</a></li></ul></div>
         
         <div class="foot-col"><h4>정책</h4><ul><li><a href="Terms.html">이용약관</a></li><li><a href="Privacy.html">개인정보처리방침</a></li></ul></div>

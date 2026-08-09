@@ -5,7 +5,9 @@
 <meta name="referrer" content="strict-origin-when-cross-origin" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <!-- 로그인 게이트: 로그인 확인 전 화면 숨김 -->
-<script>document.documentElement.classList.add('kos-locked');</script>
+<script>document.documentElement.classList.add('kos-locked');
+/* 스크립트가 끝내 안 뜨면 빈 화면으로 남는다 — 그건 안 뜨는 것보다 나쁘다. */
+setTimeout(function(){ document.documentElement.classList.remove('kos-locked'); }, 2500);</script>
 <style>html.kos-locked body{visibility:hidden}</style>
 <title>업종별 분석 — 코스피·코스닥 업종 동향과 주요 종목 | KOSAI</title>
 <meta name="description" content="업종별 시세와 종목 동향, 업종 내 주요 종목 비교 분석." />
@@ -88,7 +90,7 @@ body::before{content:"";position:fixed;inset:0;z-index:-1;pointer-events:none;
 :root[data-theme="dark"] .glass{background:rgba(28,30,42,0.62);border-color:rgba(255,255,255,0.10);
   box-shadow:var(--shadow-2),inset 0 1px 0 rgba(255,255,255,0.08)}
 
-.btn{display:inline-flex;align-items:center;justify-content:center;gap:6px;font:600 14px/1 var(--font-sans);
+.btn{text-decoration:none;display:inline-flex;align-items:center;justify-content:center;gap:6px;font:600 14px/1 var(--font-sans);
   border-radius:var(--radius-sm);cursor:pointer;border:0;transition:transform .12s,filter .15s,background .15s;white-space:nowrap}
 .btn:active{transform:scale(.98)}
 .btn-soft{background:rgba(0,0,0,.05);color:var(--fg-1);padding:10px 14px}
@@ -338,6 +340,8 @@ table.cmp tr.avg td{border-top:1.5px solid var(--border-2);font-weight:700}
 .disclaimer{margin-top:28px;padding:16px 18px;border-radius:var(--radius-md);background:rgba(0,0,0,.04);border:1px solid var(--border-2);font:400 13px/1.6 var(--font-sans);color:var(--fg-2)}
 :root[data-theme="dark"] .disclaimer{background:rgba(255,255,255,.04)}
 .disclaimer b{color:var(--fg-1)}
+.biz{display:flex;flex-wrap:wrap;gap:6px 18px;margin-top:18px;padding-top:16px;border-top:1px solid var(--border-2);font:500 12px/1.7 var(--font-sans);color:var(--fg-3)}
+.biz b{font-weight:600;color:var(--fg-2)}
 .foot-bottom{display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap;margin-top:22px;padding-top:18px;border-top:1px solid var(--border-2);font:500 12px var(--font-sans);color:var(--fg-3)}
 
 /* ===== responsive ===== */
@@ -579,7 +583,7 @@ KOSi18n.register({
   "스크리너":"Screener",
   "업종별":"Industries",
   "리포트":"Reports",
-  "워치리스트":"Watchlist",
+  "워치리스트":"Watchlist","상호":"Company","대표":"CEO","사업자등록번호":"Business Reg. No.","통신판매업 신고":"Mail-order Reg. No.","주소":"Address","대표전화":"Phone","전자우편":"Email","요금제":"Pricing","멤버십":"Membership",
   // footer headings
   "서비스":"Services",
   "회사":"Company",
@@ -854,6 +858,7 @@ KOSi18n.register({
     <a href="industry.html" class="active">업종별</a>
     <a href="Screener.html">스크리너</a>
     <a href="Watchlist.html">워치리스트</a>
+    <a href="pricing.html">멤버십</a>
   </div>
   <div class="nav-spacer"></div>
   <button class="icon-btn" id="themeBtn" aria-label="테마 전환" title="라이트/다크 전환">
@@ -869,6 +874,7 @@ KOSi18n.register({
   <a href="industry.html" class="active">업종별</a>
   <a href="Screener.html">스크리너</a>
   <a href="Watchlist.html">워치리스트</a>
+  <a href="pricing.html">멤버십</a>
 </div>
 
 <div class="wrap" data-screen-label="04 Industry">
@@ -877,7 +883,7 @@ KOSi18n.register({
   .ind-bc{font:600 12px var(--font-sans);color:var(--fg-3);letter-spacing:.03em;margin-bottom:10px}
   .ind-bc a{color:var(--fg-3);text-decoration:none}.ind-bc a:hover{color:var(--fg-1)}
   .ind-title{font:800 30px var(--font-sans);letter-spacing:-.02em;margin:0}
-  .ind-sub{margin:8px 0 0;font:400 15px/1.7 var(--font-sans);color:var(--fg-3);max-width:760px;text-wrap:pretty}
+  .ind-sub{margin:8px 0 0;font:400 15px/1.6 var(--font-sans);color:var(--fg-3);max-width:760px;text-wrap:pretty}
   .ind-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(260px,1fr));gap:14px;margin-top:22px}
   .ind-card{display:block;text-decoration:none;color:var(--fg-1);padding:18px;border-radius:var(--radius-lg);transition:transform .12s,box-shadow .15s}
   .ind-card:hover{transform:translateY(-2px);box-shadow:var(--shadow-2)}
@@ -896,19 +902,13 @@ KOSi18n.register({
   .ind-kpi .k{font:600 12px var(--font-sans);color:var(--fg-3)}
   .ind-kpi .v{margin-top:6px;font:700 20px var(--font-sans);font-variant-numeric:tabular-nums}
   .ind-sec{margin-top:30px}
-  .ind-sec h2{font:700 18px/1.4 var(--font-sans);margin:0 0 12px;letter-spacing:-.01em}
-  /* 본문 조판은 리포트(stock.html .prose)와 같은 값을 쓴다 — 같은 성격의 긴 한국어 산문이라
-     화면마다 글자 크기·줄간격이 다르면 읽는 리듬이 끊긴다. 폭을 제한하는 이유는 1120px
-     전폭에서 한 줄이 100자를 넘어 눈이 다음 줄 첫머리를 놓치기 때문. */
-  .ind-sec p{margin:0 0 14px;font:400 16px/1.75 var(--font-sans);color:var(--fg-2);max-width:860px;text-wrap:pretty}
-  .ind-risk{display:grid;gap:10px;max-width:860px}
+  .ind-sec h2{font:700 18px var(--font-sans);margin:0 0 12px;letter-spacing:-.01em}
+  .ind-sec p{margin:0 0 12px;font:400 15px/1.7 var(--font-sans);color:var(--fg-2)}
+  .ind-risk{display:grid;gap:10px}
   .ind-risk .r{padding:14px 16px;border-radius:var(--radius-md);background:rgba(0,0,0,.03)}
   :root[data-theme="dark"] .ind-risk .r{background:rgba(255,255,255,.05)}
-  .ind-risk .rt{font:700 15px/1.5 var(--font-sans);margin-bottom:5px}
-  .ind-risk .rb{font:400 15px/1.7 var(--font-sans);color:var(--fg-2)}
-  /* 한국어는 기본값이면 어절 한가운데서 줄이 바뀐다('유지|하고'). 어절 단위로 끊고,
-     끊을 곳 없는 긴 영문·수식만 예외로 잘라 넘긴다. */
-  .ind-sub,.ind-sec h2,.ind-sec p,.ind-risk .rt,.ind-risk .rb,.ind-ainote,.ind-card .ic-name{word-break:keep-all;overflow-wrap:break-word}
+  .ind-risk .rt{font:700 15px var(--font-sans);margin-bottom:5px}
+  .ind-risk .rb{font:400 15px/1.65 var(--font-sans);color:var(--fg-2)}
   .ind-tbl-wrap{overflow-x:auto;-webkit-overflow-scrolling:touch;margin-top:8px}
   /* 네이티브 스크롤바 라이트모드 색 대비 강화(배경과 겹쳐 안 보이던 문제) */
   .ind-tbl-wrap,.tbl-scroll,.rel-scroll{scrollbar-color:rgba(0,0,0,.4) rgba(0,0,0,.07)}
@@ -927,9 +927,7 @@ KOSi18n.register({
   :root[data-theme="dark"] .ind-tbl tbody tr:hover{background:rgba(255,255,255,.04)}
   .ind-tbl .nm{font-weight:700}.ind-tbl .rep{font-size:11px;color:var(--brand-blue);font-weight:700}
   .ind-back{display:inline-flex;align-items:center;gap:6px;font:600 13px var(--font-sans);color:var(--fg-3);text-decoration:none;margin-bottom:6px}
-  /* '.ind-sec p'(0,1,1)가 '.ind-ainote'(0,1,0)를 이겨 각주가 본문 크기로 나오던 것을 바로잡는다 */
-  .ind-ainote,.ind-sec p.ind-ainote{font:500 12px/1.6 var(--font-sans);color:var(--fg-3);margin-top:6px;max-width:860px}
-  .ind-stamp{margin:18px 0 0;font:500 12px/1.6 var(--font-sans);color:var(--fg-3);max-width:860px}
+  .ind-ainote{font:500 12px var(--font-sans);color:var(--fg-3);margin-top:6px}
   </style>
   <div id="indApp" data-i18n-skip></div>
 </div>
@@ -943,12 +941,21 @@ KOSi18n.register({
           <a class="brand" href="Home.html"><img class="brand-logo brand-logo--light" src="assets/kosai-wordmark-black.png" alt="KOSAI" width="148" height="24"><img class="brand-logo brand-logo--dark" src="assets/kosai-wordmark-white.png" alt="KOSAI" width="148" height="24"></a>
           <p>한국 상장사를 위한 AI 투자 리서치. 데이터와 분석을 한 페이지에.</p>
         </div>
-        <div class="foot-col"><h4>서비스</h4><ul><li><a href="Home.html">홈</a></li><li><a href="Reports.html">리포트</a></li><li><a href="industry.html">업종별</a></li><li><a href="Screener.html">스크리너</a></li><li><a href="Watchlist.html">워치리스트</a></li></ul></div>
+        <div class="foot-col"><h4>서비스</h4><ul><li><a href="Home.html">홈</a></li><li><a href="Reports.html">리포트</a></li><li><a href="industry.html">업종별</a></li><li><a href="Screener.html">스크리너</a></li><li><a href="Watchlist.html">워치리스트</a></li><li><a href="pricing.html">멤버십</a></li></ul></div>
         <div class="foot-col"><h4>회사</h4><ul><li><a href="About.html">About</a></li><li><a href="Contact.html">문의하기</a></li><li><a href="Feedback.html">피드백</a></li></ul></div>
         
         <div class="foot-col"><h4>정책</h4><ul><li><a href="Terms.html">이용약관</a></li><li><a href="Privacy.html">개인정보처리방침</a></li></ul></div>
       </div>
       <div class="disclaimer"><b>면책 조항</b> · 본 사이트의 모든 AI 분석·리포트는 투자 참고용 정보이며, 투자 권유나 추천이 아닙니다. 투자 판단과 그 결과에 대한 책임은 전적으로 이용자 본인에게 있습니다. 데이터는 지연될 수 있으며 오류가 포함될 수 있습니다.</div>
+      <div class="biz">
+        <span>상호 <b>[상호]</b></span>
+        <span>대표 <b>[대표자명]</b></span>
+        <span>사업자등록번호 <b>[000-00-00000]</b></span>
+        <span>통신판매업 신고 <b>[제0000-0000-00000호]</b></span>
+        <span>주소 <b>[사업장 주소]</b></span>
+        <span>대표전화 <b>[00-0000-0000]</b></span>
+        <span>전자우편 <b>help@kosai.kr</b></span>
+      </div>
       <div class="foot-bottom"><span>© 2026 KOSAI — All rights reserved.</span></div>
     </div>
   </div>
@@ -983,11 +990,8 @@ themeBtn.addEventListener('click',()=>applyTheme(root.getAttribute('data-theme')
     "한국 상장사를 업종으로 나눠 시가총액·등락률과 AI 업종 분석을 제공합니다.":"Korean listed companies grouped by industry — market cap, returns, and AI sector analysis.",
     "시가총액 합계":"Total market cap","시장 비중":"Market weight","종목 수":"Stocks","평균 등락률":"Avg. change",
     "업종 개요":"Overview","산업 구조·가치사슬":"Structure & value chain","최근 동향":"Recent trends","향후 전망":"Outlook",
-    "리스크 요인":"Risk factors","업종 내 주요 종목":"Key stocks","테마":"Themes",
-    "분류 안내":"About this group",
-    "여러 업종에 걸쳐 있거나 기존 분류에 속하지 않는 기업을 모은 구간입니다. 사업 내용이 서로 달라 하나의 업황으로 묶이지 않으므로 AI 업종 분석을 제공하지 않습니다.":"This group holds companies that span several industries or fall outside the existing categories. Because their businesses differ too widely to share a single industry outlook, no AI sector analysis is provided.",
-    "각 기업의 사업 구조와 실적은 아래 종목의 개별 리포트에서 확인하실 수 있습니다.":"Each company's business model and results are covered in its individual stock report below.",
-    "AI 업종 분석은 분기별 갱신 시 반영됩니다.":"AI sector analysis is added at the quarterly refresh.",
+    "리스크 요인":"Risk factors","업종 내 주요 종목":"Key stocks","AI 업종 분석 준비 중입니다.":"AI sector analysis coming soon.","테마":"Themes",
+    "분석 참고: 업종 상장사 종합 + 웹 검색":"Source: aggregated listed peers + web search",
     "종목":"Stock","현재가":"Price","등락률":"Change","시가총액":"Market Cap","리포트":"Report"
   });}
   function esc(x){return String(x==null?'':x).replace(/[&<>"]/g,function(c){return {'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c];});}
@@ -996,37 +1000,7 @@ themeBtn.addEventListener('click',()=>applyTheme(root.getAttribute('data-theme')
   function mcap(j){j=j||0;if(j>=1)return EN()?'\u20a9'+j.toLocaleString('en-US',{maximumFractionDigits:1})+'T':j.toLocaleString('en-US',{maximumFractionDigits:1})+'\uc870';return EN()?'\u20a9'+Math.round(j*1000).toLocaleString('en-US')+'B':Math.round(j*10000).toLocaleString('ko-KR')+'\uc5b5';}
   function dir(c){return c>0?'up':c<0?'down':'flat';}
   function bi(o){if(!o)return '';return EN()?(o.en||o.ko||''):(o.ko||o.en||'');}
-  // 문장 단위로 자른다. 마침표 뒤에 공백이 있을 때만 끊으므로 '23.4%', '$25.8'은 붙어 있는다.
-  function sents(t){
-    var out=[],last=0,re=/[.!?](?=\s)/g,m;
-    while((m=re.exec(t))){out.push(t.slice(last,m.index+1));last=m.index+1;}
-    if(last<t.length)out.push(t.slice(last));
-    return out.map(function(s){return s.replace(/^\s+/,'');}).filter(Boolean);
-  }
-  // 업종 분석 본문은 문단 구분 없이 400~670자가 한 덩어리로 온다. 그대로 <p> 하나에
-  // 넣으면 모바일에서 20줄짜리 벽이 되므로, 문장 경계에서 비슷한 길이로 나눈다.
-  function chunk(t){
-    t=t.trim();if(t.length<=320)return [t];
-    var ss=sents(t);if(ss.length<2)return [t];
-    var n=Math.max(2,Math.round(t.length/280)),target=t.length/n,out=[],cur='';
-    ss.forEach(function(s){
-      if(cur&&cur.length+s.length>target*1.35){out.push(cur);cur=s;}
-      else cur=cur?cur+' '+s:s;
-    });
-    if(cur)out.push(cur);
-    // 'U.S.' 같은 약어 뒤에서 잘못 끊긴 조각은 앞 문단에 도로 붙인다.
-    for(var i=out.length-1;i>0;i--)if(out[i].length<100){out[i-1]+=' '+out[i];out.splice(i,1);}
-    if(out.length>1&&out[0].length<100){out[1]=out[0]+' '+out[1];out.shift();}
-    return out;
-  }
   function tn(x){return T(x);}
-  var EN_MON=['Jan','Feb','Mar','Apr','May','Jun','Jul','Aug','Sep','Oct','Nov','Dec'];
-  // "2026-08-06 14:16" → "2026년 8월 6일" / "Aug 6, 2026"
-  function fmtDay(s){
-    var m=/^(\d{4})-(\d{2})-(\d{2})/.exec(s||'');if(!m)return '';
-    var y=+m[1],mo=+m[2],d=+m[3];
-    return EN()?EN_MON[mo-1]+' '+d+', '+y:y+'년 '+mo+'월 '+d+'일';
-  }
   function qp(k){return new URLSearchParams(location.search).get(k);}
   function scats(s){return (s.categories&&s.categories.length)?s.categories:[s.sector||'기타'];}
   function mkRow(sec,lst,total){
@@ -1070,16 +1044,6 @@ themeBtn.addEventListener('click',()=>applyTheme(root.getAttribute('data-theme')
       +'<div class="ind-grid">'+cards+'</div>'
       +((a.themeRows||[]).length?('<h2 style="margin:38px 0 14px;font:700 18px var(--font-sans);letter-spacing:-.02em;color:var(--fg-2)">'+T('테마')+'</h2><div class="ind-grid">'+a.themeRows.map(function(r){var d=dir(r.chg);var tops=r.list.slice(0,3).map(function(s){return '<span>'+esc(tn(s.name))+'</span>';}).join('');return '<a class="ind-card glass" href="industry.html?sector='+encodeURIComponent(r.sec)+'"><div class="ic-top"><span class="ic-name">'+esc(tn(r.sec))+'</span></div><div class="ic-mc">'+mcap(r.mc)+'</div><div class="ic-meta">'+(EN()?r.n+' stocks':r.n+'개')+' · <span class="ic-chg '+d+'">'+pct(r.chg)+'</span></div><div class="ic-top3">'+tops+'</div></a>';}).join('')+'</div>'):'');
   }
-  // 분석 끝의 출처·작성일 한 줄. 본문의 시총·비중은 작성 시점 값이라 상단 실시간
-  // 지표와 다를 수밖에 없다 — 언제 쓴 글인지 밝혀 그 차이를 설명한다.
-  function stamp(an){
-    var d=fmtDay((an&&an.generatedAt)||(window.KOS_SECTORS&&KOS_SECTORS.lastUpdated));
-    if(!d)return '';
-    var src=an&&an.sources&&an.sources.length;
-    return '<p class="ind-stamp">'+esc(EN()
-      ?'Written '+d+(src?' · aggregated listed peers and web search':'')+' · figures in the text are as of that date; the metrics above are live.'
-      :d+' 작성'+(src?' · 업종 상장사 종합과 웹 검색 참고':'')+' · 본문 수치는 작성 시점 기준이며, 위 지표는 실시간입니다.')+'</p>';
-  }
   function renderDetail(sec){
     var a=agg();
     var row=null;a.rows.forEach(function(r){if(r.sec===sec)row=r;});
@@ -1096,28 +1060,15 @@ themeBtn.addEventListener('click',()=>applyTheme(root.getAttribute('data-theme')
     var ai='';
     if(an){
       function sec2(t,html){return html?'<div class="ind-sec"><h2>'+T(t)+'</h2>'+html+'</div>':'';}
-      // 문단은 빈 줄로만 나눈다. 개행 하나로 나누면 문장 중간에 낀 개행에서
-      // 문단이 끊겨 한 문장이 여러 <p> 로 쪼개진다(리포트 렌더러와 같은 규칙).
-      function paras(o){
-        var t=bi(o);if(!t)return '';
-        var out=[];String(t).split(/\n\n+/).forEach(function(b){out=out.concat(chunk(b.replace(/\s*\n\s*/g,' ')));});
-        return out.map(function(x){return '<p>'+esc(x)+'</p>';}).join('');
-      }
+      function paras(o){var t=bi(o);if(!t)return '';return t.split(/\n+/).map(function(x){return '<p>'+esc(x)+'</p>';}).join('');}
       var risks=(an.risks||[]).map(function(r){return '<div class="r"><div class="rt">'+esc(bi(r.title))+'</div><div class="rb">'+esc(bi(r.body))+'</div></div>';}).join('');
       ai=sec2('업종 개요',paras(an.overview))
         +sec2('산업 구조·가치사슬',paras(an.structure))
         +sec2('최근 동향',paras(an.trends))
         +sec2('향후 전망',paras(an.outlook))
-        +(risks?'<div class="ind-sec"><h2>'+T('리스크 요인')+'</h2><div class="ind-risk">'+risks+'</div></div>':'')
-        +stamp(an);
-    }else if(sec==='기타'){
-      // '기타'는 업종 분석 생성 대상에서 제외된다(generate_sectors.py). 아무 설명 없이
-      // AI 섹션만 비면 미완성 페이지로 보이므로, 왜 없는지를 명시한다.
-      ai='<div class="ind-sec"><h2>'+T('분류 안내')+'</h2>'
-        +'<p>'+T('여러 업종에 걸쳐 있거나 기존 분류에 속하지 않는 기업을 모은 구간입니다. 사업 내용이 서로 달라 하나의 업황으로 묶이지 않으므로 AI 업종 분석을 제공하지 않습니다.')+'</p>'
-        +'<p>'+T('각 기업의 사업 구조와 실적은 아래 종목의 개별 리포트에서 확인하실 수 있습니다.')+'</p></div>';
+        +(risks?'<div class="ind-sec"><h2>'+T('리스크 요인')+'</h2><div class="ind-risk">'+risks+'</div></div>':'');
     }else{
-      ai='<div class="ind-sec"><p class="ind-ainote">'+T('AI 업종 분석은 분기별 갱신 시 반영됩니다.')+'</p></div>';
+      ai='<div class="ind-sec"><p class="ind-ainote">'+T('AI 업종 분석 준비 중입니다.')+'</p></div>';
     }
     // 종목 리스트(시총순 상위 20)
     var rowsHtml=row.list.slice(0,20).map(function(s){
@@ -1135,7 +1086,7 @@ themeBtn.addEventListener('click',()=>applyTheme(root.getAttribute('data-theme')
       +kpis+ai
       +'<div class="ind-sec"><h2>'+T('업종 내 주요 종목')+'</h2>'
       +'<div class="ind-tbl-wrap"><table class="ind-tbl"><thead><tr><th>'+T('종목')+'</th><th>'+T('현재가')+'</th><th>'+T('등락률')+'</th><th>'+T('시가총액')+'</th></tr></thead><tbody>'+rowsHtml+'</tbody></table></div>'
-      +'</div>';
+      +(an&&an.sources&&an.sources.length?'<p class="ind-ainote">'+T('분석 참고: 업종 상장사 종합 + 웹 검색')+'</p>':'')+'</div>';
   }
   function setSEO(sec){
     try{

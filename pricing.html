@@ -1,8 +1,6 @@
 <!doctype html>
 <html lang="ko">
 <head>
-<script type="module" src="demo-backend.js"></script>
-<meta name="robots" content="noindex,nofollow" />
 <meta charset="utf-8" />
 <meta name="referrer" content="strict-origin-when-cross-origin" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -23,11 +21,11 @@
 <meta name="twitter:description" content="KOSAI 요금제 안내. 핵심 지표·리포트 개요·사업 구조·실적 추이는 무료, 분석·전망·리스크는 PRO에서 볼 수 있습니다." />
 <meta name="twitter:image" content="https://kosai.kr/assets/og-image.png?v=3" />
 <style>
-@font-face{font-family:"Pretendard";font-weight:400;font-style:normal;font-display:swap;src:url("../fonts/Pretendard-Regular.woff2") format("woff2"), url("../fonts/Pretendard-Regular.otf") format("opentype")}
-@font-face{font-family:"Pretendard";font-weight:500;font-style:normal;font-display:swap;src:url("../fonts/Pretendard-Medium.woff2") format("woff2"), url("../fonts/Pretendard-Medium.otf") format("opentype")}
-@font-face{font-family:"Pretendard";font-weight:600;font-style:normal;font-display:swap;src:url("../fonts/Pretendard-SemiBold.woff2") format("woff2"), url("../fonts/Pretendard-SemiBold.otf") format("opentype")}
-@font-face{font-family:"Pretendard";font-weight:700;font-style:normal;font-display:swap;src:url("../fonts/Pretendard-Bold.woff2") format("woff2"), url("../fonts/Pretendard-Bold.otf") format("opentype")}
-@font-face{font-family:"Pretendard";font-weight:800;font-style:normal;font-display:swap;src:url("../fonts/Pretendard-ExtraBold.woff2") format("woff2"), url("../fonts/Pretendard-ExtraBold.otf") format("opentype")}
+@font-face{font-family:"Pretendard";font-weight:400;font-style:normal;font-display:swap;src:url("fonts/Pretendard-Regular.woff2") format("woff2"), url("fonts/Pretendard-Regular.otf") format("opentype")}
+@font-face{font-family:"Pretendard";font-weight:500;font-style:normal;font-display:swap;src:url("fonts/Pretendard-Medium.woff2") format("woff2"), url("fonts/Pretendard-Medium.otf") format("opentype")}
+@font-face{font-family:"Pretendard";font-weight:600;font-style:normal;font-display:swap;src:url("fonts/Pretendard-SemiBold.woff2") format("woff2"), url("fonts/Pretendard-SemiBold.otf") format("opentype")}
+@font-face{font-family:"Pretendard";font-weight:700;font-style:normal;font-display:swap;src:url("fonts/Pretendard-Bold.woff2") format("woff2"), url("fonts/Pretendard-Bold.otf") format("opentype")}
+@font-face{font-family:"Pretendard";font-weight:800;font-style:normal;font-display:swap;src:url("fonts/Pretendard-ExtraBold.woff2") format("woff2"), url("fonts/Pretendard-ExtraBold.otf") format("opentype")}
 :root{
   --brand-blue:rgb(13,105,212);--brand-cyan:rgb(95,197,255);
   --bg-1:rgb(242,243,250);--fg-1:rgb(0,0,0);--fg-2:rgba(0,0,0,0.7);--fg-3:rgba(0,0,0,0.5);
@@ -481,10 +479,10 @@ KOSi18n.register({
 .foot-brand .brand-logo{height:14px}
 @media(max-width:640px){.brand-logo{height:11px}}
 </style>
-<link rel="icon" type="image/svg+xml" href="../assets/kosai-icon-dark.svg?v=k2">
-  <link rel="icon" type="image/png" sizes="512x512" href="../assets/favicon.png?v=k2">
-<link rel="icon" type="image/png" sizes="32x32" href="../assets/favicon.png?v=k2">
-<link rel="apple-touch-icon" sizes="180x180" href="../assets/apple-touch-icon.png?v=k2">
+<link rel="icon" type="image/svg+xml" href="assets/kosai-icon-dark.svg?v=k2">
+  <link rel="icon" type="image/png" sizes="512x512" href="assets/favicon.png?v=k2">
+<link rel="icon" type="image/png" sizes="32x32" href="assets/favicon.png?v=k2">
+<link rel="apple-touch-icon" sizes="180x180" href="assets/apple-touch-icon.png?v=k2">
   <script src="analytics.js"></script>
 <script>
 /* i18n: title·aria-label 속성 번역(영어 모드). 동적(data-i18n-skip) 영역은 각 페이지 템플릿의 T()가 담당 */
@@ -511,38 +509,9 @@ KOSi18n.register({
 </script>
 </head>
 <body>
-<div class="kos-staging-bar">
-  <b>STAGING</b><span>미리보기입니다. 결제는 모의 결제이며 실제로 돈이 오가지 않습니다.</span>
-  <a href="#" id="kosDemoReset">구독 초기화</a>
-  <a href="../">실제 사이트로</a>
-</div>
-<style>
-.kos-staging-bar{position:sticky;top:0;z-index:200;display:flex;flex-wrap:wrap;align-items:center;
-  gap:12px;padding:9px 16px;background:#b4341f;color:#fff;
-  font:600 12.5px var(--font-sans),system-ui,sans-serif}
-.kos-staging-bar b{font-weight:800;letter-spacing:.05em}
-.kos-staging-bar span{margin-right:auto}
-.kos-staging-bar a{color:#fff;text-decoration:underline;text-underline-offset:2px}
-</style>
-<script>
-/* 모의 구독을 지운다. 여러 상태(비구독 → BASIC → PRO → 해지)를 몇 번이고
-   다시 밟아 볼 수 있어야 미리보기가 쓸모 있다. 모듈보다 먼저 실행되므로
-   KOSDemo 는 누를 때 찾는다. */
-document.addEventListener('click', function (e) {
-  var a = e.target.closest && e.target.closest('#kosDemoReset');
-  if (!a) return;
-  e.preventDefault();
-  if (window.KOSDemo) window.KOSDemo.reset();
-  else ['kos-demo-sub', 'kos-demo-reads', 'kos-demo-pays'].forEach(function (k) {
-    try { localStorage.removeItem(k); } catch (err) {}
-  });
-  location.reload();
-});
-</script>
-
 
 <nav class="nav glass" data-screen-label="Pricing · Nav">
-  <a class="brand" href="Home.html"><img class="brand-logo brand-logo--light" src="../assets/kosai-wordmark-black.png" alt="KOSAI" width="148" height="24"><img class="brand-logo brand-logo--dark" src="../assets/kosai-wordmark-white.png" alt="KOSAI" width="148" height="24"></a>
+  <a class="brand" href="Home.html"><img class="brand-logo brand-logo--light" src="assets/kosai-wordmark-black.png" alt="KOSAI" width="148" height="24"><img class="brand-logo brand-logo--dark" src="assets/kosai-wordmark-white.png" alt="KOSAI" width="148" height="24"></a>
   <div class="nav-links">
     <a href="Home.html">홈</a>
     <a href="Reports.html">리포트</a>
@@ -741,7 +710,7 @@ document.addEventListener('click', function (e) {
   <div class="wrap">
     <div class="foot-inner glass">
       <div class="foot-grid">
-        <div class="foot-brand"><a class="brand" href="Home.html"><img class="brand-logo brand-logo--light" src="../assets/kosai-wordmark-black.png" alt="KOSAI" width="148" height="24"><img class="brand-logo brand-logo--dark" src="../assets/kosai-wordmark-white.png" alt="KOSAI" width="148" height="24"></a><p>한국 상장사를 위한 AI 투자 리서치. 데이터와 분석을 한 페이지에.</p></div>
+        <div class="foot-brand"><a class="brand" href="Home.html"><img class="brand-logo brand-logo--light" src="assets/kosai-wordmark-black.png" alt="KOSAI" width="148" height="24"><img class="brand-logo brand-logo--dark" src="assets/kosai-wordmark-white.png" alt="KOSAI" width="148" height="24"></a><p>한국 상장사를 위한 AI 투자 리서치. 데이터와 분석을 한 페이지에.</p></div>
         <div class="foot-col"><h4>서비스</h4><ul><li><a href="Home.html">홈</a></li><li><a href="Reports.html">리포트</a></li><li><a href="industry.html">업종별</a></li><li><a href="Screener.html">스크리너</a></li><li><a href="Watchlist.html">워치리스트</a></li><li><a href="pricing.html">멤버십</a></li></ul></div>
         <div class="foot-col"><h4>회사</h4><ul><li><a href="About.html">About</a></li><li><a href="Contact.html">문의하기</a></li><li><a href="Feedback.html">피드백</a></li></ul></div>
         <div class="foot-col"><h4>정책</h4><ul><li><a href="Terms.html">이용약관</a></li><li><a href="Privacy.html">개인정보처리방침</a></li></ul></div>

@@ -5,7 +5,9 @@
 <meta name="referrer" content="strict-origin-when-cross-origin" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <!-- 로그인 게이트: 로그인 확인 전 화면 숨김 -->
-<script>document.documentElement.classList.add('kos-locked');</script>
+<script>document.documentElement.classList.add('kos-locked');
+/* 스크립트가 끝내 안 뜨면 빈 화면으로 남는다 — 그건 안 뜨는 것보다 나쁘다. */
+setTimeout(function(){ document.documentElement.classList.remove('kos-locked'); }, 2500);</script>
 <style>html.kos-locked body{visibility:hidden}</style>
 <title>종목 분석 · 주가·PER·PBR·배당·실적 | KOSAI</title>
 <meta name="description" content="종목별 AI 분석 리포트 — 핵심 지표, 재무 분석, 밸류에이션, 뉴스 요약과 리스크 요인." />
@@ -91,7 +93,7 @@ body::before{content:"";position:fixed;inset:0;z-index:-1;pointer-events:none;
 :root[data-theme="dark"] .glass{background:rgba(28,30,42,0.62);border-color:rgba(255,255,255,0.10);
   box-shadow:var(--shadow-2),inset 0 1px 0 rgba(255,255,255,0.08)}
 
-.btn{display:inline-flex;align-items:center;justify-content:center;gap:6px;font:600 14px/1 var(--font-sans);
+.btn{text-decoration:none;display:inline-flex;align-items:center;justify-content:center;gap:6px;font:600 14px/1 var(--font-sans);
   border-radius:var(--radius-sm);cursor:pointer;border:0;transition:transform .12s,filter .15s,background .15s;white-space:nowrap}
 .btn:active{transform:scale(.98)}
 .btn-primary{background:#000;color:#fff;padding:11px 16px;box-shadow:var(--shadow-1)}
@@ -306,6 +308,58 @@ table.dt .pos{color:var(--up);font-weight:700}table.dt .neg{color:var(--down);fo
 .wrapup p{margin:0 0 12px;font:400 16px/1.7 var(--font-sans);color:var(--fg-2)}
 .wrapup p:last-child{margin:0}
 
+/* 잠긴 구간 미리보기 — 섹션 제목과 첫 문장은 그대로 두고, 나머지 분량만
+   흐린 글자로 깔아 '얼마나 더 있는지'를 눈으로 보여 준다.
+   ⚠️ 여기 깔리는 글자는 본문이 아니다. 본문을 내려보내 놓고 CSS 로 덮으면
+      개발자 도구에서 한 줄 지우면 그대로 읽힌다 — 안 판 것과 같다. 서버가
+      주는 건 첫 문장과 남은 글자 수뿐이고, 흐린 부분은 그 수만큼 화면에서
+      만들어 낸 무의미한 글자다(scripts/report_split.py teaser). */
+/* 잠긴 구간은 잘라 내지 않는다. 분량이 얼마나 되는지 보여 주는 게 목적이라
+   길이를 줄이면 뜻이 사라진다. 대신 뒤로 물러난 배경처럼 크게 뭉개고,
+   안내 카드가 그 위에 선명하게 떠서 스크롤을 따라온다. */
+.tz{position:relative;margin-top:8px}
+.tz-body{filter:blur(11px);-webkit-filter:blur(11px);opacity:.9;
+  user-select:none;-webkit-user-select:none;pointer-events:none;
+  /* 흐림이 위아래 경계에서 뚝 끊기지 않게 서서히 배경으로 넘긴다. */
+  -webkit-mask-image:linear-gradient(to bottom,transparent,#000 6%,#000 88%,transparent);
+  mask-image:linear-gradient(to bottom,transparent,#000 6%,#000 88%,transparent)}
+.tz-body .sec{padding-top:0}
+.tz-body{color:var(--fg-1)}
+/* 좁은 화면은 한 줄에 들어가는 글자가 절반이라 같은 분량이 두 배 길이가 된다.
+   글자를 줄여 그만큼만 되돌린다 — 분량의 비례는 그대로 남는다. */
+@media (max-width:700px){
+  .tz-body p{font-size:12px;line-height:1.75}
+  .tz-body .sec-title{font-size:20px}
+}
+/* 카드는 .tz-body 밖에 둔다 — filter 가 걸린 요소 안에 넣으면 카드까지 흐려진다.
+   sticky 로 화면 가운데쯤에 붙여, 흐린 구간을 훑는 동안 계속 보이게 한다. */
+.tz-lock{position:absolute;left:0;right:0;top:0;bottom:0;pointer-events:none}
+.tz-lock .lockwrap{position:sticky;top:calc(50vh - 130px);margin:0 auto}
+.tz-lock .lock{pointer-events:auto}
+.tz-lock .lock::before{content:none}
+
+/* 유료 구간 잠금 — 미리보기 아래에 놓인다.
+   앞 섹션이 잘린 게 아니라 '여기서부터 유료'임을 보여야 하므로,
+   잠긴 섹션 제목을 그대로 나열해 무엇을 사는지 알 수 있게 한다. */
+.lockwrap{margin:8px auto 0;max-width:880px}
+.lock{position:relative;padding:30px 26px 28px;text-align:center;overflow:hidden}
+.lock::before{content:"";position:absolute;left:0;right:0;top:-46px;height:46px;
+  background:linear-gradient(to bottom,transparent,var(--bg-1))}
+.lock h3{margin:0 0 8px;font:800 clamp(19px,2.4vw,23px)/1.35 var(--font-sans);letter-spacing:-.02em;
+  word-break:keep-all;overflow-wrap:break-word}
+.lock .lock-sub{margin:0 auto;max-width:560px;font:400 15px/1.7 var(--font-sans);color:var(--fg-2);
+  word-break:keep-all;overflow-wrap:break-word}
+.lock-list{display:flex;flex-wrap:wrap;justify-content:center;gap:7px;margin:20px auto 0;max-width:620px}
+.lock-list span{padding:6px 12px;border-radius:var(--pill);background:rgba(0,0,0,.045);
+  font:600 13px var(--font-sans);color:var(--fg-2)}
+:root[data-theme="dark"] .lock-list span{background:rgba(255,255,255,.07)}
+.lock-cta{display:flex;flex-wrap:wrap;justify-content:center;gap:9px;margin-top:22px}
+.lock-note{margin:14px 0 0;font:500 12.5px/1.6 var(--font-sans);color:var(--fg-3)}
+.lock-note a{color:inherit}
+.lock-err{margin:14px auto 0;max-width:560px;font:500 13px/1.6 var(--font-sans);
+  color:var(--fg-2);display:none}
+.lock-err.show{display:block}
+
 /* disclaimer + footer */
 .disclaimer{margin:40px auto 0;max-width:880px;padding:18px 20px;border-radius:var(--radius-md);background:rgba(0,0,0,.04);border:1px solid var(--border-2);font:400 13px/1.65 var(--font-sans);color:var(--fg-2)}
 :root[data-theme="dark"] .disclaimer{background:rgba(255,255,255,.04)}
@@ -319,6 +373,8 @@ table.dt .pos{color:var(--up);font-weight:700}table.dt .neg{color:var(--down);fo
 .foot-col ul{list-style:none;margin:0;padding:0;display:flex;flex-direction:column;gap:9px}
 .foot-col a{font:400 14px var(--font-sans);color:var(--fg-2);text-decoration:none}
 .foot-col a:hover{color:var(--fg-1)}
+.biz{display:flex;flex-wrap:wrap;gap:6px 18px;margin-top:18px;padding-top:16px;border-top:1px solid var(--border-2);font:500 12px/1.7 var(--font-sans);color:var(--fg-3)}
+.biz b{font-weight:600;color:var(--fg-2)}
 .foot-bottom{display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap;margin-top:22px;padding-top:18px;border-top:1px solid var(--border-2);font:500 12px var(--font-sans);color:var(--fg-3)}
 
 /* responsive */
@@ -595,7 +651,7 @@ KOSi18n.register({
   "스크리너":"Screener",
   "업종별":"Industries",
   "리포트":"Reports",
-  "워치리스트":"Watchlist",
+  "워치리스트":"Watchlist","상호":"Company","대표":"CEO","사업자등록번호":"Business Reg. No.","통신판매업 신고":"Mail-order Reg. No.","주소":"Address","대표전화":"Phone","전자우편":"Email","요금제":"Pricing","멤버십":"Membership",
   // footer headings
   "서비스":"Services",
   "회사":"Company",
@@ -839,6 +895,7 @@ KOSi18n.register({
     <a href="industry.html">업종별</a>
     <a href="Screener.html">스크리너</a>
     <a href="Watchlist.html">워치리스트</a>
+    <a href="pricing.html">멤버십</a>
   </div>
   <div class="nav-spacer"></div>
   <button class="icon-btn" id="themeBtn" aria-label="테마 전환" title="라이트/다크 전환">
@@ -854,6 +911,7 @@ KOSi18n.register({
   <a href="industry.html">업종별</a>
   <a href="Screener.html">스크리너</a>
   <a href="Watchlist.html">워치리스트</a>
+  <a href="pricing.html">멤버십</a>
 </div>
 
 <div class="wrap" data-screen-label="03 Ticker Detail" data-i18n-skip>
@@ -895,10 +953,19 @@ KOSi18n.register({
     <div class="foot-inner glass">
       <div class="foot-grid">
         <div class="foot-brand"><a class="brand" href="Home.html"><img class="brand-logo brand-logo--light" src="assets/kosai-wordmark-black.png" alt="KOSAI" width="148" height="24"><img class="brand-logo brand-logo--dark" src="assets/kosai-wordmark-white.png" alt="KOSAI" width="148" height="24"></a><p>한국 상장사를 위한 AI 투자 리서치. 데이터와 분석을 한 페이지에.</p></div>
-        <div class="foot-col"><h4>서비스</h4><ul><li><a href="Home.html">홈</a></li><li><a href="Reports.html">리포트</a></li><li><a href="industry.html">업종별</a></li><li><a href="Screener.html">스크리너</a></li><li><a href="Watchlist.html">워치리스트</a></li></ul></div>
+        <div class="foot-col"><h4>서비스</h4><ul><li><a href="Home.html">홈</a></li><li><a href="Reports.html">리포트</a></li><li><a href="industry.html">업종별</a></li><li><a href="Screener.html">스크리너</a></li><li><a href="Watchlist.html">워치리스트</a></li><li><a href="pricing.html">멤버십</a></li></ul></div>
         <div class="foot-col"><h4>회사</h4><ul><li><a href="About.html">About</a></li><li><a href="Contact.html">문의하기</a></li><li><a href="Feedback.html">피드백</a></li></ul></div>
         
         <div class="foot-col"><h4>정책</h4><ul><li><a href="Terms.html">이용약관</a></li><li><a href="Privacy.html">개인정보처리방침</a></li></ul></div>
+      </div>
+      <div class="biz">
+        <span>상호 <b>[상호]</b></span>
+        <span>대표 <b>[대표자명]</b></span>
+        <span>사업자등록번호 <b>[000-00-00000]</b></span>
+        <span>통신판매업 신고 <b>[제0000-0000-00000호]</b></span>
+        <span>주소 <b>[사업장 주소]</b></span>
+        <span>대표전화 <b>[00-0000-0000]</b></span>
+        <span>전자우편 <b>help@kosai.kr</b></span>
       </div>
       <div class="foot-bottom"><span>© 2026 KOSAI — All rights reserved.</span></div>
     </div>
@@ -956,7 +1023,18 @@ KOSi18n.register({
       srcKRX:'한국거래소 (KRX)', srcKRXsub:'시세·시가총액 데이터', srcDART:'금융감독원 전자공시 (DART)', srcDARTsub:'재무·공시 원문',
       discT:'면책 조항',
       disc:'· 본 콘텐츠는 AI가 시장 데이터와 웹 검색 결과를 분석한 정보 제공용이며, 투자 권유나 추천이 아닙니다. 투자 판단과 그 책임은 투자자 본인에게 있습니다. 데이터는 지연되거나 오류가 포함될 수 있습니다.',
-      none:'이 종목의 AI 리포트는 아직 준비되지 않았습니다. 시가총액 상위 종목부터 순차적으로 생성하고 있습니다.' },
+      none:'이 종목의 AI 리포트는 아직 준비되지 않았습니다. 시가총액 상위 종목부터 순차적으로 생성하고 있습니다.',
+      lock:{ title:'리포트 전문은 구독 회원에게 제공됩니다',
+        sub:'BASIC 월 9,900원부터',
+        subN:'{s}개 섹션 · 약 {m}분 분량 · BASIC 월 9,900원부터',
+        items:['실적 분석','산업 분석','전망','밸류에이션','리스크','종합 의견'],
+        cta:'요금제 보기', ctaLogin:'로그인하고 이어보기', ctaOpen:'이어서 읽기',
+        note:'이미 구독 중이시라면 로그인해 주세요.',
+        loading:'불러오는 중…',
+        limitT:'일일 열람 한도에 도달했습니다', limitS:'열람 한도는 매일 자정(한국 시간)에 초기화됩니다.',
+        upgrade:'PRO로 업그레이드',
+        errNone:'이 종목은 유료 구간이 아직 준비되지 않았습니다.',
+        errFail:'불러오지 못했습니다. 잠시 후 다시 시도해 주세요.' } },
     en:{ home:'Home', reports:'Reports', watch:'Add to watchlist', watched:'Added to watchlist', watchShort:'Watchlist',
       mk:{price:'Price',chg:'Day change',mcap:'Market cap',amt:'Trading value',vol:'Volume',shares:'Shares out.',market:'Market',sector:'Sector',per:'P/E',pbr:'P/B',roe:'ROE',eps:'EPS',divy:'Div. yield'},
       sec:{overview:'Report Overview',business:'Business',recent:'Recent Results & Price',outlook:'Outlook',bull:'Bull Factors',bear:'Bear Factors',risk:'Risk Factors',verdict:'Verdict',sources:'Sources',fin:'Financial Trends',earnings:'Earnings Analysis',industry:'Industry',valuation:'Valuation',chk:'What to Watch Next'},
@@ -966,7 +1044,18 @@ KOSi18n.register({
       srcKRX:'Korea Exchange (KRX)', srcKRXsub:'Price & market-cap data', srcDART:'DART (FSS e-disclosure)', srcDARTsub:'Financials & filings',
       discT:'Disclaimer',
       disc:'· This content is AI-generated analysis of market data and web search results, for information only — not investment solicitation or a recommendation. Investment decisions and their outcomes are your own responsibility. Data may be delayed or contain errors.',
-      none:'An AI report for this stock is not ready yet. We are generating them in order of market cap.' }
+      none:'An AI report for this stock is not ready yet. We are generating them in order of market cap.',
+      lock:{ title:'The full report is available to subscribers',
+        sub:'BASIC from KRW 9,900 per month',
+        subN:'{s} sections · about {m} min read · BASIC from KRW 9,900 per month',
+        items:['Earnings','Industry','Outlook','Valuation','Risks','Verdict'],
+        cta:'See plans', ctaLogin:'Sign in and continue', ctaOpen:'Continue reading',
+        note:'Already subscribed? Sign in.',
+        loading:'Loading…',
+        limitT:'Daily viewing limit reached', limitS:'The limit resets at midnight (KST).',
+        upgrade:'Upgrade to PRO',
+        errNone:'The paid sections for this stock are not ready yet.',
+        errFail:'Could not load it. Please try again in a moment.' } }
   };
   function U(){ return UI[L()]||UI.ko; }
 
@@ -1006,7 +1095,133 @@ KOSi18n.register({
   function factors(arr,cls,mk){ if(!arr||!arr.length)return ''; return arr.map(function(f){return '<div class="factor '+cls+'"><p class="fh"><span class="mk">'+mk+'</span>'+esc(pk(f.title))+'</p><p>'+esc(pk(f.body))+'</p></div>';}).join(''); }
   function risksH(arr){ if(!arr||!arr.length)return ''; return '<div class="risk">'+arr.map(function(r){return '<div class="cat">'+esc(pk(r.cat))+'</div><div class="body">'+esc(pk(r.body))+'</div>';}).join('')+'</div>'; }
   function pad(x){ return x<10?'0'+x:''+x; }
+
   function secOpen(num,kick,title){ return '<section class="sec col"><div class="sec-kicker"><span class="sec-num">'+num+'</span> · '+kick+'</div><h2 class="sec-title">'+esc(title)+'</h2>'; }
+
+  /* ── 잠긴 구간 미리보기 ─────────────────────────────────────
+     서버가 주는 건 '무엇이 몇 개 있고 각각 몇 글자인가'뿐이다(teaser).
+     글자는 여기서 아무 뜻 없이 만들어 깔고 크게 흐린다 — 진짜 본문을 내려보내
+     흐리게 덮으면 개발자 도구에서 filter 한 줄만 지워도 다 읽힌다.
+     대신 문단 수·항목 수·각 길이와 마크업을 실제 렌더와 똑같이 맞춘다.
+     그래야 흐린 판의 덩어리 모양과 위치가 진짜 리포트와 겹친다. */
+  var TZ_SEC={ earnings:['EARNINGS','earnings'], industry:['INDUSTRY','industry'],
+    outlook:['OUTLOOK','outlook'], valuation_comment:['VALUATION','valuation'],
+    bull:['BULL CASE','bull'], bear:['BEAR CASE','bear'], risks:['RISK','risk'],
+    checkpoints:['WHAT TO WATCH','chk'], verdict:['VERDICT','verdict'] };
+
+  /* 길이만 맞춘 글자. 같은 리포트면 늘 같은 모양이 나오도록 난수는 결정적으로
+     돌린다 — 다시 그릴 때마다 출렁이면 거슬린다. */
+  /* 한글만 깔면 실제보다 줄이 늘어난다. 리포트 본문에는 연도·금액·비율 같은
+     숫자와 라틴 글자가 섞여 있고, 그건 한글보다 좁다. 그 비율만큼 섞는다. */
+  var TZ_POOL='매출영업이익수요공급가격전망성장확대둔화개선부담경쟁점유율투자비용시장실적기준증가감소'
+             +'대비수익구조원가환율금리재고출하단가물량비중전년동기수준유지회복'
+             +'0123456789.%()0123456789조원억달러202520262027';
+  var _tzSeed=0;
+  function fillerText(len){
+    var out='',gap=0,i,r=(_tzSeed=(_tzSeed*1103515245+12345)&0x7fffffff)||9973;
+    len=Math.max(2,Math.round(len));
+    for(i=0;i<len;i++){
+      r=(r*1103515245+12345)&0x7fffffff;
+      out+=TZ_POOL.charAt(r%TZ_POOL.length);
+      // 한국어 산문은 서너 글자마다 띄어쓴다 — 줄바꿈 자리가 실제와 비슷해진다.
+      if(++gap>=2+(r>>9)%5 && i<len-1){ out+=' '; gap=0; }
+    }
+    return out;
+  }
+  function tzP(n){ return '<p>'+esc(fillerText(n))+'</p>'; }
+
+  /* publish_paid.py 를 아직 안 돌린 동안에는 정적 파일에 본문이 그대로 있다.
+     그 상태에서도 미리보기를 확인할 수 있도록 여기서 같은 뼈대를 만든다.
+     서버가 teaser 를 주기 시작하면 이 함수는 쓰이지 않는다. */
+  function deriveTeaser(){
+    function paras(o){
+      var t=pk(o); if(!t) return [];
+      var out=[];
+      String(t).split(/\n\n+/).forEach(function(b){
+        chunkPara(b.trim(),3).forEach(function(c){ if(c) out.push(c.length); });
+      });
+      return out;
+    }
+    function items(arr,a,b){
+      return (arr||[]).map(function(x){ return [pk(x[a]).length, pk(x[b]).length]; });
+    }
+    var out=[];
+    function add(k,t,v){ if(v&&v.length) out.push({k:k,t:t,paras:(t==='prose'||t==='wrapup')?v:null,items:(t==='prose'||t==='wrapup')?null:v}); }
+    add('earnings','prose',paras(REP.earnings));
+    add('industry','prose',paras(REP.industry));
+    add('outlook','prose',paras(REP.outlook));
+    add('valuation_comment','prose',paras(REP.valuation_comment));
+    add('bull','factors',items(REP.bull,'title','body'));
+    add('bear','factors',items(REP.bear,'title','body'));
+    add('risks','pairs',items(REP.risks,'cat','body'));
+    add('checkpoints','pairs',items(REP.checkpoints,'when','what'));
+    add('verdict','wrapup',REP.verdict?paras(REP.verdict.body):[]);
+    return out;
+  }
+
+  /* 실제 렌더(prose/factors/risksH/timeline/wrapup)와 같은 마크업을 쓴다.
+     클래스가 달라지면 여백과 줄간격이 달라지고, 덩어리 위치가 어긋난다. */
+  function tzSection(t,cls){
+    var n=0;
+    if(t.t==='prose'){
+      (t.paras||[]).forEach(function(L){ n+=L; });
+      return {h:'<div class="prose">'+(t.paras||[]).map(tzP).join('')+'</div>', n:n};
+    }
+    if(t.t==='wrapup'){
+      (t.paras||[]).forEach(function(L){ n+=L; });
+      return {h:'<div class="wrapup glass">'+(t.paras||[]).map(tzP).join('')+'</div>', n:n};
+    }
+    if(t.t==='factors'){
+      var mk=(t.k==='bull'?'▲':'▼');
+      return {h:(t.items||[]).map(function(it){ n+=it[0]+it[1];
+        return '<div class="factor '+cls+'"><p class="fh"><span class="mk">'+mk+'</span>'
+              +esc(fillerText(it[0]))+'</p><p>'+esc(fillerText(it[1]))+'</p></div>';
+      }).join(''), n:n};
+    }
+    if(t.t==='pairs'&&t.k==='risks'){
+      return {h:'<div class="risk">'+(t.items||[]).map(function(it){ n+=it[0]+it[1];
+        return '<div class="cat">'+esc(fillerText(it[0]))+'</div>'
+              +'<div class="body">'+esc(fillerText(it[1]))+'</div>';
+      }).join('')+'</div>', n:n};
+    }
+    if(t.t==='pairs'){
+      return {h:'<div class="timeline">'+(t.items||[]).map(function(it){ n+=it[0]+it[1];
+        return '<div class="tl"><div class="tl-date"><span class="badge">'+esc(fillerText(it[0]))
+              +'</span></div><p>'+esc(fillerText(it[1]))+'</p></div>';
+      }).join('')+'</div>', n:n};
+    }
+    return {h:'', n:0};
+  }
+
+  function teaserPane(u,n){
+    var tz=REP.teaser;
+    if(!tz||!tz.length) tz=deriveTeaser();
+    if(!tz||!tz.length) return null;
+    _tzSeed=0;                              // 다시 그려도 같은 모양
+    var h='', chars=0, secs=0;
+    tz.forEach(function(t){
+      var meta=TZ_SEC[t.k]; if(!meta) return;
+      var body=tzSection(t,t.k);
+      if(!body.h) return;
+      /* 밸류에이션 섹션은 해설 앞에 기준일·지표표·각주가 붙는다(무료 구간 값).
+         그게 빠지면 이 섹션만 230px 짧아지고, 아래 섹션이 통째로 밀린다. */
+      if(t.k==='valuation_comment'){
+        var grid='';
+        for(var gi=0;gi<6;gi++)
+          grid+='<div class="vm"><div class="vk">'+esc(fillerText(3))+'</div>'
+               +'<div class="vv">'+esc(fillerText(4))+'</div></div>';
+        body.h='<div class="val-asof">'+esc(fillerText(14))+'</div>'
+              +'<div class="valgrid">'+grid+'</div>'
+              +'<div class="tbl-foot" style="margin-bottom:22px">'+esc(fillerText(90))+'</div>'
+              +body.h;
+      }
+      secs++; chars+=body.n;
+      h+=secOpen(pad(n++),meta[0],u.sec[meta[1]])+body.h+'</section><hr class="hairline" />';
+    });
+    if(!secs) return null;
+    // 한국어 묵독은 분당 500자 안팎으로 잡는다.
+    return {html:h, n:n, secs:secs, mins:Math.max(1,Math.round(chars/500))};
+  }
 
   var watched=false;
   function syncWatch(){ var u=U();
@@ -1094,6 +1309,128 @@ KOSi18n.register({
     return '<div class="chart-card glass"><div class="chart-cap">'+esc(cap)+'</div>'
       +'<div class="chart-legend">'+legend+'</div><div class="chart-scroll">'+svg+'</div></div>';
   }
+  /* ── 유료 구간 잠금 ─────────────────────────────────────────
+     정적 파일에는 무료 구간만 담기고 hasPaid:true 가 붙는다. 유료 구간은
+     Firestore 에만 있고 paywall.js 가 getReport 로 받아온다. 전환 전 데이터에는
+     hasPaid 자체가 없어 그대로 전부 보인다(기존 동작 유지).
+     ?paywall=1 은 스테이징에서 잠금 화면을 확인하기 위한 강제 스위치. */
+  var PAID=null, _lockOff=null, _lockWait=false, FORCE_LOCK=(qp('paywall')==='1');
+  function paywalled(){ return !PAID && (FORCE_LOCK || (REP&&REP.hasPaid===true)); }
+
+  /* 잠금 카드. 두 번째 버튼은 스크립트가 못 떠도 죽지 않도록 링크로 두고,
+     wireLock() 이 로그인·구독 상태에 맞는 동작을 얹는다. */
+  function lockCard(u,tz){
+    var k=u.lock;
+    /* 흐린 판은 높이가 고정돼 있어 분량이 눈에 안 잡힌다 — 숫자로 한 줄 적는다.
+       판이 없을 때만 잠긴 항목을 나열한다(그때는 그게 유일한 단서다). */
+    var sub=tz?k.subN.replace('{s}',tz.secs).replace('{m}',tz.mins):k.sub;
+    return '<div class="lockwrap col"><div class="lock glass" id="lockCard">'
+      +'<h3>'+esc(k.title)+'</h3>'
+      +'<p class="lock-sub">'+esc(sub)+'</p>'
+      +(tz?'':'<div class="lock-list">'+k.items.map(function(x){return '<span>'+esc(x)+'</span>';}).join('')+'</div>')
+      +'<div class="lock-cta">'
+        +'<a class="btn btn-primary" href="pricing.html">'+esc(k.cta)+'</a>'
+        +'<a class="btn btn-soft" id="lockBtn" href="Login.html?next='
+          +encodeURIComponent(location.pathname+location.search)+'">'+esc(k.ctaLogin)+'</a>'
+      +'</div>'
+      +'<p class="lock-note">'+esc(k.note)+'</p>'
+      +'<div class="lock-err" id="lockErr"></div>'
+      +'</div></div>';
+  }
+  /* 참고 출처 + 리포트 작성일 — 잠금 화면에서도 그대로 보인다(요금제 고지와 동일). */
+  function srcMeta(u,n){
+    var baseCards=[
+      srcCardL(u.srcKRX, u.srcKRXsub, 'https://data.krx.co.kr', '📊'),
+      srcCardL(u.srcDART, u.srcDARTsub, 'https://dart.fss.or.kr', '📄')
+    ];
+    var webCards=(REP.sources||[]).map(srcCard);
+    return '<hr class="hairline" />'+secOpen(pad(n),'SOURCES',u.sec.sources)
+      +'<div class="srcgrid">'+baseCards.concat(webCards).join('')+'</div></section>'
+      +'<div class="col"><div class="rep-meta rep-meta-end"><span><b>'+esc(u.reportDate)+'</b>'+esc(REP.reportDate||'')+'</span></div></div>';
+  }
+
+  /* 잠금 카드의 버튼 — 로그인 상태에 따라 문구와 동작이 달라진다. */
+  function wireLock(){
+    var btn=document.getElementById('lockBtn'), err=document.getElementById('lockErr');
+    var lockCardEl=document.getElementById('lockCard');
+    // render() 는 언어 전환마다, 그리고 잠금이 풀릴 때마다 다시 불린다.
+    // 이전 구독 리스너를 먼저 떼야 한다 — 잠금이 풀려 버튼이 사라진 판(!btn)에서
+    // 그냥 돌아가면 사라진 DOM 을 붙든 리스너가 남는다.
+    if(_lockOff){ _lockOff(); _lockOff=null; }
+    if(!btn) return;
+    var u=U(), k=u.lock, P=window.KOSPaywall;
+    /* 본문은 같은 도메인의 JSON 한 번만 받으면 그려지는데, paywall.js 는 모듈이라
+       구글에서 파이어베이스 묶음까지 받아야 뜬다. 거의 항상 본문이 먼저다 —
+       그냥 돌아가면 로그인한 사람에게 '로그인하고 이어보기'가 박힌 채 끝난다.
+       모듈이 자리를 잡으면 알려 주니, 그때 다시 건다. */
+    if(!P){
+      if(!_lockWait){
+        _lockWait=true;
+        document.addEventListener('kos-paywall-ready',function(){ _lockWait=false; wireLock(); },{once:true});
+      }
+      return;                            // 끝내 안 뜨면 링크 그대로(로그인 페이지)
+    }
+    function show(msg,isHtml){ err[isHtml?'innerHTML':'textContent']=msg; err.classList.add('show'); }
+    var note=lockCardEl&&lockCardEl.querySelector('.lock-note');
+    _lockOff=P.onChange(function(st){
+      /* 상태가 셋이다. 로그인 여부만 보고 문구를 정하면, 로그인한 사람에게
+         '로그인하고 이어보기'가 뜬다. */
+      /* st.user 를 먼저 본다. 구독은 계정에 붙는 것이라 '로그인 안 했는데 구독 중'은
+         있을 수 없는 상태인데, 그런 답이 한 번이라도 오면 아래 자동 열기가 돌고
+         open() 이 로그인 페이지로 보내 버린다 — 돌아와도 같은 일이 반복된다. */
+      if(!st.user){                        // 비로그인
+        btn.style.display=''; btn.textContent=k.ctaLogin;
+        if(note) note.style.display='';
+      }else if(st.active){                 // 구독 중 — 바로 열 수 있다
+        btn.style.display=''; btn.textContent=k.ctaOpen;
+        if(note) note.style.display='none';
+      }else{                               // 로그인했지만 구독 없음 —
+        btn.style.display='none';          // '요금제 보기' 하나면 충분하다
+        if(note) note.style.display='none';
+      }
+      // 구독이 확인되면 누르지 않아도 바로 열어 준다(결제 직후 돌아온 경우).
+      if(st.user && st.active && !PAID && !btn.dataset.busy) open();
+    });
+    async function open(ev){
+      if(ev) ev.preventDefault();
+      var st=P.state();
+      if(!st.user){ location.href='Login.html?next='+encodeURIComponent(location.pathname+location.search); return; }
+      if(!st.active){ location.href='pricing.html'; return; }
+      btn.dataset.busy='1'; btn.disabled=true; btn.textContent=k.loading;
+      try{
+        var r=await P.fetchPaid(TK);
+        // 빈 응답으로 잠금을 풀면 유료 섹션이 텅 빈 채로 '열린' 화면이 된다.
+        if(!r||!r.paid||!Object.keys(r.paid).length){ var e0=new Error('빈 응답'); e0.code='not-found'; throw e0; }
+        PAID=r.paid;
+        Object.keys(PAID).forEach(function(key){ REP[key]=PAID[key]; });
+        render();
+      }catch(e){
+        btn.disabled=false; delete btn.dataset.busy; btn.textContent=k.ctaOpen;
+        if(e.code==='resource-exhausted'){
+          /* 이 사람은 이미 구독자다. 카드 머리에 걸린 'BASIC 월 9,900원부터'와
+             '요금제 보기'는 맞는 말이 아니다 — 카드를 한도 안내로 바꿔 단다. */
+          var st2=P.state(), pro=(st2.plans&&st2.plans.pro)||{};
+          var h3=lockCardEl&&lockCardEl.querySelector('h3');
+          var sb=lockCardEl&&lockCardEl.querySelector('.lock-sub');
+          var cta=lockCardEl&&lockCardEl.querySelector('.lock-cta');
+          if(h3) h3.textContent=k.limitT;
+          if(sb) sb.textContent=k.limitS;
+          // BASIC 이면 여기가 업그레이드를 권할 자리다. PRO 는 더 올릴 데가 없다.
+          if(cta){
+            if(st2.plan==='basic'&&pro.limit)
+              cta.innerHTML='<a class="btn btn-primary" href="billing.html">'+esc(k.upgrade)+'</a>';
+            else cta.style.display='none';
+          }
+        }
+        else if(e.code==='not-found') show(k.errNone);
+        else if(e.code==='unauthenticated') location.href='Login.html?next='+encodeURIComponent(location.pathname+location.search);
+        else if(e.code==='permission-denied') location.href='pricing.html';
+        else show(k.errFail);
+      }
+    }
+    btn.addEventListener('click',open);
+  }
+
   function renderV2(u){
     var Q=REP.quant||{}, V=Q.valuation||{}, f=u.fin;
     var revLbl=(Q.rev_label?pk(Q.rev_label):f.rev);
@@ -1146,6 +1483,15 @@ KOSi18n.register({
     }
     h+='<div class="tbl-foot">'+esc(f.foot.replace('{win}',V.ttm_window||'-').split(' · ')[0])+'</div>';
     h+='</section><hr class="hairline" />';
+    /* ↑ 여기까지 무료 · ↓ 아래부터 구독 (기준은 scripts/report_split.py) */
+    if(paywalled()){
+      var tz=teaserPane(u,n);
+      if(!tz) return h+lockCard(u,false)+srcMeta(u,pad(n));
+      return h
+        +'<div class="tz"><div class="tz-body" aria-hidden="true">'+tz.html+'</div>'
+        +'<div class="tz-lock">'+lockCard(u,tz)+'</div></div>'
+        +srcMeta(u,pad(tz.n));
+    }
     h+=secOpen(pad(n++),'EARNINGS',u.sec.earnings)+prose(REP.earnings)+'</section><hr class="hairline" />';
     h+=secOpen(pad(n++),'INDUSTRY',u.sec.industry)+prose(REP.industry)+'</section><hr class="hairline" />';
     h+=secOpen(pad(n++),'OUTLOOK',u.sec.outlook)+prose(REP.outlook)+'</section><hr class="hairline" />';
@@ -1184,15 +1530,7 @@ KOSi18n.register({
     }
     h+=secOpen(pad(n++),'VERDICT',u.sec.verdict);
     h+='<div class="wrapup glass"><p>'+esc(REP.verdict?pk(REP.verdict.body):'')+'</p></div></section>';
-    var baseCards=[
-      srcCardL(u.srcKRX, u.srcKRXsub, 'https://data.krx.co.kr', '📊'),
-      srcCardL(u.srcDART, u.srcDARTsub, 'https://dart.fss.or.kr', '📄')
-    ];
-    var webCards=(REP.sources||[]).map(srcCard);
-    h+='<hr class="hairline" />'+secOpen(pad(n++),'SOURCES',u.sec.sources);
-    h+='<div class="srcgrid">'+baseCards.concat(webCards).join('')+'</div></section>';
-    h+='<div class="col"><div class="rep-meta rep-meta-end"><span><b>'+esc(u.reportDate)+'</b>'+esc(REP.reportDate||'')+'</span></div></div>';
-    return h;
+    return h+srcMeta(u,pad(n));
   }
   function render(){
     var u=U(), Ln=L();
@@ -1237,6 +1575,7 @@ KOSi18n.register({
     var rb=document.getElementById('reportBody');
     if(REP&&REP.v===2){
       rb.innerHTML=renderV2(u);
+      wireLock();
     } else if(!REP){
       rb.innerHTML='<section class="sec col"><div class="tldr glass"><p>'+esc(u.none)+'</p></div></section>';
     } else {
@@ -1282,8 +1621,13 @@ KOSi18n.register({
           ttl=nm+'('+TK+') 주가·PER·PBR·배당·실적'+(hasRep?' AI 리포트':' 분석')+' | KOSAI';
         }
         var dsc;
-        if(REP&&REP.verdict&&REP.verdict.body){
-          dsc=String(pk(REP.verdict.body)).replace(/<[^>]*>/g,'').replace(/\s+/g,' ').trim().slice(0,155);
+        /* 요약문은 무료 구간인 lead 에서 뽑는다.
+           예전에는 verdict(종합 의견)를 썼는데 그건 유료 구간이다. 잠긴 사람에게
+           결론 155자를 meta 로 흘리고 있었고, publish_paid.py 를 돌려 verdict 가
+           빠지면 설명이 통째로 일반 문구로 떨어져 검색 노출도 같이 나빠진다. */
+        var dscSrc=(REP&&REP.lead)||(REP&&REP.verdict&&REP.verdict.body)||null;
+        if(dscSrc){
+          dsc=String(pk(dscSrc)).replace(/<[^>]*>/g,'').replace(/\s+/g,' ').trim().slice(0,155);
         }else{
           dsc=(Ln==='en') ? nm+' ('+TK+') stock: PER, PBR, ROE, dividend yield, earnings and valuation — free AI analysis from KOSAI.'
                           : nm+'('+TK+') 주가, PER·PBR·ROE·배당수익률, 실적과 밸류에이션을 한눈에 — KOSAI 무료 AI 분석.';
@@ -1369,6 +1713,7 @@ applyTheme(saved);
 themeBtn.addEventListener('click',()=>applyTheme(root.getAttribute('data-theme')==='dark'?'light':'dark'));
 
 </script>
+<script type="module" src="paywall.js"></script>
 <script type="module" src="auth-guard.js"></script>
 <script type="module" src="watchlist.js"></script>
 <script type="module" src="auth-state.js"></script>

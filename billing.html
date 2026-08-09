@@ -4,21 +4,22 @@
 <meta charset="utf-8" />
 <meta name="referrer" content="strict-origin-when-cross-origin" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
-<title>회원가입 — KOSAI</title>
-<meta name="description" content="KOSAI 회원가입." />
-<link rel="canonical" href="https://kosai.kr/Signup.html" />
+<title>구독 관리 — KOSAI</title>
+<meta name="description" content="KOSAI 구독 관리. 플랜 변경, 해지, 환불 신청, 결제 내역을 확인할 수 있습니다." />
+<meta name="robots" content="noindex,nofollow" />
+<link rel="canonical" href="https://kosai.kr/billing.html" />
 <meta property="og:type" content="website" />
 <meta property="og:site_name" content="KOSAI" />
 <meta property="og:locale" content="ko_KR" />
-<meta property="og:title" content="회원가입 — KOSAI" />
-<meta property="og:description" content="KOSAI 회원가입." />
-<meta property="og:url" content="https://kosai.kr/Signup.html" />
+<meta property="og:title" content="구독 관리 — KOSAI" />
+<meta property="og:description" content="KOSAI 구독 관리. 플랜 변경, 해지, 환불 신청, 결제 내역을 확인할 수 있습니다." />
+<meta property="og:url" content="https://kosai.kr/billing.html" />
 <meta property="og:image" content="https://kosai.kr/assets/og-image.png?v=3" />
 <meta property="og:image:width" content="1200" />
 <meta property="og:image:height" content="630" />
 <meta name="twitter:card" content="summary_large_image" />
-<meta name="twitter:title" content="회원가입 — KOSAI" />
-<meta name="twitter:description" content="KOSAI 회원가입." />
+<meta name="twitter:title" content="구독 관리 — KOSAI" />
+<meta name="twitter:description" content="KOSAI 구독 관리. 플랜 변경, 해지, 환불 신청, 결제 내역을 확인할 수 있습니다." />
 <meta name="twitter:image" content="https://kosai.kr/assets/og-image.png?v=3" />
 <style>
 @font-face{font-family:"Pretendard";font-weight:400;font-style:normal;font-display:swap;src:url("fonts/Pretendard-Regular.woff2") format("woff2"), url("fonts/Pretendard-Regular.otf") format("opentype")}
@@ -97,49 +98,6 @@ main{flex:1;padding:8px 0 64px}
 .head h1{margin:0;font-size:clamp(30px,4.4vw,42px);font-weight:800;letter-spacing:-.035em;line-height:1.05}
 .head p{margin:14px 0 0;font:400 16px/1.6 var(--font-sans);color:var(--fg-2);text-wrap:pretty}
 
-/* form card */
-.card{max-width:560px;margin:0 auto;padding:32px}
-.field{margin-bottom:18px}
-.field:last-of-type{margin-bottom:0}
-.field label{display:block;font:600 13px var(--font-sans);color:var(--fg-2);margin-bottom:7px}
-.field label .opt{color:var(--fg-3);font-weight:500}
-.field input,.field textarea{width:100%;border:1px solid var(--border-2);background:rgba(255,255,255,.5);
-  border-radius:var(--radius-md);padding:13px 15px;font:400 15px var(--font-sans);color:var(--fg-1);outline:none;transition:border-color .15s,box-shadow .15s}
-.field textarea{resize:vertical;min-height:130px;line-height:1.6}
-:root[data-theme="dark"] .field input,:root[data-theme="dark"] .field textarea{background:rgba(255,255,255,.06)}
-.field input::placeholder,.field textarea::placeholder{color:var(--fg-3)}
-.field input:focus,.field textarea:focus{border-color:var(--fg-1)}
-:root[data-theme="dark"] .field input:focus,:root[data-theme="dark"] .field textarea:focus{border-color:rgba(255,255,255,.5)}
-
-/* category segmented */
-.seg{display:flex;gap:6px;flex-wrap:wrap}
-.seg button{font:600 13px var(--font-sans);color:var(--fg-2);background:rgba(0,0,0,.05);border:1px solid transparent;
-  padding:9px 15px;border-radius:var(--pill);cursor:pointer;transition:.15s;white-space:nowrap}
-.seg button:hover{color:var(--fg-1)}
-.seg button.active{background:#000;color:#fff}
-:root[data-theme="dark"] .seg button{background:rgba(255,255,255,.08)}
-:root[data-theme="dark"] .seg button.active{background:#fff;color:#000}
-
-.submit-row{margin-top:24px}
-.submit-row .btn-primary{width:100%}
-.form-note{margin:14px 0 0;font:400 12.5px/1.5 var(--font-sans);color:var(--fg-3);text-align:center}
-
-/* success */
-.sent{display:none;flex-direction:column;align-items:center;text-align:center;gap:8px;padding:20px 0}
-.sent.show{display:flex}
-.sent .chk{width:54px;height:54px;border-radius:50%;background:rgba(13,105,212,.1);color:var(--brand-blue);display:flex;align-items:center;justify-content:center;margin-bottom:8px}
-:root[data-theme="dark"] .sent .chk{background:rgba(95,168,255,.16);color:var(--brand-cyan)}
-.sent .chk svg{width:28px;height:28px}
-.sent h2{margin:0;font:700 21px var(--font-sans);letter-spacing:-.02em}
-.sent p{margin:0;font:400 15px/1.6 var(--font-sans);color:var(--fg-2);max-width:380px}
-
-/* direct email */
-.direct{max-width:560px;margin:18px auto 0;display:flex;gap:12px;flex-wrap:wrap}
-.direct a{flex:1;min-width:200px;display:flex;flex-direction:column;gap:3px;padding:16px 18px;text-decoration:none;color:var(--fg-1);transition:transform .14s}
-.direct a:hover{transform:translateY(-2px)}
-.direct .k{font:600 11px var(--font-sans);letter-spacing:.06em;text-transform:uppercase;color:var(--fg-3)}
-.direct .v{font:700 15px var(--font-sans);letter-spacing:-.01em}
-
 /* footer */
 .foot{padding:44px 0 28px}
 .foot-inner{border-radius:var(--radius-xl);padding:36px 32px 26px}
@@ -157,12 +115,114 @@ main{flex:1;padding:8px 0 64px}
 .biz b{font-weight:600;color:var(--fg-2)}
 .foot-bottom{display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap;margin-top:22px;padding-top:18px;border-top:1px solid var(--border-2);font:500 12px var(--font-sans);color:var(--fg-3)}
 
+
+/* ===== 요금제 ===== */
+.head{max-width:620px}
+.btn-soft{background:rgba(0,0,0,.05);color:var(--fg-1);padding:13px 18px;border:1px solid var(--border-2);text-decoration:none}
+.btn-soft:hover{background:rgba(0,0,0,.09)}
+:root[data-theme="dark"] .btn-soft{background:rgba(255,255,255,.08)}
+:root[data-theme="dark"] .btn-soft:hover{background:rgba(255,255,255,.13)}
+.sec-kicker{font:700 12px var(--font-sans);letter-spacing:.1em;color:var(--fg-3);margin-bottom:7px}
+
+/* 플랜 카드 */
+.plans{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;max-width:1000px;margin:0 auto}
+.plan{position:relative;padding:30px 28px 26px;display:flex;flex-direction:column}
+.plan-pro{border-color:rgba(13,105,212,.35);box-shadow:var(--shadow-2),inset 0 1px 0 rgba(255,255,255,.6),0 0 0 1px rgba(13,105,212,.18)}
+:root[data-theme="dark"] .plan-pro{border-color:rgba(95,197,255,.3);box-shadow:var(--shadow-2),inset 0 1px 0 rgba(255,255,255,.08),0 0 0 1px rgba(95,197,255,.16)}
+.plan-badge{position:absolute;top:-11px;left:28px;font:700 11px var(--font-sans);letter-spacing:.06em;color:#fff;
+  background:linear-gradient(135deg,var(--brand-blue),var(--brand-cyan));padding:5px 11px;border-radius:var(--pill)}
+.plan-name{font:700 15px var(--font-sans);letter-spacing:-.01em;color:var(--fg-1)}
+.plan-price{margin-top:14px;display:flex;align-items:baseline;gap:6px;flex-wrap:wrap}
+.plan-price .was{font:500 15px var(--font-sans);color:var(--fg-3);text-decoration:line-through;margin-right:2px}
+.plan-price .won{font:800 40px/1 var(--font-sans);letter-spacing:-.04em;color:var(--fg-1)}
+.plan-price .per{font:600 14px var(--font-sans);color:var(--fg-2)}
+.plan-sub{margin-top:9px;font:500 13.5px/1.5 var(--font-sans);color:var(--fg-3)}
+.plan-feats{list-style:none;margin:22px 0 0;padding:0;display:flex;flex-direction:column;gap:11px;flex:1}
+.plan-feats li{position:relative;padding-left:25px;font:400 14.5px/1.5 var(--font-sans);color:var(--fg-2);text-wrap:pretty}
+.plan-feats li::before{content:"";position:absolute;left:0;top:6px;width:15px;height:15px;background:currentColor;color:var(--fg-3);
+  -webkit-mask:url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="black" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg>') center/contain no-repeat;
+  mask:url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="black" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg>') center/contain no-repeat}
+.plan-feats li.on{color:var(--fg-1)}
+.plan-feats .nb{display:block;margin-top:3px;font:400 12px var(--font-sans);color:var(--fg-3)}
+.plan-feats li.on::before{color:var(--brand-blue)}
+:root[data-theme="dark"] .plan-feats li.on::before{color:var(--brand-cyan)}
+.plan .btn{margin-top:24px;width:100%}
+.plan-note{margin:12px 0 0;font:400 12px/1.55 var(--font-sans);color:var(--fg-3);text-wrap:pretty}
+.plan-msg{display:none;margin:12px 0 0;padding:11px 13px;border-radius:var(--radius-md);
+  background:rgba(13,105,212,.08);border:1px solid rgba(13,105,212,.2);
+  font:500 12.5px/1.55 var(--font-sans);color:var(--fg-2)}
+.plan-msg.show{display:block}
+:root[data-theme="dark"] .plan-msg{background:rgba(95,197,255,.1);border-color:rgba(95,197,255,.22)}
+
+/* 무료/유료 비교 */
+.cmp{max-width:1000px;margin:44px auto 0;padding:30px 28px 26px}
+.cmp h2{margin:0;font:700 21px var(--font-sans);letter-spacing:-.025em}
+.cmp .lead{margin:9px 0 0;font:400 14.5px/1.6 var(--font-sans);color:var(--fg-2);text-wrap:pretty}
+.cmp-t{width:100%;border-collapse:collapse;margin-top:22px}
+.cmp-t th,.cmp-t td{text-align:left;padding:12px 10px;border-bottom:1px solid var(--hair);vertical-align:middle}
+.cmp-t thead th{font:600 12px var(--font-sans);color:var(--fg-3);letter-spacing:.02em;padding-bottom:9px}
+.cmp-t thead th:not(:first-child),.cmp-t tbody td:not(:first-child){text-align:center;width:88px}
+.cmp-t tr.lim th,.cmp-t tr.lim td{border-top:1px solid var(--border-2);border-bottom:0;padding-top:15px}
+.cmp-t td.num{font:700 14px var(--font-sans);color:var(--fg-1);font-variant-numeric:tabular-nums}
+.cmp-t td.num.off{font-weight:500;color:var(--fg-3)}
+.cmp-t tbody th{font:500 14.5px var(--font-sans);color:var(--fg-1)}
+.cmp-t tbody th small{display:block;margin-top:3px;font:400 12px var(--font-sans);color:var(--fg-3)}
+.cmp-t tbody tr:last-child th,.cmp-t tbody tr:last-child td{border-bottom:0}
+/* 표시는 글자가 아니라 도형으로 그린다 — 폰트 메트릭에 따라 원 안에서
+   위아래로 흔들리지 않게. 스크린리더용 텍스트는 .mk i 에 숨겨둔다. */
+.mk{display:inline-flex;align-items:center;justify-content:center;vertical-align:middle;
+  width:18px;height:18px;border-radius:50%}
+.mk i{position:absolute;width:1px;height:1px;overflow:hidden;clip-path:inset(50%);white-space:nowrap}
+.mk::before{content:"";display:block;background:currentColor}
+.mk-y::before{width:10px;height:10px;
+  -webkit-mask:url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="black" stroke-width="3.4" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg>') center/contain no-repeat;
+  mask:url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="black" stroke-width="3.4" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg>') center/contain no-repeat}
+.mk-n::before{width:7px;height:2px;border-radius:1px}
+.mk-y{background:rgba(13,105,212,.12);color:var(--brand-blue)}
+.mk-n{background:rgba(0,0,0,.06);color:var(--fg-3)}
+:root[data-theme="dark"] .mk-y{background:rgba(95,197,255,.16);color:var(--brand-cyan)}
+:root[data-theme="dark"] .mk-n{background:rgba(255,255,255,.08)}
+
+/* FAQ */
+.faq{max-width:1000px;margin:44px auto 0}
+.faq h2{margin:0 0 16px;font:700 21px var(--font-sans);letter-spacing:-.025em;text-align:center}
+.qa{padding:0 24px;margin-bottom:8px}
+.qa summary{list-style:none;cursor:pointer;padding:19px 0;font:600 15px/1.45 var(--font-sans);color:var(--fg-1);
+  display:flex;align-items:center;gap:12px;text-wrap:pretty}
+.qa summary::-webkit-details-marker{display:none}
+.qa summary::after{content:"";margin-left:auto;flex:0 0 auto;width:11px;height:11px;border-right:2px solid var(--fg-3);
+  border-bottom:2px solid var(--fg-3);transform:rotate(45deg) translate(-3px,-3px);transition:transform .18s}
+.qa[open] summary::after{transform:rotate(225deg) translate(-2px,-2px)}
+.qa .a{padding:0 0 20px;font:400 14.5px/1.7 var(--font-sans);color:var(--fg-2);text-wrap:pretty}
+.qa .a p{margin:0 0 10px}.qa .a p:last-child{margin-bottom:0}
+.qa .a h4{margin:16px 0 7px;font:600 14px var(--font-sans);color:var(--fg-1)}
+.qa .a h4:first-child{margin-top:0}
+.qa .a ul{margin:0 0 10px;padding-left:17px;display:flex;flex-direction:column;gap:5px}
+.qa .a li::marker{color:var(--fg-3)}
+.qa .a a{color:var(--brand-blue);text-decoration:none}
+:root[data-theme="dark"] .qa .a a{color:var(--brand-cyan)}
+
+/* 법적 고지 */
+.legal{max-width:1000px;margin:32px auto 0;padding:22px 24px;font:400 13px/1.7 var(--font-sans);color:var(--fg-2)}
+.legal b{color:var(--fg-1)}
+.legal ul{margin:10px 0 0;padding-left:18px;display:flex;flex-direction:column;gap:6px}
+
+@media (max-width:767px){
+  .plans{grid-template-columns:1fr;gap:14px;max-width:480px}
+  .cmp-t thead th:not(:first-child),.cmp-t tbody td:not(:first-child){width:58px}
+  .cmp-t td.num{font-size:13px}
+  .plan{padding:26px 22px 22px}
+  .cmp,.legal{padding:24px 20px}
+  .cmp-t th,.cmp-t td{padding:11px 6px}
+  .cmp-t thead th:not(:first-child),.cmp-t tbody td:not(:first-child){width:56px}
+  .qa{padding:0 20px}
+}
+
 @media (min-width:768px){:root{--pad:24px}}
 @media (min-width:1024px){:root{--pad:32px}}
 @media (min-width:1180px){:root{--pad:0px}.nav{width:100%}}
 @media (max-width:767px){
   .nav-links{display:none}.menu-btn{display:inline-flex}
-  .card{padding:24px}
   .foot-grid{grid-template-columns:repeat(3,1fr);gap:16px}.foot-brand{grid-column:1/-1}.foot-bottom{flex-direction:column;gap:8px}
 }
 </style>
@@ -377,7 +437,7 @@ KOSi18n.register({
   "스크리너":"Screener",
   "업종별":"Industries",
   "리포트":"Reports",
-  "워치리스트":"Watchlist","상호":"Company","대표":"CEO","사업자등록번호":"Business Reg. No.","통신판매업 신고":"Mail-order Reg. No.","주소":"Address","대표전화":"Phone","전자우편":"Email","요금제":"Pricing","멤버십":"Membership",
+  "워치리스트":"Watchlist","상호":"Company","대표":"CEO","사업자등록번호":"Business Reg. No.","통신판매업 신고":"Mail-order Reg. No.","주소":"Address","대표전화":"Phone","전자우편":"Email",
   // footer headings
   "서비스":"Services",
   "회사":"Company",
@@ -407,46 +467,6 @@ KOSi18n.register({
 /* English/Western convention: 상승=green, 하락=red (flips KO red/blue when lang=en) */
 :root[lang="en"]{--up:#1f9d57;--down:#e5383b;--up-soft:rgba(31,157,87,0.10);--down-soft:rgba(229,56,59,0.10)}
 :root[lang="en"][data-theme="dark"]{--up:#3ddc84;--down:#ff5b5e;--up-soft:rgba(61,220,132,0.12);--down-soft:rgba(255,91,94,0.12)}
-</style>
-<style id="auth-css">
-.auth-card{max-width:424px;margin:0 auto;padding:30px 30px 28px}
-.social{display:flex;flex-direction:column;gap:10px}
-.social .sbtn{display:flex;align-items:center;justify-content:center;gap:10px;width:100%;
-  border-radius:var(--radius-md);padding:13px 16px;font:600 14.5px var(--font-sans);
-  cursor:pointer;border:1px solid var(--border-2);background:rgba(255,255,255,.7);color:var(--fg-1);
-  transition:filter .15s,transform .12s,background .15s}
-.social .sbtn:hover{filter:brightness(.98)}
-.social .sbtn:active{transform:scale(.99)}
-.social .sbtn svg{width:18px;height:18px;flex:none}
-.sbtn.google{background:#fff;color:#1f1f1f;border-color:#dadce0}
-.sbtn.kakao{background:#FEE500;color:#191600;border-color:transparent}
-.sbtn.naver{background:#03C75A;color:#fff;border-color:transparent}
-.social-ko{display:flex}
-:root[lang="en"] .social-ko{display:none}
-.divider{display:flex;align-items:center;gap:12px;margin:18px 0;color:var(--fg-3);font:500 12px var(--font-sans)}
-.divider::before,.divider::after{content:"";flex:1;height:1px;background:var(--border-2)}
-.auth-err{display:none;margin:0 0 14px;padding:11px 14px;border-radius:var(--radius-md);
-  background:rgba(229,56,59,.08);border:1px solid rgba(229,56,59,.25);color:#c0282b;
-  font:500 13px/1.5 var(--font-sans)}
-:root[data-theme="dark"] .auth-err{color:#ff8a8c;background:rgba(229,56,59,.12)}
-.auth-note{display:none;margin:0 0 14px;padding:11px 14px;border-radius:var(--radius-md);
-  background:rgba(13,105,212,.07);border:1px solid rgba(13,105,212,.2);color:var(--fg-2);
-  font:500 12.5px/1.55 var(--font-sans)}
-:root[data-theme="dark"] .auth-note{background:rgba(95,168,255,.1);border-color:rgba(95,168,255,.25)}
-.auth-foot{margin:18px 0 0;text-align:center;font:400 13.5px var(--font-sans);color:var(--fg-3)}
-.auth-foot a{color:var(--brand-blue);font-weight:600;text-decoration:none}
-.auth-foot a:hover{text-decoration:underline}
-:root[data-theme="dark"] .auth-foot a{color:var(--brand-cyan)}
-.forgot{display:block;text-align:right;margin:-4px 0 0;font:500 12.5px var(--font-sans);color:var(--fg-3);text-decoration:none}
-.forgot:hover{color:var(--fg-1)}
-.agree{display:flex;gap:9px;align-items:flex-start;margin:2px 0 4px;font:400 12.5px/1.5 var(--font-sans);color:var(--fg-2)}
-.agree input{margin:2px 0 0;width:15px;height:15px;flex:none;accent-color:var(--brand-blue)}
-.agree a{color:var(--brand-blue);text-decoration:none}
-.agree a:hover{text-decoration:underline}
-:root[data-theme="dark"] .agree a{color:var(--brand-cyan)}
-.agree-err{display:none;margin:-4px 0 8px 24px;font:600 12px/1.45 var(--font-sans);color:#c0282b}
-:root[data-theme="dark"] .agree-err{color:#ff8a8c}
-.auth-card .submit-row{margin-top:18px}
 </style>
 <style>
 /* KOSAI 로고 (테마별 자동 전환) */
@@ -485,10 +505,63 @@ KOSi18n.register({
   KOSi18n.register(D, fix);
 })();
 </script>
+<style>
+/* 가운데로. margin 을 빼면 1120px 짜리 .wrap 안에서 820px 가 왼쪽에 붙는다. */
+.bl{display:grid;gap:18px;margin:26px auto 0;max-width:820px}
+.bl-card{padding:24px 26px}
+@media(max-width:479px){.bl-card{padding:20px 18px}}
+.bl-card h2{margin:0 0 14px;font:700 17px var(--font-sans);letter-spacing:-.01em}
+.bl-top{display:flex;flex-wrap:wrap;align-items:center;gap:12px;justify-content:space-between}
+.bl-plan{display:flex;align-items:baseline;gap:10px}
+.bl-plan .nm{font:800 26px var(--font-sans);letter-spacing:-.02em}
+.bl-plan .pr{font:600 15px var(--font-sans);color:var(--fg-3)}
+.pill{display:inline-flex;align-items:center;gap:6px;padding:5px 11px;border-radius:var(--pill);
+  font:700 12px var(--font-sans);background:rgba(0,0,0,.06);color:var(--fg-2)}
+:root[data-theme="dark"] .pill{background:rgba(255,255,255,.1)}
+.pill.on{background:rgba(31,157,87,.13);color:#1f9d57}
+.pill.warn{background:rgba(229,150,40,.15);color:#c07d16}
+.pill.off{background:rgba(229,56,59,.12);color:#e5383b}
+.bl-rows{list-style:none;margin:18px 0 0;padding:16px 0 0;border-top:1px solid var(--border-2);display:grid;gap:11px}
+.bl-rows li{display:flex;justify-content:space-between;gap:14px;font:500 14px var(--font-sans);color:var(--fg-3)}
+.bl-rows li b{font-weight:700;color:var(--fg-1);text-align:right}
+.bl-acts{display:flex;flex-wrap:wrap;gap:9px;margin-top:20px}
+.bl-note{margin:14px 0 0;font:400 12.5px/1.7 var(--font-sans);color:var(--fg-3);word-break:keep-all}
+.bl-note a{color:inherit}
+.hist{width:100%;border-collapse:collapse}
+.hist th{font:600 12px var(--font-sans);color:var(--fg-3);text-align:right;padding:9px 10px;
+  border-bottom:1px solid var(--border-2);white-space:nowrap}
+.hist th:first-child{text-align:left}
+.hist td{padding:12px 10px;border-top:1px solid var(--hair);font:500 13.5px var(--font-sans);
+  text-align:right;font-variant-numeric:tabular-nums;white-space:nowrap}
+.hist td:first-child{text-align:left}
+.hist .st{font-weight:700}
+.hist .st.ok{color:#1f9d57}
+.hist .st.rf{color:var(--fg-3)}
+.hist-wrap{overflow-x:auto;-webkit-overflow-scrolling:touch}
+.bl-empty{margin:26px auto 0;max-width:640px;padding:40px 26px;text-align:center}
+.bl-empty h2{margin:0 0 8px;font:800 21px var(--font-sans);letter-spacing:-.02em}
+.bl-empty p{margin:0 auto 20px;max-width:420px;font:400 15px/1.7 var(--font-sans);color:var(--fg-2);word-break:keep-all}
+.bl-msg{margin:13px 0 0;font:500 13px/1.6 var(--font-sans);color:var(--fg-3)}
+.bl-msg.err{color:#e5383b}
+.spin{display:inline-block;width:17px;height:17px;border:2px solid currentColor;border-right-color:transparent;
+  border-radius:50%;animation:spin .7s linear infinite;vertical-align:-3px;margin-right:7px}
+@keyframes spin{to{transform:rotate(360deg)}}
+
+/* 확인 대화상자 */
+.dlg{position:fixed;inset:0;z-index:80;display:none;align-items:center;justify-content:center;padding:20px;
+  background:rgba(0,0,0,.5);backdrop-filter:blur(3px)}
+.dlg.open{display:flex}
+.dlg-box{width:100%;max-width:440px;padding:26px 26px 22px;border-radius:var(--radius-lg);
+  background:var(--bg-1);border:1px solid var(--border-2);box-shadow:var(--shadow-2)}
+:root[data-theme="dark"] .dlg-box{background:#15161f}
+.dlg-box h3{margin:0 0 10px;font:800 19px var(--font-sans);letter-spacing:-.02em}
+.dlg-box p{margin:0 0 8px;font:400 14.5px/1.7 var(--font-sans);color:var(--fg-2);word-break:keep-all}
+.dlg-acts{display:flex;gap:9px;justify-content:flex-end;margin-top:20px}
+</style>
 </head>
 <body>
 
-<nav class="nav glass" data-screen-label="Contact · Nav">
+<nav class="nav glass" data-screen-label="Billing · Nav">
   <a class="brand" href="Home.html"><img class="brand-logo brand-logo--light" src="assets/kosai-wordmark-black.png" alt="KOSAI" width="148" height="24"><img class="brand-logo brand-logo--dark" src="assets/kosai-wordmark-white.png" alt="KOSAI" width="148" height="24"></a>
   <div class="nav-links">
     <a href="Home.html">홈</a>
@@ -515,63 +588,32 @@ KOSi18n.register({
   <a href="pricing.html">멤버십</a>
 </div>
 
-<div class="wrap" data-screen-label="09 Contact">
-  <div class="crumb"><a href="Home.html">홈</a> / <b>회원가입</b></div>
+<div class="wrap" data-screen-label="Billing">
+  <div class="crumb"><a href="Home.html">홈</a> / <b>구독 관리</b></div>
 </div>
 
 <main>
   <div class="wrap">
+
     <div class="head">
-      <div class="kick">ACCOUNT</div>
-      <h1>회원가입</h1>
-      <p>무료 계정을 만들고 관심 종목과 AI 리포트를 저장하세요.</p>
+      <div class="kick">SUBSCRIPTION</div>
+      <h1>구독 관리</h1>
+      <p>플랜과 결제 수단을 확인하고, 플랜 변경·해지·환불을 직접 처리하실 수 있습니다.</p>
     </div>
 
-    <div class="auth-card card glass">
-      <div class="auth-note" id="cfgNote">데모 모드입니다 — 실제 가입을 사용하려면 firebase-config.js에 Firebase 설정값을 입력하세요.</div>
-      <div class="auth-err" id="authErr"></div>
+    <div id="blApp" data-i18n-skip>
+      <div class="bl-empty glass"><p><span class="spin"></span>불러오는 중…</p></div>
+    </div>
 
-      <div class="social">
-        <button type="button" class="sbtn google" id="googleBtn">
-          <svg viewBox="0 0 48 48"><path fill="#EA4335" d="M24 9.5c3.54 0 6.71 1.22 9.21 3.6l6.85-6.85C35.9 2.38 30.47 0 24 0 14.62 0 6.51 5.38 2.56 13.22l7.98 6.19C12.43 13.72 17.74 9.5 24 9.5z"/><path fill="#4285F4" d="M46.98 24.55c0-1.57-.15-3.09-.38-4.55H24v9.02h12.94c-.58 2.96-2.26 5.48-4.78 7.18l7.73 6c4.51-4.18 7.09-10.36 7.09-17.65z"/><path fill="#FBBC05" d="M10.53 28.59c-.48-1.45-.76-2.99-.76-4.59s.27-3.14.76-4.59l-7.98-6.19C.92 16.46 0 20.12 0 24c0 3.88.92 7.54 2.56 10.78l7.97-6.19z"/><path fill="#34A853" d="M24 48c6.48 0 11.93-2.13 15.89-5.81l-7.73-6c-2.15 1.45-4.92 2.3-8.16 2.3-6.26 0-11.57-4.22-13.47-9.91l-7.98 6.19C6.51 42.62 14.62 48 24 48z"/></svg>
-          Google로 계속하기
-        </button>
-        <button type="button" class="sbtn kakao social-ko" id="kakaoBtn">
-          <svg viewBox="0 0 24 24"><path fill="#191600" d="M12 3C6.99 3 3 6.2 3 10.13c0 2.52 1.68 4.73 4.2 5.99-.18.65-.67 2.42-.77 2.8-.12.47.17.46.36.34.15-.1 2.39-1.62 3.36-2.28.6.09 1.22.13 1.85.13 5.01 0 9-3.2 9-7.18S17.01 3 12 3z"/></svg>
-          카카오로 계속하기
-        </button>
-        <button type="button" class="sbtn naver social-ko" id="naverBtn">
-          <svg viewBox="0 0 24 24"><path fill="#fff" d="M14.7 12.55 9.05 4.5H4.5v15h4.8v-8.05l5.65 8.05h4.55v-15h-4.8z"/></svg>
-          네이버로 계속하기
-        </button>
+    <div class="dlg" id="dlg" role="dialog" aria-modal="true">
+      <div class="dlg-box">
+        <h3 id="dlgT"></h3>
+        <div id="dlgB"></div>
+        <div class="dlg-acts">
+          <button type="button" class="btn btn-soft" id="dlgNo">취소</button>
+          <button type="button" class="btn btn-primary" id="dlgYes">확인</button>
+        </div>
       </div>
-
-      <div class="divider">또는 이메일로 가입</div>
-
-      <form id="emailForm" novalidate>
-        <div class="field">
-          <label for="email">이메일</label>
-          <input id="email" type="email" autocomplete="email" data-i18n-ph placeholder="you@example.com" required />
-        </div>
-        <div class="field">
-          <label for="password">비밀번호</label>
-          <input id="password" type="password" autocomplete="new-password" data-i18n-ph placeholder="영문·숫자 포함 8자 이상" required />
-        </div>
-        <div class="field">
-          <label for="password2">비밀번호 확인</label>
-          <input id="password2" type="password" autocomplete="new-password" data-i18n-ph placeholder="비밀번호를 다시 입력하세요" required />
-        </div>
-        <label class="agree" id="agreeRow">
-          <input type="checkbox" id="agree" />
-          <span>만 14세 이상이며, <a href="Terms.html" target="_blank">이용약관</a> 및 <a href="Privacy.html" target="_blank">개인정보처리방침</a>에 동의합니다.</span>
-        </label>
-        <div class="agree-err" id="agreeErr">약관에 동의해야 가입할 수 있어요.</div>
-        <div class="submit-row">
-          <button type="submit" class="btn btn-primary" id="emailSubmit">회원가입</button>
-        </div>
-      </form>
-
-      <p class="auth-foot">이미 계정이 있으신가요? <a href="Login.html">로그인</a></p>
     </div>
   </div>
 </main>
@@ -613,121 +655,17 @@ applyTheme(saved);
 themeBtn.addEventListener('click',()=>applyTheme(root.getAttribute('data-theme')==='dark'?'light':'dark'));
 
 if(window.KOSi18n) KOSi18n.register({
-  "회원가입":"Sign up",
-  "무료 계정을 만들고 관심 종목과 AI 리포트를 저장하세요.":"Create a free account to save your watchlist and AI reports.",
-  "데모 모드입니다 — 실제 가입을 사용하려면 firebase-config.js에 Firebase 설정값을 입력하세요.":"Demo mode — add your Firebase settings to firebase-config.js to enable real sign-up.",
-  "Google로 계속하기":"Continue with Google",
-  "카카오로 계속하기":"Continue with Kakao",
-  "네이버로 계속하기":"Continue with Naver",
-  "또는 이메일로 가입":"or sign up with email",
-  "이메일":"Email","비밀번호":"Password","비밀번호 확인":"Confirm password",
-  "영문·숫자 포함 8자 이상":"8+ chars, letters & numbers",
-  "비밀번호를 다시 입력하세요":"Re-enter your password",
-  "이용약관":"Terms of Service","개인정보처리방침":"Privacy Policy",
-  "및":"and","에 동의합니다.":"— I agree.",
-  "만 14세 이상이며,":"I am 14 or older, and agree to the",
-  "이미 계정이 있으신가요?":"Already have an account?",
-  "로그인":"Sign in",
-  // dynamic messages (KOSi18n.t)
-  "비밀번호가 일치하지 않습니다.":"Passwords do not match.",
-  "비밀번호는 영문과 숫자를 포함해 8자 이상이어야 합니다.":"Password must be at least 8 characters with letters and numbers.",
-  "인증 메일을 보냈어요":"Verification email sent",
-  "주소로 인증 링크를 보냈습니다. 메일의 링크를 클릭해 인증한 뒤 로그인해 주세요. (스팸함도 확인)":"— we sent a verification link to this address. Click it, then sign in. (Check your spam folder too.)",
-  "로그인하러 가기":"Go to sign in",
-  "약관에 동의해 주세요.":"Please agree to the terms.",
-  "약관에 동의해야 가입할 수 있어요.":"You must agree to the terms to sign up.",
-  "이메일을 입력해 주세요.":"Please enter your email.",
-  "이미 가입된 이메일입니다.":"This email is already registered.",
-  "이메일 형식이 올바르지 않습니다.":"That email address looks invalid.",
-  "Firebase 설정이 필요합니다. firebase-config.js를 확인하세요.":"Firebase is not configured yet. See firebase-config.js.",
-  "회원가입 중 오류가 발생했습니다.":"Something went wrong during sign-up.",
-  "카카오·네이버 로그인은 앱 키 설정이 필요합니다. (firebase-config.js 참고)":"Kakao/Naver sign-in needs app keys to be configured (see firebase-config.js)."
+"요금제": "Pricing",
+"멤버십": "Membership",
+  "구독 관리": "Manage subscription",
+  "플랜과 결제 수단을 확인하고, 플랜 변경·해지·환불을 직접 처리하실 수 있습니다.":
+    "Review your plan and payment method, and change, cancel, or refund it yourself.",
+  "취소": "Cancel",
+  "확인": "Confirm"
 });
 </script>
 
-<script type="module">
-import { auth, isConfigured } from "./firebase-config.js";
-import { createUserWithEmailAndPassword, GoogleAuthProvider, signInWithPopup,
-  signOut }
-  from "https://www.gstatic.com/firebasejs/10.12.2/firebase-auth.js";
-import { wireSocialButtons } from "./social-login.js";
-import { sendVerifyEmail } from "./auth-emails.js";
-
-const $ = s => document.querySelector(s);
-const T = m => (window.KOSi18n ? window.KOSi18n.t(m) : m);
-const errBox = $('#authErr');
-function showErr(msg){ errBox.textContent = msg; errBox.style.display = 'block'; }
-function clearErr(){ errBox.style.display = 'none'; errBox.textContent = ''; }
-// 약관 미동의 — 브라우저 기본 경고 대신 인라인으로 표시
-const agreeEl = $('#agree'), agreeRow = $('#agreeRow'), agreeErr = $('#agreeErr');
-function flagAgree(){ agreeRow.classList.add('invalid'); agreeErr.style.display = 'block'; try{ agreeEl.focus(); }catch(e){} }
-function clearAgree(){ agreeRow.classList.remove('invalid'); agreeErr.style.display = 'none'; }
-agreeEl.addEventListener('change', () => { if(agreeEl.checked) clearAgree(); });
-function go(){
-  const next = new URLSearchParams(location.search).get('next') || '';
-  // 같은 사이트의 페이지로만 보낸다 — 검사 없이 넘기면 ?next=https://... 로
-  // 로그인 직후 외부 사이트에 떨궈 놓는 피싱이 가능하다(오픈 리다이렉트).
-  const safe = /^[A-Za-z0-9._-]+\.html(\?[^#]*)?$/.test(next) ? next : 'Home.html';
-  location.href = safe;
-}
-
-if(!isConfigured){ $('#cfgNote').style.display = 'block'; }
-
-function mapError(err){
-  const c = (err && err.code) || '';
-  if(c.includes('api-key') || c.includes('configuration-not-found') || c.includes('operation-not-allowed'))
-    return T('Firebase 설정이 필요합니다. firebase-config.js를 확인하세요.');
-  if(c.includes('email-already-in-use')) return T('이미 가입된 이메일입니다.');
-  if(c.includes('invalid-email')) return T('이메일 형식이 올바르지 않습니다.');
-  if(c.includes('weak-password')) return T('비밀번호는 영문과 숫자를 포함해 8자 이상이어야 합니다.');
-  return T('회원가입 중 오류가 발생했습니다.') + (c ? ' (' + c + ')' : '');
-}
-
-$('#emailForm').addEventListener('submit', async e => {
-  e.preventDefault(); clearErr();
-  const email = $('#email').value.trim();
-  const pw = $('#password').value, pw2 = $('#password2').value;
-  if(!email){ showErr(T('이메일을 입력해 주세요.')); $('#email').focus(); return; }
-  if(pw.length < 8 || !/[A-Za-z]/.test(pw) || !/[0-9]/.test(pw)){ showErr(T('비밀번호는 영문과 숫자를 포함해 8자 이상이어야 합니다.')); $('#password').focus(); return; }
-  if(pw !== pw2){ showErr(T('비밀번호가 일치하지 않습니다.')); $('#password2').focus(); return; }
-  if(!agreeEl.checked){ flagAgree(); return; }
-  const btn = $('#emailSubmit'); btn.disabled = true;
-  try{
-    await createUserWithEmailAndPassword(auth, email, pw);
-    if(window.KOSA) KOSA.track('sign_up', { method: 'email' });
-    try{ await sendVerifyEmail(email); }catch(_){}   // 커스텀 인증 메일(Resend)
-    await signOut(auth);          // 인증 전에는 로그인 상태로 두지 않음
-    showVerifySent(email);
-  }
-  catch(err){ showErr(mapError(err)); btn.disabled = false; }
-});
-
-function showVerifySent(email){
-  ['.social','.divider','#emailForm','.auth-foot'].forEach(function(s){ var el=document.querySelector(s); if(el) el.style.display='none'; });
-  clearErr();
-  var note = $('#cfgNote'); note.className='auth-note'; note.innerHTML='';
-  var b=document.createElement('b'); b.textContent=T('인증 메일을 보냈어요');
-  var p=document.createElement('div'); p.style.margin='6px 0 0';
-  p.textContent = email + ' ' + T('주소로 인증 링크를 보냈습니다. 메일의 링크를 클릭해 인증한 뒤 로그인해 주세요. (스팸함도 확인)');
-  var a=document.createElement('a'); a.href='Login.html'; a.textContent=T('로그인하러 가기');
-  a.style.cssText='display:inline-block;margin-top:12px;font-weight:600;color:var(--brand-blue);text-decoration:none';
-  note.appendChild(b); note.appendChild(p); note.appendChild(a);
-  note.style.display='block';
-}
-
-$('#googleBtn').addEventListener('click', async () => {
-  clearErr();
-  if(!agreeEl.checked){ flagAgree(); return; }
-  try{ await signInWithPopup(auth, new GoogleAuthProvider()); if(window.KOSA) KOSA.track('sign_up', { method: 'google' }); go(); }
-  catch(err){ if((err.code || '').includes('popup-closed') || (err.code || '').includes('cancelled-popup')) return; showErr(mapError(err)); }
-});
-
-// Kakao / Naver — OAuth 리다이렉트 + Cloud Functions 커스텀 토큰 (social-login.js)
-wireSocialButtons({
-  onError: showErr,
-  requireAgree: () => { if(!agreeEl.checked){ flagAgree(); return false; } return true; }
-});
-</script>
+<script type="module" src="billing.js"></script>
 <script type="module" src="auth-state.js"></script>
 </body>
 </html>
