@@ -240,7 +240,8 @@ function view(st, payments) {
 
     <section class="bl-card glass">
       <div class="bl-top">
-        <div class="bl-plan"><span class="nm">${esc(plan.name)}</span><span class="pr">${esc(won(plan.price, EN()))} / ${esc(k.perMonth)}</span></div>
+        <!-- 금액은 아래 '결제 금액' 줄에 있다. 같은 값을 두 번 쓰지 않는다. -->
+        <div class="bl-plan"><span class="nm">${esc(plan.name)}</span></div>
         ${pill}
       </div>
       <ul class="bl-rows">${rows.map((r) => `<li><span>${esc(r[0])}</span><b>${esc(r[1])}</b></li>`).join("")}</ul>
