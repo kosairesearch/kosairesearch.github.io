@@ -140,6 +140,19 @@ function updateCard() {
 
 /* 구독 관리 버튼들. 서버 함수와 같은 이름·같은 규칙. */
 async function call(name, arg) {
+  if (name === "getUsage") {
+    const st = snapshot();
+    if (!st.active) return { data: { active: false, used: 0, limit: 0 } };
+    return { data: { active: true, plan: st.plan, limit: st.limit,
+                     used: (read(READ_KEY, { tickers: [] }).tickers || []).length } };
+  }
+  /* 탈퇴 — 미리보기에서는 실제 계정을 지우지 않는다. 스테이징은 진짜 파이어베이스
+     계정으로 로그인하므로, 여기서 지우면 실제 계정이 사라진다. */
+  if (name === "deleteAccount") {
+    [SUB_KEY, READ_KEY, PAY_KEY].forEach((k) => localStorage.removeItem(k));
+    emit();
+    return { data: { ok: true, demo: true } };
+  }
   const sub = read(SUB_KEY, null);
   if (!sub) throw new Error("이용 중인 구독이 없습니다.");
   // 해지 예약과 플랜 변경 예약은 함께 둘 수 없다(서버 changePlan 설명 참고).

@@ -9,7 +9,7 @@
 import { app, auth, isConfigured } from "./firebase-config.js";
 import { onAuthStateChanged, signOut, deleteUser }
   from "https://www.gstatic.com/firebasejs/10.12.2/firebase-auth.js";
-import { getFirestore, doc, deleteDoc }
+import { getFirestore, doc, getDoc, deleteDoc }
   from "https://www.gstatic.com/firebasejs/10.12.2/firebase-firestore.js";
 import { getFunctions, httpsCallable }
   from "https://www.gstatic.com/firebasejs/10.12.2/firebase-functions.js";
@@ -24,6 +24,10 @@ if(window.KOSi18n) window.KOSi18n.register({
   "탈퇴 처리 중 오류가 발생했습니다. 잠시 후 다시 시도해 주세요.":
     "Something went wrong while deleting your account. Please try again later.",
   "정말 탈퇴하시겠어요?":"Delete your account?",
+  "이용 중인 구독이 있습니다":"You have an active subscription",
+  "탈퇴하시면 구독이 즉시 해지되고 남은 기간은 이용하실 수 없습니다. 환불이 필요하시면 먼저 구독 관리에서 신청해 주세요.":
+    "Deleting your account cancels the subscription right away and you lose the remaining days. If you want a refund, request it on the subscription page first.",
+  "구독 관리로 이동":"Go to subscription",
   "계정과 저장된 관심종목이 영구 삭제되며, 되돌릴 수 없습니다.":
     "Your account and saved watchlist will be permanently deleted. This cannot be undone.",
   "떠나시는 이유를 알려주시면 개선에 큰 도움이 됩니다 (선택)":
@@ -45,15 +49,38 @@ if(window.KOSi18n) window.KOSi18n.register({
 
 /* 회원 탈퇴 — 다단계 확인 모달:
    사유 설문(선택) → '되돌릴 수 없음' 동의 체크 → '탈퇴' 입력 시에만 버튼 활성화.
-   확정 시: 사유를 이메일로 기록(best-effort) → 워치리스트 삭제 → 계정 삭제. */
+   확정 시: 사유 기록(best-effort) → 서버 deleteAccount 호출.
+
+   ⚠️ 삭제는 서버가 한다. 여기서 deleteUser() 만 부르면 계정은 사라지는데
+      구독 문서는 살아 있어, 매일 도는 갱신 배치가 다음 달에도 카드를 긁는다.
+      당사자는 로그인도 해지도 못 한다. 서버 함수가 구독을 먼저 닫는다. */
 const WD_REASONS = ["원하는 종목·정보가 부족해요", "정보가 정확하지 않아요",
                     "자주 사용하지 않아요", "사용법이 불편해요", "기타"];
 
-function openWithdrawModal(){
+/* 지금 유료 구독 중인가. 탈퇴하면 남은 기간을 잃으므로 미리 알려야 한다.
+   실패하면(규칙·네트워크) 경고만 못 붙일 뿐, 탈퇴 자체는 서버가 안전하게 처리한다. */
+async function activeSub(uid){
+  if (window.__KOSDEMO) {
+    var st = window.KOSPaywall && window.KOSPaywall.state();
+    return st && st.active ? st.sub : null;
+  }
+  try{
+    const snap = await getDoc(doc(getFirestore(app), "subscriptions", uid));
+    const s = snap.exists() ? snap.data() : null;
+    if(!s || s.status !== "active") return null;
+    const end = s.currentPeriodEnd;
+    const ms = end && typeof end.toMillis === "function" ? end.toMillis()
+             : typeof end === "number" ? end : Date.parse(end);
+    return (Number.isFinite(ms) && ms > Date.now()) ? s : null;
+  }catch(e){ return null; }
+}
+
+async function openWithdrawModal(){
   const user = auth.currentUser;
   if(!user) return;
   if(document.getElementById('wdModal')) return;
   injectCss();
+  const sub = await activeSub(user.uid);
   const email = user.email || user.displayName || '';
   const lang = (window.KOSi18n ? KOSi18n.lang : 'ko');
   const WORD = lang === 'en' ? 'DELETE' : '탈퇴';          // 언어별 확인 문구
@@ -66,6 +93,11 @@ function openWithdrawModal(){
       <div class="wd-h">${T("정말 탈퇴하시겠어요?")}</div>
       <div class="wd-em">${email}</div>
       <p class="wd-warn">${T("계정과 저장된 관심종목이 영구 삭제되며, 되돌릴 수 없습니다.")}</p>
+      ${sub ? `<div class="wd-sub">
+        <b>${T("이용 중인 구독이 있습니다")}</b>
+        <p>${T("탈퇴하시면 구독이 즉시 해지되고 남은 기간은 이용하실 수 없습니다. 환불이 필요하시면 먼저 구독 관리에서 신청해 주세요.")}</p>
+        <a href="billing.html">${T("구독 관리로 이동")}</a>
+      </div>` : ""}
       <div class="wd-q">${T("떠나시는 이유를 알려주시면 개선에 큰 도움이 됩니다 (선택)")}</div>
       <div class="wd-reasons">${WD_REASONS.map((r)=>
         `<label class="wd-r"><input type="checkbox" name="wdReason" value="${r}"><span>${T(r)}</span></label>`).join('')}</div>
@@ -94,7 +126,7 @@ function openWithdrawModal(){
     go.disabled = true; go.textContent = '...';
     const reason = (ov.querySelector('input[name=wdReason]:checked') || {}).value || '';
     const detail = ov.querySelector('.wd-detail').value.trim();
-    await finishWithdraw(user, email, reason, detail, ov);
+    await finishWithdraw(user, email, reason, detail, ov, !!sub);
   });
 }
 
@@ -110,11 +142,21 @@ async function recordReason(email, reason, detail){
   }catch(_){ /* 사유 기록 실패해도 탈퇴는 진행 */ }
 }
 
-async function finishWithdraw(user, email, reason, detail, ov){
+async function finishWithdraw(user, email, reason, detail, ov, hadSub){
   try{
     await recordReason(email, reason, detail);
-    try{ await deleteDoc(doc(getFirestore(app), "watchlists", user.uid)); }catch(e){}
-    await deleteUser(user);
+    try{
+      const fns = getFunctions(app, "asia-northeast3");
+      if (window.__KOSDEMO) await window.KOSDemo.call('deleteAccount');
+      else await httpsCallable(fns, "deleteAccount")({});
+      try{ await signOut(auth); }catch(_){}    // 계정은 서버가 지웠다 — 토큰만 정리
+    }catch(e){
+      /* 함수가 아직 배포되지 않은 환경에서는 예전 방식으로 돌아간다. 단 구독이
+         있으면 절대 안 된다 — 계정만 지우면 카드가 계속 긁힌다. */
+      if(hadSub || window.__KOSDEMO) throw e;
+      try{ await deleteDoc(doc(getFirestore(app), "watchlists", user.uid)); }catch(_){}
+      await deleteUser(user);
+    }
     // 완료 화면 — 자동으로 사라지지 않고, 사용자가 '홈으로'를 눌러야 닫힘
     ov.querySelector('.wd-card').innerHTML = `
       <div class="wd-done">
@@ -191,6 +233,11 @@ function injectCss(){
   .wd-h{font:700 22px var(--font-sans);color:var(--fg-1);letter-spacing:-.02em}
   .wd-em{margin-top:6px;font:500 13px var(--font-sans);color:var(--fg-3);word-break:break-all}
   .wd-warn{margin:16px 0 0;font:400 14.5px/1.65 var(--font-sans);color:#c0282b}
+.wd-sub{margin:12px 0 0;padding:12px 14px;border-radius:12px;text-align:left;
+  background:rgba(220,120,20,.10);border:1px solid rgba(220,120,20,.28)}
+.wd-sub b{display:block;font:700 13px var(--font-sans);color:var(--fg-1)}
+.wd-sub p{margin:5px 0 0;font:400 12.5px/1.6 var(--font-sans);color:var(--fg-2);word-break:keep-all}
+.wd-sub a{display:inline-block;margin-top:8px;font:600 12.5px var(--font-sans);color:var(--fg-1)}
   :root[data-theme="dark"] .wd-warn{color:#ff8a8c}
   .wd-q{margin:28px 0 10px;font:600 13.5px var(--font-sans);color:var(--fg-2)}
   .wd-reasons{display:flex;flex-direction:column;gap:3px}

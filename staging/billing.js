@@ -39,6 +39,7 @@ const T = {
     perMonth: "월", limitRow: "하루 열람 한도", nextRow: "다음 결제일", endRow: "이용 종료일",
     startRow: "구독 시작일", amountRow: "결제 금액", cards: "개",
     pendRow: "예정된 변경", pendVal: "{d}부터 {p}",
+    usedRow: "오늘 남은 열람", usedVal: "{r}개 / {l}개",
     undoPlan: "변경 취소",
     dlgUndoT: "플랜 변경을 취소하시겠습니까?",
     dlgUndoB: "{date} 이후에도 {p} 플랜이 그대로 유지됩니다.",
@@ -79,6 +80,7 @@ const T = {
     perMonth: "mo", limitRow: "Daily limit", nextRow: "Next charge", endRow: "Access until",
     startRow: "Started", amountRow: "Amount", cards: "",
     pendRow: "Scheduled change", pendVal: "{p} from {d}",
+    usedRow: "Left today", usedVal: "{r} of {l}",
     undoPlan: "Undo change",
     dlgUndoT: "Undo the scheduled change?",
     dlgUndoB: "You stay on {p} after {date}.",
@@ -141,6 +143,10 @@ function statusPill(sub, k) {
   return `<span class="pill on">${esc(k.on)}</span>`;
 }
 
+/* 오늘 몇 개 남았는지. 서버만 아는 값이라(report_reads 는 클라이언트 읽기 차단)
+   getUsage 로 받아 둔다. 한도에 부딪히기 전에는 알 길이 없었다. */
+let usage = null;
+
 function view(st, payments) {
   const k = t(), sub = st.sub || {}, plan = planOf(sub.plan) || { name: String(sub.plan || "").toUpperCase(), price: 0, limit: 0 };
   const endDay = fmtDay(sub.currentPeriodEnd, EN());
@@ -151,9 +157,13 @@ function view(st, payments) {
      예약된 걸 어디에도 안 적어 두면, 확인을 눌러도 아무 일도 안 일어난 것처럼 보인다. */
   const pend = sub.pendingPlan && sub.pendingPlan !== sub.plan ? planOf(sub.pendingPlan) : null;
 
+  const left = usage && usage.limit ? Math.max(0, usage.limit - (usage.used || 0)) : null;
+
   const rows = [
     [k.amountRow, `${won(plan.price, EN())} / ${k.perMonth}`],
     [k.limitRow, `${plan.limit}${k.cards}`],
+    left == null ? null
+      : [k.usedRow, k.usedVal.replace("{r}", left).replace("{l}", usage.limit)],
     [sub.cancelAtPeriodEnd ? k.endRow : k.nextRow, endDay],
     pend ? [k.pendRow, k.pendVal.replace("{d}", endDay).replace("{p}", pend.name)] : null,
     [k.startRow, fmtDay(sub.startedAt, EN())],
@@ -281,6 +291,18 @@ function wire(st) {
   });
 }
 
+async function loadUsage() {
+  if (!isConfigured) return null;
+  try {
+    const res = await call("getUsage");
+    return res.data && res.data.active ? res.data : null;
+  } catch (e) {
+    // 아직 배포 안 됐거나 실패 — 이 줄만 빠지고 나머지는 그대로 보인다.
+    console.warn("[billing] 열람 현황 조회 실패", e);
+    return null;
+  }
+}
+
 async function loadPayments(uid) {
   if (window.__KOSDEMO) return window.KOSDemo.payments();
   if (!isConfigured) return [];
@@ -335,6 +357,7 @@ function screen(fn) { repaint = fn; fn(); }
       return;
     }
     if (!payments.length) payments = await loadPayments(st.user.uid);
+    usage = await loadUsage();
     screen(() => view(st, payments));
   });
 })();
