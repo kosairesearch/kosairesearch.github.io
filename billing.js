@@ -49,6 +49,8 @@ const T = {
     hist: "결제 내역", histEmpty: "아직 결제 내역이 없습니다.",
     hDate: "일자", hDesc: "내용", hAmt: "금액", hSt: "상태",
     stPaid: "결제 완료", stRefund: "환불", stFail: "실패",
+    pSub: "{p} 월 구독", pUp: "{p} 업그레이드 차액", pFail: "정기결제 실패",
+    pRefund: "환불", pWhy: { withdraw: "청약철회", used: "이용분 차감", left: "잔여 기간" },
     freeName: "무료", freePill: "무료", freeLimit: "무료 구간까지",
     freeNote: '분석·전망·리스크 등 유료 구간은 <a href="pricing.html">멤버십</a>에서 보실 수 있습니다.',
     endedRow: "이용 종료일", duePill: "결제 실패",
@@ -90,6 +92,8 @@ const T = {
     hist: "Payment history", histEmpty: "No payments yet.",
     hDate: "Date", hDesc: "Description", hAmt: "Amount", hSt: "Status",
     stPaid: "Paid", stRefund: "Refunded", stFail: "Failed",
+    pSub: "{p} monthly", pUp: "{p} upgrade difference", pFail: "Renewal failed",
+    pRefund: "Refund", pWhy: { withdraw: "withdrawal", used: "usage deducted", left: "remaining days" },
     freeName: "Free", freePill: "Free", freeLimit: "Free sections only",
     freeNote: 'The analysis, outlook, and risk sections come with a <a href="pricing.html">plan</a>.',
     endedRow: "Ended on", duePill: "Payment failed",
@@ -145,6 +149,22 @@ function empty(title, desc, actions) {
    getUsage 로 받아 둔다. 한도에 부딪히기 전에는 알 길이 없었다. */
 let usage = null;
 
+/* 결제 한 줄의 설명. 저장된 건 종류(kind)뿐이고 문구는 여기서 만든다 —
+   한국어 문장으로 굳혀 저장하면 영어 화면에서 번역할 방법이 없다.
+   kind 가 없는 옛 기록은 저장돼 있던 description 을 그대로 쓴다. */
+function payLabel(p) {
+  const k = t();
+  const name = (planOf(p.plan) || {}).name || String(p.plan || "").toUpperCase();
+  if (p.kind === "subscription") return k.pSub.replace("{p}", name);
+  if (p.kind === "upgrade") return k.pUp.replace("{p}", name);
+  if (p.kind === "failed") return k.pFail;
+  if (p.kind === "refund") {
+    const why = k.pWhy[p.why];
+    return why ? `${k.pRefund} · ${why}` : k.pRefund;
+  }
+  return p.description || "";
+}
+
 function histSection(payments) {
   const k = t();
   const body = payments.length
@@ -155,7 +175,7 @@ function histSection(payments) {
                   : p.status === "failed" ? `<span class="st rf">${esc(k.stFail)}</span>`
                   : `<span class="st ok">${esc(k.stPaid)}</span>`;
           const amt = (p.amount < 0 ? "-" : "") + won(Math.abs(p.amount || 0), EN());
-          return `<tr><td>${esc(fmtDay(p.paidAt || p.createdAt, EN()))}</td><td>${esc(p.description || "")}</td><td>${esc(amt)}</td><td>${s}</td></tr>`;
+          return `<tr><td>${esc(fmtDay(p.paidAt || p.createdAt, EN()))}</td><td>${esc(payLabel(p))}</td><td>${esc(amt)}</td><td>${s}</td></tr>`;
         }).join("")
       + "</tbody></table></div>"
     : `<p class="bl-note">${esc(k.histEmpty)}</p>`;

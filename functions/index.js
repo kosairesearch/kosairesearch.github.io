@@ -351,42 +351,58 @@ exports.submitForm = onCall(
 
    전제(파이프라인이 만들어 줌):
      reports_paid/{ticker}   — 유료 섹션(earnings·bull·bear·verdict 등)
-     subscriptions/{uid}     — { status, plan, currentPeriodEnd, trialEnd }
-                               status: trialing | active | canceled | expired
+     subscriptions/{uid}     — { status, plan, currentPeriodEnd }
+                               status: active | canceled | expired
+                               plan  : basic | pro
 
-   대량 수집 방어: 사용자별 일일 조회 수를 세어 상한을 넘으면 차단한다.
-   정상 사용자는 하루에 수십 건을 넘기 어렵고, 전 종목을 긁으려는 시도는
-   여기서 멈춘다.
+   열람 한도는 요금제로 갈린다. pricing.html에 고지한 수치와 반드시 같아야 한다.
    ============================================================ */
-const PAID_DAILY_LIMIT = 120;   // 1인 1일 유료 리포트 열람 상한
+const DAILY_LIMIT = { basic: 5, pro: 15 };   // 1일 '서로 다른 종목' 열람 수
 
 function subActive(sub) {
-  if (!sub) return false;
-  if (sub.status !== "active" && sub.status !== "trialing") return false;
-  const end = sub.status === "trialing" ? (sub.trialEnd || sub.currentPeriodEnd)
-                                        : sub.currentPeriodEnd;
+  if (!sub || sub.status !== "active") return false;
+  const end = sub.currentPeriodEnd;
   if (!end) return false;
-  const ms = typeof end.toMillis === "function" ? end.toMillis() : Date.parse(end);
+  const ms = typeof end.toMillis === "function" ? end.toMillis()
+           : typeof end === "number" ? end : Date.parse(end);
   return Number.isFinite(ms) && ms > Date.now();
 }
 
-// 하루 단위 조회 카운터. 상한 초과 시 false.
-async function underDailyLimit(db, uid) {
-  const day = new Date().toISOString().slice(0, 10);           // YYYY-MM-DD (UTC)
+// 한국 시간 기준 날짜. UTC로 끊으면 한도가 오전 9시(장 시작)에 초기화된다.
+function kstDay() {
+  return new Date(Date.now() + 9 * 3600 * 1000).toISOString().slice(0, 10);
+}
+
+/* 하루 열람 한도 차감. 한도 안이면 true.
+
+   같은 종목을 다시 열 때는 차감하지 않는다. 새로고침·뒤로가기·다른 기기에서
+   다시 보기가 전부 한 건씩 깎으면, 사용자는 서로 다른 두 종목만 보고도
+   '한도 초과'를 만나게 된다. 그래서 횟수가 아니라 '오늘 본 종목'을 센다. */
+async function consumeDailyRead(db, uid, ticker, limit) {
+  const day = kstDay();
   const ref = db.doc(`report_reads/${uid}_${day}`);
-  const n = await db.runTransaction(async (tx) => {
+  return db.runTransaction(async (tx) => {
     const snap = await tx.get(ref);
-    const cur = (snap.exists && snap.data().count) || 0;
-    if (cur >= PAID_DAILY_LIMIT) return cur;
+    const seen = (snap.exists && snap.data().tickers) || [];
+    if (seen.includes(ticker)) return { ok: true, used: seen.length };   // 오늘 이미 본 종목 — 추가 차감 없음
+    if (seen.length >= limit) return { ok: false, used: seen.length };
     tx.set(ref, {
-      count: cur + 1,
+      tickers: admin.firestore.FieldValue.arrayUnion(ticker),
+      count: seen.length + 1,
       day,
       uid,
       updatedAt: admin.firestore.FieldValue.serverTimestamp(),
     }, { merge: true });
-    return cur + 1;
+    return { ok: true, used: seen.length + 1 };
   });
-  return n <= PAID_DAILY_LIMIT;
+}
+
+/* 오늘 몇 개를 썼는지. 화면이 '남은 개수'를 보여 주려면 필요하다.
+   report_reads 는 클라이언트가 읽지 못하게 막아 뒀으므로(firestore.rules) 서버가 준다. */
+async function usageOf(db, uid) {
+  const snap = await db.doc(`report_reads/${uid}_${kstDay()}`).get();
+  const seen = (snap.exists && snap.data().tickers) || [];
+  return seen.length;
 }
 
 exports.getReport = onCall(
@@ -402,19 +418,498 @@ exports.getReport = onCall(
     const db = admin.firestore();
 
     const subSnap = await db.doc(`subscriptions/${uid}`).get();
-    if (!subActive(subSnap.exists ? subSnap.data() : null)) {
+    const sub = subSnap.exists ? subSnap.data() : null;
+    if (!subActive(sub)) {
       // 결제/체험이 없거나 만료 — 프런트는 이 코드를 받아 잠금 UI를 띄운다.
       throw new HttpsError("permission-denied", "멤버십이 필요합니다.");
     }
 
-    if (!(await underDailyLimit(db, uid))) {
-      console.warn(`[getReport] 일일 상한 초과 uid=${uid}`);
-      throw new HttpsError("resource-exhausted", "오늘 열람 한도를 초과했습니다.");
+    const plan = String(sub.plan || "").toLowerCase();
+    const limit = DAILY_LIMIT[plan];
+    if (!limit) {
+      console.error(`[getReport] 알 수 없는 요금제 plan=${sub.plan} uid=${uid}`);
+      throw new HttpsError("failed-precondition", "요금제 정보를 확인할 수 없습니다.");
     }
 
+    // 리포트가 없으면 한도를 깎지 않는다 — 없는 종목을 눌러 한도를 잃으면 안 된다.
     const snap = await db.doc(`reports_paid/${ticker}`).get();
     if (!snap.exists) throw new HttpsError("not-found", "리포트를 찾을 수 없습니다.");
 
-    return { ticker, paid: snap.data() };
+    const use = await consumeDailyRead(db, uid, ticker, limit);
+    if (!use.ok) {
+      console.warn(`[getReport] 일일 한도(${plan}=${limit}) 초과 uid=${uid}`);
+      throw new HttpsError("resource-exhausted", "오늘 열람 한도를 모두 사용했습니다.");
+    }
+
+    return { ticker, paid: snap.data(), plan, limit, used: use.used };
+  }
+);
+
+/* ── 회원 탈퇴 ────────────────────────────────────────────────
+   ⚠️ 이 함수 없이 클라이언트에서 deleteUser() 만 부르면, 계정은 사라지는데
+      subscriptions/{uid} 는 status:active·billingKey 그대로 남는다. 매일 도는
+      renewSubscriptions 가 그 문서를 집어 다음 달에도, 그 다음 달에도 카드를
+      긁는다. 당사자는 로그인할 수도, 해지할 수도 없다. 돈만 빠져나간다.
+      그래서 탈퇴는 반드시 서버가 처리한다 — 구독을 먼저 닫고 계정을 지운다.
+
+   탈퇴 시 환불도 여기서 처리한다. 자세한 건 아래 주석 참고.
+
+   남기는 것과 지우는 것
+     · payments/{uid}/items  남긴다. 전자상거래법상 대금결제 기록은 5년 보존
+       의무가 있다(개인정보 파기 원칙의 법정 예외).
+     · subscriptions/{uid}   문서는 남기되 결제에 쓰이는 값(billingKey·
+       customerKey·카드)을 지우고 status 를 'deleted' 로 바꾼다. 다시 긁힐
+       여지를 없애는 게 목적이다.
+     · watchlists/{uid}, report_reads  지운다. 보관할 이유가 없다.
+   ─────────────────────────────────────────────────────────── */
+exports.deleteAccount = onCall(
+  { region: REGION, cors: true, secrets: [TOSS_SECRET_KEY] },
+  async (req) => {
+  const uid = req.auth && req.auth.uid;
+  if (!uid) throw new HttpsError("unauthenticated", "로그인이 필요합니다.");
+  const db = admin.firestore();
+  const subRef = db.doc(`subscriptions/${uid}`);
+  const sub = (await subRef.get()).data() || null;
+
+  /* 탈퇴한다고 환불받을 권리가 사라지지는 않는다. 결제 후 7일 이내에 리포트를
+     한 번도 열지 않았다면 전액 환불은 전자상거래법 제17조가 준 권리이고,
+     요금제 페이지에도 그렇게 적어 뒀다. '환불 신청' 버튼을 먼저 누르지 않았다는
+     이유로 돈을 가질 수는 없다. 그래서 여기서 같은 기준으로 계산해 먼저 돌려준다.
+
+     환불이 실패하면 탈퇴를 진행하지 않는다. 계정을 지운 뒤에 실패하면 당사자는
+     로그인도 못 하는데 돈은 우리가 들고 있는 상태가 된다 — 되돌릴 방법이 없다. */
+  let refunded = 0;
+  if (subActive(sub) && sub.lastPaymentKey) {
+    const q = await refundQuote(db, uid, sub);
+    if (q.amount > 0) {
+      try {
+        await doRefund(db, uid, sub, q);
+        refunded = q.amount;
+      } catch (e) {
+        console.error(`[delete] 환불 실패 uid=${uid}`, e && e.message);
+        throw new HttpsError("failed-precondition",
+          "환불 처리에 실패해 탈퇴를 진행하지 않았습니다. 구독 관리에서 환불을 먼저 신청해 주세요.");
+      }
+    }
+  }
+
+  if (sub) {
+    await subRef.set({
+      status: "deleted",
+      cancelAtPeriodEnd: true, pendingPlan: null,
+      billingKey: admin.firestore.FieldValue.delete(),
+      customerKey: admin.firestore.FieldValue.delete(),
+      card: admin.firestore.FieldValue.delete(),
+      deletedAt: admin.firestore.FieldValue.serverTimestamp(),
+      updatedAt: admin.firestore.FieldValue.serverTimestamp(),
+    }, { merge: true });
+  }
+
+  try { await db.doc(`watchlists/${uid}`).delete(); } catch (e) { console.warn("[delete] watchlist", e && e.message); }
+  try {
+    const reads = await db.collection("report_reads").where("uid", "==", uid).limit(200).get();
+    await Promise.all(reads.docs.map((d) => d.ref.delete()));
+  } catch (e) { console.warn("[delete] reads", e && e.message); }
+
+  await admin.auth().deleteUser(uid);
+  return { ok: true, hadSubscription: !!(sub && sub.plan), refunded };
+});
+
+/* 오늘 남은 열람 수. 구독 관리 화면이 이걸로 '3 / 5개'를 보여 준다.
+   한도에 부딪히기 전에는 알 길이 없었다 — 다 쓰고 나서야 알려 주는 건 늦다. */
+exports.getUsage = onCall({ region: REGION, cors: true }, async (req) => {
+  const uid = req.auth && req.auth.uid;
+  if (!uid) throw new HttpsError("unauthenticated", "로그인이 필요합니다.");
+  const db = admin.firestore();
+  const sub = (await db.doc(`subscriptions/${uid}`).get()).data() || null;
+  if (!subActive(sub)) return { active: false, used: 0, limit: 0 };
+  const plan = String(sub.plan || "").toLowerCase();
+  return { active: true, plan, limit: DAILY_LIMIT[plan] || 0, used: await usageOf(db, uid) };
+});
+
+/* ============================================================
+   구독 결제 — 토스페이먼츠 정기결제(빌링)
+   ------------------------------------------------------------
+   비밀키는 Secret Manager 로만 넣는다:
+     firebase functions:secrets:set TOSS_SECRET_KEY
+
+   Firestore
+     subscriptions/{uid}      { status, plan, currentPeriodStart, currentPeriodEnd,
+                                cancelAtPeriodEnd, pendingPlan, billingKey, customerKey,
+                                card:{company,number}, startedAt, updatedAt }
+     payments/{uid}/items/{id}{ amount, description, status, paymentKey, orderId,
+                                plan, paidAt, createdAt }
+
+   ⚠️ 금액은 서버 표(PRICE)에서만 읽는다. 클라이언트가 보낸 금액은 쓰지 않는다.
+   ⚠️ 구독 문서는 서버만 쓴다(firestore.rules 에서 클라이언트 쓰기 금지).
+   ============================================================ */
+const { onSchedule } = require("firebase-functions/v2/scheduler");
+const TOSS_SECRET_KEY = defineSecret("TOSS_SECRET_KEY");
+
+const PRICE = { basic: 9900, pro: 14900 };        // pricing.html·payment-config.js 와 같아야 한다
+const PLAN_NAME = { basic: "BASIC", pro: "PRO" };
+const REFUND_FEE_RATE = 0.10;                     // 서비스 수수료 10% (요금제 페이지 고지)
+const FREE_WITHDRAW_DAYS = 7;                     // 미열람 시 전액 환불 기간
+
+const tossAuth = () =>
+  "Basic " + Buffer.from((TOSS_SECRET_KEY.value() || "") + ":").toString("base64");
+
+async function toss(path, body) {
+  const res = await fetch("https://api.tosspayments.com/v1" + path, {
+    method: "POST",
+    headers: { Authorization: tossAuth(), "Content-Type": "application/json" },
+    body: JSON.stringify(body || {}),
+  });
+  const text = await res.text();
+  let json; try { json = JSON.parse(text); } catch (e) { json = { raw: text }; }
+  if (!res.ok) {
+    console.error(`[toss] ${path} HTTP ${res.status}:`, text.slice(0, 500));
+    // 카드사 거절 메시지는 사용자에게 그대로 보여주는 편이 낫다(한도 초과·정지 등).
+    throw new HttpsError("failed-precondition", json.message || "결제에 실패했습니다.");
+  }
+  return json;
+}
+
+/** 한 달 뒤. 31일처럼 다음 달에 없는 날짜는 그 달의 마지막 날로 맞춘다. */
+function addMonth(from) {
+  const d = new Date(from);
+  const day = d.getDate();
+  d.setMonth(d.getMonth() + 1);
+  if (d.getDate() !== day) d.setDate(0);
+  return d;
+}
+const days = (ms) => ms / 86400000;
+function planOrThrow(p) {
+  const id = String(p || "").toLowerCase();
+  if (!PRICE[id]) throw new HttpsError("invalid-argument", "요금제를 확인할 수 없습니다.");
+  return id;
+}
+function uidOrThrow(req) {
+  const uid = req.auth && req.auth.uid;
+  if (!uid) throw new HttpsError("unauthenticated", "로그인이 필요합니다.");
+  return uid;
+}
+const orderId = (uid, tag) =>
+  `kosai_${tag}_${uid.slice(0, 12)}_${Date.now().toString(36)}`;
+
+async function writePayment(db, uid, data) {
+  await db.collection(`payments/${uid}/items`).add({
+    ...data,
+    createdAt: admin.firestore.FieldValue.serverTimestamp(),
+  });
+}
+
+/** 빌링키로 즉시 결제. 성공하면 결제 내역을 남기고 payment 객체를 돌려준다. */
+/* 결제 한 건을 기록할 때는 '무엇에 대한 결제인가'를 종류(kind)로 남긴다.
+   ⚠️ 설명 문장을 한국어로 굳혀 저장하면 영어 화면에서 번역할 방법이 없다.
+      화면이 언어에 맞춰 문구를 만들 수 있도록 kind 를 준다. description 은
+      관리자 화면·로그에서 사람이 읽기 위한 값으로만 남겨 둔다. */
+async function charge(db, uid, sub, amount, description, tag, kind) {
+  if (amount <= 0) return null;
+  const pay = await toss(`/billing/${sub.billingKey}`, {
+    customerKey: sub.customerKey,
+    amount,
+    orderId: orderId(uid, tag),
+    orderName: description,
+  });
+  await writePayment(db, uid, {
+    amount, description, kind: kind || (tag === "up" ? "upgrade" : "subscription"),
+    status: "paid", plan: sub.plan,
+    paymentKey: pay.paymentKey, orderId: pay.orderId,
+    paidAt: pay.approvedAt || new Date().toISOString(),
+  });
+  return pay;
+}
+
+/* ── 1) 카드 등록 + 첫 결제 ───────────────────────────────── */
+exports.confirmBilling = onCall(
+  { region: REGION, cors: true, secrets: [TOSS_SECRET_KEY] },
+  async (req) => {
+    const uid = uidOrThrow(req);
+    const plan = planOrThrow(req.data && req.data.plan);
+    const authKey = String((req.data && req.data.authKey) || "").trim();
+    const customerKey = String((req.data && req.data.customerKey) || "").trim();
+    if (!authKey || customerKey !== uid) {
+      // customerKey 는 uid 여야 한다 — 남의 카드로 내 구독을 만들 수 없게.
+      throw new HttpsError("invalid-argument", "결제 정보가 올바르지 않습니다.");
+    }
+
+    const db = admin.firestore();
+    const ref = db.doc(`subscriptions/${uid}`);
+    const cur = (await ref.get()).data() || null;
+
+    /* 카드만 바꾸는 경우. 이용 중인 사람도 여기로 온다 — 아래 '이미 구독 중'에서
+       막아 버리면 카드가 만료됐을 때 바꿀 길이 없어진다. 결제는 하지 않는다.
+       여기서 또 받으면 이중 청구다. */
+    if (req.data && req.data.updateMethod) {
+      if (!cur) throw new HttpsError("failed-precondition", "이용 중인 구독이 없습니다.");
+      const re = await toss("/billing/authorizations/issue", { authKey, customerKey });
+      const card = { company: (re.card && re.card.issuerCode) || "", number: (re.card && re.card.number) || "" };
+      const patch = { billingKey: re.billingKey, customerKey, card,
+                      updatedAt: admin.firestore.FieldValue.serverTimestamp() };
+      // 갱신 결제가 실패해 멈춰 있던 구독이라면, 새 카드로 바로 받아 되살린다.
+      // 카드만 갈아 끼우고 끝내면 다음 배치가 돌 때까지 하루를 잠긴 채로 둔다.
+      if (cur.status === "past_due") {
+        const at = new Date();
+        const pay = await charge(db, uid, { ...cur, ...patch, plan: cur.plan },
+          PRICE[cur.plan], `${PLAN_NAME[cur.plan]} 월 구독`, "retry");
+        patch.status = "active";
+        patch.currentPeriodStart = admin.firestore.Timestamp.fromDate(at);
+        patch.currentPeriodEnd = admin.firestore.Timestamp.fromDate(addMonth(at));
+        patch.lastPaymentKey = pay ? pay.paymentKey : null;
+      }
+      await ref.set(patch, { merge: true });
+      return { ok: true, plan: cur.plan, updated: true };
+    }
+
+    if (subActive(cur) && !cur.cancelAtPeriodEnd) {
+      throw new HttpsError("already-exists", "이미 이용 중인 구독이 있습니다.");
+    }
+
+    const issued = await toss("/billing/authorizations/issue", { authKey, customerKey });
+    const now = new Date();
+    const sub = {
+      billingKey: issued.billingKey, customerKey, plan,
+      card: { company: (issued.card && issued.card.issuerCode) || "", number: (issued.card && issued.card.number) || "" },
+    };
+    const pay = await charge(db, uid, sub, PRICE[plan], `${PLAN_NAME[plan]} 월 구독`, "new");
+
+    await ref.set({
+      ...sub,
+      status: "active",
+      currentPeriodStart: admin.firestore.Timestamp.fromDate(now),
+      currentPeriodEnd: admin.firestore.Timestamp.fromDate(addMonth(now)),
+      cancelAtPeriodEnd: false,
+      pendingPlan: null,
+      readsAtStart: 0,
+      startedAt: (cur && cur.startedAt) || admin.firestore.Timestamp.fromDate(now),
+      lastPaymentKey: pay ? pay.paymentKey : null,
+      updatedAt: admin.firestore.FieldValue.serverTimestamp(),
+    }, { merge: true });
+
+    return { ok: true, plan };
+  }
+);
+
+/* ── 2) 플랜 변경 ─────────────────────────────────────────────
+   업그레이드는 즉시 적용하고 남은 기간만큼 차감해 차액만 받는다(결제일 유지).
+   다운그레이드는 다음 결제일부터 — 즉시 내리면 환불이 생기고, 남은 기간
+   PRO 를 이미 쓴 사람에게 돈을 돌려주는 구조가 된다.
+
+   ⚠️ 해지 예약과 플랜 변경 예약은 함께 둘 수 없다. renewSubscriptions 는
+      cancelAtPeriodEnd 를 먼저 보고 끝내므로, 둘 다 걸려 있으면 해지가 이기고
+      예약해 둔 변경은 조용히 사라진다. 화면에는 둘 다 예약된 것처럼 보이니
+      그건 거짓말이 된다. 게다가 업그레이드는 그 자리에서 차액을 받는데 며칠
+      뒤 구독이 닫히면 돈만 받고 닫는 꼴이다.
+      다음 달 쓸 플랜을 고르는 건 계속 쓰겠다는 뜻이므로, 여기서 해지 예약을 푼다
+      (반대로 해지를 누르면 cancelSubscription 이 변경 예약을 지운다).
+   ─────────────────────────────────────────────────────────── */
+exports.changePlan = onCall(
+  { region: REGION, cors: true, secrets: [TOSS_SECRET_KEY] },
+  async (req) => {
+    const uid = uidOrThrow(req);
+    const next = planOrThrow(req.data && req.data.plan);
+    const db = admin.firestore();
+    const ref = db.doc(`subscriptions/${uid}`);
+    const sub = (await ref.get()).data();
+    if (!subActive(sub)) throw new HttpsError("failed-precondition", "이용 중인 구독이 없습니다.");
+    if (sub.plan === next && !sub.pendingPlan) {
+      throw new HttpsError("already-exists", "이미 해당 플랜을 이용 중입니다.");
+    }
+
+    if (PRICE[next] > PRICE[sub.plan]) {
+      const endMs = sub.currentPeriodEnd.toMillis();
+      const startMs = sub.currentPeriodStart ? sub.currentPeriodStart.toMillis() : endMs - 30 * 86400000;
+      const total = Math.max(1, days(endMs - startMs));
+      const left = Math.max(0, days(endMs - Date.now()));
+      // 남은 기간에 해당하는 두 요금의 차액. 원 단위 절사(사용자에게 유리하게).
+      const diff = Math.floor((PRICE[next] - PRICE[sub.plan]) * (left / total));
+      await charge(db, uid, sub, diff, `${PLAN_NAME[next]} 업그레이드 차액`, "up");
+      await ref.set({
+        plan: next, pendingPlan: null,
+        // 해지 예약과 함께 둘 수 없다 — 아래 설명 참고.
+        cancelAtPeriodEnd: false, canceledAt: null,
+        updatedAt: admin.firestore.FieldValue.serverTimestamp(),
+      }, { merge: true });
+      return { ok: true, plan: next, charged: diff };
+    }
+
+    // 지금 쓰는 플랜을 다시 고르는 건 '예약 취소'다. 그대로 넣으면 예약이
+    // 남아 화면에 '9월 8일부터 PRO' 같은 말이 계속 붙는다.
+    const pending = next === sub.plan ? null : next;
+    await ref.set({
+      pendingPlan: pending,
+      cancelAtPeriodEnd: false, canceledAt: null,
+      updatedAt: admin.firestore.FieldValue.serverTimestamp(),
+    }, { merge: true });
+    return { ok: true, pendingPlan: pending, resumed: !!sub.cancelAtPeriodEnd };
+  }
+);
+
+/* ── 3) 해지 / 해지 취소 ─────────────────────────────────────
+   해지는 '지금 끊기'가 아니라 '갱신 안 함'이다. 이미 결제한 기간은 그대로 쓴다.
+   ─────────────────────────────────────────────────────────── */
+exports.cancelSubscription = onCall({ region: REGION, cors: true }, async (req) => {
+  const uid = uidOrThrow(req);
+  const ref = admin.firestore().doc(`subscriptions/${uid}`);
+  const sub = (await ref.get()).data();
+  if (!subActive(sub)) throw new HttpsError("failed-precondition", "이용 중인 구독이 없습니다.");
+  await ref.set({
+    cancelAtPeriodEnd: true, canceledAt: admin.firestore.FieldValue.serverTimestamp(),
+    // 해지하면 다음 결제 자체가 없다 — 예약해 둔 플랜 변경은 의미가 없다.
+    pendingPlan: null,
+    updatedAt: admin.firestore.FieldValue.serverTimestamp(),
+  }, { merge: true });
+  return { ok: true, droppedPlan: sub.pendingPlan || null };
+});
+
+exports.resumeSubscription = onCall({ region: REGION, cors: true }, async (req) => {
+  const uid = uidOrThrow(req);
+  const ref = admin.firestore().doc(`subscriptions/${uid}`);
+  const sub = (await ref.get()).data();
+  if (!subActive(sub)) throw new HttpsError("failed-precondition", "이용 중인 구독이 없습니다.");
+  await ref.set({
+    cancelAtPeriodEnd: false, canceledAt: null,
+    updatedAt: admin.firestore.FieldValue.serverTimestamp(),
+  }, { merge: true });
+  return { ok: true };
+});
+
+/* ── 4) 환불 ─────────────────────────────────────────────────
+   요금제 페이지에 고지한 기준 그대로 계산한다. 문구와 계산이 어긋나면
+   그건 그냥 거짓말이 된다.
+     · 리포트 미열람 + 7일 이내  → 전액
+     · 리포트 미열람 + 7일 경과  → 잔여 기간분 − 수수료 10%
+     · 리포트 열람              → 이용 일수 차감 후 − 수수료 10%
+   ─────────────────────────────────────────────────────────── */
+/* 환불 금액 계산 — 요금제 페이지에 고지한 기준 그대로.
+   환불 신청과 회원 탈퇴가 같은 계산을 써야 한다. 두 곳에 따로 적으면 언젠가
+   한쪽만 고치고 지나가고, 그러면 고지한 기준과 실제가 어긋난다. */
+async function refundQuote(db, uid, sub) {
+  if (!sub || !sub.lastPaymentKey) return { amount: 0, reason: "" };
+  const startMs = sub.currentPeriodStart.toMillis();
+  const endMs = sub.currentPeriodEnd.toMillis();
+  const total = Math.max(1, days(endMs - startMs));
+  const used = Math.min(total, Math.max(0, days(Date.now() - startMs)));
+  const price = PRICE[sub.plan] || 0;
+
+  // 이번 결제 기간에 리포트를 한 건이라도 열었는가
+  const reads = await db.collection("report_reads")
+    .where("uid", "==", uid)
+    .where("updatedAt", ">=", sub.currentPeriodStart)
+    .limit(1).get();
+  const opened = !reads.empty;
+
+  if (!opened && used <= FREE_WITHDRAW_DAYS) {
+    return { amount: price, reason: "청약철회(7일 이내·미열람)", why: "withdraw" };
+  }
+  const leftRatio = Math.max(0, (total - used) / total);
+  return {
+    amount: Math.floor(price * leftRatio * (1 - REFUND_FEE_RATE)),
+    reason: opened ? "이용분 차감 환불" : "잔여 기간 환불",
+    why: opened ? "used" : "left",
+  };
+}
+
+async function doRefund(db, uid, sub, q) {
+  await toss(`/payments/${sub.lastPaymentKey}/cancel`, {
+    cancelReason: q.reason, cancelAmount: q.amount,
+  });
+  await writePayment(db, uid, {
+    amount: -q.amount, description: `환불 · ${q.reason}`,
+    kind: "refund", why: q.why || null, status: "refunded",
+    plan: sub.plan, paymentKey: sub.lastPaymentKey, paidAt: new Date().toISOString(),
+  });
+}
+
+exports.requestRefund = onCall(
+  { region: REGION, cors: true, secrets: [TOSS_SECRET_KEY] },
+  async (req) => {
+    const uid = uidOrThrow(req);
+    const db = admin.firestore();
+    const ref = db.doc(`subscriptions/${uid}`);
+    const sub = (await ref.get()).data();
+    if (!subActive(sub)) throw new HttpsError("failed-precondition", "이용 중인 구독이 없습니다.");
+    if (!sub.lastPaymentKey) throw new HttpsError("failed-precondition", "환불할 결제 건이 없습니다.");
+
+    const q = await refundQuote(db, uid, sub);
+    const amount = q.amount;
+    if (amount <= 0) throw new HttpsError("failed-precondition", "환불 가능한 금액이 없습니다.");
+    await doRefund(db, uid, sub, q);
+    // 환불이 끝나면 이용 권한은 즉시 종료된다(요금제 페이지 고지와 동일).
+    await ref.set({
+      status: "refunded", cancelAtPeriodEnd: true,
+      currentPeriodEnd: admin.firestore.Timestamp.fromDate(new Date()),
+      refundedAt: admin.firestore.FieldValue.serverTimestamp(),
+      updatedAt: admin.firestore.FieldValue.serverTimestamp(),
+    }, { merge: true });
+
+    return { ok: true, amount };
+  }
+);
+
+/* ── 5) 정기결제 갱신 ────────────────────────────────────────
+   매일 한 번 돌며 기간이 끝난 구독을 갱신한다. 크론은 UTC 로만 해석되므로
+   02:00 UTC(= 같은 날 11:00 KST)로 적는다. 15시 이후로 잡으면 한국 날짜가 밀린다.
+   ─────────────────────────────────────────────────────────── */
+exports.renewSubscriptions = onSchedule(
+  { region: REGION, schedule: "0 2 * * *", timeZone: "Etc/UTC", secrets: [TOSS_SECRET_KEY] },
+  async () => {
+    const db = admin.firestore();
+    const now = new Date();
+    const due = await db.collection("subscriptions")
+      .where("status", "==", "active")
+      .where("currentPeriodEnd", "<=", admin.firestore.Timestamp.fromDate(now))
+      .limit(400).get();
+    console.log(`[renew] 대상 ${due.size}건`);
+
+    for (const d of due.docs) {
+      const uid = d.id, sub = d.data();
+      try {
+        // 탈퇴로 계정이 사라진 문서가 남아 있으면 긁지 않는다. deleteAccount 가
+        // status 를 바꿔 두므로 여기까지 오지 않지만, 한 번 더 확인한다 —
+        // 없는 사람 카드를 긁는 사고는 되돌릴 수가 없다.
+        try {
+          await admin.auth().getUser(uid);
+        } catch (e) {
+          if (e && e.code === "auth/user-not-found") {
+            console.warn(`[renew] 계정 없음 — 건너뜀 uid=${uid}`);
+            await d.ref.set({
+              status: "deleted", billingKey: admin.firestore.FieldValue.delete(),
+              updatedAt: admin.firestore.FieldValue.serverTimestamp(),
+            }, { merge: true });
+            continue;
+          }
+          throw e;
+        }
+        if (sub.cancelAtPeriodEnd) {
+          await d.ref.set({ status: "expired", updatedAt: admin.firestore.FieldValue.serverTimestamp() }, { merge: true });
+          continue;
+        }
+        const plan = sub.pendingPlan || sub.plan;   // 예약된 다운그레이드를 여기서 적용
+        const pay = await charge(db, uid, { ...sub, plan }, PRICE[plan],
+          `${PLAN_NAME[plan]} 월 구독`, "renew");
+        await d.ref.set({
+          plan, pendingPlan: null, status: "active",
+          currentPeriodStart: admin.firestore.Timestamp.fromDate(now),
+          currentPeriodEnd: admin.firestore.Timestamp.fromDate(addMonth(now)),
+          lastPaymentKey: pay ? pay.paymentKey : sub.lastPaymentKey,
+          failedAt: null,
+          updatedAt: admin.firestore.FieldValue.serverTimestamp(),
+        }, { merge: true });
+      } catch (e) {
+        // 한도 초과·정지 카드 등. 바로 끊지 않고 상태만 남긴다 — 사용자가 카드를
+        // 바꿀 시간을 줘야 한다. 이용 권한은 currentPeriodEnd 가 지나 자연히 닫힌다.
+        console.error(`[renew] 실패 uid=${uid}`, e && e.message);
+        await d.ref.set({
+          status: "past_due", failedAt: admin.firestore.FieldValue.serverTimestamp(),
+          updatedAt: admin.firestore.FieldValue.serverTimestamp(),
+        }, { merge: true });
+        await writePayment(db, uid, {
+          amount: PRICE[sub.plan] || 0, description: "정기결제 실패",
+          kind: "failed", status: "failed", plan: sub.plan, paidAt: null,
+        });
+      }
+    }
   }
 );
