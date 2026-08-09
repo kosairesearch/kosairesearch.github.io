@@ -49,10 +49,10 @@ const T = {
     hist: "결제 내역", histEmpty: "아직 결제 내역이 없습니다.",
     hDate: "일자", hDesc: "내용", hAmt: "금액", hSt: "상태",
     stPaid: "결제 완료", stRefund: "환불", stFail: "실패",
-    noneT: "이용 중인 구독이 없습니다", noneD: "멤버십에서 플랜을 선택하시면 리포트 전문을 바로 보실 수 있습니다.",
-    dueT: "정기결제가 처리되지 않았습니다",
+    freeName: "무료", freePill: "무료", freeLimit: "무료 구간까지",
+    freeNote: '분석·전망·리스크 등 유료 구간은 <a href="pricing.html">멤버십</a>에서 보실 수 있습니다.',
+    endedRow: "이용 종료일", duePill: "결제 실패",
     dueD: "등록하신 카드로 결제가 승인되지 않았습니다. 한도 초과이거나 카드가 정지·만료된 경우일 수 있습니다. 카드를 다시 등록하시면 이용이 재개됩니다.",
-    endedT: "구독이 종료되었습니다", endedD: "다시 시작하시려면 멤버십에서 플랜을 선택해 주세요.",
     toPricing: "멤버십 보기",
     needT: "로그인이 필요합니다", needD: "구독 정보를 보려면 로그인해 주세요.", login: "로그인",
     note: '해지하시면 이미 결제하신 이용 기간이 끝날 때까지는 그대로 이용하실 수 있습니다. 환불 기준은 <a href="pricing.html#faq">멤버십 페이지</a>에서 확인하실 수 있습니다.',
@@ -90,10 +90,10 @@ const T = {
     hist: "Payment history", histEmpty: "No payments yet.",
     hDate: "Date", hDesc: "Description", hAmt: "Amount", hSt: "Status",
     stPaid: "Paid", stRefund: "Refunded", stFail: "Failed",
-    noneT: "No active subscription", noneD: "Pick a plan and every report opens in full right away.",
-    dueT: "We could not process your renewal",
+    freeName: "Free", freePill: "Free", freeLimit: "Free sections only",
+    freeNote: 'The analysis, outlook, and risk sections come with a <a href="pricing.html">plan</a>.',
+    endedRow: "Ended on", duePill: "Payment failed",
     dueD: "The card on file was declined — it may be over its limit, suspended, or expired. Register a card again to restore access.",
-    endedT: "Your subscription has ended", endedD: "Pick a plan to start again.",
     toPricing: "See plans",
     needT: "Sign in required", needD: "Please sign in to see your subscription.", login: "Sign in",
     note: 'If you cancel, you keep access until the period you have paid for ends. Refund terms are on the <a href="pricing.html#faq">pricing page</a>.',
@@ -132,28 +132,19 @@ function ask(title, body) {
   });
 }
 
-/* 구독이 없거나 끝난 상태. 안내 카드만 덩그러니 두면 '구독을 안 하면 이 페이지는
-   볼 게 없다'가 되는데, 지난 결제 내역은 그때도 봐야 한다. 있으면 같이 그린다. */
-function empty(title, desc, actions, payments) {
-  const hist = payments && payments.length ? histSection(payments) : "";
-  root.innerHTML =
-    `<div class="bl">
-       <div class="bl-empty glass"><h2>${esc(title)}</h2><p>${esc(desc)}</p>${actions || ""}</div>
-       ${hist}
-     </div>`;
+/* 로그인 전 화면. 구독 상태와 무관하게 여기서 끝난다. */
+function empty(title, desc, actions) {
+  root.innerHTML = `<div class="bl"><div class="bl-empty glass"><h2>${esc(title)}</h2><p>${esc(desc)}</p>${actions || ""}</div></div>`;
 }
 
-function statusPill(sub, k) {
-  if (sub.cancelAtPeriodEnd) return `<span class="pill warn">${esc(k.willEnd)}</span>`;
-  return `<span class="pill on">${esc(k.on)}</span>`;
-}
-
+/* 화면은 하나다. 구독이 있든 없든 같은 카드 세 장 — 플랜 · 결제 수단 · 결제 내역.
+   상태마다 다른 화면을 그리면 '구독을 안 하면 볼 게 없는 페이지'가 된다. */
+/* 결제 내역. 구독이 끝났어도 본인 결제 기록은 볼 수 있어야 한다 —
+   전자상거래법상 우리가 5년간 보관하는 기록이기도 하다. */
 /* 오늘 몇 개 남았는지. 서버만 아는 값이라(report_reads 는 클라이언트 읽기 차단)
    getUsage 로 받아 둔다. 한도에 부딪히기 전에는 알 길이 없었다. */
 let usage = null;
 
-/* 결제 내역. 구독이 끝났어도 본인 결제 기록은 볼 수 있어야 한다 —
-   전자상거래법상 우리가 5년간 보관하는 기록이기도 하다. */
 function histSection(payments) {
   const k = t();
   const body = payments.length
@@ -172,27 +163,74 @@ function histSection(payments) {
 }
 
 function view(st, payments) {
-  const k = t(), sub = st.sub || {}, plan = planOf(sub.plan) || { name: String(sub.plan || "").toUpperCase(), price: 0, limit: 0 };
+  const k = t();
+  const sub = st.sub || {};
+  const active = !!st.active;
+  const due = !active && sub.status === "past_due";
   const endDay = fmtDay(sub.currentPeriodEnd, EN());
-  const card = sub.card || null;
+
+  const paid = planOf(sub.plan);
+  const plan = active || due
+    ? (paid || { name: String(sub.plan || "").toUpperCase(), price: 0, limit: 0 })
+    : { name: k.freeName, price: 0, limit: 0 };
   const other = sub.plan === "pro" ? PLANS.basic : PLANS.pro;
 
   /* 다운그레이드는 다음 결제일부터라 지금 화면에는 아무것도 안 바뀐다.
      예약된 걸 어디에도 안 적어 두면, 확인을 눌러도 아무 일도 안 일어난 것처럼 보인다. */
-  const pend = sub.pendingPlan && sub.pendingPlan !== sub.plan ? planOf(sub.pendingPlan) : null;
+  const pend = active && sub.pendingPlan && sub.pendingPlan !== sub.plan ? planOf(sub.pendingPlan) : null;
+  const left = active && usage && usage.limit ? Math.max(0, usage.limit - (usage.used || 0)) : null;
 
-  const left = usage && usage.limit ? Math.max(0, usage.limit - (usage.used || 0)) : null;
+  const pill = due ? `<span class="pill warn">${esc(k.duePill)}</span>`
+    : !active ? `<span class="pill">${esc(k.freePill)}</span>`
+    : sub.cancelAtPeriodEnd ? `<span class="pill warn">${esc(k.willEnd)}</span>`
+    : `<span class="pill on">${esc(k.on)}</span>`;
 
-  const rows = [
-    [k.amountRow, `${won(plan.price, EN())} / ${k.perMonth}`],
-    [k.limitRow, `${plan.limit}${k.cards}`],
-    left == null ? null
-      : [k.usedRow, k.usedVal.replace("{r}", left).replace("{l}", usage.limit)],
-    [sub.cancelAtPeriodEnd ? k.endRow : k.nextRow, endDay],
-    pend ? [k.pendRow, k.pendVal.replace("{d}", endDay).replace("{p}", pend.name)] : null,
-    [k.startRow, fmtDay(sub.startedAt, EN())],
-  ].filter((r) => r && r[1]);
+  let rows;
+  if (active) {
+    rows = [
+      [k.amountRow, `${won(plan.price, EN())} / ${k.perMonth}`],
+      [k.limitRow, `${plan.limit}${k.cards}`],
+      left == null ? null : [k.usedRow, k.usedVal.replace("{r}", left).replace("{l}", usage.limit)],
+      [sub.cancelAtPeriodEnd ? k.endRow : k.nextRow, endDay],
+      pend ? [k.pendRow, k.pendVal.replace("{d}", endDay).replace("{p}", pend.name)] : null,
+      [k.startRow, fmtDay(sub.startedAt, EN())],
+    ];
+  } else if (due) {
+    rows = [
+      [k.amountRow, `${won(plan.price, EN())} / ${k.perMonth}`],
+      [k.limitRow, `${plan.limit}${k.cards}`],
+      [k.endRow, endDay],
+      [k.startRow, fmtDay(sub.startedAt, EN())],
+    ];
+  } else {
+    // 무료 — 예전에 구독한 적이 있으면 언제 끝났는지만 덧붙인다.
+    rows = [
+      [k.amountRow, won(0, EN())],
+      [k.limitRow, k.freeLimit],
+      sub.plan ? [k.endedRow, endDay] : null,
+    ];
+  }
+  rows = rows.filter((r) => r && r[1]);
 
+  let acts, note;
+  if (active) {
+    acts = `<button type="button" class="btn btn-soft" data-act="plan" data-to="${esc(pend ? sub.plan : other.id)}">
+          ${esc(pend ? k.undoPlan : sub.plan === "pro" ? k.downgrade : k.upgrade)}</button>
+        ${sub.cancelAtPeriodEnd
+          ? `<button type="button" class="btn btn-primary" data-act="resume">${esc(k.resume)}</button>`
+          : `<button type="button" class="btn btn-soft" data-act="cancel">${esc(k.cancel)}</button>`}
+        <button type="button" class="btn btn-soft" data-act="refund">${esc(k.refund)}</button>`;
+    note = k.note;
+  } else if (due) {
+    acts = `<a class="btn btn-primary" href="checkout.html?plan=${esc(sub.plan || "basic")}&amp;method=1">${esc(k.changeCard)}</a>`;
+    note = k.dueD;
+  } else {
+    acts = `<a class="btn btn-primary" href="pricing.html">${esc(k.toPricing)}</a>`;
+    note = k.freeNote;
+  }
+
+  const card = sub.card || null;
+  const showCard = active || due;
 
   root.innerHTML = `
   <div class="bl">
@@ -203,30 +241,23 @@ function view(st, payments) {
     <section class="bl-card glass">
       <div class="bl-top">
         <div class="bl-plan"><span class="nm">${esc(plan.name)}</span><span class="pr">${esc(won(plan.price, EN()))} / ${esc(k.perMonth)}</span></div>
-        ${statusPill(sub, k)}
+        ${pill}
       </div>
       <ul class="bl-rows">${rows.map((r) => `<li><span>${esc(r[0])}</span><b>${esc(r[1])}</b></li>`).join("")}</ul>
-      <div class="bl-acts">
-        <button type="button" class="btn btn-soft" data-act="plan" data-to="${esc(pend ? sub.plan : other.id)}">
-          ${esc(pend ? k.undoPlan : sub.plan === "pro" ? k.downgrade : k.upgrade)}</button>
-        ${sub.cancelAtPeriodEnd
-          ? `<button type="button" class="btn btn-primary" data-act="resume">${esc(k.resume)}</button>`
-          : `<button type="button" class="btn btn-soft" data-act="cancel">${esc(k.cancel)}</button>`}
-        <button type="button" class="btn btn-soft" data-act="refund">${esc(k.refund)}</button>
-      </div>
+      <div class="bl-acts">${acts}</div>
       <p class="bl-msg" id="blMsg"></p>
-      <p class="bl-note">${k.note}</p>
+      <p class="bl-note">${note}</p>
     </section>
 
     <section class="bl-card glass">
       <h2>${esc(k.pay)}</h2>
       <ul class="bl-rows" style="border-top:0;padding-top:0;margin-top:0">
-        <li><span>${card ? esc(card.company || "") : esc(k.noCard)}</span>
-            <b>${card && card.number ? esc(card.number) : ""}</b></li>
+        <li><span>${showCard && card ? esc(card.company || "") : esc(k.noCard)}</span>
+            <b>${showCard && card && card.number ? esc(card.number) : ""}</b></li>
       </ul>
-      <div class="bl-acts">
+      ${showCard ? `<div class="bl-acts">
         <a class="btn btn-soft" href="checkout.html?plan=${esc(sub.plan || "basic")}&amp;method=1">${esc(k.changeCard)}</a>
-      </div>
+      </div>` : ""}
     </section>
 
     ${histSection(payments)}
@@ -347,31 +378,7 @@ function screen(fn) { repaint = fn; fn(); }
     /* 결제 내역은 구독 상태와 무관하게 불러온다. 구독이 없다고 지난 결제까지
        감추면, 돈을 낸 적 있는 사람이 그 기록을 확인할 데가 없어진다. */
     if (!payments.length) payments = await loadPayments(st.user.uid);
-
-    if (!st.sub) {
-      screen(() => { const k = t();
-        empty(k.noneT, k.noneD,
-          `<a class="btn btn-primary" href="pricing.html">${esc(k.toPricing)}</a>`, payments); });
-      return;
-    }
-    // 구독 기록은 있는데 지금 유효하지 않은 경우. 그냥 '구독 없음'으로 보내면
-    // 갱신 결제가 실패한 사람이 이유도 모르고 카드를 바꿀 길도 없어진다.
-    if (!st.active) {
-      const plan = st.sub.plan || "basic";
-      const due = st.sub.status === "past_due";
-      screen(() => { const k = t();
-        if (due) {
-          empty(k.dueT, k.dueD,
-            `<a class="btn btn-primary" href="checkout.html?plan=${esc(plan)}&amp;method=1">${esc(k.changeCard)}</a>`,
-            payments);
-        } else {
-          empty(k.endedT, k.endedD,
-            `<a class="btn btn-primary" href="pricing.html">${esc(k.toPricing)}</a>`, payments);
-        }
-      });
-      return;
-    }
-    usage = await loadUsage();
+    usage = st.active ? await loadUsage() : null;
     screen(() => view(st, payments));
   });
 })();
