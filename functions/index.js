@@ -452,6 +452,8 @@ exports.getReport = onCall(
       긁는다. 당사자는 로그인할 수도, 해지할 수도 없다. 돈만 빠져나간다.
       그래서 탈퇴는 반드시 서버가 처리한다 — 구독을 먼저 닫고 계정을 지운다.
 
+   탈퇴 시 환불도 여기서 처리한다. 자세한 건 아래 주석 참고.
+
    남기는 것과 지우는 것
      · payments/{uid}/items  남긴다. 전자상거래법상 대금결제 기록은 5년 보존
        의무가 있다(개인정보 파기 원칙의 법정 예외).
@@ -460,12 +462,36 @@ exports.getReport = onCall(
        여지를 없애는 게 목적이다.
      · watchlists/{uid}, report_reads  지운다. 보관할 이유가 없다.
    ─────────────────────────────────────────────────────────── */
-exports.deleteAccount = onCall({ region: REGION, cors: true }, async (req) => {
+exports.deleteAccount = onCall(
+  { region: REGION, cors: true, secrets: [TOSS_SECRET_KEY] },
+  async (req) => {
   const uid = req.auth && req.auth.uid;
   if (!uid) throw new HttpsError("unauthenticated", "로그인이 필요합니다.");
   const db = admin.firestore();
   const subRef = db.doc(`subscriptions/${uid}`);
   const sub = (await subRef.get()).data() || null;
+
+  /* 탈퇴한다고 환불받을 권리가 사라지지는 않는다. 결제 후 7일 이내에 리포트를
+     한 번도 열지 않았다면 전액 환불은 전자상거래법 제17조가 준 권리이고,
+     요금제 페이지에도 그렇게 적어 뒀다. '환불 신청' 버튼을 먼저 누르지 않았다는
+     이유로 돈을 가질 수는 없다. 그래서 여기서 같은 기준으로 계산해 먼저 돌려준다.
+
+     환불이 실패하면 탈퇴를 진행하지 않는다. 계정을 지운 뒤에 실패하면 당사자는
+     로그인도 못 하는데 돈은 우리가 들고 있는 상태가 된다 — 되돌릴 방법이 없다. */
+  let refunded = 0;
+  if (subActive(sub) && sub.lastPaymentKey) {
+    const q = await refundQuote(db, uid, sub);
+    if (q.amount > 0) {
+      try {
+        await doRefund(db, uid, sub, q);
+        refunded = q.amount;
+      } catch (e) {
+        console.error(`[delete] 환불 실패 uid=${uid}`, e && e.message);
+        throw new HttpsError("failed-precondition",
+          "환불 처리에 실패해 탈퇴를 진행하지 않았습니다. 구독 관리에서 환불을 먼저 신청해 주세요.");
+      }
+    }
+  }
 
   if (sub) {
     await subRef.set({
@@ -486,7 +512,7 @@ exports.deleteAccount = onCall({ region: REGION, cors: true }, async (req) => {
   } catch (e) { console.warn("[delete] reads", e && e.message); }
 
   await admin.auth().deleteUser(uid);
-  return { ok: true, hadSubscription: !!(sub && sub.plan) };
+  return { ok: true, hadSubscription: !!(sub && sub.plan), refunded };
 });
 
 /* 오늘 남은 열람 수. 구독 관리 화면이 이걸로 '3 / 5개'를 보여 준다.
@@ -751,6 +777,44 @@ exports.resumeSubscription = onCall({ region: REGION, cors: true }, async (req) 
      · 리포트 미열람 + 7일 경과  → 잔여 기간분 − 수수료 10%
      · 리포트 열람              → 이용 일수 차감 후 − 수수료 10%
    ─────────────────────────────────────────────────────────── */
+/* 환불 금액 계산 — 요금제 페이지에 고지한 기준 그대로.
+   환불 신청과 회원 탈퇴가 같은 계산을 써야 한다. 두 곳에 따로 적으면 언젠가
+   한쪽만 고치고 지나가고, 그러면 고지한 기준과 실제가 어긋난다. */
+async function refundQuote(db, uid, sub) {
+  if (!sub || !sub.lastPaymentKey) return { amount: 0, reason: "" };
+  const startMs = sub.currentPeriodStart.toMillis();
+  const endMs = sub.currentPeriodEnd.toMillis();
+  const total = Math.max(1, days(endMs - startMs));
+  const used = Math.min(total, Math.max(0, days(Date.now() - startMs)));
+  const price = PRICE[sub.plan] || 0;
+
+  // 이번 결제 기간에 리포트를 한 건이라도 열었는가
+  const reads = await db.collection("report_reads")
+    .where("uid", "==", uid)
+    .where("updatedAt", ">=", sub.currentPeriodStart)
+    .limit(1).get();
+  const opened = !reads.empty;
+
+  if (!opened && used <= FREE_WITHDRAW_DAYS) {
+    return { amount: price, reason: "청약철회(7일 이내·미열람)" };
+  }
+  const leftRatio = Math.max(0, (total - used) / total);
+  return {
+    amount: Math.floor(price * leftRatio * (1 - REFUND_FEE_RATE)),
+    reason: opened ? "이용분 차감 환불" : "잔여 기간 환불",
+  };
+}
+
+async function doRefund(db, uid, sub, q) {
+  await toss(`/payments/${sub.lastPaymentKey}/cancel`, {
+    cancelReason: q.reason, cancelAmount: q.amount,
+  });
+  await writePayment(db, uid, {
+    amount: -q.amount, description: `환불 · ${q.reason}`, status: "refunded",
+    plan: sub.plan, paymentKey: sub.lastPaymentKey, paidAt: new Date().toISOString(),
+  });
+}
+
 exports.requestRefund = onCall(
   { region: REGION, cors: true, secrets: [TOSS_SECRET_KEY] },
   async (req) => {
@@ -761,37 +825,10 @@ exports.requestRefund = onCall(
     if (!subActive(sub)) throw new HttpsError("failed-precondition", "이용 중인 구독이 없습니다.");
     if (!sub.lastPaymentKey) throw new HttpsError("failed-precondition", "환불할 결제 건이 없습니다.");
 
-    const startMs = sub.currentPeriodStart.toMillis();
-    const endMs = sub.currentPeriodEnd.toMillis();
-    const total = Math.max(1, days(endMs - startMs));
-    const used = Math.min(total, Math.max(0, days(Date.now() - startMs)));
-    const price = PRICE[sub.plan] || 0;
-
-    // 이번 결제 기간에 리포트를 한 건이라도 열었는가
-    const reads = await db.collection("report_reads")
-      .where("uid", "==", uid)
-      .where("updatedAt", ">=", sub.currentPeriodStart)
-      .limit(1).get();
-    const opened = !reads.empty;
-
-    let amount, reason;
-    if (!opened && used <= FREE_WITHDRAW_DAYS) {
-      amount = price;
-      reason = "청약철회(7일 이내·미열람)";
-    } else {
-      const leftRatio = Math.max(0, (total - used) / total);
-      amount = Math.floor(price * leftRatio * (1 - REFUND_FEE_RATE));
-      reason = opened ? "이용분 차감 환불" : "잔여 기간 환불";
-    }
+    const q = await refundQuote(db, uid, sub);
+    const amount = q.amount;
     if (amount <= 0) throw new HttpsError("failed-precondition", "환불 가능한 금액이 없습니다.");
-
-    await toss(`/payments/${sub.lastPaymentKey}/cancel`, {
-      cancelReason: reason, cancelAmount: amount,
-    });
-    await writePayment(db, uid, {
-      amount: -amount, description: `환불 · ${reason}`, status: "refunded",
-      plan: sub.plan, paymentKey: sub.lastPaymentKey, paidAt: new Date().toISOString(),
-    });
+    await doRefund(db, uid, sub, q);
     // 환불이 끝나면 이용 권한은 즉시 종료된다(요금제 페이지 고지와 동일).
     await ref.set({
       status: "refunded", cancelAtPeriodEnd: true,

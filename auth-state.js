@@ -25,9 +25,11 @@ if(window.KOSi18n) window.KOSi18n.register({
     "Something went wrong while deleting your account. Please try again later.",
   "정말 탈퇴하시겠어요?":"Delete your account?",
   "이용 중인 구독이 있습니다":"You have an active subscription",
-  "탈퇴하시면 구독이 즉시 해지되고 남은 기간은 이용하실 수 없습니다. 환불이 필요하시면 먼저 구독 관리에서 신청해 주세요.":
-    "Deleting your account cancels the subscription right away and you lose the remaining days. If you want a refund, request it on the subscription page first.",
+  "탈퇴하시면 구독이 즉시 해지되고, 환불 기준에 따라 산정된 금액이 자동으로 환불됩니다. 금액을 먼저 확인하시려면 구독 관리에서 환불을 신청해 주세요.":
+    "Deleting your account cancels the subscription right away and refunds the amount due under our refund terms. To see the amount first, request the refund on the subscription page.",
   "구독 관리로 이동":"Go to subscription",
+  "환불 처리에 실패해 탈퇴를 진행하지 않았습니다. 구독 관리에서 환불을 먼저 신청해 주세요.":
+    "We could not process the refund, so your account was not deleted. Please request the refund on the subscription page first.",
   "계정과 저장된 관심종목이 영구 삭제되며, 되돌릴 수 없습니다.":
     "Your account and saved watchlist will be permanently deleted. This cannot be undone.",
   "떠나시는 이유를 알려주시면 개선에 큰 도움이 됩니다 (선택)":
@@ -91,7 +93,7 @@ async function openWithdrawModal(){
       <p class="wd-warn">${T("계정과 저장된 관심종목이 영구 삭제되며, 되돌릴 수 없습니다.")}</p>
       ${sub ? `<div class="wd-sub">
         <b>${T("이용 중인 구독이 있습니다")}</b>
-        <p>${T("탈퇴하시면 구독이 즉시 해지되고 남은 기간은 이용하실 수 없습니다. 환불이 필요하시면 먼저 구독 관리에서 신청해 주세요.")}</p>
+        <p>${T("탈퇴하시면 구독이 즉시 해지되고, 환불 기준에 따라 산정된 금액이 자동으로 환불됩니다. 금액을 먼저 확인하시려면 구독 관리에서 환불을 신청해 주세요.")}</p>
         <a href="billing.html">${T("구독 관리로 이동")}</a>
       </div>` : ""}
       <div class="wd-q">${T("떠나시는 이유를 알려주시면 개선에 큰 도움이 됩니다 (선택)")}</div>
@@ -169,7 +171,10 @@ async function finishWithdraw(user, email, reason, detail, ov, hadSub){
       try{ await signOut(auth); }catch(_){}
       location.href = "Login.html?next=" + encodeURIComponent(here());
     }else{
-      alert(T("탈퇴 처리 중 오류가 발생했습니다. 잠시 후 다시 시도해 주세요."));
+      // 서버가 이유를 준 경우(예: 환불 실패로 탈퇴 중단) 그대로 보여 준다.
+      const msg = (e && e.message && /환불|refund/i.test(e.message))
+        ? e.message : T("탈퇴 처리 중 오류가 발생했습니다. 잠시 후 다시 시도해 주세요.");
+      alert(msg);
       ov.remove();
     }
   }
