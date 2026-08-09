@@ -115,7 +115,7 @@ function subscribe(planId) {
     card: { company: "모의 카드", number: "0000-00**-****-0000" },
     startedAt: (prev && prev.startedAt) || now,
   });
-  pay({ amount: p.price, description: `${p.name} 월 구독 (모의)`, status: "paid", plan: p.id });
+  pay({ amount: p.price, description: `${p.name} 월 구독 (모의)`, kind: "subscription", status: "paid", plan: p.id });
   emit();
 }
 
@@ -132,7 +132,7 @@ function updateCard() {
     sub.currentPeriodStart = now;
     sub.currentPeriodEnd = addMonth(now);
     const p = PLANS[sub.plan];
-    if (p) pay({ amount: p.price, description: `${p.name} 월 구독 (모의)`, status: "paid", plan: p.id });
+    if (p) pay({ amount: p.price, description: `${p.name} 월 구독 (모의)`, kind: "subscription", status: "paid", plan: p.id });
   }
   write(SUB_KEY, sub);
   emit();
@@ -182,14 +182,16 @@ async function call(name, arg) {
       const left = Math.max(0, (sub.currentPeriodEnd - Date.now()) / 86400e3);
       const diff = Math.floor((next.price - PLANS[sub.plan].price) * (left / total));
       sub.plan = next.id; sub.pendingPlan = null;
-      pay({ amount: diff, description: `${next.name} 업그레이드 차액 (모의)`, status: "paid", plan: next.id });
+      pay({ amount: diff, description: `${next.name} 업그레이드 차액 (모의)`, kind: "upgrade", status: "paid", plan: next.id });
     } else {
       // 다운그레이드는 다음 결제일부터. 지금 쓰는 플랜을 다시 고르면 예약 취소.
       sub.pendingPlan = next.id === sub.plan ? null : next.id;
     }
   } else if (name === "requestRefund") {
     const amount = refundAmount(sub);
-    pay({ amount: -amount, description: "환불 (모의)", status: "refunded", plan: sub.plan });
+    pay({ amount: -amount, description: "환불 (모의)", kind: "refund",
+         why: (read(READ_KEY, { tickers: [] }).tickers || []).length ? "used" : "withdraw",
+         status: "refunded", plan: sub.plan });
     sub.status = "refunded"; sub.currentPeriodEnd = Date.now();
   }
   write(SUB_KEY, sub);

@@ -600,7 +600,11 @@ async function writePayment(db, uid, data) {
 }
 
 /** 빌링키로 즉시 결제. 성공하면 결제 내역을 남기고 payment 객체를 돌려준다. */
-async function charge(db, uid, sub, amount, description, tag) {
+/* 결제 한 건을 기록할 때는 '무엇에 대한 결제인가'를 종류(kind)로 남긴다.
+   ⚠️ 설명 문장을 한국어로 굳혀 저장하면 영어 화면에서 번역할 방법이 없다.
+      화면이 언어에 맞춰 문구를 만들 수 있도록 kind 를 준다. description 은
+      관리자 화면·로그에서 사람이 읽기 위한 값으로만 남겨 둔다. */
+async function charge(db, uid, sub, amount, description, tag, kind) {
   if (amount <= 0) return null;
   const pay = await toss(`/billing/${sub.billingKey}`, {
     customerKey: sub.customerKey,
@@ -609,7 +613,8 @@ async function charge(db, uid, sub, amount, description, tag) {
     orderName: description,
   });
   await writePayment(db, uid, {
-    amount, description, status: "paid", plan: sub.plan,
+    amount, description, kind: kind || (tag === "up" ? "upgrade" : "subscription"),
+    status: "paid", plan: sub.plan,
     paymentKey: pay.paymentKey, orderId: pay.orderId,
     paidAt: pay.approvedAt || new Date().toISOString(),
   });
@@ -796,12 +801,13 @@ async function refundQuote(db, uid, sub) {
   const opened = !reads.empty;
 
   if (!opened && used <= FREE_WITHDRAW_DAYS) {
-    return { amount: price, reason: "청약철회(7일 이내·미열람)" };
+    return { amount: price, reason: "청약철회(7일 이내·미열람)", why: "withdraw" };
   }
   const leftRatio = Math.max(0, (total - used) / total);
   return {
     amount: Math.floor(price * leftRatio * (1 - REFUND_FEE_RATE)),
     reason: opened ? "이용분 차감 환불" : "잔여 기간 환불",
+    why: opened ? "used" : "left",
   };
 }
 
@@ -810,7 +816,8 @@ async function doRefund(db, uid, sub, q) {
     cancelReason: q.reason, cancelAmount: q.amount,
   });
   await writePayment(db, uid, {
-    amount: -q.amount, description: `환불 · ${q.reason}`, status: "refunded",
+    amount: -q.amount, description: `환불 · ${q.reason}`,
+    kind: "refund", why: q.why || null, status: "refunded",
     plan: sub.plan, paymentKey: sub.lastPaymentKey, paidAt: new Date().toISOString(),
   });
 }
@@ -900,7 +907,7 @@ exports.renewSubscriptions = onSchedule(
         }, { merge: true });
         await writePayment(db, uid, {
           amount: PRICE[sub.plan] || 0, description: "정기결제 실패",
-          status: "failed", plan: sub.plan, paidAt: null,
+          kind: "failed", status: "failed", plan: sub.plan, paidAt: null,
         });
       }
     }
