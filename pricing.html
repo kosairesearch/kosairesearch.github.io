@@ -518,7 +518,7 @@ KOSi18n.register({
     <a href="industry.html">업종별</a>
     <a href="Screener.html">스크리너</a>
     <a href="Watchlist.html">워치리스트</a>
-    <a href="pricing.html">요금제</a>
+    <a href="pricing.html">멤버십</a>
   </div>
   <div class="nav-spacer"></div>
   <button class="icon-btn" id="themeBtn" aria-label="테마 전환" title="라이트/다크 전환">
@@ -534,11 +534,11 @@ KOSi18n.register({
   <a href="industry.html">업종별</a>
   <a href="Screener.html">스크리너</a>
   <a href="Watchlist.html">워치리스트</a>
-  <a href="pricing.html">요금제</a>
+  <a href="pricing.html">멤버십</a>
 </div>
 
 <div class="wrap" data-screen-label="Pricing">
-  <div class="crumb"><a href="Home.html">홈</a> / <b>요금제</b></div>
+  <div class="crumb"><a href="Home.html">홈</a> / <b>멤버십</b></div>
 </div>
 
 <main>
@@ -573,7 +573,7 @@ KOSi18n.register({
           <li class="on">국내 상장 2,500여 개 종목</li>
           <li class="on">하루 5개 리포트 열람</li>
         </ul>
-        <button type="button" class="btn btn-soft" data-plan="basic" data-i18n-skip>BASIC 시작하기</button>
+        <button type="button" class="btn btn-primary" data-plan="basic" data-i18n-skip>업그레이드</button>
         <div class="plan-msg"></div>
       </section>
 
@@ -587,7 +587,7 @@ KOSi18n.register({
           <li class="on">국내 상장 2,500여 개 종목</li>
           <li class="on">하루 15개 리포트 열람</li>
         </ul>
-        <button type="button" class="btn btn-primary" data-plan="pro" data-i18n-skip>PRO 시작하기</button>
+        <button type="button" class="btn btn-primary" data-plan="pro" data-i18n-skip>업그레이드</button>
         <div class="plan-msg"></div>
       </section>
     </div>
@@ -711,7 +711,7 @@ KOSi18n.register({
     <div class="foot-inner glass">
       <div class="foot-grid">
         <div class="foot-brand"><a class="brand" href="Home.html"><img class="brand-logo brand-logo--light" src="assets/kosai-wordmark-black.png" alt="KOSAI" width="148" height="24"><img class="brand-logo brand-logo--dark" src="assets/kosai-wordmark-white.png" alt="KOSAI" width="148" height="24"></a><p>한국 상장사를 위한 AI 투자 리서치. 데이터와 분석을 한 페이지에.</p></div>
-        <div class="foot-col"><h4>서비스</h4><ul><li><a href="Home.html">홈</a></li><li><a href="Reports.html">리포트</a></li><li><a href="industry.html">업종별</a></li><li><a href="Screener.html">스크리너</a></li><li><a href="Watchlist.html">워치리스트</a></li><li><a href="pricing.html">요금제</a></li></ul></div>
+        <div class="foot-col"><h4>서비스</h4><ul><li><a href="Home.html">홈</a></li><li><a href="Reports.html">리포트</a></li><li><a href="industry.html">업종별</a></li><li><a href="Screener.html">스크리너</a></li><li><a href="Watchlist.html">워치리스트</a></li><li><a href="pricing.html">멤버십</a></li></ul></div>
         <div class="foot-col"><h4>회사</h4><ul><li><a href="About.html">About</a></li><li><a href="Contact.html">문의하기</a></li><li><a href="Feedback.html">피드백</a></li></ul></div>
         <div class="foot-col"><h4>정책</h4><ul><li><a href="Terms.html">이용약관</a></li><li><a href="Privacy.html">개인정보처리방침</a></li></ul></div>
       </div>
@@ -744,6 +744,7 @@ themeBtn.addEventListener('click',()=>applyTheme(root.getAttribute('data-theme')
 
 if(window.KOSi18n) KOSi18n.register({
   "요금제": "Pricing",
+  "멤버십": "Membership",
   "무료": "Free",
   "원": "KRW",
   "현재가·시가총액·PER·PBR 등 핵심 지표": "Key metrics: price, market cap, PER, PBR and more",
@@ -788,8 +789,6 @@ if(window.KOSi18n) KOSi18n.register({
   "잠금 없이 리포트 전문 열람": "Full report, nothing locked",
   "하루 5개 리포트 열람": "5 reports per day",
   "하루 15개 리포트 열람": "15 reports per day",
-  "BASIC 시작하기": "Start BASIC",
-  "PRO 시작하기": "Start PRO",
   "보유 종목 위주로 확인하신다면 이 플랜으로 충분합니다.": "If you mainly check the stocks you already hold, this is enough.",
   "여러 종목을 한자리에서 비교하며 찾아보신다면 이 플랜을 권합니다.": "If you compare many stocks while hunting for the next one, this is the one.",
   "하루 열람 한도": "Reports per day",
@@ -854,10 +853,10 @@ const EN = () => {
   return !!(window.KOSi18n && window.KOSi18n.lang === 'en');
 };
 const T = {
-  ko: { start: '{p} 시작하기', current: '이용 중', manage: '구독 관리',
+  ko: { start: '업그레이드', current: '이용 중', manage: '구독 관리',
         up: 'PRO로 업그레이드', down: 'BASIC으로 변경', badge: '이용 중',
         pend: '{d}부터 적용', pendBadge: '변경 예정' },
-  en: { start: 'Start {p}', current: 'Current plan', manage: 'Manage subscription',
+  en: { start: 'Upgrade', current: 'Current plan', manage: 'Manage subscription',
         up: 'Upgrade to PRO', down: 'Switch to BASIC', badge: 'Current',
         pend: 'From {d}', pendBadge: 'Scheduled' },
 };
@@ -881,12 +880,11 @@ function paint() {
   btns.forEach((btn) => {
     const id = btn.dataset.plan;
     const card = btn.closest('.plan');
-    const name = id.toUpperCase();
     card.querySelectorAll('.plan-badge.js').forEach((e) => e.remove());
     btn.classList.remove('is-current');
     btn.disabled = false;
 
-    let label = k.start.replace('{p}', name), badge = null;
+    let label = k.start, badge = null;
     if (st.active && id === st.plan) {
       // 지금 쓰는 플랜 — 팔 게 아니라 관리로 보낸다.
       label = k.manage; badge = k.badge;
