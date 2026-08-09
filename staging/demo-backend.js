@@ -138,6 +138,17 @@ function updateCard() {
   emit();
 }
 
+/* 환불 금액 — 서버 refundQuote 와 같은 기준.
+   미열람 + 7일 이내면 전액, 아니면 잔여 기간분에서 수수료 10%. */
+function refundAmount(sub) {
+  const total = Math.max(1, (sub.currentPeriodEnd - sub.currentPeriodStart) / 86400e3);
+  const used = Math.min(total, Math.max(0, (Date.now() - sub.currentPeriodStart) / 86400e3));
+  const opened = (read(READ_KEY, { tickers: [] }).tickers || []).length > 0;
+  const price = (PLANS[sub.plan] || {}).price || 0;
+  return (!opened && used <= 7) ? price
+       : Math.floor(price * Math.max(0, (total - used) / total) * 0.9);
+}
+
 /* 구독 관리 버튼들. 서버 함수와 같은 이름·같은 규칙. */
 async function call(name, arg) {
   if (name === "getUsage") {
@@ -147,11 +158,15 @@ async function call(name, arg) {
                      used: (read(READ_KEY, { tickers: [] }).tickers || []).length } };
   }
   /* 탈퇴 — 미리보기에서는 실제 계정을 지우지 않는다. 스테이징은 진짜 파이어베이스
-     계정으로 로그인하므로, 여기서 지우면 실제 계정이 사라진다. */
+     계정으로 로그인하므로, 여기서 지우면 실제 계정이 사라진다.
+     환불은 서버와 같은 기준으로 먼저 계산해 돌려준다(고지한 기준 그대로). */
   if (name === "deleteAccount") {
+    const s0 = read(SUB_KEY, null);
+    let refunded = 0;
+    if (s0 && activeNow(s0)) refunded = refundAmount(s0);
     [SUB_KEY, READ_KEY, PAY_KEY].forEach((k) => localStorage.removeItem(k));
     emit();
-    return { data: { ok: true, demo: true } };
+    return { data: { ok: true, demo: true, refunded } };
   }
   const sub = read(SUB_KEY, null);
   if (!sub) throw new Error("이용 중인 구독이 없습니다.");
@@ -173,12 +188,7 @@ async function call(name, arg) {
       sub.pendingPlan = next.id === sub.plan ? null : next.id;
     }
   } else if (name === "requestRefund") {
-    const total = Math.max(1, (sub.currentPeriodEnd - sub.currentPeriodStart) / 86400e3);
-    const used = Math.min(total, Math.max(0, (Date.now() - sub.currentPeriodStart) / 86400e3));
-    const opened = (read(READ_KEY, { tickers: [] }).tickers || []).length > 0;
-    const price = PLANS[sub.plan].price;
-    const amount = (!opened && used <= 7) ? price
-                 : Math.floor(price * Math.max(0, (total - used) / total) * 0.9);
+    const amount = refundAmount(sub);
     pay({ amount: -amount, description: "환불 (모의)", status: "refunded", plan: sub.plan });
     sub.status = "refunded"; sub.currentPeriodEnd = Date.now();
   }
