@@ -384,8 +384,8 @@ async function consumeDailyRead(db, uid, ticker, limit) {
   return db.runTransaction(async (tx) => {
     const snap = await tx.get(ref);
     const seen = (snap.exists && snap.data().tickers) || [];
-    if (seen.includes(ticker)) return true;        // 오늘 이미 본 종목 — 추가 차감 없음
-    if (seen.length >= limit) return false;
+    if (seen.includes(ticker)) return { ok: true, used: seen.length };   // 오늘 이미 본 종목 — 추가 차감 없음
+    if (seen.length >= limit) return { ok: false, used: seen.length };
     tx.set(ref, {
       tickers: admin.firestore.FieldValue.arrayUnion(ticker),
       count: seen.length + 1,
@@ -393,8 +393,16 @@ async function consumeDailyRead(db, uid, ticker, limit) {
       uid,
       updatedAt: admin.firestore.FieldValue.serverTimestamp(),
     }, { merge: true });
-    return true;
+    return { ok: true, used: seen.length + 1 };
   });
+}
+
+/* 오늘 몇 개를 썼는지. 화면이 '남은 개수'를 보여 주려면 필요하다.
+   report_reads 는 클라이언트가 읽지 못하게 막아 뒀으므로(firestore.rules) 서버가 준다. */
+async function usageOf(db, uid) {
+  const snap = await db.doc(`report_reads/${uid}_${kstDay()}`).get();
+  const seen = (snap.exists && snap.data().tickers) || [];
+  return seen.length;
 }
 
 exports.getReport = onCall(
@@ -427,14 +435,71 @@ exports.getReport = onCall(
     const snap = await db.doc(`reports_paid/${ticker}`).get();
     if (!snap.exists) throw new HttpsError("not-found", "리포트를 찾을 수 없습니다.");
 
-    if (!(await consumeDailyRead(db, uid, ticker, limit))) {
+    const use = await consumeDailyRead(db, uid, ticker, limit);
+    if (!use.ok) {
       console.warn(`[getReport] 일일 한도(${plan}=${limit}) 초과 uid=${uid}`);
       throw new HttpsError("resource-exhausted", "오늘 열람 한도를 모두 사용했습니다.");
     }
 
-    return { ticker, paid: snap.data(), plan, limit };
+    return { ticker, paid: snap.data(), plan, limit, used: use.used };
   }
 );
+
+/* ── 회원 탈퇴 ────────────────────────────────────────────────
+   ⚠️ 이 함수 없이 클라이언트에서 deleteUser() 만 부르면, 계정은 사라지는데
+      subscriptions/{uid} 는 status:active·billingKey 그대로 남는다. 매일 도는
+      renewSubscriptions 가 그 문서를 집어 다음 달에도, 그 다음 달에도 카드를
+      긁는다. 당사자는 로그인할 수도, 해지할 수도 없다. 돈만 빠져나간다.
+      그래서 탈퇴는 반드시 서버가 처리한다 — 구독을 먼저 닫고 계정을 지운다.
+
+   남기는 것과 지우는 것
+     · payments/{uid}/items  남긴다. 전자상거래법상 대금결제 기록은 5년 보존
+       의무가 있다(개인정보 파기 원칙의 법정 예외).
+     · subscriptions/{uid}   문서는 남기되 결제에 쓰이는 값(billingKey·
+       customerKey·카드)을 지우고 status 를 'deleted' 로 바꾼다. 다시 긁힐
+       여지를 없애는 게 목적이다.
+     · watchlists/{uid}, report_reads  지운다. 보관할 이유가 없다.
+   ─────────────────────────────────────────────────────────── */
+exports.deleteAccount = onCall({ region: REGION, cors: true }, async (req) => {
+  const uid = req.auth && req.auth.uid;
+  if (!uid) throw new HttpsError("unauthenticated", "로그인이 필요합니다.");
+  const db = admin.firestore();
+  const subRef = db.doc(`subscriptions/${uid}`);
+  const sub = (await subRef.get()).data() || null;
+
+  if (sub) {
+    await subRef.set({
+      status: "deleted",
+      cancelAtPeriodEnd: true, pendingPlan: null,
+      billingKey: admin.firestore.FieldValue.delete(),
+      customerKey: admin.firestore.FieldValue.delete(),
+      card: admin.firestore.FieldValue.delete(),
+      deletedAt: admin.firestore.FieldValue.serverTimestamp(),
+      updatedAt: admin.firestore.FieldValue.serverTimestamp(),
+    }, { merge: true });
+  }
+
+  try { await db.doc(`watchlists/${uid}`).delete(); } catch (e) { console.warn("[delete] watchlist", e && e.message); }
+  try {
+    const reads = await db.collection("report_reads").where("uid", "==", uid).limit(200).get();
+    await Promise.all(reads.docs.map((d) => d.ref.delete()));
+  } catch (e) { console.warn("[delete] reads", e && e.message); }
+
+  await admin.auth().deleteUser(uid);
+  return { ok: true, hadSubscription: !!(sub && sub.plan) };
+});
+
+/* 오늘 남은 열람 수. 구독 관리 화면이 이걸로 '3 / 5개'를 보여 준다.
+   한도에 부딪히기 전에는 알 길이 없었다 — 다 쓰고 나서야 알려 주는 건 늦다. */
+exports.getUsage = onCall({ region: REGION, cors: true }, async (req) => {
+  const uid = req.auth && req.auth.uid;
+  if (!uid) throw new HttpsError("unauthenticated", "로그인이 필요합니다.");
+  const db = admin.firestore();
+  const sub = (await db.doc(`subscriptions/${uid}`).get()).data() || null;
+  if (!subActive(sub)) return { active: false, used: 0, limit: 0 };
+  const plan = String(sub.plan || "").toLowerCase();
+  return { active: true, plan, limit: DAILY_LIMIT[plan] || 0, used: await usageOf(db, uid) };
+});
 
 /* ============================================================
    구독 결제 — 토스페이먼츠 정기결제(빌링)
@@ -757,6 +822,22 @@ exports.renewSubscriptions = onSchedule(
     for (const d of due.docs) {
       const uid = d.id, sub = d.data();
       try {
+        // 탈퇴로 계정이 사라진 문서가 남아 있으면 긁지 않는다. deleteAccount 가
+        // status 를 바꿔 두므로 여기까지 오지 않지만, 한 번 더 확인한다 —
+        // 없는 사람 카드를 긁는 사고는 되돌릴 수가 없다.
+        try {
+          await admin.auth().getUser(uid);
+        } catch (e) {
+          if (e && e.code === "auth/user-not-found") {
+            console.warn(`[renew] 계정 없음 — 건너뜀 uid=${uid}`);
+            await d.ref.set({
+              status: "deleted", billingKey: admin.firestore.FieldValue.delete(),
+              updatedAt: admin.firestore.FieldValue.serverTimestamp(),
+            }, { merge: true });
+            continue;
+          }
+          throw e;
+        }
         if (sub.cancelAtPeriodEnd) {
           await d.ref.set({ status: "expired", updatedAt: admin.firestore.FieldValue.serverTimestamp() }, { merge: true });
           continue;

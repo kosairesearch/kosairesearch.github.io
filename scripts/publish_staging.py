@@ -95,11 +95,31 @@ PATCH = {
          "      }\n"
          "      const { loadTossPayments }"),
     ],
+    # 스테이징에서 탈퇴를 눌러 실제 파이어베이스 계정이 지워지면 안 된다.
+    # deleteAccount 를 모의 백엔드로 돌리고, 실패 시 폴백도 막는다.
+    "auth-state.js": [
+        # 구독 여부도 모의 상태에서 읽는다 — 진짜 Firestore 에는 모의 구독이 없다.
+        ("async function activeSub(uid){\n  try{",
+         "async function activeSub(uid){\n"
+         "  if (window.__KOSDEMO) {\n"
+         "    var st = window.KOSPaywall && window.KOSPaywall.state();\n"
+         "    return st && st.active ? st.sub : null;\n"
+         "  }\n"
+         "  try{"),
+        ('      await httpsCallable(fns, "deleteAccount")({});',
+         "      if (window.__KOSDEMO) await window.KOSDemo.call('deleteAccount');\n"
+         '      else await httpsCallable(fns, "deleteAccount")({});'),
+        ("      if(hadSub) throw e;",
+         "      if(hadSub || window.__KOSDEMO) throw e;"),
+    ],
     "billing.js": [
         ("const call = (n, d) => httpsCallable(fns, n)(d || {});",
          "const call = (n, d) => (window.__KOSDEMO\n"
          "  ? window.KOSDemo.call(n, d || {})\n"
          "  : httpsCallable(fns, n)(d || {}));"),
+        # 열람 현황도 모의 백엔드에서 받는다.
+        ('const res = await httpsCallable(fns, "getUsage")({});',
+         'const res = await call("getUsage");'),
         ("async function loadPayments(uid) {\n  if (!isConfigured) return [];",
          "async function loadPayments(uid) {\n"
          "  if (window.__KOSDEMO) return window.KOSDemo.payments();\n"
