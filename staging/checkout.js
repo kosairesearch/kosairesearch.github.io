@@ -226,7 +226,7 @@ function wireForm(plan, user, opts) {
       if (window.__KOSDEMO) {
         await new Promise((r) => setTimeout(r, 700));
         if (method) { window.KOSDemo.updateCard(); location.replace('billing.html?card=1'); }
-        else { window.KOSDemo.subscribe(plan.id); location.replace('billing.html?welcome=1'); }
+        else { window.KOSDemo.subscribe(plan.id); location.replace('billing.html'); }
         return;
       }
       const { loadTossPayments } = await import("https://js.tosspayments.com/v2/standard");
@@ -261,7 +261,7 @@ async function confirm(authKey, customerKey, planId, method) {
     const fns = getFunctions(app, SOCIAL.functionsRegion || "asia-northeast3");
     await httpsCallable(fns, "confirmBilling")(
       { authKey, customerKey, plan: planId, updateMethod: method || undefined });
-    location.replace(method ? "billing.html?card=1" : "billing.html?welcome=1");
+    location.replace(method ? "billing.html?card=1" : "billing.html");
   } catch (e) {
     console.error("[checkout] confirmBilling", e);
     const again = "checkout.html?plan=" + encodeURIComponent(planId) + (method ? "&method=1" : "");
