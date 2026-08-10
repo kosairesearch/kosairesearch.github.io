@@ -32,8 +32,8 @@ if(window.KOSi18n) window.KOSi18n.register({
     "We could not process the refund, so your account was not deleted. Please request the refund on the subscription page first.",
   "계정과 저장된 관심종목이 영구 삭제되며, 되돌릴 수 없습니다.":
     "Your account and saved watchlist will be permanently deleted. This cannot be undone.",
-  "떠나시는 이유를 알려주시면 개선에 반영하겠습니다 (선택 · 복수 선택 가능)":
-    "Telling us why helps us improve (optional · select all that apply)",
+  "떠나시는 이유를 알려주시면 개선에 반영하겠습니다 (복수 선택 가능)":
+    "Telling us why helps us improve (select all that apply)",
   "원하는 종목·정보가 부족합니다":"Missing stocks or information I want",
   "정보가 정확하지 않습니다":"Information isn't accurate",
   "자주 이용하지 않습니다":"I don't use it often",
@@ -96,7 +96,7 @@ async function openWithdrawModal(){
         <p>${T("탈퇴하시면 구독이 즉시 해지되고, 환불 기준에 따라 산정된 금액이 자동으로 환불됩니다. 금액을 먼저 확인하시려면 구독 관리에서 환불을 신청해 주세요.")}</p>
         <a href="billing.html">${T("구독 관리로 이동")}</a>
       </div>` : ""}
-      <div class="wd-q">${T("떠나시는 이유를 알려주시면 개선에 반영하겠습니다 (선택 · 복수 선택 가능)")}</div>
+      <div class="wd-q">${T("떠나시는 이유를 알려주시면 개선에 반영하겠습니다 (복수 선택 가능)")}</div>
       <div class="wd-reasons">${WD_REASONS.map((r)=>
         `<label class="wd-r"><input type="checkbox" name="wdReason" value="${r}"><span>${T(r)}</span></label>`).join('')}</div>
       <textarea class="wd-detail" rows="2" placeholder="${T("자세한 의견 (선택)")}"></textarea>
