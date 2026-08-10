@@ -21,7 +21,8 @@ import { onAuthStateChanged }
   from "https://www.gstatic.com/firebasejs/10.12.2/firebase-auth.js";
 import { PLANS } from "./payment-config.js";
 
-const SUB_KEY = "kos-demo-sub", READ_KEY = "kos-demo-reads", PAY_KEY = "kos-demo-pays";
+const SUB_KEY = "kos-demo-sub", READ_KEY = "kos-demo-reads", PAY_KEY = "kos-demo-pays",
+      FB_KEY = "kos-demo-reasons";
 
 /* 유료 구간 키 — scripts/report_split.py 의 PAID_KEYS 와 같아야 한다.
    여기서만 다르면 미리보기가 실제와 다른 걸 잠그게 된다. */
@@ -157,6 +158,15 @@ async function call(name, arg) {
     return { data: { active: true, plan: st.plan, limit: st.limit,
                      used: (read(READ_KEY, { tickers: [] }).tickers || []).length } };
   }
+  /* 해지·환불 사유. 미리보기에서는 메일을 보내지 않고 남겨만 둔다 —
+     KOSDemo.reasons() 로 무엇이 접수됐는지 확인할 수 있다. */
+  if (name === "submitForm") {
+    const list = read(FB_KEY, []);
+    list.unshift({ at: Date.now(), ...(arg || {}) });
+    write(FB_KEY, list);
+    console.log("[demo] 사유 접수", arg);
+    return { data: { ok: true, demo: true } };
+  }
   /* 탈퇴 — 미리보기에서는 실제 계정을 지우지 않는다. 스테이징은 진짜 파이어베이스
      계정으로 로그인하므로, 여기서 지우면 실제 계정이 사라진다.
      환불은 서버와 같은 기준으로 먼저 계산해 돌려준다(고지한 기준 그대로). */
@@ -203,7 +213,8 @@ window.__KOSDEMO = true;
 window.KOSDemo = {
   subscribe, updateCard, call,
   payments: () => read(PAY_KEY, []),
-  reset() { [SUB_KEY, READ_KEY, PAY_KEY].forEach((k) => localStorage.removeItem(k)); emit(); },
+  reasons: () => read(FB_KEY, []),
+  reset() { [SUB_KEY, READ_KEY, PAY_KEY, FB_KEY].forEach((k) => localStorage.removeItem(k)); emit(); },
   readsToday: () => (read(READ_KEY, { tickers: [] }).tickers || []).length,
   /* 눌러 볼 수 없는 상태들 — 콘솔에서 만들어 화면을 확인한다.
      KOSDemo.simulate('past_due') / 'expired' */

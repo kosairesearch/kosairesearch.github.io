@@ -32,12 +32,12 @@ if(window.KOSi18n) window.KOSi18n.register({
     "We could not process the refund, so your account was not deleted. Please request the refund on the subscription page first.",
   "계정과 저장된 관심종목이 영구 삭제되며, 되돌릴 수 없습니다.":
     "Your account and saved watchlist will be permanently deleted. This cannot be undone.",
-  "떠나시는 이유를 알려주시면 개선에 큰 도움이 됩니다 (선택)":
-    "Telling us why helps us improve (optional)",
-  "원하는 종목·정보가 부족해요":"Missing stocks or information I want",
-  "정보가 정확하지 않아요":"Information isn't accurate",
-  "자주 사용하지 않아요":"I don't use it often",
-  "사용법이 불편해요":"Hard to use",
+  "떠나시는 이유를 알려주시면 개선에 반영하겠습니다 (선택 · 복수 선택 가능)":
+    "Telling us why helps us improve (optional · select all that apply)",
+  "원하는 종목·정보가 부족합니다":"Missing stocks or information I want",
+  "정보가 정확하지 않습니다":"Information isn't accurate",
+  "자주 이용하지 않습니다":"I don't use it often",
+  "이용 방법이 불편합니다":"Hard to use",
   "기타":"Other",
   "자세한 의견 (선택)":"Tell us more (optional)",
   "위 내용을 이해했으며 되돌릴 수 없음에 동의합니다":
@@ -56,8 +56,8 @@ if(window.KOSi18n) window.KOSi18n.register({
    ⚠️ 삭제는 서버가 한다. 여기서 deleteUser() 만 부르면 계정은 사라지는데
       구독 문서는 살아 있어, 매일 도는 갱신 배치가 다음 달에도 카드를 긁는다.
       당사자는 로그인도 해지도 못 한다. 서버 함수가 구독을 먼저 닫는다. */
-const WD_REASONS = ["원하는 종목·정보가 부족해요", "정보가 정확하지 않아요",
-                    "자주 사용하지 않아요", "사용법이 불편해요", "기타"];
+const WD_REASONS = ["원하는 종목·정보가 부족합니다", "정보가 정확하지 않습니다",
+                    "자주 이용하지 않습니다", "이용 방법이 불편합니다", "기타"];
 
 /* 지금 유료 구독 중인가. 탈퇴하면 남은 기간을 잃으므로 미리 알려야 한다.
    실패하면(규칙·네트워크) 경고만 못 붙일 뿐, 탈퇴 자체는 서버가 안전하게 처리한다. */
@@ -96,7 +96,7 @@ async function openWithdrawModal(){
         <p>${T("탈퇴하시면 구독이 즉시 해지되고, 환불 기준에 따라 산정된 금액이 자동으로 환불됩니다. 금액을 먼저 확인하시려면 구독 관리에서 환불을 신청해 주세요.")}</p>
         <a href="billing.html">${T("구독 관리로 이동")}</a>
       </div>` : ""}
-      <div class="wd-q">${T("떠나시는 이유를 알려주시면 개선에 큰 도움이 됩니다 (선택)")}</div>
+      <div class="wd-q">${T("떠나시는 이유를 알려주시면 개선에 반영하겠습니다 (선택 · 복수 선택 가능)")}</div>
       <div class="wd-reasons">${WD_REASONS.map((r)=>
         `<label class="wd-r"><input type="checkbox" name="wdReason" value="${r}"><span>${T(r)}</span></label>`).join('')}</div>
       <textarea class="wd-detail" rows="2" placeholder="${T("자세한 의견 (선택)")}"></textarea>
@@ -111,18 +111,15 @@ async function openWithdrawModal(){
   const ack = ov.querySelector('#wdAck'), type = ov.querySelector('#wdType'), go = ov.querySelector('.wd-go');
   const sync = () => { go.disabled = !(ack.checked && type.value.trim() === WORD); };
   ack.addEventListener('change', sync); type.addEventListener('input', sync);
-  // 사유는 한 가지만 선택(체크박스 모양이되 단일 선택 유지)
-  ov.querySelectorAll('input[name=wdReason]').forEach((cb) => {
-    cb.addEventListener('change', () => {
-      if (cb.checked) ov.querySelectorAll('input[name=wdReason]').forEach((o) => { if (o !== cb) o.checked = false; });
-    });
-  });
+  /* 사유는 여러 개 고를 수 있다. 떠나는 이유가 하나뿐인 경우는 드물다 —
+     하나만 받으면 나머지는 듣지 못하고 사라진다. */
   const close = () => ov.remove();
   ov.querySelector('.wd-cancel').addEventListener('click', close);
   ov.addEventListener('click', e => { if(e.target === ov) close(); });
   go.addEventListener('click', async () => {
     go.disabled = true; go.textContent = '...';
-    const reason = (ov.querySelector('input[name=wdReason]:checked') || {}).value || '';
+    const reason = [...ov.querySelectorAll('input[name=wdReason]:checked')]
+      .map((c) => c.value).join(', ');
     const detail = ov.querySelector('.wd-detail').value.trim();
     await finishWithdraw(user, email, reason, detail, ov, !!sub);
   });

@@ -59,7 +59,7 @@ document.addEventListener('click', function (e) {
   if (!a) return;
   e.preventDefault();
   if (window.KOSDemo) window.KOSDemo.reset();
-  else ['kos-demo-sub', 'kos-demo-reads', 'kos-demo-pays'].forEach(function (k) {
+  else ['kos-demo-sub', 'kos-demo-reads', 'kos-demo-pays', 'kos-demo-reasons'].forEach(function (k) {
     try { localStorage.removeItem(k); } catch (err) {}
   });
   location.reload();
@@ -111,6 +111,20 @@ PATCH = {
          '      else await httpsCallable(fns, "deleteAccount")({});'),
         ("      if(hadSub) throw e;",
          "      if(hadSub || window.__KOSDEMO) throw e;"),
+        # 탈퇴 사유가 실제 접수함(hello@kosai.kr)으로 날아가면 안 된다.
+        # 미리보기에서 몇 번이고 눌러 보는 화면이다.
+        ("async function recordReason(email, reason, detail){\n"
+         "  if(!reason && !detail) return;\n"
+         "  try{",
+         "async function recordReason(email, reason, detail){\n"
+         "  if(!reason && !detail) return;\n"
+         "  if (window.__KOSDEMO) {\n"
+         '    await window.KOSDemo.call("submitForm", { kind: "feedback", category: "회원 탈퇴",\n'
+         '      message: [reason && ("사유: " + reason), detail].filter(Boolean).join("\\n"),\n'
+         '      email, page: "회원탈퇴" });\n'
+         "    return;\n"
+         "  }\n"
+         "  try{"),
     ],
     "billing.js": [
         ("const call = (n, d) => httpsCallable(fns, n)(d || {});",
