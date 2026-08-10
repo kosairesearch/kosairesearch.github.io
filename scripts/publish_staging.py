@@ -90,7 +90,7 @@ PATCH = {
          "    try {\n      if (window.__KOSDEMO) {\n"
          "        await new Promise((r) => setTimeout(r, 700));\n"
          "        if (method) { window.KOSDemo.updateCard(); location.replace('billing.html?card=1'); }\n"
-         "        else { window.KOSDemo.subscribe(plan.id); location.replace('billing.html?welcome=1'); }\n"
+         "        else { window.KOSDemo.subscribe(plan.id); location.replace('billing.html'); }\n"
          "        return;\n"
          "      }\n"
          "      const { loadTossPayments }"),

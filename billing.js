@@ -31,7 +31,6 @@ const call = (n, d) => httpsCallable(fns, n)(d || {});
 
 const T = {
   ko: {
-    welcome: "구독이 시작되었습니다. 이제 모든 리포트를 전문으로 보실 수 있습니다.",
     cardOk: "결제 수단이 변경되었습니다. 다음 결제일부터 새 카드로 청구됩니다.",
     cur: "현재 플랜", on: "이용 중", willEnd: "해지 예정", off: "만료됨",
     perMonth: "월", limitRow: "하루 열람 한도", nextRow: "다음 결제일", endRow: "이용 종료일",
@@ -74,7 +73,6 @@ const T = {
     fail: "처리에 실패했습니다. 잠시 후 다시 시도해 주세요.",
   },
   en: {
-    welcome: "Your subscription is active. Every report is now open in full.",
     cardOk: "Your payment method has been updated. The new card will be charged from the next billing date.",
     cur: "Current plan", on: "Active", willEnd: "Ends soon", off: "Expired",
     perMonth: "mo", limitRow: "Daily limit", nextRow: "Next charge", endRow: "Access until",
@@ -182,8 +180,28 @@ function histSection(payments) {
   return `<section class="bl-card glass"><h2>${esc(k.hist)}</h2>${body}</section>`;
 }
 
+/* 주소에 붙은 표시(?card=1)로 한 번만 띄우는 안내. 읽자마자 주소에서 지운다 —
+   안 지우면 새로고침할 때마다, 심지어 구독이 끝난 뒤에도 계속 뜬다.
+   '구독이 시작되었습니다'가 무료 플랜 화면에 떠 있던 게 그 때문이었다. */
+let flagOnce = null;
+(function readFlag() {
+  if (qp("card")) flagOnce = "card";
+  // welcome 은 더 이상 쓰지 않는다. 예전 주소가 남아 있으면 지워만 둔다.
+  if (flagOnce || qp("welcome")) {
+    try {
+      const u = new URL(location.href);
+      u.searchParams.delete("card");
+      u.searchParams.delete("welcome");
+      history.replaceState(null, "", u.pathname + (u.search || "") + u.hash);
+    } catch (e) {}
+  }
+})();
+
 function view(st, payments) {
   const k = t();
+  // 결제 수단 변경 안내는 구독이 살아 있을 때만 뜻이 있다.
+  const banner = flagOnce === "card" && (st.active || (st.sub && st.sub.status === "past_due"))
+    ? k.cardOk : null;
   const sub = st.sub || {};
   const active = !!st.active;
   const due = !active && sub.status === "past_due";
@@ -254,9 +272,7 @@ function view(st, payments) {
 
   root.innerHTML = `
   <div class="bl">
-    ${qp("welcome") || qp("card")
-      ? `<div class="bl-card glass"><p style="margin:0;font:600 15px/1.6 var(--font-sans)">${esc(qp("card") ? k.cardOk : k.welcome)}</p></div>`
-      : ""}
+    ${banner ? `<div class="bl-card glass"><p style="margin:0;font:600 15px/1.6 var(--font-sans)">${esc(banner)}</p></div>` : ""}
 
     <section class="bl-card glass">
       <div class="bl-top">
