@@ -73,6 +73,13 @@ const T = {
     okDown: "{d}부터 {p} 플랜으로 변경됩니다.",
     okUndo: "플랜 변경이 취소되었습니다.", okRefund: "환불 신청이 접수되었습니다.",
     fail: "처리에 실패했습니다. 잠시 후 다시 시도해 주세요.",
+    surveyQ: "사유를 알려주시면 개선에 반영하겠습니다 (선택 · 복수 선택 가능)",
+    surveyMore: "자세한 의견 (선택)",
+    cancelWhy: ["가격이 부담됩니다", "원하는 종목·정보가 부족합니다",
+                "리포트 내용이 기대와 다릅니다", "자주 이용하지 않습니다",
+                "일시적으로 이용을 중단합니다", "기타"],
+    refundWhy: ["실수로 결제했습니다", "서비스가 기대와 다릅니다",
+                "오류·장애로 정상적으로 이용하지 못했습니다", "중복으로 결제되었습니다", "기타"],
   },
   en: {
     cardOk: "Your payment method has been updated. The new card will be charged from the next billing date.",
@@ -115,22 +122,46 @@ const T = {
     okDown: "You move to {p} on {d}.",
     okUndo: "The scheduled change has been cancelled.", okRefund: "Your refund request has been received.",
     fail: "Something went wrong. Please try again shortly.",
+    surveyQ: "Telling us why helps us improve (optional · select all that apply)",
+    surveyMore: "Tell us more (optional)",
+    cancelWhy: ["Too expensive", "Missing stocks or information I want",
+                "Reports were not what I expected", "I don't use it often",
+                "Pausing for now", "Other"],
+    refundWhy: ["I paid by mistake", "The service was not what I expected",
+                "I could not use it because of a fault or outage", "I was charged twice", "Other"],
   },
 };
 const t = () => (EN() ? T.en : T.ko);
 
-/* 확인 대화상자 — 되돌리기 어려운 동작은 한 번 묻는다. */
-function ask(title, body) {
+/* 확인 대화상자 — 되돌리기 어려운 동작은 한 번 묻는다.
+   why 를 주면 사유를 함께 묻는다(해지·환불). 답하지 않아도 진행된다 —
+   환불은 법으로 보장된 권리이므로 설문으로 막아서는 안 된다.
+   돌려주는 값: 취소면 false, 확인이면 { reason, detail }. */
+function ask(title, body, why) {
   const k = t(), d = document.getElementById("dlg");
   document.getElementById("dlgT").textContent = title;
-  document.getElementById("dlgB").innerHTML = `<p>${esc(body)}</p>`;
+  document.getElementById("dlgB").innerHTML = `<p>${esc(body)}</p>` + (why
+    ? `<div class="dlg-q">${esc(k.surveyQ)}</div>
+       <div class="dlg-reasons">${k[why].map((r, i) =>
+         `<label class="dlg-r"><input type="checkbox" name="dlgWhy" value="${i}"><span>${esc(r)}</span></label>`).join("")}</div>
+       <textarea class="dlg-detail" rows="2" placeholder="${esc(k.surveyMore)}"></textarea>`
+    : "");
   document.getElementById("dlgYes").textContent = k.yes;
   document.getElementById("dlgNo").textContent = k.no;
   d.classList.add("open");
   return new Promise((res) => {
-    const done = (v) => { d.classList.remove("open"); yes.onclick = null; no.onclick = null; res(v); };
+    const pick = () => {
+      if (!why) return {};
+      /* 사유는 늘 한국어로 보낸다. 화면이 영어여도 접수함은 하나라, 언어별로
+         다른 문구가 섞이면 모아서 세어 볼 수가 없다. */
+      const reason = [...d.querySelectorAll("input[name=dlgWhy]:checked")]
+        .map((c) => T.ko[why][+c.value]).filter(Boolean).join(", ");
+      const el = d.querySelector(".dlg-detail");
+      return { reason, detail: el ? el.value.trim() : "" };
+    };
     const yes = document.getElementById("dlgYes"), no = document.getElementById("dlgNo");
-    yes.onclick = () => done(true);
+    const done = (v) => { d.classList.remove("open"); yes.onclick = null; no.onclick = null; res(v); };
+    yes.onclick = () => done(pick());
     no.onclick = () => done(false);
     d.onclick = (e) => { if (e.target === d) done(false); };
   });
@@ -310,6 +341,17 @@ function view(st, payments) {
    그래서 확인을 눌러도 아무 말도 안 뜨는 것처럼 보였다. */
 let flash = null;
 
+/* 해지·환불 사유를 접수함으로 보낸다(회원 탈퇴와 같은 경로).
+   최선 노력이다 — 전송이 실패해도 해지·환불은 이미 끝났고, 사용자에게
+   '사유 전송 실패'를 알릴 이유가 없다. 기다리지도 않는다. */
+function sendReason(category, ans, user) {
+  const message = [ans.reason && "사유: " + ans.reason, ans.detail].filter(Boolean).join("\n");
+  if (!message) return;                                   // 아무것도 안 적었으면 보내지 않는다
+  call("submitForm", { kind: "feedback", category, message,
+                       email: (user && user.email) || "", page: "구독 관리" })
+    .catch((e) => console.warn("[billing] 사유 전송 실패", e));
+}
+
 function wire(st) {
   const k = t(), msg = document.getElementById("blMsg");
   const sub = st.sub || {};
@@ -326,15 +368,16 @@ function wire(st) {
          먼저 보고 끝내므로, 둘 다 걸어 두면 변경은 조용히 사라진다. 한쪽을
          고르면 다른 쪽이 풀린다는 걸 누르기 전에 말해 준다. */
       const pending = sub.pendingPlan && sub.pendingPlan !== sub.plan ? planOf(sub.pendingPlan) : null;
+      let survey = null;
       if (act === "cancel") {
         ok = await ask(k.dlgCancelT, k.dlgCancelB.replace("{date}", endDay)
-          + (pending ? k.alsoDropPlan.replace("{p}", pending.name) : ""));
-        fn = "cancelSubscription"; done = k.okCancel;
+          + (pending ? k.alsoDropPlan.replace("{p}", pending.name) : ""), "cancelWhy");
+        fn = "cancelSubscription"; done = k.okCancel; survey = "구독 해지";
       } else if (act === "resume") {
         ok = true; fn = "resumeSubscription"; done = k.okResume;
       } else if (act === "refund") {
-        ok = await ask(k.dlgRefundT, k.dlgRefundB);
-        fn = "requestRefund"; done = k.okRefund;
+        ok = await ask(k.dlgRefundT, k.dlgRefundB, "refundWhy");
+        fn = "requestRefund"; done = k.okRefund; survey = "환불 신청";
       } else if (act === "plan") {
         const to = planOf(btn.dataset.to) || {};
         const undo = btn.dataset.to === sub.plan;
@@ -357,6 +400,9 @@ function wire(st) {
       show("");
       try {
         await call(fn, arg);
+        // 사유는 처리에 성공한 뒤에 보낸다. 먼저 보내면 해지가 실패했는데
+        // '해지 사유'만 접수되어, 있지도 않은 해지가 집계에 잡힌다.
+        if (survey) sendReason(survey, ok, st.user);
         // 화면은 구독 문서가 바뀌면 저절로 다시 그려진다. 결과 문구는 flash 에
         // 담아 두고 한 번 더 그려, 그 사이에 지워지지 않게 한다.
         flash = { text: done, err: false };

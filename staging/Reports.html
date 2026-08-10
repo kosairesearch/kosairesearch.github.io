@@ -543,7 +543,7 @@ document.addEventListener('click', function (e) {
   if (!a) return;
   e.preventDefault();
   if (window.KOSDemo) window.KOSDemo.reset();
-  else ['kos-demo-sub', 'kos-demo-reads', 'kos-demo-pays'].forEach(function (k) {
+  else ['kos-demo-sub', 'kos-demo-reads', 'kos-demo-pays', 'kos-demo-reasons'].forEach(function (k) {
     try { localStorage.removeItem(k); } catch (err) {}
   });
   location.reload();
