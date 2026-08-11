@@ -559,6 +559,11 @@ const TOSS_SECRET_KEY = defineSecret("TOSS_SECRET_KEY");
 
 const PRICE = { basic: 9900, pro: 14900 };        // pricing.html·payment-config.js 와 같아야 한다
 const PLAN_NAME = { basic: "BASIC", pro: "PRO" };
+/* 토스페이먼츠는 카드로 100원 미만을 결제할 수 없다. 업그레이드 차액은
+   남은 기간에 비례하므로 결제 주기 끝자락에는 이 아래로 떨어지는데, 그대로
+   청구를 넣으면 카드사가 거절해 업그레이드가 통째로 실패한다. 몇십 원 때문에
+   플랜 변경을 막을 이유가 없다 — 청구를 건너뛰고 플랜만 올린다. */
+const MIN_CHARGE = 100;
 const REFUND_FEE_RATE = 0.10;                     // 서비스 수수료 10% (요금제 페이지 고지)
 const FREE_WITHDRAW_DAYS = 7;                     // 미열람 시 전액 환불 기간
 
@@ -617,6 +622,10 @@ async function writePayment(db, uid, data) {
       관리자 화면·로그에서 사람이 읽기 위한 값으로만 남겨 둔다. */
 async function charge(db, uid, sub, amount, description, tag, kind) {
   if (amount <= 0) return null;
+  if (amount < MIN_CHARGE) {
+    console.log(`[charge] ${amount}원은 카드 최소 결제 금액 미만 — 청구 없이 진행 uid=${uid} tag=${tag}`);
+    return null;
+  }
   const pay = await toss(`/billing/${sub.billingKey}`, {
     customerKey: sub.customerKey,
     amount,

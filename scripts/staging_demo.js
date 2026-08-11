@@ -19,7 +19,7 @@
 import { auth, isConfigured } from "./firebase-config.js";
 import { onAuthStateChanged }
   from "https://www.gstatic.com/firebasejs/10.12.2/firebase-auth.js";
-import { PLANS } from "./payment-config.js";
+import { MIN_CHARGE, PLANS } from "./payment-config.js";
 
 const SUB_KEY = "kos-demo-sub", READ_KEY = "kos-demo-reads", PAY_KEY = "kos-demo-pays",
       FB_KEY = "kos-demo-reasons";
@@ -212,9 +212,10 @@ async function call(name, arg) {
       const left = Math.max(0, (sub.currentPeriodEnd - Date.now()) / 86400e3);
       const diff = Math.floor((next.price - PLANS[sub.plan].price) * (left / total));
       sub.plan = next.id; sub.pendingPlan = null;
-      charged = diff;
-      // 남은 기간이 없으면 0원 — 서버 charge() 도 0 이하면 청구하지 않는다.
-      if (diff > 0) pay({ amount: diff, description: `${next.name} 업그레이드 차액 (모의)`, kind: "upgrade", status: "paid", plan: next.id });
+      // 토스는 카드로 100원 미만을 결제할 수 없다. 서버 charge() 와 같이
+      // 그 아래면 청구를 건너뛰고 플랜만 올린다.
+      charged = diff >= MIN_CHARGE ? diff : 0;
+      if (charged) pay({ amount: diff, description: `${next.name} 업그레이드 차액 (모의)`, kind: "upgrade", status: "paid", plan: next.id });
     } else {
       // 다운그레이드는 다음 결제일부터. 지금 쓰는 플랜을 다시 고르면 예약 취소.
       sub.pendingPlan = next.id === sub.plan ? null : next.id;
