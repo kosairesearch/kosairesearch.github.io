@@ -43,6 +43,7 @@ const T = {
     agree1: '<a href="Terms.html" target="_blank" rel="noopener">이용약관</a>과 <a href="Privacy.html" target="_blank" rel="noopener">개인정보 처리방침</a>에 동의합니다. (필수)',
     agree2: "매월 같은 날짜에 등록하신 카드로 자동 결제되는 정기결제에 동의합니다. (필수)",
     agree3: "디지털 콘텐츠 특성상 리포트를 열람하시면 청약철회가 제한될 수 있음을 확인했습니다. (필수)",
+    agree4: "만 19세 이상입니다. 미성년자인 경우 법정대리인의 동의를 받았습니다. (필수)",
     pay: "결제하고 시작하기",
     fine: '결제 후 7일 이내에 리포트를 열람하지 않으셨다면 전액 환불됩니다. 자세한 기준은 <a href="pricing.html#faq">환불 기준</a>을 확인해 주세요. 구독은 <a href="billing.html">구독 관리</a>에서 언제든지 해지하실 수 있습니다.',
     loading: "불러오는 중…", paying: "결제창을 여는 중…", confirming: "결제를 확인하는 중…",
@@ -77,6 +78,7 @@ const T = {
     agree1: 'I agree to the <a href="Terms.html" target="_blank" rel="noopener">Terms of Service</a> and <a href="Privacy.html" target="_blank" rel="noopener">Privacy Policy</a>. (required)',
     agree2: "I agree to recurring monthly charges to the card I register. (required)",
     agree3: "I understand that opening a report may limit my right to withdraw, as this is digital content. (required)",
+    agree4: "I am 19 or older. If I am a minor, I have my legal guardian's consent. (required)",
     pay: "Pay and start",
     fine: 'If you have not opened a report within 7 days of payment, you get a full refund. See <a href="pricing.html#faq">refund terms</a> for details. You can cancel anytime on the <a href="billing.html">subscription page</a>.',
     loading: "Loading…", paying: "Opening the payment window…", confirming: "Confirming your payment…",
@@ -144,6 +146,7 @@ function form(plan) {
         <label><input type="checkbox" class="ag" /><span>${k.agree1}</span></label>
         <label><input type="checkbox" class="ag" /><span>${esc(k.agree2)}</span></label>
         <label><input type="checkbox" class="ag" /><span>${esc(k.agree3)}</span></label>
+        <label><input type="checkbox" class="ag" id="agAdult" /><span>${esc(k.agree4)}</span></label>
       </div>
 
       <button type="button" class="btn btn-primary co-btn" id="payBtn">${esc(k.pay)}</button>
@@ -219,6 +222,11 @@ function wireForm(plan, user, opts) {
   btn.addEventListener("click", async () => {
     msg.className = "co-msg";
     if (!boxes.every((b) => b.checked)) { msg.className = "co-msg err"; msg.textContent = k.errAgree; return; }
+    /* 결제창에 다녀오면 이 페이지는 새로 뜬다 — 체크한 사실이 사라진다.
+       주소에 붙이면 남이 만든 링크로도 흉내 낼 수 있으므로 같은 탭 안에만 둔다.
+       확인 자체는 본인 신고다. 서버는 검증하지 않고, 언제 무엇을 확인받았는지만
+       기록한다(나이를 실제로 검증하려면 본인인증이 필요하다). */
+    if (!method) { try { sessionStorage.setItem("kos-adult", String(Date.now())); } catch (e) {} }
     btn.disabled = true;
     msg.innerHTML = `<span class="spin"></span>${esc(k.paying)}`;
     try {
@@ -252,8 +260,14 @@ async function confirm(authKey, customerKey, planId, method) {
   busy(k.confirming);
   try {
     const fns = getFunctions(app, SOCIAL.functionsRegion || "asia-northeast3");
+    let adult = false;
+    try {
+      adult = !!sessionStorage.getItem("kos-adult");
+      sessionStorage.removeItem("kos-adult");
+    } catch (e) {}
     await httpsCallable(fns, "confirmBilling")(
-      { authKey, customerKey, plan: planId, updateMethod: method || undefined });
+      { authKey, customerKey, plan: planId, updateMethod: method || undefined,
+        adultConfirmed: adult || undefined });
     location.replace(method ? "billing.html?card=1" : "billing.html");
   } catch (e) {
     console.error("[checkout] confirmBilling", e);

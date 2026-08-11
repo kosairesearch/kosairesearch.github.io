@@ -723,6 +723,12 @@ exports.confirmBilling = onCall(
       currentPeriodEnd: admin.firestore.Timestamp.fromDate(addMonth(now)),
       cancelAtPeriodEnd: false,
       pendingPlan: null,
+      /* 성년 확인은 본인 신고다. 나이를 실제로 검증하려면 본인확인 서비스가
+         필요하고, 우리는 붙이지 않기로 했다. 그래서 서버는 판단하지 않고
+         '언제 무엇을 확인받았는지'만 남긴다 — 미성년자 결제 분쟁이 생겼을 때
+         고지하고 확인받았다는 사실을 보일 수 있어야 한다. 취소를 막지는 못한다. */
+      adultConfirmedAt: (req.data && req.data.adultConfirmed)
+        ? admin.firestore.Timestamp.fromDate(now) : null,
       // 오늘 이미 본 종목은 새 구독의 한도에서 빼 준다(readsOffset 설명 참고).
       readsAtStart: await usageOf(db, uid, 0),
       readsAtStartDay: kstDay(),
