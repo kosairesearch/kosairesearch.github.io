@@ -43,6 +43,7 @@ const T = {
     alsoResume: " 예약해 두신 해지는 함께 취소됩니다.",
     alsoDropPlan: " 예약해 두신 {p} 플랜 변경은 함께 취소됩니다.",
     pay: "결제 수단", noCard: "등록된 카드가 없습니다.", changeCard: "카드 변경",
+    cardOnly: "등록하신 카드",
     upgrade: "PRO로 업그레이드", downgrade: "BASIC으로 변경",
     cancel: "구독 해지", resume: "해지 취소", refund: "환불 신청",
     hist: "결제 내역", histEmpty: "아직 결제 내역이 없습니다.",
@@ -94,6 +95,7 @@ const T = {
     alsoResume: " Your scheduled cancellation will be undone.",
     alsoDropPlan: " Your scheduled change to {p} will be dropped.",
     pay: "Payment method", noCard: "No card registered.", changeCard: "Change card",
+    cardOnly: "Registered card",
     upgrade: "Upgrade to PRO", downgrade: "Switch to BASIC",
     cancel: "Cancel subscription", resume: "Keep subscription", refund: "Request refund",
     hist: "Payment history", histEmpty: "No payments yet.",
@@ -326,7 +328,8 @@ function view(st, payments) {
     <section class="bl-card glass">
       <h2>${esc(k.pay)}</h2>
       <ul class="bl-rows" style="border-top:0;padding-top:0;margin-top:0">
-        <li><span>${showCard && card ? esc(card.company || "") : esc(k.noCard)}</span>
+        <li><span>${showCard && card && (card.company || card.number)
+              ? esc(card.company || k.cardOnly) : esc(k.noCard)}</span>
             <b>${showCard && card && card.number ? esc(card.number) : ""}</b></li>
       </ul>
       ${showCard ? `<div class="bl-acts">

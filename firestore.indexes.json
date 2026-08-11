@@ -1,0 +1,31 @@
+{
+  "//": [
+    "복합 인덱스는 손으로 만들지 않는다 — 여기 적어 두고 firebase deploy 로 올린다.",
+    "Firestore 가 자동으로 만들어 주는 인덱스는 '한 필드'짜리뿐이다. 같음(==) 과",
+    "범위(>=, <=) 를 서로 다른 필드에 함께 걸면 복합 인덱스가 있어야 하고,",
+    "없으면 쿼리가 FAILED_PRECONDITION 으로 실패한다. 아래 둘이 그런 쿼리다.",
+    "이 파일이 없던 동안 환불(refundQuote)과 매일 도는 정기결제 갱신이",
+    "배포 즉시 실패하는 상태였다 — 매출이 멈추는데 로그를 봐야만 안다."
+  ],
+  "indexes": [
+    {
+      "//": "refundQuote — 이번 결제 기간에 리포트를 열었는지 확인한다. 환불·탈퇴가 이걸 쓴다.",
+      "collectionGroup": "report_reads",
+      "queryScope": "COLLECTION",
+      "fields": [
+        { "fieldPath": "uid", "order": "ASCENDING" },
+        { "fieldPath": "updatedAt", "order": "ASCENDING" }
+      ]
+    },
+    {
+      "//": "renewSubscriptions — 기간이 끝난 구독을 매일 찾아 갱신한다.",
+      "collectionGroup": "subscriptions",
+      "queryScope": "COLLECTION",
+      "fields": [
+        { "fieldPath": "status", "order": "ASCENDING" },
+        { "fieldPath": "currentPeriodEnd", "order": "ASCENDING" }
+      ]
+    }
+  ],
+  "fieldOverrides": []
+}

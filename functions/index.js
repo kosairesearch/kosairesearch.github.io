@@ -489,7 +489,7 @@ exports.deleteAccount = onCall(
      환불이 실패하면 탈퇴를 진행하지 않는다. 계정을 지운 뒤에 실패하면 당사자는
      로그인도 못 하는데 돈은 우리가 들고 있는 상태가 된다 — 되돌릴 방법이 없다. */
   let refunded = 0;
-  if (subActive(sub) && sub.lastPaymentKey) {
+  if (subActive(sub) && ledgerOf(sub).length) {
     const q = await refundQuote(db, uid, sub);
     if (q.amount > 0) {
       try {
@@ -556,6 +556,19 @@ exports.getUsage = onCall({ region: REGION, cors: true }, async (req) => {
    ============================================================ */
 const { onSchedule } = require("firebase-functions/v2/scheduler");
 const TOSS_SECRET_KEY = defineSecret("TOSS_SECRET_KEY");
+
+/* 토스는 카드사를 '61' 같은 두 자리 코드(issuerCode)로 준다. 사람이 읽는
+   이름이 아니라서 그대로 화면에 넣으면 결제 수단이 '61 1234-56**-****-7890'
+   으로 뜬다. 그렇다고 코드표를 어림짐작으로 채우면 남의 카드사 이름을 붙이게
+   되는데, 그건 코드가 안 보이는 것보다 나쁘다. 이름을 모르면 비워 두고 마스킹된
+   번호만 보여 준다. 개발자센터 '기관 코드' 표를 여기 채우면 그때부터 이름이 나온다.
+   코드 자체는 issuerCode 로 남겨 둔다 — 문의가 오면 이걸로 찾는다. */
+const TOSS_ISSUER = {};                 // 예: { "61": "삼성카드" }
+const cardOf = (c) => ({
+  company: TOSS_ISSUER[(c && c.issuerCode) || ""] || "",
+  issuerCode: (c && c.issuerCode) || "",
+  number: (c && c.number) || "",
+});
 
 const PRICE = { basic: 9900, pro: 14900 };        // pricing.html·payment-config.js 와 같아야 한다
 const PLAN_NAME = { basic: "BASIC", pro: "PRO" };
@@ -664,7 +677,7 @@ exports.confirmBilling = onCall(
     if (req.data && req.data.updateMethod) {
       if (!cur) throw new HttpsError("failed-precondition", "이용 중인 구독이 없습니다.");
       const re = await toss("/billing/authorizations/issue", { authKey, customerKey });
-      const card = { company: (re.card && re.card.issuerCode) || "", number: (re.card && re.card.number) || "" };
+      const card = cardOf(re.card);
       const patch = { billingKey: re.billingKey, customerKey, card,
                       updatedAt: admin.firestore.FieldValue.serverTimestamp() };
       // 갱신 결제가 실패해 멈춰 있던 구독이라면, 새 카드로 바로 받아 되살린다.
@@ -677,12 +690,21 @@ exports.confirmBilling = onCall(
         patch.currentPeriodStart = admin.firestore.Timestamp.fromDate(at);
         patch.currentPeriodEnd = admin.firestore.Timestamp.fromDate(addMonth(at));
         patch.lastPaymentKey = pay ? pay.paymentKey : null;
+        patch.periodPayments = pay ? [{ key: pay.paymentKey, amount: PRICE[cur.plan] }] : [];
       }
       await ref.set(patch, { merge: true });
       return { ok: true, plan: cur.plan, updated: true };
     }
 
-    if (subActive(cur) && !cur.cancelAtPeriodEnd) {
+    /* 이용 기간이 남아 있으면 새 결제를 받지 않는다. 해지를 예약해 둔 사람도
+       마찬가지다 — 예전에는 여기를 통과시켜, 이미 결제한 날이 남았는데 한 달치를
+       새로 청구하고 기간을 덮어썼다. 그 사람에게 맞는 동작은 돈이 들지 않는
+       '해지 취소'다. 화면에서는 막고 있었지만 서버가 판단해야 한다. */
+    if (subActive(cur)) {
+      if (cur.cancelAtPeriodEnd) {
+        throw new HttpsError("failed-precondition",
+          "해지를 예약하셨지만 이용 기간이 남아 있습니다. 구독 관리에서 '해지 취소'를 눌러 주세요.");
+      }
       throw new HttpsError("already-exists", "이미 이용 중인 구독이 있습니다.");
     }
 
@@ -690,7 +712,7 @@ exports.confirmBilling = onCall(
     const now = new Date();
     const sub = {
       billingKey: issued.billingKey, customerKey, plan,
-      card: { company: (issued.card && issued.card.issuerCode) || "", number: (issued.card && issued.card.number) || "" },
+      card: cardOf(issued.card),
     };
     const pay = await charge(db, uid, sub, PRICE[plan], `${PLAN_NAME[plan]} 월 구독`, "new");
 
@@ -704,6 +726,7 @@ exports.confirmBilling = onCall(
       // 오늘 이미 본 종목은 새 구독의 한도에서 빼 준다(readsOffset 설명 참고).
       readsAtStart: await usageOf(db, uid, 0),
       readsAtStartDay: kstDay(),
+      periodPayments: pay ? [{ key: pay.paymentKey, amount: PRICE[plan] }] : [],
       /* 새로 시작하는 구독이므로 오늘이 시작일이다. 예전 구독의 시작일을
          물려받고 있었는데, 그러면 해지했다가 다시 가입한 사람 화면에
          '구독 시작일 3월 2일 · 다음 결제일 9월 11일' 처럼 앞뒤가 안 맞는
@@ -752,9 +775,16 @@ exports.changePlan = onCall(
       const left = Math.max(0, days(endMs - Date.now()));
       // 남은 기간에 해당하는 두 요금의 차액. 원 단위 절사(사용자에게 유리하게).
       const diff = Math.floor((PRICE[next] - PRICE[sub.plan]) * (left / total));
-      await charge(db, uid, sub, diff, `${PLAN_NAME[next]} 업그레이드 차액`, "up");
+      /* 결제 기록에는 올라간 플랜을 남긴다. sub 를 그대로 넘기면 plan 이 아직
+         이전 플랜이라 결제 내역이 'BASIC 업그레이드 차액'으로 뜬다. */
+      const upPay = await charge(db, uid, { ...sub, plan: next }, diff,
+        `${PLAN_NAME[next]} 업그레이드 차액`, "up");
       await ref.set({
         plan: next, pendingPlan: null,
+        // 이번 주기에 받은 돈에 차액을 더한다 — 환불이 이 합계를 기준으로 계산된다.
+        periodPayments: upPay
+          ? [...ledgerOf(sub), { key: upPay.paymentKey, amount: diff }]
+          : ledgerOf(sub),
         // 해지 예약과 함께 둘 수 없다 — 아래 설명 참고.
         cancelAtPeriodEnd: false, canceledAt: null,
         updatedAt: admin.firestore.FieldValue.serverTimestamp(),
@@ -810,16 +840,30 @@ exports.resumeSubscription = onCall({ region: REGION, cors: true }, async (req) 
      · 리포트 미열람 + 7일 경과  → 잔여 기간분 − 수수료 10%
      · 리포트 열람              → 이용 일수 차감 후 − 수수료 10%
    ─────────────────────────────────────────────────────────── */
+/* 이번 결제 주기에 실제로 받은 돈. 환불은 여기에만 기댈 수 있다.
+   예전에는 lastPaymentKey 한 건만 보고 PRICE[plan] 을 환불 기준으로 삼았는데,
+   업그레이드를 하면 차액이 별도 결제로 나가면서 어긋났다. BASIC(9,900) 으로
+   가입해 PRO 로 올린 사람은 기준이 14,900 인데 취소 대상은 9,900 짜리 건이라
+   토스가 '결제 금액보다 큰 취소'로 거절했고, 환불도 탈퇴도 막혔다.
+   그래서 주기마다 결제 건을 쌓아 두고, 합계를 기준으로 최근 건부터 되돌린다. */
+function ledgerOf(sub) {
+  if (Array.isArray(sub && sub.periodPayments) && sub.periodPayments.length) return sub.periodPayments;
+  // 이 필드가 생기기 전에 만들어진 문서 — 결제가 한 건뿐이라고 본다.
+  return sub && sub.lastPaymentKey ? [{ key: sub.lastPaymentKey, amount: PRICE[sub.plan] || 0 }] : [];
+}
+const paidThisPeriod = (sub) => ledgerOf(sub).reduce((a, e) => a + (e.amount || 0), 0);
+
 /* 환불 금액 계산 — 요금제 페이지에 고지한 기준 그대로.
    환불 신청과 회원 탈퇴가 같은 계산을 써야 한다. 두 곳에 따로 적으면 언젠가
    한쪽만 고치고 지나가고, 그러면 고지한 기준과 실제가 어긋난다. */
 async function refundQuote(db, uid, sub) {
-  if (!sub || !sub.lastPaymentKey) return { amount: 0, reason: "" };
+  if (!sub || !ledgerOf(sub).length) return { amount: 0, reason: "" };
   const startMs = sub.currentPeriodStart.toMillis();
   const endMs = sub.currentPeriodEnd.toMillis();
   const total = Math.max(1, days(endMs - startMs));
   const used = Math.min(total, Math.max(0, days(Date.now() - startMs)));
-  const price = PRICE[sub.plan] || 0;
+  // 고지한 기준은 '결제하신 금액'이다. 업그레이드 차액까지 받았으면 그것도 포함한다.
+  const price = paidThisPeriod(sub) || PRICE[sub.plan] || 0;
 
   // 이번 결제 기간에 리포트를 한 건이라도 열었는가
   const reads = await db.collection("report_reads")
@@ -840,13 +884,25 @@ async function refundQuote(db, uid, sub) {
 }
 
 async function doRefund(db, uid, sub, q) {
-  await toss(`/payments/${sub.lastPaymentKey}/cancel`, {
-    cancelReason: q.reason, cancelAmount: q.amount,
-  });
+  /* 최근 결제부터 되돌린다. 한 건으로 다 못 채우면 다음 건으로 넘어간다 —
+     결제 한 건보다 큰 금액을 취소하려 들면 토스가 거절한다. */
+  const ledger = ledgerOf(sub);
+  let left = q.amount;
+  const usedKeys = [];
+  for (const e of [...ledger].reverse()) {
+    if (left <= 0) break;
+    const take = Math.min(left, e.amount || 0);
+    if (take <= 0) continue;
+    await toss(`/payments/${e.key}/cancel`, { cancelReason: q.reason, cancelAmount: take });
+    usedKeys.push(e.key);
+    left -= take;
+  }
+  if (left > 0) console.error(`[refund] ${left}원을 되돌리지 못했습니다 uid=${uid}`);
   await writePayment(db, uid, {
-    amount: -q.amount, description: `환불 · ${q.reason}`,
+    amount: -(q.amount - Math.max(0, left)), description: `환불 · ${q.reason}`,
     kind: "refund", why: q.why || null, status: "refunded",
-    plan: sub.plan, paymentKey: sub.lastPaymentKey, paidAt: new Date().toISOString(),
+    plan: sub.plan, paymentKey: usedKeys[0] || sub.lastPaymentKey || null,
+    paidAt: new Date().toISOString(),
   });
 }
 
@@ -858,7 +914,7 @@ exports.requestRefund = onCall(
     const ref = db.doc(`subscriptions/${uid}`);
     const sub = (await ref.get()).data();
     if (!subActive(sub)) throw new HttpsError("failed-precondition", "이용 중인 구독이 없습니다.");
-    if (!sub.lastPaymentKey) throw new HttpsError("failed-precondition", "환불할 결제 건이 없습니다.");
+    if (!ledgerOf(sub).length) throw new HttpsError("failed-precondition", "환불할 결제 건이 없습니다.");
 
     const q = await refundQuote(db, uid, sub);
     const amount = q.amount;
@@ -922,6 +978,8 @@ exports.renewSubscriptions = onSchedule(
           currentPeriodStart: admin.firestore.Timestamp.fromDate(now),
           currentPeriodEnd: admin.firestore.Timestamp.fromDate(addMonth(now)),
           lastPaymentKey: pay ? pay.paymentKey : sub.lastPaymentKey,
+          // 새 주기가 시작됐다 — 지난 주기 결제 건은 환불 대상이 아니다.
+          periodPayments: pay ? [{ key: pay.paymentKey, amount: PRICE[plan] }] : [],
           failedAt: null,
           updatedAt: admin.firestore.FieldValue.serverTimestamp(),
         }, { merge: true });
@@ -933,9 +991,11 @@ exports.renewSubscriptions = onSchedule(
           status: "past_due", failedAt: admin.firestore.FieldValue.serverTimestamp(),
           updatedAt: admin.firestore.FieldValue.serverTimestamp(),
         }, { merge: true });
+        // 예약된 다운그레이드가 있으면 시도한 금액은 그 플랜 요금이다.
+        const tried = sub.pendingPlan || sub.plan;
         await writePayment(db, uid, {
-          amount: PRICE[sub.plan] || 0, description: "정기결제 실패",
-          kind: "failed", status: "failed", plan: sub.plan, paidAt: null,
+          amount: PRICE[tried] || 0, description: "정기결제 실패",
+          kind: "failed", status: "failed", plan: tried, paidAt: null,
         });
       }
     }
