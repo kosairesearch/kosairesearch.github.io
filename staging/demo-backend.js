@@ -125,9 +125,12 @@ function subscribe(planId) {
     status: "active", plan: p.id,
     currentPeriodStart: now, currentPeriodEnd: addMonth(now),
     cancelAtPeriodEnd: false, pendingPlan: null,
-    card: { company: "모의 카드", number: "0000-00**-****-0000" },
+    // 실제 서버는 카드사 이름을 모르면 비워 둔다(토스가 코드로만 준다).
+    card: { company: "", issuerCode: "61", number: "0000-00**-****-0000" },
     // 새 구독이면 오늘이 시작일이다(서버 confirmBilling 과 같다).
     startedAt: now,
+    // 이번 주기에 받은 돈. 환불이 이 합계를 기준으로 계산된다(서버 periodPayments).
+    periodPayments: [{ key: "demo-" + now, amount: p.price }],
     // 오늘 이미 본 종목은 새 구독의 한도에서 빼 준다.
     readsAtStart: (function () {
       const r = read(READ_KEY, null);
@@ -145,7 +148,7 @@ function updateCard() {
   const sub = read(SUB_KEY, null);
   if (!sub) throw new Error("이용 중인 구독이 없습니다.");
   const n = String(1000 + Math.floor(Math.random() * 9000));
-  sub.card = { company: "모의 카드", number: `0000-00**-****-${n}` };
+  sub.card = { company: "", issuerCode: "61", number: `0000-00**-****-${n}` };
   if (sub.status === "past_due") {
     const now = Date.now();
     sub.status = "active";
@@ -160,11 +163,15 @@ function updateCard() {
 
 /* 환불 금액 — 서버 refundQuote 와 같은 기준.
    미열람 + 7일 이내면 전액, 아니면 잔여 기간분에서 수수료 10%. */
+const paidThisPeriod = (sub) =>
+  ((sub && sub.periodPayments) || []).reduce((a, e) => a + (e.amount || 0), 0);
+
 function refundAmount(sub) {
   const total = Math.max(1, (sub.currentPeriodEnd - sub.currentPeriodStart) / 86400e3);
   const used = Math.min(total, Math.max(0, (Date.now() - sub.currentPeriodStart) / 86400e3));
   const opened = (read(READ_KEY, { tickers: [] }).tickers || []).length > 0;
-  const price = (PLANS[sub.plan] || {}).price || 0;
+  // 업그레이드 차액까지 포함한 '실제로 받은 돈'이 기준이다(서버와 같다).
+  const price = paidThisPeriod(sub) || (PLANS[sub.plan] || {}).price || 0;
   return (!opened && used <= 7) ? price
        : Math.floor(price * Math.max(0, (total - used) / total) * 0.9);
 }
@@ -215,6 +222,8 @@ async function call(name, arg) {
       // 토스는 카드로 100원 미만을 결제할 수 없다. 서버 charge() 와 같이
       // 그 아래면 청구를 건너뛰고 플랜만 올린다.
       charged = diff >= MIN_CHARGE ? diff : 0;
+      if (charged) sub.periodPayments = [...(sub.periodPayments || []),
+                                         { key: "demo-up-" + Date.now(), amount: charged }];
       if (charged) pay({ amount: diff, description: `${next.name} 업그레이드 차액 (모의)`, kind: "upgrade", status: "paid", plan: next.id });
     } else {
       // 다운그레이드는 다음 결제일부터. 지금 쓰는 플랜을 다시 고르면 예약 취소.
