@@ -682,7 +682,13 @@ exports.confirmBilling = onCall(
       cancelAtPeriodEnd: false,
       pendingPlan: null,
       readsAtStart: 0,
-      startedAt: (cur && cur.startedAt) || admin.firestore.Timestamp.fromDate(now),
+      /* 새로 시작하는 구독이므로 오늘이 시작일이다. 예전 구독의 시작일을
+         물려받고 있었는데, 그러면 해지했다가 다시 가입한 사람 화면에
+         '구독 시작일 3월 2일 · 다음 결제일 9월 11일' 처럼 앞뒤가 안 맞는
+         날짜가 뜬다. 이 자리가 답해야 하는 건 '지금 이어지는 구독을 언제
+         시작했나'다. 갱신·플랜 변경은 이 값을 건드리지 않으므로 그대로
+         이어진다. 최초 가입일이 필요하면 결제 내역에 남아 있다. */
+      startedAt: admin.firestore.Timestamp.fromDate(now),
       lastPaymentKey: pay ? pay.paymentKey : null,
       updatedAt: admin.firestore.FieldValue.serverTimestamp(),
     }, { merge: true });

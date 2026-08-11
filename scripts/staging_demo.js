@@ -108,13 +108,14 @@ async function fetchPaid(ticker) {
 function subscribe(planId) {
   const p = PLANS[planId];
   if (!p) throw new Error("plan");
-  const now = Date.now(), prev = read(SUB_KEY, null);
+  const now = Date.now();
   write(SUB_KEY, {
     status: "active", plan: p.id,
     currentPeriodStart: now, currentPeriodEnd: addMonth(now),
     cancelAtPeriodEnd: false, pendingPlan: null,
     card: { company: "모의 카드", number: "0000-00**-****-0000" },
-    startedAt: (prev && prev.startedAt) || now,
+    // 새 구독이면 오늘이 시작일이다(서버 confirmBilling 과 같다).
+    startedAt: now,
   });
   pay({ amount: p.price, description: `${p.name} 월 구독 (모의)`, kind: "subscription", status: "paid", plan: p.id });
   emit();
