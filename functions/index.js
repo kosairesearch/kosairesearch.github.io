@@ -378,14 +378,24 @@ function kstDay() {
    같은 종목을 다시 열 때는 차감하지 않는다. 새로고침·뒤로가기·다른 기기에서
    다시 보기가 전부 한 건씩 깎으면, 사용자는 서로 다른 두 종목만 보고도
    '한도 초과'를 만나게 된다. 그래서 횟수가 아니라 '오늘 본 종목'을 센다. */
-async function consumeDailyRead(db, uid, ticker, limit) {
+/* 가입 당일에 이미 깎여 있던 몫. 구독을 시작한 날에는 그날 앞서 본 종목이
+   새 구독의 한도를 먹지 않게 빼 준다 — 오늘 5개를 보고 해지했다가 다시
+   가입한 사람이 '하루 5개'를 사 놓고 첫날 0개를 받으면 안 된다.
+   다음 날부터는 날짜가 달라 저절로 0 이 된다. */
+function readsOffset(sub) {
+  return sub && sub.readsAtStartDay === kstDay() ? (sub.readsAtStart || 0) : 0;
+}
+
+async function consumeDailyRead(db, uid, ticker, limit, offset) {
   const day = kstDay();
+  const off = offset || 0;
   const ref = db.doc(`report_reads/${uid}_${day}`);
   return db.runTransaction(async (tx) => {
     const snap = await tx.get(ref);
     const seen = (snap.exists && snap.data().tickers) || [];
-    if (seen.includes(ticker)) return { ok: true, used: seen.length };   // 오늘 이미 본 종목 — 추가 차감 없음
-    if (seen.length >= limit) return { ok: false, used: seen.length };
+    const used = Math.max(0, seen.length - off);
+    if (seen.includes(ticker)) return { ok: true, used };   // 오늘 이미 본 종목 — 추가 차감 없음
+    if (used >= limit) return { ok: false, used };
     tx.set(ref, {
       tickers: admin.firestore.FieldValue.arrayUnion(ticker),
       count: seen.length + 1,
@@ -393,16 +403,16 @@ async function consumeDailyRead(db, uid, ticker, limit) {
       uid,
       updatedAt: admin.firestore.FieldValue.serverTimestamp(),
     }, { merge: true });
-    return { ok: true, used: seen.length + 1 };
+    return { ok: true, used: used + 1 };
   });
 }
 
 /* 오늘 몇 개를 썼는지. 화면이 '남은 개수'를 보여 주려면 필요하다.
    report_reads 는 클라이언트가 읽지 못하게 막아 뒀으므로(firestore.rules) 서버가 준다. */
-async function usageOf(db, uid) {
+async function usageOf(db, uid, offset) {
   const snap = await db.doc(`report_reads/${uid}_${kstDay()}`).get();
   const seen = (snap.exists && snap.data().tickers) || [];
-  return seen.length;
+  return Math.max(0, seen.length - (offset || 0));
 }
 
 exports.getReport = onCall(
@@ -435,7 +445,7 @@ exports.getReport = onCall(
     const snap = await db.doc(`reports_paid/${ticker}`).get();
     if (!snap.exists) throw new HttpsError("not-found", "리포트를 찾을 수 없습니다.");
 
-    const use = await consumeDailyRead(db, uid, ticker, limit);
+    const use = await consumeDailyRead(db, uid, ticker, limit, readsOffset(sub));
     if (!use.ok) {
       console.warn(`[getReport] 일일 한도(${plan}=${limit}) 초과 uid=${uid}`);
       throw new HttpsError("resource-exhausted", "오늘 열람 한도를 모두 사용했습니다.");
@@ -524,7 +534,8 @@ exports.getUsage = onCall({ region: REGION, cors: true }, async (req) => {
   const sub = (await db.doc(`subscriptions/${uid}`).get()).data() || null;
   if (!subActive(sub)) return { active: false, used: 0, limit: 0 };
   const plan = String(sub.plan || "").toLowerCase();
-  return { active: true, plan, limit: DAILY_LIMIT[plan] || 0, used: await usageOf(db, uid) };
+  return { active: true, plan, limit: DAILY_LIMIT[plan] || 0,
+           used: await usageOf(db, uid, readsOffset(sub)) };
 });
 
 /* ============================================================
@@ -681,7 +692,9 @@ exports.confirmBilling = onCall(
       currentPeriodEnd: admin.firestore.Timestamp.fromDate(addMonth(now)),
       cancelAtPeriodEnd: false,
       pendingPlan: null,
-      readsAtStart: 0,
+      // 오늘 이미 본 종목은 새 구독의 한도에서 빼 준다(readsOffset 설명 참고).
+      readsAtStart: await usageOf(db, uid, 0),
+      readsAtStartDay: kstDay(),
       /* 새로 시작하는 구독이므로 오늘이 시작일이다. 예전 구독의 시작일을
          물려받고 있었는데, 그러면 해지했다가 다시 가입한 사람 화면에
          '구독 시작일 3월 2일 · 다음 결제일 9월 11일' 처럼 앞뒤가 안 맞는

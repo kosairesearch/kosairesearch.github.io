@@ -71,13 +71,25 @@ if (isConfigured) {
   resolveReady(snapshot());
 }
 
+/* 오늘 본 종목 수. 가입 당일이면 가입 전에 본 몫은 빼고 센다 —
+   서버 readsOffset 과 같은 규칙. */
+function readsOffset(sub) {
+  return sub && sub.readsAtStartDay === kstDay() ? (sub.readsAtStart || 0) : 0;
+}
+function usedToday(sub) {
+  const r = read(READ_KEY, null);
+  const seen = (r && r.day === kstDay() && r.tickers) || [];
+  return Math.max(0, seen.length - readsOffset(sub));
+}
+
 /* 하루 한도 차감. 서버 consumeDailyRead 와 같은 규칙. */
 function consume(ticker, limit) {
   const day = kstDay();
+  const off = readsOffset(read(SUB_KEY, null));
   let r = read(READ_KEY, null);
   if (!r || r.day !== day) r = { day, tickers: [] };
   if (r.tickers.includes(ticker)) return true;    // 오늘 이미 본 종목
-  if (r.tickers.length >= limit) return false;
+  if (r.tickers.length - off >= limit) return false;
   r.tickers.push(ticker);
   write(READ_KEY, r);
   return true;
@@ -116,6 +128,12 @@ function subscribe(planId) {
     card: { company: "모의 카드", number: "0000-00**-****-0000" },
     // 새 구독이면 오늘이 시작일이다(서버 confirmBilling 과 같다).
     startedAt: now,
+    // 오늘 이미 본 종목은 새 구독의 한도에서 빼 준다.
+    readsAtStart: (function () {
+      const r = read(READ_KEY, null);
+      return (r && r.day === kstDay() && r.tickers ? r.tickers.length : 0);
+    })(),
+    readsAtStartDay: kstDay(),
   });
   pay({ amount: p.price, description: `${p.name} 월 구독 (모의)`, kind: "subscription", status: "paid", plan: p.id });
   emit();
@@ -157,7 +175,7 @@ async function call(name, arg) {
     const st = snapshot();
     if (!st.active) return { data: { active: false, used: 0, limit: 0 } };
     return { data: { active: true, plan: st.plan, limit: st.limit,
-                     used: (read(READ_KEY, { tickers: [] }).tickers || []).length } };
+                     used: usedToday(st.sub) } };
   }
   /* 해지·환불 사유. 미리보기에서는 메일을 보내지 않고 남겨만 둔다 —
      KOSDemo.reasons() 로 무엇이 접수됐는지 확인할 수 있다. */
@@ -219,7 +237,7 @@ window.KOSDemo = {
   payments: () => read(PAY_KEY, []),
   reasons: () => read(FB_KEY, []),
   reset() { [SUB_KEY, READ_KEY, PAY_KEY, FB_KEY].forEach((k) => localStorage.removeItem(k)); emit(); },
-  readsToday: () => (read(READ_KEY, { tickers: [] }).tickers || []).length,
+  readsToday: () => usedToday(read(SUB_KEY, null)),
   /* 눌러 볼 수 없는 상태들 — 콘솔에서 만들어 화면을 확인한다.
      KOSDemo.simulate('past_due') / 'expired' */
   simulate(what) {
