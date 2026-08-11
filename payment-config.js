@@ -31,6 +31,22 @@ export function planOf(id) {
   return PLANS[String(id || "").toLowerCase()] || null;
 }
 
+/** 업그레이드를 지금 누르면 카드에서 빠져나갈 차액.
+    서버 changePlan 과 같은 식이다. 표시용이며, 실제 청구액은 서버가 다시 계산한다.
+    남은 기간이 얼마 없으면 0원이 나올 수 있다(그때는 아무것도 청구되지 않는다). */
+export function upgradeDiff(sub, toId) {
+  const to = planOf(toId), cur = planOf(sub && sub.plan);
+  if (!to || !cur || to.price <= cur.price) return 0;
+  const ms = (v) => (v && typeof v.toMillis === "function") ? v.toMillis()
+                  : typeof v === "number" ? v : Date.parse(v);
+  const end = ms(sub.currentPeriodEnd);
+  const start = sub.currentPeriodStart ? ms(sub.currentPeriodStart) : end - 30 * 86400000;
+  if (!Number.isFinite(end) || !Number.isFinite(start)) return 0;
+  const total = Math.max(1, (end - start) / 86400000);
+  const left = Math.max(0, (end - Date.now()) / 86400000);
+  return Math.floor((to.price - cur.price) * (left / total));
+}
+
 /** 9900 → "9,900원" / en: "KRW 9,900" */
 export function won(v, en) {
   const n = Number(v || 0).toLocaleString("en-US");

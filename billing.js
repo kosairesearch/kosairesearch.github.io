@@ -10,7 +10,7 @@
 import "./paywall.js";
 import { call } from "./subscription-api.js";
 import { app, isConfigured, SOCIAL } from "./firebase-config.js";
-import { PLANS, TOSS, payReady, planOf, won, fmtDay } from "./payment-config.js";
+import { PLANS, TOSS, payReady, planOf, upgradeDiff, won, fmtDay } from "./payment-config.js";
 import { getFirestore, collection, query, orderBy, limit, getDocs }
   from "https://www.gstatic.com/firebasejs/10.12.2/firebase-firestore.js";
 import { getFunctions, httpsCallable }
@@ -60,14 +60,16 @@ const T = {
     dlgCancelT: "구독을 해지하시겠습니까?",
     dlgCancelB: "{date}까지는 그대로 이용하실 수 있으며, 그 이후 결제되지 않습니다. 해지는 언제든지 취소하실 수 있습니다.",
     dlgUpT: "PRO로 업그레이드하시겠습니까?",
-    dlgUpB: "즉시 PRO가 적용됩니다. 남은 기간에 해당하는 BASIC 금액을 차감하고 차액만 결제되며, 결제일은 그대로 유지됩니다.",
+    dlgUpB: "즉시 PRO가 적용됩니다. 남은 기간에 해당하는 BASIC 금액을 차감한 차액 {a}이 등록하신 카드로 지금 결제되며, 결제일은 그대로 유지됩니다.",
+    dlgUpB0: "즉시 PRO가 적용됩니다. 이번 결제 주기가 거의 끝나 지금 청구되는 금액은 없으며, 다음 결제일부터 PRO 요금으로 청구됩니다.",
     dlgDownT: "BASIC으로 변경하시겠습니까?",
     dlgDownB: "{date}부터 BASIC이 적용됩니다. 그때까지는 PRO를 그대로 이용하실 수 있습니다.",
     dlgRefundT: "환불을 신청하시겠습니까?",
     dlgRefundB: "환불이 완료되면 유료 플랜 이용 권한이 즉시 종료됩니다. 환불 금액은 열람 여부와 이용 일수에 따라 산정됩니다.",
     yes: "확인", no: "취소",
     okCancel: "해지 예약이 완료되었습니다.", okResume: "해지가 취소되었습니다.",
-    okUp: "{p} 플랜이 바로 적용되었습니다.",
+    okUp: "{p} 플랜이 바로 적용되었습니다. 차액 {a}이 결제되었습니다.",
+    okUp0: "{p} 플랜이 바로 적용되었습니다. 지금 청구된 금액은 없습니다.",
     okDown: "{d}부터 {p} 플랜으로 변경됩니다.",
     okUndo: "플랜 변경이 취소되었습니다.", okRefund: "환불 신청이 접수되었습니다.",
     fail: "처리에 실패했습니다. 잠시 후 다시 시도해 주세요.",
@@ -109,14 +111,16 @@ const T = {
     dlgCancelT: "Cancel your subscription?",
     dlgCancelB: "You keep access until {date}, and you will not be charged after that. You can undo this anytime.",
     dlgUpT: "Upgrade to PRO?",
-    dlgUpB: "PRO applies immediately. The unused part of BASIC is credited and you pay only the difference; your billing date stays the same.",
+    dlgUpB: "PRO applies immediately. The unused part of BASIC is credited and the difference, {a}, is charged to your registered card now; your billing date stays the same.",
+    dlgUpB0: "PRO applies immediately. This billing period is nearly over, so nothing is charged now — PRO pricing starts from your next billing date.",
     dlgDownT: "Switch to BASIC?",
     dlgDownB: "BASIC applies from {date}. You keep PRO until then.",
     dlgRefundT: "Request a refund?",
     dlgRefundB: "Your paid plan ends as soon as the refund is processed. The amount depends on whether you opened reports and how many days you used.",
     yes: "Confirm", no: "Cancel",
     okCancel: "Your subscription will end at the period end.", okResume: "Your subscription continues.",
-    okUp: "You are on {p} as of now.",
+    okUp: "You are on {p} as of now. {a} has been charged.",
+    okUp0: "You are on {p} as of now. Nothing was charged.",
     okDown: "You move to {p} on {d}.",
     okUndo: "The scheduled change has been cancelled.", okRefund: "Your refund request has been received.",
     fail: "Something went wrong. Please try again shortly.",
@@ -363,7 +367,7 @@ function wire(st) {
     btn.addEventListener("click", async () => {
       const act = btn.dataset.act;
       flash = null;
-      let ok = false, fn = null, arg = null, done = "";
+      let ok = false, fn = null, arg = null, done = "", upTo = null;
       /* 해지 예약과 플랜 변경 예약은 함께 둘 수 없다 — 서버가 갱신할 때 해지를
          먼저 보고 끝내므로, 둘 다 걸어 두면 변경은 조용히 사라진다. 한쪽을
          고르면 다른 쪽이 풀린다는 걸 누르기 전에 말해 준다. */
@@ -387,8 +391,13 @@ function wire(st) {
           ok = await ask(k.dlgUndoT, k.dlgUndoB.replace("{date}", endDay).replace("{p}", to.name || "") + more);
           done = k.okUndo;
         } else if (up) {
-          ok = await ask(k.dlgUpT, k.dlgUpB + more);
-          done = k.okUp.replace("{p}", to.name || "");
+          /* 얼마가 청구되는지 보여 주고 묻는다. 금액 없이 확인을 받으면
+             카드에 얼마가 빠져나갈지 모르는 채로 누르게 된다. */
+          const diff = upgradeDiff(sub, btn.dataset.to);
+          ok = await ask(k.dlgUpT,
+            (diff > 0 ? k.dlgUpB.replace("{a}", won(diff, EN())) : k.dlgUpB0) + more);
+          done = null;                    // 실제 청구액은 서버가 알려 준다
+          upTo = to.name || "";
         } else {
           ok = await ask(k.dlgDownT, k.dlgDownB.replace("{date}", endDay) + more);
           done = k.okDown.replace("{d}", endDay).replace("{p}", to.name || "");
@@ -399,7 +408,13 @@ function wire(st) {
       root.querySelectorAll("[data-act]").forEach((b) => { b.disabled = true; });
       show("");
       try {
-        await call(fn, arg);
+        const res = await call(fn, arg);
+        if (done == null) {
+          // 업그레이드 — 미리 보여 준 금액이 아니라 실제 청구액을 알린다.
+          const charged = (res && res.data && res.data.charged) || 0;
+          done = (charged > 0 ? k.okUp.replace("{a}", won(charged, EN())) : k.okUp0)
+            .replace("{p}", upTo || "");
+        }
         // 사유는 처리에 성공한 뒤에 보낸다. 먼저 보내면 해지가 실패했는데
         // '해지 사유'만 접수되어, 있지도 않은 해지가 집계에 잡힌다.
         if (survey) sendReason(survey, ok, st.user);

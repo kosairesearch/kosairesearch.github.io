@@ -181,6 +181,7 @@ async function call(name, arg) {
   }
   const sub = read(SUB_KEY, null);
   if (!sub) throw new Error("이용 중인 구독이 없습니다.");
+  let charged = 0;                    // 업그레이드 차액 — 서버와 같이 돌려준다
   // 해지 예약과 플랜 변경 예약은 함께 둘 수 없다(서버 changePlan 설명 참고).
   if (name === "cancelSubscription") { sub.cancelAtPeriodEnd = true; sub.pendingPlan = null; }
   else if (name === "resumeSubscription") sub.cancelAtPeriodEnd = false;
@@ -193,7 +194,9 @@ async function call(name, arg) {
       const left = Math.max(0, (sub.currentPeriodEnd - Date.now()) / 86400e3);
       const diff = Math.floor((next.price - PLANS[sub.plan].price) * (left / total));
       sub.plan = next.id; sub.pendingPlan = null;
-      pay({ amount: diff, description: `${next.name} 업그레이드 차액 (모의)`, kind: "upgrade", status: "paid", plan: next.id });
+      charged = diff;
+      // 남은 기간이 없으면 0원 — 서버 charge() 도 0 이하면 청구하지 않는다.
+      if (diff > 0) pay({ amount: diff, description: `${next.name} 업그레이드 차액 (모의)`, kind: "upgrade", status: "paid", plan: next.id });
     } else {
       // 다운그레이드는 다음 결제일부터. 지금 쓰는 플랜을 다시 고르면 예약 취소.
       sub.pendingPlan = next.id === sub.plan ? null : next.id;
@@ -207,7 +210,7 @@ async function call(name, arg) {
   }
   write(SUB_KEY, sub);
   emit();
-  return { data: { ok: true } };
+  return { data: { ok: true, charged } };
 }
 
 window.__KOSDEMO = true;
