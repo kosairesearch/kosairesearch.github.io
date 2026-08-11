@@ -913,6 +913,7 @@ if(window.KOSi18n) KOSi18n.register({
    구독 상태에 맞게 버튼과 배지를 바꾼다. */
 import "./paywall.js";
 import { call } from "./subscription-api.js";
+import { upgradeDiff, won } from "./payment-config.js";
 
 const P = window.KOSPaywall;
 const btns = [...document.querySelectorAll('.plan [data-plan]')];
@@ -927,13 +928,15 @@ const T = {
         undo: '변경 취소', fixCard: '결제 수단 변경',
         yes: '확인', no: '취소',
         dlgUpT: 'PRO로 업그레이드하시겠습니까?',
-        dlgUpB: '즉시 PRO가 적용됩니다. 남은 기간에 해당하는 BASIC 금액을 차감하고 차액만 결제되며, 결제일은 그대로 유지됩니다.',
+        dlgUpB: '즉시 PRO가 적용됩니다. 남은 기간에 해당하는 BASIC 금액을 차감한 차액 {a}이 등록하신 카드로 지금 결제되며, 결제일은 그대로 유지됩니다.',
+        dlgUpB0: '즉시 PRO가 적용됩니다. 이번 결제 주기가 거의 끝나 지금 청구되는 금액은 없으며, 다음 결제일부터 PRO 요금으로 청구됩니다.',
         dlgDownT: 'BASIC으로 변경하시겠습니까?',
         dlgDownB: '{d}부터 BASIC이 적용됩니다. 그때까지는 PRO를 그대로 이용하실 수 있습니다.',
         dlgUndoT: '플랜 변경을 취소하시겠습니까?',
         dlgUndoB: '{d} 이후에도 {p} 플랜이 그대로 유지됩니다.',
         alsoResume: ' 예약해 두신 해지는 함께 취소됩니다.',
-        okUp: 'PRO 플랜이 바로 적용되었습니다.',
+        okUp: 'PRO 플랜이 바로 적용되었습니다. 차액 {a}이 결제되었습니다.',
+        okUp0: 'PRO 플랜이 바로 적용되었습니다. 지금 청구된 금액은 없습니다.',
         okDown: '{d}부터 BASIC 플랜으로 변경됩니다.',
         okUndo: '플랜 변경이 취소되었습니다.',
         fail: '처리에 실패했습니다. 잠시 후 다시 시도해 주세요.' },
@@ -943,13 +946,15 @@ const T = {
         undo: 'Undo change', fixCard: 'Change card',
         yes: 'Confirm', no: 'Cancel',
         dlgUpT: 'Upgrade to PRO?',
-        dlgUpB: 'PRO applies immediately. The unused part of BASIC is credited and you pay only the difference; your billing date stays the same.',
+        dlgUpB: 'PRO applies immediately. The unused part of BASIC is credited and the difference, {a}, is charged to your registered card now; your billing date stays the same.',
+        dlgUpB0: 'PRO applies immediately. This billing period is nearly over, so nothing is charged now — PRO pricing starts from your next billing date.',
         dlgDownT: 'Switch to BASIC?',
         dlgDownB: 'BASIC applies from {d}. You keep PRO until then.',
         dlgUndoT: 'Undo the scheduled change?',
         dlgUndoB: 'You stay on {p} after {d}.',
         alsoResume: ' Your scheduled cancellation will be undone.',
-        okUp: 'You are on PRO as of now.',
+        okUp: 'You are on PRO as of now. {a} has been charged.',
+        okUp0: 'You are on PRO as of now. Nothing was charged.',
         okDown: 'You move to BASIC on {d}.',
         okUndo: 'The scheduled change has been cancelled.',
         fail: 'Something went wrong. Please try again shortly.' },
@@ -1059,8 +1064,12 @@ btns.forEach((btn) => {
         k.dlgUndoB.replace('{d}', endDay).replace('{p}', String(st.plan || '').toUpperCase()) + more);
       done = k.okUndo;
     } else if (id === 'pro') {
-      ok = await ask(k.dlgUpT, k.dlgUpB + more);
-      done = k.okUp;
+      /* 얼마가 빠져나가는지 보여 주고 묻는다. 금액 없이 '차액만 결제됩니다'로
+         확인을 받으면, 카드에 얼마가 청구될지 모르는 채로 누르게 된다. */
+      const diff = upgradeDiff(sub, id);
+      ok = await ask(k.dlgUpT,
+        (diff > 0 ? k.dlgUpB.replace('{a}', won(diff, EN())) : k.dlgUpB0) + more);
+      done = null;                       // 실제 청구액은 서버가 알려 준다
     } else {
       ok = await ask(k.dlgDownT, k.dlgDownB.replace('{d}', endDay) + more);
       done = k.okDown.replace('{d}', endDay);
@@ -1071,7 +1080,12 @@ btns.forEach((btn) => {
     btns.forEach((b) => { b.disabled = true; });
     try {
       // 예약을 되돌리는 것도 같은 함수다 — 지금 쓰는 플랜을 다시 고르면 예약이 풀린다.
-      await call('changePlan', { plan: id === pend ? st.plan : id });
+      const res = await call('changePlan', { plan: id === pend ? st.plan : id });
+      if (done == null) {
+        // 업그레이드 — 미리 보여 준 금액이 아니라 실제로 청구된 금액을 알린다.
+        const charged = (res && res.data && res.data.charged) || 0;
+        done = charged > 0 ? k.okUp.replace('{a}', won(charged, EN())) : k.okUp0;
+      }
       flash = { plan: id, text: done, err: false };
       paint();          // 구독 문서가 바뀌면 onChange 도 돌지만, 늦을 수 있다
     } catch (e) {
