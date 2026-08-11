@@ -52,7 +52,7 @@ const T = {
     pRefund: "환불", pWhy: { withdraw: "청약철회", used: "이용분 차감", left: "잔여 기간" },
     freeName: "무료", freePill: "무료", freeLimit: "무료 구간까지",
     freeNote: '분석·전망·리스크 등 유료 구간은 <a href="pricing.html">멤버십</a>에서 보실 수 있습니다.',
-    endedRow: "이용 종료일", duePill: "결제 실패",
+    duePill: "결제 실패",
     dueD: "등록하신 카드로 결제가 승인되지 않았습니다. 한도 초과이거나 카드가 정지·만료된 경우일 수 있습니다. 카드를 다시 등록하시면 이용이 재개됩니다.",
     toPricing: "멤버십 보기",
     needT: "로그인이 필요합니다", needD: "구독 정보를 보려면 로그인해 주세요.", login: "로그인",
@@ -101,7 +101,7 @@ const T = {
     pRefund: "Refund", pWhy: { withdraw: "withdrawal", used: "usage deducted", left: "remaining days" },
     freeName: "Free", freePill: "Free", freeLimit: "Free sections only",
     freeNote: 'The analysis, outlook, and risk sections come with a <a href="pricing.html">plan</a>.',
-    endedRow: "Ended on", duePill: "Payment failed",
+    duePill: "Payment failed",
     dueD: "The card on file was declined — it may be over its limit, suspended, or expired. Register a card again to restore access.",
     toPricing: "See plans",
     needT: "Sign in required", needD: "Please sign in to see your subscription.", login: "Sign in",
@@ -272,11 +272,13 @@ function view(st, payments) {
       [k.startRow, fmtDay(sub.startedAt, EN())],
     ];
   } else {
-    // 무료 — 예전에 구독한 적이 있으면 언제 끝났는지만 덧붙인다.
+    /* 무료 — 끝나는 날이 없다. 예전 구독이 끝난 날짜를 여기에 '이용 종료일'로
+       적어 두니, 머리에는 '무료'라고 쓰여 있는데 바로 아래에 종료일이 붙어
+       무료 이용이 그날 끊기는 것처럼 읽혔다. 지난 구독이 언제 끝났는지는
+       아래 결제 내역이 이미 보여 준다. */
     rows = [
       [k.amountRow, won(0, EN())],
       [k.limitRow, k.freeLimit],
-      sub.plan ? [k.endedRow, endDay] : null,
     ];
   }
   rows = rows.filter((r) => r && r[1]);
