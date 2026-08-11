@@ -8,6 +8,7 @@
    상태 판정과 금액 계산은 전부 서버가 한다. 이 파일은 보여주고 요청만 한다.
    ============================================================ */
 import "./paywall.js";
+import { call } from "./subscription-api.js";
 import { app, isConfigured, SOCIAL } from "./firebase-config.js";
 import { PLANS, TOSS, payReady, planOf, won, fmtDay } from "./payment-config.js";
 import { getFirestore, collection, query, orderBy, limit, getDocs }
@@ -27,9 +28,6 @@ const qp = (k) => new URLSearchParams(location.search).get(k);
 const esc = (x) => String(x == null ? "" : x)
   .replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;").replace(/"/g, "&quot;");
 const fns = isConfigured ? getFunctions(app, SOCIAL.functionsRegion || "asia-northeast3") : null;
-const call = (n, d) => (window.__KOSDEMO
-  ? window.KOSDemo.call(n, d || {})
-  : httpsCallable(fns, n)(d || {}));
 
 const T = {
   ko: {
