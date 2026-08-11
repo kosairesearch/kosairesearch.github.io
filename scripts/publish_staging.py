@@ -33,7 +33,7 @@ PAGES = ["pricing.html", "checkout.html", "billing.html", "stock.html",
          "Terms.html", "About.html", "Home.html", "Reports.html", "industry.html",
          "Screener.html", "Watchlist.html", "Login.html", "Signup.html",
          "Privacy.html", "Contact.html", "Feedback.html"]
-SCRIPTS = ["paywall.js", "checkout.js", "billing.js", "payment-config.js",
+SCRIPTS = ["paywall.js", "checkout.js", "billing.js", "subscription-api.js", "payment-config.js",
            "firebase-config.js", "auth-state.js", "auth-guard.js", "auth-emails.js",
            "social-login.js", "watchlist.js", "submit-form.js", "analytics.js"]
 
@@ -126,11 +126,14 @@ PATCH = {
          "  }\n"
          "  try{"),
     ],
-    "billing.js": [
-        ("const call = (n, d) => httpsCallable(fns, n)(d || {});",
-         "const call = (n, d) => (window.__KOSDEMO\n"
+    # 구독 관리·멤버십 두 화면이 같이 쓰는 진입점. 여기 한 곳만 돌리면 된다.
+    "subscription-api.js": [
+        ("export const call = (n, d) => httpsCallable(fns, n)(d || {});",
+         "export const call = (n, d) => (window.__KOSDEMO\n"
          "  ? window.KOSDemo.call(n, d || {})\n"
          "  : httpsCallable(fns, n)(d || {}));"),
+    ],
+    "billing.js": [
         # 열람 현황도 모의 백엔드에서 받는다.
         ('const res = await httpsCallable(fns, "getUsage")({});',
          'const res = await call("getUsage");'),

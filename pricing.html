@@ -165,7 +165,21 @@ main{flex:1;padding:8px 0 64px}
   background:rgba(13,105,212,.08);border:1px solid rgba(13,105,212,.2);
   font:500 12.5px/1.55 var(--font-sans);color:var(--fg-2)}
 .plan-msg.show{display:block}
+.plan-msg.err{background:rgba(229,56,59,.08);border-color:rgba(229,56,59,.25)}
 :root[data-theme="dark"] .plan-msg{background:rgba(95,197,255,.1);border-color:rgba(95,197,255,.22)}
+
+/* 플랜 변경 확인 — 이용 중인 사람은 이 페이지에서 바로 바꾼다.
+   구독 관리 페이지로 보내면 업그레이드를 누른 사람이 영문 모를 화면을 만난다. */
+.dlg{position:fixed;inset:0;z-index:80;display:none;align-items:center;justify-content:center;padding:20px;
+  background:rgba(0,0,0,.5);backdrop-filter:blur(3px)}
+.dlg.open{display:flex}
+.dlg-box{width:100%;max-width:440px;max-height:88vh;overflow-y:auto;padding:26px 26px 22px;
+  border-radius:var(--radius-lg);
+  background:var(--bg-1);border:1px solid var(--border-2);box-shadow:var(--shadow-2)}
+:root[data-theme="dark"] .dlg-box{background:#15161f}
+.dlg-box h3{margin:0 0 10px;font:800 19px var(--font-sans);letter-spacing:-.02em}
+.dlg-box p{margin:0;font:400 14.5px/1.7 var(--font-sans);color:var(--fg-2);word-break:keep-all}
+.dlg-acts{display:flex;gap:9px;justify-content:flex-end;margin-top:20px}
 
 /* 무료/유료 비교 */
 .cmp{max-width:1000px;margin:44px auto 0;padding:30px 28px 26px}
@@ -603,6 +617,17 @@ KOSi18n.register({
       </section>
     </div>
 
+    <div class="dlg" id="dlg" role="dialog" aria-modal="true" data-i18n-skip>
+      <div class="dlg-box">
+        <h3 id="dlgT"></h3>
+        <div id="dlgB"></div>
+        <div class="dlg-acts">
+          <button type="button" class="btn btn-soft" id="dlgNo">취소</button>
+          <button type="button" class="btn btn-primary" id="dlgYes">확인</button>
+        </div>
+      </div>
+    </div>
+
     <section class="cmp glass">
       <div class="sec-kicker">WHAT'S INCLUDED</div>
       <h2>리포트 구성과 제공 범위</h2>
@@ -856,6 +881,7 @@ if(window.KOSi18n) KOSi18n.register({
    이미 낸 돈을 다시 팔고 있는 셈이고, 눌러 봐야 '이미 이용 중입니다'로 끝난다.
    구독 상태에 맞게 버튼과 배지를 바꾼다. */
 import "./paywall.js";
+import { call } from "./subscription-api.js";
 
 const P = window.KOSPaywall;
 const btns = [...document.querySelectorAll('.plan [data-plan]')];
@@ -866,10 +892,36 @@ const EN = () => {
 const T = {
   ko: { start: '업그레이드', current: '이용 중', manage: '구독 관리',
         up: 'PRO로 업그레이드', down: 'BASIC으로 변경', badge: '이용 중',
-        pend: '{d}부터 적용', pendBadge: '변경 예정' },
+        pend: '{d}부터 적용', pendBadge: '변경 예정',
+        undo: '변경 취소', fixCard: '결제 수단 변경',
+        yes: '확인', no: '취소',
+        dlgUpT: 'PRO로 업그레이드하시겠습니까?',
+        dlgUpB: '즉시 PRO가 적용됩니다. 남은 기간에 해당하는 BASIC 금액을 차감하고 차액만 결제되며, 결제일은 그대로 유지됩니다.',
+        dlgDownT: 'BASIC으로 변경하시겠습니까?',
+        dlgDownB: '{d}부터 BASIC이 적용됩니다. 그때까지는 PRO를 그대로 이용하실 수 있습니다.',
+        dlgUndoT: '플랜 변경을 취소하시겠습니까?',
+        dlgUndoB: '{d} 이후에도 {p} 플랜이 그대로 유지됩니다.',
+        alsoResume: ' 예약해 두신 해지는 함께 취소됩니다.',
+        okUp: 'PRO 플랜이 바로 적용되었습니다.',
+        okDown: '{d}부터 BASIC 플랜으로 변경됩니다.',
+        okUndo: '플랜 변경이 취소되었습니다.',
+        fail: '처리에 실패했습니다. 잠시 후 다시 시도해 주세요.' },
   en: { start: 'Upgrade', current: 'Current plan', manage: 'Manage subscription',
         up: 'Upgrade to PRO', down: 'Switch to BASIC', badge: 'Current',
-        pend: 'From {d}', pendBadge: 'Scheduled' },
+        pend: 'From {d}', pendBadge: 'Scheduled',
+        undo: 'Undo change', fixCard: 'Change card',
+        yes: 'Confirm', no: 'Cancel',
+        dlgUpT: 'Upgrade to PRO?',
+        dlgUpB: 'PRO applies immediately. The unused part of BASIC is credited and you pay only the difference; your billing date stays the same.',
+        dlgDownT: 'Switch to BASIC?',
+        dlgDownB: 'BASIC applies from {d}. You keep PRO until then.',
+        dlgUndoT: 'Undo the scheduled change?',
+        dlgUndoB: 'You stay on {p} after {d}.',
+        alsoResume: ' Your scheduled cancellation will be undone.',
+        okUp: 'You are on PRO as of now.',
+        okDown: 'You move to BASIC on {d}.',
+        okUndo: 'The scheduled change has been cancelled.',
+        fail: 'Something went wrong. Please try again shortly.' },
 };
 const t = () => (EN() ? T.en : T.ko);
 const day = (v) => {
@@ -882,26 +934,59 @@ const day = (v) => {
 };
 
 let st = { user: null, active: false, plan: null, sub: null };
+/* 처리 결과 문구. 구독이 바뀌면 paint() 가 다시 돌면서 화면을 새로 그리므로
+   화면 밖에 들고 있어야 다시 그린 뒤에도 남는다. */
+let flash = null;
+
+/* 확인 대화상자. 되돌리기 어렵거나 돈이 오가는 동작은 한 번 묻는다. */
+function ask(title, body) {
+  const k = t(), d = document.getElementById('dlg');
+  document.getElementById('dlgT').textContent = title;
+  document.getElementById('dlgB').innerHTML = '<p></p>';
+  document.querySelector('#dlgB p').textContent = body;
+  document.getElementById('dlgYes').textContent = k.yes;
+  document.getElementById('dlgNo').textContent = k.no;
+  d.classList.add('open');
+  return new Promise((res) => {
+    const yes = document.getElementById('dlgYes'), no = document.getElementById('dlgNo');
+    const done = (v) => { d.classList.remove('open'); yes.onclick = null; no.onclick = null; res(v); };
+    yes.onclick = () => done(true);
+    no.onclick = () => done(false);
+    d.onclick = (e) => { if (e.target === d) done(false); };
+  });
+}
 
 function paint() {
   const k = t();
   const sub = st.sub || {};
+  const due = !st.active && sub.status === 'past_due';
   const pend = st.active && sub.pendingPlan && sub.pendingPlan !== st.plan ? sub.pendingPlan : null;
 
   btns.forEach((btn) => {
     const id = btn.dataset.plan;
     const card = btn.closest('.plan');
+    const msg = card.querySelector('.plan-msg');
     card.querySelectorAll('.plan-badge.js').forEach((e) => e.remove());
     btn.classList.remove('is-current');
     btn.disabled = false;
 
+    msg.className = 'plan-msg';
+    msg.textContent = '';
+    if (flash && flash.plan === id) {
+      msg.textContent = flash.text;
+      msg.className = 'plan-msg show' + (flash.err ? ' err' : '');
+    }
+
     let label = k.start, badge = null;
-    if (st.active && id === st.plan) {
+    if (due) {
+      // 결제가 밀려 멈춘 구독이다. 플랜을 바꿀 게 아니라 카드를 먼저 고쳐야 한다.
+      label = k.fixCard;
+    } else if (st.active && id === st.plan) {
       // 지금 쓰는 플랜 — 팔 게 아니라 관리로 보낸다.
       label = k.manage; badge = k.badge;
       btn.classList.add('is-current');
     } else if (st.active && id === pend) {
-      label = k.manage; badge = k.pendBadge;
+      label = k.undo; badge = k.pendBadge;
     } else if (st.active) {
       label = id === 'pro' ? k.up : k.down;
     }
@@ -915,13 +1000,54 @@ function paint() {
   });
 }
 
+/* 플랜 변경은 이 페이지에서 끝낸다. 업그레이드를 누른 사람을 구독 관리
+   페이지로 보내면, 방금 무엇을 눌렀는지와 상관없는 화면이 뜬다. */
 btns.forEach((btn) => {
-  btn.addEventListener('click', () => {
+  btn.addEventListener('click', async () => {
+    const k = t(), id = btn.dataset.plan, sub = st.sub || {};
     if (!st.user) { location.href = 'Login.html?next=pricing.html'; return; }
-    // 이용 중이면 어느 카드를 눌러도 구독 관리로. 플랜 변경은 거기서 한다
-    // (업그레이드 차액·다운그레이드 시점 계산이 전부 그쪽에 있다).
-    if (st.active) { location.href = 'billing.html'; return; }
-    location.href = 'checkout.html?plan=' + encodeURIComponent(btn.dataset.plan);
+    if (!st.active) {
+      // 결제가 밀린 구독은 카드부터. 그 외 비구독자는 결제 화면으로.
+      if (sub.status === 'past_due') {
+        location.href = 'checkout.html?plan=' + encodeURIComponent(sub.plan || 'basic') + '&method=1';
+      } else {
+        location.href = 'checkout.html?plan=' + encodeURIComponent(id);
+      }
+      return;
+    }
+    if (id === st.plan) { location.href = 'billing.html'; return; }   // 이용 중인 플랜 → 관리
+
+    const endDay = day(sub.currentPeriodEnd);
+    const pend = sub.pendingPlan && sub.pendingPlan !== st.plan ? sub.pendingPlan : null;
+    /* 해지를 예약해 둔 사람이 플랜을 바꾸면 그 해지는 풀린다(서버 changePlan).
+       누르기 전에 말해 주지 않으면 해지한 줄 알고 있다가 다음 달에 결제된다. */
+    const more = sub.cancelAtPeriodEnd ? k.alsoResume : '';
+    let ok, done;
+    if (id === pend) {
+      ok = await ask(k.dlgUndoT,
+        k.dlgUndoB.replace('{d}', endDay).replace('{p}', String(st.plan || '').toUpperCase()) + more);
+      done = k.okUndo;
+    } else if (id === 'pro') {
+      ok = await ask(k.dlgUpT, k.dlgUpB + more);
+      done = k.okUp;
+    } else {
+      ok = await ask(k.dlgDownT, k.dlgDownB.replace('{d}', endDay) + more);
+      done = k.okDown.replace('{d}', endDay);
+    }
+    if (!ok) return;
+
+    flash = null;
+    btns.forEach((b) => { b.disabled = true; });
+    try {
+      // 예약을 되돌리는 것도 같은 함수다 — 지금 쓰는 플랜을 다시 고르면 예약이 풀린다.
+      await call('changePlan', { plan: id === pend ? st.plan : id });
+      flash = { plan: id, text: done, err: false };
+      paint();          // 구독 문서가 바뀌면 onChange 도 돌지만, 늦을 수 있다
+    } catch (e) {
+      console.error('[pricing] changePlan', e);
+      flash = { plan: id, text: e.message || k.fail, err: true };
+      paint();
+    }
   });
 });
 

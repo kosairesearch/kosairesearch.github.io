@@ -125,6 +125,25 @@ def collect(entries):
     return sorted(seen), missing
 
 
+def refs_to(files, target):
+    """누가 이 파일을 부르고 있나. 딸려 온 파일을 지목만 하면 어디를 고쳐야
+    할지 알 수 없다 — 부르는 쪽을 같이 알려 준다."""
+    out = []
+    for rel in files:
+        f = ROOT / rel
+        if rel == target or not f.exists() or f.suffix.lower() not in (".html", ".js", ".css"):
+            continue
+        base = Path(rel).parent
+        for m in REF.finditer(f.read_text(encoding="utf-8", errors="ignore")):
+            ref = next((g for g in m.groups() if g), "")
+            if not ref or ref.startswith(SKIP_PREFIX):
+                continue
+            if re.sub(r"^(\./)+", "", (base / ref).as_posix().lstrip("./")) == target:
+                out.append(rel)
+                break
+    return sorted(out)
+
+
 def scan(files, checks, label):
     """파일들에서 금지 문구 / 자리표시자를 찾는다."""
     hits = []
@@ -183,6 +202,22 @@ def main():
         log("\n❌ 없는 파일")
         for rel, why in sorted(set(missing)):
             log(f"   {rel}   ({why})")
+
+    # 유료화를 끄고 배포하는데 결제 화면이 목록에 들어와 있으면 멈춘다.
+    # PAID_ENTRIES 를 진입 페이지에서 빼는 것만으로는 못 막는다 — 모든 페이지
+    # 머리말의 '멤버십' 링크를 타고 pricing.html 이 딸려 들어오고, 거기서
+    # billing/checkout 과 결제 스크립트까지 줄줄이 끌려온다. 예전에 결제 화면이
+    # 통째로 실제 사이트에 올라간 게 정확히 이 경로였다.
+    if not paid:
+        leaked = sorted(set(PAID_ENTRIES) & set(files))
+        if leaked:
+            bad.append("유료화를 껐는데 결제 화면이 딸려 옴")
+            log("\n❌ 유료화를 끈 배포에 결제 화면이 섞였습니다")
+            for rel in leaked:
+                who = refs_to(files, rel)
+                log(f"   {rel} ← {', '.join(who[:4]) if who else '진입 페이지'}"
+                    + (f" 외 {len(who) - 4}개" if len(who) > 4 else ""))
+            log("   유료화를 켜려면 --paid, 아직이라면 머리말·바닥글의 멤버십 링크를 먼저 빼세요.")
 
     forbidden = scan(files, FORBIDDEN, "금지")
     if forbidden:
