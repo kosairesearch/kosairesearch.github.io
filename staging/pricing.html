@@ -913,7 +913,7 @@ if(window.KOSi18n) KOSi18n.register({
    구독 상태에 맞게 버튼과 배지를 바꾼다. */
 import "./paywall.js";
 import { call } from "./subscription-api.js";
-import { upgradeDiff, won } from "./payment-config.js";
+import { MIN_CHARGE, upgradeDiff, won } from "./payment-config.js";
 
 const P = window.KOSPaywall;
 const btns = [...document.querySelectorAll('.plan [data-plan]')];
@@ -1068,7 +1068,7 @@ btns.forEach((btn) => {
          확인을 받으면, 카드에 얼마가 청구될지 모르는 채로 누르게 된다. */
       const diff = upgradeDiff(sub, id);
       ok = await ask(k.dlgUpT,
-        (diff > 0 ? k.dlgUpB.replace('{a}', won(diff, EN())) : k.dlgUpB0) + more);
+        (diff >= MIN_CHARGE ? k.dlgUpB.replace('{a}', won(diff, EN())) : k.dlgUpB0) + more);
       done = null;                       // 실제 청구액은 서버가 알려 준다
     } else {
       ok = await ask(k.dlgDownT, k.dlgDownB.replace('{d}', endDay) + more);

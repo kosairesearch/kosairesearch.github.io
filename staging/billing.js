@@ -10,7 +10,7 @@
 import "./paywall.js";
 import { call } from "./subscription-api.js";
 import { app, isConfigured, SOCIAL } from "./firebase-config.js";
-import { PLANS, TOSS, payReady, planOf, upgradeDiff, won, fmtDay } from "./payment-config.js";
+import { MIN_CHARGE, PLANS, TOSS, payReady, planOf, upgradeDiff, won, fmtDay } from "./payment-config.js";
 import { getFirestore, collection, query, orderBy, limit, getDocs }
   from "https://www.gstatic.com/firebasejs/10.12.2/firebase-firestore.js";
 import { getFunctions, httpsCallable }
@@ -395,7 +395,7 @@ function wire(st) {
              카드에 얼마가 빠져나갈지 모르는 채로 누르게 된다. */
           const diff = upgradeDiff(sub, btn.dataset.to);
           ok = await ask(k.dlgUpT,
-            (diff > 0 ? k.dlgUpB.replace("{a}", won(diff, EN())) : k.dlgUpB0) + more);
+            (diff >= MIN_CHARGE ? k.dlgUpB.replace("{a}", won(diff, EN())) : k.dlgUpB0) + more);
           done = null;                    // 실제 청구액은 서버가 알려 준다
           upTo = to.name || "";
         } else {
