@@ -1,4 +1,8 @@
-- 리포트 동기화 2556건 — 그리드=리포트 항상 일치(무료)
+- VAL_TICKERS 지정 — 30개만 즉시 재수집
+  · 082920 비츠로셀: EPS=None BPS=7558 ROE=20.5 DPS=260.0 성장=15.3
+  · 097230 HJ중공업: EPS=786 BPS=7698 ROE=13.7 DPS=0.0 성장=6.0
+  · 323280 태성: EPS=-54 BPS=4291 ROE=-1.3 DPS=0.0 성장=-36.1
+  · 003570 SNT다이내믹스: EPS=None BPS=37551 ROE=10.9 DPS=1800.0 성장=15.9
 reprt_code='11011', fs_div='CFS' (사업보고서, 연결제무제표)'
 {'status': '013', 'message': '조회된 데이타가 없습니다.'}
 
@@ -56,11 +60,94 @@ reprt_code='11013', fs_div='OFS' (1분기보고서, 별도(개별)제무제표)'
 {'status': '013', 'message': '조회된 데이타가 없습니다.'}
 
 {'status': '013', 'message': '조회된 데이타가 없습니다.'}
+  ✅ 본시스템즈 검증 통과 PER None PBR None EPS None BPS None
+  · 496320 본시스템즈: EPS=None BPS=None ROE=None DPS=None 성장=None
+  · 036530 SNT홀딩스: EPS=8203 BPS=95142 ROE=9.0 DPS=3000.0 성장=22.8
+  · 064960 SNT모티브: EPS=3071 BPS=43352 ROE=7.2 DPS=1700.0 성장=3.9
+  · 005690 파미셀: EPS=725 BPS=2211 ROE=38.4 DPS=50.0 성장=75.9
+  · 100840 SNT에너지: EPS=5191 BPS=19607 ROE=29.5 DPS=1150.0 성장=106.0
+  ✅ 대신밸류리츠 검증 통과 PER None PBR None EPS None BPS None
+  · 0030R0 대신밸류리츠: EPS=None BPS=None ROE=None DPS=None 성장=None
+  · 082800 비보존 제약: EPS=-683 BPS=1863 ROE=-34.3 DPS=0.0 성장=-32.3
+  · 032580 피델릭스: EPS=93 BPS=1503 ROE=6.3 DPS=0.0 성장=19.6
+  · 265740 엔에프씨: EPS=635 BPS=3792 ROE=20.0 DPS=60.0 성장=78.1
+  · 017510 세명전기: EPS=869 BPS=5876 ROE=15.6 DPS=220.0 성장=124.0
+  · 083500 에프엔에스테크: EPS=1282 BPS=10840 ROE=12.4 DPS=340.0 성장=-16.8
+  ✅ 세미티에스 검증 통과 PER None PBR None EPS None BPS None
+  · 0017J0 세미티에스: EPS=None BPS=None ROE=None DPS=None 성장=None
+  · 418470 KT밀리의서재: EPS=1921 BPS=10094 ROE=20.5 DPS=550.0 성장=21.5
+  · 049550 잉크테크: EPS=219 BPS=4050 ROE=5.5 DPS=0.0 성장=4.9
+  · 303360 프로티아: EPS=368 BPS=2459 ROE=16.2 DPS=0.0 성장=43.8
+  · 950220 네오이뮨텍: EPS=None BPS=None ROE=-74.7 DPS=None 성장=-46.6
+  · 007110 일신석재: EPS=-3 BPS=770 ROE=-0.4 DPS=0.0 성장=-30.8
+  · 046310 백금T&A: EPS=193 BPS=None ROE=3.6 DPS=100.0 성장=-2.3
+  · 026910 광진실업: EPS=-658 BPS=2968 ROE=-20.0 DPS=0.0 성장=-2.8
+  ✅ 송우인포텍 검증 통과 PER None PBR None EPS None BPS None
+  · 0203K0 송우인포텍: EPS=None BPS=None ROE=None DPS=None 성장=None
+  · 262840 아이퀘스트: EPS=None BPS=None ROE=14.8 DPS=None 성장=7.2
+  · 109820 진매트릭스: EPS=-64 BPS=865 ROE=-7.1 DPS=0.0 성장=6.2
+  · 071950 코아스: EPS=None BPS=None ROE=-342.5 DPS=0.0 성장=-20.2
+  · 440320 오픈놀: EPS=None BPS=None ROE=None DPS=0.0 성장=73.9
+reprt_code='11011', fs_div='CFS' (사업보고서, 연결제무제표)'
 {'status': '013', 'message': '조회된 데이타가 없습니다.'}
-{'status': '013', 'message': '조회된 데이타가 없습니다.'}
-{'status': '013', 'message': '조회된 데이타가 없습니다.'}
-  ✅ 레메디 검증 통과 PER None PBR None EPS None BPS None
-  · 387690 레메디: EPS=None BPS=None ROE=None DPS=None 성장=None
 
-✅ 밸류에이션 수집 — 이번 1건 신규 / 건너뜀 2682 / 보유 2696/2683개 / 갱신필요 0개
+reprt_code='11011', fs_div='OFS' (사업보고서, 별도(개별)제무제표)'
+{'status': '013', 'message': '조회된 데이타가 없습니다.'}
+
+reprt_code='11011', fs_div='CFS' (사업보고서, 연결제무제표)'
+{'status': '013', 'message': '조회된 데이타가 없습니다.'}
+
+reprt_code='11011', fs_div='OFS' (사업보고서, 별도(개별)제무제표)'
+{'status': '013', 'message': '조회된 데이타가 없습니다.'}
+
+reprt_code='11011', fs_div='CFS' (사업보고서, 연결제무제표)'
+{'status': '013', 'message': '조회된 데이타가 없습니다.'}
+
+reprt_code='11011', fs_div='OFS' (사업보고서, 별도(개별)제무제표)'
+{'status': '013', 'message': '조회된 데이타가 없습니다.'}
+
+reprt_code='11011', fs_div='CFS' (사업보고서, 연결제무제표)'
+{'status': '013', 'message': '조회된 데이타가 없습니다.'}
+
+reprt_code='11011', fs_div='OFS' (사업보고서, 별도(개별)제무제표)'
+{'status': '013', 'message': '조회된 데이타가 없습니다.'}
+
+reprt_code='11013', fs_div='CFS' (1분기보고서, 연결제무제표)'
+{'status': '013', 'message': '조회된 데이타가 없습니다.'}
+
+reprt_code='11013', fs_div='OFS' (1분기보고서, 별도(개별)제무제표)'
+{'status': '013', 'message': '조회된 데이타가 없습니다.'}
+
+reprt_code='11012', fs_div='CFS' (반기보고서, 연결제무제표)'
+{'status': '013', 'message': '조회된 데이타가 없습니다.'}
+
+reprt_code='11012', fs_div='OFS' (반기보고서, 별도(개별)제무제표)'
+{'status': '013', 'message': '조회된 데이타가 없습니다.'}
+
+reprt_code='11014', fs_div='CFS' (3분기보고서, 연결제무제표)'
+{'status': '013', 'message': '조회된 데이타가 없습니다.'}
+
+reprt_code='11014', fs_div='OFS' (3분기보고서, 별도(개별)제무제표)'
+{'status': '013', 'message': '조회된 데이타가 없습니다.'}
+
+reprt_code='11013', fs_div='CFS' (1분기보고서, 연결제무제표)'
+{'status': '013', 'message': '조회된 데이타가 없습니다.'}
+
+reprt_code='11013', fs_div='OFS' (1분기보고서, 별도(개별)제무제표)'
+{'status': '013', 'message': '조회된 데이타가 없습니다.'}
+
+{'status': '013', 'message': '조회된 데이타가 없습니다.'}
+
+{'status': '013', 'message': '조회된 데이타가 없습니다.'}
+
+{'status': '013', 'message': '조회된 데이타가 없습니다.'}
+
+{'status': '013', 'message': '조회된 데이타가 없습니다.'}
+
+{'status': '013', 'message': '조회된 데이타가 없습니다.'}
+  ✅ 아이티센코어 검증 통과 PER None PBR None EPS None BPS None
+  · 243870 아이티센코어: EPS=None BPS=None ROE=None DPS=None 성장=None
+  · 045520 크린앤사이언스: EPS=-494 BPS=2939 ROE=-15.7 DPS=0.0 성장=1.7
+
+✅ 밸류에이션 수집 — 이번 30건 신규 / 건너뜀 0 / 보유 2696/2684개 / 갱신필요 0개
 - VALUATION_COMPLETE 전 종목 최신 — 추가 수집 없음
