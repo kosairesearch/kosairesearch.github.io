@@ -1,6 +1,187 @@
-- 리포트 동기화 2556건 — 그리드=리포트 항상 일치(무료)
-  ✅ 삼성에피스홀딩스 검증 통과 PER None PBR None EPS None BPS None
-  · 0126Z0 삼성에피스홀딩스: EPS=None BPS=None ROE=None DPS=None 성장=None
+- VAL_TICKERS 지정 — 120개만 즉시 재수집
+  · 373220 LG에너지솔루션: EPS=-6851 BPS=94727 ROE=-7.4 DPS=0.0 성장=-7.6
+  · 042660 한화오션: EPS=4935 BPS=22004 ROE=25.7 DPS=None 성장=18.6
+  · 028670 팬오션: EPS=606 BPS=11338 ROE=5.5 DPS=150.0 성장=5.3
+  · 095610 테스: EPS=3722 BPS=23058 ROE=17.6 DPS=850.0 성장=46.3
+  ✅ 에임드바이오 검증 통과 PER None PBR None EPS None BPS None
+  · 0009K0 에임드바이오: EPS=None BPS=None ROE=None DPS=None 성장=None
+  · 097230 HJ중공업: EPS=786 BPS=7698 ROE=13.7 DPS=0.0 성장=6.0
+  · 082920 비츠로셀: EPS=None BPS=7558 ROE=20.5 DPS=260.0 성장=15.3
+  · 323280 태성: EPS=-54 BPS=4291 ROE=-1.3 DPS=0.0 성장=-36.1
+  · 006340 대원전선: EPS=157 BPS=1678 ROE=9.9 DPS=0.0 성장=13.0
+  · 003570 SNT다이내믹스: EPS=None BPS=37551 ROE=10.9 DPS=1800.0 성장=15.9
+reprt_code='11011', fs_div='CFS' (사업보고서, 연결제무제표)'
+{'status': '013', 'message': '조회된 데이타가 없습니다.'}
 
-✅ 밸류에이션 수집 — 이번 1건 신규 / 건너뜀 2683 / 보유 2697/2684개 / 갱신필요 0개
+reprt_code='11011', fs_div='OFS' (사업보고서, 별도(개별)제무제표)'
+{'status': '013', 'message': '조회된 데이타가 없습니다.'}
+
+reprt_code='11011', fs_div='CFS' (사업보고서, 연결제무제표)'
+{'status': '013', 'message': '조회된 데이타가 없습니다.'}
+
+reprt_code='11011', fs_div='OFS' (사업보고서, 별도(개별)제무제표)'
+{'status': '013', 'message': '조회된 데이타가 없습니다.'}
+
+reprt_code='11011', fs_div='CFS' (사업보고서, 연결제무제표)'
+{'status': '013', 'message': '조회된 데이타가 없습니다.'}
+
+reprt_code='11011', fs_div='OFS' (사업보고서, 별도(개별)제무제표)'
+{'status': '013', 'message': '조회된 데이타가 없습니다.'}
+
+reprt_code='11011', fs_div='CFS' (사업보고서, 연결제무제표)'
+{'status': '013', 'message': '조회된 데이타가 없습니다.'}
+
+reprt_code='11011', fs_div='OFS' (사업보고서, 별도(개별)제무제표)'
+{'status': '013', 'message': '조회된 데이타가 없습니다.'}
+
+reprt_code='11013', fs_div='CFS' (1분기보고서, 연결제무제표)'
+{'status': '013', 'message': '조회된 데이타가 없습니다.'}
+
+reprt_code='11013', fs_div='OFS' (1분기보고서, 별도(개별)제무제표)'
+{'status': '013', 'message': '조회된 데이타가 없습니다.'}
+
+reprt_code='11012', fs_div='CFS' (반기보고서, 연결제무제표)'
+{'status': '013', 'message': '조회된 데이타가 없습니다.'}
+
+reprt_code='11012', fs_div='OFS' (반기보고서, 별도(개별)제무제표)'
+{'status': '013', 'message': '조회된 데이타가 없습니다.'}
+
+reprt_code='11014', fs_div='CFS' (3분기보고서, 연결제무제표)'
+{'status': '013', 'message': '조회된 데이타가 없습니다.'}
+
+reprt_code='11014', fs_div='OFS' (3분기보고서, 별도(개별)제무제표)'
+{'status': '013', 'message': '조회된 데이타가 없습니다.'}
+
+reprt_code='11013', fs_div='CFS' (1분기보고서, 연결제무제표)'
+{'status': '013', 'message': '조회된 데이타가 없습니다.'}
+
+reprt_code='11013', fs_div='OFS' (1분기보고서, 별도(개별)제무제표)'
+{'status': '013', 'message': '조회된 데이타가 없습니다.'}
+
+{'status': '013', 'message': '조회된 데이타가 없습니다.'}
+
+{'status': '013', 'message': '조회된 데이타가 없습니다.'}
+
+{'status': '013', 'message': '조회된 데이타가 없습니다.'}
+
+{'status': '013', 'message': '조회된 데이타가 없습니다.'}
+
+{'status': '013', 'message': '조회된 데이타가 없습니다.'}
+  ✅ 본시스템즈 검증 통과 PER None PBR None EPS None BPS None
+  · 496320 본시스템즈: EPS=None BPS=None ROE=None DPS=None 성장=None
+  · 036540 SFA반도체: EPS=-73 BPS=2844 ROE=-2.5 DPS=0.0 성장=-8.3
+  · 458870 씨어스: EPS=835 BPS=1421 ROE=81.0 DPS=0.0 성장=494.7
+  · 071320 지역난방공사: EPS=26737 BPS=209039 ROE=13.1 DPS=6157.0 성장=12.0
+  · 100790 미래에셋벤처투자: EPS=821 BPS=7319 ROE=11.9 DPS=85.0 성장=2.6
+  · 056190 SFA: EPS=None BPS=32536 ROE=5.4 DPS=950.0 성장=-20.3
+  · 036530 SNT홀딩스: EPS=8203 BPS=95142 ROE=9.0 DPS=3000.0 성장=22.8
+  · 137400 피엔티: EPS=3089 BPS=28105 ROE=11.8 DPS=200.0 성장=-28.0
+  · 102710 이엔에프테크놀로지: EPS=3986 BPS=32565 ROE=12.7 DPS=200.0 성장=15.2
+  · 064960 SNT모티브: EPS=3071 BPS=43352 ROE=7.2 DPS=1700.0 성장=3.9
+  · 476060 온코닉테라퓨틱스: EPS=None BPS=1808 ROE=21.7 DPS=0.0 성장=259.8
+  · 005690 파미셀: EPS=725 BPS=2211 ROE=38.4 DPS=50.0 성장=75.9
+  · 100840 SNT에너지: EPS=5191 BPS=19607 ROE=29.5 DPS=1150.0 성장=106.0
+  · 010780 아이에스동서: EPS=3275 BPS=46647 ROE=7.3 DPS=500.0 성장=-18.5
+  · 002990 금호건설: EPS=2032 BPS=6589 ROE=31.5 DPS=200.0 성장=5.4
+  · 214430 아이쓰리시스템: EPS=2605 BPS=19992 ROE=14.7 DPS=450.0 성장=3.0
+  · 460930 현대힘스: EPS=634 BPS=7195 ROE=9.2 DPS=130.0 성장=11.2
+  · 368770 파이버프로: EPS=389 BPS=1463 ROE=29.7 DPS=86.0 성장=32.0
+  · 271940 일진하이솔루스: EPS=-43 BPS=8667 ROE=-0.5 DPS=0.0 성장=2.9
+  · 482630 삼양엔씨켐: EPS=None BPS=None ROE=14.5 DPS=0.0 성장=13.5
+  · 015860 일진홀딩스: EPS=820 BPS=12039 ROE=7.9 DPS=200.0 성장=26.8
+  · 417840 저스템: EPS=None BPS=2856 ROE=6.1 DPS=0.0 성장=24.8
+  · 085910 네오티스: EPS=423 BPS=4475 ROE=9.8 DPS=200.0 성장=26.5
+  · 136480 하림: EPS=369 BPS=3080 ROE=12.7 DPS=40.0 성장=12.0
+  · 493280 아이엠바이오로직스: EPS=None BPS=None ROE=None DPS=0.0 성장=None
+  · 003350 한국화장품제조: EPS=None BPS=None ROE=195.3 DPS=None 성장=10.2
+  · 182400 엔케이젠바이오텍코리아: EPS=None BPS=None ROE=-181.5 DPS=0.0 성장=-10.7
+  · 003720 삼영: EPS=None BPS=2831 ROE=None DPS=None 성장=21.6
+  · 475400 씨메스로보틱스: EPS=-1395 BPS=4643 ROE=-26.3 DPS=0.0 성장=89.5
+  · 452430 사피엔반도체: EPS=-332 BPS=1644 ROE=-19.0 DPS=0.0 성장=116.6
+  · 112290 와이씨켐: EPS=None BPS=None ROE=28.8 DPS=0.0 성장=18.2
+  ✅ 대신밸류리츠 검증 통과 PER None PBR None EPS None BPS None
+  · 0030R0 대신밸류리츠: EPS=None BPS=None ROE=None DPS=None 성장=None
+  · 046970 우리로: EPS=59 BPS=932 ROE=6.6 DPS=0.0 성장=-10.3
+  ✅ 카나프테라퓨틱스 검증 통과 PER None PBR None EPS None BPS None
+  · 0082N0 카나프테라퓨틱스: EPS=None BPS=None ROE=None DPS=None 성장=None
+  · 382800 지앤비에스 에코: EPS=478 BPS=3886 ROE=12.9 DPS=120.0 성장=29.9
+  · 489460 바이오비쥬: EPS=None BPS=4208 ROE=None DPS=100.0 성장=None
+  · 307180 아이엘: EPS=-413 BPS=None ROE=-49.0 DPS=0.0 성장=23.2
+  · 082800 비보존 제약: EPS=-683 BPS=1863 ROE=-34.3 DPS=0.0 성장=-32.3
+  · 032580 피델릭스: EPS=93 BPS=1503 ROE=6.3 DPS=0.0 성장=19.6
+  · 093190 빅솔론: EPS=1208 BPS=13965 ROE=12.2 DPS=325.0 성장=17.6
+  · 081000 일진다이아: EPS=609 BPS=29106 ROE=2.1 DPS=300.0 성장=3.4
+  · 060150 인선이엔티: EPS=-162 BPS=7027 ROE=-2.3 DPS=0.0 성장=-10.4
+  · 413630 씨피시스템: EPS=69 BPS=1165 ROE=5.9 DPS=60.0 성장=-10.5
+  · 445180 퓨릿: EPS=983 BPS=6495 ROE=16.4 DPS=120.0 성장=16.3
+  · 059120 아진엑스텍: EPS=None BPS=None ROE=10.1 DPS=0.0 성장=-2.2
+  · 242040 나무에이엑스: EPS=None BPS=1131 ROE=None DPS=0.0 성장=1.0
+  · 042600 새로닉스: EPS=-1405 BPS=None ROE=-17.1 DPS=0.0 성장=-18.5
+  · 265740 엔에프씨: EPS=635 BPS=3792 ROE=20.0 DPS=60.0 성장=78.1
+  · 017510 세명전기: EPS=869 BPS=5876 ROE=15.6 DPS=220.0 성장=124.0
+  · 073010 케이에스피: EPS=175 BPS=2112 ROE=8.9 DPS=20.0 성장=12.0
+  · 006620 동구바이오제약: EPS=1863 BPS=5386 ROE=40.3 DPS=120.0 성장=-2.6
+  · 083500 에프엔에스테크: EPS=1282 BPS=10840 ROE=12.4 DPS=340.0 성장=-16.8
+  · 267850 아시아나IDT: EPS=1152 BPS=15441 ROE=7.6 DPS=500.0 성장=0.0
+  · 023450 동남합성: EPS=2315 BPS=16169 ROE=14.4 DPS=925.0 성장=4.2
+  · 025950 동신건설: EPS=203 BPS=11858 ROE=1.8 DPS=150.0 성장=-51.6
+  · 036580 팜스코: EPS=896 BPS=5709 ROE=18.4 DPS=50.0 성장=-1.3
+  · 289930 웨이비스: EPS=464 BPS=4829 ROE=12.7 DPS=0.0 성장=38.5
+  ✅ 세미티에스 검증 통과 PER None PBR None EPS None BPS None
+  · 0017J0 세미티에스: EPS=None BPS=None ROE=None DPS=None 성장=None
+  · 025620 차AI헬스케어: EPS=None BPS=3884 ROE=16.9 DPS=0.0 성장=-53.4
+  · 049950 미래컴퍼니: EPS=-2036 BPS=13279 ROE=-14.3 DPS=0.0 성장=-39.2
+  · 302550 리메드: EPS=38 BPS=1412 ROE=2.9 DPS=0.0 성장=-4.1
+  · 493330 지에프아이: EPS=None BPS=8169 ROE=None DPS=0.0 성장=None
+  · 418470 KT밀리의서재: EPS=1921 BPS=10094 ROE=20.5 DPS=550.0 성장=21.5
+  · 060590 씨티씨바이오: EPS=256 BPS=3179 ROE=8.3 DPS=0.0 성장=-14.3
+  · 212710 아이에스티이: EPS=-441 BPS=2404 ROE=-17.3 DPS=0.0 성장=-21.6
+  · 170030 현대공업: EPS=1036 BPS=11055 ROE=9.8 DPS=300.0 성장=12.5
+  · 079810 APS이노베이션: EPS=241 BPS=8153 ROE=3.0 DPS=0.0 성장=-49.5
+  · 041930 SY동아: EPS=1435 BPS=12957 ROE=11.6 DPS=300.0 성장=5.3
+  · 432470 케이엔에스: EPS=-143 BPS=6515 ROE=-2.2 DPS=0.0 성장=53.0
+  · 147760 피엠티: EPS=-1592 BPS=936 ROE=-93.0 DPS=0.0 성장=3.7
+  · 338100 NH프라임리츠: EPS=None BPS=None ROE=None DPS=None 성장=-72.8
+  · 420570 제이투케이바이오: EPS=691 BPS=5804 ROE=12.4 DPS=250.0 성장=-0.5
+  · 049550 잉크테크: EPS=219 BPS=4050 ROE=5.5 DPS=0.0 성장=4.9
+  · 214680 디알텍: EPS=-271 BPS=946 ROE=-27.4 DPS=0.0 성장=19.2
+  · 204840 지엘팜텍: EPS=-2 BPS=255 ROE=-0.7 DPS=0.0 성장=35.4
+  · 307870 비투엔: EPS=-160 BPS=513 ROE=-30.6 DPS=0.0 성장=-41.7
+  · 303360 프로티아: EPS=368 BPS=2459 ROE=16.2 DPS=0.0 성장=43.8
+  · 117670 알파칩스: EPS=None BPS=6883 ROE=-4.0 DPS=0.0 성장=-3.5
+  · 060310 3S: EPS=None BPS=None ROE=None DPS=0.0 성장=-33.4
+  · 002760 보락: EPS=44 BPS=814 ROE=5.5 DPS=7.0 성장=5.3
+  · 036670 삼양케이씨아이: EPS=799 BPS=11627 ROE=7.0 DPS=250.0 성장=6.0
+  · 950220 네오이뮨텍: EPS=None BPS=None ROE=-74.7 DPS=None 성장=-46.6
+  · 007110 일신석재: EPS=-3 BPS=770 ROE=-0.4 DPS=0.0 성장=-30.8
+  · 321260 프로이천: EPS=112 BPS=1560 ROE=7.2 DPS=60.0 성장=-12.5
+  · 163280 에어레인: EPS=None BPS=None ROE=9.5 DPS=0.0 성장=14.6
+  · 084870 TBH글로벌: EPS=52 BPS=2923 ROE=2.0 DPS=50.0 성장=2.2
+  · 229000 젠큐릭스: EPS=-437 BPS=None ROE=-58.3 DPS=0.0 성장=47.0
+  · 196450 코아시아씨엠: EPS=91 BPS=1603 ROE=6.7 DPS=0.0 성장=-3.4
+  · 393210 토마토시스템: EPS=-3 BPS=1959 ROE=-0.2 DPS=0.0 성장=26.1
+  · 145270 케이탑리츠: EPS=138 BPS=2344 ROE=6.4 DPS=50.0 성장=24.8
+  · 046310 백금T&A: EPS=193 BPS=None ROE=3.6 DPS=100.0 성장=-2.3
+  · 446840 지슨: EPS=None BPS=116 ROE=-145.8 DPS=0.0 성장=None
+  · 026910 광진실업: EPS=-658 BPS=2968 ROE=-20.0 DPS=0.0 성장=-2.8
+  · 208710 포톤: EPS=-266 BPS=None ROE=-7.1 DPS=0.0 성장=-5.1
+  · 064480 브리지텍: EPS=147 BPS=3674 ROE=3.9 DPS=120.0 성장=14.0
+  · 002870 신풍: EPS=None BPS=2731 ROE=2.9 DPS=0.0 성장=6.4
+  · 376930 노을: EPS=-503 BPS=412 ROE=-109.7 DPS=0.0 성장=219.8
+  · 045510 정원엔시스: EPS=59 BPS=1445 ROE=4.1 DPS=0.0 성장=3.3
+  · 434480 모니터랩: EPS=None BPS=3246 ROE=1.3 DPS=0.0 성장=28.6
+  ✅ 송우인포텍 검증 통과 PER None PBR None EPS None BPS None
+  · 0203K0 송우인포텍: EPS=None BPS=None ROE=None DPS=None 성장=None
+  · 476080 M83: EPS=-844 BPS=5359 ROE=-14.6 DPS=0.0 성장=127.6
+  · 262840 아이퀘스트: EPS=None BPS=None ROE=14.8 DPS=None 성장=7.2
+  · 109820 진매트릭스: EPS=-64 BPS=865 ROE=-7.1 DPS=0.0 성장=6.2
+  · 079170 한창산업: EPS=1388 BPS=14068 ROE=10.3 DPS=210.0 성장=4.1
+  · 010640 진양폴리: EPS=117 BPS=None ROE=5.2 DPS=150.0 성장=-13.7
+  · 363260 모비데이즈: EPS=69 BPS=1353 ROE=5.3 DPS=40.0 성장=19.1
+  · 232830 아이티센피엔에스: EPS=-332 BPS=825 ROE=-42.4 DPS=0.0 성장=158.1
+  · 013720 청보: EPS=-202 BPS=1042 ROE=-20.1 DPS=0.0 성장=1.9
+  · 378800 샤페론: EPS=-440 BPS=None ROE=-92.3 DPS=0.0 성장=1186.7
+  · 387570 파인메딕스: EPS=-329 BPS=3381 ROE=-9.3 DPS=0.0 성장=-4.4
+
+✅ 밸류에이션 수집 — 이번 120건 신규 / 건너뜀 0 / 보유 2697/2684개 / 갱신필요 0개
 - VALUATION_COMPLETE 전 종목 최신 — 추가 수집 없음

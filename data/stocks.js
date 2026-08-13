@@ -1,7 +1,7 @@
 // KOS ai — 자동 생성 데이터 파일. 직접 수정하지 마세요.
 window.KOS_LIVE_DATA = {
-  "lastUpdated": "2026-08-13 04:48",
-  "dataDate": "20260812",
+  "lastUpdated": "2026-08-13 12:29",
+  "dataDate": "20260813",
   "stocks": [
     {
       "ticker": "005930",
@@ -22805,17 +22805,18 @@ window.KOS_LIVE_DATA = {
     {
       "ticker": "483350",
       "name": "딜리셔스",
-      "name_en": "",
+      "name_en": "Dealicious Inc.",
       "market": "코스닥",
-      "sector": "기타",
+      "sector": "유통·소비재",
       "price": 5140,
       "change": -26.57,
       "volume": 29539572,
       "trading_value": 177211789540,
       "mcap": 0.1125,
       "shares": 21878960,
+      "induty_code": "47911",
       "categories": [
-        "기타"
+        "유통·소비재"
       ],
       "rank": 1266
     },
