@@ -28,10 +28,10 @@ if(window.KOSi18n) window.KOSi18n.register({
     "Your account and saved watchlist will be permanently deleted. This cannot be undone.",
   "떠나시는 이유를 알려주시면 개선에 반영하겠습니다 (복수 선택 가능)":
     "Telling us why helps us improve (select all that apply)",
-  "원하는 종목·정보가 부족해요":"Missing stocks or information I want",
-  "정보가 정확하지 않아요":"Information isn't accurate",
-  "자주 사용하지 않아요":"I don't use it often",
-  "사용법이 불편해요":"Hard to use",
+  "원하는 종목·정보가 부족합니다":"Missing stocks or information I want",
+  "정보가 정확하지 않습니다":"Information isn't accurate",
+  "자주 이용하지 않습니다":"I don't use it often",
+  "이용 방법이 불편합니다":"Hard to use",
   "기타":"Other",
   "자세한 의견 (선택)":"Tell us more (optional)",
   "위 내용을 이해했으며 되돌릴 수 없음에 동의합니다":
@@ -46,8 +46,8 @@ if(window.KOSi18n) window.KOSi18n.register({
 /* 회원 탈퇴 — 다단계 확인 모달:
    사유 설문(선택) → '되돌릴 수 없음' 동의 체크 → '탈퇴' 입력 시에만 버튼 활성화.
    확정 시: 사유를 이메일로 기록(best-effort) → 워치리스트 삭제 → 계정 삭제. */
-const WD_REASONS = ["원하는 종목·정보가 부족해요", "정보가 정확하지 않아요",
-                    "자주 사용하지 않아요", "사용법이 불편해요", "기타"];
+const WD_REASONS = ["원하는 종목·정보가 부족합니다", "정보가 정확하지 않습니다",
+                    "자주 이용하지 않습니다", "이용 방법이 불편합니다", "기타"];
 
 function openWithdrawModal(){
   const user = auth.currentUser;
