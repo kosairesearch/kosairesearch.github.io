@@ -336,7 +336,7 @@ table.dt .pos{color:var(--up);font-weight:700}table.dt .neg{color:var(--down);fo
 /* 카드는 .tz-body 밖에 둔다 — filter 가 걸린 요소 안에 넣으면 카드까지 흐려진다.
    sticky 로 화면 가운데쯤에 붙여, 흐린 구간을 훑는 동안 계속 보이게 한다. */
 .tz-lock{position:absolute;left:0;right:0;top:0;bottom:0;pointer-events:none}
-.tz-lock .lockwrap{position:sticky;top:calc(50vh - 130px);margin:0 auto}
+.tz-lock .lockwrap{position:sticky;top:calc(50vh - 175px);margin:0 auto}
 .tz-lock .lock{pointer-events:auto}
 .tz-lock .lock::before{content:none}
 
@@ -351,10 +351,12 @@ table.dt .pos{color:var(--up);font-weight:700}table.dt .neg{color:var(--down);fo
   word-break:keep-all;overflow-wrap:break-word}
 .lock .lock-sub{margin:0 auto;max-width:560px;font:400 15px/1.7 var(--font-sans);color:var(--fg-2);
   word-break:keep-all;overflow-wrap:break-word}
-.lock-list{display:flex;flex-wrap:wrap;justify-content:center;gap:7px;margin:20px auto 0;max-width:620px}
-.lock-list span{padding:6px 12px;border-radius:var(--pill);background:rgba(0,0,0,.045);
-  font:600 13px var(--font-sans);color:var(--fg-2)}
-:root[data-theme="dark"] .lock-list span{background:rgba(255,255,255,.07)}
+/* 잠긴 섹션 이름. 아홉 개가 붙으므로 문장이 아니라 눈으로 훑는 목록처럼 보여야
+   한다 — 작고 촘촘하게, 테두리로 낱개를 구분한다. */
+.lock-list{display:flex;flex-wrap:wrap;justify-content:center;gap:6px;margin:18px auto 0;max-width:430px}
+.lock-list span{padding:5px 11px;border-radius:var(--pill);background:rgba(0,0,0,.04);
+  border:1px solid var(--border-2);font:600 12.5px var(--font-sans);color:var(--fg-2);white-space:nowrap}
+:root[data-theme="dark"] .lock-list span{background:rgba(255,255,255,.06);border-color:rgba(255,255,255,.1)}
 .lock-cta{display:flex;flex-wrap:wrap;justify-content:center;gap:9px;margin-top:22px}
 .lock-note{margin:14px 0 0;font:500 12.5px/1.6 var(--font-sans);color:var(--fg-3)}
 .lock-note a{color:inherit}
@@ -1229,7 +1231,7 @@ document.addEventListener('click', function (e) {
     if(!tz||!tz.length) tz=deriveTeaser();
     if(!tz||!tz.length) return null;
     _tzSeed=0;                              // 다시 그려도 같은 모양
-    var h='', chars=0, secs=0;
+    var h='', chars=0, secs=0, names=[];
     tz.forEach(function(t){
       var meta=TZ_SEC[t.k]; if(!meta) return;
       var body=tzSection(t,t.k);
@@ -1246,12 +1248,15 @@ document.addEventListener('click', function (e) {
               +'<div class="tbl-foot" style="margin-bottom:22px">'+esc(fillerText(90))+'</div>'
               +body.h;
       }
-      secs++; chars+=body.n;
+      secs++; chars+=body.n; names.push(u.sec[meta[1]]);
       h+=secOpen(pad(n++),meta[0],u.sec[meta[1]])+body.h+'</section><hr class="hairline" />';
     });
     if(!secs) return null;
-    // 한국어 묵독은 분당 500자 안팎으로 잡는다.
-    return {html:h, n:n, secs:secs, mins:Math.max(1,Math.round(chars/500))};
+    /* 묵독 속도는 글자 수로 재는데, 같은 내용이라도 영어가 한국어보다 글자가
+       훨씬 많다. 한 기준으로 나누면 같은 리포트가 한국어 10분 · 영어 23분으로
+       갈린다. 언어별로 나눈다 — 한국어 분당 500자, 영어 분당 1,300자(≈250단어). */
+    var cpm = L()==='en' ? 1300 : 500;
+    return {html:h, n:n, secs:secs, names:names, mins:Math.max(1,Math.round(chars/cpm))};
   }
 
   var watched=false;
@@ -1355,10 +1360,14 @@ document.addEventListener('click', function (e) {
     /* 흐린 판은 높이가 고정돼 있어 분량이 눈에 안 잡힌다 — 숫자로 한 줄 적는다.
        판이 없을 때만 잠긴 항목을 나열한다(그때는 그게 유일한 단서다). */
     var sub=tz?k.subN.replace('{s}',tz.secs).replace('{m}',tz.mins):k.sub;
+    /* 무엇이 잠겼는지 이름으로 보여 준다. '9개 섹션'만으로는 그 안에 뭐가
+       들어 있는지 알 수가 없다. 판이 있으면 그 리포트에 실제로 있는 섹션을
+       그대로 쓰고, 판이 없으면 대표 항목을 쓴다. */
+    var chips=(tz&&tz.names&&tz.names.length)?tz.names:k.items;
     return '<div class="lockwrap col"><div class="lock glass" id="lockCard">'
       +'<h3>'+esc(k.title)+'</h3>'
       +'<p class="lock-sub">'+esc(sub)+'</p>'
-      +(tz?'':'<div class="lock-list">'+k.items.map(function(x){return '<span>'+esc(x)+'</span>';}).join('')+'</div>')
+      +'<div class="lock-list">'+chips.map(function(x){return '<span>'+esc(x)+'</span>';}).join('')+'</div>'
       +'<div class="lock-cta">'
         +'<a class="btn btn-primary" href="pricing.html">'+esc(k.cta)+'</a>'
         +'<a class="btn btn-soft" id="lockBtn" href="Login.html?next='
