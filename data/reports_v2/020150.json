@@ -1,220 +1,230 @@
 {
  "title": {
-  "ko": "동박에서 AI 회로박으로, 체질 전환의 변곡점",
-  "en": "Pivot from Battery Foil to AI Circuit Foil at an Inflection Point"
+  "ko": "회로박 전환과 적자 축소, 검증 구간",
+  "en": "Circuit Foil Pivot Meets Narrowing Losses"
  },
  "lead": {
-  "ko": "전기차 캐즘으로 적자가 깊어진 가운데 AI 데이터센터용 회로박과 ESS 전지박을 축으로 한 사업 재편이 실적 회복의 관건으로 부상했다.",
-  "en": "After deep losses amid the EV demand slump, a business reshaping centered on AI data-center circuit foil and ESS battery foil has become the key to an earnings recovery."
+  "ko": "전기차용 전지박 부진으로 2025년 대규모 적자를 낸 롯데에너지머티리얼즈가 AI 데이터센터용 회로박과 북미 ESS 전지박으로 축을 옮기며 가동률·손익을 회복 중이지만, 영업적자는 아직 이어지고 있다.",
+  "en": "After a heavy 2025 loss driven by weak EV battery foil demand, Lotte Energy Materials is shifting toward AI data-center circuit foil and North American ESS battery foil, with utilization and losses improving, yet operating profit is still in the red."
  },
  "keypoints": [
   {
-   "ko": "2025년은 매출이 전년 대비 줄고 영업·순이익 모두 큰 적자를 낸 부진한 해였으나, 2026년 1분기 들어 영업적자가 크게 줄고 지배주주 순이익이 흑자로 돌아섰다.",
-   "en": "2025 was a weak year with falling revenue and large operating and net losses, but in Q1 2026 the operating loss narrowed sharply and net income attributable to owners turned positive."
+   "ko": "2025년 연결 매출 6,775억원, 영업손실 1,452억원(영업이익률 -21.4%), 지배주주 순손실 1,575억원으로 4개 분기 모두 적자를 기록했다.",
+   "en": "2025 consolidated revenue was KRW 677.5bn with an operating loss of KRW 145.2bn (-21.4% margin) and a net loss attributable to owners of KRW 157.5bn, with all four quarters in the red."
   },
   {
-   "ko": "AI 데이터센터용 초극저조도(HVLP) 회로박이 핵심 성장 동력으로, 가공마진이 전기차용 전지박보다 현저히 높다고 평가된다.",
-   "en": "Hyper-very-low-profile (HVLP) circuit foil for AI data centers is the key growth driver, with processing margins seen as far higher than EV battery foil."
+   "ko": "2026년 1분기 매출 1,598억원·영업손실 50억원, 지배주주 순이익 16억원으로 손익이 크게 좁혀졌으나, 회사는 구리 가격 상승에 따른 래깅 등 일회성 요인 기여를 설명했다.",
+   "en": "In Q1 2026 revenue was KRW 159.8bn with an operating loss of only KRW 5.0bn and net income attributable to owners of KRW 1.6bn, though management flagged one-off help from copper-price lagging effects."
   },
   {
-   "ko": "회로박 생산능력을 2026년 6,700톤, 2027년 1만6,000톤으로 확대하는 로드맵을 추진하며 익산공장에 약 500억원을 투자한다.",
-   "en": "The company is pursuing a roadmap to expand circuit-foil capacity to 6,700 tons in 2026 and 16,000 tons in 2027, investing about KRW 50 billion in the Iksan plant."
+   "ko": "익산공장 회로박 생산능력을 3,700톤에서 올해 6,700톤, 2027년 상반기 1만6,000톤으로 4배 이상 확대한다는 계획을 공개했다.",
+   "en": "The company disclosed a plan to expand Iksan circuit-foil capacity from 3,700 tons to 6,700 tons this year and 16,000 tons by H1 2027 — more than fourfold."
   },
   {
-   "ko": "전고체 배터리용 황화물계 고체전해질을 미국 선두권 업체와 합작법인 형태로 추진 중이며 연내 절차 완료가 거론된다.",
-   "en": "It is developing sulfide solid electrolyte for solid-state batteries via a joint venture with a leading U.S. company, with procedures said to be targeted for completion within the year."
+   "ko": "말레이시아 전지박 5공장은 2026년 7월 본격 가동, 6공장은 4분기 조기 가동이 예고돼 초기 비용과 감가상각 부담이 동시에 확인 대상이다.",
+   "en": "Malaysia battery-foil Plant 5 started full operation in July 2026 and Plant 6 is slated for an accelerated Q4 start, so start-up costs and depreciation are equally in focus."
   },
   {
-   "ko": "부채비율이 20%대로 낮아 재무 안정성은 양호하나, 전방 수요와 고객사 투자 타이밍에 실적 변동성이 크다.",
-   "en": "A low debt ratio in the 20% range supports financial stability, but earnings are highly sensitive to downstream demand and customer investment timing."
+   "ko": "2025년 말 부채비율 23.2%로 재무 부담은 낮은 편이지만, 2025년 영업활동현금흐름은 마이너스로 돌아섰고 배당은 지급되지 않았다.",
+   "en": "A 23.2% debt-to-equity ratio at end-2025 keeps leverage low, but 2025 operating cash flow turned negative and no dividend was paid."
   }
  ],
  "business": {
-  "ko": "롯데에너지머티리얼즈는 구리를 머리카락보다 얇게 만든 동박(Elecfoil)을 핵심 사업으로 하며, 전기차·ESS 배터리 음극집전체로 쓰이는 전지박과 PCB·CCL용 회로박을 함께 생산한다. 옛 일진머티리얼즈가 2023년 롯데그룹에 인수되며 사명을 바꾼 회사로, 한국(익산)과 말레이시아에 생산기지를 두고 있다. 익산공장은 국내 유일의 회로박 생산기지로 자리매김했고, 말레이시아는 전지박 주력 거점이다. 최근에는 AI 가속기·서버·스위치 등 고속 신호 전송에 쓰이는 초극저조도(HVLP) 회로박으로 제품 믹스를 고도화하고 있다.Elecfoil은 이차전지에서 음극집전체로 작용하는 핵심 소재로서 이차전지 산업과 밀접한 관련이 있으며, 전기차, ESS 및 PCB에 적용되는 제품이다. 유리·창호 공사 등을 하는롯데에코월을 종속회사로 보유하고 있다. 고객은 K-배터리사를 중심으로 유럽·미국 시장에 분포하며, 회로박은 국내외 PCB·CCL 업체로 확장 중이다.두산 전자BG는 CCL 기술을, 롯데에너지머티리얼즈는 HVLP 4급 회로박 기술을 보유하고 있어 양사는 AI 반도체 및 5G 통신 등 첨단 산업 핵심 소재 공급에 협력하기로 했다. 황화물계 고체전해질·니켈도금박 등 차세대 배터리 소재로도 사업 영역을 넓히고 있다.",
-  "en": "Lotte Energy Materials' core business is electrodeposited copper foil (Elecfoil)—copper made thinner than a strand of hair—producing battery foil used as the anode current collector for EV and ESS batteries, alongside circuit foil for PCB and CCL. Formerly Iljin Materials, it was renamed after Lotte Group's 2023 acquisition and operates plants in Korea (Iksan) and Malaysia. The Iksan plant has become Korea's only circuit-foil production base, while Malaysia is the main battery-foil hub. The company is recently upgrading its product mix toward hyper-very-low-profile (HVLP) circuit foil used for high-speed signal transmission in AI accelerators, servers and switches.Elecfoil is a core anode current-collector material closely tied to the secondary battery industry, applied in EVs, ESS and PCBs. It holds Lotte Ecowall, which does glass and window construction, as a subsidiary. Customers center on Korean battery makers across European and U.S. markets, while circuit foil is expanding to domestic and overseas PCB/CCL firms.Doosan Electro-Materials holds CCL technology and Lotte Energy Materials holds HVLP grade-4 circuit-foil technology, and the two agreed to cooperate on supplying core materials for advanced industries such as AI semiconductors and 5G. It is also broadening into next-generation battery materials such as sulfide solid electrolyte and nickel-plated foil."
+  "ko": "롯데에너지머티리얼즈는 옛 일진머티리얼즈로, 리튬이온 배터리 음극집전체용 전지박과 인쇄회로기판(PCB)·동박적층판(CCL)용 회로박을 생산하는 동박(Elecfoil) 전문 소재기업이며 롯데케미칼 계열에 속한다. 생산 거점은 전북 익산공장과 말레이시아 사라왁 공장으로 나뉘며, 익산공장은 국내 유일의 회로박 공장으로 전지박 라인을 AI용 회로박 라인으로 전환하는 작업이 진행 중이다. 회사는 국내 유일 회로박 생산 업체라는 점을 내세워 2027년 상반기까지 회로박 생산능력을 4배 이상 확장한다는 계획을 밝혔다. 제품 축은 세 가지로, 전기차용 전지박, 에너지저장장치(ESS)·배터리백업유닛(BBU)·소형전지용 하이엔드 전지박, 그리고 AI 서버·네트워크 장비용 회로박이다. 회사에 따르면 2026년 1분기 기준 전체 매출에서 회로박이 차지하는 비중은 15% 내외다. 경영진은 초극저조도(HVLP) 회로박과 반도체 패키징용 극박부터 ESS·BBU용 하이엔드 전지박, 후박 제품까지 AI 데이터센터에 필요한 소재 포트폴리오를 갖췄다고 설명했다. 고객 구성은 구체적으로 공개되지 않으나, 전지박은 북미 ESS와 4680 원통형 배터리 대상 출하, 회로박은 AI 가속기용 초극저조도 동박이 판매량 증가를 이끌었다는 것이 회사 설명이다. 국내 경쟁 구도는 SK넥실리스(SKC), 솔루스첨단소재와의 3사 체제이며, 2026년 1분기 평균 가동률은 SK넥실리스가 69.6%, 롯데에너지머티리얼즈 익산·말레이시아 공장이 66.6%로 집계됐다. 이와 별도로 LFP 양극재와 전고체배터리용 고체전해질을 신사업으로 육성하고 있다.",
+  "en": "Lotte Energy Materials, formerly Iljin Materials and now part of the Lotte Chemical group, is a copper foil (Elecfoil) specialist producing battery foil for lithium-ion anode current collectors and circuit foil for PCBs and copper-clad laminates. Production is split between Iksan in Korea and Sarawak in Malaysia, and the Iksan site is the country's only circuit-foil plant, where battery-foil lines are being converted to AI-grade circuit-foil lines. Citing its position as Korea's sole circuit-foil producer, the company said it will more than quadruple circuit-foil capacity by the first half of 2027. The product mix has three legs: EV battery foil; high-end battery foil for energy storage systems (ESS), battery backup units (BBU) and small high-power cells; and circuit foil for AI servers and networking gear. Management said circuit foil accounted for roughly 15% of total revenue as of Q1 2026. Executives describe a full materials portfolio for AI data centers, spanning HVLP circuit foil and ultra-thin foil for semiconductor packaging through high-end battery foil for ESS and BBU as well as thick foil. Customer names are not disclosed, but the company says battery foil shipments went to North American ESS and 4680 cylindrical cells, while ultra-low-profile foil for AI accelerators drove circuit-foil volume growth. Domestically it competes with SK Nexilis (SKC) and Solus Advanced Materials; Q1 2026 average utilization was 69.6% at SK Nexilis and 66.6% across Lotte Energy Materials' Iksan and Malaysia plants. Separately, LFP cathode material and solid electrolyte for all-solid-state batteries are being developed as new businesses."
  },
  "earnings": {
-  "ko": "2025년 연결 매출은 6,775억원으로 전년(9,022억원) 대비 크게 감소했고, 영업손실은 1,452억원, 지배주주 순손실은 1,575억원으로 적자 폭이 확대됐다. 영업활동현금흐름도 마이너스(약 -111억원)로 돌아서, 2024년의 양(+)전환(약 +870억원)에서 다시 악화됐다.전방 산업 부진에 따른 가동률 하락과 판매량 감소가 이어진 가운데, 공장 운영에 따른 고정비 부담이 겹치며 적자 국면이 지속됐다. 분기 흐름을 보면 2025년 1분기 영업손실 460억원으로 출발해 2~4분기에도 매분기 300억원대 적자가 이어졌다. 그러나 2026년 1분기 매출 1,598억원에 영업손실은 49.8억원으로 급감했고, 지배주주 순이익은 약 16억원으로 흑자 전환했다.ESS용 전지박 및 회로박 판매가 늘고 말레이시아 공장 생산성 향상, 구리가격 상승에 따른 원재료 레깅 효과 및 재고평가 손익 개선으로 영업이익이 큰 폭 개선됐다. 다만유럽 물류 지연 영향에 따른 전기차(EV)용 전지박 매출 감소로 전분기 대비 매출은 소폭 감소했다. 과거 2022년에는 영업이익률이 11.6%에 달했던 점과 비교하면, 현재는 가동률 회복과 제품 믹스 개선을 통한 마진 정상화 초기 국면으로 해석된다.",
-  "en": "2025 consolidated revenue of KRW 677.5 billion fell sharply from KRW 902.3 billion a year earlier, with an operating loss of KRW 145.2 billion and a net loss attributable to owners of KRW 157.5 billion, widening the deficit. Operating cash flow also turned negative (about KRW -11.1 billion), reversing the positive figure (about KRW +87.0 billion) of 2024.Amid lower utilization and reduced volumes from a downstream slump, fixed-cost burdens from plant operations compounded losses. By quarter, 2025 opened with a Q1 operating loss of KRW 46.0 billion, with losses in the KRW 30+ billion range continuing through Q2–Q4. However, in Q1 2026, on revenue of KRW 159.8 billion the operating loss shrank to KRW 4.98 billion and net income attributable to owners turned positive at about KRW 1.6 billion.Rising ESS battery-foil and circuit-foil sales, improved Malaysia plant productivity, a copper-price lagging effect on raw materials, and better inventory valuation drove a large operating improvement. Still,EV battery-foil sales fell due to European logistics delays, so revenue dipped slightly versus the prior quarter. Versus the 11.6% operating margin once reached in 2022, the company appears in the early stage of margin normalization via utilization recovery and mix improvement."
+  "ko": "2025년은 손익 저점이었다. 연결 매출은 6,775억원으로 2024년 9,023억원에서 24.9% 줄었고, 영업손실은 1,452억원(영업이익률 -21.4%)으로 2024년 644억원 적자에서 확대됐으며 지배주주 순손실은 1,575억원을 기록했다. 분기별로도 2025년 1분기 영업손실 460억원, 2분기 311억원, 3분기 343억원, 4분기 338억원으로 네 분기 연속 적자가 이어졌고, 매출은 1,580억원→2,049억원→1,437억원→1,709억원으로 들쭉날쭉했다. 원인은 수요 부진과 가동률 하락이었다. 전방 산업 부진에 따른 가동률 하락과 판매량 감소가 이어진 가운데 공장 운영에 따른 고정비 부담이 겹쳤다는 것이 회사 설명이며, 2025년 상반기에는 주요 고객사의 재고 조정으로 1분기 전지박 판매량이 일시적으로 역대 최저치를 기록했다. 2026년 1분기에는 매출 1,598억원(전년 동기 1,580억원 대비 소폭 증가), 영업손실 50억원, 지배주주 순이익 16억원으로 손익이 급격히 좁혀졌다. 다만 이 개선의 성격은 순수 영업 개선만은 아니었는데, 회사는 구리 가격이 2025년 3분기 9,000달러대에서 2026년 1분기 1만3,000달러대까지 오르며 래깅 효과에 따른 손익 개선이 1분기에 크게 실현됐다고 설명했다. 이후 발표된 잠정치를 보면 2026년 2분기 매출은 1,942억원, 영업손실은 169억원으로 전년 동기 대비 매출은 5.2% 감소하고 영업손실은 45.7% 줄었다(회사 발표, 2026년 8월 6일). 현금흐름 측면에서는 2024년 영업활동현금흐름 870억원 유입이 2025년 111억원 유출로 돌아섰고, 2025년 말 자본총계 1조7,935억원·부채총계 4,152억원으로 부채비율은 23.2%에 머물렀다. 다만 자본 구성에서는 비지배지분이 크게 줄고 지배주주지분(1조6,560억원)이 늘어나는 변화가 나타났는데, 세부 원인은 확정 재무만으로는 확인되지 않는다.",
+  "en": "2025 marked the earnings trough. Consolidated revenue fell 24.9% to KRW 677.5bn from KRW 902.3bn in 2024, the operating loss widened to KRW 145.2bn (-21.4% margin) from KRW 64.4bn, and the net loss attributable to owners was KRW 157.5bn. Quarterly operating losses ran KRW 46.0bn, 31.1bn, 34.3bn and 33.8bn through 2025, while revenue swung from KRW 158.0bn to 204.9bn, 143.7bn and 170.9bn. The cause was weak demand and low utilization: the company cited falling utilization and shipment declines from soft downstream markets, compounded by fixed-cost burdens from running the plants, and customer inventory adjustments pushed Q1 2025 battery-foil volumes to a temporary record low. In Q1 2026 revenue was KRW 159.8bn — slightly above the KRW 158.0bn a year earlier — with the operating loss down to KRW 5.0bn and net income attributable to owners of KRW 1.6bn. That improvement was not purely operational: management said copper prices rose from around USD 9,000 in Q3 2025 to the USD 13,000 range in Q1 2026, delivering a large lagging-effect gain in the first quarter. Preliminary figures released later show Q2 2026 revenue of KRW 194.2bn and an operating loss of KRW 16.9bn, with revenue down 5.2% year on year and the loss narrowed 45.7% (company release, Aug 6, 2026). On cash flow, KRW 87.0bn of operating inflow in 2024 turned into a KRW 11.1bn outflow in 2025, while end-2025 equity of KRW 1,793.5bn against liabilities of KRW 415.2bn kept the debt-to-equity ratio at 23.2%. Notably, non-controlling interests shrank sharply while owners' equity rose to KRW 1,656.0bn; the detailed cause cannot be determined from the confirmed financials alone."
  },
  "industry": {
-  "ko": "동박 산업은 전기차 수요 정체(캐즘)로 2023~2025년 업황 부진과 가동률 저하를 겪었다. 이 과정에서 회사는 EV용 전지박 의존을 줄이고 ESS·하이브리드·회로박 등으로 포트폴리오를 다각화했다. 특히 AI 데이터센터 투자 확대로 고속·대용량 데이터 전송용 회로박 수요가 구조적으로 늘고 있다.최근 글로벌 PCB와 CCL 고객사들의 증설 사이클이 도래한 가운데, 일본 과점 경쟁사의 공급 부족 상황에서 롯데에너지머티리얼즈가 유력한 조달처로 급부상하고 있다. 전지박 측면에서는주고객사의 미국 에너지저장장치(BESS) 공장이 본격 가동되면서 전지박 공급량이 전년 대비 약 30% 증가할 것으로 예상된다.LFP 배터리 효율 향상을 위해 전지박이 기존 8마이크론 대신 6마이크론 제품으로 주로 공급될 것이라는 분석도 제기됐다. 유럽의 중국산 규제 강화는 중장기적으로 비중국 공급사인 동사에 우호적 환경으로 작용할 수 있다.",
-  "en": "The copper-foil industry endured weak conditions and low utilization in 2023–2025 amid an EV demand chasm. In response, the company reduced reliance on EV battery foil and diversified into ESS, hybrid and circuit foil. Notably, expanding AI data-center investment is structurally lifting demand for circuit foil used in high-speed, high-capacity data transmission.Amid an expansion cycle among global PCB and CCL customers and supply shortages at oligopolistic Japanese rivals, Lotte Energy Materials is emerging as a strong alternative source. On battery foil,as the main customer's U.S. BESS plant ramps up, battery-foil supply is expected to rise about 30% year over year. Analysts also note that to improve LFP battery efficiency, battery foil will mainly be supplied in 6-micron rather than the prior 8-micron grade. Europe's tightening curbs on Chinese products could form a favorable mid-to-long-term environment for the non-Chinese supplier."
+  "ko": "동박 산업의 사이클 위치는 2년여의 공급 과잉 국면에서 벗어나는 초기 단계로 묘사되고 있다. 국내 동박 양사의 공장 가동률이 회복세로 돌아선 배경은 ESS용 동박 수요의 급증이며, 기존 주력인 전기차용 전지박 수요는 여전히 부진하다는 것이 업계 시각이다. AI 데이터센터 건설이 집중된 북미에서 ESS 관심이 커지며 ESS용 동박 수요가 늘었고, SK넥실리스의 2026년 1분기 ESS용 동박 판매량은 전년 동기 대비 5배 가까이 증가했다. 업계에서는 북미 ESS 시장 규모가 2026년 100GWh에서 2030년 150GWh까지 성장할 것으로 보고 있다. 회로박 쪽은 성격이 다르다. 경영진은 AI용 회로박의 글로벌 공급 부족이 구조적으로 장기화될 전망이며, HVLP·극박 등 하이엔드 제품은 진입 장벽과 양산 난도가 높아 빅테크 승인을 받은 소수 업체 중심으로 제한적 공급이 이뤄지고 있다고 설명했다. 수요 구성 자체도 바뀌었는데, 회사는 회로박 시장이 IT용 일반 제품 중심에서 AI 데이터센터에 최적화된 고급 제품으로 급변했고 고성능 기술이 범용 PCB 영역까지 확산됐다고 밝혔다. 경쟁 포지션 측면에서 SKC는 동박 외 유리기판을, 솔루스첨단소재는 상대적으로 작은 생산능력을 가진 구도이며, 롯데에너지머티리얼즈는 국내 유일 회로박 라인을 보유한 점이 차별 요소로 꼽힌다. 다만 전기차 수요와 미국 정책 변수는 여전히 산업 전반의 변동성 요인으로 남아 있다.",
+  "en": "The copper foil cycle is being described as emerging from a two-year glut. Industry observers attribute the rebound in Korean copper foil makers' utilization to surging ESS foil demand, while demand for the traditional mainstay, EV battery foil, remains weak. Growing ESS interest in North America, where AI data-center construction is concentrated, lifted ESS foil demand, and SK Nexilis' Q1 2026 ESS foil volumes rose nearly fivefold year on year. The industry expects the North American ESS market to grow from about 100GWh in 2026 to 150GWh by 2030. Circuit foil is a different story. Management argues the global shortage of AI-grade circuit foil will be structurally prolonged, with high-end HVLP and ultra-thin products supplied only by a handful of players approved by big tech given high entry barriers and manufacturing difficulty. The demand mix has also shifted: the company said the circuit-foil market moved rapidly from general IT-grade products to high-end grades optimized for AI data centers, with high-tech specifications spreading into general-purpose PCB applications. Competitively, SKC is also pushing glass substrates while Solus Advanced Materials has smaller capacity; Lotte Energy Materials' differentiator is Korea's only circuit-foil line. Still, EV demand and US policy remain sector-wide sources of volatility."
  },
  "outlook": {
-  "ko": "회사는 2026년을 실적 개선의 원년으로 삼고 AI용 회로박에 역량을 집중하겠다고 밝혔다.회로박 생산량을 기존 연간 3,700톤 수준에서 2027년 1만6,000톤으로 늘릴 계획이며, 2028년 이후 3단계 추가 증설도 검토하고 있다. 이를 위해소재 산업 밸류 체인(Elecfoil-CCL-PCB-Module) 완성을 위해 국내 유일 회로박 생산기지인 익산공장에 약 500억원을 투자한다고 4월 28일 밝혔다. 제품 측면에서는기존 배터리 전지박 중심의 사업 구조에서 고부가가치 제품인 PCB·CCL용 회로박으로의 라인 전환을 본격화하고 있다. 차세대 동력으로는 전고체 배터리 소재가 거론되는데,500톤 수준의 고체 전해질 공장 건설을 미국 선두권 업체와 합작법인(JV) 형태로 진행 중이며 연내에 모든 절차가 완료될 것으로 보인다. 해외 증설은 속도 조절 국면으로,스페인 프로젝트는 인허가 및 유럽 고객사 증설 계획을 감안해 당초 2025년 말보다 지연된 2027년 6월 완공이 거론된다. 다만 회로박·전고체 등 신제품 일정은 고객사 평가·승인 통과 여부에 따라 변동될 수 있다.",
-  "en": "The company designated 2026 as the first year of earnings improvement and said it will concentrate on AI circuit foil.It plans to raise circuit-foil output from about 3,700 tons per year to 16,000 tons in 2027, and is reviewing a third phase of expansion after 2028. To that end,on April 28 it announced an investment of about KRW 50 billion in the Iksan plant—its only circuit-foil base—to complete the materials value chain (Elecfoil-CCL-PCB-Module). On products,it is accelerating a line conversion from a battery-foil-centric structure toward higher-value PCB/CCL circuit foil. As a next-generation driver, solid-state battery materials are cited:a roughly 500-ton solid-electrolyte plant is being pursued as a joint venture with a leading U.S. company, with all procedures expected to be completed within the year. Overseas expansion is in a pacing phase:the Spain project, considering permits and European customers' expansion plans, is now cited for completion in June 2027, later than the original end-2025 target. New-product timelines for circuit foil and solid-state remain subject to customer evaluation and approval."
+  "ko": "회사가 제시한 일정은 비교적 구체적이다. 2026년 7월부터 말레이시아 5공장을 본격 가동했고, 6공장도 당초 2027년 계획을 앞당겨 4분기 내 조기 가동해 말레이시아 전지박 공장을 풀 생산·풀 판매 체제로 전환할 예정이라고 밝혔다. 회로박은 익산공장 생산능력을 3,700톤에서 올해 6,700톤, 2027년 상반기 1만6,000톤까지 늘리는 계획이며, 2026년 5월 실적발표에서는 이 확장에 필요한 설비투자 규모를 490억원으로 제시했다. 추가 증설은 조건부다. 회사는 국내 여유 부지 또는 제3의 장소에서 추가 증설을 고려하고 있으나 고객과의 구속력 있는 계약과 경제성이 확보되는 시점에 추진하겠다는 입장을 밝혔다. 가동률은 개선 궤도에 있다. 회사는 2025년 전체 가동률이 40% 후반대였으나 2026년 2분기 77%까지 올라왔고 판매량도 전분기 대비 30%가량 늘었으며, 하반기에도 가동률 상승을 예상한다고 설명했다. 신사업에서는 LFP 양극재 2~3세대 제품 개발을 마쳐 10개 고객사 승인 평가가 진행 중이고 하반기 2개 업체 추가 승인을 예상하며, 익산공장 내 연 2만~3만톤 증설 부지도 확보했다고 밝혔다. 또 고체전해질 파일럿 공장의 스케일업 데이터를 기반으로 2028년 전고체배터리 1GWh 규모 상업화를 검토 중이라고 공개했다. 증권가 추정은 흑자 전환 시점을 두고 갈린다. 키움증권은 2026년 매출 9,033억원·영업손실 599억원 후 2027년 매출 1조3,340억원·영업이익 362억원으로 흑자 전환을 전망했고, 교보증권은 2027년 매출 1조3,205억원·영업이익 734억원을 추정했다.",
+  "en": "The company's roadmap is relatively specific. Malaysia Plant 5 entered full operation in July 2026, and Plant 6 will be brought forward from 2027 to within Q4, shifting the Malaysian battery-foil complex to full production and full sales, according to the company. For circuit foil, Iksan capacity is to rise from 3,700 tons to 6,700 tons this year and 16,000 tons in H1 2027, and at the May 2026 results briefing the required capex was put at KRW 49.0bn. Further expansion is conditional: the company said it is weighing additional lines on spare domestic land or a third site, but will proceed only when binding customer contracts and economics are secured. Utilization is on an improving path: management said group-wide utilization was in the high 40% range in 2025, reached 77% in Q2 2026 with volumes up about 30% quarter on quarter, and should keep rising in the second half. In new businesses, second- and third-generation LFP cathode development is complete with qualification underway at ten customers, two more approvals are expected in the second half, and land for 20,000-30,000 tons of annual capacity has been secured at Iksan. It also disclosed that scale-up data from its solid-electrolyte pilot plant underpins a review of 1GWh all-solid-state battery commercialization in 2028. Brokerage estimates differ on the timing of a return to profit: Kiwoom Securities forecasts 2026 revenue of KRW 903.3bn with a KRW 59.9bn operating loss, then a swing to a KRW 36.2bn operating profit on KRW 1,334.0bn of revenue in 2027, while Kyobo Securities estimates 2027 revenue of KRW 1,320.5bn and operating profit of KRW 73.4bn."
  },
  "valuation_comment": {
-  "ko": "최근 12개월 합산 기준 지배주주 순이익이 적자라 이익 기반 배수는 산출되지 않으며, 자기자본이익률(ROE)도 마이너스 구간에 있다. 화면 카드 기준 ROE는 -6.3%, 주당순이익(EPS)은 -2,071원, 주당순자산(BPS)은 32,574원으로 표시된다. 주가는 순자산 대비 프리미엄이 붙은 구간에서 거래되는데, 이는 적자 실적보다는 회로박·전고체 등 미래 성장 기대가 선반영된 결과로 해석된다. 회사 실적은 2025년의 깊은 적자에서 2026년 1분기 영업적자 축소와 순이익 흑자 전환으로 방향을 틀었으나, 이익 회복의 지속성은 아직 분기 수준에서 확인되는 단계다. 배당은 현재 지급되지 않아 배당수익률 측면의 매력은 제한적이다. 따라서 현재 밸류에이션은 확정된 이익보다 향후 가동률 회복과 고부가 제품 비중 확대 속도에 크게 의존하는 구조로 볼 수 있다.",
-  "en": "On a trailing-12-month basis, net income attributable to owners is negative, so earnings-based multiples cannot be derived and return on equity (ROE) sits in negative territory. As shown on the data card, ROE is -6.3%, EPS is -KRW 2,071, and BPS is KRW 32,574. The stock trades at a premium to net assets, which appears to reflect pre-pricing of future growth in circuit foil and solid-state materials rather than current loss-making results. Performance has turned direction from deep 2025 losses toward a narrower Q1 2026 operating loss and a swing to net profit, but the durability of the earnings recovery is only being confirmed at the quarterly level so far. No dividend is currently paid, limiting appeal on a dividend-yield basis. The current valuation therefore depends heavily on the pace of utilization recovery and the rising share of high-value products rather than on confirmed earnings."
+  "ko": "이익 기반 지표는 성립하지 않는다. 최근 4개 분기 합산 지배주주 손익이 마이너스여서 EPS가 -2,071원으로 산출되고, 이에 따라 주가수익비율(PER)은 계산되지 않는다. 결과적으로 남는 잣대는 자산 기준인데, 주당순자산(BPS) 32,574원과 비교하면 현재 주가는 장부상 순자산과 크게 벌어지지 않은 영역에서 형성돼 있다. 배당은 없다 — 확정 데이터상 주당현금배당금이 0원이므로 배당수익률 관점의 비교는 불가능하며, 이는 배당을 지급하는 소재·화학 업종 평균과 대비되는 부분이다. 주가 자체의 변동 폭은 컸는데, 2025년 11월 3분기 실적 발표 직후 3거래일 동안 주가가 63.1% 오르며 시가총액이 2조1,000억원을 회복한 사례가 있었다. 시장의 시선도 갈린다 — SK증권은 우량한 재무구조를 가진 기판 소재 국산화 기업으로 재평가될 시점이라고 평가한 반면, 동박·전지박·회로박 사업 모두 고객사 투자 타이밍과 글로벌 경기에 민감하며 주가에 기대가 이미 상당 부분 반영됐다는 평가도 나온다. 즉 현 주가 수준은 확정 실적보다 회로박 전환의 실현 여부를 반영하는 성격이 강하며, 판단 근거는 향후 분기의 가동률·손익 확인에 있다.",
+  "en": "Earnings-based metrics do not apply. Because the last four quarters of net income attributable to owners were negative, EPS works out to minus KRW 2,071, leaving the price-to-earnings ratio incalculable. That leaves asset-based comparison: against book value per share of KRW 32,574, the shares are trading in a zone not far removed from stated net assets. There is no dividend — confirmed data show a cash dividend per share of zero, so a yield comparison is impossible, in contrast to the dividend-paying norm across materials and chemicals peers. Share price swings have been wide: right after the Q3 2025 results in November, the stock rose 63.1% over three sessions and market capitalization recovered to KRW 2.1trn. Market opinion is split — SK Securities said it is time to re-rate the company as a financially sound domestic substrate-materials supplier, whereas others note that copper foil, battery foil and circuit foil are all sensitive to customer investment timing and the global cycle, with much expectation already priced in. In short, the current level reflects the execution of the circuit-foil pivot more than confirmed results, and the evidence will come from quarterly utilization and profit data."
  },
  "bull": [
   {
    "title": {
-    "ko": "AI 회로박 고마진 성장",
-    "en": "High-margin AI circuit-foil growth"
+    "ko": "AI 회로박 공급 부족과 4배 증설",
+    "en": "AI circuit-foil shortage and fourfold expansion"
    },
    "body": {
-    "ko": "데이터센터용 회로박은 가공마진이 전기차용 전지박보다 현저히 높은 고부가 제품으로 평가된다. 회사는 회로박 생산능력을 2026년 6,700톤, 2027년 1만6,000톤으로 확대할 계획이다. 공급업체 수가 적고 AI 수요가 급증하는 구조라, 가이던스 수준의 판매가 실현되면 이익 회복을 빠르게 견인할 수 있다는 분석이 나온다.",
-    "en": "Data-center circuit foil is regarded as a high-value product with processing margins far above EV battery foil. The company plans to expand circuit-foil capacity to 6,700 tons in 2026 and 16,000 tons in 2027. With few suppliers and surging AI demand, analysts argue that delivering guidance-level sales could rapidly drive an earnings recovery."
+    "ko": "경영진은 AI용 회로박의 공급 부족이 구조적으로 장기화될 것으로 보고, 하이엔드 제품은 빅테크 승인을 받은 소수 업체 중심으로 제한적 공급이 이뤄진다고 설명했다. 회사는 국내 유일 회로박 공급 업체로서 차세대 AI 가속기 제품 등에 빅테크 승인을 획득했다고 밝혔다. 이에 맞춰 익산공장 회로박 생산능력을 3,700톤에서 올해 6,700톤, 2027년 상반기 1만6,000톤으로 확대하는 계획을 제시했다. 회로박은 마진 구조가 전지박과 다르다는 평가가 많아, 믹스 개선 여지가 영업이익률 개선의 핵심 변수로 지목된다.",
+    "en": "Management sees the AI circuit-foil shortage as structurally prolonged, with high-end grades supplied by only a few big-tech-approved players. The company says that as Korea's only circuit-foil supplier it has won big-tech approval for next-generation AI accelerator products. Accordingly, Iksan circuit-foil capacity is set to grow from 3,700 tons to 6,700 tons this year and 16,000 tons in H1 2027. Circuit foil is widely viewed as carrying a different margin structure than battery foil, making mix improvement the key lever for operating margin."
    }
   },
   {
    "title": {
-    "ko": "전지박 수요 회복과 ESS 다변화",
-    "en": "Battery-foil recovery and ESS diversification"
+    "ko": "가동률 회복과 적자 축소 궤적",
+    "en": "Utilization recovery and narrowing losses"
    },
    "body": {
-    "ko": "주고객사의 미국 BESS 공장 가동으로 전지박 공급량이 전년 대비 약 30% 증가할 것으로 예상된다. ESS·하이브리드·BBU 등으로 수요처가 다변화되며 전기차 한 부문에 대한 의존도가 낮아지고 있다. LFP 전환과 박막화(6마이크론) 흐름은 고사양 전지박 수요를 뒷받침한다.",
-    "en": "With the main customer's U.S. BESS plant ramping, battery-foil supply is seen rising about 30% year over year. Demand is diversifying into ESS, hybrid and BBU applications, reducing reliance on EVs alone. The LFP shift and thinner (6-micron) trend support demand for higher-spec battery foil."
+    "ko": "확정 실적상 2025년 네 분기 영업손실은 460억·311억·343억·338억원이었으나 2026년 1분기 영업손실은 50억원으로 줄었고 지배주주 순이익도 16억원 흑자를 기록했다. 회사는 2025년 40% 후반대였던 가동률이 2026년 2분기 77%까지 상승했고 판매량은 전분기 대비 30%가량 증가했다고 설명했다. 생산된 제품이 재고로 쌓이지 않고 곧바로 고객사 공장으로 향하고 있다는 설명도 함께 제시됐다. 고정비 구조상 가동률 상승은 손익 레버리지가 큰 항목이다.",
+    "en": "Confirmed quarterly operating losses of KRW 46.0bn, 31.1bn, 34.3bn and 33.8bn through 2025 shrank to KRW 5.0bn in Q1 2026, with net income attributable to owners turning positive at KRW 1.6bn. The company said utilization rose from the high 40% range in 2025 to 77% in Q2 2026, with volumes up about 30% quarter on quarter. It also noted that output is shipping straight to customer plants rather than piling up as inventory. Given the fixed-cost base, utilization is a high-leverage variable for profitability."
    }
   },
   {
    "title": {
-    "ko": "양호한 재무구조와 신사업 옵션",
-    "en": "Solid balance sheet and new-business optionality"
+    "ko": "낮은 레버리지와 신사업 옵션",
+    "en": "Low leverage and new-business options"
    },
    "body": {
-    "ko": "2025년 말 부채비율이 20%대로 낮아 적자 국면에서도 재무 안정성을 유지하고 있다. 전고체 배터리용 황화물계 고체전해질을 미국 선두권 업체와 합작 형태로 추진하며 중장기 성장 옵션을 확보 중이다. 두산 전자BG와의 협력 등 밸류체인 연계도 강화되고 있다.",
-    "en": "A low debt ratio in the 20% range at end-2025 preserves financial stability even amid losses. It is pursuing sulfide solid electrolyte for solid-state batteries via a JV with a leading U.S. company, securing a mid-to-long-term growth option. Value-chain ties, such as cooperation with Doosan Electro-Materials, are also strengthening."
+    "ko": "2025년 말 부채총계 4,152억원, 자본총계 1조7,935억원으로 부채비율은 23.2%에 그쳐 적자 국면에서도 재무 완충이 유지됐다. 2025년 4분기 기준 낮은 부채비율은 전략 전환을 뒷받침할 재무 안정성 지표로 평가된다는 시각도 제시됐다. LFP 양극재는 10개 고객사 승인 평가가 진행 중이며 익산공장 내 증설 부지도 확보한 상태다. 고체전해질은 2028년 전고체배터리 1GWh 상업화 검토 단계로, 중장기 선택지로 남아 있다.",
+    "en": "End-2025 liabilities of KRW 415.2bn against equity of KRW 1,793.5bn left a 23.2% debt-to-equity ratio, preserving a financial cushion through the loss phase. Commentators have cited that low leverage as evidence of the financial stability needed to support the strategic pivot. LFP cathode material is in qualification at ten customers, with expansion land already secured at Iksan. Solid electrolyte is at the stage of reviewing 1GWh all-solid-state commercialization in 2028, leaving a longer-term option open."
    }
   }
  ],
  "bear": [
   {
    "title": {
-    "ko": "여전한 적자와 회복 지속성 불확실",
-    "en": "Persistent losses and uncertain recovery durability"
+    "ko": "흑자 전환 시점이 반복해서 밀려온 이력",
+    "en": "Repeatedly pushed-back breakeven timing"
    },
    "body": {
-    "ko": "2025년 연간 영업·순이익 모두 대규모 적자를 기록했고, 2025년 내내 분기 적자가 이어졌다. 2026년 1분기 영업적자 축소와 순이익 흑자 전환은 고무적이나 한 분기 흐름에 불과하다. 구리가격 레깅 효과·재고평가 환입 등 일부 일회성 요인이 1분기 개선에 기여한 점도 감안해야 한다.",
-    "en": "In 2025 both operating and net income posted large losses, and quarterly deficits persisted throughout the year. The Q1 2026 narrower operating loss and swing to net profit are encouraging but represent only one quarter. Some one-off factors such as the copper-price lagging effect and inventory-valuation reversals also contributed to the Q1 improvement."
+    "ko": "2025년 1분기 실적 컨퍼런스콜에서 회사는 3분기부터 판매량이 분기 1만톤 수준으로 회복되고 가동률도 80% 이상으로 올라 흑자 전환이 기대된다고 밝혔다. 그러나 확정 실적을 보면 2025년 3분기 영업손실 343억원, 4분기 338억원으로 적자가 이어졌다. 증권가에서도 미국 전기차 수요 둔화로 전망치 하향이 불가피하며 흑자 전환은 2027년으로 본다는 분석이 제시됐다. 가이던스와 실제 결과 사이의 간극이 반복돼 온 만큼, 이번 하반기 계획도 결과로 확인할 필요가 있다.",
+    "en": "On the Q1 2025 call, management said quarterly volumes would recover to about 10,000 tons and utilization exceed 80% from Q3, enabling a return to profit. Confirmed results, however, show operating losses of KRW 34.3bn in Q3 2025 and KRW 33.8bn in Q4. Analysts have also argued that slowing US EV demand made forecast cuts unavoidable, putting breakeven in 2027. With a repeated gap between guidance and outcome, the current second-half plan needs to be verified by results."
    }
   },
   {
    "title": {
-    "ko": "전방 수요·고객사 투자 타이밍 의존",
-    "en": "Dependence on downstream demand and customer timing"
+    "ko": "일회성 요인에 흔들리는 분기 손익",
+    "en": "Quarterly profits swayed by one-offs"
    },
    "body": {
-    "ko": "전기차 캐즘이 장기화되며 전지박 가동률 회복이 지연돼 왔다. 매출이 소수 핵심 고객사의 증설·가동 일정에 좌우돼 변동성이 크다. 유럽 물류 지연 등 외부 변수가 분기 실적에 직접 영향을 미친 사례가 확인됐다.",
-    "en": "A prolonged EV chasm has delayed battery-foil utilization recovery. Revenue is swayed by a few key customers' expansion and ramp schedules, creating high volatility. External factors such as European logistics delays have been seen directly affecting quarterly results."
+    "ko": "2026년 1분기 영업손실 50억원은 확정 실적상 뚜렷한 개선이지만, 회사는 구리 가격 급등에 따른 래깅 효과가 1분기에 크게 실현됐고 이런 매크로 호재는 2분기부터 다소 희석될 것이라고 설명했다. 실제로 2026년 2분기에는 가동률 상승에도 1분기에 반영됐던 재고자산 평가 환입 등 일회성 이익이 제거되며 적자 폭이 확대됐다는 분석이 제시됐다. 구리 가격과 환율 방향이 바뀌면 손익도 같은 폭으로 되돌아갈 수 있다. 따라서 분기 수치의 추세 해석에는 일회성 항목 분리가 필요하다.",
+    "en": "The KRW 5.0bn operating loss in Q1 2026 was a clear improvement in confirmed terms, but the company said the copper-price lagging effect delivered a large first-quarter gain and that this macro tailwind would fade somewhat from Q2. Indeed, analysts noted that in Q2 2026 the loss widened despite higher utilization as one-off gains such as inventory valuation reversals booked in Q1 disappeared. A reversal in copper prices or the won could unwind the benefit just as quickly. Trend reading of quarterly figures therefore requires stripping out one-offs."
    }
   },
   {
    "title": {
-    "ko": "기대 선반영과 신제품 검증 리스크",
-    "en": "Pre-priced expectations and product-validation risk"
+    "ko": "신규 공장 초기 비용과 감가상각 부담",
+    "en": "Start-up costs and depreciation from new plants"
    },
    "body": {
-    "ko": "주가는 순자산 대비 프리미엄 구간에서 거래되며 회로박·전고체 기대가 상당 부분 반영됐다는 평가가 있다. HVLP3·4급 회로박과 전고체 소재는 고객사 평가·승인 통과 여부에 따라 일정이 달라질 수 있다. 증설 자금 집행과 양산 안정화 과정에서 비용 부담이 선행될 수 있다.",
-    "en": "The stock trades at a premium to net assets, with views that circuit-foil and solid-state expectations are substantially pre-priced. Timelines for HVLP grade-3/4 circuit foil and solid-state materials hinge on passing customer evaluation and approval. Costs from capex execution and mass-production stabilization may come ahead of returns."
+    "ko": "말레이시아 5공장은 2026년 7월부터 본격 가동됐고 6공장은 4분기 내 조기 가동이 예고됐다. 가동 확대는 매출에 긍정적이지만 비용도 함께 발생하는데, 증권가에서는 3분기에 북미 ESS 전지박 출하 확대로 매출은 늘어도 말레이시아 5공장 가동 초기 비용으로 적자 폭이 확대될 수 있다는 전망이 나왔다. 앞서 익산공장 캐파 이관과 말레이시아 5·6공장 양산 본격화에 따른 감가상각 부담을 이유로 2026년 추정치를 하향한 분석도 있었다. 증설이 손익에 기여하기까지의 시차가 관건이다.",
+    "en": "Malaysia Plant 5 went into full operation in July 2026 and Plant 6 is flagged for an early start within Q4. Higher output helps revenue but also brings costs: analysts expect that in Q3 revenue should rise on expanding North American ESS battery-foil shipments, yet the loss may widen on Plant 5 start-up costs. Earlier, one house cut its 2026 estimates citing depreciation from the Iksan capacity transfer and the ramp of Malaysia Plants 5 and 6. The lag before new capacity contributes to profit is the crux."
    }
   }
  ],
  "risks": [
   {
    "cat": {
-    "ko": "원자재·환율 변동",
-    "en": "Raw-material and FX volatility"
+    "ko": "전기차 수요·정책 변수",
+    "en": "EV demand and policy variables"
    },
    "body": {
-    "ko": "동박 원가는 구리(LME) 가격에 크게 노출돼 있어 가격 등락이 재고평가손익과 마진에 직접 영향을 준다. 구리가격 상승은 래깅 효과로 단기 이익을 돕기도 하지만, 하락 시 평가손실로 이어질 수 있다. 수출 비중이 높아 환율 변동도 손익 변수로 작용한다.",
-    "en": "Copper-foil costs are heavily exposed to LME copper prices, so swings directly affect inventory valuation and margins. Rising copper can aid short-term profit via a lagging effect, but declines can cause valuation losses. With a high export share, FX moves are also a P&L variable."
+    "ko": "전지박의 전통 전방시장인 전기차 수요는 여전히 회복이 더디다. 전지박 전방 산업인 전기차 시장의 침체가 가동률 회복을 막아온 주된 배경으로 지적됐다. 2025년 4분기에는 북미 보조금 폐지 영향으로 말레이시아 공장 가동률이 축소되며 수익성 개선이 제한적이었다는 분석도 제시됐다. 미국 관세·보조금 정책 변화는 ESS와 전기차 모두의 물량 전망을 동시에 흔들 수 있는 변수다.",
+    "en": "EV demand, the traditional end market for battery foil, is still slow to recover. The EV downturn has been cited as the main reason utilization stayed depressed. One analysis noted that in Q4 2025 the removal of North American subsidies curtailed Malaysian plant utilization, limiting margin improvement. Shifts in US tariff and subsidy policy can move volume assumptions for both ESS and EVs at once."
    }
   },
   {
    "cat": {
-    "ko": "증설·투자 집행 부담",
-    "en": "Expansion and capex burden"
+    "ko": "증설 집행과 자금 소요",
+    "en": "Expansion execution and funding needs"
    },
    "body": {
-    "ko": "익산 회로박 증설(약 500억원), 말레이시아·스페인 거점 투자 등 자본적 지출이 예정돼 있다. 수요 둔화로 해외 증설 일정이 이미 수차례 연기된 전례가 있다. 가동률이 충분히 회복되지 않으면 고정비 부담과 감가상각이 수익성을 압박할 수 있다.",
-    "en": "Capex is planned, including the Iksan circuit-foil expansion (about KRW 50 billion) and Malaysia/Spain hubs. Overseas expansion has already been delayed several times amid weaker demand. If utilization fails to recover sufficiently, fixed costs and depreciation could pressure profitability."
+    "ko": "회로박 확장은 자본 투입을 전제로 한다. 2027년 1만6,000톤 계획의 설비투자 규모는 490억원으로 제시됐으나, 그 이후 추가 증설은 동박 증설을 병행해야 해 투자 비용이 4,000억~6,000억원 수준으로 예상된다며 면밀히 검토 중이라는 입장이 밝혀졌다. 2025년 영업활동현금흐름이 111억원 유출이었던 점을 감안하면, 대규모 추가 투자 시 조달 방식과 시점이 재무 구조에 미치는 영향은 별도 확인이 필요하다.",
+    "en": "Circuit-foil expansion presumes capital outlays. Capex for the 16,000-ton plan in 2027 was put at KRW 49.0bn, but management said any subsequent expansion would require parallel copper-foil capacity at an estimated KRW 400-600bn and is under careful review. Given that 2025 operating cash flow was a KRW 11.1bn outflow, the funding method and timing of any large additional investment warrant separate scrutiny."
    }
   },
   {
    "cat": {
-    "ko": "경쟁·고객 집중",
-    "en": "Competition and customer concentration"
+    "ko": "고객 승인·수율과 경쟁 심화",
+    "en": "Customer qualification, yields and competition"
    },
    "body": {
-    "ko": "회로박은 일본 과점 업체와의 경쟁 및 기술 검증 과정을 거쳐야 하며, 레퍼런스 확보 여부가 관건이다. 전지박은 소수 핵심 고객사 의존도가 높아 고객사 전략 변화에 민감하다. 전고체 등 신사업은 다수 경쟁사가 동시에 뛰어든 초기 시장으로 불확실성이 크다.",
-    "en": "Circuit foil must navigate competition with oligopolistic Japanese players and technical validation, with reference wins being decisive. Battery foil relies heavily on a few key customers, making it sensitive to customer strategy shifts. New businesses such as solid-state are early-stage markets with many simultaneous entrants and high uncertainty."
+    "ko": "하이엔드 회로박은 고객 승인과 양산 수율이 매출 인식 속도를 결정한다. 증권가는 수율과 양산성을 감안하면 2026년 3분기까지는 회로박 판매량 증가가 제한적일 것으로 봤다. 동시에 SK넥실리스의 2026년 1분기 평균 가동률이 69.6%로 전년 동기 대비 10%포인트 이상 오르는 등 경쟁사도 회복 국면에 진입했다. 비중국 공급 수요가 늘어난 국면에서 경쟁사와 일본 업체의 증설 대응 속도가 가격·마진에 영향을 줄 수 있다.",
+    "en": "For high-end circuit foil, customer qualification and mass-production yields dictate how fast revenue is recognized. Analysts expect circuit-foil volume growth to stay limited through Q3 2026 given yield and manufacturability considerations. Meanwhile, SK Nexilis' Q1 2026 average utilization rose more than 10 percentage points year on year to 69.6%, showing peers are also recovering. As non-China supply demand grows, how quickly rivals and Japanese incumbents add capacity could affect pricing and margins."
    }
   }
  ],
  "checkpoints": [
   {
    "when": {
-    "ko": "2026년 3분기",
-    "en": "Q3 2026"
+    "ko": "2026년 11월 초 (3분기 실적 발표)",
+    "en": "Early November 2026 (Q3 results)"
    },
    "what": {
-    "ko": "고사양 HVLP3·4용 회로박 공급 개시 예정 시점. 차세대 AI 가속기향 양산이 실제로 시작되는지, 판매량이 연 5,000톤 가이던스 경로에 부합하는지 확인이 필요하다.",
-    "en": "Scheduled start of HVLP grade-3/4 circuit-foil supply. Watch whether mass production for next-generation AI accelerators actually begins and whether volumes track the ~5,000-ton annual guidance."
+    "ko": "증권가는 3분기에 북미 ESS 전지박 출하 확대와 북미 완성차 대상 출하 시작으로 매출은 늘지만 말레이시아 5공장 초기 비용으로 적자 폭이 확대될 수 있다고 봤다. 매출 증가가 초기 비용을 얼마나 상쇄하는지, 가동률이 2분기 77%에서 더 오르는지가 핵심 확인 사항이다.",
+    "en": "Analysts see Q3 revenue rising on expanded North American ESS battery-foil shipments and the start of shipments to a North American automaker, but the loss possibly widening on Malaysia Plant 5 start-up costs. The key checks are how much revenue growth offsets start-up costs and whether utilization rises above the 77% seen in Q2."
    }
   },
   {
    "when": {
-    "ko": "2026년 8월 초(2분기 실적)",
-    "en": "Early August 2026 (Q2 results)"
+    "ko": "2026년 4분기",
+    "en": "Q4 2026"
    },
    "what": {
-    "ko": "1분기에 나타난 적자 축소·흑자 전환 흐름이 2분기에도 이어지는지가 핵심. 회로박·ESS 전지박 매출 기여도와 마진 추이를 점검해야 한다.",
-    "en": "Key is whether the Q1 narrower-loss and profit-swing trend continues into Q2. Examine circuit-foil and ESS battery-foil revenue contribution and margin trends."
+    "ko": "회사는 말레이시아 6공장을 원래 2027년 계획에서 앞당겨 4분기 내 조기 가동해 풀 생산·풀 판매 체제로 전환할 예정이라고 밝혔다. 조기 가동 실행 여부와 그에 따른 감가상각·고정비 반영 폭이 손익 방향을 가른다.",
+    "en": "The company said Malaysia Plant 6 will start within Q4, ahead of the original 2027 schedule, shifting the complex to full production and full sales. Whether that early start happens, and how much depreciation and fixed cost it brings, will shape the profit trajectory."
    }
   },
   {
    "when": {
-    "ko": "2026년 연내",
-    "en": "Within 2026"
+    "ko": "2026년 하반기 중",
+    "en": "During H2 2026"
    },
    "what": {
-    "ko": "전고체용 고체전해질 미국 합작법인(JV) 절차 완료 여부. JV 구조와 생산능력(약 500톤 규모) 확정은 중장기 성장 옵션의 가시성을 좌우한다.",
-    "en": "Whether the U.S. JV for solid electrolyte is finalized. Confirming the JV structure and capacity (around 500 tons) will shape the visibility of the mid-to-long-term growth option."
+    "ko": "올해 하반기부터 HVLP 3급 회로박 공급이 시작될 것으로 예상된다는 분석이 제시됐다. 고사양 등급의 실제 공급 개시와 회로박 매출 비중(2026년 1분기 15% 내외) 변화가 믹스 개선의 직접 증거가 된다.",
+    "en": "Analysts expect HVLP grade-3 circuit-foil supply to begin in the second half of this year. Actual commencement of higher-grade supply and any change in the circuit-foil revenue share (about 15% in Q1 2026) would be direct evidence of mix improvement."
    }
   },
   {
    "when": {
     "ko": "2027년 상반기",
-    "en": "First half of 2027"
+    "en": "H1 2027"
    },
    "what": {
-    "ko": "회로박 생산능력 1만6,000톤 확대 진척과 스페인 공장 완공(2027년 6월 거론) 일정. 증설 자금 집행과 가동률 회복 속도가 수익성에 직접 영향을 준다.",
-    "en": "Progress toward 16,000-ton circuit-foil capacity and the Spain plant completion (cited for June 2027). Capex execution and utilization recovery pace will directly affect profitability."
+    "ko": "익산공장 회로박 생산능력을 1만6,000톤까지 확대하는 목표 시점이다. 추가 증설은 고객과의 구속력 있는 계약과 경제성 확보 시점에 추진한다는 방침이므로, 공시로 확인되는 계약·투자 결정 여부가 관전 포인트다.",
+    "en": "This is the target date for lifting Iksan circuit-foil capacity to 16,000 tons. Since further expansion is conditioned on binding customer contracts and secured economics, any contract or investment decision appearing in regulatory filings is the point to watch."
+   }
+  },
+  {
+   "when": {
+    "ko": "2026년 하반기~2028년",
+    "en": "H2 2026 to 2028"
+   },
+   "what": {
+    "ko": "회사는 LFP 양극재에서 하반기 2개 업체의 추가 승인을 예상하며 고객사 일정에 맞춰 양산라인을 가동할 예정이라고 밝혔다. 고체전해질은 2028년 전고체배터리 1GWh 상업화 검토 단계로, 실제 투자 결정 공시가 신사업 진척의 분기점이 된다.",
+    "en": "The company said it expects two additional LFP cathode approvals in the second half and will run mass-production lines in line with customer schedules. For solid electrolyte, 1GWh all-solid-state commercialization in 2028 is under review, so an actual investment decision filing would mark the turning point for the new business."
    }
   }
  ],
  "verdict": {
   "body": {
-   "ko": "롯데에너지머티리얼즈는 전기차 캐즘 속에서 2025년 대규모 적자를 냈으나, 2026년 1분기 영업적자 축소와 순이익 흑자 전환으로 회복 방향을 잡았다. 핵심 관전 포인트는 AI 데이터센터용 회로박의 고마진 성장과 ESS 중심 전지박 수요 회복이 실적으로 얼마나 빠르게 연결되는지다. 회로박 증설 로드맵, 전고체 합작법인, 두산과의 협력 등은 중장기 성장 옵션을 제공한다. 다만 1분기 개선에는 일부 일회성 요인이 섞여 있어 회복의 지속성은 추가 분기로 확인이 필요하다. 주가는 순자산 대비 프리미엄 구간에서 거래되며 미래 성장 기대가 상당 부분 선반영돼 있다. 낮은 부채비율은 완충 역할을 하지만, 원자재·환율·고객사 투자 타이밍 변동성은 상존한다. 본 자료는 정보 제공용이며 투자 권유가 아니다.",
-   "en": "Lotte Energy Materials posted large losses in 2025 amid the EV chasm but set a recovery direction in Q1 2026 with a narrower operating loss and a swing to net profit. The key focus is how quickly high-margin AI data-center circuit foil and an ESS-led battery-foil recovery translate into earnings. The circuit-foil expansion roadmap, the solid-state JV, and cooperation with Doosan provide mid-to-long-term growth options. However, the Q1 improvement included some one-off factors, so recovery durability needs confirmation over further quarters. The stock trades at a premium to net assets, with future growth expectations substantially pre-priced. A low debt ratio offers a cushion, but volatility in raw materials, FX and customer investment timing persists. This material is for information only and is not investment advice."
+   "ko": "롯데에너지머티리얼즈의 확정 실적은 2025년이 저점이었음을 보여준다 — 매출 6,775억원, 영업손실 1,452억원, 지배주주 순손실 1,575억원에 네 분기 연속 적자였다. 2026년 1분기에는 매출 1,598억원에 영업손실 50억원, 지배주주 순이익 16억원으로 손익이 급격히 좁혀졌으나, 회사 스스로 구리 가격 래깅 등 일회성 기여를 언급했고 이후 발표된 2분기 잠정치에서는 매출 1,942억원·영업손실 169억원으로 적자가 다시 늘었다. 사업 축은 명확히 이동 중이다 — 익산공장 회로박 생산능력을 3,700톤에서 올해 6,700톤, 2027년 상반기 1만6,000톤으로 확대하고, 말레이시아 전지박 5공장은 7월 본격 가동, 6공장은 4분기 조기 가동을 예고했다. 강세 논리는 AI 회로박의 공급 부족과 가동률 회복(2025년 40% 후반대→2026년 2분기 77%)에, 약세 논리는 흑자 전환 시점의 반복적 지연, 신규 공장 초기 비용과 감가상각, 일회성 요인에 흔들리는 분기 손익에 있다. 재무 측면에서는 2025년 말 부채비율 23.2%로 완충이 남아 있으나 영업활동현금흐름이 유출로 전환했고 배당은 지급되지 않았다. 결국 회로박 매출 비중과 가동률, 그리고 신규 공장의 비용 흡수 속도가 다음 분기들의 숫자로 확인돼야 하는 구간이며, 본 자료는 정보 제공 목적으로 투자 판단은 독자에게 있다.",
+   "en": "Lotte Energy Materials' confirmed numbers show 2025 as the trough — revenue of KRW 677.5bn, an operating loss of KRW 145.2bn, a net loss to owners of KRW 157.5bn, and four consecutive loss-making quarters. Q1 2026 narrowed sharply to a KRW 5.0bn operating loss and KRW 1.6bn of net income to owners on KRW 159.8bn of revenue, but management itself cited one-off help from copper-price lagging, and the subsequently released Q2 preliminary figures showed the loss widening again to KRW 16.9bn on KRW 194.2bn of revenue. The business axis is clearly shifting — Iksan circuit-foil capacity is to rise from 3,700 tons to 6,700 tons this year and 16,000 tons in H1 2027, while Malaysia battery-foil Plant 5 began full operation in July and Plant 6 is flagged for an early Q4 start. The bull case rests on the AI circuit-foil shortage and utilization recovery (high 40% range in 2025 to 77% in Q2 2026); the bear case on repeatedly delayed breakeven, start-up costs and depreciation from new plants, and quarterly profits swayed by one-offs. Financially, a 23.2% debt-to-equity ratio at end-2025 leaves a cushion, but operating cash flow turned to outflow and no dividend was paid. Ultimately the circuit-foil revenue share, utilization, and how quickly new plants absorb costs must show up in coming quarterly figures; this report is for information only, and investment decisions rest with the reader."
   }
  },
  "sources": [
-  "https://m.thinkpool.com/compDiscuss/cont/1025662",
-  "https://www.batterynews.co.kr/news/articleView.html?idxno=687",
-  "https://www.ajunews.com/view/20260511093147679",
-  "https://news.nate.com/view/20260424n07054",
-  "https://www.newspim.com/news/view/20260422000101",
-  "https://m.thinkpool.com/compDiscuss/cont/1026740",
-  "https://www.inews24.com/view/1750632",
-  "https://www.biztribune.co.kr/news/articleView.html?idxno=352817",
-  "https://news.nate.com/view/20260422n05369",
+  "https://www.newswire.co.kr/newsRead.php?no=1040070&sourceType=rss",
+  "https://www.ajunews.com/view/20260806103553562",
+  "https://www.newspim.com/news/view/20260806000445",
+  "https://www.m-i.kr/news/articleView.html?idxno=1399799",
+  "https://www.todayenergy.kr/news/articleView.html?idxno=301381",
+  "https://www.news1.kr/industry/general-industry/6250774",
+  "https://zdnet.co.kr/view/?no=20260806101927",
   "https://www.investing.com/equities/iljin-materials-earnings",
-  "https://www.newswire.co.kr/newsRead.php?no=1034136&sourceType=rss",
+  "https://biz.heraldcorp.com/article/10832669",
   "https://www.eugenefn.com/common/files/amail//20260204_020150_bhh1026_1281.pdf",
-  "https://www.lottechem.com/ko/media/news/717/view.do",
-  "https://zdnet.co.kr/view/?no=20240807134240",
-  "https://news.dealsitetv.com/articles/123023",
-  "https://www.bloter.net/news/articleView.html?idxno=620890",
-  "https://www.businesspost.co.kr/BP?command=article_view&num=323572",
-  "https://m.ddaily.co.kr/page/view/2023031418215085954"
+  "https://zdnet.co.kr/view/?no=20260511120804",
+  "https://zdnet.co.kr/view/?no=20260806112511",
+  "https://www.batterynews.co.kr/news/articleView.html?idxno=687",
+  "https://www.finance-scope.com/article/view/scp202410140011",
+  "https://news.nate.com/view/20260424n07054",
+  "https://www.economy6.com/2026/01/LOTTEENERGYMATERIALS.html",
+  "https://m.thinkpool.com/compDiscuss/cont/1025662",
+  "https://www.dailyinvest.kr/news/articleView.html?idxno=70035"
  ],
  "v": 2,
- "model": "claude-opus-4-8",
+ "model": "claude-opus-5",
  "ticker": "020150",
  "name": "롯데에너지머티리얼즈",
  "name_en": "LOTTE ENERGY MATERIALS CORPORATION",
@@ -223,11 +233,11 @@
   "2차전지"
  ],
  "market": "코스피",
- "reportDate": "2026-06-16",
- "reportTs": "2026-06-16 19:21",
- "dataDate": "20260616",
+ "reportDate": "2026-08-14",
+ "reportTs": "2026-08-14 14:34",
+ "dataDate": "20260814",
  "quant": {
-  "asOf": "2026-06-16",
+  "asOf": "2026-08-14",
   "fs_basis": "연결(CFS) · DART 공시 확정치 · 지배주주 기준 순이익",
   "annual": [
    {
@@ -324,19 +334,19 @@
    }
   ],
   "valuation": {
-   "price": 55800,
-   "mcap": 2.922,
+   "price": 34400,
+   "mcap": 1.8014,
    "shares": 52365463,
    "total_shares": 52365463,
    "wavg_shares": 52665538,
    "per": null,
    "eps": -2071,
-   "pbr": 1.71,
+   "pbr": 1.06,
    "bps": 32574,
    "roe_ttm": -6.3,
    "ttm_window": "2025Q2~2026Q1",
    "ttm_np_owner": -109221290389,
-   "pbr_krx": 1.82,
+   "pbr_krx": 1.05,
    "bps_krx": 31623.0,
    "basis": "PER·EPS·PBR·BPS 모두 자체 산출(네이버·토스와 동일 방식) · 배당은 DART 공시 주당현금배당금(보완:KRX) ÷ 현재가",
    "dps": 0.0,
