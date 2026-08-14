@@ -1,220 +1,230 @@
 {
  "title": {
-  "ko": "적자 속 매출 급증, AI 솔루션 전환 시험대",
-  "en": "Revenue Surges Amid Losses; A Test of the AI-Solution Pivot"
+  "ko": "적자 속 외형 급증, 피지컬 AI 전환의 검증 구간",
+  "en": "Revenue Surges Amid Losses: Doosan Robotics' Physical-AI Pivot Enters the Proof Phase"
  },
  "lead": {
-  "ko": "북미 원엑시아 연결과 협동로봇 수요 회복으로 외형은 급증했지만 선제 투자로 영업적자는 이어지는 전환기 국면이다.",
-  "en": "Top-line growth has accelerated on the ONExia consolidation and a cobot demand recovery, but operating losses persist as the company front-loads investment during a strategic transition."
+  "ko": "원엑시아 연결과 북미 대형 수주로 매출은 빠르게 늘고 있으나 영업손실은 아직 축소되지 않았고, 회사는 엔비디아와의 협력을 축으로 2027년 지능형 로봇 솔루션·2028년 산업용 휴머노이드 상용화 로드맵을 검증받는 국면에 있다.",
+  "en": "Top-line growth is accelerating on the ONExia consolidation and larger North American orders, yet operating losses have not narrowed, leaving the company to prove an NVIDIA-linked roadmap of intelligent robot solutions in 2027 and industrial humanoids in 2028."
  },
  "keypoints": [
   {
-   "ko": "2026년 1분기 연결 매출은 153억원으로 전년 동기 대비 189.7% 급증했으나 영업손실 121억원으로 적자가 지속됐다.",
-   "en": "Q1 2026 consolidated revenue jumped 189.7% YoY to KRW 15.3bn, but an operating loss of KRW 12.1bn shows red ink persisting."
+   "ko": "2025년 연간 매출은 329억7,834만원으로 2023년(530억3,837만원) 대비 축소된 반면 영업손실은 594억7,231만원까지 확대돼 영업이익률 -180.3%를 기록했다.",
+   "en": "FY2025 revenue was KRW 32.98bn, down from KRW 53.04bn in FY2023, while the operating loss widened to KRW 59.47bn, an operating margin of -180.3%."
   },
   {
-   "ko": "지난해 인수한 미국 시스템통합(SI) 기업 원엑시아의 연결 편입이 매출 성장의 핵심 동인이다.",
-   "en": "The consolidation of ONExia, the U.S. system-integration firm acquired last year, is the core driver of revenue growth."
+   "ko": "분기 매출은 2025년 2분기 45억3,227만원을 저점으로 3분기 101억6,493만원, 4분기 130억162만원, 2026년 1분기 152억9,480만원으로 4개 분기 연속 증가했다.",
+   "en": "Quarterly revenue rose for four straight quarters from a trough of KRW 4.53bn in 2Q25 to KRW 10.16bn, KRW 13.00bn and KRW 15.29bn in 3Q25, 4Q25 and 1Q26."
   },
   {
-   "ko": "협동로봇 단품 판매에서 AI 기반 자동화 솔루션 중심으로 사업 구조를 재편하는 체질 전환이 진행 중이다.",
-   "en": "A structural shift is underway from selling standalone cobot arms toward an AI-based automation-solution model."
+   "ko": "회사는 2026년 2분기 매출 176억7,400만원(전년 동기 대비 290% 증가), 영업손실 144억1,700만원을 공시했다(2026년 7월 24일).",
+   "en": "The company disclosed 2Q26 revenue of KRW 17.67bn (+290% year on year) and an operating loss of KRW 14.42bn on 24 July 2026."
   },
   {
-   "ko": "엔비디아와 피지컬 AI 협력을 발표했고, 2027년 지능형 로봇 솔루션·2028년 산업용 휴머노이드 로드맵을 제시했다.",
-   "en": "It announced a physical-AI partnership with NVIDIA, with a roadmap for intelligent robot solutions in 2027 and industrial humanoids in 2028."
+   "ko": "성장 동력은 미국 자동화 기업 원엑시아(현 Doosan Robotics Americas) 인수와 EOL(라인 최종 공정) 자동화이며, 엔비디아와의 피지컬 AI 협력은 2027년 솔루션 출시·2028년 휴머노이드를 목표로 한다.",
+   "en": "Growth drivers are the acquisition of US automation firm ONExia (now Doosan Robotics Americas) and end-of-line automation, while the NVIDIA physical-AI partnership targets a 2027 solution launch and 2028 humanoids."
   },
   {
-   "ko": "중국 저가 공세와 국내외 경쟁 심화 속에서 수익성 입증이 최대 과제로 남아 있다.",
-   "en": "Proving profitability remains the key challenge amid Chinese low-cost competition and intensifying domestic and global rivalry."
+   "ko": "부채비율 14.6%의 낮은 레버리지와 자본 3,485억9,499만원은 완충 역할을 하지만, 2025년 영업활동현금흐름 -173억2,252만원과 5년 이상 이어진 적자는 자본 소진 속도를 함께 봐야 하는 요인이다.",
+   "en": "A 14.6% debt-to-equity ratio and KRW 348.6bn of equity provide a buffer, but FY2025 operating cash flow of -KRW 17.32bn and a multi-year loss streak mean equity burn rate must be monitored."
   }
  ],
  "business": {
-  "ko": "두산로보틱스는 사람과 함께 작업할 수 있는 협동로봇(코봇)을 주력으로 하는 두산그룹 계열사로, 국내 협동로봇 시장 부동의 1위를 지켜온 기업이다. 2015년 4개 모델을 시작으로 다양한 라인업을 갖췄고, 토크센서 방식과 중력보상기술을 적용해 안전 등급 최고 수준의 제품 성능을 보유하고 있다. 사업 구조는 기존 협동로봇 단품 판매에서 시스템통합(SI)·자동화 솔루션으로 확장되고 있는데, 로봇팔에 그리퍼·카메라·컨베이어와 소프트웨어를 결합해 완성품을 만들어주는 SI 사업을 강화하기 위해 미국 업체 원엑시아를 인수했다. 두산로보틱스는 원엑시아 지분을 인수해 이를 북미법인에 합병시켰다. 이로써 단순 로봇 수출 중간상에서 벗어나 현지 고객에게 턴키 솔루션을 직접 판매하는 구조를 지향한다. 제품 적용처는 제조업 중심에서 푸드테크·물류·의료·리테일 등 서비스 분야까지 확대되고 있다. 또한 자체 로봇 플랫폼 '다트-스위트(Dart-Suite)'를 통해 비전문가도 복잡한 코딩 없이 로봇을 제어할 수 있는 환경을 구축하고 있다. 고객·채널 측면에서는 국내 정부 실증 사업, 유럽 신규 고객, 북미 SI 수요를 동시에 공략하며, 유럽지사를 독일 프랑크푸르트로 확장 이전해 현지 영업·서비스 기능을 강화했다. 경쟁 구도는 글로벌 강자(유니버설로봇 등)와 중국 저가 업체, 국내 후발주자가 공존하는 다층 구조다.",
-  "en": "Doosan Robotics, a Doosan Group affiliate, focuses on collaborative robots (cobots) that work alongside humans, and it has held the undisputed No.1 position in Korea's cobot market. Starting with four models in 2015 it built a broad lineup, applying torque-sensor and gravity-compensation technology to achieve top-tier safety ratings and product performance. Its business is expanding from standalone cobot sales toward system integration (SI) and automation solutions; to strengthen the SI business of building finished systems by combining a robot arm with grippers, cameras, conveyors and software, it acquired the U.S. firm ONExia. Doosan Robotics took a stake in ONExia and merged it into its North American subsidiary. This aims to move it beyond a mere robot-export intermediary toward selling turnkey solutions directly to local customers. Application areas are expanding from manufacturing into services such as food-tech, logistics, healthcare and retail. It is also building an environment via its own Dart-Suite robot platform that lets non-experts control robots without complex coding. On customers and channels, it simultaneously targets Korean government pilot programs, new European clients and North American SI demand, having relocated and expanded its European office to Frankfurt, Germany. The competitive landscape is multi-layered, featuring global leaders, low-cost Chinese players and domestic followers."
+  "ko": "두산로보틱스는 2015년 설립된 두산그룹의 로봇 계열사로, 사람과 같은 공간에서 작업하는 협동로봇을 주력으로 한다. 5kg급 식음료 특화 E시리즈부터 가반하중 30kg·작업반경 2030mm의 P시리즈까지 5종 14개 모델 라인업을 갖췄다. 매출 구성은 로봇 본체 판매와 자동화 솔루션·부품으로 나뉘며, 삼성증권 보고서에 따르면 2025년 기준 매출의 78%가 협동로봇에서 발생하고 나머지가 부품 및 자동화 솔루션에서 나온다. 사업 구조의 핵심 변화는 2025년 미국 원엑시아 인수다. 삼성증권은 2025년 7월 356억원에 원엑시아 지분 89.6%를 인수했으며, 원엑시아는 제조·물류의 최종 단계인 EOL(포장·적재) 공정 자동화에 특화된 회사로, 과거 로봇 팔만 납품하고 외부 시스템통합업체가 설치를 맡던 구조를 내재화해 턴키 솔루션 공급이 가능해졌다고 설명했다. 같은 리포트는 다수 협동로봇 기업의 매출이 내수에 편중된 것과 달리 이 회사는 2024년 기준 매출의 50% 이상이 북미·유럽 등 해외에서 발생한다고 밝혔다. 제품 전략도 고객 맞춤형에서 복잡한 설치 없이 현장에 바로 투입 가능한 'Plug & Play' 방식으로 전환 중이며, 대표 사례는 CES 2026에서 AI 부문 최고혁신상과 로봇공학 부문 혁신상을 받은 '스캔앤고'다. 스캔앤고는 협동로봇 팔과 자율이동로봇(AMR)에 AI·3D 비전을 결합해 설계 도면이나 코딩 없이 구조물을 스캔하면 AI가 작업 경로를 설정해 실행하는 솔루션이다. 경쟁 구도에서는 글로벌 1위가 덴마크 유니버설로봇(점유율 약 40~50%)이고 일본 화낙, 대만 테크맨이 뒤를 이으며, 두산로보틱스는 중국 제외 글로벌 4위·국내 1위로 평가된다. 최근에는 제조업 중심이던 활용 영역을 푸드테크·물류·의료·리테일 등 서비스 분야로 확대하고 생성형 AI를 접목한 차세대 로봇 개발 투자를 늘리고 있다.",
+  "en": "Founded in 2015, Doosan Robotics is the Doosan group's robotics arm, centered on collaborative robots that work alongside humans. Its lineup spans 14 models across five series, from the 5kg E-series tailored to food and beverage to the P-series with 30kg payload and a 2,030mm reach. Revenue splits between robot units and automation solutions/components; per a Samsung Securities report, 78% of 2025 revenue came from collaborative robots, with the remainder from components and automation solutions. The key structural change was the 2025 acquisition of US-based ONExia. Samsung Securities noted the company bought an 89.6% stake for KRW 35.6bn in July 2025; ONExia specializes in end-of-line (packaging and palletizing) automation, allowing Doosan to internalize integration work previously done by external system integrators and to supply turnkey solutions. The same report said that unlike most peers whose sales are domestically concentrated, more than 50% of Doosan's 2024 revenue came from overseas markets such as North America and Europe. Product strategy is shifting from customization toward plug-and-play packages deployable without complex installation, exemplified by Scan&Go, which won a CES 2026 Best of Innovation award in AI plus a robotics innovation award. Scan&Go combines a cobot arm and an autonomous mobile robot with AI and 3D vision so that, after scanning a structure, the AI sets and executes the work path without drawings or coding. On competition, Denmark's Universal Robots leads globally with roughly 40-50% share, followed by Japan's FANUC and Taiwan's Techman, while Doosan Robotics ranks fourth globally excluding China and first in Korea. More recently, it has extended applications from manufacturing into food-tech, logistics, medical and retail services while raising investment in next-generation robots incorporating generative AI."
  },
  "earnings": {
-  "ko": "확정 재무 기준 연결 매출은 2023년 530억원, 2024년 468억원, 2025년 330억원으로 2년 연속 감소했고, 영업손실은 2023년 192억원에서 2024년 412억원, 2025년 595억원으로 확대됐다. 같은 기간 순손실(지배주주)도 159억원→366억원→555억원으로 커졌으며, 2025년 영업이익률은 -180.3%까지 악화됐다. 이는 협동로봇 단품 매출 부진과 원엑시아 인수·통합 비용, AI·R&D 인력 채용 등 선제 투자가 동시에 반영된 결과로 해석된다. 분기 흐름을 보면 2025년 매출은 1분기 53억원에서 4분기 130억원으로 회복됐고, 2026년 1분기에는 153억원을 기록해 전년 동기(53억원) 대비 189.7% 급증했다. 올해 1분기 협동로봇 부문 매출은 전년 동기 대비 11.1% 증가했고, 원엑시아 연결편입으로 북미법인 매출이 79억원으로 476.2% 급증한 것이 외형 성장을 이끌었다. 손익 측면에서는 2026년 1분기 영업손실이 1,206억원(단위 십만원 환산 시 121억원)으로 전분기 대비 손실 폭이 26.6% 축소됐고, 확정 재무상 분기 영업손실은 2025년 4분기 164.5억원에서 2026년 1분기 120.7억원으로 줄었다. 매출총이익률이 기존 11.6%에서 28.3%로 16.7%포인트 개선됐으나, 판관비가 164억원으로 전년 동기(127억원) 대비 29% 증가하며 적자를 키운 점은 비용 구조의 부담을 보여준다. 다만 영업현금흐름은 2024년 -438억원에서 2025년 -173억원으로 유출 폭이 줄어 현금 소진 속도는 다소 완화됐다.",
-  "en": "On confirmed figures, consolidated revenue fell for two straight years—KRW 53.0bn in 2023, KRW 46.8bn in 2024 and KRW 33.0bn in 2025—while the operating loss widened from KRW 19.2bn in 2023 to KRW 41.2bn in 2024 and KRW 59.5bn in 2025. Net loss attributable to owners also grew over the period from KRW 15.9bn to KRW 36.6bn to KRW 55.5bn, with the 2025 operating margin deteriorating to -180.3%. This reflects weak standalone-cobot sales combined with ONExia acquisition/integration costs and front-loaded investment in AI and R&D hiring. By quarter, 2025 revenue recovered from KRW 5.3bn in Q1 to KRW 13.0bn in Q4, and Q1 2026 reached KRW 15.3bn, up 189.7% from KRW 5.3bn a year earlier. Q1 cobot-segment revenue rose 11.1% YoY, while the ONExia consolidation drove North American subsidiary revenue up 476.2% to KRW 7.9bn, leading the top-line growth. On profitability, the Q1 2026 operating loss of KRW 120.6bn-scale figure narrowed 26.6% versus the prior quarter, and on confirmed figures the quarterly operating loss shrank from KRW 16.45bn in Q4 2025 to KRW 12.07bn in Q1 2026. Gross margin improved 16.7 points from 11.6% to 28.3%, but SG&A rose 29% to KRW 16.4bn from KRW 12.7bn a year earlier, deepening the loss, underscoring the cost burden. That said, operating cash flow improved from -KRW 43.8bn in 2024 to -KRW 17.3bn in 2025, easing the pace of cash burn somewhat."
+  "ko": "확정 실적은 성장주 특유의 '외형과 손익의 시차'를 그대로 보여준다. 연간 매출은 2023년 530억3,837만원에서 2024년 468억2,994만원, 2025년 329억7,834만원으로 2년 연속 줄었고, 같은 기간 영업손실은 191억6,755만원 → 412억212만원 → 594억7,231만원으로 확대됐다. 2025년 영업이익률은 -180.3%로 매출보다 손실이 큰 구조였으며, 지배주주 순손실도 554억9,534만원까지 늘었다. 자본총계는 2023년 4,388억809만원에서 2025년 3,485억9,499만원으로 축소된 반면 부채총계는 176억1,399만원에서 507억7,551만원으로 늘어 부채비율은 4.0%에서 14.6%로 상승했으나 절대 수준은 여전히 낮다. 현금흐름은 2024년 영업활동현금흐름 -437억7,045만원에서 2025년 -173억2,252만원으로 유출 폭이 줄었는데, 매출 회복과 운전자본 변동이 함께 작용한 결과로 해석된다. 분기 흐름을 보면 2025년 1분기 매출 52억7,951만원, 2분기 45억3,227만원으로 바닥을 찍은 뒤 3분기 101억6,493만원, 4분기 130억162만원, 2026년 1분기 152억9,480만원으로 4개 분기 연속 증가했다. 반면 영업손실은 2025년 1분기 121억646만원, 2분기 156억5,024만원, 3분기 152억6,546만원, 4분기 164억5,016만원으로 확대된 뒤 2026년 1분기 120억6,949만원으로 축소됐고, 같은 분기 지배주주 순손실도 91억6,519만원으로 줄었다. 원인 측면에서 기업모니터는 협동로봇 매출 감소와 자동화 솔루션 영업손실, 원엑시아 인수 과정의 비용 부담과 북미법인 합병 통합 비용을 실적 악화 요인으로 지적했다. 이후 회사는 2026년 2분기 매출 176억7,400만원(전년 동기 대비 290% 증가), 영업손실 144억1,700만원(적자 7.9% 축소), 순손실 127억9,200만원을 공시했고 상반기 누적 매출은 329억6,900만원, 영업손실은 264억8,700만원이었다. 즉 상반기 매출만으로 2025년 연간 매출 수준에 도달했지만, 중대형 수주 반영과 원엑시아 효과, 미국 법인 매출 127% 성장에도 미국 법인 확장 이전 비용과 AI 연구개발 인력 채용 비용이 손익을 눌렀다는 점이 이 회사 실적의 핵심 구도다.",
+  "en": "The confirmed numbers illustrate a classic gap between top-line growth and profitability. Annual revenue fell for two consecutive years, from KRW 53.04bn in 2023 to KRW 46.83bn in 2024 and KRW 32.98bn in 2025, while the operating loss widened from KRW 19.17bn to KRW 41.20bn and then KRW 59.47bn. The 2025 operating margin of -180.3% means losses exceeded revenue, and net loss attributable to owners grew to KRW 55.50bn. Equity shrank from KRW 438.81bn in 2023 to KRW 348.59bn in 2025 while liabilities rose from KRW 17.61bn to KRW 50.78bn, lifting the debt-to-equity ratio from 4.0% to 14.6% - still low in absolute terms. Operating cash outflow narrowed from -KRW 43.77bn in 2024 to -KRW 17.32bn in 2025, reflecting a combination of revenue recovery and working-capital swings. Quarterly revenue bottomed at KRW 5.28bn in 1Q25 and KRW 4.53bn in 2Q25, then rose for four straight quarters to KRW 10.16bn, KRW 13.00bn and KRW 15.29bn. Operating losses, however, widened through 2025 (KRW 12.11bn, KRW 15.65bn, KRW 15.27bn, KRW 16.45bn by quarter) before narrowing to KRW 12.07bn in 1Q26, with net loss to owners easing to KRW 9.17bn in that quarter. On causes, Company Monitor cited lower cobot sales, operating losses in automation solutions, ONExia acquisition costs and North American subsidiary merger integration costs. Subsequently, the company disclosed 2Q26 revenue of KRW 17.67bn (+290% y/y), an operating loss of KRW 14.42bn (7.9% smaller y/y) and a net loss of KRW 12.79bn, bringing first-half revenue to KRW 32.97bn and the first-half operating loss to KRW 26.49bn. First-half revenue alone thus matched the full-year 2025 level, yet even with mid-to-large orders recognized, the ONExia effect and 127% growth at the US unit, relocation costs for US expansion and AI R&D hiring weighed on earnings - the defining tension in this company's results."
  },
  "industry": {
-  "ko": "협동로봇은 고령화와 인력난, 인건비 상승을 배경으로 구조적 성장 국면에 있다. 고령화와 만성적 인력 부족으로 제조·물류 현장의 자동화 수요가 급증하면서 협동로봇 시장이 빠르게 확대되고 있다는 평가다. 다만 경쟁 환경은 녹록지 않다. 두산로보틱스, HD현대로보틱스, 레인보우로보틱스, 한화로보틱스 등 국내 협동로봇 제조기업들은 중국 기업의 저가 공세와 규모의 경제 미실현으로 2024년 말까지 재무실적이 부진했다. 협동로봇 시장이 본격 성장 궤도에 오르면서 위기감도 커졌는데, 중국 업체들이 가격 경쟁력으로 글로벌 시장을 잠식하고 국내에서도 한화로보틱스·레인보우로보틱스 등 후발주자가 공격적 투자에 나서고 있기 때문이다. 산업 패러다임은 하드웨어 경쟁에서 AI·소프트웨어·플랫폼 경쟁으로 이동 중이다. 한 업계 관계자는 협동로봇 시장이 단순 기계 제조 경쟁에서 AI와 서비스 플랫폼 경쟁으로 넘어가고 있다고 진단했다. 2026년 들어 휴머노이드와 피지컬 AI가 섹터의 핵심 테마로 부상하며, 로봇 산업이 휴머노이드 초기 양산기를 맞이하고 초기 단계에서는 부품 기업들이 수혜를 입을 것이란 전망이 나온다. 두산로보틱스는 국내 1위 지위와 그룹 차원의 자금·적용처를 바탕으로 글로벌 확장을 추진하는 위치에 있다.",
-  "en": "Cobots are in a structural growth phase driven by aging, labor shortages and rising wages. As aging and chronic labor shortages spur automation demand in manufacturing and logistics, the cobot market is expanding rapidly. Yet the competitive environment is challenging. Korean cobot makers including Doosan Robotics, HD Hyundai Robotics, Rainbow Robotics and Hanwha Robotics posted weak financials through end-2024 due to Chinese low-cost competition and a failure to reach economies of scale. As the cobot market entered a full growth trajectory, a sense of crisis grew, because Chinese players are eroding the global market on price while domestic followers like Hanwha Robotics and Rainbow Robotics invest aggressively. The industry paradigm is shifting from hardware competition toward AI, software and platform competition. One industry official noted that the cobot market is moving from simple machine-manufacturing competition toward AI and service-platform competition. Entering 2026, humanoids and physical AI have emerged as the sector's core themes, with views that the robot industry is entering an early humanoid mass-production phase in which component makers benefit first. Doosan Robotics is positioned to pursue global expansion backed by its domestic No.1 status and group-level funding and application bases."
+  "ko": "협동로봇 전방시장은 인건비 상승과 구인난을 배경으로 구조적 성장 국면에 있다는 견해가 우세하다. 마켓츠앤마켓츠 기준 글로벌 협동로봇 시장은 2023년 12억달러에서 2030년 99억달러로 연평균 35.1% 성장하고, 전체 제조업 로봇 시장 내 협동로봇 비중도 2019년 4%에서 2030년 28%로 높아질 것으로 전망된다. 다만 성장의 수혜가 고르게 배분되지는 않는다. 서울경제TV는 두산로보틱스의 글로벌 점유율이 2021년 3.8%에서 3.6% 수준으로 오히려 낮아졌고, 같은 기간 화낙은 10.8%, 중국 아우보는 6.5%까지 점유율을 끌어올렸다고 보도했다. 유니버설로봇이 40% 이상을 점유한 시장에서 두산로보틱스의 점유율은 5% 내외로, 2018년 첫 제품 출시 후발주자라는 점이 함께 지적된다. 원가 구조도 제약 요인으로 꼽힌다. 협동로봇 제조 원가의 절반을 차지하는 핵심 부품이 여전히 일본 등 해외 수입에 의존해 매출이 늘어도 수익으로 이어지기 어렵다는 지적이 있다. 국내 경쟁 강도 역시 높아지고 있으며, 중국 업체의 가격 공세와 한화로보틱스·레인보우로보틱스 등 후발주자의 공격적 투자가 동시에 진행되고 있다. 반면 지형 변화 요인도 생겼다. 미국 연방통신위원회는 2026년 7월 28일 해외 생산 휴머노이드·사족보행 로봇 등을 규제 대상 장비 목록에 추가했고, 시장은 이를 중국산 견제로 해석하며 미국 시장에 진입 가능한 국내 업체의 반사이익 가능성을 거론했다. 다만 국내 주요 로봇 기업의 주력 제품이 규제에서 제외된 고정형 산업용 로봇·협동로봇이어서 단기 직접 영향은 제한적이라는 분석도 함께 제시된다.",
+  "en": "The cobot end-market is widely seen as being in a structural growth phase, driven by rising labor costs and worker shortages. Per MarketsandMarkets, the global cobot market is projected to grow from USD 1.2bn in 2023 to USD 9.9bn by 2030, a 35.1% CAGR, with cobots rising from 4% of the manufacturing robot market in 2019 to 28% by 2030. Those gains, however, are not evenly distributed. SEN TV reported that Doosan Robotics' global share slipped from 3.8% in 2021 to around 3.6%, while FANUC lifted its share to 10.8% and China's AUBO to 6.5% over the same period. In a market where Universal Robots holds over 40%, Doosan's share is around 5%, a level often framed against its late 2018 product debut. Cost structure is another constraint. Roughly half of cobot manufacturing cost sits in core components still imported from Japan and elsewhere, making it hard for revenue growth to translate into profit. Domestic rivalry is also intensifying, with Chinese players pressing on price and later entrants such as Hanwha Robotics and Rainbow Robotics investing aggressively. On the other hand, the competitive landscape has a new variable. On 28 July 2026 the US FCC added overseas-made humanoid and quadruped robots to its Covered List of security-risk equipment; the market read this as aimed at Chinese products and discussed potential spillover benefits for Korean firms able to access the US market. That said, analysts also note the direct near-term impact is limited because Korean firms' core products - fixed industrial robots and cobots - are excluded from the restriction."
  },
  "outlook": {
-  "ko": "회사는 협동로봇 단품에서 AI 솔루션 중심으로의 체질 개선을 통해 중기 턴어라운드를 목표하고 있다. 사측은 협동로봇 단품 판매를 의도적으로 줄이고 AI 솔루션 중심으로 체질을 바꿔 2027년 본격적인 턴어라운드를 달성하겠다는 구상이다. 단기 매출 가시성으로는 1분기 기준 원엑시아의 수주잔고가 약 202억원(1,350만 달러)으로, 3~6개월의 리드타임을 고려하면 올해 매출로 반영될 예정이다. 생산능력 측면에서는 몰려드는 수주에 대응하기 위해 오는 9월까지 생산능력을 2배 이상 확대하고 향후 AI 솔루션 판매 거점으로 활용하기 위해 최대 4배 규모의 부지를 확보했다. 미국 현지 제조 거점은 관세 리스크 해소와 비용 절감 측면에서도 의미가 있다는 평가다. 신제품·기술 로드맵으로는 엔비디아와의 협력을 통해 2027년 에이전틱 로봇 운영체제 기반 지능형 로봇 솔루션을, 2028년에는 산업용 휴머노이드 제품을 순차적으로 선보일 계획이다. 내년 CES 등 글로벌 주요 전시회에서 엔비디아와의 협업 결과물을 발표하는 방안도 추진한다. 다만 기술적 성과는 냈으나 산업 현장에서 충분히 실증됐다고 보기는 어렵고, 다른 협력사 대비 글로벌 상용화 성과는 아직 크지 않으며, 두산의 솔루션은 빨라야 내년부터 실전 검증 단계에 들어설 것으로 보인다는 신중론도 공존한다.",
-  "en": "The company targets a mid-term turnaround via a structural shift from standalone cobots toward AI solutions. Management intends to deliberately cut standalone cobot sales and reorient toward AI solutions to achieve a full turnaround in 2027. On near-term revenue visibility, ONExia's order backlog stood at about KRW 20.2bn (USD 13.5m) as of Q1, and given a 3–6 month lead time it is set to be recognized as revenue this year. On capacity, to meet incoming orders it will more than double production capacity by September and has secured land of up to four times the size for future use as an AI-solution sales hub. A local U.S. manufacturing base is also seen as meaningful for mitigating tariff risk and cutting costs. On the product and technology roadmap, through the NVIDIA partnership it plans to unveil an Agentic Robot O/S-based intelligent robot solution in 2027 and industrial humanoid products in 2028, in sequence. It is also pursuing plans to present the results of its NVIDIA collaboration at major global exhibitions such as CES next year. However, cautious views coexist: while it has produced technical achievements, these are hard to call fully validated in the field, its global commercialization lags peers, and its solution will likely enter real-world validation only from next year at the earliest."
+  "ko": "회사가 제시한 방향은 하드웨어 제조사에서 AI 실행 플랫폼 기업으로의 전환이다. 두산로보틱스는 독자 개발 중인 '에이전틱 로봇 운영체제'와 엔비디아의 AI 시뮬레이션·학습 인프라를 연계하고, 2027년 지능형 로봇 솔루션을 출시해 CES 등에서 성과를 공개한 뒤 2028년 산업용 휴머노이드를 순차 상용화하는 로드맵을 제시했다. 개발에는 엔비디아의 아이작 심·아이작 랩, 코스모스 월드 모델, 물리엔진 뉴턴, 온디바이스 반도체 젯슨 토르가 결합되며, 디팔레타이징·샌딩 등 정밀 공정에 먼저 적용한다는 계획이다. 단기적으로는 본업 정상화 여부가 관건이다. DS투자증권은 3분기 내 매출 인식 가능성이 높은 약 200억원 규모의 수주 잔고가 확보돼 본업의 매출 정상화 흐름은 유효하다고 판단하면서도 투자의견 '중립'을 유지했다. 삼성증권은 수주가 매출로 전환되는 리드타임이 3~9개월이어서 2026년 내 상당 부분이 실적으로 가시화될 수 있고, 최근 대형 수주 집중으로 1,500만달러 수준의 수주 잔고를 달성했다고 밝혔다. 제품·영업 측면에서는 북미·유럽 중심의 영업 강화, 오토메이트 2026에서 공개한 AI 팔레타이징 솔루션 '팔레타이즈HD+'와 '스캔앤고 2.0', 하반기 차세대 협동로봇 모델 개발과 자체 AI 모델 플랫폼·데이터 인프라 구축이 예정돼 있다. 회사 관계자는 추가 기술 확보를 위해 인수합병과 전략적 파트너십도 지속 검토하고 있다고 밝혔다. 반면 비즈워치는 엔비디아 협력사 중 Skild AI·유니버설로봇·ABB 등이 이미 현장 배치를 진행한 것과 달리 두산로보틱스의 에이전틱 로봇 운영체제 기반 솔루션은 빨라야 내년부터 실전 검증 단계에 들어설 것으로 보인다고 지적했다. 결국 로드맵의 시점 준수와 손익 개선 속도가 함께 확인돼야 하는 구간이다.",
+  "en": "Management's stated direction is a shift from hardware maker to AI execution-platform company. Doosan Robotics plans to link its in-house Agentic Robot O/S with NVIDIA's AI simulation and training infrastructure, launch intelligent robot solutions in 2027 with showcases at events such as CES, and then commercialize industrial humanoids progressively from 2028. Development combines NVIDIA's Isaac Sim/Isaac Lab, the Cosmos world model, the Newton physics engine and Jetson Thor on-device silicon, with first applications in precision tasks such as depalletizing and sanding. Near term, normalization of the core business is the swing factor. DS Investment & Securities said roughly KRW 20bn of backlog is likely to be recognized as revenue within the third quarter, keeping the core-business normalization trend intact, while maintaining a Neutral rating. Samsung Securities noted an order-to-revenue lead time of three to nine months, meaning much of the backlog could show up in 2026 results, and that recent large orders lifted backlog to about USD 15mn. On products and sales, the company is intensifying North American and European sales, showcased the AI palletizing solution Palletize HD+ and Scan&Go 2.0 at Automate 2026, and plans second-half work on a next-generation cobot model plus its own AI model platform and data infrastructure. A company official said M&A and strategic partnerships remain under continuous review to secure additional technology. Conversely, Bizwatch noted that while NVIDIA partners such as Skild AI, Universal Robots and ABB have already deployed solutions in the field, Doosan's Agentic Robot O/S-based offering will likely enter real-world validation no earlier than next year. The coming quarters therefore test both roadmap timing and the pace of margin repair."
  },
  "valuation_comment": {
-  "ko": "두산로보틱스는 현재 회계상 적자 상태로 이익 기반 멀티플 산출이 어려운 구간에 있다. 제공된 헤드라인 기준 자기자본이익률(ROE)은 -15.0%, 주당순이익(EPS)은 -852원, 주당순자산(BPS)은 5,247원으로, 수익성 지표가 마이너스인 점이 밸류에이션 해석의 출발점이다. 주가는 순자산 대비 큰 폭의 프리미엄이 형성된 구간에 위치하는데, 이는 협동로봇 시장 성장성과 엔비디아 협력·피지컬 AI 기대가 선반영된 결과로 풀이된다. 즉 현재 가치는 과거 확정 실적보다 향후 솔루션 사업의 매출 전환과 흑자 전환 가시성에 크게 의존한다. 피지컬 AI 솔루션 상용화는 현재 기업가치와 실적 간 괴리를 좁히는 촉매가 될 것이란 분석이 있으나, 회사는 아직 숫자로 증명하지 못한 상태라는 점이 핵심 변수다. 따라서 적자에서 흑자로의 전환 시점과 영업 레버리지 발생 여부가 향후 밸류에이션 정상화의 관건이 될 전망이다.",
-  "en": "Doosan Robotics is currently in an accounting-loss position, making earnings-based multiples difficult to compute. On the provided headline figures, return on equity (ROE) is -15.0%, earnings per share (EPS) is -KRW 852, and book value per share (BPS) is KRW 5,247—negative profitability metrics being the starting point for valuation. The share price sits in a zone carrying a sizable premium to net assets, reflecting market expectations already priced in around cobot-market growth and the NVIDIA partnership and physical-AI theme. In other words, current value depends heavily on the future conversion of solution-business orders into revenue and the visibility of a swing to profit, rather than on past confirmed results. The key variable is that analysts see physical-AI solution commercialization as a catalyst to narrow the gap between current valuation and earnings, but the company has yet to prove itself in numbers. Thus the timing of the move from losses to profit and whether operating leverage emerges will be decisive for any valuation normalization."
+  "ko": "적자가 이어지는 구간이어서 주당순이익은 마이너스(-852원)이고, 이익 기반 배수는 산출되지 않는다. 따라서 시장은 주로 순자산 대비 배수로 이 회사를 평가하는데, 확정 자본에서 계산되는 주당순자산(5,247원)과 현재 주가의 관계는 국내 기계·장비 업종 평균은 물론 이익을 내는 로봇 부품·자동화 기업들과 비교해도 순자산 대비 프리미엄이 매우 큰 구간에 해당한다. 배당은 확정 공시 기준 주당현금배당금이 0원으로, 배당수익률 측면의 뒷받침은 없다. 이런 구조에서 배수는 실적이 아니라 2027년 지능형 로봇 솔루션·2028년 휴머노이드 로드맵과 북미 자동화 매출의 확장 속도를 반영한 기대치에 가깝다는 점을 유념할 필요가 있다. 참고로 DS투자증권은 두산로보틱스에 대해 \"펀더멘털과 기대감이 공존하는 과도기\"라고 평가했고, 블로터는 시장에서 피지컬 AI 솔루션 상용화가 기업가치와 실적 간 괴리를 좁히는 촉매로 작용할 것이란 분석이 나오는 한편 아직 '숫자'로 증명하지 못한 상태라는 평가도 있다고 전했다. 손실 축소와 매출 확대가 실제 수치로 확인되는지 여부가 이 프리미엄의 정당성을 판단하는 기준이 될 수 있다.",
+  "en": "With losses ongoing, earnings per share is negative (-KRW 852) and earnings-based multiples cannot be computed. The market therefore values the company mainly against net assets, and the relationship between book value per share (KRW 5,247) and the current price sits in a range carrying a very large premium to net assets - not only versus the Korean machinery sector average but also versus profitable robot component and automation peers. Dividends provide no support: the confirmed cash dividend per share is zero. In such a structure, the multiple reflects expectations tied to the 2027 intelligent-solution and 2028 humanoid roadmap and the pace of North American automation expansion, rather than current results. For reference, DS Investment & Securities described the company as being in \"a transition period where fundamentals and expectations coexist\", and Bloter reported views that commercializing physical-AI solutions could act as a catalyst to close the gap between valuation and earnings, alongside the assessment that the company has yet to prove itself in the numbers. Whether loss reduction and revenue expansion show up in reported figures is the yardstick readers can use to judge that premium."
  },
  "bull": [
   {
    "title": {
-    "ko": "원엑시아 효과와 외형 급성장",
-    "en": "ONExia effect and rapid top-line growth"
+    "ko": "북미 EOL 자동화 내재화로 외형 레벨 상승",
+    "en": "US EOL automation in-housing lifts the revenue base"
    },
    "body": {
-    "ko": "2026년 1분기 매출이 전년 동기 대비 189.7% 급증하며 외형 성장이 본격화됐다. 미국·유럽 중심으로 미뤄두었던 전방산업 투자가 재개되며 시장이 회복세를 보이고, 원엑시아 연결편입과 생산능력 증설로 외형 성장세가 본격화될 전망이다. 수주잔고가 리드타임을 거쳐 매출로 전환되는 흐름도 가시성을 높인다.",
-    "en": "Q1 2026 revenue surged 189.7% YoY, putting top-line growth into full swing. As delayed downstream investment resumes mainly in the U.S. and Europe, the market is recovering, and the ONExia consolidation plus capacity expansion are expected to accelerate top-line growth. The conversion of order backlog into revenue after lead times also improves visibility."
+    "ko": "원엑시아 연결로 로봇 팔 판매를 넘어 턴키 자동화 프로젝트 매출이 더해졌다. 삼성증권은 원엑시아가 EOL 공정 자동화 특화 기업으로, 과거 외부 시스템통합업체가 담당했던 설치·통합을 내재화해 턴키 공급이 가능해졌다고 설명했다. 2026년 2분기에는 EOL 부문 매출이 전년 동기 대비 약 130%, 미국 법인 매출이 127% 증가했다. 확정 수치로도 분기 매출은 2025년 2분기 45억3,227만원에서 2026년 1분기 152억9,480만원까지 확대됐다.",
+    "en": "The ONExia consolidation added turnkey automation project revenue on top of robot-arm sales. Samsung Securities explained that ONExia specializes in end-of-line automation, allowing Doosan to internalize installation and integration previously handled by outside system integrators and to supply turnkey packages. In 2Q26, EOL revenue rose about 130% year on year and US subsidiary revenue grew 127%. On confirmed figures, quarterly revenue expanded from KRW 4.53bn in 2Q25 to KRW 15.29bn in 1Q26."
    }
   },
   {
    "title": {
-    "ko": "엔비디아·피지컬 AI 모멘텀",
-    "en": "NVIDIA and physical-AI momentum"
+    "ko": "엔비디아 생태계 접점과 그룹 자금 여력",
+    "en": "NVIDIA ecosystem access plus group funding capacity"
    },
    "body": {
-    "ko": "두산로보틱스는 엔비디아와 피지컬 AI 기반 로봇 솔루션 개발 협력에 나서, 로봇 전용 실행 소프트웨어와 엔비디아 AI·로보틱스 생태계를 결합해 지능형 로봇 솔루션과 산업용 휴머노이드 상용화를 추진한다. 막대한 개발 비용을 감당할 수 있는 대형 대기업 계열사라는 점과 그룹 차원의 산업별 애플리케이션 보유가 차별화 요소로 꼽힌다. 휴머노이드·AI 테마 부각 시 모멘텀이 강화될 수 있다.",
-    "en": "Doosan Robotics is partnering with NVIDIA on physical-AI robot solutions, combining its robot execution software with NVIDIA's AI and robotics ecosystem to commercialize intelligent robot solutions and industrial humanoids. Being a large conglomerate affiliate able to fund massive development costs, and possessing group-wide industry applications, is cited as a differentiator. Momentum could strengthen as the humanoid and AI theme draws attention."
+    "ko": "로보틱스 분야에서 두산로보틱스는 엔비디아의 아이작 심·아이작 랩, 코스모스 월드 모델, 젯슨 소르 기반 엣지 디바이스를 활용해 에이전틱 로봇 운영체제를 개발 중이다. 비즈워치는 로봇 실행 소프트웨어 역량을 키워온 점이 주요 협력 파트너로 부상한 배경이며, 하드웨어 중심에서 실행 소프트웨어로 확장한 전략이 적중했다는 평가가 있다고 전했다. DS투자증권은 막대한 개발 비용을 감당할 수 있는 대형 대기업 계열사라는 점과 그룹 차원에서 즉시 활용 가능한 산업별 애플리케이션 보유를 국내 로보틱스 섹터 내 지배력 요인으로 꼽았다. 확정 재무상으로도 부채비율 14.6%, 자본 3,485억9,499만원으로 재무 레버리지 부담은 낮은 편이다.",
+    "en": "In robotics, Doosan is developing an agentic robot operating system using NVIDIA's Isaac Sim, Isaac Lab, the Cosmos world model and Jetson Thor-based edge devices. Bizwatch reported that its build-up of robot execution software capability is why it emerged as a key partner, with observers judging the shift from hardware to execution software to have paid off. DS Investment & Securities cited its status as a large-group affiliate able to fund heavy development costs, plus group-wide industrial applications available for immediate use, as sources of standing within Korea's robotics sector. Confirmed financials also show modest leverage, with a 14.6% debt-to-equity ratio and KRW 348.59bn of equity."
    }
   },
   {
    "title": {
-    "ko": "손실 폭 축소와 마진 개선 조짐",
-    "en": "Narrowing losses and margin-improvement signs"
+    "ko": "비중국 공급망 선호와 해외 매출 비중",
+    "en": "Non-China supply chain preference and overseas mix"
    },
    "body": {
-    "ko": "확정 재무상 분기 영업손실이 2025년 4분기 164.5억원에서 2026년 1분기 120.7억원으로 축소됐다. 매출총이익률이 기존 11.6%에서 28.3%로 16.7%포인트 크게 개선된 점은 솔루션 사업의 부가가치 효과를 시사한다. 영업현금흐름 유출 폭도 2024년 대비 2025년에 줄어 현금 소진 속도가 완화됐다.",
-    "en": "On confirmed figures, the quarterly operating loss narrowed from KRW 16.45bn in Q4 2025 to KRW 12.07bn in Q1 2026. Gross margin improved sharply by 16.7 points from 11.6% to 28.3%, suggesting the value-added effect of the solution business. Operating cash outflow also shrank in 2025 versus 2024, easing the pace of cash burn."
+    "ko": "미국 연방통신위원회가 2026년 7월 28일 해외 생산 휴머노이드·사족보행 로봇을 규제 대상 목록에 추가한 뒤, 시장은 중국산 견제로 해석하며 미국 진입이 가능한 국내 업체의 수혜 가능성을 언급했다. 2026년 8월 3일 국내 로봇 테마 급등 국면에서 두산로보틱스도 상승 종목에 포함됐다. 이 회사는 2024년 기준 매출의 50% 이상이 북미·유럽 등 해외에서 발생해 국내 협동로봇 기업 중 해외 비중이 높은 편이다. 다만 이는 업종 심리와 정책 변수에 따른 사실 관계이며, 실제 수주·매출 전환 여부는 별도로 확인이 필요하다.",
+    "en": "After the US FCC added overseas-made humanoid and quadruped robots to its Covered List on 28 July 2026, the market read the move as targeting Chinese products and discussed possible benefits for Korean firms able to enter the US. Doosan Robotics was among the gainers during the 3 August 2026 rally in Korean robot names. More than 50% of its 2024 revenue came from overseas markets including North America and Europe, a relatively high overseas mix among Korean cobot makers. This remains a matter of sector sentiment and policy variables, however; conversion into actual orders and revenue must be verified separately."
    }
   }
  ],
  "bear": [
   {
    "title": {
-    "ko": "지속되는 적자와 흑자전환 불확실성",
-    "en": "Persistent losses and uncertain turnaround"
+    "ko": "매출이 늘어도 좁혀지지 않는 손실",
+    "en": "Losses not narrowing despite revenue growth"
    },
    "body": {
-    "ko": "두산로보틱스는 가파른 외형 성장에도 창립 이래 단 한 번도 흑자를 낸 적이 없고, 올해 1분기에도 121억원의 영업손실을 기록했다. 확정 재무상 영업손실은 2023년 192억원에서 2025년 595억원으로 확대됐다. 흑자 전환 시점이 계획대로 도래할지는 여전히 불확실하다.",
-    "en": "Despite steep top-line growth, Doosan Robotics has never once posted a profit since its founding, and it logged a KRW 12.1bn operating loss in Q1 this year too. On confirmed figures, the operating loss widened from KRW 19.2bn in 2023 to KRW 59.5bn in 2025. Whether the swing to profit arrives on schedule remains uncertain."
+    "ko": "확정 수치로 2025년 영업손실은 594억7,231만원, 영업이익률은 -180.3%였고 지배주주 순손실은 554억9,534만원이었다. 2026년 1분기 영업손실이 120억6,949만원으로 줄었지만, 회사 공시에 따르면 2026년 2분기 영업손실은 144억1,700만원, 상반기 누적 영업손실은 264억8,700만원이었다. 미국 법인 확장 이전 비용과 AI 연구개발 인력 채용 비용이 손익을 압박한 요인으로 제시됐다. 매출 증가분이 고정비 확대를 아직 상쇄하지 못하는 구도가 이어지고 있다.",
+    "en": "On confirmed figures, the FY2025 operating loss was KRW 59.47bn with a -180.3% operating margin and a net loss to owners of KRW 55.50bn. The 1Q26 operating loss narrowed to KRW 12.07bn, but company filings show a 2Q26 operating loss of KRW 14.42bn and a first-half cumulative operating loss of KRW 26.49bn. Relocation costs for US expansion and AI R&D hiring were cited as pressuring profitability. Incremental revenue has yet to offset the expanding fixed-cost base."
    }
   },
   {
    "title": {
-    "ko": "비용 구조 부담",
-    "en": "Cost-structure burden"
+    "ko": "점유율 정체와 가격 경쟁",
+    "en": "Stalled share and price competition"
    },
    "body": {
-    "ko": "매출 급증에도 영업손실이 지속된 것은 원엑시아 생산능력 증설과 AI·R&D 인력 채용에 따른 인건비 증가가 주된 원인으로, 단기 수익성보다 북미 확대와 차세대 기술 확보를 우선하는 전략의 결과다. 늘어난 판관비가 발목을 잡아 1분기 판관비가 전년 동기 대비 29% 증가했다. 투자 비용이 매출 증가를 앞지를 경우 적자가 장기화될 수 있다.",
-    "en": "Operating losses persisted despite the revenue surge mainly due to higher labor costs from ONExia capacity expansion and AI/R&D hiring—a result of prioritizing North American expansion and next-gen tech over near-term profitability. Rising SG&A was a drag, with Q1 SG&A up 29% YoY. If investment costs outpace revenue growth, losses could be prolonged."
+    "ko": "서울경제TV는 두산로보틱스의 글로벌 점유율이 2021년 3.8%에서 3.6% 수준으로 낮아진 사이 화낙은 10.8%, 중국 아우보는 6.5%로 점유율을 확대했다고 보도했다. 삼성증권도 산업용 로봇업체와 가격 경쟁력을 앞세운 중국 업체들의 시장 진입으로 점유율 감소는 불가피하다고 지적했다. 독자 개발 방식의 기술 내재화에 집중하면서 급변하는 시장 수요 대응이 늦었다는 업계 분석도 제기됐다. 국내에서도 한화로보틱스·레인보우로보틱스 등 후발주자의 투자가 확대되고 있다.",
+    "en": "SEN TV reported Doosan's global share easing from 3.8% in 2021 to about 3.6%, while FANUC expanded to 10.8% and China's AUBO to 6.5%. Samsung Securities likewise argued share loss is unavoidable as industrial robot makers and price-competitive Chinese entrants move in. Industry observers also suggested that a focus on in-house technology development slowed its response to fast-shifting demand. Domestically, later entrants such as Hanwha Robotics and Rainbow Robotics are stepping up investment."
    }
   },
   {
    "title": {
-    "ko": "경쟁 심화와 실증 부족",
-    "en": "Intensifying competition and limited field validation"
+    "ko": "기대와 실적의 시차, 컨센서스 괴리",
+    "en": "Timing gap between expectations and results"
    },
    "body": {
-    "ko": "중국 업체들이 가격 경쟁력으로 글로벌 시장을 잠식하고, 국내에서도 한화로보틱스·레인보우로보틱스 등 후발주자가 공격적 투자에 나서고 있다. 다른 피지컬 AI 협력사인 스킬드 AI·유니버설로봇·ABB 등은 이미 현장 배치를 추진하는 반면, 두산의 솔루션은 빨라야 내년부터 실전 검증 단계에 들어설 것으로 보인다. 상용화 지연 시 기대가 약화될 수 있다.",
-    "en": "Chinese players are eroding the global market on price, while domestic followers like Hanwha Robotics and Rainbow Robotics invest aggressively. Other physical-AI partners such as Skild AI, Universal Robots and ABB are already deploying in the field, whereas Doosan's solution will likely enter real-world validation only from next year at the earliest. Delays in commercialization could weaken expectations."
+    "ko": "회사 로드맵상 지능형 로봇 솔루션은 2027년, 산업용 휴머노이드는 2028년부터 순차 등장하며, 시장에서는 본격적인 AI 프리미엄 반영 시점을 2028년으로 보는 관측이 있다. 에이전틱 로봇 운영체제 기반 솔루션은 빨라야 내년부터 실전 검증 단계에 들어설 것으로 보인다는 지적도 있다. 한편 2026년 3월 시점 컨센서스 기준 2026년 매출 전망치는 약 7,200억원 수준으로 제시된 바 있어, 상반기 확정 실적과의 간극이 크다. 로드맵 지연이나 추정치 하향 조정은 주가 변동성 요인으로 작용할 수 있다.",
+    "en": "Under the company roadmap, intelligent robot solutions arrive in 2027 and industrial humanoids from 2028, with some observers seeing a meaningful AI premium reflected only from 2028. Others note the Agentic Robot O/S-based solution will likely enter field validation no earlier than next year. Meanwhile, as of March 2026 a consensus figure of roughly KRW 720bn was cited for 2026 revenue, a wide gap versus reported first-half results. Roadmap slippage or estimate cuts can be sources of share-price volatility."
    }
   }
  ],
  "risks": [
   {
    "cat": {
-    "ko": "수익성·실적 변동성",
-    "en": "Profitability and earnings volatility"
+    "ko": "수익성·현금 소진",
+    "en": "Profitability and cash burn"
    },
    "body": {
-    "ko": "회사는 다년간 적자를 이어왔고, 매출 성장과 비용 증가가 동시에 진행되고 있어 분기 실적 변동성이 크다. 흑자 전환은 솔루션 사업의 매출 전환과 영업 레버리지 발생에 달려 있다. 신공장 증설 이후 추가 수주 확보와 매출 전환, 영업 레버리지 발생 여부가 중장기 수익성 개선의 핵심 변수로 지목된다.",
-    "en": "The company has run multi-year losses, and simultaneous revenue growth and cost increases make quarterly results volatile. A swing to profit hinges on converting solution-business orders into revenue and on operating leverage. Securing additional orders after the new-plant expansion, converting them to revenue, and whether operating leverage emerges are cited as key variables for mid- to long-term profitability."
+    "ko": "2025년 영업활동현금흐름은 -173억2,252만원으로 2024년(-437억7,045만원)보다 유출 폭이 줄었지만 여전히 순유출이다. 자본총계는 2023년 4,388억809만원에서 2025년 3,485억9,499만원으로 감소했다. 2020년 이후 적자가 이어지며 누적 결손금이 1,300억원을 넘어섰다는 보도도 있다. 적자 지속 시 추가 자금 조달이나 투자 속도 조절 필요성이 커질 수 있다.",
+    "en": "FY2025 operating cash flow was -KRW 17.32bn, a smaller outflow than 2024's -KRW 43.77bn but still negative. Equity declined from KRW 438.81bn in 2023 to KRW 348.59bn in 2025. Reports note accumulated deficits have exceeded KRW 130bn amid losses since 2020. Persistent losses could raise the need for additional funding or a slower investment pace."
    }
   },
   {
    "cat": {
-    "ko": "기술 상용화·실증 리스크",
-    "en": "Commercialization and validation risk"
+    "ko": "공급망·부품 의존",
+    "en": "Supply chain and component dependence"
    },
    "body": {
-    "ko": "엔비디아 협력과 휴머노이드 로드맵은 2027~2028년에 집중돼 있어 단기 실적 기여는 제한적이다. 기술적 성과는 냈으나 산업 현장에서 충분히 실증됐다고 보기 어렵다는 평가가 있다. 로드맵 지연이나 실증 실패 시 시장 기대와의 괴리가 커질 수 있다.",
-    "en": "The NVIDIA partnership and humanoid roadmap are concentrated in 2027–2028, limiting near-term earnings contribution. There is a view that while it has produced technical achievements, these are hard to call fully validated in the field. Delays in the roadmap or validation failures could widen the gap with market expectations."
+    "ko": "협동로봇 제조 원가의 절반을 차지하는 핵심 부품이 여전히 일본 등 해외 수입에 의존해 매출 증가가 수익으로 연결되기 어렵다는 지적이 있다. 환율과 부품 가격 변동은 매출총이익률에 직접 영향을 줄 수 있다. 미국 현지 생산·조달 확대 과정에서는 미국 법인 확장 이전 비용처럼 일시적 비용이 추가로 발생할 수 있다. 부품 국산화·내재화 진척도가 마진 개선의 전제 조건 중 하나다.",
+    "en": "Roughly half of cobot manufacturing cost lies in core components still imported from Japan and elsewhere, making it hard for revenue growth to convert into profit. Currency and component price swings can directly affect gross margin. Expanding US production and sourcing can also bring one-off costs, as seen with relocation expenses for the US unit. Progress on component localization and in-housing is a precondition for margin improvement."
    }
   },
   {
    "cat": {
-    "ko": "거시·통상 환경",
-    "en": "Macro and trade environment"
+    "ko": "규제·통상 정책",
+    "en": "Regulatory and trade policy"
    },
    "body": {
-    "ko": "전방 자동화 투자는 경기와 금리, 제조업 설비투자 사이클에 민감하다. 지난해까지 북미·유럽은 경기침체 등으로 전방산업 투자가 이뤄지지 않았다는 점에서 수요 회복의 지속성이 관건이다. 미국 현지 제조 거점은 관세 리스크 완화에 기여하지만 통상 환경 변화는 여전히 변수다.",
-    "en": "Downstream automation investment is sensitive to the economy, interest rates and the manufacturing capex cycle. Given that North America and Europe saw no downstream investment through last year amid recession, the durability of the demand recovery is key. A local U.S. manufacturing base helps mitigate tariff risk, but shifts in the trade environment remain a variable."
+    "ko": "미국 연방통신위원회는 2026년 7월 28일 2kg 초과 통신형 이동 로봇을 점검 항목 목록에 추가하며 신규 수입 승인을 중단했고, 이미 승인된 기존 제품은 계속 판매할 수 있도록 했다. 보도에 따르면 국내 기업이 국내외 공장에서 제조해 미국에 수출하는 휴머노이드·사족보행 로봇도 원칙적으로 규제 대상에 포함되며, 미국 시장 진출을 위해서는 지분 구조·공급망 위험 공시와 미국 내 생산 거점 마련 부담이 따를 수 있다. FCC는 기존 승인 제품을 규제 대상에서 제외했지만 필요할 경우 판매 승인을 취소할 수 있도록 했다. 2028년 휴머노이드 로드맵과 규제 범위의 상호작용을 지속 확인할 필요가 있다.",
+    "en": "On 28 July 2026 the US FCC added networked mobile robots over 2kg to its review list and halted new import approvals, while allowing already-approved products to continue being sold. Reports indicate humanoid and quadruped robots exported to the US by Korean firms are in principle covered as well, and that US market access may require disclosure of ownership and supply-chain risk plus a domestic production base. The FCC exempted previously approved products but retained the ability to revoke marketing authorization if needed. The interaction between the 2028 humanoid roadmap and the regulatory perimeter warrants ongoing monitoring."
    }
   }
  ],
  "checkpoints": [
   {
    "when": {
-    "ko": "2026년 7월 말~8월",
-    "en": "Late July–August 2026"
+    "ko": "2026년 10월 하순 (3분기 실적)",
+    "en": "Late October 2026 (3Q results)"
    },
    "what": {
-    "ko": "2026년 2분기 실적 발표. 매출 성장세 지속 여부와 영업손실 추가 축소, 매출총이익률 개선 지속 여부를 확인해야 한다. 원엑시아 수주잔고의 매출 전환 속도가 핵심이다.",
-    "en": "Q2 2026 earnings. Watch whether revenue growth continues, whether the operating loss narrows further, and whether gross-margin improvement is sustained. The pace of converting ONExia's backlog into revenue is key."
+    "ko": "DS투자증권이 언급한 약 200억원 규모 수주 잔고의 3분기 매출 인식 여부와 분기 영업손실 축소 폭을 확인해야 한다. 상반기 누적 영업손실 264억8,700만원과 비교해 손익 개선이 숫자로 나타나는지가 관건이다.",
+    "en": "Check whether the roughly KRW 20bn backlog flagged by DS Investment & Securities is recognized as third-quarter revenue, and how much the quarterly operating loss narrows. The key is whether improvement appears in reported numbers against the first-half operating loss of KRW 26.49bn."
    }
   },
   {
    "when": {
-    "ko": "2026년 9월경",
-    "en": "Around September 2026"
+    "ko": "2026년 하반기 중",
+    "en": "During 2H 2026"
    },
    "what": {
-    "ko": "미국 펜실베이니아 원엑시아 신공장 증설 완료 예정 시점. 9월까지 생산능력 2배 이상 확대 계획의 실제 완료와 가동률, 추가 수주 확보 여부가 외형·수익성에 직접 영향을 준다.",
-    "en": "Target completion of the ONExia plant expansion in Pennsylvania. The actual completion of the plan to more than double capacity by September, along with utilization and additional order wins, will directly affect scale and profitability."
+    "ko": "차세대 협동로봇 모델 개발, 자체 AI 모델 플랫폼·데이터 인프라 구축 진행 상황과 추가 인수합병·전략적 파트너십 검토 결과를 확인할 필요가 있다. 자본 배분 규모와 비용 인식 시점이 손익에 영향을 준다.",
+    "en": "Monitor progress on next-generation cobot development, the proprietary AI model platform and data infrastructure, and the outcome of ongoing M&A and partnership reviews. The scale of capital allocation and the timing of expense recognition will affect earnings."
    }
   },
   {
    "when": {
-    "ko": "2027년 (CES 전후)",
-    "en": "2027 (around CES)"
+    "ko": "2027년 1월 (CES 2027 전후)",
+    "en": "January 2027 (around CES 2027)"
    },
    "what": {
-    "ko": "CES 등 글로벌 전시회에서 엔비디아와의 협업 결과물 발표 추진 및 에이전틱 로봇 운영체제 기반 지능형 로봇 솔루션 출시 일정. 피지컬 AI 로드맵의 실제 이행 여부를 가늠할 분기점이다.",
-    "en": "Plans to present results of the NVIDIA collaboration at global exhibitions such as CES, plus the launch schedule for the Agentic Robot O/S-based intelligent robot solution. A milestone for gauging actual execution of the physical-AI roadmap."
+    "ko": "에이전틱 로봇 운영체제 기반 지능형 로봇 솔루션 공개와 엔비디아 협업 결과물 발표 여부가 로드맵 이행의 첫 관문이다. 시제품 단계를 넘어 수주·매출로 이어지는지가 실질 지표다.",
+    "en": "The first milestone is whether the Agentic Robot O/S-based intelligent robot solution and NVIDIA collaboration results are unveiled. The substantive test is whether it moves beyond prototypes into orders and revenue."
    }
   },
   {
    "when": {
-    "ko": "수시",
-    "en": "Ongoing"
+    "ko": "규제 후속 조치 발표 시점",
+    "en": "When follow-up regulatory steps are announced"
    },
    "what": {
-    "ko": "신규 대형 수주 공시, 유럽·북미 고객 확대, 중국 업체 저가 공세 및 국내 경쟁사(한화·레인보우) 동향. 협동로봇 단품에서 솔루션 중심으로의 매출 믹스 변화를 모니터링해야 한다.",
-    "en": "Disclosures of large new orders, European/North American customer expansion, Chinese low-cost competition, and moves by domestic rivals (Hanwha, Rainbow). Monitor the revenue-mix shift from standalone cobots toward solutions."
+    "ko": "FCC가 중국 외 국가의 공급업체 대부분을 규제 대상에서 제외할 가능성이 높다고 밝힌 만큼, 세부 규정에서 협동로봇·이동로봇의 적용 범위가 어떻게 확정되는지 확인해야 한다. 미국 내 생산 요건 강화 여부는 원가와 투자 계획에 영향을 줄 수 있다.",
+    "en": "Since the FCC indicated most non-Chinese suppliers will likely be excluded, watch how detailed rules define coverage for cobots and mobile robots. Any tightening of US production requirements could affect costs and capex plans."
+   }
+  },
+  {
+   "when": {
+    "ko": "2028년 (휴머노이드 상용화 목표 시점)",
+    "en": "2028 (targeted humanoid commercialization)"
+   },
+   "what": {
+    "ko": "2028년 산업용 휴머노이드 상용화 목표의 중간 이행 지표를 추적할 필요가 있다. 업계에서는 시뮬레이션 학습을 실제 공정으로 옮기는 격차가 평가 기준이며, 제조 현장 상용화에는 99% 이상 작업 신뢰도가 필요한데 시범 단계에서 70%대 성공률에 머무는 사례가 적지 않다는 진단이 나온다.",
+    "en": "Track interim milestones toward the 2028 industrial humanoid commercialization target. Industry views hold that closing the sim-to-real gap is the yardstick, and that while factory deployment requires over 99% task reliability, many pilots stall in the 70% range."
    }
   }
  ],
  "verdict": {
   "body": {
-   "ko": "두산로보틱스는 국내 협동로봇 1위 지위를 바탕으로, 원엑시아 인수와 북미 확장을 통해 하드웨어 제조사에서 AI·자동화 솔루션 기업으로의 체질 전환을 추진하고 있다. 2026년 1분기 매출이 전년 동기 대비 189.7% 급증하고 분기 영업손실이 축소되는 등 외형과 마진 양면에서 개선 신호가 나타났지만, 회사는 창립 이래 흑자를 낸 적이 없고 확정 재무상 적자가 확대돼 온 점이 부담이다. 엔비디아 협력과 2027~2028년 지능형 로봇·휴머노이드 로드맵은 중장기 성장 기대를 뒷받침하나, 실적 기여는 미래에 집중돼 있고 현장 실증은 아직 초기 단계다. 매출 성장과 비용 증가가 동시에 진행되는 전환기 특성상 흑자 전환 시점과 영업 레버리지 발생 여부가 핵심 관전 포인트다. 주가는 순자산 대비 프리미엄이 큰 구간에 있어 향후 솔루션 사업의 실적 가시화에 대한 의존도가 높다. 강세 요인(외형 급성장·AI 모멘텀)과 약세 요인(지속 적자·경쟁 심화·실증 부족)이 균형을 이루고 있어, 분기 실적과 수주·증설·기술 일정의 실제 이행을 단계적으로 확인하는 접근이 필요하다. 본 자료는 정보 제공 목적이며 투자 권유가 아니다.",
-   "en": "Backed by its No.1 position in Korea's cobot market, Doosan Robotics is pursuing a transformation from a hardware maker into an AI and automation-solution company via the ONExia acquisition and North American expansion. Q1 2026 revenue surged 189.7% YoY and the quarterly operating loss narrowed, signaling improvement on both scale and margin, but the company has never posted a profit since its founding and its loss has widened on confirmed figures—a burden. The NVIDIA partnership and the 2027–2028 intelligent-robot and humanoid roadmap support mid- to long-term growth expectations, but earnings contribution is concentrated in the future and field validation remains early-stage. Given the transition-period dynamic of simultaneous revenue growth and cost increases, the timing of the swing to profit and whether operating leverage emerges are the key things to watch. The shares sit in a zone carrying a sizable premium to net assets, making them highly dependent on the future earnings visibility of the solution business. With bull factors (rapid top-line growth, AI momentum) and bear factors (persistent losses, intensifying competition, limited validation) in balance, a step-by-step approach of verifying quarterly results and the actual execution of order, capacity and technology milestones is warranted. This material is for informational purposes only and is not investment advice."
+   "ko": "두산로보틱스는 확정 실적상 아직 손익 증명 전 단계에 있는 회사다. 연간 매출은 2023년 530억3,837만원에서 2025년 329억7,834만원으로 줄었고 영업손실은 594억7,231만원(영업이익률 -180.3%)까지 확대됐으나, 분기로는 2025년 2분기 45억3,227만원을 저점으로 2026년 1분기 152억9,480만원까지 4개 분기 연속 매출이 늘었다. 회사가 공시한 2026년 2분기 매출은 176억7,400만원, 상반기 누적 매출은 329억6,900만원, 상반기 영업손실은 264억8,700만원이다 — 외형은 원엑시아 연결과 북미 EOL 수주로 레벨이 올라섰지만 손실은 아직 뚜렷하게 줄지 않았다. 강세 측 논리는 북미 턴키 솔루션 내재화, 해외 매출 비중, 그리고 2027년 지능형 로봇 솔루션·2028년 산업용 휴머노이드로 이어지는 엔비디아 협력 로드맵에 있다. 약세 측 논리는 고정비 확대에 따른 적자 지속, 글로벌 점유율 정체, 중국 업체 진입에 따른 점유율 압박, 그리고 로드맵과 실적 사이의 긴 시차다. 밸류에이션은 이익 기반 배수가 산출되지 않고 배당도 없는 상태에서 순자산 대비 프리미엄이 큰 구간이며, 이 프리미엄의 근거는 향후 분기 실적과 로드맵 이행으로만 검증된다. 따라서 3분기 실적의 손실 축소 폭, 수주의 매출 전환 속도, CES 2027 전후의 제품 공개 일정이 이 종목을 판단하는 사실 기반 관측 포인트다.",
+   "en": "On confirmed numbers, Doosan Robotics remains a company yet to prove its earnings model. Annual revenue fell from KRW 53.04bn in 2023 to KRW 32.98bn in 2025 while the operating loss widened to KRW 59.47bn (-180.3% margin), yet quarterly revenue rose for four consecutive quarters from a KRW 4.53bn trough in 2Q25 to KRW 15.29bn in 1Q26. Company filings show 2Q26 revenue of KRW 17.67bn, first-half revenue of KRW 32.97bn and a first-half operating loss of KRW 26.49bn - the revenue base has stepped up on the ONExia consolidation and North American EOL orders, but losses have not clearly shrunk. The bullish case rests on in-housed North American turnkey solutions, a high overseas revenue mix, and the NVIDIA-linked roadmap running from 2027 intelligent robot solutions to 2028 industrial humanoids. The bearish case rests on continued losses from an expanding fixed-cost base, stalled global share, share pressure from Chinese entrants, and the long gap between roadmap and results. With no earnings-based multiple and no dividend, the valuation sits at a large premium to net assets, and that premium can only be tested by coming quarterly results and roadmap execution. The fact-based observation points are therefore the size of the loss reduction in third-quarter results, the speed of order-to-revenue conversion, and the product disclosure schedule around CES 2027."
   }
  },
  "sources": [
-  "https://www.investing.com/equities/doosan-robotics-earnings",
-  "https://m.irgo.co.kr/IR-COMP/454910/",
-  "https://thestock.co.kr/%EC%8B%A4%EC%A0%81%EB%A6%AC%EB%B7%B0-%EB%91%90%EC%82%B0%EB%A1%9C%EB%B3%B4%ED%8B%B1%EC%8A%A4-2026%EB%85%84-1%EB%B6%84%EA%B8%B0-%EC%8B%A4%EC%A0%81-%EB%B6%84%EC%84%9D-%EB%A7%A4%EC%B6%9C-190-%ED%8F%AD/",
-  "https://m.finance.daum.net/quotes/A454910/news/disclosure/20260511055574",
-  "https://dealsite.co.kr/articles/162384",
-  "https://www.hankyung.com/article/202604283034i",
-  "https://kr.investing.com/news/stock-market-news/article-1961068",
-  "https://life.sano.co.kr/%EB%91%90%EC%82%B0%EB%A1%9C%EB%B3%B4%ED%8B%B1%EC%8A%A4-%EC%A3%BC%EA%B0%80-2026%EB%85%84-6%EC%9B%94-%EC%A0%84%EB%A7%9D",
-  "https://www.cbci.co.kr/news/articleView.html?idxno=570816",
-  "https://comp.wisereport.co.kr/company/c1010001.aspx?cmp_cd=454910",
   "https://alphasquare.co.kr/home/stock-summary?code=454910",
-  "https://alphasquare.co.kr/home/theme-factor?theme-id=76",
-  "https://m.finance.daum.net/quotes/A108490/news/stock/20260303050242257",
-  "https://jasoseol.com/companies/5825/insights",
-  "https://kind.krx.co.kr/common/disclsviewer.do?method=search&acptno=20260318002234&docno=&viewerhost=",
-  "https://m.irgo.co.kr/IR-COMP/454910/%EB%91%90%EC%82%B0%EB%A1%9C%EB%B3%B4%ED%8B%B1%EC%8A%A4-IR-PAGE",
-  "https://www.bosoop.com/dbf3eec5-0650-41e8-a100-5b606b07762f/",
-  "https://v.daum.net/v/6TsYeEiPvp?f=p"
+  "https://thestock.co.kr/%EC%8B%A4%EC%A0%81%EB%A6%AC%EB%B7%B0-%EB%91%90%EC%82%B0%EB%A1%9C%EB%B3%B4%ED%8B%B1%EC%8A%A4-2026%EB%85%84-1%EB%B6%84%EA%B8%B0-%EC%8B%A4%EC%A0%81-%EB%B6%84%EC%84%9D-%EB%A7%A4%EC%B6%9C-190-%ED%8F%AD/",
+  "https://www.digitaltoday.co.kr/news/articleView.html?idxno=686812",
+  "https://land114.co.kr/%EC%8B%A4%EC%A0%81%EB%A6%AC%EB%B7%B0-%EB%91%90%EC%82%B0%EB%A1%9C%EB%B3%B4%ED%8B%B1%EC%8A%A4-2026%EB%85%84-1%EB%B6%84%EA%B8%B0-%EC%8B%A4%EC%A0%81-%EB%B6%84%EC%84%9D-%EB%A7%A4%EC%B6%9C-190-%ED%8F%AD/",
+  "https://www.investing.com/equities/doosan-robotics-earnings",
+  "https://comp.wisereport.co.kr/company/c1010001.aspx?cmp_cd=454910",
+  "https://littlebproject.com/stock/454910",
+  "https://life.sano.co.kr/%EB%91%90%EC%82%B0%EB%A1%9C%EB%B3%B4%ED%8B%B1%EC%8A%A4-%EC%A3%BC%EA%B0%80-2026%EB%85%84-6%EC%9B%94-%EC%A0%84%EB%A7%9D",
+  "https://bullstory.io/blog/%EB%91%90%EC%82%B0%EB%A1%9C%EB%B3%B4%ED%8B%B1%EC%8A%A4-%EC%A3%BC%EA%B0%80-%EC%A0%84%EB%A7%9D-2026%EB%85%84-8%EC%9B%94-2%EB%B6%84%EA%B8%B0-%EC%8B%A4%EC%A0%81%EA%B3%BC-%EB%B0%98%EB%93%B1-%EC%A1%B0%EA%B1%B4-%EC%A0%90%EA%B2%80",
+  "https://zdnet.co.kr/view/?no=20260724162501",
+  "https://www.newspim.com/news/view/20260724001172",
+  "https://www.sedaily.com/article/20071585",
+  "https://m.irgo.co.kr/IR-COMP/454910/",
+  "https://bullstory.io/blog/%EB%91%90%EC%82%B0%EB%A1%9C%EB%B3%B4%ED%8B%B1%EC%8A%A4-%EC%A3%BC%EA%B0%80-%EC%A0%84%EB%A7%9D",
+  "https://www.etnews.com/20260429000466",
+  "https://news.nate.com/view/20260508n24273",
+  "https://www.choicestock.co.kr/stock/news_view/154645",
+  "https://www.bloter.net/news/articleView.html?idxno=661695"
  ],
  "v": 2,
- "model": "claude-opus-4-8",
+ "model": "claude-opus-5",
  "ticker": "454910",
  "name": "두산로보틱스",
  "name_en": "Doosan Robotics Inc.",
@@ -224,11 +234,11 @@
   "로봇"
  ],
  "market": "코스피",
- "reportDate": "2026-06-16",
- "reportTs": "2026-06-16 09:52",
- "dataDate": "20260615",
+ "reportDate": "2026-08-14",
+ "reportTs": "2026-08-14 21:54",
+ "dataDate": "20260814",
  "quant": {
-  "asOf": "2026-06-16",
+  "asOf": "2026-08-14",
   "fs_basis": "연결(CFS) · DART 공시 확정치 · 지배주주 기준 순이익",
   "annual": [
    {
@@ -310,23 +320,23 @@
    }
   ],
   "valuation": {
-   "price": 111400,
-   "mcap": 7.2209,
+   "price": 79200,
+   "mcap": 5.1337,
    "shares": 64819980,
    "total_shares": 64819980,
    "wavg_shares": 65001368,
    "per": null,
    "eps": -852,
-   "pbr": 21.23,
+   "pbr": 15.09,
    "bps": 5247,
    "roe_ttm": -15.0,
    "ttm_window": "2025Q2~2026Q1",
    "ttm_np_owner": -55242975512,
-   "pbr_krx": null,
-   "bps_krx": null,
+   "pbr_krx": 14.73,
+   "bps_krx": 5378.0,
    "basis": "PER·EPS·PBR·BPS 모두 자체 산출(네이버·토스와 동일 방식) · 배당은 DART 공시 주당현금배당금(보완:KRX) ÷ 현재가",
-   "dps": null,
-   "div": null
+   "dps": 0.0,
+   "div": 0.0
   }
  }
 }

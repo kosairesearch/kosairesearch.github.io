@@ -1,220 +1,230 @@
 {
  "title": {
-  "ko": "손해율 정상화와 고배당, 그리고 오버행",
-  "en": "Loss-ratio normalization, high payout, and overhang"
+  "ko": "손해율 정상화 대 예보 매각, 배당이 축",
+  "en": "Loss-Ratio Normalization vs. State Sell-Down, With Dividends at the Core"
  },
  "lead": {
-  "ko": "전세보증 손해율 급등으로 눌렸던 이익이 회복 국면에 들어선 국내 유일의 전업 보증보험사로, 연 2,000억원 주주환원 약속과 예금보험공사의 지분 매각이 핵심 변수다.",
-  "en": "Korea's only monoline guarantee insurer is recovering from a surge in housing-deposit loss ratios, with its annual KRW 200 billion shareholder-return pledge and Korea Deposit Insurance Corporation's stake sales as the key swing factors."
+  "ko": "전세·주택보증 손해율이 빠르게 정상화되며 이익이 회복되는 국면이지만, 예금보험공사의 단계적 지분 매각과 일회성 요인이 섞인 손해율 개선의 지속성이 동시에 시험받는 구간이다.",
+  "en": "Earnings are recovering as housing- and jeonse-related loss ratios normalize, but the sustainability of that improvement — partly one-off driven — is being tested alongside the state depositor-protection agency's staged stake sell-down."
  },
  "keypoints": [
   {
-   "ko": "2026년 1분기 보험손익이 전년 동기 대비 23배 이상 급증하며 이익 회복세가 뚜렷해졌고, 원수경과손해율이 큰 폭으로 하락했다.",
-   "en": "First-quarter 2026 insurance profit jumped more than 23-fold year on year and the earned loss ratio fell sharply, making the earnings recovery clear."
+   "ko": "2025년 연결 보험수익 2조1,755억원, 영업이익 3,757억원, 지배주주 순이익 2,684억원으로 이익이 회복됐고, 4분기 영업이익 1,829억원이 연간 이익의 절반 가까이를 채웠다.",
+   "en": "In 2025 consolidated insurance revenue was KRW 2,175.5bn with operating profit of KRW 375.7bn and owners' net profit of KRW 268.4bn; Q4 alone contributed KRW 182.9bn of operating profit, close to half of the annual figure."
   },
   {
-   "ko": "국내 유일 전업 보증보험사로 전체 보증시장의 약 24%, 민간시장의 절반 이상을 점유한다.",
-   "en": "As Korea's sole monoline guarantee insurer, it holds about a quarter of the total guarantee market and over half of the private market."
+   "ko": "2026년 1분기 보험수익 6,524억원(전년 동기 대비 약 24% 증가), 영업이익 935억원, 지배주주 순이익 574억원으로 큰 폭 증익했다.",
+   "en": "In Q1 2026 insurance revenue reached KRW 652.4bn (up roughly 24% year on year), operating profit KRW 93.5bn and owners' net profit KRW 57.4bn — a steep improvement."
   },
   {
-   "ko": "2027년까지 연 2,000억원 주주환원 보장과 분기배당 도입, 자사주 매입·소각 검토 등 적극적 환원 정책을 제시했다.",
-   "en": "It has pledged at least KRW 200 billion in annual shareholder returns through 2027, plus quarterly dividends and possible buybacks/cancellations."
+   "ko": "원수경과손해율은 2024년 75.2%, 2025년 74.7%에서 2026년 1분기 53.0%로 급락했으나, 약 850억원의 정산보험료 일회성 효과를 제외한 경상 손해율은 62.4%로 집계됐다(증권사 분석).",
+   "en": "The direct earned loss ratio fell from 75.2% in 2024 and 74.7% in 2025 to 53.0% in Q1 2026, though brokerage analysis puts the underlying ratio at 62.4% excluding roughly KRW 85bn of one-off premium settlements."
   },
   {
-   "ko": "최대주주 예금보험공사(상장 후 83.85%)가 2027년 말까지 지분을 50% 수준으로 낮추려 단계적으로 매각 중이라 오버행이 상존한다.",
-   "en": "Top shareholder KDIC (83.85% post-IPO) is gradually selling down toward 50% by end-2027, keeping overhang risk ever-present."
+   "ko": "회사는 2027 회계연도까지 연 2,000억원 총주주환원 보장과 주주환원율 50% 이상을 목표로 제시했고, 2025년 결산 주당배당금은 2,865원이었다.",
+   "en": "The company targets a guaranteed KRW 200bn annual total shareholder return and a payout ratio above 50% through fiscal 2027; the 2025 year-end dividend was KRW 2,865 per share."
   },
   {
-   "ko": "이익이 경기·부동산 사이클에 민감하고 손해율 개선에 일회성 요인이 일부 섞여 있어 회복 지속성 확인이 필요하다.",
-   "en": "Earnings are sensitive to the economic and property cycle and the loss-ratio improvement includes some one-off items, so the durability of the recovery needs monitoring."
+   "ko": "예금보험공사는 2026년 3월 지분 4.3%를 블록딜로 매각해 누적 공적자금 회수율을 51.9%로 높였고, 2027년 말까지 최대 33.85% 단계 매각 계획을 유지하고 있다.",
+   "en": "The Korea Deposit Insurance Corporation sold a 4.3% stake via block deal in March 2026, lifting cumulative public-fund recovery to 51.9%, and retains a plan to divest up to 33.85% in stages by end-2027."
   }
  ],
  "business": {
-  "ko": "서울보증보험은 1969년 설립된 대한보증보험을 모태로 1998년 한국보증보험과 합병해 현재 사명을 갖게 됐으며, 2025년 3월 유가증권시장에 상장했다. 회사는 국내 유일의 전업 보증보험사로 신원보증 등 74개 보증보험 상품과 재보험 사업을 영위하며, 2025년 기준 보증시장 점유율은 전체 23.9%, 민간 55.0%를 차지한다. 주력 상품은 공사·납품 등 계약 이행을 보증하는 이행보증, 그리고 전세금반환보증을 포함한 주택·부동산 관련 보증이며, 수입보험료 비중이 가장 큰 영역은 이행보증으로 파악된다. 보증보험은 채무자가 의무를 이행하지 못할 때 보험사가 대신 보험금을 지급(대위변제)한 뒤 구상권을 행사해 회수하는 구조다. 대체로 1~3년에 걸쳐 지급보험금의 약 50%를 구상권 행사로 회수하며, 리스크 관리 양상이 일반 보험사의 언더라이팅보다 은행의 신용평가·연체 관리에 가깝다는 평가가 나온다. 이 때문에 회사의 본질은 일반 손해보험사보다 신용위험을 다루는 금융기관에 가깝다는 해석이 많다. 고객은 건설사·일반기업·금융기관·개인 임차인 등 광범위하며, 전업 구조 덕분에 직접적인 경쟁자는 제한적이다. 자본건전성을 가늠하는 K-ICS 비율은 3월 말 기준 395.1%로, 금융당국 권고치를 크게 웃도는 업계 최고 수준을 유지하고 있다.",
-  "en": "Seoul Guarantee Insurance traces its roots to Korea Guarantee Insurance founded in 1969, merged with Korea Fidelity and Surety in 1998 to take its current name, and listed on the KOSPI market in March 2025. As Korea's only monoline guarantee insurer, it operates 74 guarantee insurance products including fidelity guarantees plus a reinsurance business, holding a 23.9% share of the total guarantee market and 55.0% of the private market as of 2025. Its main lines are contract performance guarantees and housing/property-related guarantees including jeonse-deposit return guarantees, with performance guarantees making up the largest premium share. In guarantee insurance, the insurer pays a claim when a debtor fails to meet an obligation, then recovers funds through subrogation. The company typically recovers about 50% of claims paid via subrogation over one to three years, and its risk management resembles a bank's credit assessment and delinquency management more than a typical insurer's underwriting. For that reason many view its core nature as closer to a credit-risk financial institution than a standard non-life insurer. Its customers range broadly across builders, corporations, financial institutions and individual tenants, and its monoline structure limits direct competitors. Its K-ICS solvency ratio, a gauge of capital strength, stood at 395.1% at end-March, far above the regulator's guidance and among the highest in the industry."
+  "ko": "서울보증보험은 국내 유일의 전업 보증보험사로, 보증보험과 신용보험, 그리고 재보험 인수를 통해 개인과 기업의 계약이행·신용 위험을 인수하는 사업 구조를 갖고 있다. 2025년 기준 신원보증 등 74개 보증보험 상품과 재보험 사업을 영위하며, 전체 보증시장 점유율은 23.9%, 민간 보증시장 기준으로는 55.0%로 집계된다. 한국신용평가 자료에 따르면 포트폴리오는 보증보험과 신용보험(약 35%)으로 나뉘고, 신용보험 보증잔액 167조원은 개인금융 33%, 주택담보대출 신용보험(MCI) 23% 등으로 구성되며 전세금 보장상품은 신용보험 보증잔액의 약 4% 수준이다(2025년 6월 평가). 수입보험료 기준으로는 이행보증의 비중이 가장 크다는 점이 증권사 자료에서 확인된다. 인수 위험의 산업별 분포는 금융보험업 23%, 제조업 19%, 부동산·임대업 9%, 건설업 7% 등으로 상품·업종 분산도가 높은 편으로 평가된다. 보증보험업은 금융당국 인가 규제로 진입장벽이 존재해 확고한 시장지위가 유지되고 있고, 공적 보증기능과 공적자금 상환 일정을 감안할 때 단기 내 시장 개방 가능성은 낮다는 평가가 제시된 상태다. 국내 보증업을 영위하는 기관은 약 80곳에 이르지만 전업 보증보험사는 이 회사뿐이라는 점이 구조적 특징이다. 자산운용은 보수적으로, 일반 손해보험사와 달리 대체투자·외화유가증권 등 고수익 자산 비중을 낮게 유지하며 위험자산 비중 22%, 가중부실자산비율 0.20% 수준을 기록했다(2025년 3월 말). 요약하면 성장보다는 보증잔액 관리와 손해율 통제, 그리고 자본 정책이 기업가치의 핵심 변수로 작동하는 사업 모델이다.",
+  "en": "Seoul Guarantee Insurance is Korea's only dedicated surety insurer, underwriting contract-performance and credit risk for individuals and companies through surety insurance, credit insurance and assumed reinsurance. As of 2025 it offered 74 surety products including fidelity guarantees plus a reinsurance business, with a 23.9% share of the total guarantee market and 55.0% of the private guarantee market. According to Korea Investors Service (June 2025), the book splits between surety and credit insurance (about 35%); credit insurance guarantee balances of KRW 167tn consist of 33% retail finance and 23% mortgage credit insurance, while jeonse deposit protection products account for roughly 4% of credit insurance balances. Brokerage material notes that performance guarantees represent the largest share of written premiums. Risk exposure by industry is spread across finance and insurance (23%), manufacturing (19%), real estate and leasing (9%) and construction (7%), which is viewed as relatively well diversified. Licensing regulation creates entry barriers that entrench the firm's position, and given its public guarantee role and the public-fund repayment schedule, near-term market opening is seen as unlikely. Around 80 institutions provide guarantees in Korea, yet this is the only dedicated surety insurer. Asset management is conservative: unlike typical non-life insurers it keeps alternative and foreign securities exposure low, with risk assets at 22% of invested assets and a weighted impaired asset ratio of 0.20% as of March 2025. In short, this is a model where guarantee balance management, loss-ratio control and capital policy drive corporate value more than top-line growth."
  },
  "earnings": {
-  "ko": "2025년 연결 기준 보험수익은 약 2조1,755억원, 영업이익 3,757억원, 지배주주 순이익은 2,684억원, 기본주당순이익은 3,844원을 기록했다. 분기 흐름을 보면 2025년 1분기 순이익 193억원에서 2분기 655억원, 3분기 619억원, 4분기 1,217억원으로 연중 뒤로 갈수록 이익이 커지는 계절성을 보였고, 영업이익도 1분기 273억원에서 4분기 1,829억원으로 확대됐다. 2026년 1분기에는 보험수익 6,524억원, 영업이익 935억원, 지배주주 순이익 574억원을 기록해 전년 동기(영업이익 273억원, 순이익 193억원) 대비 크게 개선됐다. 회복의 핵심은 보험손익으로, 2026년 1분기 보험손익은 625억원으로 지난해 같은 기간(27억원)보다 23배 이상 급증했다. 손해율 지표도 뚜렷이 좋아져 1분기 원수경과손해율은 53.0%로, 받은 보험료 가운데 실제 보험금으로 지급한 비율을 나타내는 이 지표가 2024년 75.2%, 2025년 74.7%에서 큰 폭 하락했다. 다만 주택·부동산 관련 정산보험료 유입 등으로 보험수익이 1년 전보다 1,195억원 늘어난 영향이 포함돼 있어 일부는 일회성 성격이 있다. 투자손익은 1분기 299억원으로 전년 동기(239억원)보다 25.3% 증가했고, 환율 상승에 따른 일부 평가손실이 있었지만 보유 자산의 이자수익이 늘면서 안정적 흐름을 이어갔다. 통상 1분기 이익 규모가 연중 가장 작게 나타난다는 점에서 회복 추세의 방향성은 유효하다는 평가다.",
-  "en": "In 2025, consolidated insurance revenue was about KRW 2.18 trillion, operating profit KRW 375.7 billion, owner net profit KRW 268.4 billion and basic EPS KRW 3,844. By quarter, 2025 net profit rose through the year — KRW 19.3 billion in Q1, KRW 65.5 billion in Q2, KRW 61.9 billion in Q3 and KRW 121.7 billion in Q4 — while operating profit expanded from KRW 27.3 billion in Q1 to KRW 182.9 billion in Q4, showing clear seasonality. In Q1 2026, insurance revenue was KRW 652.4 billion, operating profit KRW 93.5 billion and owner net profit KRW 57.4 billion, sharply better than a year earlier (operating profit KRW 27.3 billion, net profit KRW 19.3 billion). The recovery's core was insurance profit, as Q1 2026 insurance profit reached KRW 62.5 billion, more than 23 times the KRW 2.7 billion a year earlier. Loss-ratio metrics also improved markedly: the Q1 earned loss ratio — the share of premiums actually paid out as claims — was 53.0%, a steep drop from 75.2% in 2024 and 74.7% in 2025. However, part of this is one-off in nature, as insurance revenue rose KRW 119.5 billion year on year on inflows including housing/property settlement premiums. Investment profit also helped: Q1 investment income was KRW 29.9 billion, up 25.3% from KRW 23.9 billion a year earlier, holding steady as interest income from assets grew despite some valuation losses from a rising exchange rate. Since Q1 earnings are usually the smallest of the year, the direction of the recovery is seen as intact."
+  "ko": "2025년 연결 실적은 보험수익 2조1,755억원, 영업이익 3,757억원, 지배주주 순이익 2,684억원으로 이익이 회복 방향을 보였고, 영업활동현금흐름은 3,872억원을 기록했다. 보험수익 대비 영업이익 비율은 약 17%로, 손해율이 정점을 통과하는 국면의 마진 수준을 보여준다. 분기 흐름은 뚜렷한 상향 곡선이었다. 2025년 영업이익은 1분기 273억원에서 2분기 846억원, 3분기 809억원을 거쳐 4분기 1,829억원으로 확대됐고, 지배주주 순이익도 193억원 → 655억원 → 619억원 → 1,217억원으로 4분기에 집중됐다. 2026년 1분기에는 보험수익 6,524억원(전년 동기 5,272억원 대비 약 24% 증가), 영업이익 935억원(약 3.4배), 지배주주 순이익 574억원(약 3.0배)을 기록해 개선 폭이 확대됐다. 보험손익이 625억원으로 전년 동기 27억원에서 급증했고, 주택·부동산 관련 정산보험료 유입이 보험수익 증가에 기여했으며, 원수경과손해율은 2024년 75.2%·2025년 74.7%에서 2026년 1분기 53.0%로 하락했다. 다만 이 손해율에는 약 850억원의 정산보험료라는 일시적 요인이 포함돼 있어, 이를 제외한 경상 손해율은 62.4%로 산출됐다. 증권사 분석에 따르면 수입보험료 비중이 가장 큰 이행보증의 손해율도 큰 폭 하락했고, 보험금 청구금액이 전년 대비 12% 감소해 2025년 이후의 감소 추세가 이어졌다. 2025년 말 자본총계는 5조1,952억원(지배주주 5조1,899억원), 부채총계 4조2,136억원으로 부채비율은 81.1%였으며, 2025년 2분기부터 2026년 1분기까지 4개 분기 합산 지배주주 순이익은 3,065억원이다.",
+  "en": "For 2025, consolidated insurance revenue was KRW 2,175.5bn, operating profit KRW 375.7bn and owners' net profit KRW 268.4bn, with operating cash flow of KRW 387.2bn — a clear recovery direction. Operating profit equated to roughly 17% of insurance revenue, indicating margins in a phase where loss ratios were peaking out. The quarterly path sloped upward through the year: operating profit moved from KRW 27.3bn in Q1 2025 to KRW 84.5bn in Q2, KRW 80.9bn in Q3 and KRW 182.9bn in Q4, while owners' net profit went KRW 19.3bn → 65.5bn → 61.9bn → 121.7bn, concentrated in the final quarter. Q1 2026 then delivered insurance revenue of KRW 652.4bn (versus KRW 527.2bn a year earlier, up about 24%), operating profit of KRW 93.5bn (roughly 3.4x) and owners' net profit of KRW 57.4bn (roughly 3.0x). Insurance service result jumped to KRW 62.5bn from KRW 2.7bn a year earlier, helped by housing- and property-related premium settlements, while the direct earned loss ratio fell from 75.2% in 2024 and 74.7% in 2025 to 53.0% in Q1 2026. That ratio, however, embeds a temporary item of roughly KRW 85bn in settlement premiums; excluding it, the underlying loss ratio was 62.4%. Brokerage analysis adds that performance guarantees — the largest premium line — also saw a sharp loss-ratio decline, with claimed amounts down 12% year on year, extending the downtrend seen since 2025. Year-end 2025 equity stood at KRW 5,195.2bn (owners' portion KRW 5,189.9bn) against liabilities of KRW 4,213.6bn for a debt-to-equity ratio of 81.1%, and the four quarters from Q2 2025 through Q1 2026 sum to KRW 306.5bn of owners' net profit."
  },
  "industry": {
-  "ko": "보증보험 업황은 경기·부동산 사이클과 강하게 연동된다. 2021~2022년 부동산 가격 급등 이후 역전세와 전세사기 여파로 전세보증금 미반환에 따른 대위변제가 급증하면서 2023~2025년 회사 이익을 짓눌렀고, 주택부동산보증 경과위험손해율이 150%를 웃도는 구간도 있었다. 최근에는 이 사이클이 정점을 지나 정상화 국면에 진입한 것으로 평가된다. 1분기 원수경과손해율은 53.0%로 지난해 74.4% 대비 큰 폭 하락했고, 2024년 79.1%까지 치솟았던 손해율 상승 흐름이 일단락되는 모양새다. 다만 보증보험은 경기 침체나 부동산 시장 악화 시 보증사고가 다시 늘어날 수 있어 손해율의 진폭이 크다. 회사의 원수경과손해율은 경기 사이클을 따라 강한 진폭을 그려왔으며, 이 구조적 특성은 배당 투자 관점에서 양날의 검으로, 경기 부진 시 이익 변동성이 크게 확대되지만 회사는 그 변동성을 최저 배당 보장으로 완충하려 한다. 전업 구조 덕분에 동일 사업의 직접 경쟁은 제한적이지만, 전세보증 영역에서는 주택도시보증공사(HUG)·한국주택금융공사(HF)와 시장을 나눠 갖는다. IFRS17·K-ICS 체제에서 수익성·자본·리스크 관리가 핵심 과제로 부상한 점도 업계 공통의 변수다.",
-  "en": "The guarantee insurance cycle is tightly linked to the economic and property cycle. After the 2021–2022 property price surge, reverse-jeonse and deposit-fraud fallout drove a spike in subrogation payments on unreturned jeonse deposits, weighing on profit in 2023–2025, with the housing/property guarantee elapsed-risk loss ratio at times exceeding 150%. That cycle is now seen to have passed its peak and entered normalization. The Q1 earned loss ratio of 53.0% was far below last year's 74.4%, and the rising trend that peaked at 79.1% in 2024 appears to be winding down. Still, loss-ratio swings are large because guarantee claims can rise again amid recession or a property downturn. The company's earned loss ratio has swung strongly with the economic cycle, a structural feature that is a double-edged sword for dividend investors — earnings volatility expands sharply in downturns, which the company seeks to cushion with a minimum-dividend guarantee. Its monoline structure limits direct competition, but in jeonse guarantees it shares the market with HUG and the Korea Housing Finance Corporation. Under the IFRS17 and K-ICS regime, profitability, capital and risk management have become central industry-wide challenges."
+  "ko": "보증보험 사이클의 핵심 변수는 부동산·전세 시장과 기업 신용이다. 2023~2025년 이익을 눌렀던 요인은 전세보증사고였고, 역전세 심화 구간에서는 주택부동산보증 경과위험손해율이 150%를 웃도는 시기도 있었다. 시장에서는 손해율 상승 사이클이 사실상 마무리 단계에 들어선 것으로 보고 있다는 평가가 나온다. 반면 시장금리가 높게 유지되며 은행권 연체율 등 자산건전성 지표의 회복 속도는 더딘 것으로 지적되고 있어, 기업 신용 사이클은 아직 완전한 개선 국면으로 단정하기 어렵다. 경쟁 구도 측면에서는 이미 독점적 지위를 확보한 반면 보증보험 시장 자체가 성숙 단계에 진입해 있고, 은행의 대출 확대나 증권사의 해외 확장처럼 외형을 늘릴 여지는 상대적으로 제한적이라는 평가가 제시된다. 자산 측면에서는 가중부실자산비율 0.20%, 고정이하자산비율 0.47%로 건전성이 우수하고, 지급여력비율은 2025년 3월 말 414.4%로 매우 높은 수준을 유지했다. 배당 이후 기준 지급여력비율 전망치도 414.7%로 제시된 바 있어, 업계 평균을 크게 웃도는 자본 완충이 배당 정책의 기반으로 작동한다. 결국 산업 포지션은 '점유율 경쟁'보다 '위험 인수 가격(요율)과 손해율 관리' 중심으로 형성되며, 부동산 정책·금리 경로가 업황의 방향을 좌우한다.",
+  "en": "The surety cycle hinges on the property and jeonse markets plus corporate credit. Jeonse guarantee claims were the key drag on profits in 2023-2025, and during the worst of the reverse-jeonse phase the housing and property guarantee risk loss ratio at times exceeded 150%. Market commentary suggests the rising loss-ratio cycle has effectively entered its final stage. Conversely, with market rates staying high, asset quality indicators such as bank delinquency rates are recovering only slowly, so the corporate credit cycle cannot yet be called fully healed. On competitive positioning, the company already holds a monopoly-like status but the surety market itself is mature, and scope to expand volume — as banks do via lending or brokers via overseas growth — is relatively limited. On the asset side, quality is strong with a weighted impaired asset ratio of 0.20% and a substandard-or-below ratio of 0.47%, while the solvency ratio stood at a very high 414.4% as of March 2025. A post-dividend solvency ratio of 414.7% was also flagged, meaning a capital buffer far above the industry average underpins the dividend policy. Net-net, industry positioning is defined less by share competition than by risk pricing and loss-ratio discipline, with property policy and the rate path steering the cycle."
  },
  "outlook": {
-  "ko": "회사는 상장과 함께 '시장형 고배당 금융주'로의 재정의를 내세우며 적극적 주주환원을 제시했다. 2027년까지 총주주환원 2,000억원 이상을 보장하고, 주주환원율 50% 이상, 최소배당금 주당 2,865원, 2026년 분기배당 도입, 자사주 매입·소각 병행 검토 등의 정책을 내놨다. 밸류업 계획에서 2026년 상반기 결산 후 2분기부터 분기배당을 시행하겠다고 밝혔고, 지난해까지 14년 연속 연간 결산 배당을 실시해 왔다. 자본 여력 측면에서는 상반기 말 K-ICS 비율 427.5%를 2030년까지 320% 이상 수준으로 낮춰 주주환원 재원을 확보할 계획이다. 본업에서는 보증·신용보험 시장 성장 주도, 재보험 포트폴리오 최적화, 자산운용 수익률 제고, 글로벌 보증시장 진출 확대 등을 통해 중장기 ROE 10% 달성을 목표로 제시했으며, 이는 현재 4~5%대 수익성을 두 배 가까이 끌어올리겠다는 계획이다. 증권가 전망은 우호적인 편으로, iM증권은 2026년 원수경과손해율을 61.2%로 보고 보험손익 3,263억원(+29.9%), 순이익 3,152억원(+19.3%)을 예상했다. 다만 이는 회사 자체 가이던스가 아닌 외부 추정치이며, 손해율 개선 지속 여부에 따라 달라질 수 있다.",
-  "en": "With its listing the company redefined itself as a market-style high-dividend financial stock and laid out aggressive shareholder returns. It pledged at least KRW 200 billion in total shareholder returns through 2027, a payout ratio of 50% or more, a minimum dividend of KRW 2,865 per share, quarterly dividends from 2026, and consideration of buybacks and cancellations. In its value-up plan it said quarterly dividends would begin from Q2 after the first-half 2026 close, having paid annual dividends for 14 consecutive years through last year. On capital, it plans to lower its first-half-end K-ICS ratio of 427.5% toward at least 320% by 2030 to free up funds for shareholder returns. In its core business, it has set a medium-term ROE target of 10% through leading guarantee/credit-insurance market growth, optimizing its reinsurance portfolio, improving investment returns and expanding into global guarantee markets — roughly doubling current profitability in the 4–5% range. Brokerage views are broadly favorable: iM Securities projects a 2026 earned loss ratio of 61.2%, insurance profit of KRW 326.3 billion (+29.9%) and net profit of KRW 315.2 billion (+19.3%). These are external estimates rather than company guidance, however, and could shift depending on whether the loss-ratio improvement persists."
+  "ko": "회사가 제시한 계획은 주주환원과 자본 관리에 초점이 맞춰져 있다. 2026년 기업가치 제고 계획 및 이행현황 공시에서 업계 최고 수준의 총주주환원, 중장기 320% 이상의 지급여력비율 목표와 함께, 총주주환원 2,000억원 보장·최소배당금·분기배당·주주환원율 목표 도입, 고유 영역 수익성 제고와 자산운용 전략 고도화, IR 강화 등을 실행방안으로 제시했다. 주주환원금액 연 2,000억원 보장과 주주환원율 50% 이상 유지는 회계연도 기준 2026년과 2027년까지로 설정됐고, 고배당기업 요건 충족 목표도 도입했다. 최근에는 상장 이후 첫 분기배당까지 단행한 것으로 보도됐다. 회사 측은 분기배당을 상반기 결산 후 시행할 예정이며, 자사주 매입·소각 시점과 방법은 주가 추이를 고려해 병행 검토하겠다고 밝혔다. 증권가 추정으로는 iM증권이 2026년 원수경과손해율을 61.2%로, 보험손익을 3,263억원(전년 대비 29.9% 증가), 별도 기준 순이익을 3,152억원(19.3% 증가)으로 전망했다(2026년 6월). LS증권은 1분기 이익 규모가 계절적으로 가장 작다는 점을 들어 실적개선 추세가 이어지고 있다고 평가하며, 언더라이팅 강화와 요율 조정 효과 누적으로 보험손익 개선 추세가 이어질 것으로 예상했다. 한편 예금보험공사는 2027년 말까지 보유 지분 33.85%를 처분하겠다는 계획 이행에 속도를 내고 있어, 남은 물량의 매각 방식과 시점이 수급 측면의 상시 변수로 남아 있다.",
+  "en": "Company guidance centers on shareholder returns and capital management. In its 2026 corporate value-up plan and progress disclosure, the firm set out industry-leading total shareholder returns and a long-term solvency ratio target above 320%, with action items including a guaranteed KRW 200bn total return, a minimum dividend, quarterly dividends, a payout-ratio target, profitability improvement in core lines, upgraded investment strategy and stronger IR. The KRW 200bn annual return guarantee and a payout ratio above 50% are set through fiscal 2026 and 2027, alongside a newly adopted goal of meeting high-dividend company criteria. Reports indicate the company has now paid its first quarterly dividend since listing. Management said quarterly dividends would start after first-half closing, with the timing and method of buybacks and cancellations reviewed in parallel depending on the share price trend. On estimates, iM Securities in June 2026 projected a 2026 direct earned loss ratio of 61.2%, insurance service result of KRW 326.3bn (up 29.9%) and separate-basis net profit of KRW 315.2bn (up 19.3%). LS Securities noted that first-quarter profit is seasonally the smallest, judged the earnings improvement trend intact, and expected tighter underwriting and cumulative rate adjustments to keep insurance profits improving. Meanwhile, the Korea Deposit Insurance Corporation is accelerating its plan to divest a 33.85% stake by end-2027, leaving the method and timing of remaining sales a standing supply-side variable."
  },
  "valuation_comment": {
-  "ko": "회사는 적자가 아닌, 손해율 급등으로 눌렸던 이익이 회복되는 국면에 있다. 헤드라인 기준 ROE는 6.1%, 주당순이익(EPS)은 4,390원, 주당순자산(BPS)은 71,357원 수준이다. 주가순자산비율은 1배를 밑도는 구간으로, 순자산 대비 할인된 영역에서 거래되고 있다. 이익 기준 멀티플은 한 증권사가 2025년 기준 약 12배 수준으로 제시한 바 있어, 보험주로서 극단적으로 높거나 낮은 구간으로 보기는 어렵다. 배당 측면에서는 회사가 제시한 최소 주당배당금(2,865원)을 전제로 한 배당수익률이 코스피 평균(통상 2~3%)을 크게 웃돌고 국내 은행주(대체로 4~6%) 상단과 견줄 만한 수준으로 평가된다. 다만 이익이 경기·부동산 사이클에 민감하다는 점, 손해율 개선에 일회성 요인이 일부 섞여 있다는 점은 밸류에이션 해석 시 함께 고려할 부분이다.",
-  "en": "The company is not loss-making but in a phase where earnings, depressed by a loss-ratio surge, are recovering. On a headline basis ROE is 6.1%, EPS is KRW 4,390 and book value per share is KRW 71,357. Its price-to-book sits below one, trading at a discount to net assets. On an earnings multiple, one brokerage put it at about 12x for 2025, so it is hard to call it extremely high or low for an insurance stock. On dividends, the yield based on the company's minimum dividend of KRW 2,865 per share is seen as well above the KOSPI average (typically 2–3%) and comparable to the upper end of Korean bank stocks (generally 4–6%). That said, earnings' sensitivity to the economic and property cycle, and the presence of some one-off items in the loss-ratio improvement, should be weighed alongside any valuation read."
+  "ko": "이 회사의 밸류에이션 논쟁은 '자본은 두터운데 이익 창출력은 상대적으로 낮다'는 구조에 집중돼 있다. 딜사이트는 2026년 1월 기준으로 순자산 대비 배수는 저평가 구간에 머무는 반면 이익 대비 배수는 업종 평균을 크게 웃돌아 자본 대비 수익 창출력에 대한 시장 의구심이 커지고 있다고 지적했다. 실제로 4개 분기 실적을 반영한 주당순이익은 4,390원, 주당순자산은 71,357원으로, 순자산 규모가 이익 규모에 비해 크게 형성돼 있다는 점이 배수 구조에 그대로 반영된다. 상장 이후 주가는 대체로 순자산가치를 밑도는 구간에서 거래돼 왔으며, 2026년 상반기 블록딜 이후에도 이런 흐름이 이어졌다고 보도됐다. 배당 측면에서는 2025년 결산 주당배당금 2,865원(총 2,000억원 규모)과 2023년 50% → 2024년 95% → 2025년 76%로 변화한 배당성향이 확인되며, 이익보다 정책(최소배당금·연 2,000억원 보장)에 연동되는 특성이 강하다. iM증권은 2026년 6월 자료에서 현 주가가 배당이 영구적으로 증가하지 않는다는 가정을 반영한 수준이며, 배당이 연평균 1~3%만 성장해도 적정가치는 크게 달라질 수 있다고 평가했다 — 다만 이는 해당 증권사의 가정 기반 견해이며, 이익 개선분에 포함된 일회성 정산보험료를 제외하면 배수의 기초 체력은 분기별로 흔들릴 수 있다.",
+  "en": "The valuation debate here centers on a structure of thick capital paired with relatively modest earnings power. Dealsite noted in January 2026 that the multiple on net assets sat in undervalued territory while the earnings multiple ran well above the sector average, fueling market doubts about profit generation relative to capital. Indeed, with earnings per share of KRW 4,390 based on the latest four quarters against book value per share of KRW 71,357, the large book base relative to profits is directly reflected in the multiple structure. Since listing, the shares have largely traded below book value, a pattern reported to have persisted after the block deal in the first half of 2026. On dividends, the 2025 year-end payment was KRW 2,865 per share, roughly KRW 200bn in total, and the payout ratio moved 50% in 2023, 95% in 2024 and 76% in 2025 — indicating dividends are tied more to policy commitments (a minimum dividend and the KRW 200bn guarantee) than to reported profit. In June 2026 iM Securities argued the prevailing share price embedded an assumption of no perpetual dividend growth, and that fair value would shift materially if dividends grew just 1-3% a year — though that is one house's assumption-driven view, and stripping out the one-off settlement premiums inside recent earnings means the underlying base for multiples can swing quarter to quarter."
  },
  "bull": [
   {
    "title": {
-    "ko": "손해율 사이클 정점 통과",
-    "en": "Past the loss-ratio peak"
+    "ko": "손해율 사이클 정상화",
+    "en": "Normalizing loss-ratio cycle"
    },
    "body": {
-    "ko": "전세보증금 미반환에 따른 대위변제가 정점을 지나면서 손해율이 빠르게 정상화되고 있다. 1분기 원수경과손해율이 53.0%로 전년 동기 대비 급락했고, 시장은 손해율 상승 사이클이 사실상 마무리 단계에 들어선 것으로 본다. 요율 조정과 구상률 제고 효과가 누적되며 보험손익 개선이 이어질 것이란 전망이 나온다.",
-    "en": "With subrogation from unreturned jeonse deposits past its peak, the loss ratio is normalizing quickly. The Q1 earned loss ratio of 53.0% fell sharply year on year, and the market sees the rising cycle as essentially ending. Cumulative effects from rate adjustments and higher recovery rates are expected to keep improving insurance profit."
+    "ko": "원수경과손해율이 2024년 75.2%, 2025년 74.7%에서 2026년 1분기 53.0%로 크게 낮아졌다. 정산보험료 효과 외에도 수입보험료 비중이 가장 큰 이행보증의 손해율이 하락하고 보험금 청구금액이 전년 대비 12% 감소한 점은 보험수지 개선이 특정 상품에 국한되지 않았음을 시사한다. 제공된 확정 실적에서도 2026년 1분기 영업이익 935억원, 지배주주 순이익 574억원으로 전년 동기 대비 큰 폭 증익이 확인된다. 시장에서는 손해율 상승 사이클이 마무리 단계에 들어섰다는 시각이 제시되고 있다.",
+    "en": "The direct earned loss ratio dropped from 75.2% in 2024 and 74.7% in 2025 to 53.0% in Q1 2026. Beyond settlement premiums, the loss ratio on performance guarantees — the largest premium line — declined and claimed amounts fell 12% year on year, suggesting the improvement is not confined to a single product. Confirmed figures show Q1 2026 operating profit of KRW 93.5bn and owners' net profit of KRW 57.4bn, both sharply higher year on year. Market commentary holds that the rising loss-ratio cycle has entered its closing stage."
    }
   },
   {
    "title": {
-    "ko": "차별적 주주환원과 자본 여력",
-    "en": "Distinctive returns and capital strength"
+    "ko": "정책화된 주주환원과 자본 완충",
+    "en": "Policy-anchored payouts and capital buffer"
    },
    "body": {
-    "ko": "회사는 2027년까지 연 2,000억원 주주환원을 보장하고 분기배당을 도입하며, 최소배당금 제도로 배당 하단을 고정했다. K-ICS 비율이 권고치를 크게 웃도는 업계 최고 수준이어서 초과 자본을 환원 재원으로 활용할 여지가 크다. 최소 배당금만 적용해도 배당수익률이 시장 평균을 크게 웃돈다는 점이 투자 매력으로 꼽힌다.",
-    "en": "The company guarantees KRW 200 billion in annual returns through 2027, is introducing quarterly dividends, and has fixed a dividend floor via a minimum-dividend scheme. Its K-ICS ratio is among the highest in the industry, far above guidance, leaving room to deploy excess capital for returns. Even on the minimum dividend, the yield far exceeds the market average, a key draw."
+    "ko": "연 2,000억원 총주주환원 보장과 주주환원율 50% 이상 유지 목표가 2026·2027 회계연도까지 설정돼 있고, 고배당기업 요건 충족 목표도 도입됐다. 최소배당금 보장에 이어 상장 후 첫 분기배당도 단행된 것으로 보도됐다. 지급여력비율은 2025년 3월 말 414.4%로 매우 높은 수준이어서 환원 정책의 재무적 기반이 뒷받침된다. 회사 측은 상법상 배당가능이익 한도 내에서 2027 회계연도까지 연간 2,000억원 주주환원을 보장하겠다고 밝혔다.",
+    "en": "A guaranteed KRW 200bn annual total return and a payout ratio above 50% are locked in through fiscal 2026 and 2027, with an added goal of meeting high-dividend company criteria. On top of the minimum dividend guarantee, the company is reported to have paid its first quarterly dividend since listing. Solvency stood at a very high 414.4% as of March 2025, underpinning the financial basis for such returns. Management stated it would guarantee KRW 200bn of annual shareholder returns through fiscal 2027 within legally distributable profits."
    }
   },
   {
    "title": {
-    "ko": "독점적 시장 지위",
-    "en": "Dominant market position"
+    "ko": "규제 진입장벽에 기반한 시장지위",
+    "en": "Regulated entry barriers and market position"
    },
    "body": {
-    "ko": "국내 유일의 전업 보증보험사로 전체 보증시장의 약 24%, 민간시장의 절반 이상을 점유한다. 74개 보증 상품과 재보험을 아우르는 종합 라인업으로 동일 사업의 직접 경쟁이 제한적이다. 56년간 축적한 신용평가·구상 노하우가 진입장벽으로 작용한다.",
-    "en": "As Korea's only monoline guarantee insurer, it holds about 24% of the total guarantee market and over half of the private market. Its comprehensive lineup of 74 guarantee products plus reinsurance leaves little direct competition in the same business. Decades of accumulated credit-assessment and subrogation expertise act as a barrier to entry."
+    "ko": "2025년 기준 전체 보증시장 점유율 23.9%, 민간 보증시장 55.0%로 집계되며 74개 보증보험 상품 라인업을 보유한다. 금융당국 인가 규제로 진입장벽이 존재하고, 공적 보증기능과 공적자금 상환 스케줄을 감안할 때 단기 내 시장 개방 가능성은 낮다는 평가가 제시됐다. 인수 위험이 금융보험업·제조업·부동산임대업·건설업 등으로 분산돼 있어 특정 업종 충격에 대한 완충도 상대적으로 존재한다. 이는 요율 조정과 언더라이팅 강화의 실행 여력이라는 사업적 개선 여지로 연결되는 요소다.",
+    "en": "As of 2025 the company held 23.9% of the total guarantee market and 55.0% of the private guarantee market, with a 74-product surety lineup. Licensing rules create entry barriers, and given its public guarantee role and the public-fund repayment schedule, near-term market opening is considered unlikely. Underwriting exposure is spread across finance, manufacturing, real estate leasing and construction, providing some cushion against a single-sector shock. That translates into operational room to adjust rates and tighten underwriting."
    }
   }
  ],
  "bear": [
   {
    "title": {
-    "ko": "예보 지분 오버행",
-    "en": "KDIC stake overhang"
+    "ko": "이익 개선에 섞인 일회성 요인",
+    "en": "One-offs inside the earnings improvement"
    },
    "body": {
-    "ko": "최대주주 예금보험공사는 상장 후 83.85% 지분을 보유했고, 2027년 말까지 33.85%를 단계적으로 매각해 50% 수준으로 낮추는 계획이다. 2026년 3월에는 블록세일로 4.3%(300만주)를 처분했다. 유통주식 비중이 작아 대량 매각이 주가에 미치는 영향이 크고, 잠재 매도물량 부담이 상존한다.",
-    "en": "Top shareholder KDIC held 83.85% after the IPO and plans to sell 33.85% in stages by end-2027 to bring its stake to about 50%. In March 2026 it offloaded 4.3% (3 million shares) via block sale. With a small free float, large sales have an outsized price impact and the overhang remains a persistent burden."
+    "ko": "2026년 1분기 손해율 급락에는 약 850억원 규모의 정산보험료라는 일시적 요인이 포함돼 있고, 이를 제외한 경상 손해율은 62.4%로 산출됐다. 증권가에서도 최근 손해율 개선에 일회성 요인이 일부 반영돼 있다는 점을 경계 요인으로 지적한다. 확정 실적에서도 2025년 분기 영업이익이 273억원에서 1,829억원까지 크게 흔들렸다는 점은 계절성과 일회성이 실적 변동성을 키우는 구조임을 보여준다. 따라서 경상 기준 이익 체력은 여러 분기 누적 확인이 필요하다.",
+    "en": "The Q1 2026 loss-ratio plunge embeds a temporary item of roughly KRW 85bn in settlement premiums; excluding it, the underlying ratio was 62.4%. Analysts also flag that recent loss-ratio gains partly reflect one-off factors. Confirmed data show 2025 quarterly operating profit swinging from KRW 27.3bn to KRW 182.9bn, evidence that seasonality and one-offs amplify earnings volatility. Underlying profitability therefore needs several quarters of confirmation."
    }
   },
   {
    "title": {
-    "ko": "경기·부동산 민감도",
-    "en": "Economic and property sensitivity"
+    "ko": "예보 지분 매각과 수급 부담",
+    "en": "State sell-down and supply overhang"
    },
    "body": {
-    "ko": "보증보험은 사실상 신용위험을 다루는 사업이라 이익이 경기 사이클에 민감하다. 경기 침체나 부동산 시장 악화 시 보증사고가 다시 늘어 손해율이 급등할 수 있다. 실제로 2023~2025년에는 전세보증 손해율 급등으로 이익이 큰 폭 감소한 전력이 있다.",
-    "en": "Guarantee insurance is effectively a credit-risk business, so earnings are sensitive to the economic cycle. In a recession or property downturn, guarantee claims can rise again and loss ratios can spike. Indeed, in 2023–2025 a jeonse-guarantee loss-ratio surge sharply reduced profit."
+    "ko": "예금보험공사는 2026년 3월 26일 블록딜로 지분 4.3%(300만주)를 매각해 1,610억원을 회수했고 누적 회수율은 51.9%로 상승했다. 2027년 말까지 보유 지분 33.85%를 처분하겠다는 계획이 유지되고 있다. 전체 매각 규모가 1조원대인 만큼 해외 기관 참여 여부가 성패를 가를 전망이라는 지적이 있으며, 국내에서 단건으로 대형 물량을 소화하기 어렵다는 시장 의견도 제시됐다. 실제로 2026년 상반기 블록딜 이후 주가가 조정을 받았다는 보도가 있었다.",
+    "en": "On 26 March 2026 the Korea Deposit Insurance Corporation sold 4.3% (3m shares) via block deal, recovering KRW 161bn and lifting cumulative recovery to 51.9%. The plan to dispose of a 33.85% stake by end-2027 remains in place. With total sales sized around KRW 1tn, participation by foreign institutions is seen as decisive, and market participants note domestic buyers can rarely absorb very large single tranches. Reports noted the shares corrected after the block deal in the first half of 2026."
    }
   },
   {
    "title": {
-    "ko": "일회성 요인과 회복 지속성",
-    "en": "One-offs and durability of recovery"
+    "ko": "성장 여지 제한과 배당의 성격",
+    "en": "Limited growth room and the nature of the dividend"
    },
    "body": {
-    "ko": "최근 손해율 개선과 보험손익 급증에는 주택·부동산 관련 정산보험료 수취 같은 일회성 요인이 일부 반영돼 있다. 1분기가 통상 연중 이익이 가장 적은 계절이라는 점도 단순 비교를 어렵게 한다. 손해율 개선 흐름이 분기를 거듭하며 지속될지 확인이 필요하다.",
-    "en": "The recent loss-ratio improvement and surge in insurance profit partly reflect one-off items such as housing/property settlement premiums. The fact that Q1 is usually the weakest quarter for profit also complicates simple comparisons. Whether the loss-ratio improvement persists across quarters needs confirmation."
+    "ko": "보증보험 시장이 성숙 단계에 진입해 외형 확장 여지가 제한적이며, 이익이 늘어도 선택지는 자본 축적 또는 주주환원으로 압축된다는 평가가 있다. 예금보험공사 79.6%, 국민연금 6.2% 등 지분 구조상 시장 유통 물량은 15% 안팎에 불과하고, 2025년 배당금 2,004억원 가운데 약 1,595억원이 예금보험공사로 귀속된 것으로 추산된다. 이 때문에 배당이 일반적 의미의 주주환원보다 공적자금 회수 수단의 성격이 강하다는 평가도 제기된다. 장기적으로 현 수준의 배당을 유지하려면 본업 수익성이 뒷받침돼야 하며, 이익 감소 속 배당 유지는 자본 여력을 줄인다는 지적도 있다.",
+    "en": "The surety market is mature, limiting top-line expansion, and commentary notes that rising profits leave essentially two options: retain capital or return it. With the deposit insurer at 79.6% and the national pension fund at 6.2%, free float is only around 15%, and of KRW 200.4bn paid in dividends last year an estimated KRW 159.5bn went to the deposit insurer. Some therefore argue the dividend functions more as a public-fund recovery channel than a conventional shareholder return. Sustaining current payouts long term requires core profitability, and maintaining dividends while profits shrink erodes capital headroom."
    }
   }
  ],
  "risks": [
   {
    "cat": {
-    "ko": "정책·지배구조 리스크",
-    "en": "Policy and governance risk"
+    "ko": "부동산·전세시장 재악화",
+    "en": "Renewed property and jeonse stress"
    },
    "body": {
-    "ko": "예금보험공사가 83%대 지분을 보유한 사실상 공적 통제 기업으로, 주주환원과 지분 매각 모두 공적자금 회수 논리에 좌우된다. 정부가 배당 대신 지분 매각을 통한 회수에 무게를 둘 경우 현재의 투자 논리가 흔들릴 수 있다. 채권상환기금 청산 시점이 2027년 말로 설정돼 있어 매각 일정이 정책 변수와 맞물린다.",
-    "en": "With KDIC holding an 83%-plus stake, it is effectively under public control, and both shareholder returns and stake sales hinge on the logic of recovering public funds. If the government emphasizes recovery via stake sales over dividends, the current investment thesis could be shaken. The bond-redemption fund's liquidation deadline of end-2027 ties the sale schedule to policy variables."
+    "ko": "이 회사의 본질은 일반 손해보험사보다 신용위험을 다루는 금융기관에 가까워, 경기 침체나 부동산 시장 악화가 발생하면 보증사고가 다시 증가할 가능성이 있다. 역전세가 심화됐던 국면에서는 주택부동산보증 경과위험손해율이 150%를 웃돈 시기도 있었다. 과거 전세보증금 미반환에 따른 대위변제 급증이 실적 악화의 배경으로 지목된 바 있다. 손해율 개선 추세가 정책·가격 변수에 되돌려질 수 있다는 점은 지속 점검 대상이다.",
+    "en": "The business is closer to a credit-risk financial institution than a conventional non-life insurer, so a downturn or property market deterioration could push guarantee claims back up. During the worst reverse-jeonse phase, the housing and property guarantee risk loss ratio at times exceeded 150%. A surge in subrogation payments from unreturned jeonse deposits was previously cited as the cause of earnings deterioration. The improving loss-ratio trend could reverse with policy and price shifts, warranting ongoing monitoring."
    }
   },
   {
    "cat": {
-    "ko": "부동산·전세시장 리스크",
-    "en": "Property and jeonse market risk"
+    "ko": "지배구조·매각 로드맵 변경",
+    "en": "Ownership and sale-roadmap changes"
    },
    "body": {
-    "ko": "전세보증은 회사 손해율의 핵심 변동 요인으로, 역전세·전세사기 재확산 시 대위변제가 다시 급증할 수 있다. HUG·HF 등 정책기관과 시장을 나눠 갖는 만큼 정부의 전세보증 정책 변화도 영향을 준다. 부동산 가격 급락 국면에서는 이익 변동성이 크게 확대될 위험이 있다.",
-    "en": "Jeonse guarantees are the key driver of the company's loss-ratio volatility, and renewed reverse-jeonse or deposit fraud could again spike subrogation payments. As it shares the market with policy bodies like HUG and HF, changes in government jeonse-guarantee policy also matter. In a sharp property price decline, earnings volatility could expand significantly."
+    "ko": "공적자금관리위원회는 2027년 말까지 수 차례 소수지분 매각을 거쳐 예금보험공사 보유 지분을 줄이고, 경영권 지분(50%+1주) 매각은 중장기적으로 검토할 예정이다. 향후 정부가 배당보다 지분 매각을 통한 회수에 무게를 둘 경우 현재의 투자 논리가 흔들릴 수 있다는 지적이 있다. 예보채상환기금의 청산 시한이 2027년 말로 예정돼 있어 일정 압박이 존재한다. 매각 방식·속도, 향후 지배주주 성격 변화는 배당 정책의 연속성과 직결되는 변수다.",
+    "en": "The public funds oversight committee plans several minority-stake sales through end-2027 to shrink the deposit insurer's holding, with a controlling stake (50%+1 share) sale under longer-term consideration. Analysts note that if the government shifts emphasis from dividends to stake sales for recovery, the current investment logic could be unsettled. The deposit insurance fund bond redemption fund is scheduled to be wound up at end-2027, creating a timetable constraint. The method and pace of sales, and any change in the controlling shareholder's identity, bear directly on dividend continuity."
    }
   },
   {
    "cat": {
-    "ko": "금리·투자손익 리스크",
-    "en": "Rate and investment-income risk"
+    "ko": "금리·투자손익 변동",
+    "en": "Rates and investment result volatility"
    },
    "body": {
-    "ko": "회사는 보험손익과 함께 투자손익을 이익의 한 축으로 삼는다. 환율·금리 변동에 따라 보유 자산의 평가손익이 흔들릴 수 있으며, 1분기에도 환율 상승에 따른 일부 평가손실이 있었다. 금리 인상이 현실화되면 경기 둔화와 기업 연체율 상승을 거쳐 보증보험 손해율을 다시 끌어올릴 가능성도 제기된다.",
-    "en": "The company relies on investment income alongside insurance profit as a pillar of earnings. Valuation gains/losses on assets can swing with currency and rate moves, and Q1 already saw some valuation losses from a rising exchange rate. Some argue that if rate hikes materialize, slower growth and rising corporate delinquencies could push guarantee loss ratios back up."
+    "ko": "2026년 1분기 투자손익은 299억원으로 전년 동기 239억원 대비 증가했으나, 환율 상승에 따른 일부 평가손실이 발생했다. 자산운용 위험선호도가 낮게 유지돼 고수익 자산 비중이 작은 만큼 투자손익의 상방도 제한적인 구조다. 시장금리가 높게 유지되는 국면에서 은행권 연체율 등 자산건전성 지표 회복이 더디다는 지적도 있어, 보증 인수 위험과 투자 환경이 동시에 영향을 받을 수 있다. 금리 경로 변화가 보험부채 평가와 자본비율에 미치는 영향도 함께 확인할 필요가 있다.",
+    "en": "Q1 2026 investment income was KRW 29.9bn versus KRW 23.9bn a year earlier, though some valuation losses arose from a weaker won. With low risk appetite and a small share of high-yield assets, the upside to investment income is also structurally limited. Commentary notes that with market rates staying elevated, bank delinquency and other asset-quality metrics are recovering slowly, which can affect both underwriting risk and the investment environment. The impact of the rate path on insurance liability valuation and capital ratios also merits tracking."
    }
   }
  ],
  "checkpoints": [
   {
    "when": {
-    "ko": "2026년 7~8월",
-    "en": "July–August 2026"
+    "ko": "2026년 8월 중순",
+    "en": "Mid-August 2026"
    },
    "what": {
-    "ko": "2026년 2분기 실적 발표. 1분기 손해율 개선과 보험손익 급증이 일회성에 그치지 않고 이어지는지, 원수경과손해율 추이가 핵심 확인 포인트다.",
-    "en": "Q2 2026 earnings release. The key is whether the Q1 loss-ratio improvement and surge in insurance profit continue rather than being one-off, with the earned loss-ratio trend the focal point."
+    "ko": "2026년 상반기(2분기) 실적과 반기보고서. 1분기 손해율 급락에 포함된 정산보험료 일회성 효과를 제외한 경상 손해율이 어느 수준으로 정착하는지, 보험손익이 2분기에도 개선 흐름을 유지하는지가 관건이다.",
+    "en": "First-half (Q2) results and the semi-annual report. The key is where the underlying loss ratio settles once the one-off settlement premiums behind the Q1 plunge are stripped out, and whether the insurance service result keeps improving in Q2."
    }
   },
   {
    "when": {
-    "ko": "2026년 상반기 결산 후",
-    "en": "After the first-half 2026 close"
+    "ko": "2026년 3분기",
+    "en": "Q3 2026"
    },
    "what": {
-    "ko": "회사가 예고한 분기배당 첫 시행 여부와 실제 주당배당금. 최소배당금(2,865원)과 분기배당 일정이 계획대로 이행되는지 확인이 필요하다.",
-    "en": "Whether the company launches its first quarterly dividend as flagged, and the actual per-share amount. Confirm that the minimum dividend (KRW 2,865) and quarterly-dividend schedule proceed as planned."
+    "ko": "상반기 결산 후 시행 예정이라고 밝힌 분기배당의 실제 금액·주기와, 주가 추이를 고려해 병행 검토한다고 한 자사주 매입·소각 결정 여부. 연 2,000억원 환원 목표의 분기별 이행 경로를 가늠할 수 있는 지점이다.",
+    "en": "The actual size and cadence of the quarterly dividend management said would begin after first-half closing, plus any decision on the buybacks and cancellations it said it would review in parallel with the share price. This will show how the KRW 200bn annual return target is being delivered quarter by quarter."
    }
   },
   {
    "when": {
-    "ko": "2026년 하반기",
-    "en": "Second half of 2026"
+    "ko": "2026년 하반기~2027년",
+    "en": "H2 2026 to 2027"
    },
    "what": {
-    "ko": "예금보험공사의 추가 지분 매각(블록세일·입찰) 진행 상황. 매각 방식·규모·자사주 매입 병행 여부가 오버행 부담과 수급에 직접 영향을 준다.",
-    "en": "Progress on KDIC's further stake sales (block sales/tenders). The method, size and whether buybacks accompany them directly affect overhang pressure and supply-demand."
+    "ko": "예금보험공사의 추가 블록세일 여부와 규모(2027년 말까지 33.85% 단계 매각 계획). 매각 시점·할인율·해외 기관 참여도가 유통 주식 수와 수급 구도에 직접 영향을 준다.",
+    "en": "Whether and how much additional block sales the deposit insurer executes under its plan to divest 33.85% in stages by end-2027. Timing, discount and foreign institutional participation directly affect free float and the supply-demand picture."
    }
   },
   {
    "when": {
-    "ko": "2026년 하반기",
-    "en": "Second half of 2026"
+    "ko": "분기별 공시 시점",
+    "en": "Each quarterly disclosure"
    },
    "what": {
-    "ko": "회사가 예고한 구체화된 밸류업(기업가치 제고) 공시. 자사주 매입·소각의 시기와 방법, 중장기 ROE 10% 목표를 위한 실행 계획이 구체화되는지 주목된다.",
-    "en": "The more detailed value-up disclosure the company has flagged. Watch whether the timing and method of buybacks/cancellations and the execution plan for the medium-term 10% ROE target become concrete."
+    "ko": "기업가치 제고 계획에서 제시한 중장기 320% 이상 지급여력비율 목표 대비 실제 K-ICS 비율 추이. 높은 배당성향이 자본 완충을 얼마나 소모하는지 확인하는 지표다.",
+    "en": "The actual K-ICS solvency trend against the value-up plan's long-term target of above 320%. This gauges how much the high payout ratio draws down the capital buffer."
+   }
+  },
+  {
+   "when": {
+    "ko": "2027년 초 결산 시즌",
+    "en": "Early 2027 results season"
+   },
+   "what": {
+    "ko": "2026년 연간 확정 실적과 결산배당 결정. 배당성향이 2023년 50%, 2024년 95%, 2025년 76%로 변동해 온 만큼, 이익 회복이 배당 총액·주당배당금에 어떻게 반영되는지 확인이 필요하다.",
+    "en": "Full-year 2026 confirmed results and the year-end dividend decision. Given payout ratios of 50% in 2023, 95% in 2024 and 76% in 2025, it matters how the earnings recovery feeds into total dividends and dividend per share."
    }
   }
  ],
  "verdict": {
   "body": {
-   "ko": "서울보증보험은 국내 유일의 전업 보증보험사로, 2023~2025년 전세보증 손해율 급등으로 눌렸던 이익이 회복 국면에 진입한 모습이다. 2026년 1분기 보험손익이 전년 동기 대비 23배 이상 급증하고 원수경과손해율이 큰 폭 하락하면서 회복 추세가 뚜렷해졌으나, 일부 정산보험료 같은 일회성 요인과 1분기 계절성을 함께 감안할 필요가 있다. 2027년까지 연 2,000억원 주주환원 보장과 분기배당 도입, 업계 최고 수준의 자본건전성은 환원 매력을 뒷받침한다. 반면 예금보험공사가 2027년 말까지 지분을 50%로 낮추는 단계적 매각을 진행 중이어서 오버행 부담이 상존하고, 이익이 경기·부동산 사이클에 민감하다는 구조적 특성도 분명하다. 향후 분기 실적의 손해율 지속 여부, 분기배당 실제 시행, 예보 지분 매각 방식이 주가 흐름을 가를 핵심 변수다. 본 자료는 정보 제공용으로 특정 투자 판단을 권유하지 않는다.",
-   "en": "Seoul Guarantee Insurance, Korea's only monoline guarantee insurer, appears to have entered a recovery phase after earnings were depressed by a jeonse-guarantee loss-ratio surge in 2023–2025. With Q1 2026 insurance profit up more than 23-fold year on year and the earned loss ratio falling sharply, the recovery trend is clear, but one-off items such as settlement premiums and Q1 seasonality should be weighed together. The pledge of KRW 200 billion in annual returns through 2027, the introduction of quarterly dividends, and industry-leading capital strength underpin its return appeal. On the other hand, KDIC's staged sell-down toward 50% by end-2027 keeps overhang pressure present, and the earnings' structural sensitivity to the economic and property cycle is evident. The key swing factors for the share price are whether loss-ratio gains persist in coming quarters, the actual launch of quarterly dividends, and how KDIC conducts its stake sales. This material is for information only and does not recommend any specific investment decision."
+   "ko": "서울보증보험은 이익 사이클과 지배구조 이벤트가 동시에 진행되는 특수한 국면에 있다. 확정 실적으로 보면 2025년 보험수익 2조1,755억원·영업이익 3,757억원·지배주주 순이익 2,684억원에서 2026년 1분기 영업이익 935억원, 지배주주 순이익 574억원으로 회복 속도가 빨라졌고, 부채비율 81.1%와 5조원대 자본이 재무적 완충을 제공한다. 개선의 배경은 원수경과손해율이 2024년 75.2%·2025년 74.7%에서 2026년 1분기 53.0%로 낮아진 데 있으나, 약 850억원의 정산보험료를 제외한 경상 손해율이 62.4%였다는 분석은 개선분의 성격을 나누어 볼 필요를 시사한다. 강세 논리는 손해율 사이클 정상화와 2027 회계연도까지 설정된 연 2,000억원 환원·주주환원율 50% 이상 목표에, 약세 논리는 2027년 말까지 33.85% 단계 매각 계획에서 비롯되는 수급 부담과 성숙 시장의 성장 제약에 각각 서 있다. 배당의 상당 부분이 최대주주에게 귀속되는 구조 때문에 배당의 성격 자체를 두고도 해석이 갈린다. 결국 확인해야 할 것은 경상 손해율의 안착 수준, 분기배당의 실제 집행, 그리고 잔여 지분 매각의 방식과 속도이며, 이 세 축의 조합에 따라 사실관계의 무게중심이 달라진다. 본 리포트는 정보 제공 목적이며 투자 판단은 독자의 몫이다.",
+   "en": "Seoul Guarantee Insurance sits in an unusual phase where an earnings cycle and ownership events unfold at once. Confirmed data show a faster recovery: from 2025 insurance revenue of KRW 2,175.5bn, operating profit of KRW 375.7bn and owners' net profit of KRW 268.4bn to Q1 2026 operating profit of KRW 93.5bn and owners' net profit of KRW 57.4bn, with a debt-to-equity ratio of 81.1% and equity above KRW 5tn providing a financial cushion. The improvement stems from a direct earned loss ratio that fell from 75.2% in 2024 and 74.7% in 2025 to 53.0% in Q1 2026, yet analysis showing a 62.4% underlying ratio excluding roughly KRW 85bn of settlement premiums argues for separating the sources of that gain. The bull case rests on loss-ratio normalization plus the KRW 200bn annual return and above-50% payout targets set through fiscal 2027, while the bear case rests on supply pressure from the plan to divest 33.85% in stages by end-2027 and the growth constraints of a mature market. Because much of the dividend accrues to the largest shareholder, even the character of the payout is debated. What ultimately needs checking is where the underlying loss ratio settles, how quarterly dividends are actually executed, and the method and pace of the remaining stake sales; the balance of facts shifts with the combination of those three. This report is for information purposes, and investment judgments rest with the reader."
   }
  },
  "sources": [
-  "https://www.investing.com/equities/seoul-guarantee-insurance",
   "https://www.butler.works/ko/companies/00112998",
-  "https://m.irgo.co.kr/IR-COMP/031210/",
-  "https://m.thinkpool.com/item/031210",
-  "https://www.tossinvest.com/stocks/A031210/order",
-  "https://file.alphasquare.co.kr/media/pdfs/company-report/260526%20%EC%84%9C%EC%9A%B8%EB%B3%B4%EC%A6%9D%EB%B3%B4%ED%97%98_%EC%88%98%EC%A0%95.pdf",
-  "https://finance.finup.co.kr/Stock/031210",
-  "https://comp.fnguide.com/SVO2/ASP/SVD_Main.asp?gicode=A031210",
-  "https://m.thebell.co.kr/m/newsview.asp?newskey=202602191306202520107789",
-  "https://www.sgic.co.kr/biz/ccg/index.html?p=CCGIRI070101F01",
+  "https://comp.fnguide.com/SVO2/ASP/SVD_Main.asp?pGB=1&gicode=A031210&cID=&MenuYn=Y&ReportGB=D&NewMenuID=Y&stkGb=701",
+  "https://www.kukinews.com/article/view/kuk202606050110",
   "https://www.topdaily.kr/articles/102082",
-  "https://www.g-enews.com/article/Finance/2026/02/202602111501586169e30fcb1ba8_1",
-  "https://www.etnews.com/20250401000262",
-  "https://www.investing.com/equities/seoul-guarantee-insurance-dividends",
+  "https://www.etoday.co.kr/news/view/2613778",
+  "https://www.sgic.co.kr/",
+  "https://m.finance.daum.net/quotes/A031210/news/disclosure/20250508044820",
+  "https://www.catch.co.kr/Comp/CompSummary/870145",
+  "https://m.irgo.co.kr/IR-COMP/031210/",
+  "https://m.thebell.co.kr/m/newsview.asp?newskey=202602191306202520107789",
+  "https://v.daum.net/v/2oKvqOgReH",
+  "https://alphabiz.co.kr/news/view/1065576756236918",
+  "http://www.srtimes.kr/news/articleView.html?idxno=205240",
+  "https://www.newsfreezone.co.kr/news/articleView.html?idxno=694192",
   "https://supple.kr/news/cmqa4j6u400apok0qxxybfj37",
-  "https://m.ddaily.co.kr/page/view/2026050811133860513",
-  "https://www.greened.kr/news/articleView.html?idxno=342124",
-  "https://www.kukinews.com/article/view/kuk202606050110"
+  "https://www.etnews.com/20250401000262",
+  "https://www.sisaon.co.kr/news/articleView.html?idxno=169142",
+  "https://kind.krx.co.kr/common/disclsviewer.do?method=searchInitInfo&acptNo=20250508000316&docno="
  ],
  "v": 2,
- "model": "claude-opus-4-8",
+ "model": "claude-opus-5",
  "ticker": "031210",
  "name": "서울보증보험",
  "name_en": "Seoul Guarantee Insurance Company",
@@ -223,11 +233,11 @@
   "보험"
  ],
  "market": "코스피",
- "reportDate": "2026-06-16",
- "reportTs": "2026-06-16 19:21",
- "dataDate": "20260616",
+ "reportDate": "2026-08-14",
+ "reportTs": "2026-08-14 21:54",
+ "dataDate": "20260814",
  "quant": {
-  "asOf": "2026-06-16",
+  "asOf": "2026-08-14",
   "fs_basis": "연결(CFS) · DART 공시 확정치 · 지배주주 기준 순이익",
   "annual": [
    {
@@ -279,23 +289,23 @@
    }
   ],
   "valuation": {
-   "price": 45000,
-   "mcap": 3.142,
+   "price": 44900,
+   "mcap": 3.135,
    "shares": 69821598,
    "total_shares": 69821598,
    "wavg_shares": 69786404,
-   "per": 10.3,
+   "per": 10.2,
    "eps": 4390,
    "pbr": 0.63,
    "bps": 71357,
    "roe_ttm": 6.1,
    "ttm_window": "2025Q2~2026Q1",
    "ttm_np_owner": 306487355857,
-   "pbr_krx": 0.61,
+   "pbr_krx": 0.6,
    "bps_krx": 74331.0,
    "basis": "PER·EPS·PBR·BPS 모두 자체 산출(네이버·토스와 동일 방식) · 배당은 DART 공시 주당현금배당금(보완:KRX) ÷ 현재가",
    "dps": 2865.0,
-   "div": 6.37
+   "div": 6.38
   },
   "rev_label": {
    "ko": "보험수익",

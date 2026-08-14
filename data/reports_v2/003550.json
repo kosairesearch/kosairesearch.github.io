@@ -1,220 +1,230 @@
 {
  "title": {
-  "ko": "지주 NAV 할인과 AI 모멘텀의 교차점",
-  "en": "Holding-Co NAV Discount Meets AI Momentum"
+  "ko": "주주환원 이행과 계열사 손익 변동성",
+  "en": "Payout Execution Meets Affiliate Earnings Swings"
  },
  "lead": {
-  "ko": "자회사 이익 둔화로 배당수입이 줄었지만, 전량 자사주 소각·배당성향 상향과 그룹 AI(엑사원) 역량 부각이 동시에 진행되는 순수지주회사다.",
-  "en": "LG Corp is a pure holding company whose dividend income has softened on weaker subsidiary earnings, even as full treasury-share cancellation, a higher payout floor, and the group's AI (EXAONE) capabilities draw fresh attention."
+  "ko": "㈜LG의 손익은 상표권·임대수익과 배당수익이라는 안정적 축에 계열사 지분법손익이라는 변동성 축이 겹쳐 결정되며, 2025년 4분기 대규모 적자와 2026년 상반기 회복이 그 구조를 그대로 보여준다.",
+  "en": "LG Corp.'s earnings combine a stable base of brand royalty, rental and dividend income with a volatile equity-method layer from affiliates, a structure clearly illustrated by the large loss in Q4 2025 and the recovery in the first half of 2026."
  },
  "keypoints": [
   {
-   "ko": "수입 구조는 자회사 배당수익·LG 상표권 사용료·임대수익 중심의 순수지주회사로, 실적이 주요 종속·자회사 변동에 직접 연동된다.",
-   "en": "As a pure holding company, its income comes mainly from subsidiary dividends, LG brand royalties, and rental income, so results track its key subsidiaries' performance directly."
+   "ko": "2025년 연결 매출은 7조2,525억원으로 전년(7조1,755억원)과 비슷했으나 영업이익은 9,122억원으로 감소해 영업이익률이 12.6%까지 낮아졌다(2022년 27.0%).",
+   "en": "2025 consolidated revenue of KRW 7.25tn was flat versus KRW 7.18tn in 2024, but operating profit fell to KRW 912.2bn, pushing the margin down to 12.6% from 27.0% in 2022."
   },
   {
-   "ko": "2025년 연결 영업이익은 전년 대비 감소했고 4분기에는 분기 영업손실을 기록했으나, 2026년 1분기에는 다시 흑자 흐름으로 복귀했다.",
-   "en": "Consolidated operating profit fell year on year in 2025 and turned to a quarterly operating loss in Q4, but returned to positive territory in Q1 2026."
+   "ko": "2025년 4분기에는 영업손실 4,217억원, 지배주주 순손실 3,629억원을 기록한 뒤 2026년 1분기 영업이익 4,138억원으로 흑자 전환했다.",
+   "en": "Q4 2025 saw an operating loss of KRW 421.7bn and a net loss attributable to owners of KRW 362.9bn, before Q1 2026 returned to a KRW 413.8bn operating profit."
   },
   {
-   "ko": "기보유 자사주 전량(보통주 302만9581주, 발행주식의 1.96%)을 5월 소각 완료하고 배당성향 하한을 50%→60%로 상향하는 등 주주환원을 강화했다.",
-   "en": "It completed cancellation of all remaining treasury shares (3,029,581 common shares, 1.96% of issued stock) in May and raised its payout floor from 50% to 60%, strengthening shareholder returns."
+   "ko": "회사는 기보유 자사주 전량 소각 약속을 이행했고, 별도 조정 순이익 기준 배당성향 하한을 60%로 높이며 중간배당도 도입했다.",
+   "en": "The company completed its pledge to cancel all treasury shares, raised the minimum payout ratio floor to 60% of separate adjusted net profit and introduced interim dividends."
   },
   {
-   "ko": "LG AI연구원의 'K-엑사원'이 정부 국가대표 AI 1차 평가 1위를 차지했고, 8월 2차 평가가 예정돼 AI·바이오·클린테크('ABC') 신사업 모멘텀이 부각된다.",
-   "en": "LG AI Research's 'K-EXAONE' ranked first in the government's national AI 1st-round evaluation, with a 2nd round set for August, highlighting AI/Bio/Cleantech ('ABC') new-business momentum."
+   "ko": "2026년 2분기(공시 기준)에는 전자 계열 실적 회복으로 지분법손익이 크게 늘며 지주 손익이 개선됐다.",
+   "en": "In Q2 2026, disclosed results showed a sharp rise in equity-method income on recovering electronics affiliates, lifting holding-company earnings."
   },
   {
-   "ko": "주가는 순자산가치(NAV) 대비 큰 폭의 할인 구간에서 거래되며, 지주사 특유의 중복상장(더블카운팅) 할인이 상존한다.",
-   "en": "The stock trades at a deep discount to its net asset value (NAV), with the holding-company double-counting discount an ongoing feature."
+   "ko": "부채비율 12.0%(2025년), 영업활동 현금흐름 1조151억원 등 재무 안정성은 유지되나 이익 체력은 계열사 사이클에 직접 노출돼 있다.",
+   "en": "Financial stability holds up, with a 12.0% debt-to-equity ratio in 2025 and KRW 1,015.1bn operating cash flow, yet earnings power remains directly exposed to affiliate cycles."
   }
  ],
  "business": {
-  "ko": "LG는 LG전자·LG화학·LG유플러스 등 상장사를 거느린 LG그룹의 순수지주회사다. 순수지주회사는 독립적 사업을 영위하지 않고 다른 회사 주식 소유를 통해 받는 배당금 등을 주된 수입원으로 하며, 실적은 주요 종속·자회사의 실적 변동에 영향을 받는다. 수입원은 자회사 등으로부터 받는 배당수익, LG 브랜드 권리를 소유하며 사용자로부터 수취하는 상표권 사용수익, 소유 건물의 임대를 통한 임대수익 등으로 구성된다. 1962년 설립된 LG그룹 지주회사로 주요 종속기업에는 에스앤아이코퍼레이션, LG경영개발원, LG씨엔에스 등이 있으며, 연결 매출은 IT서비스 부문에서 주로 발생하고 상표권 수익·배당금 수익이 뒤를 잇는다. 주요 자회사들은 영상·음향기기 제조(LG전자), 석유화학(LG화학), 유무선 통신(LG유플러스)을 영위하며, 연결 종속회사로는 IT서비스(LG씨엔에스), 부동산 종합서비스(디앤오), 교육·자문(LG경영개발원) 등이 포함된다. 그룹 매출의 약 50%를 차지하는 전자 부문이 실적에 가장 큰 영향을 준다. 즉 지주회사 자체 손익보다 핵심 자회사인 LG전자·LG화학의 이익과 지분가치 변동이 NAV와 배당수입을 좌우하는 구조다. 최대주주는 구광모 외 특수관계인(42.54%)이며 주요 주주로 Silchester International Investors(7.17%), 국민연금공단(6.86%)이 있다. 따라서 투자 판단 시 지주회사 단독 실적과 상장 자회사 지분가치를 함께 보는 시각이 필요하다.",
-  "en": "LG Corp is the pure holding company of the LG Group, overseeing listed affiliates such as LG Electronics, LG Chem, and LG Uplus. A pure holding company does not run independent operations; its main income comes from dividends received by owning other companies' shares, and its results are affected by the performance of its key subsidiaries and affiliates. Its revenue streams are dividend income from affiliates, royalty income from owning the LG brand rights, and rental income from owned buildings. Founded in 1962, it has major subsidiaries including S&I Corporation, LG Management Development Institute, and LG CNS; consolidated revenue arises chiefly from the IT services segment, followed by brand royalties and dividend income. Its key affiliates operate in electronics manufacturing (LG Electronics), petrochemicals (LG Chem), and telecom (LG Uplus), while consolidated subsidiaries include IT services (LG CNS), real-estate services (D&O), and education/advisory (LG Management Development Institute). The electronics segment, which accounts for roughly 50% of group revenue, has the biggest impact on results. In other words, the profits and stake values of core subsidiaries LG Electronics and LG Chem drive NAV and dividend income more than the holding company's standalone profit. The largest shareholder group is Chairman Koo Kwang-mo and related parties (42.54%), with Silchester International Investors (7.17%) and the National Pension Service (6.86%) as major holders. Investors therefore need to weigh both the holding company's standalone results and the value of its listed subsidiary stakes."
+  "ko": "㈜LG는 LG전자·LG화학·LG유플러스 등 주요 계열사를 지배하는 순수지주회사로, 수익원은 크게 상표권·임대수익, 계열사 배당수익, 지분법손익, 그리고 연결 종속회사 매출로 구분된다. 지분법손익은 지분을 보유한 계열사 순손익 중 보유 지분율만큼을 반영하는 회계 항목으로, LG전자·LG화학·LG유플러스 등 주요 계열사의 실적 변화가 이 경로를 통해 연결 실적에 반영된다. 2026년 1분기 기준 상표권 및 임대수익은 1,179억원, 지분법손익은 2,515억원, LG CNS 등 연결 종속회사 매출은 1조4,312억원으로 집계됐다(KB증권 실적 정리, 2026년 5월). 2026년 2분기에는 상표권 및 임대수익 1,232억원, 연결 종속회사 매출 1조6,683억원이었고 이 가운데 LG CNS 매출이 1조5,208억원을 차지했다(전자신문, 2026년 8월). 즉 연결 매출의 대부분은 시스템통합(SI)·클라우드 사업을 하는 LG CNS 등 종속회사에서 나오고, 이익의 질과 변동성은 지분법 및 배당수익이 좌우하는 구조다. 별도 기준으로는 배당수익이 핵심으로, 2026년 1분기 배당수익은 2,752억원이었다. ㈜LG는 2024년 11월부터 2025년 3월까지 경영권 안정과 수익구조 제고를 위해 LG전자와 LG화학 지분을 추가 취득했다. 경쟁 구도는 개별 제품시장이 아니라 삼성물산·SK·HD현대 등 다른 대형 지주회사와의 자본배분·주주환원 정책 비교, 그리고 순자산가치 대비 시장 평가 수준의 경쟁이라는 성격이 강하다. 그룹 차원에서는 2028년까지 5년간 약 100조원의 국내 투자 계획 중 인공지능·바이오·클린테크(ABC) 영역에 50조원 이상을 배정하는 전략이 추진되고 있다.",
+  "en": "LG Corp. is a pure holding company controlling major affiliates such as LG Electronics, LG Chem and LG Uplus, with income streams split into brand royalty and rental income, dividends from affiliates, equity-method gains, and revenue from consolidated subsidiaries. Equity-method income reflects the holding company's ownership share of affiliate net profit, so earnings swings at LG Electronics, LG Chem and LG Uplus flow directly into consolidated results. For Q1 2026, brand royalty and rental income was KRW 117.9bn, equity-method income KRW 251.5bn, and revenue from consolidated subsidiaries including LG CNS KRW 1,431.2bn (KB Securities summary, May 2026). In Q2 2026, brand royalty and rental income was KRW 123.2bn and consolidated subsidiary revenue KRW 1,668.3bn, of which LG CNS accounted for KRW 1,520.8bn (Electronic Times, August 2026). In short, most consolidated revenue comes from subsidiaries such as IT services provider LG CNS, while the quality and volatility of profit are driven by equity-method and dividend income. On a separate basis, dividend income is central, totaling KRW 275.2bn in Q1 2026. Between November 2024 and March 2025, LG Corp. additionally acquired shares in LG Electronics and LG Chem to stabilize control and enhance its earnings structure. Competition is less about product markets than about capital allocation and shareholder-return policies relative to other large holding companies such as Samsung C&T, SK and HD Hyundai, and about how the market values net asset value. At group level, LG is pursuing roughly KRW 100tn of domestic investment over five years to 2028, with more than KRW 50tn earmarked for AI, bio and clean tech, the so-called ABC areas."
  },
  "earnings": {
-  "ko": "연결 실적은 2022년 이후 이익 규모가 꾸준히 축소되는 흐름이었다. 영업이익은 2022년 1조9414억원에서 2023년 1조5890억원, 2024년 9668억원, 2025년 9122억원으로 줄었고, 영업이익률도 2022년 27.0%에서 2025년 12.6%로 낮아졌다. 지배주주 순이익 역시 2022년 1조9796억원에서 2024년 5747억원까지 감소한 뒤 2025년 7372억원으로 다소 회복됐다. 신용평가업계 분석에서도 LG는 연결·별도 기준 모두 2023~2025년 3년간 영업이익이 감소 흐름을 보였다. 2025년 4분기 기준으로는 LG화학으로부터의 배당수입 감소 영향 등으로 별도 매출이 전년 대비 10% 줄었고, LG화학·LG에너지솔루션 등 상표권 사용 계열사의 매출 감소도 겹쳤다. 분기 흐름을 보면 2025년 1분기 영업이익 6380억원에서 2분기 2769억원, 3분기 4189억원으로 변동했고, 4분기에는 영업손실 4217억원·지배주주 순손실 3629억원을 기록하며 적자로 돌아섰다. 배경에는 전자 부문의 가전 판매 부진과 석유화학 부문 적자폭 확대가 있다. 2026년 1분기에는 매출 1조8006억원, 영업이익 4138억원, 지배주주 순이익 3398억원으로 다시 흑자 흐름에 복귀했으나, 전년 동기(영업이익 6380억원) 대비로는 감소한 수준이다. 한편 영업활동현금흐름은 2025년 1조151억원으로 견조했고 부채비율은 12.0%로 매우 낮은 재무구조를 유지했다.",
-  "en": "Consolidated earnings have steadily contracted since 2022. Operating profit fell from KRW 1,941.4bn in 2022 to KRW 1,589.0bn in 2023, KRW 966.8bn in 2024, and KRW 912.2bn in 2025, while the operating margin slipped from 27.0% in 2022 to 12.6% in 2025. Owners' net profit also declined from KRW 1,979.6bn in 2022 to KRW 574.7bn in 2024 before recovering somewhat to KRW 737.2bn in 2025. Credit-rating analysis likewise notes that LG's operating profit declined over the three years 2023–2025 on both a consolidated and standalone basis. As of Q4 2025, standalone revenue fell about 10% year on year on lower dividend income from LG Chem, compounded by declining royalty-paying affiliate sales at LG Chem and LG Energy Solution. By quarter, operating profit moved from KRW 638.0bn in Q1 2025 to KRW 276.9bn in Q2 and KRW 418.9bn in Q3, then swung to an operating loss of KRW 421.7bn and an owners' net loss of KRW 362.9bn in Q4. This reflected weak home-appliance sales in electronics and a widening petrochemical loss. In Q1 2026, the company returned to profit with revenue of KRW 1,800.6bn, operating profit of KRW 413.8bn, and owners' net profit of KRW 339.8bn, though this was below the prior-year quarter's KRW 638.0bn operating profit. Meanwhile, operating cash flow was solid at KRW 1,015.1bn in 2025, and the debt ratio stayed very low at 12.0%."
+  "ko": "2025년 연결 매출은 7조2,525억원으로 2024년 7조1,755억원 대비 소폭 늘었지만, 영업이익은 9,668억원에서 9,122억원으로 줄어 영업이익률이 13.5%에서 12.6%로 내려갔다. 이는 2022년(매출 7조1,860억원·영업이익 1조9,414억원·영업이익률 27.0%), 2023년(매출 7조4,453억원·영업이익 1조5,890억원·영업이익률 21.3%)과 비교하면 이익 체력이 절반 이하로 축소된 흐름이다. 매출이 4년간 7조원대에서 정체된 가운데 이익만 크게 흔들린 것은 지분법손익 의존도가 높은 지주회사 구조를 반영한다. 다만 2025년 지배주주 순이익은 7,372억원으로 2024년 5,747억원보다 증가했고, 영업활동 현금흐름도 1조151억원을 기록했다. 분기별로 보면 2025년 1분기 영업이익 6,380억원(매출 1조9,361억원)으로 출발한 뒤 2분기 2,769억원, 3분기 4,189억원으로 낮아졌고, 4분기에는 매출 1조5,225억원에 영업손실 4,217억원, 지배주주 순손실 3,629억원을 기록했다. 4분기 급반전의 배경으로는 화학 계열의 대규모 손상 반영이 지목되는데, LG화학은 2025년 4분기 석유화학·배터리·전지소재 사업 전망 재추정과 전략 방향 전환을 반영해 약 1조9,000억원의 유무형자산 손상을 인식하며 약 2조원의 영업외 손실이 발생했다고 밝혔다. LG전자도 2025년 4분기 매출 23조8,522억원에 영업손실 1,090억원으로 적자 전환했다. 2026년 1분기에는 매출 1조8,006억원, 영업이익 4,138억원, 지배주주 순이익 3,398억원으로 흑자 전환했으나, 지분법손익이 2,515억원으로 전년 동기 4,821억원 대비 48% 감소했고 지분법손익을 제외하면 1분기 연결 매출·영업이익은 각각 1조5,491억원, 1,623억원으로 전년 동기 대비 소폭 늘어난 수준이었다. 이후 2026년 2분기에는 연결 매출 2조1,396억원, 영업이익 5,330억원을 공시했고 지분법손익은 5,996억원(상반기 기준)으로 개선됐다고 발표했다(2026년 8월 13일 공시). 부채비율은 2022~2025년 12~13% 수준에서 유지돼 재무구조 자체는 안정적이다.",
+  "en": "Consolidated revenue in 2025 was KRW 7,252.5bn, slightly above KRW 7,175.5bn in 2024, but operating profit slipped from KRW 966.8bn to KRW 912.2bn, taking the margin from 13.5% to 12.6%. Compared with 2022 (revenue KRW 7,186.0bn, operating profit KRW 1,941.4bn, 27.0% margin) and 2023 (revenue KRW 7,445.3bn, operating profit KRW 1,589.0bn, 21.3% margin), earnings power has more than halved. Revenue has stalled in the KRW 7tn range for four years while profit swung widely, reflecting a holding-company structure heavily dependent on equity-method income. Net profit attributable to owners nonetheless rose to KRW 737.2bn in 2025 from KRW 574.7bn in 2024, and operating cash flow reached KRW 1,015.1bn. By quarter, 2025 began with operating profit of KRW 638.0bn on revenue of KRW 1,936.1bn, eased to KRW 276.9bn in Q2 and KRW 418.9bn in Q3, then swung to a KRW 421.7bn operating loss and a KRW 362.9bn net loss attributable to owners on revenue of KRW 1,522.5bn in Q4. Large impairments at chemical affiliates were a key driver: LG Chem said it recognized about KRW 1.9tn of tangible and intangible asset impairments in Q4 2025 after re-estimating outlooks for petrochemicals, batteries and battery materials, contributing to roughly KRW 2tn of non-operating losses. LG Electronics also swung to an operating loss of KRW 109.0bn on revenue of KRW 23.85tn in Q4 2025. Q1 2026 returned to profit with revenue of KRW 1,800.6bn, operating profit of KRW 413.8bn and net profit attributable to owners of KRW 339.8bn, but equity-method income fell 48% year on year to KRW 251.5bn, and excluding equity-method items, Q1 consolidated revenue and operating profit were KRW 1,549.1bn and KRW 162.3bn, only modestly higher than a year earlier. For Q2 2026, the company disclosed consolidated revenue of KRW 2,139.6bn and operating profit of KRW 533.0bn, with first-half equity-method income improving to KRW 599.6bn (disclosure dated August 13, 2026). The debt-to-equity ratio stayed in a 12-13% band from 2022 to 2025, indicating a stable balance sheet."
  },
  "industry": {
-  "ko": "지주회사 LG의 펀더멘털은 핵심 자회사가 속한 전방산업 사이클에 좌우된다. 전자 부문은 글로벌 소비심리 위축과 미국 관세 부과 영향으로 가전 판매가 부진했고, 석유화학 부문은 수급 불균형 장기화로 적자폭이 확대됐다. LG전자는 2025년 4분기 영업손실 1094억원으로 9년 만의 분기 적자를 기록했다. LG화학도 4분기 영업손실 4133억원으로 적자폭이 확대됐는데, 석유화학 해외 사업장 일회성 비용과 전지소재 고객사 재고 조정, ESS 신규 라인 초기 비용이 동시에 반영됐다. 다만 자회사별로 방향성은 엇갈린다. LG에너지솔루션은 북미 ESS 매출 확대로 2025년 영업이익 1조3460억원을 기록하며 그룹 실적을 방어했다. LG전자 전장(VS) 부문은 유럽 OEM향 출하 호조와 고수익 제품 믹스 개선으로 양호한 수익성을 보였다. 즉 가전·석유화학의 부진과 전장·배터리·신사업의 회복이 맞물리는 전환 국면에 위치해 있다.",
-  "en": "LG Corp's fundamentals as a holding company hinge on the downstream cycles of its core subsidiaries. The electronics segment saw weak appliance sales on softer global consumer sentiment and US tariffs, while the petrochemical segment's losses widened on a prolonged supply-demand imbalance. LG Electronics posted a Q4 2025 operating loss of KRW 109.4bn, its first quarterly loss in nine years. LG Chem's Q4 operating loss also widened to KRW 413.3bn, reflecting one-off costs at overseas petrochemical sites, customer inventory adjustments in battery materials, and startup costs for new ESS lines. Trajectories differ by subsidiary, however. LG Energy Solution posted 2025 operating profit of KRW 1,346.0bn on expanding North American ESS sales, cushioning group results. LG Electronics' vehicle components (VS) segment showed solid profitability on stronger European OEM shipments and a richer high-margin product mix. The group thus sits at a transition point where weak appliances and petrochemicals meet recovering auto components, batteries, and new businesses."
+  "ko": "지주회사 ㈜LG의 산업 사이클은 사실상 계열사 전방시장의 합집합이다. 전자 계열은 회복 국면에 들어선 모습으로, LG전자는 2026년 2분기 매출 22조7,398억원·영업이익 1조2,750억원으로 전년 동기 대비 각각 10.9%, 99.3% 증가했고 LG이노텍도 매출 5조9,317억원·영업이익 2,458억원으로 각각 29.8%, 114.8% 늘었다. 다만 LG전자 경영진은 2분기에 미국 대법원 판결 관련 관세 환급 등 약 3,000억원의 순 일회성 이익이 포함됐다고 밝혔다. 배터리 사업은 정책·수요 변동성이 여전하다. LG에너지솔루션의 2026년 2분기 매출은 7조5,602억원으로 전년 동기 대비 24.8% 늘었으나 영업이익은 1,133억원으로 77.0% 감소했고, 북미 생산 보조금 반영액은 2,410억원이었다. 디스플레이는 구조조정 국면이다. LG디스플레이는 2026년 2분기 매출 5조6,121억원, 영업손실 1,080억원을 기록했으며 희망퇴직 등 인력 효율화 비용 약 2,400억원이 일회성으로 반영됐고 상반기 영업흑자는 2021년 이후 5년 만이라고 밝혔다. 통신은 상대적으로 안정적이다. LG유플러스는 2026년 2분기 영업수익 3조6,949억원, 영업이익 3,445억원으로 전년 대비 13.1% 늘며 역대 분기 최대치를 기록했다. 석유화학은 중국 증설에 따른 공급과잉 부담이 이어져 LG화학은 나프타분해설비 감축을 병행하면서 ABS·SSBR 등 고부가 스페셜티 확대로 대응하고 있다. 요약하면 전자·통신은 개선, 화학·배터리·디스플레이는 구조조정과 정책 변수에 노출된 혼재 국면이며, 지주 손익은 이 두 흐름의 가중합으로 나타난다.",
+  "en": "For a holding company like LG Corp., the industry cycle is effectively the sum of its affiliates' end markets. Electronics affiliates appear to be recovering: LG Electronics posted Q2 2026 revenue of KRW 22.74tn and operating profit of KRW 1.275tn, up 10.9% and 99.3% year on year, while LG Innotek reported KRW 5.93tn revenue and KRW 245.8bn operating profit, up 29.8% and 114.8%. However, LG Electronics management noted the quarter included roughly KRW 300bn of net one-off gains, including tariff refunds tied to a US Supreme Court ruling. Battery remains exposed to policy and demand swings. LG Energy Solution's Q2 2026 revenue rose 24.8% year on year to KRW 7,560.2bn, but operating profit fell 77.0% to KRW 113.3bn, including KRW 241.0bn of North American production credits. Display is in restructuring mode. LG Display reported Q2 2026 revenue of KRW 5,612.1bn and an operating loss of KRW 108.0bn, including about KRW 240bn of one-off workforce efficiency costs, and said first-half operating profit was its first in five years since 2021. Telecom is relatively steady. LG Uplus reported Q2 2026 operating revenue of KRW 3,694.9bn and operating profit of KRW 344.5bn, up 13.1% year on year for a record quarterly high. Petrochemicals still face oversupply from Chinese capacity additions, and LG Chem is responding by trimming naphtha cracker capacity while expanding high-value specialty products such as ABS and SSBR. In sum, electronics and telecom are improving while chemicals, batteries and display face restructuring and policy variables, and holding-company earnings are the weighted sum of both."
  },
  "outlook": {
-  "ko": "회사는 주주환원과 신사업 투자를 동시에 추진하고 있다. 별도 조정 당기순이익 기준 배당성향 하한을 50%에서 60%로 상향했고, 2025년 배당성향은 68%, 최근 5개년 평균은 69% 수준을 유지하고 있다. 지난해 보유 자사주 605만9161주의 절반을 소각한 데 이어, '2026년 상반기 내 잔여 주식 전량 소각' 계획을 5월 공시로 최종 이행했다. ㈜LG는 자사주 소각으로 자본 효율성을 높이는 동시에 AI·바이오·클린테크('ABC') 투자를 확대해 연결 ROE를 2027년까지 8~10% 수준으로 끌어올린다는 계획이다. 신사업 모멘텀의 핵심은 AI다. LG AI연구원이 개발한 파운데이션 모델 '엑사원'은 정부 국가대표 AI 1차 평가에서 1위를 기록했고 8월 2차 평가가 예정돼 있으며, 연구원은 LG가 100% 지분을 보유한 LG경영개발원 산하 조직이어서 그 가치 상승이 LG 기업가치 증가로 직결될 가능성이 있다. LG AI연구원은 8월 2차수 종료 후 3차 진출이 확정되면 엑사원을 이미지·음성·영상까지 이해하는 멀티모달로 확장하고, 궁극적으로 물리 세계를 이해하는 피지컬 인텔리전스로 발전시킬 계획이다. 1분기 말 기준 1조3000억원의 현금성자산을 보유해 직접 투자 여력도 확보돼 있다. 다만 자회사 실적 회복 속도와 신사업 성과 가시화 시점은 여전히 불확실하다.",
-  "en": "The company is pursuing shareholder returns and new-business investment in tandem. It raised its payout floor (based on standalone adjusted net profit) from 50% to 60%, with a 2025 payout ratio of 68% and a five-year average around 69%. After cancelling half of its 6,059,161 treasury shares last year, it completed its pledge to cancel all remaining shares within H1 2026 via a May disclosure. LG Corp aims to lift consolidated ROE to 8–10% by 2027 by boosting capital efficiency through cancellation while expanding investment in AI, Bio, and Cleantech ('ABC'). AI is the core of its new-business momentum. LG AI Research's foundation model 'EXAONE' ranked first in the government's national AI 1st-round evaluation, with a 2nd round set for August; because the institute sits under LG Management Development Institute, wholly owned by LG, its rising value can translate directly into LG's enterprise value. If a 3rd-round entry is confirmed after the August 2nd round, LG AI Research plans to extend EXAONE into a multimodal model understanding images, voice, and video, ultimately developing physical intelligence that comprehends the physical world. It held KRW 1.3tn in cash and equivalents at the end of Q1, securing capacity for direct investment. Still, the pace of subsidiary earnings recovery and the timing of tangible new-business results remain uncertain."
+  "ko": "확인된 사실 기준으로 ㈜LG의 향후 관전 포인트는 주주환원 이행과 신성장 투자 두 축이다. 회사는 2026년 5월 22일 배당가능이익 범위 내 취득한 자기주식 보통주 302만9,581주(전체 발행 보통주의 1.96%)를 전량 소각하기로 결정했으며, 주당 평균취득단가 8만2,520원 기준 장부가액은 약 2,500억원, 소각 예정일은 5월 28일이라고 공시했다. 이는 2024년 발표한 총 5,000억원 규모 자사주 전량 소각 계획의 후속으로, 절반은 2025년 9월에 이미 소각이 완료됐다. 배당 측면에서는 최소 배당성향을 기존 50%에서 60%로 높인 뒤 보통주·우선주 주당 1,000원의 중간배당을 실시해 연 2회 배당 체계를 안착시켰다. 2025년 별도 조정 당기순이익이 전년 대비 11% 감소했지만 광화문빌딩 매각이익 중 1,000억원을 추가 배당재원으로 반영해 주당 배당금 3,100원을 유지했다. 회사는 매각한 광화문빌딩 대금 약 4,000억원(세후)의 활용 계획도 밝혔다. 투자 측면에서는 2026년 들어 주주환원책과 그룹 장기 성장 전략인 '성장 로드맵 2030'을 동기화하는 데 주력하고 있다. 피지컬 AI 분야에서는 구광모 회장과 엔비디아 젠슨 황 CEO의 회동 이후 LG전자의 로봇 공동 개발, LG이노텍의 센싱, LG유플러스의 AI 팩토리, LG에너지솔루션의 전력 솔루션 등이 협력 논의의 전면에 배치됐다. 반면 삼성증권은 계열사로부터 수취할 현금흐름의 상향 여지가 제한적이고 추가 자본정책 업데이트가 부재하다는 점을 들어 순자산가치 할인 해소 모멘텀은 비교적 제한적이라고 평가했다(2026년 5월).",
+  "en": "Based on confirmed facts, the two things to watch at LG Corp. are execution of shareholder returns and new-growth investment. On May 22, 2026 the company disclosed a decision to cancel all 3,029,581 treasury common shares acquired within distributable profit, equal to 1.96% of outstanding common shares, with a book value of about KRW 250bn based on an average acquisition price of KRW 82,520 per share and a scheduled cancellation date of May 28. This followed a 2024 plan to cancel a total of KRW 500bn of treasury stock, half of which was already retired in September 2025. On dividends, the minimum payout ratio was lifted from 50% to 60% and an interim dividend of KRW 1,000 per common and preferred share established a twice-yearly dividend framework. Although separate adjusted net profit for 2025 fell 11% year on year, the company kept its dividend at KRW 3,100 per share by adding KRW 100bn of gains from the Gwanghwamun building sale to its dividend resources. It also outlined plans for the roughly KRW 400bn in after-tax proceeds from that sale. On investment, the company has focused in 2026 on aligning shareholder-return policy with the group's long-term strategy, the Growth Roadmap 2030. In physical AI, following a meeting between Chairman Koo Kwang-mo and Nvidia CEO Jensen Huang, joint robot development at LG Electronics, sensing at LG Innotek, AI factories at LG Uplus and power solutions at LG Energy Solution were placed at the center of cooperation talks. By contrast, Samsung Securities said in May 2026 that momentum to close the net asset value discount looks relatively limited, citing capped upside in cash flows receivable from affiliates and the absence of further capital-policy updates."
  },
  "valuation_comment": {
-  "ko": "헤드라인 지표상 자기자본이익률(ROE)은 약 1.7%, 주당순이익(EPS)은 3,159원, 주당순자산(BPS)은 19만716원이다. 자회사 이익 둔화로 순이익 기반이 약해진 국면이라 이익 기준 밸류에이션 배수는 과거 거래 밴드의 상단을 웃도는 수준으로, 평상시 지주회사에서 통용되던 영역을 벗어나 있다. 반면 주가는 주당순자산을 밑도는 구간, 즉 순자산 대비 할인 상태에서 거래된다. 키움증권은 LG의 NAV가 37조5000억원으로 역대 최고치를 경신했고 NAV 할인율은 지난해 말 45%에서 40%로 축소됐다고 분석했다. 배당 측면에서는 주당 현금배당금(DPS)이 3,100원 수준으로, 최근 5개년 평균 배당성향 69%의 일관된 고배당 기조가 이어지고 있다. 종합하면 이익 기준 멀티플의 부담과 순자산·배당 기준의 매력이 공존하는 구간으로, 자회사 이익 회복과 NAV 할인 축소 여부가 재평가의 관건이다.",
-  "en": "On headline metrics, return on equity (ROE) is about 1.7%, earnings per share (EPS) is KRW 3,159, and book value per share (BPS) is KRW 190,716. With the earnings base weakened by softer subsidiary profits, the earnings-based valuation multiple sits above the upper end of its historical trading band, outside the range normally seen for the holding company. The share price, by contrast, trades below book value—at a discount to net assets. Kiwoom Securities noted LG's NAV hit a record high of KRW 37.5tn and the NAV discount narrowed to 40% from 45% at end-2025. On dividends, the cash dividend per share (DPS) is around KRW 3,100, and a consistent high-payout stance continues, with a five-year average payout ratio of 69%. In sum, the stock sits in a zone where an elevated earnings multiple coexists with appeal on a net-asset and dividend basis; the keys to re-rating are a recovery in subsidiary earnings and a narrowing of the NAV discount."
+  "ko": "지주회사 밸류에이션은 통상 순자산가치(NAV) 대비 할인율로 논의되는데, ㈜LG 주가는 회계상 순자산(주당 순자산 190,716원)보다 낮은 수준에서 형성돼 순자산 대비 할인 구간에 머물러 있다. 삼성증권은 2026년 5월 기준 목표 NAV 할인율 45%를 적용하며 당시 실제 할인율이 47%와 유사한 수준이라고 밝혔다. 이익 지표는 반대 방향으로 왜곡돼 있다. 2025년 4분기 계열사 손상 반영으로 최근 1년 합산 지배주주 순이익(4,968억원, 2025년 2분기~2026년 1분기 합산)이 크게 줄어 주당순이익이 3,159원으로 낮아졌고, 그 결과 이익 기준 배수는 과거 지주회사가 통상 거래됐던 10배 안팎의 밴드를 크게 웃도는 구간에 있다. 즉 자산 기준으로는 할인, 이익 기준으로는 밴드 상단이라는 상반된 신호가 동시에 나타나는 셈이다. 배당은 최근 5개년(2021~2025년) 평균 배당성향 69% 수준과 주당 3,100원의 배당금이 유지되면서 지주업종 내에서 상대적으로 높은 환원율에 속하고, 여기에 자사주 소각으로 발행주식수가 줄어드는 효과가 겹친다. 다만 2025년 배당성향이 68%로 정부가 규정한 고배당기업 배당소득 분리과세 요건을 충족했다는 점처럼 환원의 지속성은 계열사 배당수취 능력에 연동된다는 점을 함께 볼 필요가 있다.",
+  "en": "Holding-company valuation is usually framed as a discount to net asset value, and LG Corp. trades below its accounting book value, with book value per share of KRW 190,716, leaving it in discount territory versus net assets. Samsung Securities applied a target NAV discount of 45% in May 2026, noting the then-prevailing discount of 47% was similar. Earnings-based metrics are distorted in the opposite direction. Affiliate impairments in Q4 2025 cut the trailing four-quarter net profit attributable to owners to KRW 496.8bn (Q2 2025 through Q1 2026), lowering earnings per share to KRW 3,159, so the earnings multiple sits well above the roughly 10x band where holding companies have historically traded. In other words, asset-based and earnings-based signals point in opposite directions at the same time. On dividends, the five-year average payout ratio for 2021-2025 stood at about 69% and the KRW 3,100 per share dividend has been maintained, placing the payout rate on the higher side within the holding-company group, compounded by a shrinking share count from treasury cancellations. Still, as shown by the fact that the 2025 payout ratio of 68% met the government's criteria for separate taxation of dividend income at high-payout companies, the durability of returns is tied to the dividend-receiving capacity from affiliates."
  },
  "bull": [
   {
    "title": {
-    "ko": "전방위 주주환원 강화",
-    "en": "Broad strengthening of shareholder returns"
+    "ko": "환원 정책의 실제 이행 이력",
+    "en": "Track record of executing returns"
    },
    "body": {
-    "ko": "기보유 자사주 전량 소각 약속을 완료했고 배당성향 하한을 50%에서 60%로 상향했다. 향후 일회성·경상 이익 중 배당과 투자 집행 후 남는 잉여현금 일부를 자사주 매입에 투입하되, 무리한 차입을 지양하고 본업 현금 범위에서 밸류업을 추진한다는 방침이다. 발행주식 수 축소와 고배당 기조는 주당 가치에 우호적으로 작용할 수 있다.",
-    "en": "It completed its pledge to cancel all remaining treasury shares and raised the payout floor from 50% to 60%. It plans to channel part of surplus cash—after dividends and investment from one-off and recurring profits—into share buybacks, while avoiding excessive borrowing and pursuing value-up within operating cash flow. A shrinking share count and high-payout stance can support per-share value."
+    "ko": "㈜LG는 선언에 그치지 않고 일정을 지켰다. 2025년에 기보유 자사주 605만9,161주의 절반을 소각한 뒤 2026년 상반기 내 잔여분 전량 소각을 공시대로 완료했다. 최소 배당성향을 50%에서 60%로 높이고 중간배당을 도입해 연 2회 배당 체계를 정착시켰다. 이행 실적이 축적되면 향후 정책의 신뢰도 평가에 반영될 여지가 있다.",
+    "en": "LG Corp. has followed through on its calendar rather than merely announcing plans. After retiring half of its 6,059,161 treasury common shares in 2025, it completed cancellation of the remainder in the first half of 2026 as disclosed. It also raised the minimum payout ratio from 50% to 60% and introduced interim dividends, establishing twice-yearly payouts. An accumulating execution record can feed into how the market assesses policy credibility."
    }
   },
   {
    "title": {
-    "ko": "그룹 AI 역량의 직접 수혜 가능성",
-    "en": "Potential direct beneficiary of group AI capabilities"
+    "ko": "전자 계열 손익 회복",
+    "en": "Recovering electronics earnings"
    },
    "body": {
-    "ko": "LG AI연구원은 LG가 100% 지분을 보유한 LG경영개발원 산하 조직으로, 연구원 가치 상승은 지분구조상 LG 기업가치 증가로 직결될 가능성이 높다. K-엑사원은 정부 독자 AI 파운데이션 모델 프로젝트 1차 평가에서 전 부문 최고점으로 2차 단계에 진출했다. 순수지주회사 특성상 신사업 투자가 지주를 중심으로 이뤄질 수 있다는 점도 잠재 수혜 요인이다.",
-    "en": "LG AI Research sits under LG Management Development Institute, wholly owned by LG, so a rise in the institute's value can translate directly into LG's enterprise value. K-EXAONE advanced to the 2nd round with top scores across all categories in the government's independent AI foundation-model project. As a pure holding company, new-business investment may be centered on the holding company itself—another potential benefit."
+    "ko": "지주 손익의 변동 축인 지분법손익이 개선되고 있다. 2026년 2분기 지분법손익은 3,481억원으로 전년 동기 929억원보다 274.7% 증가했고, LG전자·LG이노텍 실적 개선에 더해 전년 2분기 손실을 냈던 LG CNS 관련 지분법손익도 흑자로 돌아섰다. 이는 2025년 4분기 손상 충격 이후의 정상화 과정으로 볼 수 있다. 다만 일회성 이익 기여분은 별도로 구분해 볼 필요가 있다.",
+    "en": "Equity-method income, the swing factor in holding-company profit, is improving. Q2 2026 equity-method income rose 274.7% year on year to KRW 348.1bn from KRW 92.9bn, as LG Electronics and LG Innotek recovered and LG CNS-related equity income turned positive after a loss in the prior-year quarter. This can be read as normalization following the Q4 2025 impairment shock. One-off contributions, however, should be assessed separately."
    }
   },
   {
    "title": {
-    "ko": "낮은 부채·풍부한 현금",
-    "en": "Low debt and ample cash"
+    "ko": "낮은 레버리지와 현금흐름",
+    "en": "Low leverage and cash flow"
    },
    "body": {
-    "ko": "2025년 부채비율은 12.0%로 매우 낮고 영업활동현금흐름은 1조151억원으로 견조하다. 1분기 말 기준 1조3000억원의 현금성자산을 보유해 신사업 투자 여력이 충분하다. 재무 안정성은 업황 변동기에 방어력을 제공한다.",
-    "en": "The 2025 debt ratio was very low at 12.0% and operating cash flow was solid at KRW 1,015.1bn. It held KRW 1.3tn in cash and equivalents at end-Q1, giving ample room for new-business investment. This financial stability provides resilience through cyclical swings."
+    "ko": "재무구조는 지주회사 특성상 견고하다. 부채비율은 2022년 13.0%에서 2025년 12.0%까지 낮은 수준을 유지했고, 2025년 영업활동 현금흐름은 1조151억원이었다. 2026년 1분기 말 별도 기준 현금성 자산은 1조3,000억원으로 집계됐다. 이는 배당·소각과 신성장 투자를 병행할 재원 여력의 근거로 언급되는 대목이다.",
+    "en": "The balance sheet is solid, as is typical for a holding company. Debt-to-equity stayed low, easing from 13.0% in 2022 to 12.0% in 2025, and 2025 operating cash flow was KRW 1,015.1bn. Separate-basis cash and equivalents stood at KRW 1.3tn at the end of Q1 2026. This is cited as the basis for funding dividends and cancellations alongside new-growth investment."
    }
   }
  ],
  "bear": [
   {
    "title": {
-    "ko": "자회사 이익·배당수입 둔화",
-    "en": "Softer subsidiary profits and dividend income"
+    "ko": "이익의 계열사 종속성",
+    "en": "Profit dependence on affiliates"
    },
    "body": {
-    "ko": "지주사 핵심 수입원인 계열사 배당수익이 3년 연속 감소했다. 2025년 4분기에는 LG화학으로부터의 배당수입 감소와 상표권 사용 계열사 매출 감소가 겹쳤다. 자회사 이익 기반이 약해지면 지주회사 손익과 배당 재원에 직접 부담이 된다.",
-    "en": "Affiliate dividend income, the holding company's core revenue source, fell for a third straight year. In Q4 2025, lower dividend income from LG Chem coincided with declining sales at royalty-paying affiliates. A weakening subsidiary profit base directly pressures the holding company's earnings and dividend funding."
+    "ko": "㈜LG의 이익은 자체 사업보다 계열사 손익에 좌우된다. 2025년 4분기 영업손실 4,217억원은 지주 본연 사업의 악화가 아니라 계열사 손익 반영에서 비롯된 성격이 강하다. LG화학이 4분기에 약 1조9,000억원의 유무형자산 손상을 인식한 사례가 대표적이다. 계열사 회계 이벤트가 반복되면 지주 실적의 예측 가능성은 계속 낮아진다.",
+    "en": "LG Corp.'s profit is driven by affiliate earnings rather than its own operations. The KRW 421.7bn operating loss in Q4 2025 stemmed largely from affiliate results rather than deterioration in the holding company's own business. LG Chem's recognition of roughly KRW 1.9tn in tangible and intangible asset impairments that quarter is a case in point. Recurring accounting events at affiliates keep the predictability of holding-company results low."
    }
   },
   {
    "title": {
-    "ko": "가전·석유화학 업황 부진",
-    "en": "Weak appliance and petrochemical conditions"
+    "ko": "정체된 매출과 축소된 마진",
+    "en": "Flat revenue, compressed margin"
    },
    "body": {
-    "ko": "전자 부문은 소비심리 위축과 관세 영향으로 가전 판매가 부진했고, 석유화학 부문은 수급 불균형 장기화로 적자폭이 확대됐다. 증권가에서는 석유화학·배터리 부문 부진으로 이익창출력 회복이 지연되고, 통상환경 등을 감안할 때 큰 폭의 실적 개선 가능성은 제한적이라는 전망도 나온다. 전방 수요 회복 시점이 불확실하다.",
-    "en": "The electronics segment saw weak appliance sales on softer sentiment and tariffs, while petrochemicals' losses widened on a prolonged supply-demand imbalance. Some analysts expect earnings-power recovery to be delayed by petrochemical and battery weakness, with limited scope for a large improvement given the trade environment. The timing of a downstream demand recovery is uncertain."
+    "ko": "매출은 2022년 7조1,860억원에서 2025년 7조2,525억원으로 4년간 사실상 정체됐다. 같은 기간 영업이익은 1조9,414억원에서 9,122억원으로 줄고 영업이익률은 27.0%에서 12.6%로 낮아졌다. 종속회사 매출 성장이 이익 마진 개선으로 곧바로 연결되지 않는다는 점이 확인된다. 마진 회복은 계열사 배당·지분법 회복 속도에 달려 있다.",
+    "en": "Revenue has been essentially flat over four years, from KRW 7,186.0bn in 2022 to KRW 7,252.5bn in 2025. Over the same period, operating profit fell from KRW 1,941.4bn to KRW 912.2bn and the margin narrowed from 27.0% to 12.6%. Growth in subsidiary revenue clearly does not translate directly into margin improvement. Any margin recovery hinges on the pace of recovery in affiliate dividends and equity-method income."
    }
   },
   {
    "title": {
-    "ko": "지주사 구조적 할인",
-    "en": "Structural holding-company discount"
+    "ko": "환원 확대 여력의 한계 지적",
+    "en": "Questions over further payout capacity"
    },
    "body": {
-    "ko": "지주사 특유의 더블카운팅(중복 상장) 할인 요소는 늘 염두에 두어야 한다. 글로벌 경기 침체 장기화로 자회사 순이익이 급감하면 배당금이 동결될 수 있다. NAV 할인 축소가 정체될 경우 주가 재평가가 지연될 수 있다.",
-    "en": "The holding-company double-counting (cross-listing) discount must always be kept in mind. A prolonged global downturn that sharply cuts subsidiary net profit could freeze dividends. If the NAV discount stops narrowing, the share price re-rating could be delayed."
+    "ko": "증권가 일부는 추가 환원 여력에 의문을 제기한다. 삼성증권은 계열사로부터 수취할 현금흐름의 상향 여지가 제한적이고 추가 주주환원 정책·투자 계획 관련 자본정책 업데이트가 부재하다고 지적했다. 기보유 자사주 소각이 완료된 이후에는 신규 매입 재원 확보가 전제되어야 한다. 회사는 일회성 비경상 이익과 경상 이익 중 배당·투자 재원 집행 후 잉여 현금 일부를 자사주 매입 재원으로 고려한다는 방침이다.",
+    "en": "Some analysts question capacity for further returns. Samsung Securities pointed to limited upside in cash flows receivable from affiliates and the absence of capital-policy updates on additional shareholder returns or investment plans. With existing treasury shares now retired, new buybacks require fresh funding. The company's stated approach is to consider using part of the surplus cash left after dividends and investment, drawn from both one-off and recurring profits, for treasury share purchases."
    }
   }
  ],
  "risks": [
   {
    "cat": {
-    "ko": "실적 변동성",
-    "en": "Earnings volatility"
+    "ko": "계열사 손상·구조조정 비용",
+    "en": "Affiliate impairments and restructuring costs"
    },
    "body": {
-    "ko": "지주회사 손익은 자회사 실적에 직접 연동되며, 2025년 4분기처럼 분기 영업손실이 발생할 수 있다. 석유화학 해외 사업장 일회성 비용, 전지소재 재고 조정, ESS 신규 라인 초기 비용 등 일회성 요인이 분기 실적을 크게 흔들 수 있다. 분기별 변동성이 높은 점에 유의해야 한다.",
-    "en": "Holding-company earnings are directly tied to subsidiary results and can post a quarterly operating loss, as in Q4 2025. One-off factors—overseas petrochemical-site costs, battery-material inventory adjustments, and ESS line startup costs—can heavily swing quarterly results. Investors should note the high quarter-to-quarter volatility."
+    "ko": "계열사의 일회성 비용은 지분법 경로로 지주 손익에 그대로 반영된다. LG디스플레이는 2026년 2분기에 희망퇴직 등 인력 효율화 비용 약 2,400억원을 일회성으로 반영했다. LG전자도 2025년 하반기 조기 퇴직 프로그램 관련 일회성 비용이 언급됐다. 향후에도 유사한 비용 인식이 반복될 가능성을 배제할 수 없다.",
+    "en": "One-off costs at affiliates pass straight into holding-company profit through the equity method. LG Display booked about KRW 240bn of workforce efficiency costs, including voluntary retirement, as a one-off in Q2 2026. LG Electronics was also cited for one-off costs tied to an early retirement program in the second half of 2025. The possibility of similar recognitions recurring cannot be ruled out."
    }
   },
   {
    "cat": {
-    "ko": "신사업 성과 불확실성",
-    "en": "Uncertain new-business outcomes"
+    "ko": "관세·거시 변수",
+    "en": "Tariffs and macro variables"
    },
    "body": {
-    "ko": "AI·바이오·클린테크 투자는 성과 가시화까지 시간이 걸린다. 독자 AI 프로젝트 2차 단계에서는 성능을 넘어 실제 산업 현장 적용과 확산 가능성이 새로운 경쟁 기준으로 부상할 전망이다. 8월 2차 평가 결과에 따라 모멘텀의 강도가 달라질 수 있다.",
-    "en": "AI/Bio/Cleantech investments take time to show tangible results. In the 2nd round of the independent AI project, real-world industrial application and diffusion potential—beyond raw performance—are expected to emerge as new competitive criteria. The August 2nd-round result could change the strength of this momentum."
+    "ko": "계열사 실적에는 통상·거시 변수가 직접 반영된다. LG전자는 2026년 2분기에 미국 대법원 판결 관련 관세 환급을 포함해 약 3,000억원의 순 일회성 이익이 반영됐다고 밝혔다. 앞서 회사는 관세 정책 변동성, 금리 인하 지연, 중동 정세에 따른 물가 상승 가능성 등으로 수요 개선이 어려울 것으로 예상한다고 언급했다. 이런 일회성 항목의 반복 여부는 지주 손익 추정의 불확실성으로 남는다.",
+    "en": "Trade and macro variables feed directly into affiliate results. LG Electronics said Q2 2026 included roughly KRW 300bn of net one-off gains, including tariff refunds tied to a US Supreme Court ruling. Earlier, the company said demand improvement would be difficult given tariff policy volatility, delayed rate cuts and potential inflation from Middle East tensions. Whether such one-offs recur remains a source of uncertainty in estimating holding-company earnings."
    }
   },
   {
    "cat": {
-    "ko": "대외 통상·거시 환경",
-    "en": "External trade and macro environment"
+    "ko": "신성장 투자 회수 기간",
+    "en": "Payback period on new-growth investment"
    },
    "body": {
-    "ko": "미국 관세 부과와 글로벌 소비심리 위축은 핵심 자회사 수익성에 부담을 준다. 환율·금리·관세 정책 변화가 그룹 전반의 수출 채산성과 수요에 영향을 미칠 수 있다. 거시 변수는 지주회사가 통제하기 어려운 외생 위험이다.",
-    "en": "US tariffs and softer global consumer sentiment weigh on core subsidiaries' profitability. Shifts in FX, interest rates, and tariff policy can affect group-wide export margins and demand. Macro variables are exogenous risks the holding company cannot control."
+    "ko": "ABC 전략은 대규모·장기 투자다. 그룹은 2028년까지 5년간 약 100조원의 국내 투자 중 ABC 영역에 50조원 이상을 배정하고 있다. 바이오 분야는 단기 성과 창출이 어려운 신약 개발 특성상 장기 투자와 기술 수출을 병행하는 리스크 관리 전략이 실행 중이다. 투자 성과의 손익 반영 시점이 지연되면 환원 재원과 경합할 소지가 있다.",
+    "en": "The ABC strategy involves large, long-dated investment. The group is allocating more than KRW 50tn to ABC areas within roughly KRW 100tn of domestic investment over five years to 2028. In bio, where drug development rarely yields near-term results, the group is running a risk-management approach that combines long-term investment with technology licensing. If earnings contributions arrive later than planned, they could compete with resources for shareholder returns."
    }
   }
  ],
  "checkpoints": [
   {
    "when": {
-    "ko": "2026년 7월 말",
-    "en": "Late July 2026"
+    "ko": "2026년 8월 말~9월",
+    "en": "Late August to September 2026"
    },
    "what": {
-    "ko": "주요 자회사(LG전자·LG화학 등)의 2026년 2분기 실적 발표. 가전·석유화학 적자폭 축소 여부와 전장·배터리 회복 강도가 지주사 배당수입·NAV에 직결된다.",
-    "en": "Q2 2026 earnings from key subsidiaries (LG Electronics, LG Chem, etc.). Whether appliance/petrochemical losses narrow and how strongly auto components and batteries recover directly affect the holding company's dividend income and NAV."
+    "ko": "2026년 중간배당 이사회 결의와 기준일·금액. 전년에는 보통주·우선주 각각 1주당 1,000원, 기준일 9월 12일, 지급 9월 26일로 결정된 바 있다. 연 2회 배당 체계가 규모와 함께 유지되는지 확인 포인트다.",
+    "en": "Board resolution on the 2026 interim dividend, including record date and amount. A year earlier, the company set KRW 1,000 per common and preferred share, a September 12 record date and September 26 payment. The key question is whether the twice-yearly framework is maintained at scale."
    }
   },
   {
    "when": {
-    "ko": "2026년 8월",
-    "en": "August 2026"
+    "ko": "2026년 10월 말~11월 초",
+    "en": "Late October to early November 2026"
    },
    "what": {
-    "ko": "정부 독자 AI 파운데이션 모델 프로젝트 2차 단계 평가. 2차수 종료 후 3차 진출이 확정되면 엑사원 멀티모달 확장이 본격화돼 AI 모멘텀의 향방을 가른다.",
-    "en": "The government's independent AI foundation-model project 2nd-round evaluation. If a 3rd-round entry is confirmed after the 2nd round, EXAONE's multimodal expansion accelerates, shaping the direction of AI momentum."
+    "ko": "LG전자·LG화학·LG유플러스 등 주요 계열사의 3분기 실적 발표. 지분법손익 회복이 2분기의 일회성 요인 없이도 이어지는지가 지주 손익 방향을 결정한다. 특히 화학·배터리 계열의 손상 추가 여부를 함께 확인해야 한다.",
+    "en": "Q3 results from key affiliates such as LG Electronics, LG Chem and LG Uplus. Whether the equity-method recovery continues without the one-offs seen in Q2 will determine the direction of holding-company profit. Watch also for any further impairments at chemical and battery affiliates."
    }
   },
   {
    "when": {
-    "ko": "2026년 8월(중간배당)",
-    "en": "August 2026 (interim dividend)"
+    "ko": "2026년 11월",
+    "en": "November 2026"
    },
    "what": {
-    "ko": "반기 배당 규모와 자사주 매입 진행 상황. 배당성향 60% 하한 유지 및 추가 주주환원 이행 여부가 투자 심리에 영향을 준다.",
-    "en": "Interim dividend size and buyback progress. Maintaining the 60% payout floor and executing additional shareholder returns will affect investor sentiment."
+    "ko": "㈜LG의 3분기 실적 공시와 기업가치 제고 계획 이행현황 공시. 전년 11월 28일에는 밸류업 계획의 실행 내역과 향후 로드맵을 담은 이행현황을 공시했다. 기보유 자사주 소각 완료 이후의 추가 환원 방안이 담기는지가 관전 포인트다.",
+    "en": "LG Corp.'s Q3 disclosure and its update on the corporate value-up plan. On November 28 of the prior year, it disclosed implementation details and a forward roadmap for its value-up plan. The focus is whether additional return measures follow the completion of treasury share cancellations."
    }
   },
   {
    "when": {
-    "ko": "2026년 10월 말",
-    "en": "Late October 2026"
+    "ko": "2026년 하반기 중",
+    "en": "During the second half of 2026"
    },
    "what": {
-    "ko": "LG 및 자회사 3분기 실적. 2025년 4분기 적자 이후 이익 회복의 지속성과 NAV 할인율 추이를 확인하는 시점이다.",
-    "en": "Q3 results for LG and its subsidiaries. A checkpoint for the sustainability of the profit recovery after the Q4 2025 loss and the trend in the NAV discount."
+    "ko": "광화문빌딩 매각대금 활용 내역과 ABC 투자 집행. 회사는 매각대금 약 4,000억원(세후)의 활용 계획을 밝힌 상태다. 자금이 투자와 환원 중 어느 쪽에 얼마나 배분되는지가 자본배분 정책의 실제 방향을 보여준다.",
+    "en": "Use of proceeds from the Gwanghwamun building sale and execution of ABC investments. The company has outlined plans for roughly KRW 400bn in after-tax proceeds. How that cash is split between investment and returns will reveal the actual direction of capital allocation."
+   }
+  },
+  {
+   "when": {
+    "ko": "2027년 초",
+    "en": "Early 2027"
+   },
+   "what": {
+    "ko": "2026년 결산 배당 결정과 별도 조정 순이익 기준 배당성향. 회사는 배당성향 하한을 50%에서 60%로 상향한 상태다. 계열사 배당수취 규모 변화가 주당 배당금 유지 여부에 어떻게 반영되는지 확인 대상이다.",
+    "en": "The 2026 year-end dividend decision and the payout ratio on separate adjusted net profit. The company has raised its payout floor from 50% to 60%. The point to check is how changes in dividends received from affiliates affect whether the per-share dividend is maintained."
    }
   }
  ],
  "verdict": {
   "body": {
-   "ko": "LG는 핵심 자회사의 실적과 지분가치가 펀더멘털을 좌우하는 순수지주회사다. 2022년 이후 연결 영업이익과 마진이 축소돼 왔고 2025년 4분기에는 분기 영업손실을 기록했으나, 2026년 1분기에는 흑자로 복귀했다. 동시에 회사는 기보유 자사주 전량 소각을 완료하고 배당성향 하한을 60%로 상향하는 등 주주환원을 강화하고 있으며, 2027년 ROE 8~10% 목표와 AI·바이오·클린테크 투자 확대를 제시했다. LG AI연구원의 엑사원이 국가대표 AI 1차 평가 1위를 기록하고 8월 2차 평가가 예정되면서 그룹 AI 역량이 부각되고 있다. 반면 가전·석유화학 업황 부진과 배당수입 3년 연속 감소, 지주사 구조적 할인은 부담 요인이다. 주가는 순자산 대비 할인 구간에서 거래되며 NAV 할인 축소와 자회사 이익 회복이 재평가의 핵심 변수로, 본 자료는 정보 제공 목적이며 투자의견이나 목표주가를 제시하지 않는다.",
-   "en": "LG Corp is a pure holding company whose fundamentals hinge on the earnings and stake values of its core subsidiaries. Consolidated operating profit and margins have shrunk since 2022 and it posted a quarterly operating loss in Q4 2025, but it returned to profit in Q1 2026. At the same time, the company is strengthening shareholder returns—completing cancellation of all remaining treasury shares and raising the payout floor to 60%—while setting an 8–10% ROE target for 2027 and expanding AI/Bio/Cleantech investment. LG AI Research's EXAONE ranked first in the national AI 1st-round evaluation, with a 2nd round set for August, putting group AI capabilities in the spotlight. On the other hand, weak appliance and petrochemical conditions, three straight years of declining dividend income, and the structural holding-company discount are headwinds. The stock trades at a discount to net assets, with a narrowing NAV discount and a subsidiary earnings recovery as the key re-rating variables; this material is for information only and offers no investment opinion or target price."
+   "ko": "㈜LG는 상표권·임대수익과 계열사 배당수익이라는 안정적 기반 위에 지분법손익이라는 변동성 층이 얹힌 지주회사다. 확정 실적을 보면 매출은 2022년 7조1,860억원에서 2025년 7조2,525억원으로 정체된 반면 영업이익률은 27.0%에서 12.6%로 낮아졌고, 2025년 4분기 영업손실 4,217억원 이후 2026년 1분기 영업이익 4,138억원으로 흑자 전환했다. 강세 요인은 자사주 전량 소각 이행과 배당성향 하한 60% 상향·중간배당 도입 등 환원 정책의 실제 집행, 그리고 2026년 2분기 지분법손익이 전년 동기 대비 274.7% 늘어난 3,481억원을 기록한 전자 계열 회복이다. 약세 요인은 계열사 회계 이벤트에 이익이 직접 노출되는 구조, 정체된 매출과 축소된 마진, 그리고 계열사 수취 현금흐름 상향 여지가 제한적이라는 증권가 지적이다. 밸류에이션은 순자산 대비 할인 구간과 이익 기준 밴드 상단이라는 상반된 신호가 동시에 존재하며, 이는 최근 1년 이익이 손상으로 눌려 있다는 점과 무관하지 않다. 향후 확인해야 할 것은 중간배당 결정, 3분기 계열사 실적, 기업가치 제고 계획 이행현황 공시, 광화문빌딩 매각대금 배분이다. 본 리포트는 정보 제공 목적이며 투자 판단은 독자의 몫이다.",
+   "en": "LG Corp. is a holding company layering volatile equity-method income on top of a stable base of brand royalty, rental and affiliate dividend income. On confirmed figures, revenue was essentially flat from KRW 7,186.0bn in 2022 to KRW 7,252.5bn in 2025 while the operating margin narrowed from 27.0% to 12.6%, and after a KRW 421.7bn operating loss in Q4 2025 the company returned to a KRW 413.8bn operating profit in Q1 2026. The bull case rests on actual execution of returns, including full treasury share cancellation, a payout floor raised to 60% and interim dividends, plus the electronics recovery that lifted Q2 2026 equity-method income 274.7% year on year to KRW 348.1bn. The bear case centers on profit being directly exposed to affiliate accounting events, flat revenue with compressed margins, and analyst observations that upside in cash flows receivable from affiliates is limited. Valuation shows conflicting signals at once, a discount to net assets alongside an earnings multiple above the historical band, which is inseparable from impairment-depressed profit over the past year. Items to verify next are the interim dividend decision, Q3 affiliate results, the value-up plan implementation disclosure, and the allocation of Gwanghwamun building sale proceeds. This report is for information purposes only, and investment decisions rest with the reader."
   }
  },
  "sources": [
-  "https://alphasquare.co.kr/home/stock-summary?code=003550",
-  "https://www.threads.com/@stockhandbook_friends/post/DU0kKeIEXhY/lg003550%EB%8A%94-2026%EB%85%84-2%EC%9B%94-13%EC%9D%BC-%EA%B8%B0%EC%A4%80%EC%9C%BC%EB%A1%9C%EC%A3%BC%EA%B0%80-%EC%83%81%EC%8A%B9-%EC%9A%94%EC%9D%B8%EC%9D%80-%EC%8B%A4%EC%A0%81-%EB%B0%A9%EC%96%B4-%ED%99%95%EC%9D%B8-%EC%99%B8%EA%B5%AD%EC%9D%B8-%EC%88%98%EA%B8%89-%ED%9A%8C%EB%B3%B5-%EC%A7%80%EC%A3%BC%EC%82%AC-%EA%B0%80%EC%B9%98-%EC%9E%AC%ED%8F%89%EA%B0%80-%EB%93%B1%EC%9C%BC%EB%A1%9C-%EB%B6%84%EC%84%9D%EB%90%9C%EB%8B%A4%EC%8B%A4%EC%A0%81%EC%9D%80-2/",
-  "https://m.thinkpool.com/compDiscuss/cont/1026428",
-  "https://alphasquare.co.kr/home/stock-summary?code=066570",
-  "https://stock.pstatic.net/stock-research/company/64/20260519_company_452289000.pdf",
-  "https://littlebproject.com/stock/003550/32/49181",
-  "https://littlebproject.com/stock/003550/380/66218",
-  "https://v.daum.net/v/20260601074304793",
-  "https://www.investing.com/equities/lg-corp",
-  "https://www.hanaw.com/main/research/research/download.cmd?bbsSeq=1287089&attachFileSeq=1&bbsId=&dbType=&bbsCd=2224",
-  "https://www.economytribune.co.kr/news/articleView.html?idxno=3901618",
-  "https://www.youthdaily.co.kr/news/article.html?no=218327",
+  "https://www.sedaily.com/article/20047481",
+  "https://www.globalepic.co.kr/view.php?ud=2025082814030130948439a4874_29",
+  "https://www.fnnews.com/news/202605221754097094",
+  "https://m.thinkpool.com/compDiscuss/cont/1026315",
+  "https://news.nate.com/view/20260522n25338",
+  "https://www.topdaily.kr/articles/109152",
+  "https://thetracker.co.kr/View.aspx?No=4166990",
+  "https://www.kukinews.com/article/view/kuk202511280031",
+  "https://www.discoverynews.kr/news/articleView.html?idxno=1079387",
+  "https://kbthink.com/securities-view.html?docId=20260507154539650K",
+  "https://www.lg.co.kr/media/release/30081",
+  "https://www.hankyung.com/article/202605083074i",
+  "https://kr.investing.com/news/transcripts/article-93CH-1922495",
+  "https://gazet.ai/news/10471",
+  "https://m.kr.investing.com/news/global-filings/article-93CH-1947432?ampMode=1",
+  "https://kind.krx.co.kr/external/2026/05/15/002603/20260515005899/11013.htm",
   "https://www.lge.co.kr/company/investor/presentation",
-  "https://file.alphasquare.co.kr/media/pdfs/company-ir/20260223LG_KIS_Korea_Investors_Conference_2026_Asia.pdf",
-  "https://kr.aving.net/news/articleView.html?idxno=1807791",
-  "https://inside.lgensol.com/2026/01/lg%EC%97%90%EB%84%88%EC%A7%80%EC%86%94%EB%A3%A8%EC%85%98-2025%EB%85%84-4%EB%B6%84%EA%B8%B0-%EC%9E%A0%EC%A0%95%EC%8B%A4%EC%A0%81-%EB%B0%9C%ED%91%9C/",
-  "https://kr.investing.com/news/stock-market-news/article-1782498",
-  "https://www.sedaily.com/article/20047481"
+  "https://www.thelec.kr/news/articleView.html?idxno=55846"
  ],
  "v": 2,
- "model": "claude-opus-4-8",
+ "model": "claude-opus-5",
  "ticker": "003550",
  "name": "LG",
  "name_en": "LG Corp.",
@@ -223,11 +233,11 @@
   "지주"
  ],
  "market": "코스피",
- "reportDate": "2026-06-16",
- "reportTs": "2026-06-16 09:52",
- "dataDate": "20260615",
+ "reportDate": "2026-08-14",
+ "reportTs": "2026-08-14 21:54",
+ "dataDate": "20260814",
  "quant": {
-  "asOf": "2026-06-16",
+  "asOf": "2026-08-14",
   "fs_basis": "연결(CFS) · DART 공시 확정치 · 지배주주 기준 순이익",
   "annual": [
    {
@@ -324,23 +334,23 @@
    }
   ],
   "valuation": {
-   "price": 118400,
-   "mcap": 17.9011,
+   "price": 120000,
+   "mcap": 18.143,
    "shares": 151192004,
    "total_shares": 157232784,
    "wavg_shares": null,
-   "per": 37.5,
+   "per": 38.0,
    "eps": 3159,
-   "pbr": 0.62,
+   "pbr": 0.63,
    "bps": 190716,
    "roe_ttm": 1.7,
    "ttm_window": "2025Q2~2026Q1",
    "ttm_np_owner": 496818000000,
-   "pbr_krx": null,
-   "bps_krx": null,
+   "pbr_krx": 0.64,
+   "bps_krx": 186173.0,
    "basis": "PER·EPS·PBR·BPS 모두 자체 산출(네이버·토스와 동일 방식) · 배당은 DART 공시 주당현금배당금(보완:KRX) ÷ 현재가",
    "dps": 3100.0,
-   "div": 2.62
+   "div": 2.58
   }
  }
 }
