@@ -1,6 +1,6 @@
 // KOS ai — 자동 생성 데이터 파일. 직접 수정하지 마세요.
 window.KOS_LIVE_DATA = {
-  "lastUpdated": "2026-08-15 00:22",
+  "lastUpdated": "2026-08-15 01:07",
   "dataDate": "20260814",
   "stocks": [
     {
@@ -19167,7 +19167,7 @@ window.KOS_LIVE_DATA = {
       "name": "케이앤에스아이앤씨",
       "name_en": "KNS Space and Defence Inc.",
       "market": "코스닥",
-      "sector": "전자·부품",
+      "sector": "반도체",
       "price": 14860,
       "change": -3.38,
       "volume": 10846923,
@@ -19176,7 +19176,7 @@ window.KOS_LIVE_DATA = {
       "shares": 10260882,
       "induty_code": "26429",
       "categories": [
-        "전자·부품"
+        "반도체"
       ],
       "rank": 1064
     },
@@ -23890,7 +23890,7 @@ window.KOS_LIVE_DATA = {
       "name": "딜리셔스",
       "name_en": "Dealicious Inc.",
       "market": "코스닥",
-      "sector": "유통·소비재",
+      "sector": "식음료",
       "price": 4625,
       "change": -0.86,
       "volume": 5875476,
@@ -23899,7 +23899,7 @@ window.KOS_LIVE_DATA = {
       "shares": 21878960,
       "induty_code": "47911",
       "categories": [
-        "유통·소비재"
+        "식음료"
       ],
       "rank": 1326
     },
