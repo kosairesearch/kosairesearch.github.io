@@ -211,3 +211,30 @@
   · 상태 ended · 처리 0/성공 1/오류 0
 
 ✅ 회수 완료 · 성공 1/실패 0 · 총 보유 2684개 → data/reports/ + reports-index.js
+## 🤖 Batch 제출 — 대상 2개 / 상위 100개 (최근 0개 건너뜀) · 모델 claude-sonnet-4-6
+{'status': '013', 'message': '조회된 데이타가 없습니다.'}
+
+{'status': '013', 'message': '조회된 데이타가 없습니다.'}
+
+{'status': '013', 'message': '조회된 데이타가 없습니다.'}
+
+  · 준비 487400 케이앤에스아이앤씨 (DART O)
+{'status': '013', 'message': '조회된 데이타가 없습니다.'}
+
+{'status': '013', 'message': '조회된 데이타가 없습니다.'}
+
+{'status': '013', 'message': '조회된 데이타가 없습니다.'}
+
+  · 준비 483350 딜리셔스 (DART O)
+- ✅ 배치 제출 완료: msgbatch_01KsF2MxqRUCjziQg8Cu94gu (2건) → data/batch_state.json
+  · 상태 in_progress · 처리 2/성공 0/오류 0
+  · 상태 in_progress · 처리 2/성공 0/오류 0
+  · 상태 in_progress · 처리 2/성공 0/오류 0
+  · 상태 in_progress · 처리 2/성공 0/오류 0
+  · 상태 in_progress · 처리 2/성공 0/오류 0
+  · 상태 in_progress · 처리 2/성공 0/오류 0
+  · 상태 in_progress · 처리 2/성공 0/오류 0
+  · 상태 ended · 처리 0/성공 2/오류 0
+- 🧹 유니버스 제외 종목 리포트 정리: 2건 (043090, 031440)
+
+✅ 회수 완료 · 성공 2/실패 0 · 총 보유 2684개 → data/reports/ + reports-index.js
