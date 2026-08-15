@@ -42,15 +42,20 @@ def fy(year):
     return sum(TRUE[(year, q)] for q in (1, 2, 3, 4)) * UNIT
 
 
-def make_fin(available):
-    """available: {(year, code)} — 그 시점까지 제출된 보고서만 존재한다."""
+def make_fin(available, fs_map=None, cum_override=None):
+    """available: {(year, code)} — 그 시점까지 제출된 보고서만 존재한다.
+    fs_map: {(year, code): "CFS"|"OFS"} — 연결/별도 기준을 일부러 어긋내 볼 때 쓴다.
+    cum_override: {(year, code): 누적값} — 누적이 깨진 공시를 흉내 낼 때 쓴다."""
     def _fin(dart, ticker, year, reprt):
         if (year, reprt) not in available:
             return None
         upto = CODE_Q[reprt]
         cum = sum(TRUE[(year, q)] for q in range(1, upto + 1)) * UNIT
+        if cum_override and (year, reprt) in cum_override:
+            cum = cum_override[(year, reprt)]
         eq = 5000 * UNIT
         return {
+            "_fs": (fs_map or {}).get((year, reprt), "CFS"),
             "rev": {"amt": cum * 10, "add": cum * 10},
             "op": {"amt": cum, "add": cum},
             "np": {"amt": cum, "add": cum},
@@ -65,8 +70,9 @@ def make_fin(available):
     return _fin
 
 
-def run(label, available, expect_last, expect_ttm_window):
-    M._fin_all = make_fin(available)
+def run(label, available, expect_last, expect_ttm_window, fs_map=None,
+        cum_override=None, expect_rev_none=(), expect_all_positive=True):
+    M._fin_all = make_fin(available, fs_map, cum_override)
     M.dart_total_shares = lambda d, t: 1_000_000
     M.dart_dps = lambda d, t: None
     M.g._safe_finstate = lambda *a, **k: None
@@ -91,8 +97,17 @@ def run(label, available, expect_last, expect_ttm_window):
     for r in q["quarterly"]:
         y, qi = int(r["q"][:4]), int(r["q"][-1])
         want = TRUE[(y, qi)] * UNIT
+        if r["q"] in expect_rev_none:
+            continue
         if r["op"] is not None and r["op"] != want:
             ok_val = False
+    # 방어 로직: 못 믿을 분기는 실리지 않아야 한다
+    got_none = {r["q"] for r in q["quarterly"] if r["rev"] is None}
+    ok_guard = set(expect_rev_none) <= got_none
+    ok_pos = (not expect_all_positive) or all(
+        (r["rev"] is None or r["rev"] >= 0) for r in q["quarterly"])
+    ok_val = ok_val and ok_guard and ok_pos
+
     mark = lambda b: "✓" if b else "✗"
     print(f"{mark(ok_last and ok_len and ok_seq and ok_ttm and ok_val)} {label}")
     print(f"    분기표 {qs}")
@@ -115,6 +130,16 @@ cases = [
      A | {(2026, "11013"), (2026, "11012"), (2026, "11014")}, "2026Q3", "2025Q4~2026Q3"),
     ("④ 연초 (2월) — 올해 보고서 아직 없음",
      A, "2025Q4", "2025Q1~2025Q4"),
+    # ⑤ 반기보고서만 별도(OFS)로 잡힌 경우 — 1분기(연결)와 빼면 거짓이 된다
+    # 반기가 별도(OFS)로만 잡히면 1분기(연결)와 뺄 수 없다 → 표도 TTM 도 1분기에 머문다.
+    # 표는 1분기까지인데 PER 만 반기 기준이 되는 어긋남이 없어야 한다.
+    ("⑤ 연결/별도가 섞이면 표도 TTM 도 그 분기를 쓰지 않는다",
+     A | {(2026, "11013"), (2026, "11012")}, "2026Q1", "2025Q2~2026Q1",
+     {(2026, "11012"): "OFS"}),
+    # ⑥ 사업보고서 연간이 3분기 누적보다 작은 경우(상상인 038540 실제 사례)
+    ("⑥ 음수로 튀는 분기 매출은 싣지 않는다",
+     A, "2025Q4", "2025Q1~2025Q4", None,
+     {(2025, "11011"): 1 * UNIT}, {"2025Q4"}),
 ]
 print("=" * 66)
 allok = all(run(*c) for c in cases)

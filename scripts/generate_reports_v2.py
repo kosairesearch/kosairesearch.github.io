@@ -216,7 +216,12 @@ def _fin_all(dart, ticker, year, reprt):
         np_v, npo_v = out["np"]["amt"], out["np_owner"]["amt"]
         if np_v is not None and npo_v is not None and abs(npo_v) > abs(np_v) * 1.02:
             out["np_owner"] = dict(out["np"])
-    return out or None
+    if not out:
+        return None
+    # 이 숫자가 연결(CFS)인지 별도(OFS)인지 남긴다. 누적 차감으로 단일 분기를 만들 때
+    # 기준이 다른 두 보고서를 빼면 결과가 통째로 거짓이 되므로, 뺄 때 이걸 대조한다.
+    out["_fs"] = fs
+    return out
 
 
 def _cum(d, key):
@@ -244,10 +249,12 @@ def collect_quant(dart, ticker, krx_row, stock):
 
     # 연간 4개년 (최근 결산 = cur-1)
     annual = []
+    annual_fs = {}          # 연도 → 연결(CFS)/별도(OFS). 4분기를 뺄 때 기준 대조에 쓴다.
     for yr in range(cur - 1, cur - 5, -1):
         d = _fin_all(dart, ticker, yr, "11011")
         if not d:
             continue
+        annual_fs[yr] = d.get("_fs")
         rev, op = _cum(d, "rev"), _cum(d, "op")
         np_, npo = _cum(d, "np"), _cum(d, "np_owner")
         eq, eqo, li = _bs(d, "equity"), _bs(d, "equity_owner"), _bs(d, "liab")
@@ -294,10 +301,21 @@ def collect_quant(dart, ticker, krx_row, stock):
     # 올해 나온 '가장 최근' 정기보고서. 분기표·TTM·BPS·ROE가 모두 이 시점을 기준으로 삼는다.
     # cur_qi = 1(1분기) · 2(반기) · 3(3분기) · 0(연초라 올해 보고서가 아직 없음)
     cur_qi, d_cur = 0, None
+    base_fs = annual_fs.get(py)
     for qi, code in enumerate(Q_CODE, 1):
         d = fin(cur, code)
-        if d:
-            cur_qi, d_cur = qi, d
+        if not d:
+            continue
+        # TTM·EPS·BPS·ROE 가 전부 이 시점을 기준으로 계산된다. 전년 같은 기간이나
+        # 전년 연간과 기준(연결/별도)이 어긋나면 뺄셈이 성립하지 않으므로 채택하지
+        # 않고 한 분기 앞의 보고서를 기준으로 남긴다. 분기 표만 막고 TTM 을 두면
+        # 표는 1분기까지인데 PER 은 반기 기준인 상태가 된다.
+        dp, fs = fin(py, code), d.get("_fs")
+        if dp is not None and dp.get("_fs") != fs:
+            continue
+        if base_fs is not None and fs != base_fs:
+            continue
+        cur_qi, d_cur = qi, d
     # TTM 뺄셈의 짝 — 반드시 '전년 같은 기간' 누적이어야 뺄셈이 성립한다.
     # (반기까지 나왔으면 전년도 반기를 빼야지 전년도 1분기를 빼면 안 된다.)
     d_py_same = fin(py, Q_CODE[cur_qi - 1]) if cur_qi else None
@@ -330,19 +348,36 @@ def collect_quant(dart, ticker, krx_row, stock):
 
     rev_key = "rev_ins" if rev_label else "rev"
 
-    def year_q(year, key, fy_total, getter=None):
+    def diff(a, b, fa, fb):
+        """누적 차감으로 단일 분기를 만든다.
+
+        두 수치의 기준(연결/별도)이 다르면 만들지 않는다. 섞어서 빼면 결과가
+        음수로 튀거나 — 더 나쁘게는 — 그럴듯한 오답이 되어 그대로 실린다.
+        예: 상상인(038540)은 3분기 누적 5,225억인데 사업보고서 연간이 4,186억으로
+            잡혀 4분기 매출이 −1,039억으로 나왔다.
+        """
+        if fa is not None and fb is not None and fa != fb:
+            return None
+        return _sub(a, b)
+
+    def year_q(year, key, fy_total, fy_fs=None, getter=None):
         """그 해의 Q1~Q4 단일 분기값. 해당 보고서가 없으면 그 분기는 None."""
-        get = getter or (lambda yr, code: _cum(fin(yr, code), key))
-        c1, ch, c9 = (get(year, c) for c in Q_CODE)
+        if getter:                       # 요약재무 폴백 — 기준 표시가 없어 대조는 생략
+            c1, ch, c9 = (getter(year, c) for c in Q_CODE)
+            f1 = fh = f9 = None
+        else:
+            ds = [fin(year, c) for c in Q_CODE]
+            c1, ch, c9 = (_cum(d, key) for d in ds)
+            f1, fh, f9 = ((d or {}).get("_fs") for d in ds)
         return {f"{year}Q1": c1,
-                f"{year}Q2": _sub(ch, c1),
-                f"{year}Q3": _sub(c9, ch),
-                f"{year}Q4": _sub(fy_total, c9)}
+                f"{year}Q2": diff(ch, c1, fh, f1),
+                f"{year}Q3": diff(c9, ch, f9, fh),
+                f"{year}Q4": diff(fy_total, c9, fy_fs, f9)}
 
     def series(key, fy_key, years, getter=None):
         s = {}
         for y in years:
-            s.update(year_q(y, key, (ann.get(y) or {}).get(fy_key), getter))
+            s.update(year_q(y, key, (ann.get(y) or {}).get(fy_key), annual_fs.get(y), getter))
         return s
 
     def build(years):
@@ -376,6 +411,18 @@ def collect_quant(dart, ticker, krx_row, stock):
     quarterly = [{"q": l, "rev": rev_q.get(l), "op": op_q.get(l),
                   "np_owner": npo_q.get(l) if npo_q.get(l) is not None else np_q.get(l)}
                  for l in win]
+
+    # 마지막 방어 — 매출에는 있을 수 없는 값이 있다. 나오면 싣지 않는다.
+    #   · 음수 매출: 누적 차감이 어긋난 것이지 실제 매출이 아니다
+    #   · 그 해 연간 매출을 넘는 분기: 나머지 분기가 음수여야 성립하므로 불가능
+    # 틀린 숫자를 보여 주느니 빈칸이 낫다. 빈칸은 의심이라도 하지만,
+    # 그럴듯한 오답은 그대로 믿는다.
+    for x in quarterly:
+        rev, fy = x["rev"], (ann.get(int(x["q"][:4])) or {}).get("rev")
+        if rev is None:
+            continue
+        if rev < 0 or (fy and fy > 0 and rev > fy * 1.02):
+            x["rev"] = None
 
     # TTM 지배주주 순이익 = 전년 연간 − 전년 같은 기간 + 올해 같은 기간
     #   반기까지 나왔으면  FY2025 − 2025상반기 + 2026상반기
