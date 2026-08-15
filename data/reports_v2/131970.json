@@ -1,220 +1,230 @@
 {
  "title": {
-  "ko": "적자 바닥 통과, AI·CIS 증설로 체질 전환 시험대",
-  "en": "Past the Trough: Testing a Pivot to AI and CIS via Capacity Buildout"
+  "ko": "AI·차량 테스트 물량 대 감가상각 부담",
+  "en": "AI and Auto Test Volumes vs. Depreciation Burden"
  },
  "lead": {
-  "ko": "삼성 파운드리 의존도가 높은 국내 1위 반도체 테스트(OSAT) 기업으로, 2025년 영업적자를 딛고 2026년 1분기 흑자 전환에 성공했으며 LPU·신규 CIS향 대규모 설비투자로 2027년 실적 레벨업을 준비 중이다.",
-  "en": "Korea's leading semiconductor test (OSAT) firm, heavily reliant on Samsung Foundry, returned to operating profit in Q1 2026 after a loss-making 2025, and is now preparing for a 2027 step-up through large-scale capex for LPU and new CIS lines."
+  "ko": "두산테스나는 2025년 적자에서 2026년 1분기 흑자로 돌아섰고, 6천억원대 장비·공장 투자로 AI·차량용 테스트 물량을 겨냥하지만 고객 집중과 감가상각 부담이 동시에 커지는 구간에 있다.",
+  "en": "Doosan Tesna swung back to profit in Q1 2026 after a loss-making 2025, and is deploying a multi-hundred-billion-won equipment and plant program aimed at AI and automotive test volumes — while customer concentration and depreciation costs rise in parallel."
  },
  "keypoints": [
   {
-   "ko": "2025년 글로벌 IT 수요 부진과 가동률 하락으로 연결 영업이익이 소폭 적자를 기록했으나, 2025년 3분기부터 분기 영업이익이 흑자로 돌아섰고 2026년 1분기까지 흑자 기조가 이어졌다.",
-   "en": "Weak global IT demand and low utilization pushed 2025 consolidated operating income into a small loss, but quarterly operating profit turned positive from Q3 2025 and held into Q1 2026."
+   "ko": "2025년 연결 매출 3,038.7억원, 영업손실 9.4억원으로 적자 전환했으나 분기 흐름은 2025년 1분기 영업손실 191.3억원 → 4분기 영업이익 150.3억원으로 뚜렷하게 개선됐다.",
+   "en": "2025 consolidated revenue was KRW 303.9bn with an operating loss of KRW 0.94bn, but the quarterly path improved markedly from a KRW 19.13bn Q1 operating loss to a KRW 15.03bn Q4 operating profit."
   },
   {
-   "ko": "회사는 2026년 4월 28일 신규 장비 양수 약 1,909억원, 기존 CIS 투자 1,714억→2,053억원 상향, 평택 제2공장 투자 재개 등 3건을 동시 공시하며 공격적 증설에 나섰다.",
-   "en": "On April 28, 2026, the company simultaneously disclosed three items: ~KRW 190.9bn of new equipment acquisition, an increase in existing CIS investment from KRW 171.4bn to 205.3bn, and resumption of its Pyeongtaek No.2 plant."
+   "ko": "2026년 1분기 매출 768.3억원, 영업이익 54.8억원, 지배주주 순이익 84.5억원으로 전년 동기 대비 흑자 전환했다.",
+   "en": "Q1 2026 delivered revenue of KRW 76.8bn, operating profit of KRW 5.48bn and owners' net profit of KRW 8.45bn, a year-on-year swing into the black."
   },
   {
-   "ko": "신규 SoC·LPU 테스트 매출은 2026년 4분기부터, 북미 신규 CIS 고객사 물량은 2027년경부터 본격 반영될 것으로 증권가는 전망한다.",
-   "en": "Brokerages expect new SoC/LPU test revenue to ramp from Q4 2026 and the new North American CIS customer volume to contribute meaningfully from around 2027."
+   "ko": "2026년 4월 테라다인·세메스 대상 1,909억원 장비 양수, 기존 1,714억원 투자의 2,053억원 상향, 평택 제2공장 2,303억원 재개(2027년 11월 완공 목표)가 동시에 공시됐다.",
+   "en": "In April 2026 the company disclosed a KRW 190.9bn equipment acquisition from Teradyne and Semes, an increase of an earlier KRW 171.4bn program to KRW 205.3bn, and the restart of the KRW 230.3bn Pyeongtaek No.2 fab targeted for completion in November 2027."
   },
   {
-   "ko": "삼성전자(파운드리·시스템LSI) 매출 의존도가 90%를 웃돌아 단일 고객 집중 리스크가 크지만, 동시에 삼성 파운드리 저변 확대의 직접 수혜주로 꼽힌다.",
-   "en": "Revenue dependence on Samsung Electronics (foundry and System LSI) exceeds 90%, posing a concentration risk, but it is also cited as a direct beneficiary of Samsung Foundry's expanding customer base."
+   "ko": "매출의 90% 이상이 삼성전자 파운드리·시스템LSI에 집중돼 있어 고객사 가동률이 실적을 좌우하는 구조다.",
+   "en": "Over 90% of revenue is tied to Samsung Electronics' foundry and System LSI divisions, so the customer's utilization rate drives earnings."
   },
   {
-   "ko": "모바일 AP·CIS 편중 구조에서 차량용 SoC, AI 가속기(LPU)로 매출처를 다변화하며 이익 변동성 축소를 시도하고 있다.",
-   "en": "The company is diversifying from a mobile AP/CIS-heavy mix toward automotive SoC and AI accelerators (LPU), aiming to reduce earnings volatility."
+   "ko": "재무구조는 개선됐다 — 부채비율은 2022년 147.6%에서 2025년 61.0%로 낮아졌고, 2025년 영업활동현금흐름은 1,472.2억원을 유지했다.",
+   "en": "The balance sheet strengthened: the debt-to-equity ratio fell from 147.6% in 2022 to 61.0% in 2025, while 2025 operating cash flow held at KRW 147.2bn."
   }
  ],
  "business": {
-  "ko": "두산테스나는 2002년 설립돼 2013년 코스닥에 상장한 시스템반도체 후공정 테스트(OSAT) 전문 기업으로, 2022년 4월 두산그룹에 편입됐다. 핵심 사업은 웨이퍼 테스트와 패키지 테스트이며, 2024년 CIS 전문 후공정업체 엔지온 인수를 통해 일괄생산(턴키) 역량을 갖췄고 매출 비중은 웨이퍼 테스트 92%, 패키징 테스트 6%, 칩 선별·분류(DP) 2% 수준이다. 제품군은 SoC(시스템온칩), CIS(이미지센서), MCU, 스마트카드 IC 등으로 구성된다. 디일렉 보도 기준 제품별 매출 구성은 이미지센서(CIS) 35%, 자동차용 칩 20%, 모바일 AP 15% 순으로 추정된다(2024년경 기준치로 시점에 따라 변동). 고객 측면에서는 주요 고객이 삼성전자 파운드리와 시스템LSI 사업부이며 삼성전자 매출 비중이 90%를 웃돈다. 회사는 국내 웨이퍼 테스트 분야 시장점유율 1위 기업으로 평가된다. 사업장은 평택·안성·청주에 위치하며, 테스트 산업 특성상 신제품이 나올 때마다 상당한 규모의 설비투자(CAPEX)를 집행해야 하는 장비 집약적 구조다. 이러한 장비 확보 능력 자체가 수주 대응력과 진입장벽으로 작용한다.",
-  "en": "Founded in 2002 and listed on KOSDAQ in 2013, Doosan Tesna is a system-semiconductor back-end test (OSAT) specialist that joined Doosan Group in April 2022. Its core businesses are wafer test and package test; it acquired CIS back-end specialist Engion in 2024 to build turnkey capability, with revenue split roughly into wafer test 92%, package test 6%, and chip die-picking (DP) 2%. Its product lines cover SoC (system on chip), CIS (image sensors), MCU, and smartcard ICs. According to The Elec, the product revenue mix is estimated at roughly CIS 35%, automotive chips 20%, and mobile AP 15% (a circa-2024 figure that shifts over time). On customers, its main clients are Samsung Electronics' foundry and System LSI divisions, with Samsung accounting for over 90% of revenue. The company is regarded as the domestic No.1 in wafer test market share. Its plants are in Pyeongtaek, Anseong, and Cheongju, and the test industry is equipment-intensive, requiring sizable capex each time new products launch. This equipment capability itself acts as an order-fulfillment edge and entry barrier."
+  "ko": "두산테스나는 시스템반도체 후공정 가운데 웨이퍼 테스트를 주력으로 하는 OSAT(외주 반도체 조립·테스트) 기업이다. 2002년 반도체 테스트·엔지니어링 서비스 목적으로 설립돼 2013년 코스닥에 상장했고, 웨이퍼 테스트·패키징 테스트와 DP 사업을 영위하며 평택·안성·청주에 사업장을 두고 SoC, CIS, MCU, 스마트카드 IC 등 다양한 제품군을 테스트한다. 공개 집계된 매출 구성에서도 웨이퍼 테스트(수출 80.22%, 내수 15.34%)가 절대 비중을 차지하고 패키지 테스트는 한 자릿수 초반에 머문다. 스몰인사이트리서치는 2026년 6월 10일 자료에서 회사 매출의 90% 이상이 삼성전자 파운드리와 시스템LSI 사업부에 집중돼 있다고 분석했다. 회사는 2022년 두산그룹에 편입됐으며, 당시 두산은 특수목적법인을 세워 테스나 지분 38.7%를 인수했다. 최근에는 테슬라에 이어 엔비디아, 애플 등 빅테크 관련 반도체 테스트를 맡게 된 것으로 보도됐다. 업계에서는 평택 제2공장 투자를 통해 주력인 웨이퍼 테스트에 더해 패키지 테스트까지 영역을 넓히려는 것으로 보고 있으며, 두산그룹은 인수 초기부터 OSAT 전반으로의 확장을 구상해 2024년 2월 엔지온을 인수하기도 했다. 그룹 차원에서는 반도체·첨단소재가 3대 축의 하나로, 소재(전자BG)-웨이퍼(실트론)-테스트(테스나)로 이어지는 밸류체인이 구성됐다. 회사는 국내 시스템반도체 테스트 1위 사업자로 분류된다.",
+  "en": "Doosan Tesna is an OSAT (outsourced semiconductor assembly and test) company focused on wafer test within system-semiconductor back-end processing. Founded in 2002 for semiconductor test and engineering services and listed on KOSDAQ in 2013, it runs wafer test, packaging test and a DP business from sites in Pyeongtaek, Anseong and Cheongju, testing SoC, CIS, MCU and smartcard IC products. Published revenue-mix data also shows wafer test dominating (80.22% export, 15.34% domestic), with package test in the low single digits. Small Insight Research noted on 10 June 2026 that over 90% of the company's revenue is concentrated in Samsung Electronics' foundry and System LSI divisions. The company joined the Doosan Group in 2022, when Doosan used a special purpose vehicle to acquire a 38.7% stake in Tesna. More recently it has been reported to have won semiconductor test work linked to Tesla and then Nvidia and Apple. Industry watchers see the Pyeongtaek No.2 plant as a vehicle to extend beyond core wafer test into package test; the group had envisioned broader OSAT expansion from the outset and acquired Engion in February 2024. At group level, semiconductors and advanced materials form one of three pillars, linking materials (Electro-Materials BG), wafers (Siltron) and test (Tesna). The company is described as Korea's number one system-semiconductor test provider."
  },
  "earnings": {
-  "ko": "연결 기준 매출은 2022년 2,776억원에서 2023년 3,386억원, 2024년 3,731억원으로 확대됐으나 2025년에는 3,039억원으로 역성장했다. 수익성은 더 가파르게 후퇴해 영업이익률이 2022년 24.2%, 2023년 17.9%, 2024년 10.2%로 둔화된 뒤 2025년에는 -0.3%(영업손실 약 9.4억원)로 적자전환했다. 삼성전자 시스템반도체 사업의 IT 수요 부진과 엑시노스 2500의 플래그십 미탑재 등으로 가동률이 하락하면서 OSAT 업계 전반의 실적이 예상보다 감소한 영향이다. 다만 2025년에도 지배주주 순이익은 약 15억원 흑자를 유지했고, 영업활동현금흐름은 약 1,472억원으로 견조했다. 분기 흐름을 보면 2025년 1분기 영업손실 191억원으로 바닥을 찍은 뒤, 2분기 -21억원, 3분기 +53억원, 4분기 +150억원으로 뚜렷이 회복됐다. 회복의 배경에는 전장용 칩 테스트 가동률 상승과 모바일 AP 가동률 회복이 있었다. 2026년 1분기에는 매출 768억원(전년 동기 대비 약 29.6% 증가), 영업이익 55억원, 지배주주 순이익 84억원으로 전년 동기 적자에서 흑자전환했다. CIS 부문 부진으로 전 분기 대비로는 실적이 소폭 축소됐으나, 견조한 자동차(Auto) 부문 수요로 전년 대비 흑자전환에 성공했으며 1분기가 연내 저점을 형성할 것으로 분석된다. 부채비율은 2022년 147.6%에서 2025년 61.0%로 크게 낮아져 재무 안정성은 개선됐다.",
-  "en": "On a consolidated basis, revenue grew from KRW 277.6bn in 2022 to KRW 338.6bn in 2023 and KRW 373.1bn in 2024, but declined to KRW 303.9bn in 2025. Profitability deteriorated more sharply: operating margin slowed from 24.2% in 2022 to 17.9% in 2023 and 10.2% in 2024, then swung to -0.3% (an operating loss of about KRW 0.94bn) in 2025. This reflected weak IT demand in Samsung's system-semiconductor business and the Exynos 2500 missing flagship adoption, which lowered utilization and reduced OSAT earnings more than expected. Even so, owner net income stayed positive at about KRW 1.5bn in 2025, and operating cash flow was solid at roughly KRW 147.2bn. By quarter, operating results bottomed at a loss of KRW 19.1bn in Q1 2025, then recovered clearly to -KRW 2.1bn in Q2, +KRW 5.3bn in Q3, and +KRW 15.0bn in Q4. The recovery was driven by rising utilization in automotive chip testing and a recovery in mobile AP utilization. In Q1 2026, revenue was KRW 76.8bn (up about 29.6% year over year), operating profit KRW 5.5bn, and owner net income KRW 8.4bn, swinging from a year-earlier loss to profit. CIS weakness trimmed results slightly versus the prior quarter, but solid automotive demand drove a year-over-year turnaround, and analysts view Q1 as the low point for the year. The debt-to-equity ratio fell sharply from 147.6% in 2022 to 61.0% in 2025, improving financial stability."
+  "ko": "2025년 연결 실적은 매출 3,038.7억원, 영업손실 9.4억원, 지배주주 순이익 15.1억원으로, 2024년 매출 3,731.2억원·영업이익 379.2억원(영업이익률 10.2%)에서 크게 후퇴했다. 매출은 2022년 2,776.6억원 → 2023년 3,386.5억원 → 2024년 3,731.2억원으로 늘다가 2025년에 감소했고, 영업이익률은 2022년 24.2%, 2023년 17.9%, 2024년 10.2%로 3년 연속 하락한 뒤 2025년 -0.3%로 마이너스에 진입했다. 분기 흐름은 방향이 달랐다 — 2025년 1분기 매출 592.96억원·영업손실 191.33억원으로 바닥을 찍은 뒤, 2분기 매출 759.01억원·영업손실 21.18억원, 3분기 매출 832.14억원·영업이익 52.85억원, 4분기 매출 854.63억원·영업이익 150.25억원(영업이익률 약 17.6%)으로 분기마다 개선됐다. 2025년 상반기 부진은 웨이퍼 테스트·패키징 테스트 부문 실적 하락과 전방 업황 부진에서 비롯됐다. 2026년 1분기는 매출 768.29억원, 영업이익 54.84억원, 지배주주 순이익 84.49억원으로 전년 동기 대비 흑자 전환했으나, 직전 분기(4분기) 대비로는 매출과 영업이익이 모두 줄었다. 머니투데이가 인용한 분석에 따르면 전분기 대비 감소는 계절성과 가동률 하락에 따른 고정비 부담 때문이고, 전년 대비 개선은 차량용 ADAS 및 Auto SoC 물량 증가가 견인했다. 손익이 흔들린 2025년에도 영업활동현금흐름은 1,472.2억원으로 유지돼(2024년 2,192.4억원, 2023년 2,105.5억원), 대규모 감가상각비가 손익계산서와 현금흐름의 괴리를 만드는 장비 집약형 사업 구조를 보여준다. 재무구조는 오히려 개선돼 부채비율이 2022년 147.6% → 2023년 89.1% → 2024년 80.0% → 2025년 61.0%로 낮아졌고, 자기자본은 2025년 말 4,370.8억원이다. 배당은 DART 공시 기준 주당 160원으로, 이익이 급감한 국면에서도 현금배당은 유지됐다.",
+  "en": "For 2025, consolidated revenue was KRW 303.9bn with an operating loss of KRW 0.94bn and owners' net profit of KRW 1.51bn — a sharp step down from 2024 revenue of KRW 373.1bn and operating profit of KRW 37.92bn (10.2% margin). Revenue had risen from KRW 277.7bn in 2022 to KRW 338.7bn in 2023 and KRW 373.1bn in 2024 before declining in 2025, while the operating margin fell for three straight years (24.2% in 2022, 17.9% in 2023, 10.2% in 2024) and turned negative at -0.3% in 2025. The quarterly path told a different story: after bottoming in Q1 2025 with revenue of KRW 59.3bn and an operating loss of KRW 19.13bn, results improved each quarter — Q2 revenue KRW 75.9bn with a KRW 2.12bn loss, Q3 revenue KRW 83.2bn with KRW 5.29bn profit, and Q4 revenue KRW 85.5bn with KRW 15.03bn profit (roughly a 17.6% margin). The weak first half of 2025 stemmed from declines in the wafer test and packaging test businesses amid soft end-market conditions. Q1 2026 showed revenue of KRW 76.8bn, operating profit of KRW 5.48bn and owners' net profit of KRW 8.45bn — a year-on-year swing to profit, though both revenue and operating profit declined from the prior quarter. According to analysis cited by Money Today, the sequential decline reflected seasonality and fixed-cost pressure from lower utilization, while the year-on-year improvement was driven by higher automotive ADAS and Auto SoC volumes. Even in a loss-making 2025, operating cash flow held at KRW 147.2bn (versus KRW 219.2bn in 2024 and KRW 210.5bn in 2023), illustrating how heavy depreciation separates reported profit from cash in this equipment-intensive model. The balance sheet actually improved, with the debt-to-equity ratio falling from 147.6% in 2022 to 89.1%, 80.0% and 61.0% in the following years, and equity at KRW 437.1bn at end-2025. The dividend per share was KRW 160 per DART filings, maintained despite the earnings trough."
  },
  "industry": {
-  "ko": "반도체 후공정·테스트 산업은 전공정 미세화가 기술적 한계에 가까워지면서 칩 성능을 좌우하는 핵심 변수로 부상하고 있다. 한국투자증권은 후공정 기술 중요성이 부각되는 구조적 변화 속에서 후공정 장비·패키징 기업 주가가 가파르게 상승하고 있다고 분석했다. 전방 수요 측면에서는 AI 가속기 수요 확대와 HBM 증설이 이어지며 적층 단수 증가와 함께 관련 장비 수요가 확대되고 있다. 두산테스나는 국내 웨이퍼 테스트 1위 사업자로, 삼성파운드리 저변 확대의 가장 직접적인 수혜를 받는 OSAT 업체 중 하나로 평가된다. 경쟁 환경에서는 CIS 부문에서 중화권 업체와의 경쟁 심화, 고객사의 보수적 재고 정책이 가동률을 짓누르는 요인으로 지목된다. 다만 차량용 SoC(자율주행 칩)와 AI 연산칩처럼 선단 공정·고난도 테스트일수록 단가와 부가가치가 높아 테스트 업체 수익성에 우호적이다. 업황은 2025년 상반기 재고조정을 거쳐 회복 국면에 진입했다는 평가가 우세하다.",
-  "en": "The semiconductor back-end and test industry is rising in importance as front-end miniaturization nears its technical limits, making test a key determinant of chip performance. Korea Investment & Securities noted that amid this structural shift, share prices of back-end equipment and packaging firms have risen sharply. On end demand, expanding AI accelerator demand and HBM capacity additions are driving more stacking layers and related equipment demand. As the domestic No.1 in wafer test, Doosan Tesna is regarded as one of the OSAT firms most directly benefiting from Samsung Foundry's customer-base expansion. Competitively, intensifying rivalry from Chinese players in CIS and customers' conservative inventory policies are weighing on utilization. However, leading-edge, high-difficulty testing such as automotive SoC (autonomous-driving chips) and AI compute chips commands higher pricing and value-add, favoring test firms' margins. The prevailing view is that the cycle entered a recovery phase after inventory adjustments in the first half of 2025."
+  "ko": "테스트 전문 OSAT의 실적은 전방 파운드리·팹리스 물량과 고객사 가동률에 직결된다. 스몰인사이트리서치는 삼성전자 파운드리 가동률이 2025년 초 47~50% 저점에서 2026년 1분기 80~85% 수준까지 올라왔고, 테슬라의 차세대 AI 칩과 엔비디아 그록3 LPU 양산이 본격화되면 가동률이 더 높아질 수 있다고 분석했다. 글로벌 후공정 쪽에서도 TSMC가 CoWoS 생산능력을 2026년 말까지 전년 대비 약 60% 확대할 계획이고, 대만 OSAT 업체들은 일부 테스트·패키징 가격을 최대 30% 인상한 것으로 전해진다. AI 데이터센터 확대와 자율주행 고도화로 시스템반도체 구조가 복잡해지면서 고난도 테스트 역량 확보가 수익성의 관건이 되고 있다. 반면 모바일 쪽 체감은 균일하지 않다 — 메리츠증권은 2026년 4월 자료에서 CIS는 중화권 경쟁 심화와 고화소 수요 둔화로 가동률이 50%를 밑돌 것으로 보면서, SoC는 ADAS 칩 가동률이 견조해 70% 수준을 유지할 것으로 전망했다. 차량용 반도체는 스마트폰 대비 제품 수명주기가 길어 물량 변동성이 낮다는 점이 구조적 강점으로 거론된다. 스몰인사이트리서치는 차량용 매출 비중이 아직 제한적이지만 수명주기가 7~10년 이상으로 길고 공급 안정성이 중요해 수요 변동성이 낮다고 평가했다. 밸류에이션 비교군으로는 대만의 AI 가속기 테스트 업체 KYEC 등이 거론되며, 흥국증권은 2026년 3월 자료에서 이 비교군의 멀티플을 목표주가 산정에 사용했다.",
+  "en": "Earnings at test-focused OSATs are tied directly to foundry and fabless volumes and to customer utilization. Small Insight Research noted that Samsung foundry utilization recovered from a 47-50% trough in early 2025 to roughly 80-85% in Q1 2026, and could climb further as Tesla's next-generation AI chip and Nvidia's Groq3 LPU enter volume production. Globally, TSMC plans to expand CoWoS capacity by roughly 60% year-on-year by end-2026, and Taiwanese OSATs have reportedly raised some test and packaging prices by up to 30%. As AI data centers scale and autonomous driving advances, system-semiconductor designs are growing more complex, making advanced test capability a key profitability lever. Mobile demand, however, is uneven: Meritz Securities wrote in April 2026 that CIS utilization would stay below 50% on Chinese competition and softer high-pixel demand, while SoC utilization would hold near 70% on resilient ADAS chip volumes. Automotive chips are cited as structurally steadier because of long product lifecycles. Small Insight Research argued that although the automotive revenue share is still limited, lifecycles of 7-10 years or more and the priority on supply stability make demand less volatile. For peer comparison, Taiwan's AI-accelerator test provider KYEC is frequently referenced; Heungkuk Securities used that peer group's multiple in its March 2026 target-price framework."
  },
  "outlook": {
-  "ko": "회사는 2026년 4월 28일 세 건의 투자 공시로 공격적 증설 의지를 드러냈다. 테라다인 등으로부터 1,909억원 규모 신규 테스트 장비를 양수하고, 아드반테스트 등 기존 장비 양수 금액을 1,714억원에서 2,053억원으로 확대했으며, 평택 공장 투자금을 2,303억원으로 늘리고 완공 시점을 2027년 11월로 수정했다. 증권가는 이를 각각 LPU 테스트용 신규 설비투자, 북미 CIS 테스트용 설비투자 확대, 업황 회복에 따른 공장 증설 재개로 해석한다. 매출 반영 시점에 대해 DS투자증권은 LPU 테스트 매출이 2026년 4분기부터, 북미 CIS 테스트 매출은 2027년 2분기부터 본격 반영될 것으로 전망했다. 신규 아이템 효과로 주요 고객사 MX(모바일)향 의존도가 2025년 54%에서 2027년 35%까지 축소될 것으로 추정된다. 그룹 차원에서는 두산이 SK실트론 인수를 추진하며 소재(웨이퍼)-기판(CCL)-후공정 테스트(두산테스나)로 이어지는 반도체 밸류체인 구축을 노리고 있다. 다만 한국투자증권은 장비 반입부터 설치까지 약 6개월이 소요되는 점을 감안하면 AI 칩 테스트의 실적 기여 시점은 빠르면 올해 말에서 내년 초가 될 것으로 전망했다. 이처럼 본격적인 실적 레벨업은 증설이 온전히 가동되는 2027년에 집중될 전망이다.",
-  "en": "On April 28, 2026, the company signaled aggressive expansion through three investment disclosures. It will acquire about KRW 190.9bn of new test equipment from Teradyne and others, raise the existing equipment acquisition from Advantest and others from KRW 171.4bn to 205.3bn, and increase the Pyeongtaek plant investment to KRW 230.3bn while revising completion to November 2027. Brokerages interpret these as, respectively, new capex for LPU testing, expanded capex for North American CIS testing, and resumed plant expansion on cyclical recovery. On timing, DS Investment & Securities expects LPU test revenue to ramp from Q4 2026 and North American CIS test revenue from Q2 2027. From the new-item effect, dependence on the key customer's mobile (MX) division is estimated to fall from 54% in 2025 to 35% by 2027. At the group level, Doosan is pursuing the acquisition of SK Siltron to build a semiconductor value chain spanning materials (wafers), substrates (CCL), and back-end test (Doosan Tesna). That said, Korea Investment & Securities noted that given the roughly six months from equipment delivery to installation, AI-chip test contributions would arrive at the earliest by late this year or early next year. Accordingly, the more pronounced earnings step-up is expected to concentrate in 2027 when the new capacity is fully running."
+  "ko": "회사가 공시로 확인한 사실은 대규모 설비 확충이다. 두산테스나는 2026년 4월 28일 테라다인·세메스 등으로부터 약 1,909억원 규모 반도체 테스트 장비를 양수하기로 공시했고, 이 장비를 연말까지 순차 도입할 계획이며, 2025년 10월 공시한 약 1,714억원 규모 양수 결정은 수요 증가로 약 2,053억원으로 상향(거래 상대방 아드반테스트·세메스)했고, 평택 제2공장 신규시설 투자도 재개한다고 밝혔다. 평택 제2공장 투자 규모는 약 2,303억원, 완공 목표는 2027년 11월이다. 머니투데이는 평택공장 증설 2,303억원, 테스트 장비 2,053억원, 신규 AI 장비 1,909억원 등 총 6,265억원 규모 투자가 진행 중이라고 전했다. 메리츠증권은 2026년 4월 자료에서 1,909억원 신규 투자 건의 장비 반입이 2026년 10월 말 종료될 예정이라고 정리했다. 교보증권은 2026년 5월 20일 자료에서 SoC 테스트 매출이 2026년 4분기부터 본격 반영되고, CIS 신규 고객사 물량은 고객 출하 일정에 맞춰 2027년 2분기부터 의미 있게 기여할 것으로 전망했다. 증권사 추정치는 편차가 있는데, 흥국증권은 2026년 매출 3,577억원, 영업이익 642억원으로 흑자 전환을 전망했다. 그룹 변수도 있다 — ㈜두산은 2026년 7월 31일 이사회에서 SK가 보유한 SK실트론 지분 70.6%를 약 2조3,000억원에 인수하는 주식매매계약 체결을 승인했다고 공시했으며, 금액은 매매대금 조정을 거쳐 확정될 예정이다. 이는 그룹 밸류체인 확장이라는 정성적 재료이지만, 두산테스나 개별 손익에 직접 반영되는 항목은 아니라는 점에서 구분해 볼 필요가 있다.",
+  "en": "The company's disclosed facts center on a large capacity build-out. On 28 April 2026 Doosan Tesna disclosed the acquisition of about KRW 190.9bn of semiconductor test equipment from Teradyne, Semes and others, to be installed progressively through year-end; it also revised an October 2025 disclosure of roughly KRW 171.4bn up to about KRW 205.3bn on stronger demand (counterparties Advantest and Semes), and said it would restart investment in the new Pyeongtaek No.2 facility. The Pyeongtaek No.2 investment is about KRW 230.3bn with completion targeted for November 2027. Money Today reported total ongoing investment of KRW 626.5bn, comprising KRW 230.3bn for the Pyeongtaek expansion, KRW 205.3bn for test equipment and KRW 190.9bn for new AI-related equipment. Meritz Securities noted in April 2026 that equipment delivery for the KRW 190.9bn program is scheduled to conclude by end-October 2026. Kyobo Securities wrote on 20 May 2026 that SoC test revenue would begin contributing meaningfully from Q4 2026, while volumes for a new CIS customer would contribute from Q2 2027 in line with that customer's shipment schedule. Broker estimates vary; Heungkuk Securities projected 2026 revenue of KRW 357.7bn and operating profit of KRW 64.2bn, a swing back into profit. There is also a group-level variable: Doosan Corp. disclosed on 31 July 2026 that its board approved a share purchase agreement to buy SK's 70.6% stake in SK Siltron for about KRW 2.3trn, with the final price subject to adjustment. That is a qualitative value-chain development for the group rather than an item flowing directly through Doosan Tesna's own income statement."
  },
  "valuation_comment": {
-  "ko": "현재 밸류에이션은 순이익 회복 초기 국면을 지나는 구간이라 이익 지표 대비 주가 배수가 크게 높아 보일 수 있는 시점이다. 회사의 자본 효율성을 보여주는 ROE는 6.1% 수준이며, 주당순이익(EPS)은 1,369원, 주당순자산(BPS)은 22,875원이다. 주가는 순자산 대비 상당한 프리미엄이 반영된 구간에서 거래되고 있으며, 이는 적자에서 흑자로의 전환과 2027년 이익 레벨업 기대가 선반영된 결과로 해석된다. 2020년 이후 누적 기준 국내 후공정 장비 기업의 주가 수익률이 IDM 대비 압도적으로 높았던 점은 시장이 후공정 테마에 부여하는 기대를 보여준다. 배당의 경우 DART 공시 기준 주당 현금배당금은 160원으로, 배당수익률은 업종 내에서 높지 않은 편이다. 증권가는 자체 이익 회복과 삼성 파운드리 저변 확대를 근거로 글로벌 OSAT 수준의 재평가 가능성을 거론하지만, 실제 이익이 추정치를 따라오는지 여부가 배수 정당화의 관건이다.",
-  "en": "Current valuation sits in a phase emerging from the early stage of earnings recovery, so price multiples relative to profit metrics can appear elevated at this point. The company's ROE, a gauge of capital efficiency, is around 6.1%, with earnings per share of KRW 1,369 and book value per share of KRW 22,875. The stock trades at a meaningful premium to net assets, which can be read as pre-reflecting the swing from loss to profit and expectations of a 2027 earnings step-up. The fact that domestic back-end equipment firms' cumulative share returns since 2020 vastly outpaced IDMs illustrates the market's expectations for the back-end theme. On dividends, the DART-disclosed cash dividend is KRW 160 per share, implying a yield that is not high within the sector. Brokerages cite the potential for a re-rating toward global OSAT levels based on its own earnings recovery and Samsung Foundry's expanding base, but whether actual profits track estimates is the key to justifying the multiples."
+  "ko": "화면 카드에 표시되는 주당순이익(1,369원)과 주당순자산(22,875원)은 2025년의 손익 급락과 2026년 1분기 흑자 전환이 섞여 있는 상태의 값으로, 이익 기반 지표는 회복 초기 국면의 낮은 이익 수준 위에서 산출된다는 점을 감안해야 한다. 그 결과 이익 대비 주가 배수는 회사가 두 자릿수 영업이익률을 냈던 2022~2024년 국면과 비교하기 어려운 수준까지 올라와 있으며, 순자산 대비로도 프리미엄이 붙은 구간에 있다. 증권가의 평가 기준도 갈린다 — 신한투자증권은 2025년 8월 자료에서 당시 주가를 12개월 선행 기준 21배 수준으로 보고 목표 배수 25배를 적용했다고 밝힌 반면, 흥국증권은 2026년 3월 자료에서 2026~2027년 평균 주당순이익 3,090원에 AI 가속기 테스트 업체 KYEC의 고점 배수 32.2배를 적용해 목표주가를 산정했다. 즉 어떤 이익 기준(회복 이전 실적이냐, 증설 반영 후 추정이냐)과 어떤 비교군(국내 OSAT이냐, AI 테스트 업체냐)을 쓰느냐에 따라 결론이 크게 달라지는 구간이다. 주당 배당금은 160원으로, 배당 매력보다는 이익 회복과 증설 성과가 평가의 중심에 놓인 상태다. 향후 배수의 정당성은 2026년 하반기 이후 장비 가동에 따른 이익 회복 속도가 실제 실적으로 확인되는지에 달려 있다.",
+  "en": "The earnings per share (KRW 1,369) and book value per share (KRW 22,875) shown on the data card blend a collapsed 2025 profit base with the Q1 2026 return to profit, so earnings-based multiples are calculated on a low, early-recovery profit level. As a result, the price-to-earnings relationship sits far above where it stood when the company was posting double-digit operating margins in 2022-2024, and the shares also trade at a premium to book value. Broker frameworks diverge: Shinhan Securities said in August 2025 that the shares were then at about 21x forward earnings and applied a 25x target multiple, whereas Heungkuk Securities in March 2026 applied a 32.2x peak multiple from AI-accelerator test provider KYEC to average 2026-2027 EPS of KRW 3,090 in setting its target price. In other words, conclusions shift sharply depending on which profit base (pre-recovery actuals versus post-expansion estimates) and which peer set (domestic OSATs versus AI test specialists) is used. The dividend per share is KRW 160, so the assessment rests less on income and more on profit recovery and the payoff from capacity expansion. Whether the current multiple holds depends on how quickly equipment ramp-ups from late 2026 translate into reported earnings."
  },
  "bull": [
   {
    "title": {
-    "ko": "AI·고사양 CIS로의 체질 전환",
-    "en": "Pivot to AI and high-end CIS"
+    "ko": "고객사 가동률 회복과 AI 칩 테스트 진입",
+    "en": "Customer utilization recovery and entry into AI chip test"
    },
    "body": {
-    "ko": "회사는 모바일 AP·CIS 편중 구조에서 차량용 SoC와 AI 연산칩(LPU)으로 매출처를 넓히고 있다. LPU는 4나노 이하 선단 공정으로 제조돼 테스트 난이도와 단가가 모바일 칩보다 높고, 부가가치가 높아질수록 테스트 업체 수익성도 함께 개선되는 구조다. 신규 아이템 효과로 단일 고객·단일 제품 의존도가 낮아지면 이익 변동성도 축소될 수 있다.",
-    "en": "The company is broadening from a mobile AP/CIS-heavy mix toward automotive SoC and AI compute chips (LPU). LPUs are made on leading-edge sub-4nm processes, so test difficulty and pricing exceed those of mobile chips, and higher value-add improves test firms' margins. As reliance on a single customer and product falls via the new items, earnings volatility could also narrow."
+    "ko": "스몰인사이트리서치에 따르면 삼성전자 파운드리 가동률은 2025년 초 47~50% 저점에서 2026년 1분기 80~85%까지 회복됐다. 이 과정에서 두산테스나는 엔비디아와 테슬라의 AI 칩 테스트를 맡게 된 것으로 보도됐다. 테스트 사업은 고정비 비중이 높아 물량이 늘면 이익 레버리지가 크게 작동하는 구조다. 실제로 2025년 4분기 매출 854.63억원에서 영업이익 150.25억원을 기록하며 분기 영업이익률이 두 자릿수로 복귀한 바 있다.",
+    "en": "Small Insight Research reported Samsung foundry utilization recovering from a 47-50% trough in early 2025 to 80-85% in Q1 2026. Media reports indicate Doosan Tesna secured AI chip test work for Nvidia and Tesla in the process. Test operations carry high fixed costs, so incremental volume produces strong profit leverage. That showed in Q4 2025, when revenue of KRW 85.5bn generated KRW 15.03bn of operating profit and a double-digit quarterly margin."
    }
   },
   {
    "title": {
-    "ko": "대규모 선제 증설로 수주 대응력 확보",
-    "en": "Large pre-emptive capacity to meet orders"
+    "ko": "확정 공시된 대규모 캐파 확충",
+    "en": "Disclosed large-scale capacity expansion"
    },
    "body": {
-    "ko": "두산테스나는 장비 도입에만 총 약 4,000억원에 달하는 자금을 투입하며 국내 1위 OSAT 위상을 강화하고 있다. 테스트 산업은 장비 가동률이 매출로 직결되는 구조여서, 고가의 최신 장비를 선제 확보하면 수주 경쟁에서 우위를 점할 수 있다. 두산그룹 편입 이후 안정적 재무 구조를 바탕으로 과감한 투자 결정이 가능해졌다는 평가다.",
-    "en": "Doosan Tesna is committing roughly KRW 400bn to equipment alone, reinforcing its position as Korea's No.1 OSAT. In testing, equipment utilization translates directly into revenue, so securing pricey state-of-the-art tools ahead of demand can confer an edge in winning orders. Since joining Doosan Group, its stable balance sheet has reportedly enabled bolder investment decisions."
+    "ko": "머니투데이 보도 기준 평택공장 증설 2,303억원, 테스트 장비 2,053억원, 신규 AI 장비 1,909억원 등 총 6,265억원 규모의 투자가 진행 중이다. 평택 제2공장은 2027년 11월 완공이 목표다. 업계에서는 이를 통해 패키지 테스트로 영역을 넓히면 수익성은 다소 낮아질 수 있어도 매출 규모를 크게 키울 수 있다고 본다. 투자 규모와 일정이 공시로 확정돼 있어 진척 여부를 외부에서 추적할 수 있다는 점도 확인 포인트다.",
+    "en": "Per Money Today, total investment under way is KRW 626.5bn: KRW 230.3bn for the Pyeongtaek expansion, KRW 205.3bn for test equipment and KRW 190.9bn for new AI equipment. The Pyeongtaek No.2 plant targets completion in November 2027. Industry observers note that extending into package test could lower margins somewhat but materially expand revenue scale. Because the amounts and schedules are formally disclosed, outside observers can track execution."
    }
   },
   {
    "title": {
-    "ko": "삼성 파운드리 저변 확대 수혜",
-    "en": "Beneficiary of Samsung Foundry's expansion"
+    "ko": "개선된 재무 여력",
+    "en": "Improved financial capacity"
    },
    "body": {
-    "ko": "두산테스나는 삼성파운드리 저변 확대의 가장 직접적인 수혜를 받는 OSAT 업체 중 하나로 꼽힌다. 파운드리 고객사 수주가 AI 반도체로 무게중심을 옮길수록 해당 칩 테스트를 담당하는 회사의 수혜 범위도 자동으로 넓어진다. 또한 삼성전자가 미국 오스틴에 CIS 신규 라인을 구축해 2027년 출시 예정인 애플 아이폰용 이미지센서를 생산할 예정인 점은 중기 모멘텀으로 거론된다.",
-    "en": "Doosan Tesna is cited as one of the OSAT firms most directly benefiting from Samsung Foundry's customer-base expansion. As foundry customers' orders shift toward AI chips, the scope of the company's benefit, as the tester of those chips, automatically widens. In addition, Samsung is building a new CIS line in Austin, Texas to make image sensors for an Apple iPhone slated for 2027, cited as a medium-term catalyst."
+    "ko": "부채비율은 2022년 147.6%에서 2023년 89.1%, 2024년 80.0%, 2025년 61.0%로 낮아졌다. 손익이 부진했던 2025년에도 영업활동현금흐름 1,472.2억원을 확보했고 자기자본은 4,370.8억원이다. 유동비율은 2024년 62%에서 2025년 137%로 올라섰고, 기타금융자산을 포함한 현금성자산도 730억원 규모에서 1,100억원대로 늘었다. 대규모 투자를 소화하는 과정에서 재무 완충이 이전보다 두꺼워진 상태다.",
+    "en": "The debt-to-equity ratio fell from 147.6% in 2022 to 89.1%, 80.0% and 61.0% in the following years. Even in the weak 2025, operating cash flow reached KRW 147.2bn and equity stood at KRW 437.1bn. The current ratio rose from 62% in 2024 to 137% in 2025, and cash and equivalents including other financial assets increased from roughly KRW 73bn to the KRW 110bn range. The financial cushion entering this capex cycle is thicker than before."
    }
   }
  ],
  "bear": [
   {
    "title": {
-    "ko": "삼성전자 단일 고객 집중 리스크",
-    "en": "Concentration risk on Samsung"
+    "ko": "단일 고객 집중도",
+    "en": "Single-customer concentration"
    },
    "body": {
-    "ko": "지난해 삼성전자 매출 비중이 90%를 웃돌아 단일 고객 의존도가 매우 높다. 삼성전자 시스템반도체 사업의 부진은 곧바로 두산테스나 가동률과 실적 악화로 이어진다. 실제로 2024년 엑시노스 2500의 플래그십 미탑재와 IT 수요 부진으로 OSAT 업계 실적이 예상 대비 감소했다.",
-    "en": "Samsung accounted for over 90% of revenue last year, indicating very high single-customer dependence. Weakness in Samsung's system-semiconductor business feeds straight through to Doosan Tesna's utilization and earnings. Indeed, in 2024 the Exynos 2500 missing flagship adoption and weak IT demand reduced OSAT earnings below expectations."
+    "ko": "회사 매출의 90% 이상이 삼성전자 파운드리와 시스템LSI 사업부에 집중돼 있다는 분석이 있다. 고객사 가동률·제품 믹스가 바뀌면 실적이 즉각 흔들리는 구조이며, 2025년 1분기 영업손실 191.33억원이 그 민감도를 보여준다. 신한투자증권은 차량용 반도체의 경우 생산지가 미국이라는 점에서 후공정 내재화 가능성이 있어 외주화 여부를 지켜봐야 한다고 지적했다. 신규 고객 확보가 실제 매출로 확인되기 전까지는 집중도 리스크가 유지된다.",
+    "en": "Analysis indicates more than 90% of revenue is concentrated in Samsung Electronics' foundry and System LSI divisions. Shifts in customer utilization or product mix hit results immediately, as the KRW 19.13bn operating loss in Q1 2025 illustrates. Shinhan Securities flagged that for automotive chips produced in the US, back-end work could be brought in-house, so outsourcing decisions bear watching. Concentration risk persists until new customer wins show up in reported revenue."
    }
   },
   {
    "title": {
-    "ko": "CIS 부문 구조적 부진",
-    "en": "Structural weakness in CIS"
+    "ko": "감가상각비와 고정비 부담",
+    "en": "Depreciation and fixed-cost burden"
    },
    "body": {
-    "ko": "CIS는 회사 매출의 큰 비중을 차지하지만 최근 부진이 지속되고 있다. 중화권 경쟁 심화와 고객사의 보수적 재고 정책으로 가동률이 50% 수준에 머물러 2025년 CIS 부문 매출이 전년 대비 약 25% 감소하며 전체 부진의 주된 원인이 됐다는 분석이 있다(BNK투자증권 추정). 신규 북미 CIS 물량 본격화 전까지 이 부문의 회복이 더딜 경우 실적 하방 압력이 지속될 수 있다.",
-    "en": "CIS makes up a large share of revenue but has been persistently weak recently. Per BNK Investment & Securities estimates, intensifying Chinese competition and conservative customer inventory kept utilization near 50%, with 2025 CIS revenue down about 25% year over year as the main driver of the overall weakness. Until new North American CIS volume ramps fully, a slow recovery here could sustain downside pressure on results."
+    "ko": "테스트는 장비 집약 사업으로, 2025년 영업활동현금흐름 1,472.2억원과 영업손실 9.4억원의 격차가 감가상각 규모를 방증한다. 6,000억원대 신규 투자가 순차 반영되면 매출 인식보다 상각 부담이 먼저 나타날 수 있다. 2026년 1분기에도 가동률 하락에 따른 고정비 부담으로 전분기 대비 실적이 감소한 것으로 분석됐다. 가동률이 기대만큼 오르지 않으면 마진 회복은 지연될 수 있다.",
+    "en": "Test is equipment-intensive: the gap between KRW 147.2bn of 2025 operating cash flow and a KRW 0.94bn operating loss reflects the scale of depreciation. As the new multi-hundred-billion-won investments phase in, amortization can hit before the associated revenue does. Even in Q1 2026, results fell sequentially partly on fixed-cost pressure from lower utilization. If utilization does not rise as expected, margin recovery could be delayed."
    }
   },
   {
    "title": {
-    "ko": "대규모 CAPEX의 감가상각 부담",
-    "en": "Depreciation burden from heavy capex"
+    "ko": "CIS 부문 부진과 모바일 수요 불확실성",
+    "en": "Weak CIS and mobile demand uncertainty"
    },
    "body": {
-    "ko": "회사가 단행한 약 4,000억원 이상의 설비투자는 향후 매출 capacity를 키우지만, 동시에 감가상각비 부담을 재차 키울 수 있다. 일각에서는 4,212억원 CAPEX가 2026~2027년 감가상각비 재증가로 이어져 고정비 감소 논리를 일부 약화시킬 수 있다는 우려도 제기된다. 신규 물량이 기대만큼 빠르게 차오르지 못하면 가동률이 낮은 채로 고정비만 늘어 수익성을 압박할 수 있다.",
-    "en": "The company's capex of over KRW 400bn expands future revenue capacity but can also re-increase depreciation. Some caution that the KRW 421.2bn capex could raise depreciation again in 2026-2027, partly weakening the fixed-cost reduction thesis. If new volume fails to fill as quickly as hoped, rising fixed costs against low utilization could pressure margins."
+    "ko": "메리츠증권은 2026년 4월 자료에서 CIS의 경쟁 심화와 고화소 제품 수요 둔화로 가동률이 50%를 밑돌 것으로 봤다. 교보증권도 2026년 1분기에 세트 전방 불확실성으로 CIS 부문이 부진해 전 분기 대비 실적이 축소됐다고 평가했다. 회사 포트폴리오에서 모바일 관련 비중이 여전히 큰 만큼 스마트폰 수요 둔화는 직접적 부담이다. 신규 CIS 고객 물량의 기여 시점이 뒤로 밀리면 그 공백을 메우기 어려울 수 있다.",
+    "en": "Meritz Securities expected CIS utilization to stay below 50% in April 2026 amid intensifying competition and softer high-pixel demand. Kyobo Securities likewise attributed the sequential decline in Q1 2026 to CIS weakness amid set-maker uncertainty. With mobile still a large part of the portfolio, softer smartphone demand is a direct drag. If contributions from new CIS customer volumes slip, that gap may be hard to fill."
    }
   }
  ],
  "risks": [
   {
    "cat": {
-    "ko": "전방 수요·업황 사이클",
-    "en": "End-demand and cyclical risk"
+    "ko": "투자 집행 리스크",
+    "en": "Capex execution risk"
    },
    "body": {
-    "ko": "테스트 매출은 전방 시스템반도체 가동률에 직결돼 스마트폰·IT 기기 수요 사이클에 민감하다. 첨단 CIS 가동률이 올라도 모바일 SoC 가동률이 낮아지면 실적에 부정적 영향이 더 클 수 있다. AI·자동차 부문이 일부 상쇄하더라도 모바일 업황 둔화 국면에서는 실적 변동성이 크다.",
-    "en": "Test revenue is tied directly to downstream system-semiconductor utilization, making it sensitive to smartphone and IT device demand cycles. Even if advanced CIS utilization rises, falling mobile SoC utilization can have a larger negative impact on results. While AI and automotive partly offset, earnings volatility is high in mobile downturns."
+    "ko": "평택 제2공장은 시장 상황에 따라 착공 시기를 조율해온 프로젝트로, 약 2,303억원을 투입해 2027년 11월 완공을 목표로 한다. 과거에도 시황에 따라 속도가 조정된 이력이 있어 일정 변동 가능성을 배제하기 어렵다. 장비 반입·셋업에는 시간이 걸리며, 한국투자증권은 장비 반입부터 설치까지 약 6개월이 소요된다고 언급한 바 있다. 투자 규모가 커진 만큼 수요가 예상을 밑돌 경우 감가상각 부담이 장기간 남는다.",
+    "en": "The Pyeongtaek No.2 plant is a project whose start had been repeatedly timed to market conditions; about KRW 230.3bn is being invested toward completion in November 2027. Given that history, schedule changes cannot be ruled out. Equipment delivery and setup take time — Korea Investment & Securities noted roughly six months from delivery to installation. With larger commitments, weaker-than-expected demand would leave depreciation costs in place for an extended period."
    }
   },
   {
    "cat": {
-    "ko": "신규 매출 시점 지연",
-    "en": "Timing risk on new revenue"
+    "ko": "전방 수요·업황 변동",
+    "en": "End-demand and cycle volatility"
    },
    "body": {
-    "ko": "LPU·북미 CIS 등 신규 매출의 본격 반영 시점이 증설·고객 양산 일정에 좌우된다. 그록3 LPU의 물량과 이익 기여도는 아직 미지수이며, SoC 부문에서 AI 물량 비중이 크지 않은 상황이다. 고객사 양산 일정 지연이나 후공정 내재화 가능성 등 변수가 실적 기여 시점을 늦출 수 있다.",
-    "en": "The timing of new revenue (LPU, North American CIS) hinges on capacity buildout and customer mass-production schedules. The Groq3 LPU's volume and profit contribution remain uncertain, and AI volume is not yet a large share of the SoC segment. Variables such as customer production delays or in-house back-end insourcing could push out contribution timing."
+    "ko": "실적은 파운드리 가동률과 세트 수요에 연동되며, 2025년 매출이 3,038.7억원으로 전년 3,731.2억원 대비 감소한 사례가 변동성의 크기를 보여준다. AI 관련 투자 기대가 조정될 경우 후공정 업체 전반의 물량 가정도 함께 흔들릴 수 있다. CIS처럼 경쟁 심화가 진행 중인 제품군에서는 가격·가동률 압박이 동시에 나타날 수 있다. 분기 실적 변동 폭이 커 단기 흐름만으로 추세를 판단하기 어렵다.",
+    "en": "Results track foundry utilization and set-maker demand; 2025 revenue of KRW 303.9bn versus KRW 373.1bn in 2024 shows the amplitude. If AI-related investment expectations are revised, volume assumptions across back-end providers can move with them. In product lines facing intensifying competition such as CIS, price and utilization pressure can arrive together. Quarterly swings are wide, so short-term prints alone are a poor guide to trend."
    }
   },
   {
    "cat": {
-    "ko": "밸류에이션·기대 선반영",
-    "en": "Valuation and pre-reflected expectations"
+    "ko": "그룹 전략 변수",
+    "en": "Group strategy variables"
    },
    "body": {
-    "ko": "주가는 2027년 이익 레벨업 기대를 상당 부분 선반영한 것으로 평가된다. 증권가도 시장 기대감이 일부 선반영됐다고 언급한다. 실적이 추정치를 따라오지 못하거나 증설 효과가 지연되면 높아진 기대와 실제 이익 간 괴리가 주가 변동성으로 나타날 수 있다.",
-    "en": "The share price is seen as substantially pre-reflecting expectations of a 2027 earnings step-up. Brokerages themselves note that market expectations are partly pre-reflected. If earnings fail to track estimates or expansion benefits are delayed, the gap between elevated expectations and actual profits could surface as share-price volatility."
+    "ko": "㈜두산은 2026년 7월 31일 SK실트론 지분 70.6%를 약 2조3,000억원에 인수하는 계약 체결을 승인했고 금액은 조정 절차가 남아 있다. 두산은 인수재원을 자체 자금 1조3,000억원과 차입금 1조원으로 조달하는 것으로 전해진다. 그룹 밸류체인 확장은 정성적 재료지만, 자원 배분 우선순위나 계열 간 역할 조정이 두산테스나의 투자·사업 계획에 영향을 줄 가능성은 확인이 필요한 부분이다. 시너지 실현 여부는 실제 수주·매출로 확인되기 전까지는 가정에 머문다.",
+    "en": "Doosan Corp. approved on 31 July 2026 the purchase of a 70.6% stake in SK Siltron for about KRW 2.3trn, with the price still subject to adjustment. Funding is reported as KRW 1.3trn of internal cash plus KRW 1trn of borrowings. Value-chain expansion is a qualitative positive, but shifts in group capital allocation or affiliate roles could affect Doosan Tesna's own investment and business plans and warrant monitoring. Any synergy remains an assumption until it shows up in orders and revenue."
    }
   }
  ],
  "checkpoints": [
   {
    "when": {
-    "ko": "2026년 7~8월",
-    "en": "July-August 2026"
+    "ko": "2026년 8월 중 (반기보고서)",
+    "en": "August 2026 (half-year report)"
    },
    "what": {
-    "ko": "2026년 2분기 실적 발표. CIS 가동률 회복 여부와 자동차·AP 부문 가동률 추이, 1분기를 저점으로 한 회복 궤적 지속 여부를 확인한다.",
-    "en": "Q2 2026 earnings release. Watch whether CIS utilization recovers, the trajectory of automotive and AP utilization, and whether the recovery from the Q1 trough continues."
+    "ko": "2026년 2분기·상반기 실적 공시. 1분기 매출 768.29억원·영업이익 54.84억원 대비 매출과 영업이익률이 다시 올라오는지, CIS 부문 부진이 완화됐는지가 핵심 확인 항목이다.",
+    "en": "Q2 and first-half 2026 disclosures. Key items are whether revenue and operating margin rebuild from Q1's KRW 76.8bn revenue and KRW 5.48bn operating profit, and whether CIS weakness eases."
    }
   },
   {
    "when": {
-    "ko": "2026년 4분기",
-    "en": "Q4 2026"
+    "ko": "2026년 10월 말~연말",
+    "en": "Late October to end-2026"
    },
    "what": {
-    "ko": "LPU 테스트 매출의 본격 반영 시점. 신규 SoC·AI 칩 물량이 실제 매출로 얼마나 전환되는지가 2027년 레벨업의 선행 지표가 된다.",
-    "en": "The point at which LPU test revenue ramps in earnest. How much new SoC/AI-chip volume converts to actual revenue serves as a leading indicator for the 2027 step-up."
+    "ko": "1,909억원 규모 신규 투자 장비의 반입 완료 예정 시점과 연말까지의 순차 도입 계획 이행 여부. 장비 셋업 진척이 2027년 매출 인식 시점을 좌우한다.",
+    "en": "Completion of equipment delivery for the KRW 190.9bn program scheduled to end in late October 2026 and execution of the phased installation plan through year-end. Setup progress determines when 2027 revenue is recognized."
    }
   },
   {
    "when": {
-    "ko": "2027년 상반기~11월",
-    "en": "H1 2027 to November 2027"
+    "ko": "2026년 4분기 실적 발표",
+    "en": "Q4 2026 results"
    },
    "what": {
-    "ko": "신규 CIS capacity 증설 완료와 평택 제2공장 완공(2027년 11월 목표). 북미 CIS 고객사 물량의 본격 반영과 capacity 확대 진행을 점검한다.",
-    "en": "Completion of new CIS capacity and the Pyeongtaek No.2 plant (targeted for November 2027). Monitor the ramp of North American CIS customer volume and the progress of capacity additions."
+    "ko": "교보증권이 SoC 테스트 매출의 본격 반영 시점으로 지목한 분기다. 신규 장비 가동에 따른 매출 증가와 감가상각비 증가 중 어느 쪽이 더 크게 반영되는지 확인할 수 있다.",
+    "en": "The quarter Kyobo Securities identified as the start of meaningful SoC test revenue. It will show whether new equipment brings more incremental revenue or more incremental depreciation."
    }
   },
   {
    "when": {
-    "ko": "수시 (그룹 이벤트)",
-    "en": "Ongoing (group events)"
+    "ko": "2027년 상반기",
+    "en": "First half of 2027"
    },
    "what": {
-    "ko": "두산그룹의 SK실트론 인수 진행 상황. 소재-기판-후공정 테스트로 이어지는 그룹 반도체 밸류체인 시너지가 가시화되는지가 관전 포인트다.",
-    "en": "Progress of Doosan Group's SK Siltron acquisition. A key watch point is whether group semiconductor value-chain synergies spanning materials, substrates, and back-end test become tangible."
+    "ko": "CIS 신규 고객사 물량이 2027년 2분기부터 의미 있게 기여할 것이라는 전망의 실현 여부. 고객 출하 일정 변동이 곧 매출 인식 시점 변동으로 이어진다.",
+    "en": "Whether the expectation that new CIS customer volumes contribute meaningfully from Q2 2027 materializes. Any change in the customer's shipment schedule directly shifts revenue timing."
+   }
+  },
+  {
+   "when": {
+    "ko": "2027년 11월 (목표)",
+    "en": "November 2027 (target)"
+   },
+   "what": {
+    "ko": "평택 제2공장 완공 목표 시점. 공정률과 완공 일정 변경 공시, 그리고 패키지 테스트로의 사업 확장 실행 여부를 함께 점검할 필요가 있다.",
+    "en": "Target completion of the Pyeongtaek No.2 plant. Construction progress, any schedule-revision disclosures, and execution of the move into package test should be checked together."
    }
   }
  ],
  "verdict": {
   "body": {
-   "ko": "두산테스나는 삼성 파운드리 의존도가 높은 국내 1위 시스템반도체 테스트 기업으로, 2025년 전방 수요 부진과 가동률 하락으로 연결 영업이익이 소폭 적자를 기록했다. 그러나 2025년 3분기부터 분기 영업이익이 흑자로 돌아섰고 2026년 1분기 매출 768억원·영업이익 55억원으로 전년 동기 적자에서 흑자전환하며 실적 바닥을 통과한 모습이다. 회사는 2026년 4월 약 4,000억원 이상의 LPU·CIS 테스트 증설과 평택 제2공장 재개를 동시에 결정하며 모바일 편중 구조에서 AI·차량용으로의 체질 전환을 추진하고 있다. 신규 매출은 2026년 4분기 LPU를 시작으로 2027년 본격 레벨업이 기대되나, 실적 기여 시점은 증설·고객 양산 일정에 좌우된다. 강세 요인으로는 고부가 제품 믹스 전환과 삼성 파운드리 저변 확대 수혜가, 약세 요인으로는 단일 고객 집중·CIS 부진·대규모 CAPEX의 감가상각 부담이 같은 무게로 존재한다. 주가는 2027년 이익 기대를 상당 부분 선반영한 구간으로 평가되므로, 분기 실적이 추정치를 따라오는지를 지속적으로 확인할 필요가 있다. 본 자료는 정보 제공을 목적으로 하며 투자 권유가 아니다.",
-   "en": "Doosan Tesna is Korea's No.1 system-semiconductor test firm with heavy dependence on Samsung Foundry, and in 2025 weak end demand and low utilization produced a small consolidated operating loss. However, quarterly operating profit turned positive from Q3 2025, and Q1 2026 revenue of KRW 76.8bn and operating profit of KRW 5.5bn marked a swing from a year-earlier loss to profit, suggesting the earnings trough has passed. In April 2026 the company simultaneously decided on over KRW 400bn of LPU and CIS test expansion and the resumption of its Pyeongtaek No.2 plant, pursuing a shift from a mobile-heavy mix toward AI and automotive. New revenue is expected to begin with LPU in Q4 2026 and step up in earnest in 2027, though contribution timing depends on capacity and customer production schedules. Bullish factors include the shift to a higher-value product mix and benefit from Samsung Foundry's expansion, while bearish factors of equal weight include single-customer concentration, CIS weakness, and depreciation from heavy capex. As the share price is seen to substantially pre-reflect 2027 earnings expectations, it is worth continually checking whether quarterly results track estimates. This material is for informational purposes only and is not investment advice."
+   "ko": "두산테스나는 2025년 매출 3,038.7억원·영업손실 9.4억원으로 저점을 지난 뒤, 분기 기준으로는 2025년 1분기 영업손실 191.33억원에서 4분기 영업이익 150.25억원, 2026년 1분기 영업이익 54.84억원으로 흑자 구간에 재진입했다. 동시에 부채비율을 2022년 147.6%에서 2025년 61.0%까지 낮추며 재무 완충을 두껍게 했고, 그 여력을 바탕으로 총 6,265억원 규모로 알려진 장비·공장 투자를 진행 중이다. 강세 요인은 고객사 파운드리 가동률 회복과 AI 칩 테스트 물량 진입, 그리고 차량용 반도체의 상대적으로 낮은 수요 변동성이다. 약세 요인은 단일 고객군에 대한 높은 매출 의존, CIS 부문의 경쟁 심화, 그리고 대규모 투자에 수반되는 감가상각·고정비 부담이 매출 인식보다 먼저 나타날 수 있다는 점이다. 밸류에이션은 이익이 바닥을 지난 직후의 낮은 이익 기반 위에서 산출되고 있어, 어떤 이익 기준과 비교군을 쓰느냐에 따라 증권사 간 해석 차이가 크다. 결국 확인해야 할 것은 2026년 하반기 이후 신규 장비 가동이 실제 매출·마진으로 이어지는 속도와, 평택 제2공장 일정의 이행 여부다. 이 리포트는 정보 제공 목적이며 투자 판단은 독자의 몫이다.",
+   "en": "Doosan Tesna appears to have passed a trough in 2025 (revenue KRW 303.9bn, operating loss KRW 0.94bn), with the quarterly path moving from a KRW 19.13bn operating loss in Q1 2025 to KRW 15.03bn of profit in Q4 and KRW 5.48bn in Q1 2026. It simultaneously cut its debt-to-equity ratio from 147.6% in 2022 to 61.0% in 2025, and is using that cushion to fund equipment and plant investment reported at KRW 626.5bn in total. The bullish case rests on recovering foundry utilization at its key customer, entry into AI chip test work, and the relatively steady demand profile of automotive chips. The bearish case rests on heavy revenue dependence on a single customer group, intensifying CIS competition, and the risk that depreciation and fixed costs from the build-out land before the associated revenue. Valuation is being computed on a low, just-past-trough profit base, which is why broker interpretations diverge widely depending on the earnings basis and peer set chosen. What matters next is how quickly newly installed capacity converts into revenue and margin from late 2026, and whether the Pyeongtaek No.2 schedule holds. This report is for information purposes; investment decisions rest with the reader."
   }
  },
  "sources": [
-  "https://m.thinkpool.com/compDiscuss/cont/1026239",
   "https://comp.wisereport.co.kr/company/c1010001.aspx?cmp_cd=131970",
   "https://m.finance.daum.net/quotes/A131970/news/stock/20260320060037715",
-  "https://www.mt.co.kr/stock/2026/04/23/2026042308334493226",
-  "https://www.newstomato.com/readnews.aspx?no=1299518",
-  "https://m.thinkpool.com/compDiscuss/cont/1015447",
-  "http://www.dailyinvest.kr/news/articleView.html?idxno=70626",
   "https://www.investing.com/equities/tesna-inc-earnings",
-  "https://news.nate.com/view/20260520n30109",
+  "https://stockeasy.intellio.kr/share_chat/4e5e9002-2253-450b-87cf-4e5294a7687e",
+  "https://www.topdaily.kr/articles/109924",
+  "https://m.thinkpool.com/compDiscuss/cont/1022846",
   "https://m.irgo.co.kr/IR-COMP/131970/",
-  "https://www.thelec.kr/news/articleView.html?idxno=42147",
-  "https://www.mtnews.net/news/articleView.html?idxno=19271",
-  "https://zdnet.co.kr/view/?no=20250214144713",
-  "https://zdnet.co.kr/view/?no=20260429004504",
-  "https://thevc.kr/doosantesna",
-  "https://m.thinkpool.com/compDiscuss/cont/1025593",
+  "https://m.thinkpool.com/compDiscuss/cont/1026239",
+  "http://www.bondweb.co.kr/Data/20263/18/menu01/ratingHK_891738.pdf",
   "https://alphabiz.co.kr/news/view/1065571477853873",
-  "https://www.topdaily.kr/articles/109924"
+  "https://m.thebell.co.kr/m/newsview.asp?newskey=202604290811198140105455",
+  "https://www.mt.co.kr/stock/2026/06/10/2026061000171824025",
+  "https://thevc.kr/doosantesna",
+  "https://alphasquare.co.kr/home/stock-summary?code=131970",
+  "https://www.dailian.co.kr/news/view/1639089/%EB%B0%98%EB%8F%84%EC%B2%B4-%ED%85%8C%EC%8A%A4%ED%8A%B8-%EC%88%98%EC%9A%94-%EB%8C%80%EC%9D%91%EB%91%90%EC%82%B0%ED%85%8C%EC%8A%A4%EB%82%98-1-2026",
+  "https://m.thinkpool.com/compDiscuss/cont/1015447",
+  "https://www.asiatoday.co.kr/kn/view.php?key=20260428010009196",
+  "https://www.investing.com/equities/tesna-inc"
  ],
  "v": 2,
- "model": "claude-opus-4-8",
+ "model": "claude-opus-5",
  "ticker": "131970",
  "name": "두산테스나",
  "name_en": "DOOSAN TESNA Inc.",
@@ -223,11 +233,11 @@
   "반도체"
  ],
  "market": "코스닥",
- "reportDate": "2026-06-16",
- "reportTs": "2026-06-16 19:21",
- "dataDate": "20260616",
+ "reportDate": "2026-08-15",
+ "reportTs": "2026-08-15 12:15",
+ "dataDate": "20260814",
  "quant": {
-  "asOf": "2026-06-16",
+  "asOf": "2026-08-15",
   "fs_basis": "연결(CFS) · DART 공시 확정치 · 지배주주 기준 순이익",
   "annual": [
    {
@@ -324,23 +334,23 @@
    }
   ],
   "valuation": {
-   "price": 161200,
-   "mcap": 3.1156,
+   "price": 84000,
+   "mcap": 1.6235,
    "shares": 19327238,
    "total_shares": 19327238,
    "wavg_shares": 19359525,
-   "per": 117.8,
+   "per": 61.4,
    "eps": 1369,
-   "pbr": 7.05,
+   "pbr": 3.67,
    "bps": 22875,
    "roe_ttm": 6.1,
    "ttm_window": "2025Q2~2026Q1",
    "ttm_np_owner": 26346808000,
-   "pbr_krx": 6.62,
+   "pbr_krx": 3.7,
    "bps_krx": 22719.0,
    "basis": "PER·EPS·PBR·BPS 모두 자체 산출(네이버·토스와 동일 방식) · 배당은 DART 공시 주당현금배당금(보완:KRX) ÷ 현재가",
    "dps": 160.0,
-   "div": 0.1
+   "div": 0.19
   }
  }
 }
