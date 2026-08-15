@@ -267,26 +267,40 @@ def collect_quant(dart, ticker, krx_row, stock):
         annual.append(row)
         time.sleep(0.3)
 
-    # 분기: 전년 Q1~Q4 + 올해 Q1 (누적 차감으로 단일 분기화)
+    # ── 분기 실적: '최근 5개 분기'를 굴려서 만든다 ─────────────────────────
+    # 예전에는 (전년 Q1~Q4 + 올해 Q1)로 고정돼 있었다. 1분기 시즌에는 그게
+    # 정답이라 문제가 드러나지 않았지만, 반기보고서가 나오는 8월이면 2분기가,
+    # 11월이면 3분기가 영영 빠진다. 나오는 보고서를 따라가야 한다.
+    #
+    # DART 정기보고서는 '누적'으로 공시된다 → 단일 분기는 누적을 빼서 만든다.
+    #   Q1 = 1분기보고서(11013)           Q3 = 3분기보고서(11014) − 반기
+    #   Q2 = 반기보고서(11012) − 1분기     Q4 = 사업보고서(11011)  − 3분기
     py = cur - 1
-    dq1 = _fin_all(dart, ticker, py, "11013")
-    dh1 = _fin_all(dart, ticker, py, "11012")
-    d9m = _fin_all(dart, ticker, py, "11014")
-    dfy = next((dict(a=a) for a in []), None)  # placeholder
-    fy_row = next((a for a in annual if a["year"] == py), None)
-    dq1c = _fin_all(dart, ticker, cur, "11013")
-    time.sleep(0.3)
+    Q_CODE = ("11013", "11012", "11014")      # 1분기 · 반기 · 3분기 (모두 누적)
 
-    def quarters(key, fy_total):
-        c1, ch, c9 = _cum(dq1, key), _cum(dh1, key), _cum(d9m, key)
-        q = {
-            f"{py}Q1": c1,
-            f"{py}Q2": _sub(ch, c1),
-            f"{py}Q3": _sub(c9, ch),
-            f"{py}Q4": _sub(fy_total, c9),
-            f"{cur}Q1": _cum(dq1c, key),
-        }
-        return q
+    _fin_cache = {}
+
+    def fin(year, code):
+        """같은 (연도, 보고서)를 여러 계정이 함께 쓰므로 한 번만 받아 캐시한다."""
+        k = (year, code)
+        if k not in _fin_cache:
+            _fin_cache[k] = _fin_all(dart, ticker, year, code)
+            time.sleep(0.3)
+        return _fin_cache[k]
+
+    ann = {a["year"]: a for a in annual}
+    fy_row = ann.get(py)
+
+    # 올해 나온 '가장 최근' 정기보고서. 분기표·TTM·BPS·ROE가 모두 이 시점을 기준으로 삼는다.
+    # cur_qi = 1(1분기) · 2(반기) · 3(3분기) · 0(연초라 올해 보고서가 아직 없음)
+    cur_qi, d_cur = 0, None
+    for qi, code in enumerate(Q_CODE, 1):
+        d = fin(cur, code)
+        if d:
+            cur_qi, d_cur = qi, d
+    # TTM 뺄셈의 짝 — 반드시 '전년 같은 기간' 누적이어야 뺄셈이 성립한다.
+    # (반기까지 나왔으면 전년도 반기를 빼야지 전년도 1분기를 빼면 안 된다.)
+    d_py_same = fin(py, Q_CODE[cur_qi - 1]) if cur_qi else None
 
     # 매출 폴백 — 보험·금융사는 전체 재무제표에 '매출액' 행이 없어
     # DART 요약재무(매출액/영업수익)로 보충한다.
@@ -314,44 +328,78 @@ def collect_quant(dart, ticker, krx_row, stock):
                 row["rev"] = ins_vals.get(row["year"])
                 row["opm"] = None  # 보험수익 대비 영업이익률은 비표준 → 미표시
 
-    quarterly = []
     rev_key = "rev_ins" if rev_label else "rev"
-    rev_q = quarters(rev_key, fy_row["rev"] if fy_row else None)
-    if all(v is None for v in rev_q.values()):
-        c1 = rev_fallback(py, "11013")
-        ch = rev_fallback(py, "11012")
-        c9 = rev_fallback(py, "11014")
-        fy = fy_row["rev"] if fy_row else None
-        cq = rev_fallback(cur, "11013")
-        cand = {f"{py}Q1": c1, f"{py}Q2": _sub(ch, c1), f"{py}Q3": _sub(c9, ch),
-                f"{py}Q4": _sub(fy, c9), f"{cur}Q1": cq}
-        # 차감 결과 음수(누적 가정 오류)면 채택하지 않음
+
+    def year_q(year, key, fy_total, getter=None):
+        """그 해의 Q1~Q4 단일 분기값. 해당 보고서가 없으면 그 분기는 None."""
+        get = getter or (lambda yr, code: _cum(fin(yr, code), key))
+        c1, ch, c9 = (get(year, c) for c in Q_CODE)
+        return {f"{year}Q1": c1,
+                f"{year}Q2": _sub(ch, c1),
+                f"{year}Q3": _sub(c9, ch),
+                f"{year}Q4": _sub(fy_total, c9)}
+
+    def series(key, fy_key, years, getter=None):
+        s = {}
+        for y in years:
+            s.update(year_q(y, key, (ann.get(y) or {}).get(fy_key), getter))
+        return s
+
+    def build(years):
+        return (series(rev_key, "rev", years), series("op", "op", years),
+                series("np_owner", "np_owner", years), series("np", "np", years))
+
+    def window_of(years, *maps):
+        """값이 있는 마지막 분기에서 5개를 거슬러 자른다.
+        중간이 비어도 건너뛰지 않는다 — 시간축이 어긋나면 표가 거짓말을 한다."""
+        labels = [f"{y}Q{i}" for y in years for i in (1, 2, 3, 4)]
+        idx = [i for i, l in enumerate(labels) if any(m.get(l) is not None for m in maps)]
+        if not idx:
+            return []
+        return labels[max(0, idx[-1] - 4): idx[-1] + 1]
+
+    years = [py, cur]
+    rev_q, op_q, npo_q, np_q = build(years)
+    win = window_of(years, rev_q, op_q, npo_q, np_q)
+    if len(win) < 5:            # 연초 등 — 두 해로 5개를 못 채우면 한 해 더 거슬러 올라간다
+        years = [cur - 2] + years
+        rev_q, op_q, npo_q, np_q = build(years)
+        win = window_of(years, rev_q, op_q, npo_q, np_q)
+
+    # 매출이 통째로 비면(보험·금융) 요약재무 기준으로 다시 만든다.
+    # 차감 결과가 음수면 '누적 공시' 가정이 깨진 것이므로 채택하지 않는다.
+    if win and all(rev_q.get(l) is None for l in win):
+        cand = series(rev_key, "rev", years, getter=lambda yr, code: rev_fallback(yr, code))
         if not any(v is not None and v < 0 for v in cand.values()):
             rev_q = cand
-    op_q = quarters("op", fy_row["op"] if fy_row else None)
-    npo_q = quarters("np_owner", fy_row["np_owner"] if fy_row else None)
-    np_q = quarters("np", fy_row["np"] if fy_row else None)
-    for label in (f"{py}Q1", f"{py}Q2", f"{py}Q3", f"{py}Q4", f"{cur}Q1"):
-        npo = npo_q.get(label)
-        quarterly.append({
-            "q": label, "rev": rev_q.get(label), "op": op_q.get(label),
-            "np_owner": npo if npo is not None else np_q.get(label),
-        })
 
-    # TTM 지배주주 순이익 = 전년 연간 − 전년 Q1 + 올해 Q1
+    quarterly = [{"q": l, "rev": rev_q.get(l), "op": op_q.get(l),
+                  "np_owner": npo_q.get(l) if npo_q.get(l) is not None else np_q.get(l)}
+                 for l in win]
+
+    # TTM 지배주주 순이익 = 전년 연간 − 전년 같은 기간 + 올해 같은 기간
+    #   반기까지 나왔으면  FY2025 − 2025상반기 + 2026상반기
+    #   올해 보고서가 아직 없으면 전년 연간이 곧 TTM
+    def _npo(d):
+        v = _cum(d, "np_owner")
+        return v if v is not None else _cum(d, "np")
+
     ttm_np = None
-    if fy_row:
-        py_q1 = npo_q.get(f"{py}Q1") or np_q.get(f"{py}Q1")
-        cy_q1 = npo_q.get(f"{cur}Q1") or np_q.get(f"{cur}Q1")
-        fy_np = fy_row["np_owner"]
-        if None not in (py_q1, cy_q1, fy_np):
-            ttm_np = fy_np - py_q1 + cy_q1
+    fy_np = fy_row["np_owner"] if fy_row else None
+    if fy_np is not None:
+        if cur_qi:
+            pv, cv = _npo(d_py_same), _npo(d_cur)
+            if None not in (pv, cv):
+                ttm_np = fy_np - pv + cv
+        else:
+            ttm_np = fy_np
+    ttm_label = f"{py}Q{cur_qi + 1}~{cur}Q{cur_qi}" if cur_qi else f"{py}Q1~{py}Q4"
 
     # ── 단위 자동 보정 ──
     # 일부 기업은 재무제표를 천원·백만원 단위로 공시 → 우리는 원으로 읽어 값이 1,000/1,000,000배 작게 나온다.
     # 시가총액(원)을 기준으로 자본총계가 비현실적으로 작으면(=PBR이 비정상적으로 큼) 단위 배수를 감지해 전 금액에 곱한다.
     mcap_won = (stock.get("mcap") or 0) * 1e12
-    ref_eq = _bs(dq1c, "equity_owner") or _bs(dq1c, "equity") or (fy_row.get("equity_owner") if fy_row else None)
+    ref_eq = _bs(d_cur, "equity_owner") or _bs(d_cur, "equity") or (fy_row.get("equity_owner") if fy_row else None)
     unit = 1
     if mcap_won and ref_eq and ref_eq > 0:
         ratio = mcap_won / ref_eq             # ≈ PBR. 정상 0.05~300, 그 이상이면 단위 축소 의심
@@ -391,22 +439,22 @@ def collect_quant(dart, ticker, krx_row, stock):
                 return w
         return None
 
-    wavg = (implied_wavg(_cum(dq1c, "np_owner"), _cum(dq1c, "eps_basic"))
+    wavg = (implied_wavg(_cum(d_cur, "np_owner"), _cum(d_cur, "eps_basic"))
             or (implied_wavg(fy_row["np_owner"], fy_row["eps_basic"]) if fy_row else None))
 
     # EPS(TTM): 1순위 = 회사 공시 기본주당이익(EPS) 직접 합산(최근결산 − 작년1Q + 올해1Q).
     #   순이익·주식수 추출을 건너뛰어 가장 견고하고, 네이버와 동일 기준(회사 공시 EPS).
     #   2순위(공시 EPS 누락 시) = 지배순이익 ÷ 발행주식총수.
     fy_eps = fy_row.get("eps_basic") if fy_row else None
-    qp_eps = _cum(dq1, "eps_basic")
-    qc_eps = _cum(dq1c, "eps_basic")
+    qp_eps = _cum(d_py_same, "eps_basic")
+    qc_eps = _cum(d_cur, "eps_basic")
     # 단위 보정: 천원/백만원 공시 기업은 EPS도 같은 단위로 공시된다(예: 두산밥캣 '4.14'=4,140원).
     #   금액과 달리 EPS는 위 money 보정에서 빠져 있어 따로 곱한다.
     if unit != 1:
         fy_eps = fy_eps * unit if fy_eps is not None else None
         qp_eps = qp_eps * unit if qp_eps is not None else None
         qc_eps = qc_eps * unit if qc_eps is not None else None
-    eps_disc = (fy_eps - qp_eps + qc_eps) if None not in (fy_eps, qp_eps, qc_eps) else None
+    eps_disc = (fy_eps - qp_eps + qc_eps) if None not in (fy_eps, qp_eps, qc_eps) else (fy_eps if not cur_qi else None)
     eps_ttm = eps_disc if eps_disc is not None else (int(ttm_np / total_sh) if (ttm_np and total_sh) else None)
     eps_ttm = int(eps_ttm) if eps_ttm is not None else None
     per_ttm = round(price / eps_ttm, 1) if (eps_ttm and eps_ttm > 0 and price) else None
@@ -419,7 +467,7 @@ def collect_quant(dart, ticker, krx_row, stock):
             ttm_np = implied_np
 
     bps_denom = wavg or total_sh
-    eqo_q = (_bs(dq1c, "equity_owner") or _bs(dq1c, "equity"))
+    eqo_q = (_bs(d_cur, "equity_owner") or _bs(d_cur, "equity"))
     if eqo_q is not None:
         eqo_q *= unit
     # 자본잠식(자본 ≤ 0)이면 BPS·PBR은 무의미 → 숨김
@@ -428,7 +476,7 @@ def collect_quant(dart, ticker, krx_row, stock):
 
     # ROE(TTM) = 최근 4개 분기 지배순이익 ÷ 평균 지배자본(TTM 시작시점~끝시점) — 토스와 정합
     fy_eqo = fy_row.get("equity_owner") if fy_row else None       # 이미 단위보정됨(annual 일괄)
-    eqo_begin = (_bs(dq1, "equity_owner") or _bs(dq1, "equity"))   # TTM 시작(작년 1Q말) 자본
+    eqo_begin = (_bs(d_py_same, "equity_owner") or _bs(d_py_same, "equity"))  # TTM 시작(전년 같은 분기말) 자본
     if eqo_begin is not None:
         eqo_begin *= unit
     # 자본이 양(+)일 때만 ROE 산출 — 자본잠식이면 ROE는 무의미(예: 1057%)라 숨김
@@ -442,7 +490,7 @@ def collect_quant(dart, ticker, krx_row, stock):
         "per": per_ttm, "eps": eps_ttm,          # 최근 4개 분기 순이익 ÷ 가중평균유통주식수 (네이버 방식)
         "pbr": pbr_q, "bps": bps_q,              # 최근 분기말 지배주주 자본 ÷ 유통주식수 (네이버 방식)
         "roe_ttm": roe_ttm,                      # 헤드라인 ROE(최근 4분기 ÷ 평균자본)
-        "ttm_window": f"{py}Q2~{cur}Q1" if ttm_np else None,
+        "ttm_window": ttm_label if ttm_np else None,
         "ttm_np_owner": ttm_np,
         "pbr_krx": None, "bps_krx": None,        # KRX 공식값(참고·대조용)
         "basis": "PER·EPS·PBR·BPS 모두 자체 산출(네이버·토스와 동일 방식) · 배당은 DART 공시 주당현금배당금(보완:KRX) ÷ 현재가",
