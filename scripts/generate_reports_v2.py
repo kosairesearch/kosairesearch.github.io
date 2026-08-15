@@ -30,6 +30,7 @@ ROOT = Path(__file__).resolve().parent.parent
 sys.path.insert(0, str(Path(__file__).resolve().parent))
 
 import generate_reports as g  # log/extract_text/collect_sources/load_stocks 재사용
+import check_report_text     # 생성 직후 금지 표현 검사(프롬프트가 못 막은 것)
 
 OUT_DIR = ROOT / "data" / "reports_v2"
 STATE_JS = ROOT / "data" / "batch_state_v2.json"
@@ -700,9 +701,22 @@ def build_prompt_v2(stock, quant, as_of):
 2. **재무 수치는 위 [확정 재무] JSON의 값만 사용하세요.** 검색에서 다른 수치가 나오면 위 값을 우선합니다. 거기 없는 숫자(예: 부문별 매출액)는 검색으로 확인된 것만 출처·시점과 함께 쓰고, 확인 안 되면 정성 서술로 대체하세요. 숫자를 절대 지어내지 마세요.
 3. earnings 섹션은 제공된 연간·분기 실적 수치(과거 확정치라 안 변함)를 구체적으로 인용·해석하세요. **valuation_comment 에서는 '현재 PER·PBR·배당수익률·현재가·시가총액'의 정확한 수치를 문장에 쓰지 마세요** — 이 값들은 주가 따라 매일 바뀌고 화면 카드가 실시간으로 표시합니다. 대신 그 수준을 '관계'로 서술하세요(예: "과거 거래 밴드(약 10~20배)의 상단을 웃돈다", "배당수익률은 업종 평균을 밑도는 편", "순자산 대비 프리미엄이 큰 구간"). 과거 PER 밴드, DPS, 다년 실적 추세는 인용해도 됩니다. **★ROE(자기자본이익률)는 절대 언급하지 마세요 — 서비스에서 제외된 지표입니다.** EPS·BPS는 [확정 재무]의 valuation.eps·bps(사용자 카드와 동일한 값)만 쓰고, 연도별 EPS 수치는 valuation_comment에 넣지 마세요(연간 실적 해설은 earnings 섹션에서). 다년 변화가 필요하면 "적자에서 흑자로 전환", "이익 회복" 처럼 방향으로만 표현하세요. 'TTM'·'선행/후행' 같은 용어와 '비싸다/싸다' 단정·매수/매도 권유는 금지.
 4. checkpoints 는 '다음에 무엇을 확인해야 하는가'입니다 — 다가오는 분기 실적 발표, 수주·증설·규제 이벤트 등 확인 가능한 일정 위주로.
-5. 균형: 강세·약세 요인을 같은 무게로. 투자의견·매수/매도·목표주가 표현 금지(정보 제공용).
+5. 균형: 강세·약세 요인을 같은 무게로. **우리(코사이)의 투자의견·매수/매도·목표주가는 절대 제시하지 말 것**(정보 제공용).
+5-0. **증권사 목표주가 인용은 허용** — 우리 의견이 아니라 '누가 무엇을 제시했다'는 사실이기 때문이다. 다만 아래 셋을 모두 지킬 때만 쓰고, 하나라도 못 지키면 아예 쓰지 말 것.
+   ① **출처와 시점을 함께** 쓴다 — "KB증권이 2026년 6월 리포트에서 …로 제시했다". 증권사명이나 시점 중 하나라도 확인되지 않으면 쓰지 않는다.
+   ② **우리 판단이 아님이 문장에서 분명**해야 한다 — 전달 동사("제시했다", "밝혔다", "전망했다")로 끝내고, 우리 voice로 동조하거나 평가하지 않는다.
+   ③ **6개월이 지난 것은 쓰지 않는다** — 낡은 목표주가를 현재형으로 옮기면 사실상 거짓이 된다. 시점이 오래됐으면 숫자 대신 정성 서술로 대체한다.
 5-1. **단정적 주가 방향성 금지(중립 필수)**: KOSAI는 등록된 투자자문업자가 아니다. "상승 여력(이 충분/크다)", "추가 상승 여지", "재평가 모멘텀이 온다", "조정 후 반등", "저평가라 오를 것", "매집 신호=강세" 같은 *주가가 오른다/내린다는 우리 자신의 단정·예측*은 절대 쓰지 말 것. 대신 사실과 강세 vs 약세 구도를 제시하고 판단은 독자에게 맡긴다. ㅇ 밸류에이션·방향성 의견은 *출처를 명시한 인용*으로만 허용("○○증권은 …라고 평가했다") — 이때도 우리 voice로 동조하지 말 것. ㅇ '상승 여력'은 *영업이익률·가동률·침투율·환원율 등 사업 지표*의 개선 여지에만 한정해 쓰고, *주가/밸류 멀티플*에는 쓰지 말 것. ㅇ 내부자·기관의 지분 매수는 '매집해서 오른다'가 아니라 사실(누가·언제·얼마)과 중립 해석으로만.
 6. 한국어(ko)/영어(en) 모두 작성. 영어에 한국어 혼입 금지.
+7. **전 섹션 공통 금지어** — 아래는 valuation_comment 뿐 아니라 lead·keypoints·business·earnings·industry·outlook·bull·bear·risks·checkpoints·verdict 어디에도 쓰지 말 것. (이 규칙이 valuation_comment 설명 안에만 있던 동안 다른 섹션으로 계속 새어 나왔다.)
+   · **ROE·자기자본이익률** — 서비스 화면에서 뺀 지표다. 화면에 없는 지표가 글에만 나오면 독자가 찾을 곳이 없다. 수익성을 말해야 하면 영업이익률로 쓴다.
+   · **'TTM'·'선행 PER'·'후행 PER'** — 일반 독자가 모르는 용어다. 꼭 필요하면 "최근 네 개 분기 기준"처럼 풀어 쓴다.
+   · **'저평가/고평가' 단정** — "저평가된 상태다", "고평가 구간이다", "제값을 못 받고 있다" 같은 가치 판단은 쓰지 않는다. 사실 비교는 된다.
+        (O) "주가순자산비율이 과거 5년 밴드의 하단에 있다"
+        (O) "동종업계 평균을 밑도는 배수에서 거래된다"
+        (X) "저평가된 상태가 지속되고 있다"
+   · 매수·매도 권유, "지금이 기회" "담을 만하다" 류의 표현.
+   면책 문구에서 이 단어들을 쓰는 것("매수·매도 의견을 포함하지 않는다")은 예외다.
 6-1. **한자를 섞지 말 것**: '전년比'→'전년 대비', '삼성디스플레이向'→'삼성디스플레이 대상', '데이터센터發'→'데이터센터발', '美/中/日'→'미국/중국/일본', 'A社'→'A사'. 한자를 읽지 못하는 독자가 많다. 한국어 뒤 괄호 병기('상저하고(上低下高)')만 예외.
 
 [출력 형식]
@@ -951,7 +965,7 @@ def collect(cl, as_of):
     now = datetime.datetime.now(datetime.timezone(datetime.timedelta(hours=9)))
     OUT_DIR.mkdir(parents=True, exist_ok=True)
 
-    ok, fail, done = 0, 0, []
+    ok, fail, done, flagged = 0, 0, [], []
     for result in cl.messages.batches.results(batch_id):
         tk = result.custom_id
         if result.result.type != "succeeded":
@@ -982,6 +996,21 @@ def collect(cl, as_of):
                 "dataDate": data.get("dataDate", ""),
                 "quant": state["quant"].get(tk, {}),
             })
+            # 금지 표현 검사 — 프롬프트는 부탁이지 강제가 아니다. 실제로 2,563개 중
+            # 96개(3.7%)가 금지해 둔 표현을 담고 있었다. 여기서 걸러 로그에 남기면
+            # 어느 종목을 다시 만들어야 하는지 run 로그만 보고 알 수 있다.
+            # 리포트는 그대로 쓴다 — 글 하나 때문에 종목을 통째로 비우는 게 더 나쁘다.
+            try:
+                bad_text = check_report_text.check(rep)
+            except Exception:
+                bad_text = []
+            if bad_text:
+                flagged.append(tk)
+                kinds = sorted({h["rule"] for h in bad_text})
+                risky = any(h["level"] == "위험" for h in bad_text)
+                log(f"  · {'🚫' if risky else '⚠️'} {tk} 금지 표현 {len(bad_text)}건 "
+                    f"({', '.join(kinds)}) — {bad_text[0]['sentence'][:70]}")
+
             (OUT_DIR / f"{tk}.json").write_text(
                 json.dumps(rep, ensure_ascii=False, indent=1), encoding="utf-8")
             done.append(tk)
@@ -994,6 +1023,8 @@ def collect(cl, as_of):
     # → 워치독이 reindex(단일 직렬)로 전체 v2에서 재생성한다. 이 run은 자기 종목 JSON만 커밋.
     have = sorted(p.stem for p in OUT_DIR.glob("*.json") if p.stem.isdigit())
     log(f"\n✅ v2 회수 완료 · 성공 {ok}/실패 {fail} → data/reports_v2/ ({len(have)}개)")
+    if flagged:
+        log(f"⚠️ 금지 표현이 남은 {len(flagged)}개 — 다시 만들 대상: {','.join(flagged)}")
     return True
 
 
