@@ -4,34 +4,22 @@
 <meta charset="utf-8" />
 <meta name="referrer" content="strict-origin-when-cross-origin" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
-<title>KOSAI — 한국 상장사 AI 리서치</title>
-<meta name="description" content="코스피·코스닥 2,700여 개 전 종목 AI 분석 리포트 — 증권사가 다루지 않는 소형주까지. 재무·뉴스·밸류에이션을 한 페이지에서." />
-<meta name="naver-site-verification" content="f8f4b5b432258c81a7635ea2fabc0ab0f967b885" />
-<link rel="canonical" href="https://kosai.kr/" />
+<title>모닝 브리핑 · KOSAI</title>
+<meta name="description" content="코스피·코스닥 전 종목을 대상으로 매일 아침 정리하는 시장 브리핑. 코사이가 커버하는 종목에 어제 무슨 일이 있었는지 전합니다." />
+<link rel="canonical" href="https://kosai.kr/brief.html" />
 <meta property="og:type" content="website" />
 <meta property="og:site_name" content="KOSAI" />
 <meta property="og:locale" content="ko_KR" />
-<meta property="og:title" content="KOSAI — 한국 상장사 AI 리서치" />
-<meta property="og:description" content="코스피·코스닥 2,700여 개 전 종목 AI 분석 리포트 — 증권사가 다루지 않는 소형주까지. 재무·뉴스·밸류에이션을 한 페이지에서." />
-<meta property="og:url" content="https://kosai.kr/" />
+<meta property="og:title" content="모닝 브리핑 — KOSAI" />
+<meta property="og:description" content="코스피·코스닥 전 종목을 대상으로 매일 아침 정리하는 시장 브리핑." />
+<meta property="og:url" content="https://kosai.kr/brief.html" />
 <meta property="og:image" content="https://kosai.kr/assets/og-image.png?v=3" />
 <meta property="og:image:width" content="1200" />
 <meta property="og:image:height" content="630" />
 <meta name="twitter:card" content="summary_large_image" />
-<meta name="twitter:title" content="KOSAI — 한국 상장사 AI 리서치" />
-<meta name="twitter:description" content="코스피·코스닥 2,700여 개 전 종목 AI 분석 리포트 — 증권사가 다루지 않는 소형주까지. 재무·뉴스·밸류에이션을 한 페이지에서." />
+<meta name="twitter:title" content="모닝 브리핑 — KOSAI" />
+<meta name="twitter:description" content="코스피·코스닥 전 종목을 대상으로 매일 아침 정리하는 시장 브리핑." />
 <meta name="twitter:image" content="https://kosai.kr/assets/og-image.png?v=3" />
-<script type="application/ld+json">
-{"@context":"https://schema.org","@graph":[
- {"@type":"Organization","@id":"https://kosai.kr/#org","name":"KOSAI",
-  "url":"https://kosai.kr/","logo":"https://kosai.kr/assets/favicon.png",
-  "contactPoint":{"@type":"ContactPoint","email":"hello@kosai.kr","contactType":"customer support"}},
- {"@type":"WebSite","@id":"https://kosai.kr/#website","name":"KOSAI",
-  "alternateName":"코사이","url":"https://kosai.kr/",
-  "description":"코스피·코스닥 2,700여 개 전 종목 AI 분석 리포트",
-  "publisher":{"@id":"https://kosai.kr/#org"},"inLanguage":"ko"}
-]}
-</script>
 <style>
 @font-face{font-family:"Pretendard";font-weight:400;font-style:normal;font-display:swap;src:url("fonts/Pretendard-Regular.woff2") format("woff2"), url("fonts/Pretendard-Regular.otf") format("opentype")}
 @font-face{font-family:"Pretendard";font-weight:500;font-style:normal;font-display:swap;src:url("fonts/Pretendard-Medium.woff2") format("woff2"), url("fonts/Pretendard-Medium.otf") format("opentype")}
@@ -128,6 +116,10 @@ main{flex:1;padding:8px 0 64px}
 .field input::placeholder,.field textarea::placeholder{color:var(--fg-3)}
 .field input:focus,.field textarea:focus{border-color:var(--fg-1)}
 :root[data-theme="dark"] .field input:focus,:root[data-theme="dark"] .field textarea:focus{border-color:rgba(255,255,255,.5)}
+.field input.invalid,.field textarea.invalid{border-color:#e5383b}
+:root[data-theme="dark"] .field input.invalid,:root[data-theme="dark"] .field textarea.invalid{border-color:#ff6b6e}
+.field-err{display:none;margin:7px 0 0;font:600 12px/1.4 var(--font-sans);color:#c0282b}
+:root[data-theme="dark"] .field-err{color:#ff8a8c}
 
 /* category segmented */
 .seg{display:flex;gap:6px;flex-wrap:wrap}
@@ -426,44 +418,6 @@ KOSi18n.register({
 :root[lang="en"]{--up:#1f9d57;--down:#e5383b;--up-soft:rgba(31,157,87,0.10);--down-soft:rgba(229,56,59,0.10)}
 :root[lang="en"][data-theme="dark"]{--up:#3ddc84;--down:#ff5b5e;--up-soft:rgba(61,220,132,0.12);--down-soft:rgba(255,91,94,0.12)}
 </style>
-<style id="auth-css">
-.auth-card{max-width:424px;margin:0 auto;padding:30px 30px 28px}
-.social{display:flex;flex-direction:column;gap:10px}
-.social .sbtn{display:flex;align-items:center;justify-content:center;gap:10px;width:100%;
-  border-radius:var(--radius-md);padding:13px 16px;font:600 14.5px var(--font-sans);
-  cursor:pointer;border:1px solid var(--border-2);background:rgba(255,255,255,.7);color:var(--fg-1);
-  transition:filter .15s,transform .12s,background .15s}
-.social .sbtn:hover{filter:brightness(.98)}
-.social .sbtn:active{transform:scale(.99)}
-.social .sbtn svg{width:18px;height:18px;flex:none}
-.sbtn.google{background:#fff;color:#1f1f1f;border-color:#dadce0}
-.sbtn.kakao{background:#FEE500;color:#191600;border-color:transparent}
-.sbtn.naver{background:#03C75A;color:#fff;border-color:transparent}
-.social-ko{display:flex}
-:root[lang="en"] .social-ko{display:none}
-.divider{display:flex;align-items:center;gap:12px;margin:18px 0;color:var(--fg-3);font:500 12px var(--font-sans)}
-.divider::before,.divider::after{content:"";flex:1;height:1px;background:var(--border-2)}
-.auth-err{display:none;margin:0 0 14px;padding:11px 14px;border-radius:var(--radius-md);
-  background:rgba(229,56,59,.08);border:1px solid rgba(229,56,59,.25);color:#c0282b;
-  font:500 13px/1.5 var(--font-sans)}
-:root[data-theme="dark"] .auth-err{color:#ff8a8c;background:rgba(229,56,59,.12)}
-.auth-note{display:none;margin:0 0 14px;padding:11px 14px;border-radius:var(--radius-md);
-  background:rgba(13,105,212,.07);border:1px solid rgba(13,105,212,.2);color:var(--fg-2);
-  font:500 12.5px/1.55 var(--font-sans)}
-:root[data-theme="dark"] .auth-note{background:rgba(95,168,255,.1);border-color:rgba(95,168,255,.25)}
-.auth-foot{margin:18px 0 0;text-align:center;font:400 13.5px var(--font-sans);color:var(--fg-3)}
-.auth-foot a{color:var(--brand-blue);font-weight:600;text-decoration:none}
-.auth-foot a:hover{text-decoration:underline}
-:root[data-theme="dark"] .auth-foot a{color:var(--brand-cyan)}
-.forgot{display:block;text-align:right;margin:-4px 0 0;font:500 12.5px var(--font-sans);color:var(--fg-3);text-decoration:none}
-.forgot:hover{color:var(--fg-1)}
-.agree{display:flex;gap:9px;align-items:flex-start;margin:2px 0 4px;font:400 12.5px/1.5 var(--font-sans);color:var(--fg-2)}
-.agree input{margin-top:2px;width:15px;height:15px;flex:none;accent-color:var(--brand-blue)}
-.agree a{color:var(--brand-blue);text-decoration:none}
-.agree a:hover{text-decoration:underline}
-:root[data-theme="dark"] .agree a{color:var(--brand-cyan)}
-.auth-card .submit-row{margin-top:18px}
-</style>
 <style>
 /* KOSAI 로고 (테마별 자동 전환) */
 .brand-logo{height:12px;width:auto;display:block}
@@ -473,61 +427,10 @@ KOSi18n.register({
 .foot-brand .brand-logo{height:14px}
 @media(max-width:640px){.brand-logo{height:11px}}
 </style>
-<link rel="icon" type="image/png" sizes="512x512" href="assets/favicon.png?v=k2">
+<link rel="icon" type="image/svg+xml" href="assets/kosai-icon-dark.svg?v=k2">
+  <link rel="icon" type="image/png" sizes="512x512" href="assets/favicon.png?v=k2">
 <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon.png?v=k2">
 <link rel="apple-touch-icon" sizes="180x180" href="assets/apple-touch-icon.png?v=k2">
-<style>
-/* landing — Resend풍 다크 스튜디오 (이 페이지는 항상 다크) */
-#themeBtn{display:none}
-.lp-bg{position:absolute;top:0;left:0;right:0;bottom:0;z-index:-3;background:
-  radial-gradient(ellipse 85% 65% at 62% 40%, #0c1424 0%, #060a14 55%, #02030a 100%)}
-.lp-bg canvas{position:absolute;inset:0;width:100%;height:100%;display:block}
-.lp-vignette{position:absolute;top:0;left:0;right:0;height:100vh;z-index:-2;pointer-events:none;background:
-  radial-gradient(ellipse 72% 92% at 8% 34%, rgba(2,3,8,.55) 0%, transparent 64%)}
-.lp-grain{position:absolute;top:0;left:0;right:0;bottom:0;z-index:-1;pointer-events:none;opacity:.08;
-  background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='160' height='160'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='2'/%3E%3C/filter%3E%3Crect width='160' height='160' filter='url(%23n)' opacity='.6'/%3E%3C/svg%3E")}
-body{position:relative;background:
-  radial-gradient(ellipse 640px 420px at 72% 320px, rgba(56,82,148,.34) 0%, rgba(30,46,88,.12) 45%, transparent 70%),
-  radial-gradient(ellipse 900px 240px at 50% -60px, rgba(64,90,150,.18) 0%, transparent 60%),
-  radial-gradient(ellipse 1000px 640px at 28% 88%, rgba(40,58,108,.16) 0%, transparent 70%),
-  linear-gradient(180deg,#0a1120 0%, #070b16 45%, #060a14 100%)}
-body::after,body::before{display:none}
-
-.lp-hero{display:grid;grid-template-columns:1.04fr 1fr;align-items:center;gap:18px;min-height:calc(100vh - 190px);padding:14px 0 40px}
-.lp-copy{max-width:560px}
-.lp-kick{font:700 12px var(--font-sans);letter-spacing:.16em;color:rgba(255,255,255,.45);margin-bottom:16px}
-.lp-h1{margin:0;font-size:clamp(36px,5vw,58px);font-weight:800;letter-spacing:-.04em;line-height:1.07;color:#fff;text-shadow:0 2px 22px rgba(0,0,0,.6)}
-.lp-sub{margin:20px 0 0;font:400 17px/1.7 var(--font-sans);color:rgba(255,255,255,.66);max-width:450px;text-wrap:pretty}
-.lp-cta{display:flex;gap:10px;margin-top:30px;flex-wrap:wrap}
-.lp-btn{position:relative;overflow:hidden;padding:15px 26px;font-size:15px;text-decoration:none;
-  transition:box-shadow .4s cubic-bezier(.22,.61,.36,1),transform .25s cubic-bezier(.22,.61,.36,1),background .25s,border-color .25s,filter .25s}
-/* 시작하기(화이트) — 호버 시 빛 무리 + 리프트 + 셔머 스윕 */
-.lp-cta .btn-primary{box-shadow:0 0 0 0 rgba(255,255,255,0)}
-.lp-cta .btn-primary:hover{transform:translateY(-1px);
-  box-shadow:0 2px 22px rgba(255,255,255,.34),0 6px 60px rgba(150,185,255,.28),0 0 0 1px rgba(255,255,255,.25)}
-.lp-cta .btn-primary::after{content:"";position:absolute;top:0;left:-90%;width:55%;height:100%;
-  background:linear-gradient(100deg,transparent 18%,rgba(173,200,255,.5) 50%,transparent 82%);
-  transform:skewX(-18deg);opacity:0;pointer-events:none;transition:none}
-.lp-cta .btn-primary:hover::after{opacity:1;left:130%;transition:left .6s cubic-bezier(.22,.61,.36,1),opacity .15s}
-/* 리포트 둘러보기(글래스) — 호버 시 점등 */
-.lp-btn-soft{background:rgba(255,255,255,.07);color:#fff;border:1px solid rgba(255,255,255,.16);-webkit-backdrop-filter:blur(8px);backdrop-filter:blur(8px)}
-.lp-btn-soft:hover{background:rgba(255,255,255,.13);border-color:rgba(255,255,255,.34);transform:translateY(-1px);
-  box-shadow:0 2px 18px rgba(255,255,255,.10),0 4px 40px rgba(150,185,255,.12)}
-.lp-btn:focus-visible{outline:2px solid rgba(173,200,255,.7);outline-offset:2px}
-.lp-stats{display:flex;gap:36px;margin-top:42px;flex-wrap:wrap}
-.lp-stat b{display:block;font:800 22px/1 var(--font-sans);letter-spacing:-.02em;color:#fff}
-.lp-stat span{display:block;margin-top:6px;font:500 12.5px var(--font-sans);color:rgba(255,255,255,.45)}
-.lp-stage{align-self:stretch;min-height:480px;cursor:grab;touch-action:pan-y}
-.lp-stage.drag{cursor:grabbing}
-@media (max-width:920px){
-  .lp-hero{grid-template-columns:1fr;min-height:calc(100vh - 150px);text-align:center;gap:0}
-  .lp-copy{max-width:none;margin:0 auto}
-  .lp-sub{margin-left:auto;margin-right:auto}
-  .lp-cta{justify-content:center}
-  .lp-stats{justify-content:center;gap:26px}
-  .lp-stage{order:-1;min-height:250px;max-height:280px;cursor:default;touch-action:auto}
-}
-</style>
   <script src="analytics.js"></script>
 <script>
 /* i18n: title·aria-label 속성 번역(영어 모드). 동적(data-i18n-skip) 영역은 각 페이지 템플릿의 T()가 담당 */
@@ -552,14 +455,37 @@ body::after,body::before{display:none}
   KOSi18n.register(D, fix);
 })();
 </script>
+
+<style>
+/* ── 모닝 브리핑 ─────────────────────────────────────────
+   글이 주인공인 화면이다. 읽는 폭을 좁게 잡고 행간을 넉넉히 둔다. */
+.mb{max-width:720px;margin:0 auto;padding:8px 0 56px}
+.mb-head{padding-bottom:26px;margin-bottom:30px;border-bottom:1px solid var(--hair)}
+.mb-date{font:600 13px var(--font-sans);color:var(--accent,#b4341f);letter-spacing:.02em;margin-bottom:10px}
+.mb-head h1{margin:0 0 16px;font:600 clamp(26px,4.4vw,38px)/1.22 var(--font-sans);color:var(--fg-1);letter-spacing:-.02em}
+.mb-lead{margin:0 0 14px;font:400 17.5px/1.62 var(--font-sans);color:var(--fg-1);text-wrap:pretty}
+.mb-meta{font:400 13px var(--font-sans);color:var(--fg-3)}
+.mb-sec{margin:0 0 34px}
+.mb-sec h2{margin:0 0 14px;font:600 15px var(--font-sans);color:var(--fg-2);
+  letter-spacing:.02em;padding-bottom:8px;border-bottom:1px solid var(--hair)}
+.mb-sec p{margin:0 0 15px;font:400 16px/1.78 var(--font-sans);color:var(--fg-1);text-wrap:pretty}
+.mb-sec p:last-child{margin-bottom:0}
+.mb-sec a{color:var(--fg-1);text-decoration:none;border-bottom:1px solid var(--hair);
+  transition:border-color .15s}
+.mb-sec a:hover{border-bottom-color:var(--fg-1)}
+.mb-sec b{font-weight:600}
+.mb-disc{margin:34px 0 0;padding-top:18px;border-top:1px solid var(--hair);
+  font:400 13px/1.7 var(--font-sans);color:var(--fg-3)}
+@media (max-width:640px){
+  .mb-sec p{font-size:15.5px}
+  .mb-lead{font-size:16.5px}
+}
+</style>
 </head>
 <body>
-<div class="lp-bg"><canvas id="lpCanvas"></canvas></div>
-<div class="lp-vignette"></div>
-<div class="lp-grain"></div>
 
-<nav class="nav glass" data-screen-label="Contact · Nav">
-  <a class="brand" href="/"><img class="brand-logo brand-logo--light" src="assets/kosai-wordmark-black.png" alt="KOSAI" width="148" height="24"><img class="brand-logo brand-logo--dark" src="assets/kosai-wordmark-white.png" alt="KOSAI" width="148" height="24"></a>
+<nav class="nav glass" data-screen-label="Brief · Nav">
+  <a class="brand" href="Home.html"><img class="brand-logo brand-logo--light" src="assets/kosai-wordmark-black.png" alt="KOSAI" width="148" height="24"><img class="brand-logo brand-logo--dark" src="assets/kosai-wordmark-white.png" alt="KOSAI" width="148" height="24"></a>
   <div class="nav-links">
     <a href="Home.html">홈</a>
     <a href="Reports.html">리포트</a>
@@ -567,7 +493,7 @@ body::after,body::before{display:none}
     <a href="Screener.html">스크리너</a>
     <a href="Watchlist.html">워치리스트</a>
     <a href="pricing.html">멤버십</a>
-    <a href="brief.html">모닝브리핑</a>
+    <a href="brief.html" class="active">모닝브리핑</a>
   </div>
   <div class="nav-spacer"></div>
   <button class="icon-btn" id="themeBtn" aria-label="테마 전환" title="라이트/다크 전환">
@@ -584,37 +510,64 @@ body::after,body::before{display:none}
   <a href="Screener.html">스크리너</a>
   <a href="Watchlist.html">워치리스트</a>
   <a href="pricing.html">멤버십</a>
-  <a href="brief.html">모닝브리핑</a>
+  <a href="brief.html" class="active">모닝브리핑</a>
 </div>
 
+<div class="wrap" data-screen-label="10 Morning Brief">
+  <div class="crumb"><a href="Home.html">홈</a> / <b>모닝 브리핑</b></div>
 
-<main>
-  <div class="wrap">
-    <section class="lp-hero">
-      <div class="lp-copy">
-        <div class="lp-kick">EVERY KOREAN STOCK · AI RESEARCH</div>
-        <h1 class="lp-h1">한국 주식 전 종목,<br>AI 리서치로 한눈에</h1>
-        <p class="lp-sub">증권사가 다루지 않는 소형주까지, 코스피·코스닥 2,700여 개 전 종목을 AI가 분석합니다. 재무·뉴스·밸류에이션을 한 페이지에.</p>
-        <div class="lp-cta">
-          <a class="btn btn-primary lp-btn" href="Home.html">시작하기</a>
-          <a class="btn lp-btn lp-btn-soft" href="Reports.html">리포트 둘러보기</a>
-        </div>
-        <div class="lp-stats">
-          <div class="lp-stat"><b id="lpRepN" data-i18n-skip>2,684</b><span>AI 리포트</span></div>
-          <div class="lp-stat"><b>29개</b><span>업종 분석</span></div>
-          <div class="lp-stat"><b>매 거래일</b><span>데이터 갱신</span></div>
-        </div>
-      </div>
-      <div class="lp-stage" id="lpStage" aria-hidden="true"></div>
+  <article class="mb">
+    <header class="mb-head">
+      <div class="mb-date">2026년 8월 17일 (월)</div>
+      <h1>거래는 반도체, 상승은 자동차</h1>
+      <p class="mb-lead">지수를 끌어올린 것은 자동차와 통신이었고 거래는 반도체에 몰렸다. 오른 종목은 많았지만 대다수는 제자리였다.</p>
+      <div class="mb-meta">8월 14일(금) 장 기준 · 8월 15일 광복절, 16일 일요일 휴장</div>
+    </header>
+
+    <section class="mb-sec">
+      <h2>어제 시장</h2>
+      <p>8월 14일 국내 증시는 시가총액 가중 기준 2.31% 올랐다. 다만 개별 종목의 중앙값은 0.38% 상승에 그쳐, 지수를 끌어올린 힘이 소수 대형주에 몰려 있었음을 보여준다. 상승 1,518종목, 하락 941종목, 보합 226종목으로 상승이 우세했지만 폭이 넓지는 않았다.</p>
+      <p>상승 종목이 하락 종목의 1.6배였지만 중앙값이 0.4%에 그친 것은, 오른 종목 상당수가 소폭 상승에 머물렀다는 뜻이다. 시가총액 가중 수치와 중앙값이 2%포인트 가까이 벌어진 날은 대체로 지수와 체감이 어긋난다.</p>
+      <p>거래는 반도체에 집중됐다. SK하이닉스가 7조4,897억원, 삼성전자가 5조8,745억원으로 거래대금 1·2위를 차지했다. 그러나 상승률은 각각 3.26%와 2.43%로 시장 평균을 크게 웃돌지 못했다. 돈이 몰린 곳과 실제로 오른 곳이 달랐던 하루다.</p>
     </section>
-  </div>
-</main>
+
+    <section class="mb-sec">
+      <h2>업종 흐름</h2>
+      <p>자동차가 시가총액 가중 6.05%로 가장 크게 올랐다. 현대차가 8.24%, 현대모비스가 7.05%, 현대오토에버가 9.02% 오르며 현대차그룹 전반이 함께 움직였다. 통신이 6.01%로 뒤를 이었는데 <a href="stock.html?ticker=017670">SK텔레콤</a> 한 종목이 10.32% 오르며 업종을 끌었다. 정유 5.24%, 보험 3.48%, 조선 3.08% 순으로 상승 폭이 컸다.</p>
+      <p>반대편에서는 항공·방산이 1.35% 내렸다. <a href="stock.html?ticker=012450">한화에어로스페이스</a> 2.11%, LIG디펜스앤에어로스페이스 2.63%, <a href="stock.html?ticker=047810">한국항공우주</a> 3.17% 하락으로 주요 종목이 모두 밀렸다. 철강·금속이 1.37%, 전기장비가 1.00% 내렸고 <a href="stock.html?ticker=010130">고려아연</a>은 3.00%, LS ELECTRIC은 3.50% 하락했다.</p>
+    </section>
+
+    <section class="mb-sec">
+      <h2>코사이 커버리지에서 확인된 것</h2>
+
+      <p>현대차그룹 3사가 함께 오른 것이 이날 가장 두드러진 움직임이었다. 코사이는 8월 14일 반기보고서 반영분으로 세 종목의 리포트를 모두 새로 작성했다. <a href="stock.html?ticker=005380">현대차</a> 리포트는 하이브리드 중심 믹스와 환율로 매출은 사상 최대 흐름을 이어가는 반면, 미국 관세와 원자재·인센티브 부담으로 영업이익률이 6%대 초반까지 내려온 국면으로 정리했다. 확인 지점으로는 10월 하순 3분기 실적 발표에서 영업이익률이 회사 가이던스 범위인 6.3~7.3%에 재진입하는지를 지목했다. 이날 주가 움직임과 이 지표는 아직 연결되지 않는다.</p>
+
+      <p><a href="stock.html?ticker=012330">현대모비스</a>도 7.05% 올랐다. 코사이 리포트는 2025년 매출 61조1,181억원·영업이익 3조3,575억원으로 외형과 이익을 함께 키웠지만, 이익의 대부분이 고마진 애프터서비스 부문에서 나오고 모듈·핵심부품 마진은 여전히 얇다는 구조가 그대로 남아 있다고 봤다. 확인 지점은 10월 말 3분기 실적 발표에서 메모리 반도체·물류비 상승분을 판매가격 인상과 고객사 비용 정산으로 얼마나 상쇄했는지, 그리고 2분기 0.2% 수준이던 모듈·핵심부품 영업이익률이 어느 방향으로 움직였는지다.</p>
+
+      <p><a href="stock.html?ticker=307950">현대오토에버</a>는 코사이가 적어 둔 확인 지점 하나가 이번 달 안에 걸려 있다. 현대차 차세대 ERP 본사 및 미주 롤인 프로젝트가 8월 말 마무리될 예정인데, 프로젝트 종료 이후 생기는 시스템통합(SI) 매출 공백을 아시아·태평양·유럽 롤인과 클라우드 매출이 얼마나 메우는지가 관건이다. 이 종목은 이날 9.02% 올라 시가총액 1조원 이상 종목 가운데 상승률 2위를 기록했다.</p>
+
+      <p>SK텔레콤은 10.32% 올라 대형주 중 가장 큰 폭으로 상승했다. 코사이 리포트는 2025년 해킹 사고 비용이 집중된 저점을 지나 2026년 상반기 이익이 사고 이전 수준으로 되돌아온 국면으로 봤다. 다음 확인 지점은 10월 시행 예정인 최적요금제 고지 제도로, 제도 시행 이후 요금제 하향 이동 규모가 무선 매출과 가입자당 평균 매출에 어떤 영향을 주는지 지켜볼 대목이다.</p>
+
+      <p>방산 3사는 나란히 밀렸다. 코사이는 이날 하락을 설명할 만한 공시나 실적 변경을 따로 확인하지 않았다. 다만 한화에어로스페이스에 대해서는 이번 달 안에 결과가 나올 것으로 예상되는 확인 지점을 리포트에 적어 두었고, 그 내용은 아래에 정리했다.</p>
+    </section>
+
+    <section class="mb-sec">
+      <h2>앞으로 볼 것</h2>
+      <p>이번 주에는 코사이가 리포트에 적어 둔 확인 지점 세 개가 걸려 있다.</p>
+      <p><b>8월 20일 · 고려아연 2분기 배당 기준일.</b> 지급 예정일은 9월 4일이며, 분기 배당의 실제 집행 여부는 회사가 제시한 총주주환원율 40% 이상 목표의 이행 정도를 가늠하는 지표가 된다. 고려아연은 9월 9일 임시주주총회에서 감사위원이 되는 독립이사 1명을 포함해 독립이사 5명을 선임할 예정이어서, 배당과 지배구조 두 사안이 연달아 놓여 있다.</p>
+      <p><b>8월 중 · 한화에어로스페이스 미국 자주포 현대화 사업.</b> 회사가 8월 중 발표를 예상한다고 밝힌 우선협상대상자 선정 결과다. 양산 500문·사업비 10조원 규모로 추산되는 사업이라 결과에 따라 중장기 수주 구조에 대한 전제가 달라질 수 있다.</p>
+      <p><b>8월 말 · 현대오토에버 차세대 ERP 프로젝트 종료.</b> 현대차 본사 및 미주 롤인 프로젝트가 마무리될 예정이다. 종료 이후 SI 매출의 공백이 얼마나 메워지는지는 3분기 실적에서 드러난다.</p>
+    </section>
+
+    <p class="mb-disc">본 자료는 공시(DART)·시장 데이터(KRX)를 바탕으로 자동 생성된 정보 제공 자료이며 투자 권유가 아닙니다. 수치는 2026년 8월 14일 종가 기준입니다.</p>
+  </article>
+</div>
 
 <footer class="foot">
   <div class="wrap">
     <div class="foot-inner glass">
       <div class="foot-grid">
-        <div class="foot-brand"><a class="brand" href="/"><img class="brand-logo brand-logo--light" src="assets/kosai-wordmark-black.png" alt="KOSAI" width="148" height="24"><img class="brand-logo brand-logo--dark" src="assets/kosai-wordmark-white.png" alt="KOSAI" width="148" height="24"></a><p>한국 상장사를 위한 AI 투자 리서치. 데이터와 분석을 한 페이지에.</p></div>
+        <div class="foot-brand"><a class="brand" href="Home.html"><img class="brand-logo brand-logo--light" src="assets/kosai-wordmark-black.png" alt="KOSAI" width="148" height="24"><img class="brand-logo brand-logo--dark" src="assets/kosai-wordmark-white.png" alt="KOSAI" width="148" height="24"></a><p>한국 상장사를 위한 AI 투자 리서치. 데이터와 분석을 한 페이지에.</p></div>
         <div class="foot-col"><h4>서비스</h4><ul><li><a href="Home.html">홈</a></li><li><a href="Reports.html">리포트</a></li><li><a href="industry.html">업종별</a></li><li><a href="Screener.html">스크리너</a></li><li><a href="Watchlist.html">워치리스트</a></li><li><a href="pricing.html">멤버십</a></li><li><a href="brief.html">모닝브리핑</a></li></ul></div>
         <div class="foot-col"><h4>회사</h4><ul><li><a href="About.html">About</a></li><li><a href="Contact.html">문의하기</a></li><li><a href="Feedback.html">피드백</a></li></ul></div>
         <div class="foot-col"><h4>정책</h4><ul><li><a href="Terms.html">이용약관</a></li><li><a href="Privacy.html">개인정보처리방침</a></li></ul></div>
@@ -635,6 +588,39 @@ body::after,body::before{display:none}
 </footer>
 
 <script>
+const catSeg=document.getElementById('catSeg');
+catSeg.addEventListener('click',e=>{const b=e.target.closest('button');if(!b)return;[...catSeg.children].forEach(c=>c.classList.toggle('active',c===b));});
+function _t(m){ return window.KOSi18n ? window.KOSi18n.t(m) : m; }
+function fldErr(el,msg){ el.classList.add('invalid'); const f=el.closest('.field'); let e=f.querySelector('.field-err'); if(!e){ e=document.createElement('div'); e.className='field-err'; f.appendChild(e); } e.textContent=msg; e.style.display='block'; }
+function fldClear(el){ el.classList.remove('invalid'); const e=el.closest('.field').querySelector('.field-err'); if(e) e.style.display='none'; }
+['f-name','f-email','f-msg'].forEach(id=>{ const el=document.getElementById(id); if(el) el.addEventListener('input',()=>fldClear(el)); });
+document.getElementById('form').addEventListener('submit',async e=>{
+  e.preventDefault();
+  const name=document.getElementById('f-name'), email=document.getElementById('f-email'), msg=document.getElementById('f-msg');
+  let bad=null;
+  const ev=email.value.trim();
+  if(!ev){ fldErr(email,_t('이메일을 입력해 주세요.')); bad=bad||email; }
+  else if(!/^[^@\s]+@[^@\s]+\.[^@\s]+$/.test(ev)){ fldErr(email,_t('올바른 이메일 형식이 아니에요.')); bad=bad||email; }
+  else fldClear(email);
+  const mv=msg.value.trim();
+  if(!mv){ fldErr(msg,_t('문의 내용을 입력해 주세요.')); bad=bad||msg; }
+  else if(mv.length<5){ fldErr(msg,_t('내용을 조금 더 자세히 입력해 주세요.')); bad=bad||msg; }
+  else fldClear(msg);
+  if(bad){ bad.focus(); return; }
+  const btn=document.querySelector('#form button[type="submit"]'); if(btn) btn.disabled=true;
+  const cat=(catSeg.querySelector('.active')||{}).dataset;
+  try{
+    if(!window.KOSsubmitForm) throw new Error('not-ready');
+    await window.KOSsubmitForm({ kind:'contact', name:name.value.trim(), email:ev,
+      category:(cat&&cat.cat)||'', message:msg.value.trim(), hp:(document.getElementById('hp')||{}).value||'' });
+    document.getElementById('form').style.display='none';
+    document.getElementById('sent').classList.add('show');
+    window.scrollTo({top:0,behavior:'smooth'});
+  }catch(err){
+    if(btn) btn.disabled=false;
+    fldErr(msg,_t('전송에 실패했어요. 잠시 후 다시 시도하거나 hello@kosai.kr로 보내주세요.'));
+  }
+});
 const menuBtn=document.getElementById('menuBtn'),mobileMenu=document.getElementById('mobileMenu');
 menuBtn.addEventListener('click',()=>mobileMenu.classList.toggle('open'));
 mobileMenu.querySelectorAll('a').forEach(a=>a.addEventListener('click',()=>mobileMenu.classList.remove('open')));
@@ -642,314 +628,26 @@ const root=document.documentElement,themeBtn=document.getElementById('themeBtn')
 const sunSVG='<circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"/>';
 const moonSVG='<path d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8z"/>';
 function applyTheme(t){root.setAttribute('data-theme',t);document.getElementById('themeIcon').innerHTML=t==='dark'?sunSVG:moonSVG;try{localStorage.setItem('kos-theme',t)}catch(e){}}
-root.setAttribute('data-theme','dark'); // 랜딩은 항상 다크(사이트 테마 설정은 보존)
+let saved='dark';try{saved=localStorage.getItem('kos-theme')||'dark'}catch(e){}
+applyTheme(saved);
+themeBtn.addEventListener('click',()=>applyTheme(root.getAttribute('data-theme')==='dark'?'light':'dark'));
 
-</script>
-
-<script>
 if(window.KOSi18n) KOSi18n.register({
-  "한국 주식 전 종목,":"Every Korean stock,",
-  "AI 리서치로 한눈에":"one AI research view",
-  "증권사가 다루지 않는 소형주까지, 코스피·코스닥 2,700여 개 전 종목을 AI가 분석합니다. 재무·뉴스·밸류에이션을 한 페이지에.":"AI analysis of all 2,700+ KOSPI & KOSDAQ stocks — including the small caps brokerage research skips. Financials, news, and valuation on one page.",
-  "시작하기":"Get started",
-  "리포트 둘러보기":"Browse reports",
-  "AI 리포트":"AI reports","업종 분석":"Sector analyses","29개":"29","매 거래일":"Every trading day","데이터 갱신":"Data refresh"
+  "문의하기":"Contact",
+  "서비스 의견·협업 제안·데이터 오류 제보를 보내주세요. 영업일 기준 2~3일 내에 답변드립니다.":"Send service feedback, partnership proposals, or data error reports. We respond within 2–3 business days.",
+  "문의 유형":"Inquiry type","일반 문의":"General","데이터 오류 제보":"Data error report","협업·제휴":"Partnership",
+  "이름":"Name","이메일":"Email","문의 내용":"Message","문의 보내기":"Send inquiry",
+  "이름을 입력해 주세요.":"Please enter your name.","이메일을 입력해 주세요.":"Please enter your email.","올바른 이메일 형식이 아니에요.":"That doesn't look like a valid email.","문의 내용을 입력해 주세요.":"Please enter your message.",
+  "전송에 실패했어요. 잠시 후 다시 시도하거나 hello@kosai.kr로 보내주세요.":"Couldn't send. Please try again later or email hello@kosai.kr.",
+  "내용을 조금 더 자세히 입력해 주세요.":"Please add a bit more detail.","(선택)":"(optional)","직접 메일 보내기":"Email us directly",
+  "성함을 입력해 주세요":"Your full name",
+  "답변받으실 이메일 주소":"Email address for our reply",
+  "문의하실 내용을 자세히 적어주세요. 데이터 오류 제보의 경우 해당 페이지 주소를 함께 남겨주시면 빠르게 확인할 수 있습니다.":"Tell us in detail. For data error reports, include the URL of the page so we can investigate quickly.",
+  "보내주신 정보는 문의 응대 목적으로만 사용되며, 답변 후 안전하게 폐기됩니다.":"Your information is used only to handle your inquiry, and is safely discarded once we've replied.",
+  "문의가 접수되었습니다":"Your inquiry has been received",
+  "소중한 의견 감사합니다. 입력해 주신 이메일로 영업일 기준 2~3일 내에 답변드리겠습니다.":"Thank you for reaching out. We'll reply to the email you provided within 2–3 business days."
 });
 </script>
-<script>
-/* AI 리포트 수 — 리포트 페이지와 동일 기준(전 종목 수 stockCount)으로 통일 표시.
-   stockCount가 없으면(구버전 인덱스) 리포트 항목 수로 폴백. */
-(function(){
-  function upd(){
-    fetch('data/reports-index.js',{cache:'no-cache'}).then(function(r){return r.text();}).then(function(t){
-      var d=JSON.parse(t.slice(t.indexOf('=')+1).trim().replace(/;$/,''));
-      var n=d.stockCount||Object.keys(d.reports||{}).length;
-      var el=document.getElementById('lpRepN');
-      if(n>0&&el) el.textContent=n.toLocaleString();
-    }).catch(function(){});
-  }
-  ('requestIdleCallback' in window)?requestIdleCallback(upd,{timeout:4000}):setTimeout(upd,1500);
-})();
-</script>
-<script type="importmap">
-{"imports":{"three":"https://cdn.jsdelivr.net/npm/three@0.170.0/build/three.module.js","three/addons/":"https://cdn.jsdelivr.net/npm/three@0.170.0/examples/jsm/"}}
-</script>
-<script type="module">
-/* ───────────────────────────────────────────────────────
-   KOSAI 프리즘 — 실사 유리 질감(굴절·분산·이리데선스)
-   무중력 텀블 + 드래그(관성) + 마우스 패럴랙스
-   ─────────────────────────────────────────────────────── */
-const stage=document.getElementById('lpStage');
-try{
-  const THREE=await import('three');
-  const canvas=document.getElementById('lpCanvas');
-  const reduced=matchMedia('(prefers-reduced-motion: reduce)').matches;
-  const mobile=matchMedia('(max-width: 920px)').matches;
-
-  const renderer=new THREE.WebGLRenderer({canvas,antialias:true,alpha:false,powerPreference:'high-performance'});
-  renderer.setClearColor('#04060f',1);
-  renderer.toneMapping=THREE.ACESFilmicToneMapping;
-  renderer.toneMappingExposure=1.22;
-  renderer.outputColorSpace=THREE.SRGBColorSpace;
-
-  const scene=new THREE.Scene();
-
-  /* 커스텀 스튜디오 환경 — 소프트박스 3개(유리에 길고 매끈한 하이라이트) */
-  {
-    const env=new THREE.Scene();
-    const box=(w,h,c,i,x,y,z,ry=0,rx=0)=>{
-      const m=new THREE.Mesh(new THREE.PlaneGeometry(w,h),
-        new THREE.MeshBasicMaterial({color:new THREE.Color(c).multiplyScalar(i),side:THREE.DoubleSide}));
-      m.position.set(x,y,z); m.rotation.set(rx,ry,0); env.add(m);
-    };
-    box(20,10,'#ffffff',11, 0,9,1, 0,Math.PI/2);   // 시네마틱 톱 소프트박스
-    box(4,12,'#bcd2ff',5, -10,0,2, Math.PI/2.3);   // 쿨 사이드
-    box(3,10,'#dde8ff',2, 10,1,-1, -Math.PI/2.5);  // 쿨 사이드2
-    box(16,1.1,'#ffffff',7, 0,-1,-10);             // 후면 스트릭
-    box(12,5,'#9fb8e8',2.2, 0,-8,2, 0,-Math.PI/2);  // 바닥 바운스
-    box(5,9,'#dfe9ff',3.5, 7,3,6, Math.PI/1.6);     // 프런트 키 패널
-    box(6,3,'#ffffff',5, -5,6,5, Math.PI/3, -0.5);  // 어퍼 글랜스
-    scene.environment=new THREE.PMREMGenerator(renderer).fromScene(env,0.03).texture;
-  }
-  const camera=new THREE.PerspectiveCamera(35,1,0.1,100);
-  camera.position.set(0,0,9.5);
-
-
-  /* 배경 — 심연 그라데이션 + 프리즘이 굴절시킬 라이트 바(차트 모티브) */
-  function radialTex(stops,size=512){
-    const c=document.createElement('canvas');c.width=c.height=size;
-    const x=c.getContext('2d');const g=x.createRadialGradient(size/2,size/2,0,size/2,size/2,size/2);
-    for(const [o,col] of stops)g.addColorStop(o,col);
-    x.fillStyle=g;x.fillRect(0,0,size,size);
-    const t=new THREE.CanvasTexture(c);t.colorSpace=THREE.SRGBColorSpace;return t;
-  }
-  const back=new THREE.Mesh(new THREE.PlaneGeometry(90,90),
-    new THREE.MeshBasicMaterial({map:radialTex([[0,'#13203a'],[0.35,'#081020'],[0.6,'#04060f'],[1,'#04060f']]),toneMapped:false}));
-  back.position.set(9,2,-30);scene.add(back);
-
-
-  /* 라이팅 — 키 + 쿨 림 + 웜 필 */
-  const key=new THREE.DirectionalLight(0xffffff,2.0);key.position.set(4,6,7);scene.add(key);
-  const rim=new THREE.PointLight(0x9fc4ff,90,0,2);rim.position.set(-6,3,-4);scene.add(rim);
-  const fill=new THREE.PointLight(0xbcd2ff,8,0,2);fill.position.set(3,-4,5);scene.add(fill);
-
-  /* 프리즘 — 사각뿔(피라미드): 옆면 4개는 삼각형, 바닥은 정사각형. 모서리 깎인 좁은 면 + 뭉툭한 꼭짓점 */
-  function chamferedPyramid(a,H){
-    const yb=-H*0.45, ya=H*0.55;                               // 무게중심이 원점 근처에 오게
-    /* 수공 연마처럼 미세하게 비뚠 꼭짓점 */
-    const J=[[0.018,-0.011,0.014],[-0.013,0.019,-0.009],[0.016,0.007,-0.017],
-             [-0.010,-0.016,0.012],[0.014,0.010,-0.013]];
-    const B=[[ a,yb, a],[ a,yb,-a],[-a,yb,-a],[-a,yb, a]];     // 바닥 4 꼭짓점(시계 반대)
-    const V=B.map((v,i)=>new THREE.Vector3(v[0]+J[i][0],v[1]+J[i][1],v[2]+J[i][2]));
-    V.push(new THREE.Vector3(J[4][0], ya+J[4][1], J[4][2]));   // 꼭대기(apex)=4
-    const F=[[0,1,2,3],[4,0,1],[4,1,2],[4,2,3],[4,3,0]];       // 바닥 + 옆 삼각형 4 (apex 둘레 순서)
-    const INS=[0.958,0.944,0.952,0.940,0.949];                 // 면마다 다른 깎임 폭
-    const Q=F.map((f,fi)=>{
-      const c=new THREE.Vector3(); f.forEach(vi=>c.add(V[vi])); c.multiplyScalar(1/f.length);
-      return f.map(vi=>c.clone().add(V[vi].clone().sub(c).multiplyScalar(INS[fi])));
-    });
-    const pos=[];
-    const tri=(a,b,c)=>{                                   // 볼록체: 노멀이 바깥이 아니면 뒤집기
-      const n=new THREE.Vector3().subVectors(b,a).cross(new THREE.Vector3().subVectors(c,a));
-      const m=new THREE.Vector3().add(a).add(b).add(c);
-      if(n.dot(m)<0){const t=b;b=c;c=t;}
-      pos.push(a.x,a.y,a.z,b.x,b.y,b.z,c.x,c.y,c.z);
-    };
-    Q.forEach(q=>{ tri(q[0],q[1],q[2]); if(q.length===4) tri(q[0],q[2],q[3]); }); // 5 큰 면
-    const adj=(f,ia,ib)=>{const d=Math.abs(ia-ib);return d===1||d===f.length-1;}; // 면 위 인접(대각선 제외)
-    for(let va=0;va<5;va++)for(let vb=va+1;vb<5;vb++){     // 8 모서리 베벨(좁은 면)
-      const pts=[];
-      F.forEach((f,fi)=>{ const ia=f.indexOf(va), ib=f.indexOf(vb);
-        if(ia>=0&&ib>=0&&adj(f,ia,ib)) pts.push(Q[fi][ia],Q[fi][ib]); });
-      if(pts.length===4){ tri(pts[0],pts[1],pts[3]); tri(pts[0],pts[3],pts[2]); }
-    }
-    for(let vtx=0;vtx<5;vtx++){                            // 5 꼭짓점 컷(apex는 사각 컷)
-      const pts=[];
-      F.forEach((f,fi)=>{ const i=f.indexOf(vtx); if(i>=0) pts.push(Q[fi][i]); });
-      tri(pts[0],pts[1],pts[2]);
-      if(pts.length===4) tri(pts[0],pts[2],pts[3]);
-    }
-    const g=new THREE.BufferGeometry();
-    g.setAttribute('position',new THREE.Float32BufferAttribute(pos,3));
-    const uv=[]; for(let i=0;i<pos.length;i+=3) uv.push(pos[i]*0.27+0.5,pos[i+1]*0.27+0.5);
-    g.setAttribute('uv',new THREE.Float32BufferAttribute(uv,2));
-    g.computeVertexNormals();
-    return g;
-  }
-  const geo=chamferedPyramid(1.28,2.35);
-  /* 마이크로 질감 — 미세 요철과 광택 불균일(진짜 유리의 불완전함) */
-  function microTex(sz,base,amp,blobs){
-    const c=document.createElement('canvas');c.width=c.height=sz;
-    const x=c.getContext('2d');x.fillStyle=`rgb(${base},${base},${base})`;x.fillRect(0,0,sz,sz);
-    for(let i=0;i<blobs;i++){
-      const r=8+Math.random()*42, g=base+(Math.random()*2-1)*amp;
-      const gr=x.createRadialGradient(Math.random()*sz,Math.random()*sz,0,Math.random()*sz,Math.random()*sz,r);
-      gr.addColorStop(0,`rgba(${g|0},${g|0},${g|0},.55)`);gr.addColorStop(1,'rgba(0,0,0,0)');
-      x.fillStyle=gr;x.beginPath();x.arc(Math.random()*sz,Math.random()*sz,r,0,7);x.fill();
-    }
-    const t=new THREE.CanvasTexture(c);t.wrapS=t.wrapT=THREE.RepeatWrapping;t.repeat.set(2,2);return t;
-  }
-  const bumpT=microTex(256,128,46,520);
-  const roughT=microTex(256,150,80,90);
-  const glass=new THREE.MeshPhysicalMaterial({
-    color:0xffffff, metalness:0, roughness:0.035, roughnessMap:roughT, bumpMap:bumpT, bumpScale:0.1, flatShading:true,
-    transmission:1, thickness:1.2, ior:1.55, dispersion:0.62,   // 빛 분산(무지개 가장자리)
-    clearcoat:1, clearcoatRoughness:0.03,
-    iridescence:0.4, iridescenceIOR:1.35, iridescenceThicknessRange:[120,480], iridescenceIOR:1.3,                       // 미세한 무지갯빛 코팅
-    attenuationColor:new THREE.Color('#f0f5ff'), attenuationDistance:22,
-    envMapIntensity:2.0, specularIntensity:1
-  });
-  const prism=new THREE.Mesh(geo,glass);
-  /* 스펙트럼 프레넬 — 색이 두꺼운 가장자리에 농축, 면 중앙은 맑게(레퍼런스 토러스) */
-  const fres=new THREE.Mesh(geo,new THREE.ShaderMaterial({
-    uniforms:{uTime:{value:0}},
-    vertexShader:`varying vec3 vN,vV,vW;
-      void main(){vN=normalize(normalMatrix*normal);vW=normalize(mat3(modelMatrix)*normal);
-      vec4 mv=modelViewMatrix*vec4(position,1.);vV=normalize(-mv.xyz);gl_Position=projectionMatrix*mv;}`,
-    fragmentShader:`uniform float uTime;varying vec3 vN,vV,vW;
-      void main(){
-        float f=pow(1.-abs(dot(normalize(vN),normalize(vV))),1.8);
-        float h=clamp(f*1.1+0.16*sin(uTime*0.35+vW.y*2.2+vW.x*1.3),0.,1.);
-        vec3 c1=vec3(.07,.22,.9),c2=vec3(.3,.8,1.),c3=vec3(1.),c4=vec3(1.,.72,.34),c5=vec3(1.,.42,.12);
-        vec3 col = h<.25? mix(c1,c2,h/.25) : h<.5? mix(c2,c3,(h-.25)/.25) : h<.75? mix(c3,c4,(h-.5)/.25) : mix(c4,c5,(h-.75)/.25);
-        float a=smoothstep(.05,.8,f)*0.8;
-        gl_FragColor=vec4(col,a);
-      }`,
-    transparent:true,blending:THREE.AdditiveBlending,depthWrite:false,depthTest:false,side:THREE.FrontSide}));
-  fres.scale.setScalar(1.004);
-  fres.renderOrder=2;
-  prism.add(fres);
-  /* 내부 굴절 색면 — 뒷면 각 면이 서로 다른 옅은 색조로 비쳐, 그 경계가 곧 뒷모서리(선이 아닌 색 경계) */
-  const backTint=new THREE.Mesh(geo,new THREE.ShaderMaterial({
-    uniforms:{uTime:fres.material.uniforms.uTime},
-    vertexShader:fres.material.vertexShader,
-    fragmentShader:`uniform float uTime;varying vec3 vN,vV,vW;
-      void main(){
-        vec3 n=normalize(vW);
-        float a1=n.x*1.7+n.y*0.9+uTime*0.05, a2=n.z*2.1-n.y*1.3-uTime*0.04;
-        vec3 cool=vec3(.80,.88,1.), pink=vec3(.99,.83,.85), amber=vec3(.98,.90,.76);
-        vec3 col=mix(cool,pink,0.5+0.5*sin(a1));
-        col=mix(col,amber,0.5*(0.5+0.5*sin(a2)));
-        float fr=pow(1.-abs(dot(normalize(vN),normalize(vV))),1.2);
-        gl_FragColor=vec4(col, 0.12+0.12*fr);
-      }`,
-    transparent:true,depthWrite:false,depthTest:false,side:THREE.BackSide}));
-  backTint.scale.setScalar(0.997);
-  backTint.renderOrder=1;
-  prism.add(backTint);
-  /* 통과 스펙트럼 — 빛이 지나는 통로를 따라 유리 표면에 생기는 무지개(아주 연하게) */
-  const spect=new THREE.Mesh(geo,new THREE.ShaderMaterial({
-    uniforms:{uTime:fres.material.uniforms.uTime},
-    vertexShader:`varying vec3 vP;void main(){vP=position;gl_Position=projectionMatrix*modelViewMatrix*vec4(position,1.);}`,
-    fragmentShader:`uniform float uTime;varying vec3 vP;
-      void main(){
-        vec3 bd=normalize(vec3(0.55,0.78,0.22));                       // 빔 통로 방향
-        float d=dot(vP,bd)-0.12+0.18*sin(uTime*0.17);
-        float band=exp(-d*d*3.2);                                       // 부드러운 통로 마스크
-        float h=clamp(dot(vP,normalize(vec3(0.82,-0.5,0.28)))*0.34+0.5+0.06*sin(uTime*0.23),0.,1.);
-        vec3 c1=vec3(.2,.35,1.),c2=vec3(.25,.85,1.),c3=vec3(.55,1.,.6),c4=vec3(1.,.85,.35),c5=vec3(1.,.4,.3);
-        vec3 col = h<.25? mix(c1,c2,h/.25) : h<.5? mix(c2,c3,(h-.25)/.25) : h<.75? mix(c3,c4,(h-.5)/.25) : mix(c4,c5,(h-.75)/.25);
-        gl_FragColor=vec4(col, band*0.22);
-      }`,
-    transparent:true,blending:THREE.AdditiveBlending,depthWrite:false,depthTest:false}));
-  spect.scale.setScalar(1.004);
-  spect.renderOrder=2;
-  prism.add(spect);
-
-  const group=new THREE.Group(); group.add(prism); scene.add(group);
-
-  /* 뒤 글로우 — 실루엣을 띄우는 은은한 후광 */
-  const glow=new THREE.Sprite(new THREE.SpriteMaterial({map:radialTex([[0,'rgba(150,180,255,0.55)'],[1,'rgba(150,180,255,0)']],256),
-    transparent:true,opacity:0.13,blending:THREE.AdditiveBlending,depthWrite:false}));
-  glow.scale.setScalar(6);glow.position.z=-4;group.add(glow);
-
-  /* 빛 연출 — 프리즘으로 들어가는 광선과 퍼져나가는 스펙트럼 */
-  function beamTex(w,h,colorFn,alphaY){
-    const c=document.createElement('canvas');c.width=w;c.height=h;
-    const x=c.getContext('2d');const img=x.createImageData(w,h);
-    for(let j=0;j<h;j++)for(let i=0;i<w;i++){
-      const u=i/(w-1), v=j/(h-1);
-      const ax=Math.pow(Math.sin(Math.PI*u),1.6);          // 가로 소프트 폴오프
-      const ay=alphaY?alphaY(v):Math.pow(Math.sin(Math.PI*v),1.2);
-      const [r,g,b]=colorFn(u,v);
-      const k=(j*w+i)*4; img.data[k]=r;img.data[k+1]=g;img.data[k+2]=b;
-      img.data[k+3]=Math.min(255,Math.max(0,ax*ay*255));
-    }
-    x.putImageData(img,0,0);
-    const t=new THREE.CanvasTexture(c);t.colorSpace=THREE.SRGBColorSpace;return t;
-  }
-  const fx=new THREE.Group(); scene.add(fx);
-  /* 입사 광선(위-왼쪽에서) */
-  const beam=new THREE.Mesh(new THREE.PlaneGeometry(0.85,7.5),
-    new THREE.MeshBasicMaterial({map:beamTex(64,256,()=> [226,236,255],v=>Math.pow(v,1.3)*Math.min(1,(1-v)*6)),transparent:true,opacity:0.16,
-      blending:THREE.AdditiveBlending,depthWrite:false}));
-  beam.position.set(-1.9,2.5,-0.4); beam.rotation.z=0.62; fx.add(beam);
-  /* 입사점 글린트 */
-  const glint=new THREE.Sprite(new THREE.SpriteMaterial({map:radialTex([[0,'rgba(255,255,255,.95)'],[0.3,'rgba(220,235,255,.4)'],[1,'rgba(220,235,255,0)']],128),
-    transparent:true,opacity:0.5,blending:THREE.AdditiveBlending,depthWrite:false}));
-  glint.scale.setScalar(0.9); glint.position.set(-0.55,0.72,0.4); fx.add(glint);
-
-  /* 미세 먼지 — 프리즘 주변을 아주 천천히 떠다님 */
-  const DN=70, dpos=new Float32Array(DN*3);
-  for(let i=0;i<DN;i++){ dpos[i*3]=(Math.random()*2-1)*3.4; dpos[i*3+1]=(Math.random()*2-1)*2.6; dpos[i*3+2]=(Math.random()*2-1)*2; }
-  const dgeo=new THREE.BufferGeometry(); dgeo.setAttribute('position',new THREE.BufferAttribute(dpos,3));
-  const dust=new THREE.Points(dgeo,new THREE.PointsMaterial({color:0xc8d8f8,size:0.025,transparent:true,opacity:0.5,depthWrite:false}));
-  scene.add(dust);
-
-  /* 리사이즈(비용 큰 작업)는 창 크기 변경 때만 */
-  /* 리사이즈 — 캔버스는 페이지 전체. 구도는 첫 화면 기준(vhRef)으로 고정하고
-     setViewOffset 으로 아래로만 화면을 연장 → 배경이 한 장으로 이어짐(경계 없음).
-     vhRef 는 가로폭이 바뀔 때만 갱신(모바일 주소창 변동 무시 → 스크롤 중 흔들림 없음). */
-  let lastW=0, vhRef=0;
-  function resize(){
-    const w=canvas.clientWidth||innerWidth, hFull=canvas.clientHeight||innerHeight;
-    if(w!==lastW){ lastW=w; vhRef=innerHeight; }
-    renderer.setPixelRatio(Math.min(devicePixelRatio, mobile?1.6:2));
-    renderer.setSize(w,hFull,false);
-    camera.aspect=w/vhRef;
-    camera.setViewOffset(w,vhRef,0,0,w,hFull);
-    camera.updateProjectionMatrix();
-    place();
-  }
-  /* 배치 — 고정 좌표(마우스·스크롤 영향 없음). 데스크톱=오른쪽, 모바일=상단 중앙 */
-  function place(){
-    if(mobile){ group.position.set(0,1.38,0); group.scale.setScalar(0.47); }
-    else{ group.position.set(1.4,0.1,0); group.scale.setScalar(0.78); }
-  }
-  resize(); addEventListener('resize',resize); setTimeout(resize,900);
-  if(window.ResizeObserver) new ResizeObserver(()=>resize()).observe(document.body);
-
-  /* 인터랙션 — 드래그 텀블(관성). 모바일은 Resend처럼 자동 회전만(터치 미반응) */
-  let offX=0.0,offY=0.0,vx=0,vy=0,dragging=false,lx=0,ly=0;
-  if(!mobile){
-    stage.addEventListener('pointerdown',e=>{dragging=true;lx=e.clientX;ly=e.clientY;stage.classList.add('drag');stage.setPointerCapture(e.pointerId);});
-    stage.addEventListener('pointermove',e=>{
-      if(!dragging)return;
-      vy=(e.clientX-lx)*0.0065; vx=(e.clientY-ly)*0.005;
-      offY+=vy; offX+=vx; lx=e.clientX; ly=e.clientY;
-    });
-    const end=()=>{dragging=false;stage.classList.remove('drag');};
-    stage.addEventListener('pointerup',end);stage.addEventListener('pointercancel',end);
-  }
-
-  const clock=new THREE.Clock();
-  renderer.setAnimationLoop(()=>{
-    const t=reduced?14:clock.getElapsedTime();
-    if(!dragging){ offY+=vy; offX+=vx; vy*=0.94; vx*=0.94; }
-    /* 무중력 텀블 — 두 축이 서로 다른 주기로 천천히 */
-    group.rotation.y=0.72+t*0.16+offY+Math.sin(t*0.083+2.1)*0.06;
-    group.rotation.x=0.34+Math.sin(t*0.23)*0.17+Math.sin(t*0.107+1.7)*0.07+Math.sin(t*0.0531+0.5)*0.035+offX;
-    group.rotation.z=Math.sin(t*0.131)*0.08+Math.sin(t*0.0713+0.9)*0.04;
-    prism.position.y=reduced?0:Math.sin(t*0.7)*0.06+Math.sin(t*0.413+1.1)*0.04;
-    prism.position.x=reduced?0:Math.sin(t*0.157+0.6)*0.05;
-    glow.material.opacity=0.10+Math.sin(t*0.5)*0.04;
-    fres.material.uniforms.uTime.value=t;
-    dust.rotation.y=t*0.02; dust.rotation.z=t*0.008;
-    beam.material.opacity=0.13+Math.sin(t*0.45)*0.03+Math.sin(t*0.171+0.8)*0.02;
-    glint.material.opacity=0.22+Math.sin(t*1.1)*0.07+Math.sin(t*0.437+1.9)*0.05;          // 부유
-    renderer.render(scene,camera);
-  });
-}catch(e){ console.error('PRISM_ERR', e && (e.stack||e.message||String(e))); }
-</script>
+<script type="module" src="auth-state.js"></script>
 </body>
 </html>

@@ -29,7 +29,7 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parent.parent
 
 # 스테이징에 올릴 페이지 — 유료화 관련 화면과 그 페이지들이 부르는 스크립트
-PAGES = ["pricing.html", "checkout.html", "billing.html", "stock.html",
+PAGES = ["brief.html", "pricing.html", "checkout.html", "billing.html", "stock.html",
          "Terms.html", "About.html", "Home.html", "Reports.html", "industry.html",
          "Screener.html", "Watchlist.html", "Login.html", "Signup.html",
          "Privacy.html", "Contact.html", "Feedback.html"]
