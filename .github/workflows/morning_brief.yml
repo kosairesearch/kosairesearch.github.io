@@ -1,0 +1,118 @@
+name: 📰 모닝 브리핑 생성 (수동 · API 과금)
+
+# 사실을 모아 본문을 쓰고 brief.html 에 박은 뒤 커밋한다.
+#
+# 아직 스케줄이 없다. 자동 발행(06:00/06:40/07:20 KST)은 손으로 몇 번 돌려
+# 결과를 확인한 다음에 켠다 — 매일 아침 조용히 이상한 글이 나가는 것보다
+# 사람이 눈으로 보고 켜는 편이 낫다.
+#
+# ⚠️ 이 워크플로는 Anthropic API 를 부른다. 한 번에 약 300원.
+#    사실만 확인하려면 brief_dryrun.yml 을 쓰면 된다(과금 없음).
+on:
+  workflow_dispatch:
+    inputs:
+      force:
+        description: '같은 날 브리핑이 이미 있어도 다시 만든다'
+        type: boolean
+        default: false
+      commit:
+        description: '결과를 이 브랜치에 커밋한다'
+        type: boolean
+        default: true
+
+permissions:
+  contents: write
+
+jobs:
+  brief:
+    runs-on: ubuntu-latest
+    # 브리핑은 07:30 에 나가야 한다. 늦게 나가는 것보다 실패하는 게 낫다 —
+    # 실패는 알림이 오지만 늦음은 조용하다.
+    timeout-minutes: 25
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+          cache: 'pip'
+      - run: pip install -r requirements.txt
+
+      # 러너는 실행마다 새로 만들어지고 data/brief_cache 는 .gitignore 돼 있다.
+      # 캐시를 여기서 실어 줘야 하루에 여러 번 돌 때 DART 를 다시 받지 않는다.
+      - name: 공시 목록 캐시 복원
+        uses: actions/cache@v4
+        with:
+          path: data/brief_cache
+          key: brief-cache-${{ github.run_id }}
+          restore-keys: |
+            brief-cache-
+
+      # 과금 전에 먼저 막는다. 검증기가 깨진 채로 생성하면 돈만 쓰고 거부된다.
+      - name: ⓞ 회귀 테스트 (네트워크·과금 없음)
+        run: |
+          python scripts/test_flows.py
+          python scripts/test_brief_gen.py
+
+      - name: ① 본문 생성 (Anthropic API)
+        id: gen
+        timeout-minutes: 15
+        env:
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+          DART_API_KEY: ${{ secrets.DART_API_KEY }}
+          BRIEF_MODEL: claude-opus-5
+        run: |
+          python scripts/generate_brief.py ${{ inputs.force && '--force' || '' }}
+
+      - name: ② brief.html 에 반영
+        run: python scripts/render_brief.py
+
+      - name: ③ 결과 확인
+        run: |
+          echo "## 생성된 브리핑" >> $GITHUB_STEP_SUMMARY
+          python - <<'PY' >> $GITHUB_STEP_SUMMARY
+          import json, glob, os
+          f = sorted(glob.glob("data/briefs/*.json"))[-1]
+          d = json.load(open(f, encoding="utf-8"))
+          m = d.get("meta") or {}
+          u = m.get("usage") or {}
+          print(f"**{d['title']['ko']}**\n")
+          print(f"- 파일 `{f}` · 거래일 {d['tradeDate']} · "
+                f"{'개장' if d.get('marketOpen') else '휴장'}")
+          print(f"- 분량 {m.get('chars'):,}자 · 커버리지 {m.get('coverageRatio', 0)*100:.0f}% · "
+                f"모델 {m.get('model')}")
+          if u:
+              print(f"- 토큰 입력 {u.get('inputTokens'):,} / 출력 {u.get('outputTokens'):,} · "
+                    f"${u.get('usd')} (약 {u.get('krw'):,}원)")
+          print(f"\n> {d['lead']['ko']}\n")
+          for s in d["sections"]:
+              print(f"### {s['heading']['ko']}")
+              for p in s["paragraphs"]:
+                  print(p["ko"] + "\n")
+          PY
+
+      - name: ④ 커밋
+        if: inputs.commit
+        run: |
+          git config user.name  "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add data/briefs brief.html
+          if git diff --cached --quiet; then
+            echo "변경 없음 — 커밋하지 않는다"
+            exit 0
+          fi
+          DATE=$(python -c "import glob;print(sorted(glob.glob('data/briefs/*.json'))[-1][12:22])")
+          git commit -m "브리핑 $DATE"
+          # 같은 브랜치에 다른 커밋이 들어와 있을 수 있다. 리베이스해서 얹는다.
+          for i in 1 2 3; do
+            git pull --rebase origin "${GITHUB_REF_NAME}" && git push origin "HEAD:${GITHUB_REF_NAME}" && break
+            echo "재시도 $i"; sleep $((i*4))
+          done
+
+      # 거부된 결과는 커밋되지 않으므로(.gitignore) 여기서 건져 올린다.
+      - name: 거부된 결과 (실패했을 때만)
+        if: failure()
+        uses: actions/upload-artifact@v4
+        with:
+          name: rejected-brief
+          path: data/briefs/_rejected/
+          if-no-files-found: ignore

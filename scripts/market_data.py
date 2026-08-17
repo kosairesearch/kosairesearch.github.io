@@ -47,16 +47,27 @@ def log(*a):
     print(*a, file=sys.stderr, flush=True)
 
 
+_MEMO = {}
+
+
 def fetch(period="10d"):
     """심볼별로 최근 종가와 전일 대비 등락률. 실패한 심볼은 빠지고 나머지는 남는다.
 
     하나가 죽었다고 전부 버리면 브리핑에서 미국 시장 문단이 통째로 사라진다.
     개별 실패는 그 값만 빼고 넘어간다.
+
+    한 번의 실행에서 두 번 불린다 — brief_data 는 코스피·코스닥만 쓰고,
+    generate_brief 는 미국 지수까지 전부 쓴다. 열 심볼을 두 번 받을 이유가
+    없으므로 기억해 둔다. 브리핑 한 편을 만드는 몇 분 안에 시세가 바뀔 일도
+    없다(미국은 이미 마감, 국내는 아직 개장 전).
     """
+    if period in _MEMO:
+        return _MEMO[period]
     try:
         import yfinance as yf
     except ImportError:
         log("❌ yfinance 없음 — pip install yfinance")
+        _MEMO[period] = {}
         return {}
 
     out = {}
@@ -85,6 +96,7 @@ def fetch(period="10d"):
             }
         except Exception as e:
             log(f"· {label}({sym}) 실패: {type(e).__name__} {e}")
+    _MEMO[period] = out
     return out
 
 

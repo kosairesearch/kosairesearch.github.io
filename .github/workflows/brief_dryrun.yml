@@ -67,3 +67,17 @@ jobs:
         env:
           DART_API_KEY: ${{ secrets.DART_API_KEY }}
         run: python scripts/brief_data.py
+
+      - name: ⑥ 생성기 회귀 테스트 (네트워크 불필요)
+        if: always()
+        run: python scripts/test_brief_gen.py
+
+      # 모델에게 넘길 사실 블록을 그대로 찍는다. API 를 부르지 않으므로 과금이
+      # 없다. 발행된 브리핑이 이상할 때 원인이 '수집'인지 '생성'인지 가리는
+      # 기준이 이 출력이다 — 여기가 맞으면 생성 쪽 문제다.
+      - name: ⑦ 브리핑 프롬프트에 들어갈 사실 블록 (과금 없음)
+        if: always()
+        timeout-minutes: 8
+        env:
+          DART_API_KEY: ${{ secrets.DART_API_KEY }}
+        run: python scripts/generate_brief.py --facts-only
