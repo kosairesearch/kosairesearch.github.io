@@ -8,3 +8,5 @@ venv/
 .venv/
 data/deploy_functions.log
 data/brief_cache/
+# 규칙을 통과하지 못한 생성 결과. 사람이 보고 버리는 것이므로 저장소에 남기지 않는다.
+data/briefs/_rejected/
