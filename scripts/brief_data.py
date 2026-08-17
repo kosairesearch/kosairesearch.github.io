@@ -298,6 +298,66 @@ def index_and_flows(trade_date):
 
 # ────────────────────────────── 공시 ──────────────────────────────
 
+def _dart_list(key, trade_date, max_pages=None):
+    """DART 정기보고서 목록. 페이지를 병렬로 받는다.
+
+    OpenDartReader 의 list() 는 페이지를 하나씩 순서대로 받는다. 8월 14일은
+    반기보고서 마감일이라 정기공시만 수천 건이어서 그것만 5분 넘게 걸렸다.
+    브리핑은 07:30 에 나가야 하므로 직접 부른다.
+
+    두 가지로 줄인다.
+      · pblntf_ty=A — 정기공시만. 전체 공시를 받을 이유가 없다.
+      · 페이지 병렬 — 1페이지로 총 페이지 수를 알아낸 뒤 나머지를 동시에.
+
+    실패하면 None 을 돌려준다. 빈 목록([])과 구분해야 한다 — 빈 목록은
+    '그날 공시가 없었다'는 사실이고, None 은 '못 받았다'는 사고다.
+    """
+    import concurrent.futures as cf
+
+    max_pages = max_pages or int(os.getenv("BRIEF_DART_MAX_PAGES", "40"))
+    base = {"crtfc_key": key, "bgn_de": trade_date, "end_de": trade_date,
+            "pblntf_ty": "A", "page_count": "100"}
+
+    def page(n):
+        import requests
+        r = requests.get("https://opendart.fss.or.kr/api/list.json",
+                         params={**base, "page_no": str(n)}, timeout=25)
+        r.raise_for_status()
+        j = r.json()
+        if j.get("status") == "013":          # 조회된 데이터가 없습니다
+            return 0, []
+        if j.get("status") != "000":
+            raise RuntimeError(f"DART {j.get('status')} {j.get('message')}")
+        return int(j.get("total_page") or 1), (j.get("list") or [])
+
+    try:
+        total_pages, first = page(1)
+    except Exception as e:
+        log(f"· DART 조회 실패: {type(e).__name__} {str(e)[:80]}")
+        return None
+    if total_pages == 0:
+        log("· 그날 정기공시가 없다")
+        return []
+
+    got = list(first)
+    if total_pages > max_pages:
+        log(f"· 정기공시 {total_pages}페이지 중 {max_pages}페이지까지만 본다")
+        total_pages = max_pages
+    if total_pages > 1:
+        with cf.ThreadPoolExecutor(max_workers=6) as ex:
+            futs = {ex.submit(page, n): n for n in range(2, total_pages + 1)}
+            for f in cf.as_completed(futs):
+                try:
+                    got += f.result()[1]
+                except Exception as e:
+                    log(f"· {futs[f]}페이지 실패(건너뜀): {type(e).__name__}")
+
+    return [{"stock_code": str(r.get("stock_code", "")).strip(),
+             "report_nm": str(r.get("report_nm", "")),
+             "rcept_no": str(r.get("rcept_no", "")).strip()} for r in got]
+
+
+
 def filings(trade_date, cov, names, mcaps=None):
     """해당 거래일에 접수된 정기보고서 중 커버리지 종목.
 
@@ -329,19 +389,9 @@ def filings(trade_date, cov, names, mcaps=None):
             rows = None
 
     if rows is None:
-        try:
-            import OpenDartReader
-            dart = OpenDartReader(key)
-            df = dart.list(start=trade_date, end=trade_date, kind="A", final=False)
-        except Exception as e:
-            log(f"· DART 조회 실패: {e}")
+        rows = _dart_list(key, trade_date)
+        if rows is None:
             return []
-        if df is None or getattr(df, "empty", True):
-            return []
-        rows = [{"stock_code": str(r.get("stock_code", "")).strip(),
-                 "report_nm": str(r.get("report_nm", "")),
-                 "rcept_no": str(r.get("rcept_no", "")).strip()}
-                for _, r in df.iterrows()]
         try:
             CACHE_DIR.mkdir(parents=True, exist_ok=True)
             cache.write_text(json.dumps(rows, ensure_ascii=False), encoding="utf-8")
