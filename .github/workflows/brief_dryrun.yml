@@ -16,12 +16,18 @@ jobs:
           cache: 'pip'
       - run: pip install -r requirements.txt
 
+      - name: ⓞ 파서 회귀 테스트 (네트워크 불필요)
+        if: always()
+        run: python scripts/test_flows.py
+
       - name: ① 시세 · 개장 여부 (yfinance + holidays)
         if: always()
         run: python scripts/market_data.py
 
-      - name: ② 투자자별 순매수 (네이버 금융)
+      - name: ② 투자자별 순매수 (네이버 · HTML/JSON 후보 6개)
         if: always()
+        env:
+          FLOWS_DUMP: '1'
         run: python scripts/flows.py
 
       - name: ③ 일정 (연준 + 수동 등록)
