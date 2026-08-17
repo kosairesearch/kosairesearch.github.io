@@ -51,7 +51,9 @@ MOB_UA = {
 }
 
 DUMP = os.getenv("FLOWS_DUMP", "1") == "1"
-SUM_TOLERANCE = 0.35        # 세 주체 합이 최댓값의 이 비율을 넘으면 오독으로 본다
+# 순매수 합이 최댓값의 이 비율을 넘으면 오독으로 본다. 기타법인까지 넣으면
+# 합은 거의 정확히 0 이 되므로(3차 실측 0.004) 여유를 조여도 된다.
+SUM_TOLERANCE = 0.05
 ACTORS = ("개인", "외국인", "기관", "기관계", "기타법인", "국가", "기타외국인")
 
 
@@ -143,25 +145,38 @@ def _fetch(url, headers):
 # ────────────────────────────── HTML 파서 ──────────────────────────────
 
 def _from_html(html):
-    heads = re.findall(r"<th[^>]*>(.*?)</th>", html, re.S)
-    labels = [re.sub(r"<[^>]+>|\s", "", h) for h in heads]
-    order = [l for l in labels if l in ACTORS]
-    if not order:
-        order = ["개인", "외국인", "기관계"]
+    """일별 순매수 표. 네이버 실제 구조는 11칸이다.
 
+      날짜 | 개인 | 외국인 | 기관계 | 금융투자 보험 투신 은행 기타금융 연기금등 | 기타법인
+
+    처음에는 헤더에서 아는 이름만 골라 앞에서부터 값과 짝지었다. 그런데
+    '기관' 세부 여섯 개가 중간에 끼어 있어서 정렬이 어긋났다 — 3차 실행에서
+    금융투자 값(-11,634)이 '기관'이라는 이름을 달고 나왔다. 그래서 이름으로
+    맞추지 않고 자리로 맞춘다. 개인·외국인·기관계는 앞에서 1·2·3번째,
+    기타법인은 맨 끝이다.
+    """
     out = []
     for tr in re.findall(r"<tr[^>]*>(.*?)</tr>", html, re.S):
         cells = [re.sub(r"<[^>]+>", "", c).replace("&nbsp;", " ").strip()
                  for c in re.findall(r"<td[^>]*>(.*?)</td>", tr, re.S)]
-        if len(cells) < 2:
+        if len(cells) < 4:
             continue
         d = _date(cells[0])
         if d is None:
             continue
-        nums = [n for n in (_num(c) for c in cells[1:]) if n is not None]
-        if len(nums) < 3:
+        nums = [_num(c) for c in cells[1:]]
+        if sum(1 for n in nums if n is not None) < 3:
             continue
-        out.append((d, dict(zip(order, nums))))
+        vals = {}
+        for i, actor in enumerate(("개인", "외국인", "기관계")):
+            if i < len(nums) and nums[i] is not None:
+                vals[actor] = nums[i]
+        # 기타법인은 맨 끝. 칸이 충분히 많을 때만(세부 항목이 있는 표) 본다.
+        if len(nums) >= 8 and nums[-1] is not None:
+            vals["기타법인"] = nums[-1]
+        if len(vals) < 3:
+            continue
+        out.append((d, vals))
     return out
 
 
@@ -251,12 +266,26 @@ def _from_json(obj):
 # ────────────────────────────── 검증 ──────────────────────────────
 
 def _score(vals):
-    picks = [v for k, v in vals.items() if k in ("개인", "외국인", "기관", "기관계")]
-    if len(picks) < 3:
+    """순매수 합이 0 에 가까운지. 벗어나면 컬럼을 잘못 읽었다.
+
+    3차 실행에서 이 검증기가 정상 데이터를 죽였다. '기관계'와 '기관'을
+    같이 더했기 때문이다 — 기관계는 기관 세부의 합계라서 이중계산이 된다.
+    실제 값(개인 -19,820 · 외국인 +30,387 · 기관계 -10,298 · 기타법인 -142)은
+    합이 +127 로 거의 0 인데, 이중계산하면 -11,365 가 되어 거부됐다.
+
+    그래서 기관계가 있으면 기관은 쓰지 않고, 기타법인까지 합에 넣는다.
+    기타법인을 빼면 그것 자체가 오차로 남아 애먼 값이 걸린다.
+    """
+    v = dict(vals)
+    if "기관계" in v:
+        v.pop("기관", None)          # 이중계산 방지
+    picks = [x for k, x in v.items()
+             if k in ("개인", "외국인", "기관계", "기관", "기타법인", "국가", "기타외국인")]
+    if len([k for k in v if k in ("개인", "외국인", "기관계", "기관")]) < 3:
         return False, "주체 3개를 못 채웠다"
-    scale = max(abs(v) for v in picks) or 1
+    scale = max(abs(x) for x in picks) or 1
     ratio = abs(sum(picks)) / scale
-    return ratio <= SUM_TOLERANCE, f"합/최대 {ratio:.2f}"
+    return ratio <= SUM_TOLERANCE, f"합/최대 {ratio:.3f}"
 
 
 def _unit(vals):

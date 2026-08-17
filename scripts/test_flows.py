@@ -50,25 +50,53 @@ check("존재하지 않는 날", F._date("2026.02.30"), None)
 check("12월에 본 01/05",
       F._date("01/05", today=datetime.date(2026, 12, 28)), datetime.date(2027, 1, 5))
 
-print("\n② HTML 표 — 백만원으로 오는 실제 구조")
-HTML = """<table summary="일자별 순매수에 관한 표 입니다."><caption>일자별 순매수</caption>
+print("\n② HTML 표 — 네이버 실제 11칸 구조 (3차 실행에서 받은 값)")
+# 날짜 | 개인 | 외국인 | 기관계 | 금융투자 보험 투신 은행 기타금융 연기금등 | 기타법인
+# 이 값은 2026-08-14 코스피 실측이다. 외국인 +3조387억.
+HTML = """<table summary="일자별 순매수에 관한 표 입니다.">
 <tr class="udline"><th rowspan="2" class="noln">날짜</th><th rowspan="2">개인</th>
-<th rowspan="2">외국인</th><th rowspan="2">기관계</th></tr>
-<tr><td>2026.08.14</td><td>-2,650,000</td><td>3,038,700</td><td>-420,000</td></tr>
-<tr><td>2026.08.13</td><td>1,100,000</td><td>-900,000</td><td>-150,000</td></tr></table>"""
+<th rowspan="2">외국인</th><th rowspan="2">기관계</th><th colspan="6">기관</th>
+<th rowspan="2">기타법인</th></tr>
+<tr><th class="sub">금융투자</th><th class="sub">보험</th><th class="sub">투신</th>
+<th class="sub">은행</th><th class="sub">기타금융기관</th><th class="sub">연기금등</th></tr>
+<tr><td>2026.08.14</td><td>-19,820</td><td>30,387</td><td>-10,298</td>
+<td>-11,634</td><td>210</td><td>-450</td><td>-80</td><td>-44</td><td>1,700</td>
+<td>-142</td></tr>
+<tr><td>2026.08.13</td><td>3,145</td><td>-659</td><td>-2,524</td>
+<td>-2,123</td><td>-50</td><td>-120</td><td>-20</td><td>-11</td><td>-200</td>
+<td>-103</td></tr></table>"""
 rows = F._from_html(HTML)
 ok("두 행을 읽었다", len(rows) == 2, f"({len(rows)}행)")
 d, vals = sorted(rows)[-1]
 check("최신 행의 날짜", d, D)
-check("주체 이름", sorted(vals), ["개인", "기관계", "외국인"])
+# 자리로 맞추므로 세부 항목이 '기관' 이름을 훔치지 않아야 한다
+check("주체 이름", sorted(vals), ["개인", "기관계", "기타법인", "외국인"])
+check("외국인", vals["외국인"], 30387)
+check("개인", vals["개인"], -19820)
+check("기관계", vals["기관계"], -10298)
+check("기타법인", vals["기타법인"], -142)
+ok("금융투자가 '기관'으로 새지 않았다", "기관" not in vals, str(vals))
 passed, why = F._score(vals)
-ok("합 검증 통과", passed, why)
-mul, note = F._unit(vals)
-check("단위 판정", note, "백만원→억원")
-conv = {k: round(v * mul) for k, v in vals.items()}
-# 이 숫자가 이 테스트의 핵심이다. 3조387억.
-check("외국인 순매수(억원)", conv["외국인"], 30387)
-check("개인 순매수(억원)", conv["개인"], -26500)
+# 3차 실행에서 여기가 0.37 로 나와 정상 데이터를 버렸다. 원인은 기관계+기관 이중계산.
+ok("합 검증 통과 (이중계산 없음)", passed, why)
+check("단위 판정", F._unit(vals)[1], "억원(그대로)")
+
+print("\n②-2 이중계산 회귀 — '기관계'와 '기관'이 함께 오면 하나만 센다")
+both = {"개인": -19820, "외국인": 30387, "기관계": -10298, "기관": -11634, "기타법인": -142}
+p2, w2 = F._score(both)
+ok("둘 다 있어도 통과해야 한다", p2, w2)
+
+print("\n②-3 백만원으로 오는 표 (칸이 적은 형태)")
+SMALL = """<table><tr><th>날짜</th><th>개인</th><th>외국인</th><th>기관계</th></tr>
+<tr><td>2026.08.14</td><td>-2,650,000</td><td>3,038,700</td><td>-420,000</td></tr></table>"""
+srows = F._from_html(SMALL)
+ok("한 행을 읽었다", len(srows) == 1, str(srows))
+if srows:
+    _, svals = srows[0]
+    ok("기타법인을 억지로 만들지 않는다", "기타법인" not in svals, str(svals))
+    smul, snote = F._unit(svals)
+    check("단위 판정", snote, "백만원→억원")
+    check("외국인(억원)", round(svals["외국인"] * smul), 30387)
 
 print("\n③ 껍데기만 온 응답 — 데이터 행이 없으면 빈 결과여야 한다")
 SHELL = """<table summary="일자별 순매수에 관한 표 입니다."><caption>일자별 순매수</caption>
@@ -117,7 +145,7 @@ if jrows:
 
 print("\n⑤ 오독 검출 — 컬럼을 잘못 읽으면 버려야 한다")
 # 세 주체가 모두 순매수면 있을 수 없다(누가 사면 누가 팔았다)
-bad = {"개인": 1000, "외국인": 2000, "기관계": 3000}
+bad = {"개인": 1000, "외국인": 2000, "기관계": 3000}   # 셋 다 순매수 = 있을 수 없다
 ok("합이 안 맞으면 거부", not F._score(bad)[0], F._score(bad)[1])
 ok("주체가 둘뿐이면 거부", not F._score({"개인": 1, "외국인": -1})[0])
 
