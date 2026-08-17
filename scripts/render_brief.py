@@ -53,6 +53,10 @@ DISC_EN = ("This material is compiled from regulatory filings (DART), Korean mar
 
 FIXED = {"모닝 브리핑": "Morning Brief"}
 
+# coverage 섹션 위에 붙는 출처 표시. 글에서도 밝히지만(프롬프트 6-1항) 화면에서
+# 한 번 더 보여 준다 — 이 섹션이 다른 섹션과 성격이 다르다는 걸 눈으로 알려야 한다.
+COV_LABEL = ("코사이 리포트 확인 지점", "From KOSAI report checkpoints")
+
 
 def log(*a):
     print(*a, file=sys.stderr, flush=True)
@@ -169,7 +173,12 @@ def build(doc):
         if h.get("en"):
             dic[to_key(h_ko)] = to_value(h["en"])
         L.append("")
-        L.append('    <section class="mb-sec">')
+        if sec.get("id") == "coverage":
+            dic[COV_LABEL[0]] = COV_LABEL[1]
+            L.append('    <section class="mb-sec mb-sec--cov">')
+            L.append(f'      <div class="mb-src">{html.escape(COV_LABEL[0])}</div>')
+        else:
+            L.append('    <section class="mb-sec">')
         L.append(f'      <h2>{to_html(h_ko)}</h2>')
         for p in sec.get("paragraphs") or []:
             row = pair(p)

@@ -416,6 +416,16 @@ KOSi18n.register({
 .mb-head h1{margin:0 0 16px;font:600 clamp(26px,4.4vw,38px)/1.22 var(--font-sans);color:var(--fg-1);letter-spacing:-.02em}
 .mb-lead{margin:0 0 14px;font:400 17.5px/1.62 var(--font-sans);color:var(--fg-1);text-wrap:pretty}
 .mb-meta{font:400 13px var(--font-sans);color:var(--fg-3)}
+/* 커버리지 섹션은 성격이 다르다 — 시황이 아니라 우리 리포트에서 나온 것이다.
+   글에서도 밝히지만(프롬프트 6-1항) 눈으로도 구분되게 왼쪽에 선을 두고
+   출처 표시를 얹는다. 이 섹션이 이 브리핑의 존재 이유다. */
+.mb-sec--cov{padding-left:18px;border-left:2px solid var(--brand-blue)}
+.mb-src{font:700 11.5px var(--font-sans);letter-spacing:.06em;color:var(--brand-blue);
+  text-transform:none;margin-bottom:8px}
+:root[data-theme="dark"] .mb-sec--cov{border-left-color:var(--brand-cyan)}
+:root[data-theme="dark"] .mb-src{color:var(--brand-cyan)}
+@media (max-width:640px){.mb-sec--cov{padding-left:14px}}
+
 .mb-sec{margin:0 0 34px}
 .mb-sec h2{margin:0 0 14px;font:600 15px var(--font-sans);color:var(--fg-2);
   letter-spacing:.02em;padding-bottom:8px;border-bottom:1px solid var(--hair)}
