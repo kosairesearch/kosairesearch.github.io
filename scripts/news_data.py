@@ -26,6 +26,7 @@ import json
 import re
 import sys
 import xml.etree.ElementTree as ET
+from pathlib import Path
 
 import requests
 
@@ -36,9 +37,10 @@ KST = datetime.timezone(datetime.timedelta(hours=9))
 # 이 표현이 제목에 있으면 버린다. 투자권유로 읽히는 문장이 브리핑에
 # 흘러드는 경로를 여기서 끊는다.
 DROP = re.compile(
-    r"목표가|목표주가|매수\s*추천|매도\s*추천|지금\s*사|사야\s*할|급등주|"
-    r"유망주|수익률\s*\d|추천\s*종목|무료\s*상담|리딩|카톡|텔레그램|"
-    r"단독\s*공개|비법|대박")
+    r"목표가|목표주가|주가\s*전망|매수\s*추천|매도\s*추천|지금\s*사|사야\s*할|"
+    r"급등주|유망주|수익률\s*\d|추천\s*종목|무료\s*상담|리딩|카톡|텔레그램|"
+    r"단독\s*공개|비법|대박|긴급\s*속보|세력|작전주|이것만|필독|"
+    r"\d+배\s*수익|얼마나\s*될까")
 
 QUERIES_KO = [
     ("시황", "코스피 마감 외국인 순매수"),
@@ -55,12 +57,33 @@ def log(*a):
     print(*a, file=sys.stderr, flush=True)
 
 
+def window_hours(default=54):
+    """기사를 몇 시간 전까지 볼 것인가.
+
+    48시간으로 고정했더니 8월 17일(광복절 대체공휴일) 드라이런에서 '시황'이
+    0건으로 나왔다. 직전 거래일이 14일 금요일이라 마감 기사가 이미 72시간
+    전이었기 때문이다. 그래서 휴장으로 벌어진 만큼 창을 늘린다.
+    """
+    try:
+        sys.path.insert(0, str(Path(__file__).resolve().parent))
+        from market_data import open_today
+        _, around = open_today()
+        if around:
+            prev = datetime.date.fromisoformat(around["prev"])
+            gap = (datetime.datetime.now(KST).date() - prev).days
+            return max(default, gap * 24 + 30)
+    except Exception as e:
+        log(f"· 조회 창 계산 실패, 기본 {default}시간: {e}")
+    return default
+
+
 def _clean(s):
     return re.sub(r"\s+", " ", _html.unescape(s or "")).strip()
 
 
-def rss(query, hl="ko", gl="KR", ceid="KR:ko", limit=12, since_hours=48):
+def rss(query, hl="ko", gl="KR", ceid="KR:ko", limit=12, since_hours=None):
     """구글 뉴스 RSS. 최근 것만, 제목·매체·링크만."""
+    since_hours = since_hours or window_hours()
     url = ("https://news.google.com/rss/search?q=" + requests.utils.quote(query)
            + f"&hl={hl}&gl={gl}&ceid={ceid}")
     try:
@@ -175,7 +198,7 @@ def main():
     tks = [t.strip() for t in (a.tickers or "").split(",") if t.strip()]
     if tks:
         try:
-            sys.path.insert(0, str(__file__.rsplit("/", 1)[0]))
+            sys.path.insert(0, str(Path(__file__).resolve().parent))
             from brief_data import load_stocks
             stocks, _, _ = load_stocks()
             names = {s["ticker"]: s.get("name") for s in stocks}

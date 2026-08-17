@@ -9,7 +9,8 @@
   python3 scripts/brief_data.py --json    # generate_brief.py 가 먹는 형태
 
 무엇을 모으나
-  · 지수·수급   pykrx (없으면 생략 — 브리핑은 그래도 나간다)
+  · 지수        yfinance (market_data.py)
+  · 수급        네이버 금융 (flows.py) — KRX 는 Actions 아이피를 막는다
   · 등락        data/stocks.js 의 change/trading_value
   · 섹터        시총가중 등락률
   · 공시        DART 정기보고서 신규 접수 (check_filings.py 와 같은 방식)
@@ -244,51 +245,48 @@ def market_calendar(today=None):
     }
 
 
-# ────────────────────────────── 지수·수급 (선택) ──────────────────────────────
+# ────────────────────────────── 지수·수급 ──────────────────────────────
 
 def index_and_flows(trade_date):
-    """pykrx 로 지수·투자자별 수급을 받는다. 실패하면 None — 브리핑은 계속된다.
+    """지수와 투자자별 순매수. 못 받으면 (None, None) — 브리핑은 계속된다.
 
-    지수를 못 받았다고 브리핑을 통째로 거르면 안 된다. 우리 브리핑의 값은
-    커버리지 종목 이야기에 있지 지수 숫자에 있지 않다.
+    원래 pykrx 로 둘 다 받았다. 그런데 KRX 가 GitHub Actions 아이피를 403
+    으로 막아서 전부 죽는다. 실패하는 데 40초를 쓰고 로그만 더럽혔다.
+    그래서 갈랐다 — 지수는 yfinance(market_data), 수급은 네이버(flows).
     """
+    sys.path.insert(0, str(Path(__file__).resolve().parent))
+
+    idx = {}
     try:
-        from pykrx import stock
-    except ImportError:
-        log("· pykrx 없음 — 지수·수급 생략")
-        return None, None
+        from market_data import fetch as _fetch
+        ser = _fetch()
+        for key in ("kospi", "kosdaq"):
+            v = ser.get(key)
+            if v and v.get("close") is not None:
+                idx[key] = {"close": v["close"], "change": v.get("change"),
+                            "date": v.get("date")}
+    except Exception as e:
+        log(f"· 지수 조회 실패: {type(e).__name__} {e}")
 
-    idx, flows = {}, {}
-    for name, code in (("kospi", "1001"), ("kosdaq", "2001")):
-        try:
-            df = stock.get_index_ohlcv(trade_date, trade_date, code)
-            if df is None or df.empty:
-                continue
-            r = df.iloc[-1]
-            close, op = float(r["종가"]), float(r["시가"])
-            idx[name] = {
-                "close": round(close, 2),
-                "change": round(float(r.get("등락률", 0.0)), 2),
-                "open": round(op, 2),
-                "volume": int(r.get("거래량", 0) or 0),
-            }
-        except Exception as e:
-            log(f"· 지수({name}) 조회 실패: {e}")
+    flows = {}
+    try:
+        from flows import collect as _flows
+        f = _flows()
+        for key in ("kospi", "kosdaq"):
+            v = f.get(key)
+            if v:
+                flows[key] = v["values"] | {"_date": v["date"]}
+    except Exception as e:
+        log(f"· 수급 조회 실패: {type(e).__name__} {e}")
 
-    for name, mkt in (("kospi", "KOSPI"), ("kosdaq", "KOSDAQ")):
-        try:
-            df = stock.get_market_trading_value_by_investor(trade_date, trade_date, mkt)
-            if df is None or df.empty:
-                continue
-            # 억원 단위로 줄여서 넘긴다 — 모델에게 원 단위 13자리를 주면 자릿수를 틀린다.
-            pick = {}
-            for label, key in (("외국인", "foreign"), ("기관합계", "institution"), ("개인", "retail")):
-                if label in df.index:
-                    pick[key] = round(float(df.loc[label, "순매수거래대금"]) / 1e8)
-            if pick:
-                flows[name] = pick
-        except Exception as e:
-            log(f"· 수급({name}) 조회 실패: {e}")
+    # 지수 날짜가 우리 시세 날짜와 다르면 표시해 둔다. 브리핑에서 "8월 14일
+    # 코스피"라고 쓰는데 실제로는 다른 날 값이면 안 된다.
+    for key, v in idx.items():
+        if v.get("date") and trade_date:
+            want = f"{trade_date[:4]}-{trade_date[4:6]}-{trade_date[6:]}"
+            if v["date"] != want:
+                log(f"· 지수({key}) 날짜 불일치: {v['date']} vs 거래일 {want}")
+                v["dateMismatch"] = True
 
     return (idx or None), (flows or None)
 
@@ -414,12 +412,15 @@ def summarize(d):
          f"  (stocks.js 갱신 {d['dataUpdated']})"]
     if d["index"]:
         for k, v in d["index"].items():
-            L.append(f"  지수 {k.upper():6} {v['close']:>10,.2f}  {v['change']:+.2f}%")
+            ch = f"{v['change']:+.2f}%" if v.get("change") is not None else "   —  "
+            warn = "  ⚠️날짜불일치" if v.get("dateMismatch") else ""
+            L.append(f"  지수 {k.upper():6} {v['close']:>10,.2f}  {ch}  ({v.get('date')}){warn}")
     else:
-        L.append("  지수 — 없음(pykrx 미설치 또는 조회 실패)")
+        L.append("  지수 — 없음(조회 실패)")
     if d["flows"]:
         for k, v in d["flows"].items():
-            L.append(f"  수급 {k.upper():6} " + " · ".join(f"{a} {b:+,}억" for a, b in v.items()))
+            body = " · ".join(f"{a} {b:+,}억" for a, b in v.items() if not a.startswith("_"))
+            L.append(f"  수급 {k.upper():6} {v.get('_date', '')}  {body}")
 
     b = d["breadth"]
     L.append(f"  장폭  시총가중 {b['weighted']:+.2f}% · 중앙값 {b['median']:+.2f}% · "
