@@ -1,220 +1,230 @@
 {
  "title": {
-  "ko": "통신 본업 회복과 AI 전환의 시험대",
-  "en": "Core Telecom Recovery Meets the AI Transition Test"
+  "ko": "AX 성장과 해킹 후속 비용의 교차점",
+  "en": "AX Growth Meets Post-Breach Costs"
  },
  "lead": {
-  "ko": "2025년 이익 회복 이후 일회성 기저와 해킹 후속비용으로 2026년 초 실적은 숨 고르기에 들어갔고, 데이터센터·AX 사업과 주주환원 정책이 향후 변수입니다.",
-  "en": "After a strong 2025 earnings recovery, KT paused in early 2026 amid a high one-off base and post-breach costs, with data centers, AX, and shareholder returns now the key variables."
+  "ko": "2025년 이익이 크게 회복된 뒤 2026년 상반기는 부동산 분양이익 역기저와 해킹 후속 비용·과징금이 겹쳤고, 회사는 AX(인공지능 전환)·데이터센터 성장과 자사주 소각·최소배당을 축으로 한 중기 계획을 제시했다.",
+  "en": "After a sharp 2025 earnings recovery, the first half of 2026 was hit by a tough real-estate profit comparison plus post-breach costs and a regulatory fine, while management laid out a medium-term plan centered on AX/data-center growth, buyback cancellations and a dividend floor."
  },
  "keypoints": [
   {
-   "ko": "2025년 연결 영업이익은 2.47조원으로 전년(0.81조원) 대비 큰 폭 회복했고, 영업이익률도 8.7%로 올라섰습니다.",
-   "en": "2025 consolidated operating profit rebounded sharply to KRW 2.47tn from KRW 0.81tn a year earlier, lifting the operating margin to 8.7%."
+   "ko": "확정 재무 기준 2025년 매출 28조2,442억원, 영업이익 2조4,691억원(영업이익률 8.7%), 지배주주 순이익 1조7,310억원으로 2024년(영업이익 8,095억원, 이익률 3.1%)의 부진에서 크게 회복됐다.",
+   "en": "On confirmed figures, 2025 revenue was KRW 28.24tn with operating profit of KRW 2.469tn (8.7% margin) and owners' net profit of KRW 1.731tn, a sharp recovery from 2024 (operating profit KRW 809.5bn, 3.1% margin)."
   },
   {
-   "ko": "2026년 1분기는 전년 동기 부동산 분양이익 기저와 펨토셀 해킹 관련 고객 보답 프로그램 비용으로 영업이익이 4,827억원에 그쳤습니다.",
-   "en": "Q1 2026 operating profit was held to KRW 482.7bn by a high prior-year real-estate gain base and customer-compensation costs tied to a femtocell hacking incident."
+   "ko": "2025년 2분기 영업이익 1조148억원에는 대규모 부동산 개발 분양이익이 반영됐고, 2026년 2분기에는 매출 6조6,799억원, 영업이익 6,483억원으로 전년 동기 대비 각각 10.1%, 36.1% 감소했다.",
+   "en": "Q2 2025 operating profit of KRW 1.015tn included a large property development pre-sale gain, and Q2 2026 revenue of KRW 6.68tn and operating profit of KRW 648.3bn were down 10.1% and 36.1% year on year."
   },
   {
-   "ko": "신임 박윤영 대표 체제가 AI 조직을 전면 재편하고, 마이크로소프트 파트너십을 유지하면서 산업 특화·에이전틱 AI로 무게중심을 옮기고 있습니다.",
-   "en": "New CEO Park Yoon-young has overhauled the AI organization, keeping the Microsoft partnership while shifting focus toward vertical and agentic AI."
+   "ko": "2026년 2분기 AX 사업 매출은 금융권 AI 도입 확대와 KT클라우드 성장으로 전년 동기 대비 22.3% 증가했고, 상반기에만 금융권 AX 사업 22건을 수주했다.",
+   "en": "Q2 2026 AX revenue rose 22.3% year on year on financial-sector AI adoption and KT Cloud growth, with 22 financial-sector AX deals won in the first half alone."
   },
   {
-   "ko": "KT클라우드는 가산 AIDC 등 데이터센터 증설과 GPU 인프라 확대로 두 자릿수 성장을 이어가는 핵심 포트폴리오입니다.",
-   "en": "KT Cloud is a core growth portfolio, sustaining double-digit growth via data-center expansion such as the Gasan AIDC and broader GPU infrastructure."
+   "ko": "지난달 개인정보보호위원회가 부과한 540억원 규모 과징금이 2026년 2분기 영업외비용으로 반영됐다.",
+   "en": "A KRW 54bn fine imposed by the privacy regulator last month was booked as a non-operating expense in Q2 2026."
   },
   {
-   "ko": "회사는 3년 중기 주주환원 정책과 2026년 최소 DPS 2,400원, 2,500억원 자사주 매입·소각을 제시했습니다.",
-   "en": "KT has set a three-year shareholder-return policy, a minimum 2026 DPS of KRW 2,400, and KRW 250bn in share buybacks and cancellations."
+   "ko": "2026~2028년 주주환원율 50%를 유지하고 올해 연간 최소 주당배당금을 2,400원으로 상향했으며, 3년간 7,500억원 자사주 매입·소각과 올해 2,500억원 매입(9월 9일 완료 예정)을 병행한다.",
+   "en": "A 50% payout ratio is maintained for 2026-2028 and the annual minimum dividend per share was raised to KRW 2,400, alongside KRW 750bn of buybacks and cancellations over three years, including this year's KRW 250bn program due to complete on 9 September."
   }
  ],
  "business": {
-  "ko": "KT는 무선·유선·미디어를 축으로 한 통신 본업에 더해 데이터센터·클라우드, 부동산(KT에스테이트), 금융(BC카드·케이뱅크), 콘텐츠·미디어 자회사를 거느린 그룹형 사업구조를 갖췄습니다. 2026년 1분기 별도 기준 매출은 4조 8,346억원이며, 무선 사업은 위약금 면제 기간 중 일부 가입자 이탈에도 2월 이후 순증 전환하며 서비스 매출이 전년 동기 대비 0.4% 증가했습니다. 1분기 말 기준 5G 가입자 비중은 전체 핸드셋 가입자의 82.7%를 기록했습니다. B2B(기업서비스) 영역에서는 AICC·IoT·스마트모빌리티 등 성장사업과 클라우드·데이터센터가 비통신 매출의 중심축입니다. KT클라우드는 데이터센터와 AI·클라우드 수요를 바탕으로 매출을 유지했고, 가산 데이터센터 가동률 확대와 AI 파운드리 사업으로 공공·기업 AI 클라우드 시장 공략을 강화하며 연간 두 자릿수 성장을 이어갈 계획입니다. 부동산 부문은 KT에스테이트가 대전 괴정동 아파트 분양 사업 공정률 확대로 1분기 매출이 전년 동기 대비 72.9% 늘어난 2,374억원을 기록하며 그룹 이익에 기여했습니다. 금융 부문에서는 케이뱅크가 2026년 3월 코스피 상장을 완료했고, 3월 말 수신 28조 2,200억원·여신 18조 7,500억원, 총 고객 1,607만 명을 확보했습니다. 경쟁 구도는 SK텔레콤·LG유플러스와의 통신 3사 과점이 기본이며, AI 인프라·데이터센터 영역에서는 네이버클라우드·삼성SDS 등과도 경쟁이 확대되고 있습니다. 회사는 통신 본원 경쟁력 회복과 AICT(AI+통신) 기업으로의 전환을 동시에 추진하고 있습니다.",
-  "en": "KT operates a group structure that combines its core wireless, fixed-line, and media telecom business with data centers and cloud, real estate (KT Estate), finance (BC Card, K Bank), and content/media subsidiaries. On a separate basis, Q1 2026 revenue was KRW 4.835tn, and despite some subscriber churn during a penalty-waiver period, the wireless business returned to net additions after February, with service revenue up 0.4% year over year. As of the end of Q1, 5G subscribers accounted for 82.7% of total handset subscribers. In B2B (enterprise services), growth businesses such as AICC, IoT, and smart mobility, plus cloud and data centers, anchor non-telecom revenue. KT Cloud held revenue on data-center and AI/cloud demand and plans to keep growing at a double-digit annual pace by ramping the Gasan data center and expanding its AI foundry business to target public and enterprise AI cloud markets. In real estate, KT Estate posted Q1 revenue of KRW 237.4bn, up 72.9% year over year, as the Daejeon Goejeong-dong apartment project advanced. In finance, K Bank completed its KOSPI listing in March 2026, with deposits of KRW 28.22tn and loans of KRW 18.75tn at end-March and a total of 16.07mn customers. The competitive landscape is anchored by the three-carrier oligopoly with SK Telecom and LG Uplus, while competition in AI infrastructure and data centers is widening to include Naver Cloud and Samsung SDS. The company is simultaneously pursuing recovery of its core telecom strength and a transition into an AICT (AI plus telecom) company."
+  "ko": "KT는 무선·유선 통신을 기반으로 미디어, 기업서비스(B2B), 클라우드·데이터센터, 부동산, 금융, 콘텐츠 자회사를 아우르는 그룹 구조를 갖고 있다. 본업인 무선은 성숙 단계로, 2026년 2분기 말 5G 가입자 비중이 전체 핸드셋 가입자의 83.2%에 달하고 유선 매출은 가입자 기반 확대에도 홈유선전화 감소 영향으로 전년 동기 대비 소폭 줄었다. 성장축으로 내세우는 영역은 AX·클라우드로, KT클라우드는 가산 데이터센터 가동률 상승과 설계·구축·운영(DBO) 사업 확대로 2026년 2분기 매출 2,654억원, 전년 동기 대비 19.8% 증가를 기록했다. 데이터센터 사업은 가산 가동 효과와 DBO 확대가 실적을 견인했고, 서울-경북 멀티 리전 기반 공공 클라우드 구축을 완료해 재해복구와 고가용성을 강화했다. 기업용 AI에서는 국내 5대 시중은행 가운데 4곳의 AI 챗봇·상담봇 등 AICC 구축·운영을 맡고 있다. 비통신 축으로는 KT에스테이트가 대전 둔산 개발사업 실적 반영과 부동산 매각 효과로 개선세를 이어갔고 오피스·호텔 사업도 안정적 흐름을 보였으며, 케이뱅크는 2026년 6월 말 수신 26조6,000억원, 여신 19조8,000억원, 2분기 고객 수 1,645만명을 기록했다. 콘텐츠 계열은 KT나스미디어(광고), KT스튜디오지니(오리지널 콘텐츠·OTT 파트너십), KT밀리의서재(전자책 구독)로 구성된다. 다만 매출 구성의 중심은 여전히 통신이며, 한 언론의 기업설명 자료 기반 분석(2026년 2월)에 따르면 AI·IT 영역 매출 비중은 2023년 약 6%, 2024년 약 7% 내외로 한 자릿수 후반 수준에 머물렀다. 경쟁 구도는 SK텔레콤·LG유플러스와의 3사 체제이며, 최근에는 무선 점유율보다 AI 데이터센터·B2B AI 수주 경쟁의 비중이 커지고 있다.",
+  "en": "KT combines wireless and fixed-line telecom with media, B2B enterprise services, cloud and data centers, real estate, banking and content subsidiaries. The core wireless business is mature: 5G users accounted for 83.2% of total handset subscribers at end-Q2 2026, while fixed-line revenue slipped slightly year on year as home fixed voice declined despite a wider subscriber base. The designated growth axis is AX and cloud: KT Cloud posted Q2 2026 revenue of KRW 265.4bn, up 19.8% year on year, on higher utilization at the Gasan data center and expansion of design-build-operate (DBO) work. The data center business was driven by Gasan ramp-up and DBO growth, and the company completed a Seoul-Gyeongbuk multi-region public cloud build that strengthens disaster recovery and high availability. In enterprise AI, KT builds and operates AI chatbot and contact-center systems for four of Korea's five largest commercial banks. On the non-telecom side, KT Estate kept improving on the Daejeon Dunsan development and property disposals, with steady office and hotel operations, and K Bank reported deposits of KRW 26.6tn and loans of KRW 19.8tn at end-June 2026, with 16.45 million customers in Q2. The content affiliates are KT Nasmedia (advertising), KT Studio Genie (original content and OTT partnerships) and KT Millie's Library (e-book subscriptions). Telecom still dominates the revenue mix, however: one media analysis based on IR materials (February 2026) estimated the AI/IT share of revenue at roughly 6% in 2023 and about 7% in 2024, remaining in the high single digits. Competition is a three-way contest with SK Telecom and LG Uplus, where AI data center and B2B AI order wins increasingly matter more than wireless share."
  },
  "earnings": {
-  "ko": "연간 실적은 회복 흐름이 뚜렷합니다. 2025년 연결 매출은 28조 2,442억원, 영업이익 2조 4,691억원, 지배주주 순이익 1조 7,310억원으로, 영업이익률 8.7%·ROE 9.8%를 기록했습니다. 이는 영업이익 8,095억원(영업이익률 3.1%)에 그쳤던 2024년에서 큰 폭으로 개선된 수치로, 2024년에는 일회성 비용 부담이 이익을 크게 눌렀던 것으로 보입니다. 2023년(영업이익 1조 6,498억원)과 2022년(1조 6,901억원)과 비교해도 2025년 이익 수준이 한 단계 올라섰습니다. 다만 분기 흐름을 보면 2025년 1분기 영업이익 6,888억원, 2분기 1조 148억원으로 상반기에 집중됐는데, 여기에는 부동산 분양이익 등 일회성 요인이 포함됐습니다. 2026년 1분기 연결 매출은 6조 7,784억원, 영업이익은 4,827억원으로, 전년 동기 일회성 분양이익에 따른 높은 기저 영향으로 감소했으나 KT에스테이트와 콘텐츠 그룹사 실적 개선으로 감소 폭은 일부 완화됐습니다. 강북개발사업(NCP) 분양이익에 따른 기저효과와 함께, 위약금 면제 기간 약 23만 8천 명의 가입자 이탈, 약 4,500억원 규모의 고객 보답 프로그램 및 침해사고 대응 비용이 실적에 반영됐습니다. 영업활동현금흐름은 2025년 4조 9,417억원으로 꾸준한 현금 창출력을 유지했고, 부채비율은 120.7%로 전년(132.7%) 대비 개선됐습니다. 회사는 1분기 실적발표 컨퍼런스콜에서 지난해 고객 침해사고 영향을 제외한 연간 조정 영업이익 1.5조원 수준을 올해도 달성하겠다고 밝혔습니다.",
-  "en": "Annual results show a clear recovery. In 2025, consolidated revenue was KRW 28.244tn, operating profit KRW 2.469tn, and net profit attributable to owners KRW 1.731tn, with an operating margin of 8.7% and ROE of 9.8%. That marks a sharp improvement from 2024, when operating profit was just KRW 809.5bn (3.1% margin), a year apparently weighed down heavily by one-off costs. Compared with 2023 (operating profit KRW 1.650tn) and 2022 (KRW 1.690tn), the 2025 profit level stepped up a notch. By quarter, however, 2025 operating profit was concentrated in the first half at KRW 688.8bn in Q1 and KRW 1.015tn in Q2, which included one-off items such as real-estate sales gains. Q1 2026 consolidated revenue was KRW 6.778tn and operating profit KRW 482.7bn, down on a high prior-year base from a one-off development gain, though the decline was partly cushioned by improved results at KT Estate and content subsidiaries. Alongside the base effect from the Gangbuk development project (NCP) sales gain, results reflected the loss of about 238,000 subscribers during a penalty-waiver period and roughly KRW 450bn in customer-compensation programs and breach-response costs. Operating cash flow held up at KRW 4.942tn in 2025, and the debt ratio improved to 120.7% from 132.7% a year earlier. On the Q1 earnings call, the company said it aims to again reach an adjusted annual operating profit of around KRW 1.5tn this year, excluding last year's customer-breach impact."
+  "ko": "확정 재무 기준 2025년 연결 매출은 28조2,442억원으로 2024년 26조4,312억원 대비 늘었고, 영업이익은 8,095억원에서 2조4,691억원으로 급증하며 영업이익률이 3.1%에서 8.7%로 상승했다. 지배주주 순이익도 4,171억원에서 1조7,310억원으로 확대됐다. 다만 이익 회복의 상당 부분은 비경상 요인과 부동산 성과가 맞물린 결과로, 2025년 분기 흐름을 보면 2분기 영업이익 1조148억원이 정점이었고 이 분기에는 강북본부 부지 개발사업의 분양매출과 이익이 반영됐다. 이후 2025년 3분기 5,382억원, 4분기 2,274억원(지배주주 순이익 1,117억원)으로 급격히 낮아졌고, 2026년 1분기에는 매출 6조7,784억원·영업이익 4,827억원·지배주주 순이익 3,522억원을 기록했다. 회사가 8월 12일 공시한 2026년 2분기는 매출 6조6,799억원, 영업이익 6,483억원으로 전년 동기 대비 각각 10.1%, 36.1% 감소했으나 전 분기 대비 영업이익은 34.3% 증가했다. 상반기 누적으로는 매출 13조4,583억원(-5.7%), 영업이익 1조1,310억원(-33.6%)이다. 손익의 질 측면에서 부정적 요인은 두 가지가 뚜렷하다. 무선은 고객 보답 프로그램 영향으로 서비스 매출이 1.8% 감소했고, 개인정보보호위원회 과징금 540억원이 2026년 2분기 영업외비용으로 반영돼 순이익이 전년 동기 대비 34.5% 줄었다. 현금흐름과 재무구조는 상대적으로 안정적으로, 영업활동현금흐름은 2023년 5조5,033억원, 2024년 5조658억원, 2025년 4조9,417억원으로 4조~5조원대를 유지했고 부채비율은 2024년 132.7%에서 2025년 120.7%로 낮아졌다.",
+  "en": "On confirmed figures, 2025 consolidated revenue rose to KRW 28.244tn from KRW 26.431tn in 2024, while operating profit jumped from KRW 809.5bn to KRW 2.469tn, lifting the operating margin from 3.1% to 8.7%. Owners' net profit expanded from KRW 417.1bn to KRW 1.731tn. Much of that recovery, however, reflected non-recurring and property-related items: within 2025, Q2 operating profit of KRW 1.015tn was the peak, and that quarter included pre-sale revenue and profit from the Gangbuk headquarters site development. Quarterly operating profit then fell to KRW 538.2bn in Q3 2025 and KRW 227.4bn in Q4 2025 (owners' net profit KRW 111.7bn), before Q1 2026 revenue of KRW 6.778tn, operating profit of KRW 482.7bn and owners' net profit of KRW 352.2bn. For Q2 2026, disclosed on 12 August, revenue was KRW 6.68tn and operating profit KRW 648.3bn, down 10.1% and 36.1% year on year but up 34.3% quarter on quarter at the operating line. First-half revenue was KRW 13.458tn (-5.7%) with operating profit of KRW 1.131tn (-33.6%). Two negatives on earnings quality stand out: wireless service revenue fell 1.8% because of the customer compensation program, and the KRW 54bn privacy-regulator fine was booked as a Q2 2026 non-operating expense, contributing to a 34.5% year-on-year drop in net profit. Cash generation and leverage look steadier: operating cash flow was KRW 5.503tn in 2023, KRW 5.066tn in 2024 and KRW 4.942tn in 2025, while the debt-to-equity ratio eased from 132.7% in 2024 to 120.7% in 2025."
  },
  "industry": {
-  "ko": "국내 통신시장은 스마트폰 보급률 포화로 전통적 무선 ARPU 성장세가 둔화한 가운데, AI 인프라가 새로운 수익원으로 부상하고 있습니다. 2026년 1분기 통신 3사 실적의 함의는 수익 구조가 무선 중심에서 AI 인프라로 옮겨가고 있다는 점이며, AI 인프라가 새로운 현금 창출원으로 안착하고 있습니다. SK텔레콤과 LG유플러스는 AI 데이터센터 사업을 앞세워 실적 반등에 성공한 반면, KT는 일회성 이익에 따른 역기저 효과로 숨 고르기에 들어간 모습입니다. 규제 측면에서는 5G 단독모드(SA) 전환이 업황의 핵심 변수입니다. 정부는 2026년 만료되는 3G·LTE 주파수 재할당대가를 약 15% 낮추고 5G SA 전환을 의무화하면서, 구축된 5G 무선국을 2026년 말까지 단독망 코어장비에 연결하도록 요구했습니다. 국내에서는 KT만 5G SA 상용망을 구축한 상황으로, 이 영역에서 상대적 우위를 강조하고 있습니다. 통신사가 신규 5G 실내 무선국을 2만국 이상 구축하면 재할당대가가 약 2조9000억원 수준까지 줄어드는 인센티브 구조도 도입됐습니다. 데이터센터 영역에서는 KT클라우드가 코로케이션·AIDC 비중이 높아 물리 인프라 중심 확장이 두드러지며, 네이버클라우드·삼성SDS 등 K-클라우드 사업자들과 GPU 확보·증설 경쟁이 격화되고 있습니다.",
-  "en": "Korea's telecom market faces slowing wireless ARPU growth amid smartphone saturation, while AI infrastructure is emerging as a new revenue source. The takeaway from Q1 2026 carrier results is that the revenue mix is shifting from wireless toward AI infrastructure, with AI infrastructure settling in as a new cash generator. SK Telecom and LG Uplus rebounded by leaning on AI data-center businesses, while KT paused due to a reverse base effect from prior one-off gains. On the regulatory front, the shift to 5G standalone (SA) is a key industry variable. The government cut the reallocation fee for 3G/LTE spectrum expiring in 2026 by about 15% and mandated the 5G SA transition, requiring deployed 5G base stations to connect to standalone core equipment by end-2026. Domestically, only KT has built a commercial 5G SA network, an advantage the company emphasizes. An incentive structure was also introduced under which the reallocation fee could fall to around KRW 2.9tn if carriers build at least 20,000 new indoor 5G base stations. In data centers, KT Cloud's high share of colocation and AIDC stands out as physical-infrastructure-led expansion, and competition over GPU procurement and capacity is intensifying with K-cloud players such as Naver Cloud and Samsung SDS."
+  "ko": "국내 통신 시장은 무선 성숙 국면에서 데이터센터·기업용 AI가 성장 축으로 이동하는 전환기에 있다. 2026년 2분기 SK텔레콤은 매출 4조3,591억원, 영업이익 5,660억원으로 각각 0.5%, 67.3% 증가했고 LG유플러스는 매출 3조6,949억원(-3.9%), 영업이익 3,445억원(+13.1%)으로 역대 분기 최대 영업이익을 기록했다. 같은 기간 KT만 매출과 영업이익이 각각 10.1%, 36.1% 감소해 3사 실적 방향이 엇갈렸다. 반면 AI 데이터센터는 3사 공통의 성장 영역으로, SK텔레콤 AIDC 매출은 1,362억원(+92.5%), LG유플러스는 1,241억원(+28.9%)을 기록했다. 설비 경쟁도 본격화되고 있는데 LG유플러스는 약 2조원을 투입해 200MW급 파주 AIDC를 건설 중이며 내년 상반기 전산 1동 개소를 예정하고 있다. 이러한 흐름에 대해 iM증권 신희철 연구원은 코로케이션과 GPU 대여 등 B2B 중심 수익모델이 저성장 국면의 무선통신 사업을 보완할 돌파구가 될 것이라고 분석했다. 규제 환경은 강화 방향으로, 개인정보보호위원회는 조사 착수 전 증거 은닉·폐기에 대한 형사처벌 규정 신설과 전체 매출의 3%까지 과징금을 부과하는 방안을 추진할 계획이다. 요컨대 통신 3사는 유사한 성장 스토리를 공유하되, 전력·부지 확보 속도와 보안·신뢰 회복 정도에서 차별화되는 구간에 있다.",
+  "en": "Korea's telecom market is in transition, with growth shifting from mature wireless to data centers and enterprise AI. In Q2 2026 SK Telecom posted revenue of KRW 4.359tn (+0.5%) and operating profit of KRW 566bn (+67.3%), while LG Uplus reported revenue of KRW 3.695tn (-3.9%) and record quarterly operating profit of KRW 344.5bn (+13.1%). Only KT saw both revenue and operating profit decline, by 10.1% and 36.1%, leaving the three carriers' results diverging. AI data centers, by contrast, grew across all three: SK Telecom's AIDC revenue reached KRW 136.2bn (+92.5%) and LG Uplus's KRW 124.1bn (+28.9%). Capacity competition is intensifying, as LG Uplus is investing roughly KRW 2tn in a 200MW Paju AIDC and plans to open its first building in the first half of next year. On this shift, iM Securities analyst Shin Hee-cheol argued that B2B-centric models such as colocation and GPU rental will serve as a breakthrough complementing the low-growth wireless business. The regulatory backdrop is tightening: the privacy commission plans to introduce criminal penalties for concealing or destroying evidence before an investigation and to pursue fines of up to 3% of total revenue. In short, the three carriers share a similar growth narrative but differ in how fast they secure power and sites and how quickly they restore security credibility."
  },
  "outlook": {
-  "ko": "전망의 중심에는 통신 본업 안정화와 AI·데이터센터 사업의 수익화 속도가 있습니다. 회사는 2분기부터 판매비 등 영업비용 관리를 통해 이익을 관리하고, 부동산·데이터센터·클라우드·콘텐츠 등 핵심 포트폴리오 중심으로 성장세를 이어가겠다는 방침입니다. AI 전략에서는 신임 경영진이 조직을 재편했습니다. 박윤영 대표는 기존 기술혁신부문을 해체하고 AX미래기술원과 AX사업부문을 신설하며 산재한 AI 기능을 통합했으나, 독자 AI 파운데이션 모델 탈락과 MS 협력 논란 등 해소 과제도 남아 있습니다. 전략의 무게중심은 범용 LLM 경쟁이 아닌 금융·공공·통신 등 산업 특화 AI와 에이전틱 AI에 있으며, MS·팔란티어 파트너십은 유지하면서 자체 모델을 고도화하는 멀티 AI 전략을 병행합니다. 데이터센터에서는 KT클라우드가 기존 2030년 320MW 목표를 수정해 2027년까지 500MW 규모 전력 확보를 새로 제시하고, 가산 AI DC와 경북 CDC 등 거점을 중심으로 하이퍼스케일 인프라 경쟁에 대응할 계획입니다. 주주환원과 관련해 회사는 올해부터 3년간 별도 기준 조정 당기순이익의 50%를 환원 재원으로 활용하는 중기 정책을 발표했고, 2026년 연간 최소 주당 배당금(DPS)을 2,400원으로 제시했습니다. 또 2월 2,500억원 규모의 자사주 매입·소각 계획을 발표하고 3월부터 6개월간 신탁계약을 통해 자사주 매입을 진행 중입니다.",
-  "en": "The outlook centers on stabilizing the core telecom business and the pace of monetizing AI and data-center operations. The company plans to manage profit through control of operating expenses such as marketing costs from Q2 and to keep growing around core portfolios including real estate, data centers, cloud, and content. On AI strategy, new management has reshaped the organization. CEO Park Yoon-young dissolved the former technology-innovation division and created the AX Future Technology Institute and an AX business division to consolidate scattered AI functions, though challenges remain, including the rejection of its proprietary AI foundation model and controversy over the Microsoft partnership. The strategic focus is on industry-specific and agentic AI in finance, public, and telecom rather than competing on general-purpose LLMs, while maintaining the Microsoft and Palantir partnerships and running a multi-AI strategy that also advances its own models. In data centers, KT Cloud revised its earlier 320MW target for 2030 and now aims to secure 500MW of power by 2027, responding to hyperscale competition around hubs such as the Gasan AI DC and the Gyeongbuk CDC. On shareholder returns, the company announced a three-year mid-term policy using 50% of separate-basis adjusted net income as the return pool and set a minimum 2026 DPS of KRW 2,400. It also announced a KRW 250bn share buyback-and-cancellation plan in February and has been buying back shares via a trust contract for six months from March."
+  "ko": "회사는 2026년 2분기 실적 발표를 기관 대상 행사로 대체하며 중기 계획을 구체화했다. 2026 KT 코퍼레이트데이에서 2028년까지 AX 매출을 2배 이상 키우고 연결 영업이익률 9%를 달성하겠다고 밝혔으며, AI 데이터센터·AI 엣지·해저케이블·위성 등 인프라를 플랫폼·AI 모델 역량과 결합해 2031년까지 AIDC 용량 1GW와 해저케이블 용량 90Tbps를 추가 확보한다는 로드맵을 제시했다. 비용 측면에서는 저수익·저성장 사업 합리화를 마무리하고 고객 관리·개통·A/S·네트워크 운용에 AX를 적용해 비용을 줄이겠다는 계획이다. 자산 측면에서는 2026년 2분기 장부가 기준 보유 부동산·매도가능증권·종속기업투자 12조3,000억원 가운데 전략적 효용이 낮아진 자산을 중심으로 유동화를 확대할 방침이다. 주주환원은 2028년까지 별도기준 조정 당기순이익의 50%를 재원으로 활용하고 2026년 최소 주당배당금 2,400원을 제시하는 구조이며, 2월 발표한 2,500억원 자사주 매입은 9월 9일 완료 예정이고 2분기 배당금은 주당 600원으로 확정됐다. AX 사업의 중장기 목표치로는 2025년 10월 기준 AX B2B 매출 1,000억원대를 확보했고 2029년까지 누적 4조6,000억원을 목표로 한다는 계획이 공개된 바 있다. 확인해야 할 변수는 해킹 후속 조치의 잔여 비용과 규제 절차이며, 회사는 과징금 의결서 수령 후 행정소송 여부를 결정하겠다는 입장을 밝혔다.",
+  "en": "The company replaced its Q2 2026 earnings call with an institutional event and used it to detail medium-term plans. At the 2026 KT Corporate Day it said it would more than double AX revenue and reach a 9% consolidated operating margin by 2028, and set out a roadmap to add 1GW of AI data center capacity and 90Tbps of submarine cable capacity by 2031 by combining AIDC, AI edge, submarine cable and satellite infrastructure with platform and AI-model capabilities. On costs, it plans to complete the rationalization of low-margin, low-growth businesses and apply AX to customer care, activation, after-sales service and network operations. On assets, it intends to accelerate monetization of holdings with reduced strategic value out of KRW 12.3tn of real estate, available-for-sale securities and subsidiary investments at Q2 2026 book value. For shareholder returns, 50% of adjusted separate-basis net profit will fund returns through 2028, with a 2026 minimum dividend per share of KRW 2,400, and the KRW 250bn buyback announced in February is due to finish on 9 September while the Q2 dividend was set at KRW 600 per share. On longer-term AX targets, the company had disclosed roughly KRW 100bn-plus of AX B2B revenue as of October 2025 and a cumulative target of KRW 4.6tn by 2029. Key open variables are residual breach-related costs and regulatory process: KT said it would decide on an administrative lawsuit after reviewing the written decision on the fine."
  },
  "valuation_comment": {
-  "ko": "현재 KT의 자체 산출 ROE는 약 8.9%, 주당순이익(EPS)은 약 6,383원, 주당순자산(BPS)은 약 75,384원 수준입니다. 주가는 순자산 가치를 밑도는 구간에서 거래되고 있어 자산가치 대비 할인 상태로 볼 수 있습니다. 2024년의 부진한 이익에서 2025년 이익 회복으로 방향을 틀면서 이익 기반 지표가 개선되는 흐름이며, 통신주 특성상 배당 매력이 밸류에이션 논의의 핵심입니다. 회사가 제시한 2026년 최소 DPS 2,400원은 안정적 배당 기반을 시사하지만, 실제 배당수익률은 주가 수준에 따라 달라지므로 화면 카드의 실시간 값으로 확인하는 것이 정확합니다. 업종 내 비교에서는 SK텔레콤·LG유플러스가 AI 데이터센터로 이익 반등에 성공한 반면, KT는 일회성 기저로 단기 이익이 눌린 점이 상대 밸류에이션의 변수입니다. 결국 이익의 일회성 요인 정상화와 AI·데이터센터 수익화 속도가 향후 가치 평가의 관건입니다.",
-  "en": "KT's internally calculated ROE is about 8.9%, EPS about KRW 6,383, and book value per share about KRW 75,384. The stock trades below its net asset value, which can be viewed as a discount to book. As the company turned from weak 2024 profits toward an earnings recovery in 2025, profit-based metrics have been improving, and as is typical for telecom shares, dividend appeal is central to the valuation discussion. The minimum 2026 DPS of KRW 2,400 the company set implies a stable dividend base, but the actual dividend yield depends on the share price, so it is best confirmed via the real-time figure on the screen card. In peer comparison, SK Telecom and LG Uplus rebounded in profit on AI data centers, while KT's near-term profit was suppressed by a one-off base, a factor for relative valuation. Ultimately, normalization of one-off profit items and the pace of AI and data-center monetization will be the key drivers of future valuation."
+  "ko": "주당순자산은 75,384원으로 최근 거래되는 주가 수준을 웃돌아, 주가는 회계상 순자산에 할인된 상태에서 형성되고 있다. 이익 대비 주가 배수는 국내 시장 평균을 밑도는 구간으로, 2024년 이익 부진에서 2025년 이익 회복으로 방향이 바뀐 뒤 최근 주당순이익 6,383원 수준이 반영된 결과다. 다만 이 배수 해석에는 유보가 필요하다. 최근 이익에는 부동산 개발 분양이익 같은 비경상 성과가 섞여 있었고, 2026년 상반기에는 그 역기저와 해킹 후속 비용·과징금이 반대 방향으로 작용했기 때문이다. 배당 측면에서는 연간 최소 주당배당금 2,400원과 주주환원율 50% 유지가 명시돼 있어, 이 최소 수준만으로도 배당수익률은 코스피 평균을 웃도는 편에 속한다. 고배당기업 요건 충족으로 올해 지급 배당금부터 배당소득 분리과세가 적용된다는 점과 3년간 7,500억원 규모 자사주 매입·소각은 총 주식수 252,021,685주 기준 주당 지표에 영향을 주는 요인이며, 증권가에서는 AX 사업 성과가 본격화될 경우 기업가치 재평가가 가능하다는 분석이 제시된 바 있다.",
+  "en": "Book value per share stands at KRW 75,384, above the recent traded share price, meaning the stock is changing hands at a discount to accounting net assets. The multiple of price to earnings sits below the broad Korean market average, reflecting the shift from weak 2024 profits to a 2025 earnings recovery and a current earnings-per-share level of KRW 6,383. That multiple deserves caveats, however: recent profits included non-recurring items such as property development pre-sale gains, and the first half of 2026 saw that comparison reverse alongside breach-related costs and the regulatory fine. On dividends, the annual minimum dividend per share of KRW 2,400 and the 50% payout ratio are explicitly set, and on that floor alone the yield screens above the KOSPI average. Qualification as a high-dividend company means separate taxation applies to dividends paid this year, while KRW 750bn of buybacks and share cancellations over three years affects per-share metrics on a total share count of 252,021,685; sell-side commentary has argued that a re-rating becomes possible if AX results materialize in earnest."
  },
  "bull": [
   {
    "title": {
-    "ko": "이익 정상화와 안정적 현금흐름",
-    "en": "Profit normalization and stable cash flow"
+    "ko": "AX·데이터센터 매출의 두 자릿수 성장",
+    "en": "Double-digit growth in AX and data centers"
    },
    "body": {
-    "ko": "2025년 영업이익은 2.47조원으로 전년 대비 큰 폭 회복했고, 영업활동현금흐름도 4.94조원으로 견조합니다. 2026년 1분기 부진은 일회성 분양이익 기저와 해킹 후속비용에 주로 기인합니다. 회사는 침해사고 영향을 제외한 조정 영업이익 1.5조원 수준 달성을 목표로 제시했습니다.",
-    "en": "2025 operating profit rebounded sharply to KRW 2.47tn and operating cash flow was solid at KRW 4.94tn. The Q1 2026 softness stemmed largely from a one-off development-gain base and post-breach costs. The company has set a target of around KRW 1.5tn in adjusted operating profit excluding the breach impact."
+    "ko": "2026년 2분기 AX 사업 매출은 금융권 AI 도입 확대와 KT클라우드 성장에 힘입어 전년 동기 대비 22.3% 증가했다. KT클라우드 매출은 2,654억원으로 19.8% 늘었고 가산 데이터센터 가동률 상승과 DBO 사업 확대가 배경이다. 국내 5대 은행 중 4곳의 AICC를 운영하고 상반기 금융권 AX 22건을 수주한 트랙레코드도 확보했다. 통신 본업 성장이 둔화된 상황에서 이 부문의 성장률과 수익성 개선 여지가 실적 구성의 핵심 변수로 부상했다.",
+    "en": "Q2 2026 AX revenue rose 22.3% year on year on wider financial-sector AI adoption and KT Cloud growth. KT Cloud revenue reached KRW 265.4bn, up 19.8%, helped by higher Gasan data center utilization and DBO expansion. The company also has a track record of running contact-center AI for four of the five largest banks and winning 22 financial-sector AX deals in the first half. With core telecom growth slowing, this segment's growth rate and scope for margin improvement have become the key swing factor in the earnings mix."
    }
   },
   {
    "title": {
-    "ko": "주주환원 강화",
-    "en": "Strengthened shareholder returns"
+    "ko": "규칙이 명시된 주주환원 구조",
+    "en": "Rules-based shareholder return framework"
    },
    "body": {
-    "ko": "회사는 3년 중기 주주환원 정책으로 별도 조정 순이익의 50%를 재원으로 활용하고, 2026년 최소 DPS 2,400원을 제시했습니다. 2,500억원 규모 자사주 매입·소각도 진행 중입니다. 비현금·비경상 손익을 제외한 조정 기준으로 환원 규모를 산정해 배당의 예측 가능성을 높였습니다.",
-    "en": "The company's three-year policy uses 50% of separate-basis adjusted net income as its return pool and sets a minimum 2026 DPS of KRW 2,400. A KRW 250bn buyback-and-cancellation program is also underway. Returns are based on an adjusted figure excluding non-cash and non-recurring items, improving dividend predictability."
+    "ko": "회사는 2028년까지 별도기준 조정 당기순이익의 50%를 환원 재원으로 쓰고, 비현금성·비경상 손익을 제외한 조정 기준으로 재원을 산정한다고 밝혔다. 2026년 연간 최소 주당배당금은 기존 1,960원에서 2,400원으로 상향됐다. 여기에 2026~2028년 7,500억원 규모 자사주 매입·소각, 올해 2,500억원 매입의 9월 9일 완료가 예정돼 있다. 확정 재무 기준 2023~2025년 영업활동현금흐름이 매년 4조원대 후반~5조원대를 유지했다는 점은 환원 재원의 기반이 된다.",
+    "en": "Management said 50% of adjusted separate-basis net profit will fund returns through 2028, with the base adjusted to exclude non-cash and non-recurring items. The 2026 annual minimum dividend per share was raised from KRW 1,960 to KRW 2,400. On top of that, KRW 750bn of buybacks and cancellations are planned for 2026-2028, with this year's KRW 250bn purchase due to complete on 9 September. Confirmed operating cash flow of roughly KRW 4.9tn-5.5tn annually in 2023-2025 underpins the funding base for these returns."
    }
   },
   {
    "title": {
-    "ko": "AI·데이터센터 성장 옵션",
-    "en": "AI and data-center growth optionality"
+    "ko": "자산 유동화와 비통신 자회사 기여",
+    "en": "Asset monetization and non-telecom contributions"
    },
    "body": {
-    "ko": "KT클라우드는 가산 AIDC 등 증설과 GPU 인프라 확대로 두 자릿수 성장을 이어가고 있습니다. 2027년까지 500MW 전력 확보 목표를 새로 제시하며 하이퍼스케일 경쟁에 대응합니다. 5G SA 상용망을 국내에서 유일하게 구축한 점도 차별화 요인입니다.",
-    "en": "KT Cloud is sustaining double-digit growth via expansion such as the Gasan AIDC and broader GPU infrastructure. It set a new goal to secure 500MW of power by 2027 to compete at hyperscale. Being the only domestic operator with a commercial 5G SA network is also a differentiator."
+    "ko": "2026년 2분기 장부가 기준 보유 부동산·매도가능증권·종속기업투자는 12조3,000억원이며 회사는 전략적 효용이 낮아진 자산 중심으로 유동화를 확대할 계획이다. KT에스테이트는 대전 둔산 개발사업과 부동산 매각 효과로 개선세를 이어갔고 오피스·호텔 사업도 안정적이었다. 케이뱅크는 대출자산 성장과 순이자마진 개선으로 견조한 흐름을 유지하며 6월 말 수신 26조6,000억원, 여신 19조8,000억원, 고객 1,645만명을 기록했다. 통신 외 자산·자회사 축은 통신 매출 정체 국면에서 손익과 현금 흐름의 보완 역할을 할 수 있다.",
+    "en": "Real estate, available-for-sale securities and subsidiary investments totaled KRW 12.3tn at Q2 2026 book value, and the company plans to expand monetization of assets whose strategic value has diminished. KT Estate kept improving on the Daejeon Dunsan project and property sales, with stable office and hotel operations. K Bank held firm on loan growth and net interest margin improvement, with KRW 26.6tn of deposits, KRW 19.8tn of loans and 16.45 million customers as of end-June. These non-telecom assets and affiliates can supplement profits and cash flow while telecom revenue stagnates."
    }
   }
  ],
  "bear": [
   {
    "title": {
-    "ko": "해킹 후속비용과 신뢰 회복 과제",
-    "en": "Post-breach costs and trust recovery"
+    "ko": "해킹 사고 후속 비용과 무선 매출 훼손",
+    "en": "Breach-related costs and wireless revenue damage"
    },
    "body": {
-    "ko": "펨토셀 해킹 사태로 위약금 면제 기간 약 23만 8천 명의 가입자가 이탈했고, 약 4,500억원 규모 고객 보답·대응 비용이 실적에 반영됐습니다. 이는 단기 이익을 압박했습니다. 통신 본업의 신뢰 회복과 보안 체계 재정비가 과제로 남아 있습니다.",
-    "en": "The femtocell hacking incident drove about 238,000 subscriber losses during a penalty-waiver period and roughly KRW 450bn in customer-compensation and response costs hit results. This pressured near-term profit. Restoring trust in the core telecom business and rebuilding security remain challenges."
+    "ko": "개인정보 침해 사고 수습을 위한 고객 보답 프로그램과 과징금 반영 등이 실적 감소에 영향을 미쳤다. 무선은 이 프로그램 영향으로 서비스 매출이 전년 동기 대비 1.8% 감소했다. 감경 사유로 언급된 고객 보상 프로그램의 규모는 4,500억원으로 알려졌다. 소액결제 피해 배상, 전체 고객 유심 무료 교체, 위약금 한시 면제, 매월 100GB 추가 데이터와 OTT 이용권 제공 등 보상 조치가 이어졌다.",
+    "en": "The customer compensation program run to address the data breach, together with the fine, weighed on results. Wireless service revenue fell 1.8% year on year because of that program. The compensation program cited as a mitigating factor was reported at around KRW 450bn. Remedies included reimbursing micropayment losses, free USIM replacement for all customers, temporary waivers of early-termination fees, and 100GB of extra monthly data plus OTT vouchers."
    }
   },
   {
    "title": {
-    "ko": "MS 파트너십 부담과 AI 성과 지연",
-    "en": "MS partnership burden and delayed AI results"
+    "ko": "일회성 손익 의존도와 이익 변동성",
+    "en": "Reliance on one-off items and earnings volatility"
    },
    "body": {
-    "ko": "2024년 체결한 약 2.4조원 규모 5년 MS 파트너십은 투자 부담과 성과 기대 이하 논란이 제기됐습니다. 자체 AI 파운데이션 모델은 국가 주도 경쟁에서 초기 탈락했습니다. 산업 특화 AI 전략의 실제 수익화 속도가 검증되어야 합니다.",
-    "en": "The roughly KRW 2.4tn five-year Microsoft partnership signed in 2024 has drawn questions over investment burden and below-expectation results. Its proprietary AI foundation model was initially dropped in the state-led competition. The actual monetization pace of the vertical-AI strategy needs to be proven."
+    "ko": "확정 재무 기준 2025년 분기 영업이익은 1분기 6,888억원, 2분기 1조148억원, 3분기 5,382억원, 4분기 2,274억원으로 편차가 컸다. 2025년 2분기에는 강북본부 부지 개발사업 분양매출과 이익이 반영돼 역기저 부담을 남겼다. 그 결과 2026년 2분기 영업이익은 별도 기준 비교 관점에 따라 최대 41.5% 감소로도 해석됐다. 부동산 분양·매각 성과는 시점 통제가 어려워 분기 이익의 예측 가능성을 떨어뜨리는 요인이다.",
+    "en": "On confirmed data, 2025 quarterly operating profit swung widely: KRW 688.8bn in Q1, KRW 1,014.8bn in Q2, KRW 538.2bn in Q3 and KRW 227.4bn in Q4. Q2 2025 included pre-sale revenue and profit from the Gangbuk headquarters site development, creating a tough comparison base. As a result, Q2 2026 operating profit was described as down as much as 41.5% depending on the comparison basis used. Property pre-sales and disposals are hard to time, which reduces the predictability of quarterly profits."
    }
   },
   {
    "title": {
-    "ko": "무선 성장 둔화와 경쟁 심화",
-    "en": "Slowing wireless growth and intensifying competition"
+    "ko": "AI 투자 부담과 경쟁사 대비 속도",
+    "en": "AI investment burden and pace versus peers"
    },
    "body": {
-    "ko": "스마트폰 보급률 포화로 전통적 무선 ARPU 성장세가 둔화하고 있습니다. AI 데이터센터로 먼저 이익 반등에 성공한 경쟁사 대비 단기 모멘텀이 약합니다. 데이터센터의 물리 인프라 중심 확장은 자본지출 부담과 가동률 리스크를 동반합니다.",
-    "en": "Smartphone saturation is slowing traditional wireless ARPU growth. Near-term momentum is weaker than peers that rebounded first via AI data centers. The physical-infrastructure-led data-center expansion carries capex burden and utilization risk."
+    "ko": "KT는 2024년 9월 마이크로소프트와 2조4,000억원 규모의 5년 계약을 체결했고, 계약 내용 상당수가 투자 관련 사항으로 이행 과정에서 투자 부담과 현금 유출이 상당할 것으로 예상된다는 지적이 제기됐다. 회사가 AI 매출을 별도 공시하지 않아 외부에서 규모 확인이 어렵고, IR 자료 기준 AI·IT 비중은 한 자릿수 후반 수준으로 분석된다. 경쟁 측면에서도 SK텔레콤 AIDC 매출이 92.5% 급증했고 LG유플러스는 약 2조원 규모 200MW급 파주 AIDC를 건설 중이어서 용량 확보 경쟁이 병행된다.",
+    "en": "KT signed a five-year, KRW 2.4tn agreement with Microsoft in September 2024, and observers have noted that much of the contract concerns investment, implying meaningful capital commitments and cash outflows during execution. Because AI revenue is not disclosed separately, its scale is hard to verify externally, and IR-based analysis puts the AI/IT share in the high single digits. On competition, SK Telecom's AIDC revenue surged 92.5% and LG Uplus is building a 200MW Paju AIDC for around KRW 2tn, so the race for capacity runs in parallel."
    }
   }
  ],
  "risks": [
   {
    "cat": {
-    "ko": "규제·정책",
-    "en": "Regulation and policy"
+    "ko": "규제·법률 리스크",
+    "en": "Regulatory and legal risk"
    },
    "body": {
-    "ko": "5G SA 전환 의무화에 따라 통신사는 구축된 5G 무선국을 2026년 말까지 단독망 코어에 연결해야 합니다. 실내 무선국 구축 실적에 따라 주파수 재할당대가가 달라집니다. 정책 이행 비용과 투자 부담이 이익에 영향을 줄 수 있습니다.",
-    "en": "Under the mandated 5G SA transition, carriers must connect deployed 5G base stations to standalone core equipment by end-2026. Spectrum reallocation fees vary with indoor base-station deployment. Compliance costs and investment burden could affect profit."
+    "ko": "개인정보보호위원회는 안전조치 의무 위반으로 과징금 539억7,900만원과 시정명령·개선권고·공표명령을 의결하고, 로그 삭제·거짓진술 등 조사 방해 행위에 대해서는 KT를 수사기관에 고발하기로 했다. 2024년 악성코드 감염 사고에 대한 제재는 이번 산정에 포함되지 않았고, 수사 과정에서 새로운 사실이 확인되면 별도 과징금이 추가될 수 있다. 시정명령에는 3개월 내 무선통신망 장비 전반의 취약점 점검과 접근통제 강화 대책 마련이 포함됐다. 최근 공정거래위원회를 상대로 제기한 5G 과장광고 소송에서도 패소했다는 점 역시 법적 부담 요인으로 거론된다.",
+    "en": "The privacy commission imposed a KRW 53.98bn fine plus corrective orders, recommendations and a publication order for breaching security obligations, and decided to refer KT to prosecutors over obstruction such as log deletion and false statements. Sanctions for the 2024 malware infection were excluded from this calculation, and a separate fine could be added if the investigation uncovers new facts. The corrective order requires vulnerability checks across wireless network equipment and stronger access controls within three months. A recent court loss in the case against the antitrust regulator over 5G advertising claims is also cited as a legal burden."
    }
   },
   {
    "cat": {
-    "ko": "보안·평판",
-    "en": "Security and reputation"
+    "ko": "투자·자본배분 리스크",
+    "en": "Investment and capital allocation risk"
    },
    "body": {
-    "ko": "해킹 사태는 가입자 이탈과 대규모 보상비용으로 이어졌습니다. 지능화된 사이버 공격은 업계 전반의 상시 리스크입니다. 추가 침해사고 발생 시 비용과 평판 훼손이 재발할 수 있습니다.",
-    "en": "The hacking incident led to subscriber churn and large compensation costs. Increasingly sophisticated cyberattacks are an ongoing industry-wide risk. Any further breach could trigger renewed costs and reputational damage."
+    "ko": "2031년까지 AIDC 1GW와 해저케이블 90Tbps 추가 확보 계획은 대규모 전력·부지·설비 투자를 전제로 한다. 마이크로소프트 파트너십은 계약 규모와 기간이 커 재검토 필요성이 제기되고 계약 이행 과정의 현금 유출이 상당할 것으로 예상된다는 지적이 있었다. 확정 재무 기준 부채비율은 2025년 120.7%로 2024년 132.7%보다 낮아졌지만, 투자 확대와 환원 병행은 재무 여력의 배분 문제를 남긴다. 회사는 AX 확대, 저수익 사업 정리, 자산 유동화, 주주환원을 동시에 추진한다는 방침을 밝혔다.",
+    "en": "The plan to add 1GW of AIDC capacity and 90Tbps of submarine cable by 2031 presupposes heavy investment in power, sites and facilities. The Microsoft partnership has drawn calls for review given its size and duration, with observers expecting significant cash outflows during execution. On confirmed data, the debt-to-equity ratio improved to 120.7% in 2025 from 132.7% in 2024, but pursuing investment and returns together still raises allocation questions. Management says it will simultaneously expand AX, exit low-margin businesses, monetize assets and continue shareholder returns."
    }
   },
   {
    "cat": {
-    "ko": "투자·수익화",
-    "en": "Investment and monetization"
+    "ko": "환원 재원 변동성",
+    "en": "Volatility in the return funding base"
    },
    "body": {
-    "ko": "데이터센터·GPU 인프라 확장은 대규모 자본지출을 수반합니다. KT클라우드는 물리 인프라 비중이 높아 리스크 노출이 크다는 지적이 있습니다. AI 투자가 실제 이익률 상승으로 직결되는 속도가 불확실합니다.",
-    "en": "Data-center and GPU infrastructure expansion entails large capex. KT Cloud's high share of physical infrastructure is flagged as elevating risk exposure. The pace at which AI investment translates into actual margin gains is uncertain."
+    "ko": "주주환원 재원은 별도기준 조정 당기순이익의 50%로, 비현금성·비경상 손익을 제외한 조정 기준으로 산정된다. 따라서 별도 실적과 조정 항목의 판단에 따라 환원 총액이 달라질 수 있다. 2026년 2분기 별도 매출은 4조5,235억원, 영업이익은 3,890억원으로 전년 동기 대비 각각 5.2%, 17% 감소했다. 최소 주당배당금 2,400원이 하한으로 제시돼 있으나, 그 이상의 환원 규모는 별도 이익 흐름에 연동된다.",
+    "en": "Shareholder returns are funded from 50% of adjusted separate-basis net profit, calculated excluding non-cash and non-recurring items. Total returns can therefore vary with separate-basis results and with judgments on adjustment items. In Q2 2026, separate revenue was KRW 4.524tn and operating profit KRW 389bn, down 5.2% and 17% year on year. A minimum dividend per share of KRW 2,400 sets a floor, but anything above it tracks separate-basis earnings."
    }
   }
  ],
  "checkpoints": [
   {
    "when": {
-    "ko": "2026년 8월 (2분기 실적)",
-    "en": "August 2026 (Q2 results)"
+    "ko": "2026년 9월 9일",
+    "en": "9 September 2026"
    },
    "what": {
-    "ko": "판매비 등 비용 관리 효과로 이익이 회복되는지, 해킹 후속비용이 정점을 지났는지 확인. 회사가 제시한 조정 영업이익 1.5조원 목표의 진척도 가늠.",
-    "en": "Check whether profit recovers on cost control such as marketing expenses and whether post-breach costs have peaked, and gauge progress toward the stated KRW 1.5tn adjusted operating profit target."
+    "ko": "2월 발표한 2,500억원 규모 자사주 매입의 완료 예정일이다. 매입 종료 후 소각 여부와 시점 공시가 총 주식수 및 주당 지표에 미치는 영향을 확인할 수 있다.",
+    "en": "The scheduled completion date for the KRW 250bn buyback announced in February. Any subsequent disclosure on whether and when the shares are cancelled will show the impact on share count and per-share metrics."
    }
   },
   {
    "when": {
-    "ko": "2026년 하반기",
-    "en": "Second half of 2026"
+    "ko": "2026년 3분기 실적 발표(10월 말~11월 초 예상)",
+    "en": "Q3 2026 results (expected late October to early November)"
    },
    "what": {
-    "ko": "5G SA 단독망 코어 연결 의무 이행 진척과 실내 무선국 구축 실적, 그에 따른 주파수 재할당대가 확정 여부 확인.",
-    "en": "Monitor progress on the mandated 5G SA core connection, indoor base-station deployment, and finalization of the resulting spectrum reallocation fee."
+    "ko": "고객 보답 프로그램 영향으로 1.8% 감소한 무선 서비스 매출이 프로그램 종료 이후 어떻게 정상화되는지, 전년 동기 대비 22.3% 성장한 AX 매출의 성장률 유지 여부를 확인할 구간이다.",
+    "en": "A checkpoint for whether wireless service revenue, down 1.8% on the compensation program, normalizes once the program ends, and whether AX revenue growth of 22.3% year on year is sustained."
    }
   },
   {
    "when": {
-    "ko": "분기별 (KT클라우드)",
-    "en": "Quarterly (KT Cloud)"
+    "ko": "과징금 의결서 수령 후(시점 미정)",
+    "en": "After receipt of the written decision (timing undetermined)"
    },
    "what": {
-    "ko": "가산 AIDC 가동률, 2027년 500MW 전력 확보 진척, AI 클라우드·GPU 수주 흐름 등 데이터센터 성장 지표 점검.",
-    "en": "Track data-center growth metrics such as Gasan AIDC utilization, progress toward the 500MW-by-2027 power target, and AI cloud/GPU order momentum."
+    "ko": "회사는 의결서를 받은 뒤 행정소송 여부를 결정하겠다고 밝혔다. 악성코드 사고에 대한 별도 과징금 추가 부과 가능성도 남아 있어 추가 비용 반영 여부가 관전 포인트다.",
+    "en": "KT said it will decide on an administrative lawsuit after receiving the written decision. A separate additional fine over the malware incident also remains possible, so watch for any further cost recognition."
    }
   },
   {
    "when": {
-    "ko": "분기별 배당 발표",
-    "en": "Quarterly dividend announcements"
+    "ko": "2026년 하반기~2027년",
+    "en": "Second half of 2026 through 2027"
    },
    "what": {
-    "ko": "분기 DPS와 연간 최소 DPS 2,400원 이행 여부, 2,500억원 자사주 매입·소각 진행 상황 확인.",
-    "en": "Check quarterly DPS, fulfillment of the minimum annual DPS of KRW 2,400, and progress on the KRW 250bn buyback-and-cancellation program."
+    "ko": "2031년 AIDC 1GW·해저케이블 90Tbps 목표와 관련한 신규 부지·전력 확보, 수주 공시가 실제로 나오는지 확인이 필요하다. 경쟁사 파주 200MW AIDC의 내년 상반기 1동 개소 일정과 비교하면 용량 확보 속도를 가늠할 수 있다.",
+    "en": "Watch for actual disclosures on new sites, power procurement and orders tied to the 2031 target of 1GW AIDC and 90Tbps of submarine cable. Comparing this with a rival's 200MW Paju AIDC, whose first building is slated to open in the first half of next year, helps gauge relative pace of capacity build-out."
+   }
+  },
+  {
+   "when": {
+    "ko": "2026년 4분기~2027년 초",
+    "en": "Q4 2026 to early 2027"
+   },
+   "what": {
+    "ko": "연간 최소 주당배당금 2,400원 달성 여부와 분기 배당의 지속성, 비핵심 자산 유동화 관련 매각 공시가 실제 현금 유입과 손익으로 확인되는지가 점검 대상이다.",
+    "en": "Points to verify include whether the annual minimum dividend per share of KRW 2,400 is met and quarterly dividends continue, and whether disclosures on non-core asset monetization translate into actual cash inflows and reported profits."
    }
   }
  ],
  "verdict": {
   "body": {
-   "ko": "KT는 2025년 이익이 큰 폭 회복하며 영업이익 2.47조원, ROE 9.8%를 기록했으나, 2026년 1분기에는 전년 부동산 분양이익 기저와 해킹 후속비용으로 영업이익이 4,827억원에 그쳐 단기 숨 고르기에 들어갔습니다. 회사는 비용 관리와 핵심 포트폴리오 중심 성장으로 침해사고 영향을 제외한 조정 영업이익 1.5조원 수준을 목표로 제시했습니다. 신임 경영진은 AI 조직을 재편하고 산업 특화·에이전틱 AI로 전략 무게중심을 옮기는 한편, KT클라우드의 데이터센터 증설로 비통신 성장 옵션을 키우고 있습니다. 3년 중기 주주환원 정책과 최소 DPS 2,400원, 자사주 매입·소각은 투자자 관점의 안정성 요인입니다. 반면 해킹 후속비용, MS 파트너십 부담, AI 수익화 속도, 무선 성장 둔화는 균형 있게 점검해야 할 약세 요인입니다. 향후 통신 본업 신뢰 회복과 AI·데이터센터 수익화 속도가 실적과 가치 평가의 핵심 변수가 될 전망입니다. 본 자료는 정보 제공용이며 투자 권유나 의견을 담지 않습니다.",
-   "en": "KT's 2025 earnings rebounded sharply, with operating profit of KRW 2.47tn and ROE of 9.8%, but in Q1 2026 operating profit was held to KRW 482.7bn by a prior-year real-estate gain base and post-breach costs, marking a near-term pause. The company has set a target of around KRW 1.5tn in adjusted operating profit excluding the breach impact, via cost control and growth around core portfolios. New management has reorganized the AI structure and shifted strategic focus toward vertical and agentic AI, while expanding non-telecom growth optionality through KT Cloud data-center buildout. The three-year shareholder-return policy, the minimum DPS of KRW 2,400, and the buyback-and-cancellation program are stability factors from an investor's perspective. On the other side, post-breach costs, the Microsoft partnership burden, the pace of AI monetization, and slowing wireless growth are bearish factors to weigh in balance. Going forward, recovery of core telecom trust and the pace of AI and data-center monetization are likely to be the key drivers of earnings and valuation. This material is for information only and contains no investment recommendation or opinion."
+   "ko": "확정 재무를 보면 KT의 2025년은 매출 28조2,442억원, 영업이익 2조4,691억원(영업이익률 8.7%), 지배주주 순이익 1조7,310억원으로 2024년 부진에서 뚜렷하게 회복된 해였다. 그러나 그 회복에는 부동산 개발 성과 등 비경상 요인이 섞여 있었고, 2025년 2분기 영업이익 1조148억원이 정점이었던 만큼 2026년 상반기는 역기저 부담을 안고 출발했다. 실제 2026년 상반기 누적 매출은 13조4,583억원, 영업이익은 1조1,310억원으로 각각 5.7%, 33.6% 감소했다. 여기에 540억원 과징금이 2026년 2분기 영업외비용으로 반영되며 순이익에도 부담이 더해졌다. 반대편에는 전년 동기 대비 22.3% 성장한 AX 매출과 2028년까지 AX 매출 2배 이상·연결 영업이익률 9%를 제시한 중기 계획, 최소 주당배당금 2,400원과 50% 환원율이 놓여 있다. 결국 관전 포인트는 통신 본업의 매출 정상화 속도, AX·데이터센터 매출이 이익률 개선으로 이어지는지, 그리고 규제·법적 절차의 잔여 비용 규모라는 세 가지로 압축된다. 강세 요인과 약세 요인이 동시에 진행 중인 국면이므로, 위 체크포인트의 실제 공시·수치 확인이 판단의 기준이 될 것이다.",
+   "en": "On confirmed figures, 2025 was a clear recovery year for KT: revenue of KRW 28.244tn, operating profit of KRW 2.469tn (8.7% margin) and owners' net profit of KRW 1.731tn, versus a weak 2024. That recovery, however, contained non-recurring elements such as property development gains, and with Q2 2025 operating profit of KRW 1.015tn marking the peak, the first half of 2026 began against a difficult comparison. First-half 2026 revenue was indeed KRW 13.458tn and operating profit KRW 1.131tn, down 5.7% and 33.6% respectively. In addition, the KRW 54bn fine was recognized as a Q2 2026 non-operating expense, pressuring net profit. On the other side of the ledger sit AX revenue up 22.3% year on year, a medium-term plan to more than double AX revenue and reach a 9% consolidated operating margin by 2028, and a KRW 2,400 minimum dividend per share with a 50% payout ratio. The debate therefore narrows to three items: how quickly core telecom revenue normalizes, whether AX and data center growth translates into margin improvement, and how large the residual regulatory and legal costs prove to be. Bullish and bearish drivers are unfolding at the same time, so verifying the disclosures and figures listed in the checkpoints above should anchor any assessment."
   }
  },
  "sources": [
-  "https://kr.investing.com/news/transcripts/article-93CH-1947732",
-  "https://www.mt.co.kr/tech/2026/05/08/2026050816373589314",
-  "https://news.nate.com/view/20260508n25413",
-  "https://news.nate.com/view/20260512n24626",
-  "https://www.ngonews.kr/news/articleView.html?idxno=229715",
-  "https://wikyung.com/news/article?news=5863",
-  "https://corp.kt.com/html/investors/resources/earnings.html",
-  "https://www.kipost.net/news/articleViewAmp.html?idxno=338128",
-  "https://www.sentv.co.kr/article/view/sentv202605080046",
+  "https://www.businesspost.co.kr/BP?command=article_view&num=444530",
+  "https://www.hankyung.com/article/202608125998g",
+  "https://www.etnews.com/20260812000290",
+  "https://www.ajunews.com/view/20260812100013264",
+  "https://www.ddaily.co.kr/page/view/2026081209524898870",
+  "http://www.opinionnews.co.kr/news/articleView.html?idxno=142934",
+  "https://biz.heraldcorp.com/article/10838416",
+  "https://zdnet.co.kr/view/?no=20260812095946",
+  "https://news.sktelecom.com/229015",
+  "https://www.mt.co.kr/tech/2026/08/13/2026081220004291074",
   "https://www.thebell.co.kr/front/newsview.asp?key=202603121148057200104246",
   "https://enterprise.kt.com/pd/P_PD_NE_00_342.do",
-  "https://www.newspim.com/news/view/20241108000593",
-  "https://enterprise.kt.com/pd/P_PD_NE_00_351.do",
-  "https://dealsite.co.kr/articles/159676",
-  "https://www.thebell.co.kr/front/newsview.asp?key=202506241311443040108334",
-  "https://www.etnews.com/20260422000316",
+  "https://enterprise.kt.com/bt/dxstory/3404.do",
+  "https://www.technologyreview.kr/ax-%ED%94%84%EB%A1%9C%EC%A0%9D%ED%8A%B8%EC%9D%98-90%EA%B0%80-%EB%A9%88%EC%B6%94%EB%8A%94-%EC%9D%B4%EC%9C%A0-kt%C2%B7ms%EA%B0%80-%EC%A7%9A%EC%9D%80-%EC%A0%84%ED%99%98%EC%9D%98-%ED%95%A8%EC%A0%95/",
+  "https://www.businesspost.co.kr/BP?command=article_view&num=429990",
+  "https://jasoseol.com/companies/1878/insights",
   "https://www.cio.com/article/3542487/kt-ms-ai-%ED%98%81%EC%8B%A0-%EC%9C%84%ED%95%B4-%ED%8C%8C%ED%8A%B8%EB%84%88%EC%8B%AD-%EC%B2%B4%EA%B2%B0%C2%B7%C2%B7%C2%B7-5%EB%85%84%EA%B0%84-%EC%A1%B0-%EB%8B%A8%EC%9C%84-%EA%B7%9C%EB%AA%A8.html",
-  "https://partner.microsoft.com/ko-kr/blog/article/frontier-forward-asia-ep-1"
+  "https://www.newswhoplus.com/news/articleView.html?idxno=55359"
  ],
  "v": 2,
- "model": "claude-opus-4-8",
+ "model": "claude-opus-5",
  "ticker": "030200",
  "name": "KT",
  "name_en": "KT CORPORATION",
@@ -223,11 +233,11 @@
   "통신"
  ],
  "market": "코스피",
- "reportDate": "2026-06-16",
- "reportTs": "2026-06-16 09:52",
- "dataDate": "20260615",
+ "reportDate": "2026-08-14",
+ "reportTs": "2026-08-14 21:54",
+ "dataDate": "20260814",
  "quant": {
-  "asOf": "2026-06-16",
+  "asOf": "2026-08-14",
   "fs_basis": "연결(CFS) · DART 공시 확정치 · 지배주주 기준 순이익",
   "annual": [
    {
@@ -324,23 +334,23 @@
    }
   ],
   "valuation": {
-   "price": 55400,
-   "mcap": 13.962,
+   "price": 53400,
+   "mcap": 13.458,
    "shares": 252021685,
    "total_shares": 252021685,
    "wavg_shares": 241265068,
-   "per": 8.7,
+   "per": 8.4,
    "eps": 6383,
-   "pbr": 0.73,
+   "pbr": 0.71,
    "bps": 75384,
    "roe_ttm": 8.9,
    "ttm_window": "2025Q2~2026Q1",
    "ttm_np_owner": 1543446000000,
-   "pbr_krx": null,
-   "bps_krx": null,
+   "pbr_krx": 0.73,
+   "bps_krx": 73231.0,
    "basis": "PER·EPS·PBR·BPS 모두 자체 산출(네이버·토스와 동일 방식) · 배당은 DART 공시 주당현금배당금(보완:KRX) ÷ 현재가",
    "dps": 2400.0,
-   "div": 4.33
+   "div": 4.49
   }
  }
 }

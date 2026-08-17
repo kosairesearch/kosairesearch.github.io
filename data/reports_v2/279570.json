@@ -1,169 +1,159 @@
 {
  "title": {
-  "ko": "상장 첫해, 외형과 수익성의 괴리",
-  "en": "First Listed Year: Growth vs. Profit Gap"
+  "ko": "개인사업자 여신 성장, 오버행·업비트 변수와 맞물린 구간",
+  "en": "SME Loan Growth Meets Overhang and Upbit Renewal Variables"
  },
  "lead": {
-  "ko": "케이뱅크는 2년 연속 흑자와 사상 최대 외형을 달성했지만, 순이자마진 하락과 업비트 의존 구조라는 숙제를 안은 채 상장 후 수익성 검증 단계에 진입했다.",
-  "en": "K-Bank posted a second straight year of profit and record asset size, but enters a profitability-verification phase after listing, weighed by a declining net interest margin and reliance on the Upbit deposit structure."
+  "ko": "상장 첫해를 보내는 케이뱅크는 개인사업자 여신과 순이자마진 개선으로 이자이익 체력을 키우는 동시에, 채권매각이익 축소·9월 보호예수 해제·10월 업비트 제휴 만료라는 세 가지 변수를 동시에 마주하고 있다.",
+  "en": "In its first year as a listed bank, K bank is building interest-income capacity through SME lending and margin recovery, while simultaneously facing three variables: shrinking bond-disposal gains, a September lock-up expiry, and the October expiration of its Upbit account partnership."
  },
  "keypoints": [
   {
-   "ko": "2026년 3월 코스피 상장(공모가 8,300원)으로 IPO 3수를 완주했고, 비씨카드의 약 9,200억원 잠재 부담 시나리오가 해소됐다.",
-   "en": "K-Bank completed its third IPO attempt by listing on KOSPI in March 2026 at an offer price of 8,300 won, removing a potential ~920 billion won liability scenario for parent BC Card."
+   "ko": "2026년 1분기 영업이익 324억원·지배주주 순이익 332억원으로 전년 동기(순이익 161억원)의 두 배 수준을 기록했으나, 회사가 7월 30일 발표한 상반기 누적 순이익은 601억원으로 전년 동기 대비 약 29% 감소했다.",
+   "en": "First-quarter 2026 operating profit was KRW 32.4bn and net profit attributable to owners KRW 33.2bn, roughly double the year-earlier KRW 16.1bn, yet the company reported on July 30 that first-half cumulative net profit fell about 29% year on year to KRW 60.1bn."
   },
   {
-   "ko": "2025년 순이익 1,126억원으로 전년 대비 감소했으나 2년 연속 1,000억원대 흑자를 유지했다.",
-   "en": "2025 net profit of 112.6 billion won fell year over year but marked a second consecutive year of profit above 100 billion won."
+   "ko": "감익의 핵심은 이자이익이 아니라 비이자이익이다. 상반기 이자이익은 2,530억원으로 약 20% 늘었지만 비이자이익은 733억원에서 233억원으로 68% 줄었고, 회사는 채권매각이익 축소를 원인으로 설명했다.",
+   "en": "The decline stems from non-interest income, not interest income: first-half interest income rose about 20% to KRW 253bn, while non-interest income fell 68% from KRW 73.3bn to KRW 23.3bn, which the company attributed to smaller bond-disposal gains."
   },
   {
-   "ko": "순이자마진(NIM)이 3년 연속 하락했고, 업비트 예치금 이용료 급등이 핵심 원인으로 지목된다.",
-   "en": "Net interest margin declined for three straight years, with surging Upbit deposit fees cited as a key cause."
+   "ko": "성장 엔진은 개인사업자 대출이다. 잔액이 1년 만에 1조6,000억원에서 3조3,000억원으로 두 배 이상 늘며 전체 원화대출 중 기업대출 비중이 17%까지 올라섰고, 개인사업자 연체율은 0.93%에서 0.51%로 낮아졌다.",
+   "en": "SME lending is the growth engine: the balance more than doubled in a year from KRW 1.6tn to KRW 3.3tn, lifting corporate loans to 17% of total won-denominated loans, while the SME delinquency rate fell from 0.93% to 0.51%."
   },
   {
-   "ko": "2026년 1분기 순이익 332억원으로 반등했으나, 구조적 개선 여부는 추가 확인이 필요하다.",
-   "en": "Q1 2026 net profit rebounded to 33.2 billion won, but whether this reflects structural improvement requires further confirmation."
+   "ko": "10월 만료되는 업비트 실명계좌 제휴는 최대 변수다. 회사는 재계약 절차가 정상 진행 중이라고 밝혔고 업계도 연장에 무게를 두지만, 증권신고서에는 제휴 종료 가능성도 명시돼 있다.",
+   "en": "The Upbit real-name account partnership expiring in October is the key variable: management says renewal talks are proceeding normally and the industry leans toward extension, but the IPO registration statement explicitly flags the possibility of termination."
   },
   {
-   "ko": "2026년 10월 업비트 제휴 만료와 상장 후 보호예수 해제(오버행)가 중기 최대 변수다.",
-   "en": "The October 2026 Upbit partnership expiry and post-listing lockup releases (overhang) are the biggest medium-term variables."
+   "ko": "수급 측면에서는 9월 보호예수 해제 물량(우리은행 잔여 9.22% 포함 약 8,378만주)이 대기하고 있고, 외국인 보유비중은 6월 중순 기준 0.5%대에 머물렀다.",
+   "en": "On the flow side, roughly 83.78m shares are scheduled to exit lock-up in September, including Woori Bank's remaining 9.22%, while foreign ownership stood at only about 0.5% in mid-June."
   }
  ],
  "business": {
-  "ko": "케이뱅크는 2016년 출범한 국내 1호 인터넷전문은행으로, 가계대출 중심의 여신과 예대마진(이자이익)이 핵심 수익원이다. 비이자수익으로는 채권매각이익, MMF 운용수익, 플랫폼 광고 수익 등이 있다.\n케이뱅크는 IPO를 통해 확보한 공모 자금을 SME 시장 진출 가속화, 테크 리더십 강화, 플랫폼 비즈니스 확대, 디지털자산을 포함한 신사업 투자 네 가지 방향에 투입한다는 계획을 밝혔다.\n\n특히 기업여신 확대가 두드러져, 기업여신은 2023년 9751억원에서 2025년 2조3107억원으로 급증했고, 개인사업자 부동산담보대출도 700억원에서 5600억원으로 늘었다.\n\n가계대출 중심 구조에서 벗어나 포트폴리오 다변화를 본격화한 것으로 해석된다.\n 수신 측면에서는 가상자산 거래소 업비트와의 실명계좌 제휴가 핵심 기반으로 작용해 왔다.\n국내 최대 가상자산거래소인 업비트 예치금은 그동안 케이뱅크의 든든한 수신기반이었고, 예금 기반이 상대적으로 취약했던 케이뱅크로선 저원가로 예금을 끌어올 수 있는 가장 강력한 기반으로 작용했다.\n\n2025년 말 기준 전체 고객 수는 1553만명으로 전년 대비 278만명 순증했다.\n 경쟁 구도에서는 카카오뱅크가 시장 1위, 케이뱅크와 토스뱅크가 2위를 다투는 구조다.",
-  "en": "Founded in 2016, K-Bank is Korea's first internet-only bank, with household-centered lending and net interest income (deposit-loan margin) as its core revenue. Non-interest income includes bond sale gains, MMF management income, and platform advertising revenue. K-Bank said it would deploy IPO proceeds across four directions: accelerating entry into the SME market, strengthening tech leadership, expanding the platform business, and investing in new businesses including digital assets. Corporate lending growth stood out in particular, with corporate loans surging from 975.1 billion won in 2023 to 2.31 trillion won in 2025, and sole-proprietor real estate-backed loans rising from 70 billion to 560 billion won. This is read as a move away from a household-loan-centered structure toward portfolio diversification. On the funding side, the real-name account partnership with crypto exchange Upbit has been a core base. Deposits from Upbit, Korea's largest crypto exchange, had been a solid funding base for K-Bank, serving as its strongest means of attracting low-cost deposits given a relatively weak deposit base. As of end-2025, total customers reached 15.53 million, a net gain of 2.78 million from the prior year. In the competitive landscape, KakaoBank leads the market, while K-Bank and Toss Bank vie for second place."
+  "ko": "케이뱅크는 2016년 1월 설립된 국내 1호 인터넷전문은행으로, 세 번째 도전 끝에 2026년 3월 5일 코스피에 상장했다. 수익 구조는 개인 신용·담보대출과 개인사업자 여신에서 발생하는 이자이익이 중심이며, 회사가 7월 30일 공개한 상반기 이자이익은 2,530억원, 비이자이익은 233억원으로 이자 의존도가 절대적이다. 외형은 2026년 2분기 말 수신 26조6,000억원, 여신 19조8,000억원이며 고객 수는 1,645만명, 연령별 인구 대비 침투율은 32%로 처음 30%를 넘었다. 성장의 축은 개인사업자(소호) 여신으로, 잔액이 1년 만에 1조6,000억원에서 3조3,000억원으로 늘어 전체 원화대출 중 기업대출 비중이 17% 수준까지 확대됐다. 조달·고객 유입 측면에서는 가상자산 거래소 업비트와의 실명확인 입출금계좌 제휴가 핵심 축으로, 케이뱅크 계좌로 업비트를 이용하는 고객이 600만명대로 알려져 있다. 지배구조는 BC카드 등 최대주주 측이 상장 시점 31.24%, 우리은행이 11.08%를 보유한 구조로 출발했고, KT·BC카드 계열 인프라를 활용한 결제·플랫폼 연계가 전략의 배경이 된다. 경쟁 구도는 카카오뱅크·토스뱅크와의 3사 경쟁이며, 카카오뱅크가 플랫폼·수수료 기반 비이자수익에서 앞서 있는 반면 케이뱅크는 담보 중심 개인사업자 여신과 디지털자산 접점에서 차별화를 시도하고 있다. 스테이블코인 영역에서는 대주주 BC카드의 결제 인프라를 활용한 국내 생태계 구축과 해외 파트너십을 병행하는 투트랙 구상을 제시했고, 2026년 4월 국내 은행 중 처음으로 리플과 파트너십을 맺었다.",
+  "en": "Founded in January 2016 as Korea's first internet-only bank, K bank listed on the KOSPI on March 5, 2026 after three attempts. Its revenue mix is dominated by interest income from retail credit and secured loans plus SME lending: first-half interest income disclosed on July 30 was KRW 253bn versus non-interest income of just KRW 23.3bn. As of end-2Q26 deposits stood at KRW 26.6tn and loans at KRW 19.8tn, with 16.45m customers and a penetration rate of 32% of the age-adjusted population, above 30% for the first time. The growth axis is SME (SOHO) lending, whose balance rose from KRW 1.6tn to KRW 3.3tn in a year, taking corporate loans to about 17% of total won-denominated loans. On funding and customer acquisition, the real-name deposit account partnership with crypto exchange Upbit is a core pillar, with a reported 6m-plus users accessing Upbit through K bank accounts. Ownership started with BC Card and related parties at 31.24% at listing and Woori Bank at 11.08%, and the KT/BC Card infrastructure underpins its payments and platform strategy. Competition is a three-way race with KakaoBank and Toss Bank; KakaoBank leads in platform and fee-based non-interest income, while K bank differentiates through collateral-based SME lending and digital-asset touchpoints. In stablecoins, it has outlined a two-track plan using BC Card's payment infrastructure domestically alongside overseas partnerships, and in April 2026 it became the first Korean bank to partner with Ripple."
  },
  "earnings": {
-  "ko": "연간 실적을 보면 케이뱅크의 영업이익은 2023년 164.6억원에서 2024년 1,329.7억원으로 급증했다가 2025년 1,170.9억원으로 감소했다. 순이익(지배주주)도 2023년 128.1억원에서 2024년 1,280.5억원으로 뛴 뒤 2025년 1,126.1억원으로 줄었다.\n2023년 128억원에서 2024년 1281억원으로 급증했던 기저효과를 감안하더라도 성장 모멘텀이 한풀 꺾였다는 평가가 나온다.\n 감소 배경에는 이자이익 둔화가 있는데,\n이자이익은 4442억원으로 전년(4815억원) 대비 7.8% 줄었고, 여신과 운용자산이 늘었음에도 수신 비용이 확대되면서 예대마진이 축소됐다.\n\n2024년 7월 가상자산이용자보호법 시행으로 업비트 예치금 이용료율이 0.1%에서 2.1%로 높아졌고, 이로 인해 이자비용은 6353억원으로 전년 대비 15.7% 늘었다.\n 반면\n비이자이익은 1133억원으로 전년(809억원) 대비 약 40% 증가했으며, 채권매각이익과 MMF 운용수익, 플랫폼 광고 수익 반영 등이 영향을 미쳤다.\n 영업현금흐름(CFO)은 2023년 마이너스에서 2024년 1.85조원으로 크게 개선됐다가 2025년 6,166.7억원으로 축소됐다. 분기별로는 2025년 2분기 순이익 681.9억원으로 정점을 찍은 뒤 3분기 191.8억원, 4분기 91.8억원으로 둔화했다가 2026년 1분기 332.1억원으로 반등했다.\n케이뱅크는 올해 1분기 NIM 1.57%를 기록해 전분기 대비 0.17%포인트, 전년 동기 대비 0.16%포인트 상승했다.",
-  "en": "On an annual basis, K-Bank's operating profit jumped from 16.5 billion won in 2023 to 133.0 billion won in 2024, then fell to 117.1 billion won in 2025. Net profit (owners') likewise rose from 12.8 billion won in 2023 to 128.1 billion won in 2024, then declined to 112.6 billion won in 2025. Even accounting for the base effect of the surge from 12.8 billion won in 2023 to 128.1 billion won in 2024, observers say growth momentum has cooled. The decline reflects slowing interest income: interest income fell 7.8% to 444.2 billion won from 481.5 billion won, as deposit costs expanded and the loan-deposit margin narrowed even though loans and managed assets grew. After the July 2024 enforcement of the Virtual Asset User Protection Act raised the Upbit deposit fee rate from 0.1% to 2.1%, interest expense rose 15.7% year over year to 635.3 billion won. By contrast, non-interest income grew about 40% to 113.3 billion won from 80.9 billion won, helped by bond sale gains, MMF management income, and platform advertising revenue. Operating cash flow improved sharply from negative in 2023 to 1.85 trillion won in 2024, then narrowed to 616.7 billion won in 2025. By quarter, net profit peaked at 68.2 billion won in Q2 2025, slowed to 19.2 billion won in Q3 and 9.2 billion won in Q4, then rebounded to 33.2 billion won in Q1 2026. K-Bank posted a Q1 NIM of 1.57%, up 0.17 percentage point from the prior quarter and 0.16 percentage point year over year."
+  "ko": "연간 흐름을 보면 2023년 영업이익 164억원·순이익 128억원(주당순이익 34원)에서 2024년 영업이익 1,329억원·순이익 1,280억원(주당순이익 341원)으로 급격히 회복했고, 2025년은 영업이익 1,170억원·순이익 1,126억원(주당순이익 294원)으로 다시 소폭 후퇴했다. 자기자본은 2023년 1조8,668억원에서 2025년 2조1,717억원으로 늘었고, 부채는 29조6,925억원, 부채비율은 1,367.2%로 예수금이 부채로 잡히는 은행 특성이 그대로 나타난다. 영업활동현금흐름은 2023년 -5,137억원, 2024년 1조8,496억원, 2025년 6,166억원으로 예수금·운용자산 변동에 따라 진폭이 크다. 분기 흐름은 편차가 뚜렷하다. 2025년 2분기 영업이익 698억원·순이익 681억원으로 연간 이익의 절반 이상을 한 분기에 채운 뒤, 3분기 순이익 191억원, 4분기 91억원으로 급격히 둔화됐다. 2025년 2분기에는 상장을 앞두고 부실등급 대출채권을 처분해 대규모 일회성 이익이 반영됐다는 언론 분석이 있어, 2026년 상반기 감익은 상당 부분 기저 효과 성격을 갖는다. 2026년 1분기에는 영업이익 324억원·순이익 332억원으로 전년 동기(영업이익 155억원·순이익 160억원) 대비 두 배 수준으로 회복했다. 회사가 7월 30일 발표한 2분기 순이익은 269억원, 상반기 누적 601억원으로 전년 동기 대비 약 29% 감소했으며, 시장 추정치(에프앤가이드 375억원)를 밑돌았다는 평가가 나왔다. 질적으로는 상반기 순이자마진이 1.38%에서 1.59%로 개선되고 2분기 대손비용률이 1.13%에서 1.08%로 낮아진 반면, 대손비용 절대액은 513억원으로 24.2% 늘고 일반관리비도 증가해 이익 개선을 상쇄했다.",
+  "en": "Annually, operating profit recovered sharply from KRW 16.4bn with net profit of KRW 12.8bn (EPS KRW 34) in 2023 to KRW 132.9bn and KRW 128.0bn (EPS KRW 341) in 2024, then eased to KRW 117.0bn and KRW 112.6bn (EPS KRW 294) in 2025. Equity grew from KRW 1,866.8bn in 2023 to KRW 2,171.7bn in 2025, while liabilities of KRW 29,692.5bn and a debt ratio of 1,367.2% reflect the standard banking structure in which deposits are booked as liabilities. Operating cash flow swung from minus KRW 513.7bn in 2023 to KRW 1,849.6bn in 2024 and KRW 616.6bn in 2025, moving with deposit and asset-management flows. Quarterly results have been uneven: 2Q25 delivered operating profit of KRW 69.8bn and net profit of KRW 68.1bn, more than half the full-year result in a single quarter, before slowing to KRW 19.1bn in 3Q25 and KRW 9.1bn in 4Q25. Media analysis notes that 2Q25 included sizable one-off gains from disposing of impaired loan assets ahead of the IPO, so much of the 2026 first-half decline reflects a base effect. In 1Q26 operating profit reached KRW 32.4bn and net profit KRW 33.2bn, roughly double the year-earlier KRW 15.5bn and KRW 16.0bn. The company reported 2Q net profit of KRW 26.9bn on July 30 for a first-half total of KRW 60.1bn, down about 29% year on year and below the market estimate of KRW 37.5bn compiled by FnGuide. Qualitatively, the first-half net interest margin improved from 1.38% to 1.59% and the 2Q credit-cost ratio eased from 1.13% to 1.08%, but absolute credit costs rose 24.2% to KRW 51.3bn and administrative expenses also increased, offsetting the margin gains."
  },
  "industry": {
-  "ko": "인터넷전문은행 업종은 카카오뱅크·케이뱅크·토스뱅크 3사 구도다.\n같은 기간 카카오뱅크의 순이익은 4401억 원에서 4803억 원으로 9.14% 증가했고, 후발 주자인 토스뱅크 역시 순이익이 433억 원에서 1019억 원으로 135.33% 늘었다.\n 케이뱅크가 순이익 감소를 기록한 것과 대비되는 흐름이다.\n케이뱅크는 지난해 기준 자산 규모가 카카오뱅크의 약 40% 수준이지만 순이익은 23% 수준에 그쳐 수익성 격차가 뚜렷하다.\n 규제 환경 측면에서는\n금융당국이 인터넷전문은행에 신용대출 평균 잔액의 30% 이상을 중·저신용자에게 공급하도록 요구하고 있으며, 이를 지키지 못하면 신사업 인가 등 여러 부분에서 불이익을 받게 된다.\n 가계대출은 총량규제 부담이 있어 SME(개인사업자·중소기업) 시장이 성장 돌파구로 부상하고 있다. 다만\n중소기업 대출이 성장의 돌파구로 여겨지지만, 금융기관 간 기업대출 경쟁이 심화하고 있어 신규 여력만큼 빠르게 대출을 늘리기도 어려운 실정이다.\n 한편 밸류업 정책 기조와 은행주 전반의 시장 평가 개선은 업종에 우호적인 요인으로 작용해 왔다.",
-  "en": "The internet-only banking sector is a three-way race among KakaoBank, K-Bank, and Toss Bank. Over the same period KakaoBank's net profit rose 9.14% from 440.1 billion won to 480.3 billion won, and latecomer Toss Bank's net profit jumped 135.33% from 43.3 billion won to 101.9 billion won. This contrasts with K-Bank's net profit decline. As of last year, K-Bank's asset size was about 40% of KakaoBank's, but its net profit was only about 23%, showing a clear profitability gap. On the regulatory front, authorities require internet-only banks to supply at least 30% of average credit-loan balances to mid- and low-credit borrowers, and failure to comply brings disadvantages including new-business licensing. With household lending constrained by total-volume regulation, the SME (sole-proprietor and small-business) market is emerging as a growth outlet. However, while SME lending is seen as a growth breakthrough, intensifying competition among financial institutions makes it hard to expand loans as quickly as new capacity allows. Meanwhile, the corporate value-up policy stance and improving market sentiment toward bank stocks have been favorable factors for the sector."
+  "ko": "인터넷전문은행 3사는 가계대출 총량 규제가 이어지는 국면에서 성장 활로를 개인사업자(소상공인) 여신으로 옮기고 있다. 2026년 상반기 카카오뱅크 순이익은 3,280억원으로 반기 기준 최대였고, 토스뱅크는 1분기 296억원을 기록해 케이뱅크와의 이익 격차가 부각됐다. 다만 이익 구성의 차이가 뚜렷하다. 카카오뱅크는 상반기 비이자수익 5,895억원으로 영업수익의 36%를 채운 반면, 케이뱅크는 채권매각이익 감소로 비이자이익이 68% 줄었다. 여신 경쟁은 개인사업자로 집중되고 있는데, 카카오뱅크의 2분기 말 개인사업자 대출 잔액은 3조6,870억원, 케이뱅크는 3조3,010억원으로 근접해 있어 금리 경쟁이 수익성을 압박할 수 있다는 우려가 업계에서 제기된다. 수신 측면에서는 증시로 자금이 이동하는 흐름이 3사 공통 부담으로 작용했고, 카카오뱅크 수신은 2분기 말 전분기 대비 2조2,460억원 감소했다. 건전성 지표에서는 케이뱅크의 2분기 말 연체율 0.60%, 고정이하여신비율 0.59%로 지방은행권(1%선 상회)보다 양호한 수준이 유지되고 있다. 자본 여력 면에서는 상장 자금 유입으로 2분기 말 BIS 총자본비율이 20.02%까지 올라 전년 15.00% 대비 크게 개선됐고, 메리츠증권은 상장 후 최대 24조원 규모의 대출 성장 여력을 추정한 바 있다(2026년 2월 보도). 반대로 한국투자증권은 가계부채 총량 규제와 중저신용자 비중 목표, 기업대출 경쟁 심화를 들어 여신 확대 속도가 제한될 수 있다고 평가했다.",
+  "en": "With household lending caps still in force, all three internet-only banks are shifting their growth engine toward small-business (SOHO) lending. KakaoBank posted record half-year net profit of KRW 328bn in 1H26 and Toss Bank KRW 29.6bn in 1Q, highlighting the earnings gap versus K bank. The composition differs sharply: KakaoBank's first-half non-interest revenue of KRW 589.5bn made up 36% of operating revenue, whereas K bank's non-interest income fell 68% on smaller bond-disposal gains. Loan competition is converging on SMEs, with KakaoBank's SME balance at KRW 3,687bn and K bank's at KRW 3,301bn at end-2Q, prompting industry concern that rate competition could erode profitability. On funding, a shift of money into equities weighed on all three, with KakaoBank's deposits down KRW 2,246bn quarter on quarter at end-2Q. On asset quality, K bank's end-2Q delinquency rate of 0.60% and substandard-and-below ratio of 0.59% remain better than regional banks, which are above the 1% line. Capital capacity improved markedly after the IPO, with the BIS total capital ratio at 20.02% at end-2Q versus 15.00% a year earlier, and Meritz Securities estimated post-IPO loan growth headroom of up to KRW 24tn (reported February 2026). Conversely, Korea Investment & Securities argued that household debt caps, mid-to-low credit borrower quotas, and intensifying corporate lending competition could limit the pace of loan expansion."
  },
  "outlook": {
-  "ko": "케이뱅크는 상장과 함께 구체적인 성장 로드맵을 제시했다.\n현재 가계대출 중심의 포트폴리오를 2030년까지 가계와 SME 비중을 5대 5로 맞춘다는 목표다.\n\n2027년 초 출시를 목표로 법인 대상 비대면 대출 개발 작업에 착수했으며, 개인사업자 대출과 같이 보증·신용·담보 대출을 모두 아우르는 상품 라인업을 점진적으로 출시할 계획이다.\n 신성장 동력으로는 스테이블코인을 점찍었는데,\n스테이블코인 법제화 시 해외송금 인프라 구축에 선제적으로 나서기 위해 태국 및 아랍에미리트(UAE)와 협력 MOU를 완료했다.\n 자본 측면에서는\n상장 공모금(약 4,980억 원)을 통한 자본 확충으로 약 10조 원 이상의 신규 대출 여력이 생기는 것으로 추산된다.\n 주주환원에 대해서는\n자사주 매입 등 직접적인 주주환원 정책보다는 이익 성장과 ROE 개선을 먼저 이루겠다는 방침을 재확인했다.\n\n이후 ROE 두자릿수 달성 시에는 배당 및 자사주 소각 등 본격적인 주주환원에 나설 것으로 기대된다.\n 다만 가장 큰 변수인 업비트 제휴 만료가 2026년 10월로 다가와 있어 재계약 협상의 향방이 중기 실적을 좌우할 전망이다.",
-  "en": "K-Bank presented a concrete growth roadmap alongside its listing. Its goal is to shift the currently household-centered portfolio to a 50:50 household-to-SME ratio by 2030. It has begun developing non-face-to-face corporate loans targeting an early-2027 launch, and plans to roll out a product lineup spanning guarantee, credit, and collateral loans, similar to its sole-proprietor offerings. It has tapped stablecoins as a new growth engine, and to move pre-emptively on cross-border remittance infrastructure upon stablecoin legislation, it has completed cooperation MOUs with Thailand and the UAE. On capital, the roughly 498 billion won in IPO proceeds is estimated to create over 10 trillion won in new lending capacity. On shareholder returns, the bank reaffirmed it would prioritize earnings growth and ROE improvement over direct measures such as share buybacks. Once it achieves double-digit ROE, it is expected to pursue full-fledged shareholder returns such as dividends and share cancellations. However, the biggest variable—the Upbit partnership expiry—looms in October 2026, and the course of renewal negotiations is expected to sway medium-term earnings."
+  "ko": "회사는 하반기 개인사업자 부문 확대와 디지털자산 역량 강화를 성장 전략의 두 축으로 제시했다. 사장님 부동산담보대출의 담보 대상을 기존 아파트에서 연립·다세대주택, 오피스텔, 상가까지 넓히고 자금 용도도 운전자금에서 시설자금으로 확대할 계획이며, 중소법인 대상 비대면 대출은 내년 출시를 목표로 여신 시스템 구축에 착수했다. 1분기 컨퍼런스콜에서 회사는 올해 자산 성장률을 10% 후반대로, 소호대출 연간 증가 규모를 2조원 이상으로 제시했다. 2분기 실적발표에서는 전략실장이 자산 성장에 이어 이익 성장이 따라올 것으로 보며 하반기 시장금리 상승을 감안해 실적을 긍정적으로 본다고 밝혔다. 비이자이익 회복 방안으로는 하반기 앱테크 서비스 출시와 광고 제휴 강화를 제시했다. 10월 만료되는 업비트 실명계좌 제휴에 대해서는 재계약 절차가 정상 진행 중이라는 입장이며, 하나은행의 두나무 지분 취득(6.55%, 1조33억원) 이후에도 업계에서는 연장 가능성에 무게가 실린다는 관측이 나온다. 스테이블코인 영역에서는 리플과의 파트너십과 유럽 은행권 공동 프로젝트 참여가 진행됐으나, 은행의 직접 발행 허용 범위와 준비금·감독 기준 등 제도 세부가 확정되지 않아 실제 사업화 시점은 입법 속도에 따라 달라질 수 있다. 배당과 관련해서는 회사가 성장 우선 방침을 밝혀 온 만큼, 확정된 주당 배당금 이력은 아직 없다.",
+  "en": "Management has framed second-half strategy around two pillars: expanding the SME franchise and strengthening digital-asset capabilities. It plans to widen eligible collateral for its small-business mortgage loan from apartments to row houses, multiplex housing, officetels and retail units, and to extend loan purposes from working capital to facility funding, while a lending system build-out has begun for non-face-to-face loans to small corporates targeted for launch next year. On the 1Q call the company guided to asset growth in the high teens for the year and annual SOHO loan growth above KRW 2tn. At the 2Q briefing, the head of strategy said profit growth should follow asset growth and that expected upward pressure on market rates supports a constructive second-half view. To rebuild non-interest income, it plans app-based reward services and stronger advertising partnerships in the second half. Regarding the Upbit real-name account tie-up expiring in October, the company says renewal procedures are proceeding normally, and even after Hana Bank acquired a 6.55% stake in Dunamu for KRW 1,003.3bn, industry observers lean toward extension. In stablecoins, it has struck a Ripple partnership and joined a European bank consortium project, but with rules on direct bank issuance, reserves and supervision still unsettled, commercialization timing depends on the pace of legislation. On dividends, the company has prioritized growth and there is no confirmed dividend-per-share history to date."
  },
  "valuation_comment": {
-  "ko": "케이뱅크의 헤드라인 자기자본이익률(ROE)은 약 5.8%, 주당순이익(EPS)은 약 334원, 주당순자산(BPS)은 약 6,321원 수준이다. 이익은 적자 시기를 지나 흑자 기조로 전환했으나, 카카오뱅크 대비 자산 대비 이익 창출력이 낮다는 점이 수익성 지표의 한계로 지적된다. 주가는 공모가(8,300원)를 밑도는 구간에서 움직여 왔으며, 순자산 대비로는 소폭의 프리미엄이 반영된 영역에 위치한다. 경쟁사인 카카오뱅크가 통상 더 높은 순자산 배수에서 거래돼 온 점을 감안하면, 케이뱅크의 순자산 배수는 업종 선두 대비 낮은 편이다. 배당의 경우 회사가 ROE 개선을 우선하겠다는 방침이어서 현재 배당은 실시하지 않고 있다. 시장은 NIM 개선 지속 여부와 업비트 재계약 결과를 밸류에이션 재평가의 핵심 변수로 보고 있다.",
-  "en": "K-Bank's headline return on equity is about 5.8%, earnings per share about 334 won, and book value per share about 6,321 won. Earnings have turned to a profit footing after a loss period, but lower profit generation relative to assets versus KakaoBank is cited as a limitation of its profitability metrics. The share price has traded below the offer price (8,300 won), and sits in a zone reflecting a modest premium to net assets. Given that peer KakaoBank has typically traded at a higher price-to-book multiple, K-Bank's net-asset multiple is on the lower side relative to the sector leader. As for dividends, the company prioritizes ROE improvement and currently pays no dividend. The market views the continuation of NIM improvement and the Upbit renewal outcome as the key variables for any valuation re-rating."
+  "ko": "제공된 기준으로 주당순이익은 334원, 주당순자산은 6,321원이며, 이익은 2023년의 미미한 수준에서 2024년 큰 폭 확대, 2025년 소폭 후퇴, 2026년 상반기 다시 감소라는 굴곡을 그려 왔다. 주가는 상장 이후 공모가 8,300원을 지속적으로 밑돌아 왔고(6월 5일 종가 5,570원, 6월 15일 종가 6,980원), 순자산가치 대비 배수도 공모가 산정 당시 거론된 약 1.38배 수준에서 크게 낮아진 영역에서 형성돼 있다. 메리츠증권은 상장 전 보고서에서 공모가 밴드 상단을 2027년 예상 이익·자본 기준 주가수익비율 24배, 주가순자산비율 1.6배로 추정하며 실질 마진 개선과 신사업 성과 반영 시점을 2027년으로 제시했다. 배당은 확정된 주당 배당금 이력이 없어 배당수익률 측면의 매력은 배당·자사주 정책을 갖춘 대형 은행지주 대비 낮은 위치에 있으며, 딜사이트경제TV는 확충 자본의 실적 기여 확신이 부족해 주주환원 기대가 상대적으로 낮다고 지적했다. 밸류에이션 논쟁의 축은 결국 개인사업자 여신의 이익 기여가 채권매각이익 공백을 메우는지, 그리고 업비트 제휴와 오버행이라는 두 변수가 어떻게 정리되는지에 놓여 있다.",
+  "en": "On the provided basis, earnings per share stand at KRW 334 and book value per share at KRW 6,321, with profits tracing a path from negligible levels in 2023 to a sharp expansion in 2024, a modest step back in 2025 and a renewed decline in the first half of 2026. The share price has consistently traded below the KRW 8,300 IPO price since listing (closing at KRW 5,570 on June 5 and KRW 6,980 on June 15), and the multiple against net assets sits well below the roughly 1.38x cited when the offer price was set. In a pre-IPO report, Meritz Securities estimated the top of the offer band at 24x earnings and 1.6x book on 2027 projected profit and equity, and pointed to 2027 as the point when underlying margin improvement and new-business results would show through. There is no confirmed dividend-per-share history, leaving dividend appeal below that of large banking groups with established payout and buyback policies, and Dealsite Economy TV noted that shareholder-return expectations remain relatively low given limited conviction that the new capital will translate quickly into earnings. Ultimately the valuation debate hinges on whether SME lending profits can fill the gap left by bond-disposal gains, and on how the Upbit partnership and overhang variables are resolved."
  },
  "bull": [
   {
    "title": {
-    "ko": "외형 성장과 포트폴리오 다변화",
-    "en": "Asset growth and portfolio diversification"
+    "ko": "개인사업자 여신의 양적·질적 동반 개선",
+    "en": "SME lending improving in both size and quality"
    },
    "body": {
-    "ko": "케이뱅크는 총자산과 여신 규모에서 사상 최대치를 경신하며 외형을 키웠다. 총자산은 2023년 21조4218억원에서 2025년 31조8643억원으로 약 49% 증가했고, 총여신도 같은 기간 13조8374억원에서 18조3787억원으로 확대됐다. 기업여신과 개인사업자 대출 확대로 가계대출 일변도에서 벗어나는 구조 전환이 진행 중이다. 1,500만 고객 기반은 향후 교차판매와 플랫폼 수익의 토대가 될 수 있다.",
-    "en": "K-Bank has expanded its scale, setting record highs in total assets and loans. Total assets grew about 49% from 21.42 trillion won in 2023 to 31.86 trillion won in 2025, and total loans expanded from 13.84 trillion won to 18.38 trillion won over the same period. A structural shift away from reliance on household loans is underway via corporate and sole-proprietor lending expansion. The 15-million customer base could underpin future cross-selling and platform revenue."
+    "ko": "개인사업자 대출 잔액은 1년 만에 1조6,000억원에서 3조3,000억원으로 두 배 이상 늘었고, 2분기에만 직전 분기 대비 30% 급증해 처음 3조원대를 넘었다. 담보·보증 상품 비중이 2분기 말 45%로 1년 전보다 약 15%포인트 높아지면서 개인사업자 연체율은 0.93%에서 0.51%로 떨어졌다. 하반기에는 담보 대상이 연립·다세대주택, 오피스텔, 상가로 확대되고 시설자금까지 취급 범위가 넓어질 예정이다. 담보 중심 확장은 자산 증가 속도와 건전성을 함께 관리할 수 있는 방식이라는 점에서 이익률 개선 여지와 연결된다.",
+    "en": "The SME loan balance more than doubled in a year from KRW 1.6tn to KRW 3.3tn, surging 30% quarter on quarter in 2Q alone to top KRW 3tn for the first time. Collateralized and guaranteed products rose to 45% of the SME book at end-2Q, about 15 percentage points higher than a year earlier, and the SME delinquency rate fell from 0.93% to 0.51%. In the second half, eligible collateral expands to row houses, multiplex housing, officetels and retail units, with facility funding added to the product scope. Collateral-led expansion allows asset growth and asset quality to be managed together, leaving room for operating profitability to improve."
    }
   },
   {
    "title": {
-    "ko": "수익성 반등 신호",
-    "en": "Signs of a profitability rebound"
+    "ko": "마진 회복과 자본 여력 확대",
+    "en": "Margin recovery and expanded capital capacity"
    },
    "body": {
-    "ko": "상장 후 첫 실적인 2026년 1분기에 순이익이 332억원으로 반등했다. 올해 1분기 NIM은 1.57%로 전분기 대비 0.17%포인트, 전년 동기 대비 0.16%포인트 상승했다. 업비트 예치금 비중도 지난해 3분기 24.6%까지 치솟은 이후 4분기 20.5%, 올해 1분기 18.4%까지 줄었다. 고비용 예치금 비중 축소와 마진 개선이 동반된 점은 수익성 회복 기대를 뒷받침한다.",
-    "en": "In Q1 2026, its first results after listing, net profit rebounded to 33.2 billion won. Q1 NIM was 1.57%, up 0.17 percentage point from the prior quarter and 0.16 percentage point year over year. The share of Upbit deposits also fell from a peak of 24.6% in Q3 last year to 20.5% in Q4 and 18.4% in Q1 this year. The combination of a shrinking high-cost deposit share and margin improvement supports hopes for a profitability recovery."
+    "ko": "상반기 누적 순이자마진은 1.38%에서 1.59%로 0.21%포인트 상승했고, 2분기 대손비용률도 1.13%에서 1.08%로 개선됐다. 상장 자금 유입으로 2분기 말 BIS 총자본비율은 20.02%로 전년 15.00% 대비 크게 높아졌다. 메리츠증권은 상장 후 BIS 비율 상향을 근거로 최대 24조원 규모의 대출 성장 여력을 추정했다(2026년 2월 보도). 자본 제약이 완화된 상태에서 자산 성장 여력이 확보됐다는 점은 이자이익 기반 확대의 전제 조건이다.",
+    "en": "The cumulative first-half net interest margin rose 21 basis points from 1.38% to 1.59%, and the 2Q credit-cost ratio improved from 1.13% to 1.08%. IPO proceeds lifted the BIS total capital ratio to 20.02% at end-2Q from 15.00% a year earlier. Meritz Securities estimated post-IPO loan growth headroom of up to KRW 24tn on the back of the higher BIS ratio (reported February 2026). With capital constraints eased, the runway for asset growth is a precondition for a broader interest-income base."
    }
   },
   {
    "title": {
-    "ko": "건전성 개선과 신사업 옵션",
-    "en": "Improving soundness and new-business optionality"
+    "ko": "고객 기반 확대와 디지털자산 접점",
+    "en": "Wider customer base and digital-asset access"
    },
    "body": {
-    "ko": "자산건전성 지표가 개선 흐름을 이어갔다. 연체율은 2024년 말 0.96%에서 2025년 말 0.60%로 낮아졌고, 고정이하여신(NPL) 비율도 0.86%에서 0.57%로 안정화됐으며, 대손비용률도 1.59%에서 1.22%로 개선됐다. 스테이블코인 기반 해외송금과 법인 대상 디지털자산 서비스는 중장기 성장 옵션으로 거론된다. 업비트 법인 거래 지원 역량은 디지털자산 시장 확대 시 차별화 요인이 될 수 있다.",
-    "en": "Asset-quality metrics continued to improve. The delinquency rate fell from 0.96% at end-2024 to 0.60% at end-2025, the NPL ratio stabilized from 0.86% to 0.57%, and the credit-cost ratio improved from 1.59% to 1.22%. Stablecoin-based remittances and corporate digital-asset services are cited as medium-to-long-term growth options. Its capability to support corporate trading via Upbit could be a differentiator if the digital-asset market expands."
+    "ko": "2026년 상반기 말 고객 수는 1,645만명으로 1년 전 1,413만명 대비 232만명(16.4%) 늘었고, 연령별 인구 대비 침투율은 32%로 처음 30%를 넘었다. 증시로 자금이 이동하는 환경에서도 코드K 정기예금과 미성년자 대상 마이키즈 서비스 등으로 수신 기반을 유지했다. 디지털자산 영역에서는 업비트 제휴를 개인 실명계좌에서 법인 거래·자금관리·결제·송금으로 확장할 수 있다는 것이 회사 설명이며, 2026년 4월 리플과의 파트너십과 유럽 은행권 공동 프로젝트 참여도 진행됐다. 제도화 속도에 따라 결제·송금 영역에서 수수료 수익 기회가 열릴 수 있는 구조다.",
+    "en": "Customers totaled 16.45m at end-1H26, up 2.32m or 16.4% from 14.13m a year earlier, with penetration of the age-adjusted population passing 30% for the first time at 32%. Even as money rotated into equities, the deposit base held up through products such as the Code K time deposit and the MyKids service for minors. In digital assets, management argues the Upbit tie-up can extend from retail real-name accounts into corporate trading, cash management, payments and remittances, alongside the April 2026 Ripple partnership and participation in a European bank consortium project. Depending on the pace of regulation, this structure could open fee-income opportunities in payments and remittances."
    }
   }
  ],
  "bear": [
   {
    "title": {
-    "ko": "구조적 NIM 하락",
-    "en": "Structural NIM decline"
+    "ko": "비이자이익 공백과 시장 기대 미달",
+    "en": "Non-interest income gap and missed expectations"
    },
    "body": {
-    "ko": "예대마진 중심 수익모델의 한계가 노출됐다. NIM은 2023년 2.35%에서 2024년 1.91%, 2025년 1.40%로 3년 연속 하락했다. 1분기 반등에도 불구하고 구조적 개선이 뒷받침되는지는 추가 확인이 필요한 상황이다. 자산을 늘려도 마진이 낮으면 이익 증가로 직결되기 어렵다는 점이 핵심 약점이다.",
-    "en": "The limits of a deposit-loan-margin-centered model have been exposed. NIM declined for three straight years, from 2.35% in 2023 to 1.91% in 2024 and 1.40% in 2025. Despite the Q1 rebound, whether structural improvement underpins it requires further confirmation. A key weakness is that growing assets does not readily translate into profit growth when margins are low."
+    "ko": "상반기 비이자이익은 733억원에서 233억원으로 68% 감소했고, 회사는 채권매각이익 축소를 원인으로 설명했다. 2분기 비이자이익은 91억원으로 직전 분기 대비 5.1% 줄었고, 수수료수익 감소와 수수료비용 증가가 함께 작용했다. 그 결과 2분기 순이익 269억원은 에프앤가이드 기준 시장 추정치 375억원을 28% 밑돌았다는 평가가 나왔다. 앱테크·광고 제휴 등으로 제시한 비이자이익 회복 방안은 아직 실적으로 확인되지 않은 단계다.",
+    "en": "First-half non-interest income fell 68% from KRW 73.3bn to KRW 23.3bn, which the company attributed to smaller bond-disposal gains. Second-quarter non-interest income of KRW 9.1bn was down 5.1% quarter on quarter, hit by lower fee revenue alongside higher fee expenses. As a result, 2Q net profit of KRW 26.9bn came in 28% below the FnGuide market estimate of KRW 37.5bn. The remedies outlined, such as app-based reward services and advertising partnerships, have yet to show up in reported results."
    }
   },
   {
    "title": {
-    "ko": "업비트 의존과 재계약 불확실성",
-    "en": "Upbit dependence and renewal uncertainty"
+    "ko": "단일 거래소 의존과 10월 계약 만료",
+    "en": "Single-exchange reliance and the October expiry"
    },
    "body": {
-    "ko": "수신 기반의 상당 부분이 업비트 예치금에 의존한다. 케이뱅크 계좌를 통해 업비트에서 가상자산을 거래하는 고객은 600만명대에 달하고, 업비트 예치금은 케이뱅크 전체 예치금의 약 20%를 차지한다. 제휴 계약은 올해 10월 종료되며, 앞서 양사는 지난해 10월 1년 단위로 계약을 맺은 바 있다. 재계약 성공 시 기업가치 재평가 기회가 열리지만, 실패하면 수신 기반 훼손과 주가 하방 압력이 동시에 닥친다.",
-    "en": "A significant portion of the funding base depends on Upbit deposits. Customers trading crypto on Upbit via K-Bank accounts number in the six millions, and Upbit deposits account for about 20% of K-Bank's total deposits. The partnership contract expires this October, and the two had previously signed a one-year deal in October last year. A successful renewal opens a chance for valuation re-rating, but failure would simultaneously damage the funding base and create downward pressure on the stock."
+    "ko": "업비트 실명계좌 제휴는 수신과 고객 유입을 지탱해 온 축으로, 케이뱅크는 증권신고서에 2026년 10월 이후 제휴가 종료될 가능성을 배제할 수 없다고 명시했다. 2분기 전체 순이자마진은 1.96%로 직전 분기 대비 0.02%포인트 하락했으나 업비트 예치금을 제외한 마진은 1.59%로 상승해, 예치금 규모 변동이 지표를 흔드는 구조가 확인된다. 하나금융이 두나무 지분 6.55%를 1조33억원에 취득한 이후 제휴 은행 변경 가능성이 거론되기도 했다. 가상자산 전문가들은 계약 종료 시 전체 수신의 상당 부분이 이탈할 수 있다는 견해를 제시한 바 있다.",
+    "en": "The Upbit real-name account partnership has underpinned deposits and customer acquisition, and K bank's registration statement explicitly states it cannot rule out termination after October 2026. The headline 2Q net interest margin slipped 2 basis points to 1.96% while the margin excluding Upbit deposits rose to 1.59%, showing how swings in exchange deposits move reported metrics. After Hana Financial acquired a 6.55% stake in Dunamu for KRW 1,003.3bn, speculation emerged about a change of partner bank. Crypto-industry commentators have suggested a meaningful share of total deposits could leave if the contract were to lapse."
    }
   },
   {
    "title": {
-    "ko": "오버행과 수급 부담",
-    "en": "Overhang and supply pressure"
+    "ko": "오버행과 취약한 수급 기반",
+    "en": "Overhang and a thin investor base"
    },
    "body": {
-    "ko": "상장 후 보호예수 해제에 따른 매도 물량 부담이 크다. 6월에는 재무적투자자(FI) 보유 보호예수 물량의 절반이 먼저 풀리고 9월에는 나머지 절반과 우리은행 보유 물량이 해제되는데, 6월부터 9월 사이 해제되는 물량은 약 1억1900만 주로 전체 발행주식의 약 29.3% 수준이다. 또한 가계부채 총량규제와 중·저신용자 신용대출 비중 목표로 인해 가계대출을 늘리기 쉽지 않은 상황이다. 내수 부진 속 SOHO 대출 건전성 관리 부담도 지적된다.",
-    "en": "Post-listing lockup releases create heavy selling-pressure overhang. In June, half of the financial investors' (FI) locked-up shares are released first, with the remaining half plus Woori Bank's holdings released in September; the volume freed between June and September is about 119 million shares, roughly 29.3% of total shares outstanding. Moreover, household-debt total-volume regulation and mid/low-credit loan-ratio targets make it hard to grow household loans. Managing SOHO loan soundness amid weak domestic demand is also flagged."
+    "ko": "6월 5일 전체 상장주식의 약 9%인 3,575만9,040주가 보호예수에서 해제됐고, 9월에는 8,377만5,566주가 추가로 풀린다. 6월과 9월 해제 물량을 합치면 1억1,953만4,606주로 발행주식의 29%대에 해당한다. 9월 물량 가운데 약 3,739만주는 우리은행 잔여 지분(9.22%)이며, 우리금융은 락업 종료 후 주가 수준에 따라 매각을 검토할 수 있다는 입장을 밝혔다. 외국인 보유비중이 6월 중순 0.51%에 머물러 국내 개인 중심 수급으로 대규모 해제 물량을 흡수해야 하는 구조라는 지적이 나왔다.",
+    "en": "On June 5, 35.76m shares, about 9% of listed stock, came out of lock-up, and a further 83.78m shares are released in September. Combined June and September releases total 119.53m shares, roughly 29% of outstanding shares. Around 37.39m of the September tranche is Woori Bank's remaining 9.22% stake, and Woori Financial has said it may consider selling depending on the share price once the lock-up ends. With foreign ownership at just 0.51% in mid-June, observers noted the market must absorb these releases largely through domestic retail flows."
    }
   }
  ],
  "risks": [
   {
    "cat": {
-    "ko": "규제·정책 리스크",
+    "ko": "신용 리스크 — 자영업 경기",
+    "en": "Credit risk — small-business cycle"
+   },
+   "body": {
+    "ko": "개인사업자 여신을 성장 축으로 삼는 전략은 자영업 경기와 직접 연결된다. 2분기 대손비용률이 1.08%로 개선됐음에도 대손비용 절대액은 513억원으로 전년 413억원 대비 24.2% 늘었고, 전체 고정이하여신비율은 0.51%에서 0.59%로 상승했다. 상장 전 논의 과정에서도 성장률 둔화와 자영업 폐업 증가 국면의 공격적 확장이 위험할 수 있다는 경고가 제기됐다. 담보·보증 비중 확대가 완충 역할을 하더라도 담보가치 하락 국면에서는 손실 흡수력이 시험받을 수 있다.",
+    "en": "A strategy anchored on SME lending is directly tied to the small-business cycle. Although the 2Q credit-cost ratio improved to 1.08%, absolute credit costs rose 24.2% to KRW 51.3bn from KRW 41.3bn, and the overall substandard-and-below ratio rose from 0.51% to 0.59%. Even before listing, commentators warned that aggressive expansion amid slowing growth and rising small-business closures carries risk. A higher share of collateral and guarantees provides a buffer, but loss absorption would be tested if collateral values decline."
+   }
+  },
+  {
+   "cat": {
+    "ko": "규제·제도 리스크",
     "en": "Regulatory and policy risk"
    },
    "body": {
-    "ko": "인터넷전문은행은 중·저신용자 대출 비중 규제를 적용받는다. 금융당국은 신용대출 평균 잔액의 30% 이상을 중·저신용자에게 공급하도록 요구하고 있으며, 이를 지키지 못하면 신사업 인가 등에서 불이익을 받게 되어 무작정 대출 규모를 늘릴 수 없다. 가계부채 총량규제도 외형 확대를 제약한다. 스테이블코인·디지털자산 관련 법제화 속도도 신사업 전개의 변수다.",
-    "en": "Internet-only banks are subject to mid/low-credit loan-ratio regulation. Authorities require supplying at least 30% of average credit-loan balances to mid/low-credit borrowers, and failing to comply brings disadvantages in new-business licensing, so loans cannot be expanded indiscriminately. Household-debt total-volume regulation also constrains expansion. The pace of stablecoin and digital-asset legislation is another variable for new-business rollout."
+    "ko": "가계대출 총량 규제와 중저신용자 대출 비중 목표는 인터넷전문은행의 성장 경로를 제약하는 요인으로 지속 지적돼 왔다. 한국투자증권은 가계대출 확대가 어려운 상황에서 기업대출 경쟁 심화로 신규 여력만큼 빠르게 대출을 늘리기 어렵다고 평가했다. 스테이블코인 사업은 은행 직접 발행 허용 범위, 준비금 적립 방식, 회계·감독 기준 등 세부 제도가 확정되지 않아 실행 시점과 사업 구조가 입법 과정에 좌우된다. 실명계좌 제휴 역시 '1거래소 1은행' 구조와 금융당국 협의 절차에 영향을 받는 영역이다.",
+    "en": "Household lending caps and mid-to-low credit borrower quotas have repeatedly been flagged as constraints on internet-only bank growth. Korea Investment & Securities argued that with household lending hard to expand, intensifying corporate loan competition makes it difficult to grow loans as fast as capital capacity would allow. The stablecoin business depends on unsettled rules covering direct bank issuance, reserve requirements and accounting and supervisory standards, so timing and structure hinge on legislation. Real-name account partnerships are likewise shaped by the one-exchange-one-bank framework and regulatory consultation procedures."
    }
   },
   {
    "cat": {
-    "ko": "조달비용·수익성 리스크",
-    "en": "Funding-cost and profitability risk"
+    "ko": "지배구조·주주 구성 변화",
+    "en": "Governance and shareholder structure shifts"
    },
    "body": {
-    "ko": "예치금 이용료율 상승이 조달비용을 끌어올렸다. 2024년 7월 가상자산이용자보호법 시행으로 업비트 예치금 이용료율이 0.1%에서 2.1%로 높아졌고, 같은 기간 업비트 예치금 운용수익률은 3.0%에서 1.9%로 낮아졌다. 이는 NIM과 ROE 동반 하락으로 이어졌다. 비이자수익 확대와 비용 효율화가 실제 성과로 이어질지가 관건이다.",
-    "en": "Rising deposit fee rates have pushed up funding costs. After the July 2024 Virtual Asset User Protection Act, the Upbit deposit fee rate rose from 0.1% to 2.1%, while the yield on Upbit deposits fell from 3.0% to 1.9% over the same period. This led to a simultaneous decline in NIM and ROE. Whether non-interest income expansion and cost efficiency translate into actual results is the key."
-   }
-  },
-  {
-   "cat": {
-    "ko": "지배구조·수급 리스크",
-    "en": "Governance and supply risk"
-   },
-   "body": {
-    "ko": "대주주 지분 매각과 보호예수 해제가 주가 변동성을 키울 수 있다. 실제 케이뱅크 주요 주주인 우리은행은 상장 당일인 3월 5일 보유 분 11.08% 중 1.86%를 매각했다. 우리은행은 9.22%를 6개월 의무보유 중이며, 해당 보호예수 해제 이후 추가 매각 가능성도 시장의 관심사로 떠올라 있다. 최대주주 비씨카드의 FI 계약 관련 이슈도 과거 부담 요인으로 작용한 바 있다.",
-    "en": "Major-shareholder share sales and lockup releases can amplify price volatility. On the listing day of March 5, key shareholder Woori Bank sold 1.86% of its 11.08% stake. Woori Bank holds 9.22% under a six-month lockup, and potential additional sales after that lockup release have drawn market attention. FI-contract issues involving largest shareholder BC Card have also been a burden in the past."
+    "ko": "우리금융은 2026년 1분기 사업보고서에서 우리은행의 관계기업 목록에서 케이뱅크를 제외했고, 우리은행 추천 사외이사도 임기 만료 후 연임되지 않았다. 금융권에서는 이를 전략적 협력 관계 정리와 투자금 회수 국면으로의 이동으로 해석하는 시각이 제기됐다. 상장 당일 우리은행은 보호예수가 걸리지 않은 753만6,442주를 주당 8,738원에 처분했다. 잔여 지분의 처분 여부와 시점은 주주 구성과 수급 양쪽에 영향을 주는 사실 관계로 확인이 필요하다.",
+    "en": "Woori Financial removed K bank from Woori Bank's list of associates in its 1Q26 business report, and the outside director nominated by Woori Bank was not reappointed after his term ended. Some in the financial industry read this as a wind-down of the strategic relationship and a shift toward monetizing the investment. On listing day, Woori Bank sold 7.54m unrestricted shares at KRW 8,738 each. Whether and when the remaining stake is sold is a factual matter to monitor, as it affects both the shareholder register and share supply."
    }
   }
  ],
  "checkpoints": [
   {
    "when": {
-    "ko": "2026년 6~9월",
-    "en": "June–September 2026"
+    "ko": "2026년 9월",
+    "en": "September 2026"
    },
    "what": {
-    "ko": "보호예수 해제 일정. 6월부터 9월 사이 해제되는 물량은 약 1억1900만 주로 전체 발행주식의 약 29.3% 수준이다. 실제 출회 규모와 주가 영향을 확인해야 한다.",
-    "en": "Lockup release schedule. The volume freed between June and September is about 119 million shares, roughly 29.3% of shares outstanding. Watch the actual amount sold and its share-price impact."
-   }
-  },
-  {
-   "when": {
-    "ko": "2026년 7월 말~8월 초",
-    "en": "Late July–early August 2026"
-   },
-   "what": {
-    "ko": "2026년 2분기 실적 발표 예상 시점. 1분기 NIM 반등(1.57%)과 순이익 회복세가 이어지는지, 비이자이익과 비용 효율화 성과가 지속되는지 확인 포인트다.",
-    "en": "Expected timing of Q2 2026 results. Check whether the Q1 NIM rebound (1.57%) and net-profit recovery continue, and whether non-interest income and cost efficiency gains persist."
+    "ko": "보호예수 해제 물량 8,377만5,566주(우리은행 잔여 9.22% 약 3,739만주 포함)의 실제 출회 여부를 확인해야 한다. 6월 5일 해제 당시에는 주가가 FI 취득가로 알려진 6,500원 안팎을 밑돌아 매도 유인이 제한적이었다는 해석이 나왔던 만큼, 이번에는 주가 수준과 대량 매도 공시 여부가 함께 관찰 대상이다.",
+    "en": "Watch whether the 83.78m shares exiting lock-up, including roughly 37.39m from Woori Bank's remaining 9.22%, actually reach the market. When 35.76m shares were released on June 5, the share price sat below the reported FI entry cost of around KRW 6,500, which observers said limited selling incentives, so both the prevailing price and any block-sale disclosures merit attention."
    }
   },
   {
@@ -172,49 +162,69 @@
     "en": "October 2026"
    },
    "what": {
-    "ko": "업비트 제휴 계약 만료. 제휴 계약 만료 시점은 2026년 10월로 예정돼 있으며, 재계약 여부와 조건이 중기 실적 추정에 결정적인 영향을 미치는 변수로 꼽힌다.",
-    "en": "Upbit partnership expiry. The partnership is set to expire in October 2026, and the renewal decision and terms are seen as a decisive variable for medium-term earnings estimates."
+    "ko": "업비트와의 실명확인 입출금계좌 제휴 만료 시점이다. 회사는 재계약 절차가 정상 진행 중이라고 밝혔고 업계는 연장 가능성에 무게를 두지만, 연장 기간과 조건(수수료 구조, 법인 거래 대응 범위)이 수신 기반과 비이자이익 구조를 좌우하는 핵심 정보다.",
+    "en": "The Upbit real-name deposit account partnership expires. Management says renewal procedures are proceeding normally and the industry leans toward extension, but the renewal term and conditions, including fee structure and scope for corporate trading, are the key data points for the deposit base and non-interest income structure."
    }
   },
   {
    "when": {
-    "ko": "2027년 초",
-    "en": "Early 2027"
+    "ko": "2026년 10월 말 전후",
+    "en": "Around late October 2026"
    },
    "what": {
-    "ko": "법인 대상 비대면 대출 출시 목표 시점. 2027년 초 출시를 목표로 법인 대상 비대면 대출 개발 작업에 착수했다. SME 포트폴리오 확대 전략의 실행 여부를 가늠할 수 있다.",
-    "en": "Target launch for corporate non-face-to-face loans. K-Bank has begun developing corporate non-face-to-face loans targeting an early-2027 launch. This will gauge execution of its SME portfolio expansion strategy."
+    "ko": "3분기 실적 발표(1분기는 4월 30일, 2분기는 7월 30일 발표)에서 회사가 언급한 '자산 성장 이후 이익 성장' 논리가 숫자로 확인되는지 점검해야 한다. 순이자마진, 대손비용률, 비이자이익 회복 폭, 개인사업자 대출 순증 규모가 확인 포인트다.",
+    "en": "At the third-quarter results release, following disclosures on April 30 and July 30, check whether management's argument that profit growth follows asset growth shows up in the numbers. Key items are the net interest margin, credit-cost ratio, the scale of non-interest income recovery, and net additions to SME loans."
+   }
+  },
+  {
+   "when": {
+    "ko": "2026년 하반기~2027년 상반기",
+    "en": "2H 2026 to 1H 2027"
+   },
+   "what": {
+    "ko": "개인사업자 부동산담보대출의 담보 대상 확대(연립·다세대·오피스텔·상가)와 시설자금 취급 개시 시점, 그리고 중소법인 비대면 대출 시스템 구축 진행 상황을 확인해야 한다. 회사가 제시한 소호대출 연간 증가 2조원 이상, 자산 성장률 10% 후반대 가이던스의 달성 여부와 함께 보면 유효성 판단이 가능하다.",
+    "en": "Track the timing of expanded collateral eligibility for small-business mortgage loans, covering row houses, multiplex housing, officetels and retail units, the start of facility funding, and progress on the lending system for non-face-to-face small-corporate loans. Reading these against the guided annual SOHO loan growth above KRW 2tn and high-teens asset growth allows an assessment of execution."
+   }
+  },
+  {
+   "when": {
+    "ko": "입법 일정에 연동",
+    "en": "Linked to the legislative calendar"
+   },
+   "what": {
+    "ko": "디지털자산기본법과 원화 스테이블코인 관련 제도의 확정 내용을 확인해야 한다. 은행 직접 발행 허용 범위와 준비금·감독 기준이 정해져야 케이뱅크가 밝힌 은행 컨소시엄 참여 및 BC카드 결제망 활용 구상의 실행 가능성과 수익 인식 경로를 판단할 수 있다.",
+    "en": "Monitor the final shape of the digital asset framework act and won-stablecoin rules. Only once the scope for direct bank issuance and the reserve and supervisory standards are set can the feasibility and revenue path of K bank's stated plans to join a bank consortium and use BC Card's payment network be assessed."
    }
   }
  ],
  "verdict": {
   "body": {
-   "ko": "케이뱅크는 2026년 3월 3수 끝에 코스피 상장을 완주하며 자본 확충과 비씨카드의 잠재 부담 해소라는 전환점을 맞았다. 2년 연속 흑자를 유지했지만 2025년 순이익은 전년 대비 감소했고, 3년 연속 하락한 NIM이 수익성의 핵심 약점으로 지목된다. 외형은 총자산·여신·고객 수 모두 사상 최대를 기록하며 성장세를 이어갔고, 건전성 지표도 개선됐다. 2026년 1분기 순이익 반등과 마진 개선은 긍정적 신호이나 구조적 회복 여부는 추가 확인이 필요하다. 중기적으로는 SME·법인 대출 확대와 스테이블코인 신사업이 성장 옵션으로 거론되는 반면, 2026년 10월 업비트 제휴 만료와 보호예수 해제에 따른 오버행이 핵심 변수다. 카카오뱅크 대비 자산 대비 이익 창출력이 낮은 점은 밸류에이션 측면의 한계로 남아 있다. 본 자료는 정보 제공용이며 투자 권유가 아니다.",
-   "en": "K-Bank completed its third KOSPI listing attempt in March 2026, marking a turning point of capital replenishment and the removal of BC Card's potential burden. It maintained a second straight year of profit, but 2025 net profit fell year over year, and a NIM that has declined for three years is cited as the core profitability weakness. In terms of scale, total assets, loans, and customer count all hit record highs, sustaining growth, and asset-quality metrics improved. The Q1 2026 net-profit rebound and margin improvement are positive signals, but whether a structural recovery is underway requires further confirmation. Over the medium term, SME and corporate lending expansion and the stablecoin new business are cited as growth options, while the October 2026 Upbit partnership expiry and lockup-release overhang are key variables. Lower profit generation relative to assets versus KakaoBank remains a valuation-side limitation. This material is for informational purposes only and is not investment advice."
+   "ko": "케이뱅크의 2026년 상반기는 이자이익 체력과 비이자이익 공백이 정면으로 부딪힌 구간이었다. 상반기 이자이익이 2,530억원으로 약 20% 늘고 순이자마진이 1.38%에서 1.59%로 개선된 것은 개인사업자 여신 확대의 성과이지만, 채권매각이익 감소로 비이자이익이 68% 줄어 상반기 누적 순이익은 601억원으로 후퇴했다. 제공된 확정 재무를 보면 2023년 순이익 128억원에서 2024년 1,280억원으로 급증한 뒤 2025년 1,126억원으로 소폭 감소했고, 분기 편차가 커 특정 분기의 일회성 요인 유무를 함께 봐야 한다. 강세 논리는 담보 중심 개인사업자 여신의 건전성 유지, BIS 총자본비율 20.02%가 뒷받침하는 자산 성장 여력, 1,645만 고객과 침투율 32%의 기반에 있다. 약세 논리는 비이자이익 구조의 취약성, 업비트 단일 제휴 의존, 6~9월 발행주식 29%대에 해당하는 보호예수 해제 물량, 0.5%대에 머문 외국인 기반에 있다. 확정된 주당 배당금 이력이 없어 주주환원은 아직 검증 단계가 아니며, 회사는 성장 우선 방침을 유지해 왔다. 결국 10월 업비트 재계약 결과, 9월 오버행 소화 과정, 3분기 이후 개인사업자 여신의 이익 기여라는 세 가지 사실 확인이 이 기업의 서로 다른 시나리오를 가르는 분기점이 될 전망이다.",
+   "en": "K bank's first half of 2026 was defined by a direct collision between interest-income capacity and a gap in non-interest income. First-half interest income rose about 20% to KRW 253bn and the net interest margin improved from 1.38% to 1.59% on the back of SME loan expansion, but a 68% drop in non-interest income from shrinking bond-disposal gains pulled cumulative first-half net profit back to KRW 60.1bn. The confirmed financials show net profit jumping from KRW 12.8bn in 2023 to KRW 128.0bn in 2024 before easing to KRW 112.6bn in 2025, with wide quarterly dispersion that makes one-off items in specific quarters essential to check. The bullish case rests on stable asset quality in collateral-led SME lending, asset growth capacity supported by a 20.02% BIS total capital ratio, and a base of 16.45m customers with 32% penetration. The bearish case rests on the fragility of the non-interest income structure, reliance on a single Upbit partnership, lock-up releases equal to about 29% of outstanding shares across June and September, and a foreign ownership base of only about 0.5%. With no confirmed dividend-per-share history, shareholder returns remain unproven, and management has kept growth as the priority. Ultimately, three verifiable outcomes will separate the divergent scenarios for this company: the October Upbit renewal, how the September overhang is absorbed, and the profit contribution from SME lending from the third quarter onward."
   }
  },
  "sources": [
+  "https://zdnet.co.kr/view/?no=20260730161548",
+  "https://www.bondweb.co.kr/_research/downloadPage.asp?number=898480&gn=1",
+  "https://www.nspna.com/report/?mode=view&newsid=823078",
+  "https://www.sisajournal-e.com/news/articleView.html?idxno=422806",
+  "https://www.1conomynews.co.kr/news/articleView.html?idxno=49785",
+  "https://www.joongangenews.com/news/articleView.html?idxno=536753",
+  "https://www.straightnews.co.kr/news/articleView.html?idxno=307573",
+  "https://edaily.co.kr/News/Read?mediaCodeNo=257&newsId=05894166645519768",
+  "https://www.mt.co.kr/finance/2026/07/30/2026073015260115111",
+  "https://www.topstarnews.net/news/articleView.html?idxno=15989538",
   "https://www.pressman.kr/news/articleView.html?idxno=101699",
-  "https://dealsite.co.kr/articles/159648",
-  "https://news.bizwatch.co.kr/article/finance/2026/05/07/0026",
-  "https://v.daum.net/v/20260320110222800",
-  "https://www.sedaily.com/article/20034261",
-  "https://www.newstopkorea.com/news/articleView.html?idxno=44399",
-  "https://www.thebell.co.kr/front/newsview.asp?key=202602051013088000104874",
-  "https://stock1.brokdam.com/%EC%BC%80%EC%9D%B4%EB%B1%85%ED%81%AC-%EC%A3%BC%EA%B0%80-%EC%A0%84%EB%A7%9D-%EC%A7%80%EA%B8%88-%EB%A7%A4%EC%88%98-%ED%83%80%EC%9D%B4%EB%B0%8D%EC%9D%BC%EA%B9%8C/",
-  "https://dart.fss.or.kr/html/search/SearchCompanyIR3_M.html?textCrpNM=%EC%BC%80%EC%9D%B4%EB%B1%85%ED%81%AC",
-  "https://www.bizhankook.com/bk/article/31794",
-  "https://news.dealsitetv.com/articles/161692",
-  "https://www.straightnews.co.kr/news/articleView.html?idxno=296554",
-  "https://www.newsfc.co.kr/news/articleView.html?idxno=77078",
-  "https://www.38.co.kr/html/fund/?o=v&no=2271",
-  "https://www.thebell.co.kr/front/newsview.asp?key=202603310131179810107945",
-  "https://kr.investing.com/news/company-news/article-93CH-1912605",
-  "https://www.fntimes.com/html/view.php?ud=2026052213294941689efc5ce4ae_18",
-  "https://kr.investing.com/news/transcripts/article-93CH-1912562"
+  "https://bizhankook.com/articles/31794.html",
+  "https://news.nate.com/view/20260330n37348",
+  "https://zdnet.co.kr/view/?no=20260305102538",
+  "https://www.cbci.co.kr/news/articleView.html?idxno=564224",
+  "https://www.greened.kr/news/articleView.html?idxno=337787",
+  "https://dealsite.co.kr/articles/157075",
+  "https://www.38.co.kr/html/fund/?o=v&no=2271"
  ],
  "v": 2,
- "model": "claude-opus-4-8",
+ "model": "claude-opus-5",
  "ticker": "279570",
  "name": "케이뱅크",
  "name_en": "Kbank",
@@ -223,11 +233,11 @@
   "금융"
  ],
  "market": "코스피",
- "reportDate": "2026-06-16",
- "reportTs": "2026-06-16 19:21",
- "dataDate": "20260616",
+ "reportDate": "2026-08-15",
+ "reportTs": "2026-08-15 12:15",
+ "dataDate": "20260814",
  "quant": {
-  "asOf": "2026-06-16",
+  "asOf": "2026-08-15",
   "fs_basis": "연결(CFS) · DART 공시 확정치 · 지배주주 기준 순이익",
   "annual": [
    {
@@ -309,19 +319,19 @@
    }
   ],
   "valuation": {
-   "price": 6680,
-   "mcap": 2.71,
+   "price": 5720,
+   "mcap": 2.3206,
    "shares": 405695151,
    "total_shares": 375695151,
    "wavg_shares": 383023809,
-   "per": 20.0,
+   "per": 17.1,
    "eps": 334,
-   "pbr": 1.06,
+   "pbr": 0.9,
    "bps": 6321,
    "roe_ttm": 5.8,
    "ttm_window": "2025Q2~2026Q1",
    "ttm_np_owner": 129757000000,
-   "pbr_krx": 1.19,
+   "pbr_krx": 0.99,
    "bps_krx": 5781.0,
    "basis": "PER·EPS·PBR·BPS 모두 자체 산출(네이버·토스와 동일 방식) · 배당은 DART 공시 주당현금배당금(보완:KRX) ÷ 현재가",
    "dps": 0.0,

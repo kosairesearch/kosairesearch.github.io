@@ -1,230 +1,220 @@
 {
  "title": {
-  "ko": "동물진단 본업 고성장, 지분법 손실이 변수",
-  "en": "Animal Diagnostics Core Business Delivers; Equity-Method Losses Remain the Key Variable"
+  "ko": "영업이익 개선, 지분법손익 변동성 확대",
+  "en": "Operating Profit Improves, Equity-Method Swings Widen"
  },
  "lead": {
-  "ko": "코로나 특수 소멸 이후 동물진단 전문기업으로 체질 전환한 바이오노트는 2025년 연결 매출·영업이익이 각각 15%, 37% 성장하고 2026년 1분기에도 성장세를 이어갔으나, 관계기업 지분법 손실이 순이익을 대규모로 교란하는 이중 구조가 지속되고 있다.",
-  "en": "Having pivoted from COVID-era peak revenues to a pure-play animal diagnostics model, Bionote delivered 15% revenue and 37% operating profit growth in 2025 and maintained momentum in Q1 2026, while equity-method losses from affiliated companies continue to distort headline net income."
+  "ko": "매출과 영업이익은 꾸준히 성장하고 있으나 관계기업 지분법손익의 큰 변동으로 순이익 변동성이 커지고 있으며, 순자산 대비 주가 할인 상태와 지배구조 이슈가 함께 거론되고 있다.",
+  "en": "Revenue and operating profit continue to grow steadily, but net income volatility has widened due to large equity-method gains and losses from affiliates, while the stock trades at a discount to net asset value amid governance concerns."
  },
  "keypoints": [
   {
-   "ko": "동물진단 매출 비중이 2021년 8.7%에서 2025년 약 63%로 급증하며 포스트 코로나 사업 전환이 실질적으로 완료됐다.",
-   "en": "Animal diagnostics revenue share surged from 8.7% in 2021 to ~63% in 2025, marking a substantive completion of the post-COVID business transformation."
+   "ko": "2025년 매출 15.1% 증가·영업이익 36.8% 증가했으나 관계기업 지분법손실 등으로 순이익은 적자전환",
+   "en": "2025 revenue grew 15.1% and operating profit rose 36.8%, but net income turned to loss due to equity-method losses from affiliates"
   },
   {
-   "ko": "2025년 매출 1,183억원·영업이익 167억원, 2026년 1분기에도 매출 326억원·영업이익 63억원으로 본업 성장 궤도가 유지됐다.",
-   "en": "FY2025 revenue of ₩118.3B and operating profit of ₩16.7B were followed by a solid Q1 2026 (revenue ₩32.6B, OP ₩6.3B), confirming the operational growth trajectory remains intact."
+   "ko": "2026년 1분기 매출 326억원·영업이익 63억원으로 전년 동기 대비 각각 약 14%·35% 증가",
+   "en": "1Q2026 revenue of KRW 32.6bn and operating profit of KRW 6.3bn, up about 14% and 35% year-on-year respectively"
   },
   {
-   "ko": "관계기업(에스디바이오센서 등) 지분법 손실이 2025년 4분기에만 순손실 -1,940억원을 발생시켜 연간 순이익을 크게 왜곡했다.",
-   "en": "Equity-method losses from affiliates (incl. SD Biosensor) drove a Q4 2025 net loss of -₩193.9B, severely distorting full-year net income despite healthy operating performance."
+   "ko": "SD바이오센서 등 관계기업 지분법손익이 분기별 순이익을 크게 좌우(2025년 2분기 순이익 845억원 vs 4분기 -1,940억원)",
+   "en": "Equity-method gains/losses from affiliates such as SD Biosensor heavily sway quarterly net income (KRW 84.5bn profit in 2Q2025 vs KRW -194.0bn loss in 4Q2025)"
   },
   {
-   "ko": "북미 WVC 2026에서 신제품 6종 공개, 코베트러스 유통 파트너십, 씨티씨바이오 단독경영 추진 등 중장기 성장 동력이 구체화되고 있다.",
-   "en": "Medium-term growth catalysts are taking shape: six new products unveiled at WVC 2026, Covetrus distribution partnership, and the transition to sole management of CTC Bio."
+   "ko": "장부가 순자산 대비 주가 할인이 지속되며 오너 지분 증여 시점을 둘러싼 저평가 방치 의혹이 제기됨",
+   "en": "The stock continues to trade at a discount to book net assets, with allegations that the low valuation has been left unaddressed around the timing of owner-family share gifts"
   },
   {
-   "ko": "부채비율 3.0%·자기자본 약 1조 5,112억원의 탄탄한 재무 구조에 배당(DPS ₩228)·자사주 소각(65만 주)을 병행하며 주주환원 기조를 유지하고 있다.",
-   "en": "A robust balance sheet (3.0% debt ratio, ~₩1.511T equity) supports shareholder returns via a DPS of ₩228 and a 650,000-share buyback cancellation."
+   "ko": "반려동물 헬스케어 성장과 산업동물 방역예산 확대가 동물진단 사업의 안정적 성장 기반으로 작용",
+   "en": "Growth in companion-animal healthcare and expanding livestock disease-control budgets underpin stable growth in the animal diagnostics business"
   }
  ],
  "business": {
-  "ko": "바이오노트는 2003년 설립된 동물용 진단 검사 제품 및 바이오 컨텐츠 전문기업으로, 2022년 12월 유가증권시장에 상장했다. 주요 사업은 ①동물진단(Animal Diagnostics)과 ②바이오 컨텐츠(Bio-Contents) 두 부문으로 구성되며, 2025년 기준 동물진단 부문이 전체 매출의 약 63%를 차지한다. 동물진단 부문의 주력 제품은 형광면역분석 장비 'Vcheck F'(글로벌 누적 판매 2만 4천 대 돌파)와 신속진단키트 'BIONOTE Rapid'이며, 여기에 현장 분자진단기 'Vcheck M', 생화학 분석기 'Vcheck C', 혈액 분석기 'Vcheck H6', 요검사 장비 'Vcheck U3'를 연속 출시하며 토탈 진단 포트폴리오를 구축 중이다. 바이오 컨텐츠 부문은 유전자 재조합 항원·항체·효소 등 체외진단 핵심 원료를 관계사 및 외부 IVD 업체에 공급하며, 코로나19 팬데믹 당시 에스디바이오센서에 진단시약 반제품을 대량 공급하면서 급성장했으나 현재는 매출 비중이 10% 미만으로 급감했다. 원료부터 완제품까지 수직계열화된 생산 구조가 원가 경쟁력을 뒷받침하며, 80여 개국·120개 딜러 및 직영 거점을 통한 글로벌 유통망을 운영한다. 동물진단 매출의 약 75%가 수출에서 발생하고, 미국법인(BioNote USA)·중국법인(Shanghai Rohi Biotechnology) 등 해외 거점을 통해 직접 판매를 확대하고 있다. 주요 관계사인 에스디바이오센서(지분 약 36.5%)와 씨티씨바이오의 지분법 손익이 연결 순이익에 상당한 영향을 주고 있어, 본업 영업이익과 연결 순이익 간 괴리가 투자 분석상 핵심 변수로 부각된다.",
-  "en": "Founded in 2003 and listed on KOSPI in December 2022, Bionote specializes in animal diagnostics and bio-contents. The business is structured into two core segments: ① Animal Diagnostics and ② Bio-Contents, with animal diagnostics accounting for approximately 63% of 2025 revenue. The animal diagnostics portfolio centers on the Vcheck F fluorescence immunoassay system (over 24,000 cumulative global placements) and BIONOTE Rapid test kits, with Vcheck M molecular diagnostics, Vcheck C biochemistry analyzer, Vcheck H6 hematology analyzer, and Vcheck U3 urinalysis device being added to build a full-suite diagnostic platform. The bio-contents segment supplies recombinant antigens, antibodies, and enzymes to affiliates and external IVD manufacturers; revenues surged during COVID-19 when Bionote supplied bulk diagnostic reagents to SD Biosensor, but this contribution has since fallen below 10% of total sales. A vertically integrated supply chain from raw materials to finished goods underpins cost competitiveness, while a network spanning 80+ countries and 120 dealers and direct offices enables broad global distribution. Around 75% of animal diagnostics revenue comes from exports, supported by overseas subsidiaries BioNote USA and Shanghai Rohi Biotechnology. Key affiliate SD Biosensor (~36.5% equity stake) and CTC Bio exert significant influence on Bionote's consolidated net income through equity-method accounting, creating a persistent divergence between core operating profit and reported earnings."
+  "ko": "바이오노트는 동물용 체외진단 제품과 인체용 진단 관련 바이오콘텐츠 사업을 영위하는 라이프사이언스·동물진단 전문기업이다. 동물진단사업부는 형광면역분석 장비 'Vcheck F'를 주력 제품으로 하며, 이 장비는 2026년 1분기 기준 글로벌 누적 판매량이 2만5천대에 근접했다. 여기에 신속진단(Rapid) 키트, 현장형 분자진단 장비 'Vcheck M', 생화학 진단 제품 'Vcheck C', 혈액학 검사 제품 'Vcheck H' 등 진단 토탈 솔루션 라인업을 갖추고 있다. 인체 진단 부문에서는 관계기업인 SD바이오센서에 대한 지분 관계를 통해 회계적으로도 연결되어 있으며, 이 지분은 지분법으로 평가되어 순이익에 반영된다. 최근에는 사업 다각화 차원에서 의료·미용기기 제조사 메디코슨과 인공지능 기반 헬스케어 회사 튜링바이오를 인수했으며, 보툴리눔 톡신 제제 '리엔톡주100단위'의 국내 품목허가도 취득해 신규 성장동력을 모색하고 있다. 회사는 BL-3 연구시설을 보유해 고위험 병원체 취급이 가능하고, 바이오리액터 배양시스템을 통한 항체 대량생산 역량도 갖추고 있다. 경쟁구도 측면에서는 글로벌 동물진단 시장의 Zoetis, IDEXX 등 대형 업체와 국내 중앙백신, 이글벳 등이 경쟁상대로 거론되며, 인체진단 부문에서는 씨젠, 바디텍메드 등이 비교 대상으로 언급된다. SD그룹 계열사로서 SD바이오센서·유바이오로직스·씨티씨바이오 등과 협력·투자 관계를 맺고 있어 그룹 차원의 사업 시너지도 특징 중 하나다.",
+  "en": "BioNote is a life-science and animal diagnostics specialist operating both animal in-vitro diagnostics products and human-diagnostics-related bio-content business. The animal diagnostics division's flagship product is the fluorescence immunoassay device 'Vcheck F', whose cumulative global sales approached 25,000 units as of 1Q2026. The company also offers a total diagnostics lineup including rapid diagnostic kits, the point-of-care molecular diagnostics device 'Vcheck M', biochemistry test product 'Vcheck C', and hematology test product 'Vcheck H'. In human diagnostics, the company is accounting-linked to affiliate SD Biosensor through an equity stake accounted for under the equity method, which flows through to net income. Recently, the company has diversified by acquiring medical/aesthetic device maker Medicoson and AI-based healthcare firm Turing Bio, and has also obtained domestic approval for the botulinum toxin product 'Reentox Injection 100 units' to pursue new growth drivers. The company operates BL-3 research facilities capable of handling high-risk pathogens and possesses bioreactor culture systems for mass antibody production. Competitively, global players such as Zoetis and IDEXX and domestic firms such as Choongang Vaccine and Eagle Vet are cited in animal diagnostics, while Seegene and Boditech Med are referenced comparables in human diagnostics. As an SD Group affiliate, the company maintains cooperative and investment ties with SD Biosensor, EuBiologics, and CTC Bio, adding group-level business synergy as a distinguishing feature."
  },
  "earnings": {
-  "ko": "바이오노트의 실적은 코로나19 정점인 2022년(매출 4,797억원·영업이익 2,954억원·영업이익률 61.6%)에서 급격히 정상화됐다. 2023년에는 코로나19 재고자산 충당금 처리 등 일시적 비용이 집중되며 매출 901억원·영업손실 470억원(영업이익률 -52.2%)을 기록했고, 영업현금흐름도 -42억원으로 유출됐다. 2024년에는 원가 절감 효과가 가시화되며 매출 1,028억원·영업이익 122억원(영업이익률 11.9%)으로 흑자 전환에 성공했고, 영업현금흐름도 579억원으로 대폭 개선됐다. 2025년은 매출 1,183억원(+15.1% YoY)·영업이익 167억원(+36.8% YoY)으로 성장을 이어갔으며 영업이익률이 14.1%로 회복됐다. 그러나 관계기업 지분법 손실 영향으로 2025년 연간 순손실이 -875억원에 달했는데, 4분기 단독으로 순손실 -1,940억원이 집중되어 연간 순이익을 교란했다. 분기 흐름을 보면 2025년 1분기 매출 284억원·영업이익 47억원, 2분기 매출 324억원·영업이익 63억원으로 상반기가 강했고, 4분기가 영업이익 8억원에 그치는 계절성 저점을 형성했다. 2026년 1분기는 매출 326억원(전년 동기 대비 약 +14.5%)·영업이익 63억원(+35%)·순이익 413억원으로, 본업 모멘텀 지속과 함께 순이익도 플러스 전환됐다. 2025년 영업현금흐름 144억원은 일회성 순이익 왜곡에도 불구하고 본업 현금 창출력이 유지되고 있음을 확인시켜 준다.",
-  "en": "Bionote's financials reflect a sharp normalization from the COVID-19 peak: in 2022, revenue reached ₩479.7B with operating profit of ₩295.4B and OPM of 61.6%. In 2023, concentrated one-time costs — primarily inventory write-downs related to COVID products — pushed revenue to ₩90.1B and produced an operating loss of ₩47.0B (OPM -52.2%), with operating cash flow turning negative at -₩4.2B. The 2024 turnaround was decisive: revenue recovered to ₩102.8B, operating profit reached ₩12.2B (OPM 11.9%), and operating cash flow surged to ₩57.9B as cost controls took effect across both segments. FY2025 extended this recovery with revenue of ₩118.3B (+15.1% YoY) and operating profit of ₩16.7B (+36.8% YoY), lifting OPM to 14.1% and generating operating cash flow of ₩14.4B. Net income, however, collapsed to a -₩87.5B loss, dominated by a -₩193.9B net loss in Q4 2025 attributable to equity-method losses from affiliates. Quarterly progression shows 2025 was front-loaded: Q1 (revenue ₩28.4B, OP ₩4.7B) and Q2 (₩32.4B, ₩6.3B) led the year, while Q4 was the seasonal trough (₩28.0B, ₩0.84B). Q1 2026 confirmed the operational trajectory — revenue ₩32.6B (+14.5% YoY), OP ₩6.3B (+35%), and net income turning positive at ₩41.3B — demonstrating that the equity-method drag reversed in the quarter."
+  "ko": "2025년 연결 매출액은 1,183억원으로 2024년 1,028억원 대비 15.1% 증가했고, 영업이익은 167억원으로 전년 122억원보다 36.8% 늘어나며 영업이익률이 11.9%에서 14.1%로 개선됐다. 그러나 지배주주 순이익은 -875억원으로 2024년 553억원 흑자에서 적자전환했는데, 회사 측은 관계기업 지분법손실 등의 영향이라고 설명했다. 분기별로 보면 변동성이 뚜렷하다. 2025년 1분기 매출 284억원·영업이익 47억원·순이익 40억원, 2분기는 매출 324억원·영업이익 63억원인데 순이익이 845억원으로 영업이익을 크게 상회했다. 반면 3분기는 매출 295억원·영업이익 48억원·순이익 179억원으로 다시 둔화됐고, 4분기에는 매출 280억원·영업이익 8억원에 그쳤을 뿐 아니라 순이익이 -1,940억원에 이르는 대규모 손실을 기록해 연간 실적을 적자로 돌려세웠다. 이러한 순이익 급변은 영업 실적보다는 관계기업 지분법 평가손익의 크기와 방향에 좌우된 결과로 해석된다. 2026년 1분기에는 매출 326억원, 영업이익 63억원을 기록해 전년 동기 대비 각각 약 14%, 35% 증가했고 순이익도 413억원으로 다시 흑자권에 복귀했다. 영업활동현금흐름(CFO)은 2025년 144억원으로 2024년 579억원보다 크게 줄었는데, 이는 순이익 적자전환과 무관하게 영업 자체의 현금창출력은 유지됐음을 보여준다. 과거 2022년에는 코로나19 특수로 매출 4,797억원, 영업이익률 61.6%라는 이례적 고수익을 기록했으나 2023년에는 매출 901억원으로 급감하며 영업적자(-470억원)를 기록한 바 있어, 팬데믹 특수 해소 이후 정상화 국면에서 현재의 성장세를 이어가는 흐름으로 볼 수 있다.",
+  "en": "2025 consolidated revenue reached KRW 118.3bn, up 15.1% from KRW 102.8bn in 2024, while operating profit rose 36.8% to KRW 16.7bn from KRW 12.2bn, lifting the operating margin from 11.9% to 14.1%. However, net income attributable to owners swung to a loss of KRW -87.5bn from a profit of KRW 55.3bn in 2024, which the company attributed to equity-method losses from affiliates. Quarterly results show clear volatility: 1Q2025 posted revenue of KRW 28.4bn, operating profit of KRW 4.7bn and net income of KRW 4.0bn; 2Q2025 revenue was KRW 32.4bn with operating profit of KRW 6.3bn, yet net income of KRW 84.5bn far exceeded operating profit. In contrast, 3Q2025 moderated to revenue of KRW 29.5bn, operating profit of KRW 4.8bn and net income of KRW 17.9bn, and 4Q2025 saw revenue of only KRW 28.0bn and operating profit of just KRW 0.8bn, alongside a massive net loss of KRW -194.0bn that dragged full-year results into the red. This sharp net income swing appears driven more by the magnitude and direction of equity-method valuation gains/losses from affiliates than by operating performance itself. In 1Q2026, revenue of KRW 32.6bn and operating profit of KRW 6.3bn were up about 14% and 35% year-on-year respectively, with net income also returning to profit at KRW 41.3bn. Operating cash flow (CFO) fell sharply to KRW 14.4bn in 2025 from KRW 57.9bn in 2024, though this shows the underlying operating cash generation persisted independent of the net loss. Notably, 2022 saw an exceptional pandemic-driven windfall with revenue of KRW 479.7bn and a 61.6% operating margin, followed by a sharp drop to KRW 90.1bn revenue and an operating loss of KRW -47.0bn in 2023, suggesting the current growth trend reflects a normalization phase after the pandemic-driven spike subsided."
  },
  "industry": {
-  "ko": "글로벌 동물 진단시장은 반려동물 가구 증가와 펫 휴머니제이션(pet humanization) 트렌드를 기반으로 구조적 성장을 이어가고 있다. 업계에 따르면 시장 규모는 2020년 약 45억 달러(약 7조원)에서 2026년 약 75억 달러(약 10조원)로 성장할 것으로 전망되며, 전 세계 동물의약품·의료기기 시장은 2031년에는 약 103조원까지 성장이 예상된다. 북미는 글로벌 동물진단 시장의 약 50%를 차지하는 핵심 시장으로, IDEXX Laboratories·Heska·Zoetis 등 미국계 대형 플레이어가 자본력과 브랜드 지배력을 갖추고 있다. 구조적 변화 측면에서는 외부 위탁 검사(Reference Lab)에서 현장 원내 진단(In-clinic Diagnostics)으로의 전환이 POC 진단기기 수요를 구조적으로 견인하고 있다. 바이오노트는 동물용 형광면역진단(Vcheck F) 분야에서 글로벌 점유율 1위를 내세우며, 이를 토대로 생화학·혈액·소변·분자진단으로 포트폴리오를 확장해 풀 라인업 경쟁자로 도약을 꾀하고 있다. 규제 인허가 취득이 각국 시장의 진입 장벽으로 작용하며, 반려동물 고령화에 따른 만성질환 진단 수요 증가와 조류인플루엔자 등 감염병 방역 예산 확대가 성장의 추가 동력이 되고 있다.",
-  "en": "The global animal diagnostics market is on a structural growth path, driven by rising pet ownership and the pet humanization trend. Industry estimates point to expansion from approximately $45B (~₩7T) in 2020 to $75B (~₩10T) by 2026, with the broader animal health market projected to reach ~₩103T by 2031. North America accounts for roughly 50% of the global animal diagnostics market and is dominated by well-resourced incumbents such as IDEXX Laboratories, Heska, and Zoetis. The most significant structural demand driver is the ongoing shift from outsourced reference laboratory testing to in-clinic point-of-care diagnostics — a trend that benefits platform providers like Bionote capable of delivering full-suite solutions. Bionote claims global market leadership in fluorescence immunoassay (Vcheck F) and is using this installed base as a launchpad to expand into biochemistry, hematology, urinalysis, and molecular diagnostics. Regulatory approvals serve as meaningful entry barriers across markets, while rising demand from aging companion animals (chronic disease diagnostics) and government biosecurity spending (avian influenza response) provide additional secular growth tailwinds."
+  "ko": "반려동물 가구 증가와 펫 휴머니제이션 트렌드에 힘입어 동물용 체외진단 시장이 성장하고 있으며, 산업동물 체외진단 부문은 국가 방역 예산 증가에 따라 안정적 성장세를 유지하고 있는 것으로 파악된다. 회사는 이 시장에서 형광면역분석기 'Vcheck' 시리즈를 앞세워 글로벌 시장 입지를 확대하고 있으며, 진단 토탈 솔루션 포트폴리오를 통해 제품군을 다변화하고 있다. 인체진단 부문에서는 관계기업 SD바이오센서를 통한 코로나19 이후 시장 정상화 국면에서 매출 기여도가 과거 팬데믹 특수기 대비 축소된 것으로 추정된다. 글로벌 동물진단 시장에서는 Zoetis, IDEXX Laboratories 등 대형 다국적 기업이 시장을 주도하고 있어, 바이오노트는 상대적으로 중소형 플레이어로서 가격 경쟁력과 아시아 지역 공급망을 강점으로 삼고 있는 것으로 판단된다. 제약바이오·헬스케어 업종 전반에서는 저PBR 상장사가 다수 존재하는 것으로 나타나 업종 차원의 밸류에이션 소외 현상이 이어지고 있다는 지적도 제기된다. SD그룹 계열사인 유바이오로직스, 에스디바이오센서 등도 유사하게 실적 대비 낮은 시가총액 평가를 받고 있어 그룹 차원의 저평가 논란이 이어지는 양상이다.",
+  "en": "The animal in-vitro diagnostics market is growing on the back of rising pet-owning households and the pet humanization trend, while the livestock diagnostics segment is understood to be maintaining stable growth driven by increased national disease-control budgets. The company is expanding its global market position with its 'Vcheck' series of fluorescence immunoassay devices and diversifying its product portfolio through a total diagnostics solution lineup. In human diagnostics, revenue contribution via affiliate SD Biosensor is presumed to have shrunk relative to the pandemic-era peak as the market normalizes post-COVID. In the global animal diagnostics market, large multinational players such as Zoetis and IDEXX Laboratories lead the industry, positioning BioNote as a relatively smaller player leveraging cost competitiveness and Asian supply chain strength. Across the pharma-bio and healthcare sector broadly, a large number of listed companies trade at low price-to-book ratios, pointing to a sector-wide valuation neglect. SD Group affiliates such as EuBiologics and SD Biosensor are similarly assessed at market capitalizations low relative to their fundamentals, extending the group-wide undervaluation debate."
  },
  "outlook": {
-  "ko": "바이오노트는 2026년 동물진단 포트폴리오의 '풀 라인업(Full Line-Up)' 구축을 핵심 경영 과제로 제시했다. 생화학(Vcheck C), 혈액(Vcheck H6), 요검사(Vcheck U), 혈액가스(Vcheck G), 인공지능 세포학(Vcheck A) 등 신규 카테고리 장비를 연속 출시하여 기존 형광면역(Vcheck F)·분자진단(Vcheck M)과 함께 토탈 진단 솔루션을 완성한다는 전략이다. 북미 시장에서는 미국법인(BioNote USA)을 통해 WVC 2026에서 6종 신제품을 공개했으며, 연 매출 약 7조원 규모의 코베트러스와의 유통 파트너십을 통해 채널 확장과 인지도 제고를 추진 중이다. 중장기적으로는 미국 현지 생산 체계 구축을 검토하고 있어, 관세 리스크 완화와 가격 경쟁력 확보 측면에서 중요한 전략 과제다. 씨티씨바이오 단독 경영 전환을 통해 GMP 인증 동물의약품 생산 역량과 동물진단 사업 간 시너지를 도모하며 '글로벌 동물 토탈 헬스케어 기업'으로의 도약을 추구하고 있다. 일본 농림수산성의 Vcheck SDMA 인허가 등록 완료, Vcheck M10 신규 카트리지 수출허가 취득 등 글로벌 규제 기반도 지속 확충 중이다.",
-  "en": "Bionote has designated 'Full Line-Up' completion in animal diagnostics as its key 2026 strategic priority. New instrument categories — biochemistry (Vcheck C), hematology (Vcheck H6), urinalysis (Vcheck U), blood gas (Vcheck G), and AI-powered cytology (Vcheck A) — are being launched to complement existing fluorescence immunoassay (Vcheck F) and molecular diagnostics (Vcheck M) platforms, forming a complete in-clinic diagnostic system. In North America, BioNote USA unveiled six new products at WVC 2026, and the Covetrus distribution partnership — a global animal health distributor with ~₩7T in annual revenue — is being leveraged to broaden U.S. market access. Longer-term, Bionote is evaluating U.S. local manufacturing to reduce tariff exposure and enhance cost competitiveness. Assuming sole management control over CTC Bio is expected to unlock synergies between its GMP-certified animal pharmaceutical capabilities and the diagnostics business, advancing the company's vision as a global animal total healthcare company. On the regulatory front, Japanese Ministry of Agriculture approval for Vcheck SDMA (early kidney disease diagnostics) and new Vcheck M10 cartridge export licenses continue to expand the global commercial footprint."
+  "ko": "회사는 2026년 1분기 실적 발표에서 동물진단사업부의 고른 제품군 판매 증가가 수익 구조 다변화와 실적 상승의 핵심 동력이라고 밝히며, 이 같은 추세가 이어질 경우 외형 성장과 수익성 개선을 동시에 도모할 수 있음을 시사했다. Vcheck F 장비의 글로벌 누적 판매량 확대는 소모품(진단키트) 매출 기반의 지속적 증가로 이어질 잠재력이 있는 지표로 볼 수 있다. 사업 다각화 측면에서는 메디코슨 인수를 통한 의료·미용기기 사업 진출과 튜링바이오 인수를 통한 AI 헬스케어 영역 확장, 보툴리눔 톡신 제제의 국내 품목허가 취득이 향후 신규 매출원으로 자리잡을지 여부가 관건이다. 다만 이들 신규 사업의 매출 기여 규모나 시점은 아직 구체적으로 공시되지 않아 실제 실적 반영 여부를 지속 확인할 필요가 있다. 관계기업 지분법손익의 변동성은 향후에도 분기별 순이익의 방향을 크게 좌우할 변수로 남아있어, 영업실적과 별개로 순이익 눈높이를 관리하는 데 유의가 필요하다. 지배구조 측면에서는 오너 일가의 지분 승계와 저평가 논란이 이어지고 있어, 회사가 밝힌 기관투자자 IR 확대 등 주주가치 제고 노력이 실질적 성과로 이어지는지도 관찰 포인트다.",
+  "en": "In its 1Q2026 earnings release, the company stated that broad-based sales growth across the animal diagnostics product lineup is the key driver of revenue diversification and earnings improvement, suggesting that continuation of this trend could support simultaneous top-line growth and margin improvement. The expanding cumulative global sales of the Vcheck F device is a metric with potential to translate into recurring growth in consumable (diagnostic kit) sales. On the diversification front, whether the Medicoson acquisition in medical/aesthetic devices, the Turing Bio acquisition expanding into AI healthcare, and the domestic approval of the botulinum toxin product become meaningful new revenue sources remains to be seen. However, the scale and timing of revenue contribution from these new businesses have not yet been specifically disclosed, warranting continued monitoring of actual earnings reflection. The volatility of equity-method gains/losses from affiliates remains a variable that could heavily sway the direction of quarterly net income going forward, separate from operating performance. On governance, ownership succession and undervaluation controversies persist, making it worth observing whether the company's stated efforts to expand institutional investor IR translate into tangible shareholder value improvements."
  },
  "valuation_comment": {
-  "ko": "현재 주가 수준은 주당순자산(BPS) ₩15,328 대비 상당한 할인 구간에 위치하며, 이는 코스피 바이오·의료기기 업종 내에서도 이례적으로 깊은 순자산 대비 디스카운트다. 주당순이익(EPS)이 -₩494로 적자 상태인 만큼 PER 기반 밸류에이션은 현시점에서 적용되지 않는다. 순자산 대비 할인의 배경으로는 관계기업 지분법 손실이 반복적으로 자기자본을 잠식할 수 있다는 우려와, 코로나 특수 이전 수준의 이익 규모를 회복하기까지 시간이 필요하다는 인식이 복합적으로 작용하고 있다. 반면 본업의 영업이익이 적자에서 흑자로 전환한 이후 2년 연속 성장을 이어가고 있어, 이 추세가 유지될 경우 순자산 할인 폭이 점진적으로 축소될 가능성이 있다. 주당 배당금(DPS) ₩228과 65만 주 자사주 소각은 주주환원 의지를 표명한 신호지만, 순이익 흑자 복귀 여부가 배당 지속 가능성을 좌우하는 핵심 조건임을 유의해야 한다.",
-  "en": "The current share price trades at a substantial discount to book value per share (BPS ₩15,328), an unusually deep discount compared to KOSPI healthcare and medical device sector peers. With EPS at -₩494, PER-based valuation analysis is not meaningful at this time. The persistent discount to book value appears to reflect two compounding concerns: the risk that recurring equity-method losses from affiliates will further erode shareholders' equity, and the recognition that restoring earnings capacity to pre-COVID levels is a multi-year process. On the other hand, the core operating business has now delivered two consecutive years of growth after returning from a loss position — a trend that, if sustained, could progressively narrow the gap between intrinsic operating value and current market pricing. The announced DPS of ₩228 and the 650,000-share buyback cancellation signal management's commitment to shareholder returns, though the restoration of sustained net profitability remains the necessary precondition for dividend continuity."
+  "ko": "회사의 순이익은 연도별로 흑자와 적자를 오가며 방향성 자체가 자주 바뀌어 왔기 때문에, 이익 기준 밸류에이션 지표는 해석에 주의가 필요한 구간에 있다. 순자산가치 기준으로는 시장에서 book value 대비 상당한 할인을 받아온 흐름이 관측되며, 이는 최근 언론에서 다뤄진 업종 전반의 저PBR 현상 및 회사 고유의 지배구조 이슈와 맞물려 거론되고 있다. 배당의 경우 과거 결산배당을 지속해온 이력이 있으나, 배당수익률 수준은 업종 내에서 특별히 높은 편으로 평가되지는 않는다. 이익 흐름 자체는 2023년 영업적자에서 2024년 흑자전환, 2025년 영업이익 추가 개선이라는 방향으로 전개돼 왔으나, 순이익은 관계기업 지분법손익의 영향으로 같은 궤적을 따르지 않았다. 밸류에이션 판단에 있어서는 영업 실적의 개선 추세와 순이익의 비영업적 변동성을 구분해서 볼 필요가 있으며, 업종 내 다른 저PBR 종목들과 마찬가지로 시장 소외 현상이 반영된 결과라는 지적도 있다.",
+  "en": "Because the company's net income has repeatedly flipped between profit and loss across years, earnings-based valuation metrics are in a range that requires cautious interpretation. On a net-asset basis, the stock has traded at a substantial discount to book value, a pattern that has been discussed alongside a broader sector-wide low-PBR phenomenon and company-specific governance issues covered in recent media reports. On dividends, the company has a history of continuing year-end cash dividends, though the dividend yield level is not regarded as particularly high within the sector. The earnings trend itself has moved from an operating loss in 2023 to a return to profit in 2024 and further operating profit improvement in 2025, but net income has not followed the same trajectory due to the impact of equity-method gains/losses from affiliates. In assessing valuation, it is worth distinguishing between the improving trend in operating performance and the non-operating volatility in net income, with some observers attributing the discount to broader market neglect similar to other low-PBR names in the sector."
  },
  "bull": [
   {
    "title": {
-    "ko": "동물진단 본업 회복 — 2년 연속 성장 확인",
-    "en": "Animal Diagnostics Recovery — Two Consecutive Years of Growth Confirmed"
+    "ko": "영업 실적의 꾸준한 개선세",
+    "en": "Steady Improvement in Operating Performance"
    },
    "body": {
-    "ko": "동물진단 매출 비중이 2021년 8.7%에서 2025년 약 63%로 급등하며 코로나 의존 구조에서 실질적으로 탈피했다. 2025년 연결 영업이익률이 14.1%까지 회복됐고, 2026년 1분기에도 매출과 영업이익이 각각 두 자리수 성장을 기록하며 모멘텀의 지속성을 확인했다. 글로벌 Vcheck F 누적 판매 2만 4천 대 돌파는 기존 고객 기반에서 소모품(카트리지·시약) 반복 매출을 창출하는 안정적 수익 구조로 이어진다.",
-    "en": "Animal diagnostics revenue share surged from 8.7% in 2021 to ~63% in 2025, meaningfully breaking the company's COVID-era dependency. Consolidated OPM recovered to 14.1% in FY2025, and Q1 2026 confirmed the trend is not transient, with both revenue and operating profit growing at double-digit year-on-year rates. With 24,000+ cumulative global Vcheck F placements, the installed base generates recurring consumable (cartridge and reagent) revenue, providing a stable earnings foundation."
+    "ko": "2023년 영업적자에서 2024년 흑자전환에 이어 2025년 영업이익률이 14.1%까지 개선됐고, 2026년 1분기에도 매출·영업이익이 각각 약 14%, 35% 증가하며 성장세가 이어지고 있다. 동물진단사업부의 Vcheck 시리즈 판매 확대가 성장의 핵심 동력으로 작용하고 있다. 매출원가 개선도 함께 진행되며 수익성 측면의 체질 개선이 관찰된다.",
+    "en": "After turning from an operating loss in 2023 to profit in 2024, the operating margin improved to 14.1% in 2025, and 1Q2026 revenue and operating profit grew about 14% and 35% respectively, continuing the growth trend. Expanding sales of the Vcheck series in the animal diagnostics division is the core growth driver, alongside cost-of-goods improvements reflecting structural profitability gains."
    }
   },
   {
    "title": {
-    "ko": "북미 시장 진출 가속 — 글로벌 최대 시장 공략",
-    "en": "Accelerating North America Entry — Targeting the World's Largest Market"
+    "ko": "안정적 전방시장 수요 기반",
+    "en": "Stable End-Market Demand Base"
    },
    "body": {
-    "ko": "글로벌 동물진단 시장의 약 50%를 차지하는 북미 지역에서 바이오노트는 WVC 2026에서 6종 신제품을 공개하며 원내 진단 시스템 대체 전략을 본격화했다. 연 매출 약 7조원 규모의 코베트러스와의 유통 파트너십을 통해 미국 내 채널 확장이 진행 중이며, 대형 법인 동물병원 그룹과의 파트너십 강화와 현지 생산 체계 구축도 병행 검토 중이다. 면역진단에서 생화학·혈액·소변·분자진단으로 이어지는 풀 라인업이 완성될수록 단일 병원 내 교체율(ASP 상승)과 락인(lock-in) 효과가 강화될 수 있다.",
-    "en": "In North America — which represents ~50% of the global animal diagnostics market — Bionote unveiled six new products at WVC 2026, accelerating its strategy to displace outsourced reference laboratory testing with in-clinic solutions. The Covetrus distribution partnership (annual revenue ~₩7T) provides a powerful channel, while larger corporate veterinary group partnerships and U.S. local manufacturing are under active consideration. As the full product lineup matures across immunoassay, biochemistry, hematology, urinalysis, and molecular diagnostics, per-site revenue and customer lock-in effects should increase."
+    "ko": "반려동물 가구 증가와 펫 휴머니제이션 트렌드가 동물용 체외진단 수요를 뒷받침하고 있고, 산업동물 부문은 국가 방역 예산 증가로 안정적인 수요 기반을 갖추고 있다. 이는 경기 변동에 상대적으로 덜 민감한 매출 기반으로 작용할 수 있다.",
+    "en": "Rising pet-owning households and the pet humanization trend support demand for animal diagnostics, while the livestock segment has a stable demand base backed by growing national disease-control budgets, potentially providing a revenue base relatively less sensitive to economic cycles."
    }
   },
   {
    "title": {
-    "ko": "저부채·대규모 자기자본 — 재무 안정성과 전략 유연성 보유",
-    "en": "Low Leverage and Large Equity Base — Financial Stability Supports Strategic Flexibility"
+    "ko": "사업 다각화를 통한 신규 성장동력 모색",
+    "en": "New Growth Drivers via Business Diversification"
    },
    "body": {
-    "ko": "2025년 부채비율 3.0%, 자기자본 약 1조 5,112억원으로 업종 내 최저 수준의 레버리지를 유지하고 있다. 이는 씨티씨바이오 경영권 강화, 미국 현지 생산 투자 등 추가적인 성장 투자를 진행하면서도 재무 건전성을 유지할 수 있는 기반이 된다. 자기주식 소각(65만 주)과 현금 배당(DPS ₩228) 병행이 가능한 것도 풍부한 자본 여력에서 비롯된다.",
-    "en": "With a 2025 debt ratio of 3.0% and shareholders' equity of ~₩1.511T, Bionote maintains one of the lowest leverage profiles in its sector. This provides a substantial financial buffer to pursue growth investments — including expanded CTC Bio involvement and potential U.S. manufacturing — without compromising balance sheet stability. The capacity to simultaneously execute share cancellations (650,000 shares) and pay cash dividends (DPS ₩228) reflects this capital strength."
+    "ko": "메디코슨 인수를 통한 의료·미용기기 진출, 튜링바이오 인수를 통한 AI 헬스케어 확장, 보툴리눔 톡신 제제의 국내 허가 취득 등 기존 진단 사업 외의 성장동력을 모색하고 있다. 다각화가 성공적으로 안착할 경우 매출원 다변화 효과를 기대할 수 있다.",
+    "en": "The company is pursuing growth drivers beyond its core diagnostics business, including entry into medical/aesthetic devices via the Medicoson acquisition, AI healthcare expansion via the Turing Bio acquisition, and domestic approval of a botulinum toxin product. Successful diversification could broaden revenue sources."
    }
   }
  ],
  "bear": [
   {
    "title": {
-    "ko": "에스디바이오센서 지분법 손실 — 순이익 교란의 구조적 위험",
-    "en": "SD Biosensor Equity-Method Losses — Structural Risk to Net Income"
+    "ko": "관계기업 지분법손익에 따른 순이익 변동성",
+    "en": "Net Income Volatility from Equity-Method Gains/Losses"
    },
    "body": {
-    "ko": "바이오노트의 연결 순이익은 관계기업인 에스디바이오센서(지분 약 36.5%)의 실적에 크게 연동된다. 2025년 4분기에만 순손실 -1,940억원이 집중 발생하여 본업 영업이익 167억원과의 극심한 괴리를 만들었고, 연간 순손실은 -875억원에 달했다. 에스디바이오센서의 포스트 코로나 실적 정상화가 지연될수록 이 구조적 손실은 바이오노트의 자기자본 및 BPS를 추가로 잠식할 수 있다.",
-    "en": "Bionote's consolidated net income is heavily exposed to the performance of affiliate SD Biosensor (~36.5% equity stake). The Q4 2025 equity-method impact alone drove a net loss of -₩193.9B, creating an extreme divergence from the ₩16.7B operating profit generated by core operations; the full-year net loss reached -₩87.5B. If SD Biosensor's post-COVID normalization is prolonged, this structural drag will continue to erode Bionote's shareholders' equity and BPS."
+    "ko": "2025년 2분기 845억원의 순이익과 4분기 -1,940억원의 대규모 순손실이 공존할 만큼 관계기업 지분법손익의 변동폭이 크며, 이는 영업 실적과 무관하게 분기별 순이익 예측을 어렵게 만드는 요인이다. 2025년 연간 순이익도 영업이익 개선에도 불구하고 지분법손실 등의 영향으로 적자전환했다.",
+    "en": "Equity-method gains/losses from affiliates have swung so widely that a net profit of KRW 84.5bn in 2Q2025 coexisted with a massive net loss of KRW -194.0bn in 4Q2025, making quarterly net income difficult to forecast independent of operating performance. Full-year 2025 net income also turned to a loss despite improving operating profit, due to equity-method losses."
    }
   },
   {
    "title": {
-    "ko": "코로나 이전 규모 회복까지 긴 성장 시간 필요",
-    "en": "A Long Road Back to Pre-COVID Revenue Scale"
+    "ko": "지배구조 및 저평가 방치 논란",
+    "en": "Governance and Undervaluation-Neglect Controversy"
    },
    "body": {
-    "ko": "2022년 매출 4,797억원 대비 2025년 매출은 1,183억원으로 약 4분의 1 수준에 불과해, COVID 관련 사업의 구조적 공백이 동물진단 성장만으로 단기에 채워지기 어렵다. 코로나19 제품 매출 비중이 10% 미만으로 급감한 반면, 이를 대체할 동물진단 부문은 수년에 걸쳐 규모를 키워나가야 하는 구조다. 이 과정에서 신제품 출시 비용, 해외 마케팅 투자, 관계사 통합 비용 등이 영업이익률 개선 속도를 제한할 수 있다.",
-    "en": "At ₩118.3B in 2025, revenue remains roughly one-quarter of the 2022 COVID peak of ₩479.7B, and the structural gap left by the collapse of COVID-related products (now under 10% of revenue) cannot be bridged by animal diagnostics growth alone in the short term. Multiple years of sustained execution are required before animal diagnostics can fully absorb the lost scale. During this transition, the cumulative cost of new product launches, overseas marketing investment, and affiliate integration may limit the pace of operating margin improvement."
+    "ko": "순자산가치 대비 상당한 주가 할인이 지속되는 가운데, 오너 일가의 지분 증여 시점이 주가 급락기와 겹친다는 지적이 제기되며 저평가 방치 의혹이 불거졌다. 이는 주주와의 신뢰 관계 및 밸류에이션 회복에 부정적 요인으로 작용할 수 있다.",
+    "en": "Amid a persistent stock discount to net asset value, allegations have arisen that owner-family share gifts coincided with periods of sharp price declines, raising suspicions of deliberate undervaluation neglect. This could weigh negatively on shareholder trust and valuation recovery."
    }
   },
   {
    "title": {
-    "ko": "글로벌 대형 경쟁사와의 시장점유율 격차",
-    "en": "Significant Market Share Gap vs. Global Incumbents"
+    "ko": "팬데믹 특수 해소에 따른 실적 규모 축소",
+    "en": "Reduced Business Scale After Pandemic Windfall Faded"
    },
    "body": {
-    "ko": "글로벌 동물진단 시장은 IDEXX Laboratories, Zoetis, Heska 등 자본력과 브랜드 인지도 면에서 월등한 미국계 대형사가 주도하고 있다. 바이오노트는 형광면역진단(Vcheck F) 분야에서 경쟁력을 확보했으나, 생화학·혈액·분자진단 등 신규 카테고리에서는 수의사 채택과 임상 레퍼런스 구축까지 상당한 시간이 필요하다. 특히 대형 법인 동물병원 그룹과의 계약 전환은 경쟁사 제품 대체를 의미해 판매 주기가 길고 마케팅 비용 부담이 크다.",
-    "en": "The global animal diagnostics market is dominated by well-capitalized U.S. incumbents such as IDEXX Laboratories, Zoetis, and Heska, which command superior brand recognition and distribution leverage. While Bionote holds a competitive position in fluorescence immunoassay (Vcheck F), building veterinarian adoption and clinical references in newly entered categories — biochemistry, hematology, molecular — requires considerable time. Displacing entrenched systems at large corporate veterinary groups entails extended sales cycles and significant customer education and marketing investment."
+    "ko": "2022년 매출 4,797억원, 영업이익률 61.6%에 달했던 코로나19 특수 대비 2025년 매출은 1,183억원 수준으로 크게 축소된 상태이며, 이는 과거 고점 대비 현재 사업 규모가 구조적으로 작아졌음을 보여준다. 팬데믹 이전 수준으로의 정상화 국면에서 성장 속도에 대한 지속적 확인이 필요하다.",
+    "en": "Compared to the pandemic-era windfall of KRW 479.7bn revenue and a 61.6% operating margin in 2022, 2025 revenue has shrunk substantially to KRW 118.3bn, showing the current business scale is structurally smaller than the past peak. Continued monitoring of the growth pace during the post-pandemic normalization phase is warranted."
    }
   }
  ],
  "risks": [
   {
    "cat": {
-    "ko": "관계기업 지분법 손실 지속 및 자기자본 잠식 위험",
-    "en": "Sustained Equity-Method Losses and Shareholders' Equity Erosion"
+    "ko": "지분법·비영업 손익 리스크",
+    "en": "Equity-Method and Non-Operating Earnings Risk"
    },
    "body": {
-    "ko": "에스디바이오센서를 비롯한 관계기업의 실적 악화가 지속될 경우 바이오노트의 연결 자기자본이 추가로 감소할 수 있다. 2025년 자기자본이 1조 6,358억원에서 1조 5,112억원으로 감소했으며, 이 추세가 이어지면 BPS 하락·배당 재원 감소·신용 평판 저하 등이 연쇄적으로 발생할 수 있다. 시장 참여자는 에스디바이오센서의 분기별 실적과 바이오노트 보유 지분의 장부 가치를 별도로 모니터링할 필요가 있다.",
-    "en": "Continued underperformance by affiliates, especially SD Biosensor, could further reduce Bionote's consolidated shareholders' equity. The equity base already contracted from ₩1.636T in 2024 to ₩1.511T in 2025; a sustained negative equity-method contribution would progressively reduce BPS, limit dividend capacity, and potentially affect credit perception. Investors should track SD Biosensor's standalone quarterly results and Bionote's carrying value of the investment separately."
+    "ko": "SD바이오센서 등 관계기업 실적 및 지분 평가에 연동된 지분법손익이 회사 순이익에 큰 영향을 미치는 구조로, 관계기업의 실적 변동이 그대로 바이오노트 순이익 변동으로 전이될 수 있다. 이는 영업실적 개선에도 불구하고 순이익 지표의 신뢰도를 낮추는 요인이 될 수 있다.",
+    "en": "Equity-method gains/losses tied to the performance and valuation of affiliates such as SD Biosensor significantly affect the company's net income, meaning fluctuations in affiliate performance can directly translate into swings in BioNote's net income, potentially undermining the reliability of the net income metric despite operating improvements."
    }
   },
   {
    "cat": {
-    "ko": "북미 시장 침투 지연 및 채택 속도 미달 위험",
-    "en": "North America Market Penetration Delays and Slower-Than-Expected Adoption"
+    "ko": "지배구조·주주환원 리스크",
+    "en": "Governance and Shareholder Return Risk"
    },
    "body": {
-    "ko": "북미 매출 비중은 현재 전체의 일부에 불과하며, WVC 2026에서 공개된 6종 신제품의 수의사 채택에는 상당한 시간과 비용이 소요된다. 대형 법인 동물병원 그룹이 기존 경쟁사 시스템을 유지하거나 다른 신규 플레이어로 전환할 경우, 시장점유율 확대 속도가 계획 대비 뒤처질 수 있다. 미국 현지 생산 체계가 초기 단계인 상황에서 한·미 관세 정책 변화는 가격 경쟁력에 즉각적인 영향을 줄 수 있다.",
-    "en": "North America currently represents a limited portion of total revenue, and widespread veterinarian adoption of the six new products unveiled at WVC 2026 will require meaningful time and marketing spend. If large corporate veterinary groups elect to maintain contracts with incumbents or switch to alternative new entrants, North America market share gains could materialize more slowly than planned. With U.S. local manufacturing still in early stages, any shifts in Korea-U.S. tariff policy could have an immediate impact on price competitiveness in the world's largest animal diagnostics market."
+    "ko": "오너 일가의 지분 증여를 둘러싼 저가 시점 논란이 지속되고 있으며, 이는 향후 주주가치 제고 정책의 신뢰성에 영향을 줄 수 있다. 배당 정책 및 자사주 매입 등 구체적 주주환원 확대 조치가 제한적으로 나타날 경우 저평가 국면이 장기화될 가능성이 있다.",
+    "en": "Controversy over the low-price timing of owner-family share gifts continues, which could affect the credibility of future shareholder value enhancement policies. If concrete shareholder return measures such as dividend policy expansion or share buybacks remain limited, the undervaluation phase could persist longer."
    }
   },
   {
    "cat": {
-    "ko": "경쟁 심화 및 신제품 인허가 지연 위험",
-    "en": "Intensifying Competition and New Product Regulatory Delay Risk"
+    "ko": "경쟁 및 업황 리스크",
+    "en": "Competitive and Industry Risk"
    },
    "body": {
-    "ko": "반려동물 진단 시장의 고성장성을 인식한 국내외 인체용 의료기기 기업들이 동물용 시장으로 진입을 가속화하고 있어, 중장기 경쟁 환경이 악화될 수 있다. 각국 동물용 의료기기 인허가 심사는 예상보다 지연될 가능성이 있어, 신제품 출시 계획이 차질을 빚으면 성장 일정이 밀릴 수 있다. 조류인플루엔자 등 감염병 방역 수요는 기회이지만 사이클 변동성이 산업동물 진단 매출에 불확실성을 더한다.",
-    "en": "Human medical device companies are increasingly entering the animal diagnostics space, attracted by its high-growth profile, which could intensify competitive dynamics over the medium to long term. Regulatory review timelines for animal diagnostics products vary by country and can be unpredictable, creating risk that new product launches are delayed relative to the planned full-lineup schedule. Biosecurity-related demand (e.g., avian influenza outbreaks) provides demand tailwinds for livestock diagnostics but also introduces cyclical revenue volatility tied to the timing and severity of animal disease events."
+    "ko": "글로벌 동물진단 시장은 Zoetis, IDEXX 등 대형 다국적 기업이 주도하고 있어 중장기적으로 경쟁 심화 압력에 노출될 수 있다. 또한 팬데믹 특수 해소 이후 인체진단 관련 매출 기여가 구조적으로 축소된 상태에서, 신규 사업(메디코슨·튜링바이오·보툴리눔 톡신)의 시장 안착 여부가 불확실하다.",
+    "en": "The global animal diagnostics market is led by large multinationals such as Zoetis and IDEXX, exposing the company to intensifying competitive pressure over the medium to long term. Additionally, with the human-diagnostics revenue contribution structurally reduced after the pandemic windfall faded, the market traction of new businesses (Medicoson, Turing Bio, botulinum toxin) remains uncertain."
    }
   }
  ],
  "checkpoints": [
   {
    "when": {
-    "ko": "2026년 8월 중순 (2분기 실적 발표)",
-    "en": "Mid-August 2026 (Q2 2026 Earnings Release)"
+    "ko": "2026년 8월 중순 전후",
+    "en": "Around mid-August 2026"
    },
    "what": {
-    "ko": "2026년 2분기 매출·영업이익·순이익을 확인하여 성장 궤도 지속 여부를 점검한다. 특히 순이익이 관계기업 지분법 손익 영향 없이 영업이익 수준에서 안정화되고 있는지, 영업이익률이 14% 이상을 유지하는지가 핵심 확인 포인트다.",
-    "en": "Confirm whether Q2 2026 revenue and operating profit sustain double-digit year-on-year growth. The critical question is whether net income is converging toward operating profit levels or again being distorted by equity-method adjustments from affiliates, and whether OPM holds above 14%."
+    "ko": "2026년 2분기 잠정실적 공시 여부와 시점을 확인해 매출·영업이익 성장세 지속 여부 및 지분법손익 변동 방향을 점검할 필요가 있다.",
+    "en": "Check whether and when 2Q2026 preliminary earnings are disclosed to assess continued revenue/operating profit growth and the direction of equity-method gains/losses."
    }
   },
   {
    "when": {
-    "ko": "2026년 하반기 (북미 신제품 판매 모멘텀 확인)",
-    "en": "2H 2026 (North America New Product Sales Traction)"
+    "ko": "2026년 3분기 실적 발표 시점(통상 11월경)",
+    "en": "3Q2026 earnings release (typically around November)"
    },
    "what": {
-    "ko": "WVC 2026에서 공개된 Vcheck C·H6·U3·i10·i20 6종의 북미 수의사 채택 현황과 미국법인 매출 기여도를 점검한다. 코베트러스 파트너십을 통한 채널 확장 속도가 계획에 부합하는지 확인이 필요하다.",
-    "en": "Track U.S. veterinarian adoption rates for the six products unveiled at WVC 2026 (Vcheck C, H6, U3, i10, i20) and monitor revenue contribution from BioNote USA. Assess whether the Covetrus partnership is delivering channel expansion at the planned pace."
+    "ko": "연간 실적 흐름 상 4분기 대규모 손실이 재발할지 여부와 관련해, 관계기업(SD바이오센서 등) 지분법 평가 항목의 변동 규모를 사전에 가늠할 수 있는 자료가 나올지 확인할 필요가 있다.",
+    "en": "Given the pattern of a large 4Q loss in the prior year, check whether disclosures provide early indication of the scale of equity-method valuation changes related to affiliates such as SD Biosensor."
    }
   },
   {
    "when": {
-    "ko": "2026년 연중 (씨티씨바이오 단독 경영 전환 및 시너지)",
-    "en": "Throughout 2026 (CTC Bio Sole Management and Synergy Realization)"
+    "ko": "2026년 결산배당 기준일 공고 시점(통상 3월경)",
+    "en": "Announcement of 2026 year-end dividend record date (typically around March)"
    },
    "what": {
-    "ko": "씨티씨바이오 단독 경영 전환 완료 일정과 동물의약품 사업과의 실질적 시너지(공동 마케팅, 제품 번들링) 구체화 여부를 모니터링한다. 향후 연결 재무제표 포함 범위 변경 가능성도 사전 확인이 필요하다.",
-    "en": "Monitor the completion timeline for sole management control of CTC Bio and the materialization of tangible synergies (co-marketing, product bundling) with the animal pharmaceuticals business. Confirm any changes to the consolidation scope that would affect reported financials."
+    "ko": "배당 정책의 지속 여부와 배당성향 변화, 그리고 주주가치 제고를 위한 추가 조치(자사주 매입 등) 발표 여부를 확인할 필요가 있다.",
+    "en": "Check whether the dividend policy continues, whether the payout ratio changes, and whether additional shareholder value measures (e.g., buybacks) are announced."
    }
   },
   {
    "when": {
-    "ko": "2026년 4분기 이후 (에스디바이오센서 실적 모니터링)",
-    "en": "Q4 2026 and Beyond (SD Biosensor Performance Tracking)"
+    "ko": "수시 공시 확인",
+    "en": "Ongoing disclosure monitoring"
    },
    "what": {
-    "ko": "에스디바이오센서의 분기별 실적 공시를 통해 지분법 손익이 바이오노트 순이익에 미치는 영향의 규모와 방향을 지속 추적한다. 에스디바이오센서 실적 개선 또는 추가 악화 여부가 바이오노트 BPS와 배당 지속 가능성에 직결된다.",
-    "en": "Track SD Biosensor's quarterly earnings disclosures to gauge the magnitude and direction of equity-method income flowing into Bionote's consolidated net income. Improvement or further deterioration at SD Biosensor will directly determine Bionote's BPS trajectory and dividend sustainability."
-   }
-  },
-  {
-   "when": {
-    "ko": "2026년 하반기 (Vcheck M10 신규 카트리지 출시 성과)",
-    "en": "2H 2026 (Vcheck M10 New Cartridge Launch Performance)"
-   },
-   "what": {
-    "ko": "수출허가를 취득한 Vcheck M10 개·고양이 설사 유발 질환 검사 카트리지의 주요 시장 출시 일정과 초기 판매 성과를 확인한다. 분자진단 카트리지 매출이 동물진단 부문의 매출 성장 및 수익성 개선에 기여하는지 점검이 필요하다.",
-    "en": "Confirm the market launch timeline and early sales results of the newly export-licensed Vcheck M10 cartridges for canine and feline diarrhea-causing diseases. Assess whether molecular diagnostics consumable revenue is meaningfully contributing to animal diagnostics segment revenue growth and margin improvement."
+    "ko": "메디코슨·튜링바이오 등 신규 인수 사업 및 보툴리눔 톡신 제제의 매출 기여 관련 구체적 수치 공시 여부, SD바이오센서 지분율 변동 및 오너 일가 지분 이동 관련 공시를 지속 확인할 필요가 있다.",
+    "en": "Continue monitoring for specific disclosures on revenue contribution from new acquisitions such as Medicoson and Turing Bio and the botulinum toxin product, as well as changes in the SD Biosensor stake and owner-family share movements."
    }
   }
  ],
  "verdict": {
   "body": {
-   "ko": "바이오노트는 코로나19 특수 소멸이라는 구조적 충격에서 벗어나 동물진단 전문 글로벌 기업으로 재정립 중이며, 본업의 회복 궤도는 2024~2025년 연속 성장과 2026년 1분기 실적으로 실증됐다. 영업이익률이 14.1%까지 회복되고 분기 영업현금흐름이 안정적으로 창출되고 있다는 점은 사업 체질 개선을 뒷받침한다. 그러나 에스디바이오센서를 비롯한 관계기업 지분법 손실이 반복적으로 연결 순이익을 교란하고 있어, 본업 펀더멘털과 순이익 수치 사이의 괴리 해소 여부가 가장 중요한 모니터링 과제다. 북미 신제품 6종 출시, 코베트러스 파트너십, 씨티씨바이오 통합 등 성장 동력이 가시화되고 있으나, 대형 글로벌 경쟁사가 포진한 북미 시장에서 점유율 확대까지는 수년의 실행력이 필요하다. 부채비율 3.0%·자기자본 약 1조 5천억원의 탄탄한 재무 구조는 이 장기 여정을 뒷받침하는 핵심 안전망이다. 결론적으로, 에스디바이오센서 지분법 손익의 정상화 속도와 북미 신제품 채택 확산 속도가 향후 기업 가치의 방향성을 결정하는 양대 핵심 변수다.",
-   "en": "Bionote is actively redefining itself as a global animal diagnostics specialist after the structural shock of COVID-19 demand evaporation, with its operational recovery validated by consecutive growth in 2024 and 2025 and a strong Q1 2026 result. OPM recovering to 14.1% and stable quarterly operating cash generation demonstrate that the business model transformation is substantive. However, recurring equity-method losses from affiliates — most notably SD Biosensor — continue to produce wide divergences between core operating profit and reported net income, making the normalization of this gap the single most important variable to track. Growth catalysts including six new North America product launches, the Covetrus partnership, and the CTC Bio integration are progressing, but scaling market share against entrenched global incumbents in North America will require years of disciplined execution. A debt ratio of 3.0% and ~₩1.511T in shareholders' equity provide the financial durability to sustain this long-term strategy. In summary, the pace at which SD Biosensor's equity-method contribution normalizes and the rate at which North America veterinarians adopt Bionote's new Vcheck products will be the two decisive factors shaping the company's fundamental value trajectory."
+   "ko": "바이오노트는 동물진단 사업을 중심으로 매출과 영업이익이 꾸준히 개선되는 흐름을 보이고 있으나, 관계기업 지분법손익의 큰 변동으로 순이익은 분기별로 흑자와 대규모 적자를 오가는 불안정한 모습을 나타내고 있다. 2025년 연간으로는 영업이익률이 14.1%까지 개선됐음에도 지분법손실 등의 영향으로 지배주주 순이익이 적자로 전환됐고, 2026년 1분기에는 매출·영업이익·순이익 모두 다시 개선되는 모습을 보였다. 순자산가치 대비 주가가 상당한 할인 상태에 있는 가운데, 오너 일가의 지분 증여 시점을 둘러싼 저평가 방치 의혹 등 지배구조 이슈가 함께 거론되고 있어 투자자들의 신뢰 회복 여부가 관건으로 남아있다. 사업 다각화 차원의 메디코슨·튜링바이오 인수와 보툴리눔 톡신 신사업이 향후 실질적 매출 기여로 이어질지도 지켜볼 부분이다. 종합적으로 영업 펀더멘털의 개선 추세와 비영업적 순이익 변동성, 그리고 지배구조 리스크를 균형 있게 고려할 필요가 있다.",
+   "en": "BioNote has shown a steadily improving trend in revenue and operating profit centered on its animal diagnostics business, but net income has been unstable, swinging between large quarterly profits and losses due to volatile equity-method gains/losses from affiliates. For full-year 2025, despite the operating margin improving to 14.1%, net income attributable to owners turned to a loss due to equity-method losses, while 1Q2026 showed renewed improvement across revenue, operating profit, and net income. With the stock trading at a substantial discount to net asset value, governance issues—including allegations of undervaluation neglect tied to the timing of owner-family share gifts—remain a point of concern for investor confidence. Whether diversification moves such as the Medicoson and Turing Bio acquisitions and the new botulinum toxin business translate into meaningful revenue contribution also bears watching. Overall, investors should weigh the improving operating fundamentals against non-operating net income volatility and governance-related risks in a balanced manner."
   }
  },
  "sources": [
-  "https://markets.hankyung.com/stock/377740",
-  "https://m.irgo.co.kr/IR-COMP/377740/",
-  "https://comp.fnguide.com/SVO2/ASP/SVD_Main.asp?gicode=A377740",
-  "https://comp.fnguide.com/SVO2/asp/SVD_Invest.asp?pGB=1&gicode=A377740&cID=&MenuYn=Y&ReportGB=B&NewMenuID=105&stkGb=701",
   "https://thevc.kr/bionote",
-  "https://bionote.irpage.co.kr/",
-  "https://markets.hankyung.com/stock/377740/financial-summary",
-  "https://comp.fnguide.com/SVO2/ASP/SVD_Finance.asp?pGB=1&gicode=A377740&cID=&MenuYn=Y&ReportGB=B&NewMenuID=103&stkGb=701",
-  "https://deepsearch.com/analytics/company-analysis/KRX:377740?c-symbol=KRX:377740&c-name=%EB%B0%94%EC%9D%B4%EC%98%A4%EB%85%B8%ED%8A%B8&psc-list=KRX:066700%3BKRX:006620%3BNICE:350540%3BKRX:214390%3BKRX:377740&psr-list=KRX:005500%3BKRX:064550%3BKRX:033270%3BKRX:237690%3BKRX:001540%3BNICE:140856%3BKRX:007570%3BNICE:024210%3BKRX:302440%3BKRX:016580%3BKRX:003520%3BKRX:066700%3BKRX:006620%3BNICE:350540%3BKRX:214390%3BKRX:377740",
-  "https://www.getnews.co.kr/news/articleView.html?idxno=862607",
-  "https://www.joongangenews.com/news/articleView.html?idxno=497938",
-  "https://edaily.co.kr/News/Read?mediaCodeNo=257&newsId=02601046645418416",
-  "https://pharm.edaily.co.kr/news/read?newsId=01682646638821352&mediaCodeNo=257",
-  "https://www.joongangenews.com/news/articleView.html?idxno=491236",
-  "https://pharm.edaily.co.kr/News/Read?newsId=01279206642330952",
-  "https://www.pharmnews.com/news/articleView.html?idxno=260285",
+  "https://comp.wisereport.co.kr/company/c1010001.aspx?cmp_cd=377740",
+  "https://alphasquare.co.kr/home/stock-summary?code=377740",
+  "https://judal.co.kr/?shareToken=gYeUf9y25RQnBUxm&view=stockAI",
+  "https://comp.fnguide.com/SVO2/ASP/SVD_Main.asp?gicode=A377740",
+  "https://www.nicebizinfo.com/ep/EP0100M002GE.nice?kiscode=383136",
+  "https://judal.co.kr/?shareToken=8Fa8Ji9B3OXuSWgO&view=stockAI",
+  "https://judal.co.kr/?shareToken=q2fwenbI7tmwSCaz&view=stockAI",
+  "https://www.investing.com/equities/bionote-earnings",
+  "https://www.incruit.com/company/1682972490/",
   "https://www.digitaltoday.co.kr/news/articleView.html?idxno=634539",
-  "https://m.wowtv.co.kr/NewsCenter/AMP/Read?articleId=A202601300367"
+  "https://comp.fnguide.com/SVO2/ASP/SVD_Finance.asp?pGB=1&gicode=A377740&cID=&MenuYn=Y&ReportGB=B&NewMenuID=103&stkGb=701",
+  "https://m.healthcaren.com/news/news_article_yong.jsp?mn_idx=566326",
+  "https://comp.fnguide.com/SVO2/asp/SVD_Invest.asp?pGB=1&gicode=A377740&cID=&MenuYn=Y&ReportGB=B&NewMenuID=105&stkGb=701",
+  "https://bionote.irpage.co.kr/",
+  "https://v.daum.net/v/K8iS0i8Ba6",
+  "https://comp.fnguide.com/SVO2/ASP/SVD_Finance.asp?pGB=1&gicode=A377740&MenuYn=Y&ReportGB=&NewMenuID=103",
+  "https://m.thebell.co.kr/m/newsview.asp?svccode=&newskey=202105241623175520106163"
  ],
  "v": 2,
- "model": "claude-sonnet-4-6",
+ "model": "claude-sonnet-5",
  "ticker": "377740",
  "name": "바이오노트",
  "name_en": "BioNote, Inc.",
@@ -233,11 +223,11 @@
   "바이오·제약"
  ],
  "market": "코스피",
- "reportDate": "2026-06-18",
- "reportTs": "2026-06-18 01:38",
- "dataDate": "20260617",
+ "reportDate": "2026-08-15",
+ "reportTs": "2026-08-15 18:20",
+ "dataDate": "20260814",
  "quant": {
-  "asOf": "2026-06-17",
+  "asOf": "2026-08-15",
   "fs_basis": "연결(CFS) · DART 공시 확정치 · 지배주주 기준 순이익",
   "annual": [
    {
@@ -334,8 +324,8 @@
    }
   ],
   "valuation": {
-   "price": 4880,
-   "mcap": 0.4972,
+   "price": 4930,
+   "mcap": 0.5023,
    "shares": 101886048,
    "total_shares": 101726048,
    "wavg_shares": 100485078,
@@ -346,11 +336,11 @@
    "roe_ttm": -3.2,
    "ttm_window": "2025Q2~2026Q1",
    "ttm_np_owner": -50226329105,
-   "pbr_krx": 0.32,
+   "pbr_krx": 0.33,
    "bps_krx": 15047.0,
    "basis": "PER·EPS·PBR·BPS 모두 자체 산출(네이버·토스와 동일 방식) · 배당은 DART 공시 주당현금배당금(보완:KRX) ÷ 현재가",
    "dps": 228.0,
-   "div": 4.67
+   "div": 4.62
   }
  }
 }

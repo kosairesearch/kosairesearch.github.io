@@ -1,220 +1,230 @@
 {
  "title": {
-  "ko": "HBM·CoWoS 후공정 장비, 사이클 회복 길목",
-  "en": "HBM and CoWoS Back-End Tools at a Cyclical Inflection"
+  "ko": "HBM·CoWoS 후공정 장비, 높은 마진과 분기 변동성",
+  "en": "HBM and CoWoS Back-End Tools: High Margins, Lumpy Quarters"
  },
  "lead": {
-  "ko": "피에스케이홀딩스는 HBM·첨단 패키징용 리플로우·디스컴 장비를 D램 3사와 글로벌 파운드리에 공급하는 후공정 장비사로, 2024년 정점 이후 2025년 조정을 거쳐 고객사 투자 재개 여부가 다음 실적의 핵심 변수다.",
-  "en": "PSK Holdings is a back-end equipment maker supplying reflow and descum tools for HBM and advanced packaging to all three DRAM makers and global foundries; after peaking in 2024 and consolidating in 2025, the resumption of customer capex is the key swing factor for its next leg of earnings."
+  "ko": "디스컴·리플로우 장비로 30%대 영업이익률을 유지하는 후공정 장비사이지만, 2025년 매출·영업이익이 동시에 뒷걸음질하고 분기 실적 편차가 극심하다는 점이 함께 확인된다.",
+  "en": "A back-end equipment maker sustaining 30%-plus operating margins on descum and reflow tools, yet 2025 saw both revenue and operating profit decline while quarterly results remained extremely lumpy."
  },
  "keypoints": [
   {
-   "ko": "반도체 후공정(패키징) 장비 전문 지주사로 디스컴(Descum)·플럭스리스 리플로우(Reflow)가 주력이며, 미국 자회사 SEMIgear를 통해 글로벌 고객을 확보하고 있다.",
-   "en": "It is a holding company specializing in semiconductor back-end (packaging) equipment, with descum and fluxless reflow tools as its core products, and a global customer base anchored by its US subsidiary SEMIgear."
+   "ko": "주력은 후공정 패키징용 디스컴(Descum)과 리플로우(Reflow) 장비로, 패키징 라인이 설치되면 필수적으로 입고되는 장비다.",
+   "en": "Core products are descum and reflow tools for back-end packaging; they are must-install tools once a packaging line is set up."
   },
   {
-   "ko": "삼성전자·SK하이닉스·마이크론 등 D램 3사 모두에 HBM 양산용 장비를 공급한 국내 첫 사례로 평가된다.",
-   "en": "It is regarded as the first Korean equipment vendor to supply HBM mass-production tools to all three DRAM makers — Samsung, SK hynix and Micron."
+   "ko": "삼성전자·SK하이닉스에 HBM 양산용 리플로우·디스컴을 공급해 왔고, 마이크론 공급으로 국내 장비사 중 처음으로 D램 3사 모두에 HBM용 장비를 공급했다.",
+   "en": "It has supplied HBM reflow and descum tools to Samsung Electronics and SK hynix, and by adding Micron became the first Korean equipment vendor to serve all three DRAM makers for HBM."
   },
   {
-   "ko": "2024년이 매출·이익의 정점이었고 2025년은 고객사 투자 조정으로 매출·영업이익이 소폭 감소했다.",
-   "en": "2024 marked the peak for revenue and profit, while 2025 saw modest declines in sales and operating profit amid a customer capex adjustment."
+   "ko": "2025년 연결 매출 2,077.6억원·영업이익 734.0억원으로 2024년(2,155.1억원·884.8억원) 대비 감소했고, 영업이익률은 41.1%에서 35.3%로 낮아졌다.",
+   "en": "2025 consolidated revenue of KRW 207.8bn and operating profit of KRW 73.4bn were down from 2024 (KRW 215.5bn and KRW 88.5bn), with operating margin easing from 41.1% to 35.3%."
   },
   {
-   "ko": "AI·HBM·CoWoS 투자 확대와 HBM4 전환(TSV 증가)이 후공정 장비 수요의 구조적 동력으로 거론된다.",
-   "en": "Expanding AI, HBM and CoWoS investment plus the HBM4 transition (more TSVs) are cited as structural drivers of back-end equipment demand."
+   "ko": "분기 매출이 2025년 3분기 905.5억원에서 2026년 1분기 279.8억원까지 오가는 등 장비 인식 시점에 따른 변동이 크다.",
+   "en": "Quarterly revenue swung from KRW 90.6bn in 3Q25 to KRW 28.0bn in 1Q26, reflecting heavy dependence on equipment recognition timing."
   },
   {
-   "ko": "하이브리드 본딩 등 차세대 본딩 체제 전환은 기회이자 경쟁 심화 요인으로, 후공정 장비 경쟁 구도가 빠르게 재편되고 있다.",
-   "en": "The shift toward next-generation bonding such as hybrid bonding is both an opportunity and a source of intensifying competition, as the back-end equipment landscape reshapes rapidly."
+   "ko": "2026년 3월 공시한 기업가치 제고 계획에서 매출 연평균 10% 성장과 영업이익률 20% 이상 유지, 2026~2030년 배당금 600원 이상 유지를 제시했다.",
+   "en": "In its March 2026 value-up plan, the company targeted a 10% revenue CAGR, an operating margin above 20%, and a dividend of at least KRW 600 per share from 2026 to 2030."
   }
  ],
  "business": {
-  "ko": "피에스케이홀딩스는 1990년 설립·1997년 코스닥 상장 후 2019년 인적분할로 피에스케이홀딩스와 피에스케이로 나뉘었다가 2020년 합병한 반도체 패키징 장비 기업이다. 주력 제품은 패키징 공정의 디스컴(Descum)과 리플로우(Reflow)로, 고객사 공동협력을 통해 기술 선점 기회를 확보하고 가격경쟁력과 높은 생산성을 무기로 국내외 반도체 제조사에 장비를 공급한다.\n반도체·디스플레이 제조장비 및 관련제품 제조·판매가 주력이며, 미국 텍사스 오스틴의 SEMIgear Inc.를 종속회사로 보유하고 있다.\n\nSEMIgear는 2002년 설립돼 2012년 PSK홀딩스에 인수된 반도체 패키징용 플럭스리스 리플로우 장비 전문 기업이다.\n 리플로우 장비는 HBM 양산 시 코어 다이의 플립 칩 범프 형성과 매스 리플로우 공정에 사용되며, 디스컴 장비와 함께 HBM·첨단 패키징 라인에 투입된다.\n피에스케이홀딩스는 삼성전자와 SK하이닉스에 HBM 양산용 리플로우·디스컴 장비를 공급해 왔고, 마이크론까지 공급하게 되면서 국내 장비사 중 처음으로 HBM용 장비를 D램 3사에 공급하게 됐다.\n 부문별 매출 비중 등 세부 구성은 공시로 명확히 확인되지 않아 정성적으로만 서술하며, 매출은 장비 인식 시점에 따라 분기별 변동성이 크다. 고객 기반은 파운드리·OSAT·메모리에 걸쳐 있어 특정 전방 수요에 대한 의존도를 분산하는 구조다.",
-  "en": "PSK Holdings is a semiconductor packaging equipment company founded in 1990 and listed on KOSDAQ in 1997, which was split into PSK Holdings and PSK in 2019 before merging again in 2020. Its core products are descum and reflow tools for the packaging process, and it supplies domestic and overseas chipmakers on the strength of joint development with customers, price competitiveness and high productivity.\nIts main business is the manufacture and sale of semiconductor and display production equipment and related products, and it holds SEMIgear Inc. of Austin, Texas as a subsidiary.\n\nSEMIgear, established in 2002 and acquired by PSK Holdings in 2012, specializes in fluxless reflow equipment for semiconductor packaging.\n Reflow tools are used in flip-chip bump formation on the core die and in the mass-reflow step during HBM production, and together with descum tools they feed into HBM and advanced packaging lines.\nPSK Holdings has supplied HBM mass-production reflow and descum tools to Samsung and SK hynix, and by adding Micron it became the first Korean equipment vendor to supply HBM tools to all three DRAM makers.\n Detailed segment-level revenue splits are not clearly disclosed, so they are described only qualitatively, and revenue shows large quarterly swings depending on equipment recognition timing. Its customer base spans foundry, OSAT and memory, which diversifies dependence on any single end-market."
+  "ko": "피에스케이홀딩스는 반도체 후공정(패키징) 장비 제조·판매를 본업으로 하는 코스닥 상장사다. 웨이퍼 상 잔류물(스컴)을 제거하는 디스컴 장비와, 칩과 기판을 연결하는 솔더볼을 녹이거나 접합부를 평탄화하는 리플로우 장비가 주력이며, 여기에 웨이퍼 세정에 쓰이는 초순수를 가열하는 Hot DI Water 장비 등을 포트폴리오로 갖추고 있다. 국내 본사와 미국 종속회사를 통해 패키징 장비를 제조·판매하는 구조이며, 고객사와의 공동 협력을 통한 선행 기술 확보, 가격경쟁력과 생산성을 앞세워 국내외 반도체 제조사에 장비를 공급한다고 회사는 설명한다. 장비 단품 판매 외에 부품 공급과 기술 서비스가 병행되는 구조여서, 설치 기반이 늘어나면 후속 매출이 따라붙는 특성이 있다. 고객군은 삼성전자·SK하이닉스에 이어 마이크론까지 확대됐고, 대만 소재 대형 파운드리 고객사의 CoWoS 증설과 이에 연동된 OSAT(패키징 외주가공) 물량도 수요 축이다. 경쟁 구도에서는 CoWoS 패키징용 디스컴 시장에서 일본 알박(ULVAC)의 독점 구조를 깬 사업자로 거론되며, 한국투자증권은 대만 패키징 생태계 내 점유율이 알박에 이어 2위라고 평가했다(2026년 3월). 또한 회사는 Fluxless Reflow 장비로 비교우위를 유지하고 있다고 밝히고 있다. 이와 별개로 피에스케이홀딩스 외 12인이 전공정 장비사 피에스케이(319660) 지분 32.86%를 보유해, 증권사 평가에서도 피에스케이 관계손익이 별도 항목으로 다뤄지는 지주·관계기업 구조가 병존한다.",
+  "en": "PSK Holdings is a KOSDAQ-listed maker of semiconductor back-end (packaging) equipment. Its mainstays are descum tools that remove photoresist residue (scum) on wafers and reflow tools that melt solder balls connecting chip and substrate or planarize the joint, alongside Hot DI Water systems that heat ultrapure water used in wafer cleaning. It manufactures and sells packaging equipment through its Korean headquarters and a US subsidiary, and the company states that joint development with customers, price competitiveness and productivity underpin its supply to domestic and overseas chipmakers. Beyond tool sales, parts supply and technical service run in parallel, so an expanding installed base tends to generate follow-on revenue. The customer base has widened from Samsung Electronics and SK hynix to Micron, while CoWoS expansion at a large Taiwanese foundry customer and the related OSAT outsourcing volume form another demand axis. On competition, the company is described as the vendor that broke Japan's ULVAC monopoly in descum for CoWoS packaging, and Korea Investment & Securities assessed its share within Taiwan's packaging ecosystem as second behind ULVAC (March 2026). The company also says it maintains a comparative edge with fluxless reflow tools. Separately, PSK Holdings and 12 related parties hold a 32.86% stake in front-end equipment maker PSK (319660), and brokerage valuations treat PSK-related equity income as a separate item, reflecting a coexisting holding-company structure."
  },
  "earnings": {
-  "ko": "확정 실적 기준으로 2025년 매출은 2,077.6억원, 영업이익 734.0억원, 지배주주 순이익 916.8억원으로, 영업이익률은 35.3%였다. 직전 2024년이 매출 2,155.1억원·영업이익 884.8억원·영업이익률 41.1%의 정점이었던 만큼 2025년은 외형과 이익이 한 단계 낮아진 조정의 해였다. 다만 2023년(매출 947.2억원, 영업이익 269.7억원)과 2022년(매출 727.9억원, 영업이익 169.0억원)에 비하면 2024~2025년의 실적 레벨은 크게 높아진 상태다. 분기 흐름을 보면 2025년 1분기 매출 311.5억원·영업이익 95.4억원에서 2분기 346.6억원·84.5억원으로 완만했다가, 3분기에 매출 905.5억원·영업이익 412.4억원으로 폭증했는데 이는 이연됐던 장비 매출이 한꺼번에 인식된 영향이다. 4분기는 매출 514.0억원·영업이익 141.7억원으로 정상화됐고, 2026년 1분기는 매출 279.8억원·영업이익 91.7억원·지배주주 순이익 200.6억원을 기록했다. 영업이익률은 분기별로 20%대 후반에서 40%대까지 출렁이며, 장비 매출 인식의 계절성과 제품 믹스가 마진을 크게 좌우한다.\n과거 분기 영업이익률이 40%를 넘긴 사례도 리플로우·디스컴 판매 호조가 배경이었다.\n 2025년 영업현금흐름은 814.2억원으로 순이익을 뒷받침했고, 부채비율은 15.5%로 재무구조는 견조한 편이다. 2026년 1분기 순이익이 매출 규모 대비 두드러진 점은 영업외 손익·지분법 등 비영업 요인의 영향 가능성을 시사한다.",
-  "en": "On confirmed figures, 2025 revenue was KRW 207.8bn, operating profit KRW 73.4bn and owner net profit KRW 91.7bn, for a 35.3% operating margin. With the prior year (2024) marking a peak of KRW 215.5bn revenue, KRW 88.5bn operating profit and a 41.1% margin, 2025 was a year of one-step-lower consolidation in both scale and profit. Still, compared with 2023 (revenue KRW 94.7bn, operating profit KRW 27.0bn) and 2022 (revenue KRW 72.8bn, operating profit KRW 16.9bn), the 2024–2025 earnings level is markedly higher. By quarter, revenue eased from KRW 31.2bn with KRW 9.5bn operating profit in Q1 2025 to KRW 34.7bn and KRW 8.5bn in Q2, then surged to KRW 90.6bn revenue and KRW 41.2bn operating profit in Q3 as deferred equipment sales were recognized at once. Q4 normalized to KRW 51.4bn revenue and KRW 14.2bn operating profit, and Q1 2026 posted KRW 28.0bn revenue, KRW 9.2bn operating profit and KRW 20.1bn owner net profit. Operating margins swing from the high-20% range to above 40% across quarters, with the seasonality of equipment recognition and product mix heavily influencing margins.\nPast quarters with operating margins above 40% were driven by strong reflow and descum sales.\n Operating cash flow of KRW 81.4bn in 2025 underpinned net profit, and the debt ratio of 15.5% reflects a solid balance sheet. The fact that Q1 2026 net profit was notably large relative to revenue suggests possible influence from non-operating items such as equity-method or other income."
+  "ko": "2025년 연결 실적은 매출 2,077.6억원, 영업이익 734.0억원, 지배주주 순이익 916.8억원으로, 2024년(매출 2,155.1억원·영업이익 884.8억원·순이익 958.2억원)에 비해 세 지표 모두 소폭 뒷걸음질했다. 영업이익률은 2022년 23.2% → 2023년 28.5% → 2024년 41.1% → 2025년 35.3%로, 급등 이후 한 단계 되돌림이 나타난 흐름이다. 다만 절대 수준은 2년 전(2023년 매출 947.2억원·영업이익 269.7억원)의 두 배가 넘는 이익 체력이며, 영업활동현금흐름도 2023년 324.6억원에서 2025년 814.2억원으로 늘어 이익의 현금화가 뒤따랐다. 분기 흐름을 보면 2025년 1분기 매출 311.5억원·영업이익 95.4억원, 2분기 346.6억원·84.5억원에서 3분기 905.5억원·412.4억원(영업이익률 45.5%)으로 급증했고, 4분기에는 514.0억원·141.7억원으로 되돌아왔다. 3분기 급증은 2분기 인식 지연 물량이 3분기에 반영된 영향으로 설명됐고, 같은 자료는 4분기 수익성이 성과급 영향으로 축소됐다고 짚었다. 2026년 1분기는 매출 279.8억원·영업이익 91.7억원(영업이익률 32.8%)으로 전년 동기 대비 매출은 줄었으나 영업이익률은 30%대를 유지했다. 특징적인 것은 영업이익보다 순이익이 큰 구조로, 2026년 1분기 지배주주 순이익은 200.6억원에 달했다 — 관계기업 손익과 이자수익 등 영업외 항목의 기여가 크다는 의미이며, 증권가도 피에스케이 관계손익을 별도로 평가에 반영한다. 재무구조는 2025년 말 자본 5,063.8억원, 부채 785.0억원으로 부채비율 15.5%에 머물러 있어, 사이클 변동을 버티는 완충판 역할을 한다.",
+  "en": "For 2025, consolidated revenue was KRW 207.8bn, operating profit KRW 73.4bn and owners' net profit KRW 91.7bn — all slightly below 2024 (KRW 215.5bn, KRW 88.5bn and KRW 95.8bn). Operating margin moved 23.2% in 2022, 28.5% in 2023, 41.1% in 2024 and 35.3% in 2025, a partial give-back after a sharp spike. In absolute terms, however, earnings power remains more than double that of two years earlier (2023 revenue KRW 94.7bn, operating profit KRW 27.0bn), and operating cash flow rose from KRW 32.5bn in 2023 to KRW 81.4bn in 2025, confirming cash conversion. Quarterly, revenue and operating profit went from KRW 31.2bn/KRW 9.5bn in 1Q25 and KRW 34.7bn/KRW 8.5bn in 2Q25 to KRW 90.6bn/KRW 41.2bn in 3Q25 (45.5% margin), before retracing to KRW 51.4bn/KRW 14.2bn in 4Q25. The third-quarter surge was attributed to volume deferred from the second quarter being recognized in the third, while the same note flagged that fourth-quarter profitability narrowed on incentive costs. In 1Q26, revenue was KRW 28.0bn with operating profit of KRW 9.2bn (32.8% margin) — revenue fell year on year, but margin stayed above 30%. Notably, net profit exceeds operating profit: owners' net profit reached KRW 20.1bn in 1Q26, implying a large contribution from equity-method and interest income, and brokerages likewise reflect PSK-related equity income separately. The balance sheet showed equity of KRW 506.4bn against liabilities of KRW 78.5bn at end-2025, a 15.5% debt-to-equity ratio that cushions cycle swings."
  },
  "industry": {
-  "ko": "전방 수요의 핵심은 AI 가속기와 HBM이다.\n세계반도체무역통계기구(WSTS)는 2026년 글로벌 반도체 시장이 전년비 25% 이상 성장해 약 9,750억 달러에 이르고 메모리 부문이 30%대 증가세를 보일 것으로 전망한다.\n\nBofA는 2026년 HBM 시장 규모를 전년 대비 58% 증가한 546억 달러로 추산했다.\n HBM 후공정은 TSV 형성·식각·세정·증착·구리 충진·CMP·본딩·검사 등 다단계 공정으로 이뤄지며,\n국내 관련 장비 업체로는 세메스, 한미반도체, 한화세미텍, 에스티아이, 피에스케이홀딩스, 이오테크닉스, 테크윙 등이 있다.\n\nHBM이 전체 D램 생산 물량의 약 15%를 차지할 만큼 비중이 커졌고, 첨단 패키징 수요와 투자가 지속되며 장비 시장의 고성장이 전망된다.\n 피에스케이홀딩스는 플럭스리스 리플로우와 디스컴에서 비교우위를 유지하며 메모리뿐 아니라 파운드리의 CoWoS 라인까지 고객을 두고 있다. 다만 본딩 영역은 한미반도체 등 TC 본더 강자가 별도로 포진해 있어, 공정별로 경쟁사가 다른 분업 구도가 형성돼 있다. 사이클 위치상으로는 2024년 정점·2025년 조정을 지나 고객사 투자 재개 여부를 확인하는 회복 초입 국면으로 해석되고 있다.",
-  "en": "The core end-demand is AI accelerators and HBM.\nThe WSTS projects the 2026 global semiconductor market to grow more than 25% year-on-year to about USD 975bn, with memory rising at a 30%-plus pace.\n\nBofA estimates the 2026 HBM market at USD 54.6bn, up 58% from the prior year.\n HBM back-end processing involves multiple steps including TSV formation, etch, clean, deposition, copper fill, CMP, bonding and inspection, and\ndomestic equipment players include Semes, Hanmi Semiconductor, Hanwha Semitech, STI, PSK Holdings, Eo Technics and Techwing.\n\nHBM has grown to roughly 15% of total DRAM output, and continued advanced-packaging demand and investment point to high growth in the equipment market.\n PSK Holdings maintains a comparative edge in fluxless reflow and descum, with customers spanning memory as well as foundry CoWoS lines. That said, the bonding segment is separately dominated by TC-bonder leaders such as Hanmi Semiconductor, creating a division of labor in which different rivals lead different process steps. In terms of cycle position, the industry is read as being in the early stage of recovery after a 2024 peak and 2025 adjustment, pending confirmation of resumed customer capex."
+  "ko": "전방 수요의 축은 AI 데이터센터 투자다. 현대차증권은 주요 클라우드 사업자들의 2026년 설비투자를 전년 대비 80.7% 증가한 7,438억달러로 추정했고, 2027년에는 1조달러 가능성까지 제기된다고 정리했다(2026년 5월). 첨단 패키징 쪽에서는 TSMC의 CoWoS 캐파가 2025년 약 2배, 2026년 약 50~60% 추가 확대될 것으로 예상되고, 2026년 설비투자 가이던스는 520~560억달러 수준으로 제시됐다(하이투자증권, 2026년 1월). 같은 자료는 2026년 OSAT들의 CoWoS 캐파도 전년 대비 120% 이상 증가할 것으로 예상했는데, 이는 CoWoS 외주 물량 확대가 회사의 장비 입고로 연결되는 경로와 맞물린다. 메모리 쪽 사이클 위치는 다소 결이 다르다. 한국투자증권은 2023~2024년 HBM 캐파가 급확대된 뒤 2025년에는 삼성전자·SK하이닉스의 후공정 투자가 상대적으로 줄었고, HBM4 전환과 함께 2026년 하반기부터 HBM 후공정 투자가 재개될 것으로 전망했다. 기술 방향은 장비 수요에 우호적으로 해석되는데, HBM4는 TSV 수 증가로 제조 난이도가 높아져 TSV 캐파 확대뿐 아니라 워피지 제어 등 수율 개선 장비의 중요성도 부각될 전망이라는 견해가 제시됐다. 경쟁 포지션은 대만 패키징 생태계에서 알박에 이은 2위로, 1위 사업자와의 점유율 격차와 고객사 이원화 정책이 실적 변수로 남는다. 결국 CoWoS 증설(비메모리)과 HBM 후공정 투자(메모리)라는 두 축의 시차가 분기 실적의 진폭을 결정하는 구조다.",
+  "en": "The demand backbone is AI datacenter investment. Hyundai Motor Securities estimated 2026 capex by major cloud providers at USD 743.8bn, up 80.7% year on year, and noted the possibility of USD 1trn in 2027 (May 2026). In advanced packaging, TSMC's CoWoS capacity was expected to roughly double in 2025 and expand a further 50-60% in 2026, with 2026 capex guidance of USD 52-56bn (Hi Investment & Securities, January 2026). The same report expected OSAT CoWoS capacity in 2026 to rise more than 120% year on year, which dovetails with the channel through which outsourced CoWoS volume translates into tool deliveries for the company. The memory cycle sits at a different point. Korea Investment & Securities noted that after rapid HBM capacity expansion in 2023-2024, back-end investment by Samsung Electronics and SK hynix was relatively lighter in 2025, and projected HBM back-end investment to resume from the second half of 2026 alongside the HBM4 transition. Technology direction is read as supportive of tool demand: HBM4 raises manufacturing difficulty as TSV counts increase, so beyond TSV capacity, yield-improvement tools such as warpage control are expected to gain importance. On positioning, the company is seen as second behind ULVAC in Taiwan's packaging ecosystem, leaving the share gap with the leader and customers' dual-sourcing policies as earnings variables. Ultimately, the timing gap between non-memory CoWoS expansion and memory HBM back-end investment drives the amplitude of quarterly results."
  },
  "outlook": {
-  "ko": "증권가는 고객사 투자 재개에 무게를 두고 있다.\n한국투자증권은 주요 고객사들의 적극적인 투자가 기대된다며 피에스케이홀딩스 목표주가를 16만원으로 상향했다.\n\n동 증권사는 TSMC 등 주요 고객사의 적극적 투자 의지에 따라 실적 추정치가 매 분기 상향될 가능성이 높고, 하반기부터 HBM 후공정 투자 재개로 매출이 추가 상승할 수 있으며 CoWoS·HBM 후공정에서 독보적 점유율을 유지하고 있다고 분석했다.\n 제품 측면에서는 HBM 세대 전환이 변수다.\nHBM4의 TSV는 기존 1,024개에서 2,048개로 늘어날 예정으로, 공정 난도와 장비 수요 변화가 예상된다.\n 또한\nHBF가 본격화하면 TSV 기반 수직 적층 구조 채택으로 하이브리드 본딩, 어닐링, 세정 장비 수요가 확대될 것으로 전망된다.\n 고객 다변화 측면에서는 중화권·미국 고객사향 매출 흐름이 지역 의존도를 낮추는 요소로 거론된다. 다만 회사의 공식 연간 가이던스 수치는 본 분석에서 확인되지 않아, 실제 수주·납품 반영 속도와 분기 실적 추세를 통해 확인할 필요가 있다.",
-  "en": "Brokerages lean toward a resumption of customer capex.\nKorea Investment & Securities raised its target on PSK Holdings to KRW 160,000, citing expectations of active investment by key customers.\n\nThe broker argued that with key customers such as TSMC showing strong investment intent, earnings estimates are likely to be revised up each quarter, that resumed HBM back-end investment from the second half could lift revenue further, and that the company maintains a dominant share in CoWoS and HBM back-end.\n On the product side, the HBM generational transition is a swing factor.\nHBM4's TSV count is set to rise from 1,024 to 2,048, implying changes in process difficulty and equipment demand.\n In addition,\nif HBF takes off, its TSV-based vertical-stacking structure is expected to expand demand for hybrid bonding, annealing and cleaning equipment.\n On customer diversification, revenue trends toward Greater China and US customers are cited as factors that reduce regional dependence. However, the company's official annual guidance figures were not confirmed in this analysis, so they need to be verified through the pace of actual orders and deliveries and the quarterly earnings trend."
+  "ko": "회사가 스스로 제시한 중기 기준선은 2026년 3월 30일 공시한 기업가치 제고 계획으로, 2026~2030년을 대상으로 매출 연평균 10% 성장, 영업이익률 20% 이상 유지, 배당금 600원 이상 유지, ESG KCGS 종합등급 B등급 이상을 목표로 제시했다. 같은 공시에서 2025년 배당성향은 25.4%, 2025년 이익배당금액은 232억8,738만원으로 2024년(150억9,367만원) 대비 54.3% 증가한 것으로 밝혀졌다. 영업이익률 목표(20% 이상)가 2025년 실적(35.3%)보다 낮게 설정된 점은, 회사가 사이클 하강 국면까지 감안한 보수적 기준선을 제시했다는 해석의 여지를 남긴다. 증권가 전망을 보면 한국투자증권은 2026년 3월 목표주가를 8만8,000원에서 15만원으로 올리며 2026년 매출 추정치를 2,516억원으로 11% 상향하고, CoWoS 성장에 HBM 투자가 더해져 전년 대비 약 22% 성장할 것으로 전망했다. 같은 자료는 HBM4e로 갈수록 칩 면적이 증가해 캐파 부족이 심화되면 고객사 투자 사이클이 앞당겨질 가능성도 언급했다. 업종 리포트에서는 현대차증권이 CoWoS 공정과 TSV 공정 모두에 장비를 공급한다는 점을 들어 최선호주로 제시하기도 했다(2026년 5월). 관계기업 쪽 변수로는 KB증권이 피에스케이(319660)에 대해 2026년 역대 최대 실적을 전망하며 2027년부터 주요 메모리 고객사의 신규 대형 팹 오픈으로 장비 투자가 장기간 활발할 것으로 본 점이 있어, 지분법 손익 경로로 순이익에 영향을 줄 수 있다. 다만 이들 전망치는 외부 추정이며, 실제 확인은 분기 실적과 고객사 발주 일정에 달려 있다.",
+  "en": "The company's own mid-term baseline is the value-up plan disclosed on March 30, 2026, targeting for 2026-2030 a 10% revenue CAGR, an operating margin above 20%, dividends of at least KRW 600 per share, and a KCGS ESG grade of B or better. The same filing showed that the 2025 payout ratio was 25.4% and the 2025 dividend pool was KRW 23.29bn, up 54.3% from KRW 15.09bn for 2024. That the margin target (20%-plus) sits below the 2025 outcome (35.3%) leaves room to read the guidance as a conservative floor that accounts for downturn phases. Among brokerage views, Korea Investment & Securities raised its target price from KRW 88,000 to KRW 150,000 in March 2026, lifted its 2026 revenue estimate 11% to KRW 251.6bn, and projected roughly 22% year-on-year growth as HBM investment adds to CoWoS growth. The same note also mentioned that larger die sizes toward HBM4e could deepen capacity shortages and pull customer investment cycles forward. In a sector report, Hyundai Motor Securities named the company its top pick, citing tool supply into both CoWoS and TSV processes (May 2026). On the affiliate side, KB Securities forecast record 2026 results for PSK (319660) and expected prolonged equipment investment as major memory customers open new large fabs from 2027, which can flow into net profit via equity-method income. These are external estimates, however, and verification depends on quarterly results and customer order schedules."
  },
  "valuation_comment": {
-  "ko": "헤드라인 지표로 보면 ROE는 약 20.4% 수준, 주당순이익은 4,457원, 주당순자산은 23,653원이다. 현재 주가가 함의하는 이익·순자산 배수는 과거 다년간 형성됐던 거래 밴드(대체로 10배 안팎)의 상단을 크게 웃도는 구간으로, 이는 적자가 아닌 흑자 기조 속 이익 회복과 AI·HBM 후공정 수혜 기대가 선반영된 결과로 해석된다. 순자산 대비로도 상당한 프리미엄이 반영된 상태이며, 이는 성장 기대가 클수록 실적 변동에 따른 주가 민감도도 함께 커짐을 의미한다. 배당은 2025년 주당 1,080원으로, 현재 주가 기준 배당수익률은 성장주 특성상 높지 않은 편이다. 장비 매출의 분기 변동성이 큰 만큼 특정 분기의 이익 수준을 그대로 연율화해 해석하면 왜곡이 생길 수 있다는 점에 유의할 필요가 있다. 결국 현재의 프리미엄이 정당화되려면 고객사 투자 재개와 수주의 실제 실적 반영이 관건이다.",
-  "en": "On headline metrics, ROE is around 20.4%, earnings per share is KRW 4,457 and book value per share is KRW 23,653. The earnings and book multiples implied by the current price sit well above the multi-year trading band formed in the past (roughly around 10x), which is read as pre-reflecting an earnings recovery on a profitable footing and expectations of AI and HBM back-end tailwinds. A substantial premium to net assets is also embedded, meaning that the greater the growth expectations, the greater the share-price sensitivity to earnings swings. The dividend was KRW 1,080 per share for 2025, and the yield at the current price is on the low side, as is typical for a growth stock. Given the large quarterly volatility in equipment sales, annualizing the profit level of any single quarter at face value can be distorting. Ultimately, justifying the current premium hinges on resumed customer capex and the actual flow-through of orders into earnings."
+  "ko": "현재 주가에 대응하는 주당순이익은 4,457원, 주당순자산은 23,653원으로 산출된다(화면 카드의 실시간 수치 참조). 이익 기준 배수는 이 종목의 과거 거래 이력과 비교할 때 낮은 구간이라고 보기 어려운 위치이며, 순자산 대비로는 프리미엄이 상당히 붙어 있는 구간이다. 참고로 한국투자증권은 2026년 3월 보고서에서 2026년 매출 추정치를 2,516억원으로 제시했는데, 이런 외부 추정이 실현되는지 여부가 배수 해석을 좌우한다. 배당은 2025년 배당성향 25.4% 수준이고, 주당 배당금은 1,080원으로 회사가 2026~2030년 유지 목표로 제시한 600원을 웃돌지만, 배당수익률 자체는 성장형 장비주 특성상 낮은 편에 머문다. 이익의 상당 부분이 관계기업 손익 등 영업외에서 나오는 구조라, 본업 영업이익 기준 배수와 순이익 기준 배수가 서로 다른 그림을 보여줄 수 있다는 점도 감안할 필요가 있다. 결론적으로 밸류에이션은 '2026년 하반기 이후 HBM 후공정 투자 재개와 CoWoS 증설이 실제 매출로 인식되는가'라는 확인 절차에 크게 의존한다.",
+  "en": "Against the current share price, earnings per share works out to KRW 4,457 and book value per share to KRW 23,653 (see the live figures on the screen card). The earnings-based multiple sits at a level that is hard to call a low zone relative to this stock's own trading history, while the price carries a sizable premium to book value. For reference, Korea Investment & Securities put its 2026 revenue estimate at KRW 251.6bn in a March 2026 report, and whether such external estimates materialize will shape how the multiple is read. On dividends, the 2025 payout ratio was 25.4% and the dividend per share is KRW 1,080, above the KRW 600 floor the company set for 2026-2030, yet the dividend yield itself stays modest as is typical for a growth equipment name. Because a meaningful share of profit comes from non-operating items such as equity-method income, multiples based on core operating profit and on net profit can paint different pictures. In sum, the valuation rests heavily on verification of whether resumed HBM back-end investment from late 2026 and CoWoS expansion actually convert into recognized revenue."
  },
  "bull": [
   {
    "title": {
-    "ko": "D램 3사 동시 공급의 희소성",
-    "en": "Rare access to all three DRAM makers"
+    "ko": "D램 3사 모두를 고객으로 둔 HBM 장비 레퍼런스",
+    "en": "HBM tool references across all three DRAM makers"
    },
    "body": {
-    "ko": "회사는 삼성전자·SK하이닉스·마이크론 모두에 HBM 양산용 리플로우·디스컴 장비를 공급하는 국내 첫 사례로 평가된다. 특정 메모리 고객에 대한 의존도를 낮추는 동시에, 어느 고객사가 증설을 주도하든 수혜를 받을 수 있는 구조다. HBM 시장 성장의 폭이 넓어질수록 이 멀티 고객 포지션의 가치가 커진다.",
-    "en": "The company is regarded as the first Korean vendor supplying HBM mass-production reflow and descum tools to Samsung, SK hynix and Micron. This lowers dependence on any single memory customer while positioning it to benefit regardless of which customer leads capacity expansion. The broader HBM market growth becomes, the more valuable this multi-customer position is."
+    "ko": "삼성전자·SK하이닉스에 HBM 양산용 리플로우·디스컴을 공급하던 회사가 마이크론 공급으로 국내 장비사 중 처음 D램 3사 모두에 HBM용 장비를 납품하게 됐다. 리플로우 장비는 코어 다이 플립 칩 범프 형성 공정과 매스 리플로우 공정에 사용된다. 특정 고객사의 투자 지연이 발생해도 다른 고객사 발주로 일부 상쇄될 여지가 있는 구조다. 다만 3사 모두를 확보했다는 사실이 곧 균등한 매출 배분을 의미하지는 않는다.",
+    "en": "Already supplying HBM reflow and descum tools to Samsung Electronics and SK hynix, the company became the first Korean vendor to ship HBM tools to all three DRAM makers after adding Micron. Reflow tools are used in core-die flip-chip bump formation and mass reflow processes. That structure leaves room for orders from one customer to partly offset investment delays at another. Serving all three, however, does not imply an even revenue split."
    }
   },
   {
    "title": {
-    "ko": "AI·HBM·CoWoS 투자 사이클",
-    "en": "AI, HBM and CoWoS investment cycle"
+    "ko": "CoWoS 증설과 OSAT 아웃소싱 확대",
+    "en": "CoWoS expansion and OSAT outsourcing"
    },
    "body": {
-    "ko": "AI 가속기 수요가 HBM과 CoWoS 등 첨단 패키징 투자를 끌어올리며 후공정 장비 시장의 고성장이 전망된다. 한국투자증권은 하반기부터 HBM 후공정 투자 재개로 매출이 추가 상승할 수 있다고 봤다. 회사는 파운드리·OSAT·메모리 고객을 모두 확보해 투자 사이클의 여러 길목에서 수요를 받는다.",
-    "en": "AI accelerator demand is lifting investment in advanced packaging such as HBM and CoWoS, pointing to high growth in the back-end equipment market. Korea Investment & Securities sees revenue potentially rising further as HBM back-end investment resumes from the second half. With customers across foundry, OSAT and memory, the company captures demand at multiple points of the investment cycle."
+    "ko": "TSMC의 CoWoS 캐파는 2025년 약 2배에 이어 2026년에도 약 50~60% 추가 확대가 예상된다(하이투자증권, 2026년 1월). 같은 자료는 2026년 OSAT의 CoWoS 캐파도 전년 대비 120% 이상 증가할 것으로 봤다. 회사는 CoWoS 패키징용 디스컴 시장에서 일본 알박의 독점 구조를 깬 이력이 있어, 외주 물량 확대 국면에서 이원화 수요를 받을 수 있는 위치다. 다만 대만 생태계 내 지위는 알박에 이은 2위로 평가된다.",
+    "en": "TSMC's CoWoS capacity, after roughly doubling in 2025, was expected to expand a further 50-60% in 2026 (Hi Investment & Securities, January 2026). The same report saw OSAT CoWoS capacity rising more than 120% year on year in 2026. The company has a track record of breaking ULVAC's monopoly in descum for CoWoS packaging, positioning it to capture dual-sourcing demand as outsourced volume grows. Its standing in Taiwan's ecosystem, though, is assessed as second behind ULVAC."
    }
   },
   {
    "title": {
-    "ko": "높은 마진과 견조한 재무",
-    "en": "High margins and a solid balance sheet"
+    "ko": "무차입에 가까운 재무구조와 현금창출",
+    "en": "Near-debt-free balance sheet and cash generation"
    },
    "body": {
-    "ko": "2025년 영업이익률은 35.3%로, 정점이던 2024년의 41.1%보다는 낮지만 여전히 높은 수준을 유지했다. 부채비율은 15.5%로 낮고 2025년 영업현금흐름은 814.2억원으로 순이익을 뒷받침했다. 장비 믹스가 우호적일 때 분기 영업이익률이 40%를 넘은 전례가 있어 수익성 회복 여지가 있다.",
-    "en": "The 2025 operating margin of 35.3% remained high, though below the 41.1% peak of 2024. The debt ratio is low at 15.5%, and 2025 operating cash flow of KRW 81.4bn underpinned net profit. With prior quarters showing operating margins above 40% when the equipment mix was favorable, there is room for profitability to recover."
+    "ko": "2025년 말 자본 5,063.8억원, 부채 785.0억원으로 부채비율은 15.5%이며, 2022년 이후 15~19% 범위에서 유지돼 왔다. 영업활동현금흐름은 2022년 191.1억원에서 2025년 814.2억원으로 늘어, 이익 증가가 현금 유입으로 이어졌다. 회사는 기업가치 제고 계획에서 영업이익률 20% 이상 유지와 2026~2030년 배당금 600원 이상 유지를 제시했다. 이런 구조는 투자 사이클 공백기에도 연구개발과 배당을 이어갈 여력으로 해석되지만, 성장 투자 대비 현금 활용 효율은 별도 점검이 필요하다.",
+    "en": "At end-2025, equity was KRW 506.4bn against liabilities of KRW 78.5bn for a 15.5% debt-to-equity ratio, held in a 15-19% band since 2022. Operating cash flow rose from KRW 19.1bn in 2022 to KRW 81.4bn in 2025, so profit growth translated into cash inflow. In its value-up plan, the company pledged to keep operating margin above 20% and dividends at KRW 600 or more per share for 2026-2030. This can be read as capacity to sustain R&D and dividends through investment lulls, though the efficiency of cash deployment versus growth investment warrants separate scrutiny."
    }
   }
  ],
  "bear": [
   {
    "title": {
-    "ko": "2024년 정점 대비 실적 조정",
-    "en": "Earnings adjustment from the 2024 peak"
+    "ko": "2025년 매출·이익 동시 역성장",
+    "en": "Revenue and profit both declined in 2025"
    },
    "body": {
-    "ko": "2025년 매출과 영업이익은 정점이던 2024년 대비 각각 줄었고, 영업이익률도 41.1%에서 35.3%로 하락했다. 패키징 고객사의 설비투자 조정과 수요 둔화가 배경으로 지목된다. 투자 재개가 지연되면 외형·이익 회복 시점도 함께 늦춰질 수 있다.",
-    "en": "In 2025 both revenue and operating profit fell from the 2024 peak, and the operating margin declined from 41.1% to 35.3%. A capex adjustment and demand slowdown among packaging customers are cited as the cause. If capex resumption is delayed, the timing of any recovery in scale and profit could slip with it."
+    "ko": "2025년 매출은 2,077.6억원으로 2024년 2,155.1억원보다 줄었고, 영업이익도 734.0억원으로 884.8억원에서 감소했다. 영업이익률은 41.1%에서 35.3%로 낮아졌다. 기업 정보 요약에서도 2025년 결산 연결 매출·영업이익·순이익이 모두 전년 대비 감소했으며 반도체 패키징 장비 산업이 투자 조정 영향을 받았다고 정리됐다. 성장 스토리가 계속 부각되는 국면에서도 실제 확정 실적은 한 해 감익이었다는 점이 대비된다.",
+    "en": "2025 revenue of KRW 207.8bn was below 2024's KRW 215.5bn, and operating profit fell to KRW 73.4bn from KRW 88.5bn. Operating margin slipped from 41.1% to 35.3%. A company data summary likewise noted that 2025 consolidated revenue, operating profit and net profit all declined year on year, with the packaging equipment industry affected by an investment adjustment. That stands in contrast to a narrative that keeps emphasizing growth."
    }
   },
   {
    "title": {
-    "ko": "분기 실적 변동성",
-    "en": "Quarterly earnings volatility"
+    "ko": "분기 실적의 극심한 진폭",
+    "en": "Extreme quarterly volatility"
    },
    "body": {
-    "ko": "장비 매출은 인식 시점에 따라 분기별 변동이 매우 크다. 2025년 3분기에는 이연 매출이 한꺼번에 반영돼 매출 905.5억원으로 급증했다가, 직후 분기에는 정상 수준으로 되돌아갔다. 이런 변동성은 특정 분기 실적의 추세 해석을 어렵게 하고 주가 변동성을 키울 수 있다.",
-    "en": "Equipment revenue swings sharply by quarter depending on recognition timing. In Q3 2025, deferred sales were booked at once, spiking revenue to KRW 90.6bn before normalizing the next quarter. Such volatility makes it hard to read a trend from any single quarter and can amplify share-price volatility."
+    "ko": "2025년 분기 매출은 311.5억원 → 346.6억원 → 905.5억원 → 514.0억원, 2026년 1분기는 279.8억원으로 진폭이 매우 크다. 영업이익도 2025년 3분기 412.4억원에서 2026년 1분기 91.7억원으로 급변했다. 2분기 인식 지연 물량이 3분기에 반영되면서 전 분기 대비 실적 편차가 확대됐다는 설명처럼, 장비 매출 인식 시점이 분기 숫자를 좌우한다. 한 분기 실적만으로 추세를 판단하기 어렵다는 뜻이며, 실적 발표 전후 불확실성도 크다.",
+    "en": "Quarterly 2025 revenue ran KRW 31.2bn, KRW 34.7bn, KRW 90.6bn and KRW 51.4bn, then KRW 28.0bn in 1Q26 — a very wide amplitude. Operating profit likewise swung from KRW 41.2bn in 3Q25 to KRW 9.2bn in 1Q26. As explained, volume deferred from the second quarter landed in the third, widening sequential gaps, so recognition timing drives the quarterly print. Trends cannot be judged from a single quarter, and uncertainty around results dates is high."
    }
   },
   {
    "title": {
-    "ko": "본딩 전환과 경쟁 심화",
-    "en": "Bonding transition and intensifying competition"
+    "ko": "메모리 후공정 투자 공백과 경쟁 구도",
+    "en": "Memory back-end lull and competitive dynamics"
    },
    "body": {
-    "ko": "HBM4E·HBM5 세대로 갈수록 하이브리드 본딩 등 새로운 공정 체제로의 전환이 거론된다. 어플라이드머티어리얼즈, 한미반도체, 한화세미텍 등 국내외 강자들이 본딩·통합 장비 경쟁에 뛰어들고 있다. 공정 패러다임 변화 과정에서 회사의 기존 장비 수요가 영향을 받을 가능성을 점검해야 한다.",
-    "en": "As HBM moves toward the HBM4E and HBM5 generations, a shift to new process regimes such as hybrid bonding is increasingly discussed. Global and domestic leaders including Applied Materials, Hanmi Semiconductor and Hanwha Semitech are competing in bonding and integrated systems. The risk that demand for the company's existing tools could be affected during this paradigm shift warrants monitoring."
+    "ko": "한국투자증권은 2023~2024년 HBM 캐파 급확대 이후 2025년 삼성전자·SK하이닉스의 후공정 투자가 상대적으로 줄었다고 평가했고, 앞서 2026년 1월에는 TSV 공정 생산 규모가 일정 수준에 달해 HBM 후공정 투자 규모가 전년 대비 감소할 수밖에 없으며 CoWoS 투자가 이를 메울 것으로 봤다. 즉 성장 축이 메모리에서 비메모리 패키징으로 이동하는 과도기 리스크가 존재한다. 경쟁 측면에서는 대만 생태계 내 점유율이 알박에 이은 2위로 평가돼, 고객사 이원화 정책 변화가 물량 배분에 직접 영향을 줄 수 있다.",
+    "en": "Korea Investment & Securities assessed that after rapid HBM capacity expansion in 2023-2024, Samsung and SK hynix back-end investment was relatively lighter in 2025, and earlier, in January 2026 it argued TSV capacity had reached a certain scale so HBM back-end investment would inevitably shrink year on year, with CoWoS investment filling the gap. That implies transition risk as the growth axis shifts from memory to non-memory packaging. Competitively, with share in Taiwan assessed as second behind ULVAC, changes in customers' dual-sourcing policies can directly affect volume allocation."
    }
   }
  ],
  "risks": [
   {
    "cat": {
-    "ko": "전방 투자 사이클 변동",
-    "en": "End-market investment cycle swings"
+    "ko": "고객 집중·발주 시점 리스크",
+    "en": "Customer concentration and order timing"
    },
    "body": {
-    "ko": "실적이 메모리·파운드리 고객사의 설비투자 결정에 크게 좌우된다. AI 투자 열기가 식거나 고객사가 투자를 미루면 장비 수주와 매출이 빠르게 둔화될 수 있다. 일부 기관은 2026년 이후 HBM 가격 조정 가능성도 제기한다.",
-    "en": "Earnings depend heavily on capex decisions by memory and foundry customers. If AI investment enthusiasm cools or customers defer spending, equipment orders and revenue can slow quickly. Some institutions also flag the possibility of HBM price corrections from 2026 onward."
+    "ko": "매출이 소수 대형 메모리·파운드리·OSAT 고객의 패키징 캐파 발주에 연동돼, 발주 이연이 곧 분기 매출 공백으로 나타난다. 실제로 2025년에는 2분기 인식 지연 물량이 3분기에 몰리는 현상이 확인됐다. 회사 규모 대비 단일 프로젝트 비중이 커, 특정 고객의 캐파 계획 변경이 연간 실적 전망을 흔들 수 있다. 분기별 수주·수주잔고 공시가 제한적이라 외부에서 선행 확인이 어렵다는 점도 함께 고려해야 한다.",
+    "en": "Revenue tracks packaging capacity orders from a small number of large memory, foundry and OSAT customers, so order deferrals show up directly as quarterly revenue gaps. In 2025, volume deferred from the second quarter clustered into the third. Given company size, a single project can loom large, so a shift in one customer's capacity plan can move the full-year picture. Limited disclosure of quarterly orders and backlog also makes external lead-indicator checks difficult."
    }
   },
   {
    "cat": {
-    "ko": "고객·지역 집중",
-    "en": "Customer and regional concentration"
+    "ko": "AI 투자 사이클 조정 위험",
+    "en": "AI capex cycle correction risk"
    },
    "body": {
-    "ko": "장비 매출은 소수 대형 고객사에 집중되는 특성이 있어 한 고객의 투자 계획 변화가 실적에 큰 영향을 준다. 중화권·미국 고객 비중이 커질수록 지정학·수출규제 변수도 함께 커진다. 고객 다변화가 실제로 진전되는지 분기별로 확인할 필요가 있다.",
-    "en": "Equipment revenue tends to concentrate among a few large customers, so a change in one customer's investment plan can sway results materially. As exposure to Greater China and US customers grows, geopolitical and export-control variables grow with it. Whether customer diversification is genuinely progressing should be checked quarter by quarter."
+    "ko": "수요 기반은 대형 클라우드 사업자의 AI 설비투자인데, 주요 사업자 설비투자가 2026년 7,438억달러로 급증하고 기대치가 계속 상향되는 국면은 반대 방향으로 되돌아갈 경우 후공정 장비 발주에도 빠르게 전이된다. 차세대 GPU(루빈)의 출시가 HBM4 검증 이슈 등으로 소폭 지연될 것으로 예상된다는 관측도 제시된 바 있어, 신제품 일정 변동이 장비 입고 시점에 영향을 줄 수 있다. 사이클 상단에서의 재고·가동률 조정 국면은 마진 하락과 동시에 나타나는 경향이 있다. 실제 조정 폭과 시점은 예측 대상이 아니라 확인 대상이다.",
+    "en": "The demand base is AI capex by large cloud providers, and a phase in which their capex jumps to USD 743.8bn in 2026 with expectations continually revised up can transmit quickly to back-end tool orders if it reverses. Observations that next-generation GPU (Rubin) launches may slip slightly on HBM4 validation and related issues suggest product-schedule changes can shift tool delivery timing. Inventory and utilization adjustments at cycle peaks tend to coincide with margin compression. The size and timing of any adjustment is something to verify rather than forecast."
    }
   },
   {
    "cat": {
-    "ko": "밸류에이션 부담",
-    "en": "Valuation sensitivity"
+    "ko": "지주·관계기업 구조에 따른 이익 성격",
+    "en": "Profit composition under the holding and affiliate structure"
    },
    "body": {
-    "ko": "현재 주가에 반영된 이익·순자산 배수는 과거 거래 밴드를 크게 웃도는 구간으로, 성장 기대가 선반영된 상태다. 실적이 기대에 미치지 못하면 주가 조정 폭이 커질 수 있다. 분기 변동성이 큰 사업 특성상 기대치 관리가 까다롭다.",
-    "en": "The earnings and book multiples embedded in the current price sit well above the historical trading band, reflecting pre-priced growth expectations. If earnings fall short, the share-price correction could be larger. Given the business's high quarterly volatility, managing expectations is challenging."
+    "ko": "순이익이 영업이익을 상회하는 구간이 이어지고 있어(2026년 1분기 영업이익 91.7억원, 지배주주 순이익 200.6억원), 이익의 질을 판단할 때 영업 성과와 영업외 성과를 분리해 볼 필요가 있다. 피에스케이홀딩스 외 12인이 피에스케이 지분 32.86%를 보유하고 있고, 증권가 평가에서도 피에스케이 관계손익이 별도 항목으로 반영된다. 관계기업 실적이 부진해지면 본업과 무관하게 순이익이 흔들릴 수 있다. 반대로 관계기업 호조가 순이익을 끌어올릴 때도 본업의 성장 여부는 별도로 확인해야 한다.",
+    "en": "Net profit has been running above operating profit (1Q26: KRW 9.2bn operating, KRW 20.1bn owners' net), so judging earnings quality requires separating operating from non-operating results. PSK Holdings and 12 related parties hold 32.86% of PSK, and brokerage valuations reflect PSK-related equity income as a separate item. Weaker affiliate earnings could shake net profit regardless of the core business. Conversely, when strong affiliate results lift net profit, core-business growth still needs to be verified separately."
    }
   }
  ],
  "checkpoints": [
   {
    "when": {
-    "ko": "2026년 7월 말~8월 초",
-    "en": "Late July to early August 2026"
+    "ko": "2026년 8월 중순",
+    "en": "Mid-August 2026"
    },
    "what": {
-    "ko": "2026년 2분기 실적 발표. 일부 증권사는 2분기 영업이익이 전년 대비 큰 폭 증가할 것으로 전망하므로, 매출·영업이익률이 회복 추세를 뒷받침하는지 확인해야 한다.",
-    "en": "Q2 2026 earnings release. Some brokerages expect a large year-on-year jump in Q2 operating profit, so check whether revenue and operating margin support a recovery trend."
+    "ko": "2026년 반기보고서를 통한 2분기 실적 확인. 1분기 매출 279.8억원·영업이익률 32.8%에서 얼마나 회복됐는지, 이연 물량이 인식됐는지, 영업이익률 30%대 유지 여부가 핵심이다.",
+    "en": "Second-quarter results in the 2026 semiannual report. Key points: recovery from 1Q26 revenue of KRW 28.0bn and a 32.8% operating margin, whether deferred volume was recognized, and whether margin holds above 30%."
    }
   },
   {
    "when": {
-    "ko": "2026년 하반기",
-    "en": "Second half of 2026"
+    "ko": "2026년 8월 하순",
+    "en": "Late August 2026"
    },
    "what": {
-    "ko": "HBM 후공정 투자 재개 여부와 신규 팹 가동이 실제 장비 발주로 이어지는지가 핵심. 한국투자증권이 지목한 하반기 HBM 후공정 투자 재개 시나리오의 실현 여부를 점검한다.",
-    "en": "Whether HBM back-end investment resumes and new fab ramps translate into actual equipment orders. Verify the realization of the second-half HBM back-end capex resumption scenario flagged by Korea Investment & Securities."
+    "ko": "관계기업 피에스케이(319660)의 분기 실적. KB증권이 2026년 역대 최대 실적을 전망한 만큼, 지분법 손익 경로로 홀딩스 순이익에 미치는 영향을 확인할 수 있다.",
+    "en": "Quarterly results at affiliate PSK (319660). With KB Securities forecasting record 2026 results, the read-through to Holdings' net profit via equity-method income can be checked."
    }
   },
   {
    "when": {
-    "ko": "2026~2027년 HBM4/HBM4E 전환기",
-    "en": "HBM4/HBM4E transition, 2026–2027"
+    "ko": "2026년 10월 중순",
+    "en": "Mid-October 2026"
    },
    "what": {
-    "ko": "TSV가 1,024개에서 2,048개로 늘어나는 HBM4 전환과 하이브리드 본딩 도입이 회사 리플로우·디스컴 장비 수요에 미치는 영향을 추적한다. 공정 변화가 기회인지 위협인지 가늠하는 분기점이다.",
-    "en": "Track how the HBM4 transition (TSVs rising from 1,024 to 2,048) and hybrid-bonding adoption affect demand for the company's reflow and descum tools. This is a juncture for judging whether the process shift is an opportunity or a threat."
+    "ko": "TSMC 분기 실적발표와 설비투자·CoWoS 캐파 가이던스. 2026년 CoWoS 캐파 50~60% 확대, 설비투자 520~560억달러 전망 대비 실제 집행 강도를 점검하는 자리다.",
+    "en": "TSMC's quarterly results and capex/CoWoS capacity guidance — a chance to check actual execution against expectations of 50-60% CoWoS capacity expansion and USD 52-56bn capex in 2026."
    }
   },
   {
    "when": {
-    "ko": "분기별 고객 다변화 지표",
-    "en": "Quarterly customer diversification metrics"
+    "ko": "2026년 11월 중순",
+    "en": "Mid-November 2026"
    },
    "what": {
-    "ko": "중화권(예: 창신메모리)·미국 고객사향 매출이 실제로 확대되는지, 지역·고객 집중도가 완화되는지 분기 공시와 IR을 통해 확인한다.",
-    "en": "Check via quarterly disclosures and IR whether revenue toward Greater China (e.g., CXMT) and US customers is genuinely expanding and whether regional and customer concentration is easing."
+    "ko": "3분기 분기보고서. HBM4 전환과 함께 2026년 하반기부터 HBM 후공정 투자가 재개될 것이라는 전망이 매출로 확인되는지, 메모리 대상 물량과 CoWoS 대상 물량의 비중 변화를 살펴볼 구간이다.",
+    "en": "Third-quarter report. A window to see whether the projection that HBM back-end investment resumes in the second half of 2026 with the HBM4 transition shows up in revenue, and how the memory versus CoWoS mix shifts."
+   }
+  },
+  {
+   "when": {
+    "ko": "2027년 2~3월",
+    "en": "February-March 2027"
+   },
+   "what": {
+    "ko": "2026년 결산과 현금배당 결정, 기업가치 제고 계획 이행 점검. 매출 연평균 10% 성장·영업이익률 20% 이상·배당금 600원 이상 유지 목표와 실제 수치의 정합성을 확인할 수 있다.",
+    "en": "FY2026 results, the cash dividend decision, and a review of value-up plan execution — allowing a check of actual figures against targets of a 10% revenue CAGR, a 20%-plus operating margin and dividends of at least KRW 600 per share."
    }
   }
  ],
  "verdict": {
   "body": {
-   "ko": "피에스케이홀딩스는 HBM·첨단 패키징용 리플로우·디스컴 장비를 D램 3사와 글로벌 파운드리에 공급하는 후공정 장비 전문 지주사다. 2024년이 매출·이익의 정점이었고 2025년은 고객사 투자 조정으로 외형과 영업이익률이 한 단계 낮아졌으나, 35%대 영업이익률과 15.5%의 낮은 부채비율 등 수익성·재무 체력은 견조하다. 장비 매출 인식 시점에 따른 분기 변동성이 매우 커, 특정 분기 실적을 그대로 추세로 해석하기는 어렵다. 전방의 AI·HBM·CoWoS 투자 확대와 HBM4 전환은 구조적 기회이지만, 하이브리드 본딩으로의 공정 전환과 경쟁 심화는 동시에 점검해야 할 변수다. 현재 주가에는 이익 회복과 성장 기대가 상당 부분 선반영돼 과거 거래 밴드 상단을 웃도는 프리미엄이 형성돼 있어, 고객사 투자 재개와 수주의 실제 실적 반영이 향후 핵심 확인 사항이다. 본 자료는 정보 제공 목적이며 투자 권유가 아니다.",
-   "en": "PSK Holdings is a back-end equipment holding company specializing in reflow and descum tools for HBM and advanced packaging, supplying all three DRAM makers and global foundries. 2024 was the peak for revenue and profit, and 2025 stepped down in scale and operating margin amid a customer capex adjustment, yet profitability and balance-sheet strength remain solid, with a mid-30% operating margin and a low 15.5% debt ratio. Quarterly volatility tied to equipment recognition timing is very high, making it hard to read any single quarter as a trend. Expanding AI, HBM and CoWoS investment and the HBM4 transition are structural opportunities, while the shift toward hybrid bonding and intensifying competition are variables to monitor simultaneously. The current price embeds much of the expected earnings recovery and growth, forming a premium above the historical trading band, so resumed customer capex and the actual flow-through of orders into earnings are the key items to verify going forward. This material is for informational purposes only and is not investment advice."
+   "ko": "피에스케이홀딩스는 디스컴과 리플로우를 축으로 후공정 패키징 장비를 공급하며, D램 3사 모두에 HBM용 장비를 납품한 레퍼런스와 CoWoS용 디스컴에서 일본 알박의 독점을 깬 이력을 갖췄다. 확정 실적으로 보면 2023년 매출 947.2억원에서 2024년 2,155.1억원으로 급성장한 뒤 2025년 2,077.6억원으로 소폭 감소했고, 영업이익률은 41.1%에서 35.3%로 낮아졌다. 분기 편차는 2025년 3분기 매출 905.5억원과 2026년 1분기 279.8억원의 격차에서 드러나며, 장비 인식 시점이 숫자를 크게 흔든다. 재무구조는 2025년 말 부채비율 15.5%로 견고하고, 영업활동현금흐름은 814.2억원을 기록했다. 전망 축은 CoWoS 캐파와 OSAT 아웃소싱 확대, 그리고 2026년 하반기 HBM4 전환에 따른 후공정 투자 재개 전망이라는 두 갈래이며, 반대편에는 메모리 투자 공백, 알박과의 점유율 격차, 순이익 내 영업외 비중이라는 확인 과제가 놓여 있다. 회사가 제시한 매출 연평균 10% 성장·영업이익률 20% 이상·배당금 600원 이상이라는 기준선은 향후 실적을 대조할 잣대로 활용할 수 있다. 이 리포트는 정보 제공용이며, 투자 판단과 책임은 독자 본인에게 있다.",
+   "en": "PSK Holdings supplies back-end packaging equipment centered on descum and reflow tools, backed by references shipping HBM tools to all three DRAM makers and a track record of breaking ULVAC's monopoly in CoWoS descum. On confirmed numbers, revenue surged from KRW 94.7bn in 2023 to KRW 215.5bn in 2024 before easing to KRW 207.8bn in 2025, with operating margin down from 41.1% to 35.3%. Quarterly dispersion is evident in the gap between KRW 90.6bn of revenue in 3Q25 and KRW 28.0bn in 1Q26, as recognition timing heavily sways the print. The balance sheet is solid, with a 15.5% debt-to-equity ratio at end-2025 and operating cash flow of KRW 81.4bn. The outlook rests on two strands — CoWoS capacity growth and OSAT outsourcing and the projected resumption of HBM back-end investment with the HBM4 transition in the second half of 2026 — against open questions on the memory investment lull, the share gap with ULVAC, and the non-operating share of net profit. The company's own baseline of a 10% revenue CAGR, a 20%-plus operating margin and dividends of at least KRW 600 per share offers a yardstick against which to measure future results. This report is for information purposes only; investment decisions and their consequences rest with the reader."
   }
  },
  "sources": [
-  "https://comp.fnguide.com/SVO2/ASP/SVD_Main.asp?pGB=1&gicode=A031980&cID=&MenuYn=Y&ReportGB=B&NewMenuID=Y&stkGb=701",
-  "https://www.zoominfo.com/p/Chen-Powei/7749591162",
+  "https://cdn.financialreports.eu/financialreports/media/filings/16068/2026/RNS/16068_rns_2026-03-30_de56f8a5-9d3f-4da4-970f-b8428be75423.html",
+  "https://alphasquare.co.kr/home/stock-summary?code=031980",
+  "https://goinsider.kr/stock/00208444",
+  "https://marketgenie2025.net/107",
+  "https://news.nate.com/view/20260330n23793",
+  "https://www.investing.com/equities/psk-earnings",
+  "https://www.judal.co.kr/?view=stockAI&shareToken=OTRdtxyxjiJ4klAN",
+  "http://money2.daishin.com/PDF/Out/intranet_data/product/researchcenter/report/2026/04/57003_psk_initiation_260402.pdf",
   "https://www.thelec.kr/news/articleView.html?idxno=28196",
-  "https://news.skhynix.co.kr/2026-market-outlook/",
-  "https://www.thelec.kr/news/articleView.html?idxno=53557",
-  "https://markets.hankyung.com/stock/031980",
+  "https://m.thinkpool.com/compDiscuss/cont/1013408",
+  "https://m.greened.kr/news/articleView.html?idxno=324689",
+  "https://m.thinkpool.com/compDiscuss/cont/1011855",
   "https://www.etoday.co.kr/news/view/2432356",
-  "https://files-scs.pstatic.net/2025/10/04/TwAlDXyuQR/%EB%B0%98%EB%8F%84%EC%B2%B4_%EB%82%B8%EB%93%9C%EC%9D%98_%EA%B3%84%EC%A0%88,_HBF%EA%B0%80_%EB%B6%88%EB%9F%AC%EC%98%A8_%ED%98%81%EC%8B%A0_%EC%82%BC%EC%84%B1%EC%A0%84%EC%9E%90,_SK%ED%95%98%EC%9D%B4%EB%8B%89%EC%8A%A4,_%ED%95%9C%ED%99%94%EB%B9%84%EC%A0%84,_HPSP,_ISC,_%ED%94%BC%EC%97%90%EC%8A%A4%EC%BC%80%EC%9D%B4%ED%99%80%EB%94%A9%EC%8A%A4.pdf",
-  "https://www.butler.works/ko/companies/00208444",
-  "https://comp.wisereport.co.kr/company/c1010001.aspx?cmp_cd=031980",
-  "https://m.thinkpool.com/item/031980",
-  "https://www.hanaw.com/download/research/FileServer/WEB/industry/enterprise/2025/01/08/PSKH_250109.pdf",
-  "https://w4.kirs.or.kr/download/research/250407_%ED%94%BC%EC%97%90%EC%8A%A4%EC%BC%80%EC%9D%B4(%EA%B8%80%EC%84%B8).pdf",
-  "https://www.r2insights.com/stock-kosdaq-031980-analysis-20260319/",
-  "https://itooza.com/vscore/031980",
-  "https://www.saramin.co.kr/zf_user/company-info/view/csn/Q001NGFBYkFXNFA5ZFlPWE9zZHFRZz09/company_nm/%ED%94%BC%EC%97%90%EC%8A%A4%EC%BC%80%EC%9D%B4%ED%99%80%EB%94%A9%EC%8A%A4(%EC%A3%BC)",
-  "https://issue.cyberbabarian.com/hbm-beneficiary-stocks-2026-may/",
-  "https://eureka.hankyung.com/insight/detail/16656"
+  "https://www.widedaily.com/news/articleView.html?idxno=258940",
+  "https://www.thebell.co.kr/free/content/ArticleView.asp?key=202410161909095280105454",
+  "https://view.asiae.co.kr/article/2026012708113218446",
+  "https://m.thinkpool.com/compDiscuss/cont/1012273",
+  "https://m.thinkpool.com/compDiscuss/cont/1016339"
  ],
  "v": 2,
- "model": "claude-opus-4-8",
+ "model": "claude-opus-5",
  "ticker": "031980",
  "name": "피에스케이홀딩스",
  "name_en": "PSK HOLDINGS INC.",
@@ -223,11 +233,11 @@
   "지주"
  ],
  "market": "코스닥",
- "reportDate": "2026-06-16",
- "reportTs": "2026-06-16 19:21",
- "dataDate": "20260616",
+ "reportDate": "2026-08-14",
+ "reportTs": "2026-08-14 14:34",
+ "dataDate": "20260814",
  "quant": {
-  "asOf": "2026-06-16",
+  "asOf": "2026-08-14",
   "fs_basis": "연결(CFS) · DART 공시 확정치 · 지배주주 기준 순이익",
   "annual": [
    {
@@ -324,23 +334,23 @@
    }
   ],
   "valuation": {
-   "price": 130700,
-   "mcap": 2.8182,
+   "price": 102900,
+   "mcap": 2.2188,
    "shares": 21562395,
    "total_shares": 21562395,
    "wavg_shares": 21568259,
-   "per": 29.3,
+   "per": 23.1,
    "eps": 4457,
-   "pbr": 5.53,
+   "pbr": 4.35,
    "bps": 23653,
    "roe_ttm": 20.4,
    "ttm_window": "2025Q2~2026Q1",
    "ttm_np_owner": 96114656331,
-   "pbr_krx": 5.25,
+   "pbr_krx": 4.51,
    "bps_krx": 23484.0,
    "basis": "PER·EPS·PBR·BPS 모두 자체 산출(네이버·토스와 동일 방식) · 배당은 DART 공시 주당현금배당금(보완:KRX) ÷ 현재가",
    "dps": 1080.0,
-   "div": 0.83
+   "div": 1.05
   }
  }
 }

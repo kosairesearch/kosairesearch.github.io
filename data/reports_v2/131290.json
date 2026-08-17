@@ -1,159 +1,159 @@
 {
  "title": {
-  "ko": "프로브카드가 바꾼 이익 체력",
-  "en": "Probe Cards Reshape the Earnings Base"
+  "ko": "프로브카드 D램 확장, 마진 레버리지 시험대",
+  "en": "Probe Card Push into DRAM: Margin Leverage on Trial"
  },
  "lead": {
-  "ko": "낸드 중심이던 프로브카드 사업이 DRAM·HBM 영역으로 확장되며 2026년 1분기 분기 영업이익이 과거 연간 수준에 근접할 만큼 이익 체력이 한 단계 올라섰다.",
-  "en": "As its probe card business expands from NAND into DRAM and HBM, TSE's earnings power stepped up sharply, with first-quarter 2026 operating profit approaching what used to be a full-year scale."
+  "ko": "낸드 중심이던 프로브카드 사업이 D램·HBM으로 넓어지며 2026년 1분기 매출 1,506.7억원·영업이익 419.9억원(영업이익률 27.9%)의 급격한 이익 레버리지가 나타났고, 이제 관건은 이 수익성이 증설·인력 투입 구간에서도 유지되는지다.",
+  "en": "As its probe card business broadens from NAND into DRAM and HBM, TSE posted Q1 2026 revenue of KRW 150.7bn and operating profit of KRW 42.0bn (27.9% margin); the question now is whether that profitability holds through a capacity- and headcount-build phase."
  },
  "keypoints": [
   {
-   "ko": "반도체 테스트 인터커넥션 부품 전문업체로, 전공정의 프로브카드와 후공정의 인터페이스보드·테스트소켓을 주력으로 한다.",
-   "en": "TSE specializes in semiconductor test interconnection parts, centered on front-end probe cards and back-end interface boards and test sockets."
+   "ko": "2026년 1분기 매출 1,506.7억원, 영업이익 419.9억원으로 분기 영업이익률이 27.9%까지 올라 2025년 연간 영업이익률 11.5%를 크게 상회했다.",
+   "en": "Q1 2026 revenue was KRW 150.7bn with operating profit of KRW 42.0bn, lifting the quarterly operating margin to 27.9% versus 11.5% for full-year 2025."
   },
   {
-   "ko": "외산이 과점하던 HBM·DRAM 프로브카드 시장에 진입하며 고부가 제품 비중이 커지는 구조적 전환이 진행 중이다.",
-   "en": "A structural shift is underway as TSE enters the HBM and DRAM probe card market long dominated by foreign players, lifting its high-value product mix."
+   "ko": "2025년 연간 매출은 4,289억원으로 2024년 3,480.5억원 대비 증가했고 영업이익도 399.0억원에서 491.7억원으로 늘었으나, 영업이익률은 11.5%로 동일했다.",
+   "en": "FY2025 revenue rose to KRW 428.9bn from KRW 348.1bn in 2024 and operating profit to KRW 49.2bn from KRW 39.9bn, yet the operating margin was unchanged at 11.5%."
   },
   {
-   "ko": "2023년 적자에서 2024~2025년 흑자로 돌아섰고, 2026년 1분기에는 매출·영업이익이 급증했다.",
-   "en": "After a 2023 loss, TSE returned to profit in 2024-2025 and saw revenue and operating profit surge in the first quarter of 2026."
+   "ko": "회사는 2026년 1월 복수 메모리 업체로부터 HBM용 프로브카드 퀄 테스트 승인을 받았다고 밝혔으며, 자회사 타이거일렉(PCB)·메가터치(핀)를 통한 수직계열화를 강점으로 제시한다.",
+   "en": "In January 2026 the company said it had passed HBM probe card qualification at multiple memory makers, and it cites vertical integration via subsidiaries Tiger Elec (PCB) and Megatouch (pins) as a strength."
   },
   {
-   "ko": "타이거일렉(PCB)·메가터치(핀)·지엠테스트(테스트 서비스) 등 수직계열화로 원가 경쟁력과 시너지를 확보하고 있다.",
-   "en": "Vertical integration across Tiger Elec (PCB), Megatouch (pins) and GM Test (test services) provides cost competitiveness and synergy."
+   "ko": "2026년 7월 상장 후 첫 1,000억원 규모 전환사채를 발행해 절반은 2026~2028년 프로브카드 설비, 절반은 인력 등 운영자금에 배정했다 — 성장 투자이자 잠재 희석 요인이다.",
+   "en": "In July 2026 it issued its first-ever KRW 100bn convertible bond, splitting proceeds between probe card facilities for 2026-2028 and working capital including headcount — a growth investment and a potential dilution factor."
   },
   {
-   "ko": "삼성전자·SK하이닉스·마이크론·중화권 고객으로의 공급 확대 여부가 향후 실적 방향을 좌우한다.",
-   "en": "Expanding supply to Samsung, SK hynix, Micron and Chinese customers will largely determine the future earnings trajectory."
+   "ko": "D램용 프로브카드 매출의 상당 부분이 중국에서 발생하는 구조여서 지역·고객 집중과 신용위험, 규제 변수가 함께 따라온다.",
+   "en": "A sizable share of DRAM probe card revenue comes from China, bringing customer/region concentration, credit exposure and regulatory variables."
   }
  ],
  "business": {
-  "ko": "티에스이는 1995년 설립된 반도체 검사장비·소모품 전문기업으로, 2011년 코스닥에 상장했다. 사업은 전공정에서 웨이퍼 검사에 쓰이는 프로브카드와, 후공정 최종 검사단계에 적용되는 인터페이스보드·테스트소켓, 그리고 OLED 검사장비로 구성된다.\n2025년 상반기 별도 기준 매출 비중은 프로브카드 45%, 인터페이스 보드 28%, 테스트 소켓 12%, OLED 검사장비 14%를 기록했다.\n\n자회사 타이거일렉은 프로브카드·인터페이스 보드 등의 원재료인 PCB를, 메가터치는 포고핀·인터포저를, GM테스트는 반도체 테스트 서비스를 공급한다.\n\n이를 통해 원재료를 안정적으로 조달하며 원가 경쟁력을 확보하고 있다는 점이 특징이다.\n 프로브카드는 낸드플래시에서 출발해 기술 난도가 높은 DRAM·HBM으로 영역을 넓히고 있으며, 인터페이스보드는 AI 비메모리 수요와 연동해 글로벌 고객으로 공급이 확대되고 있다.\n인터페이스 보드의 경우 국내에선 삼성, SK하이닉스도 공급하고 있고 해외의 경우 AMD, 인텔, 샌디스크, 웨스턴디지털 등 글로벌로 납품하고 있다.\n 메모리 3사(삼성전자·SK하이닉스·마이크론)와 중화권 고객(CXMT 등)으로 고객 기반이 분산돼 있으나, 동시에 고객 집중도가 높아 발주 일정 변동에 분기 실적이 민감하게 반응하는 구조다. 통합 브랜드 'i3unify'를 앞세워 테스트 인터커넥션 부품의 종합 솔루션 경쟁력을 강조하고 있다.",
-  "en": "Founded in 1995 and listed on KOSDAQ in 2011, TSE specializes in semiconductor inspection equipment and consumables. Its business spans front-end probe cards used in wafer testing, back-end interface boards and test sockets used in final inspection, and OLED inspection equipment.\nIn the first half of 2025, on a standalone basis, the revenue mix was 45% probe cards, 28% interface boards, 12% test sockets and 14% OLED inspection equipment.\n\nSubsidiary Tiger Elec supplies PCBs used as raw materials for probe cards and interface boards, Megatouch supplies pogo pins and interposers, and GM Test provides semiconductor testing services.\n\nThis vertical structure secures stable raw-material sourcing and cost competitiveness.\n Probe cards have expanded from NAND flash into the technically harder DRAM and HBM domains, while interface boards have widened their global customer reach in line with AI non-memory demand.\nFor interface boards, the company supplies Samsung and SK hynix domestically and ships globally to AMD, Intel, SanDisk and Western Digital, among others.\n Its customer base spans the three memory makers (Samsung, SK hynix, Micron) plus Chinese customers such as CXMT, but high customer concentration also makes quarterly results sensitive to order timing. The company emphasizes integrated test-interconnection solutions under its unified brand 'i3unify'."
+  "ko": "티에스이는 반도체 테스트 공정 부품·장비 업체로, 전공정 웨이퍼 검사의 핵심 부품인 프로브카드와 후공정 최종 검사 단계의 인터페이스보드·테스트소켓을 주력으로 한다전공정에선 웨이퍼 검사의 핵심부품인 프로브카드를, 후공정에선 최종 검사단계에 적용되는 인터페이스 보드와 테스트 소켓을 주력 사업으로 한다. 프로브카드는 웨이퍼 위 칩을 검사할 때 쓰는 테스트 소모품으로 테스터의 전기 신호를 미세한 핀으로 칩에 전달하며, 전 공정 완료 후 패키징 전에 사용되고 기술 난도는 낸드·D램·HBM 순으로 높아진다. 회사는 낸드용에서 쌓은 지위를 발판으로 고난도 영역으로 이동해 왔고, 2026년 1월 여러 반도체업체로부터 HBM용 프로브카드 퀄 테스트 승인을 받았다고 밝혔다. 원가·납기 대응의 기반은 수직계열화로, 자회사 타이거일렉이 프로브카드용 인쇄회로기판을, 메가터치가 검사 핀을 생산한다. 회사는 자체 기술력과 경쟁사 대비 낮은 단가, 빠른 기술 지원으로 진입장벽을 넘었다고 설명했다. 지역 구성 측면에서는 D램용 프로브카드 매출 상당 부분이 중국에서 발생하며, 미국·중국 무역 분쟁으로 미국 경쟁사의 중국 진출이 어려워진 틈을 파고들었다는 설명이다. 후공정 쪽 인터페이스보드는 LS증권이 글로벌 비메모리 반도체 수요 증가에 연동된 견조한 성장 흐름을 유지할 것으로 본 부문이다. 경쟁구도를 보면 국내 프로브카드 제조사로 마이크로투나노, 티에스이, 코리아인스트루먼트 등이 거론되며 삼성전자향은 코리아인스트루먼트 등이, SK하이닉스향은 티에스이·마이크로투나노·AMST 등이 납품한다. 글로벌 시장에서는 그동안 메모리 업체들이 주로 미국 폼팩터와 일본 MJC·JEM 등이 만든 HBM용 프로브카드를 사용해 왔다는 점에서, 티에스이의 위치는 과점 시장에 뒤늦게 진입한 도전자에 가깝다.",
+  "en": "TSE supplies parts and equipment for semiconductor test, centered on probe cards for front-end wafer inspection and on interface boards and test sockets used at the final back-end test stagethe company's core businesses are probe cards, a key part for wafer inspection in the front end, and interface boards and test sockets applied at the final test stage in the back end. A probe card is a consumable used to inspect dies on a wafer, converting tester signals through fine pins to the chip; it is used after front-end processing and before packaging, and technical difficulty rises from NAND to DRAM to HBM. Building on its NAND franchise, the company has moved up into harder categories, and in January 2026 it said it had received HBM probe card qualification approvals from several semiconductor companies. Cost and lead-time responsiveness rest on vertical integration: subsidiary Tiger Elec makes the printed circuit boards for probe cards while Megatouch produces the test pins. Management said it cleared entry barriers through its own technology, lower pricing than rivals and fast technical support. On geography, a substantial part of DRAM probe card revenue is generated in China, where US-China trade friction has made it harder for American rivals to operate. On the back-end side, interface boards are the segment LS Securities expected to sustain solid growth tied to rising global non-memory demand. Competitively, domestic probe card makers include Micro2Nano, TSE and Korea Instrument, with Korea Instrument among suppliers to Samsung Electronics and TSE, Micro2Nano and AMST among suppliers to SK hynix. Globally, memory makers have mainly used HBM probe cards from US-based FormFactor and Japan's MJC and JEM, which places TSE as a late challenger in an oligopolistic market."
  },
  "earnings": {
-  "ko": "실적은 메모리 업황에 따라 큰 변동성을 보여 왔다. 2022년 매출 3,392억원·영업이익 566억원(영업이익률 16.7%)의 호실적을 낸 뒤, 2023년에는 매출 2,491억원에 영업이익 -24억원으로 적자 전환했다. 2024년에는 매출 3,480억원·영업이익 399억원으로 흑자 전환했고, 2025년에는 매출 4,289억원·영업이익 492억원(영업이익률 11.5%)으로 외형이 한 단계 커졌다. 다만 2025년 지배주주 순이익은 382억원으로 2024년 425억원보다 감소했는데, 이는 영업 외 요인과 자회사 손익 변동이 반영된 결과로 보인다. 분기 흐름을 보면 2025년은 1분기 영업이익 31억원에서 2분기 148억원, 3분기 115억원, 4분기 198억원으로 점진적 회복세를 나타냈다. 2026년 1분기에는 매출 1,507억원·영업이익 420억원·지배주주 순이익 369억원으로 직전 분기 대비 큰 폭으로 도약했다.\n이는 1분기에 국내 대형 반도체 기업에 HBM4 프로브카드 공급이 시작됐고, DRAM 프로브카드는 NAND 대비 가격이 높아 고정비를 고려한 수익성 개선 효과가 나타났기 때문이다.\n\n국내 S사 HBM 프로브카드는 2025년 4분기에 퀄 테스트 PO를 받고 2026년 1월에 제품이 공급됐으며, 해외 M사로의 DRAM·HBM 프로브카드 공급도 올해 1분기에 시작된 것으로 파악된다.\n 고부가 제품 비중 확대가 마진을 끌어올리는 영업레버리지 효과가 1분기 숫자에서 확인된 셈이다.",
-  "en": "Earnings have been highly cyclical with the memory market. After a strong 2022 (revenue of KRW 339.3bn and operating profit of KRW 56.6bn, an 16.7% margin), 2023 swung to a loss with revenue of KRW 249.1bn and an operating loss of KRW 2.4bn. The company returned to profit in 2024 with revenue of KRW 348.0bn and operating profit of KRW 39.9bn, then scaled up in 2025 to revenue of KRW 428.9bn and operating profit of KRW 49.2bn (an 11.5% margin). However, owner-attributable net profit fell to KRW 38.2bn in 2025 from KRW 42.5bn in 2024, reflecting non-operating items and subsidiary earnings swings. Quarterly, 2025 showed gradual recovery: operating profit of KRW 3.1bn in Q1, KRW 14.8bn in Q2, KRW 11.5bn in Q3 and KRW 19.8bn in Q4. The first quarter of 2026 then jumped sharply to revenue of KRW 150.7bn, operating profit of KRW 42.0bn and owner-attributable net profit of KRW 36.9bn.\nThis reflected the start of HBM4 probe card supply to a large domestic chipmaker in the first quarter, and the fact that DRAM probe cards carry higher prices than NAND, improving profitability against fixed costs.\n\nAn HBM probe card for a domestic 'S' customer received a qualification-test purchase order in the fourth quarter of 2025 and shipped in January 2026, while DRAM and HBM probe card supply to an overseas 'M' customer is understood to have begun in the first quarter of this year.\n The first-quarter figures thus demonstrate operating leverage as the high-value product mix lifts margins."
+  "ko": "확정치 기준 2025년 연결 매출은 4,289억원, 영업이익 491.7억원, 지배주주 순이익 382.3억원으로 2024년 매출 3,480.5억원·영업이익 399.0억원 대비 각각 약 23% 늘었지만 영업이익률은 11.5%로 2024년과 같았다. 즉 2025년은 외형이 커진 만큼 비용도 함께 늘어난 해였고, 지배주주 순이익은 2024년 424.8억원에서 오히려 감소했다 — 2024년에는 영업이익(399.0억원)보다 순이익이 컸던 반면 2025년에는 그 관계가 역전됐다는 점에서 영업외 항목의 기여 축소가 읽힌다. 비용 증가의 배경으로 LS증권은 D램 프로브카드 개발을 위한 대규모 인력 충원과, 중국 고객 공급 개시에 따른 대손상각비(2024년 12억원 → 2025년 3분기 누적 100억원) 반영을 지적했다. 분기 흐름은 뚜렷한 상저하고(上低下高)였다: 2025년 1분기 매출 830.3억원·영업이익 31.2억원(영업이익률 3.8%)에서 2분기 1,176.1억원·148.0억원(12.6%), 3분기 1,044.0억원·114.8억원(11.0%), 4분기 1,238.6억원·197.7억원(16.0%)으로 개선됐다. 2026년 1분기는 매출 1,506.7억원, 영업이익 419.9억원, 지배주주 순이익 369.2억원으로 영업이익률이 27.9%까지 올라, 1개 분기 영업이익이 2025년 연간 영업이익의 8할 이상에 해당하는 수준이 됐다. 전년 동기와 비교하면 2026년 1분기 매출은 81.5%, 영업이익은 1,246.8% 증가했으며, HBM과 일반 D램 양산 확대에 따른 프로브카드 공급 증가와 메모리 제조사 설비 확장이 매출·수익성 개선 요인으로 제시됐다. 제품 믹스 변화는 부문 데이터에서도 확인되는데, 2025년 3분기 누적 매출 3,050억원 중 프로브카드가 1,024억원이었고 회사는 2025년 프로브카드 매출이 2024년 대비 90% 성장했다고 밝혔다. 또 신한투자증권은 2025년 4분기 프로브카드 매출 410억원(전년 대비 +24%), 인터페이스보드 304억원(+79%), 자회사 합산 영업이익 38억원(2025년 3분기 영업적자 21억원)을 제시했다. 재무구조는 2025년 말 자본총계 4,645.6억원, 부채총계 1,434.6억원으로 부채비율 30.9%, 영업활동현금흐름은 485.7억원으로 2024년 297.4억원에서 개선됐다. 참고로 2023년에는 매출 2,491.5억원에 영업손실 23.8억원을 낸 적자 구간이었고 2022년 영업이익률은 16.7%였다는 점에서, 이 회사의 이익은 전방 투자 사이클에 따라 폭이 큰 편이다.",
+  "en": "On confirmed figures, FY2025 consolidated revenue was KRW 428.9bn with operating profit of KRW 49.2bn and net profit attributable to owners of KRW 38.2bn, each roughly 23% above 2024's KRW 348.1bn revenue and KRW 39.9bn operating profit, yet the operating margin was flat at 11.5%. In other words, 2025 saw costs scale with the topline, and owners' net profit actually fell from KRW 42.5bn in 2024 — in 2024 net profit exceeded operating profit, while in 2025 that relationship reversed, implying a smaller non-operating contribution. On the cost side, LS Securities pointed to aggressive hiring for DRAM probe card development and to bad-debt expense tied to the start of supply to a Chinese customer (KRW 1.2bn in 2024 versus KRW 10.0bn cumulative through Q3 2025). The quarterly path was clearly back-half weighted: from Q1 2025 revenue of KRW 83.0bn and operating profit of KRW 3.1bn (3.8% margin) to Q2 at KRW 117.6bn / KRW 14.8bn (12.6%), Q3 at KRW 104.4bn / KRW 11.5bn (11.0%) and Q4 at KRW 123.9bn / KRW 19.8bn (16.0%). Q1 2026 delivered revenue of KRW 150.7bn, operating profit of KRW 42.0bn and owners' net profit of KRW 36.9bn, pushing the margin to 27.9% — a single quarter equal to more than 80% of full-year 2025 operating profit. Year over year, Q1 2026 revenue rose 81.5% and operating profit 1,246.8%, with expanded HBM and conventional DRAM production driving probe card supply and memory makers' capacity expansion cited as drivers of revenue and profitability. The mix shift also shows in segment data: of KRW 305.0bn revenue in the first nine months of 2025, probe cards accounted for KRW 102.4bn, and the company said 2025 probe card revenue grew 90% versus 2024. In addition, Shinhan Securities cited Q4 2025 probe card revenue of KRW 41.0bn (+24% YoY), interface boards of KRW 30.4bn (+79%) and combined subsidiary operating profit of KRW 3.8bn versus an operating loss of KRW 2.1bn in Q3 2025. The balance sheet showed year-end 2025 total equity of KRW 464.6bn against liabilities of KRW 143.5bn for a 30.9% debt-to-equity ratio, while operating cash flow improved to KRW 48.6bn from KRW 29.7bn in 2024. For context, 2023 was a loss year with revenue of KRW 249.1bn and an operating loss of KRW 2.4bn, while the 2022 operating margin was 16.7% — evidence that earnings swing widely with the customer investment cycle."
  },
  "industry": {
-  "ko": "프로브카드는 웨이퍼 위 칩을 검사하는 테스트 소모품으로, 반도체 후공정·검사 수요와 직결된다.\n비즈니스리서치인사이트에 따르면 세계 프로브카드 시장 규모는 2026년 36억5000만달러로, 2035년까지 연평균 9.85% 성장해 85억달러에 이를 것으로 예상된다.\n\n프로브카드는 낸드플래시, D램, HBM용 순으로 기술 난도가 높으며,\n 고난도 영역일수록 미국·일본 업체가 과점해 왔다.\n메모리 업체들은 그동안 주로 미국 폼팩터와 일본 MJC·JEM 등이 만든 HBM용 프로브카드를 사용해 왔다.\n 티에스이는 미세 피치 배치 기술을 확보하고 수직계열화를 바탕으로 경쟁사 대비 저렴한 단가와 빠른 기술 지원을 무기로 진입 장벽을 넘고 있다고 밝혔다.\n현재 D램용 프로브카드 매출 상당 부분은 중국 시장에서 발생하며, 미·중 무역 분쟁으로 미국 경쟁사들의 중국 진출이 어려워지면서 티에스이가 대신 점유율을 늘리고 있다.\n 국내에서는 코리아인스트루먼트, 마이크로투나노 등이 DRAM·HBM 테스트 영역으로 진입하며 경쟁 구도가 형성되고 있다. AI·데이터센터 수요가 HBM과 고성능 메모리 투자를 견인하면서, 검사·테스트 단계의 중요성이 부각되는 국면이다.",
-  "en": "Probe cards are test consumables used to inspect chips on a wafer, tied directly to back-end test demand.\nAccording to Business Research Insights, the global probe card market is expected to reach USD 3.65bn in 2026 and grow at a 9.85% annual rate to USD 8.5bn by 2035.\n\nProbe cards rise in technical difficulty from NAND flash to DRAM to HBM,\n and the harder segments have been dominated by U.S. and Japanese suppliers.\nMemory makers have largely used HBM probe cards made by Form Factor of the U.S. and MJC and JEM of Japan.\n TSE says it has cleared entry barriers with fine-pitch placement technology, cheaper pricing and faster technical support backed by vertical integration.\nA significant portion of its DRAM probe card revenue currently comes from China, where U.S.-China trade tensions have hampered American rivals, allowing TSE to gain share instead.\n Domestically, players such as Korea Instrument and Micro2Nano are also entering the DRAM and HBM test space, shaping competition. With AI and data-center demand driving HBM and high-performance memory investment, the importance of the inspection and test stage is increasingly in focus."
+  "ko": "전방 여건은 AI 인프라 투자에 좌우된다. 세계반도체무역통계기구는 2026년 글로벌 반도체 시장이 전년 대비 25% 이상 성장해 약 9,750억 달러에 이르고, 메모리는 전체 성장률을 웃도는 30%대 증가를 보일 것으로 전망했다. BofA는 2026년 HBM 시장 규모를 전년 대비 58% 증가한 546억 달러로 추산했다. 테스트 부품 수요는 이 흐름에 구조적으로 연동되는데, HBM은 기존 D램 대비 2~3배의 프로브카드가 필요하기 때문이다. 시장 규모 자체도 확대 국면으로 제시되며, 비즈니스리서치인사이트는 세계 프로브카드 시장이 2026년 36억5,000만 달러에서 2035년 85억 달러로 연평균 9.85% 성장할 것으로 예상했다. 국내 업체에 유리한 변수는 공급 이원화 기조로, 키움증권은 SK하이닉스가 해외 기업 과점에 맞서 프로브카드 공급 이원화를 원해 왔고 현재도 여러 기업과 테스트를 진행 중이라고 설명했다. 다만 경쟁사 시각은 냉정하다 — 한 경쟁사는 증권신고서에서 국내 낸드용 프로브카드 기업들의 D램 진출이 아직 초기 단계이며 점유율이 충분히 확보되지 않았다고 판단했고, 티에스이 등이 HBM·D램 영역으로 진입하며 캐파가 분산돼 낸드향 수주·납기 대응이 지연되는 상황이 발생한다고 서술했다. 사이클 위치에 대한 신중론도 병존하는데, iM증권은 2026년 D램 수요 증가율 14.1%·생산 증가율 14.2%를 전망하며 HBM은 경쟁사 진입과 공급 확대로 성장 속도가 둔화될 가능성이 크다고 지적했다. 일부 시장조사기관과 외신은 2026년 이후 HBM 가격이 경쟁 심화와 생산능력 확대로 조정 국면에 들어갈 가능성을 제기한다.",
+  "en": "End-market conditions hinge on AI infrastructure spending. WSTS projects the global semiconductor market to grow more than 25% in 2026 to about USD 975bn, with memory outpacing the total at a growth rate in the 30% range. BofA estimated the 2026 HBM market at USD 54.6bn, up 58% year over year. Test-part demand is structurally tied to this, because HBM requires two to three times as many probe cards as conventional DRAM. The addressable market is also framed as expanding: Business Research Insights expects the global probe card market to grow from USD 3.65bn in 2026 to USD 8.5bn by 2035, a 9.85% CAGR. A favorable variable for Korean suppliers is dual sourcing — Kiwoom Securities noted SK hynix has wanted to diversify probe card supply away from a foreign oligopoly and is still testing multiple vendors. Competitor commentary is more sober, however: one rival stated in a securities filing that Korean NAND probe card makers' entry into DRAM remains at an early stage without sufficient share, and that as TSE and others move into HBM/DRAM their capacity is being spread thin, causing delays in NAND orders and deliveries. Caution on cycle positioning also exists: iM Securities forecast 2026 DRAM demand growth of 14.1% against supply growth of 14.2% and warned HBM growth could decelerate as rivals enter and capacity expands. Some research houses and foreign media raise the possibility that HBM prices enter a correction phase after 2026 amid intensifying competition and capacity additions."
  },
  "outlook": {
-  "ko": "회사와 시장의 관심은 프로브카드의 DRAM·HBM 확장과 자회사 실적 반등에 모인다.\n티에스이는 HBM용 프로브카드 공급 등을 기반으로 올해 매출 목표를 전년보다 30~40% 이상 높여잡았다.\n\n한 증권사 추정에 따르면 프로브카드 판매 매출은 2024년 803억원에서 2026년 1,621억원 수준으로 고성장이 전망된다.\n 인터페이스보드는 AI 비메모리 수요와 글로벌 고객 확대에 힘입어 성장이 이어질 것으로 기대되고, 적자였던 자회사들도 회복 국면에 진입한 것으로 평가된다.\n한 연구원은 티에스이가 중국 CXMT로 DRAM 프로브카드를 공급하고 있고 삼성으로의 DRAM(HBM 포함) 프로브카드 공급 기대감이 높다고 전망했으며, 회사 측은 고객사 의뢰에 따라 개발을 진행 중이라고 설명했다.\n 다만 DRAM·HBM용 양산 공급 시점과 퀄테스트 통과 여부는 여전히 변수다. 신제품으로는 HBM 테스트용 다이캐리어 소켓 등도 개발·공급을 추진하고 있어, 메모리 외 비메모리·시스템 반도체 영역으로의 확장 속도가 중장기 그림을 좌우할 전망이다.",
-  "en": "Attention centers on the DRAM and HBM expansion of probe cards and the rebound of subsidiaries.\nTSE has set its revenue target this year more than 30-40% above the prior year, supported by HBM probe card supply.\n\nAccording to one brokerage estimate, probe card sales are projected to grow strongly from KRW 80.3bn in 2024 to around KRW 162.1bn in 2026.\n Interface boards are expected to keep growing on AI non-memory demand and a broader global customer base, while previously loss-making subsidiaries are seen entering a recovery phase.\nOne analyst noted TSE supplies DRAM probe cards to China's CXMT and that expectations are high for DRAM (including HBM) probe card supply to Samsung, while the company said development is proceeding at customers' request.\n Still, the timing of mass-production supply for DRAM and HBM and the outcome of qualification tests remain swing factors. On new products, TSE is also pursuing development and supply of die-carrier sockets for HBM testing, so the pace of expansion beyond memory into non-memory and system semiconductors will shape the medium-to-long-term picture."
+  "ko": "회사가 공개한 방향성은 공격적이다. 티에스이는 HBM용 프로브카드 공급 등을 기반으로 2026년 매출 목표를 전년보다 30~40% 이상 높여 잡았다. 제품 측면에서는 LS증권이 2024년 중국 고객 D램 프로브카드 공급 개시에 이어 2026년 1분기 국내 대형 메모리 기업으로 HBM4 프로브카드 공급이 시작됐다고 정리했고, 빠르면 2026년 중 미국·국내 기업으로 D램 프로브카드 고객이 확대될 가능성이 높다고 봤다. 다만 회사는 또 다른 메모리 업체의 경우 퀄 승인은 났으나 양산 납기 일정이 잡히지 않았고, 프로브카드 수명이 통상 5년이어서 기존 경쟁사 제품 교체 시기가 남아 있다고 설명했다 — 퀄 통과와 실제 매출 사이에 시차가 존재한다. 능력 확충은 자금 조달로 뒷받침된다. 2026년 7월 공시된 1,000억원 규모 1회차 사모 전환사채의 조달 자금은 시설자금과 운영자금에 각각 500억원씩 배정됐고, 시설자금은 2026년부터 2028년까지 프로브카드 생산 장비·시설 확충에, 운영자금은 프로브카드 수요 대응 인건비로 2026년 300억원·2027년 200억원 투입 계획이다. 수주 방향에 대해 LS증권은 프로브카드 수주잔고가 전년 말보다 2026년 1분기 말, 2분기 말로 갈수록 늘고 있으며 전방 고객사의 설비투자 계획이 공격적으로 진행돼 2027년 이후에도 성장 흐름이 유지될 것으로 봤다. 신제품 축도 넓어지고 있는데, 2026년 6월 보도된 차세대 검사장비·소켓은 완성 시 기존 HBM 제조 공정의 검사 병목을 개선할 수 있는 것으로 소개됐다. 참고로 LS증권은 2026년 2월 시점에 2026년 매출 4,743억원·영업이익 745억원(영업이익률 15.7%)을 전망했는데, 2026년 1분기 확정 영업이익 419.9억원은 이 연간 전망치의 절반을 이미 웃도는 수준이어서 증설·인건비 반영 이후의 분기별 마진 궤적이 확인 지점이 된다.",
+  "en": "The company's stated direction is aggressive. TSE raised its 2026 revenue target by more than 30-40% versus the prior year, based partly on HBM probe card supply. On products, LS Securities noted that after starting DRAM probe card supply to a Chinese customer in 2024, HBM4 probe card shipments to a large domestic memory maker began in Q1 2026, and saw a high likelihood of adding US and Korean DRAM probe card customers as early as during 2026. That said, the company explained that at one other memory maker qualification has been approved but mass-production delivery timing is not yet set, and that probe cards typically last about five years, so replacement of incumbent rivals' products is still ahead — a lag exists between qualification and revenue. Capacity build is funded. A KRW 100bn first-series private convertible bond disclosed in July 2026 allocates KRW 50bn each to facilities and working capital, with facility funds earmarked for probe card production equipment and plant from 2026 through 2028 and working capital for probe-card-related labor costs of KRW 30bn in 2026 and KRW 20bn in 2027. On orders, LS Securities said the probe card backlog has been rising from end-2025 through the ends of Q1 and Q2 2026 and expected growth to continue beyond 2027 as customers pursue aggressive capex plans. The new-product axis is also widening: next-generation inspection equipment and sockets reported in June 2026 were described as able to ease the inspection bottleneck in existing HBM manufacturing once completed. For reference, LS Securities in February 2026 forecast 2026 revenue of KRW 474.3bn and operating profit of KRW 74.5bn (15.7% margin); confirmed Q1 2026 operating profit of KRW 42.0bn already exceeds half of that annual figure, making the quarterly margin path after capacity and labor costs a key item to verify."
  },
  "valuation_comment": {
-  "ko": "헤드라인 기준 자기자본이익률(ROE)은 19.2%, 주당순이익(EPS)은 6,576원, 주당순자산(BPS)은 38,498원이다. 적자였던 2023년에서 흑자로 전환한 뒤 이익이 회복되며 수익성 지표가 개선된 흐름이다. 다만 현재 주가가 함의하는 이익 대비 가격 수준은 증권사들이 과거에 적용해 온 거래 밴드(대체로 10배대 초반에서 20배 안팎)의 상단을 웃도는 구간으로 평가된다. 순자산 대비로도 상당한 프리미엄이 반영된 영역으로, 프로브카드의 DRAM·HBM 성장과 고부가 비중 확대가 실제 실적으로 입증되는 속도가 이 프리미엄의 정당성을 좌우한다.\n참고로 한 증권사는 2026년 추정 EPS에 과거 고점 평균 수준의 배수를 적용해 목표주가를 산출한 바 있다.\n 배당은 주당 450원 수준으로, 배당수익률은 반도체 성장주 특성상 낮은 편이며 밸류에이션의 핵심 변수는 배당이 아니라 이익 성장의 지속성에 있다.",
-  "en": "On a headline basis, return on equity is 19.2%, earnings per share is KRW 6,576 and book value per share is KRW 38,498. After turning from a 2023 loss to profit, earnings have recovered and profitability metrics have improved. That said, the price-to-earnings level implied by the current share price is assessed to sit above the trading band brokerages have historically applied (broadly from the low teens to around 20 times). It also reflects a substantial premium to net assets, so the justification for that premium hinges on how quickly the DRAM and HBM growth of probe cards and a richer product mix translate into actual results.\nFor reference, one brokerage derived its target price by applying a multiple near the historical peak average to estimated 2026 EPS.\n The dividend is around KRW 450 per share, and the dividend yield is on the low side as is typical for a semiconductor growth name, so the key valuation variable is the durability of earnings growth rather than the dividend."
+  "ko": "밸류에이션 기준선은 최근 4개 분기 합산 지배주주 순이익을 반영한 주당순이익 6,576원과 주당순자산 38,498원이다. 참고 좌표로, 신한투자증권은 목표주가 산정에 2026년 예상 주당순이익 7,090원과 2021~2025년 과거 고점 평균에 해당하는 목표 주가수익비율 20.2배를 적용했고, LS증권은 목표 주가수익비율 24.9배가 2025~2028년 주당순이익 성장률과 글로벌 프로브카드 상위 4개사의 2026년 45.4배를 고려하면 무리가 없다고 판단했다. 현재 주가에 반영된 이익 대비 배수는 이러한 과거 고점 평균대나 국내 증권사 목표 배수를 웃도는 구간에 있고, 순자산 대비로도 프리미엄이 큰 구간이다 — 즉 2023년 영업적자에서의 흑자 전환과 2026년 1분기의 급격한 이익 회복이 이미 상당 부분 가격에 반영된 상태로 볼 수 있다. 배당은 주당 배당금 기준 450원으로 배당수익률은 국내 반도체 업종 평균을 밑도는 편이며, 회사의 현금 배분이 설비·인력 투자에 기울어 있는 구조와 일치한다. 결과적으로 이 종목의 배수 정당화는 배당이 아니라 프로브카드 부문의 D램·HBM 매출 실현 속도와 분기 영업이익률 유지 여부에 달려 있으며, 두 지표가 어긋날 경우와 부합할 경우의 함의가 크게 갈린다.",
+  "en": "The valuation baseline is earnings per share of KRW 6,576, reflecting owners' net profit over the last four quarters, and book value per share of KRW 38,498. As reference points, Shinhan Securities applied a 2026 EPS estimate of KRW 7,090 and a target P/E of 20.2x, equal to the average peak multiple over 2021-2025, while LS Securities judged a 24.9x target P/E reasonable given 2025-2028 EPS growth and the 45.4x 2026 multiple of the global top four probe card names. The earnings multiple embedded in the current share price sits above those historical peak-average and domestic target multiples, and the premium to book value is also wide — meaning the swing from the 2023 operating loss back into profit and the sharp Q1 2026 earnings recovery appear substantially reflected in the price already. The dividend, at a per-share cash dividend basis of KRW 450, implies a yield below the Korean semiconductor sector average, consistent with cash being directed toward equipment and headcount investment. As a result, support for the multiple rests not on income return but on how quickly DRAM and HBM revenue converts within the probe card segment and whether the quarterly operating margin holds; the implications diverge sharply depending on whether those two indicators confirm or disappoint."
  },
  "bull": [
   {
    "title": {
-    "ko": "고부가 프로브카드로의 믹스 개선",
-    "en": "Mix shift toward high-value probe cards"
+    "ko": "고난도 영역 진입에 따른 믹스 개선",
+    "en": "Mix upgrade from entering harder categories"
    },
    "body": {
-    "ko": "낸드 중심이던 프로브카드 사업이 단가가 높은 DRAM·HBM으로 확장되고 있다.\nNAND는 웨이퍼당 약 5만개의 다이가 생산되는 반면 DRAM은 약 10~15만개가 생산돼 더 높은 기술력이 요구되고 단가도 높게 형성된다.\n 고부가 제품 비중 확대는 영업레버리지를 통해 마진을 끌어올리는 요인으로 작용한다.",
-    "en": "The probe card business, once NAND-centric, is expanding into higher-priced DRAM and HBM.\nNAND yields about 50,000 dies per wafer, whereas DRAM yields roughly 100,000-150,000, demanding higher technology and commanding higher prices.\n A richer high-value mix lifts margins through operating leverage."
+    "ko": "프로브카드는 낸드·D램·HBM 순으로 기술 난도가 높아지는데, 회사는 2026년 1월 복수 반도체업체의 HBM용 프로브카드 퀄 테스트를 통과했다고 밝혔다. LS증권은 2026년 1분기 국내 대형 메모리 기업으로 HBM4 프로브카드 공급이 시작됐다고 정리했다. 2026년 1분기 영업이익률이 27.9%로 2025년 연간 11.5%를 크게 상회한 것은 이러한 믹스 변화가 손익에 반영되기 시작했음을 보여준다.",
+    "en": "Probe card difficulty rises from NAND to DRAM to HBM, and the company said it passed HBM probe card qualification at multiple semiconductor firms as of January 2026. LS Securities noted HBM4 probe card supply to a large domestic memory maker began in Q1 2026. The Q1 2026 operating margin of 27.9%, far above the 11.5% full-year 2025 level, indicates that mix shift is starting to show in the P&L."
    }
   },
   {
    "title": {
-    "ko": "외산 과점 시장의 국산화 수혜",
-    "en": "Localization in a foreign-dominated market"
+    "ko": "수직계열화와 선제적 캐파 투자",
+    "en": "Vertical integration plus pre-emptive capacity investment"
    },
    "body": {
-    "ko": "HBM·DRAM 프로브카드는 그동안 미국·일본 업체가 과점해 왔다.\n티에스이는 미세 피치 배치 기술을 확보했고, 자체 기술력과 경쟁사 대비 저렴한 단가, 빠른 기술 지원으로 진입장벽을 넘었다고 강조한다.\n 메모리 고객의 국산화 기조와 증설·신공정 전환이 맞물리면 점유율 확대 기회가 열린다.",
-    "en": "HBM and DRAM probe cards have long been dominated by U.S. and Japanese suppliers.\nTSE says it has secured fine-pitch placement technology and cleared entry barriers with its own technology, cheaper pricing and faster support.\n As memory customers pursue localization alongside capacity additions and process transitions, share-gain opportunities open up."
+    "ko": "자회사 타이거일렉이 프로브카드용 인쇄회로기판을, 메가터치가 검사 핀을 생산해 핵심 부품을 내부 조달할 수 있어 고객 물량 증가와 사양 변화 대응에 유리한 구조다. 여기에 2026년부터 2028년까지 프로브카드 생산 장비·시설에 500억원, 인건비에 2026년 300억원·2027년 200억원을 투입하는 계획이 더해졌다. LS증권은 프로브카드 수주잔고가 분기를 거듭하며 증가하고 있다고 언급했다. 조달 조건도 표면·만기이자율 0%에 리픽싱 조건이 없는 구조여서 금융비용 부담은 제한적이다.",
+    "en": "Subsidiary Tiger Elec supplies probe card PCBs and Megatouch the test pins, allowing in-house sourcing of core parts and easier response to volume increases and specification changes. Added to this is a plan to spend KRW 50bn on probe card equipment and facilities from 2026 to 2028 plus labor costs of KRW 30bn in 2026 and KRW 20bn in 2027. LS Securities said the probe card backlog has increased quarter after quarter. Funding terms were also a 0% coupon and 0% yield-to-maturity with no refixing clause, limiting financing cost."
    }
   },
   {
    "title": {
-    "ko": "수직계열화 기반 원가·시너지",
-    "en": "Vertical integration for cost and synergy"
+    "ko": "국산화·공급 이원화 수요",
+    "en": "Localization and dual-sourcing demand"
    },
    "body": {
-    "ko": "자회사들이 핵심 원재료를 내재화해 원가 경쟁력을 뒷받침한다.\n타이거일렉은 PCB를, 메가터치는 포고핀·인터포저를, GM테스트는 테스트 서비스를 공급해 원재료를 안정적으로 조달하며 원가 경쟁력을 확보하고 있다.\n 업황 호황 국면에서는 본사와 자회사가 동반 성장하는 시너지가 발생한다.",
-    "en": "Subsidiaries internalize key raw materials, underpinning cost competitiveness.\nTiger Elec supplies PCBs, Megatouch supplies pogo pins and interposers, and GM Test provides test services, securing stable sourcing and cost competitiveness.\n In upcycles, the parent and subsidiaries can grow together with synergy."
+    "ko": "HBM용 프로브카드는 그동안 미국 폼팩터와 일본 MJC·JEM 등이 주로 공급해 왔다. 키움증권은 SK하이닉스가 해외 기업 과점에 맞서 공급 이원화를 원해 왔고 현재도 여러 기업과 테스트를 진행 중이라고 설명했다. LS증권은 이러한 환경에서 국내 프로브카드 기업들이 D램·HBM 영역으로 진출할 기회를 얻었고 2025년 하반기부터 공급이 본격화됐다고 정리했다. 이원화 정책이 유지되는 동안은 국내 후발 업체에 물량 배정 기회가 열려 있는 구도다.",
+    "en": "HBM probe cards have largely been supplied by US-based FormFactor and Japan's MJC and JEM. Kiwoom Securities said SK hynix has sought to dual-source against that foreign oligopoly and is still testing several vendors. LS Securities framed this as opening the DRAM/HBM space to Korean probe card makers, with supply ramping from the second half of 2025. As long as dual-sourcing policy persists, allocation opportunities remain open to domestic challengers."
    }
   }
  ],
  "bear": [
   {
    "title": {
-    "ko": "수직계열화의 양면성",
-    "en": "The double edge of vertical integration"
+    "ko": "이익 배수가 과거 밴드 상단을 넘어선 구간",
+    "en": "Multiple above the historical band's upper end"
    },
    "body": {
-    "ko": "수직계열화는 호황기엔 시너지지만 불황기엔 위험이 된다.\n반도체 업황이 둔화되면 사업부와 연결 자회사들의 이익이 크게 감소할 수 있으며, 2023년에는 대부분의 사업부와 자회사 실적이 동시에 악화된 바 있다.\n 메모리 사이클 하강 시 본사·자회사 실적이 함께 흔들릴 수 있다.",
-    "en": "Vertical integration is synergistic in upcycles but risky in downturns.\nWhen the chip market slows, the divisions and consolidated subsidiaries can see sharp profit declines, and in 2023 most divisions and subsidiaries deteriorated simultaneously.\n In a memory downcycle, parent and subsidiary results can wobble together."
+    "ko": "신한투자증권이 목표주가 산정에 쓴 20.2배는 2021~2025년 과거 고점 평균 수준이었다. 현재 주가에 반영된 이익 대비 배수는 이 수준과 LS증권의 목표 배수 24.9배를 모두 웃도는 구간에 있어, 실적이 시장 눈높이를 밑돌 경우 배수 축소 압력이 커지는 구조다. 순자산 대비 프리미엄도 큰 구간이며, 배당수익률은 완충 역할을 하기 어려운 수준이다. 이는 실적 자체의 문제가 아니라 가격에 이미 반영된 기대치의 문제다.",
+    "en": "The 20.2x Shinhan Securities used for its target was the average peak multiple over 2021-2025. The multiple embedded in the current price sits above both that level and LS Securities' 24.9x target multiple, so multiple compression pressure builds if results fall short of market expectations. The premium to book value is also wide, and the dividend yield is too low to act as a cushion. This is less about the results themselves than about expectations already in the price."
    }
   },
   {
    "title": {
-    "ko": "고객 집중과 발주 변동성",
-    "en": "Customer concentration and order volatility"
+    "ko": "중국 편중과 대손 이력",
+    "en": "China concentration and bad-debt history"
    },
    "body": {
-    "ko": "매출이 소수 메모리 대형 고객에 집중돼 발주 일정 변화에 분기 실적이 민감하다. 한 곳의 발주가 미뤄지면 매출 인식 시점이 밀리며 실적 변동성이 커진다. 2025년에도 분기별 실적 진폭이 컸던 점이 이를 보여준다. 양산 공급·퀄테스트 통과 시점의 불확실성도 실적 가시성을 제약한다.",
-    "en": "Revenue is concentrated among a few large memory customers, making quarterly results sensitive to order timing. A delay at one customer pushes revenue recognition out and amplifies volatility. The wide swings in 2025 quarterly results illustrate this. Uncertainty over the timing of mass-production supply and qualification passes also limits earnings visibility."
+    "ko": "회사의 D램용 프로브카드 매출 상당 부분은 중국 시장에서 발생한다. LS증권은 중국 고객 공급 개시로 대손상각비가 2024년 12억원에서 2025년 3분기 누적 100억원으로 늘었다고 지적했다. 즉 매출 성장의 일부가 회수 리스크를 동반했다는 뜻이며, 대손 부담이 재확대되면 마진 개선분을 상쇄할 수 있다. 여기에 미국·중국 규제 환경 변화는 이 매출 축의 지속성 자체에 영향을 줄 변수다.",
+    "en": "A substantial share of the company's DRAM probe card revenue comes from China. LS Securities noted bad-debt expense rose from KRW 1.2bn in 2024 to KRW 10.0bn cumulative through Q3 2025 following the start of supply to a Chinese customer. That means part of the revenue growth carried collection risk, and any renewed bad-debt burden could offset margin gains. Shifting US-China regulatory conditions are a further variable for the durability of this revenue axis."
    }
   },
   {
    "title": {
-    "ko": "경쟁 진입과 양산 입증 부담",
-    "en": "Rising competition and the burden of proof"
+    "ko": "퀄 통과와 양산 매출의 시차, 캐파 분산",
+    "en": "Lag from qualification to volume revenue, and stretched capacity"
    },
    "body": {
-    "ko": "DRAM·HBM 테스트 영역으로 국내외 경쟁사가 다수 진입하고 있다.\n국내 경쟁사인 코리아인스트루먼트와 티에스이가 HBM/DRAM 테스트 영역으로 진입하며 캐파가 분산되는 등 경쟁이 격화되는 양상이다.\n 엔지니어링용을 넘어 양산 공급으로의 전환 입증이 아직 진행 중이라는 점이 부담이다.",
-    "en": "Multiple domestic and overseas rivals are entering the DRAM and HBM test space.\nKorean competitors such as Korea Instrument and TSE are entering the HBM/DRAM test area, spreading capacity and intensifying competition.\n The shift from engineering use to proven mass-production supply is still in progress, which is a burden."
+    "ko": "회사는 한 메모리 업체에 대해 퀄 승인은 났으나 양산 납기 일정이 잡히지 않았고, 프로브카드 수명이 통상 5년이어서 기존 경쟁사 제품 교체 시기가 남아 있다고 설명했다. 경쟁사는 증권신고서에서 국내 낸드용 프로브카드 기업들의 D램 진출이 초기 단계이며 점유율이 충분치 않다고 평가했다. 또 티에스이 등이 HBM·D램으로 진입하며 캐파가 분산돼 낸드향 수주·납기 대응이 지연되는 상황이 발생한다는 지적도 나왔다. 신규 영역 확장이 기존 사업의 대응력을 희석할 수 있다는 점은 별도로 확인이 필요한 부분이다.",
+    "en": "The company said qualification was approved at one memory maker but volume delivery timing is not set, and that with a typical five-year probe card life, replacement of incumbent products lies ahead. A rival stated in a securities filing that Korean NAND probe card makers' DRAM entry is at an early stage without sufficient share. It also argued that as TSE and others move into HBM/DRAM, capacity is being spread thin, causing delays in NAND orders and deliveries. Whether expansion into new areas dilutes execution in the legacy business is a separate item to verify."
    }
   }
  ],
  "risks": [
   {
    "cat": {
-    "ko": "업황 사이클",
-    "en": "Industry cycle"
+    "ko": "사이클·전방 투자 변동",
+    "en": "Cycle and customer capex volatility"
    },
    "body": {
-    "ko": "테스트 부품 수요는 메모리 투자 사이클에 연동된다. AI·HBM 투자가 둔화되거나 메모리 가격이 조정되면 발주가 줄어 실적이 빠르게 약화될 수 있다. 2023년 적자 사례가 사이클 하강의 충격을 보여준다.",
-    "en": "Demand for test parts is tied to the memory investment cycle. If AI and HBM investment slows or memory prices correct, orders can fall and results can weaken quickly. The 2023 loss illustrates the impact of a downturn."
+    "ko": "이 회사의 손익은 전방 메모리 투자에 민감하다 — 2023년에는 매출 2,491.5억원에 영업손실 23.8억원을 기록했고, 2022년 영업이익률은 16.7%였다. iM증권은 HBM이 2024~2025년 폭발적 성장 이후 2026년에는 경쟁사 진입과 공급 확대로 성장 속도가 둔화될 가능성이 크다고 지적했다. 2026년 이후 HBM 가격 조정 가능성도 거론된다. 고정비와 인건비가 선반영된 상태에서 물량이 둔화되면 마진은 반대 방향으로 빠르게 움직일 수 있다.",
+    "en": "Earnings here are sensitive to customer memory capex — 2023 brought revenue of KRW 249.1bn with an operating loss of KRW 2.4bn, while the 2022 operating margin was 16.7%. iM Securities warned HBM growth is likely to decelerate in 2026 after explosive 2024-2025 expansion as rivals enter and supply grows. A possible HBM price correction after 2026 has also been raised. With fixed and labor costs already committed, a volume slowdown can move margins sharply in the opposite direction."
    }
   },
   {
    "cat": {
-    "ko": "양산·퀄테스트 일정",
-    "en": "Mass-production and qualification timing"
+    "ko": "자본구조·희석 및 조기상환",
+    "en": "Capital structure, dilution and early redemption"
    },
    "body": {
-    "ko": "DRAM·HBM 프로브카드의 양산 공급과 신규 고객 퀄테스트 통과 시점은 회사 통제 밖 변수다. 일정이 지연되면 시장 기대와 실제 매출 인식 사이에 괴리가 생길 수 있다. 신제품 다이캐리어 소켓 등도 아직 초기 단계다.",
-    "en": "The timing of mass-production supply for DRAM and HBM probe cards and qualification passes at new customers is partly outside the company's control. Delays can create a gap between market expectations and actual revenue recognition. New products such as die-carrier sockets are still at an early stage."
+    "ko": "2026년 7월 결정된 1,000억원 사모 전환사채의 전환가액은 주당 23만8,664원으로, 전량 전환 시 기존 발행주식총수의 3.79%인 41만8,999주가 신규 발행되며 전환청구 기간은 2027년 7월 22일부터 2031년 6월 22일까지다. 투자자는 발행 30개월 뒤인 2029년 1월부터 3개월마다 조기상환을 청구할 수 있어 주식 전환이 이뤄지지 않으면 원금 상환 부담이 발생할 수 있다. 2025년 말 부채비율은 30.9%로 아직 낮은 편이지만, 전환사채는 향후 주식 수와 현금흐름 양쪽에 조건부 영향을 준다. 상장 이후 첫 전환사채라는 점에서 자금 조달 방식의 전환이기도 하다.",
+    "en": "The KRW 100bn private convertible bond approved in July 2026 has a conversion price of KRW 238,664 per share; full conversion would issue 418,999 new shares, or 3.79% of outstanding shares, with a conversion window from July 22, 2027 to June 22, 2031. Investors may request early redemption every three months from January 2029, 30 months after issuance, creating principal repayment exposure if conversion does not occur. The debt-to-equity ratio was still modest at 30.9% at end-2025, but the bond has contingent effects on both share count and cash flow. It is also the company's first convertible bond since listing, marking a shift in funding approach."
    }
   },
   {
    "cat": {
-    "ko": "지정학·통상",
-    "en": "Geopolitics and trade"
+    "ko": "고객 집중과 경쟁 대응",
+    "en": "Customer concentration and competitive response"
    },
    "body": {
-    "ko": "중화권 매출 비중이 작지 않아 미·중 통상 환경 변화에 노출돼 있다.\n현재 D램 프로브카드 매출 상당 부분이 중국에서 발생하며, 미·중 분쟁이 점유율에 영향을 미치고 있다.\n 규제 방향에 따라 기회와 위험이 모두 커질 수 있다.",
-    "en": "With a meaningful share of revenue from China, TSE is exposed to shifts in U.S.-China trade.\nA significant portion of DRAM probe card revenue currently comes from China, and the U.S.-China dispute is affecting share dynamics.\n Depending on the regulatory direction, both opportunity and risk can grow."
+    "ko": "국내에서 삼성전자향은 코리아인스트루먼트 등이, SK하이닉스향은 티에스이·마이크로투나노·AMST 등이 납품하는 구조로 고객별 벤더 구성이 정해져 있다. 회사가 경쟁사 대비 낮은 단가를 진입 무기로 제시했다는 점은 가격 경쟁이 본격화될 경우 마진에 부담이 될 수 있는 요소다. 경쟁사는 삼성전자향 2D 프로브카드 퀄테스트 완료로 2026년 수주가 본격화될 것으로 예상한다고 밝혔다. 특정 고객의 발주 지연이나 벤더 재편은 분기 실적 변동성을 키울 수 있다.",
+    "en": "In Korea, Korea Instrument and others supply Samsung Electronics while TSE, Micro2Nano and AMST supply SK hynix, meaning vendor line-ups are set by customer. The company cited lower pricing than rivals as an entry weapon, which could pressure margins if price competition intensifies. A rival disclosed that completion of Samsung 2D probe card qualification should drive orders from 2026. Order deferrals at a single customer or vendor reshuffles could amplify quarterly earnings volatility."
    }
   }
  ],
  "checkpoints": [
   {
    "when": {
-    "ko": "2026년 8월 초",
-    "en": "Early August 2026"
+    "ko": "2026년 8월 중순",
+    "en": "Mid-August 2026"
    },
    "what": {
-    "ko": "2026년 2분기 실적 발표. 1분기의 급증한 영업이익이 일회성인지 추세인지, DRAM·HBM 프로브카드 매출과 마진 지속성을 확인해야 한다.",
-    "en": "Second-quarter 2026 results. The key is whether the surge in first-quarter operating profit is a trend or one-off, and whether DRAM/HBM probe card revenue and margins are sustained."
+    "ko": "2026년 반기보고서와 2분기 실적. 1분기 27.9%였던 영업이익률이 인건비·감가상각 증가 속에서도 유지되는지, 그리고 프로브카드 부문 매출 비중이 추가로 높아졌는지가 핵심 확인 항목이다.",
+    "en": "The H1 2026 report and Q2 results. Key checks are whether the 27.9% Q1 operating margin holds despite rising labor and depreciation costs, and whether the probe card share of revenue rose further."
    }
   },
   {
@@ -162,59 +162,69 @@
     "en": "Second half of 2026"
    },
    "what": {
-    "ko": "삼성전자·메이저 메모리 고객향 DRAM/HBM 프로브카드 양산 공급 및 추가 퀄테스트 진척도. 신규 고객 확보 여부가 실적 레벨업의 핵심 변수다.",
-    "en": "Progress on mass-production supply and further qualifications of DRAM/HBM probe cards for Samsung and major memory customers. New customer wins are central to a further step-up in earnings."
+    "ko": "HBM4 양산 램프업과 신규 D램 고객 확보 여부. 카운터포인트는 HBM 매출 대부분이 HBM3E이며 HBM4 납품은 하반기에 가시화될 것으로 봤고, LS증권은 빠르면 2026년 중 미국·국내 기업으로 D램 프로브카드 고객선이 확대될 가능성을 제시했다.",
+    "en": "HBM4 volume ramp and any new DRAM customer wins. Counterpoint expects most HBM revenue to remain HBM3E with HBM4 shipments becoming visible in the second half, and LS Securities flagged possible addition of US and Korean DRAM probe card customers as early as during 2026."
    }
   },
   {
    "when": {
-    "ko": "분기별",
+    "ko": "2026년 4분기~2028년",
+    "en": "Q4 2026 through 2028"
+   },
+   "what": {
+    "ko": "전환사채 시설자금 500억원의 프로브카드 장비·시설 집행 진척과 가동률. 증설된 캐파가 매출로 전환되는 시점과 2026년 300억원·2027년 200억원 인건비 투입이 마진에 미치는 영향을 함께 봐야 한다.",
+    "en": "Progress on deploying the KRW 50bn of CB facility funds into probe card equipment and plant, plus utilization rates. Watch when added capacity converts into revenue and how labor spending of KRW 30bn in 2026 and KRW 20bn in 2027 affects margins."
+   }
+  },
+  {
+   "when": {
+    "ko": "2027년 7월 22일",
+    "en": "July 22, 2027"
+   },
+   "what": {
+    "ko": "전환사채 전환청구 개시일로, 전량 전환 시 발행주식총수의 3.79%에 해당하는 41만8,999주가 신규 발행된다. 주식 수 변화와 2029년 1월부터 가능한 조기상환 청구 일정을 함께 관리 지표로 둘 필요가 있다.",
+    "en": "The start of the CB conversion window; full conversion would issue 418,999 shares, equal to 3.79% of outstanding stock. Track share-count changes alongside the early redemption option available from January 2029."
+   }
+  },
+  {
+   "when": {
+    "ko": "분기별 상시",
     "en": "Each quarter"
    },
    "what": {
-    "ko": "프로브카드 수주잔고와 인터페이스보드 글로벌 공급 동향. 자회사(타이거일렉·메가터치·지엠테스트)의 손익이 회복세를 이어가는지 점검.",
-    "en": "Probe card order backlog and global interface board supply trends. Whether subsidiaries (Tiger Elec, Megatouch, GM Test) sustain their earnings recovery."
-   }
-  },
-  {
-   "when": {
-    "ko": "수시",
-    "en": "Ongoing"
-   },
-   "what": {
-    "ko": "HBM 테스트용 다이캐리어 소켓 등 신제품 공급 계약과 비메모리·시스템 반도체 진출 진척. 메모리 외 매출 다변화의 속도를 가늠하는 지표다.",
-    "en": "Supply contracts for new products such as HBM die-carrier sockets and progress into non-memory and system semiconductors. These gauge the pace of revenue diversification beyond memory."
+    "ko": "중국 고객 관련 매출채권과 대손상각비 추이. 대손상각비가 2024년 12억원에서 2025년 3분기 누적 100억원으로 확대된 이력이 있어, 재확대 여부는 마진 지속성 판단의 직접 재료다.",
+    "en": "Trends in receivables and bad-debt expense tied to Chinese customers. Given the increase from KRW 1.2bn in 2024 to KRW 10.0bn cumulative through Q3 2025, any renewed rise is direct input for judging margin durability."
    }
   }
  ],
  "verdict": {
   "body": {
-   "ko": "티에스이는 반도체 테스트 인터커넥션 부품을 수직계열화한 기업으로, 낸드 중심이던 프로브카드 사업이 DRAM·HBM으로 확장되는 구조적 전환 국면에 있다. 2023년 적자에서 2024~2025년 흑자로 돌아섰고, 2026년 1분기에는 매출과 영업이익이 크게 도약하며 고부가 제품 믹스 개선의 효과가 수치로 확인됐다. 인터페이스보드의 글로벌 공급 확대와 자회사 실적 회복이 동반되면 이익 체력은 한 단계 높아질 수 있다. 다만 고객 집중도, 양산·퀄테스트 일정의 불확실성, 경쟁 심화, 메모리 사이클 변동성은 균형 있게 고려해야 할 약세 요인이다. 현재 주가는 이익 대비 과거 거래 밴드 상단을 웃도는 수준으로 평가되며, 성장의 실제 입증 속도가 프리미엄의 정당성을 좌우한다. 본 자료는 정보 제공 목적이며 투자의견·목표주가를 제시하지 않는다.",
-   "en": "TSE is a vertically integrated maker of semiconductor test interconnection parts, undergoing a structural shift as its NAND-centric probe card business expands into DRAM and HBM. After a 2023 loss, it returned to profit in 2024-2025, and first-quarter 2026 saw a sharp jump in revenue and operating profit, confirming the benefit of an improving high-value product mix. If a broader global interface board ramp and subsidiary recovery follow, its earnings base could step up further. At the same time, customer concentration, uncertainty over mass-production and qualification timing, intensifying competition and memory-cycle volatility are bearish factors to weigh evenly. The current share price is assessed as sitting above the historical price-to-earnings trading band, so how quickly the growth is actually proven will determine whether the premium is justified. This material is for information only and offers no investment opinion or target price."
+   "ko": "티에스이의 2026년 1분기는 확정 실적만 놓고 봐도 성격이 달라진 분기였다 — 매출 1,506.7억원, 영업이익 419.9억원, 영업이익률 27.9%로, 2025년 연간 영업이익률 11.5%와 2025년 1분기 영업이익 31.2억원 대비 레버리지가 뚜렷하게 나타났다. 이 변화의 배경으로는 HBM과 일반 D램 양산 확대에 따른 프로브카드 공급 증가와 메모리 제조사의 설비 확장이 제시되며, 회사 스스로도 2026년 매출 목표를 전년보다 30~40% 이상 높여 잡았다. 동시에 2025년은 매출과 영업이익이 함께 늘었음에도 영업이익률이 11.5%로 정체하고 지배주주 순이익이 전년 424.8억원에서 382.3억원으로 감소했던 해였고, 그 배경에 인력 충원과 중국 고객 관련 대손상각비가 있었다는 점은 이 사업의 비용 구조를 보여준다. 강세 논리는 D램·HBM 진입에 따른 믹스 개선, 자회사를 통한 수직계열화, 국산화·이원화 수요이며, 약세 논리는 과거 거래 배수대를 웃도는 밸류에이션, 중국 편중과 대손 이력, 퀄 통과와 양산 매출 사이의 시차다. 재무 체력은 2025년 말 부채비율 30.9%, 영업활동현금흐름 485.7억원으로 비교적 안정적이나, 1,000억원 전환사채는 성장 자금과 잠재 희석을 동시에 의미한다. 따라서 다음 확인 지점은 2026년 2분기 이후 분기 마진의 지속성, HBM4·신규 D램 고객의 실제 매출 전환, 증설 자금 집행 속도이며, 이 정보는 투자 판단을 대신하지 않는 정보 제공 목적의 정리다.",
+   "en": "On confirmed numbers alone, TSE's Q1 2026 was a different kind of quarter — revenue of KRW 150.7bn, operating profit of KRW 42.0bn and a 27.9% margin, showing clear leverage against the 11.5% full-year 2025 margin and Q1 2025 operating profit of KRW 3.1bn. The drivers cited include increased probe card supply as HBM and conventional DRAM production expanded, along with memory makers' capacity additions, and the company itself raised its 2026 revenue target by more than 30-40% year over year. At the same time, 2025 was a year in which revenue and operating profit both grew yet the margin stalled at 11.5% and owners' net profit fell to KRW 38.2bn from KRW 42.5bn, with hiring and China-related bad-debt expense behind that — a reminder of this business's cost structure. The bull case rests on mix improvement from DRAM/HBM entry, vertical integration through subsidiaries, and localization and dual-sourcing demand; the bear case on a valuation multiple above the historical trading range, China concentration with a bad-debt track record, and the lag between qualification and volume revenue. Financial footing is relatively steady with a 30.9% debt-to-equity ratio and KRW 48.6bn of operating cash flow in 2025, though the KRW 100bn convertible bond represents both growth funding and potential dilution. The items to verify next are therefore the durability of quarterly margins from Q2 2026, actual revenue conversion from HBM4 and new DRAM customers, and the pace of capacity spending; this write-up is informational and does not substitute for an investment decision."
   }
  },
  "sources": [
-  "https://m.thinkpool.com/compDiscuss/cont/1020750",
-  "https://m.thinkpool.com/stockDiscuss/131290/cont/11861081",
-  "https://view.asiae.co.kr/article/2026012111202168029",
-  "http://www.dailyinvest.kr/news/articleView.html?idxno=70279",
-  "https://www.thelec.kr/news/articleView.html?idxno=51084",
-  "https://www.hanaw.com/download/research/FileServer/WEB/industry/enterprise/2025/09/14/TSE_250915.pdf",
-  "https://file.alphasquare.co.kr/media/pdfs/company-report/_260121%20%ED%8B%B0%EC%97%90%EC%8A%A4%EC%9D%B4_%EC%98%A8%EB%9D%BC%EC%9D%B8%20-%20initiate_%EC%A0%95%ED%99%8D%EC%8B%9D_1353_Online%20report%20_%206_10p_%ED%8B%B0%EC%97%90%EC%8A%A4%EC%9D%B4.pdf",
-  "https://kind.krx.co.kr/external/2026/05/18/000576/20260518001348/10001.htm",
+  "https://comp.fnguide.com/SVO2/ASP/SVD_main.asp?MenuYn=Y&NewMenuID=11&ReportGB=&cID=&gicode=A131290&pGB=1&stkGb=&strResearchYN=",
   "https://m.thinkpool.com/compDiscuss/cont/1024589",
-  "https://comp.fnguide.com/SVO2/asp/SVD_Main.asp?gicode=A131290",
-  "https://stock.pstatic.net/stock-research/company/21/20250225_company_365396000.pdf",
-  "https://v.daum.net/v/20260306074802064",
-  "https://kind.krx.co.kr/common/disclsviewer.do?method=search&acptno=20251114001862&docno=&viewerhost=",
+  "https://alphasquare.co.kr/home/stock-summary?code=131290",
   "https://comp.fnguide.com/SVO2/ASP/SVD_Consensus.asp?pGB=1&gicode=A131290&cID=&MenuYn=Y&ReportGB=&NewMenuID=108&stkGb=701",
+  "https://www.investing.com/equities/tse-co-ltd",
+  "https://www.investing.com/equities/tse-co-ltd-financial-summary",
+  "https://comp.wisereport.co.kr/company/c1080001.aspx?cmp_cd=131290&cn=",
+  "https://kind.krx.co.kr/common/disclsviewer.do?method=search&acptno=20251114001862&docno=&viewerhost=",
+  "https://www.thelec.kr/news/articleView.html?idxno=11268",
   "https://www.thelec.kr/news/articleView.html?idxno=29874",
+  "https://www.thelec.kr/news/articleView.html?idxno=51084",
+  "https://www.sisajournal-e.com/news/articleView.html?idxno=405406",
+  "https://www.thelec.kr/news/articleView.html?idxno=58368",
   "https://m.thinkpool.com/compDiscuss/cont/1016555",
-  "https://www.thelec.kr/news/articleView.html?idxno=32506",
-  "https://www.sisajournal-e.com/news/articleView.html?idxno=405406"
+  "https://www.stocktitan.net/news/TSSI/tss-reports-second-quarter-2026-financial-147zk2cu6yg4.html",
+  "https://kind.krx.co.kr/common/disclsviewer.do?method=search&acptno=20260318000935&docno=&viewerhost=",
+  "https://m.thinkpool.com/compDiscuss/cont/1017493",
+  "https://kr.investing.com/news/transcripts/article-93CH-2049882"
  ],
  "v": 2,
- "model": "claude-opus-4-8",
+ "model": "claude-opus-5",
  "ticker": "131290",
  "name": "티에스이",
  "name_en": "TSE CO.,Ltd",
@@ -223,11 +233,11 @@
   "반도체"
  ],
  "market": "코스닥",
- "reportDate": "2026-06-16",
- "reportTs": "2026-06-16 19:21",
- "dataDate": "20260616",
+ "reportDate": "2026-08-15",
+ "reportTs": "2026-08-15 12:15",
+ "dataDate": "20260814",
  "quant": {
-  "asOf": "2026-06-16",
+  "asOf": "2026-08-15",
   "fs_basis": "연결(CFS) · DART 공시 확정치 · 지배주주 기준 순이익",
   "annual": [
    {
@@ -324,23 +334,23 @@
    }
   ],
   "valuation": {
-   "price": 257000,
-   "mcap": 2.8428,
+   "price": 260000,
+   "mcap": 2.876,
    "shares": 11061429,
    "total_shares": 11061429,
    "wavg_shares": 11060912,
-   "per": 39.1,
+   "per": 39.5,
    "eps": 6576,
-   "pbr": 6.68,
+   "pbr": 6.75,
    "bps": 38498,
    "roe_ttm": 19.2,
    "ttm_window": "2025Q2~2026Q1",
    "ttm_np_owner": 73359264218,
-   "pbr_krx": 7.1,
+   "pbr_krx": 7.35,
    "bps_krx": 35375.0,
    "basis": "PER·EPS·PBR·BPS 모두 자체 산출(네이버·토스와 동일 방식) · 배당은 DART 공시 주당현금배당금(보완:KRX) ÷ 현재가",
    "dps": 450.0,
-   "div": 0.18
+   "div": 0.17
   }
  }
 }
