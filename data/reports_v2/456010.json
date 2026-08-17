@@ -1,230 +1,230 @@
 {
  "title": {
-  "ko": "글로벌 빅테크 양산 진입, 흑자 전환 경로 불확실성 상존",
-  "en": "Big-Tech Mass Supply Secured; Path to Profitability Remains Uncertain"
+  "ko": "PUF 보안칩, 흑자전환 시험대",
+  "en": "PUF Security Chips: A Turnaround Test"
  },
  "lead": {
-  "ko": "국내 유일 VIA PUF 원천기술 보유 보안칩 팹리스 기업 아이씨티케이는 2026년 5월 글로벌 빅테크향 양산 공급에 돌입하며 기술 검증을 넘어 사업화 단계로 진입했으나, 분기 매출 수준 대비 과중한 영업적자 구조가 지속되어 흑자 전환 시점이 핵심 관전 포인트로 부상했다.",
-  "en": "ICTK, Korea's sole holder of VIA PUF core technology for security chips, entered mass-production supply to an undisclosed global Big Tech in May 2026—a landmark commercialization milestone—yet with operating losses running well above the current revenue base, the timing and trajectory of breakeven remain the pivotal variables."
+  "ko": "아이씨티케이는 하드웨어 기반 PUF 보안칩의 글로벌 공급 확대 기대와 여전히 큰 폭의 손실이 공존하는 국면에서 2026년 실적 반등 여부를 시험받고 있다.",
+  "en": "ICTK stands at a juncture where expectations for expanded global supply of hardware-based PUF security chips coexist with continued sizable losses, testing whether a 2026 earnings turnaround will materialize."
  },
  "keypoints": [
   {
-   "ko": "2022년부터 약 4년간 설계·검증 끝에 2026년 5월 글로벌 빅테크향 VIA PUF 보안칩 양산 공급 개시 (고객사·규모는 NDA로 비공개)",
-   "en": "After ~4 years of joint design and validation since 2022, mass-production supply to a global Big Tech launched in May 2026 (customer and volumes undisclosed per NDA)"
+   "ko": "2025년 매출 40.2억원으로 전년 대비 감소했고 영업손실은 88.6억원으로 확대됐다.",
+   "en": "2025 revenue fell year over year to KRW 4.02 billion, while the operating loss widened to KRW 8.86 billion."
   },
   {
-   "ko": "2026년 1분기 매출 약 6.0억 원으로 전년동기 대비 약 46% 증가했으나, 분기 영업손실은 약 30.4억 원으로 확대 추세 지속",
-   "en": "2026Q1 revenue rose approximately 46% YoY to KRW 605 million, while the quarterly operating loss widened further to approximately KRW 3.04 billion"
+   "ko": "2026년 2분기 순손실이 128.1억원으로 급격히 늘어나 영업손실(19.4억원)과 큰 괴리를 보였다.",
+   "en": "Net loss attributable to owners surged to KRW 12.8 billion in 2Q26, far exceeding the KRW 1.94 billion operating loss."
   },
   {
-   "ko": "2026년 하반기 배터리 정품인증칩 'MTB' 출시 예정이며, 캐나다 BTQ테크놀로지와 143억 원 규모 양자보안칩(QCIM) 공동개발 계약 진행 중",
-   "en": "The new MTB battery authentication chip is slated for H2 2026 launch; a KRW 14.3 billion joint development contract with Canada's BTQ Technology for the QCIM quantum security chip is underway"
+   "ko": "하나증권은 2026년 5월 글로벌 빅테크 보안칩 독점 공급 가능성을 근거로 목표주가를 상향 제시했다.",
+   "en": "Hana Securities raised its target price in May 2026, citing the possibility of near-exclusive security chip supply to a global tech company."
   },
   {
-   "ko": "미국 NIST PQC 표준 확정(2024)·한국 PQC 전환 마스터플랜(2035 목표)·과기정통부 시범사업 5개 분야 확대 등 정책 지원이 잠재 수요 형성 배경",
-   "en": "U.S. NIST PQC standard finalized (2024) with a 2035 federal transition mandate, and Korea's expanding PQC pilot programs across five key sectors form the policy backdrop underpinning longer-term structural demand"
+   "ko": "EU의 2027년 스마트폰 배터리 탈부착 의무화 등 정책 변화가 PUF 기술 수요 확대 요인으로 거론된다.",
+   "en": "Policy shifts such as the EU's 2027 mandate for detachable smartphone batteries are cited as demand drivers for PUF technology."
   },
   {
-   "ko": "2024년 IPO로 자기자본 약 430억 원 확충했으나, 지속적 영업적자와 전환사채(CB) 미전환 물량에 따른 순자산 감소·희석 위험 공존",
-   "en": "The 2024 IPO raised approximately KRW 43 billion in equity, but ongoing net losses continue to erode book value, and unconverted convertible bonds introduce potential share dilution"
+   "ko": "전환사채·유상증자에 따른 지분 희석 가능성과 지속되는 영업현금흐름 적자가 재무 부담 요인으로 남아있다.",
+   "en": "Potential equity dilution from convertible bonds and rights offerings, along with continued negative operating cash flow, remain financial burdens."
   }
  ],
  "business": {
-  "ko": "아이씨티케이는 2017년 설립된 팹리스 보안 반도체 기업으로, 반도체 제조 공정에서 VIA 홀의 물리적 편차를 활용해 칩마다 고유한 보안 ID를 생성하는 'VIA PUF' 원천기술을 보유하고 있다. 이 기술은 ISO/IEC 20897 국제표준을 충족하며 글로벌 반도체 얼라이언스(GSA)의 신뢰점(RoT) 보안 분야에서 인정받았고, 회사는 이와 관련해 150개 이상의 국제특허를 등록·출원 중이다. 매출 구조는 보안칩 판매, 솔루션 개발용역, 보안 모듈·디바이스 세 축으로 구성되며, 2026년 1분기 기준 솔루션 개발용역 약 48%, 보안칩 약 43%, 보안 모듈·디바이스 약 8% 비중으로 파악된다. 보안칩은 삼성전자 파운드리, SK키파운드리, 대만 UMC 등에서 웨이퍼를 생산한 뒤 서울 강남 본사 지하 클린룸에서 후공정을 진행하는 독자적 생산 구조를 취하고 있다. 주요 고객은 한국전력(스마트미터기용 G3K 보안칩), LG유플러스(무선공유기·지능형 CCTV·PUF VPN 솔루션), 그리고 NDA로 미공개인 글로벌 빅테크 1곳이다. 현재 제품 포트폴리오에는 PUF+PQC 결합 보안칩 G5Q, 제로트러스트 네트워크 보안 솔루션 qTrustNet, 폐쇄망 저장장치 D-GO가 있으며, 2026년 하반기 배터리 인증칩 MTB와 BTQ테크놀로지 공동개발 양자보안칩 QCIM이 추가될 예정이다. 중장기적으로 PUF IP를 글로벌 팹리스에 라이선스하는 수익 모델 확대도 병행 추진 중이다. 글로벌 경쟁사로는 인피니온, NXP 등이 있으나 이들은 VIA PUF 기술을 보유하지 않으며, PUF 상용화 분야에서는 Synopsys(구 Intrinsic-ID), 대만 eMemory가 경쟁 관계에 있다.",
-  "en": "ICTK, founded in 2017, is a fabless security semiconductor company holding 'VIA PUF' core technology, which generates a unique hardware ID per chip by exploiting physical variation in via-hole formation during fabrication. The technology meets ISO/IEC 20897 international standards and has been recognized by the Global Semiconductor Alliance (GSA) in the Root-of-Trust security domain; the company holds over 150 registered and pending international patents covering this technology. Revenue is divided into three segments: solution development services (~48% of 2026Q1 revenue), security chip sales (~43%), and security modules/devices (~8%). Chips are fabricated at Samsung Foundry, SK Keyfoundry, and Taiwan's UMC, with back-end processing in a proprietary clean room in the company's Seoul headquarters. Key customers include KEPCO (G3K chips for smart meters), LG Uplus (routers, intelligent CCTV, PUF VPN solutions), and an undisclosed global Big Tech company under NDA. The current product portfolio includes the G5Q (PUF+PQC combined security chip), qTrustNet (zero-trust network security), and D-GO (air-gapped storage device), with the MTB battery authentication chip and QCIM quantum security chip (co-developed with BTQ Technology) expected to expand the lineup in H2 2026. Longer-term, the company is pursuing IP licensing revenues by offering PUF IP to global fabless firms. Global competitors include Infineon and NXP—neither of which holds VIA PUF technology—while Synopsys (formerly Intrinsic-ID) and Taiwan's eMemory are the primary competing players in the broader PUF commercialization space."
+  "ko": "아이씨티케이는 물리적 복제방지기술(PUF)을 세계 최초로 상용화한 보안 시스템 반도체 설계 전문기업이다. 회사는 VIA(Vertical Interconnect Access) PUF 기술과 양자내성암호(PQC) 기술을 결합한 보안칩을 개발·공급하며, 통신용 USIM·eSIM, 금융 IC칩, IoT 기기용 보안솔루션을 주력 제품군으로 한다. 150개 이상의 특허를 보유하고 있으며 PUF IP, 보안칩, 보안 모듈·장비, 보안 소프트웨어 솔루션까지 아우르는 IoT 보안 버티컬을 구축했다. 국내에서는 LG유플러스의 공유기·VPN·USIM/eSIM 보안칩을 독점적으로 공급하고 있으며, 한전KDN과 협력해 지능형 전력 계량 시스템에 2000만호 이상 규모로 PUF칩을 공급한 레퍼런스를 보유하고 있다. 2026년 3월부터는 미국 국립표준기술연구소(NIST)의 PQC 정식 표준을 탑재한 i511DN 보안칩 양산을 시작했으며, 양자보안칩 'G5Q', 제로트러스트 네트워크 솔루션 'qTrustNet', 망분리 저장장치 'D-GO' 등으로 제품 라인업을 확장하고 있다. 캐나다 양자기술 기업 BTQ테크놀로지와는 콜드월렛 보안 솔루션 공동 개발 업무협약을 체결하는 등 블록체인·디지털자산 보안 분야로도 사업 영역을 넓히고 있다. 최대주주는 이정원 외 특수관계인(지분 27.7%)이며 유티씨인베스트먼트 외(9.15%)가 주요 주주로 이름을 올리고 있다. 경쟁 구도 측면에서는 국내에서 유사한 하드웨어 기반 PUF 칩을 양산하는 업체가 드물어 독자적 포지션을 형성하고 있다는 평가가 나온다.",
+  "en": "ICTK is a security system semiconductor design specialist that was the first in the world to commercialize Physically Unclonable Function (PUF) technology. The company develops and supplies security chips combining VIA (Vertical Interconnect Access) PUF technology with post-quantum cryptography (PQC), with core products spanning telecom USIM/eSIM, financial IC chips, and IoT device security solutions. It holds more than 150 patents and has built out an IoT security vertical spanning PUF IP, security chips, security modules and equipment, and security software solutions. Domestically, it exclusively supplies security chips for LG Uplus routers, VPNs, and USIM/eSIM products, and has a reference of supplying PUF chips for more than 20 million smart electricity meters in cooperation with KEPCO KDN. Since March 2026, the company began mass production of the i511DN security chip incorporating the formal NIST PQC standard, while expanding its product lineup with the quantum security chip 'G5Q,' the zero-trust network solution 'qTrustNet,' and the air-gapped storage device 'D-GO.' It has also signed an MOU with Canadian quantum technology firm BTQ Technologies for joint development of cold wallet security solutions, extending into blockchain and digital asset security. The largest shareholder is Lee Jung-won and related parties (27.7% stake), with UTC Investment and others (9.15%) as major shareholders. In terms of competitive positioning, few domestic peers mass-produce comparable hardware-based PUF chips, giving the company a relatively distinct position."
  },
  "earnings": {
-  "ko": "2023년 연간 매출은 약 61.9억 원, 영업손실 -23.6억 원(OPM -38.2%), 지배주주 순손실 -90.3억 원을 기록했으며, 자기자본은 약 94.1억 원, 부채비율 10.7% 수준이었다. 2024년에는 매출이 약 66.8억 원으로 소폭 증가했으나, 영업손실이 -66.9억 원(OPM -100.0%)으로 전년 대비 두 배 이상 확대됐다. 2024년 5월 IPO 이후 연구인력 확충과 R&D 비용 증가가 주된 원인으로 판단된다. 다만 IPO로 대규모 자금이 유입되며 자기자본이 약 430.1억 원으로 급증했고 부채비율도 6.5%로 하락했으며, 순손실은 이자수익 등 영업외 수익으로 -58.2억 원에 그쳐 영업손실보다 축소됐다. 영업현금흐름은 2024년 기준 -59.5억 원으로 사업 자체의 현금 유출이 지속되고 있다. 분기별로는 2025년 1분기 매출 약 4.1억 원, 2분기 약 8.3억 원으로 반등 후 3분기 약 4.0억 원으로 재차 감소하는 등 분기 내 변동성이 크다. 영업손실은 분기당 -26억~-29억 원 수준이었으며, 2026년 1분기에는 -30.4억 원으로 소폭 확대됐다. 한편 2026년 1분기 지배주주 순손실은 약 -11.5억 원으로 전년동기(-21.6억 원) 대비 큰 폭으로 개선됐는데, 이는 전환사채 평가 손익 등 영업외 항목 변화에 기인하는 것으로 추정된다. 2026년 1분기 매출은 전년동기 대비 약 46% 증가해 방향성은 긍정적이나, 절대 규모가 수십억 원대의 분기 고정비를 충당하기에는 여전히 부족한 수준이다.",
-  "en": "In FY2023, ICTK posted revenue of approximately KRW 6.19 billion, an operating loss of KRW -2.36 billion (OPM -38.2%), and a controlling shareholder net loss of KRW -9.03 billion, with equity of KRW 9.41 billion and a debt ratio of 10.7%. In FY2024, revenue edged slightly higher to approximately KRW 6.68 billion, while the operating loss more than doubled to KRW -6.69 billion (OPM -100.0%), driven by a post-IPO ramp-up in R&D personnel and expenses. The May 2024 IPO significantly strengthened the balance sheet, with equity rising to approximately KRW 43.0 billion and the debt ratio falling to 6.5%; the net loss narrowed to KRW -5.82 billion from the operating loss level, as interest income from IPO proceeds offset part of the shortfall. Operating cash flow stood at KRW -5.95 billion in FY2024, confirming that cash consumption from operations remains substantial. On a quarterly basis, revenues have been highly volatile: 2025Q1 approximately KRW 414 million, 2025Q2 approximately KRW 830 million (sequential rebound), 2025Q3 approximately KRW 399 million (decline), and 2026Q1 approximately KRW 605 million. Operating losses remained in the KRW -2.6 to -2.9 billion range per quarter through 2025, widening slightly to KRW -3.04 billion in 2026Q1. The controlling shareholder net loss in 2026Q1 of approximately KRW -1.15 billion improved substantially from KRW -2.16 billion in 2025Q1, likely reflecting changes in non-operating items such as convertible bond fair-value adjustments. The approximately 46% year-over-year revenue growth in 2026Q1 is directionally encouraging, but the absolute quarterly revenue level remains far below the multi-billion won quarterly fixed-cost base."
+  "ko": "2025년 연결 매출액은 40.2억원으로 전년(66.8억원) 대비 크게 감소했고, 영업손실은 88.6억원으로 전년 66.9억원 대비 적자 폭이 확대됐으며 영업이익률은 -220.5%를 기록했다. 순손실은 66.8억원으로 2024년 58.2억원, 2023년 90.3억원과 함께 3년 연속 두 자릿수 억원대 적자를 이어가고 있다. 분기별로 보면 변동성이 뚜렷한데, 2025년 3분기 매출은 3.99억원까지 줄며 영업손실이 28.9억원으로 확대됐다가, 4분기에는 매출이 23.8억원으로 급증하며 영업손실이 7.66억원으로 축소되고 순이익은 22.2억원 흑자를 기록했다. 다만 2026년 1분기 들어 매출이 다시 6.05억원으로 줄고 영업손실이 30.4억원으로 재차 확대되는 등 분기별 실적 변동 폭이 크다. 2026년 2분기에는 매출이 17.2억원으로 회복됐음에도 영업손실은 19.4억원, 순손실은 128.1억원에 달해 영업손실 대비 순손실 규모가 크게 벌어졌다. 이 같은 영업손익과 순손익 간 괴리는 회사가 과거 전환사채 관련 파생상품거래 손실 발생을 공시한 바 있는 점을 고려할 때, 전환사채·신주인수권 등 파생상품 평가손익과 같은 비영업적 요인이 순손익에 영향을 미쳤을 가능성을 시사한다. 영업현금흐름은 2023년부터 2025년까지 매년 마이너스(-11.8억원, -59.5억원, -29.4억원)를 기록해 영업활동 자체의 현금창출력은 아직 확보되지 않은 상태다. 반면 자본총계는 2023년 94.1억원에서 2024년 430.1억원, 2025년 439.5억원으로 크게 늘었는데, 이는 지속된 손실에도 불구하고 유상증자 등 외부 자금조달을 통해 재무구조를 보강해온 결과로 해석된다.",
+  "en": "Consolidated 2025 revenue fell sharply to KRW 4.02 billion from KRW 6.68 billion in 2024, while the operating loss widened to KRW 8.86 billion from KRW 6.69 billion, producing an operating margin of -220.5%. The net loss stood at KRW 6.68 billion, extending a third consecutive year of double-digit-hundred-million-won losses following KRW 5.82 billion in 2024 and KRW 9.03 billion in 2023. Quarterly results show pronounced volatility: revenue shrank to KRW 399 million in 3Q25 with the operating loss widening to KRW 2.89 billion, before revenue jumped to KRW 2.38 billion in 4Q25, narrowing the operating loss to KRW 766 million and producing a net profit of KRW 2.22 billion. However, 1Q26 revenue fell back to KRW 605 million with the operating loss widening again to KRW 3.04 billion, underscoring large quarter-to-quarter swings. In 2Q26, revenue recovered to KRW 1.72 billion, yet the operating loss was KRW 1.94 billion while the net loss ballooned to KRW 12.8 billion, a substantial gap versus the operating figure. Given the company's past disclosure of derivative transaction losses, this divergence between operating and net results suggests non-operating items such as fair value changes on convertible bond or warrant-related derivatives may have influenced net income. Operating cash flow was negative in each of 2023 through 2025 (-KRW 1.18 billion, -KRW 5.95 billion, -KRW 2.94 billion), indicating the core business has not yet achieved self-sustaining cash generation. In contrast, total equity rose sharply from KRW 9.41 billion in 2023 to KRW 43.01 billion in 2024 and KRW 43.95 billion in 2025, reflecting reliance on external capital raises such as rights offerings to reinforce the balance sheet despite ongoing losses."
  },
  "industry": {
-  "ko": "글로벌 임베디드 보안 시장은 연평균 5.7% 성장이 전망되는 안정적 시장이나, PUF와 PQC를 결합한 하드웨어 기반 양자보안 세그먼트는 훨씬 빠른 성장이 기대된다. 미국 NIST는 2024년 ML-KEM(FIPS 203)·ML-DSA(FIPS 204)를 포함한 PQC 표준을 확정했고, 연방정부 전체 시스템의 2035년 전환을 의무화했다. 한국 정부도 2023년 PQC 전환 마스터플랜을 발표했으며, 2026년 현재 의료·에너지·행정·통신·국방 등 5개 분야로 PQC 시범사업을 확대하고 있다. 자율형 AI 공격 기술(Mythos 등)의 고도화로 소프트웨어 중심 보안의 한계가 부각되면서, 반도체 레벨에서 신뢰를 구현하는 하드웨어 보안 수요가 빠르게 확산되고 있다. IoT·엣지 디바이스·피지컬 AI(로봇·드론·자율주행) 생태계 확대는 PUF 보안칩의 잠재 수요 시장을 카드·USIM 중심에서 훨씬 광범위한 영역으로 넓히고 있다. 다만 PQC-PUF 결합 칩은 시장에서 아직 생소하며, KT·SKT가 QRNG·PQC·PUF를 결합한 독자 양자보안 원칩(Q-HSM) 개발에 나서는 등 국내외 경쟁이 가시화되고 있다. 아이씨티케이는 VIA PUF 기술 선점 기업으로 글로벌 보안칩 시장에서 차별적 포지션을 보유하고 있으나, 기술 생태계 성숙 속도에 따라 사업 성과의 실현 시점이 크게 달라질 수 있다.",
-  "en": "The global embedded security market is projected to grow at a CAGR of approximately 5.7%, but the hardware-based quantum security segment combining PUF and PQC is expected to expand far more rapidly. The U.S. NIST finalized PQC standards (ML-KEM and ML-DSA) in 2024 and mandated a 2035 deadline for federal system transitions. Korea's government announced its PQC conversion master plan in 2023, and in 2026 expanded its PQC pilot program to five key sectors: healthcare, energy, public administration, telecommunications, and defense. The proliferation of sophisticated autonomous AI attack tools (such as Mythos) is highlighting the limitations of software-only security and driving growing adoption of chip-level hardware trust anchors. The expanding IoT, edge-device, and Physical AI (robotics, drones, autonomous vehicles) ecosystem is broadening the addressable market for PUF security chips well beyond the traditional card and USIM segments. However, PQC-PUF combined chips remain a nascent category, and domestic telecom operators KT and SKT are developing proprietary quantum security chips (Q-HSM) integrating QRNG, PQC, and PUF—intensifying competition. ICTK holds a differentiated first-mover position in VIA PUF technology, but the pace of technology ecosystem maturation will significantly influence the timing of business outcome realization."
+  "ko": "글로벌 보안반도체·양자보안 산업은 양자컴퓨팅 기술 발전에 대한 대응 필요성이 커지면서 관심이 확대되고 있다. 관련 업계에서는 양자암호 시장이 연평균 38.3% 성장해 2034년까지 약 200억 달러 규모에 이를 것이라는 전망이 제기된다. 미국 국립표준기술연구소(NIST)의 PQC 표준 채택과 유럽연합의 양자내성암호 전환 로드맵 등 주요국의 정책 변화가 하드웨어 기반 보안 기술 수요를 뒷받침하는 요인으로 거론된다. 특히 로봇·드론 등 피지컬 AI(Physical AI) 확산에 따라 기기 인증·복제방지 수요가 새로운 성장 축으로 주목받고 있다. 경쟁 구도 면에서 하나증권은 아이씨티케이가 국내 유일의 VIA-PUF 칩 제조사로서 경쟁우위를 확보하고 있다고 평가했으며, 유럽계 보안칩 업체들의 물량을 흡수하며 특정 글로벌 빅테크 고객사 내 점유율이 80~90%에 이를 수 있다는 분석도 나왔다. 다만 국내 양자·보안 기업들은 그동안 내수 의존도가 높아 밸류에이션 확장에 제한을 받아온 측면이 있으며, 아이씨티케이 역시 아직 매출 규모가 크지 않은 초기 상업화 단계에 있다. 임베디드 보안 시장 자체는 연평균 5.7% 수준의 완만한 성장이 예상되는 가운데, 생성형 AI 확산에 따른 딥페이크 위협 대응 인증 솔루션 수요가 새로운 수요처로 언급되고 있다.",
+  "en": "The global security semiconductor and quantum security industry is drawing growing attention amid the need to prepare for advances in quantum computing. Industry sources project the quantum cryptography market to grow at a 38.3% CAGR to roughly USD 20 billion by 2034. Policy shifts such as NIST's adoption of PQC standards and the EU's post-quantum cryptography transition roadmap are cited as factors supporting demand for hardware-based security technology. In particular, the proliferation of Physical AI such as robots and drones is drawing attention as a new growth driver for device authentication and anti-cloning demand. On the competitive landscape, Hana Securities assessed that ICTK holds a competitive edge as the sole domestic maker of VIA-PUF chips, and some analysis suggests the company could capture 80-90% share within a specific global tech customer by absorbing volume previously supplied by European security chip makers. That said, domestic quantum and security firms have historically faced constraints on valuation expansion due to heavy reliance on the domestic market, and ICTK itself remains in an early commercialization stage with still-modest revenue scale. The broader embedded security market is expected to grow at a more modest pace of around 5.7% annually, while demand for authentication solutions addressing deepfake threats amid generative AI proliferation is cited as an emerging demand source."
  },
  "outlook": {
-  "ko": "아이씨티케이는 2026년을 '매출 확대의 원년'으로 선언하며 복수의 성장 촉매를 동시에 추진하고 있다. 2026년 상반기 이미 글로벌 빅테크향 양산 공급이 개시됐으며, 하반기에는 해당 고객사 내 적용 범위 확대와 함께 AI·IoT 플랫폼 기업으로의 수평적 고객 다변화를 계획하고 있다. 2026년 하반기에는 차세대 MTB(Mobile Trust Block) 배터리 인증칩을 출시해 전기차·ESS 배터리 교체 시장에 공급하는 신사업을 본격화할 예정이다. 캐나다 BTQ테크놀로지와는 143억 원 규모의 QCIM 양자보안칩 공동개발이 진행 중이며, 국방·AI·핀테크 등 고보안 시장을 타깃으로 하고 있다. LG유플러스와는 PQC·PUF 기반 통합 KMS(암호키 관리 시스템) 솔루션을 공동 개발 중으로, 양산 및 상용화 성공 시 국내 통신사 보안 인프라 전반으로의 매출 기반 확대가 기대된다. 일본 IT 위크 2026(2026년 4월) 참가 및 KTNF와의 기술협력 협약(2026년 4월) 등 아시아 시장 진출 노력도 병행 중이다. 하나증권은 2026년 매출액 232억 원, 영업이익 58억 원으로 연간 흑자 전환을 전망했으나(2026년 5월 리포트 기준), 이는 증권사 추정치이며 확정치가 아니다. 빅테크 공급 실물 규모, MTB 수주 성과, IP 라이선스 계약 체결 여부가 전망 실현의 핵심 변수다.",
-  "en": "ICTK has declared 2026 the 'year of revenue expansion,' simultaneously advancing multiple growth catalysts. Mass-production supply to a global Big Tech was initiated in H1 2026, with the company planning to expand within that customer base while broadening to AI and IoT platform companies in H2. The new MTB (Mobile Trust Block) battery authentication chip is slated for an H2 2026 launch, targeting the battery replacement market in EVs and energy storage systems. A joint development contract worth KRW 14.3 billion for the QCIM quantum security chip with Canada's BTQ Technology is in progress, targeting high-security markets including defense, AI, and fintech. A joint PQC-PUF-based integrated KMS (Key Management System) development effort with LG Uplus is also ongoing; commercial deployment could expand the domestic telco revenue base. Asian market expansion efforts include participation in Japan IT Week 2026 (April 2026) and a technology cooperation agreement with KTNF (April 2026). Hana Securities projected 2026 full-year revenue of KRW 23.2 billion and operating profit of KRW 5.8 billion in its May 2026 report—implying a breakeven transition—though this is an analyst estimate rather than confirmed guidance. Actual Big Tech supply volumes, MTB order wins, and the pace of IP licensing contract execution are the pivotal variables determining whether these projections materialize."
+  "ko": "증권가에서는 2026년을 실적 반등의 분기점으로 보는 시각이 나온다. 하나증권은 2026년 연결 매출액을 약 241억원(전년 대비 약 289% 증가), 영업이익 71억원으로 흑자전환을 예상했으며, 양자보안 시장 확대 속 국내외 수주 확대에 따른 고성장을 근거로 제시했다. NH투자증권도 2026년 매출액 237억원, 영업이익 52억원(영업이익률 21.9%)을 추정하며 마진율이 높은 IP 라이선스 수수료 매출 비중 확대를 흑자전환의 배경으로 꼽았다. 회사는 2027년 EU의 스마트폰 배터리 탈부착 의무화 정책에 따라 배터리 정품 인증에 PUF 기술이 활용될 수 있다는 점을 중장기 기회 요인으로 언급하고 있다. 국내 통신사와는 PQC·PUF 기반 통합 키관리시스템(KMS) 솔루션을 공동 개발하며 양자보안 상용화 영역을 모바일 시장으로 확장하고 있다고 밝혔다. BTQ테크놀로지와는 143억원 규모 양자보안칩 개발 용역 계약(계약기간 2029년 11월까지)을 체결하고 72억원 규모의 제3자배정 유상증자를 진행한 바 있으며, 콜드월렛 보안 솔루션 공동 개발을 위한 업무협약도 체결했다. 다만 이러한 성장 전망은 대부분 증권사 추정치에 기반한 것으로, 분기별 실적의 큰 변동성을 고려할 때 실제 매출 인식 시기와 규모는 프로젝트 진행 상황에 따라 달라질 수 있다.",
+  "en": "Some brokerages view 2026 as a potential inflection point for earnings. Hana Securities forecast 2026 consolidated revenue of roughly KRW 24.1 billion (up about 289% year over year) with an operating profit of KRW 7.1 billion, citing high growth from expanding domestic and overseas orders amid a growing quantum security market. NH Investment & Securities separately estimated 2026 revenue of KRW 23.7 billion and operating profit of KRW 5.2 billion (a 21.9% operating margin), attributing the swing to profit to a rising mix of high-margin IP licensing fee revenue. The company has cited the EU's 2027 mandate for detachable smartphone batteries as a medium-to-long-term opportunity, noting PUF technology could be used for battery authenticity verification. It has stated it is jointly developing an integrated PQC/PUF-based key management system (KMS) solution with a domestic telecom carrier, expanding quantum security commercialization into the mobile market. It has signed a KRW 14.3 billion quantum security chip development services contract with BTQ Technologies (running through November 2029), conducted a related KRW 7.2 billion third-party allotment capital raise, and signed an MOU for joint development of cold wallet security solutions. However, these growth projections are largely based on brokerage estimates, and given the substantial quarter-to-quarter volatility in actual results, the timing and scale of revenue recognition may differ depending on project progress."
  },
  "valuation_comment": {
-  "ko": "아이씨티케이는 적자가 지속되어 이익 기반 밸류에이션(PER)의 산출 근거가 없으며, 순자산 대비 상당한 프리미엄이 형성된 구간에서 거래되고 있다. 이 프리미엄은 VIA PUF 원천기술의 미래 상용화 가치와 글로벌 빅테크 양산 공급 레퍼런스에 대한 시장의 기대를 주로 반영하는 구조다. 배당은 없으며, 지속된 순손실 누적으로 주당순자산(BPS)이 감소하는 구조여서 주가가 일정 수준을 유지하더라도 순자산 대비 프리미엄 배수는 시간이 지남에 따라 확대되는 메커니즘이 작동한다. 하나증권은 대만 eMemory가 NeoFuse 개발 이후 PBR이 3배에서 60배까지 급등한 사례를 ICTK의 잠재 성장 경로로 제시했으나, 이는 시나리오 비교이며 실현 여부는 실적 궤도에 달려 있다. 현재 밸류에이션 수준은 시장이 조기 흑자 전환 및 IP 라이선스 사업 본격화를 일정 부분 선반영하고 있다는 해석과, 빅테크 레퍼런스 확보라는 사건 자체의 옵션 가치를 반영한다는 해석이 공존한다.",
-  "en": "With losses ongoing, there is no earnings basis for a PER calculation, and the stock trades at a significant premium to book value. This premium primarily reflects market expectations around future commercialization of VIA PUF core technology and the newly established global Big Tech supply reference. The company pays no dividend, and as accumulated net losses continue to reduce book value per share (BPS), the premium multiple tends to expand mechanically over time even if the share price remains flat. Hana Securities has cited Taiwan's eMemory—whose PBR surged from approximately 3x to 60x following NeoFuse commercialization—as a potential analogous trajectory for ICTK; however, this remains a scenario comparison, and outcomes depend on the earnings path actually taken. At current valuation levels, two interpretations coexist: that the market has already priced in a meaningful probability of early profitability and IP licensing scale-up, and that the Big Tech supply reference itself carries standalone optionality value independent of near-term earnings delivery."
+  "ko": "아이씨티케이는 순자산 대비 상당한 프리미엄이 반영된 배수에서 거래되는 종목군에 속한다. 이는 회사가 아직 영업 흑자를 내지 못한 상태에서, 향후 흑자전환과 매출 고성장에 대한 기대가 주가에 상당 부분 선반영되어 있음을 시사한다. 배당은 최근 회계연도까지 지급 이력이 없어 배당수익률 관점에서 접근하기 어려운 종목이며, 이는 이익이 아직 안정적으로 창출되지 않는 성장 초기 단계 기업에서 흔히 나타나는 특징이다. 제공된 주당순자산(BPS)과 비교할 때 현재 주가 수준은 자산가치 대비 큰 폭의 괴리를 보이고 있어, 실적 개선 속도와 시장 기대치 간의 간극이 이 종목의 밸류에이션을 결정짓는 핵심 변수로 남아 있다. 증권사들이 제시한 목표주가나 추정 실적 기반 밸류에이션은 모두 미래 흑자전환을 전제로 한 것으로, 실제 실적이 이를 따라가는지 여부가 향후 배수 조정의 방향을 좌우할 것으로 보인다.",
+  "en": "ICTK trades within a group of stocks carrying a substantial premium relative to net asset value, suggesting that expectations for a future swing to profitability and high revenue growth are already substantially priced in even though the company has not yet achieved an operating profit. With no dividend payment history through the most recent fiscal year, the stock is difficult to assess from a dividend yield perspective, a characteristic common to early-stage growth companies whose earnings have not yet stabilized. Compared with the disclosed book value per share, the current price level shows a wide gap versus asset value, meaning the divergence between the pace of earnings improvement and market expectations remains the key variable shaping this stock's valuation. Brokerage target prices and estimate-based valuations are all premised on a future turnaround to profitability, and whether actual results keep pace will likely determine the direction of any future multiple adjustment."
  },
  "bull": [
   {
    "title": {
-    "ko": "글로벌 빅테크 양산 공급 레퍼런스 확보 — 기술 신뢰성 입증 완료",
-    "en": "Global Big-Tech Mass Production Reference — Technical Credibility Validated"
+    "ko": "글로벌 빅테크향 공급 확대 기대",
+    "en": "Expectations for Expanded Global Tech Supply"
    },
    "body": {
-    "ko": "2022년부터 약 4년에 걸친 설계·검증 과정을 마친 VIA PUF 보안칩이 2026년 5월 글로벌 빅테크향 양산 공급에 진입했다. 하나증권에 따르면 기존 유럽 보안칩 업체 물량을 대거 대체하며 해당 고객 내 점유율이 80~90%에 달할 것으로 추정된다. 보안 반도체 특성상 한 번 채택된 기술이 후속 플랫폼으로 확대되는 경향이 강하며, 이 레퍼런스는 북미·유럽·아시아 신규 고객 확보 과정에서 중요한 진입 장벽으로 작용할 수 있다.",
-    "en": "VIA PUF security chips completed approximately four years of joint design and validation before entering mass-production supply to a global Big Tech in May 2026. Hana Securities estimates that ICTK has displaced legacy European security chip suppliers, securing an 80–90% share within this customer relationship. Given security semiconductors' strong tendency to expand adopted technologies across successor product platforms, this reference has the potential to serve as a meaningful moat when pursuing new customers across North America, Europe, and Asia."
+    "ko": "하나증권은 아이씨티케이가 복제 불가능한 VIA PUF 기술력을 인정받아 특정 글로벌 빅테크 기업에 보안칩을 사실상 독점 공급하게 됐다고 평가하며, 유럽 보안칩 업체 물량을 흡수하며 해당 고객사 내 점유율이 80~90%에 달할 수 있다고 분석했다. 이 같은 레퍼런스가 확보될 경우 로봇·드론 등 피지컬 AI 영역으로 고객 기반이 확장될 가능성이 있다. 다만 이는 특정 증권사의 평가이며 계약 세부 규모나 시기는 공식적으로 확인되지 않았다.",
+    "en": "Hana Securities assessed that ICTK's unclonable VIA PUF technology has earned it near-exclusive security chip supply to a specific global tech company, absorbing volume previously held by European chip makers to potentially reach an 80-90% share within that customer. Securing such a reference could open the door to expanding into Physical AI areas like robotics and drones. However, this is one brokerage's assessment, and the specific contract scale and timing have not been officially confirmed."
    }
   },
   {
    "title": {
-    "ko": "양자보안 정책 드라이버 — 미국·한국 PQC 의무화 로드맵",
-    "en": "Quantum Security Policy Tailwind — U.S. and Korean PQC Transition Mandates"
+    "ko": "정책 변화에 따른 PUF 수요 확대",
+    "en": "Policy-Driven PUF Demand Expansion"
    },
    "body": {
-    "ko": "미국 NIST가 2024년 PQC 표준을 확정하고 연방정부 2035년 전환 시한을 명시했으며, 한국 과기정통부도 2026년 PQC 시범사업을 5개 핵심 분야로 확대했다. 이러한 규제 드라이버는 하드웨어 기반 양자보안칩 수요의 예측 가능성을 높이는 구조적 요인이다. 아이씨티케이는 PUF와 PQC를 하나의 칩에 결합한 국내 유일 기업으로, 정책 의무화가 실질 조달로 전환될 경우 직접 수혜 위치에 있다.",
-    "en": "The U.S. NIST finalized PQC standards in 2024 with a 2035 federal conversion deadline, while Korea's Ministry of Science and ICT expanded its PQC pilot to five key sectors in 2026. These regulatory drivers structurally improve the predictability of demand for hardware-based quantum security chips. As the only domestic company integrating both PUF and PQC within a single chip, ICTK is positioned as a direct beneficiary if mandates translate into procurement."
+    "ko": "미국 NIST의 PQC 표준 채택과 유럽연합의 양자내성암호 전환 로드맵 등 각국 정부의 정책 변화가 하드웨어 기반 보안 기술에 대한 수요를 뒷받침하고 있다. 특히 2027년 EU의 스마트폰 배터리 탈부착 의무화에 따른 배터리 정품 인증 수요가 새로운 기회 요인으로 거론된다. 이러한 규제 환경 변화는 회사의 매출 기반을 다변화할 잠재력을 지닌다.",
+    "en": "Policy shifts including NIST's PQC standard adoption and the EU's post-quantum cryptography transition roadmap are underpinning demand for hardware-based security technology. In particular, battery authenticity verification demand stemming from the EU's 2027 mandate for detachable smartphone batteries is cited as a new opportunity. Such regulatory changes carry the potential to diversify the company's revenue base."
    }
   },
   {
    "title": {
-    "ko": "IP 라이선스 모델 — 80% 이상 고마진 수익원 다변화 잠재력",
-    "en": "IP Licensing Model — High-Margin Revenue Diversification Potential"
+    "ko": "확보된 국내 공공·통신 레퍼런스",
+    "en": "Established Domestic Public and Telecom References"
    },
    "body": {
-    "ko": "아이씨티케이는 칩 판매 외에 PUF IP를 글로벌 팹리스에 라이선스하는 수익 모델을 추진 중이며, IP 라이선스 수수료의 마진율은 80% 이상으로 알려져 있다. 150개 이상의 국제특허를 보유하고 있으며, 캐나다 BTQ테크놀로지와의 143억 원 규모 QCIM 공동개발 계약은 기술 수출 모델의 초기 사례로 해석될 수 있다. 대만 eMemory가 IP 라이선스 모델 전환으로 고수익 기업으로 성장한 전례가 있어, 유사한 수익 구조 전환 가능성이 주목된다.",
-    "en": "Beyond chip sales, ICTK is pursuing IP licensing revenues by offering PUF IP to global fabless companies, with IP royalty margins reportedly exceeding 80%. The company holds over 150 international patents, and the KRW 14.3 billion QCIM joint development contract with BTQ Technology can be interpreted as an early instance of this technology export model. Taiwan's eMemory offers a precedent for this high-margin IP licensing transition, making a similar structural revenue shift an observed area of interest."
+    "ko": "아이씨티케이는 한전KDN과 협력해 2000만호 이상 규모의 지능형 전력 계량 시스템에 PUF칩을 공급했고, LG유플러스의 공유기·VPN·USIM/eSIM 보안칩을 독점 공급하는 등 국내 최고 수준의 상용화 레퍼런스를 보유하고 있다. 이러한 레퍼런스는 해외 통신사 및 관공서 시장 진출 시 신뢰도를 뒷받침하는 요소로 활용될 수 있다.",
+    "en": "ICTK has supplied PUF chips for smart electricity metering systems covering more than 20 million households in cooperation with KEPCO KDN, and exclusively supplies security chips for LG Uplus routers, VPNs, and USIM/eSIM products, giving it a leading domestic commercialization track record. Such references could support credibility when entering overseas telecom and government markets."
    }
   }
  ],
  "bear": [
   {
    "title": {
-    "ko": "매출 대비 과중한 영업 적자 — 흑자 전환 시점 불투명",
-    "en": "Operating Losses Far Exceed Revenue — Breakeven Timeline Unclear"
+    "ko": "여전히 작은 매출 기반과 변동성",
+    "en": "Still-Small Revenue Base and Volatility"
    },
    "body": {
-    "ko": "2026년 1분기 분기 매출은 약 6.0억 원인 반면 영업손실은 약 30.4억 원으로, 영업비용이 매출의 다섯 배 이상이다. 2024년 연간 영업현금흐름이 -59.5억 원에 달하는 등 현금 소진이 지속되고 있으며, 빅테크향 공급이 하반기에 확대되더라도 손익분기점을 넘어설 만큼 빠른 매출 성장이 실현될지는 불확실하다. 실적 지연 시 추가 자금 조달 필요성이 커지며 기존 주주의 지분 희석 리스크도 함께 증가한다.",
-    "en": "In 2026Q1, quarterly revenue of approximately KRW 605 million was dwarfed by an operating loss of approximately KRW 3.04 billion—more than five times the revenue base. With FY2024 operating cash flow at KRW -5.95 billion, cash consumption remains substantial. Even as Big Tech supply ramps in H2, whether revenues grow quickly enough to reach breakeven is uncertain; any delay intensifies cash depletion and raises the prospect of additional capital raises that would dilute existing shareholders."
+    "ko": "2025년 연결 매출액은 40.2억원에 그쳤고, 분기별로도 3.99억원에서 23.8억원까지 6배 가까이 오르내리는 등 매출 기반이 아직 작고 변동성이 크다. 향후 증권사 추정치만큼의 고성장이 실현되지 않을 경우 현재 형성된 성장 기대와 실제 실적 간 괴리가 부각될 수 있다.",
+    "en": "Consolidated 2025 revenue was only KRW 4.02 billion, and quarterly figures swung nearly sixfold between KRW 399 million and KRW 2.38 billion, indicating the revenue base remains small and volatile. If the high growth embedded in brokerage estimates fails to materialize, the gap between current growth expectations and actual results could become more pronounced."
    }
   },
   {
    "title": {
-    "ko": "고객 집중 및 빅테크 공급 불투명성 — 규모·지속성 외부 검증 불가",
-    "en": "Customer Concentration and Big-Tech Opacity — Volume and Continuity Unverifiable"
+    "ko": "지속되는 순손실과 자금조달 필요성",
+    "en": "Continued Net Losses and Financing Needs"
    },
    "body": {
-    "ko": "주요 내수 고객은 한국전력과 LG유플러스로 편중되어 있으며, LG유플러스의 경우 해킹 사고 및 정부 조사로 공급 일정이 지연된 전례가 있다. 글로벌 빅테크향 공급은 NDA로 고객사명·규모·계약 기간이 공개되지 않아 외부에서 공급 지속성이나 단가를 검증할 수 없다. 하나증권 리포트에 따르면 칩 공급단가가 계약상 단계적으로 인하되는 구조여서 물량 확대에도 불구하고 장기 수익성에 부담으로 작용할 수 있다.",
-    "en": "Key domestic customers remain heavily concentrated in KEPCO and LG Uplus; the latter's hacking incident and ensuing government investigation had previously caused supply schedule delays. The global Big Tech relationship is governed by NDA, leaving customer identity, volumes, and contract duration unverifiable by external observers. Per Hana Securities, contract pricing is structured with step-down adjustments over time, which could constrain long-term profitability even as volumes scale."
+    "ko": "2023년부터 2025년까지 3년 연속 매년 수십억원대 순손실을 기록했고, 영업현금흐름도 매년 마이너스를 유지하고 있다. 이 기간 자본총계는 유상증자 등을 통해 늘어났는데, 향후에도 손실이 지속될 경우 추가적인 외부 자금조달이나 지분 희석이 필요할 수 있다.",
+    "en": "The company posted net losses in the billions of won for three consecutive years from 2023 to 2025, and operating cash flow has remained negative every year. Total equity grew during this period partly through capital raises, and if losses continue, further external financing or equity dilution could become necessary."
    }
   },
   {
    "title": {
-    "ko": "희석·재무 리스크 — 전환사채와 누적 적자에 따른 순자산 감소",
-    "en": "Dilution and Financial Risk — Convertible Bonds and Book Value Erosion"
+    "ko": "영업손익과 순손익 간 큰 괴리",
+    "en": "Large Gap Between Operating and Net Results"
    },
    "body": {
-    "ko": "2025년 12월 기준 제5회 전환사채(CB)의 전환가액이 16,278원으로 하향 조정되었으며, 전환 시 최대 약 129만 주의 신주가 발행될 수 있다. 지속적 순손실로 자기자본이 감소하는 구조이며, 향후 실적이 기대에 미치지 못할 경우 추가 CB 또는 유상증자를 통한 희석이 발생할 리스크가 상존한다. 결과적으로 주당순자산(BPS)은 감소 추세에 있어, 향후 밸류에이션 논거가 더욱 이익 실현 여부에 집중될 가능성이 크다.",
-    "en": "As of December 2025, the conversion price of the 5th-tranche CB was adjusted down to KRW 16,278, with up to approximately 1.29 million new shares potentially issuable upon conversion. Ongoing net losses continue to erode book value per share (BPS), and if revenues fail to ramp as anticipated, further dilutive financing through CB issuance or equity offerings remains a material risk. As a result, valuation support is increasingly dependent on the timing and magnitude of actual profitability delivery."
+    "ko": "2026년 2분기 영업손실은 19.4억원이었던 반면 순손실은 128.1억원에 달해 큰 폭의 괴리가 발생했다. 회사가 과거 파생상품거래 손실발생을 공시한 이력을 고려하면 전환사채·신주인수권 관련 평가손익이 순손익 변동성을 키우는 요인으로 작용할 수 있다.",
+    "en": "In 2Q26, the operating loss was KRW 1.94 billion while the net loss reached KRW 12.8 billion, a substantial divergence. Given the company's history of disclosing derivative transaction losses, fair value changes related to convertible bonds or warrants could be amplifying volatility in net results."
    }
   }
  ],
  "risks": [
   {
    "cat": {
-    "ko": "기술·시장 채택 리스크",
-    "en": "Technology and Market Adoption Risk"
+    "ko": "지분 희석 리스크",
+    "en": "Equity Dilution Risk"
    },
    "body": {
-    "ko": "PQC-PUF 결합 보안칩은 양자컴퓨터 위협이 현실화되기 전까지 시장 수요가 제한적일 수 있으며, 기존 암호 체계 무력화 시점에 대한 전망은 2035~2045년으로 넓게 분포돼 있다. 수요 활성화 시점이 예상보다 늦어질 경우 실적 개선도 지연된다. 또한 PQC 알고리즘 단독 적용(소프트웨어 방식)이 시장 표준으로 자리 잡을 경우 PUF 하드웨어의 차별적 가치가 약화될 가능성도 있다.",
-    "en": "Demand for PQC-PUF combined security chips may remain constrained until quantum computing threats materialize in practice; estimates for when quantum computers could break existing cryptography range broadly from 2035 to 2045. A delay in demand activation would correspondingly defer earnings improvement. Furthermore, if software-only PQC adoption becomes the market norm without a mandatory hardware PUF layer, the differentiated value proposition of PUF chips could erode."
+    "ko": "회사는 제3자배정 유상증자와 전환사채 발행을 통해 자금을 조달해왔으며, 전환사채 전환가액이 주가 하락에 따라 하향 조정되면서 전환 가능 주식수가 늘어난 사례가 있다. 향후 추가적인 전환사채 발행이나 유상증자가 이뤄질 경우 기존 주주의 지분 가치가 희석될 수 있다.",
+    "en": "The company has raised capital through third-party allotment rights offerings and convertible bond issuance, and there have been cases where the conversion price of convertible bonds was adjusted downward following share price declines, increasing the number of convertible shares. Further convertible bond issuance or capital raises could dilute existing shareholders' equity value."
    }
   },
   {
    "cat": {
-    "ko": "경쟁 격화 리스크",
-    "en": "Competitive Escalation Risk"
+    "ko": "고객사 집중 및 계약 불확실성",
+    "en": "Customer Concentration and Contract Uncertainty"
    },
    "body": {
-    "ko": "KT·SKT 등 대형 통신사가 QRNG·PQC·PUF를 결합한 독자 양자보안 원칩(Q-HSM)을 개발하는 등 국내 경쟁이 심화되고 있다. 인피니온·NXP 등 글로벌 대형 반도체 기업이 향후 유사 기술을 개발하거나 관련 기업을 인수할 경우 아이씨티케이의 기술 선점 우위가 희석될 수 있다. 소프트웨어 기반 보안 솔루션 업체들이 PQC를 앞세워 시장을 선점하는 흐름도 하드웨어 칩 채택을 지연시키는 요인이다.",
-    "en": "Domestic competition is intensifying as large telecoms KT and SKT develop proprietary quantum security chips (Q-HSM) integrating QRNG, PQC, and PUF. If global heavyweights such as Infineon and NXP develop analogous PUF technology or acquire relevant companies, ICTK's first-mover advantage could diminish. The proliferation of software-based PQC solutions from established cybersecurity vendors also risks delaying hardware chip adoption cycles."
+    "ko": "글로벌 빅테크향 대규모 공급 가능성은 현재까지 증권사 분석 형태로 제시된 것으로, 구체적 계약 규모와 시기가 공식 확인되지 않았다. 특정 고객사에 대한 매출 의존도가 높아질 경우 해당 고객사의 조달 정책 변화나 계약 조건 변경이 실적에 직접적인 영향을 줄 수 있다.",
+    "en": "The possibility of large-scale supply to a global tech company has so far been presented in the form of brokerage analysis, with specific contract scale and timing not officially confirmed. If revenue dependence on a specific customer increases, changes in that customer's procurement policy or contract terms could directly affect results."
    }
   },
   {
    "cat": {
-    "ko": "재무 지속성 리스크",
-    "en": "Financial Sustainability Risk"
+    "ko": "기술 채택 속도 리스크",
+    "en": "Technology Adoption Pace Risk"
    },
    "body": {
-    "ko": "현재 분기당 수십억 원 수준의 영업현금 소진 속도가 상당하며, 매출 확대가 예상보다 지연될 경우 보유 자금이 조기에 소진될 수 있다. 추가 자금 조달은 기존 주주의 지분 희석을 수반하며, 조달 조건은 당시 주가에 의존한다. 연구인력 유지 비용, 파운드리·후공정 비용, 영업·마케팅 비용 등 고정비 구조는 단기간에 급격히 축소되기 어렵다는 점도 손익분기점 달성 시점을 늦추는 구조적 요인이다.",
-    "en": "The current pace of operating cash burn is substantial at several billion won per quarter; if the revenue ramp-up is delayed, accumulated cash reserves could be depleted ahead of schedule. Additional financing would dilute existing shareholders, with terms dependent on prevailing share prices at the time. The fixed-cost structure—covering R&D headcount, foundry and back-end processing, and sales and marketing—is difficult to compress quickly, structurally extending the timeline to breakeven."
+    "ko": "PQC·PUF 기술의 시장 개화 시점은 EU 규제 시행, 통신사 도입 일정 등 외부 요인에 좌우된다. 관련 정책이나 표준 도입이 지연될 경우 회사가 제시한 성장 스토리의 실현 시점도 함께 늦춰질 수 있다.",
+    "en": "The timing of market adoption for PQC/PUF technology depends on external factors such as EU regulatory implementation and telecom carrier rollout schedules. If related policies or standard adoption are delayed, the timeline for realizing the company's growth narrative could likewise be pushed back."
    }
   }
  ],
  "checkpoints": [
   {
    "when": {
-    "ko": "2026년 8월 (2026년 2분기 실적 발표)",
-    "en": "August 2026 (2026Q2 Earnings Release)"
+    "ko": "2026년 11월 중순(예상)",
+    "en": "Mid-November 2026 (expected)"
    },
    "what": {
-    "ko": "2026년 5월 개시된 글로벌 빅테크향 보안칩 양산 공급이 2분기 매출에 실제로 얼마나 반영됐는지 확인. 매출의 전분기·전년동기 대비 성장 폭과 영업손실 추이가 흑자 전환 경로의 가시성을 판단하는 핵심 지표다.",
-    "en": "Verify how much of the Big Tech mass supply (initiated in May 2026) is reflected in 2Q revenues. Sequential and year-over-year revenue growth alongside operating loss trajectory are the key metrics for assessing breakeven visibility."
+    "ko": "2026년 3분기 실적 발표에서 매출 회복세가 하나증권·NH투자증권 등이 제시한 연간 흑자전환 추정치 경로에 부합하는지 확인이 필요하다.",
+    "en": "Check whether 3Q26 results, when reported, show revenue recovery consistent with the annual turnaround trajectory estimated by Hana Securities and NH Investment & Securities."
    }
   },
   {
    "when": {
-    "ko": "2026년 하반기 (MTB 제품 출시 및 초기 수주)",
-    "en": "H2 2026 (MTB Launch and Initial Order Wins)"
+    "ko": "수시(공시 확인)",
+    "en": "Ongoing (via disclosures)"
    },
    "what": {
-    "ko": "차세대 배터리 인증칩 MTB의 공식 출시 여부와 EV·ESS 관련 OEM 또는 배터리 제조사의 초기 수주 현황 확인. 2027년 EU 스마트폰 배터리 의무화 등 규제 수요로의 연결 여부도 함께 모니터링.",
-    "en": "Confirm whether MTB launches on schedule and review early order intake from EV/ESS-related OEMs or battery manufacturers. Also monitor whether EU regulatory requirements (smartphone battery detachability from 2027) convert into concrete procurement pipeline."
+    "ko": "전환사채 전환청구 현황 및 추가 유상증자·전환가액 조정 공시 여부를 확인해 지분 희석 진행 정도를 점검할 필요가 있다.",
+    "en": "Monitor disclosures on convertible bond conversion requests and any additional capital raises or conversion price adjustments to gauge the extent of equity dilution."
    }
   },
   {
    "when": {
-    "ko": "2026년 하반기~2027년 초 (BTQ-QCIM 개발 완료 일정)",
-    "en": "H2 2026 – Early 2027 (BTQ-QCIM Development Milestone)"
+    "ko": "2026년 하반기",
+    "en": "Second half of 2026"
    },
    "what": {
-    "ko": "BTQ테크놀로지와 공동개발 중인 QCIM 양자보안칩의 개발 완료 및 양산 준비 진행 상황. 143억 원 규모 계약의 집행 일정과 실제 매출 기여 시점을 확인해 IP·기술 수출 사업 모델의 현실화 여부를 점검.",
-    "en": "Track QCIM quantum security chip development milestones with BTQ Technology and the transition to mass-production readiness. Verify the drawdown schedule for the KRW 14.3 billion contract and expected revenue contribution timing to assess the materialization of the IP and technology export model."
+    "ko": "BTQ테크놀로지와의 콜드월렛 보안 솔루션 공동 개발 및 143억원 규모 양자보안칩 개발 용역의 구체적 진행 상황과 매출 인식 시기를 확인할 필요가 있다.",
+    "en": "Track the concrete progress and revenue recognition timing of the cold wallet security solution co-development and the KRW 14.3 billion quantum security chip development services contract with BTQ Technologies."
    }
   },
   {
    "when": {
-    "ko": "2026년 연중 (전환사채 전환 동향 모니터링)",
-    "en": "Throughout 2026 (CB Conversion Activity Monitoring)"
+    "ko": "2027년 전후",
+    "en": "Around 2027"
    },
    "what": {
-    "ko": "전환가액 16,278원으로 조정된 제5회 전환사채(최대 약 129만 주 전환 가능)의 전환 행사 여부 및 규모 모니터링. 전환 규모에 따라 주당 희석 효과와 지배주주 지분 변동이 발생하며, 주가와 전환가의 관계 변화도 주시 필요.",
-    "en": "Monitor conversion activity on the 5th-tranche CB (conversion price KRW 16,278, up to ~1.29 million shares convertible). The scale of conversions will determine per-share dilution and controlling shareholder stake changes; the relationship between the market price and the conversion price warrants close tracking."
+    "ko": "EU 스마트폰 배터리 탈부착 의무화 시행 시점과 이에 따른 배터리 정품 인증용 PUF 채택 여부를 확인해야 한다.",
+    "en": "Confirm the implementation timing of the EU's detachable smartphone battery mandate and whether PUF technology is adopted for related battery authenticity verification."
    }
   },
   {
    "when": {
-    "ko": "2027년 초 (LG유플러스 PQC KMS 솔루션 상용 배포 여부)",
-    "en": "Early 2027 (LG Uplus PQC KMS Commercial Deployment)"
+    "ko": "분기별 공시 시점",
+    "en": "Each quarterly disclosure"
    },
    "what": {
-    "ko": "LG유플러스와 공동개발 중인 PQC·PUF 기반 통합 KMS 솔루션의 실제 상용 배포 여부 확인. 국내 주요 통신사 배포 레퍼런스가 확보될 경우 추가 통신사 및 공공기관 수주 확대의 선행 지표로 작용할 수 있다.",
-    "en": "Check whether the jointly developed PQC-PUF integrated KMS solution with LG Uplus reaches commercial deployment. A domestic major telco deployment reference could serve as a leading indicator for further order wins from other telecoms and public-sector institutions."
+    "ko": "영업손익 대비 순손익 괴리가 재발할 경우 그 원인(파생상품 평가손익 등)이 사업보고서·주석에서 어떻게 설명되는지 확인이 필요하다.",
+    "en": "If the gap between operating and net results recurs, check how the cause (e.g., derivative fair value changes) is explained in business reports and footnotes."
    }
   }
  ],
  "verdict": {
   "body": {
-   "ko": "아이씨티케이는 VIA PUF 원천기술을 보유한 국내 유일의 양자보안 팹리스로, 2026년 5월 글로벌 빅테크향 양산 공급에 돌입하며 기술 검증을 넘어 사업화 단계에 진입했다는 점에서 의미 있는 변곡점을 맞이했다. 미국·한국의 PQC 전환 의무화, AI·IoT·피지컬 AI 디바이스 확산에 따른 하드웨어 보안 수요 구조적 확대 등 중장기 사업 환경은 긍정적이다. 그러나 분기 매출이 수억 원 수준에 그치는 반면 영업손실이 분기당 약 30억 원에 달하는 구조적 불균형은 단기적으로 해소되기 어려운 과제다. 빅테크 공급 물량의 실제 규모와 확대 속도, MTB·QCIM 등 신제품 수주 성과, IP 라이선스 계약의 현실화 여부가 흑자 전환 시점을 결정하는 핵심 변수다. 2024년 IPO로 확충된 자기자본이 재무 완충재 역할을 하고 있으나, 현금 소진 속도와 전환사채 희석 가능성도 함께 고려해야 한다. 강세 요인(기술 독점성, 정책 수혜, IP 모델)과 약세 요인(영업적자 지속, 고객 집중, 실적 가시성 부재)이 팽팽히 맞서는 만큼, 분기 실적 발표와 주요 사업 이벤트를 통해 매출 성장 궤도가 실제로 확인되는지 여부가 중장기 관점의 핵심 관찰 포인트가 될 것이다.",
-   "en": "ICTK stands at a meaningful inflection point: as Korea's sole holder of VIA PUF core technology, the company has moved beyond technical validation into commercialization by initiating mass production supply to a global Big Tech in May 2026. The medium-to-long-term environment is constructive, supported by mandatory PQC transitions in the U.S. and Korea and structural growth in hardware security demand across AI, IoT, and Physical AI devices. However, the structural imbalance between quarterly revenues in the hundreds of millions of won and quarterly operating losses approaching KRW 3 billion is unlikely to resolve quickly. The actual volume and ramp trajectory of Big Tech supply, new product order wins for MTB and QCIM, and the pace of IP licensing contract execution are the pivotal variables determining when—and whether—profitability arrives. IPO-raised equity provides a financial buffer, but the rate of cash consumption and CB dilution potential also warrant attention. With bullish factors (technology moat, policy tailwind, IP model) and bearish factors (persistent operating losses, customer concentration, limited earnings visibility) in genuine tension, quarterly earnings releases and key business events will be the primary opportunities to assess whether the envisioned revenue growth trajectory is materializing as anticipated."
+   "ko": "아이씨티케이는 세계 최초로 상용화한 PUF 보안칩 기술을 바탕으로 국내 통신·에너지 부문 레퍼런스를 확보했고, 일부 증권사는 글로벌 빅테크 공급 확대와 양자보안 시장 개화를 근거로 2026년 흑자전환 가능성을 제시하고 있다. 그러나 2025년까지의 확정 실적은 매출 감소와 영업손실 확대, 3년 연속 순손실을 보여주고 있으며, 분기별 실적 변동성도 크다. 특히 2026년 2분기에는 영업손실 대비 순손실이 크게 확대되는 등 비영업적 요인의 영향으로 추정되는 변동성이 관찰됐다. 자본총계는 늘었지만 이는 상당 부분 외부 자금조달에 기인한 것으로, 영업활동 자체의 현금창출력은 아직 확인되지 않았다. 증권사들이 제시한 성장 스토리와 목표주가는 미래 실적 추정에 기반한 것으로, 실제 매출·이익이 이를 얼마나 뒷받침하는지가 향후 핵심 관전 포인트다. 투자 판단에 앞서 다가오는 분기 실적과 주요 계약의 구체적 진행 상황을 지속적으로 확인할 필요가 있다.",
+   "en": "ICTK has built domestic telecom and energy sector references based on its world-first commercialized PUF security chip technology, and some brokerages have suggested a possible 2026 turnaround to profitability on the back of expanded global tech supply and a maturing quantum security market. However, confirmed results through 2025 show declining revenue, a widening operating loss, and net losses for three consecutive years, alongside substantial quarter-to-quarter volatility. In 2Q26 in particular, the net loss expanded far more than the operating loss, a divergence likely attributable to non-operating factors. While total equity has grown, this is largely due to external financing, and the core business has not yet demonstrated self-sustaining cash generation. The growth narrative and target prices put forward by brokerages are based on future earnings estimates, and how well actual revenue and profit support these projections will be the key point to watch going forward. Before making any investment decision, it is worth continuously tracking upcoming quarterly results and the concrete progress of key contracts."
   }
  },
  "sources": [
-  "https://comp.fnguide.com/SVO2/ASP/SVD_Main.asp?gicode=A456010",
-  "https://m.irgo.co.kr/IR-COMP/456010/",
-  "https://www.hanaw.com/download/research/FileServer/WEB/industry/enterprise/2025/05/14/ICTK_init_0514.pdf",
-  "https://comp.wisereport.co.kr/company/c1010001.aspx?cmp_cd=456010",
-  "https://alphasquare.co.kr/home/stock-summary?code=456010",
-  "https://m.thinkpool.com/compDiscuss/cont/1026446",
-  "https://www.msn.com/ko-kr/money/stockdetails/456010-kr-stock/fi-cd645r?ocid=IE11FREDHP",
-  "https://m.thinkpool.com/item/456010",
-  "https://www.jobkorea.co.kr/recruit/co_read/c/ictkholdco",
-  "https://www.dailysecu.com/news/articleView.html?idxno=159496",
-  "https://www.newspim.com/news/view/20260518001026",
-  "https://www.datanet.co.kr/news/articleView.html?idxno=211720",
-  "https://ictk.com/PressRelease/?bmode=view&idx=127171885",
-  "https://www.investnews.co.kr/news/articleView.html?idxno=3001289",
-  "https://www.bloter.net/news/articleView.html?idxno=650468",
   "https://www.dailyinvest.kr/news/articleView.html?idxno=70247",
-  "https://www.eugenefn.com/common/files/amail/20240426_B_jongsun.park_2077.pdf",
-  "https://www.newspim.com/news/view/20260519000039"
+  "https://buffettlab.co.kr/news/view.php?idx=51514",
+  "https://m.irgo.co.kr/IR-COMP/456010/",
+  "https://comp.wisereport.co.kr/company/c1010001.aspx?cmp_cd=456010",
+  "https://www.jobkorea.co.kr/recruit/co_read/c/ictkholdco",
+  "https://m.thinkpool.com/compDiscuss/cont/1018676",
+  "https://www.investing.com/equities/ictk",
+  "http://www.dailyinvest.kr/news/articleView.html?idxno=69482",
+  "https://m.finance.daum.net/quotes/A456010",
+  "https://m.thinkpool.com/item/456010",
+  "https://comp.fnguide.com/SVO2/ASP/SVD_Main.asp?gicode=A456010",
+  "https://valueline.co.kr/finance/mri/456010",
+  "https://comp.wisereport.co.kr/company/c1020001.aspx?cmp_cd=456010&cn=",
+  "https://www.ket.kr/news/article.html?no=38425",
+  "https://www.valueline.co.kr/finance/bicchart/456010",
+  "https://www.tossinvest.com/stocks/A456010/order",
+  "https://kind.krx.co.kr/external/2025/02/05/000991/20250203001780/70432.htm",
+  "https://m.finance.daum.net/quotes/A456010/news/disclosure/20251124089697"
  ],
  "v": 2,
- "model": "claude-sonnet-4-6",
+ "model": "claude-sonnet-5",
  "ticker": "456010",
  "name": "아이씨티케이",
  "name_en": "ICTK Co., Ltd.",
@@ -233,13 +233,28 @@
   "반도체"
  ],
  "market": "코스닥",
- "reportDate": "2026-07-23",
- "reportTs": "2026-07-23 21:47",
- "dataDate": "20260723",
+ "reportDate": "2026-08-18",
+ "reportTs": "2026-08-18 00:50",
+ "dataDate": "20260814",
  "quant": {
-  "asOf": "2026-07-23",
+  "asOf": "2026-08-17",
   "fs_basis": "연결(CFS) · DART 공시 확정치 · 지배주주 기준 순이익",
   "annual": [
+   {
+    "year": 2025,
+    "rev": 4020136626,
+    "op": -8864162135,
+    "np": -6679992941,
+    "np_owner": -6679992941,
+    "equity": 43949974620,
+    "equity_owner": 43949974620,
+    "liab": 29282823577,
+    "cfo": -2944120783,
+    "eps_basic": -499,
+    "opm": -220.5,
+    "roe": -15.2,
+    "debt_ratio": 66.6
+   },
    {
     "year": 2024,
     "rev": 6683572584,
@@ -273,12 +288,6 @@
   ],
   "quarterly": [
    {
-    "q": "2025Q1",
-    "rev": 414310476,
-    "op": -2608032145,
-    "np_owner": -2159609245
-   },
-   {
     "q": "2025Q2",
     "rev": 829882242,
     "op": -2604483494,
@@ -292,31 +301,37 @@
    },
    {
     "q": "2025Q4",
-    "rev": null,
-    "op": null,
-    "np_owner": null
+    "rev": 2377290920,
+    "op": -765531048,
+    "np_owner": 2216485486
    },
    {
     "q": "2026Q1",
     "rev": 604800404,
     "op": -3042245243,
     "np_owner": -1145186202
+   },
+   {
+    "q": "2026Q2",
+    "rev": 1723536118,
+    "op": -1939948302,
+    "np_owner": -12812875012
    }
   ],
   "valuation": {
-   "price": 15300,
-   "mcap": 0.2219,
+   "price": 18830,
+   "mcap": 0.2731,
    "shares": 14502350,
    "total_shares": 13901854,
-   "wavg_shares": 13965685,
+   "wavg_shares": 14042315,
    "per": null,
    "eps": null,
-   "pbr": 4.98,
-   "bps": 3071,
-   "roe_ttm": null,
-   "ttm_window": null,
-   "ttm_np_owner": null,
-   "pbr_krx": 4.84,
+   "pbr": 5.64,
+   "bps": 3339,
+   "roe_ttm": -34.1,
+   "ttm_window": "2025Q3~2026Q2",
+   "ttm_np_owner": -14285031079,
+   "pbr_krx": 5.96,
    "bps_krx": 3161.0,
    "basis": "PER·EPS·PBR·BPS 모두 자체 산출(네이버·토스와 동일 방식) · 배당은 DART 공시 주당현금배당금(보완:KRX) ÷ 현재가",
    "dps": 0.0,

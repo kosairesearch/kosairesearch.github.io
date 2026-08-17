@@ -1,230 +1,220 @@
 {
  "title": {
-  "ko": "HBM4 공급망 첫 진입 — 흑자 전환 분수령",
-  "en": "HBM4 Supply Chain Debut: A Profitability Inflection Test"
+  "ko": "HBM4 수주로 2분기 흑자 전환",
+  "en": "HBM4 Orders Drive Q2 Profit Turnaround"
  },
  "lead": {
-  "ko": "2026년 3월 SK하이닉스 HBM4 번인테스터 양산 퀄테스트 완료·5월 292억원 공급 계약 공시로 회사 최초 HBM 공급망 진입이 확인됐으나, 2024~2025년 연속 영업적자와 부채비율 급등이 회복의 속도를 제약하고 있다.",
-  "en": "UniTest confirmed its first-ever HBM supply chain entry via HBM4 mass-production qualification in March 2026 and a KRW 29.2B supply contract disclosure in May; however, two consecutive years of operating losses and a sharply elevated debt ratio continue to constrain the pace of financial recovery."
+  "ko": "유니테스트는 SK하이닉스향 HBM4 웨이퍼 테스터 공급계약이 본격화되며 2026년 2분기 연결 영업이익이 78.8억원으로 흑자 전환했으나, 2024~2025년의 연속 적자와 재무 부담은 여전히 남아 있다.",
+  "en": "UniTest swung to a KRW 7.88bn consolidated operating profit in Q2 2026 as HBM4 wafer tester supply to SK hynix ramped up, though the consecutive losses of 2024-2025 and elevated financial burden still linger."
  },
  "keypoints": [
   {
-   "ko": "2026년 3월 SK하이닉스 HBM4 번인테스터 양산 퀄테스트 완료, 5월 291.6억원 규모 공급계약 공시 — 회사 사상 최초 HBM 공급망 진입",
-   "en": "Completed SK Hynix HBM4 burn-in tester mass-production qualification in March 2026; disclosed a KRW 29.16B supply contract in May — marking the company's first-ever HBM supply chain entry"
+   "ko": "2026년 2분기 매출 505억원, 영업이익 78.8억원, 지배주주순이익 67.5억원으로 전분기 대비 큰 폭의 실적 개선을 기록했다.",
+   "en": "Q2 2026 revenue reached KRW 50.5bn with operating profit of KRW 7.88bn and owners' net income of KRW 6.75bn, a sharp improvement from the prior quarter."
   },
   {
-   "ko": "2025년 매출 1,102억원(+19.2% YoY)으로 외형 회복됐으나 영업손실 –211억원 지속, 2026Q1 영업손실 –25억원으로 전년 동기(–40억원) 대비 손실폭 대폭 축소",
-   "en": "FY2025 revenue of KRW 110.2B (+19.2% YoY) shows top-line recovery, yet the operating loss of KRW −21.1B persisted; 2026Q1 operating loss narrowed significantly to KRW −2.5B from KRW −4.0B a year earlier"
+   "ko": "SK하이닉스와 HBM4 웨이퍼 테스터 공급계약을 2026년 5월(291.6억원, 8월31일 만기)과 이후 추가(227억원, 10월8일 만기)로 잇달아 체결했다.",
+   "en": "The company signed successive HBM4 wafer tester supply contracts with SK hynix in May 2026 (KRW 29.16bn, expiring Aug 31) and a follow-on deal (KRW 22.7bn, expiring Oct 8)."
   },
   {
-   "ko": "한국투자증권(2026년 4월): 2026년 HBM 번인테스터 108대 납품·전사 매출 2,605억원·영업이익 236억원(흑자 전환) 전망",
-   "en": "Korea Investment Securities (April 2026): projected 108 HBM burn-in tester deliveries, FY2026 revenue of KRW 260.5B, and operating profit of KRW 23.6B (turnaround from losses)"
+   "ko": "2024년 영업손실 234억원, 2025년 영업손실 211억원으로 2년 연속 적자를 냈고, 2025년 4분기에는 영업손실이 123억원까지 확대됐다.",
+   "en": "The company posted operating losses of KRW 23.4bn in 2024 and KRW 21.1bn in 2025, with the loss widening to KRW 12.3bn in Q4 2025 alone."
   },
   {
-   "ko": "중국 메모리(CXMT·YMTC) D램 증설 발주 2026Q2 시작 전망 + 북미·국내 낸드 SSD 테스터 수요 확대 — 복수 성장 축 가동",
-   "en": "Chinese memory makers (CXMT, YMTC) expected to start DRAM expansion equipment orders from 2026Q2; North American and domestic NAND/SSD tester demand also expanding — multiple growth vectors activating simultaneously"
+   "ko": "반도체 검사장비 외에 태양광 EPC·ESS 등 그린에너지 사업과 페로브스카이트 태양전지 개발을 병행하는 이중 사업 구조를 갖고 있다.",
+   "en": "Beyond semiconductor test equipment, the company runs a parallel green-energy business spanning solar EPC/ESS construction and perovskite solar cell development."
   },
   {
-   "ko": "2025년 부채비율 82.3%(2023년 33.0% 대비 급등), 2022·2024·2025년 영업현금흐름 적자 — 재무 안정성 모니터링 필요",
-   "en": "Debt ratio surged to 82.3% in 2025 from 33.0% in 2023; operating cash flow was negative in FY2022, FY2024, and FY2025 — financial stability warrants close monitoring"
+   "ko": "HBM 테스터 시장은 어드반테스트·테라다인 등 해외 대형업체가 주도하며, 국내에서는 디아이·와이씨·엑시콘 등과 벤더 경쟁을 벌이고 있다.",
+   "en": "The HBM tester market is led by global majors Advantest and Teradyne, while domestically UniTest competes for vendor slots against DI, YC, and Exicon."
   }
  ],
  "business": {
-  "ko": "유니테스트는 2000년 설립된 반도체 후공정 검사장비 전문 기업으로, 메모리 모듈 테스터와 메모리 컴포넌트 테스터를 국내 업계 최초로 개발·국산화한 이력을 보유하고 있다. 주요 제품군은 메모리 테스터(Memory Tester), 스토리지 테스터(Storage Tester), 웨이퍼 테스터(Wafer Tester), 번인테스터(Burn-in Tester)로 구성되며, 반도체 후공정 패키징 완료 후 최종 품질 검사를 담당하는 장비를 공급한다. 2025년 기준 매출 구성은 메모리 컴포넌트 테스트 장비·고속 번인 테스트 장비가 약 74%, 태양광 EPC(설계·조달·시공) 사업이 약 22%를 차지한다. SK하이닉스가 핵심 고객사이며, 최근에는 북미 고객사(낸드·SSD 테스터)와 중국 메모리 업체(CXMT, YMTC)로 고객 기반을 확대하고 있다. 경쟁 구도는 HBM 웨이퍼 번인테스트(WFBI) 시장에서 일본 어드반테스트가 지배적 지위를 유지하며, 국내에서는 디아이(디지털프론티어)와 와이씨 등이 경쟁하고 있다. 신사업으로는 2009년 진출한 태양광 EPC 외에 2015년부터 연구·개발해 온 페로브스카이트 차세대 태양전지가 있으며, 2024년 12월 IoT 기기용 소형 제품의 첫 양산 출하식을 개최했다. 자회사 유니퓨전은 시스템반도체(비메모리) 검사장비를 담당하고, CXL 2.0 검사장비 개발도 완료한 상태다. 평택 신공장은 기존 용인 공장 대비 생산능력이 2~3배 향상되어 반도체 장비와 페로브스카이트 사업의 통합 생산 거점 역할을 수행하고 있다.",
-  "en": "UniTest, founded in 2000, is a semiconductor back-end test equipment specialist and was the first domestic company to develop and commercialize memory module testers and memory component testers. Its core product portfolio spans Memory Testers, Storage Testers, Wafer Testers, and Burn-in Testers — all providing final quality inspection after semiconductor back-end packaging. In FY2025, approximately 74% of revenue came from memory component testers and high-speed burn-in testers, while the solar EPC (engineering, procurement, and construction) business contributed roughly 22%. SK Hynix is the primary customer; the company has been actively expanding to North American customers (NAND/SSD testers) and Chinese memory makers (CXMT, YMTC). In the HBM wafer burn-in test segment, Japan's Advantest retains a dominant position, with domestic rivals DiAi (Digital Frontier) and Waiss competing for share. Beyond solar EPC (entered in 2009), the company has been developing next-generation perovskite solar cells since 2015 and held an inaugural commercial shipment ceremony for small-format IoT perovskite cells in December 2024. Subsidiary UniPusion covers system (non-memory) semiconductor inspection equipment, and a CXL 2.0 tester has also been completed. The Pyeongtaek plant offers two-to-three times the production capacity of the former Yongin facility and serves as an integrated production hub for both the semiconductor equipment and perovskite businesses."
+  "ko": "유니테스트는 2000년 설립돼 2006년 코스닥에 상장한 반도체 후공정 검사장비 전문기업이다. 주요 제품은 Memory Tester, Storage Tester, Wafer Tester로 구분되며, 메모리반도체 제조 및 패키징 공정 완료 후 최종 검사를 수행하는 장비를 공급한다. 대만법인 UniTest Taiwan을 포함해 10개의 종속회사를 보유하고 있으며 중견기업으로 분류된다. 주요 고객사는 삼성전자와 SK하이닉스로, 반도체 검사장비 부문에서 메모리 테스터 및 번인테스터의 국산화에 성공하며 소자업체와의 기술협력을 바탕으로 경쟁력을 확보해왔다. SSD 번인 테스트 장비 부문에서는 자동화 비중을 높여 글로벌 3대 SSD 제조사 중 2곳에 납품하고 있는 것으로 알려졌다. 2009년부터는 신재생에너지 사업에 진출해 태양광발전시스템 건설공사 EPC 사업을 정부 및 민자사업 입찰을 통해 인허가부터 시공, 사후관리까지 일괄 수행하고 있다. 최근에는 3세대 태양전지인 페로브스카이트 태양전지를 신성장동력으로 개발 중이며, 기존 실리콘 소재보다 낮은 온도에서 생산 가능해 비용 대비 효율이 높은 것으로 파악된다. 이처럼 반도체 검사장비와 그린에너지 두 사업축을 병행하는 구조가 회사의 매출 구성과 실적 변동성에 함께 영향을 미치고 있다.",
+  "en": "Founded in 2000 and listed on KOSDAQ in 2006, UniTest is a semiconductor back-end test equipment specialist. Its core products are categorized into Memory Testers, Storage Testers, and Wafer Testers, supplying final-inspection equipment used after memory chip fabrication and packaging processes are completed. The company operates 10 subsidiaries including its Taiwan unit, UniTest Taiwan, and is classified as a mid-sized enterprise. Its major customers are Samsung Electronics and SK hynix, and it has built competitiveness in memory testers and burn-in testers through localization efforts and technical cooperation with device makers. In the SSD burn-in test equipment segment, the company is reported to supply two of the world's top three SSD manufacturers, aided by higher automation ratios in its equipment. Since 2009 the company has also expanded into renewable energy, undertaking solar power plant EPC construction from permitting through construction and post-completion management via government and private-sector bids. More recently it has been developing third-generation perovskite solar cells as a new growth driver, which can reportedly be produced at lower temperatures than silicon-based cells while offering higher efficiency relative to cost. This dual structure spanning semiconductor test equipment and green energy shapes both the revenue mix and earnings volatility of the company."
  },
  "earnings": {
-  "ko": "2023년은 매출 1,678억원·영업이익 71억원(OPM +4.3%)으로 최근 4개 연도 중 유일하게 흑자를 달성했으나, 2024년 반도체 업황 침체 속 매출이 924억원으로 44.9% 급감하고 영업손실이 –234억원(OPM –25.4%)으로 악화됐다. 2025년에는 매출이 1,102억원으로 전년 대비 19.2% 회복되고 영업손실도 –211억원(OPM –19.1%)으로 축소됐으나 흑자 전환에는 미치지 못했다. 분기별 추이를 보면 2025Q1 영업손실 –40억원, 2025Q2 –44억원에서 2025Q3에 –4억원으로 손익분기점에 거의 근접했고, 지배주주 귀속 순이익도 2025Q3에 +2억원으로 수 분기 만에 소폭 흑자를 기록했다. 그러나 2025Q4에 영업손실이 –123억원으로 급격히 확대되며 연간 손익을 크게 훼손했으며, HBM4 퀄테스트 대응 R&D비 집중 집행 및 연말 비용 인식이 주요 원인으로 추정되나 구체적인 일회성 항목은 추가 공시 확인이 필요하다. 2026Q1에는 영업손실이 –25억원으로 전년 동기(–40억원) 대비 손실폭이 크게 줄었고, 지배주주 귀속 순손실도 –6억원으로 대폭 개선됐다. 재무구조 측면에서 부채비율은 2023년 33.0%에서 2024년 58.2%, 2025년 82.3%로 가파르게 상승했으며, 2025년 영업현금흐름도 –228억원으로 대규모 음(-)의 흐름이 지속됐다. 2025년 기말 지배주주 자본총계는 970억원으로 2023년 대비 약 34% 감소해, 연속 적자에 따른 자본 잠식 압박이 누적되고 있다.",
-  "en": "FY2023 was the sole profitable year in the recent four-year window, posting revenue of KRW 167.8B and operating income of KRW 7.1B (OPM +4.3%), before FY2024 saw revenue plunge 44.9% to KRW 92.4B amid a semiconductor downturn with the operating loss expanding to KRW −23.4B (OPM −25.4%). FY2025 showed a partial top-line recovery with revenue rising 19.2% to KRW 110.2B and the operating loss narrowing to KRW −21.1B (OPM −19.1%), though breakeven remained elusive. Quarterly progression shows a gradual 2025 improvement: operating losses of KRW −4.0B (Q1) and KRW −4.4B (Q2) narrowed to near-breakeven (KRW −0.44B) in Q3, with controlling-shareholder net profit turning slightly positive at KRW +0.16B — the first quarterly profit in multiple quarters. However, 2025Q4 saw a sharp reversal with an operating loss of KRW −12.3B that heavily dragged the full-year result; concentrated R&D expenditure tied to HBM4 qualification efforts and year-end cost recognition are the most likely explanations, though a detailed breakdown of any one-off items requires further verification. 2026Q1 showed meaningful improvement: the operating loss narrowed to KRW −2.5B from KRW −4.0B a year earlier, and the controlling-shareholder net loss improved substantially to KRW −0.57B. On the balance sheet, the debt ratio climbed steeply from 33.0% (2023) to 58.2% (2024) and 82.3% (2025), while operating cash flow was KRW −22.8B in FY2025 — continuing a pattern of large negative cash generation. Controlling shareholders' equity stood at approximately KRW 97.0B at end-2025, roughly 34% below the 2023 level, reflecting cumulative capital erosion from consecutive annual losses."
+  "ko": "연결 매출액은 2022년 1,238억원에서 2023년 1,678억원으로 늘며 영업이익 71억원(영업이익률 4.3%), 지배주주순이익 61억원을 기록해 흑자 전환에 성공했다. 그러나 2024년에는 매출이 924억원으로 급감했고 영업손실 234억원(영업이익률 -25.4%), 지배주주순손실 265억원을 내며 다시 적자로 돌아섰다. 2025년에는 매출이 1,102억원으로 회복됐지만 영업손실 211억원(영업이익률 -19.1%), 지배주주순손실 208억원으로 적자가 지속됐다. 분기별로 보면 2025년 3분기 매출은 313억원으로 늘고 영업손실은 4.4억원까지 줄었으며 지배주주순이익은 1.6억원으로 소폭 흑자를 기록했으나, 4분기에는 매출이 273억원으로 줄어든 반면 영업손실은 123억원으로 급격히 확대되고 지배주주순손실도 117억원으로 커졌다. 2026년 1분기에는 매출 224억원, 영업손실 25억원, 지배주주순손실 5.7억원으로 손실 규모가 줄었고, 2분기에는 매출이 505억원으로 전분기 대비 두 배 이상 늘면서 영업이익 78.8억원, 지배주주순이익 67.5억원의 흑자 전환을 기록했다. 이러한 흐름은 2025년 3분기 이후 흑자와 적자를 오가며 아직 안정적인 흑자 기조가 확인되지는 않았음을 보여준다. 재무구조 측면에서는 지배주주지분이 2023년 1,478억원에서 2025년 970억원으로 줄었고 부채비율은 2023년 33.0%에서 2025년 82.3%로 크게 상승해 손실 누적에 따른 재무 부담이 커진 모습이다.",
+  "en": "Consolidated revenue rose from KRW 123.8bn in 2022 to KRW 167.8bn in 2023, with operating profit of KRW 7.1bn (4.3% margin) and owners' net income of KRW 6.1bn marking a return to profitability. In 2024, however, revenue fell sharply to KRW 92.4bn, and the company swung back to losses with an operating loss of KRW 23.4bn (-25.4% margin) and an owners' net loss of KRW 26.5bn. In 2025, revenue recovered to KRW 110.2bn, but losses persisted with an operating loss of KRW 21.1bn (-19.1% margin) and an owners' net loss of KRW 20.8bn. On a quarterly basis, Q3 2025 revenue rose to KRW 31.3bn with the operating loss narrowing to KRW 0.44bn and owners' net income turning slightly positive at KRW 0.16bn, but Q4 2025 saw revenue drop to KRW 27.3bn while the operating loss widened sharply to KRW 12.3bn and the owners' net loss expanded to KRW 11.7bn. Q1 2026 losses narrowed to an operating loss of KRW 2.5bn and an owners' net loss of KRW 0.57bn on revenue of KRW 22.4bn, and Q2 2026 revenue more than doubled quarter-on-quarter to KRW 50.5bn, delivering an operating profit of KRW 7.88bn and owners' net income of KRW 6.75bn. This pattern shows earnings have oscillated between profit and loss since Q3 2025, without yet confirming a stable profitable trend. On the balance sheet, owners' equity declined from KRW 147.8bn in 2023 to KRW 97.0bn in 2025, while the debt ratio rose sharply from 33.0% in 2023 to 82.3% in 2025, reflecting a heavier financial burden from accumulated losses."
  },
  "industry": {
-  "ko": "글로벌 AI 가속기 시장의 구조적 성장이 HBM 수요를 지속적으로 견인하고 있으며, SK하이닉스·삼성전자·마이크론의 HBM 생산능력은 2026년에도 전년 대비 약 120K/월 수준 증가할 것으로 업계에서 전망하고 있다. HBM은 세대 전환마다 번인테스터를 신규 교체해야 하는 구조여서 일반 D램(약 5년 교체 주기) 대비 반복 수요가 높고, HBM4용 장비는 기존 D램용 대비 단가가 2~3배 높아 공급 업체 수익성 개선 여지가 크다. 시장 지배력 측면에서 어드반테스트는 WFBI(웨이퍼 번인테스트) 부문을 압도적으로 장악하고 있으나, SK하이닉스의 벤더 다변화 전략이 가속화되면서 국내 업체에게 진입 기회가 점진적으로 형성되고 있다. AI 서버 확산으로 고성능 SSD 수요가 급증하면서 스토리지 번인 테스트 장비 시장도 빠르게 성장하며, 중국 메모리 업체의 D램·낸드 증설이 추가 수요를 창출하고 있다. 태양광 EPC 시장은 정책 변화에 따른 수주 변동성이 크고, 페로브스카이트 태양전지 상용화 시장은 초기 단계이나 한국 정부의 탠덤셀 R&D 사업단 발족 등 정책 지원이 확대되는 추세다. 국내에서는 한화솔루션·HD현대에너지솔루션 등이 고출력 발전용 탠덤셀 방식으로 시장에 진입하고 있으며, 유니테스트는 BIPV·VIPV 등 경량·투명 특성을 활용한 틈새 시장을 공략해 대형 플레이어와의 직접 경쟁을 최소화하는 차별화 전략을 택하고 있다.",
-  "en": "Structural AI accelerator demand continues to drive HBM consumption, with industry estimates pointing to a combined HBM production capacity increase of approximately 120K wafers/month across SK Hynix, Samsung, and Micron in 2026 on a year-over-year basis. Because HBM burn-in testers must be replaced with each generational transition — unlike standard DRAM with roughly a five-year replacement cycle — tester demand recurs at higher frequency; HBM4 units also carry unit prices two-to-three times higher than conventional DRAM equipment, meaningfully widening the margin opportunity for qualified suppliers. Japan's Advantest retains dominant control of the WFBI (wafer burn-in test) segment, but SK Hynix's accelerating vendor diversification strategy is progressively opening the door for domestic players. The storage SSD burn-in tester market is growing briskly on surging AI-server-driven SSD demand, and Chinese memory maker DRAM and NAND capacity expansion creates additional incremental demand in 2026. The domestic solar EPC market is subject to high order volatility driven by policy changes, while the perovskite solar cell market remains early-stage but is receiving growing government support through the launch of a dedicated tandem-cell R&D consortium. Domestically, Hanwha Solutions and HD Hyundai Energy Solution are entering the perovskite market via high-power tandem-cell approaches, while UniTest differentiates by targeting BIPV and VIPV niche applications — leveraging lightweight and transparent cell characteristics to minimize direct confrontation with larger players."
+  "ko": "글로벌 HBM IC 테스터 시장은 테라다인과 어드반테스트가 양강 구도를 이루는 가운데 한국·미국·중국 기업들이 추격하는 양상이며, 국내 기업으로는 테크윙, 와이씨, 유니테스트, 디아이 등이 경쟁하고 있다. SK하이닉스는 HBM4용 번-인 테스터 공급망 이원화를 꾸준히 추진해왔는데, 디아이가 협력사 중 가장 먼저 퀄 테스트를 마무리해 초도 주문에 대응한 것으로 알려졌다. 업계 관계자들은 어드반테스트가 웨이퍼 고온·고전압 검사(WFBI) 부문의 글로벌 최강자이지만, HBM 양산이 늘어나는 속도에 비례해 캐파를 맞추지 못하고 있어 국내 후공정 테스터 업체들에게 국산화 기회가 열리고 있다고 평가한다. 삼성전자 역시 HBM4 매출 비중 확대에 속도를 내고 있으며, 3분기 HBM4 매출을 전분기 대비 3배 이상 확대한다는 목표를 세우고 하반기에는 HBM4가 전체 HBM 매출의 60% 이상을 차지할 것으로 예상되는 등 전방 수요 자체는 견조하다. 다만 유니테스트를 포함한 국내 업체들은 아직 SK하이닉스·삼성전자의 확정 벤더로 완전히 자리잡은 단계는 아니며, 성능평가 통과 이후에도 양산 발주 규모와 시점에 따라 수혜의 크기가 달라질 수 있는 구조다. 결국 산업 사이클은 AI 서버·데이터센터 확산에 따른 HBM·SSD 수요 증가라는 구조적 성장 요인과, 소수의 글로벌 대형 장비업체가 여전히 시장을 지배하는 경쟁 구도가 동시에 작용하는 국면으로 볼 수 있다.",
+  "en": "The global HBM IC tester market is dominated by a Teradyne-Advantest duopoly, with Korean, US, and Chinese firms chasing behind; domestically, TechWing, YC, UniTest, and DI compete for share. SK hynix has been steadily pursuing dual-sourcing of its HBM4 burn-in tester supply chain, and DI reportedly completed qualification testing first among its partners to respond to initial orders. Industry sources note that while Advantest remains the global leader in wafer burn-in (WFBI) testing, its capacity has not kept pace with the rapid ramp-up of HBM production, opening localization opportunities for domestic back-end test equipment makers. Samsung Electronics is also accelerating its HBM4 revenue mix, targeting more than a threefold quarter-on-quarter increase in Q3 HBM4 sales and expecting HBM4 to account for over 60% of total HBM revenue in the second half, indicating solid underlying end-market demand. That said, UniTest and other domestic players have not yet fully established themselves as confirmed vendors for SK hynix and Samsung, and the scale of benefit can vary depending on the timing and volume of mass-production orders even after passing performance evaluations. Overall, the industry cycle reflects a combination of structural growth from AI server and data center-driven HBM/SSD demand, alongside a competitive landscape still dominated by a handful of large global equipment makers."
  },
  "outlook": {
-  "ko": "2026년 3월 SK하이닉스 HBM4용 번인테스터 양산 퀄테스트를 완료했고, 2026년 5월에는 DART를 통해 291.6억원 규모 HBM4 웨이퍼 테스터 공급 계약(이행 기한 2026년 8월 31일)을 공시했다. 한국투자증권(2026년 4월)은 2026년 SK하이닉스 HBM 생산능력이 전년 대비 약 40K/월 증가할 것으로 보고 이에 필요한 신규 번인테스터 수요를 360대로 추산하며, 유니테스트가 하반기부터 108대를 공급할 것으로 전망했다. 중국 고객사(CXMT·YMTC)는 2026년 2분기부터 월 30~40K 규모의 D램 라인 증설을 위한 장비 발주를 시작할 것으로 전망되며, 이는 기존 컴포넌트·SSD 테스터 매출에 추가 성장을 더할 것으로 기대된다. SK하이닉스의 청주 P&T 및 M15X 팹 투자가 가시화되면서 연간 단위 반복 발주 가능성도 높아지고 있다. 페로브스카이트 태양전지는 한국화학연구원과의 공동 연구로 달성한 대면적 셀 효율 20.6%(세계 최고 수준)를 토대로 BIPV·VIPV 상용화를 추진 중이며, 2024년 12월 IoT용 소형 제품 첫 양산 출하도 완료했다. 태양광 EPC 부문은 지연됐던 프로젝트 재개와 전력 수요 확대로 2026년 매출 회복이 기대되나, 프로젝트 발주 타이밍 의존도가 높아 가시성은 제한적이다. 다만 HBM4 번인테스터 공급에서 유니테스트는 세컨 벤더 지위(퍼스트 벤더는 디아이)로, 실제 수주 물량과 공급 비중이 증권사 전망치를 얼마나 달성하는지가 2026년 실적의 최대 변수로 남는다.",
-  "en": "UniTest completed HBM4 burn-in tester mass-production qualification with SK Hynix in March 2026 and filed a DART disclosure in May for a KRW 29.16B HBM4 wafer tester supply contract, with delivery by August 31, 2026. Korea Investment Securities (April 2026) estimated SK Hynix's HBM production capacity will expand by approximately 40K wafers/month in 2026, implying demand for 360 new burn-in testers — with UniTest projected to supply 108 units from the second half of the year. Chinese customers (CXMT, YMTC) are expected to begin equipment orders for DRAM capacity additions of 30–40K per month from 2026Q2, offering incremental upside beyond existing component tester and SSD tester revenues. SK Hynix's visible capex plans for Cheongju P&T and M15X fabs raise the prospect of recurring annual orders. On the perovskite front, UniTest is advancing BIPV/VIPV commercialization on the back of a world-record large-area cell efficiency of 20.6% (achieved jointly with the Korea Research Institute of Chemical Technology), with an inaugural IoT-format commercial shipment completed in December 2024. Solar EPC revenues are expected to partially recover in 2026 as delayed projects resume amid broader power demand growth, though project timing sensitivity limits near-term visibility. The pivotal remaining variable is whether actual HBM4 burn-in tester order volumes — with UniTest as second vendor behind DiAi — will converge toward the brokerage scenario of 108 units in 2026."
+  "ko": "유니테스트는 2026년 5월 SK하이닉스와 HBM4 웨이퍼 테스터(번인 타입) 공급계약을 291억6,000만원 규모로 체결했으며, 이는 2025년 매출의 26.46%에 해당하고 계약기간은 8월31일까지였다. 이어 지난달에는 227억원 규모의 두 번째 HBM4 웨이퍼 테스터 공급계약을 추가로 체결했으며 계약 기간은 10월8일까지로 설정됐다. 한국투자증권 남채민 연구원은 2026년 SK하이닉스의 HBM 캐파가 전년 대비 월 40K 늘어날 것으로 예상하고 이를 소화하기 위한 신규 장비 수요를 약 360대로 추산하면서, 유니테스트가 하반기부터 본격적인 장비 공급을 개시할 것이라고 전망했다. 같은 리포트는 유니테스트가 국내 및 북미 고객사에 낸드·SSD 테스트 장비도 공급 중이며, 국내 고객사의 낸드 전환 투자와 2027년 하반기 신규 증설, 중국 고객사의 2026년 2분기 이후 월 30~40K 규모 디램 라인 증설 발주 등이 추가 성장 동력이 될 것으로 전망했다. 신한투자증권은 2026년 2월25일 리포트에서 국내 고객사향 HBM 테스트 장비 공급이 가시화되면 밸류에이션 리레이팅이 가능하다고 평가하며 매수 의견을 유지했고, 목표주가는 2만7,000원에서 2만5,000원으로 하향 조정했다. 태양광 부문에서는 2025년 7월 솔라원사호와 268억6,700만원 규모의 태양광발전소 건설공사 계약을 체결했으며 계약기간은 2027년 12월 말까지로, 그린에너지 사업의 매출 기여가 이어질 전망이다.",
+  "en": "In May 2026, UniTest signed an HBM4 wafer tester (burn-in type) supply contract with SK hynix worth KRW 29.16bn, equivalent to 26.46% of 2025 revenue, with a contract term running through August 31. It subsequently signed a second HBM4 wafer tester supply contract worth KRW 22.7bn, with a contract term through October 8. Korea Investment & Securities analyst Nam Chae-min projected that SK hynix's HBM capacity would grow by about 40K/month year-on-year in 2026, estimating roughly 360 units of new equipment demand to meet this, and forecast that UniTest would begin full-scale equipment supply from the second half. The same report noted UniTest is also supplying NAND/SSD test equipment to domestic and North American customers, and cited domestic customers' NAND-conversion investment, planned new capacity expansion in the second half of 2027, and a Chinese customer's DRAM line expansion orders beginning in Q2 2026 (30-40K/month scale) as additional growth drivers. Shinhan Investment & Securities, in a report dated February 25, 2026, maintained a buy rating while assessing that valuation re-rating would be possible once HBM test equipment supply to a domestic customer becomes visible, and lowered its target price from KRW 27,000 to KRW 25,000. In the solar segment, the company signed a KRW 26.87bn solar power plant construction contract with SolarOne No.4 in July 2025, running through the end of December 2027, suggesting continued revenue contribution from the green-energy business."
  },
  "valuation_comment": {
-  "ko": "지배주주 귀속 기준 주당순이익(EPS)은 –836원으로 적자 구간에 있어 손익 기반 밸류에이션(PER) 적용이 불가하며, 현재 주가는 주당순자산(BPS 4,776원)을 큰 폭 상회하는 프리미엄 구간에 위치해 있다. 이 프리미엄은 HBM4 공급망 첫 진입과 증권사들이 제시하는 흑자 전환 시나리오를 시장이 선반영하는 구조로, 납품 확대가 실제로 가시화될 경우 멀티플 재평가 여지가 열린다. 반면 흑자 전환이 지연된다면 순자산 대비 높은 프리미엄의 정당화 근거가 약해질 수 있어 양방향 리스크가 공존하는 국면이다. 배당수익률은 DPS 0원으로 업종 평균을 크게 하회하며, 연속 적자 국면에서 배당 재개는 현 시점에서 기대하기 어렵다. 흑자를 달성했던 시기 이후 업황 침체로 주가가 조정을 받았다가 HBM4 기대감에 힘입어 다시 프리미엄 구간으로 복귀한 흐름으로, 향후 실적 가시화 여부에 따라 밸류에이션 수준 변화의 진폭이 클 수 있다.",
-  "en": "With a controlling-shareholder EPS of −KRW 836, the company is in loss territory and PER-based valuation is inapplicable; the current share price is positioned at a substantial premium over book value per share (BPS: KRW 4,776). This premium reflects the market's forward-looking pricing of UniTest's inaugural HBM4 supply chain entry and the brokerage-projected profitability turnaround — creating room for upside re-rating if deliveries scale as expected. Conversely, if the earnings turnaround is delayed, the justification for sustaining a premium above book value weakens, presenting a two-way risk dynamic. The dividend yield is zero (DPS: KRW 0), well below sector averages; dividend reinstatement is not realistically foreseeable in the current loss environment. Following the prior profitable period, the share retraced on sector headwinds before recovering toward a premium range on HBM4 expectations — with the magnitude of any further move heavily dependent on whether tangible earnings improvement materializes."
+  "ko": "유니테스트 주가는 공시된 주당순자산(BPS) 5,322원 대비 상당한 순자산 대비 프리미엄을 형성하며 거래되고 있어, 자산가치보다는 향후 실적 개선에 대한 기대가 가격에 더 크게 반영된 모습이다. 최근 분기 실적은 2025년 3분기 소폭 흑자, 4분기 큰 폭 적자, 2026년 1분기 소폭 적자, 2분기 흑자 전환 등으로 흑자와 적자를 오가고 있어 아직 안정적인 흑자 기조가 정착됐다고 보기는 이르다. 현금배당금이 최근 지급되지 않아 배당수익률은 0%로, 배당을 지급하는 반도체 장비 업종 종목들과는 성격이 다른 투자 지표를 갖는다. 과거 2023년 흑자 국면과 2024~2025년 적자 국면을 오간 이력에서 볼 수 있듯 이익 변동성이 컸던 만큼, 시장의 관심은 이번 HBM4 관련 실적 개선이 일회성 반등에 그치는지 아니면 지속되는 흐름으로 이어지는지에 쏠려 있다.",
+  "en": "UniTest shares trade at a notable premium to the disclosed book value per share of KRW 5,322, suggesting the price reflects expectations of future earnings improvement more than current asset value. Recent quarterly results have swung between small profits (Q3 2025), a large loss (Q4 2025), a small loss (Q1 2026), and a return to profit (Q2 2026), so it is premature to conclude a stable profitable trend has taken hold. The company has not paid cash dividends recently, resulting in a 0% dividend yield, giving it a different investment profile compared to dividend-paying peers in the semiconductor equipment sector. Given the historical earnings volatility—swinging between profitability in 2023 and losses in 2024-2025—market attention is focused on whether the current HBM4-related earnings improvement proves to be a one-off rebound or a sustained trend."
  },
  "bull": [
   {
    "title": {
-    "ko": "HBM4 공급망 첫 진입과 고단가 장비 수혜",
-    "en": "HBM4 Supply Chain Entry and High-ASP Equipment Tailwind"
+    "ko": "HBM4 벤더 진입과 잇단 공급계약",
+    "en": "HBM4 Vendor Entry and Successive Supply Contracts"
    },
    "body": {
-    "ko": "2026년 3월 SK하이닉스 HBM4용 번인테스터 양산 퀄테스트를 최초로 완료하고 5월 291.6억원 규모 공급 계약을 공시하며 사상 처음으로 HBM 공급망에 진입했다. HBM4용 테스터는 기존 D램 장비 대비 단가가 2~3배 높아 소량 납품으로도 수익성 개선 효과가 상당하다. HBM은 세대가 바뀔 때마다 테스터를 교체해야 하는 구조여서 반복 수주 가능성이 높으며, SK하이닉스의 M15X·청주 P&T 팹 증설과 맞물려 연간 단위 지속 발주가 기대된다.",
-    "en": "UniTest entered the HBM supply chain for the first time after completing HBM4 mass-production burn-in tester qualification with SK Hynix in March 2026 and disclosing a KRW 29.16B supply contract in May. HBM4-generation testers command unit prices two-to-three times higher than standard DRAM equipment, amplifying margin improvement potential even at relatively modest delivery volumes. The structural requirement to replace testers with each HBM generation transition supports high order recurrence, and SK Hynix's ongoing M15X and Cheongju P&T fab expansion underpins expectations for sustained annual order flow."
+    "ko": "유니테스트는 2026년 5월 SK하이닉스와 291.6억원 규모의 HBM4 웨이퍼 테스터 공급계약을 체결했고, 이후 227억원 규모의 두 번째 계약을 추가로 확보했다. 두 계약 모두 2025년 매출 대비 상당한 비중을 차지하는 규모로, 성능평가 통과 이후 실제 양산 물량으로 이어지고 있음을 보여준다. HBM4는 이전 세대보다 검증 요구 수준이 높아 번인 테스터의 역할이 커지는 구조여서, 초기 진입에 성공한 점은 향후 추가 발주 가능성과 연결된다.",
+    "en": "UniTest signed a KRW 29.16bn HBM4 wafer tester supply contract with SK hynix in May 2026, followed by a second contract worth KRW 22.7bn. Both contracts represent a meaningful share of 2025 revenue, indicating that passing performance evaluation has translated into actual mass-production orders. HBM4 requires higher verification standards than prior generations, elevating the role of burn-in testers, and this early entry could be linked to potential future orders."
    }
   },
   {
    "title": {
-    "ko": "복합 성장 동력: SSD 테스터 + 중국 메모리 D램 증설",
-    "en": "Multi-Vector Growth: SSD Testers + Chinese Memory DRAM Expansion"
+    "ko": "2분기 실적 턴어라운드",
+    "en": "Q2 Earnings Turnaround"
    },
    "body": {
-    "ko": "AI 서버 확산에 따른 고성능 SSD 수요 급증이 번인 테스트 장비 수요를 뒷받침하며, 국내·북미 고객사에 낸드·SSD 테스터를 이미 납품 중이다. 중국 메모리 업체 CXMT·YMTC가 2026년 2분기부터 월 30~40K 규모의 D램 라인 증설 장비 발주를 시작할 것으로 전망되며, 유니테스트는 이들과 협업 관계를 이미 구축하고 있다. HBM4 고단가 장비, SSD 테스터, 중국향 D램 장비라는 세 가지 성장 축이 동시에 가동되면 외형 급성장과 수익성 개선이 함께 나타날 수 있다.",
-    "en": "Surging AI-server-driven high-performance SSD demand provides solid underpinning for burn-in tester orders, with UniTest already shipping NAND/SSD testers to domestic and North American customers. Chinese memory makers CXMT and YMTC are expected to begin equipment orders for DRAM capacity additions of 30–40K per month from 2026Q2, and UniTest has pre-established relationships with both. The simultaneous activation of three revenue drivers — HBM4 high-ASP testers, SSD burn-in testers, and Chinese DRAM line equipment — creates a scenario where both revenue scale and profitability improvement materialize concurrently."
+    "ko": "2026년 2분기 매출은 505억원으로 전분기 대비 두 배 이상 증가했고, 영업이익은 78.8억원, 지배주주순이익은 67.5억원으로 흑자 전환에 성공했다. 이는 2025년 4분기의 대규모 손실 이후 실적 회복 신호로 해석될 수 있다. 매출 규모 자체가 커진 만큼 고정비 부담이 완화되며 마진 개선으로 이어진 것으로 보인다.",
+    "en": "Q2 2026 revenue more than doubled quarter-on-quarter to KRW 50.5bn, with operating profit of KRW 7.88bn and owners' net income of KRW 6.75bn marking a return to profitability. This can be read as a recovery signal following the large Q4 2025 loss. The larger revenue base appears to have eased fixed-cost burden, contributing to margin improvement."
    }
   },
   {
    "title": {
-    "ko": "페로브스카이트 태양전지 — 장기 성장 옵션",
-    "en": "Perovskite Solar Cells — Long-Term Growth Option"
+    "ko": "반도체·에너지 이중 포트폴리오",
+    "en": "Dual Semiconductor-Energy Portfolio"
    },
    "body": {
-    "ko": "한국화학연구원과의 공동 연구로 대면적 셀(200cm² 이상) 광전변환 효율 20.6%라는 세계 최고 수준을 달성했으며, 2024년 12월 IoT 기기용 소형 제품의 첫 양산 출하식을 개최했다. 한국전력과의 유리창호형 태양전지 공동 개발 MOU, 한국 정부의 탠덤셀 R&D 사업단 지원 등이 상용화 모멘텀을 지지하고 있다. BIPV·VIPV 등 틈새 시장을 타깃으로 대형 플레이어와의 직접 경쟁을 최소화하는 전략은 차별화 포인트이며, 향후 매출이 본격화될 경우 새로운 수익원으로 부각될 수 있다.",
-    "en": "In collaboration with the Korea Research Institute of Chemical Technology, UniTest achieved a world-record large-area cell efficiency of 20.6% (for cells ≥200cm²) and held an inaugural commercial shipment ceremony for small-format IoT perovskite cells in December 2024. A joint development MOU with KEPCO for window-integrated perovskite cells and government support via a dedicated tandem-cell R&D consortium provide additional commercialization momentum. Targeting BIPV and VIPV niche applications — minimizing direct competition with large-scale manufacturers — is a key differentiation point, and meaningful commercial scale-up could eventually add a new revenue stream to the portfolio."
+    "ko": "유니테스트는 자사 SSD 번인 테스트 장비의 자동화 비중을 높여 글로벌 3대 SSD 제조사 중 2곳에 납품하고 있는 것으로 알려졌다. 동시에 2025년 7월 솔라원사호와 268.67억원 규모의 태양광발전소 건설공사 계약을 체결해 2027년 12월까지 그린에너지 사업 매출을 이어갈 기반을 마련했다. 페로브스카이트 태양전지 개발도 병행하고 있어, 반도체 업황 사이클에 대한 의존도를 일부 분산시키는 구조를 갖고 있다.",
+    "en": "UniTest is reported to supply SSD burn-in test equipment to two of the world's top three SSD manufacturers, aided by higher automation. It also signed a KRW 26.87bn solar power plant construction contract with SolarOne No.4 in July 2025, running through December 2027, securing a base for continued green-energy revenue. Parallel development of perovskite solar cells further diversifies its exposure away from the semiconductor cycle alone."
    }
   }
  ],
  "bear": [
   {
    "title": {
-    "ko": "세컨 벤더 지위와 HBM 물량 불확실성",
-    "en": "Second-Vendor Status and HBM Volume Uncertainty"
+    "ko": "2024~2025년 연속 적자와 재무 부담 확대",
+    "en": "Consecutive 2024-2025 Losses and Rising Financial Strain"
    },
    "body": {
-    "ko": "디아이(디지털프론티어)가 SK하이닉스 HBM4 번인테스터 퍼스트 벤더로 선진입한 가운데, 유니테스트는 세컨 벤더 위치에 있다. HBM의 고대역폭 성능 테스트 항목은 여전히 어드반테스트만 수행 가능한 영역으로 알려져 있어, 유니테스트의 실질 공급 비중이 제한될 수 있다. DDR5용 번인테스터 퀄 통과 후 납품 데드라인을 지키지 못해 수주에 실패한 전례가 있어, 납품 일정 준수 여부가 지속적으로 핵심 실행 변수로 남는다.",
-    "en": "DiAi (Digital Frontier) preceded UniTest as first vendor in the SK Hynix HBM4 burn-in tester supply chain, leaving UniTest in the second-vendor position. High-bandwidth performance testing — the most critical component of HBM burn-in — is reportedly still exclusive to Advantest, potentially capping UniTest's effective share of overall HBM test equipment revenue. The precedent of UniTest failing to win a DDR5 burn-in tester order after passing qualification — due to a missed delivery deadline — underscores ongoing execution and schedule adherence risk."
+    "ko": "2024년 영업손실 234억원, 2025년 영업손실 211억원으로 2년 연속 적자를 기록했고, 특히 2025년 4분기에는 영업손실이 123억원까지 확대됐다. 이 기간 지배주주지분은 2023년 1,478억원에서 2025년 970억원으로 줄었고 부채비율은 33.0%에서 82.3%로 크게 상승했다. 2026년 2분기 흑자 전환이 이러한 손실 누적 흐름을 완전히 상쇄했다고 보기는 아직 이르다.",
+    "en": "The company posted operating losses of KRW 23.4bn in 2024 and KRW 21.1bn in 2025, with the loss widening to KRW 12.3bn in Q4 2025 alone. Over this period owners' equity fell from KRW 147.8bn in 2023 to KRW 97.0bn in 2025, while the debt ratio rose sharply from 33.0% to 82.3%. It remains too early to conclude that the Q2 2026 return to profit has fully offset this accumulated loss trend."
    }
   },
   {
    "title": {
-    "ko": "재무 구조 취약성 — 부채비율 급등과 지속적 현금 소비",
-    "en": "Financial Vulnerability — Surging Leverage and Persistent Cash Burn"
+    "ko": "글로벌 선두업체와의 경쟁, 후발 진입 구조",
+    "en": "Competing Against Global Leaders as a Later Entrant"
    },
    "body": {
-    "ko": "부채비율이 2023년 33.0%에서 2025년 82.3%로 불과 2년 만에 49.3%p 급등했으며, 2022·2024·2025년 3개 연도에 영업현금흐름이 마이너스를 기록하는 등 현금 소비가 누적되고 있다. 2025년 기말 지배주주 자본총계가 970억원으로 2023년 대비 약 34% 감소해 연속 적자에 따른 자본 잠식 압박이 가중되고 있다. 흑자 전환이 지연될 경우 추가 차입이나 주주 희석을 동반하는 유상증자 가능성을 배제하기 어렵다.",
-    "en": "The debt ratio surged by 49.3 percentage points from 33.0% in 2023 to 82.3% in 2025 in just two years, while operating cash flow was negative in FY2022, FY2024, and FY2025 — reflecting persistent and cumulative cash burn. Controlling shareholders' equity declined approximately 34% from the 2023 level to KRW 97.0B by end-2025, intensifying equity erosion concerns from consecutive annual losses. A delayed profitability turnaround could necessitate additional borrowings or a dilutive rights offering — risks that are difficult to dismiss given the current trajectory."
+    "ko": "글로벌 HBM IC 테스터 시장은 테라다인과 어드반테스트가 양강 구도를 형성하고 있으며, 어드반테스트는 웨이퍼 번인 테스트(WFBI) 부문의 글로벌 최강자로 꼽힌다. SK하이닉스의 벤더 이원화 과정에서도 디아이가 협력사 중 가장 먼저 퀄 테스트를 마무리해 초도 주문에 대응한 것으로 알려져, 유니테스트는 상대적으로 후발 진입자에 해당한다. 국내에서도 와이씨, 엑시콘 등 복수 업체가 동일 시장을 놓고 경쟁하고 있어 점유율 확보 경쟁이 지속될 전망이다.",
+    "en": "The global HBM IC tester market is led by a Teradyne-Advantest duopoly, with Advantest regarded as the global leader in wafer burn-in (WFBI) testing. In SK hynix's vendor diversification process, DI reportedly completed qualification testing first among partners to respond to initial orders, positioning UniTest as a relatively later entrant. Domestically, multiple firms including YC and Exicon also compete in the same market, suggesting the battle for market share will continue."
    }
   },
   {
    "title": {
-    "ko": "태양광 EPC 매출 변동성과 페로브스카이트 상용화 지연",
-    "en": "Solar EPC Revenue Volatility and Perovskite Commercialization Delays"
+    "ko": "그린에너지 사업의 사업 성격 차이",
+    "en": "Differing Business Nature of the Green-Energy Segment"
    },
    "body": {
-    "ko": "태양광 EPC 사업 매출은 연도 간 극심한 변동성을 보여 2022년 약 501억원, 2023년 약 719억원, 2024년 약 235억원으로 등락했다(딜사이트 집계 기준). 이는 프로젝트 발주 타이밍과 금리·정책 환경에 크게 좌우되는 사업 구조적 한계를 반영한다. 페로브스카이트 태양전지는 누적 100억원 이상의 R&D를 투입했으나 상용화 일정이 여러 차례 지연된 이력이 있어, IoT 소형 제품 이후 대규모 매출 기여 시점은 여전히 불확실하다.",
-    "en": "Solar EPC revenues have shown extreme year-to-year swings: approximately KRW 50.1B (2022), KRW 71.9B (2023), and KRW 23.5B (2024) per Dealsite data — reflecting the structural dependence on project award timing, interest rate conditions, and policy shifts. This inherent volatility limits the segment's reliability as a stable earnings buffer. Perovskite solar cell development has consumed over KRW 10B in cumulative R&D but has experienced repeated commercialization delays, leaving the timing of large-scale revenue contribution — beyond the initial IoT applications — highly uncertain."
+    "ko": "유니테스트는 2009년부터 태양광발전시스템 건설공사 EPC 사업을 정부 및 민자사업 입찰을 통해 수행하고 있는데, 이는 반도체 검사장비와는 마진 구조와 수익 인식 방식이 다른 건설형 사업이다. 태양광 EPC 계약은 건별로 규모와 수익성이 달라 실적 변동성을 키우는 요인이 될 수 있다. 반도체 부문의 실적 개선과 별개로 그린에너지 부문의 수익성 추이를 함께 살펴볼 필요가 있다.",
+    "en": "Since 2009, UniTest has undertaken solar power plant EPC construction through government and private-sector bids, a construction-type business with a different margin structure and revenue recognition method than semiconductor test equipment. Solar EPC contracts vary in scale and profitability on a deal-by-deal basis, which can add to earnings volatility. Separate from improvements in the semiconductor segment, the profitability trend of the green-energy segment warrants continued monitoring."
    }
   }
  ],
  "risks": [
   {
    "cat": {
-    "ko": "반도체 업황 사이클 및 HBM 수요 변동 리스크",
-    "en": "Semiconductor Cycle and HBM Demand Variability Risk"
+    "ko": "고객 집중 리스크",
+    "en": "Customer Concentration Risk"
    },
    "body": {
-    "ko": "메모리 반도체 업황은 공급과잉·수요 변동에 따른 사이클이 뚜렷하며, 2024년처럼 업황이 침체될 경우 주요 고객사의 설비 투자가 급격히 줄어 수주도 동반 감소할 수 있다. HBM 시장도 AI 투자 사이클에 연동되어 있어, 거시경제 불확실성이나 AI 반도체 수요 둔화 시 후공정 테스터 수요가 타격을 받을 수 있다. 이미 공시된 292억원 계약 이후 추가 발주도 고객사의 생산 계획 조정에 따라 지연될 가능성을 배제할 수 없다.",
-    "en": "Memory semiconductor cycles — characterized by periodic demand-supply imbalances — can trigger rapid reductions in customer capex, as vividly demonstrated in 2024, directly cutting UniTest's order intake. The HBM market is tied to AI investment cycles, meaning macroeconomic headwinds or softening AI chip demand could weigh on back-end tester orders. Even following the disclosed KRW 29.2B contract, subsequent orders could be deferred if SK Hynix adjusts its HBM production ramp plans."
+    "ko": "유니테스트는 메모리 및 시스템 반도체용 검사장비를 개발·공급하는 기업으로, 삼성전자와 SK하이닉스를 주요 고객사로 두고 있다. 소수 고객사에 대한 매출 의존도가 높은 구조상 특정 고객사의 발주 지연이나 벤더 정책 변화가 실적에 직접적인 영향을 줄 수 있다.",
+    "en": "UniTest develops and supplies inspection equipment for memory and system semiconductors, with Samsung Electronics and SK hynix as its major customers. Given the high revenue dependence on a small number of customers, order delays or vendor policy shifts by either customer could directly affect earnings."
    }
   },
   {
    "cat": {
-    "ko": "HBM4 납품 실행 리스크 — 일정·품질·점유율",
-    "en": "HBM4 Delivery Execution Risk — Timeline, Quality, and Share Allocation"
+    "ko": "벤더 인증·퀄테스트 지연 리스크",
+    "en": "Vendor Qualification and Qual-Test Delay Risk"
    },
    "body": {
-    "ko": "양산 퀄테스트는 완료됐으나 실제 고객사 생산 공정에서 장비 성능이 기대에 미치지 못할 경우 공급 물량이 삭감되거나 재검증 절차가 요구될 수 있다. 퍼스트 벤더인 디아이가 공급망을 선점한 상황에서 유니테스트의 점유율 확대 속도가 예상보다 느릴 경우 증권사 실적 추정치의 하향 조정 리스크가 현실화될 수 있다. DDR5 번인테스터 수주 실패 전례를 감안하면 납품 일정 준수가 계속해서 핵심 실행 변수로 작용한다.",
-    "en": "Although mass-production qualification has been completed, in-production performance shortfalls could lead to volume reductions or re-qualification demands. With first-vendor DiAi already embedded in the supply chain, slower-than-expected share gains by UniTest could trigger downward revisions to brokerage earnings estimates. Given the precedent of losing a DDR5 burn-in tester order despite passing qualification — due to a delivery timeline miss — schedule adherence remains a critical execution variable."
+    "ko": "업계에서는 과거 유니테스트가 SK하이닉스 샘플 제조라인에 데모 타입 번인테스터를 입고한 뒤 3~4개월의 퀄 테스트를 거쳐 정식 발주를 받는 절차를 거친 사례가 있었다. 실제로 한 증권사 리포트는 퀄 테스트 지연으로 HBM 시장 진입 시기가 하반기로 늦춰지며 실적 추정치가 하향된 바 있다고 언급했다. 신규 장비의 인증 절차가 지연되면 예상보다 매출 반영 시점이 늦어질 수 있다.",
+    "en": "Industry sources have noted a past instance where UniTest delivered a demo-type burn-in tester to SK hynix's sample line, followed by three-to-four months of qualification testing before receiving formal orders. One brokerage report noted that qual-test delays had previously pushed back the timing of HBM market entry to the second half, leading to lowered earnings estimates. Delays in qualification procedures for new equipment could postpone the timing of revenue recognition beyond expectations."
    }
   },
   {
    "cat": {
-    "ko": "재무 유동성 및 자본 조달 리스크",
-    "en": "Liquidity and Capital Structure Risk"
+    "ko": "반도체 자본투자 사이클 민감도",
+    "en": "Sensitivity to Semiconductor Capex Cycles"
    },
    "body": {
-    "ko": "3개 연도 영업현금흐름 적자와 82.3%의 부채비율 속에서 흑자 전환이 예상보다 지연된다면 추가 차입이나 유상증자로 이어질 가능성이 있다. 지배주주 자본이 2023년 대비 약 34% 감소해 완충 여력이 줄었으며, HBM4 납품 및 추가 퀄 대응을 위한 자본 지출 부담도 잠재적 압박 요인이다. 지속적인 음(-)의 현금흐름이 이어질 경우 신용 조건 악화나 대출 비용 증가로 자금 조달 여건이 어려워질 수 있는 점도 감안해야 한다.",
-    "en": "With operating cash flow negative in three of the past four fiscal years and the debt ratio at 82.3%, a profitability turnaround that takes longer than expected could necessitate additional debt or a dilutive equity offering. Controlling shareholders' equity has declined approximately 34% from the 2023 level, reducing the balance-sheet buffer; capex requirements for HBM4 delivery ramp-up and future qualification efforts represent latent cost pressures. Sustained negative cash flow could also lead to tightening credit conditions or higher borrowing costs, complicating future funding needs."
+    "ko": "유니테스트의 장비 수주는 SK하이닉스·삼성전자 등 메모리 제조사의 HBM·낸드 캐파 증설 계획에 직접 연동되어 있다. 한 증권사는 2026년 SK하이닉스의 HBM 캐파 증가분을 소화하기 위한 신규 장비 수요를 약 360대로 추산했는데, 이러한 캐파 증설 계획이 지연되거나 축소될 경우 장비 발주 규모도 함께 영향을 받을 수 있다.",
+    "en": "UniTest's equipment orders are directly tied to the HBM and NAND capacity expansion plans of memory makers such as SK hynix and Samsung Electronics. One brokerage estimated roughly 360 units of new equipment demand needed to absorb SK hynix's 2026 HBM capacity increase; if such capacity expansion plans are delayed or scaled back, equipment order volumes could be affected accordingly."
    }
   }
  ],
  "checkpoints": [
   {
    "when": {
-    "ko": "2026년 8월 31일",
+    "ko": "2026년 8월31일",
     "en": "August 31, 2026"
    },
    "what": {
-    "ko": "DART 공시 HBM4 웨이퍼 테스터 공급 계약(291.6억원) 이행 기한. 납품 완료 여부와 초도 계약 이후 추가 발주 수령 여부가 2026년 HBM 매출 가시화의 최우선 확인 지점이다.",
-    "en": "Deadline for the DART-disclosed HBM4 wafer tester supply contract (KRW 29.16B). Confirmation of delivery completion and receipt of follow-on orders will be the primary near-term milestone for HBM revenue visibility in 2026."
+    "ko": "SK하이닉스와 체결한 첫 HBM4 웨이퍼 테스터 공급계약(291.6억원)의 만료 시점으로, 후속 계약 체결이나 물량 연장 여부를 확인할 필요가 있다.",
+    "en": "Expiry date of the first HBM4 wafer tester supply contract with SK hynix (KRW 29.16bn); worth checking whether a follow-on contract or volume extension is signed."
    }
   },
   {
    "when": {
-    "ko": "2026년 8월 중순 (2026Q2 실적 발표)",
-    "en": "Mid-August 2026 (2026Q2 Earnings Release)"
+    "ko": "2026년 10월8일",
+    "en": "October 8, 2026"
    },
    "what": {
-    "ko": "HBM4 초도 납품 매출 반영 여부, 중국 고객사 D램 장비 발주 효과, 태양광 EPC 수주 회복 추이를 확인. 영업이익의 흑자 전환 달성 여부가 밸류에이션 재평가 신호가 될 수 있다.",
-    "en": "Confirm whether initial HBM4 tester deliveries are reflected in revenue, whether Chinese DRAM equipment orders are materializing, and whether solar EPC bookings are recovering. An operating profit turn to positive would serve as a key signal for valuation re-rating."
+    "ko": "두 번째 HBM4 웨이퍼 테스터 공급계약(227억원)의 만료 시점으로, 추가 발주 공시 여부를 확인할 시점이다.",
+    "en": "Expiry date of the second HBM4 wafer tester supply contract (KRW 22.7bn); a point to check for any additional order disclosures."
    }
   },
   {
    "when": {
-    "ko": "2026년 하반기 (지속 모니터링)",
-    "en": "2H 2026 (Ongoing Monitoring)"
+    "ko": "2026년 3분기 실적 발표(11월경)",
+    "en": "Q3 2026 earnings release (around November)"
    },
    "what": {
-    "ko": "SK하이닉스향 HBM4 번인테스터 추가 발주 및 누적 납품 대수 추이 확인. 한국투자증권이 제시한 연간 108대 전망치 대비 실제 납품량이 투자 시나리오 현실화의 핵심 잣대다.",
-    "en": "Track incremental HBM4 burn-in tester order announcements and cumulative delivery units to SK Hynix. Actual unit count versus the Korea Investment Securities forecast of 108 units for FY2026 is the key benchmark for the recovery scenario."
+    "ko": "2분기 흑자 전환이 3분기에도 이어지는지, HBM4 관련 매출이 실제로 얼마나 반영되는지 확인이 필요하다.",
+    "en": "Check whether the Q2 return to profit continues into Q3, and how much HBM4-related revenue is actually reflected."
    }
   },
   {
    "when": {
-    "ko": "2026년 11월 중순 (2026Q3 실적 발표)",
-    "en": "Mid-November 2026 (2026Q3 Earnings Release)"
+    "ko": "2027년 12월 말까지",
+    "en": "Through end of December 2027"
    },
    "what": {
-    "ko": "HBM4 테스터 납품 누적 효과, 태양광 EPC 물량 인식, 중국향 D램 장비 매출이 복합적으로 나타나는 구간. 역사적으로 매출 집중도가 높은 3분기 실적이 연간 흑자 전환 달성 가능성의 분기점이 될 수 있다.",
-    "en": "The convergence of cumulative HBM4 tester deliveries, solar EPC revenue recognition, and Chinese DRAM equipment sales makes this a pivotal quarter for assessing full-year profitability prospects. Historically a high-demand period, 3Q results could determine whether the annual turnaround scenario is achievable."
-   }
-  },
-  {
-   "when": {
-    "ko": "2026~2027년 (중기)",
-    "en": "2026–2027 (Medium Term)"
-   },
-   "what": {
-    "ko": "페로브스카이트 태양전지의 BIPV·VIPV 고객사 확보 및 매출 규모화 여부. IoT용 소형 전지 첫 출하 이후 대면적 상업화로의 전환 속도가 신사업 가치 실현의 핵심 변수다.",
-    "en": "Progress in securing BIPV and VIPV customers and scaling perovskite solar cell revenues beyond the initial IoT applications. The pace of transition from small-format IoT shipments to large-area commercial deployment is the key variable for realizing new-business value."
+    "ko": "솔라원사호와 체결한 태양광발전소 건설공사 계약(268.67억원)의 진행 상황과 그린에너지 사업 매출 기여 지속 여부를 점검할 필요가 있다.",
+    "en": "Progress of the KRW 26.87bn solar power plant construction contract with SolarOne No.4 and whether the green-energy segment's revenue contribution continues should be monitored."
    }
   }
  ],
  "verdict": {
   "body": {
-   "ko": "유니테스트는 2026년 SK하이닉스 HBM4 번인테스터 공급망에 처음 진입하며 잠재적 사업 변곡점에 서 있다. 291.6억원 규모 초도 공급 계약과 하반기 본격 납품 계획, 중국 메모리 업체 D램 증설 수혜, AI 서버향 SSD 테스터 수요 확대 등 복수의 성장 요인이 맞물리며 2024~2025년의 연속 적자에서 벗어나는 전환 가능성이 높아지고 있다. 그러나 세컨 벤더로서의 지위, 2025년 82.3%까지 급등한 부채비율, 3개 연도에 걸친 영업현금흐름 적자 등 재무 구조의 취약성은 회복 과정에서 구조적 제약으로 작용한다. 페로브스카이트 태양전지 사업은 세계 최고 수준의 효율 성과와 초기 상업화 단계 진입을 갖춘 장기 옵션이나, 상용화 지연 이력과 의미 있는 매출 기여까지의 시간 간격이 남아 있다. 2026년 8월 말 HBM4 테스터 납품 이행 여부, 분기 영업이익 흑자 전환 시점, 추가 수주 규모, 그리고 재무 부담 완화 여부를 단계적으로 점검하는 접근이 유효하다. 회사의 구조적 이익 창출 능력 회복 여부가 향후 기업 가치 방향을 결정하는 핵심 변수가 될 전망이다.",
-   "en": "UniTest stands at a potential business inflection point, having entered SK Hynix's HBM4 burn-in tester supply chain for the first time in 2026. An initial KRW 29.16B supply contract with deliveries expected in 2H 2026, anticipated benefit from Chinese memory maker DRAM capacity expansion, and growing AI-server SSD tester demand collectively raise the prospect of breaking out of the 2024–2025 consecutive loss streak. Nevertheless, the second-vendor position, the debt ratio that surged to 82.3% in 2025, and negative operating cash flow in three of the past four fiscal years represent structural constraints on the pace and durability of recovery. The perovskite solar cell business offers world-class efficiency credentials and early commercial traction as a long-term option, but a history of commercialization delays and the time needed to meaningfully scale revenues remain as moderating factors. Monitoring HBM4 delivery completion by end-August 2026, the timing of a quarterly operating profit turn to positive, the magnitude of follow-on order wins, and whether financial leverage begins to ease are the key sequential proof points to track. Ultimately, the company's ability to restore structural earnings power will be the central determinant of its longer-term valuation direction."
+   "ko": "유니테스트는 2026년 2분기 매출 505억원, 영업이익 78.8억원으로 뚜렷한 실적 턴어라운드를 기록했으며, 이는 SK하이닉스와 체결한 HBM4 웨이퍼 테스터 공급계약이 실제 매출로 이어지기 시작했음을 보여준다. 그러나 2024~2025년 2년 연속 영업손실과 2025년 4분기의 대규모 적자, 그리고 그 결과로 상승한 부채비율은 여전히 실적 안정성에 대한 의문을 남긴다. 산업 측면에서는 어드반테스트·테라다인이 여전히 시장을 주도하고 국내에서도 디아이 등 경쟁사가 앞서 있어, 유니테스트의 벤더 지위가 얼마나 확고해지는지가 관전 포인트다. 반도체 검사장비 외에 태양광 EPC와 페로브스카이트 태양전지 사업을 병행하는 구조는 매출원을 다변화하지만 동시에 사업별 마진 성격이 달라 실적 해석을 복잡하게 만든다. 8월31일과 10월8일로 예정된 HBM4 계약 만료 시점, 그리고 3분기 실적 발표는 이번 흑자 전환이 일시적 반등인지 지속 가능한 흐름인지를 판단할 다음 단서가 될 것이다. 투자 판단에 앞서 개별 계약의 후속 진행 상황과 분기별 실적 발표를 지속적으로 확인하는 접근이 필요하다.",
+   "en": "UniTest posted a clear earnings turnaround in Q2 2026, with revenue of KRW 50.5bn and operating profit of KRW 7.88bn, indicating that its HBM4 wafer tester supply contracts with SK hynix have begun translating into actual revenue. However, two consecutive years of operating losses in 2024-2025, the large Q4 2025 loss, and the resulting rise in the debt ratio still leave questions about earnings stability. On the industry side, Advantest and Teradyne continue to lead the market, and domestic rival DI has moved ahead in vendor qualification, making the durability of UniTest's vendor position a key point to watch. The parallel structure of semiconductor test equipment alongside solar EPC and perovskite solar cell businesses diversifies revenue sources but also complicates earnings interpretation given differing margin profiles across segments. The upcoming HBM4 contract expiries on August 31 and October 8, along with the Q3 earnings release, will provide the next clues as to whether this return to profit is a temporary rebound or a sustained trend. Before drawing conclusions, continued monitoring of individual contract follow-throughs and quarterly earnings releases is warranted."
   }
  },
  "sources": [
-  "https://comp.fnguide.com/SVO2/ASP/SVD_Main.asp?gicode=A086390",
-  "https://comp.fnguide.com/SVO2/asp/SVD_Finance.asp?pGB=1&gicode=A086390&MenuYn=Y&ReportGB=B&NewMenuID=103&stkGb=701",
-  "https://comp.fnguide.com/SVO2/asp/SVD_Invest.asp?pGB=1&gicode=A086390&MenuYn=Y&ReportGB=B&NewMenuID=105&stkGb=701",
-  "https://www.investing.com/equities/unitest-inc-earnings",
-  "https://www.investing.com/equities/unitest-inc",
-  "https://comp.wisereport.co.kr/company/c1010001.aspx?cmp_cd=086390",
-  "https://littlebproject.com/stock/086390",
+  "https://www.k5.co.kr/stock/086390?site_type=n",
   "https://www.valueline.co.kr/finance/summary/086390",
+  "https://comp.fnguide.com/SVO2/ASP/SVD_Main.asp?pGB=1&gicode=A086390&cID=&MenuYn=Y&ReportGB=D&NewMenuID=Y&stkGb=701",
+  "https://m.thinkpool.com/compDiscuss/cont/1019823",
   "https://antwinner.com/stock/%EC%9C%A0%EB%8B%88%ED%85%8C%EC%8A%A4%ED%8A%B8",
+  "http://www.uni-test.com/",
+  "https://m.thinkpool.com/item/086390",
+  "https://www.mt.co.kr/stock/2026/02/10/2026021006347080216",
+  "https://unips.co.kr/%EC%9C%A0%EB%8B%88%ED%85%8C%EC%8A%A4%ED%8A%B8-sk%ED%95%98%EC%9D%B4%EB%8B%89%EC%8A%A4-hbm4-%EA%B2%80%EC%82%AC%EC%9E%A5%EB%B9%84-%EA%B3%B5%EA%B8%89-%EC%88%98%ED%98%9C%EC%99%80-2026%EB%85%84-%EC%A3%BC/",
   "https://www.pinpointnews.co.kr/news/articleView.html?idxno=389615",
-  "https://dealsite.co.kr/articles/139224",
   "https://zdnet.co.kr/view/?no=20251024092800",
-  "https://www.uni-test.com/",
+  "https://www.sisajournal-e.com/news/articleView.html?idxno=422853",
+  "https://v.daum.net/v/20260512102105677",
   "https://files-scs.pstatic.net/2025/12/13/bkYYoN46xM/[%EB%B8%8C%EB%A6%AC%ED%95%91]%20HBM%20IC%20%ED%85%8C%EC%8A%A4%ED%8A%B8%20%EC%9E%A5%EB%B9%84%20%EC%8B%9C%EC%9E%A5%EC%A1%B0%EC%82%AC%EB%B3%B4%EA%B3%A0%EC%84%9C_qyresearch%20korea.pdf",
+  "https://biz.heraldcorp.com/article/10735809",
   "https://www.greened.kr/news/articleView.html?idxno=322441",
-  "http://www.dailyinvest.kr/news/articleView.html?idxno=70451",
-  "https://dealsite.co.kr/articles/142614",
-  "https://www.widedaily.com/news/articleView.html?idxno=277019"
+  "https://comp.wisereport.co.kr/company/c1010001.aspx?cmp_cd=086390",
+  "https://www.investing.com/equities/unitest-inc-earnings"
  ],
  "v": 2,
- "model": "claude-sonnet-4-6",
+ "model": "claude-sonnet-5",
  "ticker": "086390",
  "name": "유니테스트",
  "name_en": "UniTestInc.",
@@ -233,11 +223,11 @@
   "반도체"
  ],
  "market": "코스닥",
- "reportDate": "2026-06-18",
- "reportTs": "2026-06-18 23:35",
- "dataDate": "20260618",
+ "reportDate": "2026-08-18",
+ "reportTs": "2026-08-18 00:50",
+ "dataDate": "20260814",
  "quant": {
-  "asOf": "2026-06-18",
+  "asOf": "2026-08-17",
   "fs_basis": "연결(CFS) · DART 공시 확정치 · 지배주주 기준 순이익",
   "annual": [
    {
@@ -303,12 +293,6 @@
   ],
   "quarterly": [
    {
-    "q": "2025Q1",
-    "rev": 22397114606,
-    "op": -3988571770,
-    "np_owner": -4347370714
-   },
-   {
     "q": "2025Q2",
     "rev": 29198075486,
     "op": -4392442188,
@@ -331,22 +315,28 @@
     "rev": 22398798739,
     "op": -2532996755,
     "np_owner": -568017111
+   },
+   {
+    "q": "2026Q2",
+    "rev": 50527384903,
+    "op": 7880932740,
+    "np_owner": 6750119160
    }
   ],
   "valuation": {
-   "price": 15030,
-   "mcap": 0.3176,
+   "price": 10630,
+   "mcap": 0.2247,
    "shares": 21134126,
    "total_shares": 21134126,
-   "wavg_shares": 20286325,
+   "wavg_shares": 19625720,
    "per": null,
-   "eps": -836,
-   "pbr": 3.15,
-   "bps": 4776,
-   "roe_ttm": -16.1,
-   "ttm_window": "2025Q2~2026Q1",
-   "ttm_np_owner": -17006633459,
-   "pbr_krx": 3.02,
+   "eps": null,
+   "pbr": 2.0,
+   "bps": 5322,
+   "roe_ttm": -4.2,
+   "ttm_window": "2025Q3~2026Q2",
+   "ttm_np_owner": -4421279453,
+   "pbr_krx": 2.23,
    "bps_krx": 4773.0,
    "basis": "PER·EPS·PBR·BPS 모두 자체 산출(네이버·토스와 동일 방식) · 배당은 DART 공시 주당현금배당금(보완:KRX) ÷ 현재가",
    "dps": 0.0,

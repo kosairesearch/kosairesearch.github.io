@@ -1,230 +1,220 @@
 {
  "title": {
-  "ko": "수익성 저점 탈출 모색 — SAF 밸류체인 과도기",
-  "en": "Navigating the Profitability Trough: SAF Value Chain in Transition"
+  "ko": "SAF 전환기, 이익 반등과 담합수사 리스크 공존",
+  "en": "SAF Transition: Profit Rebound Meets Cartel Probe Risk"
  },
  "lead": {
-  "ko": "바이오디젤 마진 압박으로 2년 연속 순손실이 이어지는 가운데, HVO·SAF 밸류체인 구축이 중장기 수익성 회복의 핵심 관건으로 부상하고 있다.",
-  "en": "With two consecutive years of net losses driven by biodiesel margin pressure, DS Dansuk's build-out of an HVO/SAF value chain has emerged as the pivotal catalyst for medium-to-long-term profitability recovery."
+  "ko": "DS단석은 2026년 2분기 순이익 흑자전환에 성공했지만, 바이오디젤 담합 의혹에 대한 검찰 수사와 다년간 이어진 수익성 저하가 동시에 진행 중이다.",
+  "en": "DS Dansuk swung back to net profit in Q2 2026, but a prosecutorial probe into alleged biodiesel price-fixing and a multi-year profitability decline remain live issues in parallel."
  },
  "keypoints": [
   {
-   "ko": "국내 바이오디젤 수출의 약 70%를 점유하는 1위 사업자이나, 글로벌 경쟁 심화와 원료 연동 제품가 하락으로 영업이익률이 2023년 7.1%에서 2025년 0.8%로 3년 연속 급락",
-   "en": "Market leader with ~70% share of Korea's biodiesel exports, but OPM fell sharply from 7.1% (2023) to 0.8% (2025) as global competition intensified and commodity-linked product prices declined"
+   "ko": "2026년 2분기 매출 3,101억원, 영업이익 62.9억원, 지배주주순이익 25.2억원으로 5개 분기 만에 순이익 흑자전환",
+   "en": "Q2 2026 revenue of KRW 310.1bn, operating profit KRW 6.29bn, and owners' net income of KRW 2.52bn marked the first quarterly net profit in five quarters"
   },
   {
-   "ko": "2024년 12월 평택 HVO 전처리 플랜트(PTU, 연간 30만 톤) 본가동 개시 — 국내 유일의 상업 운영 설비로 글로벌 정유사에 고품질 SAF 원료 공급 포지션 확보",
-   "en": "Pyeongtaek HVO Pre-Treatment Unit (300kt/yr) commenced full operation in December 2024, establishing DS Dansuk as Korea's sole commercial HVO PTU operator supplying SAF feedstock to global refiners"
+   "ko": "2023년 영업이익률 7.1%에서 2024년 1.3%, 2025년 0.8%로 3년 연속 수익성 저하",
+   "en": "Operating margin fell for three straight years, from 7.1% in 2023 to 1.3% in 2024 and 0.8% in 2025"
   },
   {
-   "ko": "2026년 1월 검찰이 바이오디젤 입찰·가격 담합 혐의로 압수수색을 실시, 형사·과징금·민사의 '복합 리스크'가 현실화 여부를 주시할 필요",
-   "en": "January 2026 prosecutor raids on alleged biodiesel bid-rigging introduce compounded legal risk spanning criminal liability, regulatory fines, and civil damage claims — outcome remains uncertain"
+   "ko": "서울서부지검이 2026년 1월 바이오디젤 가격·입찰 담합 의혹으로 DS단석 등 5개사를 압수수색",
+   "en": "Seoul Western District Prosecutors raided DS Dansuk and four other firms in January 2026 over alleged biodiesel bid-rigging"
   },
   {
-   "ko": "2026Q1 매출 2,781억원(5분기 최대)·영업이익 44억원으로 흑자 전환, 지배주주 순손실은 -19억원으로 전분기 대비 대폭 축소되며 저점 통과 가능성 시사",
-   "en": "2026 Q1 revenue of KRW 278.1bn (five-quarter high) and operating profit of KRW 4.4bn signal a tentative trough passage, with controlling-shareholder net loss narrowing sharply to KRW −1.9bn"
+   "ko": "필립스66과 2027년 11월까지 이어지는 최소 1조216억원 규모 SAF 원료 공급계약을 보유",
+   "en": "The company holds a minimum KRW 1.0216tn SAF feedstock supply contract with Phillips 66 running through November 2027"
   },
   {
-   "ko": "군산 HVO 본설비(연간 30만 톤, 부지 23만 1,405㎡) 2026년 착공·2028년 완공 계획 — 대규모 투자 실행 여부가 중장기 성장 궤적의 분기점",
-   "en": "Planned 300kt/yr HVO main plant at Gunsan (groundbreaking 2026, completion 2028) represents a defining capex commitment for the company's long-term SAF production ambitions"
+   "ko": "부채비율이 2023년 155.7%에서 2025년 180.8%로 상승하며 재무 레버리지 부담이 커지는 추세",
+   "en": "The debt ratio climbed from 155.7% in 2023 to 180.8% in 2025, indicating rising financial leverage"
   }
  ],
  "business": {
-  "ko": "DS단석은 1963년 PVC 안정제 제조사 노벨화학공업사로 출발해 현재 바이오연료 제조, 폐배터리 리사이클, 플라스틱 리사이클 사업을 영위하는 자원순환 에너지 전문기업이다. 바이오에너지 부문은 2023년 기준 매출의 약 60%를 차지하며, 바이오디젤(자동차·중장비용), 바이오중유(발전·산업용), 바이오선박유(선박용) 등을 생산한다. 바이오디젤은 폐식용유·음폐유·동식물성 유지 등을 원료로 제조되는 친환경 수송연료로, 국내에서는 2006년부터 차량용 경유에 혼합 공급이 시작됐으며 RFS(신재생에너지 연료 혼합의무제도)에 의해 혼합비율이 단계적으로 상향 조정되고 있다. DS단석은 국내 바이오디젤 수출의 약 70%를 차지하는 1위 사업자다. 미국 EPA, 캘리포니아 및 오리건주 LCFS·CFP 등록, EU ISCC 인증을 보유해 글로벌 바이오디젤 수출을 선도하고 있다. 바이오중유는 한국중부발전·한국남부발전 등 발전사의 RPS 의무공급량 이행을 목적으로 공급되고 있다. 미국 필립스66와는 계약기간 최소수량 기준 약 1조 216억원 규모의 장기 공급계약을 체결했다. 일본 최대 정유사 ENEOS를 비롯해 HMLP, 노무라사무소, 삿포로 유지 등과도 친환경제품 생산시설에 대한 바이오원료 공급 업무협약을 체결했다. DS단석은 2023년 12월 코스피에 상장됐으며, 창업주 일가인 한승욱 대표이사 회장이 경영을 이끌고 있다.",
-  "en": "DS Dansuk traces its origins to Nobel Chemical Industry Co., founded in 1963 as a PVC stabilizer maker, and today operates across biofuel manufacturing, spent-battery recycling, and plastic recycling as a resource-circulation energy specialist. The bioenergy segment accounted for approximately 60% of group revenue as of 2023, producing biodiesel for transport, bio heavy oil for power generation, and bio marine fuel for shipping. Biodiesel is synthesized from waste cooking oil, food-waste oil, and animal/vegetable fats as a green transport fuel; domestic blending into vehicle diesel has been mandated since 2006 under Korea's Renewable Fuel Standard, with the blending ratio progressively raised. DS Dansuk commands approximately 70% of Korea's biodiesel export market, ranking first among domestic producers. The company holds US EPA registration, California and Oregon LCFS/CFP enrollment, and EU ISCC certification, underpinning its global export leadership. Bio heavy oil is supplied to KOMIPO and KOSPO to fulfill their RPS (Renewable Portfolio Standard) renewable energy obligations. A long-term supply agreement with US refiner Phillips 66 carries a minimum-volume expected value of approximately KRW 1.02 trillion. MOUs with Japan's ENEOS, HMLP, Nomura Office, and Sapporo Yushi provide a foundation for SAF feedstock supply partnerships. DS Dansuk was listed on KOSPI in December 2023, with Chairman & CEO Han Seung-wook, a second-generation family executive, at the helm."
+  "ko": "DS단석은 1965년 설립된 바이오에너지 및 폐자원 리사이클링 전문기업으로, 바이오에너지·배터리 리사이클·플라스틱 리사이클 세 축으로 사업을 구성하고 있다. 증권사 자료에 따르면 2023년 기준 매출 비중은 바이오에너지 약 69%, 배터리 리사이클링 약 24%, 플라스틱 리사이클링(PVC 안정제 포함) 약 8%로 바이오에너지 의존도가 가장 높다. 바이오에너지 부문은 폐식용유(UCO) 기반 바이오디젤 생산에서 출발해 최근에는 항공유·선박유로 전환 가능한 차세대 연료인 HVO(수첨바이오오일) 및 SAF(지속가능항공유) 원료 사업으로 영역을 넓히고 있다. 배터리 리사이클 부문은 납축전지 재활용을 근간으로 하며, 실적 기여도가 매출 비중보다 높아 2025년 1분기에는 전체 영업이익의 76%를 이 부문이 차지한 바 있다. 플라스틱 리사이클 부문은 폐플라스틱 원료화 및 PVC 안정제 생산을 담당하며, 계열사 합병 등을 통해 사업구조를 재편해왔다. 경쟁구도 측면에서는 SK에코프라임, 애경케미칼, JC케미칼, 이맥솔루션 등이 국내 바이오디젤·바이오에너지 시장에서 함께 경쟁하는 주요 업체로 거론된다. 회사는 미국 필립스66, 스위스 콜마 등 글로벌 고객사와 원료·완제품 공급계약을 체결하며 해외 판로를 넓혀왔고, 일본 정유사 및 상사들과도 SAF 원료 수급을 위한 업무협약을 맺은 바 있다. 최근에는 배터리 리사이클링에서 나온 블랙매스로부터 니켈·코발트·망간 등 희소금속을 추출하는 후처리 공정 진출도 검토 중인 것으로 파악된다.",
+  "en": "Founded in 1965, DS Dansuk is a bioenergy and waste-resource recycling company organized around three business lines: bioenergy, battery recycling, and plastic recycling. According to brokerage research, the 2023 revenue mix was roughly 69% bioenergy, 24% battery recycling, and 8% plastic recycling (including PVC stabilizers), making bioenergy the dominant segment. The bioenergy business started with used-cooking-oil (UCO) based biodiesel and has expanded into next-generation HVO (hydrotreated vegetable oil) and SAF (sustainable aviation fuel) feedstock, which can be converted into aviation or marine fuel. The battery recycling segment, centered on lead-acid battery recycling, contributes disproportionately to profit, accounting for 76% of total operating profit in the first quarter of 2025. The plastics recycling segment handles recycled plastic feedstock and PVC stabilizer production and has undergone subsidiary restructuring through mergers. Competitively, SK Eco Prime, AK Chemical, JC Chemical, and Emax Solution are cited as key rivals in the domestic bioenergy market. The company has expanded overseas sales through supply agreements with global customers including Phillips 66 of the US and Kolmar of Switzerland, and has signed feedstock-sourcing memorandums with Japanese refiners and trading houses. It is reportedly also reviewing entry into post-processing to extract rare metals such as nickel, cobalt, and manganese from black mass generated by battery recycling."
  },
  "earnings": {
-  "ko": "2023년에는 연결 매출 1조 704억원, 영업이익 762억원(OPM 7.1%), 지배주주 순이익 392억원을 기록하며 바이오에너지 업황 호조의 정점을 찍었다. 러시아·우크라이나 전쟁 이후 급등했던 팜유·대두유 등의 가격이 정상화되며 바이오연료 판가도 연동 하락했고, 2024년에는 매출 9,617억원, 영업이익 122억원(OPM 1.3%)으로 이익이 크게 꺾이며 지배주주 기준 순손실 92억원을 기록했다. 2025년에는 이 추세가 심화해 매출 9,549억원, 영업이익 80억원(OPM 0.8%)으로 수익성이 추가 저하됐고 지배주주 순손실은 120억원으로 확대됐다. 2025년 3분기 누적 바이오에너지 부문은 글로벌 경쟁 심화와 바이오디젤 수요 감소로 매출이 하락했으나, 배터리 리사이클 부문은 납축전지의 안정적 수요로 수익성을 유지했다. 분기별로는 2025Q1에 매출 2,481억원·영업이익 90억원·지배주주 순이익 62억원으로 선방했으나, Q2(매출 2,217억원·영업손실 13억원)와 Q4(매출 2,302억원·영업손실 11억원)에 영업적자가 발생해 연간 실적을 끌어내렸다. 특히 Q4 지배주주 순손실이 116억원에 달해 연간 손실의 대부분이 하반기에 집중됐다. 영업현금흐름은 2023년 358억원→2024년 477억원→2025년 190억원으로 추세적으로 약화됐으며, 부채비율도 155.7%→160.0%→180.8%로 지속 상승해 재무 부담이 가중되고 있다. 2026Q1에는 매출 2,781억원(최근 5개 분기 최대)·영업이익 44억원을 기록하며 저점 탈출 가능성을 시사했으나, 지배주주 순손실 -19억원으로 영업외 비용 부담은 잔존한다.",
-  "en": "In 2023, consolidated revenue reached KRW 1,070.4bn, operating profit KRW 76.2bn (OPM 7.1%), and controlling-shareholder net income KRW 39.2bn — the peak of the bioenergy cycle. As palm oil and soybean oil prices normalized following their post-Ukraine-war spike, biodiesel prices fell in tandem, driving 2024 revenue down to KRW 961.7bn and operating profit down to KRW 12.2bn (OPM 1.3%), producing a controlling-shareholder net loss of KRW 9.2bn. The deterioration deepened in 2025: revenue declined modestly to KRW 954.9bn, operating profit slid to KRW 8.0bn (OPM 0.8%), and the controlling-shareholder net loss widened to KRW 12.0bn. On a nine-month cumulative basis in 2025, the bioenergy segment saw revenue decline amid intensifying global competition and weakening biodiesel demand, while the battery recycling segment sustained profitability through stable lead-acid battery demand. Quarterly, 2025 Q1 held up at KRW 248.1bn revenue, KRW 9.0bn operating profit, and KRW 6.2bn net income, but Q2 and Q4 swung to operating losses (−KRW 1.3bn and −KRW 1.1bn respectively), with Q4 concentrating the full-year damage through a controlling-shareholder net loss of KRW 11.6bn. Operating cash flow weakened from KRW 35.8bn (2023) to KRW 47.7bn (2024) to KRW 19.0bn (2025), while the debt ratio rose consecutively from 155.7% to 160.0% to 180.8%. The most recent quarter — 2026 Q1 — returned KRW 278.1bn in revenue (highest in five quarters) and KRW 4.4bn in operating profit, suggesting a potential trough passage, though a residual controlling-shareholder net loss of KRW 1.9bn indicates persistent non-operating cost pressures."
+  "ko": "DS단석의 연간 실적은 2023년 매출 1조704억원, 영업이익 762.4억원(영업이익률 7.1%), 지배주주순이익 391.6억원으로 견조했으나, 이후 2년 연속 뚜렷한 둔화세를 보였다. 2024년에는 매출이 9,617억원으로 소폭 줄고 영업이익은 121.9억원(영업이익률 1.3%)까지 급감했으며, 지배주주순이익은 -91.6억원으로 적자전환했다. 2025년에도 매출 9,549억원, 영업이익 79.8억원(영업이익률 0.8%), 지배주주순이익 -120.2억원으로 적자가 이어졌다. 다만 분기별로 보면 흐름이 개선되는 신호가 나타난다. 2025년 2분기 영업손실 13.2억원·순손실 53.6억원을 기록한 이후 3분기에는 영업이익이 13.7억원으로 흑자전환했으나 순이익은 여전히 -13.4억원이었고, 4분기에는 영업손실 10.6억원에 순손실이 115.6억원까지 확대되며 재차 부진했다. 2026년 들어서는 1분기 영업이익 44.0억원으로 회복됐지만 순손실 18.6억원이 지속됐고, 2분기에는 매출 3,101억원, 영업이익 62.9억원, 지배주주순이익 25.2억원으로 5개 분기 만에 분기 순이익 흑자전환에 성공했다. 순이익 변동성이 큰 가운데서도 영업활동현금흐름은 2025년 190.2억원, 2024년 476.6억원으로 순이익 적자에도 불구하고 플러스 기조를 유지했다. 부채비율은 2023년 155.7%에서 2024년 160.0%, 2025년 180.8%로 매년 상승해 재무 레버리지 부담이 점증하는 흐름을 보이고 있다.",
+  "en": "DS Dansuk posted solid results in 2023 with revenue of KRW 1.0704tn, operating profit of KRW 76.24bn (7.1% margin), and owners' net income of KRW 39.16bn, but profitability deteriorated sharply over the following two years. In 2024, revenue edged down to KRW 961.7bn while operating profit collapsed to KRW 12.19bn (1.3% margin), and owners' net income swung to a loss of KRW -9.16bn. In 2025, revenue was KRW 954.9bn, operating profit KRW 7.98bn (0.8% margin), and owners' net income remained negative at KRW -12.02bn. Quarterly data show tentative signs of stabilization: after an operating loss of KRW 1.32bn and net loss of KRW 5.36bn in Q2 2025, operating profit turned positive at KRW 1.37bn in Q3 2025 even as net income stayed negative at KRW -1.34bn, before both metrics weakened again in Q4 2025 with an operating loss of KRW 1.06bn and a widened net loss of KRW 11.56bn. In 2026, operating profit recovered to KRW 4.40bn in Q1 while the net loss persisted at KRW 1.86bn, and Q2 2026 delivered revenue of KRW 310.1bn, operating profit of KRW 6.29bn, and owners' net income of KRW 2.52bn — the first quarterly net profit in five quarters. Despite volatile net income, operating cash flow stayed positive, at KRW 19.02bn in 2025 and KRW 47.66bn in 2024. The debt ratio rose steadily from 155.7% in 2023 to 160.0% in 2024 and 180.8% in 2025, pointing to a gradually increasing leverage burden."
  },
  "industry": {
-  "ko": "국내 바이오연료 시장은 RFS(차량용 바이오디젤 혼합의무)와 RPS(발전사 신재생에너지 의무공급) 정책으로 안정적인 내수 기반이 보장된다. 2025년 기준 RPS 의무공급비율은 14%로 설정되어 있어, 발전사향 바이오중유 수요는 정책 연동 수요로 유지되고 있다. 글로벌 전방 시장에서는 EU와 미국을 중심으로 바이오항공유 사용 의무화 규제가 강화되고 있으며, EU는 ReFuelEU 제도를 통해 2025년부터 SAF 2% 혼합 목표를 적용하고 2050년까지 70% 혼합 목표를 설정했다. 국제민간항공기구(ICAO)는 2027년부터 모든 국가에 국제항공 탄소상쇄·감축제도를 의무화할 예정이어서 글로벌 SAF 시장의 구조적 성장이 전망된다. 전 세계 HVO 생산량은 2030년까지 연평균 20% 증가할 것으로 예상된다. 반면 단기 업황은 국제 팜유·대두유 가격 안정화와 신흥국 업체의 공급 확대로 글로벌 바이오디젤 가격이 압박을 받는 구조가 이어지고 있다. 국내 경쟁 구도는 DS단석·SK에코프라임·애경케미칼·JC케미칼·이맥솔루션이 과점 형태를 이루고 있으나, 공정거래위원회 조사와 검찰 강제수사로 업계 전반의 규제 리스크가 동시에 부각되고 있다.",
-  "en": "Korea's domestic biofuel market benefits from policy-guaranteed demand via the Renewable Fuel Standard (RFS) for transport biodiesel blending and the Renewable Portfolio Standard (RPS) for power generation. The 2025 RPS obligation is set at 14% of total generation, sustaining contracted demand for bio heavy oil from state power companies. Globally, regulatory pressure is intensifying: the EU's ReFuelEU Aviation regulation applies a 2% SAF blending target from 2025, escalating to 70% by 2050. ICAO is set to mandate its international carbon offsetting and reduction scheme for all nations from 2027, underpinning structural long-term SAF demand growth. Global HVO production is projected to grow at a compound annual rate of approximately 20% through 2030. In the near term, normalized palm and soybean oil prices alongside expanding supply from Southeast Asian producers continue to compress global biodiesel prices. Domestically, the market operates as an oligopoly among DS Dansuk, SK EcoPrime, AK Chemicals, JC Chemical, and Imaksolution; however, a concurrent FTC investigation and criminal raid by prosecutors have elevated compliance and regulatory risk across the entire sector."
+  "ko": "국내 바이오디젤 산업은 정부의 신재생연료 혼합의무제도(RFS)에 따라 성장해왔으며, 의무 혼합 비율이 2018년 3%에서 2024년 4%로 확대됐고 2030년까지 8%로 상향될 예정이다. 여기에 더해 국제해사기구(IMO)의 선박 온실가스 규제와 국제민간항공기구(ICAO)의 탄소상쇄·감축제도(CORSIA)가 맞물리며 바이오선박유와 SAF 수요가 함께 늘어날 것으로 기대되는 국면이다. 해외에서는 유럽연합이 2025년부터 항공유 내 SAF 혼합을 2% 이상 의무화하고 이를 2030년 6%, 2050년 70%까지 단계적으로 확대할 계획이며, 한국 정부도 2027년부터 SAF 최소 1% 혼합을 의무화할 예정이다. 이러한 정책 흐름 속에서 하나증권 등 증권업계에서는 DS단석을 국내 바이오디젤 수출의 상당 부분을 차지하는 사업자로 평가한 바 있다. 다만 원료가 되는 폐식용유(UCO) 등 인증 원료 확보 경쟁이 국내외에서 심화되고 있으며, 인도네시아 등 원료 생산국이 자국 우선 정책을 취할 가능성이 거론되는 등 공급망 리스크도 상존한다. 최근에는 국내 바이오디젤 업계 전반에 대한 공정거래위원회 조사와 검찰 수사가 진행되며, 산업 전체의 준법·거버넌스 이슈가 부각되는 국면이기도 하다. 경쟁사들도 SAF·HVO 등 차세대 연료로 전환을 서두르고 있어, 원료 소싱력과 인증 취득 속도가 향후 업체 간 경쟁력을 가르는 핵심 변수로 지목된다.",
+  "en": "Korea's biodiesel industry has grown under the government's renewable fuel blending mandate, with the required blend ratio rising from 3% in 2018 to 4% in 2024 and slated to reach 8% by 2030. Combined with IMO greenhouse-gas shipping regulations and ICAO's CORSIA carbon offsetting scheme, demand for bio-marine fuel and SAF is expected to grow in tandem. Internationally, the EU plans to mandate at least 2% SAF blending in aviation fuel from 2025, rising in stages to 6% by 2030 and 70% by 2050, while Korea plans to mandate a minimum 1% SAF blend starting in 2027. Amid this policy backdrop, brokerage analysts, including at Hana Securities, have characterized DS Dansuk as a company accounting for a substantial share of Korea's biodiesel exports. However, competition for certified feedstock such as used cooking oil (UCO) is intensifying both domestically and abroad, with supply-chain risk compounded by the possibility that feedstock-producing countries like Indonesia may prioritize domestic use. More recently, the entire domestic biodiesel industry has come under Fair Trade Commission and prosecutorial scrutiny, bringing compliance and governance issues into sharper focus across the sector. Rival firms are also accelerating their shift toward next-generation fuels such as SAF and HVO, making feedstock-sourcing capability and certification speed key differentiators going forward."
  },
  "outlook": {
-  "ko": "약 370억원이 투자된 평택 1공장 HVO PTU는 지난해 12월부터 본격 가동에 돌입했으며, 연간 약 30만 톤 규모의 전처리 원료를 생산할 수 있다. 가동 이후 글로벌 톱3 정유사들을 비롯한 국내외 대형 고객과 공급 협의가 진행 중으로, 고품질 SAF 원료 공급사로서의 포지셔닝이 가시화되고 있다. 중장기 성장의 핵심 이정표는 군산 HVO 본설비로, 2028년까지 군산 1공장 앞 약 23만 1,405㎡ 부지에 연간 30만 톤 규모의 HVO를 생산할 수 있는 본설비 플랜트를 구축할 예정이며, 이미 부지를 확보한 상태로 폐기물 처리 인허가 작업을 거쳐 2026년 착공에 돌입할 예정이다. 2028년까지 HVO 및 바이오항공유의 본격 생산과 그레이·그린 수소 플랜트 가동, 2029년까지 연료전지 생산·운영을 통한 수소 순환 고리 완성을 목표로 하고 있다. 2025년 9월에는 효소 반응 공정을 도입해 바이오디젤 제조 효율 개선에 나서며, 수익성 증대·원료 다각화·SAF 원료 추가 확보 등의 효과를 기대하고 있다. 2026년 3월 공시된 기업가치 제고 계획에서는 핵심사업 수익성 개선과 성장 가능성 있는 신규 사업 진출, 경영효율화를 통한 주주가치 제고를 추진 방향으로 제시했다.",
-  "en": "The Pyeongtaek HVO PTU, into which approximately KRW 37bn was invested, commenced full operations in December 2024 with an annual pre-treatment feedstock capacity of roughly 300kt. Since startup, the company has reported active supply discussions with top-3 global refiners and major domestic customers, advancing its positioning as a high-purity SAF feedstock supplier. The definitive medium-term milestone is the Gunsan HVO main plant: by 2028, the company plans to commission a 300kt/yr HVO production facility on a 231,405 sqm site adjacent to Gunsan Plant 1, with groundbreaking planned for 2026 following regulatory permitting — land has already been secured. Full-scale HVO and SAF production alongside green/grey hydrogen plants are targeted for 2028, with a fuel cell operation and hydrogen circular economy loop planned by 2029. In September 2025, the company introduced an enzyme reaction process to improve biodiesel manufacturing efficiency, targeting profitability enhancement, feedstock diversification, and additional SAF feedstock procurement. The corporate value enhancement plan disclosed in March 2026 outlines core-business profitability improvement, entry into high-growth new businesses, and management efficiency gains as strategic priorities for shareholder value creation."
+  "ko": "DS단석은 2023년 착공해 지난해 하반기 준공한 평택1공장 HVO 전처리(PTU) 설비를 기반으로 2026년경 군산에 HVO 본공정 플랜트를 추가로 구축한다는 계획을 밝혀왔다. 2025년 6월에는 전북특별자치도와 함께 군산 국가산업단지 내 부지에 2031년까지 총 1조900억원을 투자해 바이오디젤·바이오항공유·바이오납사 생산시설과 에너지 회수·재활용 인프라를 통합한 '넷제로 컴플렉스'를 구축하는 내용의 투자협약(MOU)을 체결했다. 필립스66과의 SAF 원료 공급계약은 2024년 12월부터 2027년 11월까지 최소 1조216억원, 최대 1조2,618억원 규모로 이행 중이며, 이는 원료 조달 능력이 뒷받침될 경우 중기 매출 기반이 될 수 있는 대형 계약이다. 다만 FnGuide 등 자료에 따르면 2026년 1분기 기준 바이오에너지 부문은 친환경 원료 확보 경쟁 심화와 SAF 시장 변화에 따라 사업 전환기를 맞이하고 있는 것으로 평가된다. 배터리 리사이클 부문은 2025년 1분기 기준 총 생산능력이 전년 동기 대비 약 9% 늘었고, 블랙매스에서 희소금속을 추출하는 후처리 공정 상용화도 검토 단계에 있어 중장기 밸류체인 확장 여지가 있다. 회사는 지질자원연구원과 공동으로 황산니켈·코발트·망간을 연속 추출하는 습식 정제기술을 개발 중인 것으로 파악된다. 이러한 투자·계약 이행이 계획대로 진행되는지, 그리고 바이오디젤 담합 수사 결과가 사업 파트너십과 인허가 일정에 미칠 영향이 향후 실적 궤적을 가늠하는 주요 변수가 될 것으로 보인다.",
+  "en": "Building on the HVO pre-treatment (PTU) facility at its Pyeongtaek No.1 plant, which broke ground in 2023 and was completed in the second half of last year, DS Dansuk has outlined plans to build a full-scale HVO plant in Gunsan around 2026. In June 2025, the company signed an investment MOU with Jeollabuk-do to build a KRW 1.09tn 'net-zero complex' by 2031 on a site within the Gunsan national industrial complex, integrating biodiesel, bio-jet fuel, and bio-naphtha production with energy recovery and recycling infrastructure. Its SAF feedstock supply agreement with Phillips 66, running from December 2024 to November 2027 for a minimum of KRW 1.0216tn and up to KRW 1.2618tn, remains in execution and could underpin medium-term revenue if feedstock sourcing keeps pace. However, according to FnGuide data, as of Q1 2026 the bioenergy segment is described as being in a transition period amid intensifying competition for eco-friendly feedstock and shifts in the SAF market. The battery recycling segment expanded total production capacity by roughly 9% year-on-year as of Q1 2025, and the company is reportedly reviewing commercialization of post-processing to extract rare metals from black mass, suggesting room for mid-to-long-term value-chain expansion. The company is said to be developing, jointly with the Korea Institute of Geoscience and Mineral Resources, a wet refining technology for continuous extraction of nickel sulfate, cobalt, and manganese. Whether these investment and contract commitments proceed as planned, and how the outcome of the biodiesel cartel investigation affects partnerships and permitting timelines, will likely be key variables shaping the earnings trajectory ahead."
  },
  "valuation_comment": {
-  "ko": "현재 주가는 주당 순자산(BPS 15,378원) 수준에 바짝 근접해 있어, 순자산 대비 유의미한 프리미엄이 사실상 해소된 구간에 위치한다. 2023년 흑자 국면에서는 실적 기대감이 주가를 순자산 대비 상당한 프리미엄 수준으로 끌어올렸으나, 이후 2년 연속 순손실이 이어지며 실적 기반 밸류에이션 배수가 의미를 가지기 어려운 상황이 지속되고 있다. 최근 4개 분기 합산 지배주주 순손실이 -201억원, 주당순이익(EPS)이 -1,146원인 점에서 이익 전환의 속도와 폭이 재평가의 핵심 트리거가 될 것이다. 배당은 2025사업연도 주당 현금 10원(시가배당률 0.05%)에 그쳐 배당 매력은 시장·업종 평균 대비 현저히 낮은 수준이다. HVO·SAF 사업의 가시화, 담합 수사 리스크 해소 여부가 순자산 기준 프리미엄 회복의 비재무적 촉매로 작용할 수 있다.",
-  "en": "The current share price trades in close proximity to book value per share (BPS KRW 15,378), implying that the market premium above net assets has effectively disappeared. During the profitable 2023 cycle the stock commanded a meaningful premium over book value, but two consecutive years of net losses have removed earnings-based valuation support. With controlling-shareholder EPS at KRW −1,146 over the most recent four quarters, the pace and scale of an earnings turnaround will be the primary re-rating catalyst. The 2025 cash dividend of KRW 10 per share translates to an implied yield well below market and sector averages, offering minimal income support. Progress on HVO/SAF commercialization and resolution of the antitrust investigation are the key non-financial catalysts that could shift the stock from near-book to a premium valuation."
+  "ko": "DS단석의 주당순자산(BPS)은 15,616원 수준으로, 최근 주가는 이 순자산가치를 하회하는 구간에서 형성되어 순자산 대비 할인된 상태로 거래되고 있다. 다만 2024년과 2025년 연속 순손실을 기록한 데다 최근 네 개 분기를 합산해도 순이익이 마이너스인 만큼, 주가수익비율(PER) 산출 자체가 의미를 갖기 어려운 구간이라는 점을 유의할 필요가 있다. 2026년 2분기 순이익이 흑자로 전환되기는 했으나 아직 연간 기준 이익 회복을 확정 짓기에는 이른 단계로, 향후 분기 실적 흐름에 따라 이익 기반 밸류에이션 지표의 유효성이 달라질 수 있다. 배당 측면에서는 주당현금배당금이 10원 수준으로 크지 않아, 배당을 통한 주주환원 비중은 업종 내에서 상대적으로 낮은 편에 속한다. 결국 현재 주가 수준은 순자산가치, 이익 변동성, 그리고 진행 중인 담합 수사와 같은 비재무적 불확실성이 복합적으로 반영된 결과로 해석할 수 있다.",
+  "en": "DS Dansuk's book value per share stands at KRW 15,616, and the recent share price trades below this net asset value, implying a discount to book. However, given consecutive net losses in 2024 and 2025 and a negative net income even when the most recent four quarters are combined, deriving a meaningful price-to-earnings ratio remains difficult at this stage. While Q2 2026 net income turned positive, it is still premature to confirm a full-year earnings recovery, and the relevance of earnings-based valuation metrics may shift depending on subsequent quarterly results. On the dividend side, the cash dividend per share of KRW 10 is modest, placing shareholder returns via dividends on the lower end relative to the sector. Overall, the current share price level appears to reflect a combination of book value, earnings volatility, and non-financial uncertainties such as the ongoing cartel investigation."
  },
  "bull": [
   {
    "title": {
-    "ko": "SAF 시장의 구조적 성장과 선점 포지션",
-    "en": "Structural SAF Market Growth & First-Mover Positioning"
+    "ko": "분기 실적 회복 조짐",
+    "en": "Signs of Quarterly Earnings Recovery"
    },
    "body": {
-    "ko": "EU ReFuelEU의 SAF 혼합 의무(2025년 2%→2050년 70%)와 글로벌 온실가스 규제 강화가 SAF 수요를 구조적으로 끌어올리는 환경이 형성되고 있다. DS단석은 국내에서 경쟁 설비가 존재하지 않는 글로벌 스탠다드 기반의 HVO PTU를 운영하며, 고품질 SAF 원료 공급에서 독점적 포지션을 유지하고 있다. 국내 바이오디젤 수출 70%를 차지하는 1위 사업자로서 글로벌 인증망과 고객 기반이 신규 진입자에게 높은 장벽으로 작용한다.",
-    "en": "The EU's ReFuelEU SAF blending mandate escalating from 2% (2025) to 70% (2050), alongside tightening global emissions regulations, creates a structural demand pull for SAF. DS Dansuk operates an HVO PTU built to global standards with no comparable domestic competitor, securing a differentiated position in high-purity SAF feedstock supply. As the leader with approximately 70% of Korea's biodiesel export market, its global certifications and established customer relationships form durable entry barriers for new competitors."
+    "ko": "2026년 1분기와 2분기 연속 영업이익이 개선되며 2분기에는 매출 3,101억원, 영업이익 62.9억원, 지배주주순이익 25.2억원으로 5개 분기 만에 순이익 흑자전환에 성공했다. 영업활동현금흐름도 순이익 적자였던 2024~2025년에도 지속적으로 플러스를 유지해 현금창출력 자체는 유지되고 있다. 이런 흐름이 이어질 경우 다년간 이어진 수익성 저하 국면에서 벗어날 가능성을 시사한다.",
+    "en": "Operating profit improved for two consecutive quarters in 2026, culminating in Q2 revenue of KRW 310.1bn, operating profit of KRW 6.29bn, and owners' net income of KRW 2.52bn—the first quarterly net profit in five quarters. Operating cash flow remained positive throughout 2024-2025 even amid net losses, indicating underlying cash generation capability has been preserved. Continuation of this trend would suggest a possible exit from the multi-year profitability decline."
    }
   },
   {
    "title": {
-    "ko": "필립스66 장기계약 및 글로벌 파트너십 매출 기반",
-    "en": "Phillips 66 Long-Term Contract & Global Partnership Revenue Base"
+    "ko": "규제 순풍을 받는 바이오연료 시장",
+    "en": "Regulatory Tailwinds for Biofuels"
    },
    "body": {
-    "ko": "미국 필립스66와의 공급계약은 계약기간 2027년 11월까지이며, 최소수량 기준 약 1조 216억원·최대수량 기준 약 1조 2,618억원 규모로 바이오에너지 부문 매출 기반을 상당 기간 방어한다. 일본 ENEOS·HMLP·노무라사무소·삿포로 유지 등과의 SAF 원료 공급 MOU는 아시아 시장 수주 기반을 추가로 확충한다. 원료 가격 하락 국면에서도 장기 오프테이크 계약이 수익성의 하방 지지선 역할을 할 수 있는 구조다.",
-    "en": "The Phillips 66 supply agreement runs through November 2027, with a minimum-volume value of approximately KRW 1.02 trillion and a maximum-volume value of approximately KRW 1.26 trillion, providing durable bioenergy revenue visibility. SAF feedstock supply MOUs with Japan's ENEOS, HMLP, Nomura Office, and Sapporo Yushi further expand the Asian-market customer base. In an environment of softer commodity-linked prices, these contracted volumes serve as a floor for bioenergy segment earnings."
+    "ko": "국내 바이오디젤 의무 혼합비율이 2030년까지 8%로 확대되고, EU와 한국 모두 SAF 혼합 의무화를 단계적으로 도입하고 있어 전방 수요 기반이 정책적으로 뒷받침되고 있다. 필립스66과의 최소 1조216억원 규모 SAF 원료 공급계약이 2027년 11월까지 이어지고 있어 중기 매출 가시성을 일부 확보한 상태다. IMO·ICAO 등 국제 규제도 바이오선박유·SAF 수요 확대에 우호적인 환경을 조성하고 있다.",
+    "en": "Korea's mandatory biodiesel blending ratio is set to expand to 8% by 2030, and both the EU and Korea are phasing in SAF blending mandates, providing policy-backed demand support. The minimum KRW 1.0216tn SAF feedstock supply contract with Phillips 66 runs through November 2027, offering some medium-term revenue visibility. International regulations from the IMO and ICAO are also fostering a favorable environment for bio-marine fuel and SAF demand growth."
    }
   },
   {
    "title": {
-    "ko": "2026Q1 실적 회복과 효소 공정 개선 효과",
-    "en": "2026 Q1 Earnings Recovery & Enzyme Process Yield Improvement"
+    "ko": "리사이클링 사업 포트폴리오 다각화",
+    "en": "Diversified Recycling Portfolio"
    },
    "body": {
-    "ko": "2026Q1 매출 2,781억원(최근 5개 분기 최대)과 영업이익 44억원 흑자 회복은 2025Q4 저점 통과 가능성을 시사한다. 2025년 9월 본격 도입된 효소 반응 공정은 투자 비용을 최소화하면서 수익성 증대와 원료 다각화, SAF 원료 추가 확보를 가능하게 할 것으로 전망되며, 수율 개선이 점진적으로 손익에 반영될 경우 마진 회복 속도가 빨라질 수 있다. 바이오디젤 원가의 약 90%가 원재료비에서 발생하는 구조인 만큼, 저급 원료 활용 확대로 인한 원가 절감 효과가 분기 실적 개선의 레버리지로 작용할 수 있다.",
-    "en": "2026 Q1 revenue of KRW 278.1bn (five-quarter high) and KRW 4.4bn operating profit recovery suggest the Q4 2025 trough may have passed. The enzyme reaction process, fully deployed in September 2025, is expected to improve profitability, diversify feedstocks, and enable additional SAF feedstock sourcing — with minimal incremental capex. Given that approximately 90% of biodiesel production cost originates from raw materials, expanded use of lower-grade feedstocks enabled by the new process provides meaningful cost reduction leverage as improvements flow through to reported margins."
+    "ko": "배터리 리사이클링 부문은 매출 비중 대비 높은 이익 기여도를 보여왔으며, 블랙매스 후처리를 통한 희소금속 추출 상용화가 검토되고 있어 고부가 영역으로의 확장 여지가 있다. 플라스틱 리사이클링 사업도 자회사 합병 등을 통해 구조를 재편하며 시너지를 모색하고 있다. 바이오에너지·배터리·플라스틱 세 부문에 걸친 순환경제형 사업구조는 단일 업황 의존도를 낮추는 요인이다.",
+    "en": "The battery recycling segment has historically contributed to profit at a rate disproportionate to its revenue share, and the review of commercializing rare-metal extraction from black mass post-processing points to potential expansion into higher-value areas. The plastics recycling business has also restructured through subsidiary mergers in search of synergies. A circular-economy business structure spanning bioenergy, battery, and plastics recycling reduces reliance on any single end-market."
    }
   }
  ],
  "bear": [
   {
    "title": {
-    "ko": "바이오디젤 마진 구조 악화와 재무 부담 심화",
-    "en": "Structural Biodiesel Margin Erosion & Mounting Financial Pressure"
+    "ko": "다년간 이어진 수익성 저하",
+    "en": "Multi-Year Profitability Decline"
    },
    "body": {
-    "ko": "영업이익률이 2023년 7.1%에서 2025년 0.8%로 3년 연속 하락하며 핵심 사업의 수익성이 위험 수준에 근접했다. 바이오디젤 원가의 약 90%가 원재료비에서 발생하는 구조로 인해 판가-원가 스프레드 압축이 이익에 즉각적으로 반영된다. 지배주주 기준 2년 연속 순손실 확대와 부채비율 180.8% 도달, 영업현금흐름 190억원 수준으로의 감소는 대규모 HVO 설비 투자를 앞두고 재무 여력이 제한적임을 나타낸다.",
-    "en": "OPM contracted from 7.1% (2023) to 0.8% (2025) for three consecutive years, bringing core business profitability close to breakeven. With approximately 90% of biodiesel production cost attributable to raw materials, any compression in the product-to-feedstock price spread feeds through directly to earnings. Two consecutive years of widening controlling-shareholder net losses, a debt ratio reaching 180.8%, and declining operating cash flow to KRW 19.0bn limit financial flexibility ahead of the planned large-scale HVO capex cycle."
+    "ko": "영업이익률은 2023년 7.1%에서 2024년 1.3%, 2025년 0.8%로 3년 연속 하락했고, 지배주주순이익은 2024년과 2025년 모두 적자를 기록했다. 부채비율도 2023년 155.7%에서 2025년 180.8%로 상승해 재무 레버리지 부담이 함께 커지고 있다. 2026년 2분기 흑자전환이 일시적 현상인지 추세적 반전인지는 아직 추가 분기 실적으로 확인이 필요하다.",
+    "en": "Operating margin fell for three consecutive years from 7.1% in 2023 to 1.3% in 2024 and 0.8% in 2025, and owners' net income was negative in both 2024 and 2025. The debt ratio also rose from 155.7% in 2023 to 180.8% in 2025, adding to financial leverage. Whether the Q2 2026 return to profit is a temporary blip or a sustained reversal still requires confirmation from further quarterly results."
    }
   },
   {
    "title": {
-    "ko": "담합 수사의 '복합 리스크': 형사·과징금·민사",
-    "en": "Antitrust Investigation: Compounded Legal, Regulatory & Civil Risk"
+    "ko": "바이오디젤 담합 수사 리스크",
+    "en": "Biodiesel Cartel Investigation Risk"
    },
    "body": {
-    "ko": "2026년 1월 20일 서울서부지검은 DS단석·SK에코프라임·애경케미칼·JC케미칼·이맥솔루션 등 5개사를 공정거래법 위반 혐의로 압수수색하며, 정유사에 바이오디젤을 공급하는 과정에서 입찰 가격과 물량을 사전에 조율했는지를 집중 수사 중이다. 담합이 법적으로 인정될 경우 형사처벌과 공정위 과징금이 병행될 수 있으며, 정유사 등 납품 상대방의 손해배상 청구 가능성도 배제할 수 없다. 수사 결과가 나오기까지 기업 신뢰도와 시장 불확실성이 지속적으로 주가에 부담이 될 전망이다.",
-    "en": "On January 20, 2026, Seoul Western District Prosecutor raided DS Dansuk and four other biodiesel producers on suspicion of violating the Fair Trade Act, focusing on whether the companies pre-coordinated bid prices and supply volumes in their dealings with refiners. If collusion is legally established, concurrent criminal charges and KFTC fines would apply, and civil damages claims from affected refiners cannot be excluded. Until a resolution is reached, the investigation will continue to weigh on corporate reputation and market confidence."
+    "ko": "서울서부지검은 2026년 1월 20일 DS단석을 포함한 5개사를 바이오디젤 가격·입찰 담합 의혹으로 압수수색했으며, 앞서 공정거래위원회도 2025년 3월 업계 전반에 대한 현장조사를 진행한 바 있다. 담합이 인정될 경우 형사처벌과 과징금은 물론 정유사 등 거래상대방의 민사상 손해배상 청구로까지 확대될 가능성이 거론된다. 상장 이후 반복된 내부거래·거버넌스 논란과 맞물려 시장 신뢰에 추가적인 부담 요인이 될 수 있다.",
+    "en": "The Seoul Western District Prosecutors' Office raided DS Dansuk and four other companies on January 20, 2026 over alleged biodiesel price and bid-rigging, following a Fair Trade Commission field investigation of the industry in March 2025. If collusion is confirmed, the case could extend beyond criminal penalties and fines to civil damage claims from refiners and other counterparties. Combined with recurring governance controversies since listing, this could weigh further on market confidence."
    }
   },
   {
    "title": {
-    "ko": "대규모 HVO 설비 투자 부담과 실행 리스크",
-    "en": "Heavy HVO Capex Commitment & Multi-Layered Execution Risk"
+    "ko": "원료 조달 경쟁 심화",
+    "en": "Intensifying Feedstock Competition"
    },
    "body": {
-    "ko": "군산 HVO 본설비(연간 30만 톤, 7만 평 부지) 구축은 2026년 착공 예정이나 폐기물 처리 인허가 절차가 선행되어야 한다. 현재 연간 영업이익이 80억~120억원에 불과한 자체 현금창출 능력으로는 대규모 투자 비용 자체 조달에 한계가 있어, 차입 확대 또는 증자로 이어질 경우 부채비율 상승 또는 기존 주주 지분 희석이 불가피하다. 완공 후 글로벌 정유사의 실질적 오프테이크 계약 확보 여부가 불확실성 요소로 남아 있다.",
-    "en": "Construction of the 300kt/yr Gunsan HVO main plant on a 231,405 sqm site is planned for 2026 groundbreaking, subject to completion of waste-handling regulatory permitting. With annual operating profit of only KRW 8–12bn in recent years, the company's internal cash generation is insufficient to self-fund a facility of this scale; debt financing would push the already-elevated debt ratio higher, while equity issuance would dilute existing shareholders. Uncertainty around securing binding offtake commitments from global refiners prior to commissioning represents an additional execution risk."
+    "ko": "SAF·HVO 생산에 필요한 폐식용유 등 인증 원료의 국내외 공급이 제한적인 가운데, 인도네시아 등 원료 생산국이 자국 우선 정책을 취할 가능성이 거론되며 조달 경쟁이 심화되는 추세다. FnGuide 자료에서도 바이오에너지 부문이 원료 확보 경쟁 심화와 SAF 시장 변화에 따른 사업 전환기에 있다고 평가된 바 있다. 원료비 부담이 커질 경우 대형 공급계약의 수익성 확보가 예상보다 지연될 수 있다.",
+    "en": "Supply of certified feedstock such as used cooking oil for SAF and HVO production is limited both domestically and internationally, with feedstock-producing countries like Indonesia potentially prioritizing domestic use, intensifying sourcing competition. FnGuide data has also characterized the bioenergy segment as being in a transition period amid intensifying feedstock competition and SAF market shifts. If feedstock costs rise further, profitability from large supply contracts could take longer than expected to materialize."
    }
   }
  ],
  "risks": [
   {
    "cat": {
-    "ko": "법적·규제 리스크 (바이오디젤 담합 수사)",
-    "en": "Legal & Regulatory Risk (Biodiesel Antitrust Investigation)"
+    "ko": "법률·규제 리스크",
+    "en": "Legal & Regulatory Risk"
    },
    "body": {
-    "ko": "공정거래위원회 조사로 불거진 바이오디젤 가격·입찰 담합 의혹이 검찰 강제수사로 확대되면서, DS단석의 내부통제·감사 시스템이 시험대에 올랐다. 혐의가 인정될 경우 형사처벌과 공정위 과징금이 병행될 수 있으며, 과징금 규모와 입찰 참가 제한 여부에 따라 바이오에너지 부문 수주에 직접적 타격이 올 수 있다. 상장 초기 FI 스톤브릿지의 대규모 지분 매각 이후 소액주주 손실 논란에 이어 이번 수사까지 겹쳐 거버넌스 신뢰도 훼손 리스크가 누적되고 있다.",
-    "en": "The escalation of the FTC's biodiesel price-fixing inquiry into a criminal investigation by prosecutors has put DS Dansuk's internal controls and audit mechanisms under scrutiny. If collusion charges are sustained, concurrent criminal penalties and KFTC fines would apply, with the scale of fines and any potential bidding disqualification posing direct risks to bioenergy segment contract volumes. Following earlier governance concerns over large stake sales by financial investor Stonebridge, the accumulated cloud of corporate governance issues may impair the company's ability to attract institutional capital."
+    "ko": "바이오디젤 가격·입찰 담합 의혹에 대한 검찰 수사가 진행 중이며, 공정거래위원회 조사 결과에 따라 과징금 부과나 형사처벌로 이어질 가능성이 있다. 수사 결과에 따라 정유사 등 거래처와의 계약 관계나 신규 수주에도 영향을 줄 수 있다. 사외이사 겸 감사위원장의 재직 기간과 조사 시점이 겹치는 점도 거버넌스 측면에서 시장이 주시하는 부분이다.",
+    "en": "A prosecutorial investigation into alleged biodiesel price and bid-rigging is ongoing, and depending on the outcome of the Fair Trade Commission's review, it could lead to fines or criminal penalties. Investigation outcomes could also affect contractual relationships with refiners and future order intake. The overlap between the tenure of an outside director/audit committee chair and the investigation period is also a governance point the market is watching."
    }
   },
   {
    "cat": {
-    "ko": "원자재·제품 가격 변동 리스크",
-    "en": "Feedstock & Product Price Volatility"
+    "ko": "원재료 조달 리스크",
+    "en": "Feedstock Sourcing Risk"
    },
    "body": {
-    "ko": "바이오디젤 원가의 약 90%가 원재료비에서 발생하며, 폐식용유·팜유·대두유의 국제 가격 변동이 수익성에 직접적인 영향을 미친다. 전쟁 발발 이후 급등했던 팜유·대두유 가격은 정상화됐으나, 국제 대두유 가격은 2022년 톤당 약 1,567달러에서 2024년 약 980달러까지 하락하는 등 변동 폭이 크다. SAF 수요 증가로 글로벌 폐식용유 조달 경쟁이 심화될 경우 원료 조달 비용이 역으로 상승할 가능성도 배제할 수 없다.",
-    "en": "Raw materials account for approximately 90% of biodiesel production costs, meaning international price movements in waste cooking oil, palm oil, and soybean oil flow directly into margins. While post-war commodity price spikes have normalized, international soybean oil prices remain volatile — having declined from approximately USD 1,567/t (2022) to approximately USD 980/t (2024). Conversely, intensifying global competition for sustainable feedstocks driven by SAF demand growth could push procurement costs higher, creating a two-sided commodity risk."
+    "ko": "SAF·HVO 생산 확대 계획이 폐식용유 등 인증 원료의 안정적 조달을 전제로 하고 있으나, 국내 수거량이 제한적이고 해외 수입 의존도가 높아 원료 확보 경쟁 심화 시 비용 부담이 커질 수 있다. 주요 원료 생산국의 자국 우선 정책 도입 가능성도 공급망 불확실성 요인이다.",
+    "en": "Plans to expand SAF and HVO production hinge on stable sourcing of certified feedstock such as used cooking oil, but domestic collection volumes are limited and reliance on imports is high, meaning cost pressure could rise as feedstock competition intensifies. The possibility that major feedstock-producing countries adopt domestic-priority policies is an additional supply-chain uncertainty."
    }
   },
   {
    "cat": {
-    "ko": "HVO·SAF 사업화 지연 및 자본 조달 리스크",
-    "en": "HVO/SAF Commercialization Delay & Capital Financing Risk"
+    "ko": "재무 레버리지 리스크",
+    "en": "Financial Leverage Risk"
    },
    "body": {
-    "ko": "군산 HVO 본설비와 수소 플랜트를 포함한 중장기 투자 프로그램은 인허가 지연, 공사비 초과, 글로벌 SAF 가격 변동 등 복수의 실행 리스크를 내포한다. 현재 부채비율 180.8%와 낮은 수익성을 고려하면 외부 자금 조달 조건이 우호적이지 않을 수 있으며, 신주 발행 시 기존 주주의 지분 희석 리스크가 수반된다. 투자 지연은 국내 SAF 시장 선점 기회 상실로도 이어질 수 있어 기회비용 차원의 리스크도 존재한다.",
-    "en": "The phased capital investment program spanning the Gunsan HVO plant and hydrogen facilities carries compounding risks of permitting delays, construction cost overruns, and SAF price volatility at commissioning. With a debt ratio of 180.8% and persistently low profitability, external financing conditions may be unfavorable; equity issuance to bridge the funding gap would dilute existing shareholders. Delays in execution also risk forfeiting the first-mover advantage in Korea's nascent SAF production market, creating an opportunity cost alongside the direct financial risk."
+    "ko": "부채비율이 2023년 155.7%에서 2025년 180.8%로 상승했고, 같은 기간 순이익은 적자로 전환됐다. 대규모 설비투자(군산 HVO 플랜트, 넷제로 컴플렉스 등)가 예정된 가운데 이익 회복이 지연될 경우 재무 부담이 추가로 커질 가능성이 있다.",
+    "en": "The debt ratio rose from 155.7% in 2023 to 180.8% in 2025, while net income turned negative over the same period. With large-scale capital investments planned (the Gunsan HVO plant, the net-zero complex, etc.), a delayed earnings recovery could add further financial strain."
    }
   }
  ],
  "checkpoints": [
   {
    "when": {
-    "ko": "2026년 8월 중순",
-    "en": "Mid-August 2026"
+    "ko": "2026년 11월경",
+    "en": "Around November 2026"
    },
    "what": {
-    "ko": "2026Q2(4~6월) 잠정 실적 발표: 영업이익 흑자 지속 여부와 매출 성장 모멘텀 확인이 핵심. Q1의 회복이 단기 반등인지 추세 전환의 시작인지를 판별하는 핵심 데이터 포인트다.",
-    "en": "Q2 2026 (April–June) preliminary earnings: verify whether the Q1 operating profit recovery is sustained and whether revenue momentum continues — the pivotal data point to distinguish a trend reversal from a temporary bounce."
+    "ko": "2026년 3분기 실적 발표에서 2분기 순이익 흑자전환이 이어지는지, 영업이익률 개선세가 지속되는지 확인할 필요가 있다.",
+    "en": "Check whether the Q3 2026 earnings release confirms continuation of the Q2 net profit turnaround and sustained improvement in operating margin."
    }
   },
   {
    "when": {
-    "ko": "2026년 하반기 (수사 일정 미정)",
-    "en": "H2 2026 (timeline uncertain)"
+    "ko": "수시(검찰 수사 진행 상황)",
+    "en": "Ongoing (prosecution investigation progress)"
    },
    "what": {
-    "ko": "바이오디젤 담합 의혹 관련 검찰 수사 결과 및 공정위 과징금 결정 여부. 형사·행정·민사 제재의 규모와 사업 참여 제한 여부가 확정되면, 재무 건전성과 입찰 경쟁력에 미치는 영향을 재평가할 수 있다.",
-    "en": "Outcome of the criminal antitrust investigation and any KFTC penalty rulings. Once the scale of criminal, administrative, and civil liabilities is determined — along with any bidding restrictions — the impact on financial health and competitive standing in domestic tender processes can be reassessed."
+    "ko": "서울서부지검의 바이오디젤 담합 수사 관련 기소 여부, 공정거래위원회 제재 결정 등 후속 조치 발표 시점을 확인해야 한다.",
+    "en": "Monitor announcements on whether the Seoul Western District Prosecutors' Office files charges over the biodiesel cartel case, and any subsequent Fair Trade Commission sanction decisions."
    }
   },
   {
    "when": {
-    "ko": "2026년 4분기~2027년 1분기",
-    "en": "Q4 2026 – Q1 2027"
+    "ko": "2026년 중",
+    "en": "During 2026"
    },
    "what": {
-    "ko": "군산 HVO 본설비 착공 공시 및 인허가 진행 현황. 착공 시기 확정과 투자 규모 공개는 중장기 성장 전략 실행의 가장 중요한 이정표로, 지연 시 밸류에이션 시나리오 수정이 불가피하다.",
-    "en": "Official groundbreaking announcement and regulatory permit progress for the Gunsan HVO main plant. Confirmation of construction start date and total capex commitment is the most critical milestone for the long-term growth roadmap; any delay would necessitate revision of medium-term scenario assumptions."
+    "ko": "군산 HVO 플랜트 착공 및 인허가 진행 상황, 넷제로 컴플렉스 투자 집행 공시 여부를 확인할 시점이다.",
+    "en": "Track progress on groundbreaking and permitting for the Gunsan HVO plant, and any disclosures on execution of the net-zero complex investment."
    }
   },
   {
    "when": {
-    "ko": "2026년 연중 (수시)",
-    "en": "Throughout 2026 (rolling)"
+    "ko": "2027년 11월까지 순차 확인",
+    "en": "Sequentially through November 2027"
    },
    "what": {
-    "ko": "평택 HVO PTU 가동률 및 글로벌 정유사 공급 계약 체결 공시. SAF 원료 납품 실적이 실제 매출에 얼마나 빠르게 반영되는지가 수익성 회복 시나리오의 속도를 결정한다.",
-    "en": "Monitor utilization rates at the Pyeongtaek HVO PTU and any announcements of binding supply agreements with global refiners. The speed at which SAF feedstock deliveries are recognized in reported revenue is the primary driver of the profitability recovery timeline."
-   }
-  },
-  {
-   "when": {
-    "ko": "2026년 연중 (수시)",
-    "en": "Throughout 2026 (rolling)"
-   },
-   "what": {
-    "ko": "국제 팜유·대두유·폐식용유 가격 동향. 원재료비가 매출원가의 약 90%를 차지하므로, 스프레드 변화가 분기 영업이익에 즉각 연동된다.",
-    "en": "Track international prices of palm oil, soybean oil, and used cooking oil. Since feedstocks represent ~90% of cost of goods sold, movements in the product-to-feedstock price spread will directly and immediately drive quarterly operating profit outcomes."
+    "ko": "필립스66향 SAF 원료 공급계약의 분기별 이행 물량 및 매출 반영 규모를 실적 공시를 통해 점검할 필요가 있다.",
+    "en": "Review quarterly earnings disclosures to check delivery volumes and revenue recognition under the Phillips 66 SAF feedstock supply contract."
    }
   }
  ],
  "verdict": {
   "body": {
-   "ko": "DS단석은 국내 바이오디젤 수출 1위 사업자로서 HVO·SAF 밸류체인 구축이라는 명확한 중장기 성장 스토리를 보유하고 있으며, 평택공장이 SAF 원료 생산 전초기지로 주목받는 등 사업 전환의 초기 성과가 가시화되고 있다. 다만 2023년 정점 이후 2년 연속 영업이익률이 급락하며 지배주주 기준 당기순손실이 이어지고 부채비율이 180.8%까지 상승해, 대규모 HVO 설비 투자를 앞두고 재무적 여력이 제한적인 상황이다. 2026년 1월 검찰 압수수색으로 본격화된 담합 수사는 법적·재무적·거버넌스 측면의 불확실성을 더해 리스크 프로파일을 복잡하게 만든다. 2026Q1의 매출·영업이익 동시 회복은 저점 통과를 시사하는 긍정적 신호이나, 지배주주 순손실이 지속되고 있어 완전한 이익 전환 여부는 추가 분기 실적으로 검증이 필요하다. 군산 HVO 본설비 2026년 착공·2028년 완공이 계획대로 실행되고 글로벌 정유사 공급 실적이 누적된다면 이익 사이클 재진입의 발판이 마련될 수 있다. 단기 수익성 개선 속도, 담합 수사 리스크 해소, 중장기 설비 투자 실행이라는 세 축의 진행 속도가 기업 가치 방향성을 결정할 핵심 변수다.",
-   "en": "DS Dansuk holds a compelling long-term structural narrative as Korea's leading biodiesel exporter and a domestic first-mover in the HVO/SAF value chain, with the Pyeongtaek plant recognized as a front-line SAF feedstock production base marking the initial materialization of its business transformation. However, three consecutive years of OPM decline since the 2023 peak, persistent controlling-shareholder net losses, and a debt ratio of 180.8% constrain financial flexibility ahead of the large-scale Gunsan HVO capex cycle. The January 2026 criminal raid amplifies the risk profile by adding unresolved legal, financial, and governance uncertainties. The simultaneous recovery in revenue and operating profit in 2026 Q1 is a constructive signal that the trough may have passed, but the residual net loss means earnings turnaround confirmation requires at least one or two additional quarters of evidence. On-schedule execution of the Gunsan HVO plant (groundbreaking 2026, completion 2028) and progressive accumulation of SAF feedstock supply revenues are the prerequisites for a sustained re-entry into a positive earnings cycle. Three factors will ultimately determine the company's valuation trajectory: the pace of near-term margin recovery, resolution of the antitrust investigation, and disciplined execution of its transformative capital program."
+   "ko": "DS단석은 바이오에너지·배터리 리사이클·플라스틱 리사이클을 아우르는 순환경제형 사업구조를 보유하고 있으며, 2026년 2분기 들어 매출과 영업이익, 순이익이 동반 개선되며 5개 분기 만에 흑자전환에 성공했다. 그러나 2023년 이후 3년 연속 영업이익률이 하락했고 2024~2025년에는 연간 순손실을 기록했으며, 부채비율도 함께 상승해 재무 부담이 커진 상태다. 여기에 2026년 1월 검찰의 바이오디젤 담합 의혹 압수수색이라는 법률 리스크가 새롭게 부각되며, 사업 펀더멘털 개선과 별개로 비재무적 불확실성이 공존하는 국면이다. 필립스66과의 대형 SAF 공급계약, 군산 HVO 플랜트, 넷제로 컴플렉스 등 중장기 성장동력은 이미 구체화돼 있으나, 원료 조달 경쟁 심화라는 변수가 실행 속도를 좌우할 것으로 보인다. 투자 판단에 있어서는 최근 분기 실적 회복의 지속성과 담합 수사의 진행 경과를 함께 지켜볼 필요가 있다. 본 리포트는 투자 의견이나 목표주가를 제시하지 않으며, 정보 제공을 목적으로 작성되었다.",
+   "en": "DS Dansuk operates a circular-economy business spanning bioenergy, battery recycling, and plastic recycling, and in Q2 2026 delivered simultaneous improvement in revenue, operating profit, and net income, marking a return to profit after five quarters of losses. However, operating margin declined for three consecutive years starting in 2023, annual net losses were recorded in both 2024 and 2025, and the debt ratio rose in tandem, adding to financial strain. Compounding this, a new legal risk emerged in January 2026 when prosecutors raided the company over alleged biodiesel cartel activity, meaning non-financial uncertainty persists alongside any fundamental improvement. Mid-to-long-term growth drivers—including the large SAF supply contract with Phillips 66, the Gunsan HVO plant, and the net-zero complex—are already concretely defined, but intensifying feedstock competition is likely to determine the pace of execution. Investors should watch both the durability of the recent quarterly earnings recovery and the progress of the cartel investigation. This report does not provide an investment opinion or target price and is intended for informational purposes only."
   }
  },
  "sources": [
   "https://m.irgo.co.kr/IR-COMP/017860",
-  "https://news.nate.com/view/20260331n33904",
-  "https://comp.fnguide.com/SVO2/ASP/SVD_Main.asp?gicode=A017860",
-  "https://m.thinkpool.com/compDiscuss/cont/1014899",
-  "https://www.valueline.co.kr/finance/summary/017860",
-  "https://www.investing.com/equities/ds-dansuk-earnings",
-  "https://comp.fnguide.com/SVO2/ASP/SVD_Corp.asp?gicode=A017860",
-  "https://www.digitaltoday.co.kr/news/articleView.html?idxno=651021",
-  "https://kr.investing.com/equities/ds-dansuk",
-  "https://www.news1.kr/industry/general-industry/5608995",
-  "http://dsdansuk.com/products/bioenergy/",
+  "https://dsdansuk.com/",
+  "https://m.finance.daum.net/quotes/A017860/news/disclosure/20260331039819",
+  "https://www.ceoscoredaily.com/page/view/2025052315210598683",
+  "https://www.catch.co.kr/Comp/CompSummary/371106",
+  "https://m-economynews.com/mobile/article.html?no=64997",
+  "https://alphasquare.co.kr/home/stock-summary?code=017860",
   "https://www.energy-news.co.kr/news/articleView.html?idxno=210653",
-  "https://stockstalker.co.kr/saf/",
-  "http://www.dsdansuk.com/prcenter/news/",
-  "https://www.businesspost.co.kr/BP?command=article_view&num=371350",
-  "https://www.etnews.com/20250214000200",
-  "https://www.m-economynews.com/news/article.html?no=64997",
-  "https://zdnet.co.kr/view/?no=20250908102410"
+  "https://kind.krx.co.kr/common/disclsviewer.do?method=search&acptno=20240320000662&docno=&viewerhost=",
+  "https://kbthink.com/securities-view.html?docId=20240509093803560K",
+  "https://news.samsung.com/kr/%EC%82%BC%EC%84%B1%EC%A0%84%EC%9E%90-2025%EB%85%84-4%EB%B6%84%EA%B8%B0-%EC%8B%A4%EC%A0%81-%EB%B0%9C%ED%91%9C",
+  "https://m.thinkpool.com/compDiscuss/cont/1015807",
+  "https://kbthink.com/securities-view.html?docId=20241206165545440K",
+  "https://kind.krx.co.kr/external/2024/07/12/000277/20240712000653/DS%EB%8B%A8%EC%84%9D%202024%20%EC%A7%80%EC%86%8D%EA%B0%80%EB%8A%A5%EA%B2%BD%EC%98%81%EB%B3%B4%EA%B3%A0%EC%84%9C.pdf",
+  "https://kind.krx.co.kr/common/disclsviewer.do?method=search&acptno=20250321002063&docno=&viewerhost=",
+  "https://www.judal.co.kr/?view=stockAI&shareToken=Vslz2vV8HXwekYmp",
+  "https://m.thinkpool.com/compDiscuss/cont/1012895",
+  "https://www.stockplus.com/m/stocks/KOREA-A017860"
  ],
  "v": 2,
- "model": "claude-sonnet-4-6",
+ "model": "claude-sonnet-5",
  "ticker": "017860",
  "name": "DS단석",
  "name_en": "DS DANSUK CO., LTD.",
@@ -233,11 +223,11 @@
   "화학"
  ],
  "market": "코스피",
- "reportDate": "2026-06-18",
- "reportTs": "2026-06-18 23:44",
- "dataDate": "20260618",
+ "reportDate": "2026-08-18",
+ "reportTs": "2026-08-18 00:50",
+ "dataDate": "20260814",
  "quant": {
-  "asOf": "2026-06-18",
+  "asOf": "2026-08-17",
   "fs_basis": "연결(CFS) · DART 공시 확정치 · 지배주주 기준 순이익",
   "annual": [
    {
@@ -288,12 +278,6 @@
   ],
   "quarterly": [
    {
-    "q": "2025Q1",
-    "rev": 248115586701,
-    "op": 8991400862,
-    "np_owner": 6235133147
-   },
-   {
     "q": "2025Q2",
     "rev": 221725308957,
     "op": -1317288354,
@@ -316,26 +300,32 @@
     "rev": 278139614522,
     "op": 4395804601,
     "np_owner": -1856414918
+   },
+   {
+    "q": "2026Q2",
+    "rev": 310076582523,
+    "op": 6289708730,
+    "np_owner": 2518116226
    }
   ],
   "valuation": {
-   "price": 14560,
-   "mcap": 0.2586,
+   "price": 12440,
+   "mcap": 0.2209,
    "shares": 17759139,
    "total_shares": 17584212,
-   "wavg_shares": 17513348,
+   "wavg_shares": 17413192,
    "per": null,
-   "eps": -1146,
-   "pbr": 0.95,
-   "bps": 15378,
-   "roe_ttm": -7.2,
-   "ttm_window": "2025Q2~2026Q1",
-   "ttm_np_owner": -20113756627,
-   "pbr_krx": 0.91,
+   "eps": null,
+   "pbr": 0.8,
+   "bps": 15616,
+   "roe_ttm": -4.4,
+   "ttm_window": "2025Q3~2026Q2",
+   "ttm_np_owner": -12232852955,
+   "pbr_krx": 0.81,
    "bps_krx": 15304.0,
    "basis": "PER·EPS·PBR·BPS 모두 자체 산출(네이버·토스와 동일 방식) · 배당은 DART 공시 주당현금배당금(보완:KRX) ÷ 현재가",
    "dps": 10.0,
-   "div": 0.07
+   "div": 0.08
   }
  }
 }

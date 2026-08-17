@@ -1,230 +1,221 @@
 {
  "title": {
-  "ko": "반도체 검사 체질개선, CoWoS·기판 흑자전환 가시권",
-  "en": "Semiconductor Inspection Portfolio Pivot: Return to Profitability in Sight"
+  "ko": "반도체 전환 진행, 흑자전환은 지연",
+  "en": "Semiconductor Pivot Advances, Profit Turnaround Delayed"
  },
  "lead": {
-  "ko": "3년 연속 영업적자를 겪은 인텍플러스가 이차전지 장비 비중 축소·반도체 후공정 패키징 및 기판 검사 집중이라는 구조적 체질 개선을 진행 중이며, 2026년 하반기 CoWoS 양산 수주 가시화 및 일본·대만 FC-BGA 기판 검사 물량 확대가 흑자전환의 핵심 변수로 부상하고 있다.",
-  "en": "After three consecutive years of operating losses, Intekplus is actively restructuring its portfolio away from battery inspection toward semiconductor back-end packaging and substrate inspection, with second-half 2026 CoWoS production orders and expanded Japan/Taiwan FC-BGA substrate inspection contracts emerging as the pivotal variables for a return to profitability."
+  "ko": "인텍플러스는 반도체 후공정 검사장비 중심으로 사업구조를 재편하고 있지만, 2026년 상반기까지 영업손실이 이어지며 증권가의 연간 흑자전환 전망과는 다른 실적 흐름을 보이고 있다.",
+  "en": "Intekplus is restructuring its business around semiconductor back-end inspection equipment, but operating losses have continued through the first half of 2026, diverging from brokerage forecasts of a full-year profit turnaround."
  },
  "keypoints": [
   {
-   "ko": "매출 믹스 전환 가속: 이차전지·디스플레이 비중 축소, 2026년 반도체 외관검사 장비 매출 비중 70% 이상 목표로 수익 구조 고도화 진행 중",
-   "en": "Accelerating sales mix shift: Battery/display share shrinking as semiconductor visual inspection targets 70%+ of 2026 revenue, fundamentally upgrading the profitability structure"
+   "ko": "2025년 3분기 누적 기준 반도체 외관검사 장비와 2차전지·디스플레이 검사장비의 매출 비중은 각각 55%, 45%로, 반도체 부문이 우위를 점했다.",
+   "en": "As of the nine months through Q3 2025, semiconductor visual inspection equipment accounted for 55% of revenue versus 45% for battery/display equipment, with the semiconductor segment in the lead."
   },
   {
-   "ko": "CoWoS 퀄테스트 2026년 1분기 통과, PO 대기 중: KLA 독점 시장에 세컨드 벤더로 진입 시 하반기 매출 증분 및 다년간 연간 약 100억원 규모 반복 수주 기대",
-   "en": "CoWoS qual-test cleared in Q1 2026, purchase order pending: Entry as second vendor in KLA-dominated market expected to generate incremental H2 revenue and ~KRW 10B in recurring annual orders over multiple years"
+   "ko": "2025년 연간 매출은 897억원, 영업손실은 37억원으로 전년(-156억원) 대비 적자폭이 크게 줄었으나 4년 연속 적자다.",
+   "en": "Full-year 2025 revenue was KRW 89.8 billion with an operating loss of KRW 3.7 billion, a sharply narrower loss than 2024's KRW 15.6 billion, but still the fourth consecutive year of losses."
   },
   {
-   "ko": "일본·대만 FC-BGA 기판 검사 신시장 진입: 다카오카 독점을 WSI 기술로 공략해 이비덴·신코전기·토판 등 Top-tier 신규 고객 확보, 2027년부터 본격 매출 기여 예상",
-   "en": "New market entry in Japan/Taiwan FC-BGA substrate inspection: Leveraging WSI technology against Takaoka's monopoly to secure Ibiden, Shinko Electric, and Toppan as new customers, with meaningful revenue contribution expected from 2027"
+   "ko": "2026년 1분기(-19억원)와 2분기(-51억원) 모두 영업손실을 기록해 상반기 합산 적자가 2025년 연간 적자 규모를 넘어섰다.",
+   "en": "Both Q1 2026 (-KRW 1.9 billion) and Q2 2026 (-KRW 5.1 billion) posted operating losses, with the first-half combined loss exceeding the full-year 2025 loss."
   },
   {
-   "ko": "구조조정 효과 확인: 2차전지 부문 인력 감축에 따른 인건비 절감으로 2026년 1분기 영업손실 폭이 전년 동기 대비 크게 축소, BEP 매출 하향 조정 확인",
-   "en": "Restructuring benefits validated: Battery segment headcount cuts reduced fixed costs; Q1 2026 operating loss narrowed sharply year-over-year, confirming a lower break-even revenue threshold"
+   "ko": "대만 CoWoS 밴더 대상 퀄테스트, 일본·대만 기판 검사장비 신규 고객 확보 등 해외 시장 다변화가 진행되고 있다.",
+   "en": "Overseas market diversification is underway, including a qualification test with a Taiwanese CoWoS vendor and new substrate-inspection customers in Japan and Taiwan."
   },
   {
-   "ko": "강한 계절성(상저하고) 유의: 2026년 연간 흑자전환은 하반기 FC-BGA·CoWoS 수주 납품 집중과 북미 IDM향 대면적 기판 검사 수주에 달려 있어 상반기 실적만으로 판단 금물",
-   "en": "Pronounced seasonality (H1 weak / H2 strong): Full-year 2026 profitability hinges on H2 FC-BGA/CoWoS deliveries and North America IDM large-format substrate orders; H1 results alone are not representative"
+   "ko": "주당순자산가치는 3,471원 수준이며, 최근 3개년간 현금배당은 실시되지 않았다.",
+   "en": "Book value per share stands at around KRW 3,471, and the company has not paid a cash dividend over the past three years."
   }
  ],
  "business": {
-  "ko": "인텍플러스는 KAIST 출신 연구진이 설립한 머신비전 기반 자동 외관검사 장비 전문 기업으로, 반도체 패키징 검사, FC-BGA 기판(Mid-end) 검사, 디스플레이 및 이차전지 검사 장비를 3대 사업 부문으로 영위한다. 핵심 기술은 WSI(White Light Scanning Interferometry)로, 고속으로 미세 범프의 높이와 형상을 정밀 측정하는 국내에서 드문 자체 3D 측정 기술이다. 2025년 3분기 누적 기준 부문별 매출 비중은 반도체 후공정 검사 장비 약 55%(275억원), 이차전지·디스플레이 약 45%(220억원)였으나, 2025년부터 반도체 비중 확대·이차전지 비중 축소를 골자로 한 포트폴리오 재편을 본격화하고 있다(iM증권 리포트, 2026.01). 반도체 패키징 검사 장비 부문은 2018년 북미 글로벌 반도체 고객사에 단독 공급사로 선정된 것을 계기로 사업의 중심축이 됐으며, 삼성전기·유니마이크론 등 글로벌 톱티어 기판 제조사가 주요 고객군에 포함돼 있다. 최근에는 AI 서버용 FC-BGA 기판 검사 장비를 일본 시장에 처음 공급해 이비덴·신코전기·토판 등을 신규 고객으로 확보했고, 대만 OSAT향 CoWoS 패키징 검사 장비도 2026년 1분기 퀄테스트를 통과한 단계다. 이차전지 장비 부문은 대형 설비 특성상 반도체 장비 대비 수익성이 현저히 낮아, 고마진 반도체 외관검사 장비 중심 구조로의 전환이 비용 절감과 병행해 진행되고 있다. 신규 사업으로는 인텔과 공동개발 중인 유리기판(Glass Substrate) 검사 장비 및 국책과제로 추진 중인 웨이퍼 범프 2D/3D 검사 장비 국산화 프로젝트도 중장기 성장 옵션으로 대기하고 있다.",
-  "en": "Intekplus, founded by KAIST researchers, specializes in machine vision-based automatic visual inspection equipment across three core segments: semiconductor packaging inspection, FC-BGA substrate (mid-end) inspection, and display/battery inspection. Its proprietary WSI (White Light Scanning Interferometry) technology—rare among domestic equipment makers—enables high-speed, precision 3D measurement of fine bump height and shape. As of the first three quarters of 2025, the revenue split was approximately 55% semiconductor back-end inspection (KRW 27.5B) and 45% battery/display inspection (KRW 22.0B), with an active portfolio shift underway to expand the semiconductor share and reduce the battery share since 2025 (iM Securities, Jan. 2026). The semiconductor packaging inspection segment became a cornerstone in 2018 when the company was designated sole supplier by a major North American semiconductor customer; Samsung Electro-Mechanics and Unimicron are among its global tier-one substrate customers. More recently, the company entered Japan's FC-BGA substrate inspection market for the first time, securing Ibiden, Shinko Electric, and Toppan as new customers, while its CoWoS packaging inspection equipment cleared qualification testing at a Taiwan OSAT customer in Q1 2026. The battery equipment segment carries structurally lower margins due to large-scale equipment characteristics, reinforcing the rationale for the ongoing shift toward higher-margin semiconductor inspection. New business initiatives—glass substrate inspection equipment being co-developed with Intel and a government-backed wafer bump 2D/3D inspection localization project—are positioned as medium-to-long-term growth options."
+  "ko": "인텍플러스는 1995년 설립된 머신비전 기반 3D·2D 외관검사장비 전문기업으로, 반도체와 반도체 미드-엔드(Mid-End), 디스플레이, 2차전지 외관검사장비 제조 사업을 영위하고 있다. 회사는 표면 형상에 대한 영상 데이터를 획득해 분석·처리하는 자동외관검사장비와 모듈을 개발해 판매하며, 미세 결함을 입체적으로 측정하는 WSI(백색광 주사 간섭계) 기술을 핵심 경쟁력으로 삼고 있다. 2025년 3분기 누적 기준 사업부문별 매출 비중은 반도체 외관검사 장비가 55%, 2차전지 및 디스플레이 검사장비가 45%로 나뉜다. 회사는 2025년부터 이차전지·디스플레이 부문 인력을 줄이고 반도체 후공정 검사장비 비중을 늘리는 방향으로 포트폴리오를 재편하고 있으며, 올해 반도체 외관검사장비 매출 비중은 70%를 넘어설 것으로 전망된다. 주요 고객군은 국내외 반도체 IDM·파운드리·OSAT 업체와 글로벌 반도체 기판(substrate) 제조사들로, 최근 대만·일본 기업들도 검사장비를 채택하기 시작한 것으로 파악된다. 외관검사 장비 시장은 미국 KLA가 오랜 기간 주도해 왔으며, 국내에서는 인텍플러스 외에 고영테크놀러지, 넥스틴, 팸트론 등이 경쁘구도를 형성하고 있다. 반도체 검사장비는 사양에 따라 이차전지 장비 대비 수익성이 약 2배 높은 것으로 알려져, 매출 믹스 변화가 수익성에 직접적인 영향을 미치는 구조다.",
+  "en": "Founded in 1995, Intekplus specializes in machine-vision-based 3D/2D automated visual inspection equipment, operating across semiconductor, semiconductor mid-end, display, and secondary battery inspection equipment businesses. The company develops and sells automated inspection systems that capture and analyze surface-shape imaging data, with White-light Scanning Interferometer (WSI) technology as its core differentiator for measuring micro-defects three-dimensionally. As of the nine months through Q3 2025, semiconductor visual inspection equipment made up 55% of segment revenue, with battery and display inspection equipment at 45%. Since 2025 the company has been reducing headcount in the battery/display segment while expanding the semiconductor back-end inspection business, and semiconductor visual inspection revenue is expected to exceed 70% of total sales this year. Its main customers include domestic and overseas semiconductor IDMs, foundries, OSATs, and global substrate manufacturers, with Taiwanese and Japanese firms recently beginning to adopt its equipment as well. The visual inspection equipment market has long been led by KLA of the United States, while domestic competitors include Koh Young Technology, Nextin, and Famtron. Semiconductor inspection equipment is reported to carry roughly twice the profitability of battery equipment depending on specification, making revenue mix a direct driver of profitability."
  },
  "earnings": {
-  "ko": "인텍플러스의 연간 실적은 2022년 매출 약 1,188억원·영업이익 약 194억원(OPM 16.3%)으로 정점을 찍은 뒤 3년 연속 영업적자 국면에 빠졌다. 2023년에는 이차전지 장비 확대 전략이 수익성 악화로 이어지며 매출 약 748억원·영업손실 약 111억원(OPM -14.8%)을 기록했고, 2024년에는 매출 약 839억원으로 소폭 회복됐으나 영업손실은 약 156억원(OPM -18.6%)으로 오히려 확대됐다. 영업현금흐름(CFO)도 2024년 약 -73억원으로 급전직하했으나 2025년에는 약 +57억원으로 반전해 현금 창출력이 되살아났다. 2025년은 매출 약 898억원, 영업손실 약 37억원(OPM -4.2%)으로 적자 폭이 대폭 축소됐는데, 이는 반도체 장비 수주 확대와 이차전지 부문 구조조정 효과가 맞물린 결과다. 분기별로는 2025년 1분기 매출 약 144억원·영업손실 약 45억원으로 출발해, 2분기 매출 약 251억원·영업이익 약 16억원(흑자전환), 3분기 매출 약 99억원·영업손실 약 49억원(계절적 저점), 4분기 매출 약 403억원·영업이익 약 41억원(강한 마무리)으로 뚜렷한 상저하고 패턴을 시현했다. 2026년 1분기는 매출 약 128억원·영업손실 약 19억원으로, 전년 동기(매출 약 144억원·손실 약 45억원)보다 매출은 소폭 감소했음에도 손실 폭이 절반 이하로 줄어 구조조정 기반의 고정비 절감 효과가 확인됐다. 부채비율은 2022년 73.0%에서 2024년 172.6%까지 상승했다가 2025년 말 158.6%로 소폭 개선됐으며, 3년간의 누적 손실로 자기자본은 약 672억원(2022년)에서 약 460억원(2025년 말)으로 감소해 재무 건전성 회복도 관건이다.",
-  "en": "Intekplus reached peak performance in 2022 with revenue of approximately KRW 118.8B and operating profit of approximately KRW 19.4B (OPM 16.3%), then entered three consecutive years of operating losses. In 2023, an aggressive push into battery equipment weighed heavily on margins, producing revenue of approximately KRW 74.8B and an operating loss of approximately KRW 11.1B (OPM -14.8%). In 2024, revenue recovered modestly to approximately KRW 83.9B but the operating loss widened to approximately KRW 15.6B (OPM -18.6%). Operating cash flow (CFO) deteriorated sharply to approximately -KRW 7.3B in 2024 but rebounded to approximately +KRW 5.7B in 2025, signaling a meaningful improvement in cash generation. Full-year 2025 saw revenue of approximately KRW 89.8B with an operating loss of only approximately KRW 3.7B (OPM -4.2%), as growing semiconductor equipment orders and battery segment restructuring converged. Quarterly, 2025 displayed a clear first-half weak/second-half strong pattern: Q1 revenue approximately KRW 14.4B with OP loss approximately KRW 4.5B; Q2 revenue approximately KRW 25.1B with OP profit approximately KRW 1.6B (first profitable quarter); Q3 revenue approximately KRW 9.9B with OP loss approximately KRW 4.9B (seasonal trough); Q4 revenue approximately KRW 40.3B with OP profit approximately KRW 4.1B (strong close). In Q1 2026, revenue was approximately KRW 12.8B with an operating loss of approximately KRW 1.9B—though revenue declined slightly year-over-year, the operating loss fell by more than half versus Q1 2025 approximately KRW 4.5B, confirming fixed-cost reduction. The debt-to-equity ratio rose from 73.0% in 2022 to a peak of 172.6% in 2024, then eased to 158.6% at end-2025. Accumulated losses have reduced shareholders' equity from approximately KRW 67.2B (2022) to approximately KRW 46.0B (end-2025), making financial health restoration another key consideration."
+  "ko": "2025년 연결 매출액은 897.65억원으로 2024년 838.73억원 대비 소폭 증가했으나, 영업손실은 37.3억원으로 2024년(-155.9억원)보다 적자 규모가 크게 축소됐다. 지배주주 순손실도 2025년 -33.1억원으로 2024년(-118.7억원) 대비 개선됐다. 다만 2023년(-107.9억원)과 2024년(-118.7억원)의 대규모 적자 이후 2025년까지 3년 연속 적자가 이어지고 있으며, 2022년(영업이익 193.6억원, 영업이익률 16.3%)의 흑자 구간과 비교하면 아직 수익성 회복이 더디다. 분기별로 보면 2025년 2분기 영업이익 15.8억원으로 일시적으로 흑자를 기록했으나, 3분기에는 매출이 99.3억원으로 급감하며 영업손실이 49.2억원까지 확대됐고, 4분기에는 매출이 402.8억원으로 급증하며 영업이익 40.8억원, 지배주주 순이익 56.2억원으로 재차 흑자 전환하는 등 분기별 변동성이 매우 크다. 이런 변동성은 검사장비 특유의 수주-매출인식 시차와 4분기 집중 매출 인식 구조에서 기인하는 것으로 보인다. 그러나 2026년에는 1분기(-19.1억원), 2분기(-51.2억원) 모두 영업손실을 기록하며 상반기 합산 영업손실이 약 70억원에 달해, 2025년 연간 적자 규모(-37.3억원)를 이미 넘어섰다. 상상인증권은 2026년 1월 보고서에서 2026년 연간 매출 1,031억원(+20.5% YoY), 영업이익 75억원(흑자전환, 영업이익률 7.3%)을 전망하며 분기별로 상저하고 흐름을 예상했으나, 실제 상반기 실적은 이러한 흑자전환 전망과 상당한 격차를 보였다. 현금흐름 측면에서는 2025년 영업활동현금흐름이 57.4억원으로 순이익 적자에도 양(+)의 흐름을 나타냈으나, 2024년에는 -73.0억원으로 유동성 부담이 있었던 만큼 분기별 실적 변동에 따른 현금흐름 관리가 지속적인 관찰 포인트다.",
+  "en": "Consolidated revenue in 2025 was KRW 89.765 billion, up modestly from KRW 83.873 billion in 2024, while the operating loss narrowed sharply to KRW 3.735 billion from KRW 15.587 billion in 2024. Net loss attributable to controlling shareholders also improved to KRW 3.312 billion in 2025 from KRW 11.868 billion in 2024. Still, the company has now posted losses for three consecutive years following large losses in 2023 (-KRW 10.791 billion) and 2024, and profitability has yet to recover to the level seen in 2022, when operating profit reached KRW 19.363 billion (16.3% margin). Quarterly results show extreme volatility: Q2 2025 briefly turned profitable with operating profit of KRW 1.576 billion, Q3 2025 swung to a KRW 4.916 billion operating loss as revenue collapsed to KRW 9.926 billion, and Q4 2025 rebounded sharply with revenue of KRW 40.283 billion, operating profit of KRW 4.083 billion, and net profit attributable to owners of KRW 5.623 billion. This volatility appears to stem from the equipment industry's typical lag between order booking and revenue recognition, with recognition often concentrated in the fourth quarter. However, both Q1 2026 (-KRW 1.908 billion) and Q2 2026 (-KRW 5.117 billion) posted operating losses, pushing the first-half 2026 combined operating loss to roughly KRW 7 billion, already exceeding the full-year 2025 loss. Sangsangin Securities forecast in a January 2026 report that full-year 2026 revenue would reach KRW 103.1 billion (+20.5% YoY) with an operating profit of KRW 7.5 billion (turning profitable, 7.3% margin) and a back-half-loaded quarterly pattern, but actual first-half results diverged meaningfully from that turnaround projection. On cash flow, operating cash flow turned positive at KRW 5.742 billion in 2025 despite the net loss, a reversal from -KRW 7.303 billion in 2024, making cash flow management amid quarterly earnings swings an ongoing point to watch."
  },
  "industry": {
-  "ko": "FC-BGA(플립칩-볼그리드어레이) 반도체 기판 시장은 AI 서버·HPC용 반도체 수요 급증에 힘입어 2024년 약 4조 8천억원에서 2028년 약 8조원으로 연평균 약 14% 성장이 전망된다(삼성전기 IR 공개 자료). AI칩에 사용되는 FC-BGA 기판은 대면적화·미세범프화 추세가 뚜렷해 기존 검사 장비로는 속도와 정밀도가 부족해지는 구조적 문제가 발생하며, 이것이 WSI 기술 기반 장비에 대한 수요를 견인하는 핵심 배경이다. CoWoS(Chip on Wafer on Substrate) 패키징 검사 장비는 미국 KLA가 사실상 독점해 왔으나, AI 반도체 수요 급증 속 세컨드 벤더 니즈가 확대되고 있어 시장 구조가 변화하는 국면이다. 일본 반도체 기판 검사 시장 역시 다카오카(Takaoka Toko)가 독점해 왔으나, AI 서버용 FC-BGA 기판 수요 증가에 따라 세컨드 벤더 진입 기회가 열리고 있다. 주요 일본·대만 기판 제조사들의 CAPEX 스케줄이 2026~2028년에 집중돼 있어 향후 2~3년간 전방 설비 투자 수요가 본격화될 것으로 예상되며, LG이노텍이 베트남 FC-BGA 증설에 1조원 이상을 투입하는 등 국내 전방 고객의 투자 집행도 가속화하고 있다. 반면 이차전지 장비 전방 시장은 글로벌 EV 수요 둔화와 경쟁 심화로 여전히 불확실성이 높아, 포트폴리오 전환의 속도가 재무 성과에 직접 영향을 미치는 국면이다.",
-  "en": "The FC-BGA (Flip Chip-Ball Grid Array) semiconductor substrate market is forecast to grow from approximately KRW 4.8 trillion (2024) to KRW 8 trillion (2028) at a CAGR of approximately 14%, driven by surging AI server and HPC chip demand (Samsung Electro-Mechanics IR materials). AI chips require increasingly large-format substrates with finer bumps, and existing inspection equipment struggles to maintain adequate throughput and accuracy—the structural driver behind growing demand for WSI-based inspection systems. The CoWoS packaging inspection market has been virtually monopolized by U.S.-based KLA, but expanding AI semiconductor demand is generating increasing appetite for second-vendor alternatives, creating a structural market opening. Japan's FC-BGA substrate inspection market has similarly been dominated by Takaoka Toko, but AI server-driven substrate demand growth is opening the door to new entrants. Major Japanese and Taiwanese substrate makers have concentrated capex schedules in 2026–2028, pointing to meaningful front-end investment demand over the next two to three years; LG Innotek's commitment of over KRW 1 trillion for Vietnam FC-BGA capacity expansion further illustrates the scale of upstream investment. Conversely, the battery equipment front-end market faces persistent uncertainty from slowing global EV demand and intensifying competition, making the pace of portfolio transition a direct lever on near-term financial results."
+  "ko": "반도체 후공정 검사장비 시장은 첨단 패키징 확대와 함께 성장하고 있다. 고성능 반도체 구현을 위한 적층 패키징, 대면적 기판, HBM 등 신규 공정이 늘어나면서 미세 결함을 검출하는 외관검사 장비의 중요성이 커지고 있다. 외관 검사 장비 시장을 오랫동안 주도해 온 기업은 미국 KLA이며, KLA 브랜드 '아이코스'는 인텔, 삼성전자, SK하이닉스 등에 공급된 바 있다. 다만 고객사와 OSAT가 요구하는 사양이 복잡해지면서 국내 장비 기업들이 침투할 수 있는 여지가 열렸고, 대표적인 국내 기업으로 인텍플러스, 고영테크놀러지, 넥스틴, 팸트론 등이 꼽힌다. 인텍플러스는 이 가운데 대면적·고속 검사 기술을 앞세워 글로벌 파운드리 및 OSAT의 퀄테스트를 통과하는 방식으로 시장에 진입해 왔다. 전방산업인 반도체·기판 업계에서는 AI 서버용 FC-BGA 수요 증가에 따라 일본·대만 기판 업체들의 세컨드 벤더 수요가 늘어나는 흐름이 나타나고 있다. 다만 검사장비 수요는 고객사의 투자 사이클과 밀접히 연동돼 있어, 특정 고객사의 투자 지연이 실적에 직접적인 영향을 줄 수 있는 구조다.",
+  "en": "The semiconductor back-end inspection equipment market is expanding alongside the growth of advanced packaging. As stacked packaging, large-area substrates, and HBM-related processes proliferate to enable higher-performance chips, the importance of visual inspection equipment for detecting micro-defects has grown. KLA of the United States has long dominated this market, and its ICOS brand equipment has been supplied to Intel, Samsung Electronics, and SK Hynix. However, as customer and OSAT specification requirements have become more complex, opportunities have opened for domestic equipment makers, with Intekplus, Koh Young Technology, Nextin, and Famtron cited as leading domestic players. Intekplus has entered the market by leveraging large-area, high-speed inspection technology to pass qualification tests with global foundries and OSATs. In the substrate industry, rising AI server FC-BGA demand has driven demand for second-source vendors among Japanese and Taiwanese substrate makers. That said, inspection equipment demand is closely tied to customers' capex cycles, meaning a delay in a specific customer's investment plans can have a direct impact on results."
  },
  "outlook": {
-  "ko": "2026년 핵심 관전 포인트는 CoWoS 양산 발주(PO) 수령 가시화와 일본·대만·북미향 기판 검사 수주 확대다. 인텍플러스는 2026년 1분기 대만 OSAT향 CoWoS 검사 장비 퀄테스트를 통과했으며 현재 PO 수령을 대기 중으로, 수령 시 2026년 하반기 약 50억원, 향후 연간 약 100억원 규모의 매출 증분이 기대된다(iM증권 리포트, 2026.04). 일본 시장에서는 이비덴·신코전기·토판 등 신규 고객사를 확보한 가운데 2026년 상반기 복수의 데모장비 납품이 계획돼 있으며, 이어 양산 수주로 전환될 경우 2027년부터 본격 실적 기여가 전망된다. 대만 에이전시와는 2026년 3월 DART 공시를 통해 기판 검사 장비 공급계약(96억원 규모, 계약 기간 2027년 8월까지)을 체결해 일정 기간 매출 기여가 확보됐다. 북미 IDM향 대면적 기판 검사 장비는 단독 벤더 지위를 바탕으로 한 하반기 수주가 기대된다. 복수의 증권사 전망에 따르면 2026년 연간 실적은 매출 1,000억원 이상의 성장과 영업이익 흑자전환이 유력시되나 구체적 수치는 증권사별로 상당한 편차가 있다. 비용 면에서는 이차전지 부문 인력 감축에 따른 인건비 절감이 지속되고, 반도체 장비 매출 비중 상승에 따른 총마진(GPM) 개선이 하반기에 이익 레버리지로 집중될 것으로 분석된다.",
-  "en": "The key watchpoints for 2026 are the materialization of CoWoS production purchase orders and broader substrate inspection wins across Japan, Taiwan, and North America. Intekplus cleared CoWoS qualification testing at a Taiwan OSAT customer in Q1 2026 and is currently awaiting the purchase order; upon receipt, the incremental revenue is estimated at approximately KRW 5B in H2 2026, growing to approximately KRW 10B annually in subsequent years (iM Securities, Apr. 2026). In Japan, demo unit deliveries to multiple customers—including Ibiden, Shinko Electric, and Toppan—are planned for H1 2026, with volume production orders expected to begin contributing meaningfully from 2027. A KRW 9.6B substrate inspection equipment supply agreement with a Taiwan semiconductor agency was publicly disclosed via DART in March 2026, providing near-term revenue visibility through August 2027. North American IDM large-format substrate inspection orders, where the company holds a sole-vendor position, are anticipated to materialize in the second half. Multiple brokerages project full-year 2026 revenue exceeding KRW 100B and a return to operating profitability, though individual estimates vary widely. On costs, battery segment workforce reductions continue to suppress fixed expenses, and the rising semiconductor equipment share is expected to drive gross margin improvement with the earnings leverage effect concentrated in H2."
+  "ko": "회사의 가장 뚜렷한 성장 모멘텀은 대만 글로벌 파운드리 'T'사의 CoWoS 패키징 공정 검사 시장 진입이다. 인텍플러스는 2025년 9월 대만 내 글로벌 OSAT 업체의 CoWoS 라인을 겨냥한 데모 장비 납품을 완료했으며, 현재 양산 적용을 위한 퀄테스트를 진행 중으로, 퀄테스트에는 약 6개월 이상이 소요되어 2026년 상반기 말경 진출 여부가 가시화될 것으로 전망된 바 있다. 이와 함께 기존 FCBGA 글로벌 고객과 국내 주요 기판업체 외에도 대만과 일본 기업들이 신규로 검사장비를 채택하기 시작한 것으로 파악된다. 한 증권사는 2026년 4월 보고서에서 반도체 고객사가 AI 고성능 패키지 대응을 위해 기판 크기를 3배 이상 확장하고 있으며, 이에 따라 장비 판매가(ASP)도 상승할 것으로 전망하고, 하반기부터 관련 납품이 시작될 것으로 예상했다. 해당 보고서는 대만 발주(PO) 대기, 북미 어드밴스드패키지 대상 납품, 대만 수주, 국내 고객사 확대, 일본 신규 고객사 확보가 동시에 진행 중이라고 밝혔다. 다만 이러한 낙관적 전망과 달리 2026년 1~2분기 실적은 연속 적자를 기록해, 하반기로 갈수록 실적이 개선되는 이른바 '상저하고' 패턴이 실제로 실현될지가 향후 실적의 핵심 관전 포인트로 남아 있다. 회사는 이 밖에도 유리기판 검사장비, Wafer bump 2D/3D 검사장비 국산화 등 신제품 개발을 병행하고 있는 것으로 파악되나, 이들 사업의 구체적인 매출 기여 시점은 아직 공식적으로 확인되지 않았다.",
+  "en": "The company's most notable growth driver is its entry into the CoWoS packaging inspection market with a Taiwanese global foundry ('T'). Intekplus completed delivery of a demo unit targeting a Taiwanese global OSAT's CoWoS line in September 2025 and is currently undergoing qualification testing for mass-production adoption; the process was expected to take more than six months, with visibility on entry emerging around mid-2026. In parallel, beyond existing FC-BGA global customers and major domestic substrate makers, Taiwanese and Japanese firms are reported to have begun newly adopting the company's inspection equipment. One brokerage's April 2026 report noted that semiconductor customers are expanding substrate sizes more than threefold to accommodate high-performance AI packages, which should lift equipment average selling prices, with related deliveries expected to begin in the second half. The same report stated that a Taiwanese purchase order is pending, deliveries to a North American advanced-packaging customer are underway, Taiwanese orders have been won, domestic customer expansion is proceeding, and new Japanese customers have been secured, all simultaneously. However, in contrast to these optimistic projections, both Q1 and Q2 2026 results posted consecutive operating losses, leaving it an open question whether the anticipated back-half-loaded improvement will actually materialize as a key point to monitor going forward. The company is also reported to be developing new products including glass substrate inspection equipment and localization of 2D/3D wafer bump inspection equipment, though the specific timing of revenue contribution from these initiatives has not been officially confirmed."
  },
  "valuation_comment": {
-  "ko": "인텍플러스는 2023~2025년 3년 연속 순손실로 현재 주가수익비율(PER)을 산출할 수 없는 상태이며, 이익 수준이 확정되어야 의미 있는 이익 기반 밸류에이션 비교가 가능하다. 현재 주가는 주당 순자산(BPS) 3,673원을 크게 상회하는 구간에 위치해 있어 순자산 대비 높은 프리미엄이 형성돼 있는데, 이는 포트폴리오 재편에 따른 이익 회복 기대가 시장가격에 선행 반영된 구조로 해석된다. 과거 영업 호황기(2022년)에 형성됐던 주가수익배수 약 20배 내외의 거래 밴드와 비교하면, 현재 주가는 이익 회복 시나리오를 상당 부분 감안한 수준임을 시사한다. 반도체 기판 검사 장비 부문의 영업이익률이 30% 중반에 달하는 것으로 알려져 있어, 포트폴리오 재편이 완료될 경우 이익 체력 개선에 따른 밸류에이션 재평가 가능성이 있다. 배당은 실적 적자 국면이 지속되는 가운데 지급 실적이 없어 수익률 측면의 기여는 없다. 이익 회복의 속도와 규모가 현재 주가에 내재된 기대치에 부합하는지 여부가 향후 시장 평가의 핵심 변수다.",
-  "en": "Intekplus cannot generate a calculable price-earnings ratio due to three consecutive years of net losses through 2025; a meaningful earnings-based valuation comparison will only be possible once stable profitability is established. The current stock price sits at a substantial premium to book value per share (BPS: KRW 3,673), implying forward-looking expectations of a recovery are already embedded in the price. Compared with the approximately 20x price-earnings multiple that characterized the 2022 operating peak, the current valuation suggests a meaningful recovery scenario is already being discounted. The semiconductor substrate inspection segment is reported to carry operating margins in the mid-30s percentage range; successful portfolio restructuring could justify a valuation re-rating on improved earnings power. No dividend has been paid during the loss period, so income yield contributes nothing to total return. Whether the actual pace and magnitude of profit recovery meets the expectations embedded in the current price is the central variable for future market assessment."
+  "ko": "인텍플러스는 2026년 상반기까지 순손실이 이어지고 있어 주가수익비율(PER)은 의미 있는 값으로 산출되지 않는 상태다. 주당순자산가치(BPS)는 3,471원 수준으로, 현재가는 이를 상당히 웃도는 수준에서 거래되며 순자산 대비 뚜렷한 프리미엄이 형성돼 있다. 이는 실적 자체보다 반도체 후공정 검사장비로의 사업구조 재편과 CoWoS·기판검사 시장 진입 기대감이 가치평가에 더 크게 반영되고 있음을 시사한다. 배당 측면에서는 최근 3개년간 현금배당이 없어, 주주환원보다는 사업 재편과 투자에 자원이 집중되는 구간으로 볼 수 있다. 일부 증권사 리포트는 국내 검사장비 관련 기업들의 평균 밸류에이션이 글로벌 동종업체 대비 낮은 배수에서 거래된다고 분석했으나, 이는 해당 보고서 시점의 판단으로 시장 여건에 따라 달라질 수 있다. 종합하면 현재 밸류에이션은 실적 회복 가시성보다 미래 성장 스토리에 대한 기대가 상당 부분 반영된 구간으로 해석할 수 있다.",
+  "en": "With net losses continuing through the first half of 2026, Intekplus's price-to-earnings ratio is not meaningfully calculable at present. Book value per share stands at around KRW 3,471, and the current share price trades well above that level, reflecting a clear premium over net asset value. This suggests valuation is being driven more by expectations around the company's shift toward semiconductor back-end inspection equipment and its entry into the CoWoS and substrate inspection markets than by current earnings performance. On dividends, the company has paid no cash dividend over the past three years, indicating resources are being directed toward business restructuring and investment rather than shareholder returns for now. Some brokerage reports have noted that domestic inspection equipment peers trade at valuation multiples below their global counterparts, though such assessments reflect a point in time and can shift with market conditions. Overall, current valuation appears to reflect expectations tied to a future growth narrative more than visibility on near-term earnings recovery."
  },
  "bull": [
   {
    "title": {
-    "ko": "고마진 포트폴리오 전환의 이익 레버리지",
-    "en": "High-Margin Portfolio Shift Unlocks Earnings Leverage"
+    "ko": "반도체 중심 포트폴리오 재편",
+    "en": "Shift Toward a Semiconductor-Centric Portfolio"
    },
    "body": {
-    "ko": "반도체 외관검사 장비는 이차전지 장비 대비 ASP가 2배 이상이고 반도체 Mid-end·패키징 검사 부문의 영업이익률은 30% 중반대로 알려져 있어, 매출 믹스 변화만으로도 전사 마진이 구조적으로 개선될 수 있다. 2026년 반도체 비중 70% 이상 달성 시 총마진(GPM) 개선이 영업이익률 회복으로 직결되는 이익 레버리지가 발생한다. 여기에 이차전지 부문 인력 감축에 따른 인건비 절감이 더해지면 손익분기점 이하에서도 현금 창출이 가능한 수익 구조로 전환될 수 있다.",
-    "en": "Semiconductor visual inspection equipment carries ASP more than twice that of battery equipment, and the semiconductor mid-end/packaging inspection segment reportedly operates at mid-30s percentage operating margins, meaning a sales mix shift alone can structurally elevate company-wide margins. Achieving a 70%+ semiconductor mix in 2026 would trigger gross margin improvement that directly translates into operating margin recovery via earnings leverage. Combined with payroll savings from battery segment workforce reductions, the company's cost structure could reach a point where cash generation is possible even at current revenue levels."
+    "ko": "회사는 이차전지·디스플레이 부문 인력을 줄이고 상대적으로 수익성이 높은 반도체 후공정 검사장비 비중을 늘리는 방향으로 사업구조를 재편하고 있다. 2025년 3분기 누적 기준 반도체 부문 매출 비중이 이미 55%까지 올라왔고, 2026년에는 70%를 넘어설 것으로 전망된다. 매출 믹스가 고마진 제품군으로 이동할수록 매출 증가 대비 이익 개선 폭이 커질 수 있는 구조다."
    }
   },
   {
    "title": {
-    "ko": "CoWoS·FC-BGA 검사 시장 진입, 독점 해체 수혜",
-    "en": "Breaking KLA's CoWoS Monopoly and Takaoka's Japan Dominance"
+    "ko": "CoWoS·기판검사 신규 시장 진입",
+    "en": "Entry Into New CoWoS and Substrate Inspection Markets"
    },
    "body": {
-    "ko": "KLA가 독점하던 CoWoS 패키징 검사 시장에 세컨드 벤더로 진입하기 위한 퀄테스트를 2026년 1분기에 통과했으며, PO 수령 시 다년간 연간 약 100억원 규모의 반복 수주가 기대된다. 일본 FC-BGA 기판 검사는 다카오카 독점을 깨고 이비덴·신코전기·토판 등 글로벌 톱티어 고객을 확보해 중장기 매출 기반을 다지고 있다. 두 시장 모두 AI 서버 수요 확대로 진입 후 볼륨이 빠르게 증가할 수 있는 구조적 성장 시장이라는 점이 부각된다.",
-    "en": "The company cleared qualification testing in Q1 2026 to enter as a second vendor in the CoWoS packaging inspection market previously monopolized by KLA; upon receiving the purchase order, approximately KRW 10B in recurring annual orders is expected over multiple years. In Japan's FC-BGA substrate inspection market, the company has broken Takaoka's monopoly by securing global tier-one customers including Ibiden, Shinko Electric, and Toppan, building a durable medium-to-long-term revenue base. Both markets are structurally expanding on the back of AI server demand, offering rapid volume ramp potential post-entry."
+    "ko": "대만 글로벌 OSAT의 CoWoS 라인향 데모 장비 납품을 마치고 양산 적용을 위한 퀄테스트가 진행 중이며, 통과 시 신규 매출원 확보가 가능하다. 동시에 일본·대만 기판 제조사들이 새롭게 검사장비를 채택하기 시작해, 기존 KLA 중심 시장에서 국내 장비사의 침투 여지가 넓어지고 있다. 복수의 지역·고객사에서 동시에 진입 논의가 진행 중이라는 점은 특정 고객 의존도를 낮추는 요인이 될 수 있다."
    }
   },
   {
    "title": {
-    "ko": "구조조정 완료로 BEP 하향, 실적 변동성 축소 기반",
-    "en": "Post-Restructuring Lower Break-Even Reduces Earnings Volatility"
+    "ko": "비용구조 개선 노력",
+    "en": "Cost Structure Improvement Efforts"
    },
    "body": {
-    "ko": "2024~2025년 이차전지 부문 인력 감축으로 인건비가 기존 약 260억원에서 약 225억원 수준으로 절감되고 분기 BEP 매출도 대폭 낮아진 것으로 파악된다. 이는 2026년 1분기 영업손실 폭이 전년 동기 대비 크게 축소된 수치로 검증됐다. 반도체 패키징 검사는 이차전지 장비 대비 업황 변동에 따른 매출 기복이 작아 실적 안정성이 높아질 가능성이 있다.",
-    "en": "Battery segment workforce reductions in 2024–2025 have cut payroll from approximately KRW 26B to approximately KRW 22.5B and meaningfully lowered the quarterly break-even revenue threshold. This was empirically validated by the sharp year-over-year improvement in operating losses in Q1 2026. Semiconductor packaging inspection also carries lower cyclical exposure than battery equipment, suggesting future profitability could be more stable than historical results."
+    "ko": "회사는 이차전지 장비 부문 인력 감축을 통해 고정비 부담을 낮추는 작업을 병행하고 있다. 매출 믹스 개선과 비용 효율화가 동시에 진행될 경우, 매출 증가에 따른 이익 레버리지 효과가 상대적으로 크게 나타날 수 있다. 2025년 영업활동현금흐름이 57.4억원으로 순손실에도 양의 흐름을 기록한 점도 재무 운용 측면에서 참고할 부분이다."
    }
   }
  ],
  "bear": [
   {
    "title": {
-    "ko": "CoWoS PO 지연·취소 시 모멘텀 소멸 위험",
-    "en": "CoWoS PO Delay or Cancellation Removes the Key Catalyst"
+    "ko": "2026년 상반기 흑자전환 전망과의 격차",
+    "en": "Gap Versus 2026 Profit-Turnaround Forecasts"
    },
    "body": {
-    "ko": "퀄테스트 통과 이후 양산 발주(PO)까지는 고객사의 라인 가동 일정·예산 결정 등에 따라 추가 시간이 소요될 수 있다. 대만 OSAT 고객사의 투자 일정이 지연되거나 KLA와의 경쟁에서 밀릴 경우, 시장이 기대하는 하반기 실적 반등이 미뤄질 위험이 있다. CoWoS가 2026년 이익 개선의 핵심 동인으로 꼽히고 있는 만큼, 진입 실패 시 현재 밸류에이션 프리미엄의 근거가 약화될 수 있다.",
-    "en": "Moving from a passed qual-test to actual production orders requires the customer to finalize line ramp schedules and budget approvals, which could take additional time. If the Taiwan OSAT customer delays its investment or if KLA prevails in the competitive evaluation, the second-half profit recovery the market is pricing could be pushed out meaningfully. Since CoWoS is widely cited as the pivotal profit driver for 2026, failure to secure the order would weaken the rationale for the current valuation premium."
+    "ko": "증권가는 2026년 연간 흑자전환을 전망했으나, 실제 1분기(-19.1억원)와 2분기(-51.2억원) 모두 영업손실을 기록하며 상반기 합산 적자가 2025년 연간 적자 규모를 이미 넘어섰다. 하반기 집중 매출 인식 구조에 대한 의존도가 높아, 연간 실적 개선 여부는 4분기까지 지켜봐야 확인 가능하다. 예상과 실적 간 격차가 반복될 경우 실적 가시성에 대한 의문이 커질 수 있다."
    }
   },
   {
    "title": {
-    "ko": "강한 계절성과 수주 집중에 따른 실적 변동성",
-    "en": "Pronounced Seasonality and Order Concentration Magnify Earnings Risk"
+    "ko": "분기별 실적 변동성",
+    "en": "High Quarter-to-Quarter Earnings Volatility"
    },
    "body": {
-    "ko": "2025년 분기 실적에서 확인됐듯 3분기 매출은 약 99억원에 그친 반면 4분기 매출은 약 403억원으로 4배 이상 차이가 났다. 이처럼 특정 분기에 매출이 집중되는 구조에서는 수주 이행 시점이 조금만 밀려도 연간 실적이 크게 흔들릴 수 있다. 단일 고객·단일 프로젝트 의존도가 높은 구간에서는 계약 조건 변경이나 납기 지연이 직접적인 실적 충격으로 이어질 위험이 상존한다.",
-    "en": "As confirmed by 2025 quarterly results, Q3 revenue of approximately KRW 9.9B contrasted sharply with Q4 revenue of approximately KRW 40.3B—a fourfold difference. In a revenue structure this concentrated, even minor delays in order fulfillment can materially distort annual earnings. When dependency on a single customer or project is elevated, any change in contract terms or delivery schedule carries direct earnings risk that is difficult to offset in the short term."
+    "ko": "2025년 2분기 흑자(15.8억원)에서 3분기 대규모 적자(-49.2억원), 4분기 재흑자(40.8억원)로 이어진 흐름은 검사장비 특유의 수주·매출인식 시차에서 기인한 것으로 보인다. 이러한 변동성은 특정 분기 실적만으로 사업의 방향성을 단정하기 어렵게 만든다. 고객사의 투자 시점이나 양산 승인 일정이 미뤄지면 매출 인식 시점도 함께 후행할 수 있다."
    }
   },
   {
    "title": {
-    "ko": "재무 레버리지 확대와 자본 훼손 누적",
-    "en": "Rising Financial Leverage and Accumulated Capital Erosion"
+    "ko": "3년 연속 적자와 자본 감소",
+    "en": "Three Straight Years of Losses and Declining Equity"
    },
    "body": {
-    "ko": "3년간 누적된 영업손실로 자기자본이 약 672억원(2022년)에서 약 460억원(2025년 말)으로 감소하고 부채비율은 73.0%에서 158.6%로 상승했다. 이차전지 장비 관련 선투자로 확대된 재고·미수금이 이익 회복 속도를 제약할 수 있으며, 흑자전환이 추가 지연될 경우 재무 안정성 압박이 가중될 수 있다. 수주 지연이 반복될 경우 추가 자금 조달 필요성도 배제할 수 없다.",
-    "en": "Three years of accumulated operating losses have reduced shareholders' equity from approximately KRW 67.2B (2022) to approximately KRW 46.0B (end-2025), while the debt-to-equity ratio rose from 73.0% to 158.6%. Front-loaded investment in battery equipment—reflected in elevated inventory and receivables—could constrain the pace of earnings recovery. Should a return to profitability be further delayed, financial stability pressures could intensify, and the need for additional financing cannot be entirely ruled out."
+    "ko": "2023년부터 2025년까지 3년 연속 영업손실이 이어졌으며, 지배주주 자기자본은 2022년 671.8억원에서 2025년 459.5억원으로 줄어든 상태다. 부채비율도 2022년 73.0%에서 2025년 158.6%로 높아져 재무 완충력이 상대적으로 약화됐다. 성장 스토리가 실제 수익성 회복으로 이어지기까지 시간이 더 필요할 가능성이 있다."
    }
   }
  ],
  "risks": [
   {
    "cat": {
-    "ko": "글로벌 반도체 업황 사이클 리스크",
-    "en": "Global Semiconductor Capex Cycle Risk"
+    "ko": "고객 투자 사이클 의존",
+    "en": "Dependence on Customer Investment Cycles"
    },
    "body": {
-    "ko": "반도체 패키징·기판 검사 장비 수요는 전방 파운드리·OSAT·기판 고객사의 CAPEX 사이클에 직결된다. 글로벌 경기 하강이나 AI 수요 기대 조정이 이어질 경우 고객사 설비 투자가 지연 또는 취소될 수 있으며, 이는 수주 및 매출 급감으로 이어질 수 있다. 2022년 실적 정점 이후 3년 연속 부진을 경험한 것처럼, 사이클 전환기에 실적 변동성이 크게 확대될 수 있다.",
-    "en": "Demand for semiconductor packaging and substrate inspection equipment is directly tied to the capex cycles of foundry, OSAT, and substrate customers. Any global economic slowdown or recalibration of AI demand expectations could delay or cancel customer investment plans, causing sharp declines in orders and revenue. As demonstrated by the three-year downturn following the 2022 peak, earnings volatility during cycle turning points can be severe."
+    "ko": "검사장비 수요는 반도체·기판 고객사의 설비투자 사이클과 밀접하게 연동돼 있어, 주요 고객사의 투자 지연이나 축소가 매출에 직접적인 영향을 줄 수 있다. 과거에도 특정 고객사향 투자 지연이 실적 부진의 원인으로 지목된 바 있다. 고객 다변화가 진행 중이지만 여전히 소수 대형 고객에 대한 집중도가 높은 구조다."
    }
   },
   {
    "cat": {
-    "ko": "KLA·다카오카 등 글로벌 장비사와의 기술 경쟁 리스크",
-    "en": "Technology Competition from Global Incumbents (KLA, Takaoka)"
+    "ko": "경쟁 심화 및 퀄테스트 불확실성",
+    "en": "Intensifying Competition and Qualification Test Uncertainty"
    },
    "body": {
-    "ko": "CoWoS 검사 장비 시장에서 KLA는 전통적인 기술 우위와 고객 관계를 바탕으로 지속적인 기술 고도화를 추진하고 있다. 글로벌 일류 장비사 대비 R&D 규모와 자금력에서 열위에 있는 인텍플러스가 기술 격차를 좁히지 못할 경우 시장 진입이 좌절되거나 점유율 확대가 제한될 수 있다. 일본 기판 검사 시장의 경우도 다카오카의 반격이나 기타 경쟁사 진입이 가시화될 경우 수주 경쟁이 심화될 위험이 있다.",
-    "en": "In the CoWoS inspection market, KLA continues to advance its technology from a position of established technical leadership and deep customer relationships. Should Intekplus be unable to close the R&D capability gap versus global majors, market entry could stall or share gains remain limited. In the Japanese substrate inspection market, a counter-offensive from Takaoka or entry by additional competitors could intensify order competition and compress win rates."
+    "ko": "글로벌 검사장비 시장은 KLA 등 대형 업체가 오랜 기간 주도해 왔으며, 국내 경쟁사들도 신규 시장 진입을 모색하고 있다. 대만 CoWoS 벤더 대상 퀄테스트 등 신규 진입 시도는 통과 여부와 시점이 불확실하며, 실패하거나 지연될 경우 기대했던 매출 기여가 늦춰질 수 있다."
    }
   },
   {
    "cat": {
-    "ko": "이차전지 장비 부문 장기 침체 및 잔여 수주 이행 리스크",
-    "en": "Prolonged Battery Equipment Slump and Backlog Execution Risk"
+    "ko": "재무구조 및 유동성",
+    "en": "Financial Structure and Liquidity"
    },
    "body": {
-    "ko": "글로벌 EV 수요 성장 둔화와 이차전지 업황 침체 장기화로 이차전지 장비 수주 회복이 기대보다 늦어질 경우, 포트폴리오 전환 기간 중 매출 공백이 발생할 수 있다. 이미 계약된 이차전지 장비 수주가 고객사 일정 변경이나 취소로 이어질 경우 수주잔고 손실이 발생할 수 있다. 이차전지 부문 매출 공백이 반도체 부문 성장으로 충분히 상쇄되지 않는 시나리오가 단기 실적의 하방 리스크로 작용한다.",
-    "en": "If slowing global EV demand and a prolonged battery industry downturn delay a recovery in battery equipment orders beyond current expectations, a revenue gap could emerge during the portfolio transition period. Existing battery equipment order backlog may be at risk if customers revise delivery schedules or cancel orders. A scenario in which battery segment revenue shortfalls are not fully offset by semiconductor segment growth represents a meaningful short-term earnings downside risk."
+    "ko": "3년 연속 적자로 자본이 줄고 부채비율이 높아진 상태에서, 수주-매출인식 시차가 큰 사업 특성상 유동성 관리 부담이 존재한다. 2024년 영업활동현금흐름이 -73.0억원을 기록했던 사례처럼, 특정 시기에 현금흐름이 악화될 가능성을 배제할 수 없다."
    }
   }
  ],
  "checkpoints": [
   {
    "when": {
-    "ko": "2026년 6~7월 (수시)",
-    "en": "June–July 2026 (Ad Hoc)"
+    "ko": "2026년 3분기 실적발표(통상 11월 중)",
+    "en": "Q3 2026 earnings release (typically mid-November)"
    },
    "what": {
-    "ko": "대만 OSAT향 CoWoS 양산 발주(PO) DART 공시 여부 확인: 퀄테스트 통과 이후 PO 공시가 나오면 다년간 연간 약 100억원 규모 반복 수주의 시발점이 확인되며, 미공시 시 지연 원인 파악이 필요",
-    "en": "Taiwan OSAT CoWoS production purchase order DART disclosure: A formal order announcement post-qual-test confirms the start of ~KRW 10B recurring annual orders; absence of disclosure warrants analysis of the delay cause"
+    "ko": "상반기 연속 적자 이후 3분기 실적이 회복 흐름으로 전환되는지, 반도체 부문 매출 비중이 계속 확대되는지 확인이 필요하다.",
+    "en": "Check whether Q3 results show a turn toward recovery after consecutive first-half losses, and whether the semiconductor segment's revenue share continues to expand."
    }
   },
   {
    "when": {
-    "ko": "2026년 7월 말",
-    "en": "Late July 2026"
+    "ko": "대만 CoWoS 벤더 퀄테스트 결과 공식화 시점",
+    "en": "Formal announcement of Taiwanese CoWoS vendor qualification test results"
    },
    "what": {
-    "ko": "2026년 2분기 실적 발표: 반도체 외관검사 장비 매출 비중 확대 여부·CoWoS 수주 반영 여부를 확인하고, 하반기 수주잔고와 가이던스를 통해 연간 흑자전환 가시성을 점검",
-    "en": "Q2 2026 earnings release: Verify semiconductor inspection revenue share expansion and any CoWoS order reflection; assess second-half order backlog and guidance to gauge full-year profitability visibility"
+    "ko": "퀄테스트 통과 여부와 양산 수주 공시가 나오는지가 신규 매출원 확보의 분수령이 될 수 있다.",
+    "en": "Whether the qualification test is passed and a mass-production order is disclosed could be a turning point for securing a new revenue stream."
    }
   },
   {
    "when": {
-    "ko": "2026년 상반기~3분기 (수시)",
-    "en": "H1–Q3 2026 (Ad Hoc)"
+    "ko": "일본·대만 기판업체 신규 고객 매출 반영 시점",
+    "en": "Timing of revenue recognition from new Japanese/Taiwanese substrate customers"
    },
    "what": {
-    "ko": "일본 FC-BGA 기판 검사 장비 양산 수주 공시: 이비덴·신코전기·토판 향 데모 납품 후 양산 수주 전환 여부가 2027년 실적 가시성을 가늠하는 핵심 지표",
-    "en": "Japan FC-BGA substrate inspection production order disclosures: Whether demo deliveries to Ibiden, Shinko Electric, and Toppan convert into volume orders is the key forward indicator for 2027 revenue visibility"
+    "ko": "신규 채택 고객사의 실제 매출 기여 규모와 시점을 공시·실적발표를 통해 확인할 필요가 있다.",
+    "en": "The scale and timing of actual revenue contribution from newly adopted customers should be verified through disclosures and earnings releases."
    }
   },
   {
    "when": {
-    "ko": "2026년 하반기",
-    "en": "H2 2026"
+    "ko": "이차전지·디스플레이 부문 구조조정 진행 상황",
+    "en": "Progress of restructuring in the battery/display segment"
    },
    "what": {
-    "ko": "북미 IDM향 대면적 기판 검사 장비 수주 공시 및 납품 이행 확인: 단독 벤더 지위를 활용한 수주 수령 여부와 규모·납기 일정이 4분기 실적 예측의 핵심 변수",
-    "en": "North America IDM large-format substrate inspection order announcement and delivery execution: The order amount and delivery schedule—underpinned by a sole-vendor position—are the key variables for Q4 2026 earnings forecasting"
+    "ko": "인력 감축과 비중 축소가 실제 비용절감으로 이어지는지, 해당 부문 매출 감소 속도가 어느 정도인지 점검할 필요가 있다.",
+    "en": "It is worth checking whether headcount reductions translate into actual cost savings, and how quickly segment revenue is declining."
    }
   },
   {
    "when": {
-    "ko": "2026년 말~2027년 초",
-    "en": "Late 2026–Early 2027"
+    "ko": "신규 수주 공시(DART) 모니터링",
+    "en": "Monitoring new order disclosures (DART)"
    },
    "what": {
-    "ko": "유리기판 검사 장비 개발 진척 및 상업화 일정 공개: 인텔과의 공동개발 성과가 가시화될 경우 차세대 성장 옵션으로 부각되며, 시장 개화 시점이 중장기 성장 가시성을 결정",
-    "en": "Glass substrate inspection equipment development progress and commercialization timeline disclosure: Visibility into the Intel co-development outcome would highlight its value as a next-generation growth option, with market adoption timing determining medium-term growth visibility"
+    "ko": "매출 대비 일정 비중 이상의 개별 수주 계약은 공시 의무 대상으로, 수주 규모와 고객사·지역 다변화 여부를 계속 추적할 필요가 있다.",
+    "en": "Individual order contracts above a certain proportion of revenue are subject to mandatory disclosure, and it is worth continuing to track order size and the diversification of customers and regions."
    }
   }
  ],
  "verdict": {
   "body": {
-   "ko": "인텍플러스는 2022년 실적 정점 이후 3년에 걸친 영업적자를 겪었으나, 2025년부터 반도체 후공정 패키징·기판 검사 중심으로의 포트폴리오 재편과 이차전지 부문 구조조정을 병행해 손익분기점을 낮추고 수익성 회복의 기반을 마련했다. 2026년 1분기 영업손실 폭이 전년 동기 대비 크게 축소된 사실이 비용 절감 효과를 실증하며, 하반기 CoWoS 양산 수주·일본·대만 FC-BGA 기판 검사 수주 확대가 이루어질 경우 연간 영업이익 흑자전환이 가시권에 있다. 핵심 불확실성은 ① CoWoS PO 수령 시기, ② 일본·대만 기판 고객사 CAPEX 집행 속도, ③ 이차전지 잔여 수주 이행 여부로, 이 세 가지가 2026년 실적의 상하단 범위를 결정한다. 부채비율이 2022년 대비 두 배 이상 높아진 재무 구조와 순자산 대비 높은 주가 프리미엄은 이익 회복 기대를 선행 반영하고 있음을 의미하며, 실제 이익 회복의 속도와 규모가 시장 기대에 부합하는지를 분기 실적과 수주 공시로 검증하는 것이 중요하다. 2027년 이후 일본·대만 주요 기판 제조사의 CAPEX가 본격화되면 매출 성장의 가시성이 한 단계 높아질 수 있으며, 유리기판과 웨이퍼 범프 검사 장비 등 신규 사업의 개화 여부도 중기 성장성을 가늠할 변수다.",
-   "en": "Intekplus endured three years of operating losses following its 2022 earnings peak, but since 2025 has been restructuring its portfolio toward semiconductor back-end packaging and substrate inspection while concurrently reducing its battery segment cost base—lowering the break-even threshold and establishing the foundation for a profitability recovery. The meaningful year-over-year improvement in Q1 2026 operating losses validates the fixed-cost reduction, and should second-half CoWoS production orders arrive alongside expanded Japan/Taiwan FC-BGA substrate wins, a full-year return to operating profitability comes into view. The three key uncertainties are: (1) timing of CoWoS PO receipt, (2) pace of capex execution by Japan and Taiwan substrate customers, and (3) completion of remaining battery backlog—these factors collectively define the range of 2026 earnings outcomes. A debt-to-equity ratio more than double 2022 levels and a substantial stock price premium over book value indicate that the market has already priced in meaningful recovery expectations; verifying whether actual profit recovery matches that expectation through quarterly earnings and order disclosures is the critical analytical task. From 2027 onward, accelerating capex by major Japanese and Taiwanese substrate makers could raise revenue visibility further, while the commercialization of glass substrate and wafer bump inspection equipment will serve as important variables in assessing medium-term growth."
+   "ko": "인텍플러스는 반도체 후공정 검사장비 중심으로 사업구조를 재편하며 매출 믹스 개선을 추진하고 있고, 대만 CoWoS 시장과 일본·대만 기판 검사 시장으로의 진입 시도도 구체화되고 있다. 2025년 연간 영업손실이 전년 대비 크게 축소된 점은 긍정적이나, 2026년 1~2분기 연속 적자로 상반기 합산 손실이 2025년 연간 손실 규모를 넘어서면서 증권가가 제시했던 연간 흑자전환 전망과는 격차가 벌어졌다. 분기별 실적 변동성이 매우 크고 4분기 매출 집중 경향이 있어, 연간 방향성은 하반기 실적을 함께 봐야 판단할 수 있는 구조다. 밸류에이션 측면에서는 순자산가치 대비 뚜렷한 프리미엄이 형성돼 있어 향후 사업재편 성과가 실제 수익성 개선으로 이어지는지가 관전 포인트다. 배당이 없는 만큼 주주가치는 사업 성장과 이익 회복 여부에 크게 좌우되는 구조다. 투자자는 CoWoS 퀄테스트 결과, 신규 고객 매출 반영 시점, 하반기 실적 개선 여부 등 구체적 이벤트를 통해 재편 스토리의 실현 가능성을 점검해 나갈 필요가 있다.",
+   "en": "Intekplus is pursuing revenue-mix improvement by restructuring its business around semiconductor back-end inspection equipment, with concrete progress on entering the Taiwanese CoWoS market and Japanese/Taiwanese substrate inspection markets. The sharp narrowing of the full-year 2025 operating loss versus 2024 was a positive, but consecutive operating losses in Q1 and Q2 2026 pushed the first-half combined loss beyond the full-year 2025 loss, creating a gap versus brokerages' earlier full-year turnaround forecasts. Quarterly results remain highly volatile with a tendency toward fourth-quarter revenue concentration, meaning the annual trajectory can only be judged alongside second-half performance. On valuation, shares trade at a clear premium to net asset value, making it worth watching whether the business restructuring translates into an actual profitability recovery. With no dividend currently paid, shareholder value depends heavily on business growth and earnings recovery. Investors will likely want to track concrete events such as CoWoS qualification test outcomes, the timing of new customer revenue contribution, and whether second-half results show improvement, to assess how the restructuring story unfolds."
   }
  },
  "sources": [
-  "https://m.thinkpool.com/stockDiscuss/064290/cont/11874179",
-  "https://m.thinkpool.com/compDiscuss/cont/1025518",
-  "https://file.alphasquare.co.kr/media/pdfs/market-report/%EC%9D%B8%ED%85%8D%ED%94%8C%EB%9F%AC%EC%8A%A4%EB%B0%98%EB%8F%84%EC%B2%B420260105iM%EC%A6%9D%EA%B6%8C.",
   "https://file.alphasquare.co.kr/media/pdfs/company-report/_15072156-064290.pdf",
-  "https://m.thinkpool.com/stockDiscuss/064290/cont/11865275",
-  "https://m.thinkpool.com/stockDiscuss/064290/cont/11884067",
-  "https://m.irgo.co.kr/IR-COMP/064290/%EC%9D%B8%ED%85%8D%ED%94%8C%EB%9F%AC%EC%8A%A4-IR-PAGE",
-  "https://w4.kirs.or.kr/download/research/250923_%EC%9D%B8%ED%85%8D%ED%94%8C%EB%9F%AC%EC%8A%A4_%EC%88%98%EC%A0%95.pdf",
-  "https://file.alphasquare.co.kr/media/pdfs/company-report/CM0079_4261_1.pdf",
-  "https://m.thinkpool.com/compDiscuss/cont/1020955",
-  "https://www.investing.com/equities/intekplus-co-ltd",
+  "https://m.thinkpool.com/compDiscuss/cont/1025518",
   "https://www.sks.co.kr/data1/research/qna_file/20260426160421719_0_ko.pdf",
-  "https://m.thinkpool.com/stockDiscuss/064290/cont/11828093",
-  "https://home.imeritz.com/include/resource/research/WorkFlow/20260422063302471K_02.pdf",
-  "https://www.threads.com/@stockhandbook_friends/post/DX6JWUjIM4w/%EC%9D%B8%ED%85%8D%ED%94%8C%EB%9F%AC%EC%8A%A4064290%EC%9D%98-%EC%A3%BC%EA%B0%80%EB%8A%94-2026%EB%85%84-4%EC%9B%94-17%EC%9D%BC-%EA%B8%B0%EC%A4%80-%EC%B5%9C%EA%B7%BC-52%EC%A3%BC-%EC%8B%A0%EA%B3%A0%EA%B0%80%EB%A5%BC-%EA%B2%BD%EC%8B%A0%ED%95%98%EB%A9%B0-%EA%B8%89%EB%93%B1%EC%A3%BC%EA%B0%80-%EC%83%81%EC%8A%B9%EC%9D%98-%EC%A3%BC%EC%9A%94-%EC%9B%90%EC%9D%B8%EC%9D%80-%EB%B0%98%EB%8F%84%EC%B2%B4-%ED%8C%A8%ED%82%A4%EC%A7%95-%EC%88%98%EC%9A%94-%EC%A6%9D%EA%B0%80-/",
-  "https://www.leadeconomy.co.kr/news/articleView.html?idxno=7655",
-  "https://kind.krx.co.kr/common/disclsviewer.do?method=search&acptno=20260318002214&rcpno=20260318001550&orgid=F&tran=Y&langTpCd=0",
-  "https://m.samsungsem.com/kr/newsroom/news/view.do?id=8381"
+  "https://file.alphasquare.co.kr/media/pdfs/market-report/%EC%9D%B8%ED%85%8D%ED%94%8C%EB%9F%AC%EC%8A%A4%EB%B0%98%EB%8F%84%EC%B2%B420260105iM%EC%A6%9D%EA%B6%8C.",
+  "https://m.thinkpool.com/stockDiscuss/064290/cont/11874179",
+  "https://file.alphasquare.co.kr/media/pdfs/company-report/CM0079_4261_1.pdf",
+  "https://m.irgo.co.kr/IR-COMP/064290/%EC%9D%B8%ED%85%8D%ED%94%8C%EB%9F%AC%EC%8A%A4-IR-PAGE",
+  "https://m.thinkpool.com/stockDiscuss/064290/cont/11884067",
+  "https://thevc.kr/intekplus/products",
+  "https://orangeboard.co.kr/@365wealthbuilder/posts/15751",
+  "http://www.dailyinvest.kr/news/articleView.html?idxno=59633",
+  "https://intap365.com/entry/%EB%B0%98%EB%8F%84%EC%B2%B4-%EA%B4%80%EB%A0%A8%EC%A3%BC-6%EC%A2%85%EB%AA%A9-TSMC-%EC%97%94%EB%B9%84%EB%94%94%EC%95%84-%EB%82%A9%ED%92%88%EC%9A%A9-%EA%B3%B5%EC%9E%A5-%EC%A6%9D%EC%84%A4",
+  "https://www.intekplus.com/",
+  "https://yelec.kr/%EC%8E%84%ED%81%AC-hbm%EC%9A%A9-%EC%9D%B8%EB%9D%BC%EC%9D%B8-x-%EB%A0%88%EC%9D%B4-%EA%B2%80%EC%82%AC-%EC%9E%A5%EB%B9%84-%EB%82%B4%EB%85%84-%EC%B4%88-%EC%B6%9C%EC%8B%9C/",
+  "https://m.thinkpool.com/compDiscuss/cont/1013114",
+  "https://www.the-stock.kr/news/articleView.html?idxno=19818",
+  "https://www.finuts.co.kr/datas/report/db0f5b29f56f1b2c9738bb81ead8b2b59c29e802.pdf",
+  "https://www.digitaltoday.co.kr/news/articleView.html?idxno=525427"
  ],
  "v": 2,
- "model": "claude-sonnet-4-6",
+ "model": "claude-sonnet-5",
  "ticker": "064290",
  "name": "인텍플러스",
  "name_en": "INTEKPLUS CO., LTD",
@@ -233,11 +224,11 @@
   "반도체"
  ],
  "market": "코스닥",
- "reportDate": "2026-06-18",
- "reportTs": "2026-06-18 01:38",
- "dataDate": "20260617",
+ "reportDate": "2026-08-18",
+ "reportTs": "2026-08-18 00:50",
+ "dataDate": "20260814",
  "quant": {
-  "asOf": "2026-06-17",
+  "asOf": "2026-08-17",
   "fs_basis": "연결(CFS) · DART 공시 확정치 · 지배주주 기준 순이익",
   "annual": [
    {
@@ -303,12 +294,6 @@
   ],
   "quarterly": [
    {
-    "q": "2025Q1",
-    "rev": 14407118985,
-    "op": -4476331878,
-    "np_owner": -5005765604
-   },
-   {
     "q": "2025Q2",
     "rev": 25149574762,
     "op": 1575596707,
@@ -331,22 +316,28 @@
     "rev": 12805345119,
     "op": -1907565585,
     "np_owner": -1448713892
+   },
+   {
+    "q": "2026Q2",
+    "rev": 8960989867,
+    "op": -5117444745,
+    "np_owner": -6093449163
    }
   ],
   "valuation": {
-   "price": 40850,
-   "mcap": 0.5255,
-   "shares": 12863962,
+   "price": 30900,
+   "mcap": 0.4004,
+   "shares": 12957578,
    "total_shares": 12863962,
-   "wavg_shares": 12174066,
+   "wavg_shares": 12283653,
    "per": null,
    "eps": null,
-   "pbr": 11.12,
-   "bps": 3673,
-   "roe_ttm": 0.6,
-   "ttm_window": "2025Q2~2026Q1",
-   "ttm_np_owner": 244990378,
-   "pbr_krx": 11.14,
+   "pbr": 8.9,
+   "bps": 3471,
+   "roe_ttm": -16.4,
+   "ttm_window": "2025Q3~2026Q2",
+   "ttm_np_owner": -6899777836,
+   "pbr_krx": 8.21,
    "bps_krx": 3765.0,
    "basis": "PER·EPS·PBR·BPS 모두 자체 산출(네이버·토스와 동일 방식) · 배당은 DART 공시 주당현금배당금(보완:KRX) ÷ 현재가",
    "dps": 0.0,

@@ -1,230 +1,220 @@
 {
  "title": {
-  "ko": "AI 데이터센터 수혜로 실적 정상화 진입, 신사업 가시화 단계",
-  "en": "AI Data Center Tailwind Drives Earnings Recovery as New Business Gains Traction"
+  "ko": "AI 데이터센터발 커패시터 수요, 실적 정상화 신호",
+  "en": "AI Data Center Demand Signals Earnings Normalization"
  },
  "lead": {
-  "ko": "슈퍼커패시터 전문기업 코칩이 AI 데이터센터향 수주 급증과 2공장 선제 투자 사이클 일단락으로 2026년 1분기 영업이익이 급반등하며 실적 정상화 궤도에 진입했고, 차세대 칩셀 LTO 및 중대형 슈퍼커패시터 양산이 차기 성장 축으로 부상하고 있다.",
-  "en": "Supercapacitor specialist Korchip has entered an earnings normalization phase with a sharp Q1 2026 operating profit rebound driven by surging AI data center orders and the conclusion of a front-loaded second-plant investment cycle, while next-generation ChipCell LTO batteries and mid-to-large supercapacitors emerge as the next growth pillars."
+  "ko": "코칩은 2026년 1분기와 2분기 연속으로 매출과 영업이익이 큰 폭으로 개선되며 2025년의 수익성 부진에서 벗어나는 흐름을 보이고 있다.",
+  "en": "Korchip has shown two consecutive quarters of sharply improved revenue and operating profit in the first and second quarters of 2026, marking a recovery from the profitability slump of 2025."
  },
  "keypoints": [
   {
-   "ko": "2026년 1분기 매출 약 121억원(전년동기비 +40.9%), 영업이익 약 10.7억원(+138%), 지배주주 순이익 약 21.3억원(+311%)으로 분기 기준 OPM이 약 8.9%까지 급회복",
-   "en": "Q1 2026: revenue ~₩12.1bn (+40.9% YoY), operating profit ~₩1.07bn (+138% YoY), controlling-interest net profit ~₩2.13bn (+311% YoY), driving quarterly OPM recovery to approximately 8.9%"
+   "ko": "2026년 2분기 매출 179.96억원, 영업이익 44.10억원으로 영업이익률이 24.5%까지 상승",
+   "en": "Q2 2026 revenue reached KRW 17.996 billion with operating profit of KRW 4.410 billion, lifting the operating margin to 24.5%"
   },
   {
-   "ko": "AI 데이터센터향 슈퍼커패시터 수주 큰 폭 확대, 단품 공급에서 고객 맞춤형 통합 전원 솔루션 제공으로 비즈니스 모델 전환 가속",
-   "en": "AI data center supercapacitor orders surging materially; business model transitioning from single-component supply to customer-tailored integrated power solutions"
+   "ko": "2025년 연간 매출은 14.7% 늘었으나 영업이익은 재료비 상승과 생산효율화 비용 부담으로 크게 줄었다",
+   "en": "Full-year 2025 revenue grew 14.7% year over year, but operating profit fell sharply due to higher material costs and production efficiency expenses"
   },
   {
-   "ko": "삼성전기 MLCC 30년 이상 공식 유통 파트너십과 아마존·오라클·삼성전자 등 글로벌 탑티어 고객 기반이 안정적 수주의 토대",
-   "en": "30-plus-year Samsung Electro-Mechanics MLCC distribution partnership and blue-chip global customer base (Amazon, Oracle, Samsung Electronics) underpin stable order flow"
+   "ko": "삼성전기와 30여 년간 MLCC·슈퍼커패시터 협력 관계를 유지하며 AI 서버·데이터센터향 수요 확대의 간접 수혜 기대가 부각",
+   "en": "Korchip's three-decades-long MLCC and supercapacitor partnership with Samsung Electro-Mechanics has drawn attention amid expectations of indirect benefits from AI server and data center demand growth"
   },
   {
-   "ko": "차세대 칩셀 LTO 각형 배터리 고객사 사양 확정 완료, 2026년 하반기 양산 설비 구축 및 본격 수주 진입 예정",
-   "en": "Next-generation ChipCell LTO prismatic battery customer specs finalized; mass production facility targeted for 2H 2026 with full-scale order ramp expected thereafter"
+   "ko": "칩셀카본·칩셀리튬(LTO) 등 소형 이차전지 제품군을 확장하며 단품 공급에서 통합 전원 솔루션으로 사업모델 전환을 추진 중",
+   "en": "The company is expanding its Chipcell Carbon and Chipcell Lithium (LTO) product lines while pursuing a shift from component supply to integrated power solutions"
   },
   {
-   "ko": "2025년 원재료비·인건비·R&D·2공장 설비 비용 집중으로 OPM이 3.0%로 급락했으나 선제 투자 사이클 마무리 후 2026년 수익성 정상화 진행 중",
-   "en": "2025 OPM compressed to 3.0% amid simultaneous spikes in raw material, labor, R&D, and second-plant capex; profitability normalizing in 2026 following completion of the front-loaded investment cycle"
+   "ko": "타법인 증권 취득 자금 확보를 위해 사모 전환사채(50억원, 전환가 2,190원)를 발행하는 등 재무활동도 병행 중",
+   "en": "The company has also conducted financing activities including a KRW 5 billion private convertible bond issuance at a conversion price of KRW 2,190 to fund acquisition of securities in another company"
   }
  ],
  "business": {
-  "ko": "코칩은 1994년 설립 후 2002년 삼성전기 DLC(더블레이어커패시터) 사업부 전체를 인수하며 초소형 슈퍼커패시터(EDLC) 제조에 본격 진출한 에너지저장소자 전문기업이다. 주력 사업은 크게 두 축으로 구분된다. 첫째는 자사 브랜드 '칩셀카본(ChipCell Carbon)'으로 대표되는 카본계 초소형 슈퍼커패시터의 제조·판매로, 디지털 전기계량기·태양광 인버터·IP 카메라·스마트미터 등 데이터 백업 분야가 핵심 적용처다. 둘째는 1992년부터 30년 이상 삼성전기의 공식 파트너 자격을 유지해 온 MLCC 등 수동부품 유통 사업이다. 신사업으로는 리튬타이타네이트(LTO) 기반 리튬계 이차전지 '칩셀리튬(ChipCell Lithium)'을 개발·양산 중이며, 충방전 사이클 5,000회·10분 이내 급속충전·폭발 위험 없는 안전성을 차별점으로 내세운다. 모바일 의료기기·로봇팔·IoT·전자펜·무인운반차(AGV)·방산 분야로 적용처를 빠르게 넓히고 있다. 해외 매출 비중은 60% 이상(30여 개국)으로, 삼성전자·LG전자·아마존·엡손·브라더·DJI·오라클 등 글로벌 탑티어 IT·산업용 고객사를 확보하고 있다. 경쟁 구도 면에서는 초소형 슈퍼커패시터 분야의 선구 기업인 파나소닉이 코인형 사업에서 철수하며 코칩의 시장 내 입지가 강화됐다. 회사는 최근 AI 데이터센터 등 고출력·고신뢰성 전원이 요구되는 인프라 분야로 사업 영역을 적극 확장하며, 단품 공급에서 통합 전원 솔루션 제공으로 비즈니스 모델 전환을 추진하고 있다.",
-  "en": "Korchip was founded in 1994 and entered supercapacitor manufacturing in earnest in 2002 by acquiring Samsung Electro-Mechanics' entire DLC (Double Layer Capacitor) business unit, positioning itself as a dedicated energy storage component specialist. The business operates around two core pillars. The first is the manufacture and sale of carbon-based ultra-compact supercapacitors marketed under the ChipCell Carbon brand, primarily serving data backup applications in digital electricity meters, solar inverters, IP cameras, and smart meters. The second is the distribution of Samsung Electro-Mechanics' MLCC and other passive components, a role held under official authorized partner status since 1992—a relationship spanning over 30 years. The new business segment focuses on developing and mass-producing lithium titanate (LTO)-based secondary batteries under the ChipCell Lithium brand, differentiated by 5,000-cycle durability, under-10-minute rapid charging, and explosion-resistant safety. Applications are being actively extended into mobile medical devices, robotic arms, IoT, digital pens, automated guided vehicles (AGVs), and defense. Overseas revenue accounts for over 60% of total sales across 30-plus countries, with global blue-chip customers including Samsung Electronics, LG Electronics, Amazon, Epson, Brother, DJI, and Oracle. On the competitive front, Korchip's position in ultra-compact supercapacitors has strengthened following Panasonic's exit from coin-type supercapacitor manufacturing. The company is actively expanding into high-power, high-reliability power infrastructure markets such as AI data centers, pursuing a business model transition from single-component supply toward integrated power solution provision."
+  "ko": "코칩은 1994년 설립된 소형·초소형 이차전지 및 전자부품 기업으로, 2002년 삼성전기의 DLC(더블레이어커패시터) 사업부를 양수하며 슈퍼커패시터 원천 기술을 확보했다. 주력 제품군은 크게 두 갈래로, 하나는 전력 보조·데이터 백업용 카본계 이차전지인 칩셀카본과 리튬이온 기반의 칩셀리튬(LTO)으로 구성된 소형 이차전지 제조 부문이며, 다른 하나는 삼성전기 MLCC(적층세라믹콘덴서)를 수입·유통하는 수동부품 유통 부문이다. 칩셀카본은 SMD 타입 전환을 가속화하며 시장 점유율을 유지하고 있고, 칩셀 LTO는 대용량 파우치 타입 라인업을 추가해 고출력 산업용 에너지 저장 솔루션으로 영역을 넓히고 있다. 고객 기반은 삼성전자, LG전자, 아마존, 엡손, 브라더, DJI 등 국내외 대기업으로 다변화되어 있으며, 클라우드 데이터센터 운영사인 오라클에도 MLCC를 공급하고 있는 것으로 알려졌다. 삼성전기와는 1992년부터 MLCC·슈퍼커패시터 부문에서 유통·판매 파트너 관계를 이어오고 있으며 이는 코칩의 핵심 경쟁 우위 중 하나로 꼽힌다. 경쟁 구도 측면에서 고성능 MLCC 및 차세대 커패시터를 안정적으로 생산할 수 있는 곳은 삼성전기, 일본 무라타, 타이요유덴 등 소수에 불과한 것으로 알려져 있으며, 코칩은 이들의 유통·응용 파트너로서 초소형 칩셀 특허와 공정 내재화 기술을 보유한 점이 차별화 요소로 언급된다. 최근에는 단순 부품 공급을 넘어 고객사 맞춤형 통합 전원 솔루션 형태로 사업을 확장하려는 전략도 병행되고 있다. 회사는 2024년 코스닥 시장에 상장했다.",
+  "en": "Founded in 1994, Korchip is a small and ultra-small secondary battery and electronic components manufacturer that acquired the double-layer capacitor (DLC) business unit from Samsung Electro-Mechanics in 2002, gaining its core supercapacitor technology. Its main product lines fall into two categories: a small secondary battery manufacturing segment comprising the carbon-based Chipcell Carbon for power backup and data preservation, and the lithium-ion based Chipcell Lithium (LTO); and a passive component distribution segment that imports and distributes Samsung Electro-Mechanics MLCCs. Chipcell Carbon has been accelerating its conversion to SMD-type products to maintain market share, while Chipcell LTO has added large-capacity pouch-type lineups to expand into high-output industrial energy storage solutions. The customer base is diversified across major domestic and overseas companies including Samsung Electronics, LG Electronics, Amazon, Epson, Brother, and DJI, and the company is reported to supply MLCCs to cloud data center operator Oracle. Korchip has maintained a distribution and sales partnership with Samsung Electro-Mechanics in MLCCs and supercapacitors since 1992, which is cited as one of its core competitive advantages. In terms of competitive landscape, only a small number of firms including Samsung Electro-Mechanics, Japan's Murata, and Taiyo Yuden are known to reliably produce high-performance MLCCs and next-generation capacitors, with Korchip positioned as a distribution and application partner holding proprietary micro chipcell patents and in-house process technology. The company has also been pursuing a strategy to move beyond simple component supply toward customized, integrated power solutions for clients. Korchip listed on the KOSDAQ market in 2024."
  },
  "earnings": {
-  "ko": "연간 기준으로 2025년 매출액은 약 382억원으로 전년(약 334억원) 대비 14.7% 성장했으나, 영업이익은 약 11.4억원(OPM 3.0%)에 그쳐 전년(약 29억원, OPM 8.7%) 대비 60.7% 급감했다. 회사가 공시한 주요 원인은 원재료 단가 및 인건비 상승에 따른 제조원가율 상승, 그리고 R&D·설비투자(경기 금정 2공장 신설) 관련 비용 증가다. 순이익(지배주주 기준)은 약 28.5억원으로 전년 약 32.3억원 대비 11.8% 감소했으나, 영업외 이익이 일부 완충 역할을 했다. 분기별 흐름을 살펴보면 1분기(매출 약 85.5억원·OPM 약 5.2%)·2분기(약 86.3억원·OPM 약 5.5%)까지는 한 자릿수 중반대 수익성을 유지했으나, 3분기(약 97.3억원·OPM 약 0.7%)와 4분기(약 113.7억원·OPM 약 1.3%)에 원가 구조가 크게 악화됐다. 4분기 들어 매출은 113.7억원으로 연간 최고치를 기록했음에도 영업이익이 약 1.5억원에 머문 것은 비용 구조의 심각성을 보여준다. 반전은 2026년 1분기에 나타났다. 매출 약 120.5억원(전년동기비 +40.9%), 영업이익 약 10.7억원(+138%), 지배주주 순이익 약 21.3억원(+311%)으로 전 지표에서 급반등했으며, 분기 OPM은 약 8.9%로 2024년 연간 OPM(8.7%) 수준을 회복했다. 회사는 이 개선을 기존 고객사의 발주 확대와 AI 데이터센터향 신규 수요의 빠른 유입에서 찾고 있다. 영업활동현금흐름은 2024년 약 44억원에서 2025년 약 46억원으로 소폭 증가해 이익 대비 현금 창출력은 양호하게 유지됐다.",
-  "en": "On an annual basis, 2025 revenue grew 14.7% to approximately ₩38.3bn (from ₩33.4bn in 2024), but operating profit collapsed 60.7% to approximately ₩1.14bn (OPM: 3.0%), compared to ₩2.90bn (OPM: 8.7%) in 2024. The company cited rising raw material and labor costs driving up manufacturing cost ratios, plus elevated R&D and capital expenditure—including construction of a second plant in Geumjeong, Gyeonggi—as the primary drivers. Net profit attributable to controlling shareholders was approximately ₩2.85bn, down 11.8% from ₩3.23bn in 2024, with non-operating items providing partial cushioning. The quarterly breakdown is telling: Q1 (revenue ~₩8.6bn, OPM ~5.2%) and Q2 (~₩8.6bn, OPM ~5.5%) maintained mid-single-digit margins, while Q3 (~₩9.7bn, OPM ~0.7%) and Q4 (~₩11.4bn, OPM ~1.3%) saw severe cost-driven compression. The Q4 contrast—where revenue reached its full-year peak at ~₩11.4bn yet operating profit barely reached ~₩1.5bn—underscores the severity of the cost structure deterioration. The turnaround came in Q1 2026: revenue of approximately ₩12.1bn (+40.9% YoY), operating profit of approximately ₩1.07bn (+138% YoY), and controlling-interest net profit of approximately ₩2.13bn (+311% YoY), with quarterly OPM recovering to approximately 8.9%—closely mirroring the full-year 2024 OPM of 8.7%. The company attributes the improvement to expanded orders from existing customers and rapid inflow of new AI data center demand. Operating cash flow rose modestly from approximately ₩44bn in 2024 to approximately ₩46bn in 2025, indicating that cash generation remained solid relative to reported earnings."
+  "ko": "코칩의 2025년 연결 매출액은 382.8억원으로 2024년 333.7억원 대비 14.7% 증가했으나, 영업이익은 11.4억원으로 2024년 29.0억원 대비 60.7% 급감했고 영업이익률도 8.7%에서 3.0%로 크게 낮아졌다. 지배주주 순이익 역시 32.3억원에서 28.5억원으로 줄었다. 위즈리포트 등에 따르면 이는 재료비 상승과 생산 효율화 관련 비용 증가가 수익성을 압박한 결과로 설명된다. 분기별로 보면 2025년 3분기 영업이익은 0.66억원(영업이익률 0.7%)까지 낮아지며 저점을 기록했고, 4분기에도 1.48억원(영업이익률 1.3%)에 머무르는 등 수익성 부진이 이어졌다. 그러나 2026년 1분기 매출액이 120.5억원, 영업이익 10.7억원(영업이익률 8.9%), 지배주주 순이익 21.3억원으로 뚜렷한 반등이 나타났고, 2분기에는 매출액 180.0억원, 영업이익 44.1억원(영업이익률 24.5%), 지배주주 순이익 34.9억원으로 개선 폭이 더욱 확대됐다. 이는 2025년 하반기 저점 대비 분기 영업이익이 뚜렷하게 회복된 흐름으로, 슈퍼커패시터 수주 확대가 실적에 반영되기 시작한 것으로 풀이된다. 다만 2025년 3~4분기의 낮은 영업이익률에서 볼 수 있듯 매출 증가가 곧바로 이익 개선으로 이어지지 않았던 구간도 있었던 만큼, 최근 두 분기의 개선 흐름이 지속되는지 확인이 필요하다. 영업활동현금흐름은 2025년 46.1억원으로 2024년 44.0억원 대비 소폭 늘며 이익 변동성 대비 현금창출력은 유지된 모습이다.",
+  "en": "Korchip's 2025 consolidated revenue was KRW 38.28 billion, up 14.7% from KRW 33.37 billion in 2024, but operating profit fell 60.7% to KRW 1.14 billion from KRW 2.90 billion, with the operating margin dropping sharply from 8.7% to 3.0%. Net income attributable to owners also declined from KRW 3.23 billion to KRW 2.85 billion. According to WiseReport, this was attributed to rising material costs and increased production efficiency-related expenses that pressured profitability. On a quarterly basis, operating profit bottomed at KRW 66 million (0.7% margin) in the third quarter of 2025 and remained weak at KRW 148 million (1.3% margin) in the fourth quarter. However, a clear rebound emerged in the first quarter of 2026, with revenue of KRW 12.05 billion, operating profit of KRW 1.07 billion (8.9% margin), and net income attributable to owners of KRW 2.13 billion, followed by further improvement in the second quarter with revenue of KRW 18.0 billion, operating profit of KRW 4.41 billion (24.5% margin), and net income attributable to owners of KRW 3.49 billion. This represents a marked recovery in quarterly operating profit from the second-half 2025 trough, interpreted as reflecting the initial impact of expanded supercapacitor orders. That said, as the low operating margins in the third and fourth quarters of 2025 show, revenue growth did not always translate into profit improvement, so whether the recent two-quarter recovery trend continues warrants ongoing observation. Operating cash flow was KRW 4.61 billion in 2025, slightly up from KRW 4.40 billion in 2024, indicating cash generation held up relatively better than reported profit volatility."
  },
  "industry": {
-  "ko": "슈퍼커패시터(EDLC)는 전기에너지를 정전 용량 방식으로 저장·방출하는 부품으로, 배터리 대비 고속 충방전과 긴 사이클 수명이 특징이다. AI 데이터센터 투자의 구조적 확대가 슈퍼커패시터 수요의 새로운 성장 축으로 부상하고 있다. AI 데이터센터는 기존 센터(10~25MW)와 달리 100MW를 초과하는 전력을 소비하는 하이퍼스케일 시설로, 서버 전원 백업과 순간 출력 대응에 슈퍼커패시터가 핵심 역할을 담당한다. 글로벌 AI 데이터센터 시장은 2025년 약 177억 달러에서 2034년 약 1,335억 달러(연평균 성장률 약 25.8%)로 급성장이 전망된다. MLCC 시장에서도 AI 서버·고성능 GPU 수요 급증으로 초고성능 제품 공급 부족이 심화되는 가운데, 삼성전기·일본 무라타·타이요유덴 등 극소수만이 안정적 공급이 가능한 것으로 평가된다. 한편 코칩의 주요 경쟁사인 파나소닉이 코인형 슈퍼커패시터 사업을 철수하면서 시장이 재편된 것은 코칩에게 기회 요인이다. 소형 리튬계 이차전지 분야에서는 일본·한국·글로벌 대형 전자부품 기업들이 다층적 경쟁 구도를 형성하고 있어, 칩셀리튬의 시장 침투 속도가 중장기 경쟁 우위를 판가름하는 핵심 변수가 될 것으로 보인다.",
-  "en": "Supercapacitors (EDLCs) store and release electrical energy via electrostatic capacitance, offering faster charge/discharge cycles and longer cycle life than conventional batteries. The accelerating structural expansion of AI data center investment has emerged as a powerful new demand driver. AI hyperscale facilities consuming over 100MW—far beyond the 10–25MW of traditional data centers—rely on supercapacitors for server backup power and instantaneous load response. The global AI data center market is forecast to grow from approximately $17.7bn in 2025 to approximately $133.5bn by 2034 (CAGR ~25.8%). In the MLCC market, supply shortages for high-performance products are intensifying as AI server and GPU demand surges; only a handful of manufacturers—Samsung Electro-Mechanics, Murata, and Taiyo Yuden—are assessed as capable of reliably supplying premium AI-grade MLCC. The competitive landscape for supercapacitors has also shifted in Korchip's favor following Panasonic's exit from coin-type supercapacitors. In the adjacent small lithium-ion battery segment, however, multilayered competition from established Japanese, Korean, and global electronic component majors makes ChipCell Lithium's market penetration speed a decisive variable for long-term competitive positioning."
+  "ko": "전방 산업에서는 AI 서버와 고성능 GPU 수요 급증에 따라 초고성능 MLCC 및 차세대 커패시터의 공급 부족 현상이 이어지고 있는 것으로 업계는 전하고 있다. 이런 흐름 속에서 삼성전기는 글로벌 대형 고객을 대상으로 약 1조5570억원 규모의 실리콘 커패시터 공급 계약을 체결했으며, 계약 기간은 2027년부터 2028년까지로 알려졌다. 실리콘 커패시터는 세라믹 기반 MLCC 대비 저항이 낮고 고전압·고온 환경에서 안정적 성능을 유지하는 것이 특징으로, AI 가속기와 HBM 패키지 등 첨단 반도체 기판 적용 확대 기대가 형성되고 있다. 삼성전기는 이 같은 수요에 대응해 필리핀 신규 공장 투자를 추진하며 생산능력 확대에 나선 상태로 전해진다. 코칩은 이 시장에서 자체 제조사이기보다는 삼성전기의 MLCC 유통·판매 파트너이자 슈퍼커패시터 제조 기술 보유사로서, 시장에서는 삼성전기의 대형 수주가 관련 공급망 기업들에 대한 관심으로 이어질 수 있다고 보고 있다. 다만 실제 낙수효과의 크기와 시점은 공급망 구조상 확인이 필요한 부분이다. 산업 전반적으로는 데이터센터, 전기차, 자동화 설비 등 전력 안정성이 요구되는 분야로 응용처가 확장되는 추세이며, 코칩을 포함한 관련 부품·유통 기업들이 이 구조적 수요 변화의 영향권에 있는 것으로 평가된다.",
+  "en": "In the downstream industry, surging demand for AI servers and high-performance GPUs is reported to be driving a continued supply shortage of ultra-high-performance MLCCs and next-generation capacitors. Against this backdrop, Samsung Electro-Mechanics signed a silicon capacitor supply contract worth approximately KRW 1.557 trillion with a major global customer, reportedly covering the period from 2027 to 2028. Silicon capacitors feature lower resistance than ceramic-based MLCCs and maintain stable performance in high-voltage, high-temperature environments, fueling expectations for expanded application in AI accelerators and HBM packaging for advanced semiconductor substrates. Samsung Electro-Mechanics is reported to be pursuing new capacity investment in the Philippines in response to this demand. Korchip operates in this market not as a direct manufacturer but as Samsung Electro-Mechanics' MLCC distribution and sales partner and a supercapacitor manufacturing technology holder, and the market has viewed Samsung Electro-Mechanics' large order as potentially drawing attention to related supply chain companies. However, the actual scale and timing of any indirect benefit warrant further confirmation given the supply chain structure. Industry-wide, application areas requiring power stability, such as data centers, electric vehicles, and automation equipment, continue to expand, and related component and distribution companies including Korchip are seen as positioned within this structural demand shift."
  },
  "outlook": {
-  "ko": "2026년 핵심 성장 드라이버는 AI 데이터센터향 슈퍼커패시터 수주의 지속 확대다. 회사 측은 2026년 5월 기준으로 신규 수요가 빠르게 증가하고 있으며, 단품 공급을 넘어 고객사 맞춤형 통합 솔루션 사업을 확장해 중장기 성장 기반을 강화할 계획임을 공식 확인했다. 신사업 측면에서는 LTO 각형 배터리 고객사 사양이 확정됐으며, 2026년 하반기 양산 설비 구축 완료 이후 본격적인 수주 확보가 예상된다. 적용 산업도 데이터센터·AGV·방산 등 고출력 산업 분야로 구체화되고 있다. 중대형 슈퍼커패시터 역시 양산 직전 단계에 진입해 제품 포트폴리오 다변화가 진행 중이다. 글로벌 전략 면에서는 미국·유럽 AI 데이터센터 투자 확대 기조를 배경으로 현지 법인을 활용해 글로벌 IT 인프라 기업을 신규 고객으로 확보하는 한편, 물류 자동화 수요 지역으로도 고객군을 넓힐 방침이다. 한국투자증권은 2026년 4월 말 기준 코칩의 2026년 연간 매출액을 약 470억원(전년 대비 약 22.8% 증가), 영업이익을 약 41억원(약 259% 급증, OPM 약 8.7%)으로 추정했다. 다만 LTO 배터리 양산 일정, 신규 고객 확보 속도, 원재료 단가 추이가 연간 실적 달성의 핵심 변수로 남아 있다.",
-  "en": "The primary 2026 growth driver is the continued expansion of AI data center supercapacitor orders. As of May 2026, company management officially confirmed that new demand is rising rapidly and that it plans to extend its customer-tailored integrated solution business to strengthen medium- and long-term growth foundations. On the new business front, LTO prismatic battery specifications have been finalized with customers, with mass production facility completion targeted for 2H 2026 followed by a full-scale order ramp; applications are expanding into AI data centers, AGVs, and defense sectors. Mid-to-large supercapacitors have entered a pre-mass-production phase, broadening the product portfolio. Globally, the company plans to leverage its overseas entities to win new global IT infrastructure accounts amid continued US and European AI data center investment, while also extending customer reach into logistics automation markets. Korea Investment Securities, in its late-April 2026 note, projected 2026 revenue of approximately ₩47.0bn (+~22.8% YoY) and operating profit of approximately ₩4.1bn (+~259% YoY, OPM ~8.7%). The actual LTO battery mass production timeline, new customer acquisition pace, and raw material cost trajectory remain the key variables determining full-year outcome."
+  "ko": "회사 측은 2026년 5월 관계자 발언을 통해 AI 데이터센터를 중심으로 한 신규 수요가 빠르게 증가하면서 슈퍼커패시터 수주가 크게 늘었다고 밝힌 바 있다. 아울러 단품 공급을 넘어 고객사 맞춤형 통합 솔루션 형태로 사업을 확장해 중장기 성장 기반을 강화할 계획이라고 언급했다. 실제로 1분기와 2분기 실적에서 기존 고객사의 발주 확대와 신규 고객 유입이 동시에 나타나며 외형 성장을 견인한 것으로 전해진다. 칩셀 LTO 사업은 대용량 파우치 타입 라인업 추가를 통해 고출력 산업 분야의 시스템 단위 파트너로 도약하는 방향을 제시하고 있다. 재무 측면에서는 타법인 증권 취득 자금 확보를 위해 지씨1호조합을 대상으로 50억원 규모의 사모 전환사채를 발행하기로 결정했으며, 전환가액은 2,190원, 전환청구기간은 2027년 5월부터 2029년 4월까지로 파악된다. 이는 향후 지분 희석 가능성과 함께 신사업 투자 재원 확보 측면을 동시에 살펴볼 필요가 있는 사안이다. 삼성전기의 실리콘 커패시터 대형 계약이 2027년부터 본격화되는 점을 고려하면, 코칩이 이와 연계된 구체적 수주나 공급 계약을 공시하는지가 중기 실적 흐름을 가늠하는 데 중요한 변수가 될 것으로 보인다.",
+  "en": "In May 2026, a company representative stated that new demand centered on AI data centers had rapidly increased, leading to a significant rise in supercapacitor orders. The representative also indicated plans to expand the business beyond single-item supply toward customized, integrated solutions for clients to strengthen the mid- to long-term growth foundation. Reports indicate that the first and second quarter results were driven by simultaneous expansion in orders from existing customers and inflows of new customers. The Chipcell LTO business has been adding large-capacity pouch-type lineups, signaling a direction toward becoming a system-level partner in high-output industrial applications. On the financing side, the company decided to issue a KRW 5 billion private convertible bond to GC No.1 Association to secure funds for acquiring securities in another company, with a conversion price of KRW 2,190 and a conversion request period reportedly running from May 2027 to April 2029. This warrants attention both for potential future share dilution and as a source of funding for new business investment. Given that Samsung Electro-Mechanics' large silicon capacitor contract is set to ramp up from 2027, whether Korchip discloses concrete orders or supply agreements linked to this development will be an important variable for gauging its medium-term earnings trajectory."
  },
  "valuation_comment": {
-  "ko": "주가는 순자산가치(BPS ₩7,161) 대비 상당한 프리미엄 구간에 형성되어 있으며, 이는 실적 정상화와 AI 인프라향 신규 성장 스토리에 시장이 선행 반영하는 구조다. 최근 4개 분기 누적 주당순이익(EPS ₩559) 기준 이익 배수는 회사의 과거 일반적인 거래 밴드를 크게 상회하는 수준으로, 칩셀LTO 양산 개시 및 데이터센터향 슈퍼커패시터 수주 본격화에 대한 기대가 핵심 프리미엄 요인이다. 주당 배당금(DPS) ₩400은 소형주 기준으로 일정 수준의 주주환원을 제공하지만, 현재 주가 수준에서 배당수익률은 업종 평균을 하회하는 편이다. 재무 건전성 측면에서 부채비율 20.4%라는 보수적 구조는 신규 설비투자·신사업 확장에 따른 재무 부담을 제한하는 요소다. 결국 현재 밸류에이션 수준의 지속 여부는 2026년 하반기 이후 LTO 배터리 매출 가시화와 AI 데이터센터향 슈퍼커패시터의 고객 다각화 진척 속도에 달려 있다.",
-  "en": "The share price is trading at a substantial premium to book value (BPS ₩7,161), reflecting the market's forward pricing of earnings normalization and a structural AI infrastructure growth narrative. The earnings multiple based on the most recent four-quarter cumulative EPS of ₩559 sits well above the company's historical trading range, with investor expectation of ChipCell LTO mass production ramp and large-scale AI data center supercapacitor order flow as the key premium drivers. The annual dividend per share (DPS) of ₩400 offers a degree of shareholder return for a small-cap stock, though at the current price level the implied dividend yield trails the sector average. From a financial health standpoint, the debt ratio of 20.4% reflects a near-debt-free conservative balance sheet, limiting financial risk from ongoing facility investment and new business expansion. Ultimately, whether the current valuation premium is sustained depends on the pace at which LTO battery revenue becomes visible and AI data center supercapacitor customer diversification progresses from 2H 2026 onward."
+  "ko": "코칩의 주가순자산비율은 순자산 대비 일정한 프리미엄이 반영된 수준에서 거래되고 있으며, 이는 최근 실적 회복 기대감이 일부 반영된 결과로 해석될 수 있다. 주당순자산가치는 7천원대 초중반 수준으로 파악되며, 이는 지배주주지분 자본총계가 2024년 527.98억원에서 2025년 557.99억원으로 늘어난 점과 궤를 같이한다. 과거 2025년 3분기까지의 낮은 분기 이익 흐름과 최근 두 분기의 뚜렷한 이익 회복 국면이 함께 존재하는 만큼, 이익 변동성이 큰 구간에서의 가치평가 판단은 신중함이 요구된다. 배당 측면에서는 주당 400원의 현금배당을 실시한 이력이 있으나, 이는 이익 규모 대비 낮은 배당성향을 시사하며 성장 투자에 재원을 우선 배분하는 정책으로도 해석될 수 있다. 소형주 특성상 거래대금과 유동성이 상대적으로 제한적인 편이며, 이는 밸류에이션 지표의 변동 폭을 확대시키는 요인으로 작용할 수 있다.",
+  "en": "Korchip's price-to-book ratio trades at a level that reflects a certain premium over net asset value, which can be interpreted as partly reflecting recent expectations of earnings recovery. Book value per share is in the low-to-mid KRW 7,000 range, consistent with the increase in equity attributable to owners from KRW 52.80 billion in 2024 to KRW 55.80 billion in 2025. Given the coexistence of weak quarterly profits through the third quarter of 2025 and a clear earnings recovery in the most recent two quarters, valuation judgments in a period of high profit volatility warrant caution. On the dividend side, the company has a history of paying a KRW 400 per share cash dividend, which suggests a relatively low payout ratio relative to earnings and could also be interpreted as a policy of prioritizing funds for growth investment. As a small-cap stock, trading value and liquidity are relatively limited, which can amplify the volatility of valuation metrics."
  },
  "bull": [
   {
    "title": {
-    "ko": "AI 데이터센터 구조적 수혜",
-    "en": "Structural Beneficiary of AI Data Center Build-Out"
+    "ko": "AI 데이터센터발 슈퍼커패시터 수요 확대",
+    "en": "Expanding Supercapacitor Demand from AI Data Centers"
    },
    "body": {
-    "ko": "글로벌 AI 데이터센터 시장은 2034년까지 연평균 약 25.8% 성장이 전망되며, 슈퍼커패시터는 서버 전원 백업과 순간 출력 대응의 필수 부품으로 적용처가 빠르게 확장되고 있다. 아마존·오라클 등 글로벌 클라우드 기업과의 기존 납품 관계를 발판으로 AI 데이터센터향 수주가 이미 큰 폭으로 증가 중임이 회사 측 공식 발표로 확인됐다. 2026년 1분기 매출의 전년동기비 41% 성장은 이 구조적 수요 전환이 실제 숫자로 반영되고 있음을 뒷받침한다.",
-    "en": "The global AI data center market is forecast to grow at a CAGR of approximately 25.8% through 2034, with supercapacitors serving as an essential component for server backup power and instantaneous load response in an expanding range of applications. A confirmed surge in AI data center supercapacitor orders, built on existing supply relationships with global cloud operators including Amazon and Oracle, has been officially acknowledged by the company. The 41% YoY revenue growth in Q1 2026 provides numerical evidence that this structural demand shift is already materializing in financial results."
+    "ko": "2026년 1분기와 2분기 연속으로 매출과 영업이익이 큰 폭으로 개선되며 실적 회복 신호가 뚜렷해지고 있다. 회사 측은 AI 데이터센터 중심의 신규 수요 증가로 슈퍼커패시터 수주가 크게 늘었다고 밝힌 바 있다. 기존 고객사 발주 확대와 신규 고객 유입이 동시에 이뤄지고 있는 점도 긍정적 요인이다.",
+    "en": "Revenue and operating profit improved sharply for two consecutive quarters in the first and second quarters of 2026, signaling a clear earnings recovery. The company has stated that new demand centered on AI data centers drove a significant increase in supercapacitor orders. Simultaneous expansion in orders from existing customers and inflow of new customers is also a positive factor."
    }
   },
   {
    "title": {
-    "ko": "칩셀LTO 신성장동력 가시화",
-    "en": "ChipCell LTO Emerging as Next Growth Engine"
+    "ko": "삼성전기와의 30여 년 파트너십",
+    "en": "Three-Decade Partnership with Samsung Electro-Mechanics"
    },
    "body": {
-    "ko": "LTO 기반 칩셀리튬은 5,000사이클 내구성·급속충전·높은 안전성을 갖춘 차세대 소형 이차전지로, 모바일 의료기기·로봇팔·IoT·전자펜·AGV 등 다양한 고성장 분야에 적용 가능하다. 이미 초도 매출이 발생하기 시작했으며, 각형 배터리 사양을 고객사와 확정하고 2026년 하반기 양산 설비 구축을 준비 중이다. 칩셀리튬이 외형 성장에 본격 기여하면 슈퍼커패시터 중심의 현재 매출 구조에서 벗어나 제품군 다변화 효과를 기대할 수 있다.",
-    "en": "ChipCell Lithium LTO is a next-generation compact battery with 5,000-cycle durability, rapid charging capability, and high safety, applicable across high-growth verticals including mobile medical devices, robotic arms, IoT, digital pens, and AGVs. Initial revenue has already commenced, customer specifications for prismatic-type batteries have been finalized, and mass production facility construction is planned for 2H 2026. A successful LTO scale-up would meaningfully diversify revenue away from the current supercapacitor-centric structure."
+    "ko": "코칩은 1992년부터 삼성전기의 MLCC 유통·판매 파트너 역할을 이어오고 있으며, 2002년 DLC 사업부 인수로 슈퍼커패시터 원천 기술도 확보했다. 삼성전기가 최근 대규모 실리콘 커패시터 공급 계약을 체결하면서 관련 공급망 기업에 대한 시장 관심이 커진 상태다. 이러한 오랜 협력 관계는 신제품·신사업 확장 시 기술·영업 접근성 측면에서 강점으로 작용할 수 있다.",
+    "en": "Korchip has served as Samsung Electro-Mechanics' MLCC distribution and sales partner since 1992, and secured core supercapacitor technology through its 2002 acquisition of the DLC business unit. Market attention toward related supply chain companies has grown following Samsung Electro-Mechanics' recent large silicon capacitor supply contract. This long-standing partnership could serve as a strength in terms of technology and sales access when expanding into new products and businesses."
    }
   },
   {
    "title": {
-    "ko": "삼성전기 생태계 연계와 견고한 고객 락인",
-    "en": "Samsung Electro-Mechanics Ecosystem Linkage and Strong Customer Lock-In"
+    "ko": "제품 포트폴리오 확장 및 솔루션화 전략",
+    "en": "Product Portfolio Expansion and Solution Strategy"
    },
    "body": {
-    "ko": "1992년부터 삼성전기 공식 MLCC 유통 파트너로서 30년 이상 관계를 유지하며 글로벌 고객 네트워크를 구축해 왔다. 삼성전기가 2026~2028년 공급 기간의 약 1조5,570억원 규모 실리콘 커패시터 계약을 수주한 가운데, 코칩과의 장기 협력 관계가 공급망 확장 측면에서 간접 수혜 가능성을 높인다. 삼성전자·LG전자·아마존·엡손 등 탑티어 고객과의 반복 발주 관계는 매출 안정성의 핵심 기반이다.",
-    "en": "Korchip has maintained its status as Samsung Electro-Mechanics' authorized MLCC distributor since 1992, building a global customer network spanning over 30 years. With Samsung Electro-Mechanics having secured an approximately ₩1.56tn silicon capacitor supply contract covering 2026–2028, the long-standing partnership raises the prospect of indirect supply chain benefits for Korchip. Repeat order relationships with tier-one accounts including Samsung Electronics, LG Electronics, Amazon, and Epson provide a stable and enduring revenue foundation."
+    "ko": "칩셀카본의 SMD 타입 전환과 칩셀 LTO의 대용량 파우치 라인업 추가로 제품군이 점차 다변화되고 있다. 단품 공급에서 고객 맞춤형 통합 전원 솔루션으로 사업모델을 전환하려는 전략도 진행 중이다. 데이터센터, 전기차, 자동화 설비 등 전력 안정성이 요구되는 신규 응용처로의 확장 가능성도 열려 있다.",
+    "en": "The product lineup is gradually diversifying through Chipcell Carbon's conversion to SMD-type products and the addition of Chipcell LTO's large-capacity pouch lineup. A strategy to shift the business model from single-item supply to customized, integrated power solutions is also underway. There is also potential for expansion into new application areas requiring power stability, such as data centers, electric vehicles, and automation equipment."
    }
   }
  ],
  "bear": [
   {
    "title": {
-    "ko": "2025년 OPM 급락으로 드러난 비용 구조 취약성",
-    "en": "Cost Structure Vulnerability Exposed by 2025 OPM Collapse"
+    "ko": "2025년 수익성 급락 이력",
+    "en": "Sharp Profitability Decline in 2025"
    },
    "body": {
-    "ko": "2025년 영업이익률은 8.7%(2024년)에서 3.0%로 급락했으며, 특히 하반기(Q3 OPM 약 0.7%, Q4 OPM 약 1.3%)에 원가 구조가 심하게 악화됐다. 원재료 단가 상승, 인건비 증가, R&D 및 설비투자 비용이 동시에 집중된 결과다. 향후 원자재 가격이 재차 상승하거나 신사업 진출 관련 추가 비용이 발생할 경우 수익성이 다시 압박받을 리스크가 잠재한다. 소형주 특성상 운영 레버리지가 커 원가 변동에 따른 수익성 진폭이 클 수 있다.",
-    "en": "OPM dropped sharply from 8.7% in 2024 to 3.0% in 2025, with H2 2025 seeing particularly severe compression (Q3 OPM ~0.7%, Q4 ~1.3%), reflecting a simultaneous spike in raw material costs, labor costs, R&D, and capital expenditure. Should raw material prices re-escalate or new business entry costs rise unexpectedly, profitability could face renewed pressure. High operating leverage, typical of small-cap manufacturers, means earnings volatility may remain elevated in response to cost fluctuations."
+    "ko": "2025년 영업이익은 전년 대비 60.7% 급감했고 영업이익률도 8.7%에서 3.0%로 크게 낮아졌다. 재료비 상승과 생산효율화 비용 증가가 원인으로 지목됐다. 매출 증가가 반드시 이익 개선으로 이어지지 않았던 최근 사례는 향후 원가 관리 능력에 대한 확인이 필요함을 시사한다.",
+    "en": "Operating profit plunged 60.7% year over year in 2025, with the operating margin falling sharply from 8.7% to 3.0%. Rising material costs and increased production efficiency-related expenses were cited as causes. The recent case in which revenue growth did not necessarily translate into profit improvement suggests a need to monitor future cost management capability."
    }
   },
   {
    "title": {
-    "ko": "신사업(칩셀LTO) 매출화 불확실성",
-    "en": "New Business (ChipCell LTO) Revenue Ramp Uncertainty"
+    "ko": "분기별 실적 변동성",
+    "en": "Quarterly Earnings Volatility"
    },
    "body": {
-    "ko": "칩셀리튬은 초기 매출이 발생하기 시작했으나 소형 이차전지 시장은 아직 초기 단계로, 실제 고객 확대와 매출 본격화 여부가 불투명하다. 각형 배터리 양산 설비 구축이 2026년 하반기 목표이지만, 공정 시운전·품질 인증·고객사 승인 단계에서 일정 지연이 발생할 수 있다. 일본 및 글로벌 대형 전자부품 업체들과의 경쟁도 만만치 않아 칩셀리튬의 시장 침투 속도가 예상보다 더딜 가능성도 배제하기 어렵다.",
-    "en": "While ChipCell Lithium has begun generating initial revenue, the small-format lithium battery market remains at an early stage, with customer expansion and full-scale revenue ramp still uncertain. Although the prismatic battery mass production facility is targeted for 2H 2026, delays from process commissioning, quality certification, and customer approval procedures are possible. Competition from Japanese and global electronic component majors is formidable, and ChipCell Lithium's market penetration pace could prove slower than anticipated."
+    "ko": "2025년 3분기 영업이익률은 0.7%까지 낮아졌고 4분기에도 1.3%에 머무르는 등 분기 간 수익성 편차가 컸다. 2026년 들어 뚜렷한 개선이 나타났지만 이 흐름이 지속 가능한 추세인지는 추가 분기 실적으로 확인이 필요하다. 커패시터·수동부품 업종 특성상 원자재 가격과 수주 시점에 따라 실적 변동 폭이 커질 수 있다.",
+    "en": "Profitability varied significantly across quarters, with the operating margin falling to 0.7% in the third quarter of 2025 and remaining at 1.3% in the fourth quarter. While a clear improvement emerged in 2026, whether this trend is sustainable requires confirmation through additional quarterly results. Given the nature of the capacitor and passive component industry, earnings can fluctuate significantly depending on raw material prices and order timing."
    }
   },
   {
    "title": {
-    "ko": "소형주 유동성·삼성전기 의존도 집중 리스크",
-    "en": "Small-Cap Liquidity Risk and Samsung Electro-Mechanics Concentration Risk"
+    "ko": "소형주 유동성 및 자본조달 부담",
+    "en": "Small-Cap Liquidity and Financing Burden"
    },
    "body": {
-    "ko": "시가총액 약 2,254억원의 소형주로, 거래량이 급등락에 취약하고 기관·외국인 수급이 제한적이다. 수익·사업 안정성 면에서도 삼성전기 MLCC 유통 사업에 대한 의존도가 높아, 삼성전기의 유통 채널 정책 변경 또는 MLCC 업황 악화 시 매출과 수익성에 직접적 영향이 발생할 수 있다. 소형 수동부품 시장 내 중국계 저가 경쟁사의 진입 위협도 가격 압박 요인으로 잠재한다.",
-    "en": "As a small-cap stock with a market capitalization of approximately ₩225.4bn, the company is susceptible to sharp trading volume swings and limited institutional and foreign investor participation. The business also carries meaningful concentration risk given its reliance on Samsung Electro-Mechanics MLCC distribution revenue; any change in Samsung Electro-Mechanics' channel strategy or a deteriorating MLCC market cycle could directly impact sales and margins. Ongoing pricing pressure from low-cost Chinese entrants in the compact passive component market is an additional latent headwind."
+    "ko": "코칩은 시가총액이 상대적으로 작은 코스닥 소형주로 거래대금과 유동성이 제한적인 편이다. 타법인 증권 취득을 위한 사모 전환사채 발행은 향후 전환 시 지분 희석 가능성을 내포하고 있다. 소형주 특성상 테마성 수급에 따른 주가 변동 이력도 함께 고려할 필요가 있다.",
+    "en": "Korchip is a relatively small-cap KOSDAQ stock with limited trading value and liquidity. The private convertible bond issuance for acquiring securities in another company carries potential future share dilution upon conversion. Given its small-cap characteristics, its history of price volatility driven by thematic supply and demand should also be considered."
    }
   }
  ],
  "risks": [
   {
    "cat": {
-    "ko": "원자재·환율 리스크",
-    "en": "Raw Material & FX Risk"
+    "ko": "원자재·비용 리스크",
+    "en": "Raw Material and Cost Risk"
    },
    "body": {
-    "ko": "슈퍼커패시터 전극재(활성탄, 알루미늄 집전체)와 전해질 등 주요 원재료 가격 변동은 제조원가에 직접 영향을 미친다. 2025년 실적 악화의 핵심 원인 중 하나가 원재료 단가 상승이었던 만큼, 원자재 시장 불안 시 수익성이 재차 압박받을 수 있다. 해외 매출 비중이 60% 이상인 만큼 원화 강세 시 수출 채산성이 저하될 수 있으며, 환율 변동에 따른 매출 환산 효과도 발생한다.",
-    "en": "Key raw material prices for supercapacitor electrodes (activated carbon, aluminum current collectors) and electrolytes directly affect manufacturing cost. Since raw material cost inflation was one of the primary drivers of the 2025 profitability deterioration, any renewed raw material market volatility could put margins under renewed pressure. With more than 60% of revenue generated overseas, Korean Won appreciation could reduce export profitability, and currency translation effects on revenue recognition represent an additional source of volatility."
+    "ko": "2025년 실적 부진의 주된 원인으로 재료비 상승과 생산효율화 관련 비용 증가가 지목된 바 있다. 향후에도 주요 원자재 가격 변동이 마진에 직접적인 영향을 미칠 수 있다. 원가 구조 개선 여부를 분기별로 확인할 필요가 있다.",
+    "en": "Rising material costs and increased production efficiency-related expenses were cited as the main causes of the 2025 earnings slump. Future fluctuations in key raw material prices could directly affect margins. Whether cost structure improvements materialize needs to be checked on a quarterly basis."
    }
   },
   {
    "cat": {
-    "ko": "고객사 집중 및 공급망 리스크",
-    "en": "Customer Concentration & Supply Chain Risk"
+    "ko": "고객·공급망 집중 리스크",
+    "en": "Customer and Supply Chain Concentration Risk"
    },
    "body": {
-    "ko": "삼성전기 MLCC 유통이 주요 매출원 중 하나인 만큼 삼성전기의 사업 전략 변화·유통 정책 수정에 대한 노출이 크다. 일부 글로벌 대형 고객사(아마존, 오라클 등)로의 수주 집중도 역시 해당 고객사의 발주 변동 시 단기 실적에 미치는 영향이 크다. 미중 무역분쟁 등 지정학적 긴장에 따른 글로벌 공급망 재편도 조달처와 판로 모두에 잠재 리스크 요인이다.",
-    "en": "The company's revenue profile carries meaningful exposure to Samsung Electro-Mechanics' business strategy and distribution policy decisions, given that MLCC distribution is a key revenue source. Concentration in a few large global accounts (Amazon, Oracle, etc.) also means that order fluctuations from these customers can materially impact near-term results. Geopolitical tensions, including the US-China trade dispute, represent a latent risk factor for both procurement and sales channels amid ongoing global supply chain realignment."
+    "ko": "코칩의 수동부품 유통 사업은 삼성전기와의 관계에 상당 부분 의존하고 있다. 삼성전기의 전략 변화나 유통 구조 조정이 있을 경우 코칩의 사업에도 영향을 줄 수 있다. AI 서버향 대형 계약의 낙수효과가 기대만큼 나타나지 않을 가능성도 배제할 수 없다.",
+    "en": "Korchip's passive component distribution business relies substantially on its relationship with Samsung Electro-Mechanics. Any strategic shift or restructuring of distribution arrangements by Samsung Electro-Mechanics could affect Korchip's business. The possibility that the trickle-down effect from large AI server-related contracts may not materialize as expected cannot be ruled out."
    }
   },
   {
    "cat": {
-    "ko": "신사업 실행 리스크 및 경쟁 심화",
-    "en": "New Business Execution Risk & Intensifying Competition"
+    "ko": "주가 변동성 및 자본구조 리스크",
+    "en": "Stock Volatility and Capital Structure Risk"
    },
    "body": {
-    "ko": "LTO 이차전지 등 신사업은 초기 단계로 고객사 양산 승인·공정 안정화·수율 확보까지 예상 외의 시간과 비용이 소요될 수 있다. 소형 이차전지 분야에는 파나소닉·무라타·TDK 등 기술력과 생산 규모를 갖춘 글로벌 강자들이 포진해 있어 후발자로서의 불리 요인이 존재한다. 중대형 슈퍼커패시터 역시 글로벌 경쟁사와의 기술·가격 경쟁이 불가피하며, 제품군 확장 과정에서 신규 R&D 비용 부담이 수반될 수 있다.",
-    "en": "New business lines including LTO secondary batteries are in an early phase, where unexpected time and cost may be required before customer mass production approvals, process stabilization, and yield improvement are achieved. The compact secondary battery space features global powerhouses such as Panasonic, Murata, and TDK with established technical capabilities and production scale, creating a structural late-mover disadvantage. The mid-to-large supercapacitor segment also faces unavoidable technical and price competition from global rivals, with incremental R&D cost burden likely accompanying portfolio expansion."
+    "ko": "코칩 주가는 테마성 이슈에 따라 단기간 급등락을 반복해 온 이력이 있다. 사모 전환사채 발행에 따른 잠재 물량 출회 가능성도 자본구조 측면의 변수다. 소형주 특성상 거시 환경 변화나 수급 이벤트에 민감하게 반응할 수 있다.",
+    "en": "Korchip's stock price has a history of repeated sharp short-term swings driven by thematic issues. The potential for future share supply from the private convertible bond conversion is also a capital structure variable. As a small-cap stock, it may react sensitively to macro environment changes or supply-demand events."
    }
   }
  ],
  "checkpoints": [
   {
    "when": {
-    "ko": "2026년 8월 중순 (2026년 2분기 실적 발표)",
-    "en": "Mid-August 2026 (Q2 2026 Earnings Release)"
+    "ko": "2026년 11월 중순경(예상)",
+    "en": "Around mid-November 2026 (expected)"
    },
    "what": {
-    "ko": "1분기 급반등의 지속 여부를 가늠할 핵심 분기다. 매출 성장세 유지·AI 데이터센터향 수주 기여 여부·OPM의 8% 이상 수준 유지를 확인해야 한다.",
-    "en": "The critical quarter for gauging sustainability of the Q1 2026 rebound; key metrics to verify include continued revenue growth, AI data center order contribution, and maintenance of OPM at or above the Q1 level of approximately 8.9%."
+    "ko": "2026년 3분기 실적 공시를 통해 2분기의 큰 폭 개선 흐름이 이어지는지 확인이 필요하다.",
+    "en": "Third-quarter 2026 earnings disclosure will be important to confirm whether the sharp improvement seen in the second quarter continues."
    }
   },
   {
    "when": {
-    "ko": "2026년 하반기 (칩셀LTO 각형 배터리 양산 설비 구축 완료 및 초도 수주 여부)",
-    "en": "2H 2026 (ChipCell LTO Prismatic Battery Production Facility Completion & Initial Orders)"
+    "ko": "2027년 이후",
+    "en": "From 2027 onward"
    },
    "what": {
-    "ko": "회사 가이던스상 각형 LTO 배터리의 양산 설비가 2026년 하반기 완공 예정이며, 이후 신규 수주 확보와 매출 발생 여부가 중장기 성장 스토리 검증의 분기점이 된다.",
-    "en": "Per company guidance, the prismatic LTO battery mass production facility is targeted for completion in 2H 2026; the timing and scale of initial order wins and actual revenue generation will be the pivotal milestone for validating the medium-term growth narrative."
+    "ko": "삼성전기의 대규모 실리콘 커패시터 공급 계약(2027~2028년)이 본격화되는 시점으로, 코칩과의 연계 수주나 매출 반영 여부를 확인할 필요가 있다.",
+    "en": "This marks the ramp-up period for Samsung Electro-Mechanics' large silicon capacitor supply contract (2027-2028), and it will be important to check whether related orders or revenue impact materialize for Korchip."
    }
   },
   {
    "when": {
-    "ko": "2026년 하반기 (중대형 슈퍼커패시터 양산 진입 여부)",
-    "en": "2H 2026 (Mid-to-Large Supercapacitor Mass Production Entry)"
+    "ko": "2027년 5월 13일 이후",
+    "en": "After May 13, 2027"
    },
    "what": {
-    "ko": "양산 직전 단계에 진입한 중대형 슈퍼커패시터의 양산 일정 확정 및 초도 수주 여부는 제품 포트폴리오 확대와 고마진 제품 믹스 개선을 동시에 가늠할 지표다.",
-    "en": "Confirmation of the mass production schedule and initial order wins for mid-to-large supercapacitors—already in pre-production phase—will signal both a product portfolio expansion and a potential improvement in the margin mix toward higher-value products."
+    "ko": "사모 전환사채(전환가 2,190원)의 전환청구권 행사 개시 시점으로, 지분 희석 여부와 규모를 확인할 필요가 있다.",
+    "en": "This is when conversion rights on the private convertible bond (conversion price KRW 2,190) become exercisable, requiring a check on the extent of any share dilution."
    }
   },
   {
    "when": {
-    "ko": "2026년 연간 (삼성전기 실리콘 커패시터 공급 계약 이행 상황)",
-    "en": "Full-Year 2026 (Samsung Electro-Mechanics Silicon Capacitor Contract Execution)"
+    "ko": "수시",
+    "en": "Ongoing"
    },
    "what": {
-    "ko": "삼성전기가 2026~2028년 약 1조5,570억원 규모의 실리콘 커패시터 공급 계약을 이행하는 과정에서, 코칩의 MLCC 유통 채널 및 슈퍼커패시터 공급망에 발생하는 간접 수혜 규모를 추적해야 한다.",
-    "en": "As Samsung Electro-Mechanics executes its approximately ₩1.56tn silicon capacitor supply contract over 2026–2028, the extent to which Korchip's MLCC distribution channel and supercapacitor supply chain derives indirect benefit should be monitored throughout the year."
-   }
-  },
-  {
-   "when": {
-    "ko": "2026년 4분기~2027년 초 (배당 정책 및 주주환원 방향)",
-    "en": "Q4 2026–Early 2027 (Dividend Policy & Shareholder Return Direction)"
-   },
-   "what": {
-    "ko": "DPS ₩400 유지 혹은 확대 여부, 그리고 2025년 11월 공시된 20억원 규모 자사주 취득 신탁 이후 추가 주주환원 정책 여부가 소형주 투자자 관점에서 자본 배분의 방향을 가늠하는 포인트다.",
-    "en": "Whether DPS of ₩400 is maintained or increased, and the direction of shareholder return policy following the ₩2.0bn treasury share acquisition trust announced in November 2025, will indicate the company's capital allocation priorities—a key monitoring point for small-cap investors."
+    "ko": "칩셀 LTO 대용량 파우치 타입 제품의 고객 승인 및 양산 진행 상황, 통합 전원 솔루션 사업으로의 전환 관련 공시나 계약 소식을 확인할 필요가 있다.",
+    "en": "Ongoing monitoring is needed for customer approval and mass production progress of Chipcell LTO's large-capacity pouch-type products, as well as any disclosures or contract news related to the shift toward integrated power solutions."
    }
   }
  ],
  "verdict": {
   "body": {
-   "ko": "코칩은 20년 이상의 슈퍼커패시터 제조 노하우와 삼성전기 MLCC 30년 공식 파트너십을 기반으로, AI 데이터센터라는 구조적 성장 테마의 교차점에 위치한 에너지저장소자 전문기업이다. 2025년에는 R&D·2공장 설비투자 관련 비용이 집중 반영되며 영업이익률이 3.0%로 급락했으나, 2026년 1분기에 매출 40% 이상 성장과 영업이익의 급반등으로 수익성 정상화의 신호를 분명히 보냈다. 신사업인 칩셀LTO는 초기 매출이 시작됐으며, 2026년 하반기 양산 체제 완성 이후 외형 성장의 새로운 축이 될 수 있을지 여부가 중장기 관점의 핵심 분기점이 될 것이다. 한편 소형주 특성상 원자재·환율 등 외부 변수에 대한 수익성 민감도가 높고, 신사업 실행 리스크·삼성전기 의존도·글로벌 경쟁 심화라는 견제 요인도 상존한다. 현재 주가는 순자산 대비 상당한 프리미엄을 반영하고 있어, 실적 가시성의 제고 속도와 신사업 매출화 진전이 그 정당성을 뒷받침하는 열쇠가 될 것으로 판단된다.",
-   "en": "Korchip is an energy storage component specialist positioned at the intersection of more than 20 years of supercapacitor manufacturing expertise, a 30-plus-year Samsung Electro-Mechanics MLCC partnership, and the structural AI data center demand theme. While 2025 saw OPM compress sharply to 3.0% as R&D and second-plant capex costs peaked, Q1 2026 delivered a clear normalization signal with revenue growing more than 40% YoY and operating profit rebounding sharply. The new ChipCell LTO business has commenced initial revenue generation, and whether it becomes a meaningful additional growth pillar following the planned H2 2026 mass production ramp will be the decisive medium-term valuation inflection point. That said, the company carries elevated profitability sensitivity to raw material costs and FX as a small-cap manufacturer, while execution risks in new business, Samsung Electro-Mechanics concentration risk, and intensifying global competition remain as persistent counterweights. With the share price reflecting a substantial premium to book value, the pace of earnings visibility improvement and new business revenue materialization will be the key determinants of whether that premium is justified."
+   "ko": "코칩은 2025년 재료비 상승과 비용 부담으로 수익성이 크게 위축됐다가, 2026년 1분기와 2분기 연속으로 매출과 영업이익이 뚜렷하게 개선되는 흐름을 보였다. 이는 AI 데이터센터향 슈퍼커패시터 수주 확대라는 회사 측 설명과 맞물려 있으며, 삼성전기와의 30여 년에 걸친 협력 관계도 함께 주목받고 있다. 다만 2025년 3~4분기의 낮은 영업이익률에서 확인되듯 매출 성장이 곧바로 이익 개선으로 이어지지 않았던 구간도 있었던 만큼, 최근 두 분기의 개선세가 일회성인지 추세적인지는 추가 분기 실적을 통해 확인이 필요하다. 삼성전기의 대형 실리콘 커패시터 계약이 2027년부터 본격화되는 점, 사모 전환사채 발행에 따른 잠재 희석 가능성, 소형주 특유의 유동성·변동성 등은 함께 고려해야 할 요소다. 밸류에이션 측면에서는 최근 실적 회복 기대가 일부 반영된 것으로 보이나, 이익 변동성이 큰 구간인 만큼 판단에 신중함이 요구된다. 종합적으로 코칩은 구조적 수요 확대 기대와 실적 변동성이라는 강세·약세 요인이 공존하는 국면에 있는 것으로 평가된다.",
+   "en": "Korchip's profitability contracted sharply in 2025 due to rising material costs and expense burdens, but showed a clear improvement in both revenue and operating profit for two consecutive quarters in the first and second quarters of 2026. This aligns with the company's stated expansion of supercapacitor orders driven by AI data center demand, alongside renewed attention to its three-decade-long partnership with Samsung Electro-Mechanics. However, as the low operating margins in the third and fourth quarters of 2025 illustrate, revenue growth did not always translate directly into profit improvement, so whether the recent two-quarter improvement is a one-off or a sustained trend requires confirmation through further quarterly results. Factors to weigh together include the 2027 ramp-up of Samsung Electro-Mechanics' large silicon capacitor contract, potential dilution from the private convertible bond issuance, and the liquidity and volatility characteristic of small-cap stocks. On valuation, recent earnings recovery expectations appear to be partly reflected, but caution is warranted given the high degree of profit volatility. Overall, Korchip appears to be at a juncture where structural demand expansion expectations and earnings volatility coexist as bullish and bearish factors."
   }
  },
  "sources": [
-  "https://comp.fnguide.com/SVO2/ASP/SVD_Main.asp?pGB=1&gicode=A126730&MenuYn=Y&ReportGB=D&NewMenuID=Y&stkGb=701",
-  "https://comp.wisereport.co.kr/company/c1010001.aspx?cmp_cd=126730",
+  "https://markets.hankyung.com/stock/126730/financial-summary",
   "https://w4.kirs.or.kr/download/research/250116_%EC%BD%94%EC%B9%A9.pdf",
   "https://m.thinkpool.com/compDiscuss/cont/1026408",
-  "https://www.bondweb.co.kr/_research/downloadPage.asp?number=869944&gn=1",
-  "https://m.thinkpool.com/compDiscuss/cont/1016309",
-  "https://news.nate.com/view/20260211n40452",
+  "https://comp.wisereport.co.kr/company/c1010001.aspx?cmp_cd=126730",
   "https://m.irgo.co.kr/IR-COMP/126730/%EC%BD%94%EC%B9%A9-IR-PAGE",
-  "https://stockhandbook.blog/2025/09/15/%EC%BD%94%EC%B9%A9/",
-  "https://v.daum.net/v/20260506100803873",
+  "https://www.bondweb.co.kr/_research/downloadPage.asp?number=869944&gn=1",
+  "https://littlebproject.com/stock/126730/243/53194",
   "http://www.businessreport.kr/news/articleView.html?idxno=52433",
-  "https://www.jobkorea.co.kr/recruit/co_read/c/korchip",
-  "https://comp.wisereport.co.kr/company/c1020001.aspx?cmp_cd=126730&cn=",
-  "https://marvellab.maxnmarvel.com/company_report?ct_idx=829&turn=2023-06-16",
-  "https://www.seoulexchange.kr/stocks/%EC%BD%94%EC%B9%A9-935/",
+  "https://itwiki.kr/w/%EC%BD%94%EC%B9%A9_%EC%A3%BC%EC%8B%9D%ED%9A%8C%EC%82%AC",
+  "https://thevc.kr/korchip",
+  "https://www.korchip.com/kor/",
+  "https://www.incruit.com/company/2468099/",
   "https://kind.krx.co.kr/common/disclsviewer.do?method=searchInitInfo&acptNo=20250515002543&docno=",
-  "https://www.newspim.com/news/view/20250328000088",
-  "https://www.pwcconsulting.co.kr/ko/insights/ai-datacenter.html"
+  "https://comp.fnguide.com/SVO2/ASP/SVD_Main.asp?pGB=1&gicode=A126730&MenuYn=Y&ReportGB=D&NewMenuID=Y&stkGb=701",
+  "https://news.infostock.co.kr/a",
+  "https://m.thinkpool.com/compDiscuss/cont/1016309",
+  "https://www.judal.co.kr/?view=stockAI&shareToken=r3ZZI3MDp6WRJuZe",
+  "https://kr.investing.com/equities/korchip"
  ],
  "v": 2,
- "model": "claude-sonnet-4-6",
+ "model": "claude-sonnet-5",
  "ticker": "126730",
  "name": "코칩",
  "name_en": "KORCHIP CORPORATION",
@@ -233,11 +223,11 @@
   "반도체"
  ],
  "market": "코스닥",
- "reportDate": "2026-06-19",
- "reportTs": "2026-06-19 00:29",
- "dataDate": "20260618",
+ "reportDate": "2026-08-18",
+ "reportTs": "2026-08-18 00:50",
+ "dataDate": "20260814",
  "quant": {
-  "asOf": "2026-06-18",
+  "asOf": "2026-08-17",
   "fs_basis": "연결(CFS) · DART 공시 확정치 · 지배주주 기준 순이익",
   "annual": [
    {
@@ -273,12 +263,6 @@
   ],
   "quarterly": [
    {
-    "q": "2025Q1",
-    "rev": 8554879432,
-    "op": 448242913,
-    "np_owner": 517325840
-   },
-   {
     "q": "2025Q2",
     "rev": 8626932766,
     "op": 477303216,
@@ -301,26 +285,32 @@
     "rev": 12052696916,
     "op": 1068847321,
     "np_owner": 2128140444
+   },
+   {
+    "q": "2026Q2",
+    "rev": 17996033146,
+    "op": 4410030759,
+    "np_owner": 3490983975
    }
   ],
   "valuation": {
-   "price": 25700,
-   "mcap": 0.2254,
+   "price": 19970,
+   "mcap": 0.1751,
    "shares": 8770126,
    "total_shares": 8770126,
-   "wavg_shares": 7981287,
-   "per": 46.0,
-   "eps": 559,
-   "pbr": 3.59,
-   "bps": 7161,
-   "roe_ttm": 8.1,
-   "ttm_window": "2025Q2~2026Q1",
-   "ttm_np_owner": 4460134121,
-   "pbr_krx": 3.67,
+   "wavg_shares": 8120150,
+   "per": null,
+   "eps": null,
+   "pbr": 2.67,
+   "bps": 7466,
+   "roe_ttm": 12.2,
+   "ttm_window": "2025Q3~2026Q2",
+   "ttm_np_owner": 6976530094,
+   "pbr_krx": 2.85,
    "bps_krx": 7001.0,
    "basis": "PER·EPS·PBR·BPS 모두 자체 산출(네이버·토스와 동일 방식) · 배당은 DART 공시 주당현금배당금(보완:KRX) ÷ 현재가",
    "dps": 400.0,
-   "div": 1.56
+   "div": 2.0
   }
  }
 }
