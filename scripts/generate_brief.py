@@ -53,6 +53,9 @@ USE_BATCH = os.getenv("BRIEF_USE_BATCH", "") == "1"
 BATCH_CUTOFF = int(os.getenv("BRIEF_BATCH_CUTOFF", "2400"))
 # 뉴스를 종목별로 받을 개수. 구글 뉴스는 1초에 여덟 번 때리면 503 을 준다.
 NEWS_TICKERS = int(os.getenv("BRIEF_NEWS_TICKERS", "4"))
+# stocks.js 의 날짜가 직전 거래일과 며칠까지 벌어져도 넘어갈지. 기본은 0 —
+# 어긋나면 발행하지 않는다. 이유는 gather() 에 적었다.
+MAX_DATA_LAG = int(os.getenv("BRIEF_MAX_DATA_LAG", "0"))
 
 # 백만 토큰당 (입력, 출력) 달러. 예상 비용 표시용이며 청구와 무관하다.
 # Sonnet 5 는 2026-08-31 까지 도입가 $2/$10 이 적용된다.
@@ -145,6 +148,32 @@ def _news_tickers(dom):
     return tks, names
 
 
+def stale_data(prev, data_date):
+    """우리 시세 파일(stocks.js)의 날짜가 직전 거래일과 같은가. 다르면 그 이유.
+
+    1차 실행에서 여기가 어긋났다. 브랜치의 stocks.js 가 8월 4일이었는데 직전
+    거래일은 8월 14일이었다. 지수·수급은 yfinance·네이버에서 14일 값을 받아
+    오므로, 한 문단에 "코스피 6,977.94(14일)"와 "상승 2,220 대 하락 271(4일)"이
+    같은 장의 일처럼 섞여 나갔다.
+
+    값이 없는 것보다 나쁘다 — 없으면 문장이 빠지지만, 이건 틀린 문장이
+    나간다. 그래서 경고가 아니라 정지다.
+    """
+    if not (prev and data_date):
+        return None
+    try:
+        a = datetime.date.fromisoformat(f"{prev[:4]}-{prev[4:6]}-{prev[6:]}")
+        b = datetime.date.fromisoformat(f"{data_date[:4]}-{data_date[4:6]}-{data_date[6:]}")
+    except ValueError:
+        return f"날짜를 읽을 수 없다: 직전 거래일 {prev!r}, 데이터 {data_date!r}"
+    lag = abs((a - b).days)
+    if lag <= MAX_DATA_LAG:
+        return None
+    return (f"우리 시세 데이터가 {data_date} 인데 직전 거래일은 {prev} 다 ({lag}일 차이)."
+            " 국내 장 문단이 다른 날 숫자를 섞게 된다 — data/stocks.js 를 최신으로"
+            " 맞춰라 (무시하려면 BRIEF_MAX_DATA_LAG)")
+
+
 def gather(trade_date=None, days=14, skip_news=False):
     """브리핑이 쓸 사실 전부. (facts, 치명적 실패 이유) 를 돌려준다.
 
@@ -162,6 +191,10 @@ def gather(trade_date=None, days=14, skip_news=False):
     cal = dom.get("calendar") or {}
     if cal.get("open") is None:
         return facts, "개장 여부를 판정하지 못했다(holidays 조회 실패)"
+
+    stale = stale_data(cal.get("prev"), dom.get("tradeDate"))
+    if stale:
+        return facts, stale
 
     # ② 시세. brief_data 가 이미 코스피·코스닥을 받았고 fetch 는 결과를
     #    기억하므로, 여기서 부르는 건 미국 지수·금리·환율 몫이다.
@@ -257,10 +290,19 @@ def _facts_text(facts):
     # 국내 지수·수급
     L.append(f"\n[직전 국내 장 · {dom['tradeDate']} ({dom['tradeDateKo']})]")
     idx = dom.get("index") or {}
+    mismatch = [k for k, v in idx.items() if v.get("dateMismatch")]
+    if mismatch:
+        # 1차 실행에서 '날짜를 쓰지 말 것'이라고만 적었더니, 모델이 날짜는
+        # 안 쓰면서 두 날짜의 값을 한 문단에 섞었다. 무엇을 하지 말아야
+        # 하는지를 정확히 적는다.
+        L.append(f"  ⚠️ 아래 지수는 {idx[mismatch[0]].get('date')} 값이고, 등락 종목 수·업종·"
+                 f"거래대금은 {dom['tradeDate']} 값이다 — 다른 날이다."
+                 " 두 묶음을 같은 장의 일처럼 한 문단에 섞지 마라."
+                 " 섞을 수 없으면 지수 쪽을 버리고 등락·업종만 쓰라.")
     for key, lbl in (("kospi", "코스피"), ("kosdaq", "코스닥")):
         v = idx.get(key)
         if v:
-            warn = "  ⚠️기준일이 거래일과 다르다 — 날짜를 쓰지 말 것" if v.get("dateMismatch") else ""
+            warn = f"  ⚠️기준일 {v.get('date')}" if v.get("dateMismatch") else ""
             L.append(f"  {lbl}: {_n(v['close'])} {_pct(v.get('change'))}{warn}")
     if not idx:
         L.append("  지수를 받지 못했다 — 지수 숫자를 쓰지 말고 아래 장폭으로 서술하라.")

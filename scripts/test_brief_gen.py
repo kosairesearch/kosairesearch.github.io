@@ -292,6 +292,27 @@ t4 = G._facts_text(f4)
 ok("판정 실패를 그대로 적는다", "개장 여부를 판정하지 못했다" in t4)
 ok("휴장이라고 적지 않는다", "국내 증시 휴장" not in t4, t4[:120])
 
+print("\n⑨-5 데이터가 묵었으면 발행하지 않는다 — 1차 실행에서 실제로 난 일")
+ok("같은 날이면 통과", G.stale_data("20260814", "20260814") is None)
+r = G.stale_data("20260814", "20260804")
+ok("10일 묵었으면 정지", r and "10일 차이" in r, str(r))
+ok("이유에 고칠 곳이 적혀 있다", r and "data/stocks.js" in r)
+ok("하루만 어긋나도 정지(기본 0)", G.stale_data("20260814", "20260813") is not None)
+ok("값이 없으면 이 검사는 넘어간다", G.stale_data(None, "20260814") is None)
+ok("이상한 날짜는 알린다", "읽을 수 없다" in (G.stale_data("2026xxxx", "20260814") or ""))
+
+print("\n⑨-6 시세 날짜가 거래일과 다를 때 — 섞지 말라고 정확히 적는다")
+f5 = copy.deepcopy(FACTS)
+f5["domestic"]["tradeDate"] = "20260804"
+f5["domestic"]["tradeDateKo"] = "8월 4일"
+f5["domestic"]["index"]["kospi"]["dateMismatch"] = True
+f5["domestic"]["index"]["kospi"]["date"] = "2026-08-14"
+t5 = G._facts_text(f5)
+ok("다른 날임을 밝힌다", "다른 날이다" in t5, t5[:200])
+ok("섞지 말라고 적는다", "한 문단에 섞지 마라" in t5)
+ok("어느 쪽을 버릴지 알려 준다", "지수 쪽을 버리고" in t5)
+ok("어긋나지 않으면 경고 없다", "다른 날이다" not in G._facts_text(FACTS))
+
 print("\n⑩ 프롬프트 — 못을 박은 규칙이 실제로 들어가는지")
 p = G.build_prompt(FACTS)
 ok("25% 상한이 프롬프트에 있다", "25%를 넘지 않는다" in p)
