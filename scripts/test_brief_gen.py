@@ -63,13 +63,19 @@ def sample(us=700, dom=650, ahead=700, cov=550):
         "title": {"ko": "휴장 하루, 미국은 두 번 열린다", "en": "One holiday, two US sessions"},
         "lead": para(120),
         "sections": [
-            {"id": "us", "heading": {"ko": "간밤 뉴욕", "en": "Overnight in New York"},
+            # 제목은 매일 새로 쓴다 — 고정 이름("간밤 뉴욕", "볼 것")은 검증이
+            # 거부한다. ⑦-5 에서 그걸 확인한다.
+            {"id": "us", "heading": {"ko": "반도체는 비켜갔다",
+                                     "en": "Chips sidestepped it"},
              "paragraphs": [para(us)]},
-            {"id": "domestic", "heading": {"ko": "직전 국내 장", "en": "The last session"},
+            {"id": "domestic", "heading": {"ko": "지수는 올랐지만 폭은 좁았다",
+                                           "en": "The index rose, the breadth did not"},
              "paragraphs": [para(dom)]},
-            {"id": "ahead", "heading": {"ko": "볼 것", "en": "What to watch"},
+            {"id": "ahead", "heading": {"ko": "18일이 두 번을 받는다",
+                                        "en": "Tuesday absorbs two sessions"},
              "paragraphs": [para(ahead)]},
-            {"id": "coverage", "heading": {"ko": "코사이 커버리지에서", "en": "From our coverage"},
+            {"id": "coverage", "heading": {"ko": "현대차그룹 세 곳",
+                                           "en": "Three Hyundai names"},
              "paragraphs": [para(cov)]},
         ],
     }
@@ -230,6 +236,66 @@ b2["sections"][3]["paragraphs"][0]["ko"] = "[현대차](005380)는 올랐다. **
 check("올바른 형식과 굵게는 그대로", G.repair_links(b2), 0)
 check("굵게가 살아 있다", "**6.05%**" in b2["sections"][3]["paragraphs"][0]["ko"], True)
 
+print("\n⑦-5 섹션 제목 — 매일 새로 쓰기로 했으니 매일 검증한다")
+
+
+def with_heads(*ko_heads):
+    b = copy.deepcopy(base)
+    for s, h in zip(b["sections"], ko_heads):
+        s["heading"]["ko"] = h
+    return b
+
+
+good = with_heads("반도체는 비켜갔다", "지수는 올랐지만 폭은 좁았다",
+                  "18일이 두 번을 받는다", "현대차그룹 세 곳의 반기보고서")
+check("내용을 담은 제목은 통과", G.check_headings(good), [])
+ok("'볼 것' 은 거부(너무 짧다)",
+   has(G.check_headings(with_heads("반도체는 비켜갔다", "지수는 올랐다", "볼 것",
+                                   "현대차그룹 세 곳")), "자 이상"))
+ok("'코사이 커버리지에서' 는 번역체로 거부",
+   has(G.check_headings(with_heads("반도체는 비켜갔다", "지수는 올랐다",
+                                   "18일이 두 번을 받는다", "코사이 커버리지에서")), "번역체"))
+ok("너무 긴 제목 거부",
+   has(G.check_headings(with_heads("반도체는 비켜갔다", "지수는 올랐다",
+                                   "18일이 두 번을 받는다",
+                                   "현대차그룹 세 곳의 반기보고서가 어제 접수되어 확인 지점이 걸렸다")),
+       "문장이다"))
+ok("겹치는 제목 거부",
+   has(G.check_headings(with_heads("반도체는 비켜갔다", "반도체는 비켜갔다",
+                                   "18일이 두 번을 받는다", "현대차그룹 세 곳")), "겹친다"))
+b = with_heads("휴장 하루, 미국은 두 번 열린다", "지수는 올랐다",
+               "18일이 두 번을 받는다", "현대차그룹 세 곳")
+b["title"]["ko"] = "휴장 하루, 미국은 두 번 열린다"
+ok("기사 제목을 그대로 쓰면 거부", has(G.check_headings(b), "기사 제목과 같다"))
+# 제목에 링크·강조가 들어와도 글자 수를 제대로 센다
+ok("링크 표시를 뺀 길이로 센다",
+   G.check_headings(with_heads("[SK하이닉스](000660)가 끌었다", "지수는 올랐다",
+                               "18일이 두 번을 받는다", "현대차그룹 세 곳")) == [])
+
+# 사용자가 어색하다고 한 옛 제목 한 벌. 이제 통째로 거부돼야 한다.
+old = G.check_headings(with_heads("간밤 뉴욕", "직전 국내 장", "볼 것", "코사이 커버리지에서"))
+ok("옛 제목 한 벌은 거부", len(old) >= 3, str(old))
+
+print("\n⑦-6 '간밤' — 미국이 어젯밤에 열린 날에만 쓸 수 있다")
+TUE = {"domestic": {"calendar": {"today": "20260818"}},
+       "markets": {"sp500": {"date": "2026-08-17"}}}      # 화요일 아침: 어젯밤 열렸다
+MON = {"domestic": {"calendar": {"today": "20260817"}},
+       "markets": {"sp500": {"date": "2026-08-14"}}}      # 월요일 아침: 금요일이 마지막
+ok("화요일엔 쓸 수 있다", G.overnight_ok(TUE)[0])
+ok("월요일엔 못 쓴다", not G.overnight_ok(MON)[0])
+ok("못 쓰는 날엔 사실 블록에 이유를 적는다",
+   "어젯밤에 미국이 열리지 않았다" in (G.overnight_ok(MON)[1] or ""))
+ok("근거가 없으면 막지 않는다", G.overnight_ok({})[0])
+
+hb = with_heads("간밤 뉴욕은 물러섰다", "지수는 올랐다", "18일이 두 번을 받는다",
+                "현대차그룹 세 곳")
+ok("월요일에 '간밤' 제목은 거부", has(G.check_headings(hb, MON), "간밤"))
+ok("화요일에는 통과", not has(G.check_headings(hb, TUE), "간밤"))
+b = copy.deepcopy(good)
+b["lead"]["ko"] = "간밤 뉴욕은 세 지수가 함께 내렸다. " + b["lead"]["ko"]
+ok("리드에 새도 잡는다", has(G.check_headings(b, MON), "lead.ko"))
+ok("본문 문단은 막지 않는다(사실 블록이 경고한다)",
+   not has(G.check_headings(good, MON), "us.p0"))
 print("\n⑧ 응답 파싱")
 body = json.dumps(sample(), ensure_ascii=False)
 check("마커 안쪽만 읽는다",
@@ -288,6 +354,9 @@ ok("외국인 순매수 단위가 억원", "외국인 +30,387억원" in txt)
 ok("rel 기준을 설명한다", "부진이다" in txt)
 ok("못 받은 값을 알린다", "못 받은 값(쓰지 말 것)" in txt and "나스닥" in txt)
 ok("뉴스 숫자 사용을 막는다", "제목 속 숫자는 쓰지 말 것" in txt)
+# 오늘 08-17, 미국 기준일 08-14 — 어젯밤에 미국이 열리지 않은 날이다
+ok("'간밤' 을 쓸 수 없다고 적는다", "[표현 주의]" in txt and "어젯밤에 미국이 열리지 않았다" in txt)
+ok("판정도 같은 답을 준다", not G.overnight_ok(FACTS)[0])
 ok("확인 지점을 넘긴다", "자주포 계약 확정 여부" in txt)
 ok("공시 전체 건수를 알린다", "전체 2,040건" in txt)
 
