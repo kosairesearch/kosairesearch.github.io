@@ -17,6 +17,9 @@ STATIC_PAGES = [
     ("/", "daily", "1.0"),
     ("/Home.html", "daily", "0.9"),
     ("/Reports.html", "daily", "0.9"),
+    # 평일 아침마다 새 글이 올라간다. 우선순위를 리포트와 같게 둔다 —
+    # 검색에서 들어오는 글이라 색인이 늦으면 그날 값이 없어진다.
+    ("/brief.html", "daily", "0.9"),
     ("/Screener.html", "daily", "0.8"),
     ("/industry.html", "daily", "0.7"),
     ("/About.html", "monthly", "0.5"),

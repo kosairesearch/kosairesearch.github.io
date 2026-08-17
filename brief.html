@@ -4,21 +4,21 @@
 <meta charset="utf-8" />
 <meta name="referrer" content="strict-origin-when-cross-origin" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
-<title>문의하기 — KOSAI</title>
-<meta name="description" content="KOSAI 서비스 관련 문의를 보내주세요." />
-<link rel="canonical" href="https://kosai.kr/Contact.html" />
+<title>모닝 브리핑 · KOSAI</title>
+<meta name="description" content="간밤 미국 시장과 직전 국내 장, 이번 주 일정을 매일 아침 한 편으로 정리합니다. 오늘 장을 준비하는 데 필요한 것만." />
+<link rel="canonical" href="https://kosai.kr/brief.html" />
 <meta property="og:type" content="website" />
 <meta property="og:site_name" content="KOSAI" />
 <meta property="og:locale" content="ko_KR" />
-<meta property="og:title" content="문의하기 — KOSAI" />
-<meta property="og:description" content="KOSAI 서비스 관련 문의를 보내주세요." />
-<meta property="og:url" content="https://kosai.kr/Contact.html" />
+<meta property="og:title" content="모닝 브리핑 — KOSAI" />
+<meta property="og:description" content="간밤 미국 시장과 직전 국내 장, 이번 주 일정을 매일 아침 한 편으로." />
+<meta property="og:url" content="https://kosai.kr/brief.html" />
 <meta property="og:image" content="https://kosai.kr/assets/og-image.png?v=3" />
 <meta property="og:image:width" content="1200" />
 <meta property="og:image:height" content="630" />
 <meta name="twitter:card" content="summary_large_image" />
-<meta name="twitter:title" content="문의하기 — KOSAI" />
-<meta name="twitter:description" content="KOSAI 서비스 관련 문의를 보내주세요." />
+<meta name="twitter:title" content="모닝 브리핑 — KOSAI" />
+<meta name="twitter:description" content="간밤 미국 시장과 직전 국내 장, 이번 주 일정을 매일 아침 한 편으로." />
 <meta name="twitter:image" content="https://kosai.kr/assets/og-image.png?v=3" />
 <style>
 @font-face{font-family:"Pretendard";font-weight:400;font-style:normal;font-display:swap;src:url("fonts/Pretendard-Regular.woff2") format("woff2"), url("fonts/Pretendard-Regular.otf") format("opentype")}
@@ -59,7 +59,7 @@ body::before{content:"";position:fixed;inset:0;z-index:-1;pointer-events:none;
   background-image:linear-gradient(to right, rgba(255,255,255,.06) 1px, transparent 1px),linear-gradient(to bottom, rgba(255,255,255,.06) 1px, transparent 1px);background-size:48px 48px}
 .glass{background:rgba(255,255,255,0.62);border:1px solid rgba(255,255,255,0.55);box-shadow:var(--shadow-2),inset 0 1px 0 rgba(255,255,255,0.6);-webkit-backdrop-filter:blur(20px);backdrop-filter:blur(20px);border-radius:var(--radius-xl)}
 :root[data-theme="dark"] .glass{background:rgba(28,30,42,0.62);border-color:rgba(255,255,255,0.10);box-shadow:var(--shadow-2),inset 0 1px 0 rgba(255,255,255,0.08)}
-.btn{display:inline-flex;align-items:center;justify-content:center;gap:6px;font:600 15px/1 var(--font-sans);border-radius:var(--radius-sm);cursor:pointer;border:0;transition:transform .12s,filter .15s;white-space:nowrap}
+.btn{text-decoration:none;display:inline-flex;align-items:center;justify-content:center;gap:6px;font:600 15px/1 var(--font-sans);border-radius:var(--radius-sm);cursor:pointer;border:0;transition:transform .12s,filter .15s;white-space:nowrap}
 .btn:active{transform:scale(.98)}
 .btn-primary{background:#000;color:#fff;padding:14px 20px;box-shadow:var(--shadow-1)}
 .btn-primary:hover{filter:brightness(1.1)}
@@ -74,6 +74,10 @@ body::before{content:"";position:fixed;inset:0;z-index:-1;pointer-events:none;
 .nav-links a{font:500 14px var(--font-sans);color:var(--fg-2);text-decoration:none;padding:8px 13px;border-radius:var(--radius-sm);transition:.15s;white-space:nowrap}
 .nav-links a:hover{color:var(--fg-1);background:rgba(0,0,0,.05)}
 :root[data-theme="dark"] .nav-links a:hover{background:rgba(255,255,255,.08)}
+/* 현재 페이지 표시. 이 규칙이 없으면 class="active" 를 달아도 아무 일이 없다 —
+   실제로 멤버십 페이지가 그랬다. */
+.nav-links a.active{color:var(--fg-1);background:rgba(0,0,0,.07);font-weight:600}
+:root[data-theme="dark"] .nav-links a.active{background:rgba(255,255,255,.10)}
 .nav-spacer{flex:1}
 .icon-btn{width:38px;height:38px;border-radius:var(--radius-sm);border:0;background:transparent;display:inline-flex;align-items:center;justify-content:center;cursor:pointer;color:var(--fg-2);transition:.15s}
 .icon-btn:hover{background:rgba(0,0,0,.06);color:var(--fg-1)}
@@ -85,6 +89,8 @@ body::before{content:"";position:fixed;inset:0;z-index:-1;pointer-events:none;
 .mobile-menu a{font:600 16px var(--font-sans);color:var(--fg-1);text-decoration:none;padding:13px 14px;border-radius:var(--radius-sm)}
 .mobile-menu a:hover{background:rgba(0,0,0,.06)}
 :root[data-theme="dark"] .mobile-menu a:hover{background:rgba(255,255,255,.08)}
+.mobile-menu a.active{background:rgba(0,0,0,.06)}
+:root[data-theme="dark"] .mobile-menu a.active{background:rgba(255,255,255,.08)}
 
 .crumb{font:500 13px var(--font-sans);color:var(--fg-3);padding-top:28px;margin-bottom:12px}
 .crumb a{color:var(--fg-3);text-decoration:none}.crumb a:hover{color:var(--fg-1)}
@@ -92,58 +98,6 @@ body::before{content:"";position:fixed;inset:0;z-index:-1;pointer-events:none;
 
 /* main */
 main{flex:1;padding:8px 0 64px}
-.head{max-width:560px;margin:0 auto 28px;text-align:center}
-.head .kick{font:700 12px var(--font-sans);letter-spacing:.12em;color:var(--fg-3);margin-bottom:10px}
-.head h1{margin:0;font-size:clamp(30px,4.4vw,42px);font-weight:800;letter-spacing:-.035em;line-height:1.05}
-.head p{margin:14px 0 0;font:400 16px/1.6 var(--font-sans);color:var(--fg-2);text-wrap:pretty}
-
-/* form card */
-.card{max-width:560px;margin:0 auto;padding:32px}
-.field{margin-bottom:18px}
-.field:last-of-type{margin-bottom:0}
-.field label{display:block;font:600 13px var(--font-sans);color:var(--fg-2);margin-bottom:7px}
-.field label .opt{color:var(--fg-3);font-weight:500}
-.field input,.field textarea{width:100%;border:1px solid var(--border-2);background:rgba(255,255,255,.5);
-  border-radius:var(--radius-md);padding:13px 15px;font:400 15px var(--font-sans);color:var(--fg-1);outline:none;transition:border-color .15s,box-shadow .15s}
-.field textarea{resize:vertical;min-height:130px;line-height:1.6}
-:root[data-theme="dark"] .field input,:root[data-theme="dark"] .field textarea{background:rgba(255,255,255,.06)}
-.field input::placeholder,.field textarea::placeholder{color:var(--fg-3)}
-.field input:focus,.field textarea:focus{border-color:var(--fg-1)}
-:root[data-theme="dark"] .field input:focus,:root[data-theme="dark"] .field textarea:focus{border-color:rgba(255,255,255,.5)}
-.field input.invalid,.field textarea.invalid{border-color:#e5383b}
-:root[data-theme="dark"] .field input.invalid,:root[data-theme="dark"] .field textarea.invalid{border-color:#ff6b6e}
-.field-err{display:none;margin:7px 0 0;font:600 12px/1.4 var(--font-sans);color:#c0282b}
-:root[data-theme="dark"] .field-err{color:#ff8a8c}
-
-/* category segmented */
-.seg{display:flex;gap:6px;flex-wrap:wrap}
-.seg button{font:600 13px var(--font-sans);color:var(--fg-2);background:rgba(0,0,0,.05);border:1px solid transparent;
-  padding:9px 15px;border-radius:var(--pill);cursor:pointer;transition:.15s;white-space:nowrap}
-.seg button:hover{color:var(--fg-1)}
-.seg button.active{background:#000;color:#fff}
-:root[data-theme="dark"] .seg button{background:rgba(255,255,255,.08)}
-:root[data-theme="dark"] .seg button.active{background:#fff;color:#000}
-
-.submit-row{margin-top:24px}
-.submit-row .btn-primary{width:100%}
-.form-note{margin:14px 0 0;font:400 12.5px/1.5 var(--font-sans);color:var(--fg-3);text-align:center}
-
-/* success */
-.sent{display:none;flex-direction:column;align-items:center;text-align:center;gap:8px;padding:20px 0}
-.sent.show{display:flex}
-.sent .chk{width:54px;height:54px;border-radius:50%;background:rgba(13,105,212,.1);color:var(--brand-blue);display:flex;align-items:center;justify-content:center;margin-bottom:8px}
-:root[data-theme="dark"] .sent .chk{background:rgba(95,168,255,.16);color:var(--brand-cyan)}
-.sent .chk svg{width:28px;height:28px}
-.sent h2{margin:0;font:700 21px var(--font-sans);letter-spacing:-.02em}
-.sent p{margin:0;font:400 15px/1.6 var(--font-sans);color:var(--fg-2);max-width:380px}
-
-/* direct email */
-.direct{max-width:560px;margin:18px auto 0;display:flex;gap:12px;flex-wrap:wrap}
-.direct a{flex:1;min-width:200px;display:flex;flex-direction:column;gap:3px;padding:16px 18px;text-decoration:none;color:var(--fg-1);transition:transform .14s}
-.direct a:hover{transform:translateY(-2px)}
-.direct .k{font:600 11px var(--font-sans);letter-spacing:.06em;text-transform:uppercase;color:var(--fg-3)}
-.direct .v{font:700 15px var(--font-sans);letter-spacing:-.01em}
-
 /* footer */
 .foot{padding:44px 0 28px}
 .foot-inner{border-radius:var(--radius-xl);padding:36px 32px 26px}
@@ -157,6 +111,8 @@ main{flex:1;padding:8px 0 64px}
 .disclaimer{margin-top:28px;padding:16px 18px;border-radius:var(--radius-md);background:rgba(0,0,0,.04);border:1px solid var(--border-2);font:400 13px/1.6 var(--font-sans);color:var(--fg-2)}
 :root[data-theme="dark"] .disclaimer{background:rgba(255,255,255,.04)}
 .disclaimer b{color:var(--fg-1)}
+.biz{display:flex;flex-wrap:wrap;gap:6px 18px;margin-top:18px;padding-top:16px;border-top:1px solid var(--border-2);font:500 12px/1.7 var(--font-sans);color:var(--fg-3)}
+.biz b{font-weight:600;color:var(--fg-2)}
 .foot-bottom{display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap;margin-top:22px;padding-top:18px;border-top:1px solid var(--border-2);font:500 12px var(--font-sans);color:var(--fg-3)}
 
 @media (min-width:768px){:root{--pad:24px}}
@@ -164,7 +120,6 @@ main{flex:1;padding:8px 0 64px}
 @media (min-width:1180px){:root{--pad:0px}.nav{width:100%}}
 @media (max-width:767px){
   .nav-links{display:none}.menu-btn{display:inline-flex}
-  .card{padding:24px}
   .foot-grid{grid-template-columns:repeat(3,1fr);gap:16px}.foot-brand{grid-column:1/-1}.foot-bottom{flex-direction:column;gap:8px}
 }
 </style>
@@ -223,7 +178,9 @@ main{flex:1;padding:8px 0 64px}
               en=mk+' '+dict[stripped];
             }
           }
-          if(en!=null) node.textContent=en;
+          // 영문 값에 태그가 들어 있으면 그대로 넣는다 — 문단 안의 종목 링크와
+          // 굵은 글씨가 영어 모드에서 사라지지 않게 한다.
+          if(en!=null){ if(/</.test(en)) node.innerHTML=en; else node.textContent=en; }
           else node.innerHTML=rec.html;
         } else {
           node.innerHTML=rec.html;
@@ -379,8 +336,7 @@ KOSi18n.register({
   "스크리너":"Screener",
   "업종별":"Industries",
   "리포트":"Reports",
-  "워치리스트":"Watchlist",
-  "모닝브리핑":"Morning Brief",
+  "워치리스트":"Watchlist","상호":"Company","대표":"CEO","사업자등록번호":"Business Reg. No.","통신판매업 신고":"Mail-order Reg. No.","주소":"Address","대표전화":"Phone","전자우편":"Email","요금제":"Pricing","멤버십":"Pricing","모닝브리핑":"Morning Brief",
   // footer headings
   "서비스":"Services",
   "회사":"Company",
@@ -448,10 +404,48 @@ KOSi18n.register({
   KOSi18n.register(D, fix);
 })();
 </script>
+
+<style>
+/* ── 모닝 브리핑 ─────────────────────────────────────────
+   글이 주인공인 화면이다. 읽는 폭을 좁게 잡고 행간을 넉넉히 둔다. */
+.mb{max-width:720px;margin:0 auto;padding:8px 0 56px}
+.mb-head{padding-bottom:26px;margin-bottom:30px;border-bottom:1px solid var(--hair)}
+/* 날짜는 붉은색이었는데(브릭 레드) 경고처럼 읽혀서 회색으로 바꿨다.
+   기사 머리의 날짜는 눈에 걸리는 자리가 아니라 조용히 있어야 하는 자리다. */
+.mb-date{font:600 13px var(--font-sans);color:var(--fg-3);letter-spacing:.02em;margin-bottom:10px}
+.mb-head h1{margin:0 0 16px;font:600 clamp(26px,4.4vw,38px)/1.22 var(--font-sans);color:var(--fg-1);letter-spacing:-.02em}
+.mb-lead{margin:0 0 14px;font:400 17.5px/1.62 var(--font-sans);color:var(--fg-1);text-wrap:pretty}
+.mb-meta{font:400 13px var(--font-sans);color:var(--fg-3)}
+/* 커버리지 섹션은 성격이 다르다 — 시황이 아니라 우리 리포트에서 나온 것이다.
+   글에서도 밝히지만(프롬프트 6-1항) 눈으로도 구분되게 왼쪽에 선을 두고
+   출처 표시를 얹는다. 이 섹션이 이 브리핑의 존재 이유다. */
+.mb-sec--cov{padding-left:18px;border-left:2px solid var(--brand-blue)}
+.mb-src{font:700 11.5px var(--font-sans);letter-spacing:.06em;color:var(--brand-blue);
+  text-transform:none;margin-bottom:8px}
+:root[data-theme="dark"] .mb-sec--cov{border-left-color:var(--brand-cyan)}
+:root[data-theme="dark"] .mb-src{color:var(--brand-cyan)}
+@media (max-width:640px){.mb-sec--cov{padding-left:14px}}
+
+.mb-sec{margin:0 0 34px}
+.mb-sec h2{margin:0 0 14px;font:600 15px var(--font-sans);color:var(--fg-2);
+  letter-spacing:.02em;padding-bottom:8px;border-bottom:1px solid var(--hair)}
+.mb-sec p{margin:0 0 15px;font:400 16px/1.78 var(--font-sans);color:var(--fg-1);text-wrap:pretty}
+.mb-sec p:last-child{margin-bottom:0}
+.mb-sec a{color:var(--fg-1);text-decoration:none;border-bottom:1px solid var(--hair);
+  transition:border-color .15s}
+.mb-sec a:hover{border-bottom-color:var(--fg-1)}
+.mb-sec b{font-weight:600}
+.mb-disc{margin:34px 0 0;padding-top:18px;border-top:1px solid var(--hair);
+  font:400 13px/1.7 var(--font-sans);color:var(--fg-3)}
+@media (max-width:640px){
+  .mb-sec p{font-size:15.5px}
+  .mb-lead{font-size:16.5px}
+}
+</style>
 </head>
 <body>
 
-<nav class="nav glass" data-screen-label="Contact · Nav">
+<nav class="nav glass" data-screen-label="Brief · Nav">
   <a class="brand" href="Home.html"><img class="brand-logo brand-logo--light" src="assets/kosai-wordmark-black.png" alt="KOSAI" width="148" height="24"><img class="brand-logo brand-logo--dark" src="assets/kosai-wordmark-white.png" alt="KOSAI" width="148" height="24"></a>
   <div class="nav-links">
     <a href="Home.html">홈</a>
@@ -459,7 +453,7 @@ KOSi18n.register({
     <a href="industry.html">업종별</a>
     <a href="Screener.html">스크리너</a>
     <a href="Watchlist.html">워치리스트</a>
-    <a href="brief.html">모닝브리핑</a>
+    <a href="brief.html" class="active">모닝브리핑</a>
   </div>
   <div class="nav-spacer"></div>
   <button class="icon-btn" id="themeBtn" aria-label="테마 전환" title="라이트/다크 전환">
@@ -475,60 +469,32 @@ KOSi18n.register({
   <a href="industry.html">업종별</a>
   <a href="Screener.html">스크리너</a>
   <a href="Watchlist.html">워치리스트</a>
-  <a href="brief.html">모닝브리핑</a>
+  <a href="brief.html" class="active">모닝브리핑</a>
 </div>
 
-<div class="wrap" data-screen-label="09 Contact">
-  <div class="crumb"><a href="Home.html">홈</a> / <b>문의하기</b></div>
+<div class="wrap" data-screen-label="10 Morning Brief">
+  <div class="crumb"><a href="Home.html">홈</a> / <b>모닝 브리핑</b></div>
+
+  <article class="mb">
+    <!-- BRIEF:BODY:START · 여기부터 END 까지는 scripts/render_brief.py 가 만든다.
+         손으로 고치면 다음 생성에서 덮인다. -->
+    <header class="mb-head">
+      <div class="mb-date">준비 중</div>
+      <h1>첫 모닝 브리핑을 준비하고 있습니다</h1>
+      <p class="mb-lead" data-i18n-block>국내 증시가 열리는 날 아침 7시 30분에, 간밤 미국 시장과 직전 국내 장, 그날 볼 일정을 한 편으로 정리해 올립니다. 휴장일에는 발행하지 않습니다.</p>
+      <div class="mb-meta">평일 07:30 발행 · 주말·공휴일 휴재</div>
+    </header>
+
+    <section class="mb-sec">
+      <h2>무엇이 담기나</h2>
+      <p data-i18n-block>미국 3대 지수와 반도체 지수가 어떻게 끝났고 무엇이 그걸 움직였는지, 직전 국내 장에서 지수와 종목의 체감이 어디서 갈렸는지, 그리고 다음 개장까지 환율·금리와 일정에서 볼 것을 씁니다. 숫자는 시세에서 가져오고, 이유는 확인된 것만 씁니다.</p>
+      <p data-i18n-block>마지막 문단은 코사이가 종목 리포트에 적어 둔 <b>확인 지점</b>에서 나옵니다. 석 달 전 리포트에서 "이걸 보라"고 꼽아 둔 것의 결과가 이번 주에 나오면, 그것을 그 자리에서 짚습니다. 시황은 어디서나 읽을 수 있지만 이건 코사이만 씁니다.</p>
+    </section>
+
+    <p class="mb-disc" data-i18n-block>본 자료는 공시(DART)·국내 시장 데이터와 공개된 해외 시장·일정 자료를 바탕으로 작성하는 정보 제공 자료이며 투자 권유가 아닙니다.</p>
+    <!-- BRIEF:BODY:END -->
+  </article>
 </div>
-
-<main>
-  <div class="wrap">
-    <div class="head">
-      <div class="kick">CONTACT</div>
-      <h1>문의하기</h1>
-      <p>서비스 의견·협업 제안·데이터 오류 제보를 보내주세요. 영업일 기준 2~3일 내에 답변드립니다.</p>
-    </div>
-
-    <form class="card glass" id="form" novalidate>
-      <div class="field">
-        <label>문의 유형</label>
-        <div class="seg" id="catSeg">
-          <button type="button" class="active" data-cat="일반 문의">일반 문의</button>
-          <button type="button" data-cat="데이터 오류 제보">데이터 오류 제보</button>
-          <button type="button" data-cat="협업·제휴">협업·제휴</button>
-        </div>
-      </div>
-      <div class="field">
-        <label for="f-name">이름 <span class="opt">(선택)</span></label>
-        <input id="f-name" type="text" data-i18n-ph placeholder="성함을 입력해 주세요" />
-      </div>
-      <div class="field">
-        <label for="f-email">이메일</label>
-        <input id="f-email" type="email" data-i18n-ph placeholder="답변받으실 이메일 주소" required />
-      </div>
-      <div class="field">
-        <label for="f-msg">문의 내용</label>
-        <textarea id="f-msg" data-i18n-ph placeholder="문의하실 내용을 자세히 적어주세요. 데이터 오류 제보의 경우 해당 페이지 주소를 함께 남겨주시면 빠르게 확인할 수 있습니다." required></textarea>
-      </div>
-      <input type="text" id="hp" name="hp" tabindex="-1" autocomplete="off" aria-hidden="true" style="position:absolute;left:-9999px;width:1px;height:1px;opacity:0">
-      <div class="submit-row">
-        <button type="submit" class="btn btn-primary">문의 보내기</button>
-        <p class="form-note">보내주신 정보는 문의 응대 목적으로만 사용되며, 답변 후 안전하게 폐기됩니다.</p>
-      </div>
-    </form>
-
-    <div class="card glass sent" id="sent">
-      <div class="chk"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg></div>
-      <h2>문의가 접수되었습니다</h2>
-      <p>소중한 의견 감사합니다. 입력해 주신 이메일로 영업일 기준 2~3일 내에 답변드리겠습니다.</p>
-    </div>
-
-    <div class="direct">
-      <a class="glass" href="mailto:hello@kosai.kr"><span class="k">직접 메일 보내기</span><span class="v">hello@kosai.kr</span></a>
-    </div>
-  </div>
-</main>
 
 <footer class="foot">
   <div class="wrap">
@@ -540,45 +506,24 @@ KOSi18n.register({
         <div class="foot-col"><h4>정책</h4><ul><li><a href="Terms.html">이용약관</a></li><li><a href="Privacy.html">개인정보처리방침</a></li></ul></div>
       </div>
       <div class="disclaimer"><b>면책 조항</b> · 본 사이트의 모든 AI 분석·리포트는 투자 참고용 정보이며, 투자 권유나 추천이 아닙니다. 투자 판단과 그 결과에 대한 책임은 전적으로 이용자 본인에게 있습니다. 데이터는 지연될 수 있으며 오류가 포함될 수 있습니다.</div>
+      <div class="biz">
+        <span>상호 <b>[상호]</b></span>
+        <span>대표 <b>[대표자명]</b></span>
+        <span>사업자등록번호 <b>[000-00-00000]</b></span>
+        <span>통신판매업 신고 <b>[제0000-0000-00000호]</b></span>
+        <span>주소 <b>[사업장 주소]</b></span>
+        <span>대표전화 <b>[00-0000-0000]</b></span>
+        <span>전자우편 <b>help@kosai.kr</b></span>
+      </div>
       <div class="foot-bottom"><span>© 2026 KOSAI — All rights reserved.</span></div>
     </div>
   </div>
 </footer>
 
 <script>
-const catSeg=document.getElementById('catSeg');
-catSeg.addEventListener('click',e=>{const b=e.target.closest('button');if(!b)return;[...catSeg.children].forEach(c=>c.classList.toggle('active',c===b));});
-function _t(m){ return window.KOSi18n ? window.KOSi18n.t(m) : m; }
-function fldErr(el,msg){ el.classList.add('invalid'); const f=el.closest('.field'); let e=f.querySelector('.field-err'); if(!e){ e=document.createElement('div'); e.className='field-err'; f.appendChild(e); } e.textContent=msg; e.style.display='block'; }
-function fldClear(el){ el.classList.remove('invalid'); const e=el.closest('.field').querySelector('.field-err'); if(e) e.style.display='none'; }
-['f-name','f-email','f-msg'].forEach(id=>{ const el=document.getElementById(id); if(el) el.addEventListener('input',()=>fldClear(el)); });
-document.getElementById('form').addEventListener('submit',async e=>{
-  e.preventDefault();
-  const name=document.getElementById('f-name'), email=document.getElementById('f-email'), msg=document.getElementById('f-msg');
-  let bad=null;
-  const ev=email.value.trim();
-  if(!ev){ fldErr(email,_t('이메일을 입력해 주세요.')); bad=bad||email; }
-  else if(!/^[^@\s]+@[^@\s]+\.[^@\s]+$/.test(ev)){ fldErr(email,_t('올바른 이메일 형식이 아니에요.')); bad=bad||email; }
-  else fldClear(email);
-  const mv=msg.value.trim();
-  if(!mv){ fldErr(msg,_t('문의 내용을 입력해 주세요.')); bad=bad||msg; }
-  else if(mv.length<5){ fldErr(msg,_t('내용을 조금 더 자세히 입력해 주세요.')); bad=bad||msg; }
-  else fldClear(msg);
-  if(bad){ bad.focus(); return; }
-  const btn=document.querySelector('#form button[type="submit"]'); if(btn) btn.disabled=true;
-  const cat=(catSeg.querySelector('.active')||{}).dataset;
-  try{
-    if(!window.KOSsubmitForm) throw new Error('not-ready');
-    await window.KOSsubmitForm({ kind:'contact', name:name.value.trim(), email:ev,
-      category:(cat&&cat.cat)||'', message:msg.value.trim(), hp:(document.getElementById('hp')||{}).value||'' });
-    document.getElementById('form').style.display='none';
-    document.getElementById('sent').classList.add('show');
-    window.scrollTo({top:0,behavior:'smooth'});
-  }catch(err){
-    if(btn) btn.disabled=false;
-    fldErr(msg,_t('전송에 실패했어요. 잠시 후 다시 시도하거나 hello@kosai.kr로 보내주세요.'));
-  }
-});
+/* 헤더 동작 — 모바일 메뉴와 라이트/다크 전환.
+   문의하기 페이지 껍데기에서 이 페이지를 만들면서 같이 딸려 온 문의 폼
+   스크립트를 걷어낼 때 이 부분까지 지워져, 다크 모드가 먹지 않았다. */
 const menuBtn=document.getElementById('menuBtn'),mobileMenu=document.getElementById('mobileMenu');
 menuBtn.addEventListener('click',()=>mobileMenu.classList.toggle('open'));
 mobileMenu.querySelectorAll('a').forEach(a=>a.addEventListener('click',()=>mobileMenu.classList.remove('open')));
@@ -590,23 +535,24 @@ let saved='dark';try{saved=localStorage.getItem('kos-theme')||'dark'}catch(e){}
 applyTheme(saved);
 themeBtn.addEventListener('click',()=>applyTheme(root.getAttribute('data-theme')==='dark'?'light':'dark'));
 
+/* 브리핑 본문 영문. 문단은 data-i18n-block 이라 통째로 갈아끼워지므로,
+   종목 링크가 영어 모드에서 사라지지 않도록 값 안에 태그를 그대로 둔다.
+   사전의 키는 화면에 보이는 한국어를 공백 정규화한 것이다(engine 의 norm).
+   그래서 키에는 태그가 없고 &amp; 같은 엔티티는 풀린 상태여야 한다. */
+/* BRIEF:I18N:START · scripts/render_brief.py 가 만든다 */
 if(window.KOSi18n) KOSi18n.register({
-  "문의하기":"Contact",
-  "서비스 의견·협업 제안·데이터 오류 제보를 보내주세요. 영업일 기준 2~3일 내에 답변드립니다.":"Send service feedback, partnership proposals, or data error reports. We respond within 2–3 business days.",
-  "문의 유형":"Inquiry type","일반 문의":"General","데이터 오류 제보":"Data error report","협업·제휴":"Partnership",
-  "이름":"Name","이메일":"Email","문의 내용":"Message","문의 보내기":"Send inquiry",
-  "이름을 입력해 주세요.":"Please enter your name.","이메일을 입력해 주세요.":"Please enter your email.","올바른 이메일 형식이 아니에요.":"That doesn't look like a valid email.","문의 내용을 입력해 주세요.":"Please enter your message.",
-  "전송에 실패했어요. 잠시 후 다시 시도하거나 hello@kosai.kr로 보내주세요.":"Couldn't send. Please try again later or email hello@kosai.kr.",
-  "내용을 조금 더 자세히 입력해 주세요.":"Please add a bit more detail.","(선택)":"(optional)","직접 메일 보내기":"Email us directly",
-  "성함을 입력해 주세요":"Your full name",
-  "답변받으실 이메일 주소":"Email address for our reply",
-  "문의하실 내용을 자세히 적어주세요. 데이터 오류 제보의 경우 해당 페이지 주소를 함께 남겨주시면 빠르게 확인할 수 있습니다.":"Tell us in detail. For data error reports, include the URL of the page so we can investigate quickly.",
-  "보내주신 정보는 문의 응대 목적으로만 사용되며, 답변 후 안전하게 폐기됩니다.":"Your information is used only to handle your inquiry, and is safely discarded once we've replied.",
-  "문의가 접수되었습니다":"Your inquiry has been received",
-  "소중한 의견 감사합니다. 입력해 주신 이메일로 영업일 기준 2~3일 내에 답변드리겠습니다.":"Thank you for reaching out. We'll reply to the email you provided within 2–3 business days."
+  "모닝 브리핑":"Morning Brief",
+  "준비 중":"Coming soon",
+  "첫 모닝 브리핑을 준비하고 있습니다":"Our first morning brief is on the way",
+  "국내 증시가 열리는 날 아침 7시 30분에, 간밤 미국 시장과 직전 국내 장, 그날 볼 일정을 한 편으로 정리해 올립니다. 휴장일에는 발행하지 않습니다.":"On every Korean trading day at 7:30 a.m. KST, one piece covering the U.S. session, the previous Korean session, and what the calendar holds. Nothing is published when the market is closed.",
+  "평일 07:30 발행 · 주말·공휴일 휴재":"Published 07:30 KST on trading days · No edition on weekends or holidays",
+  "무엇이 담기나":"What goes in it",
+  "미국 3대 지수와 반도체 지수가 어떻게 끝났고 무엇이 그걸 움직였는지, 직전 국내 장에서 지수와 종목의 체감이 어디서 갈렸는지, 그리고 다음 개장까지 환율·금리와 일정에서 볼 것을 씁니다. 숫자는 시세에서 가져오고, 이유는 확인된 것만 씁니다.":"Where the three U.S. indexes and the semiconductor index closed and what moved them; where the index and the median stock parted ways in the last Korean session; and what to watch in FX, rates and the calendar before the next open. Numbers come from market data; reasons only when they are confirmed.",
+  "마지막 문단은 코사이가 종목 리포트에 적어 둔 확인 지점에서 나옵니다. 석 달 전 리포트에서 \"이걸 보라\"고 꼽아 둔 것의 결과가 이번 주에 나오면, 그것을 그 자리에서 짚습니다. 시황은 어디서나 읽을 수 있지만 이건 코사이만 씁니다.":"The closing section comes from the <b>checkpoints</b> KOSAI records in its company reports. When something a report flagged three months ago as \u201cwatch this\u201d actually lands, that is where we say so. Market wraps are everywhere; this part only exists here.",
+  "본 자료는 공시(DART)·국내 시장 데이터와 공개된 해외 시장·일정 자료를 바탕으로 작성하는 정보 제공 자료이며 투자 권유가 아닙니다.":"This material is compiled from regulatory filings (DART), Korean market data and publicly available overseas market and calendar sources, for information purposes only. It is not investment advice."
 });
+/* BRIEF:I18N:END */
 </script>
 <script type="module" src="auth-state.js"></script>
-<script type="module" src="submit-form.js"></script>
 </body>
 </html>

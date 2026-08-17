@@ -440,6 +440,9 @@ def _facts_text(facts):
         L.append(f"\n[정기보고서 접수 · 커버리지 종목{more}]")
         for f in fils[:12]:
             L.append(f"  {f['name']}({f['ticker']}) {f['report']} · 시총 {f.get('mcap', 0):.1f}조")
+            if f.get("reportDate"):
+                L.append(f"     └ 리포트 작성일 {f['reportDate']}"
+                         + (f" · 제목 「{f['reportTitle']}」" if f.get("reportTitle") else ""))
             for c in (f.get("checkpoints") or [])[:2]:
                 L.append(f"     └ 확인 지점 [{c.get('when', '')}] {c.get('what', '')}")
             for k, lbl in (("bull", "강세"), ("bear", "약세")):
@@ -495,6 +498,18 @@ RULES = """규칙
    시장 전망·의견이 필요하면 출처를 밝힌 인용으로만 쓴다.
 6. 확인 지점(checkpoints)은 유료 리포트 내용이다. 원문을 그대로 옮기지 말고 한 구절로
    요약하고, 종목 링크로 리포트를 가리킨다.
+
+6-1. **coverage 섹션은 그 내용이 어디서 왔는지 독자에게 밝힌다.** 이 섹션이 이 브리핑의
+   존재 이유다 — 시황은 어디서나 읽을 수 있지만 "코사이가 리포트에 적어 둔 확인 지점의
+   결과가 오늘 나왔다"는 우리만 쓴다. 그런데 그렇게 적지 않으면 독자는 그냥 종목 소식으로
+   읽고 지나간다.
+   · 섹션의 첫 문장에서 출처를 밝힌다. 사실 블록의 '리포트 작성일'을 써서
+     "5월 리포트에서 …를 확인 지점으로 꼽아 뒀다" 처럼 **언제 적어 둔 것인지**를 함께 쓴다.
+     시점을 밝히는 것이 핵심이다 — 오늘 급하게 쓴 말이 아니라는 뜻이기 때문이다.
+   · 쓸 수 있는 표현: "리포트에 적어 둔 확인 지점", "리포트에서 볼 것으로 꼽아 둔",
+     "○월 리포트가 확인 지점으로 둔". 그냥 "확인 지점"만 쓰지 마라 — 누가 정한
+     확인 지점인지가 빠진다.
+   · 종목마다 링크를 달아 리포트로 보낸다. 링크가 곧 "여기 근거가 있다"는 표시다.
 7. 종목을 처음 언급할 때는 링크를 단다. 형식은 [현대차](005380) — 대괄호에 표시할 말,
    소괄호에 여섯 자리 종목코드. 코드는 사실 블록에 적힌 것만 쓴다. 강조는 **굵게**.
    그 밖의 마크업이나 HTML 태그는 쓰지 마라.
@@ -864,6 +879,19 @@ def validate(brief, strict_coverage=True, facts=None):
                            f"{', '.join(sorted(en_codes - ko_codes))}")
 
     bad += check_headings(brief, facts)
+
+    # coverage 섹션은 출처를 밝혀야 한다. 이게 이 브리핑의 존재 이유인데,
+    # 어디서 온 얘기인지 안 적으면 독자는 그냥 종목 소식으로 읽고 지나간다.
+    for s_ in brief.get("sections") or []:
+        if s_.get("id") != "coverage":
+            continue
+        body = " ".join((p.get("ko") or "") for p in (s_.get("paragraphs") or []))
+        if "리포트" not in body:
+            bad.append("coverage 섹션에 '리포트'라는 말이 없다 — 확인 지점이 코사이 "
+                       "리포트에서 나온 것임을 독자가 알 수 없다. 언제 적어 둔 것인지와 "
+                       "함께 밝혀라")
+        if not LINK.search(body):
+            bad.append("coverage 섹션에 종목 링크가 없다 — 링크가 근거를 가리키는 표시다")
 
     n, ratio = measure(brief)
     if n < LEN_MIN or n > LEN_MAX:

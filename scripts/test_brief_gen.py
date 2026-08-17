@@ -58,6 +58,14 @@ def para(n):
     return {"ko": (KO * reps).strip(), "en": (EN * reps).strip()}
 
 
+def cov_para(n):
+    """커버리지 문단. 출처(리포트)와 종목 링크가 있어야 검증을 통과한다."""
+    p = para(n)
+    p["ko"] = "5월 리포트에서 확인 지점으로 꼽아 둔 것이 이번 주에 나온다. [현대차](005380). " + p["ko"]
+    p["en"] = "A checkpoint the May report flagged lands this week. [Hyundai](005380). " + p["en"]
+    return p
+
+
 def sample(us=700, dom=650, ahead=700, cov=550):
     return {
         "title": {"ko": "휴장 하루, 미국은 두 번 열린다", "en": "One holiday, two US sessions"},
@@ -76,7 +84,7 @@ def sample(us=700, dom=650, ahead=700, cov=550):
              "paragraphs": [para(ahead)]},
             {"id": "coverage", "heading": {"ko": "현대차그룹 세 곳",
                                            "en": "Three Hyundai names"},
-             "paragraphs": [para(cov)]},
+             "paragraphs": [cov_para(cov)]},
         ],
     }
 
@@ -296,6 +304,16 @@ b["lead"]["ko"] = "간밤 뉴욕은 세 지수가 함께 내렸다. " + b["lead"
 ok("리드에 새도 잡는다", has(G.check_headings(b, MON), "lead.ko"))
 ok("본문 문단은 막지 않는다(사실 블록이 경고한다)",
    not has(G.check_headings(good, MON), "us.p0"))
+print("\n⑦-7 커버리지 출처 표시 — 이 섹션이 브리핑의 존재 이유다")
+b = copy.deepcopy(base)
+b["sections"][3]["paragraphs"][0]["ko"] = para(550)["ko"] + " [현대차](005380)"
+ok("'리포트' 언급이 없으면 거부", has(G.validate(b), "'리포트'라는 말이 없다"), str(G.validate(b)))
+b = copy.deepcopy(base)
+b["sections"][3]["paragraphs"][0]["ko"] = "5월 리포트가 확인 지점으로 뒀다. " + para(520)["ko"]
+ok("종목 링크가 없으면 거부", has(G.validate(b), "종목 링크가 없다"))
+reasons = [r for r in G.validate(base) if "coverage" in r]
+ok("둘 다 있으면 통과", not reasons, str(reasons))
+
 print("\n⑧ 응답 파싱")
 body = json.dumps(sample(), ensure_ascii=False)
 check("마커 안쪽만 읽는다",
