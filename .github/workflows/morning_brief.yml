@@ -15,13 +15,15 @@ name: 📰 모닝 브리핑
 #    있어야 하고, 실제 작업은 아래 BRIEF_BRANCH 를 체크아웃해서 한다.
 #    지금 발행 대상은 스테이징(kosai.kr/staging/brief.html)이다. 실사이트로
 #    옮기려면 PUBLISH_TO 를 바꾸면 된다 — 그건 품질을 확인한 다음의 일이다.
+# 생성과 발행을 나눈다. 06:00 에 만들어 두고 07:20 에만 올린다 — 앞의 시도가
+# 성공하면 브리핑이 06:05 에 올라가 버리는데, 07:30 에 나가야 하는 글이다.
+# 만드는 것은 여러 번 시도해도 되지만 올리는 것은 정해진 시각에 한 번이다.
 on:
   schedule:
-    # UTC 다. 21:00 / 21:40 / 22:15 UTC = 다음 날 06:00 / 06:40 / 07:15 KST.
-    # UTC 일~목이 KST 월~금이다. 세 시각이 모두 같은 UTC 날짜에 들어간다.
-    - cron: '0 21 * * 0-4'
-    - cron: '40 21 * * 0-4'
-    - cron: '15 22 * * 0-4'
+    # UTC 다. UTC 일~목이 KST 월~금이고, 세 시각이 모두 같은 UTC 날짜에 든다.
+    - cron: '0 21 * * 0-4'      # KST 06:00 — 만들기만
+    - cron: '40 21 * * 0-4'     # KST 06:40 — 아직 없으면 만들기
+    - cron: '20 22 * * 0-4'     # KST 07:20 — 없으면 만들고, 그리고 올린다
   workflow_dispatch:
     inputs:
       force:
@@ -191,8 +193,13 @@ jobs:
 
       # ⑩ 스테이징에 올린다. 실사이트(루트 brief.html)는 건드리지 않는다 —
       #    publish_staging.py 는 /staging/ 아래에만 쓰고 noindex 를 붙인다.
-      - name: ⑩ 스테이징 반영
-        if: steps.gate.outputs.open == 'true' || inputs.allow_closed == true
+      #
+      #    07:20 시도에서만 올린다. 06:00 · 06:40 은 만들어 브랜치에 넣어 두는
+      #    데까지다. 수동 실행은 언제 눌러도 올린다.
+      - name: ⑩ 스테이징 반영 (07:20 시도와 수동 실행만)
+        if: |
+          (steps.gate.outputs.open == 'true' || inputs.allow_closed == true) &&
+          (github.event_name != 'schedule' || github.event.schedule == '20 22 * * 0-4')
         run: |
           python scripts/publish_staging.py "$GITHUB_WORKSPACE" _main/staging
           cd _main
