@@ -23,4 +23,4 @@ jobs:
           NAVER_CLIENT_SECRET: ${{ secrets.NAVER_CLIENT_SECRET }}
           ECOS_API_KEY: ${{ secrets.ECOS_API_KEY }}
           FRED_API_KEY: ${{ secrets.FRED_API_KEY }}
-        run: python scripts/probe_sources.py
+        run: python scripts/probe_sources.py --raw
