@@ -1,0 +1,42 @@
+name: 📰 모닝 브리핑 드라이런 (수동 · 커밋 없음)
+
+# 브리핑이 쓸 사실을 실제로 모아 본다. 아무것도 커밋하지 않고 로그만 남긴다.
+# 각 수집기를 따로 돌리므로, 하나가 죽어도 나머지 출력은 볼 수 있다.
+on:
+  workflow_dispatch:
+
+jobs:
+  dryrun:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+          cache: 'pip'
+      - run: pip install -r requirements.txt
+
+      - name: ① 시세 · 개장 여부 (yfinance + holidays)
+        if: always()
+        run: python scripts/market_data.py
+
+      - name: ② 투자자별 순매수 (네이버 금융)
+        if: always()
+        run: python scripts/flows.py
+
+      - name: ③ 일정 (연준 + 수동 등록)
+        if: always()
+        run: python scripts/calendar_data.py --days 21
+
+      - name: ④ 뉴스 (구글 뉴스 RSS)
+        if: always()
+        env:
+          NAVER_CLIENT_ID: ${{ secrets.NAVER_CLIENT_ID }}
+          NAVER_CLIENT_SECRET: ${{ secrets.NAVER_CLIENT_SECRET }}
+        run: python scripts/news_data.py --tickers 005930,000660,005380
+
+      - name: ⑤ 국내 사실 (우리 데이터 · 개장 여부 포함)
+        if: always()
+        env:
+          DART_API_KEY: ${{ secrets.DART_API_KEY }}
+        run: python scripts/brief_data.py
