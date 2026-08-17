@@ -207,71 +207,40 @@ def sector_moves(stocks, cov, base=0.0):
 # ────────────────────────────── 개장·휴장 ──────────────────────────────
 
 def market_calendar(today=None):
-    """오늘 국내 증시가 열리는지, 직전·다음 거래일이 언제인지 판정한다.
+    """오늘 국내 증시가 열리는지, 직전·다음 거래일이 언제인지.
 
-    이게 왜 따로 있나. 8월 15일 광복절이 토요일이라 17일 월요일이
-    대체공휴일이었는데 그걸 확인하지 않고 '오늘 장을 준비하는 글'을 썼다.
-    주말만 피하면 되는 게 아니다 — 대체공휴일, 임시공휴일, 연말 폐장은
-    달력으로 계산할 수 없고 거래소에 물어봐야 한다.
+    판정은 market_data.open_today 가 한다 — holidays 패키지로 대체공휴일까지
+    본다. 처음에는 pykrx 로 짰는데, KRX 가 GitHub Actions 아이피를 403 으로
+    막아서 못 쓴다(그래서 pykrx 의 지수·수급도 전부 죽었다).
 
-    다른 값들과 달리 이건 없으면 그냥 넘어가면 안 된다. 개장 여부를
-    모르는 채로 쓴 글은 첫 문장부터 틀린다. 그래서 실패를 감추지 않고
-    open=None 으로 돌려주고, 생성 쪽에서 발행을 멈추게 한다.
-
-    반환 예:
-      {"today": "20260817", "open": False, "prev": "20260814",
-       "next": "20260818", "sessionsMissed": 1}
+    이건 없으면 넘어가면 안 되는 값이다. 8월 15일 광복절이 토요일이라 17일
+    월요일이 대체공휴일인데 그걸 확인하지 않고 '오늘 장을 준비하는 글'을 썼다.
+    판정 실패면 open=None 으로 돌려주고 생성 쪽에서 발행을 멈춘다.
     """
-    today = today or datetime.datetime.now(KST).date()
     if isinstance(today, str):
         today = datetime.datetime.strptime(today, "%Y%m%d").date()
-
+    today = today or datetime.datetime.now(KST).date()
     try:
-        from pykrx import stock
-    except ImportError:
-        log("· pykrx 없음 — 개장 여부를 판정할 수 없다")
-        return {"today": today.strftime("%Y%m%d"), "open": None,
-                "prev": None, "next": None, "reason": "pykrx 없음"}
+        sys.path.insert(0, str(Path(__file__).resolve().parent))
+        from market_data import open_today as _open
+    except Exception as e:
+        log(f"· market_data 를 불러올 수 없다: {e}")
+        return {"today": today.strftime("%Y%m%d"), "open": None, "prev": None, "next": None}
 
-    def bdays(year, month):
-        try:
-            return {d.date() if hasattr(d, "date") else d
-                    for d in stock.get_previous_business_days(year=year, month=month)}
-        except Exception as e:
-            log(f"· 영업일 조회 실패({year}-{month:02d}): {e}")
-            return set()
+    is_open, around = _open(today)
+    if is_open is None:
+        return {"today": today.strftime("%Y%m%d"), "open": None, "prev": None, "next": None}
 
-    # 이번 달만 보면 월초·월말에 직전/다음 거래일을 못 찾는다. 앞뒤 달을 함께 본다.
-    days = set()
-    for delta in (-1, 0, 1):
-        y, m = today.year, today.month + delta
-        if m < 1:
-            y, m = y - 1, 12
-        elif m > 12:
-            y, m = y + 1, 1
-        days |= bdays(y, m)
-
-    if not days:
-        return {"today": today.strftime("%Y%m%d"), "open": None,
-                "prev": None, "next": None, "reason": "영업일 조회 실패"}
-
-    past = sorted(d for d in days if d < today)
-    future = sorted(d for d in days if d > today)
-    prev_d = past[-1] if past else None
-    next_d = future[0] if future else None
-
-    # 다음 개장일이 직전 거래일로부터 며칠 떨어져 있나. 이 값이 2 이상이면
-    # 그 사이 미국 시장이 여러 번 열렸다는 뜻이고, 그게 그날 브리핑의 핵심이 된다.
-    missed = None
-    if prev_d and next_d:
-        missed = (next_d - prev_d).days - 1
-
+    prev = datetime.date.fromisoformat(around["prev"])
+    nxt = datetime.date.fromisoformat(around["next"])
     return {
         "today": today.strftime("%Y%m%d"),
-        "open": today in days,
-        "prev": prev_d.strftime("%Y%m%d") if prev_d else None,
-        "next": next_d.strftime("%Y%m%d") if next_d else None,
-        "gapDays": missed,
+        "open": is_open,
+        "prev": prev.strftime("%Y%m%d"),
+        "next": nxt.strftime("%Y%m%d"),
+        # 직전 거래일과 다음 개장일 사이가 이틀 이상 벌어지면 그 사이 미국 시장이
+        # 여러 번 열린다. 그게 그날 브리핑의 핵심이 된다.
+        "gapDays": (nxt - prev).days - 1,
     }
 
 
