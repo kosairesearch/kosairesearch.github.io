@@ -174,6 +174,25 @@ def stale_data(prev, data_date):
             " 맞춰라 (무시하려면 BRIEF_MAX_DATA_LAG)")
 
 
+def skip_reason(cal, allow_closed=False):
+    """오늘 브리핑을 낼 날인가. 내지 않을 이유가 있으면 그 문장을.
+
+    모닝 브리핑은 국내 장이 열리는 날에만 나간다. 주말·공휴일·대체공휴일에는
+    아무것도 발행하지 않는다.
+
+    처음 설계에는 '휴장일에는 다른 글이 나간다'고 적어 뒀는데 그게 틀렸다.
+    장 준비용 글이므로 준비할 장이 없는 날에는 쓸 이유가 없다. 8월 17일에
+    나간 휴장일 브리핑은 발행 전 품질을 보려고 만든 것이고, 그 목적으로만
+    allow_closed 를 남겨 둔다.
+    """
+    if allow_closed:
+        return None
+    if (cal or {}).get("open"):
+        return None
+    return (f"오늘({(cal or {}).get('today')})은 국내 증시 휴장 — 브리핑을 만들지 않는다"
+            f" (다음 개장 {(cal or {}).get('next')})")
+
+
 def gather(trade_date=None, days=14, skip_news=False):
     """브리핑이 쓸 사실 전부. (facts, 치명적 실패 이유) 를 돌려준다.
 
@@ -432,6 +451,9 @@ RULES = """규칙
 7. 종목을 처음 언급할 때는 링크를 단다. 형식은 [현대차](005380) — 대괄호에 표시할 말,
    소괄호에 여섯 자리 종목코드. 코드는 사실 블록에 적힌 것만 쓴다. 강조는 **굵게**.
    그 밖의 마크업이나 HTML 태그는 쓰지 마라.
+   **영문도 똑같은 형식으로 링크를 단다** — [SK Hynix](000660) 이다.
+   **SK Hynix**(000660) 은 링크가 아니고, 이렇게 쓰면 영어 화면에서 링크가 사라지고
+   괄호 안 숫자만 남는다. 한국어 문단에 링크가 있으면 대응하는 영문 문단에도 있어야 한다.
 8. 제목은 그날의 한 가지를 잡는다(12~30자). "코스피 상승, 외국인 순매수" 같은 나열이
    아니라 "휴장 하루, 미국은 두 번 열린다"처럼 관점이 있어야 한다.
 9. 리드는 두 문장. 오늘 무엇을 준비해야 하는지가 리드에서 끝나야 한다.
@@ -599,6 +621,41 @@ def _walk(brief):
                 yield f"{sid}.p{i}.{lang}", ((p or {}).get(lang) or "")
 
 
+BOLD_CODE = re.compile(r"\*\*([^*\n]{1,80})\*\*\s*\((\d{6})\)")
+
+
+def repair_links(brief):
+    """모델이 자주 내는 링크 형식 실수를 고친다.
+
+    2차 실행에서 한국어는 [SK하이닉스](000660) 으로 제대로 썼는데 영문만
+    **SK Hynix**(000660) 으로 냈다. 그 결과 영어 모드에서 종목 링크 13개가
+    전부 사라지고 괄호 안의 숫자만 남았다 — 사전 값에 태그가 없으면 엔진이
+    textContent 로 넣기 때문이다.
+
+    '굵게 쓴 이름 + 바로 뒤 여섯 자리 괄호'는 의도가 분명하므로 여기서
+    링크로 고친다. 이것 때문에 재시도를 돌리면 한 편당 350원이 또 나간다.
+    형식이 이보다 모호한 경우는 고치지 않고 validate 가 거부한다.
+    """
+    fixed = []
+
+    def fix(s):
+        out, n = BOLD_CODE.subn(r"[\1](\2)", s or "")
+        if n:
+            fixed.append(n)
+        return out
+
+    for key in ("title", "lead"):
+        for lang in ("ko", "en"):
+            if (brief.get(key) or {}).get(lang):
+                brief[key][lang] = fix(brief[key][lang])
+    for s in brief.get("sections") or []:
+        for p in s.get("paragraphs") or []:
+            for lang in ("ko", "en"):
+                if p.get(lang):
+                    p[lang] = fix(p[lang])
+    return sum(fixed)
+
+
 def normalize_links(brief, valid_tickers):
     """커버리지에 없는 코드나 형식이 틀린 링크는 평문으로 되돌린다.
 
@@ -684,6 +741,22 @@ def validate(brief, strict_coverage=True):
             if m:
                 bad.append(f"{path} 에 금지 표현({name}): …{m.group(0)}…")
 
+    # 종목 링크가 한국어에만 있으면 영어 모드에서 그 링크가 통째로 사라진다.
+    # 2차 실행에서 실제로 13개가 날아갔다. 화면을 영어로 바꿔 보지 않으면
+    # 모르는 종류라서 여기서 막는다.
+    for n_sec, s in enumerate(brief.get("sections") or []):
+        sid = s.get("id") or f"#{n_sec}"
+        for i, p in enumerate(s.get("paragraphs") or []):
+            ko_codes = {m.group(2) for m in LINK.finditer(p.get("ko") or "")}
+            en_codes = {m.group(2) for m in LINK.finditer(p.get("en") or "")}
+            if ko_codes and not en_codes:
+                bad.append(f"{sid}.p{i} 의 종목 링크 {len(ko_codes)}개가 영문에 없다 — "
+                           "영문도 [Name](005930) 형식으로 링크를 달아라 "
+                           "(**Name**(005930) 은 링크가 아니다)")
+            elif en_codes - ko_codes:
+                bad.append(f"{sid}.p{i} 영문에만 있는 종목 링크: "
+                           f"{', '.join(sorted(en_codes - ko_codes))}")
+
     n, ratio = measure(brief)
     if n < LEN_MIN or n > LEN_MAX:
         bad.append(f"분량 {n:,}자 — {LEN_MIN:,}~{LEN_MAX:,}자를 벗어났다 "
@@ -741,6 +814,8 @@ def main():
     ap.add_argument("--days", type=int, default=14, help="일정을 며칠 앞까지 볼지")
     ap.add_argument("--no-news", action="store_true", help="뉴스 수집 생략")
     ap.add_argument("--force", action="store_true", help="같은 날 파일이 있어도 다시 만든다")
+    ap.add_argument("--allow-closed", action="store_true",
+                    help="휴장일에도 만든다 (품질 확인용. 발행하는 글이 아니다)")
     ap.add_argument("--out", help="출력 폴더 (기본 data/briefs)")
     a = ap.parse_args()
 
@@ -758,6 +833,15 @@ def main():
     if a.facts_only:
         print(_facts_text(facts))
         return 0
+
+    skip = skip_reason(facts["domestic"].get("calendar"), a.allow_closed)
+    if skip:
+        # 실패가 아니라 '오늘은 낼 날이 아니다'다. 0 으로 끝내야 주말마다
+        # 붉은 X 가 뜨지 않는다 — 그러면 정작 봐야 할 실패와 구분이 안 된다.
+        log("· " + skip)
+        return 0
+    if a.allow_closed and not (facts["domestic"].get("calendar") or {}).get("open"):
+        log("⚠️ 휴장일인데 --allow-closed 로 만든다 — 발행용이 아니다")
 
     pub = facts["domestic"].get("publishDate")
     existing = out_dir / f"{pub}.json"
@@ -811,6 +895,9 @@ def main():
                 bail(text, [note])
                 return 3
             continue
+        n_fixed = repair_links(cand)
+        if n_fixed:
+            log(f"· **이름**(코드) 형식 {n_fixed}곳을 링크로 고쳤다")
         dropped = normalize_links(cand, tickers)
         if dropped:
             log("· 확인되지 않은 종목 링크를 평문으로 바꿨다: " + ", ".join(dropped[:8]))
