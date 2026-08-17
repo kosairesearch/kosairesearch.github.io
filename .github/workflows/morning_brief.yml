@@ -37,6 +37,25 @@ jobs:
           cache: 'pip'
       - run: pip install -r requirements.txt
 
+      # data/ 는 main 에서 매일 수집된다. 이 브랜치의 stocks.js 는 브랜치를
+      # 딴 날짜에 멈춰 있다 — 1차 실행에서 8월 4일 데이터로 8월 14일 장을
+      # 쓰는 일이 실제로 벌어졌다. 지수·수급은 밖에서 14일 값을 받아 오므로
+      # 한 문단에 다른 날 숫자가 섞였다.
+      #
+      # 그래서 생성 전에 main 의 데이터를 덮어쓴다. 커밋 단계는 data/briefs 와
+      # brief.html 만 add 하므로 이 파일들이 브랜치에 들어가지는 않는다.
+      - name: main 의 최신 시세·리포트 데이터 가져오기
+        run: |
+          git fetch --depth=1 origin main
+          git checkout FETCH_HEAD -- data/stocks.js data/reports-index.js
+          git checkout FETCH_HEAD -- data/reports_v2 data/reports 2>/dev/null || true
+          python - <<'PY'
+          import re
+          raw = open("data/stocks.js", encoding="utf-8").read()
+          m = re.search(r'"dataDate"\s*:\s*"?(\d+)', raw)
+          print(f"data/stocks.js dataDate = {m.group(1) if m else '못 찾음'}")
+          PY
+
       # 러너는 실행마다 새로 만들어지고 data/brief_cache 는 .gitignore 돼 있다.
       # 캐시를 여기서 실어 줘야 하루에 여러 번 돌 때 DART 를 다시 받지 않는다.
       - name: 공시 목록 캐시 복원
