@@ -98,58 +98,6 @@ body::before{content:"";position:fixed;inset:0;z-index:-1;pointer-events:none;
 
 /* main */
 main{flex:1;padding:8px 0 64px}
-.head{max-width:560px;margin:0 auto 28px;text-align:center}
-.head .kick{font:700 12px var(--font-sans);letter-spacing:.12em;color:var(--fg-3);margin-bottom:10px}
-.head h1{margin:0;font-size:clamp(30px,4.4vw,42px);font-weight:800;letter-spacing:-.035em;line-height:1.05}
-.head p{margin:14px 0 0;font:400 16px/1.6 var(--font-sans);color:var(--fg-2);text-wrap:pretty}
-
-/* form card */
-.card{max-width:560px;margin:0 auto;padding:32px}
-.field{margin-bottom:18px}
-.field:last-of-type{margin-bottom:0}
-.field label{display:block;font:600 13px var(--font-sans);color:var(--fg-2);margin-bottom:7px}
-.field label .opt{color:var(--fg-3);font-weight:500}
-.field input,.field textarea{width:100%;border:1px solid var(--border-2);background:rgba(255,255,255,.5);
-  border-radius:var(--radius-md);padding:13px 15px;font:400 15px var(--font-sans);color:var(--fg-1);outline:none;transition:border-color .15s,box-shadow .15s}
-.field textarea{resize:vertical;min-height:130px;line-height:1.6}
-:root[data-theme="dark"] .field input,:root[data-theme="dark"] .field textarea{background:rgba(255,255,255,.06)}
-.field input::placeholder,.field textarea::placeholder{color:var(--fg-3)}
-.field input:focus,.field textarea:focus{border-color:var(--fg-1)}
-:root[data-theme="dark"] .field input:focus,:root[data-theme="dark"] .field textarea:focus{border-color:rgba(255,255,255,.5)}
-.field input.invalid,.field textarea.invalid{border-color:#e5383b}
-:root[data-theme="dark"] .field input.invalid,:root[data-theme="dark"] .field textarea.invalid{border-color:#ff6b6e}
-.field-err{display:none;margin:7px 0 0;font:600 12px/1.4 var(--font-sans);color:#c0282b}
-:root[data-theme="dark"] .field-err{color:#ff8a8c}
-
-/* category segmented */
-.seg{display:flex;gap:6px;flex-wrap:wrap}
-.seg button{font:600 13px var(--font-sans);color:var(--fg-2);background:rgba(0,0,0,.05);border:1px solid transparent;
-  padding:9px 15px;border-radius:var(--pill);cursor:pointer;transition:.15s;white-space:nowrap}
-.seg button:hover{color:var(--fg-1)}
-.seg button.active{background:#000;color:#fff}
-:root[data-theme="dark"] .seg button{background:rgba(255,255,255,.08)}
-:root[data-theme="dark"] .seg button.active{background:#fff;color:#000}
-
-.submit-row{margin-top:24px}
-.submit-row .btn-primary{width:100%}
-.form-note{margin:14px 0 0;font:400 12.5px/1.5 var(--font-sans);color:var(--fg-3);text-align:center}
-
-/* success */
-.sent{display:none;flex-direction:column;align-items:center;text-align:center;gap:8px;padding:20px 0}
-.sent.show{display:flex}
-.sent .chk{width:54px;height:54px;border-radius:50%;background:rgba(13,105,212,.1);color:var(--brand-blue);display:flex;align-items:center;justify-content:center;margin-bottom:8px}
-:root[data-theme="dark"] .sent .chk{background:rgba(95,168,255,.16);color:var(--brand-cyan)}
-.sent .chk svg{width:28px;height:28px}
-.sent h2{margin:0;font:700 21px var(--font-sans);letter-spacing:-.02em}
-.sent p{margin:0;font:400 15px/1.6 var(--font-sans);color:var(--fg-2);max-width:380px}
-
-/* direct email */
-.direct{max-width:560px;margin:18px auto 0;display:flex;gap:12px;flex-wrap:wrap}
-.direct a{flex:1;min-width:200px;display:flex;flex-direction:column;gap:3px;padding:16px 18px;text-decoration:none;color:var(--fg-1);transition:transform .14s}
-.direct a:hover{transform:translateY(-2px)}
-.direct .k{font:600 11px var(--font-sans);letter-spacing:.06em;text-transform:uppercase;color:var(--fg-3)}
-.direct .v{font:700 15px var(--font-sans);letter-spacing:-.01em}
-
 /* footer */
 .foot{padding:44px 0 28px}
 .foot-inner{border-radius:var(--radius-xl);padding:36px 32px 26px}
@@ -172,7 +120,6 @@ main{flex:1;padding:8px 0 64px}
 @media (min-width:1180px){:root{--pad:0px}.nav{width:100%}}
 @media (max-width:767px){
   .nav-links{display:none}.menu-btn{display:inline-flex}
-  .card{padding:24px}
   .foot-grid{grid-template-columns:repeat(3,1fr);gap:16px}.foot-brand{grid-column:1/-1}.foot-bottom{flex-direction:column;gap:8px}
 }
 </style>
@@ -587,67 +534,6 @@ KOSi18n.register({
   </div>
 </footer>
 
-<script>
-const catSeg=document.getElementById('catSeg');
-catSeg.addEventListener('click',e=>{const b=e.target.closest('button');if(!b)return;[...catSeg.children].forEach(c=>c.classList.toggle('active',c===b));});
-function _t(m){ return window.KOSi18n ? window.KOSi18n.t(m) : m; }
-function fldErr(el,msg){ el.classList.add('invalid'); const f=el.closest('.field'); let e=f.querySelector('.field-err'); if(!e){ e=document.createElement('div'); e.className='field-err'; f.appendChild(e); } e.textContent=msg; e.style.display='block'; }
-function fldClear(el){ el.classList.remove('invalid'); const e=el.closest('.field').querySelector('.field-err'); if(e) e.style.display='none'; }
-['f-name','f-email','f-msg'].forEach(id=>{ const el=document.getElementById(id); if(el) el.addEventListener('input',()=>fldClear(el)); });
-document.getElementById('form').addEventListener('submit',async e=>{
-  e.preventDefault();
-  const name=document.getElementById('f-name'), email=document.getElementById('f-email'), msg=document.getElementById('f-msg');
-  let bad=null;
-  const ev=email.value.trim();
-  if(!ev){ fldErr(email,_t('이메일을 입력해 주세요.')); bad=bad||email; }
-  else if(!/^[^@\s]+@[^@\s]+\.[^@\s]+$/.test(ev)){ fldErr(email,_t('올바른 이메일 형식이 아니에요.')); bad=bad||email; }
-  else fldClear(email);
-  const mv=msg.value.trim();
-  if(!mv){ fldErr(msg,_t('문의 내용을 입력해 주세요.')); bad=bad||msg; }
-  else if(mv.length<5){ fldErr(msg,_t('내용을 조금 더 자세히 입력해 주세요.')); bad=bad||msg; }
-  else fldClear(msg);
-  if(bad){ bad.focus(); return; }
-  const btn=document.querySelector('#form button[type="submit"]'); if(btn) btn.disabled=true;
-  const cat=(catSeg.querySelector('.active')||{}).dataset;
-  try{
-    if(!window.KOSsubmitForm) throw new Error('not-ready');
-    await window.KOSsubmitForm({ kind:'contact', name:name.value.trim(), email:ev,
-      category:(cat&&cat.cat)||'', message:msg.value.trim(), hp:(document.getElementById('hp')||{}).value||'' });
-    document.getElementById('form').style.display='none';
-    document.getElementById('sent').classList.add('show');
-    window.scrollTo({top:0,behavior:'smooth'});
-  }catch(err){
-    if(btn) btn.disabled=false;
-    fldErr(msg,_t('전송에 실패했어요. 잠시 후 다시 시도하거나 hello@kosai.kr로 보내주세요.'));
-  }
-});
-const menuBtn=document.getElementById('menuBtn'),mobileMenu=document.getElementById('mobileMenu');
-menuBtn.addEventListener('click',()=>mobileMenu.classList.toggle('open'));
-mobileMenu.querySelectorAll('a').forEach(a=>a.addEventListener('click',()=>mobileMenu.classList.remove('open')));
-const root=document.documentElement,themeBtn=document.getElementById('themeBtn');
-const sunSVG='<circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"/>';
-const moonSVG='<path d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8z"/>';
-function applyTheme(t){root.setAttribute('data-theme',t);document.getElementById('themeIcon').innerHTML=t==='dark'?sunSVG:moonSVG;try{localStorage.setItem('kos-theme',t)}catch(e){}}
-let saved='dark';try{saved=localStorage.getItem('kos-theme')||'dark'}catch(e){}
-applyTheme(saved);
-themeBtn.addEventListener('click',()=>applyTheme(root.getAttribute('data-theme')==='dark'?'light':'dark'));
-
-if(window.KOSi18n) KOSi18n.register({
-  "문의하기":"Contact",
-  "서비스 의견·협업 제안·데이터 오류 제보를 보내주세요. 영업일 기준 2~3일 내에 답변드립니다.":"Send service feedback, partnership proposals, or data error reports. We respond within 2–3 business days.",
-  "문의 유형":"Inquiry type","일반 문의":"General","데이터 오류 제보":"Data error report","협업·제휴":"Partnership",
-  "이름":"Name","이메일":"Email","문의 내용":"Message","문의 보내기":"Send inquiry",
-  "이름을 입력해 주세요.":"Please enter your name.","이메일을 입력해 주세요.":"Please enter your email.","올바른 이메일 형식이 아니에요.":"That doesn't look like a valid email.","문의 내용을 입력해 주세요.":"Please enter your message.",
-  "전송에 실패했어요. 잠시 후 다시 시도하거나 hello@kosai.kr로 보내주세요.":"Couldn't send. Please try again later or email hello@kosai.kr.",
-  "내용을 조금 더 자세히 입력해 주세요.":"Please add a bit more detail.","(선택)":"(optional)","직접 메일 보내기":"Email us directly",
-  "성함을 입력해 주세요":"Your full name",
-  "답변받으실 이메일 주소":"Email address for our reply",
-  "문의하실 내용을 자세히 적어주세요. 데이터 오류 제보의 경우 해당 페이지 주소를 함께 남겨주시면 빠르게 확인할 수 있습니다.":"Tell us in detail. For data error reports, include the URL of the page so we can investigate quickly.",
-  "보내주신 정보는 문의 응대 목적으로만 사용되며, 답변 후 안전하게 폐기됩니다.":"Your information is used only to handle your inquiry, and is safely discarded once we've replied.",
-  "문의가 접수되었습니다":"Your inquiry has been received",
-  "소중한 의견 감사합니다. 입력해 주신 이메일로 영업일 기준 2~3일 내에 답변드리겠습니다.":"Thank you for reaching out. We'll reply to the email you provided within 2–3 business days."
-});
-</script>
 <script type="module" src="auth-state.js"></script>
 </body>
 </html>
