@@ -19,9 +19,10 @@
 import { auth, isConfigured } from "./firebase-config.js";
 import { onAuthStateChanged }
   from "https://www.gstatic.com/firebasejs/10.12.2/firebase-auth.js";
-import { PLANS } from "./payment-config.js";
+import { MIN_CHARGE, PLANS } from "./payment-config.js";
 
-const SUB_KEY = "kos-demo-sub", READ_KEY = "kos-demo-reads", PAY_KEY = "kos-demo-pays";
+const SUB_KEY = "kos-demo-sub", READ_KEY = "kos-demo-reads", PAY_KEY = "kos-demo-pays",
+      FB_KEY = "kos-demo-reasons";
 
 /* 유료 구간 키 — scripts/report_split.py 의 PAID_KEYS 와 같아야 한다.
    여기서만 다르면 미리보기가 실제와 다른 걸 잠그게 된다. */
@@ -70,13 +71,25 @@ if (isConfigured) {
   resolveReady(snapshot());
 }
 
+/* 오늘 본 종목 수. 가입 당일이면 가입 전에 본 몫은 빼고 센다 —
+   서버 readsOffset 과 같은 규칙. */
+function readsOffset(sub) {
+  return sub && sub.readsAtStartDay === kstDay() ? (sub.readsAtStart || 0) : 0;
+}
+function usedToday(sub) {
+  const r = read(READ_KEY, null);
+  const seen = (r && r.day === kstDay() && r.tickers) || [];
+  return Math.max(0, seen.length - readsOffset(sub));
+}
+
 /* 하루 한도 차감. 서버 consumeDailyRead 와 같은 규칙. */
 function consume(ticker, limit) {
   const day = kstDay();
+  const off = readsOffset(read(SUB_KEY, null));
   let r = read(READ_KEY, null);
   if (!r || r.day !== day) r = { day, tickers: [] };
   if (r.tickers.includes(ticker)) return true;    // 오늘 이미 본 종목
-  if (r.tickers.length >= limit) return false;
+  if (r.tickers.length - off >= limit) return false;
   r.tickers.push(ticker);
   write(READ_KEY, r);
   return true;
@@ -107,13 +120,23 @@ async function fetchPaid(ticker) {
 function subscribe(planId) {
   const p = PLANS[planId];
   if (!p) throw new Error("plan");
-  const now = Date.now(), prev = read(SUB_KEY, null);
+  const now = Date.now();
   write(SUB_KEY, {
     status: "active", plan: p.id,
     currentPeriodStart: now, currentPeriodEnd: addMonth(now),
     cancelAtPeriodEnd: false, pendingPlan: null,
-    card: { company: "모의 카드", number: "0000-00**-****-0000" },
-    startedAt: (prev && prev.startedAt) || now,
+    // 실제 서버는 카드사 이름을 모르면 비워 둔다(토스가 코드로만 준다).
+    card: { company: "", issuerCode: "61", number: "0000-00**-****-0000" },
+    // 새 구독이면 오늘이 시작일이다(서버 confirmBilling 과 같다).
+    startedAt: now,
+    // 이번 주기에 받은 돈. 환불이 이 합계를 기준으로 계산된다(서버 periodPayments).
+    periodPayments: [{ key: "demo-" + now, amount: p.price }],
+    // 오늘 이미 본 종목은 새 구독의 한도에서 빼 준다.
+    readsAtStart: (function () {
+      const r = read(READ_KEY, null);
+      return (r && r.day === kstDay() && r.tickers ? r.tickers.length : 0);
+    })(),
+    readsAtStartDay: kstDay(),
   });
   pay({ amount: p.price, description: `${p.name} 월 구독 (모의)`, kind: "subscription", status: "paid", plan: p.id });
   emit();
@@ -125,7 +148,7 @@ function updateCard() {
   const sub = read(SUB_KEY, null);
   if (!sub) throw new Error("이용 중인 구독이 없습니다.");
   const n = String(1000 + Math.floor(Math.random() * 9000));
-  sub.card = { company: "모의 카드", number: `0000-00**-****-${n}` };
+  sub.card = { company: "", issuerCode: "61", number: `0000-00**-****-${n}` };
   if (sub.status === "past_due") {
     const now = Date.now();
     sub.status = "active";
@@ -140,11 +163,15 @@ function updateCard() {
 
 /* 환불 금액 — 서버 refundQuote 와 같은 기준.
    미열람 + 7일 이내면 전액, 아니면 잔여 기간분에서 수수료 10%. */
+const paidThisPeriod = (sub) =>
+  ((sub && sub.periodPayments) || []).reduce((a, e) => a + (e.amount || 0), 0);
+
 function refundAmount(sub) {
   const total = Math.max(1, (sub.currentPeriodEnd - sub.currentPeriodStart) / 86400e3);
   const used = Math.min(total, Math.max(0, (Date.now() - sub.currentPeriodStart) / 86400e3));
   const opened = (read(READ_KEY, { tickers: [] }).tickers || []).length > 0;
-  const price = (PLANS[sub.plan] || {}).price || 0;
+  // 업그레이드 차액까지 포함한 '실제로 받은 돈'이 기준이다(서버와 같다).
+  const price = paidThisPeriod(sub) || (PLANS[sub.plan] || {}).price || 0;
   return (!opened && used <= 7) ? price
        : Math.floor(price * Math.max(0, (total - used) / total) * 0.9);
 }
@@ -155,7 +182,16 @@ async function call(name, arg) {
     const st = snapshot();
     if (!st.active) return { data: { active: false, used: 0, limit: 0 } };
     return { data: { active: true, plan: st.plan, limit: st.limit,
-                     used: (read(READ_KEY, { tickers: [] }).tickers || []).length } };
+                     used: usedToday(st.sub) } };
+  }
+  /* 해지·환불 사유. 미리보기에서는 메일을 보내지 않고 남겨만 둔다 —
+     KOSDemo.reasons() 로 무엇이 접수됐는지 확인할 수 있다. */
+  if (name === "submitForm") {
+    const list = read(FB_KEY, []);
+    list.unshift({ at: Date.now(), ...(arg || {}) });
+    write(FB_KEY, list);
+    console.log("[demo] 사유 접수", arg);
+    return { data: { ok: true, demo: true } };
   }
   /* 탈퇴 — 미리보기에서는 실제 계정을 지우지 않는다. 스테이징은 진짜 파이어베이스
      계정으로 로그인하므로, 여기서 지우면 실제 계정이 사라진다.
@@ -170,6 +206,7 @@ async function call(name, arg) {
   }
   const sub = read(SUB_KEY, null);
   if (!sub) throw new Error("이용 중인 구독이 없습니다.");
+  let charged = 0;                    // 업그레이드 차액 — 서버와 같이 돌려준다
   // 해지 예약과 플랜 변경 예약은 함께 둘 수 없다(서버 changePlan 설명 참고).
   if (name === "cancelSubscription") { sub.cancelAtPeriodEnd = true; sub.pendingPlan = null; }
   else if (name === "resumeSubscription") sub.cancelAtPeriodEnd = false;
@@ -182,7 +219,12 @@ async function call(name, arg) {
       const left = Math.max(0, (sub.currentPeriodEnd - Date.now()) / 86400e3);
       const diff = Math.floor((next.price - PLANS[sub.plan].price) * (left / total));
       sub.plan = next.id; sub.pendingPlan = null;
-      pay({ amount: diff, description: `${next.name} 업그레이드 차액 (모의)`, kind: "upgrade", status: "paid", plan: next.id });
+      // 토스는 카드로 100원 미만을 결제할 수 없다. 서버 charge() 와 같이
+      // 그 아래면 청구를 건너뛰고 플랜만 올린다.
+      charged = diff >= MIN_CHARGE ? diff : 0;
+      if (charged) sub.periodPayments = [...(sub.periodPayments || []),
+                                         { key: "demo-up-" + Date.now(), amount: charged }];
+      if (charged) pay({ amount: diff, description: `${next.name} 업그레이드 차액 (모의)`, kind: "upgrade", status: "paid", plan: next.id });
     } else {
       // 다운그레이드는 다음 결제일부터. 지금 쓰는 플랜을 다시 고르면 예약 취소.
       sub.pendingPlan = next.id === sub.plan ? null : next.id;
@@ -196,15 +238,16 @@ async function call(name, arg) {
   }
   write(SUB_KEY, sub);
   emit();
-  return { data: { ok: true } };
+  return { data: { ok: true, charged } };
 }
 
 window.__KOSDEMO = true;
 window.KOSDemo = {
   subscribe, updateCard, call,
   payments: () => read(PAY_KEY, []),
-  reset() { [SUB_KEY, READ_KEY, PAY_KEY].forEach((k) => localStorage.removeItem(k)); emit(); },
-  readsToday: () => (read(READ_KEY, { tickers: [] }).tickers || []).length,
+  reasons: () => read(FB_KEY, []),
+  reset() { [SUB_KEY, READ_KEY, PAY_KEY, FB_KEY].forEach((k) => localStorage.removeItem(k)); emit(); },
+  readsToday: () => usedToday(read(SUB_KEY, null)),
   /* 눌러 볼 수 없는 상태들 — 콘솔에서 만들어 화면을 확인한다.
      KOSDemo.simulate('past_due') / 'expired' */
   simulate(what) {
