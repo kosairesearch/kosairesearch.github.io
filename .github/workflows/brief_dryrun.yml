@@ -8,6 +8,10 @@ on:
 jobs:
   dryrun:
     runs-on: ubuntu-latest
+    # 상한이 없으면 한 단계가 매달릴 때 여섯 시간을 태운다. 브리핑은 07:30 에
+    # 나가야 하므로, 늦게 나가는 것보다 실패하는 게 낫다 — 실패는 알림이
+    # 오지만 늦음은 조용하다.
+    timeout-minutes: 15
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-python@v5
@@ -34,20 +38,24 @@ jobs:
 
       - name: ① 시세 · 개장 여부 (yfinance + holidays)
         if: always()
+        timeout-minutes: 3
         run: python scripts/market_data.py
 
       - name: ② 투자자별 순매수 (네이버 · HTML/JSON 후보 6개)
         if: always()
+        timeout-minutes: 3
         env:
           FLOWS_DUMP: '1'
         run: python scripts/flows.py
 
       - name: ③ 일정 (연준 + 수동 등록)
         if: always()
+        timeout-minutes: 2
         run: python scripts/calendar_data.py --days 21
 
       - name: ④ 뉴스 (구글 뉴스 RSS)
         if: always()
+        timeout-minutes: 4
         env:
           NAVER_CLIENT_ID: ${{ secrets.NAVER_CLIENT_ID }}
           NAVER_CLIENT_SECRET: ${{ secrets.NAVER_CLIENT_SECRET }}
@@ -55,6 +63,7 @@ jobs:
 
       - name: ⑤ 국내 사실 (우리 데이터 · 개장 여부 포함)
         if: always()
+        timeout-minutes: 6
         env:
           DART_API_KEY: ${{ secrets.DART_API_KEY }}
         run: python scripts/brief_data.py
