@@ -16,6 +16,18 @@ jobs:
           cache: 'pip'
       - run: pip install -r requirements.txt
 
+      # Actions 러너는 실행마다 새로 만들어진다. data/brief_cache 를
+      # .gitignore 에 넣어 뒀으니 저장소로도 안 남는다 — 즉 캐시가 실행 사이에
+      # 살아남지 않는다. 브리핑은 아침에 세 번 시도하는데 각각 다른 러너에서
+      # 도니, 캐시를 여기서 실어 줘야 실제로 값을 한다.
+      - name: 공시 목록 캐시 복원
+        uses: actions/cache@v4
+        with:
+          path: data/brief_cache
+          key: brief-cache-${{ github.run_id }}
+          restore-keys: |
+            brief-cache-
+
       - name: ⓞ 파서 회귀 테스트 (네트워크 불필요)
         if: always()
         run: python scripts/test_flows.py
