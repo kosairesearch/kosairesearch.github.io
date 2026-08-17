@@ -320,6 +320,17 @@ t4 = G._facts_text(f4)
 ok("판정 실패를 그대로 적는다", "개장 여부를 판정하지 못했다" in t4)
 ok("휴장이라고 적지 않는다", "국내 증시 휴장" not in t4, t4[:120])
 
+print("\n⑨-0 휴장일에는 브리핑을 만들지 않는다")
+OPEN = {"today": "20260818", "open": True, "prev": "20260814", "next": "20260819"}
+CLOSED = {"today": "20260817", "open": False, "prev": "20260814", "next": "20260818"}
+ok("개장일이면 만든다", G.skip_reason(OPEN) is None)
+r = G.skip_reason(CLOSED)
+ok("휴장일이면 건너뛴다", r and "만들지 않는다" in r, str(r))
+ok("다음 개장일을 알려 준다", r and "20260818" in r)
+ok("--allow-closed 면 휴장일에도 만든다", G.skip_reason(CLOSED, allow_closed=True) is None)
+ok("판정 실패(None)도 건너뛴다", G.skip_reason({"today": "x", "open": None}) is not None)
+ok("달력이 아예 없어도 건너뛴다", G.skip_reason(None) is not None)
+
 print("\n⑨-5 데이터가 묵었으면 발행하지 않는다 — 1차 실행에서 실제로 난 일")
 ok("같은 날이면 통과", G.stale_data("20260814", "20260814") is None)
 r = G.stale_data("20260814", "20260804")

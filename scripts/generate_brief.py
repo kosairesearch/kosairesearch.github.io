@@ -174,6 +174,25 @@ def stale_data(prev, data_date):
             " 맞춰라 (무시하려면 BRIEF_MAX_DATA_LAG)")
 
 
+def skip_reason(cal, allow_closed=False):
+    """오늘 브리핑을 낼 날인가. 내지 않을 이유가 있으면 그 문장을.
+
+    모닝 브리핑은 국내 장이 열리는 날에만 나간다. 주말·공휴일·대체공휴일에는
+    아무것도 발행하지 않는다.
+
+    처음 설계에는 '휴장일에는 다른 글이 나간다'고 적어 뒀는데 그게 틀렸다.
+    장 준비용 글이므로 준비할 장이 없는 날에는 쓸 이유가 없다. 8월 17일에
+    나간 휴장일 브리핑은 발행 전 품질을 보려고 만든 것이고, 그 목적으로만
+    allow_closed 를 남겨 둔다.
+    """
+    if allow_closed:
+        return None
+    if (cal or {}).get("open"):
+        return None
+    return (f"오늘({(cal or {}).get('today')})은 국내 증시 휴장 — 브리핑을 만들지 않는다"
+            f" (다음 개장 {(cal or {}).get('next')})")
+
+
 def gather(trade_date=None, days=14, skip_news=False):
     """브리핑이 쓸 사실 전부. (facts, 치명적 실패 이유) 를 돌려준다.
 
@@ -795,6 +814,8 @@ def main():
     ap.add_argument("--days", type=int, default=14, help="일정을 며칠 앞까지 볼지")
     ap.add_argument("--no-news", action="store_true", help="뉴스 수집 생략")
     ap.add_argument("--force", action="store_true", help="같은 날 파일이 있어도 다시 만든다")
+    ap.add_argument("--allow-closed", action="store_true",
+                    help="휴장일에도 만든다 (품질 확인용. 발행하는 글이 아니다)")
     ap.add_argument("--out", help="출력 폴더 (기본 data/briefs)")
     a = ap.parse_args()
 
@@ -812,6 +833,15 @@ def main():
     if a.facts_only:
         print(_facts_text(facts))
         return 0
+
+    skip = skip_reason(facts["domestic"].get("calendar"), a.allow_closed)
+    if skip:
+        # 실패가 아니라 '오늘은 낼 날이 아니다'다. 0 으로 끝내야 주말마다
+        # 붉은 X 가 뜨지 않는다 — 그러면 정작 봐야 할 실패와 구분이 안 된다.
+        log("· " + skip)
+        return 0
+    if a.allow_closed and not (facts["domestic"].get("calendar") or {}).get("open"):
+        log("⚠️ 휴장일인데 --allow-closed 로 만든다 — 발행용이 아니다")
 
     pub = facts["domestic"].get("publishDate")
     existing = out_dir / f"{pub}.json"
