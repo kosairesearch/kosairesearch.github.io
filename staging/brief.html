@@ -2,37 +2,25 @@
 <html lang="ko">
 <head>
 <script type="module" src="demo-backend.js"></script>
+<meta name="robots" content="noindex,nofollow" />
 <meta charset="utf-8" />
 <meta name="referrer" content="strict-origin-when-cross-origin" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
-<!-- 로그인 게이트: 로그인 확인 전 화면 숨김 -->
-<script>
-/* 로그인 확인 전 화면 숨김.
-   다만 지난번에 로그인돼 있었다면 숨기지 않는다 — 이 페이지만 인증이 끝날
-   때까지 기다리므로(다른 페이지는 모듈만 뜨면 연다) 그대로 두면 여기만 두 배
-   늦게 열려 깜빡인다. 틀렸더라도 잠시 뒤 로그인 안내가 덮으므로 손해가 없다. */
-try{ if(localStorage.getItem('kos-signed') !== '1') document.documentElement.classList.add('kos-locked'); }
-catch(e){ document.documentElement.classList.add('kos-locked'); }
-/* 인증이 끝내 안 오면 빈 화면으로 남는다 — 그건 안 뜨는 것보다 나쁘다. */
-setTimeout(function(){ document.documentElement.classList.remove('kos-locked'); }, 2500);
-</script>
-<style>html.kos-locked body{visibility:hidden}</style>
-<title>관심 종목 — KOSAI 워치리스트</title>
-<meta name="description" content="내 관심 종목 워치리스트." />
-<meta name="robots" content="noindex,nofollow" />
-<link rel="canonical" href="https://kosai.kr/Watchlist.html" />
+<title>모닝 브리핑 · KOSAI</title>
+<meta name="description" content="코스피·코스닥 전 종목을 대상으로 매일 아침 정리하는 시장 브리핑. 코사이가 커버하는 종목에 어제 무슨 일이 있었는지 전합니다." />
+<link rel="canonical" href="https://kosai.kr/brief.html" />
 <meta property="og:type" content="website" />
 <meta property="og:site_name" content="KOSAI" />
 <meta property="og:locale" content="ko_KR" />
-<meta property="og:title" content="관심 종목 — KOSAI" />
-<meta property="og:description" content="내 관심 종목 워치리스트." />
-<meta property="og:url" content="https://kosai.kr/Watchlist.html" />
+<meta property="og:title" content="모닝 브리핑 — KOSAI" />
+<meta property="og:description" content="코스피·코스닥 전 종목을 대상으로 매일 아침 정리하는 시장 브리핑." />
+<meta property="og:url" content="https://kosai.kr/brief.html" />
 <meta property="og:image" content="https://kosai.kr/assets/og-image.png?v=3" />
 <meta property="og:image:width" content="1200" />
 <meta property="og:image:height" content="630" />
 <meta name="twitter:card" content="summary_large_image" />
-<meta name="twitter:title" content="관심 종목 — KOSAI" />
-<meta name="twitter:description" content="내 관심 종목 워치리스트." />
+<meta name="twitter:title" content="모닝 브리핑 — KOSAI" />
+<meta name="twitter:description" content="코스피·코스닥 전 종목을 대상으로 매일 아침 정리하는 시장 브리핑." />
 <meta name="twitter:image" content="https://kosai.kr/assets/og-image.png?v=3" />
 <style>
 @font-face{font-family:"Pretendard";font-weight:400;font-style:normal;font-display:swap;src:url("../fonts/Pretendard-Regular.woff2") format("woff2"), url("../fonts/Pretendard-Regular.otf") format("opentype")}
@@ -44,7 +32,6 @@ setTimeout(function(){ document.documentElement.classList.remove('kos-locked'); 
   --brand-blue:rgb(13,105,212);--brand-cyan:rgb(95,197,255);
   --bg-1:rgb(242,243,250);--fg-1:rgb(0,0,0);--fg-2:rgba(0,0,0,0.7);--fg-3:rgba(0,0,0,0.5);
   --border-2:rgba(0,0,0,0.1);--hair:rgba(0,0,0,0.07);
-  --up:#e5383b;--down:rgb(13,105,212);--flat:rgba(0,0,0,0.45);
   --shadow-1:0 1px 0 rgba(0,0,0,.05),0 4px 4px rgba(0,0,0,.05);
   --shadow-2:0 1px 0 rgba(0,0,0,.05),0 4px 4px rgba(0,0,0,.05),0 10px 20px rgba(0,0,0,.08);
   --radius-sm:8px;--radius-md:12px;--radius-lg:16px;--radius-xl:20px;--pill:9999px;
@@ -54,12 +41,11 @@ setTimeout(function(){ document.documentElement.classList.remove('kos-locked'); 
 :root[data-theme="dark"]{
   --fg-1:rgb(255,255,255);--fg-2:rgba(255,255,255,0.72);--fg-3:rgba(255,255,255,0.5);
   --border-2:rgba(255,255,255,0.12);--hair:rgba(255,255,255,0.08);
-  --up:#ff5b5e;--down:#5fa8ff;--flat:rgba(255,255,255,0.5);
   --shadow-2:0 1px 0 rgba(0,0,0,.2),0 10px 24px rgba(0,0,0,.4);
 }
 *{box-sizing:border-box}
-html{scroll-behavior:smooth;overflow-x:clip;scrollbar-gutter:stable}
-body{margin:0;font-family:var(--font-sans);color:var(--fg-1);background:#eef1ff;-webkit-font-smoothing:antialiased;min-height:100vh;position:relative;font-variant-numeric:tabular-nums}
+html{scroll-behavior:smooth;scrollbar-gutter:stable}
+body{margin:0;font-family:var(--font-sans);color:var(--fg-1);background:#eef1ff;-webkit-font-smoothing:antialiased;min-height:100vh;position:relative;display:flex;flex-direction:column}
 body::after{content:"";position:fixed;inset:0;z-index:-2;
   background:radial-gradient(ellipse 50% 38% at 10% -2%, rgba(120,157,255,.50), transparent 62%),
     radial-gradient(ellipse 52% 42% at 96% 6%, rgba(151,71,255,.40), transparent 64%),
@@ -75,14 +61,12 @@ body::before{content:"";position:fixed;inset:0;z-index:-1;pointer-events:none;
   background-image:linear-gradient(to right, rgba(255,255,255,.06) 1px, transparent 1px),linear-gradient(to bottom, rgba(255,255,255,.06) 1px, transparent 1px);background-size:48px 48px}
 .glass{background:rgba(255,255,255,0.62);border:1px solid rgba(255,255,255,0.55);box-shadow:var(--shadow-2),inset 0 1px 0 rgba(255,255,255,0.6);-webkit-backdrop-filter:blur(20px);backdrop-filter:blur(20px);border-radius:var(--radius-xl)}
 :root[data-theme="dark"] .glass{background:rgba(28,30,42,0.62);border-color:rgba(255,255,255,0.10);box-shadow:var(--shadow-2),inset 0 1px 0 rgba(255,255,255,0.08)}
-.btn{display:inline-flex;align-items:center;justify-content:center;gap:6px;font:600 14px/1 var(--font-sans);border-radius:var(--radius-sm);cursor:pointer;border:0;transition:transform .12s,filter .15s,background .15s;white-space:nowrap;text-decoration:none}
+.btn{text-decoration:none;display:inline-flex;align-items:center;justify-content:center;gap:6px;font:600 15px/1 var(--font-sans);border-radius:var(--radius-sm);cursor:pointer;border:0;transition:transform .12s,filter .15s;white-space:nowrap}
 .btn:active{transform:scale(.98)}
-.btn-primary{background:#000;color:#fff;padding:11px 18px;box-shadow:var(--shadow-1)}
+.btn-primary{background:#000;color:#fff;padding:14px 20px;box-shadow:var(--shadow-1)}
+.btn-primary:hover{filter:brightness(1.1)}
 :root[data-theme="dark"] .btn-primary{background:#fff;color:#000}
-.btn-soft{background:rgba(0,0,0,.05);color:var(--fg-1);padding:11px 18px;border:1px solid var(--border-2)}
-.btn-soft:hover{background:rgba(0,0,0,.09)}
-:root[data-theme="dark"] .btn-soft{background:rgba(255,255,255,.08)}
-.wrap{max-width:1120px;margin:0 auto;padding-left:var(--pad);padding-right:var(--pad)}
+.wrap{max-width:1120px;margin:0 auto;padding-left:var(--pad);padding-right:var(--pad);width:100%}
 
 /* nav */
 .nav{position:sticky;top:12px;z-index:50;margin:12px auto 0;max-width:1120px;width:calc(100% - 2*var(--pad));display:flex;align-items:center;gap:16px;padding:10px 12px 10px 16px;border-radius:var(--radius-lg)}
@@ -92,6 +76,8 @@ body::before{content:"";position:fixed;inset:0;z-index:-1;pointer-events:none;
 .nav-links a{font:500 14px var(--font-sans);color:var(--fg-2);text-decoration:none;padding:8px 13px;border-radius:var(--radius-sm);transition:.15s;white-space:nowrap}
 .nav-links a:hover{color:var(--fg-1);background:rgba(0,0,0,.05)}
 :root[data-theme="dark"] .nav-links a:hover{background:rgba(255,255,255,.08)}
+/* 현재 페이지 표시. 이 규칙이 없으면 class="active" 를 달아도 아무 일이 없다 —
+   실제로 멤버십 페이지가 그랬다. */
 .nav-links a.active{color:var(--fg-1);background:rgba(0,0,0,.07);font-weight:600}
 :root[data-theme="dark"] .nav-links a.active{background:rgba(255,255,255,.10)}
 .nav-spacer{flex:1}
@@ -103,92 +89,19 @@ body::before{content:"";position:fixed;inset:0;z-index:-1;pointer-events:none;
 .mobile-menu{display:none;position:fixed;top:70px;left:var(--pad);right:var(--pad);z-index:49;padding:8px;border-radius:var(--radius-lg);flex-direction:column;gap:2px}
 .mobile-menu.open{display:flex}
 .mobile-menu a{font:600 16px var(--font-sans);color:var(--fg-1);text-decoration:none;padding:13px 14px;border-radius:var(--radius-sm)}
-.mobile-menu a:hover,.mobile-menu a.active{background:rgba(0,0,0,.06)}
-:root[data-theme="dark"] .mobile-menu a:hover,:root[data-theme="dark"] .mobile-menu a.active{background:rgba(255,255,255,.08)}
+.mobile-menu a:hover{background:rgba(0,0,0,.06)}
+:root[data-theme="dark"] .mobile-menu a:hover{background:rgba(255,255,255,.08)}
+.mobile-menu a.active{background:rgba(0,0,0,.06)}
+:root[data-theme="dark"] .mobile-menu a.active{background:rgba(255,255,255,.08)}
 
-/* page head */
-.page-head{padding:40px 0 8px;display:flex;align-items:flex-end;justify-content:space-between;gap:20px;flex-wrap:wrap}
-.crumb{font:500 13px var(--font-sans);color:var(--fg-3);margin-bottom:12px;padding-top:28px}
+.crumb{font:500 13px var(--font-sans);color:var(--fg-3);padding-top:28px;margin-bottom:12px}
 .crumb a{color:var(--fg-3);text-decoration:none}.crumb a:hover{color:var(--fg-1)}
 .crumb b{color:var(--fg-2);font-weight:600}
-.ph-kicker{font:700 12px var(--font-sans);letter-spacing:.1em;color:var(--fg-3);margin-bottom:8px}
-.page-head h1{margin:0;font-size:clamp(30px,4.4vw,42px);font-weight:800;letter-spacing:-.035em;line-height:1}
-.ph-count{margin-top:12px;font:500 15px var(--font-sans);color:var(--fg-3)}
-.ph-count b{color:var(--fg-1);font-weight:700}
 
-/* toolbar */
-.toolbar{display:flex;align-items:center;justify-content:space-between;gap:14px;flex-wrap:wrap;margin:26px 0 14px}
-.sortwrap{display:flex;align-items:center;gap:10px;flex-wrap:wrap}
-.sort-label{font:600 12px var(--font-sans);letter-spacing:.04em;color:var(--fg-3)}
-.seg{display:flex;gap:3px;background:rgba(0,0,0,.05);padding:4px;border-radius:var(--pill)}
-:root[data-theme="dark"] .seg{background:rgba(255,255,255,.07)}
-.seg button{font:600 13px var(--font-sans);color:var(--fg-2);background:transparent;border:0;padding:8px 14px;border-radius:var(--pill);cursor:pointer;transition:.15s;white-space:nowrap}
-.seg button:hover{color:var(--fg-1)}
-.seg button.active{background:#fff;color:var(--fg-1);box-shadow:var(--shadow-1)}
-:root[data-theme="dark"] .seg button.active{background:rgba(255,255,255,.18);color:#fff}
-.sort-select{display:none;font:600 13px var(--font-sans);color:var(--fg-1);background-color:rgba(0,0,0,.05);border:0;border-radius:var(--pill);padding:10px 38px 10px 16px;cursor:pointer;-webkit-appearance:none;appearance:none;outline:none;background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='12' viewBox='0 0 24 24' fill='none' stroke='%23888' stroke-width='2.5' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M6 9l6 6 6-6'/%3E%3C/svg%3E");background-repeat:no-repeat;background-position:right 14px center}
-:root[data-theme="dark"] .sort-select{background-color:rgba(255,255,255,.08);color:#fff}
-.sort-select option{color:#111}
-.edit-btn{display:inline-flex;align-items:center;gap:7px;font:600 13px var(--font-sans);color:var(--fg-1);background:rgba(0,0,0,.05);border:1px solid var(--border-2);padding:9px 15px;border-radius:var(--pill);cursor:pointer;transition:.15s}
-.edit-btn:hover{background:rgba(0,0,0,.09)}
-:root[data-theme="dark"] .edit-btn{background:rgba(255,255,255,.08)}
-.edit-btn.on{background:var(--fg-1);color:var(--bg-1);border-color:var(--fg-1)}
-.edit-btn svg{width:15px;height:15px}
-.tb-actions{display:flex;align-items:center;gap:8px}
-.clear-all{display:inline-flex;align-items:center;font:600 13px var(--font-sans);color:var(--down);background:transparent;border:1px solid var(--down);padding:9px 15px;border-radius:var(--pill);cursor:pointer;transition:.15s;white-space:nowrap}
-.clear-all:hover{background:var(--down);color:#fff}
-
-/* list */
-.wl{padding:6px 8px;overflow:hidden}
-.wl-head,.wl-row{display:grid;grid-template-columns:1.7fr 1.15fr 2.5fr 16px;gap:26px;align-items:center;padding:0 16px}
-.wl.edit .wl-head,.wl.edit .wl-row{grid-template-columns:28px 1.7fr 1.15fr 2.5fr 16px}
-.wl-head{padding-top:14px;padding-bottom:14px;font:600 12px var(--font-sans);color:var(--fg-3);letter-spacing:.03em;border-bottom:1px solid var(--border-2)}
-.wl-head .h-edit{display:none}
-.wl.edit .wl-head .h-edit{display:block}
-.wl-head .h-price{text-align:left}
-.wl-row{padding-top:16px;padding-bottom:16px;border-top:1px solid var(--hair);cursor:pointer;transition:background .12s;text-decoration:none;color:var(--fg-1)}
-.wl-row:first-of-type{border-top:0}
-.wl-row:hover{background:rgba(0,0,0,.03)}
-:root[data-theme="dark"] .wl-row:hover{background:rgba(255,255,255,.04)}
-.minus{display:none;width:26px;height:26px;border-radius:50%;border:1.5px solid var(--border-2);background:transparent;cursor:pointer;align-items:center;justify-content:center;color:var(--up);flex:0 0 auto}
-.minus svg{width:14px;height:14px}
-.minus:hover{background:var(--up);border-color:var(--up);color:#fff}
-.wl.edit .minus{display:flex}
-.c-nm{min-width:0}
-.c-nm .nm{font:700 17px var(--font-sans);letter-spacing:-.01em;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
-.c-nm .id{margin-top:3px;font:500 12px var(--font-sans);color:var(--fg-3);display:flex;gap:6px;flex-wrap:wrap}
-.c-nm .id .tk{color:var(--fg-2);font-weight:600}
-.c-nm .id .dot{opacity:.5}
-.c-price{text-align:left}
-.c-price .px{font:700 16px var(--font-sans)}
-.c-price .ch{font:600 13px var(--font-sans);margin-top:3px}
-.c-price .ch.up{color:var(--up)}.c-price .ch.down{color:var(--down)}.c-price .ch.flat{color:var(--flat)}
-.c-ai{font:400 13.5px/1.5 var(--font-sans);color:var(--fg-2);margin:0;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden}
-.c-chev{color:var(--fg-3);display:flex;justify-content:flex-end}
-.c-chev svg{width:16px;height:16px}
-
-/* pager */
-.pager{display:flex;justify-content:space-between;align-items:center;gap:12px;flex-wrap:wrap;margin-top:18px}
-.pager .pinfo{font:500 13px var(--font-sans);color:var(--fg-3)}
-.pager .pctl{display:flex;gap:4px;align-items:center;flex-wrap:wrap;justify-content:flex-end}
-.pager .pctl button{min-width:34px;height:34px;padding:0 10px;border:0;border-radius:8px;cursor:pointer;font:600 13px var(--font-sans);color:var(--fg-2);background:rgba(0,0,0,.05);transition:.12s}
-.pager .pctl button:hover:not(:disabled){color:var(--fg-1)}
-.pager .pctl button.active{background:#000;color:#fff}
-:root[data-theme="dark"] .pager .pctl button{background:rgba(255,255,255,.08)}
-:root[data-theme="dark"] .pager .pctl button.active{background:#fff;color:#000}
-.pager .pctl button:disabled{opacity:.4;cursor:default}
-/* empty */
-.empty{display:none;text-align:center;padding:64px 28px;margin-top:8px}
-.empty.show{display:block}
-.empty .ico{width:56px;height:56px;margin:0 auto 18px;border-radius:50%;background:rgba(0,0,0,.05);display:flex;align-items:center;justify-content:center;color:var(--fg-3)}
-:root[data-theme="dark"] .empty .ico{background:rgba(255,255,255,.08)}
-.empty .ico svg{width:26px;height:26px}
-.empty h2{margin:0 0 8px;font:700 22px var(--font-sans);letter-spacing:-.02em}
-.empty p{margin:0 auto 22px;max-width:420px;font:400 15px/1.6 var(--font-sans);color:var(--fg-3)}
-.empty .cta-row{display:flex;gap:10px;justify-content:center;flex-wrap:wrap}
-
+/* main */
+main{flex:1;padding:8px 0 64px}
 /* footer */
-.foot{margin-top:48px;padding:44px 0 28px}
+.foot{padding:44px 0 28px}
 .foot-inner{border-radius:var(--radius-xl);padding:36px 32px 26px}
 .foot-grid{display:grid;grid-template-columns:1.8fr 1fr 1fr 1fr;gap:28px}
 .foot-brand .brand{margin-bottom:12px}
@@ -204,34 +117,14 @@ body::before{content:"";position:fixed;inset:0;z-index:-1;pointer-events:none;
 .biz b{font-weight:600;color:var(--fg-2)}
 .foot-bottom{display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap;margin-top:22px;padding-top:18px;border-top:1px solid var(--border-2);font:500 12px var(--font-sans);color:var(--fg-3)}
 
-/* responsive */
 @media (min-width:768px){:root{--pad:24px}}
 @media (min-width:1024px){:root{--pad:32px}}
 @media (min-width:1180px){:root{--pad:0px}.nav{width:100%}}
-@media (max-width:880px){
-  .wl-head{display:none}
-  .wl-row{grid-template-columns:1fr auto;gap:8px 14px;row-gap:10px;align-items:start}
-  .wl.edit .wl-row{grid-template-columns:28px 1fr auto}
-  .c-price{grid-column:2;grid-row:1;text-align:right}
-  .wl.edit .c-price{grid-column:3}
-  .c-ai{grid-column:1 / -1;grid-row:2}
-  .wl.edit .c-ai{grid-column:2 / -1}
-  .c-chev{display:none}
-}
 @media (max-width:767px){
   .nav-links{display:none}.menu-btn{display:inline-flex}
-  .page-head{padding:28px 0 4px}
   .foot-grid{grid-template-columns:repeat(3,1fr);gap:16px}.foot-brand{grid-column:1/-1}.foot-bottom{flex-direction:column;gap:8px}
 }
-@media (max-width:560px){
-  /* 모바일: 세그먼트 대신 드롭다운 */
-  .sortwrap{width:100%}
-  .seg{display:none}
-  .sort-select{display:block;flex:1}
-}
 </style>
-<script src="../data/stocks.js"></script>
-<script src="../data/reports-index.js"></script>
 <script>
 /* ============================================================
    KOSAI — lightweight in-place i18n (KO ⇄ EN)
@@ -483,7 +376,8 @@ KOSi18n.register({
 .foot-brand .brand-logo{height:14px}
 @media(max-width:640px){.brand-logo{height:11px}}
 </style>
-<link rel="icon" type="image/png" sizes="512x512" href="../assets/favicon.png?v=k2">
+<link rel="icon" type="image/svg+xml" href="../assets/kosai-icon-dark.svg?v=k2">
+  <link rel="icon" type="image/png" sizes="512x512" href="../assets/favicon.png?v=k2">
 <link rel="icon" type="image/png" sizes="32x32" href="../assets/favicon.png?v=k2">
 <link rel="apple-touch-icon" sizes="180x180" href="../assets/apple-touch-icon.png?v=k2">
   <script src="analytics.js"></script>
@@ -510,6 +404,32 @@ KOSi18n.register({
   KOSi18n.register(D, fix);
 })();
 </script>
+
+<style>
+/* ── 모닝 브리핑 ─────────────────────────────────────────
+   글이 주인공인 화면이다. 읽는 폭을 좁게 잡고 행간을 넉넉히 둔다. */
+.mb{max-width:720px;margin:0 auto;padding:8px 0 56px}
+.mb-head{padding-bottom:26px;margin-bottom:30px;border-bottom:1px solid var(--hair)}
+.mb-date{font:600 13px var(--font-sans);color:var(--accent,#b4341f);letter-spacing:.02em;margin-bottom:10px}
+.mb-head h1{margin:0 0 16px;font:600 clamp(26px,4.4vw,38px)/1.22 var(--font-sans);color:var(--fg-1);letter-spacing:-.02em}
+.mb-lead{margin:0 0 14px;font:400 17.5px/1.62 var(--font-sans);color:var(--fg-1);text-wrap:pretty}
+.mb-meta{font:400 13px var(--font-sans);color:var(--fg-3)}
+.mb-sec{margin:0 0 34px}
+.mb-sec h2{margin:0 0 14px;font:600 15px var(--font-sans);color:var(--fg-2);
+  letter-spacing:.02em;padding-bottom:8px;border-bottom:1px solid var(--hair)}
+.mb-sec p{margin:0 0 15px;font:400 16px/1.78 var(--font-sans);color:var(--fg-1);text-wrap:pretty}
+.mb-sec p:last-child{margin-bottom:0}
+.mb-sec a{color:var(--fg-1);text-decoration:none;border-bottom:1px solid var(--hair);
+  transition:border-color .15s}
+.mb-sec a:hover{border-bottom-color:var(--fg-1)}
+.mb-sec b{font-weight:600}
+.mb-disc{margin:34px 0 0;padding-top:18px;border-top:1px solid var(--hair);
+  font:400 13px/1.7 var(--font-sans);color:var(--fg-3)}
+@media (max-width:640px){
+  .mb-sec p{font-size:15.5px}
+  .mb-lead{font-size:16.5px}
+}
+</style>
 </head>
 <body>
 <div class="kos-staging-bar">
@@ -542,17 +462,16 @@ document.addEventListener('click', function (e) {
 </script>
 
 
-<!-- NAV -->
-<nav class="nav glass" data-screen-label="Watchlist · Nav">
+<nav class="nav glass" data-screen-label="Brief · Nav">
   <a class="brand" href="Home.html"><img class="brand-logo brand-logo--light" src="../assets/kosai-wordmark-black.png" alt="KOSAI" width="148" height="24"><img class="brand-logo brand-logo--dark" src="../assets/kosai-wordmark-white.png" alt="KOSAI" width="148" height="24"></a>
   <div class="nav-links">
     <a href="Home.html">홈</a>
     <a href="Reports.html">리포트</a>
     <a href="industry.html">업종별</a>
     <a href="Screener.html">스크리너</a>
-    <a href="Watchlist.html" class="active">워치리스트</a>
+    <a href="Watchlist.html">워치리스트</a>
     <a href="pricing.html">멤버십</a>
-    <a href="brief.html">모닝브리핑</a>
+    <a href="brief.html" class="active">모닝브리핑</a>
   </div>
   <div class="nav-spacer"></div>
   <button class="icon-btn" id="themeBtn" aria-label="테마 전환" title="라이트/다크 전환">
@@ -567,80 +486,61 @@ document.addEventListener('click', function (e) {
   <a href="Reports.html">리포트</a>
   <a href="industry.html">업종별</a>
   <a href="Screener.html">스크리너</a>
-  <a href="Watchlist.html" class="active">워치리스트</a>
+  <a href="Watchlist.html">워치리스트</a>
   <a href="pricing.html">멤버십</a>
-  <a href="brief.html">모닝브리핑</a>
+  <a href="brief.html" class="active">모닝브리핑</a>
 </div>
 
-<div class="wrap" data-screen-label="06 Watchlist">
+<div class="wrap" data-screen-label="10 Morning Brief">
+  <div class="crumb"><a href="Home.html">홈</a> / <b>모닝 브리핑</b></div>
 
-  <div class="crumb"><a href="Home.html">홈</a> / <b>워치리스트</b></div>
+  <article class="mb">
+    <header class="mb-head">
+      <div class="mb-date">2026년 8월 17일 (월)</div>
+      <h1>거래는 반도체, 상승은 자동차</h1>
+      <p class="mb-lead">지수를 끌어올린 것은 자동차와 통신이었고 거래는 반도체에 몰렸다. 오른 종목은 많았지만 대다수는 제자리였다.</p>
+      <div class="mb-meta">8월 14일(금) 장 기준 · 8월 15일 광복절, 16일 일요일 휴장</div>
+    </header>
 
-  <!-- HEADER -->
-  <div class="page-head">
-    <div>
-      <div class="ph-kicker">MY WATCHLIST</div>
-      <h1>관심 종목</h1>
-      <div class="ph-count"><b id="countN">6</b><span id="countUnit">개 종목</span></div>
-    </div>
-  </div>
+    <section class="mb-sec">
+      <h2>어제 시장</h2>
+      <p>8월 14일 국내 증시는 시가총액 가중 기준 2.31% 올랐다. 다만 개별 종목의 중앙값은 0.38% 상승에 그쳐, 지수를 끌어올린 힘이 소수 대형주에 몰려 있었음을 보여준다. 상승 1,518종목, 하락 941종목, 보합 226종목으로 상승이 우세했지만 폭이 넓지는 않았다.</p>
+      <p>상승 종목이 하락 종목의 1.6배였지만 중앙값이 0.4%에 그친 것은, 오른 종목 상당수가 소폭 상승에 머물렀다는 뜻이다. 시가총액 가중 수치와 중앙값이 2%포인트 가까이 벌어진 날은 대체로 지수와 체감이 어긋난다.</p>
+      <p>거래는 반도체에 집중됐다. SK하이닉스가 7조4,897억원, 삼성전자가 5조8,745억원으로 거래대금 1·2위를 차지했다. 그러나 상승률은 각각 3.26%와 2.43%로 시장 평균을 크게 웃돌지 못했다. 돈이 몰린 곳과 실제로 오른 곳이 달랐던 하루다.</p>
+    </section>
 
-  <!-- TOOLBAR -->
-  <div class="toolbar">
-    <div class="sortwrap">
-      <span class="sort-label">정렬</span>
-      <div class="seg" id="sortSeg">
-        <button class="active" data-sort="mcap_desc">시가총액 높은 순</button>
-        <button data-sort="mcap_asc">시가총액 낮은 순</button>
-        <button data-sort="change_desc">등락률 높은 순</button>
-        <button data-sort="change_asc">등락률 낮은 순</button>
-        <button data-sort="added">추가 순서</button>
-        <button data-sort="name">종목명순</button>
-      </div>
-      <select class="sort-select" id="sortSelect" aria-label="정렬">
-        <option value="mcap_desc">시가총액 높은 순</option>
-        <option value="mcap_asc">시가총액 낮은 순</option>
-        <option value="change_desc">등락률 높은 순</option>
-        <option value="change_asc">등락률 낮은 순</option>
-        <option value="added">추가 순서</option>
-        <option value="name">종목명순</option>
-      </select>
-    </div>
-    <div class="tb-actions">
-      <button class="clear-all" id="clearAllBtn" style="display:none">전체 삭제</button>
-      <button class="edit-btn" id="editBtn" data-i18n-skip>
-        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 20h9M16.5 3.5a2.1 2.1 0 0 1 3 3L7 19l-4 1 1-4z"/></svg>
-        편집
-      </button>
-    </div>
-  </div>
+    <section class="mb-sec">
+      <h2>업종 흐름</h2>
+      <p>자동차가 시가총액 가중 6.05%로 가장 크게 올랐다. 현대차가 8.24%, 현대모비스가 7.05%, 현대오토에버가 9.02% 오르며 현대차그룹 전반이 함께 움직였다. 통신이 6.01%로 뒤를 이었는데 <a href="stock.html?ticker=017670">SK텔레콤</a> 한 종목이 10.32% 오르며 업종을 끌었다. 정유 5.24%, 보험 3.48%, 조선 3.08% 순으로 상승 폭이 컸다.</p>
+      <p>반대편에서는 항공·방산이 1.35% 내렸다. <a href="stock.html?ticker=012450">한화에어로스페이스</a> 2.11%, LIG디펜스앤에어로스페이스 2.63%, <a href="stock.html?ticker=047810">한국항공우주</a> 3.17% 하락으로 주요 종목이 모두 밀렸다. 철강·금속이 1.37%, 전기장비가 1.00% 내렸고 <a href="stock.html?ticker=010130">고려아연</a>은 3.00%, LS ELECTRIC은 3.50% 하락했다.</p>
+    </section>
 
-  <!-- LIST -->
-  <div class="wl glass" id="wl">
-    <div class="wl-head">
-      <span class="h-edit"></span>
-      <span>종목</span>
-      <span class="h-price">현재가</span>
-      <span>리포트 제목</span>
-      <span></span>
-    </div>
-    <div id="rows" data-i18n-skip></div>
-  </div>
-  <div class="pager" id="pager" data-i18n-skip style="display:none"><div class="pinfo" id="pagerInfo"></div><div class="pctl" id="pagerCtl"></div></div>
+    <section class="mb-sec">
+      <h2>코사이 커버리지에서 확인된 것</h2>
 
-  <!-- EMPTY -->
-  <div class="empty" id="empty">
-    <h2>관심 종목이 비어 있습니다</h2>
-    <p>스크리너에서 조건에 맞는 종목을 찾거나, 종목 상세 페이지에서 워치리스트에 추가해 보세요.</p>
-    <div class="cta-row">
-      <a class="btn btn-primary" href="Reports.html">리포트 둘러보기</a>
-      <a class="btn btn-soft" href="Screener.html">스크리너로 이동</a>
-    </div>
-  </div>
+      <p>현대차그룹 3사가 함께 오른 것이 이날 가장 두드러진 움직임이었다. 코사이는 8월 14일 반기보고서 반영분으로 세 종목의 리포트를 모두 새로 작성했다. <a href="stock.html?ticker=005380">현대차</a> 리포트는 하이브리드 중심 믹스와 환율로 매출은 사상 최대 흐름을 이어가는 반면, 미국 관세와 원자재·인센티브 부담으로 영업이익률이 6%대 초반까지 내려온 국면으로 정리했다. 확인 지점으로는 10월 하순 3분기 실적 발표에서 영업이익률이 회사 가이던스 범위인 6.3~7.3%에 재진입하는지를 지목했다. 이날 주가 움직임과 이 지표는 아직 연결되지 않는다.</p>
 
+      <p><a href="stock.html?ticker=012330">현대모비스</a>도 7.05% 올랐다. 코사이 리포트는 2025년 매출 61조1,181억원·영업이익 3조3,575억원으로 외형과 이익을 함께 키웠지만, 이익의 대부분이 고마진 애프터서비스 부문에서 나오고 모듈·핵심부품 마진은 여전히 얇다는 구조가 그대로 남아 있다고 봤다. 확인 지점은 10월 말 3분기 실적 발표에서 메모리 반도체·물류비 상승분을 판매가격 인상과 고객사 비용 정산으로 얼마나 상쇄했는지, 그리고 2분기 0.2% 수준이던 모듈·핵심부품 영업이익률이 어느 방향으로 움직였는지다.</p>
+
+      <p><a href="stock.html?ticker=307950">현대오토에버</a>는 코사이가 적어 둔 확인 지점 하나가 이번 달 안에 걸려 있다. 현대차 차세대 ERP 본사 및 미주 롤인 프로젝트가 8월 말 마무리될 예정인데, 프로젝트 종료 이후 생기는 시스템통합(SI) 매출 공백을 아시아·태평양·유럽 롤인과 클라우드 매출이 얼마나 메우는지가 관건이다. 이 종목은 이날 9.02% 올라 시가총액 1조원 이상 종목 가운데 상승률 2위를 기록했다.</p>
+
+      <p>SK텔레콤은 10.32% 올라 대형주 중 가장 큰 폭으로 상승했다. 코사이 리포트는 2025년 해킹 사고 비용이 집중된 저점을 지나 2026년 상반기 이익이 사고 이전 수준으로 되돌아온 국면으로 봤다. 다음 확인 지점은 10월 시행 예정인 최적요금제 고지 제도로, 제도 시행 이후 요금제 하향 이동 규모가 무선 매출과 가입자당 평균 매출에 어떤 영향을 주는지 지켜볼 대목이다.</p>
+
+      <p>방산 3사는 나란히 밀렸다. 코사이는 이날 하락을 설명할 만한 공시나 실적 변경을 따로 확인하지 않았다. 다만 한화에어로스페이스에 대해서는 이번 달 안에 결과가 나올 것으로 예상되는 확인 지점을 리포트에 적어 두었고, 그 내용은 아래에 정리했다.</p>
+    </section>
+
+    <section class="mb-sec">
+      <h2>앞으로 볼 것</h2>
+      <p>이번 주에는 코사이가 리포트에 적어 둔 확인 지점 세 개가 걸려 있다.</p>
+      <p><b>8월 20일 · 고려아연 2분기 배당 기준일.</b> 지급 예정일은 9월 4일이며, 분기 배당의 실제 집행 여부는 회사가 제시한 총주주환원율 40% 이상 목표의 이행 정도를 가늠하는 지표가 된다. 고려아연은 9월 9일 임시주주총회에서 감사위원이 되는 독립이사 1명을 포함해 독립이사 5명을 선임할 예정이어서, 배당과 지배구조 두 사안이 연달아 놓여 있다.</p>
+      <p><b>8월 중 · 한화에어로스페이스 미국 자주포 현대화 사업.</b> 회사가 8월 중 발표를 예상한다고 밝힌 우선협상대상자 선정 결과다. 양산 500문·사업비 10조원 규모로 추산되는 사업이라 결과에 따라 중장기 수주 구조에 대한 전제가 달라질 수 있다.</p>
+      <p><b>8월 말 · 현대오토에버 차세대 ERP 프로젝트 종료.</b> 현대차 본사 및 미주 롤인 프로젝트가 마무리될 예정이다. 종료 이후 SI 매출의 공백이 얼마나 메워지는지는 3분기 실적에서 드러난다.</p>
+    </section>
+
+    <p class="mb-disc">본 자료는 공시(DART)·시장 데이터(KRX)를 바탕으로 자동 생성된 정보 제공 자료이며 투자 권유가 아닙니다. 수치는 2026년 8월 14일 종가 기준입니다.</p>
+  </article>
 </div>
 
-<!-- FOOTER -->
 <footer class="foot">
   <div class="wrap">
     <div class="foot-inner glass">
@@ -648,7 +548,6 @@ document.addEventListener('click', function (e) {
         <div class="foot-brand"><a class="brand" href="Home.html"><img class="brand-logo brand-logo--light" src="../assets/kosai-wordmark-black.png" alt="KOSAI" width="148" height="24"><img class="brand-logo brand-logo--dark" src="../assets/kosai-wordmark-white.png" alt="KOSAI" width="148" height="24"></a><p>한국 상장사를 위한 AI 투자 리서치. 데이터와 분석을 한 페이지에.</p></div>
         <div class="foot-col"><h4>서비스</h4><ul><li><a href="Home.html">홈</a></li><li><a href="Reports.html">리포트</a></li><li><a href="industry.html">업종별</a></li><li><a href="Screener.html">스크리너</a></li><li><a href="Watchlist.html">워치리스트</a></li><li><a href="pricing.html">멤버십</a></li><li><a href="brief.html">모닝브리핑</a></li></ul></div>
         <div class="foot-col"><h4>회사</h4><ul><li><a href="About.html">About</a></li><li><a href="Contact.html">문의하기</a></li><li><a href="Feedback.html">피드백</a></li></ul></div>
-        
         <div class="foot-col"><h4>정책</h4><ul><li><a href="Terms.html">이용약관</a></li><li><a href="Privacy.html">개인정보처리방침</a></li></ul></div>
       </div>
       <div class="disclaimer"><b>면책 조항</b> · 본 사이트의 모든 AI 분석·리포트는 투자 참고용 정보이며, 투자 권유나 추천이 아닙니다. 투자 판단과 그 결과에 대한 책임은 전적으로 이용자 본인에게 있습니다. 데이터는 지연될 수 있으며 오류가 포함될 수 있습니다.</div>
@@ -666,168 +565,6 @@ document.addEventListener('click', function (e) {
   </div>
 </footer>
 
-<script>
-const EN=()=>(window.KOSi18n&&KOSi18n.lang==='en');
-const T=s=>(window.KOSi18n?KOSi18n.t(s):s);
-const KOS={won:n=>EN()?'₩'+n.toLocaleString('en-US'):n.toLocaleString('ko-KR')+'원',pct:n=>(n>0?'+':'')+n.toFixed(2)+'%'};
-let LIST_DEFAULT=[
-  {name:'삼성전자',ticker:'005930',market:'KOSPI',sector:'반도체',price:78400,change:1.55,mcap:468.2,ai:'HBM 매출 비중 확대 흐름이 지속되고 있으며, 메모리 가격 회복세에 따른 영업 레버리지 효과가 관찰된다.'},
-  {name:'SK하이닉스',ticker:'000660',market:'KOSPI',sector:'반도체',price:196000,change:2.84,mcap:142.7,ai:'HBM3E 12단 양산 진입과 AI 가속기 수요 확대에 따른 분기 실적 가시성이 비교적 높은 수준으로 평가된다.'},
-  {name:'NAVER',ticker:'035420',market:'KOSPI',sector:'IT 서비스',price:214500,change:0.94,mcap:34.8,ai:'AI 검색 개편과 광고 매출 성장률이 동행하는 흐름이며, 커머스 부문은 비교적 안정적인 마진 구조를 유지하고 있다.'},
-  {name:'카카오',ticker:'035720',market:'KOSPI',sector:'IT 서비스',price:48250,change:-0.82,mcap:21.4,ai:'광고·콘텐츠 부문의 마진 회복 속도가 시장 컨센서스 대비 다소 지연되는 모습이 관찰되고 있다.'},
-  {name:'현대차',ticker:'005380',market:'KOSPI',sector:'자동차',price:238500,change:1.28,mcap:50.2,ai:'하이브리드 차종 비중 확대와 미국 시장 ASP 안정세가 분기 영업이익률에 우호적으로 작용하는 모습이다.'},
-  {name:'셀트리온',ticker:'068270',market:'KOSPI',sector:'바이오',price:186400,change:-0.32,mcap:40.6,ai:'바이오시밀러 미국 시장 진입 일정과 신규 파이프라인 가시성이 분기별로 점진적으로 개선되는 흐름이다.'},
-].map((s,i)=>({...s,added:i}));
-function isWatched(tk){ return !!(window.KOSWatch && window.KOSWatch.has(tk)); }
-function repTitle(tk){ const R=window.KOS_REPORTS&&KOS_REPORTS.reports&&KOS_REPORTS.reports[tk]; if(!R||!R.title) return ''; return EN()?(R.title.en||R.title.ko||''):(R.title.ko||R.title.en||''); }
-function getWatched(){
-  const all=(window.KOS_LIVE_DATA&&window.KOS_LIVE_DATA.stocks)||[];
-  // 계정별 워치리스트(Firestore)의 추가 시각으로 정렬.
-  return all.filter(s=>isWatched(s.ticker)).map(function(s){
-    return {...s, added:(window.KOSWatch?window.KOSWatch.addedAt(s.ticker):0)};
-  });
-}
-let LIST = getWatched();
-
-let sortKey='mcap_desc';
-const rowsEl=document.getElementById('rows'),wlEl=document.getElementById('wl'),emptyEl=document.getElementById('empty');
-
-function sorted(){
-  const l=[...LIST];
-  if(sortKey==='change_desc')l.sort((a,b)=>b.change-a.change);
-  else if(sortKey==='change_asc')l.sort((a,b)=>a.change-b.change);
-  else if(sortKey==='mcap_desc')l.sort((a,b)=>b.mcap-a.mcap);
-  else if(sortKey==='mcap_asc')l.sort((a,b)=>a.mcap-b.mcap);
-  else if(sortKey==='added')l.sort((a,b)=>b.added-a.added);
-  else if(sortKey==='name')l.sort((a,b)=>a.name.localeCompare(b.name,'ko'));
-  return l;
-}
-function rowHtml(s){
-  const dir=s.change>0?'up':s.change<0?'down':'flat',arw=s.change>0?'▲':s.change<0?'▼':'–';
-  return `<a class="wl-row" href="stock.html?ticker=${s.ticker}" data-tk="${s.ticker}">
-    <button class="minus" data-remove="${s.ticker}" title="${T('제거')}" aria-label="${T('제거')}"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"><path d="M5 12h14"/></svg></button>
-    <div class="c-nm">
-      <div class="nm">${T(s.name)}</div>
-      <div class="id"><span class="tk">${s.ticker}</span><span class="dot">·</span><span>${T(s.market)}</span><span class="dot">·</span><span>${T(s.sector)}</span></div>
-    </div>
-    <div class="c-price"><div class="px">${KOS.won(s.price)}</div><div class="ch ${dir}"><span style="font-size:10px">${arw}</span> ${KOS.pct(s.change)}</div></div>
-    <p class="c-ai">${repTitle(s.ticker)||''}</p>
-    <span class="c-chev"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 6l6 6-6 6"/></svg></span>
-  </a>`;
-}
-let page=1; const PAGE_SIZE=10;
-const pagerEl=document.getElementById('pager');
-function render(){
-  // 편집 버튼은 data-i18n-skip이라 walker가 안 건드림 → 편집 상태에 맞춰 직접 라벨 동기화(언어 전환 포함)
-  const _eb=document.getElementById('editBtn');
-  if(_eb&&_eb.lastChild){ _eb.lastChild.textContent= wlEl.classList.contains('edit')?T(' 완료'):T(' 편집'); }
-  const cn=document.getElementById('countN'); if(cn) cn.textContent=LIST.length;
-  const cu=document.getElementById('countUnit'); if(cu) cu.textContent=EN()?(LIST.length===1?' stock':' stocks'):'개 종목';
-  if(LIST.length===0){wlEl.style.display='none';emptyEl.classList.add('show');pagerEl.style.display='none';return;}
-  wlEl.style.display='';emptyEl.classList.remove('show');
-  const list=sorted(), total=list.length, pages=Math.max(1,Math.ceil(total/PAGE_SIZE));
-  if(page>pages)page=pages; if(page<1)page=1;
-  const start=(page-1)*PAGE_SIZE;
-  rowsEl.innerHTML=list.slice(start,start+PAGE_SIZE).map(rowHtml).join('');
-  // pager (10개씩, 모바일 5 / 데스크톱 10 블록)
-  if(pages<=1){ pagerEl.style.display='none'; return; }
-  pagerEl.style.display='';
-  const EN_=EN();
-  document.getElementById('pagerInfo').textContent=EN_?`${start+1}–${Math.min(start+PAGE_SIZE,total)} of ${total}`:`${start+1}–${Math.min(start+PAGE_SIZE,total)} / 총 ${total}개`;
-  const BLK=(window.matchMedia&&matchMedia('(max-width:640px)').matches)?5:10;
-  const blk=Math.floor((page-1)/BLK), bs=blk*BLK+1, be=Math.min(bs+BLK-1,pages);
-  let b=`<button ${page<=1?'disabled':''} data-pg="prev">‹</button>`;
-  for(let i=bs;i<=be;i++) b+=`<button class="${i===page?'active':''}" data-pg="${i}">${i}</button>`;
-  b+=`<button ${page>=pages?'disabled':''} data-pg="next">›</button>`;
-  document.getElementById('pagerCtl').innerHTML=b;
-}
-document.getElementById('pagerCtl').addEventListener('click',e=>{
-  const b=e.target.closest('button[data-pg]'); if(!b) return;
-  const pg=b.dataset.pg;
-  if(pg==='prev')page=Math.max(1,page-1); else if(pg==='next')page++; else page=+pg;
-  render(); window.scrollTo({top:0,behavior:'smooth'});
-});
-render();
-
-function applySort(k){
-  sortKey=k; page=1;
-  [...document.getElementById('sortSeg').children].forEach(c=>c.classList.toggle('active',c.dataset.sort===k));
-  const sel=document.getElementById('sortSelect'); if(sel) sel.value=k;
-  render();
-}
-document.getElementById('sortSeg').addEventListener('click',e=>{
-  const b=e.target.closest('button');if(!b)return;
-  applySort(b.dataset.sort);
-});
-document.getElementById('sortSelect').addEventListener('change',e=>{ applySort(e.target.value); });
-document.getElementById('editBtn').addEventListener('click',e=>{
-  wlEl.classList.toggle('edit');
-  const on=wlEl.classList.contains('edit');
-  e.currentTarget.classList.toggle('on',on);
-  e.currentTarget.lastChild.textContent= on?T(' 완료'):T(' 편집');
-  document.getElementById('clearAllBtn').style.display = on?'inline-flex':'none';
-});
-document.getElementById('clearAllBtn').addEventListener('click',()=>{
-  const msg = EN()? 'Remove all stocks from your watchlist?' : '관심종목을 전체 삭제할까요?';
-  if(!window.confirm(msg)) return;
-  if(window.KOSWatch) window.KOSWatch.clear();
-  LIST=getWatched();
-  wlEl.classList.remove('edit');
-  const eb=document.getElementById('editBtn'); eb.classList.remove('on'); eb.lastChild.textContent=T(' 편집');
-  document.getElementById('clearAllBtn').style.display='none';
-  page=1; render();
-});
-rowsEl.addEventListener('click',e=>{
-  const rm=e.target.closest('[data-remove]');
-  if(rm){e.preventDefault();if(window.KOSWatch)window.KOSWatch.remove(rm.dataset.remove);LIST=getWatched();render();return;}
-});
-// 워치리스트(Firestore) 변경·로딩 시 목록 재동기화
-function refreshWl(){ LIST=getWatched(); render(); }
-window.addEventListener('koswatch:change',refreshWl);
-window.addEventListener('pageshow',refreshWl);
-document.addEventListener('visibilitychange',()=>{ if(!document.hidden) refreshWl(); });
-
-/* mobile menu */
-const menuBtn=document.getElementById('menuBtn'),mobileMenu=document.getElementById('mobileMenu');
-menuBtn.addEventListener('click',()=>mobileMenu.classList.toggle('open'));
-mobileMenu.querySelectorAll('a').forEach(a=>a.addEventListener('click',()=>mobileMenu.classList.remove('open')));
-
-/* theme */
-const root=document.documentElement,themeBtn=document.getElementById('themeBtn');
-const sunSVG='<circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"/>';
-const moonSVG='<path d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8z"/>';
-function applyTheme(t){root.setAttribute('data-theme',t);document.getElementById('themeIcon').innerHTML=t==='dark'?sunSVG:moonSVG;try{localStorage.setItem('kos-theme',t)}catch(e){}}
-let saved='dark';try{saved=localStorage.getItem('kos-theme')||'dark'}catch(e){}
-applyTheme(saved);
-themeBtn.addEventListener('click',()=>applyTheme(root.getAttribute('data-theme')==='dark'?'light':'dark'));
-
-/* ===== i18n ===== */
-const WATCHLIST_DICT={
-  "관심 종목":"My Watchlist",
-  "정렬":"Sort","등락률순":"By Change","시가총액순":"By Market Cap","추가 순서":"By Date Added","종목명순":"By Name",
-  "등락률 높은 순":"Change: High→Low","등락률 낮은 순":"Change: Low→High","시가총액 높은 순":"Market Cap: High→Low","시가총액 낮은 순":"Market Cap: Low→High",
-  " 편집":" Edit"," 완료":" Done","편집":"Edit","전체 삭제":"Clear All",
-  "종목":"Stock","현재가":"Price","리포트 제목":"Report Title",
-  "관심 종목이 비어 있습니다":"Your watchlist is empty",
-  "스크리너에서 조건에 맞는 종목을 찾거나, 종목 상세 페이지에서 워치리스트에 추가해 보세요.":"Find stocks in the Screener that fit your criteria, or add them from their detail page.",
-  "스크리너로 이동":"Go to Screener","리포트 둘러보기":"Browse reports",
-  "제거":"Remove",
-  // sectors
-  "반도체":"Semiconductors","IT 서비스":"IT Services","자동차":"Automotive","바이오":"Biotech",
-  // stock names
-  "삼성전자":"Samsung Electronics","SK하이닉스":"SK Hynix","NAVER":"NAVER","카카오":"Kakao","현대차":"Hyundai Motor","셀트리온":"Celltrion",
-  // AI comments
-  "HBM 매출 비중 확대 흐름이 지속되고 있으며, 메모리 가격 회복세에 따른 영업 레버리지 효과가 관찰된다.":"The shift toward higher HBM revenue share continues, with operating leverage emerging as memory prices recover.",
-  "HBM3E 12단 양산 진입과 AI 가속기 수요 확대에 따른 분기 실적 가시성이 비교적 높은 수준으로 평가된다.":"HBM3E 12-layer mass production and rising AI-accelerator demand give quarterly earnings relatively strong visibility.",
-  "AI 검색 개편과 광고 매출 성장률이 동행하는 흐름이며, 커머스 부문은 비교적 안정적인 마진 구조를 유지하고 있다.":"The AI search overhaul and ad-revenue growth are moving together, while commerce maintains a relatively stable margin structure.",
-  "광고·콘텐츠 부문의 마진 회복 속도가 시장 컨센서스 대비 다소 지연되는 모습이 관찰되고 있다.":"Margin recovery in advertising and content appears to be running somewhat behind market consensus.",
-  "하이브리드 차종 비중 확대와 미국 시장 ASP 안정세가 분기 영업이익률에 우호적으로 작용하는 모습이다.":"A rising hybrid mix and stable U.S. ASPs are supporting quarterly operating margins.",
-  "바이오시밀러 미국 시장 진입 일정과 신규 파이프라인 가시성이 분기별로 점진적으로 개선되는 흐름이다.":"U.S. biosimilar launch timing and new pipeline visibility are gradually improving each quarter."
-};
-if(window.KOSi18n) KOSi18n.register(WATCHLIST_DICT, render);
-</script>
-<script type="module" src="auth-guard.js"></script>
-<script type="module" src="watchlist.js"></script>
 <script type="module" src="auth-state.js"></script>
 </body>
 </html>
