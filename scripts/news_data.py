@@ -23,8 +23,10 @@ import datetime
 import html as _html
 import io
 import json
+import os
 import re
 import sys
+import time
 import xml.etree.ElementTree as ET
 from pathlib import Path
 
@@ -33,6 +35,10 @@ import requests
 UA = {"User-Agent": "Mozilla/5.0 (compatible; KOSAI/1.0)"}
 TIMEOUT = 20
 KST = datetime.timezone(datetime.timedelta(hours=9))
+# 요청 사이 최소 간격(초)과 재시도 대기의 기준. 구글 뉴스가 503 을 주는 걸
+# 4차 드라이런에서 확인해서 넣었다.
+MIN_GAP = float(os.getenv("NEWS_MIN_GAP", "1.2"))
+BACKOFF = float(os.getenv("NEWS_BACKOFF", "3"))
 
 # 이 표현이 제목에 있으면 버린다. 투자권유로 읽히는 문장이 브리핑에
 # 흘러드는 경로를 여기서 끊는다.
@@ -77,6 +83,40 @@ def window_hours(default=54):
     return default
 
 
+_LAST_CALL = [0.0]
+
+
+def _polite_get(url, tries=3):
+    """구글 뉴스는 연달아 때리면 503 을 준다.
+
+    4차 드라이런에서 여덟 쿼리가 전부 503 이었다. 하루에 열 번쯤 요청하는
+    건 과하지 않지만, 1초 안에 몰아 치면 막힌다. 그래서 요청 사이에 간격을
+    두고, 503·429 는 잠깐 쉬고 다시 시도한다. 그래도 안 되면 포기한다 —
+    뉴스가 없으면 브리핑은 '왜'를 안 쓰고 숫자만 쓴다.
+    """
+    for i in range(tries):
+        gap = MIN_GAP - (time.time() - _LAST_CALL[0])
+        if gap > 0:
+            time.sleep(gap)
+        _LAST_CALL[0] = time.time()
+        try:
+            r = requests.get(url, headers=UA, timeout=TIMEOUT)
+            if r.status_code in (429, 503, 502, 500) and i < tries - 1:
+                wait = BACKOFF * (2 ** i)
+                log(f"· HTTP {r.status_code} — {wait:.0f}초 쉬고 재시도 ({i+1}/{tries-1})")
+                time.sleep(wait)
+                continue
+            r.raise_for_status()
+            return r
+        except requests.RequestException as e:
+            if i >= tries - 1:
+                raise
+            wait = BACKOFF * (2 ** i)
+            log(f"· {type(e).__name__} — {wait:.0f}초 쉬고 재시도 ({i+1}/{tries-1})")
+            time.sleep(wait)
+    raise RuntimeError("재시도 소진")
+
+
 def _clean(s):
     return re.sub(r"\s+", " ", _html.unescape(s or "")).strip()
 
@@ -87,11 +127,9 @@ def rss(query, hl="ko", gl="KR", ceid="KR:ko", limit=12, since_hours=None):
     url = ("https://news.google.com/rss/search?q=" + requests.utils.quote(query)
            + f"&hl={hl}&gl={gl}&ceid={ceid}")
     try:
-        r = requests.get(url, headers=UA, timeout=TIMEOUT)
-        r.raise_for_status()
-        root = ET.parse(io.StringIO(r.text)).getroot()
+        root = ET.parse(io.StringIO(_polite_get(url).text)).getroot()
     except Exception as e:
-        log(f"· «{query}» 실패: {type(e).__name__} {e}")
+        log(f"· «{query}» 실패: {type(e).__name__} {str(e)[:90]}")
         return []
 
     cutoff = datetime.datetime.now(datetime.timezone.utc) - datetime.timedelta(hours=since_hours)
@@ -128,7 +166,6 @@ def rss(query, hl="ko", gl="KR", ceid="KR:ko", limit=12, since_hours=None):
 
 def naver(query, limit=8):
     """네이버 검색 API. 키가 없으면 조용히 건너뛴다 — 없어도 브리핑은 나간다."""
-    import os
     cid, csec = os.getenv("NAVER_CLIENT_ID"), os.getenv("NAVER_CLIENT_SECRET")
     if not (cid and csec):
         return []
@@ -207,7 +244,12 @@ def main():
 
     d = collect(tks, names)
     print(json.dumps(d, ensure_ascii=False, indent=2) if a.json else summarize(d))
-    return 0 if any(d["groups"].values()) else 1
+    # 뉴스는 없어도 브리핑이 나가는 값이다(그 문장만 빠진다). 그래서 0 건이어도
+    # 실패로 끝내지 않고 경고만 남긴다 — 여기서 1 을 돌려주면 워크플로가
+    # 붉어져서, 정작 봐야 할 실패와 구분이 안 된다.
+    if not any(d["groups"].values()):
+        log("⚠️ 뉴스를 한 건도 받지 못했다 — 브리핑은 숫자만 쓰고 '왜'는 쓰지 않는다")
+    return 0
 
 
 if __name__ == "__main__":
