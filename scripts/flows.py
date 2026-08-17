@@ -17,6 +17,7 @@
 import argparse
 import datetime
 import json
+import os
 import re
 import sys
 
@@ -29,10 +30,20 @@ KST = datetime.timezone(datetime.timedelta(hours=9))
 
 # sosok: 01 코스피 · 02 코스닥
 CANDIDATES = [
-    ("investorDealTrendDay", "https://finance.naver.com/sise/investorDealTrendDay.naver?sosok={sosok}"),
-    ("investorDealTrendDay(no ext)", "https://finance.naver.com/sise/investorDealTrendDay.nhn?sosok={sosok}"),
+    # 지수 페이지가 아이프레임으로 불러오는 실제 표. 바깥 페이지에는 표가 없다 —
+    # 1차 시도가 "표를 못 찾았다"로 끝난 이유가 이것이었다.
+    ("sise_index_investor(iframe)",
+     "https://finance.naver.com/sise/sise_index_investor.naver?code={code}"),
+    ("investorDealTrendDay",
+     "https://finance.naver.com/sise/investorDealTrendDay.naver?sosok={sosok}"),
+    ("investorDealTrendDay(nhn)",
+     "https://finance.naver.com/sise/investorDealTrendDay.nhn?sosok={sosok}"),
     ("sise_index", "https://finance.naver.com/sise/sise_index.naver?code={code}"),
 ]
+
+# 실패했을 때 응답 앞부분을 남긴다. 표 구조를 모른 채 추측으로 고치면
+# 왕복만 늘어난다.
+DUMP_ON_FAIL = os.getenv("FLOWS_DUMP", "1") == "1"
 
 # 합이 0 에서 이 비율 이상 벗어나면 파싱을 잘못한 것으로 본다.
 # (기타법인·국가 등 소수 주체가 빠지므로 완전히 0 은 아니다)
@@ -52,6 +63,33 @@ def _num(s):
         return None
     try:
         return int(round(float(t)))
+    except ValueError:
+        return None
+
+
+def _date(cell, today=None):
+    """'2026.08.14' · '26.08.14' · '08/14' 를 날짜로. 아니면 None.
+
+    네이버는 페이지마다 형식이 다르다. 연도가 없으면 오늘 연도로 보되,
+    12월에 1월 날짜가 나오면 다음 해로 넘긴다(연말 표에서 밀리지 않게).
+    """
+    today = today or datetime.datetime.now(KST).date()
+    t = cell.strip()
+    m = re.match(r"^(\d{4})[.\-/](\d{1,2})[.\-/](\d{1,2})", t)
+    if m:
+        y, mo, dd = int(m.group(1)), int(m.group(2)), int(m.group(3))
+    else:
+        m = re.match(r"^(\d{2})[.\-/](\d{1,2})[.\-/](\d{1,2})", t)
+        if m:
+            y, mo, dd = 2000 + int(m.group(1)), int(m.group(2)), int(m.group(3))
+        else:
+            m = re.match(r"^(\d{1,2})[./](\d{1,2})$", t)
+            if not m:
+                return None
+            mo, dd = int(m.group(1)), int(m.group(2))
+            y = today.year + (1 if (today.month == 12 and mo == 1) else 0)
+    try:
+        return datetime.date(y, mo, dd)
     except ValueError:
         return None
 
@@ -84,14 +122,13 @@ def _rows_from_table(html):
                  for c in re.findall(r"<td[^>]*>(.*?)</td>", tr, re.S)]
         if len(cells) < 2:
             continue
-        m = re.match(r"(\d{4})[.\-/](\d{1,2})[.\-/](\d{1,2})", cells[0])
-        if not m:
+        d = _date(cells[0])
+        if d is None:
             continue
         nums = [_num(c) for c in cells[1:]]
         nums = [n for n in nums if n is not None]
         if len(nums) < 3:
             continue
-        d = datetime.date(int(m.group(1)), int(m.group(2)), int(m.group(3)))
         out.append((d, dict(zip(order, nums))))
     return out
 
@@ -117,7 +154,11 @@ def market(sosok, code):
             continue
         rows = _rows_from_table(html)
         if not rows:
-            log(f"· {name} 표를 못 찾았다")
+            log(f"· {name} 표를 못 찾았다 ({len(html):,}바이트)")
+            if DUMP_ON_FAIL:
+                body = re.sub(r"\s+", " ", re.sub(r"<script.*?</script>", "", html, flags=re.S))
+                i = body.find("<table")
+                log(f"    표 부근: {body[i:i+420] if i >= 0 else body[:420]!r}")
             continue
         rows.sort(key=lambda r: r[0])
         d, vals = rows[-1]
