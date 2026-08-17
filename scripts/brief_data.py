@@ -36,6 +36,8 @@ STOCKS_JS = ROOT / "data" / "stocks.js"
 REPORTS_INDEX = ROOT / "data" / "reports-index.js"
 REPORTS_V2 = ROOT / "data" / "reports_v2"
 REPORTS_V1 = ROOT / "data" / "reports"
+# 같은 날 여러 번 돌 때 DART 를 다시 부르지 않기 위한 캐시.
+CACHE_DIR = ROOT / "data" / "brief_cache"
 
 # 등락 상위를 뽑을 때의 시총 하한(조원). 이게 없으면 매일 잡주 상한가만 올라온다.
 MIN_MCAP = float(os.getenv("BRIEF_MIN_MCAP", "0.3"))     # 3,000억원
@@ -46,6 +48,9 @@ TOP_SECTORS = int(os.getenv("BRIEF_TOP_SECTORS", "5"))
 BIG_CAP_N = int(os.getenv("BRIEF_BIG_CAP_N", "60"))
 # 섹터 집계에서 종목 수가 너무 적은 섹터는 뺀다 — 한 종목이 섹터를 대표할 수 없다.
 MIN_SECTOR_N = int(os.getenv("BRIEF_MIN_SECTOR_N", "3"))
+# 공시가 하루 2,000건 넘게 나오는 날(정기보고서 마감일)이 있다. 전부 열면
+# 5분이 걸리고, 브리핑에 쓸 수 있는 건 어차피 몇 개뿐이다.
+MAX_FILINGS = int(os.getenv("BRIEF_MAX_FILINGS", "40"))
 
 KST = datetime.timezone(datetime.timedelta(hours=9))
 FILING_KINDS = ("분기보고서", "반기보고서", "사업보고서")
@@ -293,39 +298,74 @@ def index_and_flows(trade_date):
 
 # ────────────────────────────── 공시 ──────────────────────────────
 
-def filings(trade_date, cov, names):
+def filings(trade_date, cov, names, mcaps=None):
     """해당 거래일에 접수된 정기보고서 중 커버리지 종목.
 
     실적은 대부분 장 마감 뒤에 나온다. 아침 브리핑이 마감 브리핑보다 나은
     이유가 여기 있다 — 마감 시점엔 아직 이게 없다.
+
+    8월 14일은 반기보고서 마감일이라 커버리지 종목만 2,040건이 접수됐다.
+    이걸 다 받고 리포트 2,040개를 여는 데 5분이 걸렸다. 브리핑은 07:30 에
+    나가야 하므로 그대로 둘 수 없다. 그래서 둘을 손봤다.
+
+      · 캐시 — 날짜별로 목록을 저장한다. 브리핑은 하루 세 번 시도하므로
+        두 번째부터는 DART 를 다시 부르지 않는다.
+      · 상한 — 시가총액 순으로 정렬해 상위 MAX 개만 남긴다. 2,040개를
+        브리핑에 쓸 수도 없고, 큰 회사부터 보는 게 맞다.
     """
     key = os.getenv("DART_API_KEY")
     if not key:
         log("· DART_API_KEY 없음 — 공시 생략")
         return []
-    try:
-        import OpenDartReader
-        dart = OpenDartReader(key)
-        df = dart.list(start=trade_date, end=trade_date, kind="A", final=False)
-    except Exception as e:
-        log(f"· DART 조회 실패: {e}")
-        return []
-    if df is None or getattr(df, "empty", True):
-        return []
+
+    cache = CACHE_DIR / f"filings_{trade_date}.json"
+    rows = None
+    if cache.exists():
+        try:
+            rows = json.loads(cache.read_text(encoding="utf-8"))
+            log(f"· 공시 목록 캐시 사용 ({len(rows):,}건, {cache.name})")
+        except Exception as e:
+            log(f"· 캐시 읽기 실패, 다시 받는다: {e}")
+            rows = None
+
+    if rows is None:
+        try:
+            import OpenDartReader
+            dart = OpenDartReader(key)
+            df = dart.list(start=trade_date, end=trade_date, kind="A", final=False)
+        except Exception as e:
+            log(f"· DART 조회 실패: {e}")
+            return []
+        if df is None or getattr(df, "empty", True):
+            return []
+        rows = [{"stock_code": str(r.get("stock_code", "")).strip(),
+                 "report_nm": str(r.get("report_nm", "")),
+                 "rcept_no": str(r.get("rcept_no", "")).strip()}
+                for _, r in df.iterrows()]
+        try:
+            CACHE_DIR.mkdir(parents=True, exist_ok=True)
+            cache.write_text(json.dumps(rows, ensure_ascii=False), encoding="utf-8")
+            log(f"· 공시 목록 {len(rows):,}건 받아 캐시에 저장")
+        except Exception as e:
+            log(f"· 캐시 저장 실패(계속 진행): {e}")
 
     out, seen = [], set()
-    for _, r in df.iterrows():
-        sc = str(r.get("stock_code", "")).strip()
-        nm = str(r.get("report_nm", ""))
+    for r in rows:
+        sc, nm = r["stock_code"], r["report_nm"]
         if sc not in cov or sc in seen or not any(k in nm for k in FILING_KINDS):
             continue
         seen.add(sc)
-        out.append({
-            "ticker": sc,
-            "name": names.get(sc, sc),
-            "report": nm.strip(),
-            "rceptNo": str(r.get("rcept_no", "")).strip(),
-        })
+        out.append({"ticker": sc, "name": names.get(sc, sc),
+                    "report": nm.strip(), "rceptNo": r["rcept_no"],
+                    "mcap": round((mcaps or {}).get(sc, 0.0), 3)})
+    total = len(out)
+    # 큰 회사부터. 2,040개를 브리핑에 쓸 수 없고, 리포트를 다 열면 느리다.
+    out.sort(key=lambda x: -(x.get("mcap") or 0))
+    if total > MAX_FILINGS:
+        log(f"· 공시 {total:,}건 중 시총 상위 {MAX_FILINGS}건만 본다")
+        out = out[:MAX_FILINGS]
+    for x in out:
+        x["totalFilings"] = total
     return out
 
 
@@ -372,7 +412,8 @@ def collect(trade_date=None):
     names = {s["ticker"]: s.get("name") or s["ticker"] for s in stocks}
     cal = market_calendar()
     idx, flows = index_and_flows(trade_date)
-    fl = with_checkpoints(filings(trade_date, cov, names))
+    mcaps = {x["ticker"]: (x.get("mcap") or 0.0) for x in stocks}
+    fl = with_checkpoints(filings(trade_date, cov, names, mcaps))
 
     br = breadth(stocks)
     # 지수를 받았으면 그걸 기준으로, 못 받았으면 시총가중 등락률로 대신한다.
@@ -452,10 +493,12 @@ def summarize(d):
     for s in d["sectors"]["down"]:
         L.append(f"   {s['change']:+6.2f}% (rel {s['rel']:+6.2f}) {s['sector']:<12} {s['count']}종목")
 
-    L.append(f"\n□ 정기보고서 {len(d['filings'])}건")
+    tot = (d["filings"][0].get("totalFilings") if d["filings"] else 0) or len(d["filings"])
+    more = f" (전체 {tot:,}건 중 시총 상위)" if tot > len(d["filings"]) else ""
+    L.append(f"\n□ 정기보고서 {len(d['filings'])}건{more}")
     for f in d["filings"][:12]:
         cp = f" · 체크포인트 {len(f['checkpoints'])}개" if f.get("checkpoints") else ""
-        L.append(f"   {f['name']:<14} {f['report']}{cp}")
+        L.append(f"   {f['name']:<14} {f.get('mcap', 0):>7.2f}조  {f['report']}{cp}")
     return "\n".join(L)
 
 
