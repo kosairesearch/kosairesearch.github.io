@@ -432,6 +432,9 @@ RULES = """규칙
 7. 종목을 처음 언급할 때는 링크를 단다. 형식은 [현대차](005380) — 대괄호에 표시할 말,
    소괄호에 여섯 자리 종목코드. 코드는 사실 블록에 적힌 것만 쓴다. 강조는 **굵게**.
    그 밖의 마크업이나 HTML 태그는 쓰지 마라.
+   **영문도 똑같은 형식으로 링크를 단다** — [SK Hynix](000660) 이다.
+   **SK Hynix**(000660) 은 링크가 아니고, 이렇게 쓰면 영어 화면에서 링크가 사라지고
+   괄호 안 숫자만 남는다. 한국어 문단에 링크가 있으면 대응하는 영문 문단에도 있어야 한다.
 8. 제목은 그날의 한 가지를 잡는다(12~30자). "코스피 상승, 외국인 순매수" 같은 나열이
    아니라 "휴장 하루, 미국은 두 번 열린다"처럼 관점이 있어야 한다.
 9. 리드는 두 문장. 오늘 무엇을 준비해야 하는지가 리드에서 끝나야 한다.
@@ -599,6 +602,41 @@ def _walk(brief):
                 yield f"{sid}.p{i}.{lang}", ((p or {}).get(lang) or "")
 
 
+BOLD_CODE = re.compile(r"\*\*([^*\n]{1,80})\*\*\s*\((\d{6})\)")
+
+
+def repair_links(brief):
+    """모델이 자주 내는 링크 형식 실수를 고친다.
+
+    2차 실행에서 한국어는 [SK하이닉스](000660) 으로 제대로 썼는데 영문만
+    **SK Hynix**(000660) 으로 냈다. 그 결과 영어 모드에서 종목 링크 13개가
+    전부 사라지고 괄호 안의 숫자만 남았다 — 사전 값에 태그가 없으면 엔진이
+    textContent 로 넣기 때문이다.
+
+    '굵게 쓴 이름 + 바로 뒤 여섯 자리 괄호'는 의도가 분명하므로 여기서
+    링크로 고친다. 이것 때문에 재시도를 돌리면 한 편당 350원이 또 나간다.
+    형식이 이보다 모호한 경우는 고치지 않고 validate 가 거부한다.
+    """
+    fixed = []
+
+    def fix(s):
+        out, n = BOLD_CODE.subn(r"[\1](\2)", s or "")
+        if n:
+            fixed.append(n)
+        return out
+
+    for key in ("title", "lead"):
+        for lang in ("ko", "en"):
+            if (brief.get(key) or {}).get(lang):
+                brief[key][lang] = fix(brief[key][lang])
+    for s in brief.get("sections") or []:
+        for p in s.get("paragraphs") or []:
+            for lang in ("ko", "en"):
+                if p.get(lang):
+                    p[lang] = fix(p[lang])
+    return sum(fixed)
+
+
 def normalize_links(brief, valid_tickers):
     """커버리지에 없는 코드나 형식이 틀린 링크는 평문으로 되돌린다.
 
@@ -683,6 +721,22 @@ def validate(brief, strict_coverage=True):
             m = pat.search(s)
             if m:
                 bad.append(f"{path} 에 금지 표현({name}): …{m.group(0)}…")
+
+    # 종목 링크가 한국어에만 있으면 영어 모드에서 그 링크가 통째로 사라진다.
+    # 2차 실행에서 실제로 13개가 날아갔다. 화면을 영어로 바꿔 보지 않으면
+    # 모르는 종류라서 여기서 막는다.
+    for n_sec, s in enumerate(brief.get("sections") or []):
+        sid = s.get("id") or f"#{n_sec}"
+        for i, p in enumerate(s.get("paragraphs") or []):
+            ko_codes = {m.group(2) for m in LINK.finditer(p.get("ko") or "")}
+            en_codes = {m.group(2) for m in LINK.finditer(p.get("en") or "")}
+            if ko_codes and not en_codes:
+                bad.append(f"{sid}.p{i} 의 종목 링크 {len(ko_codes)}개가 영문에 없다 — "
+                           "영문도 [Name](005930) 형식으로 링크를 달아라 "
+                           "(**Name**(005930) 은 링크가 아니다)")
+            elif en_codes - ko_codes:
+                bad.append(f"{sid}.p{i} 영문에만 있는 종목 링크: "
+                           f"{', '.join(sorted(en_codes - ko_codes))}")
 
     n, ratio = measure(brief)
     if n < LEN_MIN or n > LEN_MAX:
@@ -811,6 +865,9 @@ def main():
                 bail(text, [note])
                 return 3
             continue
+        n_fixed = repair_links(cand)
+        if n_fixed:
+            log(f"· **이름**(코드) 형식 {n_fixed}곳을 링크로 고쳤다")
         dropped = normalize_links(cand, tickers)
         if dropped:
             log("· 확인되지 않은 종목 링크를 평문으로 바꿨다: " + ", ".join(dropped[:8]))

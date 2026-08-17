@@ -202,6 +202,34 @@ b = copy.deepcopy(base)
 b["sections"][0]["paragraphs"][0]["ko"] = long_label
 ok("그런 것은 평문화 대상도 아니다", G.normalize_links(b, COV) == [])
 
+print("\n⑦-3 영문에 링크가 없으면 거부 — 2차 실행에서 13개가 날아갔다")
+b = copy.deepcopy(base)
+b["sections"][1]["paragraphs"][0]["ko"] += " [SK하이닉스](000660)가 1위였다."
+b["sections"][1]["paragraphs"][0]["en"] += " SK Hynix topped turnover."
+ok("한국어에만 링크가 있으면 거부", has(G.validate(b), "영문에 없다"), str(G.validate(b)))
+b["sections"][1]["paragraphs"][0]["en"] += " [SK Hynix](000660)"
+reasons = [r for r in G.validate(b) if "링크" in r]
+ok("영문에도 있으면 통과", not reasons, str(reasons))
+b = copy.deepcopy(base)
+b["sections"][1]["paragraphs"][0]["en"] += " [Samsung](005930)"
+ok("영문에만 있는 링크는 거부", has(G.validate(b), "영문에만 있는"))
+
+print("\n⑦-4 **이름**(코드) 는 링크로 고친다 — 재시도 350원을 아낀다")
+b = copy.deepcopy(base)
+b["sections"][3]["paragraphs"][0]["ko"] = "**SK하이닉스**(000660)가 1위였다."
+b["sections"][3]["paragraphs"][0]["en"] = "For **SK Hynix**(000660), turnover led."
+n_fixed = G.repair_links(b)
+check("두 곳을 고쳤다", n_fixed, 2)
+check("한국어가 링크가 됐다", b["sections"][3]["paragraphs"][0]["ko"],
+      "[SK하이닉스](000660)가 1위였다.")
+check("영문도 링크가 됐다", b["sections"][3]["paragraphs"][0]["en"],
+      "For [SK Hynix](000660), turnover led.")
+# 이미 올바른 형식은 건드리지 않는다
+b2 = copy.deepcopy(base)
+b2["sections"][3]["paragraphs"][0]["ko"] = "[현대차](005380)는 올랐다. **6.05%** 다."
+check("올바른 형식과 굵게는 그대로", G.repair_links(b2), 0)
+check("굵게가 살아 있다", "**6.05%**" in b2["sections"][3]["paragraphs"][0]["ko"], True)
+
 print("\n⑧ 응답 파싱")
 body = json.dumps(sample(), ensure_ascii=False)
 check("마커 안쪽만 읽는다",
