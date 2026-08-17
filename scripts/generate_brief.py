@@ -736,6 +736,38 @@ def repair_links(brief):
     return sum(fixed)
 
 
+def repair_brand(brief):
+    """'코사이' 를 'KOSAI' 로 고친다.
+
+    검증에서 거부하고 재시도하게 둘 수도 있지만, 그러면 한 편당 400원이 더
+    나가고 두 번 다 실패하면 그날 브리핑이 아예 안 나간다. 표기 하나 때문에
+    발행을 멈출 이유가 없다 — 의도가 분명하니 여기서 고친다.
+    검증(BRAND_KO)은 이 뒤에도 남은 게 있는지 보는 그물로만 쓴다.
+    """
+    n = 0
+
+    def fix(x):
+        nonlocal n
+        if "코사이" in (x or ""):
+            n += x.count("코사이")
+            return x.replace("코사이", "KOSAI")
+        return x
+
+    for key in ("title", "lead"):
+        for lang in ("ko", "en"):
+            if (brief.get(key) or {}).get(lang):
+                brief[key][lang] = fix(brief[key][lang])
+    for sec in brief.get("sections") or []:
+        for lang in ("ko", "en"):
+            if (sec.get("heading") or {}).get(lang):
+                sec["heading"][lang] = fix(sec["heading"][lang])
+        for para in sec.get("paragraphs") or []:
+            for lang in ("ko", "en"):
+                if para.get(lang):
+                    para[lang] = fix(para[lang])
+    return n
+
+
 def normalize_links(brief, valid_tickers):
     """커버리지에 없는 코드나 형식이 틀린 링크는 평문으로 되돌린다.
 
@@ -1046,6 +1078,9 @@ def main():
         n_fixed = repair_links(cand)
         if n_fixed:
             log(f"· **이름**(코드) 형식 {n_fixed}곳을 링크로 고쳤다")
+        n_brand = repair_brand(cand)
+        if n_brand:
+            log(f"· '코사이' {n_brand}곳을 'KOSAI' 로 고쳤다")
         dropped = normalize_links(cand, tickers)
         if dropped:
             log("· 확인되지 않은 종목 링크를 평문으로 바꿨다: " + ", ".join(dropped[:8]))

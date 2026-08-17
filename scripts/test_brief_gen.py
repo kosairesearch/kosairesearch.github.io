@@ -328,6 +328,23 @@ b["sections"][3]["paragraphs"][0]["ko"] = \
 reasons = [r for r in G.validate(b) if "코사이" in r]
 ok("KOSAI 표기는 통과", not reasons, str(reasons))
 
+print("\n⑦-9 '코사이' 는 거부 전에 자동 교정한다 — 표기 하나로 발행을 멈추지 않는다")
+b = copy.deepcopy(base)
+b["title"]["ko"] = "코사이가 짚은 것"
+b["lead"]["ko"] = "코사이 리포트에서 " + b["lead"]["ko"]
+b["sections"][3]["heading"]["ko"] = "코사이 커버리지"
+b["sections"][3]["paragraphs"][0]["ko"] = \
+    b["sections"][3]["paragraphs"][0]["ko"].replace("5월", "코사이 5월")
+b["sections"][3]["paragraphs"][0]["en"] = "코사이 report. " + b["sections"][3]["paragraphs"][0]["en"]
+n = G.repair_brand(b)
+check("다섯 곳을 고쳤다", n, 5)
+check("제목", b["title"]["ko"], "KOSAI가 짚은 것")
+ok("섹션 제목도", b["sections"][3]["heading"]["ko"] == "KOSAI 커버리지")
+ok("영문도", "KOSAI report." in b["sections"][3]["paragraphs"][0]["en"])
+reasons = [r for r in G.validate(b) if "코사이" in r]
+ok("교정 뒤에는 검증을 통과한다", not reasons, str(reasons))
+check("고칠 게 없으면 0", G.repair_brand(copy.deepcopy(base)), 0)
+
 print("\n⑧ 응답 파싱")
 body = json.dumps(sample(), ensure_ascii=False)
 check("마커 안쪽만 읽는다",
