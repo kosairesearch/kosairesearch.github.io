@@ -55,7 +55,7 @@ FIXED = {"모닝 브리핑": "Morning Brief"}
 
 # coverage 섹션 위에 붙는 출처 표시. 글에서도 밝히지만(프롬프트 6-1항) 화면에서
 # 한 번 더 보여 준다 — 이 섹션이 다른 섹션과 성격이 다르다는 걸 눈으로 알려야 한다.
-COV_LABEL = ("코사이 리포트 확인 지점", "From KOSAI report checkpoints")
+COV_LABEL = ("KOSAI 리포트 확인 지점", "From KOSAI report checkpoints")
 
 
 def log(*a):

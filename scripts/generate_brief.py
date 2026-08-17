@@ -85,7 +85,7 @@ SECTIONS = [
     ("us",       "간밤 미국 시장"),
     ("domestic", "직전 국내 장"),
     ("ahead",    "다음 개장까지 볼 것"),
-    ("coverage", "코사이 커버리지"),
+    ("coverage", "KOSAI 커버리지"),
 ]
 
 # 제목 길이. 6자 미만은 내용이 없고, 24자를 넘으면 제목이 아니라 문장이다.
@@ -94,6 +94,8 @@ HEAD_MIN, HEAD_MAX = 6, 24
 HEAD_TRANSLATIONESE = re.compile(r"(에서|에 관하여|에 관해|에 대하여|에 대해|으로부터|로부터)$")
 # 미국이 어젯밤에 열리지 않은 날에는 쓸 수 없는 말.
 TIME_WORDS = re.compile(r"간밤|어젯밤|지난밤|하룻밤|어제")
+# 회사명은 언제나 KOSAI 다. 한글 표기가 섞이면 브랜드가 화면마다 달라 보인다.
+BRAND_KO = re.compile(r"코사이")
 
 # 투자권유로 읽히는 표현. 종목 리포트와 같은 규칙이다(6-1항).
 # '순매수'는 사실이므로 막지 않는다 — 그래서 매수/매도는 뒤에 추천·의견·권유가
@@ -499,6 +501,10 @@ RULES = """규칙
 6. 확인 지점(checkpoints)은 유료 리포트 내용이다. 원문을 그대로 옮기지 말고 한 구절로
    요약하고, 종목 링크로 리포트를 가리킨다.
 
+6-0. **우리 회사를 부를 때는 언제나 `KOSAI` 라고 쓴다.** '코사이'라고 한글로 쓰지 마라.
+   한국어 본문에서도 영문 표기를 쓴다 — 브랜드 표기가 화면마다 달라지면 안 된다.
+   예: "KOSAI 리포트에 적어 둔 확인 지점", "KOSAI가 5월 리포트에서 꼽아 둔".
+
 6-1. **coverage 섹션은 그 내용이 어디서 왔는지 독자에게 밝힌다.** 이 섹션이 이 브리핑의
    존재 이유다 — 시황은 어디서나 읽을 수 있지만 "코사이가 리포트에 적어 둔 확인 지점의
    결과가 오늘 나왔다"는 우리만 쓴다. 그런데 그렇게 적지 않으면 독자는 그냥 종목 소식으로
@@ -892,6 +898,12 @@ def validate(brief, strict_coverage=True, facts=None):
                        "함께 밝혀라")
         if not LINK.search(body):
             bad.append("coverage 섹션에 종목 링크가 없다 — 링크가 근거를 가리키는 표시다")
+
+    # 회사명 표기. 한 군데만 '코사이'로 새도 브랜드가 흔들려 보인다.
+    for path, txt in _walk(brief):
+        m = BRAND_KO.search(txt)
+        if m:
+            bad.append(f"{path} 에 '코사이' — 회사명은 언제나 'KOSAI' 로 쓴다")
 
     n, ratio = measure(brief)
     if n < LEN_MIN or n > LEN_MAX:
