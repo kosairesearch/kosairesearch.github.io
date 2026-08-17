@@ -466,6 +466,8 @@ KOSi18n.register({
   <div class="crumb"><a href="Home.html">홈</a> / <b>모닝 브리핑</b></div>
 
   <article class="mb">
+    <!-- BRIEF:BODY:START · 여기부터 END 까지는 scripts/render_brief.py 가 만든다.
+         손으로 고치면 다음 생성에서 덮인다. -->
     <header class="mb-head">
       <div class="mb-date">2026년 8월 17일 (월)</div>
       <h1>휴장 하루, 미국은 두 번 열린다</h1>
@@ -501,6 +503,7 @@ KOSi18n.register({
     </section>
 
     <p class="mb-disc" data-i18n-block>본 자료는 공시(DART)·국내 시장 데이터(KRX)와 공개된 해외 시장·일정 자료를 바탕으로 작성한 정보 제공 자료이며 투자 권유가 아닙니다. 국내 수치는 2026년 8월 14일 종가 기준입니다.</p>
+    <!-- BRIEF:BODY:END -->
   </article>
 </div>
 
@@ -544,7 +547,10 @@ applyTheme(saved);
 themeBtn.addEventListener('click',()=>applyTheme(root.getAttribute('data-theme')==='dark'?'light':'dark'));
 
 /* 브리핑 본문 영문. 문단은 data-i18n-block 이라 통째로 갈아끼워지므로,
-   종목 링크가 영어 모드에서 사라지지 않도록 값 안에 태그를 그대로 둔다. */
+   종목 링크가 영어 모드에서 사라지지 않도록 값 안에 태그를 그대로 둔다.
+   사전의 키는 화면에 보이는 한국어를 공백 정규화한 것이다(engine 의 norm).
+   그래서 키에는 태그가 없고 &amp; 같은 엔티티는 풀린 상태여야 한다. */
+/* BRIEF:I18N:START · scripts/render_brief.py 가 만든다 */
 if(window.KOSi18n) KOSi18n.register({
   "모닝 브리핑":"Morning Brief",
   "2026년 8월 17일 (월)":"Monday, August 17, 2026",
@@ -573,6 +579,7 @@ if(window.KOSi18n) KOSi18n.register({
 
   "본 자료는 공시(DART)·국내 시장 데이터(KRX)와 공개된 해외 시장·일정 자료를 바탕으로 작성한 정보 제공 자료이며 투자 권유가 아닙니다. 국내 수치는 2026년 8월 14일 종가 기준입니다.":"This material is compiled from regulatory filings (DART), Korean market data (KRX) and publicly available overseas market and calendar sources, for information purposes only. It is not investment advice. Korean figures are as of the August 14, 2026 close."
 });
+/* BRIEF:I18N:END */
 </script>
 <script type="module" src="auth-state.js"></script>
 </body>
