@@ -602,6 +602,10 @@ KOSi18n.register({
       <a class="src glass" href="https://pypi.org/project/pykrx" target="_blank" rel="noopener"><div class="src-head"><h4>pykrx</h4><span class="src-kind">예비 수집</span></div><p>한국거래소 데이터를 직접 받아오는 오픈소스 파이썬 라이브러리입니다. 상장 종목 목록 확인과, 주 수집 경로가 미확보일 때의 예비 경로로 사용합니다.</p><span class="link">pypi.org/pykrx ↗</span></a>
       <a class="src glass" href="https://dart.fss.or.kr" target="_blank" rel="noopener"><div class="src-head"><h4>DART</h4><span class="src-kind">공시</span></div><p>금융감독원 전자공시시스템. 상장주식수·영문 회사명 등 기업 기본 정보를 보강하는 데 사용합니다.</p><span class="link">dart.fss.or.kr ↗</span></a>
       <a class="src glass" href="https://www.anthropic.com" target="_blank" rel="noopener"><div class="src-head"><h4>Anthropic Claude</h4><span class="src-kind">AI 모델</span></div><p>리포트·업종 분석 작성과 종목 업종 자동 분류에 사용하는 LLM입니다. 작성 시 웹 검색으로 최근 업황을 확인합니다.</p><span class="link">anthropic.com ↗</span></a>
+      <a class="src glass" href="https://finance.yahoo.com" target="_blank" rel="noopener"><div class="src-head"><h4>Yahoo Finance</h4><span class="src-kind">해외 시세 · 모닝 브리핑</span></div><p>모닝 브리핑이 쓰는 간밤 미국 시장 데이터입니다. S&amp;P 500·나스닥·다우·필라델피아 반도체지수, 미 10년물 금리, WTI, 달러인덱스, 원/달러 환율, 그리고 코스피·코스닥 지수를 종가 기준으로 받아옵니다.</p><span class="link">finance.yahoo.com ↗</span></a>
+      <a class="src glass" href="https://finance.naver.com" target="_blank" rel="noopener"><div class="src-head"><h4>네이버 금융</h4><span class="src-kind">투자자별 수급 · 모닝 브리핑</span></div><p>코스피·코스닥의 일별 투자자별 순매수(개인·외국인·기관)를 받아옵니다. 받은 값은 세 주체의 합이 0에 가까운지, 자릿수가 억원 단위와 맞는지 자동 검증한 뒤에만 사용합니다.</p><span class="link">finance.naver.com ↗</span></a>
+      <a class="src glass" href="https://www.federalreserve.gov/monetarypolicy/fomccalendars.htm" target="_blank" rel="noopener"><div class="src-head"><h4>미 연방준비제도</h4><span class="src-kind">일정 · 모닝 브리핑</span></div><p>FOMC 회의 일정과 의사록 공개일을 연준 공식 페이지에서 직접 확인합니다. 공개일은 추정하지 않고 페이지에 적힌 확정 날짜를 사용합니다.</p><span class="link">federalreserve.gov ↗</span></a>
+      <a class="src glass" href="https://news.google.com" target="_blank" rel="noopener"><div class="src-head"><h4>Google News</h4><span class="src-kind">뉴스 단서 · 모닝 브리핑</span></div><p>시장이 왜 움직였는지 파악하기 위한 <b>기사 제목만</b> 받아옵니다. 본문은 수집하지 않으며, 제목에 나온 수치는 브리핑에 옮기지 않습니다 — 숫자는 시세 데이터에서만 가져옵니다.</p><span class="link">news.google.com ↗</span></a>
     </div>
     <p class="sec-lead" style="margin:14px 0 0;font-size:13px;color:var(--fg-3)">실시간 시세는 제공되지 않으며, 본 사이트의 시세는 매 거래일 종가 기준입니다.</p>
   </div></section>
@@ -643,10 +647,11 @@ KOSi18n.register({
         <table class="dt">
           <thead><tr><th style="width:180px">데이터 종류</th><th style="width:150px">갱신 주기</th><th style="width:220px">다음 업데이트 예정</th><th>비고</th></tr></thead>
           <tbody>
+            <tr><td><b>모닝 브리핑</b></td><td><span class="cyc">매 거래일</span></td><td>평일 오전 7시 30분(KST)</td><td>국내 증시가 열리는 날에만 발행합니다. 주말·공휴일·대체공휴일에는 발행하지 않으며, 다음 브리핑이 올라올 때까지 직전 브리핑이 그대로 유지됩니다.</td></tr>
             <tr><td><b>시세·거래량·시가총액</b></td><td><span class="cyc">매 거래일</span></td><td>평일 저녁 19~22시(KST)</td><td>일일 종가 기준이며, 실시간 시세는 제공되지 않습니다.</td></tr>
             <tr><td><b>종목 업종 분류</b></td><td><span class="cyc">수시</span></td><td>신규 상장 종목 감지 시</td><td>AI가 사업 내용 기준으로 자동 분류합니다.</td></tr>
             <tr><td><b>종목 리포트</b></td><td><span class="cyc">수시</span></td><td>신규 상장 시 · 정기보고서 제출 시</td><td>전 종목 대상으로, 사업·분기·반기보고서가 새로 공시되면 해당 종목 리포트를 최신 실적 기준으로 다시 작성합니다.</td></tr>
-            <tr><td><b>업종 분석</b></td><td><span class="cyc">분기별</span></td><td>1·4·7·10월 1일</td><td>업종별 집계와 AI 분석으로 전 업종을 다시 작성합니다.</td></tr>
+            <tr><td><b>업종 분석</b></td><td><span class="cyc">분기별</span></td><td>1·4·7·10월 1일</td><td>AI가 전 업종의 분석 본문을 다시 작성합니다. 업종별 등락률·시가총액 같은 집계 수치는 이와 별개로 매 거래일 갱신되며, 본문에 오류가 확인되면 분기 중에도 다시 작성합니다.</td></tr>
             <tr><td><b>신규·상장폐지 종목</b></td><td><span class="cyc">매 거래일</span></td><td>자동 반영</td><td>신규는 자동 추가·분류, 폐지는 자동 제외됩니다.</td></tr>
           </tbody>
         </table>
@@ -792,6 +797,22 @@ if(window.KOSi18n) KOSi18n.register({
   "데이터 종류": "Data type",
   "갱신 주기": "Frequency",
   "다음 업데이트 예정": "Next update",
+  "Yahoo Finance": "Yahoo Finance",
+  "해외 시세 · 모닝 브리핑": "Overseas markets · Morning Brief",
+  "모닝 브리핑이 쓰는 간밤 미국 시장 데이터입니다. S&P 500·나스닥·다우·필라델피아 반도체지수, 미 10년물 금리, WTI, 달러인덱스, 원/달러 환율, 그리고 코스피·코스닥 지수를 종가 기준으로 받아옵니다.": "The overnight U.S. market data behind the Morning Brief: the S&amp;P 500, Nasdaq, Dow and Philadelphia Semiconductor Index, the U.S. 10-year yield, WTI, the dollar index, USD/KRW, plus the KOSPI and KOSDAQ — all on a closing basis.",
+  "네이버 금융": "Naver Finance",
+  "투자자별 수급 · 모닝 브리핑": "Investor flows · Morning Brief",
+  "코스피·코스닥의 일별 투자자별 순매수(개인·외국인·기관)를 받아옵니다. 받은 값은 세 주체의 합이 0에 가까운지, 자릿수가 억원 단위와 맞는지 자동 검증한 뒤에만 사용합니다.": "Daily net buying by investor type (retail, foreign, institutional) for the KOSPI and KOSDAQ. Figures are used only after automatic checks that the three sides roughly net to zero and that the magnitude matches the expected unit.",
+  "미 연방준비제도": "U.S. Federal Reserve",
+  "일정 · 모닝 브리핑": "Calendar · Morning Brief",
+  "FOMC 회의 일정과 의사록 공개일을 연준 공식 페이지에서 직접 확인합니다. 공개일은 추정하지 않고 페이지에 적힌 확정 날짜를 사용합니다.": "FOMC meeting dates and minutes release dates are read directly from the Federal Reserve's own calendar page. Release dates are never estimated — only the confirmed dates published there are used.",
+  "Google News": "Google News",
+  "뉴스 단서 · 모닝 브리핑": "News signals · Morning Brief",
+  "시장이 왜 움직였는지 파악하기 위한 기사 제목만 받아옵니다. 본문은 수집하지 않으며, 제목에 나온 수치는 브리핑에 옮기지 않습니다 — 숫자는 시세 데이터에서만 가져옵니다.": "Only <b>headlines</b> are collected, as a clue to why the market moved. Article bodies are never retrieved, and figures appearing in headlines are not carried into the brief — numbers come only from market data.",
+  "모닝 브리핑": "Morning Brief",
+  "평일 오전 7시 30분(KST)": "07:30 KST on trading days",
+  "국내 증시가 열리는 날에만 발행합니다. 주말·공휴일·대체공휴일에는 발행하지 않으며, 다음 브리핑이 올라올 때까지 직전 브리핑이 그대로 유지됩니다.": "Published only on days the Korean market is open. There is no edition on weekends, public holidays or substitute holidays, and the previous brief stays in place until the next one is published.",
+  "AI가 전 업종의 분석 본문을 다시 작성합니다. 업종별 등락률·시가총액 같은 집계 수치는 이와 별개로 매 거래일 갱신되며, 본문에 오류가 확인되면 분기 중에도 다시 작성합니다.": "AI rewrites the written analysis for every sector. Aggregate figures such as sector returns and market capitalization refresh separately on each trading day, and the text is regenerated mid-quarter if an error is found.",
   "비고": "Notes",
   "시세·거래량·시가총액": "Quotes · Volume · Market cap",
   "매 거래일": "Every trading day",
