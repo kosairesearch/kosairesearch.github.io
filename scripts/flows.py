@@ -79,6 +79,12 @@ def candidates(sosok, code, bizdate):
          f"?bizdate={bizdate}&sosok={sosok}"),
         ("investorDealTrendDay(page)", "html", WEB_UA,
          f"https://finance.naver.com/sise/investorDealTrendDay.naver?sosok={sosok}&page=1"),
+        # 이 페이지는 58KB 를 준다. 그 안의 투자자별 매매동향은 하루치 한 줄이라
+        # 날짜 칸이 없어서 표 파서로는 안 잡힌다 — 라벨 파서가 노리는 대상이다.
+        ("sise_index(라벨)", "html", WEB_UA,
+         f"https://finance.naver.com/sise/sise_index.naver?code={code}"),
+        ("국내증시 메인(라벨)", "html", WEB_UA,
+         "https://finance.naver.com/sise/"),
     ]
 
 
@@ -157,6 +163,36 @@ def _from_html(html):
             continue
         out.append((d, dict(zip(order, nums))))
     return out
+
+
+def _from_labeled(html, fallback_date):
+    """날짜 열이 없고 '외국인 30,387' 처럼 이름 옆에 값만 있는 형태.
+
+    sise_index 페이지는 58KB 를 주는데 그 안의 투자자별 매매동향은 하루치
+    한 줄이라 날짜 칸이 없다. 앞선 파서가 '첫 칸이 날짜'를 요구해서 이걸
+    통째로 놓쳤다. 여기서는 이름과 바로 뒤 숫자를 짝지어 읽고, 날짜는
+    호출자가 준 기준 거래일을 쓴다.
+    """
+    txt = re.sub(r"<script.*?</script>", "", html, flags=re.S)
+    # 태그를 지우되 칸 경계는 남긴다 — 안 그러면 숫자가 붙어 버린다
+    flat = re.sub(r"\s+", " ", re.sub(r"<[^>]+>", " ", txt))
+    vals = {}
+    for actor in ("개인", "외국인", "기관계", "기관"):
+        if actor in vals:
+            continue
+        # 이름 뒤 40자 안에서 첫 숫자를 찾는다. 부호는 +,- 와 △▽ 를 본다.
+        for m in re.finditer(re.escape(actor) + r"[^\d\-+△▽]{0,40}([+\-△▽]?[\d,]{3,})", flat):
+            raw = m.group(1).replace("△", "+").replace("▽", "-")
+            n = _num(raw)
+            if n is not None:
+                vals[actor] = n
+                break
+    # '기관계' 와 '기관' 이 둘 다 잡히면 하나만 남긴다
+    if "기관계" in vals and "기관" in vals:
+        vals.pop("기관")
+    if len(vals) < 3:
+        return []
+    return [(fallback_date, vals)]
 
 
 # ────────────────────────────── JSON 파서 ──────────────────────────────
@@ -257,6 +293,11 @@ def market(sosok, code, bizdate):
             rows, keys_used = _from_json(body if got == "json" else json.loads(body))
         else:
             rows = _from_html(body)
+            if not rows:
+                # 날짜 열이 없는 형태를 다시 시도한다
+                rows = _from_labeled(body, _date(bizdate) or datetime.date.today())
+                if rows:
+                    keys_used = ["라벨 인접값"]
 
         if not rows:
             log(f"· {name} 데이터 행 없음 ({nbytes:,}바이트)")
@@ -265,9 +306,12 @@ def market(sosok, code, bizdate):
                     log(f"    JSON 뼈대: {_shape(body)}")
                 else:
                     txt = re.sub(r"\s+", " ", re.sub(r"<script.*?</script>", "", body, flags=re.S))
-                    i = txt.find("<td")
-                    log(f"    <td> 개수 {txt.count('<td')} · 부근: "
-                        f"{txt[max(0,i-80):i+320] if i >= 0 else txt[:320]!r}")
+                    j = txt.find("외국인")
+                    log(f"    <td> 개수 {txt.count('<td')}")
+                    if j >= 0:
+                        log(f"    '외국인' 부근: {txt[max(0,j-160):j+260]!r}")
+                    else:
+                        log(f"    '외국인' 없음 · 앞부분: {txt[:260]!r}")
             continue
 
         rows.sort(key=lambda r: r[0])

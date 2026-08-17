@@ -76,6 +76,30 @@ SHELL = """<table summary="일자별 순매수에 관한 표 입니다."><captio
 <th rowspan="2">외국인</th></tr></table>"""
 ok("헤더만 있으면 0행", F._from_html(SHELL) == [], str(F._from_html(SHELL)))
 
+print("\n③-2 날짜 열이 없는 형태 — sise_index 처럼 하루치 한 줄")
+LABELED = """<div class="invest_trend"><h4>투자자별 매매동향</h4>
+<table class="type_2"><tr><th scope="row">개인</th><td class="num">-26,500</td></tr>
+<tr><th scope="row">외국인</th><td class="num">+30,387</td></tr>
+<tr><th scope="row">기관계</th><td class="num">-4,200</td></tr></table></div>"""
+lrows = F._from_labeled(LABELED, D)
+ok("한 행을 만들었다", len(lrows) == 1, str(lrows))
+if lrows:
+    _, lvals = lrows[0]
+    check("외국인", lvals["외국인"], 30387)
+    check("개인", lvals["개인"], -26500)
+    ok("합 검증 통과", F._score(lvals)[0], F._score(lvals)[1])
+# 네이버는 부호를 △▽ 로 쓰는 화면도 있다
+TRI = ("<tr><th>개인</th><td>▽26,500</td></tr><tr><th>외국인</th><td>△30,387</td></tr>"
+       "<tr><th>기관계</th><td>▽4,200</td></tr>")
+trows = F._from_labeled(TRI, D)
+ok("△▽ 부호 처리", trows and trows[0][1]["외국인"] == 30387 and trows[0][1]["개인"] == -26500,
+   str(trows))
+ok("주체가 둘뿐이면 거부",
+   F._from_labeled("<tr><th>개인</th><td>100</td></tr><tr><th>외국인</th><td>-100</td></tr>", D) == [])
+# 주체 이름이 본문에 지나가듯 나오는 페이지에서 엉뚱한 숫자를 물면 안 된다
+NOISE = "<p>외국인 투자자 동향에 관심이 모인다</p><p>개인 투자자도 늘었다</p>"
+ok("숫자 없는 언급은 무시", F._from_labeled(NOISE, D) == [], str(F._from_labeled(NOISE, D)))
+
 print("\n④ JSON — 원 단위로 오는 모바일 API 형태")
 JS = {"investorTrend": [
     {"localTradedAt": "2026-08-14", "individual": -2650000000000,
