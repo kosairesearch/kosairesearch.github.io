@@ -76,12 +76,24 @@ LEN_WANT = (2500, 3000)
 COVERAGE_CAP = 0.25
 COVERAGE_HARD = 0.30      # 재시도 후에도 이걸 넘으면 발행하지 않는다
 
+# 섹션 id 와 그 섹션이 하는 일. 순서가 글의 순서다.
+#
+# 제목은 여기 없다. 매일 모델이 새로 쓴다 — "간밤 뉴욕", "볼 것" 처럼 고정된
+# 이름은 번역체로 읽히고 내용이 없다. 대신 id 와 순서는 고정이라, 제목이
+# 달라져도 세 번째 섹션은 늘 '볼 것' 자리다.
 SECTIONS = [
-    ("us",       "간밤 뉴욕"),
+    ("us",       "간밤 미국 시장"),
     ("domestic", "직전 국내 장"),
-    ("ahead",    "볼 것"),
-    ("coverage", "코사이 커버리지에서"),
+    ("ahead",    "다음 개장까지 볼 것"),
+    ("coverage", "코사이 커버리지"),
 ]
+
+# 제목 길이. 6자 미만은 내용이 없고, 24자를 넘으면 제목이 아니라 문장이다.
+HEAD_MIN, HEAD_MAX = 6, 24
+# 영어 제목을 그대로 옮긴 티가 나는 끝맺음.
+HEAD_TRANSLATIONESE = re.compile(r"(에서|에 관하여|에 관해|에 대하여|에 대해|으로부터|로부터)$")
+# 미국이 어젯밤에 열리지 않은 날에는 쓸 수 없는 말.
+TIME_WORDS = re.compile(r"간밤|어젯밤|지난밤|하룻밤|어제")
 
 # 투자권유로 읽히는 표현. 종목 리포트와 같은 규칙이다(6-1항).
 # '순매수'는 사실이므로 막지 않는다 — 그래서 매수/매도는 뒤에 추천·의견·권유가
@@ -172,6 +184,36 @@ def stale_data(prev, data_date):
     return (f"우리 시세 데이터가 {data_date} 인데 직전 거래일은 {prev} 다 ({lag}일 차이)."
             " 국내 장 문단이 다른 날 숫자를 섞게 된다 — data/stocks.js 를 최신으로"
             " 맞춰라 (무시하려면 BRIEF_MAX_DATA_LAG)")
+
+
+def overnight_ok(facts):
+    """'간밤'·'어젯밤'을 쓸 수 있는 날인가. (쓸 수 있나, 사실 블록에 적을 문장)
+
+    미국이 어젯밤에 열렸을 때만 쓸 수 있다. 그런 날은 화~금 아침뿐이다 —
+    월요일 아침의 마지막 미국 세션은 금요일이고, 연휴 뒤에는 두 번 이상이다.
+
+    어제 나간 브리핑 제목이 '간밤 뉴욕'이었는데 그 글은 금요일과 월요일
+    두 세션을 다뤘다. 모델이 날짜를 보고 알아서 판단하게 두면 이런 게 새므로,
+    쓸 수 있는지 없는지를 사실 블록에 문장으로 적어 넘긴다.
+    """
+    cal = ((facts or {}).get("domestic") or {}).get("calendar") or {}
+    ser = (facts or {}).get("markets") or {}
+    today_s = cal.get("today") or ""
+    us_date = (ser.get("sp500") or ser.get("nasdaq") or {}).get("date")
+    if not (re.fullmatch(r"\d{8}", today_s) and us_date):
+        return True, None          # 판단 근거가 없으면 막지 않는다
+    try:
+        today = datetime.date.fromisoformat(f"{today_s[:4]}-{today_s[4:6]}-{today_s[6:]}")
+        us = datetime.date.fromisoformat(us_date)
+    except ValueError:
+        return True, None
+    gap = (today - us).days
+    if gap == 1:
+        return True, None
+    return False, (f"[표현 주의] 미국 지수 기준일은 {us_date} 이고 오늘은 "
+                   f"{today.isoformat()} 다 — 어젯밤에 미국이 열리지 않았다."
+                   " '간밤'·'어젯밤'·'지난밤'을 쓰지 마라."
+                   " 직전 거래일도 어제가 아니므로 '어제'도 쓸 수 없다.")
 
 
 def skip_reason(cal, allow_closed=False):
@@ -291,9 +333,13 @@ def _facts_text(facts):
             L.append(f"  ※ 직전 거래일과 다음 개장 사이가 {gap}일이다. 그 사이 미국 시장이"
                      f" 여러 번 열리므로, 다음 개장일이 그것을 한꺼번에 반영한다.")
 
+    ok_overnight, note = overnight_ok(facts)
+    if note:
+        L.append("  " + note)
+
     # 해외
     if ser:
-        L.append("\n[간밤 해외 · 종가와 전일 대비]")
+        L.append("\n[미국·해외 · 종가와 전일 대비]")
         for key in ("sp500", "nasdaq", "dow", "sox", "ust10y", "wti", "dxy"):
             v = ser.get(key)
             if v:
@@ -431,11 +477,12 @@ def _facts_text(facts):
 RULES = """규칙
 
 1. 분량 2,500~3,000자(한국어 본문 기준, 제목·리드 포함). 스크롤 두세 번.
-2. 섹션은 아래 넷을 이 순서로. 데이터가 없는 섹션은 통째로 빼라(빈 섹션을 만들지 마라).
-   us       간밤 뉴욕 — 미국 3대 지수와 반도체 지수, 움직인 이유, 국내로 옮겨붙을 성격인지 (약 700자)
-   domestic 직전 국내 장 — 지수·수급, 폭(중앙값 vs 시총가중), 업종, 거래 쏠림 (약 650자)
-   ahead    볼 것 — 환율·금리, 일정, 다음 개장까지의 관전 지점 (약 700자)
-   coverage 코사이 커버리지에서 — 커버 종목에 걸린 확인 지점 중 결과가 나온/나올 것 (약 600자)
+2. 섹션은 아래 넷을 이 순서로. id 는 그대로 쓰고, 데이터가 없는 섹션은 통째로
+   빼라(빈 섹션을 만들지 마라).
+   us       미국 3대 지수와 반도체 지수, 움직인 이유, 국내로 옮겨붙을 성격인지 (약 700자)
+   domestic 지수·수급, 폭(중앙값 vs 시총가중), 업종, 거래 쏠림 (약 650자)
+   ahead    환율·금리, 일정, 다음 개장까지의 관전 지점 (약 700자)
+   coverage 커버 종목에 걸린 확인 지점 중 결과가 나온/나올 것 (약 600자)
 3. **coverage 섹션은 전체 분량의 25%를 넘지 않는다.** 이 브리핑은 우리 리포트
    홍보물이 아니라 장 준비용 글이다. 커버리지 얘기는 "실제로 움직였거나 이번 주에
    결과가 나오는 것"만 넣는다.
@@ -454,8 +501,20 @@ RULES = """규칙
    **영문도 똑같은 형식으로 링크를 단다** — [SK Hynix](000660) 이다.
    **SK Hynix**(000660) 은 링크가 아니고, 이렇게 쓰면 영어 화면에서 링크가 사라지고
    괄호 안 숫자만 남는다. 한국어 문단에 링크가 있으면 대응하는 영문 문단에도 있어야 한다.
-8. 제목은 그날의 한 가지를 잡는다(12~30자). "코스피 상승, 외국인 순매수" 같은 나열이
-   아니라 "휴장 하루, 미국은 두 번 열린다"처럼 관점이 있어야 한다.
+8. 기사 제목(title)은 그날의 한 가지를 잡는다(12~30자). "코스피 상승, 외국인 순매수"
+   같은 나열이 아니라 "휴장 하루, 미국은 두 번 열린다"처럼 관점이 있어야 한다.
+
+8-1. **섹션 제목(heading)도 매일 새로 쓴다.** 고정된 이름을 쓰지 마라 — 그날 그
+   섹션에서 가장 중요한 사실이 제목이 되어야 한다.
+   · 6~24자. 명사만 나열하지 말고 서술형으로.
+     좋음: "반도체는 비켜갔다" · "지수는 올랐지만 폭은 좁았다" · "18일이 두 번을 받는다"
+     나쁨: "간밤 뉴욕" · "볼 것" · "코사이 커버리지에서" — 번역체이고 내용이 없다
+   · '~에서', '~에 관하여', '~에 대하여' 로 끝내지 마라. 영어 제목을 옮긴 티가 난다.
+   · **시간 표현을 조심하라.** 사실 블록에 '[표현 주의]' 가 적혀 있으면 '간밤'·'어젯밤'·
+     '어제'를 쓸 수 없는 날이다. 미국은 화~금 아침에만 어젯밤에 열렸다 — 월요일 아침의
+     마지막 세션은 금요일이고, 연휴 뒤에는 두 번 이상이다.
+   · 네 제목이 서로 겹치지 않게 하고, 기사 제목을 그대로 반복하지 마라.
+   · 제목도 단정하지 않는다. 5번 규칙이 제목에도 적용된다.
 9. 리드는 두 문장. 오늘 무엇을 준비해야 하는지가 리드에서 끝나야 한다.
 10. 영어는 번역투가 아니라 영문 기사로 읽히게 쓴다. 한국어와 같은 사실, 같은 순서.
     종목 링크와 **굵게**는 영어에도 같이 넣는다.
@@ -467,7 +526,7 @@ RULES = """규칙
   "title": {"ko": "제목", "en": "headline"},
   "lead":  {"ko": "리드 두 문장", "en": "..."},
   "sections": [
-    {"id": "us", "heading": {"ko": "간밤 뉴욕", "en": "..."},
+    {"id": "us", "heading": {"ko": "그날 내용을 담은 섹션 제목", "en": "..."},
      "paragraphs": [{"ko": "문단", "en": "paragraph"}]}
   ]
 }
@@ -698,7 +757,54 @@ def measure(brief):
     return total, (cov / total if total else 0.0)
 
 
-def validate(brief, strict_coverage=True):
+def check_headings(brief, facts=None):
+    """섹션 제목 검사. 제목을 매일 새로 쓰기로 했으니 여기가 그 대가다.
+
+    고정 제목이면 한 번 정하고 끝인데, 매일 달라지면 매일 검증해야 한다.
+    사용자가 그 비용을 알고 고른 선택이므로 조용히 넘기지 않는다.
+    """
+    bad = []
+    heads, ok_overnight = [], overnight_ok(facts)[0]
+    title_ko = ((brief.get("title") or {}).get("ko") or "").strip()
+
+    for n, s in enumerate(brief.get("sections") or []):
+        sid = s.get("id") or f"#{n}"
+        ko = _plain((s.get("heading") or {}).get("ko") or "").strip()
+        if not ko:
+            continue
+        heads.append((sid, ko))
+        if len(ko) < HEAD_MIN:
+            bad.append(f"{sid} 제목 '{ko}' 이 {len(ko)}자 — {HEAD_MIN}자 이상. "
+                       "그날 내용을 담아라('볼 것' 같은 건 내용이 없다)")
+        elif len(ko) > HEAD_MAX:
+            bad.append(f"{sid} 제목이 {len(ko)}자 — {HEAD_MAX}자 이하. 제목이 아니라 문장이다")
+        if HEAD_TRANSLATIONESE.search(ko):
+            bad.append(f"{sid} 제목 '{ko}' 이 번역체로 끝난다 — "
+                       "'~에서', '~에 대하여' 로 끝내지 마라")
+        if title_ko and ko == _plain(title_ko).strip():
+            bad.append(f"{sid} 제목이 기사 제목과 같다 — 섹션마다 다른 것을 잡아라")
+        if not ok_overnight and TIME_WORDS.search(ko):
+            m = TIME_WORDS.search(ko)
+            bad.append(f"{sid} 제목에 '{m.group(0)}' — 어젯밤에 미국이 열리지 않은 날이다. "
+                       "사실 블록의 [표현 주의] 를 보라")
+
+    dup = {k for k, c in
+           {h: [x for _, x in heads].count(h) for _, h in heads}.items() if c > 1}
+    if dup:
+        bad.append(f"섹션 제목이 겹친다: {', '.join(sorted(dup))}")
+
+    # 제목만 막고 본문을 열어 두면 첫 문장에서 그대로 샌다.
+    if not ok_overnight:
+        for path, s in _walk(brief):
+            if not path.endswith(".ko"):
+                continue
+            if path.startswith(("title.", "lead.")) and TIME_WORDS.search(s):
+                m = TIME_WORDS.search(s)
+                bad.append(f"{path} 에 '{m.group(0)}' — 어젯밤에 미국이 열리지 않은 날이다")
+    return bad
+
+
+def validate(brief, strict_coverage=True, facts=None):
     """거부 이유 목록. 빈 목록이면 통과."""
     bad = []
     if not isinstance(brief, dict):
@@ -756,6 +862,8 @@ def validate(brief, strict_coverage=True):
             elif en_codes - ko_codes:
                 bad.append(f"{sid}.p{i} 영문에만 있는 종목 링크: "
                            f"{', '.join(sorted(en_codes - ko_codes))}")
+
+    bad += check_headings(brief, facts)
 
     n, ratio = measure(brief)
     if n < LEN_MIN or n > LEN_MAX:
@@ -903,7 +1011,7 @@ def main():
             log("· 확인되지 않은 종목 링크를 평문으로 바꿨다: " + ", ".join(dropped[:8]))
         # 1차는 설계대로 25% 로 본다. 2차는 30% 까지 눈감아 준다 — 발행이
         # 안 되는 것보다는 커버리지가 조금 긴 게 낫다. 그 위는 발행하지 않는다.
-        bad = validate(cand, strict_coverage=(attempt == 1))
+        bad = validate(cand, strict_coverage=(attempt == 1), facts=facts)
         if not bad:
             brief = cand
             break
