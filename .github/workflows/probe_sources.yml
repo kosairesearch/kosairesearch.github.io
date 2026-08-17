@@ -1,0 +1,26 @@
+name: 🔎 브리핑 데이터 소스 판정 (수동)
+
+# 모닝 브리핑에 넣을 값들을 어디서 가져올지 정하기 위한 일회성 점검.
+# 아무것도 커밋하지 않고, 되는 소스와 안 되는 소스만 로그로 알려준다.
+on:
+  workflow_dispatch:
+
+jobs:
+  probe:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+          cache: 'pip'
+      - run: pip install -r requirements.txt yfinance
+
+      - name: 소스 판정
+        env:
+          DART_API_KEY: ${{ secrets.DART_API_KEY }}
+          NAVER_CLIENT_ID: ${{ secrets.NAVER_CLIENT_ID }}
+          NAVER_CLIENT_SECRET: ${{ secrets.NAVER_CLIENT_SECRET }}
+          ECOS_API_KEY: ${{ secrets.ECOS_API_KEY }}
+          FRED_API_KEY: ${{ secrets.FRED_API_KEY }}
+        run: python scripts/probe_sources.py
