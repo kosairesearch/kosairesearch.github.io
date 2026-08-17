@@ -2,9 +2,13 @@ name: 📰 모닝 브리핑
 
 # 국내 증시가 열리는 날 아침, kosai.kr/brief.html 에 그날 브리핑을 올린다.
 #
-# 만드는 것과 올리는 것을 나눴다. 06:00·06:40 에 만들어 두고 07:20 에만 올린다 —
-# 앞의 시도가 성공하면 브리핑이 06:05 에 올라가 버리는데 07:30 에 나가야 하는
-# 글이다. 만드는 건 여러 번 시도해도 되지만 올리는 건 정해진 시각에 한 번이다.
+# 만드는 것과 올리는 것을 나눴다. 06:00·06:40 에 만들어 두고 마지막 슬롯에서만
+# 올린다. 앞의 시도가 성공하면 브리핑이 06:05 에 올라가 버리는데 07:30 에 나가야
+# 하는 글이다. 만드는 건 여러 번 시도해도 되지만 올리는 건 정해진 시각에 한 번이다.
+#
+# 발행 시각은 cron 에 맡기지 않는다. GitHub 스케줄은 부하가 높으면 밀리는데,
+# 8월 18일 첫 자동 발행에서 세 슬롯이 전부 18~20분씩 늦게 떴다. 그래서 마지막
+# 슬롯을 07:10 로 당겨 잡고, 잡에서 07:28 KST 까지 기다렸다 올린다.
 #
 # 휴장일에는 아무것도 하지 않는다. 주말·공휴일·대체공휴일 모두 포함이고 판정은
 # holidays 패키지가 한다(2026-08-17 광복절 대체공휴일을 정확히 잡았다).
@@ -17,7 +21,7 @@ on:
     # UTC. UTC 일~목이 KST 월~금이고, 세 시각이 모두 같은 UTC 날짜에 든다.
     - cron: '0 21 * * 0-4'      # KST 06:00 — 만들기만
     - cron: '40 21 * * 0-4'     # KST 06:40 — 아직 없으면 만들기
-    - cron: '20 22 * * 0-4'     # KST 07:20 — 없으면 만들고, 그리고 올린다
+    - cron: '10 22 * * 0-4'     # KST 07:10 — 만들고, 07:28 까지 기다렸다 올린다
   workflow_dispatch:
     inputs:
       force:
@@ -126,15 +130,33 @@ jobs:
             echo "::warning::오늘 자 브리핑이 없다 — 페이지는 전날 글을 그대로 둔다"
           fi
 
-      # ④ 실사이트 페이지에 반영. 07:20 시도와 수동 실행에서만 한다.
+      # ④ 실사이트 페이지에 반영. 마지막 슬롯과 수동 실행에서만 한다.
       #    06:00·06:40 은 만들어 두는 데까지다.
-      - name: ④ brief.html 에 반영 (07:20 시도 · 수동 실행)
+      - name: ④ brief.html 에 반영 (07:28 KST 발행)
         id: render
         if: |
           steps.gen.outputs.have == 'true' &&
-          inputs.publish != false &&
-          (github.event_name != 'schedule' || github.event.schedule == '20 22 * * 0-4')
-        run: python scripts/render_brief.py --date ${{ steps.gen.outputs.date }}
+          !(github.event_name == 'workflow_dispatch' && inputs.publish == false) &&
+          (github.event_name != 'schedule' || github.event.schedule == '10 22 * * 0-4')
+        run: |
+          # 발행 시각을 cron 에 맡길 수 없다. GitHub 스케줄은 부하가 높으면
+          # 밀리는데, 8월 18일에는 세 슬롯이 전부 18~20분씩 늦게 떴다
+          # (06:00→06:20, 06:40→06:58). 07:20 슬롯으로 잡아 두면 07:40 에
+          # 올라간다.
+          #
+          # 그래서 일찍 깨우고(07:10 예정) 정확한 시각까지 기다린다. 늦게
+          # 떴으면 기다리지 않고 바로 간다. Pages 배포에 1~2분 걸리므로
+          # 07:28 에 올리면 화면에는 07:30 안팎에 보인다.
+          TARGET=$(TZ='Asia/Seoul' date -d 'today 07:28' +%s)
+          NOW=$(date +%s)
+          WAIT=$(( TARGET - NOW ))
+          if [ "$WAIT" -gt 0 ] && [ "$WAIT" -le 3600 ]; then
+            echo "07:28 KST 까지 ${WAIT}초 대기 (지금 $(TZ='Asia/Seoul' date +%H:%M))"
+            sleep "$WAIT"
+          else
+            echo "대기 없음 (지금 $(TZ='Asia/Seoul' date +%H:%M) · 계산된 대기 ${WAIT}초)"
+          fi
+          python scripts/render_brief.py --date ${{ steps.gen.outputs.date }}
 
       - name: ⑤ 결과 요약
         if: steps.gen.outputs.have == 'true'
