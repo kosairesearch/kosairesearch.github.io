@@ -314,6 +314,20 @@ ok("종목 링크가 없으면 거부", has(G.validate(b), "종목 링크가 없
 reasons = [r for r in G.validate(base) if "coverage" in r]
 ok("둘 다 있으면 통과", not reasons, str(reasons))
 
+print("\n⑦-8 회사명은 언제나 KOSAI — 한글 '코사이'는 거부")
+b = copy.deepcopy(base)
+b["sections"][3]["paragraphs"][0]["ko"] = \
+    b["sections"][3]["paragraphs"][0]["ko"].replace("5월 리포트", "코사이가 5월 리포트")
+ok("본문의 '코사이' 거부", has(G.validate(b), "'코사이'"), str(G.validate(b)))
+b = copy.deepcopy(base)
+b["title"]["ko"] = "코사이가 짚은 것"
+ok("제목의 '코사이' 거부", has(G.validate(b), "'코사이'"))
+b = copy.deepcopy(base)
+b["sections"][3]["paragraphs"][0]["ko"] = \
+    b["sections"][3]["paragraphs"][0]["ko"].replace("5월 리포트", "KOSAI가 5월 리포트")
+reasons = [r for r in G.validate(b) if "코사이" in r]
+ok("KOSAI 표기는 통과", not reasons, str(reasons))
+
 print("\n⑧ 응답 파싱")
 body = json.dumps(sample(), ensure_ascii=False)
 check("마커 안쪽만 읽는다",

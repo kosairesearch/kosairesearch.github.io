@@ -180,6 +180,14 @@ body::before{
 .nav-links a.active{color:var(--fg-1);background:rgba(0,0,0,.07);font-weight:600}
 :root[data-theme="dark"] .nav-links a.active{background:rgba(255,255,255,.10)}
 .nav-spacer{flex:1}
+/* 새로 생긴 메뉴 표시. 한 달쯤 뒤에 지우면 된다 — 지울 때는 이 규칙과
+   각 페이지 nav·모바일 메뉴의 <sup class="nav-new"> 를 함께 없앤다. */
+.nav-new{font:800 9px/1 var(--font-sans);letter-spacing:.04em;color:#fff;
+  background:var(--brand-blue);border-radius:9999px;padding:2px 5px;
+  margin-left:4px;vertical-align:super;text-transform:uppercase}
+:root[data-theme="dark"] .nav-new{background:var(--brand-cyan);color:#0e0e16}
+.mobile-menu .nav-new{vertical-align:middle;margin-left:6px}
+
 .nav-right{display:flex;align-items:center;gap:8px}
 .icon-btn{width:38px;height:38px;border-radius:var(--radius-sm);border:0;background:transparent;
   display:inline-flex;align-items:center;justify-content:center;cursor:pointer;color:var(--fg-2);
@@ -693,7 +701,7 @@ KOSi18n.register({
     <a href="industry.html">업종별</a>
     <a href="Screener.html">스크리너</a>
     <a href="Watchlist.html">워치리스트</a>
-    <a href="brief.html">모닝브리핑</a>
+    <a href="brief.html">모닝브리핑<sup class="nav-new">new</sup></a>
   </div>
   <div class="nav-spacer"></div>
   <button class="icon-btn" id="themeBtn" aria-label="테마 전환" title="라이트/다크 전환">
@@ -710,7 +718,7 @@ KOSi18n.register({
   <a href="industry.html">업종별</a>
   <a href="Screener.html">스크리너</a>
   <a href="Watchlist.html">워치리스트</a>
-  <a href="brief.html">모닝브리핑</a>
+  <a href="brief.html">모닝브리핑<sup class="nav-new">new</sup></a>
 </div>
 
 <div class="wrap">
