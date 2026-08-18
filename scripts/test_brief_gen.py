@@ -349,6 +349,25 @@ reasons = [r for r in G.validate(b) if "코사이" in r]
 ok("교정 뒤에는 검증을 통과한다", not reasons, str(reasons))
 check("고칠 게 없으면 0", G.repair_brand(copy.deepcopy(base)), 0)
 
+print("\n⑦-10 발행 시각이 날짜 옆에 분까지 찍힌다")
+import datetime as _dt
+sys.path.insert(0, str(Path(__file__).resolve().parent))
+import render_brief as R
+_doc = {"date": "2026-08-18", "tradeDate": "20260814", "marketOpen": True,
+        "title": {"ko": "제목", "en": "T"}, "lead": {"ko": "리드", "en": "L"}, "sections": []}
+_at = _dt.datetime(2026, 8, 18, 7, 27, tzinfo=R.KST)
+(dko, den), _, _ = R.head_lines(_doc, _at)
+check("한국어 날짜줄", dko, "2026년 8월 18일 (화) 07:27")
+check("영문 날짜줄", den, "Tuesday, August 18, 2026 · 07:27 KST")
+# 한 자리 시각도 두 자리로 채운다 — 7:3 처럼 나오면 안 된다
+(d2, e2), _, _ = R.head_lines(_doc, _dt.datetime(2026, 8, 18, 7, 3, tzinfo=R.KST))
+check("영(0) 채움", d2, "2026년 8월 18일 (화) 07:03")
+ok("영문도 0 채움", "07:03 KST" in e2, e2)
+# 사전 키와 값이 짝이 맞아야 영어 모드에서 한글이 안 남는다
+_body, _dic = R.build(_doc, _at)
+ok("사전에 날짜줄이 있다", dko in _dic and _dic[dko] == den, str(_dic.get(dko)))
+ok("화면 HTML 에 시각이 있다", "07:27" in _body, _body[:120])
+
 print("\n⑧ 응답 파싱")
 body = json.dumps(sample(), ensure_ascii=False)
 check("마커 안쪽만 읽는다",

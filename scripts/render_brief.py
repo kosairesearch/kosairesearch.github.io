@@ -38,6 +38,8 @@ BODY_END = "<!-- BRIEF:BODY:END -->"
 I18N_START = "/* BRIEF:I18N:START"
 I18N_END = "/* BRIEF:I18N:END */"
 
+KST = datetime.timezone(datetime.timedelta(hours=9))
+
 WEEK_KO = ["월", "화", "수", "목", "금", "토", "일"]
 WEEK_EN = ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"]
 MON_EN = ["January", "February", "March", "April", "May", "June", "July",
@@ -107,15 +109,21 @@ def _dates(doc):
     return d, t
 
 
-def head_lines(doc):
+def head_lines(doc, at=None):
     """머리의 날짜 줄과 기준일 줄. 사실에서 그대로 나오므로 모델을 거치지 않는다.
 
     브리핑에서 제일 틀리면 안 되는 게 '언제 기준이냐'다. 모델에게 맡길 자리가
     아니어서 여기서 만든다.
+
+    날짜 옆에 발행 시각을 분까지 적는다(at). 아침 글은 몇 시에 나왔는지가
+    정보다 — 07:27 과 09:10 은 읽는 사람에게 다른 글이다. 값은 이 함수를
+    부르는 시점, 즉 페이지에 실제로 쓰는 순간이다.
     """
     d, t = _dates(doc)
-    date_ko = f"{d.year}년 {d.month}월 {d.day}일 ({WEEK_KO[d.weekday()]})"
-    date_en = f"{WEEK_EN[d.weekday()]}, {MON_EN[d.month - 1]} {d.day}, {d.year}"
+    at = at or datetime.datetime.now(KST)
+    hm = f"{at.hour:02d}:{at.minute:02d}"
+    date_ko = f"{d.year}년 {d.month}월 {d.day}일 ({WEEK_KO[d.weekday()]}) {hm}"
+    date_en = f"{WEEK_EN[d.weekday()]}, {MON_EN[d.month - 1]} {d.day}, {d.year} · {hm} KST"
 
     open_today = doc.get("marketOpen")
     if t:
@@ -136,9 +144,9 @@ def head_lines(doc):
     return (date_ko, date_en), (meta_ko, meta_en), (disc_ko, disc_en)
 
 
-def build(doc):
+def build(doc, at=None):
     """(본문 HTML, 영문 사전) 을 만든다."""
-    (date_ko, date_en), (meta_ko, meta_en), (disc_ko, disc_en) = head_lines(doc)
+    (date_ko, date_en), (meta_ko, meta_en), (disc_ko, disc_en) = head_lines(doc, at)
     dic = dict(FIXED)
     dic[date_ko] = to_value(date_en)
     dic[meta_ko] = to_value(meta_en)
@@ -253,6 +261,7 @@ def main():
     ap.add_argument("--date", help="YYYY-MM-DD (기본: 가장 최근)")
     ap.add_argument("--check", action="store_true", help="쓰지 않고 검사만")
     ap.add_argument("--page", help="대상 HTML (기본 brief.html)")
+    ap.add_argument("--at", help="발행 시각 HH:MM (기본: 지금. 테스트용)")
     a = ap.parse_args()
 
     src = (BRIEFS / f"{a.date}.json") if a.date else latest()
@@ -261,7 +270,11 @@ def main():
         return 2
     doc = json.loads(src.read_text(encoding="utf-8"))
 
-    body, dic = build(doc)
+    at = datetime.datetime.now(KST)
+    if a.at:
+        h, m = a.at.split(":")
+        at = at.replace(hour=int(h), minute=int(m))
+    body, dic = build(doc, at)
     page_path = Path(a.page) if a.page else PAGE
     page = splice(page_path.read_text(encoding="utf-8"), body, dict_js(dic))
 
@@ -279,7 +292,11 @@ def main():
         return 1 if missing else 0
 
     page_path.write_text(page, encoding="utf-8")
-    log(f"✅ {page_path.name} ← {src.name}")
+    # 발행 시각을 브리핑 파일에도 남긴다. 나중에 "그날 몇 시에 나갔나"를
+    # 페이지가 아니라 기록에서 확인할 수 있어야 한다.
+    doc.setdefault("meta", {})["publishedAt"] = at.isoformat(timespec="minutes")
+    src.write_text(json.dumps(doc, ensure_ascii=False, indent=2), encoding="utf-8")
+    log(f"✅ {page_path.name} ← {src.name}  (발행 {at:%H:%M} KST)")
     log(f"   제목 {doc['title']['ko']}")
     log(f"   문단 {n_para}개 · 영문 사전 {len(dic)}항목 · "
         f"{'개장' if doc.get('marketOpen') else '휴장'}")
