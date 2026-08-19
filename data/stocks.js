@@ -1,6 +1,6 @@
 // KOS ai — 자동 생성 데이터 파일. 직접 수정하지 마세요.
 window.KOS_LIVE_DATA = {
-  "lastUpdated": "2026-08-19 04:19",
+  "lastUpdated": "2026-08-19 06:49",
   "dataDate": "20260818",
   "stocks": [
     {
@@ -5769,7 +5769,7 @@ window.KOS_LIVE_DATA = {
     {
       "ticker": "950260",
       "name": "인제니아테라퓨틱스(Reg.S)",
-      "name_en": "",
+      "name_en": "INGENIA Therapeutics Inc.",
       "market": "코스닥",
       "sector": "바이오·제약",
       "price": 17990,
@@ -5778,6 +5778,7 @@ window.KOS_LIVE_DATA = {
       "trading_value": 736005654910,
       "mcap": 0.8895,
       "shares": 49444607,
+      "induty_code": "70113",
       "categories": [
         "바이오·제약"
       ],
