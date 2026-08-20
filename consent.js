@@ -73,6 +73,8 @@ if (window.KOSi18n) window.KOSi18n.register({
   "동의하지 않고 취소": "Cancel",
   "가입을 마치려면 아래 항목에 동의해 주세요": "To finish signing up, please accept the items below",
   "동의하지 않으면 가입이 취소됩니다.": "If you do not agree, your sign-up is cancelled.",
+  "동의하지 않으면 가입이 진행되지 않습니다. 계정은 아직 만들어지지 않았어요.":
+    "Without your consent we will not create the account — nothing has been created yet.",
   "동의 저장에 실패했어요. 잠시 후 다시 시도해 주세요.":
     "Could not save your agreement. Please try again in a moment.",
   "마케팅 수신 설정": "Marketing messages",
@@ -400,7 +402,11 @@ export function collectConsent() {
     h.textContent = T("가입을 마치려면 아래 항목에 동의해 주세요");
     const sub = document.createElement("p");
     sub.className = "kc-sub";
-    sub.textContent = T("동의하지 않으면 가입이 취소됩니다.");
+    /* 여기는 계정을 만들기 전이다. '취소됩니다' 라고 쓰면 이미 가입이 끝난
+       것처럼 읽힌다 — 동의를 먼저 받으려고 순서를 고쳐 놓고 문구가 옛 순서를
+       말하고 있으면 안 된다. (구글 경로는 계정이 이미 생긴 뒤라 저쪽 문구가
+       맞다.) */
+    sub.textContent = T("동의하지 않으면 가입이 진행되지 않습니다. 계정은 아직 만들어지지 않았어요.");
     const set = renderConsent();
     const act = document.createElement("div");
     act.className = "kc-act";
