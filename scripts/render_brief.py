@@ -58,6 +58,7 @@ FIXED = {"모닝 브리핑": "Morning Brief"}
 # coverage 섹션 위에 붙는 출처 표시. 글에서도 밝히지만(프롬프트 6-1항) 화면에서
 # 한 번 더 보여 준다 — 이 섹션이 다른 섹션과 성격이 다르다는 걸 눈으로 알려야 한다.
 COV_LABEL = ("KOSAI 리포트 확인 지점", "From KOSAI report checkpoints")
+SUM_LABEL = ("오늘 세 가지", "Three things today")
 
 
 def log(*a):
@@ -174,6 +175,28 @@ def build(doc, at=None):
         L.append("      " + lead)
     L.append(f'      <div class="mb-meta">{html.escape(meta_ko)}</div>')
     L.append("    </header>")
+
+    # 요약 — 제목 바로 아래, 본문 앞에. 세 줄만 읽고 나가는 사람을 위한 자리다.
+    # summary 는 나중에 생긴 항목이라 옛 브리핑에는 없다. 없으면 통째로 건너뛴다.
+    sm = doc.get("summary") or {}
+    ko_lines = sm.get("ko") if isinstance(sm.get("ko"), list) else []
+    en_lines = sm.get("en") if isinstance(sm.get("en"), list) else []
+    if ko_lines:
+        dic[SUM_LABEL[0]] = SUM_LABEL[1]
+        L.append("")
+        L.append('    <aside class="mb-sum">')
+        L.append(f'      <div class="mb-sum-h">{html.escape(SUM_LABEL[0])}</div>')
+        L.append("      <ul>")
+        for i, line in enumerate(ko_lines):
+            ko = (line or "").strip()
+            if not ko:
+                continue
+            en = (en_lines[i] or "").strip() if i < len(en_lines) else ""
+            if en:
+                dic[to_key(ko)] = to_value(en)
+            L.append(f'        <li data-i18n-block>{to_html(ko)}</li>')
+        L.append("      </ul>")
+        L.append("    </aside>")
 
     for sec in doc.get("sections") or []:
         h = sec.get("heading") or {}

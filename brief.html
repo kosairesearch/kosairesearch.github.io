@@ -434,10 +434,30 @@ KOSi18n.register({
 :root[data-theme="dark"] .mb-src{color:var(--brand-cyan)}
 @media (max-width:640px){.mb-sec--cov{padding-left:14px}}
 
-.mb-sec{margin:0 0 34px}
-.mb-sec h2{margin:0 0 14px;font:600 15px var(--font-sans);color:var(--fg-2);
+/* 요약 — 제목 아래, 본문 앞. 세 줄만 읽고 나가는 사람을 위한 자리다.
+   테두리 대신 배경으로 구분한다. 선을 두르면 상자가 먼저 눈에 들어와서
+   정작 읽어야 할 세 줄이 뒤로 밀린다. */
+.mb-sum{margin:0 0 34px;padding:18px 20px;border-radius:var(--radius-md);
+  background:rgba(0,0,0,.035)}
+:root[data-theme="dark"] .mb-sum{background:rgba(255,255,255,.05)}
+.mb-sum-h{font:700 11.5px var(--font-sans);letter-spacing:.06em;color:var(--fg-3);
+  margin-bottom:12px}
+.mb-sum ul{list-style:none;margin:0;padding:0;display:flex;flex-direction:column;gap:10px}
+.mb-sum li{position:relative;padding-left:16px;font:400 15.5px/1.6 var(--font-sans);
+  color:var(--fg-1);text-wrap:pretty}
+/* 점은 첫 줄 높이에 맞춰 얹는다. list-style 로 두면 줄이 넘칠 때
+   점과 글자 첫 줄이 어긋난다. */
+.mb-sum li::before{content:"";position:absolute;left:2px;top:.62em;width:5px;height:5px;
+  border-radius:50%;background:var(--fg-3)}
+@media (max-width:640px){.mb-sum{padding:16px}.mb-sum li{font-size:15px}}
+
+/* 문단 사이가 좁아 글이 벽처럼 붙어 보인다는 피드백을 받았다. 줄높이는
+   1.78 로 넉넉한데 문단 간격이 15px — 한 줄 높이(28px)의 절반이라
+   문단이 바뀌는 것이 눈에 안 잡혔다. 간격을 한 줄보다 크게 벌린다. */
+.mb-sec{margin:0 0 42px}
+.mb-sec h2{margin:0 0 18px;font:600 15px var(--font-sans);color:var(--fg-2);
   letter-spacing:.02em;padding-bottom:8px;border-bottom:1px solid var(--hair)}
-.mb-sec p{margin:0 0 15px;font:400 16px/1.78 var(--font-sans);color:var(--fg-1);text-wrap:pretty}
+.mb-sec p{margin:0 0 24px;font:400 16px/1.8 var(--font-sans);color:var(--fg-1);text-wrap:pretty}
 .mb-sec p:last-child{margin-bottom:0}
 .mb-sec a{color:var(--fg-1);text-decoration:none;border-bottom:1px solid var(--hair);
   transition:border-color .15s}

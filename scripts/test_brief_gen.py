@@ -70,6 +70,15 @@ def sample(us=700, dom=650, ahead=700, cov=550):
     return {
         "title": {"ko": "휴장 하루, 미국은 두 번 열린다", "en": "One holiday, two US sessions"},
         "lead": para(120),
+        # 요약 세 줄 — 화면 맨 위에 놓인다. 줄마다 숫자가 하나씩 있어야 한다.
+        "summary": {
+            "ko": ["나스닥은 1.2% 내리며 사흘 만에 방향을 바꿨다",
+                   "코스피는 0.4% 올랐지만 반도체 두 종목이 지수를 눌렀다",
+                   "오늘 새벽 미국 소비자물가가 나온다"],
+            "en": ["The Nasdaq fell 1.2%, its first turn in three sessions",
+                   "The Kospi rose 0.4% while two chip names held it back",
+                   "US consumer prices land before the open"],
+        },
         "sections": [
             # 제목은 매일 새로 쓴다 — 고정 이름("간밤 뉴욕", "볼 것")은 검증이
             # 거부한다. ⑦-5 에서 그걸 확인한다.
