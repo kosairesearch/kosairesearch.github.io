@@ -568,11 +568,10 @@ KOSi18n.register({
           <label for="password2">비밀번호 확인</label>
           <input id="password2" type="password" autocomplete="new-password" data-i18n-ph placeholder="비밀번호를 다시 입력하세요" required />
         </div>
-        <label class="agree" id="agreeRow">
-          <input type="checkbox" id="agree" />
-          <span>만 14세 이상이며, <a href="Terms.html" target="_blank">이용약관</a> 및 <a href="Privacy.html" target="_blank">개인정보처리방침</a>에 동의합니다.</span>
-        </label>
-        <div class="agree-err" id="agreeErr">약관에 동의해야 가입할 수 있어요.</div>
+        <!-- 동의 항목은 consent.js 가 그린다. 필수·선택을 나눠 각각 받아야 하고
+             (개인정보보호법 제22조), 그 문구가 이메일·구글·카카오·네이버 네 경로에서
+             같아야 하므로 한 곳에서 만든다. -->
+        <div id="consentMount"></div>
         <div class="submit-row">
           <button type="submit" class="btn btn-primary" id="emailSubmit">회원가입</button>
         </div>
@@ -650,6 +649,7 @@ import { createUserWithEmailAndPassword, GoogleAuthProvider, signInWithPopup,
   from "https://www.gstatic.com/firebasejs/10.12.2/firebase-auth.js";
 import { wireSocialButtons } from "./social-login.js";
 import { sendVerifyEmail } from "./auth-emails.js";
+import { renderConsent, saveConsent, stashConsent } from "./consent.js";
 
 const $ = s => document.querySelector(s);
 const T = m => (window.KOSi18n ? window.KOSi18n.t(m) : m);
@@ -657,10 +657,10 @@ const errBox = $('#authErr');
 function showErr(msg){ errBox.textContent = msg; errBox.style.display = 'block'; }
 function clearErr(){ errBox.style.display = 'none'; errBox.textContent = ''; }
 // 약관 미동의 — 브라우저 기본 경고 대신 인라인으로 표시
-const agreeEl = $('#agree'), agreeRow = $('#agreeRow'), agreeErr = $('#agreeErr');
-function flagAgree(){ agreeRow.classList.add('invalid'); agreeErr.style.display = 'block'; try{ agreeEl.focus(); }catch(e){} }
-function clearAgree(){ agreeRow.classList.remove('invalid'); agreeErr.style.display = 'none'; }
-agreeEl.addEventListener('change', () => { if(agreeEl.checked) clearAgree(); });
+// 동의 항목 묶음 — 필수 3, 선택 1(마케팅). consent.js 가 문구와 검사를 갖는다.
+const consent = renderConsent();
+$('#consentMount').appendChild(consent.el);
+function flagAgree(){ consent.validate(); }
 function go(){ const next = new URLSearchParams(location.search).get('next'); location.href = next || 'Home.html'; }
 
 if(!isConfigured){ $('#cfgNote').style.display = 'block'; }
@@ -682,10 +682,13 @@ $('#emailForm').addEventListener('submit', async e => {
   if(!email){ showErr(T('이메일을 입력해 주세요.')); $('#email').focus(); return; }
   if(pw.length < 8 || !/[A-Za-z]/.test(pw) || !/[0-9]/.test(pw)){ showErr(T('비밀번호는 영문과 숫자를 포함해 8자 이상이어야 합니다.')); $('#password').focus(); return; }
   if(pw !== pw2){ showErr(T('비밀번호가 일치하지 않습니다.')); $('#password2').focus(); return; }
-  if(!agreeEl.checked){ flagAgree(); return; }
+  if(!consent.validate()) return;
   const btn = $('#emailSubmit'); btn.disabled = true;
   try{
-    await createUserWithEmailAndPassword(auth, email, pw);
+    const cred = await createUserWithEmailAndPassword(auth, email, pw);
+    // 로그아웃 전에 남겨야 한다 — 로그아웃한 뒤에는 본인 문서에 쓸 권한이 없다.
+    try{ await saveConsent(cred.user.uid, consent.values(), 'email'); }
+    catch(e){ console.warn('[consent] 저장 실패:', e && e.code); }
     if(window.KOSA) KOSA.track('sign_up', { method: 'email' });
     try{ await sendVerifyEmail(email); }catch(_){}   // 커스텀 인증 메일(Resend)
     await signOut(auth);          // 인증 전에는 로그인 상태로 두지 않음
@@ -709,15 +712,26 @@ function showVerifySent(email){
 
 $('#googleBtn').addEventListener('click', async () => {
   clearErr();
-  if(!agreeEl.checked){ flagAgree(); return; }
-  try{ await signInWithPopup(auth, new GoogleAuthProvider()); if(window.KOSA) KOSA.track('sign_up', { method: 'google' }); go(); }
+  if(!consent.validate()) return;
+  try{
+    const cred = await signInWithPopup(auth, new GoogleAuthProvider());
+    try{ await saveConsent(cred.user.uid, consent.values(), 'google'); }
+    catch(e){ console.warn('[consent] 저장 실패:', e && e.code); }
+    if(window.KOSA) KOSA.track('sign_up', { method: 'google' }); go(); }
   catch(err){ if((err.code || '').includes('popup-closed') || (err.code || '').includes('cancelled-popup')) return; showErr(mapError(err)); }
 });
 
 // Kakao / Naver — OAuth 리다이렉트 + Cloud Functions 커스텀 토큰 (social-login.js)
 wireSocialButtons({
   onError: showErr,
-  requireAgree: () => { if(!agreeEl.checked){ flagAgree(); return false; } return true; }
+  // 카카오·네이버는 그 사이트로 갔다가 돌아온다. 돌아오면 이 페이지는 새로
+  // 그려져 체크 상태가 사라지므로, 떠나기 전에 담아 뒀다가 로그인 성립 후
+  // consent.js 가 꺼내 저장한다.
+  requireAgree: () => {
+    if(!consent.validate()) return false;
+    stashConsent(consent.values(), 'social');
+    return true;
+  }
 });
 </script>
 <script type="module" src="auth-state.js"></script>

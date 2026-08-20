@@ -7,5 +7,18 @@ service cloud.firestore {
       allow read, write: if request.auth != null && request.auth.uid == uid;
     }
 
+    // 회원 문서 — 가입 동의 기록이 들어간다(consent.js).
+    //
+    // 본인만 읽고 쓴다. 남의 동의 기록을 볼 수 있으면 안 되고, 마케팅
+    // 동의 여부는 그 자체가 개인정보다.
+    //
+    // 삭제도 본인에게 열어 둔다. 우리가 동의 화면에서 "보유 기간: 회원
+    // 탈퇴 시까지" 라고 알리고 받았으므로, 탈퇴하면 이 문서도 함께 지워야
+    // 그 약속을 지키는 것이다(auth-state.js 의 탈퇴 처리가 지운다).
+    match /users/{uid} {
+      allow read, create, update, delete:
+        if request.auth != null && request.auth.uid == uid;
+    }
+
   }
 }

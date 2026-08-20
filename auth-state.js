@@ -110,7 +110,11 @@ async function recordReason(email, reason, detail){
 async function finishWithdraw(user, email, reason, detail, ov){
   try{
     await recordReason(email, reason, detail);
-    try{ await deleteDoc(doc(getFirestore(app), "watchlists", user.uid)); }catch(e){}
+    const fs = getFirestore(app);
+    try{ await deleteDoc(doc(fs, "watchlists", user.uid)); }catch(e){}
+    // 동의 기록도 함께 지운다. 동의 화면에서 "보유 기간: 회원 탈퇴 시까지"
+    // 라고 알리고 받았으니, 남겨 두면 우리가 한 약속을 어기는 것이다.
+    try{ await deleteDoc(doc(fs, "users", user.uid)); }catch(e){}
     await deleteUser(user);
     // 완료 화면 — 자동으로 사라지지 않고, 사용자가 '홈으로'를 눌러야 닫힘
     ov.querySelector('.wd-card').innerHTML = `
@@ -283,11 +287,43 @@ function renderMobileAuth(user){
   if(window.KOSi18n) window.KOSi18n.apply();
 }
 
+/* 동의 확인은 여기 한 곳에서만 한다.
+   로그인이 성립하는 길이 여럿이다 — 이메일, 구글 팝업, 카카오·네이버
+   리다이렉트, 그리고 이미 로그인된 채로 페이지를 여는 경우. 자리마다
+   확인을 넣으면 한 곳을 빠뜨린다. 실제로 그랬다: 가입 페이지는 동의를
+   요구했는데 로그인 페이지로 들어오면 아무 동의 없이 계정이 만들어졌다.
+
+   이 파일은 14개 페이지 전부에 실리고 로그인 상태가 바뀔 때마다 불린다.
+   여기서 막으면 어느 길로 들어와도 빠져나갈 수 없다.
+
+   가입 페이지는 예외다. 거기서는 화면 안에서 이미 동의를 받고 있고,
+   이메일 가입은 인증 메일을 보낸 뒤 곧바로 로그아웃시키므로 동의 화면이
+   뜰 자리가 아니다. */
+let consentChecked = null;   // uid — 한 번 확인한 계정을 다시 묻지 않는다
+
+async function gateConsent(user){
+  if(isAuthPage()) return;
+  if(consentChecked === user.uid) return;
+  consentChecked = user.uid;
+  try{
+    const { ensureConsent } = await import("./consent.js");
+    await ensureConsent(user, () => signOut(auth));
+  }catch(e){
+    // 동의 모듈을 못 불러와도 로그인 자체는 막지 않는다 — 다음 기회에 받는다.
+    console.warn("[consent] 확인 실패:", e && e.message);
+  }
+}
+
 function start(){
   const wrap = mount();
   if(!wrap) return;
   if(!isConfigured){ renderLoggedOut(wrap); renderMobileAuth(null); return; }
-  onAuthStateChanged(auth, user => { user ? renderLoggedIn(wrap, user) : renderLoggedOut(wrap); renderMobileAuth(user); });
+  onAuthStateChanged(auth, user => {
+    user ? renderLoggedIn(wrap, user) : renderLoggedOut(wrap);
+    renderMobileAuth(user);
+    if(user) gateConsent(user);
+    else consentChecked = null;
+  });
 }
 
 if(document.readyState === 'loading') document.addEventListener('DOMContentLoaded', start);
