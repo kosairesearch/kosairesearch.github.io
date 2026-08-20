@@ -50,7 +50,25 @@ async function completeLogin(code, returnedState, saved, onError){
       redirectUri: saved.redirectUri,
       state: returnedState
     });
-    await signInWithCustomToken(auth, data.token);
+    const cred = await signInWithCustomToken(auth, data.token);
+
+    /* 동의를 여기서 받는다 — 화면을 넘기기 전에.
+       카카오·네이버는 인증이 끝나는 순간 계정이 먼저 만들어진다. 그대로
+       홈으로 보내면 '가입은 이미 됐는데 동의는 나중에' 가 된다. 순서가
+       뒤집힌 것이고, 동의를 거부하면 동의 없는 계정이 남는다.
+       그래서 이 자리에서 받고, 거부하면 계정을 지운다(consent.js). */
+    try{
+      const { ensureConsent } = await import("./consent.js");
+      const ok = await ensureConsent(cred.user, () => auth.signOut());
+      if(!ok){
+        history.replaceState({}, "", location.pathname);
+        return;               // 가입이 취소됐다 — 이 페이지에 그대로 둔다
+      }
+    }catch(e){
+      // 동의 모듈을 못 불러와도 로그인 자체는 막지 않는다. 다음 페이지에서
+      // auth-state.js 의 확인이 한 번 더 걸린다.
+      console.warn("[consent] 확인 실패:", e && e.message);
+    }
     location.href = saved.next || "Home.html";
   }catch(err){
     history.replaceState({}, "", location.pathname);

@@ -41,7 +41,8 @@
      where("consents.marketing", "==", true)
    자세한 건 docs/consent.md 에 적어 뒀다.
    ============================================================ */
-import { app } from "./firebase-config.js";
+import { app, auth } from "./firebase-config.js";
+import { deleteUser } from "https://www.gstatic.com/firebasejs/10.12.2/firebase-auth.js";
 import {
   getFirestore, doc, getDoc, setDoc, serverTimestamp
 } from "https://www.gstatic.com/firebasejs/10.12.2/firebase-firestore.js";
@@ -68,8 +69,10 @@ if (window.KOSi18n) window.KOSi18n.register({
   "언제든 철회할 수 있습니다.": "You can withdraw at any time.",
   "필수 항목에 동의해야 가입할 수 있어요.": "You must accept the required items to continue.",
   "서비스를 이용하려면 약관 동의가 필요합니다": "Using the service requires your agreement",
-  "동의하고 계속하기": "Agree and continue",
-  "동의하지 않고 로그아웃": "Sign out instead",
+  "동의하고 가입 완료": "Agree and finish signing up",
+  "동의하지 않고 취소": "Cancel",
+  "가입을 마치려면 아래 항목에 동의해 주세요": "To finish signing up, please accept the items below",
+  "동의하지 않으면 가입이 취소됩니다.": "If you do not agree, your sign-up is cancelled.",
   "동의 저장에 실패했어요. 잠시 후 다시 시도해 주세요.":
     "Could not save your agreement. Please try again in a moment.",
   "마케팅 수신 설정": "Marketing messages",
@@ -295,19 +298,19 @@ export async function ensureConsent(user, onSignOut) {
     const card = document.createElement("div");
     card.className = "kc-card";
     const h = document.createElement("div");
-    h.className = "kc-h"; h.textContent = T("서비스를 이용하려면 약관 동의가 필요합니다");
+    h.className = "kc-h"; h.textContent = T("가입을 마치려면 아래 항목에 동의해 주세요");
     const sub = document.createElement("p");
     sub.className = "kc-sub";
-    sub.textContent = T("수집 항목: 이메일, 닉네임, 로그인 수단");
+    sub.textContent = T("동의하지 않으면 가입이 취소됩니다.");
     const set = renderConsent();
     const act = document.createElement("div");
     act.className = "kc-act";
     const ok = document.createElement("button");
     ok.type = "button"; ok.className = "btn btn-primary";
-    ok.textContent = T("동의하고 계속하기");
+    ok.textContent = T("동의하고 가입 완료");
     const no = document.createElement("button");
     no.type = "button"; no.className = "kc-no";
-    no.textContent = T("동의하지 않고 로그아웃");
+    no.textContent = T("동의하지 않고 취소");
     act.appendChild(ok); act.appendChild(no);
     card.appendChild(h); card.appendChild(sub); card.appendChild(set.el); card.appendChild(act);
     ov.appendChild(card);
@@ -328,8 +331,20 @@ export async function ensureConsent(user, onSignOut) {
       }
     });
     no.addEventListener("click", async () => {
+      no.disabled = true;
+      /* 거부하면 계정을 지운다. 로그아웃만 하면 동의하지 않은 계정이 그대로
+         남는다 — 카카오·네이버는 인증이 끝나는 순간 계정이 먼저 만들어지기
+         때문이다. 동의하지 않았으면 가입이 성립하지 않아야 한다.
+
+         막 만들어진 계정이라 대개 지워지지만, 실패하면(재인증 요구 등)
+         로그아웃이라도 한다. 남은 계정은 다음 로그인 때 다시 이 화면을
+         만나므로 동의 없이 서비스가 쓰이지는 않는다. */
+      try { await deleteUser(auth.currentUser || user); }
+      catch (e) {
+        console.warn("[consent] 계정 삭제 실패:", e && e.code);
+        try { await onSignOut(); } catch (_) {}
+      }
       ov.remove();
-      try { await onSignOut(); } catch (e) {}
       resolve(false);
     });
   });

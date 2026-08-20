@@ -579,6 +579,24 @@ KOSi18n.register({
 </footer>
 
 
+<script>
+/* 헤더 공용 동작 — 모바일 메뉴와 라이트/다크 토글.
+   Feedback.html 껍데기를 가져올 때 이 코드가 피드백 폼 스크립트와 한 덩어리로
+   묶여 있었다. 폼만 쓸모없다고 통째로 지웠더니 테마 토글까지 같이 사라졌다.
+   공용 동작은 따로 둔다. */
+const menuBtn=document.getElementById('menuBtn'),mobileMenu=document.getElementById('mobileMenu');
+if(menuBtn&&mobileMenu){
+  menuBtn.addEventListener('click',()=>mobileMenu.classList.toggle('open'));
+  mobileMenu.querySelectorAll('a').forEach(a=>a.addEventListener('click',()=>mobileMenu.classList.remove('open')));
+}
+const root=document.documentElement,themeBtn=document.getElementById('themeBtn');
+const sunSVG='<circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"/>';
+const moonSVG='<path d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8z"/>';
+function applyTheme(t){root.setAttribute('data-theme',t);const i=document.getElementById('themeIcon');if(i)i.innerHTML=t==='dark'?sunSVG:moonSVG;try{localStorage.setItem('kos-theme',t)}catch(e){}}
+let saved='dark';try{saved=localStorage.getItem('kos-theme')||'dark'}catch(e){}
+applyTheme(saved);
+if(themeBtn)themeBtn.addEventListener('click',()=>applyTheme(root.getAttribute('data-theme')==='dark'?'light':'dark'));
+</script>
 <script type="module" src="auth-state.js"></script>
 
 <script type="module">
