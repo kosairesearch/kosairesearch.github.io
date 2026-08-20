@@ -535,28 +535,34 @@ def collect_quant(dart, ticker, krx_row, stock):
     fy_eqo = fy_row.get("equity_owner") if fy_row else None       # 이미 단위보정됨(annual 일괄)
 
     # ── 자본 정합성: BPS 를 외부 참조값 대신 '스스로' 검증한다 ──────────────
-    # 외부 참조값(네이버)은 분기 반영이 늦다. 2026 반기 기준으로 재 보니 우리
-    # 옛 값(2026Q1 기준)은 6개 종목 전부 참조값과 1.3% 안에서 일치했다. 즉
-    # 산식은 같고 분기만 다르다. 그런데 게이트가 그 시차를 '오류'로 읽어
-    # 상위 종목의 BPS·PBR 을 통째로 지웠다.
+    # 외부 참조값(네이버)은 분기 반영이 늦고, 늦는 정도가 항목마다 다르다.
+    # 2026 반기를 재 보니 EPS 는 477종목이 갱신됐는데 BPS 는 162종목뿐이었다.
+    # 참조값에 기대면 우리가 맞는데도 시차 때문에 지표가 지워진다.
     #
-    # 시차에 휘둘리지 않는 기준은 우리 안에 있다. 분기말 지배자본은
-    # '직전 연말 지배자본 + 그 뒤 분기 지배순이익' 으로 대체로 설명돼야 한다.
-    # 실제로 재 보니 정상 종목은 1.00~1.13배에 모였고, 자본이 잘못 잡힌
-    # 종목만 2.06·2.24배로 떨어져 나왔다 — 깨끗하게 갈린다.
+    # 그래서 재무상태표 자체의 항등식으로 본다 — 지배지분은 자본총계를 넘을 수
+    # 없다. 태그를 잘못 집으면 이 관계가 깨지므로, 깨졌을 때만 숨긴다.
     #
-    # 배수를 1.5 로 둔다. 기타포괄손익·유상증자로 자본이 이익보다 빠르게
-    # 늘 수 있으므로 여유를 두되, 잡으려는 것은 태그를 잘못 집어 배 단위로
-    # 부푼 값이다.
+    # 처음에는 '자본 증가가 순이익으로 설명되는가' 로 짰다가 되돌렸다.
+    # 삼성생명이 2.24배로 걸렸는데 DART 원문을 떠 보니 지배지분 144.84조 ·
+    # 비지배지분 2.12조 · 자본총계 146.96조로 우리 추출이 정확했다. 보험사는
+    # IFRS17 할인율 변동으로 기타포괄손익이 순이익의 수십 배로 움직여서
+    # 이익으로 자본을 설명하려는 전제 자체가 성립하지 않는다. 맞는 값을
+    # 지우는 검증은 없는 것만 못하다.
+    if bps_q and eqo_owner and eqo_total and eqo_owner > eqo_total * 1.01:
+        log(f"  ❌ 자본 정합성 실패 → BPS·PBR 숨김: 지배지분 "
+            f"{eqo_owner * unit/1e12:,.1f}조 > 자본총계 {eqo_total * unit/1e12:,.1f}조")
+        bps_q = pbr_q = None
+
+    # 이익으로 설명되지 않는 자본 변동은 막지 않되 로그로는 남긴다. 대개
+    # 기타포괄손익·유상증자지만, 추출 오류를 뒤늦게 되짚을 때 실마리가 된다.
     cur_np = sum(x["np_owner"] for x in quarterly
                  if x.get("np_owner") and str(x.get("q", "")).startswith(str(cur)))
     if bps_q and fy_eqo and fy_eqo > 0 and eqo_q:
         explained = fy_eqo + cur_np
         if explained > 0 and eqo_q > explained * 1.5:
-            log(f"  ❌ 자본 정합성 실패 → BPS·PBR 숨김: 분기말 지배자본 "
+            log(f"  ⚠️ 자본이 이익보다 빠르게 늘었다(참고): 분기말 지배자본 "
                 f"{eqo_q/1e12:,.1f}조 vs 이익으로 설명되는 {explained/1e12:,.1f}조 "
                 f"({eqo_q/explained:.2f}배)")
-            bps_q = pbr_q = None
     eqo_begin = (_bs(d_py_same, "equity_owner") or _bs(d_py_same, "equity"))  # TTM 시작(전년 같은 분기말) 자본
     if eqo_begin is not None:
         eqo_begin *= unit
