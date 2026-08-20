@@ -70,14 +70,15 @@ def sample(us=700, dom=650, ahead=700, cov=550):
     return {
         "title": {"ko": "휴장 하루, 미국은 두 번 열린다", "en": "One holiday, two US sessions"},
         "lead": para(120),
-        # 요약 세 줄 — 화면 맨 위에 놓인다. 줄마다 숫자가 하나씩 있어야 한다.
+        # 요약 — 목록이 아니라 이어지는 한 문단이어야 한다(규칙 9-1).
         "summary": {
-            "ko": ["나스닥은 1.2% 내리며 사흘 만에 방향을 바꿨다",
-                   "코스피는 0.4% 올랐지만 반도체 두 종목이 지수를 눌렀다",
-                   "오늘 새벽 미국 소비자물가가 나온다"],
-            "en": ["The Nasdaq fell 1.2%, its first turn in three sessions",
-                   "The Kospi rose 0.4% while two chip names held it back",
-                   "US consumer prices land before the open"],
+            "ko": "미국은 세 지수가 나란히 올랐지만 필라델피아 반도체만 2% 넘게 밀렸다. "
+                  "국내도 같은 자리가 눌렸는데, 지수를 끌어내린 무게가 시가총액 상위 몇 "
+                  "종목에 몰려 있었던 하루였다. 오늘 새벽에는 미국 소비자물가가 나온다.",
+            "en": "US indexes edged up together while the Philadelphia semiconductor "
+                  "gauge fell more than 2%. Seoul sagged in the same place, with the "
+                  "weight that pulled the index down sitting in a handful of the "
+                  "largest names. US consumer prices land before the open.",
         },
         "sections": [
             # 제목은 매일 새로 쓴다 — 고정 이름("간밤 뉴욕", "볼 것")은 검증이
@@ -376,6 +377,32 @@ ok("영문도 0 채움", "07:03 KST" in e2, e2)
 _body, _dic = R.build(_doc, _at)
 ok("사전에 날짜줄이 있다", dko in _dic and _dic[dko] == den, str(_dic.get(dko)))
 ok("화면 HTML 에 시각이 있다", "07:27" in _body, _body[:120])
+
+print("\n⑦-11 요약 — 목록이 아니라 이어지는 한 문단이어야 한다")
+b = copy.deepcopy(base)
+ok("기본 요약은 통과", not [r for r in G.validate(b) if "요약" in r], str(G.validate(b)))
+b = copy.deepcopy(base)
+b["summary"]["ko"] = "· 나스닥 1.2% 하락 · 코스피 0.4% 상승 · 오늘 CPI 발표"
+ok("글머리표가 있으면 거부", has(G.validate(b), "글머리표"))
+b = copy.deepcopy(base)
+b["summary"]["ko"] = base["summary"]["ko"].replace(". ", ".\n")
+ok("줄바꿈이 있으면 거부", has(G.validate(b), "글머리표"))
+b = copy.deepcopy(base)
+b["summary"]["ko"] = "코스피가 올랐다."
+ok("너무 짧으면 거부", has(G.validate(b), "요약이"))
+# 모델이 목록으로 써 와도 거부하기 전에 한 문단으로 편다
+b = {"summary": {"ko": "1. 나스닥 하락\n2. 코스피 상승", "en": "1. down\n2. up"}}
+n = G.repair_summary(b)
+ok("목록을 한 문단으로 이어 붙인다", n == 2 and "\n" not in b["summary"]["ko"], repr(b["summary"]["ko"]))
+ok("번호를 떼어 낸다", not G.SUM_LIST.search(b["summary"]["ko"]), repr(b["summary"]["ko"]))
+b = {"summary": {"ko": "[현대차](005380) 가 **올랐다**.", "en": "x"}}
+G.repair_summary(b)
+check("요약에서 링크·강조를 벗긴다", b["summary"]["ko"], "현대차 가 올랐다.")
+# 요약이 없으면 1차는 거부, 2차는 통과 — 요약 하나로 발행을 멈추지 않는다
+b = copy.deepcopy(base)
+b["summary"] = {}
+ok("1차는 빈 요약 거부", has(G.validate(b), "summary 가 비었다"))
+ok("2차는 빈 요약 허용", not has(G.validate(b, strict_coverage=False), "summary 가 비었다"))
 
 print("\n⑧ 응답 파싱")
 body = json.dumps(sample(), ensure_ascii=False)

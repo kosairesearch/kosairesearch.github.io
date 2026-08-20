@@ -442,14 +442,10 @@ KOSi18n.register({
 :root[data-theme="dark"] .mb-sum{background:rgba(255,255,255,.05)}
 .mb-sum-h{font:700 11.5px var(--font-sans);letter-spacing:.06em;color:var(--fg-3);
   margin-bottom:12px}
-.mb-sum ul{list-style:none;margin:0;padding:0;display:flex;flex-direction:column;gap:10px}
-.mb-sum li{position:relative;padding-left:16px;font:400 15.5px/1.6 var(--font-sans);
-  color:var(--fg-1);text-wrap:pretty}
-/* 점은 첫 줄 높이에 맞춰 얹는다. list-style 로 두면 줄이 넘칠 때
-   점과 글자 첫 줄이 어긋난다. */
-.mb-sum li::before{content:"";position:absolute;left:2px;top:.62em;width:5px;height:5px;
-  border-radius:50%;background:var(--fg-3)}
-@media (max-width:640px){.mb-sum{padding:16px}.mb-sum li{font-size:15px}}
+/* 목록이 아니라 문단 하나다. 항목으로 쪼개 늘어놓으면 사람이 쓴 글이 아니라
+   기계가 뽑아낸 목록처럼 읽힌다는 피드백을 받았다. */
+.mb-sum-p{margin:0;font:400 15.5px/1.72 var(--font-sans);color:var(--fg-1);text-wrap:pretty}
+@media (max-width:640px){.mb-sum{padding:16px}.mb-sum-p{font-size:15px}}
 
 /* 문단 사이가 좁아 글이 벽처럼 붙어 보인다는 피드백을 받았다. 줄높이는
    1.78 로 넉넉한데 문단 간격이 15px — 한 줄 높이(28px)의 절반이라

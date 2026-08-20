@@ -103,6 +103,10 @@ TIME_WORDS = re.compile(r"간밤|어젯밤|지난밤|하룻밤|어제")
 # 회사명은 언제나 KOSAI 다. 한글 표기가 섞이면 브랜드가 화면마다 달라 보인다.
 BRAND_KO = re.compile(r"코사이")
 
+# 요약이 목록으로 흐르는 것을 잡는다. 줄바꿈, 글머리표(· • - ―), "1." 같은
+# 번호 매김. 이어지는 문장으로 써야 사람이 쓴 글로 읽힌다.
+SUM_LIST = re.compile(r"[\n\r]|(?:^|\s)[·•▪◦\-–—]\s|(?:^|\s)\d[.)]\s")
+
 # 투자권유로 읽히는 표현. 종목 리포트와 같은 규칙이다(6-1항).
 # '순매수'는 사실이므로 막지 않는다 — 그래서 매수/매도는 뒤에 추천·의견·권유가
 # 붙은 형태만 잡는다. 영문 본문도 같이 검사하므로 영어 표현을 함께 넣는다.
@@ -544,17 +548,23 @@ RULES = """규칙
    · 제목도 단정하지 않는다. 5번 규칙이 제목에도 적용된다.
 9. 리드는 두 문장. 오늘 무엇을 준비해야 하는지가 리드에서 끝나야 한다.
 
-9-1. **요약(summary)은 정확히 세 줄.** 맨 위에 놓여서, 본문을 읽지 않고 이것만 봐도
+9-1. **요약(summary)은 문단 하나.** 맨 위에 놓여서, 본문을 읽지 않고 이것만 봐도
    오늘 아침에 알아야 할 것이 끝나야 한다.
-   · 한 줄은 한 문장, 20~45자. 줄마다 숫자를 하나씩 넣어라 — 지수든 등락률이든
-     금액이든. 숫자 없는 줄은 요약이 아니라 인상이다.
-     좋음: "코스피는 0.4% 올랐지만 반도체 두 종목이 지수를 눌렀다"
-     나쁨: "시장이 혼조세를 보였다" — 숫자도 없고 방향도 없다
-   · 세 줄은 서로 다른 것을 말해야 한다. 간밤 미국 · 직전 국내 장 · 오늘 볼 것을
-     하나씩 맡는 것이 기본이고, 그날 한쪽이 비면 다른 쪽을 둘로 나눠도 된다.
+   · **줄바꿈·글머리표·번호를 쓰지 마라.** 이어지는 문장으로 쓴다. 항목을 나눠
+     늘어놓으면 사람이 쓴 글이 아니라 기계가 뽑아낸 목록처럼 읽힌다.
+   · 3~5문장, 150~320자. 짧게 줄이려고 애쓰지 마라 — 요약이지 표제가 아니다.
+     문장이 잘려 명사만 남으면 오히려 읽기 불편하다.
+   · 본문 전체를 담는다. 간밤 미국에서 무슨 일이 있었고, 직전 국내 장이 어땠고,
+     오늘 무엇을 볼지가 한 문단 안에서 자연스럽게 이어져야 한다.
+   · 숫자는 필요한 곳에 넣되 줄마다 채워 넣지 마라. 지수 하나, 등락률 하나면
+     충분하고, 숫자를 나열하는 자리는 본문이다.
+     좋음: "미국은 세 지수가 나란히 올랐지만 반도체만 2% 넘게 빠졌다. 국내도
+           같은 자리가 눌렸는데, 지수를 끌어내린 무게가 시가총액 상위 몇
+           종목에 몰려 있었다. 오늘 새벽 미국 소비자물가가 나온다."
+     나쁨: "· 나스닥 1.2% 하락 · 코스피 0.4% 상승 · 오늘 CPI 발표" — 목록이다.
    · 본문에 없는 사실을 요약에만 새로 쓰지 마라. 요약은 본문의 압축이다.
-   · 종목 링크는 요약에 달지 마라. 세 줄이 링크로 얼룩지면 읽는 속도가 떨어진다.
-     **굵게**도 쓰지 마라. 이미 짧아서 강조할 곳이 없다.
+   · 종목 링크와 **굵게**는 요약에 쓰지 마라. 훑고 지나가는 자리라 표시가
+     끼면 오히려 눈이 걸린다.
    · 5번 규칙(단정 금지)이 요약에도 그대로 적용된다.
 10. 영어는 번역투가 아니라 영문 기사로 읽히게 쓴다. 한국어와 같은 사실, 같은 순서.
     종목 링크와 **굵게**는 영어에도 같이 넣는다.
@@ -565,7 +575,7 @@ RULES = """규칙
 {
   "title": {"ko": "제목", "en": "headline"},
   "lead":  {"ko": "리드 두 문장", "en": "..."},
-  "summary": {"ko": ["요약 첫 줄", "둘째 줄", "셋째 줄"], "en": ["...", "...", "..."]},
+  "summary": {"ko": "요약 한 문단 — 줄바꿈도 글머리표도 없이 이어지는 문장", "en": "..."},
   "sections": [
     {"id": "us", "heading": {"ko": "그날 내용을 담은 섹션 제목", "en": "..."},
      "paragraphs": [{"ko": "문단", "en": "paragraph"}]}
@@ -707,32 +717,11 @@ def _plain(s):
     return re.sub(r"\*\*", "", s)
 
 
-def _sum_lines(brief, lang):
-    """요약 줄 목록. 없으면 빈 목록 — summary 는 나중에 생긴 항목이라
-    옛 브리핑 JSON 에는 없다."""
-    v = (brief.get("summary") or {}).get(lang)
-    return list(v) if isinstance(v, list) else []
-
-
-def _map_summary(brief, fix):
-    """요약 줄에도 본문과 같은 수리를 적용한다. summary 는 {ko:[...], en:[...]}
-    라 title·lead 를 도는 반복문에 그냥 얹을 수 없어 따로 돈다."""
-    s = brief.get("summary")
-    if not isinstance(s, dict):
-        return
-    for lang in ("ko", "en"):
-        if isinstance(s.get(lang), list):
-            s[lang] = [fix(x) for x in s[lang]]
-
-
 def _walk(brief):
     """(경로, 문자열) 전부. ko/en 양쪽."""
-    for key in ("title", "lead"):
+    for key in ("title", "lead", "summary"):
         for lang in ("ko", "en"):
             yield f"{key}.{lang}", ((brief.get(key) or {}).get(lang) or "")
-    for lang in ("ko", "en"):
-        for i, line in enumerate(_sum_lines(brief, lang)):
-            yield f"summary[{i}].{lang}", (line or "")
     for n, s in enumerate(brief.get("sections") or []):
         sid = s.get("id") or f"#{n}"
         for lang in ("ko", "en"):
@@ -765,11 +754,10 @@ def repair_links(brief):
             fixed.append(n)
         return out
 
-    for key in ("title", "lead"):
+    for key in ("title", "lead", "summary"):
         for lang in ("ko", "en"):
             if (brief.get(key) or {}).get(lang):
                 brief[key][lang] = fix(brief[key][lang])
-    _map_summary(brief, fix)
     for s in brief.get("sections") or []:
         for p in s.get("paragraphs") or []:
             for lang in ("ko", "en"):
@@ -795,11 +783,10 @@ def repair_brand(brief):
             return x.replace("코사이", "KOSAI")
         return x
 
-    for key in ("title", "lead"):
+    for key in ("title", "lead", "summary"):
         for lang in ("ko", "en"):
             if (brief.get(key) or {}).get(lang):
                 brief[key][lang] = fix(brief[key][lang])
-    _map_summary(brief, fix)
     for sec in brief.get("sections") or []:
         for lang in ("ko", "en"):
             if (sec.get("heading") or {}).get(lang):
@@ -812,37 +799,35 @@ def repair_brand(brief):
 
 
 def repair_summary(brief):
-    """요약 세 줄을 평문으로 다듬는다. (고친 곳 수, 잘라낸 줄 수)
+    """요약을 이어지는 한 문단으로 다듬는다. 고친 항목 수를 돌려준다.
 
-    요약에는 링크도 굵게도 넣지 말라고 했지만 모델이 가끔 넣는다. 거부하는
-    대신 벗겨낸다 — 세 줄짜리 장식 때문에 그날 브리핑을 통째로 버릴 이유가 없다.
-    ko/en 줄 수가 어긋나면 짧은 쪽에 맞춘다. 한쪽만 네 줄이면 화면에서
-    한국어와 영어가 서로 다른 개수로 보인다.
+    요약에는 링크도 굵게도 목록도 넣지 말라고 했지만 모델이 가끔 넣는다.
+    거부하는 대신 벗겨낸다 — 장식 하나 때문에 그날 브리핑을 버릴 이유가 없다.
+
+    모델이 목록으로 써 온 경우(줄바꿈 + 글머리표)는 글머리표를 떼고 줄을
+    이어 붙인다. 문장으로 다시 쓰지는 못하지만, 적어도 화면에서 목록으로
+    보이지는 않는다. 그래도 남는 어색함은 validate 가 잡는다.
     """
     s = brief.get("summary")
     if not isinstance(s, dict):
-        return 0, 0
-    stripped = 0
-
-    def plain(x):
-        nonlocal stripped
-        out = LINK.sub(r"\1", x or "")
-        out = ANY_LINK.sub(r"\1", out)
-        out = out.replace("**", "").strip()
-        if out != (x or "").strip():
-            stripped += 1
-        return out
-
+        return 0
+    fixed = 0
     for lang in ("ko", "en"):
-        if isinstance(s.get(lang), list):
-            s[lang] = [t for t in (plain(x) for x in s[lang]) if t]
-    ko, en = s.get("ko"), s.get("en")
-    cut = 0
-    if isinstance(ko, list) and isinstance(en, list):
-        keep = min(len(ko), len(en), 3)
-        cut = max(len(ko), len(en)) - keep
-        s["ko"], s["en"] = ko[:keep], en[:keep]
-    return stripped, cut
+        x = s.get(lang)
+        if not isinstance(x, str) or not x.strip():
+            continue
+        out = LINK.sub(r"\1", x)
+        out = ANY_LINK.sub(r"\1", out)
+        out = out.replace("**", "")
+        # 줄 단위로 글머리표·번호를 떼고 한 줄로 잇는다
+        lines = [re.sub(r"^\s*(?:[·•▪◦\-–—]|\d[.)])\s*", "", ln).strip()
+                 for ln in out.splitlines()]
+        out = " ".join(ln for ln in lines if ln)
+        out = re.sub(r"\s{2,}", " ", out).strip()
+        if out != x.strip():
+            fixed += 1
+        s[lang] = out
+    return fixed
 
 
 def normalize_links(brief, valid_tickers):
@@ -862,11 +847,10 @@ def normalize_links(brief, valid_tickers):
             return label
         return ANY_LINK.sub(one, s or "")
 
-    for key in ("title", "lead"):
+    for key in ("title", "lead", "summary"):
         for lang in ("ko", "en"):
             if (brief.get(key) or {}).get(lang):
                 brief[key][lang] = fix(brief[key][lang])
-    _map_summary(brief, fix)
     for s in brief.get("sections") or []:
         for p in s.get("paragraphs") or []:
             for lang in ("ko", "en"):
@@ -941,26 +925,28 @@ def validate(brief, strict_coverage=True, facts=None):
     if not isinstance(brief, dict):
         return ["JSON 이 객체가 아니다"]
 
-    for key in ("title", "lead"):
+    for key in ("title", "lead", "summary"):
         for lang in ("ko", "en"):
             if not ((brief.get(key) or {}).get(lang) or "").strip():
                 bad.append(f"{key}.{lang} 가 비었다")
 
-    # 요약은 화면 맨 위에 놓인다. 비면 페이지가 제목 다음에 바로 본문으로
-    # 떨어져서, 읽기 부담을 줄이려고 넣은 것이 오히려 빈자리로 남는다.
-    # 줄 수는 세 줄이 설계지만 두 줄이면 통과시킨다 — repair_summary 가
-    # ko/en 을 맞춰 놓은 뒤라, 두 줄은 모델이 실제로 두 가지만 말한 날이다.
-    ko_s, en_s = _sum_lines(brief, "ko"), _sum_lines(brief, "en")
-    if not ko_s:
-        bad.append("summary 가 비었다 — 요약 세 줄이 있어야 한다")
-    elif not 2 <= len(ko_s) <= 3:
-        bad.append(f"summary 가 {len(ko_s)}줄 — 두세 줄이어야 한다")
-    elif len(ko_s) != len(en_s):
-        bad.append(f"summary 줄 수가 한국어 {len(ko_s)} · 영어 {len(en_s)} 로 다르다")
-    for i, line in enumerate(ko_s):
-        n = len(_plain(line))
-        if not 12 <= n <= 70:
-            bad.append(f"summary[{i}] 가 {n}자 — 12~70자여야 한다")
+    # 요약은 화면 맨 위, 본문 앞에 놓인다. 목록이 아니라 이어지는 문장이어야
+    # 한다 — 항목을 나눠 늘어놓으면 사람이 쓴 글로 읽히지 않는다.
+    ko_sum = _plain((brief.get("summary") or {}).get("ko") or "")
+    if not ko_sum:
+        # 1차에서는 다시 받아 온다. 2차에도 없으면 요약 없이 내보낸다 —
+        # 렌더러가 그 블록만 건너뛰므로, 요약 하나 때문에 그날 브리핑을
+        # 통째로 버리는 것보다 낫다.
+        if strict_coverage:
+            bad.append("summary 가 비었다 — 맨 위 요약 문단이 있어야 한다")
+    else:
+        n = len(ko_sum)
+        if not 110 <= n <= 400:
+            bad.append(f"요약이 {n}자 — 110~400자여야 한다")
+        # 문장 수는 세지 않는다. 마침표 개수로 재면 소수점·약어에 걸려
+        # 멀쩡한 글을 거부한다. 목록으로 흐르는 것만 막으면 충분하다.
+        if SUM_LIST.search(ko_sum):
+            bad.append("요약에 글머리표·번호가 있다 — 이어지는 문장으로 써야 한다")
 
     secs = brief.get("sections") or []
     ids = [s.get("id") for s in secs]
@@ -1179,11 +1165,9 @@ def main():
         dropped = normalize_links(cand, tickers)
         if dropped:
             log("· 확인되지 않은 종목 링크를 평문으로 바꿨다: " + ", ".join(dropped[:8]))
-        n_strip, n_cut = repair_summary(cand)
-        if n_strip:
-            log(f"· 요약 {n_strip}줄에서 링크·강조를 벗겨냈다")
-        if n_cut:
-            log(f"· 요약 줄 수를 맞추느라 {n_cut}줄 잘라냈다")
+        n_sum = repair_summary(cand)
+        if n_sum:
+            log(f"· 요약 {n_sum}곳에서 링크·강조·글머리표를 벗겨 한 문단으로 이었다")
         # 1차는 설계대로 25% 로 본다. 2차는 30% 까지 눈감아 준다 — 발행이
         # 안 되는 것보다는 커버리지가 조금 긴 게 낫다. 그 위는 발행하지 않는다.
         bad = validate(cand, strict_coverage=(attempt == 1), facts=facts)

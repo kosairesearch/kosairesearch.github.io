@@ -58,7 +58,7 @@ FIXED = {"모닝 브리핑": "Morning Brief"}
 # coverage 섹션 위에 붙는 출처 표시. 글에서도 밝히지만(프롬프트 6-1항) 화면에서
 # 한 번 더 보여 준다 — 이 섹션이 다른 섹션과 성격이 다르다는 걸 눈으로 알려야 한다.
 COV_LABEL = ("KOSAI 리포트 확인 지점", "From KOSAI report checkpoints")
-SUM_LABEL = ("오늘 세 가지", "Three things today")
+SUM_LABEL = ("요약", "In brief")
 
 
 def log(*a):
@@ -170,32 +170,30 @@ def build(doc, at=None):
     if doc["title"].get("en"):
         dic[to_key(title_ko)] = to_value(doc["title"]["en"])
     L.append(f'      <h1>{to_html(title_ko)}</h1>')
-    lead = pair(doc["lead"], cls="mb-lead")
-    if lead:
-        L.append("      " + lead)
+    # 리드와 요약은 둘 다 '맨 위에서 오늘을 압축하는 자리'라 같이 두면 첫 문장이
+    # 겹친다. 실제로 나란히 놓아 보니 두 블록이 거의 같은 말을 반복했다.
+    # 그래서 요약이 있는 날은 리드를 화면에서 빼고 요약 하나만 보여 준다.
+    # (리드는 JSON 에 그대로 남는다 — 워크플로 실행 요약이 그걸 쓴다.)
+    sm = doc.get("summary") or {}
+    has_sum = isinstance(sm.get("ko"), str) and bool(sm["ko"].strip())
+    if not has_sum:
+        lead = pair(doc["lead"], cls="mb-lead")
+        if lead:
+            L.append("      " + lead)
     L.append(f'      <div class="mb-meta">{html.escape(meta_ko)}</div>')
     L.append("    </header>")
 
-    # 요약 — 제목 바로 아래, 본문 앞에. 세 줄만 읽고 나가는 사람을 위한 자리다.
+    # 요약 — 제목 바로 아래, 본문 앞에. 훑고 나가는 사람을 위한 자리다.
+    # 목록이 아니라 이어지는 문단 하나다(생성 규칙 9-1). 항목으로 쪼개 놓으면
+    # 사람이 쓴 글로 읽히지 않는다.
     # summary 는 나중에 생긴 항목이라 옛 브리핑에는 없다. 없으면 통째로 건너뛴다.
-    sm = doc.get("summary") or {}
-    ko_lines = sm.get("ko") if isinstance(sm.get("ko"), list) else []
-    en_lines = sm.get("en") if isinstance(sm.get("en"), list) else []
-    if ko_lines:
+    if has_sum:
         dic[SUM_LABEL[0]] = SUM_LABEL[1]
+        row = pair(sm, cls="mb-sum-p")
         L.append("")
         L.append('    <aside class="mb-sum">')
         L.append(f'      <div class="mb-sum-h">{html.escape(SUM_LABEL[0])}</div>')
-        L.append("      <ul>")
-        for i, line in enumerate(ko_lines):
-            ko = (line or "").strip()
-            if not ko:
-                continue
-            en = (en_lines[i] or "").strip() if i < len(en_lines) else ""
-            if en:
-                dic[to_key(ko)] = to_value(en)
-            L.append(f'        <li data-i18n-block>{to_html(ko)}</li>')
-        L.append("      </ul>")
+        L.append("      " + row)
         L.append("    </aside>")
 
     for sec in doc.get("sections") or []:
