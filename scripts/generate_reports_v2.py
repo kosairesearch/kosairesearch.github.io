@@ -823,7 +823,7 @@ def naver_valuation(ticker):
 
 
 def cross_check(tk, name, valuation):
-    """자체 산출하는 PER·EPS만 외부 참조값과 대조해 '중대 오류'(부호 반대·15% 초과)일 때만 숨긴다.
+    """자체 산출하는 PER·EPS만 외부 참조값과 대조해 '중대 오류'일 때만 숨긴다.
     미세 차이(가중평균주식수·결산시점 등 방법론 차이)는 정상이므로 표시한다.
     PBR·BPS·배당은 KRX 공식값이라 검증 없이 표시한다.
 
@@ -834,12 +834,24 @@ def cross_check(tk, name, valuation):
         log(f"  ⚠️ {name}: 참조값 없음 — 자체 PER·EPS 미검증")
         return
 
+    # 참조값이 우리보다 낡을 수 있다. 우리는 DART 공시를 직접 읽어 반기·3분기가
+    # 나오는 즉시 반영하는데, 외부 참조값은 며칠~몇 주 뒤에 따라온다. 그 사이에는
+    # 우리가 맞는데도 '15% 초과'로 걸려 PER·EPS 가 통째로 사라진다.
+    # (삼성전자 2026 반기: 우리 EPS 22,626 ↔ 참조 12,372 — 참조가 1분기 기준이었다)
+    #
+    # 그래서 TTM 이 '올해 분기'로 끝날 때는 게이트를 느슨하게 건다. 이때 잡고 싶은
+    # 것은 방법론 차이가 아니라 단위·자릿수 오류(1,000배)나 부호 반대뿐이다.
+    ttm_window = valuation.get("ttm_window") or ""
+    cur = datetime.date.today().year
+    stale_ref = bool(ttm_window and ttm_window.split("~")[-1].startswith(str(cur)))
+    limit = 3.0 if stale_ref else 0.15
+
     def gross_error(mine, ref):
         if mine is None or ref in (None, 0):
             return False
         if (mine > 0) != (ref > 0):           # 부호 반대 = 중대 오류
             return True
-        return abs(mine - ref) / abs(ref) > 0.15   # 15% 초과 = 중대 오류
+        return abs(mine - ref) / abs(ref) > limit
 
     issues = []
     if gross_error(valuation.get("eps"), nv.get("eps")):
@@ -855,7 +867,8 @@ def cross_check(tk, name, valuation):
         issues.append(f"배당 {our_div}%↔ref {nv_div}%")
         valuation["dps"] = valuation["div"] = None
     if issues:
-        log(f"  ❌ {name} 중대오류 차단 → 해당 지표 숨김: {' / '.join(issues)}")
+        log(f"  ❌ {name} 중대오류 차단 → 해당 지표 숨김: {' / '.join(issues)}"
+            + (" (참조값이 낡았을 수 있어 완화 기준 적용 중)" if stale_ref else ""))
     else:
         log(f"  ✅ {name} 검증 통과 PER {valuation.get('per')} PBR {valuation.get('pbr')} "
             f"EPS {valuation.get('eps')} BPS {valuation.get('bps')}")
