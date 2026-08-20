@@ -515,11 +515,20 @@ def collect_quant(dart, ticker, krx_row, stock):
             ttm_np = implied_np
 
     bps_denom = wavg or total_sh
-    eqo_q = (_bs(d_cur, "equity_owner") or _bs(d_cur, "equity"))
+    # 지배지분이 잡히면 그것, 아니면 총자본. 어느 쪽을 썼는지 남긴다 —
+    # 비지배지분이 큰 지주·보험에서 폴백이 걸리면 BPS 가 통째로 부풀어
+    # 오르는데, 결과만 보면 자본이 늘어난 것과 구분이 안 된다.
+    eqo_owner = _bs(d_cur, "equity_owner")
+    eqo_total = _bs(d_cur, "equity")
+    eqo_q = (eqo_owner or eqo_total)
     if eqo_q is not None:
         eqo_q *= unit
     # 자본잠식(자본 ≤ 0)이면 BPS·PBR은 무의미 → 숨김
     bps_q = int(eqo_q / bps_denom) if (eqo_q and eqo_q > 0 and bps_denom) else None
+    log(f"  · BPS 입력: 자본 {(eqo_q or 0)/1e12:,.1f}조"
+        f"({'지배지분' if eqo_owner else ('총자본-폴백' if eqo_total else '없음')})"
+        f" ÷ 주식수 {(bps_denom or 0)/1e6:,.0f}백만"
+        f"({'가중평균' if wavg else '발행총수'}) = BPS {bps_q}")
     pbr_q = round(price / bps_q, 2) if (bps_q and price) else None
 
     # ROE(TTM) = 최근 4개 분기 지배순이익 ÷ 평균 지배자본(TTM 시작시점~끝시점) — 토스와 정합
