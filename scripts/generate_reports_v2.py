@@ -34,6 +34,8 @@ import check_report_text     # 생성 직후 금지 표현 검사(프롬프트�
 
 OUT_DIR = ROOT / "data" / "reports_v2"
 STATE_JS = ROOT / "data" / "batch_state_v2.json"
+# 있으면 돈이 드는 모드(submit·collect·auto·recover)를 전부 멈춘다. main() 참고.
+PAUSE_FILE = ROOT / "data" / "reports_paused"
 # 생성 불가 종목(DART 재무 없음: 인프라펀드·스팩·일부 지주 등) — 백필이 영원히 재시도하지 않도록 기록.
 # 종목별 마커 파일(디렉터리)로 저장 → 병렬 run이 서로 겹치지 않아 git 커밋 충돌이 없다.
 SKIP_DIR = ROOT / "data" / "reports_v2_skip"
@@ -64,6 +66,9 @@ MODEL_REST = os.getenv("REPORT_MODEL_REST", "claude-sonnet-5")
 MODEL_TOP_N = int(os.getenv("REPORT_MODEL_TOP_N", "300"))
 TOP_N = int(os.getenv("REPORT_TOP_N", "10"))
 MAX_WAIT = int(os.getenv("BATCH_MAX_WAIT_SEC", "10800"))
+# auto 가 주문 직후 기다리는 시간. 짧게 끝나는 배치만 그 자리에서 받고,
+# 오래 걸리면 collect_batch 워크플로에 넘긴다(6시간 제한을 무의미하게).
+SHORT_WAIT = int(os.getenv("BATCH_SHORT_WAIT_SEC", "1800"))
 
 
 def model_for(rank):
@@ -1004,9 +1009,46 @@ def submit(cl, as_of):
     return batch.id
 
 
-def poll(cl, batch_id):
+def pickup(cl, as_of):
+    """남아 있는 배치가 끝났으면 회수한다. 재과금 없다.
+
+    auto 가 주문만 넣고 끝내므로 누군가는 결과를 받으러 와야 한다. 그게
+    이 함수고, collect_batch 워크플로가 30분마다 부른다.
+
+    이미 회수한 배치를 또 회수하면 리포트를 같은 내용으로 덮어쓴다. 그래서
+    회수가 끝나면 상태에 표시를 남기고, 표시가 있으면 건너뛴다.
+    """
+    if not STATE_JS.exists():
+        log("- 남은 배치 없음")
+        return
+    state = json.loads(STATE_JS.read_text(encoding="utf-8"))
+    bid = state.get("batch_id")
+    if not bid:
+        log("- 남은 배치 없음")
+        return
+    if state.get("collected"):
+        log(f"- {bid} 는 이미 회수했다")
+        return
+    if state.get("abandoned"):
+        log(f"- {bid} 는 버리기로 한 배치다 — 건너뛴다")
+        return
+    b = cl.messages.batches.retrieve(bid)
+    rc = b.request_counts
+    log(f"- {bid} · 상태 {b.processing_status} · 처리 {rc.processing}/성공 {rc.succeeded}/오류 {rc.errored}")
+    if b.processing_status != "ended":
+        log("- 아직 처리 중 — 다음 차례에 다시 온다")
+        return
+    collect(cl, as_of)
+    state = json.loads(STATE_JS.read_text(encoding="utf-8"))
+    state["collected"] = as_of
+    STATE_JS.write_text(json.dumps(state, ensure_ascii=False, indent=1), encoding="utf-8")
+    log(f"✅ {bid} 회수 완료")
+
+
+def poll(cl, batch_id, budget=None):
     waited = 0
-    while waited < MAX_WAIT:
+    limit = MAX_WAIT if budget is None else budget
+    while waited < limit:
         b = cl.messages.batches.retrieve(batch_id)
         rc = b.request_counts
         log(f"  · 상태 {b.processing_status} · 처리 {rc.processing}/성공 {rc.succeeded}/오류 {rc.errored}")
@@ -1014,7 +1056,7 @@ def poll(cl, batch_id):
             return True
         time.sleep(60)
         waited += 60
-    log("- ⏳ 시간 내 미완료. collect 모드로 회수하세요.")
+    log("- ⏳ 시간 내 미완료 — 남은 배치는 collect_batch 가 회수한다")
     return False
 
 
@@ -1180,6 +1222,24 @@ def main():
         patch_quant(as_of)
         return
 
+    # ── 과금 정지 스위치 ────────────────────────────────────────────────
+    # data/reports_paused 파일이 있으면 돈이 드는 모드를 전부 건너뛴다.
+    #
+    # 여기 두는 이유: 리포트를 만드는 길이 여럿이다(공시 트리거, 워치독의
+    # 자동 재가동, 수동 실행). 워크플로마다 스위치를 달면 하나를 빠뜨린다.
+    # 전부 이 함수를 지나므로 여기 한 곳이면 새는 곳이 없다.
+    #
+    # quant·patch 는 계산만 하고 API 를 부르지 않으므로 막지 않는다.
+    #
+    # 켜고 끄는 법:  파일을 지우면 다시 돈다.  touch data/reports_paused 로 멈춘다.
+    if PAUSE_FILE.exists():
+        why = PAUSE_FILE.read_text(encoding="utf-8").strip()
+        log(f"⏸️  과금 정지 중 — '{mode}' 를 건너뛴다.")
+        log(f"    {PAUSE_FILE.relative_to(ROOT)} 을 지우면 다시 돈다.")
+        if why:
+            log(f"    사유: {why.splitlines()[0]}")
+        return
+
     import anthropic
     key = os.getenv("ANTHROPIC_API_KEY")
     if not key:
@@ -1204,10 +1264,23 @@ def main():
     elif mode == "recover":
         # 취소된 배치 회수: ID로 배치 지정 → 정량 재수집 후 결과 회수(재과금 없음)
         recover(cl, as_of, os.getenv("RECOVER_BATCH_ID", ""))
+    elif mode == "pickup":
+        pickup(cl, as_of)
     else:
+        # auto — 주문을 넣고 잠깐만 기다린다.
+        #
+        # 전에는 여기서 최대 5시간을 기다렸다. 배치는 24시간까지 걸릴 수
+        # 있는데 잡은 6시간에 잘리므로, 기다리다 잘리면 결과를 못 받는다.
+        # 8월 20일 새벽 479건이 그렇게 날아갔다. 돈은 이미 나간 뒤였다.
+        #
+        # 그래서 짧게만 기다리고(SHORT_WAIT), 안 끝났으면 그대로 끝낸다.
+        # 남은 배치는 collect_batch 워크플로가 30분마다 와서 회수한다.
+        # 주문과 회수가 분리되면 6시간 제한이 의미가 없어진다.
         bid = submit(cl, as_of)
-        if bid and poll(cl, bid):
+        if bid and poll(cl, bid, budget=SHORT_WAIT):
             collect(cl, as_of)
+        elif bid:
+            log(f"- 아직 처리 중 — 여기서 끝낸다. collect_batch 가 회수한다({bid}).")
 
 
 if __name__ == "__main__":

@@ -71,6 +71,14 @@ jobs:
             echo "→ 충분히 진행 중. 워치독 대기."
             exit 0
           fi
+          # 과금 정지 중이면 재가동하지 않는다. generate_reports_v2.py 안에도
+          # 같은 스위치가 있어 실제 과금은 어차피 막히지만, 여기서 걸러야
+          # 30분마다 아무것도 못 하는 run 이 무더기로 뜨지 않는다.
+          if [ -f data/reports_paused ]; then
+            echo "⏸️  data/reports_paused 가 있어 백필을 재가동하지 않는다."
+            echo "⏸️ 리포트 자동 생성 정지 중 — data/reports_paused 를 지우면 재개" >> $GITHUB_STEP_SUMMARY
+            exit 0
+          fi
           echo "→ 진행 $running < $SHARDS + 남은 $remaining개 → 샤드 ${SHARDS}개 병렬 백필 재가동"
           i=0
           while [ "$i" -lt "$SHARDS" ]; do
