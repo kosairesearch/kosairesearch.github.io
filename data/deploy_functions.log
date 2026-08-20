@@ -1,12 +1,22 @@
 
 [1m[37m===[39m Deploying to 'kosai-ae167'...[22m
 
-[36m[1mi [22m[39m deploying [1mfirestore, functions[22m
+[36m[1mi [22m[39m deploying [1mfirestore[22m
 [36m[1mi  firestore:[22m[39m ensuring required API [1mfirestore.googleapis.com[22m is enabled...
 [32m[1m✔  firestore:[22m[39m required API [1mfirestore.googleapis.com[22m is enabled
 [36m[1mi  firestore:[22m[39m ensuring required API [1mfirestore.googleapis.com[22m is enabled...
 [36m[1mi  cloud.firestore:[22m[39m checking [1mfirestore.rules[22m for compilation errors...
 [32m[1m✔  cloud.firestore:[22m[39m rules file [1mfirestore.rules[22m compiled successfully
+[36m[1mi  firestore:[22m[39m uploading rules [1mfirestore.rules[22m...
+[32m[1m✔  firestore:[22m[39m released rules [1mfirestore.rules[22m to [1mcloud.firestore[22m
+
+[32m[1m✔ [22m[39m [1m[4mDeploy complete![24m[22m
+
+[1mProject Console:[22m https://console.firebase.google.com/project/kosai-ae167/overview
+
+[1m[37m===[39m Deploying to 'kosai-ae167'...[22m
+
+[36m[1mi [22m[39m deploying [1mfunctions[22m
 [36m[1mi  functions:[22m[39m preparing codebase [1mdefault[22m for deployment
 [36m[1mi  functions:[22m[39m ensuring required API [1mcloudfunctions.googleapis.com[22m is enabled...
 [36m[1mi  functions:[22m[39m ensuring required API [1mcloudbuild.googleapis.com[22m is enabled...
@@ -17,7 +27,7 @@
 [33m[1m⚠ [22m[39m [1m[33mfunctions: [39m[22mpackage.json indicates an outdated version of firebase-functions. Please upgrade using [1mnpm install --save firebase-functions@latest[22m in your functions directory.
 [33m[1m⚠ [22m[39m [1m[33mfunctions: [39m[22mPlease note that there will be breaking changes when you upgrade.
 [36m[1mi  functions:[22m[39m Loading and analyzing source code for codebase default to determine what to deploy
-Serving at port 8927
+Serving at port 8495
 
 ReferenceError: Cannot access 'TOSS_SECRET_KEY' before initialization
     at Object.<anonymous> (/home/runner/work/kosairesearch.github.io/kosairesearch.github.io/functions/index.js:466:43)
