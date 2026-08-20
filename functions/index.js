@@ -25,10 +25,24 @@ const KAKAO_CLIENT_SECRET = defineSecret("KAKAO_CLIENT_SECRET"); // 카카오에
 const NAVER_CLIENT_ID = defineSecret("NAVER_CLIENT_ID");
 const NAVER_CLIENT_SECRET = defineSecret("NAVER_CLIENT_SECRET");
 const RESEND_API_KEY = defineSecret("RESEND_API_KEY"); // 이메일 발송(Resend)
-// 결제(토스). 466행 deleteAccount 가 이 상수를 쓰는데 선언이 547행에 있어서
-// "Cannot access before initialization" 으로 함수 배포가 통째로 실패하고 있었다.
-// 다른 시크릿과 같은 자리로 올린다 — 선언은 쓰기 전에 있어야 한다.
-const TOSS_SECRET_KEY = defineSecret("TOSS_SECRET_KEY");
+/* ── 결제 스위치 ─────────────────────────────────────────────
+   실사이트에는 아직 결제를 올리지 않는다. 배포 목록에서 빼는 것만으로는
+   부족했다. 파이어베이스 CLI 는 --only 로 고른 함수만 올리더라도 코드
+   전체를 훑어 '누군가 쓰는 시크릿' 을 먼저 확인한다. 그래서 결제 함수가
+   TOSS_SECRET_KEY 를 달고 있는 한, 등록된 적 없는 그 키 하나 때문에
+   로그인·탈퇴 같은 결제와 무관한 함수까지 전부 배포가 막혔다.
+
+   그래서 스위치가 꺼져 있으면 결제 함수를 아예 만들지 않는다. 시크릿을
+   선언하지도 않으니 확인할 것도 없다. renewSubscriptions 가 onSchedule 인
+   것도 있다 — 한 번 올라가면 부르는 화면이 없어도 매일 새벽에 혼자 돌면서
+   카드에 결제를 건다. 목록에서 빼는 것보다 만들지 않는 쪽이 확실하다.
+
+   켜는 법 (결제를 실제로 시작하는 날):
+     1) firebase functions:secrets:set TOSS_SECRET_KEY
+     2) 배포 워크플로 env 에 KOSAI_PAYMENTS=on
+     3) --only 목록에 결제 함수 추가                                 */
+const PAYMENTS_LIVE = process.env.KOSAI_PAYMENTS === "on";
+const TOSS_SECRET_KEY = PAYMENTS_LIVE ? defineSecret("TOSS_SECRET_KEY") : null;
 
 async function asJson(res, label){
   const text = await res.text();
@@ -610,9 +624,12 @@ const REFUND_FEE_RATE = 0.10;                     // 서비스 수수료 10% (�
 const FREE_WITHDRAW_DAYS = 7;                     // 미열람 시 전액 환불 기간
 
 const tossAuth = () =>
-  "Basic " + Buffer.from((TOSS_SECRET_KEY.value() || "") + ":").toString("base64");
+  "Basic " + Buffer.from(((TOSS_SECRET_KEY && TOSS_SECRET_KEY.value()) || "") + ":").toString("base64");
 
 async function toss(path, body) {
+  /* 스위치가 꺼져 있으면 비밀키가 없다. 빈 키로 토스를 부르면 401 을 받고
+     엉뚱한 카드사 오류 메시지가 나간다 — 여기서 먼저 막는다. */
+  if (!PAYMENTS_LIVE) throw new HttpsError("failed-precondition", "결제 기능이 아직 준비되지 않았습니다.");
   const res = await fetch("https://api.tosspayments.com/v1" + path, {
     method: "POST",
     headers: { Authorization: tossAuth(), "Content-Type": "application/json" },
@@ -680,7 +697,7 @@ async function charge(db, uid, sub, amount, description, tag, kind) {
 }
 
 /* ── 1) 카드 등록 + 첫 결제 ───────────────────────────────── */
-exports.confirmBilling = onCall(
+if (PAYMENTS_LIVE) exports.confirmBilling = onCall(
   { region: REGION, cors: true, secrets: [TOSS_SECRET_KEY] },
   async (req) => {
     const uid = uidOrThrow(req);
@@ -762,7 +779,7 @@ exports.confirmBilling = onCall(
       다음 달 쓸 플랜을 고르는 건 계속 쓰겠다는 뜻이므로, 여기서 해지 예약을 푼다
       (반대로 해지를 누르면 cancelSubscription 이 변경 예약을 지운다).
    ─────────────────────────────────────────────────────────── */
-exports.changePlan = onCall(
+if (PAYMENTS_LIVE) exports.changePlan = onCall(
   { region: REGION, cors: true, secrets: [TOSS_SECRET_KEY] },
   async (req) => {
     const uid = uidOrThrow(req);
@@ -807,7 +824,7 @@ exports.changePlan = onCall(
 /* ── 3) 해지 / 해지 취소 ─────────────────────────────────────
    해지는 '지금 끊기'가 아니라 '갱신 안 함'이다. 이미 결제한 기간은 그대로 쓴다.
    ─────────────────────────────────────────────────────────── */
-exports.cancelSubscription = onCall({ region: REGION, cors: true }, async (req) => {
+if (PAYMENTS_LIVE) exports.cancelSubscription = onCall({ region: REGION, cors: true }, async (req) => {
   const uid = uidOrThrow(req);
   const ref = admin.firestore().doc(`subscriptions/${uid}`);
   const sub = (await ref.get()).data();
@@ -821,7 +838,7 @@ exports.cancelSubscription = onCall({ region: REGION, cors: true }, async (req) 
   return { ok: true, droppedPlan: sub.pendingPlan || null };
 });
 
-exports.resumeSubscription = onCall({ region: REGION, cors: true }, async (req) => {
+if (PAYMENTS_LIVE) exports.resumeSubscription = onCall({ region: REGION, cors: true }, async (req) => {
   const uid = uidOrThrow(req);
   const ref = admin.firestore().doc(`subscriptions/${uid}`);
   const sub = (await ref.get()).data();
@@ -880,7 +897,7 @@ async function doRefund(db, uid, sub, q) {
   });
 }
 
-exports.requestRefund = onCall(
+if (PAYMENTS_LIVE) exports.requestRefund = onCall(
   { region: REGION, cors: true, secrets: [TOSS_SECRET_KEY] },
   async (req) => {
     const uid = uidOrThrow(req);
@@ -910,7 +927,7 @@ exports.requestRefund = onCall(
    매일 한 번 돌며 기간이 끝난 구독을 갱신한다. 크론은 UTC 로만 해석되므로
    02:00 UTC(= 같은 날 11:00 KST)로 적는다. 15시 이후로 잡으면 한국 날짜가 밀린다.
    ─────────────────────────────────────────────────────────── */
-exports.renewSubscriptions = onSchedule(
+if (PAYMENTS_LIVE) exports.renewSubscriptions = onSchedule(
   { region: REGION, schedule: "0 2 * * *", timeZone: "Etc/UTC", secrets: [TOSS_SECRET_KEY] },
   async () => {
     const db = admin.firestore();
