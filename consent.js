@@ -43,7 +43,7 @@
    ============================================================ */
 import { app } from "./firebase-config.js";
 import {
-  getFirestore, doc, getDoc, setDoc, serverTimestamp
+  getFirestore, doc, getDoc, setDoc, updateDoc, serverTimestamp
 } from "https://www.gstatic.com/firebasejs/10.12.2/firebase-firestore.js";
 
 /* 동의서 판 번호. 문구가 실질적으로 바뀌면 올린다 — 올리면 기존 회원도
@@ -71,7 +71,20 @@ if (window.KOSi18n) window.KOSi18n.register({
   "동의하고 계속하기": "Agree and continue",
   "동의하지 않고 로그아웃": "Sign out instead",
   "동의 저장에 실패했어요. 잠시 후 다시 시도해 주세요.":
-    "Could not save your agreement. Please try again in a moment."
+    "Could not save your agreement. Please try again in a moment.",
+  "마케팅 수신 설정": "Marketing messages",
+  "새 리포트와 서비스 소식을 이메일로 받습니다.": "Get news about new reports and the service by email.",
+  "받지 않아도 서비스 이용에는 아무 영향이 없습니다.":
+    "Turning this off does not affect your use of the service.",
+  "수신 동의함": "Subscribed",
+  "수신 동의 안 함": "Not subscribed",
+  "저장": "Save",
+  "닫기": "Close",
+  "저장했습니다.": "Saved.",
+  "저장에 실패했어요. 잠시 후 다시 시도해 주세요.":
+    "Could not save. Please try again in a moment.",
+  "불러오지 못했어요. 잠시 후 다시 시도해 주세요.":
+    "Could not load. Please try again in a moment."
 });
 
 /* 필수 항목의 키. validate() 가 이 목록만 본다 — 항목을 늘릴 때
@@ -319,5 +332,91 @@ export async function ensureConsent(user, onSignOut) {
       try { await onSignOut(); } catch (e) {}
       resolve(false);
     });
+  });
+}
+
+/* ────────────────── 마케팅 수신 설정 (철회 포함) ────────────────── */
+
+/* 동의는 언제든 철회할 수 있어야 한다. 켜는 것만 있고 끄는 길이 없으면
+   그건 동의가 아니다. 계정 메뉴에서 이 화면을 연다.
+
+   끌 때 marketingAt 을 지우고 marketingOffAt 을 남긴다. "언제 동의했고
+   언제 철회했나" 를 나중에 답할 수 있어야 하기 때문이다. */
+export async function openMarketingSettings(user) {
+  css();
+  const ov = document.createElement("div");
+  ov.className = "kc-ov";
+  const card = document.createElement("div");
+  card.className = "kc-card";
+  card.innerHTML =
+    `<div class="kc-h">${T("마케팅 수신 설정")}</div>
+     <p class="kc-sub">${T("새 리포트와 서비스 소식을 이메일로 받습니다.")}<br>${T("받지 않아도 서비스 이용에는 아무 영향이 없습니다.")}</p>`;
+
+  const box = document.createElement("div");
+  box.className = "kc";
+  const row = document.createElement("label");
+  row.className = "kc-row";
+  const cb = document.createElement("input");
+  cb.type = "checkbox";
+  cb.disabled = true;                    // 현재 값을 읽어오기 전에는 못 만진다
+  const span = document.createElement("span");
+  span.textContent = T("수신 동의 안 함");
+  row.appendChild(cb); row.appendChild(span);
+  box.appendChild(row);
+  const err = document.createElement("div");
+  err.className = "kc-err";
+  box.appendChild(err);
+  card.appendChild(box);
+
+  const act = document.createElement("div");
+  act.className = "kc-act";
+  const save = document.createElement("button");
+  save.type = "button"; save.className = "btn btn-primary";
+  save.textContent = T("저장"); save.disabled = true;
+  const close = document.createElement("button");
+  close.type = "button"; close.className = "kc-no";
+  close.textContent = T("닫기");
+  act.appendChild(save); act.appendChild(close);
+  card.appendChild(act);
+  ov.appendChild(card);
+  document.body.appendChild(ov);
+
+  const label = () => { span.textContent = T(cb.checked ? "수신 동의함" : "수신 동의 안 함"); };
+  cb.addEventListener("change", () => { label(); err.classList.remove("on"); });
+  close.addEventListener("click", () => ov.remove());
+  // 이 화면은 닫아도 된다 — 동의 화면과 달리 막아설 이유가 없다.
+  ov.addEventListener("click", e => { if (e.target === ov) ov.remove(); });
+
+  try {
+    const snap = await getDoc(doc(db(), "users", user.uid));
+    cb.checked = !!(snap.exists() && (snap.data().consents || {}).marketing);
+    label();
+    cb.disabled = false; save.disabled = false;
+  } catch (e) {
+    err.textContent = T("불러오지 못했어요. 잠시 후 다시 시도해 주세요.");
+    err.classList.add("on");
+    return;
+  }
+
+  save.addEventListener("click", async () => {
+    save.disabled = true; cb.disabled = true;
+    try {
+      const on = cb.checked;
+      await updateDoc(doc(db(), "users", user.uid), {
+        "consents.marketing": on,
+        marketingAt: on ? serverTimestamp() : null,
+        marketingOffAt: on ? null : serverTimestamp(),
+        updatedAt: serverTimestamp()
+      });
+      err.style.color = "var(--fg-2)";
+      err.textContent = T("저장했습니다.");
+      err.classList.add("on");
+      setTimeout(() => ov.remove(), 900);
+    } catch (e) {
+      save.disabled = false; cb.disabled = false;
+      err.style.color = "";
+      err.textContent = T("저장에 실패했어요. 잠시 후 다시 시도해 주세요.");
+      err.classList.add("on");
+    }
   });
 }
