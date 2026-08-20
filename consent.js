@@ -222,7 +222,11 @@ export function renderConsent(opts = {}) {
         box.classList.add("invalid");
         err.classList.add("on");
         const first = REQUIRED.find(k => !v[k]);
-        try { boxes[first].focus(); } catch (e) {}
+        /* 누른 자리에서 한참 떨어진 곳에 빨간 줄만 켜 두면 버튼이 죽은 것처럼
+           보인다. 실제로 가입 페이지에서 그랬다 — 소셜 버튼은 위에 있고 동의
+           상자는 768px 아래라 화면 밖이었다. 안내를 눈앞으로 데려온다. */
+        try { box.scrollIntoView({ block: "center", behavior: "smooth" }); } catch (e) {}
+        try { boxes[first].focus({ preventScroll: true }); } catch (e) { try { boxes[first].focus(); } catch (_) {} }
       }
       return ok;
     }

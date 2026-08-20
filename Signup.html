@@ -710,13 +710,35 @@ function showVerifySent(email){
   note.style.display='block';
 }
 
+/* ── 소셜 버튼은 이 체크박스에 걸리지 않는다 ────────────────────────
+   전에는 세 버튼 모두 맨 앞에서 consent.validate() 를 부르고 실패하면
+   조용히 돌아갔다. 그런데 동의 상자는 버튼에서 768px 아래에 있다. 누른
+   자리에서는 아무 일도 일어나지 않으니 버튼이 고장 난 것처럼 보였다.
+
+   게다가 이제 막을 이유도 없다. 카카오·네이버는 돌아온 뒤 서버가 신규면
+   계정을 만들지 않고 동의 화면을 띄우고, 구글도 신규면 그 자리에서 받는다.
+   동의는 어느 길로 가든 계정 전에 받는다.
+
+   그래서 이 상자는 '미리 체크해 두면 한 번 덜 묻는' 지름길로만 쓴다.
+   체크돼 있으면 담아서 보내고, 비어 있으면 그냥 보낸다. 이메일 가입은
+   여기 말고 받을 자리가 없으므로 그대로 필수다. */
+const prefill = () => (consent.values().age14 && consent.values().terms && consent.values().privacy)
+  ? consent.values() : null;
+
 $('#googleBtn').addEventListener('click', async () => {
   clearErr();
-  if(!consent.validate()) return;
   try{
     const cred = await signInWithPopup(auth, new GoogleAuthProvider());
-    try{ await saveConsent(cred.user.uid, consent.values(), 'google'); }
-    catch(e){ console.warn('[consent] 저장 실패:', e && e.code); }
+    const pre = prefill();
+    if(pre){
+      try{ await saveConsent(cred.user.uid, pre, 'google'); }
+      catch(e){ console.warn('[consent] 저장 실패:', e && e.code); }
+    }else{
+      // 여기서 체크하지 않고 왔다면 지금 받는다. 거부하면 계정을 지운다.
+      const { ensureConsent } = await import('./consent.js');
+      const ok = await ensureConsent(cred.user, () => signOut(auth));
+      if(!ok) return;
+    }
     if(window.KOSA) KOSA.track('sign_up', { method: 'google' }); go(); }
   catch(err){ if((err.code || '').includes('popup-closed') || (err.code || '').includes('cancelled-popup')) return; showErr(mapError(err)); }
 });
@@ -726,10 +748,11 @@ wireSocialButtons({
   onError: showErr,
   // 카카오·네이버는 그 사이트로 갔다가 돌아온다. 돌아오면 이 페이지는 새로
   // 그려져 체크 상태가 사라지므로, 떠나기 전에 담아 뒀다가 로그인 성립 후
-  // consent.js 가 꺼내 저장한다.
+  // consent.js 가 꺼내 저장한다. 비어 있으면 담지 않고 그냥 보낸다 —
+  // 돌아온 뒤에 동의 화면이 뜬다.
   requireAgree: () => {
-    if(!consent.validate()) return false;
-    stashConsent(consent.values(), 'social');
+    const pre = prefill();
+    if(pre) stashConsent(pre, 'social');
     return true;
   }
 });
