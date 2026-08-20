@@ -25,6 +25,10 @@ const KAKAO_CLIENT_SECRET = defineSecret("KAKAO_CLIENT_SECRET"); // 카카오에
 const NAVER_CLIENT_ID = defineSecret("NAVER_CLIENT_ID");
 const NAVER_CLIENT_SECRET = defineSecret("NAVER_CLIENT_SECRET");
 const RESEND_API_KEY = defineSecret("RESEND_API_KEY"); // 이메일 발송(Resend)
+// 결제(토스). 466행 deleteAccount 가 이 상수를 쓰는데 선언이 547행에 있어서
+// "Cannot access before initialization" 으로 함수 배포가 통째로 실패하고 있었다.
+// 다른 시크릿과 같은 자리로 올린다 — 선언은 쓰기 전에 있어야 한다.
+const TOSS_SECRET_KEY = defineSecret("TOSS_SECRET_KEY");
 
 async function asJson(res, label){
   const text = await res.text();
@@ -101,7 +105,7 @@ exports.socialLogin = onCall(
     secrets: [KAKAO_REST_KEY, KAKAO_CLIENT_SECRET, NAVER_CLIENT_ID, NAVER_CLIENT_SECRET]
   },
   async (req) => {
-    const { provider, code, redirectUri, state } = req.data || {};
+    const { provider, code, redirectUri, state, consents } = req.data || {};
     if(!provider || !code || !redirectUri){
       throw new HttpsError("invalid-argument", "provider, code, redirectUri 가 필요합니다.");
     }
@@ -120,13 +124,58 @@ exports.socialLogin = onCall(
     if(p.name) userProps.displayName = p.name;
     if(p.photo) userProps.photoURL = p.photo;
 
+    /* ── 동의를 받기 전에는 계정을 만들지 않는다 ──────────────────────
+       전에는 여기서 곧바로 계정을 만들고 토큰을 내줬다. 그러면 사용자
+       화면에서는 '가입은 이미 됐는데 약관 동의는 그 다음' 이 된다. 동의를
+       거부하면 동의 없는 계정이 남는다.
+
+       그래서 신규 사용자이고 동의가 안 왔으면 계정을 만들지 않고
+       needsConsent 만 돌려준다. 클라이언트가 동의 화면을 띄우고, 동의를
+       받은 뒤 같은 code 로 다시 부르면 그때 만든다.
+
+       기존 사용자는 이 검사를 지나간다 — 로그인할 때마다 동의를 물으면
+       안 되기 때문이다. */
+    let exists = true;
     try{
-      await admin.auth().updateUser(uid, userProps);
+      await admin.auth().getUser(uid);
     }catch(e){
-      if(e.code === "auth/user-not-found"){
-        await admin.auth().createUser({ uid, ...userProps });
-      }else{
-        throw new HttpsError("internal", `user_upsert_failed: ${e.code || e.message}`);
+      if(e.code === "auth/user-not-found") exists = false;
+      else throw new HttpsError("internal", `user_lookup_failed: ${e.code || e.message}`);
+    }
+
+    const agreed = consents && consents.age14 && consents.terms && consents.privacy;
+    if(!exists && !agreed){
+      return { needsConsent: true, provider, name: p.name || "", email: p.email || "" };
+    }
+
+    try{
+      if(exists) await admin.auth().updateUser(uid, userProps);
+      else await admin.auth().createUser({ uid, ...userProps });
+    }catch(e){
+      throw new HttpsError("internal", `user_upsert_failed: ${e.code || e.message}`);
+    }
+
+    // 새로 만든 계정이면 동의를 같은 호출 안에서 남긴다. 클라이언트가 따로
+    // 쓰게 두면 그 사이에 창을 닫았을 때 동의 없는 계정이 남는다.
+    if(!exists){
+      try{
+        await admin.firestore().collection("users").doc(uid).set({
+          consents: {
+            version: consents.version || "",
+            age14: true, terms: true, privacy: true,
+            marketing: !!consents.marketing,
+            agreedAt: admin.firestore.FieldValue.serverTimestamp()
+          },
+          marketingAt: consents.marketing
+            ? admin.firestore.FieldValue.serverTimestamp() : null,
+          signupMethod: provider,
+          createdAt: admin.firestore.FieldValue.serverTimestamp(),
+          updatedAt: admin.firestore.FieldValue.serverTimestamp()
+        }, { merge: true });
+      }catch(e){
+        // 동의를 남기지 못하면 계정도 남기지 않는다. 반쪽짜리 가입을 두지 않는다.
+        try{ await admin.auth().deleteUser(uid); }catch(_){}
+        throw new HttpsError("internal", `consent_save_failed: ${e.code || e.message}`);
       }
     }
 
@@ -544,7 +593,6 @@ exports.getUsage = onCall({ region: REGION, cors: true }, async (req) => {
    ⚠️ 구독 문서는 서버만 쓴다(firestore.rules 에서 클라이언트 쓰기 금지).
    ============================================================ */
 const { onSchedule } = require("firebase-functions/v2/scheduler");
-const TOSS_SECRET_KEY = defineSecret("TOSS_SECRET_KEY");
 
 const PRICE = { basic: 9900, pro: 14900 };        // pricing.html·payment-config.js 와 같아야 한다
 const PLAN_NAME = { basic: "BASIC", pro: "PRO" };

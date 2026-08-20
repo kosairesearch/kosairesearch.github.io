@@ -695,7 +695,20 @@ $('#emailForm').addEventListener('submit', async e => {
 
 $('#googleBtn').addEventListener('click', async () => {
   clearErr();
-  try{ await signInWithPopup(auth, new GoogleAuthProvider()); go(); }
+  try{
+    const cred = await signInWithPopup(auth, new GoogleAuthProvider());
+    /* 구글은 팝업이 닫히는 순간 파이어베이스가 계정을 만든다. 서버를 거치지
+       않아 카카오·네이버처럼 '동의 먼저, 계정 나중' 으로 만들 수가 없다.
+       그래서 새 계정이면 이 자리에서 동의를 받고, 거부하면 지운다. 화면을
+       넘긴 뒤가 아니라 여기서 받아야 가입이 끝나기 전에 묻는 것이 된다. */
+    const { getAdditionalUserInfo } = await import("https://www.gstatic.com/firebasejs/10.12.2/firebase-auth.js");
+    if((getAdditionalUserInfo(cred) || {}).isNewUser){
+      const { ensureConsent } = await import("./consent.js");
+      const ok = await ensureConsent(cred.user, () => auth.signOut());
+      if(!ok) return;              // 가입 취소 — 계정은 ensureConsent 가 지웠다
+    }
+    go();
+  }
   catch(err){ if((err.code || '').includes('popup-closed') || (err.code || '').includes('cancelled-popup')) return; showErr(mapError(err)); }
 });
 

@@ -54,11 +54,22 @@ jobs:
           firebase deploy --only firestore:rules \
             --project kosai-ae167 --non-interactive --force 2>&1 | tee /tmp/deploy.log
 
-      - name: 함수 배포
+      # 결제 함수는 올리지 않는다.
+      #
+      # 코드는 저장소에 있지만 결제 기능은 아직 서비스에 넣지 않기로 했다.
+      # 그런데 renewSubscriptions 는 onSchedule 이라 올리는 순간 매일 새벽
+      # 2시에 혼자 돌면서 만료된 구독의 카드에 결제를 건다. 부르는 화면이
+      # 없어도 스스로 도는 함수라, 안 올리는 것이 유일하게 확실한 방법이다.
+      #
+      # 그래서 올릴 함수를 하나씩 적는다. 결제를 실제로 넣을 때 아래 목록에
+      # confirmBilling·changePlan·cancelSubscription·resumeSubscription·
+      # requestRefund·renewSubscriptions 를 더하면 된다.
+      - name: 함수 배포 (결제 제외)
         run: |
           set -o pipefail
-          firebase deploy --only functions \
-            --project kosai-ae167 --non-interactive --force 2>&1 | tee -a /tmp/deploy.log
+          firebase deploy --project kosai-ae167 --non-interactive --force \
+            --only functions:socialLogin,functions:sendVerifyEmail,functions:sendResetEmail,functions:submitForm,functions:getReport,functions:deleteAccount,functions:getUsage \
+            2>&1 | tee -a /tmp/deploy.log
 
       - name: 배포 로그 저장(디버그)
         if: always()

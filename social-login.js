@@ -44,31 +44,39 @@ async function completeLogin(code, returnedState, saved, onError){
   try{
     const fns = getFunctions(app, SOCIAL.functionsRegion);
     const call = httpsCallable(fns, "socialLogin");
-    const { data } = await call({
+    const payload = {
       provider: saved.provider,
       code,
       redirectUri: saved.redirectUri,
       state: returnedState
-    });
-    const cred = await signInWithCustomToken(auth, data.token);
+    };
 
-    /* 동의를 여기서 받는다 — 화면을 넘기기 전에.
-       카카오·네이버는 인증이 끝나는 순간 계정이 먼저 만들어진다. 그대로
-       홈으로 보내면 '가입은 이미 됐는데 동의는 나중에' 가 된다. 순서가
-       뒤집힌 것이고, 동의를 거부하면 동의 없는 계정이 남는다.
-       그래서 이 자리에서 받고, 거부하면 계정을 지운다(consent.js). */
-    try{
-      const { ensureConsent } = await import("./consent.js");
-      const ok = await ensureConsent(cred.user, () => auth.signOut());
-      if(!ok){
+    // 1차 호출. 신규 사용자이고 동의가 없으면 서버는 계정을 만들지 않고
+    // needsConsent 만 돌려준다. 가입은 아직 성립하지 않은 상태다.
+    let { data } = await call(payload);
+
+    if(data && data.needsConsent){
+      const { collectConsent, takeStashed, CONSENT_VERSION } = await import("./consent.js");
+      // 가입 페이지에서 이미 체크하고 온 경우가 있다. 그때는 다시 묻지 않는다 —
+      // 같은 동의를 두 번 받으면 사용자는 뭘 잘못했나 싶어진다.
+      const st = takeStashed();
+      let values = (st && st.values && st.values.age14 && st.values.terms && st.values.privacy)
+        ? { ...st.values, version: CONSENT_VERSION }
+        : await collectConsent();
+      if(!values){
+        // 동의하지 않았다 — 계정이 만들어진 적이 없으므로 지울 것도 없다.
         history.replaceState({}, "", location.pathname);
-        return;               // 가입이 취소됐다 — 이 페이지에 그대로 둔다
+        return;
       }
-    }catch(e){
-      // 동의 모듈을 못 불러와도 로그인 자체는 막지 않는다. 다음 페이지에서
-      // auth-state.js 의 확인이 한 번 더 걸린다.
-      console.warn("[consent] 확인 실패:", e && e.message);
+      // 2차 호출. 이번엔 동의를 함께 보낸다. 서버가 계정을 만들고 동의를
+      // 같은 호출 안에서 기록한다.
+      ({ data } = await call({ ...payload, consents: values }));
+      if(!data || !data.token){
+        throw new Error("가입을 마치지 못했습니다.");
+      }
     }
+
+    await signInWithCustomToken(auth, data.token);
     location.href = saved.next || "Home.html";
   }catch(err){
     history.replaceState({}, "", location.pathname);

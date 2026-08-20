@@ -377,3 +377,51 @@ export async function setMarketing(uid, on) {
     updatedAt: serverTimestamp()
   }, { merge: true });
 }
+
+
+/* ────────────── 가입 전 동의 받기 (계정 없이) ────────────── */
+
+/* 로그인한 사용자가 없는 상태에서 동의만 받는다. 동의하면 값, 취소하면 null.
+
+   ensureConsent 와 다른 점: 저장도, 계정 삭제도 하지 않는다. 카카오·네이버는
+   서버가 신규 사용자면 계정을 만들지 않고 돌아오므로, 이 시점에는 지울 계정
+   자체가 없다. 받은 값을 서버로 보내면 서버가 계정과 동의를 함께 만든다.
+
+   이것이 올바른 순서다 — 동의가 먼저, 계정이 나중. */
+export function collectConsent() {
+  css();
+  return new Promise(resolve => {
+    const ov = document.createElement("div");
+    ov.className = "kc-ov";
+    const card = document.createElement("div");
+    card.className = "kc-card";
+    const h = document.createElement("div");
+    h.className = "kc-h";
+    h.textContent = T("가입을 마치려면 아래 항목에 동의해 주세요");
+    const sub = document.createElement("p");
+    sub.className = "kc-sub";
+    sub.textContent = T("동의하지 않으면 가입이 취소됩니다.");
+    const set = renderConsent();
+    const act = document.createElement("div");
+    act.className = "kc-act";
+    const ok = document.createElement("button");
+    ok.type = "button"; ok.className = "btn btn-primary";
+    ok.textContent = T("동의하고 가입 완료");
+    const no = document.createElement("button");
+    no.type = "button"; no.className = "kc-no";
+    no.textContent = T("동의하지 않고 취소");
+    act.appendChild(ok); act.appendChild(no);
+    card.appendChild(h); card.appendChild(sub); card.appendChild(set.el); card.appendChild(act);
+    ov.appendChild(card);
+    document.body.appendChild(ov);
+
+    ok.addEventListener("click", () => {
+      if (!set.validate()) return;
+      const v = set.values();
+      v.version = CONSENT_VERSION;
+      ov.remove();
+      resolve(v);
+    });
+    no.addEventListener("click", () => { ov.remove(); resolve(null); });
+  });
+}
