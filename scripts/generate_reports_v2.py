@@ -830,7 +830,15 @@ def pick_targets():
         if shards > 1:
             missing = [s for s in missing if zlib.crc32(s["ticker"].encode()) % shards == shard]
         return data, missing[:TOP_N]
-    stocks = sorted(data["stocks"], key=lambda x: x.get("mcap", 0) or 0, reverse=True)[:TOP_N]
+    # 시총 상위 [FILL_FROM, FILL_FROM+TOP_N) 구간. patch 처럼 '이미 리포트가 있는'
+    # 종목을 훑을 때는 위의 백필 경로(없는 것만 고름)를 쓸 수 없어 여기서 자른다.
+    #   전 종목 patch 는 종목당 30초 안팎이라 한 잡에 다 안 들어간다(6시간 제한).
+    #   FILL_FROM 을 0·700·1400·2100 으로 나눠 이어 돌린다.
+    start = int(os.getenv("REPORT_FILL_FROM", "0") or "0")
+    ranked = sorted(data["stocks"], key=lambda x: x.get("mcap", 0) or 0, reverse=True)
+    stocks = ranked[start:start + TOP_N]
+    if start:
+        log(f"- 시총 {start+1}~{start+len(stocks)}위 구간 {len(stocks)}종목")
     return data, stocks
 
 
