@@ -7,7 +7,7 @@
 [36m[1mi  firestore:[22m[39m ensuring required API [1mfirestore.googleapis.com[22m is enabled...
 [36m[1mi  cloud.firestore:[22m[39m checking [1mfirestore.rules[22m for compilation errors...
 [32m[1m✔  cloud.firestore:[22m[39m rules file [1mfirestore.rules[22m compiled successfully
-[36m[1mi  firestore:[22m[39m uploading rules [1mfirestore.rules[22m...
+[36m[1mi  firestore:[22m[39m latest version of [1mfirestore.rules[22m already up to date, skipping upload...
 [32m[1m✔  firestore:[22m[39m released rules [1mfirestore.rules[22m to [1mcloud.firestore[22m
 
 [32m[1m✔ [22m[39m [1m[4mDeploy complete![24m[22m
@@ -27,19 +27,12 @@
 [33m[1m⚠ [22m[39m [1m[33mfunctions: [39m[22mpackage.json indicates an outdated version of firebase-functions. Please upgrade using [1mnpm install --save firebase-functions@latest[22m in your functions directory.
 [33m[1m⚠ [22m[39m [1m[33mfunctions: [39m[22mPlease note that there will be breaking changes when you upgrade.
 [36m[1mi  functions:[22m[39m Loading and analyzing source code for codebase default to determine what to deploy
-Serving at port 8495
+Serving at port 8250
 
-ReferenceError: Cannot access 'TOSS_SECRET_KEY' before initialization
-    at Object.<anonymous> (/home/runner/work/kosairesearch.github.io/kosairesearch.github.io/functions/index.js:466:43)
-    at Module._compile (node:internal/modules/cjs/loader:1521:14)
-    at Module._extensions..js (node:internal/modules/cjs/loader:1623:10)
-    at Module.load (node:internal/modules/cjs/loader:1266:32)
-    at Module._load (node:internal/modules/cjs/loader:1091:12)
-    at Module.require (node:internal/modules/cjs/loader:1289:19)
-    at require (node:internal/modules/helpers:182:18)
-    at loadModule (/home/runner/work/kosairesearch.github.io/kosairesearch.github.io/functions/node_modules/firebase-functions/lib/runtime/loader.js:40:16)
-    at loadStack (/home/runner/work/kosairesearch.github.io/kosairesearch.github.io/functions/node_modules/firebase-functions/lib/runtime/loader.js:157:23)
-    at /home/runner/work/kosairesearch.github.io/kosairesearch.github.io/functions/node_modules/firebase-functions/lib/bin/firebase-functions.js:56:56
+[36m[1mi  extensions:[22m[39m ensuring required API [1mfirebaseextensions.googleapis.com[22m is enabled...
+[32m[1m✔  extensions:[22m[39m required API [1mfirebaseextensions.googleapis.com[22m is enabled
 
+[1m[31mError:[39m[22m In non-interactive mode but have no value for the secret TOSS_SECRET_KEY: TOSS_SECRET_KEY
 
-[1m[31mError:[39m[22m Functions codebase could not be analyzed successfully. It may have a syntax or runtime error
+Set this secret before deploying:
+	firebase functions:secrets:set TOSS_SECRET_KEY
