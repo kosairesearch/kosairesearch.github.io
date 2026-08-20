@@ -1,6 +1,10 @@
-name: 🚀 Cloud Functions 배포
+name: 🚀 Firebase 배포 (함수 · Firestore 규칙)
 
-# 터미널 없이 GitHub에서 함수 배포. 수동 실행(원할 때만).
+# 터미널 없이 GitHub에서 배포. 수동 실행(원할 때만).
+#
+# 규칙(firestore.rules)도 여기서 배포한다. 전에는 함수만 배포해서 저장소의
+# 규칙과 실제 규칙이 갈라졌다 — users 컬렉션을 열어 주는 규칙을 커밋했는데
+# 실사이트에서는 계속 거부됐고, 동의 기록이 조용히 저장되지 않았다.
 on:
   workflow_dispatch:
 
@@ -38,10 +42,11 @@ jobs:
           printf '%s' "$RK" | firebase functions:secrets:set RESEND_API_KEY \
             --data-file=- --project kosai-ae167 --force
 
-      - name: 함수 배포
+      - name: 배포 (함수 + Firestore 규칙)
         run: |
           set -o pipefail
-          firebase deploy --only functions --project kosai-ae167 --non-interactive --force 2>&1 | tee /tmp/deploy.log
+          firebase deploy --only functions,firestore:rules \
+            --project kosai-ae167 --non-interactive --force 2>&1 | tee /tmp/deploy.log
 
       - name: 배포 로그 저장(디버그)
         if: always()

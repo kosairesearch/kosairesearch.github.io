@@ -43,7 +43,7 @@
    ============================================================ */
 import { app } from "./firebase-config.js";
 import {
-  getFirestore, doc, getDoc, setDoc, updateDoc, serverTimestamp
+  getFirestore, doc, getDoc, setDoc, serverTimestamp
 } from "https://www.gstatic.com/firebasejs/10.12.2/firebase-firestore.js";
 
 /* 동의서 판 번호. 문구가 실질적으로 바뀌면 올린다 — 올리면 기존 회원도
@@ -335,88 +335,30 @@ export async function ensureConsent(user, onSignOut) {
   });
 }
 
-/* ────────────────── 마케팅 수신 설정 (철회 포함) ────────────────── */
+/* ────────────────── 마케팅 수신 (조회 · 변경) ────────────────── */
 
-/* 동의는 언제든 철회할 수 있어야 한다. 켜는 것만 있고 끄는 길이 없으면
-   그건 동의가 아니다. 계정 메뉴에서 이 화면을 연다.
+/* 동의는 언제든 철회할 수 있어야 한다. 켜는 길만 있고 끄는 길이 없으면
+   그건 동의가 아니다.
 
-   끌 때 marketingAt 을 지우고 marketingOffAt 을 남긴다. "언제 동의했고
-   언제 철회했나" 를 나중에 답할 수 있어야 하기 때문이다. */
-export async function openMarketingSettings(user) {
-  css();
-  const ov = document.createElement("div");
-  ov.className = "kc-ov";
-  const card = document.createElement("div");
-  card.className = "kc-card";
-  card.innerHTML =
-    `<div class="kc-h">${T("마케팅 수신 설정")}</div>
-     <p class="kc-sub">${T("새 리포트와 서비스 소식을 이메일로 받습니다.")}<br>${T("받지 않아도 서비스 이용에는 아무 영향이 없습니다.")}</p>`;
+   화면은 Settings.html 이 갖고 여기는 값만 다룬다. 처음에는 계정 메뉴에서
+   바로 여는 모달로 만들었는데, 마케팅 설정이 로그아웃·탈퇴와 나란히 있는
+   게 어색하다는 지적을 받았다. 보통 설정 페이지 안에 있다. */
 
-  const box = document.createElement("div");
-  box.className = "kc";
-  const row = document.createElement("label");
-  row.className = "kc-row";
-  const cb = document.createElement("input");
-  cb.type = "checkbox";
-  cb.disabled = true;                    // 현재 값을 읽어오기 전에는 못 만진다
-  const span = document.createElement("span");
-  span.textContent = T("수신 동의 안 함");
-  row.appendChild(cb); row.appendChild(span);
-  box.appendChild(row);
-  const err = document.createElement("div");
-  err.className = "kc-err";
-  box.appendChild(err);
-  card.appendChild(box);
+export async function getMarketing(uid) {
+  const snap = await getDoc(doc(db(), "users", uid));
+  return !!(snap.exists() && (snap.data().consents || {}).marketing);
+}
 
-  const act = document.createElement("div");
-  act.className = "kc-act";
-  const save = document.createElement("button");
-  save.type = "button"; save.className = "btn btn-primary";
-  save.textContent = T("저장"); save.disabled = true;
-  const close = document.createElement("button");
-  close.type = "button"; close.className = "kc-no";
-  close.textContent = T("닫기");
-  act.appendChild(save); act.appendChild(close);
-  card.appendChild(act);
-  ov.appendChild(card);
-  document.body.appendChild(ov);
+/* 켤 때와 끌 때의 시각을 따로 남긴다. 한 칸을 켰다 껐다 하면 "언제 동의했고
+   언제 철회했나" 를 답할 수 없다.
 
-  const label = () => { span.textContent = T(cb.checked ? "수신 동의함" : "수신 동의 안 함"); };
-  cb.addEventListener("change", () => { label(); err.classList.remove("on"); });
-  close.addEventListener("click", () => ov.remove());
-  // 이 화면은 닫아도 된다 — 동의 화면과 달리 막아설 이유가 없다.
-  ov.addEventListener("click", e => { if (e.target === ov) ov.remove(); });
-
-  try {
-    const snap = await getDoc(doc(db(), "users", user.uid));
-    cb.checked = !!(snap.exists() && (snap.data().consents || {}).marketing);
-    label();
-    cb.disabled = false; save.disabled = false;
-  } catch (e) {
-    err.textContent = T("불러오지 못했어요. 잠시 후 다시 시도해 주세요.");
-    err.classList.add("on");
-    return;
-  }
-
-  save.addEventListener("click", async () => {
-    save.disabled = true; cb.disabled = true;
-    try {
-      const on = cb.checked;
-      await updateDoc(doc(db(), "users", user.uid), {
-        "consents.marketing": on,
-        marketingAt: on ? serverTimestamp() : null,
-        marketingOffAt: on ? null : serverTimestamp(),
-        updatedAt: serverTimestamp()
-      });
-      err.style.color = "var(--fg-2)";
-      err.textContent = T("저장했습니다.");
-      err.classList.add("on");
-      setTimeout(() => ov.remove(), 900);
-    } catch (e) {
-      save.disabled = false; cb.disabled = false;
-      err.style.color = "";
-      err.textContent = T("저장에 실패했어요. 잠시 후 다시 시도해 주세요.");
-      err.classList.add("on");
-    }
-  });
+   문서가 아직 없을 수도 있다 — 이 기능이 생기기 전에 가입한 사람이다.
+   그래서 update 가 아니라 merge 로 쓴다. */
+export async function setMarketing(uid, on) {
+  await setDoc(doc(db(), "users", uid), {
+    consents: { marketing: !!on },
+    marketingAt: on ? serverTimestamp() : null,
+    marketingOffAt: on ? null : serverTimestamp(),
+    updatedAt: serverTimestamp()
+  }, { merge: true });
 }

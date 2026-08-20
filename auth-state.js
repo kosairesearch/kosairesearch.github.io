@@ -17,9 +17,7 @@ import { getFunctions, httpsCallable }
 const T = m => (window.KOSi18n ? window.KOSi18n.t(m) : m);
 if(window.KOSi18n) window.KOSi18n.register({
   "로그인":"Sign in", "로그아웃":"Sign out", "회원 탈퇴":"Delete account",
-  // consent.js 에도 같은 문구가 있지만 그 파일은 눌렀을 때 불러온다.
-  // 메뉴가 그려지는 시점에는 아직 없으므로 여기에도 둔다.
-  "마케팅 수신 설정":"Marketing messages",
+  "설정":"Settings",
   "회원 탈퇴가 완료되었습니다. 그동안 이용해 주셔서 감사합니다.":
     "Your account has been deleted. Thank you for using KOSAI.",
   "보안을 위해 다시 로그인한 뒤 탈퇴를 진행해 주세요.":
@@ -169,10 +167,12 @@ function injectCss(){
   #navAuth .acct.open .menu{display:flex}
   #navAuth .menu .em{padding:9px 10px 10px;font:500 12px var(--font-sans);color:var(--fg-3);
     word-break:break-all;border-bottom:1px solid var(--hair);margin-bottom:4px}
-  #navAuth .menu button{text-align:left;border:0;background:transparent;cursor:pointer;
+  #navAuth .menu button,#navAuth .menu a{text-align:left;border:0;background:transparent;cursor:pointer;
+    text-decoration:none;display:block;
     font:600 14px var(--font-sans);color:var(--fg-1);padding:10px;border-radius:8px}
-  #navAuth .menu button:hover{background:rgba(0,0,0,.06)}
-  :root[data-theme="dark"] #navAuth .menu button:hover{background:rgba(255,255,255,.08)}
+  #navAuth .menu button:hover,#navAuth .menu a:hover{background:rgba(0,0,0,.06)}
+  :root[data-theme="dark"] #navAuth .menu button:hover,
+  :root[data-theme="dark"] #navAuth .menu a:hover{background:rgba(255,255,255,.08)}
   #navAuth .menu button.withdraw{color:#c0282b;font-weight:500;font-size:12.5px;margin-top:2px;border-top:1px solid var(--hair);border-radius:0 0 8px 8px}
   :root[data-theme="dark"] #navAuth .menu button.withdraw{color:#ff8a8c}
   /* 모바일: 헤더 로그인/계정 숨기고 햄버거 메뉴 안으로 */
@@ -261,7 +261,7 @@ function renderLoggedIn(wrap, user){
        <div class="menu" role="menu">
          <div class="em">${email}</div>
          <button type="button" class="logout">로그아웃</button>
-         <button type="button" class="mkt">마케팅 수신 설정</button>
+         <a href="Settings.html">설정</a>
          <button type="button" class="withdraw">회원 탈퇴</button>
        </div>
      </div>`;
@@ -272,7 +272,6 @@ function renderLoggedIn(wrap, user){
     try{ await signOut(auth); }catch(e){}
     location.href = 'Home.html';
   });
-  wrap.querySelector('.mkt').addEventListener('click', () => openMarketing(user));
   wrap.querySelector('.withdraw').addEventListener('click', deleteAccount);
   if(window.KOSi18n) window.KOSi18n.apply();
 }
@@ -283,9 +282,8 @@ function renderMobileAuth(user){
   if(!el){ el = document.createElement('div'); el.id = 'mAuth'; mm.appendChild(el); }
   if(user){
     const email = user.email || (user.displayName || '');
-    el.innerHTML = `<div class="m-em">${email}</div><button type="button" class="m-logout">로그아웃</button><button type="button" class="m-mkt">마케팅 수신 설정</button><button type="button" class="m-withdraw">회원 탈퇴</button>`;
+    el.innerHTML = `<div class="m-em">${email}</div><button type="button" class="m-logout">로그아웃</button><a href="Settings.html">설정</a><button type="button" class="m-withdraw">회원 탈퇴</button>`;
     el.querySelector('.m-logout').addEventListener('click', async () => { try{ await signOut(auth); }catch(e){} location.href = 'Home.html'; });
-    el.querySelector('.m-mkt').addEventListener('click', () => openMarketing(user));
     el.querySelector('.m-withdraw').addEventListener('click', deleteAccount);
   } else {
     el.innerHTML = `<a href="Login.html?next=${encodeURIComponent(here())}">로그인</a>`;
@@ -307,14 +305,6 @@ function renderMobileAuth(user){
    뜰 자리가 아니다. */
 let consentChecked = null;   // uid — 한 번 확인한 계정을 다시 묻지 않는다
 
-/* 마케팅 수신 설정 — 동의를 켜고 끄는 곳. 동의는 언제든 철회할 수 있어야
-   하는데, 켜는 길만 있고 끄는 길이 없으면 그건 동의가 아니다. */
-async function openMarketing(user){
-  try{
-    const { openMarketingSettings } = await import("./consent.js");
-    await openMarketingSettings(user);
-  }catch(e){ console.warn("[consent] 설정 열기 실패:", e && e.message); }
-}
 
 async function gateConsent(user){
   if(isAuthPage()) return;
