@@ -649,7 +649,7 @@ import { createUserWithEmailAndPassword, GoogleAuthProvider, signInWithPopup,
   from "https://www.gstatic.com/firebasejs/10.12.2/firebase-auth.js";
 import { wireSocialButtons } from "./social-login.js";
 import { sendVerifyEmail } from "./auth-emails.js";
-import { renderConsent, saveConsent, stashConsent } from "./consent.js";
+import { renderConsent, saveConsent, noticeEl } from "./consent.js";
 
 const $ = s => document.querySelector(s);
 const T = m => (window.KOSi18n ? window.KOSi18n.t(m) : m);
@@ -660,6 +660,8 @@ function clearErr(){ errBox.style.display = 'none'; errBox.textContent = ''; }
 // 동의 항목 묶음 — 필수 3, 선택 1(마케팅). consent.js 가 문구와 검사를 갖는다.
 const consent = renderConsent();
 $('#consentMount').appendChild(consent.el);
+// 소셜 버튼 아래 한 줄 고지. 이 문구가 있어야 소셜 경로의 동의가 성립한다.
+document.querySelector('.social').appendChild(noticeEl());
 function flagAgree(){ consent.validate(); }
 function go(){ const next = new URLSearchParams(location.search).get('next'); location.href = next || 'Home.html'; }
 
@@ -687,7 +689,7 @@ $('#emailForm').addEventListener('submit', async e => {
   try{
     const cred = await createUserWithEmailAndPassword(auth, email, pw);
     // 로그아웃 전에 남겨야 한다 — 로그아웃한 뒤에는 본인 문서에 쓸 권한이 없다.
-    try{ await saveConsent(cred.user.uid, consent.values(), 'email'); }
+    try{ await saveConsent(cred.user.uid, consent.values(), 'email', email); }
     catch(e){ console.warn('[consent] 저장 실패:', e && e.code); }
     if(window.KOSA) KOSA.track('sign_up', { method: 'email' });
     try{ await sendVerifyEmail(email); }catch(_){}   // 커스텀 인증 메일(Resend)
@@ -710,52 +712,28 @@ function showVerifySent(email){
   note.style.display='block';
 }
 
-/* ── 소셜 버튼은 이 체크박스에 걸리지 않는다 ────────────────────────
-   전에는 세 버튼 모두 맨 앞에서 consent.validate() 를 부르고 실패하면
-   조용히 돌아갔다. 그런데 동의 상자는 버튼에서 768px 아래에 있다. 누른
-   자리에서는 아무 일도 일어나지 않으니 버튼이 고장 난 것처럼 보였다.
-
-   게다가 이제 막을 이유도 없다. 카카오·네이버는 돌아온 뒤 서버가 신규면
-   계정을 만들지 않고 동의 화면을 띄우고, 구글도 신규면 그 자리에서 받는다.
-   동의는 어느 길로 가든 계정 전에 받는다.
-
-   그래서 이 상자는 '미리 체크해 두면 한 번 덜 묻는' 지름길로만 쓴다.
-   체크돼 있으면 담아서 보내고, 비어 있으면 그냥 보낸다. 이메일 가입은
-   여기 말고 받을 자리가 없으므로 그대로 필수다. */
-const prefill = () => (consent.values().age14 && consent.values().terms && consent.values().privacy)
-  ? consent.values() : null;
-
+/* ── 소셜 버튼은 아래 체크박스와 무관하다 ───────────────────────────
+   구글·카카오·네이버는 각자 자기 동의 화면을 보여 준다. 우리 화면을 한 번
+   더 얹으면 같은 걸 두 번 묻는 셈이라, 소셜 경로는 버튼 아래 고지 문구로
+   받는다. 아래 체크박스 묶음은 이메일 가입 전용이다 — 그 길에는 동의를
+   보여 줄 자리가 여기밖에 없다. */
 $('#googleBtn').addEventListener('click', async () => {
   clearErr();
   try{
     const cred = await signInWithPopup(auth, new GoogleAuthProvider());
-    const pre = prefill();
-    if(pre){
-      try{ await saveConsent(cred.user.uid, pre, 'google'); }
-      catch(e){ console.warn('[consent] 저장 실패:', e && e.code); }
-    }else{
-      // 여기서 체크하지 않고 왔다면 지금 받는다. 거부하면 계정을 지운다.
-      const { ensureConsent } = await import('./consent.js');
-      const ok = await ensureConsent(cred.user, () => signOut(auth));
-      if(!ok) return;
+    const { getAdditionalUserInfo } = await import('https://www.gstatic.com/firebasejs/10.12.2/firebase-auth.js');
+    if((getAdditionalUserInfo(cred) || {}).isNewUser){
+      const { saveImpliedConsent } = await import('./consent.js');
+      try{ await saveImpliedConsent(cred.user.uid, 'google', cred.user.email || ''); }
+      catch(e){ console.warn('[consent] 기록 실패:', e && e.code); }
     }
     if(window.KOSA) KOSA.track('sign_up', { method: 'google' }); go(); }
   catch(err){ if((err.code || '').includes('popup-closed') || (err.code || '').includes('cancelled-popup')) return; showErr(mapError(err)); }
 });
 
 // Kakao / Naver — OAuth 리다이렉트 + Cloud Functions 커스텀 토큰 (social-login.js)
-wireSocialButtons({
-  onError: showErr,
-  // 카카오·네이버는 그 사이트로 갔다가 돌아온다. 돌아오면 이 페이지는 새로
-  // 그려져 체크 상태가 사라지므로, 떠나기 전에 담아 뒀다가 로그인 성립 후
-  // consent.js 가 꺼내 저장한다. 비어 있으면 담지 않고 그냥 보낸다 —
-  // 돌아온 뒤에 동의 화면이 뜬다.
-  requireAgree: () => {
-    const pre = prefill();
-    if(pre) stashConsent(pre, 'social');
-    return true;
-  }
-});
+// 서버가 계정을 만들면서 같은 호출 안에 동의를 남긴다. 여기서 담아 보낼 것이 없다.
+wireSocialButtons({ onError: showErr });
 </script>
 <script type="module" src="auth-state.js"></script>
 </body>

@@ -20,6 +20,10 @@ admin.initializeApp();
 
 const REGION = "asia-northeast3"; // 서울
 
+/* 동의서 판 번호. consent.js 의 CONSENT_VERSION 과 같아야 한다.
+   한쪽만 올리면 같은 날 가입한 사람이 서로 다른 판으로 기록된다. */
+const CONSENT_VERSION = "2026-08-20";
+
 const KAKAO_REST_KEY = defineSecret("KAKAO_REST_KEY");
 const KAKAO_CLIENT_SECRET = defineSecret("KAKAO_CLIENT_SECRET"); // 카카오에서 사용 안 하면 빈 값
 const NAVER_CLIENT_ID = defineSecret("NAVER_CLIENT_ID");
@@ -119,7 +123,7 @@ exports.socialLogin = onCall(
     secrets: [KAKAO_REST_KEY, KAKAO_CLIENT_SECRET, NAVER_CLIENT_ID, NAVER_CLIENT_SECRET]
   },
   async (req) => {
-    const { provider, code, redirectUri, state, consents } = req.data || {};
+    const { provider, code, redirectUri, state } = req.data || {};
     if(!provider || !code || !redirectUri){
       throw new HttpsError("invalid-argument", "provider, code, redirectUri 가 필요합니다.");
     }
@@ -132,34 +136,16 @@ exports.socialLogin = onCall(
     if(!p.id) throw new HttpsError("internal", "프로필 ID를 가져오지 못했습니다.");
 
     const uid = `${provider}:${p.id}`;
-    // 이메일은 다른 로그인 방식과의 계정 충돌을 피하기 위해 Firebase 사용자에 직접
-    // 저장하지 않고 커스텀 클레임으로만 전달합니다.
     const userProps = {};
     if(p.name) userProps.displayName = p.name;
     if(p.photo) userProps.photoURL = p.photo;
 
-    /* ── 동의를 받기 전에는 계정을 만들지 않는다 ──────────────────────
-       전에는 여기서 곧바로 계정을 만들고 토큰을 내줬다. 그러면 사용자
-       화면에서는 '가입은 이미 됐는데 약관 동의는 그 다음' 이 된다. 동의를
-       거부하면 동의 없는 계정이 남는다.
-
-       그래서 신규 사용자이고 동의가 안 왔으면 계정을 만들지 않고
-       needsConsent 만 돌려준다. 클라이언트가 동의 화면을 띄우고, 동의를
-       받은 뒤 같은 code 로 다시 부르면 그때 만든다.
-
-       기존 사용자는 이 검사를 지나간다 — 로그인할 때마다 동의를 물으면
-       안 되기 때문이다. */
     let exists = true;
     try{
       await admin.auth().getUser(uid);
     }catch(e){
       if(e.code === "auth/user-not-found") exists = false;
       else throw new HttpsError("internal", `user_lookup_failed: ${e.code || e.message}`);
-    }
-
-    const agreed = consents && consents.age14 && consents.terms && consents.privacy;
-    if(!exists && !agreed){
-      return { needsConsent: true, provider, name: p.name || "", email: p.email || "" };
     }
 
     try{
@@ -169,28 +155,43 @@ exports.socialLogin = onCall(
       throw new HttpsError("internal", `user_upsert_failed: ${e.code || e.message}`);
     }
 
-    // 새로 만든 계정이면 동의를 같은 호출 안에서 남긴다. 클라이언트가 따로
-    // 쓰게 두면 그 사이에 창을 닫았을 때 동의 없는 계정이 남는다.
+    /* ── users/{uid} — 이메일과 동의 기록 ─────────────────────────────
+       이메일을 여기 남긴다. 전에는 커스텀 토큰 클레임으로만 넘기고 버렸다.
+       "계정 충돌이 무섭다" 는 이유였는데, 충돌은 Firebase 사용자에 이메일을
+       심을 때 나는 것이지 우리 문서에 적어 두는 것과는 상관이 없었다.
+       그 결과 카카오·네이버로 가입한 사람은 이메일이 어디에도 남지 않아
+       마케팅 수신에 동의해도 보낼 주소가 없었다.
+
+       카카오는 지금 닉네임만 준다(개발자센터 동의항목에 이메일이 없다).
+       그래서 없으면 null 로 둔다. 나중에 항목을 켜면 그 다음 로그인 때
+       채워진다 — 그래서 기존 사용자도 이메일이 오면 갱신한다. 다만 없다고
+       해서 이미 있는 값을 지우지는 않는다.
+
+       동의는 가입 버튼 아래 문구로 받는다(A안). 카카오·네이버가 각자
+       동의 화면을 이미 보여 주므로 우리 동의 화면을 한 번 더 띄우지 않는다.
+       무엇을 보고 눌렀는지 나중에 답할 수 있도록 판 번호와 방식을 남긴다. */
+    const db = admin.firestore();
+    const now = admin.firestore.FieldValue.serverTimestamp();
+    const patch = { signupMethod: provider, updatedAt: now };
+    if(p.email) patch.email = p.email;
     if(!exists){
-      try{
-        await admin.firestore().collection("users").doc(uid).set({
-          consents: {
-            version: consents.version || "",
-            age14: true, terms: true, privacy: true,
-            marketing: !!consents.marketing,
-            agreedAt: admin.firestore.FieldValue.serverTimestamp()
-          },
-          marketingAt: consents.marketing
-            ? admin.firestore.FieldValue.serverTimestamp() : null,
-          signupMethod: provider,
-          createdAt: admin.firestore.FieldValue.serverTimestamp(),
-          updatedAt: admin.firestore.FieldValue.serverTimestamp()
-        }, { merge: true });
-      }catch(e){
-        // 동의를 남기지 못하면 계정도 남기지 않는다. 반쪽짜리 가입을 두지 않는다.
-        try{ await admin.auth().deleteUser(uid); }catch(_){}
-        throw new HttpsError("internal", `consent_save_failed: ${e.code || e.message}`);
-      }
+      if(!p.email) patch.email = null;
+      patch.consents = {
+        version: CONSENT_VERSION,
+        method: "signup-notice",      // 가입 버튼 아래 고지 문구로 받은 동의
+        age14: true, terms: true, privacy: true,
+        marketing: false,             // 선택 — 설정 페이지에서 켠다
+        agreedAt: now
+      };
+      patch.marketingAt = null;
+      patch.createdAt = now;
+    }
+    try{
+      await db.collection("users").doc(uid).set(patch, { merge: true });
+    }catch(e){
+      // 새 가입인데 기록을 못 남겼으면 계정도 남기지 않는다. 반쪽짜리 가입을 두지 않는다.
+      if(!exists){ try{ await admin.auth().deleteUser(uid); }catch(_){} }
+      throw new HttpsError("internal", `user_doc_save_failed: ${e.code || e.message}`);
     }
 
     const token = await admin.auth().createCustomToken(uid, {

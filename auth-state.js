@@ -291,33 +291,23 @@ function renderMobileAuth(user){
   if(window.KOSi18n) window.KOSi18n.apply();
 }
 
-/* 동의 확인은 여기 한 곳에서만 한다.
-   로그인이 성립하는 길이 여럿이다 — 이메일, 구글 팝업, 카카오·네이버
-   리다이렉트, 그리고 이미 로그인된 채로 페이지를 여는 경우. 자리마다
-   확인을 넣으면 한 곳을 빠뜨린다. 실제로 그랬다: 가입 페이지는 동의를
-   요구했는데 로그인 페이지로 들어오면 아무 동의 없이 계정이 만들어졌다.
+/* 동의를 가로막는 화면은 더 이상 없다.
+   전에는 여기서 동의 기록이 없는 계정을 붙잡아 화면을 띄웠다. 로그인
+   페이지로 들어오면 아무 동의 없이 계정이 만들어지던 구멍을 막으려던
+   것이었다.
 
-   이 파일은 14개 페이지 전부에 실리고 로그인 상태가 바뀔 때마다 불린다.
-   여기서 막으면 어느 길로 들어와도 빠져나갈 수 없다.
+   그 구멍은 다른 방식으로 막았다. 구글·카카오·네이버는 각자 자기 동의
+   화면을 보여 주고(카카오 '연결된 서비스', 네이버 '외부 사이트 연결',
+   구글 myaccount.google.com/connections 에서 확인된다), 우리는 버튼 아래
+   고지 문구로 받아 계정을 만드는 그 자리에서 기록한다. 이메일 가입은
+   가입 페이지의 체크박스로 받는다.
 
-   가입 페이지는 예외다. 거기서는 화면 안에서 이미 동의를 받고 있고,
-   이메일 가입은 인증 메일을 보낸 뒤 곧바로 로그아웃시키므로 동의 화면이
-   뜰 자리가 아니다. */
-let consentChecked = null;   // uid — 한 번 확인한 계정을 다시 묻지 않는다
+   즉 계정이 만들어지는 네 길 모두 그 자리에서 동의가 남는다. 지나간 뒤에
+   붙잡을 일이 없어졌다.
 
-
-async function gateConsent(user){
-  if(isAuthPage()) return;
-  if(consentChecked === user.uid) return;
-  consentChecked = user.uid;
-  try{
-    const { ensureConsent } = await import("./consent.js");
-    await ensureConsent(user, () => signOut(auth));
-  }catch(e){
-    // 동의 모듈을 못 불러와도 로그인 자체는 막지 않는다 — 다음 기회에 받는다.
-    console.warn("[consent] 확인 실패:", e && e.message);
-  }
-}
+   ※ 나중에 CONSENT_VERSION 을 올려 기존 회원에게 새 동의를 받아야 할 때는
+     여기 다시 넣는 것이 아니라 별도 안내 화면을 만드는 편이 낫다. 로그인
+     하자마자 모달이 뜨는 건 그때도 좋은 방법이 아니다. */
 
 function start(){
   const wrap = mount();
@@ -326,8 +316,6 @@ function start(){
   onAuthStateChanged(auth, user => {
     user ? renderLoggedIn(wrap, user) : renderLoggedOut(wrap);
     renderMobileAuth(user);
-    if(user) gateConsent(user);
-    else consentChecked = null;
   });
 }
 

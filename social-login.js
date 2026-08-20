@@ -51,30 +51,16 @@ async function completeLogin(code, returnedState, saved, onError){
       state: returnedState
     };
 
-    // 1차 호출. 신규 사용자이고 동의가 없으면 서버는 계정을 만들지 않고
-    // needsConsent 만 돌려준다. 가입은 아직 성립하지 않은 상태다.
-    let { data } = await call(payload);
+    /* 우리 동의 화면을 띄우지 않는다.
+       카카오·네이버는 자기 동의 화면을 이미 보여 준다(카카오 '연결된 서비스',
+       네이버 '외부 사이트 연결' 에서 확인된다). 거기에 우리 화면을 한 번 더
+       얹으면 같은 걸 두 번 묻는 셈이다.
 
-    if(data && data.needsConsent){
-      const { collectConsent, takeStashed, CONSENT_VERSION } = await import("./consent.js");
-      // 가입 페이지에서 이미 체크하고 온 경우가 있다. 그때는 다시 묻지 않는다 —
-      // 같은 동의를 두 번 받으면 사용자는 뭘 잘못했나 싶어진다.
-      const st = takeStashed();
-      let values = (st && st.values && st.values.age14 && st.values.terms && st.values.privacy)
-        ? { ...st.values, version: CONSENT_VERSION }
-        : await collectConsent();
-      if(!values){
-        // 동의하지 않았다 — 계정이 만들어진 적이 없으므로 지울 것도 없다.
-        history.replaceState({}, "", location.pathname);
-        return;
-      }
-      // 2차 호출. 이번엔 동의를 함께 보낸다. 서버가 계정을 만들고 동의를
-      // 같은 호출 안에서 기록한다.
-      ({ data } = await call({ ...payload, consents: values }));
-      if(!data || !data.token){
-        throw new Error("가입을 마치지 못했습니다.");
-      }
-    }
+       대신 버튼 아래 고지 문구로 받고, 서버가 계정을 만들면서 같은 호출 안에
+       동의를 기록한다(method: "signup-notice"). 기록에 실패하면 계정도
+       만들지 않는다. */
+    const { data } = await call(payload);
+    if(!data || !data.token) throw new Error("가입을 마치지 못했습니다.");
 
     await signInWithCustomToken(auth, data.token);
     location.href = saved.next || "Home.html";

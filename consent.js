@@ -89,7 +89,12 @@ if (window.KOSi18n) window.KOSi18n.register({
   "저장에 실패했어요. 잠시 후 다시 시도해 주세요.":
     "Could not save. Please try again in a moment.",
   "불러오지 못했어요. 잠시 후 다시 시도해 주세요.":
-    "Could not load. Please try again in a moment."
+    "Could not load. Please try again in a moment.",
+  "가입하면 ": "By signing up you agree to our ",
+  "이용약관": "Terms of Service",
+  "과 ": " and ",
+  "개인정보처리방침": "Privacy Policy",
+  "에 동의하며, 만 14세 이상임을 확인합니다.": ", and confirm you are 14 or older."
 });
 
 /* 필수 항목의 키. validate() 가 이 목록만 본다 — 항목을 늘릴 때
@@ -150,7 +155,12 @@ function css() {
 .kc-sub{margin:0 0 14px;font:400 13px/1.6 var(--font-sans);color:var(--fg-2)}
 .kc-act{display:flex;flex-direction:column;gap:8px;margin-top:14px}
 .kc-no{background:none;border:0;font:500 12.5px var(--font-sans);color:var(--fg-3);
-  cursor:pointer;padding:6px;text-decoration:underline}`;
+  cursor:pointer;padding:6px;text-decoration:underline}
+/* 소셜 버튼 아래 한 줄 고지 */
+.kc-notice{margin:10px 2px 0;font:400 11.5px/1.6 var(--font-sans);color:var(--fg-3);text-align:center}
+.kc-notice a{color:var(--fg-2);text-decoration:underline;text-underline-offset:2px}
+.kc-notice a:hover{color:var(--brand-blue)}
+:root[data-theme="dark"] .kc-notice a:hover{color:var(--brand-cyan)}`;
   document.head.appendChild(s);
 }
 
@@ -237,11 +247,14 @@ export function renderConsent(opts = {}) {
 
 function db() { return getFirestore(app); }
 
-export async function saveConsent(uid, values, method) {
-  const consents = { version: CONSENT_VERSION, agreedAt: serverTimestamp() };
+export async function saveConsent(uid, values, method, email) {
+  const consents = { version: CONSENT_VERSION, method: "checkbox", agreedAt: serverTimestamp() };
   for (const it of ITEMS) consents[it.key] = !!values[it.key];
   await setDoc(doc(db(), "users", uid), {
     consents,
+    // 이메일을 여기 남긴다. 마케팅 동의자에게 실제로 보내려면 주소가 있어야
+    // 하는데, 소셜 가입자는 Firebase 사용자에 이메일이 없다.
+    ...(email ? { email } : {}),
     // 마케팅 동의를 켠 시각. 끄면 null 로 지운다 — 언제 받았는지가 남아야
     // 나중에 "이 사람 언제 동의했나" 를 답할 수 있다.
     marketingAt: values.marketing ? serverTimestamp() : null,
@@ -249,6 +262,52 @@ export async function saveConsent(uid, values, method) {
     createdAt: serverTimestamp(),
     updatedAt: serverTimestamp()
   }, { merge: true });
+}
+
+/* 가입 버튼 아래 고지 문구로 받은 동의(A안). 체크박스를 띄우지 않는 경로 —
+   구글 팝업 — 가 쓴다. 카카오·네이버는 서버가 같은 모양으로 남긴다.
+
+   무엇을 보고 눌렀는지 나중에 답할 수 있어야 하므로 판 번호와 방식을
+   같이 남긴다. 마케팅은 여기서 받지 않는다 — 선택 항목을 고지 문구에
+   묻어 두면 그건 선택 동의가 아니다. 설정 페이지에서 켠다. */
+export async function saveImpliedConsent(uid, method, email) {
+  await setDoc(doc(db(), "users", uid), {
+    consents: {
+      version: CONSENT_VERSION,
+      method: "signup-notice",
+      age14: true, terms: true, privacy: true,
+      marketing: false,
+      agreedAt: serverTimestamp()
+    },
+    ...(email ? { email } : {}),
+    marketingAt: null,
+    signupMethod: method || "unknown",
+    createdAt: serverTimestamp(),
+    updatedAt: serverTimestamp()
+  }, { merge: true });
+}
+
+/* 가입 버튼 아래에 붙는 한 줄. 소셜 버튼 밑에 이 문구가 있어야 위의
+   saveImpliedConsent 가 성립한다 — 보여 준 적 없는 것에 동의시킬 수는 없다.
+   문구가 한 곳에만 있어야 페이지마다 달라지지 않는다. */
+export const SIGNUP_NOTICE =
+  "가입하면 이용약관과 개인정보처리방침에 동의하며, 만 14세 이상임을 확인합니다.";
+
+export function noticeEl() {
+  const p = document.createElement("p");
+  p.className = "kc-notice";
+  const mk = (label, href) => {
+    const a = document.createElement("a");
+    a.href = href; a.target = "_blank"; a.rel = "noopener"; a.textContent = T(label);
+    return a;
+  };
+  p.appendChild(document.createTextNode(T("가입하면 ")));
+  p.appendChild(mk("이용약관", "Terms.html"));
+  p.appendChild(document.createTextNode(T("과 ")));
+  p.appendChild(mk("개인정보처리방침", "Privacy.html"));
+  p.appendChild(document.createTextNode(T("에 동의하며, 만 14세 이상임을 확인합니다.")));
+  css();
+  return p;
 }
 
 /* 이 계정이 현재 판(version)의 동의를 갖고 있나.
