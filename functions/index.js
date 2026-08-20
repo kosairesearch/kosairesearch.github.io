@@ -511,8 +511,15 @@ exports.getReport = onCall(
        여지를 없애는 게 목적이다.
      · watchlists/{uid}, report_reads  지운다. 보관할 이유가 없다.
    ─────────────────────────────────────────────────────────── */
+/* secrets: [TOSS_SECRET_KEY] 를 일부러 뺐다.
+   선언해 두면 값이 없는 상태에서는 배포 자체가 막힌다("non-interactive mode but
+   have no value for the secret"). 실사이트에는 아직 결제를 올리지 않았으므로
+   토스 비밀키가 등록된 적이 없고, 그 하나 때문에 탈퇴·로그인 같은 결제와
+   무관한 함수까지 전부 배포가 멈췄다.
+   구독이 하나도 없으니 아래 환불 분기는 실행되지 않는다. 결제를 켜는 날
+   firebase functions:secrets:set TOSS_SECRET_KEY 를 먼저 하고 이 줄을 되살린다. */
 exports.deleteAccount = onCall(
-  { region: REGION, cors: true, secrets: [TOSS_SECRET_KEY] },
+  { region: REGION, cors: true },
   async (req) => {
   const uid = req.auth && req.auth.uid;
   if (!uid) throw new HttpsError("unauthenticated", "로그인이 필요합니다.");
@@ -555,6 +562,9 @@ exports.deleteAccount = onCall(
   }
 
   try { await db.doc(`watchlists/${uid}`).delete(); } catch (e) { console.warn("[delete] watchlist", e && e.message); }
+  /* 동의 기록. 동의 화면에서 "보유 기간: 회원 탈퇴 시까지"라고 알리고 받았으니
+     탈퇴하면 지워야 한다. 클라이언트도 지우지만 창을 닫아 버리면 남는다. */
+  try { await db.doc(`users/${uid}`).delete(); } catch (e) { console.warn("[delete] user doc", e && e.message); }
   try {
     const reads = await db.collection("report_reads").where("uid", "==", uid).limit(200).get();
     await Promise.all(reads.docs.map((d) => d.ref.delete()));
