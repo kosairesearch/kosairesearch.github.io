@@ -533,6 +533,30 @@ def collect_quant(dart, ticker, krx_row, stock):
 
     # ROE(TTM) = 최근 4개 분기 지배순이익 ÷ 평균 지배자본(TTM 시작시점~끝시점) — 토스와 정합
     fy_eqo = fy_row.get("equity_owner") if fy_row else None       # 이미 단위보정됨(annual 일괄)
+
+    # ── 자본 정합성: BPS 를 외부 참조값 대신 '스스로' 검증한다 ──────────────
+    # 외부 참조값(네이버)은 분기 반영이 늦다. 2026 반기 기준으로 재 보니 우리
+    # 옛 값(2026Q1 기준)은 6개 종목 전부 참조값과 1.3% 안에서 일치했다. 즉
+    # 산식은 같고 분기만 다르다. 그런데 게이트가 그 시차를 '오류'로 읽어
+    # 상위 종목의 BPS·PBR 을 통째로 지웠다.
+    #
+    # 시차에 휘둘리지 않는 기준은 우리 안에 있다. 분기말 지배자본은
+    # '직전 연말 지배자본 + 그 뒤 분기 지배순이익' 으로 대체로 설명돼야 한다.
+    # 실제로 재 보니 정상 종목은 1.00~1.13배에 모였고, 자본이 잘못 잡힌
+    # 종목만 2.06·2.24배로 떨어져 나왔다 — 깨끗하게 갈린다.
+    #
+    # 배수를 1.5 로 둔다. 기타포괄손익·유상증자로 자본이 이익보다 빠르게
+    # 늘 수 있으므로 여유를 두되, 잡으려는 것은 태그를 잘못 집어 배 단위로
+    # 부푼 값이다.
+    cur_np = sum(x["np_owner"] for x in quarterly
+                 if x.get("np_owner") and str(x.get("q", "")).startswith(str(cur)))
+    if bps_q and fy_eqo and fy_eqo > 0 and eqo_q:
+        explained = fy_eqo + cur_np
+        if explained > 0 and eqo_q > explained * 1.5:
+            log(f"  ❌ 자본 정합성 실패 → BPS·PBR 숨김: 분기말 지배자본 "
+                f"{eqo_q/1e12:,.1f}조 vs 이익으로 설명되는 {explained/1e12:,.1f}조 "
+                f"({eqo_q/explained:.2f}배)")
+            bps_q = pbr_q = None
     eqo_begin = (_bs(d_py_same, "equity_owner") or _bs(d_py_same, "equity"))  # TTM 시작(전년 같은 분기말) 자본
     if eqo_begin is not None:
         eqo_begin *= unit
@@ -832,9 +856,12 @@ def naver_valuation(ticker):
 
 
 def cross_check(tk, name, valuation):
-    """자체 산출하는 PER·EPS만 외부 참조값과 대조해 '중대 오류'(부호 반대·15% 초과)일 때만 숨긴다.
+    """자체 산출값을 외부 참조값과 대조해 '중대 오류'일 때만 숨긴다.
     미세 차이(가중평균주식수·결산시점 등 방법론 차이)는 정상이므로 표시한다.
-    PBR·BPS·배당은 KRX 공식값이라 검증 없이 표시한다.
+
+    기준은 두 단계다. 참조값이 우리와 같은 시점이면 15%, 우리가 앞서가는
+    구간(TTM 이 올해 분기로 끝날 때)이면 3배 — 그 구간에서 잡을 것은
+    단위·자릿수 오류와 부호 반대뿐이다. 부호 반대는 언제나 차단한다.
 
     ⚠️ 참조값(nv)은 검증 게이트 용도로만 메모리에서 사용하고, 저장/배포되는 valuation에는
     절대 기록하지 않는다(외부 데이터값이 사이트 코드로 노출되지 않도록)."""
@@ -843,17 +870,33 @@ def cross_check(tk, name, valuation):
         log(f"  ⚠️ {name}: 참조값 없음 — 자체 PER·EPS 미검증")
         return
 
+    # 참조값이 우리보다 낡을 수 있다. 우리는 DART 를 직접 읽어 반기·3분기가
+    # 나오는 즉시 반영하는데, 참조값은 며칠~몇 주 뒤에 따라온다. 실제로 2026
+    # 반기(8/14 마감)를 재 보니 EPS 는 8/18 에야 따라왔고 BPS 는 그보다도 늦었다.
+    # 그 사이에는 우리가 맞는데도 '15% 초과' 로 걸려 지표가 통째로 사라진다.
+    #
+    # 그래서 TTM 이 '올해 분기' 로 끝나면 — 참조값이 아직 못 따라왔을 구간이면
+    # — 기준을 3배로 연다. 이때 잡으려는 것은 방법론 차이가 아니라 단위·자릿수
+    # 오류(1,000배)와 부호 반대뿐이고, 둘 다 3배로 충분히 걸린다.
+    ttm_window = valuation.get("ttm_window") or ""
+    cur = datetime.date.today().year
+    stale_ref = bool(ttm_window and ttm_window.split("~")[-1].startswith(str(cur)))
+    limit = 3.0 if stale_ref else 0.15
+
     def gross_error(mine, ref):
         if mine is None or ref in (None, 0):
             return False
         if (mine > 0) != (ref > 0):           # 부호 반대 = 중대 오류
             return True
-        return abs(mine - ref) / abs(ref) > 0.15   # 15% 초과 = 중대 오류
+        return abs(mine - ref) / abs(ref) > limit
 
     issues = []
     if gross_error(valuation.get("eps"), nv.get("eps")):
         issues.append(f"EPS {valuation.get('eps')}↔ref {nv.get('eps')}")
         valuation["eps"] = valuation["per"] = None
+    # BPS 는 참조값이 가장 늦게 따라오는 지표다. 대신 collect_quant 에서
+    # '분기말 자본이 이익으로 설명되는가' 를 이미 확인했다 — 시차를 타지 않는
+    # 자체 기준이라 이쪽이 더 믿을 만하다. 참조값 대조는 그 뒤의 그물로 남긴다.
     if gross_error(valuation.get("bps"), nv.get("bps")):
         issues.append(f"BPS {valuation.get('bps')}↔ref {nv.get('bps')}")
         valuation["bps"] = valuation["pbr"] = None
