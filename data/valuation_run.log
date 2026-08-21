@@ -1,4 +1,4 @@
-- (DART 초기화 실패) HTTPSConnectionPool(host='opendart.fss.or.kr', port=443): Max retries exceeded with url: /api/corpCode.xml?crtfc_key=fe32f957e40b37428b0d5f4807aa495839506436 (Caused by ConnectTimeoutError(<HTTPSConnection(host='opendart.fss.or.kr', port=443) at 0x7ff945238e50>, 'Connection to opendart.fss.or.kr timed out. (connect timeout=None)'))
+- (DART 초기화 실패) {'status': '020', 'message': '사용한도를 초과하였습니다.'}
 ❌ DART 초기화 실패
 
 고쳤다 — 리포트 5,248개 훑음
