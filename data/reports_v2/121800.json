@@ -235,9 +235,9 @@
  "market": "코스닥",
  "reportDate": "2026-08-18",
  "reportTs": "2026-08-18 00:50",
- "dataDate": "20260814",
+ "dataDate": "20260821",
  "quant": {
-  "asOf": "2026-08-17",
+  "asOf": "2026-08-21",
   "fs_basis": "연결(CFS) · DART 공시 확정치 · 지배주주 기준 순이익",
   "annual": [
    {
@@ -340,7 +340,7 @@
    "total_shares": 77201611,
    "wavg_shares": 77178944,
    "per": null,
-   "eps": null,
+   "eps": -629,
    "pbr": 0.43,
    "bps": 7795,
    "roe_ttm": -7.8,

@@ -235,9 +235,9 @@
  "market": "코스피",
  "reportDate": "2026-08-18",
  "reportTs": "2026-08-18 00:50",
- "dataDate": "20260814",
+ "dataDate": "20260821",
  "quant": {
-  "asOf": "2026-08-17",
+  "asOf": "2026-08-21",
   "fs_basis": "연결(CFS) · DART 공시 확정치 · 지배주주 기준 순이익",
   "annual": [
    {
@@ -334,23 +334,23 @@
    }
   ],
   "valuation": {
-   "price": 19050,
-   "mcap": 0.2882,
+   "price": 18200,
+   "mcap": 0.2754,
    "shares": 15129367,
    "total_shares": 15129367,
    "wavg_shares": 12343093,
-   "per": null,
-   "eps": null,
-   "pbr": null,
-   "bps": null,
+   "per": 15.9,
+   "eps": 1144,
+   "pbr": 0.52,
+   "bps": 34926,
    "roe_ttm": 4.1,
    "ttm_window": "2025Q3~2026Q2",
    "ttm_np_owner": 17307995848,
-   "pbr_krx": 0.68,
+   "pbr_krx": 0.65,
    "bps_krx": 28166.0,
    "basis": "PER·EPS·PBR·BPS 모두 자체 산출(네이버·토스와 동일 방식) · 배당은 DART 공시 주당현금배당금(보완:KRX) ÷ 현재가",
    "dps": 700.0,
-   "div": 3.67
+   "div": 3.85
   }
  }
 }
