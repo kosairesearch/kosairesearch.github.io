@@ -235,9 +235,9 @@
  "market": "코스닥",
  "reportDate": "2026-06-18",
  "reportTs": "2026-06-18 23:44",
- "dataDate": "20260618",
+ "dataDate": "20260821",
  "quant": {
-  "asOf": "2026-06-18",
+  "asOf": "2026-08-21",
   "fs_basis": "연결(CFS) · DART 공시 확정치 · 지배주주 기준 순이익",
   "annual": [
    {
@@ -289,27 +289,27 @@
   "quarterly": [
    {
     "q": "2025Q1",
-    "rev": 8742151599,
-    "op": 191956788,
-    "np_owner": 431792487
+    "rev": null,
+    "op": null,
+    "np_owner": null
    },
    {
     "q": "2025Q2",
-    "rev": 11413933098,
-    "op": 1533864793,
-    "np_owner": 1379115802
+    "rev": null,
+    "op": null,
+    "np_owner": null
    },
    {
     "q": "2025Q3",
-    "rev": 11475781093,
-    "op": 1944671786,
-    "np_owner": 2011769501
+    "rev": null,
+    "op": null,
+    "np_owner": null
    },
    {
     "q": "2025Q4",
-    "rev": 13175319193,
-    "op": 1387678560,
-    "np_owner": 1486270476
+    "rev": null,
+    "op": null,
+    "np_owner": null
    },
    {
     "q": "2026Q1",
@@ -319,23 +319,23 @@
    }
   ],
   "valuation": {
-   "price": 22350,
-   "mcap": 0.2083,
+   "price": 12700,
+   "mcap": 0.1184,
    "shares": 9318958,
    "total_shares": 9318958,
    "wavg_shares": 9281378,
-   "per": 31.6,
-   "eps": 708,
-   "pbr": 4.04,
+   "per": null,
+   "eps": null,
+   "pbr": 2.29,
    "bps": 5538,
-   "roe_ttm": 13.5,
-   "ttm_window": "2025Q2~2026Q1",
-   "ttm_np_owner": 6584623719,
-   "pbr_krx": 3.92,
+   "roe_ttm": null,
+   "ttm_window": null,
+   "ttm_np_owner": null,
+   "pbr_krx": 2.32,
    "bps_krx": 5483.0,
    "basis": "PER·EPS·PBR·BPS 모두 자체 산출(네이버·토스와 동일 방식) · 배당은 DART 공시 주당현금배당금(보완:KRX) ÷ 현재가",
    "dps": 150.0,
-   "div": 0.67
+   "div": 1.18
   }
  }
 }
