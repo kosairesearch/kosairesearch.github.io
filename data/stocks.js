@@ -1,6 +1,6 @@
 // KOS ai — 자동 생성 데이터 파일. 직접 수정하지 마세요.
 window.KOS_LIVE_DATA = {
-  "lastUpdated": "2026-08-22 04:18",
+  "lastUpdated": "2026-08-22 06:46",
   "dataDate": "20260821",
   "stocks": [
     {
@@ -22389,7 +22389,7 @@ window.KOS_LIVE_DATA = {
     {
       "ticker": "282620",
       "name": "기도산업",
-      "name_en": "",
+      "name_en": "KIDO INDUSTRIAL CO., LTD",
       "market": "코스닥",
       "sector": "기타",
       "price": 18580,
@@ -22398,6 +22398,7 @@ window.KOS_LIVE_DATA = {
       "trading_value": 213377898070,
       "mcap": 0.1089,
       "shares": 5860707,
+      "induty_code": "14199",
       "categories": [
         "기타"
       ],
