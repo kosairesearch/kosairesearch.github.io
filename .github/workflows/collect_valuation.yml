@@ -47,6 +47,14 @@ jobs:
         run: |
           python scripts/collect_valuation.py 2>&1 | tee data/valuation_run.log || true
 
+      # 리포트는 만들 때의 주식수로 EPS·BPS 를 계산해 저장해 둔다. 그 뒤 회사가
+      # 액면병합이나 감자를 하면 분모가 바뀌는데, 리포트를 다시 만들지 않는 한
+      # 옛날 값이 그대로 걸려 있다. BPS 가 5배 작으면 PBR 은 5배 크게 나온다.
+      # 리포트 생성이 멈춰 있는 동안에도 이 계산만은 매일 따라가게 둔다.
+      - name: 주식수 바뀐 종목 EPS·BPS 환산
+        run: |
+          python scripts/patch_share_counts.py --apply 2>&1 | tee -a data/valuation_run.log || true
+
       - name: 결과 커밋
         run: |
           git config --global user.email "bot@kosairesearch.github.io"
