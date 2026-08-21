@@ -236,11 +236,26 @@
  "market": "코스닥",
  "reportDate": "2026-07-20",
  "reportTs": "2026-07-20 22:17",
- "dataDate": "20260720",
+ "dataDate": "20260821",
  "quant": {
-  "asOf": "2026-07-20",
+  "asOf": "2026-08-21",
   "fs_basis": "연결(CFS) · DART 공시 확정치 · 지배주주 기준 순이익",
   "annual": [
+   {
+    "year": 2025,
+    "rev": 370460589,
+    "op": -8828143742,
+    "np": -8928714245,
+    "np_owner": -8928714245,
+    "equity": 13372292787,
+    "equity_owner": 13372292787,
+    "liab": 15584971328,
+    "cfo": -7405383311,
+    "eps_basic": -747,
+    "opm": -2383.0,
+    "roe": -66.8,
+    "debt_ratio": 116.5
+   },
    {
     "year": 2024,
     "rev": 1072199504,
@@ -274,12 +289,6 @@
   ],
   "quarterly": [
    {
-    "q": "2025Q1",
-    "rev": 62574000,
-    "op": -2385989325,
-    "np_owner": -2254326020
-   },
-   {
     "q": "2025Q2",
     "rev": 137776250,
     "op": -1868749814,
@@ -293,31 +302,37 @@
    },
    {
     "q": "2025Q4",
-    "rev": null,
-    "op": null,
-    "np_owner": null
+    "rev": 140929589,
+    "op": -2208446913,
+    "np_owner": -2870533138
    },
    {
     "q": "2026Q1",
-    "rev": null,
-    "op": null,
-    "np_owner": null
+    "rev": 167266568,
+    "op": -2514397402,
+    "np_owner": -2634287681
+   },
+   {
+    "q": "2026Q2",
+    "rev": 58122500,
+    "op": -2698045615,
+    "np_owner": 1010721993
    }
   ],
   "valuation": {
-   "price": 3100,
-   "mcap": 0.0378,
-   "shares": 12195957,
-   "total_shares": 12195957,
-   "wavg_shares": null,
+   "price": 3340,
+   "mcap": 0.0436,
+   "shares": 13046354,
+   "total_shares": 13046354,
+   "wavg_shares": 12207260,
    "per": null,
-   "eps": null,
-   "pbr": null,
-   "bps": null,
-   "roe_ttm": null,
-   "ttm_window": null,
-   "ttm_np_owner": null,
-   "pbr_krx": 2.79,
+   "eps": -543,
+   "pbr": 3.01,
+   "bps": 1111,
+   "roe_ttm": -42.6,
+   "ttm_window": "2025Q3~2026Q2",
+   "ttm_np_owner": -6538558002,
+   "pbr_krx": 3.0,
    "bps_krx": 1112.0,
    "basis": "PER·EPS·PBR·BPS 모두 자체 산출(네이버·토스와 동일 방식) · 배당은 DART 공시 주당현금배당금(보완:KRX) ÷ 현재가",
    "dps": 0.0,
