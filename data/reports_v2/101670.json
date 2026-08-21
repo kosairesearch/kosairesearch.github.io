@@ -235,11 +235,26 @@
  "market": "코스닥",
  "reportDate": "2026-07-24",
  "reportTs": "2026-07-24 21:36",
- "dataDate": "20260724",
+ "dataDate": "20260821",
  "quant": {
-  "asOf": "2026-07-24",
+  "asOf": "2026-08-21",
   "fs_basis": "연결(CFS) · DART 공시 확정치 · 지배주주 기준 순이익",
   "annual": [
+   {
+    "year": 2025,
+    "rev": 3368949713,
+    "op": -15061982581,
+    "np": -34672551082,
+    "np_owner": -34672551082,
+    "equity": 62375819359,
+    "equity_owner": 62375819359,
+    "liab": 19548569957,
+    "cfo": -10172805609,
+    "eps_basic": -659,
+    "opm": -447.1,
+    "roe": -55.6,
+    "debt_ratio": 31.3
+   },
    {
     "year": 2024,
     "rev": 8466048297,
@@ -288,16 +303,10 @@
   ],
   "quarterly": [
    {
-    "q": "2025Q1",
-    "rev": 1832756852,
-    "op": -4463364498,
-    "np_owner": -4689243599
-   },
-   {
     "q": "2025Q2",
-    "rev": 299872177,
-    "op": -2967327647,
-    "np_owner": -28366308736
+    "rev": null,
+    "op": null,
+    "np_owner": null
    },
    {
     "q": "2025Q3",
@@ -307,31 +316,37 @@
    },
    {
     "q": "2025Q4",
-    "rev": null,
-    "op": null,
-    "np_owner": null
+    "rev": 575562187,
+    "op": -4586792291,
+    "np_owner": 694947304
    },
    {
     "q": "2026Q1",
     "rev": 951554475,
     "op": -3366438751,
     "np_owner": -34197433038
+   },
+   {
+    "q": "2026Q2",
+    "rev": 1066428223,
+    "op": -3446285565,
+    "np_owner": -4052946636
    }
   ],
   "valuation": {
-   "price": 819,
-   "mcap": 0.0465,
+   "price": 550,
+   "mcap": 0.0312,
    "shares": 56777187,
    "total_shares": 56498284,
-   "wavg_shares": 56061365,
+   "wavg_shares": 56085600,
    "per": null,
-   "eps": null,
-   "pbr": 1.6,
-   "bps": 512,
-   "roe_ttm": null,
-   "ttm_window": null,
-   "ttm_np_owner": null,
-   "pbr_krx": 0.73,
+   "eps": -710,
+   "pbr": 1.24,
+   "bps": 443,
+   "roe_ttm": -105.8,
+   "ttm_window": "2025Q3~2026Q2",
+   "ttm_np_owner": -39873261379,
+   "pbr_krx": 0.49,
    "bps_krx": 1115.0,
    "basis": "PER·EPS·PBR·BPS 모두 자체 산출(네이버·토스와 동일 방식) · 배당은 DART 공시 주당현금배당금(보완:KRX) ÷ 현재가",
    "dps": 0.0,
