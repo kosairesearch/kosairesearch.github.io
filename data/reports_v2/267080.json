@@ -235,9 +235,9 @@
  "market": "코넥스",
  "reportDate": "2026-06-19",
  "reportTs": "2026-06-19 06:06",
- "dataDate": "20260618",
+ "dataDate": "20260821",
  "quant": {
-  "asOf": "2026-06-18",
+  "asOf": "2026-08-21",
   "fs_basis": "연결(CFS) · DART 공시 확정치 · 지배주주 기준 순이익",
   "annual": [
    {
@@ -286,38 +286,7 @@
     "debt_ratio": 131.9
    }
   ],
-  "quarterly": [
-   {
-    "q": "2025Q1",
-    "rev": null,
-    "op": null,
-    "np_owner": null
-   },
-   {
-    "q": "2025Q2",
-    "rev": null,
-    "op": null,
-    "np_owner": null
-   },
-   {
-    "q": "2025Q3",
-    "rev": null,
-    "op": null,
-    "np_owner": null
-   },
-   {
-    "q": "2025Q4",
-    "rev": null,
-    "op": null,
-    "np_owner": null
-   },
-   {
-    "q": "2026Q1",
-    "rev": null,
-    "op": null,
-    "np_owner": null
-   }
-  ],
+  "quarterly": [],
   "valuation": {
    "price": 486,
    "mcap": 0.0058,
@@ -325,12 +294,12 @@
    "total_shares": 11871408,
    "wavg_shares": 11867694,
    "per": null,
-   "eps": null,
+   "eps": -1071,
    "pbr": null,
    "bps": null,
    "roe_ttm": null,
-   "ttm_window": null,
-   "ttm_np_owner": null,
+   "ttm_window": "2025Q1~2025Q4",
+   "ttm_np_owner": -12710300794,
    "pbr_krx": null,
    "bps_krx": null,
    "basis": "PER·EPS·PBR·BPS 모두 자체 산출(네이버·토스와 동일 방식) · 배당은 DART 공시 주당현금배당금(보완:KRX) ÷ 현재가",

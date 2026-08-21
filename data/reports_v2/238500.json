@@ -235,9 +235,9 @@
  "market": "코넥스",
  "reportDate": "2026-06-19",
  "reportTs": "2026-06-19 06:06",
- "dataDate": "20260618",
+ "dataDate": "20260821",
  "quant": {
-  "asOf": "2026-06-18",
+  "asOf": "2026-08-21",
   "fs_basis": "연결(CFS) · DART 공시 확정치 · 지배주주 기준 순이익",
   "annual": [
    {
@@ -271,38 +271,7 @@
     "debt_ratio": 35.6
    }
   ],
-  "quarterly": [
-   {
-    "q": "2025Q1",
-    "rev": null,
-    "op": null,
-    "np_owner": null
-   },
-   {
-    "q": "2025Q2",
-    "rev": null,
-    "op": null,
-    "np_owner": null
-   },
-   {
-    "q": "2025Q3",
-    "rev": null,
-    "op": null,
-    "np_owner": null
-   },
-   {
-    "q": "2025Q4",
-    "rev": null,
-    "op": null,
-    "np_owner": null
-   },
-   {
-    "q": "2026Q1",
-    "rev": null,
-    "op": null,
-    "np_owner": null
-   }
-  ],
+  "quarterly": [],
   "valuation": {
    "price": 475,
    "mcap": 0.0099,
