@@ -134,8 +134,10 @@ def main():
             clears.append((name, tk, ratio))
 
         if APPLY:
+            # generate_reports_v2.py 와 같은 모양으로 쓴다(indent=1). 형식이
+            # 갈리면 한 줄만 고쳐도 파일 전체가 바뀐 것으로 보여 diff 를 못 읽는다.
             with open(path, "w", encoding="utf-8") as fp:
-                json.dump(doc, fp, ensure_ascii=False, separators=(",", ":"))
+                json.dump(doc, fp, ensure_ascii=False, indent=1)
 
     # 화면이 실제로 읽는 건 data/valuation.js 다. 리포트만 고치고 두면 다음
     # 수집이 돌 때까지 사이트에는 틀린 값이 그대로 걸려 있다. 같이 고친다.

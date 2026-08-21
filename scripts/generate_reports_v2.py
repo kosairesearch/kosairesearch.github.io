@@ -512,6 +512,19 @@ def collect_quant(dart, ticker, krx_row, stock):
     eps_ttm = int(eps_ttm) if eps_ttm is not None else None
     per_ttm = round(price / eps_ttm, 1) if (eps_ttm and eps_ttm > 0 and price) else None
 
+    # EPS 가 어디서 나왔는지 남긴다. 지주회사 20여 곳에서 네이버와 1.5~3.7배
+    # 차이가 나는데, 나눗셈은 맞으니 들어가는 값이 다르다는 뜻이다. 결과만
+    # 봐서는 '공시 EPS 를 그대로 썼는지' 와 '순이익÷주식수로 때웠는지' 가
+    # 구분이 안 돼 원인을 좁힐 수가 없었다.
+    log(f"  · EPS 입력: 공시롤포워드="
+        f"{'없음' if eps_disc is None else f'{eps_disc:,.0f}'}"
+        f"(작년연간 {fy_eps if fy_eps is None else f'{fy_eps:,.0f}'}"
+        f" − 작년동기누적 {qp_eps if qp_eps is None else f'{qp_eps:,.0f}'}"
+        f" + 올해누적 {qc_eps if qc_eps is None else f'{qc_eps:,.0f}'})"
+        f" · 대안=순이익÷발행총수 "
+        f"{int(ttm_np/total_sh) if (ttm_np and total_sh) else '없음'}"
+        f" → 채택 {eps_ttm}")
+
     # ROE 신뢰성: 순이익 추출(ttm_np)이 공시 EPS와 30% 넘게 어긋나면(추출 오류) 공시 EPS로 ttm_np 보정.
     #   → EPS는 맞는데 ROE만 0%/이상치로 나오는 모순 제거(원익QnC 등).
     if eps_disc is not None and total_sh:
