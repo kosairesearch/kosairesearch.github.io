@@ -77,7 +77,7 @@ def fix_mixed_eps(files, cur, apply):
     순이익은 주당이 아니라 총액이고 주식수는 현재 기준이므로 그 길은 기준이
     섞이지 않는다. 두 길이 30% 넘게 벌어지고 차이가 배수로 떨어지면 순이익
     쪽으로 바꾼다. 배수로 안 떨어지면 원인이 다른 것이므로 두고 본다."""
-    fixed = []
+    fixed, hidden = [], []
     for path in files:
         tk = os.path.basename(path)[:-5]
         s = cur.get(tk)
@@ -107,7 +107,22 @@ def fix_mixed_eps(files, cur, apply):
         r = abs(b / a)
         f = clean_factor(r)
         if not f:
-            continue                      # 배수로 안 떨어짐 → 다른 원인
+            # 배수로도 안 떨어진다 = 회사가 공시한 두 값이 서로 다르다.
+            # 어느 쪽이 맞는지 모르므로 안 보여준다. 틀린 숫자보다 빈칸이 낫다.
+            # 두 공시가 어긋난다는 건 '주당' 으로 환산하는 분모(가중평균주식수)를
+            # 못 믿는다는 뜻이기도 하다. BPS 도 같은 분모로 나눈 값이므로 같이
+            # 숨긴다. 실제로 이마트는 이 분모가 틀려 BPS 824,830원·PBR 0.09 라는
+            # 말이 안 되는 값이 화면에 나가고 있었다.
+            for k in ("eps", "per", "bps", "pbr"):
+                v[k] = None
+            v["eps_hidden"] = {"on": TODAY, "공시": a, "순이익÷주식수": int(b),
+                               "배수": round(r, 2),
+                               "why": "두 공시가 어긋나 어느 쪽인지 모른다"}
+            hidden.append((s.get("name", tk), tk, a, int(b), r))
+            if apply:
+                with open(path, "w", encoding="utf-8") as fp:
+                    json.dump(doc, fp, ensure_ascii=False, indent=1)
+            continue
         v["eps"] = int(round(b))
         px = s.get("price")
         if px:
@@ -120,7 +135,7 @@ def fix_mixed_eps(files, cur, apply):
         if apply:
             with open(path, "w", encoding="utf-8") as fp:
                 json.dump(doc, fp, ensure_ascii=False, indent=1)
-    return fixed
+    return fixed, hidden
 
 
 def main():
@@ -195,7 +210,7 @@ def main():
             with open(path, "w", encoding="utf-8") as fp:
                 json.dump(doc, fp, ensure_ascii=False, indent=1)
 
-    eps_fixed = fix_mixed_eps(files, cur, APPLY)
+    eps_fixed, eps_hidden = fix_mixed_eps(files, cur, APPLY)
 
     # 화면이 실제로 읽는 건 data/valuation.js 다. 리포트만 고치고 두면 다음
     # 수집이 돌 때까지 사이트에는 틀린 값이 그대로 걸려 있다. 같이 고친다.
@@ -220,6 +235,12 @@ def main():
                 e["eps"] = b
                 e["_d"] = TODAY
                 touched += 1
+        for name, tk, a, b, r in eps_hidden:
+            e = vd["stocks"].get(tk)
+            if e:
+                e.pop("eps", None); e.pop("bps", None)
+                e["_d"] = TODAY
+                touched += 1
         for name, tk, ratio in clears:
             e = vd["stocks"].get(tk)
             if not e:
@@ -238,6 +259,7 @@ def main():
     log(f"  ② 배수로 환산                  {fixed:,}")
     log(f"  ③ 값을 숨김                    {cleared:,}")
     log(f"\n  주당이익 기준이 섞여 바로잡음   {len(eps_fixed):,}")
+    log(f"  두 공시가 어긋나 숨김          {len(eps_hidden):,}")
     for name, tk, a, b, r in sorted(eps_fixed, key=lambda x: -x[4])[:10]:
         log(f"     {name}({tk})  공시 {a:,} → {b:,}  ({r:.1f}배)")
 

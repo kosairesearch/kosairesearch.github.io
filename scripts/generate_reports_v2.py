@@ -519,6 +519,7 @@ def collect_quant(dart, ticker, krx_row, stock):
     # 떨어지면 순이익 쪽을 쓴다. 배수로 안 떨어지면 원인이 다른 것이므로
     # 건드리지 않는다.
     eps_alt = (ttm_np / (wavg or total_sh)) if (ttm_np and (wavg or total_sh)) else None
+    eps_hidden = False
     eps_pick = eps_disc
     if eps_disc and eps_alt and abs(eps_disc - eps_alt) > 0.30 * max(abs(eps_disc), abs(eps_alt)):
         r = abs(eps_alt / eps_disc)
@@ -526,7 +527,17 @@ def collect_quant(dart, ticker, krx_row, stock):
             log(f"  ⚠️ 주당이익 기준이 섞였다(공시 {eps_disc:,.0f} vs 순이익÷주식수 "
                 f"{eps_alt:,.0f}, {r:.1f}배) — 액면병합·감자로 본다. 순이익 쪽을 쓴다.")
             eps_pick = eps_alt
-    eps_ttm = eps_pick if eps_pick is not None else (int(ttm_np / total_sh) if (ttm_np and total_sh) else None)
+        else:
+            # 배수로도 안 떨어진다. 회사가 공시한 두 값이 서로 다르다는 뜻인데,
+            # 어느 쪽이 맞는지 우리는 모른다. 모르면 안 보여준다 — 틀린 숫자를
+            # 내보내는 것보다 빈칸이 낫다. 리포트를 다시 만들면 채워진다.
+            log(f"  ❌ 두 공시가 어긋난다(공시 {eps_disc:,.0f} vs 순이익÷주식수 "
+                f"{eps_alt:,.0f}, {r:.2f}배) — 어느 쪽인지 몰라 EPS·PER 숨김")
+            eps_pick = None
+            eps_disc = None
+            eps_hidden = True
+    eps_ttm = eps_pick if eps_pick is not None else (
+        None if eps_hidden else (int(ttm_np / total_sh) if (ttm_np and total_sh) else None))
     eps_ttm = int(eps_ttm) if eps_ttm is not None else None
     per_ttm = round(price / eps_ttm, 1) if (eps_ttm and eps_ttm > 0 and price) else None
 
