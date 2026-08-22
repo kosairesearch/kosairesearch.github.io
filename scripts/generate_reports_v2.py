@@ -247,13 +247,10 @@ def _fin_all(dart, ticker, year, reprt):
     # 그 행의 당기/누적 칸이 각각 얼마인지 그대로 찍는다. 결과만 봐서는
     # '회사가 낸 값' 과 '우리가 고른 값' 을 구분할 수 없어 원인을 못 좁혔다.
     if ticker in os.getenv("DUMP_EPS", "").replace(" ", "").split(","):
-        log(f"  [원문] {ticker} {reprt}/{fs} — 주당이익 계열 행")
+        log(f"  [원문] {ticker} {reprt}/{fs} — 손익계산서 전체 행")
         for aid, anm, sj, amt, add in rows:
-            if "주당" in anm or "PerShare" in aid:
-                log(f"     sj={sj:<4} 당기={amt}  누적={add}  | {anm} | {aid}")
-        for aid, anm, sj, amt, add in rows:
-            if anm in ("지배기업의소유주지분", "지배기업소유주지분", "당기순이익(손실)", "당기순이익"):
-                log(f"     sj={sj:<4} 당기={amt}  누적={add}  | {anm}")
+            if sj in ("IS", "CIS"):
+                log(f"     {sj:<4} 당기={amt}  누적={add}  | {anm} | {aid}")
     return out
 
 
