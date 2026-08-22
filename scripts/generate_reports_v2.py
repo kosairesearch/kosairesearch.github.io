@@ -232,6 +232,17 @@ def _fin_all(dart, ticker, year, reprt):
     # 같은 칸이 '1년치'다. 구분하지 못하면 6개월 순이익을 3개월 주당이익으로
     # 나누게 된다 — 이마트에서 주식수가 1,600만주로 잡힌 원인이었다.
     out["_reprt"] = reprt
+    # 주당이익 원문 덤프 — DUMP_EPS=티커,티커 로 켠다. 어느 행을 집었는지,
+    # 그 행의 당기/누적 칸이 각각 얼마인지 그대로 찍는다. 결과만 봐서는
+    # '회사가 낸 값' 과 '우리가 고른 값' 을 구분할 수 없어 원인을 못 좁혔다.
+    if ticker in os.getenv("DUMP_EPS", "").replace(" ", "").split(","):
+        log(f"  [원문] {ticker} {reprt}/{fs} — 주당이익 계열 행")
+        for aid, anm, sj, amt, add in rows:
+            if "주당" in anm or "PerShare" in aid:
+                log(f"     sj={sj:<4} 당기={amt}  누적={add}  | {anm} | {aid}")
+        for aid, anm, sj, amt, add in rows:
+            if anm in ("지배기업의소유주지분", "지배기업소유주지분", "당기순이익(손실)", "당기순이익"):
+                log(f"     sj={sj:<4} 당기={amt}  누적={add}  | {anm}")
     return out
 
 
