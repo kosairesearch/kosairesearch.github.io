@@ -36,6 +36,37 @@ log = g.log
 TOL = float(os.getenv("AUDIT_TOL", "0.08"))
 
 
+REPORTS = ROOT / "data" / "reports_v2"
+
+
+def prev_quarter_eps(tk):
+    """한 분기 전 기준으로 계산한 EPS. 없으면 None.
+
+    우리가 반기보고서를 네이버보다 먼저 넣으면 두 값이 벌어진다. 그때
+    '우리가 틀렸다'가 아니라 '네이버가 아직 안 따라왔다'를 구분하려면
+    비교 상대가 하나 더 있어야 한다. 최근 분기 하나를 빼고 다시 더한 값이
+    네이버와 맞으면 그쪽이다.
+
+    실제로 그랬다. 어긋난 1,005종목 중 834개(83%)에서 이 값이 네이버와
+    맞았고, 오차 중앙값이 31.5% → 6.3% 로 떨어졌다."""
+    f = REPORTS / f"{tk}.json"
+    if not f.exists():
+        return None
+    try:
+        q = (json.loads(f.read_text(encoding="utf-8")).get("quant") or {})
+    except Exception:
+        return None
+    qs = [x for x in (q.get("quarterly") or []) if isinstance(x, dict)]
+    v = q.get("valuation") or {}
+    w = v.get("wavg_shares") or v.get("total_shares")
+    if len(qs) < 5 or not w:
+        return None
+    npo = [x.get("np_owner") for x in qs[-5:-1]]
+    if any(n is None for n in npo):
+        return None
+    return int(sum(npo) / w)
+
+
 def load_val():
     m = re.search(r"window\.KOS_VALUATION\s*=\s*(\{.*)", VAL.read_text(encoding="utf-8"), re.S)
     return json.loads(m.group(1).rstrip().rstrip(";")).get("stocks", {})
@@ -100,6 +131,7 @@ def main():
             ("roe", roe_ours,     nvget("roe")),                  # 네이버 미제공 → 내부 sanity로만 검증
         )
         rec = {"naver": bool(nv)}
+        prev = prev_quarter_eps(tk)   # 한 분기 전 기준으로 계산한 EPS(없으면 None)
         for key, ours, ref in checks:
             if ref in (None, 0):
                 rec[key] = "no_naver" if ours is None else "ok_unverified"
@@ -107,7 +139,22 @@ def main():
                 rec[key] = "blank"          # 네이버엔 있는데 우리 없음
             else:
                 diff = abs(ours - ref) / abs(ref)
-                rec[key] = "ok" if diff <= TOL else f"mismatch({ours} vs {ref})"
+                if diff <= TOL:
+                    rec[key] = "ok"
+                    continue
+                # 네이버가 아직 새 분기를 안 받은 경우를 걸러낸다.
+                # 우리가 반기보고서를 먼저 넣으면 네이버와 값이 벌어지는데,
+                # 그건 우리가 틀린 게 아니라 우리가 앞선 것이다. 한 분기 전
+                # 기준으로 계산한 값이 네이버와 맞으면 그렇게 본다.
+                alt = None
+                if key == "eps" and prev is not None:
+                    alt = prev
+                elif key == "per" and prev not in (None, 0) and p:
+                    alt = round(p / prev, 2) if prev > 0 else None
+                if alt is not None and abs(alt - ref) / abs(ref) <= TOL:
+                    rec[key] = f"naver_lag({ours} vs {ref} · 직전분기 {alt})"
+                    continue
+                rec[key] = f"mismatch({ours} vs {ref})"
         # ROE 내부 sanity(네이버 미제공 대비): 비현실적 값은 외부대조 없이도 잡는다
         if roe_ours is not None and abs(roe_ours) > 120 and not str(rec.get("roe", "")).startswith("mismatch"):
             rec["roe"] = f"mismatch(sanity {roe_ours})"
@@ -123,8 +170,9 @@ def main():
     def tally(field, label):
         blank = [tk for tk, r in results.items() if r.get(field) == "blank"]
         mism = [tk for tk, r in results.items() if str(r.get(field, "")).startswith("mismatch")]
+        lag = [tk for tk, r in results.items() if str(r.get(field, "")).startswith("naver_lag")]
         ok = sum(1 for r in results.values() if r.get(field) == "ok")
-        return blank, mism, ok, label
+        return blank, mism, ok, lag
 
     # 대형 오차(>25%) 색출 — 우선 수정 대상(정밀격차가 아닌 진짜 버그)
     big = []
@@ -146,13 +194,14 @@ def main():
         lines.append(f"   {d*100:4.0f}% [{field}] {nm.get(tk,tk)}({tk}) {o} vs {ref}")
     lines.append("")
     for field, label in (("per", "PER"), ("pbr", "PBR"), ("eps", "EPS"), ("bps", "BPS"), ("div", "배당수익률"), ("roe", "ROE")):
-        blank, mism, ok, lab = tally(field, label)
+        blank, mism, ok, lag = tally(field, label)
         # 오차 크기순 정렬(큰 것 먼저)
         def _mag(t):
             mm = re.search(r"mismatch\(([\-\d.]+) vs ([\d.]+)\)", str(results[t].get(field, "")))
             return abs(float(mm.group(1)) - float(mm.group(2))) / abs(float(mm.group(2))) if (mm and float(mm.group(2))) else 0
         mism.sort(key=_mag, reverse=True)
-        lines.append(f"[{lab}] 일치 {ok} · 빈칸 {len(blank)} · 불일치 {len(mism)}")
+        lines.append(f"[{label}] 일치 {ok} · 빈칸 {len(blank)} · 불일치 {len(mism)}"
+                     + (f" · 네이버가 아직 안 따라옴 {len(lag)}" if lag else ""))
         if mism:
             lines.append("   ⚠️ 불일치(틀린값 노출 위험): " +
                          ", ".join(f"{nm.get(t,t)}({t}) {results[t][field]}" for t in mism[:30]))
@@ -164,8 +213,9 @@ def main():
 
     # 콘솔 요약
     for field, label in (("per", "PER"), ("pbr", "PBR"), ("eps", "EPS"), ("bps", "BPS"), ("div", "배당수익률"), ("roe", "ROE")):
-        blank, mism, ok, lab = tally(field, label)
-        log(f"  [{lab}] 일치 {ok} · 빈칸 {len(blank)} · 불일치 {len(mism)}")
+        blank, mism, ok, lag = tally(field, label)
+        log(f"  [{label}] 일치 {ok} · 빈칸 {len(blank)} · 불일치 {len(mism)}"
+            + (f" · 네이버 미추종 {len(lag)}" if lag else ""))
     total_mism = sum(1 for r in results.values() for f in ("per", "pbr", "eps", "bps", "div", "roe")
                      if str(r.get(f, "")).startswith("mismatch"))
     if len(results) >= len(val):
