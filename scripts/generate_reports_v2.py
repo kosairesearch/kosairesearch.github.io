@@ -196,6 +196,7 @@ def _fin_all(dart, ticker, year, reprt):
             return sj == "BS"
         return sj == "CF"
 
+    _dump_on = ticker in os.getenv("DUMP_EPS", "").replace(" ", "").split(",")
     out = {}
     # 손익 항목은 손익계산서(IS) 행을 포괄손익계산서(CIS) 행보다 먼저 본다.
     #
@@ -261,6 +262,13 @@ def _fin_all(dart, ticker, year, reprt):
                 bad = abs(npo_v) > abs(np_v) * 1.02
         if bad:
             out["np_owner"] = dict(out["np"])
+    if _dump_on:
+        with open(ROOT / "data" / "_debug_eps.txt", "a", encoding="utf-8") as fp:
+            fp.write(f"  >>> 최종 선택 {reprt}: ")
+            for k in ("np", "np_owner", "np_nci", "eps_basic"):
+                v = out.get(k)
+                fp.write(f"{k}={'없음' if not v else (str(v['amt'])+'/'+str(v['add']))}  ")
+            fp.write("\n")
     if not out:
         return None
     # 이 숫자가 연결(CFS)인지 별도(OFS)인지 남긴다. 누적 차감으로 단일 분기를 만들 때
@@ -274,7 +282,7 @@ def _fin_all(dart, ticker, year, reprt):
     # 주당이익 원문 덤프 — DUMP_EPS=티커,티커 로 켠다. 어느 행을 집었는지,
     # 그 행의 당기/누적 칸이 각각 얼마인지 그대로 찍는다. 결과만 봐서는
     # '회사가 낸 값' 과 '우리가 고른 값' 을 구분할 수 없어 원인을 못 좁혔다.
-    if ticker in os.getenv("DUMP_EPS", "").replace(" ", "").split(","):
+    if _dump_on:
         # 로그는 길어지면 잘려 못 본다. 파일로 남긴다(워크플로가 커밋한다).
         dbg = ROOT / "data" / "_debug_eps.txt"
         with open(dbg, "a", encoding="utf-8") as fp:
