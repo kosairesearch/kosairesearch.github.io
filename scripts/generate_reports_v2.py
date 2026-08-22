@@ -136,6 +136,8 @@ ACC_IDS = {
     "np":           ("ifrs-full_ProfitLoss", "ifrs_ProfitLoss"),
     "np_owner":     ("ifrs-full_ProfitLossAttributableToOwnersOfParent",
                      "ifrs_ProfitLossAttributableToOwnersOfParent"),
+    "np_nci":       ("ifrs-full_ProfitLossAttributableToNoncontrollingInterests",
+                     "ifrs_ProfitLossAttributableToNoncontrollingInterests"),
     "eps_basic":    ("ifrs-full_BasicEarningsLossPerShare", "ifrs_BasicEarningsPerShare"),
     "assets":       ("ifrs-full_Assets", "ifrs_Assets"),
     "liab":         ("ifrs-full_Liabilities", "ifrs_Liabilities"),
@@ -152,6 +154,7 @@ ACC_NAMES = {
     "np":           ("당기순이익", "당기순이익(손실)", "분기순이익", "반기순이익"),
     "np_owner":     ("지배기업소유주지분", "지배기업의소유주에게귀속되는당기순이익",
                      "지배기업소유주귀속당기순이익", "지배주주순이익"),
+    "np_nci":       ("비지배주주지분", "비지배지분", "비지배주주귀속당기순이익"),
     "eps_basic":    ("기본주당이익", "기본주당순이익", "기본주당이익(손실)", "기본및희석주당이익"),
     "assets":       ("자산총계",),
     "liab":         ("부채총계",),
@@ -187,7 +190,7 @@ def _fin_all(dart, ticker, year, reprt):
                      g._num(r.get("thstrm_add_amount"))))
 
     def sj_ok(key, sj):
-        if key in ("rev", "rev_ins", "op", "np", "np_owner", "eps_basic"):
+        if key in ("rev", "rev_ins", "op", "np", "np_owner", "np_nci", "eps_basic"):
             return sj in ("IS", "CIS")
         if key in ("assets", "liab", "equity", "equity_owner"):
             return sj == "BS"
@@ -221,17 +224,42 @@ def _fin_all(dart, ticker, year, reprt):
                 continue
             if "포괄" in anm:
                 continue
-            if key == "np_owner" and sj != "IS":
+            if key in ("np_owner", "np_nci") and sj != "IS":
                 continue
             # 은행 등은 계정명에 로마숫자·번호 접두("IV.영업이익","I.영업수익")가 붙어
             # 정확매칭이 실패한다 → 접두 제거 후 비교.
             anm2 = _NM_PREFIX.sub("", anm)
             if anm in ACC_NAMES[key] or anm2 in ACC_NAMES[key]:
                 out[key] = {"amt": amt, "add": add}
-    # 불변식: |지배주주 순이익| ≤ |전체 순이익|×1.02 (어기면 포괄손익 오추출 → 전체 순이익 사용)
+    # 지배주주 순이익이 제대로 잡혔는지 본다.
+    #
+    # 전에는 '|지배주주| ≤ |전체|×1.02' 를 어기면 포괄손익을 잘못 집은 것으로
+    # 보고 전체 순이익으로 갈아 끼웠다. 그 전제가 틀렸다. 지배주주가 적자이고
+    # 비지배주주가 흑자면 |지배주주| 가 |전체| 보다 클 수 있다. 뺄셈이지
+    # 덧셈이 아니다.
+    #
+    #   이마트 2026 반기   지배주주 -964.7억
+    #                     비지배주주  +390.9억
+    #                     합계       -573.9억      |지배| > |전체| 이지만 정상
+    #
+    # 그래서 지배주주 -964.7억이 전체 -573.9억으로 갈아 끼워졌고, 그 값을
+    # 공시 주당이익(-3,601원)으로 나누니 주식수가 1,600만주(실제 2,760만주)로
+    # 나왔다. 그 분모로 자본을 나눠 BPS 824,830원(주가 7만원대)이 됐다.
+    #
+    # 옳은 검사는 항등식이다:  지배주주 + 비지배주주 = 전체
+    # 비지배주주 값이 없으면 부호가 같을 때만 크기를 본다.
     if "np" in out and "np_owner" in out:
         np_v, npo_v = out["np"]["amt"], out["np_owner"]["amt"]
-        if np_v is not None and npo_v is not None and abs(npo_v) > abs(np_v) * 1.02:
+        nci_v = out.get("np_nci", {}).get("amt")
+        bad = False
+        if np_v is not None and npo_v is not None:
+            if nci_v is not None:
+                # 항등식이 1% 안에서 맞으면 정상 (분모가 0에 가까우면 절대오차로)
+                gap = abs((npo_v + nci_v) - np_v)
+                bad = gap > max(abs(np_v) * 0.01, 1e6)
+            elif (np_v >= 0) == (npo_v >= 0):
+                bad = abs(npo_v) > abs(np_v) * 1.02
+        if bad:
             out["np_owner"] = dict(out["np"])
     if not out:
         return None
