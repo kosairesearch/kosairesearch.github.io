@@ -227,6 +227,11 @@ def _fin_all(dart, ticker, year, reprt):
     # 이 숫자가 연결(CFS)인지 별도(OFS)인지 남긴다. 누적 차감으로 단일 분기를 만들 때
     # 기준이 다른 두 보고서를 빼면 결과가 통째로 거짓이 되므로, 뺄 때 이걸 대조한다.
     out["_fs"] = fs
+    # 어느 보고서에서 온 값인지 남긴다. 주당이익은 누적 칸이 비어 있는 경우가
+    # 많은데, 분기보고서에서 그 칸이 비면 옆 칸은 '3개월치'다. 연간보고서에서는
+    # 같은 칸이 '1년치'다. 구분하지 못하면 6개월 순이익을 3개월 주당이익으로
+    # 나누게 된다 — 이마트에서 주식수가 1,600만주로 잡힌 원인이었다.
+    out["_reprt"] = reprt
     return out
 
 
@@ -236,6 +241,24 @@ def _cum(d, key):
         return None
     v = d[key]
     return v["add"] if v["add"] is not None else v["amt"]
+
+
+def _cum_eps(d):
+    """누적 주당이익. 확실할 때만 돌려주고, 아니면 None.
+
+    DART 는 주당이익 행의 '누적' 칸을 비워 두는 회사가 많다. _cum 은 그럴 때
+    옆 칸(당기)을 대신 쓰는데, 분기보고서에서 그 칸은 '그 분기 3개월치'다.
+    순이익은 누적으로 잡히므로, 둘을 나누면 6개월 순이익 ÷ 3개월 주당이익이
+    된다. 이마트가 그래서 주식수 1,600만주(실제 2,760만주)로 잡혔고 BPS 가
+    82만원(주가 7만원대)으로 나갔다.
+
+    연간보고서(11011)는 당기 칸이 곧 1년치라 그대로 써도 된다."""
+    if not d or "eps_basic" not in d:
+        return None
+    v = d["eps_basic"]
+    if v["add"] is not None:
+        return v["add"]
+    return v["amt"] if d.get("_reprt") == "11011" else None
 
 
 def _bs(d, key):
@@ -269,7 +292,7 @@ def collect_quant(dart, ticker, krx_row, stock):
             "np_owner": npo if npo is not None else np_,
             "equity": eq, "equity_owner": (eqo if eqo is not None else eq),
             "liab": li, "cfo": _cum(d, "cfo"),
-            "eps_basic": _cum(d, "eps_basic"),
+            "eps_basic": _cum_eps(d),
         }
         row["opm"] = round(op / rev * 100, 1) if (op is not None and rev) else None
         base_np = row["np_owner"]
@@ -492,15 +515,15 @@ def collect_quant(dart, ticker, krx_row, stock):
                 return w
         return None
 
-    wavg = (implied_wavg(_cum(d_cur, "np_owner"), _cum(d_cur, "eps_basic"))
+    wavg = (implied_wavg(_cum(d_cur, "np_owner"), _cum_eps(d_cur))
             or (implied_wavg(fy_row["np_owner"], fy_row["eps_basic"]) if fy_row else None))
 
     # EPS(TTM): 1순위 = 회사 공시 기본주당이익(EPS) 직접 합산(최근결산 − 작년1Q + 올해1Q).
     #   순이익·주식수 추출을 건너뛰어 가장 견고하고, 네이버와 동일 기준(회사 공시 EPS).
     #   2순위(공시 EPS 누락 시) = 지배순이익 ÷ 발행주식총수.
     fy_eps = fy_row.get("eps_basic") if fy_row else None
-    qp_eps = _cum(d_py_same, "eps_basic")
-    qc_eps = _cum(d_cur, "eps_basic")
+    qp_eps = _cum_eps(d_py_same)
+    qc_eps = _cum_eps(d_cur)
     # 단위 보정: 천원/백만원 공시 기업은 EPS도 같은 단위로 공시된다(예: 두산밥캣 '4.14'=4,140원).
     #   금액과 달리 EPS는 위 money 보정에서 빠져 있어 따로 곱한다.
     if unit != 1:
