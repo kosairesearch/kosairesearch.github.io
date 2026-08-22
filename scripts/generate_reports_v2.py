@@ -247,10 +247,13 @@ def _fin_all(dart, ticker, year, reprt):
     # 그 행의 당기/누적 칸이 각각 얼마인지 그대로 찍는다. 결과만 봐서는
     # '회사가 낸 값' 과 '우리가 고른 값' 을 구분할 수 없어 원인을 못 좁혔다.
     if ticker in os.getenv("DUMP_EPS", "").replace(" ", "").split(","):
-        log(f"  [원문] {ticker} {reprt}/{fs} — 손익계산서 전체 행")
-        for aid, anm, sj, amt, add in rows:
-            if sj in ("IS", "CIS"):
-                log(f"     {sj:<4} 당기={amt}  누적={add}  | {anm} | {aid}")
+        # 로그는 길어지면 잘려 못 본다. 파일로 남긴다(워크플로가 커밋한다).
+        dbg = ROOT / "data" / "_debug_eps.txt"
+        with open(dbg, "a", encoding="utf-8") as fp:
+            fp.write(f"\n### {ticker} {reprt}/{fs}\n")
+            for aid, anm, sj, amt, add in rows:
+                if sj in ("IS", "CIS"):
+                    fp.write(f"  {sj:<4} 당기={amt}  누적={add}  | {anm} | {aid}\n")
     return out
 
 
