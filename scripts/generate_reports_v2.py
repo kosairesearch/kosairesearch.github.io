@@ -508,7 +508,25 @@ def collect_quant(dart, ticker, krx_row, stock):
         qp_eps = qp_eps * unit if qp_eps is not None else None
         qc_eps = qc_eps * unit if qc_eps is not None else None
     eps_disc = (fy_eps - qp_eps + qc_eps) if None not in (fy_eps, qp_eps, qc_eps) else (fy_eps if not cur_qi else None)
-    eps_ttm = eps_disc if eps_disc is not None else (int(ttm_np / total_sh) if (ttm_np and total_sh) else None)
+
+    # 액면병합·감자를 한 회사에서는 위 뺄셈이 성립하지 않는다.
+    # 작년 연간 주당이익은 옛 주식수 기준이고 올해 누적은 새 주식수 기준인데,
+    # 그대로 더하고 빼면 단위가 다른 것을 섞는 셈이다. 실제로 30종목에서
+    # 공시 주당이익과 '순이익÷주식수' 가 정확히 2·3·7·9배로 갈렸다.
+    #
+    # 순이익은 주당이 아니라 총액이고 주식수는 현재 기준이므로, 그 길은
+    # 기준이 섞이지 않는다. 두 길이 30% 넘게 벌어지고 그 차이가 배수로
+    # 떨어지면 순이익 쪽을 쓴다. 배수로 안 떨어지면 원인이 다른 것이므로
+    # 건드리지 않는다.
+    eps_alt = (ttm_np / (wavg or total_sh)) if (ttm_np and (wavg or total_sh)) else None
+    eps_pick = eps_disc
+    if eps_disc and eps_alt and abs(eps_disc - eps_alt) > 0.30 * max(abs(eps_disc), abs(eps_alt)):
+        r = abs(eps_alt / eps_disc)
+        if any(abs(r / c - 1) < 0.05 for n in range(2, 41) for c in (float(n), 1.0 / n)):
+            log(f"  ⚠️ 주당이익 기준이 섞였다(공시 {eps_disc:,.0f} vs 순이익÷주식수 "
+                f"{eps_alt:,.0f}, {r:.1f}배) — 액면병합·감자로 본다. 순이익 쪽을 쓴다.")
+            eps_pick = eps_alt
+    eps_ttm = eps_pick if eps_pick is not None else (int(ttm_np / total_sh) if (ttm_np and total_sh) else None)
     eps_ttm = int(eps_ttm) if eps_ttm is not None else None
     per_ttm = round(price / eps_ttm, 1) if (eps_ttm and eps_ttm > 0 and price) else None
 

@@ -67,6 +67,62 @@ def clean_factor(r):
     return None
 
 
+def fix_mixed_eps(files, cur, apply):
+    """주당이익 기준이 섞인 종목을 바로잡는다.
+
+    회사가 작년에 공시한 주당이익은 옛 주식수 기준이고 올해 공시한 것은 새
+    주식수 기준이다. 액면병합·감자를 한 회사에서 그 둘을 그대로 더하고 빼면
+    단위가 다른 것을 섞게 된다.
+
+    순이익은 주당이 아니라 총액이고 주식수는 현재 기준이므로 그 길은 기준이
+    섞이지 않는다. 두 길이 30% 넘게 벌어지고 차이가 배수로 떨어지면 순이익
+    쪽으로 바꾼다. 배수로 안 떨어지면 원인이 다른 것이므로 두고 본다."""
+    fixed = []
+    for path in files:
+        tk = os.path.basename(path)[:-5]
+        s = cur.get(tk)
+        if not s:
+            continue
+        try:
+            doc = json.load(open(path, encoding="utf-8"))
+        except Exception:
+            continue
+        q = doc.get("quant")
+        if not isinstance(q, dict):
+            continue
+        v = q.get("valuation") or {}
+        qs = [x for x in (q.get("quarterly") or []) if isinstance(x, dict)]
+        a = v.get("eps")
+        w = v.get("wavg_shares") or v.get("total_shares")
+        if a is None or not w or len(qs) < 4:
+            continue
+        npo = [x.get("np_owner") for x in qs[-4:]]
+        if any(n is None for n in npo):
+            continue
+        b = sum(npo) / w
+        if abs(a) < 100 or abs(b) < 100:
+            continue
+        if abs(a - b) <= 0.30 * max(abs(a), abs(b)):
+            continue
+        r = abs(b / a)
+        f = clean_factor(r)
+        if not f:
+            continue                      # 배수로 안 떨어짐 → 다른 원인
+        v["eps"] = int(round(b))
+        px = s.get("price")
+        if px:
+            v["price"] = px
+            v["per"] = round(px / v["eps"], 2) if v["eps"] > 0 else None
+        v["eps_basis_fixed"] = {"on": TODAY, "공시": a, "순이익÷주식수": int(b),
+                                "배수": round(r, 2),
+                                "why": "액면병합·감자로 주당이익 기준이 섞였다"}
+        fixed.append((s.get("name", tk), tk, a, int(b), r))
+        if apply:
+            with open(path, "w", encoding="utf-8") as fp:
+                json.dump(doc, fp, ensure_ascii=False, indent=1)
+    return fixed
+
+
 def main():
     cur = current_shares()
     files = sorted(glob.glob(os.path.join(ROOT, "data", "reports_v2", "*.json"))
@@ -139,6 +195,8 @@ def main():
             with open(path, "w", encoding="utf-8") as fp:
                 json.dump(doc, fp, ensure_ascii=False, indent=1)
 
+    eps_fixed = fix_mixed_eps(files, cur, APPLY)
+
     # 화면이 실제로 읽는 건 data/valuation.js 다. 리포트만 고치고 두면 다음
     # 수집이 돌 때까지 사이트에는 틀린 값이 그대로 걸려 있다. 같이 고친다.
     vpath = os.path.join(ROOT, "data", "valuation.js")
@@ -156,6 +214,12 @@ def main():
             if eps is not None: e["eps"] = eps
             e["_d"] = TODAY
             touched += 1
+        for name, tk, a, b, r in eps_fixed:
+            e = vd["stocks"].get(tk)
+            if e:
+                e["eps"] = b
+                e["_d"] = TODAY
+                touched += 1
         for name, tk, ratio in clears:
             e = vd["stocks"].get(tk)
             if not e:
@@ -173,6 +237,9 @@ def main():
     log(f"  ① 그대로 둠 (±{int(DRIFT*100)}% 잔변동)  {skipped:,}")
     log(f"  ② 배수로 환산                  {fixed:,}")
     log(f"  ③ 값을 숨김                    {cleared:,}")
+    log(f"\n  주당이익 기준이 섞여 바로잡음   {len(eps_fixed):,}")
+    for name, tk, a, b, r in sorted(eps_fixed, key=lambda x: -x[4])[:10]:
+        log(f"     {name}({tk})  공시 {a:,} → {b:,}  ({r:.1f}배)")
 
     if fixes:
         log("\n② 환산한 종목 (상위 15)")
