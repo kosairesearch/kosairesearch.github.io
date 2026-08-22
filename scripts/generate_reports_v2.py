@@ -594,7 +594,11 @@ def collect_quant(dart, ticker, krx_row, stock):
     if eqo_q is not None:
         eqo_q *= unit
     # 자본잠식(자본 ≤ 0)이면 BPS·PBR은 무의미 → 숨김
-    bps_q = int(eqo_q / bps_denom) if (eqo_q and eqo_q > 0 and bps_denom) else None
+    # EPS 를 숨겼다는 건 주식수(가중평균)를 못 믿는다는 뜻이다. BPS 도 같은
+    # 분모로 나눈 값이므로 같이 숨긴다. 이마트가 그랬다 — 분모가 1,600만주로
+    # 잡혀(실제 2,760만주) BPS 824,830원·PBR 0.09 가 나왔다. 주가는 7만원대다.
+    bps_q = (None if eps_hidden
+             else (int(eqo_q / bps_denom) if (eqo_q and eqo_q > 0 and bps_denom) else None))
     log(f"  · BPS 입력: 자본 {(eqo_q or 0)/1e12:,.1f}조"
         f"({'지배지분' if eqo_owner else ('총자본-폴백' if eqo_total else '없음')})"
         f" ÷ 주식수 {(bps_denom or 0)/1e6:,.0f}백만"
