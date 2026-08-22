@@ -237,7 +237,7 @@
  "reportTs": "2026-08-14 21:54",
  "dataDate": "20260821",
  "quant": {
-  "asOf": "2026-08-21",
+  "asOf": "2026-08-22",
   "fs_basis": "연결(CFS) · DART 공시 확정치 · 지배주주 기준 순이익",
   "annual": [
    {
@@ -275,14 +275,14 @@
     "rev": 3587382453000,
     "op": 210046594000,
     "np": 156778978000,
-    "np_owner": 156778978000,
+    "np_owner": 161027790000,
     "equity": 1646976156000,
     "equity_owner": 1679854601000,
     "liab": 3594508619000,
     "cfo": 734191933000,
     "eps_basic": 1475,
     "opm": 5.9,
-    "roe": 9.3,
+    "roe": 9.6,
     "debt_ratio": 218.2
    },
    {
@@ -334,19 +334,19 @@
    }
   ],
   "valuation": {
-   "price": 131300,
-   "mcap": 14.3304,
+   "price": 130100,
+   "mcap": 14.1994,
    "shares": 109142293,
    "total_shares": 109142000,
    "wavg_shares": 109133753,
-   "per": 17.7,
+   "per": 17.6,
    "eps": 7400,
    "pbr": null,
    "bps": null,
    "roe_ttm": 26.4,
    "ttm_window": "2025Q3~2026Q2",
    "ttm_np_owner": 807600834000,
-   "pbr_krx": 4.65,
+   "pbr_krx": 4.61,
    "bps_krx": 28211.0,
    "basis": "PER·EPS·PBR·BPS 모두 자체 산출(네이버·토스와 동일 방식) · 배당은 DART 공시 주당현금배당금(보완:KRX) ÷ 현재가",
    "dps": 600.0,
