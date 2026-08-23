@@ -237,7 +237,7 @@
  "reportTs": "2026-06-19 06:06",
  "dataDate": "20260821",
  "quant": {
-  "asOf": "2026-08-21",
+  "asOf": "2026-08-23",
   "fs_basis": "연결(CFS) · DART 공시 확정치 · 지배주주 기준 순이익",
   "annual": [
    {
@@ -245,14 +245,15 @@
     "rev": 222445054857,
     "op": -5004075308,
     "np": -12605125664,
-    "np_owner": -12605125664,
+    "np_owner": -15326683639,
     "equity": 82563343233,
     "equity_owner": 82499644131,
+    "equity_nci": 63699102,
     "liab": 119683805013,
     "cfo": 8613998119,
     "eps_basic": null,
     "opm": -2.2,
-    "roe": -15.3,
+    "roe": -18.6,
     "debt_ratio": 145.0
    },
    {
@@ -263,6 +264,7 @@
     "np_owner": -1043667313,
     "equity": 120308609129,
     "equity_owner": 87053697848,
+    "equity_nci": 33254911281,
     "liab": 137091719096,
     "cfo": -2614793,
     "eps_basic": null,
@@ -278,6 +280,7 @@
     "np_owner": -7784352032,
     "equity": 88265526779,
     "equity_owner": 88107912470,
+    "equity_nci": 157614309,
     "liab": 102817066992,
     "cfo": 1289599769,
     "eps_basic": null,
@@ -293,6 +296,7 @@
     "np_owner": -8043869559,
     "equity": 96580534960,
     "equity_owner": 96306290958,
+    "equity_nci": 274244002,
     "liab": 104480645980,
     "cfo": -1578040162,
     "eps_basic": null,
@@ -318,7 +322,7 @@
     "q": "2025Q4",
     "rev": 28771376714,
     "op": -6923639646,
-    "np_owner": -9824493362
+    "np_owner": -12546051337
    },
    {
     "q": "2026Q1",
@@ -340,14 +344,16 @@
    "total_shares": 4801800,
    "wavg_shares": null,
    "per": null,
-   "eps": -4425,
-   "pbr": 0.26,
+   "eps": -4991,
+   "pbr": 0.265,
    "bps": 18115,
-   "roe_ttm": -22.7,
+   "roe_ttm": -25.6,
    "ttm_window": "2025Q3~2026Q2",
-   "ttm_np_owner": -21248440340,
-   "pbr_krx": null,
-   "bps_krx": null,
+   "ttm_np_owner": -23969998315,
+   "ccy": "KRW",
+   "bps_src": "자체",
+   "pbr_krx": 0.18,
+   "bps_krx": 27410.0,
    "basis": "PER·EPS·PBR·BPS 모두 자체 산출(네이버·토스와 동일 방식) · 배당은 DART 공시 주당현금배당금(보완:KRX) ÷ 현재가",
    "dps": 0.0,
    "div": 0.0
