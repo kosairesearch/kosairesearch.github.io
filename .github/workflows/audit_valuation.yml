@@ -26,6 +26,11 @@ jobs:
         with:
           python-version: '3.11'
       - run: pip install -r requirements.txt
+      # 먼저 자체 검산 — 외부 값 없이 우리 데이터끼리의 항등식만 본다.
+      # 네트워크·API 키가 필요 없어 몇 초면 끝나고, 여기 걸리는 건 방법론 차이가
+      # 아니라 전부 우리 버그다. 아래 네이버 대조보다 이쪽을 먼저 봐야 한다.
+      - name: 자체 검산
+        run: python scripts/check_valuation.py 2>&1 | tail -60
       - name: 검증 실행
         env:
           DART_API_KEY: ${{ secrets.DART_API_KEY }}
@@ -35,7 +40,7 @@ jobs:
         run: |
           git config --global user.email "bot@kosairesearch.github.io"
           git config --global user.name "KOS ai Bot"
-          git add -A data/valuation_audit.txt data/valuation_audit_state.json data/audit_run.log
+          git add -A data/valuation_audit.txt data/valuation_audit_state.json data/audit_run.log data/valuation_check.txt
           git commit -m "🔍 밸류에이션 검증 $(TZ='Asia/Seoul' date +'%Y-%m-%d %H:%M KST')" || exit 0
           ok=""
           for i in $(seq 1 25); do

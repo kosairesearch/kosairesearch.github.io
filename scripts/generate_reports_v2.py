@@ -696,7 +696,10 @@ def collect_quant(dart, ticker, krx_row, stock):
     eps_ttm = eps_pick if eps_pick is not None else (
         None if eps_hidden else (int(ttm_np / total_sh) if (ttm_np and total_sh) else None))
     eps_ttm = int(eps_ttm) if eps_ttm is not None else None
-    per_ttm = round(price / eps_ttm, 1) if (eps_ttm and eps_ttm > 0 and price) else None
+    # 소수 첫째 자리로 자르면 PER 이 작을 때 주가÷EPS 와 10% 까지 벌어진다
+    # (삼부토건 0.452 → 0.5). 화면은 어차피 오늘 주가로 다시 계산하니, 저장값은
+    # 항등식이 성립하도록 넉넉히 남긴다.
+    per_ttm = round(price / eps_ttm, 3) if (eps_ttm and eps_ttm > 0 and price) else None
 
     # EPS 가 어디서 나왔는지 남긴다. 지주회사 20여 곳에서 네이버와 1.5~3.7배
     # 차이가 나는데, 나눗셈은 맞으니 들어가는 값이 다르다는 뜻이다. 결과만
@@ -788,7 +791,7 @@ def collect_quant(dart, ticker, krx_row, stock):
         f"({eq_src}·{'지배지분' if eqo_owner else ('총자본-폴백' if eqo_total else '연간폴백')})"
         f" ÷ 주식수 {(bps_denom or 0)/1e6:,.0f}백만"
         f"({'가중평균' if wavg else '발행총수'}) = BPS {bps_q}")
-    pbr_q = round(price / bps_q, 2) if (bps_q and price) else None
+    pbr_q = round(price / bps_q, 4) if (bps_q and price) else None   # 위와 같은 이유
 
     # ROE(TTM) = 최근 4개 분기 지배순이익 ÷ 평균 지배자본(TTM 시작시점~끝시점) — 토스와 정합
     fy_eqo = fy_row.get("equity_owner") if fy_row else None       # 이미 단위보정됨(annual 일괄)
