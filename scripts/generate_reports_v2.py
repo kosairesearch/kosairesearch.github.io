@@ -1731,6 +1731,28 @@ def main():
             log(f"    사유: {why.splitlines()[0]}")
         return
 
+    # ── 숫자가 깨져 있으면 돈을 쓰지 않는다 ──────────────────────────────
+    # 리포트 본문은 이 정량값을 근거로 쓰인다. 값이 틀린 채로 글을 만들면
+    # 틀린 근거가 문장으로 굳어서, 나중에 숫자만 고쳐도 본문은 그대로다.
+    # 게다가 다시 만들려면 돈이 또 든다.
+    #
+    # 자체 검산(항등식)은 외부 값을 안 쓰므로 여기서 걸리는 건 전부 우리
+    # 버그다. 하나라도 있으면 시작하지 않는다. 급할 때는
+    # SKIP_VALUATION_CHECK=1 로 넘길 수 있게 두되, 기본은 막는 쪽이다.
+    if os.getenv("SKIP_VALUATION_CHECK") != "1":
+        import subprocess
+        chk = ROOT / "scripts" / "check_valuation.py"
+        if chk.exists():
+            r = subprocess.run([sys.executable, str(chk), "--strict"],
+                               capture_output=True, text=True)
+            if r.returncode != 0:
+                log(r.stdout[-4000:] if r.stdout else "")
+                log("⛔ 자체 검산에서 항등식 위반이 남아 있다 — 리포트 생성을 시작하지 않는다.")
+                log("    data/valuation_check.txt 를 보고 고친 뒤 다시 돌린다.")
+                log("    (정말 그대로 진행하려면 SKIP_VALUATION_CHECK=1)")
+                sys.exit(1)
+            log("✅ 자체 검산 통과 — 리포트 생성을 시작한다.")
+
     import anthropic
     key = os.getenv("ANTHROPIC_API_KEY")
     if not key:
