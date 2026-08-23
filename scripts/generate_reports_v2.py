@@ -616,9 +616,15 @@ def collect_quant(dart, ticker, krx_row, stock):
     # 없이도 확인된 것이다. 아래에서 '숨길까 말까' 를 정할 때 이 값을 쓴다.
     # 지금까지는 이런 증인이 없어서, 회사가 낸 두 값이 어긋나기만 하면
     # EPS 를 숨겼고 BPS 까지 딸려 숨겨졌다(EPS 108 · BPS 113종목).
+    # 두 기간이 같을 때만 견준다. TTM 이 롤포워드가 아니라 '작년 연간' 으로
+    # 물러난 경우(상장 1년 미만)에는 분기표 마지막 4개와 기간이 달라서,
+    # 그대로 비교하면 맞는 값을 틀렸다고 하거나 그 반대가 된다.
     _q4 = [x.get("np_owner") for x in quarterly[-4:]]
     q4_sum = sum(_q4) if (len(_q4) == 4 and all(v is not None for v in _q4)) else None
-    ttm_verified = bool(ttm_np and q4_sum and abs(ttm_np / q4_sum - 1) <= 0.10)
+    _same_window = bool(quarterly and ttm_label
+                        and quarterly[-1].get("q") == ttm_label.split("~")[-1])
+    ttm_verified = bool(ttm_np and q4_sum and _same_window
+                        and abs(ttm_np / q4_sum - 1) <= 0.10)
 
     # KRX 가 매일 내는 공식 BPS. 네이버와 달리 분기 반영이 늦지 않아
     # BPS 를 검증할 독립 잣대가 된다.
