@@ -12,7 +12,7 @@
      renderSettings(box)     주어진 자리에 그린다 (Settings.html 이 쓴다)
 
    담는 것
-     계정      닉네임 · 이메일 · 가입 방법        (읽기 전용)
+     계정      닉네임 · 이메일                    (읽기 전용)
      화면      테마(라이트/다크) · 언어(한국어/English)
      수신      마케팅 정보 수신                    (선택 · 즉시 저장)
      계정 관리  로그아웃 · 회원 탈퇴
@@ -29,7 +29,6 @@ if (window.KOSi18n) window.KOSi18n.register({
   "계정": "Account",
   "닉네임": "Nickname",
   "이메일": "Email",
-  "가입 방법": "Signed up with",
   "등록된 주소 없음": "No address on file",
   "화면": "Appearance",
   "테마": "Theme",
@@ -45,7 +44,6 @@ if (window.KOSi18n) window.KOSi18n.register({
   "계정 관리": "Manage account",
   "로그아웃": "Sign out",
   "회원 탈퇴": "Delete account",
-  "저장했습니다.": "Saved.",
   "저장에 실패했어요. 잠시 후 다시 시도해 주세요.": "Could not save. Please try again in a moment.",
   "불러오지 못했어요. 잠시 후 다시 시도해 주세요.": "Could not load. Please try again in a moment.",
   "설정을 보려면 로그인이 필요합니다.": "Sign in to view your settings.",
@@ -90,10 +88,12 @@ function css() {
 .ks-row{display:flex;align-items:center;justify-content:space-between;gap:14px;padding:5px 0}
 .ks-row .ks-lab{font:600 13.5px/1.45 var(--font-sans,system-ui);color:var(--fg-1)}
 .ks-row .ks-sub{display:block;margin-top:3px;font:400 11.5px/1.55 var(--font-sans,system-ui);color:var(--fg-3)}
-.ks-seg{display:inline-flex;flex:none;border:1px solid var(--border-2,rgba(0,0,0,.1));
+/* 폭을 고정한다. 글자 수에 맡기면 '라이트/다크' 와 '한국어/English' 가
+   서로 다른 자리에서 끝나 오른쪽 끝이 들쭉날쭉해진다. */
+.ks-seg{display:inline-flex;flex:none;width:184px;border:1px solid var(--border-2,rgba(0,0,0,.1));
   border-radius:9999px;overflow:hidden}
-.ks-seg button{border:0;background:transparent;cursor:pointer;padding:6px 13px;
-  font:600 12.5px var(--font-sans,system-ui);color:var(--fg-3)}
+.ks-seg button{flex:1 1 50%;border:0;background:transparent;cursor:pointer;padding:7px 0;
+  font:600 12.5px var(--font-sans,system-ui);color:var(--fg-3);white-space:nowrap}
 .ks-seg button[aria-pressed="true"]{background:var(--brand-blue,#2f6df6);color:#fff}
 /* 스위치 — 켜고 끄는 것이 분명해 보여야 한다 */
 .ks-sw{position:relative;flex:none;width:44px;height:25px;border-radius:9999px;border:0;cursor:pointer;
@@ -207,17 +207,16 @@ export function renderSettings(box, opts = {}) {
   const dl = el("dl", "ks-kv");
   const nameDd = el("dd", null, "—");
   const mailDd = el("dd", null, "—");
-  const methDd = el("dd", null, "—");
   dl.appendChild(el("dt", null, T("닉네임"))); dl.appendChild(nameDd);
   dl.appendChild(el("dt", null, T("이메일"))); dl.appendChild(mailDd);
-  dl.appendChild(el("dt", null, T("가입 방법"))); dl.appendChild(methDd);
   acc.appendChild(dl);
   box.appendChild(acc);
 
+  /* 가입 방법은 뺐다. 옛 계정은 signupMethod 가 안 남아 있어서 '알 수
+     없음' 만 뜬다. 틀린 값을 보여 주느니 안 보여 주는 편이 낫다. */
   accountInfo(user).then(info => {
     nameDd.textContent = info.name || "—";
     mailDd.textContent = info.email || T("등록된 주소 없음");
-    methDd.textContent = T(info.methodLabel);
   }).catch(() => { /* 표시용 — 실패해도 나머지는 쓸 수 있게 둔다 */ });
 
   /* ── 화면 ── */
@@ -264,8 +263,10 @@ export function renderSettings(box, opts = {}) {
     sw.disabled = true;
     msg.className = "ks-msg";
     try {
+      /* 잘 저장됐다는 말은 하지 않는다. 스위치가 옮겨 간 것이 곧 확인이고,
+         그 아래 파란 글씨가 남아 있으면 무슨 뜻인지 되묻게 된다. 실패했을
+         때만 말한다 — 그때는 스위치도 되돌아가니 이유를 알려야 한다. */
       await setMarketing(user.uid, next);
-      say("저장했습니다.", "ok");
     } catch (e) {
       sw.setAttribute("aria-checked", String(was));   // 되돌린다
       say("저장에 실패했어요. 잠시 후 다시 시도해 주세요.", "err");
