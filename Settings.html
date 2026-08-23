@@ -538,42 +538,11 @@ KOSi18n.register({
       <h1>설정</h1>
     </div>
 
-    <div class="set-card glass" id="setCard">
-      <div class="set-sec">
-        <h2>수신 설정</h2>
-        <label class="set-row" id="mktRow">
-          <input type="checkbox" id="mkt" disabled />
-          <span class="set-txt">
-            <b>마케팅 정보 수신</b>
-            <em>새 리포트와 서비스 소식을 이메일로 받습니다. 받지 않아도 서비스 이용에는 아무 영향이 없습니다.</em>
-          </span>
-        </label>
-        <div class="set-msg" id="setMsg"></div>
-        <button type="button" class="btn btn-primary" id="setSave" disabled>저장</button>
-      </div>
-
-      <div class="set-sec">
-        <h2>계정</h2>
-        <!-- 내 계정에 무엇이 저장돼 있는지 본인이 볼 수 있어야 한다.
-             소셜로 가입하면 화면 어디에도 이메일이 안 보여서, 어떤 주소로
-             메일이 오는지 알 수가 없었다. -->
-        <dl class="set-info">
-          <dt>닉네임</dt><dd id="acctName">—</dd>
-          <dt>이메일</dt><dd id="acctEmail">—</dd>
-          <dt>가입 방법</dt><dd id="acctMethod">—</dd>
-        </dl>
-        <p class="set-note">약관과 개인정보 처리에 관한 내용은
-          <a href="Terms.html">이용약관</a>과
-          <a href="Privacy.html">개인정보처리방침</a>에서 확인할 수 있습니다.</p>
-      </div>
-    </div>
-
-    <div class="set-card glass" id="setSignedOut" style="display:none">
-      <p class="set-note">설정을 보려면 로그인이 필요합니다.</p>
-      <a class="btn btn-primary" href="Login.html?next=Settings.html">로그인</a>
-    </div>
+    <div class="set-card glass" id="setCard"></div>
   </div>
 </main>
+
+
 
 <footer class="foot">
   <div class="wrap">
@@ -612,86 +581,22 @@ if(themeBtn)themeBtn.addEventListener('click',()=>applyTheme(root.getAttribute('
 <script type="module" src="auth-state.js"></script>
 
 <script type="module">
-/* 설정 — 지금은 마케팅 수신 하나뿐이다. 계정 메뉴에 이 항목을 바로 걸어
-   두었더니 어색하다는 지적을 받았다. 보통 설정 페이지 안에 들어간다. */
+/* 설정 화면은 settings-panel.js 한 곳에만 있다.
+
+   계정 메뉴의 '설정' 은 지금 보던 화면 위에 창으로 띄우고, 이 페이지는
+   같은 내용을 본문에 편다. 화면이 둘인데 코드가 둘이면 한쪽만 고치게 되고,
+   그러면 창에는 있는 항목이 페이지에는 없는 상태가 된다. */
 import { auth, isConfigured } from "./firebase-config.js";
 import { onAuthStateChanged } from "https://www.gstatic.com/firebasejs/10.12.2/firebase-auth.js";
-import { getMarketing, setMarketing, accountInfo } from "./consent.js";
+import { renderSettings } from "./settings-panel.js";
 
-const $ = s => document.querySelector(s);
-const T = m => (window.KOSi18n ? window.KOSi18n.t(m) : m);
-const cb = $('#mkt'), save = $('#setSave'), msg = $('#setMsg');
-
-function show(text, kind){
-  msg.textContent = T(text);
-  msg.className = 'set-msg on ' + (kind || '');
-}
-
+const box = document.getElementById('setCard');
 if(!isConfigured){
-  $('#setCard').style.display = 'none';
-  $('#setSignedOut').style.display = 'block';
+  renderSettings(box);
 }else{
-  onAuthStateChanged(auth, async user => {
-    if(!user){
-      $('#setCard').style.display = 'none';
-      $('#setSignedOut').style.display = 'block';
-      return;
-    }
-    $('#setCard').style.display = '';
-    $('#setSignedOut').style.display = 'none';
-    /* 내 계정에 뭐가 저장돼 있는지 본인이 볼 수 있어야 한다. 소셜로
-       가입하면 화면 어디에도 이메일이 안 보여서, 어떤 주소로 메일이
-       오는지 알 방법이 없었다. */
-    try{
-      const info = await accountInfo(user);
-      $('#acctName').textContent = info.name || '—';
-      $('#acctEmail').textContent = info.email || T('등록된 주소 없음');
-      $('#acctMethod').textContent = T(info.methodLabel);
-    }catch(e){ /* 표시용이라 실패해도 설정은 쓸 수 있게 둔다 */ }
-    try{
-      cb.checked = await getMarketing(user.uid);
-      cb.disabled = false; save.disabled = false;
-    }catch(e){
-      show('불러오지 못했어요. 잠시 후 다시 시도해 주세요.', 'err');
-    }
-    save.onclick = async () => {
-      save.disabled = true; cb.disabled = true;
-      try{
-        await setMarketing(user.uid, cb.checked);
-        show('저장했습니다.', 'ok');
-      }catch(e){
-        show('저장에 실패했어요. 잠시 후 다시 시도해 주세요.', 'err');
-      }
-      save.disabled = false; cb.disabled = false;
-    };
-  });
+  /* 로그인 상태가 바뀌면 다시 그린다 — 로그아웃하면 안내로 바뀐다. */
+  onAuthStateChanged(auth, () => renderSettings(box));
 }
-if(window.KOSi18n) window.KOSi18n.register({
-  "설정":"Settings",
-  "수신 설정":"Notifications",
-  "마케팅 정보 수신":"Marketing messages",
-  "새 리포트와 서비스 소식을 이메일로 받습니다. 받지 않아도 서비스 이용에는 아무 영향이 없습니다.":
-    "Get news about new reports and the service by email. Turning this off does not affect your use of the service.",
-  "계정":"Account",
-  "닉네임":"Nickname",
-  "이메일":"Email",
-  "가입 방법":"Signed up with",
-  "등록된 주소 없음":"No address on file",
-  "이메일":"Email",
-  "구글":"Google",
-  "카카오":"Kakao",
-  "네이버":"Naver",
-  "알 수 없음":"Unknown",
-  "저장":"Save",
-  "저장했습니다.":"Saved.",
-  "저장에 실패했어요. 잠시 후 다시 시도해 주세요.":"Could not save. Please try again in a moment.",
-  "불러오지 못했어요. 잠시 후 다시 시도해 주세요.":"Could not load. Please try again in a moment.",
-  "설정을 보려면 로그인이 필요합니다.":"Sign in to view your settings.",
-  "약관과 개인정보 처리에 관한 내용은":"You can review our",
-  "에서 확인할 수 있습니다.":".",
-  "피드백":"Feedback"
-});
-if(window.KOSi18n) window.KOSi18n.apply();
 </script>
 </body>
 </html>

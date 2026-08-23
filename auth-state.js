@@ -149,6 +149,10 @@ async function finishWithdraw(user, email, reason, detail, ov){
 
 const deleteAccount = openWithdrawModal;
 
+/* 설정 패널의 '회원 탈퇴' 가 이걸 부른다. 확인 절차를 두 벌 만들지
+   않으려고 화면은 여기 하나만 둔다. */
+window.KOSAccount = { withdraw: openWithdrawModal };
+
 function injectCss(){
   if(document.getElementById('navAuthCss')) return;
   const st = document.createElement('style'); st.id = 'navAuthCss';
@@ -267,8 +271,8 @@ function renderLoggedIn(wrap, user){
        <button class="acct-btn" type="button" aria-label="account"><span class="avatar">${initial}</span></button>
        <div class="menu" role="menu">
          <div class="em">${email}</div>
+         <button type="button" class="settings">설정</button>
          <button type="button" class="logout">로그아웃</button>
-         <a href="Settings.html">설정</a>
          <button type="button" class="withdraw">회원 탈퇴</button>
        </div>
      </div>`;
@@ -279,8 +283,24 @@ function renderLoggedIn(wrap, user){
     try{ await signOut(auth); }catch(e){}
     location.href = 'Home.html';
   });
+  wrap.querySelector('.settings').addEventListener('click', () => { acct.classList.remove('open'); openSettings(); });
   wrap.querySelector('.withdraw').addEventListener('click', deleteAccount);
   if(window.KOSi18n) window.KOSi18n.apply();
+}
+
+/* 설정은 지금 보던 화면 위에 창으로 띄운다. 리포트를 보다가 테마 한 번
+   바꾸려고 페이지를 떠날 이유가 없다.
+
+   settings-panel.js 는 여기서 정적으로 import 하지 않는다. 이 파일은 모든
+   페이지에 실리는데, 설정 창은 눌러야 열린다. 누르는 순간 받아 온다. */
+async function openSettings(){
+  try{
+    const m = await import("./settings-panel.js");
+    m.openSettings();
+  }catch(e){
+    console.warn("[settings] 불러오지 못했습니다:", e && e.message);
+    location.href = "Settings.html";   // 그래도 갈 곳은 남긴다
+  }
 }
 
 function renderMobileAuth(user){
@@ -289,7 +309,8 @@ function renderMobileAuth(user){
   if(!el){ el = document.createElement('div'); el.id = 'mAuth'; mm.appendChild(el); }
   if(user){
     const email = user.email || (user.displayName || '');
-    el.innerHTML = `<div class="m-em">${email}</div><button type="button" class="m-logout">로그아웃</button><a href="Settings.html">설정</a><button type="button" class="m-withdraw">회원 탈퇴</button>`;
+    el.innerHTML = `<div class="m-em">${email}</div><button type="button" class="m-settings">설정</button><button type="button" class="m-logout">로그아웃</button><button type="button" class="m-withdraw">회원 탈퇴</button>`;
+    el.querySelector('.m-settings').addEventListener('click', () => { mm.classList.remove('open'); openSettings(); });
     el.querySelector('.m-logout').addEventListener('click', async () => { try{ await signOut(auth); }catch(e){} location.href = 'Home.html'; });
     el.querySelector('.m-withdraw').addEventListener('click', deleteAccount);
   } else {
