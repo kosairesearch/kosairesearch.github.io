@@ -740,6 +740,16 @@ def collect_quant(dart, ticker, krx_row, stock):
     eqo_q = (eqo_owner or eqo_total)
     if eqo_q is not None:
         eqo_q *= unit
+    eq_src = "분기말"
+    if eqo_q is None and fy_row:
+        # 분기 재무상태표에서 자본을 못 집는 회사가 272곳이었다. 연간에는
+        # 값이 있는데 분기 보고서 형식이 달라 놓치는 경우다.
+        #
+        # 자본은 이익과 달리 분기마다 크게 뛰지 않는다. 직전 결산 자본으로
+        # 대신한다 — 네이버도 새 분기가 안 나왔을 때는 그렇게 한다. 빈칸보다
+        # 낫고, 다음 분기에 값이 잡히면 저절로 갱신된다.
+        eqo_q = fy_row.get("equity_owner") or fy_row.get("equity")   # 이미 단위보정됨
+        eq_src = f"{fy_row['year']}년말"
     # 자본잠식(자본 ≤ 0)이면 BPS·PBR은 무의미 → 숨김
     # EPS 를 숨겼다는 건 주식수(가중평균)를 못 믿는다는 뜻이다. BPS 도 같은
     # 분모로 나눈 값이므로 같이 숨긴다. 이마트가 그랬다 — 분모가 1,600만주로
@@ -747,7 +757,7 @@ def collect_quant(dart, ticker, krx_row, stock):
     bps_q = (None if eps_hidden
              else (int(eqo_q / bps_denom) if (eqo_q and eqo_q > 0 and bps_denom) else None))
     log(f"  · BPS 입력: 자본 {(eqo_q or 0)/1e12:,.1f}조"
-        f"({'지배지분' if eqo_owner else ('총자본-폴백' if eqo_total else '없음')})"
+        f"({eq_src}·{'지배지분' if eqo_owner else ('총자본-폴백' if eqo_total else '연간폴백')})"
         f" ÷ 주식수 {(bps_denom or 0)/1e6:,.0f}백만"
         f"({'가중평균' if wavg else '발행총수'}) = BPS {bps_q}")
     pbr_q = round(price / bps_q, 2) if (bps_q and price) else None
