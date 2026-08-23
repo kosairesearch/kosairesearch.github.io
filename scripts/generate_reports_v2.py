@@ -739,11 +739,24 @@ def collect_quant(dart, ticker, krx_row, stock):
         eps_disc and eps_indep and (eps_disc > 0) == (eps_indep > 0)
         and (1 / 3.3) <= abs(eps_indep / eps_disc) <= 3.3)
 
-    # ROE 신뢰성: 순이익 추출(ttm_np)이 공시 EPS와 30% 넘게 어긋나면(추출 오류) 공시 EPS로 ttm_np 보정.
-    #   → EPS는 맞는데 ROE만 0%/이상치로 나오는 모순 제거(원익QnC 등).
-    if eps_disc is not None and total_sh:
-        implied_np = eps_disc * total_sh
-        if ttm_np is None or (implied_np and abs(ttm_np - implied_np) > 0.3 * abs(implied_np)):
+    # ROE 신뢰성: 순이익 추출(ttm_np)이 깨졌을 때만 공시 EPS 로 되살린다.
+    #   원래는 30% 만 어긋나도 'eps_disc × 발행주식총수' 로 덮어썼는데, 두 군데가 틀렸다.
+    #     ① 분모가 짝이 안 맞는다. 공시 기본주당이익은 가중평균 유통주식수로 나눈 값이라
+    #        발행주식총수를 도로 곱하면 자기주식만큼 부풀어 오른다(SK 는 자기주식이 24%다).
+    #     ② 30% 는 너무 좁다. 멀쩡히 추출된 순이익이 그 부풀린 값으로 덮여, 리포트 안에서
+    #        TTM 순이익이 바로 아래 분기표의 4개 분기 합과 어긋났다 — 2,287곳 중 162곳(7.1%).
+    #   그래서 분모를 가중평균으로 바꾸고, 부호가 뒤집히거나 3배 넘게 벌어질 때만 —
+    #   즉 추출이 실제로 깨졌을 때만 — 갈아끼운다(원익QnC 등 원래 잡으려던 경우).
+    np_denom = wavg or total_sh
+    if eps_disc is not None and np_denom:
+        implied_np = eps_disc * np_denom
+        broken = implied_np and (
+            ttm_np is None
+            or (ttm_np > 0) != (implied_np > 0)
+            or not ((1 / 3) <= abs(ttm_np / implied_np) <= 3))
+        if broken:
+            log(f"  · 순이익 추출 {'없음' if ttm_np is None else f'{ttm_np/1e8:,.0f}억'} 이 "
+                f"공시 EPS 환산 {implied_np/1e8:,.0f}억 과 어긋난다 — 공시값을 쓴다")
             ttm_np = implied_np
 
     bps_denom = wavg or total_sh
