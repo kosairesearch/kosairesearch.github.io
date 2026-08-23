@@ -41,11 +41,17 @@
      where("consents.marketing", "==", true)
    자세한 건 docs/consent.md 에 적어 뒀다.
    ============================================================ */
-import { app, auth } from "./firebase-config.js";
+import { app, auth, SOCIAL } from "./firebase-config.js";
 import { deleteUser } from "https://www.gstatic.com/firebasejs/10.12.2/firebase-auth.js";
 import {
-  getFirestore, doc, getDoc, setDoc, serverTimestamp
+  getFirestore, doc, getDoc
 } from "https://www.gstatic.com/firebasejs/10.12.2/firebase-firestore.js";
+import { getFunctions, httpsCallable }
+  from "https://www.gstatic.com/firebasejs/10.12.2/firebase-functions.js";
+
+/* 동의 기록을 쓰는 함수가 있는 리전. 읽기는 클라이언트가 직접 하지만
+   쓰기는 전부 서버를 거친다(아래 callFn 주석 참고). */
+const FN_REGION = (SOCIAL && SOCIAL.functionsRegion) || "asia-northeast3";
 
 /* 동의서 판 번호. 문구가 실질적으로 바뀌면 올린다 — 올리면 기존 회원도
    다음 로그인 때 새 동의를 한 번 받는다. 오탈자 수정 정도로는 올리지 않는다. */
@@ -247,44 +253,39 @@ export function renderConsent(opts = {}) {
 
 function db() { return getFirestore(app); }
 
-export async function saveConsent(uid, values, method, email) {
-  const consents = { version: CONSENT_VERSION, method: "checkbox", agreedAt: serverTimestamp() };
-  for (const it of ITEMS) consents[it.key] = !!values[it.key];
-  await setDoc(doc(db(), "users", uid), {
-    consents,
-    // 이메일을 여기 남긴다. 마케팅 동의자에게 실제로 보내려면 주소가 있어야
-    // 하는데, 소셜 가입자는 Firebase 사용자에 이메일이 없다.
-    ...(email ? { email } : {}),
-    // 마케팅 동의를 켠 시각. 끄면 null 로 지운다 — 언제 받았는지가 남아야
-    // 나중에 "이 사람 언제 동의했나" 를 답할 수 있다.
-    marketingAt: values.marketing ? serverTimestamp() : null,
-    signupMethod: method || "unknown",
-    createdAt: serverTimestamp(),
-    updatedAt: serverTimestamp()
-  }, { merge: true });
+/* 동의 기록은 서버가 쓴다.
+
+   전에는 여기서 users/{uid} 에 직접 썼다. 그러면 브라우저 콘솔을 열 수 있는
+   사람은 누구나 age14 나 agreedAt 을 고칠 수 있다 — 본인이 고칠 수 있는
+   기록은 나중에 아무것도 증명하지 못한다.
+
+   그래서 값은 서버(recordSignupConsent)가 정한다. 여기서 보내는 것은
+   선택 항목인 마케팅 수신 여부와, 어느 화면에서 받았는지뿐이다.
+
+   실패하면 던진다. 부르는 쪽이 방금 만든 계정을 지운다 — 동의 기록 없는
+   계정을 남기지 않는 것이 이 함수의 목적이다. */
+function callFn(name, payload) {
+  return httpsCallable(getFunctions(app, FN_REGION), name)(payload || {});
 }
 
-/* 가입 버튼 아래 고지 문구로 받은 동의(A안). 체크박스를 띄우지 않는 경로 —
-   구글 팝업 — 가 쓴다. 카카오·네이버는 서버가 같은 모양으로 남긴다.
+export async function saveConsent(uid, values, method, email) {
+  await callFn("recordSignupConsent", {
+    method: "checkbox",
+    provider: method || "email",
+    marketing: !!(values && values.marketing),
+    email: email || ""
+  });
+}
 
-   무엇을 보고 눌렀는지 나중에 답할 수 있어야 하므로 판 번호와 방식을
-   같이 남긴다. 마케팅은 여기서 받지 않는다 — 선택 항목을 고지 문구에
-   묻어 두면 그건 선택 동의가 아니다. 설정 페이지에서 켠다. */
-export async function saveImpliedConsent(uid, method, email) {
-  await setDoc(doc(db(), "users", uid), {
-    consents: {
-      version: CONSENT_VERSION,
-      method: "signup-notice",
-      age14: true, terms: true, privacy: true,
-      marketing: false,
-      agreedAt: serverTimestamp()
-    },
-    ...(email ? { email } : {}),
-    marketingAt: null,
-    signupMethod: method || "unknown",
-    createdAt: serverTimestamp(),
-    updatedAt: serverTimestamp()
-  }, { merge: true });
+/* 가입 버튼 아래 고지 문구로 받은 동의. 구글 경로가 쓴다.
+   카카오·네이버는 서버가 socialLogin 안에서 같은 모양으로 남긴다. */
+export async function saveImpliedConsent(uid, method, email, marketing) {
+  await callFn("recordSignupConsent", {
+    method: "signup-notice",
+    provider: method || "google",
+    marketing: !!marketing,
+    email: email || ""
+  });
 }
 
 /* 가입 버튼 아래에 붙는 한 줄. 소셜 버튼 밑에 이 문구가 있어야 위의
@@ -435,12 +436,7 @@ export async function getMarketing(uid) {
    문서가 아직 없을 수도 있다 — 이 기능이 생기기 전에 가입한 사람이다.
    그래서 update 가 아니라 merge 로 쓴다. */
 export async function setMarketing(uid, on) {
-  await setDoc(doc(db(), "users", uid), {
-    consents: { marketing: !!on },
-    marketingAt: on ? serverTimestamp() : null,
-    marketingOffAt: on ? null : serverTimestamp(),
-    updatedAt: serverTimestamp()
-  }, { merge: true });
+  await callFn("setMarketingConsent", { on: !!on });
 }
 
 
@@ -453,7 +449,7 @@ export async function setMarketing(uid, on) {
    자체가 없다. 받은 값을 서버로 보내면 서버가 계정과 동의를 함께 만든다.
 
    이것이 올바른 순서다 — 동의가 먼저, 계정이 나중. */
-export function collectConsent() {
+export function collectConsent(opts = {}) {
   css();
   return new Promise(resolve => {
     const ov = document.createElement("div");
@@ -469,7 +465,9 @@ export function collectConsent() {
        것처럼 읽힌다 — 동의를 먼저 받으려고 순서를 고쳐 놓고 문구가 옛 순서를
        말하고 있으면 안 된다. (구글 경로는 계정이 이미 생긴 뒤라 저쪽 문구가
        맞다.) */
-    sub.textContent = T("동의하지 않으면 가입이 진행되지 않습니다. 계정은 아직 만들어지지 않았어요.");
+    sub.textContent = opts.accountCreated
+      ? T("동의하지 않으면 가입이 취소되고 계정은 남지 않습니다.")
+      : T("동의하지 않으면 가입이 진행되지 않습니다. 계정은 아직 만들어지지 않았어요.");
     const set = renderConsent();
     const act = document.createElement("div");
     act.className = "kc-act";
@@ -493,4 +491,40 @@ export function collectConsent() {
     });
     no.addEventListener("click", () => { ov.remove(); resolve(null); });
   });
+}
+
+
+/* ────────────── 구글 가입 마무리 ────────────── */
+
+/* 구글은 팝업이 닫히는 순간 파이어베이스가 계정을 만든다. 서버를 거치지
+   않으므로 카카오·네이버처럼 '동의 먼저, 계정 나중' 순서를 쓸 수 없다.
+
+   그래서 새 계정일 때만 그 자리에서 받고, 거부하거나 기록에 실패하면 방금
+   만든 계정을 지운다. 만들었다가 지우는 것과 애초에 안 만드는 것은 다르지만,
+   구글 경로에서 할 수 있는 최선이 이것이다. 동의 기록 없는 계정을 남기는
+   것보다는 낫다.
+
+   기존 사용자는 그냥 지나간다 — 로그인할 때마다 물으면 안 된다.
+
+   로그인 화면과 가입 화면이 이 함수를 같이 쓴다. 전에는 같은 로직이 두
+   군데 복사돼 있었고, 한쪽만 고쳐서 가입 화면에서는 동의를 받고 로그인
+   화면에서는 안 받는 상태가 됐던 적이 있다.
+
+   돌려주는 값: true 면 계속 진행, false 면 사용자가 취소한 것. */
+export async function finishGoogleSignup(cred, isNewUser) {
+  if (!isNewUser) return true;
+  const v = await collectConsent({ accountCreated: true });
+  if (!v) {
+    try { await deleteUser(cred.user); } catch (_) {}
+    try { await auth.signOut(); } catch (_) {}
+    return false;
+  }
+  try {
+    await saveImpliedConsent(cred.user.uid, "google", cred.user.email || "", v.marketing);
+  } catch (e) {
+    try { await deleteUser(cred.user); } catch (_) {}
+    try { await auth.signOut(); } catch (_) {}
+    throw e;
+  }
+  return true;
 }

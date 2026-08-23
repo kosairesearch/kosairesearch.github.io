@@ -635,6 +635,7 @@ import { auth, isConfigured } from "./firebase-config.js";
 import { signInWithEmailAndPassword, GoogleAuthProvider, signInWithPopup,
   signOut } from "https://www.gstatic.com/firebasejs/10.12.2/firebase-auth.js";
 import { wireSocialButtons } from "./social-login.js";
+import { goNext, mapAuthError, isUserCancelled } from "./auth-util.js";
 import { sendVerifyEmail, sendResetEmail } from "./auth-emails.js";
 
 const $ = s => document.querySelector(s);
@@ -643,20 +644,16 @@ const errBox = $('#authErr');
 function showErr(msg){ errBox.textContent = msg; errBox.style.display = 'block'; }
 function clearErr(){ errBox.style.display = 'none'; errBox.textContent = ''; }
 function showInfo(msg){ const n = $('#cfgNote'); n.textContent = msg; n.style.display = 'block'; }
-function go(){ const next = new URLSearchParams(location.search).get('next'); location.href = next || 'Home.html'; }
+/* 로그인 뒤 돌아갈 주소는 auth-util 이 검사한다. ?next=https://… 를 그대로
+   쓰면 우리 로그인 화면을 거쳐 남의 사이트로 보낼 수 있다(피싱). */
+function go(){ goNext(); }
 
 if(!isConfigured){ $('#cfgNote').style.display = 'block'; }
 
-function mapError(err){
-  const c = (err && err.code) || '';
-  if(c.includes('api-key') || c.includes('configuration-not-found') || c.includes('operation-not-allowed'))
-    return T('Firebase 설정이 필요합니다. firebase-config.js를 확인하세요.');
-  if(c.includes('invalid-credential') || c.includes('wrong-password') || c.includes('user-not-found'))
-    return T('이메일 또는 비밀번호가 올바르지 않습니다.');
-  if(c.includes('invalid-email')) return T('이메일 형식이 올바르지 않습니다.');
-  if(c.includes('too-many-requests')) return T('잠시 후 다시 시도해 주세요.');
-  return T('로그인 중 오류가 발생했습니다.') + (c ? ' (' + c + ')' : '');
-}
+/* 오류 문구는 auth-util 한 곳에 모았다. 전에는 화면마다 따로 매핑해서
+   화면마다 아는 코드가 달랐고, 이메일로 가입한 사람이 구글 버튼을 누를 때
+   오는 account-exists-with-different-credential 을 아무 화면도 몰랐다. */
+const mapError = mapAuthError;
 
 let unverifiedUser = null;
 function offerResend(){
@@ -701,21 +698,24 @@ import('./consent.js').then(m => {
 
 $('#googleBtn').addEventListener('click', async () => {
   clearErr();
+  const btn = $('#googleBtn');
+  if(btn.dataset.busy) return;          // 팝업이 두 번 열리지 않게
+  btn.dataset.busy = '1';
   try{
     const cred = await signInWithPopup(auth, new GoogleAuthProvider());
-    /* 구글도 자기 동의 화면을 보여 준다(myaccount.google.com/connections 에
-       KOSAI 가 남는다). 그래서 우리 동의 화면을 한 번 더 띄우지 않고, 버튼
-       아래 고지 문구로 받는다. 새 계정일 때만 기록한다 — 로그인할 때마다
-       덮어쓰면 처음 동의한 시각이 사라진다. */
     const { getAdditionalUserInfo } = await import("https://www.gstatic.com/firebasejs/10.12.2/firebase-auth.js");
-    if((getAdditionalUserInfo(cred) || {}).isNewUser){
-      const { saveImpliedConsent } = await import("./consent.js");
-      try{ await saveImpliedConsent(cred.user.uid, 'google', cred.user.email || ''); }
-      catch(e){ console.warn('[consent] 기록 실패:', e && e.code); }
-    }
+    const isNew = !!(getAdditionalUserInfo(cred) || {}).isNewUser;
+    /* 구글은 팝업이 닫히는 순간 계정이 만들어진다. 새 계정이면 그 자리에서
+       동의를 받고, 거부하거나 기록에 실패하면 방금 만든 계정을 지운다.
+       동의 기록 없는 계정을 남기지 않는다. 로직은 consent.js 한 곳에 있어
+       가입 화면과 로그인 화면이 어긋날 수 없다. */
+    const { finishGoogleSignup } = await import("./consent.js");
+    if(!(await finishGoogleSignup(cred, isNew))) return;   // 사용자가 취소
+    if(isNew && window.KOSA) KOSA.track('sign_up', { method: 'google' });
     go();
   }
-  catch(err){ if((err.code || '').includes('popup-closed') || (err.code || '').includes('cancelled-popup')) return; showErr(mapError(err)); }
+  catch(err){ if(isUserCancelled(err)) return; showErr(mapError(err)); }
+  finally{ delete btn.dataset.busy; }
 });
 
 $('#forgotLink').addEventListener('click', async e => {

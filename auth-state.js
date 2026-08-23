@@ -7,10 +7,8 @@
    firebase-config.js 설정 전(데모 모드)에는 로그인 링크만 표시합니다.
    ============================================================ */
 import { app, auth, isConfigured } from "./firebase-config.js";
-import { onAuthStateChanged, signOut, deleteUser }
+import { onAuthStateChanged, signOut }
   from "https://www.gstatic.com/firebasejs/10.12.2/firebase-auth.js";
-import { getFirestore, doc, deleteDoc }
-  from "https://www.gstatic.com/firebasejs/10.12.2/firebase-firestore.js";
 import { getFunctions, httpsCallable }
   from "https://www.gstatic.com/firebasejs/10.12.2/firebase-functions.js";
 
@@ -111,12 +109,21 @@ async function recordReason(email, reason, detail){
 async function finishWithdraw(user, email, reason, detail, ov){
   try{
     await recordReason(email, reason, detail);
-    const fs = getFirestore(app);
-    try{ await deleteDoc(doc(fs, "watchlists", user.uid)); }catch(e){}
-    // 동의 기록도 함께 지운다. 동의 화면에서 "보유 기간: 회원 탈퇴 시까지"
-    // 라고 알리고 받았으니, 남겨 두면 우리가 한 약속을 어기는 것이다.
-    try{ await deleteDoc(doc(fs, "users", user.uid)); }catch(e){}
-    await deleteUser(user);
+    /* 탈퇴는 서버가 한다.
+
+       전에는 여기서 클라이언트가 워치리스트·동의 기록·계정을 직접 지웠다.
+       그런데 지워야 할 것이 그 셋만이 아니다 — 구독(subscriptions), 열람
+       기록(report_reads), 그리고 결제가 남아 있으면 환불까지 서버에서
+       처리해야 한다. 클라이언트가 지울 수 있는 것만 지우면 나머지가 유령으로
+       남고, 창을 닫아 버리면 그마저도 중간에 멈춘다.
+
+       deleteAccount 함수가 그 순서를 전부 갖고 있는데 아무도 부르지 않고
+       있었다. 부른다. 환불이 실패하면 서버가 탈퇴를 진행하지 않고 오류를
+       돌려준다 — 계정을 지운 뒤 환불이 실패하면 당사자는 로그인도 못 하는데
+       돈은 우리가 들고 있는 상태가 되고, 되돌릴 방법이 없다. */
+    const fns = getFunctions(app, "asia-northeast3");
+    await httpsCallable(fns, "deleteAccount")({});
+    try{ await signOut(auth); }catch(_){}
     // 완료 화면 — 자동으로 사라지지 않고, 사용자가 '홈으로'를 눌러야 닫힘
     ov.querySelector('.wd-card').innerHTML = `
       <div class="wd-done">

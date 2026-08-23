@@ -638,16 +638,20 @@ if(window.KOSi18n) KOSi18n.register({
   "이메일 형식이 올바르지 않습니다.":"That email address looks invalid.",
   "Firebase 설정이 필요합니다. firebase-config.js를 확인하세요.":"Firebase is not configured yet. See firebase-config.js.",
   "회원가입 중 오류가 발생했습니다.":"Something went wrong during sign-up.",
-  "카카오·네이버 로그인은 앱 키 설정이 필요합니다. (firebase-config.js 참고)":"Kakao/Naver sign-in needs app keys to be configured (see firebase-config.js)."
+  "카카오·네이버 로그인은 앱 키 설정이 필요합니다. (firebase-config.js 참고)":"Kakao/Naver sign-in needs app keys to be configured (see firebase-config.js).",
+  "가입을 마치지 못했습니다. 잠시 후 다시 시도해 주세요.":"We couldn't finish signing you up. Please try again in a moment.",
+  "인증 메일 다시 보내기":"Resend verification email",
+  "인증 메일을 다시 보냈습니다. 메일함을 확인해 주세요.":"Verification email resent. Please check your inbox."
 });
 </script>
 
 <script type="module">
 import { auth, isConfigured } from "./firebase-config.js";
 import { createUserWithEmailAndPassword, GoogleAuthProvider, signInWithPopup,
-  signOut }
+  signOut, deleteUser }
   from "https://www.gstatic.com/firebasejs/10.12.2/firebase-auth.js";
 import { wireSocialButtons } from "./social-login.js";
+import { goNext, mapAuthError, isUserCancelled } from "./auth-util.js";
 import { sendVerifyEmail } from "./auth-emails.js";
 import { renderConsent, saveConsent, noticeEl } from "./consent.js";
 
@@ -663,18 +667,35 @@ $('#consentMount').appendChild(consent.el);
 // 소셜 버튼 아래 한 줄 고지. 이 문구가 있어야 소셜 경로의 동의가 성립한다.
 document.querySelector('.social').appendChild(noticeEl());
 function flagAgree(){ consent.validate(); }
-function go(){ const next = new URLSearchParams(location.search).get('next'); location.href = next || 'Home.html'; }
+function go(){ goNext(); }
 
 if(!isConfigured){ $('#cfgNote').style.display = 'block'; }
 
-function mapError(err){
-  const c = (err && err.code) || '';
-  if(c.includes('api-key') || c.includes('configuration-not-found') || c.includes('operation-not-allowed'))
-    return T('Firebase 설정이 필요합니다. firebase-config.js를 확인하세요.');
-  if(c.includes('email-already-in-use')) return T('이미 가입된 이메일입니다.');
-  if(c.includes('invalid-email')) return T('이메일 형식이 올바르지 않습니다.');
-  if(c.includes('weak-password')) return T('비밀번호는 영문과 숫자를 포함해 8자 이상이어야 합니다.');
-  return T('회원가입 중 오류가 발생했습니다.') + (c ? ' (' + c + ')' : '');
+const mapError = mapAuthError;
+
+/* 이미 가입된 이메일이면 그냥 막고 끝내면 안 된다. 인증을 안 끝낸 계정이면
+   재가입도 로그인도 안 되는 상태라, 무슨 말인지 모른 채 갇힌다.
+   무엇을 하면 되는지까지 같이 보여 준다. */
+function showAlreadyRegistered(email){
+  clearErr();
+  errBox.textContent = '';
+  errBox.appendChild(document.createTextNode(T('이미 가입된 이메일입니다.') + ' '));
+  const a = document.createElement('a');
+  a.href = 'Login.html?next=' + encodeURIComponent(new URLSearchParams(location.search).get('next') || 'Home.html');
+  a.textContent = T('로그인하러 가기');
+  a.style.cssText = 'color:var(--brand-blue);font-weight:600;text-decoration:underline';
+  errBox.appendChild(a);
+  errBox.appendChild(document.createTextNode(' · '));
+  const b = document.createElement('a');
+  b.href = '#'; b.textContent = T('인증 메일 다시 보내기');
+  b.style.cssText = 'color:var(--brand-blue);font-weight:600;text-decoration:underline';
+  b.addEventListener('click', async ev => {
+    ev.preventDefault();
+    try{ await sendVerifyEmail(email); errBox.textContent = T('인증 메일을 다시 보냈습니다. 메일함을 확인해 주세요.'); }
+    catch(e){ errBox.textContent = mapError(e); }
+  });
+  errBox.appendChild(b);
+  errBox.style.display = 'block';
 }
 
 $('#emailForm').addEventListener('submit', async e => {
@@ -688,15 +709,28 @@ $('#emailForm').addEventListener('submit', async e => {
   const btn = $('#emailSubmit'); btn.disabled = true;
   try{
     const cred = await createUserWithEmailAndPassword(auth, email, pw);
-    // 로그아웃 전에 남겨야 한다 — 로그아웃한 뒤에는 본인 문서에 쓸 권한이 없다.
+    /* 동의 기록은 로그아웃 전에 남긴다 — 로그아웃하면 부를 권한이 없다.
+       실패하면 방금 만든 계정을 지운다. 전에는 console.warn 만 하고 넘어가서
+       동의 기록 없는 계정이 남았다. 소셜 경로는 서버가 같은 규칙으로 지우는데
+       이메일 경로만 안 지키고 있었다. */
     try{ await saveConsent(cred.user.uid, consent.values(), 'email', email); }
-    catch(e){ console.warn('[consent] 저장 실패:', e && e.code); }
+    catch(e){
+      try{ await deleteUser(cred.user); }catch(_){}
+      try{ await signOut(auth); }catch(_){}
+      showErr(T('가입을 마치지 못했습니다. 잠시 후 다시 시도해 주세요.'));
+      btn.disabled = false;
+      return;
+    }
     if(window.KOSA) KOSA.track('sign_up', { method: 'email' });
     try{ await sendVerifyEmail(email); }catch(_){}   // 커스텀 인증 메일(Resend)
     await signOut(auth);          // 인증 전에는 로그인 상태로 두지 않음
     showVerifySent(email);
   }
-  catch(err){ showErr(mapError(err)); btn.disabled = false; }
+  catch(err){
+    if(String((err && err.code) || '').includes('email-already-in-use')) showAlreadyRegistered(email);
+    else showErr(mapError(err));
+    btn.disabled = false;
+  }
 });
 
 function showVerifySent(email){
@@ -719,16 +753,20 @@ function showVerifySent(email){
    보여 줄 자리가 여기밖에 없다. */
 $('#googleBtn').addEventListener('click', async () => {
   clearErr();
+  const gb = $('#googleBtn');
+  if(gb.dataset.busy) return;
+  gb.dataset.busy = '1';
   try{
     const cred = await signInWithPopup(auth, new GoogleAuthProvider());
     const { getAdditionalUserInfo } = await import('https://www.gstatic.com/firebasejs/10.12.2/firebase-auth.js');
-    if((getAdditionalUserInfo(cred) || {}).isNewUser){
-      const { saveImpliedConsent } = await import('./consent.js');
-      try{ await saveImpliedConsent(cred.user.uid, 'google', cred.user.email || ''); }
-      catch(e){ console.warn('[consent] 기록 실패:', e && e.code); }
-    }
-    if(window.KOSA) KOSA.track('sign_up', { method: 'google' }); go(); }
-  catch(err){ if((err.code || '').includes('popup-closed') || (err.code || '').includes('cancelled-popup')) return; showErr(mapError(err)); }
+    const isNew = !!(getAdditionalUserInfo(cred) || {}).isNewUser;
+    const { finishGoogleSignup } = await import('./consent.js');
+    if(!(await finishGoogleSignup(cred, isNew))) return;   // 사용자가 취소
+    if(isNew && window.KOSA) KOSA.track('sign_up', { method: 'google' });
+    go();
+  }
+  catch(err){ if(isUserCancelled(err)) return; showErr(mapError(err)); }
+  finally{ delete gb.dataset.busy; }
 });
 
 // Kakao / Naver — OAuth 리다이렉트 + Cloud Functions 커스텀 토큰 (social-login.js)

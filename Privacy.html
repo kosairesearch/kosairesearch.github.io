@@ -491,7 +491,7 @@ KOSi18n.register({
       <p>비밀번호는 인증 서비스(Google Firebase Authentication)를 통해 암호화되어 관리되며, 운영자는 비밀번호 원문을 확인할 수 없습니다. 화면 테마·언어 등 일부 설정값은 이용자 브라우저의 로컬 저장소(localStorage)에만 저장되어 서버로 전송되지 않습니다.</p>
 
       <h2>3. 만 14세 미만 아동의 개인정보</h2>
-      <p>서비스는 만 14세 미만 아동을 대상으로 하지 않으며, 만 14세 미만 아동의 개인정보를 수집하지 않습니다.</p>
+      <p>서비스는 만 14세 미만 아동을 대상으로 하지 않으며, 만 14세 미만 아동의 개인정보를 수집하지 않습니다. 회원가입 시 만 14세 이상인지를 확인하며, 만 14세 미만 아동이 가입한 사실을 알게 된 경우 해당 계정과 수집된 개인정보를 지체 없이 파기합니다.</p>
 
       <h2>4. 개인정보의 처리 및 보유 기간</h2>
       <p>회원의 개인정보는 회원 탈퇴 시까지 보유하며, 탈퇴 또는 삭제 요청 시 지체 없이 파기합니다. 문의 응대를 위해 수집된 정보는 응대 완료 후 지체 없이 파기합니다. 다만 관계 법령에 따라 보존이 필요한 경우 해당 기간 동안 보관합니다(예: 통신비밀보호법에 따른 접속기록 3개월).</p>
@@ -555,7 +555,19 @@ KOSi18n.register({
         <li>경찰청 사이버수사국: (국번 없이) 182 · ecrm.cyber.go.kr</li>
       </ul>
 
-      <h2>15. 개인정보처리방침의 변경</h2>
+      <h2 id="marketing">15. 광고성 정보 수신 동의 (선택)</h2>
+      <p>서비스는 이용자가 별도로 동의한 경우에 한하여 광고성 정보를 전송합니다. 수신 동의는 선택 사항이며, 동의하지 않아도 회원가입과 서비스 이용에 어떠한 제한도 없습니다.</p>
+      <ul>
+        <li>전송자: 코사이(KOSAI)</li>
+        <li>전송 수단: 이메일</li>
+        <li>전송 내용: 새 리포트 발행 알림, 서비스 개선·신규 기능 소식, 이벤트 안내</li>
+        <li>수신 동의 철회: 설정 페이지에서 언제든 해제할 수 있으며, 발송되는 모든 메일 하단의 수신거부 링크로도 즉시 해제할 수 있습니다. 철회 즉시 발송을 중단합니다.</li>
+        <li>야간 전송: 오후 9시부터 다음 날 오전 8시까지는 광고성 정보를 전송하지 않습니다.</li>
+        <li>수신 동의 확인: 「정보통신망 이용촉진 및 정보보호 등에 관한 법률」에 따라 동의를 받은 날부터 2년마다 수신 동의 여부를 확인합니다.</li>
+      </ul>
+      <p>수신 동의 여부와 동의·철회 시각은 회원 정보에 기록되며, 회원 탈퇴 시 함께 파기됩니다.</p>
+
+      <h2>16. 개인정보처리방침의 변경</h2>
       <p>이 개인정보처리방침은 법령·정책 또는 서비스 내용의 변경에 따라 개정될 수 있으며, 개정 시 시행일과 변경 내용을 서비스 화면을 통해 시행 7일 전부터 공지하며, 이용자 권리에 중요한 변경이 있는 경우 30일 전부터 공지합니다.</p>
 
       <div class="note">본 방침은 개인정보보호위원회 「개인정보 처리방침 작성지침」의 구성을 기준으로 작성되었습니다.</div>
@@ -608,7 +620,7 @@ if(window.KOSi18n) KOSi18n.register({
   "자동 수집 항목: 접속 일시, IP 주소, 로그인 기록, 서비스 이용 기록, 기기·브라우저 정보":"Automatically collected: access time, IP address, sign-in records, service usage records, device and browser information",
   "비밀번호는 인증 서비스(Google Firebase Authentication)를 통해 암호화되어 관리되며, 운영자는 비밀번호 원문을 확인할 수 없습니다. 화면 테마·언어 등 일부 설정값은 이용자 브라우저의 로컬 저장소(localStorage)에만 저장되어 서버로 전송되지 않습니다.":"Passwords are encrypted and managed by the authentication service (Google Firebase Authentication); the operator cannot see your raw password. Some settings such as theme and language are stored only in your browser's local storage and are never sent to our servers.",
   "3. 만 14세 미만 아동의 개인정보":"3. Children Under 14",
-  "서비스는 만 14세 미만 아동을 대상으로 하지 않으며, 만 14세 미만 아동의 개인정보를 수집하지 않습니다.":"The Service is not directed at children under 14 and does not collect their personal information.",
+  "서비스는 만 14세 미만 아동을 대상으로 하지 않으며, 만 14세 미만 아동의 개인정보를 수집하지 않습니다. 회원가입 시 만 14세 이상인지를 확인하며, 만 14세 미만 아동이 가입한 사실을 알게 된 경우 해당 계정과 수집된 개인정보를 지체 없이 파기합니다.":"The Service is not directed at children under 14 and does not collect their personal information. We confirm at sign-up that the user is 14 or older, and if we learn that a child under 14 has registered we destroy the account and any collected personal information without delay.",
   "4. 개인정보의 처리 및 보유 기간":"4. Processing and Retention Period",
   "회원의 개인정보는 회원 탈퇴 시까지 보유하며, 탈퇴 또는 삭제 요청 시 지체 없이 파기합니다. 문의 응대를 위해 수집된 정보는 응대 완료 후 지체 없이 파기합니다. 다만 관계 법령에 따라 보존이 필요한 경우 해당 기간 동안 보관합니다(예: 통신비밀보호법에 따른 접속기록 3개월).":"Member information is retained until you withdraw and is destroyed without delay upon withdrawal or a deletion request. Information collected for inquiries is destroyed once the response is complete. Where retention is required by law, it is kept for the relevant period (e.g., access records for three months under the Protection of Communications Secrets Act).",
   "5. 개인정보의 제3자 제공":"5. Provision to Third Parties",
@@ -649,7 +661,16 @@ if(window.KOSi18n) KOSi18n.register({
   "개인정보침해 신고센터: (국번 없이) 118 · privacy.kisa.or.kr":"Privacy Infringement Report Center: 118 · privacy.kisa.or.kr",
   "대검찰청 사이버수사과: (국번 없이) 1301 · spo.go.kr":"Supreme Prosecutors' Office Cyber Investigation: 1301 · spo.go.kr",
   "경찰청 사이버수사국: (국번 없이) 182 · ecrm.cyber.go.kr":"National Police Agency Cyber Bureau: 182 · ecrm.cyber.go.kr",
-  "15. 개인정보처리방침의 변경":"15. Changes to This Policy",
+  "15. 광고성 정보 수신 동의 (선택)":"15. Marketing Communications (Optional)",
+  "서비스는 이용자가 별도로 동의한 경우에 한하여 광고성 정보를 전송합니다. 수신 동의는 선택 사항이며, 동의하지 않아도 회원가입과 서비스 이용에 어떠한 제한도 없습니다.":"We send marketing messages only to users who have separately opted in. Consent is optional; declining places no restriction whatsoever on signing up or using the Service.",
+  "전송자: 코사이(KOSAI)":"Sender: KOSAI",
+  "전송 수단: 이메일":"Channel: email",
+  "전송 내용: 새 리포트 발행 알림, 서비스 개선·신규 기능 소식, 이벤트 안내":"Contents: new report notifications, product news and improvements, event announcements",
+  "수신 동의 철회: 설정 페이지에서 언제든 해제할 수 있으며, 발송되는 모든 메일 하단의 수신거부 링크로도 즉시 해제할 수 있습니다. 철회 즉시 발송을 중단합니다.":"Withdrawal: you can turn it off at any time on the Settings page, or instantly via the unsubscribe link at the bottom of every email. We stop sending immediately.",
+  "야간 전송: 오후 9시부터 다음 날 오전 8시까지는 광고성 정보를 전송하지 않습니다.":"Night-time: we do not send marketing messages between 9 p.m. and 8 a.m.",
+  "수신 동의 확인: 「정보통신망 이용촉진 및 정보보호 등에 관한 법률」에 따라 동의를 받은 날부터 2년마다 수신 동의 여부를 확인합니다.":"Reconfirmation: under the Network Act we reconfirm your consent every two years from the date it was given.",
+  "수신 동의 여부와 동의·철회 시각은 회원 정보에 기록되며, 회원 탈퇴 시 함께 파기됩니다.":"Your consent status and the time it was given or withdrawn are recorded with your account and destroyed when the account is deleted.",
+  "16. 개인정보처리방침의 변경":"16. Changes to This Policy",
   "이 개인정보처리방침은 법령·정책 또는 서비스 내용의 변경에 따라 개정될 수 있으며, 개정 시 시행일과 변경 내용을 서비스 화면을 통해 시행 7일 전부터 공지하며, 이용자 권리에 중요한 변경이 있는 경우 30일 전부터 공지합니다.":"This policy may be amended to reflect changes in laws, policies, or the Service. Amendments are announced on the Service at least 7 days before they take effect, or at least 30 days for changes significant to your rights.",
   "본 방침은 개인정보보호위원회 「개인정보 처리방침 작성지침」의 구성을 기준으로 작성되었습니다.":"This policy is structured according to the PIPC's privacy policy drafting guidelines.",
   "KOSAI는 이용자의 개인정보를 소중히 여기며, 관련 법령을 준수합니다.":"KOSAI values your personal information and complies with applicable laws.",
