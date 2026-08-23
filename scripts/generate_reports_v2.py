@@ -279,6 +279,13 @@ def _fin_all(dart, ticker, year, reprt):
     # 같은 칸이 '1년치'다. 구분하지 못하면 6개월 순이익을 3개월 주당이익으로
     # 나누게 된다 — 이마트에서 주식수가 1,600만주로 잡힌 원인이었다.
     out["_reprt"] = reprt
+    # 공시 통화. 국내 상장 외국기업(9xxxxx)은 위안·달러로 낸다. 그 숫자를
+    # 원으로 착각하면 BPS 가 주가의 몇십분의 일로 나온다(엑세스바이오 BPS 9원).
+    try:
+        cy = str(df.iloc[0].get("currency") or "").strip().upper()
+    except Exception:
+        cy = ""
+    out["_ccy"] = cy or "KRW"
     # 주당이익 원문 덤프 — DUMP_EPS=티커,티커 로 켠다. 어느 행을 집었는지,
     # 그 행의 당기/누적 칸이 각각 얼마인지 그대로 찍는다. 결과만 봐서는
     # '회사가 낸 값' 과 '우리가 고른 값' 을 구분할 수 없어 원인을 못 좁혔다.
@@ -534,16 +541,29 @@ def collect_quant(dart, ticker, krx_row, stock):
     # 시가총액(원)을 기준으로 자본총계가 비현실적으로 작으면(=PBR이 비정상적으로 큼) 단위 배수를 감지해 전 금액에 곱한다.
     mcap_won = (stock.get("mcap") or 0) * 1e12
     ref_eq = _bs(d_cur, "equity_owner") or _bs(d_cur, "equity") or (fy_row.get("equity_owner") if fy_row else None)
-    unit = 1
+    # ── 공시 통화 ──
+    # 국내 상장 외국기업(9xxxxx)은 위안·달러로 공시한다. 그 숫자를 원으로
+    # 두면 주당지표가 통째로 어긋난다 — 엑세스바이오 BPS 9원(PBR 250),
+    # GRT BPS 68원(PBR 50.6). 주가는 원인데 자본은 달러·위안이었다.
+    _d_ccy = d_cur if d_cur is not None else fin(py, "11011")
+    ccy = str((_d_ccy or {}).get("_ccy") or "KRW").upper()
+    fx = 1.0
+    if ccy not in ("KRW", ""):
+        fx = fx_to_krw(ccy) or 0
+        log(f"  💱 {ticker} 공시 통화 {ccy}"
+            + (f" — 원화 환산 ×{fx:,.2f}" if fx else " — 환율을 구하지 못해 주당지표를 숨긴다"))
+    ccy_unknown = bool(ccy not in ("KRW", "") and not fx)
+    unit = fx or 1.0
     if mcap_won and ref_eq and ref_eq > 0:
-        ratio = mcap_won / ref_eq             # ≈ PBR. 정상 0.05~300, 그 이상이면 단위 축소 의심
+        ratio = mcap_won / (ref_eq * unit)    # ≈ PBR. 정상 0.05~300, 그 이상이면 단위 축소 의심
         if ratio > 300:
             for f in (1000, 1_000_000):
-                if 0.05 <= mcap_won / (ref_eq * f) <= 300:
-                    unit = f
+                if 0.05 <= mcap_won / (ref_eq * unit * f) <= 300:
+                    unit *= f
                     break
     if unit != 1:
-        log(f"  [단위보정] {ticker} ×{unit} (천원/백만원 단위 공시 추정)")
+        log(f"  [단위보정] {ticker} ×{unit:,.4g}"
+            f" ({'환율 환산 포함 · ' if fx and fx != 1 else ''}천원/백만원 단위 공시 추정)")
         money = ("rev", "op", "np", "np_owner", "equity", "equity_owner", "cfo", "liab", "assets")
         for row in annual:
             for k in money:
@@ -559,8 +579,12 @@ def collect_quant(dart, ticker, krx_row, stock):
     price = stock.get("price")
     sh = stock.get("shares") or 0          # KRX 발행주식수(정확)
     total_sh = dart_total_shares(dart, ticker) or sh
-    # DART 주식총수가 KRX 대비 비정상(0.5~3배 벗어남)이면 KRX값으로 폴백 — 추출 오류 방어
-    if sh and total_sh and not (0.5 * sh <= total_sh <= 3 * sh):
+    # DART 주식총수는 공시 표를 읽어 오는 값이라 중복·누락이 난다. KRX 상장주식수는
+    # 시가총액과 정확히 맞아떨어지는 것을 전 종목(2,686개)에서 확인했으므로,
+    # 5% 넘게 어긋나면 KRX 를 쓴다. 예전 기준(0.5~3배)은 정확히 2배로 중복된
+    # 값을 그대로 통과시켰고, 그 분모로 나눈 BPS 가 절반으로 나갔다.
+    if sh and total_sh and not (0.95 * sh <= total_sh <= 1.05 * sh):
+        log(f"  · 발행주식총수 DART {total_sh:,} ↔ KRX {sh:,} — KRX 를 쓴다")
         total_sh = sh
 
     # 가중평균 유통주식수 = 회사 공시 (지배주주 순이익 ÷ 공시 기본EPS) 로 역산.
@@ -768,10 +792,17 @@ def collect_quant(dart, ticker, krx_row, stock):
         "roe_ttm": roe_ttm,                      # 헤드라인 ROE(최근 4분기 ÷ 평균자본)
         "ttm_window": ttm_label if ttm_np else None,
         "ttm_np_owner": ttm_np,
+        "ccy": ccy,                              # 공시 통화(원화 환산 후에도 출처를 남긴다)
         "_eps_self": eps_self_ok,                # 검증용 임시 플래그 — cross_check 에서 떼어낸다
         "pbr_krx": None, "bps_krx": None,        # KRX 공식값(참고·대조용)
         "basis": "PER·EPS·PBR·BPS 모두 자체 산출(네이버·토스와 동일 방식) · 배당은 DART 공시 주당현금배당금(보완:KRX) ÷ 현재가",
     }
+    # 환율을 못 구했으면 주당지표를 내지 않는다. 외화 숫자를 원으로 두면
+    # 주가와 견줄 수 없다 — 틀린 배수를 보여 주느니 빈칸이 낫다.
+    if ccy_unknown:
+        for k in ("eps", "per", "bps", "pbr"):
+            valuation[k] = None
+
     # 배당: DART 공시 주당현금배당금(보통주) 우선, 실패 시 KRX DPS 보완.
     #   현재가 기준으로 배당수익률 산출. DPS=0 은 '무배당'(유효)로 보존.
     dps = dart_dps(dart, ticker)
@@ -803,6 +834,44 @@ def collect_quant(dart, ticker, krx_row, stock):
     return out
 
 
+_FX_CACHE = {}
+# 통화별 상식 범위(원). 여기 벗어난 값이 오면 응답 형식이 바뀐 것으로 보고 버린다.
+_FX_BAND = {"USD": (500, 3000), "EUR": (500, 4000), "CNY": (50, 500),
+            "HKD": (50, 500), "JPY": (3, 30), "GBP": (700, 4000),
+            "SGD": (300, 2000), "VND": (0.01, 1.0)}
+
+
+def fx_to_krw(ccy):
+    """1 <통화> 가 몇 원인지. 국내 상장 외국기업이 위안·달러로 낸 재무제표를
+    원으로 옮기는 데만 쓴다. 못 구하면 None — 그때는 주당지표를 숨긴다."""
+    ccy = (ccy or "").upper()
+    if ccy in ("", "KRW"):
+        return 1.0
+    if ccy in _FX_CACHE:
+        return _FX_CACHE[ccy]
+    lo, hi = _FX_BAND.get(ccy, (0.001, 100000))
+    import requests
+    rate = None
+    for get in (
+        lambda: float(requests.get(f"https://open.er-api.com/v6/latest/{ccy}", timeout=10)
+                      .json()["rates"]["KRW"]),
+        lambda: float(requests.get(
+            "https://m.stock.naver.com/front-api/marketIndex/prices"
+            f"?category=exchange&reutersCode=FX_{ccy}KRW&page=1&pageSize=1",
+            headers={"User-Agent": "Mozilla/5.0"}, timeout=10)
+            .json()["result"][0]["closePrice"].replace(",", "")),
+    ):
+        try:
+            v = get()
+            if lo <= v <= hi:
+                rate = v
+                break
+        except Exception:
+            continue
+    _FX_CACHE[ccy] = rate
+    return rate
+
+
 def dart_total_shares(dart, ticker):
     """발행주식총수(보통주+우선주) — 네이버·토스와 같은 주당지표 분모.
     최신 분기보고서 → 직전 사업보고서 순으로 시도. 실패 시 None."""
@@ -814,13 +883,23 @@ def dart_total_shares(dart, ticker):
             df = None
         if df is None or getattr(df, "empty", True):
             continue
-        tot = 0
+        # 같은 구분(보통주/우선주)이 여러 줄로 오는 회사가 있다 — 정정공시나
+        # 표 구성 탓이다. 그대로 더하면 발행주식총수가 두세 배가 된다.
+        #
+        #   웅진씽크빅   113,654,171  (실제 56,827,085 · 정확히 2배)
+        #   마니커        63,511,228  (실제 31,755,614 · 정확히 2배)
+        #   졸스          35,119,757  (실제 11,706,586 · 정확히 3배)
+        #
+        # 그 분모로 자본을 나누면 BPS 가 절반·3분의 1로 나간다. 구분별로
+        # 가장 큰 값 하나만 쓰고 더한다.
+        best = {}
         for _, r in df.iterrows():
             se = str(r.get("se", "")).replace(" ", "")
             if se in ("보통주", "우선주"):
                 v = g._num(r.get("istc_totqy"))
                 if v and v > 0:
-                    tot += v
+                    best[se] = max(best.get(se, 0), v)
+        tot = sum(best.values())
         if tot:
             return tot
     return None
