@@ -528,3 +528,36 @@ export async function finishGoogleSignup(cred, isNewUser) {
   }
   return true;
 }
+
+
+/* ────────────── 내 계정 정보 ────────────── */
+
+/* 설정 페이지가 "내 계정에 뭐가 저장돼 있나" 를 보여 줄 때 쓴다.
+
+   이메일이 두 군데에 있다. 이메일·구글 가입자는 Firebase 사용자에 있고,
+   카카오·네이버 가입자는 커스텀 토큰이라 거기엔 없고 users/{uid} 에만
+   있다. 화면에서는 그 차이가 보일 이유가 없으므로 여기서 합친다.
+
+   users 문서를 못 읽어도(규칙·통신) 나머지는 보여 준다 — 표시용이다. */
+const METHOD_LABEL = {
+  email: "이메일", google: "구글", kakao: "카카오", naver: "네이버"
+};
+
+export async function accountInfo(user) {
+  let doc0 = null;
+  try {
+    const snap = await getDoc(doc(db(), "users", user.uid));
+    doc0 = snap.exists() ? snap.data() : null;
+  } catch (e) { /* 표시용 — 없으면 없는 대로 */ }
+  const method = (doc0 && doc0.signupMethod)
+    || (String(user.uid).split(":")[0] === "kakao" ? "kakao"
+      : String(user.uid).split(":")[0] === "naver" ? "naver"
+      : ((user.providerData || [])[0] || {}).providerId === "google.com" ? "google"
+      : ((user.providerData || [])[0] || {}).providerId === "password" ? "email" : "");
+  return {
+    name: user.displayName || "",
+    email: user.email || (doc0 && doc0.email) || "",
+    method,
+    methodLabel: METHOD_LABEL[method] || "알 수 없음"
+  };
+}
