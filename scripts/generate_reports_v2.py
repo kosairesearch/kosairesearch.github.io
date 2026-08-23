@@ -588,6 +588,43 @@ def collect_quant(dart, ticker, krx_row, stock):
         fy_eps = fy_eps * unit if fy_eps is not None else None
         qp_eps = qp_eps * unit if qp_eps is not None else None
         qc_eps = qc_eps * unit if qc_eps is not None else None
+
+    # ── 액면분할·병합 보정 ────────────────────────────────────────────
+    # 뺄셈이 성립하려면 세 값이 같은 주식수를 기준으로 해야 한다. 그 사이에
+    # 액면분할을 하면 옛 값만 기준이 달라, 그대로 빼고 더하면 단위가 다른
+    # 것을 섞는 셈이 된다.
+    #
+    #   LS ELECTRIC  9,647 − 4,610 + 1,607 = 6,644   (실제는 2,613)
+    #
+    # 각 기간의 '순이익 ÷ 그 기간 공시 주당이익' 이 곧 그때의 주식수다.
+    # 옛 기간 대비 몇 배가 됐는지가 분할 배수이고, 그 배수로 옛 주당이익을
+    # 나누면 현재 기준이 된다. LS ELECTRIC 은 4.96배(=5:1 분할)로 잡힌다.
+    #
+    # 유상증자처럼 어중간한 비율까지 건드리면 멀쩡한 값을 망가뜨리므로,
+    # 정수배(또는 그 역수) 근처일 때만 손댄다 — 분할·병합의 지문이다.
+    def _sh_at(npo, eps_v):
+        return (npo / eps_v) if (npo and eps_v and abs(eps_v) > 1) else None
+
+    _n_cur, _n_py = _npo(d_cur), _npo(d_py_same)
+    sh_cur = _sh_at(_n_cur * unit if _n_cur is not None else None, qc_eps)
+    sh_py = _sh_at(_n_py * unit if _n_py is not None else None, qp_eps)
+    sh_fy = _sh_at(fy_row.get("np_owner") if fy_row else None, fy_eps)
+
+    def _unsplit(eps_v, sh_old, label):
+        if not (eps_v and sh_cur and sh_old):
+            return eps_v
+        r = sh_cur / sh_old
+        for n in range(2, 41):
+            for c in (float(n), 1.0 / n):
+                if abs(r / c - 1) < 0.05:
+                    log(f"  ⚖️ 주식수가 {r:.2f}배로 바뀌었다(액면분할·병합) — "
+                        f"{label} 주당이익 {eps_v:,.0f} → {eps_v / c:,.0f}")
+                    return eps_v / c
+        return eps_v
+
+    fy_eps = _unsplit(fy_eps, sh_fy, "작년연간")
+    qp_eps = _unsplit(qp_eps, sh_py, "작년동기누적")
+
     eps_disc = (fy_eps - qp_eps + qc_eps) if None not in (fy_eps, qp_eps, qc_eps) else (fy_eps if not cur_qi else None)
 
     # 액면병합·감자를 한 회사에서는 위 뺄셈이 성립하지 않는다.
@@ -634,6 +671,26 @@ def collect_quant(dart, ticker, krx_row, stock):
         f" · 대안=순이익÷발행총수 "
         f"{int(ttm_np/total_sh) if (ttm_np and total_sh) else '없음'}"
         f" → 채택 {eps_ttm}")
+
+    # ── 자체 대조: 회사가 낸 두 값이 서로 크기를 확인해 주는가 ──────────────
+    # 외부 참조값은 분기를 늦게 반영해서 '크기' 를 재는 잣대로 못 쓴다. 대신
+    # 회사가 낸 두 값을 서로 맞춰 본다.
+    #
+    #   ① 공시 기본주당이익 롤포워드      ② 지배순이익 ÷ 발행주식총수
+    #
+    # 둘은 들어가는 값이 겹치지 않는다(①은 주당 공시, ②는 총액과 주식총수).
+    # 한쪽만 단위·자릿수를 잘못 집으면 반드시 어긋난다.
+    #
+    # 허용 폭은 3.3배로 넓게 둔다. 자기주식이 많은 회사에서는 ②의 분모가
+    # 실제 유통주식수보다 커서 값이 낮게 나온다 — SK 는 자기주식이 24%다.
+    # 여기서 잡으려는 건 그런 차이가 아니라 1,000배 오류다.
+    #
+    # 주의: eps_alt 는 가중평균주식수를 쓰는데, 그 주식수 자체가 공시 EPS 로
+    # 역산한 값이라 ①과 순환한다. 그래서 여기서는 발행총수로 나눈 값을 쓴다.
+    eps_indep = (ttm_np / total_sh) if (ttm_np and total_sh) else None
+    eps_self_ok = bool(
+        eps_disc and eps_indep and (eps_disc > 0) == (eps_indep > 0)
+        and (1 / 3.3) <= abs(eps_indep / eps_disc) <= 3.3)
 
     # ROE 신뢰성: 순이익 추출(ttm_np)이 공시 EPS와 30% 넘게 어긋나면(추출 오류) 공시 EPS로 ttm_np 보정.
     #   → EPS는 맞는데 ROE만 0%/이상치로 나오는 모순 제거(원익QnC 등).
@@ -711,6 +768,7 @@ def collect_quant(dart, ticker, krx_row, stock):
         "roe_ttm": roe_ttm,                      # 헤드라인 ROE(최근 4분기 ÷ 평균자본)
         "ttm_window": ttm_label if ttm_np else None,
         "ttm_np_owner": ttm_np,
+        "_eps_self": eps_self_ok,                # 검증용 임시 플래그 — cross_check 에서 떼어낸다
         "pbr_krx": None, "bps_krx": None,        # KRX 공식값(참고·대조용)
         "basis": "PER·EPS·PBR·BPS 모두 자체 산출(네이버·토스와 동일 방식) · 배당은 DART 공시 주당현금배당금(보완:KRX) ÷ 현재가",
     }
@@ -1011,6 +1069,7 @@ def cross_check(tk, name, valuation):
 
     ⚠️ 참조값(nv)은 검증 게이트 용도로만 메모리에서 사용하고, 저장/배포되는 valuation에는
     절대 기록하지 않는다(외부 데이터값이 사이트 코드로 노출되지 않도록)."""
+    eps_self_ok = valuation.pop("_eps_self", False)   # 저장 대상이 아니다 — 여기서 떼어낸다
     nv = naver_valuation(tk)
     if not nv:
         log(f"  ⚠️ {name}: 참조값 없음 — 자체 PER·EPS 미검증")
@@ -1051,8 +1110,23 @@ def cross_check(tk, name, valuation):
             return abs(abs(mine) - abs(ref)) / abs(ref) > limit
         return abs(mine - ref) / abs(ref) > limit
 
+    # ── 우리가 앞서가는 구간에서는 참조값으로 크기를 재지 않는다 ────────────
+    # 이익은 1년에 열 배씩도 움직인다 — SK하이닉스 2026Q2 지배순이익은 1년
+    # 전의 13배다. 그래서 '3배 넘게 다르면 오류' 라는 기준 자체가 성립하지
+    # 않는다. 실적이 뛴 회사가 줄줄이 걸려 EPS 가 지워졌다.
+    #
+    #   SK          146,041 ↔ 참조 35,981 (3.06배)
+    #   두산         20,560 ↔ 참조  4,286 (3.80배)
+    #   한국가스공사   6,438 ↔ 참조  1,441 (3.47배)
+    #
+    # 셋 다 회사가 낸 두 값(공시 주당이익 · 순이익÷발행총수)이 서로 맞는다.
+    # 그 대조는 시차를 타지 않으므로 참조값보다 믿을 만하다. 자체 대조가
+    # 통과했으면 참조값 대조는 건너뛴다. 자체 대조가 없을 때만(공시 주당이익이
+    # 없어 한 갈래로만 계산했을 때) 참조값을 마지막 그물로 쓴다.
+    skip_eps_ref = stale_ref and eps_self_ok
+
     issues = []
-    if gross_error(valuation.get("eps"), nv.get("eps")):
+    if not skip_eps_ref and gross_error(valuation.get("eps"), nv.get("eps")):
         issues.append(f"EPS {valuation.get('eps')}↔ref {nv.get('eps')}")
         valuation["eps"] = valuation["per"] = None
     # BPS 는 참조값이 가장 늦게 따라오는 지표다. 대신 collect_quant 에서
@@ -1071,7 +1145,8 @@ def cross_check(tk, name, valuation):
         log(f"  ❌ {name} 중대오류 차단 → 해당 지표 숨김: {' / '.join(issues)}")
     else:
         log(f"  ✅ {name} 검증 통과 PER {valuation.get('per')} PBR {valuation.get('pbr')} "
-            f"EPS {valuation.get('eps')} BPS {valuation.get('bps')}")
+            f"EPS {valuation.get('eps')} BPS {valuation.get('bps')}"
+            f"{' (EPS 는 자체 대조로 확인 — 참조값 시차)' if skip_eps_ref else ''}")
 
 
 def collect_all_quant(targets, data):
