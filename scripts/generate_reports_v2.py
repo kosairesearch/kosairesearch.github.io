@@ -1032,8 +1032,23 @@ def cross_check(tk, name, valuation):
     def gross_error(mine, ref):
         if mine is None or ref in (None, 0):
             return False
-        if (mine > 0) != (ref > 0):           # 부호 반대 = 중대 오류
-            return True
+        if (mine > 0) != (ref > 0):
+            # 부호 반대. 참조값이 우리와 같은 시점이면 중대 오류가 맞다.
+            #
+            # 그런데 우리가 앞서가는 구간에서는 부호가 갈리는 것이 정상이다.
+            # 적자였던 회사가 이번 분기에 흑자로 돌아서면, 새 분기를 넣은
+            # 우리는 흑자이고 아직 못 넣은 참조값은 적자다. 흑자 전환한
+            # 회사가 전부 여기 걸려 EPS 가 통째로 사라졌다.
+            #
+            #   SK       2025Q4 -22,500억 → 2026Q2 +59,643억
+            #   삼성SDI   2025Q4  -3,243억 → 2026Q2  +3,422억
+            #
+            # 추출 오류는 참조값 없이도 잡는다 — 회사가 낸 두 공시(주당이익과
+            # 순이익)를 서로 맞춰 보는 검사가 collect_quant 에 있다. 시차를
+            # 타지 않으므로 이쪽이 더 믿을 만하다. 여기서는 크기만 본다.
+            if not stale_ref:
+                return True
+            return abs(abs(mine) - abs(ref)) / abs(ref) > limit
         return abs(mine - ref) / abs(ref) > limit
 
     issues = []
