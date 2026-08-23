@@ -48,6 +48,27 @@ const RESEND_API_KEY = defineSecret("RESEND_API_KEY"); // 이메일 발송(Resen
 const PAYMENTS_LIVE = process.env.KOSAI_PAYMENTS === "on";
 const TOSS_SECRET_KEY = PAYMENTS_LIVE ? defineSecret("TOSS_SECRET_KEY") : null;
 
+/* ── 되돌아올 주소는 서버가 검사한다 ──────────────────────────────
+   전에는 클라이언트가 보낸 redirectUri 를 그대로 카카오·네이버 토큰 교환에
+   넘겼다. 두 곳 모두 콘솔에 등록된 주소만 받아 주므로 당장 뚫리지는
+   않았지만, 서버가 클라이언트 말을 검사 없이 믿는 자리는 남겨 둘 이유가
+   없다. 우리 도메인이 아니면 여기서 끊는다. */
+const ALLOWED_REDIRECT_HOSTS = [
+  "kosai.kr", "www.kosai.kr", "kosairesearch.github.io", "localhost", "127.0.0.1"
+];
+
+function checkRedirectUri(uri){
+  let u;
+  try{ u = new URL(String(uri)); }
+  catch(_){ throw new HttpsError("invalid-argument", "redirect_uri_invalid"); }
+  const local = u.hostname === "localhost" || u.hostname === "127.0.0.1";
+  if(u.protocol !== "https:" && !local)
+    throw new HttpsError("invalid-argument", "redirect_uri_not_https");
+  if(!ALLOWED_REDIRECT_HOSTS.includes(u.hostname))
+    throw new HttpsError("invalid-argument", "redirect_uri_host_not_allowed");
+  return u.origin + u.pathname;   // 쿼리·해시는 떼고 쓴다
+}
+
 async function asJson(res, label){
   const text = await res.text();
   let json;
@@ -128,9 +149,11 @@ exports.socialLogin = onCall(
       throw new HttpsError("invalid-argument", "provider, code, redirectUri 가 필요합니다.");
     }
 
+    const safeRedirect = checkRedirectUri(redirectUri);
+
     let p;
-    if(provider === "kakao") p = await kakaoProfile(code, redirectUri);
-    else if(provider === "naver") p = await naverProfile(code, redirectUri, state);
+    if(provider === "kakao") p = await kakaoProfile(code, safeRedirect);
+    else if(provider === "naver") p = await naverProfile(code, safeRedirect, state);
     else throw new HttpsError("invalid-argument", "알 수 없는 provider 입니다.");
 
     if(!p.id) throw new HttpsError("internal", "프로필 ID를 가져오지 못했습니다.");
@@ -533,6 +556,72 @@ exports.getReport = onCall(
    무관한 함수까지 전부 배포가 멈췄다.
    구독이 하나도 없으니 아래 환불 분기는 실행되지 않는다. 결제를 켜는 날
    firebase functions:secrets:set TOSS_SECRET_KEY 를 먼저 하고 이 줄을 되살린다. */
+/* ── 가입 동의 기록 ──────────────────────────────────────────────
+   동의는 나중에 "언제 무엇에 동의했는가" 를 답해야 하는 기록이다. 그런데
+   지금까지는 클라이언트가 users/{uid} 에 직접 썼다. 브라우저 콘솔을 열 수
+   있는 사람은 누구나 age14 나 agreedAt 을 고칠 수 있었다는 뜻이다. 본인이
+   고칠 수 있는 기록은 증거가 아니다.
+
+   그래서 값을 서버가 정한다. 클라이언트가 보내는 것은 선택 항목인 마케팅
+   수신 여부 하나뿐이고, 판 번호·필수 항목·시각은 여기서 박는다. 필수
+   항목은 거부하면 가입 자체가 성립하지 않으므로 언제나 true 다.
+
+   이미 동의 기록이 있으면 건드리지 않는다. 로그인할 때마다 덮어쓰면 처음
+   동의한 시각이 사라진다 — 그 시각이 이 기록의 핵심이다. */
+const SIGNUP_METHODS = ["email", "google", "kakao", "naver"];
+
+exports.recordSignupConsent = onCall({ region: REGION, cors: true }, async (req) => {
+  const uid = req.auth && req.auth.uid;
+  if (!uid) throw new HttpsError("unauthenticated", "로그인이 필요합니다.");
+  const d = req.data || {};
+  const method = d.method === "checkbox" ? "checkbox" : "signup-notice";
+  const marketing = d.marketing === true;
+  const provider = SIGNUP_METHODS.includes(d.provider) ? d.provider : "unknown";
+  const email = typeof d.email === "string" ? d.email.trim().slice(0, 320) : "";
+
+  const db = admin.firestore();
+  const ref = db.collection("users").doc(uid);
+  const now = admin.firestore.FieldValue.serverTimestamp();
+  const snap = await ref.get();
+  const already = snap.exists && !!((snap.data().consents || {}).agreedAt);
+
+  const patch = { updatedAt: now };
+  if (email) patch.email = email;
+  if (!already) {
+    patch.consents = {
+      version: CONSENT_VERSION,
+      method,
+      age14: true, terms: true, privacy: true,
+      marketing,
+      agreedAt: now
+    };
+    patch.marketingAt = marketing ? now : null;
+    patch.signupMethod = provider;
+    patch.createdAt = now;
+  }
+  await ref.set(patch, { merge: true });
+  return { ok: true, first: !already };
+});
+
+/* 마케팅 수신 동의 켜고 끄기 — 설정 페이지가 부른다.
+   동의 기록과 같은 문서에 들어가므로 여기도 서버가 쓴다. 켠 시각과 끈
+   시각을 따로 남긴다. 한 칸을 켰다 껐다 하면 "언제 동의했고 언제
+   철회했나" 를 답할 수 없다. */
+exports.setMarketingConsent = onCall({ region: REGION, cors: true }, async (req) => {
+  const uid = req.auth && req.auth.uid;
+  if (!uid) throw new HttpsError("unauthenticated", "로그인이 필요합니다.");
+  const on = (req.data || {}).on === true;
+  const db = admin.firestore();
+  const now = admin.firestore.FieldValue.serverTimestamp();
+  await db.collection("users").doc(uid).set({
+    consents: { marketing: on },
+    marketingAt: on ? now : null,
+    marketingOffAt: on ? null : now,
+    updatedAt: now
+  }, { merge: true });
+  return { ok: true, marketing: on };
+});
+
 exports.deleteAccount = onCall(
   { region: REGION, cors: true },
   async (req) => {
