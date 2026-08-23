@@ -83,19 +83,27 @@ def r_ttm_vs_quarters(v, q, g):
 
 
 def r_eps_denom(v, q, g):
-    """EPS × (가중평균 또는 발행총수) 가 TTM 순이익과 맞아야 한다.
-    둘 중 어느 쪽으로도 안 맞으면 분자·분모가 서로 다른 데서 온 것이다."""
+    """EPS × 주식수 가 TTM 순이익과 맞는가. 잣대는 EPS 가 어디서 왔느냐에 따라 다르다.
+
+    · 순이익÷주식수로 만든 EPS 는 되돌리면 정확히 맞아야 한다(항등식) → 10%
+    · 회사 공시 주당이익을 이어붙인 EPS 는 각 기간이 그때의 가중평균주식수로
+      나뉜 값이라, 지금 주식수를 곱하면 원래 안 맞는다. 유상증자·자기주식이
+      있으면 20~30% 는 예사다(가온전선 1.27배 · 한화 0.77배). 여기서 잡을 것은
+      방법론 차이가 아니라 자릿수·단위 오류다 → 3배
+    """
     eps, ttm = v.get("eps"), v.get("ttm_np_owner")
     if not eps or not ttm:
         return None
     cands = [d for d in (v.get("wavg_shares"), v.get("total_shares"), v.get("shares")) if d]
     if not cands:
         return None
-    if any(near(eps * d, ttm, 0.10) for d in cands):
+    tol = 0.10 if v.get("eps_src") == "순이익÷주식수" else 2.0
+    if any(near(eps * d, ttm, tol) for d in cands):
         return None
     best = min(cands, key=lambda d: abs(eps * d / ttm - 1))
     return (f"EPS {eps:,} × 주식수 {best:,} = {eps * best / 1e8:,.0f}억 인데 "
-            f"TTM 순이익은 {ttm / 1e8:,.0f}억 (어느 주식수로도 안 맞음)")
+            f"TTM 순이익은 {ttm / 1e8:,.0f}억 "
+            f"(EPS 출처 {v.get('eps_src') or '기록 없음'} · 허용 {tol:.0%})")
 
 
 def r_roe_sign(v, q, g):
@@ -189,15 +197,36 @@ def r_equity_identity(v, q, g):
         return None
     # 지배지분 + 비지배지분 = 자본총계. 비지배지분을 읽었으면 이 식으로 본다
     # (지배지분이 자본총계보다 큰 것 자체는 비지배지분이 음수면 정상이다).
-    if nci is not None:
+    # 비지배지분이 실제로 읽혔을 때만 항등식으로 판정할 수 있다.
+    # 값이 0 근처면 '비지배지분이 없다' 인지 '못 읽었다' 인지 구분되지 않는다.
+    if nci and abs(nci) > abs(et) * 0.01:
         if abs((eo + nci) - et) > abs(et) * 0.01:
             return (f"{a0.get('year')} 지배 {eo / 1e8:,.0f}억 + 비지배 {nci / 1e8:,.0f}억 "
                     f"≠ 자본총계 {et / 1e8:,.0f}억")
         return None
-    # 비지배지분을 못 읽었으면 확인할 길이 없다 — 자릿수가 틀린 수준만 막는다.
+    # 못 읽었으면 확인할 길이 없다 — 자릿수가 틀린 수준만 막는다.
     if eo > et * 1.5:
         return (f"{a0.get('year')} 지배지분 {eo / 1e8:,.0f}억 > 자본총계 {et / 1e8:,.0f}억 "
                 f"(1.5배 초과 · 비지배지분을 못 읽어 확인 불가)")
+
+
+def r_equity_gap(v, q, g):
+    """비지배지분을 못 읽었는데 지배지분과 자본총계가 다르다.
+
+    셋 중 하나는 틀렸는데 어느 것인지 가릴 재료가 없다. 값이 틀렸다고 단정할 수
+    없으므로 막지는 않고 눈으로 볼 목록에만 올린다."""
+    ann = q.get("annual") or []
+    if not ann:
+        return None
+    a0 = ann[0]
+    eo, et, nci = a0.get("equity_owner"), a0.get("equity"), a0.get("equity_nci")
+    if not (eo and et and et > 0):
+        return None
+    if nci and abs(nci) > abs(et) * 0.01:
+        return None                      # 위 항등식 규칙이 판정한다
+    if abs(eo - et) > abs(et) * 0.01:
+        return (f"{a0.get('year')} 지배지분 {eo / 1e8:,.0f}억 ≠ 자본총계 {et / 1e8:,.0f}억 "
+                f"인데 비지배지분을 못 읽어 어느 쪽이 맞는지 알 수 없다")
 
 
 def r_sanity(v, q, g):
@@ -296,6 +325,7 @@ def main():
     files = sorted(REPORTS.glob("*.json"))
     hits = {code: [] for code, _, _ in RULES}
     blank = []
+    cover = Counter()
     n = 0
     for f in files:
         try:
@@ -309,6 +339,16 @@ def main():
         tk = r.get("ticker") or f.stem
         name = r.get("name") or tk
         n += 1
+        _a0 = (q.get("annual") or [{}])[0]
+        _eo, _et, _nci = _a0.get("equity_owner"), _a0.get("equity"), _a0.get("equity_nci")
+        if _eo and _et and _et > 0:
+            cover["대상"] += 1
+            if _nci and abs(_nci) > abs(_et) * 0.01:
+                cover["비지배지분 읽음"] += 1
+            elif abs(_eo - _et) <= abs(_et) * 0.01:
+                cover["비지배지분 없음(지배=총계)"] += 1
+            else:
+                cover["못 읽음 — 확인 불가"] += 1
         if v.get("eps") is None and v.get("bps") is None:
             blank.append(f"{name}({tk})")
         for code, _, fn in RULES:
@@ -336,6 +376,11 @@ def main():
                 lines.append(f"      {s}")
             if len(v) > 25:
                 lines.append(f"      … 외 {len(v) - 25}건")
+    if cover:
+        lines += ["", "── 자본 구성 확인 범위 (오류 아님 · 재료가 있는지의 문제) ──"]
+        for k in ("비지배지분 읽음", "비지배지분 없음(지배=총계)", "못 읽음 — 확인 불가"):
+            if cover.get(k):
+                lines.append(f"   {cover[k]:5}  {k}")
     if blank:
         lines += ["", f"· EPS·BPS 둘 다 빈칸 {len(blank)}종목: " + ", ".join(blank[:40])
                   + (f" … 외 {len(blank) - 40}" if len(blank) > 40 else "")]

@@ -354,6 +354,13 @@ def collect_quant(dart, ticker, krx_row, stock):
         rev, op = _cum(d, "rev"), _cum(d, "op")
         np_, npo = _cum(d, "np"), _cum(d, "np_owner")
         eq, eqo, li = _bs(d, "equity"), _bs(d, "equity_owner"), _bs(d, "liab")
+        _nci = _bs(d, "equity_nci")
+        # 지배지분 태그를 못 읽었는데 비지배지분은 읽었으면 항등식으로 되찾는다.
+        #   지배지분 = 자본총계 − 비지배지분
+        # 예전에는 그냥 자본총계로 대신했다. 유한양행은 그 바람에 지배지분이
+        # 23,623억(= 자본총계)으로 실렸는데, 비지배지분 554억을 빼면 23,069억이다.
+        if eqo is None and eq is not None and _nci not in (None, 0):
+            eqo = eq - _nci
         row = {
             "year": yr, "rev": rev, "op": op, "np": np_,
             "np_owner": npo if npo is not None else np_,
@@ -361,7 +368,7 @@ def collect_quant(dart, ticker, krx_row, stock):
             # 비지배지분은 화면에 안 쓴다. 나중에 '지배 + 비지배 = 총계' 를
             # 검산하려면 이 값이 있어야 하는데, 없어서 '지배지분 > 자본총계'
             # 인 회사가 오류인지 정상(비지배지분이 음수)인지 가릴 수 없었다.
-            "equity_nci": _bs(d, "equity_nci"),
+            "equity_nci": _nci,
             "liab": li, "cfo": _cum(d, "cfo"),
             "eps_basic": _cum_eps(d),
         }
@@ -508,8 +515,17 @@ def collect_quant(dart, ticker, krx_row, stock):
         if not any(v is not None and v < 0 for v in cand.values()):
             rev_q = cand
 
+    # 분기 '지배주주 순이익' 칸이 비면 전체 순이익으로 대신 채우고 있었다.
+    # 자회사가 없는 회사(전체 = 지배)에서는 맞는 대체지만, 비지배지분이 있는
+    # 회사에서는 표의 머리말과 다른 값을 넣는 셈이다. 그러면 그 분기만 크기가
+    # 달라져 TTM 과도 어긋난다(한화손해보험 TTM 2,292억 vs 분기합 3,125억).
+    # 연간에서 전체와 지배가 갈리는 회사면 대체하지 않는다 — 빈칸이 낫다.
+    _has_nci = any(r.get("np") is not None and r.get("np_owner") is not None
+                   and abs(r["np"] - r["np_owner"]) > abs(r["np"]) * 0.01
+                   for r in annual)
     quarterly = [{"q": l, "rev": rev_q.get(l), "op": op_q.get(l),
-                  "np_owner": npo_q.get(l) if npo_q.get(l) is not None else np_q.get(l)}
+                  "np_owner": (npo_q.get(l) if (npo_q.get(l) is not None or _has_nci)
+                               else np_q.get(l))}
                  for l in win]
 
     # 마지막 방어 — 매출에는 있을 수 없는 값이 있다. 나오면 싣지 않는다.
@@ -531,16 +547,31 @@ def collect_quant(dart, ticker, krx_row, stock):
         v = _cum(d, "np_owner")
         return v if v is not None else _cum(d, "np")
 
+    # 화면에 실리는 분기 4개 합을 그대로 TTM 으로 쓴다.
+    #
+    # 롤포워드(작년연간 − 작년동기누적 + 올해동기누적)와 분기 4개 합은 대수적으로
+    # 같은 값이다. 그런데 중간에 한쪽만 대체값을 쓰면(연결/별도 기준이 갈려 차감을
+    # 못 하거나, 지배순이익 칸이 비어 전체 순이익으로 메워지거나) 두 값이 갈린다.
+    # 그러면 화면 위의 TTM 과 바로 아래 분기표가 어긋난다 — 82종목이 그랬다.
+    #
+    # 사용자가 보는 것은 분기표다. 헤드라인을 표에 맞춘다. 분기 4개가 다 있을
+    # 때만 쓰고, 하나라도 비면 아래 롤포워드로 내려간다(중간이 빈 경우엔 롤포워드가
+    # 더 튼튼하다).
     ttm_np = None
     ttm_label = None
+    _last4 = [x.get("np_owner") for x in quarterly[-4:]]
+    if len(_last4) == 4 and all(v is not None for v in _last4):
+        ttm_np = sum(_last4)
+        ttm_label = f"{quarterly[-4]['q']}~{quarterly[-1]['q']}"
+
     fy_np = fy_row["np_owner"] if fy_row else None
-    if fy_np is not None:
+    if ttm_np is None and fy_np is not None:
         if cur_qi:
             pv, cv = _npo(d_py_same), _npo(d_cur)
             if None not in (pv, cv):
                 ttm_np = fy_np - pv + cv
                 ttm_label = f"{py}Q{cur_qi + 1}~{cur}Q{cur_qi}"
-        if ttm_np is None:
+        if ttm_np is None:   # 롤포워드도 안 되면 작년 연간 그대로
             # 작년 같은 기간이 없으면(상장 1년 미만 등) 뺄셈이 성립하지 않는다.
             # 그렇다고 비워 두면 EPS·PER·ROE 가 통째로 사라진다 — 31종목이
             # 그랬다. 작년 연간을 그대로 TTM 으로 쓴다(네이버도 그렇게 한다).
@@ -729,12 +760,14 @@ def collect_quant(dart, ticker, krx_row, stock):
     eps_alt = (ttm_np / (wavg or total_sh)) if (ttm_np and (wavg or total_sh)) else None
     eps_hidden = False
     eps_pick = eps_disc
+    eps_src = "공시"     # 공시 주당이익 롤포워드 | 순이익÷주식수
     if eps_disc and eps_alt and abs(eps_disc - eps_alt) > 0.30 * max(abs(eps_disc), abs(eps_alt)):
         r = abs(eps_alt / eps_disc)
         if any(abs(r / c - 1) < 0.05 for n in range(2, 41) for c in (float(n), 1.0 / n)):
             log(f"  ⚠️ 주당이익 기준이 섞였다(공시 {eps_disc:,.0f} vs 순이익÷주식수 "
                 f"{eps_alt:,.0f}, {r:.1f}배) — 액면병합·감자로 본다. 순이익 쪽을 쓴다.")
             eps_pick = eps_alt
+            eps_src = "순이익÷주식수"
         elif ttm_verified:
             # 배수로는 안 떨어지지만, 순이익 쪽은 바로 아래 분기표 4개 합과
             # 맞는다 — 페이지 안에서 확인된 값이다. 공시 주당이익은 확인할
@@ -747,6 +780,7 @@ def collect_quant(dart, ticker, krx_row, stock):
             log(f"  · 두 공시가 어긋난다(공시 {eps_disc:,.0f} vs 순이익÷주식수 "
                 f"{eps_alt:,.0f}, {r:.2f}배) — 분기표와 맞는 순이익 쪽을 쓴다")
             eps_pick = eps_alt
+            eps_src = "순이익÷주식수"
         else:
             # 순이익 쪽도 확인이 안 된다. 어느 쪽이 맞는지 알 길이 없다.
             # 모르면 안 보여준다 — 틀린 숫자보다 빈칸이 낫다.
@@ -755,6 +789,8 @@ def collect_quant(dart, ticker, krx_row, stock):
             eps_pick = None
             eps_disc = None
             eps_hidden = True
+    if eps_pick is None:
+        eps_src = "순이익÷주식수"
     eps_ttm = eps_pick if eps_pick is not None else (
         None if eps_hidden else (int(ttm_np / total_sh) if (ttm_np and total_sh) else None))
     eps_ttm = int(eps_ttm) if eps_ttm is not None else None
@@ -960,6 +996,7 @@ def collect_quant(dart, ticker, krx_row, stock):
         "_eps_self": eps_self_ok,                # 검증용 임시 플래그 — cross_check 에서 떼어낸다
         "_bps_self": bps_self_ok,                # 〃 (KRX 공식 BPS 와 맞는가)
         "bps_src": bps_src,                      # 자체 산출인지 KRX 공식값인지
+        "eps_src": eps_src if eps_ttm is not None else None,   # 공시 롤포워드인지 순이익÷주식수인지
         "pbr_krx": None, "bps_krx": None,        # KRX 공식값(참고·대조용)
         "basis": "PER·EPS·PBR·BPS 모두 자체 산출(네이버·토스와 동일 방식) · 배당은 DART 공시 주당현금배당금(보완:KRX) ÷ 현재가",
     }
