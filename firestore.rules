@@ -7,17 +7,29 @@ service cloud.firestore {
       allow read, write: if request.auth != null && request.auth.uid == uid;
     }
 
-    // 회원 문서 — 가입 동의 기록이 들어간다(consent.js).
+    // 회원 문서 — 가입 동의 기록이 들어간다.
     //
-    // 본인만 읽고 쓴다. 남의 동의 기록을 볼 수 있으면 안 되고, 마케팅
-    // 동의 여부는 그 자체가 개인정보다.
+    // 읽기는 본인에게만 연다. 남의 동의 기록을 볼 수 있으면 안 되고,
+    // 마케팅 수신 여부는 그 자체가 개인정보다.
     //
-    // 삭제도 본인에게 열어 둔다. 우리가 동의 화면에서 "보유 기간: 회원
-    // 탈퇴 시까지" 라고 알리고 받았으므로, 탈퇴하면 이 문서도 함께 지워야
-    // 그 약속을 지키는 것이다(auth-state.js 의 탈퇴 처리가 지운다).
+    // 쓰기는 아무에게도 열지 않는다. 전부 Cloud Functions 를 거친다
+    // (recordSignupConsent · setMarketingConsent · deleteAccount).
+    // Admin SDK 는 이 규칙을 지나가므로 서버는 그대로 쓴다.
+    //
+    // 왜 닫았나. 동의 기록은 나중에 "이 사람이 언제 무엇에 동의했는가" 를
+    // 답해야 하는 자료다. 그런데 본인 쓰기를 열어 두면 브라우저 콘솔을 열
+    // 수 있는 사람은 누구나 age14 나 agreedAt 이나 marketing 을 고칠 수
+    // 있다. 당사자가 고칠 수 있는 기록은 아무것도 증명하지 못한다.
+    //
+    // 값도 서버가 정한다. 클라이언트가 함수에 보내는 것은 선택 항목인
+    // 마케팅 수신 여부 하나뿐이고, 판 번호·필수 항목·시각은 서버가 박는다.
+    //
+    // 탈퇴하면 이 문서도 지운다 — 동의 화면에서 "보유 기간: 회원 탈퇴
+    // 시까지" 라고 알리고 받았으므로, 남겨 두면 그 약속을 어기는 것이다.
+    // deleteAccount 가 지운다.
     match /users/{uid} {
-      allow read, create, update, delete:
-        if request.auth != null && request.auth.uid == uid;
+      allow read: if request.auth != null && request.auth.uid == uid;
+      allow write: if false;
     }
 
   }
