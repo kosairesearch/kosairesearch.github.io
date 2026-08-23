@@ -547,12 +547,17 @@ def collect_quant(dart, ticker, krx_row, stock):
     # GRT BPS 68원(PBR 50.6). 주가는 원인데 자본은 달러·위안이었다.
     _d_ccy = d_cur if d_cur is not None else fin(py, "11011")
     ccy = str((_d_ccy or {}).get("_ccy") or "KRW").upper()
+    # 아는 통화 코드일 때만 외화로 본다. DART 가 'KRW' 대신 다른 표기를 보내면
+    # 전 종목이 외화로 잡혀 지표가 통째로 사라진다 — 그 사고를 막는 빗장이다.
     fx = 1.0
-    if ccy not in ("KRW", ""):
+    if ccy in _FX_BAND:
         fx = fx_to_krw(ccy) or 0
         log(f"  💱 {ticker} 공시 통화 {ccy}"
             + (f" — 원화 환산 ×{fx:,.2f}" if fx else " — 환율을 구하지 못해 주당지표를 숨긴다"))
-    ccy_unknown = bool(ccy not in ("KRW", "") and not fx)
+    elif ccy not in ("KRW", ""):
+        log(f"  ⚠️ {ticker} 공시 통화 표기 '{ccy}' 를 모른다 — 원화로 본다")
+        ccy = "KRW"
+    ccy_unknown = bool(ccy in _FX_BAND and not fx)
     unit = fx or 1.0
     if mcap_won and ref_eq and ref_eq > 0:
         ratio = mcap_won / (ref_eq * unit)    # ≈ PBR. 정상 0.05~300, 그 이상이면 단위 축소 의심
