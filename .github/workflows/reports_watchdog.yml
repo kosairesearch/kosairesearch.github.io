@@ -79,6 +79,14 @@ jobs:
             echo "⏸️ 리포트 자동 생성 정지 중 — data/reports_paused 를 지우면 재개" >> $GITHUB_STEP_SUMMARY
             exit 0
           fi
+          # 숫자가 깨져 있으면 재가동하지 않는다. generate_reports_v2.py 안에도
+          # 같은 검사가 있어 실제 과금은 어차피 막히지만, 여기서 걸러야
+          # 30분마다 시작하자마자 죽는 run 이 무더기로 뜨지 않는다.
+          if ! python scripts/check_valuation.py --strict > /dev/null 2>&1; then
+            echo "⛔ 자체 검산에서 항등식 위반 — 백필을 재가동하지 않는다."
+            echo "⛔ 밸류에이션 항등식 위반 — data/valuation_check.txt 확인" >> $GITHUB_STEP_SUMMARY
+            exit 0
+          fi
           echo "→ 진행 $running < $SHARDS + 남은 $remaining개 → 샤드 ${SHARDS}개 병렬 백필 재가동"
           i=0
           while [ "$i" -lt "$SHARDS" ]; do
