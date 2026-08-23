@@ -144,6 +144,7 @@ ACC_IDS = {
     "equity":       ("ifrs-full_Equity", "ifrs_Equity"),
     "equity_owner": ("ifrs-full_EquityAttributableToOwnersOfParent",
                      "ifrs_EquityAttributableToOwnersOfParent"),
+    "equity_nci":   ("ifrs-full_NoncontrollingInterests", "ifrs_NoncontrollingInterests"),
     "cfo":          ("ifrs-full_CashFlowsFromUsedInOperatingActivities",
                      "ifrs_CashFlowsFromUsedInOperatingActivities"),
 }
@@ -160,6 +161,7 @@ ACC_NAMES = {
     "liab":         ("부채총계",),
     "equity":       ("자본총계",),
     "equity_owner": ("지배기업소유주지분", "지배기업의소유주에게귀속되는자본"),
+    "equity_nci":   ("비지배지분", "비지배주주지분"),
     "cfo":          ("영업활동현금흐름", "영업활동으로인한현금흐름"),
 }
 
@@ -192,7 +194,7 @@ def _fin_all(dart, ticker, year, reprt):
     def sj_ok(key, sj):
         if key in ("rev", "rev_ins", "op", "np", "np_owner", "np_nci", "eps_basic"):
             return sj in ("IS", "CIS")
-        if key in ("assets", "liab", "equity", "equity_owner"):
+        if key in ("assets", "liab", "equity", "equity_owner", "equity_nci"):
             return sj == "BS"
         return sj == "CF"
 
@@ -784,10 +786,34 @@ def collect_quant(dart, ticker, krx_row, stock):
     # IFRS17 할인율 변동으로 기타포괄손익이 순이익의 수십 배로 움직여서
     # 이익으로 자본을 설명하려는 전제 자체가 성립하지 않는다. 맞는 값을
     # 지우는 검증은 없는 것만 못하다.
-    if bps_q and eqo_owner and eqo_total and eqo_owner > eqo_total * 1.01:
-        log(f"  ❌ 자본 정합성 실패 → BPS·PBR 숨김: 지배지분 "
-            f"{eqo_owner * unit/1e12:,.1f}조 > 자본총계 {eqo_total * unit/1e12:,.1f}조")
-        bps_q = pbr_q = None
+    # 앞서 순이익에서 저지른 것과 똑같은 실수가 여기에도 있었다.
+    #
+    #     |지배지분| ≤ |자본총계| × 1.01   ← 틀린 전제
+    #
+    # 지배지분 = 자본총계 − 비지배지분이다. 자회사가 결손이 쌓여 비지배지분이
+    # 음수가 되면 지배지분이 자본총계보다 커진다 — 정상이다. 이 검사에
+    # 걸려 272종목의 BPS·PBR 이 통째로 사라지고 있었다(동부건설·EG·
+    # 티움바이오·그린플러스 등).
+    #
+    # 옳은 검사는 크기 비교가 아니라 항등식이다.
+    #
+    #     지배지분 + 비지배지분 = 자본총계
+    #
+    # 비지배지분을 못 읽는 회사는 확인할 길이 없으므로, 자릿수가 틀린
+    # 수준(1.5배 초과)일 때만 막는다.
+    eq_nci = _bs(d_cur, "equity_nci")
+    if bps_q and eqo_owner and eqo_total:
+        if eq_nci is not None:
+            gap = abs((eqo_owner + eq_nci) - eqo_total)
+            broken = gap > abs(eqo_total) * 0.01
+        else:
+            broken = eqo_owner > eqo_total * 1.5
+        if broken:
+            log(f"  ❌ 자본 정합성 실패 → BPS·PBR 숨김: 지배지분 "
+                f"{eqo_owner * unit/1e12:,.2f}조 + 비지배지분 "
+                f"{(eq_nci or 0) * unit/1e12:,.2f}조 ≠ 자본총계 "
+                f"{eqo_total * unit/1e12:,.2f}조")
+            bps_q = pbr_q = None
 
     # 이익으로 설명되지 않는 자본 변동은 막지 않되 로그로는 남긴다. 대개
     # 기타포괄손익·유상증자지만, 추출 오류를 뒤늦게 되짚을 때 실마리가 된다.
