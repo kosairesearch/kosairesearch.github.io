@@ -358,6 +358,10 @@ def collect_quant(dart, ticker, krx_row, stock):
             "year": yr, "rev": rev, "op": op, "np": np_,
             "np_owner": npo if npo is not None else np_,
             "equity": eq, "equity_owner": (eqo if eqo is not None else eq),
+            # 비지배지분은 화면에 안 쓴다. 나중에 '지배 + 비지배 = 총계' 를
+            # 검산하려면 이 값이 있어야 하는데, 없어서 '지배지분 > 자본총계'
+            # 인 회사가 오류인지 정상(비지배지분이 음수)인지 가릴 수 없었다.
+            "equity_nci": _bs(d, "equity_nci"),
             "liab": li, "cfo": _cum(d, "cfo"),
             "eps_basic": _cum_eps(d),
         }
@@ -528,15 +532,20 @@ def collect_quant(dart, ticker, krx_row, stock):
         return v if v is not None else _cum(d, "np")
 
     ttm_np = None
+    ttm_label = None
     fy_np = fy_row["np_owner"] if fy_row else None
     if fy_np is not None:
         if cur_qi:
             pv, cv = _npo(d_py_same), _npo(d_cur)
             if None not in (pv, cv):
                 ttm_np = fy_np - pv + cv
-        else:
+                ttm_label = f"{py}Q{cur_qi + 1}~{cur}Q{cur_qi}"
+        if ttm_np is None:
+            # 작년 같은 기간이 없으면(상장 1년 미만 등) 뺄셈이 성립하지 않는다.
+            # 그렇다고 비워 두면 EPS·PER·ROE 가 통째로 사라진다 — 31종목이
+            # 그랬다. 작년 연간을 그대로 TTM 으로 쓴다(네이버도 그렇게 한다).
             ttm_np = fy_np
-    ttm_label = f"{py}Q{cur_qi + 1}~{cur}Q{cur_qi}" if cur_qi else f"{py}Q1~{py}Q4"
+            ttm_label = f"{py}Q1~{py}Q4"
 
     # ── 단위 자동 보정 ──
     # 일부 기업은 재무제표를 천원·백만원 단위로 공시 → 우리는 원으로 읽어 값이 1,000/1,000,000배 작게 나온다.
@@ -582,6 +591,42 @@ def collect_quant(dart, ticker, krx_row, stock):
                     row[k] = row[k] * unit
         if ttm_np is not None:
             ttm_np *= unit
+
+    # ── 규모 방어: 한 분기에 여러 기간이 뭉쳐 들어온 것을 잡는다 ────────
+    # 앞의 방어는 '그 해 연간 매출' 과 견주는데, 올해는 연간이 아직 없어서
+    # 그냥 통과한다. 진코스텍 2026Q2 매출이 30.9조로 실려 있었다 — 시가총액이
+    # 719억인 회사다. 직전 연간의 3배를 넘고 동시에 시가총액의 5배도 넘으면
+    # 매출로 성립할 수 없는 크기다. 두 조건을 모두 걸어야 매출이 0 에서
+    # 뛰는 신약개발사(큐라클·바이젠셀)를 잘못 지우지 않는다.
+    _ann_by_year = {r["year"]: r for r in annual}
+    for x in quarterly:
+        rev = x.get("rev")
+        if rev is None or rev <= 0 or not mcap_won:
+            continue
+        _y = int(x["q"][:4])
+        base = ((_ann_by_year.get(_y) or {}).get("rev")
+                or (_ann_by_year.get(_y - 1) or {}).get("rev"))
+        if base and base > 0 and rev > base * 3 and rev > mcap_won * 5:
+            log(f"  ❌ {x['q']} 매출 {rev/1e8:,.0f}억 — 직전 연간 {base/1e8:,.0f}억 의 "
+                f"{rev/base:.0f}배 · 시가총액 {mcap_won/1e8:,.0f}억 의 {rev/mcap_won:.0f}배 → 숨김")
+            x["rev"] = x["op"] = None
+
+    # ── 페이지 스스로의 증인 ─────────────────────────────────────────
+    # TTM 순이익이 바로 아래 분기표 4개 합과 맞으면, 그 숫자는 외부 참조값
+    # 없이도 확인된 것이다. 아래에서 '숨길까 말까' 를 정할 때 이 값을 쓴다.
+    # 지금까지는 이런 증인이 없어서, 회사가 낸 두 값이 어긋나기만 하면
+    # EPS 를 숨겼고 BPS 까지 딸려 숨겨졌다(EPS 108 · BPS 113종목).
+    _q4 = [x.get("np_owner") for x in quarterly[-4:]]
+    q4_sum = sum(_q4) if (len(_q4) == 4 and all(v is not None for v in _q4)) else None
+    ttm_verified = bool(ttm_np and q4_sum and abs(ttm_np / q4_sum - 1) <= 0.10)
+
+    # KRX 가 매일 내는 공식 BPS. 네이버와 달리 분기 반영이 늦지 않아
+    # BPS 를 검증할 독립 잣대가 된다.
+    try:
+        bps_krx_ref = float((krx_row or {}).get("BPS"))
+        bps_krx_ref = bps_krx_ref if bps_krx_ref > 0 else None
+    except Exception:
+        bps_krx_ref = None
 
     price = stock.get("price")
     sh = stock.get("shares") or 0          # KRX 발행주식수(정확)
@@ -684,12 +729,23 @@ def collect_quant(dart, ticker, krx_row, stock):
             log(f"  ⚠️ 주당이익 기준이 섞였다(공시 {eps_disc:,.0f} vs 순이익÷주식수 "
                 f"{eps_alt:,.0f}, {r:.1f}배) — 액면병합·감자로 본다. 순이익 쪽을 쓴다.")
             eps_pick = eps_alt
+        elif ttm_verified:
+            # 배수로는 안 떨어지지만, 순이익 쪽은 바로 아래 분기표 4개 합과
+            # 맞는다 — 페이지 안에서 확인된 값이다. 공시 주당이익은 확인할
+            # 방법이 없다(그 값 하나뿐이다). 확인된 쪽을 쓴다.
+            #
+            # 예전에는 여기서 둘 다 버렸다. 그런데 이 갈림길은 대개 이익이
+            # 0 근처인 회사에서 생긴다 — 분자가 0 에 가까우면 비율은 조금만
+            # 움직여도 30% 를 넘는다(금비 TTM −0.6억). 정상인 회사를 통째로
+            # 지우고 있었고, BPS 까지 딸려 나갔다.
+            log(f"  · 두 공시가 어긋난다(공시 {eps_disc:,.0f} vs 순이익÷주식수 "
+                f"{eps_alt:,.0f}, {r:.2f}배) — 분기표와 맞는 순이익 쪽을 쓴다")
+            eps_pick = eps_alt
         else:
-            # 배수로도 안 떨어진다. 회사가 공시한 두 값이 서로 다르다는 뜻인데,
-            # 어느 쪽이 맞는지 우리는 모른다. 모르면 안 보여준다 — 틀린 숫자를
-            # 내보내는 것보다 빈칸이 낫다. 리포트를 다시 만들면 채워진다.
-            log(f"  ❌ 두 공시가 어긋난다(공시 {eps_disc:,.0f} vs 순이익÷주식수 "
-                f"{eps_alt:,.0f}, {r:.2f}배) — 어느 쪽인지 몰라 EPS·PER 숨김")
+            # 순이익 쪽도 확인이 안 된다. 어느 쪽이 맞는지 알 길이 없다.
+            # 모르면 안 보여준다 — 틀린 숫자보다 빈칸이 낫다.
+            log(f"  ❌ 두 공시가 어긋나고 분기표로도 확인이 안 된다(공시 "
+                f"{eps_disc:,.0f} vs 순이익÷주식수 {eps_alt:,.0f}, {r:.2f}배) — EPS·PER 숨김")
             eps_pick = None
             eps_disc = None
             eps_hidden = True
@@ -741,6 +797,11 @@ def collect_quant(dart, ticker, krx_row, stock):
     eps_self_ok = bool(
         eps_disc and eps_indep and (eps_disc > 0) == (eps_indep > 0)
         and (1 / 3.3) <= abs(eps_indep / eps_disc) <= 3.3)
+    # 회사가 기본주당이익을 아예 공시하지 않으면 위 대조가 성립하지 않는다.
+    # 그러면 참조값 게이트가 그대로 걸려, 적자 전환·흑자 전환한 회사의 EPS 가
+    # 부호 반대로 잘려 나갔다(17종목). 분기표와 맞는 것도 똑같이 유효한
+    # 자체 검증이다.
+    eps_self_ok = eps_self_ok or ttm_verified
 
     # ROE 신뢰성: 순이익 추출(ttm_np)이 깨졌을 때만 공시 EPS 로 되살린다.
     #   원래는 30% 만 어긋나도 'eps_disc × 발행주식총수' 로 덮어썼는데, 두 군데가 틀렸다.
@@ -832,6 +893,13 @@ def collect_quant(dart, ticker, krx_row, stock):
             broken = gap > abs(eqo_total) * 0.01
         else:
             broken = eqo_owner > eqo_total * 1.5
+        if broken and bps_krx_ref and abs(bps_q / bps_krx_ref - 1) <= 0.30:
+            # 항등식은 깨졌는데 우리가 낸 BPS 는 KRX 공식값과 맞는다.
+            # 그러면 자본 추출이 아니라 비지배지분 태그를 못 읽은 쪽이 문제다.
+            # 맞는 값을 지우는 검증은 없는 것만 못하다 — 살린다.
+            log(f"  · 자본 항등식은 깨졌지만 BPS {bps_q:,} 가 KRX 공식값 "
+                f"{bps_krx_ref:,.0f} 과 맞는다 — 그대로 쓴다")
+            broken = False
         if broken:
             log(f"  ❌ 자본 정합성 실패 → BPS·PBR 숨김: 지배지분 "
                 f"{eqo_owner * unit/1e12:,.2f}조 + 비지배지분 "
@@ -849,6 +917,21 @@ def collect_quant(dart, ticker, krx_row, stock):
             log(f"  ⚠️ 자본이 이익보다 빠르게 늘었다(참고): 분기말 지배자본 "
                 f"{eqo_q/1e12:,.1f}조 vs 이익으로 설명되는 {explained/1e12:,.1f}조 "
                 f"({eqo_q/explained:.2f}배)")
+    # 여기까지 와서도 BPS 가 비어 있으면 KRX 가 매일 내는 공식 BPS 를 쓴다.
+    # 거래소가 산출·공표하는 값이라 출처가 분명하고, 네이버와 달리 분기
+    # 반영이 늦지 않다. 우리가 못 뽑았다고 빈칸으로 두는 것보다 낫다.
+    bps_src = "자체"
+    if bps_q is None and bps_krx_ref and price:
+        bps_q = int(bps_krx_ref)
+        pbr_q = round(price / bps_q, 4)
+        bps_src = "KRX"
+        log(f"  · BPS 를 자체 산출하지 못해 KRX 공식값 {bps_q:,} 을 쓴다")
+
+    # BPS 도 자체 증인을 둔다. KRX 공식값과 30% 안에서 맞으면 참조값(네이버)
+    # 대조는 건너뛴다 — 네이버 BPS 는 분기 반영이 가장 늦어, 우리가 맞는데도
+    # 시차 때문에 지워지는 일이 가장 많았다.
+    bps_self_ok = bool(bps_q and bps_krx_ref and abs(bps_q / bps_krx_ref - 1) <= 0.30)
+
     eqo_begin = (_bs(d_py_same, "equity_owner") or _bs(d_py_same, "equity"))  # TTM 시작(전년 같은 분기말) 자본
     if eqo_begin is not None:
         eqo_begin *= unit
@@ -867,6 +950,8 @@ def collect_quant(dart, ticker, krx_row, stock):
         "ttm_np_owner": ttm_np,
         "ccy": ccy,                              # 공시 통화(원화 환산 후에도 출처를 남긴다)
         "_eps_self": eps_self_ok,                # 검증용 임시 플래그 — cross_check 에서 떼어낸다
+        "_bps_self": bps_self_ok,                # 〃 (KRX 공식 BPS 와 맞는가)
+        "bps_src": bps_src,                      # 자체 산출인지 KRX 공식값인지
         "pbr_krx": None, "bps_krx": None,        # KRX 공식값(참고·대조용)
         "basis": "PER·EPS·PBR·BPS 모두 자체 산출(네이버·토스와 동일 방식) · 배당은 DART 공시 주당현금배당금(보완:KRX) ÷ 현재가",
     }
@@ -1222,6 +1307,7 @@ def cross_check(tk, name, valuation):
     ⚠️ 참조값(nv)은 검증 게이트 용도로만 메모리에서 사용하고, 저장/배포되는 valuation에는
     절대 기록하지 않는다(외부 데이터값이 사이트 코드로 노출되지 않도록)."""
     eps_self_ok = valuation.pop("_eps_self", False)   # 저장 대상이 아니다 — 여기서 떼어낸다
+    bps_self_ok = valuation.pop("_bps_self", False)
     nv = naver_valuation(tk)
     if not nv:
         log(f"  ⚠️ {name}: 참조값 없음 — 자체 PER·EPS 미검증")
@@ -1284,7 +1370,9 @@ def cross_check(tk, name, valuation):
     # BPS 는 참조값이 가장 늦게 따라오는 지표다. 대신 collect_quant 에서
     # '분기말 자본이 이익으로 설명되는가' 를 이미 확인했다 — 시차를 타지 않는
     # 자체 기준이라 이쪽이 더 믿을 만하다. 참조값 대조는 그 뒤의 그물로 남긴다.
-    if gross_error(valuation.get("bps"), nv.get("bps")):
+    # KRX 공식 BPS 와 맞으면 참조값 대조는 건너뛴다. 거래소가 공표한 값과
+    # 맞는데 네이버와 다르다는 이유로 지우는 것은 앞뒤가 안 맞는다.
+    if not bps_self_ok and gross_error(valuation.get("bps"), nv.get("bps")):
         issues.append(f"BPS {valuation.get('bps')}↔ref {nv.get('bps')}")
         valuation["bps"] = valuation["pbr"] = None
     # 배당수익률 게이트 — 네이버 배당수익률과 30% 넘게 어긋나면 DPS 숨김.

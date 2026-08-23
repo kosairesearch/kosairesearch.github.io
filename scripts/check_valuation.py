@@ -135,14 +135,47 @@ def r_neg_rev(v, q, g):
 
 
 def r_q_over_year(v, q, g):
-    """한 분기 매출이 직전 연간 매출의 60% 를 넘으면 누적값을 당기로 잘못 읽은 것이다."""
-    ann = q.get("annual") or []
-    fy = ann[0].get("rev") if ann else None
-    if not fy or fy <= 0:
+    """한 분기 매출이 그 분기를 끝으로 하는 4개 분기 합의 60% 를 넘는가.
+
+    처음에는 '그 해 연간 매출' 과 견줬는데, 올해는 연간이 아직 없어서 작년
+    연간과 비교하게 된다. 그러면 매출이 빠르게 느는 회사가 죄다 걸린다 —
+    119종목이 그렇게 잡혔고 대부분 정상이었다(SK하이닉스·키움증권).
+
+    분기 추출 자체는 따로 확인했다. Q1~Q4 가 다 있는 연도 66곳에서
+    '분기 4개 합 = 연간 매출' 이 하나도 어긋나지 않았다. 그러니 여기서
+    잡을 것은 성장이 아니라 '한 분기에 여러 분기가 뭉쳐 들어온 것' 이고,
+    그건 자기가 속한 4개 분기 안에서 봐야 드러난다."""
+    qs = [x for x in (q.get("quarterly") or []) if x.get("rev") is not None]
+    for i, x in enumerate(qs):
+        win = [y["rev"] for y in qs[max(0, i - 3):i + 1]]
+        if len(win) < 4:
+            continue
+        tot = sum(win)
+        if tot > 0 and x["rev"] > tot * 0.6:
+            return (f"{x['q']} 매출 {x['rev'] / 1e8:,.0f}억 이 "
+                    f"직전 4개 분기 합 {tot / 1e8:,.0f}억 의 60% 초과")
+
+
+def r_rev_scale(v, q, g):
+    """매출로 성립할 수 없는 크기가 한 분기에 들어와 있는가.
+
+    진코스텍 2026Q2 매출이 30.9조로 실려 있었다 — 시가총액 719억, 직전 연간
+    매출 486억인 회사다. 한 분기에 여러 기간이 뭉쳐 들어온 것이다.
+    직전 연간의 3배를 넘고 시가총액의 5배도 넘을 때만 잡는다 — 매출이 0 에서
+    뛰는 신약개발사를 잘못 걸지 않으려면 두 조건이 다 필요하다."""
+    mcap = (v.get("mcap") or 0) * 1e12
+    if not mcap:
         return None
+    ann = {a.get("year"): a for a in (q.get("annual") or []) if isinstance(a, dict)}
     for x in (q.get("quarterly") or []):
-        if x.get("rev") and x["rev"] > fy * 0.6:
-            return f"{x['q']} 매출 {x['rev'] / 1e8:,.0f}억 이 연간 {fy / 1e8:,.0f}억 의 60% 초과"
+        rev = x.get("rev")
+        if not rev or rev <= 0:
+            continue
+        y = int(str(x.get("q", "0000"))[:4])
+        base = (ann.get(y) or {}).get("rev") or (ann.get(y - 1) or {}).get("rev")
+        if base and base > 0 and rev > base * 3 and rev > mcap * 5:
+            return (f"{x['q']} 매출 {rev / 1e8:,.0f}억 이 직전 연간 {base / 1e8:,.0f}억 의 "
+                    f"{rev / base:.0f}배 · 시가총액 {mcap / 1e8:,.0f}억 의 {rev / mcap:.0f}배")
 
 
 def r_equity_identity(v, q, g):
@@ -150,24 +183,34 @@ def r_equity_identity(v, q, g):
     ann = q.get("annual") or []
     if not ann:
         return None
-    eo, et = ann[0].get("equity_owner"), ann[0].get("equity")
+    a0 = ann[0]
+    eo, et, nci = a0.get("equity_owner"), a0.get("equity"), a0.get("equity_nci")
     if not (eo and et and et > 0):
         return None
-    # 지배지분 + 비지배지분 = 자본총계 라서, 비지배지분이 음수면 지배지분이
-    # 자본총계보다 커도 정상이다. 여기서 잡을 것은 그 정도 차이가 아니라
-    # 추출이 통째로 어긋난 경우다.
+    # 지배지분 + 비지배지분 = 자본총계. 비지배지분을 읽었으면 이 식으로 본다
+    # (지배지분이 자본총계보다 큰 것 자체는 비지배지분이 음수면 정상이다).
+    if nci is not None:
+        if abs((eo + nci) - et) > abs(et) * 0.01:
+            return (f"{a0.get('year')} 지배 {eo / 1e8:,.0f}억 + 비지배 {nci / 1e8:,.0f}억 "
+                    f"≠ 자본총계 {et / 1e8:,.0f}억")
+        return None
+    # 비지배지분을 못 읽었으면 확인할 길이 없다 — 자릿수가 틀린 수준만 막는다.
     if eo > et * 1.5:
-        return f"{ann[0].get('year')} 지배지분 {eo / 1e8:,.0f}억 > 자본총계 {et / 1e8:,.0f}억 (1.5배 초과)"
+        return (f"{a0.get('year')} 지배지분 {eo / 1e8:,.0f}억 > 자본총계 {et / 1e8:,.0f}억 "
+                f"(1.5배 초과 · 비지배지분을 못 읽어 확인 불가)")
 
 
 def r_sanity(v, q, g):
     per, pbr, roe = v.get("per"), v.get("pbr"), v.get("roe_ttm")
     bad = []
-    if per is not None and not (0 < per <= 500):
+    # 이익이 0 에 가까우면 PER 은 수천이 되고, 자본이 0 에 가까우면 ROE 는
+    # ±1,000% 가 된다 — 계산이 틀린 게 아니라 원래 그런 값이다. 그래서
+    # 여기 폭은 '눈으로 볼 만큼 드문가' 를 가르는 선이지 오류 판정이 아니다.
+    if per is not None and not (0 < per <= 5000):
         bad.append(f"PER {per}")
-    if pbr is not None and not (0 < pbr <= 50):
+    if pbr is not None and not (0 < pbr <= 100):
         bad.append(f"PBR {pbr}")
-    if roe is not None and not (-300 <= roe <= 300):
+    if roe is not None and not (-2000 <= roe <= 2000):
         bad.append(f"ROE {roe}%")
     if bad:
         return "상식 밖 " + " · ".join(bad)
@@ -194,13 +237,14 @@ HARD = [
     ("ROE부호", "ROE 부호가 순이익 부호와 같은가", r_roe_sign),
     ("주식수중복", "발행주식총수가 KRX 주식수의 정수배가 아닌가", r_share_multiple),
     ("음수매출", "분기 매출이 음수가 아닌가", r_neg_rev),
+    ("매출규모", "분기 매출이 회사 규모로 설명되는가", r_rev_scale),
     ("자본항등", "지배지분이 자본총계의 1.5배를 넘지 않는가", r_equity_identity),
     ("그리드동기", "그리드 값이 리포트와 같은가", r_grid_sync),
 ]
 
 # 0 이 아닐 수도 있는 것들. 실적이 실제로 튀면 걸리므로 차단하지 않고 눈으로 본다.
 SOFT = [
-    ("분기과다", "분기 매출이 그 해 연간의 60% 를 넘지 않는가", r_q_over_year),
+    ("분기과다", "분기 매출이 직전 4개 분기 합의 60% 를 넘지 않는가", r_q_over_year),
     ("상식범위", "PER·PBR·ROE 가 상식 범위인가", r_sanity),
 ]
 
