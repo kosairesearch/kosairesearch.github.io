@@ -1481,23 +1481,50 @@ def sync_list_index(tickers):
         log(f"- (인덱스 동기화 실패: {type(e).__name__}: {e})")
 
 
+def _quant_ok(new, old):
+    """새로 수집한 정량이 기존보다 확실히 부실하면 갈아 끼우지 않는다.
+
+    DART 가 일시적으로 막히거나 하루 호출 한도를 넘기면 빈 값이 돌아온다.
+    그걸 그대로 덮어쓰면 멀쩡하던 리포트가 통째로 빈다. 589종목을 한꺼번에
+    다시 돌리기 전에 걸어 두는 빗장이다."""
+    if not isinstance(new, dict):
+        return False
+
+    def filled(q):
+        return [a for a in (q.get("annual") or [])
+                if a.get("np_owner") is not None or a.get("rev") is not None]
+
+    if not filled(new):
+        return False
+    if isinstance(old, dict) and filled(old):
+        # 결산 시점에 한 해쯤 밀리는 건 정상이므로 한 칸은 봐준다.
+        if len(filled(new)) < len(filled(old)) - 1:
+            return False
+    return True
+
+
 def patch_quant(as_of):
     """기존 v2 리포트의 정량(quant) 블록만 다시 수집해 교체한다(LLM 재호출 없음·무료).
     본문 텍스트는 그대로 두고 숫자만 최신 방식으로 갱신할 때 사용."""
     data, targets = pick_targets()
     quants = collect_all_quant(targets, data)
-    n = 0
+    n = kept = 0
     for st in targets:
         tk = st["ticker"]
         f = OUT_DIR / f"{tk}.json"
         if tk in quants and f.exists():
             rep = json.loads(f.read_text(encoding="utf-8"))
+            if not _quant_ok(quants[tk], rep.get("quant")):
+                kept += 1
+                log(f"  ⏭️  {tk} {st['name']} — 새로 수집한 값이 부실해 기존 값을 지킨다")
+                continue
             rep["quant"] = quants[tk]
             rep["dataDate"] = data.get("dataDate", rep.get("dataDate", ""))
             f.write_text(json.dumps(rep, ensure_ascii=False, indent=1), encoding="utf-8")
             n += 1
             log(f"  · 정량 교체 {tk} {st['name']}")
-    log(f"\n✅ 정량 patch 완료: {n}건 (본문 텍스트 유지)")
+    log(f"\n✅ 정량 patch 완료: {n}건 (본문 텍스트 유지)"
+        + (f" · 기존 값 지킴 {kept}건" if kept else ""))
 
 
 def recover(cl, as_of, batch_id=""):
