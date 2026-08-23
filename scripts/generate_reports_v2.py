@@ -726,6 +726,14 @@ def collect_quant(dart, ticker, krx_row, stock):
     #
     # 주의: eps_alt 는 가중평균주식수를 쓰는데, 그 주식수 자체가 공시 EPS 로
     # 역산한 값이라 ①과 순환한다. 그래서 여기서는 발행총수로 나눈 값을 쓴다.
+    # 직전 분기까지만 넣었으면 얼마였을지도 남긴다. 참조값이 이 값과
+    # 같으면 그쪽이 한 분기 뒤에 있다는 뜻이고, 그러면 우리가 틀린 게
+    # 아니라 그쪽이 아직 안 따라온 것이다. 추측으로 답하지 않으려고
+    # 숫자를 남긴다.
+    if fy_eps is not None and qp_eps is not None and qc_eps is not None:
+        log(f"  · 직전분기 기준이면 EPS {fy_eps:,.0f}"
+            f" (작년연간 그대로 · 올해 {qc_eps:,.0f} 를 아직 안 넣은 상태)")
+
     eps_indep = (ttm_np / total_sh) if (ttm_np and total_sh) else None
     eps_self_ok = bool(
         eps_disc and eps_indep and (eps_disc > 0) == (eps_indep > 0)
@@ -1272,9 +1280,16 @@ def cross_check(tk, name, valuation):
     if issues:
         log(f"  ❌ {name} 중대오류 차단 → 해당 지표 숨김: {' / '.join(issues)}")
     else:
+        # 참조값을 통과했을 때도 같이 남긴다.
+        #
+        # "네이버랑 다른데?" 라는 물음에 답하려면 그때 네이버가 무엇을
+        # 보여 주고 있었는지가 있어야 한다. 막힌 경우에만 찍고 있어서
+        # 통과한 종목은 비교할 자료가 아무 데도 없었다. 값은 로그에만
+        # 남고 저장·배포되는 valuation 에는 들어가지 않는다.
         log(f"  ✅ {name} 검증 통과 PER {valuation.get('per')} PBR {valuation.get('pbr')} "
             f"EPS {valuation.get('eps')} BPS {valuation.get('bps')}"
-            f"{' (EPS 는 자체 대조로 확인 — 참조값 시차)' if skip_eps_ref else ''}")
+            f" | 참조 EPS {nv.get('eps')} BPS {nv.get('bps')} PER {nv.get('per')}"
+            f"{' · EPS 는 자체 대조로 확인(참조값 시차)' if skip_eps_ref else ''}")
 
 
 def collect_all_quant(targets, data):
