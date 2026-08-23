@@ -111,6 +111,7 @@ def main():
     data = g.load_stocks()
     data_date = data.get("dataDate", "")
     stocks = sorted(data["stocks"], key=lambda s: s.get("mcap", 0) or 0, reverse=True)
+    all_stocks = stocks          # VAL_TICKERS 로 좁히기 전 전 종목 — 아래 리포트 동기화에 쓴다
 
     # 특정 종목만(공시 트리거 등) 즉시 재수집: VAL_TICKERS="A,B,C"
     #   기존 데이터는 보존하고 지정 종목만 신선도 무시하고 다시 가져온다.
@@ -152,9 +153,15 @@ def main():
     #   그리드(valuation.js)가 옛 버그버전·신선도-skip 때문에 리포트와 어긋나 있던
     #   문제(LS ELECTRIC·POSCO 등 stale)를 매 실행 동기화로 영구 차단한다.
     #   DART/네이버 호출이 없어 비용이 거의 없으므로 신선도 정책과 무관하게 항상 수행.
-    if not only_mode:
+    #
+    #   ⚠️ 예전에는 only_mode(공시 트리거)에서 이 동기화를 통째로 건너뛰었다. 그런데
+    #      요즘 valuation.js 를 갱신하는 건 거의 공시 트리거뿐이라, 리포트를 고쳐도
+    #      그리드는 옛 값을 그대로 들고 있었다 — 2,564곳 중 525곳이 어긋나 있었고
+    #      GRT 는 리포트 EPS 975 · 그리드 4(외화 미환산) 였다. only_mode 여도
+    #      전 종목을 동기화한다. 파일만 읽으니 대상이 늘어도 비용은 그대로다.
+    if not force:
         synced = 0
-        for s in stocks:
+        for s in all_stocks:
             rp = REPORTS_V2 / f"{s['ticker']}.json"
             if not rp.exists():
                 continue
