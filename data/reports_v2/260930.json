@@ -237,7 +237,7 @@
  "reportTs": "2026-06-19 00:51",
  "dataDate": "20260821",
  "quant": {
-  "asOf": "2026-08-21",
+  "asOf": "2026-08-23",
   "fs_basis": "연결(CFS) · DART 공시 확정치 · 지배주주 기준 순이익",
   "annual": [
    {
@@ -248,6 +248,7 @@
     "np_owner": -7024721492,
     "equity": 146347679475,
     "equity_owner": 147948231430,
+    "equity_nci": -1600551955,
     "liab": 110480945380,
     "cfo": -8249944890,
     "eps_basic": -373,
@@ -263,6 +264,7 @@
     "np_owner": -3267723828,
     "equity": 156518215203,
     "equity_owner": 157790793563,
+    "equity_nci": -1272578360,
     "liab": 34661036271,
     "cfo": -7198367534,
     "eps_basic": null,
@@ -275,14 +277,15 @@
     "rev": 88916001181,
     "op": 2740146615,
     "np": 6230656497,
-    "np_owner": 6230656497,
+    "np_owner": 6944138189,
     "equity": 158492395433,
     "equity_owner": 159186661125,
+    "equity_nci": -694265692,
     "liab": 31215275974,
     "cfo": 10555939572,
     "eps_basic": null,
     "opm": 3.1,
-    "roe": 3.9,
+    "roe": 4.4,
     "debt_ratio": 19.7
    },
    {
@@ -293,6 +296,7 @@
     "np_owner": -17653872172,
     "equity": 151015535124,
     "equity_owner": 153978271602,
+    "equity_nci": -2962736478,
     "liab": 27684675889,
     "cfo": -8822756794,
     "eps_basic": null,
@@ -330,7 +334,7 @@
     "q": "2026Q2",
     "rev": 28962952611,
     "op": 469164089,
-    "np_owner": -2270049462
+    "np_owner": -1977786795
    }
   ],
   "valuation": {
@@ -338,14 +342,16 @@
    "mcap": 0.0493,
    "shares": 19341591,
    "total_shares": 19341591,
-   "wavg_shares": 19729118,
+   "wavg_shares": 18848809,
    "per": null,
-   "eps": -763,
-   "pbr": 0.35,
-   "bps": 7369,
-   "roe_ttm": -9.9,
+   "eps": -748,
+   "pbr": 0.3306,
+   "bps": 7713,
+   "roe_ttm": -9.7,
    "ttm_window": "2025Q3~2026Q2",
-   "ttm_np_owner": -14762001053,
+   "ttm_np_owner": -14469738386,
+   "ccy": "KRW",
+   "bps_src": "자체",
    "pbr_krx": 0.32,
    "bps_krx": 7851.0,
    "basis": "PER·EPS·PBR·BPS 모두 자체 산출(네이버·토스와 동일 방식) · 배당은 DART 공시 주당현금배당금(보완:KRX) ÷ 현재가",

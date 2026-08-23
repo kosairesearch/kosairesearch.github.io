@@ -237,7 +237,7 @@
  "reportTs": "2026-06-19 02:25",
  "dataDate": "20260821",
  "quant": {
-  "asOf": "2026-08-21",
+  "asOf": "2026-08-23",
   "fs_basis": "연결(CFS) · DART 공시 확정치 · 지배주주 기준 순이익",
   "annual": [
    {
@@ -248,6 +248,7 @@
     "np_owner": -15368102913,
     "equity": 24844371523,
     "equity_owner": 24662374499,
+    "equity_nci": 181997024,
     "liab": 12349551955,
     "cfo": -13989498800,
     "eps_basic": -2517,
@@ -296,11 +297,13 @@
    "wavg_shares": 6105722,
    "per": null,
    "eps": -2800,
-   "pbr": 1.49,
+   "pbr": 1.4932,
    "bps": 4621,
    "roe_ttm": -60.8,
    "ttm_window": "2025Q3~2026Q2",
    "ttm_np_owner": -18441984723,
+   "ccy": "KRW",
+   "bps_src": "자체",
    "pbr_krx": 1.84,
    "bps_krx": 3745.0,
    "basis": "PER·EPS·PBR·BPS 모두 자체 산출(네이버·토스와 동일 방식) · 배당은 DART 공시 주당현금배당금(보완:KRX) ÷ 현재가",
