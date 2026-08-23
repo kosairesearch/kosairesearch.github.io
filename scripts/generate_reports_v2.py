@@ -817,8 +817,10 @@ def collect_quant(dart, ticker, krx_row, stock):
     #        TTM 순이익이 바로 아래 분기표의 4개 분기 합과 어긋났다 — 2,287곳 중 162곳(7.1%).
     #   그래서 분모를 가중평균으로 바꾸고, 부호가 뒤집히거나 3배 넘게 벌어질 때만 —
     #   즉 추출이 실제로 깨졌을 때만 — 갈아끼운다(원익QnC 등 원래 잡으려던 경우).
+    #   ③ 분기표 4개 합과 이미 맞는 순이익은 손대지 않는다. 확인된 값을
+    #      덮어쓰면 화면 위아래가 어긋나고, 그러면 검산에서 다시 걸린다.
     np_denom = wavg or total_sh
-    if eps_disc is not None and np_denom:
+    if not ttm_verified and eps_disc is not None and np_denom:
         implied_np = eps_disc * np_denom
         broken = implied_np and (
             ttm_np is None
