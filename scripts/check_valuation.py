@@ -216,6 +216,44 @@ def r_sanity(v, q, g):
         return "상식 밖 " + " · ".join(bad)
 
 
+def r_annual_derived(v, q, g):
+    """연간 표의 파생값을 재료로 다시 계산해 본다.
+
+    화면에 나가는 영업이익률·부채비율·ROE 는 같은 줄의 재료로 만든 값이다.
+    저장된 값과 다시 계산한 값이 다르면 둘 중 하나가 옛 값이거나 다른 줄에서
+    온 것이다. 재료가 같은 곳에 있으니 외부 값 없이 확인된다."""
+    for a in (q.get("annual") or []):
+        if not isinstance(a, dict):
+            continue
+        y = a.get("year")
+        rev, op, li = a.get("rev"), a.get("op"), a.get("liab")
+        eq, eqo, npo = a.get("equity"), a.get("equity_owner"), a.get("np_owner")
+        checks = (
+            ("영업이익률", a.get("opm"), (op / rev * 100) if (op is not None and rev) else None),
+            ("부채비율", a.get("debt_ratio"), (li / eq * 100) if (li is not None and eq) else None),
+            ("ROE", a.get("roe"),
+             (npo / (eqo or eq) * 100) if (npo is not None and (eqo or eq) and (eqo or eq) > 0) else None),
+        )
+        for label, got, want in checks:
+            if got is None or want is None:
+                continue
+            # 소수 첫째 자리 반올림이라 ±0.05 는 정상이다.
+            if abs(got - want) > max(0.06, abs(want) * 0.01):
+                return f"{y} {label} {got} 인데 재료로 다시 계산하면 {want:,.1f}"
+
+
+def r_annual_years(v, q, g):
+    """연간 표의 연도가 내림차순으로 이어지는가. 한 해가 빠지면 표가 거짓말을 한다."""
+    ys = [a.get("year") for a in (q.get("annual") or []) if isinstance(a, dict)]
+    ys = [y for y in ys if isinstance(y, int)]
+    if len(ys) < 2:
+        return None
+    if ys != sorted(ys, reverse=True):
+        return f"연간 표 연도가 내림차순이 아니다: {ys}"
+    if len(set(ys)) != len(ys):
+        return f"연간 표에 같은 해가 두 번 있다: {ys}"
+
+
 def r_grid_sync(v, q, g):
     if g is None:
         return "그리드(valuation.js)에 이 종목이 없다"
@@ -239,6 +277,8 @@ HARD = [
     ("음수매출", "분기 매출이 음수가 아닌가", r_neg_rev),
     ("매출규모", "분기 매출이 회사 규모로 설명되는가", r_rev_scale),
     ("자본항등", "지배지분이 자본총계의 1.5배를 넘지 않는가", r_equity_identity),
+    ("연간파생", "영업이익률·부채비율·ROE 가 같은 줄의 재료와 맞는가", r_annual_derived),
+    ("연간연도", "연간 표의 연도가 내림차순으로 이어지는가", r_annual_years),
     ("그리드동기", "그리드 값이 리포트와 같은가", r_grid_sync),
 ]
 
