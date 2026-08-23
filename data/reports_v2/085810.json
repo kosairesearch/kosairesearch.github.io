@@ -237,7 +237,7 @@
  "reportTs": "2026-06-30 20:56",
  "dataDate": "20260821",
  "quant": {
-  "asOf": "2026-08-21",
+  "asOf": "2026-08-23",
   "fs_basis": "연결(CFS) · DART 공시 확정치 · 지배주주 기준 순이익",
   "annual": [
    {
@@ -245,14 +245,15 @@
     "rev": 53166158309,
     "op": 3180937313,
     "np": 12798071,
-    "np_owner": 12798071,
+    "np_owner": -813298424,
     "equity": 54010645458,
     "equity_owner": 50795234524,
+    "equity_nci": 3215410934,
     "liab": 20845127297,
     "cfo": -2155027169,
     "eps_basic": -16,
     "opm": 6.0,
-    "roe": 0.0,
+    "roe": -1.6,
     "debt_ratio": 38.6
    },
    {
@@ -263,6 +264,7 @@
     "np_owner": -13032394447,
     "equity": 36849837799,
     "equity_owner": 36849837799,
+    "equity_nci": 0,
     "liab": 7943672649,
     "cfo": -3836095448,
     "eps_basic": -439,
@@ -278,6 +280,7 @@
     "np_owner": -25974223816,
     "equity": 20592540436,
     "equity_owner": 22906753825,
+    "equity_nci": -2314213389,
     "liab": 29593556326,
     "cfo": -3770400293,
     "eps_basic": -899,
@@ -293,6 +296,7 @@
     "np_owner": -17817377750,
     "equity": 47085945910,
     "equity_owner": 48865640502,
+    "equity_nci": -1779694592,
     "liab": 22875308644,
     "cfo": -8833042912,
     "eps_basic": -616,
@@ -318,7 +322,7 @@
     "q": "2025Q4",
     "rev": 16408131832,
     "op": 338132692,
-    "np_owner": -3022745496
+    "np_owner": -3848841991
    },
    {
     "q": "2026Q1",
@@ -340,17 +344,19 @@
    "total_shares": 14136953,
    "wavg_shares": 12840647,
    "per": null,
-   "eps": -302,
-   "pbr": 0.47,
+   "eps": -425,
+   "pbr": 0.4696,
    "bps": 3695,
-   "roe_ttm": -9.8,
+   "roe_ttm": -11.6,
    "ttm_window": "2025Q3~2026Q2",
-   "ttm_np_owner": -4578195538,
-   "pbr_krx": null,
-   "bps_krx": null,
+   "ttm_np_owner": -5404292033,
+   "ccy": "KRW",
+   "bps_src": "자체",
+   "pbr_krx": 0.42,
+   "bps_krx": 4130.0,
    "basis": "PER·EPS·PBR·BPS 모두 자체 산출(네이버·토스와 동일 방식) · 배당은 DART 공시 주당현금배당금(보완:KRX) ÷ 현재가",
-   "dps": null,
-   "div": null
+   "dps": 0.0,
+   "div": 0.0
   }
  }
 }

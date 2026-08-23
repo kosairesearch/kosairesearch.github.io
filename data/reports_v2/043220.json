@@ -236,7 +236,7 @@
  "reportTs": "2026-06-19 05:32",
  "dataDate": "20260821",
  "quant": {
-  "asOf": "2026-08-21",
+  "asOf": "2026-08-23",
   "fs_basis": "연결(CFS) · DART 공시 확정치 · 지배주주 기준 순이익",
   "annual": [
    {
@@ -244,14 +244,15 @@
     "rev": 14537599112,
     "op": -5872413576,
     "np": -37736658087,
-    "np_owner": -37736658087,
+    "np_owner": -38590316063,
     "equity": 18727940398,
     "equity_owner": 17517913762,
+    "equity_nci": 1210026636,
     "liab": 18559552198,
     "cfo": -5180951595,
     "eps_basic": -272,
     "opm": -40.4,
-    "roe": -215.4,
+    "roe": -220.3,
     "debt_ratio": 99.1
    },
    {
@@ -262,6 +263,7 @@
     "np_owner": -19098415298,
     "equity": 66064298975,
     "equity_owner": 66069440605,
+    "equity_nci": -5141630,
     "liab": 62250831059,
     "cfo": -88667759,
     "eps_basic": null,
@@ -277,6 +279,7 @@
     "np_owner": 39148357,
     "equity": 48628710714,
     "equity_owner": 48628710714,
+    "equity_nci": null,
     "liab": 25468767492,
     "cfo": 6089291860,
     "eps_basic": null,
@@ -292,6 +295,7 @@
     "np_owner": -9679788655,
     "equity": 47772355530,
     "equity_owner": 47772355530,
+    "equity_nci": null,
     "liab": 26808611247,
     "cfo": -7328633543,
     "eps_basic": null,
@@ -311,13 +315,13 @@
     "q": "2025Q3",
     "rev": 2909760932,
     "op": -916556740,
-    "np_owner": -1803790577
+    "np_owner": -1923783322
    },
    {
     "q": "2025Q4",
     "rev": 3508327679,
     "op": -1880611916,
-    "np_owner": -20336384675
+    "np_owner": -21070049906
    },
    {
     "q": "2026Q1",
@@ -339,14 +343,16 @@
    "total_shares": 15922416,
    "wavg_shares": null,
    "per": null,
-   "eps": -1440,
-   "pbr": 1.34,
+   "eps": -1493,
+   "pbr": 1.3412,
    "bps": 1275,
-   "roe_ttm": -70.5,
+   "roe_ttm": -73.1,
    "ttm_window": "2025Q3~2026Q2",
-   "ttm_np_owner": -22932178471,
-   "pbr_krx": null,
-   "bps_krx": null,
+   "ttm_np_owner": -23785836447,
+   "ccy": "KRW",
+   "bps_src": "자체",
+   "pbr_krx": 1.55,
+   "bps_krx": 1101.0,
    "basis": "PER·EPS·PBR·BPS 모두 자체 산출(네이버·토스와 동일 방식) · 배당은 DART 공시 주당현금배당금(보완:KRX) ÷ 현재가",
    "dps": 0.0,
    "div": 0.0
