@@ -579,13 +579,21 @@ def collect_quant(dart, ticker, krx_row, stock):
     price = stock.get("price")
     sh = stock.get("shares") or 0          # KRX 발행주식수(정확)
     total_sh = dart_total_shares(dart, ticker) or sh
-    # DART 주식총수는 공시 표를 읽어 오는 값이라 중복·누락이 난다. KRX 상장주식수는
-    # 시가총액과 정확히 맞아떨어지는 것을 전 종목(2,686개)에서 확인했으므로,
-    # 5% 넘게 어긋나면 KRX 를 쓴다. 예전 기준(0.5~3배)은 정확히 2배로 중복된
-    # 값을 그대로 통과시켰고, 그 분모로 나눈 BPS 가 절반으로 나갔다.
-    if sh and total_sh and not (0.95 * sh <= total_sh <= 1.05 * sh):
-        log(f"  · 발행주식총수 DART {total_sh:,} ↔ KRX {sh:,} — KRX 를 쓴다")
-        total_sh = sh
+    # DART 주식총수(보통주+우선주)가 KRX 상장주식수(보통주)와 다른 것은 정상이다.
+    #   삼성전자 1.15배 · 현대차 1.30배 · LG화학 1.11배 — 우선주 몫이다.
+    # 그래서 여기를 좁게 잠그면 안 된다. 실제로 5% 로 좁혀 보니 삼성전자의
+    # 가중평균주식수(65.9억)가 KRX 보통주(58.5억)의 1.05배를 넘어 버려져
+    # BPS 가 85,687 → 96,663 으로 틀어졌다(네이버는 85,687).
+    #
+    # 잡아야 할 것은 '정확히 정수배' 다 — 같은 구분이 여러 줄로 와서 중복
+    # 집계된 흔적이다. 우선주 때문에 생기는 비율은 1.11·1.15·1.30 처럼
+    # 어중간하지 정확히 2.000 이 되지 않는다.
+    if sh and total_sh:
+        r = total_sh / sh
+        dup = any(abs(r - n) < 0.005 for n in range(2, 11))
+        if dup or not (0.5 * sh <= total_sh <= 3 * sh):
+            log(f"  · 발행주식총수 DART {total_sh:,} ↔ KRX {sh:,} ({r:.3f}배) — KRX 를 쓴다")
+            total_sh = sh
 
     # 가중평균 유통주식수 = 회사 공시 (지배주주 순이익 ÷ 공시 기본EPS) 로 역산.
     #   네이버·토스가 쓰는 분모와 같아져 EPS·PER이 일치한다. 자기주식이 자동 제외됨.
