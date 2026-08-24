@@ -103,10 +103,12 @@ def main():
     if not os.getenv("DART_API_KEY"):
         log("❌ DART_API_KEY 없음")
         sys.exit(1)
+    # DART 가 막혀 있어도(하루 한도 초과 등) 리포트 → 그리드 동기화는 할 수 있다.
+    # 그건 파일만 읽는 일이라 호출이 필요 없다. 예전에는 여기서 바로 죽어서,
+    # 리포트는 최신인데 그리드만 옛 값으로 남는 상태를 못 고쳤다.
     dart = g.get_dart()
     if not dart:
-        log("❌ DART 초기화 실패")
-        sys.exit(1)
+        log("⚠️ DART 초기화 실패 — 새 수집은 건너뛰고 리포트 동기화만 한다")
 
     data = g.load_stocks()
     data_date = data.get("dataDate", "")
@@ -177,6 +179,10 @@ def main():
         if synced:
             write_out(existing, data_date)
             log(f"- 리포트 동기화 {synced}건 — 그리드=리포트 항상 일치(무료)")
+
+    if not dart:
+        log("- DART 없이 동기화만 마쳤다.")
+        return
 
     done = 0
     skipped = 0
