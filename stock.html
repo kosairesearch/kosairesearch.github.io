@@ -330,6 +330,8 @@ table.dt .pos{color:var(--up);font-weight:700}table.dt .neg{color:var(--down);fo
 .foot-col ul{list-style:none;margin:0;padding:0;display:flex;flex-direction:column;gap:9px}
 .foot-col a{font:400 14px var(--font-sans);color:var(--fg-2);text-decoration:none}
 .foot-col a:hover{color:var(--fg-1)}
+.biz{display:flex;flex-wrap:wrap;gap:6px 18px;margin-top:18px;padding-top:16px;border-top:1px solid var(--border-2);font:500 12px/1.7 var(--font-sans);color:var(--fg-3)}
+.biz b{font-weight:600;color:var(--fg-2)}
 .foot-bottom{display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap;margin-top:22px;padding-top:18px;border-top:1px solid var(--border-2);font:500 12px var(--font-sans);color:var(--fg-3)}
 
 /* responsive */
@@ -542,6 +544,16 @@ table.dt .pos{color:var(--up);font-weight:700}table.dt .neg{color:var(--down);fo
 (function(){
   if(!window.KOSi18n) return;
   KOSi18n.register({
+  /* BIZ:I18N:START */
+  "상호":"Company",
+  "대표":"CEO",
+  "사업자등록번호":"Business Reg. No.",
+  "주소":"Address",
+  "전자우편":"Email",
+  "코사이":"KOSAI",
+  "임범준":"Beomjun Lim",
+  "서울시 양천구 목동동로12길 50, 동성빌딩 4층 459호":"#459, 4F Dongseong Bldg., 50 Mokdongdong-ro 12-gil, Yangcheon-gu, Seoul, Republic of Korea",
+  /* BIZ:I18N:END */
     "전자·부품":"Electronic Components","IT·소프트웨어":"IT & Software","게임":"Games",
     "전기장비":"Electrical Equipment","기계·장비":"Machinery","조선":"Shipbuilding",
     "항공·방산":"Aerospace & Defense","운송·물류":"Transport & Logistics","철강·금속":"Steel & Metals",
@@ -914,6 +926,15 @@ KOSi18n.register({
         
         <div class="foot-col"><h4>정책</h4><ul><li><a href="Terms.html">이용약관</a></li><li><a href="Privacy.html">개인정보처리방침</a></li></ul></div>
       </div>
+      <!-- BIZ:START · scripts/patch_biz_footer.py 가 넣는다 -->
+      <div class="biz">
+        <span>상호 <b>코사이</b></span>
+        <span>대표 <b>임범준</b></span>
+        <span>사업자등록번호 <b>380-25-02019</b></span>
+        <span>주소 <b>서울시 양천구 목동동로12길 50, 동성빌딩 4층 459호</b></span>
+        <span>전자우편 <b>hello@kosai.kr</b></span>
+      </div>
+      <!-- BIZ:END -->
       <div class="foot-bottom"><span>© 2026 KOSAI — All rights reserved.</span></div>
     </div>
   </div>

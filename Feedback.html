@@ -180,6 +180,8 @@ main{flex:1;padding:8px 0 64px}
 .disclaimer{margin-top:28px;padding:16px 18px;border-radius:var(--radius-md);background:rgba(0,0,0,.04);border:1px solid var(--border-2);font:400 13px/1.6 var(--font-sans);color:var(--fg-2)}
 :root[data-theme="dark"] .disclaimer{background:rgba(255,255,255,.04)}
 .disclaimer b{color:var(--fg-1)}
+.biz{display:flex;flex-wrap:wrap;gap:6px 18px;margin-top:18px;padding-top:16px;border-top:1px solid var(--border-2);font:500 12px/1.7 var(--font-sans);color:var(--fg-3)}
+.biz b{font-weight:600;color:var(--fg-2)}
 .foot-bottom{display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap;margin-top:22px;padding-top:18px;border-top:1px solid var(--border-2);font:500 12px var(--font-sans);color:var(--fg-3)}
 
 @media (min-width:768px){:root{--pad:24px}}
@@ -339,6 +341,16 @@ main{flex:1;padding:8px 0 64px}
 (function(){
   if(!window.KOSi18n) return;
   KOSi18n.register({
+  /* BIZ:I18N:START */
+  "상호":"Company",
+  "대표":"CEO",
+  "사업자등록번호":"Business Reg. No.",
+  "주소":"Address",
+  "전자우편":"Email",
+  "코사이":"KOSAI",
+  "임범준":"Beomjun Lim",
+  "서울시 양천구 목동동로12길 50, 동성빌딩 4층 459호":"#459, 4F Dongseong Bldg., 50 Mokdongdong-ro 12-gil, Yangcheon-gu, Seoul, Republic of Korea",
+  /* BIZ:I18N:END */
     "전자·부품":"Electronic Components","IT·소프트웨어":"IT & Software","게임":"Games",
     "전기장비":"Electrical Equipment","기계·장비":"Machinery","조선":"Shipbuilding",
     "항공·방산":"Aerospace & Defense","운송·물류":"Transport & Logistics","철강·금속":"Steel & Metals",
@@ -579,6 +591,15 @@ KOSi18n.register({
         <div class="foot-col"><h4>정책</h4><ul><li><a href="Terms.html">이용약관</a></li><li><a href="Privacy.html">개인정보처리방침</a></li></ul></div>
       </div>
       <div class="disclaimer"><b>면책 조항</b> · 본 사이트의 모든 AI 분석·리포트는 투자 참고용 정보이며, 투자 권유나 추천이 아닙니다. 투자 판단과 그 결과에 대한 책임은 전적으로 이용자 본인에게 있습니다. 데이터는 지연될 수 있으며 오류가 포함될 수 있습니다.</div>
+      <!-- BIZ:START · scripts/patch_biz_footer.py 가 넣는다 -->
+      <div class="biz">
+        <span>상호 <b>코사이</b></span>
+        <span>대표 <b>임범준</b></span>
+        <span>사업자등록번호 <b>380-25-02019</b></span>
+        <span>주소 <b>서울시 양천구 목동동로12길 50, 동성빌딩 4층 459호</b></span>
+        <span>전자우편 <b>hello@kosai.kr</b></span>
+      </div>
+      <!-- BIZ:END -->
       <div class="foot-bottom"><span>© 2026 KOSAI — All rights reserved.</span></div>
     </div>
   </div>
