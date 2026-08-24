@@ -367,6 +367,15 @@ def main():
     doc = json.loads(src.read_text(encoding="utf-8"))
 
     at = datetime.datetime.now(KST)
+    # 이미 발행된 브리핑이면 그때 시각을 그대로 쓴다. 표시만 손봐서 다시 그릴
+    # 때 머리글의 시각이 지금으로 밀리면, 아침에 나간 글이 낮에 나온 것처럼
+    # 보인다. --at 을 직접 주면 그쪽이 이긴다.
+    _prev = (doc.get("meta") or {}).get("publishedAt") or ""
+    if len(_prev) >= 16 and not a.at:
+        try:
+            at = at.replace(hour=int(_prev[11:13]), minute=int(_prev[14:16]))
+        except ValueError:
+            pass
     if a.at:
         h, m = a.at.split(":")
         at = at.replace(hour=int(h), minute=int(m))
@@ -390,9 +399,21 @@ def main():
     page_path.write_text(page, encoding="utf-8")
     # 발행 시각을 브리핑 파일에도 남긴다. 나중에 "그날 몇 시에 나갔나"를
     # 페이지가 아니라 기록에서 확인할 수 있어야 한다.
-    doc.setdefault("meta", {})["publishedAt"] = at.isoformat(timespec="minutes")
-    src.write_text(json.dumps(doc, ensure_ascii=False, indent=2), encoding="utf-8")
-    log(f"✅ {page_path.name} ← {src.name}  (발행 {at:%H:%M} KST)")
+    #
+    # 한 번 찍힌 시각은 덮어쓰지 않는다. 문단 나누기처럼 표시만 손봐서 다시
+    # 그릴 일이 있는데, 그때마다 시각이 밀리면 '아침 7시 브리핑' 이 오전
+    # 11시에 나온 것처럼 보인다. 다시 그린 것과 다시 낸 것은 다르다.
+    meta = doc.setdefault("meta", {})
+    first_publish = not meta.get("publishedAt")
+    if first_publish:
+        meta["publishedAt"] = at.isoformat(timespec="minutes")
+        src.write_text(json.dumps(doc, ensure_ascii=False, indent=2), encoding="utf-8")
+    # "2026-08-24T07:28+09:00" 에서 07:28 만. 뒤에서 다섯 글자를 집으면
+    # 시간대(+09:00)를 집는다.
+    _pa = meta.get("publishedAt", "")
+    shown = _pa[11:16] if len(_pa) >= 16 else f"{at:%H:%M}"
+    log(f"✅ {page_path.name} ← {src.name}  "
+        f"({'발행' if first_publish else '다시 그림 · 발행'} {shown} KST)")
     log(f"   제목 {doc['title']['ko']}")
     log(f"   문단 {n_para}개 · 영문 사전 {len(dic)}항목 · "
         f"{'개장' if doc.get('marketOpen') else '휴장'}")
