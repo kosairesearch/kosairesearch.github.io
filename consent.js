@@ -96,12 +96,7 @@ if (window.KOSi18n) window.KOSi18n.register({
     "Could not save. Please try again in a moment.",
   "불러오지 못했어요. 잠시 후 다시 시도해 주세요.":
     "Could not load. Please try again in a moment.",
-  "계속 진행하면 ": "By continuing you agree to the ",
-  "이용약관": "Terms of Service",
-  " 및 ": " and to the ",
-  "개인정보 수집·이용": "collection and use of your personal data",
-  "에 동의하게 되며, 만 14세 이상만 가입할 수 있습니다.":
-    ". Sign-up is limited to those aged 14 and over."
+  "이용약관": "Terms of Service"
 });
 
 /* 필수 항목의 키. validate() 가 이 목록만 본다 — 항목을 늘릴 때
@@ -162,12 +157,7 @@ function css() {
 .kc-sub{margin:0 0 14px;font:400 13px/1.6 var(--font-sans);color:var(--fg-2)}
 .kc-act{display:flex;flex-direction:column;gap:8px;margin-top:14px}
 .kc-no{background:none;border:0;font:500 12.5px var(--font-sans);color:var(--fg-3);
-  cursor:pointer;padding:6px;text-decoration:underline}
-/* 소셜 버튼 아래 한 줄 고지 */
-.kc-notice{margin:10px 2px 0;font:400 11.5px/1.6 var(--font-sans);color:var(--fg-3);text-align:center}
-.kc-notice a{color:var(--fg-2);text-decoration:underline;text-underline-offset:2px}
-.kc-notice a:hover{color:var(--brand-blue)}
-:root[data-theme="dark"] .kc-notice a:hover{color:var(--brand-cyan)}`;
+  cursor:pointer;padding:6px;text-decoration:underline}`;
   document.head.appendChild(s);
 }
 
@@ -278,57 +268,41 @@ export async function saveConsent(uid, values, method, email) {
   });
 }
 
-/* 가입 버튼 아래 고지 문구로 받은 동의. 구글 경로가 쓴다.
-   카카오·네이버는 서버가 socialLogin 안에서 같은 모양으로 남긴다. */
-export async function saveImpliedConsent(uid, method, email, marketing) {
-  await callFn("recordSignupConsent", {
-    method: "signup-notice",
-    provider: method || "google",
-    marketing: !!marketing,
-    email: email || ""
-  });
-}
+/* saveImpliedConsent 는 없앴다. 한 줄 고지로 받던 동의를 기록하던 함수인데,
+   정작 구글 경로는 collectConsent 로 체크박스를 띄워 놓고 그 결과를 이
+   함수로 저장하고 있었다 — 체크박스로 받은 동의가 'signup-notice' 로
+   기록되고 있었다는 뜻이다. 이제 구글도 saveConsent 를 쓴다. */
 
-/* 가입 버튼 아래에 붙는 한 줄. 소셜 버튼 밑에 이 문구가 있어야 위의
-   saveImpliedConsent 가 성립한다 — 보여 준 적 없는 것에 동의시킬 수는 없다.
-   문구가 한 곳에만 있어야 페이지마다 달라지지 않는다.
+/* 소셜 버튼 아래 한 줄 고지(SIGNUP_NOTICE / noticeEl)는 없앴다.
 
-   문구를 고른 이유.
+   왜 있었나. 카카오·네이버는 자기 동의 화면을 이미 보여 주니 우리 화면을
+   한 번 더 얹지 말자고 판단했고, 대신 그 한 줄로 동의를 받았다.
 
-   '가입하면' 이 아니라 '계속 진행하면' 이다. 이 줄은 Signup.html 뿐 아니라
-   Login.html 의 소셜 버튼 밑에도 붙는다 — 로그인하러 온 기존 회원에게
-   '가입하면' 이라고 말하고 있었다. 조건절 구어체라 약관 고지의 무게도
-   실리지 않는다.
+   왜 없앴나. 그 판단에 구멍이 있었다. 카카오·네이버의 동의 화면은
+   '그쪽이 우리에게 닉네임·이메일을 넘기는 것' 에 대한 동의이지, 우리
+   이용약관에 대한 동의가 아니다. 즉 그 한 줄이 우리 약관 동의의 유일한
+   근거였는데, 한 줄 고지는 개인정보 수집·이용 동의로 쓰기에 약하다
+   (개인정보보호법 제22조는 항목을 구분해 각각 받도록 한다).
 
-   '개인정보처리방침에 동의' 가 아니라 '개인정보 수집·이용에 동의' 다.
-   처리방침은 회사가 일방적으로 공개하는 문서라 동의를 받는 대상이 아니다
-   (위 '동의 항목을 왜 나누나' 참고). 체크박스 라벨은 이미 '개인정보
-   수집·이용 동의' 인데 이 줄만 옛 표현으로 남아 있었다.
+   그래서 네 경로 모두가 진짜 동의 절차를 갖도록 바꿨다.
 
-   '만 14세 이상임을 확인합니다' 가 아니라 '만 14세 이상만 가입할 수
-   있습니다' 다. 사용자가 자기 나이를 우리에게 확인해 주는 형태가 아니라,
-   서비스의 가입 요건을 알리는 형태가 맞다. */
-export const SIGNUP_NOTICE =
-  "계속 진행하면 이용약관 및 개인정보 수집·이용에 동의하게 되며, " +
-  "만 14세 이상만 가입할 수 있습니다.";
+     카카오 — 카카오싱크 간편가입. 콘솔에 이용약관·개인정보 수집·이용을
+              필수 동의항목으로, 마케팅을 선택 동의항목으로 등록했고
+              만 14세 연령 동의도 걸었다.
+     네이버 — 개발자센터 콘솔에서 같은 세 가지를 받는다.
+     구글   — finishGoogleSignup 이 우리 모달을 띄운다.
+     이메일 — 가입 폼의 체크박스.
 
-export function noticeEl() {
-  const p = document.createElement("p");
-  p.className = "kc-notice";
-  const mk = (label, href) => {
-    const a = document.createElement("a");
-    a.href = href; a.target = "_blank"; a.rel = "noopener"; a.textContent = T(label);
-    return a;
-  };
-  p.appendChild(document.createTextNode(T("계속 진행하면 ")));
-  p.appendChild(mk("이용약관", "Terms.html"));
-  p.appendChild(document.createTextNode(T(" 및 ")));
-  p.appendChild(mk("개인정보 수집·이용", "Privacy.html"));
-  p.appendChild(document.createTextNode(
-    T("에 동의하게 되며, 만 14세 이상만 가입할 수 있습니다.")));
-  css();
-  return p;
-}
+   그러고 나니 이 줄은 하는 일이 없어졌다. 남겨 두는 편이 오히려 나빴다.
+   체크박스로 명시적 동의를 받아 놓고 그 아래에 "계속 진행하면 동의하게
+   되며" 라고 써 두면, 우리가 받은 동의를 우리 손으로 묵시적 동의라고
+   표시하는 셈이다. Signup.html 에서는 필수 체크박스 세 개 바로 아래에
+   그 문장이 붙어 있었다.
+
+   ⚠️ 남은 일. functions/index.js 의 socialLogin 은 아직 신규 소셜 가입자의
+      동의를 age14/terms/privacy = true 로 하드코딩한다. 카카오 간편가입이
+      승인되면 service_terms API 로 실제 동의 내역을 받아 그대로 기록해야
+      한다. 그래야 마케팅 선택 동의도 사람마다 제대로 들어온다. */
 
 /* 이 계정이 현재 판(version)의 동의를 갖고 있나.
    읽기에 실패하면 null 을 돌려준다 — '없다'와 구분해야 한다. 통신이 잠깐
@@ -539,7 +513,7 @@ export async function finishGoogleSignup(cred, isNewUser) {
     return false;
   }
   try {
-    await saveImpliedConsent(cred.user.uid, "google", cred.user.email || "", v.marketing);
+    await saveConsent(cred.user.uid, v, "google", cred.user.email || "");
   } catch (e) {
     try { await deleteUser(cred.user); } catch (_) {}
     try { await auth.signOut(); } catch (_) {}

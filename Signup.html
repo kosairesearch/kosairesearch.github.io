@@ -674,7 +674,7 @@ import { createUserWithEmailAndPassword, GoogleAuthProvider, signInWithPopup,
 import { wireSocialButtons } from "./social-login.js";
 import { goNext, mapAuthError, isUserCancelled } from "./auth-util.js";
 import { sendVerifyEmail } from "./auth-emails.js";
-import { renderConsent, saveConsent, noticeEl } from "./consent.js";
+import { renderConsent, saveConsent } from "./consent.js";
 
 const $ = s => document.querySelector(s);
 const T = m => (window.KOSi18n ? window.KOSi18n.t(m) : m);
@@ -685,8 +685,9 @@ function clearErr(){ errBox.style.display = 'none'; errBox.textContent = ''; }
 // 동의 항목 묶음 — 필수 3, 선택 1(마케팅). consent.js 가 문구와 검사를 갖는다.
 const consent = renderConsent();
 $('#consentMount').appendChild(consent.el);
-// 소셜 버튼 아래 한 줄 고지. 이 문구가 있어야 소셜 경로의 동의가 성립한다.
-document.querySelector('.social').appendChild(noticeEl());
+/* 소셜 버튼 아래 한 줄 고지는 걷어냈다 — consent.js 위쪽 참고.
+   이 페이지에서는 특히 중복이었다. 바로 위에 필수 체크박스를 세 개 그려 놓고
+   그 아래에서 "계속 진행하면 동의하게 되며" 라고 말하고 있었다. */
 function flagAgree(){ consent.validate(); }
 function go(){ goNext(); }
 

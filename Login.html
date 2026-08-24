@@ -711,11 +711,8 @@ $('#emailForm').addEventListener('submit', async e => {
   finally{ btn.disabled = false; }
 });
 
-// 소셜 버튼 아래 한 줄 고지. 이 문구가 있어야 소셜 경로의 동의가 성립한다.
-import('./consent.js').then(m => {
-  const box = document.querySelector('.social');
-  if(box && !box.querySelector('.kc-notice')) box.appendChild(m.noticeEl());
-}).catch(e => console.warn('[consent] 고지 문구 표시 실패:', e && e.message));
+/* 소셜 버튼 아래 한 줄 고지는 걷어냈다. 네 경로가 모두 진짜 동의 절차를
+   갖게 되어 이 줄이 하는 일이 없어졌기 때문이다 — consent.js 위쪽 참고. */
 
 $('#googleBtn').addEventListener('click', async () => {
   clearErr();
