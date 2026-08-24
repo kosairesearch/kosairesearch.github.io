@@ -235,9 +235,9 @@
  "market": "코스피",
  "reportDate": "2026-06-19",
  "reportTs": "2026-06-19 03:56",
- "dataDate": "20260821",
+ "dataDate": "20260824",
  "quant": {
-  "asOf": "2026-08-23",
+  "asOf": "2026-08-24",
   "fs_basis": "연결(CFS) · DART 공시 확정치 · 지배주주 기준 순이익",
   "annual": [
    {
@@ -310,19 +310,19 @@
     "q": "2025Q2",
     "rev": 258707356135,
     "op": 803218794,
-    "np_owner": 627243376
+    "np_owner": null
    },
    {
     "q": "2025Q3",
     "rev": 258806795593,
     "op": 11043204159,
-    "np_owner": 26587189050
+    "np_owner": null
    },
    {
     "q": "2025Q4",
     "rev": 376655381006,
     "op": 19394641821,
-    "np_owner": 71365869403
+    "np_owner": null
    },
    {
     "q": "2026Q1",
@@ -338,21 +338,22 @@
    }
   ],
   "valuation": {
-   "price": 6100,
-   "mcap": 0.0738,
+   "price": 6200,
+   "mcap": 0.0751,
    "shares": 12105146,
    "total_shares": 12105146,
    "wavg_shares": 12102116,
-   "per": 0.954,
+   "per": 0.97,
    "eps": 6392,
-   "pbr": 0.2913,
+   "pbr": 0.2961,
    "bps": 20938,
    "roe_ttm": 38.3,
    "ttm_window": "2025Q3~2026Q2",
    "ttm_np_owner": 82771886562,
    "ccy": "KRW",
    "bps_src": "자체",
-   "pbr_krx": 0.32,
+   "eps_src": "공시",
+   "pbr_krx": 0.33,
    "bps_krx": 18920.0,
    "basis": "PER·EPS·PBR·BPS 모두 자체 산출(네이버·토스와 동일 방식) · 배당은 DART 공시 주당현금배당금(보완:KRX) ÷ 현재가",
    "dps": 0.0,

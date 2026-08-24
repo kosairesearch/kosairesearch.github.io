@@ -235,9 +235,9 @@
  "market": "코스피",
  "reportDate": "2026-08-18",
  "reportTs": "2026-08-18 00:50",
- "dataDate": "20260821",
+ "dataDate": "20260824",
  "quant": {
-  "asOf": "2026-08-21",
+  "asOf": "2026-08-24",
   "fs_basis": "연결(CFS) · DART 공시 확정치 · 지배주주 기준 순이익",
   "annual": [
    {
@@ -248,6 +248,7 @@
     "np_owner": 17042931278,
     "equity": 387307034547,
     "equity_owner": 383478335438,
+    "equity_nci": 3828699109,
     "liab": 120017658415,
     "cfo": 41493545438,
     "eps_basic": 2845,
@@ -263,6 +264,7 @@
     "np_owner": 34260716272,
     "equity": 385299788248,
     "equity_owner": 382521328525,
+    "equity_nci": 2778459723,
     "liab": 171503934925,
     "cfo": 37206007604,
     "eps_basic": 5719,
@@ -278,6 +280,7 @@
     "np_owner": 24765773252,
     "equity": 360149387575,
     "equity_owner": 358666992099,
+    "equity_nci": 1482395476,
     "liab": 192037001542,
     "cfo": 65007131610,
     "eps_basic": 4133,
@@ -293,6 +296,7 @@
     "np_owner": 22711271647,
     "equity": 343181072027,
     "equity_owner": 342158767490,
+    "equity_nci": 1022304537,
     "liab": 211361071261,
     "cfo": 23334902794,
     "eps_basic": null,
@@ -334,30 +338,26 @@
    }
   ],
   "valuation": {
-   "price": 4480,
-   "mcap": 0.2688,
+   "price": 4600,
+   "mcap": 0.276,
    "shares": 60000000,
    "total_shares": 60000000,
    "wavg_shares": 59794097,
-   "per": 15.19,
+   "per": 15.593,
    "eps": 295,
-   "pbr": 0.68,
+   "pbr": 0.7033,
    "bps": 6541,
-   "roe_ttm": 13.8,
+   "roe_ttm": 4.6,
    "ttm_window": "2025Q3~2026Q2",
-   "ttm_np_owner": 53460000000,
-   "pbr_krx": 0.7,
+   "ttm_np_owner": 17660864439,
+   "ccy": "KRW",
+   "bps_src": "자체",
+   "eps_src": "공시",
+   "pbr_krx": 0.72,
    "bps_krx": 6401.0,
    "basis": "PER·EPS·PBR·BPS 모두 자체 산출(네이버·토스와 동일 방식) · 배당은 DART 공시 주당현금배당금(보완:KRX) ÷ 현재가",
    "dps": 109.0,
-   "div": 2.43,
-   "eps_basis_fixed": {
-    "on": "2026-08-22",
-    "공시": 891,
-    "순이익÷주식수": 295,
-    "배수": 0.33,
-    "why": "액면병합·감자로 주당이익 기준이 섞였다"
-   }
+   "div": 2.37
   }
  }
 }
