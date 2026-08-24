@@ -30,7 +30,41 @@ jobs:
       # 네트워크·API 키가 필요 없어 몇 초면 끝나고, 여기 걸리는 건 방법론 차이가
       # 아니라 전부 우리 버그다. 아래 네이버 대조보다 이쪽을 먼저 봐야 한다.
       - name: 자체 검산
-        run: python scripts/check_valuation.py 2>&1 | tail -60
+        id: selfcheck
+        run: |
+          set +e
+          python scripts/check_valuation.py 2>&1 | tail -60
+          python scripts/check_valuation.py --strict > /dev/null 2>&1
+          echo "ok=$?" >> "$GITHUB_OUTPUT"
+          exit 0
+
+      # 검산이 깨진 종목만 골라 다시 계산시킨다.
+      #
+      # 전 종목 재수집은 DART 하루 한도(2만 건)를 한 번에 다 먹는다. 실제로
+      # 하루에 세 번 돌렸다가 한도를 넘겨 반나절을 잃었다. 깨진 종목만
+      # 짚어서 돌리면 보통 수백 건이면 끝난다.
+      #
+      # 6시간마다 도는 이 워크플로에 달아 두면, 한도가 풀리는 대로(한국시간
+      # 자정) 저절로 이어진다 — 사람이 다시 눌러 줄 필요가 없다.
+      - name: 깨진 종목만 재계산 요청
+        if: ${{ steps.selfcheck.outputs.ok != '0' }}
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          tks=$(python scripts/_check_failed_tickers.py 400)
+          if [ -z "$tks" ]; then
+            echo "재계산 대상이 없거나 너무 많다 — 사람이 판단할 일."
+            exit 0
+          fi
+          n=$(echo "$tks" | tr ',' '\n' | wc -l | tr -d ' ')
+          running=$(gh run list --workflow=generate_reports_v2.yml --status in_progress \
+                      --json databaseId --jq 'length')
+          if [ "${running:-0}" -gt 0 ]; then
+            echo "이미 $running 개 돌고 있다 — 겹쳐 돌리지 않는다."
+            exit 0
+          fi
+          echo "🔧 검산에 걸린 $n 종목만 다시 계산한다." >> $GITHUB_STEP_SUMMARY
+          gh workflow run generate_reports_v2.yml -f mode=patch -f tickers="$tks"
       - name: 검증 실행
         env:
           DART_API_KEY: ${{ secrets.DART_API_KEY }}
