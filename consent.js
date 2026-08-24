@@ -96,11 +96,12 @@ if (window.KOSi18n) window.KOSi18n.register({
     "Could not save. Please try again in a moment.",
   "불러오지 못했어요. 잠시 후 다시 시도해 주세요.":
     "Could not load. Please try again in a moment.",
-  "가입하면 ": "By signing up you agree to our ",
+  "계속 진행하면 ": "By continuing you agree to the ",
   "이용약관": "Terms of Service",
-  "과 ": " and ",
-  "개인정보처리방침": "Privacy Policy",
-  "에 동의하며, 만 14세 이상임을 확인합니다.": ", and confirm you are 14 or older."
+  " 및 ": " and to the ",
+  "개인정보 수집·이용": "collection and use of your personal data",
+  "에 동의하게 되며, 만 14세 이상만 가입할 수 있습니다.":
+    ". Sign-up is limited to those aged 14 and over."
 });
 
 /* 필수 항목의 키. validate() 가 이 목록만 본다 — 항목을 늘릴 때
@@ -290,9 +291,26 @@ export async function saveImpliedConsent(uid, method, email, marketing) {
 
 /* 가입 버튼 아래에 붙는 한 줄. 소셜 버튼 밑에 이 문구가 있어야 위의
    saveImpliedConsent 가 성립한다 — 보여 준 적 없는 것에 동의시킬 수는 없다.
-   문구가 한 곳에만 있어야 페이지마다 달라지지 않는다. */
+   문구가 한 곳에만 있어야 페이지마다 달라지지 않는다.
+
+   문구를 고른 이유.
+
+   '가입하면' 이 아니라 '계속 진행하면' 이다. 이 줄은 Signup.html 뿐 아니라
+   Login.html 의 소셜 버튼 밑에도 붙는다 — 로그인하러 온 기존 회원에게
+   '가입하면' 이라고 말하고 있었다. 조건절 구어체라 약관 고지의 무게도
+   실리지 않는다.
+
+   '개인정보처리방침에 동의' 가 아니라 '개인정보 수집·이용에 동의' 다.
+   처리방침은 회사가 일방적으로 공개하는 문서라 동의를 받는 대상이 아니다
+   (위 '동의 항목을 왜 나누나' 참고). 체크박스 라벨은 이미 '개인정보
+   수집·이용 동의' 인데 이 줄만 옛 표현으로 남아 있었다.
+
+   '만 14세 이상임을 확인합니다' 가 아니라 '만 14세 이상만 가입할 수
+   있습니다' 다. 사용자가 자기 나이를 우리에게 확인해 주는 형태가 아니라,
+   서비스의 가입 요건을 알리는 형태가 맞다. */
 export const SIGNUP_NOTICE =
-  "가입하면 이용약관과 개인정보처리방침에 동의하며, 만 14세 이상임을 확인합니다.";
+  "계속 진행하면 이용약관 및 개인정보 수집·이용에 동의하게 되며, " +
+  "만 14세 이상만 가입할 수 있습니다.";
 
 export function noticeEl() {
   const p = document.createElement("p");
@@ -302,11 +320,12 @@ export function noticeEl() {
     a.href = href; a.target = "_blank"; a.rel = "noopener"; a.textContent = T(label);
     return a;
   };
-  p.appendChild(document.createTextNode(T("가입하면 ")));
+  p.appendChild(document.createTextNode(T("계속 진행하면 ")));
   p.appendChild(mk("이용약관", "Terms.html"));
-  p.appendChild(document.createTextNode(T("과 ")));
-  p.appendChild(mk("개인정보처리방침", "Privacy.html"));
-  p.appendChild(document.createTextNode(T("에 동의하며, 만 14세 이상임을 확인합니다.")));
+  p.appendChild(document.createTextNode(T(" 및 ")));
+  p.appendChild(mk("개인정보 수집·이용", "Privacy.html"));
+  p.appendChild(document.createTextNode(
+    T("에 동의하게 되며, 만 14세 이상만 가입할 수 있습니다.")));
   css();
   return p;
 }
