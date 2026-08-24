@@ -204,7 +204,7 @@ body::before{content:"";position:fixed;inset:0;z-index:-1;pointer-events:none;
 .sec-title{margin:0 0 18px;font-size:clamp(22px,3vw,28px);font-weight:700;letter-spacing:-.03em}
 .hairline{border:0;border-top:1px solid var(--hair);max-width:880px;margin:42px auto 0}
 
-.prose p{margin:0 0 15px;font:400 16px/1.75 var(--font-sans);color:var(--fg-2);text-wrap:pretty}
+.prose p{margin:0 0 20px;font:400 16px/1.75 var(--font-sans);color:var(--fg-2);text-wrap:pretty}
 .prose p b,.prose strong{font-weight:700;color:var(--fg-1)}
 /* 한국어 본문 줄바꿈 통일: 단어 단위로 끊고(중간 끊김 방지), 정렬·줄바꿈 일관화 */
 .prose p,.factor p,.tldr p,.kpoints li,.risk .body,.overview .lead,.desc,.sec-lead,.wrapup p{word-break:keep-all;overflow-wrap:break-word}
@@ -272,13 +272,15 @@ table.dt .pos{color:var(--up);font-weight:700}table.dt .neg{color:var(--down);fo
 .factor .fh{display:flex;align-items:baseline;gap:9px;font:700 17px var(--font-sans);letter-spacing:-.01em;margin:0 0 8px}
 .factor .fh .mk{font-size:13px;flex:0 0 auto}
 .factor.bull .fh .mk{color:var(--up)}.factor.bear .fh .mk{color:var(--down)}
-.factor p{margin:0;font:400 15px/1.7 var(--font-sans);color:var(--fg-2)}
+.factor p{margin:0 0 14px;font:400 15px/1.7 var(--font-sans);color:var(--fg-2)}
+.factor p:last-child{margin-bottom:0}
 
 /* risk grid */
 .risk{display:grid;grid-template-columns:140px 1fr;gap:1px;background:var(--hair);border:1px solid var(--hair);border-radius:var(--radius-md);overflow:hidden}
 .risk .cat{background:rgba(0,0,0,.03);padding:18px 16px;font:700 14px var(--font-sans);color:var(--fg-1)}
 :root[data-theme="dark"] .risk .cat{background:rgba(255,255,255,.03)}
 .risk .body{background:rgba(255,255,255,0.35);padding:18px 18px;font:400 14.5px/1.65 var(--font-sans);color:var(--fg-2)}
+.risk .body p{margin:0 0 13px}.risk .body p:last-child{margin-bottom:0}
 :root[data-theme="dark"] .risk .body{background:rgba(255,255,255,0.02)}
 
 /* finance tabs */
@@ -311,7 +313,8 @@ table.dt .pos{color:var(--up);font-weight:700}table.dt .neg{color:var(--down);fo
 /* wrap-up */
 .wrapup{padding:24px 26px}
 .wrapup .label{font:700 11px var(--font-sans);letter-spacing:.06em;color:var(--fg-3);margin-bottom:10px}
-.wrapup p{margin:0 0 12px;font:400 16px/1.7 var(--font-sans);color:var(--fg-2)}
+.wrapup p{margin:0 0 18px;font:400 16px/1.7 var(--font-sans);color:var(--fg-2)}
+.wrapup p:last-child{margin-bottom:0}
 .wrapup p:last-child{margin:0}
 
 /* disclaimer + footer */
@@ -1004,18 +1007,49 @@ KOSi18n.register({
       .replace(/([.!?])\s+(?=[A-Z가-힣"'(])/g, '$1'+SEP);
     return m.split(SEP).map(function(s){return s.trim();}).filter(Boolean);
   }
-  function chunkPara(p, n){
+  // 문단을 '문장 몇 개' 가 아니라 '글자 몇 자' 로 끊는다.
+  //
+  // 예전에는 세 문장마다 잘랐는데, 문장 길이가 제각각이라 문단이 중앙값
+  // 257자·상위 10%는 340자까지 나왔다. 휴대폰에서 한 문단이 12~15줄이라
+  // 벽처럼 보인다. 글자 수로 끊으면 중앙값 113자(5줄)·상위 10%도 7줄이다.
+  //
+  // 문장 중간에서는 절대 자르지 않는다. 그래서 한 문장이 예산보다 길면
+  // 그 문단은 그대로 길어지는데, 11,230문단 중 250자를 넘는 것이 4개뿐이라
+  // 굳이 문장을 쪼개지 않는다 — 어색하게 끊느니 드물게 긴 편이 낫다.
+  var PARA_KO=170, PARA_EN=320;   // 한글은 글자당 정보량이 커서 예산이 작다
+  function chunkPara(p){
     var s=splitSentences(p);
-    if(s.length<=n+1) return [p];
-    var out=[],i; for(i=0;i<s.length;i+=n){ out.push(s.slice(i,i+n).join(' ')); }
+    if(s.length<2) return [p];
+    var budget=/[가-힣]/.test(p)?PARA_KO:PARA_EN;
+    var out=[],cur='',i,nx;
+    for(i=0;i<s.length;i++){
+      nx = cur ? cur+' '+s[i] : s[i];
+      if(cur && nx.length>budget){ out.push(cur); cur=s[i]; }
+      else cur=nx;
+    }
+    if(cur) out.push(cur);
+    // 마지막 조각이 한 줄짜리 외톨이로 남으면 앞 문단에 붙인다.
+    if(out.length>1 && out[out.length-1].length < budget*0.35){
+      out[out.length-2] += ' '+out.pop();
+    }
     return out;
   }
   function prose(o){ var t=pk(o); if(!t)return '';
     var paras=[];
-    String(t).split(/\n\n+/).forEach(function(p){ chunkPara(p.trim(),3).forEach(function(c){ if(c)paras.push(c); }); });
+    String(t).split(/\n\n+/).forEach(function(p){ chunkPara(p.trim()).forEach(function(c){ if(c)paras.push(c); }); });
     return '<div class="prose">'+paras.map(function(p){return '<p>'+esc(p)+'</p>';}).join('')+'</div>'; }
-  function factors(arr,cls,mk){ if(!arr||!arr.length)return ''; return arr.map(function(f){return '<div class="factor '+cls+'"><p class="fh"><span class="mk">'+mk+'</span>'+esc(pk(f.title))+'</p><p>'+esc(pk(f.body))+'</p></div>';}).join(''); }
-  function risksH(arr){ if(!arr||!arr.length)return ''; return '<div class="risk">'+arr.map(function(r){return '<div class="cat">'+esc(pk(r.cat))+'</div><div class="body">'+esc(pk(r.body))+'</div>';}).join('')+'</div>'; }
+  // 한 덩어리 텍스트를 읽기 좋은 길이의 <p> 여러 개로. prose() 와 같은 규칙이다.
+  // bull·bear·risk 본문과 종합 의견은 prose() 를 안 거쳐서 통째로 한 문단이었다
+  // (종합 의견은 중앙 666자 — 휴대폰에서 29줄이다).
+  function ps(t){
+    t=String(t==null?'':t);
+    if(!t.trim()) return '';
+    var out=[];
+    t.split(/\n\n+/).forEach(function(x){ chunkPara(x.trim()).forEach(function(c){ if(c)out.push(c); }); });
+    return out.map(function(c){ return '<p>'+esc(c)+'</p>'; }).join('');
+  }
+  function factors(arr,cls,mk){ if(!arr||!arr.length)return ''; return arr.map(function(f){return '<div class="factor '+cls+'"><p class="fh"><span class="mk">'+mk+'</span>'+esc(pk(f.title))+'</p>'+ps(pk(f.body))+'</div>';}).join(''); }
+  function risksH(arr){ if(!arr||!arr.length)return ''; return '<div class="risk">'+arr.map(function(r){return '<div class="cat">'+esc(pk(r.cat))+'</div><div class="body">'+ps(pk(r.body))+'</div>';}).join('')+'</div>'; }
   function pad(x){ return x<10?'0'+x:''+x; }
   function secOpen(num,kick,title){ return '<section class="sec col"><div class="sec-kicker"><span class="sec-num">'+num+'</span> · '+kick+'</div><h2 class="sec-title">'+esc(title)+'</h2>'; }
 
@@ -1194,7 +1228,7 @@ KOSi18n.register({
       }).join('')+'</div></section><hr class="hairline" />';
     }
     h+=secOpen(pad(n++),'VERDICT',u.sec.verdict);
-    h+='<div class="wrapup glass"><p>'+esc(REP.verdict?pk(REP.verdict.body):'')+'</p></div></section>';
+    h+='<div class="wrapup glass">'+ps(REP.verdict?pk(REP.verdict.body):'')+'</div></section>';
     var baseCards=[
       srcCardL(u.srcKRX, u.srcKRXsub, 'https://data.krx.co.kr', '📊'),
       srcCardL(u.srcDART, u.srcDARTsub, 'https://dart.fss.or.kr', '📄')
@@ -1266,7 +1300,7 @@ KOSi18n.register({
       h+=secOpen(pad(n++),'RISK',u.sec.risk)+risksH(REP.risks)+'</section><hr class="hairline" />';
       h+=secOpen(pad(n++),'VERDICT',u.sec.verdict);
       // 투자의견(stance)은 표시하지 않음 — 당사는 투자자문업 등록 사업자가 아님(법적 제약). 정성 요약(body)만 노출.
-      h+='<div class="wrapup glass"><p>'+esc(REP.verdict?pk(REP.verdict.body):'')+'</p></div></section>';
+      h+='<div class="wrapup glass">'+ps(REP.verdict?pk(REP.verdict.body):'')+'</div></section>';
       // 참고 출처: 기본(KRX·DART)을 항상 먼저, 그 뒤 웹 인용
       var baseCards=[
         srcCardL(u.srcKRX, u.srcKRXsub, 'https://data.krx.co.kr', '📊'),

@@ -33,6 +33,76 @@ ROOT = Path(__file__).resolve().parent.parent
 BRIEFS = ROOT / "data" / "briefs"
 PAGE = ROOT / "brief.html"
 
+# ── 문단 자르기 ──────────────────────────────────────────────────────────
+# 모델이 내주는 한 '문단' 이 500~650자다. 휴대폰에서 25줄쯤 이어져 벽처럼
+# 보인다. 여기서 읽기 좋은 길이로 잘라 여러 <p> 로 내보낸다.
+#
+# 주의: 이 사이트의 i18n 은 화면의 한국어 텍스트를 키로 쓴다. 그래서 한국어만
+# 자르면 잘린 조각들이 사전에 없어 영어 모드에서 한국어가 그대로 남는다.
+# 한국어를 N 조각으로 자르면 영어도 반드시 같은 N 조각으로 맞춰 자른다.
+PARA_KO = 170      # 한 문단 목표 글자 수(한글) — 휴대폰에서 대략 5~7줄
+PARA_EN = 320
+
+_SENT_RE = re.compile(r'(?<=[다요죠음함됨임]\.)\s+|(?<=[.!?])\s+(?=[A-Z가-힣"\'(])')
+
+
+def split_sentences(t):
+    return [x.strip() for x in _SENT_RE.split(t or "") if x and x.strip()]
+
+
+def chunk_text(t, budget):
+    """문장 경계에서만 자른다. 문장 중간은 절대 건드리지 않는다."""
+    sents = split_sentences(t)
+    if len(sents) < 2:
+        return [t.strip()] if (t or "").strip() else []
+    out, cur = [], ""
+    for x in sents:
+        nx = (cur + " " + x) if cur else x
+        if cur and len(nx) > budget:
+            out.append(cur)
+            cur = x
+        else:
+            cur = nx
+    if cur:
+        out.append(cur)
+    # 마지막 조각이 한 줄짜리 외톨이면 앞에 붙인다
+    if len(out) > 1 and len(out[-1]) < budget * 0.35:
+        out[-2] = out[-2] + " " + out.pop()
+    return out
+
+
+def group_evenly(sents, n):
+    """문장 목록을 n 덩어리로 고르게 나눈다. 문장이 모자라면 None."""
+    if n <= 1:
+        return [" ".join(sents)]
+    if len(sents) < n:
+        return None
+    return [" ".join(sents[len(sents) * i // n:len(sents) * (i + 1) // n])
+            for i in range(n)]
+
+
+def chunk_pair(ko, en):
+    """(ko, en) 한 쌍을 같은 개수의 조각들로 자른다 → [(ko_i, en_i), ...]"""
+    ko = (ko or "").strip()
+    en = (en or "").strip()
+    ko_parts = chunk_text(ko, PARA_KO)
+    if len(ko_parts) <= 1:
+        return [(ko, en)] if ko else []
+    if not en:
+        return [(k, "") for k in ko_parts]
+    en_sents = split_sentences(en)
+    n = len(ko_parts)
+    en_parts = group_evenly(en_sents, n)
+    if en_parts is None:
+        # 영어 문장이 조각 수보다 적다 → 맞출 수 있는 만큼만 자른다.
+        n = max(1, len(en_sents))
+        ko_parts = group_evenly(split_sentences(ko), n) or [ko]
+        en_parts = group_evenly(en_sents, n) or [en]
+        if len(ko_parts) != len(en_parts):
+            return [(ko, en)]          # 그래도 안 맞으면 자르지 않는다
+    return list(zip(ko_parts, en_parts))
+
+
 BODY_START = "<!-- BRIEF:BODY:START"
 BODY_END = "<!-- BRIEF:BODY:END -->"
 I18N_START = "/* BRIEF:I18N:START"
@@ -189,11 +259,15 @@ def build(doc, at=None):
     # summary 는 나중에 생긴 항목이라 옛 브리핑에는 없다. 없으면 통째로 건너뛴다.
     if has_sum:
         dic[SUM_LABEL[0]] = SUM_LABEL[1]
-        row = pair(sm, cls="mb-sum-p")
         L.append("")
         L.append('    <aside class="mb-sum">')
         L.append(f'      <div class="mb-sum-h">{html.escape(SUM_LABEL[0])}</div>')
-        L.append("      " + row)
+        # 목록이 아니라 이어지는 문단이라는 규칙은 그대로다 — 항목으로 쪼개지
+        # 않고, 읽기 좋은 길이에서 문단만 나눈다.
+        for ko_c, en_c in chunk_pair(sm.get("ko"), sm.get("en")):
+            row = pair({"ko": ko_c, "en": en_c}, cls="mb-sum-p")
+            if row:
+                L.append("      " + row)
         L.append("    </aside>")
 
     for sec in doc.get("sections") or []:
@@ -210,9 +284,10 @@ def build(doc, at=None):
             L.append('    <section class="mb-sec">')
         L.append(f'      <h2>{to_html(h_ko)}</h2>')
         for p in sec.get("paragraphs") or []:
-            row = pair(p)
-            if row:
-                L.append("      " + row)
+            for ko_c, en_c in chunk_pair(p.get("ko"), p.get("en")):
+                row = pair({"ko": ko_c, "en": en_c})
+                if row:
+                    L.append("      " + row)
         L.append("    </section>")
 
     L.append("")
