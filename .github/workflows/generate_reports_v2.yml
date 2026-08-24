@@ -78,8 +78,19 @@ jobs:
           RECOVER_BATCH_ID: ${{ inputs.recover_batch_id }}
           BATCH_MAX_WAIT_SEC: '18000'
           DUMP_EPS: ${{ inputs.dump_eps }}
+        id: run
         run: |
-          python scripts/generate_reports_v2.py "${{ inputs.mode }}" 2>&1 | tee data/reports_v2_run.log || true
+          # tee 를 거치면 파이프의 종료 코드가 tee 의 것이 되고, 뒤의 '|| true' 까지
+          # 있어서 스크립트가 죽어도 잡이 '성공' 으로 찍혔다. 실제로 DART 하루 호출
+          # 한도를 넘겨 8개 run 이 1분 만에 빈손으로 끝났는데 전부 초록불이었다.
+          # 부분 결과는 그대로 커밋해야 하므로 여기서 죽이지는 않고, 코드를 남겨
+          # 커밋 뒤에 잡을 실패로 표시한다.
+          set +e
+          python scripts/generate_reports_v2.py "${{ inputs.mode }}" 2>&1 | tee data/reports_v2_run.log
+          code=${PIPESTATUS[0]}
+          echo "code=$code" >> "$GITHUB_OUTPUT"
+          echo "스크립트 종료 코드: $code"
+          exit 0
 
       - name: 결과 커밋
         run: |
@@ -105,6 +116,18 @@ jobs:
 
       # 자동 백필 self-chain: 상위 fill_to개 중 남은 종목이 있고 이번에 진척이 있었으면 다음 청크 재실행.
       # 진척 0(생성 불가 종목만 남음)이면 멈춰서 무한루프 방지.
+      # 스크립트가 오류로 끝났으면 잡을 실패로 표시한다. 부분 결과는 위에서 이미
+      # 커밋했으므로 잃는 것은 없고, 대신 초록불에 속지 않는다.
+      - name: 실행 실패 표시
+        if: ${{ steps.run.outputs.code != '0' }}
+        run: |
+          echo "⛔ 스크립트가 오류로 끝났다 (종료 코드 ${{ steps.run.outputs.code }})" >> $GITHUB_STEP_SUMMARY
+          if grep -q "사용한도를 초과" data/reports_v2_run.log 2>/dev/null; then
+            echo "원인: DART 하루 호출 한도 초과 — 한국시간 자정에 풀린다." >> $GITHUB_STEP_SUMMARY
+          fi
+          tail -30 data/reports_v2_run.log 2>/dev/null || true
+          exit 1
+
       - name: 다음 청크 self-chain
         if: ${{ always() && inputs.fill_to != '0' && inputs.fill_to != '' }}
         env:
