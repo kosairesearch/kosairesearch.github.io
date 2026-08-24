@@ -1,6 +1,6 @@
 // KOS ai — 자동 생성 데이터 파일. 직접 수정하지 마세요.
 window.KOS_LIVE_DATA = {
-  "lastUpdated": "2026-08-25 04:22",
+  "lastUpdated": "2026-08-25 06:52",
   "dataDate": "20260824",
   "stocks": [
     {
@@ -17668,7 +17668,7 @@ window.KOS_LIVE_DATA = {
     {
       "ticker": "417030",
       "name": "니어스랩",
-      "name_en": "",
+      "name_en": "Nearthlab Inc.",
       "market": "코스닥",
       "sector": "항공·방산",
       "price": 28650,
@@ -17677,6 +17677,7 @@ window.KOS_LIVE_DATA = {
       "trading_value": 286360982600,
       "mcap": 0.1655,
       "shares": 5777556,
+      "induty_code": "58221",
       "categories": [
         "항공·방산"
       ],
