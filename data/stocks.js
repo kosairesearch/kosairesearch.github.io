@@ -1,6 +1,6 @@
 // KOS ai — 자동 생성 데이터 파일. 직접 수정하지 마세요.
 window.KOS_LIVE_DATA = {
-  "lastUpdated": "2026-08-26 00:25",
+  "lastUpdated": "2026-08-26 00:59",
   "dataDate": "20260825",
   "stocks": [
     {
@@ -6023,7 +6023,7 @@ window.KOS_LIVE_DATA = {
       "name": "한화머시너리앤서비스홀딩스",
       "name_en": "",
       "market": "코스피",
-      "sector": "기타",
+      "sector": "지주",
       "price": 10010,
       "change": 0.1,
       "volume": 14775257,
@@ -6031,7 +6031,7 @@ window.KOS_LIVE_DATA = {
       "mcap": 0.846,
       "shares": 84515535,
       "categories": [
-        "기타"
+        "지주"
       ],
       "rank": 335
     },
@@ -27516,7 +27516,7 @@ window.KOS_LIVE_DATA = {
       "name": "해치텍",
       "name_en": "",
       "market": "코스닥",
-      "sector": "기타",
+      "sector": "기계·장비",
       "price": 13930,
       "change": -39.43,
       "volume": 8400524,
@@ -27524,7 +27524,7 @@ window.KOS_LIVE_DATA = {
       "mcap": 0.0764,
       "shares": 5487150,
       "categories": [
-        "기타"
+        "기계·장비"
       ],
       "rank": 1527
     },
