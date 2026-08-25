@@ -1,13 +1,13 @@
 DART_KEY_SET=true (len=40)
-=== 스크립트 시작 Tue Aug 25 07:31:54 UTC 2026 ===
+=== 스크립트 시작 Tue Aug 25 10:46:54 UTC 2026 ===
 =======================================================
   KOS ai 데이터 수집 시작
 =======================================================
 KRX 로그인 시도...
   로그인 ID: qjawnsdla
 KRX 로그인 완료.
-  로그인 시간: 2026-08-25 07:31:58
-  만료 시간: 2026-08-25 08:31:58
+  로그인 시간: 2026-08-25 10:46:57
+  만료 시간: 2026-08-25 11:46:57
   기준일: 20260825
 
 ## KOS ai 데이터 수집 — 20260825
@@ -15,10 +15,11 @@ KRX 로그인 완료.
   [krx-cache] 가격 유효 2687개 종목 (우선주·스팩 188개 제외)
 - pykrx 수집: 2687개 종목
 - 영문명 이월: 2681개
-  [DART] 초기화 실패: HTTPSConnectionPool(host='opendart.fss.or.kr', port=443): Max retries exceeded with url: /api/corpCode.xml?crtfc_key=fe32f957e40b37428b0d5f4807aa495839506436 (Caused by ConnectTimeoutError(<HTTPSConnection(host='opendart.fss.or.kr', port=443) at 0x7f9b2f4f8f50>, 'Connection to opendart.fss.or.kr timed out. (connect timeout=None)'))
+  [DART] 영문명 미보강 28개 종목 DART 수집 중...
+  [DART] 영문명·시총 보강 완료
   [분류] AI 업종 캐시 2707개 적용
   [분류] 카테고리 부여 완료 — 기타 37/2687개
 - 전 종목 수집 2687개(기존 2687) — 상폐 자동 정리 적용
-✅ data/stocks.js 생성 완료 — 2687개 종목 (2026-08-25 16:34 KST)
+✅ data/stocks.js 생성 완료 — 2687개 종목 (2026-08-25 19:47 KST)
 - 최종 출력: 2687개 종목
 =======================================================
