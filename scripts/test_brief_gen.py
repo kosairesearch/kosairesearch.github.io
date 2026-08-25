@@ -555,6 +555,53 @@ ok("동기 비용", abs(c["usd"] - 0.225) < 1e-6, str(c))
 ok("배치는 반값", abs(G.cost(U(), batch=True)["usd"] - 0.1125) < 1e-6)
 ok("키가 없으면 None", G.cost(None) is None)
 
+print("\n⑫ 렌더러 — 문단 나누기")
+
+# 여태 이 파일은 생성기만 봤고 렌더러는 아무도 안 봤다. 그래서 2026-08-25
+# 브리핑이 발행되지 못했다. 글은 06:23 에 멀쩡히 만들어졌는데 07:28 발행
+# 슬롯에서 render_brief.chunk_text 가 IndexError 로 죽었고, 예비 슬롯도 같은
+# 곳에서 죽었다. 생성은 성공했으니 '브리핑 생성 실패' 알림도 안 왔다.
+#
+# 원인은 한 줄이었다.
+#     out[-2] = out[-2] + " " + out.pop()
+# 파이썬은 오른쪽을 먼저 계산하고 왼쪽 첨자를 그 뒤에 본다. pop 이 리스트를
+# 줄인 뒤 out[-2] 를 평가하므로 조각이 둘이면 죽고 셋 이상이면 한 칸 앞
+# 문단에 갖다 붙인다. 같은 로직의 자바스크립트 판(stock.html)은 += 의 왼쪽
+# 참조를 먼저 잡아서 멀쩡했다 — 옮겨 적을 때 평가 순서를 놓쳤다.
+import render_brief as R
+
+# 조각이 정확히 둘이고 마지막이 짧을 때. 여기가 죽던 자리다.
+_two = "코스피가 어제보다 올랐다. " * 12 + "짧다."
+_r = R.chunk_text(_two, R.PARA_KO)
+ok("조각 2개 + 짧은 꼬리에서 죽지 않는다", bool(_r) and all(_r), str(_r)[:120])
+
+# 조각이 셋 이상일 때 문장이 사라지거나 딴 문단에 복사되지 않는지.
+# 문장마다 고유한 표식을 넣는다('1번'이 '11번'에 겹치지 않도록 <n> 로 감쌈).
+_sents = [f"<{i}> 이 문장은 여기에 있다." for i in range(1, 40)]
+_r3 = R.chunk_text(" ".join(_sents), R.PARA_KO)
+_joined = " ".join(_r3)
+ok("조각 3개 이상 — 문장 유실 없음",
+   all(s in _joined for s in _sents),
+   f"조각 {len(_r3)}개")
+ok("조각 3개 이상 — 문단 중복 복사 없음",
+   all(_joined.count(f"<{i}>") == 1 for i in range(1, 40)))
+
+ok("빈 문단은 조각도 없다", R.chunk_text("", R.PARA_KO) == [])
+ok("한 문장은 자르지 않는다", len(R.chunk_text("한 문장뿐이다.", R.PARA_KO)) == 1)
+
+# 한국어와 영어는 반드시 같은 개수로 잘려야 한다. 개수가 어긋나면 잘린
+# 조각이 사전에 없어 영어 모드에서 그 문단만 한국어로 남는다.
+_ko = "".join(f"{i}번째 문장이 여기 있다. " for i in range(1, 25))
+_en = "".join(f"This is sentence number {i}. " for i in range(1, 25))
+_pairs = R.chunk_pair(_ko, _en)
+ok("한국어·영어 조각 수가 같다", bool(_pairs) and all(k and e for k, e in _pairs),
+   f"{len(_pairs)}쌍")
+
+# 영어 문장이 조각 수보다 적으면 자르지 않고 통째로 둔다(짝을 못 맞추느니).
+_pairs2 = R.chunk_pair(_ko, "One long English sentence without any splits at all.")
+ok("영어가 모자라면 짝을 깨지 않는다",
+   all(k and e for k, e in _pairs2), str(len(_pairs2)))
+
 print("\n" + "=" * 60)
 if FAIL:
     print(f"❌ 실패 {len(FAIL)}건: {', '.join(FAIL)}")

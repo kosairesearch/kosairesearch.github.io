@@ -65,9 +65,21 @@ def chunk_text(t, budget):
             cur = nx
     if cur:
         out.append(cur)
-    # 마지막 조각이 한 줄짜리 외톨이면 앞에 붙인다
+    # 마지막 조각이 한 줄짜리 외톨이면 앞에 붙인다.
+    #
+    # 꺼내고 나서 붙인다. 한 줄로 쓰면 안 된다 —
+    #     out[-2] = out[-2] + " " + out.pop()
+    # 파이썬은 오른쪽을 먼저 계산하고 왼쪽 첨자를 그 뒤에 본다. pop 이 리스트를
+    # 줄여 놓은 상태에서 out[-2] 를 평가하므로, 조각이 둘이면 IndexError 로
+    # 죽고 셋 이상이면 한 칸 앞 문단에 갖다 붙인다. 실제로 2026-08-25 브리핑이
+    # 이걸로 발행되지 못했다.
+    #
+    # stock.html 의 같은 로직(out[out.length-2] += ' '+out.pop())은 멀쩡하다.
+    # 자바스크립트는 += 의 왼쪽 참조를 먼저 잡는다. 옮겨 적을 때 평가 순서가
+    # 반대라는 걸 놓쳤다.
     if len(out) > 1 and len(out[-1]) < budget * 0.35:
-        out[-2] = out[-2] + " " + out.pop()
+        tail = out.pop()
+        out[-1] = out[-1] + " " + tail
     return out
 
 
