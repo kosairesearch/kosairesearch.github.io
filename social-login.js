@@ -69,9 +69,18 @@ async function completeLogin(code, returnedState, saved, onError){
     /* 같은 이메일을 쓰는 계정이 이미 있어 서버가 만들지 않은 경우.
        코드만 붙여 내보내면 무슨 일인지 알 수 없다 — 서버가 보낸 문장을
        그대로 보여 준다("이미 이메일로 가입된 이메일입니다." 같은 형태다). */
+    /* 같은 이메일을 쓰는 계정이 이미 있어 서버가 만들지 않은 경우.
+       서버 문장을 그대로 내보내면 길고 한국어뿐이라 화면과 어긋난다.
+       서버가 details.method 로 어느 방법인지 알려 주므로 문구는 여기서
+       만든다 — 로그인·가입 화면과 같은 한 줄을 쓴다. */
     const code = String((err && err.code) || "");
     if(code.indexOf("already-exists") >= 0){
-      onError && onError(err.message || T("이미 다른 방법으로 가입된 이메일입니다."));
+      let msg = "";
+      try{
+        const { hintText } = await import("./auth-hint.js");
+        msg = hintText((err && err.details && err.details.method) || "");
+      }catch(_){}
+      onError && onError(msg || err.message || T("이미 다른 방법으로 가입된 이메일입니다."));
       return;
     }
     onError && onError(T("소셜 로그인에 실패했습니다.") + " (" + (err.code || err.message || "") + ")");

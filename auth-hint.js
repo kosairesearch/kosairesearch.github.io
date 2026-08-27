@@ -46,6 +46,13 @@ export async function signinMethod(email) {
   } catch (e) { return null; }
 }
 
+/* 문구만 돌려준다. 오류 메시지처럼 문자열 한 개만 받는 자리에서 쓴다
+   (소셜 로그인은 서버가 보낸 문장을 그대로 내보내고 있었다 — 서버 문장은
+   길고 한국어뿐이라 화면과 어긋났다). 모르면 빈 문자열. */
+export function hintText(method) {
+  return HINT[method] ? T(HINT[method]) : "";
+}
+
 /* 안내 문구를 box 에 그린다. 그릴 것이 있으면 true. */
 export function renderHint(box, method) {
   const line = HINT[method];
