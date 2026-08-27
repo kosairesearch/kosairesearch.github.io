@@ -1055,6 +1055,7 @@ exports.adminUserList = onCall({ region: REGION, cors: true }, async (req) => {
       marketing: !!c.marketing,
       marketingAt: tsIso(u.marketingAt),
       live: null,          // Auth 에 계정이 실제로 있는가
+      authEmail: null,     // Auth 쪽에 이메일이 심겨 있는가
       emailVerified: null,
     };
   });
@@ -1073,6 +1074,12 @@ exports.adminUserList = onCall({ region: REGION, cors: true }, async (req) => {
         const au = byUid.get(r.uid);
         r.live = !!au;
         if (au) {
+          /* 이메일 칸은 users 문서에서 가져오는데 인증 여부는 Auth 에서
+             온다. 8월 27일 전에 만들어진 카카오·네이버 계정은 Auth 에
+             이메일이 아예 없어서(그때는 일부러 안 심었다) 표에는 주소가
+             보이는데 인증은 false 로 나온다 — 없는 문제를 있는 것처럼
+             보이게 한다. 두 가지를 구분해서 내보낸다. */
+          r.authEmail = au.email ? au.email.toLowerCase() : null;
           r.emailVerified = !!au.emailVerified;
           if (!r.email && au.email) r.email = au.email.toLowerCase();
         }
