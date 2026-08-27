@@ -149,7 +149,13 @@ async function naverProfile(code, redirectUri, state){
 
    이메일은 users/{uid}.email 에만 있으므로 여기서 찾는다. 단일 필드 조회라
    색인을 따로 만들 필요가 없다. */
-const METHOD_KO = { email: "이메일", google: "구글", kakao: "카카오", naver: "네이버" };
+/* 어느 방법으로 가입했는지를 사람 말로. '이메일(으)로 가입된 이메일입니다'
+   처럼 말이 겹치지 않도록 '가입'·'로그인' 을 붙여 둔다. 넷 다 받침이 있거나
+   'ㄹ' 로 끝나 조사는 '으로' 하나로 통일된다. */
+const METHOD_KO = {
+  email: "이메일 가입", google: "구글 로그인",
+  kakao: "카카오 로그인", naver: "네이버 로그인",
+};
 
 async function findOtherAccountByEmail(db, email, selfUid) {
   const mail = String(email || "").trim().toLowerCase();
@@ -157,11 +163,28 @@ async function findOtherAccountByEmail(db, email, selfUid) {
   const q = await db.collection("users").where("email", "==", mail).limit(5).get();
   for (const doc of q.docs) {
     if (doc.id === selfUid) continue;
+
+    /* 문서가 있다고 계정이 있는 것은 아니다. 콘솔에서 Auth 사용자만 지우면
+       users 문서는 그대로 남는다. 그 유령 기록을 그대로 믿으면 그 이메일
+       주소가 영구히 막힌다 — 실제로 그렇게 걸렸다. 계정이 살아 있는지
+       확인하고, 없으면 남은 문서를 치우고 넘어간다. */
+    try {
+      await admin.auth().getUser(doc.id);
+    } catch (e) {
+      if (e && e.code === "auth/user-not-found") {
+        try { await doc.ref.delete(); } catch (_) {}
+        console.log(`[dup] 유령 문서 정리 ${doc.id} (${mail})`);
+        continue;
+      }
+      throw e;                       // 조회 자체가 실패하면 막지도 통과시키지도 않는다
+    }
+
     const m = (doc.data() || {}).signupMethod || "";
     return { uid: doc.id, method: m, label: METHOD_KO[m] || m || "다른 방법" };
   }
   return null;
 }
+
 
 exports.socialLogin = onCall(
   {
@@ -205,7 +228,7 @@ exports.socialLogin = onCall(
       const other = await findOtherAccountByEmail(admin.firestore(), p.email, uid);
       if(other){
         throw new HttpsError("already-exists",
-          `이미 ${other.label}(으)로 가입된 이메일입니다.`, { method: other.method });
+          `이 주소는 이미 ${other.label}으로 등록되어 있습니다. 그 방법으로 로그인해 주세요.`, { method: other.method });
       }
     }
 
@@ -631,7 +654,7 @@ exports.recordSignupConsent = onCall({ region: REGION, cors: true }, async (req)
     const other = await findOtherAccountByEmail(db, email, uid);
     if (other) {
       throw new HttpsError("already-exists",
-        `이미 ${other.label}(으)로 가입된 이메일입니다.`, { method: other.method });
+        `이 주소는 이미 ${other.label}으로 등록되어 있습니다. 그 방법으로 로그인해 주세요.`, { method: other.method });
     }
   }
 
