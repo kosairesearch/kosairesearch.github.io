@@ -52,6 +52,16 @@ NAME_EN_OVERRIDE = {
     "0010F0": "Bowon Chemical",
     "0070X0": "S-Tech M",
     "0039P0": "MADUP",
+    # 2026-08-27 확인. 영어 모드에서 종목명이 한국어로 남아 있던 여섯 개다.
+    # ENRICH_TOP(3000) 안에 드는데도 DART 가 영문명을 주지 않았다 — 상장 직후라
+    # corp_name_eng 가 아직 비어 있다. 출처는 회사 보도자료와 티커가 일치하는
+    # 해외 시세 사이트로 확인했다(추정 표기를 쓰지 않는다).
+    "0220W0": "Hanwha Machinery & Service Holdings",
+    "0155E0": "Haechitech",
+    "0218L0": "NeoView",
+    "0117P0": "Piece Peace Studio",
+    "0156T0": "HL Genomics",
+    "0203K0": "Songwoo Information & Technology",
 }
 
 # 우선주(전환·신주·우B·우C 등 포함)·스팩 판별 정규식 — universe(회사 리서치)에서 제외.
