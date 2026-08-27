@@ -710,7 +710,7 @@ $('#emailForm').addEventListener('submit', async e => {
       try{
         const { signinMethod, renderHint } = await import('./auth-hint.js');
         const m = await signinMethod(email);
-        if(m && m !== 'email' && renderHint(errBox, m, 'login')) return;
+        if(m && m !== 'email' && renderHint(errBox, m)) return;
       }catch(_){ /* 안내는 부가 기능 — 실패해도 아래 기본 문구로 간다 */ }
     }
     showErr(mapError(err));
