@@ -689,7 +689,7 @@ async function showAlreadyRegistered(email){
   try{
     const { signinMethod, renderHint } = await import('./auth-hint.js');
     const m = await signinMethod(email);
-    if(m && m !== 'email' && renderHint(errBox, m, 'signup')) return;
+    if(m && m !== 'email' && renderHint(errBox, m)) return;
   }catch(_){ /* 안내는 부가 기능 */ }
 
   const line1 = document.createElement('div');
