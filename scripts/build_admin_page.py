@@ -36,8 +36,13 @@ MAIN = '''<main>
 
       <section class="adm-card card glass" id="ncSec" hidden>
         <h2>동의 없는 계정</h2>
-        <p class="adm-note">가입하다 동의 화면에서 나간 계정입니다. 회원 목록에는 나오지 않습니다 — 동의 기록이 없어 회원으로 세지 않기 때문입니다.</p>
+        <p class="adm-note">회원 목록에는 나오지 않습니다 — 동의 기록이 없어 회원으로 세지 않기 때문입니다. 동의 제도가 생기기 전에 가입한 분은 로그인하면 동의 화면이 뜹니다.</p>
         <div class="adm-wrap"><table class="adm-tbl adm-tbl-nc" id="nc"></table></div>
+        <div class="adm-act">
+          <button type="button" class="btn btn-primary" id="noticeBtn">안내 메일 대상 확인</button>
+          <span class="adm-note" id="noticeNote"></span>
+        </div>
+        <div id="noticeBox"></div>
       </section>
 
       <section class="adm-card card glass">
@@ -115,6 +120,12 @@ CSS = '''<style id="admin-css">
 .adm-tbl-nc{min-width:420px}
 .adm-tbl-nc tbody tr{cursor:default}
 .adm-tbl-nc td.uid{color:var(--fg-3);font:400 11.5px var(--font-mono,ui-monospace,monospace)}
+.adm-act{margin-top:18px;display:flex;align-items:center;gap:10px;flex-wrap:wrap}
+.adm-warn{margin-top:14px;padding:14px 16px;border-radius:var(--radius-md);
+  border:1px solid #c0282b;font:400 13px/1.7 var(--font-sans);color:var(--fg-1)}
+:root[data-theme="dark"] .adm-warn{border-color:#ff8a8c}
+.adm-warn b{display:block;margin-bottom:6px;font-weight:700}
+.adm-warn ul{margin:8px 0 0;padding-left:18px;color:var(--fg-2)}
 .adm-dead{color:#c0282b;font-weight:600}
 :root[data-theme="dark"] .adm-dead{color:#ff8a8c}
 @media (max-width:640px){
@@ -163,13 +174,26 @@ DICT = '''if(window.KOSi18n) KOSi18n.register({
   "가입한 곳에서 확인한 주소입니다.":"Verified by the sign-in provider.",
   "재동의 대상":"Needs re-consent",
   "동의 없는 계정":"Without consent",
-  "가입하다 동의 화면에서 나간 계정입니다. 회원 목록에는 나오지 않습니다 — 동의 기록이 없어 회원으로 세지 않기 때문입니다.":
-    "Sign-ups abandoned at the consent screen. They do not appear in the member list because there is no consent record to count.",
   "동의 없는 계정은 가입하다 동의 화면에서 나간 계정입니다. 만든 지 24시간이 지나면 매일 12:30에 자동으로 지워집니다(동의 제도 시행 전 계정은 지우지 않습니다).":
     "Accounts without consent were abandoned at the consent screen. They are deleted automatically at 12:30 daily once 24 hours old (accounts predating the consent system are never deleted).",
   "동의 없는 계정을 세지 못했습니다. 숫자가 0이라는 뜻이 아닙니다.":
     "Could not count accounts without consent — the number is not zero, it is unknown.",
   "동의서 판":"Consent version",
+  "안내 메일 대상 확인":"Preview notice recipients",
+  "에게 안내 메일이 갑니다.":" will receive the notice email.",
+  "보낼 대상이 없습니다.":"No one to notify.",
+  " 가입":" joined",
+  "제외":"Excluded",
+  "동의 제도 시행 후 가입(가입하다 만 계정)":"joined after the consent screen existed (abandoned sign-ups)",
+  "이메일 주소 없음":"no email address",
+  "이미 안내함":"already notified",
+  "위 주소로 지금 보내기":"Send to the addresses above",
+  "보내는 중…":"Sending…",
+  "보냈습니다.":"Sent.",
+  "실패":"failed",
+  "남음":"remaining",
+  "회원 목록에는 나오지 않습니다 — 동의 기록이 없어 회원으로 세지 않기 때문입니다. 동의 제도가 생기기 전에 가입한 분은 로그인하면 동의 화면이 뜹니다.":
+    "They do not appear in the member list because there is no consent record to count. Anyone who joined before the consent screen existed will see it the next time they sign in.",
   "(현재 판)":"(current)",
   "체크박스":"Checkbox",
   "가입 버튼 아래 고지 문구":"Notice under the sign-up button",
@@ -464,6 +488,104 @@ function mark(text){
   s.className = 'adm-dead';
   s.textContent = T(text);
   return s;
+}
+
+/* ── 동의 안내 메일 ───────────────────────────────────────────────
+   되돌릴 수 없는 일이라 한 번에 보내지 않는다. 누구에게 갈지 먼저
+   보여 주고, 사람이 그 목록을 본 다음에야 보내는 버튼이 생긴다.
+   서버도 같은 순서로 막고 있다(dryRun 이 기본값이다). */
+$('#noticeBtn').addEventListener('click', async () => {
+  const note = $('#noticeNote'), box = $('#noticeBox');
+  $('#noticeBtn').disabled = true;
+  note.textContent = ' ' + T('확인하는 중…');
+  box.textContent = '';
+  try{
+    const r = await call('adminNotifyUnconsented', { dryRun: true });
+    note.textContent = '';
+    $('#noticeBtn').disabled = false;
+    drawNoticePlan(box, r);
+  }catch(e){
+    $('#noticeBtn').disabled = false;
+    note.textContent = ' ' + ((e && e.message) || T('불러오지 못했습니다.'));
+  }
+});
+
+function drawNoticePlan(box, r){
+  box.textContent = '';
+  const w = document.createElement('div');
+  w.className = 'adm-warn';
+
+  const b = document.createElement('b');
+  b.textContent = r.count > 0
+    ? countText(r.count) + T('에게 안내 메일이 갑니다.')
+    : T('보낼 대상이 없습니다.');
+  w.appendChild(b);
+
+  if(r.count > 0){
+    const ul = document.createElement('ul');
+    r.rows.forEach(x => {
+      const li = document.createElement('li');
+      li.textContent = x.email + '  ·  ' + when(x.createdAt) + T(' 가입');
+      ul.appendChild(li);
+    });
+    w.appendChild(ul);
+  }
+
+  /* 왜 빠졌는지 적는다. 숫자가 예상과 다를 때 그 자리에서 답이 되게 한다. */
+  const sk = r.skipped || {};
+  const parts = [];
+  if(sk.recent) parts.push(T('동의 제도 시행 후 가입(가입하다 만 계정)') + ' ' + sk.recent);
+  if(sk.noEmail) parts.push(T('이메일 주소 없음') + ' ' + sk.noEmail);
+  if(sk.alreadySent) parts.push(T('이미 안내함') + ' ' + sk.alreadySent);
+  if(parts.length){
+    const p = document.createElement('p');
+    p.style.cssText = 'margin:10px 0 0;font:400 12.5px/1.7 var(--font-sans);color:var(--fg-3)';
+    p.textContent = T('제외') + ' — ' + parts.join(' · ');
+    w.appendChild(p);
+  }
+
+  if(r.count > 0){
+    const go = document.createElement('button');
+    go.type = 'button';
+    go.className = 'btn btn-primary';
+    go.style.marginTop = '14px';
+    go.textContent = T('위 주소로 지금 보내기');
+    go.addEventListener('click', async () => {
+      go.disabled = true;
+      go.textContent = T('보내는 중…');
+      try{
+        const s = await call('adminNotifyUnconsented', { dryRun: false });
+        go.remove();
+        const done = document.createElement('p');
+        done.style.cssText = 'margin:12px 0 0;font:600 13px var(--font-sans)';
+        done.textContent = T('보냈습니다.') + ' ' + countText(s.sent)
+          + (s.failed && s.failed.length ? ' · ' + T('실패') + ' ' + s.failed.length : '')
+          + (s.remaining ? ' · ' + T('남음') + ' ' + s.remaining : '');
+        w.appendChild(done);
+        if(s.failed && s.failed.length){
+          const ul = document.createElement('ul');
+          s.failed.forEach(f => {
+            const li = document.createElement('li');
+            li.textContent = f.email + ' — ' + f.reason;
+            ul.appendChild(li);
+          });
+          w.appendChild(ul);
+        }
+        relabel();
+      }catch(e){
+        go.disabled = false;
+        go.textContent = T('위 주소로 지금 보내기');
+        const p = document.createElement('p');
+        p.style.cssText = 'margin:10px 0 0;font:600 12.5px var(--font-sans);color:#c0282b';
+        p.textContent = (e && e.message) || T('불러오지 못했습니다.');
+        w.appendChild(p);
+      }
+    });
+    w.appendChild(go);
+  }
+
+  box.appendChild(w);
+  relabel();
 }
 
 $('#filter').addEventListener('input', drawUsers);

@@ -68,7 +68,7 @@ jobs:
         run: |
           set -o pipefail
           firebase deploy --project kosai-ae167 --non-interactive --force \
-            --only functions:socialLogin,functions:sendVerifyEmail,functions:sendResetEmail,functions:submitForm,functions:getReport,functions:deleteAccount,functions:getUsage,functions:recordSignupConsent,functions:setMarketingConsent,functions:purgeUnconsented,functions:signinHint,functions:adminConsentStats,functions:adminConsentLookup,functions:adminMarketingList,functions:adminUserList \
+            --only functions:socialLogin,functions:sendVerifyEmail,functions:sendResetEmail,functions:submitForm,functions:getReport,functions:deleteAccount,functions:getUsage,functions:recordSignupConsent,functions:setMarketingConsent,functions:purgeUnconsented,functions:signinHint,functions:adminConsentStats,functions:adminConsentLookup,functions:adminMarketingList,functions:adminUserList,functions:adminNotifyUnconsented \
             2>&1 | tee -a /tmp/deploy.log
 
       - name: 배포 로그 저장(디버그)
