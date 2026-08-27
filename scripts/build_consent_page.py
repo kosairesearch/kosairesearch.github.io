@@ -118,7 +118,9 @@ DICT = '''if(window.KOSi18n) KOSi18n.register({
     "— we could not send the verification link. Please resend below.",
   "인증 메일 다시 보내기":"Resend verification email",
   "다시 보냈습니다. 메일함을 확인해 주세요.":"Sent again — please check your inbox.",
-  "보내지 못했어요. 잠시 후 다시 시도해 주세요.":"Could not send. Please try again in a moment."
+  "보내지 못했어요. 잠시 후 다시 시도해 주세요.":"Could not send. Please try again in a moment.",
+  "이미 다른 방법으로 가입된 이메일입니다.":"This email is already registered with another sign-in method.",
+  "로그인하러 가기":"Go to sign in"
 });'''
 
 SCRIPT = '''<script type="module">
@@ -215,6 +217,25 @@ document.getElementById('agreeBtn').addEventListener('click', async () => {
        이 화면을 하룻밤 켜 둔 채 돌아와 누르면 계정이 이미 없을 수 있다.
        그때 '저장에 실패했어요' 만 뜨면 무슨 일인지 알 수가 없다. */
     const code = (e && (e.code || '')) + '';
+
+    /* 같은 이메일을 쓰는 계정이 이미 있다. 서버가 동의 기록을 거부했다.
+       방금 만들어진 이 계정은 남길 이유가 없으므로 지우고, 원래 가입한
+       방법으로 안내한다. 계정 둘을 남겨 두면 관심 종목이 갈리고 같은
+       주소로 메일이 두 번 간다. */
+    if(/already-exists/.test(code)){
+      finishing = true;
+      try{ await deleteUser(auth.currentUser); }
+      catch(_){ try{ await signOut(auth); }catch(__){} }
+      errBox.textContent = (e && e.message ? e.message : T('이미 다른 방법으로 가입된 이메일입니다.')) + ' ';
+      const a = document.createElement('a');
+      a.href = 'Login.html'; a.textContent = T('로그인하러 가기');
+      a.style.cssText = 'color:var(--brand-blue);font-weight:600;text-decoration:underline';
+      errBox.appendChild(a);
+      errBox.style.display = 'block';
+      document.querySelector('.consent-act').style.display = 'none';
+      return;
+    }
+
     if(/not-found|user-not-found|unauthenticated|permission-denied/.test(code)){
       errBox.textContent = T('가입이 만료되어 계정이 삭제되었어요. 처음부터 다시 가입해 주세요.') + ' ';
       const a = document.createElement('a');
