@@ -172,6 +172,23 @@ function mapKakaoTerms(list){
   };
 }
 
+/* 제공자가 알려 준 동의를 그대로 믿어도 되는가.
+
+     withdrawnAt  마지막 탈퇴 시각(ms). 0 이면 탈퇴한 적 없음,
+                  -1 이면 조회에 실패해 모름
+     agreedAt     제공자가 알려 준 동의 시각(ms). 0 이면 모름
+
+   탈퇴한 적이 없으면 그냥 믿는다. 탈퇴한 적이 있으면 그 뒤에 다시 받은
+   동의여야 한다. 둘 중 하나라도 모르면 다시 받는다 — 동의를 한 번 더
+   받는 것은 번거로울 뿐이지만, 받지 않은 동의를 받았다고 적는 것은
+   되돌릴 수 없다. */
+function isStaleProviderConsent(withdrawnAt, agreedAt){
+  if(withdrawnAt === 0) return false;            // 탈퇴한 적 없음
+  if(withdrawnAt < 0) return true;               // 이력을 못 읽음
+  if(!agreedAt) return true;                     // 동의 시각을 모름
+  return agreedAt <= withdrawnAt;                // 탈퇴 이전 동의면 옛것
+}
+
 async function kakaoProfile(code, redirectUri){
   const clientId = (KAKAO_REST_KEY.value() || "").trim();
   const secret = (KAKAO_CLIENT_SECRET.value() || "").trim();
@@ -440,26 +457,72 @@ exports.socialLogin = onCall(
     }
     let syncedTerms = null;
 
+    /* 탈퇴했다가 다시 가입하는 경우.
+
+       탈퇴해도 카카오·네이버 쪽 앱 연결은 남는다. 그래서 다시 로그인하면
+       그쪽이 동의를 다시 묻지 않고 곧장 통과시킨다. 그 상태로 우리가
+       service_terms 를 읽으면 '동의함' 이 오는데, 그건 탈퇴 전에 받은
+       동의다. 새 계약에 옛 동의를 붙이는 셈이고, 계정 생성일보다 동의일이
+       앞서는 기록이 남는다.
+
+       탈퇴 기록으로 가려낸다. deleteAccount 가 개인정보를 지우면서도
+       'withdraw' 한 줄은 남겨 두므로(uid 와 시각뿐이라 개인정보가 아니다)
+       그 시각과 제공자가 알려 준 동의 시각을 견준다.
+
+         동의 시각이 탈퇴 뒤   → 다시 받은 동의다. 그대로 쓴다
+         동의 시각이 탈퇴 전   → 옛 동의다. 우리 동의 화면에서 다시 받는다
+         동의 시각을 모른다    → 옛 동의로 본다. 애매하면 다시 묻는다
+
+       조회에 실패하면 다시 묻는 쪽으로 기운다. 동의를 한 번 더 받는 것은
+       번거로울 뿐이지만, 받지 않은 동의를 받았다고 적는 것은 되돌릴 수
+       없다. */
+    let staleConsent = false;
+    if(!exists){
+      let withdrawnAt = 0;
+      try{
+        const w = await db.collection("consentEvents")
+          .where("uid", "==", uid).where("kind", "==", "withdraw").limit(10).get();
+        w.forEach(d => {
+          const t = (d.data() || {}).at;
+          const ms = t && t.toDate ? t.toDate().getTime() : 0;
+          if(ms > withdrawnAt) withdrawnAt = ms;
+        });
+      }catch(e){
+        console.warn("[social] 탈퇴 이력 조회 실패", uid, e && e.message);
+        withdrawnAt = -1;                       // 모르면 아래에서 다시 묻는다
+      }
+      staleConsent = isStaleProviderConsent(
+        withdrawnAt, kt && kt.agreedAt ? kt.agreedAt.getTime() : 0);
+      if(staleConsent){
+        console.log(`[social] 재가입 ${uid} — 제공자 동의가 탈퇴 이전이라 다시 받는다`);
+      }
+    }
+
     const patch = { signupMethod: provider, updatedAt: now };
     if(p.email) patch.email = String(p.email).trim().toLowerCase();
     if(!exists){
       if(!p.email) patch.email = null;
-      patch.consents = kt ? {
-        version: CONSENT_VERSION,
-        method: "kakao-sync",         // 카카오 동의 화면에서 받은 동의
-        age14: kt.age14, terms: kt.terms, privacy: kt.privacy,
-        marketing: kt.marketing,
-        kakaoTerms: kt.raw,           // 받은 그대로. 매핑이 틀려도 자료는 남는다
-        agreedAt: kt.agreedAt || now  // 사용자가 실제로 누른 시각
-      } : {
-        version: CONSENT_VERSION,
-        method: "signup-notice",
-        age14: true, terms: true, privacy: true,
-        marketing: false,             // 선택 — 설정 페이지에서 켠다
-        agreedAt: now
-      };
-      patch.marketingAt = (kt && kt.marketing) ? (kt.agreedAt || now) : null;
       patch.createdAt = now;
+      if(staleConsent){
+        /* consents 를 쓰지 않는다. 그러면 auth-state.js 의 guardConsent 가
+           다음 화면에서 동의 페이지로 보낸다 — 구글과 같은 길이다. */
+      } else {
+        patch.consents = kt ? {
+          version: CONSENT_VERSION,
+          method: "kakao-sync",         // 카카오 동의 화면에서 받은 동의
+          age14: kt.age14, terms: kt.terms, privacy: kt.privacy,
+          marketing: kt.marketing,
+          kakaoTerms: kt.raw,           // 받은 그대로. 매핑이 틀려도 자료는 남는다
+          agreedAt: kt.agreedAt || now  // 사용자가 실제로 누른 시각
+        } : {
+          version: CONSENT_VERSION,
+          method: "signup-notice",
+          age14: true, terms: true, privacy: true,
+          marketing: false,             // 선택 — 설정 페이지에서 켠다
+          agreedAt: now
+        };
+        patch.marketingAt = (kt && kt.marketing) ? (kt.agreedAt || now) : null;
+      }
     } else if(kt){
       /* 이미 있는 회원. 마케팅만 맞춰 준다. 그리고 우리 쪽에서 한 번도
          만진 적이 없을 때만이다.
@@ -505,13 +568,18 @@ exports.socialLogin = onCall(
     /* 이력. 가입은 가입대로, 나중에 맞춘 것은 맞춘 대로 남긴다.
        마케팅이 켜지고 꺼진 것은 분쟁에서 답해야 하는 사건이라 users 문서의
        마지막 상태만으로는 부족하다. */
-    if(!exists){
+    if(!exists && patch.consents){
       await logConsent(db, uid, "signup", {
         email: patch.email || null, version: CONSENT_VERSION,
-        method: (patch.consents || {}).method || null, provider,
-        marketing: (patch.consents || {}).marketing === true,
+        method: patch.consents.method || null, provider,
+        marketing: patch.consents.marketing === true,
         kakaoTerms: kt ? kt.raw : null,
       }, req);
+    } else if(!exists && staleConsent){
+      /* 아직 동의를 받지 않았다. 가입으로 적으면 안 된다 — 동의 화면을
+         마쳐야 recordSignupConsent 가 'signup' 을 남긴다. 다만 재가입
+         시도가 있었다는 사실은 남겨 둔다. */
+      await logConsent(db, uid, "rejoin_pending", { provider }, req);
     } else if(syncedTerms){
       await logConsent(db, uid, "provider_sync", {
         email: (patch.email || (snapBefore && snapBefore.email)) || null,
