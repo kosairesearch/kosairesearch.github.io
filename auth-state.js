@@ -337,6 +337,35 @@ function renderMobileAuth(user){
      여기 다시 넣는 것이 아니라 별도 안내 화면을 만드는 편이 낫다. 로그인
      하자마자 모달이 뜨는 건 그때도 좋은 방법이 아니다. */
 
+/* 위 주석의 전제가 하나 깨졌다. 구글 가입은 팝업이 닫히는 순간 파이어베이스가
+   계정을 먼저 만들고, 동의는 그 뒤 Consent.html 에서 받는다. 그 사이에 탭을
+   닫으면 동의 기록 없는 계정이 남고, 다시 물어보는 자리가 없었다.
+   (ensureConsent 가 consent.js 에 있었지만 아무도 부르지 않았다.)
+
+   그래서 이 파일에 그물을 친다. 이 파일은 모든 페이지에서 돌기 때문이다.
+   기록이 없으면 동의 페이지로 보낸다. 로그인 직후 모달을 띄우는 것과 다르다 —
+   가입을 마치지 못한 사람에게만, 이미 가는 길이던 화면을 next 로 들고 간다.
+
+   부르는 조건을 좁게 잡는다. 잘못 걸면 사이트를 못 쓰게 만드는 자리다.
+     · 동의·로그인·가입 페이지에서는 하지 않는다 — 무한 이동이 된다.
+     · 조회에 실패하면(null) 아무것도 하지 않는다. 통신이 끊겼다고 사람을
+       가입 화면으로 몰아내면 안 된다. 확실히 '없다'(false)일 때만 보낸다.
+     · 한 번만 시도한다. onAuthStateChanged 는 여러 번 울린다. */
+const CONSENT_SKIP = /^(Consent|Login|Signup|auth-action)\.html$/i;
+let consentChecked = false;
+
+async function guardConsent(user){
+  if(consentChecked || !user || CONSENT_SKIP.test(here())) return;
+  consentChecked = true;
+  try{
+    const { consentState } = await import("./consent.js");
+    if(await consentState(user.uid) === false){
+      location.replace('Consent.html?next=' +
+        encodeURIComponent(here() + (location.search || '')));
+    }
+  }catch(e){ /* 표시·이동용 — 실패하면 그냥 둔다 */ }
+}
+
 function start(){
   const wrap = mount();
   if(!wrap) return;
@@ -344,6 +373,7 @@ function start(){
   onAuthStateChanged(auth, user => {
     user ? renderLoggedIn(wrap, user) : renderLoggedOut(wrap);
     renderMobileAuth(user);
+    guardConsent(user);
   });
 }
 
