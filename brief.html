@@ -453,9 +453,26 @@ KOSi18n.register({
 /* 문단 사이가 좁아 글이 벽처럼 붙어 보인다는 피드백을 받았다. 줄높이는
    1.78 로 넉넉한데 문단 간격이 15px — 한 줄 높이(28px)의 절반이라
    문단이 바뀌는 것이 눈에 안 잡혔다. 간격을 한 줄보다 크게 벌린다. */
-.mb-sec{margin:0 0 42px}
-.mb-sec h2{margin:0 0 18px;font:600 15px var(--font-sans);color:var(--fg-2);
-  letter-spacing:.02em;padding-bottom:8px;border-bottom:1px solid var(--hair)}
+.mb-sec{margin:0 0 50px}
+/* 소제목이 본문처럼 읽혀 글 전체가 한 덩어리로 보인다는 피드백을 받았다.
+   재 보니 그럴 만했다 — 소제목이 15px·fg-2 인데 본문이 16px·fg-1 이라,
+   굵기만 600 일 뿐 실제로는 본문보다 작고 흐렸다. 굵기 하나로 위계를
+   세우려 한 것이 잘못이다.
+
+   크기·굵기·색을 한꺼번에 올려 본문과 갈라 놓는다. 밑줄은 뺐다 — 소제목
+   아래 가로선은 '여기서 끝난다'로 읽혀서, 절이 시작한다는 신호와 반대다.
+   대신 위에 짧은 막대를 둔다.
+
+   막대를 span 이 아니라 ::before 로 그리는 이유가 있다. 이 사이트의 i18n
+   엔진은 화면의 한국어 텍스트 노드를 키로 삼아 번역하는데, 장식용 요소를
+   넣으면 그것까지 훑는다. CSS 로 그리면 DOM 에 안 잡힌다. */
+.mb-sec h2{margin:0 0 16px;font:800 20px/1.35 var(--font-sans);color:var(--fg-1);
+  letter-spacing:-.025em}
+.mb-sec h2::before{content:"";display:block;width:26px;height:3px;border-radius:2px;
+  background:var(--brand-blue);margin-bottom:12px}
+:root[data-theme="dark"] .mb-sec h2::before{background:var(--brand-cyan)}
+/* 커버리지 절은 왼쪽 세로선과 라벨을 이미 갖고 있다. 막대까지 더하면 셋이 된다. */
+.mb-sec--cov h2::before{display:none}
 .mb-sec p{margin:0 0 24px;font:400 16px/1.8 var(--font-sans);color:var(--fg-1);text-wrap:pretty}
 .mb-sec p:last-child{margin-bottom:0}
 .mb-sec a{color:var(--fg-1);text-decoration:none;border-bottom:1px solid var(--hair);
@@ -467,6 +484,9 @@ KOSi18n.register({
 @media (max-width:640px){
   .mb-sec p{font-size:15.5px}
   .mb-lead{font-size:16.5px}
+  /* 본문이 15.5px 로 줄므로 소제목도 같이 줄이되, 차이는 유지한다. */
+  .mb-sec h2{font-size:18.5px}
+  .mb-sec{margin-bottom:44px}
 }
 </style>
 </head>
