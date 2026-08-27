@@ -77,6 +77,101 @@ async function asJson(res, label){
   return json;
 }
 
+/* 카카오싱크 간편가입에서 받은 약관 동의 내역.
+
+   카카오 동의 화면이 곧 우리 동의 화면이다 — 개발자센터에 등록한 우리
+   이용약관·개인정보 수집·이용·만 14세·마케팅 수신을 카카오가 대신 받아
+   준다. 그런데 우리는 그 결과를 읽지 않고 age14/terms/privacy 를 true 로,
+   marketing 을 false 로 박아 두고 있었다. 그래서 마케팅에 동의한 사람이
+   우리 기록에는 전부 미동의로 남았다.
+
+   읽어 온다. 실패해도 로그인을 막지 않는다 — 동의 내역을 못 가져온 것과
+   사용자가 동의하지 않은 것은 다른 일이고, 여기서 던지면 멀쩡한 로그인이
+   끊긴다. 못 가져오면 null 이고, 부르는 쪽이 기존 기록을 건드리지 않는다. */
+async function kakaoServiceTerms(accessToken){
+  try{
+    const r = await asJson(await fetch("https://kapi.kakao.com/v2/user/service_terms", {
+      headers: { Authorization: `Bearer ${accessToken}` }
+    }), "kakao_service_terms");
+    const list = Array.isArray(r.service_terms) ? r.service_terms : null;
+    if(!list) return null;
+    /* 어떤 tag 가 오는지 로그에 남긴다. tag 는 개발자센터에서 우리가 정한
+       값이라 코드가 미리 알 수 없다 — 아래 매핑이 틀리면 이 줄로 안다. */
+    console.log("[kakao] service_terms:",
+      list.map(t => `${t.tag}${t.required ? "(필수)" : "(선택)"}=${t.agreed}`).join(", "));
+    return list;
+  }catch(e){
+    console.warn("[kakao] service_terms 조회 실패:", e && e.message);
+    return null;
+  }
+}
+
+/* 카카오가 준 약관 목록을 우리 항목으로 옮긴다.
+
+   tag 는 개발자센터에서 우리가 정한 문자열이라 코드가 미리 알 수 없다.
+   그래서 두 겹으로 짚는다.
+
+     ① tag 이름으로 짚는다 (아래 표. 실제 tag 를 알면 여기에 그대로 적으면
+        된다 — 로그의 '[kakao] service_terms:' 줄에 찍힌다)
+     ② 못 짚으면 required 플래그로 물러선다. 필수 약관은 동의해야 가입이
+        진행되므로, 필수가 전부 동의됐으면 필수 세 항목은 true 다
+
+   마케팅은 물러설 곳이 없다. 선택 항목이라 '동의했겠거니' 할 수 없다 —
+   짚지 못하면 false 로 두고 경고를 남긴다. 없는 동의를 만들어 내는 것보다
+   못 읽었다고 말하는 편이 낫다.
+
+   원본은 그대로 저장한다. 매핑이 틀려도 자료는 남아 나중에 고칠 수 있다. */
+const KAKAO_TAG_MATCH = {
+  age14:     /(^|[^a-z])age|14|연령|만14/i,
+  terms:     /^service$|term|약관|이용/i,
+  privacy:   /privacy|개인정보|수집/i,
+  marketing: /market|adver|광고|수신|promo|benefit|혜택/i,
+};
+
+function mapKakaoTerms(list){
+  if(!Array.isArray(list) || !list.length) return null;
+
+  const hit = (key) => list.find(t => KAKAO_TAG_MATCH[key].test(String(t.tag || "")));
+  const req = list.filter(t => t.required);
+  const allRequiredAgreed = req.length > 0 && req.every(t => t.agreed === true);
+
+  const pick = (key) => {
+    const t = hit(key);
+    if(t) return t.agreed === true;
+    return allRequiredAgreed;          // 못 짚으면 필수 동의 여부로 물러선다
+  };
+
+  const mk = hit("marketing");
+  if(!mk){
+    console.warn("[kakao] 마케팅 약관 tag 를 찾지 못했다. 받은 tag:",
+      list.map(t => t.tag).join(", "), "— KAKAO_TAG_MATCH 를 확인할 것.");
+  }
+
+  /* 실제 동의 시각. 우리 서버 시각보다 이쪽이 맞다 — 사용자가 누른 시각이다.
+     여럿이면 가장 늦은 것을 쓴다(마지막으로 동의를 마친 순간). */
+  let agreedAt = null;
+  for(const t of list){
+    if(t.agreed !== true || !t.agreed_at) continue;
+    const ms = Date.parse(t.agreed_at);
+    if(ms && (!agreedAt || ms > agreedAt)) agreedAt = ms;
+  }
+
+  return {
+    age14: pick("age14"),
+    terms: pick("terms"),
+    privacy: pick("privacy"),
+    marketing: mk ? mk.agreed === true : false,
+    marketingKnown: !!mk,
+    agreedAt: agreedAt ? new Date(agreedAt) : null,
+    raw: list.map(t => ({
+      tag: String(t.tag || ""),
+      required: t.required === true,
+      agreed: t.agreed === true,
+      agreedAt: t.agreed_at || null,
+    })),
+  };
+}
+
 async function kakaoProfile(code, redirectUri){
   const clientId = (KAKAO_REST_KEY.value() || "").trim();
   const secret = (KAKAO_CLIENT_SECRET.value() || "").trim();
@@ -109,7 +204,8 @@ async function kakaoProfile(code, redirectUri){
     id: String(me.id),
     email: acc.email || null,
     name: prof.nickname || (me.properties && me.properties.nickname) || "",
-    photo: prof.profile_image_url || (me.properties && me.properties.profile_image) || null
+    photo: prof.profile_image_url || (me.properties && me.properties.profile_image) || null,
+    terms: await kakaoServiceTerms(tok.access_token)
   };
 }
 
@@ -320,24 +416,83 @@ exports.socialLogin = onCall(
        채워진다 — 그래서 기존 사용자도 이메일이 오면 갱신한다. 다만 없다고
        해서 이미 있는 값을 지우지는 않는다.
 
-       동의는 가입 버튼 아래 문구로 받는다(A안). 카카오·네이버가 각자
-       동의 화면을 이미 보여 주므로 우리 동의 화면을 한 번 더 띄우지 않는다.
-       무엇을 보고 눌렀는지 나중에 답할 수 있도록 판 번호와 방식을 남긴다. */
+       동의는 카카오·네이버의 동의 화면에서 받는다. 카카오싱크 간편가입은
+       개발자센터에 등록한 우리 이용약관·개인정보 수집·이용·만 14세·마케팅
+       수신을 그쪽 화면에서 대신 받아 준다. 그러니 우리 화면을 한 번 더
+       띄우면 같은 것을 두 번 묻는 셈이다.
+
+       대신 그 결과를 읽어 와야 한다. 여태 안 읽고 age14/terms/privacy 를
+       true 로, marketing 을 false 로 박아 두고 있었다 — 마케팅에 동의한
+       사람이 우리 기록에는 전부 미동의로 남았다.
+
+       네이버는 검수 승인 뒤 같은 방식이 된다. 그때까지는 아래 물러선 값이
+       그대로 쓰인다. */
     const db = admin.firestore();
     const now = admin.firestore.FieldValue.serverTimestamp();
+    /* 카카오싱크가 대신 받아 준 동의 내역. 못 읽었으면 null 이고, 그때는
+       아래에서 기존 기록을 건드리지 않는다. */
+    const kt = provider === "kakao" ? mapKakaoTerms(p.terms) : null;
+    /* 기존 회원의 기록. 마케팅을 맞춰 줄지 판단하는 데 쓴다. */
+    let snapBefore = null;
+    if(exists){
+      try{ snapBefore = (await db.collection("users").doc(uid).get()).data() || null; }
+      catch(e){ console.warn("[social] 기존 기록 조회 실패", uid, e && e.message); }
+    }
+    let syncedTerms = null;
+
     const patch = { signupMethod: provider, updatedAt: now };
     if(p.email) patch.email = String(p.email).trim().toLowerCase();
     if(!exists){
       if(!p.email) patch.email = null;
-      patch.consents = {
+      patch.consents = kt ? {
         version: CONSENT_VERSION,
-        method: "signup-notice",      // 가입 버튼 아래 고지 문구로 받은 동의
+        method: "kakao-sync",         // 카카오 동의 화면에서 받은 동의
+        age14: kt.age14, terms: kt.terms, privacy: kt.privacy,
+        marketing: kt.marketing,
+        kakaoTerms: kt.raw,           // 받은 그대로. 매핑이 틀려도 자료는 남는다
+        agreedAt: kt.agreedAt || now  // 사용자가 실제로 누른 시각
+      } : {
+        version: CONSENT_VERSION,
+        method: "signup-notice",
         age14: true, terms: true, privacy: true,
         marketing: false,             // 선택 — 설정 페이지에서 켠다
         agreedAt: now
       };
-      patch.marketingAt = null;
+      patch.marketingAt = (kt && kt.marketing) ? (kt.agreedAt || now) : null;
       patch.createdAt = now;
+    } else if(kt){
+      /* 이미 있는 회원. 마케팅만 맞춰 준다. 그리고 우리 쪽에서 한 번도
+         만진 적이 없을 때만이다.
+
+         켜고 끈 기록(marketingAt·marketingOffAt)이 있으면 그 사람은 우리
+         설정 화면에서 자기 뜻을 밝힌 것이다. 카카오 값으로 덮으면 철회를
+         무시하는 셈이 된다 — 로그인할 때마다 다시 켜진다.
+
+         반대로 만진 적이 없는 회원은 우리가 marketing:false 를 박아 둔
+         탓에 미동의로 남아 있다. 그 사람들이 여기서 제자리를 찾는다. */
+      const cur = (snapBefore && snapBefore.consents) || {};
+      const touched = !!(snapBefore && (snapBefore.marketingAt || snapBefore.marketingOffAt));
+      const needsFix = !touched && cur.marketing !== kt.marketing;
+      if(needsFix || !cur.kakaoTerms){
+        /* 받은 방식도 실제에 맞춘다. 여태 'signup-notice' 로 적혀 있었는데
+           그 고지 문구는 화면에서 지운 지 오래다 — 이 사람들이 실제로 본
+           것은 카카오의 동의 화면이다. 처음 기록은 consentEvents 의
+           'signup' 사건에 그대로 남아 있으므로 잃는 것은 없다.
+
+           필수 세 항목은 건드리지 않는다. 카카오싱크는 필수 약관에 동의해야
+           가입이 되므로 기존 값(true)이 맞고, 태그를 잘못 짚었을 때 멀쩡한
+           동의 기록을 false 로 덮는 쪽이 훨씬 나쁘다. 근거는 아래 원본으로
+           붙는다. */
+        patch.consents = Object.assign({}, cur, {
+          kakaoTerms: kt.raw,
+          method: "kakao-sync",
+        });
+        if(needsFix){
+          patch.consents.marketing = kt.marketing;
+          patch.marketingAt = kt.marketing ? (kt.agreedAt || now) : null;
+        }
+        syncedTerms = needsFix ? "marketing" : "terms";
+      }
     }
     try{
       await db.collection("users").doc(uid).set(patch, { merge: true });
@@ -345,6 +500,25 @@ exports.socialLogin = onCall(
       // 새 가입인데 기록을 못 남겼으면 계정도 남기지 않는다. 반쪽짜리 가입을 두지 않는다.
       if(!exists){ try{ await admin.auth().deleteUser(uid); }catch(_){} }
       throw new HttpsError("internal", `user_doc_save_failed: ${e.code || e.message}`);
+    }
+
+    /* 이력. 가입은 가입대로, 나중에 맞춘 것은 맞춘 대로 남긴다.
+       마케팅이 켜지고 꺼진 것은 분쟁에서 답해야 하는 사건이라 users 문서의
+       마지막 상태만으로는 부족하다. */
+    if(!exists){
+      await logConsent(db, uid, "signup", {
+        email: patch.email || null, version: CONSENT_VERSION,
+        method: (patch.consents || {}).method || null, provider,
+        marketing: (patch.consents || {}).marketing === true,
+        kakaoTerms: kt ? kt.raw : null,
+      }, req);
+    } else if(syncedTerms){
+      await logConsent(db, uid, "provider_sync", {
+        email: (patch.email || (snapBefore && snapBefore.email)) || null,
+        version: CONSENT_VERSION, provider, what: syncedTerms,
+        marketing: (patch.consents || {}).marketing === true,
+        kakaoTerms: kt ? kt.raw : null,
+      }, req);
     }
 
     const token = await admin.auth().createCustomToken(uid, {
@@ -1147,6 +1321,8 @@ exports.adminConsentLookup = onCall({ region: REGION, cors: true }, async (req) 
       version: c.version || null, method: c.method || null,
       age14: !!c.age14, terms: !!c.terms, privacy: !!c.privacy,
       marketing: !!c.marketing, agreedAt: tsIso(c.agreedAt),
+      /* 카카오가 보낸 원본. 매핑이 맞는지는 이걸 봐야 안다. */
+      kakaoTerms: Array.isArray(c.kakaoTerms) ? c.kakaoTerms : null,
     },
     marketingAt: tsIso(u.marketingAt),
     marketingOffAt: tsIso(u.marketingOffAt),
