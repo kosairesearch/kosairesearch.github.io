@@ -186,6 +186,31 @@ async function findOtherAccountByEmail(db, email, selfUid) {
 }
 
 
+/* 로그인 화면이 "왜 안 되는지" 를 알려 주기 위한 조회.
+
+   비밀번호가 틀린 것과, 애초에 비밀번호로 가입한 적이 없는 것은 다른
+   일이다. 네이버로 가입한 사람에게 '이메일 또는 비밀번호가 올바르지
+   않습니다' 만 보여 주면 영영 못 들어온다.
+
+   계정 열거를 걱정할 자리이긴 하다. 다만 가입 폼이 이미 같은 사실을
+   알려 준다(email-already-in-use). 여기서 새로 새는 것은 '어느 방법으로
+   가입했는가' 뿐이고, 그것을 감추는 대가로 사용자를 가두는 편이 더 나쁘다.
+   가입한 적이 없는 주소에는 아무것도 알려 주지 않는다. */
+exports.signinHint = onCall({ region: REGION, cors: true }, async (req) => {
+  const email = String(((req.data || {}).email) || "").trim().toLowerCase();
+  if (!emailOk(email)) return { method: null };
+  let user;
+  try { user = await admin.auth().getUserByEmail(email); }
+  catch (e) { return { method: null }; }          // 없는 주소 → 아무 말도 하지 않는다
+  const uid = String(user.uid || "");
+  if (uid.startsWith("kakao:")) return { method: "kakao" };
+  if (uid.startsWith("naver:")) return { method: "naver" };
+  const ids = (user.providerData || []).map(x => x.providerId);
+  if (ids.includes("google.com")) return { method: "google" };
+  if (ids.includes("password")) return { method: "email" };
+  return { method: null };
+});
+
 exports.socialLogin = onCall(
   {
     region: REGION,
@@ -212,6 +237,24 @@ exports.socialLogin = onCall(
     if(p.name) userProps.displayName = p.name;
     if(p.photo) userProps.photoURL = p.photo;
 
+    /* 이메일을 Firebase 사용자에도 심는다.
+
+       전에는 일부러 심지 않았다("계정 충돌이 무섭다"). 그 대가가 컸다 —
+       Firebase 의 '이메일당 계정 하나' 보호가 소셜 계정을 아예 보지 못해,
+       네이버로 가입한 사람이 같은 주소로 이메일 가입을 또 할 수 있었다.
+       우리가 서버에서 뒤늦게 막으려니 동의 화면까지 간 다음에야 걸렸다.
+
+       심어 두면 Firebase 가 가입 폼에서 바로 막아 준다(email-already-in-use).
+       충돌이 나는 경우는 실제로 계정이 둘이어야 하는 상황이 아니라 막아야
+       하는 상황이므로, 그 오류가 곧 우리가 원하는 동작이다.
+
+       카카오·네이버는 본인확인을 거친 주소라 emailVerified 로 둔다. 이걸
+       false 로 두면 로그인할 때마다 인증 메일을 요구하게 된다. */
+    if(p.email) {
+      userProps.email = String(p.email).trim().toLowerCase();
+      userProps.emailVerified = true;
+    }
+
     let exists = true;
     try{
       await admin.auth().getUser(uid);
@@ -236,7 +279,17 @@ exports.socialLogin = onCall(
       if(exists) await admin.auth().updateUser(uid, userProps);
       else await admin.auth().createUser({ uid, ...userProps });
     }catch(e){
-      throw new HttpsError("internal", `user_upsert_failed: ${e.code || e.message}`);
+      /* 이메일이 다른 계정에 이미 물려 있는 경우. 새 계정이면 위 검사에서
+         이미 걸러졌어야 하지만, 이메일을 심기 시작하기 전에 만들어진 계정을
+         갱신할 때 여기서 만날 수 있다. 그때는 이메일 없이 진행한다 —
+         로그인을 끊는 것보다 낫고, 중복 자체는 위 검사가 막는다. */
+      if(e && e.code === "auth/email-already-exists" && exists){
+        console.warn(`[social] 이메일 심기 건너뜀 ${uid}: 다른 계정이 쓰는 중`);
+        delete userProps.email; delete userProps.emailVerified;
+        try{ await admin.auth().updateUser(uid, userProps); }catch(_){}
+      } else {
+        throw new HttpsError("internal", `user_upsert_failed: ${e.code || e.message}`);
+      }
     }
 
     /* ── users/{uid} — 이메일과 동의 기록 ─────────────────────────────
