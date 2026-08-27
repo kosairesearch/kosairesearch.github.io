@@ -395,7 +395,7 @@ export function finishGoogleSignup(cred, isNewUser) {
      로 쓰고 있다. 여기서 true 를 주면 리다이렉트가 뜨기 전에 goNext() 가
      먼저 돌아 원래 가려던 페이지로 가 버린다. */
   const nx = new URLSearchParams(location.search).get("next") || "Home.html";
-  location.href = "Consent.html?next=" + encodeURIComponent(nx);
+  location.replace("Consent.html?next=" + encodeURIComponent(nx));
   return Promise.resolve(false);
 }
 

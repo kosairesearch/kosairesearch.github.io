@@ -688,7 +688,7 @@ $('#emailForm').addEventListener('submit', async e => {
       const { consentState } = await import("./consent.js");
       if(await consentState(cred.user.uid) === false){
         const nx = new URLSearchParams(location.search).get('next') || 'Home.html';
-        location.href = 'Consent.html?next=' + encodeURIComponent(nx);
+        location.replace('Consent.html?next=' + encodeURIComponent(nx));
         return;
       }
     }catch(_){ /* 조회 실패는 로그인을 막을 사유가 아니다 */ }
@@ -723,7 +723,8 @@ $('#googleBtn').addEventListener('click', async () => {
        가입 화면과 로그인 화면이 어긋날 수 없다. */
     const { finishGoogleSignup } = await import("./consent.js");
     if(!(await finishGoogleSignup(cred, isNew))) return;   // 사용자가 취소
-    if(isNew && window.KOSA) KOSA.track('sign_up', { method: 'google' });
+    /* 가입 추적은 Consent.html 이 한다 — 동의를 마쳐야 가입이 성립하고,
+       신규면 위에서 이미 그쪽으로 넘어갔다. */
     go();
   }
   catch(err){ if(isUserCancelled(err)) return; showErr(mapError(err)); }
