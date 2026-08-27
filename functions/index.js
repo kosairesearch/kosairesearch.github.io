@@ -909,6 +909,30 @@ function tsIso(v) {
   try { return v && v.toDate ? v.toDate().toISOString() : null; } catch (e) { return null; }
 }
 
+/* 가입 방법 표기를 하나로 맞춘다.
+
+   8월 20일 전에는 파이어베이스가 주는 값을 그대로 적었다 — 이메일 가입이
+   'password', 구글이 'google.com' 이다. 서버로 옮기면서 'email' · 'google'
+   로 바뀌었고, 그래서 같은 이메일 가입이 목록에 두 가지 말로 나온다.
+   읽을 때 맞춘다. 문서를 고치지는 않는다 — 받은 그대로 두는 편이 낫고,
+   고치다 잘못 건드리면 되돌릴 수 없다.
+
+   모르는 값은 null 이다. 'email' 로 뭉뚱그리면 없는 사실을 지어내는 셈이다. */
+const PROVIDER_ALIAS = {
+  password: "email", email: "email",
+  "google.com": "google", google: "google",
+  kakao: "kakao", naver: "naver",
+};
+const PROVIDER_LABEL = { email: "이메일", google: "구글", kakao: "카카오", naver: "네이버" };
+
+function normProvider(v) {
+  return PROVIDER_ALIAS[String(v || "").trim().toLowerCase()] || null;
+}
+function providerLabel(v) {
+  const p = normProvider(v);
+  return p ? PROVIDER_LABEL[p] : null;
+}
+
 /* 요약 — 화면 맨 위에 걸어 두는 숫자들.
    재확인 대상은 정보통신망법 시행령 제62조의3 이 근거다. 광고성 정보
    수신동의를 받은 날부터 2년마다 수신동의 여부를 확인해야 한다. 안내할 때
@@ -927,7 +951,8 @@ exports.adminConsentStats = onCall({ region: REGION, cors: true }, async (req) =
     const c = u.consents || {};
     total++;
     if (c.agreedAt) consented++;
-    byProvider[u.signupMethod || "unknown"] = (byProvider[u.signupMethod || "unknown"] || 0) + 1;
+    const p = normProvider(u.signupMethod) || "unknown";
+    byProvider[p] = (byProvider[p] || 0) + 1;
     if (c.marketing) {
       marketing++;
       const at = u.marketingAt || c.agreedAt;
@@ -968,7 +993,8 @@ exports.adminConsentLookup = onCall({ region: REGION, cors: true }, async (req) 
   return {
     found: true, uid,
     email: u.email || null,
-    signupMethod: u.signupMethod || null,
+    signupMethod: normProvider(u.signupMethod),
+    signupLabel: providerLabel(u.signupMethod),
     createdAt: tsIso(u.createdAt),
     consents: {
       version: c.version || null, method: c.method || null,
@@ -990,11 +1016,75 @@ exports.adminMarketingList = onCall({ region: REGION, cors: true }, async (req) 
   const rows = snap.docs.map((d) => {
     const u = d.data() || {};
     return { uid: d.id, email: u.email || null,
-             provider: u.signupMethod || null,
+             provider: normProvider(u.signupMethod),
+             providerLabel: providerLabel(u.signupMethod),
              agreedAt: tsIso((u.consents || {}).agreedAt),
              marketingAt: tsIso(u.marketingAt) };
   });
   return { count: rows.length, rows };
+});
+
+/* 전체 회원 목록.
+
+   마케팅 동의자만 뽑을 수 있으면 "그 사람 가입은 했나" 를 답할 수 없다.
+   조회는 이메일이나 uid 를 이미 알고 있어야 쓸 수 있고, 모르는 것을
+   물어볼 수는 없다. 목록이 있어야 한다.
+
+   정렬은 메모리에서 한다. orderBy("createdAt") 을 쓰면 그 칸이 없는 옛
+   문서가 결과에서 통째로 빠진다 — 파이어스토어는 정렬 기준이 없는 문서를
+   건너뛴다. 없는 사람을 빼놓는 목록은 목록이 아니다.
+
+   상한은 2000 이다. 회원이 그보다 많아지면 잘린 사실을 화면에 알리고,
+   그때 가서 페이지를 나눈다. 조용히 일부만 보여 주는 것이 제일 나쁘다. */
+exports.adminUserList = onCall({ region: REGION, cors: true }, async (req) => {
+  assertAdmin(req);
+  const db = admin.firestore();
+  const CAP = 2000;
+  const snap = await db.collection("users").limit(CAP + 1).get();
+  const truncated = snap.size > CAP;
+  const rows = snap.docs.slice(0, CAP).map((d) => {
+    const u = d.data() || {};
+    const c = u.consents || {};
+    return {
+      uid: d.id,
+      email: u.email || null,
+      provider: normProvider(u.signupMethod),
+      providerLabel: providerLabel(u.signupMethod),
+      createdAt: tsIso(u.createdAt),
+      agreedAt: tsIso(c.agreedAt),
+      marketing: !!c.marketing,
+      marketingAt: tsIso(u.marketingAt),
+      live: null,          // Auth 에 계정이 실제로 있는가
+      emailVerified: null,
+    };
+  });
+
+  /* 계정이 살아 있는지 같이 본다. 콘솔에서 Auth 사용자만 지우면 users
+     문서가 남는데, 그 유령 문서는 목록에서 멀쩡한 회원처럼 보이고 실제로
+     멀쩡한 가입까지 막은 적이 있다. 보이면 사람이 치울 수 있다.
+     실패해도 목록은 그대로 내보낸다 — 부가 정보 때문에 목록을 잃을 이유가
+     없다. 그때는 두 칸이 빈 채로 나간다. */
+  try {
+    for (let i = 0; i < rows.length; i += 100) {
+      const part = rows.slice(i, i + 100);
+      const res = await admin.auth().getUsers(part.map((r) => ({ uid: r.uid })));
+      const byUid = new Map((res.users || []).map((u) => [u.uid, u]));
+      part.forEach((r) => {
+        const au = byUid.get(r.uid);
+        r.live = !!au;
+        if (au) {
+          r.emailVerified = !!au.emailVerified;
+          if (!r.email && au.email) r.email = au.email.toLowerCase();
+        }
+      });
+    }
+  } catch (e) {
+    console.warn("[adminUserList] Auth 조회 실패:", e && e.message);
+  }
+
+  /* 최근 가입이 위로. 가입 시각이 없는 옛 문서는 맨 아래로 내린다. */
+  rows.sort((a, b) => String(b.createdAt || "").localeCompare(String(a.createdAt || "")));
+  return { count: rows.length, truncated, rows };
 });
 
 exports.getUsage = onCall({ region: REGION, cors: true }, async (req) => {
