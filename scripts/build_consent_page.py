@@ -24,8 +24,8 @@ MAIN = '''<main>
   <div class="wrap">
     <div class="head">
       <div class="kick">ACCOUNT</div>
-      <h1>약관 동의</h1>
-      <p>가입을 마치려면 아래 항목에 동의해 주세요.</p>
+      <h1 id="ttl">약관 동의</h1>
+      <p id="lede">가입을 마치려면 아래 항목에 동의해 주세요.</p>
     </div>
 
     <div class="auth-card card glass consent-card">
@@ -43,7 +43,7 @@ MAIN = '''<main>
       </div>
     </div>
 
-    <p class="consent-note">동의하지 않으면 가입이 취소되고 계정은 남지 않습니다.</p>
+    <p class="consent-note" id="foot">동의하지 않으면 가입이 취소되고 계정은 남지 않습니다.</p>
   </div>
 </main>'''
 
@@ -95,6 +95,13 @@ CSS = '''<style id="consent-css">
 DICT = '''if(window.KOSi18n) KOSi18n.register({
   "약관 동의":"Agreements",
   "가입을 마치려면 아래 항목에 동의해 주세요.":"To finish signing up, please accept the items below.",
+  "개정된 약관 동의":"Updated terms",
+  "이용약관이 개정되었습니다. 계속 이용하시려면 동의해 주세요.":
+    "Our Terms of Service have been updated. Please accept them to continue.",
+  "동의하고 계속하기":"Agree and continue",
+  "나중에 하기":"Not now",
+  "동의하지 않으면 로그아웃됩니다. 계정과 자료는 그대로 남습니다.":
+    "If you do not agree you will be signed out. Your account and data stay as they are.",
   "동의하고 시작하기":"Agree and continue",
   "동의하지 않고 취소":"Cancel",
   "이용약관":"Terms of Service",
@@ -142,7 +149,7 @@ SCRIPT = '''<script type="module">
 import { auth } from "./firebase-config.js";
 import { onAuthStateChanged, deleteUser, signOut }
   from "https://www.gstatic.com/firebasejs/10.12.2/firebase-auth.js";
-import { renderConsent, saveConsent, consentState } from "./consent.js";
+import { renderConsent, saveConsent, consentStage } from "./consent.js";
 import { sendVerifyEmail } from "./auth-emails.js";
 
 const T = m => (window.KOSi18n ? window.KOSi18n.t(m) : m);
@@ -155,6 +162,34 @@ const raw = new URLSearchParams(location.search).get('next') || 'Home.html';
 const NEXT = /^[A-Za-z0-9_.-]+\\.html(\\?[^#]*)?$/.test(raw) ? raw : 'Home.html';
 
 let consent = null;
+
+/* 이 사람이 여기 온 이유. 'none' 이면 가입을 마치지 못한 계정이고,
+   'stale' 이면 약관이 개정돼 다시 받는 것이다. 화면에 쓸 말이 다르다 —
+   3년 쓴 회원에게 "가입을 마치려면" 이라고 하면 무슨 소린지 알 수 없고,
+   "동의하지 않으면 계정이 남지 않습니다" 는 사실도 아니다. */
+let stage = 'none';
+
+/* 위 판단이 실제 기록을 보고 내려진 것인가. 조회가 실패하면(null) false 다.
+   취소 버튼이 계정을 지울지 말지를 이걸로 가른다 — 아래 참고. */
+let stageKnown = false;
+
+/* 재동의 화면의 문구. 지우는 것이 아니라 갈아 끼운다 — 같은 페이지가
+   두 가지 일을 한다. */
+const RECONSENT = {
+  ttl:  '개정된 약관 동의',
+  lede: '이용약관이 개정되었습니다. 계속 이용하시려면 동의해 주세요.',
+  btn:  '동의하고 계속하기',
+  no:   '나중에 하기',
+  foot: '동의하지 않으면 로그아웃됩니다. 계정과 자료는 그대로 남습니다.'
+};
+
+function paintReconsent(){
+  document.getElementById('ttl').textContent  = T(RECONSENT.ttl);
+  document.getElementById('lede').textContent = T(RECONSENT.lede);
+  document.getElementById('agreeBtn').textContent = T(RECONSENT.btn);
+  document.getElementById('cancelBtn').textContent = T(RECONSENT.no);
+  document.getElementById('foot').textContent = T(RECONSENT.foot);
+}
 
 /* 우리가 일부러 로그아웃하거나 계정을 지우는 동안 아래 리스너가 끼어들지
    못하게 막는 빗장이다.
@@ -175,9 +210,18 @@ onAuthStateChanged(auth, async user => {
   // 이미 동의한 계정이 뒤로가기 등으로 다시 들어오면 그냥 통과시킨다.
   // 조회에 실패하면(null) 막지 않고 화면을 띄운다 — 통신이 잠깐 끊겼다고
   // 가입을 세우지 않는다.
-  if(await consentState(user.uid) === true){ location.replace(NEXT); return; }
+  const st = await consentStage(user.uid);
+  if(st === 'ok'){ location.replace(NEXT); return; }
   if(consent) return;                     // 인증 상태가 두 번 울려도 한 번만 그린다
-  consent = renderConsent();
+  /* 못 읽었으면(null) 막지 않고 가입 화면으로 띄운다 — 통신이 잠깐
+     끊겼다고 가입을 세우지 않는다. */
+  stage = st === 'stale' ? 'stale' : 'none';
+  stageKnown = (st === 'stale' || st === 'none');
+  if(stage === 'stale') paintReconsent();
+  /* 재동의는 필수 항목만 묻는다. 마케팅은 선택 항목이라 설정 화면이
+     관리하는데, 여기서 빈 칸으로 다시 내밀면 켜 둔 사람이 그대로 두는
+     순간 꺼진 것처럼 보인다. 서버도 재동의 때는 마케팅을 건드리지 않는다. */
+  consent = renderConsent({ requiredOnly: stage === 'stale' });
   document.getElementById('consentMount').appendChild(consent.el);
   if(window.KOSi18n) window.KOSi18n.apply();
 });
@@ -193,7 +237,17 @@ document.getElementById('agreeBtn').addEventListener('click', async () => {
       : String(user.uid).split(':')[0] === 'naver' ? 'naver'
       : ((user.providerData || [])[0] || {}).providerId === 'google.com' ? 'google'
       : 'email';
-    await saveConsent(user.uid, consent.values(), provider, user.email || '');
+    const r = await saveConsent(user.uid, consent.values(), provider, user.email || '');
+
+    /* 개정 때문에 다시 받은 것이면 여기서 끝이다. 가입이 아니므로
+       가입 집계를 올리지 않고, 인증 메일도 보내지 않고, 로그아웃도 하지
+       않는다 — 이미 쓰고 있던 사람을 붙잡아 세운 것뿐이다.
+
+       판단은 서버 대답을 따른다. 기존 기록이 있었는지는 서버만 안다.
+       대답이 안 오는 옛 브라우저를 대비해 화면이 고른 stage 로 물러선다. */
+    const reconsent = r && typeof r.reconsent === 'boolean' ? r.reconsent : (stage === 'stale');
+    if(reconsent){ location.replace(NEXT); return; }
+
     if(window.KOSA) KOSA.track('sign_up', { method: provider });
 
     /* 이메일 가입은 여기서 끝나지 않는다. 메일 인증이 남아 있어서
@@ -314,9 +368,32 @@ function showVerifySent(mail, sent){
 document.getElementById('cancelBtn').addEventListener('click', async () => {
   document.getElementById('cancelBtn').disabled = true;
   finishing = true;                     // deleteUser 가 리스너를 깨우지 못하게
-  /* 거부하면 계정을 지운다. 로그아웃만 하면 동의하지 않은 계정이 그대로
-     남는다. 지우기에 실패하면(재인증 요구 등) 로그아웃이라도 한다 — 남은
-     계정은 다음 로그인 때 이 페이지를 다시 만난다. */
+
+  /* 개정 재동의를 미룬 경우에는 로그아웃만 한다. 절대 지우지 않는다.
+
+     이미 쓰고 있던 회원이다. 약관 개정에 아직 동의하지 않았다는 것과
+     계정을 없애 달라는 것은 전혀 다른 말이다. 여기서 지우면 워치리스트도
+     구독도 같이 사라진다 — 되돌릴 수 없다.
+
+     약관 제3조가 시행일까지 거부 의사를 밝히지 않으면 동의한 것으로
+     본다고 정하고 있고, 동의하지 않는 회원은 탈퇴할 수 있다. 탈퇴는
+     설정 화면에서 본인이 하는 것이지 이 버튼이 대신할 일이 아니다. */
+  /* 조회에 실패해 여기 온 이유를 모르는 경우도 지우지 않는다.
+
+     통신이 잠깐 끊기면 stage 가 'none' 으로 떨어진다. 그 상태에서 기존
+     회원이 새로고침하고 취소를 누르면 멀쩡한 계정이 사라진다 — 워치리스트도
+     구독도 같이. 지우는 것은 되돌릴 수 없고, 안 지워서 생기는 일은
+     '동의 없는 계정이 하루 더 남는 것' 뿐이며 그건 purgeUnconsented 가
+     내일 치운다. 애매하면 지우지 않는 쪽으로 기운다. */
+  if(stage === 'stale' || !stageKnown){
+    try{ await signOut(auth); }catch(_){}
+    location.replace('Home.html');
+    return;
+  }
+
+  /* 가입을 마치지 않은 계정은 지운다. 로그아웃만 하면 동의하지 않은
+     계정이 그대로 남는다. 지우기에 실패하면(재인증 요구 등) 로그아웃이라도
+     한다 — 남은 계정은 다음 로그인 때 이 페이지를 다시 만난다. */
   try{ await deleteUser(auth.currentUser); }
   catch(e){ try{ await signOut(auth); }catch(_){} }
   location.replace('Home.html');

@@ -160,11 +160,17 @@ function css() {
   document.head.appendChild(s);
 }
 
-/* 동의 항목 묶음을 그린다. { el, validate(), values() } 를 돌려준다. */
+/* 동의 항목 묶음을 그린다. { el, validate(), values() } 를 돌려준다.
+
+   opts.requiredOnly — 필수 항목만 그린다. 약관을 개정해 재동의를 받을 때
+   쓴다. 마케팅 수신은 선택 항목이라 설정 화면이 관리하는데, 재동의 화면에
+   빈 칸으로 다시 내밀면 켜 둔 사람이 그대로 두는 순간 꺼진 것처럼 보인다.
+   묻지 않는 편이 맞다 — 서버도 재동의 때는 마케팅을 건드리지 않는다. */
 export function renderConsent(opts = {}) {
   css();
   const box = document.createElement("div");
   box.className = "kc";
+  const items = opts.requiredOnly ? ITEMS.filter(i => i.required) : ITEMS;
 
   const all = document.createElement("label");
   all.className = "kc-all";
@@ -172,7 +178,7 @@ export function renderConsent(opts = {}) {
   box.appendChild(all);
 
   const boxes = {};
-  for (const it of ITEMS) {
+  for (const it of items) {
     const row = document.createElement("label");
     row.className = "kc-row";
     const cb = document.createElement("input");
@@ -215,7 +221,7 @@ export function renderConsent(opts = {}) {
   err.textContent = T("필수 항목에 동의해야 가입할 수 있어요.");
   box.appendChild(err);
 
-  const list = ITEMS.map(i => boxes[i.key]);
+  const list = items.map(i => boxes[i.key]);
   const sync = () => { all.querySelector("input").checked = list.every(c => c.checked); };
   all.querySelector("input").addEventListener("change", e => {
     list.forEach(c => { c.checked = e.target.checked; });
@@ -229,7 +235,7 @@ export function renderConsent(opts = {}) {
     el: box,
     values() {
       const v = {};
-      for (const it of ITEMS) v[it.key] = !!boxes[it.key].checked;
+      for (const it of items) v[it.key] = !!boxes[it.key].checked;
       return v;
     },
     validate() {
@@ -270,12 +276,16 @@ function callFn(name, payload) {
 }
 
 export async function saveConsent(uid, values, method, email) {
-  await callFn("recordSignupConsent", {
+  /* 서버가 돌려주는 것을 그대로 넘긴다 — { first, reconsent }.
+     부르는 쪽이 '가입을 마친 것' 과 '개정 때문에 다시 받은 것' 을
+     갈라야 하는데, 그것을 아는 것은 서버뿐이다(기존 기록을 본다). */
+  const r = await callFn("recordSignupConsent", {
     method: "checkbox",
     provider: method || "email",
     marketing: !!(values && values.marketing),
     email: email || ""
   });
+  return (r && r.data) || {};
 }
 
 /* saveImpliedConsent 는 없앴다. 한 줄 고지로 받던 동의를 기록하던 함수인데,
@@ -318,11 +328,27 @@ export async function saveConsent(uid, values, method, email) {
    읽기에 실패하면 null 을 돌려준다 — '없다'와 구분해야 한다. 통신이 잠깐
    끊겼다고 로그인을 막으면 안 된다. */
 export async function consentState(uid) {
+  const s = await consentStage(uid);
+  return s === null ? null : s === "ok";
+}
+
+/* 왜 아닌지까지 알려 주는 판. 동의 화면이 이걸 보고 문구를 고른다.
+
+     "ok"     최신 판에 동의했다
+     "none"   동의 기록이 아예 없다 — 가입을 마치지 못한 계정
+     "stale"  동의는 했는데 그 뒤 약관이 개정됐다 — 재동의
+     null     못 읽었다(통신·규칙). '없다'와 구분해야 한다 — 통신이 잠깐
+              끊겼다고 로그인을 막으면 안 된다.
+
+   둘을 갈라야 하는 이유는 화면에 쓸 말이 다르기 때문이다. 3년 쓴 회원에게
+   "가입을 마치려면" 이라고 하면 무슨 소린지 알 수 없고, 취소 버튼이
+   "동의하지 않고 취소" 인 것도 맞지 않는다. */
+export async function consentStage(uid) {
   try {
     const snap = await getDoc(doc(db(), "users", uid));
     const c = snap.exists() ? (snap.data().consents || null) : null;
-    if (!c) return false;
-    return c.version === CONSENT_VERSION && REQUIRED.every(k => c[k] === true);
+    if (!c || !REQUIRED.every(k => c[k] === true)) return "none";
+    return c.version === CONSENT_VERSION ? "ok" : "stale";
   } catch (e) {
     console.warn("[consent] 조회 실패:", e && e.code);
     return null;

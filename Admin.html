@@ -522,6 +522,9 @@ KOSi18n.register({
 .adm-tbl td.mail{color:var(--fg-1);font-weight:600;max-width:260px;
   overflow:hidden;text-overflow:ellipsis}
 .adm-tbl th:last-child,.adm-tbl td:last-child{padding-right:0}
+.adm-tbl-nc{min-width:420px}
+.adm-tbl-nc tbody tr{cursor:default}
+.adm-tbl-nc td.uid{color:var(--fg-3);font:400 11.5px var(--font-mono,ui-monospace,monospace)}
 .adm-dead{color:#c0282b;font-weight:600}
 :root[data-theme="dark"] .adm-dead{color:#ff8a8c}
 @media (max-width:640px){
@@ -580,6 +583,12 @@ KOSi18n.register({
         <h2>요약</h2>
         <div class="adm-stats" id="stats"></div>
         <p class="adm-note" id="dueNote" hidden></p>
+      </section>
+
+      <section class="adm-card card glass" id="ncSec" hidden>
+        <h2>동의 없는 계정</h2>
+        <p class="adm-note">가입하다 동의 화면에서 나간 계정입니다. 회원 목록에는 나오지 않습니다 — 동의 기록이 없어 회원으로 세지 않기 때문입니다.</p>
+        <div class="adm-wrap"><table class="adm-tbl adm-tbl-nc" id="nc"></table></div>
       </section>
 
       <section class="adm-card card glass">
@@ -686,6 +695,16 @@ if(window.KOSi18n) KOSi18n.register({
   "계정 없음":"No account",
   "미인증":"Unverified",
   "가입한 곳에서 확인한 주소입니다.":"Verified by the sign-in provider.",
+  "재동의 대상":"Needs re-consent",
+  "동의 없는 계정":"Without consent",
+  "가입하다 동의 화면에서 나간 계정입니다. 회원 목록에는 나오지 않습니다 — 동의 기록이 없어 회원으로 세지 않기 때문입니다.":
+    "Sign-ups abandoned at the consent screen. They do not appear in the member list because there is no consent record to count.",
+  "동의 없는 계정은 가입하다 동의 화면에서 나간 계정입니다. 만든 지 24시간이 지나면 매일 12:30에 자동으로 지워집니다(동의 제도 시행 전 계정은 지우지 않습니다).":
+    "Accounts without consent were abandoned at the consent screen. They are deleted automatically at 12:30 daily once 24 hours old (accounts predating the consent system are never deleted).",
+  "동의 없는 계정을 세지 못했습니다. 숫자가 0이라는 뜻이 아닙니다.":
+    "Could not count accounts without consent — the number is not zero, it is unknown.",
+  "동의서 판":"Consent version",
+  "(현재 판)":"(current)",
   "체크박스":"Checkbox",
   "가입 버튼 아래 고지 문구":"Notice under the sign-up button",
   "완료":"Verified",
@@ -790,14 +809,22 @@ onAuthStateChanged(auth, async user => {
   }
 });
 
+/* 마지막으로 받은 요약. 언어가 바뀌면 이걸로 다시 그린다. */
+let STATS = null;
+
 function drawStats(s){
+  STATS = s;
   const box = $('#stats');
   box.textContent = '';
+  /* '동의 없는 계정' 은 못 셌을 때 null 로 온다. 0 으로 갈음하면 '없다'로
+     읽혀서, 못 본 것과 없는 것이 뒤섞인다. 물음표로 둔다. */
   const items = [
     ['전체 회원', s.total, false],
     ['동의 완료', s.consented, false],
     ['마케팅 동의', s.marketing, false],
     ['2년 재확인 대상', s.dueRecheck, s.dueRecheck > 0],
+    ['재동의 대상', s.stale, s.stale > 0],
+    ['동의 없는 계정', s.noConsent == null ? '?' : s.noConsent, s.noConsent > 0],
   ];
   for(const [label, n, warn] of items){
     const d = document.createElement('div');
@@ -806,12 +833,68 @@ function drawStats(s){
     const sp = document.createElement('span'); sp.textContent = T(label);
     d.appendChild(b); d.appendChild(sp); box.appendChild(d);
   }
+
+  const notes = [];
   if(s.dueRecheck > 0){
-    const p = $('#dueNote');
-    p.textContent = '정보통신망법 시행령 제62조의3 — 광고성 정보 수신동의는 동의일부터 2년마다 유지 여부를 확인해야 합니다. 안내할 때 전송자 명칭·수신동의 날짜·철회 방법을 함께 알려야 합니다.';
-    p.hidden = false;
+    notes.push('정보통신망법 시행령 제62조의3 — 광고성 정보 수신동의는 동의일부터 2년마다 유지 여부를 확인해야 합니다. 안내할 때 전송자 명칭·수신동의 날짜·철회 방법을 함께 알려야 합니다.');
   }
+  /* 판 번호별 인원. 약관을 개정하면 여기서 재동의 진행률이 보인다. */
+  if(s.byVersion && Object.keys(s.byVersion).length){
+    const parts = Object.keys(s.byVersion).sort().reverse()
+      .map(v => v + ' ' + countText(s.byVersion[v]) + (v === s.version ? ' ' + T('(현재 판)') : ''));
+    notes.push(T('동의서 판') + ' — ' + parts.join(' · '));
+  }
+  if(s.noConsent > 0){
+    notes.push(T('동의 없는 계정은 가입하다 동의 화면에서 나간 계정입니다. 만든 지 24시간이 지나면 매일 12:30에 자동으로 지워집니다(동의 제도 시행 전 계정은 지우지 않습니다).'));
+  }
+  if(s.noConsent == null){
+    notes.push(T('동의 없는 계정을 세지 못했습니다. 숫자가 0이라는 뜻이 아닙니다.'));
+  }
+
+  const p = $('#dueNote');
+  p.textContent = '';
+  if(notes.length){
+    notes.forEach((t, i) => {
+      if(i) p.appendChild(document.createElement('br'));
+      const sp = document.createElement('span');
+      sp.textContent = t;
+      p.appendChild(sp);
+    });
+    p.hidden = false;
+  } else {
+    p.hidden = true;
+  }
+
+  drawNoConsent(s.noConsentRows || []);
   relabel();
+}
+
+/* 동의 없는 계정 목록. 없으면 칸 자체를 숨긴다 — 늘 비어 있는 게 정상이고,
+   빈 표가 늘 떠 있으면 진짜 뭔가 생겼을 때 눈에 안 들어온다. */
+function drawNoConsent(rows){
+  const sec = $('#ncSec');
+  if(!rows.length){ sec.hidden = true; return; }
+  sec.hidden = false;
+  const t = $('#nc');
+  t.textContent = '';
+  const thead = document.createElement('thead');
+  const hr = document.createElement('tr');
+  ['이메일', '가입 시각', 'uid'].forEach(h => {
+    const th = document.createElement('th'); th.textContent = T(h); hr.appendChild(th);
+  });
+  thead.appendChild(hr); t.appendChild(thead);
+  const tb = document.createElement('tbody');
+  for(const r of rows){
+    const tr = document.createElement('tr');
+    [[esc(r.email), 'mail'], [when(r.createdAt), ''], [r.uid, 'uid']].forEach(([v, cls]) => {
+      const td = document.createElement('td');
+      if(cls) td.className = cls;
+      td.textContent = v;
+      tr.appendChild(td);
+    });
+    tb.appendChild(tr);
+  }
+  t.appendChild(tb);
 }
 
 /* ── 회원 목록 ───────────────────────────────────────────────── */
@@ -920,9 +1003,22 @@ function mark(text){
 
 $('#filter').addEventListener('input', drawUsers);
 
-/* 언어를 바꾸면 표를 다시 그린다. 표는 우리가 만든 것이라 사전 엔진이
-   훑기 전에 우리가 먼저 손봐야 한다 — 엔진도 그 순서로 부른다. */
-if(window.KOSi18n) KOSi18n.register(null, () => { if(USERS.length) drawUsers(); });
+/* 언어가 정해지거나 바뀌면 우리가 그린 것을 다시 그린다.
+
+   두 가지를 처리한다.
+
+   하나, 언어 전환. 표는 우리가 만든 것이라 사전 엔진이 훑기 전에 우리가
+   먼저 손봐야 한다 — 엔진도 그 순서로 부른다.
+
+   둘, 첫 화면의 경합. 엔진의 lang 은 DOMContentLoaded 에서 init() 이
+   돌기 전까지 'ko' 다. 그 전에 그린 글자는 한국어로 굳는데, 사전에 있는
+   말은 apply() 가 고쳐 줘도 '2026-09-01 3명' 처럼 우리가 이어 붙인
+   문장은 사전 키가 아니라 그대로 남는다. 실제로 영어 모드에서 그 줄만
+   한국어였다. init() 이 이 리스너를 불러 주므로 여기서 다시 그리면 된다. */
+if(window.KOSi18n) KOSi18n.register(null, () => {
+  if(STATS) drawStats(STATS);
+  if(USERS.length) drawUsers();
+});
 
 $('#usersCsvBtn').addEventListener('click', () => {
   if(!USERS.length) return;
