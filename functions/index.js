@@ -137,6 +137,32 @@ async function naverProfile(code, redirectUri, state){
   };
 }
 
+/* ── 같은 이메일을 이미 쓰는 다른 계정 찾기 ────────────────────────
+   왜 필요한가. 카카오·네이버는 커스텀 토큰으로 로그인시키는데, 그때
+   Firebase 사용자에는 이메일을 심지 않는다(계정 충돌을 피하려고 그렇게 했다).
+   그 대가로 Firebase 의 '이메일당 계정 하나' 보호가 소셜 계정을 아예 보지
+   못한다. 그래서 네이버로 가입한 사람이 같은 네이버 주소로 이메일 가입을
+   또 할 수 있었다 — 같은 사람에게 계정이 둘 생긴다.
+
+   계정이 둘이면 관심 종목이 갈리고, 같은 주소로 마케팅 메일이 두 번 가고,
+   한쪽을 탈퇴해도 다른 쪽이 남는다.
+
+   이메일은 users/{uid}.email 에만 있으므로 여기서 찾는다. 단일 필드 조회라
+   색인을 따로 만들 필요가 없다. */
+const METHOD_KO = { email: "이메일", google: "구글", kakao: "카카오", naver: "네이버" };
+
+async function findOtherAccountByEmail(db, email, selfUid) {
+  const mail = String(email || "").trim().toLowerCase();
+  if (!mail) return null;
+  const q = await db.collection("users").where("email", "==", mail).limit(5).get();
+  for (const doc of q.docs) {
+    if (doc.id === selfUid) continue;
+    const m = (doc.data() || {}).signupMethod || "";
+    return { uid: doc.id, method: m, label: METHOD_KO[m] || m || "다른 방법" };
+  }
+  return null;
+}
+
 exports.socialLogin = onCall(
   {
     region: REGION,
@@ -171,6 +197,18 @@ exports.socialLogin = onCall(
       else throw new HttpsError("internal", `user_lookup_failed: ${e.code || e.message}`);
     }
 
+    /* 새 소셜 계정을 만들기 전에, 같은 이메일을 쓰는 계정이 이미 있는지 본다.
+       있으면 만들지 않는다 — 만들었다 지우는 것보다 애초에 안 만드는 쪽이
+       확실하다. 기존 사용자(exists)는 검사하지 않는다. 이미 쓰고 있는
+       사람을 뒤늦게 막으면 로그인이 통째로 끊긴다. */
+    if(!exists && p.email){
+      const other = await findOtherAccountByEmail(admin.firestore(), p.email, uid);
+      if(other){
+        throw new HttpsError("already-exists",
+          `이미 ${other.label}(으)로 가입된 이메일입니다.`, { method: other.method });
+      }
+    }
+
     try{
       if(exists) await admin.auth().updateUser(uid, userProps);
       else await admin.auth().createUser({ uid, ...userProps });
@@ -196,7 +234,7 @@ exports.socialLogin = onCall(
     const db = admin.firestore();
     const now = admin.firestore.FieldValue.serverTimestamp();
     const patch = { signupMethod: provider, updatedAt: now };
-    if(p.email) patch.email = p.email;
+    if(p.email) patch.email = String(p.email).trim().toLowerCase();
     if(!exists){
       if(!p.email) patch.email = null;
       patch.consents = {
@@ -570,6 +608,7 @@ exports.getReport = onCall(
    동의한 시각이 사라진다 — 그 시각이 이 기록의 핵심이다. */
 const SIGNUP_METHODS = ["email", "google", "kakao", "naver"];
 
+
 exports.recordSignupConsent = onCall({ region: REGION, cors: true }, async (req) => {
   const uid = req.auth && req.auth.uid;
   if (!uid) throw new HttpsError("unauthenticated", "로그인이 필요합니다.");
@@ -577,13 +616,24 @@ exports.recordSignupConsent = onCall({ region: REGION, cors: true }, async (req)
   const method = d.method === "checkbox" ? "checkbox" : "signup-notice";
   const marketing = d.marketing === true;
   const provider = SIGNUP_METHODS.includes(d.provider) ? d.provider : "unknown";
-  const email = typeof d.email === "string" ? d.email.trim().slice(0, 320) : "";
+  const email = typeof d.email === "string" ? d.email.trim().toLowerCase().slice(0, 320) : "";
 
   const db = admin.firestore();
   const ref = db.collection("users").doc(uid);
   const now = admin.firestore.FieldValue.serverTimestamp();
   const snap = await ref.get();
   const already = snap.exists && !!((snap.data().consents || {}).agreedAt);
+
+  /* 아직 동의를 남기지 않은 계정만 본다. 이미 쓰는 회원을 나중에 막아
+     내쫓으면 안 된다 — 여기서 걸러야 할 것은 '지금 막 만들어진 두 번째
+     계정' 이다. 부르는 쪽이 이 계정을 지우고 원래 방법으로 안내한다. */
+  if (!already && email) {
+    const other = await findOtherAccountByEmail(db, email, uid);
+    if (other) {
+      throw new HttpsError("already-exists",
+        `이미 ${other.label}(으)로 가입된 이메일입니다.`, { method: other.method });
+    }
+  }
 
   const patch = { updatedAt: now };
   if (email) patch.email = email;

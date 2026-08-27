@@ -66,6 +66,14 @@ async function completeLogin(code, returnedState, saved, onError){
     location.href = saved.next || "Home.html";
   }catch(err){
     history.replaceState({}, "", location.pathname);
+    /* 같은 이메일을 쓰는 계정이 이미 있어 서버가 만들지 않은 경우.
+       코드만 붙여 내보내면 무슨 일인지 알 수 없다 — 서버가 보낸 문장을
+       그대로 보여 준다("이미 이메일로 가입된 이메일입니다." 같은 형태다). */
+    const code = String((err && err.code) || "");
+    if(code.indexOf("already-exists") >= 0){
+      onError && onError(err.message || T("이미 다른 방법으로 가입된 이메일입니다."));
+      return;
+    }
     onError && onError(T("소셜 로그인에 실패했습니다.") + " (" + (err.code || err.message || "") + ")");
   }
 }
