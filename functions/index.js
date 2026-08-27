@@ -1078,3 +1078,72 @@ if (PAYMENTS_LIVE) exports.renewSubscriptions = onSchedule(
     }
   }
 );
+
+/* ── 6) 동의를 마치지 못한 계정 정리 ──────────────────────────────
+   구글 가입은 팝업이 닫히는 순간 파이어베이스가 계정을 먼저 만든다. 동의는
+   그 뒤 Consent.html 에서 받는다. 그 사이에 창을 닫으면 동의 기록 없는
+   계정이 남는다.
+
+   화면 쪽은 auth-state.js 의 guardConsent 가 막고 있다 — 어느 페이지로
+   들어와도 동의 페이지로 되돌린다. 그래서 서비스를 쓰지는 못한다.
+
+   그런데 '못 쓰게 막는 것' 과 '가지고 있지 않는 것' 은 다르다. 그 계정에는
+   이메일과 이름이 들어 있고, 우리는 그걸 보관할 근거(동의)를 받지 못했다.
+   동의 없이 받은 개인정보를 무기한 들고 있을 수는 없다.
+
+   그래서 매일 한 번 훑어 지운다. 지우는 조건이 좁아야 한다 — 잘못 지우면
+   멀쩡한 회원 계정이 사라지는, 되돌릴 수 없는 자리다.
+
+     · 만든 지 24시간이 안 됐으면 건드리지 않는다. 가입하다 잠깐 자리를
+       비운 사람을 지우면 안 된다.
+     · users/{uid} 에 consents 가 있으면 건드리지 않는다.
+     · 문서를 읽지 못하면(권한·통신) 건드리지 않는다. '없다' 와 '못 읽었다'
+       를 구분하지 않으면 장애가 곧 계정 삭제가 된다.
+
+   이메일·카카오·네이버 가입은 계정이 만들어지는 그 자리에서 동의가 기록되므로
+   여기 걸리지 않는다. 실제 대상은 중간에 그만둔 구글 가입뿐이다.
+   ─────────────────────────────────────────────────────────── */
+exports.purgeUnconsented = onSchedule(
+  { region: REGION, schedule: "30 3 * * *", timeZone: "Etc/UTC" },   // 12:30 KST
+  async () => {
+    const db = admin.firestore();
+    const GRACE_MS = 24 * 60 * 60 * 1000;
+    const cutoff = Date.now() - GRACE_MS;
+    let scanned = 0, deleted = 0, kept = 0, skipped = 0;
+
+    let pageToken;
+    do {
+      const page = await admin.auth().listUsers(1000, pageToken);
+      pageToken = page.pageToken;
+
+      for (const u of page.users) {
+        scanned++;
+        const created = Date.parse(u.metadata.creationTime || "");
+        if (!created || created > cutoff) { kept++; continue; }   // 유예 기간 안
+
+        let snap;
+        try {
+          snap = await db.collection("users").doc(u.uid).get();
+        } catch (e) {
+          // 못 읽었으면 아무것도 하지 않는다. 다음 실행에서 다시 본다.
+          skipped++;
+          continue;
+        }
+        const c = snap.exists ? (snap.data() || {}).consents : null;
+        if (c && c.agreedAt) { kept++; continue; }
+
+        try {
+          await admin.auth().deleteUser(u.uid);
+          if (snap.exists) await snap.ref.delete();
+          deleted++;
+          console.log(`[purge] 삭제 ${u.uid} (생성 ${u.metadata.creationTime})`);
+        } catch (e) {
+          skipped++;
+          console.warn(`[purge] 삭제 실패 ${u.uid}: ${e.code || e.message}`);
+        }
+      }
+    } while (pageToken);
+
+    console.log(`[purge] 훑음 ${scanned} · 삭제 ${deleted} · 유지 ${kept} · 건너뜀 ${skipped}`);
+  }
+);

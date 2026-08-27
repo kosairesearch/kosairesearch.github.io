@@ -194,7 +194,18 @@ export function renderConsent(opts = {}) {
     if (it.detail) {
       const d = document.createElement("div");
       d.className = "kc-detail";
-      d.textContent = it.detail.map(x => T(x)).join(" · ");
+      /* 조각마다 제 노드를 준다. 이어 붙여 텍스트 노드 하나로 만들면 안 된다.
+         i18n 엔진은 텍스트 노드의 내용 전체를 사전 키로 찾는데, 이어 붙인
+         "수집 항목: … · 이용 목적: … · 보유 기간: …" 은 사전에 없는 문자열이다.
+         그래서 라벨은 영어로 바뀌는데 이 줄만 한국어로 남아 있었다.
+         (T() 로 미리 번역해 둬도 소용없다 — 언어를 토글하면 엔진이 그때
+          화면에 있던 값을 원본으로 삼아 다시 찾으므로 결국 같은 자리에서 막힌다.) */
+      it.detail.forEach((x, i) => {
+        if (i) d.appendChild(document.createTextNode(" · "));
+        const sp = document.createElement("span");
+        sp.textContent = T(x);
+        d.appendChild(sp);
+      });
       box.appendChild(d);
     }
   }
