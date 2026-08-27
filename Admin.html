@@ -713,6 +713,7 @@ if(window.KOSi18n) KOSi18n.register({
   "동의 없는 계정을 세지 못했습니다. 숫자가 0이라는 뜻이 아닙니다.":
     "Could not count accounts without consent — the number is not zero, it is unknown.",
   "동의서 판":"Consent version",
+  "카카오 약관":"Kakao terms",
   "안내 메일 대상 확인":"Preview notice recipients",
   "에게 안내 메일이 갑니다.":" will receive the notice email.",
   "보낼 대상이 없습니다.":"No one to notify.",
@@ -1206,6 +1207,13 @@ function drawMember(out, r){
   row('동의 시각', when(r.consents.agreedAt));
   row('마케팅 켠 시각', when(r.marketingAt));
   row('마케팅 끈 시각', when(r.marketingOffAt));
+  /* 카카오가 보낸 약관 목록 그대로. 우리 항목이 맞게 옮겨졌는지는 이걸
+     봐야 안다 — tag 는 개발자센터에서 정한 값이라 코드가 미리 모른다. */
+  if(r.consents.kakaoTerms && r.consents.kakaoTerms.length){
+    row('카카오 약관', r.consents.kakaoTerms
+      .map(t => t.tag + (t.required ? '(필수) ' : '(선택) ') + (t.agreed ? '동의' : '미동의'))
+      .join('  ·  '));
+  }
   out.appendChild(dl);
 
   if(r.events && r.events.length){
