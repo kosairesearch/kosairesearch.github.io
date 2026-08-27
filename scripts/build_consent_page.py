@@ -231,17 +231,15 @@ document.getElementById('agreeBtn').addEventListener('click', async () => {
       finishing = true;
       try{ await deleteUser(auth.currentUser); }
       catch(_){ try{ await signOut(auth); }catch(__){} }
-      /* 서버 문장은 한국어뿐이라 영어 모드에서 그대로 쓰면 한국어가 남는다.
-         서버가 details.method 로 어느 방법인지 같이 보내 주므로, 문장은
-         이쪽에서 만든다. 못 알아보면 서버 문장으로 물러선다. */
-      const METHOD_LABEL = {
-        email: '이메일 가입', google: '구글 로그인',
-        kakao: '카카오 로그인', naver: '네이버 로그인'
-      };
-      const mth = (e && e.details && e.details.method) || '';
-      errBox.textContent = (METHOD_LABEL[mth]
-        ? T('이 주소는 이미 다음 방법으로 등록되어 있습니다:') + ' ' + T(METHOD_LABEL[mth]) + '. '
-        : (e && e.message) || T('이미 다른 방법으로 가입된 이메일입니다.')) + ' ';
+      /* 서버 문장은 길고 한국어뿐이다. 서버가 details.method 로 어느
+         방법인지 알려 주므로 문구는 여기서 만든다 — 로그인·가입 화면과
+         같은 한 줄을 쓴다. */
+      let msg = '';
+      try{
+        const { hintText } = await import('./auth-hint.js');
+        msg = hintText((e && e.details && e.details.method) || '');
+      }catch(_){}
+      errBox.textContent = (msg || (e && e.message) || T('이미 다른 방법으로 가입된 이메일입니다.')) + ' ';
       const a = document.createElement('a');
       a.href = 'Login.html'; a.textContent = T('로그인하러 가기');
       a.style.cssText = 'color:var(--brand-blue);font-weight:600;text-decoration:underline';

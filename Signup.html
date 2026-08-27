@@ -687,7 +687,7 @@ async function showAlreadyRegistered(email){
   errBox.textContent = '';
 
   try{
-    const { signinMethod, renderHint } = await import('./auth-hint.js?v=67fc3431');
+    const { signinMethod, renderHint } = await import('./auth-hint.js?v=2289d634');
     const m = await signinMethod(email);
     if(m && m !== 'email' && renderHint(errBox, m)) return;
   }catch(_){ /* 안내는 부가 기능 */ }
@@ -740,7 +740,7 @@ $('#emailForm').addEventListener('submit', async e => {
      여기서 먼저 물어보면 계정이 만들어지지 않는다. 서버가 모르면(null)
      그냥 진행한다 — 안내를 못 하는 것이 가입을 막을 이유는 아니다. */
   try{
-    const { signinMethod, renderHint } = await import('./auth-hint.js?v=67fc3431');
+    const { signinMethod, renderHint } = await import('./auth-hint.js?v=2289d634');
     const m = await signinMethod(email);
     if(m && m !== 'email' && renderHint(errBox, m)){ btn.disabled = false; return; }
   }catch(_){ /* 안내는 부가 기능 */ }

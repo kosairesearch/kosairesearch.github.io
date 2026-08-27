@@ -708,7 +708,7 @@ $('#emailForm').addEventListener('submit', async e => {
     const code = String((err && err.code) || '');
     if(/invalid-credential|wrong-password|user-not-found|invalid-login/.test(code)){
       try{
-        const { signinMethod, renderHint } = await import('./auth-hint.js?v=67fc3431');
+        const { signinMethod, renderHint } = await import('./auth-hint.js?v=2289d634');
         const m = await signinMethod(email);
         if(m && m !== 'email' && renderHint(errBox, m)) return;
       }catch(_){ /* 안내는 부가 기능 — 실패해도 아래 기본 문구로 간다 */ }
