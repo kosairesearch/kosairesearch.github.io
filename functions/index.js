@@ -199,16 +199,32 @@ async function findOtherAccountByEmail(db, email, selfUid) {
 exports.signinHint = onCall({ region: REGION, cors: true }, async (req) => {
   const email = String(((req.data || {}).email) || "").trim().toLowerCase();
   if (!emailOk(email)) return { method: null };
-  let user;
-  try { user = await admin.auth().getUserByEmail(email); }
-  catch (e) { return { method: null }; }          // 없는 주소 → 아무 말도 하지 않는다
-  const uid = String(user.uid || "");
-  if (uid.startsWith("kakao:")) return { method: "kakao" };
-  if (uid.startsWith("naver:")) return { method: "naver" };
-  const ids = (user.providerData || []).map(x => x.providerId);
-  if (ids.includes("google.com")) return { method: "google" };
-  if (ids.includes("password")) return { method: "email" };
-  return { method: null };
+
+  /* ① Firebase 사용자에 이메일이 심긴 계정.
+        이메일 가입·구글은 항상 여기서 잡힌다. 카카오·네이버도 이제 심으므로
+        새로 만들어지는 것은 여기서 잡힌다. */
+  try {
+    const user = await admin.auth().getUserByEmail(email);
+    const uid = String(user.uid || "");
+    if (uid.startsWith("kakao:")) return { method: "kakao" };
+    if (uid.startsWith("naver:")) return { method: "naver" };
+    const ids = (user.providerData || []).map(x => x.providerId);
+    if (ids.includes("google.com")) return { method: "google" };
+    if (ids.includes("password")) return { method: "email" };
+    return { method: null };
+  } catch (e) {
+    if (!e || e.code !== "auth/user-not-found") return { method: null };
+  }
+
+  /* ② 이메일을 심기 전에 만들어진 옛 소셜 계정.
+        Auth 에는 이메일이 없고 users/{uid}.email 에만 있다. 여기를 보지
+        않으면 그런 계정은 영영 못 찾는다 — 실제로 그래서 안내가 안 나가고
+        가입이 그대로 통과했다. findOtherAccountByEmail 이 계정이 살아
+        있는지까지 확인하고 유령 문서는 치운다. */
+  try {
+    const other = await findOtherAccountByEmail(admin.firestore(), email, null);
+    return { method: (other && other.method) || null };
+  } catch (e) { return { method: null }; }
 });
 
 exports.socialLogin = onCall(

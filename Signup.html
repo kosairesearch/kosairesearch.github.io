@@ -729,6 +729,22 @@ $('#emailForm').addEventListener('submit', async e => {
   if(pw.length < 8 || !/[A-Za-z]/.test(pw) || !/[0-9]/.test(pw)){ showErr(T('비밀번호는 영문과 숫자를 포함해 8자 이상이어야 합니다.')); $('#password').focus(); return; }
   if(pw !== pw2){ showErr(T('비밀번호가 일치하지 않습니다.')); $('#password2').focus(); return; }
   const btn = $('#emailSubmit'); btn.disabled = true;
+
+  /* 계정을 만들기 전에 막는다.
+
+     이 확인을 오류 처리 안에만 두었던 것이 잘못이었다. 거기는 파이어베이스가
+     먼저 거절해 줘야 닿는 자리인데, 이메일을 심기 전에 만들어진 소셜 계정은
+     Auth 에 이메일이 없어 파이어베이스가 거절하지 않는다. 그래서 계정이
+     만들어지고 동의 화면까지 갔다가 거기서야 걸렸다.
+
+     여기서 먼저 물어보면 계정이 만들어지지 않는다. 서버가 모르면(null)
+     그냥 진행한다 — 안내를 못 하는 것이 가입을 막을 이유는 아니다. */
+  try{
+    const { signinMethod, renderHint } = await import('./auth-hint.js');
+    const m = await signinMethod(email);
+    if(m && m !== 'email' && renderHint(errBox, m)){ btn.disabled = false; return; }
+  }catch(_){ /* 안내는 부가 기능 */ }
+
   try{
     /* 계정을 먼저 만들고 동의를 그 다음에 받는다. 비밀번호를 다음 화면까지
        들고 갈 수는 없기 때문이다 — 세션 저장소에 비밀번호를 넣는 것은
