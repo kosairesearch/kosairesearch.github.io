@@ -29,6 +29,15 @@ const KAKAO_CLIENT_SECRET = defineSecret("KAKAO_CLIENT_SECRET"); // 카카오에
 const NAVER_CLIENT_ID = defineSecret("NAVER_CLIENT_ID");
 const NAVER_CLIENT_SECRET = defineSecret("NAVER_CLIENT_SECRET");
 const RESEND_API_KEY = defineSecret("RESEND_API_KEY"); // 이메일 발송(Resend)
+/* 탈퇴할 때 카카오 연결을 끊는 데 쓴다(어드민 키). 탈퇴 시점에는 사용자
+   토큰이 없어서 이 키가 아니면 끊을 방법이 없다.
+
+   값이 없어도 배포는 되어야 한다. 선언된 시크릿에 값이 없으면 배포가
+   통째로 막히기 때문이다(TOSS_SECRET_KEY 로 겪었다). 그래서 배포
+   워크플로가 값이 없으면 자리만 채워 두고, 아래 kakaoUnlink 가 그 값을
+   '미설정' 으로 알아보고 건너뛴다. */
+const KAKAO_ADMIN_KEY = defineSecret("KAKAO_ADMIN_KEY");
+const SECRET_UNSET = "미설정";
 /* ── 결제 스위치 ─────────────────────────────────────────────
    실사이트에는 아직 결제를 올리지 않는다. 배포 목록에서 빼는 것만으로는
    부족했다. 파이어베이스 CLI 는 --only 로 고른 함수만 올리더라도 코드
@@ -187,6 +196,50 @@ function isStaleProviderConsent(withdrawnAt, agreedAt){
   if(withdrawnAt < 0) return true;               // 이력을 못 읽음
   if(!agreedAt) return true;                     // 동의 시각을 모름
   return agreedAt <= withdrawnAt;                // 탈퇴 이전 동의면 옛것
+}
+
+/* 탈퇴할 때 카카오 앱 연결을 끊는다.
+
+   이걸 하지 않으면 탈퇴해도 카카오 '연결된 서비스' 목록에 KOSAI 가 남는다.
+   사용자가 보면 탈퇴가 안 된 것처럼 보이고, 실제로 다시 로그인하면 카카오가
+   이미 동의한 앱으로 보고 동의 화면을 건너뛴다 — 그러면 우리는 탈퇴 전에
+   받은 옛 동의를 새 계정의 동의로 적게 된다. 카카오 문서도 회원 탈퇴 시
+   연결 끊기를 요청하도록 안내한다.
+
+   탈퇴 시점에는 사용자 토큰이 없다(로그인할 때만 받고 버린다). 그래서
+   어드민 키로 끊는다.
+
+   실패해도 탈퇴는 계속한다. 카카오 쪽이 안 끊겼다고 우리 쪽 탈퇴를 막으면
+   사용자는 계정을 못 지운다 — 그게 더 나쁘다. 대신 실패를 기록에 남기고,
+   그 사람이 다시 가입하면 isStaleProviderConsent 가 옛 동의를 걸러 낸다. */
+async function kakaoUnlink(uid){
+  const key = (KAKAO_ADMIN_KEY.value() || "").trim();
+  if(!key || key === SECRET_UNSET){
+    console.warn("[kakao] 어드민 키가 없어 연결 끊기를 건너뛴다:", uid);
+    return false;
+  }
+  const id = String(uid).split(":")[1] || "";
+  if(!id) return false;
+  try{
+    const res = await fetch("https://kapi.kakao.com/v1/user/unlink", {
+      method: "POST",
+      headers: {
+        Authorization: `KakaoAK ${key}`,
+        "Content-Type": "application/x-www-form-urlencoded;charset=utf-8"
+      },
+      body: new URLSearchParams({ target_id_type: "user_id", target_id: id })
+    });
+    const text = await res.text();
+    if(!res.ok){
+      console.error(`[kakao] 연결 끊기 실패 HTTP ${res.status}:`, text.slice(0, 300));
+      return false;
+    }
+    console.log("[kakao] 연결 끊음:", uid);
+    return true;
+  }catch(e){
+    console.error("[kakao] 연결 끊기 오류:", uid, e && e.message);
+    return false;
+  }
 }
 
 async function kakaoProfile(code, redirectUri){
@@ -1129,7 +1182,7 @@ exports.setMarketingConsent = onCall({ region: REGION, cors: true }, async (req)
 });
 
 exports.deleteAccount = onCall(
-  { region: REGION, cors: true },
+  { region: REGION, cors: true, secrets: [KAKAO_ADMIN_KEY] },
   async (req) => {
   const uid = req.auth && req.auth.uid;
   if (!uid) throw new HttpsError("unauthenticated", "로그인이 필요합니다.");
@@ -1188,7 +1241,18 @@ exports.deleteAccount = onCall(
     const evs = await db.collection("consentEvents").where("uid", "==", uid).limit(500).get();
     await Promise.all(evs.docs.map((d) => d.ref.delete()));
   } catch (e) { console.warn("[delete] consentEvents", e && e.message); }
-  await logConsent(db, uid, "withdraw", {}, req);
+  /* 카카오 연결을 먼저 끊는다. 우리 계정을 지우고 나서 하면, 중간에
+     실패했을 때 어느 쪽이 남았는지 알기 어려워진다.
+
+     결과를 탈퇴 기록에 남긴다. 끊지 못한 사람이 다시 가입하면 카카오가
+     동의를 다시 묻지 않으므로, 나중에 '왜 이 사람만 우리 동의 화면을
+     봤나' 를 이 한 칸으로 답할 수 있다. */
+  let unlinked = null;
+  if (String(uid).startsWith("kakao:")) {
+    unlinked = await kakaoUnlink(uid);
+  }
+  await logConsent(db, uid, "withdraw",
+    unlinked === null ? {} : { kakaoUnlinked: unlinked }, req);
 
   await admin.auth().deleteUser(uid);
   return { ok: true, hadSubscription: !!(sub && sub.plan), refunded };

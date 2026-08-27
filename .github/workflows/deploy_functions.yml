@@ -42,6 +42,20 @@ jobs:
           printf '%s' "$RK" | firebase functions:secrets:set RESEND_API_KEY \
             --data-file=- --project kosai-ae167 --force
 
+      # 카카오 어드민 키 — 탈퇴할 때 카카오 앱 연결을 끊는 데 쓴다.
+      #
+      # 아직 등록하지 않았어도 배포는 되어야 한다. 코드가 선언한 시크릿에
+      # 값이 없으면 배포가 통째로 막히기 때문이다(TOSS_SECRET_KEY 로 겪었다).
+      # 값이 없으면 자리만 '미설정' 으로 채워 두고, 함수는 그 값을 알아보고
+      # 연결 끊기를 건너뛴다 — 탈퇴 자체는 정상으로 돌아간다.
+      - name: KAKAO_ADMIN_KEY 시크릿 등록
+        env:
+          AK: ${{ secrets.KAKAO_ADMIN_KEY }}
+        run: |
+          if [ -n "$AK" ]; then printf '%s' "$AK"; else printf '%s' "미설정"; fi \
+            | firebase functions:secrets:set KAKAO_ADMIN_KEY \
+              --data-file=- --project kosai-ae167 --force
+
       # 규칙을 먼저, 따로 올린다.
       #
       # 처음에는 functions,firestore:rules 를 한 명령에 묶었는데 함수 쪽이
