@@ -970,15 +970,38 @@ exports.adminConsentLookup = onCall({ region: REGION, cors: true }, async (req) 
   const q = String(((req.data || {}).q) || "").trim().toLowerCase();
   if (!q) throw new HttpsError("invalid-argument", "이메일 또는 uid 가 필요합니다.");
 
+  /* 이메일로 찾을 때 users 문서만 보면 안 된다.
+
+     목록(adminUserList)은 users 문서에 이메일이 없으면 Auth 에서 가져와
+     보여 준다. 그래서 화면에는 주소가 멀쩡히 떠 있는데 여기서는 '찾지
+     못했습니다' 가 나왔다 — 8월 20일 전에 만들어진 계정은 users 문서에
+     email 칸이 없다(그때는 Auth 에만 있었다).
+
+     두 곳을 다 본다. 목록이 보여 주는 것과 조회가 찾는 것이 어긋나면
+     그 화면은 못 믿는 화면이 된다. */
   let uid = q;
   if (q.includes("@")) {
     const found = await db.collection("users").where("email", "==", q).limit(1).get();
-    if (found.empty) return { found: false };
-    uid = found.docs[0].id;
+    if (!found.empty) {
+      uid = found.docs[0].id;
+    } else {
+      try {
+        uid = (await admin.auth().getUserByEmail(q)).uid;
+      } catch (e) {
+        return { found: false };
+      }
+    }
   }
+  /* Auth 기록도 같이 본다. 둘 중 하나만 있는 경우가 실제로 생긴다
+     (콘솔에서 한쪽만 지웠거나, 옛 계정이라 아직 안 맞춰졌거나).
+     하나라도 있으면 있는 대로 보여 준다 — '찾지 못했습니다' 는 정말로
+     아무 데도 없을 때만 할 말이다. */
+  let au = null;
+  try { au = await admin.auth().getUser(uid); } catch (e) { /* 없으면 없는 대로 */ }
+
   const snap = await db.collection("users").doc(uid).get();
-  if (!snap.exists) return { found: false };
-  const u = snap.data() || {};
+  if (!snap.exists && !au) return { found: false };
+  const u = (snap.exists && snap.data()) || {};
   const c = u.consents || {};
 
   const evs = await db.collection("consentEvents").where("uid", "==", uid).limit(200).get();
@@ -992,10 +1015,13 @@ exports.adminConsentLookup = onCall({ region: REGION, cors: true }, async (req) 
 
   return {
     found: true, uid,
-    email: u.email || null,
+    email: u.email || (au && au.email ? au.email.toLowerCase() : null),
     signupMethod: normProvider(u.signupMethod),
     signupLabel: providerLabel(u.signupMethod),
     createdAt: tsIso(u.createdAt),
+    hasDoc: snap.exists,
+    live: !!au,
+    emailVerified: au ? !!au.emailVerified : null,
     consents: {
       version: c.version || null, method: c.method || null,
       age14: !!c.age14, terms: !!c.terms, privacy: !!c.privacy,

@@ -151,9 +151,7 @@ DICT = '''if(window.KOSi18n) KOSi18n.register({
   "없음":"None",
   "계정 없음":"No account",
   "미인증":"Unverified",
-  "주소 미등록":"Not on file",
-  "소셜 로그인 계정에 이메일이 아직 심기지 않았습니다. 다음 로그인 때 채워집니다.":
-    "This social account has no email on the auth record yet. It fills in on their next sign-in.",
+  "가입한 곳에서 확인한 주소입니다.":"Verified by the sign-in provider.",
   "완료":"Verified",
   "정보통신망법 시행령 제62조의3 — 광고성 정보 수신동의는 동의일부터 2년마다 유지 여부를 확인해야 합니다. 안내할 때 전송자 명칭·수신동의 날짜·철회 방법을 함께 알려야 합니다.":
     "Network Act Enforcement Decree art. 62-3 — marketing consent must be re-confirmed every two years from the date it was given, and the notice must state the sender's name, the consent date, and how to withdraw.",
@@ -344,24 +342,28 @@ function drawUsers(){
   relabel();
 }
 
-/* 메일 인증 칸.
+/* 메일 인증 칸이 답해야 하는 것은 하나다 — 이 주소가 본인 것으로
+   확인됐는가.
 
-   빨갛게 칠할 것은 '이 주소로 메일을 보낼 수 없다' 일 때뿐이다.
-   Auth 에 이메일이 아예 없는 계정(8월 27일 전에 만들어진 카카오·네이버)은
-   인증에 실패한 것이 아니라 아직 심기지 않은 것이다. 다음 로그인 때
-   채워진다. 그것을 '미인증' 이라 부르면 없는 문제를 만들어 낸다. */
+   처음에는 Firebase 의 emailVerified 를 그대로 내보냈다. 그건 '우리가
+   보낸 인증 메일을 눌렀는가' 라는 뜻이다. 소셜 계정에는 인증 메일을
+   보낸 적이 없으니 영원히 false 다 — 네이버로 가입한 사람이 빨간
+   '미인증' 으로 뜬 이유고, 고치겠다고 '주소 미등록' 이라 써 붙인 것은
+   내부 사정을 화면에 그대로 내민 것이라 더 나빴다.
+
+   구글·카카오·네이버는 자기네가 확인한 주소만 넘겨준다. 확인된 것으로
+   본다. 우리 인증 메일을 잣대로 삼는 것은 이메일 가입뿐이다. */
 function verifyCell(u){
   if(u.live === false) return mark('계정 없음');
-  if(u.emailVerified == null) return '—';
-  if(u.emailVerified) return T('완료');
-  if(!u.authEmail){
+  if(!u.email) return '\u2014';
+  if(u.provider && u.provider !== 'email'){
     const s = document.createElement('span');
-    s.className = 'adm-no';
-    s.textContent = T('주소 미등록');
-    s.title = T('소셜 로그인 계정에 이메일이 아직 심기지 않았습니다. 다음 로그인 때 채워집니다.');
+    s.textContent = T('완료');
+    s.title = T('가입한 곳에서 확인한 주소입니다.');
     return s;
   }
-  return mark('미인증');
+  if(u.emailVerified == null) return '\u2014';
+  return u.emailVerified ? T('완료') : mark('미인증');
 }
 
 function mark(text){
@@ -386,8 +388,11 @@ $('#usersCsvBtn').addEventListener('click', () => {
     ['agreedAt', '동의 시각(KST)', kst],
     ['marketing', '마케팅 수신', v => (v ? '동의' : '미동의')],
     ['marketingAt', '마케팅 동의 시각(KST)', kst],
-    ['emailVerified', '메일 인증', (v, r) => (r.live === false ? '계정 없음'
-       : v == null ? '' : v ? '완료' : r.authEmail ? '미인증' : '주소 미등록')],
+    ['emailVerified', '메일 인증', (v, r) => (
+       r.live === false ? '계정 없음'
+       : !r.email ? ''
+       : (r.provider && r.provider !== 'email') ? '완료'
+       : v == null ? '' : v ? '완료' : '미인증')],
     ['uid', 'uid'],
   ], USERS);
 });
