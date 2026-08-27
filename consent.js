@@ -42,7 +42,6 @@
    자세한 건 docs/consent.md 에 적어 뒀다.
    ============================================================ */
 import { app, auth, SOCIAL } from "./firebase-config.js";
-import { deleteUser } from "https://www.gstatic.com/firebasejs/10.12.2/firebase-auth.js";
 import {
   getFirestore, doc, getDoc
 } from "https://www.gstatic.com/firebasejs/10.12.2/firebase-firestore.js";
@@ -319,95 +318,20 @@ export async function consentState(uid) {
   }
 }
 
-/* 카카오·네이버는 페이지를 떠났다 돌아온다. 그 사이 체크 상태가 사라지므로
-   떠나기 전에 담아 두고 돌아와서 꺼낸다. */
-const STASH = "kos_consent_pending";
-export function stashConsent(values, method) {
-  try { sessionStorage.setItem(STASH, JSON.stringify({ values, method })); } catch (e) {}
-}
-export function takeStashed() {
-  try {
-    const raw = sessionStorage.getItem(STASH);
-    sessionStorage.removeItem(STASH);
-    return raw ? JSON.parse(raw) : null;
-  } catch (e) { return null; }
-}
+/* ──────── 로그인 뒤 동의 받기 — 페이지로 옮겼다 ────────
 
-/* ────────────────────── 로그인 뒤 동의 받기 ────────────────────── */
+   ensureConsent(모달) 와 collectConsent(모달) 가 여기 있었다. 둘 다 지웠다.
 
-/* 동의 기록이 없으면 화면을 띄우고 받는다. 동의하면 true, 로그아웃하면 false.
-   기록이 이미 있거나 조회에 실패하면 아무것도 하지 않고 true. */
-export async function ensureConsent(user, onSignOut) {
-  const state = await consentState(user.uid);
-  if (state === true || state === null) return true;
+   동의는 이제 Consent.html 한 곳에서 받는다. 모달은 좁아 글자를 키울 수
+   없었고, '가입이 아직 안 끝났다' 는 것이 화면에 드러나지 않았다.
 
-  // 리다이렉트 직전에 담아 둔 게 있으면 그대로 저장하고 화면을 띄우지 않는다.
-  const stashed = takeStashed();
-  if (stashed && REQUIRED.every(k => stashed.values[k])) {
-    try {
-      await saveConsent(user.uid, stashed.values, stashed.method);
-      return true;
-    } catch (e) { console.warn("[consent] 저장 실패:", e && e.code); }
-  }
+   가입을 마치지 못한 계정(구글 팝업이 닫힌 뒤 동의 페이지에서 탭을 닫은
+   경우)은 auth-state.js 의 guardConsent 가 다음 접속 때 이 페이지로 보낸다.
+   ensureConsent 는 만들어만 놓고 아무도 부르지 않아 그 구멍을 못 막고
+   있었다 — 화면을 하나로 모으면서 부르는 자리도 하나로 정했다.
 
-  css();
-  return new Promise(resolve => {
-    const ov = document.createElement("div");
-    ov.className = "kc-ov";
-    const card = document.createElement("div");
-    card.className = "kc-card";
-    const h = document.createElement("div");
-    h.className = "kc-h"; h.textContent = T("가입을 마치려면 아래 항목에 동의해 주세요");
-    const sub = document.createElement("p");
-    sub.className = "kc-sub";
-    sub.textContent = T("동의하지 않으면 가입이 취소됩니다.");
-    const set = renderConsent();
-    const act = document.createElement("div");
-    act.className = "kc-act";
-    const ok = document.createElement("button");
-    ok.type = "button"; ok.className = "btn btn-primary";
-    ok.textContent = T("동의하고 가입 완료");
-    const no = document.createElement("button");
-    no.type = "button"; no.className = "kc-no";
-    no.textContent = T("동의하지 않고 취소");
-    act.appendChild(ok); act.appendChild(no);
-    card.appendChild(h); card.appendChild(sub); card.appendChild(set.el); card.appendChild(act);
-    ov.appendChild(card);
-    document.body.appendChild(ov);
-
-    ok.addEventListener("click", async () => {
-      if (!set.validate()) return;
-      ok.disabled = true;
-      try {
-        await saveConsent(user.uid, set.values(), (user.providerData[0] || {}).providerId || "unknown");
-        ov.remove();
-        resolve(true);
-      } catch (e) {
-        ok.disabled = false;
-        const err = card.querySelector(".kc-err");
-        err.textContent = T("동의 저장에 실패했어요. 잠시 후 다시 시도해 주세요.");
-        err.classList.add("on");
-      }
-    });
-    no.addEventListener("click", async () => {
-      no.disabled = true;
-      /* 거부하면 계정을 지운다. 로그아웃만 하면 동의하지 않은 계정이 그대로
-         남는다 — 카카오·네이버는 인증이 끝나는 순간 계정이 먼저 만들어지기
-         때문이다. 동의하지 않았으면 가입이 성립하지 않아야 한다.
-
-         막 만들어진 계정이라 대개 지워지지만, 실패하면(재인증 요구 등)
-         로그아웃이라도 한다. 남은 계정은 다음 로그인 때 다시 이 화면을
-         만나므로 동의 없이 서비스가 쓰이지는 않는다. */
-      try { await deleteUser(auth.currentUser || user); }
-      catch (e) {
-        console.warn("[consent] 계정 삭제 실패:", e && e.code);
-        try { await onSignOut(); } catch (_) {}
-      }
-      ov.remove();
-      resolve(false);
-    });
-  });
-}
+   화면 조각(renderConsent)과 기록(saveConsent)은 그대로 남아 있다.
+   Consent.html 이 그 둘을 쓴다.                                    */
 
 /* ────────────────── 마케팅 수신 (조회 · 변경) ────────────────── */
 
@@ -433,60 +357,6 @@ export async function setMarketing(uid, on) {
 }
 
 
-/* ────────────── 가입 전 동의 받기 (계정 없이) ────────────── */
-
-/* 로그인한 사용자가 없는 상태에서 동의만 받는다. 동의하면 값, 취소하면 null.
-
-   ensureConsent 와 다른 점: 저장도, 계정 삭제도 하지 않는다. 카카오·네이버는
-   서버가 신규 사용자면 계정을 만들지 않고 돌아오므로, 이 시점에는 지울 계정
-   자체가 없다. 받은 값을 서버로 보내면 서버가 계정과 동의를 함께 만든다.
-
-   이것이 올바른 순서다 — 동의가 먼저, 계정이 나중. */
-export function collectConsent(opts = {}) {
-  css();
-  return new Promise(resolve => {
-    const ov = document.createElement("div");
-    ov.className = "kc-ov";
-    const card = document.createElement("div");
-    card.className = "kc-card";
-    const h = document.createElement("div");
-    h.className = "kc-h";
-    h.textContent = T("가입을 마치려면 아래 항목에 동의해 주세요");
-    const sub = document.createElement("p");
-    sub.className = "kc-sub";
-    /* 여기는 계정을 만들기 전이다. '취소됩니다' 라고 쓰면 이미 가입이 끝난
-       것처럼 읽힌다 — 동의를 먼저 받으려고 순서를 고쳐 놓고 문구가 옛 순서를
-       말하고 있으면 안 된다. (구글 경로는 계정이 이미 생긴 뒤라 저쪽 문구가
-       맞다.) */
-    sub.textContent = opts.accountCreated
-      ? T("동의하지 않으면 가입이 취소되고 계정은 남지 않습니다.")
-      : T("동의하지 않으면 가입이 진행되지 않습니다. 계정은 아직 만들어지지 않았어요.");
-    const set = renderConsent();
-    const act = document.createElement("div");
-    act.className = "kc-act";
-    const ok = document.createElement("button");
-    ok.type = "button"; ok.className = "btn btn-primary";
-    ok.textContent = T("동의하고 가입 완료");
-    const no = document.createElement("button");
-    no.type = "button"; no.className = "kc-no";
-    no.textContent = T("동의하지 않고 취소");
-    act.appendChild(ok); act.appendChild(no);
-    card.appendChild(h); card.appendChild(sub); card.appendChild(set.el); card.appendChild(act);
-    ov.appendChild(card);
-    document.body.appendChild(ov);
-
-    ok.addEventListener("click", () => {
-      if (!set.validate()) return;
-      const v = set.values();
-      v.version = CONSENT_VERSION;
-      ov.remove();
-      resolve(v);
-    });
-    no.addEventListener("click", () => { ov.remove(); resolve(null); });
-  });
-}
-
-
 /* ────────────── 구글 가입 마무리 ────────────── */
 
 /* 구글은 팝업이 닫히는 순간 파이어베이스가 계정을 만든다. 서버를 거치지
@@ -504,22 +374,18 @@ export function collectConsent(opts = {}) {
    화면에서는 안 받는 상태가 됐던 적이 있다.
 
    돌려주는 값: true 면 계속 진행, false 면 사용자가 취소한 것. */
-export async function finishGoogleSignup(cred, isNewUser) {
-  if (!isNewUser) return true;
-  const v = await collectConsent({ accountCreated: true });
-  if (!v) {
-    try { await deleteUser(cred.user); } catch (_) {}
-    try { await auth.signOut(); } catch (_) {}
-    return false;
-  }
-  try {
-    await saveConsent(cred.user.uid, v, "google", cred.user.email || "");
-  } catch (e) {
-    try { await deleteUser(cred.user); } catch (_) {}
-    try { await auth.signOut(); } catch (_) {}
-    throw e;
-  }
-  return true;
+export function finishGoogleSignup(cred, isNewUser) {
+  if (!isNewUser) return Promise.resolve(true);
+  /* 신규 가입이면 동의 페이지로 보낸다.
+     저장도 계정 삭제도 저쪽에서 한다 — 동의를 다루는 자리가 둘로 갈리면
+     한쪽만 고치는 일이 생긴다.
+
+     false 를 돌려주는 이유: 부르는 쪽이 `if(!await finishGoogleSignup(...)) return;`
+     로 쓰고 있다. 여기서 true 를 주면 리다이렉트가 뜨기 전에 goNext() 가
+     먼저 돌아 원래 가려던 페이지로 가 버린다. */
+  const nx = new URLSearchParams(location.search).get("next") || "Home.html";
+  location.href = "Consent.html?next=" + encodeURIComponent(nx);
+  return Promise.resolve(false);
 }
 
 
