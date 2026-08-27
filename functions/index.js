@@ -458,6 +458,39 @@ function resetMail(link, lang){
   };
 }
 
+/* 동의 절차가 생기기 전에 가입한 회원에게 보내는 안내.
+
+   광고가 아니다. 정보통신망법 제50조는 영리목적 광고성 정보에만 사전
+   수신동의를 요구하므로 마케팅 수신에 동의하지 않은 회원에게도 보낼 수
+   있다. 다만 받는 사람은 그 구분을 모르니 본문에 광고가 아니라고 적는다 —
+   광고로 읽히면 신고당하고, 그러면 도메인 평판이 상한다.
+
+   겁주지 않는다. 지금 계정을 지울 계획이 없고(처리방침의 보유 기간이
+   '회원 탈퇴 시까지' 다), 없는 기한을 만들어 압박하면 그것대로 거짓말이다.
+   무엇이 필요하고 어떻게 하면 되는지만 적는다. */
+function consentNoticeMail(lang){
+  const link = SITE_URL + "/Login.html";
+  const en = lang === "en";
+  if(en){
+    return {
+      subject: "[KOSAI] Please review our terms and privacy consent",
+      html: mailLayout({ lang, heading: "One step we missed",
+        intro: "You signed up before we introduced our consent screen, so we never asked you to review the Terms of Service and the collection and use of your personal data.<br><br>" +
+               "Sign in and the consent screen appears — it takes about ten seconds. Your account, watchlist and settings stay exactly as they are.",
+        btnText: "Sign in and review", link,
+        outro: "This is a service notice required by law, not marketing. If you would rather close your account, you can do so under Settings." })
+    };
+  }
+  return {
+    subject: "[KOSAI] 이용약관·개인정보 수집 이용 동의를 확인해 주세요",
+    html: mailLayout({ lang, heading: "빠뜨린 절차가 하나 있습니다",
+      intro: "회원님은 저희가 동의 화면을 만들기 전에 가입하셨습니다. 그래서 이용약관과 개인정보 수집·이용에 대한 동의를 여쭌 적이 없습니다.<br><br>" +
+             "아래 버튼으로 로그인하시면 동의 화면이 나타납니다. 10초면 끝납니다. 계정과 워치리스트, 설정은 그대로 있습니다.",
+      btnText: "로그인하고 확인하기", link,
+      outro: "본 메일은 광고가 아니라 법령에 따른 서비스 안내입니다. 계정 이용을 원하지 않으시면 설정 화면에서 탈퇴하실 수 있습니다." })
+  };
+}
+
 function emailOk(e){ return typeof e === "string" && /^[^@\s]+@[^@\s]+\.[^@\s]+$/.test(e); }
 
 // 이메일 인증 메일 — 가입 직후/재발송. 이메일 열거·스팸 방지를 위해
@@ -1140,6 +1173,101 @@ exports.adminMarketingList = onCall({ region: REGION, cors: true }, async (req) 
 
    상한은 2000 이다. 회원이 그보다 많아지면 잘린 사실을 화면에 알리고,
    그때 가서 페이지를 나눈다. 조용히 일부만 보여 주는 것이 제일 나쁘다. */
+/* 동의 안내 메일 보내기.
+
+   되돌릴 수 없는 일이다. 한 번 나간 메일은 회수할 수 없고, 같은 사람에게
+   두 번 가면 그것대로 신뢰를 깎는다. 그래서 세 겹으로 조인다.
+
+   ① 대상을 좁게 잡는다
+      동의 제도 시행일 이전에 만들어진 계정만. 그 뒤에 만들어진 동의 없는
+      계정은 '가입하다 나간 것' 이라 안내할 일이 아니다 — purgeUnconsented
+      가 치운다. 그런 사람에게 메일을 보내면 그건 스팸이다.
+
+   ② 이미 보낸 사람은 건너뛴다
+      consentEvents 에 notice_sent 로 남기고, 보내기 전에 확인한다.
+      버튼을 두 번 눌러도 두 번 가지 않는다.
+
+   ③ 미리 보기를 먼저 준다
+      dryRun 이면 누구에게 갈지만 돌려주고 아무것도 보내지 않는다.
+      화면이 먼저 이걸 부르고, 사람이 확인한 다음에 실제로 보낸다. */
+exports.adminNotifyUnconsented = onCall(
+  { region: REGION, cors: true, secrets: [RESEND_API_KEY] },
+  async (req) => {
+    assertAdmin(req);
+    const db = admin.firestore();
+    const dryRun = (req.data || {}).dryRun !== false;   // 기본은 미리 보기
+    const CONSENT_EPOCH = Date.parse("2026-08-20T00:00:00Z");
+    const MAX_SEND = 200;
+
+    /* 동의 기록이 있는 uid 를 모은다. 이 집합에 없는 Auth 계정이 대상이다. */
+    const have = new Set();
+    const users = await db.collection("users").limit(5000).get();
+    users.forEach((d) => { if ((d.data() || {}).consents) have.add(d.id); });
+
+    const targets = [];
+    const skipped = { recent: 0, noEmail: 0, alreadySent: 0 };
+    let pageToken;
+    do {
+      const page = await admin.auth().listUsers(1000, pageToken);
+      pageToken = page.pageToken;
+      for (const au of page.users) {
+        if (have.has(au.uid)) continue;
+        const created = Date.parse((au.metadata && au.metadata.creationTime) || "");
+        if (!created || created >= CONSENT_EPOCH) { skipped.recent++; continue; }
+        if (!emailOk(au.email)) { skipped.noEmail++; continue; }
+        targets.push({ uid: au.uid, email: au.email.toLowerCase(),
+                       createdAt: new Date(created).toISOString() });
+      }
+    } while (pageToken);
+
+    /* 이미 안내한 사람 거르기. 사건 기록을 그대로 근거로 쓴다 — 따로
+       표시를 만들면 두 곳이 어긋난다. */
+    const fresh = [];
+    for (const t of targets) {
+      let sentBefore = false;
+      try {
+        const q = await db.collection("consentEvents")
+          .where("uid", "==", t.uid).where("kind", "==", "notice_sent").limit(1).get();
+        sentBefore = !q.empty;
+      } catch (e) {
+        /* 확인하지 못했으면 보내지 않는다. 두 번 보내는 것보다 안 보내는
+           쪽이 낫다 — 다음에 다시 누르면 된다. */
+        console.warn("[notify] 이력 확인 실패, 건너뜀", t.uid, e && e.message);
+        skipped.alreadySent++;
+        continue;
+      }
+      if (sentBefore) { skipped.alreadySent++; continue; }
+      fresh.push(t);
+    }
+    fresh.sort((a, b) => String(a.createdAt).localeCompare(String(b.createdAt)));
+
+    if (dryRun) {
+      return { dryRun: true, count: fresh.length, rows: fresh.slice(0, 200), skipped };
+    }
+
+    const mail = consentNoticeMail("ko");
+    const resend = new Resend(RESEND_API_KEY.value());
+    let sent = 0;
+    const failed = [];
+    for (const t of fresh.slice(0, MAX_SEND)) {
+      try {
+        const { error } = await resend.emails.send({
+          from: MAIL_FROM, to: t.email, subject: mail.subject, html: mail.html
+        });
+        if (error) throw new Error(error.message || "send_failed");
+        sent++;
+        /* 보낸 뒤에 남긴다. 먼저 남기고 발송에 실패하면 그 사람은 영영
+           안내를 못 받는다 — 기록만 있고 메일은 안 간 상태가 된다. */
+        await logConsent(db, t.uid, "notice_sent", { email: t.email }, req);
+      } catch (e) {
+        failed.push({ email: t.email, reason: (e && e.message) || "unknown" });
+        console.error("[notify] 발송 실패", t.email, e && e.message);
+      }
+    }
+    return { dryRun: false, sent, failed, remaining: Math.max(0, fresh.length - MAX_SEND) };
+  }
+);
+
 exports.adminUserList = onCall({ region: REGION, cors: true }, async (req) => {
   assertAdmin(req);
   const db = admin.firestore();
