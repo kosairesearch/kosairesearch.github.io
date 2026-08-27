@@ -701,6 +701,48 @@ exports.getReport = onCall(
 const SIGNUP_METHODS = ["email", "google", "kakao", "naver"];
 
 
+
+/* ── 동의 이력 (consentEvents) ────────────────────────────────────
+   users/{uid}.consents 는 '지금 상태' 다. 그것만으로는 답하지 못하는
+   질문이 있다 — "언제 동의했고 언제 철회했는가".
+
+   실제로 setMarketingConsent 가 marketingAt / marketingOffAt 을 덮어쓰고
+   있었다. 켰다 껐다를 반복하면 마지막 한 번만 남는다. 분쟁이 나면 우리가
+   입증해야 하는 자료인데 스스로 지우고 있던 셈이다.
+
+   그래서 추가만 되는 이력을 따로 둔다. 고치지 않고 지우지 않는다.
+
+   남기는 것
+     uid·email   누구인지
+     at          언제
+     kind        무슨 일 (signup · marketing_on · marketing_off · withdraw)
+     version     그때의 동의서 판 번호
+     method      어떻게 받았나 (checkbox · signup-notice)
+     provider    어느 경로로 가입했나
+     ip·ua       증빙력을 위해. 분쟁에서 '그 시각 그 단말에서' 를 답한다.
+
+   쓰기는 서버만 한다(firestore.rules 에서 클라이언트를 막는다). 본인이
+   고칠 수 있는 기록은 아무것도 증명하지 못한다 — users 문서를 닫은 것과
+   같은 이유다.
+
+   실패해도 던지지 않는다. 이력을 못 남겼다고 가입이나 설정 변경을 막으면
+   사용자만 손해다. 대신 로그에 남겨 사람이 알아챌 수 있게 한다. */
+async function logConsent(db, uid, kind, extra, req) {
+  try {
+    const r = (req && req.rawRequest) || {};
+    const h = r.headers || {};
+    const ip = String(h["x-forwarded-for"] || r.ip || "").split(",")[0].trim().slice(0, 45);
+    const ua = String(h["user-agent"] || "").slice(0, 300);
+    await db.collection("consentEvents").add(Object.assign({
+      uid, kind,
+      at: admin.firestore.FieldValue.serverTimestamp(),
+      ip: ip || null, ua: ua || null,
+    }, extra || {}));
+  } catch (e) {
+    console.error(`[consentLog] 실패 uid=${uid} kind=${kind}: ${e && e.message}`);
+  }
+}
+
 exports.recordSignupConsent = onCall({ region: REGION, cors: true }, async (req) => {
   const uid = req.auth && req.auth.uid;
   if (!uid) throw new HttpsError("unauthenticated", "로그인이 필요합니다.");
@@ -742,6 +784,11 @@ exports.recordSignupConsent = onCall({ region: REGION, cors: true }, async (req)
     patch.createdAt = now;
   }
   await ref.set(patch, { merge: true });
+  if (!already) {
+    await logConsent(db, uid, "signup", {
+      email: email || null, version: CONSENT_VERSION, method, provider, marketing
+    }, req);
+  }
   return { ok: true, first: !already };
 });
 
@@ -761,6 +808,10 @@ exports.setMarketingConsent = onCall({ region: REGION, cors: true }, async (req)
     marketingOffAt: on ? null : now,
     updatedAt: now
   }, { merge: true });
+  /* 위 문서는 마지막 상태만 들고 있다. 켰다 껐다 한 이력은 여기 남는다. */
+  const mine = (await db.collection("users").doc(uid).get()).data() || {};
+  await logConsent(db, uid, on ? "marketing_on" : "marketing_off",
+    { email: mine.email || null, version: CONSENT_VERSION }, req);
   return { ok: true, marketing: on };
 });
 
@@ -816,12 +867,136 @@ exports.deleteAccount = onCall(
     await Promise.all(reads.docs.map((d) => d.ref.delete()));
   } catch (e) { console.warn("[delete] reads", e && e.message); }
 
+  /* 동의 이력. "보유 기간: 회원 탈퇴 시까지" 라고 알리고 받았으므로 이력에
+     담긴 개인정보(이메일·IP·단말)도 같이 지운다. 다만 '이 계정이 있었고
+     언제 지웠는가' 한 줄은 남긴다 — 지웠다는 사실 자체가 증빙이고, uid 와
+     시각만으로는 누구인지 알 수 없어 개인정보가 아니다. */
+  try {
+    const evs = await db.collection("consentEvents").where("uid", "==", uid).limit(500).get();
+    await Promise.all(evs.docs.map((d) => d.ref.delete()));
+  } catch (e) { console.warn("[delete] consentEvents", e && e.message); }
+  await logConsent(db, uid, "withdraw", {}, req);
+
   await admin.auth().deleteUser(uid);
   return { ok: true, hadSubscription: !!(sub && sub.plan), refunded };
 });
 
 /* 오늘 남은 열람 수. 구독 관리 화면이 이걸로 '3 / 5개'를 보여 준다.
    한도에 부딪히기 전에는 알 길이 없었다 — 다 쓰고 나서야 알려 주는 건 늦다. */
+
+/* ── 관리자 조회 ──────────────────────────────────────────────────
+   동의를 받아 두기만 하고 볼 방법이 없으면 받지 않은 것과 크게 다르지 않다.
+   문의가 들어오거나 분쟁이 생겼을 때 "이 사람이 언제 무엇에 동의했는가" 를
+   그 자리에서 답할 수 있어야 한다.
+
+   누가 관리자인가. 이메일로 정한다. 아래 목록은 공개 저장소에 들어가므로
+   이미 사이트 푸터에 적혀 있는 업무용 주소만 쓴다 — 개인 주소를 넣으면
+   저장소를 통해 새어 나간다. 늘리려면 여기에 더한다.
+
+   인증된 메일만 인정한다. 인증 안 된 주소는 그 사람 것이라는 근거가 없다. */
+const ADMIN_EMAILS = ["hello@kosai.kr"];
+
+function assertAdmin(req) {
+  const t = (req.auth && req.auth.token) || {};
+  const email = String(t.email || "").trim().toLowerCase();
+  if (!email || !t.email_verified || !ADMIN_EMAILS.includes(email)) {
+    throw new HttpsError("permission-denied", "관리자만 볼 수 있습니다.");
+  }
+  return email;
+}
+
+function tsIso(v) {
+  try { return v && v.toDate ? v.toDate().toISOString() : null; } catch (e) { return null; }
+}
+
+/* 요약 — 화면 맨 위에 걸어 두는 숫자들.
+   재확인 대상은 정보통신망법 시행령 제62조의3 이 근거다. 광고성 정보
+   수신동의를 받은 날부터 2년마다 수신동의 여부를 확인해야 한다. 안내할 때
+   전송자 명칭·수신동의 날짜·유지 또는 철회 방법을 함께 알려야 한다. */
+exports.adminConsentStats = onCall({ region: REGION, cors: true }, async (req) => {
+  assertAdmin(req);
+  const db = admin.firestore();
+  const users = await db.collection("users").limit(5000).get();
+  const now = Date.now();
+  const TWO_YEARS = 2 * 365 * 24 * 60 * 60 * 1000;
+
+  let total = 0, consented = 0, marketing = 0, dueRecheck = 0;
+  const byProvider = {};
+  users.forEach((d) => {
+    const u = d.data() || {};
+    const c = u.consents || {};
+    total++;
+    if (c.agreedAt) consented++;
+    byProvider[u.signupMethod || "unknown"] = (byProvider[u.signupMethod || "unknown"] || 0) + 1;
+    if (c.marketing) {
+      marketing++;
+      const at = u.marketingAt || c.agreedAt;
+      const ms = at && at.toDate ? at.toDate().getTime() : 0;
+      if (ms && now - ms >= TWO_YEARS) dueRecheck++;
+    }
+  });
+  return { total, consented, marketing, dueRecheck, byProvider };
+});
+
+/* 한 사람의 현재 동의 상태와 이력. 이메일 또는 uid 로 찾는다. */
+exports.adminConsentLookup = onCall({ region: REGION, cors: true }, async (req) => {
+  assertAdmin(req);
+  const db = admin.firestore();
+  const q = String(((req.data || {}).q) || "").trim().toLowerCase();
+  if (!q) throw new HttpsError("invalid-argument", "이메일 또는 uid 가 필요합니다.");
+
+  let uid = q;
+  if (q.includes("@")) {
+    const found = await db.collection("users").where("email", "==", q).limit(1).get();
+    if (found.empty) return { found: false };
+    uid = found.docs[0].id;
+  }
+  const snap = await db.collection("users").doc(uid).get();
+  if (!snap.exists) return { found: false };
+  const u = snap.data() || {};
+  const c = u.consents || {};
+
+  const evs = await db.collection("consentEvents").where("uid", "==", uid).limit(200).get();
+  const events = evs.docs.map((d) => {
+    const e = d.data() || {};
+    return { kind: e.kind, at: tsIso(e.at), version: e.version || null,
+             method: e.method || null, provider: e.provider || null,
+             marketing: typeof e.marketing === "boolean" ? e.marketing : null,
+             ip: e.ip || null };
+  }).sort((a, b) => String(b.at || "").localeCompare(String(a.at || "")));
+
+  return {
+    found: true, uid,
+    email: u.email || null,
+    signupMethod: u.signupMethod || null,
+    createdAt: tsIso(u.createdAt),
+    consents: {
+      version: c.version || null, method: c.method || null,
+      age14: !!c.age14, terms: !!c.terms, privacy: !!c.privacy,
+      marketing: !!c.marketing, agreedAt: tsIso(c.agreedAt),
+    },
+    marketingAt: tsIso(u.marketingAt),
+    marketingOffAt: tsIso(u.marketingOffAt),
+    events,
+  };
+});
+
+/* 마케팅 수신 동의자 목록 — 발송 전에 뽑는다. 내보내기(CSV)에도 쓴다. */
+exports.adminMarketingList = onCall({ region: REGION, cors: true }, async (req) => {
+  assertAdmin(req);
+  const db = admin.firestore();
+  const snap = await db.collection("users")
+    .where("consents.marketing", "==", true).limit(5000).get();
+  const rows = snap.docs.map((d) => {
+    const u = d.data() || {};
+    return { uid: d.id, email: u.email || null,
+             provider: u.signupMethod || null,
+             agreedAt: tsIso((u.consents || {}).agreedAt),
+             marketingAt: tsIso(u.marketingAt) };
+  });
+  return { count: rows.length, rows };
+});
+
 exports.getUsage = onCall({ region: REGION, cors: true }, async (req) => {
   const uid = req.auth && req.auth.uid;
   if (!uid) throw new HttpsError("unauthenticated", "로그인이 필요합니다.");

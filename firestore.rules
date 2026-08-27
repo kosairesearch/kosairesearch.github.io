@@ -32,5 +32,18 @@ service cloud.firestore {
       allow write: if false;
     }
 
+    // 동의 이력 — 추가만 되는 기록. 아무에게도 열지 않는다.
+    //
+    // users/{uid}.consents 는 '지금 상태' 라서, 마케팅을 켰다 껐다 하면
+    // 앞의 기록이 사라진다. 실제로 그렇게 덮어쓰고 있었다. 분쟁이 나면
+    // 우리가 입증해야 하는 자료인데 스스로 지우고 있던 셈이다.
+    //
+    // 그래서 이력을 따로 두되, 읽기까지 막는다. 본인이 읽을 이유가 없고
+    // (설정 화면은 users 문서로 충분하다) 남이 읽을 이유는 더 없다.
+    // 조회는 관리자 함수(adminConsentLookup)가 Admin SDK 로 한다.
+    match /consentEvents/{id} {
+      allow read, write: if false;
+    }
+
   }
 }
