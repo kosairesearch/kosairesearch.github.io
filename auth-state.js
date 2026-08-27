@@ -351,7 +351,11 @@ function renderMobileAuth(user){
      · 조회에 실패하면(null) 아무것도 하지 않는다. 통신이 끊겼다고 사람을
        가입 화면으로 몰아내면 안 된다. 확실히 '없다'(false)일 때만 보낸다.
      · 한 번만 시도한다. onAuthStateChanged 는 여러 번 울린다. */
-const CONSENT_SKIP = /^(Consent|Login|Signup|auth-action)\.html$/i;
+/* Terms·Privacy 가 여기 꼭 있어야 한다. 동의 화면이 그 둘을 새 탭으로
+   열어 주는데, 목록에서 빠뜨리면 열린 탭이 곧바로 동의 화면으로 되튕긴다.
+   사용자 눈에는 '약관 보기 링크가 안 눌린다' 로 보였다 — 동의하라고
+   보여 주는 문서를 정작 못 읽게 막고 있었던 것이다. */
+const CONSENT_SKIP = /^(Consent|Login|Signup|auth-action|Terms|Privacy)\.html$/i;
 let consentChecked = false;
 
 async function guardConsent(user){
