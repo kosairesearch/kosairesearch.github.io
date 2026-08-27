@@ -151,6 +151,9 @@ DICT = '''if(window.KOSi18n) KOSi18n.register({
   "없음":"None",
   "계정 없음":"No account",
   "미인증":"Unverified",
+  "주소 미등록":"Not on file",
+  "소셜 로그인 계정에 이메일이 아직 심기지 않았습니다. 다음 로그인 때 채워집니다.":
+    "This social account has no email on the auth record yet. It fills in on their next sign-in.",
   "완료":"Verified",
   "정보통신망법 시행령 제62조의3 — 광고성 정보 수신동의는 동의일부터 2년마다 유지 여부를 확인해야 합니다. 안내할 때 전송자 명칭·수신동의 날짜·철회 방법을 함께 알려야 합니다.":
     "Network Act Enforcement Decree art. 62-3 — marketing consent must be re-confirmed every two years from the date it was given, and the notice must state the sender's name, the consent date, and how to withdraw.",
@@ -326,9 +329,7 @@ function drawUsers(){
     put(u.agreedAt ? when(u.agreedAt) : mark('없음'));
     put(u.marketing ? (u.marketingAt ? when(u.marketingAt) : T('동의함')) : '—');
     /* 계정이 Auth 에 없으면 유령 문서다. 사람이 치워야 한다. */
-    put(u.live === false ? mark('계정 없음')
-        : u.emailVerified == null ? '—'
-        : u.emailVerified ? T('완료') : mark('미인증'));
+    put(verifyCell(u));
     /* uid 는 표에 두지 않는다. 한 칸을 통째로 잡아먹는데 눈으로 훑을 일이
        없다 — 줄을 누르면 아래 조회에 uid 까지 다 나오고, CSV 에도 들어간다. */
     tr.title = u.uid + (u.email ? ' · ' + u.email : '');
@@ -341,6 +342,26 @@ function drawUsers(){
   }
   t.appendChild(tb);
   relabel();
+}
+
+/* 메일 인증 칸.
+
+   빨갛게 칠할 것은 '이 주소로 메일을 보낼 수 없다' 일 때뿐이다.
+   Auth 에 이메일이 아예 없는 계정(8월 27일 전에 만들어진 카카오·네이버)은
+   인증에 실패한 것이 아니라 아직 심기지 않은 것이다. 다음 로그인 때
+   채워진다. 그것을 '미인증' 이라 부르면 없는 문제를 만들어 낸다. */
+function verifyCell(u){
+  if(u.live === false) return mark('계정 없음');
+  if(u.emailVerified == null) return '—';
+  if(u.emailVerified) return T('완료');
+  if(!u.authEmail){
+    const s = document.createElement('span');
+    s.className = 'adm-no';
+    s.textContent = T('주소 미등록');
+    s.title = T('소셜 로그인 계정에 이메일이 아직 심기지 않았습니다. 다음 로그인 때 채워집니다.');
+    return s;
+  }
+  return mark('미인증');
 }
 
 function mark(text){
@@ -365,7 +386,8 @@ $('#usersCsvBtn').addEventListener('click', () => {
     ['agreedAt', '동의 시각(KST)', kst],
     ['marketing', '마케팅 수신', v => (v ? '동의' : '미동의')],
     ['marketingAt', '마케팅 동의 시각(KST)', kst],
-    ['emailVerified', '메일 인증', (v, r) => (r.live === false ? '계정 없음' : v == null ? '' : v ? '완료' : '미인증')],
+    ['emailVerified', '메일 인증', (v, r) => (r.live === false ? '계정 없음'
+       : v == null ? '' : v ? '완료' : r.authEmail ? '미인증' : '주소 미등록')],
     ['uid', 'uid'],
   ], USERS);
 });
