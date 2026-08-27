@@ -39,6 +39,10 @@ on:
     # 여러 번 깨어나는 비용은 거의 없다. 생성은 그날 브리핑이 이미 있으면
     # 건너뛰므로(멱등) 과금은 하루 한 번이고, 발행도 이미 올라갔으면
     # 손대지 않는다. 공개 저장소라 Actions 시간도 무료다.
+    #
+    # 04:00 에는 미국 정규장이 아직 열려 있다(마감이 KST 05:00, 겨울에는
+    # 06:00). 그래서 ②-b 가 마감까지 잡 안에서 기다렸다 생성한다. 일찍
+    # 깨어나는 이득은 지키면서 종가는 확정된 값만 쓴다.
     - cron: '0 19 * * 0-4'      # KST 04:00 — 가장 이른 시도
     - cron: '0 20 * * 0-4'      # KST 05:00
     - cron: '0 21 * * 0-4'      # KST 06:00
@@ -134,6 +138,44 @@ jobs:
         run: |
           python scripts/test_flows.py
           python scripts/test_brief_gen.py
+
+      # ②-b 미국 정규장이 끝날 때까지 기다린다.
+      #
+      #     브리핑 1절은 '간밤 미국 시장' 이다. 그런데 market_data.fetch 는
+      #     yfinance 일봉의 마지막 줄을 그대로 종가로 쓴다 — 장중에 부르면
+      #     진행 중인 봉이 돌아오고, 그 값이 '종가' 라는 이름으로 글에 실린다.
+      #     overnight_ok 는 '간밤' 같은 표현만 막지 이걸 막지 않는다.
+      #
+      #     04:00 슬롯을 넣으면서 이 문제가 생겼다. 04:00 KST 는 15:00 ET 로
+      #     마감까지 한 시간이 남았다.
+      #
+      #     그렇다고 슬롯을 늦추면 지연을 버티는 여유가 사라진다. 그래서
+      #     일찍 깨어나되 마감까지 잡 안에서 기다린다 — 일찍 깨어난 이득은
+      #     그대로 두고 데이터만 온전해진다.
+      #
+      #     판정은 ET 시계로 한다. 서머타임을 직접 계산하지 않아야 3월·11월에
+      #     한 시간씩 어긋나지 않는다(미장 마감은 KST 05:00 ↔ 06:00 으로 옮겨
+      #     다닌다). 주말 ET 면 직전 세션이 이미 끝나 있으므로 기다리지 않는다.
+      - name: ②-b 미국 장 마감까지 대기
+        if: steps.gate.outputs.open == 'true' || inputs.allow_closed == true
+        run: |
+          SLEEP=$(python - <<'PY'
+          import datetime
+          from zoneinfo import ZoneInfo
+          et = datetime.datetime.now(ZoneInfo("America/New_York"))
+          # 16:00 마감 + 15분: 종가 확정과 정정 반영에 두는 여유.
+          settle = et.replace(hour=16, minute=15, second=0, microsecond=0)
+          if et.weekday() >= 5 or et >= settle:
+              print(0)                      # 주말이거나 이미 마감 뒤
+          else:
+              print(int((settle - et).total_seconds()))
+          PY
+          )
+          if [ "${SLEEP:-0}" -gt 0 ]; then
+            echo "미국 장이 아직 열려 있다 — ${SLEEP}초 대기 (ET $(TZ='America/New_York' date +%H:%M) · KST $(TZ='Asia/Seoul' date +%H:%M))"
+            sleep "$SLEEP"
+          fi
+          echo "미국 세션 확정 (ET $(TZ='America/New_York' date +%H:%M) · KST $(TZ='Asia/Seoul' date +%H:%M))"
 
       - name: ③ 본문 생성 (Anthropic API · 한 편 약 350~430원)
         if: steps.gate.outputs.open == 'true' || inputs.allow_closed == true
