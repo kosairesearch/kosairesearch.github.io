@@ -1,7 +1,7 @@
 // KOS ai — 자동 생성 데이터 파일. 직접 수정하지 마세요.
 window.KOS_LIVE_DATA = {
-  "lastUpdated": "2026-08-27 01:34",
-  "dataDate": "20260826",
+  "lastUpdated": "2026-08-27 09:59",
+  "dataDate": "20260827",
   "stocks": [
     {
       "ticker": "005930",
@@ -32411,24 +32411,6 @@ window.KOS_LIVE_DATA = {
       "rank": 1798
     },
     {
-      "ticker": "228340",
-      "name": "동양파일",
-      "name_en": "TONGYANG PILE Inc.",
-      "market": "코스닥",
-      "sector": "건설·건자재",
-      "price": 2820,
-      "change": -2.08,
-      "volume": 197704,
-      "trading_value": 564098454,
-      "mcap": 0.0564,
-      "shares": 20000000,
-      "induty_code": "23325",
-      "categories": [
-        "건설·건자재"
-      ],
-      "rank": 1799
-    },
-    {
       "ticker": "053160",
       "name": "프리엠스",
       "name_en": "FreeMs Corporation",
@@ -32443,6 +32425,24 @@ window.KOS_LIVE_DATA = {
       "induty_code": "28123",
       "categories": [
         "전자·부품"
+      ],
+      "rank": 1799
+    },
+    {
+      "ticker": "228340",
+      "name": "동양파일",
+      "name_en": "TONGYANG PILE Inc.",
+      "market": "코스닥",
+      "sector": "건설·건자재",
+      "price": 2820,
+      "change": -2.08,
+      "volume": 197704,
+      "trading_value": 564098454,
+      "mcap": 0.0564,
+      "shares": 20000000,
+      "induty_code": "23325",
+      "categories": [
+        "건설·건자재"
       ],
       "rank": 1800
     },
