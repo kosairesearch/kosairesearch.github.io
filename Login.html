@@ -701,7 +701,20 @@ $('#emailForm').addEventListener('submit', async e => {
       return;
     }
     go();
-  }catch(err){ showErr(mapError(err)); }
+  }catch(err){
+    /* 비밀번호가 틀린 것과, 애초에 비밀번호로 가입한 적이 없는 것은 다른
+       일이다. 네이버로 가입한 사람에게 '이메일 또는 비밀번호가 올바르지
+       않습니다' 만 보여 주면 몇 번을 다시 쳐도 못 들어온다. */
+    const code = String((err && err.code) || '');
+    if(/invalid-credential|wrong-password|user-not-found|invalid-login/.test(code)){
+      try{
+        const { signinMethod, renderHint } = await import('./auth-hint.js');
+        const m = await signinMethod(email);
+        if(m && m !== 'email' && renderHint(errBox, m, 'login')) return;
+      }catch(_){ /* 안내는 부가 기능 — 실패해도 아래 기본 문구로 간다 */ }
+    }
+    showErr(mapError(err));
+  }
   finally{ btn.disabled = false; }
 });
 

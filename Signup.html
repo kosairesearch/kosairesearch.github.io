@@ -675,20 +675,25 @@ const mapError = mapAuthError;
 /* 이미 가입된 이메일이면 그냥 막고 끝내면 안 된다. 인증을 안 끝낸 계정이면
    재가입도 로그인도 안 되는 상태라, 무슨 말인지 모른 채 갇힌다.
    무엇을 하면 되는지까지 같이 보여 준다. */
-function showAlreadyRegistered(email){
-  /* 두 가지 상태가 같은 오류로 나온다.
-       ① 이미 정상 가입한 사람 — 로그인하면 된다
-       ② 가입은 했는데 메일 인증을 못 끝낸 사람 — 재가입도 로그인도 막혀
+async function showAlreadyRegistered(email){
+  /* 같은 오류 뒤에 세 가지가 숨어 있다.
+       ① 소셜로 가입한 주소 — 그 버튼을 눌러야 한다
+       ② 이메일로 가입하고 인증까지 끝낸 사람 — 로그인하면 된다
+       ③ 이메일로 가입했는데 인증을 못 끝낸 사람 — 재가입도 로그인도 막혀
           갇힌다. 인증 메일을 다시 받아야 풀린다.
-
-     둘 중 어느 쪽인지는 로그인 전에 알 수 없다(파이어베이스가 인증 여부를
-     알려 주지 않는다). 그래서 둘 다 놓되, 전에는 링크 두 개를 가운뎃점으로
-     이어 붙여 놓아 '왜 갑자기 인증 메일?' 로 보였다. 줄을 나누고 두 번째
-     줄에 언제 쓰는 것인지 적는다. */
+     ①은 서버에 물어보면 알 수 있다. ②와 ③은 로그인 전에 구분할 수 없어
+     둘 다 놓되, 두 번째 줄에 언제 쓰는 것인지 적는다. */
   clearErr();
   errBox.textContent = '';
 
+  try{
+    const { signinMethod, renderHint } = await import('./auth-hint.js');
+    const m = await signinMethod(email);
+    if(m && m !== 'email' && renderHint(errBox, m, 'signup')) return;
+  }catch(_){ /* 안내는 부가 기능 */ }
+
   const line1 = document.createElement('div');
+  line1.style.fontWeight = '600';
   line1.appendChild(document.createTextNode(T('이미 가입된 이메일입니다.') + ' '));
   const a = document.createElement('a');
   a.href = 'Login.html?next=' + encodeURIComponent(new URLSearchParams(location.search).get('next') || 'Home.html');
@@ -698,23 +703,21 @@ function showAlreadyRegistered(email){
   errBox.appendChild(line1);
 
   const line2 = document.createElement('div');
-  line2.style.cssText = 'margin-top:8px;font-weight:400;opacity:.85';
+  line2.style.cssText = 'margin-top:6px;font-weight:400;opacity:.85';
   line2.appendChild(document.createTextNode(T('메일 인증을 아직 못 하셨나요?') + ' '));
-  const b = document.createElement('a');
-  b.href = '#'; b.textContent = T('인증 메일 다시 보내기');
-  b.style.cssText = 'color:var(--brand-blue);font-weight:600;text-decoration:underline';
-  b.addEventListener('click', async ev => {
+  const b2 = document.createElement('a');
+  b2.href = '#'; b2.textContent = T('인증 메일 다시 보내기');
+  b2.style.cssText = 'color:var(--brand-blue);font-weight:600;text-decoration:underline';
+  b2.addEventListener('click', async ev => {
     ev.preventDefault();
-    b.textContent = T('보내는 중…');
+    b2.textContent = T('보내는 중…');
     try{
       await sendVerifyEmail(email);
       errBox.textContent = T('인증 메일을 다시 보냈습니다. 메일함을 확인해 주세요.');
-    }
-    catch(e){ errBox.textContent = mapError(e); }
+    }catch(e){ errBox.textContent = mapError(e); }
   });
-  line2.appendChild(b);
+  line2.appendChild(b2);
   errBox.appendChild(line2);
-
   errBox.style.display = 'block';
 }
 
