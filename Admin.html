@@ -686,6 +686,8 @@ if(window.KOSi18n) KOSi18n.register({
   "계정 없음":"No account",
   "미인증":"Unverified",
   "가입한 곳에서 확인한 주소입니다.":"Verified by the sign-in provider.",
+  "체크박스":"Checkbox",
+  "가입 버튼 아래 고지 문구":"Notice under the sign-up button",
   "완료":"Verified",
   "정보통신망법 시행령 제62조의3 — 광고성 정보 수신동의는 동의일부터 2년마다 유지 여부를 확인해야 합니다. 안내할 때 전송자 명칭·수신동의 날짜·철회 방법을 함께 알려야 합니다.":
     "Network Act Enforcement Decree art. 62-3 — marketing consent must be re-confirmed every two years from the date it was given, and the notice must state the sender's name, the consent date, and how to withdraw.",
@@ -740,6 +742,14 @@ function kst(iso){
   try{ return KST.format(new Date(iso)).replace('T', ' '); }catch(_){ return String(iso); }
 }
 function when(iso){ return kst(iso) || '—'; }
+
+/* 동의를 어느 화면에서 받았는지. 'checkbox' 같은 코드값을 그대로 내보내면
+   읽는 사람이 무슨 화면인지 알 수 없다. */
+function methodLabel(m){
+  if(m === 'checkbox') return T('체크박스');
+  if(m === 'signup-notice') return T('가입 버튼 아래 고지 문구');
+  return m || '';
+}
 
 /* 표를 내려받는다. head 는 [키, 보이는 이름, 다듬는 함수] 세 쪽이다. */
 function download(name, head, rows){
@@ -916,13 +926,23 @@ if(window.KOSi18n) KOSi18n.register(null, () => { if(USERS.length) drawUsers(); 
 
 $('#usersCsvBtn').addEventListener('click', () => {
   if(!USERS.length) return;
+  /* 동의 항목을 하나씩 적는다. 요약 한 칸('동의 시각')만 있으면 분쟁이
+     생겼을 때 이 파일로는 "개인정보 수집·이용에 동의했다" 를 못 보여 준다.
+     내보낸 파일이 곧 제출할 자료다. 판 번호와 받은 방식도 같이 적는다 —
+     '언제' 못지않게 '무엇을 보고' 눌렀는지가 증빙이다. */
+  const yn = v => (v ? '동의' : '미동의');
   download('kosai-members', [
     ['email', '이메일'],
     ['providerLabel', '가입 방법'],
     ['createdAt', '가입 시각(KST)', kst],
     ['agreedAt', '동의 시각(KST)', kst],
-    ['marketing', '마케팅 수신', v => (v ? '동의' : '미동의')],
+    ['age14', '만 14세 이상', v => (v ? '확인' : '미확인')],
+    ['terms', '이용약관', yn],
+    ['privacy', '개인정보 수집·이용', yn],
+    ['marketing', '마케팅 수신', yn],
     ['marketingAt', '마케팅 동의 시각(KST)', kst],
+    ['version', '동의서 판'],
+    ['method', '받은 방식', methodLabel],
     ['emailVerified', '메일 인증', (v, r) => (
        r.live === false ? '계정 없음'
        : !r.email ? ''
@@ -960,7 +980,7 @@ function drawMember(out, r){
   row('가입 방법', esc(r.signupLabel));
   row('가입 시각', when(r.createdAt));
   row('동의서 판', esc(r.consents.version));
-  row('받은 방식', esc(r.consents.method));
+  row('받은 방식', esc(methodLabel(r.consents.method)));
   row('만 14세 이상', yn(r.consents.age14));
   row('이용약관', yn(r.consents.terms));
   row('개인정보 수집·이용', yn(r.consents.privacy));
