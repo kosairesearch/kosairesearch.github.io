@@ -79,6 +79,11 @@ CSS = '''<style id="consent-css">
   color:var(--brand-blue);text-decoration:none}
 .verify-sent a:hover{text-decoration:underline}
 :root[data-theme="dark"] .verify-sent a{color:var(--brand-cyan)}
+.verify-again{display:block;margin:14px auto 0;background:none;border:0;cursor:pointer;
+  font:500 12.5px var(--font-sans);color:var(--fg-3);text-decoration:underline;
+  text-underline-offset:2px;padding:6px}
+.verify-again:hover:not(:disabled){color:var(--fg-2)}
+.verify-again:disabled{cursor:default;text-decoration:none;color:var(--fg-3)}
 .consent-note{max-width:520px;margin:16px auto 0;text-align:center;
   font:400 12.5px/1.7 var(--font-sans);color:var(--fg-3)}
 @media (max-width:640px){
@@ -107,7 +112,13 @@ DICT = '''if(window.KOSi18n) KOSi18n.register({
     "— we sent a verification link. Click it to verify, then sign in. (Check your spam folder too.)",
   "로그인하러 가기":"Go to sign in",
   "가입 완료":"Almost done",
-  "메일 인증만 남았어요.":"Just one more step — verify your email."
+  "메일 인증만 남았어요.":"Just one more step — verify your email.",
+  "인증 메일을 보내지 못했어요":"Could not send the verification email",
+  "주소로 인증 링크를 보내지 못했습니다. 아래에서 다시 보내 주세요.":
+    "— we could not send the verification link. Please resend below.",
+  "인증 메일 다시 보내기":"Resend verification email",
+  "다시 보냈습니다. 메일함을 확인해 주세요.":"Sent again — please check your inbox.",
+  "보내지 못했어요. 잠시 후 다시 시도해 주세요.":"Could not send. Please try again in a moment."
 });'''
 
 SCRIPT = '''<script type="module">
@@ -138,7 +149,17 @@ const NEXT = /^[A-Za-z0-9_.-]+\\.html(\\?[^#]*)?$/.test(raw) ? raw : 'Home.html'
 
 let consent = null;
 
+/* 우리가 일부러 로그아웃하거나 계정을 지우는 동안 아래 리스너가 끼어들지
+   못하게 막는 빗장이다.
+
+   signOut·deleteUser 를 부르면 onAuthStateChanged 가 user=null 로 울린다.
+   그 리스너 첫 줄이 로그인 페이지로 보내 버리므로, 이메일 가입을 마치고
+   '인증 메일을 보냈어요' 를 띄우려던 순간 화면이 로그인으로 넘어갔다.
+   취소 버튼도 같은 이유로 홈이 아니라 로그인으로 갔다. */
+let finishing = false;
+
 onAuthStateChanged(auth, async user => {
+  if(finishing) return;
   if(!user){
     // 로그인 없이 이 주소로 들어온 경우. 가입 흐름 밖이므로 로그인으로 보낸다.
     location.replace('Login.html?next=' + encodeURIComponent(NEXT));
@@ -174,10 +195,17 @@ document.getElementById('agreeBtn').addEventListener('click', async () => {
        소셜 가입은 인증이 이미 끝나 있으므로 곧장 보낸다. */
     if(provider === 'email'){
       const mail = user.email || '';
-      try{ await sendVerifyEmail(mail); }catch(_){}
-      const { signOut: so } = await import("https://www.gstatic.com/firebasejs/10.12.2/firebase-auth.js");
-      try{ await so(auth); }catch(_){}
-      showVerifySent(mail);
+      /* 발송 실패를 삼키지 않는다. 실패해도 '보냈어요' 라고 하면 오지 않는
+         메일을 기다리게 된다. 아래 화면이 문구를 갈라 준다. */
+      let sent = true;
+      try{ await sendVerifyEmail(mail); }catch(_){ sent = false; }
+      finishing = true;                 // 아래 signOut 이 리스너를 깨우지 못하게
+      /* signOut 은 이 파일 맨 위에서 이미 가져왔다. 여기서 다시 동적으로
+         import 하면 그때 네트워크를 한 번 더 타고, 그게 실패하면 동의는
+         저장됐는데 화면에는 '저장에 실패했어요' 가 뜬 채 흐름이 멈춘다.
+         실제로 그렇게 걸렸다. */
+      try{ await signOut(auth); }catch(_){}
+      showVerifySent(mail, sent);
       return;
     }
     location.replace(NEXT);
@@ -204,7 +232,7 @@ document.getElementById('agreeBtn').addEventListener('click', async () => {
 /* 이메일 가입 마무리 — 카드를 안내문으로 갈아 끼운다. 페이지를 또 옮기면
    뒤로가기로 동의 화면에 되돌아오는데, 그때는 이미 로그아웃돼 있어
    로그인 페이지로 튕긴다. 같은 자리에서 끝내는 편이 덜 헷갈린다. */
-function showVerifySent(mail){
+function showVerifySent(mail, sent){
   /* 머리글도 같이 바꾼다. 본문이 '메일 보냈어요' 인데 위에서는 여전히
      '아래 항목에 동의해 주세요' 라고 하면 화면이 두 말을 하게 된다. */
   const h1 = document.querySelector('.head h1');
@@ -220,17 +248,38 @@ function showVerifySent(mail){
   box.className = 'verify-sent';
   const b = document.createElement('b');
   b.textContent = T('인증 메일을 보냈어요');
+  if(!sent){ b.textContent = T('인증 메일을 보내지 못했어요'); }
   const p = document.createElement('p');
-  p.textContent = mail + ' ' + T('주소로 인증 링크를 보냈습니다. 메일의 링크를 눌러 인증한 뒤 로그인해 주세요. (스팸함도 확인해 주세요)');
+  p.textContent = sent
+    ? mail + ' ' + T('주소로 인증 링크를 보냈습니다. 메일의 링크를 눌러 인증한 뒤 로그인해 주세요. (스팸함도 확인해 주세요)')
+    : mail + ' ' + T('주소로 인증 링크를 보내지 못했습니다. 아래에서 다시 보내 주세요.');
   const a = document.createElement('a');
   a.href = 'Login.html'; a.textContent = T('로그인하러 가기');
   box.appendChild(b); box.appendChild(p); box.appendChild(a);
+
+  /* 다시 보내기. 성공했을 때도 둔다 — 스팸함으로 갔거나 지웠을 수 있다.
+     sendVerifyEmail 은 이메일을 본문에 실어 보내므로 로그아웃 뒤에도 된다. */
+  const again = document.createElement('button');
+  again.type = 'button'; again.className = 'verify-again';
+  again.textContent = T('인증 메일 다시 보내기');
+  again.addEventListener('click', async () => {
+    again.disabled = true;
+    try{
+      await sendVerifyEmail(mail);
+      again.textContent = T('다시 보냈습니다. 메일함을 확인해 주세요.');
+    }catch(_){
+      again.disabled = false;
+      again.textContent = T('보내지 못했어요. 잠시 후 다시 시도해 주세요.');
+    }
+  });
+  box.appendChild(again);
   document.querySelector('.consent-card').appendChild(box);
   if(window.KOSi18n) window.KOSi18n.apply();
 }
 
 document.getElementById('cancelBtn').addEventListener('click', async () => {
   document.getElementById('cancelBtn').disabled = true;
+  finishing = true;                     // deleteUser 가 리스너를 깨우지 못하게
   /* 거부하면 계정을 지운다. 로그아웃만 하면 동의하지 않은 계정이 그대로
      남는다. 지우기에 실패하면(재인증 요구 등) 로그아웃이라도 한다 — 남은
      계정은 다음 로그인 때 이 페이지를 다시 만난다. */

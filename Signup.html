@@ -713,7 +713,9 @@ $('#emailForm').addEventListener('submit', async e => {
        purgeUnconsented 가 지운다. 구글 가입과 똑같은 처리다. */
     await createUserWithEmailAndPassword(auth, email, pw);
     const nx = new URLSearchParams(location.search).get('next') || 'Home.html';
-    location.href = 'Consent.html?next=' + encodeURIComponent(nx);
+    // replace 를 쓴다. 계정은 이미 만들어졌으므로 뒤로가기로 가입 폼에
+    // 돌아가 다시 누르면 '이미 가입된 이메일' 만 보게 된다.
+    location.replace('Consent.html?next=' + encodeURIComponent(nx));
   }
   catch(err){
     if(String((err && err.code) || '').includes('email-already-in-use')) showAlreadyRegistered(email);
@@ -739,7 +741,8 @@ $('#googleBtn').addEventListener('click', async () => {
     const isNew = !!(getAdditionalUserInfo(cred) || {}).isNewUser;
     const { finishGoogleSignup } = await import('./consent.js');
     if(!(await finishGoogleSignup(cred, isNew))) return;   // 사용자가 취소
-    if(isNew && window.KOSA) KOSA.track('sign_up', { method: 'google' });
+    /* 가입 추적은 Consent.html 이 한다 — 동의를 마쳐야 가입이 성립하고,
+       신규면 위에서 이미 그쪽으로 넘어갔다. */
     go();
   }
   catch(err){ if(isUserCancelled(err)) return; showErr(mapError(err)); }
