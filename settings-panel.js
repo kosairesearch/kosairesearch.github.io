@@ -46,7 +46,7 @@ if (window.KOSi18n) window.KOSi18n.register({
   "회원 탈퇴": "Delete account",
   "저장에 실패했어요. 잠시 후 다시 시도해 주세요.": "Could not save. Please try again in a moment.",
   "불러오지 못했어요. 잠시 후 다시 시도해 주세요.": "Could not load. Please try again in a moment.",
-  "설정을 보려면 로그인이 필요합니다.": "Sign in to view your settings.",
+  "계정 설정을 보려면 로그인이 필요합니다.": "Sign in to view your account settings.",
   "닫기": "Close",
   "약관과 개인정보 처리에 관한 내용은": "You can review our",
   "이용약관": "Terms of Service",
@@ -186,10 +186,29 @@ export function renderSettings(box, opts = {}) {
   css();
   box.textContent = "";
 
+  /* ── 화면 ─────────────────────────────────────────────────────
+     로그인 게이트보다 위에 있다. 테마와 언어는 계정이 아니라 그 기기의
+     취향이고 localStorage 에 저장된다 — 계정과 아무 관계가 없다.
+
+     원래는 게이트 아래에 있었는데, 헤더의 KO/EN 토글을 걷어내면서
+     비회원이 영어로 바꿀 방법이 통째로 사라지는 문제가 드러났다. 이
+     사이트는 전 페이지에 영문 사전을 싣고 있으므로, 처음 온 사람이
+     로그인해야 영어를 볼 수 있는 건 앞뒤가 맞지 않는다. */
+  const look = section("화면");
+  look.appendChild(segRow("테마",
+    [{ label: "라이트", value: "light" }, { label: "다크", value: "dark" }],
+    currentTheme(), applyTheme));
+  if (window.KOSi18n) {
+    look.appendChild(segRow("언어",
+      [{ label: "한국어", value: "ko" }, { label: "English", value: "en" }],
+      currentLang(), v => { try { window.KOSi18n.setLang(v); } catch (_) {} }));
+  }
+  box.appendChild(look);
+
   const user = auth.currentUser;
   if (!isConfigured || !user) {
     const s = section(null);
-    s.appendChild(el("p", "ks-note", T("설정을 보려면 로그인이 필요합니다.")));
+    s.appendChild(el("p", "ks-note", T("계정 설정을 보려면 로그인이 필요합니다.")));
     const a = el("a", "ks-btn", T("로그인"));
     a.href = "Login.html?next=" + encodeURIComponent(
       (location.pathname.split("/").pop() || "Home.html") + (location.search || ""));
@@ -218,18 +237,6 @@ export function renderSettings(box, opts = {}) {
     nameDd.textContent = info.name || "—";
     mailDd.textContent = info.email || T("등록된 주소 없음");
   }).catch(() => { /* 표시용 — 실패해도 나머지는 쓸 수 있게 둔다 */ });
-
-  /* ── 화면 ── */
-  const look = section("화면");
-  look.appendChild(segRow("테마",
-    [{ label: "라이트", value: "light" }, { label: "다크", value: "dark" }],
-    currentTheme(), applyTheme));
-  if (window.KOSi18n) {
-    look.appendChild(segRow("언어",
-      [{ label: "한국어", value: "ko" }, { label: "English", value: "en" }],
-      currentLang(), v => { try { window.KOSi18n.setLang(v); } catch (_) {} }));
-  }
-  box.appendChild(look);
 
   /* ── 수신 설정 ──────────────────────────────────────────────
      스위치를 누르는 순간 저장한다. '저장' 버튼을 따로 두면 눌렀다고
