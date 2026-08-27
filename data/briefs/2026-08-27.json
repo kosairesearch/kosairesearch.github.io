@@ -1,0 +1,101 @@
+{
+  "date": "2026-08-27",
+  "tradeDate": "20260826",
+  "marketOpen": true,
+  "title": {
+    "ko": "엔비디아와 잭슨홀이 같은 날에 걸렸다",
+    "en": "Nvidia and Jackson Hole Land on the Same Day"
+  },
+  "lead": {
+    "ko": "오늘 엔비디아 회계 2분기 실적과 잭슨홀 회의(워시 의장 기조연설)가 같은 날짜에 함께 걸려 있다. 미국 3대 지수는 소수점 단위로 내렸고 반도체 지수만 방향이 달랐으니, 개장 전 점검은 반도체 대형주로 쏠린 거래와 1,382원대 원/달러다.",
+    "en": "Nvidia's fiscal Q2 results and the Jackson Hole gathering, with Chair Warsh's keynote, share the same date today. The three main U.S. indexes slipped by decimals while the semiconductor gauge went the other way, so the pre-open checklist is the trading concentrated in large-cap chips and a won hovering in the 1,382 area."
+  },
+  "summary": {
+    "ko": "미국은 8월 26일 세 지수가 모두 소폭 내렸고 필라델피아 반도체 지수만 올라 방향이 갈렸다. 직전 국내 장은 시총가중 등락률과 중앙값의 간격이 벌어졌고, 보험·건설·전력이 앞서는 동안 정유·운송·자동차가 뒤로 밀렸으며 거래대금은 반도체 두 종목에 몰렸다. 원/달러는 1,382원대에서 거의 움직이지 않았고 미 10년물은 4.66%로 올랐다. 오늘은 엔비디아 실적과 잭슨홀 일정이 겹치고, 커버리지에서는 6월과 8월 리포트에 적어 둔 확인 지점들이 반기보고서로 돌아왔다.",
+    "en": "All three U.S. benchmarks edged lower on Aug 26 while the Philadelphia semiconductor index rose, splitting direction. In the prior Korean session the cap-weighted move ran well ahead of the median, insurance, construction and power led while refining, shipping and autos lagged, and turnover clustered in two chip names. The won barely moved around 1,382 and the U.S. 10-year rose to 4.66%. Today Nvidia's results overlap with the Jackson Hole calendar, and in our coverage the checkpoints written down in June and August reports have come back as semiannual filings."
+  },
+  "sections": [
+    {
+      "id": "us",
+      "heading": {
+        "ko": "세 지수는 내렸고 반도체만 방향이 달랐다",
+        "en": "Three Indexes Down, Chips the Exception"
+      },
+      "paragraphs": [
+        {
+          "ko": "8월 26일 종가 기준으로 S&P 500은 7,675.70(-0.02%), 나스닥은 26,130.20(-0.08%), 다우는 53,463.88(-0.21%)로 세 지수가 나란히 내렸다. 로이터는 기술주 약세와 이란 관련 움직임을 마감 배경으로 전했고, 예상보다 뜨거운 물가 지표와 엔비디아 실적 대기를 함께 짚었다. 8월 소비자신뢰지수가 물가 우려 속에 둔화됐다는 지표도 같은 날 나왔다.",
+          "en": "At the Aug 26 close the S&P 500 stood at 7,675.70 (-0.02%), the Nasdaq at 26,130.20 (-0.08%) and the Dow at 53,463.88 (-0.21%), all three lower. Reuters tied the session to weakness in tech shares and developments around Iran, alongside a hotter-than-expected inflation print and the wait for Nvidia's numbers. A softer August consumer confidence reading, with inflation worries persisting, landed the same day."
+        },
+        {
+          "ko": "반면 필라델피아 반도체 지수는 11,611.24로 +0.20% 올랐다. AMD와 인텔이 상승했다는 소식이 이 자리와 겹친다. 금리와 달러는 조이는 쪽이었다. 미 10년물 금리는 4.66%로 올랐고, 달러인덱스는 99.12(+0.20%), WTI는 81.64달러(-0.87%)였다.",
+          "en": "The Philadelphia semiconductor index, by contrast, rose 0.20% to 11,611.24, coinciding with reports of gains in AMD and Intel. Rates and the dollar leaned the other way: the U.S. 10-year yield rose to 4.66%, the dollar index sat at 99.12 (+0.20%) and WTI at $81.64 (-0.87%)."
+        },
+        {
+          "ko": "지수 낙폭이 소수점 수준이어서 방향 신호로 옮겨 읽기는 어렵다. 다만 반도체만 소폭 우위였던 구도는 직전 국내 장에서 거래대금이 [삼성전자](005930)와 [SK하이닉스](000660) 두 종목에 압도적으로 몰려 있던 흐름과 맞물린다. 오늘 엔비디아 회계 2분기 실적이 일정에 올라 있어, 이 자리가 다음 개장까지의 변수로 남는다.",
+          "en": "With declines measured in decimals, there is little directional signal to carry over. Still, the narrow edge for chips lines up with the prior Korean session, where turnover was overwhelmingly concentrated in [Samsung Electronics](005930) and [SK Hynix](000660). Nvidia's fiscal Q2 report sits on today's calendar, leaving that spot as the open variable into the next session."
+        }
+      ]
+    },
+    {
+      "id": "domestic",
+      "heading": {
+        "ko": "중앙값과 시총가중이 벌어진 하루",
+        "en": "The Day the Median Fell Behind the Cap Weight"
+      },
+      "paragraphs": [
+        {
+          "ko": "직전 거래일(8월 26일) 국내 장은 폭이 고르지 않았다. 시총가중 등락률은 +0.95%였지만 중앙값은 +0.18%로, 위쪽 무게가 일부 대형주에 실렸다. 종목 수로는 상승 1,436개, 하락 965개, 보합 286개(총 2,687개)였다. 코스피 수급은 기타법인이 +15,994억원, 기관계가 +7,615억원 순매수, 개인이 -22,461억원, 외국인이 -1,148억원 순매도였다. 코스닥은 개인만 +1,931억원 순매수, 외국인 -918억원·기관계 -1,054억원이었다. 아래 수급·업종·거래대금은 모두 8월 26일 자료다.",
+          "en": "The prior session (Aug 26) was uneven beneath the surface. The cap-weighted move was +0.95% while the median was +0.18%, meaning the upside weight sat in a handful of large caps. By count, 1,436 rose, 965 fell and 286 were unchanged out of 2,687. On KOSPI, other corporations bought a net 1.5994tn won and institutions 761.5bn won, while retail sold 2.2461tn won and foreigners 114.8bn won. On KOSDAQ only retail was a net buyer at 193.1bn won, against foreign selling of 91.8bn won and institutional selling of 105.4bn won. The flows, sectors and turnover cited here are all Aug 26 data."
+        },
+        {
+          "ko": "업종은 양 끝이 뚜렷했다. 보험 +5.88%, 건설·건자재 +5.50%, 에너지·전력 +4.94%, 기계·장비 +3.25%, 전기장비 +2.48%가 위쪽이었고, 정유 -5.46%, 운송·물류 -4.67%, 자동차 -3.17%, 철강·금속 -2.62%, 전자·부품 -1.19%가 아래쪽이었다. [삼성생명](032830)이 +8.60%로 올랐고 삼성전자 주주환원 기대를 짚은 기사가 함께 나왔으며, [현대건설](000720) +7.50%에는 미국 원전 확대에 따른 추가 수주 가능성을 다룬 보도가 붙었다. [두산](000150) +7.18%, [한국전력](015760) +6.42%, [두산에너빌리티](034020) +6.32%도 같은 줄에 섰다. 반대편에서는 [SK이노베이션](096770)이 -11.04%로 밀렸고 [SK아이이테크놀로지](361610)는 +29.95%였는데, 흡수합병 발표를 다룬 기사가 양쪽에 함께 걸렸다. [팬오션](028670) -12.07%, [현대모비스](012330) -6.83%, [HMM](011200) -5.74%도 뒤로 밀렸다. 거래대금은 삼성전자 51,099억원(+1.75%), SK하이닉스 49,766억원(+0.60%)이 나머지를 압도했고, 3위 [삼성전기](009150)는 6,516억원(-2.35%)이었다.",
+          "en": "Sector extremes were clear. Insurance +5.88%, construction and materials +5.50%, energy and power +4.94%, machinery +3.25% and electrical equipment +2.48% led; refining -5.46%, transport and logistics -4.67%, autos -3.17%, steel and metals -2.62% and electronic parts -1.19% lagged. [Samsung Life](032830) rose 8.60% alongside coverage of shareholder-return expectations at Samsung Electronics, while [Hyundai E&C](000720) gained 7.50% as reports discussed possible further orders from U.S. nuclear expansion. [Doosan](000150) +7.18%, [KEPCO](015760) +6.42% and [Doosan Enerbility](034020) +6.32% sat in the same line. On the other side [SK Innovation](096770) fell 11.04% while [SK IE Technology](361610) rose 29.95%, with merger coverage attached to both. [Pan Ocean](028670) -12.07%, [Hyundai Mobis](012330) -6.83% and [HMM](011200) -5.74% also slid. Turnover was dominated by Samsung Electronics at 5.1099tn won (+1.75%) and SK Hynix at 4.9766tn won (+0.60%), with third-placed [Samsung Electro-Mechanics](009150) at 651.6bn won (-2.35%)."
+        }
+      ]
+    },
+    {
+      "id": "ahead",
+      "heading": {
+        "ko": "환율은 제자리, 일정은 겹쳤다",
+        "en": "A Flat Won, a Crowded Calendar"
+      },
+      "paragraphs": [
+        {
+          "ko": "원/달러는 1,382.34원(+0.06%)으로 거의 제자리였다. 외환 마감 기사들은 월말 네고 물량과 저가 매수가 소화되는 가운데 미국 PCE와 금통위를 대기하는 흐름이었다고 전했고, 이란 제재 소식에도 유가는 내렸다고 짚었다. 대외 쪽에서는 미 10년물이 4.66%로 오르고 달러인덱스가 99.12로 소폭 강해진 조합이 함께 놓여 있다.",
+          "en": "The won ended at 1,382.34 per dollar (+0.06%), effectively flat. FX wrap-ups described month-end exporter selling and dip buying being absorbed while the market waited on U.S. PCE and the Bank of Korea's rate decision, and noted crude fell despite sanctions news on Iran. Externally, the U.S. 10-year at 4.66% and a slightly firmer dollar index at 99.12 sit side by side."
+        },
+        {
+          "ko": "일정은 오늘 하루에 두 건이 겹친다. 엔비디아 회계 2분기 실적이 예정돼 있고, 잭슨홀 회의가 27~29일 열리며 워시 의장 기조연설이 포함된다. 다음 개장까지 볼 자리는 세 갈래다. 첫째, 거래대금이 삼성전자·SK하이닉스에 몰린 구도가 엔비디아 실적 이후에도 유지되는지다. 둘째, 보험·건설·에너지·전력이 앞서고 정유·운송·자동차가 뒤로 밀린 업종 양극단이 하루 만의 순환매였는지 이어지는 흐름인지다. 셋째, 코스피에서 외국인과 개인이 함께 순매도였고 기타법인·기관계가 받아낸 수급 구조가 반복되는지다. 시총가중과 중앙값의 간격이 벌어져 있는 만큼, 지수 등락률만으로 체감이 맞아떨어지지 않을 수 있다는 점도 함께 둔다.",
+          "en": "Two items overlap on today's calendar: Nvidia's fiscal Q2 report, and the Jackson Hole meeting running the 27th to 29th with Chair Warsh's keynote. Three things to track into the next session. First, whether turnover stays clustered in Samsung Electronics and SK Hynix after Nvidia's numbers. Second, whether the sector split, with insurance, construction, energy and power ahead of refining, transport and autos, was a one-day rotation or something that continues. Third, whether the flow pattern repeats, with foreigners and retail both net sellers on KOSPI and other corporations plus institutions absorbing. With the gap between the cap-weighted and median moves this wide, the headline index change may not match what portfolios feel."
+        }
+      ]
+    },
+    {
+      "id": "coverage",
+      "heading": {
+        "ko": "6월에 적어 둔 확인 지점이 반기보고서로 돌아왔다",
+        "en": "June's Checkpoints Return as Semiannual Filings"
+      },
+      "paragraphs": [
+        {
+          "ko": "KOSAI 커버리지 종목의 2026년 6월 반기보고서가 접수됐고, 6월 리포트에 확인 지점으로 적어 둔 항목들이 이번 서류로 결과를 드러내는 국면이다. [인벤티지랩](389470)은 6월 18일 리포트에서 2분기 매출 회복의 지속 여부와 영업손실 폭, 대규모 조달 이후 현금 소진 속도를 볼 것으로 꼽아 뒀다. [블랙야크아이앤씨](478560)는 6월 19일 리포트가 일회성 비용이 사라진 뒤 첫 반기 연결 수익성과 영업활동현금흐름의 방향, 5월 납입된 전환사채 자금의 집행 현황을 확인 지점으로 뒀다. [엔젯](419080)은 같은 날 리포트에서 1분기 매출 반등이 2분기에도 이어지는지, 리사이클링 부문의 기여도와 단일 고객 집중이 어떻게 나타나는지를 점검 항목으로 남겼고, 이번 접수분은 기재정정 반기보고서다. [한컴라이프케어](372910) 역시 6월 19일 리포트에서 방산 계약분의 매출 인식 규모와 2분기 손익 방향을 확인 지점으로 적어 뒀다. 한편 [기도산업](282620)은 8월 22일 리포트에서 3년 연속 외형 성장과 함께 핵심 고객 발주 소멸, 차입금 증가를 양면으로 정리해 뒀고, 반기보고서가 그 뒤를 이어 접수됐다.",
+          "en": "Semiannual filings for June 2026 have arrived for several KOSAI coverage names, putting the items we flagged as checkpoints in our June reports into view. For [Inventage Lab](389470), the June 18 report flagged whether the revenue recovery continues into Q2, the size of the operating loss, and the cash burn rate after its large financing. For [Blackyak I&C](478560), the June 19 report set the first half-year of consolidated profitability after one-off costs cleared, the direction of operating cash flow, and the use of the convertible bond proceeds paid in May. [Enjet](419080), in a report the same day, listed whether the Q1 revenue rebound extended into Q2, the contribution from the recycling business, and how single-customer concentration shows up; this filing is an amended semiannual report. [HancomLifecare](372910) was likewise flagged on June 19 for the scale of revenue recognition on its defense contracts and the direction of second-quarter earnings. Separately, our August 22 report on [Kido Industrial](282620) laid out three straight years of top-line growth against the loss of its core customer's orders and rising borrowings, with the semiannual filing following."
+        }
+      ]
+    }
+  ],
+  "factsDigest": "[오늘] 20260827 · 국내 증시 개장 · 직전 거래일 20260826\n\n[미국·해외 · 종가와 전일 대비]\n  S&P 500: 7,675.70 -0.02%  (기준일 2026-08-26)\n  나스닥: 26,130.20 -0.08%  (기준일 2026-08-26)\n  다우: 53,463.88 -0.21%  (기준일 2026-08-26)\n  필라델피아 반도체: 11,611.24 +0.20%  (기준일 2026-08-26)\n  미 10년물: 4.66% +0.54%  (기준일 2026-08-26)\n  WTI: 81.64달러 -0.87%  (기준일 2026-08-26)\n  달러인덱스: 99.12 +0.20%  (기준일 2026-08-26)\n\n[직전 국내 장 · 20260826 (8월 26일)]\n  ⚠️ 아래 지수는 2026-08-27 값이고, 등락 종목 수·업종·거래대금은 20260826 값이다 — 다른 날이다. 두 묶음을 같은 장의 일처럼 한 문단에 섞지 마라. 섞을 수 없으면 지수 쪽을 버리고 등락·업종만 쓰라.\n  코스피: 6,989.31 +3.66%  ⚠️기준일 2026-08-27\n  코스닥: 828.41 +0.15%  ⚠️기준일 2026-08-27\n  코스피 투자자별 순매수: 개인 -22,461억원 · 외국인 -1,148억원 · 기관계 +7,615억원 · 기타법인 +15,994억원\n  코스닥 투자자별 순매수: 개인 +1,931억원 · 외국인 -918억원 · 기관계 -1,054억원 · 기타법인 +41억원\n  장폭: 시총가중 +0.95% · 중앙값 +0.18% · 상승 1,436 / 하락 965 / 보합 286 (총 2,687)\n  기준 등락률 +3.66% — 아래 rel 은 이 값 대비 초과 등락이다. 시장이 +2% 오른 날의 +0.2% 는 상승이 아니라 부진이다.\n  대형주 선전(시장 대비): 삼성생명(032830) +8.60% rel +4.94 · 현대건설(000720) +7.50% rel +3.84 · 두산(000150) +7.18% rel +3.52 · 한국전력(015760) +6.42% rel +2.76 · 두산에너빌리티(034020) +6.32% rel +2.66 · 삼성물산(028260) +5.59% rel +1.93\n  대형주 부진(시장 대비): SK이노베이션(096770) -11.04% rel -14.70 · 현대모비스(012330) -6.83% rel -10.49 · HMM(011200) -5.74% rel -9.40 · 현대글로비스(086280) -4.22% rel -7.88 · 고려아연(010130) -3.85% rel -7.51 · LG이노텍(011070) -3.16% rel -6.82\n  절대 상승: SK아이이테크놀로지(361610) +29.95% rel +26.29 · 전진건설로봇(079900) +23.86% rel +20.20 · SNT에너지(100840) +15.33% rel +11.67 · 한전기술(052690) +13.63% rel +9.97 · 성광벤드(014620) +13.55% rel +9.89 · 한전산업(130660) +12.74% rel +9.08\n  절대 하락: 팬오션(028670) -12.07% rel -15.73 · PS일렉트로닉스(332570) -11.57% rel -15.23 · SK이노베이션(096770) -11.04% rel -14.70 · 현대오토에버(307950) -9.10% rel -12.76 · 예스티(122640) -6.87% rel -10.53 · 현대모비스(012330) -6.83% rel -10.49\n  거래대금 상위: 삼성전자(005930) 51,099억원 +1.75% · SK하이닉스(000660) 49,766억원 +0.60% · 삼성전기(009150) 6,516억원 -2.35% · 두산에너빌리티(034020) 5,442억원 +6.32% · SK스퀘어(402340) 5,415억원 -0.19% · SK이노베이션(096770) 4,567억원 -11.04%\n  업종 상위(시총가중): 보험 +5.88% · 건설·건자재 +5.50% · 에너지·전력 +4.94% · 기계·장비 +3.25% · 전기장비 +2.48%\n  업종 하위: 정유 -5.46% · 운송·물류 -4.67% · 자동차 -3.17% · 철강·금속 -2.62% · 전자·부품 -1.19%\n\n[환율] 원/달러 1,382.34원 +0.06% (기준일 2026-08-27)\n\n[일정 · 2026-08-27 ~ 2026-09-10]\n  2026-08-27 해외 실적 엔비디아 회계 2분기 실적\n  2026-08-27 해외 이벤트 잭슨홀 · 워시 의장 기조연설 (27~29일)\n\n[정기보고서 접수 · 커버리지 종목]\n  인벤티지랩(389470) 반기보고서 (2026.06) · 시총 0.4조\n     └ 리포트 작성일 2026-06-18 · 제목 「비만 LAI 플랫폼, 상업화 길목의 적자 바이오」\n     └ 확인 지점 [2026년 2분기 실적 발표(8월 예상)] 매출 회복 지속 여부와 영업손실 폭, 985억원 조달 이후 현금 소진 속도를 확인할 시점이다. 영업현금흐름 개선 신호가 핵심 관전 포인트다.\n     └ 확인 지점 [2026년 하반기] 회사가 연내 진행을 준비 중이라고 밝힌 IVL3021 임상 개발의 실제 진입(IND 신청·승인) 여부가 핵심 모멘텀이다. 지연 시 가치 실현 일정이 후행될 수 있다.\n     └ 강세: 대형 비만 시장을 겨냥한 차별화 제형 / 플랫폼 기술이전 잠재력\n     └ 약세: 지속되는 적자와 음(-)의 현금흐름 / 큐라티스 자회사 리스크\n  기도산업(282620) 반기보고서 (2026.06) · 시총 0.1조\n     └ 리포트 작성일 2026-08-22 · 제목 「탄탄한 실적, 혹독한 신고식」\n     └ 강세: 46년 기술 진입장벽과 장기 고객 파트너십 / 3년 연속 20%+ 외형 성장과 안정적 수익성\n     └ 약세: 핵심 고객 잭울프스킨 발주 사실상 소멸 / 차입금 급증과 금융비용 확대\n  블랙야크아이앤씨(478560) 반기보고서 (2026.06) · 시총 0.1조\n     └ 리포트 작성일 2026-06-19 · 제목 「산업안전 빅3, 연결 확장 후 수익 정상화 진행 중」\n     └ 확인 지점 [2026년 8월 초] 2026년 2분기 연결 실적 공시 예정. 일회성 비용 완전 소멸 후 첫 반기 연결 수익성과 영업활동현금흐름 흑자 전환 여부가 연간 수익 정상화의 가늠자다.\n     └ 확인 지점 [2026년 하반기 지속 모니터링] 2026년 5월 납입된 전환사채 150억 원의 운영자금 집행 현황과 종속회사 재무구조 개선 진행 여부를 DART 공시를 통해 확인. 추가 자금 조달 공시 여부도 병행 주시 필요.\n     └ 강세: 일회성 비용 소멸 후 연간 이익 정상화 / 산업안전 규제 강화의 구조적 수혜\n     └ 약세: 연결 편입으로 급증한 부채비율과 현금흐름 압박 / 전환사채 발행에 따른 주당 지표 희석 우려\n  엔젯(419080) [기재정정]반기보고서 (2026.06) · 시총 0.1조\n     └ 리포트 작성일 2026-06-19 · 제목 「EHD 원천기술 보유, 신사업 편입으로 반등 시동」\n     └ 확인 지점 [2026년 8월 중순 (2026년 2분기 잠정 실적 공시)] 2026년 1분기 매출 급반등(43.7억 원)이 2분기에도 지속·확대되는지 확인이 핵심이다. 리사이클링 사업부의 매출·이익 기여 수준, EHD 장비·부품 수주 회복 여부를 함께 점검해야 한다.\n     └ 확인 지점 [2026년 하반기 (유리기판 고객사 기술 검증 및 수주 결과)] JWMT 및 기타 유리기판 관련 고객사와의 기술 검증(POC) 결과가 공급계약으로 이어지는지 여부가 중장기 성장 내러티브의 핵심 검증 포인트다. AI 결함 검사 소프트웨어의 상업 채택 속도도 모니터링이 필요하다.\n     └ 강세: 리사이클링 편입으로 단기 매출 회복 가시화 / EHD 원천기술의 유리기판·Micro LED 잠재력\n     └ 약세: 3년 연속 영업적자와 가속화되는 현금 소진 / 단일 고객 매출 비중 68.1%의 고도 집중 리스크\n  삼진식품(0013V0) 반기보고서 (2026.06) · 시총 0.1조\n     └ 리포트 작성일 2026-06-05 · 제목 「K-어묵의 첫 글로벌 승부」\n     └ 강세: K-푸드 메가트렌드와 수산 단백질 수요 수혜 / 완전 수직계열화와 프리미엄 브랜드 해자\n     └ 약세: 해외 매출 2.8%: 글로벌 목표와 현실의 큰 괴리 / 영업이익률 5%대의 구조적 한계\n  한컴라이프케어(372910) [기재정정]반기보고서 (2026.06) · 시총 0.1조\n     └ 리포트 작성일 2026-06-19 · 제목 「K-방산·전기차 소방 양축 전략, 수주 공백 해소가 관건」\n     └ 확인 지점 [2026년 8월 초 (2026Q2 실적 발표)] 지상레이저 표적지시기 및 K5 방독면 9차 계약분의 매출 인식 규모, Q2 영업 흑자 전환 여부를 확인해야 한다. 2025년 Q2 계절적 흑자 패턴이 반복되는지 여부가 연간 흑자 전환 가능성을 가늠하는 첫 번째 데이터 포인트다.\n     └ 확인 지점 [2026년 하반기 (K5 방독면 9차 납품 완료 및 10차 공시)] 2025년 12월 체결된 185억원 계약의 납품 완료 여부와 후속 10차 수주 공시 여부를 확인해야 한다. 국방부 2030년 교체 계획상 추가 차수 발주 여부가 방산 매출의 중기 지속성을 판가름하는 핵심 지표다.\n     └ 강세: 국방 장기 수요 구조와 단독 공급 지위 / 전기차 소방 솔루션 선발 진입 & 글로벌 수출 확장\n     └ 약세: 수주 편중과 2026년 상반기 적자 지속 리스크 / 지배구조 불확실성 — 투자자 분쟁 및 최대주주 매각 가능성\n  크리스탈신소재(900250) 반기보고서 (2026.06) · 시총 0.0조\n     └ 리포트 작성일 2026-06-19 · 제목 「포트폴리오 재편 완료: 그래핀 피봇 실적 검증 단계」\n     └ 확인 지점 [2026년 6월 23일] 4대 1 주식 병합 신주 상장일. 5월 29일~6월 22일 거래정지 해제 후 첫 가격 발견 이벤트로, 거래 재개 후 유동성 회복 여부와 시장의 가격 반응을 확인해야 한다.\n     └ 확인 지점 [2026년 8월 중순(예정)] 2026년 2분기 실적 발표. 계속영업 기준 영업이익률이 2026년 1분기(약 4.7%)에서 개선되고 있는지 여부가 사업 재편 후 수익성 회복 속도를 판단하는 핵심 지표다.\n     └ 강세: 세계 최대급 합성운모 생산능력과 글로벌 블루칩 고객 기반 / 극히 낮은 레버리지와 자산 대비 두텁고 안정적인 자기자본\n     └ 약세: 포트폴리오 재편 후 사업 기반과 수익성 급격히 축소 / 코스닥 상장 중국 기업 고유의 지속적 거버넌스 할인\n  서암기계공업(100660) 반기보고서 (2026.06) · 시총 0.0조\n     └ 리포트 작성일 2026-06-19 · 제목 「기어 다각화·원전 수혜 기대, 수익성 회복이 관건」\n     └ 확인 지점 [2026년 8월 중순] 2026년 2분기(4~6월) 실적 발표 확인. 2026년 1분기 영업손실 이후 계절 회복 효과로 흑자전환 여부 및 영업이익률 방향성이 핵심 점검 포인트.\n     └ 확인 지점 [2026년 하반기] 체코 두코바니 원전의 기본설계(Basic Engineering) 착수 일정 및 한국 팀코리아의 시공(EPC) 계약 진행 여부 확인. 서암기계공업의 기어·동력전달 부품 공급 참여 가능성 구체화 모니터링.\n     └ 강세: 원전·SMR 기어 부품 수요의 중장기 수혜 가능성 / 일본 자회사 편입으로 포트폴리오 다각화 기반 확보\n     └ 약세: 구조적 마진 압축 — 계절·수요 변화에 취약한 손익 구조 / 전방 공작기계 수요 부진의 지속 가능성\n  체리부로(066360) [기재정정]반기보고서 (2026.06) · 시총 0.0조\n     └ 리포트 작성일 2026-06-19 · 제목 「닭고기 가격 강세 속 이익 회복, 지속성 검증 국면」\n     └ 확인 지점 [2026년 7월 초~중순 (복날 성수기 진입)] 초복(7월 중순)·중복·말복으로 이어지는 여름 복날 성수기와 월드컵 치킨 소비 효과가 도매 유통가격 및 출하 물량에 실제로 반영되고 있는지를 축산물품질평가원 주간 가격 데이터로 확인해야 한다. 이 시기의 가격 유지 여부가 2분기 실적 방향을 가늠하는 선행 지표다.\n     └ 확인 지점 [2026년 8월 중순 (2026년 2분기 실적 발표)] 2분기는 계절적 성수기인 동시에 HPAI 후 가격 강세가 본격 반영되는 시기다. 2026년 1분기의 '영업이익 대비 순이익 사실상 0' 현상이 반복되는지 여부, 즉 영업이익과 지배주주 순이익의 괴리 원인(이자비용·비영업 손실 구조)이 해소되고 있는지를 확인해야 한다.\n     └ 강세: 닭고기 가격 15년래 최고 — 계열화업체의 판매단가 개선 / 수직계열화·바이오시큐리티로 경쟁사 대비 상대적 공급 안정성 확보\n     └ 약세: 2026년 1분기 순이익 사실상 0 — 영업이익 대비 최종 수익 괴리의 원인 불투명 / 정부 수급 개입과 수입 종란 정책이 닭고기 가격 강세를 제한할 수 있음\n\n[커버리지] 리포트 보유 2,695종목\n\n[뉴스 제목 — '왜 움직였나'의 단서. 제목 속 숫자는 쓰지 말 것]\n  · 시황\n      코스피, 비반도체 순환매 확산에 강보합 마감…외국인은 반도체 대거 매도 [종합] - 이투데이 (이투데이)\n      코스피 장중 4% 급락 후 반등 마감…외국인 매도에도 6740선 회복 - ER 이코노믹리뷰 (ER 이코노믹리뷰)\n      [마감시황]코스피, 외국인 3.8조 매도 딛고 반등… 6천742.74 마감 - 남도일보 (남도일보)\n  · 환율\n      [외환-마감] '네고·저가 매수' 소화 후 '美 PCE·금통위' 대기…1.30원↓ | - 연합인포맥스 (연합인포맥스)\n      [환율마감] 원·달러 반등 하룻만 다시 하락, 월말 네고 - 이투데이 (이투데이)\n      원·달러 환율 1384.8원에 주간 거래 마감…금통위 앞두고 1.3원 하락 - 강원도민일보 (강원도민일보)\n      원·달러 환율, 1.3원 내린 1384.8원 마감(종합) - 뉴시스 (뉴시스)\n      원·달러 환율, 금통위 앞두고 소폭 하락 마감...외국인 순매도에 낙폭은 제한 - 베타뉴스 (베타뉴스)\n      [외환] 이란 제재에도 유가는 하락…1,383.20원에 마감 - KB Think (KB Think)\n  · 미국 지수\n      Why Are S&P 500, Nasdaq Futures Slipping While Dow Futures Are Climbing? - Stocktwits (Stocktwits)\n      S&P 500, Nasdaq end down on tech stocks, investors weigh Iran moves - Reuters (Reuters)\n      Dow Dips 114, Nasdaq Falls 21, S&P 500 Slips 2 - TV News Check (TV News Check)\n      Wall Street stocks end tad lower after hot inflation data ahead of Nvidia earnings - Reuters (Reuters)\n      Stock Market Today: Dow Jones, S&P 500, Nasdaq 1000 Futures Advance as Scott Bessent Expands Sanctions on - Benzinga (Benzinga)\n      S&P 500, Nasdaq end down on tech stocks - Jefferson City News Tribune (Jefferson City News Tribune)\n  · 미국 반도체\n      AMD and Intel Rise 3% on a Strong Buy Upgrade and a Pelosi Disclosure, NVIDIA and Broadcom Tick Up - 24/7 Wall St. (24/7 Wall St.)\n  · 미국 지표\n      US Consumer Confidence Eases To 89.4 In August As Inflation Worries Persist - Bitcoin World (Bitcoin World)\n  · 삼성생명(032830)\n      [오늘의 주목주] '삼성전자 주주환원 기대' 삼성생명 주가 8%대 올라, 코스피 기관 매수세에 6800선 강보합 마감 - 비즈니스포스트\n      삼성전자서 5조 받는데 삼성생명 주가 급락…\"배당보다 중요한건 주주수익\" By EBN - Investing.com 한국어\n      삼성생명(032830) - 매일경제 마켓\n      삼성생명, 삼전 배당 배분원칙 불확실하지만…DPS 우상향 의지는 확고 - 주주경제신문\n  · 현대건설(000720)\n      현대건설 주가 장중 9%대 강세, 하반기 미국 원전 확대에 따른 추가 수주 가능성 부각 - 비즈니스포스트\n      현대건설 주가, 8월 25일 장중 114,700원 8.62% 상승 - 톱스타뉴스\n      현대건설 주가, 급등세... 이유는? - 금강일보\n      [1% 초고수의 선택] '현대건설' 사고 '하이브' 팔았다 - ebn.co.kr\n  · SK이노베이션(096770)\n      적자 회사 합병에 SK이노 주가 급락 - 매일경제 마켓\n      환영받지 못한 SK IET 흡수합병∙∙∙SK이노베이션 주가 급락 - 한국M&A경제신문\n      “적자 자회사를 왜 합병시키나”…주가 급락한 SK이노, 이유가 있습니다 - 매일경제\n      '합병 충격' SK이노베이션 저가매수 나선 초고수…삼전닉스는 팔았다 - 한국경제\n  · 삼성전자(005930)\n      [오늘의 주목주] '삼성전자 주주환원 기대' 삼성생명 주가 8%대 올라, 코스피 기관 매수세에 6800선 강보합 마감 - 비즈니스포스트\n      엔비디아 실적 5시20분…삼전 사고 하이닉스 판 외국인, 다시 갈림길 - 녹색경제신문\n      엔비디아 '어닝 서프라이즈'에 삼성전자·SK하이닉스 주가 강세 - gukjenews.com\n      삼성전자보다 주가 더 빠진 삼성물산⋯'역대급 배당' 반전되나 - 아이뉴스24",
+  "meta": {
+    "model": "claude-opus-5",
+    "batched": false,
+    "chars": 2934,
+    "coverageRatio": 0.19,
+    "usage": {
+      "inputTokens": 11542,
+      "outputTokens": 10158,
+      "usd": 0.3117,
+      "krw": 436
+    },
+    "generatedAt": "2026-08-27T09:24:56+09:00"
+  }
+}
