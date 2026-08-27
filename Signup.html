@@ -781,7 +781,7 @@ $('#googleBtn').addEventListener('click', async () => {
     const cred = await signInWithPopup(auth, new GoogleAuthProvider());
     const { getAdditionalUserInfo } = await import('https://www.gstatic.com/firebasejs/10.12.2/firebase-auth.js');
     const isNew = !!(getAdditionalUserInfo(cred) || {}).isNewUser;
-    const { finishGoogleSignup } = await import('./consent.js?v=de36364d');
+    const { finishGoogleSignup } = await import('./consent.js?v=7b44c813');
     if(!(await finishGoogleSignup(cred, isNew))) return;   // 사용자가 취소
     /* 가입 추적은 Consent.html 이 한다 — 동의를 마쳐야 가입이 성립하고,
        신규면 위에서 이미 그쪽으로 넘어갔다. */

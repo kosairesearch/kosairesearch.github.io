@@ -756,12 +756,26 @@ exports.recordSignupConsent = onCall({ region: REGION, cors: true }, async (req)
   const ref = db.collection("users").doc(uid);
   const now = admin.firestore.FieldValue.serverTimestamp();
   const snap = await ref.get();
-  const already = snap.exists && !!((snap.data().consents || {}).agreedAt);
+
+  /* 세 가지 경우를 갈라야 한다. 전에는 '동의한 적 있나' 하나로만 보고
+     있어서, 약관을 개정하고 판 번호를 올리면 재동의가 저장되지 않았다.
+     저장이 안 되니 판 번호가 그대로고, 그러면 동의 화면이 다시 뜬다 —
+     전 회원이 동의 화면에 갇힌다. 아무도 아직 판을 올리지 않아 터지지
+     않았을 뿐이다.
+
+       처음      동의 기록이 없다            → 다 쓴다
+       재동의    있는데 판이 다르다          → 필수 항목만 새로 쓴다
+       최신      있고 판도 같다              → 건드리지 않는다 */
+  const prev = (snap.exists && snap.data().consents) || null;
+  const hadConsent = !!(prev && prev.agreedAt);
+  if (hadConsent && prev.version === CONSENT_VERSION) {
+    return { ok: true, first: false, reconsent: false };
+  }
 
   /* 아직 동의를 남기지 않은 계정만 본다. 이미 쓰는 회원을 나중에 막아
      내쫓으면 안 된다 — 여기서 걸러야 할 것은 '지금 막 만들어진 두 번째
      계정' 이다. 부르는 쪽이 이 계정을 지우고 원래 방법으로 안내한다. */
-  if (!already && email) {
+  if (!hadConsent && email) {
     const other = await findOtherAccountByEmail(db, email, uid);
     if (other) {
       throw new HttpsError("already-exists",
@@ -771,25 +785,39 @@ exports.recordSignupConsent = onCall({ region: REGION, cors: true }, async (req)
 
   const patch = { updatedAt: now };
   if (email) patch.email = email;
-  if (!already) {
-    patch.consents = {
-      version: CONSENT_VERSION,
-      method,
-      age14: true, terms: true, privacy: true,
-      marketing,
-      agreedAt: now
-    };
+
+  const c = {
+    version: CONSENT_VERSION,
+    method,
+    age14: true, terms: true, privacy: true,
+    agreedAt: now
+  };
+
+  if (hadConsent) {
+    /* 재동의. 마케팅 수신은 건드리지 않는다 — 선택 항목이고 설정 화면이
+       관리한다. 여기서 폼 값으로 덮으면 켜 둔 사람이 약관 개정 한 번에
+       조용히 꺼진다. 재동의 화면도 그래서 마케팅 칸을 보여 주지 않는다.
+
+       가입 시각(createdAt)과 가입 방법(signupMethod)도 그대로 둔다.
+       개정 때문에 다시 받은 것이지 다시 가입한 것이 아니다. */
+    c.marketing = !!prev.marketing;
+  } else {
+    c.marketing = marketing;
     patch.marketingAt = marketing ? now : null;
     patch.signupMethod = provider;
     patch.createdAt = now;
   }
+  patch.consents = c;
   await ref.set(patch, { merge: true });
-  if (!already) {
-    await logConsent(db, uid, "signup", {
-      email: email || null, version: CONSENT_VERSION, method, provider, marketing
-    }, req);
-  }
-  return { ok: true, first: !already };
+
+  /* 처음 동의한 시각은 consents.agreedAt 에서 밀려나지만 이력에는 남는다 —
+     'signup' 사건이 그 시각을 들고 있다. 그래서 덮어써도 잃는 것이 없다. */
+  await logConsent(db, uid, hadConsent ? "reconsent" : "signup", Object.assign({
+    email: email || null, version: CONSENT_VERSION, method, provider,
+    marketing: c.marketing
+  }, hadConsent ? { prevVersion: prev.version || null } : {}), req);
+
+  return { ok: true, first: !hadConsent, reconsent: hadConsent };
 });
 
 /* 마케팅 수신 동의 켜고 끄기 — 설정 페이지가 부른다.
@@ -944,13 +972,21 @@ exports.adminConsentStats = onCall({ region: REGION, cors: true }, async (req) =
   const now = Date.now();
   const TWO_YEARS = 2 * 365 * 24 * 60 * 60 * 1000;
 
-  let total = 0, consented = 0, marketing = 0, dueRecheck = 0;
+  let total = 0, consented = 0, marketing = 0, dueRecheck = 0, stale = 0;
   const byProvider = {};
+  const byVersion = {};
   users.forEach((d) => {
     const u = d.data() || {};
     const c = u.consents || {};
     total++;
     if (c.agreedAt) consented++;
+    /* 어느 판에 동의했는지 세어 둔다. 약관을 개정하면 여기서 재동의
+       진행률이 보인다 — 안 보이면 다 받았는지 알 길이 없다. */
+    if (c.agreedAt) {
+      const v = c.version || "(판 없음)";
+      byVersion[v] = (byVersion[v] || 0) + 1;
+      if (c.version !== CONSENT_VERSION) stale++;
+    }
     const p = normProvider(u.signupMethod) || "unknown";
     byProvider[p] = (byProvider[p] || 0) + 1;
     if (c.marketing) {
@@ -960,7 +996,49 @@ exports.adminConsentStats = onCall({ region: REGION, cors: true }, async (req) =
       if (ms && now - ms >= TWO_YEARS) dueRecheck++;
     }
   });
-  return { total, consented, marketing, dueRecheck, byProvider };
+  /* 동의 없는 계정 — 이 화면이 여태 못 보던 것.
+
+     여기까지의 숫자는 전부 users 문서를 센 것이다. 그런데 Auth 에는
+     계정이 있는데 users 문서가 없거나 그 안에 consents 가 없는 계정이
+     생길 수 있다. 가입하다 동의 화면에서 나가 버린 경우다. 그런 계정은
+     users 를 아무리 세어도 안 나온다 — 없는 것처럼 보인다.
+
+     purgeUnconsented 가 24시간 뒤 지우지만, 그 사이의 계정과 상한(50)에
+     걸려 남은 계정은 여기 잡힌다. 세어서 보여 준다. */
+  let noConsent = 0, authTotal = 0;
+  const noConsentRows = [];
+  try {
+    const have = new Set();
+    users.forEach((d) => { if ((d.data() || {}).consents) have.add(d.id); });
+    let pageToken;
+    do {
+      const page = await admin.auth().listUsers(1000, pageToken);
+      pageToken = page.pageToken;
+      for (const au of page.users) {
+        authTotal++;
+        if (have.has(au.uid)) continue;
+        noConsent++;
+        if (noConsentRows.length < 200) {
+          noConsentRows.push({
+            uid: au.uid,
+            email: au.email ? au.email.toLowerCase() : null,
+            createdAt: au.metadata && au.metadata.creationTime
+              ? new Date(au.metadata.creationTime).toISOString() : null,
+          });
+        }
+      }
+    } while (pageToken);
+    noConsentRows.sort((a, b) => String(b.createdAt || "").localeCompare(String(a.createdAt || "")));
+  } catch (e) {
+    /* 실패하면 세지 못했다는 사실을 그대로 알린다. 0 으로 내보내면
+       '없다' 로 읽혀서, 못 본 것과 없는 것이 뒤섞인다. */
+    console.warn("[adminConsentStats] Auth 훑기 실패:", e && e.message);
+    return { total, consented, marketing, dueRecheck, stale, byProvider, byVersion,
+             version: CONSENT_VERSION, noConsent: null, authTotal: null, noConsentRows: [] };
+  }
+
+  return { total, consented, marketing, dueRecheck, stale, byProvider, byVersion,
+           version: CONSENT_VERSION, noConsent, authTotal, noConsentRows };
 });
 
 /* 한 사람의 현재 동의 상태와 이력. 이메일 또는 uid 로 찾는다. */
@@ -1563,7 +1641,20 @@ exports.purgeUnconsented = onSchedule(
        걸리면 남은 것은 다음 날 처리되고, 로그에 그 사실이 남아 사람이
        알아챌 수 있다. 정상 상황에서 하루 대상은 많아야 몇 건이다. */
     const MAX_DELETE = 50;
-    let scanned = 0, deleted = 0, kept = 0, skipped = 0, capped = false;
+
+    /* 동의 제도가 생기기 전에 가입한 계정은 지우지 않는다.
+
+       이 함수가 잡아야 하는 것은 '가입하다 동의 화면에서 나가 버린 계정'
+       이다. 그런데 조건이 '24시간 지났고 동의 기록이 없다' 뿐이라, 6월에
+       가입해 그동안 안 들어온 멀쩡한 회원도 똑같이 걸린다. 그 사람은
+       동의를 거부한 것이 아니라 물어본 적이 없는 것이다. 물어보지도 않고
+       지우는 것은 안 된다.
+
+       그런 계정은 다음에 들어올 때 auth-state.js 의 guardConsent 가 동의
+       화면으로 보낸다. 그때 받으면 된다. */
+    const CONSENT_EPOCH = Date.parse("2026-08-20T00:00:00Z");
+
+    let scanned = 0, deleted = 0, kept = 0, skipped = 0, capped = false, oldAccount = 0;
 
     let pageToken;
     do {
@@ -1574,6 +1665,7 @@ exports.purgeUnconsented = onSchedule(
         scanned++;
         const created = Date.parse(u.metadata.creationTime || "");
         if (!created || created > cutoff) { kept++; continue; }   // 유예 기간 안
+        if (created < CONSENT_EPOCH) { oldAccount++; kept++; continue; }
 
         let snap;
         try {
@@ -1603,7 +1695,8 @@ exports.purgeUnconsented = onSchedule(
       }
     } while (pageToken);
 
-    console.log(`[purge] 훑음 ${scanned} · 삭제 ${deleted} · 유지 ${kept} · 건너뜀 ${skipped}`);
+    console.log(`[purge] 훑음 ${scanned} · 삭제 ${deleted} · 유지 ${kept} ` +
+                `(그중 제도 시행 전 계정 ${oldAccount}) · 건너뜀 ${skipped}`);
     if (capped) {
       console.warn(`[purge] ⚠️ 한 번 상한(${MAX_DELETE})에 걸렸다. 하루 대상이 이렇게 많은 것은 ` +
                    `정상이 아니다 — 조건이 틀렸는지 사람이 확인할 것.`);
