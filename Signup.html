@@ -456,7 +456,7 @@ KOSi18n.register({
   <link rel="icon" type="image/png" sizes="512x512" href="assets/favicon.png?v=k2">
 <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon.png?v=k2">
 <link rel="apple-touch-icon" sizes="180x180" href="assets/apple-touch-icon.png?v=k2">
-  <script src="analytics.js"></script>
+  <script src="analytics.js?v=71f5ad0a"></script>
 <script>
 /* i18n: title·aria-label 속성 번역(영어 모드). 동적(data-i18n-skip) 영역은 각 페이지 템플릿의 T()가 담당 */
 (function(){
@@ -687,7 +687,7 @@ async function showAlreadyRegistered(email){
   errBox.textContent = '';
 
   try{
-    const { signinMethod, renderHint } = await import('./auth-hint.js');
+    const { signinMethod, renderHint } = await import('./auth-hint.js?v=67fc3431');
     const m = await signinMethod(email);
     if(m && m !== 'email' && renderHint(errBox, m)) return;
   }catch(_){ /* 안내는 부가 기능 */ }
@@ -740,7 +740,7 @@ $('#emailForm').addEventListener('submit', async e => {
      여기서 먼저 물어보면 계정이 만들어지지 않는다. 서버가 모르면(null)
      그냥 진행한다 — 안내를 못 하는 것이 가입을 막을 이유는 아니다. */
   try{
-    const { signinMethod, renderHint } = await import('./auth-hint.js');
+    const { signinMethod, renderHint } = await import('./auth-hint.js?v=67fc3431');
     const m = await signinMethod(email);
     if(m && m !== 'email' && renderHint(errBox, m)){ btn.disabled = false; return; }
   }catch(_){ /* 안내는 부가 기능 */ }
@@ -781,7 +781,7 @@ $('#googleBtn').addEventListener('click', async () => {
     const cred = await signInWithPopup(auth, new GoogleAuthProvider());
     const { getAdditionalUserInfo } = await import('https://www.gstatic.com/firebasejs/10.12.2/firebase-auth.js');
     const isNew = !!(getAdditionalUserInfo(cred) || {}).isNewUser;
-    const { finishGoogleSignup } = await import('./consent.js');
+    const { finishGoogleSignup } = await import('./consent.js?v=de36364d');
     if(!(await finishGoogleSignup(cred, isNew))) return;   // 사용자가 취소
     /* 가입 추적은 Consent.html 이 한다 — 동의를 마쳐야 가입이 성립하고,
        신규면 위에서 이미 그쪽으로 넘어갔다. */
@@ -795,6 +795,6 @@ $('#googleBtn').addEventListener('click', async () => {
 // 서버가 계정을 만들면서 같은 호출 안에 동의를 남긴다. 여기서 담아 보낼 것이 없다.
 wireSocialButtons({ onError: showErr });
 </script>
-<script type="module" src="auth-state.js"></script>
+<script type="module" src="auth-state.js?v=4a447ec3"></script>
 </body>
 </html>
