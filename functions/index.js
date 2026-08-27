@@ -1109,7 +1109,13 @@ exports.purgeUnconsented = onSchedule(
     const db = admin.firestore();
     const GRACE_MS = 24 * 60 * 60 * 1000;
     const cutoff = Date.now() - GRACE_MS;
-    let scanned = 0, deleted = 0, kept = 0, skipped = 0;
+
+    /* 한 번에 지울 수 있는 상한. 이 함수는 되돌릴 수 없는 일을 사람 확인 없이
+       매일 한다 — 조건을 잘못 쓰면 전 회원이 하루아침에 사라진다. 상한에
+       걸리면 남은 것은 다음 날 처리되고, 로그에 그 사실이 남아 사람이
+       알아챌 수 있다. 정상 상황에서 하루 대상은 많아야 몇 건이다. */
+    const MAX_DELETE = 50;
+    let scanned = 0, deleted = 0, kept = 0, skipped = 0, capped = false;
 
     let pageToken;
     do {
@@ -1129,9 +1135,14 @@ exports.purgeUnconsented = onSchedule(
           skipped++;
           continue;
         }
+        /* consents 가 있기만 하면 남긴다. 처음에는 agreedAt 까지 있어야
+           남기게 썼는데, 그러면 기록이 반만 저장된 계정이 삭제 대상이 된다.
+           애매할 때는 지우지 않는 쪽으로 기운다 — 잘못 남긴 계정은 나중에
+           고칠 수 있지만 잘못 지운 계정은 못 돌린다. */
         const c = snap.exists ? (snap.data() || {}).consents : null;
-        if (c && c.agreedAt) { kept++; continue; }
+        if (c) { kept++; continue; }
 
+        if (deleted >= MAX_DELETE) { capped = true; skipped++; continue; }
         try {
           await admin.auth().deleteUser(u.uid);
           if (snap.exists) await snap.ref.delete();
@@ -1145,5 +1156,9 @@ exports.purgeUnconsented = onSchedule(
     } while (pageToken);
 
     console.log(`[purge] 훑음 ${scanned} · 삭제 ${deleted} · 유지 ${kept} · 건너뜀 ${skipped}`);
+    if (capped) {
+      console.warn(`[purge] ⚠️ 한 번 상한(${MAX_DELETE})에 걸렸다. 하루 대상이 이렇게 많은 것은 ` +
+                   `정상이 아니다 — 조건이 틀렸는지 사람이 확인할 것.`);
+    }
   }
 );

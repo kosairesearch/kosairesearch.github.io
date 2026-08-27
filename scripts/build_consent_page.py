@@ -91,7 +91,10 @@ DICT = '''if(window.KOSi18n) KOSi18n.register({
     "If you do not agree, your sign-up is cancelled and no account is kept.",
   "동의 저장에 실패했어요. 잠시 후 다시 시도해 주세요.":
     "Could not save your agreement. Please try again in a moment.",
-  "로그인이 필요합니다.":"Please sign in."
+  "로그인이 필요합니다.":"Please sign in.",
+  "가입이 만료되어 계정이 삭제되었어요. 처음부터 다시 가입해 주세요.":
+    "This sign-up expired and the account was removed. Please sign up again.",
+  "다시 가입하기":"Sign up again"
 });'''
 
 SCRIPT = '''<script type="module">
@@ -152,6 +155,20 @@ document.getElementById('agreeBtn').addEventListener('click', async () => {
     location.replace(NEXT);
   }catch(e){
     btn.disabled = false;
+    /* 동의를 마치지 않은 계정은 24시간 뒤 purgeUnconsented 가 지운다.
+       이 화면을 하룻밤 켜 둔 채 돌아와 누르면 계정이 이미 없을 수 있다.
+       그때 '저장에 실패했어요' 만 뜨면 무슨 일인지 알 수가 없다. */
+    const code = (e && (e.code || '')) + '';
+    if(/not-found|user-not-found|unauthenticated|permission-denied/.test(code)){
+      errBox.textContent = T('가입이 만료되어 계정이 삭제되었어요. 처음부터 다시 가입해 주세요.') + ' ';
+      const a = document.createElement('a');
+      a.href = 'Signup.html'; a.textContent = T('다시 가입하기');
+      a.style.cssText = 'color:var(--brand-blue);font-weight:600;text-decoration:underline';
+      errBox.appendChild(a);
+      errBox.style.display = 'block';
+      btn.disabled = true;
+      return;
+    }
     showErr(T('동의 저장에 실패했어요. 잠시 후 다시 시도해 주세요.'));
   }
 });
