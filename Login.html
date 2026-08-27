@@ -675,6 +675,24 @@ $('#emailForm').addEventListener('submit', async e => {
   const btn = $('#emailSubmit'); btn.disabled = true;
   try{
     const cred = await signInWithEmailAndPassword(auth, email, pw);
+
+    /* 동의를 인증보다 먼저 본다.
+       가입 도중 동의 화면에서 나가 버린 계정으로 다시 로그인하면, 아래
+       인증 게이트가 먼저 걸려 '메일을 인증하라' 고만 하고 로그아웃시켰다.
+       그러면 동의 화면으로 갈 길이 영영 없다 — 로그아웃 상태에서는
+       guardConsent 도 돌지 않는다. 순서가 뒤집혀 있었다.
+
+       가입 순서가 '계정 → 동의 → 메일 인증' 이므로 로그인도 같은 순서로
+       본다. 조회에 실패하면(null) 막지 않고 아래로 넘긴다. */
+    try{
+      const { consentState } = await import("./consent.js");
+      if(await consentState(cred.user.uid) === false){
+        const nx = new URLSearchParams(location.search).get('next') || 'Home.html';
+        location.href = 'Consent.html?next=' + encodeURIComponent(nx);
+        return;
+      }
+    }catch(_){ /* 조회 실패는 로그인을 막을 사유가 아니다 */ }
+
     const pwOnly = cred.user.providerData.length && cred.user.providerData.every(p => p.providerId === 'password');
     if(pwOnly && !cred.user.emailVerified){
       unverifiedUser = cred.user;

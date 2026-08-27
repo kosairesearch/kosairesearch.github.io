@@ -296,10 +296,40 @@ def build():
     return True, f"{OUT.name} 생성 ({len(out.splitlines())}줄)"
 
 
+def check_guard_skips():
+    """동의 화면이 여는 문서가 guardConsent 의 제외 목록에 있는지 본다.
+
+    빠뜨리면 그 문서를 새 탭으로 열자마자 동의 화면으로 되튕긴다. 사용자
+    눈에는 '약관 보기 링크가 안 눌린다' 로 보인다 — 동의하라고 보여 주는
+    문서를 정작 못 읽게 막는 셈이라, 실제로 한 번 그렇게 나갔다.
+
+    조용히 돌아올 수 있는 종류라 여기서 막는다. 이 생성기는 동의 화면을
+    고칠 때마다 도니, 링크를 새로 추가하면 그 자리에서 걸린다.
+    """
+    guard = (ROOT / "auth-state.js").read_text(encoding="utf-8")
+    m = re.search(r"const CONSENT_SKIP = /\^\((.*?)\)\\\.html", guard)
+    if not m:
+        return ["auth-state.js 에서 CONSENT_SKIP 을 찾지 못함"]
+    skip = set(m.group(1).split("|"))
+    page = OUT.read_text(encoding="utf-8")
+    # 동의 카드 안에서 여는 링크만 본다(헤더·푸터의 일반 링크는 대상이 아니다).
+    card = page[page.find('class="auth-card'):page.find("</main>")]
+    linked = set(re.findall(r'href="([A-Za-z0-9_-]+)\.html"', card))
+    return [f"{x}.html 이 CONSENT_SKIP 에 없다 — 새 탭이 동의 화면으로 되튕긴다"
+            for x in sorted(linked) if x not in skip]
+
+
 def main():
     ok, note = build()
     print(f"  {'✅' if ok else '❌'} {note}")
-    return 0 if ok else 1
+    if not ok:
+        return 1
+    problems = check_guard_skips()
+    for x in problems:
+        print(f"  ❌ {x}")
+    if not problems:
+        print("  ✅ 동의 화면이 여는 문서가 모두 guardConsent 제외 목록에 있다")
+    return 1 if problems else 0
 
 
 if __name__ == "__main__":
