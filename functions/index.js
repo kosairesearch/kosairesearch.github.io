@@ -1078,6 +1078,14 @@ exports.adminUserList = onCall({ region: REGION, cors: true }, async (req) => {
       providerLabel: providerLabel(u.signupMethod),
       createdAt: tsIso(u.createdAt),
       agreedAt: tsIso(c.agreedAt),
+      /* 항목별로 내보낸다. 요약 한 칸만 있으면 분쟁이 생겼을 때 "이 사람이
+         개인정보 수집·이용에 동의했다" 를 그 파일만으로는 못 보여 준다.
+         내보낸 파일이 곧 제출할 자료다. */
+      version: c.version || null,
+      method: c.method || null,
+      age14: !!c.age14,
+      terms: !!c.terms,
+      privacy: !!c.privacy,
       marketing: !!c.marketing,
       marketingAt: tsIso(u.marketingAt),
       live: null,          // Auth 에 계정이 실제로 있는가
