@@ -116,21 +116,14 @@ export function wireSocialButtons(opts = {}){
   const code = params.get("code");
   const returnedState = params.get("state");
 
-  // 1) OAuth 복귀 처리
-  if(code){
-    let saved = null;
-    try{ saved = JSON.parse(sessionStorage.getItem("kos_social") || "null"); }catch(e){}
-    sessionStorage.removeItem("kos_social");
-    if(saved && saved.nonce === returnedState){
-      completeLogin(code, returnedState, saved, onError);
-    }else{
-      history.replaceState({}, "", location.pathname);
-      onError && onError(T("로그인 요청이 만료되었어요. 다시 시도해 주세요."));
-    }
-    return;
-  }
+  /* 1) 버튼부터 연결한다.
 
-  // 2) 버튼 연결
+     전에는 OAuth 복귀 처리를 먼저 하고 return 으로 끝냈다. 그래서 제공자
+     화면에서 돌아와 실패한 순간 세 버튼이 전부 죽었다 — 오류 문구는
+     떠 있는데 아무 버튼도 안 눌리고, 새로고침해야만 살아났다.
+
+     실패했을 때야말로 다른 방법을 눌러 봐야 하는 순간이다. 그 자리에서
+     버튼을 죽이면 사용자는 화면이 고장 난 줄 안다. 연결을 먼저 한다. */
   for(const [id, provider] of [["kakaoBtn", "kakao"], ["naverBtn", "naver"]]){
     const b = document.getElementById(id);
     if(!b) continue;
@@ -142,5 +135,20 @@ export function wireSocialButtons(opts = {}){
       }
       redirectToProvider(provider, params.get("next") || "");
     });
+  }
+
+  // 2) OAuth 복귀 처리
+  if(code){
+    let saved = null;
+    try{ saved = JSON.parse(sessionStorage.getItem("kos_social") || "null"); }catch(e){}
+    sessionStorage.removeItem("kos_social");
+    /* 주소에서 code 를 지운다. 남겨 두면 새로고침할 때 같은 코드로 다시
+       시도하게 되는데, 인가 코드는 한 번만 쓸 수 있어 늘 실패한다. */
+    history.replaceState({}, "", location.pathname);
+    if(saved && saved.nonce === returnedState){
+      completeLogin(code, returnedState, saved, onError);
+    }else{
+      onError && onError(T("로그인 요청이 만료되었어요. 다시 시도해 주세요."));
+    }
   }
 }
