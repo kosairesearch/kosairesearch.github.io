@@ -30,39 +30,38 @@ function ready(provider){
   return false;
 }
 
-function redirectToProvider(provider, next, reprompt){
+/* 제공자로 보낸다. 카카오도 네이버도 한 번만 거친다.
+
+   ■ 없어진 것 — 네이버 auth_type=reprompt 왕복
+
+   한동안 네이버에는 왕복이 하나 있었다. 처음에는 그냥 보내고, 서버가
+   '계정을 만들어야 하는데 동의를 못 받았다'(needsConsent) 고 하면
+   auth_type=reprompt 를 붙여 한 번 더 보냈다. 그래야 동의 화면이 떴다.
+
+   왜 그랬나. 탈퇴해도 네이버 쪽 연결이 남아서, 다시 가입할 때 네이버가
+   동의를 묻지 않고 곧장 통과시켰기 때문이다. 무엇에 동의하는지 못 본 채
+   계정이 만들어지는 것을 막으려고 억지로 화면을 띄웠다.
+
+   왜 없앴나. 뿌리를 고쳤다. 이제 탈퇴할 때 서버가 네이버 연결을 끊는다
+   (naverUnlink). 연결이 없으면 다음 로그인은 첫 연결이므로 네이버가 알아서
+   동의 화면을 띄운다 — 카카오와 똑같아졌다.
+
+   왕복을 남겨 두면 그 화면을 두 번 보게 된다. 실제로 그랬다. 끊긴 연결이라
+   1차에서 이미 동의 화면이 뜨는데, 서버가 '아직 동의 기록이 없다' 며
+   needsConsent 를 돌려주니 2차에서 또 띄웠다. 뿌리를 고치고도 땜질을
+   남겨 두면 그 땜질이 새 증상이 된다.
+
+   연결 끊기가 실패한 계정은 동의 화면이 안 뜰 수 있다. 그때는 서버가
+   제공자 동의 시각을 탈퇴 시각과 견주어 걸러 내고(staleConsent) 우리 동의
+   화면으로 보낸다. 막다른 길이 아니라 물러설 자리가 있다. */
+function redirectToProvider(provider, next){
   const redirectUri = location.origin + location.pathname; // 예: https://.../Login.html
   const nonce = Math.random().toString(36).slice(2) + Date.now().toString(36);
   sessionStorage.setItem("kos_social",
-    JSON.stringify({ provider, next, nonce, redirectUri, reprompt: !!reprompt }));
+    JSON.stringify({ provider, next, nonce, redirectUri }));
   const clientId = provider === "kakao" ? SOCIAL.kakaoRestKey : SOCIAL.naverClientId;
-  let url = `${AUTHORIZE[provider]}?response_type=code&client_id=${encodeURIComponent(clientId)}`
+  const url = `${AUTHORIZE[provider]}?response_type=code&client_id=${encodeURIComponent(clientId)}`
     + `&redirect_uri=${encodeURIComponent(redirectUri)}&state=${nonce}`;
-
-  /* 네이버 동의 화면은 필요할 때만 띄운다.
-
-     한 번 연결하면 네이버는 그 뒤로 동의 화면을 건너뛴다. 탈퇴하고 다시
-     가입해도 마찬가지라, 무엇에 동의하는지 못 본 채 계정이 만들어진다.
-     카카오는 탈퇴할 때 서버가 연결을 끊어 해결했는데(어드민 키), 네이버에는
-     그런 창구가 없다 — 대신 authorize 에 auth_type=reprompt 를 붙이면
-     그 자리에서 동의 화면이 다시 뜬다.
-
-     처음에는 가입 화면에서 누를 때만 붙였다가, 로그인 화면에서 재가입하면
-     안 뜨길래 늘 붙이게 바꿨다. 그랬더니 이번에는 그냥 로그인하는 사람에게
-     매번 동의 화면이 떴다. 둘 다 틀렸다 — 화면이 어디냐로는 알 수 없는
-     것을 화면으로 판단하려 했다.
-
-     알아야 하는 것은 '계정을 새로 만드는가' 다. 그건 서버만 안다. 그래서
-     처음에는 붙이지 않고 보낸다. 서버가 계정을 만들어야 하는데 동의를 못
-     받았다고 하면(needsConsent) 그때 이 값을 붙여 한 번 더 보낸다.
-
-       돌아오는 사용자   화면 한 번. 동의 화면 없음
-       처음 가입·재가입  네이버를 두 번 거친다. 두 번째에 동의 화면
-
-     네이버 쪽 동의 내역을 읽게 되면(검수 승인 뒤) 이 왕복이 사라진다. */
-  if(provider === "naver" && reprompt){
-    url += "&auth_type=reprompt";
-  }
   location.href = url;
 }
 
@@ -74,11 +73,7 @@ async function completeLogin(code, returnedState, saved, onError){
       provider: saved.provider,
       code,
       redirectUri: saved.redirectUri,
-      state: returnedState,
-      /* 이 인가가 동의 화면을 거쳐 왔는지. 서버는 이 값이 참일 때만 네이버
-         동의를 기록한다 — 거짓이면 계정을 만들지 않고 needsConsent 를
-         돌려준다. */
-      reprompt: saved.reprompt === true
+      state: returnedState
     };
 
     /* 우리 동의 화면을 띄우지 않는다.
@@ -91,12 +86,6 @@ async function completeLogin(code, returnedState, saved, onError){
        만들지 않는다. */
     const { data } = await call(payload);
 
-    /* 계정을 만들어야 하는데 동의 화면을 거치지 않았다. 동의 화면을 띄우도록
-       한 번 더 보낸다. 이번에는 auth_type=reprompt 가 붙는다. */
-    if(data && data.needsConsent){
-      redirectToProvider(saved.provider, saved.next || "", true);
-      return;
-    }
     if(!data || !data.token) throw new Error("가입을 마치지 못했습니다.");
 
     await signInWithCustomToken(auth, data.token);
