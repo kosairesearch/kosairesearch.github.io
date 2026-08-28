@@ -66,6 +66,13 @@ MAIN = '''<main>
       </section>
 
       <section class="adm-card card glass">
+        <h2>모닝 브리핑 기상 시험</h2>
+        <p class="adm-note">브리핑을 깨우는 장치가 살아 있는지 확인합니다. 눌러도 브리핑이 발행되지는 않습니다 — 워크플로 실행이 만들어지는 데까지만 봅니다. 장중에는 실행이 정지 조건에 걸려 멈추는 것이 정상입니다.</p>
+        <button type="button" class="btn btn-primary" id="wakeBtn">깨워 보기</button>
+        <span class="adm-note" id="wakeNote"></span>
+      </section>
+
+      <section class="adm-card card glass">
         <h2>마케팅 수신 동의자</h2>
         <p class="adm-note">발송 전에 여기서 뽑습니다. 내려받은 파일에는 개인정보가 들어 있으니 다루는 데 주의해 주세요.</p>
         <button type="button" class="btn btn-primary" id="csvBtn">목록 내려받기 (CSV)</button>
@@ -179,6 +186,14 @@ DICT = '''if(window.KOSi18n) KOSi18n.register({
   "동의 없는 계정을 세지 못했습니다. 숫자가 0이라는 뜻이 아닙니다.":
     "Could not count accounts without consent — the number is not zero, it is unknown.",
   "동의서 판":"Consent version",
+  "모닝 브리핑 기상 시험":"Morning brief wake-up test",
+  "브리핑을 깨우는 장치가 살아 있는지 확인합니다. 눌러도 브리핑이 발행되지는 않습니다 — 워크플로 실행이 만들어지는 데까지만 봅니다. 장중에는 실행이 정지 조건에 걸려 멈추는 것이 정상입니다.":
+    "Checks that the wake-up path is alive. Pressing it does not publish a brief — it only confirms a workflow run is created. During market hours the run stopping at the data guard is expected.",
+  "깨워 보기":"Send wake-up",
+  "깨웠습니다. GitHub Actions 에 새 실행이 떴는지 확인해 주세요.":
+    "Sent. Check GitHub Actions for a new run.",
+  "깨우지 못했습니다. 토큰이 등록되지 않았거나 권한이 부족합니다.":
+    "Could not send — the token is missing or lacks permission.",
   "카카오 약관":"Kakao terms",
   "안내 메일 대상 확인":"Preview notice recipients",
   "에게 안내 메일이 갑니다.":" will receive the notice email.",
@@ -588,6 +603,22 @@ function drawNoticePlan(box, r){
   box.appendChild(w);
   relabel();
 }
+
+/* 브리핑 기상 시험. 결과는 GitHub 의 실행 목록에서 확인한다. */
+$('#wakeBtn').addEventListener('click', async () => {
+  const note = $('#wakeNote');
+  $('#wakeBtn').disabled = true;
+  note.textContent = ' ' + T('확인하는 중…');
+  try{
+    const r = await call('adminWakeBrief');
+    note.textContent = ' ' + T(r && r.ok
+      ? '깨웠습니다. GitHub Actions 에 새 실행이 떴는지 확인해 주세요.'
+      : '깨우지 못했습니다. 토큰이 등록되지 않았거나 권한이 부족합니다.');
+  }catch(e){
+    note.textContent = ' ' + ((e && e.message) || T('불러오지 못했습니다.'));
+  }
+  $('#wakeBtn').disabled = false;
+});
 
 $('#filter').addEventListener('input', drawUsers);
 
