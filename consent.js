@@ -275,6 +275,16 @@ function callFn(name, payload) {
   return httpsCallable(getFunctions(app, FN_REGION), name)(payload || {});
 }
 
+/* 서버에 탈퇴를 맡긴다. users 문서·워치리스트·열람 기록·동의 이력을 지우고
+   카카오 연결까지 끊은 뒤 Auth 사용자를 지운다.
+
+   클라이언트가 deleteUser 만 부르면 Auth 사용자만 사라지고 우리 문서는
+   남는다 — 규칙으로 users 쓰기를 닫아 두었으니 지울 방법도 없다. */
+export async function deleteMyAccount() {
+  const r = await callFn("deleteAccount", {});
+  return (r && r.data) || {};
+}
+
 export async function saveConsent(uid, values, method, email) {
   /* 서버가 돌려주는 것을 그대로 넘긴다 — { first, reconsent }.
      부르는 쪽이 '가입을 마친 것' 과 '개정 때문에 다시 받은 것' 을

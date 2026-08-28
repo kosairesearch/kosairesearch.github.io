@@ -149,7 +149,7 @@ SCRIPT = '''<script type="module">
 import { auth } from "./firebase-config.js";
 import { onAuthStateChanged, deleteUser, signOut }
   from "https://www.gstatic.com/firebasejs/10.12.2/firebase-auth.js";
-import { renderConsent, saveConsent, consentStage } from "./consent.js";
+import { renderConsent, saveConsent, consentStage, deleteMyAccount } from "./consent.js";
 import { sendVerifyEmail } from "./auth-emails.js";
 
 const T = m => (window.KOSi18n ? window.KOSi18n.t(m) : m);
@@ -392,10 +392,27 @@ document.getElementById('cancelBtn').addEventListener('click', async () => {
   }
 
   /* 가입을 마치지 않은 계정은 지운다. 로그아웃만 하면 동의하지 않은
-     계정이 그대로 남는다. 지우기에 실패하면(재인증 요구 등) 로그아웃이라도
-     한다 — 남은 계정은 다음 로그인 때 이 페이지를 다시 만난다. */
-  try{ await deleteUser(auth.currentUser); }
-  catch(e){ try{ await signOut(auth); }catch(_){} }
+     계정이 그대로 남는다.
+
+     서버에 맡긴다. 전에는 여기서 deleteUser 만 불렀는데, 그러면 Auth
+     사용자만 사라지고 users 문서가 남는다 — 클라이언트는 그 문서를 지울
+     권한이 없다(규칙으로 닫아 두었다). 그렇게 남은 유령 문서는 관리자
+     화면에 '계정 없음' 인 회원으로 보이고, 그 이메일로 다시 가입할 때
+     중복 검사에 걸려 멀쩡한 가입을 막은 적도 있다.
+
+     deleteAccount 는 users 문서·워치리스트·열람 기록·동의 이력을 지우고
+     카카오 연결까지 끊은 뒤 Auth 사용자를 지운다. 설정 화면의 탈퇴가
+     쓰는 것과 같은 길이다.
+
+     서버가 실패하면 그때는 브라우저에서라도 Auth 사용자를 지운다. 남은
+     문서는 purgeUnconsented 가 다음 날 치운다. */
+  try{
+    await deleteMyAccount();
+  }catch(e){
+    console.warn('[consent] 서버 탈퇴 실패, 계정만 지운다:', e && e.message);
+    try{ await deleteUser(auth.currentUser); }
+    catch(_){ try{ await signOut(auth); }catch(__){} }
+  }
   location.replace('Home.html');
 });
 </script>'''
