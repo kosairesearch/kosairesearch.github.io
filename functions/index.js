@@ -526,6 +526,30 @@ exports.socialLogin = onCall(
     /* 카카오싱크가 대신 받아 준 동의 내역. 못 읽었으면 null 이고, 그때는
        아래에서 기존 기록을 건드리지 않는다. */
     const kt = provider === "kakao" ? mapKakaoTerms(p.terms) : null;
+
+    /* 네이버는 동의 내역을 API 로 주지 않는다. 실제 응답이 이랬다.
+
+         {"nickname": …, "id": …, "email": …}
+
+       약관 관련 칸이 하나도 없다. 카카오의 service_terms 같은 창구가 없다.
+
+       그래서 '인가가 성립했다' 를 동의의 근거로 삼는다. 근거가 서는 이유는
+       social-login.js 가 네이버 authorize 에 auth_type=reprompt 를 늘 붙이기
+       때문이다 — 그 값이 있으면 네이버가 동의 화면을 반드시 다시 띄운다.
+       여기 도달했다는 것은 방금 그 화면을 보고 눌렀다는 뜻이다.
+
+       ⚠️ 이 근거는 reprompt 와 한 몸이다. social-login.js 에서 그 줄을 빼면
+          여기도 같이 손봐야 한다. 빼는 순간 '동의 화면을 봤다' 가 성립하지
+          않는다.
+
+       ⚠️ 필수 세 항목을 true 로 적는 것은, 네이버 개발자센터에 우리 이용약관·
+          개인정보 수집·이용·만 14세가 '필수' 동의항목으로 등록돼 있다는 전제
+          위에 선다. 등록을 내리면 이 기록이 거짓이 된다.
+
+       마케팅은 다르다. 선택 항목이라 사람마다 다른데 네이버가 알려 주지
+       않는다. 모르는 것을 true 로 적으면 동의하지 않은 사람에게 광고를 보내게
+       된다. false 로 두고 설정 화면에서 본인이 켜게 한다. */
+    const naverConsent = provider === "naver";
     /* 기존 회원의 기록. 마케팅을 맞춰 줄지 판단하는 데 쓴다. */
     let snapBefore = null;
     if(exists){
@@ -568,8 +592,14 @@ exports.socialLogin = onCall(
         console.warn("[social] 탈퇴 이력 조회 실패", uid, e && e.message);
         withdrawnAt = -1;                       // 모르면 아래에서 다시 묻는다
       }
-      staleConsent = isStaleProviderConsent(
-        withdrawnAt, kt && kt.agreedAt ? kt.agreedAt.getTime() : 0);
+      /* 제공자가 '언제 동의했는지' 를 알려 준 시각.
+         카카오는 service_terms 가 준다. 네이버는 안 주지만 reprompt 로 방금
+         받았음이 보장되므로 지금으로 본다. */
+      const providerConsentAt =
+        kt && kt.agreedAt ? kt.agreedAt.getTime()
+        : naverConsent ? Date.now()
+        : 0;
+      staleConsent = isStaleProviderConsent(withdrawnAt, providerConsentAt);
       if(staleConsent){
         console.log(`[social] 재가입 ${uid} — 제공자 동의가 탈퇴 이전이라 다시 받는다`);
       }
@@ -595,6 +625,12 @@ exports.socialLogin = onCall(
           marketing: kt.marketing,
           kakaoTerms: kt.raw,           // 받은 그대로. 매핑이 틀려도 자료는 남는다
           agreedAt: kt.agreedAt || now  // 사용자가 실제로 누른 시각
+        } : naverConsent ? {
+          version: CONSENT_VERSION,
+          method: "naver-consent",      // 네이버 동의 화면에서 받은 동의
+          age14: true, terms: true, privacy: true,
+          marketing: false,             // 네이버가 알려 주지 않는다. 설정에서 켠다
+          agreedAt: now
         } : {
           version: CONSENT_VERSION,
           method: "signup-notice",

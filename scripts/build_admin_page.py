@@ -214,6 +214,8 @@ DICT = '''if(window.KOSi18n) KOSi18n.register({
   "(현재 판)":"(current)",
   "체크박스":"Checkbox",
   "가입 버튼 아래 고지 문구":"Notice under the sign-up button",
+  "카카오 동의 화면":"Kakao consent screen",
+  "네이버 동의 화면":"Naver consent screen",
   "완료":"Verified",
   "정보통신망법 시행령 제62조의3 — 광고성 정보 수신동의는 동의일부터 2년마다 유지 여부를 확인해야 합니다. 안내할 때 전송자 명칭·수신동의 날짜·철회 방법을 함께 알려야 합니다.":
     "Network Act Enforcement Decree art. 62-3 — marketing consent must be re-confirmed every two years from the date it was given, and the notice must state the sender's name, the consent date, and how to withdraw.",
@@ -273,6 +275,8 @@ function when(iso){ return kst(iso) || '—'; }
 function methodLabel(m){
   if(m === 'checkbox') return T('체크박스');
   if(m === 'signup-notice') return T('가입 버튼 아래 고지 문구');
+  if(m === 'kakao-sync') return T('카카오 동의 화면');
+  if(m === 'naver-consent') return T('네이버 동의 화면');
   return m || '';
 }
 
