@@ -35,8 +35,22 @@ function redirectToProvider(provider, next){
   const nonce = Math.random().toString(36).slice(2) + Date.now().toString(36);
   sessionStorage.setItem("kos_social", JSON.stringify({ provider, next, nonce, redirectUri }));
   const clientId = provider === "kakao" ? SOCIAL.kakaoRestKey : SOCIAL.naverClientId;
-  const url = `${AUTHORIZE[provider]}?response_type=code&client_id=${encodeURIComponent(clientId)}`
+  let url = `${AUTHORIZE[provider]}?response_type=code&client_id=${encodeURIComponent(clientId)}`
     + `&redirect_uri=${encodeURIComponent(redirectUri)}&state=${nonce}`;
+
+  /* 가입 화면에서 누른 네이버는 동의 화면을 다시 띄운다.
+
+     한 번 연결하면 네이버는 그 뒤로 동의 화면을 건너뛴다. 탈퇴하고 다시
+     가입해도 마찬가지라, 무엇에 동의하는지 못 본 채 계정이 만들어진다.
+     카카오는 탈퇴할 때 서버가 연결을 끊어 해결했는데(어드민 키), 네이버에는
+     그런 창구가 없다 — 대신 authorize 에 auth_type=reprompt 를 붙이면
+     그 자리에서 동의 화면이 다시 뜬다.
+
+     로그인 화면에서는 붙이지 않는다. 매번 동의를 다시 묻는 꼴이 된다.
+     가입은 처음 한 번이니 거기서만 묻는다. */
+  if(provider === "naver" && /Signup\.html$/i.test(location.pathname)){
+    url += "&auth_type=reprompt";
+  }
   location.href = url;
 }
 
