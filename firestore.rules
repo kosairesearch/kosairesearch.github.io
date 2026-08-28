@@ -45,5 +45,17 @@ service cloud.firestore {
       allow read, write: if false;
     }
 
+    // 제공자 갱신 토큰 — 탈퇴할 때 네이버 연결을 끊는 데만 쓴다.
+    //
+    // 아무에게도 열지 않는다. 본인에게도 열지 않는다. users 문서는 설정
+    // 화면이 마케팅 수신 여부를 읽어야 해서 본인 읽기를 열어 두었는데,
+    // 자격증명을 거기 두면 브라우저 콘솔로 그대로 새어 나간다. 그래서
+    // 자리를 따로 뒀다.
+    //
+    // 쓰기는 socialLogin, 읽기와 삭제는 deleteAccount 가 Admin SDK 로 한다.
+    match /providerTokens/{uid} {
+      allow read, write: if false;
+    }
+
   }
 }

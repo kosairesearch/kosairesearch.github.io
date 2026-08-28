@@ -401,6 +401,79 @@ function isStaleProviderConsent(withdrawnAt, agreedAt){
    실패해도 탈퇴는 계속한다. 카카오 쪽이 안 끊겼다고 우리 쪽 탈퇴를 막으면
    사용자는 계정을 못 지운다 — 그게 더 나쁘다. 대신 실패를 기록에 남기고,
    그 사람이 다시 가입하면 isStaleProviderConsent 가 옛 동의를 걸러 낸다. */
+/* ── 네이버 연결 끊기 ────────────────────────────────────────────
+   카카오에는 탈퇴할 때 unlink 를 걸어 두고 네이버에는 걸지 않았다. 그
+   하나가 오늘 겪은 네이버 문제 대부분의 뿌리다.
+
+   연결이 남아 있으면 네이버는 그 사람의 동의 기록을 계속 들고 있다.
+   그래서 다시 가입할 때
+
+     · 동의 화면이 안 뜨거나(그래서 auth_type=reprompt 를 붙였고)
+     · agreeDate 가 처음 동의한 날 그대로 오고(그래서 시각 판정이 어긋났고)
+     · 마케팅을 껐는데 예전에 켠 기록이 그대로 실려 왔다
+
+   전부 '연결이 안 끊긴다' 는 한 가지에서 나왔다. 증상마다 따로 막다가
+   서로 부딪혀 더 큰 문제를 만들었다. 끊는 것이 뿌리를 없애는 길이다.
+
+   카카오와 다른 점은 어드민 키가 없다는 것이다. 네이버는 그 사람의 접근
+   토큰이 있어야 끊어 준다.
+
+     GET https://nid.naver.com/oauth2.0/token
+         ?grant_type=delete&client_id=…&client_secret=…
+         &access_token=…&service_provider=NAVER
+
+   접근 토큰은 한 시간이면 만료되므로 로그인할 때 갱신 토큰을 받아 두었다가
+   탈퇴하는 순간 새 접근 토큰으로 바꿔서 쓴다. 갱신 토큰은 서버만 읽는
+   자리(providerTokens)에 둔다 — users 문서는 본인이 읽을 수 있어서 거기에
+   두면 브라우저로 새어 나간다.
+
+   실패해도 탈퇴는 계속한다. 네이버 쪽이 안 끊겼다고 우리 쪽 탈퇴를 막으면
+   사용자는 계정을 못 지운다 — 그게 더 나쁘다. 대신 결과를 기록에 남기고,
+   못 끊은 사람은 아래 마케팅 문턱이 계속 지켜 준다. */
+async function naverUnlink(uid){
+  const db = admin.firestore();
+  const ref = db.doc(`providerTokens/${uid}`);
+  let refreshToken = "";
+  try{
+    refreshToken = ((await ref.get()).data() || {}).refreshToken || "";
+  }catch(e){
+    console.warn("[naver] 갱신 토큰 조회 실패", uid, e && e.message);
+  }
+  if(!refreshToken){
+    console.warn("[naver] 갱신 토큰이 없어 연결 끊기를 건너뛴다:", uid);
+    return false;
+  }
+
+  const id = (NAVER_CLIENT_ID.value() || "").trim();
+  const secret = (NAVER_CLIENT_SECRET.value() || "").trim();
+  let ok = false;
+  try{
+    /* 접근 토큰을 새로 받는다. 로그인 때 받은 것은 이미 만료됐다. */
+    const r = await asJson(await fetch("https://nid.naver.com/oauth2.0/token?" +
+      new URLSearchParams({
+        grant_type: "refresh_token",
+        client_id: id, client_secret: secret, refresh_token: refreshToken
+      })), "naver_refresh");
+    const at = r.access_token;
+    if(!at) throw new Error("no_access_token");
+
+    const d = await asJson(await fetch("https://nid.naver.com/oauth2.0/token?" +
+      new URLSearchParams({
+        grant_type: "delete",
+        client_id: id, client_secret: secret,
+        access_token: at, service_provider: "NAVER"
+      })), "naver_delete");
+    ok = d.result === "success";
+    console.log("[naver] 연결 끊기", uid, JSON.stringify(d).slice(0, 200));
+  }catch(e){
+    console.warn("[naver] 연결 끊기 실패", uid, e && e.message);
+  }
+  /* 성공이든 실패든 토큰은 들고 있지 않는다. 탈퇴한 사람의 자격증명을
+     남겨 둘 이유가 없다. */
+  try{ await ref.delete(); }catch(e){}
+  return ok;
+}
+
 async function kakaoUnlink(uid){
   const key = (KAKAO_ADMIN_KEY.value() || "").trim();
   if(!key || key === SECRET_UNSET){
@@ -513,7 +586,10 @@ async function naverProfile(code, redirectUri, state){
     raw,
     /* 약관 동의 내역은 프로필과 다른 창구에서 온다. 카카오와 같은 자리에
        담아 아래 처리를 하나로 쓴다. */
-    terms: await naverAgreements(tok.access_token)
+    terms: await naverAgreements(tok.access_token),
+    /* 탈퇴할 때 연결을 끊는 데 쓴다. 그때는 접근 토큰이 이미 만료돼 있으므로
+       갱신 토큰을 들고 있어야 한다. naverUnlink 참고. */
+    refreshToken: tok.refresh_token || null
   };
 }
 
@@ -1013,6 +1089,27 @@ exports.socialLogin = onCall(
       // 새 가입인데 기록을 못 남겼으면 계정도 남기지 않는다. 반쪽짜리 가입을 두지 않는다.
       if(!exists){ try{ await admin.auth().deleteUser(uid); }catch(_){} }
       throw new HttpsError("internal", `user_doc_save_failed: ${e.code || e.message}`);
+    }
+
+    /* 갱신 토큰은 따로 둔다 — 탈퇴할 때 네이버 연결을 끊는 데만 쓴다.
+
+       users 문서에 두지 않는 이유는 그 문서를 본인이 읽을 수 있기 때문이다
+       (설정 화면이 마케팅 수신 여부를 읽어야 해서 열어 두었다). 자격증명을
+       거기 두면 브라우저로 새어 나간다. providerTokens 는 규칙으로 읽기·
+       쓰기를 다 막아 두어 서버만 닿는다.
+
+       실패해도 로그인을 막지 않는다. 못 저장하면 탈퇴할 때 연결을 못 끊을
+       뿐이고, 그때는 마케팅 문턱이 대신 지켜 준다. */
+    if(provider === "naver" && p.refreshToken){
+      try{
+        await db.doc(`providerTokens/${uid}`).set({
+          provider: "naver",
+          refreshToken: p.refreshToken,
+          updatedAt: now
+        }, { merge: true });
+      }catch(e){
+        console.warn("[naver] 갱신 토큰 저장 실패", uid, e && e.message);
+      }
     }
 
     /* 이력. 가입은 가입대로, 나중에 맞춘 것은 맞춘 대로 남긴다.
@@ -1579,7 +1676,10 @@ exports.setMarketingConsent = onCall({ region: REGION, cors: true }, async (req)
 });
 
 exports.deleteAccount = onCall(
-  { region: REGION, cors: true, secrets: [KAKAO_ADMIN_KEY] },
+  /* 네이버 연결을 끊으려면 앱 키가 있어야 한다 — 카카오는 어드민 키 하나로
+     되지만 네이버는 client_id·client_secret 으로 토큰을 갱신해야 한다. */
+  { region: REGION, cors: true,
+    secrets: [KAKAO_ADMIN_KEY, NAVER_CLIENT_ID, NAVER_CLIENT_SECRET] },
   async (req) => {
   const uid = req.auth && req.auth.uid;
   if (!uid) throw new HttpsError("unauthenticated", "로그인이 필요합니다.");
@@ -1647,9 +1747,11 @@ exports.deleteAccount = onCall(
   let unlinked = null;
   if (String(uid).startsWith("kakao:")) {
     unlinked = await kakaoUnlink(uid);
+  } else if (String(uid).startsWith("naver:")) {
+    unlinked = await naverUnlink(uid);
   }
   await logConsent(db, uid, "withdraw",
-    unlinked === null ? {} : { kakaoUnlinked: unlinked }, req);
+    unlinked === null ? {} : { providerUnlinked: unlinked }, req);
 
   await admin.auth().deleteUser(uid);
   return { ok: true, hadSubscription: !!(sub && sub.plan), refunded };
