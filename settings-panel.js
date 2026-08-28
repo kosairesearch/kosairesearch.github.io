@@ -224,8 +224,11 @@ export function renderSettings(box, opts = {}) {
      오는지 알 방법이 없었다. */
   const acc = section("계정");
   const dl = el("dl", "ks-kv");
-  const nameDd = el("dd", null, "—");
-  const mailDd = el("dd", null, "—");
+  /* Auth 에 있는 값을 먼저 그린다. 아래 accountInfo 는 users 문서까지
+     보고 더 나은 값이 있으면 갈아 끼운다 — 그걸 기다리느라 빈 화면을
+     보여 줄 이유가 없다. */
+  const nameDd = el("dd", null, user.displayName || "—");
+  const mailDd = el("dd", null, user.email || "—");
   dl.appendChild(el("dt", null, T("닉네임"))); dl.appendChild(nameDd);
   dl.appendChild(el("dt", null, T("이메일"))); dl.appendChild(mailDd);
   acc.appendChild(dl);
