@@ -358,15 +358,52 @@ function renderMobileAuth(user){
 const CONSENT_SKIP = /^(Consent|Login|Signup|auth-action|Terms|Privacy)\.html$/i;
 let consentChecked = false;
 
+/* 같은 탭에서 동의 화면으로 몇 번이나 보냈는지.
+
+   ⚠️ 이 자리에서 무한 루프가 났다. 동의를 눌러 기록이 저장돼도 다른
+      곳에서 그 기록이 다시 반쪽이 되면, 여기가 또 동의 화면으로 보낸다.
+      사용자는 동의 → 화면 → 동의 → 화면 을 끝없이 반복하게 되고 사이트를
+      아예 쓸 수 없다.
+
+      그 원인(제공자 약관 맞추기가 반쪽 기록을 쓰던 것)은 따로 고쳤다.
+      다만 원인을 하나 고쳤다고 이 자리를 그대로 두면, 다음에 또 어딘가가
+      기록을 흐트러뜨렸을 때 같은 덫이 된다. 못 나가는 것보다는 못 물어보는
+      편이 낫다 — 동의는 다음 접속에 다시 물어볼 수 있지만, 갇힌 사람은
+      아무것도 할 수 없다.
+
+   한 탭에서 한 번만 보낸다. 두 번째부터는 보내지 않고 콘솔에만 남긴다. */
+const CONSENT_BOUNCE = "kos_consent_bounce";
+
 async function guardConsent(user){
   if(consentChecked || !user || CONSENT_SKIP.test(here())) return;
   consentChecked = true;
   try{
     const { consentState } = await import("./consent.js");
-    if(await consentState(user.uid) === false){
-      location.replace('Consent.html?next=' +
-        encodeURIComponent(here() + (location.search || '')));
+    const state = await consentState(user.uid);
+    if(state === true){
+      /* 기록이 제자리를 찾았다. 다음에 정말로 필요해지면(약관 개정 등)
+         다시 보낼 수 있도록 셈을 지운다. */
+      try{ sessionStorage.removeItem(CONSENT_BOUNCE); }catch(e){}
+      return;
     }
+    if(state !== false) return;            // null — 못 읽었다. 건드리지 않는다
+
+    let bounced = 0;
+    try{ bounced = parseInt(sessionStorage.getItem(CONSENT_BOUNCE) || "0", 10) || 0; }catch(e){}
+    if(bounced >= 1){
+      console.warn("[consent] 동의 기록이 아직 없지만 이미 한 번 보냈다 —",
+        "또 보내면 갇힌다. 이번엔 그냥 둔다.", user.uid);
+      return;
+    }
+    try{ sessionStorage.setItem(CONSENT_BOUNCE, String(bounced + 1)); }catch(e){}
+
+    /* 돌아갈 곳에 쿼리를 붙이지 않는다.
+
+       전에는 here() + location.search 를 그대로 넣었다. 그러면 소셜 로그인
+       직후처럼 주소에 ?code=… 가 남아 있을 때 그 인가코드까지 next 에
+       실려 가고, 동의를 마친 뒤 그 주소로 되돌아가면 이미 써 버린 코드로
+       로그인을 한 번 더 시도하게 된다. 돌아갈 곳은 페이지면 충분하다. */
+    location.replace('Consent.html?next=' + encodeURIComponent(here()));
   }catch(e){ /* 표시·이동용 — 실패하면 그냥 둔다 */ }
 }
 

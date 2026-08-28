@@ -830,7 +830,25 @@ exports.socialLogin = onCall(
       const cur = (snapBefore && snapBefore.consents) || {};
       const touched = !!(snapBefore && (snapBefore.marketingAt || snapBefore.marketingOffAt));
       const needsFix = !touched && cur.marketing !== kt.marketing;
-      if(needsFix || !cur.kakaoTerms){
+      /* 고칠 기록이 실제로 있을 때만 손댄다.
+
+         ⚠️ 이 조건이 없어서 무한 루프가 났다. 계정은 있는데 동의 기록이
+            없는 상태(위에서 staleConsent 로 consents 를 안 쓴 계정)에서
+            여기 들어오면 cur 가 {} 인데, 아래 Object.assign 이 그 위에
+            kakaoTerms 와 method 만 얹어 반쪽짜리 기록을 만든다.
+
+              consents: { kakaoTerms: [...], method: "naver-consent" }
+
+            age14·terms·privacy·version·agreedAt 이 없다. consentStage 는
+            필수 세 항목을 보므로 'none' 이고, guardConsent 가 동의 화면으로
+            보낸다. 동의를 눌러 제대로 채워 넣어도 다음 로그인에서 이 줄이
+            또 반쪽을 얹는다 — 나가지지 않는다.
+
+         기록이 없는 계정은 여기서 건드릴 것이 없다. recordSignupConsent 가
+         동의 화면에서 통째로 쓴다. */
+      if(!cur.agreedAt){
+        console.log(`[social] ${uid} — 동의 기록이 없어 제공자 약관 맞추기를 건너뛴다`);
+      } else if(needsFix || !cur.kakaoTerms){
         /* 받은 방식도 실제에 맞춘다. 여태 'signup-notice' 로 적혀 있었는데
            그 고지 문구는 화면에서 지운 지 오래다 — 이 사람들이 실제로 본
            것은 제공자의 동의 화면이다. 처음 기록은 consentEvents 의
