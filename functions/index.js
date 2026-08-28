@@ -297,11 +297,33 @@ async function naverProfile(code, redirectUri, state){
   }), "naver_me");
 
   const r = me.response || {};
+
+  /* 네이버가 약관 동의를 무슨 이름으로 주는지 코드가 미리 알 수 없다.
+     카카오는 service_terms 라는 정해진 자리가 있었는데 네이버는 그렇지
+     않다 — 개발자센터에 등록한 동의항목이 응답 어디에 어떤 이름으로
+     실리는지 실제 응답을 봐야 안다.
+
+     짐작으로 매핑을 짜면 카카오 태그 때처럼 어긋난다. 그래서 받은 것을
+     그대로 들고 온다. 다만 프로필 정보는 값까지 나를 이유가 없으므로
+     이름만 남긴다 — 우리가 찾는 것은 '약관' 쪽 칸이다. */
+  const PROFILE_FIELDS = new Set([
+    "id", "email", "name", "nickname", "profile_image", "gender", "age",
+    "birthday", "birthyear", "mobile", "mobile_e164",
+  ]);
+  const raw = {};
+  for (const k of Object.keys(r)) {
+    raw[k] = PROFILE_FIELDS.has(k) ? "(프로필 값 생략)" : r[k];
+  }
+  console.log("[naver] /v1/nid/me 응답 칸:", Object.keys(r).join(", "));
+  console.log("[naver] 프로필 밖 칸:", JSON.stringify(
+    Object.fromEntries(Object.entries(raw).filter(([k]) => !PROFILE_FIELDS.has(k)))).slice(0, 800));
+
   return {
     id: String(r.id),
     email: r.email || null,
     name: r.name || r.nickname || "",
-    photo: r.profile_image || null
+    photo: r.profile_image || null,
+    raw
   };
 }
 
@@ -558,6 +580,10 @@ exports.socialLogin = onCall(
     if(!exists){
       if(!p.email) patch.email = null;
       patch.createdAt = now;
+      /* 네이버가 무엇을 보냈는지 남긴다. 동의 화면을 다시 받는 경로에서도
+         남아야 한다 — 지금 보려는 것이 바로 그 경로다. 아직 동의로 쓰지
+         않는다. 무엇이 오는지 눈으로 보고 나서 붙인다. */
+      if(provider === "naver" && p.raw) patch.providerRaw = p.raw;
       if(staleConsent){
         /* consents 를 쓰지 않는다. 그러면 auth-state.js 의 guardConsent 가
            다음 화면에서 동의 페이지로 보낸다 — 구글과 같은 길이다. */
@@ -1458,6 +1484,8 @@ exports.adminConsentLookup = onCall({ region: REGION, cors: true }, async (req) 
       /* 카카오가 보낸 원본. 매핑이 맞는지는 이걸 봐야 안다. */
       kakaoTerms: Array.isArray(c.kakaoTerms) ? c.kakaoTerms : null,
     },
+    /* 네이버가 보낸 원본. 아직 매핑 전이라 눈으로 보려고 싣는다. */
+    providerRaw: u.providerRaw || null,
     marketingAt: tsIso(u.marketingAt),
     marketingOffAt: tsIso(u.marketingOffAt),
     events,
