@@ -37,6 +37,8 @@ const RESEND_API_KEY = defineSecret("RESEND_API_KEY"); // 이메일 발송(Resen
    워크플로가 값이 없으면 자리만 채워 두고, 아래 kakaoUnlink 가 그 값을
    '미설정' 으로 알아보고 건너뛴다. */
 const KAKAO_ADMIN_KEY = defineSecret("KAKAO_ADMIN_KEY");
+/* 모닝 브리핑 워크플로를 깨우는 데 쓴다. 아래 wakeMorningBrief 주석 참고. */
+const GH_DISPATCH_TOKEN = defineSecret("GH_DISPATCH_TOKEN");
 const SECRET_UNSET = "미설정";
 /* ── 결제 스위치 ─────────────────────────────────────────────
    실사이트에는 아직 결제를 올리지 않는다. 배포 목록에서 빼는 것만으로는
@@ -2075,6 +2077,81 @@ if (PAYMENTS_LIVE) exports.renewSubscriptions = onSchedule(
    이메일·카카오·네이버 가입은 계정이 만들어지는 그 자리에서 동의가 기록되므로
    여기 걸리지 않는다. 실제 대상은 중간에 그만둔 구글 가입뿐이다.
    ─────────────────────────────────────────────────────────── */
+/* ============================================================
+   모닝 브리핑을 제시각에 깨운다
+   ------------------------------------------------------------
+   왜 여기에 있나. 브리핑은 GitHub Actions 가 만드는데, GitHub 의 schedule
+   은 "이 시각쯤" 이지 "이 시각" 이 아니다. 밀리는 폭이 예측되지 않는다.
+
+     2026-08-27  06:00 슬롯이 09:23 에 발화 (+3시간 23분)
+     2026-08-28  슬롯 여섯 개가 전부 건너뛰거나 밀려, 11:24 에 한 번만 깨어남
+
+   그래서 슬롯을 여섯 개로 늘리고 릴레이 워크플로까지 두었는데, 8월 28일에
+   둘 다 못 막았다. 당연하다 — 릴레이도 schedule 로 깨어난다. 같은 줄에
+   매달린 두 겹은 두 겹이 아니다. 릴레이는 13:30Z 에 깨어났어야 하는데
+   23:01Z 에 깨어났고(+9시간 31분), 그때는 이미 손쓸 시각이 지나 있었다.
+
+   Cloud Scheduler 는 다르다. 이미 이 파일의 purgeUnconsented 가 매일
+   12:30 에 정확히 돌고 있다. 그래서 '언제 깨울지' 를 GitHub 밖으로 뺀다.
+   workflow_dispatch 는 큐를 거치지 않아 몇 초 안에 뜬다.
+
+   두 번 깨운다. 06:40 은 만들고 기다렸다 07:28 에 올리기 위한 것이고,
+   07:15 는 그 사이에 죽었을 때를 위한 예비다. 생성은 그날 브리핑이 이미
+   있으면 건너뛰므로(멱등) 두 번 깨워도 과금은 하루 한 번이다.
+
+   토큰이 없으면 아무것도 하지 않는다. 그래도 배포는 되어야 하므로 배포
+   워크플로가 자리를 '미설정' 으로 채워 둔다.
+
+   ⚠️ GH_DISPATCH_TOKEN 은 이 저장소의 Actions 에만 쓰기 권한이 있는
+      fine-grained 토큰이어야 한다. 넓은 권한을 주면 안 된다.
+   ============================================================ */
+async function dispatchBrief(reason){
+  const token = (GH_DISPATCH_TOKEN.value() || "").trim();
+  if(!token || token === SECRET_UNSET){
+    console.warn(`[brief] 토큰이 없어 깨우지 못했다 (${reason})`);
+    return false;
+  }
+  try{
+    const res = await fetch(
+      "https://api.github.com/repos/kosairesearch/kosairesearch.github.io" +
+      "/actions/workflows/morning_brief.yml/dispatches", {
+        method: "POST",
+        headers: {
+          Authorization: `Bearer ${token}`,
+          Accept: "application/vnd.github+json",
+          "X-GitHub-Api-Version": "2022-11-28",
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify({ ref: "main" }),
+      });
+    if(res.status !== 204){
+      const t = await res.text();
+      console.error(`[brief] 깨우기 실패 HTTP ${res.status} (${reason}):`, t.slice(0, 300));
+      return false;
+    }
+    console.log(`[brief] 깨웠다 (${reason})`);
+    return true;
+  }catch(e){
+    console.error(`[brief] 깨우기 오류 (${reason}):`, e && e.message);
+    return false;
+  }
+}
+
+/* 만들고 기다렸다 07:28 에 올린다. 워크플로가 그 대기를 스스로 한다. */
+exports.wakeMorningBrief = onSchedule(
+  { region: REGION, schedule: "40 6 * * 1-5", timeZone: "Asia/Seoul",
+    secrets: [GH_DISPATCH_TOKEN] },
+  async () => { await dispatchBrief("06:40 본 발화"); }
+);
+
+/* 예비. 앞엣것이 죽었으면 여기서 다시 깨운다. 이미 올라갔으면 워크플로가
+   스스로 건너뛴다. */
+exports.wakeMorningBriefBackup = onSchedule(
+  { region: REGION, schedule: "15 7 * * 1-5", timeZone: "Asia/Seoul",
+    secrets: [GH_DISPATCH_TOKEN] },
+  async () => { await dispatchBrief("07:15 예비"); }
+);
+
 exports.purgeUnconsented = onSchedule(
   { region: REGION, schedule: "30 3 * * *", timeZone: "Etc/UTC" },   // 12:30 KST
   async () => {
