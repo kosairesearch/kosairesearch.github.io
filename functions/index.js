@@ -1652,6 +1652,35 @@ exports.adminNotifyUnconsented = onCall(
   }
 );
 
+/* 유령 문서 정리 — 손으로 누르는 자리.
+
+   Firebase 콘솔에서 Auth 사용자를 지우면 users 문서는 그대로 남는다.
+   콘솔은 우리 함수를 거치지 않으니 어쩔 수 없다. purgeUnconsented 가
+   매일 12:30 에 치우지만, 개발 중에는 그때까지 기다릴 이유가 없다.
+
+   Auth 에 없는 문서만 지운다. 조회가 실패하면 아무것도 지우지 않는다 —
+   '못 읽었다' 를 '없다' 로 읽으면 멀쩡한 회원 문서를 지우게 된다. */
+exports.adminPurgeOrphans = onCall({ region: REGION, cors: true }, async (req) => {
+  assertAdmin(req);
+  const db = admin.firestore();
+  const MAX = 200;
+  const docs = (await db.collection("users").limit(2000).get()).docs;
+  const removed = [];
+  for (let i = 0; i < docs.length && removed.length < MAX; i += 100) {
+    const part = docs.slice(i, i + 100);
+    const res = await admin.auth().getUsers(part.map((d) => ({ uid: d.id })));
+    const live = new Set((res.users || []).map((u) => u.uid));
+    for (const d of part) {
+      if (live.has(d.id) || removed.length >= MAX) continue;
+      const email = (d.data() || {}).email || null;
+      await d.ref.delete();
+      removed.push({ uid: d.id, email });
+      console.log(`[orphan] 삭제 ${d.id}`);
+    }
+  }
+  return { count: removed.length, rows: removed };
+});
+
 exports.adminUserList = onCall({ region: REGION, cors: true }, async (req) => {
   assertAdmin(req);
   const db = admin.firestore();
