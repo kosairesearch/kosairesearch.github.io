@@ -2137,19 +2137,113 @@ async function dispatchBrief(reason){
   }
 }
 
+/* 실패를 소리나게 만든다.
+
+   여태 브리핑이 안 나가도 아무 데도 알리지 않았다. 8월 28일에도 사람이
+   오후에야 알아챘다. 조용히 실패하는 장치는 없는 장치와 같다 — 예비를
+   몇 겹으로 쌓아도 그것들이 다 죽은 것을 모르면 소용이 없다.
+
+   메일이 안 가도 던지지 않는다. 알림이 실패했다고 브리핑까지 막을 이유가
+   없다. */
+async function alertOps(subject, lines){
+  const key = (RESEND_API_KEY.value() || "").trim();
+  if(!key) { console.warn("[alert] RESEND 키 없음:", subject); return; }
+  try{
+    const html = mailLayout({
+      lang: "ko", heading: subject,
+      intro: lines.map(esc).join("<br>"),
+      btnText: "실행 기록 보기",
+      link: "https://github.com/kosairesearch/kosairesearch.github.io/actions/workflows/morning_brief.yml",
+      outro: "이 메일은 KOSAI 운영 알림입니다.",
+    });
+    const resend = new Resend(key);
+    await resend.emails.send({
+      from: MAIL_FROM, to: "hello@kosai.kr", subject: `[KOSAI] ${subject}`, html });
+  }catch(e){
+    console.error("[alert] 발송 실패:", e && e.message);
+  }
+}
+
 /* 만들고 기다렸다 07:28 에 올린다. 워크플로가 그 대기를 스스로 한다. */
 exports.wakeMorningBrief = onSchedule(
   { region: REGION, schedule: "40 6 * * 1-5", timeZone: "Asia/Seoul",
-    secrets: [GH_DISPATCH_TOKEN] },
-  async () => { await dispatchBrief("06:40 본 발화"); }
+    secrets: [GH_DISPATCH_TOKEN, RESEND_API_KEY] },
+  async () => {
+    if(!(await dispatchBrief("06:40 본 발화"))){
+      await alertOps("모닝 브리핑을 깨우지 못했습니다", [
+        "06:40 발화가 GitHub 워크플로를 깨우지 못했습니다.",
+        "토큰이 만료됐거나 권한이 부족할 수 있습니다.",
+        "07:15 예비가 한 번 더 시도합니다.",
+      ]);
+    }
+  }
 );
 
 /* 예비. 앞엣것이 죽었으면 여기서 다시 깨운다. 이미 올라갔으면 워크플로가
    스스로 건너뛴다. */
 exports.wakeMorningBriefBackup = onSchedule(
   { region: REGION, schedule: "15 7 * * 1-5", timeZone: "Asia/Seoul",
-    secrets: [GH_DISPATCH_TOKEN] },
+    secrets: [GH_DISPATCH_TOKEN, RESEND_API_KEY] },
   async () => { await dispatchBrief("07:15 예비"); }
+);
+
+/* 파수꾼. 08:00 에 오늘 브리핑 워크플로가 돌았는지 확인한다.
+
+   '깨우기가 실패했나' 만 보면 부족하다. 깨우는 데 성공하고 그 뒤에
+   죽는 경우가 실제로 더 많았다(생성 실패·정지 조건). 결과를 본다.
+
+   휴장일에는 워크플로가 스스로 아무것도 하지 않고 성공으로 끝난다.
+   그래서 '실행이 있었고 실패하지 않았다' 를 기준으로 삼는다 — 한국
+   공휴일 목록을 여기서 다시 관리하지 않아도 된다. */
+exports.watchMorningBrief = onSchedule(
+  { region: REGION, schedule: "0 8 * * 1-5", timeZone: "Asia/Seoul",
+    secrets: [GH_DISPATCH_TOKEN, RESEND_API_KEY] },
+  async () => {
+    const token = (GH_DISPATCH_TOKEN.value() || "").trim();
+    if(!token || token === SECRET_UNSET) return;
+
+    /* 오늘(KST) 0시 이후에 만들어진 실행만 본다. */
+    const kst = new Date(Date.now() + 9 * 3600 * 1000);
+    const today = kst.toISOString().slice(0, 10);
+    const since = new Date(Date.parse(today + "T00:00:00+09:00")).toISOString();
+
+    let runs = null;
+    try{
+      const res = await fetch(
+        "https://api.github.com/repos/kosairesearch/kosairesearch.github.io" +
+        `/actions/workflows/morning_brief.yml/runs?per_page=20&created=%3E${since}`, {
+          headers: {
+            Authorization: `Bearer ${token}`,
+            Accept: "application/vnd.github+json",
+            "X-GitHub-Api-Version": "2022-11-28",
+          }});
+      if(res.ok) runs = (await res.json()).workflow_runs || [];
+    }catch(e){
+      console.error("[watch] 실행 조회 실패:", e && e.message);
+    }
+
+    if(runs === null){
+      await alertOps("브리핑 상태를 확인하지 못했습니다", [
+        "08:00 점검이 GitHub 실행 기록을 읽지 못했습니다.",
+        "브리핑이 나갔는지는 직접 확인해 주세요.",
+      ]);
+      return;
+    }
+    if(runs.length === 0){
+      await alertOps("모닝 브리핑이 오늘 한 번도 돌지 않았습니다", [
+        `${today} 08:00 기준으로 브리핑 워크플로 실행이 하나도 없습니다.`,
+        "깨우는 장치가 전부 실패했다는 뜻입니다.",
+      ]);
+      return;
+    }
+    const good = runs.some(r => r.conclusion === "success" || r.status !== "completed");
+    if(!good){
+      await alertOps("모닝 브리핑이 실패했습니다", [
+        `${today} 실행 ${runs.length}건이 모두 실패했습니다.`,
+        "생성이나 발행 단계에서 멈춘 것입니다. 실행 기록을 확인해 주세요.",
+      ]);
+    }
+  }
 );
 
 /* 시험용. 월요일 아침까지 기다렸다가 안 나가는 것을 확인하는 것은 너무 늦다.
