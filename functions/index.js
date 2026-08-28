@@ -2152,6 +2152,23 @@ exports.wakeMorningBriefBackup = onSchedule(
   async () => { await dispatchBrief("07:15 예비"); }
 );
 
+/* 시험용. 월요일 아침까지 기다렸다가 안 나가는 것을 확인하는 것은 너무 늦다.
+
+   관리자 화면의 버튼이 이걸 부른다. 토큰이 제대로 등록됐는지, dispatch 가
+   실제로 워크플로를 깨우는지를 오늘 확인할 수 있다.
+
+   장중에 부르면 워크플로는 정지 조건(stale_data)에 걸려 멈춘다. 그건
+   정상이고, 우리가 보려는 것은 '실행이 만들어지는가' 까지다. 그 지점은
+   생성 API 를 부르기 전이라 과금도 없다. */
+exports.adminWakeBrief = onCall(
+  { region: REGION, cors: true, secrets: [GH_DISPATCH_TOKEN] },
+  async (req) => {
+    assertAdmin(req);
+    const ok = await dispatchBrief("관리자 수동 시험");
+    return { ok };
+  }
+);
+
 exports.purgeUnconsented = onSchedule(
   { region: REGION, schedule: "30 3 * * *", timeZone: "Etc/UTC" },   // 12:30 KST
   async () => {
