@@ -195,6 +195,7 @@ DICT = '''if(window.KOSi18n) KOSi18n.register({
   "깨우지 못했습니다. 토큰이 등록되지 않았거나 권한이 부족합니다.":
     "Could not send — the token is missing or lacks permission.",
   "카카오 약관":"Kakao terms",
+  "제공자 원본":"Provider response",
   "안내 메일 대상 확인":"Preview notice recipients",
   "에게 안내 메일이 갑니다.":" will receive the notice email.",
   "보낼 대상이 없습니다.":"No one to notify.",
@@ -709,6 +710,11 @@ function drawMember(out, r){
     row('카카오 약관', r.consents.kakaoTerms
       .map(t => t.tag + (t.required ? '(필수) ' : '(선택) ') + (t.agreed ? '동의' : '미동의'))
       .join('  ·  '));
+  }
+  /* 네이버가 보낸 응답 그대로. 약관 동의가 어느 이름으로 오는지 여기서
+     확인하고 매핑을 붙인다. */
+  if(r.providerRaw){
+    row('제공자 원본', JSON.stringify(r.providerRaw));
   }
   out.appendChild(dl);
 
