@@ -351,11 +351,16 @@ function mapNaverTerms(list){
     if(!agreedAt || ms > agreedAt) agreedAt = ms;
   }
 
+  /* 마케팅에 동의한 시각. 다른 항목과 따로 들고 나간다 — 재가입 때 '이
+     동의가 언제 것인가' 를 마케팅만 따로 따져야 하기 때문이다. */
+  const mkMs = mk && mk.agreeDate ? parseNaverDate(mk.agreeDate) : NaN;
+
   return {
     age14: pick("age14"),
     terms: pick("terms"),
     privacy: pick("privacy"),
     marketing: !!mk,
+    marketingAt: (mkMs && !Number.isNaN(mkMs)) ? new Date(mkMs) : null,
     marketingKnown: true,             // 목록을 받았다는 것 자체가 답이다
     agreedAt: agreedAt ? new Date(agreedAt) : null,
     raw: list.map(t => ({
@@ -822,6 +827,32 @@ exports.socialLogin = onCall(
       }
       if(kt && kt.agreedAt && withdrawnAt > 0 && kt.agreedAt.getTime() <= withdrawnAt){
         providerAgreedAtStale = true;
+      }
+
+      /* 마케팅은 따로 따진다 — 탈퇴 전에 받은 동의를 새 계정에 붙이면 안 된다.
+
+         ⚠️ 이걸 안 봐서, 가입하며 마케팅을 끄고 왔는데 설정에는 켜져 있었다.
+            네이버는 탈퇴해도 자기 쪽 동의 기록을 지우지 않는다. 그래서
+            agreementInfos 에 예전에 켰던 marketing 줄이 그대로 실려 오고,
+            우리는 그걸 '이번에 동의했다' 로 읽었다.
+
+         필수 항목은 이렇게 따지지 않는다. 그쪽은 reprompt 로 방금 동의
+         화면을 거쳤다는 것이 근거이고, 필수라 통과 자체가 동의를 뜻한다.
+         마케팅은 선택이라 그 논리가 서지 않는다 — 화면을 봤다는 사실이
+         무엇을 눌렀는지는 알려 주지 않는다.
+
+         그래서 탈퇴 뒤에 찍힌 동의만 인정한다. 시각을 모르면 인정하지
+         않는다. 동의하지 않은 사람에게 광고를 보내는 것은 되돌릴 수 없고,
+         본인은 설정 화면에서 언제든 켤 수 있다. */
+      if(kt && kt.marketing && withdrawnAt !== 0){
+        const mAt = kt.marketingAt ? kt.marketingAt.getTime() : 0;
+        if(withdrawnAt < 0 || !mAt || mAt <= withdrawnAt){
+          console.log(`[naver] ${uid} — 마케팅 동의가 탈퇴 이전 것이라 쓰지 않는다`,
+            `(동의 ${kt.marketingAt ? kt.marketingAt.toISOString() : "시각 모름"},`,
+            `탈퇴 ${withdrawnAt})`);
+          kt.marketing = false;
+          kt.marketingAt = null;
+        }
       }
 
       /* 제공자가 '언제 동의했는지' 를 알려 준 시각.
