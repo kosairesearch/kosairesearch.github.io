@@ -811,48 +811,63 @@ exports.socialLogin = onCall(
     /* 제공자가 알려 준 동의 시각이 탈퇴보다 앞서 그대로 적을 수 없을 때 참.
        기록에 '계정 생성일보다 앞선 동의일' 을 남기지 않으려고 본다. */
     let providerAgreedAtStale = false;
-    if(!exists){
-      let withdrawnAt = 0;
-      try{
-        const w = await db.collection("consentEvents")
-          .where("uid", "==", uid).where("kind", "==", "withdraw").limit(10).get();
-        w.forEach(d => {
-          const t = (d.data() || {}).at;
-          const ms = t && t.toDate ? t.toDate().getTime() : 0;
-          if(ms > withdrawnAt) withdrawnAt = ms;
-        });
-      }catch(e){
-        console.warn("[social] 탈퇴 이력 조회 실패", uid, e && e.message);
-        withdrawnAt = -1;                       // 모르면 아래에서 다시 묻는다
+
+    /* 마지막으로 탈퇴한 시각. 제공자가 준 동의가 그보다 앞서면 옛 계약의
+       동의라 새 계정에 붙일 수 없다.
+
+       ⚠️ 이 조회를 !exists 안에 두었던 것이 문제였다. 가입할 때는 제대로
+          걸러 놓고, 그 뒤 그냥 로그인할 때는 걸러 주지 않아서 아래 '기존
+          회원 맞추기' 가 다시 옛 값으로 덮었다. 마케팅을 끄고 가입했는데
+          다음 로그인에 저절로 켜지던 것이 이것이다.
+
+          탈퇴 여부는 가입이든 로그인이든 똑같이 물어야 한다. 조회 한 번이
+          더 드는 것보다, 동의하지 않은 사람에게 광고가 나가는 쪽이 훨씬
+          비싸다. */
+    let withdrawnAt = 0;
+    try{
+      const w = await db.collection("consentEvents")
+        .where("uid", "==", uid).where("kind", "==", "withdraw").limit(10).get();
+      w.forEach(d => {
+        const t = (d.data() || {}).at;
+        const ms = t && t.toDate ? t.toDate().getTime() : 0;
+        if(ms > withdrawnAt) withdrawnAt = ms;
+      });
+    }catch(e){
+      console.warn("[social] 탈퇴 이력 조회 실패", uid, e && e.message);
+      withdrawnAt = -1;                         // 모르면 아래에서 안전한 쪽으로
+    }
+
+    /* 마케팅은 따로 따진다 — 탈퇴 전에 받은 동의를 새 계정에 붙이면 안 된다.
+
+       네이버는 탈퇴해도 자기 쪽 동의 기록을 지우지 않는다. 그래서
+       agreementInfos 에 예전에 켰던 marketing 줄이 그대로 실려 오고, 그것을
+       '이번에 동의했다' 로 읽으면 끄고 가입한 사람이 동의자로 기록된다.
+
+       필수 항목은 이렇게 따지지 않는다. 그쪽은 reprompt 로 방금 동의 화면을
+       거쳤다는 것이 근거이고, 필수라 통과 자체가 동의를 뜻한다. 마케팅은
+       선택이라 그 논리가 서지 않는다 — 화면을 봤다는 사실이 무엇을 눌렀는지는
+       알려 주지 않는다.
+
+       그래서 탈퇴 뒤에 찍힌 동의만 인정한다. 시각을 모르면 인정하지 않는다.
+       동의하지 않은 사람에게 광고를 보내는 것은 되돌릴 수 없고(정보통신망법
+       제50조), 본인은 설정 화면에서 언제든 켤 수 있다.
+
+       가입·로그인 양쪽에서 같이 돈다. 아래 '기존 회원 맞추기' 가 이 값을
+       그대로 쓰므로, 여기서 한 번 거르면 두 경로가 같은 답을 본다. */
+    if(kt && kt.marketing && withdrawnAt !== 0){
+      const mAt = kt.marketingAt ? kt.marketingAt.getTime() : 0;
+      if(withdrawnAt < 0 || !mAt || mAt <= withdrawnAt){
+        console.log(`[naver] ${uid} — 마케팅 동의가 탈퇴 이전 것이라 쓰지 않는다`,
+          `(동의 ${kt.marketingAt ? kt.marketingAt.toISOString() : "시각 모름"},`,
+          `탈퇴 ${withdrawnAt})`);
+        kt.marketing = false;
+        kt.marketingAt = null;
       }
+    }
+
+    if(!exists){
       if(kt && kt.agreedAt && withdrawnAt > 0 && kt.agreedAt.getTime() <= withdrawnAt){
         providerAgreedAtStale = true;
-      }
-
-      /* 마케팅은 따로 따진다 — 탈퇴 전에 받은 동의를 새 계정에 붙이면 안 된다.
-
-         ⚠️ 이걸 안 봐서, 가입하며 마케팅을 끄고 왔는데 설정에는 켜져 있었다.
-            네이버는 탈퇴해도 자기 쪽 동의 기록을 지우지 않는다. 그래서
-            agreementInfos 에 예전에 켰던 marketing 줄이 그대로 실려 오고,
-            우리는 그걸 '이번에 동의했다' 로 읽었다.
-
-         필수 항목은 이렇게 따지지 않는다. 그쪽은 reprompt 로 방금 동의
-         화면을 거쳤다는 것이 근거이고, 필수라 통과 자체가 동의를 뜻한다.
-         마케팅은 선택이라 그 논리가 서지 않는다 — 화면을 봤다는 사실이
-         무엇을 눌렀는지는 알려 주지 않는다.
-
-         그래서 탈퇴 뒤에 찍힌 동의만 인정한다. 시각을 모르면 인정하지
-         않는다. 동의하지 않은 사람에게 광고를 보내는 것은 되돌릴 수 없고,
-         본인은 설정 화면에서 언제든 켤 수 있다. */
-      if(kt && kt.marketing && withdrawnAt !== 0){
-        const mAt = kt.marketingAt ? kt.marketingAt.getTime() : 0;
-        if(withdrawnAt < 0 || !mAt || mAt <= withdrawnAt){
-          console.log(`[naver] ${uid} — 마케팅 동의가 탈퇴 이전 것이라 쓰지 않는다`,
-            `(동의 ${kt.marketingAt ? kt.marketingAt.toISOString() : "시각 모름"},`,
-            `탈퇴 ${withdrawnAt})`);
-          kt.marketing = false;
-          kt.marketingAt = null;
-        }
       }
 
       /* 제공자가 '언제 동의했는지' 를 알려 준 시각.
