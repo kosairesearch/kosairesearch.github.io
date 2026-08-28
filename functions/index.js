@@ -183,6 +183,117 @@ function mapKakaoTerms(list){
   };
 }
 
+/* ── 네이버가 받아 준 약관 동의 내역 ────────────────────────────────
+   네이버 개발자센터의 '약관 1·2·3' 에 제목·URL·태그·필수/선택을 등록하면
+   네이버 로그인 동의창이 그 약관들을 대신 보여 주고 동의를 받는다.
+   카카오싱크와 같은 구조다.
+
+   한동안 나는 '네이버는 약관 동의를 안 준다' 고 잘못 알고 있었다. 근거로
+   삼은 것은 /v1/nid/me 응답에 약관 칸이 없다는 사실이었는데, 약관은 그
+   응답이 아니라 별도 창구로 온다. 프로필 API 만 보고 없다고 단정한 것이
+   틀렸다.
+
+     GET https://openapi.naver.com/v1/nid/agreement
+     Authorization: Bearer {access_token}
+
+     { "result": "success",
+       "agreementInfos": [ { "termCode": "privacy_20220929",
+                             "clientId": "...",
+                             "agreeDate": "..." }, ... ] }
+
+   termCode 는 개발자센터에 적은 '약관 태그' 에 판 날짜가 붙은 값이다
+   (태그 privacy → privacy_20220929). 그래서 아래에서 태그로 앞을 짚는다.
+
+   실패해도 로그인을 막지 않는다 — 못 가져온 것과 동의하지 않은 것은 다른
+   일이다. 못 가져오면 null 이고, 부르는 쪽이 지금까지의 방식으로 물러선다. */
+async function naverAgreements(accessToken){
+  try{
+    const r = await asJson(await fetch("https://openapi.naver.com/v1/nid/agreement", {
+      headers: { Authorization: `Bearer ${accessToken}` }
+    }), "naver_agreement");
+    /* 응답 모양을 눈으로 보기 전이라 두 자리를 다 본다. 겉이 바뀌어도
+       목록만 찾으면 된다. */
+    const list = Array.isArray(r.agreementInfos) ? r.agreementInfos
+      : (r.response && Array.isArray(r.response.agreementInfos)) ? r.response.agreementInfos
+      : null;
+    if(!list){
+      console.warn("[naver] agreement 응답에 agreementInfos 가 없다:",
+        JSON.stringify(r).slice(0, 500));
+      return null;
+    }
+    console.log("[naver] agreementInfos:",
+      list.map(t => `${t.termCode}@${t.agreeDate || "?"}`).join(", ") || "(빈 목록)");
+    return list;
+  }catch(e){
+    console.warn("[naver] agreement 조회 실패:", e && e.message);
+    return null;
+  }
+}
+
+/* 네이버가 준 약관 목록을 우리 항목으로 옮긴다.
+
+   카카오와 다른 점이 하나 있다. 카카오는 항목마다 agreed 를 true/false 로
+   주는데, 네이버는 '동의한 약관' 만 목록에 담아 준다. 그래서 목록에 있으면
+   동의, 없으면 미동의다. 선택 약관(마케팅)을 체크하지 않으면 그 줄이 아예
+   오지 않는다.
+
+   ⚠️ 이 해석이 이 함수의 전부다. 만약 네이버가 미동의 항목까지 담아 보내는
+      것으로 밝혀지면(agreed 같은 칸이 같이 온다면) 여기가 틀린다. 그래서
+      항목에 그런 칸이 있으면 그 값을 우선하고, 없을 때만 '있으면 동의' 로
+      읽는다. 원본은 그대로 저장하므로 나중에 고칠 수 있다. */
+const NAVER_TAG_MATCH = {
+  age14:     /age|14|연령|만14/i,
+  terms:     /term|agree|tos|service|약관|이용/i,
+  privacy:   /privacy|개인정보|수집/i,
+  marketing: /market|adver|광고|수신|promo|benefit|혜택/i,
+};
+
+function mapNaverTerms(list){
+  if(!Array.isArray(list)) return null;
+
+  const agreedOf = (t) => {
+    /* 네이버가 명시적인 동의 여부를 같이 준다면 그 값이 우선이다. */
+    for(const k of ["agreed", "agree", "isAgree", "agreeYn"]){
+      const v = t[k];
+      if(v === true || v === false) return v;
+      if(v === "Y" || v === "N") return v === "Y";
+    }
+    return true;                      // 목록에 있다 = 동의했다
+  };
+
+  const hit = (key) => list.find(t =>
+    NAVER_TAG_MATCH[key].test(String(t.termCode || "")) && agreedOf(t));
+
+  const mk = hit("marketing");
+  if(!list.length){
+    console.warn("[naver] agreementInfos 가 비어 있다 — 약관 등록 상태를 확인할 것.");
+  }else if(!mk){
+    console.log("[naver] 마케팅 약관이 목록에 없다(= 미동의). 받은 termCode:",
+      list.map(t => t.termCode).join(", "));
+  }
+
+  /* 실제 동의 시각. 여럿이면 가장 늦은 것 — 마지막으로 동의를 마친 순간. */
+  let agreedAt = null;
+  for(const t of list){
+    if(!agreedOf(t) || !t.agreeDate) continue;
+    const ms = Date.parse(t.agreeDate);
+    if(ms && (!agreedAt || ms > agreedAt)) agreedAt = ms;
+  }
+
+  return {
+    age14: !!hit("age14"),
+    terms: !!hit("terms"),
+    privacy: !!hit("privacy"),
+    marketing: !!mk,
+    marketingKnown: true,             // 목록을 받았다는 것 자체가 답이다
+    agreedAt: agreedAt ? new Date(agreedAt) : null,
+    raw: list.map(t => ({
+      termCode: String(t.termCode || ""),
+      agreeDate: t.agreeDate || null,
+    })),
+  };
+}
+
 /* 제공자가 알려 준 동의를 그대로 믿어도 되는가.
 
      withdrawnAt  마지막 탈퇴 시각(ms). 0 이면 탈퇴한 적 없음,
@@ -323,7 +434,10 @@ async function naverProfile(code, redirectUri, state){
     email: r.email || null,
     name: r.name || r.nickname || "",
     photo: r.profile_image || null,
-    raw
+    raw,
+    /* 약관 동의 내역은 프로필과 다른 창구에서 온다. 카카오와 같은 자리에
+       담아 아래 처리를 하나로 쓴다. */
+    terms: await naverAgreements(tok.access_token)
   };
 }
 
@@ -553,37 +667,43 @@ exports.socialLogin = onCall(
        true 로, marketing 을 false 로 박아 두고 있었다 — 마케팅에 동의한
        사람이 우리 기록에는 전부 미동의로 남았다.
 
-       네이버는 검수 승인 뒤 같은 방식이 된다. 그때까지는 아래 물러선 값이
-       그대로 쓰인다. */
+       네이버도 같다. 개발자센터 '약관 1·2·3' 에 제목·URL·태그·필수/선택을
+       등록해 두면 네이버 로그인 동의창이 그 약관들을 대신 보여 주고, 동의
+       내역은 /v1/nid/agreement 로 읽어 온다. 창구 이름과 응답 모양만 다를
+       뿐 카카오싱크와 하는 일이 같다. */
     const db = admin.firestore();
     const now = admin.firestore.FieldValue.serverTimestamp();
-    /* 카카오싱크가 대신 받아 준 동의 내역. 못 읽었으면 null 이고, 그때는
-       아래에서 기존 기록을 건드리지 않는다. */
-    const kt = provider === "kakao" ? mapKakaoTerms(p.terms) : null;
+    /* 제공자가 대신 받아 준 동의 내역. 카카오는 service_terms, 네이버는
+       agreement 창구에서 온다. 못 읽었으면 null 이고, 그때는 아래에서 기존
+       기록을 건드리지 않는다.
 
-    /* 네이버는 동의 내역을 API 로 주지 않는다. 실제 응답이 이랬다.
+       두 곳의 응답 모양은 다르지만(카카오는 항목마다 agreed, 네이버는 동의한
+       것만 목록) map* 함수가 같은 모양으로 맞춰 주므로 여기서부터는 하나로
+       다룬다. */
+    const kt = provider === "kakao" ? mapKakaoTerms(p.terms)
+      : provider === "naver" ? mapNaverTerms(p.terms)
+      : null;
+    /* 어느 화면에서 받은 동의인지. 기록에 남는 이름이다. */
+    const ktMethod = provider === "kakao" ? "kakao-sync" : "naver-consent";
 
-         {"nickname": …, "id": …, "email": …}
+    /* 네이버 동의 내역을 못 읽었을 때의 물러선 자리.
 
-       약관 관련 칸이 하나도 없다. 카카오의 service_terms 같은 창구가 없다.
+       전에는 이 자리가 유일한 길이었다 — '네이버는 약관을 안 준다' 고 잘못
+       알았기 때문이다. 이제는 agreement 창구가 먼저고, 그것이 실패했을 때만
+       여기로 온다.
 
-       그래서 '동의 화면을 거친 인가' 를 동의의 근거로 삼는다. auth_type=
-       reprompt 가 붙은 authorize 만 네이버가 동의 화면을 반드시 다시 띄우고,
-       그 왕복을 거쳐 온 요청만 reprompted 가 참이다. 참이면 방금 그 화면을
-       보고 눌렀다는 뜻이다.
-
-       ⚠️ 이 근거는 reprompted 와 한 몸이다. 값을 안 보고 provider 만으로
-          기록하면(전에 그랬다) 동의 화면을 건너뛴 로그인까지 '동의함' 으로
-          적히게 된다. 위쪽 needsConsent 블록과 함께 봐야 한다.
+       근거는 '동의 화면을 거친 인가' 다. auth_type=reprompt 가 붙은 authorize
+       만 네이버가 동의 화면을 반드시 다시 띄우고, 그 왕복을 거쳐 온 요청만
+       reprompted 가 참이다. 참이면 방금 그 화면을 보고 눌렀다는 뜻이다.
 
        ⚠️ 필수 세 항목을 true 로 적는 것은, 네이버 개발자센터에 우리 이용약관·
           개인정보 수집·이용·만 14세가 '필수' 동의항목으로 등록돼 있다는 전제
           위에 선다. 등록을 내리면 이 기록이 거짓이 된다.
 
-       마케팅은 다르다. 선택 항목이라 사람마다 다른데 네이버가 알려 주지
-       않는다. 모르는 것을 true 로 적으면 동의하지 않은 사람에게 광고를 보내게
-       된다. false 로 두고 설정 화면에서 본인이 켜게 한다. */
-    const naverConsent = provider === "naver" && reprompted;
+       마케팅은 다르다. 선택 항목이라 사람마다 다른데, 목록을 못 읽었으면
+       알 길이 없다. 모르는 것을 true 로 적으면 동의하지 않은 사람에게 광고를
+       보내게 된다. false 로 두고 설정 화면에서 본인이 켜게 한다. */
+    const naverConsent = provider === "naver" && reprompted && !kt;
     /* 기존 회원의 기록. 마케팅을 맞춰 줄지 판단하는 데 쓴다. */
     let snapBefore = null;
     if(exists){
@@ -644,9 +764,9 @@ exports.socialLogin = onCall(
     if(!exists){
       if(!p.email) patch.email = null;
       patch.createdAt = now;
-      /* 네이버가 무엇을 보냈는지 남긴다. 동의 화면을 다시 받는 경로에서도
-         남아야 한다 — 지금 보려는 것이 바로 그 경로다. 아직 동의로 쓰지
-         않는다. 무엇이 오는지 눈으로 보고 나서 붙인다. */
+      /* 네이버 프로필 응답에 어떤 칸이 왔는지 남긴다. 값은 빼고 칸 이름만
+         남으므로 개인정보가 아니다. 약관은 여기 오지 않는다 — 그건 위의
+         agreement 창구에서 따로 받아 consents.kakaoTerms 에 담긴다. */
       if(provider === "naver" && p.raw) patch.providerRaw = p.raw;
       if(staleConsent){
         /* consents 를 쓰지 않는다. 그러면 auth-state.js 의 guardConsent 가
@@ -654,7 +774,7 @@ exports.socialLogin = onCall(
       } else {
         patch.consents = kt ? {
           version: CONSENT_VERSION,
-          method: "kakao-sync",         // 카카오 동의 화면에서 받은 동의
+          method: ktMethod,             // 제공자 동의 화면에서 받은 동의
           age14: kt.age14, terms: kt.terms, privacy: kt.privacy,
           marketing: kt.marketing,
           kakaoTerms: kt.raw,           // 받은 그대로. 매핑이 틀려도 자료는 남는다
@@ -663,7 +783,7 @@ exports.socialLogin = onCall(
           version: CONSENT_VERSION,
           method: "naver-consent",      // 네이버 동의 화면에서 받은 동의
           age14: true, terms: true, privacy: true,
-          marketing: false,             // 네이버가 알려 주지 않는다. 설정에서 켠다
+          marketing: false,             // 목록을 못 읽었다. 설정에서 켠다
           agreedAt: now
         } : {
           version: CONSENT_VERSION,
@@ -679,7 +799,7 @@ exports.socialLogin = onCall(
          만진 적이 없을 때만이다.
 
          켜고 끈 기록(marketingAt·marketingOffAt)이 있으면 그 사람은 우리
-         설정 화면에서 자기 뜻을 밝힌 것이다. 카카오 값으로 덮으면 철회를
+         설정 화면에서 자기 뜻을 밝힌 것이다. 제공자 값으로 덮으면 철회를
          무시하는 셈이 된다 — 로그인할 때마다 다시 켜진다.
 
          반대로 만진 적이 없는 회원은 우리가 marketing:false 를 박아 둔
@@ -690,16 +810,21 @@ exports.socialLogin = onCall(
       if(needsFix || !cur.kakaoTerms){
         /* 받은 방식도 실제에 맞춘다. 여태 'signup-notice' 로 적혀 있었는데
            그 고지 문구는 화면에서 지운 지 오래다 — 이 사람들이 실제로 본
-           것은 카카오의 동의 화면이다. 처음 기록은 consentEvents 의
+           것은 제공자의 동의 화면이다. 처음 기록은 consentEvents 의
            'signup' 사건에 그대로 남아 있으므로 잃는 것은 없다.
 
-           필수 세 항목은 건드리지 않는다. 카카오싱크는 필수 약관에 동의해야
-           가입이 되므로 기존 값(true)이 맞고, 태그를 잘못 짚었을 때 멀쩡한
-           동의 기록을 false 로 덮는 쪽이 훨씬 나쁘다. 근거는 아래 원본으로
-           붙는다. */
+           필수 세 항목은 건드리지 않는다. 카카오싱크도 네이버도 필수 약관에
+           동의해야 가입이 되므로 기존 값(true)이 맞고, 태그를 잘못 짚었을 때
+           멀쩡한 동의 기록을 false 로 덮는 쪽이 훨씬 나쁘다. 근거는 아래
+           원본으로 붙는다.
+
+           kakaoTerms 라는 이름은 카카오만 있던 시절에 지었다. 지금은 네이버
+           원본([{termCode, agreeDate}])도 여기 들어간다 — 이름을 바꾸려면
+           이미 쌓인 문서를 옮겨야 해서 두었다. 화면에는 '제공자 약관' 으로
+           보인다. */
         patch.consents = Object.assign({}, cur, {
           kakaoTerms: kt.raw,
-          method: "kakao-sync",
+          method: ktMethod,
         });
         if(needsFix){
           patch.consents.marketing = kt.marketing;

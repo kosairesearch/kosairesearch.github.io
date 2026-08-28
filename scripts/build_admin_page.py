@@ -730,15 +730,22 @@ function drawMember(out, r){
   row('동의 시각', when(r.consents.agreedAt));
   row('마케팅 켠 시각', when(r.marketingAt));
   row('마케팅 끈 시각', when(r.marketingOffAt));
-  /* 카카오가 보낸 약관 목록 그대로. 우리 항목이 맞게 옮겨졌는지는 이걸
-     봐야 안다 — tag 는 개발자센터에서 정한 값이라 코드가 미리 모른다. */
+  /* 제공자가 보낸 약관 목록 그대로. 우리 항목이 맞게 옮겨졌는지는 이걸
+     봐야 안다 — 태그는 개발자센터에서 정한 값이라 코드가 미리 모른다.
+
+     두 곳의 모양이 다르다. 카카오는 항목마다 동의 여부를 주고(tag·required·
+     agreed), 네이버는 동의한 것만 목록에 담아 준다(termCode·agreeDate).
+     담기는 자리는 같아서(consents.kakaoTerms — 카카오만 있던 시절 이름이다)
+     여기서 갈라 읽는다. */
   if(r.consents.kakaoTerms && r.consents.kakaoTerms.length){
-    row('카카오 약관', r.consents.kakaoTerms
-      .map(t => t.tag + (t.required ? '(필수) ' : '(선택) ') + (t.agreed ? '동의' : '미동의'))
+    row('제공자 약관', r.consents.kakaoTerms
+      .map(t => t.termCode
+        ? t.termCode + '(동의' + (t.agreeDate ? ' ' + t.agreeDate : '') + ')'
+        : t.tag + (t.required ? '(필수) ' : '(선택) ') + (t.agreed ? '동의' : '미동의'))
       .join('  ·  '));
   }
-  /* 네이버가 보낸 응답 그대로. 약관 동의가 어느 이름으로 오는지 여기서
-     확인하고 매핑을 붙인다. */
+  /* 네이버 프로필 응답에 어떤 칸이 왔는지. 약관은 여기 오지 않는다 —
+     위의 '제공자 약관' 줄이 그것이다. */
   if(r.providerRaw){
     row('제공자 원본', JSON.stringify(r.providerRaw));
   }
