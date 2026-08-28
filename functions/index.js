@@ -2331,6 +2331,45 @@ exports.purgeUnconsented = onSchedule(
 
     console.log(`[purge] 훑음 ${scanned} · 삭제 ${deleted} · 유지 ${kept} ` +
                 `(그중 제도 시행 전 계정 ${oldAccount}) · 건너뜀 ${skipped}`);
+
+    /* 유령 문서 — Auth 에는 없는데 users 문서만 남은 것.
+
+       위 훑기는 Auth 목록을 돌기 때문에 이런 문서를 아예 보지 못한다.
+       그래서 영영 남는다. 관리자 화면에는 '계정 없음' 인 회원으로 보이고,
+       중복 검사가 그 이메일을 살아 있는 계정으로 믿어 멀쩡한 가입을 막은
+       적도 있다.
+
+       실제로 어떻게 생기나. 동의 화면의 취소가 브라우저에서 Auth 사용자만
+       지우고 있었다 — 규칙으로 users 쓰기를 닫아 두었으니 문서는 지울
+       수가 없었다. 그쪽은 이제 서버 deleteAccount 를 거치게 고쳤고, 여기는
+       그렇게 이미 생긴 것들과 앞으로 다른 경로로 생길 것을 치운다.
+
+       조회가 실패하면 아무것도 지우지 않는다. '못 읽었다' 를 '없다' 로
+       읽으면 멀쩡한 회원 문서를 지우게 된다. */
+    let orphan = 0;
+    try {
+      const docs = (await db.collection("users").limit(2000).get()).docs;
+      for (let i = 0; i < docs.length && orphan < MAX_DELETE; i += 100) {
+        const part = docs.slice(i, i + 100);
+        const res = await admin.auth().getUsers(part.map((d) => ({ uid: d.id })));
+        const live = new Set((res.users || []).map((u) => u.uid));
+        for (const d of part) {
+          if (live.has(d.id)) continue;
+          if (orphan >= MAX_DELETE) break;
+          try {
+            await d.ref.delete();
+            orphan++;
+            console.log(`[purge] 유령 문서 삭제 ${d.id}`);
+          } catch (e) {
+            console.warn(`[purge] 유령 문서 삭제 실패 ${d.id}: ${e.code || e.message}`);
+          }
+        }
+      }
+    } catch (e) {
+      console.warn("[purge] 유령 문서 훑기 실패(아무것도 지우지 않음):", e && e.message);
+    }
+    if (orphan) console.log(`[purge] 유령 문서 ${orphan}건 정리`);
+
     if (capped) {
       console.warn(`[purge] ⚠️ 한 번 상한(${MAX_DELETE})에 걸렸다. 하루 대상이 이렇게 많은 것은 ` +
                    `정상이 아니다 — 조건이 틀렸는지 사람이 확인할 것.`);
