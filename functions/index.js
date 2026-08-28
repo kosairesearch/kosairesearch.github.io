@@ -921,7 +921,17 @@ exports.socialLogin = onCall(
 
        가입·로그인 양쪽에서 같이 돈다. 아래 '기존 회원 맞추기' 가 이 값을
        그대로 쓰므로, 여기서 한 번 거르면 두 경로가 같은 답을 본다. */
-    if(kt && kt.marketing && withdrawnAt !== 0){
+    /* ⚠️ unlinkedAtWithdraw 를 여기에도 봐야 한다. 바로 아래 재동의 판정에는
+          넣고 이 문턱에는 넣지 않아서, 마케팅을 켜고 가입했는데 꺼진 채로
+          기록됐다. 같은 근거를 쓰는 자리가 둘인데 한쪽만 고쳤다.
+
+          연결을 실제로 끊었으면 이번 연결은 첫 연결이다. 첫 연결에는 '이전'
+          이라는 것이 없으므로, 제공자가 지금 주는 목록이 곧 방금 받은 답이다.
+          날짜를 견줄 이유가 없다.
+
+          끊기가 실패했을 때만 날짜를 본다 — 그때는 옛 기록이 그대로 실려
+          오므로 지금 답인지 알 수 없고, 모르면 켜지 않는다. */
+    if(kt && kt.marketing && withdrawnAt !== 0 && !unlinkedAtWithdraw){
       const mAt = kt.marketingAt ? kt.marketingAt.getTime() : 0;
       if(withdrawnAt < 0 || !mAt || mAt <= withdrawnAt){
         console.log(`[naver] ${uid} — 마케팅 동의가 탈퇴 이전 것이라 쓰지 않는다`,
@@ -930,6 +940,12 @@ exports.socialLogin = onCall(
         kt.marketing = false;
         kt.marketingAt = null;
       }
+    }
+    if(kt){
+      console.log(`[naver] ${uid} 마케팅 판정 —`,
+        `제공자 ${kt.marketing}`,
+        `(시각 ${kt.marketingAt ? kt.marketingAt.toISOString() : "없음"})`,
+        `탈퇴 ${withdrawnAt}`, `연결끊김 ${unlinkedAtWithdraw}`);
     }
 
     if(!exists){
