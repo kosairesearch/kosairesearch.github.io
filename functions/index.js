@@ -732,6 +732,9 @@ exports.socialLogin = onCall(
        번거로울 뿐이지만, 받지 않은 동의를 받았다고 적는 것은 되돌릴 수
        없다. */
     let staleConsent = false;
+    /* 제공자가 알려 준 동의 시각이 탈퇴보다 앞서 그대로 적을 수 없을 때 참.
+       기록에 '계정 생성일보다 앞선 동의일' 을 남기지 않으려고 본다. */
+    let providerAgreedAtStale = false;
     if(!exists){
       let withdrawnAt = 0;
       try{
@@ -746,17 +749,32 @@ exports.socialLogin = onCall(
         console.warn("[social] 탈퇴 이력 조회 실패", uid, e && e.message);
         withdrawnAt = -1;                       // 모르면 아래에서 다시 묻는다
       }
+      if(kt && kt.agreedAt && withdrawnAt > 0 && kt.agreedAt.getTime() <= withdrawnAt){
+        providerAgreedAtStale = true;
+      }
+
       /* 제공자가 '언제 동의했는지' 를 알려 준 시각.
-         카카오는 service_terms 가 준다. 네이버는 안 주지만 reprompt 로 방금
-         받았음이 보장되므로 지금으로 본다. */
+
+         reprompt 를 맨 앞에 둔다. 그 값이 참이면 방금 제공자의 동의 화면을
+         보고 눌렀다는 뜻이고, 그건 어떤 날짜보다도 확실한 근거다.
+
+         이 줄이 없어서 재가입이 통째로 막혔다. 네이버는 탈퇴해도 자기 쪽
+         동의 기록을 지우지 않는다 — 동의 화면을 다시 띄워 눌러도 agreeDate
+         는 처음 동의한 날 그대로 온다. 그 날짜를 탈퇴 시각과 견주니 늘
+         '옛 동의' 로 판정됐고, consents 를 안 써서 우리 동의 화면이 또
+         떴다. 제공자 화면과 우리 화면을 둘 다 보게 되는 그 증상이다.
+
+         날짜가 오지 않거나(파싱 실패 포함) 탈퇴 이전이어도 마찬가지다.
+         reprompt 를 거쳤으면 방금 받은 동의다. */
       const providerConsentAt =
-        kt && kt.agreedAt ? kt.agreedAt.getTime()
+        reprompted ? Date.now()               // 방금 동의 화면을 보고 눌렀다
+        : kt && kt.agreedAt ? kt.agreedAt.getTime()
         : naverConsent ? Date.now()
         : 0;
       staleConsent = isStaleProviderConsent(withdrawnAt, providerConsentAt);
-      if(staleConsent){
-        console.log(`[social] 재가입 ${uid} — 제공자 동의가 탈퇴 이전이라 다시 받는다`);
-      }
+      console.log(`[social] 재가입 판정 ${uid} — 탈퇴 ${withdrawnAt}`,
+        `제공자동의 ${kt && kt.agreedAt ? kt.agreedAt.toISOString() : "없음"}`,
+        `reprompt ${reprompted}`, `→ ${staleConsent ? "다시 받는다" : "그대로 쓴다"}`);
     }
 
     const patch = { signupMethod: provider, updatedAt: now };
@@ -772,13 +790,18 @@ exports.socialLogin = onCall(
         /* consents 를 쓰지 않는다. 그러면 auth-state.js 의 guardConsent 가
            다음 화면에서 동의 페이지로 보낸다 — 구글과 같은 길이다. */
       } else {
+        /* 적을 동의 시각. 사용자가 실제로 누른 시각이 우리 서버 시각보다
+           맞다 — 다만 그 값이 탈퇴보다 앞서면 쓸 수 없다. 네이버는 탈퇴해도
+           자기 쪽 동의 기록을 지우지 않아서 처음 동의한 날이 그대로 온다.
+           그걸 그대로 적으면 계정 생성일보다 앞선 동의일이 남는다. */
+        const ktAt = (kt && kt.agreedAt && !providerAgreedAtStale) ? kt.agreedAt : now;
         patch.consents = kt ? {
           version: CONSENT_VERSION,
           method: ktMethod,             // 제공자 동의 화면에서 받은 동의
           age14: kt.age14, terms: kt.terms, privacy: kt.privacy,
           marketing: kt.marketing,
           kakaoTerms: kt.raw,           // 받은 그대로. 매핑이 틀려도 자료는 남는다
-          agreedAt: kt.agreedAt || now  // 사용자가 실제로 누른 시각
+          agreedAt: ktAt
         } : naverConsent ? {
           version: CONSENT_VERSION,
           method: "naver-consent",      // 네이버 동의 화면에서 받은 동의
@@ -792,7 +815,7 @@ exports.socialLogin = onCall(
           marketing: false,             // 선택 — 설정 페이지에서 켠다
           agreedAt: now
         };
-        patch.marketingAt = (kt && kt.marketing) ? (kt.agreedAt || now) : null;
+        patch.marketingAt = (kt && kt.marketing) ? ktAt : null;
       }
     } else if(kt){
       /* 이미 있는 회원. 마케팅만 맞춰 준다. 그리고 우리 쪽에서 한 번도
