@@ -56,6 +56,17 @@ jobs:
             | firebase functions:secrets:set KAKAO_ADMIN_KEY \
               --data-file=- --project kosai-ae167 --force
 
+      # 모닝 브리핑을 제시각에 깨우는 데 쓰는 GitHub 토큰.
+      # 이 저장소의 Actions 에만 쓰기 권한이 있는 fine-grained 토큰이어야 한다.
+      # 없으면 자리만 채운다 — 위와 같은 이유다.
+      - name: GH_DISPATCH_TOKEN 시크릿 등록
+        env:
+          GT: ${{ secrets.GH_DISPATCH_TOKEN }}
+        run: |
+          if [ -n "$GT" ]; then printf '%s' "$GT"; else printf '%s' "미설정"; fi \
+            | firebase functions:secrets:set GH_DISPATCH_TOKEN \
+              --data-file=- --project kosai-ae167 --force
+
       # 규칙을 먼저, 따로 올린다.
       #
       # 처음에는 functions,firestore:rules 를 한 명령에 묶었는데 함수 쪽이
@@ -82,7 +93,7 @@ jobs:
         run: |
           set -o pipefail
           firebase deploy --project kosai-ae167 --non-interactive --force \
-            --only functions:socialLogin,functions:sendVerifyEmail,functions:sendResetEmail,functions:submitForm,functions:getReport,functions:deleteAccount,functions:getUsage,functions:recordSignupConsent,functions:setMarketingConsent,functions:purgeUnconsented,functions:signinHint,functions:adminConsentStats,functions:adminConsentLookup,functions:adminMarketingList,functions:adminUserList,functions:adminNotifyUnconsented \
+            --only functions:socialLogin,functions:sendVerifyEmail,functions:sendResetEmail,functions:submitForm,functions:getReport,functions:deleteAccount,functions:getUsage,functions:recordSignupConsent,functions:setMarketingConsent,functions:purgeUnconsented,functions:signinHint,functions:adminConsentStats,functions:adminConsentLookup,functions:adminMarketingList,functions:adminUserList,functions:adminNotifyUnconsented,functions:wakeMorningBrief,functions:wakeMorningBriefBackup \
             2>&1 | tee -a /tmp/deploy.log
 
       - name: 배포 로그 저장(디버그)
