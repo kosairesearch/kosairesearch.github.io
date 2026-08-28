@@ -248,6 +248,28 @@ const NAVER_TAG_MATCH = {
   marketing: /market|adver|광고|수신|promo|benefit|혜택/i,
 };
 
+/* 네이버가 준 동의 시각을 밀리초로. 시간대 표시가 없으면 한국 시각으로 읽는다.
+
+   ⚠️ 이걸 Date.parse 에 그대로 넘겼다가 동의 시각이 미래로 찍혔다. 가입은
+      8/28 20:09 인데 동의는 8/29 02:48 로 남았다 — 정확히 9시간이다.
+
+      네이버가 주는 값에는 시간대가 붙어 있지 않다("2026-08-28T17:48:33.062").
+      Date.parse 는 시간대 없는 값을 그 기계의 지역 시각으로 읽는데, 우리
+      함수는 UTC 로 도니 한국 시각 17:48 을 UTC 17:48(= 한국 02:48) 로
+      읽어 버린다. 네이버는 한국 서비스이고 개발자센터도 한국 시각으로
+      보여 주므로 KST 로 읽는 것이 맞다.
+
+   Z 나 +09:00 같은 표시가 붙어 오면 그 값을 존중한다 — 네이버가 나중에
+   형식을 바꿔도 우리가 9시간을 덧붙이지 않게. */
+function parseNaverDate(v){
+  const s = String(v || "").trim();
+  if(!s) return NaN;
+  const hasZone = /(Z|[+-]\d{2}:?\d{2})$/i.test(s);
+  if(hasZone) return Date.parse(s);
+  /* 'YYYY-MM-DD HH:MM:SS' 처럼 공백으로 갈라져 와도 받는다. */
+  return Date.parse(s.replace(" ", "T") + "+09:00");
+}
+
 function mapNaverTerms(list){
   if(!Array.isArray(list)) return null;
 
@@ -276,8 +298,16 @@ function mapNaverTerms(list){
   let agreedAt = null;
   for(const t of list){
     if(!agreedOf(t) || !t.agreeDate) continue;
-    const ms = Date.parse(t.agreeDate);
-    if(ms && (!agreedAt || ms > agreedAt)) agreedAt = ms;
+    const ms = parseNaverDate(t.agreeDate);
+    if(!ms || Number.isNaN(ms)) continue;
+    /* 앞선 시각은 버린다. 형식을 잘못 읽으면 미래로 튀는데, 미래에 받은
+       동의라는 것은 있을 수 없다. 그런 값을 적느니 없는 편이 낫다 —
+       부르는 쪽이 서버 시각으로 물러선다. */
+    if(ms > Date.now() + 60000){
+      console.warn("[naver] agreeDate 가 미래다. 버린다:", t.termCode, t.agreeDate);
+      continue;
+    }
+    if(!agreedAt || ms > agreedAt) agreedAt = ms;
   }
 
   return {
