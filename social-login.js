@@ -30,15 +30,16 @@ function ready(provider){
   return false;
 }
 
-function redirectToProvider(provider, next){
+function redirectToProvider(provider, next, reprompt){
   const redirectUri = location.origin + location.pathname; // 예: https://.../Login.html
   const nonce = Math.random().toString(36).slice(2) + Date.now().toString(36);
-  sessionStorage.setItem("kos_social", JSON.stringify({ provider, next, nonce, redirectUri }));
+  sessionStorage.setItem("kos_social",
+    JSON.stringify({ provider, next, nonce, redirectUri, reprompt: !!reprompt }));
   const clientId = provider === "kakao" ? SOCIAL.kakaoRestKey : SOCIAL.naverClientId;
   let url = `${AUTHORIZE[provider]}?response_type=code&client_id=${encodeURIComponent(clientId)}`
     + `&redirect_uri=${encodeURIComponent(redirectUri)}&state=${nonce}`;
 
-  /* 네이버는 동의 화면을 늘 다시 띄운다.
+  /* 네이버 동의 화면은 필요할 때만 띄운다.
 
      한 번 연결하면 네이버는 그 뒤로 동의 화면을 건너뛴다. 탈퇴하고 다시
      가입해도 마찬가지라, 무엇에 동의하는지 못 본 채 계정이 만들어진다.
@@ -46,15 +47,20 @@ function redirectToProvider(provider, next){
      그런 창구가 없다 — 대신 authorize 에 auth_type=reprompt 를 붙이면
      그 자리에서 동의 화면이 다시 뜬다.
 
-     처음에는 가입 화면에서 누를 때만 붙였다. 틀린 판단이었다. 같은 네이버
-     버튼이 로그인 화면에도 있어서, 어디서 눌렀느냐에 따라 동의 화면이 떴다
-     안 떴다 했다. 사용자는 그 차이를 알 수 없고, 우리도 '이번엔 왜 안 뜨지'
-     를 매번 되짚어야 한다. 조건부로 뜨는 동의 화면은 없는 것보다 나쁘다.
+     처음에는 가입 화면에서 누를 때만 붙였다가, 로그인 화면에서 재가입하면
+     안 뜨길래 늘 붙이게 바꿨다. 그랬더니 이번에는 그냥 로그인하는 사람에게
+     매번 동의 화면이 떴다. 둘 다 틀렸다 — 화면이 어디냐로는 알 수 없는
+     것을 화면으로 판단하려 했다.
 
-     대가는 돌아오는 사용자가 로그인할 때마다 확인 한 번을 더 하는 것이다.
-     네이버 쪽 동의 내역을 읽게 되면(검수 승인 뒤) 이 줄을 뺀다 — 그때는
-     서버가 언제 동의했는지 알 수 있으므로 다시 물을 이유가 없다. */
-  if(provider === "naver"){
+     알아야 하는 것은 '계정을 새로 만드는가' 다. 그건 서버만 안다. 그래서
+     처음에는 붙이지 않고 보낸다. 서버가 계정을 만들어야 하는데 동의를 못
+     받았다고 하면(needsConsent) 그때 이 값을 붙여 한 번 더 보낸다.
+
+       돌아오는 사용자   화면 한 번. 동의 화면 없음
+       처음 가입·재가입  네이버를 두 번 거친다. 두 번째에 동의 화면
+
+     네이버 쪽 동의 내역을 읽게 되면(검수 승인 뒤) 이 왕복이 사라진다. */
+  if(provider === "naver" && reprompt){
     url += "&auth_type=reprompt";
   }
   location.href = url;
@@ -68,7 +74,11 @@ async function completeLogin(code, returnedState, saved, onError){
       provider: saved.provider,
       code,
       redirectUri: saved.redirectUri,
-      state: returnedState
+      state: returnedState,
+      /* 이 인가가 동의 화면을 거쳐 왔는지. 서버는 이 값이 참일 때만 네이버
+         동의를 기록한다 — 거짓이면 계정을 만들지 않고 needsConsent 를
+         돌려준다. */
+      reprompt: saved.reprompt === true
     };
 
     /* 우리 동의 화면을 띄우지 않는다.
@@ -80,6 +90,13 @@ async function completeLogin(code, returnedState, saved, onError){
        동의를 기록한다(method: "signup-notice"). 기록에 실패하면 계정도
        만들지 않는다. */
     const { data } = await call(payload);
+
+    /* 계정을 만들어야 하는데 동의 화면을 거치지 않았다. 동의 화면을 띄우도록
+       한 번 더 보낸다. 이번에는 auth_type=reprompt 가 붙는다. */
+    if(data && data.needsConsent){
+      redirectToProvider(saved.provider, saved.next || "", true);
+      return;
+    }
     if(!data || !data.token) throw new Error("가입을 마치지 못했습니다.");
 
     await signInWithCustomToken(auth, data.token);
@@ -133,7 +150,8 @@ export function wireSocialButtons(opts = {}){
         onError && onError(T("카카오·네이버 로그인은 앱 키 설정이 필요합니다. (firebase-config.js 참고)"));
         return;
       }
-      redirectToProvider(provider, params.get("next") || "");
+      /* 처음에는 동의 화면 없이 보낸다. 필요하면 서버가 알려 준다. */
+      redirectToProvider(provider, params.get("next") || "", false);
     });
   }
 

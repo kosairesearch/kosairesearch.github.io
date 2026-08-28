@@ -430,6 +430,8 @@ exports.socialLogin = onCall(
     }
 
     const safeRedirect = checkRedirectUri(redirectUri);
+    /* 이 인가가 동의 화면을 거쳐 왔는가(네이버). 아래 두 곳에서 쓴다. */
+    const reprompted = (req.data || {}).reprompt === true;
 
     let p;
     if(provider === "kakao") p = await kakaoProfile(code, safeRedirect);
@@ -467,6 +469,38 @@ exports.socialLogin = onCall(
     }catch(e){
       if(e.code === "auth/user-not-found") exists = false;
       else throw new HttpsError("internal", `user_lookup_failed: ${e.code || e.message}`);
+    }
+
+    /* 네이버 — 계정을 만들어야 하는데 동의 화면을 거치지 않았으면 되돌린다.
+
+       전에는 네이버 authorize 에 auth_type=reprompt 를 늘 붙였다. 그래야
+       동의 화면이 뜨는데, 그러면 그냥 로그인하는 사람도 매번 동의를 다시
+       확인해야 한다. 짜증나는 정도가 아니라 서비스가 고장 난 것처럼 보인다.
+
+       화면이 어디냐(로그인/가입)로는 판단할 수 없다. 재가입도 로그인 화면에서
+       일어난다. 알아야 하는 것은 '계정을 새로 만드는가' 이고 그건 여기서만
+       안다. 그래서 여기서 판단해 돌려보낸다.
+
+         이미 있고 동의도 있다  → 그대로 로그인. 동의 화면 없음
+         만들어야 한다          → needsConsent. 클라이언트가 reprompt 를
+                                  붙여 한 번 더 보낸다
+
+       reprompt 값 자체는 클라이언트가 보낸다. 서버가 검증할 방법은 없다.
+       다만 이걸 거짓으로 꾸며서 얻는 것은 자기 계정의 동의 기록을 흐리는
+       것뿐이고, 남의 계정에는 닿지 않는다. */
+    if(provider === "naver" && !reprompted){
+      let hasConsent = false;
+      if(exists){
+        try{
+          const d = (await admin.firestore().collection("users").doc(uid).get()).data() || {};
+          hasConsent = !!(d.consents && d.consents.agreedAt);
+        }catch(e){
+          /* 못 읽었으면 동의 화면을 한 번 더 거치게 한다. 확인 못 한 것을
+             '있다' 로 넘기면 동의 없는 계정이 그대로 지나간다. */
+          console.warn("[naver] 기존 동의 조회 실패", uid, e && e.message);
+        }
+      }
+      if(!hasConsent) return { needsConsent: true };
     }
 
     /* 새 소셜 계정을 만들기 전에, 같은 이메일을 쓰는 계정이 이미 있는지 본다.
@@ -533,14 +567,14 @@ exports.socialLogin = onCall(
 
        약관 관련 칸이 하나도 없다. 카카오의 service_terms 같은 창구가 없다.
 
-       그래서 '인가가 성립했다' 를 동의의 근거로 삼는다. 근거가 서는 이유는
-       social-login.js 가 네이버 authorize 에 auth_type=reprompt 를 늘 붙이기
-       때문이다 — 그 값이 있으면 네이버가 동의 화면을 반드시 다시 띄운다.
-       여기 도달했다는 것은 방금 그 화면을 보고 눌렀다는 뜻이다.
+       그래서 '동의 화면을 거친 인가' 를 동의의 근거로 삼는다. auth_type=
+       reprompt 가 붙은 authorize 만 네이버가 동의 화면을 반드시 다시 띄우고,
+       그 왕복을 거쳐 온 요청만 reprompted 가 참이다. 참이면 방금 그 화면을
+       보고 눌렀다는 뜻이다.
 
-       ⚠️ 이 근거는 reprompt 와 한 몸이다. social-login.js 에서 그 줄을 빼면
-          여기도 같이 손봐야 한다. 빼는 순간 '동의 화면을 봤다' 가 성립하지
-          않는다.
+       ⚠️ 이 근거는 reprompted 와 한 몸이다. 값을 안 보고 provider 만으로
+          기록하면(전에 그랬다) 동의 화면을 건너뛴 로그인까지 '동의함' 으로
+          적히게 된다. 위쪽 needsConsent 블록과 함께 봐야 한다.
 
        ⚠️ 필수 세 항목을 true 로 적는 것은, 네이버 개발자센터에 우리 이용약관·
           개인정보 수집·이용·만 14세가 '필수' 동의항목으로 등록돼 있다는 전제
@@ -549,7 +583,7 @@ exports.socialLogin = onCall(
        마케팅은 다르다. 선택 항목이라 사람마다 다른데 네이버가 알려 주지
        않는다. 모르는 것을 true 로 적으면 동의하지 않은 사람에게 광고를 보내게
        된다. false 로 두고 설정 화면에서 본인이 켜게 한다. */
-    const naverConsent = provider === "naver";
+    const naverConsent = provider === "naver" && reprompted;
     /* 기존 회원의 기록. 마케팅을 맞춰 줄지 판단하는 데 쓴다. */
     let snapBefore = null;
     if(exists){
