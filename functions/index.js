@@ -1311,6 +1311,59 @@ function consentNoticeMail(lang){
   };
 }
 
+/* ── 마케팅 수신 동의 2년 재확인 메일 ────────────────────────────
+   개인정보처리방침에 "동의를 받은 날부터 2년마다 수신 동의 여부를 확인
+   합니다" 라고 적어 두었다. 적어 놓기만 하고 확인할 수단이 없으면 그건
+   지키지 않는 약속이다.
+
+   근거는 정보통신망법 시행령 제62조의3 이고, 알려야 하는 것이 정해져 있다.
+
+     ① 전송자의 명칭
+     ② 수신동의 날짜와 그 사실
+     ③ 수신동의에 대한 유지 또는 철회 의사표시 방법
+
+   셋을 본문에 그대로 담는다. 특히 ②는 사람마다 다르므로 인자로 받는다 —
+   "언제 동의하셨습니다" 를 못 적으면 이 메일은 요건을 못 채운다.
+
+   ⚠️ 답이 없으면 동의가 유지된 것으로 본다(같은 조). 그러니 이 메일은
+      다시 받아 내려는 것이 아니라 알리고 철회할 길을 열어 두는 것이다.
+      무응답을 미동의로 바꾸면 오히려 법이 정한 것과 달라진다. */
+function marketingRecheckMail(lang, agreedAtText){
+  const link = SITE_URL + "/Settings.html";
+  const en = lang === "en";
+  if(en){
+    return {
+      subject: "[KOSAI] Biennial confirmation of your marketing consent",
+      html: mailLayout({ lang, heading: "Confirming your marketing consent",
+        intro: "Hello,<br><br>" +
+               "KOSAI is required to reconfirm marketing consent every two years " +
+               "under Article 62-3 of the Enforcement Decree of the Network Act. " +
+               "We are writing to confirm the following.<br><br>" +
+               "&middot; Sender: KOSAI<br>" +
+               `&middot; You consented to receive marketing messages on <b>${esc(agreedAtText)}</b>, and that consent remains in effect.<br>` +
+               "&middot; To withdraw, open Settings and switch off <b>Marketing messages</b>. You may also reply to this email.<br><br>" +
+               "If you wish to continue receiving them, no action is needed. " +
+               "Withdrawing places no restriction on your use of the service.",
+        btnText: "Open settings", link,
+        outro: "This message is a statutory confirmation notice concerning your consent, not a commercial advertisement. For enquiries, please contact hello@kosai.kr." })
+    };
+  }
+  return {
+    subject: "[KOSAI] 마케팅 정보 수신 동의 확인 안내",
+    html: mailLayout({ lang, heading: "마케팅 정보 수신 동의 확인",
+      intro: "안녕하세요, KOSAI입니다.<br><br>" +
+             "「정보통신망 이용촉진 및 정보보호 등에 관한 법률 시행령」 제62조의3에 따라 " +
+             "수신 동의 여부를 2년마다 확인해 드리고 있습니다. 아래 내용을 안내드립니다.<br><br>" +
+             "&middot; 전송자: KOSAI<br>" +
+             `&middot; 회원님은 <b>${esc(agreedAtText)}</b>에 마케팅 정보 수신에 동의하셨으며, 현재 동의가 유지되고 있습니다.<br>` +
+             "&middot; 철회 방법: 설정 화면에서 <b>마케팅 정보 수신</b>을 끄시면 즉시 철회됩니다. 본 메일에 회신하셔도 됩니다.<br><br>" +
+             "계속 받아 보길 원하시면 따로 하실 일은 없습니다. " +
+             "철회하셔도 서비스 이용에는 아무런 제한이 없습니다.",
+      btnText: "설정 화면 열기", link,
+      outro: "본 메일은 수신 동의 확인을 위한 법정 안내이며 광고성 정보가 아닙니다. 문의사항은 hello@kosai.kr로 연락 주시기 바랍니다." })
+  };
+}
+
 function emailOk(e){ return typeof e === "string" && /^[^@\s]+@[^@\s]+\.[^@\s]+$/.test(e); }
 
 // 이메일 인증 메일 — 가입 직후/재발송. 이메일 열거·스팸 방지를 위해
@@ -1860,9 +1913,17 @@ exports.adminConsentStats = onCall({ region: REGION, cors: true }, async (req) =
     byProvider[p] = (byProvider[p] || 0) + 1;
     if (c.marketing) {
       marketing++;
-      const at = u.marketingAt || c.agreedAt;
-      const ms = at && at.toDate ? at.toDate().getTime() : 0;
-      if (ms && now - ms >= TWO_YEARS) dueRecheck++;
+      /* 시계는 '마지막으로 확인한 때' 부터 잰다.
+
+         ⚠️ 처음에는 marketingAt(최초 동의일) 만 봤다. 그러면 재확인 메일을
+            보내도 그 사람은 영원히 대상으로 남는다 — 숫자가 줄지 않으니
+            보냈는지 안 보냈는지 화면으로는 알 수가 없다.
+
+         marketingRecheck 가 보낸 뒤 marketingRecheckedAt 을 찍는다. 여기서
+         같은 기준으로 세야 두 곳이 어긋나지 않는다. */
+      const ms = (t) => (t && t.toDate ? t.toDate().getTime() : 0);
+      const base = Math.max(ms(u.marketingAt), ms(u.marketingRecheckedAt), ms(c.agreedAt));
+      if (base && now - base >= TWO_YEARS) dueRecheck++;
     }
   });
   /* 동의 없는 계정 — 이 화면이 여태 못 보던 것.
@@ -2809,6 +2870,121 @@ exports.adminWakeBrief = onCall(
     assertAdmin(req);
     const ok = await dispatchBrief("관리자 수동 시험");
     return { ok };
+  }
+);
+
+/* ── 마케팅 수신 동의 2년 재확인 ─────────────────────────────────
+   개인정보처리방침에 "동의를 받은 날부터 2년마다 수신 동의 여부를 확인
+   합니다" 라고 적어 두었다(정보통신망법 시행령 제62조의3). 그런데 여태
+   관리자 화면에 '2년 재확인 대상' 숫자를 세는 것까지만 해 두었다. 세기만
+   하고 보내지 않으면 지키지 않는 약속이다.
+
+   시계를 어디서 재는가. marketingAt(최초 동의일) 하나만 보면, 한 번 대상이
+   된 사람은 재확인 메일을 보내도 영원히 대상으로 남는다 — 시계가 돌지
+   않는다. 그래서 marketingRecheckedAt 을 따로 두고 둘 중 나중 것을 기준
+   으로 삼는다. 최초 동의일은 증거라 절대 덮지 않는다.
+
+   무응답은 동의 유지로 본다(같은 조). 그러니 이 함수는 동의를 다시 받아
+   내는 것이 아니라, 알리고 철회할 길을 열어 두고 그 사실을 남기는 것이다.
+
+   한 번에 보내는 상한을 둔다. 이 함수는 사람 확인 없이 매달 돌면서 실제
+   메일을 내보낸다 — 조건을 잘못 쓰면 전 회원에게 한꺼번에 나간다. 상한에
+   걸리면 남은 사람은 다음 달에 처리되고 로그에 그 사실이 남는다.
+
+   dryRun 으로 부르면 대상만 세고 아무것도 보내지 않는다. 첫 대상이 나오는
+   것은 2028년이라, 그때까지 한 번도 못 돌려 보고 두면 그날 처음 터진다.
+   관리자 화면 버튼이 이 길로 들어온다. */
+async function runMarketingRecheck({ dryRun = true, limit = 100 } = {}){
+  const db = admin.firestore();
+  const TWO_YEARS = 2 * 365 * 24 * 60 * 60 * 1000;
+  const now = Date.now();
+  const ms = (t) => (t && t.toDate ? t.toDate().getTime() : 0);
+
+  const out = { dryRun, due: 0, sent: 0, failed: 0, noEmail: 0, capped: false, targets: [] };
+
+  let snap;
+  try{
+    snap = await db.collection("users").limit(5000).get();
+  }catch(e){
+    console.error("[recheck] 회원 조회 실패:", e && e.message);
+    return Object.assign(out, { error: "user_query_failed" });
+  }
+
+  for(const d of snap.docs){
+    const u = d.data() || {};
+    const c = u.consents || {};
+    if(c.marketing !== true) continue;
+
+    /* 최초 동의일과 마지막 재확인일 중 나중 것. 둘 다 없으면 판단할 수
+       없으므로 건드리지 않는다 — 모르는 것을 '2년 지났다' 로 볼 수 없다. */
+    const base = Math.max(ms(u.marketingAt), ms(u.marketingRecheckedAt), ms(c.agreedAt));
+    if(!base || now - base < TWO_YEARS) continue;
+    out.due++;
+
+    const email = String(u.email || "").trim().toLowerCase();
+    if(!emailOk(email)){ out.noEmail++; continue; }   // 카카오처럼 주소가 없는 계정
+    if(out.sent >= limit){ out.capped = true; continue; }
+
+    const agreedAtText = new Intl.DateTimeFormat("sv-SE",
+      { timeZone: "Asia/Seoul", year: "numeric", month: "2-digit", day: "2-digit" })
+      .format(new Date(ms(u.marketingAt) || base));
+
+    if(dryRun){
+      out.targets.push({ uid: d.id, email, agreedAt: agreedAtText });
+      out.sent++;                                     // 미리 보기에서는 '보낼 수' 다
+      continue;
+    }
+
+    const mail = marketingRecheckMail("ko", agreedAtText);
+    try{
+      const resend = new Resend(RESEND_API_KEY.value());
+      const { error } = await resend.emails.send({
+        from: MAIL_FROM, to: email, subject: mail.subject, html: mail.html });
+      if(error) throw new Error(error.message || "resend_failed");
+    }catch(e){
+      /* 한 사람 실패가 나머지를 막지 않는다. 시계도 돌리지 않는다 —
+         못 보냈으면 다음 달에 다시 대상이 되어야 한다. */
+      console.error("[recheck] 발송 실패", d.id, e && e.message);
+      out.failed++;
+      continue;
+    }
+
+    /* 보낸 뒤에만 시계를 돌린다. 순서를 뒤집으면 발송이 실패했는데 2년을
+       더 기다리게 된다. */
+    try{
+      await d.ref.set({
+        marketingRecheckedAt: admin.firestore.FieldValue.serverTimestamp(),
+        updatedAt: admin.firestore.FieldValue.serverTimestamp()
+      }, { merge: true });
+    }catch(e){
+      console.error("[recheck] 시각 기록 실패", d.id, e && e.message);
+    }
+    await logConsent(db, d.id, "marketing_recheck",
+      { email, agreedAt: agreedAtText }, null);
+    out.sent++;
+  }
+
+  console.log(`[recheck] ${dryRun ? "미리 보기" : "발송"} — 대상 ${out.due}`,
+    `보냄 ${out.sent} 실패 ${out.failed} 주소없음 ${out.noEmail}`,
+    out.capped ? "(상한에 걸림)" : "");
+  return out;
+}
+
+/* 매달 1일 12:40 KST. 하루에 몇 명이 걸리는 일이 아니라 달마다 확인하면
+   충분하고, 자주 돌수록 잘못 보낼 기회만 늘어난다. */
+exports.marketingRecheck = onSchedule(
+  { region: REGION, schedule: "40 3 1 * *", timeZone: "Etc/UTC", secrets: [RESEND_API_KEY] },
+  async () => { await runMarketingRecheck({ dryRun: false, limit: 100 }); }
+);
+
+/* 관리자 화면에서 지금 돌려 보는 길. 기본은 미리 보기다 — 실제 발송은
+   dryRun:false 를 명시해야 한다. 동의 안내 메일과 같은 방식이다. */
+exports.adminMarketingRecheck = onCall(
+  { region: REGION, cors: true, secrets: [RESEND_API_KEY] },
+  async (req) => {
+    assertAdmin(req);
+    const dryRun = (req.data || {}).dryRun !== false;
+    return await runMarketingRecheck({ dryRun, limit: 100 });
   }
 );
 
