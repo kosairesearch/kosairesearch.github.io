@@ -286,6 +286,35 @@ function mapNaverTerms(list){
   const hit = (key) => list.find(t =>
     NAVER_TAG_MATCH[key].test(String(t.termCode || "")) && agreedOf(t));
 
+  /* 필수 항목인데 그 태그가 목록에 없을 때 물러설 자리.
+
+     ⚠️ 이게 없어서 로그인할 때마다 우리 동의 화면이 떴다. 개발자센터에
+        등록된 약관이 terms·privacy·marketing 셋뿐이라 age14 태그가 오지
+        않았고, 그러면 hit("age14") 가 undefined 라 age14:false 로 적혔다.
+        consentStage 는 필수 세 항목을 모두 보므로 '동의 없음' 이고,
+        guardConsent 가 매번 동의 화면으로 보냈다.
+
+        false 는 '동의하지 않았다' 라는 뜻인데 실제로는 '묻지 않았다' 였다.
+        모르는 것을 아니라고 적은 것이 틀렸다.
+
+     물러설 근거는 이렇다. 네이버 동의 화면은 필수 약관에 모두 동의해야
+     통과되므로, 목록이 하나라도 돌아왔다는 것은 등록된 필수 약관을 전부
+     받았다는 뜻이다. 그리고 그중 이용약관(제3조)이 만 14세 확인을 담고
+     있다 — 그 약관에 동의한 것이 곧 이 항목의 근거다.
+
+     ⚠️ 이건 물러선 값이지 제대로 받은 동의가 아니다. 개발자센터에 태그
+        age14 로 약관을 하나 더 등록하면 네이버 화면에서 별도 항목으로
+        받고 그 결과가 여기 그대로 온다 — 그게 제대로 된 모습이다.
+
+     마케팅은 물러서지 않는다. 선택 항목이라 '통과했으니 동의했겠거니' 가
+     성립하지 않는다. 없으면 미동의다. */
+  const gotAny = list.some(agreedOf);
+  const pick = (key) => {
+    if(hit(key)) return true;
+    if(gotAny) console.log(`[naver] ${key} 약관이 없어 동의 화면 통과로 물러선다.`);
+    return gotAny;
+  };
+
   const mk = hit("marketing");
   if(!list.length){
     console.warn("[naver] agreementInfos 가 비어 있다 — 약관 등록 상태를 확인할 것.");
@@ -311,9 +340,9 @@ function mapNaverTerms(list){
   }
 
   return {
-    age14: !!hit("age14"),
-    terms: !!hit("terms"),
-    privacy: !!hit("privacy"),
+    age14: pick("age14"),
+    terms: pick("terms"),
+    privacy: pick("privacy"),
     marketing: !!mk,
     marketingKnown: true,             // 목록을 받았다는 것 자체가 답이다
     agreedAt: agreedAt ? new Date(agreedAt) : null,
@@ -860,6 +889,23 @@ exports.socialLogin = onCall(
       const cur = (snapBefore && snapBefore.consents) || {};
       const touched = !!(snapBefore && (snapBefore.marketingAt || snapBefore.marketingOffAt));
       const needsFix = !touched && cur.marketing !== kt.marketing;
+
+      /* 필수 항목이 false 로 굳어 버린 기록을 되살린다.
+
+         ⚠️ 이걸 안 해서, 한 번 잘못 적힌 계정이 로그인할 때마다 동의 화면을
+            봤다. age14 태그가 개발자센터에 없던 탓에 age14:false 로 적혔고,
+            그 뒤로는 제공자 값이 맞게 와도 여기서 고쳐 주지 않았다.
+
+         올리기만 한다(false → true). 내리지는 않는다 — 태그를 잘못 짚었을 때
+         멀쩡한 동의 기록을 false 로 덮는 쪽이 훨씬 나쁘다. */
+      const raise = {};
+      for(const k of ["age14", "terms", "privacy"]){
+        if(kt[k] === true && cur[k] !== true) raise[k] = true;
+      }
+      const needsRaise = Object.keys(raise).length > 0;
+      if(needsRaise){
+        console.log(`[social] ${uid} — 필수 항목을 되살린다:`, Object.keys(raise).join(", "));
+      }
       /* 고칠 기록이 실제로 있을 때만 손댄다.
 
          ⚠️ 이 조건이 없어서 무한 루프가 났다. 계정은 있는데 동의 기록이
@@ -878,22 +924,21 @@ exports.socialLogin = onCall(
          동의 화면에서 통째로 쓴다. */
       if(!cur.agreedAt){
         console.log(`[social] ${uid} — 동의 기록이 없어 제공자 약관 맞추기를 건너뛴다`);
-      } else if(needsFix || !cur.kakaoTerms){
+      } else if(needsFix || needsRaise || !cur.kakaoTerms){
         /* 받은 방식도 실제에 맞춘다. 여태 'signup-notice' 로 적혀 있었는데
            그 고지 문구는 화면에서 지운 지 오래다 — 이 사람들이 실제로 본
            것은 제공자의 동의 화면이다. 처음 기록은 consentEvents 의
            'signup' 사건에 그대로 남아 있으므로 잃는 것은 없다.
 
-           필수 세 항목은 건드리지 않는다. 카카오싱크도 네이버도 필수 약관에
-           동의해야 가입이 되므로 기존 값(true)이 맞고, 태그를 잘못 짚었을 때
-           멀쩡한 동의 기록을 false 로 덮는 쪽이 훨씬 나쁘다. 근거는 아래
-           원본으로 붙는다.
+           필수 세 항목은 올리기만 한다(raise). 내리지 않는다 — 태그를 잘못
+           짚었을 때 멀쩡한 동의 기록을 false 로 덮는 쪽이 훨씬 나쁘다.
+           근거는 아래 원본으로 붙는다.
 
            kakaoTerms 라는 이름은 카카오만 있던 시절에 지었다. 지금은 네이버
            원본([{termCode, agreeDate}])도 여기 들어간다 — 이름을 바꾸려면
            이미 쌓인 문서를 옮겨야 해서 두었다. 화면에는 '제공자 약관' 으로
            보인다. */
-        patch.consents = Object.assign({}, cur, {
+        patch.consents = Object.assign({}, cur, raise, {
           kakaoTerms: kt.raw,
           method: ktMethod,
         });
@@ -901,7 +946,7 @@ exports.socialLogin = onCall(
           patch.consents.marketing = kt.marketing;
           patch.marketingAt = kt.marketing ? (kt.agreedAt || now) : null;
         }
-        syncedTerms = needsFix ? "marketing" : "terms";
+        syncedTerms = needsFix ? "marketing" : needsRaise ? "required" : "terms";
       }
     }
     try{
