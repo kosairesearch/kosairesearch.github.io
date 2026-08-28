@@ -40,6 +40,7 @@ MAIN = '''<main>
         <div class="adm-wrap"><table class="adm-tbl adm-tbl-nc" id="nc"></table></div>
         <div class="adm-act">
           <button type="button" class="btn btn-primary" id="noticeBtn">안내 메일 대상 확인</button>
+          <button type="button" class="btn" id="orphanBtn">유령 문서 지금 정리</button>
           <span class="adm-note" id="noticeNote"></span>
         </div>
         <div id="noticeBox"></div>
@@ -196,6 +197,9 @@ DICT = '''if(window.KOSi18n) KOSi18n.register({
     "Could not send — the token is missing or lacks permission.",
   "카카오 약관":"Kakao terms",
   "제공자 원본":"Provider response",
+  "유령 문서 지금 정리":"Clean up orphan records",
+  " 정리했습니다. 새로고침하면 사라집니다.":" cleaned up.",
+  "정리할 유령 문서가 없습니다.":"No orphan records to clean up.",
   "안내 메일 대상 확인":"Preview notice recipients",
   "에게 안내 메일이 갑니다.":" will receive the notice email.",
   "보낼 대상이 없습니다.":"No one to notify.",
@@ -623,6 +627,24 @@ $('#wakeBtn').addEventListener('click', async () => {
     note.textContent = ' ' + ((e && e.message) || T('불러오지 못했습니다.'));
   }
   $('#wakeBtn').disabled = false;
+});
+
+/* 콘솔에서 Auth 사용자만 지우면 users 문서가 남는다. 매일 12:30 정리가
+   치우지만 개발 중에는 그때까지 기다릴 이유가 없다. */
+$('#orphanBtn').addEventListener('click', async () => {
+  const note = $('#noticeNote');
+  $('#orphanBtn').disabled = true;
+  note.textContent = ' ' + T('확인하는 중…');
+  try{
+    const r = await call('adminPurgeOrphans');
+    note.textContent = ' ' + (r.count
+      ? countText(r.count) + T(' 정리했습니다. 새로고침하면 사라집니다.')
+      : T('정리할 유령 문서가 없습니다.'));
+    if(r.count){ loadUsers(); }
+  }catch(e){
+    note.textContent = ' ' + ((e && e.message) || T('불러오지 못했습니다.'));
+  }
+  $('#orphanBtn').disabled = false;
 });
 
 $('#filter').addEventListener('input', drawUsers);
