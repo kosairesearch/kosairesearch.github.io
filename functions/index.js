@@ -883,13 +883,21 @@ exports.socialLogin = onCall(
           더 드는 것보다, 동의하지 않은 사람에게 광고가 나가는 쪽이 훨씬
           비싸다. */
     let withdrawnAt = 0;
+    /* 그 탈퇴에서 제공자 연결을 실제로 끊었는가. deleteAccount 가
+       providerUnlinked 로 남긴다. 끊었다면 다음 로그인은 첫 연결이므로
+       제공자가 동의 화면을 다시 띄웠다는 뜻이다. */
+    let unlinkedAtWithdraw = false;
     try{
       const w = await db.collection("consentEvents")
         .where("uid", "==", uid).where("kind", "==", "withdraw").limit(10).get();
       w.forEach(d => {
-        const t = (d.data() || {}).at;
+        const data = d.data() || {};
+        const t = data.at;
         const ms = t && t.toDate ? t.toDate().getTime() : 0;
-        if(ms > withdrawnAt) withdrawnAt = ms;
+        if(ms > withdrawnAt){
+          withdrawnAt = ms;
+          unlinkedAtWithdraw = data.providerUnlinked === true;
+        }
       });
     }catch(e){
       console.warn("[social] 탈퇴 이력 조회 실패", uid, e && e.message);
@@ -941,9 +949,23 @@ exports.socialLogin = onCall(
          떴다. 제공자 화면과 우리 화면을 둘 다 보게 되는 그 증상이다.
 
          날짜가 오지 않거나(파싱 실패 포함) 탈퇴 이전이어도 마찬가지다.
-         reprompt 를 거쳤으면 방금 받은 동의다. */
+         reprompt 를 거쳤으면 방금 받은 동의다.
+
+         unlinkedAtWithdraw 도 같은 자리에 둔다. 탈퇴할 때 제공자 연결을
+         실제로 끊었다면 다음 로그인은 첫 연결이고, 그러면 제공자가 동의
+         화면을 반드시 띄운다 — 여기 도달했다는 것은 그 화면을 보고 눌렀다는
+         뜻이다. 제공자가 알려 주는 날짜가 무엇이든 상관없다.
+
+         ⚠️ 이 줄이 없어서 우리 동의 화면이 떴다. reprompt 왕복을 걷어내면서
+            '방금 동의 화면을 봤다' 는 근거가 통째로 사라졌는데, 그 자리를
+            대신할 근거(연결을 끊었다)를 넣지 않았다. 그래서 판정이 늘
+            제공자 날짜로 떨어졌고, 그 날짜는 옛 것이라 '옛 동의' 가 됐다.
+
+            땜질을 걷어낼 때는 그 땜질이 대신하던 일을 무엇이 맡을지까지
+            같이 정해야 한다. */
       const providerConsentAt =
         reprompted ? Date.now()               // 방금 동의 화면을 보고 눌렀다
+        : unlinkedAtWithdraw ? Date.now()     // 연결을 끊었으니 이번이 첫 연결이다
         : kt && kt.agreedAt ? kt.agreedAt.getTime()
         : naverConsent ? Date.now()
         : 0;
