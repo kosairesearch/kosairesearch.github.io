@@ -450,10 +450,23 @@ const METHOD_LABEL = {
 };
 
 export async function accountInfo(user) {
+  if (!user) return { name: "", email: "", method: "", methodLabel: "알 수 없음" };
+
+  /* 문서 읽기를 무한정 기다리지 않는다.
+
+     닉네임과 이메일은 Auth 에 이미 들어 있다. users 문서는 그 값이 없을 때
+     쓰는 예비일 뿐인데, 그 읽기가 안 돌아오면 화면이 '—' 로 굳는다.
+     모바일에서 실제로 그랬다 — 계정에 이메일이 멀쩡히 있는데도 두 칸이
+     빈 채로 남았다.
+
+     예비 자료를 기다리다 본 자료까지 못 보여 주는 것은 순서가 뒤집힌 것이다.
+     4초 안에 안 오면 없는 것으로 치고 넘어간다. */
   let doc0 = null;
   try {
-    const snap = await getDoc(doc(db(), "users", user.uid));
-    doc0 = snap.exists() ? snap.data() : null;
+    doc0 = await Promise.race([
+      getDoc(doc(db(), "users", user.uid)).then(s => (s.exists() ? s.data() : null)),
+      new Promise(r => setTimeout(() => r(null), 4000)),
+    ]);
   } catch (e) { /* 표시용 — 없으면 없는 대로 */ }
   const method = (doc0 && doc0.signupMethod)
     || (String(user.uid).split(":")[0] === "kakao" ? "kakao"
