@@ -207,6 +207,9 @@ function css() {
 .ks-nav button[aria-selected="true"]{background:rgba(47,109,246,.1);color:var(--brand-blue,#2f6df6)}
 .ks-panel{flex:1;min-width:0;overflow:auto;padding:18px 22px 22px}
 .ks-sec{padding:0 0 16px}
+/* 앞 칸과 성격이 다른 칸. 구독 상태·버튼 바로 아래에 '결제 내역' 머리가
+   붙어 버려 안내 문구와 표 제목이 한 덩어리로 읽혔다. 줄 하나로 끊는다. */
+.ks-sec.sep{margin-top:26px;padding-top:20px;border-top:1px solid var(--hair,rgba(0,0,0,.07))}
 .ks-h{margin:0 0 10px;font:700 12px/1.3 var(--font-sans,system-ui);color:var(--fg-3);
   letter-spacing:.04em;text-transform:uppercase}
 .ks-kv{display:grid;grid-template-columns:auto 1fr;gap:8px 16px;
@@ -570,7 +573,7 @@ function paneSubscription() {
      결제한 사람에게 '아직 결제 내역이 없습니다' 가 뜬다. */
   function histSection(payments) {
     if (!payments) return null;
-    const wrap = el("div", "ks-sec");
+    const wrap = el("div", "ks-sec sep");
     wrap.appendChild(el("div", "ks-h", T("결제 내역")));
     if (!payments.length) {
       wrap.appendChild(el("p", "ks-note", T("아직 결제 내역이 없습니다.")));
