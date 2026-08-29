@@ -98,7 +98,7 @@ async function openWithdrawModal(){
       ${sub ? `<div class="wd-sub">
         <b>${T("이용 중인 구독이 있습니다")}</b>
         <p>${T("탈퇴하시면 구독이 즉시 해지되고, 환불 기준에 따라 산정된 금액이 자동으로 환불됩니다. 금액을 먼저 확인하시려면 구독 관리에서 환불을 신청해 주세요.")}</p>
-        <a href="billing.html">${T("구독 관리로 이동")}</a>
+        <button type="button" class="wd-tosubs">${T("구독 관리로 이동")}</button>
       </div>` : ""}
       <div class="wd-q">${T("떠나시는 이유를 알려주시면 개선에 반영하겠습니다 (복수 선택 가능)")}</div>
       <div class="wd-reasons">${WD_REASONS.map((r)=>
@@ -120,6 +120,10 @@ async function openWithdrawModal(){
   const close = () => ov.remove();
   ov.querySelector('.wd-cancel').addEventListener('click', close);
   ov.addEventListener('click', e => { if(e.target === ov) close(); });
+  /* 페이지를 옮기지 않고 이 자리에서 구독 칸을 편다. 환불 금액을 보러
+     갔다가 돌아오는 길이 없으면 대부분 그냥 나가 버린다. */
+  const toSubs = ov.querySelector('.wd-tosubs');
+  if(toSubs) toSubs.addEventListener('click', () => { close(); openSettings('subscription'); });
   go.addEventListener('click', async () => {
     go.disabled = true; go.textContent = '...';
     const reason = [...ov.querySelectorAll('input[name=wdReason]:checked')]
@@ -190,6 +194,11 @@ async function finishWithdraw(user, email, reason, detail, ov, hadSub){
 
 const deleteAccount = openWithdrawModal;
 
+/* 탈퇴 화면은 이 파일 하나만 갖는다. 설정 창의 '회원 탈퇴' 도 여기로 온다 —
+   저쪽에서 다시 만들면 확인 절차가 두 벌이 되고, 구독이 살아 있을 때 막는
+   규칙을 한쪽에만 고치게 된다. */
+window.KOSAccount = { withdraw: openWithdrawModal };
+
 function injectCss(){
   if(document.getElementById('navAuthCss')) return;
   const st = document.createElement('style'); st.id = 'navAuthCss';
@@ -245,7 +254,9 @@ function injectCss(){
   background:rgba(220,120,20,.10);border:1px solid rgba(220,120,20,.28)}
 .wd-sub b{display:block;font:700 13px var(--font-sans);color:var(--fg-1)}
 .wd-sub p{margin:5px 0 0;font:400 12.5px/1.6 var(--font-sans);color:var(--fg-2);word-break:keep-all}
-.wd-sub a{display:inline-block;margin-top:8px;font:600 12.5px var(--font-sans);color:var(--fg-1)}
+.wd-sub a,.wd-sub .wd-tosubs{display:inline-block;margin-top:8px;font:600 12.5px var(--font-sans);
+  color:var(--fg-1);border:0;background:transparent;padding:0;cursor:pointer;
+  text-decoration:underline;text-underline-offset:3px}
   :root[data-theme="dark"] .wd-warn{color:#ff8a8c}
   .wd-q{margin:28px 0 10px;font:600 13.5px var(--font-sans);color:var(--fg-2)}
   .wd-reasons{display:flex;flex-direction:column;gap:3px}
@@ -312,7 +323,8 @@ function renderLoggedIn(wrap, user){
        <button class="acct-btn" type="button" aria-label="account"><span class="avatar">${initial}</span></button>
        <div class="menu" role="menu">
          <div class="em">${email}</div>
-         <a class="mi" href="billing.html">구독 관리</a>
+         <button type="button" class="settings">설정</button>
+         <button type="button" class="subs">구독 관리</button>
          <button type="button" class="logout">로그아웃</button>
          <button type="button" class="withdraw">회원 탈퇴</button>
        </div>
@@ -320,6 +332,10 @@ function renderLoggedIn(wrap, user){
   const acct = wrap.querySelector('.acct');
   wrap.querySelector('.acct-btn').addEventListener('click', e => { e.stopPropagation(); acct.classList.toggle('open'); });
   document.addEventListener('click', () => acct.classList.remove('open'));
+  wrap.querySelector('.settings').addEventListener('click', () => { acct.classList.remove('open'); openSettings(); });
+  /* 구독 관리는 설정 창의 한 칸이다. 페이지로 두면 보던 화면을 잃고,
+     테마·언어와 같은 성격의 설정인데 그것만 따로 떨어져 있게 된다. */
+  wrap.querySelector('.subs').addEventListener('click', () => { acct.classList.remove('open'); openSettings('subscription'); });
   wrap.querySelector('.logout').addEventListener('click', async () => {
     try{ await signOut(auth); }catch(e){}
     location.href = 'Home.html';
@@ -328,13 +344,24 @@ function renderLoggedIn(wrap, user){
   if(window.KOSi18n) window.KOSi18n.apply();
 }
 
+/* settings-panel.js 는 여기서 정적으로 import 하지 않는다. 이 파일은 모든
+   페이지에 실리므로, 설정을 한 번도 안 여는 사람에게까지 받게 할 이유가 없다. */
+async function openSettings(tab){
+  try{
+    const m = await import("./settings-panel.js");
+    m.openSettings(tab);
+  }catch(e){ console.warn("[settings] 열지 못했습니다", e && e.message); }
+}
+
 function renderMobileAuth(user){
   const mm = document.getElementById('mobileMenu'); if(!mm || isAuthPage()) return;
   let el = document.getElementById('mAuth');
   if(!el){ el = document.createElement('div'); el.id = 'mAuth'; mm.appendChild(el); }
   if(user){
     const email = user.email || (user.displayName || '');
-    el.innerHTML = `<div class="m-em">${email}</div><a href="billing.html">구독 관리</a><button type="button" class="m-logout">로그아웃</button><button type="button" class="m-withdraw">회원 탈퇴</button>`;
+    el.innerHTML = `<div class="m-em">${email}</div><button type="button" class="m-settings">설정</button><button type="button" class="m-subs">구독 관리</button><button type="button" class="m-logout">로그아웃</button><button type="button" class="m-withdraw">회원 탈퇴</button>`;
+    el.querySelector('.m-settings').addEventListener('click', () => { mm.classList.remove('open'); openSettings(); });
+    el.querySelector('.m-subs').addEventListener('click', () => { mm.classList.remove('open'); openSettings('subscription'); });
     el.querySelector('.m-logout').addEventListener('click', async () => { try{ await signOut(auth); }catch(e){} location.href = 'Home.html'; });
     el.querySelector('.m-withdraw').addEventListener('click', deleteAccount);
   } else {
@@ -353,7 +380,33 @@ function start(){
        그 페이지만 깜빡이지 않는다. */
     try{ user ? localStorage.setItem('kos-signed','1') : localStorage.removeItem('kos-signed'); }catch(e){}
     user ? renderLoggedIn(wrap, user) : renderLoggedOut(wrap); renderMobileAuth(user);
+    autoOpenSettings(user);
   });
+}
+
+/* 주소에 ?settings=구독 이 붙어 오면 그 칸을 펴서 창을 연다.
+
+   billing.html 이 여기로 보낸다. 결제를 마치고 돌아오는 길도 같다 —
+   그때는 ?card=1 이 함께 오고, 설정 창이 '카드가 바뀌었습니다' 를 띄운다.
+
+   한 번만 연다. 창을 닫고 새로고침했는데 또 열리면 닫을 수가 없다.
+   그래서 주소에서 표시를 지운다. */
+let settingsOpened = false;
+function autoOpenSettings(user){
+  if(settingsOpened || !user) return;
+  const q = new URLSearchParams(location.search);
+  const tab = q.get('settings');
+  if(!tab) return;
+  settingsOpened = true;
+  /* 주소에서 지우기 전에 넘겨 둔다. 지운 뒤에 읽으면 안내가 안 뜬다. */
+  if(q.get('card')) window.__KOS_CARD_NOTICE = true;
+  try{
+    const u = new URL(location.href);
+    u.searchParams.delete('settings');
+    u.searchParams.delete('card');
+    history.replaceState(null, '', u.pathname + (u.search || '') + u.hash);
+  }catch(e){}
+  openSettings(tab);
 }
 
 if(document.readyState === 'loading') document.addEventListener('DOMContentLoaded', start);

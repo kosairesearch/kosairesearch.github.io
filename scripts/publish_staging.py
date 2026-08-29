@@ -20,6 +20,13 @@
   나가지 않으므로 실제 사이트의 결제 흐름은 그대로다.
 
   python3 scripts/publish_staging.py <브랜치 체크아웃 경로> [출력폴더]
+
+지금은 돌리지 않는다 — 읽기 전에 알아 둘 것
+  결제 관련 원본(pricing/checkout/billing/paywall)은 "실제 사이트에서 결제
+  관련을 전부 되돌린다" 커밋에서 루트에서 빠졌다. 그때부터 그 화면들의 원본은
+  staging/ 폴더 자체이고, 손으로 고친다. 이 스크립트를 지금 돌리면 아래 PATCH
+  의 auth-state.js 패치 지점(activeSub)을 루트에서 못 찾아 그 자리에서 멈춘다
+  (조용히 덮어쓰지는 않는다). 다시 쓰려면 원본을 어디에 둘지부터 정해야 한다.
 """
 import re
 import shutil
