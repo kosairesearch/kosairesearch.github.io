@@ -1328,6 +1328,34 @@ function consentNoticeMail(lang){
    ⚠️ 답이 없으면 동의가 유지된 것으로 본다(같은 조). 그러니 이 메일은
       다시 받아 내려는 것이 아니라 알리고 철회할 길을 열어 두는 것이다.
       무응답을 미동의로 바꾸면 오히려 법이 정한 것과 달라진다. */
+/* 기한보다 며칠 앞서 보낼 것인가.
+
+   조문이 정한 것은 '같은 날 전까지' 이므로 늦으면 안 되고 앞당기는 것은
+   막지 않는다. 하루만 두면 그날 함수가 한 번 실패했을 때 곧장 기한을
+   넘긴다. 이레를 두면 여섯 번 더 기회가 있다. */
+const RECHECK_LEAD_DAYS = 7;
+
+/* 동의일로부터 2년이 되는 날(한국 시각 자정, ms).
+
+   ⚠️ 730일을 더하면 안 된다. 조문이 '매 2년이 되는 해의 수신동의를 받은
+      날과 같은 날' 이라고 달력으로 정해 두었는데, 그 사이에 윤년이 끼면
+      730일과 하루가 어긋난다.
+
+   2월 29일에 동의한 경우 2년 뒤에는 그 날짜가 없다. 3월 1일로 밀면 기한을
+   하루 넘기므로 2월 28일로 당긴다 — 애매하면 앞당기는 쪽이다. */
+function recheckDueAt(ms){
+  const parts = new Intl.DateTimeFormat("en-CA", {
+    timeZone: "Asia/Seoul", year: "numeric", month: "2-digit", day: "2-digit"
+  }).formatToParts(new Date(ms));
+  const get = (t) => Number(parts.find(p => p.type === t).value);
+  const y = get("year") + 2, m = get("month"), d = get("day");
+  /* 그 달의 마지막 날을 넘지 않게 자른다(2/29 → 2/28). */
+  const last = new Date(Date.UTC(y, m, 0)).getUTCDate();
+  const day = Math.min(d, last);
+  /* 한국 시각 자정 = UTC 로 전날 15:00. */
+  return Date.UTC(y, m - 1, day) - 9 * 3600 * 1000;
+}
+
 function marketingRecheckMail(lang, agreedAtText){
   const link = SITE_URL + "/Settings.html";
   const en = lang === "en";
@@ -1892,7 +1920,6 @@ exports.adminConsentStats = onCall({ region: REGION, cors: true }, async (req) =
   const db = admin.firestore();
   const users = await db.collection("users").limit(5000).get();
   const now = Date.now();
-  const TWO_YEARS = 2 * 365 * 24 * 60 * 60 * 1000;
 
   let total = 0, consented = 0, marketing = 0, dueRecheck = 0, stale = 0;
   const byProvider = {};
@@ -1923,7 +1950,9 @@ exports.adminConsentStats = onCall({ region: REGION, cors: true }, async (req) =
          같은 기준으로 세야 두 곳이 어긋나지 않는다. */
       const ms = (t) => (t && t.toDate ? t.toDate().getTime() : 0);
       const base = Math.max(ms(u.marketingAt), ms(u.marketingRecheckedAt), ms(c.agreedAt));
-      if (base && now - base >= TWO_YEARS) dueRecheck++;
+      /* 기한과 앞당김 폭을 발송 쪽과 똑같이 쓴다. 여기서 730일 같은 다른
+         잣대를 쓰면 화면 숫자와 실제로 나가는 메일이 어긋난다. */
+      if (base && now >= recheckDueAt(base) - RECHECK_LEAD_DAYS * 86400000) dueRecheck++;
     }
   });
   /* 동의 없는 계정 — 이 화면이 여태 못 보던 것.
@@ -2896,7 +2925,6 @@ exports.adminWakeBrief = onCall(
    관리자 화면 버튼이 이 길로 들어온다. */
 async function runMarketingRecheck({ dryRun = true, limit = 100 } = {}){
   const db = admin.firestore();
-  const TWO_YEARS = 2 * 365 * 24 * 60 * 60 * 1000;
   const now = Date.now();
   const ms = (t) => (t && t.toDate ? t.toDate().getTime() : 0);
 
@@ -2918,7 +2946,8 @@ async function runMarketingRecheck({ dryRun = true, limit = 100 } = {}){
     /* 최초 동의일과 마지막 재확인일 중 나중 것. 둘 다 없으면 판단할 수
        없으므로 건드리지 않는다 — 모르는 것을 '2년 지났다' 로 볼 수 없다. */
     const base = Math.max(ms(u.marketingAt), ms(u.marketingRecheckedAt), ms(c.agreedAt));
-    if(!base || now - base < TWO_YEARS) continue;
+    if(!base) continue;
+    if(now < recheckDueAt(base) - RECHECK_LEAD_DAYS * 86400000) continue;
     out.due++;
 
     const email = String(u.email || "").trim().toLowerCase();
@@ -2970,10 +2999,21 @@ async function runMarketingRecheck({ dryRun = true, limit = 100 } = {}){
   return out;
 }
 
-/* 매달 1일 12:40 KST. 하루에 몇 명이 걸리는 일이 아니라 달마다 확인하면
-   충분하고, 자주 돌수록 잘못 보낼 기회만 늘어난다. */
+/* 매일 12:40 KST.
+
+   ⚠️ 처음에는 매달 1일로 두었다. 틀렸다. 조문이 기한을 이렇게 정한다.
+
+       수신동의를 받은 날부터 2년마다(매 2년이 되는 해의 수신동의를 받은
+       날과 같은 날 전까지를 말한다) … 확인하여야 한다
+
+   기한이 계정마다 다르고, '그 날 전까지' 다. 달마다 돌면 15일에 기한이
+   오는 사람은 다음 달 1일에야 확인하게 되어 보름 늦는다. 늦으면 그 사이에
+   나간 광고는 확인하지 않은 동의로 보낸 것이 된다.
+
+   그래서 매일 돌고, 기한보다 앞서 보낸다(RECHECK_LEAD_DAYS). 앞당겨 보내는
+   것은 조문이 막지 않는다 — 막는 것은 늦는 것이다. */
 exports.marketingRecheck = onSchedule(
-  { region: REGION, schedule: "40 3 1 * *", timeZone: "Etc/UTC", secrets: [RESEND_API_KEY] },
+  { region: REGION, schedule: "40 3 * * *", timeZone: "Etc/UTC", secrets: [RESEND_API_KEY] },
   async () => { await runMarketingRecheck({ dryRun: false, limit: 100 }); }
 );
 
