@@ -85,13 +85,21 @@ function usedToday(sub) {
 /* 하루 한도 차감. 서버 consumeDailyRead 와 같은 규칙. */
 function consume(ticker, limit) {
   const day = kstDay();
-  const off = readsOffset(read(SUB_KEY, null));
+  const sub = read(SUB_KEY, null);
+  const off = readsOffset(sub);
   let r = read(READ_KEY, null);
   if (!r || r.day !== day) r = { day, tickers: [] };
   if (r.tickers.includes(ticker)) return true;    // 오늘 이미 본 종목
   if (r.tickers.length - off >= limit) return false;
   r.tickers.push(ticker);
   write(READ_KEY, r);
+  /* 이번 결제 주기에 몇 개를 열었는지 따로 센다. 하루 목록(READ_KEY)은 자정에
+     비므로 '결제 후 한 번도 안 열었는가' 를 그것으로 답할 수 없다 — 환불 기준이
+     바로 그 질문이라 별도로 쌓아 둔다. */
+  if (sub) { sub.readsSincePay = (sub.readsSincePay || 0) + 1; write(SUB_KEY, sub); }
+  /* 열람 사실을 화면에 알린다. 이게 없으면 열어 둔 구독 화면의 '오늘 열람' 이
+     리포트를 봐도 계속 처음 숫자에 멈춰 있다. */
+  emit();
   return true;
 }
 
@@ -131,6 +139,8 @@ function subscribe(planId) {
     startedAt: now,
     // 이번 주기에 받은 돈. 환불이 이 합계를 기준으로 계산된다(서버 periodPayments).
     periodPayments: [{ key: "demo-" + now, amount: p.price }],
+    // 결제 후 연 리포트 수. 환불이 '한 번도 안 열었는가' 를 이걸로 판단한다.
+    readsSincePay: 0,
     // 오늘 이미 본 종목은 새 구독의 한도에서 빼 준다.
     readsAtStart: (function () {
       const r = read(READ_KEY, null);
@@ -155,7 +165,13 @@ function updateCard() {
     sub.currentPeriodStart = now;
     sub.currentPeriodEnd = addMonth(now);
     const p = PLANS[sub.plan];
-    if (p) pay({ amount: p.price, description: `${p.name} 월 구독 (모의)`, kind: "subscription", status: "paid", plan: p.id });
+    if (p) {
+      pay({ amount: p.price, description: `${p.name} 월 구독 (모의)`, kind: "subscription", status: "paid", plan: p.id });
+      // 새 주기다 — 받은 돈도 연 리포트 수도 여기서 다시 센다. 안 비우면
+      // 지난 주기 몫이 이번 환불 계산에 그대로 실린다.
+      sub.periodPayments = [{ key: "demo-" + now, amount: p.price }];
+      sub.readsSincePay = 0;
+    }
   }
   write(SUB_KEY, sub);
   emit();
@@ -169,7 +185,17 @@ const paidThisPeriod = (sub) =>
 function refundAmount(sub) {
   const total = Math.max(1, (sub.currentPeriodEnd - sub.currentPeriodStart) / 86400e3);
   const used = Math.min(total, Math.max(0, (Date.now() - sub.currentPeriodStart) / 86400e3));
-  const opened = (read(READ_KEY, { tickers: [] }).tickers || []).length > 0;
+  /* '열었는가' 는 결제 후에 열었는가를 묻는 것이다.
+     READ_KEY 를 보고 있었는데 그건 날짜를 안 가린 오늘·과거의 종목 목록이라,
+     가입 전에 남은 기록 하나만 있어도 전액 환불이 막혔다. 결제 시점에 0으로
+     두고 consume 이 올리는 readsSincePay 로 센다.
+
+       고치기 전   옛 기록 2개 + 오늘 0개 열람 → 8,910원
+       고친 뒤     같은 상황                   → 9,900원 (전액)
+
+     결제 화면과 약관에 '7일 이내에 열람하지 않으셨다면 전액 환불' 이라고
+     적어 두었다. 적어 둔 것과 계산이 달라서는 안 된다. */
+  const opened = (sub.readsSincePay || 0) > 0;
   // 업그레이드 차액까지 포함한 '실제로 받은 돈'이 기준이다(서버와 같다).
   const price = paidThisPeriod(sub) || (PLANS[sub.plan] || {}).price || 0;
   return (!opened && used <= 7) ? price
@@ -207,6 +233,7 @@ async function call(name, arg) {
   const sub = read(SUB_KEY, null);
   if (!sub) throw new Error("이용 중인 구독이 없습니다.");
   let charged = 0;                    // 업그레이드 차액 — 서버와 같이 돌려준다
+  let refunded = 0;                   // 환불액 — 화면이 얼마가 돌아가는지 말해야 한다
   // 해지 예약과 플랜 변경 예약은 함께 둘 수 없다(서버 changePlan 설명 참고).
   if (name === "cancelSubscription") { sub.cancelAtPeriodEnd = true; sub.pendingPlan = null; }
   else if (name === "resumeSubscription") sub.cancelAtPeriodEnd = false;
@@ -230,15 +257,18 @@ async function call(name, arg) {
       sub.pendingPlan = next.id === sub.plan ? null : next.id;
     }
   } else if (name === "requestRefund") {
-    const amount = refundAmount(sub);
-    pay({ amount: -amount, description: "환불 (모의)", kind: "refund",
-         why: (read(READ_KEY, { tickers: [] }).tickers || []).length ? "used" : "withdraw",
+    refunded = refundAmount(sub);
+    // 사유 표시도 같은 신호를 쓴다. 아래 환불 계산이 readsSincePay 로 '열었는가'
+    // 를 판단하는데 표시만 다른 걸로 세면 '청약철회'로 적힌 건에 이용분이
+    // 차감돼 있는, 설명할 수 없는 내역이 남는다.
+    pay({ amount: -refunded, description: "환불 (모의)", kind: "refund",
+         why: (sub.readsSincePay || 0) > 0 ? "used" : "withdraw",
          status: "refunded", plan: sub.plan });
     sub.status = "refunded"; sub.currentPeriodEnd = Date.now();
   }
   write(SUB_KEY, sub);
   emit();
-  return { data: { ok: true, charged } };
+  return { data: { ok: true, charged, refunded } };
 }
 
 window.__KOSDEMO = true;

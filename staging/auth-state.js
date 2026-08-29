@@ -192,8 +192,6 @@ async function finishWithdraw(user, email, reason, detail, ov, hadSub){
   }
 }
 
-const deleteAccount = openWithdrawModal;
-
 /* 탈퇴 화면은 이 파일 하나만 갖는다. 설정 창의 '회원 탈퇴' 도 여기로 온다 —
    저쪽에서 다시 만들면 확인 절차가 두 벌이 되고, 구독이 살아 있을 때 막는
    규칙을 한쪽에만 고치게 된다. */
@@ -229,8 +227,6 @@ function injectCss(){
     font:600 14px var(--font-sans);color:var(--fg-1);padding:10px;border-radius:8px}
   #navAuth .menu button:hover,#navAuth .menu .mi:hover{background:rgba(0,0,0,.06)}
   :root[data-theme="dark"] #navAuth .menu button:hover,:root[data-theme="dark"] #navAuth .menu .mi:hover{background:rgba(255,255,255,.08)}
-  #navAuth .menu button.withdraw{color:#c0282b;font-weight:500;font-size:12.5px;margin-top:2px;border-top:1px solid var(--hair);border-radius:0 0 8px 8px}
-  :root[data-theme="dark"] #navAuth .menu button.withdraw{color:#ff8a8c}
   /* 모바일: 헤더 로그인/계정 숨기고 햄버거 메뉴 안으로 */
   @media(max-width:767px){#navAuth{display:none}}
   #mobileMenu #mAuth{border-top:1px solid var(--hair);margin-top:6px;padding-top:6px}
@@ -239,8 +235,6 @@ function injectCss(){
     cursor:pointer;font:600 16px var(--font-sans);color:var(--fg-1);text-decoration:none;padding:13px 14px;border-radius:var(--radius-sm)}
   #mobileMenu #mAuth a:hover,#mobileMenu #mAuth button:hover{background:rgba(0,0,0,.06)}
   :root[data-theme="dark"] #mobileMenu #mAuth a:hover,:root[data-theme="dark"] #mobileMenu #mAuth button:hover{background:rgba(255,255,255,.08)}
-  #mobileMenu #mAuth button.m-withdraw{color:#c0282b;font-size:14px}
-  :root[data-theme="dark"] #mobileMenu #mAuth button.m-withdraw{color:#ff8a8c}
   /* 회원 탈퇴 모달 */
   .wd-ov{position:fixed;inset:0;z-index:9999;display:flex;align-items:center;justify-content:center;
     background:rgba(10,12,20,.55);-webkit-backdrop-filter:blur(4px);backdrop-filter:blur(4px);padding:24px}
@@ -324,23 +318,22 @@ function renderLoggedIn(wrap, user){
        <div class="menu" role="menu">
          <div class="em">${email}</div>
          <button type="button" class="settings">설정</button>
-         <button type="button" class="subs">구독 관리</button>
          <button type="button" class="logout">로그아웃</button>
-         <button type="button" class="withdraw">회원 탈퇴</button>
        </div>
      </div>`;
+  /* 이 메뉴에 '구독 관리'와 '회원 탈퇴'가 같이 있었다. 둘 다 설정 창 안에
+     들어갔으므로 같은 곳으로 가는 문이 둘이 된 셈이다. 문이 둘이면 어느 쪽이
+     맞는지 고민하게 되고, 나중에 한쪽만 고치게 된다. 여기는 계정 메뉴이지
+     설정 목차가 아니다 — 설정으로 보내고 끝낸다.
+     탈퇴 화면 자체는 이 파일이 계속 갖는다(window.KOSAccount.withdraw). */
   const acct = wrap.querySelector('.acct');
   wrap.querySelector('.acct-btn').addEventListener('click', e => { e.stopPropagation(); acct.classList.toggle('open'); });
   document.addEventListener('click', () => acct.classList.remove('open'));
   wrap.querySelector('.settings').addEventListener('click', () => { acct.classList.remove('open'); openSettings(); });
-  /* 구독 관리는 설정 창의 한 칸이다. 페이지로 두면 보던 화면을 잃고,
-     테마·언어와 같은 성격의 설정인데 그것만 따로 떨어져 있게 된다. */
-  wrap.querySelector('.subs').addEventListener('click', () => { acct.classList.remove('open'); openSettings('subscription'); });
   wrap.querySelector('.logout').addEventListener('click', async () => {
     try{ await signOut(auth); }catch(e){}
     location.href = 'Home.html';
   });
-  wrap.querySelector('.withdraw').addEventListener('click', deleteAccount);
   if(window.KOSi18n) window.KOSi18n.apply();
 }
 
@@ -359,11 +352,10 @@ function renderMobileAuth(user){
   if(!el){ el = document.createElement('div'); el.id = 'mAuth'; mm.appendChild(el); }
   if(user){
     const email = user.email || (user.displayName || '');
-    el.innerHTML = `<div class="m-em">${email}</div><button type="button" class="m-settings">설정</button><button type="button" class="m-subs">구독 관리</button><button type="button" class="m-logout">로그아웃</button><button type="button" class="m-withdraw">회원 탈퇴</button>`;
+    // 데스크톱 메뉴와 같은 구성이다 — 한쪽에만 항목이 더 있으면 안내가 갈린다.
+    el.innerHTML = `<div class="m-em">${email}</div><button type="button" class="m-settings">설정</button><button type="button" class="m-logout">로그아웃</button>`;
     el.querySelector('.m-settings').addEventListener('click', () => { mm.classList.remove('open'); openSettings(); });
-    el.querySelector('.m-subs').addEventListener('click', () => { mm.classList.remove('open'); openSettings('subscription'); });
     el.querySelector('.m-logout').addEventListener('click', async () => { try{ await signOut(auth); }catch(e){} location.href = 'Home.html'; });
-    el.querySelector('.m-withdraw').addEventListener('click', deleteAccount);
   } else {
     el.innerHTML = `<a href="Login.html?next=${encodeURIComponent(here())}">로그인</a>`;
   }

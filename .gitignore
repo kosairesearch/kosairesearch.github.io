@@ -10,3 +10,6 @@ data/deploy_functions.log
 data/brief_cache/
 # 규칙을 통과하지 못한 생성 결과. 사람이 보고 버리는 것이므로 저장소에 남기지 않는다.
 data/briefs/_rejected/
+# 스테이징 화면 테스트용(jsdom). 저장소에 넣지 않는다 — 필요할 때 설치한다.
+node_modules/
+package-lock.json

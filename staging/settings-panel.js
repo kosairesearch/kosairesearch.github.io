@@ -15,7 +15,7 @@
 
      일반    테마 · 언어
      알림    마케팅 정보 수신
-     구독    플랜 · 결제 수단 · 사용량 · 해지/재개/환불
+     구독    상태 · 결제 · 사용량 · 플랜 변경 · 해지/재개/환불 · 결제 내역
      계정    닉네임 · 이메일 · 로그아웃 · 회원 탈퇴
 
    구독 자료는 window.KOSPaywall(paywall.js)에서 받고, 바꾸는 일은
@@ -24,13 +24,21 @@
 
      openSettings(tab)   지금 화면 위에 창으로 띄운다
      window.KOSSettings.open("subscription")   구독 칸을 펴서 연다
+
+   화면이 좁아졌다고 판단을 줄이지 않는다. 처음에 구독 칸을 상태만 적고
+   버튼은 이름만 달아 내보냈는데, 그건 화면이지 기능이 아니었다. 페이지
+   (billing.js)가 하던 확인 절차·사유 접수·금액 고지를 전부 옮겨 왔다.
+
+   이 파일은 눈으로 확인할 수 없는 것이 많다(브라우저가 없는 데서 고친다).
+   staging/tests/subscription.test.mjs 가 대신 본다 — 고치면 돌릴 것.
    ============================================================ */
 import { app, auth, isConfigured } from "./firebase-config.js";
 import { onAuthStateChanged, signOut }
   from "https://www.gstatic.com/firebasejs/10.12.2/firebase-auth.js";
 import { getMarketing, setMarketing, accountInfo } from "./consent.js";
 import { call } from "./subscription-api.js";
-import { PLANS, planOf, won, fmtDay, payReady } from "./payment-config.js";
+import { PLANS, planOf, won, fmtDay, payReady, upgradeDiff, MIN_CHARGE }
+  from "./payment-config.js";
 
 const T = m => (window.KOSi18n ? window.KOSi18n.t(m) : m);
 const EN = () => (window.KOSi18n ? window.KOSi18n.lang : "ko") === "en";
@@ -64,38 +72,104 @@ if (window.KOSi18n) window.KOSi18n.register({
   "이용약관": "Terms of Service",
   "개인정보처리방침": "Privacy Policy",
   "에서 확인할 수 있습니다.": ".",
-  /* 구독 */
+  /* 구독 — 문구는 billing.js 가 쓰던 것을 그대로 옮겼다. 화면만 바뀌었을 뿐
+     사용자가 읽는 말이 달라질 이유가 없다. */
   "불러오는 중…": "Loading…",
   "이용 중인 플랜": "Current plan",
   "무료": "Free",
-  "무료로 이용 중입니다. 하루 열람 한도 안에서 리포트를 보실 수 있습니다.":
-    "You are on the free plan, with a daily report limit.",
+  "무료로 이용 중입니다. 분석·전망·리스크 등 유료 구간은 멤버십에서 보실 수 있습니다.":
+    "You are on the free plan. The analysis, outlook, and risk sections come with a plan.",
   "플랜 보기": "See plans",
+  "멤버십 보기": "See plans",
   "상태": "Status",
   "이용 중": "Active",
-  "해지 예약됨": "Cancels at period end",
+  "해지 예약됨": "Ends soon",
   "결제 실패": "Payment failed",
+  "이용 종료됨": "Ended",
   "다음 결제일": "Next billing date",
-  "이용 종료일": "Access ends",
+  "이용 종료일": "Access until",
+  "구독 시작일": "Started",
   "결제 금액": "Amount",
+  "하루 열람 한도": "Daily limit",
+  "오늘 남은 열람": "Left today",
+  "예정된 변경": "Scheduled change",
   "결제 수단": "Payment method",
   "등록된 카드가 없습니다.": "No card registered.",
   "등록하신 카드": "Card on file",
-  "오늘 열람": "Read today",
-  "건": "",
-  "플랜 변경": "Change plan",
+  "결제 내역": "Payment history",
+  "아직 결제 내역이 없습니다.": "No payments yet.",
+  "일자": "Date", "내용": "Description", "금액": "Amount",
+  "결제 완료": "Paid", "환불": "Refunded", "실패": "Failed",
+  "{p} 월 구독": "{p} monthly", "{p} 업그레이드 차액": "{p} upgrade difference",
+  "정기결제 실패": "Renewal failed",
+  "청약철회": "withdrawal", "이용분 차감": "usage deducted",
+  "{r}개 / {l}개": "{r} of {l}", "{d}부터 {p}": "{p} from {d}",
+  "PRO로 업그레이드": "Upgrade to PRO", "BASIC으로 변경": "Switch to BASIC",
+  "변경 취소": "Undo change",
   "결제 수단 변경": "Change card",
   "구독 해지": "Cancel subscription",
   "해지 취소": "Keep subscription",
   "환불 신청": "Request a refund",
-  "다음 결제일에 해지됩니다. 그때까지는 그대로 이용하실 수 있습니다.":
-    "Your subscription will end on the next billing date. You keep access until then.",
-  "해지를 취소했습니다. 구독이 그대로 이어집니다.":
-    "Cancellation withdrawn. Your subscription continues.",
-  "환불을 신청했습니다.": "Refund requested.",
+  "확인": "Confirm", "취소": "Cancel",
+  "구독을 해지하시겠습니까?": "Cancel your subscription?",
+  "{date}까지는 그대로 이용하실 수 있으며, 그 이후 결제되지 않습니다. 해지는 언제든지 취소하실 수 있습니다.":
+    "You keep access until {date}, and you will not be charged after that. You can undo this anytime.",
+  "환불을 신청하시겠습니까?": "Request a refund?",
+  "환불이 완료되면 유료 플랜 이용 권한이 즉시 종료됩니다. 환불 금액은 열람 여부와 이용 일수에 따라 산정됩니다.":
+    "Your paid plan ends as soon as the refund is processed. The amount depends on whether you opened reports and how many days you used.",
+  "PRO로 업그레이드하시겠습니까?": "Upgrade to PRO?",
+  "즉시 PRO가 적용됩니다. 남은 기간에 해당하는 BASIC 금액을 차감한 차액 {a}이 등록하신 카드로 지금 결제되며, 결제일은 그대로 유지됩니다.":
+    "PRO applies immediately. The unused part of BASIC is credited and the difference, {a}, is charged to your card now; your billing date stays the same.",
+  "즉시 PRO가 적용됩니다. 이번 결제 주기가 거의 끝나 지금 청구되는 금액은 없으며, 다음 결제일부터 PRO 요금으로 청구됩니다.":
+    "PRO applies immediately. This billing period is nearly over, so nothing is charged now — PRO pricing starts from your next billing date.",
+  "BASIC으로 변경하시겠습니까?": "Switch to BASIC?",
+  "{date}부터 BASIC이 적용됩니다. 그때까지는 PRO를 그대로 이용하실 수 있습니다.":
+    "BASIC applies from {date}. You keep PRO until then.",
+  "플랜 변경을 취소하시겠습니까?": "Undo the scheduled change?",
+  "{date} 이후에도 {p} 플랜이 그대로 유지됩니다.": "You stay on {p} after {date}.",
+  " 예약해 두신 해지는 함께 취소됩니다.": " Your scheduled cancellation will be undone.",
+  " 예약해 두신 {p} 플랜 변경은 함께 취소됩니다.": " Your scheduled change to {p} will be dropped.",
+  "사유를 알려주시면 개선에 반영하겠습니다 (복수 선택 가능)":
+    "Telling us why helps us improve (select all that apply)",
+  "자세한 의견 (선택)": "Tell us more (optional)",
+  "해지 예약이 완료되었습니다.": "Your subscription will end at the period end.",
+  "해지가 취소되었습니다.": "Your subscription continues.",
+  "환불 신청이 접수되었습니다. {a}이 환불됩니다.": "Refund requested. {a} will be returned.",
+  "환불 신청이 접수되었습니다.": "Your refund request has been received.",
+  "{p} 플랜이 바로 적용되었습니다. 차액 {a}이 결제되었습니다.":
+    "You are on {p} as of now. {a} has been charged.",
+  "{p} 플랜이 바로 적용되었습니다. 지금 청구된 금액은 없습니다.":
+    "You are on {p} as of now. Nothing was charged.",
+  "{d}부터 {p} 플랜으로 변경됩니다.": "You move to {p} on {d}.",
+  "플랜 변경이 취소되었습니다.": "The scheduled change has been cancelled.",
   "처리하지 못했어요. 잠시 후 다시 시도해 주세요.": "Could not complete. Please try again in a moment.",
-  "다음 결제일에 {p} 로 바뀝니다.": "Changes to {p} on the next billing date.",
+  "등록하신 카드로 결제가 승인되지 않았습니다. 카드를 다시 등록하시면 이용이 재개됩니다.":
+    "The card on file was declined. Register a card again to restore access.",
+  "해지하시면 이미 결제하신 이용 기간이 끝날 때까지는 그대로 이용하실 수 있습니다.":
+    "If you cancel, you keep access until the period you have paid for ends.",
   "미리보기입니다. 실제로 돈이 오가지 않습니다.": "Preview only — no real payment is made.",
+});
+
+/* 해지·환불 사유. 화면이 영어여도 접수함으로는 늘 한국어로 보낸다 — 접수함이
+   하나인데 언어별로 다른 문구가 섞이면 모아서 세어 볼 수가 없다. */
+const WHY = {
+  cancel: ["가격이 부담됩니다", "원하는 종목·정보가 부족합니다",
+           "리포트 내용이 기대와 다릅니다", "자주 이용하지 않습니다",
+           "일시적으로 이용을 중단합니다", "기타"],
+  refund: ["실수로 결제했습니다", "서비스가 기대와 다릅니다",
+           "오류·장애로 정상적으로 이용하지 못했습니다", "중복으로 결제되었습니다", "기타"],
+};
+if (window.KOSi18n) window.KOSi18n.register({
+  "가격이 부담됩니다": "Too expensive",
+  "원하는 종목·정보가 부족합니다": "Missing stocks or information I want",
+  "리포트 내용이 기대와 다릅니다": "Reports were not what I expected",
+  "자주 이용하지 않습니다": "I don't use it often",
+  "일시적으로 이용을 중단합니다": "Pausing for now",
+  "기타": "Other",
+  "실수로 결제했습니다": "I paid by mistake",
+  "서비스가 기대와 다릅니다": "The service was not what I expected",
+  "오류·장애로 정상적으로 이용하지 못했습니다": "I could not use it because of a fault or outage",
+  "중복으로 결제되었습니다": "I was charged twice",
 });
 
 /* ────────────────────────────── 모양 ────────────────────────────── */
@@ -178,6 +252,29 @@ function css() {
 :root[data-theme="dark"] .ks-msg.err{color:#ff8a8c}
 .ks-note{margin:14px 0 0;font:400 11.5px/1.6 var(--font-sans,system-ui);color:var(--fg-3)}
 .ks-note a{color:var(--fg-2);text-decoration:underline;text-underline-offset:2px}
+/* 결제 내역 — 좁은 칸에서도 가로로 넘치지 않게 자기 안에서만 스크롤한다 */
+.ks-hist{width:100%;overflow-x:auto;margin-top:8px}
+.ks-hist table{width:100%;border-collapse:collapse;font:400 12.5px/1.5 var(--font-sans,system-ui)}
+.ks-hist th{text-align:left;padding:6px 10px 6px 0;color:var(--fg-3);font-weight:600;white-space:nowrap;
+  border-bottom:1px solid var(--hair,rgba(0,0,0,.07))}
+.ks-hist td{padding:8px 10px 8px 0;color:var(--fg-1);white-space:nowrap;
+  border-bottom:1px solid var(--hair,rgba(0,0,0,.05))}
+/* 확인 대화상자 — 설정 창(1100) 위에 선다 */
+.ks-dlg{position:fixed;inset:0;z-index:1200;display:flex;align-items:center;justify-content:center;
+  padding:20px;background:rgba(10,11,19,.55);-webkit-backdrop-filter:blur(4px);backdrop-filter:blur(4px)}
+.ks-dlg-card{width:100%;max-width:440px;max-height:86vh;overflow:auto;padding:22px 22px 18px;
+  background:var(--bg-1);border-radius:16px;border:1px solid var(--border-2,rgba(0,0,0,.08));
+  box-shadow:0 24px 64px rgba(15,23,42,.3)}
+:root[data-theme="dark"] .ks-dlg-card{background:#1a1b26;border-color:rgba(255,255,255,.08)}
+.ks-dlg-t{margin:0 0 8px;font:700 15.5px/1.4 var(--font-sans,system-ui);color:var(--fg-1)}
+.ks-dlg-b{margin:0;font:400 13px/1.65 var(--font-sans,system-ui);color:var(--fg-2);word-break:keep-all}
+.ks-dlg-q{margin:16px 0 8px;font:600 12px var(--font-sans,system-ui);color:var(--fg-3)}
+.ks-dlg-r{display:flex;align-items:flex-start;gap:8px;padding:5px 0;
+  font:400 12.5px/1.45 var(--font-sans,system-ui);color:var(--fg-2);cursor:pointer}
+.ks-dlg-r input{margin-top:2px;flex:none}
+.ks-dlg-d{width:100%;margin-top:8px;padding:8px 10px;border-radius:9px;resize:vertical;
+  border:1px solid var(--border-2,rgba(0,0,0,.12));background:transparent;color:var(--fg-1);
+  font:400 12.5px/1.5 var(--font-sans,system-ui)}
 /* 좁은 화면 — 왼쪽 목록을 위쪽 가로줄로 눕힌다. 196px 를 떼어 주면
    내용이 들어갈 자리가 남지 않는다. */
 @media (max-width:640px){
@@ -300,10 +397,102 @@ function paneNotifications(user) {
 }
 
 /* ── 구독 ────────────────────────────────────────────────────────
-   billing.html 이 하던 일을 이 칸으로 옮긴다. 페이지 쪽 코드를 그대로
-   가져오지 않고 다시 쓴 이유는, 그 화면이 결제 이력 표까지 담은 전체
-   페이지 레이아웃이라 창 안에서는 읽히지 않기 때문이다. 여기서는 '지금
-   어떤 상태이고 무엇을 할 수 있는가' 만 남긴다. */
+   billing.html 이 하던 일을 이 칸으로 옮긴다. 처음에는 '지금 어떤 상태인가'
+   만 옮기고 버튼은 이름만 달아 두었는데, 그건 화면이지 기능이 아니었다.
+   페이지가 실제로 하던 것을 그대로 가져온다.
+
+     · 되돌리기 어려운 것(해지·환불·플랜 변경)은 반드시 한 번 묻는다
+     · 업그레이드는 얼마가 청구되는지 보여 주고 묻는다
+     · 해지·환불은 사유를 함께 받는다(답하지 않아도 진행된다)
+     · 결제 실패·이용 종료도 각각 제 화면을 갖는다
+     · 결제 내역을 보여 준다
+
+   화면이 좁아졌다고 판단을 줄이면, 사용자는 무슨 일이 일어났는지 모르는
+   채로 구독을 잃는다. */
+
+/* 확인 대화상자. why 를 주면 사유를 함께 묻는다.
+   돌려주는 값: 취소면 false, 확인이면 { reason, detail }.
+   답하지 않아도 진행된다 — 환불은 권리이지 설문의 대가가 아니다. */
+function ask(title, body, why) {
+  css();
+  const ov = el("div", "ks-dlg");
+  const card = el("div", "ks-dlg-card");
+  card.setAttribute("role", "dialog");
+  card.setAttribute("aria-modal", "true");
+  card.appendChild(el("p", "ks-dlg-t", title));
+  card.appendChild(el("p", "ks-dlg-b", body));
+
+  let boxes = [], detail = null;
+  if (why) {
+    card.appendChild(el("div", "ks-dlg-q", T("사유를 알려주시면 개선에 반영하겠습니다 (복수 선택 가능)")));
+    WHY[why].forEach(r => {
+      const lab = el("label", "ks-dlg-r");
+      const cb = document.createElement("input");
+      cb.type = "checkbox";
+      cb.value = r;                       // 값은 늘 한국어다(접수함이 하나다)
+      lab.appendChild(cb);
+      lab.appendChild(el("span", null, T(r)));
+      card.appendChild(lab);
+      boxes.push(cb);
+    });
+    detail = document.createElement("textarea");
+    detail.className = "ks-dlg-d";
+    detail.rows = 2;
+    detail.placeholder = T("자세한 의견 (선택)");
+    card.appendChild(detail);
+  }
+
+  const btns = el("div", "ks-btns");
+  const no = el("button", "ks-btn", T("취소"));
+  const yes = el("button", "ks-btn primary", T("확인"));
+  no.type = yes.type = "button";
+  btns.appendChild(no); btns.appendChild(yes);
+  card.appendChild(btns);
+  ov.appendChild(card);
+  document.body.appendChild(ov);
+  yes.focus();
+
+  return new Promise(res => {
+    const done = v => {
+      ov.remove();
+      document.removeEventListener("keydown", onKey);
+      res(v);
+    };
+    function onKey(e) { if (e.key === "Escape") done(false); }
+    document.addEventListener("keydown", onKey);
+    yes.addEventListener("click", () => done(why
+      ? { reason: boxes.filter(b => b.checked).map(b => b.value).join(", "),
+          detail: detail.value.trim() }
+      : {}));
+    no.addEventListener("click", () => done(false));
+    ov.addEventListener("click", e => { if (e.target === ov) done(false); });
+  });
+}
+
+/* 사유를 접수함으로 보낸다(회원 탈퇴와 같은 경로).
+   최선 노력이다 — 실패해도 해지·환불은 이미 끝났고, 사용자에게 '사유 전송
+   실패'를 알릴 이유가 없다. 기다리지도 않는다. */
+function sendReason(category, ans) {
+  const message = [ans.reason && "사유: " + ans.reason, ans.detail].filter(Boolean).join("\n");
+  if (!message) return;
+  const u = auth.currentUser;
+  call("submitForm", { kind: "feedback", category, message,
+                       email: (u && u.email) || "", page: "구독 관리" })
+    .catch(e => console.warn("[settings] 사유 전송 실패", e && e.message));
+}
+
+function payLabel(p) {
+  const name = (planOf(p.plan) || {}).name || String(p.plan || "").toUpperCase();
+  if (p.kind === "subscription") return T("{p} 월 구독").replace("{p}", name);
+  if (p.kind === "upgrade") return T("{p} 업그레이드 차액").replace("{p}", name);
+  if (p.kind === "failed") return T("정기결제 실패");
+  if (p.kind === "refund") {
+    const why = p.why === "used" ? T("이용분 차감") : p.why === "withdraw" ? T("청약철회") : "";
+    return why ? `${T("환불")} · ${why}` : T("환불");
+  }
+  return p.description || "";
+}
+
 function paneSubscription() {
   const box = el("div");
   const s = el("div", "ks-sec");
@@ -314,135 +503,303 @@ function paneSubscription() {
   s.appendChild(msg);
   box.appendChild(s);
 
-  const say = (t, k) => { msg.textContent = T(t); msg.className = "ks-msg on " + k; };
+  const say = (t, k) => { msg.textContent = t; msg.className = "ks-msg on " + k; };
 
   /* 결제 수단을 바꾸고 돌아온 길이면 한 번만 알린다. auth-state 가 주소에서
      ?card=1 을 지우기 전에 여기로 넘겨 준다. 읽고 나면 지운다 — 칸을 옮겼다
      돌아올 때마다 같은 안내가 뜨면 무슨 일이 또 일어난 줄 안다. */
   if (window.__KOS_CARD_NOTICE) {
     delete window.__KOS_CARD_NOTICE;
-    say("결제 수단이 변경되었습니다. 다음 결제일부터 새 카드로 청구됩니다.", "ok");
+    say(T("결제 수단이 변경되었습니다. 다음 결제일부터 새 카드로 청구됩니다."), "ok");
   }
+
+  /* 결과 문구(msg)는 다시 그려지는 body 바깥에 둔다. billing.js 는 이걸
+     안쪽에 두는 바람에 확인을 눌러도 아무 말도 안 뜨는 것처럼 보여 flash 라는
+     장치를 따로 만들어야 했다. 자리를 옮기면 그 장치가 필요 없다. */
 
   body.appendChild(el("p", "ks-note", T("불러오는 중…")));
 
   const kv = (dl, k, v) => {
+    if (v == null || v === "") return;
     dl.appendChild(el("dt", null, T(k)));
     const dd = el("dd");
     if (v instanceof Node) dd.appendChild(v); else dd.textContent = v;
     dl.appendChild(dd);
   };
 
-  /* 상태가 바뀌면(해지·재개·플랜 변경) 다시 그린다. 눌러 놓고 창을 닫았다
-     여는 것으로만 확인되면 제대로 됐는지 알 수가 없다. */
-  function draw(st, usage) {
+  const cardHref = sub =>
+    "checkout.html?plan=" + encodeURIComponent((sub && sub.plan) || "basic") + "&method=1";
+
+  /* 결제창 키가 아직 안 꽂혔으면 카드 관련 버튼은 눌러야 빈 화면이다. 다만
+     미리보기(__KOSDEMO)는 토스 없이 checkout.js 안에서 흉내내므로 키가 없어도
+     된다 — 스테이징이 그쪽이라 payReady 만 보면 확인할 것을 못 본다. */
+  const canCard = () => payReady || !!window.__KOSDEMO;
+
+  /* 되돌리기 어려운 동작 한 벌. 확인 → 호출 → 결과 문구 → 사유 전송 순서다.
+     사유는 처리에 성공한 뒤에 보낸다. 먼저 보내면 해지가 실패했는데 '해지 사유'
+     만 접수되어, 있지도 않은 해지가 집계에 잡힌다. */
+  async function act(btn, { confirm, fn, arg, done, survey }) {
+    const ans = confirm ? await confirm() : {};
+    if (!ans) return;
+    const all = [...body.querySelectorAll("button")];
+    all.forEach(b => { b.disabled = true; });
+    msg.className = "ks-msg";
+    try {
+      const res = await call(fn, arg || {});
+      if (survey) sendReason(survey, ans);
+      say(done(res && res.data), "ok");
+      /* 데모·서버 모두 상태가 바뀌면 onChange 로 다시 그린다. 그래도 여기서
+         한 번 더 그린다 — 알림이 안 오는 구현에서도 화면이 멈추지 않게. */
+      refresh();
+    } catch (e) {
+      console.error("[settings] " + fn, e);
+      say(e && e.message ? e.message : T("처리하지 못했어요. 잠시 후 다시 시도해 주세요."), "err");
+      all.forEach(b => { b.disabled = false; });
+    }
+  }
+
+  function button(label, cls, onClick) {
+    const b = el("button", "ks-btn" + (cls ? " " + cls : ""), T(label));
+    b.type = "button";
+    b.addEventListener("click", () => onClick(b));
+    return b;
+  }
+
+  /* payments 가 null 이면 아예 안 그린다(배열이면 비어 있어도 그린다).
+     '내역을 못 받았다' 와 '내역이 없다' 는 다른 말이다. 둘을 같이 취급하면
+     결제한 사람에게 '아직 결제 내역이 없습니다' 가 뜬다. */
+  function histSection(payments) {
+    if (!payments) return null;
+    const wrap = el("div", "ks-sec");
+    wrap.appendChild(el("div", "ks-h", T("결제 내역")));
+    if (!payments.length) {
+      wrap.appendChild(el("p", "ks-note", T("아직 결제 내역이 없습니다.")));
+      return wrap;
+    }
+    const en = EN();
+    const scroll = el("div", "ks-hist");
+    const table = document.createElement("table");
+    const thead = document.createElement("thead");
+    const hr = document.createElement("tr");
+    ["일자", "내용", "금액", "상태"].forEach(h => {
+      const th = document.createElement("th");
+      th.textContent = T(h);
+      hr.appendChild(th);
+    });
+    thead.appendChild(hr);
+    table.appendChild(thead);
+    const tb = document.createElement("tbody");
+    payments.forEach(p => {
+      const tr = document.createElement("tr");
+      const amt = (p.amount < 0 ? "-" : "") + won(Math.abs(p.amount || 0), en);
+      const stat = p.status === "refunded" ? T("환불")
+                 : p.status === "failed" ? T("실패") : T("결제 완료");
+      [fmtDay(p.paidAt || p.createdAt, en), payLabel(p), amt, stat].forEach(v => {
+        const td = document.createElement("td");
+        td.textContent = v;
+        tr.appendChild(td);
+      });
+      tb.appendChild(tr);
+    });
+    table.appendChild(tb);
+    scroll.appendChild(table);
+    wrap.appendChild(scroll);
+    return wrap;
+  }
+
+  /* 화면은 네 갈래다. 처음에는 active 만 그리고 나머지를 전부 '무료'로
+     떨어뜨렸는데, 그러면 카드 결제가 밀린 유료 회원이 '무료로 이용 중' 을
+     보고 카드를 고칠 길도 없이 끝난다. 상태마다 할 말과 할 일이 다르다.
+
+       구독 없음   요금제로 보낸다
+       이용 중     전부 보여 주고 전부 할 수 있다
+       결제 실패   왜 막혔는지 말하고 카드 재등록으로 보낸다
+       이용 종료   끝난 사실을 말하고 다시 시작할 길을 준다 */
+  function draw(st, usage, payments) {
     body.textContent = "";
     const en = EN();
     const sub = (st && st.sub) || null;
-    const plan = planOf(st && st.plan);
+    const active = !!(st && st.active);
+    const due = !active && sub && sub.status === "past_due";
+    const ended = !active && !due && sub && (sub.status === "refunded" || sub.currentPeriodEnd);
+    const plan = planOf(sub && sub.plan);
+    const endDay = sub ? fmtDay(sub.currentPeriodEnd, en) : "";
 
-    if (!st || !st.active || !plan) {
+    if (!sub || (!active && !due && !ended)) {
       body.appendChild(el("p", "ks-note",
-        T("무료로 이용 중입니다. 하루 열람 한도 안에서 리포트를 보실 수 있습니다.")));
+        T("무료로 이용 중입니다. 분석·전망·리스크 등 유료 구간은 멤버십에서 보실 수 있습니다.")));
       const btns = el("div", "ks-btns");
       const a = el("a", "ks-btn primary", T("플랜 보기"));
       a.href = "pricing.html";
       btns.appendChild(a);
       body.appendChild(btns);
+      const h = histSection(payments); if (h) body.appendChild(h);
       return;
     }
 
     const dl = el("dl", "ks-kv");
-    kv(dl, "이용 중인 플랜", plan.name);
+    kv(dl, "이용 중인 플랜", (plan && plan.name) || String(sub.plan || "").toUpperCase());
 
-    const badge = el("span", "ks-badge " +
-      (sub && sub.status === "past_due" ? "warn" : sub && sub.cancelAtPeriodEnd ? "warn" : "on"),
-      T(sub && sub.status === "past_due" ? "결제 실패"
-        : sub && sub.cancelAtPeriodEnd ? "해지 예약됨" : "이용 중"));
+    const badge = el("span", "ks-badge " + (active && !sub.cancelAtPeriodEnd ? "on" : "warn"),
+      T(due ? "결제 실패"
+        : ended ? "이용 종료됨"
+        : sub.cancelAtPeriodEnd ? "해지 예약됨" : "이용 중"));
     kv(dl, "상태", badge);
 
-    if (sub && sub.currentPeriodEnd) {
-      kv(dl, sub.cancelAtPeriodEnd ? "이용 종료일" : "다음 결제일",
-         fmtDay(sub.currentPeriodEnd, en));
+    if (active || due) {
+      kv(dl, "결제 금액", won((plan && plan.price) || 0, en));
+      if (plan && plan.limit) kv(dl, "하루 열람 한도", `${plan.limit}${en ? "" : "개"}`);
     }
-    kv(dl, "결제 금액", won(plan.price, en));
 
-    const card = sub && sub.card;
-    kv(dl, "결제 수단", card && (card.company || card.number)
+    /* 남은 열람으로 적는다. '오늘 열람 2건' 은 많이 본 건지 적게 본 건지를
+       한도와 견줘 봐야 알 수 있다 — 사용자가 궁금한 건 몇 개가 남았는가다.
+       usage.limit 이 0 일 수 있어 ?? 가 아니라 || 로 받는다(0 ?? x 는 0). */
+    if (active && usage && typeof usage.used === "number") {
+      const lim = usage.limit || (plan && plan.limit) || 0;
+      if (lim) kv(dl, "오늘 남은 열람",
+        T("{r}개 / {l}개").replace("{r}", Math.max(0, lim - usage.used)).replace("{l}", lim));
+    }
+
+    if (endDay) kv(dl, active && !sub.cancelAtPeriodEnd ? "다음 결제일" : "이용 종료일", endDay);
+
+    /* 다운그레이드는 다음 결제일부터라 지금 화면에는 아무것도 안 바뀐다.
+       예약된 걸 어디에도 안 적어 두면, 확인을 눌러도 아무 일도 안 일어난 것처럼
+       보이고 다음 달에 왜 금액이 바뀌었는지 알 수 없다. */
+    const pend = active && sub.pendingPlan && sub.pendingPlan !== sub.plan
+      ? planOf(sub.pendingPlan) : null;
+    if (pend) kv(dl, "예정된 변경",
+      T("{d}부터 {p}").replace("{d}", endDay).replace("{p}", pend.name));
+
+    if (sub.startedAt) kv(dl, "구독 시작일", fmtDay(sub.startedAt, en));
+
+    const card = sub.card;
+    if (active || due) kv(dl, "결제 수단", card && (card.company || card.number)
       ? ((card.company || T("등록하신 카드")) + " " + (card.number || "")).trim()
       : T("등록된 카드가 없습니다."));
 
-    if (usage && typeof usage.used === "number") {
-      kv(dl, "오늘 열람", `${usage.used} / ${usage.limit ?? plan.limit}${T("건")}`);
-    }
     body.appendChild(dl);
-
-    /* 플랜 변경 예약이 걸려 있으면 알려 준다. 예약해 놓고 화면에 아무
-       흔적이 없으면 다음 달에 왜 금액이 바뀌었는지 알 수 없다. */
-    if (sub && sub.pendingPlan) {
-      const np = planOf(sub.pendingPlan);
-      if (np) body.appendChild(el("p", "ks-note",
-        T("다음 결제일에 {p} 로 바뀝니다.").replace("{p}", np.name)));
-    }
 
     const btns = el("div", "ks-btns");
 
-    const chg = el("a", "ks-btn", T("플랜 변경"));
-    chg.href = "pricing.html";
-    btns.appendChild(chg);
-
-    /* 결제창 키가 아직 안 꽂혔으면 이 버튼은 누르나 마나다 — 눌러 놓고
-       빈 화면을 보느니 아예 내보내지 않는다. 다만 미리보기(__KOSDEMO)는
-       토스 없이 checkout.js 안에서 카드 변경을 흉내내므로 키가 없어도 된다.
-       스테이징이 그쪽이다 — 여기서 payReady 만 보면 확인할 것을 못 본다.
-       주소 모양은 billing.js·pricing.html 과 같아야 한다(plan + method=1).
-       method 를 빼면 결제창이 '카드 변경' 이 아니라 새 결제로 뜬다. */
-    if (payReady || window.__KOSDEMO) {
-      const cardBtn = el("a", "ks-btn", T("결제 수단 변경"));
-      cardBtn.href = "checkout.html?plan=" +
-        encodeURIComponent((sub && sub.plan) || plan.id || "basic") + "&method=1";
-      btns.appendChild(cardBtn);
+    if (due) {
+      /* 결제가 막힌 사람에게 필요한 건 설명과 카드 한 장이다. 해지·플랜 변경
+         버튼을 같이 두면 무엇부터 눌러야 할지가 흐려진다. */
+      const a = el("a", "ks-btn primary", T("결제 수단 변경"));
+      a.href = cardHref(sub);
+      btns.appendChild(a);
+      body.appendChild(btns);
+      body.appendChild(el("p", "ks-note",
+        T("등록하신 카드로 결제가 승인되지 않았습니다. 카드를 다시 등록하시면 이용이 재개됩니다.")));
+      const h = histSection(payments); if (h) body.appendChild(h);
+      return;
     }
 
-    /* 해지와 재개는 한 자리에서 뒤집힌다. 버튼을 둘 다 두면 지금 어느
-       상태인지가 흐려진다. */
-    const toggle = el("button", "ks-btn" + (sub && sub.cancelAtPeriodEnd ? " primary" : " danger"),
-      T(sub && sub.cancelAtPeriodEnd ? "해지 취소" : "구독 해지"));
-    toggle.type = "button";
-    toggle.addEventListener("click", async () => {
-      toggle.disabled = true;
-      msg.className = "ks-msg";
-      const resume = !!(sub && sub.cancelAtPeriodEnd);
-      try {
-        await call(resume ? "resumeSubscription" : "cancelSubscription", {});
-        say(resume ? "해지를 취소했습니다. 구독이 그대로 이어집니다."
-                   : "다음 결제일에 해지됩니다. 그때까지는 그대로 이용하실 수 있습니다.", "ok");
-      } catch (_) {
-        say("처리하지 못했어요. 잠시 후 다시 시도해 주세요.", "err");
-      }
-      toggle.disabled = false;
-    });
-    btns.appendChild(toggle);
+    if (ended) {
+      const a = el("a", "ks-btn primary", T("멤버십 보기"));
+      a.href = "pricing.html";
+      btns.appendChild(a);
+      body.appendChild(btns);
+      const h = histSection(payments); if (h) body.appendChild(h);
+      return;
+    }
 
-    const rf = el("button", "ks-btn danger", T("환불 신청"));
-    rf.type = "button";
-    rf.addEventListener("click", async () => {
-      rf.disabled = true;
-      msg.className = "ks-msg";
-      try { await call("requestRefund", {}); say("환불을 신청했습니다.", "ok"); }
-      catch (_) { say("처리하지 못했어요. 잠시 후 다시 시도해 주세요.", "err"); }
-      rf.disabled = false;
-    });
-    btns.appendChild(rf);
+    /* ── 이용 중 ─────────────────────────────────────────────── */
+
+    const other = sub.plan === "pro" ? PLANS.basic : PLANS.pro;
+    const up = !pend && (other.price || 0) > ((plan && plan.price) || 0);
+    /* 해지 예약과 플랜 변경 예약은 함께 둘 수 없다 — 서버가 갱신할 때 해지를
+       먼저 보고 끝내므로, 둘 다 걸어 두면 변경은 조용히 사라진다. 한쪽을
+       고르면 다른 쪽이 풀린다는 걸 누르기 전에 말해 준다. */
+    const alsoResume = sub.cancelAtPeriodEnd ? T(" 예약해 두신 해지는 함께 취소됩니다.") : "";
+
+    btns.appendChild(button(
+      pend ? "변경 취소" : sub.plan === "pro" ? "BASIC으로 변경" : "PRO로 업그레이드",
+      null,
+      b => act(b, {
+        confirm: () => {
+          if (pend) return ask(T("플랜 변경을 취소하시겠습니까?"),
+            T("{date} 이후에도 {p} 플랜이 그대로 유지됩니다.")
+              .replace("{date}", endDay).replace("{p}", (plan && plan.name) || "") + alsoResume);
+          if (up) {
+            /* 얼마가 청구되는지 보여 주고 묻는다. 금액 없이 확인을 받으면
+               카드에서 얼마가 빠져나갈지 모르는 채로 누르게 된다. */
+            const diff = upgradeDiff(sub, other.id);
+            return ask(T("PRO로 업그레이드하시겠습니까?"),
+              (diff >= MIN_CHARGE
+                ? T("즉시 PRO가 적용됩니다. 남은 기간에 해당하는 BASIC 금액을 차감한 차액 {a}이 등록하신 카드로 지금 결제되며, 결제일은 그대로 유지됩니다.")
+                    .replace("{a}", won(diff, en))
+                : T("즉시 PRO가 적용됩니다. 이번 결제 주기가 거의 끝나 지금 청구되는 금액은 없으며, 다음 결제일부터 PRO 요금으로 청구됩니다."))
+              + alsoResume);
+          }
+          return ask(T("BASIC으로 변경하시겠습니까?"),
+            T("{date}부터 BASIC이 적용됩니다. 그때까지는 PRO를 그대로 이용하실 수 있습니다.")
+              .replace("{date}", endDay) + alsoResume);
+        },
+        fn: "changePlan",
+        arg: { plan: pend ? sub.plan : other.id },
+        /* 업그레이드 결과 문구는 미리 보여 준 금액이 아니라 실제 청구액으로
+           쓴다 — 둘이 다를 수 있고(서버가 다시 계산한다), 다르면 카드 명세와
+           화면이 어긋난다. */
+        done: d => pend ? T("플랜 변경이 취소되었습니다.")
+          : up ? ((d && d.charged > 0)
+              ? T("{p} 플랜이 바로 적용되었습니다. 차액 {a}이 결제되었습니다.")
+                  .replace("{p}", other.name).replace("{a}", won(d.charged, en))
+              : T("{p} 플랜이 바로 적용되었습니다. 지금 청구된 금액은 없습니다.")
+                  .replace("{p}", other.name))
+          : T("{d}부터 {p} 플랜으로 변경됩니다.")
+              .replace("{d}", endDay).replace("{p}", other.name),
+      })));
+
+    if (canCard()) {
+      /* 주소 모양은 billing.js·pricing.html 과 같아야 한다(plan + method=1).
+         method 를 빼면 결제창이 '카드 변경' 이 아니라 새 결제로 뜬다. */
+      const a = el("a", "ks-btn", T("결제 수단 변경"));
+      a.href = cardHref(sub);
+      btns.appendChild(a);
+    }
+
+    /* 해지와 재개는 한 자리에서 뒤집힌다. 버튼을 둘 다 두면 지금 어느 상태인지가
+       흐려진다. 재개는 되돌리기 쉬우므로 묻지 않는다. */
+    if (sub.cancelAtPeriodEnd) {
+      btns.appendChild(button("해지 취소", "primary", b => act(b, {
+        fn: "resumeSubscription",
+        done: () => T("해지가 취소되었습니다."),
+      })));
+    } else {
+      btns.appendChild(button("구독 해지", "danger", b => act(b, {
+        confirm: () => ask(T("구독을 해지하시겠습니까?"),
+          T("{date}까지는 그대로 이용하실 수 있으며, 그 이후 결제되지 않습니다. 해지는 언제든지 취소하실 수 있습니다.")
+            .replace("{date}", endDay)
+          + (pend ? T(" 예약해 두신 {p} 플랜 변경은 함께 취소됩니다.").replace("{p}", pend.name) : ""),
+          "cancel"),
+        fn: "cancelSubscription",
+        done: () => T("해지 예약이 완료되었습니다."),
+        survey: "구독 해지",
+      })));
+    }
+
+    btns.appendChild(button("환불 신청", "danger", b => act(b, {
+      confirm: () => ask(T("환불을 신청하시겠습니까?"),
+        T("환불이 완료되면 유료 플랜 이용 권한이 즉시 종료됩니다. 환불 금액은 열람 여부와 이용 일수에 따라 산정됩니다."),
+        "refund"),
+      fn: "requestRefund",
+      done: d => (d && d.refunded > 0)
+        ? T("환불 신청이 접수되었습니다. {a}이 환불됩니다.").replace("{a}", won(d.refunded, en))
+        : T("환불 신청이 접수되었습니다."),
+      survey: "환불 신청",
+    })));
 
     body.appendChild(btns);
+    body.appendChild(el("p", "ks-note",
+      T("해지하시면 이미 결제하신 이용 기간이 끝날 때까지는 그대로 이용하실 수 있습니다.")));
+    const hist = histSection(payments); if (hist) body.appendChild(hist);
     body.appendChild(el("p", "ks-note", T("미리보기입니다. 실제로 돈이 오가지 않습니다.")));
     if (window.KOSi18n) window.KOSi18n.apply();
   }
 
-  /* paywall 이 아직 안 실렸을 수도 있다(스크립트 순서). 없으면 구독을
-     '없음' 으로 그리는 대신 그렇게 말한다 — 유료 회원에게 무료라고
-     보여 주는 쪽이 훨씬 나쁘다. */
+  /* paywall 이 아직 안 실렸을 수도 있다(스크립트 순서). 없으면 구독을 '없음'
+     으로 그리는 대신 그렇게 말한다 — 유료 회원에게 무료라고 보여 주는 쪽이
+     훨씬 나쁘다. */
   const pw = window.KOSPaywall;
   if (!pw) {
     body.textContent = "";
@@ -451,22 +808,36 @@ function paneSubscription() {
   }
 
   const load = async (st) => {
-    let usage = null;
-    try { const r = await call("getUsage", {}); usage = (r && r.data) || null; } catch (_) {}
-    draw(st, usage);
+    const [usage, payments] = await Promise.all([
+      call("getUsage", {}).then(r => (r && r.data) || null).catch(() => null),
+      /* 결제 내역은 미리보기(KOSDemo)만 갖고 있다. 실제 서버에는 아직 이걸
+         돌려주는 함수가 없다 — 그때는 null 을 넘겨 '결제 내역' 칸을 아예 빼게
+         한다. 빈 배열을 넘기면 결제한 사람에게 '내역이 없습니다' 가 뜬다. */
+      Promise.resolve()
+        .then(() => (window.__KOSDEMO && window.KOSDemo ? window.KOSDemo.payments() : null))
+        .catch(() => null),
+    ]);
+    draw(st, usage, payments);
   };
+  const refresh = () => load(pw.state());
 
-  /* 먼저 ready 를 기다리고, 그 다음에 변화를 듣는다. 순서를 바꾸면 인증이
-     끝나기 전의 빈 스냅샷(user:null)이 먼저 도착해 유료 회원에게 '무료로
-     이용 중' 이 한 번 스쳐 지나간다. onChange 는 붙는 즉시 한 번 부르므로
-     그 첫 회는 버린다 — ready 로 이미 같은 값을 그렸다. */
+  /* ready 는 '인증이 한 번 확인됐다' 는 신호일 뿐 최신 상태가 아니다.
+     한 번 resolve 되면 그때의 스냅샷을 영원히 들고 있다.
+
+       ready.then(load)  ← 결제 전에 한 번 열어 봤다면 그때의 '구독 없음' 이
+                            그대로 다시 그려진다. 결제하고 창을 열면 '무료로
+                            이용 중' 이 뜬다.
+
+     그래서 ready 는 기다리는 데만 쓰고, 값은 onChange 에서 받는다. onChange 는
+     붙는 즉시 지금 스냅샷으로 한 번 부르고, 그 뒤 바뀔 때마다 부른다 — 첫 그림과
+     이후 갱신이 같은 길로 들어와 어긋날 자리가 없다.
+
+     ready 를 먼저 기다리는 건 여전히 필요하다. 바로 붙으면 인증이 끝나기 전의
+     빈 스냅샷(user:null)이 먼저 와서 유료 회원에게 '무료' 가 한 번 스친다. */
   let off = null;
-  pw.ready.then(st => {
-    load(st);
-    if (pw.onChange) {
-      let first = true;
-      off = pw.onChange(s => { if (first) { first = false; return; } load(s); });
-    }
+  pw.ready.then(() => {
+    if (pw.onChange) off = pw.onChange(load);
+    else load(pw.state());
   }).catch(() => {
     body.textContent = "";
     body.appendChild(el("p", "ks-note", T("불러오지 못했어요. 잠시 후 다시 시도해 주세요.")));
