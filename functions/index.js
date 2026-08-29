@@ -1520,6 +1520,14 @@ exports.submitForm = onCall(
    ============================================================ */
 const DAILY_LIMIT = { basic: 5, pro: 15 };   // 1일 '서로 다른 종목' 열람 수
 
+/* 환불이 끝난 구독인가.
+
+   오늘 값을 받은 환불은 자정까지 subActive 가 참이다. 그 사이에 해지·플랜
+   변경·환불을 또 누를 수 있는데, 두 번째 환불은 이미 취소한 결제 건을 다시
+   취소하려 들고 업그레이드는 방금 환불한 카드에 차액을 긁는다.
+   끝난 구독에는 아무것도 하지 않는다. */
+function refundedAlready(sub) { return !!(sub && sub.refundedAt); }
+
 function subActive(sub) {
   if (!sub || sub.status !== "active") return false;
   const end = sub.currentPeriodEnd;
@@ -2501,6 +2509,7 @@ if (PAYMENTS_LIVE) exports.changePlan = onCall(
     const ref = db.doc(`subscriptions/${uid}`);
     const sub = (await ref.get()).data();
     if (!subActive(sub)) throw new HttpsError("failed-precondition", "이용 중인 구독이 없습니다.");
+    if (refundedAlready(sub)) throw new HttpsError("failed-precondition", "환불이 완료된 구독입니다.");
     if (sub.plan === next && !sub.pendingPlan) {
       throw new HttpsError("already-exists", "이미 해당 플랜을 이용 중입니다.");
     }
@@ -2542,6 +2551,7 @@ if (PAYMENTS_LIVE) exports.cancelSubscription = onCall({ region: REGION, cors: t
   const ref = admin.firestore().doc(`subscriptions/${uid}`);
   const sub = (await ref.get()).data();
   if (!subActive(sub)) throw new HttpsError("failed-precondition", "이용 중인 구독이 없습니다.");
+  if (refundedAlready(sub)) throw new HttpsError("failed-precondition", "환불이 완료된 구독입니다.");
   await ref.set({
     cancelAtPeriodEnd: true, canceledAt: admin.firestore.FieldValue.serverTimestamp(),
     // 해지하면 다음 결제 자체가 없다 — 예약해 둔 플랜 변경은 의미가 없다.
@@ -2556,6 +2566,7 @@ if (PAYMENTS_LIVE) exports.resumeSubscription = onCall({ region: REGION, cors: t
   const ref = admin.firestore().doc(`subscriptions/${uid}`);
   const sub = (await ref.get()).data();
   if (!subActive(sub)) throw new HttpsError("failed-precondition", "이용 중인 구독이 없습니다.");
+  if (refundedAlready(sub)) throw new HttpsError("failed-precondition", "환불이 완료된 구독입니다.");
   await ref.set({
     cancelAtPeriodEnd: false, canceledAt: null,
     updatedAt: admin.firestore.FieldValue.serverTimestamp(),
@@ -2569,7 +2580,32 @@ if (PAYMENTS_LIVE) exports.resumeSubscription = onCall({ region: REGION, cors: t
      · 리포트 미열람 + 7일 이내  → 전액
      · 리포트 미열람 + 7일 경과  → 잔여 기간분 − 수수료 10%
      · 리포트 열람              → 이용 일수 차감 후 − 수수료 10%
+
+   오늘 하루를 셀지 말지는 '오늘 리포트를 열었는가' 가 정한다.
+
+     오늘 0건    오늘 값을 받지 않는다 → 이용은 지금 끝난다
+     오늘 1건+   오늘 값을 받는다     → 이용은 오늘 자정까지
+
+   여태 경과 시간을 초 단위로 나눠 썼다(9.375일). 그런데 우리가 파는 단위는
+   하루다 — 하루 5건, 한국 시간 자정 리셋. 쪼갤 수 없는 것을 소수로 차감하니
+   양쪽 다 어긋났다.
+
+     오전 9시에 한 건도 안 보고 환불   오늘 값 0.375일을 내고 5건은 못 봄
+     오전 9시에 5건 다 보고 환불       하루치를 다 쓰고 0.375일만 냄
+
+   밤 11시 50분에 한 건도 안 보고 환불하면 오늘 값을 거의 다 내고 아무것도
+   못 보는데, 그게 가장 이상했다.
+
+   요금제 페이지에는 처음부터 '이용하신 일수를 차감' 이라고 적어 두었다.
+   고지는 일수인데 계산이 초였다 — 이제 적어 둔 대로 센다.
    ─────────────────────────────────────────────────────────── */
+const KST_OFFSET = 9 * 3600 * 1000;
+/* 한국 시간 기준으로 며칠째인가(1970-01-01 = 0). 날짜끼리 빼면 날 수가 된다. */
+const kstDayNo = (ms) => Math.floor((ms + KST_OFFSET) / 86400000);
+/* 오늘이 끝나는 순간 = 내일 0시(KST). 오늘 값을 받았을 때 여기까지 열어 준다. */
+const kstEndOfToday = (ms = Date.now()) =>
+  new Date((kstDayNo(ms) + 1) * 86400000 - KST_OFFSET);
+
 /* 환불 금액 계산 — 요금제 페이지에 고지한 기준 그대로.
    환불 신청과 회원 탈퇴가 같은 계산을 써야 한다. 두 곳에 따로 적으면 언젠가
    한쪽만 고치고 지나가고, 그러면 고지한 기준과 실제가 어긋난다. */
@@ -2577,8 +2613,9 @@ async function refundQuote(db, uid, sub) {
   if (!sub || !sub.lastPaymentKey) return { amount: 0, reason: "" };
   const startMs = sub.currentPeriodStart.toMillis();
   const endMs = sub.currentPeriodEnd.toMillis();
-  const total = Math.max(1, days(endMs - startMs));
-  const used = Math.min(total, Math.max(0, days(Date.now() - startMs)));
+  /* 주기는 addMonth 로 잡으므로 시각이 같아 원래 정수일이다. 반올림은 만약을
+     대비한 것 — 소수가 섞이면 아래 날짜 뺄셈과 단위가 어긋난다. */
+  const total = Math.max(1, Math.round(days(endMs - startMs)));
   const price = PRICE[sub.plan] || 0;
 
   // 이번 결제 기간에 리포트를 한 건이라도 열었는가
@@ -2588,14 +2625,25 @@ async function refundQuote(db, uid, sub) {
     .limit(1).get();
   const opened = !reads.empty;
 
+  /* 오늘 한 건이라도 열었는가. 하루 한도를 세는 문서를 그대로 본다 —
+     같은 자료를 두 곳에서 다르게 세면 화면의 '오늘 남은 열람' 과 환불 계산이
+     어긋난다. */
+  const openedToday = (await usageOf(db, uid)) > 0;
+
+  // 지난 날은 전부 차감하고, 오늘은 열었을 때만 더한다.
+  const elapsed = Math.max(0, kstDayNo(Date.now()) - kstDayNo(startMs));
+  const used = Math.min(total, elapsed + (openedToday ? 1 : 0));
+
   if (!opened && used <= FREE_WITHDRAW_DAYS) {
-    return { amount: price, reason: "청약철회(7일 이내·미열람)", why: "withdraw" };
+    return { amount: price, reason: "청약철회(7일 이내·미열람)", why: "withdraw",
+             chargedToday: false };
   }
   const leftRatio = Math.max(0, (total - used) / total);
   return {
     amount: Math.floor(price * leftRatio * (1 - REFUND_FEE_RATE)),
     reason: opened ? "이용분 차감 환불" : "잔여 기간 환불",
     why: opened ? "used" : "left",
+    chargedToday: openedToday,
   };
 }
 
@@ -2619,20 +2667,44 @@ if (PAYMENTS_LIVE) exports.requestRefund = onCall(
     const sub = (await ref.get()).data();
     if (!subActive(sub)) throw new HttpsError("failed-precondition", "이용 중인 구독이 없습니다.");
     if (!sub.lastPaymentKey) throw new HttpsError("failed-precondition", "환불할 결제 건이 없습니다.");
+    if (refundedAlready(sub)) throw new HttpsError("failed-precondition", "이미 환불이 완료되었습니다.");
 
     const q = await refundQuote(db, uid, sub);
     const amount = q.amount;
     if (amount <= 0) throw new HttpsError("failed-precondition", "환불 가능한 금액이 없습니다.");
     await doRefund(db, uid, sub, q);
-    // 환불이 끝나면 이용 권한은 즉시 종료된다(요금제 페이지 고지와 동일).
+
+    /* 오늘 값을 받았으면 오늘은 끝까지 쓰게 둔다. 안 받았으면 지금 끝낸다.
+       돈과 이용 기간이 같은 하루를 가리켜야 한다 — 오늘 값을 받아 놓고
+       이용을 끊으면 대가는 받고 물건은 회수하는 셈이고, 값을 안 받고 열어
+       주면 하루를 공짜로 주는 셈이다.
+
+       q.chargedToday 를 다시 계산하지 않고 그대로 쓴다. 위에서 이미 그 값으로
+       돈을 계산했으므로, 여기서 다시 세면 그 사이에 한 건 연 사람에게 값을
+       안 받고 하루를 열어 주게 된다. */
+    const endAt = q.chargedToday ? kstEndOfToday() : new Date();
+
+    /* status 는 "refunded" 가 아니라 "active" 로 둔다.
+
+       subActive 가 status === "active" 를 요구하므로, 여기서 "refunded" 로
+       적으면 currentPeriodEnd 를 자정으로 미뤄 놔도 이용은 그 자리에서
+       끊긴다 — 오늘 값을 받아 놓고 못 쓰게 하는 셈이다.
+
+       대신 cancelAtPeriodEnd 를 세워 둔다. 다음 날 갱신 배치가 기간이 지난
+       이 문서를 집어 cancelAtPeriodEnd 를 보고 카드를 긁지 않고 "expired"
+       로 닫는다(해지 예약과 같은 길이다).
+
+       '환불이 끝났다' 는 refundedAt 이 말한다. 그 값이 있으면 해지·플랜
+       변경·재환불이 전부 막힌다(refundedAlready).
+       오늘 값을 안 받은 환불은 endAt 이 지금이라 곧바로 닫힌다. */
     await ref.set({
-      status: "refunded", cancelAtPeriodEnd: true,
-      currentPeriodEnd: admin.firestore.Timestamp.fromDate(new Date()),
+      status: "active", cancelAtPeriodEnd: true, pendingPlan: null,
+      currentPeriodEnd: admin.firestore.Timestamp.fromDate(endAt),
       refundedAt: admin.firestore.FieldValue.serverTimestamp(),
       updatedAt: admin.firestore.FieldValue.serverTimestamp(),
     }, { merge: true });
 
-    return { ok: true, amount };
+    return { ok: true, amount, endsAt: endAt.toISOString() };
   }
 );
 

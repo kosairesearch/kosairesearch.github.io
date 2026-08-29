@@ -212,13 +212,84 @@ await click("변경 취소");
 await dlgClick("확인");
 ok("예약을 취소할 수 있다", sub().pendingPlan === null);
 
-console.log("\n── 환불 ──");
+console.log("\n── 환불: 신청한 날을 셀지 말지 ──");
+/* 우리가 파는 단위는 하루다(하루 5건, KST 자정 리셋). 여태 경과 시간을 초 단위로
+   나눠 차감해서, 오전에 한 건도 안 보고 환불하면 오늘 값을 내고 5건은 못 봤다.
+   이제 오늘 열었으면 오늘을 받고 자정까지 열어 주고, 안 열었으면 안 받고 지금
+   끝낸다. 요금제 페이지와 약관에 적어 둔 그대로다. */
+{
+  const DAY = 86400e3, KST = 9 * 3600e3;
+  const setup = (daysAgo) => {
+    localStorage.clear();
+    w.KOSDemo.subscribe("basic");
+    const s0 = sub();
+    s0.currentPeriodStart = Date.now() - daysAgo * DAY;
+    s0.currentPeriodEnd = s0.currentPeriodStart + 30 * DAY;
+    localStorage.setItem("kos-demo-sub", JSON.stringify(s0));
+    return s0;
+  };
+  const endOfToday = () => (Math.floor((Date.now() + KST) / DAY) + 1) * DAY - KST;
+
+  // ① 오늘 한 건도 안 봤으면 오늘은 차감하지 않는다
+  setup(9);
+  let s1 = sub(); s1.readsSincePay = 3;      // 지난 날에는 봤다(전액 환불 대상 아님)
+  localStorage.setItem("kos-demo-sub", JSON.stringify(s1));
+  let r = (await w.KOSDemo.call("requestRefund", {})).data;
+  ok("오늘 0건 → 9일만 차감", r.refunded === Math.floor(9900 * (21 / 30) * 0.9), String(r.refunded));
+  ok("오늘 0건 → 이용은 지금 끝난다", r.endsAt <= Date.now() + 1000, String(r.endsAt - Date.now()));
+  ok("오늘 0건 → 곧바로 비활성", w.KOSPaywall.state().active === false);
+
+  // ② 오늘 한 건이라도 봤으면 오늘까지 차감하고 오늘까지 열어 준다
+  setup(9);
+  await w.KOSPaywall.fetchPaid("005930");    // 오늘 1건
+  r = (await w.KOSDemo.call("requestRefund", {})).data;
+  ok("오늘 1건 → 10일 차감", r.refunded === Math.floor(9900 * (20 / 30) * 0.9), String(r.refunded));
+  ok("오늘 1건 → 오늘 자정까지", r.endsAt === endOfToday(), String(new Date(r.endsAt)));
+  ok("오늘 1건 → 자정까지는 살아 있다", w.KOSPaywall.state().active === true);
+  ok("오늘 1건 → 남은 4건 계속 열 수 있다",
+     await w.KOSPaywall.fetchPaid("000660").then(() => true).catch(() => false));
+
+  // ③ 오늘 0건이 오늘 1건보다 많이 돌려받는다 — 하루치만큼
+  ok("오늘 0건이 오늘 1건보다 하루치만큼 더 받는다",
+     Math.floor(9900 * (21 / 30) * 0.9) - Math.floor(9900 * (20 / 30) * 0.9) > 0);
+
+  // ④ 자정 직전에 0건이어도 오늘 값을 받지 않는다(가장 이상하던 경우)
+  setup(9);
+  let s4 = sub(); s4.readsSincePay = 3;
+  localStorage.setItem("kos-demo-sub", JSON.stringify(s4));
+  r = (await w.KOSDemo.call("requestRefund", {})).data;
+  ok("시각과 무관하게 오늘 0건이면 안 받는다", r.refunded === Math.floor(9900 * (21 / 30) * 0.9));
+
+  // ⑤ 끝난 구독에는 아무것도 하지 않는다
+  setup(9);
+  await w.KOSPaywall.fetchPaid("005930");
+  await w.KOSDemo.call("requestRefund", {});
+  for (const fn of ["requestRefund", "cancelSubscription", "changePlan"]) {
+    let blocked = false;
+    await w.KOSDemo.call(fn, { plan: "pro" }).catch(() => { blocked = true; });
+    ok(`환불 뒤 ${fn} 거절`, blocked);
+  }
+  await openSubs();
+  ok("환불 뒤 화면은 '환불 완료'", txt().includes("환불 완료"), txt().slice(0, 200));
+  ok("환불 뒤 해지·플랜 버튼 없음",
+     !btns().includes("구독 해지") && !btns().includes("PRO로 업그레이드"), btns().join("|"));
+  ok("환불 뒤 언제까지인지 말해 준다", txt().includes("오늘 자정까지"), txt().slice(0, 260));
+}
+
+console.log("\n── 환불(화면에서) ──");
+/* 앞 블록이 환불까지 끝내 놨다 — 버튼이 없는 상태다. 새 구독으로 다시 깐다. */
+localStorage.clear(); w.KOSDemo.subscribe("basic");
+await openSubs();
 await click("환불 신청");
 ok("환불도 묻는다", !!dlg());
 ok("환불 사유를 묻는다", dlg().textContent.includes("실수로 결제했습니다"));
 await dlgClick("확인");
-ok("환불 금액을 알려 준다", /환불됩니다/.test(msg()) && /원/.test(msg()), msg());
-ok("환불하면 이용이 끝난다", txt().includes("이용 종료됨"), txt().slice(0, 200));
+/* 가입 당일·미열람이라 청약철회 전액이고, 오늘 값을 안 받았으니 지금 끝난다.
+   금액과 '언제까지'를 한 문장에 같이 말해야 한다 — 금액만 알려 주면 오늘
+   남은 열람을 쓸 수 있는지 없는지를 눌러 봐야 안다. */
+ok("환불 금액을 알려 준다", /9,900원/.test(msg()), msg());
+ok("언제 끝나는지도 알려 준다", /지금 종료/.test(msg()), msg());
+ok("환불하면 화면이 '환불 완료'", txt().includes("환불 완료"), txt().slice(0, 200));
 
 console.log("\n── 결제 실패 ──");
 localStorage.clear(); w.KOSDemo.subscribe("basic"); w.KOSDemo.simulate("past_due");

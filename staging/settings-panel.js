@@ -102,7 +102,11 @@ if (window.KOSi18n) window.KOSi18n.register({
   "결제 완료": "Paid", "환불": "Refunded", "실패": "Failed",
   "{p} 월 구독": "{p} monthly", "{p} 업그레이드 차액": "{p} upgrade difference",
   "정기결제 실패": "Renewal failed",
-  "청약철회": "withdrawal", "이용분 차감": "usage deducted",
+  "청약철회": "withdrawal", "이용분 차감": "usage deducted", "잔여 기간": "remaining days",
+  "환불 완료": "Refunded",
+  "환불이 완료되었습니다. 오늘 자정까지 이용하실 수 있습니다.":
+    "Refunded. You keep access until midnight tonight.",
+  "환불이 완료되어 이용이 종료되었습니다.": "Refunded. Your access has ended.",
   "{r}개 / {l}개": "{r} of {l}", "{d}부터 {p}": "{p} from {d}",
   "PRO로 업그레이드": "Upgrade to PRO", "BASIC으로 변경": "Switch to BASIC",
   "변경 취소": "Undo change",
@@ -115,8 +119,8 @@ if (window.KOSi18n) window.KOSi18n.register({
   "{date}까지는 그대로 이용하실 수 있으며, 그 이후 결제되지 않습니다. 해지는 언제든지 취소하실 수 있습니다.":
     "You keep access until {date}, and you will not be charged after that. You can undo this anytime.",
   "환불을 신청하시겠습니까?": "Request a refund?",
-  "환불이 완료되면 유료 플랜 이용 권한이 즉시 종료됩니다. 환불 금액은 열람 여부와 이용 일수에 따라 산정됩니다.":
-    "Your paid plan ends as soon as the refund is processed. The amount depends on whether you opened reports and how many days you used.",
+  "환불 금액은 이용하신 일수를 차감해 산정됩니다. 오늘 리포트를 보셨다면 오늘까지 이용하실 수 있고, 오늘 한 건도 보지 않으셨다면 오늘은 차감하지 않고 이용이 바로 종료됩니다.":
+    "The refund deducts the days you used. If you opened a report today, you keep access until midnight; if you opened none today, today is not charged and your access ends right away.",
   "PRO로 업그레이드하시겠습니까?": "Upgrade to PRO?",
   "즉시 PRO가 적용됩니다. 남은 기간에 해당하는 BASIC 금액을 차감한 차액 {a}이 등록하신 카드로 지금 결제되며, 결제일은 그대로 유지됩니다.":
     "PRO applies immediately. The unused part of BASIC is credited and the difference, {a}, is charged to your card now; your billing date stays the same.",
@@ -134,7 +138,10 @@ if (window.KOSi18n) window.KOSi18n.register({
   "자세한 의견 (선택)": "Tell us more (optional)",
   "해지 예약이 완료되었습니다.": "Your subscription will end at the period end.",
   "해지가 취소되었습니다.": "Your subscription continues.",
-  "환불 신청이 접수되었습니다. {a}이 환불됩니다.": "Refund requested. {a} will be returned.",
+  "환불 신청이 접수되었습니다. {a}이 환불되며, 오늘 자정까지 이용하실 수 있습니다.":
+    "Refund requested. {a} will be returned, and you keep access until midnight tonight.",
+  "환불 신청이 접수되었습니다. {a}이 환불되며, 이용은 지금 종료됩니다.":
+    "Refund requested. {a} will be returned, and your access ends now.",
   "환불 신청이 접수되었습니다.": "Your refund request has been received.",
   "{p} 플랜이 바로 적용되었습니다. 차액 {a}이 결제되었습니다.":
     "You are on {p} as of now. {a} has been charged.",
@@ -490,7 +497,9 @@ function payLabel(p) {
   if (p.kind === "upgrade") return T("{p} 업그레이드 차액").replace("{p}", name);
   if (p.kind === "failed") return T("정기결제 실패");
   if (p.kind === "refund") {
-    const why = p.why === "used" ? T("이용분 차감") : p.why === "withdraw" ? T("청약철회") : "";
+    const why = p.why === "used" ? T("이용분 차감")
+              : p.why === "withdraw" ? T("청약철회")
+              : p.why === "left" ? T("잔여 기간") : "";
     return why ? `${T("환불")} · ${why}` : T("환불");
   }
   return p.description || "";
@@ -623,7 +632,11 @@ function paneSubscription() {
     const en = EN();
     const sub = (st && st.sub) || null;
     const active = !!(st && st.active);
-    const due = !active && sub && sub.status === "past_due";
+    /* 환불이 끝났는가. 오늘 값을 받은 환불은 자정까지 살아 있어서 status 가
+       그대로 "active" 다 — 그것만 보면 방금 환불한 사람에게 '이용 중' 과 해지·
+       플랜 변경 버튼을 그대로 보여 주게 된다. 환불 여부는 refundedAt 이 말한다. */
+    const refunded = !!(sub && sub.refundedAt);
+    const due = !active && !refunded && sub && sub.status === "past_due";
     const ended = !active && !due && sub && (sub.status === "refunded" || sub.currentPeriodEnd);
     const plan = planOf(sub && sub.plan);
     const endDay = sub ? fmtDay(sub.currentPeriodEnd, en) : "";
@@ -643,13 +656,14 @@ function paneSubscription() {
     const dl = el("dl", "ks-kv");
     kv(dl, "이용 중인 플랜", (plan && plan.name) || String(sub.plan || "").toUpperCase());
 
-    const badge = el("span", "ks-badge " + (active && !sub.cancelAtPeriodEnd ? "on" : "warn"),
-      T(due ? "결제 실패"
+    const badge = el("span", "ks-badge " + (active && !refunded && !sub.cancelAtPeriodEnd ? "on" : "warn"),
+      T(refunded ? "환불 완료"
+        : due ? "결제 실패"
         : ended ? "이용 종료됨"
         : sub.cancelAtPeriodEnd ? "해지 예약됨" : "이용 중"));
     kv(dl, "상태", badge);
 
-    if (active || due) {
+    if ((active || due) && !refunded) {
       kv(dl, "결제 금액", won((plan && plan.price) || 0, en));
       if (plan && plan.limit) kv(dl, "하루 열람 한도", `${plan.limit}${en ? "" : "개"}`);
     }
@@ -676,13 +690,28 @@ function paneSubscription() {
     if (sub.startedAt) kv(dl, "구독 시작일", fmtDay(sub.startedAt, en));
 
     const card = sub.card;
-    if (active || due) kv(dl, "결제 수단", card && (card.company || card.number)
+    if ((active || due) && !refunded) kv(dl, "결제 수단", card && (card.company || card.number)
       ? ((card.company || T("등록하신 카드")) + " " + (card.number || "")).trim()
       : T("등록된 카드가 없습니다."));
 
     body.appendChild(dl);
 
     const btns = el("div", "ks-btns");
+
+    /* 환불이 끝났으면 더 할 일이 없다. 해지·플랜 변경 버튼을 남겨 두면 이미
+       끝난 구독을 다시 만지려 들고, 서버는 거절한다 — 눌리는 버튼이 거절만
+       하는 것보다 없는 편이 낫다. 남은 건 언제까지 볼 수 있는지 뿐이다. */
+    if (refunded) {
+      body.appendChild(el("p", "ks-note",
+        T(active ? "환불이 완료되었습니다. 오늘 자정까지 이용하실 수 있습니다."
+                 : "환불이 완료되어 이용이 종료되었습니다.")));
+      const a = el("a", "ks-btn primary", T("멤버십 보기"));
+      a.href = "pricing.html";
+      btns.appendChild(a);
+      body.appendChild(btns);
+      const h = histSection(payments); if (h) body.appendChild(h);
+      return;
+    }
 
     if (due) {
       /* 결제가 막힌 사람에게 필요한 건 설명과 카드 한 장이다. 해지·플랜 변경
@@ -783,12 +812,21 @@ function paneSubscription() {
 
     btns.appendChild(button("환불 신청", "danger", b => act(b, {
       confirm: () => ask(T("환불을 신청하시겠습니까?"),
-        T("환불이 완료되면 유료 플랜 이용 권한이 즉시 종료됩니다. 환불 금액은 열람 여부와 이용 일수에 따라 산정됩니다."),
+        T("환불 금액은 이용하신 일수를 차감해 산정됩니다. 오늘 리포트를 보셨다면 오늘까지 이용하실 수 있고, 오늘 한 건도 보지 않으셨다면 오늘은 차감하지 않고 이용이 바로 종료됩니다."),
         "refund"),
       fn: "requestRefund",
-      done: d => (d && d.refunded > 0)
-        ? T("환불 신청이 접수되었습니다. {a}이 환불됩니다.").replace("{a}", won(d.refunded, en))
-        : T("환불 신청이 접수되었습니다."),
+      /* 언제까지 볼 수 있는지를 결과에 같이 적는다. 금액만 알려 주면 오늘
+         남은 열람을 쓸 수 있는지 없는지를 눌러 봐야 안다.
+         endsAt 은 미리보기가 밀리초, 서버가 ISO 문자열로 준다 — 문자열을
+         숫자와 그냥 비교하면 늘 거짓이 되어 항상 '지금 종료' 로 적힌다. */
+      done: d => {
+        if (!(d && d.refunded > 0)) return T("환불 신청이 접수되었습니다.");
+        const endMs = typeof d.endsAt === "number" ? d.endsAt : Date.parse(d.endsAt);
+        return (Number.isFinite(endMs) && endMs > Date.now()
+          ? T("환불 신청이 접수되었습니다. {a}이 환불되며, 오늘 자정까지 이용하실 수 있습니다.")
+          : T("환불 신청이 접수되었습니다. {a}이 환불되며, 이용은 지금 종료됩니다."))
+          .replace("{a}", won(d.refunded, en));
+      },
       survey: "환불 신청",
     })));
 

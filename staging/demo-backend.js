@@ -157,6 +157,10 @@ function subscribe(planId) {
 function updateCard() {
   const sub = read(SUB_KEY, null);
   if (!sub) throw new Error("이용 중인 구독이 없습니다.");
+  /* 환불이 끝난 구독에는 카드도 새로 걸지 않는다. 오늘 값을 받은 환불은
+     자정까지 살아 있어서 그 사이에 여기까지 올 수 있는데, 곧 끝날 구독에
+     카드를 등록시키면 다음 달에 긁힐 것처럼 읽힌다. */
+  if (sub.refundedAt) throw new Error("환불이 완료된 구독입니다.");
   const n = String(1000 + Math.floor(Math.random() * 9000));
   sub.card = { company: "", issuerCode: "61", number: `0000-00**-****-${n}` };
   if (sub.status === "past_due") {
@@ -182,9 +186,26 @@ function updateCard() {
 const paidThisPeriod = (sub) =>
   ((sub && sub.periodPayments) || []).reduce((a, e) => a + (e.amount || 0), 0);
 
-function refundAmount(sub) {
-  const total = Math.max(1, (sub.currentPeriodEnd - sub.currentPeriodStart) / 86400e3);
-  const used = Math.min(total, Math.max(0, (Date.now() - sub.currentPeriodStart) / 86400e3));
+/* 한국 시간 기준으로 며칠째인가(1970-01-01 = 0). 날짜끼리 빼면 날 수가 된다.
+   서버 kstDayNo 와 같은 식이어야 한다. */
+const kstDayNo = (ms) => Math.floor((ms + 9 * 3600e3) / 86400e3);
+/* 오늘이 끝나는 순간 = 내일 0시(KST). */
+const kstEndOfToday = (ms = Date.now()) =>
+  (kstDayNo(ms) + 1) * 86400e3 - 9 * 3600e3;
+
+/* 환불 금액 — 서버 refundQuote 와 같은 기준.
+
+   오늘 하루를 셀지 말지는 '오늘 리포트를 열었는가' 가 정한다.
+
+     오늘 0건    오늘 값을 받지 않는다 → 이용은 지금 끝난다
+     오늘 1건+   오늘 값을 받는다     → 이용은 오늘 자정까지
+
+   경과 시간을 초 단위로 나눠 쓰고 있었다(9.375일). 우리가 파는 단위는 하루라
+   쪼갤 수가 없는데 소수로 차감하니 양쪽 다 어긋났다 — 오전에 한 건도 안 보고
+   환불하면 오늘 값을 내고 5건은 못 봤고, 5건 다 보고 환불하면 하루치를 다
+   쓰고 0.375일만 냈다. */
+function refundAmount(sub, at = Date.now()) {
+  const total = Math.max(1, Math.round((sub.currentPeriodEnd - sub.currentPeriodStart) / 86400e3));
   /* '열었는가' 는 결제 후에 열었는가를 묻는 것이다.
      READ_KEY 를 보고 있었는데 그건 날짜를 안 가린 오늘·과거의 종목 목록이라,
      가입 전에 남은 기록 하나만 있어도 전액 환불이 막혔다. 결제 시점에 0으로
@@ -196,10 +217,21 @@ function refundAmount(sub) {
      결제 화면과 약관에 '7일 이내에 열람하지 않으셨다면 전액 환불' 이라고
      적어 두었다. 적어 둔 것과 계산이 달라서는 안 된다. */
   const opened = (sub.readsSincePay || 0) > 0;
+  // 오늘 한 건이라도 열었는가. 화면의 '오늘 남은 열람' 과 같은 자료를 본다.
+  const openedToday = usedToday(sub) > 0;
+  // 지난 날은 전부 차감하고, 오늘은 열었을 때만 더한다.
+  const elapsed = Math.max(0, kstDayNo(at) - kstDayNo(sub.currentPeriodStart));
+  const used = Math.min(total, elapsed + (openedToday ? 1 : 0));
   // 업그레이드 차액까지 포함한 '실제로 받은 돈'이 기준이다(서버와 같다).
   const price = paidThisPeriod(sub) || (PLANS[sub.plan] || {}).price || 0;
-  return (!opened && used <= 7) ? price
-       : Math.floor(price * Math.max(0, (total - used) / total) * 0.9);
+  if (!opened && used <= 7) {
+    return { amount: price, why: "withdraw", chargedToday: openedToday };
+  }
+  return {
+    amount: Math.floor(price * Math.max(0, (total - used) / total) * 0.9),
+    why: opened ? "used" : "left",
+    chargedToday: openedToday,
+  };
 }
 
 /* 구독 관리 버튼들. 서버 함수와 같은 이름·같은 규칙. */
@@ -225,15 +257,20 @@ async function call(name, arg) {
   if (name === "deleteAccount") {
     const s0 = read(SUB_KEY, null);
     let refunded = 0;
-    if (s0 && activeNow(s0)) refunded = refundAmount(s0);
+    if (s0 && activeNow(s0)) refunded = refundAmount(s0).amount;
     [SUB_KEY, READ_KEY, PAY_KEY].forEach((k) => localStorage.removeItem(k));
     emit();
     return { data: { ok: true, demo: true, refunded } };
   }
   const sub = read(SUB_KEY, null);
   if (!sub) throw new Error("이용 중인 구독이 없습니다.");
+  /* 환불이 끝난 구독에는 아무것도 하지 않는다. 오늘 값을 받은 환불은 자정까지
+     살아 있어서, 그 사이에 해지·플랜 변경·재환불을 또 누를 수 있다. 서버
+     refundedAlready 와 같은 규칙이다. */
+  if (sub.refundedAt) throw new Error("환불이 완료된 구독입니다.");
   let charged = 0;                    // 업그레이드 차액 — 서버와 같이 돌려준다
   let refunded = 0;                   // 환불액 — 화면이 얼마가 돌아가는지 말해야 한다
+  let endsAt = 0;                     // 언제까지 볼 수 있는지 — 화면이 그대로 말한다
   // 해지 예약과 플랜 변경 예약은 함께 둘 수 없다(서버 changePlan 설명 참고).
   if (name === "cancelSubscription") { sub.cancelAtPeriodEnd = true; sub.pendingPlan = null; }
   else if (name === "resumeSubscription") sub.cancelAtPeriodEnd = false;
@@ -257,18 +294,26 @@ async function call(name, arg) {
       sub.pendingPlan = next.id === sub.plan ? null : next.id;
     }
   } else if (name === "requestRefund") {
-    refunded = refundAmount(sub);
-    // 사유 표시도 같은 신호를 쓴다. 아래 환불 계산이 readsSincePay 로 '열었는가'
-    // 를 판단하는데 표시만 다른 걸로 세면 '청약철회'로 적힌 건에 이용분이
-    // 차감돼 있는, 설명할 수 없는 내역이 남는다.
+    const q = refundAmount(sub);
+    refunded = q.amount;
+    // 내역에 적는 사유도 계산이 쓴 신호를 그대로 쓴다. 표시만 따로 세면
+    // '청약철회'로 적힌 건에 이용분이 차감돼 있는, 설명할 수 없는 내역이 남는다.
     pay({ amount: -refunded, description: "환불 (모의)", kind: "refund",
-         why: (sub.readsSincePay || 0) > 0 ? "used" : "withdraw",
-         status: "refunded", plan: sub.plan });
-    sub.status = "refunded"; sub.currentPeriodEnd = Date.now();
+         why: q.why, status: "refunded", plan: sub.plan });
+    /* 오늘 값을 받았으면 오늘은 끝까지 쓰게 둔다. 안 받았으면 지금 끝낸다.
+       status 를 "refunded" 로 적지 않는 이유는 서버와 같다 — activeNow 가
+       status === "active" 를 요구해서, 그렇게 적으면 자정까지 열어 두려던
+       것이 그 자리에서 끊긴다. 끝났다는 사실은 refundedAt 이 말한다. */
+    sub.status = "active";
+    sub.cancelAtPeriodEnd = true;
+    sub.pendingPlan = null;
+    sub.currentPeriodEnd = q.chargedToday ? kstEndOfToday() : Date.now();
+    sub.refundedAt = Date.now();
+    endsAt = sub.currentPeriodEnd;
   }
   write(SUB_KEY, sub);
   emit();
-  return { data: { ok: true, charged, refunded } };
+  return { data: { ok: true, charged, refunded, endsAt } };
 }
 
 window.__KOSDEMO = true;
