@@ -3014,7 +3014,25 @@ async function runMarketingRecheck({ dryRun = true, limit = 100 } = {}){
    것은 조문이 막지 않는다 — 막는 것은 늦는 것이다. */
 exports.marketingRecheck = onSchedule(
   { region: REGION, schedule: "40 3 * * *", timeZone: "Etc/UTC", secrets: [RESEND_API_KEY] },
-  async () => { await runMarketingRecheck({ dryRun: false, limit: 100 }); }
+  async () => {
+    const r = await runMarketingRecheck({ dryRun: false, limit: 100 });
+    /* 나간 날에만 알린다.
+
+       사람 확인 없이 회원에게 실제 메일을 내보내는 함수다. 그런데 아무
+       말도 없이 나가면 운영자는 무엇이 언제 나갔는지 알 길이 없고,
+       잘못 나가도 알아챌 자리가 없다. 자동으로 하는 것과 조용히 하는 것은
+       다르다.
+
+       대상이 없는 날은 알리지 않는다 — 2년 가까이 매일 '0건' 메일이
+       오면 그 알림은 아무도 안 읽게 된다. */
+    if(r && (r.sent || r.failed)){
+      await alertOps("마케팅 수신 동의 2년 재확인 발송", [
+        `보냄 ${r.sent}건 · 실패 ${r.failed}건 · 주소 없음 ${r.noEmail}건`,
+        `대상 ${r.due}건${r.capped ? " (상한에 걸려 나머지는 내일 이어서 보냅니다)" : ""}`,
+        "정보통신망법 시행령 제62조의3에 따른 법정 확인 안내입니다.",
+      ]);
+    }
+  }
 );
 
 /* 관리자 화면에서 지금 돌려 보는 길. 기본은 미리 보기다 — 실제 발송은
