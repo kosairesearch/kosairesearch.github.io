@@ -1285,29 +1285,39 @@ function consentNoticeMail(lang){
   const en = lang === "en";
   if(en){
     return {
-      subject: "[KOSAI] Request for your consent to our Terms and privacy notice",
-      html: mailLayout({ lang, heading: "Request for your consent",
-        intro: "Hello,<br><br>" +
-               "Our records indicate that you registered before we introduced our consent screen, and that we do not hold your agreement to our Terms of Service or to the collection and use of your personal data. In accordance with Articles 15 and 22 of the Personal Information Protection Act, we are writing to request your consent.<br><br>" +
-               "Signing in using the button below will display the consent screen. Once you have accepted the required items, you may continue to use the service without interruption.<br><br>" +
-               "&middot; The process takes approximately ten seconds.<br>" +
-               "&middot; Your account, watchlist and settings remain unchanged.<br>" +
-               "&middot; Marketing messages are optional; declining them places no restriction on your use of the service.",
+      subject: "[KOSAI] Consent to our Terms of Service and privacy notice",
+      html: mailLayout({ lang, heading: "Consent to our Terms of Service and privacy notice",
+        intro: "Dear Member,<br><br>" +
+               "Thank you for your continued use of our service.<br><br>" +
+               "Our records indicate that you registered with us before our consent process was introduced, " +
+               "and that we do not hold your agreement to our Terms of Service or to the collection and use " +
+               "of your personal data. We are therefore writing to request your consent, in accordance with " +
+               "Articles 15 and 22 of the Personal Information Protection Act.<br><br>" +
+               "Signing in through the button below will display the consent screen. Once you have accepted " +
+               "the required items, you may continue to use the service exactly as before. The process takes " +
+               "around ten seconds, and your account, watchlist and settings remain entirely unchanged. " +
+               "Marketing messages are optional, and declining them places no restriction whatsoever on your " +
+               "use of the service.<br><br>" +
+               "We appreciate your kind cooperation.",
         btnText: "Go to the consent screen", link,
         outro: "This message is a service notice concerning your account and is not a commercial advertisement under the Act on Promotion of Information and Communications Network Utilization and Information Protection. For enquiries, please contact hello@kosai.kr." })
     };
   }
   return {
-    subject: "[KOSAI] 개인정보 수집·이용 동의 안내",
-    html: mailLayout({ lang, heading: "개인정보 수집·이용 동의 안내",
-      intro: "안녕하세요, KOSAI입니다.<br><br>" +
-             "회원님께서는 당사가 동의 절차를 도입하기 이전에 가입하신 회원으로, 이용약관 및 개인정보 수집·이용에 대한 동의 내역이 확인되지 않습니다. 「개인정보 보호법」 제15조 및 제22조에 따라 회원님의 동의를 요청드립니다.<br><br>" +
-             "아래 버튼을 눌러 로그인하시면 동의 화면이 표시됩니다. 필수 항목에 동의하신 후 서비스를 계속 이용하실 수 있습니다.<br><br>" +
-             "&middot; 소요 시간은 약 10초입니다.<br>" +
-             "&middot; 계정 정보와 워치리스트·설정은 변경 없이 그대로 유지됩니다.<br>" +
-             "&middot; 마케팅 정보 수신은 선택 사항이며, 동의하지 않으셔도 서비스 이용에 제한이 없습니다.",
+    subject: "[KOSAI] 이용약관 및 개인정보 수집·이용 동의 안내",
+    html: mailLayout({ lang, heading: "이용약관 및 개인정보 수집·이용 동의 안내",
+      intro: "안녕하십니까. KOSAI입니다.<br><br>" +
+             "평소 저희 서비스를 이용해 주시어 깊이 감사드립니다.<br><br>" +
+             "확인 결과 회원님께서는 당사가 동의 절차를 도입하기 이전에 가입하신 회원으로, " +
+             "이용약관 및 개인정보 수집·이용에 대한 동의 내역이 확인되지 않고 있습니다. " +
+             "이에 「개인정보 보호법」 제15조 및 제22조에 근거하여 회원님의 동의를 요청드리고자 안내 말씀드립니다.<br><br>" +
+             "아래 버튼을 통해 로그인하시면 동의 화면이 표시되며, 필수 항목에 동의하신 후에는 " +
+             "기존과 동일하게 서비스를 이용하실 수 있습니다. 소요 시간은 10초 내외이며, " +
+             "회원님의 계정 정보와 워치리스트, 각종 설정은 변경 없이 그대로 유지됩니다. " +
+             "마케팅 정보 수신은 선택 사항으로, 동의하지 않으시더라도 서비스 이용에는 어떠한 제한도 없습니다.<br><br>" +
+             "번거로우시더라도 협조하여 주시면 감사하겠습니다.",
       btnText: "동의 화면으로 이동", link,
-      outro: "본 메일은 「정보통신망 이용촉진 및 정보보호 등에 관한 법률」상 광고성 정보가 아닌, 서비스 이용에 관한 안내 메일입니다. 문의사항은 hello@kosai.kr로 연락 주시기 바랍니다." })
+      outro: "본 메일은 「정보통신망 이용촉진 및 정보보호 등에 관한 법률」상 광고성 정보가 아닌, 서비스 이용에 관한 안내입니다. 문의사항은 hello@kosai.kr로 연락 주시기 바랍니다." })
   };
 }
 
