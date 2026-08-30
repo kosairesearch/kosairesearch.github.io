@@ -564,6 +564,12 @@ KOSi18n.register({
 .co-btn[disabled]{opacity:.45;cursor:not-allowed}
 .co-msg{margin:13px 0 0;font:500 13px/1.6 var(--font-sans);color:var(--fg-3);text-align:center}
 .co-msg.err{color:#e5383b}
+/* 이용 시작이 오늘이 아닐 때의 안내. 작은 글씨(co-fine)로 두면 안 읽힌다 —
+   오늘 한도를 다 쓴 사람에게는 이게 결제 전에 알아야 할 가장 중요한 한 줄이다. */
+.co-note{margin:14px 0 0;padding:11px 13px;border-radius:10px;
+  background:rgba(47,109,246,.08);border:1px solid rgba(47,109,246,.22);
+  font:600 12.5px/1.65 var(--font-sans);color:var(--fg-1);word-break:keep-all}
+:root[data-theme="dark"] .co-note{background:rgba(47,109,246,.14);border-color:rgba(47,109,246,.3)}
 .co-fine{margin:16px 0 0;font:400 12.5px/1.7 var(--font-sans);color:var(--fg-3);word-break:keep-all}
 .co-fine a{color:inherit}
 .co-state{margin:0 auto;max-width:640px;padding:46px 28px;text-align:center}

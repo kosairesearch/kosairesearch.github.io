@@ -158,6 +158,8 @@ if (window.KOSi18n) window.KOSi18n.register({
     "The card on file was declined. Register a card again to restore access.",
   "해지하시면 이미 결제하신 이용 기간이 끝날 때까지는 그대로 이용하실 수 있습니다.":
     "If you cancel, you keep access until the period you have paid for ends.",
+  "새 구독은 {d}부터 시작됩니다. 오늘은 이전 구독의 남은 열람을 그대로 사용하실 수 있습니다.":
+    "The new subscription starts on {d}. For the rest of today you keep the remaining views from your previous subscription.",
   "미리보기입니다. 실제로 돈이 오가지 않습니다.": "Preview only — no real payment is made.",
 });
 
@@ -693,6 +695,17 @@ function paneSubscription() {
 
     if (sub.startedAt) kv(dl, "구독 시작일", fmtDay(sub.startedAt, en));
 
+    /* 시작이 아직 안 온 구독이 있다. 환불한 날 다시 결제하면 이전 구독이
+       자정까지 살아 있으므로 새 구독은 내일부터다 — 그 사이에 이 화면을 열면
+       '오늘 남은 열람' 이 이전 구독의 숫자라, 말해 주지 않으면 왜 15개가
+       아닌지 알 수가 없다. */
+    const startMs = sub.currentPeriodStart
+      ? (typeof sub.currentPeriodStart.toMillis === "function" ? sub.currentPeriodStart.toMillis()
+         : typeof sub.currentPeriodStart === "number" ? sub.currentPeriodStart
+         : Date.parse(sub.currentPeriodStart))
+      : 0;
+    const notYet = Number.isFinite(startMs) && startMs > Date.now() + 60000;
+
     const card = sub.card;
     if ((active || due) && !refunded) kv(dl, "결제 수단", card && (card.company || card.number)
       ? ((card.company || T("등록하신 카드")) + " " + (card.number || "")).trim()
@@ -837,6 +850,9 @@ function paneSubscription() {
     })));
 
     body.appendChild(btns);
+    if (notYet) body.appendChild(el("p", "ks-note",
+      T("새 구독은 {d}부터 시작됩니다. 오늘은 이전 구독의 남은 열람을 그대로 사용하실 수 있습니다.")
+        .replace("{d}", fmtDay(startMs, en))));
     body.appendChild(el("p", "ks-note",
       T("해지하시면 이미 결제하신 이용 기간이 끝날 때까지는 그대로 이용하실 수 있습니다.")));
     const hist = histSection(payments); if (hist) body.appendChild(hist);

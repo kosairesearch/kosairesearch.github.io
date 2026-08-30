@@ -39,6 +39,8 @@ const T = {
     step1: "주문 확인", step2: "결제 수단", step3: "약관 동의",
     card: "신용·체크카드", cardD: "국내에서 발급된 카드로 매달 자동 결제됩니다.",
     sumPlan: "플랜", sumCycle: "결제 주기", sumFirst: "첫 결제일", sumNext: "다음 결제일",
+    sumStart: "이용 시작일",
+    startsLater: "이미 이용 중인 기간이 오늘 끝나므로, 새 구독은 {d}부터 시작됩니다. 오늘은 지금 이용 중인 구독의 남은 열람을 그대로 사용하실 수 있습니다.",
     monthly: "매월", today: "오늘", total: "결제 금액", vat: "부가가치세 포함",
     agreeAll: "아래 내용에 모두 동의합니다",
     agree1: '<a href="Terms.html" target="_blank" rel="noopener">이용약관</a>과 <a href="Privacy.html" target="_blank" rel="noopener">개인정보 처리방침</a>에 동의합니다. (필수)',
@@ -74,6 +76,8 @@ const T = {
     step1: "Order", step2: "Payment method", step3: "Agreements",
     card: "Credit or debit card", cardD: "Billed automatically each month to the card you register.",
     sumPlan: "Plan", sumCycle: "Billing cycle", sumFirst: "First charge", sumNext: "Next charge",
+    sumStart: "Access starts",
+    startsLater: "Your current period ends today, so the new subscription starts on {d}. For the rest of today you keep the remaining views on your current subscription.",
     monthly: "Monthly", today: "Today", total: "Amount due", vat: "VAT included",
     agreeAll: "I agree to everything below",
     agree1: 'I agree to the <a href="Terms.html" target="_blank" rel="noopener">Terms of Service</a> and <a href="Privacy.html" target="_blank" rel="noopener">Privacy Policy</a>. (required)',
@@ -114,8 +118,8 @@ function state(title, desc, actions) {
 function busy(msg) {
   app_.innerHTML = `<div class="co-state glass"><p><span class="spin"></span>${esc(msg)}</p></div>`;
 }
-function nextMonth() {
-  const d = new Date();
+function nextMonth(from) {
+  const d = new Date(from || Date.now());
   const day = d.getDate();
   d.setMonth(d.getMonth() + 1);
   if (d.getDate() !== day) d.setDate(0);   // 31일 → 다음 달 말일
@@ -127,9 +131,24 @@ function dayText(d) {
               : `${d.getFullYear()}년 ${d.getMonth() + 1}월 ${d.getDate()}일`;
 }
 
+/* 이용이 실제로 시작되는 시각. 새 구독은 이전 구독이 끝나는 시점부터다
+   (서버 confirmBilling 과 같은 식).
+
+   환불한 날 다시 시작하는 사람이 여기로 온다. 오늘 리포트를 봤다면 그 구독이
+   오늘 자정까지 살아 있으므로, 새 구독은 내일부터다. 그 사실을 결제 전에
+   말해 주지 않으면 오늘 한도를 다 쓴 사람은 '돈 내고 0건' 을 겪는다. */
+function startsAt() {
+  const end = st.sub && st.sub.currentPeriodEnd;
+  const ms = end && typeof end.toMillis === "function" ? end.toMillis()
+           : typeof end === "number" ? end : Date.parse(end);
+  return new Date(Math.max(Date.now(), Number.isFinite(ms) ? ms : 0));
+}
+
 function form(plan) {
   const k = t();
-  const nx = nextMonth();
+  const from = startsAt();
+  const later = from.getTime() > Date.now() + 60000;   // 오늘이 아니라 나중에 시작
+  const nx = nextMonth(from);
   return `
   <div class="co">
     <section class="co-card glass">
@@ -152,6 +171,7 @@ function form(plan) {
 
       <button type="button" class="btn btn-primary co-btn" id="payBtn">${esc(k.pay)}</button>
       <p class="co-msg" id="coMsg"></p>
+      ${later ? `<p class="co-note">${esc(k.startsLater.replace("{d}", dayText(from)))}</p>` : ""}
       <p class="co-fine">${k.fine}</p>
     </section>
 
@@ -163,6 +183,7 @@ function form(plan) {
         <li><span>${esc(k.sumPlan)}</span><b>${esc(plan.name)}</b></li>
         <li><span>${esc(k.sumCycle)}</span><b>${esc(k.monthly)}</b></li>
         <li><span>${esc(k.sumFirst)}</span><b>${esc(k.today)}</b></li>
+        <li><span>${esc(k.sumStart)}</span><b>${esc(later ? dayText(from) : k.today)}</b></li>
         <li><span>${esc(k.sumNext)}</span><b>${esc(dayText(nx))}</b></li>
       </ul>
       <div class="total"><span class="k">${esc(k.total)}</span><span class="v">${esc(won(plan.price, EN()))}</span></div>

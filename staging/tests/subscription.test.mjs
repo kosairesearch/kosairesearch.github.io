@@ -352,37 +352,71 @@ console.log("\n── 환불한 날 다시 시작하기 ──");
   ok("다시 결제한 구독은 해지가 된다", blocked === false);
   await w.KOSDemo.call("resumeSubscription", {});
 
-  /* 새 구독은 자기 한도를 온전히 받는다.
+  /* 새 구독은 이전 구독이 끝나는 시점부터 시작한다. 결제는 오늘 받는다.
 
-     한때 '하루 한도는 날짜에 붙는다' 로 정했는데, 그러면 한도를 다 쓰고
-     환불한 사람이 한 달치를 다시 내고 오늘 0건을 받는다. 받은 돈에 아무것도
-     딸려 오지 않는 날이 생기는 것이라 뒤집었다. */
-  ok("다시 결제하면 오늘 한도를 온전히 받는다", left() === "5", "남은=" + left());
-  ok("이 구독으로 본 건 아직 0건", w.KOSDemo.readsToday() === 0, String(w.KOSDemo.readsToday()));
+     오늘 리포트를 봤으면 오늘 요금은 이미 환불에서 차감했고 그 구독이 자정까지
+     살아 있다. 새 구독까지 오늘부터 시작하면 같은 하루를 두 번 받고 하루 한도도
+     두 번 나간다 — 요금제에 적어 둔 '하루 N건' 이 깨진다.
+
+     그래서 오늘 남은 열람은 '리셋' 도 아니고 '0' 도 아니다. 이전 구독이 남긴
+     그대로다. 2건 봤으면 3건 남는다. */
+  ok("오늘 남은 열람은 이전 구독이 남긴 그대로", left() === "3", "남은=" + left());
+  ok("새 구독은 내일부터",
+     sub().currentPeriodStart > Date.now() + 60000,
+     new Date(sub().currentPeriodStart).toISOString());
+  ok("다음 결제일도 그만큼 밀린다",
+     sub().currentPeriodEnd > Date.now() + 30 * 86400e3,
+     new Date(sub().currentPeriodEnd).toISOString());
 
   // 지난 결제와 환불은 내역에 그대로 남는다
   const rows = (await w.KOSDemo.call("listPayments", {})).data.items;
   ok("내역에 결제 2건·환불 1건", rows.length === 3, JSON.stringify(rows.map(r => r.kind)));
 
-  /* 한도를 다 쓰고 환불한 뒤 다시 결제해도 마찬가지다 — 실제로 겪은 경우다.
-     PRO 15건을 다 보고 환불한 사람이 14,900원을 다시 내고 0건을 받았다. */
-  for (const tk of ["a", "b", "c", "d", "e"]) await w.KOSPaywall.fetchPaid(tk);
+  /* 오늘 하루 총 열람이 플랜 한도를 넘지 않는다 — 이게 이 규칙의 핵심이다.
+     환불·재결제를 반복해도 오늘 열 수 있는 건수는 늘지 않는다. */
+  let more = 0;
+  for (let i = 0; i < 20; i++) {
+    try { await w.KOSPaywall.fetchPaid("z" + i); more++; } catch (e) { break; }
+  }
   await settle();
-  ok("새 구독의 한도도 다 쓸 수 있다", left() === "0", "남은=" + left());
+  ok("재결제 뒤에도 오늘 총 열람은 BASIC 한도 5건", 2 + more === 5, `2 + ${more}`);
+
+  /* 한도를 다 쓰고 환불한 뒤 같은 플랜으로 다시 결제하는 경우. 오늘은 0건이지만
+     같은 하루를 두 번 내지 않았으므로 잃은 것도 없다 — 내일부터 새 한 달이다. */
+  await w.KOSDemo.call("requestRefund", {});
+  w.KOSDemo.subscribe("basic");
+  await openSubs();
+  ok("한도를 다 쓴 날 같은 플랜으로 재결제하면 오늘은 0건", left() === "0", "남은=" + left());
+  ok("대신 새 구독은 내일부터 시작한다",
+     sub().currentPeriodStart > Date.now() + 60000,
+     new Date(sub().currentPeriodStart).toISOString());
+  ok("화면이 언제부터인지 말해 준다", txt().includes("부터 시작됩니다"), txt().slice(0, 300));
+
+  /* 더 큰 플랜으로 올려 재결제하면 오늘 한도도 그 플랜 것이 된다.
+     BASIC 5건을 다 쓰고 PRO 로 가면 오늘 10건이 더 열린다 — 이건 구멍이
+     아니다. 오늘 총 열람이 15건으로 PRO 한도를 넘지 않고, 값도 제대로
+     치렀다(플랜 변경 업그레이드가 차액만 받는 것보다 오히려 비싸다). */
   await w.KOSDemo.call("requestRefund", {});
   w.KOSDemo.subscribe("pro");
   await openSubs();
-  ok("한도를 다 쓰고 환불한 뒤 다시 결제하면 PRO 한도가 온전히 나온다",
-     left() === "15", "남은=" + left());
-  ok("새 구독으로 리포트를 열 수 있다",
-     await w.KOSPaywall.fetchPaid("zz").then(() => true).catch(() => false));
+  ok("PRO 로 올려 재결제하면 오늘 남은 10건", left() === "10", "남은=" + left());
+  let extra = 0;
+  for (let i = 0; i < 20; i++) {
+    try { await w.KOSPaywall.fetchPaid("p" + i); extra++; } catch (e) { break; }
+  }
+  ok("오늘 총 열람은 PRO 한도 15건을 넘지 않는다", 5 + extra === 15, `5 + ${extra}`);
 
-  /* 어제 시작한 구독에는 빼 주지 않는다 — 오늘 본 건 전부 이 구독으로 본 것이다. */
-  const s2 = sub(); s2.readsAtStartDay = "2020-01-01"; s2.readsAtStart = 99;
-  localStorage.setItem("kos-demo-sub", JSON.stringify(s2));
+  /* 오늘 한 건도 안 보고 환불하면 이전 구독은 그 자리에서 끝난다.
+     그때는 새 구독이 지금부터 시작해야 한다 — 비는 날이 생기면 안 된다. */
+  localStorage.clear();
+  w.KOSDemo.subscribe("basic");
+  await w.KOSDemo.call("requestRefund", {});      // 오늘 0건 → 즉시 종료
+  w.KOSDemo.subscribe("basic");
   await openSubs();
-  ok("지난 날 시작한 구독은 오늘 본 만큼 그대로 깎인다", left() !== "15", "남은=" + left());
-  localStorage.setItem("kos-demo-sub", JSON.stringify({ ...s2, readsAtStartDay: sub().readsAtStartDay }));
+  ok("오늘 0건으로 환불했으면 새 구독은 지금부터",
+     sub().currentPeriodStart <= Date.now() + 60000,
+     new Date(sub().currentPeriodStart).toISOString());
+  ok("그 경우 오늘 한도는 온전히 5건", left() === "5", "남은=" + left());
 
 }
 
