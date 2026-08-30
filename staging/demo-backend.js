@@ -29,6 +29,10 @@ const SUB_KEY = "kos-demo-sub", READ_KEY = "kos-demo-reads", PAY_KEY = "kos-demo
 const PAID_KEYS = ["earnings", "industry", "outlook", "valuation_comment",
                    "bull", "bear", "risks", "checkpoints", "verdict", "recent", "desc"];
 
+/* 화면에 보여 줄 결제 내역 줄 수. 서버 PAYMENT_PAGE 와 같아야 한다 —
+   다르면 미리보기에서 보이던 줄이 실제에서 안 보인다. */
+const PAYMENT_PAGE = 24;
+
 const read = (k, d) => { try { return JSON.parse(localStorage.getItem(k)) ?? d; } catch (e) { return d; } };
 const write = (k, v) => { try { localStorage.setItem(k, JSON.stringify(v)); } catch (e) {} };
 const kstDay = () => new Date(Date.now() + 9 * 3600e3).toISOString().slice(0, 10);
@@ -241,6 +245,14 @@ async function call(name, arg) {
     if (!st.active) return { data: { active: false, used: 0, limit: 0 } };
     return { data: { active: true, plan: st.plan, limit: st.limit,
                      used: usedToday(st.sub) } };
+  }
+  /* 결제 내역. 서버와 같은 이름·같은 모양으로 답한다 — 화면이 미리보기인지
+     실제인지 따지지 않게 하려는 것이다.
+
+     구독이 없어도 답한다. 아래 '구독 없으면 거절' 블록보다 위에 있어야 한다 —
+     환불하고 나간 사람도 지난 내역은 볼 수 있어야 한다. */
+  if (name === "listPayments") {
+    return { data: { items: read(PAY_KEY, []).slice(0, PAYMENT_PAGE) } };
   }
   /* 해지·환불 사유. 미리보기에서는 메일을 보내지 않고 남겨만 둔다 —
      KOSDemo.reasons() 로 무엇이 접수됐는지 확인할 수 있다. */

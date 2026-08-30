@@ -2395,6 +2395,55 @@ async function writePayment(db, uid, data) {
   });
 }
 
+/* 화면에 보여 줄 결제 내역 줄 수. 월 구독이라 24줄이면 2년이다.
+   전부 내려보내면 오래 쓴 사람일수록 창을 열 때마다 느려지는데, 그 아래는
+   아무도 안 내려 본다. */
+const PAYMENT_PAGE = 24;
+
+/* Firestore 시각을 화면이 읽을 수 있는 글자로 바꾼다.
+   함수 응답에 Timestamp 를 그대로 실으면 브라우저에는 {_seconds:…} 라는
+   객체로 도착해서 날짜로 못 읽는다 — 내역 표의 '일자' 칸이 비어 버린다. */
+const isoOf = (v) =>
+  v == null ? null
+  : typeof v.toDate === "function" ? v.toDate().toISOString()
+  : typeof v === "number" ? new Date(v).toISOString()
+  : String(v);
+
+/* 결제 내역 — 본인 것만.
+
+   payments/{uid}/items 는 규칙으로 아무에게도 열지 않았다(서버만 쓴다).
+   그래서 본인이 자기 결제 내역을 보는 길이 여기 하나뿐이다.
+
+   토스 식별자(paymentKey·orderId)는 내려보내지 않는다. 화면이 쓸 일이
+   없고, 결제 건을 취소할 수 있는 열쇠라 브라우저에 둘 이유가 없다. */
+if (PAYMENTS_LIVE) exports.listPayments = onCall(
+  { region: REGION, cors: true },
+  async (req) => {
+    const uid = uidOrThrow(req);
+    const snap = await admin.firestore()
+      .collection(`payments/${uid}/items`)
+      .orderBy("createdAt", "desc")
+      .limit(PAYMENT_PAGE)
+      .get();
+    return {
+      items: snap.docs.map((d) => {
+        const p = d.data();
+        return {
+          amount: p.amount || 0,
+          /* kind 로 화면이 문구를 만든다. description 은 한국어로 굳어 있어
+             영어 화면에서 번역할 수가 없다 — 관리자·로그용으로만 둔다. */
+          kind: p.kind || null,
+          why: p.why || null,
+          status: p.status || "paid",
+          plan: p.plan || null,
+          paidAt: isoOf(p.paidAt),
+          createdAt: isoOf(p.createdAt),
+        };
+      }),
+    };
+  }
+);
+
 /** 빌링키로 즉시 결제. 성공하면 결제 내역을 남기고 payment 객체를 돌려준다. */
 /* 결제 한 건을 기록할 때는 '무엇에 대한 결제인가'를 종류(kind)로 남긴다.
    ⚠️ 설명 문장을 한국어로 굳혀 저장하면 영어 화면에서 번역할 방법이 없다.

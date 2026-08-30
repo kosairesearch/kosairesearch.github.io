@@ -152,6 +152,39 @@ ok("다음 결제일을 보여 준다", txt().includes("다음 결제일"));
 ok("버튼 네 개", btns().join("|") === "PRO로 업그레이드|결제 수단 변경|구독 해지|환불 신청", btns().join("|"));
 ok("결제 내역을 보여 준다", txt().includes("BASIC 월 구독"));
 
+console.log("\n── 결제 내역 ──");
+/* 내역은 미리보기든 실제 서버든 listPayments 라는 같은 이름으로 받는다.
+   화면이 어느 쪽에 붙어 있는지 따지지 않게 하려는 것이다. */
+{
+  const rows = (await w.KOSDemo.call("listPayments", {})).data.items;
+  ok("listPayments 로 받아온다", Array.isArray(rows) && rows.length === 1, JSON.stringify(rows).slice(0, 120));
+  ok("화면에 월 구독 줄이 있다", txt().includes("BASIC 월 구독"));
+
+  /* 못 받아 왔을 때와 아직 없을 때는 다른 말이어야 한다. 실패를 빈 배열로
+     뭉개면 결제한 사람이 '아직 결제 내역이 없습니다' 를 보고 돈이 안 들어간
+     줄 안다. */
+  const realCall = w.KOSDemo.call;
+  w.KOSDemo.call = (n, d) => (n === "listPayments"
+    ? Promise.reject(new Error("망가진 척"))
+    : realCall(n, d));
+  await openSubs();
+  ok("못 받아 오면 '결제 내역' 칸이 아예 없다", !txt().includes("결제 내역"), txt().slice(0, 200));
+  w.KOSDemo.call = realCall;
+
+  await openSubs();
+  ok("다시 받아 오면 칸이 돌아온다", txt().includes("결제 내역"));
+
+  /* 구독이 없어도 지난 내역은 보여야 한다 — 환불하고 나간 사람이 자기 결제를
+     확인할 데가 여기뿐이다. */
+  const keep = localStorage.getItem("kos-demo-pays");
+  localStorage.removeItem("kos-demo-sub");
+  await openSubs();
+  ok("구독이 없어도 지난 내역은 보인다", txt().includes("BASIC 월 구독"), txt().slice(0, 200));
+  localStorage.setItem("kos-demo-pays", keep);
+  w.KOSDemo.subscribe("basic");
+  await openSubs();
+}
+
 console.log("\n── 리포트를 열면 남은 열람이 준다 ──");
 await w.KOSPaywall.fetchPaid("005930"); await settle();
 ok("창을 안 닫아도 4로 준다", left() === "4", "남은=" + left());

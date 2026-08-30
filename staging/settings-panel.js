@@ -853,11 +853,14 @@ function paneSubscription() {
   const load = async (st) => {
     const [usage, payments] = await Promise.all([
       call("getUsage", {}).then(r => (r && r.data) || null).catch(() => null),
-      /* 결제 내역은 미리보기(KOSDemo)만 갖고 있다. 실제 서버에는 아직 이걸
-         돌려주는 함수가 없다 — 그때는 null 을 넘겨 '결제 내역' 칸을 아예 빼게
-         한다. 빈 배열을 넘기면 결제한 사람에게 '내역이 없습니다' 가 뜬다. */
-      Promise.resolve()
-        .then(() => (window.__KOSDEMO && window.KOSDemo ? window.KOSDemo.payments() : null))
+      /* 결제 내역. 미리보기든 실제든 같은 이름을 부른다 — 화면이 어느 쪽에
+         붙어 있는지 따질 이유가 없다.
+
+         받아 왔으면 배열이고(비어 있어도 배열이다), 못 받아 왔으면 null 이다.
+         그 둘을 구별해야 한다. 실패를 빈 배열로 뭉개면 결제한 사람에게
+         '아직 결제 내역이 없습니다' 가 뜬다 — 돈이 안 들어온 줄 안다. */
+      call("listPayments", {})
+        .then(r => ((r && r.data && r.data.items) || []))
         .catch(() => null),
     ]);
     draw(st, usage, payments);
