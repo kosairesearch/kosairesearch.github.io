@@ -137,16 +137,16 @@ function dayText(d) {
    환불한 날 다시 시작하는 사람이 여기로 온다. 오늘 리포트를 봤다면 그 구독이
    오늘 자정까지 살아 있으므로, 새 구독은 내일부터다. 그 사실을 결제 전에
    말해 주지 않으면 오늘 한도를 다 쓴 사람은 '돈 내고 0건' 을 겪는다. */
-function startsAt() {
-  const end = st.sub && st.sub.currentPeriodEnd;
+function startsAt(sub) {
+  const end = sub && sub.currentPeriodEnd;
   const ms = end && typeof end.toMillis === "function" ? end.toMillis()
            : typeof end === "number" ? end : Date.parse(end);
   return new Date(Math.max(Date.now(), Number.isFinite(ms) ? ms : 0));
 }
 
-function form(plan) {
+function form(plan, sub) {
   const k = t();
-  const from = startsAt();
+  const from = startsAt(sub);
   const later = from.getTime() > Date.now() + 60000;   // 오늘이 아니라 나중에 시작
   const nx = nextMonth(from);
   return `
@@ -399,5 +399,12 @@ function screen(fn) { repaint = fn; fn(); }
     return;
   }
 
-  screen(() => { app_.innerHTML = form(plan); wireForm(plan, st.user); });
-})();
+  screen(() => { app_.innerHTML = form(plan, st.sub); wireForm(plan, st.user); });
+})().catch((e) => {
+  /* 여기까지 오면 화면을 그리다 무언가 터진 것이다. 그냥 두면 '불러오는 중…'
+     회전자만 영원히 돌아 사용자는 결제도 못 하고 이유도 모른다. */
+  console.error("[checkout]", e);
+  screen(() => { const kk = t();
+    state(kk.failTitle, kk.errOpen,
+      `<a class="btn btn-primary" href="pricing.html">${esc(kk.toPricing)}</a>`); });
+});
