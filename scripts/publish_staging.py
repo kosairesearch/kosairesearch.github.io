@@ -40,7 +40,7 @@ PAGES = ["brief.html", "pricing.html", "checkout.html", "billing.html", "stock.h
          "Terms.html", "About.html", "Home.html", "Reports.html", "industry.html",
          "Screener.html", "Watchlist.html", "Login.html", "Signup.html",
          "Privacy.html", "Contact.html", "Feedback.html"]
-SCRIPTS = ["paywall.js", "checkout.js", "billing.js", "subscription-api.js", "payment-config.js",
+SCRIPTS = ["paywall.js", "checkout.js", "subscription-api.js", "payment-config.js",
            "firebase-config.js", "auth-state.js", "auth-guard.js", "auth-emails.js",
            "social-login.js", "watchlist.js", "submit-form.js", "analytics.js"]
 
@@ -139,15 +139,6 @@ PATCH = {
          "export const call = (n, d) => (window.__KOSDEMO\n"
          "  ? window.KOSDemo.call(n, d || {})\n"
          "  : httpsCallable(fns, n)(d || {}));"),
-    ],
-    "billing.js": [
-        # 열람 현황도 모의 백엔드에서 받는다.
-        ('const res = await httpsCallable(fns, "getUsage")({});',
-         'const res = await call("getUsage");'),
-        ("async function loadPayments(uid) {\n  if (!isConfigured) return [];",
-         "async function loadPayments(uid) {\n"
-         "  if (window.__KOSDEMO) return window.KOSDemo.payments();\n"
-         "  if (!isConfigured) return [];"),
     ],
 }
 
