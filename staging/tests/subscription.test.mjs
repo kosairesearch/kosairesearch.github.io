@@ -352,15 +352,38 @@ console.log("\n── 환불한 날 다시 시작하기 ──");
   ok("다시 결제한 구독은 해지가 된다", blocked === false);
   await w.KOSDemo.call("resumeSubscription", {});
 
-  /* 하루 한도는 그 날짜에 붙는 것이지 구독에 붙는 것이 아니다. 오늘 2건을
-     봤으면 다시 결제해도 오늘 남은 건 3건이다. 서버 usageOf 가 그렇게 센다 —
-     미리보기만 새로 주면 실제로 켰을 때 다르게 동작한다. */
-  ok("다시 결제해도 오늘 한도는 새로 안 생긴다", left() === "3", "남은=" + left());
-  ok("데모 카운트도 2 그대로", w.KOSDemo.readsToday() === 2, String(w.KOSDemo.readsToday()));
+  /* 새 구독은 자기 한도를 온전히 받는다.
 
-  // 결제 내역에는 두 번의 결제와 한 번의 환불이 남는다
+     한때 '하루 한도는 날짜에 붙는다' 로 정했는데, 그러면 한도를 다 쓰고
+     환불한 사람이 한 달치를 다시 내고 오늘 0건을 받는다. 받은 돈에 아무것도
+     딸려 오지 않는 날이 생기는 것이라 뒤집었다. */
+  ok("다시 결제하면 오늘 한도를 온전히 받는다", left() === "5", "남은=" + left());
+  ok("이 구독으로 본 건 아직 0건", w.KOSDemo.readsToday() === 0, String(w.KOSDemo.readsToday()));
+
+  // 지난 결제와 환불은 내역에 그대로 남는다
   const rows = (await w.KOSDemo.call("listPayments", {})).data.items;
   ok("내역에 결제 2건·환불 1건", rows.length === 3, JSON.stringify(rows.map(r => r.kind)));
+
+  /* 한도를 다 쓰고 환불한 뒤 다시 결제해도 마찬가지다 — 실제로 겪은 경우다.
+     PRO 15건을 다 보고 환불한 사람이 14,900원을 다시 내고 0건을 받았다. */
+  for (const tk of ["a", "b", "c", "d", "e"]) await w.KOSPaywall.fetchPaid(tk);
+  await settle();
+  ok("새 구독의 한도도 다 쓸 수 있다", left() === "0", "남은=" + left());
+  await w.KOSDemo.call("requestRefund", {});
+  w.KOSDemo.subscribe("pro");
+  await openSubs();
+  ok("한도를 다 쓰고 환불한 뒤 다시 결제하면 PRO 한도가 온전히 나온다",
+     left() === "15", "남은=" + left());
+  ok("새 구독으로 리포트를 열 수 있다",
+     await w.KOSPaywall.fetchPaid("zz").then(() => true).catch(() => false));
+
+  /* 어제 시작한 구독에는 빼 주지 않는다 — 오늘 본 건 전부 이 구독으로 본 것이다. */
+  const s2 = sub(); s2.readsAtStartDay = "2020-01-01"; s2.readsAtStart = 99;
+  localStorage.setItem("kos-demo-sub", JSON.stringify(s2));
+  await openSubs();
+  ok("지난 날 시작한 구독은 오늘 본 만큼 그대로 깎인다", left() !== "15", "남은=" + left());
+  localStorage.setItem("kos-demo-sub", JSON.stringify({ ...s2, readsAtStartDay: sub().readsAtStartDay }));
+
 }
 
 console.log("\n── 결제 실패 ──");

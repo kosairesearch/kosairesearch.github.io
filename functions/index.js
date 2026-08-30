@@ -1547,14 +1547,43 @@ function kstDay() {
    같은 종목을 다시 열 때는 차감하지 않는다. 새로고침·뒤로가기·다른 기기에서
    다시 보기가 전부 한 건씩 깎으면, 사용자는 서로 다른 두 종목만 보고도
    '한도 초과'를 만나게 된다. 그래서 횟수가 아니라 '오늘 본 종목'을 센다. */
-async function consumeDailyRead(db, uid, ticker, limit) {
+/* 이 구독이 시작되기 전에 오늘 이미 본 몫. 한도에서 빼 준다.
+
+   report_reads 는 날짜로만 쌓인다 — 누구의 구독으로 봤는지는 안 적힌다.
+   그래서 같은 날 구독이 바뀌면(환불하고 다시 시작하는 경우) 지난 구독으로 본
+   몫이 새 구독의 한도를 그대로 깎았다.
+
+     PRO(15건)로 15건을 다 보고 환불 → 같은 날 PRO 를 다시 결제
+     → 14,900원을 다시 냈는데 오늘 0건
+
+   한 달치를 새로 받아 놓고 아무것도 못 주는 것이다. 하루 한도는 날짜에
+   붙는다고 볼 수도 있지만, 그렇게 보면 받은 돈에 아무것도 딸려 오지 않는
+   날이 생긴다. 새 구독은 새 구독이다 — 자기 시작 시점부터 자기 한도를 준다.
+
+   악용이 되지는 않는다. 한도를 새로 받으려면 한 달치를 다시 결제해야 하고,
+   환불 수수료까지 치면 리포트 한 건당 값이 그냥 구독하는 것보다 비싸다.
+
+   같은 날 시작한 구독에만 적용한다. 어제 시작했으면 오늘 본 건 전부 이
+   구독으로 본 것이다. */
+function readsOffset(sub) {
+  return sub && sub.readsAtStartDay === kstDay() ? (sub.readsAtStart || 0) : 0;
+}
+
+/* 하루 열람 한도 차감. 한도 안이면 true.
+
+   같은 종목을 다시 열 때는 차감하지 않는다. 새로고침·뒤로가기·다른 기기에서
+   다시 보기가 전부 한 건씩 깎으면, 사용자는 서로 다른 두 종목만 보고도
+   '한도 초과'를 만나게 된다. 그래서 횟수가 아니라 '오늘 본 종목'을 센다. */
+async function consumeDailyRead(db, uid, ticker, limit, sub) {
   const day = kstDay();
+  const off = readsOffset(sub);
   const ref = db.doc(`report_reads/${uid}_${day}`);
   return db.runTransaction(async (tx) => {
     const snap = await tx.get(ref);
     const seen = (snap.exists && snap.data().tickers) || [];
-    if (seen.includes(ticker)) return { ok: true, used: seen.length };   // 오늘 이미 본 종목 — 추가 차감 없음
-    if (seen.length >= limit) return { ok: false, used: seen.length };
+    const used = Math.max(0, seen.length - off);
+    if (seen.includes(ticker)) return { ok: true, used };   // 오늘 이미 본 종목 — 추가 차감 없음
+    if (used >= limit) return { ok: false, used };
     tx.set(ref, {
       tickers: admin.firestore.FieldValue.arrayUnion(ticker),
       count: seen.length + 1,
@@ -1562,16 +1591,16 @@ async function consumeDailyRead(db, uid, ticker, limit) {
       uid,
       updatedAt: admin.firestore.FieldValue.serverTimestamp(),
     }, { merge: true });
-    return { ok: true, used: seen.length + 1 };
+    return { ok: true, used: used + 1 };
   });
 }
 
 /* 오늘 몇 개를 썼는지. 화면이 '남은 개수'를 보여 주려면 필요하다.
    report_reads 는 클라이언트가 읽지 못하게 막아 뒀으므로(firestore.rules) 서버가 준다. */
-async function usageOf(db, uid) {
+async function usageOf(db, uid, sub) {
   const snap = await db.doc(`report_reads/${uid}_${kstDay()}`).get();
   const seen = (snap.exists && snap.data().tickers) || [];
-  return seen.length;
+  return Math.max(0, seen.length - readsOffset(sub));
 }
 
 exports.getReport = onCall(
@@ -1604,7 +1633,7 @@ exports.getReport = onCall(
     const snap = await db.doc(`reports_paid/${ticker}`).get();
     if (!snap.exists) throw new HttpsError("not-found", "리포트를 찾을 수 없습니다.");
 
-    const use = await consumeDailyRead(db, uid, ticker, limit);
+    const use = await consumeDailyRead(db, uid, ticker, limit, sub);
     if (!use.ok) {
       console.warn(`[getReport] 일일 한도(${plan}=${limit}) 초과 uid=${uid}`);
       throw new HttpsError("resource-exhausted", "오늘 열람 한도를 모두 사용했습니다.");
@@ -2318,7 +2347,7 @@ exports.getUsage = onCall({ region: REGION, cors: true }, async (req) => {
   const sub = (await db.doc(`subscriptions/${uid}`).get()).data() || null;
   if (!subActive(sub)) return { active: false, used: 0, limit: 0 };
   const plan = String(sub.plan || "").toLowerCase();
-  return { active: true, plan, limit: DAILY_LIMIT[plan] || 0, used: await usageOf(db, uid) };
+  return { active: true, plan, limit: DAILY_LIMIT[plan] || 0, used: await usageOf(db, uid, sub) };
 });
 
 /* ============================================================
@@ -2513,6 +2542,9 @@ if (PAYMENTS_LIVE) exports.confirmBilling = onCall(
 
     const issued = await toss("/billing/authorizations/issue", { authKey, customerKey });
     const now = new Date();
+    /* 오늘 이미 본 몫은 새 구독의 한도에서 뺀다. 안 빼면 같은 날 환불하고
+       다시 시작한 사람이 한 달치를 내고 오늘 0건을 받는다. */
+    const readsAtStart = await usageOf(db, uid, null);
     const sub = {
       billingKey: issued.billingKey, customerKey, plan,
       card: { company: (issued.card && issued.card.issuerCode) || "", number: (issued.card && issued.card.number) || "" },
@@ -2526,7 +2558,11 @@ if (PAYMENTS_LIVE) exports.confirmBilling = onCall(
       currentPeriodEnd: admin.firestore.Timestamp.fromDate(addMonth(now)),
       cancelAtPeriodEnd: false,
       pendingPlan: null,
-      startedAt: (cur && cur.startedAt) || admin.firestore.Timestamp.fromDate(now),
+      readsAtStart,
+      readsAtStartDay: kstDay(),
+      /* 환불하고 다시 시작한 경우엔 시작일도 오늘로 본다. 지난 구독은 돈까지
+         돌려주고 끝냈는데 '구독 시작일' 만 그때로 남으면 이어진 것처럼 읽힌다. */
+      startedAt: (cur && !cur.refundedAt && cur.startedAt) || admin.firestore.Timestamp.fromDate(now),
       lastPaymentKey: pay ? pay.paymentKey : null,
       /* 지난 구독이 남긴 표시를 전부 지운다. merge 로 쓰기 때문에 안 지우면
          그대로 붙어 있는다 — 특히 refundedAt 이 남으면 방금 결제한 구독이
@@ -2683,7 +2719,7 @@ async function refundQuote(db, uid, sub) {
   /* 오늘 한 건이라도 열었는가. 하루 한도를 세는 문서를 그대로 본다 —
      같은 자료를 두 곳에서 다르게 세면 화면의 '오늘 남은 열람' 과 환불 계산이
      어긋난다. */
-  const openedToday = (await usageOf(db, uid)) > 0;
+  const openedToday = (await usageOf(db, uid, sub)) > 0;
 
   // 지난 날은 전부 차감하고, 오늘은 열었을 때만 더한다.
   const elapsed = Math.max(0, kstDayNo(Date.now()) - kstDayNo(startMs));
