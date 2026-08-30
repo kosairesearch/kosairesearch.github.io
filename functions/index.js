@@ -2526,9 +2526,15 @@ if (PAYMENTS_LIVE) exports.confirmBilling = onCall(
       currentPeriodEnd: admin.firestore.Timestamp.fromDate(addMonth(now)),
       cancelAtPeriodEnd: false,
       pendingPlan: null,
-      readsAtStart: 0,
       startedAt: (cur && cur.startedAt) || admin.firestore.Timestamp.fromDate(now),
       lastPaymentKey: pay ? pay.paymentKey : null,
+      /* 지난 구독이 남긴 표시를 전부 지운다. merge 로 쓰기 때문에 안 지우면
+         그대로 붙어 있는다 — 특히 refundedAt 이 남으면 방금 결제한 구독이
+         '환불 완료' 로 보이고, 해지·플랜 변경·환불이 전부 막힌다.
+         환불한 날 다시 시작하는 사람이 바로 여기로 온다. */
+      refundedAt: admin.firestore.FieldValue.delete(),
+      canceledAt: admin.firestore.FieldValue.delete(),
+      failedAt: admin.firestore.FieldValue.delete(),
       updatedAt: admin.firestore.FieldValue.serverTimestamp(),
     }, { merge: true });
 

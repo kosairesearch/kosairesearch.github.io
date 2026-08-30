@@ -998,11 +998,25 @@ function ask(title, body) {
   });
 }
 
+/* 지금 이 사람에게 플랜을 파는 자리인가.
+
+   환불한 구독은 오늘 리포트를 본 경우 자정까지 살아 있다(값을 받았으니 쓰게
+   둔다). 그런데 그걸 '이용 중' 으로 보면 카드 버튼이 '구독 관리' 가 되고,
+   눌러도 설정 창의 '환불 완료' 화면으로 갔다가 다시 여기로 돌아온다 —
+   환불한 날 다시 시작하려는 사람이 나갈 데가 없는 고리에 갇혔다.
+
+   이용은 이용대로 자정까지 두고, 파는 쪽에서는 지난 손님으로 본다. */
+function selling() {
+  const sub = st.sub || {};
+  return st.active && !sub.refundedAt;
+}
+
 function paint() {
   const k = t();
   const sub = st.sub || {};
+  const live = selling();
   const due = !st.active && sub.status === 'past_due';
-  const pend = st.active && sub.pendingPlan && sub.pendingPlan !== st.plan ? sub.pendingPlan : null;
+  const pend = live && sub.pendingPlan && sub.pendingPlan !== st.plan ? sub.pendingPlan : null;
 
   btns.forEach((btn) => {
     const id = btn.dataset.plan;
@@ -1023,13 +1037,13 @@ function paint() {
     if (due) {
       // 결제가 밀려 멈춘 구독이다. 플랜을 바꿀 게 아니라 카드를 먼저 고쳐야 한다.
       label = k.fixCard;
-    } else if (st.active && id === st.plan) {
+    } else if (live && id === st.plan) {
       // 지금 쓰는 플랜 — 팔 게 아니라 관리로 보낸다.
       label = k.manage; badge = k.badge;
       btn.classList.add('is-current');
-    } else if (st.active && id === pend) {
+    } else if (live && id === pend) {
       label = k.undo; badge = k.pendBadge;
-    } else if (st.active) {
+    } else if (live) {
       label = id === 'pro' ? k.up : k.down;
     }
     btn.textContent = label;
@@ -1048,9 +1062,12 @@ btns.forEach((btn) => {
   btn.addEventListener('click', async () => {
     const k = t(), id = btn.dataset.plan, sub = st.sub || {};
     if (!st.user) { location.href = 'Login.html?next=pricing.html'; return; }
-    if (!st.active) {
-      // 결제가 밀린 구독은 카드부터. 그 외 비구독자는 결제 화면으로.
-      if (sub.status === 'past_due') {
+    /* 환불한 사람도 여기로 온다 — 새 구독을 시작하는 길이다.
+       서버는 이미 허용한다(confirmBilling 이 cancelAtPeriodEnd 인 구독 위에
+       새로 만든다). 막고 있던 건 이 화면뿐이었다. */
+    if (!selling()) {
+      // 결제가 밀린 구독은 카드부터. 그 외에는 결제 화면으로.
+      if (!st.active && sub.status === 'past_due') {
         location.href = 'checkout.html?plan=' + encodeURIComponent(sub.plan || 'basic') + '&method=1';
       } else {
         location.href = 'checkout.html?plan=' + encodeURIComponent(id);

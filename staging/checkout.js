@@ -361,7 +361,11 @@ function screen(fn) { repaint = fn; fn(); }
     return;
   }
 
-  if (st.active) {
+  /* 이미 이용 중인 사람에게 결제 화면을 또 보여 주면 낸 돈을 다시 파는 셈이다.
+     다만 환불한 구독은 예외다 — 오늘 리포트를 본 경우 값을 받았으니 자정까지
+     열어 두는데, 그걸 '이용 중' 으로 보면 환불한 날 다시 시작할 길이 없다.
+     서버도 이미 허용한다(confirmBilling 이 해지 예약된 구독 위에 새로 만든다). */
+  if (st.active && !(st.sub && st.sub.refundedAt)) {
     const cur = PLANS[st.plan] ? PLANS[st.plan].name : String(st.plan || "").toUpperCase();
     screen(() => { const kk = t();
       state(kk.already, kk.alreadyD.replace("{plan}", cur),

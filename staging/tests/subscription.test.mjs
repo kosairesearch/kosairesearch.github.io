@@ -324,6 +324,45 @@ ok("환불 금액을 알려 준다", /9,900원/.test(msg()), msg());
 ok("언제 끝나는지도 알려 준다", /지금 종료/.test(msg()), msg());
 ok("환불하면 화면이 '환불 완료'", txt().includes("환불 완료"), txt().slice(0, 200));
 
+console.log("\n── 환불한 날 다시 시작하기 ──");
+/* 환불하면 오늘 값을 받은 경우 자정까지 살아 있다. 그걸 '이용 중' 으로 보면
+   요금제 화면이 '구독 관리' 로 보내고, 그 화면은 다시 요금제로 보낸다 —
+   마음이 바뀐 사람이 나갈 데가 없는 고리에 갇힌다. */
+{
+  localStorage.clear();
+  w.KOSDemo.subscribe("basic");
+  await w.KOSPaywall.fetchPaid("005930");        // 오늘 1건 — 오늘 값을 받는다
+  await w.KOSPaywall.fetchPaid("000660");        // 오늘 2건
+  await w.KOSDemo.call("requestRefund", {});
+  await openSubs();
+  ok("환불 뒤 화면이 다시 시작할 길을 준다", btns().includes("다시 시작하기"), btns().join("|"));
+  ok("환불 뒤에도 자정까지는 이용 중", w.KOSPaywall.state().active === true);
+
+  // 같은 날 다시 결제
+  w.KOSDemo.subscribe("basic");
+  await openSubs();
+  ok("다시 결제하면 '이용 중'", txt().includes("이용 중") && !txt().includes("환불 완료"), txt().slice(0, 200));
+  ok("환불 표시가 지워진다", sub().refundedAt === undefined, JSON.stringify(sub().refundedAt));
+  ok("버튼이 다시 네 개", btns().join("|") === "PRO로 업그레이드|결제 수단 변경|구독 해지|환불 신청", btns().join("|"));
+
+  /* 새 구독이니 해지·플랜 변경이 다시 되어야 한다. 환불 표시가 남아 있으면
+     서버가 전부 거절해서, 방금 돈을 낸 사람이 아무것도 못 한다. */
+  let blocked = false;
+  await w.KOSDemo.call("cancelSubscription", {}).catch(() => { blocked = true; });
+  ok("다시 결제한 구독은 해지가 된다", blocked === false);
+  await w.KOSDemo.call("resumeSubscription", {});
+
+  /* 하루 한도는 그 날짜에 붙는 것이지 구독에 붙는 것이 아니다. 오늘 2건을
+     봤으면 다시 결제해도 오늘 남은 건 3건이다. 서버 usageOf 가 그렇게 센다 —
+     미리보기만 새로 주면 실제로 켰을 때 다르게 동작한다. */
+  ok("다시 결제해도 오늘 한도는 새로 안 생긴다", left() === "3", "남은=" + left());
+  ok("데모 카운트도 2 그대로", w.KOSDemo.readsToday() === 2, String(w.KOSDemo.readsToday()));
+
+  // 결제 내역에는 두 번의 결제와 한 번의 환불이 남는다
+  const rows = (await w.KOSDemo.call("listPayments", {})).data.items;
+  ok("내역에 결제 2건·환불 1건", rows.length === 3, JSON.stringify(rows.map(r => r.kind)));
+}
+
 console.log("\n── 결제 실패 ──");
 localStorage.clear(); w.KOSDemo.subscribe("basic"); w.KOSDemo.simulate("past_due");
 await openSubs();

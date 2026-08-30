@@ -106,9 +106,11 @@ if (window.KOSi18n) window.KOSi18n.register({
   "정기결제 실패": "Renewal failed",
   "청약철회": "withdrawal", "이용분 차감": "usage deducted", "잔여 기간": "remaining days",
   "환불 완료": "Refunded",
-  "환불이 완료되었습니다. 오늘 자정까지 이용하실 수 있습니다.":
-    "Refunded. You keep access until midnight tonight.",
-  "환불이 완료되어 이용이 종료되었습니다.": "Refunded. Your access has ended.",
+  "환불이 완료되었습니다. 오늘 자정까지 이용하실 수 있으며, 언제든 다시 시작하실 수 있습니다.":
+    "Refunded. You keep access until midnight tonight, and you can start again whenever you like.",
+  "환불이 완료되어 이용이 종료되었습니다. 언제든 다시 시작하실 수 있습니다.":
+    "Refunded. Your access has ended. You can start again whenever you like.",
+  "다시 시작하기": "Start again",
   "{r}개 / {l}개": "{r} of {l}", "{d}부터 {p}": "{p} from {d}",
   "PRO로 업그레이드": "Upgrade to PRO", "BASIC으로 변경": "Switch to BASIC",
   "변경 취소": "Undo change",
@@ -705,9 +707,11 @@ function paneSubscription() {
        하는 것보다 없는 편이 낫다. 남은 건 언제까지 볼 수 있는지 뿐이다. */
     if (refunded) {
       body.appendChild(el("p", "ks-note",
-        T(active ? "환불이 완료되었습니다. 오늘 자정까지 이용하실 수 있습니다."
-                 : "환불이 완료되어 이용이 종료되었습니다.")));
-      const a = el("a", "ks-btn primary", T("멤버십 보기"));
+        T(active ? "환불이 완료되었습니다. 오늘 자정까지 이용하실 수 있으며, 언제든 다시 시작하실 수 있습니다."
+                 : "환불이 완료되어 이용이 종료되었습니다. 언제든 다시 시작하실 수 있습니다.")));
+      /* '멤버십 보기' 가 아니라 '다시 시작하기' 다. 환불하고 마음이 바뀐
+         사람에게 필요한 건 요금표 구경이 아니라 결제로 가는 길이다. */
+      const a = el("a", "ks-btn primary", T("다시 시작하기"));
       a.href = "pricing.html";
       btns.appendChild(a);
       body.appendChild(btns);

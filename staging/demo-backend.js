@@ -75,26 +75,28 @@ if (isConfigured) {
   resolveReady(snapshot());
 }
 
-/* 오늘 본 종목 수. 가입 당일이면 가입 전에 본 몫은 빼고 센다 —
-   서버 readsOffset 과 같은 규칙. */
-function readsOffset(sub) {
-  return sub && sub.readsAtStartDay === kstDay() ? (sub.readsAtStart || 0) : 0;
-}
-function usedToday(sub) {
+/* 오늘 본 종목 수.
+
+   가입 시점에 이미 본 몫을 빼 주는 장치(readsAtStart)가 있었는데 걷어냈다.
+   서버에는 그런 규칙이 없다 — usageOf 는 그냥 오늘 목록의 길이를 센다.
+   그래서 환불하고 같은 날 다시 결제하면, 미리보기는 한도를 새로 주고 실제
+   서비스는 안 주는 차이가 났다.
+
+   하루 한도는 그 날짜에 붙는 것이지 구독에 붙는 것이 아니다. 오늘 3건을
+   봤으면 오늘 남은 건 2건이고, 그 사이에 몇 번을 다시 결제했든 같다. */
+function usedToday() {
   const r = read(READ_KEY, null);
-  const seen = (r && r.day === kstDay() && r.tickers) || [];
-  return Math.max(0, seen.length - readsOffset(sub));
+  return ((r && r.day === kstDay() && r.tickers) || []).length;
 }
 
 /* 하루 한도 차감. 서버 consumeDailyRead 와 같은 규칙. */
 function consume(ticker, limit) {
   const day = kstDay();
   const sub = read(SUB_KEY, null);
-  const off = readsOffset(sub);
   let r = read(READ_KEY, null);
   if (!r || r.day !== day) r = { day, tickers: [] };
   if (r.tickers.includes(ticker)) return true;    // 오늘 이미 본 종목
-  if (r.tickers.length - off >= limit) return false;
+  if (r.tickers.length >= limit) return false;
   r.tickers.push(ticker);
   write(READ_KEY, r);
   /* 이번 결제 주기에 몇 개를 열었는지 따로 센다. 하루 목록(READ_KEY)은 자정에
@@ -145,12 +147,6 @@ function subscribe(planId) {
     periodPayments: [{ key: "demo-" + now, amount: p.price }],
     // 결제 후 연 리포트 수. 환불이 '한 번도 안 열었는가' 를 이걸로 판단한다.
     readsSincePay: 0,
-    // 오늘 이미 본 종목은 새 구독의 한도에서 빼 준다.
-    readsAtStart: (function () {
-      const r = read(READ_KEY, null);
-      return (r && r.day === kstDay() && r.tickers ? r.tickers.length : 0);
-    })(),
-    readsAtStartDay: kstDay(),
   });
   pay({ amount: p.price, description: `${p.name} 월 구독 (모의)`, kind: "subscription", status: "paid", plan: p.id });
   emit();
@@ -222,7 +218,7 @@ function refundAmount(sub, at = Date.now()) {
      적어 두었다. 적어 둔 것과 계산이 달라서는 안 된다. */
   const opened = (sub.readsSincePay || 0) > 0;
   // 오늘 한 건이라도 열었는가. 화면의 '오늘 남은 열람' 과 같은 자료를 본다.
-  const openedToday = usedToday(sub) > 0;
+  const openedToday = usedToday() > 0;
   // 지난 날은 전부 차감하고, 오늘은 열었을 때만 더한다.
   const elapsed = Math.max(0, kstDayNo(at) - kstDayNo(sub.currentPeriodStart));
   const used = Math.min(total, elapsed + (openedToday ? 1 : 0));
@@ -244,7 +240,7 @@ async function call(name, arg) {
     const st = snapshot();
     if (!st.active) return { data: { active: false, used: 0, limit: 0 } };
     return { data: { active: true, plan: st.plan, limit: st.limit,
-                     used: usedToday(st.sub) } };
+                     used: usedToday() } };
   }
   /* 결제 내역. 서버와 같은 이름·같은 모양으로 답한다 — 화면이 미리보기인지
      실제인지 따지지 않게 하려는 것이다.
@@ -334,7 +330,7 @@ window.KOSDemo = {
   payments: () => read(PAY_KEY, []),
   reasons: () => read(FB_KEY, []),
   reset() { [SUB_KEY, READ_KEY, PAY_KEY, FB_KEY].forEach((k) => localStorage.removeItem(k)); emit(); },
-  readsToday: () => usedToday(read(SUB_KEY, null)),
+  readsToday: () => usedToday(),
   /* 눌러 볼 수 없는 상태들 — 콘솔에서 만들어 화면을 확인한다.
      KOSDemo.simulate('past_due') / 'expired' */
   simulate(what) {
