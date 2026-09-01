@@ -5,7 +5,7 @@
   · 272210 한화시스템: EPS=929 BPS=23781 ROE=4.3 DPS=500.0 성장=30.7
   · EPS 입력: 공시롤포워드=없음(작년연간 None − 작년동기누적 None + 올해누적 None) · 대안=순이익÷발행총수 없음 → 채택 None
   · BPS 입력: 자본 0.0조(분기말·연간폴백) ÷ 주식수 25백만(발행총수) = BPS None
-  ✅ 삼성에피스홀딩스 검증 통과 PER None PBR None EPS None BPS None | 참조 EPS 21211.0 BPS 245387.0 PER 18.25
+  ✅ 삼성에피스홀딩스 검증 통과 PER None PBR None EPS None BPS None | 참조 EPS 21211.0 BPS 245387.0 PER 18.06
   · 0126Z0 삼성에피스홀딩스: EPS=None BPS=None ROE=None DPS=None 성장=None
   · 000880 한화: EPS=8708 BPS=190553 ROE=6.7 DPS=1100.0 성장=34.4
   · 271560 오리온: EPS=10605 BPS=102854 ROE=11.1 DPS=3500.0 성장=7.3
@@ -16,7 +16,7 @@
   · 003690 코리안리: EPS=2411 BPS=22746 ROE=12.4 DPS=570.0 성장=-3.1
   · EPS 입력: 공시롤포워드=없음(작년연간 None − 작년동기누적 None + 올해누적 None) · 대안=순이익÷발행총수 없음 → 채택 None
   · BPS 입력: 자본 0.0조(분기말·연간폴백) ÷ 주식수 65백만(발행총수) = BPS None
-  ✅ 에임드바이오 검증 통과 PER None PBR None EPS None BPS None | 참조 EPS 625.0 BPS 3161.0 PER 39.2
+  ✅ 에임드바이오 검증 통과 PER None PBR None EPS None BPS None | 참조 EPS 625.0 BPS 3161.0 PER 37.76
   · 0009K0 에임드바이오: EPS=None BPS=None ROE=None DPS=None 성장=None
   · 294870 IPARK현대산업개발: EPS=2923 BPS=52363 ROE=5.7 DPS=700.0 성장=-2.6
   · 012630 HDC: EPS=7377 BPS=64552 ROE=14.8 DPS=450.0 성장=6.2
@@ -175,7 +175,7 @@ reprt_code='11014', fs_div='OFS' (3분기보고서, 별도(개별)제무제표)'
   · 477850 마키나락스: EPS=None BPS=3305 ROE=None DPS=None 성장=None
   · EPS 입력: 공시롤포워드=없음(작년연간 None − 작년동기누적 None + 올해누적 None) · 대안=순이익÷발행총수 없음 → 채택 None
   · BPS 입력: 자본 0.0조(분기말·연간폴백) ÷ 주식수 7백만(발행총수) = BPS None
-  ✅ 삼양바이오팜 검증 통과 PER None PBR None EPS None BPS None | 참조 EPS 1861.0 BPS 32116.0 PER 29.72
+  ✅ 삼양바이오팜 검증 통과 PER None PBR None EPS None BPS None | 참조 EPS 1861.0 BPS 32116.0 PER 28.53
   · 0120G0 삼양바이오팜: EPS=None BPS=None ROE=None DPS=None 성장=None
 reprt_code='11011', fs_div='CFS' (사업보고서, 연결제무제표)'
 {'status': '013', 'message': '조회된 데이타가 없습니다.'}
@@ -256,15 +256,15 @@ reprt_code='11014', fs_div='OFS' (3분기보고서, 별도(개별)제무제표)'
   · 404990 신한서부티엔디리츠: EPS=44 BPS=4265 ROE=1.0 DPS=263.0 성장=77.7
   · EPS 입력: 공시롤포워드=없음(작년연간 None − 작년동기누적 None + 올해누적 None) · 대안=순이익÷발행총수 없음 → 채택 None
   · BPS 입력: 자본 0.0조(분기말·연간폴백) ÷ 주식수 25백만(발행총수) = BPS None
-  ✅ 덕양에너젠 검증 통과 PER None PBR None EPS None BPS None | 참조 EPS 251.0 BPS 4461.0 PER 37.45
+  ✅ 덕양에너젠 검증 통과 PER None PBR None EPS None BPS None | 참조 EPS 251.0 BPS 4461.0 PER 37.53
   · 0001A0 덕양에너젠: EPS=None BPS=None ROE=None DPS=None 성장=None
   · EPS 입력: 공시롤포워드=없음(작년연간 None − 작년동기누적 None + 올해누적 None) · 대안=순이익÷발행총수 없음 → 채택 None
   · BPS 입력: 자본 0.0조(분기말·연간폴백) ÷ 주식수 60백만(발행총수) = BPS None
-  ✅ 대신밸류리츠 검증 통과 PER None PBR None EPS None BPS None | 참조 EPS 33.0 BPS 4814.0 PER 120.3
+  ✅ 대신밸류리츠 검증 통과 PER None PBR None EPS None BPS None | 참조 EPS 33.0 BPS 4814.0 PER 120.61
   · 0030R0 대신밸류리츠: EPS=None BPS=None ROE=None DPS=None 성장=None
   · EPS 입력: 공시롤포워드=없음(작년연간 None − 작년동기누적 None + 올해누적 None) · 대안=순이익÷발행총수 없음 → 채택 None
   · BPS 입력: 자본 0.0조(분기말·연간폴백) ÷ 주식수 47백만(발행총수) = BPS None
-  ✅ 채비 검증 통과 PER None PBR None EPS None BPS None | 참조 EPS -899.0 BPS 1540.0 PER None
+  ✅ 채비 검증 통과 PER None PBR None EPS None BPS None | 참조 EPS -878.0 BPS 1540.0 PER None
   · 0011T0 채비: EPS=None BPS=None ROE=None DPS=None 성장=None
   · 002320 한진: EPS=-747 BPS=94587 ROE=-0.6 DPS=600.0 성장=1.6
   · EPS 입력: 공시롤포워드=없음(작년연간 None − 작년동기누적 None + 올해누적 None) · 대안=순이익÷발행총수 없음 → 채택 None
@@ -275,7 +275,7 @@ reprt_code='11014', fs_div='OFS' (3분기보고서, 별도(개별)제무제표)'
   · 000540 흥국화재: EPS=None BPS=None ROE=5.3 DPS=0.0 성장=5.9
   · EPS 입력: 공시롤포워드=없음(작년연간 None − 작년동기누적 None + 올해누적 None) · 대안=순이익÷발행총수 없음 → 채택 None
   · BPS 입력: 자본 0.0조(분기말·연간폴백) ÷ 주식수 9백만(발행총수) = BPS None
-  ✅ 에스엔시스 검증 통과 PER None PBR None EPS None BPS None | 참조 EPS 1941.0 BPS 18484.0 PER 12.36
+  ✅ 에스엔시스 검증 통과 PER None PBR None EPS None BPS None | 참조 EPS 1941.0 BPS 18484.0 PER 12.52
   · 0008Z0 에스엔시스: EPS=None BPS=None ROE=None DPS=None 성장=None
   · 462860 더즌: EPS=174 BPS=1098 ROE=15.8 DPS=30.0 성장=None
   · 003520 영진약품: EPS=-34 BPS=471 ROE=-7.1 DPS=0.0 성장=0.9
@@ -294,7 +294,7 @@ reprt_code='11014', fs_div='OFS' (3분기보고서, 별도(개별)제무제표)'
   · 042600 새로닉스: EPS=1502 BPS=8578 ROE=20.0 DPS=0.0 성장=-18.5
   · EPS 입력: 공시롤포워드=없음(작년연간 None − 작년동기누적 None + 올해누적 None) · 대안=순이익÷발행총수 없음 → 채택 None
   · BPS 입력: 자본 0.0조(분기말·연간폴백) ÷ 주식수 12백만(발행총수) = BPS None
-  ✅ 그린광학 검증 통과 PER None PBR None EPS None BPS None | 참조 EPS 417.0 BPS 5719.0 PER 35.28
+  ✅ 그린광학 검증 통과 PER None PBR None EPS None BPS None | 참조 EPS 417.0 BPS 5719.0 PER 34.65
   · 0015G0 그린광학: EPS=None BPS=None ROE=None DPS=None 성장=None
   · 000700 유수홀딩스: EPS=1041 BPS=23118 ROE=4.6 DPS=350.0 성장=-4.0
   · 077500 유니퀘스트: EPS=1472 BPS=12726 ROE=12.0 DPS=200.0 성장=2.8
@@ -455,7 +455,7 @@ reprt_code='11014', fs_div='OFS' (3분기보고서, 별도(개별)제무제표)'
   · 474650 링크솔루션: EPS=None BPS=None ROE=-18.3 DPS=0.0 성장=17.3
   · EPS 입력: 공시롤포워드=없음(작년연간 None − 작년동기누적 None + 올해누적 None) · 대안=순이익÷발행총수 없음 → 채택 None
   · BPS 입력: 자본 0.0조(분기말·연간폴백) ÷ 주식수 19백만(발행총수) = BPS None
-  ✅ 매드업 검증 통과 PER None PBR None EPS None BPS None | 참조 EPS 614.0 BPS 2952.0 PER 12.38
+  ✅ 매드업 검증 통과 PER None PBR None EPS None BPS None | 참조 EPS 614.0 BPS 2952.0 PER 15.13
   · 0039P0 매드업: EPS=None BPS=None ROE=None DPS=None 성장=None
   · 084990 헬릭스미스: EPS=-34 BPS=3005 ROE=-1.2 DPS=0.0 성장=-47.8
   · 004090 한국석유: EPS=1168 BPS=17022 ROE=7.1 DPS=120.0 성장=-3.4
@@ -488,7 +488,7 @@ reprt_code='11014', fs_div='OFS' (3분기보고서, 별도(개별)제무제표)'
   · 388790 라이콤: EPS=30 BPS=687 ROE=4.4 DPS=0.0 성장=34.6
   · EPS 입력: 공시롤포워드=없음(작년연간 None − 작년동기누적 None + 올해누적 None) · 대안=순이익÷발행총수 없음 → 채택 None
   · BPS 입력: 자본 0.0조(분기말·연간폴백) ÷ 주식수 13백만(발행총수) = BPS None
-  ✅ 아로마티카 검증 통과 PER None PBR None EPS None BPS None | 참조 EPS 499.0 BPS 3625.0 PER 21.72
+  ✅ 아로마티카 검증 통과 PER None PBR None EPS None BPS None | 참조 EPS 499.0 BPS 3625.0 PER 22.34
   · 0015N0 아로마티카: EPS=None BPS=None ROE=None DPS=None 성장=None
   · 008350 남선알미늄: EPS=-84 BPS=2156 ROE=-3.8 DPS=0.0 성장=-10.6
   · 115310 인포바인: EPS=1173 BPS=13091 ROE=9.2 DPS=None 성장=14.0
@@ -581,7 +581,7 @@ reprt_code='11014', fs_div='OFS' (3분기보고서, 별도(개별)제무제표)'
   · 267290 경동도시가스: EPS=6295 BPS=83763 ROE=7.7 DPS=875.0 성장=-1.8
   · EPS 입력: 공시롤포워드=없음(작년연간 None − 작년동기누적 None + 올해누적 None) · 대안=순이익÷발행총수 없음 → 채택 None
   · BPS 입력: 자본 0.0조(분기말·연간폴백) ÷ 주식수 10백만(발행총수) = BPS None
-  ✅ 메쥬 검증 통과 PER None PBR None EPS None BPS None | 참조 EPS 781.0 BPS 4148.0 PER 16.59
+  ✅ 메쥬 검증 통과 PER None PBR None EPS None BPS None | 참조 EPS 781.0 BPS 4148.0 PER 16.44
   · 0088M0 메쥬: EPS=None BPS=None ROE=None DPS=None 성장=None
   · 210540 디와이파워: EPS=2898 BPS=30449 ROE=10.1 DPS=500.0 성장=-0.5
   · 102120 어보브반도체: EPS=580 BPS=7532 ROE=7.9 DPS=200.0 성장=5.2
@@ -761,7 +761,7 @@ reprt_code='11014', fs_div='OFS' (3분기보고서, 별도(개별)제무제표)'
   · BPS 입력: 자본 0.0조(분기말·지배지분) ÷ 주식수 6백만(가중평균) = BPS 2460
 {'status': '013', 'message': '조회된 데이타가 없습니다.'}
 {'status': '013', 'message': '조회된 데이타가 없습니다.'}
-  ✅ 레메디 검증 통과 PER None PBR 5.9187 EPS None BPS 2460 | 참조 EPS 777.0 BPS 2462.0 PER 18.74
+  ✅ 레메디 검증 통과 PER None PBR 5.9187 EPS None BPS 2460 | 참조 EPS 777.0 BPS 2462.0 PER 19.05
   · 387690 레메디: EPS=None BPS=2460 ROE=None DPS=None 성장=None
   · 166480 코아스템켐온: EPS=-752 BPS=924 ROE=-61.9 DPS=0.0 성장=-29.9
   · 051980 중앙첨단소재: EPS=-19 BPS=922 ROE=-2.3 DPS=0.0 성장=6.0
