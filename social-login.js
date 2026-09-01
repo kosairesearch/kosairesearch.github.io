@@ -14,7 +14,8 @@ import { getFunctions, httpsCallable } from "https://www.gstatic.com/firebasejs/
 
 if(window.KOSi18n) window.KOSi18n.register({
   "소셜 로그인에 실패했습니다.":"Social sign-in failed.",
-  "로그인 요청이 만료되었어요. 다시 시도해 주세요.":"Your sign-in request expired. Please try again.",
+  "이미 다른 방법으로 가입된 이메일입니다.":"This email is already registered with a different sign-in method.",
+  "로그인 요청이 만료되었습니다. 다시 시도하여 주시기 바랍니다.":"Your sign-in request expired. Please try again.",
   "카카오·네이버 로그인은 앱 키 설정이 필요합니다. (firebase-config.js 참고)":"Kakao/Naver sign-in needs app keys to be configured (see firebase-config.js)."
 });
 const T = m => (window.KOSi18n ? window.KOSi18n.t(m) : m);
@@ -155,7 +156,7 @@ export function wireSocialButtons(opts = {}){
     if(saved && saved.nonce === returnedState){
       completeLogin(code, returnedState, saved, onError);
     }else{
-      onError && onError(T("로그인 요청이 만료되었어요. 다시 시도해 주세요."));
+      onError && onError(T("로그인 요청이 만료되었습니다. 다시 시도하여 주시기 바랍니다."));
     }
   }
 }

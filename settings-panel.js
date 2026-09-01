@@ -44,8 +44,9 @@ if (window.KOSi18n) window.KOSi18n.register({
   "계정 관리": "Manage account",
   "로그아웃": "Sign out",
   "회원 탈퇴": "Delete account",
-  "저장에 실패했어요. 잠시 후 다시 시도해 주세요.": "Could not save. Please try again in a moment.",
-  "불러오지 못했어요. 잠시 후 다시 시도해 주세요.": "Could not load. Please try again in a moment.",
+  "로그인": "Sign in",
+  "저장하지 못했습니다. 잠시 후 다시 시도하여 주시기 바랍니다.": "Could not save. Please try again in a moment.",
+  "불러오지 못했습니다. 잠시 후 다시 시도하여 주시기 바랍니다.": "Could not load. Please try again in a moment.",
   "계정 설정을 보려면 로그인이 필요합니다.": "Sign in to view your account settings.",
   "닫기": "Close",
   "약관과 개인정보 처리에 관한 내용은": "You can review our",
@@ -264,7 +265,7 @@ export function renderSettings(box, opts = {}) {
 
   getMarketing(user.uid)
     .then(on => { sw.setAttribute("aria-checked", String(!!on)); sw.disabled = false; })
-    .catch(() => say("불러오지 못했어요. 잠시 후 다시 시도해 주세요.", "err"));
+    .catch(() => say("불러오지 못했습니다. 잠시 후 다시 시도하여 주시기 바랍니다.", "err"));
 
   sw.addEventListener("click", async () => {
     const was = sw.getAttribute("aria-checked") === "true";
@@ -279,7 +280,7 @@ export function renderSettings(box, opts = {}) {
       await setMarketing(user.uid, next);
     } catch (e) {
       sw.setAttribute("aria-checked", String(was));   // 되돌린다
-      say("저장에 실패했어요. 잠시 후 다시 시도해 주세요.", "err");
+      say("저장하지 못했습니다. 잠시 후 다시 시도하여 주시기 바랍니다.", "err");
     }
     sw.disabled = false;
   });

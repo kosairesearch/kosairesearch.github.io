@@ -559,7 +559,7 @@ KOSi18n.register({
     <div class="head">
       <div class="kick">ACCOUNT</div>
       <h1 id="ttl">약관 동의</h1>
-      <p id="lede">가입을 마치려면 아래 항목에 동의해 주세요.</p>
+      <p id="lede">가입을 완료하시려면 아래 항목에 동의하여 주시기 바랍니다.</p>
     </div>
 
     <div class="auth-card card glass consent-card">
@@ -619,7 +619,7 @@ themeBtn.addEventListener('click',()=>applyTheme(root.getAttribute('data-theme')
 
 if(window.KOSi18n) KOSi18n.register({
   "약관 동의":"Agreements",
-  "가입을 마치려면 아래 항목에 동의해 주세요.":"To finish signing up, please accept the items below.",
+  "가입을 완료하시려면 아래 항목에 동의하여 주시기 바랍니다.":"To finish signing up, please accept the items below.",
   "개정된 약관 동의":"Updated terms",
   "이용약관이 개정되었습니다. 계속 이용하시려면 동의해 주세요.":
     "Our Terms of Service have been updated. Please accept them to continue.",
@@ -633,24 +633,24 @@ if(window.KOSi18n) KOSi18n.register({
   "개인정보처리방침":"Privacy Policy",
   "동의하지 않으면 가입이 취소되고 계정은 남지 않습니다.":
     "If you do not agree, your sign-up is cancelled and no account is kept.",
-  "동의 저장에 실패했어요. 잠시 후 다시 시도해 주세요.":
+  "동의를 저장하지 못했습니다. 잠시 후 다시 시도하여 주시기 바랍니다.":
     "Could not save your agreement. Please try again in a moment.",
   "로그인이 필요합니다.":"Please sign in.",
-  "가입이 만료되어 계정이 삭제되었어요. 처음부터 다시 가입해 주세요.":
+  "가입이 만료되어 계정이 삭제되었습니다. 처음부터 다시 가입하여 주시기 바랍니다.":
     "This sign-up expired and the account was removed. Please sign up again.",
   "다시 가입하기":"Sign up again",
-  "인증 메일을 보냈어요":"Verification email sent",
+  "인증 메일을 보내 드렸습니다":"Verification email sent",
   "주소로 인증 링크를 보냈습니다. 메일의 링크를 눌러 인증한 뒤 로그인해 주세요. (스팸함도 확인해 주세요)":
     "— we sent a verification link. Click it to verify, then sign in. (Check your spam folder too.)",
   "로그인하러 가기":"Go to sign in",
   "가입 완료":"Almost done",
-  "메일 인증만 남았어요.":"Just one more step — verify your email.",
-  "인증 메일을 보내지 못했어요":"Could not send the verification email",
+  "메일 인증만 남았습니다.":"Just one more step — verify your email.",
+  "인증 메일을 보내 드리지 못했습니다":"Could not send the verification email",
   "주소로 인증 링크를 보내지 못했습니다. 아래에서 다시 보내 주세요.":
     "— we could not send the verification link. Please resend below.",
   "인증 메일 다시 보내기":"Resend verification email",
   "다시 보냈습니다. 메일함을 확인해 주세요.":"Sent again — please check your inbox.",
-  "보내지 못했어요. 잠시 후 다시 시도해 주세요.":"Could not send. Please try again in a moment.",
+  "보내지 못했습니다. 잠시 후 다시 시도하여 주시기 바랍니다.":"Could not send. Please try again in a moment.",
   "이미 다른 방법으로 가입된 이메일입니다.":"This email is already registered with another sign-in method.",
   "이 주소는 이미 다음 방법으로 등록되어 있습니다:":"This address is already registered with:",
   "이메일 가입":"Email sign-up",
@@ -722,7 +722,7 @@ function paintReconsent(){
 
    signOut·deleteUser 를 부르면 onAuthStateChanged 가 user=null 로 울린다.
    그 리스너 첫 줄이 로그인 페이지로 보내 버리므로, 이메일 가입을 마치고
-   '인증 메일을 보냈어요' 를 띄우려던 순간 화면이 로그인으로 넘어갔다.
+   '인증 메일을 보내 드렸습니다' 를 띄우려던 순간 화면이 로그인으로 넘어갔다.
    취소 버튼도 같은 이유로 홈이 아니라 로그인으로 갔다. */
 let finishing = false;
 
@@ -830,7 +830,7 @@ document.getElementById('agreeBtn').addEventListener('click', async () => {
     }
 
     if(/not-found|user-not-found|unauthenticated|permission-denied/.test(code)){
-      errBox.textContent = T('가입이 만료되어 계정이 삭제되었어요. 처음부터 다시 가입해 주세요.') + ' ';
+      errBox.textContent = T('가입이 만료되어 계정이 삭제되었습니다. 처음부터 다시 가입하여 주시기 바랍니다.') + ' ';
       const a = document.createElement('a');
       a.href = 'Signup.html'; a.textContent = T('다시 가입하기');
       a.style.cssText = 'color:var(--brand-blue);font-weight:600;text-decoration:underline';
@@ -839,7 +839,7 @@ document.getElementById('agreeBtn').addEventListener('click', async () => {
       btn.disabled = true;
       return;
     }
-    showErr(T('동의 저장에 실패했어요. 잠시 후 다시 시도해 주세요.'));
+    showErr(T('동의를 저장하지 못했습니다. 잠시 후 다시 시도하여 주시기 바랍니다.'));
   }
 });
 
@@ -852,7 +852,7 @@ function showVerifySent(mail, sent){
   const h1 = document.querySelector('.head h1');
   const sub = document.querySelector('.head p');
   if(h1){ h1.textContent = T('가입 완료'); }
-  if(sub){ sub.textContent = T('메일 인증만 남았어요.'); }
+  if(sub){ sub.textContent = T('메일 인증만 남았습니다.'); }
   document.getElementById('consentMount').innerHTML = '';
   document.querySelector('.consent-act').style.display = 'none';
   document.querySelector('.consent-docs').style.display = 'none';
@@ -861,8 +861,8 @@ function showVerifySent(mail, sent){
   const box = document.createElement('div');
   box.className = 'verify-sent';
   const b = document.createElement('b');
-  b.textContent = T('인증 메일을 보냈어요');
-  if(!sent){ b.textContent = T('인증 메일을 보내지 못했어요'); }
+  b.textContent = T('인증 메일을 보내 드렸습니다');
+  if(!sent){ b.textContent = T('인증 메일을 보내 드리지 못했습니다'); }
   const p = document.createElement('p');
   p.textContent = sent
     ? mail + ' ' + T('주소로 인증 링크를 보냈습니다. 메일의 링크를 눌러 인증한 뒤 로그인해 주세요. (스팸함도 확인해 주세요)')
@@ -883,7 +883,7 @@ function showVerifySent(mail, sent){
       again.textContent = T('다시 보냈습니다. 메일함을 확인해 주세요.');
     }catch(_){
       again.disabled = false;
-      again.textContent = T('보내지 못했어요. 잠시 후 다시 시도해 주세요.');
+      again.textContent = T('보내지 못했습니다. 잠시 후 다시 시도하여 주시기 바랍니다.');
     }
   });
   box.appendChild(again);

@@ -16,7 +16,7 @@ if (window.KOSi18n) window.KOSi18n.register({
   "비밀번호는 영문과 숫자를 포함해 8자 이상이어야 합니다.":
     "Your password must be at least 8 characters and include letters and numbers.",
   "이미 가입된 이메일입니다.": "That email is already registered.",
-  "요청이 많아 잠시 막혔습니다. 잠시 후 다시 시도해 주세요.":
+  "요청이 많아 잠시 막혔습니다. 잠시 후 다시 시도하여 주시기 바랍니다.":
     "Too many attempts. Please try again in a moment.",
   "이 이메일은 다른 방법으로 가입되어 있습니다. 아래 버튼 중 처음 가입할 때 쓰신 것으로 로그인해 주세요.":
     "This email is registered with a different sign-in method. Please use the one you signed up with.",
@@ -98,7 +98,7 @@ export function mapAuthError(err) {
     return T("이메일 또는 비밀번호가 올바르지 않습니다.");
   if (has("invalid-email")) return T("이메일 형식이 올바르지 않습니다.");
   if (has("weak-password")) return T("비밀번호는 영문과 숫자를 포함해 8자 이상이어야 합니다.");
-  if (has("too-many-requests")) return T("요청이 많아 잠시 막혔습니다. 잠시 후 다시 시도해 주세요.");
+  if (has("too-many-requests")) return T("요청이 많아 잠시 막혔습니다. 잠시 후 다시 시도하여 주시기 바랍니다.");
   if (has("network-request-failed")) return T("네트워크 연결을 확인해 주세요.");
   if (has("user-disabled")) return T("이 계정은 사용이 중지되었습니다. 문의해 주세요.");
   if (has("requires-recent-login")) return T("보안을 위해 다시 로그인한 뒤 진행해 주세요.");

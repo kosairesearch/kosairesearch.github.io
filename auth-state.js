@@ -18,9 +18,9 @@ if(window.KOSi18n) window.KOSi18n.register({
   "설정":"Settings",
   "회원 탈퇴가 완료되었습니다. 그동안 이용해 주셔서 감사합니다.":
     "Your account has been deleted. Thank you for using KOSAI.",
-  "보안을 위해 다시 로그인한 뒤 탈퇴를 진행해 주세요.":
+  "보안을 위해 다시 로그인하신 뒤 탈퇴를 진행하여 주시기 바랍니다.":
     "For security, please sign in again and then delete your account.",
-  "탈퇴 처리 중 오류가 발생했습니다. 잠시 후 다시 시도해 주세요.":
+  "탈퇴 처리 중 오류가 발생했습니다. 잠시 후 다시 시도하여 주시기 바랍니다.":
     "Something went wrong while deleting your account. Please try again later.",
   "정말 탈퇴하시겠어요?":"Delete your account?",
   "계정과 저장된 관심종목이 영구 삭제되며, 되돌릴 수 없습니다.":
@@ -35,7 +35,7 @@ if(window.KOSi18n) window.KOSi18n.register({
   "자세한 의견 (선택)":"Tell us more (optional)",
   "위 내용을 이해했으며 되돌릴 수 없음에 동의합니다":
     "I understand this is permanent and cannot be undone",
-  "확인을 위해 '탈퇴' 를 입력하세요":"Type ‘탈퇴’ to confirm",
+  "확인을 위해 '탈퇴' 를 입력하여 주십시오":"Type ‘탈퇴’ to confirm",
   "탈퇴하기":"Delete account", "취소":"Cancel",
   "회원 탈퇴가 완료되었습니다":"Your account has been deleted",
   "그동안 이용해 주셔서 감사합니다.":"Thank you for using KOSAI.",
@@ -137,11 +137,11 @@ async function finishWithdraw(user, email, reason, detail, ov){
     ov.onclick = e => { if(e.target === ov) home(); };
   }catch(e){
     if(e && e.code === "auth/requires-recent-login"){
-      alert(T("보안을 위해 다시 로그인한 뒤 탈퇴를 진행해 주세요."));
+      alert(T("보안을 위해 다시 로그인하신 뒤 탈퇴를 진행하여 주시기 바랍니다."));
       try{ await signOut(auth); }catch(_){}
       location.href = "Login.html?next=" + encodeURIComponent(here());
     }else{
-      alert(T("탈퇴 처리 중 오류가 발생했습니다. 잠시 후 다시 시도해 주세요."));
+      alert(T("탈퇴 처리 중 오류가 발생했습니다. 잠시 후 다시 시도하여 주시기 바랍니다."));
       ov.remove();
     }
   }
