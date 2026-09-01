@@ -278,6 +278,17 @@ async function call(name, arg) {
 
      구독이 없어도 답한다. 아래 '구독 없으면 거절' 블록보다 위에 있어야 한다 —
      환불하고 나간 사람도 지난 내역은 볼 수 있어야 한다. */
+  /* 환불 견적. 돈을 건드리지 않고 계산만 한다(서버 refundPreview 와 같다).
+     확인 창에 금액을 적어 주려고 있다 — 여태 금액 없이 물어보고 누른 뒤에야
+     얼마인지 알려 줬다. */
+  if (name === "refundPreview") {
+    const s0 = read(SUB_KEY, null);
+    if (!s0 || !activeNow(s0)) throw new Error("이용 중인 구독이 없습니다.");
+    if (s0.refundedAt) throw new Error("이미 환불이 완료되었습니다.");
+    const q = refundAmount(s0);
+    return { data: { amount: q.amount, why: q.why, chargedToday: q.chargedToday,
+                     endsAt: q.chargedToday ? kstEndOfToday() : Date.now() } };
+  }
   if (name === "listPayments") {
     return { data: { items: read(PAY_KEY, []).slice(0, PAYMENT_PAGE) } };
   }
@@ -336,6 +347,12 @@ async function call(name, arg) {
     }
   } else if (name === "requestRefund") {
     const q = refundAmount(sub);
+    /* 확인 창에서 본 금액과 다르면 실행하지 않는다(서버와 같다). 창을 띄운 뒤
+       리포트를 한 건 열면 오늘이 이용일로 잡혀 금액이 달라진다. */
+    const expect = Number((arg || {}).expectAmount ?? NaN);
+    if (Number.isFinite(expect) && expect !== q.amount) {
+      throw new Error(`환불 금액이 ${q.amount.toLocaleString("ko-KR")}원으로 변경되었습니다. 다시 확인해 주시기 바랍니다.`);
+    }
     refunded = q.amount;
     /* 한 주기에 결제가 여러 건일 수 있다(월 구독 + 업그레이드 차액). 카드사는
        결제 건 하나를 그 건의 금액 안에서만 취소해 주므로, 최근 건부터 차례로
@@ -367,7 +384,9 @@ async function call(name, arg) {
   }
   write(SUB_KEY, sub);
   emit();
-  return { data: { ok: true, charged, refunded, endsAt } };
+  /* amount 는 서버 requestRefund 가 쓰는 이름이다. 미리보기만 refunded 로
+     주면 화면이 실제 서버에서는 금액을 못 읽는다 — 둘 다 담아 보낸다. */
+  return { data: { ok: true, charged, refunded, amount: refunded, endsAt } };
 }
 
 window.__KOSDEMO = true;

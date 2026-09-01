@@ -123,8 +123,13 @@ if (window.KOSi18n) window.KOSi18n.register({
   "{date}까지는 그대로 이용하실 수 있으며, 그 이후 결제되지 않습니다. 해지는 언제든지 취소하실 수 있습니다.":
     "You keep access until {date}, and you will not be charged after that. You can undo this anytime.",
   "환불을 신청하시겠습니까?": "Request a refund?",
-  "환불 금액은 이용하신 일수를 차감해 산정됩니다. 오늘 리포트를 보셨다면 오늘까지 이용하실 수 있고, 오늘 한 건도 보지 않으셨다면 오늘은 차감하지 않고 이용이 바로 종료됩니다.":
-    "The refund deducts the days you used. If you opened a report today, you keep access until midnight; if you opened none today, today is not charged and your access ends right away.",
+  "환불 금액은 이용하신 일수를 차감해 산정됩니다.":
+    "The refund deducts the days you have used.",
+  "{a}이 환불됩니다.": "{a} will be refunded.",
+  "오늘 자정까지 이용하실 수 있습니다.": "You keep access until midnight today.",
+  "이용은 신청 즉시 종료됩니다.": "Your access ends as soon as you confirm.",
+  "오늘 리포트를 보셨다면 오늘까지 이용하실 수 있고, 오늘 한 건도 보지 않으셨다면 오늘은 차감하지 않고 이용이 바로 종료됩니다.":
+    "If you opened a report today, you keep access until midnight; if you opened none today, today is not charged and your access ends right away.",
   "플랜 변경만 원하시는 경우에는 환불 대신 위의 ‘플랜 변경’을 이용하여 주시기 바랍니다. 남은 기간에 대한 차액만 결제되며 즉시 적용됩니다.":
     "If you only want to switch plans, use “Change plan” above instead of a refund — you are charged only the difference for the remaining period, and it applies immediately.",
   "PRO로 업그레이드하시겠습니까?": "Upgrade to PRO?",
@@ -567,7 +572,9 @@ function paneSubscription() {
     all.forEach(b => { b.disabled = true; });
     msg.className = "ks-msg";
     try {
-      const res = await call(fn, arg || {});
+      /* arg 를 함수로도 받는다. 확인 창에서 알아낸 값(예: 사용자가 본 환불
+         금액)을 넘기려면 버튼을 만들 때가 아니라 이때 정해져야 한다. */
+      const res = await call(fn, (typeof arg === "function" ? arg() : arg) || {});
       if (survey) sendReason(survey, ans);
       say(done(res && res.data), "ok");
       /* 데모·서버 모두 상태가 바뀌면 onChange 로 다시 그린다. 그래도 여기서
@@ -822,26 +829,56 @@ function paneSubscription() {
       })));
     }
 
+    /* 확인 창에서 사용자가 본 금액. 그 값 그대로 서버에 되돌려주고, 서버는
+       다시 계산해 다르면 실행하지 않는다. 창을 띄운 뒤 리포트를 한 건 열면
+       오늘이 이용일로 잡혀 금액이 달라지는데, 그대로 진행하면 사용자는 본 적
+       없는 금액을 받게 된다. */
+    let quoted = null;
     btns.appendChild(button("환불 신청", "danger", b => act(b, {
-      /* 플랜을 바꾸려고 환불을 누르는 사람이 있다. 환불했다 다시 사면 한 달치를
-         새로 내지만, 플랜 변경은 남은 기간의 차액만 받고 바로 적용된다. 누르기
-         전에 말해 주지 않으면 훨씬 비싼 길로 돌아가게 된다. */
-      confirm: () => ask(T("환불을 신청하시겠습니까?"),
-        T("환불 금액은 이용하신 일수를 차감해 산정됩니다. 오늘 리포트를 보셨다면 오늘까지 이용하실 수 있고, 오늘 한 건도 보지 않으셨다면 오늘은 차감하지 않고 이용이 바로 종료됩니다.")
-        + "\n\n" + T("플랜 변경만 원하시는 경우에는 환불 대신 위의 ‘플랜 변경’을 이용하여 주시기 바랍니다. 남은 기간에 대한 차액만 결제되며 즉시 적용됩니다."),
-        "refund"),
+      /* 금액을 먼저 물어보고 창에 적는다. 여태 "이용하신 일수를 차감해
+         산정됩니다" 만 적고 얼마인지는 누른 뒤에야 알려 줬다.
+
+         그리고 플랜을 바꾸려고 환불을 누르는 사람이 있다. 환불했다 다시 사면
+         한 달치를 새로 내지만, 플랜 변경은 남은 기간의 차액만 받고 바로
+         적용된다. 누르기 전에 말해 주지 않으면 훨씬 비싼 길로 돌아가게 된다. */
+      confirm: async () => {
+        quoted = null;
+        let head = T("환불 금액은 이용하신 일수를 차감해 산정됩니다.");
+        try {
+          const q = (await call("refundPreview", {})).data;
+          if (q && Number.isFinite(q.amount)) {
+            quoted = q.amount;
+            const endMs = typeof q.endsAt === "number" ? q.endsAt : Date.parse(q.endsAt);
+            head = T("{a}이 환불됩니다.").replace("{a}", won(q.amount, en)) + " "
+              + (Number.isFinite(endMs) && endMs > Date.now()
+                 ? T("오늘 자정까지 이용하실 수 있습니다.")
+                 : T("이용은 신청 즉시 종료됩니다."));
+          }
+        } catch (e) {
+          // 견적을 못 받아도 신청 자체는 막지 않는다. 금액만 못 적을 뿐이다.
+          console.error("[settings] refundPreview", e);
+        }
+        return ask(T("환불을 신청하시겠습니까?"),
+          head + "\n\n"
+          + T("오늘 리포트를 보셨다면 오늘까지 이용하실 수 있고, 오늘 한 건도 보지 않으셨다면 오늘은 차감하지 않고 이용이 바로 종료됩니다.")
+          + "\n\n" + T("플랜 변경만 원하시는 경우에는 환불 대신 위의 ‘플랜 변경’을 이용하여 주시기 바랍니다. 남은 기간에 대한 차액만 결제되며 즉시 적용됩니다."),
+          "refund");
+      },
       fn: "requestRefund",
+      arg: () => (quoted == null ? {} : { expectAmount: quoted }),
       /* 언제까지 볼 수 있는지를 결과에 같이 적는다. 금액만 알려 주면 오늘
          남은 열람을 쓸 수 있는지 없는지를 눌러 봐야 안다.
          endsAt 은 미리보기가 밀리초, 서버가 ISO 문자열로 준다 — 문자열을
-         숫자와 그냥 비교하면 늘 거짓이 되어 항상 '지금 종료' 로 적힌다. */
+         숫자와 그냥 비교하면 늘 거짓이 되어 항상 '지금 종료' 로 적힌다.
+         금액 이름도 둘이 다르다(서버 amount · 미리보기 refunded). */
       done: d => {
-        if (!(d && d.refunded > 0)) return T("환불 신청이 접수되었습니다.");
+        const got = d && (Number.isFinite(d.amount) ? d.amount : d.refunded);
+        if (!(got > 0)) return T("환불 신청이 접수되었습니다.");
         const endMs = typeof d.endsAt === "number" ? d.endsAt : Date.parse(d.endsAt);
         return (Number.isFinite(endMs) && endMs > Date.now()
           ? T("환불 신청이 접수되었습니다. {a}이 환불되며, 오늘 자정까지 이용하실 수 있습니다.")
           : T("환불 신청이 접수되었습니다. {a}이 환불되며, 이용은 지금 종료됩니다."))
-          .replace("{a}", won(d.refunded, en));
+          .replace("{a}", won(got, en));
       },
       survey: "환불 신청",
     })));

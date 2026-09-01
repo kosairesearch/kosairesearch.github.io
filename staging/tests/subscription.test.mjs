@@ -321,6 +321,13 @@ await openSubs();
 await click("환불 신청");
 ok("환불도 묻는다", !!dlg());
 ok("환불 사유를 묻는다", dlg().textContent.includes("실수로 결제했습니다"));
+/* 누르기 전에 얼마인지 보여 줘야 한다. 여태 "이용하신 일수를 차감해
+   산정됩니다" 만 적고 금액은 누른 뒤에야 알려 줬다 — 그 사이에 리포트를 한 건
+   열면 확인할 때와 다른 금액이 나갔다. */
+ok("확인 창에 환불 금액이 나온다", /9,900원이 환불됩니다/.test(dlg().textContent),
+   dlg().textContent.slice(0, 160));
+ok("확인 창에 언제 끝나는지도 나온다", /즉시 종료됩니다/.test(dlg().textContent));
+ok("플랜 변경이 더 싸다는 것도 알려 준다", /플랜 변경/.test(dlg().textContent));
 await dlgClick("확인");
 /* 가입 당일·미열람이라 청약철회 전액이고, 오늘 값을 안 받았으니 지금 끝난다.
    금액과 '언제까지'를 한 문장에 같이 말해야 한다 — 금액만 알려 주면 오늘
@@ -328,6 +335,49 @@ await dlgClick("확인");
 ok("환불 금액을 알려 준다", /9,900원/.test(msg()), msg());
 ok("언제 끝나는지도 알려 준다", /지금 종료/.test(msg()), msg());
 ok("환불하면 화면이 '환불 완료'", txt().includes("환불 완료"), txt().slice(0, 200));
+
+/* ── 보여준 금액과 다르면 실행하지 않는다 ──────────────────────
+   확인 창을 띄운 뒤 리포트를 한 건 열면 오늘이 이용일로 잡혀 금액이 달라진다.
+   그대로 진행하면 사용자는 본 적 없는 금액을 받는다. 새 금액을 알려 주고 다시
+   묻게 해야 한다.
+   ─────────────────────────────────────────────────────────── */
+console.log("\n── 확인한 금액으로만 환불한다 ──");
+{
+  const DAY = 86400e3;
+  localStorage.clear();
+  w.KOSDemo.subscribe("basic");
+  // 열람 이력이 있는 주기로 만든다(청약철회 전액이 아니라 일수 차감이 되게)
+  const s0 = sub();
+  s0.currentPeriodStart = Date.now() - 9 * DAY;
+  s0.currentPeriodEnd = s0.currentPeriodStart + 30 * DAY;
+  s0.readsSincePay = 3;
+  s0.periodPayments = s0.periodPayments.map(p => ({ ...p, from: s0.currentPeriodStart }));
+  localStorage.setItem("kos-demo-sub", JSON.stringify(s0));
+
+  const q = (await w.KOSDemo.call("refundPreview", {})).data;
+  ok("견적은 돈을 건드리지 않는다",
+     w.KOSDemo.payments().filter(p => p.kind === "refund").length === 0);
+  ok("견적 금액이 오늘 0건 기준", q.amount === Math.floor(9900 * (21 / 30) * 0.9),
+     String(q.amount));
+
+  // 확인 창을 본 뒤 리포트를 한 건 열었다 → 오늘이 이용일로 잡힌다
+  await w.KOSPaywall.fetchPaid("005930");
+
+  let blocked = "";
+  await w.KOSDemo.call("requestRefund", { expectAmount: q.amount })
+    .catch(e => { blocked = e.message; });
+  ok("금액이 달라지면 실행하지 않는다", /변경되었습니다/.test(blocked), blocked || "그냥 진행됨");
+  ok("돈은 나가지 않았다",
+     w.KOSDemo.payments().filter(p => p.kind === "refund").length === 0);
+  ok("구독도 그대로다", !sub().refundedAt);
+
+  // 새 금액으로 다시 확인하면 진행된다
+  const q2 = (await w.KOSDemo.call("refundPreview", {})).data;
+  ok("새 금액은 하루치만큼 적다", q2.amount < q.amount, `${q.amount} → ${q2.amount}`);
+  const r = (await w.KOSDemo.call("requestRefund", { expectAmount: q2.amount })).data;
+  ok("새 금액으로는 환불된다", r.refunded === q2.amount, String(r.refunded));
+  ok("서버와 같은 이름(amount)으로도 준다", r.amount === q2.amount);
+}
 
 console.log("\n── 환불한 날 다시 시작하기 ──");
 /* 환불하면 오늘 값을 받은 경우 자정까지 살아 있다. 그걸 '이용 중' 으로 보면
