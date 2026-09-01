@@ -13,7 +13,7 @@
      · 구독이 없는 사람에게 결제 화면이 그려지는가
      · 환불한 날 다시 시작하려는 사람에게도 그려지는가
      · 오늘 리포트를 봐서 자정까지 살아 있는 구독이라면
-       '이용 시작일'이 내일로 나오고 안내 문구가 붙는가
+       겹친 하루를 뒤에 붙인다고 알려 주고 다음 결제일이 밀리는가
      · 이용 중인 사람은 결제 화면 대신 '이미 이용 중' 으로 막히는가
 
    저장소의 checkout.js 를 그대로 읽는다. import 문만 대역으로 돌린다.
@@ -122,11 +122,15 @@ console.log("\n── 환불했지만 오늘 리포트를 봤다(자정까지 �
     refundedAt: Date.now() - 1000, readsSincePay: 3,
   }));
   ok("결제 화면이 그려진다", /결제하고 시작하기/.test(txt()), txt().slice(0, 60));
-  const d = new Date(end);
-  const day = `${d.getFullYear()}년 ${d.getMonth() + 1}월 ${d.getDate()}일`;
-  ok("이용 시작일이 이전 구독이 끝난 뒤로 나온다", txt().includes("이용 시작일" + day), txt());
-  ok("나중에 시작한다고 미리 알려 준다", /오늘 끝나므로/.test(txt()), txt());
-  ok("첫 결제일은 오늘이라고 그대로 말한다", /첫 결제일오늘/.test(txt()), txt());
+  ok("이용 시작일은 오늘", /이용 시작일오늘/.test(txt()), txt());
+  ok("첫 결제일도 오늘", /첫 결제일오늘/.test(txt()), txt());
+  ok("겹치는 하루를 뒤에 붙인다고 미리 알려 준다",
+     /이용 기간 끝에 더해 드립니다/.test(txt()), txt());
+  /* 다음 결제일이 '오늘부터 한 달' 이 아니라 '자정부터 한 달' 이어야 한다.
+     이걸 안 보면 안내 문구만 붙고 날짜는 안 밀리는 판을 못 잡는다. */
+  const nx = new Date(end); nx.setMonth(nx.getMonth() + 1);
+  const day = `${nx.getFullYear()}년 ${nx.getMonth() + 1}월 ${nx.getDate()}일`;
+  ok("다음 결제일이 그만큼 뒤로 밀린다", txt().includes("다음 결제일" + day), txt());
 }
 
 console.log("\n── 그냥 이용 중인 사람 ──");

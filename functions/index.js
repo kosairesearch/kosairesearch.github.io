@@ -2523,29 +2523,38 @@ if (PAYMENTS_LIVE) exports.confirmBilling = onCall(
     const issued = await toss("/billing/authorizations/issue", { authKey, customerKey });
     const now = new Date();
 
-    /* 새 구독은 이전 구독이 끝나는 시점부터 시작한다. 결제는 지금 받는다.
+    /* 이용은 지금부터. 이전 구독과 겹치는 하루는 기간 끝에 붙여 돌려준다.
 
        환불한 날 다시 시작하는 사람이 여기로 온다. 오늘 리포트를 봤다면 오늘
        요금은 이미 환불에서 차감했고, 그 구독은 오늘 자정까지 살아 있다.
-       그런데 새 구독까지 오늘부터 시작하면 같은 하루를 두 번 받는 셈이고,
-       하루 한도도 두 번 나간다 — 요금제에 적어 둔 '하루 15건' 이 깨진다.
+       거기에 새 구독까지 오늘부터 시작하니 같은 하루를 두 번 내는 셈이다.
 
-         오늘 5건 보고 환불 → 재결제
-           오늘    이전 구독이 커버한다. 남은 10건 그대로.
-           내일    새 구독 시작. 하루 15건씩 한 달.
+       그 하루를 앞에서 빼지 않고 뒤에 붙인다.
 
-         오늘 15건 다 보고 환불 → 재결제
-           오늘    이미 다 썼으므로 0건. 두 번 내지 않았으니 잃은 것도 없다.
-           내일    새 구독 시작.
+         start  지금
+         end    addMonth(이전 구독이 끝나는 시점)   ← 겹친 만큼 뒤로 밀린다
+
+         BASIC 2건 보고 환불 → PRO 재결제
+           오늘    PRO 한도로 13건 더. 오늘 총 15건 — 한도 그대로.
+           기간    오늘부터 다음 달 그날 + 하루
+
+         PRO 15건 다 보고 환불 → PRO 재결제
+           오늘    이미 다 썼으므로 0건.
+           기간    31일. 오늘 하루를 못 쓴 만큼 뒤에서 하루를 더 받는다.
+                   실제로 쓸 수 있는 날 수는 30일로 같다.
+
+       앞에서 빼는 방식(새 구독을 내일부터 시작)도 계산은 맞지만, 구독 문서가
+       '오늘까지는 옛 플랜, 내일부터 새 플랜' 두 겹을 들고 있어야 한다. 한도를
+       판정하는 자리가 세 곳(서버·미리보기·화면)이라 한 곳만 놓쳐도 화면 숫자와
+       실제로 열리는 개수가 어긋난다 — 실제로 그렇게 어긋난 적이 있다.
+       뒤에 붙이면 판정할 것이 하나도 늘지 않는다.
 
        이전 구독이 이미 끝났으면(오늘 한 건도 안 봐서 환불과 동시에 닫힌
-       경우, 또는 처음 가입) 지금부터 시작한다 — max 가 그 두 갈래를 한 줄로
-       처리한다. 겹치지도 비지도 않는다.
-
-       ⚠️ 결제 화면이 이 날짜를 미리 말해 줘야 한다. 오늘 한도를 다 쓴 사람이
-          아무 말 없이 결제하면 '돈 내고 0건' 으로 읽힌다. */
+       경우, 또는 처음 가입) 겹치는 하루가 없으므로 그냥 한 달이다 — max 가
+       그 두 갈래를 한 줄로 처리한다. */
     const prevEnd = cur && cur.currentPeriodEnd ? cur.currentPeriodEnd.toMillis() : 0;
-    const start = new Date(Math.max(now.getTime(), prevEnd));
+    const start = now;
+    const end = addMonth(new Date(Math.max(now.getTime(), prevEnd)));
     const sub = {
       billingKey: issued.billingKey, customerKey, plan,
       card: { company: (issued.card && issued.card.issuerCode) || "", number: (issued.card && issued.card.number) || "" },
@@ -2556,7 +2565,7 @@ if (PAYMENTS_LIVE) exports.confirmBilling = onCall(
       ...sub,
       status: "active",
       currentPeriodStart: admin.firestore.Timestamp.fromDate(start),
-      currentPeriodEnd: admin.firestore.Timestamp.fromDate(addMonth(start)),
+      currentPeriodEnd: admin.firestore.Timestamp.fromDate(end),
       cancelAtPeriodEnd: false,
       pendingPlan: null,
       /* 환불하고 다시 시작한 경우엔 시작일도 새로 본다. 지난 구독은 돈까지

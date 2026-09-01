@@ -125,6 +125,8 @@ if (window.KOSi18n) window.KOSi18n.register({
   "환불을 신청하시겠습니까?": "Request a refund?",
   "환불 금액은 이용하신 일수를 차감해 산정됩니다. 오늘 리포트를 보셨다면 오늘까지 이용하실 수 있고, 오늘 한 건도 보지 않으셨다면 오늘은 차감하지 않고 이용이 바로 종료됩니다.":
     "The refund deducts the days you used. If you opened a report today, you keep access until midnight; if you opened none today, today is not charged and your access ends right away.",
+  "플랜만 바꾸고 싶으시다면 환불하지 마시고 위의 ‘플랜 변경’을 이용해 주세요. 남은 기간의 차액만 결제되고 바로 적용됩니다.":
+    "If you only want to switch plans, use “Change plan” above instead of a refund — you are charged only the difference for the remaining period, and it applies immediately.",
   "PRO로 업그레이드하시겠습니까?": "Upgrade to PRO?",
   "즉시 PRO가 적용됩니다. 남은 기간에 해당하는 BASIC 금액을 차감한 차액 {a}이 등록하신 카드로 지금 결제되며, 결제일은 그대로 유지됩니다.":
     "PRO applies immediately. The unused part of BASIC is credited and the difference, {a}, is charged to your card now; your billing date stays the same.",
@@ -158,8 +160,6 @@ if (window.KOSi18n) window.KOSi18n.register({
     "The card on file was declined. Register a card again to restore access.",
   "해지하시면 이미 결제하신 이용 기간이 끝날 때까지는 그대로 이용하실 수 있습니다.":
     "If you cancel, you keep access until the period you have paid for ends.",
-  "새 구독은 {d}부터 시작됩니다. 오늘은 이전 구독의 남은 열람을 그대로 사용하실 수 있습니다.":
-    "The new subscription starts on {d}. For the rest of today you keep the remaining views from your previous subscription.",
   "미리보기입니다. 실제로 돈이 오가지 않습니다.": "Preview only — no real payment is made.",
 });
 
@@ -436,7 +436,9 @@ function ask(title, body, why) {
   card.setAttribute("role", "dialog");
   card.setAttribute("aria-modal", "true");
   card.appendChild(el("p", "ks-dlg-t", title));
-  card.appendChild(el("p", "ks-dlg-b", body));
+  /* 본문이 여러 문단일 수 있다. 빈 줄로 끊어 문단마다 <p> 를 만든다 —
+     줄바꿈 문자를 그대로 넣으면 HTML 이 공백 하나로 뭉개 한 덩어리가 된다. */
+  String(body).split("\n\n").forEach(p => card.appendChild(el("p", "ks-dlg-b", p)));
 
   let boxes = [], detail = null;
   if (why) {
@@ -695,17 +697,6 @@ function paneSubscription() {
 
     if (sub.startedAt) kv(dl, "구독 시작일", fmtDay(sub.startedAt, en));
 
-    /* 시작이 아직 안 온 구독이 있다. 환불한 날 다시 결제하면 이전 구독이
-       자정까지 살아 있으므로 새 구독은 내일부터다 — 그 사이에 이 화면을 열면
-       '오늘 남은 열람' 이 이전 구독의 숫자라, 말해 주지 않으면 왜 15개가
-       아닌지 알 수가 없다. */
-    const startMs = sub.currentPeriodStart
-      ? (typeof sub.currentPeriodStart.toMillis === "function" ? sub.currentPeriodStart.toMillis()
-         : typeof sub.currentPeriodStart === "number" ? sub.currentPeriodStart
-         : Date.parse(sub.currentPeriodStart))
-      : 0;
-    const notYet = Number.isFinite(startMs) && startMs > Date.now() + 60000;
-
     const card = sub.card;
     if ((active || due) && !refunded) kv(dl, "결제 수단", card && (card.company || card.number)
       ? ((card.company || T("등록하신 카드")) + " " + (card.number || "")).trim()
@@ -830,8 +821,12 @@ function paneSubscription() {
     }
 
     btns.appendChild(button("환불 신청", "danger", b => act(b, {
+      /* 플랜을 바꾸려고 환불을 누르는 사람이 있다. 환불했다 다시 사면 한 달치를
+         새로 내지만, 플랜 변경은 남은 기간의 차액만 받고 바로 적용된다. 누르기
+         전에 말해 주지 않으면 훨씬 비싼 길로 돌아가게 된다. */
       confirm: () => ask(T("환불을 신청하시겠습니까?"),
-        T("환불 금액은 이용하신 일수를 차감해 산정됩니다. 오늘 리포트를 보셨다면 오늘까지 이용하실 수 있고, 오늘 한 건도 보지 않으셨다면 오늘은 차감하지 않고 이용이 바로 종료됩니다."),
+        T("환불 금액은 이용하신 일수를 차감해 산정됩니다. 오늘 리포트를 보셨다면 오늘까지 이용하실 수 있고, 오늘 한 건도 보지 않으셨다면 오늘은 차감하지 않고 이용이 바로 종료됩니다.")
+        + "\n\n" + T("플랜만 바꾸고 싶으시다면 환불하지 마시고 위의 ‘플랜 변경’을 이용해 주세요. 남은 기간의 차액만 결제되고 바로 적용됩니다."),
         "refund"),
       fn: "requestRefund",
       /* 언제까지 볼 수 있는지를 결과에 같이 적는다. 금액만 알려 주면 오늘
@@ -850,9 +845,6 @@ function paneSubscription() {
     })));
 
     body.appendChild(btns);
-    if (notYet) body.appendChild(el("p", "ks-note",
-      T("새 구독은 {d}부터 시작됩니다. 오늘은 이전 구독의 남은 열람을 그대로 사용하실 수 있습니다.")
-        .replace("{d}", fmtDay(startMs, en))));
     body.appendChild(el("p", "ks-note",
       T("해지하시면 이미 결제하신 이용 기간이 끝날 때까지는 그대로 이용하실 수 있습니다.")));
     const hist = histSection(payments); if (hist) body.appendChild(hist);

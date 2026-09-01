@@ -352,19 +352,19 @@ console.log("\n── 환불한 날 다시 시작하기 ──");
   ok("다시 결제한 구독은 해지가 된다", blocked === false);
   await w.KOSDemo.call("resumeSubscription", {});
 
-  /* 새 구독은 이전 구독이 끝나는 시점부터 시작한다. 결제는 오늘 받는다.
+  /* 새 구독은 오늘부터 시작한다. 겹치는 하루는 기간 끝에 붙여 돌려준다.
 
      오늘 리포트를 봤으면 오늘 요금은 이미 환불에서 차감했고 그 구독이 자정까지
-     살아 있다. 새 구독까지 오늘부터 시작하면 같은 하루를 두 번 받고 하루 한도도
-     두 번 나간다 — 요금제에 적어 둔 '하루 N건' 이 깨진다.
+     살아 있다. 거기에 새 구독까지 오늘부터 시작하니 같은 하루를 두 번 내는
+     셈인데, 그 하루를 앞에서 빼지 않고 뒤에 붙인다.
 
-     그래서 오늘 남은 열람은 '리셋' 도 아니고 '0' 도 아니다. 이전 구독이 남긴
-     그대로다. 2건 봤으면 3건 남는다. */
-  ok("오늘 남은 열람은 이전 구독이 남긴 그대로", left() === "3", "남은=" + left());
-  ok("새 구독은 내일부터",
-     sub().currentPeriodStart > Date.now() + 60000,
+     하루 한도는 날짜에 붙으므로 오늘 남은 열람은 '리셋' 이 아니다. 같은 플랜을
+     다시 샀으면 2건 봤으니 3건이 남는다 — 재결제로 하루 한도를 늘릴 수 없다. */
+  ok("오늘 남은 열람은 리셋되지 않는다", left() === "3", "남은=" + left());
+  ok("새 구독은 오늘부터",
+     sub().currentPeriodStart <= Date.now() + 60000,
      new Date(sub().currentPeriodStart).toISOString());
-  ok("다음 결제일도 그만큼 밀린다",
+  ok("겹친 하루만큼 기간 끝이 뒤로 밀린다",
      sub().currentPeriodEnd > Date.now() + 30 * 86400e3,
      new Date(sub().currentPeriodEnd).toISOString());
 
@@ -381,16 +381,17 @@ console.log("\n── 환불한 날 다시 시작하기 ──");
   await settle();
   ok("재결제 뒤에도 오늘 총 열람은 BASIC 한도 5건", 2 + more === 5, `2 + ${more}`);
 
-  /* 한도를 다 쓰고 환불한 뒤 같은 플랜으로 다시 결제하는 경우. 오늘은 0건이지만
-     같은 하루를 두 번 내지 않았으므로 잃은 것도 없다 — 내일부터 새 한 달이다. */
+  /* 한도를 다 쓰고 환불한 뒤 같은 플랜으로 다시 결제하는 경우. 오늘은 0건이다.
+     대신 기간이 하루 길어져, 실제로 쓸 수 있는 날 수는 여느 한 달과 같다.
+     '한 달치를 내고 아무것도 못 받는' 것이 아니라는 것을 여기서 못 박는다. */
   await w.KOSDemo.call("requestRefund", {});
+  const endBefore = sub().currentPeriodEnd;
   w.KOSDemo.subscribe("basic");
   await openSubs();
   ok("한도를 다 쓴 날 같은 플랜으로 재결제하면 오늘은 0건", left() === "0", "남은=" + left());
-  ok("대신 새 구독은 내일부터 시작한다",
-     sub().currentPeriodStart > Date.now() + 60000,
-     new Date(sub().currentPeriodStart).toISOString());
-  ok("화면이 언제부터인지 말해 준다", txt().includes("부터 시작됩니다"), txt().slice(0, 300));
+  ok("대신 못 쓴 오늘만큼 기간이 길어진다",
+     sub().currentPeriodEnd > endBefore + 29 * 86400e3,
+     `${new Date(endBefore).toISOString()} → ${new Date(sub().currentPeriodEnd).toISOString()}`);
 
   /* 더 큰 플랜으로 올려 재결제하면 오늘 한도도 그 플랜 것이 된다.
      BASIC 5건을 다 쓰고 PRO 로 가면 오늘 10건이 더 열린다 — 이건 구멍이
@@ -407,9 +408,10 @@ console.log("\n── 환불한 날 다시 시작하기 ──");
   ok("오늘 총 열람은 PRO 한도 15건을 넘지 않는다", 5 + extra === 15, `5 + ${extra}`);
 
   /* 오늘 한 건도 안 보고 환불하면 이전 구독은 그 자리에서 끝난다.
-     그때는 새 구독이 지금부터 시작해야 한다 — 비는 날이 생기면 안 된다. */
+     겹치는 하루가 없으므로 기간도 늘어나지 않는다 — 그냥 한 달이다. */
   localStorage.clear();
   w.KOSDemo.subscribe("basic");
+  const plainEnd = sub().currentPeriodEnd;         // 겹침 없는 보통 한 달
   await w.KOSDemo.call("requestRefund", {});      // 오늘 0건 → 즉시 종료
   w.KOSDemo.subscribe("basic");
   await openSubs();
@@ -417,7 +419,41 @@ console.log("\n── 환불한 날 다시 시작하기 ──");
      sub().currentPeriodStart <= Date.now() + 60000,
      new Date(sub().currentPeriodStart).toISOString());
   ok("그 경우 오늘 한도는 온전히 5건", left() === "5", "남은=" + left());
+  ok("겹치는 하루가 없으니 기간도 안 늘어난다",
+     Math.abs(sub().currentPeriodEnd - plainEnd) < 60000,
+     `${new Date(plainEnd).toISOString()} → ${new Date(sub().currentPeriodEnd).toISOString()}`);
+}
 
+/* ── 환불하지 말고 그냥 플랜을 올리는 길 ────────────────────────
+   플랜만 바꾸려는 사람이 환불부터 누르면 한 달치를 새로 낸다. 업그레이드는
+   남은 기간의 차액만 받고 바로 적용된다 — 어느 쪽이 나은지 숫자로 못 박는다.
+   ─────────────────────────────────────────────────────────── */
+console.log("\n── 환불 없이 업그레이드 ──");
+{
+  localStorage.clear();
+  w.KOSDemo.subscribe("basic");
+  await w.KOSPaywall.fetchPaid("a1");
+  await w.KOSPaywall.fetchPaid("a2");
+  await openSubs();
+  ok("BASIC 2건 열람 — 오늘 남은 3건", left() === "3", "남은=" + left());
+
+  const endBefore = sub().currentPeriodEnd;
+  const r = await w.KOSDemo.call("changePlan", { plan: "pro" });
+  await openSubs();
+
+  ok("PRO 정가가 아니라 차액만 청구한다",
+     r.data.charged > 0 && r.data.charged < 14900, "청구=" + r.data.charged);
+  ok("업그레이드는 바로 적용된다", sub().plan === "pro");
+  ok("오늘 남은 열람이 PRO 한도로 늘어난다 (15 − 2 = 13)", left() === "13", "남은=" + left());
+  ok("이용 기간은 그대로다 — 새로 한 달을 사는 게 아니다",
+     Math.abs(sub().currentPeriodEnd - endBefore) < 60000);
+
+  let more = 0;
+  for (let i = 0; i < 20; i++) {
+    try { await w.KOSPaywall.fetchPaid("u" + i); more++; } catch (e) { break; }
+  }
+  ok("실제로 13건이 더 열린다", more === 13, "더 열림=" + more);
+  ok("오늘 총 열람은 PRO 한도 15건", 2 + more === 15, `2 + ${more}`);
 }
 
 console.log("\n── 결제 실패 ──");

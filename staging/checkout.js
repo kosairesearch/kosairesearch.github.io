@@ -40,7 +40,7 @@ const T = {
     card: "신용·체크카드", cardD: "국내에서 발급된 카드로 매달 자동 결제됩니다.",
     sumPlan: "플랜", sumCycle: "결제 주기", sumFirst: "첫 결제일", sumNext: "다음 결제일",
     sumStart: "이용 시작일",
-    startsLater: "이미 이용 중인 기간이 오늘 끝나므로, 새 구독은 {d}부터 시작됩니다. 오늘은 지금 이용 중인 구독의 남은 열람을 그대로 사용하실 수 있습니다.",
+    startsLater: "이미 이용 중인 기간이 오늘 자정까지 남아 있습니다. 새 구독은 오늘 바로 시작되며, 오늘 하루 열람 한도는 이미 열람하신 만큼 차감된 상태로 이어집니다. 겹치는 하루는 이용 기간 끝에 더해 드립니다.",
     monthly: "매월", today: "오늘", total: "결제 금액", vat: "부가가치세 포함",
     agreeAll: "아래 내용에 모두 동의합니다",
     agree1: '<a href="Terms.html" target="_blank" rel="noopener">이용약관</a>과 <a href="Privacy.html" target="_blank" rel="noopener">개인정보 처리방침</a>에 동의합니다. (필수)',
@@ -77,7 +77,7 @@ const T = {
     card: "Credit or debit card", cardD: "Billed automatically each month to the card you register.",
     sumPlan: "Plan", sumCycle: "Billing cycle", sumFirst: "First charge", sumNext: "Next charge",
     sumStart: "Access starts",
-    startsLater: "Your current period ends today, so the new subscription starts on {d}. For the rest of today you keep the remaining views on your current subscription.",
+    startsLater: "Your current period runs until midnight today. The new subscription starts right away, and today's view limit continues from what you have already used. The overlapping day is added to the end of your billing period.",
     monthly: "Monthly", today: "Today", total: "Amount due", vat: "VAT included",
     agreeAll: "I agree to everything below",
     agree1: 'I agree to the <a href="Terms.html" target="_blank" rel="noopener">Terms of Service</a> and <a href="Privacy.html" target="_blank" rel="noopener">Privacy Policy</a>. (required)',
@@ -131,13 +131,13 @@ function dayText(d) {
               : `${d.getFullYear()}년 ${d.getMonth() + 1}월 ${d.getDate()}일`;
 }
 
-/* 이용이 실제로 시작되는 시각. 새 구독은 이전 구독이 끝나는 시점부터다
-   (서버 confirmBilling 과 같은 식).
+/* 다음 결제일을 세는 기준점. 이용은 언제나 오늘부터 시작하지만, 이전 구독이
+   아직 남아 있으면 겹치는 만큼 기간 끝을 뒤로 민다(서버 confirmBilling 과 같다).
 
-   환불한 날 다시 시작하는 사람이 여기로 온다. 오늘 리포트를 봤다면 그 구독이
-   오늘 자정까지 살아 있으므로, 새 구독은 내일부터다. 그 사실을 결제 전에
-   말해 주지 않으면 오늘 한도를 다 쓴 사람은 '돈 내고 0건' 을 겪는다. */
-function startsAt(sub) {
+   환불한 날 다시 시작하는 사람이 여기로 온다. 오늘 리포트를 봤다면 그 구독은
+   오늘 자정까지 살아 있고, 그 하루 요금은 이미 환불에서 차감됐다. 새 구독까지
+   오늘부터 세면 같은 하루를 두 번 내는 셈이라, 그 하루를 뒤에 붙여 돌려준다. */
+function renewBase(sub) {
   const end = sub && sub.currentPeriodEnd;
   const ms = end && typeof end.toMillis === "function" ? end.toMillis()
            : typeof end === "number" ? end : Date.parse(end);
@@ -146,9 +146,10 @@ function startsAt(sub) {
 
 function form(plan, sub) {
   const k = t();
-  const from = startsAt(sub);
-  const later = from.getTime() > Date.now() + 60000;   // 오늘이 아니라 나중에 시작
-  const nx = nextMonth(from);
+  const base = renewBase(sub);
+  // 이전 구독이 아직 남아 있다 — 기간이 그만큼 늘어난다는 것을 미리 말한다.
+  const later = base.getTime() > Date.now() + 60000;
+  const nx = nextMonth(base);
   return `
   <div class="co">
     <section class="co-card glass">
@@ -171,7 +172,7 @@ function form(plan, sub) {
 
       <button type="button" class="btn btn-primary co-btn" id="payBtn">${esc(k.pay)}</button>
       <p class="co-msg" id="coMsg"></p>
-      ${later ? `<p class="co-note">${esc(k.startsLater.replace("{d}", dayText(from)))}</p>` : ""}
+      ${later ? `<p class="co-note">${esc(k.startsLater)}</p>` : ""}
       <p class="co-fine">${k.fine}</p>
     </section>
 
@@ -183,7 +184,7 @@ function form(plan, sub) {
         <li><span>${esc(k.sumPlan)}</span><b>${esc(plan.name)}</b></li>
         <li><span>${esc(k.sumCycle)}</span><b>${esc(k.monthly)}</b></li>
         <li><span>${esc(k.sumFirst)}</span><b>${esc(k.today)}</b></li>
-        <li><span>${esc(k.sumStart)}</span><b>${esc(later ? dayText(from) : k.today)}</b></li>
+        <li><span>${esc(k.sumStart)}</span><b>${esc(k.today)}</b></li>
         <li><span>${esc(k.sumNext)}</span><b>${esc(dayText(nx))}</b></li>
       </ul>
       <div class="total"><span class="k">${esc(k.total)}</span><span class="v">${esc(won(plan.price, EN()))}</span></div>

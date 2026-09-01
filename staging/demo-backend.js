@@ -131,21 +131,22 @@ function subscribe(planId) {
   const p = PLANS[planId];
   if (!p) throw new Error("plan");
   const now = Date.now();
-  /* 새 구독은 이전 구독이 끝나는 시점부터 시작한다(서버 confirmBilling 과 같다).
-     결제는 지금 받는다.
+  /* 이용은 지금부터. 이전 구독과 겹치는 하루는 기간 끝에 붙인다
+     (서버 confirmBilling 과 같다 — 그쪽 주석에 이유를 적어 두었다).
 
      환불한 날 다시 시작하는 사람이 여기로 온다. 오늘 리포트를 봤다면 오늘
-     요금은 이미 환불에서 차감했고 그 구독은 자정까지 살아 있다. 새 구독까지
-     오늘부터 시작하면 같은 하루를 두 번 받고 하루 한도도 두 번 나간다 —
-     요금제에 적어 둔 '하루 15건' 이 깨진다.
+     요금은 이미 환불에서 차감했고 그 구독은 자정까지 살아 있다. 거기에 새
+     구독까지 오늘부터 시작하니 같은 하루를 두 번 내는 셈인데, 그 하루를
+     앞에서 빼지 않고 뒤에 붙여 돌려준다.
 
      이전 구독이 이미 끝났으면(오늘 한 건도 안 봐서 환불과 동시에 닫힌 경우,
-     또는 처음 가입) 지금부터다. max 가 두 갈래를 한 줄로 처리한다. */
+     또는 처음 가입) 겹치는 하루가 없으므로 그냥 한 달이다. */
   const prev = read(SUB_KEY, null);
-  const start = Math.max(now, (prev && prev.currentPeriodEnd) || 0);
+  const start = now;
+  const end = addMonth(Math.max(now, (prev && prev.currentPeriodEnd) || 0));
   write(SUB_KEY, {
     status: "active", plan: p.id,
-    currentPeriodStart: start, currentPeriodEnd: addMonth(start),
+    currentPeriodStart: start, currentPeriodEnd: end,
     cancelAtPeriodEnd: false, pendingPlan: null,
     // 실제 서버는 카드사 이름을 모르면 비워 둔다(토스가 코드로만 준다).
     card: { company: "", issuerCode: "61", number: "0000-00**-****-0000" },
