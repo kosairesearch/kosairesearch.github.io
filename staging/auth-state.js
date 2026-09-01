@@ -19,16 +19,16 @@ if(window.KOSi18n) window.KOSi18n.register({
   "로그인":"Sign in", "로그아웃":"Sign out", "회원 탈퇴":"Delete account", "구독 관리":"Subscription",
   "회원 탈퇴가 완료되었습니다. 그동안 이용해 주셔서 감사합니다.":
     "Your account has been deleted. Thank you for using KOSAI.",
-  "보안을 위해 다시 로그인한 뒤 탈퇴를 진행해 주세요.":
+  "보안을 위해 다시 로그인하신 뒤 탈퇴를 진행하여 주시기 바랍니다.":
     "For security, please sign in again and then delete your account.",
-  "탈퇴 처리 중 오류가 발생했습니다. 잠시 후 다시 시도해 주세요.":
+  "탈퇴 처리 중 오류가 발생했습니다. 잠시 후 다시 시도하여 주시기 바랍니다.":
     "Something went wrong while deleting your account. Please try again later.",
   "정말 탈퇴하시겠어요?":"Delete your account?",
   "이용 중인 구독이 있습니다":"You have an active subscription",
-  "탈퇴하시면 구독이 즉시 해지되고, 환불 기준에 따라 산정된 금액이 자동으로 환불됩니다. 오늘 리포트를 열람하셨다면 오늘은 이용일로 차감되며, 계정이 삭제되므로 오늘 남은 열람은 사용하실 수 없습니다. 금액을 먼저 확인하시거나 오늘 남은 열람을 쓰신 뒤 나가시려면 구독 관리에서 환불을 신청해 주세요.":
+  "탈퇴하시면 구독이 즉시 해지되고, 환불 기준에 따라 산정된 금액이 자동으로 환불됩니다. 오늘 리포트를 열람하셨다면 오늘은 이용일로 차감되며, 계정이 삭제되므로 오늘 남은 열람은 사용하실 수 없습니다. 금액을 먼저 확인하시거나 오늘 남은 열람을 사용하신 뒤 나가시려면 구독 관리에서 환불을 신청하여 주시기 바랍니다.":
     "Deleting your account cancels the subscription right away and refunds the amount due under our refund terms. If you opened a report today, today counts as a used day, and because the account is deleted you cannot use the rest of today's limit. To see the amount first, or to use the rest of today before leaving, request the refund under Subscription instead.",
   "구독 관리로 이동":"Go to subscription",
-  "환불 처리에 실패해 탈퇴를 진행하지 않았습니다. 구독 관리에서 환불을 먼저 신청해 주세요.":
+  "환불을 처리하지 못하여 탈퇴를 진행하지 않았습니다. 구독 관리에서 환불을 먼저 신청하여 주시기 바랍니다.":
     "We could not process the refund, so your account was not deleted. Please request the refund on the subscription page first.",
   "계정과 저장된 관심종목이 영구 삭제되며, 되돌릴 수 없습니다.":
     "Your account and saved watchlist will be permanently deleted. This cannot be undone.",
@@ -42,7 +42,7 @@ if(window.KOSi18n) window.KOSi18n.register({
   "자세한 의견 (선택)":"Tell us more (optional)",
   "위 내용을 이해했으며 되돌릴 수 없음에 동의합니다":
     "I understand this is permanent and cannot be undone",
-  "확인을 위해 '탈퇴' 를 입력하세요":"Type ‘탈퇴’ to confirm",
+  "확인을 위해 '탈퇴' 를 입력하여 주십시오":"Type ‘탈퇴’ to confirm",
   "탈퇴하기":"Delete account", "취소":"Cancel",
   "회원 탈퇴가 완료되었습니다":"Your account has been deleted",
   "그동안 이용해 주셔서 감사합니다.":"Thank you for using KOSAI.",
@@ -97,7 +97,7 @@ async function openWithdrawModal(){
       <p class="wd-warn">${T("계정과 저장된 관심종목이 영구 삭제되며, 되돌릴 수 없습니다.")}</p>
       ${sub ? `<div class="wd-sub">
         <b>${T("이용 중인 구독이 있습니다")}</b>
-        <p>${T("탈퇴하시면 구독이 즉시 해지되고, 환불 기준에 따라 산정된 금액이 자동으로 환불됩니다. 오늘 리포트를 열람하셨다면 오늘은 이용일로 차감되며, 계정이 삭제되므로 오늘 남은 열람은 사용하실 수 없습니다. 금액을 먼저 확인하시거나 오늘 남은 열람을 쓰신 뒤 나가시려면 구독 관리에서 환불을 신청해 주세요.")}</p>
+        <p>${T("탈퇴하시면 구독이 즉시 해지되고, 환불 기준에 따라 산정된 금액이 자동으로 환불됩니다. 오늘 리포트를 열람하셨다면 오늘은 이용일로 차감되며, 계정이 삭제되므로 오늘 남은 열람은 사용하실 수 없습니다. 금액을 먼저 확인하시거나 오늘 남은 열람을 사용하신 뒤 나가시려면 구독 관리에서 환불을 신청하여 주시기 바랍니다.")}</p>
         <button type="button" class="wd-tosubs">${T("구독 관리로 이동")}</button>
       </div>` : ""}
       <div class="wd-q">${T("떠나시는 이유를 알려주시면 개선에 반영하겠습니다 (복수 선택 가능)")}</div>
@@ -179,13 +179,13 @@ async function finishWithdraw(user, email, reason, detail, ov, hadSub){
     ov.onclick = e => { if(e.target === ov) home(); };
   }catch(e){
     if(e && e.code === "auth/requires-recent-login"){
-      alert(T("보안을 위해 다시 로그인한 뒤 탈퇴를 진행해 주세요."));
+      alert(T("보안을 위해 다시 로그인하신 뒤 탈퇴를 진행하여 주시기 바랍니다."));
       try{ await signOut(auth); }catch(_){}
       location.href = "Login.html?next=" + encodeURIComponent(here());
     }else{
       // 서버가 이유를 준 경우(예: 환불 실패로 탈퇴 중단) 그대로 보여 준다.
       const msg = (e && e.message && /환불|refund/i.test(e.message))
-        ? e.message : T("탈퇴 처리 중 오류가 발생했습니다. 잠시 후 다시 시도해 주세요.");
+        ? e.message : T("탈퇴 처리 중 오류가 발생했습니다. 잠시 후 다시 시도하여 주시기 바랍니다.");
       alert(msg);
       ov.remove();
     }

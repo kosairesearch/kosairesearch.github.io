@@ -552,15 +552,15 @@ document.addEventListener('click', function (e) {
         <div class="rating" id="rating">
           <div class="rate" data-v="1" role="button" tabindex="0">
             <span class="emo"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="9"/><path d="M8.5 15.5s1.3-1.5 3.5-1.5 3.5 1.5 3.5 1.5" stroke-linecap="round"/><path d="M9 9.5h.01M15 9.5h.01" stroke-linecap="round"/></svg></span>
-            <span class="lab">아쉬워요</span>
+            <span class="lab">아쉬움</span>
           </div>
           <div class="rate" data-v="2" role="button" tabindex="0">
             <span class="emo"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="9"/><path d="M8.5 14.5h7" stroke-linecap="round"/><path d="M9 9.5h.01M15 9.5h.01" stroke-linecap="round"/></svg></span>
-            <span class="lab">보통이에요</span>
+            <span class="lab">보통</span>
           </div>
           <div class="rate" data-v="3" role="button" tabindex="0">
             <span class="emo"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="9"/><path d="M8.5 14s1.3 1.8 3.5 1.8 3.5-1.8 3.5-1.8" stroke-linecap="round"/><path d="M9 9.5h.01M15 9.5h.01" stroke-linecap="round"/></svg></span>
-            <span class="lab">만족해요</span>
+            <span class="lab">만족</span>
           </div>
         </div>
       </div>
@@ -588,7 +588,7 @@ document.addEventListener('click', function (e) {
       <input type="text" id="hp" name="hp" tabindex="-1" autocomplete="off" aria-hidden="true" style="position:absolute;left:-9999px;width:1px;height:1px;opacity:0">
       <div class="submit-row">
         <button type="submit" class="btn btn-primary" id="submitBtn" disabled>피드백 보내기</button>
-        <p class="form-note">만족도를 선택하시면 전송할 수 있어요. 익명으로 보내셔도 괜찮습니다.</p>
+        <p class="form-note">만족도를 선택하시면 전송하실 수 있습니다. 익명으로 보내셔도 괜찮습니다.</p>
       </div>
     </form>
 
@@ -652,7 +652,7 @@ document.getElementById('form').addEventListener('submit',async e=>{
   else if(mv.length<5){ fldErr(msg,_t('내용을 조금 더 자세히 입력해 주세요.')); bad=bad||msg; }
   else fldClear(msg);
   const ev=email.value.trim();
-  if(ev && !/^[^@\s]+@[^@\s]+\.[^@\s]+$/.test(ev)){ fldErr(email,_t('올바른 이메일 형식이 아니에요.')); bad=bad||email; } else fldClear(email);
+  if(ev && !/^[^@\s]+@[^@\s]+\.[^@\s]+$/.test(ev)){ fldErr(email,_t('올바른 이메일 형식이 아닙니다.')); bad=bad||email; } else fldClear(email);
   if(bad){ bad.focus(); return; }
   submitBtn.disabled=true;
   const rateLab=((rating.querySelector('.on .lab')||{}).textContent||'').trim();
@@ -666,7 +666,7 @@ document.getElementById('form').addEventListener('submit',async e=>{
     window.scrollTo({top:0,behavior:'smooth'});
   }catch(err){
     submitBtn.disabled=false;
-    fldErr(msg,_t('전송에 실패했어요. 잠시 후 다시 시도하거나 hello@kosai.kr로 보내주세요.'));
+    fldErr(msg,_t('전송하지 못했습니다. 잠시 후 다시 시도하거나 hello@kosai.kr로 보내주세요.'));
   }
 });
 const menuBtn=document.getElementById('menuBtn'),mobileMenu=document.getElementById('mobileMenu');
@@ -685,17 +685,17 @@ if(window.KOSi18n) KOSi18n.register({
   "피드백 보내기":"Send feedback",
   "KOSAI를 쓰면서 느낀 점을 들려주세요. 좋았던 점도, 아쉬웠던 점도 모두 환영합니다.":"Tell us what you think about KOSAI. We welcome both what worked and what didn't.",
   "전반적인 만족도":"Overall satisfaction",
-  "아쉬워요":"Not great","보통이에요":"It's okay","만족해요":"I'm happy",
+  "아쉬움":"Not great","보통":"Okay","만족":"Satisfied",
   "어떤 피드백인가요?":"What kind of feedback?",
   "개선 제안":"Suggestion","버그 신고":"Bug report","칭찬·응원":"Praise & support","기타":"Other",
   "내용":"Message",
-  "내용을 입력해 주세요.":"Please enter your message.","올바른 이메일 형식이 아니에요.":"That doesn't look like a valid email.",
-  "전송에 실패했어요. 잠시 후 다시 시도하거나 hello@kosai.kr로 보내주세요.":"Couldn't send. Please try again later or email hello@kosai.kr.",
+  "내용을 입력해 주세요.":"Please enter your message.","올바른 이메일 형식이 아닙니다.":"That doesn't look like a valid email.",
+  "전송하지 못했습니다. 잠시 후 다시 시도하거나 hello@kosai.kr로 보내주세요.":"Couldn't send. Please try again later or email hello@kosai.kr.",
   "내용을 조금 더 자세히 입력해 주세요.":"Please add a bit more detail.",
   "이메일":"Email","(선택 · 답변이 필요한 경우)":"(optional · if a reply is needed)",
   "어떤 점이 좋았는지, 무엇이 불편했는지, 어떤 기능이 있으면 좋겠는지 자유롭게 적어주세요.":"Tell us what you liked, what felt awkward, or what feature you'd love to see. Anything goes.",
   "답변받으실 이메일 주소":"Email address for our reply",
-  "만족도를 선택하시면 전송할 수 있어요. 익명으로 보내셔도 괜찮습니다.":"You can submit once you pick a rating. Anonymous feedback is fine.",
+  "만족도를 선택하시면 전송하실 수 있습니다. 익명으로 보내셔도 괜찮습니다.":"You can submit once you pick a rating. Anonymous feedback is fine.",
   "소중한 피드백 감사합니다":"Thank you for your feedback",
   "보내주신 의견은 빠짐없이 읽고, 서비스를 개선하는 데 활용하겠습니다.":"We read every single message and use them to make the service better.",
   "홈으로 돌아가기":"Back to home"

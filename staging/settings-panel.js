@@ -65,8 +65,8 @@ if (window.KOSi18n) window.KOSi18n.register({
     "Get news about new reports and the service by email. Turning this off does not affect your use of the service.",
   "로그아웃": "Sign out",
   "회원 탈퇴": "Delete account",
-  "저장에 실패했어요. 잠시 후 다시 시도해 주세요.": "Could not save. Please try again in a moment.",
-  "불러오지 못했어요. 잠시 후 다시 시도해 주세요.": "Could not load. Please try again in a moment.",
+  "저장하지 못했습니다. 잠시 후 다시 시도하여 주시기 바랍니다.": "Could not save. Please try again in a moment.",
+  "불러오지 못했습니다. 잠시 후 다시 시도하여 주시기 바랍니다.": "Could not load. Please try again in a moment.",
   "계정 설정을 보려면 로그인이 필요합니다.": "Sign in to view your account settings.",
   "로그인": "Sign in",
   "닫기": "Close",
@@ -125,7 +125,7 @@ if (window.KOSi18n) window.KOSi18n.register({
   "환불을 신청하시겠습니까?": "Request a refund?",
   "환불 금액은 이용하신 일수를 차감해 산정됩니다. 오늘 리포트를 보셨다면 오늘까지 이용하실 수 있고, 오늘 한 건도 보지 않으셨다면 오늘은 차감하지 않고 이용이 바로 종료됩니다.":
     "The refund deducts the days you used. If you opened a report today, you keep access until midnight; if you opened none today, today is not charged and your access ends right away.",
-  "플랜만 바꾸고 싶으시다면 환불하지 마시고 위의 ‘플랜 변경’을 이용해 주세요. 남은 기간의 차액만 결제되고 바로 적용됩니다.":
+  "플랜 변경만 원하시는 경우에는 환불 대신 위의 ‘플랜 변경’을 이용하여 주시기 바랍니다. 남은 기간에 대한 차액만 결제되며 즉시 적용됩니다.":
     "If you only want to switch plans, use “Change plan” above instead of a refund — you are charged only the difference for the remaining period, and it applies immediately.",
   "PRO로 업그레이드하시겠습니까?": "Upgrade to PRO?",
   "즉시 PRO가 적용됩니다. 남은 기간에 해당하는 BASIC 금액을 차감한 차액 {a}이 등록하신 카드로 지금 결제되며, 결제일은 그대로 유지됩니다.":
@@ -155,11 +155,13 @@ if (window.KOSi18n) window.KOSi18n.register({
     "You are on {p} as of now. Nothing was charged.",
   "{d}부터 {p} 플랜으로 변경됩니다.": "You move to {p} on {d}.",
   "플랜 변경이 취소되었습니다.": "The scheduled change has been cancelled.",
-  "처리하지 못했어요. 잠시 후 다시 시도해 주세요.": "Could not complete. Please try again in a moment.",
+  "처리하지 못했습니다. 잠시 후 다시 시도하여 주시기 바랍니다.": "Could not complete. Please try again in a moment.",
   "등록하신 카드로 결제가 승인되지 않았습니다. 카드를 다시 등록하시면 이용이 재개됩니다.":
     "The card on file was declined. Register a card again to restore access.",
   "해지하시면 이미 결제하신 이용 기간이 끝날 때까지는 그대로 이용하실 수 있습니다.":
     "If you cancel, you keep access until the period you have paid for ends.",
+  "결제 수단이 변경되었습니다. 다음 결제일부터 새 카드로 청구됩니다.":
+    "Your payment method has been updated. The new card will be charged from your next billing date.",
   "미리보기입니다. 실제로 돈이 오가지 않습니다.": "Preview only — no real payment is made.",
 });
 
@@ -393,7 +395,7 @@ function paneNotifications(user) {
 
   getMarketing(user.uid)
     .then(on => { sw.setAttribute("aria-checked", String(!!on)); sw.disabled = false; })
-    .catch(() => say("불러오지 못했어요. 잠시 후 다시 시도해 주세요.", "err"));
+    .catch(() => say("불러오지 못했습니다. 잠시 후 다시 시도하여 주시기 바랍니다.", "err"));
 
   /* 누르는 순간 저장한다. '저장' 버튼을 따로 두면 눌렀다고 생각하고 나가는
      사람이 반드시 생긴다. 실패하면 스위치를 되돌리고 이유를 말한다. */
@@ -405,7 +407,7 @@ function paneNotifications(user) {
     try { await setMarketing(user.uid, !was); }
     catch (_) {
       sw.setAttribute("aria-checked", String(was));
-      say("저장에 실패했어요. 잠시 후 다시 시도해 주세요.", "err");
+      say("저장하지 못했습니다. 잠시 후 다시 시도하여 주시기 바랍니다.", "err");
     }
     sw.disabled = false;
   });
@@ -573,7 +575,7 @@ function paneSubscription() {
       refresh();
     } catch (e) {
       console.error("[settings] " + fn, e);
-      say(e && e.message ? e.message : T("처리하지 못했어요. 잠시 후 다시 시도해 주세요."), "err");
+      say(e && e.message ? e.message : T("처리하지 못했습니다. 잠시 후 다시 시도하여 주시기 바랍니다."), "err");
       all.forEach(b => { b.disabled = false; });
     }
   }
@@ -826,7 +828,7 @@ function paneSubscription() {
          전에 말해 주지 않으면 훨씬 비싼 길로 돌아가게 된다. */
       confirm: () => ask(T("환불을 신청하시겠습니까?"),
         T("환불 금액은 이용하신 일수를 차감해 산정됩니다. 오늘 리포트를 보셨다면 오늘까지 이용하실 수 있고, 오늘 한 건도 보지 않으셨다면 오늘은 차감하지 않고 이용이 바로 종료됩니다.")
-        + "\n\n" + T("플랜만 바꾸고 싶으시다면 환불하지 마시고 위의 ‘플랜 변경’을 이용해 주세요. 남은 기간의 차액만 결제되고 바로 적용됩니다."),
+        + "\n\n" + T("플랜 변경만 원하시는 경우에는 환불 대신 위의 ‘플랜 변경’을 이용하여 주시기 바랍니다. 남은 기간에 대한 차액만 결제되며 즉시 적용됩니다."),
         "refund"),
       fn: "requestRefund",
       /* 언제까지 볼 수 있는지를 결과에 같이 적는다. 금액만 알려 주면 오늘
@@ -858,7 +860,7 @@ function paneSubscription() {
   const pw = window.KOSPaywall;
   if (!pw) {
     body.textContent = "";
-    body.appendChild(el("p", "ks-note", T("불러오지 못했어요. 잠시 후 다시 시도해 주세요.")));
+    body.appendChild(el("p", "ks-note", T("불러오지 못했습니다. 잠시 후 다시 시도하여 주시기 바랍니다.")));
     return box;
   }
 
@@ -898,7 +900,7 @@ function paneSubscription() {
     else load(pw.state());
   }).catch(() => {
     body.textContent = "";
-    body.appendChild(el("p", "ks-note", T("불러오지 못했어요. 잠시 후 다시 시도해 주세요.")));
+    body.appendChild(el("p", "ks-note", T("불러오지 못했습니다. 잠시 후 다시 시도하여 주시기 바랍니다.")));
   });
 
   /* 칸을 옮기거나 창을 닫으면 이 자리는 사라진다. 듣던 것을 놓지 않으면

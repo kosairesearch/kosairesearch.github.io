@@ -56,8 +56,8 @@ const KOSWatch = {
   tickers(){ return Object.keys(items); },
 
   add(tk){
-    if(!user){ if(window.KOSGate) window.KOSGate.showLoginPopup("워치리스트에 추가하려면 로그인이 필요해요."); return false; }
-    if(pwOnly(user) && !user.emailVerified){ if(window.KOSGate) window.KOSGate.showLoginPopup("이메일 인증 후 워치리스트를 사용할 수 있어요."); return false; }
+    if(!user){ if(window.KOSGate) window.KOSGate.showLoginPopup("워치리스트에 추가하시려면 로그인이 필요합니다."); return false; }
+    if(pwOnly(user) && !user.emailVerified){ if(window.KOSGate) window.KOSGate.showLoginPopup("이메일 인증 후 워치리스트를 이용하실 수 있습니다."); return false; }
     var ts = Date.now();
     var cp = Object.assign({}, items); cp[tk] = ts; items = cp; fire();
     if (window.KOSA) KOSA.track("watchlist_add", { ticker: tk });

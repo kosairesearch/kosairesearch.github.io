@@ -607,7 +607,7 @@ document.getElementById('form').addEventListener('submit',async e=>{
   let bad=null;
   const ev=email.value.trim();
   if(!ev){ fldErr(email,_t('이메일을 입력해 주세요.')); bad=bad||email; }
-  else if(!/^[^@\s]+@[^@\s]+\.[^@\s]+$/.test(ev)){ fldErr(email,_t('올바른 이메일 형식이 아니에요.')); bad=bad||email; }
+  else if(!/^[^@\s]+@[^@\s]+\.[^@\s]+$/.test(ev)){ fldErr(email,_t('올바른 이메일 형식이 아닙니다.')); bad=bad||email; }
   else fldClear(email);
   const mv=msg.value.trim();
   if(!mv){ fldErr(msg,_t('문의 내용을 입력해 주세요.')); bad=bad||msg; }
@@ -625,7 +625,7 @@ document.getElementById('form').addEventListener('submit',async e=>{
     window.scrollTo({top:0,behavior:'smooth'});
   }catch(err){
     if(btn) btn.disabled=false;
-    fldErr(msg,_t('전송에 실패했어요. 잠시 후 다시 시도하거나 hello@kosai.kr로 보내주세요.'));
+    fldErr(msg,_t('전송하지 못했습니다. 잠시 후 다시 시도하거나 hello@kosai.kr로 보내주세요.'));
   }
 });
 const menuBtn=document.getElementById('menuBtn'),mobileMenu=document.getElementById('mobileMenu');
@@ -644,8 +644,8 @@ if(window.KOSi18n) KOSi18n.register({
   "서비스 의견·협업 제안·데이터 오류 제보를 보내주세요. 영업일 기준 2~3일 내에 답변드립니다.":"Send service feedback, partnership proposals, or data error reports. We respond within 2–3 business days.",
   "문의 유형":"Inquiry type","일반 문의":"General","데이터 오류 제보":"Data error report","협업·제휴":"Partnership",
   "이름":"Name","이메일":"Email","문의 내용":"Message","문의 보내기":"Send inquiry",
-  "이름을 입력해 주세요.":"Please enter your name.","이메일을 입력해 주세요.":"Please enter your email.","올바른 이메일 형식이 아니에요.":"That doesn't look like a valid email.","문의 내용을 입력해 주세요.":"Please enter your message.",
-  "전송에 실패했어요. 잠시 후 다시 시도하거나 hello@kosai.kr로 보내주세요.":"Couldn't send. Please try again later or email hello@kosai.kr.",
+  "이름을 입력해 주세요.":"Please enter your name.","이메일을 입력해 주세요.":"Please enter your email.","올바른 이메일 형식이 아닙니다.":"That doesn't look like a valid email.","문의 내용을 입력해 주세요.":"Please enter your message.",
+  "전송하지 못했습니다. 잠시 후 다시 시도하거나 hello@kosai.kr로 보내주세요.":"Couldn't send. Please try again later or email hello@kosai.kr.",
   "내용을 조금 더 자세히 입력해 주세요.":"Please add a bit more detail.","(선택)":"(optional)","직접 메일 보내기":"Email us directly",
   "성함을 입력해 주세요":"Your full name",
   "답변받으실 이메일 주소":"Email address for our reply",

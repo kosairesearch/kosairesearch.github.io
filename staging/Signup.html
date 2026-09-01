@@ -604,7 +604,7 @@ document.addEventListener('click', function (e) {
           <input type="checkbox" id="agree" />
           <span>만 14세 이상이며, <a href="Terms.html" target="_blank">이용약관</a> 및 <a href="Privacy.html" target="_blank">개인정보처리방침</a>에 동의합니다.</span>
         </label>
-        <div class="agree-err" id="agreeErr">약관에 동의해야 가입할 수 있어요.</div>
+        <div class="agree-err" id="agreeErr">약관에 동의하셔야 가입하실 수 있습니다.</div>
         <div class="submit-row">
           <button type="submit" class="btn btn-primary" id="emailSubmit">회원가입</button>
         </div>
@@ -670,11 +670,11 @@ if(window.KOSi18n) KOSi18n.register({
   // dynamic messages (KOSi18n.t)
   "비밀번호가 일치하지 않습니다.":"Passwords do not match.",
   "비밀번호는 영문과 숫자를 포함해 8자 이상이어야 합니다.":"Password must be at least 8 characters with letters and numbers.",
-  "인증 메일을 보냈어요":"Verification email sent",
+  "인증 메일을 보내 드렸습니다":"Verification email sent",
   "주소로 인증 링크를 보냈습니다. 메일의 링크를 클릭해 인증한 뒤 로그인해 주세요. (스팸함도 확인)":"— we sent a verification link to this address. Click it, then sign in. (Check your spam folder too.)",
   "로그인하러 가기":"Go to sign in",
   "약관에 동의해 주세요.":"Please agree to the terms.",
-  "약관에 동의해야 가입할 수 있어요.":"You must agree to the terms to sign up.",
+  "약관에 동의하셔야 가입하실 수 있습니다.":"You must agree to the terms to sign up.",
   "이메일을 입력해 주세요.":"Please enter your email.",
   "이미 가입된 이메일입니다.":"This email is already registered.",
   "이메일 형식이 올바르지 않습니다.":"That email address looks invalid.",
@@ -745,7 +745,7 @@ function showVerifySent(email){
   ['.social','.divider','#emailForm','.auth-foot'].forEach(function(s){ var el=document.querySelector(s); if(el) el.style.display='none'; });
   clearErr();
   var note = $('#cfgNote'); note.className='auth-note'; note.innerHTML='';
-  var b=document.createElement('b'); b.textContent=T('인증 메일을 보냈어요');
+  var b=document.createElement('b'); b.textContent=T('인증 메일을 보내 드렸습니다');
   var p=document.createElement('div'); p.style.margin='6px 0 0';
   p.textContent = email + ' ' + T('주소로 인증 링크를 보냈습니다. 메일의 링크를 클릭해 인증한 뒤 로그인해 주세요. (스팸함도 확인)');
   var a=document.createElement('a'); a.href='Login.html'; a.textContent=T('로그인하러 가기');

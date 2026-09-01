@@ -14,16 +14,16 @@ import { sendVerifyEmail } from "./auth-emails.js";
 
 if(window.KOSi18n) window.KOSi18n.register({
   "로그인이 필요합니다":"Sign-in required",
-  "이 리포트는 로그인 후 보실 수 있어요.":"Please sign in to view this report.",
-  "이 기능은 로그인 후 이용할 수 있어요.":"Please sign in to use this feature.",
-  "워치리스트에 추가하려면 로그인이 필요해요.":"Please sign in to add to your watchlist.",
-  "이메일 인증 후 워치리스트를 사용할 수 있어요.":"Verify your email to use the watchlist.",
+  "이 리포트는 로그인 후 열람하실 수 있습니다.":"Please sign in to view this report.",
+  "이 기능은 로그인 후 이용하실 수 있습니다.":"Please sign in to use this feature.",
+  "워치리스트에 추가하시려면 로그인이 필요합니다.":"Please sign in to add to your watchlist.",
+  "이메일 인증 후 워치리스트를 이용하실 수 있습니다.":"Verify your email to use the watchlist.",
   "로그인":"Sign in", "회원가입":"Sign up", "홈으로":"Back to home",
   "이메일 인증이 필요합니다":"Email verification required",
-  "받은 메일의 링크를 클릭해 이메일을 인증해 주세요.":"Please click the link in the email we sent to verify your address.",
+  "받으신 메일의 링크를 눌러 이메일 인증을 완료하여 주시기 바랍니다.":"Please click the link in the email we sent to verify your address.",
   "인증 메일 다시 보내기":"Resend verification email",
-  "인증을 완료했어요":"I've verified — refresh",
-  "인증 메일을 다시 보냈습니다. 메일함을 확인해 주세요.":"Verification email resent. Please check your inbox.",
+  "인증을 완료했습니다":"I've verified — refresh",
+  "인증 메일을 다시 보내 드렸습니다. 메일함을 확인하여 주시기 바랍니다.":"Verification email resent. Please check your inbox.",
   "로그아웃":"Sign out"
 });
 
@@ -91,7 +91,7 @@ function lockPage(msg){
   clearGate();
   var ov = document.createElement('div');
   ov.id = 'kosGate'; ov.className = 'kg-overlay';
-  ov.appendChild(buildCard({ dismissable:false, msg: msg || '이 리포트는 로그인 후 보실 수 있어요.' }));
+  ov.appendChild(buildCard({ dismissable:false, msg: msg || '이 리포트는 로그인 후 열람하실 수 있습니다.' }));
   document.body.appendChild(ov);
   if(window.KOSi18n) window.KOSi18n.apply();
 }
@@ -104,16 +104,16 @@ function lockVerify(user){
   card.innerHTML =
     '<div class="kg-ico">' + MAIL_SVG + '</div>' +
     '<h2 class="kg-title">' + tt('이메일 인증이 필요합니다') + '</h2>' +
-    '<p class="kg-sub">' + tt('받은 메일의 링크를 클릭해 이메일을 인증해 주세요.') + '</p>' +
+    '<p class="kg-sub">' + tt('받으신 메일의 링크를 눌러 이메일 인증을 완료하여 주시기 바랍니다.') + '</p>' +
     '<div class="kg-btns">' +
       '<button class="kg-btn kg-primary" id="kgResend" type="button">' + tt('인증 메일 다시 보내기') + '</button>' +
-      '<button class="kg-btn" id="kgRefresh" type="button">' + tt('인증을 완료했어요') + '</button>' +
+      '<button class="kg-btn" id="kgRefresh" type="button">' + tt('인증을 완료했습니다') + '</button>' +
     '</div>' +
     '<a class="kg-home" href="#" id="kgLogout">' + tt('로그아웃') + '</a>';
   ov.appendChild(card); document.body.appendChild(ov);
   if(window.KOSi18n) window.KOSi18n.apply();
   card.querySelector('#kgResend').addEventListener('click', async function(){
-    try{ await sendVerifyEmail(user.email); this.textContent = tt('인증 메일을 다시 보냈습니다. 메일함을 확인해 주세요.'); }catch(e){}
+    try{ await sendVerifyEmail(user.email); this.textContent = tt('인증 메일을 다시 보내 드렸습니다. 메일함을 확인하여 주시기 바랍니다.'); }catch(e){}
   });
   card.querySelector('#kgRefresh').addEventListener('click', async function(){
     try{ await user.reload(); }catch(e){}
@@ -128,7 +128,7 @@ function showLoginPopup(msg){
   var ex = document.getElementById('kosPopup'); if(ex) ex.remove();
   var ov = document.createElement('div');
   ov.id = 'kosPopup'; ov.className = 'kg-overlay kg-dismiss';
-  ov.appendChild(buildCard({ dismissable:true, msg: msg || '워치리스트에 추가하려면 로그인이 필요해요.' }));
+  ov.appendChild(buildCard({ dismissable:true, msg: msg || '워치리스트에 추가하시려면 로그인이 필요합니다.' }));
   document.body.appendChild(ov);
   function close(){ ov.remove(); }
   ov.addEventListener('click', function(e){ if(e.target === ov) close(); });
@@ -148,7 +148,7 @@ try{ page = decodeURIComponent(here()); }catch(e){ page = here(); }
 if(GATED.test(page)){
   if(!isConfigured){ unlock(); }
   else onAuthStateChanged(auth, function(u){
-    if(!u){ lockPage('이 기능은 로그인 후 이용할 수 있어요.'); }
+    if(!u){ lockPage('이 기능은 로그인 후 이용하실 수 있습니다.'); }
     else if(verified(u)){ unlock(); }
     else { lockVerify(u); }
   });

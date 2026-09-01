@@ -72,15 +72,15 @@ if (window.KOSi18n) window.KOSi18n.register({
   "새 리포트·서비스 소식을 이메일로 받습니다. 동의하지 않아도 가입할 수 있습니다.":
     "Receive news about new reports and the service by email. You can sign up without agreeing.",
   "언제든 철회할 수 있습니다.": "You can withdraw at any time.",
-  "필수 항목에 동의해야 가입할 수 있어요.": "You must accept the required items to continue.",
+  "필수 항목에 모두 동의하셔야 가입하실 수 있습니다.": "You must accept the required items to continue.",
   "서비스를 이용하려면 약관 동의가 필요합니다": "Using the service requires your agreement",
   "동의하고 가입 완료": "Agree and finish signing up",
   "동의하지 않고 취소": "Cancel",
-  "가입을 마치려면 아래 항목에 동의해 주세요": "To finish signing up, please accept the items below",
+  "가입을 완료하시려면 아래 항목에 동의하여 주시기 바랍니다": "To finish signing up, please accept the items below",
   "동의하지 않으면 가입이 취소됩니다.": "If you do not agree, your sign-up is cancelled.",
-  "동의하지 않으면 가입이 진행되지 않습니다. 계정은 아직 만들어지지 않았어요.":
+  "동의하지 않으면 가입이 진행되지 않습니다. 계정은 아직 생성되지 않았습니다.":
     "Without your consent we will not create the account — nothing has been created yet.",
-  "동의 저장에 실패했어요. 잠시 후 다시 시도해 주세요.":
+  "동의를 저장하지 못했습니다. 잠시 후 다시 시도하여 주시기 바랍니다.":
     "Could not save your agreement. Please try again in a moment.",
   "마케팅 수신 설정": "Marketing messages",
   "새 리포트와 서비스 소식을 이메일로 받습니다.": "Get news about new reports and the service by email.",
@@ -91,9 +91,9 @@ if (window.KOSi18n) window.KOSi18n.register({
   "저장": "Save",
   "닫기": "Close",
   "저장했습니다.": "Saved.",
-  "저장에 실패했어요. 잠시 후 다시 시도해 주세요.":
+  "저장하지 못했습니다. 잠시 후 다시 시도하여 주시기 바랍니다.":
     "Could not save. Please try again in a moment.",
-  "불러오지 못했어요. 잠시 후 다시 시도해 주세요.":
+  "불러오지 못했습니다. 잠시 후 다시 시도하여 주시기 바랍니다.":
     "Could not load. Please try again in a moment.",
   "이용약관": "Terms of Service"
 });
@@ -218,7 +218,7 @@ export function renderConsent(opts = {}) {
 
   const err = document.createElement("div");
   err.className = "kc-err";
-  err.textContent = T("필수 항목에 동의해야 가입할 수 있어요.");
+  err.textContent = T("필수 항목에 모두 동의하셔야 가입하실 수 있습니다.");
   box.appendChild(err);
 
   const list = items.map(i => boxes[i.key]);
