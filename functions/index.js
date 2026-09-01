@@ -2351,6 +2351,9 @@ const { onSchedule } = require("firebase-functions/v2/scheduler");
 const PRICE = { basic: 9900, pro: 14900 };        // pricing.html·payment-config.js 와 같아야 한다
 const PLAN_NAME = { basic: "BASIC", pro: "PRO" };
 const REFUND_FEE_RATE = 0.10;                     // 서비스 수수료 10% (요금제 페이지 고지)
+/* 카드로 이 금액 미만은 결제할 수 없다(토스 제한). staging/payment-config.js
+   의 MIN_CHARGE 와 같아야 한다 — 다르면 미리보기에서 되던 게 실제에서 막힌다. */
+const MIN_CHARGE = 100;
 const FREE_WITHDRAW_DAYS = 7;                     // 미열람 시 전액 환불 기간
 
 const tossAuth = () =>
@@ -2507,7 +2510,10 @@ function unusedOf(sub, startMs, endMs, usedUntilDay) {
 }
 
 async function charge(db, uid, sub, amount, description, tag, kind) {
-  if (amount <= 0) return null;
+  /* 100원 미만은 청구를 건너뛰고 넘어간다. 업그레이드 차액은 남은 기간에
+     비례하므로 주기 마지막 날에는 몇십 원이 된다. 그대로 토스에 보내면
+     거절당해 플랜 변경 자체가 실패한다 — 몇십 원 받자고 기능을 막는 셈이다. */
+  if (amount < MIN_CHARGE) return null;
   const pay = await toss(`/billing/${sub.billingKey}`, {
     customerKey: sub.customerKey,
     amount,
@@ -2545,6 +2551,11 @@ if (PAYMENTS_LIVE) exports.confirmBilling = onCall(
        여기서 또 받으면 이중 청구다. */
     if (req.data && req.data.updateMethod) {
       if (!cur) throw new HttpsError("failed-precondition", "이용 중인 구독이 없습니다.");
+      /* 환불이 끝난 구독에는 카드도 새로 걸지 않는다. 오늘 값을 받은 환불은
+         자정까지 살아 있어서 그 사이에 여기까지 올 수 있는데, 곧 끝날 구독에
+         카드를 등록시키면 다음 달에 긁힐 것처럼 읽힌다. 미리보기는 이미 막고
+         있었다 — 서버만 뚫려 있었다. */
+      if (refundedAlready(cur)) throw new HttpsError("failed-precondition", "환불이 완료된 구독입니다.");
       const re = await toss("/billing/authorizations/issue", { authKey, customerKey });
       const card = { company: (re.card && re.card.issuerCode) || "", number: (re.card && re.card.number) || "" };
       const patch = { billingKey: re.billingKey, customerKey, card,
