@@ -258,6 +258,11 @@ console.log("\n── 환불: 신청한 날을 셀지 말지 ──");
     const s0 = sub();
     s0.currentPeriodStart = Date.now() - daysAgo * DAY;
     s0.currentPeriodEnd = s0.currentPeriodStart + 30 * DAY;
+    /* 결제 시점도 같이 되돌린다. 월 구독은 주기가 시작될 때 받으므로 실제
+       자료에서 이 둘은 언제나 같다 — 주기만 옮기면 '오늘 결제하고 9일 전부터
+       쓴 구독' 이라는, 있을 수 없는 자료로 환불을 계산하게 된다. */
+    s0.periodPayments = (s0.periodPayments || [])
+      .map((p) => ({ ...p, from: s0.currentPeriodStart }));
     localStorage.setItem("kos-demo-sub", JSON.stringify(s0));
     return s0;
   };
@@ -454,6 +459,74 @@ console.log("\n── 환불 없이 업그레이드 ──");
   }
   ok("실제로 13건이 더 열린다", more === 13, "더 열림=" + more);
   ok("오늘 총 열람은 PRO 한도 15건", 2 + more === 15, `2 + ${more}`);
+}
+
+/* ── 업그레이드하고 나서 환불하면 ─────────────────────────────
+   여기가 오래 틀려 있었다. 한 주기에 결제가 둘인데(월 구독 + 차액) 환불이
+   그걸 한 덩어리로 봤다.
+
+     ① 서버는 정가(14,900원)를 기준으로 삼았다 — 받은 적 없는 돈이다.
+        미리보기는 실제로 받은 돈을 썼다. 두 쪽이 다른 답을 냈다.
+     ② 취소는 결제 건 하나만 가리켰다. 그 건보다 큰 금액을 취소하려 드니
+        카드사가 통째로 거절한다 — 업그레이드한 사람은 환불이 아예 안 됐다.
+     ③ 차액에서도 지나간 날을 뺐다. 그 날들에는 옛 플랜을 썼지 새 플랜을
+        쓴 적이 없다. 787원을 덜 돌려줬다.
+   ─────────────────────────────────────────────────────────── */
+console.log("\n── 업그레이드하고 나서 환불 ──");
+{
+  const DAY = 86400e3;
+  localStorage.clear();
+  w.KOSDemo.subscribe("basic");
+
+  // 7일 전에 결제한 것으로 돌린다(결제 시점도 같이 — 실제 자료에서 둘은 같다)
+  const s0 = sub();
+  const paidAt = Date.now() - 7 * DAY;
+  s0.currentPeriodStart = paidAt;
+  s0.currentPeriodEnd = paidAt + 31 * DAY;
+  s0.readsSincePay = 12;                       // 일주일 동안 봤다
+  s0.periodPayments = s0.periodPayments.map(p => ({ ...p, from: paidAt }));
+  localStorage.setItem("kos-demo-sub", JSON.stringify(s0));
+
+  const up = (await w.KOSDemo.call("changePlan", { plan: "pro" })).data.charged;
+  ok("차액만 청구한다", up === Math.floor(5000 * 24 / 31), "청구=" + up);
+
+  const pp = sub().periodPayments;
+  ok("차액도 이번 주기 결제로 남는다", pp.length === 2 && pp[1].amount === up,
+     JSON.stringify(pp));
+  ok("차액은 '오늘부터' 를 산다고 적어 둔다",
+     Math.abs(pp[1].from - Date.now()) < 60000 && pp[0].from === paidAt);
+
+  const r = (await w.KOSDemo.call("requestRefund", {})).data;
+  /* 건마다 자기 기간으로 나눠 센다.
+       월 구독 9,900원 — 31일을 샀고 7일 썼다     → 9,900 × 24/31
+       차액   3,870원 — 오늘부터 24일을 샀고 안 썼다 → 3,870 × 24/24 (전액) */
+  const want = Math.floor((9900 * 24 / 31 + up * 24 / 24) * 0.9);
+  ok("남은 돈을 건마다 제 기간으로 세어 돌려준다", r.refunded === want,
+     `${r.refunded} (기대 ${want})`);
+
+  /* 한 덩어리로 세면 차액에서도 7일을 빼 이만큼 덜 준다. 그 금액이 나오면
+     예전 계산으로 돌아간 것이다. */
+  const lumped = Math.floor((9900 + up) * 24 / 31 * 0.9);
+  ok("한 덩어리로 세던 옛 금액이 아니다", r.refunded !== lumped,
+     `옛 계산 ${lumped} · 차이 ${r.refunded - lumped}원`);
+
+  ok("낸 돈보다 많이 돌려주지는 않는다", r.refunded <= 9900 + up,
+     `${r.refunded} vs ${9900 + up}`);
+
+  /* 취소를 건마다 나눠 내보내는지. 카드사는 결제 건 하나를 그 건의 금액
+     안에서만 취소해 주므로, 한 건에 몰아 내면 거절당한다. */
+  const refunds = w.KOSDemo.payments().filter(p => p.kind === "refund");
+  ok("취소가 결제 건마다 따로 나간다", refunds.length === 2,
+     JSON.stringify(refunds.map(p => p.amount)));
+  ok("각 취소는 그 결제 건의 금액을 넘지 않는다",
+     refunds.every(rr => {
+       const src = pp.find(x => -rr.amount <= x.amount);
+       return !!src;
+     }) && refunds.every(rr => -rr.amount <= Math.max(...pp.map(x => x.amount))),
+     JSON.stringify(refunds.map(p => p.amount)) + " vs " + JSON.stringify(pp.map(x => x.amount)));
+  ok("취소 합계가 환불 금액과 같다",
+     refunds.reduce((a, b) => a - b.amount, 0) === r.refunded,
+     refunds.reduce((a, b) => a - b.amount, 0) + " vs " + r.refunded);
 }
 
 console.log("\n── 결제 실패 ──");

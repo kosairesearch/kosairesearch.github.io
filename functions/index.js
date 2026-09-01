@@ -2458,6 +2458,54 @@ if (PAYMENTS_LIVE) exports.listPayments = onCall(
    ⚠️ 설명 문장을 한국어로 굳혀 저장하면 영어 화면에서 번역할 방법이 없다.
       화면이 언어에 맞춰 문구를 만들 수 있도록 kind 를 준다. description 은
       관리자 화면·로그에서 사람이 읽기 위한 값으로만 남겨 둔다. */
+/* 이번 결제 주기에 실제로 받은 돈. 환불은 이 합계를 기준으로 계산하고, 이
+   건들을 취소해 돌려준다 — 요금제의 정가가 아니다.
+
+   업그레이드하면 한 주기에 결제가 둘이 된다(월 구독 + 차액). 정가를 기준으로
+   삼으면 받지도 않은 돈을 기준으로 환불액을 내고, 취소할 때는 그중 한 건만
+   가리키게 되어 카드사가 거절한다. */
+const paidThisPeriod = (sub) =>
+  ((sub && sub.periodPayments) || []).reduce((a, e) => a + (e.amount || 0), 0);
+
+/* 환불에 쓸 결제 건들. 최근 것부터 — 마지막에 받은 돈을 먼저 되돌린다. */
+function refundSources(sub) {
+  const list = ((sub && sub.periodPayments) || [])
+    .filter((e) => e && e.key && e.amount > 0);
+  if (list.length) return list.slice().reverse();
+  // periodPayments 가 붙기 전에 만들어진 구독. 있는 것으로 최선을 다한다.
+  return sub && sub.lastPaymentKey
+    ? [{ key: sub.lastPaymentKey, amount: PRICE[sub.plan] || 0 }] : [];
+}
+
+/* 아직 안 쓴 돈. 결제 건마다 그 돈이 사는 기간이 다르므로 따로 센다.
+
+   월 구독은 주기 전체를 산다. 업그레이드 차액은 '그날부터 주기 끝까지' 만
+   산다 — 청구할 때 남은 일수로 나눠 받았으니 돌려줄 때도 같은 기간으로
+   나눠야 한다.
+
+     BASIC 9,900원(31일) → 7일 쓰고 PRO 로 올림(차액 3,870원) → 바로 환불
+
+       한 덩어리로 세면   13,770 × 24/31        = 10,661 → 수수료 빼고 9,594
+       건마다 세면        9,900 × 24/31 = 7,665
+                          3,870 × 24/24 = 3,870  = 11,535 → 수수료 빼고 10,381
+
+   한 덩어리로 세면 차액에서도 7일을 뺀다. 그런데 그 7일 동안 이 사람은
+   BASIC 을 썼지 PRO 를 쓴 적이 없다. 쓰지 않은 날의 값을 받는 셈이라 787원을
+   덜 돌려주게 된다. */
+function unusedOf(sub, startMs, endMs, usedUntilDay) {
+  const endDay = kstDayNo(endMs);
+  const list = ((sub && sub.periodPayments) || []).length
+    ? sub.periodPayments
+    // 옛 구독. 월 구독 한 건이 주기 전체를 산 것으로 본다.
+    : [{ amount: PRICE[sub.plan] || 0, from: startMs }];
+  return list.reduce((sum, p) => {
+    const fromDay = kstDayNo(p.from || startMs);
+    const win = Math.max(1, endDay - fromDay);                 // 그 돈이 사는 날 수
+    const left = Math.max(0, endDay - Math.max(fromDay, usedUntilDay));
+    return sum + (p.amount || 0) * Math.min(1, left / win);
+  }, 0);
+}
+
 async function charge(db, uid, sub, amount, description, tag, kind) {
   if (amount <= 0) return null;
   const pay = await toss(`/billing/${sub.billingKey}`, {
@@ -2511,6 +2559,10 @@ if (PAYMENTS_LIVE) exports.confirmBilling = onCall(
         patch.currentPeriodStart = admin.firestore.Timestamp.fromDate(at);
         patch.currentPeriodEnd = admin.firestore.Timestamp.fromDate(addMonth(at));
         patch.lastPaymentKey = pay ? pay.paymentKey : null;
+        /* 새 주기다 — 지난 주기의 결제 건은 여기서 끊는다. 안 끊으면 환불이
+           이미 다 쓴 지난달 결제까지 기준에 넣고, 그 건을 취소하려 든다. */
+        patch.periodPayments = pay
+          ? [{ key: pay.paymentKey, amount: PRICE[cur.plan], from: at.getTime() }] : [];
       }
       await ref.set(patch, { merge: true });
       return { ok: true, plan: cur.plan, updated: true };
@@ -2572,6 +2624,10 @@ if (PAYMENTS_LIVE) exports.confirmBilling = onCall(
          돌려주고 끝냈는데 '구독 시작일' 만 그때로 남으면 이어진 것처럼 읽힌다. */
       startedAt: (cur && !cur.refundedAt && cur.startedAt) || admin.firestore.Timestamp.fromDate(start),
       lastPaymentKey: pay ? pay.paymentKey : null,
+      /* 이번 주기에 받은 돈. 환불이 이 목록을 보고 계산하고 취소한다.
+         from 은 그 돈이 사는 기간의 시작이다 — 월 구독은 주기 전체를 산다. */
+      periodPayments: pay
+        ? [{ key: pay.paymentKey, amount: PRICE[plan], from: start.getTime() }] : [],
       /* 지난 구독이 남긴 표시를 전부 지운다. merge 로 쓰기 때문에 안 지우면
          그대로 붙어 있는다 — 특히 refundedAt 이 남으면 방금 결제한 구독이
          '환불 완료' 로 보이고, 해지·플랜 변경·환불이 전부 막힌다.
@@ -2620,11 +2676,19 @@ if (PAYMENTS_LIVE) exports.changePlan = onCall(
       const left = Math.max(0, days(endMs - Date.now()));
       // 남은 기간에 해당하는 두 요금의 차액. 원 단위 절사(사용자에게 유리하게).
       const diff = Math.floor((PRICE[next] - PRICE[sub.plan]) * (left / total));
-      await charge(db, uid, sub, diff, `${PLAN_NAME[next]} 업그레이드 차액`, "up");
+      const pay = await charge(db, uid, sub, diff, `${PLAN_NAME[next]} 업그레이드 차액`, "up");
       await ref.set({
         plan: next, pendingPlan: null,
         // 해지 예약과 함께 둘 수 없다 — 아래 설명 참고.
         cancelAtPeriodEnd: false, canceledAt: null,
+        /* 차액도 이번 주기에 받은 돈이다. 안 적으면 환불이 월 구독 한 건만
+           보고 계산하고, 차액은 돌려주지 않은 채로 끝난다. */
+        periodPayments: pay
+          ? [...((sub.periodPayments) || []),
+             // 차액은 '지금부터 주기 끝까지' 를 산다. 그 값으로 청구했으니
+             // 환불도 그 기간으로 나눠야 한다.
+             { key: pay.paymentKey, amount: diff, from: Date.now() }]
+          : (sub.periodPayments || []),
         updatedAt: admin.firestore.FieldValue.serverTimestamp(),
       }, { merge: true });
       return { ok: true, plan: next, charged: diff };
@@ -2715,7 +2779,13 @@ async function refundQuote(db, uid, sub) {
   /* 주기는 addMonth 로 잡으므로 시각이 같아 원래 정수일이다. 반올림은 만약을
      대비한 것 — 소수가 섞이면 아래 날짜 뺄셈과 단위가 어긋난다. */
   const total = Math.max(1, Math.round(days(endMs - startMs)));
-  const price = PRICE[sub.plan] || 0;
+  /* 기준은 요금제의 정가가 아니라 이번 주기에 실제로 받은 돈이다.
+
+     BASIC 을 쓰다 PRO 로 올리면 9,900원 + 차액을 받는데, 정가(14,900원)를
+     기준으로 삼으면 받은 적 없는 돈까지 계산에 들어간다. 게다가 취소할 때는
+     결제 건 하나만 가리키므로, 그 건보다 큰 금액을 취소하려 들어 카드사가
+     통째로 거절한다 — 업그레이드한 사람은 환불이 아예 안 됐다. */
+  const price = paidThisPeriod(sub) || PRICE[sub.plan] || 0;
 
   // 이번 결제 기간에 리포트를 한 건이라도 열었는가
   const reads = await db.collection("report_reads")
@@ -2737,24 +2807,48 @@ async function refundQuote(db, uid, sub) {
     return { amount: price, reason: "청약철회(7일 이내·미열람)", why: "withdraw",
              chargedToday: false };
   }
-  const leftRatio = Math.max(0, (total - used) / total);
+  // 이 날짜까지는 쓴 것으로 본다. 그 뒤에 남은 돈만 돌려준다.
+  const unused = unusedOf(sub, startMs, endMs, kstDayNo(startMs) + used);
   return {
-    amount: Math.floor(price * leftRatio * (1 - REFUND_FEE_RATE)),
+    amount: Math.floor(unused * (1 - REFUND_FEE_RATE)),
     reason: opened ? "이용분 차감 환불" : "잔여 기간 환불",
     why: opened ? "used" : "left",
     chargedToday: openedToday,
   };
 }
 
+/* 한 주기에 결제가 여러 건일 수 있다(월 구독 + 업그레이드 차액). 카드사는
+   결제 건 하나를 그 건의 금액 안에서만 취소해 준다. 그래서 최근 건부터 차례로,
+   각 건의 금액만큼만 취소해 합계를 맞춘다.
+
+   건마다 내역을 따로 남긴다. 취소가 둘로 나가면 카드 명세서에도 둘로 찍히므로,
+   한 줄로 뭉뚱그리면 명세서와 우리 내역이 안 맞는다.
+
+   중간에 실패하면 거기서 멈추고 던진다. 이미 나간 취소는 내역에 남아 있으므로
+   얼마가 돌아갔는지는 확인할 수 있다 — 실패했다고 기록을 지우면 돈은 나갔는데
+   흔적이 없어진다. */
 async function doRefund(db, uid, sub, q) {
-  await toss(`/payments/${sub.lastPaymentKey}/cancel`, {
-    cancelReason: q.reason, cancelAmount: q.amount,
-  });
-  await writePayment(db, uid, {
-    amount: -q.amount, description: `환불 · ${q.reason}`,
-    kind: "refund", why: q.why || null, status: "refunded",
-    plan: sub.plan, paymentKey: sub.lastPaymentKey, paidAt: new Date().toISOString(),
-  });
+  let rest = q.amount;
+  for (const src of refundSources(sub)) {
+    if (rest <= 0) break;
+    const take = Math.min(rest, src.amount);
+    if (take <= 0) continue;
+    await toss(`/payments/${src.key}/cancel`, {
+      cancelReason: q.reason, cancelAmount: take,
+    });
+    await writePayment(db, uid, {
+      amount: -take, description: `환불 · ${q.reason}`,
+      kind: "refund", why: q.why || null, status: "refunded",
+      plan: sub.plan, paymentKey: src.key, paidAt: new Date().toISOString(),
+    });
+    rest -= take;
+  }
+  if (rest > 0) {
+    // 여기 오면 계산이 받은 돈보다 큰 금액을 냈다는 뜻이다. 조용히 넘기면
+    // 사용자는 덜 받은 줄 모른다.
+    console.error("[refund] 취소하지 못한 잔액", uid, "계산", q.amount, "남음", rest);
+    throw new HttpsError("internal", "환불을 끝까지 처리하지 못했습니다. 고객센터로 문의해 주시기 바랍니다.");
+  }
 }
 
 if (PAYMENTS_LIVE) exports.requestRefund = onCall(
@@ -2853,6 +2947,10 @@ if (PAYMENTS_LIVE) exports.renewSubscriptions = onSchedule(
           currentPeriodStart: admin.firestore.Timestamp.fromDate(now),
           currentPeriodEnd: admin.firestore.Timestamp.fromDate(addMonth(now)),
           lastPaymentKey: pay ? pay.paymentKey : sub.lastPaymentKey,
+          // 새 주기다 — 지난 주기의 결제 건은 여기서 끊는다. 이어 붙이면
+          // 환불이 이미 지나간 달의 돈까지 기준에 넣는다.
+          periodPayments: pay
+            ? [{ key: pay.paymentKey, amount: PRICE[plan], from: now.getTime() }] : [],
           failedAt: null,
           updatedAt: admin.firestore.FieldValue.serverTimestamp(),
         }, { merge: true });
