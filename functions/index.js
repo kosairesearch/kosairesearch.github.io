@@ -2565,6 +2565,16 @@ function unusedOf(sub, startMs, endMs, usedUntilDay) {
 }
 
 async function charge(db, uid, sub, amount, description, tag, kind, idem) {
+  /* 숫자가 아니면 부르지 않는다.
+
+     'amount < MIN_CHARGE' 만으로는 못 막는다 — undefined 와 NaN 은 어떤 수와
+     비교해도 false 라 그 관문을 그냥 지나가고, 그대로 카드사로 나간다.
+     PRICE[plan] 이 undefined 가 되는 경우(구독 문서의 plan 이 우리가 아는 값이
+     아닐 때)가 그렇게 새는 길이다. 조용히 넘기지 않고 소리 내어 멈춘다. */
+  if (!Number.isFinite(amount)) {
+    console.error("[charge] 금액이 숫자가 아니다", uid, tag, amount);
+    throw new HttpsError("internal", "결제 금액을 계산하지 못했습니다.");
+  }
   /* 100원 미만은 청구를 건너뛰고 넘어간다. 업그레이드 차액은 남은 기간에
      비례하므로 주기 마지막 날에는 몇십 원이 된다. 그대로 토스에 보내면
      거절당해 플랜 변경 자체가 실패한다 — 몇십 원 받자고 기능을 막는 셈이다. */

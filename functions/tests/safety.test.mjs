@@ -259,6 +259,12 @@ console.log("\n── 옮겨 적은 것이 원본과 같은가 ──");
      calls.length > 0 && calls.every((n) => n === wantArgs),
      `선언 ${wantArgs}개 · 호출 ${JSON.stringify(calls)}`);
 
+  /* undefined 와 NaN 은 어떤 수와 비교해도 false 라 'amount < MIN_CHARGE'
+     관문을 그냥 지나간다. 그대로 카드사로 나가는 길이다. */
+  ok("금액이 숫자가 아니면 카드사를 부르지 않는다",
+     /Number\.isFinite\(amount\)/.test(src),
+     "amount < MIN_CHARGE 만으로는 undefined·NaN 을 못 막는다");
+
   ok("업그레이드 기록에 올린 뒤 플랜을 적는다",
      /charge\(db, uid, \{ \.\.\.sub, plan: next \}/.test(src),
      "올리기 전 플랜을 적으면 'PRO 업그레이드 차액' 옆에 BASIC 이 남는다");
