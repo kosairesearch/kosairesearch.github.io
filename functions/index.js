@@ -2368,7 +2368,7 @@ const tossAuth = () =>
 
    이름은 '무엇을 하려던 요청인가' 로 짓는다. 시각을 넣으면 두 번째 요청이
    다른 이름이 되어 아무것도 막지 못한다. */
-async function toss(path, body, idem) {
+async function toss(path, body, idem = null) {
   /* 스위치가 꺼져 있으면 비밀키가 없다. 빈 키로 토스를 부르면 401 을 받고
      엉뚱한 카드사 오류 메시지가 나간다 — 여기서 먼저 막는다. */
   if (!PAYMENTS_LIVE) throw new HttpsError("failed-precondition", "결제 기능이 아직 준비되지 않았습니다.");
