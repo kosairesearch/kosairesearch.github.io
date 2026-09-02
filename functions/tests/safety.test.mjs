@@ -243,6 +243,18 @@ console.log("\n── 옮겨 적은 것이 원본과 같은가 ──");
      String((src.match(/withLock\(db, ref, "/g) || []).length));
   ok("결제·취소가 멱등 이름을 들고 나간다",
      /Idempotency-Key/.test(src) && /refund_\$\{uid\}_\$\{src\.key\}/.test(src));
+  /* doRefund 에 인자를 하나 더 받게 고치면서 호출부 한 곳을 빠뜨린 적이 있다
+     (deleteAccount). 그러면 유료 회원은 탈퇴 자체가 안 됐다 — 환불에서 터지고,
+     "환불 처리에 실패해 탈퇴를 진행하지 않았습니다" 로 막힌다. 문법 검사로는
+     안 걸리고, 그 길을 실제로 지나가야만 드러난다. 인자 수를 세어 둔다. */
+  const decl = (src.match(/async function doRefund\(([^)]*)\)/) || [])[1] || "";
+  const wantArgs = decl.split(",").length;
+  const calls = [...src.matchAll(/await doRefund\(([^)]*)\)/g)].map((m) => m[1].split(",").length);
+  ok("doRefund 를 부르는 곳이 둘이다", calls.length === 2, JSON.stringify(calls));
+  ok("모든 호출이 선언과 인자 수가 같다",
+     calls.length > 0 && calls.every((n) => n === wantArgs),
+     `선언 ${wantArgs}개 · 호출 ${JSON.stringify(calls)}`);
+
   ok("새 주기마다 refundDone 을 지운다",
      (src.match(/refundDone: admin\.firestore\.FieldValue\.delete\(\)|patch\.refundDone = admin\.firestore\.FieldValue\.delete\(\)/g) || []).length === 3,
      String((src.match(/refundDone: admin\.firestore\.FieldValue\.delete\(\)|patch\.refundDone = admin\.firestore\.FieldValue\.delete\(\)/g) || []).length));

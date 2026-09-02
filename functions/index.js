@@ -1828,7 +1828,7 @@ exports.deleteAccount = onCall(
     const q = await refundQuote(db, uid, sub);
     if (q.amount > 0) {
       try {
-        await doRefund(db, uid, sub, q);
+        await doRefund(db, uid, subRef, sub, q);
         refunded = q.amount;
       } catch (e) {
         console.error(`[delete] 환불 실패 uid=${uid}`, e && e.message);
