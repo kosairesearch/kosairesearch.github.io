@@ -1547,11 +1547,6 @@ function kstDay() {
    같은 종목을 다시 열 때는 차감하지 않는다. 새로고침·뒤로가기·다른 기기에서
    다시 보기가 전부 한 건씩 깎으면, 사용자는 서로 다른 두 종목만 보고도
    '한도 초과'를 만나게 된다. 그래서 횟수가 아니라 '오늘 본 종목'을 센다. */
-/* 하루 열람 한도 차감. 한도 안이면 true.
-
-   같은 종목을 다시 열 때는 차감하지 않는다. 새로고침·뒤로가기·다른 기기에서
-   다시 보기가 전부 한 건씩 깎으면, 사용자는 서로 다른 두 종목만 보고도
-   '한도 초과'를 만나게 된다. 그래서 횟수가 아니라 '오늘 본 종목'을 센다. */
 async function consumeDailyRead(db, uid, ticker, limit) {
   const day = kstDay();
   const ref = db.doc(`report_reads/${uid}_${day}`);
@@ -1640,13 +1635,6 @@ exports.getReport = onCall(
        여지를 없애는 게 목적이다.
      · watchlists/{uid}, report_reads  지운다. 보관할 이유가 없다.
    ─────────────────────────────────────────────────────────── */
-/* secrets: [TOSS_SECRET_KEY] 를 일부러 뺐다.
-   선언해 두면 값이 없는 상태에서는 배포 자체가 막힌다("non-interactive mode but
-   have no value for the secret"). 실사이트에는 아직 결제를 올리지 않았으므로
-   토스 비밀키가 등록된 적이 없고, 그 하나 때문에 탈퇴·로그인 같은 결제와
-   무관한 함수까지 전부 배포가 멈췄다.
-   구독이 하나도 없으니 아래 환불 분기는 실행되지 않는다. 결제를 켜는 날
-   firebase functions:secrets:set TOSS_SECRET_KEY 를 먼저 하고 이 줄을 되살린다. */
 /* ── 가입 동의 기록 ──────────────────────────────────────────────
    동의는 나중에 "언제 무엇에 동의했는가" 를 답해야 하는 기록이다. 그런데
    지금까지는 클라이언트가 users/{uid} 에 직접 썼다. 브라우저 콘솔을 열 수
@@ -1806,9 +1794,20 @@ exports.setMarketingConsent = onCall({ region: REGION, cors: true }, async (req)
 
 exports.deleteAccount = onCall(
   /* 네이버 연결을 끊으려면 앱 키가 있어야 한다 — 카카오는 어드민 키 하나로
-     되지만 네이버는 client_id·client_secret 으로 토큰을 갱신해야 한다. */
+     되지만 네이버는 client_id·client_secret 으로 토큰을 갱신해야 한다.
+
+     토스 비밀키는 결제를 켰을 때만 붙인다. 이 함수는 유료 구독이 있으면 환불을
+     먼저 하므로 그때는 반드시 있어야 하는데, 결제가 꺼져 있을 때 선언해 두면
+     값이 없어 배포 자체가 막힌다("no value for the secret"). 그 하나 때문에
+     탈퇴·로그인처럼 결제와 무관한 함수까지 전부 못 올라간 적이 있다.
+
+     TOSS_SECRET_KEY 는 결제가 꺼져 있으면 null 이다(파일 위쪽). 그래서 스위치
+     하나로 두 경우가 다 맞는다 — 결제를 켜는 날 여기를 손대야 하는 일이 없다.
+     사람이 기억해야 하는 단계로 두면 언젠가 잊고, 그러면 유료 회원이 탈퇴를
+     못 하게 된다. */
   { region: REGION, cors: true,
-    secrets: [KAKAO_ADMIN_KEY, NAVER_CLIENT_ID, NAVER_CLIENT_SECRET] },
+    secrets: [KAKAO_ADMIN_KEY, NAVER_CLIENT_ID, NAVER_CLIENT_SECRET,
+              ...(TOSS_SECRET_KEY ? [TOSS_SECRET_KEY] : [])] },
   async (req) => {
   const uid = req.auth && req.auth.uid;
   if (!uid) throw new HttpsError("unauthenticated", "로그인이 필요합니다.");
@@ -2603,7 +2602,21 @@ if (PAYMENTS_LIVE) exports.confirmBilling = onCall(
          막아 버리면 카드가 만료됐을 때 바꿀 길이 없어진다. 결제는 하지 않는다.
          여기서 또 받으면 이중 청구다. */
       if (req.data && req.data.updateMethod) {
-        if (!cur) throw new HttpsError("failed-precondition", "이용 중인 구독이 없습니다.");
+        /* 카드를 바꿀 수 있는 상태는 둘뿐이다 — 이용 중이거나, 결제가 밀려
+           멈춰 있거나. 그 밖에는 바꿔 봐야 아무 일도 일어나지 않는다.
+
+           '문서가 있는가'로 물으면 안 된다. 위 withLock 이 자물쇠를 걸면서
+           문서를 먼저 만들기 때문에, 구독이 없는 사람도 {busy} 하나만 든
+           문서를 갖게 되어 그 검사를 통과한다. 그러면 plan 도 status 도 없는
+           채로 카드만 등록되고, 반쪽짜리 구독 문서가 남는다.
+
+           이미 끝난 구독(expired)도 막는다. 갱신 배치는 status 가 active 인
+           것만 집으므로 카드를 새로 걸어도 다시 결제되지 않는다 — 되는 것처럼
+           보여 주고 아무 일도 안 하는 쪽이 더 나쁘다. 다시 시작하려면 결제
+           화면으로 가야 한다. */
+        if (!subActive(cur) && !(cur && cur.status === "past_due")) {
+          throw new HttpsError("failed-precondition", "이용 중인 구독이 없습니다.");
+        }
         /* 환불이 끝난 구독에는 카드도 새로 걸지 않는다. 오늘 값을 받은 환불은
            자정까지 살아 있어서 그 사이에 여기까지 올 수 있는데, 곧 끝날 구독에
            카드를 등록시키면 다음 달에 긁힐 것처럼 읽힌다. 미리보기는 이미 막고

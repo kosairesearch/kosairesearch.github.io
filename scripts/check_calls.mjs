@@ -144,5 +144,40 @@ function matchParen(s, i) {
   else console.log(`  PASS 미리보기도 같은 이름을 안다`);
 }
 
+/* ── ③ 돈 쓰는 함수가 카드사 열쇠를 들고 있는가 ─────────────
+   deleteAccount 가 환불을 하면서 TOSS_SECRET_KEY 를 선언하지 않고 있었다.
+   결제를 켜는 순간 유료 회원은 탈퇴가 막힌다 — 환불에서 실패하고, 그러면
+   탈퇴를 진행하지 않기 때문이다.
+
+   토스를 부르는 길은 toss()·charge()·doRefund() 셋뿐이다. 그중 하나라도
+   지나가는 onCall/onSchedule 은 열쇠를 선언해야 한다.
+   ─────────────────────────────────────────────────────────── */
+{
+  const raw = readFileSync(SERVER, "utf8");
+  const code = strip(raw);
+  // 각 export 의 본문을 정확히 자른다 — 다음 export 선언 직전까지
+  /* 본문은 onCall( 의 짝이 되는 ) 까지다. 다음 export 까지로 자르면 그 사이에
+     있는 최상위 헬퍼(charge·doRefund 등)까지 딸려 들어와 엉뚱한 함수가 걸린다. */
+  const heads = [...code.matchAll(/(?:if \(PAYMENTS_LIVE\) )?exports\.(\w+)\s*=\s*on(?:Call|Schedule)\(/g)];
+  let checked = 0;
+  for (let i = 0; i < heads.length; i++) {
+    const name = heads[i][1];
+    const from = heads[i].index;
+    const open = heads[i].index + heads[i][0].length - 1;
+    const close = matchParen(code, open);
+    if (close < 0) { bad(`${name}() 본문 경계를 못 찾았다 — 검사기가 고장났다`); continue; }
+    const body = code.slice(from, close + 1);
+    if (!/\bawait (?:toss|charge|doRefund)\s*\(/.test(body)) continue;
+    checked++;
+    // 선언 블록은 본문 첫 '{ region' 부터 콜백 시작 전까지
+    const opts = body.slice(0, body.search(/async\s*\(|\basync\s*function|\(\s*\)\s*=>/) + 1);
+    if (!/TOSS_SECRET_KEY/.test(opts)) {
+      bad(`${name}() 가 토스를 부르는데 TOSS_SECRET_KEY 를 선언하지 않았다`);
+    }
+  }
+  if (checked === 0) bad("토스를 부르는 함수를 하나도 못 찾았다 — 검사기가 고장났다");
+  else if (!fail) console.log(`  PASS 돈 쓰는 함수가 카드사 열쇠를 들고 있다 (${checked}개)`);
+}
+
 console.log(fail ? `\nFAIL ${fail}건` : "\nPASS 호출부가 전부 맞다");
 process.exit(fail ? 1 : 0);

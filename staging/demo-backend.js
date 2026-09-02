@@ -130,6 +130,13 @@ async function fetchPaid(ticker) {
 function subscribe(planId) {
   const p = PLANS[planId];
   if (!p) throw new Error("plan");
+  /* 이미 이용 중이면 새로 만들지 않는다(서버 confirmBilling 과 같다). 돈을 두
+     번 받는 자리다. 해지 예약(cancelAtPeriodEnd)이나 환불 완료(refundedAt)는
+     예외다 — 그 둘은 '다시 시작하기' 로 여기에 오는 길이다. */
+  const cur = read(SUB_KEY, null);
+  if (activeNow(cur) && !cur.cancelAtPeriodEnd && !cur.refundedAt) {
+    throw new Error("이미 이용 중인 구독이 있습니다.");
+  }
   const now = Date.now();
   /* 이용은 지금부터. 이전 구독과 겹치는 하루는 기간 끝에 붙인다
      (서버 confirmBilling 과 같다 — 그쪽 주석에 이유를 적어 두었다).
@@ -166,11 +173,16 @@ function subscribe(planId) {
    결제가 밀려 멈춘 구독이면 새 카드로 바로 받아 되살린다. */
 function updateCard() {
   const sub = read(SUB_KEY, null);
-  if (!sub) throw new Error("이용 중인 구독이 없습니다.");
   /* 환불이 끝난 구독에는 카드도 새로 걸지 않는다. 오늘 값을 받은 환불은
      자정까지 살아 있어서 그 사이에 여기까지 올 수 있는데, 곧 끝날 구독에
      카드를 등록시키면 다음 달에 긁힐 것처럼 읽힌다. */
-  if (sub.refundedAt) throw new Error("환불이 완료된 구독입니다.");
+  if (sub && sub.refundedAt) throw new Error("환불이 완료된 구독입니다.");
+  /* 카드를 바꿀 수 있는 상태는 둘뿐이다 — 이용 중이거나, 결제가 밀려 멈춰
+     있거나(서버 confirmBilling updateMethod 와 같다). 이미 끝난 구독은 카드를
+     새로 걸어도 다시 결제되지 않으므로, 되는 것처럼 보여 주면 안 된다. */
+  if (!activeNow(sub) && !(sub && sub.status === "past_due")) {
+    throw new Error("이용 중인 구독이 없습니다.");
+  }
   const n = String(1000 + Math.floor(Math.random() * 9000));
   sub.card = { company: "", issuerCode: "61", number: `0000-00**-****-${n}` };
   if (sub.status === "past_due") {
@@ -313,7 +325,11 @@ async function call(name, arg) {
     return { data: { ok: true, demo: true, refunded } };
   }
   const sub = read(SUB_KEY, null);
-  if (!sub) throw new Error("이용 중인 구독이 없습니다.");
+  /* 서버는 '문서가 있는가' 가 아니라 '지금 이용 중인가' 로 막는다(subActive).
+     결제가 밀려 멈춘 구독이나 이미 끝난 구독에도 해지·플랜 변경·환불이 되면,
+     미리보기에서는 되는데 실제로는 거절당한다. 순서도 서버와 같게 둔다 —
+     이용 중이 아닌 것을 먼저 보고, 그다음에 환불이 끝났는지 본다. */
+  if (!activeNow(sub)) throw new Error("이용 중인 구독이 없습니다.");
   /* 환불이 끝난 구독에는 아무것도 하지 않는다. 오늘 값을 받은 환불은 자정까지
      살아 있어서, 그 사이에 해지·플랜 변경·재환불을 또 누를 수 있다. 서버
      refundedAlready 와 같은 규칙이다. */
@@ -325,9 +341,18 @@ async function call(name, arg) {
   if (name === "cancelSubscription") { sub.cancelAtPeriodEnd = true; sub.pendingPlan = null; }
   else if (name === "resumeSubscription") sub.cancelAtPeriodEnd = false;
   else if (name === "changePlan") {
-    sub.cancelAtPeriodEnd = false;
     const next = PLANS[(arg || {}).plan];
     if (!next) throw new Error("요금제를 확인할 수 없습니다.");
+    /* 쓰고 있는 플랜을 다시 고르는 건 '예약 취소' 다. 그런데 취소할 예약이
+       없으면 할 일이 없다 — 서버는 여기서 거절한다(changePlan).
+
+       이 관문이 없으면 그냥 통과하는 데서 끝나지 않는다. 바로 아래에서
+       cancelAtPeriodEnd 를 내리므로, 해지를 예약해 둔 사람이 같은 플랜을 다시
+       고르면 해지가 조용히 풀린다. 서버에서는 거절당하는 동작이다. */
+    if (next.id === sub.plan && !sub.pendingPlan) {
+      throw new Error("이미 해당 플랜을 이용 중입니다.");
+    }
+    sub.cancelAtPeriodEnd = false;
     if (next.price > PLANS[sub.plan].price) {
       const total = Math.max(1, (sub.currentPeriodEnd - sub.currentPeriodStart) / 86400e3);
       const left = Math.max(0, (sub.currentPeriodEnd - Date.now()) / 86400e3);
