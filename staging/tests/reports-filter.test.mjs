@@ -98,48 +98,66 @@ console.log("── 필터를 안 쓰면 밸류에이션 자료를 받지 않는
     n: +document.getElementById("countN").textContent,
     val: !!window.KOS_VALUATION,
     rows: document.querySelectorAll(".rl-row").length,
-    themes: document.querySelectorAll(".preset-pill").length,
+    /* 조건을 고르는 자리는 '필터 추가' 하나뿐이어야 한다. 업종 칩을 따로 두면
+       같은 일을 하는 조작이 둘이 되어 어느 쪽이 이기는지 설명할 수 없다. */
+    chips: document.querySelectorAll(".chip").length,
+    presets: document.querySelectorAll(".preset-pill").length,
     fchips: document.getElementById("fchips").textContent.trim(),
   }));
   ok("처음에는 279KB 를 받지 않는다", st.val === false, "이미 받았다");
   ok("목록은 전과 같이 전부 나온다", st.n === 2686 || st.n > 2000, String(st.n));
   ok("한 화면에 20줄", st.rows === 20, String(st.rows));
-  ok("테마 버튼 5개가 있다", st.themes === 5, String(st.themes));
+  ok("업종 칩 줄이 없다", st.chips === 0, String(st.chips));
+  ok("테마 줄이 없다", st.presets === 0, String(st.presets));
   ok("걸린 조건은 없다", st.fchips === "", st.fchips);
+
+  await p.click("#addFilterBtn");
+  await p.waitForTimeout(250);
+  const list = await p.evaluate(() => [...document.querySelectorAll(".pop-field .fi")].map((e) => e.textContent));
+  ok("업종이 조건 목록 맨 위에 있다", list[0] === "업종", JSON.stringify(list));
+  ok("조건 일곱 가지를 준다",
+     JSON.stringify(list) === JSON.stringify(["업종","시장","시가총액","PER","PBR","배당수익률","매출 성장률"]),
+     JSON.stringify(list));
+  ok("업종을 여는 데 279KB 가 필요하지 않다",
+     await p.evaluate(() => document.querySelector('[data-field="sector"]') !== null));
   await p.close();
 }
 
 /* ── ① 조건이 맞게 걸리는가 ────────────────────────────── */
-console.log("\n── 테마를 누르면 그 조건대로 걸린다 ──\n");
+console.log("\n── 업종은 여러 개를 함께 고를 수 있다 ──\n");
 {
+  /* 칩으로 두었을 때는 하나밖에 못 골랐다. '반도체와 2차전지를 같이 보자' 가
+     안 됐다는 뜻이다. */
   const p = await open();
-  await p.click('[data-preset="저PER 가치주"]');
-  await p.waitForTimeout(1200);
+  await p.click("#addFilterBtn"); await p.waitForTimeout(250);
+  await p.click('[data-field="sector"]'); await p.waitForTimeout(250);
+
+  const heads = await p.evaluate(() => [...document.querySelectorAll(".check")].slice(0, 3)
+    .map((c) => ({ name: c.dataset.v, n: +c.querySelector(".count").textContent })));
+  ok("업종마다 종목 수를 같이 보여 준다", heads.every((h) => h.n > 0), JSON.stringify(heads));
+  ok("많은 업종부터 나온다", heads[0].n >= heads[1].n && heads[1].n >= heads[2].n, JSON.stringify(heads));
+
+  await p.evaluate(() => { for (const c of document.querySelectorAll(".check"))
+    if (["반도체", "2차전지"].includes(c.dataset.v)) c.click(); });
+  await p.click("#popApply"); await p.waitForTimeout(500);
 
   const got = await shown(p);
-  const want = await countBy(p, `(S,V)=>{
-    return S.filter(s=>{
-      const v=V&&V[s.ticker]; if(!v) return false;
-      const per=(v.eps&&v.eps>0&&s.price)?+(s.price/v.eps).toFixed(1):null;
-      return s.mcap>=0.5 && per!=null && per<=10;
-    }).length;
-  }`);
-  ok("자료를 그때 받는다", await p.evaluate(() => !!window.KOS_VALUATION));
-  ok("개수가 원자료를 직접 센 것과 같다", got === want, `화면 ${got} · 직접 ${want}`);
-  ok("걸린 조건이 칩으로 보인다",
-     JSON.stringify(await chips(p)) === JSON.stringify(["시가총액 0.5조 이상", "PER 10배 이하"]),
-     JSON.stringify(await chips(p)));
+  const want = await countBy(p, `(S)=>S.filter(s=>{
+    const c=(s.categories&&s.categories.length)?s.categories:[s.sector];
+    return c.includes('반도체')||c.includes('2차전지');
+  }).length`);
+  ok("둘 다 걸린다(하나라도 맞으면 나온다)", got === want, `화면 ${got} · 직접 ${want}`);
+  ok("칩이 몇 개인지 알려 준다", (await chips(p))[0] === "업종 · 반도체 외 1", JSON.stringify(await chips(p)));
+  ok("업종만으로는 279KB 를 받지 않는다", (await p.evaluate(() => !!window.KOS_VALUATION)) === false);
 
-  /* 화면에 뜬 줄이 실제로 조건을 만족하는가 — 개수만 맞고 목록이 틀릴 수 있다. */
-  const bad = await p.evaluate(() => {
-    const V = KOS_VALUATION.stocks;
-    return [...document.querySelectorAll(".rl-row")].map((a) => a.dataset.tk).filter((tk) => {
-      const s = KOS_LIVE_DATA.stocks.find((x) => x.ticker === tk), v = V[tk];
-      if (!s || !v || !v.eps || v.eps <= 0) return true;
-      return !(s.mcap >= 0.5 && +(s.price / v.eps).toFixed(1) <= 10);
-    });
-  });
-  ok("보여 준 줄이 전부 조건을 만족한다", bad.length === 0, bad.join(","));
+  /* 화면에 뜬 줄이 실제로 그 업종인가 — 개수만 맞고 목록이 틀릴 수 있다. */
+  const bad = await p.evaluate(() => [...document.querySelectorAll(".rl-row")].map((a) => a.dataset.tk)
+    .filter((tk) => {
+      const s = KOS_LIVE_DATA.stocks.find((x) => x.ticker === tk);
+      const c = (s.categories && s.categories.length) ? s.categories : [s.sector];
+      return !(c.includes("반도체") || c.includes("2차전지"));
+    }));
+  ok("보여 준 줄이 전부 그 업종이다", bad.length === 0, bad.join(","));
   await p.close();
 }
 
@@ -171,16 +189,20 @@ console.log("\n── 조건을 직접 넣어도 같다 ──\n");
   await p.close();
 }
 
-console.log("\n── 업종·검색과 함께 걸린다(둘 다 만족) ──\n");
+console.log("\n── 업종·숫자·검색이 함께 걸린다(전부 만족) ──\n");
 {
   const p = await open();
-  await p.click('[data-preset="저PER 가치주"]');
-  await p.waitForTimeout(1200);
-  // 업종 칩은 7개까지만 보이고 나머지는 '더보기' 뒤에 있다.
-  await p.click("#chipMore");
-  await p.waitForTimeout(200);
-  await p.click('.chip[data-sector="금융"]');
-  await p.waitForTimeout(300);
+  // 업종 = 금융
+  await p.click("#addFilterBtn"); await p.waitForTimeout(250);
+  await p.click('[data-field="sector"]'); await p.waitForTimeout(250);
+  await p.evaluate(() => { const c = [...document.querySelectorAll(".check")]
+    .find((x) => x.dataset.v === "금융"); if (c) c.click(); });
+  await p.click("#popApply"); await p.waitForTimeout(400);
+  // PER 10배 이하
+  await p.click("#addFilterBtn"); await p.waitForTimeout(250);
+  await p.click('[data-field="per"]'); await p.waitForTimeout(200);
+  await p.fill("#rMax", "10");
+  await p.click("#popApply"); await p.waitForTimeout(1400);
 
   const got = await shown(p);
   const want = await countBy(p, `(S,V)=>S.filter(s=>{
@@ -188,9 +210,10 @@ console.log("\n── 업종·검색과 함께 걸린다(둘 다 만족) ──\
     if(!cats.includes('금융')) return false;
     const v=V&&V[s.ticker]; if(!v) return false;
     const per=(v.eps&&v.eps>0&&s.price)?+(s.price/v.eps).toFixed(1):null;
-    return s.mcap>=0.5 && per!=null && per<=10;
+    return per!=null && per<=10;
   }).length`);
-  ok("업종 칩과 숫자 조건이 함께 걸린다", got === want, `화면 ${got} · 직접 ${want}`);
+  ok("업종과 숫자 조건이 함께 걸린다", got === want, `화면 ${got} · 직접 ${want}`);
+  ok("조건 둘이 칩으로 보인다", (await chips(p)).length === 2, JSON.stringify(await chips(p)));
 
   await p.fill("#searchInput", "은행");
   await p.waitForTimeout(300);
@@ -202,8 +225,12 @@ console.log("\n── 업종·검색과 함께 걸린다(둘 다 만족) ──\
 console.log("\n── 조건을 빼는 길 ──\n");
 {
   const p = await open();
-  await p.click('[data-preset="고배당주"]');
-  await p.waitForTimeout(1200);
+  await p.click("#addFilterBtn"); await p.waitForTimeout(250);
+  await p.click('[data-field="mcap"]'); await p.waitForTimeout(200);
+  await p.fill("#rMin", "0.5"); await p.click("#popApply"); await p.waitForTimeout(400);
+  await p.click("#addFilterBtn"); await p.waitForTimeout(250);
+  await p.click('[data-field="div"]'); await p.waitForTimeout(200);
+  await p.fill("#rMin", "4"); await p.click("#popApply"); await p.waitForTimeout(1400);
   const two = await shown(p);
 
   await p.click('.fchip [data-remove="div"]');
@@ -218,19 +245,27 @@ console.log("\n── 조건을 빼는 길 ──\n");
   ok("모두 지우면 처음으로 돌아온다", (await shown(p)) === 2686 || (await shown(p)) > 2000,
      String(await shown(p)));
   ok("칩도 사라진다", (await chips(p)).length === 0);
-  ok("테마 표시도 풀린다", (await p.evaluate(() => document.querySelectorAll(".preset-pill.on").length)) === 0);
   await p.close();
 }
 
-console.log("\n── 같은 테마를 다시 누르면 풀린다 ──\n");
+console.log("\n── 업종 체크를 다 풀면 조건이 빠진다 ──\n");
 {
+  /* 체크를 하나도 안 남기고 '적용'을 누르면 '아무 업종도 아닌 것' 이 아니라
+     '업종을 안 따짐' 이어야 한다. 반대로 두면 목록이 통째로 빈다. */
   const p = await open();
-  await p.click('[data-preset="고성장주"]'); await p.waitForTimeout(1200);
-  const on = await p.evaluate(() => document.querySelectorAll(".preset-pill.on").length);
-  await p.click('[data-preset="고성장주"]'); await p.waitForTimeout(300);
-  const off = await p.evaluate(() => document.querySelectorAll(".preset-pill.on").length);
-  ok("한 번 더 누르면 꺼진다", on === 1 && off === 0, `${on} → ${off}`);
-  ok("전체 목록으로 돌아온다", (await shown(p)) > 2000, String(await shown(p)));
+  await p.click("#addFilterBtn"); await p.waitForTimeout(250);
+  await p.click('[data-field="sector"]'); await p.waitForTimeout(250);
+  await p.evaluate(() => { const c = [...document.querySelectorAll(".check")]
+    .find((x) => x.dataset.v === "반도체"); if (c) c.click(); });
+  await p.click("#popApply"); await p.waitForTimeout(400);
+  const some = await shown(p);
+  ok("업종 하나를 고르면 좁아진다", some > 0 && some < 2000, String(some));
+
+  await p.click(".fchip"); await p.waitForTimeout(300);      // 칩을 눌러 다시 연다
+  await p.evaluate(() => { const c = [...document.querySelectorAll(".check.on")][0]; if (c) c.click(); });
+  await p.click("#popApply"); await p.waitForTimeout(400);
+  ok("다 풀면 전체로 돌아온다", (await shown(p)) > 2000, String(await shown(p)));
+  ok("칩도 사라진다", (await chips(p)).length === 0, JSON.stringify(await chips(p)));
   await p.close();
 }
 
@@ -283,12 +318,18 @@ console.log("\n── 밸류에이션 자료를 못 받아도 목록이 비지 �
   blockVal = true;
   const p = await open();
   const before = await shown(p);
-  await p.click('[data-preset="저PER 가치주"]');
-  await p.waitForTimeout(1500);
+  // 값이 필요한 조건(PER)과 필요 없는 조건(시가총액)을 함께 건다.
+  await p.click("#addFilterBtn"); await p.waitForTimeout(250);
+  await p.click('[data-field="mcap"]'); await p.waitForTimeout(200);
+  await p.fill("#rMin", "0.5"); await p.click("#popApply"); await p.waitForTimeout(400);
+  await p.click("#addFilterBtn"); await p.waitForTimeout(250);
+  await p.click('[data-field="per"]'); await p.waitForTimeout(300);
+  await p.fill("#rMax", "10"); await p.click("#popApply"); await p.waitForTimeout(1800);
   const after = await shown(p);
   ok("자료를 정말 못 받았다", (await p.evaluate(() => !!window.KOS_VALUATION)) === false);
   ok("목록이 0 으로 떨어지지 않는다", after > 0, String(after));
   ok("시가총액 조건은 그대로 걸린다", after < before, `${after} vs ${before}`);
+  ok("걸어 둔 조건은 칩에 그대로 남는다", (await chips(p)).length === 2, JSON.stringify(await chips(p)));
   blockVal = false;
   await p.close();
 }

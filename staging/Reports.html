@@ -132,18 +132,6 @@ body::before{content:"";position:fixed;inset:0;z-index:-1;pointer-events:none;
 .selmenu button.active::after{content:"✓";color:var(--brand-blue);font-size:13px}
 :root[data-theme="dark"] .selmenu button.active::after{color:var(--brand-cyan)}
 
-/* sector chips */
-.chips{display:flex;flex-wrap:wrap;gap:7px;margin-bottom:14px}
-.chip{font:500 13px var(--font-sans);color:var(--fg-2);background:rgba(255,255,255,.55);border:1px solid rgba(255,255,255,.5);padding:8px 15px;border-radius:var(--pill);cursor:pointer;white-space:nowrap;transition:.15s;box-shadow:var(--shadow-1)}
-.chip:hover{color:var(--fg-1);transform:translateY(-1px)}
-:root[data-theme="dark"] .chip{background:rgba(255,255,255,.07);border-color:rgba(255,255,255,.12)}
-.chip.active{background:#000;color:#fff;border-color:#000}
-:root[data-theme="dark"] .chip.active{background:#fff;color:#000;border-color:#fff}
-.chip.hide{display:none}
-.chip.more{color:var(--fg-2);border:1px dashed var(--border-2);background:rgba(255,255,255,.4);box-shadow:none}
-.chip.more:hover{color:var(--fg-1);border-color:var(--fg-3)}
-:root[data-theme="dark"] .chip.more{background:rgba(255,255,255,.05);border-color:rgba(255,255,255,.22)}
-
 .count-row{font:500 14px var(--font-sans);color:var(--fg-3);margin-bottom:12px}
 .count-row b{color:var(--fg-1);font-weight:700}
 
@@ -222,14 +210,6 @@ body::before{content:"";position:fixed;inset:0;z-index:-1;pointer-events:none;
 .add-filter:hover{filter:brightness(1.1)}.add-filter:active{transform:scale(.98)}
 :root[data-theme="dark"] .add-filter{background:#fff;color:#000}
 .add-filter svg{width:16px;height:16px}
-.presets{display:flex;align-items:center;gap:8px;flex-wrap:wrap;margin-bottom:12px}
-.presets .plabel{font:600 12px var(--font-sans);color:var(--fg-3);margin-right:2px}
-.preset-pill{font:600 13px var(--font-sans);color:var(--fg-2);background:rgba(0,0,0,.05);border:1px solid transparent;padding:8px 14px;border-radius:var(--pill);cursor:pointer;transition:.14s;white-space:nowrap}
-.preset-pill:hover{color:var(--fg-1);background:rgba(0,0,0,.08)}
-:root[data-theme="dark"] .preset-pill{background:rgba(255,255,255,.07)}
-:root[data-theme="dark"] .preset-pill:hover{background:rgba(255,255,255,.12)}
-.preset-pill.on{color:#fff;background:#000;border-color:#000}
-:root[data-theme="dark"] .preset-pill.on{color:#000;background:#fff;border-color:#fff}
 .fchips{display:flex;align-items:center;flex-wrap:wrap;gap:8px;margin-bottom:16px;min-height:4px}
 .fchips .lbl{font:500 13px var(--font-sans);color:var(--fg-3)}
 .fchip{display:inline-flex;align-items:center;gap:2px;font:600 13px var(--font-sans);color:var(--fg-1);
@@ -267,13 +247,6 @@ body::before{content:"";position:fixed;inset:0;z-index:-1;pointer-events:none;
 .pop-close svg{width:16px;height:16px}
 .pop-body{padding:4px 8px 8px;max-height:min(54vh,440px);overflow-y:auto}
 
-/* preset row */
-.pop-presets{padding:2px 6px 10px;margin:0 0 6px;border-bottom:1px solid var(--hair)}
-.pop-presets .ph{font:600 11px var(--font-sans);letter-spacing:.04em;color:var(--fg-3);padding:4px 6px 8px}
-.pop-presets .pp{display:flex;flex-wrap:wrap;gap:6px;padding:0 6px}
-.pp button{font:500 13px var(--font-sans);color:var(--fg-2);background:rgba(0,0,0,.05);border:0;padding:7px 12px;border-radius:var(--pill);cursor:pointer;transition:.12s}
-.pp button:hover{color:var(--fg-1);background:rgba(0,0,0,.09)}
-:root[data-theme="dark"] .pp button{background:rgba(255,255,255,.08)}
 
 /* field list */
 .pop-field{display:flex;align-items:center;gap:10px;width:100%;text-align:left;padding:11px 12px;border-radius:10px;
@@ -787,12 +760,8 @@ document.addEventListener('click', function (e) {
     </div>
   </div>
 
-  <div class="chips" id="chips" data-i18n-skip></div>
-
-  <!-- 테마: 숫자를 몰라도 한 번에 고를 수 있는 입구 -->
-  <div class="presets" id="presetRow" data-i18n-skip></div>
-
-  <!-- 지금 걸려 있는 조건 -->
+  <!-- 지금 걸려 있는 조건. 업종도 여기에 들어온다 — 조건을 고르는 자리가
+       둘이면 어느 쪽이 이기는지 설명할 수 없다. -->
   <div class="fchips" id="fchips" data-i18n-skip></div>
 
   <div class="count-row"><b id="countN">0</b>개 리포트</div>
@@ -890,21 +859,15 @@ const REPORTS_DEFAULT=[
 const REPORTS = window.KOS_LIVE_DATA?.stocks || REPORTS_DEFAULT;
 
 const rcats=r=>(r.categories&&r.categories.length?r.categories:[r.sector]);
-const SECTORS=['전체',...[...new Set(REPORTS.flatMap(rcats))]];
+/* 업종마다 몇 종목인지 같이 센다. 고르기 전에 규모를 알 수 있어야
+   '전기·전자 3개' 같은 헛걸음을 안 한다. */
+const SECTORS=[...new Set(REPORTS.flatMap(rcats))]
+  .map(name=>({name,count:REPORTS.filter(r=>rcats(r).includes(name)).length}))
+  .sort((a,b)=>b.count-a.count);
 
-const state={q:'',sector:'전체',sort:'mcap_desc',expanded:false,page:1,pageSize:20,filters:{}};
+const state={q:'',sort:'mcap_desc',page:1,pageSize:20,filters:{}};
 const rowsEl=document.getElementById('rows'),rlEl=document.getElementById('rl'),emptyEl=document.getElementById('empty');
 
-const VISIBLE_CHIPS=7;
-function buildChips(){
-  const c=document.getElementById('chips');
-  c.classList.toggle('expanded', !!state.expanded);
-  c.innerHTML=SECTORS.map((s,i)=>{
-    const extra=i>=VISIBLE_CHIPS;
-    const cls='chip'+(s===state.sector?' active':'')+(extra?' extra':'')+((extra&&!state.expanded)?' hide':'');
-    return `<button class="${cls}" data-sector="${s}">${T(s)}</button>`;
-  }).join('') + (SECTORS.length>VISIBLE_CHIPS?`<button class="chip more" id="chipMore" type="button">${state.expanded?T('접기 ▲'):T('더보기 ▾')}</button>`:'');
-}
 const SORT_LABEL={mcap_desc:'시가총액 높은 순',mcap_asc:'시가총액 낮은 순',change_desc:'등락률 높은 순',change_asc:'등락률 낮은 순',date:'최신 리포트순',name:'종목명순',per_asc:'PER 낮은 순',pbr_asc:'PBR 낮은 순',div_desc:'배당수익률 높은 순'};
 function repaintSort(){
   const sl=document.getElementById('sortLabel'); if(sl) sl.textContent=T(SORT_LABEL[state.sort]);
@@ -925,7 +888,6 @@ function byNum(k,dir){
 function getList(){
   const t=state.q.trim().toLowerCase();
   let l=REPORTS.filter(r=>{
-    if(state.sector!=='전체'&&!rcats(r).includes(state.sector))return false;
     if(!passesFilters(r))return false;
     if(t&&!(r.name.toLowerCase().includes(t)||r.ticker.includes(t)||r.sector.toLowerCase().includes(t)||T(r.name).toLowerCase().includes(t)||T(r.sector).toLowerCase().includes(t)))return false;
     return true;
@@ -1018,6 +980,10 @@ function needVal(){
 }
 
 const FIELDS={
+  /* 업종이 맨 위다. 제일 많이 쓰는 조건이라 창을 열면 바로 눈에 와야 한다.
+     여러 개를 함께 고를 수 있다(반도체 + 2차전지) — 칩으로 두었을 때는
+     하나밖에 못 골랐다. */
+  sector:{label:'업종',type:'multi',options:SECTORS},
   market:{label:'시장',type:'segment',options:['전체','코스피','코스닥']},
   mcap:{label:'시가총액',type:'range',unit:'조',quick:[{l:'1조원 이하',max:1},{l:'1조원 이상 ~ 10조원 이하',min:1,max:10},{l:'10조원 이상',min:10}]},
   per:{label:'PER',type:'range',unit:'배',quick:[{l:'10배 이하',max:10},{l:'20배 이하',max:20}]},
@@ -1025,7 +991,7 @@ const FIELDS={
   div:{label:'배당수익률',type:'range',unit:'%',quick:[{l:'2% 이상',min:2},{l:'4% 이상',min:4}]},
   rev:{label:'매출 성장률',type:'range',unit:'%',quick:[{l:'10% 이상',min:10},{l:'20% 이상',min:20},{l:'25% 이상',min:25}]},
 };
-const FIELD_ORDER=['market','mcap','per','pbr','div','rev'];
+const FIELD_ORDER=['sector','market','mcap','per','pbr','div','rev'];
 /* market·mcap 은 stocks.js 에 이미 있다. 나머지만 valuation.js 를 기다린다. */
 const NEEDS_VAL=new Set(['per','pbr','div','rev']);
 /* 정렬도 마찬가지다. 값이 없으면 byNum 이 전부 뒤로 보내 시가총액순처럼
@@ -1033,18 +999,15 @@ const NEEDS_VAL=new Set(['per','pbr','div','rev']);
 const SORT_NEEDS_VAL=new Set(['per_asc','pbr_asc','div_desc']);
 const UNIT=u=>(EN()?({'조':'T','배':'x','%':'%'})[u]||u:u);
 
-const PRESETS={
-  '저PER 가치주':{mcap:{min:0.5,max:null},per:{min:null,max:10}},
-  '고배당주':{mcap:{min:0.5,max:null},div:{min:4,max:null}},
-  '고성장주':{mcap:{min:0.5,max:null},rev:{min:25,max:null}},
-  '대형 우량주':{mcap:{min:10,max:null},per:{min:null,max:15}},
-  '저PBR 자산주':{mcap:{min:0.5,max:null},pbr:{min:null,max:1}},
-};
+/* 테마('저PER 가치주' 같은 묶음)는 두지 않는다. 기준값을 우리가 임의로 정해
+   이름을 붙여 종목을 묶어 보여 주면, 면책 조항에 적어 둔 '투자 권유나 추천이
+   아닙니다' 와 부딪힐 소지가 있다. 조건은 사용자가 직접 정한다. */
 
 function passesFilters(r){
   for(const k in state.filters){
     const f=FIELDS[k],v=state.filters[k];
     if(f.type==='segment'){ if(v!=='전체'&&r.market!==v) return false; }
+    else if(f.type==='multi'){ if(v.length&&!rcats(r).some(c=>v.includes(c))) return false; }
     else {
       /* 값을 아직 못 받았으면 아무도 못 걸러낸다. 여기서 false 를 주면 필터를
          거는 순간 목록이 통째로 비어 "조건에 맞는 종목이 없다" 로 보인다. */
@@ -1077,6 +1040,8 @@ function metricBits(r){
 function chipLabel(k){
   const f=FIELDS[k],v=state.filters[k],L=T(f.label);
   if(f.type==='segment')return `${L} · ${T(v)}`;
+  if(f.type==='multi')return v.length===1?`${L} · ${T(v[0])}`
+    :(EN()?`${L} · ${T(v[0])} +${v.length-1}`:`${L} · ${T(v[0])} 외 ${v.length-1}`);
   const u=UNIT(f.unit);
   if(v.min!=null&&v.max!=null)return `${L} ${v.min}–${v.max}${u}`;
   if(v.min!=null)return EN()?`${L} ≥ ${v.min}${u}`:`${L} ${v.min}${u} 이상`;
@@ -1090,28 +1055,6 @@ function renderFchips(){
     `<span class="fchip" data-field="${k}"><span class="lab">${chipLabel(k)}</span><span class="x" data-remove="${k}">✕</span></span>`).join('')
     +`<button class="clear-all" id="clearAll">${T('모두 지우기')}</button>`;
 }
-
-/* ── 테마 ── */
-function presetActive(name){
-  const p=PRESETS[name],keys=Object.keys(p),fk=Object.keys(state.filters);
-  if(fk.length!==keys.length) return false;
-  return keys.every(k=>{const a=state.filters[k],b=p[k];
-    return a&&((a.min??null)===(b.min??null))&&((a.max??null)===(b.max??null));});
-}
-function renderPresets(){
-  const row=document.getElementById('presetRow');if(!row)return;
-  row.innerHTML=`<span class="plabel">${T('테마')}</span>`+Object.keys(PRESETS).map(n=>
-    `<button class="preset-pill${presetActive(n)?' on':''}" data-preset="${n}">${T(n)}</button>`).join('');
-}
-async function applyPreset(name){
-  if(presetActive(name)){ state.filters={}; }
-  else{ await needVal(); const p=PRESETS[name]; state.filters={};
-        for(const k in p) state.filters[k]={min:p[k].min??null,max:p[k].max??null}; }
-  state.page=1;render();
-}
-document.getElementById('presetRow').addEventListener('click',e=>{
-  const b=e.target.closest('[data-preset]');if(b)applyPreset(b.dataset.preset);
-});
 
 /* ── 조건을 고르는 창 ── */
 const backdrop=document.getElementById('popBackdrop'),popover=document.getElementById('popover');
@@ -1133,9 +1076,6 @@ function openPop(anchor,view,field){
   popApply.textContent=T('적용');popRemove.textContent=T('제거');
   backdrop.classList.add('open');popover.classList.add('open');
   if(view==='list')showList();else showEditor(field);
-  /* 창을 여는 순간 값을 받아 둔다. 사용자가 조건을 고르는 동안 도착하므로
-     '적용'을 누를 때는 이미 준비돼 있다. */
-  needVal().then(v=>{ if(v&&anyFilter()) render(); });
 }
 function closePop(){backdrop.classList.remove('open');popover.classList.remove('open');curField=null;}
 
@@ -1151,12 +1091,22 @@ function showList(){
 }
 function showEditor(k){
   curField=k;const f=FIELDS[k],cur=state.filters[k];
+  /* 값이 필요한 조건을 펼치는 순간 받기 시작한다. 사용자가 숫자를 넣는 동안
+     도착하므로 '적용'을 누를 때는 대개 준비돼 있다.
+
+     창을 여는 순간이 아니라 여기여야 한다. 업종은 제일 많이 쓰는 조건인데
+     valuation.js 가 필요 없다 — 창을 열 때 받으면 업종만 고르는 사람에게
+     279KB 를 헛되이 지운다. */
+  if(NEEDS_VAL.has(k)) needVal().then(v=>{ if(v&&anyFilter()) render(); });
   popTitle.textContent=T(f.label);
   popBack.style.display='inline-flex';popFoot.style.display='flex';
   popRemove.style.display=cur!=null?'inline-flex':'none';
   let html='<div class="pop-editor">';
   if(f.type==='segment'){
     html+='<div class="seg" data-ctl="segment">'+f.options.map(o=>`<button class="${(cur||'전체')===o?'active':''}" data-v="${o}">${T(o)}</button>`).join('')+'</div>';
+  }else if(f.type==='multi'){
+    const sel=new Set(cur||[]);
+    html+='<div class="checks" data-ctl="multi">'+f.options.map(o=>`<label class="check ${sel.has(o.name)?'on':''}" data-v="${o.name}"><span class="box">${checkSvg}</span>${T(o.name)}<span class="count">${o.count}</span></label>`).join('')+'</div>';
   }else{
     const mn=cur&&cur.min!=null?cur.min:'',mx=cur&&cur.max!=null?cur.max:'';
     html+='<div class="range-edit" data-ctl="range"><div class="range-inputs">'+
@@ -1173,10 +1123,14 @@ function showEditor(k){
 function readEditor(){
   const f=FIELDS[curField];
   if(f.type==='segment'){const a=popBody.querySelector('.seg .active');return a?a.dataset.v:'전체';}
+  if(f.type==='multi')return[...popBody.querySelectorAll('.check.on')].map(c=>c.dataset.v);
   const mn=popBody.querySelector('#rMin').value,mx=popBody.querySelector('#rMax').value;
   return{min:mn===''?null:+mn,max:mx===''?null:+mx};
 }
-function isEmptyVal(v){const f=FIELDS[curField];if(f.type==='segment')return v==='전체';return v.min==null&&v.max==null;}
+function isEmptyVal(v){const f=FIELDS[curField];
+  if(f.type==='segment')return v==='전체';
+  if(f.type==='multi')return v.length===0;
+  return v.min==null&&v.max==null;}
 
 document.getElementById('addFilterBtn').addEventListener('click',e=>openPop(e.currentTarget,'list'));
 backdrop.addEventListener('click',closePop);
@@ -1188,6 +1142,8 @@ popBody.addEventListener('click',e=>{
   if(fieldBtn){showEditor(fieldBtn.dataset.field);return;}
   const seg=e.target.closest('.seg button');
   if(seg){[...seg.parentElement.children].forEach(b=>b.classList.toggle('active',b===seg));return;}
+  const chk=e.target.closest('.check');
+  if(chk){chk.classList.toggle('on');return;}
   const q=e.target.closest('.range-quick button');
   if(q){const f=FIELDS[curField],qd=f.quick[+q.dataset.qi];
     popBody.querySelector('#rMin').value=qd.min!=null?qd.min:'';
@@ -1210,7 +1166,7 @@ document.getElementById('fchips').addEventListener('click',e=>{
 });
 
 function render(){
-  buildChips();repaintSort();renderPresets();renderFchips();
+  repaintSort();renderFchips();
   const l=getList();
   document.getElementById('countN').textContent=l.length;
   const pager=document.getElementById('pager');
@@ -1280,13 +1236,6 @@ document.addEventListener('click',e=>{if(!sortCtl.contains(e.target))sortCtl.cla
 document.getElementById('emptyReset').addEventListener('click',()=>{
   state.filters={};state.page=1;render();
 });
-document.getElementById('chips').addEventListener('click',e=>{
-  const more=e.target.closest('#chipMore');
-  if(more){ state.expanded=!state.expanded; buildChips(); return; }
-  const b=e.target.closest('.chip');if(!b||b.classList.contains('more'))return;
-  state.sector=b.dataset.sector;state.page=1;
-  render();
-});
 
 const menuBtn=document.getElementById('menuBtn'),mobileMenu=document.getElementById('mobileMenu');
 menuBtn.addEventListener('click',()=>mobileMenu.classList.toggle('open'));
@@ -1309,14 +1258,12 @@ const REPORTS_DICT={
   "종목":"Stock","AI 한줄 요약":"AI Summary","리포트 제목":"Report Title","리포트 준비 중":"Report coming soon","발행일":"Date",
   "시가총액순":"By Market Cap","등락률순":"By Change","최신 리포트순":"Latest First","종목명순":"By Name",
   "시가총액 높은 순":"Market Cap: High→Low","시가총액 낮은 순":"Market Cap: Low→High","등락률 높은 순":"Change: High→Low","등락률 낮은 순":"Change: Low→High",
-  "더보기 ▾":"More ▾","접기 ▲":"Less ▲",
   "필터 추가":"Add filter","필터":"Filters","모두 지우기":"Clear all","적용":"Apply","제거":"Remove",
+  "업종":"Industry",
   "최소":"Min","최대":"Max","필터 초기화":"Reset filters",
   "조건을 만족하는 종목이 없습니다. 조건을 넓히거나 지워 보세요.":"No stocks match these conditions. Try widening or removing a filter.",
   "다른 종목명·티커·업종으로 검색해 보세요.":"Try a different name, ticker, or industry.",
   "PER 낮은 순":"PER: Low→High","PBR 낮은 순":"PBR: Low→High","배당수익률 높은 순":"Dividend Yield: High→Low",
-  "테마":"Themes",
-  "저PER 가치주":"Low-PER Value","고배당주":"High Dividend","고성장주":"High Growth","대형 우량주":"Large-Cap Quality","저PBR 자산주":"Low-PBR Asset Plays",
   "시장":"Market","코스피":"KOSPI","코스닥":"KOSDAQ",
   "시가총액":"Market Cap","배당수익률":"Dividend Yield","매출 성장률":"Revenue Growth",
   "1조원 이하":"Under KRW 1T","1조원 이상 ~ 10조원 이하":"KRW 1T – 10T","10조원 이상":"Over KRW 10T",
