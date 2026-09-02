@@ -2408,8 +2408,15 @@ async function withLock(db, ref, op, fn) {
     const busy = snap.exists && snap.data().busy;
     const at = busy && busy.at && typeof busy.at.toMillis === "function" ? busy.at.toMillis() : 0;
     if (busy && Date.now() - at < BUSY_TTL) {
-      throw new HttpsError("aborted",
+      /* '자물쇠가 잡혀 있다' 를 부르는 쪽이 구별할 수 있어야 한다. 갱신 배치는
+         이걸 실패로 적으면 안 되고 건너뛰어야 한다.
+
+         HttpsError 의 code 로 구별하지 않는다 — 그 속성 이름은 라이브러리 사정이고,
+         바뀌면 조용히 '결제 실패' 로 적히기 시작한다. 우리가 붙인 표시를 본다. */
+      const e = new HttpsError("aborted",
         "앞서 요청하신 건을 처리하는 중입니다. 잠시 후 다시 시도하여 주시기 바랍니다.");
+      e.kosLocked = true;
+      throw e;
     }
     tx.set(ref, { busy: { op, at: admin.firestore.Timestamp.now() } }, { merge: true });
   });
@@ -3058,8 +3065,17 @@ if (PAYMENTS_LIVE) exports.renewSubscriptions = onSchedule(
       .limit(400).get();
     console.log(`[renew] 대상 ${due.size}건`);
 
+    if (due.size >= 400) {
+      // 한 번에 400건까지만 본다. 꽉 찼다는 건 못 본 사람이 남았다는 뜻이고,
+      // 그 사람들은 하루 늦게 갱신된다. 조용히 밀리면 안 되니 알린다.
+      console.error("[renew] 대상이 상한(400)까지 찼다 — 남은 건은 내일로 밀린다");
+    }
+
     for (const d of due.docs) {
-      const uid = d.id, sub = d.data();
+      const uid = d.id;
+      let sub = d.data();
+      // 실패 기록에 쓸 플랜. try 안에서 정하면 catch 가 못 본다.
+      let plan = sub.pendingPlan || sub.plan;
       try {
         // 탈퇴로 계정이 사라진 문서가 남아 있으면 긁지 않는다. deleteAccount 가
         // status 를 바꿔 두므로 여기까지 오지 않지만, 한 번 더 확인한다 —
@@ -3077,28 +3093,56 @@ if (PAYMENTS_LIVE) exports.renewSubscriptions = onSchedule(
           }
           throw e;
         }
-        if (sub.cancelAtPeriodEnd) {
-          await d.ref.set({ status: "expired", updatedAt: admin.firestore.FieldValue.serverTimestamp() }, { merge: true });
+        /* 사용자가 만지는 함수들과 같은 자물쇠를 잡는다.
+
+           안 잡으면 이런 일이 난다. 갱신 대상은 '기간이 이미 끝난' 문서라
+           subActive 가 false 다. 그래서 해지·환불·플랜 변경은 저절로 막히지만,
+           '새 결제' 만은 막히지 않는다("이미 이용 중" 검사를 안 타므로). 배치가
+           카드를 긁는 사이에 그 사람이 결제 화면에서 결제하면 같은 사람에게 두
+           번 청구되고, periodPayments 는 나중에 쓴 쪽만 남아 다른 한 건은 환불도
+           되지 않는다.
+
+           자물쇠를 못 잡으면 건너뛴다. 실패로 적으면 방금 정상적으로 결제한
+           사람에게 '결제 실패' 가 뜬다. */
+        await withLock(db, d.ref, "renew", async () => {
+          /* 자물쇠를 잡는 사이에 상태가 바뀌었을 수 있다. 목록을 만든 시점의
+             값을 그대로 믿으면 이미 갱신된 구독을 또 긁는다. */
+          const fresh = (await d.ref.get()).data();
+          if (!fresh || fresh.status !== "active") return;
+          const endMs = fresh.currentPeriodEnd && fresh.currentPeriodEnd.toMillis
+            ? fresh.currentPeriodEnd.toMillis() : 0;
+          if (endMs > now.getTime()) return;      // 그 사이 새 기간이 시작됐다
+          sub = fresh;
+          plan = sub.pendingPlan || sub.plan;     // 예약된 다운그레이드를 여기서 적용
+
+          if (sub.cancelAtPeriodEnd) {
+            await d.ref.set({ status: "expired", updatedAt: admin.firestore.FieldValue.serverTimestamp() }, { merge: true });
+            return;
+          }
+          const pay = await charge(db, uid, { ...sub, plan }, PRICE[plan],
+            `${PLAN_NAME[plan]} 월 구독`, "renew", null,
+            `renew_${uid}_${kstDayNo(endMs)}`);
+          await d.ref.set({
+            plan, pendingPlan: null, status: "active",
+            currentPeriodStart: admin.firestore.Timestamp.fromDate(now),
+            currentPeriodEnd: admin.firestore.Timestamp.fromDate(addMonth(now)),
+            lastPaymentKey: pay ? pay.paymentKey : sub.lastPaymentKey,
+            // 새 주기다 — 지난 주기의 결제 건은 여기서 끊는다. 이어 붙이면
+            // 환불이 이미 지나간 달의 돈까지 기준에 넣는다.
+            periodPayments: pay
+              ? [{ key: pay.paymentKey, amount: PRICE[plan], from: now.getTime() }] : [],
+            refundDone: admin.firestore.FieldValue.delete(),
+            failedAt: null,
+            updatedAt: admin.firestore.FieldValue.serverTimestamp(),
+          }, { merge: true });
+        });
+      } catch (e) {
+        /* 자물쇠를 못 잡은 것은 실패가 아니다. 그 사람이 지금 결제·환불을 하는
+           중이라는 뜻이므로 건드리지 않고 넘어간다 — 다음 날 배치가 다시 본다. */
+        if (e && e.kosLocked) {
+          console.warn(`[renew] 사용자가 처리 중 — 건너뜀 uid=${uid}`);
           continue;
         }
-        const plan = sub.pendingPlan || sub.plan;   // 예약된 다운그레이드를 여기서 적용
-        const pay = await charge(db, uid, { ...sub, plan }, PRICE[plan],
-          `${PLAN_NAME[plan]} 월 구독`, "renew", null,
-          `renew_${uid}_${kstDayNo(sub.currentPeriodEnd.toMillis())}`);
-        await d.ref.set({
-          plan, pendingPlan: null, status: "active",
-          currentPeriodStart: admin.firestore.Timestamp.fromDate(now),
-          currentPeriodEnd: admin.firestore.Timestamp.fromDate(addMonth(now)),
-          lastPaymentKey: pay ? pay.paymentKey : sub.lastPaymentKey,
-          // 새 주기다 — 지난 주기의 결제 건은 여기서 끊는다. 이어 붙이면
-          // 환불이 이미 지나간 달의 돈까지 기준에 넣는다.
-          periodPayments: pay
-            ? [{ key: pay.paymentKey, amount: PRICE[plan], from: now.getTime() }] : [],
-          refundDone: admin.firestore.FieldValue.delete(),
-          failedAt: null,
-          updatedAt: admin.firestore.FieldValue.serverTimestamp(),
-        }, { merge: true });
-      } catch (e) {
         // 한도 초과·정지 카드 등. 바로 끊지 않고 상태만 남긴다 — 사용자가 카드를
         // 바꿀 시간을 줘야 한다. 이용 권한은 currentPeriodEnd 가 지나 자연히 닫힌다.
         console.error(`[renew] 실패 uid=${uid}`, e && e.message);
@@ -3106,9 +3150,11 @@ if (PAYMENTS_LIVE) exports.renewSubscriptions = onSchedule(
           status: "past_due", failedAt: admin.firestore.FieldValue.serverTimestamp(),
           updatedAt: admin.firestore.FieldValue.serverTimestamp(),
         }, { merge: true });
+        /* 청구하려던 플랜으로 적는다. 다운그레이드가 예약돼 있었으면 옛 플랜의
+           금액을 적게 되는데, 내역에 실제와 다른 금액이 남는다. */
         await writePayment(db, uid, {
-          amount: PRICE[sub.plan] || 0, description: "정기결제 실패",
-          kind: "failed", status: "failed", plan: sub.plan, paidAt: null,
+          amount: PRICE[plan] || 0, description: "정기결제 실패",
+          kind: "failed", status: "failed", plan, paidAt: null,
         });
       }
     }

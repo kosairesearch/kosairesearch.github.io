@@ -427,7 +427,15 @@ window.KOSDemo = {
     const sub = read(SUB_KEY, null);
     if (!sub) throw new Error("구독 없음");
     if (what === "past_due") { sub.status = "past_due"; }
-    else if (what === "expired") { sub.status = "active"; sub.currentPeriodEnd = Date.now() - 1000; }
+    else if (what === "expired") {
+      /* 자연히 끝난 구독처럼 보이게 만든다. 끝나는 날만 과거로 밀면 방금 결제한
+         구독에서는 시작일보다 종료일이 앞서는, 실제로는 있을 수 없는 값이 된다.
+         화면이 그 값을 그대로 그리므로 앞뒤가 안 맞는 안내가 나온다. */
+      const end = Date.now() - 1000;
+      sub.status = "active";
+      sub.currentPeriodEnd = end;
+      sub.currentPeriodStart = Math.min(sub.currentPeriodStart, end - 30 * 86400e3);
+    }
     else throw new Error("past_due | expired");
     write(SUB_KEY, sub); emit();
   },
