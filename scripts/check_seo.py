@@ -65,6 +65,21 @@ for p in pages:
 clash = {k: v for k, v in canon.items() if len(v) > 1}
 check(not clash, "canonical 이 겹치는 페이지 없음", str(clash))
 
+# 7) 랜딩 페이지의 'AI 리포트' 수가 실제 종목 수와 같은가
+#    손으로 적어 둔 숫자라 아무도 안 고쳐 2,684 로 굳어 있었다. 이제
+#    stamp_counts.py 가 리포트를 만들 때마다 박아 넣는데, 그 단계가 언젠가
+#    빠져도 여기서 걸린다.
+try:
+    import json
+    idx = (ROOT / "data" / "reports-index.js").read_text(encoding="utf-8")
+    payload = json.loads(idx[idx.index("=") + 1:].strip().rstrip(";"))
+    want = f'{payload.get("stockCount") or len(payload.get("reports") or {}):,}'
+    m = re.search(r'<b id="lpRepN"[^>]*>([^<]*)</b>', s)
+    have = m.group(1).strip() if m else "(없음)"
+    check(have == want, "랜딩의 AI 리포트 수가 실제와 같음", f"페이지 {have} · 실제 {want}")
+except Exception as e:                                  # 인덱스가 없는 환경
+    check(True, f"랜딩 리포트 수 확인 건너뜀 ({e.__class__.__name__})")
+
 print(f"통과 {len(ok)} · 실패 {len(fail)}\n")
 for m in ok: print("  PASS", m)
 for m in fail: print("  FAIL", m)

@@ -68,12 +68,18 @@ jobs:
           echo "=== 리포트 생성 시작 $(date -u) ===" > data/reports_run.log
           python scripts/generate_reports.py 2>&1 | tee -a data/reports_run.log
 
+      # 랜딩 페이지의 'AI 리포트' 수를 방금 만든 인덱스에 맞춘다. 안 하면 그 숫자만
+      # 옛 값으로 남아 방문자에게 잘못 보인다.
+      - name: 랜딩 페이지 숫자 갱신
+        if: always()
+        run: python scripts/stamp_counts.py || true
+
       - name: 변경사항 커밋 & 푸시
         if: always()
         run: |
           git config --global user.email "bot@kosairesearch.github.io"
           git config --global user.name "KOS ai Bot"
-          git add -A data/
+          git add -A data/ index.html
           git commit --allow-empty -m "🤖 AI 리포트 업데이트 $(TZ='Asia/Seoul' date +'%Y-%m-%d %H:%M KST')"
           for i in 1 2 3 4 5; do
             git fetch origin main && git rebase -X theirs origin/main && git push origin main && break

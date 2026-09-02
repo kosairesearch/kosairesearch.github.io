@@ -33,7 +33,9 @@ jobs:
           git config --global user.email "bot@kosairesearch.github.io"
           git config --global user.name "KOS ai Bot"
           python scripts/_reindex.py || true
-          git add data/reports-index.js
+          # 랜딩 페이지 숫자도 같이 맞춘다(scripts/stamp_counts.py 설명 참고)
+          python scripts/stamp_counts.py || true
+          git add data/reports-index.js index.html
           if git diff --cached --quiet; then
             echo "인덱스 변경 없음"
           else
