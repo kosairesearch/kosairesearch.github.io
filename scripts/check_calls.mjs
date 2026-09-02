@@ -179,5 +179,43 @@ function matchParen(s, i) {
   else if (!fail) console.log(`  PASS 돈 쓰는 함수가 카드사 열쇠를 들고 있다 (${checked}개)`);
 }
 
+/* ── ④ 화면이 읽는 컬렉션에 규칙이 있는가 ───────────────────
+   파이어스토어는 규칙이 없으면 막는다. 그런데 막히는 것이 화면에서는 조용하다 —
+   paywall 은 읽기 실패를 삼키고 '구독 없음' 으로 넘어간다. 그래서 subscriptions
+   규칙이 통째로 빠져 있었는데도 아무 데서도 티가 나지 않았다. 결제를 켜는 날
+   돈을 낸 사람이 '무료로 이용 중' 을 보게 되는 자리였다.
+   ─────────────────────────────────────────────────────────── */
+{
+  const rules = readFileSync(join(ROOT, "firestore.rules"), "utf8");
+  const noComment = rules.replace(/\/\/[^\n]*/g, "");
+
+  const want = new Set();
+  for (const dir of [STAGING, ROOT]) {
+    for (const f of readdirSync(dir).filter((f) => f.endsWith(".js"))) {
+      const t = readFileSync(join(dir, f), "utf8");
+      for (const m of t.matchAll(/\b(?:doc|collection)\(db,\s*"([A-Za-z_]+)"/g)) want.add(m[1]);
+    }
+  }
+
+  for (const col of [...want].sort()) {
+    // 그 컬렉션을 여는 match 블록에 allow read 가 있는가
+    const re = new RegExp(`match\\s+/${col}/[^{]*\\{([\\s\\S]*?)\\n    \\}`, "m");
+    const m = noComment.match(re);
+    if (!m) bad(`화면이 "${col}" 를 읽는데 firestore.rules 에 규칙이 없다 — 조용히 막힌다`);
+    else if (!/allow\s+read/.test(m[1])) bad(`"${col}" 규칙에 allow read 가 없다 — 화면이 못 읽는다`);
+  }
+  if (!fail) console.log(`  PASS 화면이 읽는 컬렉션에 규칙이 있다 (${want.size}개: ${[...want].sort().join(", ")})`);
+
+  // 돈·한도와 얽힌 컬렉션은 클라이언트 쓰기가 절대 열려 있으면 안 된다
+  for (const col of ["subscriptions", "payments", "report_reads", "reports_paid"]) {
+    const re = new RegExp(`match\\s+/${col}/[^{]*\\{([\\s\\S]*?)\\n    \\}`, "m");
+    const m = noComment.match(re);
+    if (!m) { bad(`"${col}" 규칙이 없다`); continue; }
+    if (!/allow\s+write:\s*if\s+false|allow\s+read,\s*write:\s*if\s+false/.test(m[1])) {
+      bad(`"${col}" 에 클라이언트 쓰기가 열려 있다 — 콘솔에서 plan 을 고칠 수 있다`);
+    }
+  }
+}
+
 console.log(fail ? `\nFAIL ${fail}건` : "\nPASS 호출부가 전부 맞다");
 process.exit(fail ? 1 : 0);
