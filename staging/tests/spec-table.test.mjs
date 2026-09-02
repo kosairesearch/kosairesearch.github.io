@@ -39,17 +39,34 @@ writeFileSync(TMP + "/payment-config.js", readFileSync(STAGING + "/payment-confi
 writeFileSync(TMP + "/demo.js", readFileSync(STAGING + "/demo-backend.js", "utf8")
   .replace(/from "\.\/firebase-config\.js"/g, 'from "./stub.js"')
   .replace(/from "https:\/\/www\.gstatic\.com\/firebasejs\/[^"]+"/g, 'from "./stub.js"'));
+writeFileSync(TMP + "/panel.js", readFileSync(STAGING + "/settings-panel.js", "utf8")
+  .replace(/from "\.\/firebase-config\.js"/g, 'from "./stub.js"')
+  .replace(/from "https:\/\/www\.gstatic\.com\/firebasejs\/[^"]+"/g, 'from "./stub.js"')
+  .replace(/from "\.\/consent\.js"/g, 'from "./stub-consent.js"')
+  .replace(/from "\.\/subscription-api\.js"/g, 'from "./stub-api.js"'));
+writeFileSync(TMP + "/stub-consent.js", `
+export const getMarketing = async () => true;
+export const setMarketing = async () => {};
+export const accountInfo = async u => ({ name: u.displayName, email: u.email });
+`);
+writeFileSync(TMP + "/stub-api.js", `
+export const call = (n, d) => window.KOSDemo.call(n, d || {});
+`);
 writeFileSync(TMP + "/stub.js", `
 export const app={}; export const isConfigured=true; export const SOCIAL={};
 export const auth={currentUser:{uid:"u1",email:"a@b.c",displayName:"t"}};
-export const onAuthStateChanged=(a,fn)=>{Promise.resolve().then(()=>fn(a.currentUser));return()=>{}};`);
+export const onAuthStateChanged=(a,fn)=>{Promise.resolve().then(()=>fn(a.currentUser));return()=>{}};
+export const signOut = async () => {};`);
 
-const dom = new JSDOM("<!doctype html><body>", { url: "https://kosai.kr/staging/x.html" });
+const dom = new JSDOM(
+  `<!doctype html><body><button id="themeBtn"></button><div id="mount"></div></body>`,
+  { url: "https://kosai.kr/staging/x.html", pretendToBeVisual: true });
 for (const k of ["window", "document", "Event", "Node", "HTMLElement",
                  "location", "localStorage", "URL", "URLSearchParams"]) globalThis[k] = dom.window[k];
 globalThis.fetch = async () => ({ ok: true, json: async () => ({
   ticker: "x", earnings: "e", outlook: "o", bull: "b", bear: "b", risks: "r", verdict: "v" }) });
 await import(`file://${TMP}/demo.js`);
+const P = await import(`file://${TMP}/panel.js`);
 
 const D = window.KOSDemo, PW = window.KOSPaywall;
 const SUB = "kos-demo-sub";
@@ -165,6 +182,47 @@ for (const [st, act, run, want] of MSG) {
   const good = msg === want;
   ok(`${st} · ${act} 문구`, good, `기대 "${want}" · 실제 "${msg}"`);
   console.log(`  ${good ? "PASS" : "FAIL"}  ${st} · ${act.padEnd(10)} "${msg}"`);
+}
+
+/* ── 화면이 그 상태를 뭐라고 보여 주는가 ─────────────────────
+   계산이 맞아도 화면이 다른 말을 하면 소용없다. 상태마다 설정 창을 실제로
+   그려서 상태 배지와 버튼을 본다.
+
+   특히 '환불 완료' 는 status 가 그대로 "active" 라(오늘 값을 받은 환불은
+   자정까지 살아 있다) 그것만 보면 '이용 중' 과 해지·플랜 변경 버튼을 그대로
+   보여 주게 된다. 실제로 그랬던 적이 있다.
+   ─────────────────────────────────────────────────────────── */
+console.log("\n── 상태마다 화면이 뭐라고 하는가 ──\n");
+const mount = () => document.getElementById("mount");
+const settle = async () => { for (let i = 0; i < 30; i++) await new Promise((r) => setTimeout(r, 1)); };
+const draw = async () => {
+  mount().textContent = "";
+  P.renderSettings(mount(), { tab: "subscription" });
+  await settle();
+};
+const txt = () => mount().textContent.replace(/\s+/g, " ").trim();
+const btns = () => [...mount().querySelectorAll(".ks-btn")].map((b) => b.textContent.trim());
+
+const SCREEN = [
+  ["A", "무료로 이용 중",  ["플랜 보기"],                  ["해지", "환불 신청"]],
+  ["B", "이용 중",         ["해지", "환불 신청"],          ["다시 시작하기", "해지 취소"]],
+  ["C", "해지 예약됨",     ["해지 취소", "환불 신청"],     ["해지"]],
+  ["D", "이용 중",         ["해지", "환불 신청"],          ["다시 시작하기"]],
+  ["E", "결제 실패",       ["결제 수단 변경"],             ["해지", "환불 신청"]],
+  ["F", "환불 완료",       ["다시 시작하기"],              ["해지", "환불 신청", "플랜 변경"]],
+  /* 끝난 구독은 '멤버십 보기' 다. 환불 직후(F)만 '다시 시작하기' 로 다르게
+     적는다 — 마음이 바뀐 사람에게 필요한 건 요금표 구경이 아니라 결제로 가는
+     길이라서다. 둘 다 요금제 화면으로 간다. */
+  ["G", "이용 종료됨",     ["멤버십 보기"],                ["해지", "환불 신청"]],
+];
+for (const [code, badge, must, mustNot] of SCREEN) {
+  await setup(code, code === "D" ? "pro" : "basic");
+  await draw();
+  const t = txt(), b = btns();
+  ok(`${code} 화면이 "${badge}" 로 적는다`, t.includes(badge), t.slice(0, 140));
+  for (const x of must) ok(`${code} 화면에 [${x}] 가 있다`, b.some((y) => y.includes(x)), b.join(" | "));
+  for (const x of mustNot) ok(`${code} 화면에 [${x}] 가 없다`, !b.some((y) => y === x), b.join(" | "));
+  console.log(`  ${code}  ${badge.padEnd(12)} ${b.join(" · ")}`);
 }
 
 rmSync(TMP, { recursive: true, force: true });

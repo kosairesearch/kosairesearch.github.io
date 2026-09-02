@@ -654,7 +654,17 @@ function paneSubscription() {
        플랜 변경 버튼을 그대로 보여 주게 된다. 환불 여부는 refundedAt 이 말한다. */
     const refunded = !!(sub && sub.refundedAt);
     const due = !active && !refunded && sub && sub.status === "past_due";
-    const ended = !active && !due && sub && (sub.status === "refunded" || sub.currentPeriodEnd);
+    /* 이용 중도, 결제 실패도, 환불도 아닌데 기간이 있으면 끝난 구독이다.
+
+       전에는 sub.status === "refunded" 도 같이 봤는데 그런 상태는 없다 —
+       환불은 status 를 "active" 로 두고 refundedAt 으로 표시한다(그래야 오늘
+       값을 받은 환불이 자정까지 살아 있다). 구독 문서에 들어가는 status 는
+       active · past_due · expired · deleted 넷뿐이다. 죽은 조건을 남겨 두면
+       다음에 읽는 사람이 없는 상태를 있는 줄로 안다.
+
+       currentPeriodEnd 가 없는 문서(자물쇠만 걸린 껍데기)는 여기서 걸리지 않고
+       아래 '무료' 로 떨어진다 — 그게 맞다. */
+    const ended = !active && !due && sub && sub.currentPeriodEnd;
     const plan = planOf(sub && sub.plan);
     const endDay = sub ? fmtDay(sub.currentPeriodEnd, en) : "";
 
