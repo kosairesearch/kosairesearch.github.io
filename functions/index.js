@@ -2637,9 +2637,19 @@ if (PAYMENTS_LIVE) exports.confirmBilling = onCall(
         // 카드만 갈아 끼우고 끝내면 다음 배치가 돌 때까지 하루를 잠긴 채로 둔다.
         if (cur.status === "past_due") {
           const at = new Date();
+          /* 멱등 이름에 카드(빌링키)를 섞는다.
+
+             날짜만으로 지으면 같은 날 카드 A 로 실패한 뒤 카드 B 로 다시 걸 때
+             이름이 똑같아진다. 카드사가 실패한 응답도 그 이름으로 기억한다면
+             두 번째 카드는 긁어 보지도 못하고 첫 실패를 돌려받는다 — 카드를
+             바꿔도 안 되는, 사용자가 손쓸 수 없는 상태가 된다.
+
+             카드사가 실패 응답을 어떻게 다루는지는 여기서 확인할 수 없다.
+             확인할 수 없으면 안전한 쪽으로 짓는다. 빌링키는 카드를 등록할 때마다
+             새로 나오므로, 같은 카드로 두 번 누르는 것은 여전히 한 번만 나간다. */
           const pay = await charge(db, uid, { ...cur, ...patch, plan: cur.plan },
             PRICE[cur.plan], `${PLAN_NAME[cur.plan]} 월 구독`, "retry", null,
-            `retry_${uid}_${kstDay()}`);
+            `retry_${uid}_${kstDay()}_${String(re.billingKey).slice(-12)}`);
           patch.status = "active";
           patch.currentPeriodStart = admin.firestore.Timestamp.fromDate(at);
           patch.currentPeriodEnd = admin.firestore.Timestamp.fromDate(addMonth(at));
@@ -3076,7 +3086,10 @@ if (PAYMENTS_LIVE) exports.refundPreview = onCall({ region: REGION, cors: true }
    02:00 UTC(= 같은 날 11:00 KST)로 적는다. 15시 이후로 잡으면 한국 날짜가 밀린다.
    ─────────────────────────────────────────────────────────── */
 if (PAYMENTS_LIVE) exports.renewSubscriptions = onSchedule(
-  { region: REGION, schedule: "0 2 * * *", timeZone: "Etc/UTC", secrets: [TOSS_SECRET_KEY] },
+  // 카드를 긁으려면 토스 키, 실패를 알리려면 메일 키가 필요하다. 부르는 함수가
+  // 쓰는 열쇠를 여기서 선언하지 않으면 그 자리에서 터진다.
+  { region: REGION, schedule: "0 2 * * *", timeZone: "Etc/UTC",
+    secrets: [TOSS_SECRET_KEY, RESEND_API_KEY] },
   async () => {
     const db = admin.firestore();
     const now = new Date();
@@ -3085,6 +3098,8 @@ if (PAYMENTS_LIVE) exports.renewSubscriptions = onSchedule(
       .where("currentPeriodEnd", "<=", admin.firestore.Timestamp.fromDate(now))
       .limit(400).get();
     console.log(`[renew] 대상 ${due.size}건`);
+
+    const failed = [];                       // 카드가 거절된 사람들 — 아래에서 알린다
 
     if (due.size >= 400) {
       // 한 번에 400건까지만 본다. 꽉 찼다는 건 못 본 사람이 남았다는 뜻이고,
@@ -3167,6 +3182,7 @@ if (PAYMENTS_LIVE) exports.renewSubscriptions = onSchedule(
         // 한도 초과·정지 카드 등. 바로 끊지 않고 상태만 남긴다 — 사용자가 카드를
         // 바꿀 시간을 줘야 한다. 이용 권한은 currentPeriodEnd 가 지나 자연히 닫힌다.
         console.error(`[renew] 실패 uid=${uid}`, e && e.message);
+        failed.push(`${uid} · ${plan} · ${(e && e.message) || e}`);
         await d.ref.set({
           status: "past_due", failedAt: admin.firestore.FieldValue.serverTimestamp(),
           updatedAt: admin.firestore.FieldValue.serverTimestamp(),
@@ -3178,6 +3194,24 @@ if (PAYMENTS_LIVE) exports.renewSubscriptions = onSchedule(
           kind: "failed", status: "failed", plan, paidAt: null,
         });
       }
+    }
+
+    /* 카드가 거절된 사람이 있으면 운영자에게 알린다.
+
+       여태 아무 데도 안 알렸다. 사용자는 설정 창을 직접 열기 전에는 자기 카드가
+       막힌 줄 모르고, 우리는 몇 명이 그렇게 멈춰 있는지 알 방법이 없었다.
+       카드사 쪽 문제로 여러 건이 한꺼번에 막히는 날도 이 메일이 없으면 조용히
+       지나간다.
+
+       없는 날은 알리지 않는다 — 매일 '0건' 이 오면 그 알림은 아무도 안 읽는다. */
+    if (failed.length) {
+      await alertOps(`정기결제 실패 ${failed.length}건`, [
+        "아래 회원의 카드가 거절되어 '결제 실패' 상태로 두었습니다.",
+        "카드를 다시 등록하면 그 자리에서 결제되어 이용이 재개됩니다.",
+        "",
+        ...failed.slice(0, 30),
+        failed.length > 30 ? `… 외 ${failed.length - 30}건` : "",
+      ].filter(Boolean));
     }
   }
 );

@@ -235,8 +235,16 @@ console.log("\n── 원본에 그 장치들이 있는가 ──");
   const { fileURLToPath } = await import("node:url");
   const { dirname, join } = await import("node:path");
   const src = readFileSync(join(dirname(fileURLToPath(import.meta.url)), "..", "index.js"), "utf8");
+  /* 본문 끝을 글자 수로 어림잡지 않는다. 코드가 조금 길어지면 뒤쪽 검사가
+     조용히 아무것도 안 보게 된다 — 실제로 그렇게 통과할 뻔했다. 괄호로 끊는다. */
   const i = src.indexOf("exports.renewSubscriptions");
-  const body = src.slice(i, i + 4500);
+  const open = src.indexOf("(", src.indexOf("onSchedule", i));
+  let depth = 0, end = open;
+  for (; end < src.length; end++) {
+    if (src[end] === "(") depth++;
+    else if (src[end] === ")" && --depth === 0) break;
+  }
+  const body = src.slice(i, end + 1);
 
   ok("갱신도 같은 자물쇠를 잡는다", /withLock\(db, d\.ref, "renew"/.test(body));
   ok("자물쇠를 잡은 뒤 다시 읽는다", /const fresh = \(await d\.ref\.get\(\)\)\.data\(\)/.test(body));
@@ -247,6 +255,10 @@ console.log("\n── 원본에 그 장치들이 있는가 ──");
      /amount: PRICE\[plan\] \|\| 0[\s\S]{0,80}plan,/.test(body));
   ok("새 주기에 refundDone 을 지운다", /refundDone: admin\.firestore\.FieldValue\.delete\(\)/.test(body));
   ok("상한까지 찼으면 알린다", /상한\(400\)까지 찼다/.test(body));
+  /* 카드가 거절돼도 여태 아무 데도 안 알렸다. 사용자는 설정 창을 열기 전에는
+     모르고, 우리는 몇 명이 멈춰 있는지 알 방법이 없었다. */
+  ok("카드 거절을 운영자에게 알린다", /alertOps\(`정기결제 실패/.test(body));
+  ok("거절이 없는 날은 알리지 않는다", /if \(failed\.length\) \{/.test(body));
   ok("withLock 이 우리 표시를 붙인다", /e\.kosLocked = true/.test(src));
 }
 

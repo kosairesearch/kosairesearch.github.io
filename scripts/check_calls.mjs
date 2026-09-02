@@ -167,16 +167,24 @@ function matchParen(s, i) {
     const close = matchParen(code, open);
     if (close < 0) { bad(`${name}() 본문 경계를 못 찾았다 — 검사기가 고장났다`); continue; }
     const body = code.slice(from, close + 1);
-    if (!/\bawait (?:toss|charge|doRefund)\s*\(/.test(body)) continue;
-    checked++;
     // 선언 블록은 본문 첫 '{ region' 부터 콜백 시작 전까지
     const opts = body.slice(0, body.search(/async\s*\(|\basync\s*function|\(\s*\)\s*=>/) + 1);
-    if (!/TOSS_SECRET_KEY/.test(opts)) {
-      bad(`${name}() 가 토스를 부르는데 TOSS_SECRET_KEY 를 선언하지 않았다`);
+    let touched = false;
+    /* 어떤 일을 하려면 어떤 열쇠가 있어야 하는가. 부르는 함수가 쓰는 열쇠를
+       선언하지 않으면 그 자리에서 터진다 — deleteAccount 가 그래서 유료 회원
+       탈퇴를 막고 있었고, 갱신 배치에 실패 알림을 붙이면서 또 그럴 뻔했다. */
+    for (const [what, need, why] of [
+      [/\bawait (?:toss|charge|doRefund)\s*\(/, "TOSS_SECRET_KEY", "토스를 부른다"],
+      [/\bawait (?:alertOps|sendMail)\s*\(/, "RESEND_API_KEY", "메일을 보낸다"],
+    ]) {
+      if (!what.test(body)) continue;
+      touched = true;
+      if (!new RegExp(need).test(opts)) bad(`${name}() 가 ${why}는데 ${need} 를 선언하지 않았다`);
     }
+    if (touched) checked++;
   }
-  if (checked === 0) bad("토스를 부르는 함수를 하나도 못 찾았다 — 검사기가 고장났다");
-  else if (!fail) console.log(`  PASS 돈 쓰는 함수가 카드사 열쇠를 들고 있다 (${checked}개)`);
+  if (checked === 0) bad("열쇠가 필요한 함수를 하나도 못 찾았다 — 검사기가 고장났다");
+  else if (!fail) console.log(`  PASS 열쇠가 필요한 함수가 그 열쇠를 들고 있다 (${checked}개)`);
 }
 
 /* ── ④ 화면이 읽는 컬렉션에 규칙이 있는가 ───────────────────
