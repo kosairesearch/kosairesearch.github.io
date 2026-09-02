@@ -131,11 +131,20 @@ function subscribe(planId) {
   const p = PLANS[planId];
   if (!p) throw new Error("plan");
   /* 이미 이용 중이면 새로 만들지 않는다(서버 confirmBilling 과 같다). 돈을 두
-     번 받는 자리다. 해지 예약(cancelAtPeriodEnd)이나 환불 완료(refundedAt)는
-     예외다 — 그 둘은 '다시 시작하기' 로 여기에 오는 길이다. */
+     번 받는 자리다.
+
+     예외는 환불 완료(refundedAt) 하나뿐이다 — 돈을 이미 돌려줬으므로 다시
+     시작하려면 새로 결제해야 하고, 그 구독은 자정까지만 살아 있다.
+
+     해지 예약(cancelAtPeriodEnd)은 예외가 아니다. 남은 기간이 그대로 있는
+     구독 위에 새 결제를 얹으면 이용 기간이 두 달 가까이 늘어나는데, 받은 돈
+     기록은 새 한 건으로 갈아엎어져 첫 달 결제가 환불 대상에서 사라진다.
+     되돌리는 길은 '해지 취소'(resumeSubscription)이며 공짜다. */
   const cur = read(SUB_KEY, null);
-  if (activeNow(cur) && !cur.cancelAtPeriodEnd && !cur.refundedAt) {
-    throw new Error("이미 이용 중인 구독이 있습니다.");
+  if (activeNow(cur) && !cur.refundedAt) {
+    throw new Error(cur.cancelAtPeriodEnd
+      ? "해지가 예약된 구독이 있습니다. 구독 관리에서 해지를 취소해 주시기 바랍니다."
+      : "이미 이용 중인 구독이 있습니다.");
   }
   const now = Date.now();
   /* 이용은 지금부터. 이전 구독과 겹치는 하루는 기간 끝에 붙인다
@@ -169,6 +178,28 @@ function subscribe(planId) {
   emit();
 }
 
+/* 새 주기를 연다. 갱신·재시도 성공·카드 재등록이 모두 여기를 지난다 —
+   서버가 그 자리마다 같은 값을 쓰는 것과 짝을 맞춘다. 특히 refundDone·failedAt·
+   retryCount 를 지우는 것이 중요하다(남으면 다음 환불이 건너뛴다). */
+function newPeriod(sub, plan, at) {
+  sub.status = "active";
+  sub.plan = plan.id;
+  sub.pendingPlan = null;
+  sub.currentPeriodStart = at;
+  sub.currentPeriodEnd = addMonth(at);
+  sub.periodPayments = [{ key: "demo-" + at, amount: plan.price, from: at }];
+  sub.readsSincePay = 0;
+  delete sub.failedAt;
+  delete sub.retryCount;
+  delete sub.refundDone;
+  write(SUB_KEY, sub);
+  emit();
+  return sub;
+}
+
+/* 카드가 거절된 뒤 며칠째에 다시 시도하는가. 서버 RETRY_DAYS 와 같아야 한다. */
+const RETRY_DAYS = [1, 3, 5, 7];
+
 /* 카드만 바꾸기. 결제는 하지 않는다(서버 confirmBilling updateMethod 와 같다).
    결제가 밀려 멈춘 구독이면 새 카드로 바로 받아 되살린다. */
 function updateCard() {
@@ -185,19 +216,20 @@ function updateCard() {
   }
   const n = String(1000 + Math.floor(Math.random() * 9000));
   sub.card = { company: "", issuerCode: "61", number: `0000-00**-****-${n}` };
-  if (sub.status === "past_due") {
+  /* 예약해 둔 플랜 변경을 여기서 적용한다. 다운그레이드는 '다음 결제일부터'
+     인데 그 결제일이 바로 거절된 날이므로, 되살릴 때 받아야 할 값은 예약해 둔
+     쪽이다(서버 confirmBilling updateMethod 와 같다). */
+  const p = sub.status === "past_due"
+    ? (PLANS[sub.pendingPlan] || PLANS[sub.plan]) : null;
+  if (p) {
     const now = Date.now();
-    sub.status = "active";
-    sub.currentPeriodStart = now;
-    sub.currentPeriodEnd = addMonth(now);
-    const p = PLANS[sub.plan];
-    if (p) {
-      pay({ amount: p.price, description: `${p.name} 월 구독 (모의)`, kind: "subscription", status: "paid", plan: p.id });
-      // 새 주기다 — 받은 돈도 연 리포트 수도 여기서 다시 센다. 안 비우면
-      // 지난 주기 몫이 이번 환불 계산에 그대로 실린다.
-      sub.periodPayments = [{ key: "demo-" + now, amount: p.price, from: now }];
-      sub.readsSincePay = 0;
-    }
+    pay({ amount: p.price, description: `${p.name} 월 구독 (모의)`, kind: "subscription", status: "paid", plan: p.id });
+    /* 새 주기를 여는 자리이므로 갱신·재시도와 같은 함수를 지난다. 받은 돈도
+       연 리포트 수도 여기서 다시 세고, 밀렸던 흔적(failedAt·retryCount)도
+       지운다 — 남겨 두면 다음 달 거절 때 재시도 기회가 지난달에서 이어져
+       줄어든다. */
+    newPeriod(sub, p, now);
+    return;
   }
   write(SUB_KEY, sub);
   emit();
@@ -329,6 +361,20 @@ async function call(name, arg) {
      결제가 밀려 멈춘 구독이나 이미 끝난 구독에도 해지·플랜 변경·환불이 되면,
      미리보기에서는 되는데 실제로는 거절당한다. 순서도 서버와 같게 둔다 —
      이용 중이 아닌 것을 먼저 보고, 그다음에 환불이 끝났는지 본다. */
+  /* 결제가 밀려 멈춘 구독의 해지만 예외다. 재시도가 1·3·5·7일째에 카드를 다시
+     긁으므로, 그만두겠다는 사람에게 멈출 방법이 있어야 한다(서버
+     cancelSubscription 과 같다). 예약이 아니라 즉시 종료다 — 남겨서 지킬
+     이용 기간이 없다. */
+  if (name === "cancelSubscription" && sub && sub.status === "past_due") {
+    sub.status = "expired";
+    sub.cancelAtPeriodEnd = true;
+    sub.pendingPlan = null;
+    sub.canceledAt = Date.now();
+    delete sub.failedAt;
+    delete sub.retryCount;
+    write(SUB_KEY, sub); emit();
+    return { data: { ok: true, demo: true, droppedPlan: null, stopped: true } };
+  }
   if (!activeNow(sub)) throw new Error("이용 중인 구독이 없습니다.");
   /* 환불이 끝난 구독에는 아무것도 하지 않는다. 오늘 값을 받은 환불은 자정까지
      살아 있어서, 그 사이에 해지·플랜 변경·재환불을 또 누를 수 있다. 서버
@@ -421,6 +467,98 @@ window.KOSDemo = {
   reasons: () => read(FB_KEY, []),
   reset() { [SUB_KEY, READ_KEY, PAY_KEY, FB_KEY].forEach((k) => localStorage.removeItem(k)); emit(); },
   readsToday: () => usedToday(),
+  /* ── 시간을 앞으로 돌린다 ──────────────────────────────
+     브라우저에서는 내일이 될 때까지 기다릴 수가 없다. 그래서 반대로,
+     저장된 시각들을 그만큼 과거로 민다 — 결과는 같다.
+
+       KOSDemo.advance(1)    하루가 지난 것으로 친다
+       KOSDemo.advance(31)   한 달이 지나 갱신일이 된 것으로 친다
+
+     오늘 열람 기록도 함께 민다. 안 그러면 '어제 본 것' 이 오늘 것으로 남아
+     하루 한도가 이미 차 있는 상태가 된다. */
+  advance(days) {
+    const ms = Math.round(Number(days) * 86400e3);
+    if (!Number.isFinite(ms) || ms <= 0) throw new Error("며칠을 넘길지 알려주세요 (예: advance(1))");
+    const sub = read(SUB_KEY, null);
+    if (sub) {
+      for (const k of ["currentPeriodStart", "currentPeriodEnd", "startedAt", "failedAt", "refundedAt", "canceledAt"]) {
+        if (typeof sub[k] === "number") sub[k] -= ms;
+      }
+      (sub.periodPayments || []).forEach((x) => { if (typeof x.from === "number") x.from -= ms; });
+      write(SUB_KEY, sub);
+    }
+    const r = read(READ_KEY, null);
+    if (r) write(READ_KEY, { ...r, day: new Date(Date.now() + 9 * 3600e3 - ms).toISOString().slice(0, 10) });
+    const pays = read(PAY_KEY, []);
+    pays.forEach((x) => {
+      if (typeof x.createdAt === "number") x.createdAt -= ms;
+      if (typeof x.paidAt === "number") x.paidAt -= ms;
+    });
+    write(PAY_KEY, pays);
+    emit();
+    return `${days}일 지난 것으로 처리했습니다.`;
+  },
+
+  /* ── 매일 도는 갱신 배치를 한 번 돌린다 ────────────────
+     서버 renewSubscriptions 와 같은 판단을 한다. 브라우저에는 크론이 없으므로
+     콘솔에서 부른다.
+
+       KOSDemo.runRenewal()             카드가 정상일 때
+       KOSDemo.runRenewal({ decline: true })  카드가 거절될 때
+
+     재시도를 보려면: 결제 → advance(31) → runRenewal({decline:true})
+                      → advance(1) → runRenewal({decline:true}) … */
+  runRenewal(opt) {
+    const decline = !!(opt && opt.decline);
+    const sub = read(SUB_KEY, null);
+    if (!sub) return "구독 없음";
+    const now = Date.now();
+
+    // ① 기간이 끝난 이용 중 구독 — 갱신한다
+    if (sub.status === "active" && sub.currentPeriodEnd <= now) {
+      if (sub.cancelAtPeriodEnd) {
+        sub.status = "expired"; write(SUB_KEY, sub); emit();
+        return "해지 예약이라 결제 없이 종료했습니다.";
+      }
+      const plan = PLANS[sub.pendingPlan || sub.plan];
+      if (decline) {
+        sub.status = "past_due"; sub.failedAt = now; sub.retryCount = 0;
+        write(SUB_KEY, sub); emit();
+        pay({ amount: plan.price, description: "정기결제 실패 (모의)", kind: "failed", status: "failed", plan: plan.id });
+        return `카드가 거절되어 '결제 실패' 로 두었습니다. ${RETRY_DAYS.join("·")}일 뒤에 다시 시도합니다.`;
+      }
+      newPeriod(sub, plan, now);
+      pay({ amount: plan.price, description: `${plan.name} 월 구독 (모의)`, kind: "subscription", status: "paid", plan: plan.id });
+      return `${plan.name} 로 갱신했습니다.`;
+    }
+
+    // ② 카드가 거절돼 멈춘 구독 — 정해진 날에 다시 시도한다
+    if (sub.status === "past_due") {
+      const tried = sub.retryCount || 0;
+      if (tried >= RETRY_DAYS.length) return "재시도를 모두 마쳤습니다.";
+      const dayN = kstDayNo(now) - kstDayNo(sub.failedAt || now);
+      if (dayN < RETRY_DAYS[tried]) {
+        return `아직 ${RETRY_DAYS[tried]}일째가 아닙니다 (지금 ${dayN}일째). advance() 로 넘겨 보세요.`;
+      }
+      const plan = PLANS[sub.pendingPlan || sub.plan];
+      if (!decline) {
+        newPeriod(sub, plan, now);
+        pay({ amount: plan.price, description: `${plan.name} 월 구독 (모의)`, kind: "subscription", status: "paid", plan: plan.id });
+        return `${tried + 1}번째 재시도에서 결제됐습니다. 지금부터 새 이용 기간이 시작됩니다.`;
+      }
+      const next = tried + 1, done = next >= RETRY_DAYS.length;
+      sub.retryCount = next;
+      if (done) sub.status = "expired";
+      write(SUB_KEY, sub); emit();
+      pay({ amount: plan.price,
+            description: done ? "정기결제 실패(최종) (모의)" : `정기결제 재시도 실패(${next}회) (모의)`,
+            kind: "failed", status: "failed", plan: plan.id });
+      return done ? "마지막 시도까지 실패해 이용을 종료했습니다."
+                  : `${next}번째 재시도도 실패했습니다. ${RETRY_DAYS[next]}일째에 다시 시도합니다.`;
+    }
+    return "지금은 갱신할 것이 없습니다.";
+  },
+
   /* 눌러 볼 수 없는 상태들 — 콘솔에서 만들어 화면을 확인한다.
      KOSDemo.simulate('past_due') / 'expired' */
   simulate(what) {

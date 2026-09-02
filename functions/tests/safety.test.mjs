@@ -242,8 +242,8 @@ console.log("\n── 옮겨 적은 것이 원본과 같은가 ──");
      두 번 청구를 막으려고, 해지·해지 취소는 '해지 예약 + 플랜 변경 예약' 이라는
      있어서는 안 되는 상태가 만들어지는 것을 막으려고. */
   const locked = [...src.matchAll(/withLock\(db, (?:d\.)?ref, "(\w+)"/g)].map((m) => m[1]).sort();
-  ok("구독을 고치는 함수 여섯에 다 걸려 있다",
-     JSON.stringify(locked) === JSON.stringify(["billing", "cancel", "plan", "refund", "renew", "resume"]),
+  ok("구독을 고치는 자리 일곱에 다 걸려 있다",
+     JSON.stringify(locked) === JSON.stringify(["billing", "cancel", "dunning", "plan", "refund", "renew", "resume"]),
      JSON.stringify(locked));
   ok("결제·취소가 멱등 이름을 들고 나간다",
      /Idempotency-Key/.test(src) && /refund_\$\{uid\}_\$\{src\.key\}/.test(src));
@@ -269,9 +269,122 @@ console.log("\n── 옮겨 적은 것이 원본과 같은가 ──");
      /charge\(db, uid, \{ \.\.\.sub, plan: next \}/.test(src),
      "올리기 전 플랜을 적으면 'PRO 업그레이드 차액' 옆에 BASIC 이 남는다");
 
-  ok("새 주기마다 refundDone 을 지운다",
-     (src.match(/refundDone: admin\.firestore\.FieldValue\.delete\(\)|patch\.refundDone = admin\.firestore\.FieldValue\.delete\(\)/g) || []).length === 3,
-     String((src.match(/refundDone: admin\.firestore\.FieldValue\.delete\(\)|patch\.refundDone = admin\.firestore\.FieldValue\.delete\(\)/g) || []).length));
+  /* 새 주기가 시작되는 자리마다 refundDone 을 지워야 한다. 남으면 다음 환불이
+     '이미 취소했다' 고 알고 건너뛰어 돈을 안 돌려주고 끝난다.
+
+     개수로 세지 않는다 — 자리가 늘 때마다 숫자를 고쳐야 하고, 고치는 김에
+     '4로 바꾸면 통과하네' 로 끝나기 쉽다. 새 주기를 여는 네 자리를 이름으로
+     짚어, 그 근처에서 실제로 지우는지 본다. */
+  // 'x 를 지운다' 는 두 가지 모양으로 쓴다 — 객체 안에서와 patch 에 얹어서.
+  const del = (f) => new RegExp(
+    `${f}: admin\\.firestore\\.FieldValue\\.delete\\(\\)|patch\\.${f} = admin\\.firestore\\.FieldValue\\.delete\\(\\)`);
+  const NEW_PERIOD = [
+    ["new_", "신규 결제"],
+    ["retry_", "카드 재등록으로 되살리기"],
+    ["renew_", "월 갱신"],
+    ["dun_", "재시도 성공"],
+  ];
+  for (const [tag, what] of NEW_PERIOD) {
+    const at = src.indexOf("`" + tag);
+    if (at < 0) { ok(`${what} 자리를 찾았다`, false, `멱등 이름 ${tag} 가 없다`); continue; }
+    const near = src.slice(at, at + 1600);
+    ok(`${what} 가 refundDone 을 지운다`,
+       /refundDone: admin\.firestore\.FieldValue\.delete\(\)|patch\.refundDone = admin\.firestore\.FieldValue\.delete\(\)/.test(near),
+       "남으면 다음 환불이 건너뛴다");
+    ok(`${what} 가 지난 주기 결제 기록을 끊는다`,
+       /periodPayments/.test(near), "이어 붙이면 지나간 달의 돈까지 환불 기준에 들어간다");
+    /* 밀렸던 흔적도 같은 자리에서 지워야 한다. retryCount 가 남으면 다음 달에
+       카드가 거절될 때 재시도 기회가 지난달에서 이어져 네 번이 한두 번으로
+       줄고, failedAt 이 남으면 재시도 일정이 지난달 날짜를 기준으로 잡힌다. */
+    ok(`${what} 가 밀렸던 흔적(failedAt)을 지운다`,
+       del("failedAt").test(near), "지난 실패 날짜로 재시도 일정이 잡힌다");
+    ok(`${what} 가 재시도 횟수를 지운다`,
+       del("retryCount").test(near), "다음 달에 받을 재시도 기회가 줄어든다");
+  }
+  /* 반대로 업그레이드는 같은 주기이므로 지우면 안 된다. */
+  {
+    const at = src.indexOf("`up_");
+    const near = src.slice(Math.max(0, at - 900), at + 900);
+    ok("업그레이드는 refundDone 을 지우지 않는다",
+       !/refundDone: admin\.firestore\.FieldValue\.delete\(\)/.test(near),
+       "같은 주기인데 지우면 이미 나간 취소를 또 시도한다");
+  }
+
+  /* 이용 중인 구독 위에 또 결제하는 길을 막는다.
+
+     한때 해지 예약(cancelAtPeriodEnd)을 예외로 뒀는데, 남은 기간이 그대로인
+     구독 위에 새 결제를 얹으면 이용 기간이 두 달 가까이 늘어나면서
+     periodPayments 는 새 한 건으로 갈아엎어진다 — 첫 달 결제가 환불 대상에서
+     사라져 사용자가 남은 값을 못 돌려받는다. 되돌리는 길은 '해지 취소' 다. */
+  ok("이용 중인 구독 위에 새 결제를 막는다(예외는 환불 완료뿐)",
+     /if \(subActive\(cur\) && !cur\.refundedAt\) \{/.test(src),
+     "cancelAtPeriodEnd 를 예외로 두면 첫 달 결제가 환불 대상에서 사라진다");
+
+  /* 이번 달 첫 거절이면 재시도 횟수를 0 으로 다시 놓아야 한다. 지난달에
+     재시도로 되살아난 사람은 그때 쓴 횟수가 남아 있고, 그대로 두면 이번 달에
+     받을 기회가 그만큼 줄어든 채로 시작한다. */
+  ok("첫 거절에서 재시도 횟수를 0 으로 되돌린다",
+     /status: "past_due", retryCount: 0,/.test(src),
+     "지난달에 쓴 횟수가 이어져 재시도 기회가 줄어든다");
+
+  /* 카드가 거절된 뒤 다시 받는 자리는 셋이다 — 배치 재시도, 카드 재등록,
+     그리고 결제 화면에서 새로 결제하기. 셋 다 예약해 둔 플랜 변경을 반영해야
+     한다. 다운그레이드는 '다음 결제일부터' 인데 그 결제일이 바로 거절된
+     날이므로, 옛 플랜으로 청구하면 내리겠다고 예약한 사람에게 비싼 값을
+     받고 옛 플랜을 그대로 물려 놓는 셈이 된다. */
+  {
+    const at = src.indexOf("`retry_${uid}");
+    const near = src.slice(Math.max(0, at - 1200), at + 900);
+    ok("카드 재등록으로 되살릴 때 예약해 둔 플랜을 적용한다",
+       /const nextPlan = PRICE\[cur\.pendingPlan\] \? cur\.pendingPlan : cur\.plan;/.test(near)
+       && /PRICE\[nextPlan\]/.test(near),
+       "내리겠다고 예약한 사람에게 옛 플랜 값을 받는다");
+    ok("되살릴 때 예약을 비운다",
+       /patch\.pendingPlan = null/.test(near),
+       "남으면 다음 달에 또 내려간다");
+  }
+
+  /* 카드를 긁는 고리는 둘이다 — 월 갱신과 재시도. 둘 다 긁기 전에 계정이
+     살아 있는지 봐야 한다. 탈퇴한 사람의 카드를 긁는 사고는 되돌릴 수 없다. */
+  {
+    const loops = [
+      ["월 갱신", src.indexOf("`renew_")],
+      ["재시도", src.indexOf("`dun_")],
+    ];
+    for (const [what, at] of loops) {
+      const near = src.slice(Math.max(0, at - 3000), at);
+      ok(`${what} 고리가 긁기 전에 계정을 확인한다`,
+         /admin\.auth\(\)\.getUser\(uid\)/.test(near),
+         "탈퇴한 사람의 카드를 긁는 사고는 되돌릴 수 없다");
+    }
+  }
+
+  /* 탈퇴도 돈을 만진다(환불하고 billingKey 를 지운다). 갱신 배치가 카드를
+     긁는 그 순간에 겹치면, 환불은 긁기 전 문서를 보고 "돌려줄 것이 없다" 로
+     끝나고 그 뒤에 한 달치가 청구된다 — 받아 놓고 계정을 지운 셈이 된다. */
+  {
+    const at = src.indexOf("exports.deleteAccount");
+    const near = src.slice(at, at + 4000);
+    ok("탈퇴도 같은 자물쇠를 잡는다",
+       /withLock\(db, subRef, "delete"/.test(near),
+       "갱신 배치와 겹치면 청구는 되고 환불은 안 된다");
+    ok("자물쇠 안에서 구독을 다시 읽는다",
+       /sub = \(await subRef\.get\(\)\)\.data\(\)/.test(near),
+       "잡기 전 값으로 환불을 계산하면 그 사이의 청구를 놓친다");
+  }
+
+  /* 재시도가 카드를 다시 긁으므로, 그만두려는 사람에게 멈출 길이 있어야 한다.
+     예약이 아니라 즉시 종료다 — 남겨서 지킬 이용 기간이 없다. */
+  {
+    const at = src.indexOf("exports.cancelSubscription");
+    const near = src.slice(at, at + 2500);
+    ok("결제가 밀린 구독도 해지할 수 있다",
+       /sub\.status === "past_due"/.test(near) && /status: "expired"/.test(near),
+       "멈출 방법이 없으면 원치 않는 달의 요금이 청구된다");
+    ok("해지하면 재시도 일정도 지운다",
+       del("retryCount").test(near) && del("failedAt").test(near),
+       "남으면 배치가 이 문서를 다시 집는다");
+  }
 }
 
 console.log(`\n통과 ${pass} · 실패 ${fail}`);

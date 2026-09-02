@@ -708,6 +708,14 @@ document.addEventListener('click', function (e) {
       </details>
 
       <details class="qa glass">
+        <summary>결제가 승인되지 않으면 어떻게 되나요?</summary>
+        <div class="a">
+          <p>등록하신 카드로 정기결제가 승인되지 않으면 유료 구간의 이용이 일시 중지되며, 최초 승인 거절일부터 1일·3일·5일·7일이 되는 날에 자동으로 다시 시도합니다. 결제가 완료되면 그 시점부터 새로운 한 달의 이용 기간이 시작되므로, 이용하지 못하신 기간은 요금에 포함되지 않습니다.</p>
+          <p>기다리지 않고 바로 재개하시려면 구독 관리 페이지에서 결제 수단을 다시 등록해 주시기 바랍니다. 재시도를 원하지 않으시는 경우에는 같은 페이지에서 해지하실 수 있으며, 해지하시면 재시도가 즉시 중지됩니다. 4회의 재시도가 모두 승인되지 않으면 구독은 자동으로 종료되고, 별도로 청구되는 금액은 없습니다.</p>
+        </div>
+      </details>
+
+      <details class="qa glass">
         <summary>플랜을 중간에 바꾸면 어떻게 되나요?</summary>
         <div class="a">
           <p>BASIC에서 PRO로 변경하시면 신청 즉시 PRO가 적용됩니다. 이미 결제하신 BASIC 이용 기간 중 남은 몫은 PRO 요금에서 차감되므로, 차액만 결제하시면 됩니다. 매달 결제되는 날짜는 기존 주기 그대로 유지됩니다.</p>
@@ -887,6 +895,9 @@ if(window.KOSi18n) KOSi18n.register({
   "미포함": "Not included",
   "자주 묻는 질문": "Frequently asked questions",
   "구독은 언제든지 해지할 수 있나요?": "Can I cancel my subscription at any time?",
+  "결제가 승인되지 않으면 어떻게 되나요?": "What happens if a payment is declined?",
+  "등록하신 카드로 정기결제가 승인되지 않으면 유료 구간의 이용이 일시 중지되며, 최초 승인 거절일부터 1일·3일·5일·7일이 되는 날에 자동으로 다시 시도합니다. 결제가 완료되면 그 시점부터 새로운 한 달의 이용 기간이 시작되므로, 이용하지 못하신 기간은 요금에 포함되지 않습니다.": "If a recurring charge to your card is declined, paid access is suspended and we retry automatically on the 1st, 3rd, 5th, and 7th day after the first decline. Once a charge succeeds, a new one-month period starts from that moment, so the time you could not use the service is not billed.",
+  "기다리지 않고 바로 재개하시려면 구독 관리 페이지에서 결제 수단을 다시 등록해 주시기 바랍니다. 재시도를 원하지 않으시는 경우에는 같은 페이지에서 해지하실 수 있으며, 해지하시면 재시도가 즉시 중지됩니다. 4회의 재시도가 모두 승인되지 않으면 구독은 자동으로 종료되고, 별도로 청구되는 금액은 없습니다.": "To resume right away instead of waiting, register a payment method again on the subscription page. If you do not want the retries, you can cancel on the same page and they stop at once. If all four retries are declined, the subscription ends automatically and nothing further is charged.",
   "구독 관리 페이지에서 직접 해지하실 수 있으며, 별도의 전화나 문의 접수 절차는 필요하지 않습니다. 해지 이후에도 이미 결제된 이용 기간이 종료될 때까지는 그대로 이용하실 수 있습니다.": "You can cancel yourself on the subscription page — no phone call or support ticket required. After cancelling, access continues until the period you have already paid for ends.",
   "플랜을 중간에 바꾸면 어떻게 되나요?": "What happens if I change plans mid-cycle?",
   "BASIC에서 PRO로 변경하시면 신청 즉시 PRO가 적용됩니다. 이미 결제하신 BASIC 이용 기간 중 남은 몫은 PRO 요금에서 차감되므로, 차액만 결제하시면 됩니다. 매달 결제되는 날짜는 기존 주기 그대로 유지됩니다.": "Switching from BASIC to PRO takes effect immediately. The unused part of the BASIC period you have already paid for is credited against the PRO price, so you only pay the difference. Your monthly billing date stays the same.",
@@ -1062,9 +1073,14 @@ btns.forEach((btn) => {
   btn.addEventListener('click', async () => {
     const k = t(), id = btn.dataset.plan, sub = st.sub || {};
     if (!st.user) { location.href = 'Login.html?next=pricing.html'; return; }
-    /* 환불한 사람도 여기로 온다 — 새 구독을 시작하는 길이다.
-       서버는 이미 허용한다(confirmBilling 이 cancelAtPeriodEnd 인 구독 위에
-       새로 만든다). 막고 있던 건 이 화면뿐이었다. */
+    /* 환불한 사람도 여기로 온다 — 새 구독을 시작하는 길이다. 환불이 끝난
+       구독은 오늘 자정까지 살아 있지만 돈은 이미 돌려줬으므로, 서버도 그
+       구독 위에 새로 만드는 것을 허용한다(confirmBilling).
+
+       해지만 예약해 둔 사람은 여기로 오지 않는다 — selling() 이 참이라 아래
+       플랜 변경 쪽으로 가고, 해지를 되돌리는 것은 구독 관리의 '해지 취소'
+       이다. 남은 기간이 그대로인 구독 위에 새 결제를 얹으면 첫 달 결제가
+       환불 대상에서 사라지므로, 서버도 그 길은 막아 두었다. */
     if (!selling()) {
       // 결제가 밀린 구독은 카드부터. 그 외에는 결제 화면으로.
       if (!st.active && sub.status === 'past_due') {

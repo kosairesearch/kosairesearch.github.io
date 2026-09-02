@@ -161,8 +161,12 @@ if (window.KOSi18n) window.KOSi18n.register({
   "{d}부터 {p} 플랜으로 변경됩니다.": "You move to {p} on {d}.",
   "플랜 변경이 취소되었습니다.": "The scheduled change has been cancelled.",
   "처리하지 못했습니다. 잠시 후 다시 시도하여 주시기 바랍니다.": "Could not complete. Please try again in a moment.",
-  "등록하신 카드로 결제가 승인되지 않았습니다. 카드를 다시 등록하시면 이용이 재개됩니다.":
-    "The card on file was declined. Register a card again to restore access.",
+  "등록하신 카드로 결제가 승인되지 않았습니다. 결제일로부터 1일·3일·5일·7일째에 자동으로 다시 시도하며, 결제가 완료되면 그 시점부터 새로운 이용 기간이 시작됩니다. 카드를 다시 등록하시면 즉시 재개하실 수 있습니다.":
+    "The card on file was declined. We retry automatically on days 1, 3, 5 and 7 after the billing date; once a payment succeeds, a new billing period starts from that moment. Registering a card again restores access immediately.",
+  "결제 재시도가 중지되며 구독이 즉시 종료됩니다. 이미 결제된 금액은 없으므로 추가로 청구되는 금액도 없습니다.":
+    "Retries stop and your subscription ends immediately. Nothing was charged for this period, so there is nothing further to bill.",
+  "구독이 해지되었으며, 결제 재시도도 중지되었습니다.":
+    "Your subscription has been cancelled and payment retries have stopped.",
   "해지하시면 이미 결제하신 이용 기간이 끝날 때까지는 그대로 이용하실 수 있습니다.":
     "If you cancel, you keep access until the period you have paid for ends.",
   "결제 수단이 변경되었습니다. 다음 결제일부터 새 카드로 청구됩니다.":
@@ -743,14 +747,25 @@ function paneSubscription() {
     }
 
     if (due) {
-      /* 결제가 막힌 사람에게 필요한 건 설명과 카드 한 장이다. 해지·플랜 변경
-         버튼을 같이 두면 무엇부터 눌러야 할지가 흐려진다. */
+      /* 결제가 막힌 사람에게 필요한 건 설명과 카드 한 장이다. 플랜 변경까지
+         같이 두면 무엇부터 눌러야 할지가 흐려지므로 두 가지만 둔다.
+
+         해지는 빼지 않는다. 카드가 거절되면 정해진 날에 다시 결제를 시도하므로,
+         그만두시려는 분께 멈출 방법이 없으면 원치 않는 요금이 청구될 수 있다. */
       const a = el("a", "ks-btn primary", T("결제 수단 변경"));
       a.href = cardHref(sub);
       btns.appendChild(a);
+      btns.appendChild(button("구독 해지", "danger", b => act(b, {
+        confirm: () => ask(T("구독을 해지하시겠습니까?"),
+          T("결제 재시도가 중지되며 구독이 즉시 종료됩니다. 이미 결제된 금액은 없으므로 추가로 청구되는 금액도 없습니다."),
+          "cancel"),
+        fn: "cancelSubscription",
+        done: () => T("구독이 해지되었으며, 결제 재시도도 중지되었습니다."),
+        survey: "구독 해지",
+      })));
       body.appendChild(btns);
       body.appendChild(el("p", "ks-note",
-        T("등록하신 카드로 결제가 승인되지 않았습니다. 카드를 다시 등록하시면 이용이 재개됩니다.")));
+        T("등록하신 카드로 결제가 승인되지 않았습니다. 결제일로부터 1일·3일·5일·7일째에 자동으로 다시 시도하며, 결제가 완료되면 그 시점부터 새로운 이용 기간이 시작됩니다. 카드를 다시 등록하시면 즉시 재개하실 수 있습니다.")));
       const h = histSection(payments); if (h) body.appendChild(h);
       return;
     }

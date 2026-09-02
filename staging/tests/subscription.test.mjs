@@ -587,7 +587,19 @@ await openSubs();
 ok("무료라고 하지 않는다", !txt().includes("무료로 이용 중입니다"), txt().slice(0, 160));
 ok("배지가 '결제 실패'", txt().includes("결제 실패"));
 ok("왜 막혔는지 설명한다", txt().includes("승인되지 않았습니다"));
-ok("카드 재등록 하나만 준다", btns().join("|") === "결제 수단 변경", btns().join("|"));
+/* 카드 재등록과 해지, 둘뿐이다. 플랜 변경까지 두면 무엇부터 눌러야 할지가
+   흐려지고, 해지를 빼면 재시도를 멈출 방법이 없어진다. */
+ok("카드 재등록과 해지, 둘만 준다", btns().join("|") === "결제 수단 변경|구독 해지", btns().join("|"));
+ok("언제 다시 시도하는지 알려 준다", txt().includes("1일·3일·5일·7일째"), txt().slice(0, 400));
+{
+  /* 해지하면 재시도가 멈추고 그 자리에서 끝난다 — 예약이 아니다. */
+  const r = await w.KOSDemo.call("cancelSubscription", {});
+  const s = JSON.parse(localStorage.getItem("kos-demo-sub"));
+  ok("해지하면 재시도가 멈춘다", r.data.stopped === true && s.status === "expired",
+     JSON.stringify({ stopped: r.data.stopped, status: s.status }));
+  ok("재시도 일정이 지워진다", s.retryCount === undefined && s.failedAt === undefined,
+     JSON.stringify({ retryCount: s.retryCount, failedAt: s.failedAt }));
+}
 
 console.log("\n── 이용 종료 ──");
 localStorage.clear(); w.KOSDemo.subscribe("pro"); w.KOSDemo.simulate("expired");

@@ -1813,7 +1813,6 @@ exports.deleteAccount = onCall(
   if (!uid) throw new HttpsError("unauthenticated", "로그인이 필요합니다.");
   const db = admin.firestore();
   const subRef = db.doc(`subscriptions/${uid}`);
-  const sub = (await subRef.get()).data() || null;
 
   /* 탈퇴한다고 환불받을 권리가 사라지지는 않는다. 결제 후 7일 이내에 리포트를
      한 번도 열지 않았다면 전액 환불은 전자상거래법 제17조가 준 권리이고,
@@ -1821,32 +1820,48 @@ exports.deleteAccount = onCall(
      이유로 돈을 가질 수는 없다. 그래서 여기서 같은 기준으로 계산해 먼저 돌려준다.
 
      환불이 실패하면 탈퇴를 진행하지 않는다. 계정을 지운 뒤에 실패하면 당사자는
-     로그인도 못 하는데 돈은 우리가 들고 있는 상태가 된다 — 되돌릴 방법이 없다. */
+     로그인도 못 하는데 돈은 우리가 들고 있는 상태가 된다 — 되돌릴 방법이 없다.
+
+     돈을 만지는 다른 함수들과 같은 자물쇠를 잡는다. 안 잡으면 이런 일이 난다 —
+     갱신 배치가 카드를 긁는 그 순간에 탈퇴를 누르면, 환불은 긁기 전의 문서를
+     보고 계산해 "돌려줄 것이 없다" 로 끝나고, 그 뒤에 배치가 한 달치를 청구한
+     다음 여기서 billingKey 를 지운다. 결과는 한 달치를 받아 놓고 계정을 지운
+     것이 된다 — 당사자는 로그인도 못 하니 항의할 창구조차 없다.
+
+     문서가 없는 무료 회원에게는 자물쇠를 걸지 않는다. withLock 은 자물쇠를
+     잡으면서 문서를 먼저 만들기 때문에, 구독한 적 없는 사람 앞으로 빈 구독
+     문서가 하나 생겨 남는다. */
   let refunded = 0;
-  if (subActive(sub) && sub.lastPaymentKey) {
-    const q = await refundQuote(db, uid, sub);
-    if (q.amount > 0) {
-      try {
-        await doRefund(db, uid, subRef, sub, q);
-        refunded = q.amount;
-      } catch (e) {
-        console.error(`[delete] 환불 실패 uid=${uid}`, e && e.message);
-        throw new HttpsError("failed-precondition",
-          "환불 처리에 실패해 탈퇴를 진행하지 않았습니다. 구독 관리에서 환불을 먼저 신청해 주세요.");
-      }
-    }
-  }
+  const first = await subRef.get();
+  let sub = first.exists ? first.data() : null;
 
   if (sub) {
-    await subRef.set({
-      status: "deleted",
-      cancelAtPeriodEnd: true, pendingPlan: null,
-      billingKey: admin.firestore.FieldValue.delete(),
-      customerKey: admin.firestore.FieldValue.delete(),
-      card: admin.firestore.FieldValue.delete(),
-      deletedAt: admin.firestore.FieldValue.serverTimestamp(),
-      updatedAt: admin.firestore.FieldValue.serverTimestamp(),
-    }, { merge: true });
+    await withLock(db, subRef, "delete", async () => {
+      // 자물쇠를 잡는 사이에 갱신·재시도가 끝났을 수 있다. 그 결과를 보고 센다.
+      sub = (await subRef.get()).data() || null;
+      if (subActive(sub) && sub.lastPaymentKey) {
+        const q = await refundQuote(db, uid, sub);
+        if (q.amount > 0) {
+          try {
+            await doRefund(db, uid, subRef, sub, q);
+            refunded = q.amount;
+          } catch (e) {
+            console.error(`[delete] 환불 실패 uid=${uid}`, e && e.message);
+            throw new HttpsError("failed-precondition",
+              "환불 처리에 실패해 탈퇴를 진행하지 않았습니다. 구독 관리에서 환불을 먼저 신청해 주시기 바랍니다.");
+          }
+        }
+      }
+      await subRef.set({
+        status: "deleted",
+        cancelAtPeriodEnd: true, pendingPlan: null,
+        billingKey: admin.firestore.FieldValue.delete(),
+        customerKey: admin.firestore.FieldValue.delete(),
+        card: admin.firestore.FieldValue.delete(),
+        deletedAt: admin.firestore.FieldValue.serverTimestamp(),
+        updatedAt: admin.firestore.FieldValue.serverTimestamp(),
+      }, { merge: true });
+    });
   }
 
   try { await db.doc(`watchlists/${uid}`).delete(); } catch (e) { console.warn("[delete] watchlist", e && e.message); }
@@ -2355,6 +2370,16 @@ const REFUND_FEE_RATE = 0.10;                     // 서비스 수수료 10% (�
 const MIN_CHARGE = 100;
 const FREE_WITHDRAW_DAYS = 7;                     // 미열람 시 전액 환불 기간
 
+/* 카드가 거절된 뒤 며칠째에 다시 시도하는가(첫 실패로부터).
+
+   일시적인 한도 초과나 통신 오류로 구독이 끊기는 것을 막는다 — 업계에서
+   dunning 이라 부르는 것이고, 간격도 관행을 따랐다. 매일 긁으면 카드사에
+   불필요한 거절 기록만 쌓이고, 너무 띄우면 그 사이 사용자는 못 본다.
+
+   네 번 다 실패하면 이용을 종료한다. 무한정 붙잡고 있으면 카드가 이미 해지된
+   사람의 결제를 몇 달씩 시도하게 된다. */
+const RETRY_DAYS = [1, 3, 5, 7];
+
 const tossAuth = () =>
   "Basic " + Buffer.from(((TOSS_SECRET_KEY && TOSS_SECRET_KEY.value()) || "") + ":").toString("base64");
 
@@ -2647,6 +2672,15 @@ if (PAYMENTS_LIVE) exports.confirmBilling = onCall(
         // 카드만 갈아 끼우고 끝내면 다음 배치가 돌 때까지 하루를 잠긴 채로 둔다.
         if (cur.status === "past_due") {
           const at = new Date();
+          /* 예약해 둔 플랜 변경을 여기서 적용한다.
+
+             다운그레이드는 '다음 결제일부터' 다. 그 다음 결제일이 바로 결제가
+             거절된 그날이므로, 되살릴 때 적용해야 할 플랜은 예약해 둔 쪽이다.
+             옛 플랜으로 청구하면 BASIC 으로 내리겠다고 예약한 사람에게 PRO
+             값을 받고 PRO 를 그대로 물려 놓는 셈이 된다. 갱신 배치와 재시도
+             배치는 이미 pendingPlan 을 보고 있었는데, 카드 재등록으로 되살리는
+             이 길만 옛 플랜을 보고 있었다. */
+          const nextPlan = PRICE[cur.pendingPlan] ? cur.pendingPlan : cur.plan;
           /* 멱등 이름에 카드(빌링키)를 섞는다.
 
              날짜만으로 지으면 같은 날 카드 A 로 실패한 뒤 카드 B 로 다시 걸 때
@@ -2657,25 +2691,60 @@ if (PAYMENTS_LIVE) exports.confirmBilling = onCall(
              카드사가 실패 응답을 어떻게 다루는지는 여기서 확인할 수 없다.
              확인할 수 없으면 안전한 쪽으로 짓는다. 빌링키는 카드를 등록할 때마다
              새로 나오므로, 같은 카드로 두 번 누르는 것은 여전히 한 번만 나간다. */
-          const pay = await charge(db, uid, { ...cur, ...patch, plan: cur.plan },
-            PRICE[cur.plan], `${PLAN_NAME[cur.plan]} 월 구독`, "retry", null,
+          const pay = await charge(db, uid, { ...cur, ...patch, plan: nextPlan },
+            PRICE[nextPlan], `${PLAN_NAME[nextPlan]} 월 구독`, "retry", null,
             `retry_${uid}_${kstDay()}_${String(re.billingKey).slice(-12)}`);
           patch.status = "active";
+          patch.plan = nextPlan;
+          patch.pendingPlan = null;
           patch.currentPeriodStart = admin.firestore.Timestamp.fromDate(at);
           patch.currentPeriodEnd = admin.firestore.Timestamp.fromDate(addMonth(at));
           patch.lastPaymentKey = pay ? pay.paymentKey : null;
           /* 새 주기다 — 지난 주기의 결제 건은 여기서 끊는다. 안 끊으면 환불이
              이미 다 쓴 지난달 결제까지 기준에 넣고, 그 건을 취소하려 든다. */
           patch.periodPayments = pay
-            ? [{ key: pay.paymentKey, amount: PRICE[cur.plan], from: at.getTime() }] : [];
+            ? [{ key: pay.paymentKey, amount: PRICE[nextPlan], from: at.getTime() }] : [];
           patch.refundDone = admin.firestore.FieldValue.delete();
+          /* 밀렸던 흔적도 같이 지운다. 남겨 두면 다음 달에 카드가 거절될 때
+             재시도 횟수가 지난달 것에서 이어져, 네 번 줘야 할 기회를 한두 번만
+             주고 구독을 끊어 버린다. failedAt 도 마찬가지로 지난 실패 날짜를
+             가리키고 있어, 재시도 일정이 엉뚱한 날로 잡힌다. */
+          patch.failedAt = admin.firestore.FieldValue.delete();
+          patch.retryCount = admin.firestore.FieldValue.delete();
         }
         await ref.set(patch, { merge: true });
-        return { ok: true, plan: cur.plan, updated: true };
+        // 되살렸으면 실제로 적용된 플랜을 돌려준다 — 예약해 둔 변경이 여기서 반영된다.
+        return { ok: true, plan: patch.plan || cur.plan, updated: true };
       }
 
-      if (subActive(cur) && !cur.cancelAtPeriodEnd) {
-        throw new HttpsError("already-exists", "이미 이용 중인 구독이 있습니다.");
+      /* 이용 중인 구독 위에 또 결제하지 않는다. 돈을 두 번 받는 자리다.
+
+         예외는 '환불이 끝난 구독' 하나뿐이다. 오늘 값을 받은 환불은 그 구독을
+         자정까지 살려 두므로 subActive 가 여전히 참인데, 돈은 이미 돌려줬으니
+         다시 시작하려면 새로 결제하는 수밖에 없다. 겹치는 하루는 아래에서
+         기간 끝에 붙여 돌려준다.
+
+         해지 예약(cancelAtPeriodEnd)은 예외가 아니다. 한때 열어 뒀는데,
+         그러면 이런 일이 난다 —
+
+           1일  BASIC 결제(1일~31일)
+           5일  해지 예약. 31일까지는 그대로 이용한다.
+           7일  결제 화면으로 들어와 다시 결제
+
+         새 기간은 '지금부터 addMonth(이전 기간 끝)' 이라 7일~61일, 54일이
+         된다. 돈은 두 달치를 받았으니 날 수는 맞지만, periodPayments 가 방금
+         받은 한 건으로 갈아엎어져 첫 달 결제는 환불 대상에서 사라진다. 그날
+         환불하면 54일 기간에 한 달치만 얹힌 셈으로 계산돼, 사용자는 남은
+         첫 달 값을 영영 돌려받지 못한다.
+
+         해지 예약을 되돌리는 길은 이미 있다 — 구독 관리의 '해지 취소'
+         (resumeSubscription)다. 공짜이고 즉시 반영된다. 플랜을 바꾸려는
+         것이라면 changePlan 이 해지 예약도 함께 푼다. 결제가 필요한 길은
+         하나도 없으므로, 여기서는 막고 그쪽으로 안내한다. */
+      if (subActive(cur) && !cur.refundedAt) {
+        throw new HttpsError("already-exists", cur.cancelAtPeriodEnd
+          ? "해지가 예약된 구독이 있습니다. 구독 관리에서 해지를 취소해 주시기 바랍니다."
+          : "이미 이용 중인 구독이 있습니다.");
       }
 
       const issued = await toss("/billing/authorizations/issue", { authKey, customerKey });
@@ -2742,6 +2811,10 @@ if (PAYMENTS_LIVE) exports.confirmBilling = onCall(
         refundedAt: admin.firestore.FieldValue.delete(),
         canceledAt: admin.firestore.FieldValue.delete(),
         failedAt: admin.firestore.FieldValue.delete(),
+        /* 결제가 밀려 멈춰 있던 사람이 카드를 바꾸는 대신 결제 화면에서 새로
+           결제하면 여기로 온다. 재시도 횟수를 안 지우면 다음 달 거절 때
+           남은 기회가 그만큼 줄어든 채로 시작한다. */
+        retryCount: admin.firestore.FieldValue.delete(),
         /* 지난 환불에서 '어디까지 취소했는지' 적어 둔 기록. 새 구독에 그대로
            남으면 다음 환불이 이미 취소한 것으로 알고 건너뛴다 — 돈을 안 돌려주고
            끝난다. 주기가 새로 시작하는 자리마다 반드시 지운다. */
@@ -2847,6 +2920,26 @@ if (PAYMENTS_LIVE) exports.cancelSubscription = onCall({ region: REGION, cors: t
   const ref = db.doc(`subscriptions/${uid}`);
   return withLock(db, ref, "cancel", async () => {
     const sub = (await ref.get()).data();
+    /* 결제가 밀려 멈춘 구독도 여기서 끊는다.
+
+       재시도를 넣기 전에는 past_due 가 그냥 방치되다 기간이 지나 닫혔으므로
+       해지할 것도 없었다. 지금은 다르다 — 1·3·5·7일째에 카드를 다시 긁는다.
+       그만두겠다는 사람에게 멈출 방법을 주지 않으면, 원치 않는 달의 요금이
+       일주일 안에 청구될 수 있다. 약관에 적어 둔 '언제든지 해지' 와도 어긋난다.
+
+       이 경우는 예약이 아니라 즉시 종료다. 이미 낸 달은 다 썼고 다음 달 값은
+       받지 못했으므로, 남겨서 지킬 이용 기간이 없다. */
+    if (sub && sub.status === "past_due") {
+      await ref.set({
+        status: "expired", cancelAtPeriodEnd: true, pendingPlan: null,
+        canceledAt: admin.firestore.FieldValue.serverTimestamp(),
+        // 재시도 일정을 지운다. 남으면 배치가 이 문서를 다시 집을 근거가 된다.
+        failedAt: admin.firestore.FieldValue.delete(),
+        retryCount: admin.firestore.FieldValue.delete(),
+        updatedAt: admin.firestore.FieldValue.serverTimestamp(),
+      }, { merge: true });
+      return { ok: true, droppedPlan: null, stopped: true };
+    }
     if (!subActive(sub)) throw new HttpsError("failed-precondition", "이용 중인 구독이 없습니다.");
     if (refundedAlready(sub)) throw new HttpsError("failed-precondition", "환불이 완료된 구독입니다.");
     await ref.set({
@@ -3109,7 +3202,9 @@ if (PAYMENTS_LIVE) exports.renewSubscriptions = onSchedule(
       .limit(400).get();
     console.log(`[renew] 대상 ${due.size}건`);
 
-    const failed = [];                       // 카드가 거절된 사람들 — 아래에서 알린다
+    const failed = [];                       // 이번에 처음 거절된 사람들
+    const revived = [];                      // 재시도로 되살아난 사람들
+    const gaveUp = [];                       // 끝까지 안 돼 종료한 사람들
 
     if (due.size >= 400) {
       // 한 번에 400건까지만 본다. 꽉 찼다는 건 못 본 사람이 남았다는 뜻이고,
@@ -3178,7 +3273,8 @@ if (PAYMENTS_LIVE) exports.renewSubscriptions = onSchedule(
             periodPayments: pay
               ? [{ key: pay.paymentKey, amount: PRICE[plan], from: now.getTime() }] : [],
             refundDone: admin.firestore.FieldValue.delete(),
-            failedAt: null,
+            failedAt: admin.firestore.FieldValue.delete(),
+            retryCount: admin.firestore.FieldValue.delete(),
             updatedAt: admin.firestore.FieldValue.serverTimestamp(),
           }, { merge: true });
         });
@@ -3193,8 +3289,13 @@ if (PAYMENTS_LIVE) exports.renewSubscriptions = onSchedule(
         // 바꿀 시간을 줘야 한다. 이용 권한은 currentPeriodEnd 가 지나 자연히 닫힌다.
         console.error(`[renew] 실패 uid=${uid}`, e && e.message);
         failed.push(`${uid} · ${plan} · ${(e && e.message) || e}`);
+        /* 이번 달 첫 거절이다. 재시도 횟수를 0 으로 다시 놓는다 — 지난달에
+           재시도로 되살아난 사람은 그때 쓴 횟수가 남아 있을 수 있고, 그대로
+           두면 이번 달에 받을 기회가 그만큼 줄어든다. failedAt 도 오늘로
+           새로 적어 재시도 일정을 여기서부터 센다. */
         await d.ref.set({
-          status: "past_due", failedAt: admin.firestore.FieldValue.serverTimestamp(),
+          status: "past_due", retryCount: 0,
+          failedAt: admin.firestore.FieldValue.serverTimestamp(),
           updatedAt: admin.firestore.FieldValue.serverTimestamp(),
         }, { merge: true });
         /* 청구하려던 플랜으로 적는다. 다운그레이드가 예약돼 있었으면 옛 플랜의
@@ -3206,6 +3307,124 @@ if (PAYMENTS_LIVE) exports.renewSubscriptions = onSchedule(
       }
     }
 
+    /* ── 거절된 카드를 정해진 날에 다시 시도한다 ─────────────
+       한 번 거절됐다고 바로 끊지 않는다. 한도 초과·통신 오류처럼 하루 지나면
+       되는 경우가 많고, 그걸로 구독이 끊기면 양쪽 다 손해다.
+
+       성공하면 그 순간부터 새 한 달이 시작된다. 실패한 기간은 이미 지나갔고
+       그동안 이용도 못 했으므로, 못 쓴 날을 시작점으로 삼을 이유가 없다.
+
+       재시도 중에는 리포트를 볼 수 없다(status 가 active 가 아니다). 이미 낸
+       한 달은 다 썼고 다음 달 값은 아직 안 받았기 때문이다. */
+    const stuck = await db.collection("subscriptions")
+      .where("status", "==", "past_due")
+      .limit(400).get();
+    if (stuck.size >= 400) {
+      console.error("[renew] 재시도 대상이 상한(400)까지 찼다 — 남은 건은 내일로 밀린다");
+    }
+    console.log(`[renew] 재시도 대상 ${stuck.size}건`);
+
+    for (const d of stuck.docs) {
+      const uid = d.id;
+      const sub = d.data();
+      // 실패 기록에 쓸 플랜. 자물쇠를 잡은 뒤 다시 읽은 값으로 덮어쓴다.
+      let plan = sub.pendingPlan || sub.plan;
+      try {
+        /* 위 갱신 고리와 같은 이유로 계정부터 확인한다. 여기도 카드를 긁는
+           자리다 — 탈퇴한 사람의 카드를 긁는 사고는 되돌릴 수가 없다.
+           탈퇴하면 status 가 "deleted" 로 바뀌어 이 목록에 들어오지 않지만,
+           그 쓰기가 실패했거나 콘솔에서 계정만 지운 경우가 남는다. */
+        try {
+          await admin.auth().getUser(uid);
+        } catch (e) {
+          if (e && e.code === "auth/user-not-found") {
+            console.warn(`[renew] 재시도 — 계정 없음, 건너뜀 uid=${uid}`);
+            await d.ref.set({
+              status: "deleted", billingKey: admin.firestore.FieldValue.delete(),
+              updatedAt: admin.firestore.FieldValue.serverTimestamp(),
+            }, { merge: true });
+            continue;
+          }
+          throw e;
+        }
+
+        const failedMs = sub.failedAt && sub.failedAt.toMillis ? sub.failedAt.toMillis() : 0;
+        if (!failedMs) {
+          /* 언제 실패했는지 모르면 재시도 날짜를 셀 수가 없다. 그냥 넘기면 이
+             문서는 영영 past_due 에 머물러 결제도 종료도 되지 않는다 — 조용히
+             묶여 있는 것이 가장 나쁘다. 소리를 내고 오늘을 기준일로 잡는다. */
+          console.error(`[renew] 재시도 — failedAt 이 없다, 오늘을 기준으로 잡는다 uid=${uid}`);
+          await d.ref.set({
+            failedAt: admin.firestore.FieldValue.serverTimestamp(),
+            retryCount: 0,
+            updatedAt: admin.firestore.FieldValue.serverTimestamp(),
+          }, { merge: true });
+          continue;
+        }
+        const dayN = kstDayNo(now.getTime()) - kstDayNo(failedMs);
+        const tried = sub.retryCount || 0;
+        if (tried >= RETRY_DAYS.length) {
+          /* 마지막 시도까지 실패하면 그 자리에서 expired 로 닫는다. 여기까지
+             왔다는 건 그 쓰기가 실패했다는 뜻이므로 지금 마무리한다. 안 그러면
+             매일 이 목록에 올라오면서 아무 일도 일어나지 않는다. */
+          console.warn(`[renew] 재시도를 모두 마친 문서를 닫는다 uid=${uid}`);
+          await d.ref.set({
+            status: "expired", updatedAt: admin.firestore.FieldValue.serverTimestamp(),
+          }, { merge: true });
+          continue;
+        }
+        if (dayN < RETRY_DAYS[tried]) continue;        // 아직 그날이 아니다
+
+        await withLock(db, d.ref, "dunning", async () => {
+          const fresh = (await d.ref.get()).data();
+          // 자물쇠를 잡는 사이에 카드를 바꿔 되살아났을 수 있다
+          if (!fresh || fresh.status !== "past_due") return;
+          if ((fresh.retryCount || 0) !== tried) return;
+          // 목록을 만든 시점의 값을 그대로 믿지 않는다(갱신 고리와 같다).
+          plan = fresh.pendingPlan || fresh.plan;
+
+          try {
+            const pay = await charge(db, uid, { ...fresh, plan }, PRICE[plan],
+              `${PLAN_NAME[plan]} 월 구독`, "retry", null,
+              `dun_${uid}_${kstDay()}`);
+            /* 성공 — 그 순간부터 새 한 달이다. */
+            await d.ref.set({
+              plan, pendingPlan: null, status: "active",
+              currentPeriodStart: admin.firestore.Timestamp.fromDate(now),
+              currentPeriodEnd: admin.firestore.Timestamp.fromDate(addMonth(now)),
+              lastPaymentKey: pay ? pay.paymentKey : fresh.lastPaymentKey,
+              periodPayments: pay
+                ? [{ key: pay.paymentKey, amount: PRICE[plan], from: now.getTime() }] : [],
+              refundDone: admin.firestore.FieldValue.delete(),
+              failedAt: admin.firestore.FieldValue.delete(),
+              retryCount: admin.firestore.FieldValue.delete(),
+              updatedAt: admin.firestore.FieldValue.serverTimestamp(),
+            }, { merge: true });
+            revived.push(`${uid} · ${plan} · ${tried + 1}번째 시도에서 성공`);
+          } catch (e) {
+            const next = tried + 1;
+            const done = next >= RETRY_DAYS.length;
+            await d.ref.set({
+              retryCount: next,
+              // 마지막까지 안 되면 종료한다. 무한정 붙잡고 있을 수는 없다.
+              ...(done ? { status: "expired" } : {}),
+              updatedAt: admin.firestore.FieldValue.serverTimestamp(),
+            }, { merge: true });
+            await writePayment(db, uid, {
+              amount: PRICE[plan] || 0,
+              description: done ? "정기결제 실패(최종)" : `정기결제 재시도 실패(${next}회)`,
+              kind: "failed", status: "failed", plan, paidAt: null,
+            });
+            if (done) gaveUp.push(`${uid} · ${plan} · ${(e && e.message) || e}`);
+            console.warn(`[renew] 재시도 ${next}회 실패 uid=${uid}`, e && e.message);
+          }
+        });
+      } catch (e) {
+        if (e && e.kosLocked) { console.warn(`[renew] 재시도 건너뜀(처리 중) uid=${uid}`); continue; }
+        console.error(`[renew] 재시도 처리 오류 uid=${uid}`, e && e.message);
+      }
+    }
+
     /* 카드가 거절된 사람이 있으면 운영자에게 알린다.
 
        여태 아무 데도 안 알렸다. 사용자는 설정 창을 직접 열기 전에는 자기 카드가
@@ -3214,14 +3433,26 @@ if (PAYMENTS_LIVE) exports.renewSubscriptions = onSchedule(
        지나간다.
 
        없는 날은 알리지 않는다 — 매일 '0건' 이 오면 그 알림은 아무도 안 읽는다. */
-    if (failed.length) {
-      await alertOps(`정기결제 실패 ${failed.length}건`, [
-        "아래 회원의 카드가 거절되어 '결제 실패' 상태로 두었습니다.",
-        "카드를 다시 등록하면 그 자리에서 결제되어 이용이 재개됩니다.",
-        "",
-        ...failed.slice(0, 30),
-        failed.length > 30 ? `… 외 ${failed.length - 30}건` : "",
-      ].filter(Boolean));
+    if (failed.length || gaveUp.length || revived.length) {
+      const sum = [
+        failed.length ? `새로 거절 ${failed.length}건` : "",
+        revived.length ? `재시도 성공 ${revived.length}건` : "",
+        gaveUp.length ? `최종 실패 ${gaveUp.length}건` : "",
+      ].filter(Boolean).join(" · ");
+      const lines = [];
+      if (failed.length) {
+        lines.push(`[새로 거절 ${failed.length}건] ${RETRY_DAYS.join("·")}일 뒤에 다시 시도합니다.`,
+                   ...failed.slice(0, 20), "");
+      }
+      if (revived.length) {
+        lines.push(`[재시도 성공 ${revived.length}건] 성공한 시점부터 새 이용 기간이 시작됩니다.`,
+                   ...revived.slice(0, 20), "");
+      }
+      if (gaveUp.length) {
+        lines.push(`[최종 실패 ${gaveUp.length}건] ${RETRY_DAYS.length}회를 모두 시도했고 이용을 종료했습니다.`,
+                   ...gaveUp.slice(0, 20), "");
+      }
+      await alertOps(`정기결제 — ${sum}`, lines.filter(Boolean));
     }
   }
 );

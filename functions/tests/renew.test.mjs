@@ -229,6 +229,160 @@ console.log("\n── 목록을 만든 뒤 상태가 바뀌었으면 ──");
    있어야 할 것들이 index.js 에 남아 있는지 본다. 하나라도 빠지면 위 검사는
    전부 통과하면서 실제로는 두 번 청구된다.
    ─────────────────────────────────────────────────────────── */
+/* ── 카드가 거절된 뒤의 재시도 ─────────────────────────────
+   한 번 거절됐다고 바로 끊지 않는다. 정해진 날에 다시 시도하고, 성공하면
+   그 순간부터 새 한 달이 시작된다. 네 번 다 실패하면 종료한다.
+   ─────────────────────────────────────────────────────────── */
+const RETRY_DAYS = [1, 3, 5, 7];
+
+/* renewSubscriptions 의 재시도 루프가 한 건에 하는 일. */
+async function dunOne(ref, now, deps) {
+  const { withLock, charge, writePayment } = deps;
+  const sub = (await ref.get()).data();
+  const plan = sub.pendingPlan || sub.plan;
+  const failedMs = sub.failedAt || 0;
+  if (!failedMs) {
+    /* 언제 실패했는지 모르면 재시도 날짜를 셀 수가 없다. 그냥 넘기면 이 문서는
+       영영 past_due 에 머물러 결제도 종료도 되지 않는다 — 오늘을 기준일로
+       잡아 다시 세기 시작한다. */
+    await ref.set({ failedAt: now, retryCount: 0 });
+    return "no-failedAt";
+  }
+  const dayN = kstDayNo(now) - kstDayNo(failedMs);
+  const tried = sub.retryCount || 0;
+  if (tried >= RETRY_DAYS.length) {
+    // 마지막 시도까지 실패했는데 아직 past_due 라면, 종료 쓰기가 실패한 것이다.
+    await ref.set({ status: "expired" });
+    return "done-already";
+  }
+  if (dayN < RETRY_DAYS[tried]) return "too-early";
+
+  let out = "";
+  try {
+    await withLock(async () => {
+      const fresh = (await ref.get()).data();
+      if (!fresh || fresh.status !== "past_due") { out = "gone"; return; }
+      if ((fresh.retryCount || 0) !== tried) { out = "gone"; return; }
+      try {
+        const pay = await charge(PRICE[plan], `dun_u1_${kstDayNo(now)}`);
+        await ref.set({
+          plan, pendingPlan: null, status: "active",
+          currentPeriodStart: now, currentPeriodEnd: now + 30 * DAY,
+          lastPaymentKey: pay ? pay.paymentKey : fresh.lastPaymentKey,
+          periodPayments: pay ? [{ key: pay.paymentKey, amount: PRICE[plan], from: now }] : [],
+          refundDone: DELETE, failedAt: DELETE, retryCount: DELETE,
+        });
+        out = "revived";
+      } catch (e) {
+        const next = tried + 1;
+        const fin = next >= RETRY_DAYS.length;
+        await ref.set({ retryCount: next, ...(fin ? { status: "expired" } : {}) });
+        await writePayment({ amount: PRICE[plan] || 0, kind: "failed", status: "failed", plan,
+                             description: fin ? "정기결제 실패(최종)" : `정기결제 재시도 실패(${next}회)` });
+        out = fin ? "gave-up" : "retry-failed";
+      }
+    });
+  } catch (e) {
+    if (e && e.kosLocked) return "locked";
+    throw e;
+  }
+  return out;
+}
+
+const stuck = (over = {}) => ({
+  status: "past_due", plan: "basic", lastPaymentKey: "old",
+  currentPeriodStart: NOW - 60 * DAY, currentPeriodEnd: NOW - 30 * DAY,
+  periodPayments: [{ key: "old", amount: 9900, from: NOW - 60 * DAY }],
+  refundDone: [{ key: "old", amount: 100 }],
+  failedAt: NOW - 30 * DAY, ...over,
+});
+
+console.log("\n── 재시도: 정해진 날에만 ──");
+{
+  for (const [tried, dayN, want] of [
+    [0, 0, "too-early"], [0, 1, "revived"],
+    [1, 2, "too-early"], [1, 3, "revived"],
+    [2, 4, "too-early"], [2, 5, "revived"],
+    [3, 6, "too-early"], [3, 7, "revived"],
+    [4, 30, "done-already"],
+  ]) {
+    const doc = stuck({ retryCount: tried, failedAt: NOW - dayN * DAY });
+    const r = await dunOne(makeRef(doc), NOW, {
+      withLock: noLock, charge: async () => ({ paymentKey: "ok" }), writePayment: async () => {},
+    });
+    ok(`${tried}번 시도함 · ${dayN}일째 → ${want}`, r === want, r);
+  }
+}
+
+console.log("\n── 재시도 성공: 그 순간부터 새 한 달 ──");
+{
+  const doc = stuck(); const ref = makeRef(doc);
+  const charged = [];
+  const r = await dunOne(ref, NOW, {
+    withLock: noLock,
+    charge: async (amt, idem) => { charged.push({ amt, idem }); return { paymentKey: "pay_dun" }; },
+    writePayment: async () => {},
+  });
+  ok("되살아난다", r === "revived" && doc.status === "active", `${r} · ${doc.status}`);
+  ok("정가를 받는다", charged[0].amt === PRICE.basic, String(charged[0].amt));
+  ok("성공한 시점부터 시작한다", doc.currentPeriodStart === NOW, String(doc.currentPeriodStart));
+  ok("거기서부터 한 달", doc.currentPeriodEnd === NOW + 30 * DAY);
+  ok("실패 기록을 지운다", doc.failedAt === undefined && doc.retryCount === undefined);
+  ok("지난 주기 결제 기록을 끊는다",
+     doc.periodPayments.length === 1 && doc.periodPayments[0].key === "pay_dun");
+  ok("지난 환불 기록도 지운다", doc.refundDone === undefined);
+  ok("멱등 이름이 그날로 고정된다", charged[0].idem === `dun_u1_${kstDayNo(NOW)}`, charged[0].idem);
+}
+
+console.log("\n── 재시도 실패: 횟수만 올리고 기다린다 ──");
+{
+  const doc = stuck({ retryCount: 1, failedAt: NOW - 3 * DAY }); const ref = makeRef(doc);
+  const rows = [];
+  const r = await dunOne(ref, NOW, {
+    withLock: noLock, charge: async () => { throw new Err("한도 초과"); },
+    writePayment: async (x) => rows.push(x),
+  });
+  ok("아직 끊지 않는다", r === "retry-failed" && doc.status === "past_due", `${r} · ${doc.status}`);
+  ok("횟수가 올라간다", doc.retryCount === 2, String(doc.retryCount));
+  ok("실패 기록이 남는다", /재시도 실패\(2회\)/.test(rows[0].description), rows[0].description);
+}
+
+console.log("\n── 마지막 시도까지 실패하면 종료 ──");
+{
+  const doc = stuck({ retryCount: 3, failedAt: NOW - 7 * DAY }); const ref = makeRef(doc);
+  const rows = [];
+  const r = await dunOne(ref, NOW, {
+    withLock: noLock, charge: async () => { throw new Err("정지된 카드"); },
+    writePayment: async (x) => rows.push(x),
+  });
+  ok("이용을 종료한다", r === "gave-up" && doc.status === "expired", `${r} · ${doc.status}`);
+  ok("최종 실패로 적는다", /최종/.test(rows[0].description), rows[0].description);
+  ok("횟수가 상한에 닿는다", doc.retryCount === RETRY_DAYS.length);
+}
+
+console.log("\n── 재시도 중 사용자가 카드를 바꿔 되살아났으면 ──");
+{
+  const doc = stuck(); const ref = makeRef(doc);
+  let charged = 0;
+  const r = await dunOne(ref, NOW, {
+    withLock: async (fn) => { doc.status = "active"; return fn(); },
+    charge: async () => { charged++; return {}; }, writePayment: async () => {},
+  });
+  ok("건드리지 않는다", r === "gone" && charged === 0, `${r} · ${charged}회`);
+}
+
+console.log("\n── 재시도가 사용자 조작과 겹치면 ──");
+{
+  const doc = stuck(); const ref = makeRef(doc);
+  let charged = 0;
+  const r = await dunOne(ref, NOW, {
+    withLock: async () => { throw new Err("처리하는 중", true); },
+    charge: async () => { charged++; return {}; }, writePayment: async () => {},
+  });
+  ok("건너뛴다", r === "locked" && charged === 0, `${r} · ${charged}회`);
+  ok("상태를 바꾸지 않는다", doc.status === "past_due" && (doc.retryCount || 0) === 0);
+}
+
 console.log("\n── 원본에 그 장치들이 있는가 ──");
 {
   const { readFileSync } = await import("node:fs");
@@ -257,9 +411,32 @@ console.log("\n── 원본에 그 장치들이 있는가 ──");
   ok("상한까지 찼으면 알린다", /상한\(400\)까지 찼다/.test(body));
   /* 카드가 거절돼도 여태 아무 데도 안 알렸다. 사용자는 설정 창을 열기 전에는
      모르고, 우리는 몇 명이 멈춰 있는지 알 방법이 없었다. */
-  ok("카드 거절을 운영자에게 알린다", /alertOps\(`정기결제 실패/.test(body));
-  ok("거절이 없는 날은 알리지 않는다", /if \(failed\.length\) \{/.test(body));
+  ok("카드 거절·재시도 결과를 운영자에게 알린다", /alertOps\(`정기결제 — /.test(body));
+  ok("거절이 없는 날은 알리지 않는다",
+     /if \(failed\.length \|\| gaveUp\.length \|\| revived\.length\)/.test(body));
+  // 재시도
+  ok("거절된 카드를 다시 시도한다", /where\("status", "==", "past_due"\)/.test(body));
+  ok("재시도 일정이 정해져 있다", /RETRY_DAYS\[tried\]/.test(body));
+  ok("재시도도 자물쇠를 잡는다", /withLock\(db, d\.ref, "dunning"/.test(body));
+  ok("자물쇠를 잡은 뒤 다시 읽는다", /fresh\.status !== "past_due"/.test(body));
+  ok("그 사이 횟수가 바뀌었으면 건너뛴다", /\(fresh\.retryCount \|\| 0\) !== tried/.test(body));
+  ok("성공하면 그 순간부터 새 기간", /currentPeriodStart: admin\.firestore\.Timestamp\.fromDate\(now\)[\s\S]{0,400}dun_/.test(body)
+     || /dun_[\s\S]{0,600}currentPeriodStart: admin\.firestore\.Timestamp\.fromDate\(now\)/.test(body));
+  ok("끝까지 안 되면 종료한다", /done \? \{ status: "expired" \}/.test(body));
+  ok("재시도 이름이 카드 재등록과 다르다", /`dun_\$\{uid\}/.test(body) && /`retry_\$\{uid\}/.test(src));
   ok("withLock 이 우리 표시를 붙인다", /e\.kosLocked = true/.test(src));
+  /* 재시도 고리도 카드를 긁는다 — 갱신 고리와 같은 확인이 있어야 한다. */
+  ok("재시도도 긁기 전에 계정을 확인한다",
+     (body.match(/admin\.auth\(\)\.getUser\(uid\)/g) || []).length === 2,
+     "탈퇴한 사람의 카드를 긁는 사고는 되돌릴 수 없다");
+  /* past_due 에서 빠져나가지 못하는 문서를 남기지 않는다. 조용히 묶여 있으면
+     결제도 종료도 안 된 채로 매일 목록에만 올라온다. */
+  ok("failedAt 이 없으면 오늘을 기준으로 다시 잡는다",
+     /failedAt 이 없다[\s\S]{0,400}retryCount: 0/.test(body),
+     "그냥 넘기면 영영 past_due 에 머문다");
+  ok("재시도를 모두 마친 문서는 닫는다",
+     /tried >= RETRY_DAYS\.length\) \{[\s\S]{0,500}status: "expired"/.test(body),
+     "종료 쓰기가 실패했으면 매일 목록에만 올라온다");
 }
 
 console.log(`\n통과 ${pass} · 실패 ${fail}`);
