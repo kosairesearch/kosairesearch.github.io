@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """
-전 종목 밸류에이션(정량) 수집 — 상단 그리드·스크리너용 데이터.
+전 종목 밸류에이션(정량) 수집 — 상단 그리드와 리포트 페이지 조건 검색용 데이터.
 
 종목별로 EPS·BPS·DPS·ROE·매출성장률을 DART에서 직접 수집해
 data/valuation.js (window.KOS_VALUATION) 로 저장한다.

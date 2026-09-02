@@ -109,7 +109,6 @@ body::before{content:"";position:fixed;inset:0;z-index:-1;pointer-events:none;
 .search input{flex:1;min-width:0;border:0;outline:none;background:transparent;font:400 15px var(--font-sans);color:var(--fg-1)}
 .search input::placeholder{color:var(--fg-3)}
 .sortwrap{display:flex;align-items:center;gap:8px}
-.sort-label{font:600 12px var(--font-sans);color:var(--fg-3);white-space:nowrap}
 .selctl{position:relative}
 .selbtn{display:inline-flex;align-items:center;gap:10px;border:1px solid var(--border-2);background:rgba(255,255,255,.5);
   border-radius:var(--pill);padding:11px 16px;font:600 13px var(--font-sans);color:var(--fg-1);cursor:pointer;transition:.12s}
@@ -130,18 +129,6 @@ body::before{content:"";position:fixed;inset:0;z-index:-1;pointer-events:none;
 .selmenu button.active{color:var(--fg-1)}
 .selmenu button.active::after{content:"✓";color:var(--brand-blue);font-size:13px}
 :root[data-theme="dark"] .selmenu button.active::after{color:var(--brand-cyan)}
-
-/* sector chips */
-.chips{display:flex;flex-wrap:wrap;gap:7px;margin-bottom:14px}
-.chip{font:500 13px var(--font-sans);color:var(--fg-2);background:rgba(255,255,255,.55);border:1px solid rgba(255,255,255,.5);padding:8px 15px;border-radius:var(--pill);cursor:pointer;white-space:nowrap;transition:.15s;box-shadow:var(--shadow-1)}
-.chip:hover{color:var(--fg-1);transform:translateY(-1px)}
-:root[data-theme="dark"] .chip{background:rgba(255,255,255,.07);border-color:rgba(255,255,255,.12)}
-.chip.active{background:#000;color:#fff;border-color:#000}
-:root[data-theme="dark"] .chip.active{background:#fff;color:#000;border-color:#fff}
-.chip.hide{display:none}
-.chip.more{color:var(--fg-2);border:1px dashed var(--border-2);background:rgba(255,255,255,.4);box-shadow:none}
-.chip.more:hover{color:var(--fg-1);border-color:var(--fg-3)}
-:root[data-theme="dark"] .chip.more{background:rgba(255,255,255,.05);border-color:rgba(255,255,255,.22)}
 
 .count-row{font:500 14px var(--font-sans);color:var(--fg-3);margin-bottom:12px}
 .count-row b{color:var(--fg-1);font-weight:700}
@@ -205,6 +192,117 @@ body::before{content:"";position:fixed;inset:0;z-index:-1;pointer-events:none;
 .biz b{font-weight:600;color:var(--fg-2)}
 .foot-bottom{display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap;margin-top:22px;padding-top:18px;border-top:1px solid var(--border-2);font:500 12px var(--font-sans);color:var(--fg-3)}
 
+/* ── 숫자 조건으로 걸러내기 ────────────────────────────────
+   스크리너 페이지에 있던 필터를 이 페이지로 가져왔다(그 페이지는 이제 없다).
+
+   왜 옮겼나. 리포트가 전 종목(2,658개)을 덮고 있어서 두 페이지가 같은 종목
+   목록을 두 가지 방식으로 보여 주고 있었다. 그런데 "PER 10배 이하인 종목의
+   리포트를 읽자" 는, 가장 자연스러운 요구가 어느 쪽에서도 되지 않았다 —
+   스크리너에서 걸러낸 종목을 외워서 리포트에서 다시 찾아야 했다.
+
+   기본 화면은 그대로다. 필터를 걸지 않으면 예전과 한 픽셀도 다르지 않다.
+   숫자 입력칸은 '필터 추가' 뒤에 숨겨 두고, 처음 오는 사람에게는 테마
+   버튼(저PER 가치주 · 고배당주 …)만 보이게 했다. */
+.add-filter{display:inline-flex;align-items:center;gap:7px;font:600 14px var(--font-sans);color:#fff;background:#000;
+  border:0;padding:11px 16px 11px 14px;border-radius:var(--pill);cursor:pointer;box-shadow:var(--shadow-1);transition:transform .12s,filter .15s}
+.add-filter:hover{filter:brightness(1.1)}.add-filter:active{transform:scale(.98)}
+:root[data-theme="dark"] .add-filter{background:#fff;color:#000}
+.add-filter svg{width:16px;height:16px}
+.fchips{display:flex;align-items:center;flex-wrap:wrap;gap:8px;margin-bottom:16px;min-height:4px}
+.fchips .lbl{font:500 13px var(--font-sans);color:var(--fg-3)}
+.fchip{display:inline-flex;align-items:center;gap:2px;font:600 13px var(--font-sans);color:var(--fg-1);
+  background:rgba(255,255,255,.6);border:1px solid var(--border-2);border-radius:var(--pill);padding:0;cursor:pointer;
+  box-shadow:var(--shadow-1);overflow:hidden;transition:.12s}
+:root[data-theme="dark"] .fchip{background:rgba(255,255,255,.08)}
+.fchip:hover{border-color:var(--fg-3)}
+.fchip .lab{padding:7px 4px 7px 13px}
+.fchip .x{display:inline-flex;width:26px;align-self:stretch;align-items:center;justify-content:center;font-size:12px;color:var(--fg-3);border-left:1px solid var(--hair)}
+.fchip .x:hover{background:rgba(0,0,0,.06);color:var(--fg-1)}
+:root[data-theme="dark"] .fchip .x:hover{background:rgba(255,255,255,.1)}
+.clear-all{margin-left:4px;font:500 13px var(--font-sans);color:var(--fg-3);background:none;border:0;cursor:pointer;padding:6px 8px}
+.clear-all:hover{color:var(--fg-1)}
+.fchips-empty{font:500 13px var(--font-sans);color:var(--fg-3)}
+
+.pop-backdrop{position:fixed;inset:0;z-index:80;background:transparent;display:none}
+.pop-backdrop.open{display:block}
+.popover{position:fixed;z-index:81;width:330px;max-width:calc(100vw - 24px);display:none;
+  border-radius:var(--radius-lg);box-shadow:var(--shadow-3);overflow:hidden;
+  background:rgba(255,255,255,0.86);border:1px solid rgba(255,255,255,0.6);
+  -webkit-backdrop-filter:blur(24px) saturate(1.4);backdrop-filter:blur(24px) saturate(1.4)}
+:root[data-theme="dark"] .popover{background:rgba(30,32,44,0.92);border-color:rgba(255,255,255,.1)}
+.popover.open{display:block;animation:popIn .14s ease-out}
+@keyframes popIn{from{opacity:0;transform:translateY(-6px)}to{opacity:1;transform:none}}
+.pop-head{display:flex;align-items:center;gap:8px;padding:14px 14px 12px}
+.pop-back{width:28px;height:28px;border-radius:7px;border:0;background:rgba(0,0,0,.05);cursor:pointer;
+  display:none;align-items:center;justify-content:center;color:var(--fg-2);flex:0 0 auto}
+.pop-back:hover{background:rgba(0,0,0,.1)}
+:root[data-theme="dark"] .pop-back{background:rgba(255,255,255,.08)}
+.pop-back svg{width:15px;height:15px}
+.pop-title{font:700 15px var(--font-sans);letter-spacing:-.01em;flex:1}
+.pop-close{width:28px;height:28px;border-radius:7px;border:0;background:transparent;cursor:pointer;color:var(--fg-3);display:inline-flex;align-items:center;justify-content:center;flex:0 0 auto}
+.pop-close:hover{background:rgba(0,0,0,.06);color:var(--fg-1)}
+:root[data-theme="dark"] .pop-close:hover{background:rgba(255,255,255,.08)}
+.pop-close svg{width:16px;height:16px}
+.pop-body{padding:4px 8px 8px;max-height:min(54vh,440px);overflow-y:auto}
+
+
+/* field list */
+.pop-field{display:flex;align-items:center;gap:10px;width:100%;text-align:left;padding:11px 12px;border-radius:10px;
+  border:0;background:transparent;cursor:pointer;font:600 14px var(--font-sans);color:var(--fg-1);transition:background .12s}
+.pop-field:hover{background:rgba(0,0,0,.05)}
+:root[data-theme="dark"] .pop-field:hover{background:rgba(255,255,255,.06)}
+.pop-field .fi{flex:1}
+.pop-field .cur{font:600 12px var(--font-sans);color:var(--brand-blue)}
+:root[data-theme="dark"] .pop-field .cur{color:var(--brand-cyan)}
+.pop-field .arr{color:var(--fg-3);font-size:13px}
+.pop-field .dot{width:7px;height:7px;border-radius:50%;background:var(--brand-blue);flex:0 0 auto}
+:root[data-theme="dark"] .pop-field .dot{background:var(--brand-cyan)}
+
+/* editor controls */
+.pop-editor{padding:6px 8px 4px}
+.seg{display:flex;gap:4px;background:rgba(0,0,0,.05);padding:4px;border-radius:var(--radius-md);margin-bottom:6px}
+:root[data-theme="dark"] .seg{background:rgba(255,255,255,.07)}
+.seg button{flex:1;font:600 13px var(--font-sans);color:var(--fg-2);background:transparent;border:0;padding:9px 0;border-radius:8px;cursor:pointer;transition:.15s}
+.seg button.active{background:#fff;color:var(--fg-1);box-shadow:var(--shadow-1)}
+:root[data-theme="dark"] .seg button.active{background:rgba(255,255,255,.16);color:#fff}
+.checks{display:flex;flex-direction:column;gap:1px;max-height:240px;overflow-y:auto}
+.check{display:flex;align-items:center;gap:10px;font:500 14px var(--font-sans);color:var(--fg-2);padding:8px;border-radius:8px;cursor:pointer;transition:background .12s}
+.check:hover{background:rgba(0,0,0,.04)}
+:root[data-theme="dark"] .check:hover{background:rgba(255,255,255,.05)}
+.check .box{width:18px;height:18px;border:1.5px solid var(--border-2);border-radius:6px;flex:0 0 auto;display:inline-flex;align-items:center;justify-content:center;transition:.12s}
+.check .box svg{width:12px;height:12px;color:#fff;opacity:0}
+.check.on{color:var(--fg-1);font-weight:600}
+.check.on .box{background:#000;border-color:#000}.check.on .box svg{opacity:1}
+:root[data-theme="dark"] .check.on .box{background:#fff;border-color:#fff}
+:root[data-theme="dark"] .check.on .box svg{color:#000}
+.check .count{margin-left:auto;font:500 12px var(--font-sans);color:var(--fg-3)}
+.range-edit .range-inputs{display:flex;align-items:center;gap:8px;margin:2px 0 6px}
+.range-edit input{flex:1;min-width:0;width:100%;border:1px solid var(--border-2);background:rgba(255,255,255,.5);border-radius:9px;padding:11px 12px;font:600 14px var(--font-sans);color:var(--fg-1);outline:none;text-align:center}
+:root[data-theme="dark"] .range-edit input{background:rgba(255,255,255,.06)}
+.range-edit input:focus{border-color:var(--fg-3)}
+.range-edit input::placeholder{color:var(--fg-3);font-weight:500}
+/* 브라우저 기본 숫자 스피너(위/아래 화살표) 숨김 — 타이핑·키보드 입력은 유지 */
+.range-edit input::-webkit-outer-spin-button,
+.range-edit input::-webkit-inner-spin-button{-webkit-appearance:none;margin:0}
+.range-edit input[type=number]{-moz-appearance:textfield;appearance:textfield}
+.range-edit .tilde{color:var(--fg-3)}
+.range-quick{display:flex;flex-wrap:wrap;gap:6px;margin-top:4px}
+.range-quick button{font:500 12px var(--font-sans);color:var(--fg-2);background:rgba(0,0,0,.05);border:0;padding:6px 11px;border-radius:var(--pill);cursor:pointer}
+.range-quick button:hover{color:var(--fg-1);background:rgba(0,0,0,.09)}
+:root[data-theme="dark"] .range-quick button{background:rgba(255,255,255,.08)}
+.unit-note{font:500 12px var(--font-sans);color:var(--fg-3);text-align:right;margin-top:2px}
+.pop-foot{display:flex;gap:8px;padding:12px 14px;border-top:1px solid var(--hair)}
+.pop-foot .btn{flex:1;padding:11px 0}
+.pop-foot .btn-remove{flex:0 0 auto;padding:11px 14px;color:var(--up);background:transparent}
+.pop-foot .btn-remove:hover{background:rgba(229,56,59,.08)}
+
+/* 걸어 둔 조건의 실제 값을 종목 줄에 같이 보여 준다. 컬럼을 늘리지 않고
+   종목명 아랫줄에 붙인다 — 컬럼을 늘리면 리포트 제목이 폭을 많이 먹어
+   휴대폰에서 감당이 안 된다. */
+.mval{color:var(--brand-blue);font-weight:600;white-space:nowrap}
+.empty .ebtns{margin-top:14px}
+:root[data-theme="dark"] .mval{color:var(--brand-cyan)}
+
 /* responsive */
 @media (min-width:768px){:root{--pad:24px}}
 @media (min-width:1024px){:root{--pad:32px}}
@@ -222,6 +320,14 @@ body::before{content:"";position:fixed;inset:0;z-index:-1;pointer-events:none;
 @media (max-width:767px){
   .nav-links{display:none}.menu-btn{display:inline-flex}
   .foot-grid{grid-template-columns:repeat(3,1fr);gap:16px}.foot-brand{grid-column:1/-1}.foot-bottom{flex-direction:column;gap:8px}
+  .search{order:-1;flex:1 1 100%}
+  /* 좁은 화면에서 팝오버는 아래에서 올라오는 시트가 된다 */
+  .pop-backdrop.open{background:rgba(0,0,0,.32)}
+  .popover.sheet{left:0!important;right:0!important;bottom:0!important;top:auto!important;width:auto;max-width:none;
+    border-radius:var(--radius-xl) var(--radius-xl) 0 0;border-bottom:0}
+  .popover.sheet.open{animation:sheetUp .2s ease-out}
+  .popover.sheet .pop-body{max-height:60vh}
+  @keyframes sheetUp{from{transform:translateY(100%)}to{transform:none}}
 }
 
 /* pager */
@@ -440,7 +546,7 @@ KOSi18n.register({
   // brand / nav
   "KOSAI":"KOSAI",
   "홈":"Home",
-  "스크리너":"Screener",
+  
   "업종별":"Industries",
   "리포트":"Reports",
   "워치리스트":"Watchlist",
@@ -521,8 +627,7 @@ KOSi18n.register({
     <a href="Home.html">홈</a>
     <a href="Reports.html" class="active">리포트</a>
     <a href="industry.html">업종별</a>
-    <a href="Screener.html">스크리너</a>
-    <a href="Watchlist.html">워치리스트</a>
+      <a href="Watchlist.html">워치리스트</a>
     <a href="brief.html">모닝브리핑</a>
   </div>
   <div class="nav-spacer"></div>
@@ -537,7 +642,6 @@ KOSi18n.register({
   <a href="Home.html">홈</a>
   <a href="Reports.html" class="active">리포트</a>
   <a href="industry.html">업종별</a>
-  <a href="Screener.html">스크리너</a>
   <a href="Watchlist.html">워치리스트</a>
   <a href="brief.html">모닝브리핑</a>
 </div>
@@ -557,8 +661,16 @@ KOSi18n.register({
       <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="11" cy="11" r="7"/><path d="M21 21l-3.5-3.5"/></svg>
       <input id="searchInput" data-i18n-ph placeholder="티커 · 종목명 · 업종 검색" autocomplete="off" />
     </div>
+    <button class="add-filter" id="addFilterBtn">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"><path d="M12 5v14M5 12h14"/></svg>
+      필터 추가
+    </button>
+    <!-- '정렬' 라벨은 두지 않는다. 드롭다운에 이미 '시가총액 높은 순' 이라고
+         적혀 있어 무엇을 하는 자리인지 자명하고, 검은 알약(필터 추가)과 넓은
+         드롭다운 사이에 작은 회색 글자가 끼면 줄의 리듬이 울퉁불퉁해진다.
+         워치리스트는 라벨을 그대로 둔다 — 거기는 드롭다운이 아니라 버튼이
+         죽 늘어선 모양이라 무엇을 고르는 자리인지 라벨이 말해 줘야 한다. -->
     <div class="sortwrap">
-      <span class="sort-label">정렬</span>
       <div class="selctl" id="sortCtl" data-i18n-skip>
         <button class="selbtn" id="sortBtn" type="button"><span id="sortLabel">시가총액 높은 순</span><span class="caret"></span></button>
         <div class="selmenu glass" id="sortMenu">
@@ -568,12 +680,17 @@ KOSi18n.register({
           <button type="button" data-v="change_asc">등락률 낮은 순</button>
           <button type="button" data-v="date">최신 리포트순</button>
           <button type="button" data-v="name">종목명순</button>
+          <button type="button" data-v="per_asc">PER 낮은 순</button>
+          <button type="button" data-v="pbr_asc">PBR 낮은 순</button>
+          <button type="button" data-v="div_desc">배당수익률 높은 순</button>
         </div>
       </div>
     </div>
   </div>
 
-  <div class="chips" id="chips" data-i18n-skip></div>
+  <!-- 지금 걸려 있는 조건. 업종도 여기에 들어온다 — 조건을 고르는 자리가
+       둘이면 어느 쪽이 이기는지 설명할 수 없다. -->
+  <div class="fchips" id="fchips" data-i18n-skip></div>
 
   <div class="count-row"><b id="countN">0</b>개 리포트</div>
 
@@ -592,7 +709,8 @@ KOSi18n.register({
 
   <div class="empty" id="empty">
     <h2>검색 결과가 없습니다</h2>
-    <p>다른 종목명·티커·업종으로 검색해 보세요.</p>
+    <p id="emptyMsg">다른 종목명·티커·업종으로 검색해 보세요.</p>
+    <div class="ebtns" id="emptyActs" style="display:none"><button class="btn btn-soft" id="emptyReset">필터 초기화</button></div>
   </div>
 
 </div>
@@ -602,7 +720,7 @@ KOSi18n.register({
     <div class="foot-inner glass">
       <div class="foot-grid">
         <div class="foot-brand"><a class="brand" href="/"><img class="brand-logo brand-logo--light" src="assets/kosai-wordmark-black.png" alt="KOSAI" width="148" height="24"><img class="brand-logo brand-logo--dark" src="assets/kosai-wordmark-white.png" alt="KOSAI" width="148" height="24"></a><p>한국 상장사를 위한 AI 투자 리서치. 데이터와 분석을 한 페이지에.</p></div>
-        <div class="foot-col"><h4>서비스</h4><ul><li><a href="Home.html">홈</a></li><li><a href="Reports.html">리포트</a></li><li><a href="industry.html">업종별</a></li><li><a href="Screener.html">스크리너</a></li><li><a href="Watchlist.html">워치리스트</a></li><li><a href="brief.html">모닝브리핑</a></li></ul></div>
+        <div class="foot-col"><h4>서비스</h4><ul><li><a href="Home.html">홈</a></li><li><a href="Reports.html">리포트</a></li><li><a href="industry.html">업종별</a></li><li></li><li><a href="Watchlist.html">워치리스트</a></li><li><a href="brief.html">모닝브리핑</a></li></ul></div>
         <div class="foot-col"><h4>회사</h4><ul><li><a href="About.html">About</a></li><li><a href="Contact.html">문의하기</a></li><li><a href="Feedback.html">피드백</a></li></ul></div>
         
         <div class="foot-col"><h4>정책</h4><ul><li><a href="Terms.html">이용약관</a></li><li><a href="Privacy.html">개인정보처리방침</a></li></ul></div>
@@ -622,10 +740,28 @@ KOSi18n.register({
   </div>
 </footer>
 
+<!-- 조건을 고르는 창. 좁은 화면에서는 아래에서 올라오는 시트가 된다. -->
+<div class="pop-backdrop" id="popBackdrop"></div>
+<div class="popover" id="popover" role="dialog" aria-label="필터 설정" data-i18n-skip>
+  <div class="pop-head">
+    <button class="pop-back" id="popBack" aria-label="뒤로"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 18l-6-6 6-6"/></svg></button>
+    <span class="pop-title" id="popTitle">필터 추가</span>
+    <button class="pop-close" id="popClose" aria-label="닫기"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"><path d="M6 6l12 12M18 6L6 18"/></svg></button>
+  </div>
+  <div class="pop-body" id="popBody"></div>
+  <div class="pop-foot" id="popFoot" style="display:none">
+    <button class="btn btn-remove" id="popRemove" style="display:none">제거</button>
+    <button class="btn btn-primary" id="popApply">적용</button>
+  </div>
+</div>
+
 <script>
 const EN=()=>(window.KOSi18n&&KOSi18n.lang==='en');
 const T=s=>(window.KOSi18n?KOSi18n.t(s):s);
-const KOS={won:n=>EN()?'₩'+n.toLocaleString('en-US'):n.toLocaleString('ko-KR')+'원',pct:n=>(n>0?'+':'')+n.toFixed(2)+'%'};
+const KOS={won:n=>EN()?'₩'+n.toLocaleString('en-US'):n.toLocaleString('ko-KR')+'원',pct:n=>(n>0?'+':'')+n.toFixed(2)+'%',
+  /* 시가총액 단위는 조. 1조 미만은 억으로 읽는다 —
+     0.3조 보다 3,000억 이 읽기 쉽다. */
+  mcap:jo=>!jo?'-':(jo>=1?(EN()?'₩'+(+jo).toLocaleString('en-US',{maximumFractionDigits:1})+'T':(+jo).toLocaleString('en-US',{maximumFractionDigits:1})+'조'):(EN()?'₩'+Math.round(jo*1000).toLocaleString('en-US')+'B':Math.round(jo*10000).toLocaleString('ko-KR')+'억'))};
 const REPORTS_DEFAULT=[
   {name:'삼성전자',ticker:'005930',market:'KOSPI',sector:'반도체',price:78400,change:1.55,mcap:468.2,date:'2026-05-25',ai:'HBM 매출 비중 확대와 메모리 가격 회복 사이클이 분기 영업이익률 개선으로 이어지는 흐름이다.'},
   {name:'SK하이닉스',ticker:'000660',market:'KOSPI',sector:'반도체',price:196000,change:2.84,mcap:142.7,date:'2026-05-25',ai:'HBM3E 12단 양산 진입과 AI 가속기 수요 확대로 분기 실적 가시성이 비교적 높은 수준으로 평가된다.'},
@@ -651,31 +787,36 @@ const REPORTS_DEFAULT=[
 const REPORTS = window.KOS_LIVE_DATA?.stocks || REPORTS_DEFAULT;
 
 const rcats=r=>(r.categories&&r.categories.length?r.categories:[r.sector]);
-const SECTORS=['전체',...[...new Set(REPORTS.flatMap(rcats))]];
+/* 업종마다 몇 종목인지 같이 센다. 고르기 전에 규모를 알 수 있어야
+   '전기·전자 3개' 같은 헛걸음을 안 한다. */
+const SECTORS=[...new Set(REPORTS.flatMap(rcats))]
+  .map(name=>({name,count:REPORTS.filter(r=>rcats(r).includes(name)).length}))
+  .sort((a,b)=>b.count-a.count);
 
-const state={q:'',sector:'전체',sort:'mcap_desc',expanded:false,page:1,pageSize:20};
+const state={q:'',sort:'mcap_desc',page:1,pageSize:20,filters:{}};
 const rowsEl=document.getElementById('rows'),rlEl=document.getElementById('rl'),emptyEl=document.getElementById('empty');
 
-const VISIBLE_CHIPS=7;
-function buildChips(){
-  const c=document.getElementById('chips');
-  c.classList.toggle('expanded', !!state.expanded);
-  c.innerHTML=SECTORS.map((s,i)=>{
-    const extra=i>=VISIBLE_CHIPS;
-    const cls='chip'+(s===state.sector?' active':'')+(extra?' extra':'')+((extra&&!state.expanded)?' hide':'');
-    return `<button class="${cls}" data-sector="${s}">${T(s)}</button>`;
-  }).join('') + (SECTORS.length>VISIBLE_CHIPS?`<button class="chip more" id="chipMore" type="button">${state.expanded?T('접기 ▲'):T('더보기 ▾')}</button>`:'');
-}
-const SORT_LABEL={mcap_desc:'시가총액 높은 순',mcap_asc:'시가총액 낮은 순',change_desc:'등락률 높은 순',change_asc:'등락률 낮은 순',date:'최신 리포트순',name:'종목명순'};
+const SORT_LABEL={mcap_desc:'시가총액 높은 순',mcap_asc:'시가총액 낮은 순',change_desc:'등락률 높은 순',change_asc:'등락률 낮은 순',date:'최신 리포트순',name:'종목명순',per_asc:'PER 낮은 순',pbr_asc:'PBR 낮은 순',div_desc:'배당수익률 높은 순'};
 function repaintSort(){
   const sl=document.getElementById('sortLabel'); if(sl) sl.textContent=T(SORT_LABEL[state.sort]);
   document.querySelectorAll('#sortMenu button[data-v]').forEach(b=>b.textContent=T(SORT_LABEL[b.dataset.v]));
 }
 
+/* 값이 없는 종목은 방향과 상관없이 뒤로 보낸다. 앞에 두면 'PER 낮은 순'의
+   첫 화면이 전부 '—' 가 되어 정렬이 고장 난 것처럼 보인다. */
+function byNum(k,dir){
+  return (a,b)=>{
+    const x=a[k],y=b[k];
+    const xb=(x==null||isNaN(x)),yb=(y==null||isNaN(y));
+    if(xb&&yb)return (b.mcap||0)-(a.mcap||0);
+    if(xb)return 1; if(yb)return -1;
+    return (x-y)*dir;
+  };
+}
 function getList(){
   const t=state.q.trim().toLowerCase();
   let l=REPORTS.filter(r=>{
-    if(state.sector!=='전체'&&!rcats(r).includes(state.sector))return false;
+    if(!passesFilters(r))return false;
     if(t&&!(r.name.toLowerCase().includes(t)||r.ticker.includes(t)||r.sector.toLowerCase().includes(t)||T(r.name).toLowerCase().includes(t)||T(r.sector).toLowerCase().includes(t)))return false;
     return true;
   });
@@ -685,6 +826,9 @@ function getList(){
   else if(state.sort==='change_asc')l.sort((a,b)=>a.change-b.change);
   else if(state.sort==='date')l.sort((a,b)=>String(repTs(b.ticker)).localeCompare(String(repTs(a.ticker))) || (b.mcap||0)-(a.mcap||0));
   else if(state.sort==='name')l.sort((a,b)=>a.name.localeCompare(b.name,'ko'));
+  else if(state.sort==='per_asc')l.sort(byNum('per',1));
+  else if(state.sort==='pbr_asc')l.sort(byNum('pbr',1));
+  else if(state.sort==='div_desc')l.sort(byNum('div',-1));
   return l;
 }
 function repTitle(tk){
@@ -709,7 +853,7 @@ function rowHtml(r,i){
   return `<a class="rl-row" href="stock.html?ticker=${r.ticker}" data-tk="${r.ticker}">
     <span class="c-rank">${i+1}</span>
     <div class="c-nm"><div class="nm">${T(r.name)}</div>
-      <div class="id"><span class="tk">${r.ticker}</span><span class="dot">·</span><span>${T(r.market)}</span><span class="dot">·</span><span>${T(r.sector)}</span></div></div>
+      <div class="id"><span class="tk">${r.ticker}</span><span class="dot">·</span><span>${T(r.market)}</span><span class="dot">·</span><span>${T(r.sector)}</span>${metricBits(r).map(m=>'<span class="dot">·</span>'+m).join('')}</div></div>
     <div class="c-price"><div class="px">${KOS.won(r.price)}</div><div class="ch ${dir}"><span style="font-size:10px">${arw}</span> ${KOS.pct(r.change)}</div></div>
     <p class="c-ai c-title">${titleHtml}</p>
     <div class="c-date">${repDate(r.ticker) || '—'}</div>
@@ -726,12 +870,245 @@ function pageWindow(cur,pages){
   for(let i=0;i<arr.length;i++){ if(i&&arr[i]-arr[i-1]>1)res.push('…'); res.push(arr[i]); }
   return res;
 }
+/* ══ 숫자 조건으로 걸러내기 ══════════════════════════════════
+   스크리너 페이지에 있던 필터를 여기로 가져왔다. 그 페이지는 이제 없다 —
+   Screener.html 은 이 페이지로 보내는 껍데기만 남았다.
+
+   조건을 고르는 자리는 '필터 추가' 하나뿐이다. 업종도 여기에 들어 있다.
+   같은 일을 하는 조작이 두 개면 어느 쪽이 이기는지 설명할 수 없게 된다.
+   ══════════════════════════════════════════════════════════ */
+
+/* PER·PBR·배당·성장률은 valuation.js(279KB)에 있다. 이 페이지는 이미
+   stocks.js 와 reports-index.js 로 1.7MB 를 받는데, 필터를 한 번도 안 쓰는
+   사람이 대부분이다. 그래서 처음부터 받지 않고 필터를 처음 건드릴 때 받는다.
+   랜딩 페이지에서 600KB 를 걷어낸 것과 같은 이유다. */
+let valState = 'none';                    // none · loading · ready · failed
+function attachVal(){
+  const VAL=(window.KOS_VALUATION&&KOS_VALUATION.stocks)||{};
+  REPORTS.forEach(function(s){ const v=VAL[s.ticker]; if(!v)return;
+    if(v.eps&&v.eps>0&&s.price) s.per=+(s.price/v.eps).toFixed(1);
+    if(v.bps&&v.bps>0&&s.price) s.pbr=+(s.price/v.bps).toFixed(2);
+    if(v.dps!=null&&s.price) s.div=+(v.dps/s.price*100).toFixed(2);
+    if(v.roe!=null) s.roe=v.roe;
+    if(v.rev_g!=null) s.rev=v.rev_g;
+  });
+}
+let valPromise=null;
+function needVal(){
+  if(valState==='ready') return Promise.resolve(true);
+  if(valPromise) return valPromise;
+  valState='loading';
+  valPromise=new Promise(function(res){
+    const el=document.createElement('script');
+    el.src='data/valuation.js';
+    el.onload=function(){ attachVal(); valState='ready'; res(true); };
+    /* 못 받아도 화면이 멈추면 안 된다. 숫자 조건만 못 쓸 뿐 목록은 그대로다. */
+    el.onerror=function(){ valState='failed'; res(false); };
+    document.head.appendChild(el);
+  });
+  return valPromise;
+}
+
+const FIELDS={
+  /* 업종이 맨 위다. 제일 많이 쓰는 조건이라 창을 열면 바로 눈에 와야 한다.
+     여러 개를 함께 고를 수 있다(반도체 + 2차전지) — 칩으로 두었을 때는
+     하나밖에 못 골랐다. */
+  sector:{label:'업종',type:'multi',options:SECTORS},
+  market:{label:'시장',type:'segment',options:['전체','코스피','코스닥']},
+  mcap:{label:'시가총액',type:'range',unit:'조',quick:[{l:'1조원 이하',max:1},{l:'1조원 이상 ~ 10조원 이하',min:1,max:10},{l:'10조원 이상',min:10}]},
+  per:{label:'PER',type:'range',unit:'배',quick:[{l:'10배 이하',max:10},{l:'20배 이하',max:20}]},
+  pbr:{label:'PBR',type:'range',unit:'배',quick:[{l:'1배 이하',max:1},{l:'2배 이하',max:2}]},
+  div:{label:'배당수익률',type:'range',unit:'%',quick:[{l:'2% 이상',min:2},{l:'4% 이상',min:4}]},
+  rev:{label:'매출 성장률',type:'range',unit:'%',quick:[{l:'10% 이상',min:10},{l:'20% 이상',min:20},{l:'25% 이상',min:25}]},
+};
+const FIELD_ORDER=['sector','market','mcap','per','pbr','div','rev'];
+/* market·mcap 은 stocks.js 에 이미 있다. 나머지만 valuation.js 를 기다린다. */
+const NEEDS_VAL=new Set(['per','pbr','div','rev']);
+/* 정렬도 마찬가지다. 값이 없으면 byNum 이 전부 뒤로 보내 시가총액순처럼
+   보이는데, 고른 것과 다른 순서를 아무 말 없이 주는 셈이 된다. */
+const SORT_NEEDS_VAL=new Set(['per_asc','pbr_asc','div_desc']);
+const UNIT=u=>(EN()?({'조':'T','배':'x','%':'%'})[u]||u:u);
+
+/* 테마('저PER 가치주' 같은 묶음)는 두지 않는다. 기준값을 우리가 임의로 정해
+   이름을 붙여 종목을 묶어 보여 주면, 면책 조항에 적어 둔 '투자 권유나 추천이
+   아닙니다' 와 부딪힐 소지가 있다. 조건은 사용자가 직접 정한다. */
+
+function passesFilters(r){
+  for(const k in state.filters){
+    const f=FIELDS[k],v=state.filters[k];
+    if(f.type==='segment'){ if(v!=='전체'&&r.market!==v) return false; }
+    else if(f.type==='multi'){ if(v.length&&!rcats(r).some(c=>v.includes(c))) return false; }
+    else {
+      /* 값을 아직 못 받았으면 아무도 못 걸러낸다. 여기서 false 를 주면 필터를
+         거는 순간 목록이 통째로 비어 "조건에 맞는 종목이 없다" 로 보인다. */
+      if(NEEDS_VAL.has(k)&&valState!=='ready') continue;
+      const val=r[k];
+      if(val==null||isNaN(val)) return false;
+      if(v.min!=null&&val<v.min) return false;
+      if(v.max!=null&&val>v.max) return false;
+    }
+  }
+  return true;
+}
+const anyFilter=()=>Object.keys(state.filters).length>0;
+
+/* 걸어 둔 조건의 실제 값 — 종목명 아랫줄에 붙일 조각 */
+function metricBits(r){
+  const out=[];
+  for(const k of FIELD_ORDER){
+    if(state.filters[k]==null||FIELDS[k].type!=='range') continue;
+    const v=r[k]; if(v==null||isNaN(v)) continue;
+    if(k==='mcap'){ out.push(`<span class="mval">${T('시가총액')} ${KOS.mcap(v)}</span>`); continue; }
+    const u=UNIT(FIELDS[k].unit);
+    const shown=k==='pbr'?v.toFixed(2):v.toFixed(1);
+    out.push(`<span class="mval">${T(FIELDS[k].label)} ${shown}${u}</span>`);
+  }
+  return out;
+}
+
+/* ── 걸린 조건 칩 ── */
+function chipLabel(k){
+  const f=FIELDS[k],v=state.filters[k],L=T(f.label);
+  if(f.type==='segment')return `${L} · ${T(v)}`;
+  if(f.type==='multi')return v.length===1?`${L} · ${T(v[0])}`
+    :(EN()?`${L} · ${T(v[0])} +${v.length-1}`:`${L} · ${T(v[0])} 외 ${v.length-1}`);
+  const u=UNIT(f.unit);
+  if(v.min!=null&&v.max!=null)return `${L} ${v.min}–${v.max}${u}`;
+  if(v.min!=null)return EN()?`${L} ≥ ${v.min}${u}`:`${L} ${v.min}${u} 이상`;
+  return EN()?`${L} ≤ ${v.max}${u}`:`${L} ${v.max}${u} 이하`;
+}
+function renderFchips(){
+  const el=document.getElementById('fchips');
+  const keys=FIELD_ORDER.filter(k=>state.filters[k]!=null);
+  if(!keys.length){ el.innerHTML=''; return; }
+  el.innerHTML=`<span class="lbl">${T('필터')}</span>`+keys.map(k=>
+    `<span class="fchip" data-field="${k}"><span class="lab">${chipLabel(k)}</span><span class="x" data-remove="${k}">✕</span></span>`).join('')
+    +`<button class="clear-all" id="clearAll">${T('모두 지우기')}</button>`;
+}
+
+/* ── 조건을 고르는 창 ── */
+const backdrop=document.getElementById('popBackdrop'),popover=document.getElementById('popover');
+const popTitle=document.getElementById('popTitle'),popBody=document.getElementById('popBody'),popFoot=document.getElementById('popFoot');
+const popBack=document.getElementById('popBack'),popApply=document.getElementById('popApply'),popRemove=document.getElementById('popRemove');
+let curField=null;
+const checkSvg='<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12l5 5 9-10"/></svg>';
+
+function place(anchor){
+  const sheet=window.innerWidth<768;
+  popover.classList.toggle('sheet',sheet);
+  if(sheet){popover.style.left=popover.style.top='';return;}
+  const r=anchor.getBoundingClientRect(),pw=330,gap=8;
+  let left=r.left;if(left+pw>window.innerWidth-12)left=window.innerWidth-12-pw;if(left<12)left=12;
+  popover.style.left=left+'px';popover.style.top=(r.bottom+gap)+'px';
+}
+function openPop(anchor,view,field){
+  place(anchor);
+  popApply.textContent=T('적용');popRemove.textContent=T('제거');
+  backdrop.classList.add('open');popover.classList.add('open');
+  if(view==='list')showList();else showEditor(field);
+}
+function closePop(){backdrop.classList.remove('open');popover.classList.remove('open');curField=null;}
+
+function showList(){
+  curField=null;
+  popTitle.textContent=T('필터 추가');
+  popBack.style.display='none';popFoot.style.display='none';
+  popBody.innerHTML=FIELD_ORDER.map(k=>{
+    const f=FIELDS[k],active=state.filters[k]!=null,L=T(f.label);
+    const cur=active?`<span class="cur">${chipLabel(k).replace(L+' · ','').replace(L+' ','')}</span>`:'';
+    return `<button class="pop-field" data-field="${k}">${active?'<span class="dot"></span>':''}<span class="fi">${L}</span>${cur}<span class="arr">›</span></button>`;
+  }).join('');
+}
+function showEditor(k){
+  curField=k;const f=FIELDS[k],cur=state.filters[k];
+  /* 값이 필요한 조건을 펼치는 순간 받기 시작한다. 사용자가 숫자를 넣는 동안
+     도착하므로 '적용'을 누를 때는 대개 준비돼 있다.
+
+     창을 여는 순간이 아니라 여기여야 한다. 업종은 제일 많이 쓰는 조건인데
+     valuation.js 가 필요 없다 — 창을 열 때 받으면 업종만 고르는 사람에게
+     279KB 를 헛되이 지운다. */
+  if(NEEDS_VAL.has(k)) needVal().then(v=>{ if(v&&anyFilter()) render(); });
+  popTitle.textContent=T(f.label);
+  popBack.style.display='inline-flex';popFoot.style.display='flex';
+  popRemove.style.display=cur!=null?'inline-flex':'none';
+  let html='<div class="pop-editor">';
+  if(f.type==='segment'){
+    html+='<div class="seg" data-ctl="segment">'+f.options.map(o=>`<button class="${(cur||'전체')===o?'active':''}" data-v="${o}">${T(o)}</button>`).join('')+'</div>';
+  }else if(f.type==='multi'){
+    const sel=new Set(cur||[]);
+    html+='<div class="checks" data-ctl="multi">'+f.options.map(o=>`<label class="check ${sel.has(o.name)?'on':''}" data-v="${o.name}"><span class="box">${checkSvg}</span>${T(o.name)}<span class="count">${o.count}</span></label>`).join('')+'</div>';
+  }else{
+    const mn=cur&&cur.min!=null?cur.min:'',mx=cur&&cur.max!=null?cur.max:'';
+    html+='<div class="range-edit" data-ctl="range"><div class="range-inputs">'+
+      `<input id="rMin" type="number" inputmode="decimal" placeholder="${T('최소')}" value="${mn}">`+
+      '<span class="tilde">~</span>'+
+      `<input id="rMax" type="number" inputmode="decimal" placeholder="${T('최대')}" value="${mx}"></div>`+
+      `<div class="unit-note">${EN()?'Unit · '+UNIT(f.unit):'단위 · '+f.unit}</div>`+
+      (f.quick?'<div class="range-quick">'+f.quick.map((q,i)=>`<button data-qi="${i}">${T(q.l)}</button>`).join('')+'</div>':'')+
+      '</div>';
+  }
+  html+='</div>';
+  popBody.innerHTML=html;
+}
+function readEditor(){
+  const f=FIELDS[curField];
+  if(f.type==='segment'){const a=popBody.querySelector('.seg .active');return a?a.dataset.v:'전체';}
+  if(f.type==='multi')return[...popBody.querySelectorAll('.check.on')].map(c=>c.dataset.v);
+  const mn=popBody.querySelector('#rMin').value,mx=popBody.querySelector('#rMax').value;
+  return{min:mn===''?null:+mn,max:mx===''?null:+mx};
+}
+function isEmptyVal(v){const f=FIELDS[curField];
+  if(f.type==='segment')return v==='전체';
+  if(f.type==='multi')return v.length===0;
+  return v.min==null&&v.max==null;}
+
+document.getElementById('addFilterBtn').addEventListener('click',e=>openPop(e.currentTarget,'list'));
+backdrop.addEventListener('click',closePop);
+document.getElementById('popClose').addEventListener('click',closePop);
+popBack.addEventListener('click',()=>{place(document.getElementById('addFilterBtn'));showList();});
+
+popBody.addEventListener('click',e=>{
+  const fieldBtn=e.target.closest('.pop-field');
+  if(fieldBtn){showEditor(fieldBtn.dataset.field);return;}
+  const seg=e.target.closest('.seg button');
+  if(seg){[...seg.parentElement.children].forEach(b=>b.classList.toggle('active',b===seg));return;}
+  const chk=e.target.closest('.check');
+  if(chk){chk.classList.toggle('on');return;}
+  const q=e.target.closest('.range-quick button');
+  if(q){const f=FIELDS[curField],qd=f.quick[+q.dataset.qi];
+    popBody.querySelector('#rMin').value=qd.min!=null?qd.min:'';
+    popBody.querySelector('#rMax').value=qd.max!=null?qd.max:'';return;}
+});
+popApply.addEventListener('click',async()=>{
+  const v=readEditor(),k=curField;
+  if(isEmptyVal(v))delete state.filters[k];else state.filters[k]=v;
+  state.page=1;closePop();render();
+  if(state.filters[k]&&NEEDS_VAL.has(k)){ await needVal(); render(); }
+});
+popRemove.addEventListener('click',()=>{delete state.filters[curField];state.page=1;closePop();render();});
+
+document.getElementById('fchips').addEventListener('click',e=>{
+  if(e.target.closest('#clearAll')){state.filters={};state.page=1;render();return;}
+  const rm=e.target.closest('[data-remove]');
+  if(rm){delete state.filters[rm.dataset.remove];state.page=1;render();return;}
+  const chip=e.target.closest('.fchip');
+  if(chip)openPop(chip,'editor',chip.dataset.field);
+});
+
 function render(){
-  buildChips();repaintSort();
+  repaintSort();renderFchips();
   const l=getList();
   document.getElementById('countN').textContent=l.length;
   const pager=document.getElementById('pager');
-  if(l.length===0){rlEl.style.display='none';pager.style.display='none';emptyEl.classList.add('show');return;}
+  if(l.length===0){
+    rlEl.style.display='none';pager.style.display='none';emptyEl.classList.add('show');
+    /* 조건 때문에 빈 것과 검색어 때문에 빈 것은 다음 할 일이 다르다. */
+    const on=anyFilter();
+    document.getElementById('emptyMsg').textContent=
+      T(on?'조건을 만족하는 종목이 없습니다. 조건을 넓히거나 지워 보세요.':'다른 종목명·티커·업종으로 검색해 보세요.');
+    document.getElementById('emptyActs').style.display=on?'':'none';
+    return;
+  }
   rlEl.style.display='';emptyEl.classList.remove('show');
   const total=l.length,size=state.pageSize,pages=Math.max(1,Math.ceil(total/size));
   if(state.page>pages)state.page=pages;
@@ -776,21 +1153,18 @@ document.getElementById('pagerCtl').addEventListener('click',e=>{
 });
 const sortCtl=document.getElementById('sortCtl');
 document.getElementById('sortBtn').addEventListener('click',e=>{e.stopPropagation();sortCtl.classList.toggle('open');});
-document.getElementById('sortMenu').addEventListener('click',e=>{
+document.getElementById('sortMenu').addEventListener('click',async e=>{
   const b=e.target.closest('button[data-v]');if(!b)return;
   state.sort=b.dataset.v;state.page=1;
   repaintSort();
   [...e.currentTarget.children].forEach(c=>c.classList.toggle('active',c===b));
   sortCtl.classList.remove('open');
   render();
+  if(SORT_NEEDS_VAL.has(state.sort)){ await needVal(); render(); }
 });
 document.addEventListener('click',e=>{if(!sortCtl.contains(e.target))sortCtl.classList.remove('open');});
-document.getElementById('chips').addEventListener('click',e=>{
-  const more=e.target.closest('#chipMore');
-  if(more){ state.expanded=!state.expanded; buildChips(); return; }
-  const b=e.target.closest('.chip');if(!b||b.classList.contains('more'))return;
-  state.sector=b.dataset.sector;state.page=1;
-  render();
+document.getElementById('emptyReset').addEventListener('click',()=>{
+  state.filters={};state.page=1;render();
 });
 
 const menuBtn=document.getElementById('menuBtn'),mobileMenu=document.getElementById('mobileMenu');
@@ -814,7 +1188,18 @@ const REPORTS_DICT={
   "종목":"Stock","AI 한줄 요약":"AI Summary","리포트 제목":"Report Title","리포트 준비 중":"Report coming soon","발행일":"Date",
   "시가총액순":"By Market Cap","등락률순":"By Change","최신 리포트순":"Latest First","종목명순":"By Name",
   "시가총액 높은 순":"Market Cap: High→Low","시가총액 낮은 순":"Market Cap: Low→High","등락률 높은 순":"Change: High→Low","등락률 낮은 순":"Change: Low→High",
-  "더보기 ▾":"More ▾","접기 ▲":"Less ▲",
+  "필터 추가":"Add filter","필터":"Filters","모두 지우기":"Clear all","적용":"Apply","제거":"Remove",
+  "업종":"Industry",
+  "최소":"Min","최대":"Max","필터 초기화":"Reset filters",
+  "조건을 만족하는 종목이 없습니다. 조건을 넓히거나 지워 보세요.":"No stocks match these conditions. Try widening or removing a filter.",
+  "다른 종목명·티커·업종으로 검색해 보세요.":"Try a different name, ticker, or industry.",
+  "PER 낮은 순":"PER: Low→High","PBR 낮은 순":"PBR: Low→High","배당수익률 높은 순":"Dividend Yield: High→Low",
+  "시장":"Market","코스피":"KOSPI","코스닥":"KOSDAQ",
+  "시가총액":"Market Cap","배당수익률":"Dividend Yield","매출 성장률":"Revenue Growth",
+  "1조원 이하":"Under KRW 1T","1조원 이상 ~ 10조원 이하":"KRW 1T – 10T","10조원 이상":"Over KRW 10T",
+  "10배 이하":"Under 10x","20배 이하":"Under 20x","1배 이하":"Under 1x","2배 이하":"Under 2x",
+  "2% 이상":"2% or more","4% 이상":"4% or more",
+  "10% 이상":"10% or more","20% 이상":"20% or more","25% 이상":"25% or more",
   "전체":"All","반도체":"Semiconductors","IT 서비스":"IT Services","2차전지":"Batteries","바이오":"Biotech","자동차":"Automotive","금융":"Finance","조선·방산":"Shipbuilding & Defense","철강·소재":"Steel & Materials","게임":"Gaming",
   "조건에 맞는 종목이 없습니다.":"No stocks match your filters.",
   "삼성전자":"Samsung Electronics","SK하이닉스":"SK Hynix","삼성바이오로직스":"Samsung Biologics","현대차":"Hyundai Motor","기아":"Kia","셀트리온":"Celltrion","NAVER":"NAVER","KB금융":"KB Financial","신한지주":"Shinhan Financial","LG에너지솔루션":"LG Energy Solution","카카오":"Kakao","POSCO홀딩스":"POSCO Holdings","삼성SDI":"Samsung SDI","한미반도체":"Hanmi Semiconductor","LG화학":"LG Chem","알테오젠":"Alteogen","에코프로비엠":"EcoPro BM","HD현대중공업":"HD Hyundai Heavy","한화에어로스페이스":"Hanwha Aerospace","크래프톤":"Krafton",

@@ -373,6 +373,72 @@ console.log("\n── 휴대폰에서 시트로 열린다 ──\n");
   await p.close();
 }
 
+/* ── 실사이트에도 같은 것이 올라갔는가 ────────────────────
+   위 검사는 전부 staging/Reports.html 을 본다. 실사이트 파일은 손으로 옮긴
+   것이라 옮기다 흘린 것이 있을 수 있는데, 그건 아무 검사도 안 보고 있었다.
+
+   실제로 하나 흘렸다. valuation.js 를 받는 줄이 '../data/…' 인 채로 넘어갔다.
+   루트에서 '../' 는 더 올라갈 곳이 없어 그냥 '/data/…' 가 되므로 화면상으로는
+   멀쩡히 돌아간다 — 눈으로는 절대 못 잡는다.
+
+   그래서 여기서는 '스테이징 전용 흔적이 안 넘어왔는가' 와 '핵심이 실제로
+   도는가' 를 본다. 전부를 두 번 돌리지는 않는다(같은 코드다). */
+console.log("\n── 실사이트 리포트 페이지 ──\n");
+{
+  const src = await readFile(join(ROOT, "Reports.html"), "utf8");
+  ok("스테이징 전용 경로가 넘어오지 않았다", !src.includes("../data/") && !src.includes("../fonts/"),
+     (src.match(/\.\.\/[a-z]+\//g) || []).join(","));
+  ok("모의 백엔드가 넘어오지 않았다", !src.includes("demo-backend"));
+  ok("STAGING 띠가 넘어오지 않았다", !src.includes("kos-staging-bar"));
+  ok("실사이트가 noindex 가 되지 않았다", !/name="robots"[^>]*noindex/.test(src));
+
+  const page = await browser.newPage({ viewport: DESK });
+  const errs = [];
+  page.on("pageerror", (e) => errs.push(String(e)));
+  await page.goto(BASE + "/Reports.html", { waitUntil: "domcontentloaded" });
+  await page.waitForTimeout(700);
+
+  const st = await page.evaluate(() => ({
+    n: +document.getElementById("countN").textContent,
+    val: !!window.KOS_VALUATION,
+    chips: document.querySelectorAll(".chip").length,
+    btn: !!document.getElementById("addFilterBtn"),
+  }));
+  ok("필터 버튼이 올라갔다", st.btn);
+  ok("업종 칩 줄은 없다", st.chips === 0, String(st.chips));
+  ok("처음에는 279KB 를 받지 않는다", st.val === false);
+  ok("목록이 다 나온다", st.n > 2000, String(st.n));
+
+  await page.click("#addFilterBtn"); await page.waitForTimeout(250);
+  await page.click('[data-field="per"]'); await page.waitForTimeout(300);
+  await page.fill("#rMax", "10");
+  await page.click("#popApply"); await page.waitForTimeout(1800);
+
+  const got = await page.evaluate(() => +document.getElementById("countN").textContent);
+  const want = await page.evaluate(() => {
+    const V = window.KOS_VALUATION && KOS_VALUATION.stocks; if (!V) return -1;
+    return KOS_LIVE_DATA.stocks.filter((s) => {
+      const v = V[s.ticker];
+      if (!v || !v.eps || v.eps <= 0 || !s.price) return false;
+      return +(s.price / v.eps).toFixed(1) <= 10;
+    }).length;
+  });
+  ok("자료를 제 경로에서 받는다", await page.evaluate(() => !!window.KOS_VALUATION));
+  ok("조건이 맞게 걸린다", got === want && got > 0, `화면 ${got} · 직접 ${want}`);
+  ok("자바스크립트 오류가 없다", errs.length === 0, errs.slice(0, 2).join(" / "));
+  await page.close();
+}
+
+/* ── 접은 스크리너 주소가 리포트로 보내는가 ───────────────── */
+console.log("\n── 옛 스크리너 주소 ──\n");
+for (const [label, pre] of [["실사이트", ""], ["스테이징", "/staging"]]) {
+  const page = await browser.newPage();
+  await page.goto(BASE + pre + "/Screener.html", { waitUntil: "domcontentloaded" });
+  await page.waitForTimeout(500);
+  ok(`${label} — 리포트로 보낸다`, page.url().endsWith("/Reports.html"), page.url());
+  await page.close();
+}
+
 await browser.close();
 server.close();
 console.log(`\n통과 ${pass} · 실패 ${fail}`);

@@ -80,6 +80,44 @@ try:
 except Exception as e:                                  # 인덱스가 없는 환경
     check(True, f"랜딩 리포트 수 확인 건너뜀 ({e.__class__.__name__})")
 
+# 8) 없앤 페이지의 흔적이 남아 있지 않은가
+#
+#    스크리너를 리포트 페이지 안으로 옮기면서 그 페이지를 접었다. 링크가 한
+#    군데라도 남으면 사용자는 눌렀다가 되돌려 보내지는데, 그게 제일 나쁘다 —
+#    사이트가 자기 구조를 스스로 모르는 것처럼 보인다.
+#
+#    Screener.html 자체는 지우지 않고 리포트로 보내는 껍데기로 남겼다. 이
+#    주소는 검색에 올라 있고 즐겨찾기에 담은 사람도 있어서, 지우면 404 가 된다.
+#    그래서 '링크가 없는가' 와 '껍데기가 제대로 보내는가' 를 함께 본다.
+RETIRED = "Screener.html"
+shell = ROOT / RETIRED
+linkers = []
+for p_ in list(ROOT.glob("*.html")) + list((ROOT / "staging").glob("*.html")):
+    if p_.name == RETIRED: continue
+    t = p_.read_text(errors="ignore")
+    if re.search(r'href="[^"]*' + re.escape(RETIRED), t):
+        linkers.append(p_.relative_to(ROOT).as_posix())
+check(not linkers, f"{RETIRED} 로 가는 링크가 없음", ",".join(linkers))
+check(RETIRED not in sm, f"사이트맵에 {RETIRED} 없음")
+llms = (ROOT / "llms.txt")
+check(RETIRED not in llms.read_text(errors="ignore") if llms.exists() else True,
+      f"llms.txt 에 {RETIRED} 없음")
+
+if shell.exists():
+    t = shell.read_text(errors="ignore")
+    check('location.replace("Reports.html")' in t and 'http-equiv="refresh"' in t,
+          f"{RETIRED} 이 리포트로 보낸다(자바스크립트+meta 둘 다)")
+    check('rel="canonical" href="https://kosai.kr/Reports.html"' in t,
+          f"{RETIRED} 의 canonical 이 리포트를 가리킨다")
+    check('name="robots" content="noindex' in t, f"{RETIRED} 이 noindex 다")
+else:
+    check(False, f"{RETIRED} 껍데기가 없다 — 옛 주소가 404 가 된다")
+
+# 검색에 나오면 안 되는 폴더가 robots.txt 로 막혀 있는가
+rb = (ROOT / "robots.txt").read_text(errors="ignore")
+for d in ("/staging/", "/project/"):
+    check(f"Disallow: {d}" in rb, f"robots.txt 가 {d} 를 막는다")
+
 print(f"통과 {len(ok)} · 실패 {len(fail)}\n")
 for m in ok: print("  PASS", m)
 for m in fail: print("  FAIL", m)

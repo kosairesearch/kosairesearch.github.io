@@ -440,7 +440,7 @@ KOSi18n.register({
   // brand / nav
   "KOSAI":"KOSAI",
   "홈":"Home",
-  "스크리너":"Screener",
+  
   "업종별":"Industries",
   "리포트":"Reports",
   "워치리스트":"Watchlist","상호":"Company","대표":"CEO","사업자등록번호":"Business Reg. No.","통신판매업 신고":"Mail-order Reg. No.","주소":"Address","대표전화":"Phone","전자우편":"Email","요금제":"Pricing","멤버십":"Pricing","모닝브리핑":"Morning Brief",
@@ -584,8 +584,7 @@ document.addEventListener('click', function (e) {
     <a href="Home.html">홈</a>
     <a href="Reports.html">리포트</a>
     <a href="industry.html">업종별</a>
-    <a href="Screener.html">스크리너</a>
-    <a href="Watchlist.html" class="active">워치리스트</a>
+      <a href="Watchlist.html" class="active">워치리스트</a>
     <a href="pricing.html">멤버십</a>
     <a href="brief.html">모닝브리핑</a>
   </div>
@@ -601,7 +600,6 @@ document.addEventListener('click', function (e) {
   <a href="Home.html">홈</a>
   <a href="Reports.html">리포트</a>
   <a href="industry.html">업종별</a>
-  <a href="Screener.html">스크리너</a>
   <a href="Watchlist.html" class="active">워치리스트</a>
   <a href="pricing.html">멤버십</a>
   <a href="brief.html">모닝브리핑</a>
@@ -666,10 +664,9 @@ document.addEventListener('click', function (e) {
   <!-- EMPTY -->
   <div class="empty" id="empty">
     <h2>관심 종목이 비어 있습니다</h2>
-    <p>스크리너에서 조건에 맞는 종목을 찾거나, 종목 상세 페이지에서 워치리스트에 추가해 보세요.</p>
+    <p>리포트 페이지에서 업종·시가총액·PER 등 조건으로 종목을 찾거나, 종목 상세 페이지에서 워치리스트에 추가해 보세요.</p>
     <div class="cta-row">
       <a class="btn btn-primary" href="Reports.html">리포트 둘러보기</a>
-      <a class="btn btn-soft" href="Screener.html">스크리너로 이동</a>
     </div>
   </div>
 
@@ -681,7 +678,7 @@ document.addEventListener('click', function (e) {
     <div class="foot-inner glass">
       <div class="foot-grid">
         <div class="foot-brand"><a class="brand" href="Home.html"><img class="brand-logo brand-logo--light" src="../assets/kosai-wordmark-black.png" alt="KOSAI" width="148" height="24"><img class="brand-logo brand-logo--dark" src="../assets/kosai-wordmark-white.png" alt="KOSAI" width="148" height="24"></a><p>한국 상장사를 위한 AI 투자 리서치. 데이터와 분석을 한 페이지에.</p></div>
-        <div class="foot-col"><h4>서비스</h4><ul><li><a href="Home.html">홈</a></li><li><a href="Reports.html">리포트</a></li><li><a href="industry.html">업종별</a></li><li><a href="Screener.html">스크리너</a></li><li><a href="Watchlist.html">워치리스트</a></li><li><a href="pricing.html">멤버십</a></li><li><a href="brief.html">모닝브리핑</a></li></ul></div>
+        <div class="foot-col"><h4>서비스</h4><ul><li><a href="Home.html">홈</a></li><li><a href="Reports.html">리포트</a></li><li><a href="industry.html">업종별</a></li><li></li><li><a href="Watchlist.html">워치리스트</a></li><li><a href="pricing.html">멤버십</a></li><li><a href="brief.html">모닝브리핑</a></li></ul></div>
         <div class="foot-col"><h4>회사</h4><ul><li><a href="About.html">About</a></li><li><a href="Contact.html">문의하기</a></li><li><a href="Feedback.html">피드백</a></li></ul></div>
         
         <div class="foot-col"><h4>정책</h4><ul><li><a href="Terms.html">이용약관</a></li><li><a href="Privacy.html">개인정보처리방침</a></li></ul></div>
@@ -844,8 +841,8 @@ const WATCHLIST_DICT={
   " 편집":" Edit"," 완료":" Done","편집":"Edit","전체 삭제":"Clear All",
   "종목":"Stock","현재가":"Price","리포트 제목":"Report Title",
   "관심 종목이 비어 있습니다":"Your watchlist is empty",
-  "스크리너에서 조건에 맞는 종목을 찾거나, 종목 상세 페이지에서 워치리스트에 추가해 보세요.":"Find stocks in the Screener that fit your criteria, or add them from their detail page.",
-  "스크리너로 이동":"Go to Screener","리포트 둘러보기":"Browse reports",
+  "리포트 페이지에서 업종·시가총액·PER 등 조건으로 종목을 찾거나, 종목 상세 페이지에서 워치리스트에 추가해 보세요.":"Find stocks on the Reports page by industry, market cap, PER and other conditions, or add them from a stock's detail page.",
+  "리포트 둘러보기":"Browse reports",
   "제거":"Remove",
   // sectors
   "반도체":"Semiconductors","IT 서비스":"IT Services","자동차":"Automotive","바이오":"Biotech",

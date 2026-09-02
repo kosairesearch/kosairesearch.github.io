@@ -2,7 +2,7 @@
 """
 밸류에이션 자동 검증(audit) — 사람이 종목을 일일이 뒤지지 않아도 시스템이 오류를 잡아낸다.
 
-data/valuation.js(그리드·스크리너용 EPS·BPS·ROE·DPS) + 당일 주가로 PER·PBR·배당을 만들어
+data/valuation.js(그리드·조건 검색용 EPS·BPS·ROE·DPS) + 당일 주가로 PER·PBR·배당을 만들어
 네이버 값과 전 종목 자동 대조하고, 결과를 data/valuation_audit.txt 로 남긴다.
 
 분류:

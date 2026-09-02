@@ -38,7 +38,7 @@ ROOT = Path(__file__).resolve().parent.parent
 # 스테이징에 올릴 페이지 — 유료화 관련 화면과 그 페이지들이 부르는 스크립트
 PAGES = ["brief.html", "pricing.html", "checkout.html", "billing.html", "stock.html",
          "Terms.html", "About.html", "Home.html", "Reports.html", "industry.html",
-         "Screener.html", "Watchlist.html", "Login.html", "Signup.html",
+         "Watchlist.html", "Login.html", "Signup.html",
          "Privacy.html", "Contact.html", "Feedback.html"]
 SCRIPTS = ["paywall.js", "checkout.js", "subscription-api.js", "payment-config.js",
            "firebase-config.js", "auth-state.js", "auth-guard.js", "auth-emails.js",

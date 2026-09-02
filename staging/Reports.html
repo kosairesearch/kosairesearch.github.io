@@ -194,7 +194,7 @@ body::before{content:"";position:fixed;inset:0;z-index:-1;pointer-events:none;
 .foot-bottom{display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap;margin-top:22px;padding-top:18px;border-top:1px solid var(--border-2);font:500 12px var(--font-sans);color:var(--fg-3)}
 
 /* ── 숫자 조건으로 걸러내기 ────────────────────────────────
-   스크리너에 있던 필터를 이 페이지로 가져왔다.
+   스크리너 페이지에 있던 필터를 이 페이지로 가져왔다(그 페이지는 이제 없다).
 
    왜 옮겼나. 리포트가 전 종목(2,658개)을 덮고 있어서 두 페이지가 같은 종목
    목록을 두 가지 방식으로 보여 주고 있었다. 그런데 "PER 10배 이하인 종목의
@@ -554,7 +554,7 @@ KOSi18n.register({
   // brand / nav
   "KOSAI":"KOSAI",
   "홈":"Home",
-  "스크리너":"Screener",
+  
   "업종별":"Industries",
   "리포트":"Reports",
   "워치리스트":"Watchlist","상호":"Company","대표":"CEO","사업자등록번호":"Business Reg. No.","통신판매업 신고":"Mail-order Reg. No.","주소":"Address","대표전화":"Phone","전자우편":"Email","요금제":"Pricing","멤버십":"Pricing","모닝브리핑":"Morning Brief",
@@ -698,8 +698,7 @@ document.addEventListener('click', function (e) {
     <a href="Home.html">홈</a>
     <a href="Reports.html" class="active">리포트</a>
     <a href="industry.html">업종별</a>
-    <a href="Screener.html">스크리너</a>
-    <a href="Watchlist.html">워치리스트</a>
+      <a href="Watchlist.html">워치리스트</a>
     <a href="pricing.html">멤버십</a>
     <a href="brief.html">모닝브리핑</a>
   </div>
@@ -715,7 +714,6 @@ document.addEventListener('click', function (e) {
   <a href="Home.html">홈</a>
   <a href="Reports.html" class="active">리포트</a>
   <a href="industry.html">업종별</a>
-  <a href="Screener.html">스크리너</a>
   <a href="Watchlist.html">워치리스트</a>
   <a href="pricing.html">멤버십</a>
   <a href="brief.html">모닝브리핑</a>
@@ -795,7 +793,7 @@ document.addEventListener('click', function (e) {
     <div class="foot-inner glass">
       <div class="foot-grid">
         <div class="foot-brand"><a class="brand" href="Home.html"><img class="brand-logo brand-logo--light" src="../assets/kosai-wordmark-black.png" alt="KOSAI" width="148" height="24"><img class="brand-logo brand-logo--dark" src="../assets/kosai-wordmark-white.png" alt="KOSAI" width="148" height="24"></a><p>한국 상장사를 위한 AI 투자 리서치. 데이터와 분석을 한 페이지에.</p></div>
-        <div class="foot-col"><h4>서비스</h4><ul><li><a href="Home.html">홈</a></li><li><a href="Reports.html">리포트</a></li><li><a href="industry.html">업종별</a></li><li><a href="Screener.html">스크리너</a></li><li><a href="Watchlist.html">워치리스트</a></li><li><a href="pricing.html">멤버십</a></li><li><a href="brief.html">모닝브리핑</a></li></ul></div>
+        <div class="foot-col"><h4>서비스</h4><ul><li><a href="Home.html">홈</a></li><li><a href="Reports.html">리포트</a></li><li><a href="industry.html">업종별</a></li><li></li><li><a href="Watchlist.html">워치리스트</a></li><li><a href="pricing.html">멤버십</a></li><li><a href="brief.html">모닝브리핑</a></li></ul></div>
         <div class="foot-col"><h4>회사</h4><ul><li><a href="About.html">About</a></li><li><a href="Contact.html">문의하기</a></li><li><a href="Feedback.html">피드백</a></li></ul></div>
         
         <div class="foot-col"><h4>정책</h4><ul><li><a href="Terms.html">이용약관</a></li><li><a href="Privacy.html">개인정보처리방침</a></li></ul></div>
@@ -834,7 +832,7 @@ document.addEventListener('click', function (e) {
 const EN=()=>(window.KOSi18n&&KOSi18n.lang==='en');
 const T=s=>(window.KOSi18n?KOSi18n.t(s):s);
 const KOS={won:n=>EN()?'₩'+n.toLocaleString('en-US'):n.toLocaleString('ko-KR')+'원',pct:n=>(n>0?'+':'')+n.toFixed(2)+'%',
-  /* 시가총액 단위는 조. 1조 미만은 억으로 읽는다(스크리너 KOS.mcap 과 같다) —
+  /* 시가총액 단위는 조. 1조 미만은 억으로 읽는다 —
      0.3조 보다 3,000억 이 읽기 쉽다. */
   mcap:jo=>!jo?'-':(jo>=1?(EN()?'₩'+(+jo).toLocaleString('en-US',{maximumFractionDigits:1})+'T':(+jo).toLocaleString('en-US',{maximumFractionDigits:1})+'조'):(EN()?'₩'+Math.round(jo*1000).toLocaleString('en-US')+'B':Math.round(jo*10000).toLocaleString('ko-KR')+'억'))};
 const REPORTS_DEFAULT=[
@@ -946,9 +944,11 @@ function pageWindow(cur,pages){
   return res;
 }
 /* ══ 숫자 조건으로 걸러내기 ══════════════════════════════════
-   스크리너에 있던 필터를 여기로 가져왔다. 업종은 위의 칩이 이미 하고 있으므로
-   여기서는 다루지 않는다 — 같은 일을 하는 조작이 두 개면 어느 쪽이 이기는지
-   설명할 수 없게 된다.
+   스크리너 페이지에 있던 필터를 여기로 가져왔다. 그 페이지는 이제 없다 —
+   Screener.html 은 이 페이지로 보내는 껍데기만 남았다.
+
+   조건을 고르는 자리는 '필터 추가' 하나뿐이다. 업종도 여기에 들어 있다.
+   같은 일을 하는 조작이 두 개면 어느 쪽이 이기는지 설명할 수 없게 된다.
    ══════════════════════════════════════════════════════════ */
 
 /* PER·PBR·배당·성장률은 valuation.js(279KB)에 있다. 이 페이지는 이미
