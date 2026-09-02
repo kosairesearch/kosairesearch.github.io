@@ -2770,7 +2770,12 @@ if (PAYMENTS_LIVE) exports.changePlan = onCall(
         const left = Math.max(0, days(endMs - Date.now()));
         // 남은 기간에 해당하는 두 요금의 차액. 원 단위 절사(사용자에게 유리하게).
         const diff = Math.floor((PRICE[next] - PRICE[sub.plan]) * (left / total));
-        const pay = await charge(db, uid, sub, diff, `${PLAN_NAME[next]} 업그레이드 차액`, "up", null,
+        /* 결제 기록에 적히는 플랜은 charge 안에서 sub.plan 으로 정해진다. 여기에
+           올리기 전 구독을 그대로 넘기면 'PRO 업그레이드 차액' 이라는 설명 옆에
+           plan 은 BASIC 으로 남는다 — 내역을 보면 앞뒤가 안 맞는다.
+           미리보기는 올린 뒤 플랜으로 적고 있었다(서버만 달랐다). */
+        const pay = await charge(db, uid, { ...sub, plan: next }, diff,
+          `${PLAN_NAME[next]} 업그레이드 차액`, "up", null,
           `up_${uid}_${next}_${kstDay()}`);
         await ref.set({
           plan: next, pendingPlan: null,
@@ -2807,32 +2812,48 @@ if (PAYMENTS_LIVE) exports.changePlan = onCall(
 /* ── 3) 해지 / 해지 취소 ─────────────────────────────────────
    해지는 '지금 끊기'가 아니라 '갱신 안 함'이다. 이미 결제한 기간은 그대로 쓴다.
    ─────────────────────────────────────────────────────────── */
+/* 돈이 나가지는 않지만 자물쇠를 잡는다.
+
+   해지와 플랜 변경은 함께 둘 수 없는 예약이다(위 changePlan 설명). 그런데
+   두 요청이 겹치면 '해지 예약 + 플랜 변경 예약' 이라는, 있어서는 안 되는
+   상태가 만들어진다 — 갱신 배치는 해지를 먼저 보고 끝내므로 예약해 둔 변경은
+   조용히 사라지고, 화면에는 둘 다 예약된 것처럼 보인다.
+
+   결제와도 겹친다. 새 구독을 만드는 사이에 해지가 들어오면 방금 결제한 구독이
+   해지 예약된 채로 시작한다. */
 if (PAYMENTS_LIVE) exports.cancelSubscription = onCall({ region: REGION, cors: true }, async (req) => {
   const uid = uidOrThrow(req);
-  const ref = admin.firestore().doc(`subscriptions/${uid}`);
-  const sub = (await ref.get()).data();
-  if (!subActive(sub)) throw new HttpsError("failed-precondition", "이용 중인 구독이 없습니다.");
-  if (refundedAlready(sub)) throw new HttpsError("failed-precondition", "환불이 완료된 구독입니다.");
-  await ref.set({
-    cancelAtPeriodEnd: true, canceledAt: admin.firestore.FieldValue.serverTimestamp(),
-    // 해지하면 다음 결제 자체가 없다 — 예약해 둔 플랜 변경은 의미가 없다.
-    pendingPlan: null,
-    updatedAt: admin.firestore.FieldValue.serverTimestamp(),
-  }, { merge: true });
-  return { ok: true, droppedPlan: sub.pendingPlan || null };
+  const db = admin.firestore();
+  const ref = db.doc(`subscriptions/${uid}`);
+  return withLock(db, ref, "cancel", async () => {
+    const sub = (await ref.get()).data();
+    if (!subActive(sub)) throw new HttpsError("failed-precondition", "이용 중인 구독이 없습니다.");
+    if (refundedAlready(sub)) throw new HttpsError("failed-precondition", "환불이 완료된 구독입니다.");
+    await ref.set({
+      cancelAtPeriodEnd: true, canceledAt: admin.firestore.FieldValue.serverTimestamp(),
+      // 해지하면 다음 결제 자체가 없다 — 예약해 둔 플랜 변경은 의미가 없다.
+      pendingPlan: null,
+      updatedAt: admin.firestore.FieldValue.serverTimestamp(),
+    }, { merge: true });
+    return { ok: true, droppedPlan: sub.pendingPlan || null };
+  });
 });
 
+// 해지 취소도 같은 자물쇠를 잡는다 — 위 cancelSubscription 설명 참고.
 if (PAYMENTS_LIVE) exports.resumeSubscription = onCall({ region: REGION, cors: true }, async (req) => {
   const uid = uidOrThrow(req);
-  const ref = admin.firestore().doc(`subscriptions/${uid}`);
-  const sub = (await ref.get()).data();
-  if (!subActive(sub)) throw new HttpsError("failed-precondition", "이용 중인 구독이 없습니다.");
-  if (refundedAlready(sub)) throw new HttpsError("failed-precondition", "환불이 완료된 구독입니다.");
-  await ref.set({
-    cancelAtPeriodEnd: false, canceledAt: null,
-    updatedAt: admin.firestore.FieldValue.serverTimestamp(),
-  }, { merge: true });
-  return { ok: true };
+  const db = admin.firestore();
+  const ref = db.doc(`subscriptions/${uid}`);
+  return withLock(db, ref, "resume", async () => {
+    const sub = (await ref.get()).data();
+    if (!subActive(sub)) throw new HttpsError("failed-precondition", "이용 중인 구독이 없습니다.");
+    if (refundedAlready(sub)) throw new HttpsError("failed-precondition", "환불이 완료된 구독입니다.");
+    await ref.set({
+      cancelAtPeriodEnd: false, canceledAt: null,
+      updatedAt: admin.firestore.FieldValue.serverTimestamp(),
+    }, { merge: true });
+    return { ok: true };
+  });
 });
 
 /* ── 4) 환불 ─────────────────────────────────────────────────

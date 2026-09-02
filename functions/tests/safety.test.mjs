@@ -238,9 +238,13 @@ console.log("\n── 옮겨 적은 것이 원본과 같은가 ──");
   ok("트랜잭션 안에서 확인하고 잠근다", /runTransaction/.test(real || ""));
   ok("TTL 로 오래된 자물쇠를 풀어 준다", /BUSY_TTL/.test(real || ""));
   ok("finally 에서 반드시 푼다", /finally/.test(real || ""));
-  ok("돈 나가는 함수 셋에 다 걸려 있다",
-     (src.match(/withLock\(db, ref, "/g) || []).length === 3,
-     String((src.match(/withLock\(db, ref, "/g) || []).length));
+  /* 구독 문서를 고치는 함수는 전부 자물쇠를 잡아야 한다. 돈이 나가는 넷은
+     두 번 청구를 막으려고, 해지·해지 취소는 '해지 예약 + 플랜 변경 예약' 이라는
+     있어서는 안 되는 상태가 만들어지는 것을 막으려고. */
+  const locked = [...src.matchAll(/withLock\(db, (?:d\.)?ref, "(\w+)"/g)].map((m) => m[1]).sort();
+  ok("구독을 고치는 함수 여섯에 다 걸려 있다",
+     JSON.stringify(locked) === JSON.stringify(["billing", "cancel", "plan", "refund", "renew", "resume"]),
+     JSON.stringify(locked));
   ok("결제·취소가 멱등 이름을 들고 나간다",
      /Idempotency-Key/.test(src) && /refund_\$\{uid\}_\$\{src\.key\}/.test(src));
   /* doRefund 에 인자를 하나 더 받게 고치면서 호출부 한 곳을 빠뜨린 적이 있다
@@ -254,6 +258,10 @@ console.log("\n── 옮겨 적은 것이 원본과 같은가 ──");
   ok("모든 호출이 선언과 인자 수가 같다",
      calls.length > 0 && calls.every((n) => n === wantArgs),
      `선언 ${wantArgs}개 · 호출 ${JSON.stringify(calls)}`);
+
+  ok("업그레이드 기록에 올린 뒤 플랜을 적는다",
+     /charge\(db, uid, \{ \.\.\.sub, plan: next \}/.test(src),
+     "올리기 전 플랜을 적으면 'PRO 업그레이드 차액' 옆에 BASIC 이 남는다");
 
   ok("새 주기마다 refundDone 을 지운다",
      (src.match(/refundDone: admin\.firestore\.FieldValue\.delete\(\)|patch\.refundDone = admin\.firestore\.FieldValue\.delete\(\)/g) || []).length === 3,
