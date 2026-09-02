@@ -10,8 +10,10 @@ data/deploy_functions.log
 data/brief_cache/
 # 규칙을 통과하지 못한 생성 결과. 사람이 보고 버리는 것이므로 저장소에 남기지 않는다.
 data/briefs/_rejected/
-# 스테이징 화면 테스트용(jsdom). 저장소에 넣지 않는다 — 필요할 때 설치한다.
+# 스테이징 화면 테스트용(jsdom·playwright-core). 저장소에 넣지 않는다 —
+# 필요할 때 설치한다. --no-save 로 깔면 package.json 도 생기지 않는다.
 node_modules/
+package.json
 package-lock.json
 # 테스트가 잠깐 만드는 작업 폴더.
 staging/tests/.work/
