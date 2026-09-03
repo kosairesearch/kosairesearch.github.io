@@ -126,7 +126,8 @@ body::before{content:"";position:fixed;inset:0;z-index:-1;pointer-events:none;
 :root[data-theme="dark"] .mobile-menu a:hover,:root[data-theme="dark"] .mobile-menu a.active{background:rgba(255,255,255,.08)}
 
 /* ===== breadcrumb + switcher ===== */
-.crumb{font:500 13px var(--font-sans);color:var(--fg-3);padding:28px 0 14px}
+.crumb{font:500 13px var(--font-sans);color:var(--fg-3);padding-top:28px;margin-bottom:12px}
+.crumb a{color:var(--fg-3);text-decoration:none}.crumb a:hover{color:var(--fg-1)}
 .crumb b{color:var(--fg-2);font-weight:600}
 .switcher{display:flex;align-items:flex-start;gap:12px;flex-wrap:wrap;padding-bottom:8px}
 .switcher .sw-label{font:600 11px var(--font-sans);letter-spacing:.08em;color:var(--fg-3);text-transform:uppercase;padding-top:9px;flex:0 0 auto}
@@ -870,9 +871,9 @@ KOSi18n.register({
 
 <div class="wrap" data-screen-label="04 Industry">
   <style>
-  .ind-head{margin:28px 0 6px}
-  .ind-bc{font:600 12px var(--font-sans);color:var(--fg-3);letter-spacing:.03em;margin-bottom:10px}
-  .ind-bc a{color:var(--fg-3);text-decoration:none}.ind-bc a:hover{color:var(--fg-1)}
+  /* 위쪽 여백은 .crumb 이 갖는다(padding-top:28px). 여기서도 28px 을
+     주면 이 페이지만 빵부스러기가 그만큼 낮게 앉는다. */
+  .ind-head{margin:0 0 6px}
   .ind-title{font:800 30px var(--font-sans);letter-spacing:-.02em;margin:0}
   .ind-sub{margin:8px 0 0;font:400 15px/1.7 var(--font-sans);color:var(--fg-3);max-width:760px;text-wrap:pretty}
   .ind-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(260px,1fr));gap:14px;margin-top:22px}
@@ -1070,7 +1071,7 @@ themeBtn.addEventListener('click',()=>applyTheme(root.getAttribute('data-theme')
         +'<div class="ic-meta">'+(EN()?r.n+' stocks':r.n+'\uac1c')+' \u00b7 <span class="ic-chg '+d+'">'+pct(r.chg)+'</span></div>'
         +'<div class="ic-top3">'+tops+'</div></a>';
     }).join('');
-    app.innerHTML='<div class="ind-head"><div class="ind-bc">'+T('홈')+' / '+T('업종별')+'</div>'
+    app.innerHTML='<div class="ind-head"><div class="crumb"><a href="Home.html">'+T('홈')+'</a> / <b>'+T('업종별')+'</b></div>'
       +'<h1 class="ind-title">'+T('업종별 분석')+'</h1>'
       +'<p class="ind-sub">'+T('한국 상장사를 업종으로 나눠 시가총액·등락률과 AI 업종 분석을 제공합니다.')+'</p></div>'
       +'<div class="ind-grid">'+cards+'</div>'
@@ -1135,8 +1136,8 @@ themeBtn.addEventListener('click',()=>applyTheme(root.getAttribute('data-theme')
         +'<td>'+mcap(s.mcap)+'</td></tr>';
     }).join('');
     var lead=an&&an.lead?('<p class="ind-sub">'+esc(bi(an.lead))+'</p>'):'';
-    app.innerHTML='<div class="ind-head"><a class="ind-back" href="industry.html">\u2039 '+T('업종별')+'</a>'
-      +'<div class="ind-bc">'+T('홈')+' / '+T('업종별')+' / '+esc(tn(sec))+'</div>'
+    app.innerHTML='<div class="ind-head"><div class="crumb"><a href="Home.html">'+T('홈')+'</a> / <a href="industry.html">'+T('업종별')+'</a> / <b>'+esc(tn(sec))+'</b></div>'
+      +'<a class="ind-back" href="industry.html">\u2039 '+T('업종별')+'</a>'
       +'<h1 class="ind-title">'+esc(tn(sec))+'</h1>'+lead+'</div>'
       +kpis+ai
       +'<div class="ind-sec"><h2>'+T('업종 내 주요 종목')+'</h2>'

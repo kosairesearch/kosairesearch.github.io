@@ -225,6 +225,53 @@ for (const p of ["/Home.html", "/Reports.html", "/index.html"]) {
      `첫 칸 top ${m.first && m.first.top.toFixed(1)} · 헤더 bottom ${m.nav.bottom.toFixed(1)}`);
 }
 
+/* ── 빵부스러기('홈 / 리포트')가 페이지마다 같은가 ────────
+   눈으로는 "뭔가 좀 다른데" 까지만 보이고 무엇이 다른지는 안 보인다. 실제로
+   업종별 페이지만 다른 클래스(.ind-bc)를 쓰고 있었다 — 글씨 12px·굵기 600·
+   자간 0.36px 에 '홈' 은 링크도 아니고 현재 위치 강조도 없었다. 나머지 아홉
+   페이지는 13px·500·링크·강조였다. 여백도 세 가지로 갈려 있었다.
+
+   그래서 사람 눈이 아니라 브라우저가 잰 값으로 못 박는다. */
+console.log("\n── 빵부스러기가 페이지마다 같다 ──\n");
+for (const [label, pre] of [["실사이트", ""], ["스테이징", "/staging"]]) {
+  const PAGES = ["/Reports.html", "/industry.html", "/Watchlist.html",
+                 "/brief.html", "/About.html", "/stock.html"];
+  const seen = [];
+  for (const path of PAGES) {
+    const page = await browser.newPage({ viewport: { width: 1280, height: 900 } });
+    await page.goto(BASE + pre + path, { waitUntil: "domcontentloaded" });
+    await page.waitForTimeout(1400);
+    const got = await page.evaluate(() => {
+      const c = document.querySelector(".crumb");
+      if (!c) return null;
+      const cs = getComputedStyle(c), r = c.getBoundingClientRect();
+      return { size: cs.fontSize, weight: cs.fontWeight, color: cs.color,
+               letter: cs.letterSpacing, top: Math.round(r.top),
+               link: !!c.querySelector("a"), bold: !!c.querySelector("b") };
+    });
+    await page.close();
+    ok(`${label}${path} — 빵부스러기가 있다`, got !== null);
+    if (got) seen.push([path, got]);
+  }
+  if (seen.length > 1) {
+    const [, first] = seen[0];
+    for (const [path, g] of seen.slice(1)) {
+      ok(`${label}${path} — 글씨·색·자간이 같다`,
+         g.size === first.size && g.weight === first.weight
+           && g.color === first.color && g.letter === first.letter,
+         JSON.stringify({ 기준: first, 이페이지: g }));
+      ok(`${label}${path} — 헤더에서 같은 높이에 앉는다`,
+         Math.abs(g.top - first.top) <= 1, `${g.top} vs ${first.top}`);
+    }
+    /* '홈' 은 눌러서 갈 수 있어야 하고, 지금 위치는 굵게 보여야 한다.
+       업종별 페이지는 둘 다 없어서 빵부스러기 노릇을 못 하고 있었다. */
+    for (const [path, g] of seen) {
+      ok(`${label}${path} — 앞 단계가 링크다`, g.link, "누를 수 없으면 빵부스러기가 아니다");
+      ok(`${label}${path} — 지금 위치가 강조된다`, g.bold);
+    }
+  }
+}
+
 await browser.close();
 server.close();
 console.log(`\n통과 ${pass} · 실패 ${fail}`);
