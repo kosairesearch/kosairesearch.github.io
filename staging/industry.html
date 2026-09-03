@@ -28,7 +28,7 @@ document.documentElement.classList.add('kos-locked');
 setTimeout(function(){ document.documentElement.classList.remove('kos-locked'); }, 2500);
 </script>
 <style>html.kos-locked body{visibility:hidden}</style>
-<title>업종별 분석 — 코스피·코스닥 업종 동향과 주요 종목 | KOSAI</title>
+<title>업종 분석 — 코스피·코스닥 업종 동향과 주요 종목 | KOSAI</title>
 <meta name="description" content="업종별 시세와 종목 동향, 업종 내 주요 종목 비교 분석." />
 <link rel="canonical" href="https://kosai.kr/industry.html" />
 <meta property="og:type" content="website" />
@@ -584,7 +584,7 @@ KOSi18n.register({
   "KOSAI":"KOSAI",
   "홈":"Home",
   
-  "업종별":"Industries",
+  "업종 분석":"Industry Analysis",
   "리포트":"Reports",
   "워치리스트":"Watchlist","상호":"Company","대표":"CEO","사업자등록번호":"Business Reg. No.","통신판매업 신고":"Mail-order Reg. No.","주소":"Address","대표전화":"Phone","전자우편":"Email","요금제":"Pricing","멤버십":"Pricing","모닝브리핑":"Morning Brief",
   // footer headings
@@ -616,8 +616,8 @@ KOSi18n.register({
 /* Industry page translations — KO ⇄ EN */
 KOSi18n.register({
   // page chrome
-  "업종별":"Industries",
-  "홈 / 업종별 /":"Home / Industries /",
+  "업종 분석":"Industry Analysis",
+  "홈 / 업종 분석 /":"Home / Industry Analysis /",
   "업종":"Industry",
   "더보기 ▾":"More ▾","접기 ▲":"Less ▲",
   // switcher chips
@@ -922,7 +922,7 @@ document.addEventListener('click', function (e) {
   <div class="nav-links">
     <a href="Home.html">홈</a>
     <a href="Reports.html">리포트</a>
-    <a href="industry.html" class="active">업종별</a>
+    <a href="industry.html" class="active">업종 분석</a>
       <a href="Watchlist.html">워치리스트</a>
     <a href="pricing.html">멤버십</a>
     <a href="brief.html">모닝브리핑</a>
@@ -938,7 +938,7 @@ document.addEventListener('click', function (e) {
 <div class="mobile-menu glass" id="mobileMenu">
   <a href="Home.html">홈</a>
   <a href="Reports.html">리포트</a>
-  <a href="industry.html" class="active">업종별</a>
+  <a href="industry.html" class="active">업종 분석</a>
   <a href="Watchlist.html">워치리스트</a>
   <a href="pricing.html">멤버십</a>
   <a href="brief.html">모닝브리핑</a>
@@ -1012,7 +1012,7 @@ document.addEventListener('click', function (e) {
           <a class="brand" href="Home.html"><img class="brand-logo brand-logo--light" src="../assets/kosai-wordmark-black.png" alt="KOSAI" width="148" height="24"><img class="brand-logo brand-logo--dark" src="../assets/kosai-wordmark-white.png" alt="KOSAI" width="148" height="24"></a>
           <p>한국 상장사를 위한 AI 투자 리서치. 데이터와 분석을 한 페이지에.</p>
         </div>
-        <div class="foot-col"><h4>서비스</h4><ul><li><a href="Home.html">홈</a></li><li><a href="Reports.html">리포트</a></li><li><a href="industry.html">업종별</a></li><li><a href="Watchlist.html">워치리스트</a></li><li><a href="pricing.html">멤버십</a></li><li><a href="brief.html">모닝브리핑</a></li></ul></div>
+        <div class="foot-col"><h4>서비스</h4><ul><li><a href="Home.html">홈</a></li><li><a href="Reports.html">리포트</a></li><li><a href="industry.html">업종 분석</a></li><li><a href="Watchlist.html">워치리스트</a></li><li><a href="pricing.html">멤버십</a></li><li><a href="brief.html">모닝브리핑</a></li></ul></div>
         <div class="foot-col"><h4>회사</h4><ul><li><a href="About.html">About</a></li><li><a href="Contact.html">문의하기</a></li><li><a href="Feedback.html">피드백</a></li></ul></div>
         
         <div class="foot-col"><h4>정책</h4><ul><li><a href="Terms.html">이용약관</a></li><li><a href="Privacy.html">개인정보처리방침</a></li></ul></div>
@@ -1057,7 +1057,7 @@ themeBtn.addEventListener('click',()=>applyTheme(root.getAttribute('data-theme')
   var REPORTS=(window.KOS_REPORTS&&KOS_REPORTS.reports)||{};
   if(window.KOSi18n){var dd={};STOCKS.forEach(function(s){if(s.name_en)dd[s.name]=s.name_en;});KOSi18n.register(dd);}
   if(window.KOSi18n){KOSi18n.register({
-    "홈":"Home","업종별":"Industries","업종별 분석":"Industry Analysis",
+    "홈":"Home","업종 분석":"Industry Analysis",
     "한국 상장사를 업종으로 나눠 시가총액·등락률과 AI 업종 분석을 제공합니다.":"Korean listed companies grouped by industry — market cap, returns, and AI sector analysis.",
     "시가총액 합계":"Total market cap","시장 비중":"Market weight","종목 수":"Stocks","평균 등락률":"Avg. change",
     "업종 개요":"Overview","산업 구조·가치사슬":"Structure & value chain","최근 동향":"Recent trends","향후 전망":"Outlook",
@@ -1109,9 +1109,9 @@ themeBtn.addEventListener('click',()=>applyTheme(root.getAttribute('data-theme')
         +'<div class="ic-meta">'+(EN()?r.n+' stocks':r.n+'\uac1c')+' \u00b7 <span class="ic-chg '+d+'">'+pct(r.chg)+'</span></div>'
         +'<div class="ic-top3">'+tops+'</div></a>';
     }).join('');
-    app.innerHTML='<div class="crumb"><a href="Home.html">'+T('홈')+'</a> / <b>'+T('업종별')+'</b></div>'
+    app.innerHTML='<div class="crumb"><a href="Home.html">'+T('홈')+'</a> / <b>'+T('업종 분석')+'</b></div>'
       +'<div class="page-head"><div class="ph-kicker">INDUSTRIES</div>'
-      +'<h1>'+T('업종별 분석')+'</h1>'
+      +'<h1>'+T('업종 분석')+'</h1>'
       +'<p class="sub">'+T('한국 상장사를 업종으로 나눠 시가총액·등락률과 AI 업종 분석을 제공합니다.')+'</p></div>'
       +'<div class="ind-grid">'+cards+'</div>'
       +((a.themeRows||[]).length?('<h2 style="margin:38px 0 14px;font:700 18px var(--font-sans);letter-spacing:-.02em;color:var(--fg-2)">'+T('테마')+'</h2><div class="ind-grid">'+a.themeRows.map(function(r){var d=dir(r.chg);var tops=r.list.slice(0,3).map(function(s){return '<span>'+esc(tn(s.name))+'</span>';}).join('');return '<a class="ind-card glass" href="industry.html?sector='+encodeURIComponent(r.sec)+'"><div class="ic-top"><span class="ic-name">'+esc(tn(r.sec))+'</span></div><div class="ic-mc">'+mcap(r.mc)+'</div><div class="ic-meta">'+(EN()?r.n+' stocks':r.n+'개')+' · <span class="ic-chg '+d+'">'+pct(r.chg)+'</span></div><div class="ic-top3">'+tops+'</div></a>';}).join('')+'</div>'):'');
@@ -1152,7 +1152,7 @@ themeBtn.addEventListener('click',()=>applyTheme(root.getAttribute('data-theme')
         +'<td>'+mcap(s.mcap)+'</td></tr>';
     }).join('');
     var lead=an&&an.lead?('<p class="sub">'+esc(bi(an.lead))+'</p>'):'';
-    app.innerHTML='<div class="crumb"><a href="Home.html">'+T('홈')+'</a> / <a href="industry.html">'+T('업종별')+'</a> / <b>'+esc(tn(sec))+'</b></div>'
+    app.innerHTML='<div class="crumb"><a href="Home.html">'+T('홈')+'</a> / <a href="industry.html">'+T('업종 분석')+'</a> / <b>'+esc(tn(sec))+'</b></div>'
       +'<div class="page-head"><div class="ph-kicker">INDUSTRIES</div>'
       +'<h1>'+esc(tn(sec))+'</h1>'+lead+'</div>'
       +kpis+ai
@@ -1172,7 +1172,7 @@ themeBtn.addEventListener('click',()=>applyTheme(root.getAttribute('data-theme')
               : nm+' 업종 시가총액·동향·전망과 업종 내 주요 종목 비교 분석(AI).';
       }else{
         base='https://kosai.kr/industry.html';
-        ttl=en? 'Sector Analysis — Korean Stocks | KOSAI' : '업종별 분석 — 한국 증시 | KOSAI';
+        ttl=en? 'Sector Analysis — Korean Stocks | KOSAI' : '업종 분석 — 한국 증시 | KOSAI';
         dsc=en? 'Korean stock market by sector: performance, market weight and leading stocks.'
               : '업종별 등락률·시장 비중·주요 종목 — 한국 증시 업종 분석.';
       }

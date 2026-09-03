@@ -209,6 +209,47 @@ for p_ in targets:
                 ghost.append(f"{p_.relative_to(ROOT).as_posix()}:{ln_no}:{g}")
 check(not ghost, "없는 창구(고객센터 등)로 안내하지 않음", ", ".join(ghost[:6]))
 
+# 13) 메뉴 이름이 페이지마다 같은가
+#
+#     서비스 메뉴는 한 페이지에 세 번 나온다 — 헤더, 햄버거 메뉴, 푸터.
+#     그게 33개 페이지에 복사돼 있으니 한 이름을 바꾸면 99자리를 고쳐야 한다.
+#     한 자리라도 빠지면 페이지를 옮길 때마다 메뉴 이름이 달라지는데, 만든
+#     사람은 자기가 고친 페이지만 보므로 끝까지 모른다.
+#
+#     실제로 '업종별' → '업종 분석' 로 바꿀 때 겪은 자리다. 이름 자체를
+#     박아 두지는 않는다 — 다음에 또 바꿀 테니까. '전부 같은가' 만 본다.
+#     메뉴가 있는 세 자리만 본다. 본문에도 같은 곳으로 가는 링크가 있는데
+#     ('홈으로 돌아가기', '리포트 둘러보기') 그건 메뉴가 아니라 문장이다.
+BLOCKS = (re.compile(r'<div class="nav-links">(.*?)</div>', re.S),
+          re.compile(r'<div class="mobile-menu[^"]*"[^>]*>(.*?)</div>', re.S),
+          re.compile(r'<h4>서비스</h4>\s*<ul>(.*?)</ul>', re.S))
+MENU = re.compile(
+    r'<a[^>]+href="(Home\.html|Reports\.html|industry\.html|Watchlist\.html|brief\.html)"[^>]*>([^<]+)</a>')
+menus = {}
+for p_ in sorted(list(ROOT.glob("*.html")) + list((ROOT / "staging").glob("*.html"))):
+    t = p_.read_text(errors="ignore")
+    if 'name="viewport"' not in t:          # 넘김용 껍데기 페이지엔 메뉴가 없다
+        continue
+    # 같은 주소의 링크 글자를 모은다. 값이 둘 이상이면 그 페이지 안에서 이미 갈렸다.
+    m = {}
+    for blk in BLOCKS:
+        for chunk in blk.findall(t):
+            for href, text in MENU.findall(chunk):
+                m.setdefault(href, set()).add(text.strip())
+    if m:
+        menus[p_.relative_to(ROOT).as_posix()] = {k: sorted(v) for k, v in m.items()}
+
+split = [f"{p}:{h}={'/'.join(v)}" for p, mm in menus.items() for h, v in mm.items() if len(v) > 1]
+check(not split, "한 페이지 안에서 메뉴 이름이 갈리지 않음", ", ".join(split[:4]))
+
+base = next(iter(menus.values()), {})
+diff = []
+for p, mm in menus.items():
+    for h, v in mm.items():
+        if h in base and v != base[h]:
+            diff.append(f"{p}:{h}={'/'.join(v)}(≠{'/'.join(base[h])})")
+check(not diff, f"메뉴 이름이 {len(menus)}개 페이지에서 모두 같음", ", ".join(diff[:4]))
+
 print(f"통과 {len(ok)} · 실패 {len(fail)}\n")
 for m in ok: print("  PASS", m)
 for m in fail: print("  FAIL", m)
