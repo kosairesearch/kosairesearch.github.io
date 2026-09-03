@@ -814,7 +814,7 @@ document.getElementById('agreeBtn').addEventListener('click', async () => {
          같은 한 줄을 쓴다. */
       let msg = '';
       try{
-        const { hintText } = await import('./auth-hint.js');
+        const { hintText } = await import('./auth-hint.js?v=2289d634');
         msg = hintText((e && e.details && e.details.method) || '');
       }catch(_){}
       errBox.textContent = (msg || (e && e.message) || T('이미 다른 방법으로 가입된 이메일입니다.')) + ' ';
@@ -940,6 +940,6 @@ document.getElementById('cancelBtn').addEventListener('click', async () => {
   location.replace('Home.html');
 });
 </script>
-<script type="module" src="auth-state.js?v=203bf1bb"></script>
+<script type="module" src="auth-state.js?v=aef40700"></script>
 </body>
 </html>
