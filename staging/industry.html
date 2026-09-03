@@ -7,9 +7,21 @@
 <meta name="referrer" content="strict-origin-when-cross-origin" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <!-- 로그인 게이트: 로그인 확인 전 화면 숨김 -->
-<script>document.documentElement.classList.add('kos-locked');
-/* 스크립트가 끝내 안 뜨면 빈 화면으로 남는다 — 그건 안 뜨는 것보다 나쁘다. */
-setTimeout(function(){ document.documentElement.classList.remove('kos-locked'); }, 2500);</script>
+<script>
+/* 화면을 잠깐 가려 둔다 — auth-guard.js 가 로그인 상태를 확인하고 풀어 준다.
+   확인 전에 내용이 번쩍 보였다가 가려지는 것을 막기 위한 것이다.
+
+   그런데 auth-guard.js 는 파이어베이스를 구글 서버(gstatic.com)에서 받아 온다.
+   그 한 줄이 실패하면 모듈 자체가 실행되지 않고, 풀어 주는 코드도 같이 죽는다.
+   그러면 이 페이지는 아무것도 안 보이는 채로 영영 그대로다 — 느려지는 것도
+   일부만 안 되는 것도 아니고, 빈 화면이다.
+
+   회사망·광고차단기·구글 장애 어느 하나로도 일어날 수 있어 가림막에 시한을
+   둔다. 2.5초 안에 아무도 풀어 주지 않으면 스스로 풀린다. 그때는 확인이 끝나기
+   전 모습이 잠깐 보일 수 있지만, 아무것도 안 보이는 것보다 낫다. */
+document.documentElement.classList.add('kos-locked');
+setTimeout(function(){ document.documentElement.classList.remove('kos-locked'); }, 2500);
+</script>
 <style>html.kos-locked body{visibility:hidden}</style>
 <title>업종별 분석 — 코스피·코스닥 업종 동향과 주요 종목 | KOSAI</title>
 <meta name="description" content="업종별 시세와 종목 동향, 업종 내 주요 종목 비교 분석." />

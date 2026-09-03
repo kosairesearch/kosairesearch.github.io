@@ -272,6 +272,42 @@ for (const [label, pre] of [["실사이트", ""], ["스테이징", "/staging"]])
   }
 }
 
+/* ── 바깥 서버가 죽어도 화면이 빈 채로 남지 않는가 ────────
+   업종·종목·워치리스트는 로그인 확인이 끝날 때까지 화면을 가려 둔다
+   (html.kos-locked → body{visibility:hidden}). 풀어 주는 것은 auth-guard.js
+   인데, 그 파일은 파이어베이스를 구글 서버에서 받아 온다.
+
+   그 한 줄이 실패하면 모듈이 통째로 실행되지 않고, 풀어 주는 코드도 같이
+   죽는다. 회사망·광고차단기·구글 장애 어느 하나로도 일어날 수 있고, 그때
+   사용자가 보는 것은 느린 화면이 아니라 아무것도 없는 화면이다.
+
+   그래서 가림막에 시한을 뒀다. 여기서는 구글 서버를 실제로 끊어 놓고
+   그 시한이 정말 도는지 본다 — 이 검사가 없으면 시한이 지워져도 아무도
+   모른다(평소에는 파이어베이스가 잘 오므로 티가 안 난다). */
+console.log("\n── 구글 서버가 막혀도 화면이 나온다 ──\n");
+for (const [label, pre] of [["실사이트", ""], ["스테이징", "/staging"]]) {
+  for (const path of ["/industry.html", "/stock.html", "/Watchlist.html"]) {
+    const page = await browser.newPage({ viewport: { width: 1280, height: 800 } });
+    await page.route("**gstatic.com/**", (r) => r.abort());   // 파이어베이스를 끊는다
+    await page.goto(BASE + pre + path, { waitUntil: "domcontentloaded" });
+    await page.waitForTimeout(700);
+    const early = await page.evaluate(() =>
+      document.documentElement.classList.contains("kos-locked"));
+    await page.waitForTimeout(2600);                          // 시한(2.5초)이 지날 만큼
+    const got = await page.evaluate(() => ({
+      locked: document.documentElement.classList.contains("kos-locked"),
+      vis: getComputedStyle(document.body).visibility,
+      chars: document.body.innerText.trim().length,
+    }));
+    await page.close();
+    ok(`${label}${path} — 확인 전에는 가려 둔다`, early,
+       "가리지 않으면 로그인 확인 전 내용이 번쩍 보인다");
+    ok(`${label}${path} — 파이어베이스가 안 와도 결국 보인다`,
+       !got.locked && got.vis === "visible", JSON.stringify(got));
+    ok(`${label}${path} — 글자가 실제로 그려진다`, got.chars > 50, `본문 ${got.chars}자`);
+  }
+}
+
 await browser.close();
 server.close();
 console.log(`\n통과 ${pass} · 실패 ${fail}`);
