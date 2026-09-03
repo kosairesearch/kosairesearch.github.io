@@ -136,6 +136,19 @@ for p_ in list(ROOT.glob("*.html")) + list((ROOT / "staging").glob("*.html")):
         need_fd.append(p_.relative_to(ROOT).as_posix())
 check(not need_fd, "모든 페이지가 전화번호 자동인식을 꺼 둠", ",".join(need_fd))
 
+# 10) 링크를 걷어낸 자리에 빈 껍데기가 남지 않았는가
+#
+#     스크리너를 걷어낼 때 <a> 만 지우고 <li> 를 남겼다. 33개 페이지 전부에
+#     <li></li> 가 남았고, 푸터의 '업종별' 과 '워치리스트' 사이만 간격이
+#     한 칸 더 벌어져 보였다. 눈에는 "여기만 좀 뜨네" 로만 보이는 종류다.
+empty = []
+for p_ in list(ROOT.glob("*.html")) + list((ROOT / "staging").glob("*.html")):
+    t = p_.read_text(errors="ignore")
+    for tag in ("li", "ul", "nav"):
+        if f"<{tag}></{tag}>" in t:
+            empty.append(f"{p_.relative_to(ROOT).as_posix()}:<{tag}>")
+check(not empty, "링크를 걷어낸 자리에 빈 껍데기가 없음", ",".join(empty[:6]))
+
 print(f"통과 {len(ok)} · 실패 {len(fail)}\n")
 for m in ok: print("  PASS", m)
 for m in fail: print("  FAIL", m)
