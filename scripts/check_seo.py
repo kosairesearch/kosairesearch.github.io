@@ -120,6 +120,22 @@ rb = (ROOT / "robots.txt").read_text(errors="ignore")
 check("Disallow: /staging/" in rb, "robots.txt 가 /staging/ 를 막는다")
 check(not (ROOT / "project").exists(), "옛 디자인 시안 폴더가 남아 있지 않음")
 
+# 9) 사업자등록번호가 전화번호로 둔갑하지 않는가
+#
+#    380-25-02019 는 전화번호와 모양이 같아서, 아이폰 사파리가 알아서
+#    파란 글씨 링크로 바꾸고 누르면 전화를 건다. 글자를 어떻게 쓰든 막을 수
+#    없고 <meta format-detection> 으로만 끈다. 페이지를 새로 만들 때 이
+#    한 줄을 빠뜨리면 그 페이지만 다시 그렇게 된다 — 만든 사람은 아이폰으로
+#    푸터까지 내려가 보기 전에는 모른다.
+need_fd = []
+for p_ in list(ROOT.glob("*.html")) + list((ROOT / "staging").glob("*.html")):
+    t = p_.read_text(errors="ignore")
+    if 'name="viewport"' not in t:      # 넘김용 껍데기 페이지는 푸터가 없다
+        continue
+    if 'name="format-detection"' not in t:
+        need_fd.append(p_.relative_to(ROOT).as_posix())
+check(not need_fd, "모든 페이지가 전화번호 자동인식을 꺼 둠", ",".join(need_fd))
+
 print(f"통과 {len(ok)} · 실패 {len(fail)}\n")
 for m in ok: print("  PASS", m)
 for m in fail: print("  FAIL", m)
