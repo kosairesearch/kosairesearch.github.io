@@ -333,11 +333,12 @@ GitHub Actions 의 `schedule` 은 기본 브랜치(main)에 있는 워크플로�
 
 ### 지금 어디에 올라가나
 
-**스테이징(`kosai.kr/staging/brief.html`)이다.** 루트 `brief.html` 은 main 에 없고,
-`publish_staging.py` 는 `/staging/` 아래에만 쓰며 noindex 를 붙인다.
+**실사이트(`kosai.kr/brief.html`)다.** 처음에는 스테이징에만 올렸는데, 품질을
+확인한 뒤 옮겼다. 워크플로 ④단계가 main 의 `brief.html` 을 직접 고쳐 커밋한다.
+사이트맵에도 리포트와 같은 우선순위로 들어가 있다 — 평일 아침마다 새 글이
+올라가므로 색인이 늦으면 그날 값이 없어진다.
 
-실사이트로 옮기는 것은 품질을 확인한 다음의 별도 결정이다. 옮기려면 브리핑 페이지와
-네비게이션 링크를 main 에 넣고 워크플로의 발행 대상을 바꾸면 된다.
+스테이징 사본(`/staging/brief.html`)도 남아 있지만 그쪽은 갱신되지 않는다.
 
 ### 단계
 
