@@ -1264,7 +1264,7 @@ function resetMail(link, lang){
   return {
     subject: "KOSAI 비밀번호 재설정 안내",
     html: mailLayout({ lang, heading: "비밀번호 재설정",
-      intro: "비밀번호 재설정 요청을 받았습니다. 아래 버튼을 눌러 새 비밀번호를 설정하여 주시기 바랍니다.",
+      intro: "비밀번호 재설정 요청을 받았습니다. 아래 버튼을 눌러 새 비밀번호 설정.",
       btnText: "비밀번호 재설정하기", link,
       outro: "본인이 요청하지 않았다면 이 메일을 무시하셔도 됩니다. 비밀번호는 변경되지 않으며 계정은 안전합니다." })
   };
