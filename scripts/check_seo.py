@@ -191,6 +191,24 @@ for p_ in targets:
 check(not casual, "화면 문구가 모두 격식체(…하여 주시기 바랍니다)",
       ", ".join(casual[:6]) + (f" 외 {len(casual)-6}곳" if len(casual) > 6 else ""))
 
+# 12) 없는 창구로 안내하고 있지 않은가
+#
+#     "환불을 끝까지 처리하지 못했습니다. 고객센터로 문의해 주시기 바랍니다"
+#     라고 써 있었다. 우리에게 고객센터는 없다 — 창구는 문의하기 페이지와
+#     hello@kosai.kr 둘뿐이다. 돈이 걸린 자리에서 없는 곳을 찾아가라고 하면
+#     손님은 갈 데가 없다. 그 화면에서 가장 화가 난 사람이 보는 문장이다.
+GHOST = ("고객센터", "콜센터", "상담센터", "상담원", "고객상담실", "ARS")
+ghost = []
+for p_ in targets:
+    if not p_.exists():
+        continue
+    body = strip_notes(p_.read_text(errors="ignore"))
+    for ln_no, ln in enumerate(body.split("\n"), 1):
+        for g in GHOST:
+            if g in ln:
+                ghost.append(f"{p_.relative_to(ROOT).as_posix()}:{ln_no}:{g}")
+check(not ghost, "없는 창구(고객센터 등)로 안내하지 않음", ", ".join(ghost[:6]))
+
 print(f"통과 {len(ok)} · 실패 {len(fail)}\n")
 for m in ok: print("  PASS", m)
 for m in fail: print("  FAIL", m)

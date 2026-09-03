@@ -21,8 +21,8 @@ if (window.KOSi18n) window.KOSi18n.register({
   "이 이메일은 다른 방법으로 가입되어 있습니다. 아래 버튼 중 처음 가입하실 때 쓰신 것으로 로그인하여 주시기 바랍니다.":
     "This email is registered with a different sign-in method. Please use the one you signed up with.",
   "네트워크 연결을 확인하여 주시기 바랍니다.": "Please check your network connection.",
-  "이 계정은 사용이 중지되었습니다. 문의하여 주시기 바랍니다.":
-    "This account has been disabled. Please contact us.",
+  "이 계정은 사용이 중지되었습니다. hello@kosai.kr로 문의하여 주시기 바랍니다.":
+    "This account has been disabled. Please contact hello@kosai.kr.",
   "보안을 위해 다시 로그인하신 뒤 진행하여 주시기 바랍니다.":
     "For security, please sign in again and then continue.",
   "로그인 창이 닫혔습니다. 다시 시도하여 주시기 바랍니다.":
@@ -100,7 +100,7 @@ export function mapAuthError(err) {
   if (has("weak-password")) return T("비밀번호는 영문과 숫자를 포함해 8자 이상이어야 합니다.");
   if (has("too-many-requests")) return T("요청이 많아 잠시 막혔습니다. 잠시 후 다시 시도하여 주시기 바랍니다.");
   if (has("network-request-failed")) return T("네트워크 연결을 확인하여 주시기 바랍니다.");
-  if (has("user-disabled")) return T("이 계정은 사용이 중지되었습니다. 문의하여 주시기 바랍니다.");
+  if (has("user-disabled")) return T("이 계정은 사용이 중지되었습니다. hello@kosai.kr로 문의하여 주시기 바랍니다.");
   if (has("requires-recent-login")) return T("보안을 위해 다시 로그인하신 뒤 진행하여 주시기 바랍니다.");
   if (has("popup-blocked")) return T("브라우저가 팝업을 막았습니다. 팝업을 허용하신 뒤 다시 시도하여 주시기 바랍니다.");
   if (has("popup-closed") || has("cancelled-popup")) return T("로그인 창이 닫혔습니다. 다시 시도하여 주시기 바랍니다.");

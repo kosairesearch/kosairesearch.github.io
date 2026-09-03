@@ -3093,7 +3093,7 @@ async function doRefund(db, uid, ref, sub, q) {
     // 여기 오면 계산이 받은 돈보다 큰 금액을 냈다는 뜻이다. 조용히 넘기면
     // 사용자는 덜 받은 줄 모른다.
     console.error("[refund] 취소하지 못한 잔액", uid, "계산", q.amount, "남음", rest);
-    throw new HttpsError("internal", "환불을 끝까지 처리하지 못했습니다. 고객센터로 문의해 주시기 바랍니다.");
+    throw new HttpsError("internal", "환불을 끝까지 처리하지 못했습니다. hello@kosai.kr로 문의해 주시기 바랍니다.");
   }
 }
 
