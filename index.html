@@ -598,7 +598,12 @@ body::after,body::before{display:none}
                그 하나를 고치려고 data/reports-index.js 를 통째로 받았다 — 600KB 를
                가장 많이 열리는 페이지에서 매번. -->
           <div class="lp-stat"><b id="lpRepN" data-i18n-skip>2,685</b><span>AI 리포트</span></div>
-          <div class="lp-stat"><b>29개</b><span>업종 분석</span></div>
+          <!-- 업종 수도 stamp_counts.py 가 data/sectors.js 를 세어 박아 넣는다.
+               손으로 적혀 있던 동안 실제와 어긋났다(적힌 29 · 실제 30).
+               '개' 를 붙이지 않는다 — 붙이면 영어 화면까지 '개' 가 따라가고,
+               그걸 막으려고 숫자마다 번역 열쇠말을 만들어야 한다. 위 리포트
+               수와 같은 모양이다. -->
+          <div class="lp-stat"><b id="lpSecN" data-i18n-skip>30</b><span>업종 분석</span></div>
           <div class="lp-stat"><b>매 거래일</b><span>데이터 갱신</span></div>
         </div>
       </div>
@@ -650,7 +655,10 @@ if(window.KOSi18n) KOSi18n.register({
   "증권사가 다루지 않는 소형주까지, 코스피·코스닥 2,700여 개 전 종목을 AI가 분석합니다. 재무·뉴스·밸류에이션을 한 페이지에.":"AI analysis of all 2,700+ KOSPI & KOSDAQ stocks — including the small caps brokerage research skips. Financials, news, and valuation on one page.",
   "시작하기":"Get started",
   "리포트 둘러보기":"Browse reports",
-  "AI 리포트":"AI reports","업종 분석":"Sector analyses","29개":"29","매 거래일":"Every trading day","데이터 갱신":"Data refresh"
+  // 랜딩 지표 세 칸의 이름. '업종 분석' 은 여기서 따로 적지 않는다 —
+  // 위 헤더 표에 이미 있고, 같은 한글을 두 번 적으면 뒤엣것이 이겨서
+  // 헤더까지 그 말로 바뀐다(실제로 헤더가 'Sector analyses' 로 나왔다).
+  "AI 리포트":"AI Reports","매 거래일":"Every trading day","데이터 갱신":"Data Refresh"
 });
 </script>
 <script type="importmap">

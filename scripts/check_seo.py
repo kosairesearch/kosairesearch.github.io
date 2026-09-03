@@ -80,6 +80,18 @@ try:
 except Exception as e:                                  # 인덱스가 없는 환경
     check(True, f"랜딩 리포트 수 확인 건너뜀 ({e.__class__.__name__})")
 
+#    업종 수도 같은 자리에 있는데 이건 손으로 적혀 있어 실제와 어긋나 있었다
+#    (적힌 29 · 실제 30). 이제 stamp_counts.py 가 박아 넣는다.
+try:
+    import json
+    sj = (ROOT / "data" / "sectors.js").read_text(encoding="utf-8")
+    want = str(len(json.loads(sj[sj.index("{"):].rstrip().rstrip(";"))["sectors"]))
+    m = re.search(r'<b id="lpSecN"[^>]*>([^<]*)</b>', s)
+    have = m.group(1).strip() if m else "(없음)"
+    check(have == want, "랜딩의 업종 수가 실제와 같음", f"페이지 {have} · 실제 {want}")
+except Exception as e:
+    check(True, f"랜딩 업종 수 확인 건너뜀 ({e.__class__.__name__})")
+
 # 8) 없앤 페이지의 흔적이 남아 있지 않은가
 #
 #    스크리너를 리포트 페이지 안으로 옮기면서 그 페이지를 접었다. 링크가 한

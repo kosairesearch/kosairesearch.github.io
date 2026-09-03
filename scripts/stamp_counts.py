@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""랜딩 페이지의 'AI 리포트' 수를 실제 값으로 박아 넣는다.
+"""랜딩 페이지의 'AI 리포트' 수와 '업종 분석' 수를 실제 값으로 박아 넣는다.
 
 왜 있는가. 그 숫자가 index.html 에 손으로 적혀 있었고, 아무도 안 고쳤다.
 그래서 리포트가 늘어날 때마다 조금씩 어긋났고(2,684 인데 실제는 2,686),
@@ -25,10 +25,12 @@ from pathlib import Path
 
 ROOT = Path(__file__).resolve().parent.parent
 INDEX = ROOT / "data" / "reports-index.js"
+SECTORS = ROOT / "data" / "sectors.js"
 PAGE = ROOT / "index.html"
 
 # <b id="lpRepN" data-i18n-skip>2,684</b>
-PATTERN = re.compile(r'(<b id="lpRepN"[^>]*>)([^<]*)(</b>)')
+def _pat(el_id):
+    return re.compile(r'(<b id="%s"[^>]*>)([^<]*)(</b>)' % el_id)
 
 
 def stock_count() -> int:
@@ -41,28 +43,54 @@ def stock_count() -> int:
     return int(n)
 
 
+def sector_count() -> int:
+    """업종 분석이 실제로 있는 업종 수. 업종 페이지가 그리는 것과 같은 자료다."""
+    text = SECTORS.read_text(encoding="utf-8")
+    payload = json.loads(text[text.index("{"):].rstrip().rstrip(";"))
+    n = len(payload.get("sectors") or {})
+    if not n:
+        raise SystemExit("stamp_counts: 업종 수를 읽지 못했습니다.")
+    return n
+
+
+# (요소 id, 이름, 실제 값을 구하는 함수, 천 단위 쉼표를 넣는가)
+TARGETS = (
+    ("lpRepN", "AI 리포트", stock_count, True),
+    ("lpSecN", "업종 분석", sector_count, False),
+)
+
+
 def main() -> int:
     check = "--check" in sys.argv
-    want = f"{stock_count():,}"
     html = PAGE.read_text(encoding="utf-8")
+    same, fixed, bad = [], [], []
 
-    m = PATTERN.search(html)
-    if not m:
-        # 마크업이 바뀌었는데 이 스크립트만 그대로면 조용히 아무것도 안 하게 된다.
-        print("stamp_counts: index.html 에서 lpRepN 을 찾지 못했습니다.", file=sys.stderr)
+    for el_id, label, fn, comma in TARGETS:
+        want = f"{fn():,}" if comma else str(fn())
+        pat = _pat(el_id)
+        m = pat.search(html)
+        if not m:
+            # 마크업이 바뀌었는데 이 스크립트만 그대로면 조용히 아무것도 안 하게 된다.
+            print(f"stamp_counts: index.html 에서 {el_id} 을 찾지 못했습니다.", file=sys.stderr)
+            return 1
+        have = m.group(2).strip()
+        if have == want:
+            same.append(f"{label} {want}")
+        elif check:
+            bad.append(f"{label} — 페이지 {have} · 실제 {want}")
+        else:
+            html = pat.sub(rf"\g<1>{want}\g<3>", html, count=1)
+            fixed.append(f"{label} {have} → {want}")
+
+    if bad:
+        for b in bad:
+            print("stamp_counts: 어긋남 — " + b, file=sys.stderr)
         return 1
-
-    have = m.group(2).strip()
-    if have == want:
-        print(f"stamp_counts: 그대로 — AI 리포트 {want}")
-        return 0
-
-    if check:
-        print(f"stamp_counts: 어긋남 — 페이지 {have} · 실제 {want}", file=sys.stderr)
-        return 1
-
-    PAGE.write_text(PATTERN.sub(rf"\g<1>{want}\g<3>", html, count=1), encoding="utf-8")
-    print(f"stamp_counts: {have} → {want}")
+    if fixed:
+        PAGE.write_text(html, encoding="utf-8")
+        print("stamp_counts: " + " · ".join(fixed))
+    if same:
+        print("stamp_counts: 그대로 — " + " · ".join(same))
     return 0
 
 

@@ -41,6 +41,10 @@ echo "── 사이트 전체 ──"
 run "호출부"        node scripts/check_calls.mjs
 run "번역"          node scripts/check_i18n.mjs
 run "SEO·구조"      python3 scripts/check_seo.py
+# 업종 분석은 분기에 한 번만 돈다. 무엇이 어긋나도 다음 분기까지 아무도
+# 모르므로(실제로 7·8월 예정 실행이 아무것도 안 하고 성공으로 끝났다)
+# 요금 창구·일정·화면 안내가 서로 맞는지 여기서 본다.
+run "업종 분석"     python3 scripts/check_sectors.py
 # 자바스크립트를 고쳐 놓고 캐시 주소를 안 바꾸면, 다시 온 사람은 옛 파일을
 # 계속 쓴다. 코드는 고쳐졌는데 화면은 안 바뀌는, 원인을 찾기 제일 어려운
 # 종류의 버그다. 올리기 전에 여기서 잡는다.

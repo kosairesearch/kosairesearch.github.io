@@ -56,7 +56,8 @@ window.KOS_SECTORS = {
           }
         }
       ],
-      "sector": "유통·소비재"
+      "sector": "유통·소비재",
+      "generatedAt": "2026-08-06 14:16"
     },
     "부동산·리츠": {
       "lead": {
@@ -118,7 +119,8 @@ window.KOS_SECTORS = {
         "https://www.shinhangroup.com/kr/archive/insight/extend/detail/32904",
         "https://www.shinhangroup.com/kr/archive/insight/extend/detail/32294"
       ],
-      "sector": "부동산·리츠"
+      "sector": "부동산·리츠",
+      "generatedAt": "2026-08-06 14:16"
     },
     "철강·금속": {
       "lead": {
@@ -180,7 +182,8 @@ window.KOS_SECTORS = {
         "https://finance.thesmileinfo.com/2026/06/steel.html",
         "http://news.bizwatch.co.kr/article/industry/2026/07/16/0029"
       ],
-      "sector": "철강·금속"
+      "sector": "철강·금속",
+      "generatedAt": "2026-08-06 14:16"
     },
     "통신": {
       "lead": {
@@ -242,7 +245,8 @@ window.KOS_SECTORS = {
         "https://contents.fairytech.ai/2026/04/14/mwc-2026-telecom-ai/",
         "https://finance.thesmileinfo.com/2026/07/communication.html"
       ],
-      "sector": "통신"
+      "sector": "통신",
+      "generatedAt": "2026-08-06 14:16"
     },
     "항공·방산": {
       "lead": {
@@ -309,7 +313,8 @@ window.KOS_SECTORS = {
         "https://www.newsquest.co.kr/news/articleView.html?idxno=267376",
         "https://www.shippingnewsnet.com/news/articleView.html?idxno=69137"
       ],
-      "sector": "항공·방산"
+      "sector": "항공·방산",
+      "generatedAt": "2026-08-06 14:16"
     },
     "호텔·레저": {
       "lead": {
@@ -364,7 +369,8 @@ window.KOS_SECTORS = {
           }
         }
       ],
-      "sector": "호텔·레저"
+      "sector": "호텔·레저",
+      "generatedAt": "2026-08-06 14:16"
     },
     "자동차": {
       "lead": {
@@ -419,7 +425,8 @@ window.KOS_SECTORS = {
           }
         }
       ],
-      "sector": "자동차"
+      "sector": "자동차",
+      "generatedAt": "2026-08-06 14:16"
     },
     "식음료": {
       "lead": {
@@ -483,7 +490,8 @@ window.KOS_SECTORS = {
         "https://www.hanwhawm.com/main/common/common_file/fileView.cmd?category=2&depth3_id=anls1&key1=64573&key2=1&bldid=bbs10031",
         "https://v.daum.net/v/20260421145915856"
       ],
-      "sector": "식음료"
+      "sector": "식음료",
+      "generatedAt": "2026-08-06 14:16"
     },
     "IT·소프트웨어": {
       "lead": {
@@ -543,7 +551,8 @@ window.KOS_SECTORS = {
         "http://www.newstomato.com/ReadNews.aspx?no=1308868",
         "https://v.daum.net/v/20260430144905476"
       ],
-      "sector": "IT·소프트웨어"
+      "sector": "IT·소프트웨어",
+      "generatedAt": "2026-08-06 14:16"
     },
     "보험": {
       "lead": {
@@ -610,7 +619,8 @@ window.KOS_SECTORS = {
         "https://www.sisaon.co.kr/news/articleView.html?idxno=179329",
         "https://www.hankyung.com/koreamarket/consensus/pdf/2025-12-b3feaab56f018e25de05b8447d015e97"
       ],
-      "sector": "보험"
+      "sector": "보험",
+      "generatedAt": "2026-08-06 14:16"
     },
     "바이오·제약": {
       "lead": {
@@ -665,7 +675,8 @@ window.KOS_SECTORS = {
           }
         }
       ],
-      "sector": "바이오·제약"
+      "sector": "바이오·제약",
+      "generatedAt": "2026-08-06 14:16"
     },
     "화장품": {
       "lead": {
@@ -731,7 +742,8 @@ window.KOS_SECTORS = {
         "https://m.truefriend.com/main/research/research/StrategyDetail.jsp?jkGubun=6&id=153684",
         "https://www.newsquest.co.kr/news/articleView.html?idxno=267105"
       ],
-      "sector": "화장품"
+      "sector": "화장품",
+      "generatedAt": "2026-08-06 14:16"
     },
     "전기장비": {
       "lead": {
@@ -795,7 +807,8 @@ window.KOS_SECTORS = {
         "https://economic22.com/hd-hyundai-electric-2026/",
         "https://plus.hankyung.com/apps/newsinside.view?aid=202605071131L&category=&sns=y"
       ],
-      "sector": "전기장비"
+      "sector": "전기장비",
+      "generatedAt": "2026-08-06 14:16"
     },
     "운송·물류": {
       "lead": {
@@ -850,7 +863,8 @@ window.KOS_SECTORS = {
           }
         }
       ],
-      "sector": "운송·물류"
+      "sector": "운송·물류",
+      "generatedAt": "2026-08-06 14:16"
     },
     "건설·건자재": {
       "lead": {
@@ -915,7 +929,8 @@ window.KOS_SECTORS = {
         "https://www.cerik.re.kr/uploads/report/3037/%EA%B1%B4%EC%84%A4%EB%8F%99%ED%96%A5%EB%B8%8C%EB%A6%AC%ED%95%91%201038%ED%98%B8.pdf",
         "https://finance.thesmileinfo.com/2026/07/%20building.html"
       ],
-      "sector": "건설·건자재"
+      "sector": "건설·건자재",
+      "generatedAt": "2026-08-06 14:16"
     },
     "섬유·패션·생활": {
       "lead": {
@@ -982,7 +997,8 @@ window.KOS_SECTORS = {
         "https://www.shinhangroup.com/kr/archive/insight/extend/detail/32838",
         "https://www.ebn.co.kr/news/articleView.html?idxno=1707921"
       ],
-      "sector": "섬유·패션·생활"
+      "sector": "섬유·패션·생활",
+      "generatedAt": "2026-08-06 14:16"
     },
     "지주": {
       "lead": {
@@ -1044,7 +1060,8 @@ window.KOS_SECTORS = {
         "https://v.daum.net/v/20260514070311488",
         "https://www.thedailymoney.com/news/articleView.html?idxno=1137167"
       ],
-      "sector": "지주"
+      "sector": "지주",
+      "generatedAt": "2026-08-06 14:16"
     },
     "미디어·엔터": {
       "lead": {
@@ -1099,7 +1116,8 @@ window.KOS_SECTORS = {
           }
         }
       ],
-      "sector": "미디어·엔터"
+      "sector": "미디어·엔터",
+      "generatedAt": "2026-08-06 14:16"
     },
     "화학": {
       "lead": {
@@ -1164,7 +1182,8 @@ window.KOS_SECTORS = {
         "https://gscaltexmediahub.com/energy/petrochemical-2025-review-2026-outlook/",
         "https://v.daum.net/v/20260107070231718"
       ],
-      "sector": "화학"
+      "sector": "화학",
+      "generatedAt": "2026-08-06 14:16"
     },
     "반도체": {
       "lead": {
@@ -1226,7 +1245,8 @@ window.KOS_SECTORS = {
         "https://www.dhilbo.co.kr/news/articleView.html?idxno=922",
         "https://somsap.somsap.com/2026/05/01/%ED%95%9C%EB%AF%B8%EB%B0%98%EB%8F%84%EC%B2%B4-hbm-tc%EB%B3%B8%EB%8D%94-%EC%8B%9C%EC%9E%A5-%EC%A0%90%EC%9C%A0%EC%9C%A8-2026/"
       ],
-      "sector": "반도체"
+      "sector": "반도체",
+      "generatedAt": "2026-08-06 14:16"
     },
     "게임": {
       "lead": {
@@ -1292,7 +1312,8 @@ window.KOS_SECTORS = {
         "https://news.nate.com/view/20260511n28834",
         "https://v.daum.net/v/20251231142042237"
       ],
-      "sector": "게임"
+      "sector": "게임",
+      "generatedAt": "2026-08-06 14:16"
     },
     "에너지·전력": {
       "lead": {
@@ -1347,7 +1368,8 @@ window.KOS_SECTORS = {
           }
         }
       ],
-      "sector": "에너지·전력"
+      "sector": "에너지·전력",
+      "generatedAt": "2026-08-06 14:16"
     },
     "금융": {
       "lead": {
@@ -1410,7 +1432,8 @@ window.KOS_SECTORS = {
         "https://economist.co.kr/article/view/ecn202607300055",
         "https://v.daum.net/v/05jYZehDSI"
       ],
-      "sector": "금융"
+      "sector": "금융",
+      "generatedAt": "2026-08-06 14:16"
     },
     "기계·장비": {
       "lead": {
@@ -1465,7 +1488,8 @@ window.KOS_SECTORS = {
           }
         }
       ],
-      "sector": "기계·장비"
+      "sector": "기계·장비",
+      "generatedAt": "2026-08-06 14:16"
     },
     "인공지능(AI)": {
       "lead": {
@@ -1527,7 +1551,8 @@ window.KOS_SECTORS = {
         "https://www.businesspost.co.kr/BP?command=article_view&num=403882",
         "https://news.nate.com/view/20250729n06770"
       ],
-      "sector": "인공지능(AI)"
+      "sector": "인공지능(AI)",
+      "generatedAt": "2026-08-06 14:16"
     },
     "로봇": {
       "lead": {
@@ -1591,7 +1616,8 @@ window.KOS_SECTORS = {
         "https://www.hankookilbo.com/news/article/A2026080522080001719",
         "https://m.boannews.com/html/detail.html?idx=136736"
       ],
-      "sector": "로봇"
+      "sector": "로봇",
+      "generatedAt": "2026-08-06 14:16"
     },
     "조선": {
       "lead": {

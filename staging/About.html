@@ -701,7 +701,7 @@ document.addEventListener('click', function (e) {
             <tr><td><b>시세·거래량·시가총액</b></td><td><span class="cyc">매 거래일</span></td><td>평일 저녁 19~22시(KST)</td><td>일일 종가 기준이며, 실시간 시세는 제공되지 않습니다.</td></tr>
             <tr><td><b>종목 업종 분류</b></td><td><span class="cyc">수시</span></td><td>신규 상장 종목 감지 시</td><td>AI가 사업 내용 기준으로 자동 분류합니다.</td></tr>
             <tr><td><b>종목 리포트</b></td><td><span class="cyc">수시</span></td><td>신규 상장 시 · 정기보고서 제출 시</td><td>전 종목 대상으로, 사업·분기·반기보고서가 새로 공시되면 해당 종목 리포트를 최신 실적 기준으로 다시 작성합니다.</td></tr>
-            <tr><td><b>업종 분석</b></td><td><span class="cyc">분기별</span></td><td>1·4·7·10월 1일</td><td>업종별 집계와 AI 분석으로 전 업종을 다시 작성합니다.</td></tr>
+            <tr><td><b>업종 분석</b></td><td><span class="cyc">분기별</span></td><td>4·6·9·12월 5일</td><td>AI가 전 업종의 분석 본문을 다시 작성합니다. 사업·반기·분기보고서 공시가 마무리되는 시점에 맞춰 일정을 정했습니다. 업종별 등락률·시가총액 같은 집계 수치는 이와 별개로 매 거래일 갱신되며, 본문에 오류가 확인되면 분기 중에도 다시 작성합니다.</td></tr>
             <tr><td><b>신규·상장폐지 종목</b></td><td><span class="cyc">매 거래일</span></td><td>자동 반영</td><td>신규는 자동 추가·분류, 폐지는 자동 제외됩니다.</td></tr>
           </tbody>
         </table>
@@ -820,7 +820,7 @@ if(window.KOSi18n) KOSi18n.register({
   "AI가 전 종목을 실제 사업 기준으로 업종·테마(AI·로봇 등)에 자동 분류합니다.": "AI automatically sorts every stock into sectors and themes (AI, robotics, etc.) based on its actual business.",
   "AI 리포트": "AI report",
   "Claude가 사업·실적·강세/약세·리스크를 항목별로 작성합니다.": "Claude writes up business, earnings, bull/bear factors, and risks section by section.",
-  "업종 분석": "Industry analysis",
+  "업종 분석": "Industry Analysis",
   "업종별 집계와 AI 업종 분석 리포트를 생성합니다.": "We generate per-industry aggregates and an AI industry-analysis report.",
   "자동 게시": "Auto-publish",
   "자동화 파이프라인이 데이터 기준 시각·출처와 함께 사이트에 반영합니다.": "An automated pipeline publishes it to the site with the data timestamp and sources.",
@@ -868,11 +868,11 @@ if(window.KOSi18n) KOSi18n.register({
   "종목 리포트": "Stock reports",
   "매월": "Monthly",
   "분기별": "Quarterly",
-  "1·4·7·10월 1일": "Jan 1, Apr 1, Jul 1, Oct 1",
+  "4·6·9·12월 5일": "Apr 5, Jun 5, Sep 5, Dec 5",
   "신규 상장 시 · 정기보고서 제출 시": "On new listing · on periodic-filing submission",
   "전 종목 대상으로, 사업·분기·반기보고서가 새로 공시되면 해당 종목 리포트를 최신 실적 기준으로 다시 작성합니다.": "Across all listed stocks, when an annual, quarterly, or half-year report is newly filed, that stock's report is rewritten to reflect the latest results.",
   "매월 1일": "On the 1st of each month",
-  "업종별 집계와 AI 분석으로 전 업종을 다시 작성합니다.": "Rewritten from per-industry aggregates and AI analysis.",
+  "AI가 전 업종의 분석 본문을 다시 작성합니다. 사업·반기·분기보고서 공시가 마무리되는 시점에 맞춰 일정을 정했습니다. 업종별 등락률·시가총액 같은 집계 수치는 이와 별개로 매 거래일 갱신되며, 본문에 오류가 확인되면 분기 중에도 다시 작성합니다.": "AI rewrites the written analysis for every sector. The schedule follows the periodic-disclosure calendar, running once annual, half-year and quarterly reports have been filed. Aggregate figures such as sector returns and market capitalization refresh separately on each trading day, and the text is regenerated mid-quarter if an error is found.",
   "신규·상장폐지 종목": "New & delisted stocks",
   "자동 반영": "Reflected automatically",
   "신규는 자동 추가·분류, 폐지는 자동 제외됩니다.": "New listings are auto-added and classified; delistings are auto-removed.",
