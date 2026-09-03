@@ -113,10 +113,12 @@ if shell.exists():
 else:
     check(False, f"{RETIRED} 껍데기가 없다 — 옛 주소가 404 가 된다")
 
-# 검색에 나오면 안 되는 폴더가 robots.txt 로 막혀 있는가
+# 검색에 나오면 안 되는 곳이 robots.txt 로 막혀 있는가
+#   /project/(옛 디자인 시안)은 폴더째 지웠다. 없는 폴더를 막아 두면 다음에
+#   읽는 사람이 그게 뭔지 찾게 되므로 robots.txt 에서도 뺐다.
 rb = (ROOT / "robots.txt").read_text(errors="ignore")
-for d in ("/staging/", "/project/"):
-    check(f"Disallow: {d}" in rb, f"robots.txt 가 {d} 를 막는다")
+check("Disallow: /staging/" in rb, "robots.txt 가 /staging/ 를 막는다")
+check(not (ROOT / "project").exists(), "옛 디자인 시안 폴더가 남아 있지 않음")
 
 print(f"통과 {len(ok)} · 실패 {len(fail)}\n")
 for m in ok: print("  PASS", m)
