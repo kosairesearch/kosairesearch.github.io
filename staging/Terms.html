@@ -240,31 +240,14 @@ main{flex:1;padding:8px 0 64px}
   }
 
   /* ---- toggle UI ---- */
-  function buildToggle(){
-    const theme=document.getElementById('themeBtn');
-    if(!theme || document.getElementById('langToggle')) return;
-    const wrap=document.createElement('div');
-    wrap.id='langToggle';
-    wrap.setAttribute('role','group');
-    wrap.setAttribute('aria-label','Language');
-    wrap.innerHTML='<button type="button" data-l="ko">KO</button><button type="button" data-l="en">EN</button>';
-    theme.parentNode.insertBefore(wrap, theme);
-    wrap.addEventListener('click',e=>{ const b=e.target.closest('button'); if(b) setLang(b.dataset.l); });
-    if(!document.getElementById('langToggleStyle')){
-      const st=document.createElement('style'); st.id='langToggleStyle';
-      st.textContent=`
-        #langToggle{display:inline-flex;gap:2px;padding:3px;border-radius:9999px;
-          background:rgba(0,0,0,.05);margin-right:2px}
-        :root[data-theme="dark"] #langToggle{background:rgba(255,255,255,.08)}
-        #langToggle button{border:0;background:transparent;cursor:pointer;
-          font:700 12px/1 var(--font-sans,"Pretendard",sans-serif);letter-spacing:.02em;
-          color:var(--fg-3);padding:7px 10px;border-radius:9999px;transition:background .15s,color .15s}
-        #langToggle button:hover{color:var(--fg-1)}
-        #langToggle button.on{background:#000;color:#fff}
-        :root[data-theme="dark"] #langToggle button.on{background:#fff;color:#000}`;
-      document.head.appendChild(st);
-    }
-  }
+  /* 헤더의 KO/EN 토글은 걷어냈다. 언어는 설정 화면에서 바꾼다
+     (settings-panel.js 의 '언어' 줄). 같은 것을 두 곳에 두면 헤더가
+     붐비고, 테마 토글과 나란히 있어 무엇이 무엇인지 한눈에 안 잡혔다.
+
+     함수는 남겨 둔다 — init() 이 부르고 있어서, 지우려면 페이지마다 조금씩
+     다른 init 을 17벌 손봐야 한다. updateToggle 도 그대로다. 엘리먼트가
+     없으면 스스로 빠져나간다. */
+  function buildToggle(){ return; }
   function updateToggle(){
     const wrap=document.getElementById('langToggle'); if(!wrap) return;
     wrap.querySelectorAll('button').forEach(b=>b.classList.toggle('on', b.dataset.l===lang));

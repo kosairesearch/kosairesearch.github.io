@@ -66,18 +66,21 @@ def patch(path, check=False):
 
 def main():
     check = "--check" in sys.argv
-    pages = sorted(p for p in ROOT.glob("*.html")
-                   if "buildToggle" in p.read_text(encoding="utf-8"))
+    # 실사이트와 스테이징을 함께 본다. 스테이징은 손으로 유지하는 사본이라
+    # 루트만 고치면 미리보기에만 토글이 남는다 — 실제로 그렇게 갈라져 있었다.
+    pages = sorted((p for p in list(ROOT.glob("*.html")) + list((ROOT / "staging").glob("*.html"))
+                    if "buildToggle" in p.read_text(encoding="utf-8")),
+                   key=lambda p: p.as_posix())
     changed = failed = 0
     for p in pages:
         did, note = patch(p, check)
         if did is None:
-            print(f"  ❌ {p.name:22} {note}")
+            print(f"  ❌ {p.relative_to(ROOT).as_posix():30} {note}")
             failed += 1
             continue
         if did:
             changed += 1
-        print(f"  {'·' if did else ' '} {p.name:22} {note}")
+        print(f"  {'·' if did else ' '} {p.relative_to(ROOT).as_posix():30} {note}")
     print(f"\n{'검사만 — ' if check else ''}{len(pages)}개 중 {changed}개 변경"
           f"{f' · 실패 {failed}' if failed else ''}")
     return 1 if failed else 0
