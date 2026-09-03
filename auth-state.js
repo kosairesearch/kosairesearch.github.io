@@ -22,7 +22,7 @@ if(window.KOSi18n) window.KOSi18n.register({
     "For security, please sign in again and then delete your account.",
   "탈퇴 처리 중 오류가 발생했습니다. 잠시 후 다시 시도하여 주시기 바랍니다.":
     "Something went wrong while deleting your account. Please try again later.",
-  "정말 탈퇴하시겠어요?":"Delete your account?",
+  "정말 탈퇴하시겠습니까?":"Delete your account?",
   "계정과 저장된 관심종목이 영구 삭제되며, 되돌릴 수 없습니다.":
     "Your account and saved watchlist will be permanently deleted. This cannot be undone.",
   "떠나시는 이유를 알려주시면 개선에 반영하겠습니다 (복수 선택 가능)":
@@ -57,12 +57,12 @@ function openWithdrawModal(){
   const lang = (window.KOSi18n ? KOSi18n.lang : 'ko');
   const WORD = lang === 'en' ? 'DELETE' : '탈퇴';          // 언어별 확인 문구
   const typePlaceholder = lang === 'en'
-    ? `Type ‘${WORD}’ to confirm` : `확인을 위해 ‘${WORD}’ 를 입력하세요`;
+    ? `Type ‘${WORD}’ to confirm` : `확인을 위해 ‘${WORD}’ 를 입력하십시오`;
   const ov = document.createElement('div');
   ov.id = 'wdModal'; ov.className = 'wd-ov';
   ov.innerHTML = `
     <div class="wd-card" role="dialog" aria-modal="true">
-      <div class="wd-h">${T("정말 탈퇴하시겠어요?")}</div>
+      <div class="wd-h">${T("정말 탈퇴하시겠습니까?")}</div>
       <div class="wd-em">${email}</div>
       <p class="wd-warn">${T("계정과 저장된 관심종목이 영구 삭제되며, 되돌릴 수 없습니다.")}</p>
       <div class="wd-q">${T("떠나시는 이유를 알려주시면 개선에 반영하겠습니다 (복수 선택 가능)")}</div>

@@ -18,18 +18,18 @@ if (window.KOSi18n) window.KOSi18n.register({
   "이미 가입된 이메일입니다.": "That email is already registered.",
   "요청이 많아 잠시 막혔습니다. 잠시 후 다시 시도하여 주시기 바랍니다.":
     "Too many attempts. Please try again in a moment.",
-  "이 이메일은 다른 방법으로 가입되어 있습니다. 아래 버튼 중 처음 가입할 때 쓰신 것으로 로그인해 주세요.":
+  "이 이메일은 다른 방법으로 가입되어 있습니다. 아래 버튼 중 처음 가입하실 때 사용하신 것으로 로그인하여 주시기 바랍니다.":
     "This email is registered with a different sign-in method. Please use the one you signed up with.",
-  "네트워크 연결을 확인해 주세요.": "Please check your network connection.",
-  "이 계정은 사용이 중지되었습니다. 문의해 주세요.":
+  "네트워크 연결을 확인하여 주시기 바랍니다.": "Please check your network connection.",
+  "이 계정은 사용이 중지되었습니다. 고객센터로 문의하여 주시기 바랍니다.":
     "This account has been disabled. Please contact us.",
-  "보안을 위해 다시 로그인한 뒤 진행해 주세요.":
+  "보안을 위해 다시 로그인하신 뒤 진행하여 주시기 바랍니다.":
     "For security, please sign in again and then continue.",
-  "로그인 창이 닫혔습니다. 다시 시도해 주세요.":
+  "로그인 창이 닫혔습니다. 다시 시도하여 주시기 바랍니다.":
     "The sign-in window was closed. Please try again.",
-  "브라우저가 팝업을 막았습니다. 팝업을 허용한 뒤 다시 시도해 주세요.":
+  "브라우저가 팝업을 차단했습니다. 팝업을 허용하신 뒤 다시 시도하여 주시기 바랍니다.":
     "Your browser blocked the popup. Please allow popups and try again.",
-  "Firebase 설정이 필요합니다. firebase-config.js를 확인하세요.":
+  "Firebase 설정이 필요합니다. firebase-config.js를 확인하여 주시기 바랍니다.":
     "Firebase needs to be configured (see firebase-config.js).",
   "처리 중 오류가 발생했습니다.": "Something went wrong."
 });
@@ -90,20 +90,20 @@ export function mapAuthError(err) {
   const has = s => c.includes(s);
 
   if (has("api-key") || has("configuration-not-found") || has("operation-not-allowed"))
-    return T("Firebase 설정이 필요합니다. firebase-config.js를 확인하세요.");
+    return T("Firebase 설정이 필요합니다. firebase-config.js를 확인하여 주시기 바랍니다.");
   if (has("account-exists-with-different-credential") || has("email-already-in-use") && has("credential"))
-    return T("이 이메일은 다른 방법으로 가입되어 있습니다. 아래 버튼 중 처음 가입할 때 쓰신 것으로 로그인해 주세요.");
+    return T("이 이메일은 다른 방법으로 가입되어 있습니다. 아래 버튼 중 처음 가입하실 때 사용하신 것으로 로그인하여 주시기 바랍니다.");
   if (has("email-already-in-use")) return T("이미 가입된 이메일입니다.");
   if (has("invalid-credential") || has("wrong-password") || has("user-not-found"))
     return T("이메일 또는 비밀번호가 올바르지 않습니다.");
   if (has("invalid-email")) return T("이메일 형식이 올바르지 않습니다.");
   if (has("weak-password")) return T("비밀번호는 영문과 숫자를 포함해 8자 이상이어야 합니다.");
   if (has("too-many-requests")) return T("요청이 많아 잠시 막혔습니다. 잠시 후 다시 시도하여 주시기 바랍니다.");
-  if (has("network-request-failed")) return T("네트워크 연결을 확인해 주세요.");
-  if (has("user-disabled")) return T("이 계정은 사용이 중지되었습니다. 문의해 주세요.");
-  if (has("requires-recent-login")) return T("보안을 위해 다시 로그인한 뒤 진행해 주세요.");
-  if (has("popup-blocked")) return T("브라우저가 팝업을 막았습니다. 팝업을 허용한 뒤 다시 시도해 주세요.");
-  if (has("popup-closed") || has("cancelled-popup")) return T("로그인 창이 닫혔습니다. 다시 시도해 주세요.");
+  if (has("network-request-failed")) return T("네트워크 연결을 확인하여 주시기 바랍니다.");
+  if (has("user-disabled")) return T("이 계정은 사용이 중지되었습니다. 고객센터로 문의하여 주시기 바랍니다.");
+  if (has("requires-recent-login")) return T("보안을 위해 다시 로그인하신 뒤 진행하여 주시기 바랍니다.");
+  if (has("popup-blocked")) return T("브라우저가 팝업을 차단했습니다. 팝업을 허용하신 뒤 다시 시도하여 주시기 바랍니다.");
+  if (has("popup-closed") || has("cancelled-popup")) return T("로그인 창이 닫혔습니다. 다시 시도하여 주시기 바랍니다.");
   return T("처리 중 오류가 발생했습니다.") + (err && err.code ? " (" + err.code + ")" : "");
 }
 

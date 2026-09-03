@@ -332,7 +332,7 @@ main{flex:1;padding:8px 0 64px}
     "식품":"Food & Beverage","엔터·미디어":"Entertainment & Media","건설":"Construction",
     "기계·로봇":"Machinery & Robotics","기타":"Others",
     "검색 결과가 없습니다":"No results found",
-    "다른 종목명·티커·업종으로 검색해 보세요.":"Try a different name, ticker, or sector.",
+    "다른 종목명·티커·업종으로 검색해 보시기 바랍니다.":"Try a different name, ticker, or sector.",
     "해당 업종 종목이 없습니다.":"No stocks in this sector.",
     "관심 종목":"Watchlist","관심종목":"Watchlist",
     "코스피":"KOSPI","코스닥":"KOSDAQ","코넥스":"KONEX",
@@ -535,7 +535,7 @@ KOSi18n.register({
     <div class="head">
       <div class="kick">ACCOUNT</div>
       <h1 id="acTitle">처리 중…</h1>
-      <p id="acDesc">잠시만 기다려 주세요.</p>
+      <p id="acDesc">잠시만 기다려 주시기 바랍니다.</p>
     </div>
 
     <div class="auth-card card glass">
@@ -585,28 +585,28 @@ themeBtn.addEventListener('click',()=>applyTheme(root.getAttribute('data-theme')
 
 if(window.KOSi18n) KOSi18n.register({
   "로그인":"Sign in",
-  "KOSAI 계정으로 로그인하고 관심 종목과 리포트를 이어서 보세요.":"Sign in to your KOSAI account to pick up your watchlist and reports.",
-  "데모 모드입니다 — 실제 로그인을 사용하려면 firebase-config.js에 Firebase 설정값을 입력하세요.":"Demo mode — add your Firebase settings to firebase-config.js to enable real sign-in.",
+  "KOSAI 계정으로 로그인하시면 관심 종목과 리포트를 이어서 보실 수 있습니다.":"Sign in to your KOSAI account to pick up your watchlist and reports.",
+  "데모 모드입니다 — 실제 로그인을 사용하시려면 firebase-config.js에 Firebase 설정값을 입력하여 주시기 바랍니다.":"Demo mode — add your Firebase settings to firebase-config.js to enable real sign-in.",
   "Google로 계속하기":"Continue with Google",
   "카카오로 계속하기":"Continue with Kakao",
   "네이버로 계속하기":"Continue with Naver",
   "또는 이메일로 로그인":"or sign in with email",
   "이메일":"Email","비밀번호":"Password",
-  "비밀번호를 입력하세요":"Enter your password",
-  "비밀번호를 잊으셨나요?":"Forgot your password?",
-  "아직 계정이 없으신가요?":"Don't have an account?",
+  "비밀번호를 입력하십시오":"Enter your password",
+  "비밀번호를 잊으셨습니까?":"Forgot your password?",
+  "아직 계정이 없으십니까?":"Don't have an account?",
   "회원가입":"Sign up",
   // dynamic messages (KOSi18n.t)
   "이메일 또는 비밀번호가 올바르지 않습니다.":"Incorrect email or password.",
   "이메일 형식이 올바르지 않습니다.":"That email address looks invalid.",
   "잠시 후 다시 시도하여 주시기 바랍니다.":"Too many attempts — please try again shortly.",
-  "Firebase 설정이 필요합니다. firebase-config.js를 확인하세요.":"Firebase is not configured yet. See firebase-config.js.",
+  "Firebase 설정이 필요합니다. firebase-config.js를 확인하여 주시기 바랍니다.":"Firebase is not configured yet. See firebase-config.js.",
   "로그인 중 오류가 발생했습니다.":"Something went wrong during sign-in.",
-  "비밀번호 재설정 메일을 보냈습니다. 메일함을 확인해 주세요.":"A password reset email has been sent. Please check your inbox.",
-  "이메일 인증이 필요합니다. 메일의 링크를 클릭한 뒤 다시 로그인해 주세요.":"Please verify your email — click the link we sent, then sign in again.",
+  "비밀번호 재설정 메일을 보내 드렸습니다. 메일함을 확인하여 주시기 바랍니다.":"A password reset email has been sent. Please check your inbox.",
+  "이메일 인증이 필요합니다. 메일의 링크를 누르신 뒤 다시 로그인하여 주시기 바랍니다.":"Please verify your email — click the link we sent, then sign in again.",
   "인증 메일 다시 보내기":"Resend verification email",
   "인증 메일을 다시 보내 드렸습니다. 메일함을 확인하여 주시기 바랍니다.":"Verification email resent. Please check your inbox.",
-  "이메일을 먼저 입력해 주세요.":"Please enter your email first.",
+  "이메일을 먼저 입력하여 주시기 바랍니다.":"Please enter your email first.",
   "카카오·네이버 로그인은 앱 키 설정이 필요합니다. (firebase-config.js 참고)":"Kakao/Naver sign-in needs app keys to be configured (see firebase-config.js)."
 });
 </script>
@@ -640,7 +640,7 @@ function render(){
   crumbEl.textContent = s.crumb ? s.crumb() : L('계정 인증','Account');
   if(s.kind === 'loading'){
     titleEl.textContent = L('처리 중…','Working…');
-    descEl.textContent = L('잠시만 기다려 주세요.','Please wait a moment.');
+    descEl.textContent = L('잠시만 기다려 주시기 바랍니다.','Please wait a moment.');
     bodyEl.innerHTML = '<div class="ac-spin"></div>';
   } else if(s.kind === 'ok'){
     titleEl.textContent = s.title();
@@ -651,15 +651,15 @@ function render(){
     descEl.textContent = s.desc();
     bodyEl.innerHTML = `<div class="ac-ok"><div class="ac-badge ac-bad">!</div></div>` + goBtn(L('로그인 페이지로','Go to sign in'), 'Login.html');
   } else if(s.kind === 'reset'){
-    titleEl.textContent = L('새 비밀번호를 설정하세요','Set a new password');
-    descEl.textContent = L(s.email + ' 계정의 새 비밀번호를 입력해 주세요.', 'Enter a new password for ' + s.email + '.');
+    titleEl.textContent = L('새 비밀번호를 설정하여 주시기 바랍니다','Set a new password');
+    descEl.textContent = L(s.email + ' 계정의 새 비밀번호를 입력하여 주시기 바랍니다.', 'Enter a new password for ' + s.email + '.');
     const v1 = (($('#np')||{}).value) || '', v2 = (($('#np2')||{}).value) || '';
     bodyEl.innerHTML = `
       <form id="rsForm" novalidate>
         <div class="field"><label for="np">${L('새 비밀번호','New password')}</label>
           <input id="np" type="password" autocomplete="new-password" placeholder="${L('영문·숫자 포함 8자 이상','At least 8 chars, letters and numbers')}" required /></div>
         <div class="field"><label for="np2">${L('새 비밀번호 확인','Confirm new password')}</label>
-          <input id="np2" type="password" autocomplete="new-password" placeholder="${L('비밀번호를 다시 입력하세요','Re-enter your password')}" required /></div>
+          <input id="np2" type="password" autocomplete="new-password" placeholder="${L('비밀번호를 다시 입력하십시오','Re-enter your password')}" required /></div>
         <div class="submit-row"><button type="submit" class="btn btn-primary" id="rsSubmit">${L('비밀번호 변경','Change password')}</button></div>
       </form>`;
     $('#np').value=v1; $('#np2').value=v2;
@@ -675,36 +675,36 @@ async function onResetSubmit(ev){
   const btn=$('#rsSubmit'); btn.disabled=true;
   try{
     await confirmPasswordReset(auth, oobCode, pw);
-    state={ kind:'ok', crumb:()=>L('비밀번호 재설정','Password reset'), title:()=>L('비밀번호가 변경됐어요','Your password has been changed'), desc:()=>L('새 비밀번호로 로그인해 주세요.','Please sign in with your new password.'), href:'Login.html' };
+    state={ kind:'ok', crumb:()=>L('비밀번호 재설정','Password reset'), title:()=>L('비밀번호가 변경되었습니다','Your password has been changed'), desc:()=>L('새 비밀번호로 로그인하여 주시기 바랍니다.','Please sign in with your new password.'), href:'Login.html' };
     render();
   }catch(e){
     btn.disabled=false;
     const c=(e&&e.code)||'';
-    if(c.includes('expired')||c.includes('invalid-action-code')) showErrMsg(L('링크가 만료되었거나 이미 사용되었습니다. 메일을 다시 요청해 주세요.','This link has expired or was already used. Please request a new email.'));
+    if(c.includes('expired')||c.includes('invalid-action-code')) showErrMsg(L('링크가 만료되었거나 이미 사용되었습니다. 메일을 다시 요청하여 주시기 바랍니다.','This link has expired or was already used. Please request a new email.'));
     else showErrMsg(L('비밀번호 변경에 실패했습니다. 잠시 후 다시 시도하여 주시기 바랍니다.','Failed to change password. Please try again later.'));
   }
 }
 
 async function run(){
-  if(!mode || !oobCode){ state={kind:'error', title:()=>L('잘못된 접근입니다','Invalid link'), desc:()=>L('유효하지 않은 링크입니다. 메일의 버튼을 다시 눌러주세요.','This link is not valid. Please tap the button in your email again.')}; render(); return; }
+  if(!mode || !oobCode){ state={kind:'error', title:()=>L('잘못된 접근입니다','Invalid link'), desc:()=>L('유효하지 않은 링크입니다. 메일의 버튼을 다시 눌러 주시기 바랍니다.','This link is not valid. Please tap the button in your email again.')}; render(); return; }
   try{
     if(mode === 'verifyEmail'){
       await applyActionCode(auth, oobCode);
-      state={kind:'ok', crumb:()=>L('이메일 인증','Email verification'), title:()=>L('이메일 인증이 완료됐어요','Your email has been verified'), desc:()=>L('KOSAI의 모든 기능을 이용하실 수 있습니다. 로그인해 주세요.','You can now use all KOSAI features. Please sign in.'), href:continueUrl};
+      state={kind:'ok', crumb:()=>L('이메일 인증','Email verification'), title:()=>L('이메일 인증이 완료되었습니다','Your email has been verified'), desc:()=>L('KOSAI의 모든 기능을 이용하실 수 있습니다. 로그인하여 주시기 바랍니다.','You can now use all KOSAI features. Please sign in.'), href:continueUrl};
     } else if(mode === 'resetPassword'){
       const email = await verifyPasswordResetCode(auth, oobCode);
       state={kind:'reset', crumb:()=>L('비밀번호 재설정','Password reset'), email};
     } else if(mode === 'recoverEmail' || mode === 'verifyAndChangeEmail'){
       await applyActionCode(auth, oobCode);
-      state={kind:'ok', crumb:()=>L('이메일 변경','Email change'), title:()=>L('이메일 주소가 변경됐어요','Your email address has been changed'), desc:()=>L('변경된 이메일로 다시 로그인해 주세요.','Please sign in again with your updated email.'), href:continueUrl};
+      state={kind:'ok', crumb:()=>L('이메일 변경','Email change'), title:()=>L('이메일 주소가 변경되었습니다','Your email address has been changed'), desc:()=>L('변경된 이메일로 다시 로그인하여 주시기 바랍니다.','Please sign in again with your updated email.'), href:continueUrl};
     } else {
       state={kind:'error', title:()=>L('지원하지 않는 요청','Unsupported request'), desc:()=>L('유효하지 않은 링크입니다.','This link is not valid.')};
     }
   }catch(e){
     const c=(e && e.code)||'';
-    if(c.includes('expired')) state={kind:'error', title:()=>L('링크가 만료됐어요','This link has expired'), desc:()=>L('보안을 위해 인증 링크는 일정 시간 후 만료됩니다. 메일을 다시 요청해 주세요.','For security, links expire after a while. Please request a new email.')};
-    else if(c.includes('invalid-action-code')) state={kind:'error', title:()=>L('이미 사용된 링크예요','This link was already used'), desc:()=>L('이미 처리됐거나 유효하지 않은 링크입니다. 새로 요청해 주세요.','It has already been used or is invalid. Please request a new one.')};
-    else state={kind:'error', title:()=>L('처리 중 문제가 발생했어요','Something went wrong'), desc:()=>L('잠시 후 다시 시도하거나, 메일을 다시 요청해 주세요.','Please try again later or request a new email.')};
+    if(c.includes('expired')) state={kind:'error', title:()=>L('링크가 만료되었습니다','This link has expired'), desc:()=>L('보안을 위해 인증 링크는 일정 시간이 지나면 만료됩니다. 메일을 다시 요청하여 주시기 바랍니다.','For security, links expire after a while. Please request a new email.')};
+    else if(c.includes('invalid-action-code')) state={kind:'error', title:()=>L('이미 사용된 링크입니다','This link was already used'), desc:()=>L('이미 처리되었거나 유효하지 않은 링크입니다. 새로 요청하여 주시기 바랍니다.','It has already been used or is invalid. Please request a new one.')};
+    else state={kind:'error', title:()=>L('처리 중 문제가 발생했습니다','Something went wrong'), desc:()=>L('잠시 후 다시 시도하시거나, 메일을 다시 요청하여 주시기 바랍니다.','Please try again later or request a new email.')};
   }
   render();
 }

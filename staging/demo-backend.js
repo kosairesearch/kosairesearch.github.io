@@ -478,7 +478,7 @@ window.KOSDemo = {
      하루 한도가 이미 차 있는 상태가 된다. */
   advance(days) {
     const ms = Math.round(Number(days) * 86400e3);
-    if (!Number.isFinite(ms) || ms <= 0) throw new Error("며칠을 넘길지 알려주세요 (예: advance(1))");
+    if (!Number.isFinite(ms) || ms <= 0) throw new Error("며칠을 넘길지 알려 주십시오 (예: advance(1))");
     const sub = read(SUB_KEY, null);
     if (sub) {
       for (const k of ["currentPeriodStart", "currentPeriodEnd", "startedAt", "failedAt", "refundedAt", "canceledAt"]) {
@@ -538,7 +538,7 @@ window.KOSDemo = {
       if (tried >= RETRY_DAYS.length) return "재시도를 모두 마쳤습니다.";
       const dayN = kstDayNo(now) - kstDayNo(sub.failedAt || now);
       if (dayN < RETRY_DAYS[tried]) {
-        return `아직 ${RETRY_DAYS[tried]}일째가 아닙니다 (지금 ${dayN}일째). advance() 로 넘겨 보세요.`;
+        return `아직 ${RETRY_DAYS[tried]}일째가 아닙니다 (지금 ${dayN}일째). advance() 로 넘기십시오.`;
       }
       const plan = PLANS[sub.pendingPlan || sub.plan];
       if (!decline) {

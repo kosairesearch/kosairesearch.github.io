@@ -326,7 +326,7 @@ main{flex:1;padding:8px 0 64px}
     "식품":"Food & Beverage","엔터·미디어":"Entertainment & Media","건설":"Construction",
     "기계·로봇":"Machinery & Robotics","기타":"Others",
     "검색 결과가 없습니다":"No results found",
-    "다른 종목명·티커·업종으로 검색해 보세요.":"Try a different name, ticker, or sector.",
+    "다른 종목명·티커·업종으로 검색해 보시기 바랍니다.":"Try a different name, ticker, or sector.",
     "해당 업종 종목이 없습니다.":"No stocks in this sector.",
     "관심 종목":"Watchlist","관심종목":"Watchlist",
     "코스피":"KOSPI","코스닥":"KOSDAQ","코넥스":"KONEX",
@@ -582,11 +582,11 @@ document.addEventListener('click', function (e) {
     <div class="head">
       <div class="kick">ACCOUNT</div>
       <h1>로그인</h1>
-      <p>KOSAI 계정으로 로그인하고 관심 종목과 리포트를 이어서 보세요.</p>
+      <p>KOSAI 계정으로 로그인하시면 관심 종목과 리포트를 이어서 보실 수 있습니다.</p>
     </div>
 
     <div class="auth-card card glass">
-      <div class="auth-note" id="cfgNote">데모 모드입니다 — 실제 로그인을 사용하려면 firebase-config.js에 Firebase 설정값을 입력하세요.</div>
+      <div class="auth-note" id="cfgNote">데모 모드입니다 — 실제 로그인을 사용하시려면 firebase-config.js에 Firebase 설정값을 입력하여 주시기 바랍니다.</div>
       <div class="auth-err" id="authErr"></div>
 
       <div class="social">
@@ -613,15 +613,15 @@ document.addEventListener('click', function (e) {
         </div>
         <div class="field">
           <label for="password">비밀번호</label>
-          <input id="password" type="password" autocomplete="current-password" data-i18n-ph placeholder="비밀번호를 입력하세요" required />
+          <input id="password" type="password" autocomplete="current-password" data-i18n-ph placeholder="비밀번호를 입력하십시오" required />
         </div>
-        <a class="forgot" href="#" id="forgotLink">비밀번호를 잊으셨나요?</a>
+        <a class="forgot" href="#" id="forgotLink">비밀번호를 잊으셨습니까?</a>
         <div class="submit-row">
           <button type="submit" class="btn btn-primary" id="emailSubmit">로그인</button>
         </div>
       </form>
 
-      <p class="auth-foot">아직 계정이 없으신가요? <a href="Signup.html">회원가입</a></p>
+      <p class="auth-foot">아직 계정이 없으십니까? <a href="Signup.html">회원가입</a></p>
     </div>
   </div>
 </main>
@@ -664,30 +664,30 @@ themeBtn.addEventListener('click',()=>applyTheme(root.getAttribute('data-theme')
 
 if(window.KOSi18n) KOSi18n.register({
   "로그인":"Sign in",
-  "KOSAI 계정으로 로그인하고 관심 종목과 리포트를 이어서 보세요.":"Sign in to your KOSAI account to pick up your watchlist and reports.",
-  "데모 모드입니다 — 실제 로그인을 사용하려면 firebase-config.js에 Firebase 설정값을 입력하세요.":"Demo mode — add your Firebase settings to firebase-config.js to enable real sign-in.",
+  "KOSAI 계정으로 로그인하시면 관심 종목과 리포트를 이어서 보실 수 있습니다.":"Sign in to your KOSAI account to pick up your watchlist and reports.",
+  "데모 모드입니다 — 실제 로그인을 사용하시려면 firebase-config.js에 Firebase 설정값을 입력하여 주시기 바랍니다.":"Demo mode — add your Firebase settings to firebase-config.js to enable real sign-in.",
   "Google로 계속하기":"Continue with Google",
   "카카오로 계속하기":"Continue with Kakao",
   "네이버로 계속하기":"Continue with Naver",
   "또는 이메일로 로그인":"or sign in with email",
   "이메일":"Email","비밀번호":"Password",
-  "비밀번호를 입력하세요":"Enter your password",
-  "비밀번호를 잊으셨나요?":"Forgot your password?",
-  "아직 계정이 없으신가요?":"Don't have an account?",
+  "비밀번호를 입력하십시오":"Enter your password",
+  "비밀번호를 잊으셨습니까?":"Forgot your password?",
+  "아직 계정이 없으십니까?":"Don't have an account?",
   "회원가입":"Sign up",
   // dynamic messages (KOSi18n.t)
   "이메일 또는 비밀번호가 올바르지 않습니다.":"Incorrect email or password.",
   "이메일 형식이 올바르지 않습니다.":"That email address looks invalid.",
   "잠시 후 다시 시도하여 주시기 바랍니다.":"Too many attempts — please try again shortly.",
-  "Firebase 설정이 필요합니다. firebase-config.js를 확인하세요.":"Firebase is not configured yet. See firebase-config.js.",
+  "Firebase 설정이 필요합니다. firebase-config.js를 확인하여 주시기 바랍니다.":"Firebase is not configured yet. See firebase-config.js.",
   "로그인 중 오류가 발생했습니다.":"Something went wrong during sign-in.",
-  "비밀번호 재설정 메일을 보냈습니다. 메일함을 확인해 주세요.":"A password reset email has been sent. Please check your inbox.",
-  "이메일 인증이 필요합니다. 메일의 링크를 클릭한 뒤 다시 로그인해 주세요.":"Please verify your email — click the link we sent, then sign in again.",
+  "비밀번호 재설정 메일을 보내 드렸습니다. 메일함을 확인하여 주시기 바랍니다.":"A password reset email has been sent. Please check your inbox.",
+  "이메일 인증이 필요합니다. 메일의 링크를 누르신 뒤 다시 로그인하여 주시기 바랍니다.":"Please verify your email — click the link we sent, then sign in again.",
   "인증 메일 다시 보내기":"Resend verification email",
   "인증 메일을 다시 보내 드렸습니다. 메일함을 확인하여 주시기 바랍니다.":"Verification email resent. Please check your inbox.",
-  "이메일을 먼저 입력해 주세요.":"Please enter your email first.",
-  "이메일을 입력해 주세요.":"Please enter your email.",
-  "비밀번호를 입력해 주세요.":"Please enter your password.",
+  "이메일을 먼저 입력하여 주시기 바랍니다.":"Please enter your email first.",
+  "이메일을 입력하여 주시기 바랍니다.":"Please enter your email.",
+  "비밀번호를 입력하여 주시기 바랍니다.":"Please enter your password.",
   "카카오·네이버 로그인은 앱 키 설정이 필요합니다. (firebase-config.js 참고)":"Kakao/Naver sign-in needs app keys to be configured (see firebase-config.js)."
 });
 </script>
@@ -718,7 +718,7 @@ if(!isConfigured){ $('#cfgNote').style.display = 'block'; }
 function mapError(err){
   const c = (err && err.code) || '';
   if(c.includes('api-key') || c.includes('configuration-not-found') || c.includes('operation-not-allowed'))
-    return T('Firebase 설정이 필요합니다. firebase-config.js를 확인하세요.');
+    return T('Firebase 설정이 필요합니다. firebase-config.js를 확인하여 주시기 바랍니다.');
   if(c.includes('invalid-credential') || c.includes('wrong-password') || c.includes('user-not-found'))
     return T('이메일 또는 비밀번호가 올바르지 않습니다.');
   if(c.includes('invalid-email')) return T('이메일 형식이 올바르지 않습니다.');
@@ -731,7 +731,7 @@ function offerResend(){
   let row = $('#vrow');
   if(!row){ row = document.createElement('div'); row.id='vrow'; row.className='auth-note'; errBox.parentNode.insertBefore(row, errBox.nextSibling); }
   row.style.display='block'; row.textContent='';
-  row.appendChild(document.createTextNode(T('이메일 인증이 필요합니다. 메일의 링크를 클릭한 뒤 다시 로그인해 주세요.') + ' '));
+  row.appendChild(document.createTextNode(T('이메일 인증이 필요합니다. 메일의 링크를 누르신 뒤 다시 로그인하여 주시기 바랍니다.') + ' '));
   const a = document.createElement('a'); a.href='#'; a.textContent=T('인증 메일 다시 보내기');
   a.style.cssText='color:var(--brand-blue);font-weight:600'; row.appendChild(a);
   a.addEventListener('click', async ev => {
@@ -744,8 +744,8 @@ function offerResend(){
 $('#emailForm').addEventListener('submit', async e => {
   e.preventDefault(); clearErr();
   const email = $('#email').value.trim(), pw = $('#password').value;
-  if(!email){ showErr(T('이메일을 입력해 주세요.')); $('#email').focus(); return; }
-  if(!pw){ showErr(T('비밀번호를 입력해 주세요.')); $('#password').focus(); return; }
+  if(!email){ showErr(T('이메일을 입력하여 주시기 바랍니다.')); $('#email').focus(); return; }
+  if(!pw){ showErr(T('비밀번호를 입력하여 주시기 바랍니다.')); $('#password').focus(); return; }
   const btn = $('#emailSubmit'); btn.disabled = true;
   try{
     const cred = await signInWithEmailAndPassword(auth, email, pw);
@@ -770,8 +770,8 @@ $('#googleBtn').addEventListener('click', async () => {
 $('#forgotLink').addEventListener('click', async e => {
   e.preventDefault(); clearErr();
   const email = $('#email').value.trim();
-  if(!email){ showErr(T('이메일을 먼저 입력해 주세요.')); $('#email').focus(); return; }
-  try{ await sendResetEmail(email); showInfo(T('비밀번호 재설정 메일을 보냈습니다. 메일함을 확인해 주세요.')); }
+  if(!email){ showErr(T('이메일을 먼저 입력하여 주시기 바랍니다.')); $('#email').focus(); return; }
+  try{ await sendResetEmail(email); showInfo(T('비밀번호 재설정 메일을 보내 드렸습니다. 메일함을 확인하여 주시기 바랍니다.')); }
   catch(err){ showErr(mapError(err)); }
 });
 

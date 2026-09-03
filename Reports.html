@@ -507,7 +507,7 @@ body::before{content:"";position:fixed;inset:0;z-index:-1;pointer-events:none;
     "식품":"Food & Beverage","엔터·미디어":"Entertainment & Media","건설":"Construction",
     "기계·로봇":"Machinery & Robotics","기타":"Others",
     "검색 결과가 없습니다":"No results found",
-    "다른 종목명·티커·업종으로 검색해 보세요.":"Try a different name, ticker, or sector.",
+    "다른 종목명·티커·업종으로 검색해 보시기 바랍니다.":"Try a different name, ticker, or sector.",
     "해당 업종 종목이 없습니다.":"No stocks in this sector.",
     "관심 종목":"Watchlist","관심종목":"Watchlist",
     "코스피":"KOSPI","코스닥":"KOSDAQ","코넥스":"KONEX",
@@ -658,7 +658,7 @@ KOSi18n.register({
   <div class="page-head">
     <div class="ph-kicker">AI REPORTS</div>
     <h1>AI 종목 리포트</h1>
-    <p class="sub">한국 상장사의 AI 분석 리포트를 종목별로 확인하세요. 종목을 선택하면 상세 리포트로 이동합니다.</p>
+    <p class="sub">한국 상장사의 AI 분석 리포트를 종목별로 확인하실 수 있습니다. 종목을 선택하시면 상세 리포트로 이동합니다.</p>
   </div>
 
   <div class="search-row">
@@ -714,7 +714,7 @@ KOSi18n.register({
 
   <div class="empty" id="empty">
     <h2>검색 결과가 없습니다</h2>
-    <p id="emptyMsg">다른 종목명·티커·업종으로 검색해 보세요.</p>
+    <p id="emptyMsg">다른 종목명·티커·업종으로 검색해 보시기 바랍니다.</p>
     <div class="ebtns" id="emptyActs" style="display:none"><button class="btn btn-soft" id="emptyReset">필터 초기화</button></div>
   </div>
 
@@ -1110,7 +1110,7 @@ function render(){
     /* 조건 때문에 빈 것과 검색어 때문에 빈 것은 다음 할 일이 다르다. */
     const on=anyFilter();
     document.getElementById('emptyMsg').textContent=
-      T(on?'조건을 만족하는 종목이 없습니다. 조건을 넓히거나 지워 보세요.':'다른 종목명·티커·업종으로 검색해 보세요.');
+      T(on?'조건을 만족하는 종목이 없습니다. 조건을 넓히거나 지워 보시기 바랍니다.':'다른 종목명·티커·업종으로 검색해 보시기 바랍니다.');
     document.getElementById('emptyActs').style.display=on?'':'none';
     return;
   }
@@ -1187,7 +1187,7 @@ themeBtn.addEventListener('click',()=>applyTheme(root.getAttribute('data-theme')
 /* ===== i18n ===== */
 const REPORTS_DICT={
   "AI 종목 리포트":"AI Stock Reports",
-  "한국 상장사의 AI 분석 리포트를 종목별로 확인하세요. 종목을 선택하면 상세 리포트로 이동합니다.":"Browse AI analysis reports on Korean public companies. Click a stock to open its full report.",
+  "한국 상장사의 AI 분석 리포트를 종목별로 확인하실 수 있습니다. 종목을 선택하시면 상세 리포트로 이동합니다.":"Browse AI analysis reports on Korean public companies. Click a stock to open its full report.",
   "티커 · 종목명 · 업종 검색":"Search ticker · name · industry",
   "개 리포트":" reports","최근 AI 코멘트":"Latest AI Comment","현재가":"Price","정렬":"Sort",
   "종목":"Stock","AI 한줄 요약":"AI Summary","리포트 제목":"Report Title","리포트 준비 중":"Report coming soon","발행일":"Date",
@@ -1196,8 +1196,8 @@ const REPORTS_DICT={
   "필터 추가":"Add filter","필터":"Filters","모두 지우기":"Clear all","적용":"Apply","제거":"Remove",
   "업종":"Industry",
   "최소":"Min","최대":"Max","필터 초기화":"Reset filters",
-  "조건을 만족하는 종목이 없습니다. 조건을 넓히거나 지워 보세요.":"No stocks match these conditions. Try widening or removing a filter.",
-  "다른 종목명·티커·업종으로 검색해 보세요.":"Try a different name, ticker, or industry.",
+  "조건을 만족하는 종목이 없습니다. 조건을 넓히거나 지워 보시기 바랍니다.":"No stocks match these conditions. Try widening or removing a filter.",
+  "다른 종목명·티커·업종으로 검색해 보시기 바랍니다.":"Try a different name, ticker, or industry.",
   "PER 낮은 순":"PER: Low→High","PBR 낮은 순":"PBR: Low→High","배당수익률 높은 순":"Dividend Yield: High→Low",
   "시장":"Market","코스피":"KOSPI","코스닥":"KOSDAQ",
   "시가총액":"Market Cap","배당수익률":"Dividend Yield","매출 성장률":"Revenue Growth",
@@ -1233,6 +1233,6 @@ if(window.KOSi18n) KOSi18n.register(REPORTS_DICT, render);
 </script>
 <script type="module" src="auth-guard.js?v=86361257"></script>
 <script type="module" src="watchlist.js?v=da042232"></script>
-<script type="module" src="auth-state.js?v=88a30d81"></script>
+<script type="module" src="auth-state.js?v=5d0c925a"></script>
 </body>
 </html>

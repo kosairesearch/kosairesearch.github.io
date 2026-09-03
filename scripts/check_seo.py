@@ -149,6 +149,44 @@ for p_ in list(ROOT.glob("*.html")) + list((ROOT / "staging").glob("*.html")):
             empty.append(f"{p_.relative_to(ROOT).as_posix()}:<{tag}>")
 check(not empty, "링크를 걷어낸 자리에 빈 껍데기가 없음", ",".join(empty[:6]))
 
+# 11) 화면 문구의 말끝이 한 가지로 통일돼 있는가
+#
+#     회사가 손님에게 하는 말은 "…하여 주시기 바랍니다" 로 쓴다. 그런데
+#     페이지를 새로 만들 때마다 "…해 주세요", "…하시겠어요?" 가 섞여
+#     들어왔다. 한 화면 안에서 두 말투가 부딪히면 급하게 만든 티가 난다.
+#     실제로 워치리스트 화면 하나에서만 그게 눈에 띄어 205곳을 고쳤다.
+#
+#     주석은 사람끼리 읽는 글이라 검사에서 뺀다.
+CASUAL = re.compile(r"(세요|어요|아요|해요|예요|에요|워요|져요|나요\?|가요\?|까요\?)")
+# '안녕하세요' 는 격식체 편지의 첫 인사로 쓰는 굳은 말이라 예외로 둔다.
+ALLOW = ("안녕하세요",)
+def strip_notes(t):
+    # 여러 줄 주석은 줄바꿈만 남겨 지운다. 통째로 지우면 아래에서 세는
+    # 줄 번호가 밀려서, 엉뚱한 줄을 가리키는 검사 결과가 나온다.
+    blank = lambda m: "\n" * m.group(0).count("\n")
+    t = re.sub(r"<!--.*?-->", blank, t, flags=re.S)   # HTML 주석
+    t = re.sub(r"/\*.*?\*/", blank, t, flags=re.S)    # /* … */
+    t = re.sub(r"(?<![:/])//[^\n]*", "", t)           # // …  (https:// 는 남긴다)
+    return t
+
+casual = []
+targets = (list(ROOT.glob("*.html")) + list(ROOT.glob("*.js"))
+           + list((ROOT / "staging").glob("*.html"))
+           + list((ROOT / "staging").glob("*.js"))
+           + [ROOT / "functions" / "index.js"])
+for p_ in targets:
+    if not p_.exists():
+        continue
+    body = strip_notes(p_.read_text(errors="ignore"))
+    for ln_no, ln in enumerate(body.split("\n"), 1):
+        for a in ALLOW:
+            ln = ln.replace(a, "")
+        m = CASUAL.search(ln)
+        if m:
+            casual.append(f"{p_.relative_to(ROOT).as_posix()}:{ln_no}:{m.group(0)}")
+check(not casual, "화면 문구가 모두 격식체(…하여 주시기 바랍니다)",
+      ", ".join(casual[:6]) + (f" 외 {len(casual)-6}곳" if len(casual) > 6 else ""))
+
 print(f"통과 {len(ok)} · 실패 {len(fail)}\n")
 for m in ok: print("  PASS", m)
 for m in fail: print("  FAIL", m)

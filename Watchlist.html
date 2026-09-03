@@ -399,7 +399,7 @@ body::before{content:"";position:fixed;inset:0;z-index:-1;pointer-events:none;
     "식품":"Food & Beverage","엔터·미디어":"Entertainment & Media","건설":"Construction",
     "기계·로봇":"Machinery & Robotics","기타":"Others",
     "검색 결과가 없습니다":"No results found",
-    "다른 종목명·티커·업종으로 검색해 보세요.":"Try a different name, ticker, or sector.",
+    "다른 종목명·티커·업종으로 검색해 보시기 바랍니다.":"Try a different name, ticker, or sector.",
     "해당 업종 종목이 없습니다.":"No stocks in this sector.",
     "관심 종목":"Watchlist","관심종목":"Watchlist",
     "코스피":"KOSPI","코스닥":"KOSDAQ","코넥스":"KONEX",
@@ -602,7 +602,7 @@ KOSi18n.register({
   <!-- EMPTY -->
   <div class="empty" id="empty">
     <h2>관심 종목이 비어 있습니다</h2>
-    <p>리포트 페이지에서 업종·시가총액·PER 등 조건으로 종목을 찾거나, 종목 상세 페이지에서 워치리스트에 추가해 보세요.</p>
+    <p>리포트 페이지에서 업종·시가총액·PER 등 조건으로 종목을 찾으시거나, 종목 상세 페이지에서 워치리스트에 추가하실 수 있습니다.</p>
     <div class="cta-row">
       <a class="btn btn-primary" href="Reports.html">리포트 둘러보기</a>
     </div>
@@ -738,7 +738,7 @@ document.getElementById('editBtn').addEventListener('click',e=>{
   document.getElementById('clearAllBtn').style.display = on?'inline-flex':'none';
 });
 document.getElementById('clearAllBtn').addEventListener('click',()=>{
-  const msg = EN()? 'Remove all stocks from your watchlist?' : '관심종목을 전체 삭제할까요?';
+  const msg = EN()? 'Remove all stocks from your watchlist?' : '관심 종목을 전체 삭제하시겠습니까?';
   if(!window.confirm(msg)) return;
   if(window.KOSWatch) window.KOSWatch.clear();
   LIST=getWatched();
@@ -779,7 +779,7 @@ const WATCHLIST_DICT={
   " 편집":" Edit"," 완료":" Done","편집":"Edit","전체 삭제":"Clear All",
   "종목":"Stock","현재가":"Price","리포트 제목":"Report Title",
   "관심 종목이 비어 있습니다":"Your watchlist is empty",
-  "리포트 페이지에서 업종·시가총액·PER 등 조건으로 종목을 찾거나, 종목 상세 페이지에서 워치리스트에 추가해 보세요.":"Find stocks on the Reports page by industry, market cap, PER and other conditions, or add them from a stock's detail page.",
+  "리포트 페이지에서 업종·시가총액·PER 등 조건으로 종목을 찾으시거나, 종목 상세 페이지에서 워치리스트에 추가하실 수 있습니다.":"Find stocks on the Reports page by industry, market cap, PER and other conditions, or add them from a stock's detail page.",
   "리포트 둘러보기":"Browse reports",
   "제거":"Remove",
   // sectors
@@ -798,6 +798,6 @@ if(window.KOSi18n) KOSi18n.register(WATCHLIST_DICT, render);
 </script>
 <script type="module" src="auth-guard.js?v=86361257"></script>
 <script type="module" src="watchlist.js?v=da042232"></script>
-<script type="module" src="auth-state.js?v=88a30d81"></script>
+<script type="module" src="auth-state.js?v=5d0c925a"></script>
 </body>
 </html>

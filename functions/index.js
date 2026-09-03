@@ -758,7 +758,7 @@ exports.socialLogin = onCall(
       const other = await findOtherAccountByEmail(admin.firestore(), p.email, uid);
       if(other){
         throw new HttpsError("already-exists",
-          `이 주소는 이미 ${other.label}으로 등록되어 있습니다. 그 방법으로 로그인해 주세요.`, { method: other.method });
+          `이 주소는 이미 ${other.label}으로 등록되어 있습니다. 그 방법으로 로그인하여 주시기 바랍니다.`, { method: other.method });
       }
     }
 
@@ -1243,9 +1243,9 @@ function verifyMail(name, link, lang){
   }
   const hi = name ? `${esc(name)}님, ` : "";
   return {
-    subject: "KOSAI 이메일 주소를 인증해 주세요",
-    html: mailLayout({ lang, heading: "이메일 주소를 인증해 주세요",
-      intro: `${hi}KOSAI 가입을 환영합니다. 아래 버튼을 눌러 이메일 인증을 완료하면 모든 기능을 이용하실 수 있어요.`,
+    subject: "KOSAI 이메일 주소 인증 안내",
+    html: mailLayout({ lang, heading: "이메일 주소 인증",
+      intro: `${hi}KOSAI 가입을 환영합니다. 아래 버튼을 눌러 이메일 인증을 완료하면 모든 기능을 이용하실 수 있습니다.`,
       btnText: "이메일 인증하기", link,
       outro: "본인이 가입하지 않았다면 이 메일을 무시하셔도 됩니다." })
   };
@@ -1263,8 +1263,8 @@ function resetMail(link, lang){
   }
   return {
     subject: "KOSAI 비밀번호 재설정 안내",
-    html: mailLayout({ lang, heading: "비밀번호를 재설정하세요",
-      intro: "비밀번호 재설정 요청을 받았습니다. 아래 버튼을 눌러 새 비밀번호를 설정해 주세요.",
+    html: mailLayout({ lang, heading: "비밀번호 재설정",
+      intro: "비밀번호 재설정 요청을 받았습니다. 아래 버튼을 눌러 새 비밀번호를 설정하여 주시기 바랍니다.",
       btnText: "비밀번호 재설정하기", link,
       outro: "본인이 요청하지 않았다면 이 메일을 무시하셔도 됩니다. 비밀번호는 변경되지 않으며 계정은 안전합니다." })
   };
@@ -1462,7 +1462,7 @@ exports.submitForm = onCall(
     if (d.hp) return { ok: true };                       // 허니팟에 값 → 봇, 조용히 성공
     const kind = d.kind === "feedback" ? "feedback" : "contact";
     const message = String(d.message || "").trim().slice(0, 5000);
-    if (message.length < 2) throw new HttpsError("invalid-argument", "내용을 입력해 주세요.");
+    if (message.length < 2) throw new HttpsError("invalid-argument", "내용을 입력하여 주시기 바랍니다.");
     const name = String(d.name || "").trim().slice(0, 80);
     const email = String(d.email || "").trim().slice(0, 120);
     const category = String(d.category || "").trim().slice(0, 40);
@@ -1728,7 +1728,7 @@ exports.recordSignupConsent = onCall({ region: REGION, cors: true }, async (req)
     const other = await findOtherAccountByEmail(db, email, uid);
     if (other) {
       throw new HttpsError("already-exists",
-        `이 주소는 이미 ${other.label}으로 등록되어 있습니다. 그 방법으로 로그인해 주세요.`, { method: other.method });
+        `이 주소는 이미 ${other.label}으로 등록되어 있습니다. 그 방법으로 로그인하여 주시기 바랍니다.`, { method: other.method });
     }
   }
 
@@ -3629,7 +3629,7 @@ exports.watchMorningBrief = onSchedule(
     if(runs === null){
       await alertOps("브리핑 상태를 확인하지 못했습니다", [
         "08:00 점검이 GitHub 실행 기록을 읽지 못했습니다.",
-        "브리핑이 나갔는지는 직접 확인해 주세요.",
+        "브리핑이 나갔는지는 직접 확인하여 주시기 바랍니다.",
       ]);
       return;
     }
@@ -3644,7 +3644,7 @@ exports.watchMorningBrief = onSchedule(
     if(!good){
       await alertOps("모닝 브리핑이 실패했습니다", [
         `${today} 실행 ${runs.length}건이 모두 실패했습니다.`,
-        "생성이나 발행 단계에서 멈춘 것입니다. 실행 기록을 확인해 주세요.",
+        "생성이나 발행 단계에서 멈춘 것입니다. 실행 기록을 확인하여 주시기 바랍니다.",
       ]);
     }
   }
