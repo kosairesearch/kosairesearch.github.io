@@ -83,6 +83,13 @@ jobs:
           REPORT_BACKFILL: ${{ inputs.backfill }}
           RECOVER_BATCH_ID: ${{ inputs.recover_batch_id }}
           BATCH_MAX_WAIT_SEC: '18000'
+          # auto 가 주문 뒤 그 자리에서 기다리는 시간. 30분마다 돌게 해 둔 collect_batch·
+          # 워치독 크론이 실제로는 4시간 간격으로만 뜬다(00:41·05:25·09:49·13:57 —
+          # GitHub 가 혼잡 시간대에 예약 실행을 미룬다). 100건 배치는 대개 한 시간
+          # 안에 끝나므로 여기서 한 시간까지 기다리면 대부분 그 자리에서 회수되고
+          # self-chain 이 바로 다음 청크로 이어진다 — 크론 간격에 매이지 않는다.
+          # 안 끝난 배치는 상태 파일이 커밋돼 있으니 collect_batch 가 나중에 받는다.
+          BATCH_SHORT_WAIT_SEC: '3600'
           DUMP_EPS: ${{ inputs.dump_eps }}
         id: run
         run: |
