@@ -898,6 +898,53 @@ def collect_quant(dart, ticker, krx_row, stock):
         f"({'가중평균' if wavg else '발행총수'}) = BPS {bps_q}")
     pbr_q = round(price / bps_q, 4) if (bps_q and price) else None   # 위와 같은 이유
 
+    # ── 분모가 맞는지 KRX 에게 물어본다 ──────────────────────────────────
+    # EPS 와 BPS 를 같은 분모(가중평균 유통주식수)로 나누고 있다. EPS 는 그게
+    # 맞다 — 한 해 동안 번 돈이니 그 기간의 평균 주식수로 나눠야 한다.
+    #
+    # BPS 는 아니다. 자본은 '지금 이 시점' 값이라 '지금 이 시점' 주식수로
+    # 나눠야 한다. 연중에 주식을 크게 늘린 회사는 둘이 크게 벌어진다.
+    #
+    #     태영건설  발행총수 298,240,052 · 가중평균 159,368,756 (1.87배)
+    #               우리 BPS 3,673 · KRX 공식 BPS 2,037
+    #
+    #     자본을 절반의 주식수로 나눠 BPS 가 1.8배가 됐다. BPS 가 크면 PBR 은
+    #     그만큼 작아진다 — 실제보다 싸 보인다. 2,563종목 중 58종목이 그랬다.
+    #
+    # 그렇다고 '기말 주식수를 써라' 로 바꾸면 안 된다. KRX 가 무엇으로 나누는지
+    # 재 봤더니 한 가지가 아니었다 — 판별력 있는 523종목에서 가중평균 382건,
+    # 발행총수 119건이었다. KRX 는 '발행주식수 − 자기주식' 을 쓰는데, 자기주식이
+    # 많으면 가중평균과 비슷해지고 연중 증자하면 발행총수와 비슷해진다. 우리는
+    # 자기주식 수를 따로 갖고 있지 않아 미리 알 수가 없다.
+    #
+    # 그래서 규칙으로 정하지 않고 거꾸로 나눠 물어본다.
+    #
+    #     KRX 가 나눈 주식수 = 최근 결산 지배지분 ÷ KRX 가 공표한 BPS
+    #
+    # 역산한 수가 우리 후보 중 하나와 3% 안에서 맞고 우리 분모는 8% 넘게
+    # 벗어날 때만 바꾼다. 분자(분기말 자본)는 그대로 둔다 — 그게 KRX 보다
+    # 나은 점이다.
+    if bps_q and bps_krx_ref and bps_krx_ref > 0 and price and fy_row:
+        _fy_eqo = fy_row.get("equity_owner") or fy_row.get("equity")
+        if _fy_eqo and _fy_eqo > 0 and abs(bps_q / bps_krx_ref - 1) > 0.15:
+            _implied = _fy_eqo / bps_krx_ref
+            _cands = {"발행총수": total_sh, "가중평균": wavg, "시장주식수": sh}
+            _cands = {k: v for k, v in _cands.items() if v}
+            if _cands:
+                _best = min(_cands, key=lambda k: abs(_cands[k] / _implied - 1))
+                _gap_best = abs(_cands[_best] / _implied - 1)
+                _gap_ours = abs(bps_denom / _implied - 1)
+                if _gap_best <= 0.03 and _gap_ours > 0.08:
+                    _new = int(eqo_q / _cands[_best])
+                    if _new > 0 and abs(_new / bps_krx_ref - 1) < abs(bps_q / bps_krx_ref - 1):
+                        log(f"  · BPS 분모를 바꾼다: {'가중평균' if wavg else '발행총수'} "
+                            f"{bps_denom:,} → {_best} {_cands[_best]:,} "
+                            f"(KRX 공식 BPS {bps_krx_ref:,.0f} 를 재현하는 주식수). "
+                            f"BPS {bps_q:,} → {_new:,}")
+                        bps_q = _new
+                        bps_denom = _cands[_best]
+                        pbr_q = round(price / bps_q, 4)
+
     # ROE(TTM) = 최근 4개 분기 지배순이익 ÷ 평균 지배자본(TTM 시작시점~끝시점) — 토스와 정합
     fy_eqo = fy_row.get("equity_owner") if fy_row else None       # 이미 단위보정됨(annual 일괄)
 

@@ -57,6 +57,19 @@ run "접근 규칙"     bash scripts/check_rules.sh
 # 종류의 버그다. 올리기 전에 여기서 잡는다.
 run "캐시 주소"     python3 scripts/stamp_assets.py --check
 
+echo "── 리포트 숫자 ──"
+# 항등식만 보면 틀린 값끼리 맞아떨어지는 것을 못 잡는다. 삼성생명 BPS 가
+# KRX 공식값의 2.3배인데 PBR×BPS=주가 는 통과했다. 그래서 같은 값을 서로
+# 다른 재료로 만들어 맞대 본다 — 업종별 173종목 표본으로 본다.
+run "숫자 삼각대조" python3 scripts/verify_numbers.py --quiet --max 8
+# 검사가 '0건' 을 내면 멀쩡한 것과 검사가 헛도는 것이 똑같이 생겼다.
+# 값을 일부러 망가뜨려 넣고 진짜로 걸리는지 확인한다.
+run "검증기 자체"   python3 scripts/tests/verify_numbers_test.py
+# 생성기는 DART·KRX 를 부르고 요금이 나가서 통째로 못 돌린다. 그래서 분모를
+# 되묻는 블록만 원문에서 꺼내 실제 값으로 돌려 본다 — 틀렸던 종목은 고쳐지고
+# 맞았던 종목(삼성생명)은 안 건드리는지.
+run "생성기 분모"   python3 scripts/tests/bps_denominator_test.py
+
 echo
 if [ $bad -eq 0 ]; then
   echo "전부 통과."

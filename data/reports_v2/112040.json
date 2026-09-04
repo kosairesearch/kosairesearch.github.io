@@ -341,8 +341,8 @@
    "wavg_shares": 24563887,
    "per": 8.1,
    "eps": 1907,
-   "pbr": 0.96,
-   "bps": 16091,
+   "pbr": 1.321,
+   "bps": 11643,
    "roe_ttm": 14.0,
    "ttm_window": "2025Q3~2026Q2",
    "ttm_np_owner": 55570516994,
@@ -350,7 +350,8 @@
    "bps_krx": 12033.0,
    "basis": "PER·EPS·PBR·BPS 모두 자체 산출(네이버·토스와 동일 방식) · 배당은 DART 공시 주당현금배당금(보완:KRX) ÷ 현재가",
    "dps": 0.0,
-   "div": 0.0
+   "div": 0.0,
+   "bps_denom_fixed": "발행총수"
   }
  }
 }
