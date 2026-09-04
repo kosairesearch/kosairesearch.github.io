@@ -13,6 +13,7 @@
 
     python3 scripts/check_sectors.py
 """
+import datetime
 import io
 import json
 import re
@@ -59,31 +60,58 @@ check("github.event_name == 'schedule'" in wf, "예정 실행은 항상 전 업�
 #    업종 분석에 새로 들어갈 사실은 공시로만 들어온다. 공시 전에 돌리면
 #    새 숫자를 못 본 글을 다음 분기까지 걸어 둔다.
 #
-#      사업보고서 3/31 → 4월 · 1분기 5/15 → 6월
-#      반기 8/14 → 9월 · 3분기 11/14 → 12월
+#      사업보고서 3/31 →  4월 7일 · 1분기 5/15 →  5월 21일
+#      반기       8/14 →  8월 21일 · 3분기 11/14 → 11월 21일
+#
+#    정기보고서 마감이 3/31 · 5/15 · 8/14 · 11/14 이라 4월만 날짜가 다르다.
+#    한 줄로 묶으면 어느 한쪽이 반드시 어긋나므로 크론이 두 줄이다.
+DEADLINE = {4: (3, 31), 5: (5, 15), 8: (8, 14), 11: (11, 14)}   # 실행달 → 그 앞 공시 마감
+
 crons = re.findall(r"-\s*cron:\s*'([^']+)'", wf)
-check(len(crons) == 1, "크론이 하나다", f"{len(crons)}개")
-if crons:
-    parts = crons[0].split()
-    check(len(parts) == 5, "크론이 5칸이다", crons[0])
-    if len(parts) == 5:
-        mi, ho, dom, mon, dow = parts
-        months = sorted(int(x) for x in mon.split(",") if x.isdigit())
-        check(months == [4, 6, 9, 12], "공시가 끝난 달에 돈다(4·6·9·12월)", str(months))
-        # UTC 15시 이후로 잡으면 한국 날짜가 하루 밀린다
-        check(ho.isdigit() and 0 <= int(ho) <= 14,
-              "UTC 시각이 한국 날짜를 밀지 않는다(0~14시)", f"{ho}시")
-        check(dom.isdigit() and 1 <= int(dom) <= 28,
-              "실행일이 모든 달에 있는 날짜다", f"{dom}일")
+check(bool(crons), "크론이 있다")
+runs = []                                   # (달, 일) 목록
+for c in crons:
+    parts = c.split()
+    check(len(parts) == 5, "크론이 5칸이다", c)
+    if len(parts) != 5:
+        continue
+    mi, ho, dom, mon, dow = parts
+    # UTC 15시 이후로 잡으면 한국 날짜가 하루 밀린다
+    check(ho.isdigit() and 0 <= int(ho) <= 14,
+          f"UTC 시각이 한국 날짜를 밀지 않는다(0~14시) — {c}", f"{ho}시")
+    check(dom.isdigit() and 1 <= int(dom) <= 28,
+          f"실행일이 모든 달에 있는 날짜다 — {c}", f"{dom}일")
+    if dom.isdigit():
+        for m in mon.split(","):
+            if m.isdigit():
+                runs.append((int(m), int(dom)))
+runs.sort()
+
+check(sorted(m for m, _ in runs) == sorted(DEADLINE),
+      "분기마다 한 번, 공시가 있는 달에 돈다", str([m for m, _ in runs]))
+
+# 마감 뒤 3~14일 사이. 당일은 해설이 없어 이르고, 3주는 그냥 낡는 시간이다.
+for m, d in runs:
+    if m not in DEADLINE:
+        continue
+    dm, dd = DEADLINE[m]
+    gap = (datetime.date(2026, m, d) - datetime.date(2026, dm, dd)).days
+    check(3 <= gap <= 14, f"{m}월 실행이 공시 마감 뒤 알맞게 붙는다", f"{gap}일 뒤")
 
 # ── 4) 화면 안내가 실제 일정과 같은가 ────────────────────────
 #
 #    표에 적힌 날짜와 크론이 어긋나면 사이트가 거짓말을 한다. 코드를
-#    고치고 안내를 잊는 쪽으로 어긋나므로, 코드에서 날짜를 읽어 맞춰 본다.
-if crons and len(crons[0].split()) == 5:
-    dom = crons[0].split()[2]
-    months = [int(x) for x in crons[0].split()[3].split(",") if x.isdigit()]
-    want = "·".join(str(m) for m in sorted(months)) + f"월 {dom}일"
+#    고치고 안내를 잊는 쪽으로 어긋나므로, 크론에서 날짜를 읽어 맞춰 본다.
+#
+#    같은 날에 도는 달은 묶어 적는다 — 4·6·9·12월 5일 처럼 쓰던 방식 그대로다.
+#      {(4,7),(5,21),(8,21),(11,21)}  →  "4월 7일 · 5·8·11월 21일"
+if runs:
+    by_day = {}
+    for m, d in runs:
+        by_day.setdefault(d, []).append(m)
+    want = " · ".join(
+        "·".join(str(m) for m in sorted(ms)) + f"월 {d}일"
+        for d, ms in sorted(by_day.items(), key=lambda kv: min(kv[1])))
     for p in ("About.html", "staging/About.html"):
         t = (ROOT / p).read_text(encoding="utf-8")
         row = re.search(r"<tr><td><b>업종 분석</b>.*?</tr>", t, re.S)
