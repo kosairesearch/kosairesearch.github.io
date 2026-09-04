@@ -93,7 +93,7 @@ async function openWithdrawModal(){
   ov.innerHTML = `
     <div class="wd-card" role="dialog" aria-modal="true">
       <div class="wd-h">${T("정말 탈퇴하시겠습니까?")}</div>
-      <div class="wd-em">${email}</div>
+      <div class="wd-em"></div>
       <p class="wd-warn">${T("계정과 저장된 관심종목이 영구 삭제되며, 되돌릴 수 없습니다.")}</p>
       ${sub ? `<div class="wd-sub">
         <b>${T("이용 중인 구독이 있습니다")}</b>
@@ -111,6 +111,7 @@ async function openWithdrawModal(){
         <button type="button" class="wd-go" disabled>${T("탈퇴하기")}</button>
       </div>
     </div>`;
+  ov.querySelector('.wd-em').textContent = email;
   document.body.appendChild(ov);
   const ack = ov.querySelector('#wdAck'), type = ov.querySelector('#wdType'), go = ov.querySelector('.wd-go');
   const sync = () => { go.disabled = !(ack.checked && type.value.trim() === WORD); };
@@ -314,9 +315,9 @@ function renderLoggedIn(wrap, user){
   const initial = (email.trim()[0] || 'U').toUpperCase();
   wrap.innerHTML =
     `<div class="acct">
-       <button class="acct-btn" type="button" aria-label="account"><span class="avatar">${initial}</span></button>
+       <button class="acct-btn" type="button" aria-label="account"><span class="avatar"></span></button>
        <div class="menu" role="menu">
-         <div class="em">${email}</div>
+         <div class="em"></div>
          <button type="button" class="settings">설정</button>
          <button type="button" class="logout">로그아웃</button>
        </div>
@@ -326,6 +327,8 @@ function renderLoggedIn(wrap, user){
      맞는지 고민하게 되고, 나중에 한쪽만 고치게 된다. 여기는 계정 메뉴이지
      설정 목차가 아니다 — 설정으로 보내고 끝낸다.
      탈퇴 화면 자체는 이 파일이 계속 갖는다(window.KOSAccount.withdraw). */
+  wrap.querySelector('.avatar').textContent = initial;
+  wrap.querySelector('.em').textContent = email;
   const acct = wrap.querySelector('.acct');
   wrap.querySelector('.acct-btn').addEventListener('click', e => { e.stopPropagation(); acct.classList.toggle('open'); });
   document.addEventListener('click', () => acct.classList.remove('open'));
@@ -353,7 +356,8 @@ function renderMobileAuth(user){
   if(user){
     const email = user.email || (user.displayName || '');
     // 데스크톱 메뉴와 같은 구성이다 — 한쪽에만 항목이 더 있으면 안내가 갈린다.
-    el.innerHTML = `<div class="m-em">${email}</div><button type="button" class="m-settings">설정</button><button type="button" class="m-logout">로그아웃</button>`;
+    el.innerHTML = `<div class="m-em"></div><button type="button" class="m-settings">설정</button><button type="button" class="m-logout">로그아웃</button>`;
+    el.querySelector('.m-em').textContent = email;
     el.querySelector('.m-settings').addEventListener('click', () => { mm.classList.remove('open'); openSettings(); });
     el.querySelector('.m-logout').addEventListener('click', async () => { try{ await signOut(auth); }catch(e){} location.href = 'Home.html'; });
   } else {

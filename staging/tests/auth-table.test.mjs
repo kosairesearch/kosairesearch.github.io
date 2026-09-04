@@ -21,7 +21,7 @@
    실행
      node staging/tests/auth-table.test.mjs
    ============================================================ */
-import { readFileSync } from "node:fs";
+import { readFileSync, existsSync } from "node:fs";
 import { fileURLToPath } from "node:url";
 import { dirname, join } from "node:path";
 
@@ -83,11 +83,19 @@ eq(nextParam(), "Watchlist.html", "nextParam — 보통 페이지는 자기를 �
    값 하나만 새도 문 하나가 열린다. 파일을 훑어 확인한다. */
 console.log("\n── ② 이동하는 자리가 전부 자물쇠를 거치는가 ──");
 {
-  const sl = read("social-login.js");
-  ok(/location\.href\s*=\s*safeNext\(saved\.next\)/.test(sl),
-     "social-login.js — 소셜 로그인 뒤 이동이 safeNext 를 거친다");
-  ok(!/location\.href\s*=\s*saved\.next/.test(sl),
-     "social-login.js — 검사 없이 넘기던 옛 줄이 남지 않았다");
+  /* 스테이징도 같이 본다. kosai.kr/staging/ 은 같은 도메인이라, 거기 열린
+     문은 실사이트에 열린 문과 다르지 않다. noindex 와 robots 는 검색만
+     막을 뿐 링크를 직접 보내는 것은 못 막는다.
+
+     실제로 여기를 안 보고 있었다 — 실사이트의 열린 리다이렉트를 고치고도
+     스테이징 사본에는 그대로 남아 있었다. */
+  for (const dir of ["", "staging/"]) {
+    const sl = read(dir + "social-login.js");
+    ok(/location\.href\s*=\s*safeNext\(saved\.next\)/.test(sl),
+       `${dir || "실사이트/"}social-login.js — 소셜 로그인 뒤 이동이 safeNext 를 거친다`);
+    ok(!/location\.href\s*=\s*saved\.next/.test(sl),
+       `${dir || "실사이트/"}social-login.js — 검사 없이 넘기던 옛 줄이 남지 않았다`);
+  }
 
   const aa = read("auth-action.html");
   ok(/const continueUrl = safeNext\(/.test(aa),
@@ -238,32 +246,79 @@ for (const [when, then, check] of SPEC) ok(check(), `${when} → ${then}`);
 /* ══════════════════════════════════════════════════════════
    5) 구조 — 같은 실수가 다시 들어오지 못하게
    ══════════════════════════════════════════════════════════ */
-console.log("\n── ⑤ 같은 실수가 다시 들어올 자리 ──");
+console.log("\n── ⑤ 실사이트와 스테이징이 갈라져 있지 않은가 ──");
 {
-  const files = ["Login.html", "Signup.html", "Consent.html", "auth-action.html",
-                 "auth-state.js", "auth-guard.js", "social-login.js", "consent.js"];
-  /* 주소 표시줄에서 온 값이 검사 없이 이동에 쓰이면 안 된다 */
-  const leaks = [];
-  for (const f of files) {
-    const t = read(f);
-    const re = /location\.(?:href|replace)\s*\(?\s*=?\s*([^;\n]+)/g;
-    let m;
-    while ((m = re.exec(t))) {
-      const arg = m[1];
-      if (/^['"`]/.test(arg.trim())) continue;              // 글자 그대로 — 안전
-      if (/safeNext|goNext|NEXT\b|encodeURIComponent|url\b/.test(arg)) continue;
-      leaks.push(`${f}: ${arg.trim().slice(0, 48)}`);
-    }
+  /* 같은 도메인의 같은 코드다. 한쪽만 고치면 나머지가 남고, 남은 쪽은
+     사람이 그 주소를 밟기 전까지 아무도 모른다. 실사이트의 열린
+     리다이렉트를 고치고도 스테이징에는 그대로 있었다. */
+  for (const f of ["social-login.js", "auth-util.js", "auth-guard.js",
+                   "auth-emails.js", "consent.js"]) {
+    let a = null, b = null;
+    try { a = read(f); } catch (_) {}
+    try { b = read("staging/" + f); } catch (_) {}
+    ok(a !== null, `실사이트에 ${f} 가 있다`);
+    ok(b !== null, `스테이징에 ${f} 가 있다`);
+    if (a !== null && b !== null) ok(a === b, `${f} — 두 곳이 한 글자까지 같다`);
   }
-  ok(leaks.length === 0, "이동에 쓰이는 값이 전부 글자이거나 자물쇠를 거친다",
-     leaks.slice(0, 3).join(" · "));
+}
 
-  /* 사용자가 정한 글자를 마크업으로 이어 붙이지 않는다 */
+console.log("\n── ⑥ 같은 실수가 다시 들어올 자리 ──");
+{
+  /* 주석은 빼고 본다. 자물쇠를 왜 뒀는지 설명한 주석에 공격 예시가
+     그대로 적혀 있어서, 안 빼면 그 설명문이 걸린다. */
+  const strip = t => t
+    .replace(/<!--[\s\S]*?-->/g, "")
+    .replace(/\/\*[\s\S]*?\*\//g, "")
+    .replace(/(?<![:/])\/\/[^\n]*/g, "");
+
+  const files = ["Login.html", "Signup.html", "Consent.html", "auth-action.html",
+                 "auth-state.js", "auth-guard.js", "social-login.js", "consent.js",
+                 "auth-util.js",
+                 "staging/Login.html", "staging/Signup.html",
+                 "staging/auth-state.js", "staging/auth-guard.js",
+                 "staging/social-login.js", "staging/consent.js",
+                 "staging/auth-util.js"]
+    .filter(f => existsSync(join(ROOT, f)));
+
+  /* 진짜 위험은 '주소에서 읽은 next 가 검사 없이 이동에 쓰이는 것' 이다.
+     그래서 이동하는 줄을 세는 대신, next 를 읽는 파일마다 자물쇠가 함께
+     있는지를 본다 — 자물쇠 이름이 무엇이든(safeNext·safe·NEXT) 걸린다.
+     이름 목록으로 거르면 변수 이름을 바꾸는 순간 헛경보가 난다(실제로
+     staging/Login.html 의 safe 가 그렇게 걸렸다). */
+  const unguarded = [];
+  for (const f of files) {
+    const t = strip(read(f));
+    const readsNext = /\.get\(\s*["']next["']\s*\)/.test(t);
+    if (!readsNext) continue;
+
+    /* 목적지가 글자로 시작하면 갈 곳이 고정이다.
+         location.replace("Consent.html?next=" + encodeURIComponent(nx))
+       여기서 nx 는 목적지가 아니라 다음 화면에 넘겨 주는 값이고, 받는
+       쪽(Consent.html)이 제 자리에서 거른다. 이런 것까지 잡으면 헛경보다. */
+    const dyn = [...t.matchAll(/location\.(?:href|replace)\s*(?:=|\()\s*([^;\n]+)/g)]
+      .map(m => m[1].trim())
+      .filter(a => !/^['"`]/.test(a));
+    if (!dyn.length) continue;
+
+    /* 자물쇠 이름은 무엇이든 좋다 — 공용 safeNext 를 쓰든, 제 자리에서
+       '우리 사이트의 .html 하나' 만 통과시키는 정규식을 쓰든.
+       이름 목록으로 거르면 변수 이름을 바꾸는 순간 헛경보가 난다
+       (실제로 staging/Login.html 의 safe 가 그렇게 걸렸다). */
+    const guarded = /safeNext|goNext/.test(t) || (/\.html\(/.test(t) && /\.test\(/.test(t));
+    if (!guarded) unguarded.push(f + " → " + dyn[0].slice(0, 40));
+  }
+  ok(unguarded.length === 0,
+     "주소에서 읽은 next 가 검사 없이 이동에 쓰이지 않는다", unguarded.join(" · "));
+
+  /* 사용자가 정한 글자를 마크업으로 이어 붙이지 않는다.
+     카카오는 이메일 대신 닉네임이 들어오는데, 닉네임은 사용자가 제공자
+     쪽에서 마음대로 정한다. 실사이트 계정 메뉴를 고치고도 탈퇴 확인
+     창을 빠뜨렸었다 — 자리가 넷이었다. */
   const inj = [];
   for (const f of files) {
     for (const [i, l] of read(f).split("\n").entries()) {
       if (!/innerHTML\s*=/.test(l)) continue;
-      if (/\$\{\s*(email|name|displayName|nick|user\.|msg|continueUrl|href)/.test(l))
+      if (/\$\{\s*(email|name|displayName|nick|user\.|msg|continueUrl|href|initial)/.test(l))
         inj.push(`${f}:${i + 1}`);
     }
   }

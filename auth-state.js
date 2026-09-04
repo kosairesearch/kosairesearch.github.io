@@ -63,7 +63,7 @@ function openWithdrawModal(){
   ov.innerHTML = `
     <div class="wd-card" role="dialog" aria-modal="true">
       <div class="wd-h">${T("정말 탈퇴하시겠습니까?")}</div>
-      <div class="wd-em">${email}</div>
+      <div class="wd-em"></div>
       <p class="wd-warn">${T("계정과 저장된 관심종목이 영구 삭제되며, 되돌릴 수 없습니다.")}</p>
       <div class="wd-q">${T("떠나시는 이유를 알려주시면 개선에 반영하겠습니다 (복수 선택 가능)")}</div>
       <div class="wd-reasons">${WD_REASONS.map((r)=>
@@ -76,6 +76,7 @@ function openWithdrawModal(){
         <button type="button" class="wd-go" disabled>${T("탈퇴하기")}</button>
       </div>
     </div>`;
+  ov.querySelector('.wd-em').textContent = email;
   document.body.appendChild(ov);
   const ack = ov.querySelector('#wdAck'), type = ov.querySelector('#wdType'), go = ov.querySelector('.wd-go');
   const sync = () => { go.disabled = !(ack.checked && type.value.trim() === WORD); };
