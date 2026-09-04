@@ -728,6 +728,124 @@ M.collect_all_quant(tgt, {"dataDate": "20260904"}, allow_reuse=True)
 ok(len(called) == 3, "REPORT_NO_REUSE=1 로 재사용을 끌 수 있다", str(called))
 os.environ.pop("REPORT_NO_REUSE")
 
+
+print()
+print("⑪ 구조 복구 — 돈이 나간 글을 구조 하나 때문에 버리지 않는다")
+GOODREP = lambda: json.loads(report_text("005930")[len("===JSON_START==="):-len("===JSON_END===")])
+
+# (a) 항목 안 곁키(body_en_placeholder) — 모델을 부르지 않고 공짜로 산다
+r = GOODREP()
+r["risks"][0] = {"cat": {"ko": "규제", "en": "Regulation"},
+                 "body": {"ko": "r" * 20, "en": ""}, "body_en_placeholder": "R" * 20}
+ok(not M.valid_v2(r, quiet=True), "곁키만 있으면 검증 실패")
+n = M.normalize_shape(r)
+ok(n == 1 and M.valid_v2(r, quiet=True), "곁키를 제자리로 옮겨 되살린다", f"n={n}")
+ok(r["risks"][0]["body"]["en"] == "R" * 20 and "body_en_placeholder" not in r["risks"][0], "곁키는 지워진다")
+
+# (b) 최상위 bull_en 목록 흡수
+r = GOODREP()
+r["bull"] = [{"title": {"ko": "가", "en": ""}, "body": {"ko": "b" * 20, "en": ""}} for _ in range(3)]
+r["bull_en"] = [{"title": "Up", "body": "B" * 20} for _ in range(3)]
+n = M.normalize_shape(r)
+ok(n == 6 and M.valid_v2(r, quiet=True) and "bull_en" not in r, "bull_en 목록을 항목마다 흡수", f"n={n}")
+
+# (c) 길이가 다르면 짝으로 인정하지 않는다 — 엉뚱한 짝짓기가 더 나쁘다
+r = GOODREP()
+r["bull"] = [{"title": {"ko": "가", "en": ""}, "body": {"ko": "b" * 20, "en": ""}} for _ in range(3)]
+r["bull_en"] = [{"title": "Up", "body": "B" * 20}]
+ok(M.normalize_shape(r) == 0 and not M.valid_v2(r, quiet=True), "길이가 다른 _en 목록은 쓰지 않는다")
+
+# (d) 문자열만 온 자리는 {ko, en:""} 로 감싼다 → 영문 채우기가 그 자리를 찾는다
+r = GOODREP()
+r["bull"][0] = {"title": "가나다", "body": "라마바" * 8}
+M.normalize_shape(r)
+ok(r["bull"][0]["title"] == {"ko": "가나다", "en": ""}, "문자열만 온 자리를 감싼다", str(r["bull"][0]["title"]))
+ok(M.valid_v2(r, en=False, quiet=True), "감싸고 나면 한국어 검증은 통과")
+
+# (e) 이미 영문이 있으면 곁키가 덮어쓰지 못한다
+r = GOODREP()
+r["risks"][0] = {"cat": {"ko": "규제", "en": "Regulation"},
+                 "body": {"ko": "r" * 20, "en": "KEEP" * 5}, "body_en_note": "OVER" * 5}
+M.normalize_shape(r)
+ok(r["risks"][0]["body"]["en"] == "KEEP" * 5, "제자리 값이 곁키보다 우선", r["risks"][0]["body"]["en"])
+
+# (f) 메타 키 name_en 은 곁키로 오인하지 않는다
+r = GOODREP(); r["name_en"] = "Samsung Electronics"
+M.normalize_shape(r)
+ok(r.get("name_en") == "Samsung Electronics", "name_en 은 건드리지 않는다")
+
+# (g) 스키마에 없는 키는 걷어낸다 — 저장소에 쓰레기를 남기지 않는다
+r = GOODREP(); r["bull"][0]["why"] = "쓸데없음"; r["verdict"]["score"] = 7; r["lead"]["note"] = "x"
+M.normalize_shape(r)
+ok("why" not in r["bull"][0] and "score" not in r["verdict"] and "note" not in r["lead"], "쓰레기 키 제거")
+
+# (h) en=False 검증 — 영문만 빠진 글과 통째로 잘린 글을 가른다
+r = GOODREP()
+for x in r["bull"]:
+    x["title"]["en"] = ""; x["body"]["en"] = ""
+ok(not M.valid_v2(r, quiet=True) and M.valid_v2(r, en=False, quiet=True), "영문만 빠진 글은 en=False 로 통과")
+trunc = GOODREP(); del trunc["verdict"]; del trunc["checkpoints"]
+ok(not M.valid_v2(trunc, en=False, quiet=True), "잘린 글은 en=False 로도 실패 — 돈을 더 쓰지 않는다")
+short = GOODREP(); short["outlook"]["en"] = "too short"
+ok(M.valid_v2(short, en=False, quiet=True) and not M.valid_v2(short, quiet=True), "영문 분량 부족도 en=False 로는 통과")
+
+# (i) fill_missing_en — 값싼 모델이 돌려준 영문을 제자리에, 순서대로 넣는다
+class FillMsgs:
+    def __init__(self): self.sent = []
+    def create(self, **kw):
+        self.sent.append(kw)
+        payload = json.loads(kw["messages"][0]["content"].split("\n\n", 1)[1])
+        out = {k: f"EN{k}" for k in payload}
+        return types.SimpleNamespace(content=[types.SimpleNamespace(
+            type="text", text="===JSON_START===" + json.dumps(out) + "===JSON_END===")])
+fm = FillMsgs()
+cl_fill = types.SimpleNamespace(messages=fm)
+r = GOODREP()
+for x in r["bull"]:
+    x["title"]["en"] = ""; x["body"]["en"] = ""
+n = M.fill_missing_en(cl_fill, r)
+ok(n == 6 and M.valid_v2(r, quiet=True), "빈 영문 6곳을 채운다", f"n={n}")
+ok(r["bull"][0]["title"]["en"] == "EN0" and r["bull"][2]["body"]["en"] == "EN5", "순서대로 제자리에", str([x["title"]["en"] for x in r["bull"]]))
+ok(fm.sent[0]["model"] == "claude-sonnet-5", "값싼 모델을 쓴다", str(fm.sent[0]["model"]))
+ok(M.fill_missing_en(cl_fill, GOODREP()) == 0 and len(fm.sent) == 1, "채울 자리가 없으면 모델을 부르지 않는다")
+
+# (j) 회수 경로 통합 — 영문이 빠진 배치 결과가 저장까지 간다
+for p in S.BATCH_DIR.glob("*.json"):
+    p.unlink()
+(S.OUT_DIR / "005930.json").unlink(missing_ok=True)
+mk("msgbatch_EN", ["005930"])
+noen = GOODREP()
+for x in noen["bull"]:
+    x["title"]["en"] = ""; x["body"]["en"] = ""
+noen["risks"][0]["body"]["en"] = ""; noen["risks"][0]["body_en_note"] = "Regulatory pressure."
+cl2 = FakeClient()
+fm2 = FillMsgs(); cl2.messages.create = fm2.create
+cl2.messages.batches.store["msgbatch_EN"] = batch_obj("msgbatch_EN", "ended", [
+    result("005930", text="===JSON_START===" + json.dumps(noen, ensure_ascii=False) + "===JSON_END===")])
+S.bump_fail("005930")
+M.pickup(cl2, "2026-09-05 03:00")
+saved = S.OUT_DIR / "005930.json"
+ok(saved.exists(), "영문이 빠진 결과도 되살려 저장한다")
+got = json.loads(saved.read_text(encoding="utf-8")) if saved.exists() else {}
+ok(bool(got) and got["bull"][0]["body"]["en"].startswith("EN"), "저장된 글에 영문이 있다", str(got.get("bull", [{}])[0]))
+ok(bool(got) and got["risks"][0]["body"]["en"] == "Regulatory pressure." and "body_en_note" not in got["risks"][0],
+   "곁키는 제자리로 가고 사라진다", str(got.get("risks", [{}])[0]))
+ok("005930" not in S.load_failed_out() and S.fail_count("005930") == 0, "되살린 종목은 실패 기록이 지워진다")
+
+# (k) 통째로 잘린 결과는 모델을 부르지 않고 버린다
+for p in S.BATCH_DIR.glob("*.json"):
+    p.unlink()
+(S.OUT_DIR / "000020.json").unlink(missing_ok=True)
+mk("msgbatch_CUT", ["000020"])
+cut = GOODREP(); del cut["verdict"]
+cl3 = FakeClient()
+fm3 = FillMsgs(); cl3.messages.create = fm3.create
+cl3.messages.batches.store["msgbatch_CUT"] = batch_obj("msgbatch_CUT", "ended", [
+    result("000020", text="===JSON_START===" + json.dumps(cut, ensure_ascii=False) + "===JSON_END===")])
+M.pickup(cl3, "2026-09-05 03:00")
+ok(not (S.OUT_DIR / "000020.json").exists() and fm3.sent == [], "잘린 글은 버리고 돈을 더 쓰지 않는다", f"calls={len(fm3.sent)}")
+ok(S.fail_count("000020") >= 1, "실패로 세어 다음 run 이 다시 만든다")
+
 print()
 print(f"통과 {passed} · 실패 {failed}")
 sys.exit(1 if failed else 0)
