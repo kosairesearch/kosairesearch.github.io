@@ -9,16 +9,34 @@ KOSAI 리포트 v2 — '정량 + 정성 분리' 구조 (Message Batches API)
 
 모드:
   quant    — 정량 데이터만 수집해 검증 로그 출력 (배치 미제출, 검증용)
-  submit   — 정량 수집 + 배치 제출 (data/batch_state_v2.json)
-  collect  — 배치 결과 회수 → data/reports_v2/{ticker}.json
-  auto     — submit 후 폴링, collect
+  patch    — 기존 리포트의 정량 블록만 교체 (API 미호출·무료)
+  submit   — 정량 수집 + 배치 제출 → data/batches_v2/<batch_id>.json
+  pickup   — 끝난 배치를 전부 회수 → data/reports_v2/{ticker}.json (collect 도 같다)
+  auto     — submit 후 잠깐(BATCH_SHORT_WAIT_SEC) 기다려 끝났으면 회수, 아니면 pickup 에 맡긴다
+  recover  — 상태 파일이 없는 배치를 ID 로 회수 (RECOVER_BATCH_ID)
+  batches  — 최근 배치 목록 (진단)
+
+주문(submit)과 회수(pickup)는 분리돼 있다. 배치는 24시간까지 걸릴 수 있고 잡은
+6시간에 잘리므로 주문한 자리에서 기다리지 않는다. 주문마다 상태 파일을 하나
+남기고(병렬 run 이 서로 덮어쓰지 않는다) 워크플로가 그 파일을 커밋한다.
+collect_batch 워크플로가 30분마다 남은 파일을 보고 회수한다. 상태 파일이 커밋되지
+않으면 배치 ID 가 run 과 함께 사라져 돈만 나간다 — 8월 20일 479건이 그랬다.
+
+돈이 나가는 주문 앞에는 빗장이 셋이다.
+  · data/reports_paused 가 있으면 주문하지 않는다.
+  · 이미 주문이 들어가 있는 종목(진행 중 배치)은 다시 주문하지 않는다.
+  · 정량 숫자가 항등식(check_valuation.HARD)에 걸리는 종목은 글을 쓰지 않는다.
+    그 종목만 빼고 나머지는 진행한다 — 한 종목의 공시 오류가 전체를 멈추지 않는다.
 
 환경변수: ANTHROPIC_API_KEY, DART_API_KEY, KRX_ID, KRX_PW,
-          REPORT_MODEL_V2(기본 claude-opus-5), REPORT_TICKERS, REPORT_TOP_N(기본 10),
-          BATCH_MAX_WAIT_SEC
+          REPORT_MODEL_TOP/REST/TOP_N, REPORT_TICKERS, REPORT_TOP_N(기본 10),
+          REPORT_FILL_TO/FROM/SHARDS/SHARD(자동 백필), REPORT_BACKFILL(skip 재시도 run),
+          REPORT_ALLOW_INFLIGHT(진행 중인 종목도 다시 주문), BATCH_SHORT_WAIT_SEC
 """
 
+import contextlib
 import datetime
+import io
 import json
 import os
 import re
@@ -31,33 +49,20 @@ sys.path.insert(0, str(Path(__file__).resolve().parent))
 
 import generate_reports as g  # log/extract_text/collect_sources/load_stocks 재사용
 import check_report_text     # 생성 직후 금지 표현 검사(프롬프트가 못 막은 것)
+import check_valuation       # 종목별 항등식 — 숫자가 깨진 종목은 글을 쓰지 않는다
+import _reports_state as S   # skip·hold·fail 마커 · 배치 상태 파일 · 갱신 기준일
 
-OUT_DIR = ROOT / "data" / "reports_v2"
-STATE_JS = ROOT / "data" / "batch_state_v2.json"
-# 있으면 돈이 드는 모드(submit·collect·auto·recover)를 전부 멈춘다. main() 참고.
-PAUSE_FILE = ROOT / "data" / "reports_paused"
+OUT_DIR = S.OUT_DIR
+BATCH_DIR = S.BATCH_DIR
+# 있으면 돈이 드는 모드(submit·auto·recover)를 전부 멈춘다. main() 참고.
+PAUSE_FILE = S.PAUSE_FILE
 # 생성 불가 종목(DART 재무 없음: 인프라펀드·스팩·일부 지주 등) — 백필이 영원히 재시도하지 않도록 기록.
-# 종목별 마커 파일(디렉터리)로 저장 → 병렬 run이 서로 겹치지 않아 git 커밋 충돌이 없다.
-SKIP_DIR = ROOT / "data" / "reports_v2_skip"
+SKIP_DIR = S.SKIP_DIR
+load_skip = S.load_skip
+add_skip = S.add_skip
 
-
-def load_skip():
-    out = set()
-    if SKIP_DIR.exists():
-        out |= {p.name for p in SKIP_DIR.iterdir() if p.is_file() and not p.name.startswith(".")}
-    # 구버전 단일 파일도 함께 읽어 호환
-    legacy = ROOT / "data" / "reports_v2_skip.txt"
-    if legacy.exists():
-        out |= {ln.strip() for ln in legacy.read_text(encoding="utf-8").splitlines() if ln.strip()}
-    return out
-
-
-def add_skip(tickers):
-    if not tickers:
-        return
-    SKIP_DIR.mkdir(parents=True, exist_ok=True)
-    for t in tickers:
-        (SKIP_DIR / t).write_text("", encoding="utf-8")
+# 종료 코드. 워크플로가 이 값으로 '무엇이 막았는지' 를 가른다.
+EXIT_DART_UNAVAILABLE = 3     # DART 한도 초과·점검·키 문제 — 종목 탓이 아니다. skip 을 남기지 않는다.
 
 MODEL = os.getenv("REPORT_MODEL_V2", "claude-opus-5")  # 폴백
 # 모델 정책: 시총 상위 MODEL_TOP_N개는 고급 모델(Opus), 나머지는 효율 모델(Sonnet)
@@ -80,6 +85,45 @@ TOOLS = [{"type": "web_search_20250305", "name": "web_search", "max_uses": 6,
           "user_location": {"type": "approximate", "country": "KR", "timezone": "Asia/Seoul"}}]
 
 log = g.log
+
+
+class DartUnavailable(RuntimeError):
+    """DART 가 지금 응답을 주지 않는다 — 하루 한도 초과(020)·점검(800)·키 문제(01x).
+    종목 탓이 아니므로 이 예외가 나면 run 을 통째로 멈추고 skip 을 남기지 않는다."""
+
+    def __init__(self, status, message=""):
+        super().__init__(f"DART status {status}: {message}")
+        self.status = status
+        self.message = message
+
+
+# DART 응답 코드. 000 정상 · 013 조회 데이터 없음 — 이 둘만 '종목의 사정' 이다.
+# 나머지(010/011/012 키 · 020/021 한도 · 800 점검 · 900 오류)는 우리 쪽 사정이다.
+_DART_STATUS = re.compile(r"'status':\s*'(\d{3})'(?:,\s*'message':\s*'([^']*)')?")
+
+
+def _dart_call(fn, *args, **kw):
+    """OpenDartReader 함수를 부른다. 라이브러리는 status≠000 이면 예외 대신 그 사실을
+    stdout 에 print 하고 빈 DataFrame 을 돌려준다. 그래서 하루 한도를 넘긴 뒤의
+    호출은 전부 '재무제표 없음' 과 똑같이 생겼고, 자동 백필은 그 종목들을 생성
+    불가로 영구 기록해 버렸다. 여기서 print 를 잡아 코드를 읽는다."""
+    buf = io.StringIO()
+    err = None
+    try:
+        with contextlib.redirect_stdout(buf):
+            df = fn(*args, **kw)
+    except DartUnavailable:
+        raise
+    except Exception as e:                     # 'could not find corp' 등 — 그 종목의 사정
+        df, err = None, f"{type(e).__name__}: {e}"
+    out = buf.getvalue()
+    for m in _DART_STATUS.finditer(out + (err or "")):
+        if m.group(1) not in ("000", "013"):
+            raise DartUnavailable(m.group(1), m.group(2) or "")
+    for ln in out.splitlines():                # 라이브러리의 진단 출력은 그대로 남긴다(잡음만 뺀다)
+        if ln.strip() and not ln.startswith("reprt_code=") and "조회된 데이타가 없습니다" not in ln:
+            print(ln)
+    return df
 
 
 import re as _re_src
@@ -175,10 +219,7 @@ def _fin_all(dart, ticker, year, reprt):
     연결(CFS) 우선, 자회사가 없어 연결재무제표가 없는 단독기업은 별도(OFS)로 폴백."""
     df = None
     for fs in ("CFS", "OFS"):
-        try:
-            df = dart.finstate_all(ticker, year, reprt_code=reprt, fs_div=fs)
-        except Exception:
-            df = None
+        df = _dart_call(dart.finstate_all, ticker, year, reprt_code=reprt, fs_div=fs)
         if df is not None and not getattr(df, "empty", True):
             break
     if df is None or getattr(df, "empty", True):
@@ -339,6 +380,27 @@ def _sub(a, b):
     return (a - b) if (a is not None and b is not None) else None
 
 
+def _owner_equity(eqo, eq, nci):
+    """지배지분을 항등식(지배 + 비지배 = 자본총계)에 맞게 되찾는다.
+
+    · 지배지분 태그를 못 읽었는데 비지배지분은 읽었으면  지배 = 총계 − 비지배.
+      예전에는 그냥 자본총계로 대신했다. 유한양행은 그 바람에 지배지분이
+      23,623억(= 자본총계)으로 실렸는데, 비지배지분 554억을 빼면 23,069억이다.
+    · 지배지분이 자본총계와 '똑같은데' 비지배지분이 따로 있으면, 지배 칸에
+      총계를 적은 것이다(한울앤제주 2025: 지배 160억 = 총계 160억, 비지배 2억).
+      셋이 동시에 맞을 수는 없다. 그대로 두면 항등식 검산에 걸려 생성이 막힌다.
+      이때도 지배 = 총계 − 비지배 다.
+    그 밖에는 읽은 값을 그대로 둔다 — 비지배지분이 음수라 지배 > 총계 인
+    회사는 정상이다."""
+    if eq is None or nci in (None, 0):
+        return eqo
+    if eqo is None:
+        return eq - nci
+    if abs(eqo - eq) <= abs(eq) * 0.001 and abs(nci) > abs(eq) * 0.001:
+        return eq - nci
+    return eqo
+
+
 def collect_quant(dart, ticker, krx_row, stock):
     """한 종목의 정량 블록을 수집한다."""
     cur = datetime.date.today().year  # 2026
@@ -355,12 +417,7 @@ def collect_quant(dart, ticker, krx_row, stock):
         np_, npo = _cum(d, "np"), _cum(d, "np_owner")
         eq, eqo, li = _bs(d, "equity"), _bs(d, "equity_owner"), _bs(d, "liab")
         _nci = _bs(d, "equity_nci")
-        # 지배지분 태그를 못 읽었는데 비지배지분은 읽었으면 항등식으로 되찾는다.
-        #   지배지분 = 자본총계 − 비지배지분
-        # 예전에는 그냥 자본총계로 대신했다. 유한양행은 그 바람에 지배지분이
-        # 23,623억(= 자본총계)으로 실렸는데, 비지배지분 554억을 빼면 23,069억이다.
-        if eqo is None and eq is not None and _nci not in (None, 0):
-            eqo = eq - _nci
+        eqo = _owner_equity(eqo, eq, _nci)      # 지배 + 비지배 = 총계 (_owner_equity 참고)
         row = {
             "year": yr, "rev": rev, "op": op, "np": np_,
             "np_owner": npo if npo is not None else np_,
@@ -430,7 +487,7 @@ def collect_quant(dart, ticker, krx_row, stock):
     # 매출 폴백 — 보험·금융사는 전체 재무제표에 '매출액' 행이 없어
     # DART 요약재무(매출액/영업수익)로 보충한다.
     def rev_fallback(year, reprt):
-        d = g._extract_fin(g._safe_finstate(dart, ticker, year, reprt))
+        d = g._extract_fin(_dart_call(g._safe_finstate, dart, ticker, year, reprt))
         v = (d or {}).get("매출액")
         return v["cur"] if v else None
 
@@ -792,8 +849,10 @@ def collect_quant(dart, ticker, krx_row, stock):
     if eps_pick is None:
         eps_src = "순이익÷주식수"
     eps_ttm = eps_pick if eps_pick is not None else (
-        None if eps_hidden else (int(ttm_np / total_sh) if (ttm_np and total_sh) else None))
-    eps_ttm = int(eps_ttm) if eps_ttm is not None else None
+        None if eps_hidden else ((ttm_np / total_sh) if (ttm_np and total_sh) else None))
+    # int() 는 0 쪽으로 자른다. 지엘팜텍 -6.9 → -6 이 됐고, 거꾸로 곱하면 순이익과
+    # 13% 어긋나 항등식 검산에 걸렸다. 화면은 정수 원이므로 반올림한다.
+    eps_ttm = round(eps_ttm) if eps_ttm is not None else None
     # 소수 첫째 자리로 자르면 PER 이 작을 때 주가÷EPS 와 10% 까지 벌어진다
     # (삼부토건 0.452 → 0.5). 화면은 어차피 오늘 주가로 다시 계산하니, 저장값은
     # 항등식이 성립하도록 넉넉히 남긴다.
@@ -809,7 +868,7 @@ def collect_quant(dart, ticker, krx_row, stock):
         f" − 작년동기누적 {qp_eps if qp_eps is None else f'{qp_eps:,.0f}'}"
         f" + 올해누적 {qc_eps if qc_eps is None else f'{qc_eps:,.0f}'})"
         f" · 대안=순이익÷발행총수 "
-        f"{int(ttm_np/total_sh) if (ttm_np and total_sh) else '없음'}"
+        f"{round(ttm_np/total_sh) if (ttm_np and total_sh) else '없음'}"
         f" → 채택 {eps_ttm}")
 
     # ── 자체 대조: 회사가 낸 두 값이 서로 크기를 확인해 주는가 ──────────────
@@ -855,8 +914,14 @@ def collect_quant(dart, ticker, krx_row, stock):
     #   즉 추출이 실제로 깨졌을 때만 — 갈아끼운다(원익QnC 등 원래 잡으려던 경우).
     #   ③ 분기표 4개 합과 이미 맞는 순이익은 손대지 않는다. 확인된 값을
     #      덮어쓰면 화면 위아래가 어긋나고, 그러면 검산에서 다시 걸린다.
+    #   ④ 위에서 공시 주당이익을 버리고 순이익÷주식수를 택했으면(액면병합·감자,
+    #      또는 분기표와 맞는 쪽) 여기서 그 공시값으로 순이익을 덮어쓰면 안 된다.
+    #      보해양조가 그랬다 — 5:1 병합으로 공시 EPS 25 는 옛 주식수 기준이라
+    #      EPS 는 126(순이익÷주식수)을 택해 놓고, 바로 아래에서 TTM 순이익을
+    #      25 × 27.6M = 7억으로 갈아 끼웠다(실제 35억). 같은 리포트 안에서
+    #      EPS 와 TTM 이 서로 5배 어긋나 항등식 검산에 걸렸다.
     np_denom = wavg or total_sh
-    if not ttm_verified and eps_disc is not None and np_denom:
+    if not ttm_verified and eps_disc is not None and np_denom and eps_src == "공시":
         implied_np = eps_disc * np_denom
         broken = implied_np and (
             ttm_np is None
@@ -873,6 +938,7 @@ def collect_quant(dart, ticker, krx_row, stock):
     # 오르는데, 결과만 보면 자본이 늘어난 것과 구분이 안 된다.
     eqo_owner = _bs(d_cur, "equity_owner")
     eqo_total = _bs(d_cur, "equity")
+    eqo_owner = _owner_equity(eqo_owner, eqo_total, _bs(d_cur, "equity_nci"))
     eqo_q = (eqo_owner or eqo_total)
     if eqo_q is not None:
         eqo_q *= unit
@@ -891,7 +957,7 @@ def collect_quant(dart, ticker, krx_row, stock):
     # 분모로 나눈 값이므로 같이 숨긴다. 이마트가 그랬다 — 분모가 1,600만주로
     # 잡혀(실제 2,760만주) BPS 824,830원·PBR 0.09 가 나왔다. 주가는 7만원대다.
     bps_q = (None if eps_hidden
-             else (int(eqo_q / bps_denom) if (eqo_q and eqo_q > 0 and bps_denom) else None))
+             else (round(eqo_q / bps_denom) if (eqo_q and eqo_q > 0 and bps_denom) else None))
     log(f"  · BPS 입력: 자본 {(eqo_q or 0)/1e12:,.1f}조"
         f"({eq_src}·{'지배지분' if eqo_owner else ('총자본-폴백' if eqo_total else '연간폴백')})"
         f" ÷ 주식수 {(bps_denom or 0)/1e6:,.0f}백만"
@@ -935,7 +1001,7 @@ def collect_quant(dart, ticker, krx_row, stock):
                 _gap_best = abs(_cands[_best] / _implied - 1)
                 _gap_ours = abs(bps_denom / _implied - 1)
                 if _gap_best <= 0.03 and _gap_ours > 0.08:
-                    _new = int(eqo_q / _cands[_best])
+                    _new = round(eqo_q / _cands[_best])
                     if _new > 0 and abs(_new / bps_krx_ref - 1) < abs(bps_q / bps_krx_ref - 1):
                         log(f"  · BPS 분모를 바꾼다: {'가중평균' if wavg else '발행총수'} "
                             f"{bps_denom:,} → {_best} {_cands[_best]:,} "
@@ -1013,7 +1079,7 @@ def collect_quant(dart, ticker, krx_row, stock):
     # 반영이 늦지 않다. 우리가 못 뽑았다고 빈칸으로 두는 것보다 낫다.
     bps_src = "자체"
     if bps_q is None and bps_krx_ref and price:
-        bps_q = int(bps_krx_ref)
+        bps_q = round(bps_krx_ref)
         pbr_q = round(price / bps_q, 4)
         bps_src = "KRX"
         log(f"  · BPS 를 자체 산출하지 못해 KRX 공식값 {bps_q:,} 을 쓴다")
@@ -1127,10 +1193,7 @@ def dart_total_shares(dart, ticker):
     최신 분기보고서 → 직전 사업보고서 순으로 시도. 실패 시 None."""
     cur = datetime.date.today().year
     for year, code in ((cur, "11013"), (cur - 1, "11011")):
-        try:
-            df = dart.report(ticker, "주식총수", year, code)
-        except Exception:
-            df = None
+        df = _dart_call(dart.report, ticker, "주식총수", year, code)
         if df is None or getattr(df, "empty", True):
             continue
         # 같은 구분(보통주/우선주)이 여러 줄로 오는 회사가 있다 — 정정공시나
@@ -1161,10 +1224,7 @@ def dart_dps(dart, ticker):
     최근 사업연도 → 그 전년 순으로 시도. 실패 시 None."""
     cur = datetime.date.today().year
     for year in (cur - 1, cur - 2):
-        try:
-            df = dart.report(ticker, "배당", year, "11011")
-        except Exception:
-            df = None
+        df = _dart_call(dart.report, ticker, "배당", year, "11011")
         if df is None or getattr(df, "empty", True):
             continue
         # 보통주 '주당현금배당금'을 전부 합산 — 리츠(반기)·분기/중간배당은 행이 여러 개라
@@ -1332,36 +1392,64 @@ def valid_v2(rep):
 
 
 # ── 대상 선정 ─────────────────────────────────────────────────────────
+def _ranked(data):
+    return sorted(data["stocks"], key=lambda x: x.get("mcap", 0) or 0, reverse=True)
+
+
 def pick_targets():
+    """(data, targets). 돈이 나가는 주문의 대상은 여기서만 정한다.
+
+    세 갈래다.
+      · REPORT_TICKERS   명시 지정(공시 트리거·백필·수동). 지정한 대로 만든다.
+      · REPORT_FILL_TO   자동 백필. 시총 상위 N 중 '지금 만들어야 할' 종목만 —
+                         리포트가 없거나 갱신 기준일(data/reports_v2_refresh)보다
+                         오래된 것. skip·hold·fail 초과·진행 중 배치는 뺀다
+                         (_reports_state.wanted). SHARDS/SHARD 로 안정적으로 나눠
+                         여러 run 이 겹치지 않게 병렬 백필한다.
+      · 그 밖(quant·patch) 시총 상위 구간을 그대로 훑는다. 전 종목 patch 는 종목당
+                         30초 안팎이라 한 잡에 다 안 들어간다(6시간 제한) —
+                         FILL_FROM 을 0·700·1400·2100 으로 나눠 이어 돌린다.
+
+    진행 중인 배치에 들어 있는 종목은 앞의 두 갈래에서 뺀다. 결과가 오기 전에
+    또 주문하면 돈만 두 번 나간다 — 워치독이 30분마다 재가동하는 구조라 이게
+    없으면 같은 종목이 시간마다 다시 주문된다(submit 에서 한 번 더 거른다).
+    REPORT_ALLOW_INFLIGHT=1 로 풀 수 있다(회수를 포기한 배치를 다시 주문할 때).
+    """
     data = g.load_stocks()
+    allow_inflight = os.getenv("REPORT_ALLOW_INFLIGHT") == "1"
+    inflight = set() if allow_inflight else S.inflight_tickers()
+
     env = os.getenv("REPORT_TICKERS", "").replace(" ", "")
     if env:
         want = [t for t in env.split(",") if t]
         by = {s["ticker"]: s for s in data["stocks"]}
-        return data, [by[t] for t in want if t in by]
-    # 자동 백필(fill): 시총 순위 [FILL_FROM, FILL_TO) 구간 중 아직 v2 리포트가 없는 종목.
-    #   SHARDS/SHARD로 종목을 안정적으로 분할 → 여러 run이 겹치지 않게 병렬 백필 가능.
+        unknown = [t for t in want if t not in by]
+        if unknown:
+            log(f"- universe 에 없는 티커 {len(unknown)}개는 뺀다: {','.join(unknown[:20])}")
+        busy = [t for t in want if t in by and t in inflight]
+        if busy:
+            log(f"- 이미 주문이 들어가 있는 {len(busy)}개는 뺀다(회수 뒤 다시): {','.join(busy[:20])}")
+        return data, [by[t] for t in want if t in by and t not in inflight]
+
     fill_to = int(os.getenv("REPORT_FILL_TO", "0") or "0")
     if fill_to:
         import zlib
         fill_from = int(os.getenv("REPORT_FILL_FROM", "0") or "0")
         shards = int(os.getenv("REPORT_FILL_SHARDS", "1") or "1")
         shard = int(os.getenv("REPORT_FILL_SHARD", "0") or "0")
-        skip = load_skip()
-        ranked = sorted(data["stocks"], key=lambda x: x.get("mcap", 0) or 0, reverse=True)[:fill_to]
-        ranked = ranked[fill_from:]
+        ctx = S.fill_context(allow_inflight=allow_inflight)
+        if ctx["refresh"]:
+            log(f"- 갱신 기준일 {ctx['refresh']} — 그 전에 만든 리포트는 다시 만든다")
+        ranked = _ranked(data)[:fill_to][fill_from:]
         missing = [s for s in ranked
-                   if not (OUT_DIR / f"{s['ticker']}.json").exists() and s["ticker"] not in skip]
+                   if S.wanted(s["ticker"], ctx["refresh"], ctx["skip"], ctx["hold"],
+                               ctx["failed_out"], ctx["inflight"])]
         if shards > 1:
             missing = [s for s in missing if zlib.crc32(s["ticker"].encode()) % shards == shard]
         return data, missing[:TOP_N]
-    # 시총 상위 [FILL_FROM, FILL_FROM+TOP_N) 구간. patch 처럼 '이미 리포트가 있는'
-    # 종목을 훑을 때는 위의 백필 경로(없는 것만 고름)를 쓸 수 없어 여기서 자른다.
-    #   전 종목 patch 는 종목당 30초 안팎이라 한 잡에 다 안 들어간다(6시간 제한).
-    #   FILL_FROM 을 0·700·1400·2100 으로 나눠 이어 돌린다.
+
     start = int(os.getenv("REPORT_FILL_FROM", "0") or "0")
-    ranked = sorted(data["stocks"], key=lambda x: x.get("mcap", 0) or 0, reverse=True)
-    stocks = ranked[start:start + TOP_N]
+    stocks = _ranked(data)[start:start + TOP_N]
     if start:
         log(f"- 시총 {start+1}~{start+len(stocks)}위 구간 {len(stocks)}종목")
     return data, stocks
@@ -1489,12 +1577,25 @@ def cross_check(tk, name, valuation):
 
 
 def collect_all_quant(targets, data):
+    """(quants, errors, unavailable).
+
+    quants      {ticker: quant} — 수집된 것
+    errors      {ticker: 사유} — 그 종목만의 예외(파싱 실패 등). skip 대상이 아니다.
+    unavailable DartUnavailable 또는 None. DART 가 한도·점검으로 막히면 그 자리에서
+                멈추고 그때까지 모은 것만 돌려준다. 호출자는 부분 결과로 할 일을
+                끝낸 뒤 EXIT_DART_UNAVAILABLE 로 나간다(워크플로가 실패로 표시하고
+                워치독이 오늘은 재가동하지 않는다). 예전에는 이 경우가 '재무제표
+                없음' 과 구분되지 않아 한 run 의 종목 전부가 생성 불가로 영구
+                기록됐다.
+    """
     dart = g.get_dart()
     if not dart:
         log("❌ DART 초기화 실패 — 정량 수집 불가")
-        sys.exit(1)
+        why = getattr(g, "_dart_err", "") or "키 없음"
+        m = _DART_STATUS.search(why)
+        return {}, {}, DartUnavailable(m.group(1) if m else "init", f"DART 초기화 실패({why[:120]})")
     fund = krx_fundamentals(data.get("dataDate", ""))
-    out = {}
+    out, errors = {}, {}
     for st in targets:
         tk = st["ticker"]
         log(f"- 정량 수집 {tk} {st['name']}...")
@@ -1505,34 +1606,83 @@ def collect_all_quant(targets, data):
             out[tk] = collect_quant(dart, tk, krx_row, st)
             cross_check(tk, st["name"], out[tk]["valuation"])
             log(quant_summary(st["name"], out[tk]))
+        except DartUnavailable as e:
+            log(f"  ⛔ DART 를 쓸 수 없다({e}) — 여기서 멈춘다. 모은 {len(out)}개로 진행.")
+            out.pop(tk, None)
+            return out, errors, e
         except Exception as e:
-            log(f"  ⚠️ {tk} 정량 수집 실패: {type(e).__name__}: {e}")
-    return out
+            # 그 종목만의 예외. 실패 횟수를 세어 두어 같은 종목이 30분마다 DART 호출만
+            # 태우며 영영 돌지 않게 한다(FAIL_LIMIT 번이면 백필에서 빠지고, 2주 뒤 다시 본다).
+            errors[tk] = f"{type(e).__name__}: {e}"
+            n = S.bump_fail(tk)
+            log(f"  ⚠️ {tk} 정량 수집 실패: {errors[tk]} ({n}번째)")
+    return out, errors, None
 
 
 # ── 배치 제출/회수 ────────────────────────────────────────────────────
+def _write_state(path, state):
+    path.parent.mkdir(parents=True, exist_ok=True)
+    path.write_text(json.dumps(state, ensure_ascii=False, indent=1), encoding="utf-8")
+
+
 def submit(cl, as_of):
-    import anthropic
+    """정량 수집 → 종목별 항등식 검사 → 배치 제출.
+
+    돌려주는 것: {"batch_id", "path", "tickers", "unavailable"}.
+    상태 파일 data/batches_v2/<batch_id>.json 을 남긴다. 워크플로가 이 파일을
+    커밋해야 collect_batch 가 회수할 수 있다.
+    """
     from anthropic.types.message_create_params import MessageCreateParamsNonStreaming
     from anthropic.types.messages.batch_create_params import Request
 
+    result = {"batch_id": None, "path": None, "tickers": [], "unavailable": None}
     data, targets = pick_targets()
+    # 마지막 빗장 — 어느 갈래로 왔든 진행 중인 종목은 다시 주문하지 않는다.
+    if os.getenv("REPORT_ALLOW_INFLIGHT") != "1":
+        inflight = S.inflight_tickers()
+        busy = [s["ticker"] for s in targets if s["ticker"] in inflight]
+        if busy:
+            log(f"- 진행 중인 배치에 있는 {len(busy)}개는 다시 주문하지 않는다: {','.join(busy[:20])}")
+            targets = [s for s in targets if s["ticker"] not in inflight]
+    if not targets:
+        log("- 주문할 종목이 없다.")
+        return result
     # 전체 universe 시총 순위(1=최대) → 종목별 모델 결정
-    ranked = sorted(data["stocks"], key=lambda s: s.get("mcap", 0) or 0, reverse=True)
-    rank_of = {s["ticker"]: i + 1 for i, s in enumerate(ranked)}
+    rank_of = {s["ticker"]: i + 1 for i, s in enumerate(_ranked(data))}
     log(f"## 🤖 리포트 v2 Batch 제출 — {len(targets)}개 · 상위{MODEL_TOP_N} {MODEL_TOP} / 나머지 {MODEL_REST}")
-    quants = collect_all_quant(targets, data)
+    quants, errors, unavailable = collect_all_quant(targets, data)
+    result["unavailable"] = unavailable
 
-    reqs, models, excluded = [], {}, []
+    fill_mode = os.getenv("REPORT_FILL_TO", "0") not in ("0", "")
+    backfill = os.getenv("REPORT_BACKFILL") == "1"
+    reqs, models, tickers = [], {}, []
+    no_data, held, broken = [], [], []
     for st in targets:
         tk = st["ticker"]
-        if tk not in quants or not quants[tk]["annual"]:
-            log(f"  · ⚠️ {tk} 정량 데이터 없음 — 제외")
-            excluded.append(tk)
+        if tk in errors:
+            broken.append(tk)                 # 이번 run 의 예외 — 다음에 다시. skip 아님.
             continue
+        q = quants.get(tk)
+        if q is None:
+            continue                          # DART 가 막혀 못 모은 종목 — 다음 run
+        if not q.get("annual"):
+            log(f"  · ⚠️ {tk} 정량 데이터 없음 — 제외")
+            no_data.append(tk)
+            continue
+        # 숫자가 항등식에 걸리면 그 종목은 글을 쓰지 않는다. 틀린 근거로 쓴 글은
+        # 나중에 숫자만 고쳐도 본문에 그대로 남고, 다시 만들려면 돈이 또 든다.
+        # 전체를 멈추지는 않는다 — 한 회사의 공시 오류가 2,600개를 세울 이유는 없다.
+        bad = check_valuation.check_quant(q)
+        if bad:
+            reason = " / ".join(f"[{c}] {m}" for c, m in bad)
+            log(f"  · ⛔ {tk} {st['name']} 숫자가 항등식에 걸린다 — 글을 쓰지 않는다: {reason}")
+            S.add_hold(tk, reason)
+            held.append(tk)
+            continue
+        S.clear_hold(tk)
         mdl = model_for(rank_of.get(tk))
         models[tk] = mdl
-        prompt = build_prompt_v2(st, quants[tk], as_of)
+        tickers.append(tk)
         reqs.append(Request(
             custom_id=tk,
             params=MessageCreateParamsNonStreaming(
@@ -1540,65 +1690,102 @@ def submit(cl, as_of):
                 system=[{"type": "text", "text": SYSTEM_V2, "cache_control": {"type": "ephemeral"}}],
                 thinking={"type": "adaptive"},
                 tools=TOOLS,
-                messages=[{"role": "user", "content": prompt}],
+                messages=[{"role": "user", "content": build_prompt_v2(st, q, as_of)}],
             ),
         ))
-    # 백필(fill) 모드에서 정량 데이터가 없어 제외된 종목은 skip 목록에 기록 →
-    # self-chain/watchdog이 같은 종목을 영원히 재시도하지 않고 정상 종료한다.
-    # (명시적 티커 지정 run은 skip을 건드리지 않아 병렬 실행 시 파일 충돌이 없다.)
-    if os.getenv("REPORT_FILL_TO", "0") not in ("0", "") and excluded:
-        add_skip(excluded)
-        log(f"- 생성 불가 {len(excluded)}개 skip 기록 → data/reports_v2_skip.txt")
+    # skip 은 DART 가 '조회된 데이터 없음' 을 준 종목만, 그리고 자동 백필(fill)과
+    # 백필 run 에서만 남긴다. 명시 지정 run 은 skip 을 건드리지 않는다(병렬 안전).
+    # 한도 초과·점검으로 못 모은 종목은 여기 오지 않는다(quants 에 없다).
+    if (fill_mode or backfill) and no_data:
+        S.add_skip(no_data)
+        log(f"- 생성 불가 {len(no_data)}개 skip 기록 → data/reports_v2_skip/ (30일 뒤 백필이 다시 본다)")
+    if held:
+        log(f"- 항등식에 걸려 보류 {len(held)}개 → data/reports_v2_hold/: {','.join(held[:30])}")
+    if broken:
+        log(f"- 수집 예외 {len(broken)}개(다음 run 에 다시): {','.join(broken[:30])}")
     if not reqs:
         log("❌ 제출할 요청이 없습니다.")
-        sys.exit(0)
+        return result
     n_top = sum(1 for m in models.values() if m == MODEL_TOP)
     log(f"- 모델 배분: {MODEL_TOP} {n_top}개 · {MODEL_REST} {len(models)-n_top}개")
 
     batch = cl.messages.batches.create(requests=reqs)
     OUT_DIR.mkdir(parents=True, exist_ok=True)
     state = {"batch_id": batch.id, "created": as_of, "model": MODEL, "models": models,
-             "dataDate": data.get("dataDate", ""), "count": len(reqs),
-             "quant": quants}
-    STATE_JS.write_text(json.dumps(state, ensure_ascii=False, indent=1), encoding="utf-8")
-    log(f"- ✅ 배치 제출: {batch.id} ({len(reqs)}건)")
-    return batch.id
+             "tickers": tickers, "dataDate": data.get("dataDate", ""), "count": len(reqs),
+             "quant": {tk: quants[tk] for tk in tickers}}
+    path = S.batch_path(batch.id)
+    _write_state(path, state)
+    if backfill:
+        for tk in tickers:
+            S.remove_skip(tk)                 # 만들 수 있게 됐다 — 생성 불가 표시를 뗀다
+    log(f"- ✅ 배치 제출: {batch.id} ({len(reqs)}건) → {path.relative_to(ROOT)}")
+    result.update({"batch_id": batch.id, "path": path, "tickers": tickers})
+    return result
 
 
 def pickup(cl, as_of):
-    """남아 있는 배치가 끝났으면 회수한다. 재과금 없다.
+    """끝난 배치를 전부 회수한다. 재과금 없다. 회수한 배치 수를 돌려준다.
 
-    auto 가 주문만 넣고 끝내므로 누군가는 결과를 받으러 와야 한다. 그게
-    이 함수고, collect_batch 워크플로가 30분마다 부른다.
-
-    이미 회수한 배치를 또 회수하면 리포트를 같은 내용으로 덮어쓴다. 그래서
-    회수가 끝나면 상태에 표시를 남기고, 표시가 있으면 건너뛴다.
+    주문(auto/submit)은 넣고 바로 끝나므로 누군가는 결과를 받으러 와야 한다.
+    그게 이 함수고, collect_batch 워크플로가 30분마다 부른다. 상태 파일마다
+    한 번만 회수한다 — 두 번 회수하면 리포트를 같은 내용으로 덮어쓴다.
     """
-    if not STATE_JS.exists():
+    import anthropic
+    pend = S.pending_batches()
+    if not pend:
         log("- 남은 배치 없음")
-        return
-    state = json.loads(STATE_JS.read_text(encoding="utf-8"))
-    bid = state.get("batch_id")
-    if not bid:
-        log("- 남은 배치 없음")
-        return
-    if state.get("collected"):
-        log(f"- {bid} 는 이미 회수했다")
-        return
-    if state.get("abandoned"):
-        log(f"- {bid} 는 버리기로 한 배치다 — 건너뛴다")
-        return
-    b = cl.messages.batches.retrieve(bid)
-    rc = b.request_counts
-    log(f"- {bid} · 상태 {b.processing_status} · 처리 {rc.processing}/성공 {rc.succeeded}/오류 {rc.errored}")
-    if b.processing_status != "ended":
-        log("- 아직 처리 중 — 다음 차례에 다시 온다")
-        return
-    collect(cl, as_of)
-    state = json.loads(STATE_JS.read_text(encoding="utf-8"))
-    state["collected"] = as_of
-    STATE_JS.write_text(json.dumps(state, ensure_ascii=False, indent=1), encoding="utf-8")
-    log(f"✅ {bid} 회수 완료")
+        _housekeep_batches()
+        return 0
+    n = 0
+    for path, state in pend:
+        bid = state["batch_id"]
+        try:
+            b = cl.messages.batches.retrieve(bid)
+        except anthropic.NotFoundError:
+            log(f"- {bid} 를 찾을 수 없다(만료·삭제) — 버린다")
+            state["abandoned"] = f"{as_of} · 배치를 찾을 수 없음"
+            state.pop("quant", None)
+            _write_state(path, state)
+            continue
+        rc = b.request_counts
+        log(f"- {bid} · 상태 {b.processing_status} · 처리 {rc.processing}/성공 {rc.succeeded}/오류 {rc.errored}"
+            f"/만료 {rc.expired}/취소 {rc.canceled} · 주문 {state.get('created')}")
+        if b.processing_status != "ended":
+            log("  아직 처리 중 — 다음 차례에 다시 온다")
+            continue
+        try:
+            ok, fail = collect(cl, as_of, state)
+        except Exception as e:
+            # 결과 자체를 못 받는 경우(29일 지나 만료 등). 다음 차례에 또 실패할 것이라
+            # 무한히 시도하지 않고 버린다. 리포트가 없는 종목은 백필이 다시 주문한다.
+            log(f"  ⚠️ {bid} 결과 회수 실패: {type(e).__name__}: {e} — 버린다")
+            state["abandoned"] = f"{as_of} · 회수 실패 {type(e).__name__}"
+            state.pop("quant", None)
+            _write_state(path, state)
+            continue
+        state["collected"] = as_of
+        state["result"] = {"ok": ok, "fail": fail}
+        state.pop("quant", None)              # 회수 뒤에는 필요 없다 — 저장소를 작게
+        _write_state(path, state)
+        log(f"✅ {bid} 회수 완료 · 성공 {ok}/실패 {fail}")
+        n += 1
+    _housekeep_batches()
+    return n
+
+
+def _housekeep_batches(keep_days=30):
+    """회수·포기한 지 keep_days 지난 상태 파일을 지운다. 기록은 git 에 남는다."""
+    today = S.today_kst()
+    for path, state in S.load_batches():
+        if path == S.LEGACY_STATE or S.is_pending(state):
+            continue
+        when = str(state.get("collected") or state.get("abandoned") or "")[:10]
+        try:
+            if (today - datetime.date.fromisoformat(when)).days > keep_days:
+                path.unlink()
+        except ValueError:
+            continue
 
 
 def poll(cl, batch_id, budget=None):
@@ -1616,14 +1803,14 @@ def poll(cl, batch_id, budget=None):
     return False
 
 
-def collect(cl, as_of):
-    state = json.loads(STATE_JS.read_text(encoding="utf-8"))
-    batch_id = state["batch_id"]
-    b = cl.messages.batches.retrieve(batch_id)
-    if b.processing_status != "ended":
-        log(f"- 아직 처리 중({b.processing_status}).")
-        return False
+def collect(cl, as_of, state):
+    """배치 하나의 결과를 리포트 파일로 쓴다. (성공 수, 실패 수).
 
+    성공한 종목은 fail·hold 마커를 뗀다. 오류·스키마 불완전은 fail 횟수를 올린다 —
+    FAIL_LIMIT 번 연속이면 자동 백필이 그 종목에 더 돈을 쓰지 않는다(사람이 본다).
+    만료·취소는 종목 탓이 아니라 세지 않는다.
+    """
+    batch_id = state["batch_id"]
     data = g.load_stocks()
     by_tk = {s["ticker"]: s for s in data["stocks"]}
     now = datetime.datetime.now(datetime.timezone(datetime.timedelta(hours=9)))
@@ -1634,7 +1821,11 @@ def collect(cl, as_of):
         tk = result.custom_id
         if result.result.type != "succeeded":
             fail += 1
-            log(f"  · ⚠️ {tk} 결과 {result.result.type}")
+            if result.result.type == "errored":
+                n = S.bump_fail(tk)
+                log(f"  · ⚠️ {tk} 결과 errored ({n}번째 실패)")
+            else:
+                log(f"  · ⚠️ {tk} 결과 {result.result.type}")
             continue
         try:
             text = g.extract_text(result.result.message)
@@ -1642,7 +1833,8 @@ def collect(cl, as_of):
             _sanitize(rep)
             if not valid_v2(rep):
                 fail += 1
-                log(f"  · ⚠️ {tk} 스키마 불완전 — 건너뜀")
+                n = S.bump_fail(tk)
+                log(f"  · ⚠️ {tk} 스키마 불완전 — 건너뜀 ({n}번째 실패)")
                 continue
             srcs = collect_sources_v2(result.result.message)
             if srcs:
@@ -1657,8 +1849,8 @@ def collect(cl, as_of):
                 "market": st.get("market", ""),
                 "reportDate": now.strftime("%Y-%m-%d"),
                 "reportTs": now.strftime("%Y-%m-%d %H:%M"),
-                "dataDate": data.get("dataDate", ""),
-                "quant": state["quant"].get(tk, {}),
+                "dataDate": state.get("dataDate") or data.get("dataDate", ""),
+                "quant": (state.get("quant") or {}).get(tk, {}),
             })
             # 금지 표현 검사 — 프롬프트는 부탁이지 강제가 아니다. 실제로 2,563개 중
             # 96개(3.7%)가 금지해 둔 표현을 담고 있었다. 여기서 걸러 로그에 남기면
@@ -1677,19 +1869,22 @@ def collect(cl, as_of):
 
             (OUT_DIR / f"{tk}.json").write_text(
                 json.dumps(rep, ensure_ascii=False, indent=1), encoding="utf-8")
+            S.clear_fail(tk)
+            S.clear_hold(tk)
             done.append(tk)
             ok += 1
         except Exception as e:
             fail += 1
-            log(f"  · ⚠️ {tk} 파싱 실패: {type(e).__name__}: {e}")
+            n = S.bump_fail(tk)
+            log(f"  · ⚠️ {tk} 파싱 실패: {type(e).__name__}: {e} ({n}번째 실패)")
 
     # 전역 인덱스(reports-index.js)는 병렬 커밋 충돌을 피하려 여기서 쓰지 않는다.
     # → 워치독이 reindex(단일 직렬)로 전체 v2에서 재생성한다. 이 run은 자기 종목 JSON만 커밋.
-    have = sorted(p.stem for p in OUT_DIR.glob("*.json") if p.stem.isdigit())
-    log(f"\n✅ v2 회수 완료 · 성공 {ok}/실패 {fail} → data/reports_v2/ ({len(have)}개)")
+    have = sum(1 for p in OUT_DIR.glob("*.json") if S.TICKER.fullmatch(p.stem))
+    log(f"\n✅ v2 회수 완료 · 성공 {ok}/실패 {fail} → data/reports_v2/ ({have}개)")
     if flagged:
         log(f"⚠️ 금지 표현이 남은 {len(flagged)}개 — 다시 만들 대상: {','.join(flagged)}")
-    return True
+    return ok, fail
 
 
 def sync_list_index(tickers):
@@ -1744,7 +1939,7 @@ def patch_quant(as_of):
     """기존 v2 리포트의 정량(quant) 블록만 다시 수집해 교체한다(LLM 재호출 없음·무료).
     본문 텍스트는 그대로 두고 숫자만 최신 방식으로 갱신할 때 사용."""
     data, targets = pick_targets()
-    quants = collect_all_quant(targets, data)
+    quants, errors, unavailable = collect_all_quant(targets, data)
     n = kept = 0
     for st in targets:
         tk = st["ticker"]
@@ -1762,12 +1957,14 @@ def patch_quant(as_of):
             log(f"  · 정량 교체 {tk} {st['name']}")
     log(f"\n✅ 정량 patch 완료: {n}건 (본문 텍스트 유지)"
         + (f" · 기존 값 지킴 {kept}건" if kept else ""))
+    if unavailable:
+        _die_dart(unavailable)
 
 
 def recover(cl, as_of, batch_id=""):
-    """취소된 run에서 제출됐으나 회수 못한 배치를 ID로 회수한다(재과금 없음).
-    제출 시점 quant(state)가 유실됐으므로 현재 데이터로 재수집해 채운다(표시용이라 무방).
-    batch_id 비우면 가장 최근 배치를 사용."""
+    """상태 파일이 없는 배치(옛 run 에서 제출됐으나 파일이 커밋되지 않은 것)를
+    ID 로 회수한다(재과금 없음). 제출 시점 quant 가 없으므로 현재 데이터로
+    재수집해 채운다(표시용이라 무방). batch_id 비우면 가장 최근 배치."""
     if not batch_id:
         recent = list(cl.messages.batches.list(limit=1))
         if not recent:
@@ -1780,17 +1977,38 @@ def recover(cl, as_of, batch_id=""):
     if b.processing_status != "ended":
         log("- 아직 처리 끝나지 않음 — 나중에 다시 recover")
         return
+    # 배치에 어떤 종목이 들어 있는지는 결과에서 읽는다 — REPORT_TICKERS 를 안 줘도 된다.
+    ids = [r.custom_id for r in cl.messages.batches.results(batch_id)]
+    os.environ["REPORT_TICKERS"] = ",".join(ids)
+    os.environ["REPORT_ALLOW_INFLIGHT"] = "1"
     data, targets = pick_targets()
-    ranked = sorted(data["stocks"], key=lambda s: s.get("mcap", 0) or 0, reverse=True)
-    rank_of = {s["ticker"]: i + 1 for i, s in enumerate(ranked)}
+    rank_of = {s["ticker"]: i + 1 for i, s in enumerate(_ranked(data))}
     log(f"- 정량 재수집 {len(targets)}개(제출시점 quant 유실분 재구성)...")
-    quants = collect_all_quant(targets, data)
+    quants, errors, unavailable = collect_all_quant(targets, data)
     models = {st["ticker"]: model_for(rank_of.get(st["ticker"])) for st in targets}
     state = {"batch_id": batch_id, "created": as_of, "model": MODEL, "models": models,
-             "dataDate": data.get("dataDate", ""), "count": len(quants), "quant": quants}
-    STATE_JS.write_text(json.dumps(state, ensure_ascii=False, indent=1), encoding="utf-8")
+             "tickers": ids, "dataDate": data.get("dataDate", ""), "count": len(ids),
+             "quant": quants, "recovered": True}
+    path = S.batch_path(batch_id)
+    _write_state(path, state)
     log(f"- 상태 재구성 완료(quant {len(quants)}) → 회수 시작")
-    collect(cl, as_of)
+    ok, fail = collect(cl, as_of, state)
+    state["collected"] = as_of
+    state["result"] = {"ok": ok, "fail": fail}
+    state.pop("quant", None)
+    _write_state(path, state)
+    if unavailable:
+        _die_dart(unavailable)
+
+
+def _die_dart(e):
+    """DART 가 막혔다. 여기까지 만든 것은 그대로 두고(호출자가 이미 저장했다) 실패로 나간다."""
+    log(f"⛔ DART 를 쓸 수 없다 — {e}. 이 run 은 여기서 멈춘다. skip 은 남기지 않았다.")
+    if getattr(e, "status", "") in ("020", "021"):
+        S.mark_quota_exhausted()
+        log("    하루 호출 한도 초과 — 한국시간 자정에 풀린다. "
+            "data/dart_quota_exhausted 에 오늘 날짜를 남겨 워치독이 오늘은 재가동하지 않게 한다.")
+    sys.exit(EXIT_DART_UNAVAILABLE)
 
 
 def main():
@@ -1799,7 +2017,9 @@ def main():
 
     if mode == "quant":
         data, targets = pick_targets()
-        collect_all_quant(targets, data)
+        _, _, unavailable = collect_all_quant(targets, data)
+        if unavailable:
+            _die_dart(unavailable)
         return
     if mode == "patch":
         patch_quant(as_of)
@@ -1813,9 +2033,11 @@ def main():
     # 전부 이 함수를 지나므로 여기 한 곳이면 새는 곳이 없다.
     #
     # quant·patch 는 계산만 하고 API 를 부르지 않으므로 막지 않는다.
+    # pickup 은 이미 결제된 결과를 받아오는 것이라 막지 않는다 — 멈춰 있는 동안
+    # 배치가 만료(29일)되면 낸 돈이 그대로 사라진다.
     #
     # 켜고 끄는 법:  파일을 지우면 다시 돈다.  touch data/reports_paused 로 멈춘다.
-    if PAUSE_FILE.exists():
+    if PAUSE_FILE.exists() and mode not in ("pickup", "collect", "batches", "recover"):
         why = PAUSE_FILE.read_text(encoding="utf-8").strip()
         log(f"⏸️  과금 정지 중 — '{mode}' 를 건너뛴다.")
         log(f"    {PAUSE_FILE.relative_to(ROOT)} 을 지우면 다시 돈다.")
@@ -1823,27 +2045,10 @@ def main():
             log(f"    사유: {why.splitlines()[0]}")
         return
 
-    # ── 숫자가 깨져 있으면 돈을 쓰지 않는다 ──────────────────────────────
-    # 리포트 본문은 이 정량값을 근거로 쓰인다. 값이 틀린 채로 글을 만들면
-    # 틀린 근거가 문장으로 굳어서, 나중에 숫자만 고쳐도 본문은 그대로다.
-    # 게다가 다시 만들려면 돈이 또 든다.
-    #
-    # 자체 검산(항등식)은 외부 값을 안 쓰므로 여기서 걸리는 건 전부 우리
-    # 버그다. 하나라도 있으면 시작하지 않는다. 급할 때는
-    # SKIP_VALUATION_CHECK=1 로 넘길 수 있게 두되, 기본은 막는 쪽이다.
-    if os.getenv("SKIP_VALUATION_CHECK") != "1":
-        import subprocess
-        chk = ROOT / "scripts" / "check_valuation.py"
-        if chk.exists():
-            r = subprocess.run([sys.executable, str(chk), "--strict"],
-                               capture_output=True, text=True)
-            if r.returncode != 0:
-                log(r.stdout[-4000:] if r.stdout else "")
-                log("⛔ 자체 검산에서 항등식 위반이 남아 있다 — 리포트 생성을 시작하지 않는다.")
-                log("    data/valuation_check.txt 를 보고 고친 뒤 다시 돌린다.")
-                log("    (정말 그대로 진행하려면 SKIP_VALUATION_CHECK=1)")
-                sys.exit(1)
-            log("✅ 자체 검산 통과 — 리포트 생성을 시작한다.")
+    # 예전에는 여기서 저장된 리포트 전체를 검산해 하나라도 걸리면 아무것도
+    # 시작하지 않았다. 그 검산은 '지금 주문할 종목의 새 숫자' 와는 무관한
+    # 데다(옛 리포트를 본다), 한 회사의 공시 오류가 2,600종목의 갱신을 통째로
+    # 세웠다. 지금은 submit 이 종목마다 새로 모은 숫자를 검산해 걸린 종목만 뺀다.
 
     import anthropic
     key = os.getenv("ANTHROPIC_API_KEY")
@@ -1853,9 +2058,11 @@ def main():
     cl = anthropic.Anthropic(api_key=key)
 
     if mode == "submit":
-        submit(cl, as_of)
-    elif mode == "collect":
-        collect(cl, as_of)
+        r = submit(cl, as_of)
+        if r["unavailable"]:
+            _die_dart(r["unavailable"])
+    elif mode in ("collect", "pickup"):
+        pickup(cl, as_of)
     elif mode == "batches":
         # 최근 배치 목록 — 취소된 run에서 제출된 배치 회수 여부 진단용
         lines = ["# 최근 Anthropic 배치"]
@@ -1867,10 +2074,7 @@ def main():
         (ROOT / "data" / "_batches.txt").write_text("\n".join(lines), encoding="utf-8")
         log("\n".join(lines))
     elif mode == "recover":
-        # 취소된 배치 회수: ID로 배치 지정 → 정량 재수집 후 결과 회수(재과금 없음)
         recover(cl, as_of, os.getenv("RECOVER_BATCH_ID", ""))
-    elif mode == "pickup":
-        pickup(cl, as_of)
     else:
         # auto — 주문을 넣고 잠깐만 기다린다.
         #
@@ -1880,12 +2084,17 @@ def main():
         #
         # 그래서 짧게만 기다리고(SHORT_WAIT), 안 끝났으면 그대로 끝낸다.
         # 남은 배치는 collect_batch 워크플로가 30분마다 와서 회수한다.
-        # 주문과 회수가 분리되면 6시간 제한이 의미가 없어진다.
-        bid = submit(cl, as_of)
-        if bid and poll(cl, bid, budget=SHORT_WAIT):
-            collect(cl, as_of)
-        elif bid:
-            log(f"- 아직 처리 중 — 여기서 끝낸다. collect_batch 가 회수한다({bid}).")
+        # 주문과 회수가 분리되면 6시간 제한이 의미가 없어진다. 상태 파일
+        # (data/batches_v2/)이 커밋되는 것이 그 전제다 — 워크플로를 볼 것.
+        r = submit(cl, as_of)
+        bid = r["batch_id"]
+        if bid and not r["unavailable"]:
+            if poll(cl, bid, budget=SHORT_WAIT):
+                pickup(cl, as_of)
+            else:
+                log(f"- 아직 처리 중 — 여기서 끝낸다. collect_batch 가 회수한다({bid}).")
+        if r["unavailable"]:
+            _die_dart(r["unavailable"])
 
 
 if __name__ == "__main__":

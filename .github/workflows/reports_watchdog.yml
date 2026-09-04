@@ -1,8 +1,13 @@
 name: 리포트 백필 워치독 (자동 재가동)
 
 # self-chain이 어떤 이유로든 끊겨도(런 실패·취소·디스패치 유실) 주기적으로 점검해
-# 상위 1000개 중 남은 리포트가 있고 진행 중인 run이 없으면 백필을 다시 시작한다.
+# 전 종목 중 아직 만들어야 할 리포트가 있고 진행 중인 run이 없으면 백필을 다시 시작한다.
 # → 컨테이너/세션 수명과 무관하게 "완성될 때까지 절대 멈추지 않음"을 보장.
+#
+# '만들어야 할 리포트' 는 scripts/_fill_remaining.py 가 센다 — 리포트가 없거나
+# 갱신 기준일(data/reports_v2_refresh)보다 오래된 것. 이미 주문이 들어가 결과를
+# 기다리는 종목, 생성 불가(skip)·보류(hold)·연속 실패(fail) 종목은 세지 않는다.
+# 생성기(pick_targets)와 같은 판정을 쓰므로 '남았다는데 할 게 없는' run 이 뜨지 않는다.
 
 on:
   schedule:
@@ -55,14 +60,19 @@ jobs:
           SHARDS=5          # 병렬 샤드 수
           FILL_TO=3000      # 전 종목(~2,687)까지 — 넉넉히
           remaining=$(python scripts/_fill_remaining.py "$FILL_TO")
-          echo "전 종목 중 남은 v2 리포트: $remaining"
+          inflight=$(python -c "import sys; sys.path.insert(0,'scripts'); import _reports_state as S; print(len(S.inflight_tickers()))")
+          echo "전 종목 중 만들어야 할 v2 리포트: $remaining · 주문 넣고 결과 기다리는 중: $inflight"
           if [ "$remaining" -le 0 ]; then
-            echo "→ 완료 상태. 재가동 불필요."
+            if [ "$inflight" -gt 0 ]; then
+              echo "→ 남은 것은 전부 주문이 들어가 있다. collect_batch 가 회수한다. 대기."
+            else
+              echo "→ 완료 상태. 재가동 불필요."
+            fi
             exit 0
           fi
           # 진행 중인 run 수가 샤드 수 이상이면 충분 → 대기.
           # 샤드 일부가 죽어 부족해지면(전부 0이 아니어도) 풀세트 재가동해 병렬도를 회복한다.
-          # 파일이 겹치지 않게 커밋되므로 약간의 중복은 충돌 없이 무해(소량 배치 낭비뿐).
+          # 같은 종목이 두 번 주문되는 일은 없다 — 진행 중 배치의 종목은 대상에서 빠진다.
           active=$(gh run list --workflow=generate_reports_v2.yml \
                      --status in_progress --json databaseId --jq 'length')
           queued=$(gh run list --workflow=generate_reports_v2.yml \
@@ -81,12 +91,11 @@ jobs:
             echo "⏸️ 리포트 자동 생성 정지 중 — data/reports_paused 를 지우면 재개" >> $GITHUB_STEP_SUMMARY
             exit 0
           fi
-          # 숫자가 깨져 있으면 재가동하지 않는다. generate_reports_v2.py 안에도
-          # 같은 검사가 있어 실제 과금은 어차피 막히지만, 여기서 걸러야
-          # 30분마다 시작하자마자 죽는 run 이 무더기로 뜨지 않는다.
-          if ! python scripts/check_valuation.py --strict > /dev/null 2>&1; then
-            echo "⛔ 자체 검산에서 항등식 위반 — 백필을 재가동하지 않는다."
-            echo "⛔ 밸류에이션 항등식 위반 — data/valuation_check.txt 확인" >> $GITHUB_STEP_SUMMARY
+          # DART 하루 호출 한도(2만 건)를 오늘 이미 넘겼으면 재가동해도 첫 호출에서
+          # 막힌다. 한국시간 자정에 풀리므로 그때까지 쉰다(생성기가 마커를 남긴다).
+          if python -c "import sys; sys.path.insert(0,'scripts'); import _reports_state as S; sys.exit(0 if S.quota_exhausted_today() else 1)"; then
+            echo "⏳ DART 하루 한도를 오늘 넘겼다 — 한국시간 자정까지 재가동하지 않는다."
+            echo "⏳ DART 하루 호출 한도 초과 — 자정(KST) 이후 자동 재개" >> $GITHUB_STEP_SUMMARY
             exit 0
           fi
           echo "→ 진행 $running < $SHARDS + 남은 $remaining개 → 샤드 ${SHARDS}개 병렬 백필 재가동"

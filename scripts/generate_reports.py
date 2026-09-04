@@ -172,8 +172,11 @@ _dart = None
 REPRT_NAME = {"11011": "사업보고서(연간)", "11013": "1분기", "11012": "반기", "11014": "3분기"}
 
 
+_dart_err = ""   # 초기화가 실패한 이유. 한도 초과(020)인지 키 문제인지 호출자가 가른다.
+
+
 def get_dart():
-    global _dart
+    global _dart, _dart_err
     if _dart is None:
         if not DART_API_KEY:
             _dart = False
@@ -182,6 +185,7 @@ def get_dart():
                 import OpenDartReader
                 _dart = OpenDartReader(DART_API_KEY)
             except Exception as e:
+                _dart_err = f"{type(e).__name__}: {e}"
                 log(f"- (DART 초기화 실패) {e}")
                 _dart = False
     return _dart or None

@@ -14,6 +14,11 @@ audit_valuation.py 는 네이버와 대조한다. 그런데 네이버 종목 화
 
   실행:  python3 scripts/check_valuation.py            → 요약 + data/valuation_check.txt
          python3 scripts/check_valuation.py --strict   → 오류가 있으면 exit 1 (CI 차단용)
+
+생성기(generate_reports_v2.submit)는 check_quant() 로 종목마다 새로 모은 숫자를
+검산해, 걸린 종목만 빼고 주문한다. 저장된 리포트 전체를 보는 이 파일의 main 은
+그 뒤의 감시용이다 — universe 에 없는 종목(상장폐지 등 유령 리포트)은 다시
+만들 수도 고칠 수도 없으므로 여기서 세지 않는다.
 """
 import json
 import re
@@ -25,6 +30,17 @@ ROOT = Path(__file__).resolve().parent.parent
 REPORTS = ROOT / "data" / "reports_v2"
 GRID = ROOT / "data" / "valuation.js"
 OUT = ROOT / "data" / "valuation_check.txt"
+STOCKS = ROOT / "data" / "stocks.js"
+
+
+def load_universe():
+    """현재 상장 종목 티커 집합. 못 읽으면 빈 집합(그러면 전부 검사한다)."""
+    try:
+        raw = STOCKS.read_text(encoding="utf-8")
+        obj = json.loads(raw[raw.find("{"): raw.rfind("}") + 1])
+        return {s["ticker"] for s in obj.get("stocks", [])}
+    except Exception:
+        return set()
 
 
 def load_grid():
@@ -98,7 +114,10 @@ def r_eps_denom(v, q, g):
     if not cands:
         return None
     tol = 0.10 if v.get("eps_src") == "순이익÷주식수" else 2.0
-    if any(near(eps * d, ttm, tol) for d in cands):
+    # EPS 는 정수 원으로 저장된다. 순이익÷주식수 가 -6.9 면 -7 로 실리고, 거꾸로
+    # 곱하면 순이익과 ±0.5원×주식수 만큼 어긋난다. 이익이 0 근처인 회사에서는
+    # 그것만으로 10% 를 넘는다(지엘팜텍 -1억). 반올림 몫은 항등식 위반이 아니다.
+    if any(near(eps * d, ttm, tol) or abs(eps * d - ttm) <= 0.5 * d + 1 for d in cands):
         return None
     best = min(cands, key=lambda d: abs(eps * d / ttm - 1))
     return (f"EPS {eps:,} × 주식수 {best:,} = {eps * best / 1e8:,.0f}억 인데 "
@@ -319,15 +338,41 @@ SOFT = [
 
 RULES = HARD + SOFT
 
+# 정량 블록만 있으면 판정할 수 있는 항등식 — 생성기가 주문 전에 종목마다 본다.
+# 그리드동기는 저장된 두 파일을 맞대는 규칙이라 새 숫자에는 적용할 수 없다.
+INTRINSIC = [(c, d, f) for c, d, f in HARD if c != "그리드동기"]
+
+
+def check_quant(q):
+    """새로 모은 정량 블록이 항등식을 지키는가. [(규칙, 설명)] — 비어 있으면 통과.
+    검사 자체가 예외를 내면 그것도 실패로 친다(모르는 값으로 글을 쓰지 않는다)."""
+    if not isinstance(q, dict):
+        return [("형식", "정량 블록이 없다")]
+    v = q.get("valuation") or {}
+    out = []
+    for code, _, fn in INTRINSIC:
+        try:
+            msg = fn(v, q, None)
+        except Exception as e:
+            msg = f"검사 중 예외 {type(e).__name__}: {e}"
+        if msg:
+            out.append((code, msg))
+    return out
+
 
 def main():
     grid = load_grid()
+    universe = load_universe()
     files = sorted(REPORTS.glob("*.json"))
     hits = {code: [] for code, _, _ in RULES}
     blank = []
     cover = Counter()
     n = 0
+    ghosts = 0
     for f in files:
+        if universe and f.stem not in universe:
+            ghosts += 1                      # 상장폐지 등 — 다시 만들 수 없는 리포트
+            continue
         try:
             r = json.loads(f.read_text(encoding="utf-8"))
         except Exception:
@@ -361,7 +406,8 @@ def main():
 
     hard = sum(len(hits[c]) for c, _, _ in HARD)
     soft = sum(len(hits[c]) for c, _, _ in SOFT)
-    lines = [f"# 밸류에이션 자체 검산 — 리포트 {n}종목 (외부 참조값 안 씀)",
+    lines = [f"# 밸류에이션 자체 검산 — 리포트 {n}종목 (외부 참조값 안 씀"
+             + (f" · universe 밖 {ghosts}종목 제외" if ghosts else "") + ")",
              f"# 항등식 위반 {hard}건(0 이어야 함) · 눈으로 볼 것 {soft}건 · "
              f"EPS·BPS 둘 다 빈칸 {len(blank)}종목", "",
              "── 항등식: 걸리면 예외 없이 우리 버그 ──"]

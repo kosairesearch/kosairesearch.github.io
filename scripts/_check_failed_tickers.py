@@ -19,8 +19,11 @@ import check_valuation as C
 cap = int(sys.argv[1]) if len(sys.argv) > 1 else 400
 
 grid = C.load_grid()
+universe = C.load_universe()
 bad = []
 for f in sorted((ROOT / "data" / "reports_v2").glob("*.json")):
+    if universe and f.stem not in universe:      # 유령 리포트는 고칠 수 없다 — 세지 않는다
+        continue
     try:
         r = json.loads(f.read_text(encoding="utf-8"))
     except Exception:

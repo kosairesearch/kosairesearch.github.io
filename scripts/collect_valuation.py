@@ -204,6 +204,10 @@ def main():
             if v:
                 log(f"  · {tk} {s['name']}: EPS={v.get('eps')} BPS={v.get('bps')} "
                     f"ROE={v.get('roe')} DPS={v.get('dps')} 성장={v.get('rev_g')}")
+        except v2.DartUnavailable as e:
+            # 한도 초과·점검이면 다음 종목도 똑같이 막힌다. 수백 번 헛돌지 않고 저장 후 끝낸다.
+            log(f"  ⛔ DART 를 쓸 수 없다({e}) — 여기까지 저장하고 끝낸다(다음 실행이 이어받는다)")
+            break
         except Exception as e:
             log(f"  · ⚠️ {tk} {s.get('name')} 실패: {type(e).__name__}: {e}")
         done += 1

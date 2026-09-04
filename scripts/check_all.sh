@@ -69,6 +69,12 @@ run "검증기 자체"   python3 scripts/tests/verify_numbers_test.py
 # 되묻는 블록만 원문에서 꺼내 실제 값으로 돌려 본다 — 틀렸던 종목은 고쳐지고
 # 맞았던 종목(삼성생명)은 안 건드리는지.
 run "생성기 분모"   python3 scripts/tests/bps_denominator_test.py
+# 주문→상태 파일→회수, 대상 선정(갱신 기준일·hold·fail·skip·진행 중), DART 한도
+# 구분, 그리고 실제로 났던 숫자 결함 세 가지(보해양조·지엘팜텍·한울앤제주)를
+# 가짜 DART·가짜 배치로 돌린다. 8월 20일 사고(배치 ID 유실)가 다시 나면 여기서 잡힌다.
+run "리포트 파이프라인" python3 scripts/tests/reports_pipeline_test.py
+# 분기 창·TTM 롤포워드 — 시즌마다 최신 분기가 표에 들어오는지.
+run "분기 창"       python3 scripts/test_quant_quarters.py
 
 echo
 if [ $bad -eq 0 ]; then
