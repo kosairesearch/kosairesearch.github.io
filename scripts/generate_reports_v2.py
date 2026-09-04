@@ -48,7 +48,8 @@ ROOT = Path(__file__).resolve().parent.parent
 sys.path.insert(0, str(Path(__file__).resolve().parent))
 
 import generate_reports as g  # log/extract_text/collect_sources/load_stocks 재사용
-import check_report_text     # 생성 직후 금지 표현 검사(프롬프트가 못 막은 것)
+import check_report_text     # 생성 직후 금지 표현 검사 + 걸린 문장 교정(프롬프트가 못 막은 것)
+import fix_hanja             # 본문에 섞인 한자를 한글로(모델이 '전년比' 처럼 쓴다)
 import check_valuation       # 종목별 항등식 — 숫자가 깨진 종목은 글을 쓰지 않는다
 import _reports_state as S   # skip·hold·fail 마커 · 배치 상태 파일 · 갱신 기준일
 
@@ -211,7 +212,44 @@ ACC_NAMES = {
 
 
 # 계정명 접두(로마숫자·번호 + 구분점) 제거용 — "IV.영업이익"→"영업이익", "1.기본주당이익"→"기본주당이익"
-_NM_PREFIX = re.compile(r"^[IVXLCDM0-9]{1,4}[.)]\s*")
+_NM_PREFIX = re.compile(r"^[IVXLCDMⅠ-Ⅻ0-9]{1,4}[.)]\s*")
+# 계정명 꼬리 — "(손실)"·"(손익)"·"(주1)"·"*" 같은 표기 차이로 같은 계정을 못 알아보는 일이
+# 분기 순이익 빈칸 155건·매출 빈칸 177건의 상당수였다.
+_NM_SUFFIX = re.compile(r"(\((순)?손실\)|\(손익\)|\(결손\)|\(주\d*\)|\*+|\(단위:[^)]*\))+$")
+
+
+def _norm_acc(anm):
+    """계정명을 비교하기 좋은 꼴로: 접두 번호·꼬리 표기를 떼고 공백 없이."""
+    s = _NM_PREFIX.sub("", anm.replace(" ", ""))
+    return _NM_SUFFIX.sub("", s)
+
+
+# 정확한 이름 목록(ACC_NAMES)에 없는 변형을 받는 정규식. sj_ok 로 재무제표 종류가
+# 먼저 걸러진 뒤에 쓰인다 — 손익계산서에서 '지배…' 로 시작하는 행은 지배주주 순이익이고,
+# 재무상태표에서 같은 접두는 지배지분이다. '포괄' 과 '주당' 이 들어간 행은 뺀다
+# (총포괄손익 귀속분·주당이익은 다른 계정이다).
+_ACC_RE = {
+    "np_owner":     re.compile(r"^지배(?!.*(포괄|주당)).*"),
+    "np_nci":       re.compile(r"^비지배(?!.*(포괄|주당)).*"),
+    "np":           re.compile(r"^(연결)?(당기|분기|반기)?순(이익|손익)$"),
+    "eps_basic":    re.compile(r"^(지배.*?)?(보통주)?기본(및희석)?주당(순)?(이익|손익)$|^주당(순)?(이익|손익)$"),
+    "equity_owner": re.compile(r"^지배(?!.*포괄).*"),
+    "equity_nci":   re.compile(r"^비지배(?!.*포괄).*"),
+    "cfo":          re.compile(r"^영업활동.*현금흐름$"),
+    "rev":          re.compile(r"^(총)?매출(액)?(\(수익\))?$|^수익\(매출액\)$|^영업수익$"),
+    "op":           re.compile(r"^영업(이익|손익)$"),
+}
+
+
+def _name_hit(key, anm):
+    """계정명이 이 키에 해당하는가 — 정확한 목록 먼저, 그 다음 정규화한 이름, 마지막으로 정규식."""
+    if anm in ACC_NAMES[key]:
+        return True
+    a2 = _norm_acc(anm)
+    if a2 in ACC_NAMES[key]:
+        return True
+    rx = _ACC_RE.get(key)
+    return bool(rx and rx.fullmatch(a2))
 
 
 def _fin_all(dart, ticker, year, reprt):
@@ -270,10 +308,9 @@ def _fin_all(dart, ticker, year, reprt):
                 continue
             if key in ("np_owner", "np_nci") and sj != "IS":
                 continue
-            # 은행 등은 계정명에 로마숫자·번호 접두("IV.영업이익","I.영업수익")가 붙어
-            # 정확매칭이 실패한다 → 접두 제거 후 비교.
-            anm2 = _NM_PREFIX.sub("", anm)
-            if anm in ACC_NAMES[key] or anm2 in ACC_NAMES[key]:
+            # 은행 등은 계정명에 로마숫자·번호 접두("IV.영업이익","I.영업수익")가 붙고,
+            # 적자 회사는 꼬리에 "(손실)" 이 붙는다 → 정규화한 뒤 비교(_name_hit).
+            if _name_hit(key, anm):
                 out[key] = {"amt": amt, "add": add}
     # 지배주주 순이익이 제대로 잡혔는지 본다.
     #
@@ -340,6 +377,42 @@ def _fin_all(dart, ticker, year, reprt):
             for aid, anm, sj, amt, add in rows:
                 if sj in ("IS", "CIS"):
                     fp.write(f"  {sj:<4} 당기={amt}  누적={add}  | {anm} | {aid}\n")
+    return out
+
+
+def _fin_summary(dart, ticker, year):
+    """전체 재무제표(fnlttSinglAcntAll)가 없는 해를 요약재무(fnlttSinglAcnt)로 채운다.
+
+    보험·증권 등 금융사 180곳이 2022년 칸이 비어 연간 표가 3년치였다(IFRS17 전환
+    전 보고서는 계정 체계가 달라 전체 재무제표에서 아무 계정도 못 집는다). 요약재무는
+    매출액·영업이익·당기순이익·자산·부채·자본총계를 표준 이름으로 준다. 지배주주
+    구분은 없다 — 호출자가 다른 해의 비지배 유무를 보고 np_owner 를 정한다.
+    _fin_all 과 같은 모양의 dict 를 돌려준다(없으면 None)."""
+    df = _dart_call(g._safe_finstate, dart, ticker, year, "11011")
+    if df is None or getattr(df, "empty", True):
+        return None
+    want = {"매출액": "rev", "영업이익": "op", "당기순이익": "np",
+            "자산총계": "assets", "부채총계": "liab", "자본총계": "equity"}
+    out, fs_used = {}, None
+    for fs in ("CFS", "OFS"):
+        rows = df[df["fs_div"].astype(str) == fs] if "fs_div" in df.columns else df
+        got = {}
+        for _, r in rows.iterrows():
+            nm = _norm_acc(str(r.get("account_nm", "")))
+            key = want.get(nm)
+            if key and key not in got:
+                v = g._num(r.get("thstrm_amount"))
+                if v is not None:
+                    got[key] = {"amt": v, "add": v}
+        if got:
+            out, fs_used = got, fs
+            break
+    if not out:
+        return None
+    out["_fs"] = fs_used
+    out["_reprt"] = "11011"
+    out["_ccy"] = "KRW"
+    out["_src"] = "요약재무"
     return out
 
 
@@ -411,6 +484,10 @@ def collect_quant(dart, ticker, krx_row, stock):
     for yr in range(cur - 1, cur - 5, -1):
         d = _fin_all(dart, ticker, yr, "11011")
         if not d:
+            d = _fin_summary(dart, ticker, yr)      # 전체 재무제표가 없는 해 — 요약재무로
+            if d:
+                log(f"  · {yr} 연간은 요약재무로 채운다(전체 재무제표에서 계정을 못 읽음)")
+        if not d:
             continue
         annual_fs[yr] = d.get("_fs")
         rev, op = _cum(d, "rev"), _cum(d, "op")
@@ -429,6 +506,8 @@ def collect_quant(dart, ticker, krx_row, stock):
             "liab": li, "cfo": _cum(d, "cfo"),
             "eps_basic": _cum_eps(d),
         }
+        if d.get("_src") == "요약재무":
+            row["src"] = "요약재무"                   # 지배주주 구분이 없는 해 — 아래에서 정리
         row["opm"] = round(op / rev * 100, 1) if (op is not None and rev) else None
         base_np = row["np_owner"]
         base_eq = eqo if eqo is not None else eq
@@ -437,6 +516,16 @@ def collect_quant(dart, ticker, krx_row, stock):
         row["debt_ratio"] = round(li / eq * 100, 1) if (li is not None and eq) else None
         annual.append(row)
         time.sleep(0.3)
+
+    # 요약재무로 채운 해에는 지배주주 순이익이 없다. 다른 해에서 전체와 지배가 갈리는
+    # 회사(비지배지분 있음)면 전체 순이익을 지배주주 칸에 넣지 않는다 — 표의 머리말과
+    # 다른 값이 된다. 갈리지 않는 회사(전체 = 지배)면 그대로 둔다.
+    _split = any(r.get("src") != "요약재무" and r.get("np") is not None and r.get("np_owner") is not None
+                 and abs(r["np"] - r["np_owner"]) > abs(r["np"]) * 0.01 for r in annual)
+    for r in annual:
+        if r.get("src") == "요약재무" and _split:
+            r["np_owner"] = None
+            r["roe"] = None
 
     # ── 분기 실적: '최근 5개 분기'를 굴려서 만든다 ─────────────────────────
     # 예전에는 (전년 Q1~Q4 + 올해 Q1)로 고정돼 있었다. 1분기 시즌에는 그게
@@ -668,7 +757,7 @@ def collect_quant(dart, ticker, krx_row, stock):
     if unit != 1:
         log(f"  [단위보정] {ticker} ×{unit:,.4g}"
             f" ({'환율 환산 포함 · ' if fx and fx != 1 else ''}천원/백만원 단위 공시 추정)")
-        money = ("rev", "op", "np", "np_owner", "equity", "equity_owner", "cfo", "liab", "assets")
+        money = ("rev", "op", "np", "np_owner", "equity", "equity_owner", "equity_nci", "cfo", "liab", "assets")
         for row in annual:
             for k in money:
                 if row.get(k) is not None:
@@ -939,10 +1028,21 @@ def collect_quant(dart, ticker, krx_row, stock):
     eqo_owner = _bs(d_cur, "equity_owner")
     eqo_total = _bs(d_cur, "equity")
     eqo_owner = _owner_equity(eqo_owner, eqo_total, _bs(d_cur, "equity_nci"))
+    eq_src = "분기말"
+    # 분기 재무상태표에서 지배지분 태그를 못 읽었는데 비지배지분이 큰 회사는 자본총계로
+    # 대신하면 안 된다. SKC 는 자본총계 2.03조 중 비지배가 1.19조라 BPS 가 52,663
+    # (KRX 22,956)으로 2.4배가 됐다 — 34종목이 그랬다. 비지배지분은 분기에 크게
+    # 움직이지 않으므로 결산 비지배지분을 빼서 지배지분으로 본다.
+    if eqo_owner is None and eqo_total is not None and fy_row:
+        _fy_nci, _fy_eq = fy_row.get("equity_nci"), fy_row.get("equity")
+        if _fy_nci and _fy_eq and abs(_fy_nci) > abs(_fy_eq) * 0.01:
+            eqo_owner = eqo_total - _fy_nci / unit       # 연간 값은 이미 단위보정됐다
+            eq_src = "분기말·결산 비지배지분 차감"
+            log(f"  · 분기 지배지분 태그 없음 — 자본총계 {eqo_total * unit / 1e12:,.2f}조에서 "
+                f"결산 비지배지분 {_fy_nci / 1e12:,.2f}조를 뺀다")
     eqo_q = (eqo_owner or eqo_total)
     if eqo_q is not None:
         eqo_q *= unit
-    eq_src = "분기말"
     if eqo_q is None and fy_row:
         # 분기 재무상태표에서 자본을 못 집는 회사가 272곳이었다. 연간에는
         # 값이 있는데 분기 보고서 형식이 달라 놓치는 경우다.
@@ -1044,6 +1144,7 @@ def collect_quant(dart, ticker, krx_row, stock):
     # 비지배지분을 못 읽는 회사는 확인할 길이 없으므로, 자릿수가 틀린
     # 수준(1.5배 초과)일 때만 막는다.
     eq_nci = _bs(d_cur, "equity_nci")
+    eq_broken = False
     if bps_q and eqo_owner and eqo_total:
         if eq_nci is not None:
             gap = abs((eqo_owner + eq_nci) - eqo_total)
@@ -1063,6 +1164,7 @@ def collect_quant(dart, ticker, krx_row, stock):
                 f"{(eq_nci or 0) * unit/1e12:,.2f}조 ≠ 자본총계 "
                 f"{eqo_total * unit/1e12:,.2f}조")
             bps_q = pbr_q = None
+            eq_broken = True
 
     # 이익으로 설명되지 않는 자본 변동은 막지 않되 로그로는 남긴다. 대개
     # 기타포괄손익·유상증자지만, 추출 오류를 뒤늦게 되짚을 때 실마리가 된다.
@@ -1137,6 +1239,25 @@ def collect_quant(dart, ticker, krx_row, stock):
                 valuation[dst] = v if v > 0 else None
             except Exception:
                 valuation[dst] = None
+
+    # 빈칸에는 이유가 있다. 화면이 '—' 만 보여 주면 독자는 데이터가 없는지 회사가
+    # 이상한지 모른다. 코드로 남기고 화면(stock.html)이 문장으로 풀어 보여 준다.
+    #   loss 적자 · fx 환율 없음 · shares 주식수 없음 · mismatch 회사 공시 간 불일치 ·
+    #   no_income 순이익 없음 · impaired 자본잠식 · equity_check 자본 항등식 불일치 ·
+    #   no_equity 자본 없음 · no_div 배당 공시 없음 · ref_mismatch 참조값과 크게 다름(cross_check)
+    hidden = {}
+    if valuation["eps"] is None:
+        hidden["eps"] = ("fx" if ccy_unknown else "shares" if not total_sh else
+                         "mismatch" if eps_hidden else "no_income" if ttm_np is None else "unknown")
+    elif valuation["eps"] <= 0:
+        hidden["per"] = "loss"
+    if valuation["bps"] is None:
+        hidden["bps"] = ("fx" if ccy_unknown else "impaired" if (eqo_q is not None and eqo_q <= 0) else
+                         "equity_check" if eq_broken else "mismatch" if eps_hidden else "no_equity")
+    if valuation["dps"] is None:
+        hidden["dps"] = "no_div"
+    if hidden:
+        valuation["hidden"] = hidden
 
     out = {
         "asOf": datetime.date.today().isoformat(),
@@ -1287,7 +1408,7 @@ SCHEMA_V2 = """{
   "earnings": {"ko": "실적 분석 문단(7~9문장). 아래 [확정 재무]의 연간·분기 수치를 직접 인용·해석. 증감 원인, 마진 추이, 일회성 요인", "en": "..."},
   "industry": {"ko": "산업 분석 문단(6~8문장). 전방시장 수급·사이클 위치·경쟁사 대비 포지션", "en": "..."},
   "outlook":  {"ko": "전망 문단(6~8문장). 회사 가이던스·수주·증설·신제품 일정 등 확인된 사실 기반", "en": "..."},
-  "valuation_comment": {"ko": "밸류에이션 해설 4~6문장. ★현재 PER·PBR·배당수익률·현재가·시가총액은 주가 따라 매일 바뀌므로 '정확한 수치'를 문장에 쓰지 말 것(그 값은 화면 카드가 실시간 표시). 대신 수준을 관계로 서술 — 예: 과거 거래 밴드 상단/하단, 업종 평균 상회/하회, 순자산 대비 프리미엄/할인. ★ROE(자기자본이익률)는 절대 언급하지 말 것(서비스에서 제외된 지표). EPS·BPS를 언급할 땐 제공된 valuation의 헤드라인 값(eps, bps = 화면 카드와 동일)만 사용. 특정 연도 연간 EPS 수치는 valuation_comment에 쓰지 말 것(연간 추이 해설은 earnings 섹션이 담당). 다년 변화가 필요하면 '적자→흑자 전환', '이익 회복' 같은 방향으로만 표현. 'TTM'·'후행' 등 전문 용어는 표면에 쓰지 말 것. '비싸다/싸다' 단정·권유 금지, 사실 비교만", "en": "..."},
+  "valuation_comment": {"ko": "밸류에이션 해설 4~6문장. ★현재 PER·PBR·배당수익률·현재가·시가총액은 주가 따라 매일 바뀌므로 '정확한 수치'를 문장에 쓰지 말 것(그 값은 화면 카드가 실시간 표시). ★EPS·BPS·DPS 같은 주당 지표의 수치도 쓰지 말 것 — 공시가 갱신되면 값이 바뀌어 본문만 낡은 숫자로 남는다. 대신 수준을 관계로 서술 — 예: 과거 거래 밴드 상단/하단, 업종 평균 상회/하회, 순자산 대비 프리미엄/할인. ★ROE(자기자본이익률)는 절대 언급하지 말 것(서비스에서 제외된 지표). 특정 시점의 주가 수준(…원대)도 쓰지 말 것. 다년 변화가 필요하면 '적자→흑자 전환', '이익 회복' 같은 방향으로만 표현. 'TTM'·'후행' 등 전문 용어는 표면에 쓰지 말 것. '비싸다/싸다' 단정·권유 금지, 사실 비교만", "en": "..."},
   "bull":     [ {"title": {"ko":"","en":""}, "body": {"ko":"3~4문장","en":""}}, ... 3개 ],
   "bear":     [ {"title": {"ko":"","en":""}, "body": {"ko":"3~4문장","en":""}}, ... 3개 ],
   "risks":    [ {"cat": {"ko":"","en":""}, "body": {"ko":"3~4문장","en":""}}, ... 3개 ],
@@ -1305,11 +1426,17 @@ SYSTEM_V2 = (
 
 def build_prompt_v2(stock, quant, as_of):
     qjson = json.dumps(quant, ensure_ascii=False)
+    _yrs = ", ".join(str(a.get("year")) for a in (quant.get("annual") or []))
+    _qs = quant.get("quarterly") or []
+    _qwin = f"{_qs[0]['q']}~{_qs[-1]['q']}" if _qs else "없음"
+    _ttm = (quant.get("valuation") or {}).get("ttm_window") or "없음"
     return f"""다음 종목의 기업 리서치 리포트(v2)를 작성하세요.
 
 [기준 데이터 — {as_of} KST]
 - 종목명: {stock['name']} ({stock['ticker']}) · {stock.get('market','')} · {stock.get('sector','')}
 - 현재가 {stock.get('price'):,}원 · 시가총액 {stock.get('mcap'):,.1f}조원
+- 재무 반영 범위: 연간 {_yrs} · 분기 {_qwin} · 최근 4개 분기 창 {_ttm}. 이보다 최신 분기 실적은 아직 공시 확정 전이니 '확정치' 로 쓰지 말 것(검색으로 확인된 잠정치는 출처·시점과 함께 잠정임을 밝힐 것).
+- 오늘은 {as_of[:10]} 이다. checkpoints 의 when 은 이 날짜 이후에 오는 일정만 쓸 것(이미 지난 일정 금지).
 
 [확정 재무 — DART 공시·KRX 공식 값. 모든 단위 원. 아래 JSON의 숫자만 '사실'로 사용]
 {qjson}
@@ -1317,15 +1444,15 @@ def build_prompt_v2(stock, quant, as_of):
 [작성 지침]
 1. web_search로 최신 사업 현황·업황·뉴스·가이던스를 조사하세요(한국어, 3~6회). 신뢰 출처만: DART·기업 IR·증권사 리포트·주요 언론. 나무위키 등 위키·블로그·커뮤니티 금지.
 2. **재무 수치는 위 [확정 재무] JSON의 값만 사용하세요.** 검색에서 다른 수치가 나오면 위 값을 우선합니다. 거기 없는 숫자(예: 부문별 매출액)는 검색으로 확인된 것만 출처·시점과 함께 쓰고, 확인 안 되면 정성 서술로 대체하세요. 숫자를 절대 지어내지 마세요.
-3. earnings 섹션은 제공된 연간·분기 실적 수치(과거 확정치라 안 변함)를 구체적으로 인용·해석하세요. **valuation_comment 에서는 '현재 PER·PBR·배당수익률·현재가·시가총액'의 정확한 수치를 문장에 쓰지 마세요** — 이 값들은 주가 따라 매일 바뀌고 화면 카드가 실시간으로 표시합니다. 대신 그 수준을 '관계'로 서술하세요(예: "과거 거래 밴드(약 10~20배)의 상단을 웃돈다", "배당수익률은 업종 평균을 밑도는 편", "순자산 대비 프리미엄이 큰 구간"). 과거 PER 밴드, DPS, 다년 실적 추세는 인용해도 됩니다. **★ROE(자기자본이익률)는 절대 언급하지 마세요 — 서비스에서 제외된 지표입니다.** EPS·BPS는 [확정 재무]의 valuation.eps·bps(사용자 카드와 동일한 값)만 쓰고, 연도별 EPS 수치는 valuation_comment에 넣지 마세요(연간 실적 해설은 earnings 섹션에서). 다년 변화가 필요하면 "적자에서 흑자로 전환", "이익 회복" 처럼 방향으로만 표현하세요. 'TTM'·'선행/후행' 같은 용어와 '비싸다/싸다' 단정·매수/매도 권유는 금지.
+3. earnings 섹션은 제공된 연간·분기 실적 수치(과거 확정치라 안 변함)를 구체적으로 인용·해석하세요. **valuation_comment 에서는 '현재 PER·PBR·배당수익률·현재가·시가총액'의 정확한 수치를 문장에 쓰지 마세요** — 이 값들은 주가 따라 매일 바뀌고 화면 카드가 실시간으로 표시합니다. **주당 지표(EPS·BPS·DPS)의 수치도 어느 섹션에든 쓰지 마세요** — 공시가 갱신되면 값이 바뀌는데 본문은 그대로 남아 낡은 숫자가 됩니다. 대신 그 수준을 '관계'로 서술하세요(예: "과거 거래 밴드(약 10~20배)의 상단을 웃돈다", "배당수익률은 업종 평균을 밑도는 편", "순자산 대비 프리미엄이 큰 구간", "주당순자산을 크게 밑도는 주가"). 과거 특정 시점의 주가 수준("3만원대까지 올랐다가 7,500원대")도 쓰지 마세요 — 오늘 주가는 화면에 있고 옛 주가는 독자에게 소용이 없습니다. 과거 PER 밴드, 다년 실적 추세는 인용해도 됩니다. **★ROE(자기자본이익률)는 절대 언급하지 마세요 — 서비스에서 제외된 지표입니다.** 다년 변화가 필요하면 "적자에서 흑자로 전환", "이익 회복" 처럼 방향으로만 표현하세요. 'TTM'·'선행/후행' 같은 용어와 '비싸다/싸다' 단정·매수/매도 권유는 금지.
 4. checkpoints 는 '다음에 무엇을 확인해야 하는가'입니다 — 다가오는 분기 실적 발표, 수주·증설·규제 이벤트 등 확인 가능한 일정 위주로.
 5. 균형: 강세·약세 요인을 같은 무게로. **우리(코사이)의 투자의견·매수/매도·목표주가는 절대 제시하지 말 것**(정보 제공용).
 5-0. **증권사 목표주가 인용은 허용** — 우리 의견이 아니라 '누가 무엇을 제시했다'는 사실이기 때문이다. 다만 아래 셋을 모두 지킬 때만 쓰고, 하나라도 못 지키면 아예 쓰지 말 것.
-   ① **출처와 시점을 함께** 쓴다 — "KB증권이 2026년 6월 리포트에서 …로 제시했다". 증권사명이나 시점 중 하나라도 확인되지 않으면 쓰지 않는다.
+   ① **출처와 시점을 함께** 쓴다 — "KB증권이 2026년 6월 리포트에서 …로 제시했다". 증권사명이나 시점 중 하나라도 확인되지 않으면 쓰지 않는다. "주요 증권사들이 제시한 목표주가는 37만~67만원" 처럼 증권사명 없이 범위를 옮기는 것도 금지다.
    ② **우리 판단이 아님이 문장에서 분명**해야 한다 — 전달 동사("제시했다", "밝혔다", "전망했다")로 끝내고, 우리 voice로 동조하거나 평가하지 않는다.
    ③ **6개월이 지난 것은 쓰지 않는다** — 낡은 목표주가를 현재형으로 옮기면 사실상 거짓이 된다. 시점이 오래됐으면 숫자 대신 정성 서술로 대체한다.
 5-1. **단정적 주가 방향성 금지(중립 필수)**: KOSAI는 등록된 투자자문업자가 아니다. "상승 여력(이 충분/크다)", "추가 상승 여지", "재평가 모멘텀이 온다", "조정 후 반등", "저평가라 오를 것", "매집 신호=강세" 같은 *주가가 오른다/내린다는 우리 자신의 단정·예측*은 절대 쓰지 말 것. 대신 사실과 강세 vs 약세 구도를 제시하고 판단은 독자에게 맡긴다. ㅇ 밸류에이션·방향성 의견은 *출처를 명시한 인용*으로만 허용("○○증권은 …라고 평가했다") — 이때도 우리 voice로 동조하지 말 것. ㅇ '상승 여력'은 *영업이익률·가동률·침투율·환원율 등 사업 지표*의 개선 여지에만 한정해 쓰고, *주가/밸류 멀티플*에는 쓰지 말 것. ㅇ 내부자·기관의 지분 매수는 '매집해서 오른다'가 아니라 사실(누가·언제·얼마)과 중립 해석으로만.
-6. 한국어(ko)/영어(en) 모두 작성. 영어에 한국어 혼입 금지.
+6. 한국어(ko)/영어(en) 모두 작성. **영어(en) 문장에는 한글 문자를 한 글자도 쓰지 말 것** — 회사·제품·기관 고유명사는 로마자 또는 영문 명칭으로 쓴다(예: "GC녹십자" → "GC Biopharma", "조선제분" → "Chosun Flour Mills"). 인용문도 영어로 옮긴다.
 7. **전 섹션 공통 금지어** — 아래는 valuation_comment 뿐 아니라 lead·keypoints·business·earnings·industry·outlook·bull·bear·risks·checkpoints·verdict 어디에도 쓰지 말 것. (이 규칙이 valuation_comment 설명 안에만 있던 동안 다른 섹션으로 계속 새어 나왔다.)
    · **ROE·자기자본이익률** — 서비스 화면에서 뺀 지표다. 화면에 없는 지표가 글에만 나오면 독자가 찾을 곳이 없다. 수익성을 말해야 하면 영업이익률로 쓴다.
    · **'TTM'·'선행 PER'·'후행 PER'** — 일반 독자가 모르는 용어다. 꼭 필요하면 "최근 네 개 분기 기준"처럼 풀어 쓴다.
@@ -1365,6 +1492,12 @@ def _sanitize(obj):
     return obj
 
 
+def _bi(o):
+    """ko·en 이 둘 다 비어 있지 않은 문자열인가."""
+    return (isinstance(o, dict) and isinstance(o.get("ko"), str) and o["ko"].strip() != ""
+            and isinstance(o.get("en"), str) and o["en"].strip() != "")
+
+
 def valid_v2(rep):
     try:
         need = ("title", "lead", "keypoints", "business", "earnings", "industry",
@@ -1373,6 +1506,24 @@ def valid_v2(rep):
         missing = [k for k in need if k not in rep]
         if missing:
             log(f"    (검증 실패: 누락 키 {missing})")
+            return False
+        # 모양도 본다. 모델이 가끔 bull 을 한국어만 쓰고 bull_en 을 따로 만들거나,
+        # 항목의 en 을 빠뜨린다(012450). 그러면 영어 화면에 빈칸·undefined 가 뜬다.
+        for k in ("title", "lead", "business", "earnings", "industry", "outlook", "valuation_comment"):
+            if not _bi(rep[k]):
+                log(f"    (검증 실패: {k} 에 ko/en 이 없다)")
+                return False
+        if not all(_bi(x) for x in rep["keypoints"]):
+            log("    (검증 실패: keypoints 항목에 ko/en 이 없다)")
+            return False
+        for k, fields in (("bull", ("title", "body")), ("bear", ("title", "body")),
+                          ("risks", ("cat", "body")), ("checkpoints", ("when", "what"))):
+            for x in rep[k]:
+                if not isinstance(x, dict) or not all(_bi(x.get(f)) for f in fields):
+                    log(f"    (검증 실패: {k} 항목 구조 {list(x) if isinstance(x, dict) else type(x).__name__})")
+                    return False
+        if not _bi((rep.get("verdict") or {}).get("body")):
+            log("    (검증 실패: verdict.body 에 ko/en 이 없다)")
             return False
         for k in ("business", "earnings", "industry", "outlook"):
             if len(rep[k]["ko"]) < 150 or len(rep[k]["en"]) < 150:
@@ -1547,6 +1698,8 @@ def cross_check(tk, name, valuation):
     if not skip_eps_ref and gross_error(valuation.get("eps"), nv.get("eps")):
         issues.append(f"EPS {valuation.get('eps')}↔ref {nv.get('eps')}")
         valuation["eps"] = valuation["per"] = None
+        valuation.setdefault("hidden", {})["eps"] = "ref_mismatch"
+        valuation["hidden"].pop("per", None)
     # BPS 는 참조값이 가장 늦게 따라오는 지표다. 대신 collect_quant 에서
     # '분기말 자본이 이익으로 설명되는가' 를 이미 확인했다 — 시차를 타지 않는
     # 자체 기준이라 이쪽이 더 믿을 만하다. 참조값 대조는 그 뒤의 그물로 남긴다.
@@ -1555,12 +1708,14 @@ def cross_check(tk, name, valuation):
     if not bps_self_ok and gross_error(valuation.get("bps"), nv.get("bps")):
         issues.append(f"BPS {valuation.get('bps')}↔ref {nv.get('bps')}")
         valuation["bps"] = valuation["pbr"] = None
+        valuation.setdefault("hidden", {})["bps"] = "ref_mismatch"
     # 배당수익률 게이트 — 네이버 배당수익률과 30% 넘게 어긋나면 DPS 숨김.
     #   액면분할(분할 전 DPS) 등 배당 오류를 자동 차단. 배당은 시점·특별배당 차이로 30% 허용.
     our_div, nv_div = valuation.get("div"), nv.get("dividendyieldratio")
     if our_div and nv_div and abs(our_div - nv_div) / abs(nv_div) > 0.30:
         issues.append(f"배당 {our_div}%↔ref {nv_div}%")
         valuation["dps"] = valuation["div"] = None
+        valuation.setdefault("hidden", {})["dps"] = "ref_mismatch"
     if issues:
         log(f"  ❌ {name} 중대오류 차단 → 해당 지표 숨김: {' / '.join(issues)}")
     else:
@@ -1891,14 +2046,33 @@ def collect(cl, as_of, state):
                 "dataDate": state.get("dataDate") or data.get("dataDate", ""),
                 "quant": (state.get("quant") or {}).get(tk, {}),
             })
+            # 한자 → 한글. 프롬프트가 금지해도 '전년比'·'-253億원' 처럼 샌다(228개 리포트).
+            # 읽는 사람이 못 읽는 글자는 그 자체로 결함이라 저장 전에 고친다.
+            try:
+                rep, _hanja = fix_hanja.walk(rep)
+                if _hanja:
+                    log(f"  · {tk} 한자 {len(_hanja)}곳 한글로: " + ", ".join(f"{a.strip()[:14]}→{b}" for a, b in _hanja[:3]))
+            except Exception as e:
+                log(f"  · ({tk} 한자 변환 실패: {type(e).__name__}: {e})")
             # 금지 표현 검사 — 프롬프트는 부탁이지 강제가 아니다. 실제로 2,563개 중
-            # 96개(3.7%)가 금지해 둔 표현을 담고 있었다. 여기서 걸러 로그에 남기면
-            # 어느 종목을 다시 만들어야 하는지 run 로그만 보고 알 수 있다.
-            # 리포트는 그대로 쓴다 — 글 하나 때문에 종목을 통째로 비우는 게 더 나쁘다.
+            # 99개(3.9%)가 금지해 둔 표현을 담고 있었다. 걸리면 그 섹션만 작은 모델에
+            # 넘겨 위반 문장을 고쳐 쓴다(check_report_text.repair). 고친 결과가 검사에
+            # 덜 걸릴 때만 채택한다. 그래도 남으면 로그에 남기고 리포트는 그대로 쓴다 —
+            # 글 하나 때문에 종목을 통째로 비우는 게 더 나쁘다.
             try:
                 bad_text = check_report_text.check(rep)
             except Exception:
                 bad_text = []
+            if bad_text and os.getenv("REPORT_REPAIR", "1") != "0":
+                try:
+                    fixed = check_report_text.repair(cl, rep, bad_text)
+                except Exception as e:
+                    fixed = None
+                    log(f"  · ({tk} 교정 호출 실패: {type(e).__name__}: {e})")
+                if fixed:
+                    rep, remaining = fixed
+                    log(f"  · ✏️ {tk} 표현 교정 {len(bad_text)}건 → 남은 {len(remaining)}건")
+                    bad_text = remaining
             if bad_text:
                 flagged.append(tk)
                 kinds = sorted({h["rule"] for h in bad_text})

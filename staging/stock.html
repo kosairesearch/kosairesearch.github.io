@@ -1085,7 +1085,8 @@ document.addEventListener('click', function (e) {
     ko:{ home:'홈', reports:'리포트', watch:'워치리스트 추가', watched:'워치리스트 추가됨', watchShort:'워치리스트',
       mk:{price:'현재가',chg:'전일 대비',mcap:'시가총액',amt:'거래대금',vol:'거래량',shares:'상장주식수',market:'시장',sector:'업종',per:'PER',pbr:'PBR',roe:'ROE',eps:'EPS',divy:'배당수익률'},
       sec:{overview:'리포트 개요',business:'사업 구조',recent:'최근 실적·주가',outlook:'전망',bull:'강세 요인',bear:'약세 요인',risk:'리스크 요인',verdict:'종합 의견',sources:'참고 출처',fin:'실적 추이',earnings:'실적 분석',industry:'산업 분석',valuation:'밸류에이션',chk:'다음 체크포인트'},
-      fin:{annual:'연간 실적 (연결)',quarterly:'분기 실적 (연결)',year:'연도',q:'분기',rev:'매출액',op:'영업이익',np:'지배주주 순이익',opm:'영업이익률',roe:'ROE',debt:'부채비율',per:'PER',pbr:'PBR',divy:'배당수익률',eps:'EPS',bps:'BPS',dps:'주당배당금',na:'산출 불가 (적자)',nodata:'—',chartAnnual:'연간 매출·영업이익 추이',chartQuarter:'분기 매출·영업이익 추이',unitJo:'단위: 조원',
+      fin:{annual:'연간 실적 (연결)',quarterly:'분기 실적 (연결)',year:'연도',q:'분기',rev:'매출액',op:'영업이익',np:'지배주주 순이익',opm:'영업이익률',roe:'ROE',debt:'부채비율',per:'PER',pbr:'PBR',divy:'배당수익률',eps:'EPS',bps:'BPS',dps:'주당배당금',na:'산출 불가 (적자)',nodata:'—',
+        hiddenT:'표시하지 않은 값', hidden:{loss:'최근 4개 분기 적자라 산출하지 않음',fx:'공시 통화의 환율을 확보하지 못함',shares:'주식수를 확인하지 못함',mismatch:'회사가 공시한 두 값이 서로 어긋나 확인하지 못함',no_income:'최근 4개 분기 순이익을 확인하지 못함',impaired:'자본잠식(자본이 0 이하)',equity_check:'자본 항등식이 맞지 않아 확인하지 못함',no_equity:'분기말 자본을 확인하지 못함',no_div:'배당 공시가 없음',ref_mismatch:'외부 참조값과 크게 달라 보류함',unknown:'확인하지 못함'},chartAnnual:'연간 매출·영업이익 추이',chartQuarter:'분기 매출·영업이익 추이',unitJo:'단위: 조원',
         foot:'· 재무는 DART 공시 연결 확정치 · PER·EPS는 최근 4개 분기({win}) 지배주주 순이익, PBR·BPS는 최근 분기말 지배주주 자본 기준 · 배당은 DART 공시 주당현금배당금 기준'},
       eyebrow:'AI 리서치 리포트', reportDate:'리포트 작성일', dataDate:'데이터 기준일', model:'생성 모델', stance:'투자 의견',
       srcKRX:'한국거래소 (KRX)', srcKRXsub:'시세·시가총액 데이터', srcDART:'금융감독원 전자공시 (DART)', srcDARTsub:'재무·공시 원문',
@@ -1106,7 +1107,8 @@ document.addEventListener('click', function (e) {
     en:{ home:'Home', reports:'Reports', watch:'Add to watchlist', watched:'Added to watchlist', watchShort:'Watchlist',
       mk:{price:'Price',chg:'Day change',mcap:'Market cap',amt:'Trading value',vol:'Volume',shares:'Shares out.',market:'Market',sector:'Sector',per:'P/E',pbr:'P/B',roe:'ROE',eps:'EPS',divy:'Div. yield'},
       sec:{overview:'Report Overview',business:'Business',recent:'Recent Results & Price',outlook:'Outlook',bull:'Bull Factors',bear:'Bear Factors',risk:'Risk Factors',verdict:'Verdict',sources:'Sources',fin:'Financial Trends',earnings:'Earnings Analysis',industry:'Industry',valuation:'Valuation',chk:'What to Watch Next'},
-      fin:{annual:'Annual (consolidated)',quarterly:'Quarterly (consolidated)',year:'Year',q:'Quarter',rev:'Revenue',op:'Operating profit',np:'Net profit (owners)',opm:'OP margin',roe:'ROE',debt:'Debt ratio',per:'P/E',pbr:'P/B',divy:'Div. yield',eps:'EPS',bps:'BPS',dps:'DPS',na:'n/a (loss)',nodata:'—',chartAnnual:'Annual revenue & operating profit',chartQuarter:'Quarterly revenue & operating profit',unitJo:'Unit: ₩ trillion',
+      fin:{annual:'Annual (consolidated)',quarterly:'Quarterly (consolidated)',year:'Year',q:'Quarter',rev:'Revenue',op:'Operating profit',np:'Net profit (owners)',opm:'OP margin',roe:'ROE',debt:'Debt ratio',per:'P/E',pbr:'P/B',divy:'Div. yield',eps:'EPS',bps:'BPS',dps:'DPS',na:'n/a (loss)',nodata:'—',
+        hiddenT:'Not shown', hidden:{loss:'trailing-4-quarter loss, not computed',fx:'FX rate for the filing currency unavailable',shares:'share count could not be confirmed',mismatch:'two disclosed figures disagree; not confirmed',no_income:'trailing-4-quarter net profit unavailable',impaired:'negative equity (capital impairment)',equity_check:'equity identity does not hold; not confirmed',no_equity:'latest-quarter equity unavailable',no_div:'no dividend disclosure',ref_mismatch:'differs sharply from external reference; withheld',unknown:'could not be confirmed'},chartAnnual:'Annual revenue & operating profit',chartQuarter:'Quarterly revenue & operating profit',unitJo:'Unit: ₩ trillion',
         foot:'· Financials are confirmed DART consolidated figures · P/E & EPS use trailing-4-quarter net profit attributable to owners ({win}); P/B & BPS use latest-quarter equity attributable to owners · Dividend is based on DART-disclosed cash dividend per share'},
       eyebrow:'AI Research Report', reportDate:'Report date', dataDate:'Data as of', model:'Model', stance:'Stance',
       srcKRX:'Korea Exchange (KRX)', srcKRXsub:'Price & market-cap data', srcDART:'DART (FSS e-disclosure)', srcDARTsub:'Financials & filings',
@@ -1590,6 +1592,12 @@ document.addEventListener('click', function (e) {
       [f.dps,  cur(vDps)]
     ];
     h+='<div class="valgrid">'+cells.map(function(c){return '<div class="vm"><div class="vk">'+esc(c[0])+'</div><div class="vv">'+esc(c[1])+'</div></div>';}).join('')+'</div>';
+    /* 빈칸의 이유 — 생성기가 valuation.hidden 에 코드로 남긴다(loss·mismatch·impaired …). '—' 만 보이면 데이터가 없는지 회사가 이상한지 알 수 없다. */
+    var hid=V.hidden||{}, hk=Object.keys(hid);
+    if(hk.length){
+      var HR=f.hidden||{};
+      h+='<div class="tbl-foot">'+esc(f.hiddenT||'')+': '+hk.map(function(k){ return esc(f[k]||k.toUpperCase())+' — '+esc(HR[hid[k]]||hid[k]); }).join(' · ')+'</div>';
+    }
     h+='<div class="tbl-foot" style="margin-bottom:22px">'+esc(f.foot.replace('{win}',V.ttm_window||'-'))+'</div>';
     if(REP.valuation_comment)h+=prose(REP.valuation_comment);
     h+='</section><hr class="hairline" />';
