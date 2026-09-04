@@ -51,6 +51,10 @@ Canonical files: `.github/workflows/update_data.yml`, `reports_watchdog.yml`,
 - **Watchdog:** a 30-min cron that (a) rebuilds the global index serially, (b) checks
   remaining work, (c) re-kicks N parallel shards if fewer than N runs are active. This
   guarantees completion even if a self-chain link is dropped. See `reports_watchdog.yml`.
+  "Remaining" must exclude items whose batch is still pending (in flight) and must use
+  the *same* selection function as the generator — otherwise the watchdog re-orders
+  what is already paid for. It also rests for the day when the generator has left a
+  dated `data/dart_quota_exhausted` marker (daily API quota).
 - **Backfill for stragglers:** items permanently `skip`-marked (see ai-batch) are excluded
   from fill mode forever; add a separate daily job that retries them by **explicit id**
   (which bypasses the skip path). See `backfill_missing.yml`.

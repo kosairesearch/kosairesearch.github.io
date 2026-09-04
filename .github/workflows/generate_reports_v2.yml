@@ -4,7 +4,7 @@ on:
   workflow_dispatch:
     inputs:
       mode:
-        description: 'quant(검증) | patch(숫자만 교체·무료) | submit | collect | auto'
+        description: 'quant(검증) | patch(숫자만 교체·무료) | submit | pickup | auto | recover'
         default: 'quant'
       tickers:
         description: '쉼표 구분 티커 (비우면 시총 상위 N)'
@@ -23,6 +23,9 @@ on:
         default: '1'
       fill_shard:
         description: '이 run의 샤드 인덱스(0..shards-1)'
+        default: '0'
+      backfill:
+        description: 'skip 재시도 run(backfill_missing 이 켠다). 1이면 재무제표가 또 없을 때 skip 날짜를 갱신'
         default: '0'
       dump_eps:
         description: '주당이익 원문을 로그에 찍을 티커(쉼표)'
@@ -57,8 +60,10 @@ jobs:
         id: before
         run: |
           n=$(ls data/reports_v2/*.json 2>/dev/null | wc -l | tr -d ' ')
+          b=$(ls data/batches_v2/*.json 2>/dev/null | wc -l | tr -d ' ')
           echo "count=$n" >> "$GITHUB_OUTPUT"
-          echo "시작 v2 리포트 수: $n"
+          echo "batches=$b" >> "$GITHUB_OUTPUT"
+          echo "시작 v2 리포트 수: $n · 배치 상태 파일 $b"
 
       - name: 리포트 v2 실행
         env:
@@ -75,6 +80,7 @@ jobs:
           REPORT_FILL_FROM: ${{ inputs.fill_from }}
           REPORT_FILL_SHARDS: ${{ inputs.fill_shards }}
           REPORT_FILL_SHARD: ${{ inputs.fill_shard }}
+          REPORT_BACKFILL: ${{ inputs.backfill }}
           RECOVER_BATCH_ID: ${{ inputs.recover_batch_id }}
           BATCH_MAX_WAIT_SEC: '18000'
           DUMP_EPS: ${{ inputs.dump_eps }}
@@ -96,13 +102,22 @@ jobs:
         run: |
           git config --global user.email "bot@kosairesearch.github.io"
           git config --global user.name "KOS ai Bot"
-          # 병렬 run은 '서로 겹치지 않는' 파일만 커밋한다(종목별 리포트 JSON + skip 마커).
-          # 전역 파일(reports-index.js·index.json·batch_state·run.log)은 커밋하지 않아 rebase 충돌이 없다.
-          # → reports-index.js는 워치독의 reindex(단일 직렬)가 재생성한다.
-          git add data/reports_v2 data/reports_v2_skip data/_debug_eps.txt 2>/dev/null || true
+          # 병렬 run은 '서로 겹치지 않는' 파일만 커밋한다 — 종목별 리포트 JSON, 종목별
+          # 마커(skip·hold·fail), 그리고 이 run 이 넣은 주문의 상태 파일(배치 ID 이름).
+          #
+          # 배치 상태 파일은 반드시 커밋한다. auto 는 주문만 넣고 30분 뒤 끝나므로,
+          # 이 파일이 main 에 없으면 collect_batch 가 무엇을 회수해야 하는지 모른다 —
+          # 돈은 나가고 리포트는 안 들어온다. 예전에는 여기서 batch_state 를 되돌렸다.
+          #
+          # 전역 파일(reports-index.js·index.json·run.log)은 커밋하지 않아 rebase 충돌이
+          # 없다. reports-index.js 는 워치독의 reindex(단일 직렬)가 재생성한다.
+          for p in data/reports_v2 data/reports_v2_skip data/reports_v2_hold data/reports_v2_fail \
+                   data/batches_v2 data/dart_quota_exhausted data/_debug_eps.txt; do
+            [ -e "$p" ] && git add -A "$p"
+          done
           git reset -q data/reports_v2/index.json 2>/dev/null || true
           # 스크립트가 건드린 전역 파일은 되돌려 rebase를 깨끗하게 유지
-          git checkout -q -- data/batch_state_v2.json data/reports_v2_run.log data/reports-index.js data/reports_v2/index.json 2>/dev/null || true
+          git checkout -q -- data/reports_v2_run.log data/reports-index.js data/reports_v2/index.json 2>/dev/null || true
           git commit -m "📊 리포트 v2 (${{ inputs.mode }}) $(TZ='Asia/Seoul' date +'%Y-%m-%d %H:%M KST')" || exit 0
           # 겹치지 않는 파일만 커밋하므로 rebase는 항상 깨끗. 재시도+랜덤 백오프로 push 창 확보.
           ok=""
@@ -114,35 +129,40 @@ jobs:
           done
           [ -n "$ok" ] || exit 1
 
-      # 자동 백필 self-chain: 상위 fill_to개 중 남은 종목이 있고 이번에 진척이 있었으면 다음 청크 재실행.
-      # 진척 0(생성 불가 종목만 남음)이면 멈춰서 무한루프 방지.
       # 스크립트가 오류로 끝났으면 잡을 실패로 표시한다. 부분 결과는 위에서 이미
       # 커밋했으므로 잃는 것은 없고, 대신 초록불에 속지 않는다.
+      #   3 = DART 를 쓸 수 없음(하루 한도·점검·키). 종목 탓이 아니라 skip 을 남기지 않았다.
       - name: 실행 실패 표시
         if: ${{ steps.run.outputs.code != '0' }}
         run: |
           echo "⛔ 스크립트가 오류로 끝났다 (종료 코드 ${{ steps.run.outputs.code }})" >> $GITHUB_STEP_SUMMARY
-          if grep -q "사용한도를 초과" data/reports_v2_run.log 2>/dev/null; then
-            echo "원인: DART 하루 호출 한도 초과 — 한국시간 자정에 풀린다." >> $GITHUB_STEP_SUMMARY
+          if [ "${{ steps.run.outputs.code }}" = "3" ]; then
+            echo "원인: DART 를 쓸 수 없음 — 하루 호출 한도 초과(한국시간 자정에 풀린다)·점검·키 문제. 로그의 'DART status' 줄 참고." >> $GITHUB_STEP_SUMMARY
           fi
           tail -30 data/reports_v2_run.log 2>/dev/null || true
           exit 1
 
+      # 자동 백필 self-chain: 상위 fill_to개 중 남은 종목이 있고 이번에 진척(주문 또는
+      # 회수)이 있었으면 다음 청크를 바로 잇는다. 진척 0 이면 멈춰서 무한루프를 막는다.
+      # 끊겨도 워치독(30분)이 다시 잇는다 — 이 단계는 속도를 위한 것이다.
       - name: 다음 청크 self-chain
-        if: ${{ always() && inputs.fill_to != '0' && inputs.fill_to != '' }}
+        if: ${{ steps.run.outputs.code == '0' && inputs.fill_to != '0' && inputs.fill_to != '' }}
         env:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
           before='${{ steps.before.outputs.count }}'
           after=$(ls data/reports_v2/*.json 2>/dev/null | wc -l | tr -d ' ')
+          b_before='${{ steps.before.outputs.batches }}'
+          b_after=$(ls data/batches_v2/*.json 2>/dev/null | wc -l | tr -d ' ')
           remaining=$(python scripts/_fill_remaining.py '${{ inputs.fill_to }}')
-          echo "백필: 시작 $before → 종료 $after · 상위 ${{ inputs.fill_to }} 남은 $remaining"
           added=$(( after - before ))
-          if [ "$remaining" -gt 0 ] && [ "$added" -gt 0 ]; then
+          submitted=$(( b_after - b_before ))
+          echo "백필: 리포트 $before → $after (+$added) · 주문 +$submitted · 상위 ${{ inputs.fill_to }} 남은 $remaining"
+          if [ "$remaining" -gt 0 ] && { [ "$added" -gt 0 ] || [ "$submitted" -gt 0 ]; }; then
             echo "→ 다음 청크 재실행(샤드 ${{ inputs.fill_shard }}/${{ inputs.fill_shards }}, 전체 남은 $remaining개)"
             gh workflow run generate_reports_v2.yml \
               -f mode=auto -f top_n='${{ inputs.top_n }}' -f fill_to='${{ inputs.fill_to }}' \
               -f fill_from='${{ inputs.fill_from }}' -f fill_shards='${{ inputs.fill_shards }}' -f fill_shard='${{ inputs.fill_shard }}'
           else
-            echo "→ 이 샤드 종료(전체 남은 $remaining개, 이번 진척 $added개)"
+            echo "→ 이 샤드 종료(전체 남은 $remaining개, 이번 진척 리포트 $added·주문 $submitted)"
           fi

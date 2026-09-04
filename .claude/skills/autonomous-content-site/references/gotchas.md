@@ -17,6 +17,27 @@ first.
   before committing; don't reset-author on commits that already belong to `main`.
 
 ## AI content
+- **Batch submitted, never collected (money spent, nothing written)** → the job that
+  submitted the batch did not commit its batch-state file (a workflow step reverted it as
+  a "global file"), so the 30-min pickup job never knew the batch id. Every submitter
+  must commit **one state file per batch** (`data/batches_v2/<batch_id>.json`, unique
+  name ⇒ no rebase conflicts); pickup iterates all pending files and marks each
+  `collected` once. Test the submit→commit→pickup path with 1–2 items before scaling.
+- **Watchdog re-orders the same items every 30 min** → once submit stopped waiting
+  in-run, "running jobs < N" no longer meant "nothing in flight". Treat tickers inside
+  pending batch files as *in flight*: exclude them from target selection and from the
+  "remaining" count (one shared function used by generator *and* watchdog).
+- **A whole run's items marked "un-generatable" after a data-source outage** →
+  OpenDartReader prints `{'status': '020', ...}` (daily quota) and returns an *empty*
+  frame — indistinguishable from "no financials". Capture stdout around every DART call,
+  raise on any status other than `000`/`013`, abort the run (exit 3, partial results
+  kept, no skip markers), and leave a dated `data/dart_quota_exhausted` marker so the
+  watchdog rests until KST midnight.
+- **One bad ticker halts everything** → a global "all stored reports must pass identity
+  checks before any generation" gate blocked 2,600 stocks on 4 data quirks (one of them a
+  delisted "ghost" file nobody could fix). Gate **per ticker on the freshly collected
+  numbers** (`check_valuation.check_quant`), hold only the failing ticker
+  (`data/reports_v2_hold/<id>`), and exclude ghosts (not in the universe) from checks.
 - **Ghost entries in the global index** → reindex only *adds*; entries for removed items
   linger. Prune the index against the live universe every run.
 - **A whole tier of content disappears when one writer runs** → that writer rebuilt the
@@ -45,6 +66,16 @@ Symptom → cause → fix:
   it, enforce length via prompt.
 - Model won't follow layout rules consistently → stop asking; post-process the text in code
   (sentence-split, protect abbreviations).
+
+## Numbers (quant)
+- **Two branches "trust" opposite sources** → after a reverse-split heuristic chose
+  `net income ÷ shares` for EPS, a later fallback overwrote TTM net income with
+  `disclosed EPS × shares` — one report, two share bases, 5× apart. Once a value is
+  rejected, no later block may reuse it (guard on the recorded `eps_src`).
+- **`int()` truncates toward zero** → EPS −6.9 stored as −6, 13% off on tiny earners;
+  use `round()`. Make the identity checker rounding-aware (±0.5 won × shares).
+- **Owner equity == total equity while NCI ≠ 0** → the issuer tagged the total in the
+  owner slot; restore with the identity `owner = total − NCI` (annual *and* quarterly).
 
 ## Telegram
 - "Sent" but user didn't get it → log the API `result` (message_id + chat) to confirm which

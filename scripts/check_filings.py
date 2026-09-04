@@ -27,6 +27,9 @@ except Exception:
     pass
 
 ROOT = Path(__file__).resolve().parent.parent
+sys.path.insert(0, str(Path(__file__).resolve().parent))
+import _reports_state as S  # noqa: E402  — 진행 중 배치 · 갱신 기준일
+
 STOCKS_JS = ROOT / "data" / "stocks.js"
 REPORTS_JS = ROOT / "data" / "reports-index.js"   # 분할 구조: 가벼운 인덱스(reportDate 포함)
 
@@ -112,6 +115,24 @@ def main():
                 continue
             if fdate > cand.get(sc, ""):
                 cand[sc] = fdate
+
+    # 이미 주문이 들어가 결과를 기다리는 종목은 뺀다 — 다시 주문하면 돈만 두 번 나간다.
+    inflight = S.inflight_tickers()
+    busy = [sc for sc in cand if sc in inflight]
+    for sc in busy:
+        cand.pop(sc, None)
+    if busy:
+        print(f"  · 진행 중인 배치에 있어 뺀 종목 {len(busy)}개")
+    # 전 종목 갱신(data/reports_v2_refresh)이 돌고 있으면 기준일보다 오래된 리포트는
+    # 워치독 샤드가 어차피 새로 쓴다. 여기서도 잡으면 같은 종목을 두 갈래가 동시에
+    # 주문한다. 갱신이 끝나면(전부 기준일 이후) 이 조건은 저절로 아무것도 안 뺀다.
+    refresh = S.refresh_date()
+    if refresh:
+        stale = [sc for sc in cand if (reps.get(sc, "") < refresh.replace("-", ""))]
+        for sc in stale:
+            cand.pop(sc, None)
+        if stale:
+            print(f"  · 전 종목 갱신({refresh}) 대상이라 뺀 종목 {len(stale)}개 — 워치독이 만든다")
 
     # 시총 상위순으로 정렬 후 1회 실행분만 선별(분산 처리)
     ranked = sorted(cand.keys(), key=lambda sc: uni[sc][1], reverse=True)
