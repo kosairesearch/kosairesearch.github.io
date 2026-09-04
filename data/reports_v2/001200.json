@@ -235,9 +235,9 @@
  "market": "코스피",
  "reportDate": "2026-08-18",
  "reportTs": "2026-08-18 00:50",
- "dataDate": "20260821",
+ "dataDate": "20260904",
  "quant": {
-  "asOf": "2026-08-22",
+  "asOf": "2026-09-04",
   "fs_basis": "연결(CFS) · DART 공시 확정치 · 지배주주 기준 순이익",
   "annual": [
    {
@@ -248,6 +248,7 @@
     "np_owner": 64538264177,
     "equity": 1132470877280,
     "equity_owner": 1132470877280,
+    "equity_nci": 0,
     "liab": 9916557486041,
     "cfo": 91633720793,
     "eps_basic": 703,
@@ -263,6 +264,7 @@
     "np_owner": 49619329316,
     "equity": 1051376155736,
     "equity_owner": 1051376155736,
+    "equity_nci": 0,
     "liab": 8595331993613,
     "cfo": 37069599571,
     "eps_basic": 540,
@@ -278,12 +280,30 @@
     "np_owner": 30696475248,
     "equity": 1011904699588,
     "equity_owner": 1011904699588,
+    "equity_nci": null,
     "liab": 7687427343652,
     "cfo": -1962990175,
     "eps_basic": 334,
     "opm": 1.6,
     "roe": 3.0,
     "debt_ratio": 759.7
+   },
+   {
+    "year": 2022,
+    "rev": 1821576539177,
+    "op": 18122584846,
+    "np": 15672340026,
+    "np_owner": 15672340026,
+    "equity": 975644019345,
+    "equity_owner": 975644019345,
+    "equity_nci": null,
+    "liab": 7100764279436,
+    "cfo": 23755748149,
+    "eps_basic": 168,
+    "src": "전기 비교치",
+    "opm": 1.0,
+    "roe": 1.6,
+    "debt_ratio": 727.8
    }
   ],
   "quarterly": [
@@ -319,23 +339,26 @@
    }
   ],
   "valuation": {
-   "price": 4280,
-   "mcap": 0.4146,
+   "price": 4355,
+   "mcap": 0.4219,
    "shares": 96866418,
    "total_shares": 96866418,
    "wavg_shares": 91848505,
-   "per": 2.7,
+   "per": 2.755,
    "eps": 1581,
-   "pbr": 0.32,
+   "pbr": 0.3231,
    "bps": 13479,
    "roe_ttm": 12.5,
    "ttm_window": "2025Q3~2026Q2",
    "ttm_np_owner": 145176983153,
+   "ccy": "KRW",
+   "bps_src": "자체",
+   "eps_src": "공시",
    "pbr_krx": 0.35,
    "bps_krx": 12331.0,
    "basis": "PER·EPS·PBR·BPS 모두 자체 산출(네이버·토스와 동일 방식) · 배당은 DART 공시 주당현금배당금(보완:KRX) ÷ 현재가",
    "dps": 180.0,
-   "div": 4.21
+   "div": 4.13
   }
  }
 }
