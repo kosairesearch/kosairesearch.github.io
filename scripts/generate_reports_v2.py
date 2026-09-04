@@ -268,7 +268,8 @@ def _fin_all(dart, ticker, year, reprt):
                      str(r.get("account_nm", "")).replace(" ", ""),
                      str(r.get("sj_div", "")),
                      g._num(r.get("thstrm_amount")),
-                     g._num(r.get("thstrm_add_amount"))))
+                     g._num(r.get("thstrm_add_amount")),
+                     g._num(r.get("frmtrm_amount"))))      # 전기(직전 연도) — 빠진 해를 채울 때 쓴다
 
     def sj_ok(key, sj):
         if key in ("rev", "rev_ins", "op", "np", "np_owner", "np_nci", "eps_basic"):
@@ -291,16 +292,16 @@ def _fin_all(dart, ticker, year, reprt):
     rows.sort(key=lambda r: 0 if r[2] == "IS" else 1)
 
     # 1차: 표준 account_id 정확 일치 (가장 신뢰)
-    for aid, anm, sj, amt, add in rows:
+    for aid, anm, sj, amt, add, prv in rows:
         for key in ACC_IDS:
             if key in out or amt is None or not sj_ok(key, sj):
                 continue
             if aid in ACC_IDS[key]:
-                out[key] = {"amt": amt, "add": add}
+                out[key] = {"amt": amt, "add": add, "prv": prv}
     # 2차: 계정명 폴백 — 포괄손익 계열 행 배제.
     #   np_owner 는 CIS의 '총포괄손익 귀속-지배기업소유주지분'과 행 이름이 같아
     #   오추출 위험이 커서 손익계산서(IS)에서만 명칭 매칭을 허용한다.
-    for aid, anm, sj, amt, add in rows:
+    for aid, anm, sj, amt, add, prv in rows:
         for key in ACC_IDS:
             if key in out or amt is None or not sj_ok(key, sj):
                 continue
@@ -311,7 +312,7 @@ def _fin_all(dart, ticker, year, reprt):
             # 은행 등은 계정명에 로마숫자·번호 접두("IV.영업이익","I.영업수익")가 붙고,
             # 적자 회사는 꼬리에 "(손실)" 이 붙는다 → 정규화한 뒤 비교(_name_hit).
             if _name_hit(key, anm):
-                out[key] = {"amt": amt, "add": add}
+                out[key] = {"amt": amt, "add": add, "prv": prv}
     # 지배주주 순이익이 제대로 잡혔는지 본다.
     #
     # 전에는 '|지배주주| ≤ |전체|×1.02' 를 어기면 포괄손익을 잘못 집은 것으로
@@ -374,7 +375,7 @@ def _fin_all(dart, ticker, year, reprt):
         dbg = ROOT / "data" / "_debug_eps.txt"
         with open(dbg, "a", encoding="utf-8") as fp:
             fp.write(f"\n### {ticker} {reprt}/{fs}\n")
-            for aid, anm, sj, amt, add in rows:
+            for aid, anm, sj, amt, add, prv in rows:
                 if sj in ("IS", "CIS"):
                     fp.write(f"  {sj:<4} 당기={amt}  누적={add}  | {anm} | {aid}\n")
     return out
@@ -413,6 +414,28 @@ def _fin_summary(dart, ticker, year):
     out["_reprt"] = "11011"
     out["_ccy"] = "KRW"
     out["_src"] = "요약재무"
+    return out
+
+
+def _shift_prev(d):
+    """다음 해 보고서의 '전기' 칸으로 그 전 해를 만든다.
+
+    보험사 180곳의 2022년은 전체 재무제표에서도 요약재무에서도 안 나온다(IFRS17
+    전환 전 보고서는 계정 체계가 달라 조회가 안 된다). 그런데 2023년 보고서의
+    전기 비교치는 2022년을 IFRS17 로 다시 쓴 값이라 — 같은 기준이라 오히려 비교에
+    낫다. _fin_all 결과와 같은 모양으로 돌려준다. 전기 값이 하나도 없으면 None."""
+    if not d:
+        return None
+    out = {}
+    for k, v in d.items():
+        if isinstance(v, dict) and v.get("prv") is not None:
+            out[k] = {"amt": v["prv"], "add": v["prv"], "prv": None}
+    if not out:
+        return None
+    for k in ("_fs", "_reprt", "_ccy"):
+        if k in d:
+            out[k] = d[k]
+    out["_src"] = "전기 비교치"
     return out
 
 
@@ -478,17 +501,28 @@ def collect_quant(dart, ticker, krx_row, stock):
     """한 종목의 정량 블록을 수집한다."""
     cur = datetime.date.today().year  # 2026
 
-    # 연간 4개년 (최근 결산 = cur-1)
+    # 연간 4개년 (최근 결산 = cur-1). 먼저 해마다 보고서를 모으고, 못 구한 해는
+    # ① 요약재무 ② 다음 해 보고서의 전기 비교치 순으로 채운 뒤 표를 만든다.
     annual = []
     annual_fs = {}          # 연도 → 연결(CFS)/별도(OFS). 4분기를 뺄 때 기준 대조에 쓴다.
+    d_by_year = {}
     for yr in range(cur - 1, cur - 5, -1):
         d = _fin_all(dart, ticker, yr, "11011")
         if not d:
             d = _fin_summary(dart, ticker, yr)      # 전체 재무제표가 없는 해 — 요약재무로
             if d:
                 log(f"  · {yr} 연간은 요약재무로 채운다(전체 재무제표에서 계정을 못 읽음)")
-        if not d:
-            continue
+        if d:
+            d_by_year[yr] = d
+        time.sleep(0.3)
+    for yr in range(cur - 2, cur - 5, -1):
+        if yr not in d_by_year and (yr + 1) in d_by_year:
+            d = _shift_prev(d_by_year[yr + 1])
+            if d:
+                d_by_year[yr] = d
+                log(f"  · {yr} 연간은 {yr + 1} 보고서의 전기 비교치로 채운다(같은 회계 기준으로 다시 쓴 값)")
+    for yr in sorted(d_by_year, reverse=True):
+        d = d_by_year[yr]
         annual_fs[yr] = d.get("_fs")
         rev, op = _cum(d, "rev"), _cum(d, "op")
         np_, npo = _cum(d, "np"), _cum(d, "np_owner")
@@ -506,8 +540,8 @@ def collect_quant(dart, ticker, krx_row, stock):
             "liab": li, "cfo": _cum(d, "cfo"),
             "eps_basic": _cum_eps(d),
         }
-        if d.get("_src") == "요약재무":
-            row["src"] = "요약재무"                   # 지배주주 구분이 없는 해 — 아래에서 정리
+        if d.get("_src"):
+            row["src"] = d["_src"]                   # 요약재무(지배주주 구분 없음 — 아래에서 정리) · 전기 비교치
         row["opm"] = round(op / rev * 100, 1) if (op is not None and rev) else None
         base_np = row["np_owner"]
         base_eq = eqo if eqo is not None else eq
@@ -515,7 +549,6 @@ def collect_quant(dart, ticker, krx_row, stock):
         row["roe"] = round(base_np / base_eq * 100, 1) if (base_np is not None and base_eq and base_eq > 0) else None
         row["debt_ratio"] = round(li / eq * 100, 1) if (li is not None and eq) else None
         annual.append(row)
-        time.sleep(0.3)
 
     # 요약재무로 채운 해에는 지배주주 순이익이 없다. 다른 해에서 전체와 지배가 갈리는
     # 회사(비지배지분 있음)면 전체 순이익을 지배주주 칸에 넣지 않는다 — 표의 머리말과
@@ -591,8 +624,7 @@ def collect_quant(dart, ticker, krx_row, stock):
     if all(row["rev"] is None for row in annual):
         ins_vals = {}
         for row in annual:
-            d_yr = _fin_all(dart, ticker, row["year"], "11011")
-            ins_vals[row["year"]] = _cum(d_yr, "rev_ins")
+            ins_vals[row["year"]] = _cum(d_by_year.get(row["year"]), "rev_ins")
         if any(v is not None for v in ins_vals.values()):
             rev_label = {"ko": "보험수익", "en": "Insurance revenue"}
             for row in annual:
@@ -1466,6 +1498,7 @@ def build_prompt_v2(stock, quant, as_of):
 
 [출력 형식]
 - 검색 후 **머리말 없이** `===JSON_START===` 부터 출력. 마커 사이에 아래 스키마의 JSON 하나만. 마커 뒤에 아무것도 쓰지 않기.
+- **스키마에 없는 키를 만들지 말 것** (예: en_placeholder·body_en_note·bull_en·risks_en 금지). 모든 글은 {{"ko": …, "en": …}} 쌍 안에 넣는다. 항목의 en 을 비워 두거나 다른 키로 빼지 말 것 — 구조가 다르면 리포트 전체가 폐기된다.
 - JSON은 반드시 완결시킬 것.
 
 스키마:
