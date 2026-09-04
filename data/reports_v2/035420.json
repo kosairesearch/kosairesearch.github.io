@@ -1,227 +1,227 @@
 {
  "title": {
-  "ko": "매출 최대·이익 정체, AI 투자의 교차점",
-  "en": "Record Revenue, Flat Profit: NAVER at an AI Investment Crossroads"
+  "ko": "매출은 최대, 마진은 압축된 AI 투자기",
+  "en": "Record Revenue, Compressed Margins in an AI Investment Cycle"
  },
  "lead": {
-  "ko": "네이버는 광고·커머스·결제·글로벌 C2C가 고르게 커지며 분기 매출 최고치를 경신하고 있지만, AI 인프라 선투자로 영업이익률이 낮아진 상태이며 2027년 AI 팩토리 수익화가 다음 분기점으로 제시돼 있다.",
-  "en": "NAVER keeps setting quarterly revenue records as ads, commerce, payments and global C2C all grow, yet upfront AI infrastructure spending has compressed its operating margin, with the 2027 AI factory ramp framed as the next inflection point."
+  "ko": "NAVER는 광고·커머스·글로벌 C2C 성장으로 분기 매출을 계속 경신하고 있지만, AI 인프라와 콘텐츠 판권 등 비용 증가 속도가 매출 성장률을 앞서면서 영업이익은 정체 국면에 들어섰다.",
+  "en": "NAVER keeps setting quarterly revenue records on advertising, commerce and global C2C growth, yet operating profit has flattened as AI infrastructure and content rights costs rise faster than revenue."
  },
  "keypoints": [
   {
-   "ko": "2026년 2분기 매출은 3조3,888억원으로 전년 동기 대비 16.2% 늘어 분기 최대였으나, 영업이익은 5,203억원으로 0.2% 감소했고 영업비용이 19.8% 증가해 영업이익률은 15.4%로 내려갔다.",
-   "en": "Second-quarter 2026 revenue rose 16.2% year on year to 3.3888 trillion won, a quarterly record, but operating profit slipped 0.2% to 520.3 billion won as operating costs grew 19.8%, pulling the margin down to 15.4%."
+   "ko": "2026년 2분기 매출은 3조3,888억원으로 분기 기준 최대치를 기록했고, 영업이익은 5,203억원으로 전년 동기 대비 0.2% 감소했다(회사 공시).",
+   "en": "Second-quarter 2026 revenue reached KRW 3.3888tn, a quarterly record, while operating profit of KRW 520.3bn fell 0.2% year on year, per the company's disclosure."
   },
   {
-   "ko": "2026년 1분기부터 보고 부문을 네이버 플랫폼·파이낸셜 플랫폼·글로벌 도전 3개로 재편했고, 2분기 부문 매출은 각각 1조9,022억원·4,707억원·1조159억원이었다.",
-   "en": "From the first quarter of 2026 the company reorganized reporting into three segments — NAVER Platform, Financial Platform and Global Challenge — which posted 1.9022 trillion, 470.7 billion and 1.0159 trillion won respectively in the second quarter."
+   "ko": "영업이익률은 2025년 4분기 19%대에서 2026년 2분기 15%대로 낮아졌다 — 매출 성장보다 빠른 비용 증가가 원인이다.",
+   "en": "The operating margin slid from around 19% in the fourth quarter of 2025 to the mid-15% range in the second quarter of 2026, as costs grew faster than revenue."
   },
   {
-   "ko": "확정 연간 실적에서 매출은 2022년 8조2,201억원에서 2025년 12조350억원으로 늘고 영업이익률은 15.9%에서 18.3%로 올랐지만, 2025년 지배주주 순이익은 1조8,187억원으로 전년보다 줄었다.",
-   "en": "On confirmed annual figures, revenue grew from 8.2201 trillion won in 2022 to 12.035 trillion won in 2025 and the operating margin improved from 15.9% to 18.3%, yet 2025 net profit attributable to owners fell to 1.8187 trillion won from a year earlier."
+   "ko": "엔비디아가 제3자배정 유상증자로 약 10억달러를 투자해 지분 4.5%를 확보하고, 브룩필드가 최대 90억달러 규모 특수목적법인으로 GPU·데이터센터를 보유하는 'AI 팩토리' 구조가 공개됐다.",
+   "en": "NVIDIA is investing about USD 1bn via a third-party share issue for a 4.5% stake, while Brookfield will hold GPUs and data-center assets through an SPV of up to USD 9bn under the disclosed 'AI Factory' structure."
   },
   {
-   "ko": "엔비디아 대상 10억 달러 규모 제3자 배정 유상증자와 브룩필드와의 90억 달러 규모 사전계약을 통해 AI 팩토리 자본·GPU 조달 구조를 마련했고, 관련 매출은 2027년 상반기부터 발생할 것으로 회사는 전망했다.",
-   "en": "A $1 billion third-party share issuance to NVIDIA and a $9 billion preliminary arrangement with Brookfield set up capital and GPU sourcing for the AI factory, with related revenue expected by the company from the first half of 2027."
+   "ko": "AI 팩토리 관련 매출은 2027년부터 인식될 예정이어서, 그 전까지는 투자 비용이 먼저 손익에 반영되는 구간이다.",
+   "en": "AI Factory revenue is slated to start in 2027, so until then the investment costs hit the P&L first."
   },
   {
-   "ko": "8월 3일 발행주식 총수의 3.1%인 자사주 490만1,094주(약 1조원)를 소각했고, 2025~2027년 주주환원 정책은 직전 2개년 평균 연결 잉여현금흐름의 25~35% 환원을 제시하고 있다.",
-   "en": "On August 3 it cancelled 4,901,094 treasury shares, or 3.1% of shares outstanding and worth roughly 1 trillion won, under a 2025-2027 policy of returning 25-35% of the prior two-year average consolidated free cash flow."
+   "ko": "네이버파이낸셜·두나무 포괄적 주식교환은 주주총회 11월 19일, 주식교환일 12월 31일로 두 차례 연기됐고, 공정위 기업결합 심사와 디지털자산기본법이 변수로 남아 있다.",
+   "en": "The comprehensive share swap between Naver Financial and Dunamu has been pushed back twice, with the shareholder meeting set for November 19 and the swap date for December 31, leaving the antitrust review and pending digital-asset legislation as open variables."
   }
  ],
  "business": {
-  "ko": "네이버는 검색·광고를 기반으로 커머스, 결제, 콘텐츠, 클라우드까지 묶은 국내 최대 인터넷 플랫폼 사업자다. 회사는 2026년 1분기부터 매출 구분을 기존 5개 부문(서치플랫폼·커머스·핀테크·콘텐츠·엔터프라이즈)에서 네이버 플랫폼·파이낸셜 플랫폼·글로벌 도전 3개 부문으로 변경했다. 네이버 플랫폼은 검색·디스플레이·커머스 광고와 쇼핑·멤버십·플레이스 등 서비스로, 파이낸셜 플랫폼은 네이버페이로, 글로벌 도전은 C2C(크림·소다·포시마크·왈라팝), 콘텐츠(웹툰·스노우), 엔터프라이즈(네이버클라우드 플랫폼·라인웍스·랩스)로 구성된다. 2026년 2분기 부문별 매출은 네이버 플랫폼 1조9,022억원, 파이낸셜 플랫폼 4,707억원, 글로벌 도전 1조159억원이었다. 플랫폼 안에서 광고 매출은 지면 최적화와 타겟팅 고도화로 전년 동기 대비 7.5% 늘고 AI의 매출 성장 기여도가 60%를 넘었으며, 쇼핑·멤버십 중심의 서비스 매출은 31.3% 증가했다. 결제 부문에서는 2분기 네이버페이 결제액이 25조2,000억원으로 21.0% 늘었고, 글로벌 도전 내 C2C 매출은 왈라팝·포시마크·소다의 성장으로 74.9% 증가한 반면 콘텐츠 매출은 0.5% 증가에 그쳤다. 즉 성장 축이 검색광고 단일 구조에서 커머스·결제·해외 C2C로 넓어지는 흐름이 수치로 확인된다. 커머스 경쟁구도에서는 직매입 모델의 쿠팡과 판매자를 중개하는 오픈마켓 성격의 스마트스토어가 수익구조와 책임 범위가 다르다는 점이 구조적 차이로 지적된다. 물류 역시 자체 보유보다 파트너 네트워크 확장 방식으로, 기존 도착보장을 N배송으로 재편해 제휴 기반 선택지를 강화해 왔다. 여기에 네이버클라우드는 엔비디아 GTC 타이베이 2026 키노트에서 글로벌 AI 생태계 핵심 파트너로 언급되며 AI 인프라를 새로운 사업축으로 제시하고 있다.",
-  "en": "NAVER is Korea's largest internet platform operator, bundling search and advertising with commerce, payments, content and cloud. From the first quarter of 2026 it changed revenue reporting from five segments (Search Platform, Commerce, Fintech, Content, Enterprise) to three: NAVER Platform, Financial Platform and Global Challenge. NAVER Platform covers search, display and commerce advertising plus services such as shopping, membership and Place; Financial Platform is NAVER Pay; Global Challenge spans C2C (Kream, SODA, Poshmark, Wallapop), content (Webtoon, SNOW) and enterprise (NAVER Cloud Platform, LINE WORKS, LABS). In the second quarter of 2026, segment revenue was 1.9022 trillion won for NAVER Platform, 470.7 billion won for Financial Platform and 1.0159 trillion won for Global Challenge. Within the platform, advertising revenue rose 7.5% year on year on inventory optimization and better targeting, with AI contributing more than 60% of that growth, while service revenue centered on shopping and membership grew 31.3%. In payments, second-quarter NAVER Pay transaction value rose 21.0% to 25.2 trillion won, and within Global Challenge C2C revenue jumped 74.9% on Wallapop, Poshmark and SODA, whereas content revenue edged up only 0.5%. The numbers therefore show a growth base broadening from search advertising alone into commerce, payments and overseas C2C. In commerce, a structural distinction is often drawn: Coupang's first-party purchasing model differs from the open-market brokerage structure of SmartStore in revenue mechanics and scope of responsibility. Logistics likewise leans on partner networks rather than owned assets, with the former Arrival Guarantee rebranded as N Delivery to widen partner-based options. On top of this, NAVER Cloud was cited as a core global AI ecosystem partner in NVIDIA's GTC Taipei 2026 keynote, positioning AI infrastructure as a new business axis."
+  "ko": "NAVER는 2026년 1분기부터 매출 공시 체계를 기존 5개 부문(서치플랫폼·커머스·핀테크·콘텐츠·엔터프라이즈)에서 네이버 플랫폼, 파이낸셜 플랫폼, 글로벌 도전의 3개 부문으로 재편했다. 네이버 플랫폼은 검색·디스플레이·커머스 광고와 쇼핑·멤버십·플레이스 등 서비스를, 파이낸셜 플랫폼은 Npay 운영사인 네이버파이낸셜을, 글로벌 도전은 크림·소다·포시마크·왈라팝의 C2C와 웹툰·스노우의 콘텐츠, 네이버클라우드·라인웍스·랩스의 엔터프라이즈를 담는다. 2026년 2분기 부문 매출은 네이버 플랫폼 1조9,022억원, 파이낸셜 플랫폼 4,707억원, 글로벌 도전 1조159억원이다. 매출의 절반 이상을 국내 검색·광고와 커머스 생태계가 담당하는 구조이며, 2026년 2분기 광고 매출은 전년 동기 대비 7.5% 증가한 반면 네이버플러스 스토어·멤버십·N배송이 포함된 서비스 매출은 31.3% 늘었다. 결제 부문에서는 2분기 Npay 결제액이 전년 동기 대비 21.0% 증가한 25.2조원을 기록했고, 오프라인 통합 단말기 'Npay Connect' 확대를 통해 사업자용 AI 플랫폼 영역으로 확장하고 있다. 글로벌 부문은 C2C가 성장을 견인해 전년 동기 대비 24.4% 늘었고, 왈라팝·포시마크·소다의 거래액 확대로 C2C 매출만 74.9% 증가했다. 연간 기준으로는 2025년 부문 매출이 서치플랫폼 4조1,689억원, 커머스 3조6,884억원, 핀테크 1조6,907억원, 콘텐츠 1조8,992억원, 엔터프라이즈 5,878억원으로 집계됐다(2025년 4분기 실적 콘퍼런스콜 기준). 커머스는 자체 물류센터나 배송 인력을 두지 않고 CJ대한통운·컬리 등과 협업하는 비직매입 구조여서, 직매입·물류 자산을 보유한 쿠팡과는 자본 투입 방식이 다르다. 경쟁 구도는 국내 검색·광고에서 구글·유튜브·메타, 커머스에서 쿠팡과 알리바바 계열, 결제·디지털자산에서 카카오페이 등 핀테크 사업자로 다층화되어 있다.",
+  "en": "From the first quarter of 2026 NAVER regrouped its revenue reporting from five divisions (Search Platform, Commerce, Fintech, Content, Enterprise) into three: NAVER Platform, Financial Platform and Global Challenge. NAVER Platform covers search, display and commerce advertising plus services such as shopping, membership and Place; Financial Platform covers Naver Financial, the operator of Npay; and Global Challenge houses C2C assets KREAM, SODA, Poshmark and Wallapop, content businesses including Webtoon and Snow, and enterprise units such as Naver Cloud, LINE WORKS and Labs. Second-quarter 2026 divisional revenue was KRW 1.9022tn for NAVER Platform, KRW 470.7bn for Financial Platform and KRW 1.0159tn for Global Challenge. More than half of group revenue still comes from domestic search advertising and the commerce ecosystem, and second-quarter advertising revenue rose 7.5% year on year while service revenue, which includes NAVER Plus Store, membership and N-delivery, jumped 31.3%. In payments, second-quarter Npay transaction value rose 21.0% year on year to KRW 25.2tn, and the company is expanding into merchant-facing AI platform services through the rollout of the integrated offline terminal 'Npay Connect'. The global segment grew 24.4% year on year on C2C strength, with C2C revenue alone up 74.9% as transaction volumes expanded at Wallapop, Poshmark and SODA. On an annual basis, 2025 divisional revenue was reported as KRW 4.1689tn for Search Platform, KRW 3.6884tn for Commerce, KRW 1.6907tn for Fintech, KRW 1.8992tn for Content and KRW 587.8bn for Enterprise, based on the fourth-quarter 2025 earnings call. In commerce, NAVER runs an asset-light model without its own fulfilment centres or delivery staff, working instead with partners such as CJ Logistics and Kurly, a different capital profile from Coupang's owned-inventory and logistics approach. Competition is layered: Google, YouTube and Meta in search and display advertising, Coupang and Alibaba-affiliated platforms in commerce, and fintech players such as Kakao Pay in payments and digital assets."
  },
  "earnings": {
-  "ko": "연간 매출은 2022년 8조2,201억원, 2023년 9조6,706억원, 2024년 10조7,377억원, 2025년 12조350억원으로 3년 연속 확대됐다. 영업이익은 2022년 1조3,047억원(영업이익률 15.9%), 2023년 1조4,888억원(15.4%)에서 2024년 1조9,793억원(18.4%), 2025년 2조2,081억원(18.3%)으로 마진 레벨이 한 단계 올라섰다. 다만 지배주주 순이익은 2024년 1조9,232억원에서 2025년 1조8,187억원으로 감소해 영업 단계 개선과 순이익 흐름이 엇갈렸다. 현금창출력과 재무구조는 개선 방향이었다 — 영업활동현금흐름은 2023년 2조22억원에서 2025년 3조958억원으로 늘었고 부채비율은 47.4%에서 41.9%로 낮아졌다. 분기 흐름을 보면 2025년 매출은 2조7,868억원→2조9,151억원→3조1,381억원→3조1,951억원, 영업이익은 5,053억원→5,216억원→5,706억원→6,106억원으로 우상향했다. 반면 지배주주 순이익은 2025년 3분기 7,264억원에서 4분기 1,787억원으로 급감해 영업외 항목의 변동성이 컸음을 보여준다. 2026년 1분기는 매출 3조2,411억원으로 외형이 다시 커졌지만 영업이익 5,418억원은 직전 분기 6,106억원을 밑돌았고 지배주주 순이익은 2,853억원이었다. 이어 2026년 2분기에는 영업비용이 2조8,684억원으로 전년 동기 대비 19.8% 늘며 매출 증가율을 앞질렀고, 영업이익률은 15.4%로 1년 전보다 2.5%포인트 낮아졌다. 회사는 영업이익 정체 요인으로 N페이 커넥트 단말기 배포와 월드컵 중계권 등 전략 지식재산권 인식 같은 일회성 비용, 그리고 GPU 구매 등 계획된 인프라 투자를 제시했으며, 시장 컨센서스는 매출 3조3,662억원·영업이익 5,656억원이었던 만큼 매출은 상회, 이익은 하회한 조합이었다.",
-  "en": "Annual revenue expanded for three straight years: 8.2201 trillion won in 2022, 9.6706 trillion in 2023, 10.7377 trillion in 2024 and 12.035 trillion in 2025. Operating profit moved from 1.3047 trillion won in 2022 (15.9% margin) and 1.4888 trillion in 2023 (15.4%) to 1.9793 trillion in 2024 (18.4%) and 2.2081 trillion in 2025 (18.3%), a step up in margin level. Net profit attributable to owners, however, fell from 1.9232 trillion won in 2024 to 1.8187 trillion in 2025, so operating improvement and bottom-line trends diverged. Cash generation and the balance sheet moved the other way: operating cash flow rose from 2.0022 trillion won in 2023 to 3.0958 trillion in 2025, while the debt-to-equity ratio eased from 47.4% to 41.9%. Quarterly, 2025 revenue climbed from 2.7868 trillion to 2.9151 trillion, 3.1381 trillion and 3.1951 trillion won, with operating profit rising from 505.3 billion to 521.6 billion, 570.6 billion and 610.6 billion won. Net profit attributable to owners, by contrast, plunged from 726.4 billion won in the third quarter of 2025 to 178.7 billion in the fourth, underscoring volatility in non-operating items. First-quarter 2026 revenue set another high at 3.2411 trillion won, but operating profit of 541.8 billion won was below the prior quarter's 610.6 billion, and net profit attributable to owners was 285.3 billion won. In the second quarter of 2026, operating costs rose 19.8% year on year to 2.8684 trillion won, outpacing revenue growth, and the operating margin fell 2.5 percentage points from a year earlier to 15.4%. Management attributed the flat operating profit to one-off items such as N Pay Connect terminal rollout and recognition of strategic intellectual property including World Cup broadcasting rights, alongside planned infrastructure investment such as GPU purchases, and with the market consensus at 3.3662 trillion won of revenue and 565.6 billion won of operating profit, the quarter beat on the top line and missed on profit."
+  "ko": "연간 실적은 2022년 매출 8조2,201억원·영업이익 1조3,047억원에서 2023년 9조6,706억원·1조4,888억원, 2024년 10조7,377억원·1조9,793억원, 2025년 12조350억원·2조2,081억원으로 4년 연속 확대됐다. 영업이익률은 2022년 15.9%와 2023년 15.4%에서 2024년 18.4%, 2025년 18.3%로 한 단계 올라섰고, 지배주주 순이익도 2022년 7,603억원에서 2025년 1조9,532억원으로 크게 늘었다. 현금 창출력 역시 영업활동현금흐름이 2022년 1조4,534억원에서 2025년 3조958억원으로 두 배 이상 확대됐고, 부채비율은 2023년 47.4%에서 2025년 41.9%로 낮아졌다. 그러나 최근 다섯 개 분기를 보면 흐름이 갈린다. 매출은 2025년 2분기 2조9,151억원에서 2025년 3분기 3조1,381억원, 4분기 3조1,951억원, 2026년 1분기 3조2,411억원, 2분기 3조3,888억원으로 매 분기 최고치를 새로 썼지만, 영업이익은 2025년 4분기 6,106억원을 정점으로 2026년 1분기 5,418억원, 2분기 5,203억원으로 두 분기 연속 줄었다. 이에 따라 분기 영업이익률은 2025년 4분기 19%대에서 2026년 2분기 15%대로 내려왔다. 원인은 비용이다. 2026년 2분기 영업비용은 2조8,684억원으로 전년 동기 대비 19.8% 증가해 매출 증가율 16.2%를 웃돌았으며, 증권가는 GPU 투자에 따른 인프라 비용과 북중미 월드컵 중계권료를 주요 요인으로 지목했다. 1분기 콘퍼런스콜에서 김희철 최고재무책임자는 채용 증가와 왈라팝 편입으로 개발·운영비가 11.6% 늘고, 매출 연동 수수료와 동계올림픽 중계권 비용 인식, Npay Connect 단말기 확대로 파트너비가 19.9% 증가했다고 설명했다. 지배주주 순이익은 2025년 3분기 7,264억원, 4분기 3,132억원, 2026년 1분기 2,853억원, 2분기 6,986억원으로 영업이익과 무관하게 크게 진동했는데, 이는 영업외 항목 변동의 영향으로 분기별 편차가 커진 결과이며 세부 내역은 분기보고서 확인이 필요하다. 참고로 2026년 2분기 영업이익은 에프앤가이드 집계 시장 전망치 평균 5,727억원을 밑돌았다.",
+  "en": "Annual results expanded for four consecutive years: revenue and operating profit went from KRW 8.2201tn and KRW 1.3047tn in 2022 to KRW 9.6706tn and KRW 1.4888tn in 2023, KRW 10.7377tn and KRW 1.9793tn in 2024, and KRW 12.035tn and KRW 2.2081tn in 2025. The operating margin stepped up from 15.9% in 2022 and 15.4% in 2023 to 18.4% in 2024 and 18.3% in 2025, while net profit attributable to owners rose from KRW 760.3bn in 2022 to KRW 1.9532tn in 2025. Cash generation improved as well, with operating cash flow more than doubling from KRW 1.4534tn in 2022 to KRW 3.0958tn in 2025, and the debt-to-equity ratio easing from 47.4% in 2023 to 41.9% in 2025. The last five quarters, however, show a split trend. Revenue set successive records, from KRW 2.9151tn in the second quarter of 2025 to KRW 3.1381tn, KRW 3.1951tn, KRW 3.2411tn and KRW 3.3888tn through the second quarter of 2026, yet operating profit peaked at KRW 610.6bn in the fourth quarter of 2025 before falling to KRW 541.8bn and KRW 520.3bn in the following two quarters. The quarterly operating margin therefore slipped from around 19% in the fourth quarter of 2025 to the mid-15% range in the second quarter of 2026. Costs are the reason. Second-quarter 2026 operating expenses rose 19.8% year on year to KRW 2.8684tn, outpacing the 16.2% revenue increase, with brokerages pointing to GPU-driven infrastructure spending and World Cup broadcasting rights as the main drivers. On the first-quarter call, CFO Kim Hee-chul said development and operating costs rose 11.6% on higher headcount and the Wallapop consolidation, while partner costs rose 19.9% on revenue-linked fees, recognition of Winter Olympics broadcasting rights and the Npay Connect terminal rollout. Net profit attributable to owners swung widely regardless of operating profit, at KRW 726.4bn, KRW 313.2bn, KRW 285.3bn and KRW 698.6bn from the third quarter of 2025 through the second quarter of 2026, reflecting volatility in non-operating items whose details require review of the quarterly filings. For reference, second-quarter 2026 operating profit came in below the FnGuide consensus average of KRW 572.7bn."
  },
  "industry": {
-  "ko": "국내 이커머스는 여전히 오프라인보다 빠른 성장을 유지하는 시장이다. 한국유통학회 세미나에서 제시된 자료에 따르면 지난해 온라인 상품 거래액은 186조5,000억원 규모였고, 최근 10년간 무점포소매의 연평균 성장률은 12.6%로 대형마트·백화점 등 주요 오프라인 업태를 크게 앞질렀다. 다만 경쟁은 직매입·물류 통제형(쿠팡)과 검색·중개 기반(네이버) 모델이 병존하는 구도이며, 셀러 관점에서는 회전은 쿠팡, 탐색과 신뢰는 네이버로 역할을 나누는 전략이 거론된다. 규제 측면에서는 플랫폼 관련 입법 논의가 진행형이다. 시장지배적 사업자 지정과 자사 우대 금지를 담은 플랫폼 독과점규제법, 정산 주기 단축·검색 알고리즘 투명화·이용사업자 단체협상권을 담은 온라인 플랫폼 중개거래 공정화법이 주요 법안으로 거론되고 있다. 2025년 10월 네이버쇼핑 자사 우대 사건에 대한 대법원 판결이 현행 공정거래법의 입증 한계를 드러냈다는 평가도 함께 제기됐다. AI 인프라 쪽에서는 사이클이 초기 확장 국면에 있다. 네이버클라우드는 AI 산업의 무게중심이 모델 중심에서 대규모 인프라를 안정적으로 운영하는 추론 중심의 AI 팩토리 시대로 이동하고 있다고 설명했다. 증권가에서는 네이버의 AI 검색 광고와 AI 팩토리, 카카오의 AI 에이전트 등 AI 수익화 성과가 하반기 기업가치의 핵심 변수로 꼽혔다.",
-  "en": "Korean e-commerce still grows faster than offline retail. Material presented at a Korea Distribution Association seminar put last year's online merchandise transaction value at 186.5 trillion won, with non-store retail compounding at 12.6% a year over the past decade, far ahead of hypermarkets and department stores. Competition, though, pits a first-party, logistics-controlled model (Coupang) against a search-and-brokerage model (NAVER), and from a seller's perspective a common strategy is to split roles: Coupang for turnover, NAVER for discovery and trust. On regulation, platform legislation remains in flux. Key bills under discussion include a platform monopoly act designating dominant operators and barring self-preferencing, and an online platform brokerage fairness act covering shorter settlement cycles, search algorithm transparency and collective bargaining rights for business users. A Supreme Court ruling in October 2025 on the NAVER Shopping self-preferencing case was also cited as exposing evidentiary limits in the current fair trade law. In AI infrastructure, the cycle sits in an early expansion phase. NAVER Cloud has argued the industry's center of gravity is shifting from models toward an inference-centric AI factory era built on stable operation of large-scale infrastructure. Brokerages have flagged AI monetization — NAVER's AI search advertising and AI factory, Kakao's AI agents — as the key swing factor for corporate value in the second half."
+  "ko": "국내 검색·광고 시장은 생성형 AI가 검색 결과 화면 자체를 바꾸는 전환기에 있다. NAVER는 2025년 3월 도입한 AI 브리핑을 통해 검색 의도에 맞는 답변과 출처 콘텐츠를 함께 제시하는 구조로 검색 경험을 재편했고, 광고에서는 애드부스트 등 AI 기반 타겟팅으로 1분기 광고 매출 성장의 절반 이상이 AI에서 나왔으며, 3월 기준 롱테일 검색어가 전년 동기 대비 2.5배 이상 늘었다고 밝혔다. 다만 AI 답변이 확산되면 외부 링크 클릭 구조가 달라질 수 있어, 검색 트래픽의 광고 수익 전환율이 어떻게 유지되는지가 업계 공통의 관찰 포인트다. 커머스에서는 검색 기반 비교에서 앱·추천 기반 탐색으로 축이 이동하고 있고, 회사는 2026년에도 스마트스토어 거래액 두 자릿수 성장을 목표로 N배송 커버리지를 2026년 25%, 2027년 35% 이상으로 확대하겠다는 계획을 제시했다. 반면 쿠팡은 전국 100여 곳 물류센터에 더해 9개 물류센터에 3조원을 추가 투자할 계획이어서 배송 인프라 경쟁은 계속되며, 신세계그룹과 알리바바인터내셔널 합작법인 출범으로 G마켓도 반격을 준비하는 등 경쟁 강도가 높아지는 구도다. AI 인프라 쪽은 사이클 초입에 해당한다. NAVER는 2027년 상반기 '각 세종'을 기반으로 55MW 규모 1차 인프라를 가동하고 2028년까지 200MW, 장기적으로 1GW급으로 확대할 계획이며, 200MW 규모에는 엔비디아의 베라 루빈·블랙웰 플랫폼이 도입된다. 결제·디지털자산 영역은 규제 변수가 산업 구조를 좌우하는 국면으로, 공정거래위원회 기업결합 심사와 디지털자산기본법 제정 논의가 마무리되지 않아 관련 거래 일정이 밀린 상태다.",
+  "en": "Korea's search and advertising market is in transition as generative AI reshapes the results page itself. NAVER has reworked the search experience through AI Briefing, launched in March 2025, presenting intent-matched answers alongside the source content used to build them, and in advertising it said AI-based targeting tools such as ADVoost drove more than half of first-quarter ad revenue growth, with long-tail queries up more than 2.5 times year on year as of March. A shared industry question, however, is how outbound click behaviour and the conversion of search traffic into ad revenue hold up as AI answers spread. In commerce, the axis is shifting from search-led comparison to app- and recommendation-led discovery, and management has targeted another year of double-digit SmartStore transaction growth in 2026 while expanding N-delivery coverage to 25% in 2026 and above 35% in 2027. Coupang, by contrast, plans an additional KRW 3tn investment in nine fulfilment centres on top of its roughly 100 existing sites, keeping logistics competition intense, and the Shinsegae-Alibaba International joint venture is preparing a counterattack through Gmarket, adding to competitive pressure. AI infrastructure, meanwhile, sits at the start of its cycle. NAVER plans to bring 55MW of first-phase capacity online at its Gak Sejong data centre in the first half of 2027, scaling to 200MW by 2028 and eventually to 1GW, with NVIDIA's Vera Rubin and Blackwell platforms to be deployed in the 200MW build. In payments and digital assets, regulation is the swing factor: the Fair Trade Commission's merger review and pending digital-asset framework legislation remain unresolved, pushing related deal timelines back."
  },
  "outlook": {
-  "ko": "확인된 일정의 중심은 AI 팩토리다. 네이버는 하이퍼스케일 데이터센터 각 세종을 거점으로 2027년 상반기 55MW 가동을 시작해 같은 해 100MW, 2028년 200MW까지 확장하는 단계적 로드맵을 제시했으며, 궁극적으로 기가와트급 인프라를 목표로 한다. 자금·공급망 측면에서는 엔비디아를 대상으로 10억 달러 규모 제3자 배정 유상증자를 실시하고, 브룩필드를 90억 달러 규모 GPU 인프라·데이터센터 확보 사업의 독점적 우선협상대상자로 선정했다. 200MW까지는 신속한 시장 진입을 위해 외부 데이터센터 상면을 임차하는 방식을 활용하며 필요한 공간은 대부분 확보했다고 회사는 설명했다. AI 팩토리 관련 매출은 2027년 상반기부터 발생할 것으로 예상된다. 본업에서는 AI 서비스의 수익화 단계가 이어진다. 6월 25일 정식 출시된 AI탭은 8월 초 기준 월간활성이용자 1,000만명을 넘어섰고 주간 재방문율도 테스트 초기 대비 두 배 이상 올랐다고 회사는 밝혔다. 7월 말 정식 출시된 AI 브리핑 광고는 기존 검색광고 대비 클릭 전환율 30% 이상, 구매 전환율 3배 이상을 기록했다고 회사는 설명했다. 하반기에는 부동산·건강 특화 AI 에이전트를 공개해 서비스 범위를 넓힐 계획이며, N페이 커넥트를 사업자용 AI 플랫폼으로 키워 네이버 아이디 기반 오프라인 결제 규모를 5년 내 130조원까지 확대하겠다는 목표도 제시됐다.",
-  "en": "The confirmed calendar centers on the AI factory. Using its hyperscale data center in Sejong as a base, NAVER laid out a phased roadmap starting with 55MW in the first half of 2027, rising to 100MW that year and 200MW in 2028, ultimately targeting gigawatt-scale infrastructure. For funding and supply, it is issuing $1 billion of new shares to NVIDIA in a third-party allocation and has named Brookfield exclusive preferred negotiator for a $9 billion program to secure GPU infrastructure and data centers. Up to 200MW the company says it will lease external data center space for speed to market and has already secured most of the capacity it needs. AI factory revenue is expected to begin in the first half of 2027. In the core business, AI service monetization continues in stages. Management said the AI Tab, formally launched on June 25, surpassed 10 million monthly active users as of early August, with weekly revisit rates more than doubling versus the early test period. AI Briefing advertising, formally launched in late July, has shown click conversion more than 30% higher and purchase conversion more than three times that of existing search ads, according to the company. For the second half it plans to unveil real-estate and health-specific AI agents, and it set a goal of growing NAVER ID-based offline payments to 130 trillion won within five years by building N Pay Connect into a merchant-facing AI platform."
+  "ko": "회사가 제시한 2026년 방향은 AI 수익화와 커머스 도약으로 요약된다. 회사는 AI 브리핑 적용 범위를 연말까지 현재의 2배 수준으로 넓히고 정보성 영역에서 쇼핑·로컬로 확대하며, 쇼핑 에이전트와 AI 탭을 통해 새로운 수익화 기회를 모색한다고 밝혔다. 광고 쪽에서는 7월 말 정식 출시된 AI 브리핑 광고가 기존 검색광고 대비 30% 이상 높은 클릭 전환율과 3배 이상의 구매 전환율을 기록했다고 회사는 설명했다. AI 팩토리는 자본 구조가 구체화됐다. 회사는 2026년 7월 27일 1조4,808억원 규모(약 10억달러) 제3자배정 유상증자를 결정했다고 공시했고, 신주 발행가는 20만4,500원, 발행 대상은 엔비디아다. 8월 3일 공시된 'AI 팩토리 1단계' 참고자료에 따르면 이번 계약은 총 1GW 계획 중 1단계 200MW를 대상으로 하며, 브룩필드가 90억달러를 투자해 설립하는 특수목적법인이 엔비디아로부터 GPU를 구매하고 데이터센터 부지를 확보해 인프라를 보유·관리한다. 회사는 브룩필드의 직접 투자 금액은 미확정이며 90억달러는 2028년까지의 예상 투자 금액이라고 밝혔다. 매출 인식 시점에 관해서는 AI 팩토리 관련 매출이 2027년부터 발생할 것으로 예상되며, 최수연 대표는 초기 가동 용량에 대한 고객을 선제적으로 확보해 조기에 매출과 이익 성과를 만들겠다고 밝혔다. 금융 부문에서는 주식교환 완료 후 네이버파이낸셜 상장을 추진하고 1년 이내 기업공개 위원회를 구성하기로 한 계획이 남아 있어, 인허가 진행 상황이 향후 손익·지배구조 시나리오를 좌우한다.",
+  "en": "Management frames 2026 around AI monetisation and a commerce step-up. The company said it will roughly double AI Briefing's coverage by year-end, extend it from informational queries into shopping and local, and pursue new monetisation through a shopping agent and an AI tab. In advertising, the company said AI Briefing ads, formally launched in late July, delivered click conversion more than 30% higher than conventional search ads and purchase conversion more than three times higher. The AI Factory's capital structure has now been detailed. On July 27, 2026 the company disclosed a third-party share issue of KRW 1.4809tn (about USD 1bn) to NVIDIA at an issue price of KRW 204,500 per new share. According to the 'AI Factory Phase 1' reference material disclosed on August 3, the agreement covers the first 200MW of the total 1GW plan, with an SPV funded by Brookfield's USD 9bn buying GPUs from NVIDIA and securing data-centre sites while owning and managing the infrastructure. The company said Brookfield's direct investment amount into NAVER is undetermined and that the USD 9bn figure represents expected investment through 2028. On timing, AI Factory revenue is expected to begin in 2027, and CEO Choi Soo-yeon said the company aims to secure customers for initial capacity in advance to generate meaningful revenue and profit early. In finance, the plan to pursue a Naver Financial listing after the share swap and to form an IPO committee within a year remains in place, so regulatory progress will shape earnings and governance scenarios from here."
  },
  "valuation_comment": {
-  "ko": "주당 지표는 EPS 12,117원, BPS 195,071원으로 산출되며, 주가는 순자산가치를 웃도는 구간에서 형성돼 있다. 이익 대비 배수는 최근 영업이익이 정체된 반면 매출은 두 자릿수로 늘어나는 조합을 반영하는 형태여서, 지표 해석에는 영업외 항목 변동성도 함께 봐야 한다 — 실제로 분기 지배주주 순이익은 앞선 실적 구간에서 큰 폭으로 출렁였다. 배당은 주당 2,630원, 총 3,936억원 규모로 결정됐고, 2025~2027년 3개년 계획은 직전 2개년 평균 연결 잉여현금흐름의 25~35%를 자사주 매입 후 소각 또는 현금배당으로 환원하는 구조여서, 배당수익률만으로 보면 절대 수준이 크지 않고 총주주환원 관점에서 접근해야 한다. 주식수 측면에서는 발행주식 총수의 3.1%인 자사주 490만1,094주 소각이 감소 요인, 엔비디아 대상 10억 달러 제3자 배정 유상증자가 증가 요인으로 동시에 작용한다. 밸류에이션 의견은 시장에서도 갈리는데, 파이낸셜뉴스는 엔비디아 등 파트너와 추진하는 AI 팩토리 사업 구조가 정립되고 클라우드 인프라 매출이 가시화되면 밸류에이션이 다시 이뤄질 것이란 전망을 전했다. 반대로 AI 인프라 투자가 이익으로 연결되는 시점이 늦어질 경우 같은 지표가 다르게 해석될 수 있다는 점도 함께 놓여 있다.",
-  "en": "Per-share figures work out to EPS of 12,117 won and BPS of 195,071 won, with the share price sitting above net asset value per share. The earnings-based multiple reflects a mix of double-digit revenue growth against stalled operating profit, so any reading of it should also account for non-operating volatility — quarterly net profit attributable to owners swung widely in the reported periods above. On dividends, the payout was set at 2,630 won per share, totaling about 393.6 billion won, under a three-year 2025-2027 plan to return 25-35% of the prior two-year average consolidated free cash flow via share buyback-and-cancellation or cash dividends, so the dividend yield alone is not large in absolute terms and is better viewed within total shareholder return. On share count, the cancellation of 4,901,094 treasury shares, equal to 3.1% of shares outstanding, works as a reduction, while the $1 billion third-party share issuance to NVIDIA works as an increase. Views on valuation differ in the market: Financial News reported an expectation that valuation would be reassessed once the AI factory structure with partners such as NVIDIA is settled and cloud infrastructure revenue becomes visible. Conversely, if the translation of AI infrastructure spending into profit is delayed, the same metrics can be read very differently."
+  "ko": "이익 기준 배수는 국내 대형 플랫폼이 고성장기에 받았던 수십 배 수준과는 거리가 있는 구간에서 형성되어 있고, 주가는 주당순자산과 크게 벌어지지 않은 수준에서 거래되고 있다 — 다만 자체 산출값과 KRX 공표값의 순자산 기준이 달라 화면상 배수도 산출 기준에 따라 차이가 난다. 배당수익률은 시장 평균을 밑도는 편으로, 회사는 배당보다 AI 인프라와 커머스 투자에 자금을 우선 배분하는 국면에 있다. 배수 해석이 갈리는 이유는 손익에 아직 반영되지 않은 변수가 많기 때문이다. AI 팩토리 매출은 2027년부터 인식될 예정인데 감가상각과 인프라 비용은 그보다 먼저 반영되고, 두나무 편입은 연말 이후 결과가 확정되며, 엔비디아 대상 제3자배정 유상증자로 신주가 발행되면서 주식 수도 늘어난다. 참고로 한국투자증권은 2026년 7월 말 리포트에서 NAVER에 대해 투자의견 '매수'와 목표주가 36만원을 유지했다고 밝혔다, 메리츠증권 이효진 연구원은 2026년 8월 AI 팩토리 사업의 2032년 매출 14조원, 영업이익 3조4,000억원을 예상하며 현재 연결 영업이익을 웃도는 규모라고 전망했다. 이는 특정 증권사의 견해이며, 실제 확인은 분기 실적과 인허가·가동 일정에서 순차적으로 이뤄질 사안이다.",
+  "en": "Earnings-based multiples sit well away from the several-dozen-times levels large Korean platforms commanded in their high-growth phase, and the share price trades at no great distance from book value per share, though the multiple shown on screen differs depending on whether the in-house or KRX net-asset basis is used. The dividend yield runs below the market average, consistent with a phase in which capital is directed to AI infrastructure and commerce rather than payouts. Multiples are read differently because several factors are not yet in the reported numbers. AI Factory revenue is scheduled to begin only in 2027 while depreciation and infrastructure costs land earlier; the Dunamu consolidation will only be settled after year-end; and the third-party share issue to NVIDIA increases the share count. For reference, Korea Investment & Securities said in a late-July 2026 report that it maintained a 'buy' rating and a target price of KRW 360,000 on NAVER, and Meritz Securities analyst Lee Hyo-jin forecast in August 2026 that the AI Factory business would generate KRW 14tn of revenue and KRW 3.4tn of operating profit by 2032, a scale exceeding current consolidated operating profit. These are individual brokerage views, and verification will come sequentially through quarterly results and the regulatory and commissioning timeline."
  },
  "bull": [
   {
    "title": {
-    "ko": "AI 접목이 광고·커머스 실측 지표로 확인",
-    "en": "AI Uplift Showing Up in Ad and Commerce Metrics"
+    "ko": "성장 축이 광고에서 커머스·C2C·결제로 다변화",
+    "en": "Growth engine broadening from ads to commerce, C2C and payments"
    },
    "body": {
-    "ko": "2026년 2분기 광고 매출은 전년 동기 대비 7.5% 늘었고 AI의 매출 성장 기여도는 60%를 넘었다. 1분기에는 같은 기여도가 50% 이상, 광고 매출 증가율이 9.3%였다. 7월 말 정식 출시된 AI 브리핑 광고는 기존 검색광고 대비 클릭 전환율 30% 이상, 구매 전환율 3배 이상을 기록했다고 회사는 설명했다. 새 지면의 전환 지표가 유지될지 여부가 광고 단가와 물량 양쪽에 영향을 줄 변수다.",
-    "en": "Second-quarter 2026 advertising revenue rose 7.5% year on year, with AI contributing more than 60% of that growth. In the first quarter the same contribution was above 50% and ad revenue grew 9.3%. AI Briefing advertising, formally launched in late July, showed click conversion more than 30% higher and purchase conversion more than three times that of existing search ads, according to the company. Whether those conversion metrics hold as inventory scales matters for both pricing and volume."
+    "ko": "2026년 2분기 광고 매출 증가율은 7.5%였지만 커머스 생태계가 포함된 서비스 매출은 31.3% 늘었다. 글로벌 도전 부문은 24.4% 성장했고 C2C 매출만 74.9% 증가했다. Npay 결제액도 21.0% 늘어난 25.2조원을 기록했다. 검색 광고 한 축에 의존하던 구조에서 매출원이 여러 갈래로 늘어난 점은 분기 매출 최고치 경신의 배경이다.",
+    "en": "Advertising revenue grew 7.5% in the second quarter of 2026, but service revenue tied to the commerce ecosystem rose 31.3%. The Global Challenge division grew 24.4%, with C2C revenue alone up 74.9%. Npay transaction value also rose 21.0% to KRW 25.2tn. The widening of revenue sources beyond search advertising underpins the run of record quarterly revenue."
    }
   },
   {
    "title": {
-    "ko": "커머스·결제·글로벌 C2C의 동반 성장",
-    "en": "Commerce, Payments and Global C2C Growing Together"
+    "ko": "AI 팩토리 초기 자본 부담을 외부 자본으로 분산",
+    "en": "External capital absorbs early AI Factory funding burden"
    },
    "body": {
-    "ko": "네이버플러스 스토어·멤버십·N배송 강화로 서비스 매출은 2026년 2분기 전년 동기 대비 31.3% 증가했다. 같은 분기 스마트스토어 거래액은 15.5% 늘었다. 네이버페이 결제액은 25조2,000억원으로 21.0% 증가했고, C2C 매출은 왈라팝·포시마크·소다의 성장으로 74.9% 늘었다. 성장 축이 여러 부문에 분산돼 특정 부문 둔화의 영향이 완충되는 구조라는 점이 강세 논리의 근거로 제시된다.",
-    "en": "Service revenue grew 31.3% year on year in the second quarter of 2026 as NAVER Plus Store, membership and N Delivery were strengthened. SmartStore transaction value rose 15.5% in the same quarter. NAVER Pay transaction value rose 21.0% to 25.2 trillion won, and C2C revenue jumped 74.9% on Wallapop, Poshmark and SODA. The bull case rests on growth being spread across several segments, cushioning the impact of a slowdown in any single one."
+    "ko": "공개된 계약 구조는 엔비디아와의 협력으로 GPU를 확보하고, 브룩필드가 조성하는 특수목적법인이 GPU와 데이터센터 설비를 보유·관리해 대규모 인프라 투자에 따른 재무 부담을 줄이는 형태다. 엔비디아는 제3자배정 유상증자로 약 10억달러를 투자해 납입 완료 시 지분 4.5%를 보유하게 된다. 엔비디아가 주주가 되면 GPU 공급 조건 측면에서 안전장치가 생긴다는 평가도 제시됐다.",
+    "en": "The disclosed structure secures GPUs through the NVIDIA partnership while a Brookfield-formed SPV owns and manages the GPUs and data-centre facilities, reducing the balance-sheet burden of large-scale infrastructure spending. NVIDIA is investing about USD 1bn through a third-party share issue and will hold a 4.5% stake once payment completes. Commentary has noted that NVIDIA becoming a shareholder acts as a safeguard on GPU supply terms."
    }
   },
   {
    "title": {
-    "ko": "AI 팩토리 파트너십으로 초기 자본 부담 분산",
-    "en": "Partnerships Spread the Early Capital Burden of the AI Factory"
+    "ko": "AI 적용의 광고 기여도가 지표로 확인되기 시작",
+    "en": "AI's contribution to advertising showing up in disclosed metrics"
    },
    "body": {
-    "ko": "네이버는 엔비디아를 대상으로 10억 달러 규모 제3자 배정 유상증자를 실시하고, 브룩필드를 90억 달러 규모 GPU 인프라·데이터센터 확보 사업의 독점적 우선협상대상자로 선정했다. 역할 분담은 네이버가 데이터센터 구축·운영, 엔비디아가 GPU 공급과 AI 컴퓨트 협력, 인프라 조달은 브룩필드와 협력하는 구조다. 최수연 대표는 이 파트너십으로 초기 자본 부담을 최소화하면서 빠르게 사업을 확장할 기반을 구축했다고 설명했다. 다만 실제 고객 확보와 가동률이 뒤따라야 구조의 효과가 확인된다.",
-    "en": "NAVER is issuing $1 billion of new shares to NVIDIA and has named Brookfield exclusive preferred negotiator for a $9 billion program to secure GPU infrastructure and data centers. The division of labor has NAVER building and operating data centers, NVIDIA supplying GPUs and AI compute cooperation, and Brookfield involved in infrastructure procurement. CEO Choi Soo-yeon said the partnership builds a base for rapid expansion while minimizing the initial capital burden. The structure's effect, however, still hinges on actual customer wins and utilization."
+    "ko": "회사는 2026년 2분기 광고에서 AI의 매출 성장 기여도가 60% 이상이라고 밝혔고, 1분기에는 그 비중이 50% 이상이었다고 설명했다. AI 브리핑 광고의 클릭 전환율과 구매 전환율이 기존 검색광고를 상회했다는 것이 회사 설명이다. 검색 화면 변화가 광고 상품으로 연결되는 초기 경로가 수치로 제시되고 있다는 점에서, 향후 분기 지표의 지속성 여부가 관찰 대상이다.",
+    "en": "The company said AI accounted for more than 60% of advertising revenue growth in the second quarter of 2026, up from more than 50% in the first quarter. It also said AI Briefing ads exceeded conventional search ads on both click and purchase conversion. Because an early path from the changing search interface to ad products is now being quantified, the durability of these metrics in coming quarters is what to watch."
    }
   }
  ],
  "bear": [
   {
    "title": {
-    "ko": "비용 증가율이 매출 증가율을 앞선 국면",
-    "en": "Costs Growing Faster Than Revenue"
+    "ko": "비용 증가율이 매출 증가율을 앞선다",
+    "en": "Costs growing faster than revenue"
    },
    "body": {
-    "ko": "2026년 2분기 영업비용은 2조8,684억원으로 전년 동기 대비 19.8% 늘어 매출 증가율 16.2%를 웃돌았고, 영업이익률은 15.4%로 1년 전보다 2.5%포인트 하락했다. 확정 재무 기준 2025년 연간 영업이익률이 18.3%였던 점과 비교하면 최근 분기 마진 레벨이 낮아진 상태다. 1분기에도 영업비용이 18.3% 증가했고, 회사는 개발운영비 11.6% 증가와 중계권 비용 인식, N페이 커넥트 단말기 확대 등을 배경으로 제시했다. 비용 항목 중 일회성과 구조적 부분을 구분해 확인할 필요가 있다.",
-    "en": "Second-quarter 2026 operating costs rose 19.8% year on year to 2.8684 trillion won, outpacing 16.2% revenue growth, and the operating margin fell 2.5 percentage points from a year earlier to 15.4%. Against a confirmed full-year 2025 operating margin of 18.3%, the recent quarterly margin level is lower. Operating costs also rose 18.3% in the first quarter, which the company linked to an 11.6% increase in development and operating expenses, recognition of broadcasting rights costs and the N Pay Connect terminal rollout. Separating one-off from structural cost items is essential."
+    "ko": "2026년 2분기 영업비용은 2조8,684억원으로 19.8% 증가해 매출 증가율 16.2%를 넘어섰고, 영업이익률은 15.4%로 1년 전보다 2.5%포인트 하락했다. 제공된 분기 데이터에서도 영업이익은 2025년 4분기 6,106억원에서 2026년 1분기 5,418억원, 2분기 5,203억원으로 두 분기 연속 감소했다. 2분기 영업이익은 에프앤가이드 집계 전망치 평균 5,727억원을 밑돌았다. 인프라·판권 비용이 고정비 성격을 갖는 만큼 마진 회복 시점이 관건이다.",
+    "en": "Second-quarter 2026 operating expenses rose 19.8% to KRW 2.8684tn, exceeding the 16.2% revenue increase, and the operating margin fell 2.5 percentage points year on year to 15.4%. The quarterly data also show operating profit declining for two straight quarters, from KRW 610.6bn in the fourth quarter of 2025 to KRW 541.8bn and then KRW 520.3bn. Second-quarter operating profit came in below the FnGuide consensus average of KRW 572.7bn. With infrastructure and rights costs behaving like fixed expenses, the timing of any margin recovery is the key question."
    }
   },
   {
    "title": {
-    "ko": "AI 팩토리 수익화 시점과 가동률 불확실성",
-    "en": "Uncertain Timing and Utilization for AI Factory Monetization"
+    "ko": "AI 팩토리 수익은 아직 시간표 위에만 있다",
+    "en": "AI Factory earnings still only on a timetable"
    },
    "body": {
-    "ko": "AI 팩토리 관련 매출은 2027년 상반기부터 발생할 것으로 예상되며, 그 사이 기간에는 투자와 비용이 선행한다. 용량 확대는 2027년 상반기 55MW에서 2028년 200MW까지 단계적으로 진행되고, 200MW까지는 외부 데이터센터 상면 임차 방식을 활용한다. 증권가에서는 매출 증가율 대비 영업이익 증가 폭이 완만한 배경으로 AI 관련 비용 부담이 지적됐다. 초기 가동 용량에 대한 고객 확보 진행 속도가 실제 손익 기여를 좌우하는 변수다.",
-    "en": "AI factory revenue is expected only from the first half of 2027, meaning investment and costs come first. Capacity scales in phases from 55MW in the first half of 2027 to 200MW in 2028, with leased external data center space used up to 200MW. Brokerages have pointed to AI-related cost burdens as the reason operating profit growth has lagged revenue growth. How quickly customers are secured for initial capacity will determine the actual earnings contribution."
+    "ko": "AI 팩토리 관련 매출은 2027년부터 발생할 것으로 예상된다. 네이버클라우드는 1차 인프라의 초기 수요를 담당할 핵심 고객사들과 논의 중이며 계약이 구체화되는 시점에 내용을 공개할 예정이라고 밝혔다 — 즉 초기 가동 용량의 고객 계약은 아직 공개되지 않았다. 브룩필드의 90억달러도 2028년까지의 예상 투자 금액이며 직접 투자 금액은 미확정 상태로 공시됐다. 가동 지연이나 고객 확보 부진은 비용만 먼저 반영되는 구간을 늘릴 수 있다.",
+    "en": "AI Factory revenue is expected to start only in 2027. Naver Cloud said it is in discussions with anchor customers for initial demand and will disclose details when contracts firm up - meaning customer contracts for the first tranche of capacity are not yet public. Brookfield's USD 9bn is also described as expected investment through 2028, with its direct investment amount undetermined. Any commissioning delay or slow customer acquisition would lengthen the period in which costs are recognised ahead of revenue."
    }
   },
   {
    "title": {
-    "ko": "커머스 경쟁과 플랫폼 규제 입법 리스크",
-    "en": "Commerce Competition and Platform Regulation Risk"
+    "ko": "두나무 결합 일정이 두 차례 밀렸다",
+    "en": "Dunamu deal timeline pushed back twice"
    },
    "body": {
-    "ko": "이커머스에서 쿠팡 중심 구조가 여전히 강하고, 신뢰 이슈와 규제 논의, 경쟁 변화가 겹치는 환경이 지속되고 있다. 플랫폼 독과점규제법과 온라인 플랫폼 중개거래 공정화법 논의는 검색·노출 알고리즘 공개, 정산 주기 단축, 수수료 등 거래조건 협상 방식까지 겨냥한다. 네이버쇼핑 자사 우대 사건에 대한 대법원 판결도 별도 입법 필요성 논거로 인용됐다. 규제 결과에 따라 노출·수수료 구조가 영향을 받을 수 있어 입법 경과 확인이 필요하다.",
-    "en": "Coupang-centric structures remain strong in e-commerce, amid an environment where trust issues, regulatory debate and competitive shifts overlap. Debate over a platform monopoly act and an online platform brokerage fairness act targets disclosure of search and ranking algorithms, shorter settlement cycles and how commissions and other trading terms are negotiated. The Supreme Court ruling in the NAVER Shopping self-preferencing case has also been cited to support the need for separate legislation. Because outcomes could affect ranking and commission structures, the legislative process warrants monitoring."
+    "ko": "네이버파이낸셜과 두나무의 주식교환 일정은 주주총회가 8월 18일에서 11월 19일로, 주식교환일이 9월 30일에서 12월 31일로 순연됐다. 지난해 11월 계약 발표 후 두 번째 연기로, 당초 6월 30일 예정이던 완료 시점이 6개월 가까이 늦어졌다. 인허가 결과에 따라 일정이 더 늦어지거나 무산될 가능성도 제기되며, 국회에서 논의 중인 디지털자산기본법도 변수로 지적된다. 결합을 전제로 형성된 기대는 인허가 결과에 따라 조정될 수 있다.",
+    "en": "The Naver Financial-Dunamu share swap has slipped, with the shareholder meeting moved from August 18 to November 19 and the swap date from September 30 to December 31. It is the second delay since the deal was announced last November, pushing completion nearly six months past the original June 30 target. Reports note the schedule could slip further or the deal could fail depending on approvals, with the digital-asset framework bill under discussion in parliament cited as another variable. Expectations built on the combination could therefore be revised as approvals unfold."
    }
   }
  ],
  "risks": [
   {
    "cat": {
-    "ko": "투자·감가상각 부담",
-    "en": "Capex and Depreciation Burden"
+    "ko": "자본지출·감가상각 구조",
+    "en": "Capex and depreciation structure"
    },
    "body": {
-    "ko": "1분기 컨퍼런스콜에서 회사는 신규 인프라 자산 취득에 따른 감가상각비와 통신비 증가, 중계권 투자 비용 약 180억원 반영을 설명했다. GPU와 데이터센터 관련 자산이 늘면 감가상각과 전력·운영비가 후속으로 늘어나는 구조다. 증권가는 GPU 투자에 따른 인프라 비용과 북중미 월드컵 중계권료 지출을 2분기 이익 정체의 주요 요인으로 분석했다. 투자 확대 국면에서 분기 마진의 변동성이 커질 수 있다.",
-    "en": "On the first-quarter call the company cited higher depreciation and communications costs from newly acquired infrastructure assets plus about 18 billion won of broadcasting rights investment. As GPU and data center assets build up, depreciation, power and operating costs follow. Brokerages attributed the second quarter's flat profit mainly to GPU-driven infrastructure costs and World Cup broadcasting rights spending. Quarterly margin volatility can widen during an investment-heavy phase."
+    "ko": "AI 팩토리는 단계적으로 규모가 커지는 사업이다. 초기 구축 규모가 55MW에서 200MW로 확대됐고 장기적으로는 1GW까지 늘리는 계획이며, 총 100억달러가 투입되고 약 10만개의 엔비디아 GPU가 기반이 된다. 한 증권사 연구원은 GPU 구매·가동 이후 감가상각과 원리금 상환이 끝나는 5년 뒤부터 영업 레버리지가 본격화될 수 있다고 분석했다. 그 기간 동안 비용 인식이 손익에 선행하는 구조가 이어질 수 있다.",
+    "en": "The AI Factory scales up in phases. Initial capacity was raised from 55MW to 200MW with a long-term goal of 1GW, and the project involves USD 10bn in total and roughly 100,000 NVIDIA GPUs. One brokerage analyst argued that operating leverage would only build in earnest about five years after GPU purchase and commissioning, once depreciation and debt repayment run off. Through that period, cost recognition may continue to precede revenue in the P&L."
    }
   },
   {
    "cat": {
-    "ko": "실적 대비 시장 기대 격차",
-    "en": "Gap Between Results and Market Expectations"
+    "ko": "규제·인허가",
+    "en": "Regulation and approvals"
    },
    "body": {
-    "ko": "2026년 2분기 컨센서스는 매출 3조3,662억원, 영업이익 5,656억원이었으나 실제 영업이익은 5,203억원으로 이를 밑돌았다. 확정 재무 기준으로도 2026년 1분기 영업이익 5,418억원은 2025년 4분기 6,106억원보다 낮았다. 2026년 3월 주주총회에서는 주가와 관련한 주주들의 문제 제기가 이어졌다는 보도도 있었다. 이익 추정치가 하향 조정되는 국면에서는 지표 해석이 달라질 수 있다.",
-    "en": "Consensus for the second quarter of 2026 was 3.3662 trillion won of revenue and 565.6 billion won of operating profit, while actual operating profit came in lower at 520.3 billion won. On confirmed data, first-quarter 2026 operating profit of 541.8 billion won was also below the 610.6 billion won of the fourth quarter of 2025. Reports noted shareholder complaints about the share price at the March 2026 annual meeting. If earnings estimates are revised down, metric interpretation can change."
+    "ko": "두나무 결합에는 공정거래위원회 기업결합 승인, 네이버파이낸셜 대주주 변경 승인·겸영신고, 두나무 대주주 변경신고 수리 등 복수의 정부 인허가가 필요하다. 공정위 심사의 핵심은 간편결제 1위와 가상자산·비상장주식 선두 사업자의 결합이 금융 플랫폼 경쟁을 제한하는지 여부다. 회사는 디지털자산기본법 입법 논의 내용에 따라 주식교환 진행이나 결과가 영향을 받을 가능성이 있다고 설명했다. 결과와 시점 모두 회사가 통제할 수 없는 변수다.",
+    "en": "The Dunamu combination requires multiple government approvals, including Fair Trade Commission merger clearance, approval of the change in Naver Financial's major shareholder plus a concurrent-business filing, and acceptance of Dunamu's major-shareholder change filing. The core of the antitrust review is whether combining the leading simple-payments operator with the leading digital-asset and unlisted-share platform would restrict competition in financial platforms. The company said the progress or outcome of the share swap could be affected by the content of digital-asset framework legislation under discussion. Both timing and outcome sit outside the company's control."
    }
   },
   {
    "cat": {
-    "ko": "주주환원 이행과 주식수 변동",
-    "en": "Shareholder Return Execution and Share Count Changes"
+    "ko": "경쟁·트래픽 구조 변화",
+    "en": "Competition and traffic-structure shift"
    },
    "body": {
-    "ko": "주주환원 계획은 2025~2027년 직전 2개년 평균 연결 잉여현금흐름의 25~35%를 자사주 매입 후 소각이나 현금배당으로 환원하는 구조로, 잉여현금흐름 규모에 연동된다. AI 인프라 투자가 확대되면 환원 재원 산정 기준 자체가 영향을 받을 수 있다. 과거 자사주 소각 규모는 연도별로 차이가 있었는데, 2024년 초 보유분 중 397만주를 소각한 반면 2025년에는 158만주 소각에 그쳤다는 사업보고서 기준 집계도 있다. 여기에 엔비디아 대상 유상증자는 주식수 증가 요인으로 함께 작용한다.",
-    "en": "The policy returns 25-35% of the prior two-year average consolidated free cash flow through buyback-and-cancellation or cash dividends over 2025-2027, tying returns to free cash flow. Expanded AI infrastructure investment could affect the very base used to size that return pool. Past cancellation volumes varied by year: business report tallies show 3.97 million shares cancelled from holdings in early 2024 versus only 1.58 million in 2025. Meanwhile, the share issuance to NVIDIA works in the opposite direction on share count."
+    "ko": "커머스에서는 쿠팡의 물류 추가 투자와 신세계·알리바바 합작법인 출범으로 경쟁이 이어진다. 검색에서는 AI 답변 확산이 기존 검색광고 지면과 외부 클릭 구조를 동시에 바꾸는 변화여서, 신규 광고 상품이 기존 지면 매출을 얼마나 대체·보완하는지가 아직 충분한 기간으로 검증되지 않았다. 회사가 제시한 AI 브리핑 광고 전환율 지표는 정식 출시 직후 데이터라는 점을 감안할 필요가 있다. 콘텐츠 판권 등 이벤트성 비용도 분기별 마진 변동성을 키운다.",
+    "en": "In commerce, Coupang's additional logistics investment and the launch of the Shinsegae-Alibaba joint venture keep competitive pressure on. In search, the spread of AI answers changes both legacy ad inventory and outbound click behaviour, and it is not yet verified over a sufficient period how far new ad products substitute for or supplement existing inventory revenue. The conversion metrics the company cited for AI Briefing ads should be read as data from just after formal launch. Event-driven costs such as content broadcasting rights also amplify quarterly margin volatility."
    }
   }
  ],
  "checkpoints": [
   {
    "when": {
-    "ko": "2026년 11월 초 (3분기 실적 발표 예상)",
-    "en": "Early November 2026 (expected Q3 results)"
+    "ko": "2026년 10월 말~11월 초",
+    "en": "Late October to early November 2026"
    },
    "what": {
-    "ko": "영업비용 증가율이 매출 증가율을 계속 웃도는지, 그리고 2분기에 15.4%까지 낮아진 영업이익률의 방향을 확인할 구간이다. 7월 말 정식 출시된 AI 브리핑 광고가 온기 반영되는 첫 분기라는 점도 함께 볼 지점이다.",
-    "en": "The key check is whether operating cost growth keeps outpacing revenue growth, and which way the operating margin — down to 15.4% in the second quarter — moves. It is also the first full quarter reflecting AI Briefing advertising, formally launched in late July."
+    "ko": "2026년 3분기 실적 발표와 콘퍼런스콜. 2026년 2분기 15%대로 낮아진 영업이익률의 방향과 AI 인프라·판권 비용의 증가 폭, AI 브리핑 광고의 매출 기여 추이를 함께 확인할 지점이다.",
+    "en": "Third-quarter 2026 results and the earnings call. Watch the direction of the operating margin, which fell to the mid-15% range in the second quarter, the pace of AI infrastructure and content-rights cost growth, and the revenue contribution trend from AI Briefing ads."
    }
   },
   {
    "when": {
-    "ko": "2026년 하반기",
-    "en": "Second half of 2026"
+    "ko": "2026년 11월 19일",
+    "en": "November 19, 2026"
    },
    "what": {
-    "ko": "부동산·건강 특화 AI 에이전트 공개 여부와 수익화 방식이 서비스 매출 확장의 실마리다. N페이 커넥트 단말기 확대 속도와 오프라인 결제액 추이도 파이낸셜 플랫폼 성장률과 직결된다.",
-    "en": "Whether real-estate and health-specific AI agents launch, and how they are monetized, is the clue for service revenue expansion. The pace of N Pay Connect terminal rollout and offline payment volume trends tie directly to Financial Platform growth."
+    "ko": "네이버파이낸셜·두나무 포괄적 주식교환 안건을 다루는 주주총회 예정일이다. 반대의사 통지 기간은 11월 4일~18일, 주식매수청구권 행사 기간은 11월 19일~12월 9일로 조정됐다.",
+    "en": "The scheduled shareholder meeting to vote on the Naver Financial-Dunamu comprehensive share swap. The window for notifying dissent runs November 4-18 and the appraisal-rights exercise period runs November 19 to December 9."
    }
   },
   {
    "when": {
-    "ko": "엔비디아·브룩필드 관련 후속 절차",
-    "en": "Follow-up steps with NVIDIA and Brookfield"
+    "ko": "2026년 12월 31일",
+    "en": "December 31, 2026"
    },
    "what": {
-    "ko": "엔비디아 대상 10억 달러 제3자 배정 유상증자의 납입 완료와, 90억 달러 규모 사전계약의 후속 본계약·자금조달 조건 확정 여부를 공시로 확인해야 한다. 네이버클라우드와 엔비디아의 AI 컴퓨트 파트너십 계약은 아직 확정되지 않았다고 보도된 사안이다.",
-    "en": "Watch filings for completion of the $1 billion third-party share issuance to NVIDIA and for definitive agreements and funding terms following the $9 billion preliminary arrangement. An AI compute partnership contract between NAVER Cloud and NVIDIA was reported as still not finalized."
+    "ko": "두나무와의 주식교환일로 공시된 날짜다. 공정위 기업결합 승인과 금융당국 대주주 변경 승인·신고 수리 등 인허가가 이 시점 전에 마무리되는지가 실제 성립 여부를 결정한다.",
+    "en": "The disclosed share-swap date with Dunamu. Whether Fair Trade Commission clearance and the financial regulator's major-shareholder approvals and filings are completed before this date determines whether the transaction takes effect."
    }
   },
   {
    "when": {
-    "ko": "2027년 상반기",
-    "en": "First half of 2027"
+    "ko": "2026년 4분기~2027년 상반기",
+    "en": "Fourth quarter 2026 to first half 2027"
    },
    "what": {
-    "ko": "각 세종을 거점으로 한 55MW 가동 개시 여부가 로드맵 이행의 첫 시험대다. AI 팩토리 관련 매출 인식 시작 시점과 초기 고객 확보 내용이 손익 기여를 판단할 근거가 된다.",
-    "en": "The start of 55MW operations at the Sejong site is the first test of roadmap execution. When AI factory revenue begins to be recognized, and which initial customers are secured, will be the basis for judging the earnings contribution."
+    "ko": "브룩필드와 90억달러 규모 컴퓨팅 인프라 조성을 위한 정식 계약 체결 여부와 '각 세종' 기반 55MW 1차 인프라의 2027년 상반기 가동, 2027년부터의 AI 팩토리 매출 개시를 순서대로 확인해야 한다.",
+    "en": "Track in sequence whether a definitive contract with Brookfield for the USD 9bn computing-infrastructure build is signed and the first-half 2027 commissioning of 55MW of first-phase capacity at Gak Sejong, followed by the start of AI Factory revenue from 2027."
    }
   },
   {
    "when": {
-    "ko": "2027년 2~3월 (결산 배당·주주총회)",
-    "en": "February-March 2027 (year-end dividend and AGM)"
+    "ko": "2027년 초",
+    "en": "Early 2027"
    },
    "what": {
-    "ko": "직전 2개년 평균 연결 잉여현금흐름의 25~35% 환원 정책이 실제 배당·자사주 소각 규모로 어떻게 이행되는지, 그리고 주주총회 승인 절차를 확인할 시점이다. 2026년 8월 3일 490만1,094주 소각에 이어 추가 소각이 이어지는지도 함께 볼 대목이다.",
-    "en": "This is when to check how the policy of returning 25-35% of the prior two-year average consolidated free cash flow translates into actual dividends and buyback cancellations, along with AGM approval. Whether further cancellations follow the 4,901,094 shares retired on August 3, 2026 is another point to watch."
+    "ko": "2026년 4분기 및 연간 실적 발표와 2027년 사업 계획. 2026년 25%, 2027년 35% 이상으로 제시된 N배송 커버리지 목표의 달성 여부와 배당 등 주주환원 정책의 변화를 확인할 수 있는 시점이다.",
+    "en": "Fourth-quarter and full-year 2026 results plus the 2027 business plan. This is the point to check whether the N-delivery coverage targets of 25% for 2026 and above 35% for 2027 are met, along with any change in dividend and shareholder-return policy."
    }
   }
  ],
  "verdict": {
   "body": {
-   "ko": "네이버의 현재 국면은 '외형 성장은 유지, 이익은 정체'로 요약된다. 확정 재무 기준 매출은 2022년 8조2,201억원에서 2025년 12조350억원으로 늘고 영업이익률도 15.9%에서 18.3%로 개선됐지만, 2025년 지배주주 순이익은 1조8,187억원으로 전년보다 감소했고 분기 순이익 변동성도 컸다. 2026년 2분기에는 영업비용이 19.8% 증가하며 영업이익률이 15.4%로 낮아졌다. 동시에 광고 매출 7.5% 증가와 AI 기여도 60% 이상, 서비스 매출 31.3% 증가, 네이버페이 결제액 25조2,000억원, C2C 매출 74.9% 증가처럼 사업 지표의 개선 여지는 여러 부문에서 확인된다. 향후 판단의 축은 2027년 상반기 55MW 가동을 시작으로 2028년 200MW까지 확장하는 AI 팩토리 로드맵과, 2027년 상반기로 제시된 관련 매출 인식 시점의 이행 여부다. 주주환원 측면에서는 발행주식 총수 3.1% 규모 자사주 소각과 잉여현금흐름 연동 3개년 환원 정책이 진행 중이며, 반대편에는 규제 입법 논의와 커머스 경쟁이라는 변수가 놓여 있다. 본 자료는 정보 제공 목적이며 투자 판단과 그 결과에 대한 책임은 투자자 본인에게 있다.",
-   "en": "NAVER's current phase can be summarized as top-line growth intact, profit flat. On confirmed figures, revenue grew from 8.2201 trillion won in 2022 to 12.035 trillion in 2025 and the operating margin improved from 15.9% to 18.3%, yet 2025 net profit attributable to owners fell to 1.8187 trillion won and quarterly net profit was volatile. In the second quarter of 2026 operating costs rose 19.8% and the operating margin fell to 15.4%. At the same time, room for operational improvement is visible across segments: advertising revenue up 7.5% with AI contributing over 60% of that growth, service revenue up 31.3%, NAVER Pay transaction value of 25.2 trillion won and C2C revenue up 74.9%. The axis for future assessment is execution of the AI factory roadmap — 55MW from the first half of 2027 scaling to 200MW in 2028 — and whether related revenue recognition begins in the first half of 2027 as guided. On shareholder returns, a cancellation equal to 3.1% of shares outstanding and a three-year free-cash-flow-linked return policy are in progress, while regulatory legislation and commerce competition sit on the other side of the ledger. This material is for information purposes only; investment decisions and their outcomes remain the reader's own responsibility."
+   "ko": "NAVER의 최근 실적은 성장과 비용이 동시에 커지는 국면을 보여준다. 매출은 2022년 8조2,201억원에서 2025년 12조350억원으로 확대됐고 2026년 2분기에는 3조3,888억원으로 분기 최고치를 기록했지만, 영업이익은 2025년 4분기 6,106억원 이후 두 분기 연속 줄어 2026년 2분기 5,203억원에 머물렀다. 비용 증가율이 매출 증가율을 웃돌면서 2분기 영업이익률은 15.4%로 1년 전보다 2.5%포인트 하락했다. 성장 쪽에서는 커머스 생태계와 글로벌 C2C, Npay 결제액이 두 자릿수 이상으로 늘어나며 매출원이 다변화되고 있고, 회사는 광고에서 AI의 성장 기여도가 커지고 있다고 설명한다. 반대편에는 2027년부터 인식될 예정인 AI 팩토리 매출과 그보다 먼저 반영되는 인프라 비용, 그리고 두 차례 연기된 두나무 결합의 인허가 불확실성이 놓여 있다. 결국 관찰의 초점은 분기 영업이익률의 방향, AI 팩토리 초기 고객 계약과 가동 일정, 12월 31일로 공시된 주식교환의 성립 여부라는 세 가지 확인 가능한 사실에 모인다. 이 리포트는 정보 제공을 목적으로 하며 매수·매도 의견이나 목표주가를 포함하지 않는다.",
+   "en": "NAVER's recent results depict a phase in which growth and costs are expanding together. Revenue rose from KRW 8.2201tn in 2022 to KRW 12.035tn in 2025 and hit a quarterly record of KRW 3.3888tn in the second quarter of 2026, yet operating profit declined for two consecutive quarters after peaking at KRW 610.6bn in the fourth quarter of 2025, standing at KRW 520.3bn in the second quarter of 2026. With costs growing faster than revenue, the second-quarter operating margin fell 2.5 percentage points year on year to 15.4%. On the growth side, the commerce ecosystem, global C2C and Npay transaction value are all expanding at double-digit rates or better, diversifying revenue sources, and management says AI's contribution to advertising growth is rising. On the other side stand AI Factory revenue scheduled only from 2027 against infrastructure costs recognised earlier, plus approval uncertainty around the twice-delayed Dunamu combination. The focus therefore narrows to three verifiable facts: the direction of the quarterly operating margin, initial AI Factory customer contracts and commissioning timing, and whether the share swap disclosed for December 31 actually takes effect. This report is for information purposes only and contains no buy or sell recommendation or target price."
   }
  },
  "sources": [
   "https://navercorp.com/media/pressReleasesDetail?seq=10034577",
-  "https://economist.co.kr/article/view/ecn202608070003",
+  "https://www.investing.com/equities/nhn-corp-earnings",
   "https://www.nspna.com/report/?mode=view&newsid=823485",
-  "https://kr.investing.com/news/transcripts/article-93CH-2051602",
-  "https://www.kyeongin.com/article/1768634",
+  "https://economist.co.kr/article/view/ecn202608070003",
+  "https://www.navercorp.com/investment/earnings",
   "https://www.gamevu.co.kr/news/articleView.html?idxno=59879",
+  "https://kr.investing.com/news/transcripts/article-93CH-2051602",
   "https://www.insight.co.kr/news/566910",
   "https://www.etnews.com/20260807000008",
   "https://www.bloter.net/news/articleView.html?idxno=670315",
-  "https://www.inews24.com/view/1964797",
-  "https://platum.kr/archives/286105",
-  "https://v.daum.net/v/uthfKivmWb",
-  "https://v.daum.net/v/qdeFB8vmh3",
-  "https://navercorp.com/api/article/download/0ce4e7c3-c1ab-4628-9848-baecc3cfcf86",
   "https://byline.network/2026/04/30_1928745/",
-  "https://v.daum.net/v/xQnc9y2usQ",
-  "https://wowtale.net/2026/06/08/259741/",
-  "https://www.fnnews.com/news/202607271358360509"
+  "https://byline.network/2026/02/06_129873/",
+  "https://super-label.com/blog/naver-commerce-strategy-2026",
+  "https://www.newspim.com/news/view/20260807000069",
+  "https://v.daum.net/v/qdeFB8vmh3",
+  "https://www.g-enews.com/article/ICT/2026/08/2026080310020347233d7a510102_1",
+  "https://www.coindesk.com/tech/2026/08/11/nvidia-wants-to-turn-its-ai-chips-into-an-investable-asset-class",
+  "https://www.cbci.co.kr/news/articleView.html?idxno=594049"
  ],
  "v": 2,
  "model": "claude-opus-5",
@@ -233,11 +233,11 @@
   "IT·소프트웨어"
  ],
  "market": "코스피",
- "reportDate": "2026-08-14",
- "reportTs": "2026-08-14 21:54",
- "dataDate": "20260821",
+ "reportDate": "2026-09-05",
+ "reportTs": "2026-09-05 05:28",
+ "dataDate": "20260904",
  "quant": {
-  "asOf": "2026-08-23",
+  "asOf": "2026-09-04",
   "fs_basis": "연결(CFS) · DART 공시 확정치 · 지배주주 기준 순이익",
   "annual": [
    {
@@ -338,25 +338,26 @@
    }
   ],
   "valuation": {
-   "price": 222000,
-   "mcap": 34.849,
-   "shares": 156977585,
+   "price": 213500,
+   "mcap": 32.4683,
+   "shares": 152076491,
    "total_shares": 156852638,
    "wavg_shares": 149695181,
-   "per": 16.453,
+   "per": 15.823,
    "eps": 13493,
-   "pbr": 1.125,
+   "pbr": 1.0819,
    "bps": 197331,
    "roe_ttm": 7.2,
    "ttm_window": "2025Q3~2026Q2",
    "ttm_np_owner": 2023538195851,
    "ccy": "KRW",
    "bps_src": "자체",
-   "pbr_krx": 1.2,
+   "eps_src": "공시",
+   "pbr_krx": 1.16,
    "bps_krx": 184396.0,
    "basis": "PER·EPS·PBR·BPS 모두 자체 산출(네이버·토스와 동일 방식) · 배당은 DART 공시 주당현금배당금(보완:KRX) ÷ 현재가",
    "dps": 2630.0,
-   "div": 1.18
+   "div": 1.23
   }
  }
 }
