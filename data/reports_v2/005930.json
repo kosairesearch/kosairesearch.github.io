@@ -1,147 +1,147 @@
 {
  "title": {
-  "ko": "사상 최대 이익과 사이클 정점 논쟁",
-  "en": "Record Profits, Peak-Cycle Debate"
+  "ko": "사상 최대 이익, 반도체 쏠림이 변수",
+  "en": "Record Profit, With Chip Concentration as the Variable"
  },
  "lead": {
-  "ko": "메모리 가격 급등과 HBM4 램프업으로 분기 이익이 사상 최대 수준까지 올라섰지만, 이익이 반도체 한 부문에 쏠려 있고 가격 상승률은 둔화 국면에 들어섰다는 점이 함께 관찰된다.",
-  "en": "Surging memory prices and the HBM4 ramp have driven quarterly profit to record levels, but earnings are heavily concentrated in one division and price increases are already decelerating."
+  "ko": "AI 메모리 가격 급등으로 분기 매출·영업이익이 사상 최대 수준까지 올라왔지만, 이익의 거의 전부가 반도체 한 부문에서 나온다는 구조가 동시에 드러났다.",
+  "en": "A surge in AI memory pricing has pushed quarterly revenue and operating profit to record levels, while at the same time exposing a structure in which nearly all profit comes from a single semiconductor division."
  },
  "keypoints": [
   {
-   "ko": "2026년 2분기 연결 매출 171조4995억원·영업이익 89조4924억원으로 분기 최대치를 기록했고, 상반기 영업이익 합계는 2025년 연간 영업이익 43조6010억원의 세 배를 넘어섰다.",
-   "en": "Q2 2026 consolidated revenue of KRW 171.50tn and operating profit of KRW 89.49tn set quarterly records, and first-half operating profit alone exceeded three times the full-year 2025 figure of KRW 43.60tn."
+   "ko": "2026년 2분기 매출 171조4995억원, 영업이익 89조4924억원으로 분기 기준 최대치를 기록했고, 영업이익률은 52.2% 수준까지 상승했다.",
+   "en": "In Q2 2026 revenue reached KRW 171.4995tn and operating profit KRW 89.4924tn, both quarterly records, with the operating margin rising to about 52.2%."
   },
   {
-   "ko": "이익 쏠림이 뚜렷하다 — 회사와 언론 집계에 따르면 2분기 전사 영업이익률은 약 52%, 반도체(DS)부문이 전사 영업이익의 99.7%를 차지했고 DX부문은 부문 출범 이후 첫 분기 적자를 냈다.",
-   "en": "Concentration is stark: reported Q2 company-wide operating margin was about 52%, with the DS (semiconductor) division accounting for 99.7% of operating profit while DX posted its first quarterly loss since the division was formed."
+   "ko": "회사는 2026년 2분기 컨퍼런스콜에서 3분기 HBM4 매출이 전분기 대비 3배 이상 늘고 하반기 HBM4가 전체 HBM 매출의 60%를 넘을 것으로 전망했다.",
+   "en": "On the Q2 2026 earnings call the company guided that Q3 HBM4 revenue would more than triple quarter on quarter and that HBM4 would exceed 60% of total HBM revenue in the second half."
   },
   {
-   "ko": "회사는 3분기 HBM4 매출이 전분기 대비 3배 이상 늘고 하반기 HBM4가 전체 HBM 매출의 60%를 넘을 것으로 컨퍼런스콜에서 전망했다.",
-   "en": "On its earnings call the company guided for Q3 HBM4 revenue to more than triple quarter on quarter, with HBM4 exceeding 60% of total HBM revenue in the second half."
+   "ko": "2026년 2분기 영업이익의 99.7%가 DS(반도체) 부문에서 나왔고, DX 부문은 부문 출범 이후 첫 분기 영업손실을 냈다.",
+   "en": "DS (semiconductors) accounted for 99.7% of Q2 2026 operating profit, while the DX division posted its first quarterly operating loss since the division was created."
   },
   {
-   "ko": "가격 상승 속도는 둔화 신호가 있다 — 트렌드포스는 3분기 범용 D램 계약가 상승률을 13~18%, 낸드를 10~15%로 제시했는데 이는 2분기(D램 58~63%)보다 크게 축소된 수준이다.",
-   "en": "Price momentum is cooling: TrendForce projected Q3 commodity DRAM contract price gains of 13-18% and NAND of 10-15%, far below Q2 levels (DRAM 58-63%)."
+   "ko": "2026년 8월 21일 이사회는 약 90조~110조원 규모의 2026년 주주환원 시행 방안과 임직원 보상용 약 15조원 자사주 매입을 의결했다.",
+   "en": "On August 21, 2026 the board approved a 2026 shareholder return program estimated at KRW 90tn-110tn, plus about KRW 15tn of treasury share purchases for employee compensation."
   },
   {
-   "ko": "2026년 8월 21일 이사회는 올해 주주환원 규모를 약 90조~110조원으로 제시했고, 세부 방식은 10월 이사회와 2027년 1월에 순차 확정될 예정이다.",
-   "en": "The board on August 21, 2026 indicated 2026 shareholder returns of roughly KRW 90-110tn, with execution details to be finalized at the October board meeting and in January 2027."
+   "ko": "메모리 사이클을 두고 2027~2028년 공급 부족 지속론과 중국 증설·투자 둔화로 인한 가격 하락 경고가 함께 제기돼 있다.",
+   "en": "Views on the memory cycle diverge, with some arguing shortages persist into 2027-2028 while others warn of price declines from Chinese capacity additions and slowing investment."
   }
  ],
  "business": {
-  "ko": "삼성전자는 반도체를 담당하는 DS부문과 완제품을 담당하는 DX부문, 그리고 삼성디스플레이·하만 등 연결 자회사로 구성된 종합 전자기업이다. DS부문은 메모리(D램·낸드·HBM), 시스템LSI(모바일 SoC·이미지센서·전력반도체), 파운드리로 나뉘고, DX부문은 스마트폰(MX)·네트워크·영상디스플레이·생활가전을 포괄한다. 현재 실적의 중심은 메모리다. 2026년 2분기 DS부문 영업이익은 89조2000억원으로 전사 영업이익의 약 99.7%에 해당했고, 스마트폰·TV·가전을 담당하는 DX부문은 8000억원의 영업손실을 기록해 2021년 부문 출범 이후 첫 분기 적자를 냈다. 회사는 서버용 제품 중심으로 대응해 메모리에서 역대 최대 분기 실적을 냈고, HBM4 공급을 확대하며 업계 최초로 HBM4E 샘플을 출하했다고 밝혔다. 낸드 사업의 성격도 바뀌고 있는데, 회사는 주요 고객사와 다년 계약을 체결해 사업 가시성을 높이고 있으며 올해 낸드 매출에서 서버용 SSD 비중이 60%를 넘어설 것으로 전망했다. 시스템LSI와 파운드리는 규모는 작지만 방향이 개선되는 구간으로, 시스템LSI는 모바일 SoC와 센서 판매 확대로 상반기 최대 매출을 냈고 파운드리는 HBM 베이스 다이와 미주 고객 중심 수요 증가로 실적이 개선됐다고 회사는 설명했다. 고객 기반은 글로벌 하이퍼스케일러와 AI 가속기 업체로 확장되고 있으며, 회사는 미국 대형 고객사로부터 2나노 고성능 컴퓨팅 주문을 확보했고 2026년 하반기 2세대 2나노 모바일 제품 양산을 계획하고 있다. 경쟁 구도는 메모리에서 SK하이닉스·마이크론, 파운드리에서 TSMC, 완제품에서 애플·중국 업체들과의 다층 경쟁으로 요약된다.",
-  "en": "Samsung Electronics is a diversified electronics group split between the DS (semiconductor) division, the DX (finished products) division, and consolidated affiliates such as Samsung Display and Harman. DS covers memory (DRAM, NAND, HBM), System LSI (mobile SoCs, image sensors, power ICs) and foundry, while DX spans smartphones (MX), networks, visual display and home appliances. Memory currently sits at the center of earnings. In Q2 2026 DS operating profit of KRW 89.2tn represented about 99.7% of company-wide operating profit, while DX, which handles smartphones, TVs and appliances, posted an KRW 0.8tn operating loss - its first quarterly loss since the division was created in 2021. The company said memory delivered a record quarter by focusing on server products, while expanding HBM4 supply and shipping the industry's first HBM4E samples. The character of the NAND business is also shifting: management said it has signed multi-year contracts with key customers to improve visibility and expects server SSDs to exceed 60% of NAND revenue this year. System LSI and foundry are smaller but improving; the company said System LSI achieved record first-half revenue on mobile SoC and sensor sales, while foundry improved on HBM base die demand and orders from US-based customers. The customer base is broadening toward global hyperscalers and AI accelerator vendors, and the company has secured a 2nm high-performance computing order from a large US customer and plans second-generation 2nm mobile mass production in the second half of 2026. Competition runs on several fronts: SK hynix and Micron in memory, TSMC in foundry, and Apple plus Chinese vendors in devices."
+  "ko": "삼성전자는 반도체를 담당하는 DS 부문과 스마트폰·TV·가전을 담당하는 DX 부문, 그리고 삼성디스플레이·하만 등 자회사를 함께 보유한 종합 전자 기업이다. DS 부문은 메모리(D램·낸드), 시스템LSI, 파운드리로 구성되며 2026년 2분기 기준 DS부문 영업이익은 89조2000억원으로 전사 영업이익의 약 99.7%를 차지했다. 메모리는 에이전틱 AI 확산으로 수요가 강했던 서버용 제품을 중심으로 대응하며 역대 최대 분기 실적을 냈고, HBM4 공급을 확대하는 동시에 업계 최초로 HBM4E 샘플을 출하했다. 낸드에서는 회사가 올해 자사 낸드 매출에서 서버용 SSD 비중이 60%를 넘어설 것으로 전망했고, 주요 고객사와 다년 계약을 체결해 중장기 사업 가시성을 높였다고 밝혔다. 시스템LSI는 전반적인 수요 감소에도 모바일 SoC와 센서 판매 확대로 상반기 최대 매출을 달성했고, 파운드리는 HBM 베이스 다이와 미주 고객 중심 수요 증가로 매출이 늘었다. HBM 구조 측면에서 삼성전자는 10나노급 6세대(1c) D램 공정을 HBM4에 적용하고 베이스 다이는 자사 파운드리 4나노 공정으로 조달하는 방식을 택해 경쟁사와 다른 공급망을 갖췄다. 전방 고객은 AI 가속기 업체로, HBM4는 엔비디아 베라 루빈과 AMD MI450에 탑재될 차세대 가속기용 메모리로 거론되며 파운드리에서는 미국 대형 고객의 2나노 고성능 컴퓨팅 주문을 확보했다고 회사가 밝혔고 공급망에서는 테슬라 AI 칩으로 지목됐다. 반면 DX 부문은 갤럭시 S26 시리즈와 A시리즈 판매 호조로 매출은 전년 대비 성장했으나 부품 원가 상승으로 영업이익이 감소하는 구조에 놓였다. 경쟁 구도는 메모리에서 SK하이닉스·마이크론, 파운드리에서 TSMC와의 격차 축소가 핵심 축이다.",
+  "en": "Samsung Electronics is a diversified electronics group spanning the DS division (semiconductors), the DX division (smartphones, TVs, home appliances) and affiliates such as Samsung Display and Harman. DS covers memory (DRAM and NAND), System LSI and Foundry, and in Q2 2026 DS operating profit was KRW 89.2tn, roughly 99.7% of company-wide operating profit. In memory, the company said it focused on server products where agentic AI drove strong demand, delivered a record quarter, expanded HBM4 supply and shipped the industry's first HBM4E samples. In NAND, management guided that server SSDs would exceed 60% of its NAND revenue this year, and it said multi-year contracts with major customers had improved medium-term visibility. System LSI achieved record first-half revenue on mobile SoC and sensor sales despite broadly weaker demand, while Foundry saw revenue rise on HBM base dies and demand from customers in the Americas. Structurally, Samsung applies its sixth-generation 10nm-class (1c) DRAM process to HBM4 and sources the base die from its own 4nm foundry process, giving it a different supply chain from rivals. End customers are AI accelerator vendors: HBM4 is cited as memory for next-generation accelerators including Nvidia Vera Rubin and AMD MI450, while in foundry the company said it won a 2nm high-performance computing order from a large US customer, identified by supply-chain sources as a Tesla AI chip. By contrast, DX faces a structure where revenue grew year on year on solid Galaxy S26 and A-series sales but operating profit fell on rising component costs. The competitive axes are SK hynix and Micron in memory, and closing the gap with TSMC in foundry."
  },
  "earnings": {
-  "ko": "실적 궤적은 짧은 기간에 극단적으로 바뀌었다. 2023년 매출 258조9355억원·영업이익 6조5670억원(영업이익률 2.5%)의 저점을 지나 2024년 매출 300조8709억원·영업이익 32조7260억원(10.9%), 2025년 매출 333조6059억원·영업이익 43조6011억원(13.1%)으로 회복했고, 2025년 지배주주 순이익은 44조2610억원, 영업활동현금흐름은 85조3151억원이었다. 분기 흐름이 더 극적이다 — 2025년 2분기 영업이익 4조6761억원에서 3분기 12조1661억원, 4분기 20조0737억원으로 올라선 뒤 2026년 1분기 57조2328억원, 2분기 89조4924억원을 기록했다. 2026년 상반기 영업이익 합계는 146조7252억원으로 2025년 연간 영업이익의 세 배를 넘고, 매출도 1분기 133조8734억원에서 2분기 171조4995억원으로 늘었다. 제공된 확정치로 계산하면 영업이익률은 2026년 1분기 약 42.8%에서 2분기 약 52.2%로 상승했다. 이익 급증의 직접적 동인은 판가다 — 회사는 2분기 평균판매단가가 전 분기 대비 D램 40% 중반, 낸드 60% 후반 상승했다고 밝혔다. 출하도 뒷받침됐는데 2분기 D램 비트 출하량은 전 분기 대비 10% 초반 증가해 회사 전망치를 상회했고 낸드는 한 자릿수 초반 증가로 전망치에 부합했다. 반면 완제품은 원가 부담을 받았다 — 회사는 MX가 갤럭시 S26 시리즈 등으로 매출은 늘었지만 부품 원가 상승 등 비용 부담 확대로 영업이익이 감소했다고 설명했다. 비용 측면의 일회성 변수로는 성과급 충당금이 있으며, 회사는 1분기 컨퍼런스콜에서 상여금 충당은 노사 협의 중으로 1분기에는 반영되지 않았고 협상 결과에 따라 2분기 반영 여부와 규모를 결정할 예정이라고 밝혔다. 재무구조는 2025년 말 자본총계 436조3203억원·부채총계 130조6218억원, 부채비율 29.9%로 유지됐다.",
-  "en": "The earnings trajectory has swung to extremes in a short period. From the 2023 trough of KRW 258.94tn revenue and KRW 6.57tn operating profit (2.5% margin), results recovered to KRW 300.87tn and KRW 32.73tn (10.9%) in 2024 and KRW 333.61tn and KRW 43.60tn (13.1%) in 2025, with 2025 net profit attributable to owners of KRW 44.26tn and operating cash flow of KRW 85.32tn. The quarterly path is even sharper: operating profit rose from KRW 4.68tn in Q2 2025 to KRW 12.17tn in Q3 and KRW 20.07tn in Q4, then to KRW 57.23tn in Q1 2026 and KRW 89.49tn in Q2 2026. First-half 2026 operating profit of KRW 146.73tn is more than triple full-year 2025, while revenue climbed from KRW 133.87tn in Q1 to KRW 171.50tn in Q2. Using the confirmed figures, operating margin expanded from roughly 42.8% in Q1 2026 to about 52.2% in Q2. Pricing was the direct driver: the company said Q2 average selling prices rose quarter on quarter by the mid-40% range for DRAM and the high-60% range for NAND. Volumes helped too - Q2 DRAM bit shipments grew by the low teens percent, above guidance, while NAND rose by the low single digits, in line with guidance. Finished products, by contrast, absorbed input costs: the company said MX grew revenue on the Galaxy S26 series but saw operating profit decline as component costs and industry-wide cost burdens rose. One notable cost variable is incentive provisioning; on the Q1 call management said bonus accruals were still under negotiation with the union, were not reflected in Q1, and that timing and size for Q2 would depend on the outcome. The balance sheet stayed solid, with end-2025 total equity of KRW 436.32tn, total liabilities of KRW 130.62tn and a debt-to-equity ratio of 29.9%."
+  "ko": "연간 흐름을 보면 2022년 매출 302조2314억원·영업이익 43조3766억원(영업이익률 14.4%)에서 2023년 매출 258조9355억원·영업이익 6조5670억원(2.5%)으로 급락한 뒤, 2024년 매출 300조8709억원·영업이익 32조7260억원(10.9%), 2025년 매출 333조6059억원·영업이익 43조6011억원(13.1%)으로 이익이 회복됐다. 2025년 지배주주 순이익은 44조2610억원, 영업활동현금흐름은 85조3151억원으로 2023년(44조1374억원)의 약 두 배 수준까지 올라왔고 부채비율은 29.9%로 낮은 수준을 유지했다. 분기 흐름의 기울기가 더 극적이다. 2025년 2분기 매출 74조5663억원·영업이익 4조6761억원(영업이익률 약 6.3%)에서 2025년 3분기 86조617억원·12조1661억원, 4분기 93조8374억원·20조737억원으로 단계적으로 올라섰다. 이어 2026년 1분기 매출 133조8734억원·영업이익 57조2328억원(약 42.8%), 2026년 2분기 매출 171조4995억원·영업이익 89조4924억원(약 52.2%)으로 네 개 분기 만에 매출은 두 배 이상, 영업이익은 열 배 이상으로 확대됐다. 급증의 직접적 원인은 가격이다. 회사는 2분기 평균 판매 단가가 전 분기 대비 D램은 40% 중반, 낸드는 60% 후반 상승했다고 밝혔고, D램 비트 출하량은 전 분기 대비 10% 초반 증가해 가이던스를 상회했고 낸드는 한 자릿수 초반 증가로 가이던스에 부합했다고 설명했다. 2026년 2분기 지배주주 순이익은 71조2695억원으로 영업이익을 크게 밑도는데, 법인세 등 영업외 요인이 개입한 결과로 이익의 최종 귀속분은 영업 단계 증가율보다 완만하게 늘었다. 이익 구성 측면에서는 DX 부문이 8000억원의 영업손실을 기록해 2021년 부문 출범 이후 첫 분기 적자를 냈다는 점이 함께 확인됐고, 비용 측면에서는 1분기 컨콜에서 상여금 충당이 노사 협의 중이어서 1분기에 반영되지 않았고 협상 결과에 따라 2분기 반영 여부를 결정한다고 밝힌 대목이 분기 간 비교 시 참고할 변수다.",
+  "en": "On an annual basis, revenue of KRW 302.2314tn and operating profit of KRW 43.3766tn (14.4% margin) in 2022 collapsed to KRW 258.9355tn and KRW 6.5670tn (2.5%) in 2023, then recovered to KRW 300.8709tn and KRW 32.7260tn (10.9%) in 2024 and KRW 333.6059tn and KRW 43.6011tn (13.1%) in 2025. In 2025, net profit attributable to owners was KRW 44.2610tn and operating cash flow reached KRW 85.3151tn, roughly double the 2023 level of KRW 44.1374tn, while the debt-to-equity ratio stayed low at 29.9%. The quarterly slope is even steeper. From revenue of KRW 74.5663tn and operating profit of KRW 4.6761tn (about 6.3% margin) in Q2 2025, the figures rose to KRW 86.0617tn and KRW 12.1661tn in Q3 2025 and KRW 93.8374tn and KRW 20.0737tn in Q4 2025. They then reached KRW 133.8734tn and KRW 57.2328tn (about 42.8%) in Q1 2026 and KRW 171.4995tn and KRW 89.4924tn (about 52.2%) in Q2 2026, meaning revenue more than doubled and operating profit rose more than tenfold in four quarters. Pricing was the direct driver: the company said Q2 average selling prices rose by a mid-40% range for DRAM and a high-60% range for NAND quarter on quarter, while DRAM bit shipments grew by a low-teens percentage, above guidance, and NAND bit shipments rose by a low single digit, in line with guidance. Net profit attributable to owners of KRW 71.2695tn in Q2 2026 sits well below operating profit, reflecting tax and non-operating items, so bottom-line growth was more moderate than at the operating line. On profit mix, DX recorded an operating loss of KRW 0.8tn, its first quarterly loss since the division was formed in 2021, and on costs, management said on the Q1 call that bonus provisions were still under labor-management discussion, were not booked in Q1, and that Q2 recognition would depend on the outcome - a variable to keep in mind when comparing quarters."
  },
  "industry": {
-  "ko": "메모리 산업은 AI 인프라 투자가 수요를 끌어올린 판매자 우위 국면에 있다. 세계반도체시장통계기구 집계로 2026년 상반기 세계 반도체 매출은 전년 동기 대비 102% 늘어난 7020억 달러였고, 메모리 매출은 같은 기간 305% 급증하며 성장을 주도했다. 다만 상승 속도는 둔화 구간에 진입했다 — 트렌드포스는 2026년 3분기 범용 D램 가격이 전 분기 대비 13~18%, 낸드는 10~15% 오를 것으로 전망했으며, 이는 2분기 상승률(D램 58~63%, 낸드 55~60%)보다 크게 축소된 수준이다. 공급 측면에서는 증설이 이익을 즉시 늘리기 어려운 구조가 유지되고 있다. JP모건의 반도체 애널리스트는 신규 증설과 기술 전환에 따른 손실 복구 속도가 느려 장기 공급 부족이 이어질 것으로 분석했고, 삼성전자 측도 수급 불균형이 2027년에 더 심해져 최소 2028년까지 지속될 것으로 전망했다. 경쟁 포지션은 제품별로 갈린다 — 카운터포인트리서치 집계에서 2026년 1분기 HBM 시장은 SK하이닉스가 58%로 1위였고 삼성전자는 3위였으며, HBM4 납품은 하반기에 가시화될 것으로 전망됐다. 회사 자체 목표는 이 격차 축소다. 회사는 올해 하반기 중 전체 D램 시장 점유율과 동등한 수준의 HBM 점유율을 확보해 균형 잡힌 D램 포트폴리오를 실현할 수 있을 것으로 전망한다고 밝혔다. 한편 가격 급등은 전방 완제품 원가로 전이되고 있어, 세트 업체와 모듈 업체의 수요 조정 가능성이 산업 내 상반된 힘으로 작용한다.",
-  "en": "The memory industry is in a seller's market driven by AI infrastructure investment. According to WSTS data, global semiconductor revenue in the first half of 2026 rose 102% year on year to USD 702bn, with memory revenue surging 305% and leading the growth. Momentum is nonetheless slowing: TrendForce projected Q3 2026 commodity DRAM contract prices to rise 13-18% quarter on quarter and NAND 10-15%, sharply below Q2 increases of 58-63% for DRAM and 55-60% for NAND. On the supply side, added capacity is slow to translate into output. A JP Morgan semiconductor analyst argued that slow loss-recovery from new capacity and node transitions will prolong the shortage, while Samsung has said the supply-demand gap could widen in 2027 and persist through at least 2028. Competitive position varies by product: Counterpoint Research data showed SK hynix leading the HBM market with 58% share in Q1 2026 while Samsung ranked third, with HBM4 shipments expected to become visible in the second half. Closing that gap is the company's stated goal - management said it expects to secure HBM share on par with its overall DRAM share during the second half of this year, achieving a balanced DRAM portfolio. At the same time, price spikes are passing through into set-product costs, so potential demand adjustment among device and module makers acts as a counterweight within the industry."
+  "ko": "메모리 업황은 AI 서버 투자가 주도하는 상승 국면에 놓여 있다. 시그마인텔은 전세계 D램 수급 비율이 2025년 8% 공급과잉에서 2026년 12% 공급부족으로 전환할 것으로 전망했고, 전세계 D램 웨이퍼 생산능력 중 HBM 비중이 올해 20%를 넘어설 것으로 봤다. HBM이 선단 생산능력을 선점하면서 범용 제품이 오히려 빠듯해지는 구도도 나타났다. 한화투자증권은 2026년 6월 26일 3분기 범용 D램 가격이 전 분기보다 15~25%, 낸드는 20~25% 상승할 것으로 전망했으며 이는 3월 시장 전망치의 두 배 이상 수준이라고 설명했다. 삼성전자 평택 P4L과 SK하이닉스 청주 M15X의 가동 확대도 핵심 역할이 HBM 수요 대응에 맞춰져 있어 범용 D램 부족을 단기에 풀기 어렵다는 분석도 제시됐다. 경쟁 포지션은 세대 전환기에 이동 중이다. 카운터포인트리서치 기준 2025년 3분기 매출 기준 HBM 점유율은 SK하이닉스 57%, 삼성전자 22%로 격차가 35%포인트에 달했다. 반면 HBM4에서는 초당 13Gb 속도의 HBM4를 만드는 곳은 삼성전자뿐으로 알려졌고 SK하이닉스와 마이크론은 공식적으로 11.7Gb를 제시한다는 점이 거론되며, 회사는 하반기 중 전체 D램 시장 점유율과 동등한 수준의 HBM 점유율 확보를 전망했다. 사이클 위치에 대한 해석은 갈린다. 삼성전자 경계현 고문은 중국 기업의 공격적 생산능력 확대에 따라 2026년 하반기 또는 2028년 상반기부터 공급이 크게 늘며 메모리 가격이 하락할 수 있다고 지적했다.",
+  "en": "The memory cycle is in an upswing driven by AI server investment. SigmaIntell projected the global DRAM supply-demand balance to swing from an 8% surplus in 2025 to a 12% shortage in 2026, and it expected HBM to exceed 20% of global DRAM wafer capacity this year. With HBM absorbing leading-edge capacity, commodity products have paradoxically tightened. On June 26, 2026, Hanwha Investment & Securities forecast Q3 commodity DRAM prices up 15-25% and NAND up 20-25% quarter on quarter, more than double the March market estimates. It also argued that ramps at Samsung's Pyeongtaek P4L and SK hynix's Cheongju M15X are geared mainly to HBM demand, so commodity DRAM tightness is unlikely to ease quickly. Competitive positioning is shifting through the generational change. Counterpoint Research put revenue-based HBM share in Q3 2025 at 57% for SK hynix versus 22% for Samsung, a 35 percentage point gap. In HBM4, by contrast, Samsung is reported to be the only supplier producing a 13Gb-per-second HBM4, while SK hynix and Micron officially cite 11.7Gb, and the company guided that its HBM share would match its overall DRAM market share during the second half. Interpretations of the cycle's position differ. Kyung Kye-hyun, an adviser to Samsung Electronics, said aggressive Chinese capacity expansion could sharply increase supply from the second half of 2026 or the first half of 2028 and push memory prices down."
  },
  "outlook": {
-  "ko": "회사가 제시한 방향은 하반기에도 메모리 주도가 이어진다는 것이다. 회사는 DS부문이 에이전틱 AI 확산에 따른 수요 강세로 실적 상승세를 이어갈 것으로, DX부문은 글로벌 불확실성과 부품 비용 상승으로 어려운 경영환경이 지속될 것으로 예상한다고 밝혔다. 제품 로드맵은 HBM4E를 포함한 HBM4, DDR5, SOCAMM2, eSSD 확대와 파운드리의 2나노 2세대 모바일 양산 개시, 선단공정 및 AI·고성능컴퓨팅 수주 확대로 정리됐다. 회사는 3분기 HBM4 매출이 2분기보다 세 배 이상 증가하고 하반기 HBM4가 전체 HBM 매출의 60% 이상을 차지할 것으로 전망했다. 시장 기대치는 이보다 더 높아져 있는데, 서울경제 집계 기준 최근 한 달 3분기 실적 컨센서스는 매출 206조6376억원·영업이익 116조3790억원으로 2분기를 크게 웃돌며, 분기 영업이익 100조원 돌파는 국내 기업 사상 처음이 된다. 공급 능력 확충도 진행 중이다 — 전자신문 보도에 따르면 평택 P5 첫 라인(페이즈1) 장비 선정이 최종 단계에 진입하고 두 번째 라인 장비사 선정도 시작됐으며, 전체 가동 목표는 2028년이지만 페이즈1은 이르면 2027년 가동도 가능할 전망이다. 평택 마지막 라인으로 설계된 P5 팹2는 2026년 7월 착공해 2029년 상업 가동을 목표로 추진되는 것으로 보도됐다. 자본 여력은 이를 뒷받침한다 — 머니투데이는 반기보고서 기준 6월 말 연결 현금및현금성자산 92조9164억원, 단기금융상품 97조366억원으로 차입금 차감 후 순현금이 약 167조원이라고 집계했다. 다만 이 계획들은 대부분 회사 전망과 언론 보도이므로, 3분기 실적과 이후 이사회 결정으로 확인되기 전까지는 검증 대상이다.",
-  "en": "Management's stated direction is continued memory leadership in the second half. The company said DS should extend its earnings momentum on strong demand from spreading agentic AI, while DX faces a tough environment from global uncertainty and rising component costs. The product roadmap centers on expanding HBM4 including HBM4E, DDR5, SOCAMM2 and eSSD, starting second-generation 2nm mobile mass production in foundry, and winning more advanced-node AI and HPC orders. The company guided for Q3 HBM4 revenue to more than triple versus Q2, with HBM4 accounting for over 60% of total HBM revenue in the second half. Market expectations sit even higher: per a Seoul Economic Daily compilation of the past month's estimates, the Q3 consensus is revenue of KRW 206.64tn and operating profit of KRW 116.38tn, well above Q2, which would mark the first time a Korean company exceeds KRW 100tn in quarterly operating profit. Capacity build-out continues - Electronic Times reported that equipment selection for the first Pyeongtaek P5 line (Phase 1) has entered its final stage and selection for the second line has begun, with full-line operation targeted for 2028 but Phase 1 possibly starting as early as 2027. P5 Fab 2, designed as the last line at the Pyeongtaek campus, was reported to have broken ground in July 2026 with commercial operation targeted for 2029. Financial capacity supports this: Money Today calculated from the half-year report that as of end-June consolidated cash and equivalents stood at KRW 92.92tn and short-term financial instruments at KRW 97.04tn, leaving roughly KRW 167tn in net cash after debt. These items are largely company guidance and press reports, however, and remain to be verified by Q3 results and subsequent board decisions."
+  "ko": "회사가 제시한 방향은 하반기 AI 메모리 믹스 강화다. 회사는 3분기 HBM4 매출이 전분기 대비 3배 이상 확대되고 하반기 기준 HBM4가 전체 HBM 매출의 60%를 넉넉히 상회할 것으로 전망했다. 메모리는 고성능 HBM4E를 포함한 HBM4, DDR5, SOCAMM2, eSSD 판매 확대를 계획하고, 파운드리는 2나노 2세대 모바일향 양산을 시작하고 선단공정과 AI·HPC향 수주 확대를 추진한다는 방침이다. 파운드리 가동률과 수주에 대해서는 2분기 컨콜에서 선단 공정 증설 속도가 수요를 따라가지 못하고 있고, 8나노 이하 선단 공정 가동률이 최대 수준이며 올해 2나노 수주 과제 수가 전년 대비 2배 이상 확대될 전망이라고 밝혔다. 설비 측면에서는 2분기 시설투자가 16조8000억원으로 전 분기보다 5조5000억원 늘었고 평택 신규 라인 인프라와 미국 테일러 공장 투자가 본격화됐다. 중장기 거점으로는 테일러 팹1의 2026년 가동 준비를 계획대로 진행하고 있고, 테일러 팹2는 2030년 양산을 목표로 올해 말 공사 착수를 준비 중이며 1.4나노 고객 문의 증가에 따라 추가 팹 확보도 검토한다고 설명했다. 국내에서는 6개 페이즈로 구성되는 평택 P5의 클린룸 구축 일정이 수급 불균형으로 앞당겨졌고 일부 라인을 낸드 라인으로 셋업하기로 했다는 보도가 있었다. 수요 가시성 확보 수단으로는 메모리 공급 부족 장기화에 대비해 주요 글로벌 데이터센터·AI 고객과 장기공급계약을 확대하는 전략이 제시됐다. 다만 DX에 대해서는 글로벌 불확실성 확대와 부품 비용 상승으로 어려운 경영환경이 지속될 것으로 예상해 경쟁력 강화와 체질 개선을 함께 추진한다는 계획을 밝혔다.",
+  "en": "Management's stated direction is a stronger AI memory mix in the second half. The company guided that Q3 HBM4 revenue would more than triple quarter on quarter and that HBM4 would comfortably exceed 60% of total HBM revenue in the second half. Memory plans to expand sales of HBM4 including high-performance HBM4E, DDR5, SOCAMM2 and eSSD, while Foundry intends to begin mass production of second-generation 2nm for mobile and widen leading-edge and AI/HPC order wins. On utilization and orders, the Q2 call said leading-edge capacity additions are not keeping up with demand, utilization at 8nm and below is at maximum levels, and the number of 2nm design wins this year is expected to more than double year on year. On capex, Q2 spending rose KRW 5.5tn quarter on quarter to KRW 16.8tn as Pyeongtaek new-line infrastructure and the Taylor fab in the US moved into full investment. For longer-term sites, the company said Taylor Fab 1 remains on track for 2026 operational readiness, Taylor Fab 2 is being prepared for construction start late this year targeting 2030 mass production, and additional fabs are under review as 1.4nm customer inquiries increase. Domestically, reports indicated the cleanroom schedule for the six-phase Pyeongtaek P5 was pulled forward amid supply-demand imbalance and that part of the line would be set up for NAND. For demand visibility, the company outlined expanding long-term supply agreements with major global data center and AI customers in anticipation of prolonged memory shortages. For DX, however, it said a difficult operating environment is expected to persist on global uncertainty and higher component costs, so it will pursue competitiveness and structural improvement together."
  },
  "valuation_comment": {
-  "ko": "화면 카드의 주당순이익(22,626원)과 주당순자산(85,688원)은 최근 이익이 사이클 정점 부근까지 급증한 구간을 반영한 값이다. 이익 기준 배수는 분모의 이익이 단기간에 크게 늘어난 탓에 낮게 보이고, 순자산 기준으로는 프리미엄이 붙은 구간에 있다는 점이 동시에 나타난다 — 사이클 산업에서 흔히 관찰되는 조합이다. 주당순자산을 지배주주 자본 기준으로 잡느냐 다른 산출 기준을 쓰느냐에 따라 순자산 배수 값이 달라지므로, 서로 다른 정보 제공처의 수치가 어긋나는 점은 계산 기준 차이로 이해하는 것이 정확하다. 배당은 확정 공시 기준 주당 1,668원이 반영돼 있고 회사는 3년간 발생하는 잉여현금흐름의 50%를 환원하며 연간 9조8000억원의 정규배당을 지급한다는 정책을 유지해 왔다. 정규배당만 놓고 보면 환원 수준은 고배당주 대비 낮은 편이지만, 회사가 2026년 주주환원 규모를 90조~110조원으로 추정하고 약 30조원을 3분기 배당을 포함한 현금배당으로 설명했으며 세부는 10월 이사회, 잔여 규모와 방식은 2027년 1월에 결정할 계획이라고 밝힌 만큼 실제 환원 수익률 계산의 기준선은 이 결정들에 따라 달라진다. 참고로 밸류에이션에 대한 외부 시각은 크게 벌어져 있는데, 2026년 8월 2일 보도에 따르면 국내외 주요 증권사들이 제시한 목표주가는 최저 37만원에서 최고 67만원에 분포했다.",
-  "en": "The earnings per share (KRW 22,626) and book value per share (KRW 85,688) shown on the data card reflect a period in which profits have surged toward a cyclical high. Because the denominator has expanded so quickly, the earnings-based multiple screens low while the net-asset-based multiple sits at a premium - a combination commonly seen in cyclical industries. Book value per share can be calculated on an owners'-equity basis or on other conventions, so differences between data providers' net-asset multiples are best read as differences in calculation basis. Dividends reflect the confirmed disclosure of KRW 1,668 per share, and the company has maintained a policy of returning 50% of free cash flow generated over three years while paying KRW 9.8tn in regular annual dividends. On regular dividends alone the payout level is modest relative to high-yield names, but the company has estimated 2026 shareholder returns of KRW 90-110tn, described about KRW 30tn as cash dividends including the regular Q3 dividend, said details would be handled at the October board meeting, and plans to decide the remaining size and method in January 2027 - so the baseline for any return-yield calculation depends on those decisions. External views on valuation are widely dispersed: an August 2, 2026 report noted that major domestic and foreign brokerages had target prices ranging from KRW 370,000 to KRW 670,000."
+  "ko": "최근 네 개 분기의 이익이 과거와 비교가 어려울 만큼 커진 탓에, 이익 대비 배수는 삼성전자가 통상 거래돼 온 밴드(대체로 10~20배대)의 아래쪽에 위치하고, 반대로 순자산 대비로는 프리미엄이 붙은 구간에 있다. 이 두 지표가 서로 다른 방향을 가리키는 것은 이익이 단기간에 급증한 사이클 국면의 전형적인 특징이며, 이익 배수는 사이클이 꺾일 때 분모가 함께 줄어들 수 있다는 점을 함께 봐야 한다. 배당수익률은 정규배당만 반영할 경우 낮은 편이지만, 회사가 3분기에 정규 배당을 포함해 약 30조원의 현금배당을 실시하고 구체적 내용은 10월 말 이사회에서 확정하며, 잔여 환원은 내년 1월 이사회에서 방식과 규모를 결정한다고 밝힌 만큼 실제 환원 규모가 확정되면 체감 수준은 달라질 수 있다. 순자산 배수는 산출 기준(자체 산출과 거래소 공표치)에 따라 다르게 표시될 수 있어 비교 시 기준을 확인할 필요가 있다. 증권가 시각은 갈린다 — 노무라증권은 2026년 7월 31일 목표주가 67만원과 '매수' 의견을 재확인하며 2027~2028년 공급 부족 국면 지속 가능성과 주주환원 정책을 근거로 제시했다. 한국투자증권은 다른 증권사들의 하향 기조 속에서 목표주가를 65만원으로 10% 상향했다고 2026년 8월 초 보도됐다. 이는 각 기관이 제시한 수치이며 본 리포트의 판단이 아니다.",
+  "en": "Because profit over the most recent four quarters is far larger than in past periods, the earnings-based multiple sits toward the lower part of the band in which Samsung Electronics has typically traded (broadly the 10-20x area), while the multiple against net assets sits at a premium. The two metrics pointing in different directions is typical of a cycle phase in which earnings have surged quickly, and it is worth noting that an earnings multiple can rise again if the denominator shrinks when the cycle turns. Dividend yield looks modest if only the regular dividend is counted, but the company said it will pay roughly KRW 30tn in cash dividends including the regular Q3 dividend, with details to be fixed at the late-October board meeting and the remaining return decided in method and size at the January board meeting, so the perceived level may change once actual amounts are confirmed. The net-asset multiple can be displayed differently depending on the calculation basis (in-house versus exchange-published figures), so the basis should be checked when comparing. Brokerage views diverge: Nomura reaffirmed a target price of KRW 670,000 and a Buy rating on July 31, 2026, citing the likelihood of continued shortage conditions in 2027-2028 and the shareholder return policy. Korea Investment & Securities was reported in early August 2026 to have raised its target price by 10% to KRW 650,000 while other houses were cutting. These are figures presented by those institutions and are not the judgment of this report."
  },
  "bull": [
   {
    "title": {
-    "ko": "판가 협상력이 실적으로 직결되는 구간",
-    "en": "Pricing power flowing straight into earnings"
+    "ko": "가격·믹스가 동시에 개선된 메모리 이익 구조",
+    "en": "Memory Profits Lifted by Both Price and Mix"
    },
    "body": {
-    "ko": "2026년 1~2분기 영업이익 57조2328억원·89조4924억원은 판가 상승이 마진으로 곧바로 전이되는 구조를 보여준다. 회사는 2분기 평균판매단가가 전 분기 대비 D램 40% 중반, 낸드 60% 후반 올랐다고 밝혔다. 서버용 D램 중심 공급과 장기 공급 계약 추진이 이어지는 가운데, 미국 빅테크들은 높아진 원가를 수용하며 물량 확보에 나서고 있는 것으로 보도됐다. 낸드도 서버용 SSD 중심으로 고부가 사업으로 재편되며 2분기 메모리 실적 확대에 상당 부분 기여했다고 회사는 설명했다.",
-    "en": "Operating profit of KRW 57.23tn in Q1 and KRW 89.49tn in Q2 2026 shows how directly price gains flow into margins. The company said Q2 average selling prices rose by the mid-40% range for DRAM and the high-60% range for NAND quarter on quarter. With suppliers prioritizing server DRAM and pursuing long-term agreements, US big tech firms have reportedly accepted higher costs to secure volume. NAND is shifting too - management said the business is being reshaped around high-value server SSDs and contributed materially to Q2 memory results."
+    "ko": "2026년 2분기 영업이익률은 약 52.2%로, 2023년 연간 2.5%, 2024년 10.9%, 2025년 13.1%와 비교하면 전혀 다른 수준의 수익성이다. 배경에는 D램 40% 중반, 낸드 60% 후반의 전 분기 대비 판가 상승이 있다. 낸드도 에이전틱 AI 확산으로 AI 서버와 일반 컴퓨팅 서버, 키-값 캐시 전용 스토리지 서버 등에서 서버용 SSD 수요가 늘며 고부가가치 사업으로 재편되고 있다는 것이 회사 설명이다. 가격이 유지되는 동안에는 고정비 레버리지가 이익률에 크게 작용하는 구간이다.",
+    "en": "The Q2 2026 operating margin of about 52.2% is a completely different level of profitability from 2.5% in full-year 2023, 10.9% in 2024 and 13.1% in 2025. Behind it were quarter-on-quarter price increases in the mid-40% range for DRAM and the high-60% range for NAND. Management also said that as agentic AI spreads, server SSD demand is rising across AI servers, general compute servers and key-value cache storage servers, reshaping NAND into a higher-value business. While pricing holds, fixed-cost leverage works strongly in favor of margins."
    }
   },
   {
    "title": {
-    "ko": "HBM4 세대에서의 포지션 회복 시도",
-    "en": "Attempting a reset in the HBM4 generation"
+    "ko": "HBM4 세대 전환에서의 위치 변화",
+    "en": "A Changed Position in the HBM4 Transition"
    },
    "body": {
-    "ko": "회사는 2026년 2월 HBM4 양산 및 상용 출하를 달성했다. 이어 5월 29일 업계 최초로 12단 HBM4E 샘플을 주요 고객사에 인도했으며, 이 제품은 1c 나노 D램 공정과 자체 4나노 로직 베이스 다이를 결합해 핀당 최대 16Gbps 속도를 지원한다고 전해졌다. 회사는 HBM4 고객사별 평가가 원활히 마무리되고 있고 1c 나노 생산능력 확대와 수율 개선으로 공급 역량을 확대하고 있다고 밝혔다. 이전 세대에서의 상대적 열위를 감안하면 세대 전환기의 실행력이 관건이다.",
-    "en": "The company achieved HBM4 mass production and commercial shipments in February 2026. On May 29 it delivered the industry's first 12-high HBM4E samples to major customers, a product reported to combine 1c-nano DRAM with an in-house 4nm logic base die and support pin speeds up to 16Gbps. Management said customer qualification of HBM4 is progressing smoothly and that it is expanding 1c-nano capacity while improving yields to lift supply capability. Given its relative lag in the prior generation, execution through this transition is the key variable."
+    "ko": "HBM3E 세대에서는 엔비디아 품질 검증을 통과하지 못해 최상위 AI 고객사들의 초기 수혜를 놓쳤다는 평가가 있었으나, 회사는 2026년 2월 HBM4 양산 및 상용 출하를 달성했다. 이어 5월 29일 업계 최초의 12단 HBM4E 샘플을 주요 고객사에 인도했으며, 이 제품은 1c 공정과 자체 4나노 로직 베이스 다이를 결합해 최대 16Gbps 핀 속도와 3.6TB/s 대역폭을 갖췄다고 소개됐다. 1분기 컨콜에서는 HBM4 수요 집중으로 준비한 생산능력이 모두 솔드아웃됐다고 밝혔다. 세대 전환기 공급 자격 확보가 실제 물량으로 이어지는지가 관전 포인트다.",
+    "en": "In the HBM3E generation, Samsung was seen as having missed early benefits from top AI customers after failing Nvidia's qualification, but the company achieved HBM4 mass production and commercial shipment in February 2026. It then delivered the industry's first 12-high HBM4E samples to major customers on May 29, combining its 1c process with an in-house 4nm logic base die for pin speeds up to 16Gbps and 3.6TB/s of bandwidth. On the Q1 call, management said prepared HBM4 capacity was fully sold out as customer demand concentrated on the product. The question is whether qualification during the generational shift converts into actual volume."
    }
   },
   {
    "title": {
-    "ko": "대규모 현금과 환원 재원 결정 일정",
-    "en": "Large cash pile and a scheduled return decision"
+    "ko": "사상 최대 규모로 의결된 주주환원",
+    "en": "Shareholder Returns Approved at a Record Scale"
    },
    "body": {
-    "ko": "머니투데이 집계에 따르면 6월 말 연결 기준 현금및현금성자산 92조9164억원, 단기금융상품 97조366억원으로 차입금을 뺀 순현금은 약 167조원이다. 회사는 2026년 8월 21일 이사회에서 올해 주주환원 규모를 약 90조~110조원으로 확대하는 시행 방안을 의결했다. CFO는 자사주 매입을 한 번에 대규모로 하기보다 주주가치와 임직원 보상 효과를 함께 고려해 시점을 결정하겠다고 밝혔다. 2025년 영업활동현금흐름 85조3151억원과 상반기 이익 규모를 감안하면 재원 자체는 확보된 상태로, 남은 변수는 집행 방식과 시점이다.",
-    "en": "Per Money Today's calculation, end-June consolidated cash and equivalents were KRW 92.92tn and short-term financial instruments KRW 97.04tn, leaving about KRW 167tn of net cash after debt. At its August 21, 2026 board meeting the company approved a plan expanding this year's shareholder returns to roughly KRW 90-110tn. The CFO said buybacks would be timed with both shareholder value and employee compensation effects in mind rather than executed in one large tranche. With 2025 operating cash flow of KRW 85.32tn and first-half profits of this scale, the funding exists; the open questions are method and timing."
+    "ko": "회사는 2026년 8월 21일 이사회에서 약 90조~110조원 규모로 예상되는 2026년 주주환원 시행 방안을 의결했으며, 이는 기존 최대였던 2020년 20조3천억원의 약 5배 수준이다. 잉여현금흐름의 50%를 환원하는 2024~2026년 정책에 따른 것으로, 2024~2025년에는 매년 9조8천억원씩 정규배당을 실시하고 2025년에는 특별배당 1조3천억원과 자사주 매입·소각 8조4천억원을 집행했다. 같은 이사회에서 임직원 보상용 약 15조원 규모 자사주 매입도 의결됐다. 재원의 근거가 되는 현금흐름 측면에서 2025년 영업활동현금흐름은 85조3151억원이었다.",
+    "en": "On August 21, 2026 the board approved a 2026 shareholder return program estimated at KRW 90tn-110tn, about five times the previous record of KRW 20.3tn in 2020. It follows the 2024-2026 policy of returning 50% of free cash flow; in 2024-2025 the company paid KRW 9.8tn of regular dividends each year, and in 2025 it executed KRW 1.3tn of special dividends and KRW 8.4tn of buybacks and cancellations. The same board meeting also approved about KRW 15tn of treasury share purchases for employee compensation. On the cash-flow base that funds this, operating cash flow was KRW 85.3151tn in 2025."
    }
   }
  ],
  "bear": [
   {
    "title": {
-    "ko": "이익의 극단적 단일 부문 의존",
-    "en": "Extreme dependence on one division"
+    "ko": "이익의 단일 부문 쏠림",
+    "en": "Profit Concentrated in One Division"
    },
    "body": {
-    "ko": "2분기 전사 영업이익률은 52.2%, DS부문 영업이익률은 약 70%로 이례적으로 높았으나 99.7%라는 DS 비중은 메모리 가격이 방향을 바꿀 때 전사 실적이 그대로 따라간다는 뜻이라는 해석이 제시됐다. 실제로 DX부문은 8000억원의 영업손실로 2021년 부문 출범 이후 첫 분기 적자를 냈다. 완제품이 메모리 원가 상승의 반대편에 서 있는 구조여서, 부문 간 상쇄가 과거보다 약해진 상태다. 2023년 영업이익률 2.5%까지 내려간 이력은 이 구조의 진폭을 보여준다.",
-    "en": "Q2 company-wide operating margin was 52.2% and the DS margin about 70%, unusually high, but commentary noted that a 99.7% DS contribution means company results will track memory prices directly if they turn. Indeed, DX posted an KRW 0.8tn operating loss, its first quarterly deficit since the division was formed in 2021. With finished products sitting on the opposite side of rising memory costs, cross-division offsetting is weaker than in past cycles. The 2.5% operating margin recorded in 2023 illustrates the amplitude of this structure."
+    "ko": "2026년 2분기 DS 부문 영업이익은 89조2000억원으로 전사의 약 99.7%였고, DX 부문은 8000억원의 영업손실로 2021년 부문 출범 이후 첫 분기 적자를 냈다. 이 비중은 메모리 가격이 방향을 바꿀 때 전사 실적이 그대로 따라간다는 의미로도 해석된다. 2023년 연간 영업이익이 6조5670억원까지 내려갔던 이력은 메모리 가격 하락 국면에서 전사 이익이 어느 정도까지 축소될 수 있는지를 보여준다. 완제품 부문이 이익 방어 역할을 하기 어려운 구조가 당장은 지속되고 있다.",
+    "en": "In Q2 2026, DS operating profit of KRW 89.2tn was about 99.7% of the company total, while DX posted an operating loss of KRW 0.8tn, its first quarterly loss since the division was formed in 2021. That concentration also means company-wide results follow memory prices directly when they change direction. The history of annual operating profit falling to KRW 6.5670tn in 2023 shows how far group profit can compress during a memory downturn. For now, the finished-goods business is structurally unable to cushion earnings."
    }
   },
   {
    "title": {
-    "ko": "가격 상승률 둔화와 사이클 논쟁",
-    "en": "Decelerating price gains and the cycle debate"
+    "ko": "공급 확대와 가격 둔화 시나리오",
+    "en": "Capacity Additions and a Price-Slowdown Scenario"
    },
    "body": {
-    "ko": "트렌드포스는 3분기 범용 D램 가격 상승률을 13~18%, 낸드를 10~15%로 전망했고 이는 2분기 대비 크게 축소된 수준이다. 실적 자체는 사상 최대여도 주가 반응은 별개였는데, 한국거래소 집계로 삼성전자 주가는 2026년 7월 한 달간 21.88% 하락해 7월 1일 종가 31만7000원에서 7월 31일 26만2500원으로 마감했다. 일부 애널리스트는 개인 거래비중 증가와 이익 모멘텀 둔화, 외국인 순매도 등을 근거로 투자의견을 낮췄고 하반기 모멘텀 둔화를 이유로 제시했다. 이익의 절대 수준과 이익 증가율의 방향은 다른 문제라는 점이 이 구간의 쟁점이다.",
-    "en": "TrendForce projected Q3 commodity DRAM price gains of 13-18% and NAND of 10-15%, a marked slowdown from Q2. Record results did not translate into share price strength: KRX data showed the stock fell 21.88% during July 2026, closing at KRW 262,500 on July 31 versus KRW 317,000 on July 1. Some analysts downgraded their views citing rising retail trading share, decelerating profit momentum and foreign net selling, pointing to weaker second-half momentum. The distinction between the absolute level of profit and the direction of profit growth is the crux of the current debate."
+    "ko": "삼성전자 경계현 고문은 중국 기업의 공격적 생산능력 확대에 따른 2026년 하반기 메모리 가격 하락 가능성과, 2028년 이후 글로벌 빅테크의 자본적지출 수익률 하락 시 수요 자체가 감소할 위험을 지적했다. 업계 전반에서도 공급 부족 이후 2027~2028년 안정화 전망이 제시된 바 있다. 삼성전자 자체 증설도 규모가 큰데, 평택 P5 팹2는 월 20만~30만 장 규모로 2029년 가동을 목표로 추진되고 투자 규모는 60조원 이상으로 전망된다는 보도가 있었다. 증설이 겹치는 시점의 수급 균형은 확인되지 않은 변수다.",
+    "en": "Kyung Kye-hyun, an adviser to Samsung Electronics, flagged the possibility of memory price declines in the second half of 2026 from aggressive Chinese capacity expansion, plus the risk that demand itself shrinks after 2028 if big tech capex returns deteriorate. Industry commentary has also pointed to stabilization in 2027-2028 after the current shortage. Samsung's own build-out is large: reports say Pyeongtaek P5 Fab 2 is targeted at 200,000-300,000 wafers per month with 2029 operation and investment expected above KRW 60tn. The supply-demand balance when these additions overlap remains an unverified variable."
    }
   },
   {
    "title": {
-    "ko": "증설 경쟁과 중장기 공급 확대",
-    "en": "Capacity race and medium-term supply expansion"
+    "ko": "원가 상승과 투자 부담의 이면",
+    "en": "The Other Side of Cost Inflation and Capex"
    },
    "body": {
-    "ko": "삼성전자는 평택 마지막 라인인 P5 팹2 건설을 예정보다 6개월가량 앞당겨 추진하며 P5 팹1과 함께 총 120조원 규모로 추산되는 투자를 진행하는 것으로 보도됐다. SK하이닉스도 청주 M15X에 D램 장비를 채우고 용인 클러스터 첫 팹 클린룸 개방 시점을 앞당긴 것으로 전해졌다. 마이크론·SK하이닉스·TSMC 등의 증설이 병행되면서 중장기 공급 과잉 리스크에 대한 경고도 동시에 제기되고 있다. 대규모 선행 투자는 감가상각 부담과 가동률 민감도를 함께 키운다.",
-    "en": "Samsung was reported to have pulled forward construction of P5 Fab 2, the last Pyeongtaek line, by about six months, with combined investment for P5 Fab 1 and Fab 2 estimated at KRW 120tn. SK hynix has reportedly been filling its Cheongju M15X with DRAM equipment and moved up the cleanroom opening for its first Yongin cluster fab. With Micron, SK hynix and TSMC also expanding, warnings about medium-term oversupply risk are being raised in parallel. Heavy front-loaded investment raises both depreciation burden and sensitivity to utilization."
+    "ko": "메모리 가격 상승은 자체 완제품 사업에는 원가 부담으로 돌아온다. 회사는 MX에서 플래그십 판매가 견조했음에도 부품 원가 상승 등 비용 부담 확대로 영업이익이 감소했다고 설명했다. 투자 부담도 커지는 국면으로 2분기 시설투자는 16조8000억원으로 전 분기보다 5조5000억원 증가했다. 여기에 상여금 충당 규모가 노사 협의에 따라 결정되는 구조여서 분기별 비용 변동성이 상존한다.",
+    "en": "Rising memory prices come back as input costs for the company's own finished-goods business. Management said MX operating profit fell on broader industry cost pressure including higher component costs, despite solid flagship sales. Investment burdens are also rising, with Q2 capex of KRW 16.8tn, up KRW 5.5tn quarter on quarter. In addition, the size of bonus provisions depends on labor-management negotiations, leaving quarterly cost volatility in place."
    }
   }
  ],
  "risks": [
   {
    "cat": {
-    "ko": "업황 사이클 반전",
-    "en": "Cycle reversal"
+    "ko": "사이클 리스크",
+    "en": "Cycle Risk"
    },
    "body": {
-    "ko": "메모리 이익 구조는 판가에 대한 민감도가 매우 높다. 2023년 영업이익 6조5670억원(영업이익률 2.5%)과 2026년 상반기 146조7252억원의 격차가 그 진폭을 보여준다. 가격이 높게 유지될수록 수요가 경쟁국으로 향하고 경쟁국 투자가 늘어 기술 격차가 줄어들 가능성도 지적된다. 계약가 상승률 둔화가 출하 증가로 상쇄되지 않는 분기가 나오면 이익 방향이 빠르게 바뀔 수 있다.",
-    "en": "Memory profitability is highly sensitive to pricing. The gap between 2023 operating profit of KRW 6.57tn (2.5% margin) and first-half 2026 profit of KRW 146.73tn illustrates the amplitude. Commentators note that persistently high prices can push demand toward competing countries, whose investment then narrows the technology gap. If slowing contract price gains are not offset by shipment growth in any given quarter, the profit direction can change quickly."
+    "ko": "현재 이익 수준은 D램 40% 중반, 낸드 60% 후반의 전 분기 대비 판가 상승이라는 이례적 가격 환경에 기반한다. 가격 상승률이 둔화되거나 역전되면 영업이익률 52.2%대의 수익성은 유지되기 어렵다. 2023년 연간 영업이익률 2.5%와 2026년 2분기 52.2%의 격차 자체가 이 사업의 진폭을 보여준다. 사이클 방향 판단은 고정거래가격과 비트 출하량 지표를 분기 단위로 확인해야 한다.",
+    "en": "Current profit levels rest on an unusual pricing environment marked by quarter-on-quarter increases in the mid-40% range for DRAM and the high-60% range for NAND. If price momentum slows or reverses, profitability near a 52.2% operating margin would be hard to sustain. The gap between a 2.5% annual margin in 2023 and 52.2% in Q2 2026 itself illustrates the amplitude of this business. Judging cycle direction requires quarterly tracking of contract prices and bit shipments."
    }
   },
   {
    "cat": {
-    "ko": "비용·노사 및 원가 전이",
-    "en": "Costs, labor and cost pass-through"
+    "ko": "고객·기술 검증 리스크",
+    "en": "Customer and Qualification Risk"
    },
    "body": {
-    "ko": "성과급 충당 규모는 노사 협의 결과에 따라 결정되는 구조로, 1분기에는 반영되지 않은 채 2분기 이후 반영 여부가 검토됐다. 이익 규모가 커진 만큼 충당 규모의 변동도 분기 이익에 미치는 영향이 커진다. 동시에 부품 원가 상승은 MX 등 완제품 수익성을 직접 압박하고 있다. 회사는 장기공급계약 선수금과 임직원 보상용 자사주 매입이 잉여현금흐름 산정에 영향을 줄 수 있다고 설명했다.",
-    "en": "Incentive provisioning depends on the outcome of labor negotiations; it was not booked in Q1, with Q2 treatment left to the negotiation result. With profits this large, swings in provision size have a bigger effect on quarterly earnings. At the same time, rising component costs are directly pressuring profitability at MX and other set businesses. Management noted that long-term agreement prepayments and buybacks for employee compensation can affect the free cash flow calculation."
+    "ko": "HBM은 소수 AI 가속기 고객의 인증과 물량 배분에 크게 의존한다. 회사는 HBM4의 고객사별 평가가 원활히 마무리되고 있고 고객 과제의 하반기 생산 확대 속도에 맞춰 수요가 빠르게 증가하고 있다고 설명했지만, 수율과 램프업 속도는 여전히 실행의 문제다. 회사는 1c 나노 생산능력을 확대하고 계획대로 수율을 개선하고 있다고 밝혔다. 고객사 플랫폼 일정이 지연되거나 경쟁사가 스펙을 따라잡으면 물량 배분이 바뀔 수 있다.",
+    "en": "HBM depends heavily on qualification and allocation decisions by a small number of AI accelerator customers. The company said customer-by-customer HBM4 evaluations are concluding smoothly and demand is rising quickly in line with customers' second-half production ramps, but yield and ramp speed remain execution issues. Management said it is expanding 1c-nano capacity and improving yields as planned. Allocation could shift if customer platform schedules slip or rivals catch up on specifications."
    }
   },
   {
    "cat": {
-    "ko": "수급·유동성 관련 변동성",
-    "en": "Flow and liquidity volatility"
+    "ko": "정책·수급 외부 변수",
+    "en": "Policy and External Supply Variables"
    },
    "body": {
-    "ko": "2026년 8월 초 보도에 따르면 삼성전자·SK하이닉스 수익률을 2배 추종하는 단일종목 레버리지 상품군에 묶인 자금은 약 13조원 규모로, 디레버리징 가능성이 변동성 요인으로 지적됐다. 실제로 주가는 2026년 7월 한 달간 21% 이상 하락한 뒤 시장의 관심이 8월 흐름으로 옮겨간 상황이었다. 실적과 무관한 수급 요인이 단기 가격 변동을 키울 수 있다는 점은 사이클 논쟁과 별개의 변수다.",
-    "en": "An early-August 2026 report noted roughly KRW 13tn tied up in 2x single-stock leveraged products tracking Samsung Electronics and SK hynix, flagging potential deleveraging as a volatility factor. The stock had fallen more than 21% during July 2026 before attention shifted to its August trajectory. Flow-driven factors unrelated to fundamentals can amplify short-term price swings, separate from the cycle debate itself."
+    "ko": "해외 생산거점 일정은 정책·고객 변수에 민감하다. 회사는 테일러 팹1의 2026년 가동 준비와 팹2의 연말 공사 착수 준비를 밝혔지만, 과거 평택 P4와 테일러 2공장 발주가 전면 연기된 사례처럼 업황과 고객 확보 상황에 따라 일정이 바뀐 이력이 있다. 또한 한국이 D램에서 높은 점유율을 갖고도 팹리스 점유율은 1.5%에 그친다는 지적처럼 생태계 편중 이슈도 남아 있다. 정책 지원과 규제, 관세 환경 변화는 투자 회수 기간에 직접 영향을 준다.",
+    "en": "Overseas fab timelines are sensitive to policy and customer variables. The company said Taylor Fab 1 is on track for 2026 readiness and Fab 2 construction is being prepared for late this year, but there is precedent for schedule changes, as when orders for Pyeongtaek P4 and the second Taylor fab were postponed amid market uncertainty. Ecosystem imbalance also persists, as seen in the observation that Korea holds a high DRAM share but only 1.5% of the fabless market. Shifts in policy support, regulation and tariffs directly affect investment payback periods."
    }
   }
  ],
@@ -152,8 +152,8 @@
     "en": "Early October 2026"
    },
    "what": {
-    "ko": "3분기 잠정실적 공시. 최근 한 달 컨센서스는 매출 206조6376억원·영업이익 116조3790억원으로 집계됐으므로, 실제 수치가 이 기대선 대비 어디에 위치하는지가 1차 확인 지점이다.",
-    "en": "Preliminary Q3 results. With the recent one-month consensus at KRW 206.64tn revenue and KRW 116.38tn operating profit, where the actual figures land versus that bar is the first checkpoint."
+    "ko": "2026년 3분기 잠정실적(매출·영업이익) 공시. 2분기의 매출 171조4995억원·영업이익 89조4924억원 대비 증감 방향과, 범용 D램·낸드 가격 상승세가 3분기에도 유지됐는지를 가늠하는 첫 지표다.",
+    "en": "Preliminary Q3 2026 results (revenue and operating profit). This is the first read on the direction versus Q2's KRW 171.4995tn revenue and KRW 89.4924tn operating profit, and on whether commodity DRAM and NAND price momentum held into Q3."
    }
   },
   {
@@ -162,8 +162,8 @@
     "en": "Late October 2026"
    },
    "what": {
-    "ko": "3분기 확정실적 컨퍼런스콜과 이사회. 약 30조원 규모 현금배당의 세부 내용이 10월 이사회에서 다뤄질 예정이므로 주당 배당금·기준일·지급일 공시와 4분기 출하·가격 가이던스를 함께 확인할 필요가 있다.",
-    "en": "Q3 final results call and board meeting. Details of the roughly KRW 30tn cash dividend are slated for the October board meeting, so per-share amount, record date and payment date disclosures should be checked alongside Q4 shipment and pricing guidance."
+    "ko": "3분기 확정 실적·컨퍼런스콜과 함께, 3분기 약 30조원 현금배당의 구체적 내용을 확정하는 이사회가 예정돼 있다. HBM4 매출이 회사가 제시한 전분기 대비 3배 이상 확대 전망에 부합했는지도 이 자리에서 확인 가능하다.",
+    "en": "Confirmed Q3 results and the earnings call, alongside a board meeting to finalize details of the roughly KRW 30tn Q3 cash dividend. This is also where investors can check whether HBM4 revenue met the guided more-than-tripling quarter on quarter."
    }
   },
   {
@@ -172,18 +172,18 @@
     "en": "Q4 2026"
    },
    "what": {
-    "ko": "HBM 가이던스 검증. 3분기 HBM4 매출 3배 이상 증가, 하반기 HBM4 비중 60% 이상, 하반기 중 D램 점유율과 동등한 HBM 점유율 확보라는 회사 전망이 실제 매출·점유율 데이터로 확인되는지가 관건이다.",
-    "en": "Verification of HBM guidance. The key is whether the company's forecasts - Q3 HBM4 revenue more than tripling, HBM4 above 60% of HBM revenue in the second half, and HBM share reaching parity with DRAM share during the second half - show up in reported revenue and share data."
+    "ko": "2나노 2세대 모바일향 양산 개시와 HBM4E의 양산 전환 진행 상황. 파운드리 선단 공정 매출 비중과 2나노 수주 과제 수가 회사가 제시한 방향대로 확대되는지가 확인 대상이다.",
+    "en": "The start of second-generation 2nm mass production for mobile and progress on the HBM4E production transition. Key items to verify are whether the leading-edge share of foundry revenue and the number of 2nm design wins expand as management indicated."
    }
   },
   {
    "when": {
-    "ko": "2026년 하반기~2027년",
-    "en": "H2 2026 to 2027"
+    "ko": "2026년 연말",
+    "en": "End of 2026"
    },
    "what": {
-    "ko": "파운드리·증설 일정. 2나노 2세대 모바일 양산 개시와 선단공정 수주 확대 계획, P5 페이즈1의 이르면 2027년 가동 가능성 등 장비 반입·가동 단계 진척이 실적 기여 시점을 가른다.",
-    "en": "Foundry and capacity milestones. The start of second-generation 2nm mobile production and plans to expand advanced-node orders, plus the possibility of P5 Phase 1 running as early as 2027, will determine when equipment installation and ramp translate into earnings."
+    "ko": "테일러 팹2의 공사 착수 여부와 테일러 팹1 가동 준비 진척. 미국 내 선단 파운드리 생산능력 확보 일정은 AI·고성능 컴퓨팅 고객 수주와 직접 연결된다.",
+    "en": "Whether construction on Taylor Fab 2 begins and how Taylor Fab 1 readiness progresses. The timeline for leading-edge foundry capacity in the US is directly tied to AI and high-performance computing customer wins."
    }
   },
   {
@@ -192,36 +192,36 @@
     "en": "January 2027"
    },
    "what": {
-    "ko": "잔여 주주환원 재원의 방식·규모 확정. 회사는 나머지 규모와 방식을 2026년 실적 확정 후 2027년 1월에 결정할 계획이라고 밝혔으므로, 현금배당과 자사주 매입·소각의 구성 비중이 확인 대상이다.",
-    "en": "Finalization of the remaining shareholder return program. The company said it will decide the remaining size and method in January 2027 after 2026 results are confirmed, making the split between cash dividends and buybacks/cancellations the item to watch."
+    "ko": "2026년 경영실적 확정 후 이사회에서 잔여 주주환원의 방식과 규모를 결정할 예정이다. 현금배당과 자사주 매입·소각의 비중 배분, 그리고 다음 3개년 주주환원 정책의 골격이 함께 드러날 수 있는 시점이다.",
+    "en": "After 2026 results are finalized, the board is scheduled to decide the method and size of the remaining shareholder return. This is when the split between cash dividends and buybacks or cancellations, and the shape of the next three-year return policy, may become visible."
    }
   }
  ],
  "verdict": {
   "body": {
-   "ko": "삼성전자의 2026년 상반기는 실적 숫자만 보면 한국 기업사에서 전례가 없는 구간이다. 2025년 연간 영업이익 43조6011억원 대비 2026년 1분기 57조2328억원, 2분기 89조4924억원이라는 궤적은 메모리 판가 상승이 마진으로 직결되는 구조를 그대로 보여준다. 동시에 2분기 DS부문이 전사 영업이익의 99.7%를 차지하고 DX부문이 첫 분기 적자를 낸 사실은 이 이익의 성격이 한 부문에 집중돼 있음을 드러낸다. 강세 논리는 HBM4·HBM4E 세대 전환에서의 실행, 서버 SSD 중심 낸드 재편, 그리고 2026년 8월 21일 이사회가 의결한 약 90조~110조원 규모 주주환원 시행 방안에 기대고 있다. 약세 논리는 3분기 계약가 상승률이 D램 13~18%, 낸드 10~15%로 둔화될 것이라는 트렌드포스 전망과 3사 동시 증설, 완제품 원가 전이에 기대고 있다. 두 논리 모두 같은 데이터에서 출발하되 시간축의 어느 지점을 보는지가 다르다. 따라서 다음 분기 실적과 10월 이사회, 2027년 1월 환원 결정이라는 확인 가능한 일정들이 판단의 근거를 좁혀줄 지점이며, 본 리포트는 정보 제공 목적으로 작성돼 매수·매도 의견이나 목표주가를 포함하지 않는다.",
-   "en": "Judged purely by the numbers, Samsung Electronics' first half of 2026 has no precedent in Korean corporate history. Against full-year 2025 operating profit of KRW 43.60tn, the path of KRW 57.23tn in Q1 and KRW 89.49tn in Q2 2026 shows how directly memory pricing converts into margin. At the same time, the fact that DS accounted for 99.7% of Q2 operating profit while DX posted its first quarterly loss reveals how concentrated that profit is. The bullish case rests on execution through the HBM4/HBM4E transition, the reshaping of NAND around server SSDs, and the shareholder return plan of roughly KRW 90-110tn approved by the board on August 21, 2026. The bearish case rests on TrendForce's projection that Q3 contract price gains will slow to 13-18% for DRAM and 10-15% for NAND, simultaneous capacity expansion by all three suppliers, and cost pass-through into finished products. Both cases start from the same data and differ mainly in which point on the timeline they emphasize. The verifiable calendar - next quarter's results, the October board meeting and the January 2027 return decision - is therefore where the evidence will narrow, and this report is for information purposes only and contains no buy or sell opinion or price target."
+   "ko": "삼성전자의 최근 실적은 메모리 사이클의 상단 국면을 그대로 반영한다. 연간으로는 2023년 영업이익 6조5670억원(영업이익률 2.5%)에서 2024년 32조7260억원, 2025년 43조6011억원으로 이익이 회복됐고, 분기로는 2025년 2분기 영업이익 4조6761억원에서 2026년 2분기 89조4924억원으로 확대되며 영업이익률이 52.2% 수준까지 올라왔다. 성장의 동력은 명확하지만 구조도 분명하다 — 2026년 2분기 DS 부문이 전사 영업이익의 약 99.7%를 차지했고 DX는 첫 분기 적자를 기록했다. 앞을 보는 쟁점은 두 가지로 압축된다. 회사가 제시한 3분기 HBM4 매출 3배 이상 확대와 하반기 HBM4 비중 60% 상회가 실적으로 확인되는지, 그리고 중국 증설 등으로 인한 가격 하락 경고와 2027~2028년 공급 부족 지속 전망 가운데 어느 쪽으로 수급이 기울어지는지다. 여기에 약 90조~110조원 규모로 의결된 2026년 주주환원의 집행 방식과 시점이 별개의 변수로 얹힌다. 강세 요인(가격·믹스·환원)과 약세 요인(부문 편중·증설 후 수급·원가 압박)이 같은 시점에 공존하는 국면이므로, 위 체크포인트의 확인 결과에 따라 해석이 달라질 수 있다. 본 리포트는 정보 제공을 목적으로 하며 매수·매도 의견이나 목표주가를 포함하지 않는다.",
+   "en": "Samsung Electronics' recent results directly reflect the upper phase of the memory cycle. Annually, operating profit recovered from KRW 6.5670tn (2.5% margin) in 2023 to KRW 32.7260tn in 2024 and KRW 43.6011tn in 2025; quarterly, it expanded from KRW 4.6761tn in Q2 2025 to KRW 89.4924tn in Q2 2026, lifting the operating margin to about 52.2%. The growth driver is clear, but so is the structure: DS accounted for roughly 99.7% of company-wide operating profit in Q2 2026 while DX posted its first quarterly loss. Looking forward, the debate narrows to two questions: whether the company's guidance for Q3 HBM4 revenue more than tripling and HBM4 exceeding 60% of HBM revenue in the second half shows up in reported numbers, and whether supply-demand tilts toward warnings of price declines from Chinese capacity additions or the view that shortages persist into 2027-2028. Layered on top is the execution method and timing of the 2026 shareholder return program approved at an estimated KRW 90tn-110tn. Bullish factors (price, mix, returns) and bearish ones (divisional concentration, post-expansion supply, cost pressure) coexist at the same moment, so interpretation may change with the outcomes at the checkpoints above. This report is for information purposes only and contains no buy or sell opinion or target price."
   }
  },
  "sources": [
   "https://www.ebc.com/kr/forex/305637.html",
-  "https://news.samsung.com/kr/%EC%82%BC%EC%84%B1%EC%A0%84%EC%9E%90-2026%EB%85%84-2%EB%B6%84%EA%B8%B0-%EC%8B%A4%EC%A0%81-%EB%B0%9C%ED%91%9C",
-  "https://www.thelec.kr/news/articleView.html?idxno=60316",
   "https://news.samsungsemiconductor.com/kr/%EC%82%BC%EC%84%B1%EC%A0%84%EC%9E%90-2026%EB%85%84-2%EB%B6%84%EA%B8%B0-%EC%8B%A4%EC%A0%81-%EB%B0%9C%ED%91%9C/",
+  "https://www.thelec.kr/news/articleView.html?idxno=60316",
+  "https://www.g-enews.com/article/Global-Biz/2026/01/202601260559058882fbbec65dfb_1",
   "https://www.tradingkey.com/kr/analysis/stocks/more/262062869-samsung-q2-skhynix-deam-mu-tsla-tsml-tradingkey",
   "https://www.thelec.kr/news/articleView.html?idxno=55934",
-  "https://www.g-enews.com/article/Global-Biz/2026/08/202608091047198752fbbec65dfb_1",
-  "https://www.huffingtonpost.kr/article/258505",
-  "https://korea.counterpointresearch.com/global-dram-and-hbm-market-share-quarterly/",
-  "https://www.sedaily.com/article/20085406",
-  "https://www.etnews.com/20260715000216",
-  "https://www.newsspace.kr/news/article.html?no=14448",
-  "https://www.mt.co.kr/industry/2026/08/19/2026081916150537741",
-  "https://www.samsung.com/sec/ir/stock-information/shareholder-return/",
-  "https://keyzard.cc/views/nb/Ozs6MDswM21lZW1ta2xmbm1mZmZnbQ",
+  "https://zdnet.co.kr/view/?no=20260412171259",
+  "https://biz.newdaily.co.kr/site/data/html/2026/06/26/2026062600020.html",
+  "https://m.ceoscoredaily.com/page/view/2026012716141675783",
+  "https://news.nate.com/view/20260321n10022?mid=n1101",
+  "https://tradersunion.com/ko/news/financial-news/show/2072010-korea-memory-semiconductor-2026-price-drop/",
+  "http://www.koreatimes.com/article/20260730/1623673",
+  "https://www.newspim.com/news/view/20260730000429",
+  "https://www.thebell.co.kr/front/newsview.asp?key=202604141533431160102114",
+  "https://www.mt.co.kr/industry/2026/08/21/2026082115542310945",
   "https://www.thecommoditiesnews.com/news/articleView.html?idxno=11596",
-  "https://www.epnc.co.kr/news/articleView.html?idxno=400242",
-  "https://www.spaceless.kr/%EC%82%BC%EC%84%B1%EC%A0%84%EC%9E%90-%ED%8A%B9%EB%B3%84%EB%B0%B0%EB%8B%B9%EA%B8%88-%EC%96%BC%EB%A7%88-2026%EB%85%84-110%EC%A1%B0-%EC%A3%BC%EC%A3%BC%ED%99%98%EC%9B%90-%EC%A3%BC%EB%8B%B9-%EB%B0%B0/"
+  "https://news.samsung.com/kr/%EC%82%BC%EC%84%B1%EC%A0%84%EC%9E%90-%EC%82%AC%EC%83%81-%EC%B5%9C%EB%8C%80-%EC%A3%BC%EC%A3%BC%ED%99%98%EC%9B%90-%EC%8B%A4%EC%8B%9C-2026%EB%85%84-%EC%95%BD-90%EC%A1%B0110%EC%A1%B0%EC%9B%90",
+  "https://studio24.kr/3989"
  ],
  "v": 2,
  "model": "claude-opus-5",
@@ -234,7 +234,7 @@
  ],
  "market": "코스피",
  "reportDate": "2026-09-05",
- "reportTs": "2026-09-05 02:28",
+ "reportTs": "2026-09-05 02:54",
  "dataDate": "20260904",
  "quant": {
   "asOf": "2026-09-04",
