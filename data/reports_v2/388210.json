@@ -1,227 +1,217 @@
 {
  "title": {
-  "ko": "글로벌 벤더 지위와 회계손실 변수 공존",
-  "en": "Global Vendor Status Meets Accounting Loss Swings"
+  "ko": "고성장 속 순이익 변동성 공존",
+  "en": "Growth Streak Meets Earnings Volatility"
  },
  "lead": {
-  "ko": "씨엠티엑스는 TSMC·삼성전자·마이크론을 고객사로 확보한 반도체 실리콘 파츠 기업으로 영업이익은 사상 최대를 기록했지만 상환전환우선주 관련 회계상 손실로 순이익은 적자를 나타냈다.",
-  "en": "CMTX secured TSMC, Samsung Electronics and Micron as customers and posted record operating profit, while accounting-driven RCPS valuation losses pushed net income into the red."
+  "ko": "삼성전자·TSMC·마이크론을 고객으로 둔 반도체 실리콘 파츠 기업으로 11개 분기 연속 매출 성장을 이어가고 있으나, 상장 전 RCPS 평가손실로 2025년 연간 순손실을 기록해 영업실적과 순이익 흐름 사이 괴리가 나타난다.",
+  "en": "CMTX is a semiconductor silicon-parts maker serving Samsung Electronics, TSMC, and Micron with 11 consecutive quarters of revenue growth, yet a pre-listing RCPS fair-value loss drove a full-year 2025 net loss despite record operating profit, creating a gap between operating and bottom-line trends."
  },
  "keypoints": [
   {
-   "ko": "2025년 연결 매출 1,605.6억원, 영업이익 517.8억원(영업이익률 32.3%)으로 외형·수익성 모두 성장",
-   "en": "2025 consolidated revenue of KRW160.6bn and operating profit of KRW51.8bn (32.3% margin) mark growth in both scale and profitability"
+   "ko": "2025년 매출 1,605억원, 영업이익 518억원(영업이익률 32.3%)으로 전년 대비 큰 폭 개선됐으나 지배주주 순손실 251억원을 기록했다.",
+   "en": "2025 revenue reached KRW 160.6bn with operating profit of KRW 51.8bn (32.3% margin), a sharp improvement, yet the company posted a KRW 25.1bn net loss attributable to owners."
   },
   {
-   "ko": "지배주주순손실 215.0억원은 상환전환우선주(RCPS) 파생상품평가손실에 기인한 회계상 손실로, 영업현금흐름은 361.9억원으로 플러스",
-   "en": "The KRW21.5bn net loss attributable to owners stems from RCPS derivative valuation losses, while operating cash flow remained positive at KRW36.2bn"
+   "ko": "2026년 1분기(매출 441억원)~2분기(매출 479억원)까지 매출이 분기마다 증가하며 회사는 '11분기 연속 매출 성장'이라고 밝혔다.",
+   "en": "Revenue rose each quarter from Q1 2026 (KRW 44.1bn) to Q2 2026 (KRW 47.9bn), with the company stating it has achieved '11 consecutive quarters of revenue growth.'"
   },
   {
-   "ko": "2025년 3분기~2026년 2분기 4개 분기 연속 매출·영업이익 성장, 지배주주순이익도 분기별로 흑자 유지",
-   "en": "Revenue and operating profit grew for four consecutive quarters from Q3 2025 through Q2 2026, with quarterly net income to owners remaining positive"
+   "ko": "삼성전자 1차 협력사, TSMC 국내 유일 1차 벤더, 마이크론 파트너십 확대, SK하이닉스 벤더 등록 완료로 글로벌 고객 포트폴리오가 넓어지고 있다.",
+   "en": "The customer base is broadening as a Samsung Electronics first-tier vendor, Korea's sole first-tier TSMC vendor, an expanding Micron partnership, and completed SK Hynix vendor registration."
   },
   {
-   "ko": "국내 유일 TSMC 1차 협력사, 삼성전자 1차 협력사, 마이크론·키옥시아 공급 확대 등 글로벌 고객 다변화 진행",
-   "en": "The company is diversifying globally as the sole domestic TSMC first-tier vendor, a Samsung Electronics first-tier partner, and an expanding supplier to Micron and Kioxia"
+   "ko": "세계 식각장비 1위 램리서치와 특허분쟁이 진행 중이며, 5월 특허심판원에서 1차 승소했으나 6월 램리서치가 특허법원에 항소해 분쟁은 지속되고 있다.",
+   "en": "A patent dispute with Lam Research, the world's top etch equipment maker, is ongoing; the company won a first-round ruling in May but Lam Research appealed to the Patent Court in June, extending the dispute."
   },
   {
-   "ko": "구미 2공장 증설과 자회사 셀릭 FI 지분 처리(2026년 말 시한) 등 확인이 필요한 이벤트가 다수 대기",
-   "en": "Several events requiring confirmation are pending, including the Gumi second plant expansion and resolution of subsidiary Celic's FI equity stake by year-end 2026"
+   "ko": "상장 후 RCPS 전환으로 자본구조가 개선(2024년 자본총계 -380억원 → 2025년 1,781억원)됐고, CB·BW 발행한도 확대 등 자본조달 옵션도 넓어졌다.",
+   "en": "Capital structure improved after RCPS conversion at listing (owners' equity swung from -KRW 38.5bn in 2024 to KRW 178.1bn in 2025), while an expanded CB/BW issuance ceiling widened future funding options."
   }
  ],
  "business": {
-  "ko": "씨엠티엑스는 2013년 코마테크놀로지로 설립돼 2024년 현재 사명으로 변경했으며, 2025년 11월 20일 코스닥에 상장한 반도체 소재·부품 전문기업이다. 주력 사업은 반도체 전공정 중 식각(Etching)·증착(Deposition) 공정에 사용되는 실리콘(Si)·사파이어·세라믹 소재 기반 정밀 부품 제조로, 실리콘파츠가 매출의 대부분을 차지한다. 2025년 3분기 기준 매출 구성에서 실리콘파츠 비중이 97.7%에 달하며, 이 제품은 식각 장비의 반응 챔버 내벽 등에 사용되는 소모성 부품으로 플라즈마와 반응성 가스로부터 장비를 보호하는 역할을 한다. 회사는 장비업체를 거치지 않고 반도체 제조사에 직접 공급하는 애프터마켓 진출에 성공했으며, 이를 통해 수익성을 끌어올렸다. 고객사로는 삼성전자 1차 협력사(2021년 등록), 국내 유일의 TSMC 1차 협력사 지위를 보유하고 있으며, 마이크론·키옥시아·SK하이닉스 벤더 등록 등으로 고객 기반을 확대하고 있다. 자회사 셀릭(지분 58.6%)을 통해 실리콘 잉곳 소재를 내재화하고 세계 최초로 폐실리콘 부품 재생(리사이클링) 기술을 상용화해 원가 경쟁력과 이익률을 동시에 확보했다는 평가를 받는다. 국내 경쟁구도에서는 하나머티리얼즈, 케이엔제이, 티씨케이 등의 실리콘·쿼츠 파츠 업체들과 비교되며, 해외 고객 확보 폭에서 차별화된 포지션을 보유하고 있다는 분석이 나온다.",
-  "en": "CMTX was founded in 2013 as Koma Technology and renamed to its current title in 2024, listing on KOSDAQ on November 20, 2025 as a semiconductor materials and parts specialist. Its core business is manufacturing precision parts based on silicon (Si), sapphire and ceramic materials used in the etching and deposition steps of front-end semiconductor processes, with silicon parts accounting for the vast majority of sales. As of Q3 2025, silicon parts represented 97.7% of revenue, functioning as consumable components lining the reaction chambers of etching equipment to protect against plasma and reactive gases. The company has succeeded in entering the aftermarket, supplying semiconductor makers directly rather than through equipment vendors, which has lifted profitability. Its customer base includes Samsung Electronics as a first-tier partner registered in 2021 and the sole domestic first-tier vendor status with TSMC, while expanding registrations with Micron, Kioxia and SK hynix. Through its subsidiary Celic (58.6% stake), the company has internalized silicon ingot materials and commercialized what is described as the world's first recycling technology for used silicon parts, said to secure both cost competitiveness and margins. Domestically, it is compared against silicon/quartz parts makers such as Hana Materials, KNJ and TCK, with analysts noting a differentiated position given its breadth of overseas customer wins."
+  "ko": "씨엠티엑스(CMTX)는 반도체 전공정 중 식각(Etching)·증착(Deposition) 공정에 사용되는 실리콘(Si)·사파이어·세라믹 소재 기반 고기능 정밀 부품을 생산하는 소재·부품 전문기업이다. 2025년 기준 매출의 대부분인 실리콘파츠 부문이 매출 구성의 97.66%를 차지하며, 포커스링·전극 등 크기와 구조에 따라 수백 가지 제품군을 갖추고 있다. 이 부품들은 플라즈마가 발생하는 반응 챔버 내벽 등에 쓰이는 소모성 부품으로, 웨이퍼 표면 오염을 최소화하는 역할을 수행한다. 고객사로는 2021년 삼성전자 1차 협력사로 등록돼 삼성전자 설비기술연구소의 실리콘 파츠 단독 공급자 지위를 갖고 있으며, 국내 소재·부품 기업 중 유일하게 TSMC의 1차 벤더로 등록돼 3nm·2nm 선단 공정에 제품을 공급한다. 최근에는 미국 마이크론 테크놀로지와의 파트너십을 싱가포르 팹까지 확대하고 있으며 SK하이닉스 벤더 등록도 완료해 국내외 주요 IDM·파운드리 대응 체계를 갖췄다. 100% 자회사 셀릭을 통해 실리콘 잉곳 소재를 내재화하고, 세계 최초로 상용화한 폐실리콘 부품 재생 기술로 공급망 안정성과 원가 경쟁력을 동시에 확보하고 있다. 생산 인프라는 경북 구미에 집중돼 있으며 상장 자금을 바탕으로 약 1만5000평 규모의 제2공장(M캠퍼스) 구축을 진행 중이다. 회사는 2025년 11월 20일 코스닥 시장에 상장했다.",
+  "en": "CMTX is a materials and parts specialist that manufactures high-function precision components based on silicon (Si), sapphire, and ceramic materials used in front-end semiconductor etching and deposition processes. As of 2025, the silicon parts segment accounted for 97.66% of revenue, spanning hundreds of product variants such as focus rings and electrodes that differ by size and structure. These are consumable parts used inside plasma reaction chambers, designed to minimize wafer surface contamination. The company has been a Samsung Electronics first-tier vendor since 2021 and holds sole-supplier status for silicon parts at Samsung's equipment technology institute, while it is the only Korean materials and parts firm registered as a first-tier TSMC vendor, supplying products for 3nm and 2nm leading-edge processes. It has also been expanding its partnership with Micron Technology to the latter's Singapore fab and has completed SK Hynix vendor registration, giving it reach across major domestic and overseas IDM and foundry customers. Through its wholly owned subsidiary Celeg, CMTX has internalized silicon ingot materials and commercialized what it describes as the world's first recycling technology for used silicon parts, supporting both supply-chain stability and cost competitiveness. Production infrastructure is concentrated in Gumi, North Gyeongsang Province, where the company is building a roughly 15,000-pyeong second plant (M Campus) funded by IPO proceeds. CMTX listed on KOSDAQ on November 20, 2025."
  },
  "earnings": {
-  "ko": "2025년 연결 매출액은 1,605.6억원, 영업이익은 517.8억원으로 영업이익률 32.3%를 기록해 외형과 수익성이 함께 개선됐다. 반면 지배주주순손실은 215.0억원으로 적자를 나타냈는데, 이는 씨엠티엑스와 자회사 셀릭이 발행한 상환전환우선주(RCPS)가 보통주로 전환되는 과정에서 발생한 파생상품평가손실 때문이다. 회사 측은 이 손실이 현금유출이 없는 회계상 손실이며 보통주 전환 완료 이후에는 재발하지 않을 것이라고 설명한 바 있다. 실제로 영업활동현금흐름은 361.9억원으로 플러스를 유지해, 영업 자체의 현금창출력은 훼손되지 않았음을 보여준다. 분기별로 보면 2025년 3분기 매출 410.3억원·영업이익 154.6억원(영업이익률 37.7%), 4분기 매출 421.8억원·영업이익 100.0억원(23.7%), 2026년 1분기 매출 441.2억원·영업이익 135.1억원(30.6%), 2분기 매출 479.0억원·영업이익 155.8억원(32.5%)으로 4개 분기 연속 매출 성장세가 이어졌다. RCPS 전환 이슈가 해소된 이후에는 지배주주순이익도 분기별로 153.7억원, 89.1억원, 100.2억원, 141.6억원의 흑자 흐름을 나타냈다. 부채비율은 51.0%, 지배주주 자기자본은 1,781.0억원으로 재무구조는 상장을 통한 자본 확충 이후 안정화된 모습이다.",
-  "en": "In 2025, consolidated revenue reached KRW160.6bn and operating profit KRW51.8bn, translating into a 32.3% operating margin that reflects improvement in both scale and profitability. In contrast, net loss attributable to owners came to KRW21.5bn, driven by derivative valuation losses recognized when redeemable convertible preferred shares (RCPS) issued by CMTX and subsidiary Celic converted into common stock. The company has stated this loss involves no cash outflow and should not recur once the conversion process is complete. Operating cash flow remained positive at KRW36.2bn, indicating the core business's cash-generating capacity was not impaired. On a quarterly basis, revenue and operating profit grew for four straight quarters: Q3 2025 revenue of KRW41.0bn with operating profit of KRW15.5bn (37.7% margin), Q4 revenue of KRW42.2bn with operating profit of KRW10.0bn (23.7%), Q1 2026 revenue of KRW44.1bn with operating profit of KRW13.5bn (30.6%), and Q2 2026 revenue of KRW47.9bn with operating profit of KRW15.6bn (32.5%). Once the RCPS conversion issue was resolved, quarterly net income to owners also turned positive at KRW15.4bn, KRW8.9bn, KRW10.0bn and KRW14.2bn respectively. The debt ratio stood at 51.0% and owners' equity at KRW178.1bn, showing a stabilized capital structure following the equity raise from listing."
+  "ko": "2025년 연결 매출은 1,605억5,576만원으로 2024년 1,086억6,591만원 대비 큰 폭으로 늘었고, 영업이익은 517억8,194만원(영업이익률 32.3%)으로 2024년 236억3,903만원(영업이익률 21.8%)보다 마진까지 함께 개선됐다. 그러나 지배주주 순이익은 2024년 135억1,648만원 흑자에서 2025년 250억5,537만원 순손실로 적자 전환했는데, 이는 상장 전 상환전환우선주(RCPS)의 공정가치 평가손실이 반영된 결과로, 회사 측도 이를 순손실 전환의 원인으로 설명했다. 분기별로 보면 2025년 3분기 매출 410억2,699만원·영업이익 154억6,480만원(영업이익률 약 37.7%)에서 4분기 매출 421억7,884만원·영업이익 100억408만원(영업이익률 약 23.7%)으로 마진이 눌렸다가, 2026년 1분기 매출 441억2,090만원·영업이익 135억973만원(영업이익률 30.6%)으로 회복, 2분기 매출 478억9,712만원·영업이익 155억7,516만원(영업이익률 약 32.5%)까지 매출이 분기마다 늘어나는 흐름을 이어갔다. 지배주주 순이익도 2025년 3분기 153억7,000만원, 4분기 53억6,000만원, 2026년 1분기 100억2,000만원, 2분기 117억7,000만원으로 RCPS 전환이 마무리된 상장 이후에는 영업이익 흐름에 근접하는 모습을 보이고 있다. 재무상태표상으로도 2024년 자본총계(지배주주) -384억7,534만원, 부채비율 -575.2%였던 것이 2025년 자본총계(지배주주) 1,780억9,779만원, 부채비율 51.0%로 전환돼, RCPS의 부채성 분류가 해소되고 상장을 통해 자본구조가 정상화된 결과가 확인된다. 부채총액도 2024년 2,183억1,254만원에서 2025년 930억4,038만원으로 크게 줄었다. 영업활동현금흐름은 2024년 354억9,033만원, 2025년 361억9,441만원으로 안정적인 흐름을 유지하고 있어, 순이익 변동성과 달리 실제 현금창출력은 꾸준했음을 보여준다.",
+  "en": "Consolidated 2025 revenue reached KRW 160.56bn, sharply up from KRW 108.67bn in 2024, while operating profit climbed to KRW 51.78bn (32.3% margin) from KRW 23.64bn (21.8% margin) in 2024, showing margin expansion alongside top-line growth. Net income attributable to owners, however, swung from a KRW 13.52bn profit in 2024 to a KRW 25.06bn loss in 2025, which reflects a fair-value valuation loss on redeemable convertible preferred shares (RCPS) ahead of listing, a factor the company itself cited as the cause of the net-loss swing. On a quarterly basis, revenue of KRW 41.03bn and operating profit of KRW 15.46bn (roughly 37.7% margin) in Q3 2025 gave way to a margin dip in Q4 2025 (revenue KRW 42.18bn, operating profit KRW 10.00bn, roughly 23.7% margin), before recovering to 30.6% in Q1 2026 (revenue KRW 44.12bn, operating profit KRW 13.51bn) and roughly 32.5% in Q2 2026 (revenue KRW 47.90bn, operating profit KRW 15.58bn), with revenue rising every quarter. Owners' net income also tracked KRW 15.37bn, KRW 5.36bn, KRW 10.02bn, and KRW 11.77bn across those same four quarters, moving closer to the operating-profit trend once the RCPS conversion was completed at listing. On the balance sheet, owners' equity moved from -KRW 38.48bn (debt ratio -575.2%) in 2024 to KRW 178.10bn (debt ratio 51.0%) in 2025, confirming that the liability-style RCPS classification was resolved and the capital structure normalized after listing. Total liabilities also fell sharply, from KRW 218.31bn in 2024 to KRW 93.04bn in 2025. Operating cash flow remained stable at KRW 35.49bn in 2024 and KRW 36.19bn in 2025, indicating that underlying cash generation stayed consistent even as reported net income was volatile."
  },
  "industry": {
-  "ko": "반도체 초미세 공정으로의 진입이 가속화되면서 식각 공정의 플라즈마 밀도가 높아지고, 이에 따라 소모성 부품의 마모 속도가 빨라지고 교체 주기가 단축되고 있다는 것이 업계의 공통된 진단이다. 이는 수율 확보와 원가 절감이 필수적인 반도체 제조사들의 애프터마켓(장비사를 거치지 않는 직공급) 수요 증가로 이어지고 있다. 선단 공정 경쟁 구도를 보면 TSMC는 2나노급 공정에서 약 80% 수준의 수율을 확보한 것으로 알려진 반면, 삼성전자는 같은 공정에서 50~60% 구간에서 연말까지 개선을 추진 중인 것으로 전해진다. 이런 환경에서 공정 안정성을 뒷받침하는 소모성 부품 공급사의 역할이 중요해지고 있다는 평가가 나온다. 씨엠티엑스는 실리콘 잉곳 생산부터 가공·세정·검사까지 자체 수행하는 수직계열화 구조를 구축했으며, 연간 200톤 규모의 생산능력과 세계 최초 실리콘 폐파츠 재생 기술을 보유하고 있다는 점이 경쟁사 대비 차별화 요소로 거론된다. 국내 동종업계인 하나머티리얼즈, 케이엔제이, 티씨케이 등과 비교할 때, 씨엠티엑스는 TSMC·마이크론·키옥시아 등 해외 고객사 비중 확대에서 상대적으로 앞서 있다는 평가가 증권가에서 제기된 바 있다.",
-  "en": "As semiconductor manufacturing advances into ever-finer process nodes, industry observers commonly note that plasma density in etching rises, accelerating wear on consumable parts and shortening replacement cycles. This is driving increased demand for aftermarket supply—direct sales to chipmakers bypassing equipment vendors—as yield assurance and cost reduction become essential. In the leading-edge process race, TSMC is reported to have achieved roughly 80% yield at the 2nm node, while Samsung Electronics is said to be working through the 50-60% range toward year-end improvement at the same node. Amid this environment, the role of consumable parts suppliers underpinning process stability is said to be growing in importance. CMTX has built a vertically integrated structure spanning silicon ingot production through processing, cleaning and inspection, with annual capacity of 200 tons and what is described as the world's first commercialized recycling technology for used silicon parts, cited as differentiating factors versus peers. Compared with domestic peers such as Hana Materials, KNJ and TCK, brokerage analysts have suggested CMTX holds a relative lead in expanding its share of overseas customers including TSMC, Micron and Kioxia."
+  "ko": "반도체 초미세 공정으로의 전환이 진행되면서 식각 공정 내 플라즈마 밀도가 높아져 부품 마모 속도가 빨라지고 교체 주기가 단축되고 있으며, 이는 수율 확보와 원가 절감이 필요한 반도체 제조사들의 애프터마켓(장비사를 거치지 않는 직공급) 수요 증가로 이어지고 있다. 국내 주요 반도체 기업의 애프터마켓 채택률은 약 30%, 해외 반도체 기업은 10~20% 수준으로 알려져 있어, 해외 고객 쪽에서 채택률이 상승할 여지가 상대적으로 크다는 분석이 나온다. 씨엠티엑스는 이 시장에서 삼성전자·TSMC·마이크론 등 메모리와 비메모리를 아우르는 글로벌 고객 포트폴리오를 구축했다는 점이 차별점으로 꼽힌다. 수익성 측면에서는 자회사를 통한 소재 내재화와 리사이클링 기술을 바탕으로, 국내 비교기업인 티씨케이(2025년 영업이익률 29%)·하나머티리얼즈(17%)·원익QnC(15%) 대비 높은 영업이익률을 보이고 있다는 평가가 있다. 다만 세계 식각장비 1위 업체인 램리서치가 특허침해 소송을 제기하며 애프터마켓 확산에 대한 견제 움직임을 보이고 있어, 장비사와 소재·부품사 간의 경쟁 구도가 병존하는 산업 환경이다. 전방 반도체 업체들의 신규 팹 투자와 기존 라인 전환 투자가 병행되면서 비포마켓과 애프터마켓 수요가 동시에 자극받고 있다는 분석도 나온다.",
+  "en": "As semiconductor manufacturing migrates to more advanced nodes, higher plasma density in etch processes is accelerating part wear and shortening replacement cycles, driving growing demand for aftermarket supply that bypasses equipment makers among chipmakers seeking yield gains and cost reduction. Domestic aftermarket adoption is estimated at around 30% while overseas chipmakers are estimated at 10-20%, suggesting relatively more room for adoption to rise among overseas customers. CMTX's differentiator in this market is its global customer portfolio spanning both memory and non-memory chipmakers, including Samsung Electronics, TSMC, and Micron. On profitability, the company's material internalization and recycling technology through its subsidiary have been cited as supporting an operating margin above domestic comparable companies such as TCK (29% margin in 2025), Hana Materials (17%), and Wonik QnC (15%). At the same time, Lam Research, the world's largest etch equipment maker, has filed a patent infringement suit, illustrating a competitive dynamic in which equipment makers are pushing back against aftermarket expansion by materials and parts suppliers. Analysts have also noted that parallel new-fab investment and existing-line conversion investment by leading chipmakers are stimulating both before-market and aftermarket demand simultaneously."
  },
  "outlook": {
-  "ko": "회사 측은 2026년에도 국내외 반도체 고객사 공급 확대를 통해 성장세를 이어갈 계획이라고 밝힌 바 있다. 증권가에서는 2026년 실적에 대해 매출액 2,080억~2,140억원, 영업이익 703억~731억원 수준의 전망치를 제시했는데(하나증권 2026년 1월, KB증권 2026년 2월, 신한투자증권 2026년 5월 리포트 기준), 삼성전자 매출 확대와 함께 TSMC·마이크론 등 신규 고객의 양산매출 확대가 근거로 제시됐다. 생산능력 측면에서는 경북 구미의 1·2공장 기존 캐파가 2026년 말 풀캐파에 도달할 것으로 전망되며, 공모자금을 활용한 2공장(M캠퍼스) B동 증설이 2026년 하반기 준공, 2027년 가동을 목표로 진행 중인 것으로 파악된다. 이 증설이 완료되면 전체 생산능력이 기존 2,100억원 규모에서 4,000억원 규모로 확대될 것이라는 증권사 추정이 나온 바 있다. 고객 다변화와 관련해서는 마이크론향 매출이 2025년 약 100억원에서 2026년 약 200억원 수준으로 늘어날 것이라는 전망이 제시됐으며, 2026년 2월에는 마이크론 대표단과 씨엠티엑스 경영진이 세미콘 코리아 2026 전시에서 만나 싱가포르 팹 공급 확대와 폐실리콘 부품 리사이클 협력 방안을 논의한 것으로 전해졌다. 다만 이러한 전망치들은 각 증권사의 추정으로, 실제 달성 여부는 분기별 공시를 통해 확인이 필요하다.",
-  "en": "Management has stated its plan to sustain growth in 2026 by expanding supply to both domestic and global semiconductor customers. Brokerages have projected 2026 revenue in the range of KRW208-214bn and operating profit of KRW70.3-73.1bn (per Hana Securities' January 2026, KB Securities' February 2026, and Shinhan Investment's May 2026 reports), citing expanded Samsung Electronics sales alongside ramping volumes from new customers TSMC and Micron. On the capacity front, existing plants 1 and 2 in Gumi, North Gyeongsang Province are expected to reach full capacity by end-2026, with construction of Plant 2's (M Campus) Building B—funded by IPO proceeds—targeted for completion in the second half of 2026 and operation from 2027. Analysts have estimated that once complete, total capacity would expand from roughly KRW210bn to KRW400bn. On customer diversification, forecasts suggest Micron-related sales could grow from around KRW10bn in 2025 to about KRW20bn in 2026, and in February 2026 CMTX management reportedly met Micron representatives at the SEMICON Korea 2026 exhibition to discuss expanded supply to Micron's Singapore fab and cooperation on recycling used silicon parts. These projections, however, are brokerage estimates and actual achievement should be confirmed through quarterly disclosures."
+  "ko": "회사는 기존 약 2,100억원 수준의 생산능력(CAPA)을 2026년 말까지 약 4,000억원 규모로 증설하고 임대공장까지 추가로 확보해 대응하고 있다는 평가가 나온다. 지난해 12월에는 생산시설 투자와 장기 성장 인프라 구축을 목적으로 177억원 규모의 신규시설투자를 결정했다고 공시했으며, 투자기간은 2026년 1월부터 12월까지다. 마이크론과는 싱가포르 신규 팹에 투입될 고순도 실리콘 부품 공급 확대와 차세대 공정용 신규 부품 개발을 논의하고 있으며, 폐실리콘 부품 리사이클 사업의 공급망 협력도 본격화할 것으로 알려졌다. TSMC향으로는 2025년 기준 양산 품목 매출이 약 50억원 수준이었으나, 추가 퀄 확보와 양산품목 확대가 진행 중인 것으로 파악된다. 지난 7월 임시주주총회에서는 전환사채(CB)·신주인수권부사채(BW) 발행한도를 확대했는데, 회사는 이를 인수합병(M&A)과 전략 투자 기회에 대응하기 위한 사전 준비라고 설명했고 8월 초 기준으로는 CB나 BW를 발행할 계획이 없다고 밝혔다. 회사는 최근 개설한 주주소통 게시판을 통해 잠정실적, 신규 투자·증설, 신규 고객사 현황 등을 법이 허용하는 범위에서 공개하겠다고 밝혔다. 램리서치와의 특허분쟁은 6월 항소로 이어져 결과가 최종 확정되기까지는 시일이 더 소요될 전망이다.",
+  "en": "Reports indicate the company is expanding capacity from roughly KRW 210bn to around KRW 400bn by the end of 2026, supplemented by an additional leased plant. In December of the prior year, the company disclosed a KRW 17.7bn new facility investment aimed at production capacity and long-term growth infrastructure, with the investment period running from January to December 2026. With Micron, discussions are underway on expanding supply of high-purity silicon parts for a new Singapore fab and developing new parts for next-generation processes, with supply-chain cooperation on recycled silicon parts also reportedly set to move forward. For TSMC, mass-production revenue was around KRW 5bn in 2025, with additional qualification and expansion of mass-production items reportedly underway. At an extraordinary general meeting in July, the company expanded its convertible bond (CB) and bond-with-warrant (BW) issuance ceiling, which it described as preparation for potential mergers, acquisitions, and strategic investment opportunities, while stating in early August that it currently has no plan to issue CB or BW. The company said it will disclose interim performance, new investment and capacity updates, and new customer developments through a newly opened shareholder communication channel within legal limits. The patent dispute with Lam Research moved to an appeal in June, meaning a final resolution is likely to take more time."
  },
  "valuation_comment": {
-  "ko": "씨엠티엑스는 상장 당시 RCPS 관련 회계상 손실을 조정한 반기 순이익을 연환산해 국내 유사기업 평균 주가수익비율(PER) 19.2배 대비 할인된 수준에서 공모가를 산정한 바 있다. 상장 이후 주가는 상장 첫날 급등한 뒤 등락을 거듭하며 52주 기준 5만6,500원에서 17만300원에 이르는 넓은 변동 폭을 보였다. 최근 일부 증권사는 국내 동종업계 피어그룹 평균 PER(약 33배 안팎)을 기준으로 목표주가를 제시하면서, 당시 주가가 자체 추정 PER 기준으로 피어 평균 대비 낮은 배수에서 거래되고 있다고 평가한 바 있다(신한투자증권, 2026년 5월). 유진투자증권도 2026년 4월 리포트에서 2026년 예상 실적 기준 국내 동종·유사업체 평균 PER을 적용해 목표주가 22만원을 신규 제시했다. 다만 이러한 밸류에이션 비교는 각 증권사의 실적 추정치와 피어그룹 선정에 따라 달라질 수 있으며, 회사는 현재 배당을 지급하지 않고 있어 배당수익률 측면의 투자 매력은 제한적이다. 순자산가치 대비 주가 수준은 상장 이후 형성된 프리미엄 구간에서 유지되고 있는 것으로 파악된다.",
-  "en": "At listing, CMTX priced its IPO at a discount to the roughly 19.2x average PER of domestic peer companies, based on an annualized adjusted first-half net income that excluded RCPS-related accounting losses. Since listing, the share price has fluctuated widely, ranging from KRW56,500 to KRW170,300 over the trailing 52 weeks after an initial post-listing surge. More recently, some brokerages have set target prices referencing a domestic peer-group average PER of roughly 33x, assessing that the shares traded at a discount to that peer multiple on their own earnings estimates (Shinhan Investment, May 2026). Eugene Investment & Securities likewise initiated coverage in April 2026 with a target price of KRW220,000, applying a domestic peer-average PER multiple to its 2026 earnings estimate. Such valuation comparisons, however, depend on each brokerage's own earnings forecasts and peer selection, and the company currently pays no dividend, limiting the yield-based investment case. The share price relative to net asset value appears to sit in a premium range that has persisted since listing."
+  "ko": "씨엠티엑스는 상장 이후 짧은 거래 기간 동안 주가 변동성이 컸던 종목으로, 밸류에이션 지표도 그에 따라 크게 출렁였다. 신한투자증권은 5월 보고서에서 당시 자사 추정 실적 기준 주가수익비율이 국내 동종·유사업체 평균보다 낮은 수준에서 거래되고 있다고 평가한 바 있으며, DS투자증권도 3월 리포트에서 소재 내재화 기반의 높은 마진 구조를 근거로 성장 잠재력을 강조했다. 다만 이러한 평가는 특정 시점의 추정치와 주가를 전제로 한 것으로, 이후 주가와 실적 추정치가 변동하면서 상대적 위치도 달라질 수 있다. 순자산 대비 주가 수준은 상장 초기 RCPS 전환에 따른 자본 확충 효과가 반영되며 크게 변화한 구간을 지나왔고, 현재 회사는 배당을 실시하지 않고 있어 배당수익률 측면의 주주환원은 제공되지 않고 있다. 영업이익률이 동종업계 평균을 상회하는 구조적 수익성은 밸류에이션 논의에서 자주 언급되는 요소다.",
+  "en": "CMTX has seen significant share price volatility over its short trading history since listing, and valuation metrics have swung accordingly. Shinhan Investment noted in a May report that, based on its own earnings estimates at the time, the stock's price-to-earnings ratio was trading below the average of domestic comparable companies, while DS Investment & Securities highlighted growth potential in a March report citing the company's high-margin structure built on material internalization. These assessments, however, were tied to a specific point in time and to particular earnings estimates, so the relative positioning could shift as both the share price and estimates change. The relationship between share price and net asset value has passed through a period of significant change tied to the capital effect of RCPS conversion around listing, and the company currently pays no dividend, so shareholder returns via dividend yield are not being provided. The operating margin structure, which has run above the peer average, is a factor frequently cited in valuation discussions."
  },
  "bull": [
   {
    "title": {
-    "ko": "글로벌 1차 벤더 지위",
-    "en": "First-Tier Global Vendor Status"
+    "ko": "구조적 애프터마켓 성장과 3대 글로벌 고객",
+    "en": "Structural Aftermarket Growth and Three Global Anchor Customers"
    },
    "body": {
-    "ko": "씨엠티엑스는 국내 유일 TSMC 1차 협력사이자 삼성전자 1차 협력사 지위를 보유하고 있으며, 마이크론·키옥시아·SK하이닉스 등으로 고객을 확대하고 있다. 이러한 레퍼런스는 신규 고객 확보 시 진입장벽으로 작용할 수 있다는 평가가 나온다. 애프터마켓 직공급 구조는 장비업체를 거치는 기존 유통구조 대비 높은 마진을 확보하는 기반이 된다는 설명이다.",
-    "en": "CMTX holds the sole domestic first-tier TSMC vendor status and a first-tier Samsung Electronics partnership, while expanding its customer base to Micron, Kioxia and SK hynix. Such references are seen as a barrier to entry when winning new customers. The aftermarket direct-supply structure is cited as a foundation for securing higher margins than traditional channels routed through equipment vendors."
+    "ko": "초미세 공정 전환으로 부품 교체 주기가 짧아지며 애프터마켓 수요가 구조적으로 늘고 있고, 씨엠티엑스는 삼성전자·TSMC·마이크론이라는 메모리·비메모리를 아우르는 레퍼런스를 보유하고 있다. SK하이닉스 벤더 등록까지 완료돼 국내외 주요 IDM·파운드리 대응 체계를 갖췄다. 해외 고객의 애프터마켓 채택률이 국내보다 낮아 채택률 상승에 따른 물량 확대 여지가 남아 있다는 평가도 나온다.",
+    "en": "Migration to more advanced nodes is shortening part replacement cycles, driving structural aftermarket demand growth, and CMTX has built reference customers spanning both memory and non-memory chipmakers in Samsung Electronics, TSMC, and Micron. Completed SK Hynix vendor registration rounds out coverage of major domestic and overseas IDMs and foundries. Analysts have noted that overseas aftermarket adoption remains lower than domestic levels, leaving room for volume growth as adoption rises."
    }
   },
   {
    "title": {
-    "ko": "수직계열화를 통한 원가 경쟁력",
-    "en": "Cost Competitiveness via Vertical Integration"
+    "ko": "수직계열화 기반 업계 최상위 영업이익률",
+    "en": "Vertically Integrated Model Supporting Best-in-Class Operating Margin"
    },
    "body": {
-    "ko": "자회사 셀릭을 통해 실리콘 잉곳 소재를 내재화하고, 세계 최초로 상용화했다는 폐실리콘 부품 재생 기술을 보유하고 있다. 잉곳 생산부터 가공·세정·검사까지 자체 수행하는 구조는 외부 조달 대비 원가와 품질관리 측면에서 강점으로 거론된다. 이는 30%를 상회하는 영업이익률의 배경으로 지목된다.",
-    "en": "Through subsidiary Celic, the company has internalized silicon ingot materials and commercialized what is described as the world's first recycling technology for used silicon parts. A structure spanning ingot production through processing, cleaning and inspection in-house is cited as a strength in cost and quality control versus external sourcing. This is pointed to as underpinning an operating margin exceeding 30%."
+    "ko": "100% 자회사 셀릭을 통한 실리콘 잉곳 내재화와 세계 최초 상용화된 폐부품 리사이클 기술이 원가 경쟁력의 기반이다. 2025년 연간 영업이익률 32.3%는 국내 비교기업들의 최근 영업이익률을 상회하는 수준으로 알려져 있다. 이는 단순 부품 공급을 넘어 소재부터 재생까지 아우르는 사업 모델의 결과로 해석된다.",
+    "en": "Internalized silicon ingot supply through wholly owned subsidiary Celeg and the world's first commercialized recycling technology for used parts underpin cost competitiveness. The 2025 full-year operating margin of 32.3% is reported to exceed recent margins at domestic comparable companies. This is interpreted as the result of a business model spanning materials through part regeneration, not just component supply."
    }
   },
   {
    "title": {
-    "ko": "생산능력 확대 계획",
-    "en": "Planned Capacity Expansion"
+    "ko": "매출 성장 지속과 증설 투자",
+    "en": "Sustained Revenue Growth and Capacity Investment"
    },
    "body": {
-    "ko": "공모자금을 활용한 구미 2공장 증설이 진행 중이며, 완공 시 전체 생산능력이 확대될 것으로 증권가는 추정하고 있다. 기존 1·2공장은 2026년 말 풀캐파에 근접할 것으로 전망돼 신규 캐파 투입 시점이 매출 성장의 변수가 될 수 있다. 다만 증설 일정과 가동률 진척은 분기별 공시로 확인이 필요하다.",
-    "en": "Expansion of the Gumi second plant, funded by IPO proceeds, is underway, and brokerages estimate total capacity will increase upon completion. Existing plants 1 and 2 are projected to approach full capacity by end-2026, making the timing of new capacity a potential variable for revenue growth. However, the expansion schedule and utilization progress require confirmation through quarterly disclosures."
+    "ko": "회사는 2025년 3분기부터 2026년 2분기까지 매출이 분기마다 증가했고, 스스로 '11분기 연속 매출 성장'이라고 밝혔다. 기존 생산능력을 2026년 말까지 약 두 배 수준으로 늘리는 증설이 진행되고 있으며, 구미 제2공장(M캠퍼스) 구축도 병행되고 있다. 이는 향후 수주 물량 확대에 대응할 수 있는 물리적 기반을 마련하는 작업으로 볼 수 있다.",
+    "en": "Revenue rose every quarter from Q3 2025 through Q2 2026, with the company itself describing '11 consecutive quarters of revenue growth.' Capacity expansion to roughly double existing levels by the end of 2026 is underway, alongside construction of a second plant (M Campus) in Gumi. This can be viewed as laying the physical groundwork to accommodate expanding future order volumes."
    }
   }
  ],
  "bear": [
   {
    "title": {
-    "ko": "회계상 손실의 반복 가능성",
-    "en": "Potential for Recurring Accounting Losses"
+    "ko": "순이익 변동성과 비영업적 손익 요인",
+    "en": "Net Income Volatility from Non-Operating Items"
    },
    "body": {
-    "ko": "2025년 대규모 지배주주순손실은 RCPS 파생상품평가손실에 기인했으며, 회사는 보통주 전환 완료 이후 재발하지 않을 것이라고 설명했다. 다만 유사한 금융상품 재발행이나 신규 평가 이슈가 생길 경우 순이익 변동성이 다시 커질 수 있다. 영업이익과 순이익 간 괴리는 투자자들의 혼선을 유발할 수 있는 요인으로 지적된다.",
-    "en": "The large 2025 net loss to owners stemmed from RCPS derivative valuation losses, which the company said should not recur once conversion to common stock is complete. However, net income volatility could resurface if similar financial instruments are reissued or new valuation issues arise. The gap between operating profit and net income has been flagged as a source of investor confusion."
+    "ko": "2025년 영업이익은 사상 최대치를 기록했음에도 상환전환우선주(RCPS) 공정가치 평가손실로 지배주주 순손실 251억원을 기록했다. 이러한 비현금성 항목은 상장 이후 대체로 해소된 것으로 보이지만, 유사한 평가손익 요인이 재발할 가능성을 배제할 수 없다. 영업실적과 순이익 흐름 간 괴리는 투자자들이 지표를 해석할 때 혼선을 줄 수 있는 요인이다.",
+    "en": "Despite record operating profit in 2025, the company posted a KRW 25.1bn net loss attributable to owners due to a fair-value valuation loss on redeemable convertible preferred shares. While this non-cash item appears largely resolved following listing, the possibility of similar valuation swings recurring cannot be ruled out. The divergence between operating performance and net income trends can create interpretive confusion for investors reading the metrics."
    }
   },
   {
    "title": {
-    "ko": "상장 초기 주가 변동성",
-    "en": "Post-IPO Share Price Volatility"
+    "ko": "램리서치 특허분쟁 지속",
+    "en": "Ongoing Lam Research Patent Dispute"
    },
    "body": {
-    "ko": "상장 이후 52주 최고가와 최저가의 격차가 매우 컸으며, 2026년 7월 말에는 6만원대까지 밀렸다가 이후 반등하는 등 변동성이 확대된 모습을 보였다. 상장 후 유통가능 물량이 전체 주식의 32.0%에 달해 물량 부담이 거론된 바 있으며, 재무적 투자자(FI)들의 지분 매각도 이어진 것으로 전해진다. 이러한 수급 요인은 실적과 무관하게 주가 변동성을 키울 수 있다.",
-    "en": "The gap between the 52-week high and low since listing has been very wide, with the shares falling into the KRW60,000s range in late July 2026 before rebounding, reflecting elevated volatility. Freely tradable shares equaled 32.0% of the total post-listing, a supply overhang noted at the time, and financial investors have reportedly continued selling stakes. Such supply-demand factors can amplify share price volatility independent of earnings."
+    "ko": "세계 1위 식각장비사인 램리서치가 제기한 특허침해 소송에서 5월 특허심판원은 씨엠티엑스에 유리한 판단을 내렸으나, 램리서치가 6월 특허법원에 항소하면서 분쟁은 계속되고 있다. 항소심에서 1차 결과가 뒤집힐 가능성은 통상 제한적이라는 평가가 있으나, 최종 확정 전까지는 일부 글로벌 고객의 신규 진입 과정에서 잠재적 노이즈로 작용할 수 있다. 장비사와의 애프터마켓 경쟁 구도가 법적 분쟁으로 표면화된 사례로 볼 수 있다.",
+    "en": "In a patent infringement suit brought by Lam Research, the world's top etch equipment maker, the Korean Intellectual Property Trial and Appeal Board ruled in CMTX's favor in May, but Lam Research appealed to the Patent Court in June, keeping the dispute alive. While the odds of the first-round outcome being reversed on appeal are generally considered limited, the unresolved case could pose potential noise for onboarding some new global customers until finalized. The dispute illustrates how the aftermarket competitive dynamic with equipment makers has surfaced as legal conflict."
    }
   },
   {
    "title": {
-    "ko": "고객 집중과 다변화의 과도기",
-    "en": "Transitional Phase from Customer Concentration to Diversification"
+    "ko": "잠재적 희석 및 자회사 상장 관련 구조",
+    "en": "Potential Dilution and Subsidiary Listing-Related Structure"
    },
    "body": {
-    "ko": "실리콘파츠 매출 비중이 97% 이상으로 제품 다변화가 제한적이며, 삼성전자 매출 비중이 상대적으로 높은 구조에서 TSMC·마이크론 등으로의 다변화가 진행 중인 단계다. 신규 고객향 매출이 계획대로 확대되지 않을 경우 성장률 둔화 우려가 남는다. 셀릭의 FI 지분 처리 이슈(2026년 12월 시한) 등 지배구조 관련 불확실성도 존재한다.",
-    "en": "With silicon parts accounting for over 97% of revenue, product diversification remains limited, and diversification away from a relatively high concentration in Samsung Electronics toward TSMC, Micron and others is still in progress. If sales to new customers fail to expand as planned, concerns about a growth slowdown could persist. Governance-related uncertainty also exists around the resolution of Celic's FI equity stake by the end-2026 deadline."
+    "ko": "지난 7월 임시주주총회에서 CB·BW 발행한도가 확대돼 향후 자금조달 시 잠재적 지분 희석 가능성이 커졌다. 회사는 현재 발행 계획이 없다고 밝혔지만, 인수합병 등 전략적 필요가 생기면 활용될 수 있는 구조다. 또한 자회사 셀릭은 재무적 투자자와의 계약에 따라 특정 시한까지 상장이 이뤄지지 않으면 합병 요구나 지분 매수 청구가 발생할 수 있는 조건을 안고 있어, 지배구조상 잠재 변수로 남아 있다.",
+    "en": "An expanded CB/BW issuance ceiling approved at the July extraordinary general meeting raises the potential for future equity dilution if utilized. The company has stated it currently has no issuance plan, but the structure remains available for strategic needs such as M&A. In addition, subsidiary Celeg carries contractual terms with financial investors under which a merger demand or share buyback request could arise if it fails to list by a certain deadline, leaving this as a potential governance variable."
    }
   }
  ],
  "risks": [
   {
    "cat": {
-    "ko": "재무/회계 리스크",
-    "en": "Financial/Accounting Risk"
+    "ko": "법적 리스크",
+    "en": "Legal Risk"
    },
    "body": {
-    "ko": "2025년 대규모 순손실을 유발한 RCPS 파생상품평가손실은 현금유출이 없는 회계상 항목이었으나, 향후 유사한 금융상품 발행이나 지분 구조 변경 시 재무제표에 다시 영향을 줄 수 있다. 자회사 셀릭의 FI 지분(액면 290억원)은 2026년 12월 31일까지 기업공개가 이뤄지지 않을 경우 주주간 약정에 따라 재매입 또는 합병이 가능한 것으로 파악돼, 처리 방식에 따라 재무적 영향이 달라질 수 있다.",
-    "en": "The RCPS derivative valuation loss that drove the large 2025 net loss was a non-cash accounting item, but similar financial instrument issuances or equity structure changes could again affect the financial statements. Subsidiary Celic's FI equity stake (KRW29bn face value) is subject to a shareholder agreement allowing repurchase or merger if an IPO does not occur by December 31, 2026, meaning the financial impact could vary depending on how this is resolved."
+    "ko": "램리서치와의 특허침해 소송이 특허법원 항소심으로 이어지고 있어 최종 결론까지 시일이 걸릴 전망이다. 분쟁 대상 부품이 전체 포트폴리오의 일부라 해도, 결과에 따라 특정 고객·제품군의 공급 조건에 영향을 줄 가능성이 있다.",
+    "en": "The patent infringement suit with Lam Research has moved to a Patent Court appeal, meaning a final outcome will take time. Even though the disputed parts represent only part of the overall portfolio, the outcome could affect supply terms for specific customers or product lines."
    }
   },
   {
    "cat": {
-    "ko": "고객 집중 리스크",
-    "en": "Customer Concentration Risk"
+    "ko": "고객 및 매출 구조 리스크",
+    "en": "Customer and Revenue Structure Risk"
    },
    "body": {
-    "ko": "실리콘파츠 매출 비중이 절대적으로 높고 특정 고객사 의존도가 상대적으로 큰 구조에서, 고객사의 캐파 조정이나 발주 지연이 실적에 직접적인 영향을 줄 수 있다. TSMC·마이크론 등 해외 고객 확대가 목표대로 진행되지 않을 경우 성장 스토리의 핵심 근거가 약화될 수 있다.",
-    "en": "With an overwhelming concentration in silicon parts revenue and relatively high dependence on specific customers, capacity adjustments or order delays at those customers could directly affect performance. If expansion with overseas customers such as TSMC and Micron does not proceed as planned, a key pillar of the growth narrative could weaken."
+    "ko": "TSMC향 양산 매출은 2025년 기준 약 50억원 수준으로 아직 초기 단계이며, 마이크론·SK하이닉스 등 신규 고객군의 매출 기여도 확대가 진행 중인 단계다. 특정 고객사 의존도가 낮아지는 방향으로 다변화가 진행되고 있으나 아직 완결된 상태는 아니다.",
+    "en": "Mass-production revenue from TSMC was around KRW 5bn in 2025, still an early stage, while contribution from newer customer groups such as Micron and SK Hynix is still in the process of scaling up. Diversification away from reliance on any single customer is underway but not yet complete."
    }
   },
   {
    "cat": {
-    "ko": "법적/경쟁 리스크",
-    "en": "Legal/Competitive Risk"
+    "ko": "자본구조 및 지배구조 리스크",
+    "en": "Capital Structure and Governance Risk"
    },
    "body": {
-    "ko": "글로벌 반도체 장비업체 램리서치와의 특허 소송에서 씨엠티엑스가 연이어 승소했다고 밝힌 바 있으나, 상대방의 항소나 추가 소송 제기 가능성을 배제할 수 없다. 하나머티리얼즈, 케이엔제이, 티씨케이 등 국내 경쟁사들도 유사 사업영역에서 실적 성장세를 보이고 있어 경쟁 강도가 높아질 가능성이 있다.",
-    "en": "CMTX has stated it won consecutive patent litigation victories against global equipment maker Lam Research, but the possibility of an appeal or further litigation cannot be ruled out. Domestic competitors such as Hana Materials, KNJ and TCK are also showing growth in similar business areas, raising the potential for intensifying competition."
+    "ko": "CB·BW 발행한도 확대로 향후 자금조달 시 지분 희석 가능성이 상존하며, 자회사 셀릭의 재무적 투자자 계약에 따른 상장·합병 관련 조건도 지배구조상 변수로 남아 있다. 상장 초기 보호예수 해제에 따른 물량 출회 가능성도 주가 변동성 요인으로 지목된 바 있다.",
+    "en": "The expanded CB/BW issuance ceiling leaves potential equity dilution on the table for future fundraising, and contractual listing/merger conditions tied to subsidiary Celeg's financial investors remain a governance variable. Share supply from post-listing lockup expirations has also been cited as a source of price volatility."
    }
   }
  ],
  "checkpoints": [
   {
    "when": {
-    "ko": "2026년 9월 초",
-    "en": "Early September 2026"
+    "ko": "2026년 11월 중",
+    "en": "Around November 2026"
    },
    "what": {
-    "ko": "인베스팅닷컴은 씨엠티엑스가 2026년 9월 2일 다음 실적 보고서를 발표할 예정이라고 안내했다. 분기 매출·영업이익 성장세가 이어지는지, 지배주주순이익이 흑자 기조를 유지하는지 확인이 필요하다.",
-    "en": "Investing.com indicated CMTX is scheduled to release its next earnings report on September 2, 2026. It is worth checking whether quarterly revenue and operating profit growth continues and whether net income to owners remains positive."
+    "ko": "2026년 3분기 실적 공시 예정 - 매출 성장 흐름(11분기 연속 성장) 지속 여부와 영업이익률 추이를 확인할 시점이다.",
+    "en": "Q3 2026 earnings disclosure expected - a key point to check whether the revenue growth streak (11 straight quarters) continues and how the operating margin trends."
    }
   },
   {
    "when": {
-    "ko": "2026년 하반기",
-    "en": "Second half of 2026"
+    "ko": "2026년 4분기~2027년 상반기 중",
+    "en": "Q4 2026 through H1 2027"
    },
    "what": {
-    "ko": "구미 2공장(M캠퍼스) B동 준공 일정과 신규 캐파 투입 시점을 확인해야 한다. 계획대로 진행될 경우 2027년 매출 성장의 기반이 될 수 있다.",
-    "en": "The completion schedule for Gumi Plant 2's (M Campus) Building B and the timing of new capacity coming online should be monitored, as on-schedule progress could underpin 2027 revenue growth."
+    "ko": "램리서치와의 특허법원 항소심 진행 상황 - 결과에 따라 애프터마켓 신규 고객 진입에 영향을 줄 수 있어 공시 여부를 계속 확인할 필요가 있다.",
+    "en": "Progress of the Patent Court appeal in the Lam Research dispute - the outcome could affect aftermarket entry with new customers, so continued monitoring of disclosures is warranted."
    }
   },
   {
    "when": {
-    "ko": "2026년 12월 31일",
-    "en": "December 31, 2026"
+    "ko": "2026년 12월 말까지",
+    "en": "By end of December 2026"
    },
    "what": {
-    "ko": "자회사 셀릭의 FI 지분에 대한 기업공개 시한으로, 미달성 시 주주간 약정에 따른 재매입 또는 합병 여부가 결정될 수 있어 관련 공시를 확인해야 한다.",
-    "en": "This is the IPO deadline for subsidiary Celic's FI equity stake; if not met, a repurchase or merger could be triggered under the shareholder agreement, warranting a check of related disclosures."
+    "ko": "생산능력 증설(기존 대비 약 2배 목표) 완료 여부와 구미 제2공장(M캠퍼스) 가동 일정 - 물량 대응 능력 확보 여부를 가늠할 지표다.",
+    "en": "Whether the targeted capacity expansion (roughly doubling prior levels) is completed and the operational timeline for the second Gumi plant (M Campus) - a gauge of whether volume-handling capacity has been secured."
    }
   },
   {
    "when": {
-    "ko": "분기별 공시 시점",
-    "en": "Each quarterly disclosure"
+    "ko": "2026년 내 수시",
+    "en": "On an ongoing basis through 2026"
    },
    "what": {
-    "ko": "마이크론향 매출이 2025년 약 100억원에서 2026년 약 200억원으로 늘어난다는 증권가 전망의 실제 진척 여부와 TSMC·키옥시아·SK하이닉스향 매출 비중 변화를 확인해야 한다.",
-    "en": "Actual progress toward brokerage forecasts of Micron-related sales rising from about KRW10bn in 2025 to about KRW20bn in 2026, and changes in the revenue mix from TSMC, Kioxia and SK hynix, should be verified."
-   }
-  },
-  {
-   "when": {
-    "ko": "수시 공시",
-    "en": "Ongoing disclosures"
-   },
-   "what": {
-    "ko": "램리서치와의 특허 소송 관련 항소 또는 추가 절차 여부, 그리고 재무적 투자자(FI)들의 지분 매각 동향을 확인해야 한다.",
-    "en": "Any appeal or further proceedings in the Lam Research patent litigation, as well as trends in financial investors' stake sales, should be monitored."
+    "ko": "확대된 CB·BW 발행한도의 실제 활용(발행) 여부 및 인수합병 관련 공시 - 발행 시 지분 희석 규모와 목적을 확인해야 한다.",
+    "en": "Whether the expanded CB/BW issuance ceiling is actually utilized and any related M&A disclosures - if issued, the scale and purpose of potential dilution should be checked."
    }
   }
  ],
  "verdict": {
   "body": {
-   "ko": "씨엠티엑스는 2025년 매출 1,605.6억원, 영업이익 517.8억원으로 외형과 수익성에서 사상 최대 실적을 기록했으며, 4개 분기 연속 매출 성장이 이어지는 등 영업 펀더멘털은 견조한 흐름을 보이고 있다. 다만 같은 해 지배주주순손실 215.0억원은 RCPS 파생상품평가손실이라는 회계상 요인에서 비롯됐으며, 회사 측은 이 손실이 재발하지 않을 것이라고 설명했으나 투자자 입장에서는 영업이익과 순이익 간 괴리를 이해하고 판단할 필요가 있다. 국내 유일 TSMC 1차 벤더, 삼성전자 1차 협력사 지위와 마이크론·키옥시아 등으로의 고객 다변화는 강세 요인으로 꼽히지만, 실리콘파츠에 편중된 제품 구성과 특정 고객 의존도, 상장 초기의 유통물량·FI 엑시트 이슈는 약세 요인으로 병존한다. 증권가는 2026년 실적에 대해 낙관적인 전망치를 제시하고 있으나 이는 각 사의 추정치이며 구미 2공장 증설, 신규 고객향 양산 확대 등 다수의 확인 과제가 남아있다. 배당은 현재 지급되지 않고 있어 배당수익률 측면의 투자 매력은 제한적인 것으로 파악된다. 향후 분기 실적 발표와 증설·고객 확대 관련 공시를 통해 성장 스토리의 실현 여부를 지속적으로 점검할 필요가 있다.",
-   "en": "CMTX posted record 2025 results with revenue of KRW160.6bn and operating profit of KRW51.8bn, and its operating fundamentals appear solid with four consecutive quarters of revenue growth. However, the KRW21.5bn net loss to owners in the same year stemmed from an accounting factor—RCPS derivative valuation losses—and while the company has stated this should not recur, investors need to understand the gap between operating profit and net income when forming their own judgment. The company's status as the sole domestic first-tier TSMC vendor and a first-tier Samsung Electronics partner, along with diversification toward Micron and Kioxia, are cited as positive factors, but these coexist with bearish considerations such as heavy concentration in silicon parts, dependence on specific customers, and post-IPO float and FI exit issues. Brokerages have offered optimistic 2026 forecasts, though these are firm-specific estimates, and multiple items—including the Gumi Plant 2 expansion and ramp-up with new customers—require ongoing confirmation. The company currently pays no dividend, limiting the yield-based investment appeal. Continued monitoring of quarterly earnings releases and disclosures related to expansion and customer diversification will be needed to assess whether the growth narrative materializes."
+   "ko": "씨엠티엑스는 반도체 초미세 공정 전환에 따른 애프터마켓 구조적 성장의 직접적 수혜 구도 속에서, 삼성전자·TSMC·마이크론·SK하이닉스로 이어지는 글로벌 고객 포트폴리오를 확보하며 11분기 연속 매출 성장을 이어가고 있다. 2025년 연간 영업이익은 사상 최대치를 기록했고 영업이익률도 개선됐지만, 상장 전 RCPS 평가손실로 지배주주 순손실을 기록하며 영업실적과 순이익 사이 괴리가 발생했다. 상장 이후에는 자본구조가 정상화되고 순이익도 영업이익 흐름에 근접하는 모습을 보이고 있다. 다만 램리서치와의 특허분쟁이 특허법원 항소심으로 이어지고 있고, CB·BW 발행한도 확대와 자회사 셀릭의 상장·합병 관련 계약 조건 등 자본구조·지배구조 변수도 함께 남아 있다. 증설을 통한 생산능력 확대와 고객 다변화가 계획대로 진행되는지, 그리고 법적 분쟁의 최종 결론이 어떻게 나는지가 향후 실적과 밸류에이션 해석에 함께 영향을 줄 변수로 판단된다. 투자자는 영업 지표의 개선 흐름과 비영업적 손익 요인, 법적·자본구조 리스크를 함께 살펴볼 필요가 있다.",
+   "en": "CMTX sits in a position to directly benefit from structural aftermarket growth driven by the shift to more advanced semiconductor nodes, having secured a global customer portfolio spanning Samsung Electronics, TSMC, Micron, and SK Hynix while extending its streak to 11 consecutive quarters of revenue growth. Full-year 2025 operating profit hit a record high with an improved margin, yet a pre-listing RCPS valuation loss drove a net loss attributable to owners, creating a gap between operating results and the bottom line. Since listing, the capital structure has normalized and net income has moved closer to tracking the operating profit trend. That said, the patent dispute with Lam Research has moved to a Patent Court appeal, and capital-structure and governance variables remain, including the expanded CB/BW issuance ceiling and contractual listing/merger terms tied to subsidiary Celeg. Whether capacity expansion and customer diversification proceed as planned, and how the legal dispute is ultimately resolved, are factors likely to jointly shape future earnings and valuation interpretation. Investors may want to weigh the improving operating trend against non-operating income items and legal and capital-structure risks together."
   }
  },
  "sources": [
   "https://m.thinkpool.com/compDiscuss/cont/1024822",
-  "https://thevc.kr/cmtx",
   "https://m.thinkpool.com/compDiscuss/cont/1024194",
-  "https://m.thinkpool.com/stockDiscuss/388210/cont/11865964",
-  "https://kbthink.com/securities-view.html?docId=20260128152746687K",
-  "https://www.sedaily.com/NewsView/2H0J0UWXYV",
-  "https://finance.finup.co.kr/Stock/388210",
+  "https://alphadistill.com/report/1976",
   "https://file.alphasquare.co.kr/media/pdfs/company-report/20260428_388210_jongsun.park_2587.pdf",
-  "https://www.eugenefn.com/common/files/amail//20251030_B_jongsun.park_2470.pdf",
-  "https://stockplus.com/m/stocks/KOREA-A388210",
-  "https://kr.investing.com/equities/cmtx-co-ltd",
-  "https://www.digitaltoday.co.kr/news/articleView.html",
+  "https://m.thinkpool.com/stockDiscuss/388210/cont/11865964",
+  "https://www.valueline.co.kr/finance/summary/388210",
   "https://alphasquare.co.kr/home/stock-summary?code=388210",
-  "http://www.dailyinvest.kr/news/articleView.html?idxno=70165",
+  "https://kbthink.com/securities-view.html?docId=20260128152746687K",
+  "https://thevc.kr/cmtx",
+  "https://stockplus.com/m/stocks/KOREA-A388210",
+  "https://www.thelec.kr/news/articleView.html?idxno=56715",
+  "https://zdnet.co.kr/view/?no=20260818171032",
   "https://www.dailyinvest.kr/news/articleView.html?idxno=70700",
-  "https://www.judal.co.kr/?view=stockAI&shareToken=Ld4qHzuAYMSw3ph0",
-  "https://www.stocktitan.net/news/CTXXF/cematrix-announces-record-2026-second-quarter-2026-first-half-gsbta1vczuwi.html",
-  "https://www.fetv.co.kr/news/article.html?no=215389"
+  "https://file.alphasquare.co.kr/media/pdfs/market-report/%EC%94%A8%EC%97%A0%ED%8B%B0%EC%97%91%EC%8A%A41Q26P20260514%EC%9C%A0%EC%A7%84%ED%88%AC%EC%9E%90%EC%A6%9D%EA%B6%8C.",
+  "http://www.dailyinvest.kr/news/articleView.html?idxno=70165",
+  "https://kr.investing.com/equities/cmtx-co-ltd",
+  "https://theviewers.co.kr/View.aspx?No=4021349",
+  "https://zdnet.co.kr/view/?no=20260806142325"
  ],
  "v": 2,
  "model": "claude-sonnet-5",
@@ -233,11 +223,11 @@
   "전자·부품"
  ],
  "market": "코스닥",
- "reportDate": "2026-08-18",
- "reportTs": "2026-08-18 00:50",
- "dataDate": "20260824",
+ "reportDate": "2026-09-05",
+ "reportTs": "2026-09-05 05:51",
+ "dataDate": "20260904",
  "quant": {
-  "asOf": "2026-08-24",
+  "asOf": "2026-09-04",
   "fs_basis": "연결(CFS) · DART 공시 확정치 · 지배주주 기준 순이익",
   "annual": [
    {
@@ -255,6 +245,23 @@
     "opm": 32.3,
     "roe": -14.1,
     "debt_ratio": 51.0
+   },
+   {
+    "year": 2024,
+    "rev": 108665913336,
+    "op": 23639028765,
+    "np": 13503664232,
+    "np_owner": 13516475464,
+    "equity": -37955676268,
+    "equity_owner": -38475338487,
+    "equity_nci": 519662219,
+    "liab": 218312543858,
+    "cfo": 35490332212,
+    "eps_basic": 3436,
+    "src": "전기 비교치",
+    "opm": 21.8,
+    "roe": null,
+    "debt_ratio": -575.2
    }
   ],
   "quarterly": [
@@ -290,14 +297,14 @@
    }
   ],
   "valuation": {
-   "price": 70000,
-   "mcap": 0.6758,
+   "price": 74800,
+   "mcap": 0.7222,
    "shares": 9654438,
    "total_shares": 9272688,
    "wavg_shares": 9548163,
-   "per": 19.96,
+   "per": 21.329,
    "eps": 3507,
-   "pbr": 3.231,
+   "pbr": 3.4526,
    "bps": 21665,
    "roe_ttm": 27.9,
    "ttm_window": "2025Q3~2026Q2",
@@ -305,7 +312,7 @@
    "ccy": "KRW",
    "bps_src": "자체",
    "eps_src": "공시",
-   "pbr_krx": 3.64,
+   "pbr_krx": 3.89,
    "bps_krx": 19207.0,
    "basis": "PER·EPS·PBR·BPS 모두 자체 산출(네이버·토스와 동일 방식) · 배당은 DART 공시 주당현금배당금(보완:KRX) ÷ 현재가",
    "dps": 0.0,

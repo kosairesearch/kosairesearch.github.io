@@ -1,179 +1,159 @@
 {
  "title": {
-  "ko": "장기보험 회복과 배당 공백의 교차점",
-  "en": "Long-term line recovers, dividend gap persists"
+  "ko": "보험손익 회복과 배당 재개 조건",
+  "en": "Underwriting Recovery, and the Conditions for Restarting Dividends"
  },
  "lead": {
-  "ko": "장기보험 예실차 개선과 일회성 환입으로 이익은 회복 흐름을 보이는 반면, 해약환급금준비금에 막힌 배당 공백과 자동차보험 적자가 같은 시점에 공존하는 구간이다.",
-  "en": "Earnings are recovering on better long-term insurance experience variance and one-off reversals, yet the company simultaneously faces a dividend freeze caused by surrender-value reserves and a loss-making auto book."
+  "ko": "장기보험 예실차 개선과 계리가정 관련 환입으로 보험손익이 빠르게 회복된 반면, 배당 재개는 해약환급금준비금 제도 변경 여부에 달려 있는 국면이다.",
+  "en": "Underwriting profit has rebounded fast on better claims experience in long-term insurance and actuarial-assumption reversals, while any dividend restart hinges on whether the surrender-value reserve rule is changed."
  },
  "keypoints": [
   {
-   "ko": "2025년 연간(연결) 보험수익 14조1,429억원, 영업이익 1조2,610억원, 지배주주 순이익 1조198억원으로 3년 연속 이익이 늘었다.",
-   "en": "For FY2025 (consolidated), insurance revenue was 14.14 trillion won, operating profit 1.26 trillion won and net profit attributable to owners 1.02 trillion won, a third straight year of profit growth."
+   "ko": "연결 기준 2025년 보험수익 14조1,429억원, 영업이익 1조2,610억원, 지배주주 순이익 1조198억원으로 2023년(순이익 6,078억원) 이후 이익 회복 흐름이 이어졌다.",
+   "en": "On a consolidated basis, 2025 insurance revenue was KRW 14.14 trillion, operating profit KRW 1.26 trillion and net profit attributable to owners KRW 1,019.8 billion, extending the recovery from 2023 (net profit KRW 607.8 billion)."
   },
   {
-   "ko": "분기 흐름은 변동성이 크다. 2025년 3분기 영업이익 7,077억원으로 정점을 찍은 뒤 4분기에 영업손실 1,279억원·순손실 1,145억원을 냈고, 2026년 1분기 영업이익 3,245억원·순이익 2,364억원으로 흑자 전환했다.",
-   "en": "Quarterly swings are wide: after peaking at 707.7 billion won of operating profit in 3Q25, the company posted an operating loss of 127.9 billion won and a net loss of 114.5 billion won in 4Q25, then returned to profit in 1Q26 with 324.5 billion won operating profit and 236.4 billion won net profit."
+   "ko": "분기 흐름은 변동성이 크다. 2025년 3분기 영업이익 7,077억원 뒤 4분기 -1,279억원 적자, 2026년 1분기 3,245억원, 2분기 5,287억원으로 되돌림이 반복됐다.",
+   "en": "Quarterly results are volatile: operating profit of KRW 707.7 billion in 3Q25 was followed by a KRW -127.9 billion loss in 4Q25, then KRW 324.5 billion in 1Q26 and KRW 528.7 billion in 2Q26."
   },
   {
-   "ko": "회사 발표(2026년 8월 14일, 별도 기준)에 따르면 2026년 2분기 순이익은 3,918억원으로 전년 동기보다 58.2% 증가했고 상반기 누적은 6,151억원으로 36.4% 늘었다.",
-   "en": "Per the company's disclosure on Aug 14, 2026 (separate basis), 2Q26 net profit rose 58.2% year on year to 391.8 billion won and first-half net profit rose 36.4% to 615.1 billion won."
+   "ko": "2026년 상반기 별도 기준 장기보험손익은 6,139억원으로 전년 동기 대비 105.7% 늘었고(2026년 8월 공시 기반 보도), 회사는 보험금 예실차 적자 축소와 계리가정 선진화 가이드라인 반영에 따른 일회성 환입을 이유로 설명했다.",
+   "en": "First-half 2026 separate-basis long-term insurance profit rose 105.7% year on year to KRW 613.9 billion (per August 2026 disclosure-based reports), which the company attributed to a smaller gap between expected and actual claims plus a one-off reversal from the upgraded actuarial-assumption guidelines."
   },
   {
-   "ko": "6월 말 CSM 잔액은 9조8,944억원으로 전년 말 대비 11.2% 증가했고, 킥스(K-ICS) 비율은 190.1%에서 209.0%로 18.9%포인트 상승했다. 반면 상반기 신계약 CSM은 9,509억원으로 전년 동기보다 5.4% 감소했다.",
-   "en": "CSM stood at 9.89 trillion won at end-June, up 11.2% from year-end, while the K-ICS ratio climbed from 190.1% to 209.0%. However, new-business CSM in the first half fell 5.4% year on year to 950.9 billion won."
+   "ko": "6월 말 계약서비스마진(CSM) 잔액은 9조8,944억원, 지급여력(K-ICS)비율은 209.0%로 지난해 말보다 각각 11.2% 증가·18.9%포인트 상승했다(2026년 8월 보도).",
+   "en": "As of end-June, the contractual service margin stood at KRW 9.89 trillion and the K-ICS solvency ratio at 209.0%, up 11.2% and 18.9 percentage points respectively from end-2025 (August 2026 reports)."
   },
   {
-   "ko": "배당은 2023 회계연도 주당 2,063원 이후 중단된 상태이며 올해도 무배당 기조가 이어질 전망이고, 4월에 자사주 415만주(발행주식의 약 4.64%, 1,258억원)를 소각했다.",
-   "en": "Cash dividends have been suspended since the FY2023 payout of 2,063 won per share, and no dividend is expected this year either, while 4.15 million treasury shares (about 4.64% of shares outstanding, 125.8 billion won) were cancelled in April."
+   "ko": "다만 2024년 결산부터 배당이 중단된 상태이며, 2분기 말 배당가능이익은 여전히 마이너스 6,600억원으로 제도 변경 없이는 연말에도 마이너스가 예상된다는 회사 설명이 있었다(2026년 8월 보도).",
+   "en": "However, dividends have been suspended since the 2024 fiscal-year settlement, and distributable income was still negative KRW 660 billion at end-2Q26, with the company indicating it may remain negative at year-end absent a rule change (August 2026 reports)."
   }
  ],
  "business": {
-  "ko": "현대해상은 장기보험·일반보험·자동차보험을 축으로 하는 종합 손해보험사로, 보험영업손익과 자산운용에서 발생하는 투자손익이 이익의 두 기둥이다. 2026년 상반기 별도 기준 부문 손익을 보면 보험손익 7,058억원 가운데 장기보험이 6,139억원, 일반보험이 1,022억원, 자동차보험은 102억원 적자로, 이익 구조가 장기보험에 크게 기울어져 있다. 장기보험은 전체 보험손익에서 가장 큰 비중을 차지하는 부문이어서 예실차와 손실부담계약 관련 비용의 방향이 전사 실적을 사실상 좌우한다. 대표 상품군은 어린이·태아보험으로, 회사는 굿앤굿 어린이종합보험으로 시장 점유율 1위를 유지하고 있고 KB손해보험과 메리츠화재가 2위권 경쟁을 벌이고 있다. 2004년 업계 최초 출시 이후 2026년 3월까지 약 587만건이 판매됐다는 점은 장기 유지 계약 기반과 교차판매 채널의 토대로 작용한다. 자동차보험은 규모 확보와 손해율 방어가 동시에 요구되는 부문으로, 요율 인상 폭이 정책·여론 변수에 크게 좌우된다. 경쟁 구도는 삼성화재·DB손해보험·메리츠화재·KB손해보험과의 5강 체제이며, 규모에서는 상위사에 밀리지만 어린이보험과 장기 인보험 특화 포지션을 유지하고 있다. 최근 전략은 물량 확대보다 수익성 관리에 가까워, 회사는 판매 물량 확대보다 높은 CSM 배수 상품군 중심의 포트폴리오 관리로 수익성과 자본적정성을 방어하는 데 무게를 두고 있다. 자산운용 측면에서는 채권 비중이 큰 포트폴리오 특성상 시장금리 방향이 투자손익과 자본비율에 동시에 영향을 준다.",
-  "en": "Hyundai Marine & Fire is a composite non-life insurer built on three underwriting lines - long-term, general (commercial) and auto - with underwriting profit and investment income forming the two pillars of earnings. On a separate basis in 1H26, of 705.8 billion won in underwriting profit, long-term insurance contributed 613.9 billion won and general insurance 102.2 billion won, while auto insurance recorded a 10.2 billion won loss, showing a profit mix heavily tilted to the long-term book. Long-term insurance is the largest component of total underwriting profit, so the direction of experience variance and onerous-contract costs effectively drives company-wide results. Its signature franchise is children's and prenatal insurance: the company holds the number-one market share with its Good & Good children's comprehensive policy, with KB Insurance and Meritz Fire competing for second place. Since launching the industry's first such product in 2004, roughly 5.87 million policies had been sold through March 2026, underpinning a persistent in-force base and cross-selling channel. Auto insurance requires both scale and loss-ratio discipline, and pricing is heavily influenced by policy and public-opinion variables. The competitive landscape is a five-way race with Samsung Fire, DB Insurance, Meritz Fire and KB Insurance; the company trails the leaders on scale but retains a specialised position in children's and long-term health protection. Recent strategy leans toward profitability over volume: management has prioritised portfolio management centred on higher CSM-multiple products to defend profitability and capital adequacy rather than expanding sales volume. On the asset side, a bond-heavy portfolio means market rates simultaneously affect investment income and the capital ratio."
+  "ko": "현대해상은 장기보험·자동차보험·일반보험의 세 보험 부문과 자산운용(투자) 부문으로 구성된 국내 대형 손해보험사로, 삼성화재·DB손해보험·KB손해보험·메리츠화재와 함께 이른바 손보 빅5로 분류된다(한국금융신문 2026년 8월). 이익 기여의 중심은 장기보험이며, 2026년 상반기 별도 기준 부문별 손익은 장기보험 6,139억원(전년 동기 대비 105.7% 증가), 일반보험 1,022억원(38.9% 증가), 투자손익 1,057억원(55.3% 감소)으로 공시 기반 보도가 전했다. 자동차보험은 상반기 전체로는 적자였으나 2026년 2분기에는 흑자로 돌아섰다는 언론 정리가 나왔다(아시아경제 2026년 8월). 회사는 위험보험료에서 실손의료보험이 차지하는 비중이 업계에서 가장 높은 편으로 거론돼(대신증권 리포트 인용 보도, 2025년 12월), 실손 손해율과 제도 변화가 손익에 직접 반영되는 구조다. 자동차보험에서도 규모가 큰 사업자로, 2025년 지급보험금은 3조1,620억원으로 삼성화재·DB손해보험에 이어 세 번째로 집계됐다(CEO스코어데일리 2026년 4월). 연결 실적의 대부분은 별도 기준 보험영업에서 나오며, 2026년 상반기 별도 순이익 6,151억원과 연결 지배주주 순이익 6,547억원의 차이가 자회사 기여분을 가늠하게 한다(2026년 8월 공정공시 기반 보도). 경영 기조는 점유율 확대보다 수익성 중심 상품 포트폴리오 재편에 맞춰져 있고, 회사는 손익우량계약 중심의 질적 성장 기조를 유지한다고 밝혔다(2026년 8월). 판매 채널 측면에서는 법인보험대리점(GA) 수수료 규제 강화가 업계 전반의 신계약비 경쟁 구도를 바꾸는 변수로 거론된다(IB토마토 2026년 8월). 결과적으로 사업 구조는 '장기보험 언더라이팅이 손익을 좌우하고, 자동차·일반보험과 투자부문이 변동성을 더하는' 형태에 가깝다.",
+  "en": "Hyundai Marine & Fire Insurance is a large Korean non-life insurer built on three underwriting segments, long-term, auto and general insurance, plus an investment book, and it is grouped with Samsung Fire & Marine, DB Insurance, KB Insurance and Meritz Fire & Marine as one of the country's top five non-life players (Korea Financial News, August 2026). Long-term insurance drives earnings: for first-half 2026 on a separate basis, disclosure-based reports put long-term insurance profit at KRW 613.9 billion (up 105.7% year on year), general insurance at KRW 102.2 billion (up 38.9%) and investment profit at KRW 105.7 billion (down 55.3%). Auto insurance was loss-making for the half as a whole but turned to profit in 2Q26, according to press coverage (Asia Economy, August 2026). The company has been described as having the industry's highest share of indemnity health insurance within risk premiums (reported citing a Daishin Securities note, December 2025), so loss ratios and regulatory changes in that line feed directly into earnings. It is also a sizeable auto underwriter, with 2025 auto claims paid of KRW 3.16 trillion, third after Samsung Fire & Marine and DB Insurance (CEO Score Daily, April 2026). Most consolidated earnings come from the separate-basis insurance operation; the gap between separate-basis first-half 2026 net profit of KRW 615.1 billion and consolidated net profit attributable to owners of KRW 654.7 billion indicates the subsidiary contribution (based on August 2026 fair-disclosure reports). Management has prioritized reshaping the product mix toward profitability rather than chasing market share, and the company said it would maintain quality-led growth centered on profitable contracts (August 2026). On distribution, tighter commission rules for general agencies are cited as a variable reshaping industry-wide competition in new-business expenses (IB Tomato, August 2026). In short, the model is one where long-term underwriting sets the direction of earnings while auto, general insurance and the investment book add volatility."
  },
  "earnings": {
-  "ko": "연간 지표는 3년 연속 개선 흐름이다. 보험수익은 2023년 13조1,237억원에서 2024년 13조7,135억원, 2025년 14조1,429억원으로 늘었고, 영업이익은 7,882억원에서 1조2,441억원, 1조2,610억원으로, 지배주주 순이익은 6,078억원에서 8,505억원, 1조198억원으로 확대됐다. 다만 2025년의 이익 증가는 분기별로 매우 고르지 못했다. 2025년 영업이익은 1분기 2,837억원, 2분기 3,975억원, 3분기 7,077억원까지 확대된 뒤 4분기에 1,279억원 영업손실·1,145억원 순손실로 급반전했는데, 연말 계리가정 반영과 장기보험 관련 비용 인식이 집중된 결과로 해석된다. 회사는 앞서 독감 유행과 손실부담계약 관련 비용으로 장기보험 손익이 급감했다가 보험금 예실차 부담이 완화되며 반등했다고 설명한 바 있다. 2026년 1분기에는 보험수익 3조5,108억원, 영업이익 3,245억원, 지배주주 순이익 2,364억원으로 흑자 전환했다. 같은 분기 별도 기준 세부 내역을 보면 장기보험손익은 2,659억원으로 실손보험 요구자본 산출기준 변경에 따른 약 900억원의 손실비용 환입 효과가 있었고, 투자손익은 구조화채권·대체투자 평가손실로 61억원에 그쳤다. 2분기에는 장기보험 손익이 3,480억원으로 89.0% 증가(예실차 적자 축소와 계리가정 선진화 가이드라인 반영 일회성 환입)했고, 자동차보험 손익도 38억원으로 흑자 전환했으나 상반기 누적 투자손익은 1,058억원으로 전년 동기보다 55.3% 감소했다. 자본·현금흐름 측면에서는 자기자본이 2023년 6조554억원에서 2024년 4조7,434억원으로 줄었다가 2025년 5조1,575억원으로 회복됐고, 영업활동현금흐름은 2024년 1조3,937억원에서 2025년 3조5,271억원으로 크게 늘었다. 부채비율은 2023년 628.1%에서 2024년 923.0%, 2025년 877.8%로 보험부채 시가평가 특성상 높은 수준을 유지하고 있어, 이익의 질을 볼 때 보험손익과 투자손익, 일회성 요인을 분리해 읽을 필요가 있다.",
-  "en": "Annual metrics improved for three straight years. Insurance revenue rose from 13.12 trillion won in 2023 to 13.71 trillion in 2024 and 14.14 trillion in 2025; operating profit went from 788.2 billion won to 1,244.1 billion and 1,261.0 billion; and net profit attributable to owners expanded from 607.8 billion won to 850.5 billion and 1,019.8 billion. The 2025 gain was, however, very unevenly distributed across quarters. Operating profit built from 283.7 billion won in 1Q to 397.5 billion in 2Q and 707.7 billion in 3Q, then swung to a 127.9 billion won operating loss and 114.5 billion won net loss in 4Q, reflecting year-end actuarial assumption updates and concentrated long-term insurance cost recognition. The company had noted that long-term insurance profit collapsed on an influenza outbreak and onerous-contract costs, then rebounded as claims experience variance pressure eased. In 1Q26 it returned to profit with insurance revenue of 3,510.8 billion won, operating profit of 324.5 billion won and net profit attributable of 236.4 billion won. On a separate basis for the same quarter, long-term insurance profit of 265.9 billion won included roughly 90 billion won of loss-cost reversal from a change in required-capital calculation for indemnity health insurance, while investment income was only 6.1 billion won due to valuation losses on structured bonds and alternatives. In 2Q, long-term insurance profit rose 89.0% to 348.0 billion won on a narrower experience-variance deficit and a one-off reversal tied to advanced actuarial assumption guidelines, and auto insurance profit turned positive at 3.8 billion won, yet cumulative first-half investment income fell 55.3% year on year to 105.8 billion won. On capital and cash flow, equity declined from 6,055.4 billion won in 2023 to 4,743.4 billion in 2024 before recovering to 5,157.5 billion in 2025, and operating cash flow jumped from 1,393.7 billion won in 2024 to 3,527.1 billion in 2025. The liabilities-to-equity ratio moved from 628.1% in 2023 to 923.0% in 2024 and 877.8% in 2025, structurally high given fair-valued insurance liabilities, so earnings quality is best assessed by separating underwriting profit, investment income and one-off items."
+  "ko": "연결 기준 보험수익은 2022년 12조1,225억원에서 2023년 13조1,237억원, 2024년 13조7,135억원, 2025년 14조1,429억원으로 4년 연속 늘었지만 이익 궤적은 훨씬 울퉁불퉁했다. 영업이익은 2022년 1조7,920억원에서 2023년 7,882억원으로 크게 줄었다가 2024년 1조2,441억원, 2025년 1조2,610억원으로 되돌아왔고, 지배주주 순이익도 2023년 6,078억원을 저점으로 2024년 8,505억원, 2025년 1조198억원까지 회복됐다. 분기 흐름을 보면 진폭이 더 뚜렷하다. 2025년 3분기 영업이익 7,077억원·순이익 6,298억원으로 정점을 찍은 뒤 4분기에는 영업이익 -1,279억원, 순이익 -1,145억원으로 적자를 냈고, 2026년 1분기 영업이익 3,245억원·순이익 2,364억원, 2분기 영업이익 5,287억원·순이익 4,183억원으로 다시 올라섰다. 보험수익이 분기당 3조5,000억~3조6,800억원 범위에 머물러 있는 동안 이익이 이렇게 흔들린 것은, 매출보다 계리적 가정 변경·손실부담계약 비용·보험금 예실차 같은 항목이 손익을 좌우한다는 뜻이다. 실제로 2026년 상반기 별도 기준 보험손익은 7,058억원으로 전년 동기 대비 81.6% 증가했는데, 회사는 예실차 적자 축소와 계리가정 선진화 가이드라인 반영에 따른 일회성 환입을 원인으로 설명했다(2026년 8월). 반대로 투자손익은 상반기 1,057억원으로 55.3% 줄어, 금리 상승 국면의 평가손실이 보험손익 개선을 일부 상쇄했다. 2025년 3분기부터 2026년 2분기까지 네 개 분기를 합산한 지배주주 순이익은 약 1조1,700억원으로, 2025년 연간치를 웃도는 수준이다. 재무구조 쪽에서는 자본총계가 2022년 9조5,081억원에서 2024년 4조7,434억원까지 줄었다가 2025년 5조1,575억원으로 늘었고, 부채비율은 2024년 923.0%에서 2025년 877.8%로 낮아졌으며 영업활동현금흐름은 2024년 1조3,937억원에서 2025년 3조5,271억원으로 확대됐다.",
+  "en": "On a consolidated basis, insurance revenue rose for four straight years, from KRW 12.12 trillion in 2022 to KRW 13.12 trillion in 2023, KRW 13.71 trillion in 2024 and KRW 14.14 trillion in 2025, yet the earnings path was far bumpier. Operating profit fell from KRW 1.79 trillion in 2022 to KRW 788.2 billion in 2023 before recovering to KRW 1.24 trillion in 2024 and KRW 1.26 trillion in 2025, while net profit attributable to owners bottomed at KRW 607.8 billion in 2023 and climbed to KRW 850.5 billion in 2024 and KRW 1,019.8 billion in 2025. The quarterly swings are even starker. After peaking at operating profit of KRW 707.7 billion and net profit of KRW 629.8 billion in 3Q25, the company posted a loss in 4Q25 with operating profit of KRW -127.9 billion and net profit of KRW -114.5 billion, then recovered to KRW 324.5 billion and KRW 236.4 billion in 1Q26 and KRW 528.7 billion and KRW 418.3 billion in 2Q26. With quarterly insurance revenue confined to a KRW 3.51-3.68 trillion range, such earnings swings show that actuarial assumption changes, onerous-contract costs and claims experience variances, rather than top-line growth, set the profit outcome. Consistent with that, separate-basis underwriting profit for first-half 2026 rose 81.6% year on year to KRW 705.8 billion, which the company attributed to a narrower claims experience deficit and a one-off reversal from the upgraded actuarial-assumption guidelines (August 2026). Investment profit moved the other way, down 55.3% to KRW 105.7 billion in the half, as valuation losses in a rising-rate environment partly offset the underwriting improvement. Summing the four quarters from 3Q25 through 2Q26, net profit attributable to owners was about KRW 1.17 trillion, above the full-year 2025 figure. On the balance sheet, total equity shrank from KRW 9.51 trillion in 2022 to KRW 4.74 trillion in 2024 before rising to KRW 5.16 trillion in 2025, the liability-to-equity ratio eased from 923.0% in 2024 to 877.8% in 2025, and operating cash flow expanded from KRW 1.39 trillion in 2024 to KRW 3.53 trillion in 2025."
  },
  "industry": {
-  "ko": "손해보험 업황은 부문별로 방향이 갈린다. 자동차보험은 하강 국면으로, 2026년 상반기 전체 손해보험사의 자동차보험 영업손익은 약 1,890억원 적자로 2020년 이후 처음 상반기 적자를 냈다. 대형 4개사의 상반기 누적 손해율 단순 평균은 84.5%로 전년 동기보다 1.9%포인트 올랐고, 현대해상은 84.1%였다. 업계는 손해율 80% 안팎을 손익분기점으로 보는데, 올해 보험료가 5년 만에 평균 1% 안팎 인상됐지만 2022년부터 4년 연속 이어진 인하 누적 폭과 정비수가·인건비 상승이 이를 상쇄했다. 제도 변수로는 경상환자가 8주를 초과해 치료받을 때 국토교통부 지정기관 심의를 거치게 하는 8주룰이 핵심이며, 이르면 9월 시행이 거론되지만 업계에서는 실질적 손해율 개선은 내년부터, 올해 연간 자동차보험 적자는 8,000억~9,000억원 수준이 될 것이라는 시각도 나온다. 반대로 장기보험은 회복 국면에 가깝다. 금리 상승이 자본비율에는 우호적으로 작동해 6월 말 킥스 비율이 209.0%로 지난해 말보다 18.9%포인트 상승했지만, 채권 평가손실을 통해 투자손익 변동성을 키울 수 있다는 점도 함께 지적된다. 경쟁사 대비 포지션에서는 상반기 누적 손해율이 대형 5개사 중 메리츠화재만 개선됐고 나머지 4개사는 모두 상승했다는 점에서 자동차 부문 부담은 업계 공통 변수에 가깝다.",
-  "en": "Non-life industry conditions diverge by line. Auto insurance is in a downcycle: the industry's auto underwriting result was a loss of about 189 billion won in 1H26, the first first-half loss since 2020. The simple average cumulative loss ratio for the four largest insurers was 84.5% in the first half, up 1.9 percentage points year on year, with Hyundai Marine at 84.1%. The industry treats roughly 80% as breakeven; premiums rose about 1% this year for the first time in five years, but four consecutive years of cuts from 2022 plus higher repair labour rates and wages offset that increase. The key regulatory variable is the so-called eight-week rule requiring review by a Ministry of Land-designated body when minor-injury patients are treated beyond eight weeks; implementation is discussed for as early as September, though some in the industry expect tangible loss-ratio benefits only from next year and put this year's full-year auto deficit at 800-900 billion won. The long-term line, by contrast, is closer to recovery. Rising rates supported solvency, with the K-ICS ratio at 209.0% at end-June, up 18.9 percentage points from year-end, although bond valuation losses can simultaneously amplify investment income volatility. In relative positioning, only Meritz Fire improved its first-half cumulative loss ratio among the top five, with the other four all deteriorating, indicating auto-line pressure is largely an industry-wide variable."
+  "ko": "국내 손해보험업은 2026년 상반기 장기보험 수익성 개선과 계리적 가정 변경 효과에 힘입어 전반적으로 실적이 좋아진 반면, 자동차보험은 반대 방향으로 움직였다. 주요 5개사의 상반기 누적 자동차보험 손해율 단순 평균은 84.06%로 전년 동기 82.62%보다 상승했고, 회사별로는 DB손해보험 85.1%, KB손해보험 84.6%, 삼성화재 84.3%, 현대해상 84.1%, 메리츠화재 82.2%로 집계됐다(손해보험협회 기준, 2026년 7월 보도). 업계가 통상 손익분기점으로 보는 80~82%를 웃도는 흐름이 이어지면서, 상반기 자동차보험은 약 1,890억원의 영업손실로 2020년 상반기 이후 6년 만에 적자 전환했다는 집계도 나왔다(2026년 7월 보도). 장기보험 쪽에서는 실손의료보험 제도 개편이 최대 변수다. 2026년 실손보험료는 평균 7.8% 인상으로 정리됐고 세대별로는 1세대 3%대, 2세대 5%대, 3세대 16%대, 4세대 20%대로 안내됐으며(생명·손해보험협회, 2025년 12월), 5세대 실손보험은 2026년 5월 6일 판매가 시작됐다. 자본·환원 측면에서는 해약환급금준비금이 6월 말 약 58조원까지 불어나 배당가능이익과 기본자본을 동시에 압박하고 있고, 금융당국은 대량해지 가정을 보장성 25%·저축성 35% 수준으로 현실화하는 근본 개선안을 검토 중인 것으로 전해졌다(머니투데이 2026년 8월). 2027년 기본자본 지급여력비율 규제 도입이 예정돼 있어 자본의 '질'이 경쟁 구도의 새로운 기준으로 부상하는 국면이다. 현대해상은 손보 빅5 안에서 상반기 순이익 절대 규모는 삼성화재·메리츠화재·DB손해보험에 뒤지지만, 보험손익 개선 폭이 가장 두드러졌다는 평가를 받았다(2026년 8월 보도).",
+  "en": "Korea's non-life insurance sector broadly improved in first-half 2026 on better long-term insurance profitability and actuarial assumption changes, while auto insurance moved the other way. The simple average of cumulative first-half auto loss ratios at the five major insurers was 84.06%, up from 82.62% a year earlier, with DB Insurance at 85.1%, KB Insurance at 84.6%, Samsung Fire & Marine at 84.3%, Hyundai Marine & Fire at 84.1% and Meritz Fire & Marine at 82.2% (General Insurance Association data, reported July 2026). With ratios staying above the 80-82% range the industry typically treats as breakeven, one tally put first-half auto insurance at an operating loss of roughly KRW 189 billion, the first half-year deficit in six years since 1H20 (July 2026 report). In long-term insurance, the overhaul of indemnity health insurance is the dominant variable. Premiums for 2026 were set to rise 7.8% on average, with guidance of roughly 3% for first-generation, 5% for second, 16% for third and 20% for fourth-generation policies (life and non-life insurance associations, December 2025), and the fifth-generation product went on sale on 6 May 2026. On capital and shareholder returns, surrender-value reserves across the industry swelled to about KRW 58 trillion by end-June, squeezing both distributable income and tier-one capital, and regulators are reported to be weighing a fundamental revision that would cut mass-lapse assumptions to about 25% for protection and 35% for savings products (Money Today, August 2026). With a tier-one K-ICS requirement slated for 2027, the quality of capital is emerging as a new competitive yardstick. Within the top five, Hyundai Marine & Fire trailed Samsung Fire & Marine, Meritz Fire & Marine and DB Insurance in absolute first-half net profit, but was described as showing the most pronounced improvement in underwriting profit (August 2026 reports)."
  },
  "outlook": {
-  "ko": "회사가 제시한 방향은 물량보다 수익성이다. 2분기 신계약 CSM 배수는 17.2배로 지난해 16.0배보다 1.2배 상승했고, 13회차 유지율 87.5%, 25회차 유지율 74.1%로 각각 소폭 개선돼 계약 효율 지표가 뒷받침되고 있다. 다만 외형 지표는 약해, 상반기 신계약 CSM은 9,509억원으로 5.4% 감소했으며 신계약 매출은 줄고 수익성은 개선되는 조합이 이어졌다. 주주환원은 보유 자사주 12.3% 가운데 9.3% 소각 결정, 4.65%는 4월에 완료, 나머지는 2027년까지 순차 소각 계획이 확인된 일정이다. 배당 재개 여부는 제도에 달려 있는데, 보험업계는 58조원으로 불어난 해약준비금 제도 개선안을 금융위원회·금융감독원에 건의했고, 대량해지 가정을 현행 80~100%에서 보장성 25%·저축성 35%로 낮추는 방안이 유력하게 검토되고 있다. 금융당국은 내년 기본 자본비율 규제 도입에 맞춰 땜질식이 아닌 근본 개선안을 검토 중이라고 밝혔다. 증권가 시각은 갈린다. 한국투자증권은 2월 단계적 주주환원 정책 제시를 근거로 목표주가를 3만6,000원에서 4만5,000원으로 상향하며 투자의견 매수를 유지했고, BNK투자증권은 4월 부진한 업황·실적과 배당 필요성을 감안해 투자의견 보유를 유지하며 목표주가를 3만3,000원으로 상향했다. 하반기에는 장마·집중호우에 따른 침수·빗길 사고와 정비요금·일용근로자 임금 상승이 자동차 부문 변수로, 금리 방향이 투자손익과 자본비율 변수로 남는다.",
-  "en": "Management's stated direction favours profitability over volume. The 2Q new-business CSM multiple rose to 17.2x from 16.0x a year earlier, and 13th-month persistency improved to 87.5% and 25th-month persistency to 74.1%, supporting contract-efficiency metrics. Top-line indicators are softer, however: first-half new-business CSM fell 5.4% to 950.9 billion won, combining lower new sales with better margins. On shareholder returns, the confirmed schedule is that of 12.3% of shares held in treasury, 9.3% will be cancelled, with 4.65% completed in April and the remainder to be retired sequentially through 2027. Dividend resumption hinges on regulation: the insurance industry has petitioned the Financial Services Commission and the Financial Supervisory Service to reform surrender-value reserve rules, now totalling 58 trillion won, with a leading proposal cutting the mass-lapse assumption from 80-100% to 25% for protection and 35% for savings products. Authorities said they are reviewing a fundamental rather than piecemeal reform in step with next year's introduction of a core-capital ratio requirement. Brokerage views differ: Korea Investment & Securities raised its target price from 36,000 to 45,000 won in February, citing the phased shareholder-return plan, and kept a buy rating, while BNK Investment & Securities kept a hold rating in April, raising its target to 33,000 won while citing weak industry conditions and the absence of dividends. For the second half, monsoon-related flooding and wet-road accidents plus rising repair fees and daily-worker wages are the auto-line variables, while rate direction remains the swing factor for investment income and solvency."
+  "ko": "회사는 2026년 상반기 실적 발표 후 각 부문 수익성 개선 노력을 근거로 하반기에도 상반기와 비슷한 흐름이 이어질 것으로 본다고 밝혔다(2026년 8월). 자본 지표에서는 6월 말 K-ICS 비율 209.0%, CSM 잔액 9조8,944억원이 확인됐고, 기본자본비율은 2025년 2분기 말 53.7%에서 2026년 2분기 말 83.8%로, 자산·부채 듀레이션 갭은 -2.5년에서 0.7년으로 이동했다는 보도가 있었다(2026년 8월). 반면 성장성 지표인 신계약 CSM은 2분기 약 4,800억원으로 전년 동기 대비 8.7% 낮아졌고, 신계약 CSM 배수는 17.2배로 집계됐다. 하반기 최대 확인 사항은 연말 가정 재산정이다. 하나증권 고연수 연구원은 2026년 8월 17일 보고서에서 4분기 간편보험 신규담보 손해율 가정 변경이 남아 있어 연말 대규모 CSM 조정이 불가피하다고 전망했다. 배당 쪽에서는 2분기 말 배당가능이익이 마이너스 6,600억원으로 1분기 대비 7,000억원가량 개선됐지만, 회사는 연말에도 마이너스를 예상하면서 소폭이라도 플러스로 전환되면 배당에 나서겠다는 방침을 밝혔다(2026년 8월 보도). 회사 관계자는 제도가 개선되더라도 외부 환경 영향을 함께 받는 만큼 배당 가능 시점을 예상하기 어렵다고 말했다(2026년 8월). 제도 일정으로는 2026년 11월 실손보험 선택형 할인 특약 시행이 예정돼 있고, 2027년 기본자본비율 규제 도입에 맞춘 해약환급금준비금 제도 개선안의 확정 여부가 하반기 관전 포인트로 남아 있다.",
+  "en": "After first-half results, the company said it expects the second half to track a similar trend, citing ongoing profitability initiatives across segments (August 2026). On capital metrics, the K-ICS ratio stood at 209.0% and the contractual service margin at KRW 9.89 trillion at end-June, while reports noted the tier-one capital ratio moved from 53.7% at end-2Q25 to 83.8% at end-2Q26 and the asset-liability duration gap from minus 2.5 years to plus 0.7 years (August 2026). Growth metrics were softer: new-business contractual service margin was about KRW 480 billion in 2Q26, down 8.7% year on year, with a new-business margin multiple of 17.2 times. The key second-half item to watch is the year-end reassumption exercise. Hana Securities analyst Ko Yeon-soo said in a 17 August 2026 report that a fourth-quarter change to loss-ratio assumptions for new simplified-underwriting coverage remains pending, making a large year-end margin adjustment unavoidable. On dividends, distributable income was negative KRW 660 billion at end-2Q26, an improvement of roughly KRW 700 billion from the first quarter, yet the company expects it to remain negative at year-end while saying it would pay a dividend if the figure turns even slightly positive (August 2026 reports). A company official said that even with a rule change, external conditions also matter, making the timing of any dividend hard to predict (August 2026). On the policy calendar, an optional discount rider for indemnity health insurance is scheduled for November 2026, and whether the surrender-value reserve revision is finalized ahead of the 2027 tier-one capital rule remains the main watch point for the second half."
  },
  "valuation_comment": {
-  "ko": "화면 카드 기준 주당순이익은 13,421원, 주당순자산은 71,316원으로 산출되며, 현재 주가는 주당순자산을 밑도는 구간에서 형성되어 있다. 즉 순자산 대비 할인 구간이고, 이익 대비 배수 역시 국내 대형 손해보험사 평균을 밑도는 편이다. 다만 이 할인은 이익 회복만으로 설명되지 않는다. 배당은 2023 회계연도 주당 2,063원 이후 중단됐고, 같은 회계연도에 삼성화재는 주당 1만9,500원, DB손해보험은 7,600원을 지급한 만큼 현금배당 관점에서는 경쟁사와 비교 자체가 성립하지 않는 상태다. 한국거래소는 정기 변경에서 2년 연속 배당 또는 자사주 소각 요건을 충족하지 못한 현대해상을 밸류업 지수에서 편출했고, BNK투자증권은 대규모 자사주 소각에도 체감되는 현금성 주주환원이 부족하다며 배당 재개와 배당성향 상향이 현실화될 경우 저평가가 상당 부분 해소될 수 있다고 평가했다. 정리하면 순이익은 적자 분기를 지나 회복 방향이고 자본비율과 CSM은 개선됐지만, 밸류에이션 논의의 축은 실적보다 배당 재개 가능성과 해약환급금준비금 제도라는 규제 변수에 놓여 있다.",
-  "en": "On the figures shown in the data card, earnings per share works out to 13,421 won and book value per share to 71,316 won, and the shares currently trade below book value. In other words, the stock sits at a discount to net assets, and its earnings multiple is also below the average of large domestic non-life insurers. That discount, however, is not explained by earnings alone. Dividends have been suspended since the FY2023 payout of 2,063 won per share, and for the same fiscal year Samsung Fire paid 19,500 won and DB Insurance 7,600 won per share, so a cash-dividend comparison with peers is not even possible at present. The Korea Exchange removed the company from its Value-up index at a regular review after it failed the requirement of two consecutive years of dividends or share cancellations, and BNK Investment & Securities said that despite large treasury-share cancellations the cash returns investors actually feel remain insufficient, adding that a resumption of dividends and a higher payout ratio could remove much of the valuation discount. In sum, net profit has moved past a loss quarter into recovery and both solvency and CSM have improved, but the valuation debate rests less on earnings than on the odds of dividend resumption and the surrender-value reserve regime."
+  "ko": "이 회사는 이익의 절대 규모가 자본 대비 크지만, 순자산에 견준 주가 배수는 1배를 밑도는 구간에 머물러 있고 이익 기준 배수도 시장 평균을 크게 밑도는 편이다. 배수가 낮게 유지돼 온 배경으로는 계리적 가정 변경마다 반복되는 손익 변동성, 그리고 2024년 결산부터 배당이 중단된 상태가 함께 거론된다(헤럴드경제 2026년 7월). 화면에 표시되는 주당순자산 기준값도 산출 방식(자체 산출과 거래소 공시)에 따라 차이가 있어, 순자산 대비 할인 폭을 볼 때는 어느 기준인지 확인이 필요하다. 2026년 2분기 실적 발표 이후 증권사 목표주가는 상향이 잇따랐다. KB증권은 2026년 8월 6만5,000원을, 신한투자증권과 DB증권은 6만3,000원을, 삼성증권은 6만원을 제시했다고 보도됐고, 삼성증권 정민기 연구원은 계약 체질 개선 효과가 언더라이팅 손익과 자본 여력 개선으로 나타나고 있다고 분석했다(2026년 8월). 이는 각 증권사의 견해로, 코사이의 판단이 아니며, 연말 CSM 조정과 배당가능이익의 플러스 전환 여부가 확인되기 전까지는 배수 해석의 전제가 바뀔 수 있다.",
+  "en": "Absolute earnings are large relative to the equity base, yet the share price sits below one times net asset value and its earnings-based multiple trades well under the broad market average. Two factors are commonly cited behind the persistently low multiple: recurring profit volatility whenever actuarial assumptions change, and the suspension of dividends since the 2024 fiscal-year settlement (Herald Business, July 2026). Note also that the book-value-per-share reference shown on screen differs depending on the calculation source (in-house versus exchange disclosure), so it matters which basis is used when gauging the discount to net assets. Brokerage target prices were raised repeatedly after the 2Q26 results. KB Securities was reported in August 2026 to have set KRW 65,000, Shinhan Investment and DB Securities KRW 63,000 and Samsung Securities KRW 60,000, while Samsung Securities analyst Jung Min-ki said the effects of improving contract quality are showing up in underwriting profit and capital headroom (August 2026). Those are the brokerages' own views rather than KOSAI's, and the premises behind any multiple can shift until the year-end margin adjustment and the path of distributable income are confirmed."
  },
  "bull": [
   {
    "title": {
-    "ko": "장기보험 손익 정상화",
-    "en": "Normalisation of long-term insurance profit"
+    "ko": "장기보험 언더라이팅 회복이 숫자로 확인",
+    "en": "Long-term underwriting recovery now visible in the numbers"
    },
    "body": {
-    "ko": "실적 회복의 축은 장기보험이다. 상반기 장기보험손익은 6,139억원으로 전년 동기 2,984억원 대비 105.7% 늘었고, CSM 상각액과 위험조정 변동액 증가, 예실차 손실 축소가 겹쳤다. 2025년 4분기 순손실 1,145억원에서 2026년 1분기 순이익 2,364억원으로 이어진 반전도 같은 흐름과 맞닿아 있다. 장기보험이 전사 보험손익의 최대 부문이라는 구조상, 예실차 안정이 지속되는지가 이익 흐름의 핵심 관전 포인트다.",
-    "en": "The recovery pivots on the long-term book. First-half long-term insurance profit rose 105.7% to 613.9 billion won from 298.4 billion a year earlier, as higher CSM amortisation and risk-adjustment release combined with a narrower experience-variance loss. The swing from a 114.5 billion won net loss in 4Q25 to 236.4 billion won of net profit in 1Q26 reflects the same trend. Because long-term insurance is the largest component of company-wide underwriting profit, whether experience variance stays stable is the central watch point for earnings."
+    "ko": "2026년 상반기 별도 기준 보험손익은 7,058억원으로 전년 동기 대비 81.6% 증가했고, 장기보험손익은 6,139억원으로 105.7% 늘었다(2026년 8월 공시 기반 보도). 연결 기준으로도 2026년 2분기 영업이익 5,287억원, 지배주주 순이익 4,183억원으로 전 분기 대비 크게 개선됐다. 회사는 보험금 예실차 적자 폭 축소를 개선 요인으로 제시했는데, 이는 일회성 환입과 달리 경상적 수익성과 연결되는 항목이다. 2025년 내내 이어진 수익성 중심 상품 재편이 손익으로 넘어오는 초기 구간이라는 평가가 함께 나왔다.",
+    "en": "Separate-basis underwriting profit for first-half 2026 rose 81.6% year on year to KRW 705.8 billion, with long-term insurance profit up 105.7% to KRW 613.9 billion (August 2026 disclosure-based reports). On a consolidated basis, 2Q26 operating profit of KRW 528.7 billion and net profit attributable to owners of KRW 418.3 billion were sharply higher than the previous quarter. Management pointed to a narrower deficit between expected and actual claims, an item tied to recurring profitability rather than one-off reversals. Commentary framed this as the early phase in which the profitability-led product overhaul pursued through 2025 begins to show in reported earnings."
    }
   },
   {
    "title": {
-    "ko": "자본여력과 CSM 동시 개선",
-    "en": "Simultaneous gains in capital and CSM"
+    "ko": "자본·건전성 지표의 방향 전환",
+    "en": "Turn in capital and solvency metrics"
    },
    "body": {
-    "ko": "CSM 잔액은 지난해 말 8조9,017억원에서 6월 말 9조8,944억원으로 11.2% 늘었고, 킥스 비율은 190.1%에서 209.0%로 상승했다. 가용자본 증가와 요구자본 감소, 자산·부채 종합관리 강화가 자본여력 개선으로 이어졌다는 설명이다. 보험업계는 자본 여력을 신계약 확대와 주주환원 가능성을 가늠하는 핵심 지표로 본다는 점에서 이 지표의 방향성은 정책 선택지와 직결된다.",
-    "en": "CSM grew 11.2% from 8.90 trillion won at end-2025 to 9.89 trillion won at end-June, and the K-ICS ratio rose from 190.1% to 209.0%. Higher available capital, lower required capital and strengthened asset-liability management drove the solvency improvement. The industry treats capital headroom as the key gauge of both new-business capacity and scope for shareholder returns, so the direction of this metric ties directly to policy options."
+    "ko": "6월 말 K-ICS 비율은 209.0%로 지난해 말 190.1%에서 18.9%포인트 올랐고, CSM 잔액은 9조8,944억원으로 지난해 말보다 11.2% 증가했다(2026년 8월 보도). 기본자본비율은 2025년 2분기 말 53.7%에서 2026년 2분기 말 83.8%로, 자산·부채 듀레이션 갭은 -2.5년에서 0.7년으로 이동했다는 보도도 나왔다. 확정 재무에서도 자본총계가 2024년 4조7,434억원에서 2025년 5조1,575억원으로 늘고 부채비율은 923.0%에서 877.8%로 낮아졌다. 2027년 기본자본비율 규제 도입을 앞두고 이 지표들의 방향은 규제 대응력과 직결된다.",
+    "en": "The K-ICS ratio reached 209.0% at end-June, up 18.9 percentage points from 190.1% at end-2025, while the contractual service margin rose 11.2% from year-end to KRW 9.89 trillion (August 2026 reports). Reports also noted the tier-one capital ratio moved from 53.7% at end-2Q25 to 83.8% at end-2Q26, and the asset-liability duration gap from minus 2.5 years to plus 0.7 years. Audited figures likewise show total equity rising from KRW 4.74 trillion in 2024 to KRW 5.16 trillion in 2025, with the liability-to-equity ratio easing from 923.0% to 877.8%. With a tier-one K-ICS requirement due in 2027, the direction of these metrics bears directly on regulatory readiness."
    }
   },
   {
    "title": {
-    "ko": "제도 개선 논의와 자사주 소각 이행",
-    "en": "Reform debate and treasury-share cancellations"
+    "ko": "실손 제도 개편의 직접 노출도",
+    "en": "Direct exposure to the indemnity health insurance overhaul"
    },
    "body": {
-    "ko": "배당 제약의 원인인 준비금 제도가 논의 테이블에 올라 있다. 대량해지 가정 완화와 음의 부채 계약 제외 두 방안만 반영되어도 일부 보험사는 배당 재원이 생기거나 수조원대 해약준비금이 절반 이하로 줄어드는 효과가 추정된다. 회사는 제도 개선 시 주주환원을 위한 정관 변경을 이미 완료했고 결산 배당 시 일반 주주에 대한 감액배당 준비도 마쳤다고 밝혔다. 동시에 내년에도 올해 수준의 자사주 소각을 계획하고 있어 이행 여부가 확인 가능한 사실로 남는다.",
-    "en": "The reserve regime behind the dividend constraint is now on the policy table. Reflecting just two proposals - a softer mass-lapse assumption and excluding negative-liability contracts - is estimated to create distributable resources at some insurers or cut multi-trillion-won reserves by more than half. The company says it has already amended its articles of incorporation for shareholder returns should rules change, and has prepared capital-reduction dividends for retail shareholders in the event of a year-end payout. It also plans treasury-share cancellations next year on a similar scale to this year, leaving execution as a verifiable fact to track."
+    "ko": "2026년 실손보험료는 평균 7.8% 인상으로 정리됐고, 3세대 16%대·4세대 20%대의 인상률이 안내됐다(생명·손해보험협회, 2025년 12월). 위험보험료 중 실손 비중이 업계에서 가장 높은 편으로 거론되는 만큼, 보험료 인상과 비급여 관리 강화는 이 회사 손익에 상대적으로 크게 반영되는 구조다. 대신증권은 2025년 12월 리포트에서 도수치료가 관리급여 항목에 포함된 점을 긍정 요인으로 꼽으며 관련 지급보험금 부담 경감 효과를 추정했다고 보도됐다. 5세대 실손보험은 2026년 5월 6일 판매가 시작돼 전환 추이가 손해율에 반영되기 시작하는 단계다.",
+    "en": "Indemnity health premiums for 2026 were set to rise 7.8% on average, with guidance of about 16% for third-generation and 20% for fourth-generation policies (life and non-life insurance associations, December 2025). Because the company is described as having the industry's highest share of indemnity health within risk premiums, premium hikes and tighter management of non-reimbursable care flow into its earnings relatively strongly. Daishin Securities was reported in a December 2025 note to view the inclusion of manual therapy under managed-benefit status as positive, estimating relief in related claims payments. The fifth-generation product went on sale on 6 May 2026, so conversion trends are only beginning to feed into loss ratios."
    }
   }
  ],
  "bear": [
   {
    "title": {
-    "ko": "이익과 무관하게 이어지는 배당 공백",
-    "en": "Dividend freeze regardless of profit"
+    "ko": "연말 계리가정 재산정 부담",
+    "en": "Year-end actuarial reassumption burden"
    },
    "body": {
-    "ko": "2025년 지배주주 순이익 1조198억원이라는 사상 최대 수준의 이익에도 배당은 지급되지 않았다. 배당가능이익이 소진된 데는 해약환급금준비금 같은 법정 준비금 적립 부담과 금리 하락에 따른 자본총계 감소가 작용했다. 1분기 기준 해약환급금준비금은 4조1,150억원으로 전체 이익잉여금의 49.9%를 차지한다. BNK투자증권은 금융주 최대 강점이 주주환원이라는 점에서 정책 완화가 확인되기까지는 투자 매력이 떨어질 것이라고 평가했다.",
-    "en": "Despite record net profit attributable of 1,019.8 billion won in 2025, no dividend was paid. Distributable profit was exhausted by mandatory statutory reserves such as the surrender-value reserve and by a decline in total equity as rates fell. As of the first quarter the surrender-value reserve stood at 4,115 billion won, or 49.9% of total retained earnings. BNK Investment & Securities argued that because shareholder returns are the main appeal of financial stocks, investment appeal will remain weak until regulatory easing is confirmed."
+    "ko": "2025년 4분기 연결 영업이익은 -1,279억원, 지배주주 순이익은 -1,145억원으로 적자였다. 4분기에 가정 재산정과 손실부담계약 관련 비용이 몰리는 구조가 반복될 경우 연간 이익의 가시성이 떨어진다. 하나증권 고연수 연구원은 2026년 8월 17일 보고서에서 4분기 간편보험 신규담보 손해율 가정 변경이 남아 있어 연말 대규모 CSM 조정이 불가피하다고 전망했다. 상반기 이익 개선의 일부가 일회성 환입에 기댄 만큼, 같은 항목이 반대 방향으로 작용할 가능성도 함께 봐야 한다.",
+    "en": "In 4Q25, consolidated operating profit was KRW -127.9 billion and net profit attributable to owners KRW -114.5 billion, both negative. If the pattern of concentrating assumption resets and onerous-contract costs in the fourth quarter repeats, annual earnings visibility suffers. Hana Securities analyst Ko Yeon-soo said in a 17 August 2026 report that a pending fourth-quarter change to loss-ratio assumptions for new simplified-underwriting coverage makes a large year-end margin adjustment unavoidable. Since part of the first-half improvement rested on one-off reversals, the same line items can also work in the opposite direction."
    }
   },
   {
    "title": {
-    "ko": "자동차보험 적자와 하반기 계절성",
-    "en": "Auto losses and second-half seasonality"
+    "ko": "배당 재개는 제도 변경에 종속",
+    "en": "Dividend restart depends on a rule change"
    },
    "body": {
-    "ko": "상반기 자동차보험은 누적된 보험료 인하와 보상원가 상승, 8주룰 제도 개선 지연으로 102억원 적자였다. 업계는 최근 5년 차량 침수 피해의 약 65%가 7~8월에 집중되고 교통사고 발생 비중도 7월이 가장 높다는 점에서 하반기 손해율이 상반기보다 나빠질 가능성을 크게 본다. 올해 2월 5년 만의 보험료 인상 폭이 제한적이었고 과잉의료에 따른 보험금 누수가 지속된다는 점도 구조적 부담이다. 2분기 자동차 손익이 소폭 흑자로 돌아섰지만 연간 흑자 전환까지는 거리가 있다.",
-    "en": "First-half auto insurance posted a 10.2 billion won loss on cumulative premium cuts, rising claims costs and delays to the eight-week rule. The industry sees a strong chance that second-half loss ratios worsen, noting that about 65% of vehicle flood damage over the past five years occurred in July-August and that July carries the highest share of traffic accidents. A limited premium increase in February, the first in five years, and continued claims leakage from excessive treatment add structural pressure. Auto profit turned marginally positive in 2Q, but a full-year swing to profit remains distant."
+    "ko": "2분기 말 배당가능이익은 마이너스 6,600억원으로 1분기 대비 7,000억원가량 개선됐지만 여전히 마이너스이며, 회사는 연말에도 마이너스를 예상한다고 밝혔다(2026년 8월 보도). 상반기 기준 이 회사의 해약환급금준비금은 4.3조원 규모로 집계됐다(IB토마토 2026년 8월). 금융당국은 대량해지 가정 현실화 등 근본 개선안을 검토 중이라고 전해지지만, 확정된 바 없다는 입장이어서 시점과 강도가 불확실하다(2026년 8월 보도). 회사 관계자도 제도가 개선되더라도 외부 환경 영향을 함께 받아 배당 가능 시점을 예상하기 어렵다고 말했다.",
+    "en": "Distributable income was negative KRW 660 billion at end-2Q26, an improvement of roughly KRW 700 billion from the prior quarter but still negative, and the company said it expects it to remain negative at year-end (August 2026 reports). Its surrender-value reserve was put at about KRW 4.3 trillion as of the first half (IB Tomato, August 2026). Regulators are reported to be weighing a fundamental revision, including more realistic mass-lapse assumptions, but their official stance is that nothing is decided, leaving timing and magnitude uncertain (August 2026 reports). A company official likewise said the timing of any dividend is hard to forecast because external conditions matter even if the rule is eased."
    }
   },
   {
    "title": {
-    "ko": "일회성 효과 의존과 신계약 둔화",
-    "en": "Reliance on one-offs and slowing new business"
+    "ko": "자동차보험 손해율과 투자손익 부담",
+    "en": "Auto loss ratios and investment-income drag"
    },
    "body": {
-    "ko": "이익 개선의 상당 부분이 회계·제도 변경에 따른 환입과 연결된다. 1분기에는 실손보험 요구자본 산출기준 변경으로 약 900억원의 손실비용 환입 효과가 발생했고, 2분기에도 계리가정 선진화 가이드라인 반영에 따른 일회성 환입이 있었다. 외형 측면에서는 1분기 장기보험 신계약이 월납환산 95억원으로 16.4% 감소하고 인보험 신계약도 16.9% 줄었으며 간편보험과 운전자보험 판매 감소가 원인으로 지적됐다. 일회성 요인이 걷힌 뒤의 경상 이익력이 확인되어야 하는 국면이다.",
-    "en": "A meaningful share of the earnings improvement is tied to accounting and regulatory reversals. In 1Q, a change in the required-capital calculation for indemnity health insurance produced roughly 90 billion won of loss-cost reversal, and 2Q also included a one-off reversal from applying advanced actuarial assumption guidelines. On volumes, 1Q long-term new business fell 16.4% to 9.5 billion won on a monthly-premium basis and health new business dropped 16.9%, attributed to lower sales of simplified-underwriting and driver policies. Underlying run-rate earnings once one-offs fade still need to be demonstrated."
+    "ko": "주요 5개사의 2026년 상반기 누적 자동차보험 손해율 평균은 84.06%로 전년 82.62%보다 상승했고, 현대해상은 84.1%로 집계됐다(손해보험협회 기준, 2026년 7월 보도). 정비수가·부품비 상승과 계절 변수가 남아 있어 하반기 손해율 관리 부담이 지적된다. 투자 쪽에서는 상반기 누적 투자손익이 1,057억원으로 전년 동기 대비 55.3% 감소했고, 금리 상승에 따른 평가손실이 원인으로 제시됐다(2026년 8월 보도). 신계약 CSM이 2분기 약 4,800억원으로 전년 동기 대비 8.7% 줄어든 점도 성장성 측면의 약한 고리다.",
+    "en": "The five major insurers' average cumulative auto loss ratio for first-half 2026 was 84.06%, up from 82.62% a year earlier, with Hyundai Marine & Fire at 84.1% (General Insurance Association data, reported July 2026). Rising repair labor rates and parts costs, plus seasonal factors, keep second-half loss-ratio management in focus. On the investment side, cumulative first-half investment profit fell 55.3% year on year to KRW 105.7 billion, attributed to valuation losses as rates rose (August 2026 reports). New-business contractual service margin of about KRW 480 billion in 2Q26, down 8.7% year on year, is another soft spot on growth."
    }
   }
  ],
  "risks": [
   {
    "cat": {
-    "ko": "규제·자본 정책 리스크",
-    "en": "Regulatory and capital policy risk"
+    "ko": "규제·회계",
+    "en": "Regulation and accounting"
    },
    "body": {
-    "ko": "준비금 제도는 완화 방향뿐 아니라 조건이 붙을 가능성도 있다. 금융당국은 해약준비금 급증 원인이 건강보험 과당경쟁에 있다고 보며, 사업비 문제 해결 방안도 함께 가야 한다는 입장이다. 해약환급금준비금이 이익잉여금을 초과할 경우 보완자본으로 재분류돼 내년 도입 예정인 기본자본 킥스비율을 낮추는 요인으로 작용한다는 점도 변수다. 제도 개선의 내용·시점이 확정되기 전까지 배당 재개 시점을 특정하기 어렵다.",
-    "en": "Reserve reform may come with conditions rather than pure relief. Regulators view excessive competition in health insurance as the cause of the reserve surge and insist that expense-loading issues be addressed alongside. Another variable is that when surrender-value reserves exceed retained earnings they are reclassified as supplementary capital, lowering the core-capital K-ICS ratio due to be introduced next year. Until the content and timing of reform are settled, the timing of any dividend resumption cannot be pinned down."
+    "ko": "IFRS17 체계에서는 계리적 가정과 할인율 변경이 보험손익과 자본을 동시에 움직인다. 확정 재무에서 자본총계가 2022년 9조5,081억원에서 2024년 4조7,434억원까지 줄어든 것도 이런 회계·금리 환경 변화와 무관하지 않다. 2027년 기본자본비율 규제 도입, 해약환급금준비금 제도 개선 논의, 실손 제도 후속 조치가 동시에 진행돼 손익과 자본의 전제가 짧은 주기로 바뀔 수 있다. 제도 변경 방향이 회사에 유리하게만 작용한다고 볼 근거는 없다.",
+    "en": "Under IFRS 17, changes in actuarial assumptions and discount rates move underwriting profit and equity at the same time. The decline in total equity from KRW 9.51 trillion in 2022 to KRW 4.74 trillion in 2024 in the audited figures is not unrelated to that accounting and rate environment. The 2027 tier-one capital rule, the debate over surrender-value reserves and follow-up measures on indemnity health insurance are all progressing at once, so the premises for earnings and capital can shift on a short cycle. There is no basis for assuming rule changes will only work in the company's favor."
    }
   },
   {
    "cat": {
-    "ko": "금리·투자손익 변동성",
-    "en": "Rate and investment income volatility"
+    "ko": "손해율·의료비",
+    "en": "Loss ratios and medical costs"
    },
    "body": {
-    "ko": "금리 상승은 자본비율에 우호적이지만 손익에는 반대로 작용할 수 있다. 1분기 투자손익은 구조화채권과 대체투자 관련 900억원에 달하는 평가손실 영향으로 61억원에 그쳤다. 상반기 유가증권 평가·처분 비용은 2,427억원으로 51.9% 증가했다. 금리 상승이 자본비율에는 긍정적이지만 채권 평가손실을 통해 투자손익 변동성을 키울 수 있다는 점에서 보험손익 개선이 투자 부문 부진으로 일부 상쇄되는 구조가 반복될 수 있다.",
-    "en": "Rising rates help solvency but can hurt reported income. 1Q investment income was just 6.1 billion won, hit by roughly 90 billion won of valuation losses on structured bonds and alternative assets. First-half securities valuation and disposal costs rose 51.9% to 242.7 billion won. Given that higher rates aid the capital ratio but can amplify investment income volatility through bond valuation losses, the pattern of underwriting gains being partly offset by weaker investment results may recur."
+    "ko": "실손 비중이 높은 포트폴리오는 비급여 진료와 의료비 상승에 민감하다. 자동차보험에서는 정비수가·부품비 상승과 과잉의료로 인한 보험금 누수가 손해율 상승 요인으로 지적되고 있다(2026년 7월 보도). 경상환자 치료 기간 심의 같은 제도 장치는 검토 단계에 머물러 실질적 억제 효과가 아직 확인되지 않았다는 지적도 있다. 태풍·집중호우 등 자연재해는 일반보험과 자동차보험 손익을 동시에 흔들 수 있다.",
+    "en": "A portfolio weighted toward indemnity health insurance is sensitive to non-reimbursable treatment and rising medical costs. In auto insurance, higher repair labor rates and parts costs, along with claims leakage from excessive treatment, are cited as drivers of higher loss ratios (July 2026 reports). Some note that policy tools such as review requirements for extended treatment of minor injuries remain under consideration, so their restraining effect is unproven. Typhoons and torrential rain can hit general insurance and auto results simultaneously."
    }
   },
   {
    "cat": {
-    "ko": "손해율·제도 지연 리스크",
-    "en": "Loss-ratio and policy-delay risk"
+    "ko": "금리·자산운용",
+    "en": "Rates and asset management"
    },
    "body": {
-    "ko": "자동차보험 손해율 개선은 제도 시행 속도에 크게 의존한다. 경상환자 8주 초과 치료 시 지정기관 심의를 받도록 하는 8주룰이 국토교통부 검토 단계에 머물러 손해율 억제 장치가 아직 작동하지 못하고 있다. 업계에서는 새 제도가 안착하는 기간을 고려하면 실질적 개선은 내년부터 가시화될 것이라는 시각도 제시된다. 한방병원·한의원 중심의 경상환자 과잉 진료가 실적 악화의 주된 요인으로 지목되며, 한방병원 1인당 치료비는 양방의 3.1배라는 구조적 문제도 남아 있다.",
-    "en": "Auto loss-ratio improvement depends heavily on the pace of policy implementation. The eight-week rule requiring designated-institution review for minor-injury treatment beyond eight weeks is still under Ministry of Land review, so no effective loss-containment mechanism is yet operating. Some in the industry expect tangible improvement only from next year once the new system settles in. Over-treatment of minor-injury patients, centred on oriental medicine hospitals and clinics, is cited as the main driver of deterioration, with per-patient costs at oriental medicine hospitals 3.1 times those at conventional hospitals - a structural issue that persists."
+    "ko": "상반기 투자손익이 55.3% 감소한 배경으로 금리 상승에 따른 평가손실이 제시됐고, 1분기에는 구조화채권·대체투자 관련 대규모 평가손실이 지적된 바 있다(LS증권 2026년 5월 리포트 보도). 금리 방향은 보험부채 평가와 자본, 투자손익에 서로 다른 방향으로 작용해 단선적으로 해석하기 어렵다. 대체투자 자산의 평가·회수 지연이 발생하면 분기 손익 변동성이 커질 수 있다. 듀레이션 갭이 플러스로 전환됐다는 보도가 있으나, 금리 급변 시 자본비율 영향은 여전히 점검 대상이다.",
+    "en": "Valuation losses from rising rates were cited behind the 55.3% drop in first-half investment profit, and large valuation losses on structured bonds and alternative assets were flagged in the first quarter (as reported from an LS Securities note, May 2026). Rate moves affect insurance liability valuation, equity and investment income in different directions, so the impact is not linear. Delays in valuing or recovering alternative assets can amplify quarterly earnings volatility. Reports indicate the duration gap has turned positive, but the effect of abrupt rate moves on capital ratios still warrants monitoring."
    }
   }
  ],
  "checkpoints": [
   {
    "when": {
-    "ko": "2026년 9월 전후",
-    "en": "Around September 2026"
+    "ko": "2026년 9월 말~10월 중",
+    "en": "Late September to October 2026"
    },
    "what": {
-    "ko": "이르면 9월경 시행이 거론되는 8주룰의 실제 시행 여부와 세부 가이드라인. 시행 시점과 심의 기준의 강도가 자동차보험 손해율 개선 속도를 좌우한다.",
-    "en": "Whether the eight-week rule, reportedly slated for implementation as early as September, actually takes effect, and its detailed guidelines. Timing and the strictness of review criteria will determine how fast auto loss ratios improve."
-   }
-  },
-  {
-   "when": {
-    "ko": "2026년 9~10월",
-    "en": "September-October 2026"
-   },
-   "what": {
-    "ko": "손해보험협회를 통해 공개되는 월별·누적 자동차보험 손해율. 상반기 대형 4개사 누적 84.5%(전년 대비 +1.9%포인트) 대비 장마·휴가철 이후 수치가 어떻게 변하는지가 확인 지표다.",
-    "en": "Monthly and cumulative auto loss ratios published via the General Insurance Association. The check is how figures evolve after the monsoon and holiday season versus the 84.5% first-half average for the top four insurers, up 1.9 percentage points year on year."
-   }
-  },
-  {
-   "when": {
-    "ko": "2026년 4분기",
-    "en": "4Q 2026"
-   },
-   "what": {
-    "ko": "금융위원회·금융감독원의 해약환급금준비금 제도 개선안 발표. 당국은 내년 기본 자본비율 규제 도입에 맞춰 근본적 개선안을 검토 중이라고 밝혔고, 개선 내용에 따라 배당 재원 발생 여부가 갈린다.",
-    "en": "Publication of the FSC/FSS reform plan for surrender-value reserves. Authorities said they are reviewing a fundamental overhaul in step with next year's core-capital ratio rules, and the details will determine whether distributable resources emerge."
+    "ko": "손해보험협회 월별 자동차보험 손해율 공시에서 3분기 누적 흐름을 확인. 상반기 누적 84.1%(현대해상)에서 방향이 바뀌는지가 하반기 자동차보험 손익의 1차 지표다.",
+    "en": "Track the cumulative third-quarter trend in the General Insurance Association's monthly auto loss ratio data. Whether the company's 84.1% first-half cumulative figure changes direction is the first read on second-half auto results."
    }
   },
   {
@@ -182,46 +162,66 @@
     "en": "November 2026"
    },
    "what": {
-    "ko": "3분기 실적 발표. 2025년 3분기 영업이익 7,077억원이라는 높은 기준선과 비교되며, 일회성 환입 없이도 장기보험 예실차 개선이 유지되는지, 투자손익이 1분기 61억원 수준에서 얼마나 정상화되는지가 관전 포인트다.",
-    "en": "Third-quarter results. They will be compared against a high base of 707.7 billion won of operating profit in 3Q25; key points are whether long-term experience-variance improvement holds without one-off reversals and how far investment income normalises from the 6.1 billion won level seen in 1Q."
+    "ko": "2026년 3분기 실적 발표. 보험금 예실차와 CSM 잔액(6월 말 9조8,944억원), K-ICS 비율(6월 말 209.0%)이 상반기 개선세를 유지하는지, 그리고 신계약 CSM 감소 흐름이 계속되는지를 확인할 자리다.",
+    "en": "Third-quarter 2026 results. Watch whether the claims experience variance, the contractual service margin (KRW 9.89 trillion at end-June) and the K-ICS ratio (209.0% at end-June) sustain the first-half improvement, and whether the decline in new-business margin continues."
    }
   },
   {
    "when": {
-    "ko": "2026년 4분기~2027년",
-    "en": "4Q 2026 through 2027"
+    "ko": "2026년 11월",
+    "en": "November 2026"
    },
    "what": {
-    "ko": "자사주 소각 이행 상황. 4.65%는 4월에 소각을 마쳤고 나머지는 2027년까지 순차 소각 예정이므로, 추가 소각 공시 시점과 규모가 발행주식수 변화와 주당 지표에 직접 반영된다.",
-    "en": "Execution of treasury-share cancellations. 4.65% was retired in April with the remainder scheduled sequentially through 2027, so the timing and size of further cancellation filings will feed directly into share count and per-share metrics."
+    "ko": "실손보험 선택형 할인 특약 시행 예정(금융위원회 발표 기반 보도). 1~2세대 가입자의 전환·유지 선택이 실손 손해율과 위험보험료 구성에 어떻게 반영되는지가 관전 포인트다.",
+    "en": "The optional discount rider for indemnity health insurance is scheduled to take effect (per reports based on Financial Services Commission announcements). The key question is how first- and second-generation policyholders' switch-or-stay decisions feed into loss ratios and the risk-premium mix."
+   }
+  },
+  {
+   "when": {
+    "ko": "2026년 4분기",
+    "en": "Fourth quarter of 2026"
+   },
+   "what": {
+    "ko": "간편보험 신규담보 손해율 가정 변경 적용과 연말 계리가정 재산정. 2025년 4분기처럼 분기 적자(연결 영업이익 -1,279억원)가 재현되는지, CSM 조정 규모가 어느 정도인지가 핵심 변수다.",
+    "en": "Application of the changed loss-ratio assumption for new simplified-underwriting coverage and the year-end actuarial reset. The key variables are whether a quarterly loss recurs as in 4Q25 (consolidated operating profit of KRW -127.9 billion) and how large the margin adjustment proves to be."
+   }
+  },
+  {
+   "when": {
+    "ko": "2026년 말~2027년 초",
+    "en": "Late 2026 to early 2027"
+   },
+   "what": {
+    "ko": "해약환급금준비금 제도 개선안 확정 여부와 2027년 기본자본비율 규제 시행, 그리고 2026년 결산 배당 결정. 배당가능이익(2분기 말 마이너스 6,600억원)이 플러스로 전환되는지가 회사가 제시한 배당 재개 조건이다.",
+    "en": "Whether the surrender-value reserve revision is finalized, the 2027 start of the tier-one capital requirement, and the fiscal-2026 dividend decision. The company's stated condition for restarting dividends is distributable income turning positive from negative KRW 660 billion at end-2Q26."
    }
   }
  ],
  "verdict": {
   "body": {
-   "ko": "현대해상의 2025년 연간 실적은 보험수익 14조1,429억원, 영업이익 1조2,610억원, 지배주주 순이익 1조198억원으로 3년 연속 개선됐지만, 4분기 영업손실 1,279억원이 보여주듯 분기 변동성이 크다. 2026년 1분기 영업이익 3,245억원·순이익 2,364억원으로 흑자 전환한 데 이어, 회사 발표 기준 2분기 순이익 3,918억원(+58.2%), 상반기 6,151억원(+36.4%)으로 회복 흐름이 이어졌다. 다만 개선의 상당 부분이 예실차 적자 축소와 계리가정 선진화 가이드라인 반영에 따른 일회성 환입과 맞물려 있고, 신계약 CSM은 상반기 9,509억원으로 전년 대비 감소했다. 건전성 측면에서는 CSM 9조8,944억원, 킥스 209.0%로 지표가 개선됐으나, 자동차보험 상반기 102억원 적자와 업계 전반의 손해율 상승 압력은 남아 있다. 주주환원은 2023 회계연도 이후 배당 중단, 올해도 무배당 기조 전망이라는 사실과 자사주 9.3% 소각 결정 및 순차 이행이라는 사실이 병존한다. 결국 이 종목의 관전 포인트는 이익 회복의 지속성, 자동차보험 손해율과 8주룰 시행, 그리고 해약환급금준비금 제도 개선 여부라는 세 갈래이며, 각 갈래의 확인 시점이 서로 다르다는 점을 감안해 독자가 직접 판단할 사안이다. 본 리포트는 정보 제공 목적이며 투자 권유가 아니다.",
-   "en": "Hyundai Marine's FY2025 results - insurance revenue of 14.14 trillion won, operating profit of 1.26 trillion won and net profit attributable of 1.02 trillion won - marked a third consecutive year of improvement, yet the 127.9 billion won operating loss in 4Q shows how volatile quarterly earnings can be. After returning to profit in 1Q26 with 324.5 billion won of operating profit and 236.4 billion won of net profit, the recovery continued with 2Q net profit of 391.8 billion won (+58.2%) and first-half net profit of 615.1 billion won (+36.4%) on the company's own disclosure. A significant part of that gain, however, is linked to a narrower experience-variance deficit and one-off reversals from applying advanced actuarial assumption guidelines, while first-half new-business CSM of 950.9 billion won declined year on year. On soundness, metrics improved to CSM of 9.89 trillion won and a K-ICS ratio of 209.0%, but the 10.2 billion won first-half auto loss and industry-wide loss-ratio pressure persist. On shareholder returns, two facts coexist: dividends have been suspended since FY2023 with no payout expected this year, and 9.3% of shares are set for cancellation, being retired in stages. Ultimately the watch points fall into three strands - the durability of the earnings recovery, auto loss ratios and the eight-week rule, and reform of surrender-value reserves - each on a different timeline, leaving the assessment to the reader. This report is for information purposes only and is not investment advice."
+   "ko": "확정 재무만 놓고 보면 이 회사의 이익은 2023년 저점(지배주주 순이익 6,078억원)에서 2025년 1조198억원까지 회복됐고, 2026년 2분기 연결 영업이익 5,287억원·순이익 4,183억원으로 직전 분기 대비 개선 폭이 컸다. 다만 2025년 4분기 적자가 보여주듯 이익의 분기 진폭은 매출이 아니라 계리적 가정과 손실부담계약, 예실차 같은 항목에서 나온다. 강세 논리는 장기보험 언더라이팅 회복, K-ICS·기본자본·듀레이션 갭 등 건전성 지표의 방향 전환, 실손 제도 개편에 대한 높은 노출도로 요약된다. 약세 논리는 연말 가정 재산정에 따른 CSM 조정 부담, 제도 변경에 종속된 배당 재개 시점, 84%대 자동차보험 손해율과 상반기 55.3% 감소한 투자손익이다. 증권가에서는 2026년 2분기 실적 발표 이후 목표주가 상향이 잇따랐으나, 이는 각 증권사의 견해이며 코사이의 판단이 아니다. 결국 다음 확인 지점은 3분기 실적에서 예실차와 CSM의 지속성, 4분기 가정 변경의 실제 영향, 그리고 배당가능이익의 플러스 전환 여부다. 본 리포트는 정보 제공을 목적으로 하며 매수·매도 의견이나 목표주가를 포함하지 않는다.",
+   "en": "On the audited figures alone, earnings recovered from the 2023 trough (net profit attributable to owners of KRW 607.8 billion) to KRW 1,019.8 billion in 2025, and 2Q26 consolidated operating profit of KRW 528.7 billion and net profit of KRW 418.3 billion marked a large sequential improvement. Yet as the 4Q25 loss showed, the quarterly amplitude of profit comes not from the top line but from actuarial assumptions, onerous-contract costs and claims experience variances. The bullish case rests on the long-term underwriting recovery, the turn in solvency metrics such as K-ICS, tier-one capital and the duration gap, and heavy exposure to the indemnity health insurance overhaul. The bearish case rests on the year-end margin adjustment tied to reset assumptions, a dividend restart contingent on regulatory change, auto loss ratios in the mid-84% range and investment profit down 55.3% in the first half. Brokerages raised target prices repeatedly after the 2Q26 results, but those are their own views, not KOSAI's. The next checkpoints are the durability of claims experience and margin trends in third-quarter results, the actual impact of the fourth-quarter assumption change, and whether distributable income turns positive. This report is for information purposes and contains no buy or sell opinion and no target price."
   }
  },
  "sources": [
-  "https://www.mt.co.kr/stock/2026/05/18/2026051809040770320",
-  "https://m.irgo.co.kr/IR-ROOM/001450",
+  "https://www.nspna.com/news_issue/?mode=view&issue_id=64&newsid=824396",
   "https://comp.wisereport.co.kr/company/c1080001.aspx?cmp_cd=001450&cn=",
-  "http://www.opinionnews.co.kr/news/articleView.html?idxno=138663",
-  "https://www.businesspost.co.kr/BP?command=article_view&num=436336",
-  "https://file.alphasquare.co.kr/media/pdfs/company-report/_260518%20%ED%98%84%EB%8C%80%ED%95%B4%EC%83%81_%EC%A0%84%EB%B0%B0%EC%8A%B9_911_Online%20report%20_%206_10p_%ED%98%84%EB%8C%80%ED%95%B4%EC%83%81.pdf",
+  "https://www.huffingtonpost.kr/article/259582",
+  "https://www.news2day.co.kr/article/20260814500051",
+  "https://m.irgo.co.kr/IR-ROOM/001450",
+  "https://www.huffingtonpost.kr/article/259687",
+  "https://www.investing.com/equities/hyundai-mar-fi-earnings",
+  "https://dazabi.com/insurance_magazine/article.php?id=41662",
+  "https://newsway.co.kr/news/view?ud=2026081808120173374",
+  "https://www.betanews.net/article/view/beta202608180003",
   "https://www.bondweb.co.kr/_research/downloadPage.asp?number=889024&gn=1",
-  "https://m.thebell.co.kr/m/newsview.asp?svccode=02&newskey=202605151505138200101569",
-  "https://www.etoday.co.kr/news/view/2612814",
-  "https://v.daum.net/v/20260810150603748",
-  "https://www.newspim.com/news/view/20260422000050",
-  "https://www.bosoop.com/4de9385b-41c7-4f8a-ac00-6d8ad7c32ad7/",
-  "https://www.thebell.co.kr/free/content/ArticleView.asp?key=202511110704146000101142",
-  "https://www.g-enews.com/article/Securities/2026/02/20260224080851356544093b5d4e_1",
-  "https://v.daum.net/v/20251019130306109",
-  "https://www.hyundai.com/worldwide/en/company/ir/stock-information/shareholder-return-policy",
-  "https://alphabiz.co.kr/news/view/1065567503272667",
-  "https://www.newsspace.kr/news/article.html?no=14959"
+  "https://m.joseilbo.com/news/view.htm?newsid=559716",
+  "https://marketin.edaily.co.kr/News/ReadE?newsId=02522326642403768",
+  "https://file.alphasquare.co.kr/media/pdfs/company-report/_260518%20%ED%98%84%EB%8C%80%ED%95%B4%EC%83%81_%EC%A0%84%EB%B0%B0%EC%8A%B9_911_Online%20report%20_%206_10p_%ED%98%84%EB%8C%80%ED%95%B4%EC%83%81.pdf",
+  "https://www.hellot.net/news/article.html?no=110649",
+  "https://m.irgo.co.kr/IR-COMP/001450/",
+  "https://www.newsquest.co.kr/news/articleView.html?idxno=266746",
+  "https://alphasquare.co.kr/home/stock-summary?code=001450"
  ],
  "v": 2,
  "model": "claude-opus-5",
@@ -233,11 +233,11 @@
   "보험"
  ],
  "market": "코스피",
- "reportDate": "2026-08-15",
- "reportTs": "2026-08-15 12:15",
- "dataDate": "20260821",
+ "reportDate": "2026-09-05",
+ "reportTs": "2026-09-05 05:51",
+ "dataDate": "20260904",
  "quant": {
-  "asOf": "2026-08-23",
+  "asOf": "2026-09-04",
   "fs_basis": "연결(CFS) · DART 공시 확정치 · 지배주주 기준 순이익",
   "annual": [
    {
@@ -287,6 +287,23 @@
     "opm": null,
     "roe": 10.0,
     "debt_ratio": 628.1
+   },
+   {
+    "year": 2022,
+    "rev": 12122547458787,
+    "op": 1791975242674,
+    "np": 1294975508162,
+    "np_owner": 1294975508162,
+    "equity": 9508086230575,
+    "equity_owner": 9508086230575,
+    "equity_nci": 0,
+    "liab": 36744509270264,
+    "cfo": 910796383688,
+    "eps_basic": 16286,
+    "src": "전기 비교치",
+    "opm": null,
+    "roe": 13.6,
+    "debt_ratio": 386.5
    }
   ],
   "quarterly": [
@@ -322,21 +339,22 @@
    }
   ],
   "valuation": {
-   "price": 49750,
-   "mcap": 4.2411,
+   "price": 51100,
+   "mcap": 4.3562,
    "shares": 85248250,
    "total_shares": 89400000,
    "wavg_shares": 78856975,
-   "per": 3.345,
+   "per": 3.435,
    "eps": 14875,
-   "pbr": 0.5991,
+   "pbr": 0.6154,
    "bps": 83037,
    "roe_ttm": 21.0,
    "ttm_window": "2025Q3~2026Q2",
    "ttm_np_owner": 1170050516958,
    "ccy": "KRW",
    "bps_src": "자체",
-   "pbr_krx": 0.76,
+   "eps_src": "공시",
+   "pbr_krx": 0.78,
    "bps_krx": 65772.0,
    "basis": "PER·EPS·PBR·BPS 모두 자체 산출(네이버·토스와 동일 방식) · 배당은 DART 공시 주당현금배당금(보완:KRX) ÷ 현재가",
    "dps": 0.0,
