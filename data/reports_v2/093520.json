@@ -1,254 +1,217 @@
 {
  "title": {
-  "ko": "FPGA 성장세와 자사주 소각 드라이브",
-  "en": "FPGA Growth Meets an Aggressive Buyback Drive"
+  "ko": "비메모리 유통 매커스, 실적 회복과 자사주 소각 병행",
+  "en": "Makus: Earnings Recovery Paired with Treasury Share Retirement"
  },
  "lead": {
-  "ko": "매커스는 AI발 비메모리 반도체 수요 확대에 따른 실적 개선과 대규모 자사주 소각 계획을 동시에 진행하며 주주환원과 사업 성장 두 축에서 변화를 보이고 있다.",
-  "en": "Makus is showing change on two fronts at once — earnings improvement driven by AI-related demand for non-memory semiconductors, and a large-scale treasury share cancellation program aimed at shareholder returns."
+  "ko": "매커스는 AMD·르네사스·MACOM 등 글로벌 비메모리 반도체 제조사의 국내 기술유통 파트너로, 2023년 실적 저점 이후 매출·이익이 회복세를 보이는 가운데 대규모 자사주 소각을 병행하고 있다.",
+  "en": "Makus, the domestic technical-distribution partner for global non-memory semiconductor makers such as AMD, Renesas, and MACOM, has seen revenue and profit recover since a 2023 trough while carrying out a large-scale treasury share retirement program."
  },
  "keypoints": [
   {
-   "ko": "2025년 연결 매출 2,272억원(+13.9%), 영업이익 291억원(+8.2%), 지배주주 순이익 231억원(+14.2%)으로 3년 연속 외형 성장이 이어졌다.",
-   "en": "2025 consolidated revenue reached KRW 227.2bn (+13.9%), operating profit KRW 29.1bn (+8.2%), and owner net income KRW 23.1bn (+14.2%), marking a third straight year of top-line growth."
+   "ko": "2025년 연결 매출 2,272억원(전년 대비 +13.9%), 영업이익 291억원(+8.2%)으로 2년 연속 성장세",
+   "en": "2025 consolidated revenue reached KRW 227.2bn (+13.9% YoY) with operating profit of KRW 29.1bn (+8.2%), marking a second straight year of growth"
   },
   {
-   "ko": "2026년 1분기(매출 552.7억원)와 2분기(매출 668.4억원, 영업이익 130.4억원)에 걸쳐 실적 개선이 지속됐다.",
-   "en": "Earnings improvement continued through 2026 Q1 (revenue KRW 55.27bn) and Q2 (revenue KRW 66.84bn, operating profit KRW 13.04bn)."
+   "ko": "자사주 747만여 주(비중 46.2%) 중 600만 주를 2025~2027년 매년 200만 주씩 소각하는 다년 계획을 진행 중",
+   "en": "The company is executing a multi-year plan to retire 6 million of its roughly 7.47 million treasury shares (46.2% of shares) in annual tranches of 2 million shares from 2025 to 2027"
   },
   {
-   "ko": "회사는 2025~2027년 3년간 자사주 600만주(발행주식 대비 37.1%)를 순차 소각하는 계획을 발표했고, 2025년 7월 1차 200만주 소각을 완료했다.",
-   "en": "The company announced a plan to cancel 6 million treasury shares (37.1% of shares outstanding) over 2025-2027, and completed the first 2-million-share tranche in July 2025."
+   "ko": "2026년 1월 65억원(30만 주) 규모 자사주 추가 취득을 공시하며 주주환원 기조를 이어감",
+   "en": "In January 2026 the company disclosed an additional treasury share purchase of KRW 6.5bn (300,000 shares), extending its shareholder-return stance"
   },
   {
-   "ko": "영업이익률은 2022년 16.2%에서 2025년 12.8%로 완만히 낮아져, 외형 성장과 마진 방어 사이의 균형이 관전 포인트다.",
-   "en": "The operating margin eased from 16.2% in 2022 to 12.8% in 2025, making the balance between revenue growth and margin defense a key point to watch."
+   "ko": "분기별 매출·이익 변동성이 커 2025년 3분기에는 매출과 영업이익이 전분기 대비 크게 축소된 바 있음",
+   "en": "Quarterly revenue and profit show notable volatility, with Q3 2025 revenue and operating profit contracting sharply versus the prior quarter"
   },
   {
-   "ko": "최대주주 및 특수관계인 지분율이 11% 수준으로 낮아 경영권 안정성에 대한 논의가 자사주 소각과 병행되고 있다.",
-   "en": "With the largest shareholder and affiliated parties holding only around 11% of shares, governance-stability discussions have run alongside the buyback-cancellation program."
+   "ko": "AMD·자일링스 FPGA 및 AI 가속기 유통에 대한 의존도가 높아 특정 공급사·전방산업 사이클에 실적이 연동되는 구조",
+   "en": "Heavy reliance on distributing AMD/Xilinx FPGAs and AI accelerators means earnings are closely tied to a small number of suppliers and to end-market cycles"
   }
  ],
  "business": {
-  "ko": "매커스는 비메모리 반도체인 FPGA와 아날로그 반도체를 국내에 유통하고 기술지원을 제공하는 전문기업이다. 회사는 AMD(자일링스), 메이콤, 르네사스 등과 파트너로 FPGA 및 아날로그 반도체 솔루션을 제공하고 있다. 종속회사는 투자업과 스토리지·서버 유통 사업을 영위하고 있으며, 이 중 매커스시스템즈는 퓨어스토리지(Pure Storage)의 스토리지·서버 유통 및 유지보수 사업을 담당한다. 회사는 2006년 코아크로스의 인적분할로 설립되어 2007년 코스닥시장에 재상장했다. 매커스의 사업모델은 단순 유통에 그치지 않고, 고객사의 제품 기획 단계부터 참여해 회로 설계 등 기술 지원을 제공하며 반도체 공급으로 이어지는 개발 파트너 전략에 있다. 이러한 밀착형 기술 영업은 개발 기간 단축과 최적화된 부품 선택을 지원해 진입장벽을 형성하는 요인으로 꼽힌다. 글로벌 FPGA 시장은 AMD와 인텔 두 회사가 약 80%를 장악하는 것으로 파악되며, 매커스는 이 중 AMD 진영의 국내 파트너로서 개발부터 양산까지 통합 지원하는 구조를 갖고 있다. 이 같은 파트너십 구조는 고객사의 성장이 매커스의 매출 성장으로 연동되는 특징을 만든다.",
-  "en": "Makus is a specialized distributor and technical-support provider for non-memory semiconductors — primarily FPGAs and analog chips — in the domestic Korean market. The company partners with AMD (Xilinx), MACOM, and Renesas to supply FPGA and analog semiconductor solutions. Its subsidiaries cover investment and storage/server distribution, with Makus Systems handling distribution and maintenance of Pure Storage's storage and server products. The company was established in 2006 via a spin-off from Coacross and was re-listed on KOSDAQ in 2007. Makus's business model goes beyond simple distribution: it engages with client companies from the product-planning stage, providing circuit-design and technical support that leads into semiconductor supply, an approach the company describes as a development-partner strategy. This close technical-sales approach shortens development cycles and supports optimized component selection, which is cited as a factor creating barriers to entry. Globally, AMD and Intel are understood to control roughly 80% of the FPGA market, and Makus operates as the domestic partner within the AMD ecosystem, providing integrated support from development through mass production. This partnership structure links client-company growth directly to Makus's own revenue growth."
+  "ko": "매커스는 비메모리(시스템) 반도체인 FPGA와 아날로그 반도체를 주력으로 유통하며, 단순 판매가 아닌 고객사 제품 기획 단계부터 참여하는 기술지원형 유통 모델을 표방한다. 주요 취급 제조사는 AMD(구 자일링스), RENESAS, MACOM이며, 매출은 상품매출과 기타매출로 구분된다. FPGA 글로벌 시장은 AMD와 인텔 두 회사가 약 80%를 장악하고 있는 것으로 파악되며, 매커스는 AMD의 국내 핵심 파트너로 개발부터 양산까지 통합 지원하는 구조를 갖고 있다. 종속회사로는 매커스인베스트먼트(투자업)와 매커스시스템즈가 있으며, 매커스시스템즈는 PURE STORAGE의 스토리지·서버 유통과 유지보수 사업을 영위한다. 과거 리포트에서는 주요 수요처로 삼성전자 대상 반도체 장비 회사, 자동차(ADAS), 데이터센터, 5G 중계기, 항공우주·방산 등 다양한 전방산업이 언급된 바 있다. 경쟁 구도로는 유니퀘스트, 에스에이엠티, 미래반도체 등 국내 비메모리·시스템반도체 유통사들이 비교 대상으로 거론된다. 자사주 비중이 유독 높았던 지배구조 특성상, 최근에는 소각을 병행하는 주주환원 정책이 사업 구조와 함께 회사의 정체성으로 자리잡고 있다.",
+  "en": "Makus primarily distributes non-memory (system) semiconductors, focusing on FPGAs and analog semiconductors, and positions itself as a technical-support distributor that engages with customers from the product-planning stage rather than simple resale. Its key principal suppliers are AMD (formerly Xilinx), RENESAS, and MACOM, with sales split between merchandise sales and other sales. The global FPGA market is estimated to be roughly 80% controlled by AMD and Intel combined, and Makus serves as AMD's core domestic partner, providing integrated support from development through mass production. Subsidiaries include Makus Investment (an investment business) and Makus Systems, which distributes and maintains storage and servers for PURE STORAGE. Past industry reports have cited demand drivers including semiconductor equipment makers serving Samsung Electronics, automotive ADAS, data centers, 5G repeaters, and aerospace/defense. Comparable domestic non-memory/system-semiconductor distributors mentioned in industry coverage include Uniquest, SAMT, and Mirae Semiconductor. Given the company's historically unusual concentration of treasury shares, an ongoing shareholder-return program combining buybacks with retirement has become as much a part of its identity as its core distribution business."
  },
  "earnings": {
-  "ko": "매커스의 연결 매출은 2022년 1,937억원에서 2023년 1,754억원으로 일시 감소했으나 2024년 1,996억원, 2025년 2,272억원으로 다시 확대되며 회복 흐름을 보였다. 영업이익은 2022년 314.5억원에서 2023년 263.5억원, 2024년 268.9억원, 2025년 291.0억원으로 등락을 거쳐 다시 성장세로 돌아섰다. 다만 영업이익률은 2022년 16.2%에서 2023년 15.0%, 2024년 13.5%, 2025년 12.8%로 매출 증가에도 완만히 낮아지는 추세를 보였다. 지배주주 순이익은 2022년 221.3억원에서 2025년 230.5억원으로 늘었고, 기본 EPS는 1,854원(2022년)에서 2,604원(2025년)으로 상승했다. 영업활동현금흐름(CFO)은 2023년 -519.2억원의 순유출을 기록한 뒤 2024년 493.6억원, 2025년 709.7억원으로 크게 개선돼 재고·매출채권 등 운전자본 변동성이 컸음을 시사한다. 분기 흐름을 보면 2025년 2분기 매출 656.8억원·영업이익 93.3억원에서 3분기 매출 493.3억원·영업이익 38.5억원으로 둔화된 뒤, 4분기 매출 460.0억원·영업이익 62.4억원으로 일부 회복했다. 2026년에는 1분기 매출 552.7억원·영업이익 90.9억원, 2분기 매출 668.4억원·영업이익 130.4억원으로 두 분기 연속 개선되며 분기 기준 영업이익이 최대 수준을 기록했다. 특히 2026년 2분기 지배주주 순이익(141.3억원)이 영업이익(130.4억원)을 웃돌아, 영업외 부문에서도 유의미한 이익 기여가 있었음을 보여준다.",
-  "en": "Makus's consolidated revenue dipped from KRW 193.8bn in 2022 to KRW 175.4bn in 2023 before recovering to KRW 199.6bn in 2024 and KRW 227.2bn in 2025. Operating profit fluctuated from KRW 31.45bn (2022) to KRW 26.35bn (2023) and KRW 26.89bn (2024) before rising to KRW 29.10bn in 2025. The operating margin, however, eased steadily from 16.2% in 2022 to 15.0%, 13.5%, and 12.8% through 2025 despite the revenue recovery. Owner net income rose from KRW 22.13bn (2022) to KRW 23.05bn (2025), while basic EPS climbed from KRW 1,854 to KRW 2,604 over the same period. Operating cash flow swung from a net outflow of KRW 51.9bn in 2023 to inflows of KRW 49.4bn (2024) and KRW 71.0bn (2025), pointing to significant working-capital volatility. On a quarterly basis, revenue and operating profit slowed from KRW 65.68bn/KRW 9.33bn in 2025 Q2 to KRW 49.33bn/KRW 3.85bn in Q3, before partially recovering to KRW 46.0bn/KRW 6.24bn in Q4. In 2026, results improved for two consecutive quarters — KRW 55.27bn/KRW 9.09bn in Q1 and KRW 66.84bn/KRW 13.04bn in Q2 — with Q2 marking the highest quarterly operating profit in the dataset. Notably, Q2 2026 owner net income (KRW 14.13bn) exceeded operating profit (KRW 13.04bn), indicating a meaningful non-operating contribution to earnings that quarter."
+  "ko": "연간 실적을 보면 2022년 매출 1,938억원·영업이익 315억원(영업이익률 16.2%)에서 2023년 매출 1,754억원(-9.5%)·영업이익 263억원(-16.2%)으로 반도체 업황 부진의 영향을 받았다. 이 시기 영업활동현금흐름도 -519억원으로 적자를 기록해 재고·매출채권 부담이 커졌음을 시사한다. 2024년에는 매출 1,996억원(+13.8%)·영업이익 269억원(+2.0%)으로 회복이 시작됐고, 영업현금흐름도 +494억원으로 정상화됐다. 2025년에는 매출 2,272억원(+13.9%)·영업이익 291억원(+8.2%)·지배주주순이익 231억원(+14.2%)을 기록하며 매출 성장이 이어졌으나, 영업이익률은 12.8%로 2022년 16.2% 대비 완만히 낮아지는 흐름을 보였다. 분기 단위로는 변동성이 두드러진다. 2025년 2분기 매출 657억원·영업이익 93억원에서 3분기에는 매출 493억원·영업이익 39억원으로 급감했고, 4분기에는 매출 460억원·영업이익 62억원으로 일부 회복했다. 2026년에는 1분기 매출 553억원·영업이익 91억원, 2분기 매출 668억원·영업이익 130억원으로 매출·영업이익 모두 개선됐는데, 특히 2026년 2분기 지배주주순이익은 141억원으로 같은 분기 영업이익(130억원)을 웃돌아 비영업 요인이 반영됐을 가능성을 시사하며, 세부 내역은 후속 공시로 확인이 필요하다. 2025년 3분기~2026년 2분기 4개 분기 합산 지배주주순이익은 292억원으로, 연간 기준 이익 규모를 웃도는 수준까지 올라왔다.",
+  "en": "On an annual basis, revenue fell from KRW 193.8bn and operating profit of KRW 31.5bn (16.2% operating margin) in 2022 to KRW 175.4bn (-9.5%) and KRW 26.3bn (-16.2%) in 2023, reflecting a broader semiconductor downturn; operating cash flow that year was negative at KRW -51.9bn, suggesting a buildup in inventory and receivables burden. Recovery began in 2024 with revenue of KRW 199.6bn (+13.8%) and operating profit of KRW 26.9bn (+2.0%), while operating cash flow normalized to KRW +49.4bn. In 2025, revenue reached KRW 227.2bn (+13.9%), operating profit KRW 29.1bn (+8.2%), and owners' net income KRW 23.1bn (+14.2%), continuing the growth trend, though the operating margin eased to 12.8% from 16.2% in 2022. Quarterly results show pronounced volatility: revenue of KRW 65.7bn and operating profit of KRW 9.3bn in Q2 2025 dropped sharply to KRW 49.3bn and KRW 3.9bn in Q3, before partially recovering to KRW 46.0bn and KRW 6.2bn in Q4. In 2026, both revenue and operating profit improved further, with Q1 at KRW 55.3bn/KRW 9.1bn and Q2 at KRW 66.8bn/KRW 13.0bn; notably, Q2 2026 owners' net income of KRW 14.1bn exceeded that quarter's operating profit of KRW 13.0bn, pointing to a non-operating factor whose specifics warrant confirmation through subsequent disclosures. Owners' net income summed over the four quarters from Q3 2025 through Q2 2026 reached KRW 29.2bn, a level that now exceeds recent full-year figures."
  },
  "industry": {
-  "ko": "비메모리(시스템) 반도체 중 FPGA는 회로를 용도에 맞게 재구성할 수 있어 AI·데이터센터·자율주행 등 변화가 빠른 응용처에서 맞춤형 솔루션으로 활용된다. 글로벌 FPGA 시장은 AMD와 인텔 두 회사가 약 80%를 점유하는 것으로 파악되며, 매커스는 국내에서 AMD 진영 제품의 유통 및 기술지원을 전담하는 파트너 지위를 갖고 있다. 업계에서는 AI 데이터센터 및 고성능컴퓨팅 수요 확대가 FPGA와 같은 AI 가속기 시장의 성장으로 이어지고 있다는 평가가 나온다. 메모리 반도체와 비메모리 반도체는 수요가 상호 보완적인 관계에 있어, 최근의 AI 메모리 반도체 수요 확산이 비메모리 반도체 쪽 수요에도 파급 효과를 낼 수 있다는 시각도 있다. 경쟁 구도 측면에서는 소수의 글로벌 공급사(AMD·메이콤·르네사스 등)에 대한 유통 대리점 지위가 진입장벽이자 동시에 공급사 정책 변화에 대한 의존 리스크로 작용한다. 국내 비메모리 반도체 유통 시장에는 여러 중소형 유통사가 존재하나, 매커스는 개발 초기 단계부터 개입하는 기술 밀착형 영업으로 차별화를 추구하고 있다.",
-  "en": "Among non-memory semiconductors, FPGAs can be reconfigured for specific applications, making them well suited to fast-changing use cases such as AI, data centers, and autonomous driving. AMD and Intel together are estimated to control roughly 80% of the global FPGA market, and Makus holds a distribution and technical-support partner role for AMD-line products in Korea. Industry observers note that growing demand for AI data centers and high-performance computing has been translating into growth for AI-accelerator markets such as FPGAs. Because memory and non-memory semiconductor demand tend to move in a complementary fashion, some view the recent surge in AI-related memory-chip demand as having spillover effects on non-memory chip demand as well. From a competitive standpoint, Makus's distributor status with a limited number of global suppliers (AMD, MACOM, Renesas, etc.) functions both as an entry barrier and as a dependency risk tied to those suppliers' policy decisions. Korea's non-memory semiconductor distribution market includes several small and mid-sized distributors, but Makus differentiates itself through close technical engagement starting at the early development stage of client products."
+  "ko": "글로벌 반도체 시장에서 시스템(비메모리) 반도체는 전체의 약 70%를 차지하는 것으로 추정되며, AI 서버·데이터센터 투자 확대가 CPU·GPU 외에 FPGA·아날로그·전력 반도체 수요로도 파급되는 국면이 이어지고 있다. FPGA는 회로를 용도에 맞게 재구성할 수 있어 GPU 대비 적은 전력으로 특정 연산을 처리할 수 있다는 점에서 AI 가속기 대체·보완재로 주목받고 있으며, 이 시장은 AMD와 인텔 두 곳이 대부분을 장악하는 과점 구조다. 매커스는 이 중 AMD 진영의 국내 기술유통 파트너로서 시장 성장의 수혜 구조에 위치해 있다. 다만 반도체 유통업은 제조사의 생산·공급 정책, 전방산업의 재고 조정 사이클에 실적이 민감하게 반응하는 특성이 있으며, 2023년의 매출·이익 동반 하락과 영업현금흐름 적자는 이런 사이클 리스크를 보여준 사례다. 종속회사 매커스시스템즈의 PURE STORAGE 스토리지·서버 유통 사업은 고성능 컴퓨팅·데이터센터 수요와 연계되어 있어, FPGA 중심의 본업과 함께 AI 인프라 확산에 대한 노출을 넓히는 역할을 한다. 국내 비교군으로는 유니퀘스트, 에스에이엠티, 미래반도체 등이 있으며, 각기 취급 제조사·고객군이 달라 직접적인 점유율 비교보다는 개별 공급망 내 위치로 이해할 필요가 있다.",
+  "en": "System (non-memory) semiconductors are estimated to account for roughly 70% of the overall global semiconductor market, and expanding AI server and data-center investment continues to spill over from CPUs and GPUs into demand for FPGAs, analog, and power semiconductors. FPGAs, which can be reconfigured for specific workloads, are drawing attention as a complement or alternative to GPUs in AI acceleration given their lower power consumption for certain computations, and this market is largely an oligopoly dominated by AMD and Intel. Makus, as the domestic technical-distribution partner within the AMD camp, sits within the beneficiary chain of this market's growth. That said, semiconductor distribution is inherently sensitive to manufacturers' production and supply policies and to inventory-adjustment cycles in end markets, and the simultaneous revenue and profit decline along with negative operating cash flow in 2023 illustrated this cyclical risk. Subsidiary Makus Systems' distribution of PURE STORAGE storage and servers is tied to high-performance computing and data-center demand, broadening the group's exposure to AI infrastructure expansion alongside its core FPGA business. Domestic peers cited for comparison include Uniquest, SAMT, and Mirae Semiconductor, though each carries different supplier lineups and customer bases, making individual supply-chain positioning a more useful lens than direct market-share comparison."
  },
  "outlook": {
-  "ko": "매커스는 2025~2027년 3년간 보유 자사주 747만2,904주(발행주식 대비 46.2%) 중 600만주(37.1%)를 매년 200만주씩 순차 소각하는 계획을 공시했으며, 2025년 7월 1차 소각을 완료했다. 회사는 이와 함께 연간 별도 기준 당기순이익의 30% 이상을 배당·자사주 매입 및 소각 등으로 주주에게 환원하겠다는 정책도 밝혔다. 2026년 1월 29일에는 추가로 보통주 30만주(약 65.1억원) 규모의 장내 직접 취득을 공시했으며, 취득 기간은 2월 초부터 4월 말까지로 설정됐다. 시장에서는 이번 2026년 200만주 소각이 완료되면 자사주 비중이 약 28.6%까지 낮아질 것으로, 신주 발행이 없다는 가정 하에 2027년 최종 소각 후에는 약 14.5%까지 낮아질 것으로 전망된 바 있다. 이러한 주주환원 드라이브는 2025년 하반기 자사주 소각 의무화를 담은 상법 개정 논의가 국회에서 진행되던 시점에 선제적으로 발표됐다는 점에서, 정책 환경 변화에 대한 대응 성격도 있다. 회사 측은 기존 거래처 유지와 신규 거래처 확보에 집중하겠다는 방침을 밝혀왔으며, 매년 큰 폭의 성장보다는 꾸준한 실적 흐름을 추구한다는 입장을 유지하고 있다.",
-  "en": "Makus disclosed a plan to sequentially cancel 6 million of its 7,472,904 treasury shares (46.2% of shares outstanding) — 2 million shares per year — over 2025-2027, completing the first tranche in July 2025. Alongside this, the company stated a policy of returning at least 30% of annual standalone net income to shareholders through dividends and share buybacks/cancellations. On January 29, 2026, it disclosed an additional direct market purchase of 300,000 common shares (about KRW 6.51bn), with the acquisition window running from early February through the end of April. Market commentary suggested that once the 2026 two-million-share cancellation is completed, the treasury share ratio would fall to about 28.6%, and assuming no new share issuance, to roughly 14.5% after the final 2027 tranche. This shareholder-return push was announced preemptively while National Assembly discussions on legislation mandating treasury share cancellation were underway in the second half of 2025, suggesting the move also reflects an anticipatory response to the policy environment. The company has stated it intends to focus on retaining existing customers while pursuing new ones, favoring steady performance over large year-to-year swings in growth."
+  "ko": "회사는 주주환원 계획에 따라 2025년부터 2027년까지 매년 200만 주씩 총 600만 주의 자사주를 소각할 계획이며, 2025년 7월 1차 200만 주 소각을 완료했다. 2026년 1월에는 30만 주(약 65억원) 규모의 추가 자사주 취득을 공시해 2월부터 매입에 들어갔으며, 계획대로 2026년분 200만 주 소각이 이어질지가 관전 포인트다. 회사 측은 연간 별도 순이익의 30% 이상을 배당과 자사주 매입·소각에 활용하겠다는 방침을 밝힌 바 있으며, 배당과 소각 간 비중은 이사회가 탄력적으로 결정한다는 입장이다. 사업 측면에서는 AI 데이터센터·자율주행·로봇 등 신성장 분야에서 FPGA 및 AI 가속기 수요 확대가 이어질 것으로 업계에서는 보고 있으며, 매커스시스템즈의 스토리지·서버 유통 사업도 고성능 컴퓨팅 수요와 맞물려 있다는 평가가 나온다. 회사 관계자는 기존 고객사 유지와 신규 거래처 확보에 주력하겠다는 방침을 밝혔으며, 매년 큰 폭의 성장보다는 꾸준한 성장을 추구한다는 입장을 나타냈다. 소각 계획이 예정대로 진행되면 자사주 비중은 2025년 이전 46%대에서 2026년에는 28% 수준까지, 이후 추가 소각이 끝나면 더 낮아질 것으로 전망된 바 있다.",
+  "en": "Under its shareholder-return plan, the company intends to retire a total of 6 million treasury shares in annual tranches of 2 million shares from 2025 through 2027, having completed the first 2-million-share retirement in July 2025. In January 2026 it disclosed an additional treasury share purchase of 300,000 shares (approximately KRW 6.5bn), which began in February, and whether the 2026 tranche of 2 million shares is subsequently retired as planned is a key point to watch. Management has stated a policy of allocating 30% or more of annual standalone net income to dividends and share buybacks/retirements, with the board deciding the mix between the two flexibly. On the business side, industry commentary points to continued FPGA and AI-accelerator demand growth from AI data centers, autonomous driving, and robotics, with Makus Systems' storage and server distribution business also seen as linked to high-performance computing demand. Company representatives have indicated a focus on retaining existing customers while securing new accounts, characterizing their approach as pursuing steady rather than sharply accelerating growth. If the retirement schedule proceeds as planned, the treasury share ratio was projected to fall from above 46% before 2025 to around 28% in 2026, with further declines expected once subsequent tranches are completed."
  },
  "valuation_comment": {
-  "ko": "매커스의 주가는 자사주 소각 발표가 이어진 2025년 하반기 이후 큰 변동성을 보이며 거래돼 왔다. 순자산가치 대비로는 최근 주가가 순자산 대비 일정한 프리미엄이 실린 구간에서 거래되는 모습으로, 제공된 주당순자산(BPS)은 1만 5천원대 수준이다. 다년간의 실적 흐름을 보면 회사는 적자 없이 흑자 기조를 유지해왔고, 최근 들어 이익 규모가 확대되는 회복세를 보이고 있다. 배당 측면에서는 최근 연도 주당 현금배당금이 1,200원으로 확인되며, 회사는 별도 기준 순이익의 30% 이상을 주주환원에 활용하겠다는 정책을 유지하고 있다. 다만 이러한 배당 정책의 실제 반영 정도와 향후 소각 진행 속도는 매 분기 공시를 통해 확인이 필요한 부분이다. 결국 매커스의 밸류에이션은 실적 개선 흐름과 자사주 소각을 통한 주당 가치 제고 기대가 동시에 반영되는 구조로 볼 수 있으며, 이 두 요인의 상대적 비중을 어떻게 평가하는지에 따라 시장의 시각이 달라질 수 있다.",
-  "en": "Makus's share price has traded with considerable volatility since the wave of buyback-cancellation announcements began in the second half of 2025. Relative to net asset value, the stock has recently traded at a level carrying a premium over book value, with the provided book value per share (BPS) sitting in the KRW 15,000 range. Looking at the multi-year earnings trend, the company has maintained profitability throughout without posting a loss, and profit levels have recently shown a recovering trend. On the dividend side, the most recent annual cash dividend per share is confirmed at KRW 1,200, and the company maintains a policy of returning at least 30% of standalone net income to shareholders. That said, how fully this dividend policy materializes and the pace of future cancellations are points that require confirmation through each quarterly disclosure. Overall, Makus's valuation can be viewed as a structure where earnings-improvement momentum and expectations for per-share value enhancement via treasury share cancellation are reflected simultaneously, and market views may differ depending on how each factor is weighted."
+  "ko": "주가순자산비율이 1배를 웃도는 수준에서 형성되어 있어, 순자산 대비 일정한 프리미엄이 반영된 구간에서 거래되고 있는 것으로 볼 수 있다. 2023년 실적 저점을 지나 2024~2025년 매출과 이익이 회복되는 흐름이 이어졌고, 자사주 소각으로 유통주식 수가 줄어드는 구조는 주당 지표 산정 방식에도 영향을 준다. 배당의 경우 회사가 연간 별도 순이익의 30% 이상을 배당·소각 등 환원에 쓰겠다는 방침을 밝힌 만큼, 향후 환원 규모의 방향성은 실적과 이사회 결정에 따라 달라질 수 있다. 다만 분기별 매출·이익 변동성이 크다는 점은 최근 네 개 분기 실적을 기준으로 밸류에이션을 해석할 때 유의할 부분이다. 과거 일부 증권사가 주주환원 계획 발표 시점에 맞춰 목표주가를 상향 조정한 사례가 있었으나, 해당 리포트들은 발표 시점이 오래되어 현재 시점의 판단 근거로 삼기는 어렵다.",
+  "en": "The price-to-book ratio sits above 1x, indicating the stock trades with some premium to net asset value. Following the 2023 earnings trough, revenue and profit recovered through 2024 and 2025, and the ongoing treasury share retirement is reducing shares outstanding, which affects how per-share metrics are calculated going forward. On dividends, since the company has stated a policy of returning 30% or more of annual standalone net income via dividends and retirements, the future direction of shareholder returns will depend on both earnings performance and board decisions. However, the considerable quarter-to-quarter volatility in revenue and profit is worth keeping in mind when interpreting valuation based on the most recent four quarters. Some brokerages previously raised their target prices around the time of shareholder-return announcements, but those reports are now dated enough that they should not be treated as a basis for current judgment."
  },
  "bull": [
   {
    "title": {
-    "ko": "AI발 비메모리 반도체 수요 확대",
-    "en": "AI-Driven Non-Memory Semiconductor Demand"
+    "ko": "다년 자사주 소각 프로그램",
+    "en": "Multi-Year Treasury Share Retirement Program"
    },
    "body": {
-    "ko": "업계에서는 AI 데이터센터와 고성능컴퓨팅 수요 확대가 FPGA와 같은 AI 가속기 시장의 성장으로 이어지고 있다는 평가가 나온다. 매커스는 이 시장에서 AMD 진영의 국내 유통·기술지원 파트너 지위를 갖고 있어 관련 수요 확산의 수혜 구조에 위치한다. 2026년 1~2분기 연속 매출·영업이익 개선은 이러한 업황 흐름과 맞물린 결과로 해석될 수 있다."
-   },
-   "en": {
-    "title": "",
-    "body": ""
+    "ko": "회사는 2025~2027년 매년 200만 주씩 총 600만 주를 소각하는 계획을 발표했고 2025년 1차 소각을 이미 완료했다. 자사주 비중이 46%대에서 단계적으로 낮아지는 구조는 주당 지표 산정 방식에 지속적인 영향을 준다. 연간 별도 순이익의 30% 이상을 배당·소각에 쓰겠다는 방침도 함께 제시됐다.",
+    "en": "The company has announced a plan to retire a total of 6 million shares in annual tranches of 2 million from 2025 through 2027, and has already completed the first tranche in 2025. The treasury share ratio declining stepwise from above 46% continues to affect how per-share metrics are calculated. Management also committed to allocating 30% or more of annual standalone net income to dividends and retirements."
    }
   },
   {
    "title": {
-    "ko": "적극적인 자사주 소각 프로그램",
-    "en": "Aggressive Treasury Share Cancellation Program"
+    "ko": "AI·비메모리 반도체 수요 확대 국면",
+    "en": "Expanding AI and Non-Memory Semiconductor Demand"
    },
    "body": {
-    "ko": "회사는 2025~2027년 3년간 자사주 600만주(37.1%)를 순차 소각하는 계획을 이미 실행 중이며, 2025년 7월 1차 소각을 완료했다. 소각이 계획대로 진행되면 유통주식 수 감소를 통해 주당 지표가 개선될 여지가 있다. 여기에 연간 별도 순이익의 30% 이상을 주주환원에 활용하겠다는 정책도 병행되고 있다."
-   },
-   "en": {
-    "title": "",
-    "body": ""
+    "ko": "AI 데이터센터·자율주행·로봇 등 신성장 분야에서 FPGA와 AI 가속기 수요가 늘어나는 흐름이 이어지고 있다는 업계 평가가 나온다. 매커스는 AMD 진영의 국내 핵심 파트너로 이 시장 확대의 공급망에 위치해 있다. 종속회사 매커스시스템즈의 스토리지·서버 유통 사업도 고성능 컴퓨팅 수요와 연계돼 있다.",
+    "en": "Industry commentary points to growing FPGA and AI-accelerator demand from AI data centers, autonomous driving, and robotics. Makus, as a core domestic partner within the AMD camp, is positioned within this expanding supply chain. Subsidiary Makus Systems' storage and server distribution business is also linked to high-performance computing demand."
    }
   },
   {
    "title": {
-    "ko": "분기 실적 개선 모멘텀",
-    "en": "Improving Quarterly Earnings Momentum"
+    "ko": "매출·현금흐름 회복 흐름",
+    "en": "Revenue and Cash Flow Recovery Trend"
    },
    "body": {
-    "ko": "2026년 1분기와 2분기 매출·영업이익이 연속으로 개선되며, 2분기 영업이익(130.4억원)은 제공된 분기 데이터 중 최대 수준을 기록했다. 2분기 지배주주 순이익(141.3억원)이 영업이익을 넘어서는 모습도 나타나 영업외 부문의 이익 기여가 있었음을 보여준다."
-   },
-   "en": {
-    "title": "",
-    "body": ""
+    "ko": "2023년 매출과 영업이익이 동반 감소하고 영업현금흐름이 적자를 기록한 이후, 2024~2025년에는 매출이 두 자릿수 성장을 이어가고 영업현금흐름도 흑자로 전환·확대됐다. 2026년 상반기에도 매출·영업이익 개선이 관찰됐다.",
+    "en": "After a 2023 period of simultaneous revenue and operating profit decline with negative operating cash flow, revenue posted double-digit growth in both 2024 and 2025 while operating cash flow turned positive and expanded. Revenue and operating profit improvement continued into the first half of 2026."
    }
   }
  ],
  "bear": [
   {
    "title": {
+    "ko": "높은 분기별 실적 변동성",
+    "en": "High Quarter-to-Quarter Earnings Volatility"
+   },
+   "body": {
+    "ko": "2025년 2분기에서 3분기로 넘어가며 매출과 영업이익이 각각 크게 축소된 사례가 있어, 분기 실적의 예측 가능성이 낮은 편이다. 특정 공급사·고객사의 발주 시점에 따라 매출 인식이 좌우될 수 있는 유통업 특성이 반영된 것으로 보인다.",
+    "en": "Revenue and operating profit both contracted sharply from Q2 to Q3 2025, indicating limited quarterly predictability. This appears to reflect the distribution business characteristic where revenue recognition can hinge on order timing from specific suppliers or customers."
+   }
+  },
+  {
+   "title": {
     "ko": "영업이익률의 완만한 하락",
     "en": "Gradual Decline in Operating Margin"
    },
    "body": {
-    "ko": "영업이익률은 2022년 16.2%에서 2025년 12.8%로 낮아졌다. 매출 규모가 커지는 동안에도 마진이 개선되지 못한 점은 제품 믹스나 경쟁 강도 변화 등을 시사할 수 있다. 향후 마진 방어 여부는 분기 실적을 통해 계속 확인이 필요하다."
-   },
-   "en": {
-    "title": "",
-    "body": ""
+    "ko": "영업이익률은 2022년 16.2%에서 2025년 12.8%로 낮아지는 흐름을 보였다. 매출 규모가 커지는 가운데서도 마진이 개선되지 못하고 있다는 점은 유통업 특유의 낮은 마진 구조와 경쟁 강도를 반영하는 것으로 볼 수 있다.",
+    "en": "The operating margin declined from 16.2% in 2022 to 12.8% in 2025. Margins failing to improve even as revenue scale grew reflects the inherently thin-margin structure and competitive intensity typical of the distribution business."
    }
   },
   {
    "title": {
-    "ko": "낮은 최대주주 지분율에 따른 경영권 리스크",
-    "en": "Governance Risk from a Thin Controlling Stake"
+    "ko": "비영업 요인에 좌우된 최근 순이익",
+    "en": "Recent Net Income Skewed by Non-Operating Factors"
    },
    "body": {
-    "ko": "최대주주 및 특수관계인의 지분율은 11% 수준에 불과한 것으로 파악된다. 대규모 자사주 소각이 진행되면 경영권 방어에 활용될 수 있는 자사주 물량이 줄어드는 만큼, 지분 구조 변화나 대량 매매 관련 공시를 주의 깊게 살펴볼 필요가 있다."
-   },
-   "en": {
-    "title": "",
-    "body": ""
-   }
-  },
-  {
-   "title": {
-    "ko": "분기별 실적 변동성",
-    "en": "Quarter-to-Quarter Earnings Volatility"
-   },
-   "body": {
-    "ko": "2025년 3분기에는 매출과 영업이익이 전 분기 대비 크게 둔화됐다(매출 493.3억원, 영업이익 38.5억원). 이는 특정 분기의 발주 시점이나 고객사 수요 편차에 따라 실적이 출렁일 수 있음을 보여준다. 2026년 2분기의 영업외 이익 기여 역시 매 분기 반복될지는 확인이 필요하다."
-   },
-   "en": {
-    "title": "",
-    "body": ""
+    "ko": "2026년 2분기 지배주주순이익(141억원)이 같은 분기 영업이익(130억원)을 넘어선 점은 비영업 항목이 실적에 상당한 영향을 미쳤을 가능성을 시사한다. 이런 항목은 지속성이 낮을 수 있어, 향후 분기에는 영업이익과 순이익 간 괴리가 다시 좁혀질 가능성도 있다.",
+    "en": "Q2 2026 owners' net income of KRW 14.1bn exceeding that quarter's operating profit of KRW 13.0bn suggests non-operating items had a meaningful impact on results. Such items may not recur, and the gap between operating profit and net income could narrow again in future quarters."
    }
   }
  ],
  "risks": [
   {
    "cat": {
-    "ko": "공급사·고객 집중 리스크",
-    "en": "Supplier/Customer Concentration Risk"
+    "ko": "공급사 집중 리스크",
+    "en": "Supplier Concentration Risk"
    },
    "body": {
-    "ko": "매커스의 사업은 AMD(자일링스), 메이콤, 르네사스 등 소수의 글로벌 반도체 공급사와의 대리점·파트너 계약에 기반한다. 이들 공급사의 정책 변화나 계약 조건 변경은 매커스의 매출 구조에 직접적인 영향을 줄 수 있다."
-   },
-   "en": {
-    "title": "",
-    "body": ""
+    "ko": "매커스의 핵심 매출은 AMD(자일링스), RENESAS, MACOM 등 소수 글로벌 제조사와의 대리점·파트너 계약에 기반한다. 이들 제조사의 정책 변화, 대리점 계약 조건 변경, 직판 확대 등이 발생하면 유통사인 매커스의 사업 기반에 직접적인 영향을 줄 수 있다.",
+    "en": "Makus's core revenue rests on distributor/partner agreements with a small number of global manufacturers including AMD (Xilinx), RENESAS, and MACOM. Any policy shift by these manufacturers, changes to distribution terms, or expansion of direct sales channels could directly affect Makus's business foundation."
    }
   },
   {
    "cat": {
-    "ko": "정책·규제 리스크",
-    "en": "Policy and Regulatory Risk"
+    "ko": "전방산업 사이클 리스크",
+    "en": "End-Market Cycle Risk"
    },
    "body": {
-    "ko": "자사주 소각 의무화를 담은 상법 개정 논의가 2025년 하반기 국회에서 진행된 바 있다. 관련 법령의 최종 형태나 시행 시점에 따라 매커스의 기존 소각 계획 이행 방식이나 속도가 영향을 받을 수 있다."
-   },
-   "en": {
-    "title": "",
-    "body": ""
+    "ko": "2023년 반도체 업황 부진 당시 매출과 영업이익이 동반 감소하고 영업현금흐름이 적자를 기록한 사례가 있다. AI·데이터센터 투자 사이클이 둔화되거나 재고 조정이 재발할 경우 유사한 실적 하방 압력이 나타날 수 있다.",
+    "en": "During the 2023 semiconductor downturn, revenue and operating profit declined together while operating cash flow turned negative. Should the AI/data-center investment cycle slow or inventory adjustments recur, similar downward pressure on results could resurface."
    }
   },
   {
    "cat": {
-    "ko": "반도체 수요 사이클 리스크",
-    "en": "Semiconductor Demand Cycle Risk"
+    "ko": "주주환원 계획의 실행 리스크",
+    "en": "Execution Risk on Shareholder Return Plan"
    },
    "body": {
-    "ko": "AI 데이터센터 관련 투자 사이클이 둔화되거나 매크로 환경이 악화될 경우, 비메모리 반도체에 대한 수요 확산세가 예상보다 약화될 가능성이 있다. 메모리와 비메모리 반도체 수요의 상호 연동 구조상 메모리 업황 변화도 간접적인 영향을 줄 수 있다."
-   },
-   "en": {
-    "title": "",
-    "body": ""
+    "ko": "다년 자사주 소각 및 환원율 목표는 이사회 결정에 따라 배당·매입·소각 비중이 탄력적으로 조정될 수 있어, 계획된 규모나 시점이 변경될 가능성을 배제할 수 없다. 실적 둔화 시 환원 여력 자체가 축소될 수도 있다.",
+    "en": "Because the mix between dividends, buybacks, and retirements under the multi-year plan and return-rate target can be adjusted flexibly by board decision, the possibility that planned scale or timing may change cannot be ruled out. A downturn in earnings could also reduce the capacity for shareholder returns."
    }
   }
  ],
  "checkpoints": [
   {
    "when": {
-    "ko": "2026년 11월경",
-    "en": "Around November 2026"
+    "ko": "2026년 11월 중순 전후",
+    "en": "Around mid-November 2026"
    },
    "what": {
-    "ko": "2026년 3분기 실적 발표 시점으로, 2분기까지 이어진 매출·영업이익 개선세와 영업외 이익 기여가 지속되는지 확인할 필요가 있다.",
-    "en": "Timing of the 2026 Q3 earnings release, when it will be worth checking whether the revenue/operating-profit improvement and non-operating profit contribution seen through Q2 continued."
+    "ko": "2026년 3분기 실적(3분기보고서) 공시를 통해 2분기의 비영업 요인 성격과 매출·이익의 계절성이 재현되는지 확인할 필요가 있다.",
+    "en": "The Q3 2026 quarterly report should be checked to clarify the nature of the Q2 non-operating factor and whether the seasonal revenue/profit pattern recurs."
    }
   },
   {
    "when": {
-    "ko": "2026년 중",
-    "en": "During 2026"
+    "ko": "2026년 4분기 중",
+    "en": "During Q4 2026"
    },
    "what": {
-    "ko": "2026년분 자사주 200만주 소각 실행 여부와 이에 따른 자사주 비중 변화(약 28.6%로의 하락 전망) 공시를 확인해야 한다.",
-    "en": "Whether the planned 2-million-share cancellation for 2026 is executed, and disclosures on the resulting change in treasury share ratio (projected to fall to around 28.6%), should be confirmed."
+    "ko": "2026년분 자사주 200만 주 소각이 계획대로 공시·집행되는지 확인이 필요하다. 소각이 지연되거나 규모가 조정될 경우 환원 계획의 신뢰도에 영향을 줄 수 있다.",
+    "en": "Whether the planned 2-million-share retirement for 2026 is disclosed and executed as scheduled needs to be confirmed. Any delay or scale adjustment could affect the credibility of the return plan."
    }
   },
   {
    "when": {
-    "ko": "2027년",
-    "en": "2027"
+    "ko": "2027년 초",
+    "en": "Early 2027"
    },
    "what": {
-    "ko": "600만주 소각 계획의 마지막 트랜치(200만주) 이행 여부와 3년간 누적 주주환원율(별도 순이익 30% 이상) 달성 여부를 점검해야 한다.",
-    "en": "Whether the final tranche (2 million shares) of the 6-million-share cancellation plan is completed, and whether the cumulative three-year shareholder-return ratio target (30%+ of standalone net income) is met, should be reviewed."
+    "ko": "연간 배당 관련 이사회 결의(주당배당금 규모, 환원율 30% 이상 이행 여부)를 통해 주주환원 정책의 실제 집행 결과를 확인할 시점이다.",
+    "en": "The board's annual dividend resolution (dividend-per-share amount and whether the 30%+ return-rate policy was actually met) will be the point to verify how the shareholder-return policy was implemented in practice."
    }
   },
   {
    "when": {
-    "ko": "추가 자사주 관련 공시 시점",
-    "en": "At the time of any further treasury-share disclosures"
+    "ko": "2026년 4분기 이후",
+    "en": "From Q4 2026 onward"
    },
    "what": {
-    "ko": "2026년 1월 공시된 30만주 매입(약 65.1억원)이 실제 소각으로 이어지는지, 후속 공시 여부를 확인해야 한다.",
-    "en": "Whether the 300,000-share purchase (about KRW 6.51bn) disclosed in January 2026 is followed by an actual cancellation disclosure should be checked."
-   }
-  },
-  {
-   "when": {
-    "ko": "지분 변동 공시 발생 시",
-    "en": "Upon any shareholding-change disclosures"
-   },
-   "what": {
-    "ko": "최대주주 및 특수관계인의 낮은 지분율(약 11%)과 관련해 주요주주의 대량 지분 매각이나 지분 변동 공시가 있는지 살펴볼 필요가 있다.",
-    "en": "Given the thin ~11% stake held by the largest shareholder and affiliated parties, it is worth monitoring for any large-block sales or shareholding-change disclosures by major shareholders."
+    "ko": "AMD·자일링스 FPGA 및 AI 가속기 관련 신규 공급·유통 계약 소식, 매커스시스템즈의 스토리지·서버 유통 매출 추이 등 후속 공시·보도를 통해 성장 동력의 지속 여부를 확인할 필요가 있다.",
+    "en": "Follow-up disclosures and news regarding new AMD/Xilinx FPGA and AI-accelerator supply/distribution contracts, as well as trends in Makus Systems' storage and server distribution revenue, should be monitored to gauge whether growth drivers persist."
    }
   }
  ],
  "verdict": {
   "body": {
-   "ko": "매커스는 AMD 진영 FPGA·아날로그 반도체의 국내 유통·기술지원 파트너로서, AI발 비메모리 반도체 수요 확대와 궤를 같이하며 2025년과 2026년 상반기 실적 개선을 이어왔다. 동시에 회사는 2025~2027년 자사주 600만주 소각과 별도 순이익 30% 이상 주주환원이라는 구체적인 정책을 발표하고 실행 중이다. 다만 영업이익률은 외형 성장 속에서도 완만히 낮아지는 추세를 보였고, 분기별로는 실적 편차가 나타난 바 있다. 최대주주 및 특수관계인의 지분율이 낮은 지배구조 특성은 자사주 소각이 진행될수록 함께 주목해야 할 변수다. 향후 실적의 방향은 AI 데이터센터를 비롯한 비메모리 반도체 수요 흐름과, 회사가 공시한 자사주 소각·주주환원 계획의 실제 이행 속도에 따라 갈릴 수 있다. 투자자는 다가오는 분기 실적과 자사주 관련 공시를 지속적으로 확인하는 것이 유용할 것으로 보인다.",
-   "en": "As a domestic distribution and technical-support partner for AMD-line FPGA and analog semiconductors, Makus has posted earnings improvement through 2025 and the first half of 2026, in step with growing AI-related demand for non-memory semiconductors. At the same time, the company has announced and is executing a concrete policy of cancelling 6 million treasury shares over 2025-2027 alongside a commitment to return at least 30% of standalone net income to shareholders. That said, the operating margin has eased gradually despite revenue growth, and quarterly results have shown notable variance. The governance characteristic of a thin stake held by the largest shareholder and affiliated parties is a variable to watch as the cancellation program proceeds. The company's future earnings trajectory may hinge on both the pace of non-memory semiconductor demand tied to AI data centers and the actual execution speed of its disclosed buyback and cancellation plans. Investors may find it useful to continue monitoring upcoming quarterly results and treasury-share-related disclosures."
+   "ko": "매커스는 AMD 진영의 국내 핵심 파트너로서 FPGA·아날로그 반도체 유통을 주력으로 하며, 2023년 실적 저점 이후 매출과 영업이익이 회복되는 흐름을 이어왔다. 2025년 연결 매출 2,272억원, 영업이익 291억원을 기록했고, 2026년 상반기에도 매출·이익 개선이 관찰됐으나, 2분기 순이익이 영업이익을 넘어선 부분은 비영업 요인에 대한 추가 확인이 필요하다. 회사는 2025~2027년 매년 200만 주씩 총 600만 주의 자사주를 소각하는 계획을 진행 중이며, 연간 별도 순이익의 30% 이상을 배당·소각에 활용하겠다는 방침도 제시했다. 다만 분기별 실적 변동성이 크고, 소수 글로벌 제조사에 대한 의존도가 높으며, 영업이익률이 완만히 낮아지는 추세라는 점은 함께 고려할 부분이다. AI·데이터센터발 비메모리 반도체 수요 확대라는 산업 배경은 긍정 요인이나, 전방산업 사이클 리스크와 주주환원 계획의 실행 리스크도 병존한다. 투자 판단에 앞서 다가오는 3분기 실적과 자사주 소각 집행 여부 등 후속 공시를 확인하는 것이 바람직하다.",
+   "en": "Makus, as the core domestic partner within the AMD camp, focuses on distributing FPGA and analog semiconductors, and has seen revenue and operating profit recover since the 2023 trough. It posted consolidated revenue of KRW 227.2bn and operating profit of KRW 29.1bn in 2025, with further improvement observed in the first half of 2026, though the fact that Q2 net income exceeded operating profit warrants further confirmation regarding the underlying non-operating factor. The company is executing a plan to retire a total of 6 million treasury shares in annual 2-million-share tranches from 2025 to 2027, and has stated a policy of allocating 30% or more of annual standalone net income to dividends and retirements. That said, considerable quarterly earnings volatility, high dependence on a small number of global manufacturers, and a gradually declining operating margin are factors that also warrant attention. The industry backdrop of expanding AI/data-center-driven demand for non-memory semiconductors is a positive, but end-market cycle risk and execution risk around the shareholder-return plan coexist alongside it. Ahead of any investment decision, it would be prudent to review upcoming Q3 earnings and follow-up disclosures on treasury share retirement execution."
   }
  },
  "sources": [
   "https://m.thinkpool.com/compDiscuss/cont/1024931",
   "https://www.valueline.co.kr/finance/summary/093520",
-  "https://m.thinkpool.com/stockDiscuss/093520/cont/11793670",
-  "https://alphasquare.co.kr/home/stock-issue?code=093520&type=news",
-  "https://comp.fnguide.com/SVO2/ASP/SVD_Main.asp?gicode=A093520",
-  "https://www.antwinner.com/stocks_analysis/%EB%A7%A4%EC%BB%A4%EC%8A%A4",
+  "https://www.google.com/finance/beta/quote/093520:KOSDAQ?hl=ko",
+  "https://m.irgo.co.kr/IR-COMP/093520/%EB%A7%A4%EC%BB%A4%EC%8A%A4-%EA%B8%B0%EC%97%85%EC%A0%95%EB%B3%B4",
+  "https://dartpoint.ai/00596677",
+  "https://comp.fnguide.com/SVO2/asp/SVD_Invest.asp?pGB=1&MenuYn=Y&ReportGB=D&NewMenuID=105&stkGb=701&gicode=A093520",
+  "https://www.incruit.com/company/3350974/",
+  "https://stockchild.com/%EC%8B%9C%EC%8A%A4%ED%85%9C%EB%B0%98%EB%8F%84%EC%B2%B4-%EA%B4%80%EB%A0%A8%EC%A3%BC-%EC%B4%9D%EC%A0%95%EB%A6%AC-%ED%8C%B9%EB%A6%AC%EC%8A%A4%C2%B7%ED%8C%8C%EC%9A%B4%EB%93%9C%EB%A6%AC%C2%B7%ED%9B%84/",
   "https://www.investing.com/equities/makus-inc-earnings",
-  "https://littlebproject.com/stock/093520",
-  "https://scoreport.kr/stocks/A093520",
+  "https://messeesang.com/ir/ir_report/?mod=document&uid=91",
+  "https://alphasquare.co.kr/home/stock-issue?code=093520&type=news",
+  "https://www.investing.com/equities/micron-tech-earnings",
+  "https://kr.benzinga.com/news/usa/earnings/%EB%A7%88%EC%9D%B4%ED%81%AC%EB%A1%A0-2%EB%B6%84%EA%B8%B0-%EC%8B%A4%EC%A0%81-%EC%98%88%EC%83%81%EC%B9%98-%EC%83%81%ED%9A%8C3%EB%B6%84%EA%B8%B0%EC%97%90%EB%8F%84-%EC%97%AD%EB%8C%80/",
   "https://www.investing.com/equities/makus-inc",
-  "https://www.datatooza.com/article/20260625202741215cd1e718ce4_80",
-  "https://www.k5.co.kr/stock/093520/official_notice",
-  "https://news.nate.com/view/20250723n05635",
-  "https://www.asiae.co.kr/ranking/stock/20110110/20250723",
+  "https://investor.mks.com/news-releases/news-release-details/mks-inc-reports-second-quarter-2026-financial-results",
+  "https://www.tipranks.com/stocks/de:6mk/earnings/q2-2026-report",
   "https://www.etoday.co.kr/news/view/2490230",
-  "https://www.sedaily.com/NewsView/2GVGN63S2H",
-  "https://alphabiz.co.kr/news/view/1065570504148885",
-  "https://www.viva100.com/article/20260522500292"
+  "https://littlebproject.com/stock/093520"
  ],
  "v": 2,
  "model": "claude-sonnet-5",
@@ -260,9 +223,9 @@
   "전자·부품"
  ],
  "market": "코스닥",
- "reportDate": "2026-08-18",
- "reportTs": "2026-08-18 00:50",
- "dataDate": "20260824",
+ "reportDate": "2026-09-05",
+ "reportTs": "2026-09-05 06:37",
+ "dataDate": "20260904",
  "quant": {
   "asOf": "2026-08-24",
   "fs_basis": "연결(CFS) · DART 공시 확정치 · 지배주주 기준 순이익",
@@ -365,14 +328,14 @@
    }
   ],
   "valuation": {
-   "price": 25150,
-   "mcap": 0.2993,
+   "price": 26200,
+   "mcap": 0.3118,
    "shares": 11901837,
    "total_shares": 14163092,
    "wavg_shares": 8531599,
-   "per": 7.362,
+   "per": 7.67,
    "eps": 3416,
-   "pbr": 1.6515,
+   "pbr": 1.7204,
    "bps": 15229,
    "roe_ttm": 23.5,
    "ttm_window": "2025Q3~2026Q2",
@@ -384,7 +347,7 @@
    "bps_krx": 14459.0,
    "basis": "PER·EPS·PBR·BPS 모두 자체 산출(네이버·토스와 동일 방식) · 배당은 DART 공시 주당현금배당금(보완:KRX) ÷ 현재가",
    "dps": 1200.0,
-   "div": 4.77
+   "div": 4.58
   }
  }
 }

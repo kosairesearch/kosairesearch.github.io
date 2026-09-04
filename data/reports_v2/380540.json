@@ -1,227 +1,217 @@
 {
  "title": {
-  "ko": "데이터콤 전환과 회계 리스크의 갈림길",
-  "en": "AI Data-Center Pivot Meets Audit-Risk Crossroads"
+  "ko": "AI 데이터센터 전환과 상장 적격성 리스크 공존",
+  "en": "AI Datacenter Pivot Meets Listing-Eligibility Risk"
  },
  "lead": {
-  "ko": "옵티코어는 5G 통신장비 중심 사업을 AI 데이터센터용 광트랜시버로 전환하는 초기 성과를 보이는 동시에, 2025사업연도 감사의견 거절에 따른 상장폐지 심사라는 중대 변수를 함께 안고 있다.",
-  "en": "OptiCore is showing early signs of pivoting from 5G telecom gear to AI data-center optical transceivers, while simultaneously facing a delisting review triggered by an audit opinion disclaimer on its FY2025 financial statements."
+  "ko": "옵티코어는 5G 통신장비 중심 매출이 AI 데이터센터용 광트랜시버로 옮겨가는 구조 전환기에 있으나, 2025 사업연도 감사의견 거절에 따른 상장폐지 사유 발생과 개선기간 진행이라는 중대한 불확실성을 동시에 안고 있다.",
+  "en": "OptiCore is in the midst of shifting its revenue base from 5G telecom equipment toward AI datacenter optical transceivers, but it is simultaneously carrying a major uncertainty stemming from a disclaimer of audit opinion for fiscal year 2025 that triggered a delisting cause and an ongoing improvement period."
  },
  "keypoints": [
   {
-   "ko": "2025년 4분기(131.9억원)·2026년 1분기(119.0억원) 매출이 급증했으나 2026년 2분기 다시 33.9억원으로 줄어, 계약 기반 매출 인식의 변동성이 크게 드러났다.",
-   "en": "Revenue surged to KRW 13.19bn in Q4 2025 and KRW 11.90bn in Q1 2026 before falling back to KRW 3.39bn in Q2 2026, highlighting volatility tied to contract-based revenue recognition."
+   "ko": "매출 구조가 5G 텔레콤용 광부품에서 AI 데이터센터용 400G/800G 광트랜시버로 옮겨가는 전환 국면에 진입",
+   "en": "Revenue mix is shifting from 5G telecom optical components toward AI datacenter 400G/800G optical transceivers"
   },
   {
-   "ko": "2025년 연간 매출은 215.1억원으로 전년(233.0억원) 대비 감소했고, 영업손실 59.3억원·순손실(지배주주) 225.2억원으로 적자가 4년째 이어졌다.",
-   "en": "FY2025 revenue fell to KRW 21.5bn from KRW 23.3bn, with an operating loss of KRW 5.9bn and an owner net loss of KRW 22.5bn, marking a fourth straight year of losses."
+   "ko": "2025년 4분기와 2026년 1분기 두 개 분기 연속 매출 100억원대를 기록했으나 2026년 2분기 다시 30억원대로 급감",
+   "en": "Revenue topped KRW 10 billion for two consecutive quarters in 4Q25 and 1Q26 before falling back to the KRW 3 billion range in 2Q26"
   },
   {
-   "ko": "2026년 3월 24일 외부감사인이 2025사업연도 재무제표에 대해 감사의견 거절을 표명해 상장폐지 사유가 발생했고, 3월 23일부터 주식 거래가 정지된 상태다.",
-   "en": "On March 24, 2026 the external auditor issued a disclaimer of opinion on the FY2025 financial statements, triggering a delisting cause, and shares have been halted since March 23."
+   "ko": "2025 사업연도 재무제표에 대해 외부감사인이 의견거절을 냈고 2026년 3월 상장폐지 사유가 발생, 현재 개선기간이 진행 중",
+   "en": "The external auditor issued a disclaimer of opinion on the FY2025 financial statements, triggering a delisting cause in March 2026; an improvement period is currently underway"
   },
   {
-   "ko": "2025년 7월 최대주주가 창업자 측에서 블랙마운틴홀딩스로 변경된 이후 진행된 부동산 매입·전환사채 재매각·계열사 자금거래 등이 감사의견 거절의 핵심 근거로 지목됐다.",
-   "en": "Real-estate purchases, CB resales, and intra-group fund transfers carried out after the July 2025 change of controlling shareholder to Blackmountain Holdings were cited as the core grounds for the disclaimer."
+   "ko": "자본잠식 상태가 지속되는 가운데 최대주주 블랙마운틴홀딩스 체제 하의 전환사채 재매각, 부동산 매입, 타법인 출자 등 자금거래 적정성에 대해 감사인이 문제를 제기",
+   "en": "Capital impairment persists, and the auditor has raised concerns over the propriety of convertible bond resales, real estate purchases, and equity investments executed under new controlling shareholder Black Mountain Holdings"
   },
   {
-   "ko": "부채비율이 2024년 107.6%에서 2025년 201.8%로 급등했고, 자본총계는 외부 자금조달로 늘었지만 자본잠식 이력이 남아 있다.",
-   "en": "The debt ratio jumped from 107.6% in 2024 to 201.8% in 2025, and while total equity rose on external fundraising, a history of capital impairment persists."
+   "ko": "통신 3사와의 직납 레퍼런스는 강점이나, 수주의 지속성과 지배구조 불확실성이 핵심 관전 포인트",
+   "en": "Direct supply relationships with Korea's three major telecom carriers are a strength, but order sustainability and governance uncertainty remain the key watch points"
   }
  ],
  "business": {
-  "ko": "옵티코어는 2016년 광통신 레이저 기술을 기반으로 설립돼 2022년 스팩 합병을 통해 코스닥에 상장한 광통신 부품 전문기업이다. 통신망 액세스망에 필요한 광트랜시버 및 광다중화장치와 관련 부품을 개발·생산하며, 스크린 도어 및 공장자동화 장비 제조도 함께 하고 있다. 5G 이동통신망용 광트랜시버·광다중화장치는 한때 전체 매출의 약 68%를 차지하는 핵심 사업이었으며 SK텔레콤·KT·LG유플러스 등 이동통신 3사에 직접 납품해왔다. 다만 5G 산업이 성숙기에 접어들며 통신사 투자가 축소·지연되면서 관련 매출과 비중이 줄어드는 흐름을 보였다. 최근에는 데이터센터용 고속 광트랜시버 제품을 개발해 시장 진입을 준비하고 있으며, 북미 포함 해외 영업 확대를 통해 매출 및 수익성 개선을 추구하고 있다. AI 발전에 따른 저전력 400G·800G 고속 광트랜시버 개발로 시장 진입을 준비하며 해외 영업 확대에 나서고 있다는 점도 이러한 전환의 연장선이다. 또한 옵티코어는 차세대 네트워크(6G) 산업기술개발 국책과제의 주관기업으로 선정돼 한국전자통신연구원(ETRI), 포셈과 공동으로 6G 프론트홀 광링크 및 광전송 시스템 기술을 개발하고 있다. 2025년 7월에는 창업자 진재현 전 대표 등 특수관계인이 지분 대부분을 매각하며 지분율이 40.23%에서 1.24%로 급감했고, 지분 18.05%를 보유한 블랙마운틴홀딩스가 최대주주로 올라선 이후 증권업계 출신인 문유석 대표이사가 경영을 총괄하고 있다.",
-  "en": "Founded in 2016 on optical-communication laser technology, OptiCore listed on KOSDAQ in 2022 via a SPAC merger and specializes in optical components for telecom networks. The company develops and produces optical transceivers and wavelength-division multiplexing (WDM) equipment for access networks, while also manufacturing platform screen doors and factory-automation equipment. Optical transceivers and WDM gear for 5G networks once accounted for roughly 68% of total revenue and were supplied directly to SK Telecom, KT, and LG Uplus. However, as the 5G buildout matured, carrier capex cuts and delays weighed on this legacy revenue base. More recently, the company has been developing high-speed optical transceivers for data centers to enter that market, seeking to improve revenue and profitability through expanded overseas sales including in North America. Development of low-power 400G/800G transceivers driven by AI growth is part of the same market-entry push alongside overseas sales expansion. OptiCore was also selected as the lead organization for a next-generation (6G) national R&D project, jointly developing 6G fronthaul optical link and transmission technologies with ETRI and Forcem. In July 2025, founder Jin Jae-hyun and related parties sold most of their stake, with their combined holding falling from 40.23% to 1.24%, and Blackmountain Holdings—holding 18.05%—became the largest shareholder, after which securities-industry veteran Moon Yoo-seok took over as CEO."
+  "ko": "옵티코어는 2016년 설립돼 광통신 레이저 기술을 기반으로 광트랜시버와 광다중화장치(WDM)를 개발·생산하는 광통신 솔루션 기업으로, 2022년 12월 케이비제20호기업인수목적주식회사(SPAC)와 합병해 코스닥시장에 상장했다. 핵심 사업은 기지국·중계기·라우터 등 통신망 액세스망에 쓰이는 광트랜시버 제조이며, 무선이동통신용 10Gbps·25Gbps 광트랜시버를 주력 제품군으로 보유하고 있다. 통신 부문 외에 스크린도어 및 공장자동화 장비를 생산하는 자동화 사업도 병행하고 있어, 5G 투자 둔화기에 매출 공백을 일부 완충하는 역할을 해왔다. 주요 고객은 SK텔레콤을 포함한 국내 통신 3사이며, SK텔레콤의 '5G 스마트 집중국' 공급사로 선정된 이력이 있어 통신사 직납 관계를 보유하고 있다. 최근에는 AI 데이터센터 환경에 대응하는 저전력 400G·800G 고속 광트랜시버를 신성장 영역으로 육성하며, 국내 대형 IT서비스 기업 및 클라우드서비스제공사(CSP)를 대상으로 공급을 시도하고 있다. 경쟁구도 측면에서는 오이솔루션 등 국내 광모듈 업체와 해외 대형 광모듈 업체들이 경쁴하는 시장에 진입하는 구조로, 아직 데이터콤 매출 비중은 크지 않은 초기 단계로 판단된다. 2025년 7월에는 창업주 진재현 전 대표가 보유 지분 대부분을 매각하며 대부업 이력을 가진 블랙마운틴홀딩스로 최대주주가 변경돼 지배구조에 큰 변화가 있었다. 신규 최대주주 체제 하에서는 로봇 사업 등 신사업 추진도 예고됐으나 임시주주총회에서 관련 안건이 부결되는 등 사업 방향성이 아직 명확히 자리잡지 못한 상태다.",
+  "en": "OptiCore was founded in 2016 on optical communication laser technology to develop and manufacture optical transceivers and wavelength-division multiplexing (WDM) equipment, and listed on KOSDAQ in December 2022 through a merger with a KB-sponsored special purpose acquisition company. Its core business is producing optical transceivers used in telecom access networks such as base stations, repeaters, and routers, with 10Gbps and 25Gbps wireless transceivers as its mainstay lineup. Alongside telecom components, the company also runs an automation business making screen doors and factory automation equipment, which has partially cushioned revenue during the 5G investment slowdown. Its main customers include Korea's three major telecom carriers, including SK Telecom, for which OptiCore was selected as a supplier for '5G smart concentration stations,' giving it a direct-supply relationship. More recently, the company has been growing low-power 400G and 800G high-speed optical transceivers tailored to AI datacenter environments, attempting to supply major domestic IT service companies and cloud service providers. Competitively, it is entering a market where domestic optical module makers such as Oe Solutions and large overseas module vendors compete, and its datacom revenue contribution still appears to be at an early, small-scale stage. In July 2025, founder and former CEO Jae-hyun Jin sold most of his stake, resulting in a major governance shift as Black Mountain Holdings, an entity with a lending-business background, became the controlling shareholder. Under the new controlling shareholder, new business initiatives such as a robotics venture were flagged but related agenda items were voted down at an extraordinary shareholders' meeting, leaving the company's strategic direction not yet clearly settled."
  },
  "earnings": {
-  "ko": "옵티코어의 연결 매출액은 2022년 243.2억원, 2023년 263.3억원으로 소폭 늘었다가 2024년 233.0억원, 2025년 215.1억원으로 2년 연속 줄었다. 영업손실은 2022년 26.8억원에서 2023년 40.6억원, 2024년 65.2억원까지 확대된 뒤 2025년 59.3억원으로 소폭 줄었지만 4년 연속 적자 기조는 이어졌다. 지배주주 순손실은 2022년 107.5억원, 2023년 43.7억원, 2024년 65.4억원으로 등락하다 2025년에는 225.2억원으로 크게 확대돼 4개년 중 최대 규모를 기록했다. 분기별로 보면 2025년 2분기 지배주주 순손실이 107.7억원에 달하며 연간 손실 확대를 주도했고, 3분기(-36.9억원)·4분기(-69.7억원)로 손실 규모가 줄었다 다시 늘었다 하는 불규칙한 흐름을 보였다. 매출은 2025년 4분기 131.9억원, 2026년 1분기 119.0억원으로 두 분기 연속 100억원대를 기록했으나, 2026년 2분기에는 다시 33.9억원으로 줄어 매출 기반의 지속성은 아직 검증 단계에 있는 것으로 보인다. 영업손실도 매출이 확대된 2026년 1분기에는 6.6억원으로 줄었지만, 매출이 다시 축소된 2026년 2분기에는 18.7억원으로 확대돼 매출 규모에 따른 손익 민감도를 보여준다. 순손실은 영업손실보다 훨씬 큰 규모로 나타나는데, 2026년 2분기에도 영업손실 18.7억원 대비 순손실은 97.0억원에 달해 이자비용·평가손실 등 영업외 요인이 손익에 크게 작용하고 있음을 시사한다. 재무상태 측면에서는 2025년 말 지배주주 자본총계가 230.5억원으로 2024년 말(147.4억원) 대비 늘었지만, 부채총계도 462.3억원으로 2024년(157.5억원) 대비 세 배 가까이 늘어 부채비율이 107.6%에서 201.8%로 급등했다.",
-  "en": "Consolidated revenue rose modestly from KRW 24.3bn in 2022 to KRW 26.3bn in 2023, then declined for two straight years to KRW 23.3bn in 2024 and KRW 21.5bn in 2025. The operating loss widened from KRW 2.7bn in 2022 to KRW 4.1bn in 2023 and KRW 6.5bn in 2024 before narrowing slightly to KRW 5.9bn in 2025, extending a four-year loss streak. Owner net loss fluctuated between KRW 10.8bn (2022), KRW 4.4bn (2023) and KRW 6.5bn (2024) before ballooning to KRW 22.5bn in 2025, the largest of the four years. On a quarterly basis, the Q2 2025 owner net loss of KRW 10.8bn drove much of the full-year deterioration, followed by an irregular pattern of narrower (-KRW 3.7bn in Q3) then wider (-KRW 7.0bn in Q4) losses. Revenue hit KRW 13.19bn in Q4 2025 and KRW 11.90bn in Q1 2026—two consecutive quarters above KRW 10bn—before falling back to KRW 3.39bn in Q2 2026, suggesting the durability of this revenue base is still unproven. The operating loss likewise narrowed to KRW 0.66bn in Q1 2026 when revenue was elevated, then widened again to KRW 1.87bn in Q2 2026 as revenue contracted, illustrating sensitivity to volume. Net losses have consistently exceeded operating losses by a wide margin—in Q2 2026 the operating loss was KRW 1.87bn versus a net loss of KRW 9.70bn—pointing to sizable non-operating items such as interest expense and valuation losses. On the balance sheet, owner equity rose to KRW 23.05bn at end-2025 from KRW 14.74bn a year earlier, but total liabilities nearly tripled to KRW 46.23bn from KRW 15.75bn, pushing the debt ratio up from 107.6% to 201.8%."
+  "ko": "연간 매출은 2022년 243억원, 2023년 263억원, 2024년 233억원, 2025년 215억원으로 최근 3년간 완만한 감소세를 보였고, 영업손실은 2022년 -26.8억원에서 2023년 -40.6억원, 2024년 -65.2억원으로 확대된 뒤 2025년 -59.3억원으로 소폭 줄었다. 영업이익률은 2022년 -11.0%, 2023년 -15.4%, 2024년 -28.0%, 2025년 -27.6%로 2024년 이후 부진한 마진 구조가 고착화된 모습이다. 지배주주 순손실은 2022년 -107.5억원에서 2023년 -43.7억원으로 줄었다가 2024년 -65.4억원, 2025년 -225.2억원으로 다시 크게 확대됐는데, 이는 영업손실 확대분을 훨씬 웃도는 규모로 전환사채 관련 평가손실 등 비영업 항목의 영향이 컸던 것으로 해석된다. 분기별로 보면 2025년 2분기 매출 20.6억원, 영업손실 -25.7억원, 지배주주 순손실 -107.7억원을 기록한 뒤, 3분기 매출 31.3억원·영업손실 -14.2억원·순손실 -36.9억원으로 손실 규모가 줄었다. 4분기에는 매출이 131.9억원으로 급증하며 영업손실도 -8.3억원까지 축소됐으나 순손실은 -69.7억원으로 여전히 컸다. 2026년 1분기에는 매출 119.0억원, 영업손실 -6.6억원으로 영업 적자가 큰 폭으로 줄었고 순손실도 -23.5억원으로 개선됐으나, 2분기에는 매출이 33.9억원으로 다시 급감하고 영업손실 -18.7억원, 순손실 -97.0억원으로 재차 확대되며 실적의 변동성이 매 분기 크게 나타나고 있다. 가장 최근 네 개 분기(2025년 3분기~2026년 2분기) 합산 지배주주 순손실은 약 227억원으로, 매출 회복 조짐과 무관하게 대규모 손실이 지속되고 있음을 보여준다. 영업손실 대비 순손실 규모가 현저히 크게 나타나는 구조는 전환사채 발행·재매각, 타법인 출자 등 비영업적 자금거래에서 비롯된 손익 변동이 실적에 상당한 영향을 미치고 있음을 시사한다.",
+  "en": "Annual revenue moved from KRW 24.3 billion in 2022 to KRW 26.3 billion in 2023, KRW 23.3 billion in 2024, and KRW 21.5 billion in 2025, showing a gradual decline over the past three years, while the operating loss widened from KRW -2.68 billion in 2022 to KRW -4.06 billion in 2023 and KRW -6.52 billion in 2024, before narrowing slightly to KRW -5.93 billion in 2025. The operating margin came in at -11.0% in 2022, -15.4% in 2023, -28.0% in 2024, and -27.6% in 2025, indicating that a weak margin structure has become entrenched since 2024. The net loss attributable to owners narrowed from KRW -10.75 billion in 2022 to KRW -4.37 billion in 2023, then widened again to KRW -6.54 billion in 2024 and sharply to KRW -22.52 billion in 2025 -- a scale far exceeding the increase in operating losses, suggesting a substantial impact from non-operating items such as valuation losses tied to convertible bonds. On a quarterly basis, revenue was KRW 2.06 billion in 2Q25 with an operating loss of KRW -2.57 billion and an owners' net loss of KRW -10.77 billion, before losses narrowed in 3Q25 to revenue of KRW 3.13 billion, an operating loss of KRW -1.42 billion, and a net loss of KRW -3.69 billion. Revenue surged to KRW 13.19 billion in 4Q25 with the operating loss shrinking to KRW -0.83 billion, though the net loss remained large at KRW -6.97 billion. In 1Q26, revenue reached KRW 11.90 billion with the operating loss narrowing sharply to KRW -0.66 billion and the net loss improving to KRW -2.35 billion, but revenue fell back to KRW 3.39 billion in 2Q26 with the operating loss widening again to KRW -1.87 billion and the net loss expanding to KRW -9.70 billion, underscoring significant quarter-to-quarter volatility. The combined owners' net loss over the most recent four quarters (3Q25-2Q26) totals roughly KRW 22.7 billion, showing that large losses have persisted regardless of signs of revenue recovery. The pattern of net losses running far larger than operating losses suggests that non-operating financial transactions -- including convertible bond issuance and resale, and equity investments in other entities -- have materially affected reported results."
  },
  "industry": {
-  "ko": "AI 데이터센터 투자 확대는 광트랜시버 산업 전반의 수요를 밀어올리는 핵심 동력으로 꼽힌다. 시장조사업체 IDC에 따르면 전 세계 데이터센터가 처리해야 할 연간 데이터 규모는 2021년부터 연평균 20%씩 늘어 2026년 200.1제타바이트 규모에 이를 것으로 전망된다. 국내에서도 SK텔레콤이 아마존웹서비스(AWS)와 협력해 울산에 100MW 규모 AI 데이터센터를 건설 중이며 LG유플러스도 파주에 유사한 시설을 짓고 있어, 국산 광부품 수요 기반이 확대되는 국면으로 평가된다. 다만 국내에서 데이터센터향 400G·800G 광트랜시버를 실제로 개발·납품한 업체는 극소수로 파악되며, 옵티코어는 통신 3사와의 기존 직납 관계를 광트랜시버 국산화 논의에서 유리한 위치로 연결할 수 있는 후보군으로 거론된다. 유진투자증권은 2026년 3월 리포트에서 옵티코어의 매출 구조가 텔레콤에서 데이터콤으로 전환될 가능성에 주목하며, 데이터콤 비중이 2025년 43%에서 2026년 70%, 2027년 82%로 확대될 수 있다는 시나리오와 함께 영업이익률도 같은 기간 개선될 수 있다는 전망을 제시했다. 같은 리포트는 미국 광모듈업체 어플라이드옵토일렉트로닉스(AAOI)가 레거시 통신 사업에서 데이터콤으로 매출 구성을 전환하며 주가가 급등한 사례를 들어 유사한 펀더멘털 개선 가능성을 거론했다. 반면 5G 시장이 성숙기에 접어들며 통신사 설비투자가 축소·지연되는 흐름은 옵티코어의 레거시 텔레콤 매출에 계속 하방 압력으로 작용하고 있다. 종합하면 옵티코어는 축소되는 텔레콤 매출과 아직 지속성이 검증되지 않은 데이터콤 매출 사이에서 사업 구조 전환의 초기 국면에 있는 것으로 평가된다.",
-  "en": "Expanding AI data-center investment is widely cited as the key driver of demand for optical transceivers. Market researcher IDC projects that annual data volumes processed by global data centers will grow at roughly 20% per year from 2021 to reach about 200.1 zettabytes by 2026. Domestically, SK Telecom is building a 100MW AI data center in Ulsan with AWS, and LG Uplus is constructing a similar facility in Paju, expanding the addressable base for domestic optical components. However, only a handful of Korean firms are known to have actually developed and shipped 400G/800G transceivers for data centers, and OptiCore's existing direct-supply relationships with the three telecom carriers are cited as a potential advantage should carriers pursue localization of optical transceivers. Eugene Investment & Securities noted in a March 2026 report that OptiCore's revenue mix could shift from telecom to datacom, projecting the datacom share rising from 43% in 2025 to 70% in 2026 and 82% in 2027, alongside an operating margin improvement scenario over the same period. The same report drew a comparison to U.S. optical module maker Applied Optoelectronics (AAOI), whose stock surged after shifting its revenue mix from legacy telecom to datacom, suggesting a similar fundamental-improvement possibility. Conversely, as the 5G market matures, reduced and delayed carrier capex continues to weigh on OptiCore's legacy telecom revenue. On balance, OptiCore appears to be in an early phase of business-model transition, caught between shrinking telecom revenue and a datacom revenue stream whose durability remains unproven."
+  "ko": "AI 인프라 확대에 따라 데이터센터에서 처리해야 하는 전 세계 연간 데이터 규모가 빠르게 늘고 있으며, 이에 맞춰 400G·800G급 고속 광트랜시버 수요도 커지는 흐름이 이어지고 있다. 시장조사업체 IDC는 전 세계 연간 데이터 규모가 2021년부터 연평균 20%씩 증가해 2026년 약 200제타바이트 규모에 이를 것으로 전망한 바 있다. 이런 수요 확대 국면에서 해외 광모듈 업체 중 데이터콤 비중을 키운 Applied Optoelectronics(AAOI)가 한 달 새 주가가 크게 오른 사례가 나오면서, 유사한 사업 재편에 나선 기업들에 대한 시장의 관심이 커지는 분위기다. 국내에서는 SK텔레콤이 AWS와 협력해 울산에 대규모 AI 데이터센터를 구축 중이고 LG유플러스도 파주에 유사한 시설을 짓고 있는 등, 통신 3사가 국내 AI 데이터센터 구축의 주요 축을 담당하고 있다. 다만 옵티코어의 핵심 시장이었던 국내 5G 장비 시장은 통신사 가입자 증가세 둔화와 신규망 투자 축소로 성장이 정체된 상태이며, 이는 회사의 텔레콤 부문 매출이 지속적으로 줄어든 배경이 됐다. 데이터센터용 광트랜시버 시장은 이미 다수의 국내외 업체가 경쟁하는 영역으로, 옵티코어는 아직 본격적인 양산·공급 이력이 짧은 후발주자에 속한다. 국산 광트랜시버 검토 니즈가 본격화될 경우 통신 3사와의 기존 거래 관계가 진입 후보군으로서의 이점이 될 수 있다는 관점이 업계에서 제기되고 있으나, 실제 채택 여부는 아직 확정되지 않은 단계다.",
+  "en": "As AI infrastructure expands, the volume of data that datacenters must process globally is growing rapidly, and demand for high-speed 400G and 800G optical transceivers is expanding in tandem. Market researcher IDC has projected that global annual data volume, growing at roughly 20% per year since 2021, would reach around 200 zettabytes by 2026. Against this backdrop, Applied Optoelectronics (AAOI), an overseas optical module maker that expanded its datacom exposure, saw a sharp share-price rally within a single month, drawing market attention to companies pursuing similar business transitions. In Korea, SK Telecom is building a large AI datacenter in Ulsan in partnership with AWS, and LG Uplus is constructing a similar facility in Paju, with the three major telecom carriers serving as key pillars of domestic AI datacenter buildout. However, OptiCore's core domestic 5G equipment market has stagnated amid slowing subscriber growth and reduced new-network capital spending by carriers, which has been the backdrop for the continued decline in its telecom-segment revenue. The datacenter optical transceiver market is already contested by numerous domestic and overseas players, and OptiCore remains a relative latecomer with a still-short track record of full-scale mass production and supply. Industry observers have suggested that if the need to evaluate domestic optical transceivers materializes, OptiCore's existing relationships with the three carriers could be an advantage as a candidate supplier, though actual adoption has not yet been confirmed."
  },
  "outlook": {
-  "ko": "옵티코어는 2025년 9월부터 2026년 3월까지 AI 데이터센터용 400G·800G 광트랜시버 공급계약을 여러 건 연달아 공시했으며, 2025년 12월 19일 공시된 60억원 규모 계약은 계약기간이 2026년 3월 26일까지로 명시됐다. 회사는 400G 고속 광트랜시버 개발을 마치고 국내 글로벌 IT 서비스 기업의 AI 데이터센터에서 성능·호환성 검증을 진행 중이며, 검증이 마무리되면 매출로 이어질 수 있다고 밝힌 바 있다. 2025년 5월에는 6G 무선액세스용 지능형 광부품·광트랜시버 기술을 개발하는 국책과제의 주관기업으로 선정돼 2028년 12월까지 ETRI, 포셈과 공동으로 총사업비 160억원(정부지원 59억원) 규모의 연구를 수행하기로 했다. 회사 측은 800G 제품 라인업도 일부 개발을 완료했으며 북미 시장 진출을 위한 영업망 구축을 진행 중이라고 언급했다. 그러나 이 같은 사업적 진전과는 별개로 2026년 3월 24일 외부감사인이 2025사업연도 재무제표에 대해 감사의견 거절을 표명하면서 상장폐지 사유가 발생했고, 회사는 거래소에 이의신청서를 제출해 개선기간을 부여받았다. 2026년 5월 22일에는 액면가를 100원에서 200원으로 조정하는 액면병합이 변경상장되어 상장주식총수가 2445만6583주로 재편됐으나, 감사의견 관련 거래정지는 개선기간 종료 후 상장폐지 여부가 결정될 때까지 유지되는 구조다. 따라서 향후 실적 경로는 AI 데이터센터향 수주의 지속 여부뿐 아니라, 재감사를 통한 감사의견 정상화와 상장 유지 여부 결정이라는 비영업적 변수에 크게 좌우될 전망이다.",
-  "en": "OptiCore disclosed a string of AI data-center 400G/800G transceiver supply contracts between September 2025 and March 2026, including a KRW 6.0bn contract announced on December 19, 2025 with a term running through March 26, 2026. The company said it completed development of a high-speed 400G transceiver and was undergoing performance and compatibility verification at a domestic global IT service firm's AI data center, adding that a successful verification could translate into sales. In May 2025 it was selected to lead a national R&D project on intelligent optical components and transceivers for 6G wireless access, running through December 2028 jointly with ETRI and Forcem, with a total budget of KRW 16.0bn including KRW 5.9bn in government funding. Management has said it has also completed part of its 800G product lineup and is building a North American sales network. Separate from this business progress, however, the external auditor issued a disclaimer of opinion on the FY2025 financial statements on March 24, 2026, triggering a delisting cause; the company filed an appeal with the exchange and was granted an improvement period. On May 22, 2026, a share consolidation changing par value from KRW 100 to KRW 200 was completed, resetting shares outstanding to 24,456,583, but the audit-related trading halt remains in place until a delisting decision is made after the improvement period ends. Going forward, the earnings trajectory will likely hinge not only on the durability of AI data-center orders but also on non-operational variables—namely, whether a re-audit clears the disclaimer and whether the listing is ultimately maintained."
+  "ko": "옵티코어는 지난 7월 AI 데이터센터용 400G 고속 광트랜시버 제품 개발을 완료했다고 밝히며, 국내 글로벌 IT서비스 기업을 대상으로 성능 및 호환성 검증을 진행 중이라고 공시했다. 검증이 성공적으로 마무리될 경우 가시적인 매출 발생이 기대된다는 회사 측 설명이 있었으며, 해당 제품은 저전력 설계로 기존 제품 대비 20% 이상 전력을 절감할 수 있다는 점을 강조하고 있다. 수주 측면에서는 2025년 9월 약 67억원, 12월 60억원과 40억원 규모의 AI 데이터센터용 광트랜시버 공급계약을 잇달아 체결하며 누적 수주가 100억원을 넘어섰고, 이 중 상당 부분이 2026년 1분기 매출로 인식된 것으로 파악된다. 유진투자증권은 2026년 3월 보고서에서 텔레콤 위주 매출 구조가 데이터센터용 광트랜시버 중심으로 전환될 경우 펀더멘털 개선과 함께 밸류에이션 리레이팅 가능성이 커진다는 관점을 제시했으며, 옵티코어가 통신 3사, 특히 SK텔레콤과 직납 거래 관계를 보유해 국산 광트랜시버 검토 국면에서 후보군에 오를 수 있는 위치라고 평가했다. 다만 같은 보고서는 최대주주 변경과 복수의 자본거래 이력을 감안하면 지배구조 및 자금조달 구조에 대한 점검이 필요하다는 점도 함께 지적했다. 중장기적으로는 2028년 말까지 진행되는 총 160억원 규모의 6G 프론트홀 광링크·광전송 시스템 국책과제에 총괄 주관기업으로 참여하며 한국전자통신연구원(ETRI) 등과 공동 연구를 수행하고 있어, 차세대 통신 기술에서도 파이프라인을 확보하고 있다. 다만 2025 사업연도 재무제표에 대한 감사의견 거절로 상장폐지 사유가 발생하고 개선기간이 진행 중인 만큼, 사업 성과가 실제 실적과 주식시장 정상화로 이어지기까지는 지배구조·재무 안정성 문제의 해소가 선행돼야 하는 상황이다.",
+  "en": "In July, OptiCore announced that it had completed development of a 400G high-speed optical transceiver for AI datacenters and disclosed that a domestic global IT service company was conducting performance and compatibility validation. The company indicated that visible revenue could follow if validation is completed successfully, and has emphasized that the product's low-power design cuts power consumption by more than 20% versus prior products. On the order front, the company signed a series of AI datacenter optical transceiver supply contracts worth roughly KRW 6.7 billion in September 2025 and KRW 6.0 billion and KRW 4.0 billion in December 2025, pushing cumulative orders above KRW 10 billion, a substantial portion of which appears to have been recognized as revenue in 1Q26. In a March 2026 report, Eugene Investment & Securities stated that if the revenue base shifts from telecom-centric to datacenter-centric optical transceivers, the potential exists for both fundamental improvement and valuation re-rating, and assessed that OptiCore's direct-supply relationships with the three telecom carriers, especially SK Telecom, position it as a candidate should carriers move to evaluate domestically made transceivers. The same report, however, also noted that given the change in controlling shareholder and a series of capital transactions, scrutiny of governance and funding structure is warranted. Over the longer term, OptiCore is participating as the lead organizing company in a KRW 16 billion national 6G fronthaul optical link and transmission system project running through the end of 2028, conducting joint research with the Electronics and Telecommunications Research Institute (ETRI) among others, giving it a pipeline in next-generation communication technology as well. That said, given that a disclaimer of audit opinion on the FY2025 financial statements triggered a delisting cause and an improvement period is currently underway, resolution of governance and financial-stability issues would need to precede any translation of business progress into normalized results and market status."
  },
  "valuation_comment": {
-  "ko": "옵티코어는 최근 4개 사업연도 모두 순손실을 기록해 주가와 주당순이익을 단순 비교하는 방식의 밸류에이션 지표를 산출하기 어려운 구조다. 주가와 순자산의 관계를 나타내는 지표 역시 회사가 대규모 외부 자금조달과 잦은 자본거래, 그리고 최근의 액면병합을 거치며 주당 순자산 자체가 크게 변동해온 만큼, 다른 광통신 부품업체와 단순 비교하기보다는 자본구조 변화의 맥락에서 함께 살펴볼 필요가 있다. 배당은 현재 지급되지 않고 있어 배당을 통한 투자자 환원은 현재로선 기대하기 어려운 상황이다. 유진투자증권은 2026년 3월 리포트에서 데이터콤 매출 비중이 높아질 경우 펀더멘털 개선과 함께 밸류에이션 리레이팅을 기대해볼 수 있다는 시나리오를 제시했지만, 투자의견과 목표주가는 제시하지 않았다. 같은 리포트는 최대주주 변경과 복수의 자본거래 이력을 감안해 지배구조 및 자금조달 구조에 대한 점검이 필요하며 전환사채 관련 잠재 희석과 오버행 부담도 유의할 변수라고 덧붙였다. 결국 현재 거래되는 가격 수준에는 사업 전환 기대와 회계·상장 관련 불확실성이라는 상반된 요인이 함께 반영돼 있는 것으로 볼 수 있다.",
-  "en": "Having posted net losses in each of the past four fiscal years, OptiCore does not lend itself to a straightforward price-to-earnings style valuation comparison. The relationship between share price and net assets is also complicated by the fact that per-share book value has shifted substantially through large external capital raises, repeated capital transactions, and the recent share consolidation, making direct comparison with other optical-component makers less meaningful without that context. The company currently pays no dividend, so shareholder returns through dividends are not a factor at present. Eugene Investment & Securities noted in a March 2026 report that a rising datacom revenue share could support fundamental improvement and a valuation re-rating scenario, but it did not issue an investment rating or price target. The same report added that, given the change of controlling shareholder and a history of multiple capital transactions, scrutiny of governance and funding structures is warranted, and that potential dilution and overhang from convertible bonds bear watching. Overall, the current trading level appears to reflect both hopes for the business transition and the offsetting uncertainty stemming from the accounting and listing issues."
+  "ko": "옵티코어는 2025년 이후 수차례의 전환사채 발행과 유상증자를 통해 자본을 확충해왔고, 이 과정에서 발행주식수가 크게 늘어난 뒤 주식병합 절차를 거치는 등 자본 구조에 굵은 변화가 있었다. 이러한 배경 때문에 주당 지표는 최근의 대규모 자본거래를 반영해 왔던 과거 수치와 직접 비교하기 어려운 상태이며, 순자산가치 대비 주가의 프리미엄은 상당히 큰 편으로 나타난다. 회사가 설립 이후 배당을 실시한 이력은 확인되지 않아, 주주환원보다는 사업 재편과 자본 조달에 우선순위가 놓여 있는 국면으로 볼 수 있다. 다년간 이어진 영업손실이 2025년에도 지속됐고 순손실은 오히려 확대된 만큼, 시장의 관심은 이익 방향성이 적자에서 흑자로 전환될 수 있는지에 집중돼 있다. 여기에 2025 사업연도 감사의견 거절과 상장폐지 사유 발생이라는 상장 적격성 이슈가 겹쳐 있어, 순자산가치나 매출 성장성만으로 가치를 논하기 어려운 특수한 상황에 놓여 있다는 점도 함께 감안할 필요가 있다.",
+  "en": "Since 2025, OptiCore has raised capital through multiple rounds of convertible bond issuance and rights offerings, a process that sharply increased shares outstanding before a share consolidation was carried out, marking substantial changes to its capital structure. Against this backdrop, per-share metrics are difficult to compare directly with historical figures given the scale of recent capital transactions, and the premium of the share price over net asset value appears considerable. No dividend payment history has been confirmed since the company's founding, suggesting priority has been placed on business restructuring and capital raising rather than shareholder returns. With operating losses persisting for years and the net loss actually widening in 2025, market attention centers on whether the profit trajectory can turn from loss to profit. It is also worth noting that this sits alongside a listing-eligibility issue -- the disclaimer of audit opinion for FY2025 and the resulting delisting cause -- making this a special situation where valuation cannot be discussed on net asset value or revenue growth alone."
  },
  "bull": [
   {
    "title": {
-    "ko": "AI 데이터센터향 사업 전환 초기 성과",
-    "en": "Early traction in the AI data-center pivot"
+    "ko": "데이터콤 전환 모멘텀",
+    "en": "Datacom Transition Momentum"
    },
    "body": {
-    "ko": "옵티코어는 2025년 9월 이후 여러 건의 400G·800G AI 데이터센터용 광트랜시버 공급계약을 공시했고, 이 물량이 2025년 4분기와 2026년 1분기 매출을 100억원대로 끌어올리는 데 기여한 것으로 보인다. 유진투자증권은 데이터콤 매출 비중이 2025년 43%에서 2027년 82%까지 확대될 수 있다는 시나리오를 제시하며 사업 구조 전환에 주목했다. 국내에서 데이터센터향 400G·800G 광트랜시버를 실제 개발·납품한 업체가 극소수로 파악되는 만큼, 후속 계약이 이어질 경우 매출 기반이 한층 다변화될 수 있다.",
-    "en": "Since September 2025, OptiCore has disclosed multiple 400G/800G AI data-center transceiver supply contracts, which appear to have helped push revenue above KRW 10bn in both Q4 2025 and Q1 2026. Eugene Investment & Securities highlighted a scenario in which the datacom revenue share could rise from 43% in 2025 to 82% by 2027. With only a handful of Korean firms known to have actually developed and shipped 400G/800G data-center transceivers, further contract wins could broaden the revenue base."
+    "ko": "옵티코어는 2025년 9월부터 12월까지 AI 데이터센터용 광트랜시버 공급계약을 잇달아 체결하며 누적 수주가 100억원을 넘어섰다. 7월에는 400G 고속 광트랜시버 개발을 완료해 국내 글로벌 IT서비스 기업을 대상으로 검증을 진행 중이라고 공시했다. 검증이 성공적으로 마무리되면 4분기 이후 가시적인 매출로 연결될 가능성이 있다는 회사 측 설명도 나왔다.",
+    "en": "OptiCore signed a series of AI datacenter optical transceiver supply contracts from September through December 2025, pushing cumulative orders above KRW 10 billion. In July it disclosed completion of a 400G high-speed transceiver, currently under validation with a domestic global IT service company. The company has indicated that successful validation could translate into visible revenue from the fourth quarter onward."
    }
   },
   {
    "title": {
-    "ko": "정부 지원 6G 국책과제 수행",
-    "en": "Government-backed 6G national R&D project"
+    "ko": "분기 매출 100억원대 진입",
+    "en": "Quarterly Revenue Entering the KRW 10 Billion Range"
    },
    "body": {
-    "ko": "옵티코어는 6G 무선액세스용 지능형 광부품 및 광트랜시버 기술 개발 국책과제의 주관기업으로 선정돼 2028년 12월까지 ETRI, 포셈과 공동 연구를 수행한다. 총사업비 160억원 중 59억원이 정부지원 연구개발비로 배정돼 있어 자체 R&D 부담을 일부 분산할 수 있다. 이 과제는 6G 프론트홀 광링크 및 광전송 시스템 기술 확보로 이어질 수 있어 중장기 기술 경쟁력 확보 측면에서 의미가 있다.",
-    "en": "OptiCore was selected to lead a national project developing intelligent optical components and transceivers for 6G wireless access, running through December 2028 jointly with ETRI and Forcem. Of the KRW 16.0bn total budget, KRW 5.9bn is government-funded R&D support, helping offset some of the company's own R&D burden. The project could build 6G fronthaul optical link and transmission technology capability, which matters for medium- to long-term technical competitiveness."
+    "ko": "2025년 4분기 매출이 131.9억원으로 급증했고 2026년 1분기에도 119.0억원을 기록하며 두 개 분기 연속 100억원대에 진입했다. 같은 기간 영업손실은 2025년 2분기 -25.7억원에서 2026년 1분기 -6.6억원까지 크게 줄어드는 흐름을 보였다. 다만 2분기 매출이 다시 33.9억원으로 급감해, 이 흐름이 안정적으로 이어질지는 추가 확인이 필요하다.",
+    "en": "Revenue surged to KRW 13.19 billion in 4Q25 and reached KRW 11.90 billion in 1Q26, marking two consecutive quarters in the KRW 10 billion range. Over the same period, the operating loss narrowed substantially from KRW -2.57 billion in 2Q25 to KRW -0.66 billion in 1Q26. However, revenue fell back to KRW 3.39 billion in 2Q26, meaning further confirmation is needed on whether this trend can be sustained."
    }
   },
   {
    "title": {
-    "ko": "통신 3사 직납 레퍼런스 보유",
-    "en": "Existing direct-supply track record with telecom carriers"
+    "ko": "통신 3사 직납 레�런스",
+    "en": "Direct-Supply Reference with the Three Telecom Carriers"
    },
    "body": {
-    "ko": "옵티코어는 SK텔레콤·KT·LG유플러스 등 국내 이동통신 3사에 광트랜시버·광다중화장치를 직접 공급해온 레퍼런스를 갖고 있다. 유진투자증권은 통신사들이 국산 광트랜시버 도입을 검토하는 국면이 온다면 이러한 기존 관계가 후보군 진입에 유리하게 작용할 수 있다고 평가했다. SK텔레콤-AWS 울산 데이터센터, LG유플러스-구글 파주 프로젝트 등 국내 통신사 주도 AI 데이터센터 투자가 진행 중인 점도 잠재 수요 기반으로 거론된다.",
-    "en": "OptiCore has an established track record of directly supplying optical transceivers and WDM equipment to SK Telecom, KT, and LG Uplus. Eugene Investment & Securities assessed that these existing relationships could position OptiCore favorably should carriers move to localize optical transceiver procurement. Carrier-led AI data-center projects such as SK Telecom's Ulsan facility with AWS and LG Uplus's Paju facility with Google are cited as a potential demand base."
+    "ko": "유진투자증권은 옵티코어가 통신 3사, 특히 SK텔레콤과 직납 거래 관계를 보유하고 있다고 평가했다. 통신사들이 국산 광트랜시버 검토 국면에 들어설 경우 기존 거래 레퍼런스를 보유한 옵티코어가 후보군에 오를 수 있는 위치에 있다고 봤다. SK텔레콤-AWS의 울산 데이터센터, LG유플러스의 파주 데이터센터 등 통신사 주도 AI 데이터센터 프로젝트가 진행 중인 점도 잠재적 수요 기반으로 언급됐다.",
+    "en": "Eugene Investment & Securities assessed that OptiCore maintains direct-supply relationships with the three telecom carriers, particularly SK Telecom. It viewed OptiCore as well positioned to become a candidate supplier should carriers move toward evaluating domestically made optical transceivers, given its existing transaction track record. Carrier-led AI datacenter projects such as the SK Telecom-AWS facility in Ulsan and LG Uplus's facility in Paju were cited as a potential demand base."
    }
   }
  ],
  "bear": [
   {
    "title": {
-    "ko": "감사의견 거절에 따른 상장폐지 심사",
-    "en": "Delisting review triggered by an audit disclaimer"
+    "ko": "상장 적격성 불확실성",
+    "en": "Listing-Eligibility Uncertainty"
    },
    "body": {
-    "ko": "외부감사인 한울회계법인은 2026년 3월 24일 2025사업연도 재무제표에 대해 감사의견 거절을 표명했고, 근거로 전환사채 재매각 적정성, 타법인 지분취득, 투자부동산 취득 적정성, 종속기업 투자·자금거래 적정성 등을 지목했다. 이에 따라 3월 23일부터 주식 거래가 정지됐고, 회사는 이의신청을 접수해 개선기간을 부여받은 상태다. 개선기간 종료 후 상장폐지 여부가 결정될 때까지 거래정지가 이어지는 구조여서, 사업적 성과와 무관하게 상장 유지 자체가 불확실성 요인으로 남아 있다.",
-    "en": "External auditor Hanwool Accounting Corp. issued a disclaimer of opinion on the FY2025 financial statements on March 24, 2026, citing concerns over the propriety of CB resales, equity stakes in other companies, investment real-estate purchases, and subsidiary investment and fund transfers. Trading has been halted since March 23, and the company filed an appeal and was granted an improvement period. Because the halt continues until a delisting decision is made after that period ends, the listing itself remains a source of uncertainty independent of business performance."
+    "ko": "옵티코어는 2026년 3월 한울회계법인으로부터 2025 사업연도 재무제표에 대해 감사의견 거절을 받았고, 이에 따라 상장폐지 사유가 발생해 주권매매거래가 정지됐다. 회사는 4월 이의신청서를 제출해 개선기간을 부여받았으나, 개선기간 종료와 상장폐지 여부 결정까지는 상당한 시일이 소요될 수 있는 구조다. 거래정지 직전 일부 임원이 보유 주식 대부분을 높은 가격에 장내 매도한 사실도 확인됐다.",
+    "en": "In March 2026, OptiCore received a disclaimer of opinion from its auditor, Hanul Accounting Corporation, on its FY2025 financial statements, which triggered a delisting cause and halted trading of its shares. The company filed an objection in April and was granted an improvement period, but the process from the end of that period to a final delisting decision could take considerable time. It was also confirmed that some executives sold most of their holdings at elevated prices in the market shortly before the trading halt."
    }
   },
   {
    "title": {
-    "ko": "분기 실적의 높은 변동성",
-    "en": "High quarter-to-quarter earnings volatility"
+    "ko": "지배구조·자금거래 리스크",
+    "en": "Governance and Fund-Flow Risk"
    },
    "body": {
-    "ko": "매출은 2025년 4분기 131.9억원, 2026년 1분기 119.0억원으로 급증했다가 2026년 2분기 다시 33.9억원으로 줄어드는 등 계약 인도 시점에 따라 크게 출렁였다. 이에 따라 영업손실도 2026년 1분기 6.6억원에서 2분기 18.7억원으로 다시 확대돼, 안정적인 매출 기반이 아직 확립되지 않았음을 보여준다. 순손실은 영업손실보다 훨씬 큰 규모로 나타나 영업외 요인의 영향도 크다.",
-    "en": "Revenue swung sharply from KRW 13.19bn in Q4 2025 and KRW 11.90bn in Q1 2026 back down to KRW 3.39bn in Q2 2026, tracking contract delivery timing. The operating loss correspondingly widened from KRW 0.66bn in Q1 2026 to KRW 1.87bn in Q2 2026, indicating a stable revenue base has yet to be established. Net losses have also run far larger than operating losses, pointing to significant non-operating impacts."
+    "ko": "2025년 7월 창업주 지분 매각으로 대부업 이력을 가진 블랙마운틴홀딩스가 최대주주에 올랐다. 이후 회사는 전환사채 발행으로 307억원을 조달해 부동산 매입, 타법인 지분 취득, 종속기업 대여 등에 사용했는데, 외부감사인은 이들 거래의 적정성에 대해 충분한 감사증거를 확보하지 못했다고 지적했다. 감사인은 자금 집행 과정에서 고의적 부정행위 가능성까지 의심한 것으로 알려졌다.",
+    "en": "In July 2025, the sale of the founder's stake brought Black Mountain Holdings, an entity with a lending-business background, to controlling-shareholder status. The company subsequently raised KRW 30.7 billion through convertible bond issuances, using the proceeds for real estate purchases, equity stakes in other companies, and loans to subsidiaries, but the external auditor stated it could not obtain sufficient audit evidence on the propriety of these transactions. The auditor was reported to have even suspected the possibility of intentional wrongdoing in the execution of these fund flows."
    }
   },
   {
    "title": {
-    "ko": "재무구조 악화와 자본잠식 이력",
-    "en": "Deteriorating balance sheet with a history of capital impairment"
+    "ko": "손익 변동성과 비영업손실 확대",
+    "en": "Earnings Volatility and Widening Non-Operating Losses"
    },
    "body": {
-    "ko": "부채비율은 2024년 107.6%에서 2025년 201.8%로 급등했고, 부채총계는 같은 기간 157.5억원에서 462.3억원으로 세 배 가까이 늘었다. 2025년 3분기 기준으로는 결손금이 자본을 넘어서는 자본잠식 상태가 지속된 것으로 파악됐으며, 자본총계 확대는 상당 부분 외부 자금조달에 의존한 결과로 보인다. 유진투자증권은 전환사채 관련 잠재 희석과 오버행 부담을 변수로 지적했다.",
-    "en": "The debt ratio jumped from 107.6% in 2024 to 201.8% in 2025, and total liabilities nearly tripled from KRW 15.75bn to KRW 46.23bn over the same period. As of Q3 2025, accumulated deficits were reported to still exceed equity, a state of capital impairment, and the growth in total equity appears to rely heavily on external fundraising. Eugene Investment & Securities flagged potential dilution and overhang risk from convertible bonds as a variable to watch."
+    "ko": "매 분기 순손실이 영업손실 규모를 훨씬 웃도는 구조가 반복되고 있다. 2025년 2분기 영업손실은 -25.7억원인데 순손실은 -107.7억원에 달했고, 2026년 2분기에도 영업손실 -18.7억원 대비 순손실은 -97.0억원으로 크게 벌어졌다. 매출 또한 분기별로 30억원대와 100억원대를 오가는 큰 변동성을 보이고 있어 실적 예측 가능성이 낮은 상태다.",
+    "en": "A pattern in which the net loss far exceeds the operating loss has repeated nearly every quarter. In 2Q25, the operating loss was KRW -2.57 billion while the net loss reached KRW -10.77 billion, and in 2Q26 the gap widened again with an operating loss of KRW -1.87 billion versus a net loss of KRW -9.70 billion. Revenue has also swung sharply between the KRW 3 billion and KRW 10 billion range across quarters, leaving earnings predictability low."
    }
   }
  ],
  "risks": [
   {
    "cat": {
-    "ko": "회계·지배구조 리스크",
-    "en": "Accounting and governance risk"
+    "ko": "상장폐지/회계 리스크",
+    "en": "Delisting and Accounting Risk"
    },
    "body": {
-    "ko": "2025년 7월 최대주주가 블랙마운틴홀딩스로 변경된 이후 진행된 부동산 매입, 전환사채 재매각, 계열사 자금거래 등이 외부감사인의 감사의견 거절 근거로 지목됐다. 증권업계는 회계부정조사 기간 중 주가가 비정상적으로 급등한 점에도 주목했으며, 한국거래소도 거래정지 전 주가 급등락 현상을 이상 징후로 지적한 바 있다. 재감사 결과와 조사 진행 상황에 따라 추가적인 공시·제재 가능성도 배제할 수 없다.",
-    "en": "Real-estate purchases, CB resales, and intra-group fund transfers carried out after Blackmountain Holdings became the controlling shareholder in July 2025 were cited as grounds for the auditor's disclaimer. Market observers also flagged an abnormal share-price surge during the accounting fraud investigation period, and the Korea Exchange cited unusual price swings as a red flag before the halt. Additional disclosures or sanctions cannot be ruled out depending on the re-audit outcome and investigation progress."
+    "ko": "2025 사업연도 재무제표에 대한 감사의견 거절 사유로는 전환사채 재매각 적정성, 타법인 지분 취득 및 출자 거래 적정성, 투자부동산 취득 적정성, 종속기업 투자·자금 거래 적정성 등이 지적됐다. 이는 사실상 최대주주 변경 이후 추진된 신사업과 자금 집행 전반에 대한 문제 제기로, 개선기간 중 이 문제들이 해소되지 못하면 최종적으로 상장폐지로 이어질 가능성을 배제할 수 없다.",
+    "en": "The grounds for the disclaimer of opinion on the FY2025 financial statements included the propriety of convertible bond resales, equity acquisitions and investments in other companies, investment real estate acquisitions, and subsidiary investment and fund transactions. This effectively raises concerns across the entirety of new business initiatives and fund execution pursued after the change in controlling shareholder, and a failure to resolve these issues during the improvement period cannot rule out an eventual delisting."
    }
   },
   {
    "cat": {
-    "ko": "상장 유지 리스크",
-    "en": "Listing continuity risk"
+    "ko": "자본잠식 및 재무건전성",
+    "en": "Capital Impairment and Financial Soundness"
    },
    "body": {
-    "ko": "주식 거래는 2026년 3월 23일부터 정지된 상태이며, 회사는 이의신청을 통해 개선기간을 부여받았으나 개선기간 종료 후 상장폐지 여부가 최종 결정되는 구조다. 2026년 5월에는 액면병합 변경상장이 이뤄졌지만 이는 상장폐지 심사와는 별개 절차로, 감사의견 관련 거래정지 해소 여부가 핵심 변수로 남아 있다. 상장폐지가 결정될 경우 주주가 감내해야 할 손실 위험이 크다.",
-    "en": "Trading has been halted since March 23, 2026, and while the company was granted an improvement period after filing an appeal, the final delisting decision will only come after that period concludes. A share consolidation and re-listing occurred in May 2026, but this is a separate procedure from the delisting review, and resolution of the audit-related trading halt remains the key variable. Should delisting ultimately be decided, shareholders would face substantial loss risk."
+    "ko": "누적된 결손금이 자본총계를 초과하는 자본잠식 상태가 지속되고 있으며, 보도에 따르면 자본잠식률은 2024년 말 36%에서 2025년 3분기 기준 20%로 다소 낮아졌으나 완전히 해소되지는 않았다. 외부 자금 유치로 자본총계가 일시적으로 늘어나더라도 순손실이 지속되면 다시 자본잠식이 심화될 수 있어, 관리종목 지정 등 상장 유지 관련 리스크가 상존한다.",
+    "en": "Capital impairment, where accumulated deficits exceed total equity, has persisted; reports indicate the impairment ratio eased from 36% at the end of 2024 to 20% as of the third quarter of 2025, but it has not been fully resolved. Even if total equity temporarily rises through external fundraising, continued net losses could deepen impairment again, keeping listing-maintenance risks such as administrative-issue designation ever present."
    }
   },
   {
    "cat": {
-    "ko": "재무·희석 리스크",
-    "en": "Financial and dilution risk"
+    "ko": "사업 지속성 및 경쁴 리스크",
+    "en": "Business Sustainability and Competitive Risk"
    },
    "body": {
-    "ko": "부채비율이 200%를 넘어섰고 자본잠식 이력이 있어 추가적인 외부 자금조달 필요성이 이어질 가능성이 있다. 유진투자증권은 전환사채 관련 잠재 희석과 오버행 부담을 변수로 지목했으며, 회사는 일부 전환사채를 만기 전 장외매수로 취득해 물량을 줄이려는 시도도 병행하고 있다. 향후 자금조달 방식과 규모에 따라 기존 주주의 지분 희석 정도가 달라질 수 있다.",
-    "en": "With the debt ratio above 200% and a history of capital impairment, further external fundraising needs may persist. Eugene Investment & Securities flagged potential dilution and overhang from convertible bonds, and the company has been buying back some CBs off-market ahead of maturity to reduce outstanding volume. The extent of dilution for existing shareholders will depend on the method and scale of future fundraising."
+    "ko": "핵심 텔레콤 매출은 통신사 5G 투자 지연 및 신규망 구축 축소로 구조적 둔화가 이어지고 있다. AI 데이터센터용 광트랜시버 매출은 아직 단발성 공급계약에 의존하는 초기 단계로, 후속 수주가 이어지지 않으면 매출 회복이 지속되기 어렵다. 데이터센터용 광트랜시버 시장에는 이미 다수의 국내외 경쟁사가 진입해 있어 가격 및 기술 경쟁이 치열하다.",
+    "en": "Core telecom revenue continues to face structural weakness from delayed carrier 5G investment and reduced new-network buildout. Revenue from AI datacenter optical transceivers remains at an early stage dependent on one-off supply contracts, and revenue recovery may not be sustained without follow-on orders. The datacenter optical transceiver market already has numerous domestic and overseas competitors, making price and technology competition intense."
    }
   }
  ],
  "checkpoints": [
   {
    "when": {
-    "ko": "상장폐지 여부 결정 시점(개선기간 종료 후)",
-    "en": "Delisting decision date (after the improvement period ends)"
+    "ko": "2026년 11월 중순",
+    "en": "Mid-November 2026"
    },
    "what": {
-    "ko": "재감사를 통한 감사의견 정상화 여부와 한국거래소의 최종 상장폐지 여부 결정을 확인해야 한다. 이는 사업 실적과 별개로 주식 거래 재개 가능성을 좌우하는 핵심 변수다.",
-    "en": "Whether a re-audit resolves the disclaimer and the Korea Exchange's final delisting decision should be confirmed. This is the key variable determining whether trading can resume, independent of business performance."
+    "ko": "2026년 3분기보고서 제출 시점에서 매출이 다시 100억원대로 회복되는지와 4분기 수주 이행 상황을 확인할 필요가 있다.",
+    "en": "Around the 3Q26 report filing, check whether revenue recovers back into the KRW 10 billion range and how order fulfillment for the fourth quarter is progressing."
    }
   },
   {
    "when": {
-    "ko": "2026년 3분기 보고서 제출 시점(통상 11월 중)",
-    "en": "Q3 2026 report filing (typically around November)"
+    "ko": "2026년 4분기 중",
+    "en": "During the fourth quarter of 2026"
    },
    "what": {
-    "ko": "매출·손익 추이가 2026년 1분기 수준으로 회복되는지, 데이터콤 매출 비중이 실제로 확대되는지를 확인할 필요가 있다.",
-    "en": "Check whether revenue and profit trends recover toward Q1 2026 levels and whether the datacom revenue share is actually expanding."
+    "ko": "AI 데이터센터용 400G·800G 광트랜시버에 대한 신규 공급계약 공시가 이어지는지, 즉 수주의 지속성이 확인되는지가 관전 포인트다.",
+    "en": "A key point to watch is whether new supply-contract disclosures for AI datacenter 400G/800G optical transceivers continue, confirming the sustainability of order flow."
    }
   },
   {
    "when": {
-    "ko": "추가 AI 데이터센터 공급계약 공시 시점",
-    "en": "Timing of any additional AI data-center supply contract disclosures"
+    "ko": "2027년 4월 초(개선기간 종료 예정 시점)",
+    "en": "Early April 2027 (scheduled end of the improvement period)"
    },
    "what": {
-    "ko": "2025년 9월 이후 이어진 400G·800G 공급계약이 후속으로 계속되는지, 계약 규모와 고객 다변화 여부를 점검해야 한다.",
-    "en": "Monitor whether the string of 400G/800G supply contracts seen since September 2025 continues, and whether contract size and customer diversification improve."
+    "ko": "코스닥시장 공시에 따르면 개선기간 종료 후 15영업일 이내에 개선계획 이행내역서 및 전문가 확인서를 제출해야 하며, 이후 상장위원회의 상장폐지 여부 심의 일정을 확인해야 한다.",
+    "en": "Per KOSDAQ market disclosures, an implementation report and expert confirmation on the improvement plan must be submitted within 15 business days after the improvement period ends, after which the schedule for the listing committee's delisting decision should be checked."
    }
   },
   {
    "when": {
-    "ko": "전환사채 관련 공시(만기전취득·전환청구 등)",
-    "en": "CB-related disclosures (early redemption, conversion requests, etc.)"
+    "ko": "매매거래정지 관련 공시가 변경될 때",
+    "en": "Whenever a trading-halt-related disclosure is updated"
    },
    "what": {
-    "ko": "잔여 전환사채의 만기전취득·전환 진행 상황을 확인해 오버행 및 희석 부담의 변화를 점검해야 한다.",
-    "en": "Track progress on early redemption or conversion of remaining CBs to assess changes in overhang and dilution risk."
-   }
-  },
-  {
-   "when": {
-    "ko": "6G 국책과제 진행 상황(~2028년 12월)",
-    "en": "6G national R&D project progress (through December 2028)"
-   },
-   "what": {
-    "ko": "ETRI·포셈과 공동 수행 중인 6G 프론트홀 광링크 기술 개발의 단계별 성과와 정부지원금 집행 현황을 확인할 수 있다.",
-    "en": "Track milestone progress on the jointly developed 6G fronthaul optical link technology with ETRI and Forcem, as well as the disbursement status of government R&D funding."
+    "ko": "현재 감사의견 관련 상장폐지 사유로 매매거래가 정지된 상태이므로, 거래정지 해제나 조건 변경에 관한 코스닥시장 공시를 지속적으로 확인해야 한다.",
+    "en": "Since trading has been halted due to the audit-opinion-related delisting cause, KOSDAQ market disclosures on any lifting of the halt or changes to its conditions should be continuously monitored."
    }
   }
  ],
  "verdict": {
   "body": {
-   "ko": "옵티코어는 5G 통신장비 중심의 레거시 사업이 축소되는 가운데, AI 데이터센터용 400G·800G 광트랜시버 공급계약을 통해 새로운 매출 축을 만들어가는 초기 국면에 있다. 2025년 4분기와 2026년 1분기 매출이 100억원대로 급증한 것은 이러한 전환의 가시적 신호이지만, 2026년 2분기 매출이 다시 큰 폭으로 줄어든 데서 보듯 계약 기반 매출의 지속성은 아직 검증되지 않았다. 동시에 2026년 3월 외부감사인의 감사의견 거절로 상장폐지 사유가 발생해 주식 거래가 정지됐고, 개선기간 종료 후 상장폐지 여부가 결정되는 구조여서 회사의 미래는 사업 실적과 무관한 비영업적 변수에도 크게 좌우된다. 재무 측면에서는 부채비율이 급등하고 자본잠식 이력이 남아 있는 등 재무구조 부담이 상존하며, 전환사채 관련 오버행·희석 우려도 함께 거론된다. 증권가에서는 옵티코어의 데이터콤 전환 가능성에 주목하는 시각과, 최대주주 변경 이후의 자금거래·지배구조에 대한 경계 시각이 동시에 존재한다. 종합적으로 볼 때 옵티코어는 성장 기대와 회계·상장 관련 불확실성이 공존하는 기업으로, 향후 재감사 결과와 상장 유지 여부, 그리고 데이터콤 매출의 실질적 지속성이 핵심 관전 포인트가 될 것으로 보인다.",
-   "en": "OptiCore sits at an early stage of building a new revenue pillar around AI data-center 400G/800G optical transceivers even as its legacy 5G telecom equipment business shrinks. The surge to over KRW 10bn in quarterly revenue in Q4 2025 and Q1 2026 is a visible signal of this shift, but the subsequent sharp pullback in Q2 2026 shows the durability of contract-based revenue remains unproven. At the same time, a disclaimer of audit opinion in March 2026 triggered a delisting cause and a trading halt, with the final delisting decision to be made only after an improvement period—meaning the company's future is also heavily shaped by non-operational variables unrelated to business performance. Financially, a sharply higher debt ratio and a history of capital impairment represent ongoing balance-sheet pressure, alongside flagged concerns about CB-related overhang and dilution. Sell-side views are mixed, with some attention to the datacom transition potential and others cautious about the fund transactions and governance changes since the change of controlling shareholder. On balance, OptiCore is a company where growth hopes and accounting/listing uncertainty coexist, with the re-audit outcome, the listing decision, and the real durability of datacom revenue standing as the key items to watch going forward."
+   "ko": "옵티코어는 5G 텔레콤 장비 중심의 매출 구조에서 AI 데이터센터용 400G·800G 광트랜시버로 사업을 전환하는 국면에 있으며, 2025년 4분기와 2026년 1분기 두 개 분기 연속 매출 100억원대에 진입하는 등 실적 회복의 조짐이 일부 관찰됐다. 그러나 2026년 2분기 매출이 다시 급감했고, 매 분기 영업손실보다 훨씬 큰 순손실이 반복되며 손익의 변동성이 매우 크게 나타나고 있다. 무엇보다 2025 사업연도 재무제표에 대한 감사의견 거절로 상장폐지 사유가 발생해 매매거래가 정지된 상태이며, 개선기간 중 전환사채 재매각, 타법인 출자, 부동산 취득 등 자금거래의 적정성 문제가 해소돼야 하는 과제를 안고 있다. 자본잠식 상태도 다소 완화됐지만 완전히 해소되지는 않았고, 대부업 이력을 가진 최대주주 체제 하의 지배구조 안정성에 대한 의문도 여전하다. 통신 3사와의 직납 레퍼런스와 데이터센터 수요 확대라는 사업적 기회 요인이 존재하지만, 상장 적격성과 지배구조 리스크가 해소되지 않는 한 이러한 기회가 실제 성과로 이어질 수 있을지는 불확실한 상태다. 투자자는 개선기간 진행 상황과 후속 수주의 지속성을 함께 지켜봐야 할 것으로 판단된다.",
+   "en": "OptiCore is in the process of shifting its revenue base from 5G telecom equipment toward AI datacenter 400G/800G optical transceivers, and some signs of recovery were observed as revenue entered the KRW 10 billion range for two consecutive quarters in 4Q25 and 1Q26. However, revenue fell sharply again in 2Q26, and net losses have repeatedly far exceeded operating losses each quarter, producing very high earnings volatility. Most importantly, a disclaimer of audit opinion on the FY2025 financial statements triggered a delisting cause and halted trading, leaving the company with the task of resolving questions over the propriety of fund transactions -- including convertible bond resales, equity investments in other entities, and real estate acquisitions -- during the current improvement period. Capital impairment has eased somewhat but has not been fully resolved, and questions remain about governance stability under a controlling shareholder with a lending-business background. While business opportunities exist in the form of direct-supply references with the three telecom carriers and growing datacenter demand, it remains uncertain whether these opportunities can translate into actual performance unless listing-eligibility and governance risks are resolved. Investors are likely to need to watch both the progress of the improvement period and the sustainability of follow-on orders."
   }
  },
  "sources": [
   "https://m.thinkpool.com/compDiscuss/cont/1013605",
-  "https://news.nate.com/view/20251219n29466",
-  "https://comp.fnguide.com/SVO2/ASP/SVD_Main.asp?gicode=A380540",
-  "https://www.butler.works/ko/companies/01506990?corpLeftPanel=summary&corpMiddlePanel=summary",
-  "https://www.digitaltoday.co.kr/aigongsi/3260/opticore-ai-datacenter-transceiver-contract",
-  "https://file.alphasquare.co.kr/media/pdfs/company-report/20260316_380540_cylee_42.pdf",
-  "https://news.nate.com/view/20260105n25742",
-  "https://www.hankyung.com/article/202601052405L",
-  "https://www.hankyung.com/article/202512290522L",
-  "https://x.com/Jaymin_Alpha/status/2058556375014260771",
-  "https://goinsider.kr/en/stock/01506990",
-  "https://dealsite.co.kr/articles/154418",
-  "https://www.esgeconomy.com/news/articleView.html?idxno=14237",
-  "https://www.judal.co.kr/?view=stockAI&shareToken=bebC3vqWvwG0aXPv",
-  "https://www.judal.co.kr/?view=stockAI&shareToken=O6QUJpDCgLi4acMw",
   "https://www.investing.com/equities/opticore",
-  "https://m.thinkpool.com/compDiscuss/cont/1014222",
-  "https://alphasquare.co.kr/home/stock-summary?code=380540"
+  "https://markets.hankyung.com/stock/380540",
+  "https://m.thinkpool.com/item/380540",
+  "https://x.com/Jaymin_Alpha/status/2058556375014260771",
+  "https://kind.krx.co.kr/common/disclsviewer.do?method=search&acptno=20250320000815&docno=&viewerhost=",
+  "https://markets.hankyung.com/stock/380540/financial-summary",
+  "https://file.alphasquare.co.kr/media/pdfs/company-report/20260316_380540_cylee_42.pdf",
+  "https://alicepapa.co.kr/entry/%EC%98%B5%ED%8B%B0%EC%BD%94%EC%96%B4-%EC%A3%BC%EA%B0%80%EC%A0%84%EB%A7%9D-%EC%9C%A0%EC%A7%84%ED%88%AC%EC%9E%90%EC%A6%9D%EA%B6%8C-%ED%88%AC%EC%9E%90%EC%9D%98%EA%B2%AC-NR-%EB%8D%B0%EC%9D%B4%ED%84%B0%EC%84%BC%ED%84%B0-400G%C2%B7800G-%EC%88%98%EC%A3%BC-%EB%88%84%EC%A0%81-167%EC%96%B5%EC%9B%90",
+  "https://m.thinkpool.com/compDiscuss/cont/1012295",
+  "https://www.newspim.com/news/view/20240920000867",
+  "https://comp.fnguide.com/SVO2/ASP/SVD_Main.asp?gicode=A380540",
+  "https://dealsite.co.kr/articles/154418",
+  "http://www.businessreport.kr/news/articleView.html?idxno=50111",
+  "https://www.mt.co.kr/stock/2026/03/25/2026032508205478450",
+  "https://www.newstomato.com/ReadNews.aspx?no=1268417",
+  "https://www.edaily.co.kr/News/Read?newsId=04710086642232880&mediaCodeNo=257",
+  "https://www.thebell.co.kr/front/newsview.asp?key=202603250052078680106240"
  ],
  "v": 2,
  "model": "claude-sonnet-5",
@@ -233,9 +223,9 @@
   "전자·부품"
  ],
  "market": "코스닥",
- "reportDate": "2026-08-18",
- "reportTs": "2026-08-18 00:50",
- "dataDate": "20260824",
+ "reportDate": "2026-09-05",
+ "reportTs": "2026-09-05 06:37",
+ "dataDate": "20260904",
  "quant": {
   "asOf": "2026-08-24",
   "fs_basis": "연결(CFS) · DART 공시 확정치 · 지배주주 기준 순이익",

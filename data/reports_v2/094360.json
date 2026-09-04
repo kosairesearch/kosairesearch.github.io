@@ -1,230 +1,220 @@
 {
  "title": {
-  "ko": "비디오 IP 레퍼런스 확장, AI·차량용 수익화 분기점",
-  "en": "Video IP Reference Wins Broaden: At the Inflection Point for AI and Automotive Monetization"
+  "ko": "라이선스 누적, 로열티 전환기 진입",
+  "en": "License Backlog Turns Toward Royalty Growth"
  },
  "lead": {
-  "ko": "구글 Tensor 모바일 로열티 개시·일본 차량용 반도체 빅3 2번째 고객 확보로 성장 단계를 높이고 있으나, NPU IP 신사업의 상업화 지연과 R&D 비용 부담이 수익성 개선의 제약으로 작용하고 있다.",
-  "en": "Chips&Media is stepping up its growth phase via the onset of Google Tensor mobile royalties and the addition of a second top-3 global automotive semiconductor company as a customer, while delayed NPU IP commercialization and elevated R&D spending continue to constrain margin expansion."
+  "ko": "2023~2025년 누적된 비디오·NPU IP 라이선스 계약이 로열티 매출로 전환되는 국면에 진입하며, 자동차·엣지 AI 고객 다변화가 실적 구조를 바꾸고 있다.",
+  "en": "Video and NPU IP license contracts accumulated between 2023 and 2025 are shifting into royalty revenue, while automotive and edge-AI customer diversification is reshaping the earnings structure."
  },
  "keypoints": [
   {
-   "ko": "구글 Tensor G5 양산 개시로 2025년 3분기부터 모바일 로열티가 최초 인식되기 시작하며 새로운 수익 스트림 확보",
-   "en": "Mobile royalty from Google Tensor G5 mass production began flowing from Q3 2025, establishing a new and structurally recurring revenue stream"
+   "ko": "2025년 연결 매출 284.7억원, 영업이익 69.6억원(영업이익률 24.5%)으로 전년 대비 이익률이 개선됐다.",
+   "en": "2025 consolidated revenue reached KRW 28.47bn with operating profit of KRW 6.96bn (24.5% operating margin), an improvement from the prior year."
   },
   {
-   "ko": "2025년 7월 일본 차량용 반도체 대형사(르네사스 추정)와 IP 계약 체결, 글로벌 차량용 반도체 빅3 중 2개사를 고객으로 확보하며 자율주행 전방시장 지위 공고화",
-   "en": "IP license deal with a major Japanese automotive chip maker (widely identified as Renesas) in July 2025 secured two of the world's top-3 automotive semiconductor companies as customers"
+   "ko": "2026년 1분기는 계절적 비수기로 영업이익이 1.8억원까지 축소됐으나 로열티 매출은 전년 동기 대비 31.6% 증가했다.",
+   "en": "In seasonally slow Q1 2026, operating profit narrowed to KRW 0.18bn, yet royalty revenue rose 31.6% year on year."
   },
   {
-   "ko": "차세대 NPU IP 'WAVE-N v2' 및 세계 최초 AI ISP 기술을 CES 2026에서 공개했으나, 2026년 3월 기준 NPU IP 고객은 1개사에 불과해 상업화 속도가 관건",
-   "en": "WAVE-N v2 NPU IP and world-first AI ISP technology debuted at CES 2026, but as of March 2026 only one NPU IP license customer exists—commercialization pace is the critical variable"
+   "ko": "나스닥 상장 암바렐라, 일본계 차량용 반도체사, 북미 대형 모바일 고객사 등으로 라이선스 고객군이 확대되고 있다.",
+   "en": "The licensing customer base is expanding to include Nasdaq-listed Ambarella, a Japanese automotive semiconductor firm, and a major North American mobile customer."
   },
   {
-   "ko": "2025년 연간 매출 284.7억원, 영업이익 69.6억원(OPM 24.5%)으로 2024년 대비 영업 수익성 회복세 확인; 4분기 매출 98.7억원·영업이익 38.6억원으로 성수기 레버리지 극대화",
-   "en": "FY2025 revenue of KRW 28.5bn and operating profit of KRW 7.0bn (OPM 24.5%) confirmed an operating profitability recovery; Q4's exceptional KRW 9.9bn revenue and KRW 3.9bn operating profit illustrated peak seasonal leverage"
+   "ko": "2026년 9월 차량용 기능안전 인증(ISO 26262 ASIL-B)을 획득한 신규 IP를 출시해 전장 시장 공략을 강화했다.",
+   "en": "In September 2026 the company launched a new automotive IP certified to ISO 26262 ASIL-B, reinforcing its push into the automotive market."
   },
   {
-   "ko": "2026년 1분기는 매출 57.8억원·영업이익 1.8억원으로 전년 1분기와 유사한 계절적 저점 재현, 하반기 성수기 실적이 연간 방향성을 결정",
-   "en": "Q1 2026 (revenue KRW 5.8bn, operating profit KRW 0.2bn) repeated the seasonal trough pattern of Q1 2025, with H2 activity set to determine full-year trajectory"
+   "ko": "2023년 대규모 순손실 이후 2024~2025년 순이익 흑자를 이어가고 있으나 영업이익 대비 순이익 변동성은 여전히 크다.",
+   "en": "Following a large net loss in 2023, the company has posted net profits in 2024 and 2025, though net income volatility relative to operating profit remains notable."
   }
  ],
  "business": {
-  "ko": "칩스앤미디어는 2003년 설립된 반도체 설계자산(Silicon IP) 전문기업으로, 비디오 코덱·영상 처리를 담당하는 비디오 IP를 핵심 제품으로 삼고 있다. 수익 모델은 SoC 설계사에 IP 설계도를 판매하는 '라이선스(License)' 수입과, 고객사의 칩 양산 수량에 연동되는 '로열티(Royalty)' 수입으로 이원화되어 있으며, 2025년 기준 라이선스 약 60%, 로열티 약 35%, 용역 등 5%로 구성된다. 전체 매출의 90% 이상이 해외에서 발생하며, NXP(2005년~), 삼성전자, 퀄컴, AMD, 리얼텍, 구글 등 글로벌 반도체 기업 150개사 이상을 고객으로 두고 있다. 적용 시장은 자동차(ADAS·인포테인먼트), 모바일(구글 Tensor 칩셋), 데이터센터 AI 가속기, TV·셋톱박스, CCTV·드론 등 영상이 활용되는 전 분야에 걸쳐 있다. 주요 경쟁사는 영국 ARM Holdings, 중국 VeriSilicon, 프랑스 Allegro DVT이며, 칩스앤미디어는 비디오 코덱 영역의 기술 특화와 장기 고객 레퍼런스로 차별화를 꾀한다. 라이선스 계약 이후 로열티 매출 개시까지 모바일은 통상 2~3년, 차량용은 최대 5년의 시차가 존재해 현재의 신규 계약이 미래 수익의 선행지표 역할을 한다. SiFive의 DesignShare·ASIC Service 프로그램과의 파트너십을 통해 칩스앤미디어 IP가 번들 솔루션으로 납품되는 채널도 영업 레버리지를 높이는 요인이다. 2023년부터 비디오코덱 IP에 치중된 사업 체질을 다변화하기 위해 NPU IP 개발에 착수했으며, WAVE-N v2 및 AI ISP를 통한 온디바이스 AI 시장 진출을 추진 중이다.",
-  "en": "Founded in 2003, Chips&Media is a Korean semiconductor intellectual property (IP) company whose core products are video codec and video-processing IP blocks embedded inside SoC chips. Its revenue model bifurcates into (1) an upfront license fee paid by chip designers upon adoption of the IP, and (2) a per-unit royalty tied to the volume of chips the customer ships into mass production. Based on 2025 data, license revenue accounts for approximately 60% of sales, royalties around 35%, and services/other 5%. More than 90% of revenue is generated internationally, with over 150 global semiconductor firms as customers, including NXP (since 2005), Samsung, Qualcomm, AMD, Realtek, and Google. End markets span automotive (ADAS and infotainment), mobile (Google Tensor chipsets), data-center AI accelerators, consumer electronics (TV, set-top boxes), and surveillance/drone applications. Primary competitors are ARM Holdings (UK), VeriSilicon (China), and Allegro DVT (France); Chips&Media differentiates through deep specialization in video codec IP and a long track record of customer reference designs. A structural feature of the IP business is the multi-year lag between a license contract and royalty onset—typically two to three years in mobile and up to five in automotive—making today's license wins the leading indicator of future royalty revenue. A partnership with SiFive's DesignShare program bundles Chips&Media IP into a broader turnkey solution, providing an additional sales channel. Since 2023, the company has expanded into NPU (neural-processing unit) IP to diversify beyond its video codec core, most visibly through the WAVE-N v2 product and an AI ISP solution targeting on-device AI applications."
+  "ko": "칩스앤미디어는 2003년 설립돼 2015년 코스닥에 상장한 반도체 설계자산(IP) 전문기업으로, 비디오 코덱 IP를 중심으로 고객사에 라이선스를 공급하고 있다. 고객사는 이 IP를 활용해 스마트폰, 디지털TV, 자동차용 반도체 칩을 설계·개발하며, 이 과정에서 회사는 라이선스 매출(선반영)과 양산 물량에 연동된 로열티 매출(후행 인식)을 함께 수취하는 구조를 갖고 있다. 최근에는 NPU IP 'WAVE-N'과 이스라엘 Visionary.ai와 협업한 AI ISP(소프트웨어 정의 영상처리) 등으로 포트폴리오를 확장하며 온디바이스 AI 시장 대응을 강화하고 있다. 주요 고객으로는 2005년부터 거래해온 NXP를 비롯해 중국 주요 차량용 반도체 업체, 2025년 3분기 신규 계약을 맺은 일본계 차량용 반도체사, 북미 대형 모바일 고객사의 자체 GPU 'G5'에 IP를 공급한 사례, 그리고 2026년 6월 라이선스를 체결한 나스닥 상장 엣지 AI 반도체사 암바렐라 등이 있다. 회사 측은 현재 자사 멀티미디어 IP가 글로벌 상위 5대 자동차 반도체 기업 중 3곳에 채택됐다고 밝혔다. 응용 분야는 스마트폰·TV 중심에서 자동차 인포테인먼트·자율주행(ADAS), 영상보안, 데이터센터 서버용 GPU·NPU 칩, 그리고 최근에는 로봇·드론 등 피지컬 AI 영역까지 다변화되고 있다. 경쟁 구도에서는 글로벌 유사 IP 기업인 베리실리콘(VeriSilicon) 등이 비교 대상으로 거론되며, 국내에서는 텔레칩스, 어보브반도체 등이 동종 업종으로 분류된다. 사업 특성상 라이선스 계약은 분기별로 건수·규모가 불규칙하게 인식되는 반면, 로열티는 고객사 양산 이후 여러 해에 걸쳐 안정적으로 발생하는 캐시카우 성격을 가진다.",
+  "en": "Chips&Media is a semiconductor IP specialist founded in 2003 and listed on KOSDAQ in 2015, supplying video codec IP under license to chipmakers. Customers use this IP to design smartphone, digital TV, and automotive semiconductor chips, and the company earns both upfront license revenue and royalty revenue tied to unit shipments once products enter mass production. More recently, the company has expanded its portfolio with the NPU IP 'WAVE-N' and an AI ISP (software-defined image processing) solution developed in partnership with Israel's Visionary.ai, strengthening its position in on-device AI. Key customers include NXP, a relationship dating back to 2005, major Chinese automotive semiconductor makers, a Japanese automotive chip company that signed a new contract in Q3 2025, a major North American mobile customer whose in-house GPU 'G5' incorporates the company's IP, and Nasdaq-listed edge-AI chipmaker Ambarella, which signed a license in June 2026. The company has stated that its multimedia IP has been adopted by three of the world's top five automotive semiconductor companies. Application areas have diversified from smartphones and TVs into automotive infotainment and ADAS, video security, datacenter server GPU/NPU chips, and more recently robotics and drones under the physical-AI theme. In terms of competitive positioning, global IP peer VeriSilicon is commonly cited as a comparison, while domestically Telechips and Abov Semiconductor are classified in the same industry group. Given the nature of the business, license revenue recognition is lumpy quarter to quarter depending on contract count and size, while royalty revenue behaves as a more stable, multi-year cash-flow stream once customer products reach mass production."
  },
  "earnings": {
-  "ko": "2022년 매출 240.9억원·영업이익 73.0억원(OPM 30.3%)으로 최근 수년 중 가장 높은 영업이익률을 기록했다. 2023년에는 매출 276.3억원, 영업이익 77.7억원(OPM 28.1%)으로 영업성과가 양호했으나, 대규모 비영업 손실 발생으로 지배주주 귀속 순이익이 -267.0억원을 기록하는 일회성 충격을 받았다. 2024년 매출 270.8억원(-2.0% YoY), 영업이익 52.8억원(OPM 19.5%)으로 외형은 소폭 감소하고 영업이익률도 하락했으나, 비영업 이익 정상화로 순이익이 100.1억원으로 회복되며 대규모 적자에서 흑자로 전환했다. 2025년에는 매출 284.7억원(+5.1% YoY), 영업이익 69.6억원(OPM 24.5%)으로 영업 수익성이 2024년 대비 약 5%p 반등했으며, 순이익은 59.2억원으로 2024년의 비영업 이익 기저효과가 소멸한 영향으로 전년 대비 감소했다. 분기별 계절성이 두드러지는데, 2025년 1분기는 매출 53.7억원·영업이익 2.0억원으로 연간 최저 분기를 기록했고, 2분기(매출 66.1억원·영업이익 13.8억원)에 일본 차량용 반도체사 첫 라이선스 매출이 반영되며 전년 동기 대비 영업이익이 118.9% 증가했다. 3분기(매출 66.2억원·영업이익 15.3억원)부터는 구글 Tensor G5 양산에 따른 모바일 로열티가 처음으로 실적에 포함됐으며, 4분기(매출 98.7억원·영업이익 38.6억원)는 연간 라이선스 계약 성수기가 집중되며 예외적으로 강한 실적을 시현했다. 2026년 1분기는 매출 57.8억원·영업이익 1.8억원으로 2025년 1분기와 유사한 계절적 저점 패턴을 반복하고 있으며, 순이익은 12.9억원으로 흑자 기조를 유지했다.",
-  "en": "In 2022, Chips&Media posted revenue of KRW 24.1bn and operating profit of KRW 7.3bn (OPM 30.3%), representing the highest operating margin in the period under review. In 2023, revenue rose to KRW 27.6bn with operating profit of KRW 7.8bn (OPM 28.1%), but a large one-time non-operating loss drove the net attributable loss to KRW 26.7bn—the most disruptive single item in the historical series. In 2024, revenue slipped 2.0% to KRW 27.1bn and operating profit fell to KRW 5.3bn (OPM 19.5%), but non-operating items normalized and net profit recovered to KRW 10.0bn, confirming a swing back into profitability. In 2025, revenue grew 5.1% to KRW 28.5bn while operating profit rebounded to KRW 7.0bn (OPM 24.5%), approximately 5 percentage points above 2024; net profit was KRW 5.9bn, lower than 2024's elevated level as the prior-year non-operating tailwind did not recur. Quarterly seasonality is pronounced: Q1 2025 was the seasonal floor at revenue KRW 5.4bn and operating profit KRW 200mn; Q2 2025 (revenue KRW 6.6bn, operating profit KRW 1.4bn) reflected the first contribution from the newly contracted Japanese automotive semiconductor customer, with year-on-year operating profit growth of 118.9%. Q3 2025 (revenue KRW 6.6bn, operating profit KRW 1.5bn) marked the first quarter in which mobile royalties from Google's Tensor G5 chipset were recognized. Q4 2025 (revenue KRW 9.9bn, operating profit KRW 3.9bn) was exceptionally strong, driven by the concentrated year-end license renewal cycle. Q1 2026 (revenue KRW 5.8bn, operating profit KRW 0.2bn) repeated the prior-year seasonal trough pattern, while net profit of KRW 1.3bn remained positive."
+  "ko": "2025년 연결 매출액은 284.7억원으로 2024년 270.8억원 대비 소폭 늘었고, 영업이익은 69.6억원으로 2024년 52.8억원에서 31.9% 이상 증가하며 영업이익률이 19.5%에서 24.5%로 개선됐다. 다만 지배주주 순이익은 59.2억원으로 2024년 100.1억원 대비 오히려 줄었는데, 이는 영업외 요인이 순이익 변동성에 크게 작용한 결과로 해석된다. 2023년에는 영업이익 77.7억원(영업이익률 28.1%)이라는 견조한 본업 성과에도 불구하고 지배주주 순이익이 -267.0억원의 대규모 적자를 기록해, 영업이익과 순이익 간 괴리가 뚜렷했던 해로 남아 있다. 분기별로 보면 2025년 4분기 매출이 98.7억원, 영업이익 38.6억원으로 분기 최대 라이선스 계약 체결에 힘입어 크게 뛰었으나, 2026년 1분기에는 계절적 비수기 영향으로 매출 57.8억원, 영업이익 1.8억원까지 급감했다. 언론 보도에 따르면 2026년 1분기 로열티 매출은 26.6억원으로 전년 동기 대비 31.6% 늘었고 용역 매출도 69.2% 증가해 라이선스 매출 감소를 상당 부분 상쇄했다. 2026년 2분기는 매출 70.9억원, 영업이익 11.3억원, 지배주주 순이익 21.8억원으로 회복세를 보였다. 최근 네 개 분기(2025년 3분기~2026년 2분기) 지배주주 순이익 합계는 92.8억원으로, 2025년 4분기의 일시적 라이선스 대형 계약 효과가 이 구간 실적에 상당 부분 반영돼 있다. 전반적으로 라이선스 매출의 분기별 변동성이 크고, 로열티 매출은 고객사 양산 일정에 따라 시차를 두고 반영되는 구조이기 때문에 단일 분기 실적만으로 추세를 판단하기는 쉽지 않다.",
+  "en": "Consolidated revenue for 2025 came to KRW 28.47bn, a modest increase from KRW 27.08bn in 2024, while operating profit rose more than 31.9% to KRW 6.96bn from KRW 5.28bn, lifting the operating margin from 19.5% to 24.5%. Net profit attributable to owners, however, declined to KRW 5.92bn from KRW 10.01bn in 2024, suggesting that non-operating factors had a significant effect on bottom-line volatility. In 2023, despite a solid operating profit of KRW 7.77bn (28.1% operating margin), the company posted a large net loss of KRW 26.70bn attributable to owners, marking a year with a stark divergence between operating and net results. On a quarterly basis, Q4 2025 revenue jumped to KRW 9.87bn with operating profit of KRW 3.86bn, driven by a record quarter for license contract signings, before falling sharply to revenue of KRW 5.78bn and operating profit of just KRW 0.18bn in the seasonally weak Q1 2026. According to press reports, Q1 2026 royalty revenue rose 31.6% year on year to KRW 2.66bn and service revenue grew 69.2%, partly offsetting a decline in license revenue. Q2 2026 showed a recovery with revenue of KRW 7.09bn, operating profit of KRW 1.13bn, and net profit attributable to owners of KRW 2.18bn. Over the trailing four quarters (Q3 2025 through Q2 2026), net profit attributable to owners totaled KRW 9.28bn, a figure substantially influenced by the one-off large license contract effect recorded in Q4 2025. Overall, because license revenue is inherently lumpy on a quarterly basis and royalty revenue is recognized with a lag tied to customers' mass-production schedules, judging the underlying trend from any single quarter remains difficult."
  },
  "industry": {
-  "ko": "글로벌 반도체 IP 시장은 2025년 약 100억 달러 규모로 추산되며 연평균 16%대의 높은 성장을 지속하고 있는 고성장 니치 시장이다. AI·온디바이스 AI의 급속한 확산으로 SoC 설계사들이 NPU·GPU·비디오 코덱 블록을 외부 IP로 조달하는 수요가 빠르게 증가하며 전체 반도체 IP 시장의 외연을 확대하고 있다. 자동차 전장화(인포테인먼트, ADAS, 자율주행)는 차량용 비디오 IP 수요의 장기 구조적 성장 동인으로, 차량 1대당 탑재 카메라 수가 늘어날수록 칩스앤미디어의 전방시장이 확대되는 구조다. 경쟁 구도에서 ARM은 CPU·GPU 중심의 광범위한 IP 생태계를 구축하며 비디오 영역으로 사업을 확장할 잠재력을 보유하고 있으며, VeriSilicon은 중국 내 현지 고객에 대한 접근성에서 우위를 가진다. 미국의 대중 반도체 수출 통제는 중국 로컬 팹리스 기업들의 자체 AI 칩 개발을 가속화해 단기적으로 비디오 IP 수요를 창출하는 한편, 규제 확대 시 중국향 기존 라이선스 매출이 직접적인 영향을 받는 양방향 리스크 구조다. 데이터센터 AI 가속기 시장에서는 GPU·NPU 설계사들이 영상 처리 IP를 외부 도입하는 사례가 늘며 새로운 라이선스 수요 기반이 형성되고 있다. IP 비즈니스의 구조적 특성상 라이선스 계약부터 로열티 인식까지 수년의 시차가 존재하므로, 현재의 신규 고객 확보 현황이 중기 로열티 성장의 선행지표로 기능한다.",
-  "en": "The global semiconductor IP market is estimated at approximately $10 billion in 2025 and is growing at a mid-teen compound annual rate, making it one of the highest-growth niches within the broader chip industry. The proliferation of AI and on-device AI is driving SoC designers to increasingly source NPU, GPU, and video codec blocks from external IP vendors rather than developing them in-house, widening the addressable market for pure-play IP companies. Automotive electrification—spanning infotainment, ADAS, and autonomous driving—is a long-cycle structural growth driver for video IP demand; the more cameras per vehicle, the greater the content opportunity for Chips&Media. Competitively, ARM's expansive CPU/GPU-centric IP ecosystem gives it the scale to potentially expand into video processing, while China's VeriSilicon holds strong in-country customer relationships. US semiconductor export controls toward China create a double-edged dynamic: they stimulate Chinese domestic fabless chip development and the associated IP demand, while simultaneously posing the risk of disrupting established China-sourced license revenues if restrictions tighten further. Data-center AI accelerator designers integrating video codec blocks into their chips represent a growing incremental demand source. A defining structural feature of the IP model is the multi-year revenue lag between license contract and royalty recognition, meaning current deal flow serves as the leading indicator of future royalty expansion."
+  "ko": "칩스앤미디어가 속한 비디오·멀티미디어 반도체 IP 시장은 온디바이스 AI 확산과 함께 응용 범위가 스마트폰·TV에서 자동차, 영상보안, 데이터센터, 그리고 최근에는 로봇·드론 등 '피지컬 AI' 영역으로 빠르게 넓어지고 있다. 자율주행 고도화에 따라 차량용 SoC 내 영상 처리 IP의 중요도가 커지고 있으며, 회사는 2005년부터 NXP를 고객으로 확보한 데 이어 중국 및 일본계 차량용 반도체 업체와도 협력 관계를 넓히고 있다. 2026년 9월 획득한 ISO 26262 ASIL-B 기능안전 인증은 소비자용 멀티미디어 IP 공급업체에서 벗어나 고부가가치 차량용 반도체 시장으로 사업 영역을 넓히려는 시도로 해석된다. CES 2026에서는 하드웨어 고정형 ISP에서 소프트웨어 정의 영상처리로의 전환을 제시하는 AI ISP를 공개해 기술 차별화를 시도했다. 경쟁 구도에서는 글로벌 IP 기업 베리실리콘이 비교 대상으로 자주 거론되며, 증권가에서는 이 업체가 상대적으로 높은 밸류에이션 배수로 거래되는 점이 국내 유사 IP 기업 밸류에이션에도 참고 지표로 활용되고 있다고 설명한다. 데이터센터 서버용 GPU·NPU 칩 고객사 확대와 IT 플랫폼·ASIC 업체의 IP 도입 수요 증가도 실적에 기여하고 있는 것으로 나타난다. 다만 반도체 설계자산 시장은 소수의 대형 팹리스·시스템반도체 고객사에 매출이 집중되는 구조여서, 특정 고객사의 채택 여부가 개별 IP 기업의 실적 사이클에 큰 영향을 미치는 특징이 있다.",
+  "en": "The video and multimedia semiconductor IP market that Chips&Media operates in is rapidly expanding beyond smartphones and TVs into automotive, video security, datacenter, and, more recently, robotics and drones under the physical-AI theme, driven by the spread of on-device AI. As autonomous driving technology advances, the importance of video-processing IP within automotive SoCs is increasing, and the company has broadened its automotive relationships beyond its NXP partnership dating back to 2005 to include Chinese and Japanese automotive semiconductor makers. The ISO 26262 ASIL-B functional-safety certification obtained in September 2026 is seen as an attempt to move beyond a consumer multimedia IP supplier role and into the higher-value-added automotive semiconductor market. At CES 2026, the company unveiled an AI ISP designed to shift from fixed-function hardware ISP toward software-defined image processing, an attempt at technical differentiation. In the competitive landscape, global IP peer VeriSilicon is frequently cited as a comparison, and analysts have noted that its relatively high valuation multiple serves as a reference point when valuing comparable domestic IP companies. Expansion of datacenter server GPU/NPU chip customers and rising IP adoption demand from IT platform and ASIC companies have also contributed to results. However, the semiconductor IP market is structurally concentrated among a small number of large fabless and system-semiconductor customers, meaning that adoption decisions by individual customers can materially affect an IP company's earnings cycle."
  },
  "outlook": {
-  "ko": "구글 Tensor G5 기반의 모바일 로열티는 2025년 3분기부터 본격 인식되기 시작했으며, 차기 G6·G7 칩셋으로 계약이 연장될 경우 모바일 부문 로열티 스트림이 중기적으로 누적될 여지가 있다. 일본 차량용 반도체 고객(글로벌 빅3 2번째)에 대한 라이선스 매출은 2025년 2분기부터 이미 실적에 기여하기 시작했으며, 양산 단계 진입 시 로열티 전환까지 통상 5년 내외의 시간이 소요된다는 점에서 중장기 수혜가 예상된다. 차량용 기능 안전 국제표준 ISO 26262 ASIL-B 인증 취득이 2026년 상반기를 목표로 추진됐으며, 취득이 완료될 경우 완성차 OEM의 엄격한 안전 요건 충족이 가능해져 추가 고객 유치 경쟁력이 높아질 전망이다. NPU IP 신사업(WAVE-N v2·AI ISP)은 2026년 3월 주주총회 기준 2.5년간 라이선스 고객 1개사, 매출 5억원으로 상업화 성과가 기대를 크게 하회하고 있어, 추가 레퍼런스 구축이 핵심 과제다. 한편 칩스앤미디어의 라이선스가 적용된 칩 개수는 2025년 기준 2,000여 건으로 전년 대비 13% 증가했고, 2019년 이후 약 2.8배 우상향하고 있어 중장기 로열티 기반 확대의 구조적 지지가 이어지고 있다. 계절성 패턴상 2026년 상반기는 실적이 낮고 하반기(특히 4분기)에 라이선스 성수기가 집중되는 흐름이 반복될 가능성이 높아, 연간 실적의 윤곽은 3분기 이후에 가시화될 전망이다.",
-  "en": "Mobile royalties from Google's Tensor G5 chipset began flowing from Q3 2025; if the agreement extends to the G6 and G7 generations, a compounding mobile royalty stream could build over the medium term. The Japanese automotive semiconductor company license (second of the global top-3 automotive chip vendors) has already been contributing to revenue since Q2 2025; however, given the typical five-year lag before automotive royalties commence, the meaningful royalty uplift from this win is a medium-to-long-term event. ISO 26262 ASIL-B functional safety certification was targeted for H1 2026; if obtained, it would enable Chips&Media to meet the stricter OEM safety validation requirements and potentially accelerate additional automotive customer acquisitions. NPU IP commercialization—encompassing WAVE-N v2 and the AI ISP solution—remains the most consequential near-term execution challenge: as of the March 2026 AGM, only one license customer had been secured over 2.5 years, generating KRW 500mn in revenue. Building additional reference customers is the critical milestone. On the positive side, the cumulative count of chip projects incorporating Chips&Media IP licenses rose 13% year-on-year in 2025 to approximately 2,000 active projects, extending a trend of roughly 2.8× growth since 2019 and supporting the structural underpinning of future royalty expansion. The seasonal pattern strongly favors H2, particularly Q4, for license-driven results, meaning H1 2026 figures are unlikely to be representative of the full-year outcome."
+  "ko": "회사는 2023~2025년 사이 체결된 라이선스 계약의 누적 효과가 2026년부터 로열티 매출 성장으로 전환될 것으로 기대하고 있으며, 실제로 2026년 1분기 로열티 매출이 전년 동기 대비 31.6% 증가하는 등 초기 신호가 나타나고 있다. 회사 측은 기존 자동차 프로젝트를 유지하는 동시에 2026년 로봇·드론향 신규 라이선스를 확보해 산업별 매출 다변화를 추진하겠다고 밝혔다. NPU IP 'WAVE-N'과 글로벌 소프트웨어 기업과 협력한 AI ISP 라이선스 확대를 통해 온디바이스 AI 시장 선점을 노리고 있으며, AV2·APV 등 신규 표준 IP 출시로 모바일·카메라 시장 공략도 계획하고 있다. 지역적으로는 베트남 등 제3국으로 영역을 넓히는 동시에 북미 영업을 강화하고 중국·국내 AI IP 수요에도 대응한다는 전략을 제시했다. 2026년 6월에는 나스닥 상장 엣지 AI 반도체사 암바렐라와 8K 초고해상도 비디오 IP 라이선스를 체결해 자율주행·보안·IoT·로보틱스 시장 공략을 위한 협력을 확대했다. 9월에는 ISO 26262 ASIL-B 인증을 받은 차량용 IP 'WAVE6331X FuSa'를 출시해 ADAS·인포테인먼트 등 차량용 반도체 시장에서 경쟁력을 강화하겠다는 방침을 밝혔다. 다음 실적 발표는 정보업체 기준 2026년 11월 중으로 안내되고 있으나 이는 잠정 일정으로, 정확한 공시 일자는 향후 회사 공시를 통해 확인이 필요하다.",
+  "en": "The company expects the cumulative effect of license contracts signed between 2023 and 2025 to translate into royalty revenue growth starting in 2026, and early signs have already emerged, with Q1 2026 royalty revenue up 31.6% year on year. Management has stated plans to diversify revenue by industry, maintaining existing automotive projects while securing new licenses in robotics and drones during 2026. The company aims to capture on-device AI market share through expanded licensing of its NPU IP 'WAVE-N' and an AI ISP developed in cooperation with a global software firm, while also targeting the mobile and camera markets with new standard IP releases such as AV2 and APV. Geographically, the company outlined a strategy to expand into third countries such as Vietnam while strengthening North American sales and continuing to address AI IP demand in China and domestically. In June 2026, it signed an 8K ultra-high-resolution video IP license with Nasdaq-listed edge-AI chipmaker Ambarella, broadening cooperation targeting autonomous driving, security, IoT, and robotics markets. In September, it launched the ISO 26262 ASIL-B certified automotive IP 'WAVE6331X FuSa,' stating its intent to strengthen competitiveness in the ADAS and infotainment automotive semiconductor markets. The next earnings release is provisionally indicated by a data provider as occurring around November 2026, though this is a tentative schedule and the exact disclosure date will need to be confirmed through the company's future filings."
  },
  "valuation_comment": {
-  "ko": "칩스앤미디어는 제조 설비 없이 IP 라이선스·로열티만으로 이익을 창출하는 팹리스 IP 기업 특성상, 제조 반도체 기업 대비 성장 기대치가 선반영된 프리미엄 멀티플이 역사적으로 형성돼 왔다. 현재 주당순이익(EPS) 388원 기준 이익 배수는 과거 이익 회복 국면에서 형성됐던 거래 밴드 상단을 웃도는 수준으로, 구글 모바일 로열티 개시·자율주행 고객 확장이라는 성장 내러티브가 상당 부분 선반영된 것으로 분석된다. 주당순자산(BPS) 4,121원 대비 현 주가는 순자산 대비 뚜렷한 프리미엄 구간에 위치해 있으며, 이는 IP 비즈니스 모델이 보유한 무형자산 가치와 중장기 로열티 성장 기대를 시장이 자본화한 것으로 볼 수 있다. 배당은 주당 116원(2025년 결산 DPS 기준)으로, 코스닥 반도체 업종 평균을 하회하는 수준이며 높은 R&D 재투자 비율을 반영한다. NPU IP 신사업 상업화의 가시화 시점과 구글 차기 칩셋 로열티 연장 여부가 현재 프리미엄이 유지될지 혹은 역사적 밴드 하단으로 수렴할지를 결정하는 핵심 변수다.",
-  "en": "As a fabless IP licensor that generates profits purely from licensing and royalties without owning manufacturing assets, Chips&Media has historically attracted a growth premium above manufacturing-oriented semiconductor peers. On a per-share earnings basis (EPS KRW 388), the implied earnings multiple exceeds the upper bound of the historical trading range observed during prior profit-recovery phases, suggesting that the market has largely pre-priced the Google mobile royalty ramp and automotive customer expansion narrative. Relative to book value per share (BPS KRW 4,121), the stock trades at a material premium to net assets, reflecting the market's capitalization of intangible IP value and anticipated long-term royalty growth rather than tangible hard assets. The per-share dividend of KRW 116 (FY2025 DPS) is below the KOSDAQ semiconductor sector average, consistent with the company's high R&D reinvestment rate. The critical variables determining whether the current premium is sustained—or converges toward the historical mid-range—are the pace of NPU IP commercialization and confirmation of contract continuation into Google's next-generation chipsets."
+  "ko": "실적 측면에서는 2023년 대규모 순손실 이후 2024~2025년 연속 흑자로 전환됐고, 영업이익률도 2024년 19.5%에서 2025년 24.5%로 개선되는 흐름을 보였다. 다만 영업이익과 지배주주 순이익 간 괴리가 반복되고 있어 순이익 기준 지표만으로 밸류에이션을 판단할 때는 이 같은 비영업적 변동 요인을 함께 고려할 필요가 있다. 자본 구조 측면에서는 부채비율이 2022년 50%대에서 2025년 20%대 중반까지 낮아지며 재무 안정성이 개선된 점이 순자산 대비 주가 수준을 평가하는 데 참고가 될 수 있다. 반도체 IP 업종은 글로벌 유사기업 간 밸류에이션 배수 편차가 큰 편으로 알려져 있어, 국내 동종 기업과 비교할 때도 개별 기업의 성장 단계와 로열티 매출 비중에 따라 거래 배수가 달라지는 경향이 있다. 배당 측면에서는 회사가 현금배당을 실시하고 있으나, 그 규모는 이익 변동성에 따라 해마다 달라질 수 있는 구조로 파악된다. 라이선스에서 로열티로의 매출 전환이 실제 속도대로 진행되는지가 향후 밸류에이션 논의의 핵심 변수로 남아 있다.",
+  "en": "On the earnings front, the company swung from a large net loss in 2023 to consecutive profitable years in 2024 and 2025, with the operating margin improving from 19.5% in 2024 to 24.5% in 2025. However, recurring divergence between operating profit and net profit attributable to owners means that non-operating swing factors need to be considered alongside net-income-based metrics when assessing valuation. On the capital structure side, the debt ratio declined from the 50% range in 2022 to the mid-20% range in 2025, an improvement in financial stability that can serve as a reference point when evaluating the share price relative to net assets. The semiconductor IP sector is known for wide valuation-multiple dispersion among global peers, and trading multiples for comparable domestic companies also tend to vary depending on each firm's growth stage and the proportion of royalty revenue in its sales mix. On the dividend side, the company does pay a cash dividend, but the payout size appears to vary year to year in line with earnings volatility. Whether the shift from license to royalty revenue proceeds at the pace management envisions remains the key variable for future valuation discussions."
  },
  "bull": [
   {
    "title": {
-    "ko": "구글 Tensor 모바일 로열티 본격 누적",
-    "en": "Google Tensor Mobile Royalty Ramp Building"
+    "ko": "라이선스 누적 효과의 로열티 전환",
+    "en": "License Backlog Converting to Royalty Revenue"
    },
    "body": {
-    "ko": "구글의 프리미엄 스마트폰(Pixel 10 등)에 탑재된 Tensor G5 칩셋에 칩스앤미디어의 비디오 코덱 IP가 탑재되어 2025년 3분기부터 최초로 모바일 로열티가 실적에 반영되기 시작했다. 픽셀폰 판매량에 연동해 로열티가 분기마다 누적되며, 2021년 체결된 라이선스 계약에 기반한 장기 공급 구조로 안정성이 높다. 차기 Tensor G6·G7 칩셋으로 계약이 확장될 경우 모바일 부문이 차량용에 이은 두 번째 주요 로열티 기반으로 자리잡을 수 있어, 수익 포트폴리오 다변화 효과가 기대된다.",
-    "en": "Chips&Media's video codec IP was integrated into Google's Tensor G5 chipset powering the Pixel 10 smartphone lineup, with mobile royalties beginning to flow from Q3 2025 for the first time. Royalties accumulate each quarter in proportion to Pixel handset sales volumes and rest on a license agreement signed in 2021, providing structural durability. If the relationship extends to the Tensor G6 and G7 chipsets, the mobile segment could become the second major royalty pillar alongside automotive, meaningfully diversifying the earnings base."
+    "ko": "2023~2025년 체결된 라이선스 계약이 고객사 양산과 함께 로열티 매출로 전환되는 국면에 진입하고 있다. 2026년 1분기 로열티 매출이 전년 동기 대비 31.6% 증가한 데 이어 2분기에도 실적이 회복세를 보였다. 라이선스는 수익성이 상대적으로 낮은 반면 로열티는 고정비 부담 없이 안정적으로 발생하는 매출 구조라는 점에서 향후 이익률 개선의 근거로 언급된다.",
+    "en": "License contracts signed between 2023 and 2025 are entering a phase of conversion into royalty revenue as customer products reach mass production. Q1 2026 royalty revenue rose 31.6% year on year, and results showed further recovery in Q2. Because royalty revenue tends to carry a more stable margin profile than license revenue without proportional fixed-cost burden, this is cited as a basis for potential margin improvement ahead."
    }
   },
   {
    "title": {
-    "ko": "차량용 반도체 빅3 고객 2개사 확보 및 ASIL-B 대응",
-    "en": "Two of Global Top-3 Automotive Chip Vendors Secured; ASIL-B Positioning"
+    "ko": "자동차·엣지 AI 고객군 확대",
+    "en": "Expanding Automotive and Edge-AI Customer Base"
    },
    "body": {
-    "ko": "2025년 7월 일본 차량용 반도체 대형사(업계에서는 르네사스 추정)와 IP 라이선스 계약을 체결하며, NXP(2005년~)에 이어 글로벌 차량용 반도체 빅3 중 2개사를 고객으로 확보하는 성과를 거뒀다. 비야디(BYD)·리오토·체리자동차 등 중국 주요 완성차 브랜드를 고객으로 두는 중국 차량 반도체사와도 7년째 협력을 이어가고 있어 차량용 비디오 IP 시장 내 레퍼런스가 두텁다. 자동차 전장 기능 안전 국제표준 ISO 26262 ASIL-B 인증 취득을 준비 중으로, 인증 완료 시 완성차 OEM의 엄격한 안전 요건 충족 역량이 강화되어 추가 고객 유치 경쟁력이 높아진다.",
-    "en": "The July 2025 IP license deal with a major Japanese automotive semiconductor maker (widely identified as Renesas) added the industry's second top-3 global automotive chip vendor to Chips&Media's client roster, alongside NXP. The company has also maintained a seven-year partnership with a leading Chinese automotive semiconductor developer whose end customers include BYD, Li Auto, Chery, and Changan, building a dense automotive reference network. Pending ISO 26262 ASIL-B certification, Chips&Media would be better positioned to satisfy the increasingly rigorous OEM safety mandates that govern autonomous-driving-era design wins."
+    "ko": "NXP, 중국·일본계 차량용 반도체 업체에 이어 2026년 6월 나스닥 상장 암바렐라와 라이선스를 체결하며 고객 다변화가 진행되고 있다. 9월에는 ISO 26262 ASIL-B 기능안전 인증을 받은 차량용 IP를 출시해 고부가가치 전장 시장 진입을 시도하고 있다. 회사 측은 자사 IP가 이미 글로벌 상위 5대 자동차 반도체 기업 중 3곳에 채택됐다고 밝혔다.",
+    "en": "Following relationships with NXP and Chinese and Japanese automotive semiconductor makers, the company signed a license with Nasdaq-listed Ambarella in June 2026, broadening its customer base. In September it launched an ISO 26262 ASIL-B certified automotive IP, attempting entry into the higher-value automotive semiconductor market. The company has stated its IP has already been adopted by three of the world's top five automotive semiconductor companies."
    }
   },
   {
    "title": {
-    "ko": "AI SoC·데이터센터 신규 라이선스 수요 가속",
-    "en": "Accelerating License Demand from AI SoC and Data Center Customers"
+    "ko": "AI ISP·NPU 기술 차별화",
+    "en": "AI ISP and NPU Technology Differentiation"
    },
    "body": {
-    "ko": "2025년 3분기 누적 기준 AI SoC·산업용 응용처에서의 라이선스 관련 매출이 전년 동기 대비 약 3배 증가했으며, AI NPU 및 GPU 설계사들의 비디오 IP 외부 도입 수요 확대가 구조적으로 뒷받침하고 있다. 미국의 대중 반도체 제재 심화로 중국 로컬 팹리스 기업들의 AI 칩 자체 개발이 가속화되어 단기적으로 라이선스 수요를 창출하고 있다. SiFive의 DesignShare 프로그램 파트너십이 번들 솔루션 영업 채널로 기능해, 고객사별 개별 영업 대비 효율적인 IP 보급 경로를 제공한다.",
-    "en": "Through the first nine months of 2025, license revenue from AI SoC and industrial-application customers roughly tripled year-on-year, driven by the structural uptick in external IP adoption by NPU and GPU chip designers. US semiconductor export controls on China have stimulated Chinese fabless companies' domestic AI chip development ambitions, generating incremental near-term license demand for non-restricted IP providers such as Chips&Media. The SiFive DesignShare program partnership bundles Chips&Media video IP into a broader turnkey solution, providing an efficient distribution channel and broadening market reach without proportional incremental sales cost."
+    "ko": "CES 2026에서 공개한 AI ISP는 하드웨어 고정형 ISP를 소프트웨어 정의 영상처리로 전환하려는 시도로, 이스라엘 Visionary.ai와의 협업으로 구현됐다. NPU IP 'WAVE-N'이 실제 상용 구조에 적용된 사례로 언급되며 향후 레퍼런스 확장의 기반으로 평가된다. 로봇·드론 등 피지컬 AI 영역으로 응용처를 넓히려는 신규 라이선스 계획도 함께 제시됐다.",
+    "en": "The AI ISP unveiled at CES 2026 represents an attempt to shift from fixed-function hardware ISP to software-defined image processing, developed in cooperation with Israel's Visionary.ai. The NPU IP 'WAVE-N' has been cited as applied within a commercial structure, viewed as a basis for future reference expansion. The company has also outlined plans for new licenses extending into physical-AI applications such as robots and drones."
    }
   }
  ],
  "bear": [
   {
    "title": {
-    "ko": "NPU IP 신사업, 2.5년간 고객 1개사에 그쳐",
-    "en": "NPU IP New Business: Only One Customer in 2.5 Years"
+    "ko": "분기별 실적 변동성",
+    "en": "Quarterly Earnings Volatility"
    },
    "body": {
-    "ko": "2023년 9월 NPU IP 개발에 착수했으나, 2026년 3월 주주총회 기준으로 2.5년간 확보한 라이선스 고객은 단 1개사, 매출은 약 5억원으로 2025년 연매출의 2% 미만에 불과하다. CES 2026에서 WAVE-N v2·AI ISP를 공개했으나 공식 추가 계약 발표는 아직 이뤄지지 않은 상태다. 신사업 성과가 지속적으로 기대를 하회할 경우, 비디오 IP 사업이 창출하는 이익으로 NPU IP 개발 비용을 충당하는 구조가 장기화되며 수익성 개선의 상한이 제한될 수 있다.",
-    "en": "Chips&Media began NPU IP development in September 2023, yet as of the March 2026 annual general meeting, only one license customer had been secured over 2.5 years, with NPU IP revenue of approximately KRW 500mn—less than 2% of 2025 annual sales. Despite the high-profile WAVE-N v2 and AI ISP demonstrations at CES 2026, no additional license contracts have been officially announced. If commercialization continues to lag, the video IP business will continue to subsidize NPU IP R&D costs, capping the pace of overall margin recovery and stretching the payback horizon on the new-business investment."
+    "ko": "라이선스 매출은 계약 건수와 규모에 따라 분기별로 크게 출렁이는 구조로, 2025년 4분기 대형 계약 이후 2026년 1분기 영업이익이 크게 축소된 사례가 이를 보여준다. 특정 분기의 대형 계약이 다음 분기 실적을 견인하지 못할 경우 성장세가 일시적으로 둔화될 수 있다. 로열티 매출 역시 고객사 양산 일정에 따라 반영 시점이 지연될 수 있어 단기 실적 예측의 불확실성이 남아 있다.",
+    "en": "License revenue fluctuates significantly on a quarterly basis depending on contract count and size, as illustrated by the sharp contraction in operating profit in Q1 2026 following a record Q4 2025 contract quarter. If a large contract in a given quarter is not followed by comparable deals, growth momentum could temporarily slow. Royalty revenue recognition can also be delayed depending on customers' mass-production timelines, leaving short-term earnings forecasts subject to uncertainty."
    }
   },
   {
    "title": {
-    "ko": "중국향 매출 변동성 및 지정학 리스크",
-    "en": "China Revenue Volatility and Geopolitical Headwind"
+    "ko": "영업이익-순이익 간 괴리",
+    "en": "Gap Between Operating Profit and Net Profit"
    },
    "body": {
-    "ko": "중국은 과거 전체 매출의 37.6%를 차지하는 최대 지역 매출처였으나, 2025년 2분기 중국향 매출은 전년 동기 대비 49.3% 급감해 미중 반도체 규제와 중국 경기 부진이 복합적으로 실적을 압박했다. 미국의 수출 통제 규제가 추가 확대될 경우 중국 고객사들의 개발 계획 변경이나 IP 도입 지연으로 라이선스 수요가 추가 감소할 위험이 상존한다. 중국 내 VeriSilicon 등 로컬 경쟁사가 성장할 경우 현지 시장 점유율이 점진적으로 잠식될 가능성도 중장기 리스크로 작용한다.",
-    "en": "China was historically the company's largest geographic revenue source at approximately 37.6% of total sales, but China-derived revenue fell 49.3% year-on-year in Q2 2025, reflecting the combined impact of US export controls and sluggish Chinese domestic demand. Any further tightening of US semiconductor restrictions could prompt Chinese customers to modify or delay chip development programs, reducing demand for Chips&Media's IP. The steady growth of domestic Chinese IP vendors such as VeriSilicon also poses a medium-to-long-term risk of gradual market share erosion within China."
+    "ko": "2023년에는 영업이익이 77.7억원에 달했음에도 지배주주 순이익이 -267.0억원의 대규모 적자를 기록했다. 2025년에도 영업이익이 전년 대비 31.9% 이상 늘었지만 지배주주 순이익은 오히려 감소했다. 이는 영업외 요인이 실적에 상당한 영향을 미치고 있음을 보여주며, 향후에도 유사한 비영업적 변동이 재현될 가능성을 배제할 수 없다.",
+    "en": "In 2023, despite operating profit of KRW 7.77bn, net profit attributable to owners posted a large loss of KRW 26.70bn. In 2025 as well, while operating profit grew more than 31.9% year on year, net profit attributable to owners actually declined. This indicates that non-operating factors have a substantial impact on results, and the possibility of similar non-operating swings recurring cannot be ruled out."
    }
   },
   {
    "title": {
-    "ko": "분기 이익 변동성과 높은 R&D 비용 부담",
-    "en": "Quarterly Earnings Lumpiness and Elevated R&D Cost Structure"
+    "ko": "고객 집중 및 자본구조 변수",
+    "en": "Customer Concentration and Capital Structure Variables"
    },
    "body": {
-    "ko": "라이선스 매출은 계약 시점에 일시 인식되는 구조로 인해 분기별 영업이익 편차가 매우 크다. 2025년 1분기 영업이익 2.0억원 대비 4분기 38.6억원으로 분기 간 격차가 약 19배에 달하며, 2026년 1분기도 영업이익 1.8억원으로 동일 패턴이 반복됐다. 2025년 연구개발비는 약 115억원으로 연매출의 40% 수준에 달하며, NPU IP 착수 이후 R&D 비중이 4년간 약 10%p 상승한 것으로 알려져 있다. 신사업 상업화 전까지 이 비용 구조가 수익성 개선의 속도를 제한하는 구조적 제약으로 남아 있다.",
-    "en": "Because license fees are recognized as lump-sum income at the point of contract signing, Chips&Media's quarterly operating profit is highly volatile. In 2025, the intra-year swing ranged from KRW 200mn in Q1 to KRW 3.9bn in Q4—a roughly 19-fold difference—and Q1 2026 again printed at just KRW 180mn, repeating the prior-year trough. R&D expenditure reached approximately KRW 11.5bn in 2025, equivalent to roughly 40% of annual revenue, reportedly up approximately 10 percentage points over four years following the NPU IP investment push. Until the new business achieves meaningful commercial scale, this cost structure remains a structural ceiling on the pace of profitability improvement."
+    "ko": "실적이 소수의 대형 고객사(NXP, 북미 모바일 고객사, 암바렐라 등) 채택 여부에 크게 의존하는 구조로, 특정 고객의 프로젝트 일정 변경이 실적에 직접적 영향을 줄 수 있다. 2025년 12월 발행된 교환사채(약 51만 주 규모)가 예탁돼 있어 향후 전환 청구 시 지분 희석 요인으로 작용할 수 있다. 최대주주인 한투반도체투자가 지분 31.18%를 보유하고 있어 지분 구조가 재무적 투자자 중심으로 형성돼 있다는 점도 참고할 부분이다.",
+    "en": "Results depend heavily on adoption decisions by a small number of large customers such as NXP, a North American mobile customer, and Ambarella, meaning that a schedule change on a given customer's project could directly affect results. An exchangeable bond issued in December 2025, representing roughly 511,000 shares, remains deposited and could act as a dilution factor if conversion is exercised. It is also worth noting that the largest shareholder, a financial investor holding a 31.18% stake, means the ownership structure is centered on a financial investor rather than a founder or strategic holder."
    }
   }
  ],
  "risks": [
   {
    "cat": {
-    "ko": "미중 기술전쟁 규제 리스크",
-    "en": "US-China Technology Conflict Regulatory Risk"
+    "ko": "실적 가시성",
+    "en": "Earnings Visibility"
    },
    "body": {
-    "ko": "미국의 대중 반도체 수출 통제가 확대될 경우 칩스앤미디어의 IP를 채용한 중국 팹리스 고객사들이 개발 계획을 중단하거나 공급원을 변경할 가능성이 있다. 중국 AI SoC 자립화 수요가 라이선스 성장의 주요 축을 담당하고 있는 상황에서 규제 심화는 단기 라이선스 수요와 중장기 로열티 기반 모두에 영향을 미칠 수 있다. 반대로 규제가 중국 자체 칩 개발을 가속화하여 IP 수요를 유발하는 긍정적 시나리오도 공존하나, 그 규모와 시점은 불확실하다.",
-    "en": "An escalation of US semiconductor export controls could prompt Chinese fabless customers that have adopted Chips&Media IP to halt development programs or switch suppliers. Given that China's AI chip self-sufficiency drive is a meaningful license demand driver, regulatory tightening poses risks to both near-term license revenue and medium-to-long-term royalty foundations. The countervailing scenario—whereby tighter controls accelerate domestic Chinese chip development and thus create additional IP demand—coexists but remains uncertain in magnitude and timing."
+    "ko": "라이선스 매출의 분기별 편차와 로열티 매출의 인식 시차로 인해 단기 실적 예측이 어렵고, 시장 기대치와의 괴리가 반복적으로 발생할 수 있다. 2025년 4분기와 2026년 1분기의 실적 격차가 이런 특성을 보여준다.",
+    "en": "Quarterly variance in license revenue and the recognition lag on royalty revenue make short-term earnings forecasting difficult, and gaps versus market expectations can recur. The earnings gap between Q4 2025 and Q1 2026 illustrates this characteristic."
    }
   },
   {
    "cat": {
-    "ko": "주요 고객사 의존도 및 IP 교체 리스크",
-    "en": "Key Customer Concentration and IP Substitution Risk"
+    "ko": "자본구조·지분 변수",
+    "en": "Capital Structure and Ownership Variables"
    },
    "body": {
-    "ko": "NXP·구글·삼성 등 소수 핵심 고객이 매출에서 차지하는 비중이 높은 구조로, 특정 고객이 IP를 내재화하거나 차세대 칩셋에서 다른 공급사로 교체할 경우 라이선스·로열티 모두 즉각적인 영향을 받는다. 구글 Tensor G6·G7 계약 갱신 여부가 아직 공식 확인되지 않아, 모바일 로열티의 연속성에 대한 불확실성이 잔존한다. ARM 등 대형 IP 공급사가 비디오 영역으로 사업을 확장할 경우, 대형 고객사의 IP 교체 사이클이 위협 요인이 될 수 있다.",
-    "en": "A handful of key accounts—NXP, Google, Samsung—carry a disproportionate share of Chips&Media's revenue; if any of these were to in-source IP development or switch providers at the next design cycle, both license and royalty lines would face immediate disruption. Google Tensor G6/G7 contract renewal has not yet been officially confirmed, leaving the continuity of mobile royalties uncertain. The expansion of large IP platforms such as ARM into the video processing segment represents a structural long-term substitution risk for key customer relationships."
+    "ko": "2025년 12월 발행된 교환사채가 예탁돼 있어 향후 전환 청구 시 지분 희석이 발생할 수 있다. 최대주주가 재무적 투자자인 한투반도체투자(지분 31.18%)로 구성돼 있어 장기 지분 정책의 방향성을 지속적으로 확인할 필요가 있다.",
+    "en": "An exchangeable bond issued in December 2025 remains deposited, and conversion exercise could lead to share dilution in the future. Because the largest shareholder is financial investor Korea Investment Semiconductor Investment, holding a 31.18% stake, the direction of long-term ownership policy warrants ongoing monitoring."
    }
   },
   {
    "cat": {
-    "ko": "R&D 집약도 심화와 부채 구조 모니터링",
-    "en": "Intensifying R&D Cost Burden and Balance Sheet Monitoring"
+    "ko": "경쟁 및 기술 변화",
+    "en": "Competition and Technology Shift"
    },
    "body": {
-    "ko": "연매출의 40%에 달하는 R&D 비용(2025년 약 115억원)은 NPU IP 착수 이후 꾸준히 상승해왔으며, 신사업 상업화가 지연될 경우 기존 비디오 IP 사업의 이익으로 신사업 R&D를 장기 충당하는 구조가 지속될 수 있다. 또한 2025년 부채비율이 25.8%로 전년(10.8%) 대비 뚜렷하게 상승했는데(총부채 218억원, 전년 82억원), 그 원인(리스 부채·선수금·금융부채 등)을 공시를 통해 확인하고 추세를 모니터링할 필요가 있다. 주당 배당금 116원(2025년 결산 기준)은 현재 수준에서 유지되고 있으나, 신사업 투자 확대 시 배당 정책 변화 가능성도 주시해야 한다.",
-    "en": "R&D expenditure equivalent to 40% of annual revenue (approximately KRW 11.5bn in 2025) has been rising since the NPU IP push began, and if commercialization continues to lag, the video IP business may be required to subsidize new-business development costs for an extended period, capping profitability recovery. Separately, the debt ratio expanded from 10.8% in 2024 to 25.8% in 2025—with total liabilities rising from KRW 8.2bn to KRW 21.8bn—warranting investigation through DART filings into whether this reflects lease obligations, deferred revenue, or financial debt, and monitoring of the trend. The per-share dividend of KRW 116 (FY2025) has been maintained, but a significant acceleration in capital deployment for new businesses could prompt a reassessment of payout policy."
+    "ko": "글로벌 IP 기업 베리실리콘 등과의 경쟁이 지속되는 가운데, 시스템반도체 업체들의 내부 IP 개발 확대나 표준 기술 변화(AV2 등 신규 코덱 전환)에 따라 기존 고객사의 IP 채택 방향이 바뀔 가능성이 있다. AI ISP와 같은 신기술이 시장에서 예상보다 늦게 채택될 경우 신사업 성장 속도가 지연될 수 있다.",
+    "en": "Amid continued competition with global IP peers such as VeriSilicon, shifts in in-house IP development at system-semiconductor companies or changes in standard technology, such as transition to new codecs like AV2, could alter existing customers' IP adoption direction. If new technologies such as the AI ISP are adopted by the market more slowly than anticipated, growth in the new business area could be delayed."
    }
   }
  ],
  "checkpoints": [
   {
    "when": {
-    "ko": "2026년 7월 말",
-    "en": "Late July 2026"
+    "ko": "2026년 11월 중(잠정 일정)",
+    "en": "Around November 2026 (provisional schedule)"
    },
    "what": {
-    "ko": "2026년 2분기 실적 발표에서 구글 Tensor 로열티의 분기별 누적 추이, 일본 차량용 고객 라이선스 기여도, 중국향 매출 회복 여부를 점검. 이 결과가 하반기 성수기 기대치를 뒷받침하는지 판단하는 분기다.",
-    "en": "Q2 2026 earnings will reveal the pace of Google Tensor royalty accumulation, the contribution from the Japanese automotive semiconductor license, and whether China revenue is recovering. These data points will be the primary gauge of whether the H2 seasonal pickup thesis remains intact."
+    "ko": "정보업체 기준 잠정 안내된 2026년 3분기 실적 발표 시점으로, 로열티 매출 성장세와 라이선스 계약 건수 지속 여부를 확인할 필요가 있다.",
+    "en": "This is a provisionally indicated date by a data provider for the Q3 2026 earnings release, and it will be important to confirm whether royalty revenue growth and license contract activity continue."
    }
   },
   {
    "when": {
-    "ko": "2026년 상반기~3분기 내",
-    "en": "H1–Q3 2026"
+    "ko": "2026년 4분기 중",
+    "en": "During Q4 2026"
    },
    "what": {
-    "ko": "ISO 26262 ASIL-B 인증 취득 여부를 DART 공시·기업 IR을 통해 확인. 취득 완료 시 완성차 OEM 납품 요건 충족이 강화되며 추가 차량용 IP 계약 속도의 선행 지표로 기능한다.",
-    "en": "Confirm via DART disclosures or company IR whether ISO 26262 ASIL-B certification has been obtained as targeted. Successful certification would significantly raise Chips&Media's competitiveness in automotive OEM qualification processes and serve as a leading indicator for additional vehicle IP wins."
+    "ko": "2025년 4분기의 대형 라이선스 계약 효과가 재현될지, 연간 최대 실적 달성 여부를 가늠할 수 있는 구간이다.",
+    "en": "This period will help gauge whether the large license contract effect seen in Q4 2025 repeats and whether a record annual result is achieved."
    }
   },
   {
    "when": {
-    "ko": "2026년 하반기~연말",
-    "en": "H2 2026–Year-End"
+    "ko": "2026년 하반기 중",
+    "en": "During the second half of 2026"
    },
    "what": {
-    "ko": "NPU IP(WAVE-N v2·AI ISP) 신규 라이선스 고객이 추가 확보되는지가 핵심 관찰 포인트. 2.5년간 고객 1개사에 머물고 있는 NPU 신사업이 의미 있는 계약 확장으로 이어지면 회사 성장 내러티브가 크게 전환될 수 있다.",
-    "en": "Whether NPU IP (WAVE-N v2 / AI ISP) license contracts expand beyond the single customer secured to date is the most watched new-business milestone. Meaningful contract expansion in H2 2026 would represent a pivotal inflection in the growth narrative; continued stagnation would intensify questions about R&D allocation and business diversification execution."
+    "ko": "암바렐라 신규 SoC 양산 일정 및 WAVE6331X FuSa 관련 후속 고객사 채택 발표가 나오는지 확인이 필요하다.",
+    "en": "It will be worth checking for updates on Ambarella's new SoC mass-production timeline and any follow-on customer adoption announcements related to WAVE6331X FuSa."
    }
   },
   {
    "when": {
-    "ko": "2026년 10~11월 (3분기 실적 발표)",
-    "en": "October–November 2026 (Q3 Earnings Release)"
+    "ko": "교환사채 관련 공시 발생 시",
+    "en": "Upon any exchangeable bond-related disclosure"
    },
    "what": {
-    "ko": "라이선스 매출이 4분기에 집중되는 패턴상 3분기 실적 발표에서 4분기 계약 파이프라인 가시성을 가늠할 수 있다. 일본·북미 대형 고객향 신규 라이선스 계약 여부와 AI SoC향 수요 추이가 연간 목표 달성의 핵심 변수다.",
-    "en": "Given that license revenue consistently concentrates in Q4, the Q3 2026 earnings release will provide the first clear read on Q4 pipeline depth and year-end licensing activity. New deal flow from Japanese and North American large customers, as well as AI SoC demand trends, will be the decisive variables for full-year performance."
-   }
-  },
-  {
-   "when": {
-    "ko": "2026~2027년 (구글 차기 칩셋 공개 시점)",
-    "en": "2026–2027 (Google Next-Gen Chipset Announcement)"
-   },
-   "what": {
-    "ko": "구글 Tensor G6·G7 칩셋에 칩스앤미디어 IP 채용이 공식화되는지를 IR 및 언론 보도를 통해 확인. 확정 시 모바일 로열티 기반이 수 년간 연장되며 중장기 수익 예측 가능성이 크게 향상된다.",
-    "en": "Official confirmation that Chips&Media's IP is retained in Google's Tensor G6 and G7 chipsets—through IR communications or press coverage—would significantly extend the mobile royalty runway and materially improve medium-term earnings predictability, making it one of the most consequential yet-unconfirmed catalysts for the company."
+    "ko": "2025년 12월 발행된 교환사채의 전환 청구 여부와 지분 희석 규모를 점검해야 한다.",
+    "en": "Conversion exercise of the exchangeable bond issued in December 2025 and the resulting scale of share dilution should be monitored."
    }
   }
  ],
  "verdict": {
   "body": {
-   "ko": "칩스앤미디어는 비디오 IP라는 좁은 특화 영역에서 20년 이상 기술을 누적하고 150개사 이상의 글로벌 레퍼런스를 확보한 반도체 IP 전문기업으로, 라이선스·로열티 이원 구조가 안정적 수익 기반을 제공한다. 구글 Tensor G5 모바일 로열티 개시(2025년 3분기~)와 일본 차량용 반도체 빅3 2번째 고객 확보는 전방시장 다변화와 고객 포트폴리오 강화라는 측면에서 중기 성장의 질적 전환을 보여주는 의미 있는 사건이다. 2025년 연간 매출 284.7억원·영업이익 69.6억원(OPM 24.5%)으로 2024년 대비 영업 수익성이 회복됐으며, 2025년 4분기(매출 98.7억원·영업이익 38.6억원)는 IP 비즈니스 특유의 레버리지를 명확히 보여줬다. 반면 NPU IP 신사업은 2.5년간 고객 1개사·매출 5억원에 그쳐 상업화 속도가 뚜렷이 지연되고 있으며, 연매출의 40%에 달하는 R&D 비용이 마진 회복의 상한을 제한하고 있다. 중국향 매출 변동성과 라이선스 성수기 집중에 따른 분기 편차도 단기 실적 가시성을 낮추는 요인이다. 향후 투자자가 주목해야 할 핵심 변수는 구글 차기 칩셋(G6·G7) 로열티 연장 확인, NPU IP 추가 고객 확보, ISO 26262 ASIL-B 인증 완료 여부이며, 이들 사건의 실현 시점이 현재 밸류에이션에 반영된 성장 프리미엄이 정당화될지를 가늠하는 리트머스가 될 전망이다.",
-   "en": "Chips&Media is a specialized semiconductor IP company with over 20 years of accumulated video codec technology and reference designs spanning more than 150 global customers, anchored by a license-plus-royalty dual revenue model that provides a degree of structural earnings stability. The onset of Google Tensor G5 mobile royalties from Q3 2025 and the addition of the second of the world's top-3 automotive semiconductor companies as a customer represent qualitative improvements in the growth trajectory, broadening both end-market exposure and customer portfolio quality. FY2025 results—revenue KRW 28.5bn, operating profit KRW 7.0bn (OPM 24.5%)—confirmed an operating profitability recovery from 2024, while the exceptional Q4 2025 (revenue KRW 9.9bn, operating profit KRW 3.9bn) vividly illustrated the leverage inherent in the IP licensing model. On the other side of the ledger, NPU IP commercialization—the intended second growth axis—has delivered only one license customer and KRW 500mn in revenue after 2.5 years of investment, and R&D expenditure at approximately 40% of annual revenue structurally caps the pace of margin improvement. China revenue volatility and pronounced quarterly seasonality further complicate near-term earnings visibility. The key catalysts for investors to monitor are: official confirmation of Tensor G6/G7 royalty continuation, NPU IP customer expansion beyond the current single account, and ISO 26262 ASIL-B certification completion—the resolution of these events will determine whether the growth premium embedded in the current valuation is vindicated or mean-reverts toward historical norms."
+   "ko": "칩스앤미디어는 비디오 코덱 IP를 기반으로 라이선스와 로열티를 함께 수취하는 반도체 IP 전문기업으로, 2023~2025년 누적된 라이선스 계약이 2026년부터 로열티 매출로 전환되는 국면에 진입하고 있다. 2025년 연결 영업이익률은 24.5%로 전년 대비 개선됐고, 자동차·엣지 AI 고객군 확대와 ISO 26262 ASIL-B 인증 획득 등 사업 다변화 움직임이 이어지고 있다. 다만 라이선스 매출의 분기별 편차가 크고, 영업이익과 지배주주 순이익 간 괴리가 반복돼 실적 흐름을 단선적으로 해석하기는 어렵다. 2023년의 대규모 순손실과 2025년의 순이익 감소는 모두 비영업적 요인이 실적에 상당한 영향을 미쳤음을 보여주는 사례다. 교환사채로 인한 향후 지분 희석 가능성과 재무적 투자자 중심의 최대주주 구조도 함께 살펴볼 변수다. 로열티 매출 전환 속도와 신규 고객사(암바렐라 등)의 양산 일정이 향후 실적 궤적을 좌우할 핵심 관찰 포인트로 남아 있다.",
+   "en": "Chips&Media is a semiconductor IP specialist that earns both license and royalty revenue based on its video codec IP, and is entering a phase where license contracts accumulated between 2023 and 2025 begin converting into royalty revenue starting in 2026. The 2025 consolidated operating margin improved to 24.5% from the prior year, and business diversification continues through an expanding automotive and edge-AI customer base and the acquisition of ISO 26262 ASIL-B certification. However, quarterly variance in license revenue is significant, and the recurring gap between operating profit and net profit attributable to owners makes it difficult to read earnings trends in a straightforward manner. Both the large net loss in 2023 and the decline in net profit in 2025 illustrate cases where non-operating factors materially affected results. Potential future share dilution from the exchangeable bond and the financial-investor-centered largest-shareholder structure are additional variables worth watching. The pace of the license-to-royalty revenue conversion and the mass-production timelines of new customers such as Ambarella remain the key points to observe for the future earnings trajectory."
   }
  },
  "sources": [
-  "https://m.irgo.co.kr/IR-COMP/094360/%EC%B9%A9%EC%8A%A4%EC%95%A4%EB%AF%B8%EB%94%94%EC%96%B4-IR-PAGE",
-  "https://comp.fnguide.com/SVO2/asp/SVD_Main.asp?gicode=A094360",
+  "https://m.irgo.co.kr/IR-ROOM/094360",
   "https://alphasquare.co.kr/home/stock-summary?code=094360",
-  "https://quantkang.github.io/094360/",
-  "https://markets.hankyung.com/stock/094360/consensus",
-  "https://comp.fnguide.com/SVO2/ASP/SVD_Finance.asp?pGB=1&gicode=A094360&MenuYn=Y&ReportGB=B&NewMenuID=103&stkGb=701",
-  "https://www.investing.com/equities/chipsmedia-inc",
-  "https://m.thinkpool.com/item/094360",
-  "https://itooza.com/vscore/094360",
-  "https://www.the-stock.kr/news/articleView.html?idxno=30814",
-  "https://www.chipsnmedia.com/career/company/greeting.php",
-  "http://www.finomy.com/news/articleView.html?idxno=244760",
+  "https://kr.investing.com/equities/chipsmedia-inc-earnings",
   "https://m.thinkpool.com/compDiscuss/cont/1023077",
-  "https://moneypie.net/wiki/v/칩스앤미디어",
-  "https://youdiff.co.kr/229",
-  "https://file.alphasquare.co.kr/media/pdfs/company-report/IR20220812%EC%B9%A9%EC%8A%A4%EC%95%A4%EB%AF%B8%EB%94%94%EC%96%B4.pdf",
-  "https://chipsnmedia.com/career/index.php",
-  "https://core.asiae.co.kr/article/2025071509103514651"
+  "https://www.investing.com/equities/chipsmedia-inc",
+  "https://comp.fnguide.com/SVO2/asp/SVD_Main.asp?gicode=A094360",
+  "http://comp.wisereport.co.kr/company/c1010001.aspx?cmp_cd=094360",
+  "https://markets.hankyung.com/stock/094360/consensus",
+  "https://quantkang.github.io/094360/",
+  "https://www.newspim.com/news/view/20260204000093",
+  "https://www.dailyinvest.kr/news/articleView.html?idxno=70335",
+  "https://www.newspim.com/news/view/20260428001004",
+  "https://www.bloter.net/news/articleView.html?idxno=661149",
+  "https://www.sentv.co.kr/article/view/sentv202604280108",
+  "https://www.kndaily.co.kr/news/articleView.html?idxno=308603",
+  "https://chipsnmedia.com/company/news",
+  "https://www.etoday.co.kr/news/view/2552779",
+  "https://kr.investing.com/news/global-filings/article-93CH-1947408"
  ],
  "v": 2,
- "model": "claude-sonnet-4-6",
+ "model": "claude-sonnet-5",
  "ticker": "094360",
  "name": "칩스앤미디어",
  "name_en": "Chips&Media, Inc.",
@@ -233,9 +223,9 @@
   "반도체"
  ],
  "market": "코스닥",
- "reportDate": "2026-06-18",
- "reportTs": "2026-06-18 23:43",
- "dataDate": "20260821",
+ "reportDate": "2026-09-05",
+ "reportTs": "2026-09-05 06:37",
+ "dataDate": "20260904",
  "quant": {
   "asOf": "2026-08-21",
   "fs_basis": "연결(CFS) · DART 공시 확정치 · 지배주주 기준 순이익",
@@ -334,14 +324,14 @@
    }
   ],
   "valuation": {
-   "price": 10200,
-   "mcap": 0.2178,
+   "price": 10950,
+   "mcap": 0.2338,
    "shares": 21355274,
    "total_shares": 21334174,
    "wavg_shares": 20352385,
-   "per": 22.5,
+   "per": 24.119,
    "eps": 454,
-   "pbr": 2.41,
+   "pbr": 2.5844,
    "bps": 4237,
    "roe_ttm": 11.4,
    "ttm_window": "2025Q3~2026Q2",
@@ -350,7 +340,7 @@
    "bps_krx": 4120.0,
    "basis": "PER·EPS·PBR·BPS 모두 자체 산출(네이버·토스와 동일 방식) · 배당은 DART 공시 주당현금배당금(보완:KRX) ÷ 현재가",
    "dps": 116.0,
-   "div": 1.14
+   "div": 1.06
   }
  }
 }
