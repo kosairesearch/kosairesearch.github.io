@@ -170,7 +170,24 @@ if RETRY.exists():
     except Exception as e:
         check(False, "다시 만들 목록이 읽힌다", e.__class__.__name__)
 
-# ── 8) 사용량이 기록되는가 ───────────────────────────────────
+#    프롬프트를 다듬는 것은 확률이고, 되풀이는 확률이 아니다. 한 실행 안에서
+#    걸러진 것이 없을 때까지 다시 낸다(최대 ROUNDS 회). 2차부터는 FORCE 를
+#    꺼야 한다 — 켜 두면 멀쩡한 것까지 통째로 다시 만들어 요금이 곱절이 된다.
+check("ROUNDS" in gen and "for rnd in range(1, ROUNDS + 1)" in gen,
+      "한 실행 안에서 걸러진 것을 다시 만든다")
+check("force=(FORCE if rnd == 1 else False)" in gen,
+      "2차부터는 전체 재생성을 끈다(요금이 곱절이 되지 않게)")
+check("def submit(cl, as_of, force=None)" in gen, "회차마다 대상을 달리 줄 수 있다")
+
+#    영어를 비우는 것이 실패의 대부분이었다(2026-09-04 실행에서 25/35건).
+#    그 규칙이 프롬프트 맨 끝에 있어야 한다 — 가운데 묻히면 밀린다.
+i_en = gen.find("영어를 비우지 말 것")
+i_end = gen.find('"""', gen.find("SCHEMA = "))
+check(i_en > 0, "영어를 비우지 말라는 규칙이 있다")
+check(i_en > gen.find("한자를 섞지 말 것"), "그 규칙이 다른 규칙들 뒤에 온다(끝에 둔다)")
+check("빈 자리가 하나라도 있는지 세어 보고" in gen, "내보내기 전에 스스로 세어 보게 한다")
+
+# ── 9) 사용량이 기록되는가 ───────────────────────────────────
 #
 #    이게 없어서 "월 1회로 늘리면 얼마 더 드나" 를 기록으로 답할 수 없었다.
 check("_tally" in gen and "_log_usage" in gen, "쓴 토큰과 웹 검색 횟수를 로그에 남긴다")

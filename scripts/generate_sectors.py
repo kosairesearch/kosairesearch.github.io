@@ -54,6 +54,8 @@ STATE = ROOT / "data" / "sector_batch_state.json"
 MODEL = os.getenv("REPORT_MODEL", "claude-sonnet-5")
 FORCE = os.getenv("SECTOR_FORCE", "") == "1"
 MAX_WAIT = int(os.getenv("BATCH_MAX_WAIT_SEC", "4800"))
+# 걸러진 것을 다시 만드는 횟수(1차 포함). 회차마다 대상이 줄어든다.
+ROUNDS = max(1, int(os.getenv("SECTOR_ROUNDS", "3")))
 
 TOOLS = [{"type": "web_search_20250305", "name": "web_search", "max_uses": 3,
           "user_location": {"type": "approximate", "country": "KR", "timezone": "Asia/Seoul"}}]
@@ -63,7 +65,16 @@ log = g.log
 SYSTEM = (
     "너는 한국 증시 섹터(업종) 애널리스트다. 주어진 업종의 한국 상장사들을 바탕으로 "
     "투자 참고용 업종 분석을 작성한다. 매수/매도·목표주가 등 투자권유 표현은 쓰지 않는다. "
-    "수치는 확인된 것만 쓰고 과장·날조하지 않는다. 전문 애널리스트 톤."
+    "수치는 확인된 것만 쓰고 과장·날조하지 않는다. 전문 애널리스트 톤.\n\n"
+    "[집계]로 주는 수치(업종 시가총액 합계·전체 시장 비중·상장 종목 수)와 "
+    "[시총 상위 종목]의 시총 금액은 문장에 그대로 옮기지 않는다. 이 값들은 매 거래일 "
+    "바뀌고 화면이 본문 위에서 최신 값을 따로 보여 주므로, 문장에 박으면 그날부터 "
+    "화면과 본문이 서로 다른 숫자를 말하게 된다. 규모는 '관계'로 서술한다.\n"
+    "  (X) 업종 시가총액은 약 2786.3조원으로 전체 시장의 48.8%를 차지한다\n"
+    "  (O) 전체 시장 시가총액의 절반에 가까운 비중을 차지하는 최대 업종이다\n"
+    "  (X) 상장 종목은 119개로 시가총액 합계는 약 47.5조원이다\n"
+    "  (O) 종목 수는 많지만 개별 규모는 작아 시장 비중은 1%를 밑도는 업종이다\n"
+    "개별 기업의 점유율·실적·수주처럼 공시나 검색으로 확인한 값은 수치로 써도 된다."
 )
 
 # en 자리를 ""로 비워 보였더니 모델이 템플릿 그대로 빈 문자열을 내놓는 일이 있었다
@@ -83,21 +94,21 @@ SCHEMA = """다음 JSON 스키마로만 출력하세요. 모든 텍스트는 {"k
 ===JSON_END===
 규칙
 - 마커 사이에 JSON만. 한국어는 자연스럽게, 영어는 전문 번역체로.
-- ko·en 어느 쪽도 빈 문자열로 두지 말 것. 모든 항목을 양쪽 언어로 채운다.
 - 문장은 반드시 끝맺을 것. 분량이 부담되면 문장 수를 줄이되 중간에 끊지 않는다.
 - 한자를 섞지 말 것(예: '고객사向' → '고객사 대상', '美' → '미국').
-- ★ 위 [집계]에 준 수치(업종 시가총액 합계·전체 시장 비중·상장 종목 수)와
-  [시총 상위 종목]의 시총 금액은 문장에 그대로 쓰지 말 것. 이 값들은 매
-  거래일 바뀌고, 화면이 본문 위에서 최신 값을 따로 보여 준다. 문장에 박으면
-  그날부터 화면의 숫자와 본문의 숫자가 서로 다른 말을 하게 된다.
-  준 수치는 업종의 규모·성격을 파악하는 참고용이며, 크기는 '관계'로 서술한다.
-    (X) 업종 시가총액은 약 2786.3조원으로 전체 시장의 48.8%를 차지한다
-    (O) 전체 시장 시가총액의 절반에 가까운 비중을 차지하는 최대 업종이다
-    (X) 상장 종목은 119개로 시가총액 합계는 약 47.5조원이다
-    (O) 종목 수는 많지만 개별 규모는 작아 시장 비중은 1%를 밑도는 업종이다
-  다만 개별 기업의 점유율·실적·수주 같은 값은 공시나 검색으로 확인했다면
-  수치로 써도 된다(예: "TC 본더 세계 점유율 약 71%"). 금지하는 것은 화면이
-  실시간으로 다시 계산해 보여 주는 집계 수치뿐이다."""
+
+★ 마지막으로 반드시 지킬 것 — 영어를 비우지 말 것
+
+  "en" 자리는 하나도 빠짐없이 채운다. lead·overview·structure·trends·outlook
+  다섯 개와 risks 세 개의 title·body 까지, 총 16개 자리가 전부 영어 문장이어야
+  한다. "same, in English" 는 무엇을 쓰라는 지시이지 그대로 옮겨 적을 값이
+  아니며, 빈 문자열("")도 안 된다.
+
+  분량이 부담되면 한국어 쪽 문장 수를 줄여라. 영어를 비우는 것보다 양쪽을
+  짧게 쓰는 편이 낫다 — 영어가 비면 영어 화면에 한국어가 그대로 노출된다.
+
+  출력을 끝내기 전에 "en" 이 빈 자리가 하나라도 있는지 세어 보고, 있으면
+  채운 뒤 내보낼 것."""
 
 
 class BatchOnly(RuntimeError):
@@ -178,7 +189,8 @@ def save_retry(failed, as_of):
         RETRY.unlink()
 
 
-def submit(cl, as_of):
+def submit(cl, as_of, force=None):
+    force = FORCE if force is None else force
     sectors = load_sectors()
     existing = load_existing()
     # 걸러진 업종을 다시 대상에 넣는다.
@@ -192,8 +204,8 @@ def submit(cl, as_of):
     # 2026-09-04 실행에서 30개 중 11개가 걸러졌다(영문이 비거나 글자가 깨진
     # 출력). 그때 이 목록이 없어서 11개가 8월 글 그대로 남았다.
     retry = load_retry()
-    targets = [s for s in sectors if FORCE or s not in existing or s in retry]
-    if retry and not FORCE:
+    targets = [s for s in sectors if force or s not in existing or s in retry]
+    if retry and not force:
         log(f"- 지난번에 걸러진 {len(retry)}개를 다시 만든다: {', '.join(sorted(retry))}")
     # '기타'는 업종 분석 의미가 적어 제외
     targets = [s for s in targets if s != "기타"]
@@ -456,12 +468,39 @@ def main():
     as_of = datetime.datetime.now(datetime.timezone(datetime.timedelta(hours=9))).strftime("%Y-%m-%d %H:%M")
     if mode == "submit":
         submit(cl, as_of)
-    elif mode == "collect":
+        return
+    if mode == "collect":
         collect(cl, as_of)
-    else:
-        bid = submit(cl, as_of)
-        if bid and poll(cl, bid):
-            collect(cl, as_of)
+        return
+
+    # ── auto — 걸러진 것이 없을 때까지 되풀이한다 ──────────────
+    #
+    # 프롬프트를 아무리 다듬어도 모델 출력은 확률이다. 2026-09-04 실행에서
+    # 30개 중 11개가 걸러졌는데(대부분 영어를 비운 출력), 그때는 한 번 내고
+    # 끝이라 11개가 8월 글 그대로 남았다. 다시 만들려면 사람이 알아채고
+    # 손으로 또 돌려야 했다.
+    #
+    # 되풀이는 확률이 아니다. 걸러진 것만 다시 내므로 회차마다 대상이 줄고,
+    # 요금도 그만큼만 더 든다. 두 번째 회차부터는 FORCE 를 끈다 — 켜 두면
+    # 멀쩡한 것까지 통째로 다시 만든다.
+    for rnd in range(1, ROUNDS + 1):
+        if rnd > 1:
+            as_of = datetime.datetime.now(
+                datetime.timezone(datetime.timedelta(hours=9))).strftime("%Y-%m-%d %H:%M")
+        bid = submit(cl, as_of, force=(FORCE if rnd == 1 else False))
+        if not bid:
+            break                                  # 만들 것이 없다
+        if not poll(cl, bid):
+            log(f"- {rnd}차 배치가 시간 안에 안 끝났다. 여기서 멈춘다."); break
+        collect(cl, as_of)
+        left = load_retry()
+        if not left:
+            log(f"\n■ {rnd}차에서 전부 저장됐다."); break
+        if rnd == ROUNDS:
+            log(f"\n■ {ROUNDS}차까지 했는데 {len(left)}개가 남았다: {', '.join(sorted(left))}")
+            log("  다음 실행이 이 목록만 다시 만든다.")
+        else:
+            log(f"\n■ {rnd}차에서 {len(left)}개가 걸러졌다 — 그것만 다시 만든다: {', '.join(sorted(left))}")
 
 
 def _entry():
