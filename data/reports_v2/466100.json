@@ -1,227 +1,217 @@
 {
  "title": {
-  "ko": "물류 풀스택 승부수, DLS 인수와 유증 부담",
-  "en": "Clobot's Logistics Bet: DLS Deal Meets Dilution"
+  "ko": "물류SI 편입, 로봇 플랫폼 확장 승부수",
+  "en": "Robot Platform Bets on Logistics SI Buildout"
  },
  "lead": {
-  "ko": "로봇 소프트웨어 기업 클로봇은 매출 고성장과 손익 개선 흐름 속에서도, 두산로지스틱스솔루션(DLS) 인수를 위한 대규모 유상증자를 진행하며 재무구조 변화의 갈림길에 서 있다.",
-  "en": "Robot software firm Clobot is posting rapid revenue growth and narrowing losses, yet stands at a financial crossroads as it pushes a large rights offering to fund its acquisition of Doosan Logistics Solutions."
+  "ko": "클로봇은 두산로지스틱스솔루션(DLS) 인수와 대규모 유상증자를 통해 로봇 관제 소프트웨어 기업에서 물류 자동화 통합 플랫폼 기업으로 사업 구조 전환을 시도하고 있다.",
+  "en": "Clobot is attempting to transform itself from a robot control software company into an integrated logistics automation platform through its acquisition of Doosan Logistics Solutions (DLS) and a large-scale rights offering."
  },
  "keypoints": [
   {
-   "ko": "2025년 연결 매출 414억원으로 전년 334억원 대비 확대됐으나 영업손실 32억원으로 적자가 지속됐다(2024년 영업손실 75억원 대비 축소).",
-   "en": "2025 consolidated revenue rose to KRW 41.4bn from KRW 33.4bn, but the company remained loss-making with an operating loss of KRW 3.2bn, narrower than 2024's KRW 7.5bn loss."
+   "ko": "2026년 8월 DLS 지분 100% 인수 거래를 종결하고 9월부터 연결 자회사로 편입, 물류 SI 밸류체인을 확보했다.",
+   "en": "Clobot closed its acquisition of 100% of DLS in August 2026, consolidating it as a subsidiary from September and gaining a logistics SI value chain."
   },
   {
-   "ko": "2025년 3분기·4분기 연속 영업흑자(각 7.7억원, 13.1억원)를 냈지만 2026년 1분기 다시 영업손실 25억원으로 반전됐다.",
-   "en": "Clobot turned operating-profitable in 2025 Q3 and Q4 (KRW 0.77bn and KRW 1.31bn) but reverted to a KRW 2.5bn operating loss in 2026 Q1."
+   "ko": "인수대금 조달을 위한 1,132억원 규모 유상증자는 청약률 2,703%로 흥행에 성공했으나 발행주식 수가 크게 늘었다.",
+   "en": "The 113.2 billion won rights offering to fund the acquisition drew a 2,703% subscription rate, but sharply increased the share count."
   },
   {
-   "ko": "약 1,132억원 규모(확정 발행가 20,600원)의 유상증자를 통해 두산로지스틱스솔루션(DLS) 지분 100%를 685억원에 인수하는 절차를 진행 중이며, 거래 종결 목표일은 9월 30일이다.",
-   "en": "Clobot is raising roughly KRW 113.2bn via rights offering (final price KRW 20,600) to fund a KRW 68.5bn acquisition of 100% of Doosan Logistics Solutions, targeting a September 30 deal close."
+   "ko": "매출은 2023~2025년 꾸준히 늘었고 2025년 3~4분기 두 차례 영업흑자를 냈으나 2026년 1~2분기 다시 영업손실로 돌아섰다.",
+   "en": "Revenue grew steadily from 2023 to 2025 and the company posted two consecutive quarters of operating profit in late 2025, but slipped back into operating losses in the first half of 2026."
   },
   {
-   "ko": "DLS는 2025년 매출 658억원, 영업이익 11억원을 냈지만 순손실 550억원과 자본잠식 상태에 있어 인수 이후 통합 리스크가 부각된다.",
-   "en": "DLS posted 2025 revenue of KRW 65.8bn and operating profit of KRW 1.1bn, but a net loss of KRW 55bn and capital impairment raise post-merger integration risk."
+   "ko": "4족 보행 로봇 '스팟' 사업은 보스턴 다이내믹스 파트너십을 기반으로 반도체·자동차 산업으로 확장되며 별도 성장축으로 부각되고 있다.",
+   "en": "The Spot quadruped robot business, built on the Boston Dynamics partnership, is expanding into the semiconductor and automotive industries as a distinct growth pillar."
   },
   {
-   "ko": "보스턴다이나믹스 사족보행로봇 '스팟(Spot)' 파트너십을 기반으로 반도체 공장 등 산업 현장 수주가 이어지고 있다.",
-   "en": "Contract wins in industrial sites such as semiconductor plants continue on the back of the Boston Dynamics 'Spot' partnership."
+   "ko": "상장 당시 실적 추정치와 실제 실적 간 괴리, 지분 희석, DLS의 완전자본잠식 상태는 함께 주시해야 할 변수다.",
+   "en": "The gap between IPO-era revenue projections and actual results, equity dilution, and DLS's complete capital impairment are variables that warrant continued attention."
   }
  ],
  "business": {
-  "ko": "클로봇은 2017년 설립된 로봇 소프트웨어·서비스 전문기업으로, 2024년 10월 코스닥 기술특례상장했다. 핵심 자산은 범용 자율주행 소프트웨어 '카멜레온(Chameleon)'과 이기종 로봇 통합관제 플랫폼 '크롬스(CROMS)'로, 제조사와 무관하게 다양한 로봇을 하나의 시스템에서 연결·운영하는 것이 강점이다. 사업은 서비스 로봇(안내·청소·방역·이송), 필드 로봇(스팟 등 산업 현장 점검), 물류 로봇 세 축으로 구성되며, 국내외 130여 개 고객사를 확보하고 있다. 범용 실내 자율주행 SW ‘카멜레온(Chameleon)’과 이기종 로봇 통합 관제 플랫폼 ‘크롬스(CROMS)’를 핵심 제품으로 보유하고 있으며, 국내외에서 130여 개 이상의 고객사를 확보했다. 2024년부터는 보스턴다이나믹스와 전략적 파트너십을 체결하며 스팟의 공식 유통과 솔루션 공급을 담당하고 있으며, 최근에는 보스턴 다이내믹스로부터 ‘스팟(Spot)’ 양산 및 유지보수 교육 이수와 프로젝트 검증을 거쳐 파트너사 중 최초로 시스템 통합 인증을 취득해 국내 유지보수 역량을 공식 인정받았다. 하드웨어 조달은 자회사 로아스(ROAS)가 담당하며, 클로봇은 소프트웨어 라이선스·관제·유지보수 중심의 수익모델에 구독형 RaaS(Robot as a Service)를 결합해 반복매출 비중을 늘려가고 있다. 2026년에는 두산로지스틱스솔루션(DLS) 인수를 통해 대형 물류센터의 설계·시공·장비 설치, 창고관리시스템(WMS), 창고제어시스템(WCS) 등 운영 소프트웨어 역량을 갖춘 기업을 로봇 하드웨어 인프라와 운영 노하우 확보 차원에서 편입하며 로봇·소프트웨어·운영 서비스를 아우르는 '풀스택' 사업자로의 전환을 시도하고 있다. DLS는 나이키·다이소 등 대형 물류 자동화 프로젝트를 수행한 기업으로 클로봇의 대기업 물류 SI 시장 진입에 기여할 수 있다는 평가가 나온다. 경쟁 구도상으로는 로봇 소프트웨어·통합관제 영역에서 유사한 플랫폼 지향 스타트업들이 존재하며, 유사 기업으로는 팀그릿, 씨메스, 비에이티파트너스, 브릴스 등이 거론된다.",
-  "en": "Founded in 2017, Clobot is a robot software and service company that listed on KOSDAQ in October 2024 under the technology special listing track. Its core assets are the universal autonomous navigation software 'Chameleon' and the heterogeneous robot integrated control platform 'CROMS,' which allow multiple robot brands to be connected and operated on a single system regardless of manufacturer. The business spans three segments—service robots (guidance, cleaning, disinfection, delivery), field robots (industrial inspection robots such as Spot), and logistics robots—serving over 130 domestic and overseas customers. Its core products are the general-purpose indoor autonomous navigation software 'Chameleon' and heterogeneous robot integrated control platform 'CROMS,' with more than 130 customers secured domestically and abroad. Since 2024, the company has held a strategic partnership with Boston Dynamics, handling official distribution and solution supply for the Spot robot, and it recently became the first partner to obtain Boston Dynamics' System Integration certification after completing production and maintenance training and project verification for Spot, formally recognizing its domestic maintenance capabilities. Hardware sourcing is handled through its subsidiary ROAS, while Clobot builds recurring revenue through a subscription-based RaaS model layered on top of its software licensing, control, and maintenance business. In 2026 the company is pursuing the acquisition of Doosan Logistics Solutions (DLS), which brings design, construction, and equipment installation capabilities for large logistics centers along with WMS and WCS operating software, aiming to transform into a 'full-stack' provider spanning robots, software, and operations. DLS is a firm that has carried out large-scale logistics automation projects for clients such as Nike and Daiso, which could help Clobot access large corporate logistics SI contracts. In the robot software and integrated control space, comparable platform-oriented startups are often cited, including Teamgrit, Cimes, BAT Partners, and Brills."
+  "ko": "클로봇은 자체 개발한 범용 자율주행 솔루션 '카멜레온(CHAMELEON)'과 이기종 로봇 통합관제 시스템 '크롬스(CROMS)'를 핵심 축으로 순찰·이송·물류·제조 현장에 로봇 운영 플랫폼을 라이선스 형태로 공급한다. 매출 구조는 로봇 솔루션 라이선스·서비스 공급이 중심이며, 자율주행·관제 등 고부가 소프트웨어 매출 비중이 확대되는 방향으로 재편되고 있다. 4족 보행 로봇 '스팟(Spot)'은 2024년 체결한 보스턴 다이내믹스와의 전략적 파트너십을 기반으로 국내 공식 유통·솔루션 공급을 담당하며, 최근 반도체 공장 대상 20억원 이상 규모 계약을 포함해 반도체·자동차 산업으로 적용 영역을 넓히고 있다. 산업용 청소로봇 'R3'와 전용 관제 솔루션 '카라멜(Charamel)'은 학교·공공시설 등으로 운영 사업을 확산하고 있다. 2026년 8월 두산로지스틱스솔루션(DLS) 지분 100%를 인수하는 거래를 종결하고 9월부터 연결 자회사로 편입했다. DLS는 창고관리시스템(WMS)·창고제어시스템(WCS) 기반 물류센터 설계·구축·운영 역량을 갖춘 시스템통합(SI) 기업으로, 나이키·다이소 등 대형 물류 자동화 프로젝트 레퍼런스를 보유하고 있다. 이번 인수로 클로봇은 기존 로봇 관제 소프트웨어(RCS) 역량에 물류 SI 역량을 더해 설계-구축-운영-유지보수를 아우르는 '턴키 솔루션' 사업자로 확장을 시도하고 있다. 2026년 5월에는 미국 델라웨어에 '클로봇 아메리카'를 설립해 북미 시장 진출도 준비 중이다. 회사는 88건의 특허 출원과 43건의 등록을 보유하며 10개 이상 산업군, 130개 고객사에 로봇 관제 기술을 적용해왔다고 설명한다.",
+  "en": "Clobot supplies robot operation platforms on a license basis for patrol, transport, logistics, and manufacturing sites, built around its in-house autonomous driving solution CHAMELEON and heterogeneous robot control system CROMS. Its revenue structure centers on robot solution licenses and services, with the mix shifting toward higher value-added software and control revenue. The Spot quadruped robot business, run under a strategic partnership with Boston Dynamics signed in 2024, handles official domestic distribution and solution supply, and has recently expanded into the semiconductor and automotive industries, including a contract worth more than 200 million won with a domestic semiconductor plant. The industrial cleaning robot R3 and its dedicated control solution Charamel are expanding operations into schools and public facilities. In August 2026, Clobot closed its acquisition of 100% of Doosan Logistics Solutions (DLS) and consolidated it as a subsidiary from September. DLS is a system integration company with warehouse management system (WMS) and warehouse control system (WCS) capabilities for designing, building, and operating logistics centers, with large-scale automation project references for clients including Nike and Daiso. Through this acquisition, Clobot is attempting to expand from robot control software (RCS) into a turnkey solutions provider covering design, construction, operation, and maintenance. In May 2026, the company established Clobot America in Delaware to prepare for entry into the North American market. The company states it holds 88 patent applications and 43 registrations, and has applied its robot control technology across more than 10 industries and 130 client accounts."
  },
  "earnings": {
-  "ko": "2025년 연결 매출액은 414억 610만원으로 2024년 333억 950만원 대비 뚜렷하게 증가했으나, 영업손실은 31억 8,060만원을 기록해 2024년 74억 9,090만원 대비 적자 폭은 축소됐지만 흑자 전환에는 이르지 못했다. 영업이익률은 2024년 -22.4%에서 2025년 -7.7%로 개선되며 비용 구조 효율화가 진행되고 있음을 보여준다. 분기별로 보면 2025년 1분기(-33.8억원)와 2분기(-18.8억원) 영업손실을 이어가다 3분기(+7.7억원)와 4분기(+13.1억원)에 연속 흑자 전환에 성공했고, 지배주주 순이익도 3분기 11.0억원으로 플러스 전환했다. 그러나 2026년 1분기 매출은 81.2억원으로 전년 동기 49.2억원 대비 크게 늘었음에도 영업손실이 25.0억원으로 재차 확대되며 흑자 기조가 아직 안정적으로 자리잡지 못한 모습이다. 영업활동현금흐름(CFO)은 2024년 -75.2억원, 2025년 -29.0억원으로 마이너스가 지속되고 있어 현금창출력은 여전히 취약하다. 재무구조 측면에서는 부채비율이 2024년 15.9%에서 2025년 20.8%로 소폭 상승했으나 여전히 낮은 수준을 유지하고 있으며, 지배주주지분 자본총계는 2024년 599억원에서 2025년 604억원으로 소폭 늘어 자본잠식 우려는 크지 않다. 다만 2025년 실적은 상장 당시 제시됐던 매출 전망치를 크게 밑돌았다는 지적이 있어, 향후 실적 가이던스에 대한 신뢰 회복이 과제로 남아 있다.",
-  "en": "Consolidated 2025 revenue reached KRW 41.406bn, up notably from KRW 33.395bn in 2024, while the operating loss narrowed to KRW 3.181bn from KRW 7.491bn a year earlier, though the company did not turn operating-profitable for the full year. The operating margin improved from -22.4% in 2024 to -7.7% in 2025, signaling cost-structure efficiency gains. On a quarterly basis, operating losses continued in Q1 2025 (-KRW 3.38bn) and Q2 2025 (-KRW 1.88bn) before the company posted back-to-back operating profits in Q3 (+KRW 0.77bn) and Q4 (+KRW 1.31bn), with owners' net income also turning positive in Q3 at KRW 1.10bn. However, Q1 2026 revenue jumped to KRW 8.12bn from KRW 4.92bn a year earlier, yet the operating loss widened again to KRW 2.50bn, suggesting the profitability trend has not yet stabilized. Operating cash flow remained negative at -KRW 7.52bn in 2024 and -KRW 2.90bn in 2025, indicating still-fragile cash generation. On the balance sheet, the debt ratio edged up from 15.9% in 2024 to 20.8% in 2025 but remains low overall, while owners' equity rose modestly from KRW 59.9bn to KRW 60.4bn, easing immediate capital-impairment concerns. That said, 2025 results reportedly fell well short of the revenue targets presented at listing, leaving credibility of future guidance as an open issue."
+  "ko": "연결 매출액은 2023년 242억원, 2024년 334억원, 2025년 414억원으로 3년 연속 증가세를 이어갔다. 반면 영업손실은 2023년 -58억원, 2024년 -75억원에서 2025년 -32억원으로 적자 규모가 줄었고, 영업이익률도 -23.8%→-22.4%→-7.7%로 개선되는 흐름을 보였다. 분기별로는 2025년 3분기(매출 107억원, 영업이익 8억원)와 4분기(매출 179억원, 영업이익 13억원)에 두 차례 연속 영업흑자를 기록하며 반전 조짐을 보였다. 그러나 2026년 들어 1분기(매출 81억원, 영업손실 25억원)와 2분기(매출 89억원, 영업손실 28억원)에 다시 적자로 돌아서며 흑자 전환이 아직 안정적으로 자리잡지 못했음을 보여줬다. 지배주주 순이익 역시 2025년 2분기 -14억원에서 3분기 +11억원으로 흑자를 냈다가 2026년 1분기 -22억원, 2분기 -26억원으로 다시 적자를 기록했다. 회사 측은 올해 상반기 매출총이익이 33억원으로 전년 동기 대비 89.6% 늘고 매출원가율이 80.6%로 5.8%포인트 개선됐다고 밝히며, 이를 자율주행·관제 등 고부가 소프트웨어 매출 비중 확대의 결과로 설명했다. 상반기 매출은 169억8000만원으로 전년 동기 대비 32.9% 증가했고 매출총이익은 32억9000만원으로 89.6% 늘었으며 매출원가율은 80.6%로 5.8%포인트 개선됐다. 2025년 연간 실적은 2026년 2월 공시된 잠정치 기준으로 순손실이 20.6억원까지 축소된 것으로 나타났으나, 이는 확정 감사보고서 반영 전 잠정 공시 수치임을 유의해야 한다. 자기자본은 2023년 261억원에서 2025년 604억원으로 늘었고 부채비율은 32.5%에서 20.8%로 하향 안정화됐다. 다만 상장 당시 제시했던 매출 추정치와 실제 실적 간 괴리가 매년 커지고 있다는 점은 실적 신뢰도 측면에서 계속 주시할 부분이다.",
+  "en": "Consolidated revenue rose for three consecutive years, from 24.2 billion won in 2023 to 33.4 billion won in 2024 and 41.4 billion won in 2025. Operating losses narrowed from -5.8 billion won in 2023 and -7.5 billion won in 2024 to -3.2 billion won in 2025, with the operating margin improving from -23.8% to -22.4% to -7.7%. On a quarterly basis, the company posted two consecutive quarters of operating profit in the third quarter of 2025 (revenue of 10.7 billion won, operating profit of 0.8 billion won) and the fourth quarter (revenue of 17.9 billion won, operating profit of 1.3 billion won), signaling a possible turnaround. However, it swung back to losses in the first quarter of 2026 (revenue of 8.1 billion won, operating loss of 2.5 billion won) and the second quarter (revenue of 8.9 billion won, operating loss of 2.8 billion won), showing that profitability has not yet stabilized. Net income attributable to owners followed a similar pattern, turning positive at +1.1 billion won in the third quarter of 2025 from -1.4 billion won in the second quarter, before reverting to losses of -2.2 billion won and -2.6 billion won in the first and second quarters of 2026. The company stated that gross profit in the first half of 2026 rose 89.6% year over year to 3.3 billion won and that the cost of revenue ratio improved by 5.8 percentage points to 80.6%. First-half revenue increased 32.9% year over year to 16.98 billion won, gross profit rose 89.6% to 3.29 billion won, and the cost of revenue ratio improved 5.8 percentage points to 80.6%. Based on preliminary figures disclosed in February 2026, the annual 2025 net loss narrowed to about 2.06 billion won, though this preliminary figure predates the finalized audit report and should be treated with that caveat. Equity attributable to owners grew from 26.1 billion won in 2023 to 60.4 billion won in 2025, while the debt ratio declined from 32.5% to 20.8%. Still, the widening gap each year between IPO-era revenue projections and actual results is a factor worth continued monitoring for earnings credibility."
  },
  "industry": {
-  "ko": "국내외 서비스·물류 로봇 시장은 인건비 상승, 이커머스 물동량 증가, 공급망 효율화 요구를 배경으로 확대되고 있으며, 개별 로봇 판매를 넘어 소프트웨어 기반 통합 운영 플랫폼 수요가 커지는 국면이다. 북미 물류자동화 시장은 인건비 상승, 이커머스 물동량 증가, 공급망 효율화 수요를 배경으로 물류센터 단위의 턴키 솔루션 수요가 확대되고 있다. 클로봇은 국내 실내 자율주행 분야 최초 상장 기업으로 하드웨어 제조에 의존하지 않는 자율주행·통합관제 소프트웨어를 중심으로 사업을 확장해왔다는 점에서 로봇 부품·완제품 업체들과 차별화된 포지션을 갖고 있으나, 자율주행 핵심 기술의 상용화 수준이 높아지며 SLAM과 장애물 회피 등 핵심 기술이 상당 수준 보편화돼 기술격차가 크지 않은 가운데 거시경제 불확실성으로 고객사들이 로봇 서비스를 내재화하거나 의사결정을 연기하는 흐름도 관찰된다. 반도체·자동차 등 제조 현장에서는 사족보행 로봇을 활용한 시설물 점검·순찰 수요가 새롭게 형성되고 있으며, 클로봇은 국내 반도체 공장을 대상으로 20억원 이상 규모의 대형 계약을 성사시키며 자율 순찰·점검 역량을 입증한 바 있다. 물류 자동화 영역에서는 대기업 계열 SI(시스템통합)사와의 경쟁 및 협업이 동시에 일어나고 있으며, 정부의 모자회사 중복상장 원칙 금지 기조는 상장 모회사가 자회사를 별도 상장해 투자금을 회수하는 구조를 제약하는 방향으로 작용해 M&A를 통한 사업 확장 전략에도 영향을 미치고 있다. 로봇·부품 섹터 전반에는 레인보우로보틱스, 두산로보틱스 등 대형 로봇기업과 다양한 부품 공급사가 포진해 있어 소프트웨어 플랫폼 기업인 클로봇의 차별화 지속 여부가 관건이다.",
-  "en": "The domestic and global service and logistics robot market is expanding on the back of rising labor costs, growing e-commerce volumes, and supply-chain efficiency needs, with demand shifting from standalone robot sales toward software-based integrated operating platforms. The North American logistics automation market is seeing expanded demand for turnkey, warehouse-level solutions amid rising labor costs, growing e-commerce volumes, and supply-chain efficiency needs. Clobot has differentiated itself as the first listed company in Korea's indoor autonomous navigation sector, building its business around autonomous navigation and integrated control software without relying on hardware manufacturing, though as core autonomous technologies commoditize, there are also signs that core technologies such as SLAM and obstacle avoidance have become fairly standardized with narrowing technology gaps, while macroeconomic uncertainty leads customers to internalize robot services or delay decisions. In manufacturing sites such as semiconductor and automotive plants, new demand is emerging for facility inspection and patrol using quadruped robots, and Clobot has secured a contract worth over KRW 2bn with a domestic semiconductor plant, demonstrating its autonomous patrol and inspection capabilities. In logistics automation, competition and collaboration with large conglomerate-affiliated systems integrators occur simultaneously, and the government's principle of banning dual listings between parent and subsidiary companies has constrained structures where a listed parent spins off and separately lists a subsidiary to allow investor exits, affecting M&A-driven expansion strategies. Across the broader robotics and components sector, large players such as Rainbow Robotics and Doosan Robotics coexist with numerous component suppliers, making it a key question whether Clobot's software-platform positioning can remain differentiated."
+  "ko": "국내 로봇 산업은 제조업 인력난과 물류센터 자동화 수요를 배경으로 자율주행 로봇(AMR)과 이기종 로봇 통합관제(RCS) 소프트웨어 시장이 함께 확대되는 국면에 있다. 물류 자동화 영역에서는 창고관리시스템(WMS)·창고제어시스템(WCS)을 보유한 시스템통합(SI) 기업들이 대형 유통·물류 고객사의 턴키 프로젝트를 두고 경쟁하는데, 클로봇은 DLS 인수로 이 영역에 새롭게 진입했다. 4족 보행 로봇 시장에서는 보스턴 다이내믹스의 국내 공식 파트너인 클로봇이 스팟(Spot)을 반도체·자동차 등 고위험·고정밀 산업현장 점검용으로 확장하며 레퍼런스를 쌓고 있다. 클로봇은 2024년 보스턴다이나믹스와 전략적 파트너십을 체결하며 스팟의 공식 유통과 솔루션 공급을 담당하게 됐고, 국내 현장 유지보수 서비스를 전개하며 빠른 고객 대응 체계를 구축했다. 모션컨트롤·부품기업들도 로봇 하드웨어 분야에서 협력을 확대하고 있는데, 클로봇은 모션컨트롤 전문기업 삼현과 물류·제조용 고중량 실외주행 로봇 공동개발을 위한 업무협약을 체결한 바 있다. 다만 자율주행 로봇의 핵심 기술인 SLAM·장애물회피 기술이 상당 부분 보편화되면서 기술 격차에 따른 차별화 여지는 점차 줄어들고 있다는 평가도 나온다. 거시 불확실성 속에서 일부 고객사들이 로봇 서비스 도입을 내부화하거나 의사결정을 미루는 경향도 관찰되고 있어, 수주가 매출로 전환되는 속도에는 변수가 있다.",
+  "en": "The domestic robot industry is in a phase where the autonomous mobile robot (AMR) market and heterogeneous robot control (RCS) software market are expanding together, driven by manufacturing labor shortages and logistics center automation demand. In the logistics automation segment, system integration (SI) companies with warehouse management system (WMS) and warehouse control system (WCS) capabilities compete for turnkey projects from large retail and logistics clients, and Clobot newly entered this segment through its DLS acquisition. In the quadruped robot market, Clobot, as the official domestic partner of Boston Dynamics, is building references by expanding Spot into inspection use cases at high-risk, high-precision industrial sites in the semiconductor and automotive sectors. Clobot signed a strategic partnership with Boston Dynamics in 2024, taking charge of Spot's official distribution and solution supply, and built a rapid customer response system through on-site repair services. Motion control and component companies are also expanding cooperation in the robotics hardware space; Clobot has signed a memorandum of understanding with motion control specialist Samhyun for joint development of heavy-duty outdoor autonomous robots for logistics and manufacturing. That said, some assessments note that as core autonomous driving technologies such as SLAM and obstacle avoidance have become largely commoditized, the room for technology-based differentiation is gradually narrowing. Amid macroeconomic uncertainty, some clients have also been observed internalizing robot services or delaying decisions, introducing variability in how quickly order backlogs convert into revenue."
  },
  "outlook": {
-  "ko": "클로봇은 두산로지스틱스솔루션(DLS) 인수를 위한 유상증자 확정 발행가액을 주당 20,600원으로 결정했으며, 발행 주식 수는 549만 4,500주, 모집총액은 1,132억원이며 구주주 청약은 8월 13~14일, 일반공모 청약은 19~20일, 납입일은 24일로 예정돼 있다. 신주는 9월 초 상장될 예정이며, DLS 지분 100% 인수 거래는 두산이 보유한 지분 41만 2,482주를 685억원에 양수하는 구조로 최종 양수 예정일은 9월 30일이다. 회사는 인수 이후 단순 구축형 매출에 머무르지 않고 운영·관제·유지보수·RaaS·AI/Data로 이어지는 반복매출 중심 수익모델을 확대하고, Clobot America를 통해 현지 고객과 파트너십을 발굴해 DLS의 물류 엔지니어링 역량과 로봇 운영 소프트웨어를 결합한 통합 자동화 패키지를 북미 시장에 제안할 계획이라고 밝혔다. 스팟 사업 부문은 2025년 대비 약 70% 성장을 전망하고 있으며, 파트너십 체결 첫해 시장 탐색기를 거쳐 SI 인증과 레퍼런스 확보, 영업 파이프라인 확대가 맞물리며 향후 성장이 기대된다고 회사는 설명했다. 다만 인수 재원의 상당 부분을 유상증자에 의존하는 구조여서, 주가 흐름에 따라 실제 조달 규모와 인수 후 운영자금 여력이 달라질 수 있다. 앞으로는 일반공모 청약 결과와 최종 조달금액, DLS의 연결 실적 편입 이후 매출·수익성 변화가 핵심 관전 포인트가 될 전망이다.",
-  "en": "Clobot has finalized the rights offering issue price at KRW 20,600 per share for its acquisition of Doosan Logistics Solutions (DLS), with 5,494,500 shares to be issued for total proceeds of about KRW 113.2bn, existing-shareholder subscription set for August 13-14, general public subscription for August 19-20, and payment due August 24. New shares are expected to list in early September, while the DLS acquisition itself involves acquiring Doosan's 412,482 shares for KRW 68.5bn, with the deal targeted to close by September 30. Post-acquisition, the company plans to expand a recurring-revenue model spanning operations, control, maintenance, RaaS, and AI/data rather than remaining confined to one-off construction-type revenue, and to develop partnerships with local customers via Clobot America, proposing integrated automation packages that combine DLS's logistics engineering capabilities with Clobot's robot operating software for the North American market. The company stated that its Spot business unit projects roughly 70% growth versus 2025, expecting continued momentum as SI certification, reference cases, and an expanding sales pipeline build on the initial market exploration phase of the partnership. However, given that a large portion of acquisition funding depends on the rights offering, the actual amount raised and post-acquisition working capital could vary with share price movements. Going forward, the results of the general public subscription and final proceeds, along with revenue and profitability changes once DLS is consolidated, will be key items to watch."
+  "ko": "클로봇은 DLS 편입 이후 초기에는 기존 고객·핵심인력·파트너십을 유지하는 인수후통합(PMI)에 집중하고, 이를 바탕으로 공동영업·통합솔루션 제안·원가효율화·반복매출 확대를 추진할 계획이라고 밝혔다. DLS 실적은 2026년 4분기부터 연결 재무제표에 반영될 예정이며, 회사 측은 본격적인 시너지 효과는 2027년부터, 신규 수주 시너지는 2028년 이후 수치로 확인될 것으로 전망했다. 중장기적으로 클로봇은 3년 후 현재 대비 5배 이상의 그룹 매출 성장을 목표로 제시했다. 스팟사업실은 2025년 대비 약 70% 성장을 전망하고 있으며, 보스턴다이내믹스 인증 SI 자격 획득과 반도체 대형 수주 레퍼런스를 기반으로 파이프라인을 확대하고 있다. 미국 시장은 '클로봇 아메리카'를 거점으로 DLS의 물류 엔지니어링 역량과 클로봇의 로봇 운영 소프트웨어를 결합한 자동화 패키지 공급을 계획하고 있다. 자금 측면에서는 2026년 8월 유상증자(발행가 2만600원, 총 1,131억원 규모)가 청약률 2,703%로 완료돼 DLS 인수 대금과 후속 투자 재원을 확보했다. 다만 거래 관련 소송 충당부채 등 가격조정 항목이 완전히 확정되지 않은 부분이 있어, 최종 인수 관련 현금흐름 및 비용 반영 시점은 추가 확인이 필요하다.",
+  "en": "Clobot stated that in the initial period after consolidating DLS, it will focus on post-merger integration (PMI) to retain existing clients, key personnel, and partnerships, and will pursue joint sales, integrated solution proposals, cost efficiencies, and recurring revenue expansion on that basis. DLS results are scheduled to be reflected in the consolidated financial statements starting in the fourth quarter of 2026, with the company projecting that full synergy effects will become visible from 2027 and new order synergies from 2028 onward. Over the medium to long term, Clobot has set a target of growing group revenue more than fivefold within three years from current levels. The Spot business unit is projecting growth of about 70% versus 2025, expanding its pipeline based on Boston Dynamics-certified SI qualifications and large semiconductor order references. In the US market, the company plans to supply automation packages combining DLS's logistics engineering capabilities with Clobot's robot operation software through its Clobot America subsidiary. On the funding side, the August 2026 rights offering (issue price of 20,600 won, total size of 113.1 billion won) was completed with a 2,703% subscription rate, securing funds for the DLS acquisition and follow-on investment. However, price-adjustment items such as litigation-related provisions tied to the transaction have not been fully finalized, so the timing of related cash flow and cost recognition warrants further confirmation."
  },
  "valuation_comment": {
-  "ko": "클로봇은 아직 순손실이 지속되는 구간에 있어 통상적인 이익 배수 지표로 밸류에이션을 판단하기 어려운 상황이며, 시장은 주로 순자산가치와 성장 스토리에 대한 기대를 반영해 주가를 형성해 온 것으로 보인다. 제공된 밸류에이션 지표상 주당순자산(BPS)은 2,333원 수준으로, 현재 주가는 순자산가치 대비 상당한 프리미엄이 형성된 구간에 위치한다. 배당은 지급되지 않고 있어(DPS 0원) 배당수익률을 통한 비교 우위는 기대하기 어려운 편이다. 실적 흐름은 2024년 큰 폭 적자에서 2025년 적자 축소, 2025년 하반기 일시적 흑자 전환을 거쳐 2026년 1분기 다시 적자로 돌아서는 등 방향성이 아직 안정되지 않았다는 점도 밸류에이션 판단을 어렵게 하는 요인이다. 여기에 대규모 유상증자에 따른 지분 희석과 DLS 편입에 따른 연결 실적 변화까지 겹쳐 있어, 순자산가치와 성장 기대치 사이의 간극을 어떻게 좁혀가는지가 향후 주가 흐름을 지켜보는 데 있어 중요한 변수가 될 것으로 보인다.",
-  "en": "Clobot remains in a net-loss phase, making conventional earnings-multiple valuation difficult, and the market appears to have priced the stock largely on net asset value and growth-story expectations. Based on the disclosed valuation metrics, book value per share (BPS) stands at KRW 2,333, and the current share price sits at a level that reflects a substantial premium over net asset value. The company pays no dividend (DPS of KRW 0), leaving limited room for a dividend-yield based comparison. The earnings trajectory—large losses in 2024, a narrower loss in 2025 with a brief operating-profit turn in the second half, followed by a return to losses in Q1 2026—has not yet stabilized, adding further complexity to valuation judgment. Combined with dilution from the large rights offering and the earnings shift expected once DLS is consolidated, how the gap between net asset value and growth expectations narrows over time will be an important variable to monitor."
+  "ko": "클로봇은 여전히 영업손실을 기록 중인 기술특례상장 기업으로, 순자산가치 대비 프리미엄이 큰 구간에서 거래되는 편이다. 2026년 8월 대규모 유상증자로 발행주식 수가 크게 늘어난 만큼 주당 지표의 희석 효과가 반영되어 있다. 최근 분기 실적이 흑자와 적자를 번갈아 기록하고 있어, 이익 안정성이 아직 확립되지 않은 상태에서 밸류에이션 판단의 변수가 크다. 배당은 지급하지 않고 있어 배당 관련 지표는 비교 대상이 되지 않는다. DLS 편입 효과가 연결 실적에 본격 반영되는 시점부터 밸류에이션 지표의 재산정이 필요할 수 있다.",
+  "en": "Clobot remains a technology-exception-listed company still recording operating losses, and it tends to trade at a significant premium to net asset value. Following the large rights offering in August 2026, the sharp increase in shares outstanding has a dilutive effect on per-share metrics. Recent quarterly results have alternated between profit and loss, meaning earnings stability has not yet been established, which adds considerable variability to valuation judgments. The company does not pay dividends, so dividend-related metrics are not available for comparison. Once DLS consolidation effects are fully reflected in consolidated results, a reassessment of valuation metrics may be warranted."
  },
  "bull": [
   {
    "title": {
-    "ko": "이기종 로봇 통합관제 플랫폼의 차별성",
-    "en": "Differentiated Heterogeneous Robot Control Platform"
+    "ko": "물류 SI 수직통합",
+    "en": "Vertical Integration into Logistics SI"
    },
    "body": {
-    "ko": "클로봇은 제조사에 종속되지 않는 자율주행·통합관제 소프트웨어를 통해 130여 개 고객사를 확보했으며, 구독형 RaaS 모델로 반복매출 비중을 늘려가고 있다. DLS 편입이 성사되면 로봇·소프트웨어·물류 운영을 아우르는 풀스택 사업자로서 대기업 수주시장 진입 장벽을 낮출 수 있다는 평가도 있다. 이러한 사업 구조 고도화는 매출총이익률 개선의 근거가 되고 있다.",
-    "en": "Clobot has secured over 130 customers through manufacturer-agnostic autonomous navigation and integrated control software, and is building recurring revenue via a subscription-based RaaS model. If the DLS integration is completed, the company could lower entry barriers into large-corporate procurement markets as a full-stack provider spanning robots, software, and logistics operations. This business-model upgrade underpins the improving gross margin trend."
+    "ko": "DLS 인수로 클로봇은 로봇 관제 소프트웨어(RCS)에 물류센터 설계·구축·운영 역량(WMS·WCS)을 결합한 턴키 솔루션 사업자로 확장을 시도하고 있다. DLS는 물류센터 설계, 자동화 설비 구축, 창고관리시스템(WMS)·창고제어시스템(WCS) 기반 시스템 통합, 물류자동화 프로젝트 수행 역량을 보유한 기업으로 나이키·다이소 등 대형 고객 레퍼런스를 갖고 있다. 회사는 이번 인수를 통해 3년 내 현재 대비 5배 이상의 그룹 매출 성장을 목표로 제시했다.",
+    "en": "The DLS acquisition allows Clobot to expand into a turnkey solutions provider combining robot control software (RCS) with logistics center design, construction, and operation capabilities (WMS/WCS). DLS possesses capabilities in logistics center design, automation facility construction, warehouse management system (WMS) and warehouse control system (WCS)-based system integration, and logistics automation project execution, with large client references including Nike and Daiso. The company has set a target of growing group revenue more than fivefold within three years through this acquisition."
    }
   },
   {
    "title": {
-    "ko": "보스턴다이나믹스 파트너십 기반 산업 현장 확산",
-    "en": "Industrial Expansion via Boston Dynamics Partnership"
+    "ko": "스팟 사업의 산업현장 확장",
+    "en": "Spot Business Expansion into Industrial Sites"
    },
    "body": {
-    "ko": "클로봇은 보스턴다이나믹스 스팟(Spot)의 국내 공식 파트너로서 반도체 공장 등 고위험·고정밀 현장에서 대형 수주를 성사시키고 있다. 회사는 스팟 사업부가 전년 대비 약 70% 성장할 것으로 전망하고 있어, 산업안전 점검 수요 확대에 따른 매출 기여가 기대된다. 국내 최초의 SI 인증 취득은 유지보수·사후관리 역량의 신뢰도를 높이는 요인이다.",
-    "en": "As Boston Dynamics' official domestic partner for Spot, Clobot has secured large-scale contracts in high-risk, high-precision sites such as semiconductor plants. The company projects roughly 70% growth for its Spot business unit year over year, suggesting revenue contribution from expanding industrial safety inspection demand. Being the first partner to obtain SI certification bolsters credibility in maintenance and after-sales capability."
+    "ko": "보스턴 다이내믹스와의 파트너십을 기반으로 스팟(Spot) 사업이 반도체·자동차 등 고위험 산업현장으로 확장되며 새로운 성장축으로 부상하고 있다. 스팟사업실은 최근 국내 반도체 공장을 대상으로 20억원 이상 규모의 대형 계약을 성사시켰다. 회사는 스팟사업실이 2025년 대비 약 70% 성장을 전망하고 있다고 밝혔다.",
+    "en": "Built on the Boston Dynamics partnership, the Spot business is emerging as a new growth pillar as it expands into high-risk industrial sites in the semiconductor and automotive sectors. The Spot business unit recently closed a large contract worth more than 2 billion won with a domestic semiconductor plant. The company stated the Spot business unit is projecting growth of about 70% compared to 2025."
    }
   },
   {
    "title": {
-    "ko": "손익구조 개선 조짐과 매출 성장세",
-    "en": "Signs of Margin Improvement and Revenue Growth"
+    "ko": "매출 성장과 마진 개선 흐름",
+    "en": "Revenue Growth and Margin Improvement Trend"
    },
    "body": {
-    "ko": "2025년 연결 매출은 전년 대비 뚜렷하게 증가했고 영업손실률도 크게 축소됐으며, 2025년 3~4분기에는 연속 영업흑자를 기록했다. 2026년 1분기 매출도 전년 동기 대비 크게 늘어 외형 성장세는 이어지고 있다. 고부가 소프트웨어·관제 매출 비중이 확대되면 향후 수익성 개선의 기반이 될 수 있다.",
-    "en": "Consolidated 2025 revenue rose markedly year over year and the operating loss ratio narrowed substantially, with the company posting consecutive operating profits in Q3 and Q4 2025. Q1 2026 revenue also grew sharply versus the prior year, indicating continued top-line momentum. An expanding mix of high-value-added software and control revenue could form the basis for future profitability improvement."
+    "ko": "연결 매출액은 2023년 242억원에서 2025년 414억원으로 늘었고, 영업이익률은 -23.8%에서 -7.7%로 개선됐다. 2025년 3~4분기에는 두 차례 연속 영업흑자를 냈고, 상반기 매출총이익은 32억9000만원으로 89.6% 늘었고 매출원가율은 80.6%로 5.8%포인트 개선됐다. 회사는 이를 소프트웨어·관제 중심 매출 비중 확대의 결과로 설명한다.",
+    "en": "Consolidated revenue grew from 24.2 billion won in 2023 to 41.4 billion won in 2025, and the operating margin improved from -23.8% to -7.7%. The company posted two consecutive quarters of operating profit in the third and fourth quarters of 2025, and first-half gross profit rose 89.6% to 3.29 billion won, with the cost of revenue ratio improving 5.8 percentage points to 80.6%. The company attributes this to a growing mix of software- and control-centered revenue."
    }
   }
  ],
  "bear": [
   {
    "title": {
-    "ko": "DLS 자본잠식과 인수 리스크",
-    "en": "DLS Capital Impairment and Integration Risk"
+    "ko": "실적 가이던스와의 괴리",
+    "en": "Gap Versus Earnings Guidance"
    },
    "body": {
-    "ko": "DLS는 2025년 매출 658억원을 기록했지만 순손실 550억원에 자본잠식 상태였으며, 인수 규모는 클로봇 총자산의 90%를 넘는 대규모 거래다. 재무 기초가 약한 두 회사의 결합에 따른 통합 비용과 손실 흡수 부담이 상당할 수 있다는 지적이 나온다. 태국 물류센터 공사 사고 관련 부채 대응에도 조달자금 일부가 투입될 예정이어서 추가 비용 변수가 존재한다.",
-    "en": "DLS posted 2025 revenue of KRW 65.8bn but suffered a net loss of KRW 55bn and was capital-impaired, and the acquisition size exceeds 90% of Clobot's total assets. Analysts note the combination of two financially weak entities could carry substantial integration costs and loss-absorption burdens. Part of the raised funds is also earmarked to address liabilities tied to a Thai warehouse construction incident, adding further cost uncertainty."
+    "ko": "상장 당시 제시했던 실적 추정치와 실제 실적 간 괴리가 매년 확대되고 있다. 상장 당시 2025년 예상 매출은 654억원이었으나 실제 매출은 414억원에 불과했고, 올해 1분기 매출은 81억원으로 예측치 대비 63.1% 미달했다. 이는 회사가 제시하는 중장기 목표에 대한 신뢰도를 검증하는 데 있어 참고할 요소다.",
+    "en": "The gap between IPO-era earnings projections and actual results has widened each year. The 2025 revenue estimate at listing was 65.4 billion won, but actual revenue was only 41.4 billion won, and first-quarter 2026 revenue of 8.1 billion won missed the projection by 63.1%. This is a factor to consider when evaluating the credibility of the company's medium- to long-term targets."
    }
   },
   {
    "title": {
-    "ko": "유상증자 흥행 불확실성과 지분 희석",
-    "en": "Rights Offering Uncertainty and Dilution"
+    "ko": "지분 희석과 지배구조 우려",
+    "en": "Equity Dilution and Governance Concerns"
    },
    "body": {
-    "ko": "유상증자 발행가는 주가 하락으로 애초 계획 대비 크게 낮아졌고 조달 규모도 축소됐다. 최대주주의 배정물량 참여율이 낮게 제시된 점, 재무적투자자가 규제 변화로 컨소시엄에서 이탈한 점 등은 흥행과 지배구조 안정성에 대한 우려 요인이다. 신주 발행 비율이 발행주식총수의 20%대에 달해 기존 주주의 지분 희석도 불가피하다.",
-    "en": "The rights offering issue price was cut sharply from the original plan amid share price declines, reducing the total amount raised. Low disclosed participation from the largest shareholder and the withdrawal of a financial investor from the consortium due to regulatory changes raise concerns about subscription success and governance stability. With new shares representing roughly one-fifth of outstanding shares, dilution for existing shareholders is unavoidable."
+    "ko": "2026년 유상증자로 증자 전 발행주식 총수의 21.98%에 해당하는 신주가 발행되며 대규모 지분 희석이 발생했고, 증권신고서 상 유증 후 예상 지분율은 13.02%로 기존 대비 2.52%포인트 하락할 전망이다. 최대주주는 배정 물량의 약 3% 수준만 참여하겠다고 밝혀 시장의 신뢰 문제가 제기됐다.",
+    "en": "The 2026 rights offering resulted in significant dilution, as new shares equal to 21.98% of shares outstanding before the offering were issued, and the projected post-offering ownership stake of the largest shareholder was 13.02%, a 2.52 percentage point decline from before. The largest shareholder indicated participation of only about 3% of the allotted quota, raising market trust concerns."
    }
   },
   {
    "title": {
-    "ko": "실적 가이던스 신뢰도 및 기술 상용화 경쟁",
-    "en": "Guidance Credibility and Technology Commoditization"
+    "ko": "완전자본잠식 상태의 DLS 인수 리스크",
+    "en": "Acquisition Risk from Fully Capital-Impaired DLS"
    },
    "body": {
-    "ko": "상장 당시 제시된 2025년 매출 전망치를 실제 실적이 크게 밑돌았고, 2026년 1분기 매출도 시장 예측치를 상당폭 하회했다는 지적이 있다. 자율주행 핵심 기술인 SLAM과 장애물 회피 기술의 상용화 수준이 높아지며 후발주자와의 기술 격차가 좁혀지고 있다는 우려도 있다. 이런 요인들은 향후 가이던스에 대한 시장 신뢰 회복 과제로 이어진다.",
-    "en": "Actual 2025 revenue fell well short of the forecast presented at listing, and Q1 2026 revenue also reportedly missed market expectations by a wide margin. There are also concerns that the commoditization of core autonomous technologies such as SLAM and obstacle avoidance is narrowing the technology gap with later entrants. These factors leave rebuilding market confidence in future guidance as an ongoing challenge."
+    "ko": "DLS는 지난해 말 자산총계 864억원, 부채총계 1,334억원으로 자본총계가 마이너스 470억원이었고 이익결손금은 1,362억원까지 누적됐으며, 당기순손실은 550억원에 달했다. 완전자본잠식 상태의 회사를 편입한 만큼 통합 과정에서 예상치 못한 비용이 발생할 가능성을 배제할 수 없다.",
+    "en": "DLS had total assets of 86.4 billion won and total liabilities of 133.4 billion won at the end of last year, resulting in negative equity of 47 billion won, with accumulated deficit reaching 136.2 billion won and a net loss of 55 billion won. Given that a fully capital-impaired company has been consolidated, the possibility of unexpected costs arising during integration cannot be ruled out."
    }
   }
  ],
  "risks": [
   {
    "cat": {
-    "ko": "M&A 통합 리스크",
-    "en": "M&A Integration Risk"
+    "ko": "자금조달·공시 리스크",
+    "en": "Funding and Disclosure Risk"
    },
    "body": {
-    "ko": "자본잠식 상태인 DLS를 인수·통합하는 과정에서 예상치 못한 추가 손실이나 우발부채가 드러날 가능성이 있다. 태국 물류센터 공사 사고와 관련한 부채 대응 자금이 이미 조달 계획에 반영돼 있어, 통합 이후 추가 비용 발생 여부를 지속 점검할 필요가 있다.",
-    "en": "There is a risk of unexpected additional losses or contingent liabilities emerging during the acquisition and integration of the capital-impaired DLS. Funds to address liabilities from a Thai warehouse construction incident are already built into the funding plan, warranting ongoing monitoring for further post-integration costs."
+    "ko": "금융감독원은 클로봇의 증권신고서에 대해 '타법인 인수 관련 위험' 등의 보완을 요구하며 정정 명령을 내렸다. 이후 1차 발행가액이 기존 3만6400원에서 2만600원으로 43.4% 하향 조정되며 증자 규모가 당초 2,000억원에서 1,131억8,670만원으로 축소됐다. 이러한 일정·조건 변경 이력은 향후 추가 자금조달 시에도 반복될 수 있는 변수다.",
+    "en": "The Financial Supervisory Service issued a correction order on Clobot's securities registration statement, requesting supplementation of risks related to the acquisition of another company. Subsequently, the primary issue price was lowered 43.4% from 36,400 won to 20,600 won, shrinking the offering size from an initial 200 billion won to 113.19 billion won. This history of schedule and condition changes is a variable that could recur in future capital raises."
    }
   },
   {
    "cat": {
-    "ko": "자본조달 및 지배구조 리스크",
-    "en": "Capital Raising and Governance Risk"
+    "ko": "인수 후 통합(PMI) 리스크",
+    "en": "Post-Merger Integration (PMI) Risk"
    },
    "body": {
-    "ko": "유상증자 발행가가 시장가 하락에 연동되는 구조여서 최종 조달금액이 계획을 밑돌 가능성이 있으며, 부족분은 보유 현금 등으로 충당해야 한다. 최대주주의 낮은 청약 참여율은 향후 지분율 및 지배구조 안정성에 대한 우려를 낳을 수 있다.",
-    "en": "Because the rights offering price is linked to market price declines, final proceeds could fall short of plan, requiring the company to cover shortfalls with cash on hand. The largest shareholder's low subscription participation could raise concerns about future ownership concentration and governance stability."
+    "ko": "회사는 DLS의 기존 사업 연속성과 조직 안정화를 최우선 과제로 두고 무리한 조직 개편보다 고객 프로젝트와 핵심 인력, 파트너십을 안정적으로 유지하는 데 집중할 계획이라고 밝혔으나, 대형 고객·인력 이탈이 발생하면 기대했던 시너지가 지연될 수 있다. 소송 관련 비용 등 우발채무가 확정되지 않은 부분도 남아 있다.",
+    "en": "The company stated that it will prioritize business continuity and organizational stability at DLS, focusing on maintaining client projects, key personnel, and partnerships rather than pursuing abrupt organizational changes, but if key clients or personnel depart, expected synergies could be delayed. Contingent liabilities such as litigation-related costs also remain unresolved."
    }
   },
   {
    "cat": {
-    "ko": "기술 경쟁 및 수요 변동 리스크",
-    "en": "Technology Competition and Demand Volatility Risk"
+    "ko": "기술 경쟁 및 수요 둔화 리스크",
+    "en": "Technology Competition and Demand Slowdown Risk"
    },
    "body": {
-    "ko": "자율주행 핵심 기술의 보편화로 경쟁이 심화될 수 있으며, 거시경제 불확실성에 따라 고객사의 로봇 도입 의사결정이 지연될 가능성이 있다. 산업용 로봇·자동화 부품 공급사 및 대형 로봇 기업과의 경쟁도 지속적인 변수다.",
-    "en": "Increasing commoditization of core autonomous technologies could intensify competition, while macroeconomic uncertainty may delay customers' robot adoption decisions. Competition from industrial robot and automation component suppliers as well as larger robotics companies remains an ongoing variable."
+    "ko": "자율주행 핵심인 SLAM과 장애물 회피 기술은 이미 상당 수준 보편화돼 있어 기술격차가 크지 않은 동시에, 거시경제 불확실성으로 주요 고객사들이 로봇 서비스를 내재화하거나 의사결정을 연기하면서 매출 기회가 줄고 있다. 이는 신규 수주의 전환 속도와 규모에 부정적으로 작용할 수 있는 요인이다.",
+    "en": "Core autonomous driving technologies such as SLAM and obstacle avoidance have already become largely commoditized with limited technology gaps, while macroeconomic uncertainty has led major clients to internalize robot services or delay decisions, reducing revenue opportunities. This could negatively affect the speed and scale at which new orders convert into revenue."
    }
   }
  ],
  "checkpoints": [
   {
    "when": {
-    "ko": "2026년 8월 19~20일",
-    "en": "August 19-20, 2026"
+    "ko": "2026년 11월 중순경",
+    "en": "Mid-November 2026"
    },
    "what": {
-    "ko": "유상증자 실권주 일반공모 청약 결과 확인 — 최종 조달금액과 실권 규모가 DLS 인수 후 운영자금 여력을 좌우한다.",
-    "en": "Check the results of the general public subscription for forfeited shares in the rights offering — the final proceeds and forfeiture size will determine post-acquisition working capital capacity."
+    "ko": "3분기 실적 발표를 통해 영업손익 스윙(흑자·적자 교차)이 지속되는지, DLS 부분 편입 효과가 초기 반영되는지 확인해야 한다.",
+    "en": "The third-quarter earnings release should be checked to see whether the operating profit-loss swing continues and whether the partial DLS consolidation effect begins to show up."
    }
   },
   {
    "when": {
-    "ko": "2026년 8월 24일",
-    "en": "August 24, 2026"
+    "ko": "2027년 2월 중순경",
+    "en": "Mid-February 2027"
    },
    "what": {
-    "ko": "유상증자 납입일 — 실제 조달자금 규모가 확정되는 시점으로, DLS 인수 자금 조달 계획의 이행 여부를 확인할 수 있다.",
-    "en": "Rights offering payment date — confirms the actual amount raised, allowing verification of whether the DLS acquisition funding plan is executed as planned."
+    "ko": "2026년 4분기 및 연간 실적 발표에서 DLS가 처음 온전히 연결 반영되는 규모와, 회사가 예고한 2027년 시너지 가시화 여부를 확인해야 한다.",
+    "en": "The fourth-quarter and full-year 2026 earnings release should be checked for the scale of DLS's first full consolidation and whether the synergies the company flagged for 2027 begin to materialize."
    }
   },
   {
    "when": {
-    "ko": "2026년 9월 초",
-    "en": "Early September 2026"
+    "ko": "2026년 4분기 중",
+    "en": "Fourth quarter of 2026"
    },
    "what": {
-    "ko": "유상증자 신주 상장 — 발행주식총수 증가에 따른 지분 희석 효과가 반영되는 시점이다.",
-    "en": "Listing of new shares from the rights offering — the point at which dilution from the increased share count is reflected."
+    "ko": "DLS 대상으로 예정된 308억원 규모 제3자배정 유상증자의 진행 여부와 추가 지분 희석 규모를 확인해야 한다.",
+    "en": "It should be confirmed whether the planned 30.8 billion won third-party placement targeting DLS proceeds and how much additional equity dilution results."
    }
   },
   {
    "when": {
-    "ko": "2026년 9월 30일",
-    "en": "September 30, 2026"
+    "ko": "2026년 하반기~2027년 초",
+    "en": "Second half of 2026 through early 2027"
    },
    "what": {
-    "ko": "DLS 지분 인수 거래 종결(양수) 목표일 — 예정대로 종결되는지, 조건 변경이 있는지 확인이 필요하다.",
-    "en": "Target closing date for the DLS acquisition — verify whether the deal closes as scheduled or terms are revised."
-   }
-  },
-  {
-   "when": {
-    "ko": "2026년 3분기 실적 발표(11월경)",
-    "en": "Q3 2026 earnings release (around November)"
-   },
-   "what": {
-    "ko": "DLS 연결 편입 이후 첫 분기 실적으로, 매출 규모 확대와 함께 통합 비용이 수익성에 미치는 영향을 확인할 수 있다.",
-    "en": "The first quarterly results after DLS consolidation, allowing assessment of both revenue expansion and the impact of integration costs on profitability."
+    "ko": "스팟사업실의 2025년 대비 약 70% 성장 목표 달성 여부와 클로봇 아메리카를 통한 북미 매출 가시화 진행 상황을 점검해야 한다.",
+    "en": "Progress toward the Spot business unit's roughly 70% growth target versus 2025 and the emergence of North American revenue through Clobot America should be monitored."
    }
   }
  ],
  "verdict": {
   "body": {
-   "ko": "클로봇은 로봇 소프트웨어 기업으로서 매출 성장과 손익 개선 신호를 함께 보여주고 있으며, 보스턴다이나믹스 파트너십을 통한 산업 현장 수주 확대도 긍정적 요인이다. 그러나 2026년 1분기 실적이 재차 적자로 돌아선 점, 대규모 유상증자에 따른 지분 희석, 자본잠식 상태인 DLS 인수에 수반되는 통합 리스크는 균형 있게 살펴봐야 할 약세 요인이다. 상장 당시 제시된 실적 전망치를 크게 밑돈 이력은 향후 가이던스에 대한 신뢰 회복 과제를 남긴다. 8월 중 진행되는 유상증자 청약 결과와 9월 말 DLS 거래 종결 여부, 이후 분기 실적에서 통합 효과가 어떻게 나타나는지가 회사의 사업 구조 전환 성패를 가늠하는 핵심 변수가 될 것으로 보인다. 투자 판단에 있어서는 성장성과 재무 부담 확대 가능성을 함께 고려한 균형 잡힌 접근이 필요하다.",
-   "en": "As a robot software company, Clobot is showing both revenue growth and signs of margin improvement, with expanding industrial contract wins through its Boston Dynamics partnership serving as a positive factor. However, the return to an operating loss in Q1 2026, dilution from the large rights offering, and integration risk tied to acquiring the capital-impaired DLS are bearish factors that warrant balanced consideration. A track record of results falling well short of guidance presented at listing leaves rebuilding market confidence as an ongoing challenge. How the rights offering subscription unfolds in August, whether the DLS deal closes as planned by end-September, and how integration effects show up in subsequent quarterly results will be key variables in assessing the success of the company's business-model transition. A balanced view weighing growth potential against the possibility of rising financial burden is warranted."
+   "ko": "클로봇은 로봇 관제 소프트웨어 중심 사업에서 DLS 인수를 계기로 물류 자동화 통합 플랫폼 기업으로의 전환을 시도하고 있으며, 스팟 사업의 산업현장 확장도 새로운 성장축으로 부각되고 있다. 연간 매출은 3년 연속 늘었고 영업이익률도 개선되는 흐름을 보였으나, 2025년 3~4분기의 영업흑자는 2026년 1~2분기 다시 적자로 돌아서며 이익 안정성이 아직 확립되지 않았다. 대규모 유상증자는 청약률 2,703%로 흥행했지만 발행가 하향 조정과 금융당국의 정정 요구, 최대주주의 저조한 참여율 등 과정상 잡음이 있었고, 발행주식 수 확대에 따른 희석은 불가피하다. DLS는 완전자본잠식 상태에서 편입돼 인수 후 통합 과정의 비용·리스크 관리가 중요한 과제로 남아 있으며, 회사가 밝힌 시너지 가시화 시점(2027~2028년)까지는 시간이 필요하다. 상장 당시 추정치와 실제 실적 간 괴리가 매년 커지고 있다는 점은 향후 가이던스의 신뢰도를 평가하는 데 있어 함께 살펴봐야 할 요소다. 결국 이 종목은 물류 SI 편입이라는 사업 확장과, 적자 지속·지분 희석·인수 리스크라는 재무적 부담이 동시에 존재하는 전환기에 있다.",
+   "en": "Clobot is attempting to transition from a robot control software-centered business into an integrated logistics automation platform company through its DLS acquisition, while the Spot business's expansion into industrial sites is emerging as an additional growth pillar. Annual revenue has grown for three consecutive years and operating margins have improved, but the operating profits recorded in the third and fourth quarters of 2025 reverted to losses in the first and second quarters of 2026, indicating that earnings stability has not yet been established. The large rights offering drew a 2,703% subscription rate, but the process involved a lowered issue price, a correction order from financial regulators, and low participation from the largest shareholder, and dilution from the expanded share count is unavoidable. DLS was consolidated while in a state of complete capital impairment, leaving cost and risk management during post-merger integration as an important task, and time will be needed before the synergies the company has flagged for 2027-2028 materialize. The widening gap each year between IPO-era projections and actual results is another factor to weigh when assessing the credibility of future guidance. Ultimately, this stock sits at a transition point where business expansion through logistics SI consolidation coexists with financial burdens from continued losses, equity dilution, and acquisition risk."
   }
  },
  "sources": [
-  "https://www.irobotnews.com/news/articleView.html?idxno=43274",
+  "https://www.edaily.co.kr/News/Read?newsId=06405846645547320",
   "https://www.irobotnews.com/news/articleView.html?idxno=46592",
-  "https://m.thinkpool.com/compDiscuss/cont/1023443",
-  "https://www.thelec.kr/news/articleView.html?idxno=56222",
-  "https://www.aseanexpress.co.kr/news/article.html?no=12855",
-  "https://thevc.kr/clobot",
-  "https://www.irobotnews.com/news/articleView.html?idxno=47933",
-  "https://www.datatooza.com/article/20251215082234453852ef345a51_80",
-  "https://www.fntimes.com/html/view.php?ud=20260619135305955a837df6494_18",
-  "https://v.daum.net/v/20260604060116265?f=p",
-  "https://www.bloter.net/news/articleView.html?idxno=670711",
   "https://alphasquare.co.kr/home/stock-summary?code=466100",
-  "https://www.investing.com/equities/clobot",
-  "https://comp.fnguide.com/SVO2/ASP/SVD_Main.asp?gicode=A466100",
   "https://v.daum.net/v/20260515160017791",
-  "https://www.investing.com/equities/clobot-earnings",
   "https://news.jkn.co.kr/post/859815",
-  "https://stocks.pluconnect.com/466100_%ED%81%B4%EB%A1%9C%EB%B4%87/"
+  "https://www.investing.com/equities/clobot-earnings",
+  "https://www.tossinvest.com/stocks/A466100/order",
+  "https://stocks.pluconnect.com/466100_%ED%81%B4%EB%A1%9C%EB%B4%87/",
+  "https://m.thinkpool.com/compDiscuss/cont/1022880",
+  "https://comp.fnguide.com/SVO2/ASP/SVD_Main.asp?gicode=A466100",
+  "https://m.irgo.co.kr/IR-COMP/466100/%ED%81%B4%EB%A1%9C%EB%B4%87-%EA%B8%B0%EC%97%85%EC%A0%95%EB%B3%B4",
+  "https://kind.krx.co.kr/common/disclsviewer.do?method=search&acptno=20260320000501&rcpno=20260320000430&orgid=F&tran=Y&langTpCd=0",
+  "https://thevc.kr/clobot",
+  "https://www.38.co.kr/html/forum/board/?code=466100",
+  "https://dartpoint.ai/01784914",
+  "https://m.thinkpool.com/stockDiscuss/437730/cont/11868746",
+  "https://www.investing.com/equities/clobot",
+  "https://www.irobotnews.com/news/articleView.html?idxno=48226"
  ],
  "v": 2,
  "model": "claude-sonnet-5",
@@ -234,11 +224,11 @@
   "로봇"
  ],
  "market": "코스닥",
- "reportDate": "2026-08-15",
- "reportTs": "2026-08-15 18:20",
- "dataDate": "20260821",
+ "reportDate": "2026-09-05",
+ "reportTs": "2026-09-05 05:51",
+ "dataDate": "20260904",
  "quant": {
-  "asOf": "2026-08-21",
+  "asOf": "2026-09-04",
   "fs_basis": "연결(CFS) · DART 공시 확정치 · 지배주주 기준 순이익",
   "annual": [
    {
@@ -249,6 +239,7 @@
     "np_owner": null,
     "equity": 60444194628,
     "equity_owner": 60352146198,
+    "equity_nci": 92048430,
     "liab": 12597402013,
     "cfo": -2901172959,
     "eps_basic": -87,
@@ -264,12 +255,30 @@
     "np_owner": -6729151697,
     "equity": 59967623220,
     "equity_owner": 59908627710,
+    "equity_nci": 58995510,
     "liab": 9543311601,
     "cfo": -7518329810,
     "eps_basic": -313,
     "opm": -22.4,
     "roe": -11.2,
     "debt_ratio": 15.9
+   },
+   {
+    "year": 2023,
+    "rev": 24204059619,
+    "op": -5764984704,
+    "np": -22447934383,
+    "np_owner": -22447934383,
+    "equity": 26118892162,
+    "equity_owner": 25749290380,
+    "equity_nci": 369601782,
+    "liab": 8475722329,
+    "cfo": -3582888492,
+    "eps_basic": -22286,
+    "src": "전기 비교치",
+    "opm": -23.8,
+    "roe": -87.2,
+    "debt_ratio": 32.5
    }
   ],
   "quarterly": [
@@ -305,23 +314,29 @@
    }
   ],
   "valuation": {
-   "price": 27300,
-   "mcap": 0.695,
+   "price": 24650,
+   "mcap": 0.6276,
    "shares": 25459239,
    "total_shares": 24992139,
    "wavg_shares": null,
    "per": null,
    "eps": -104,
-   "pbr": 11.86,
-   "bps": 2301,
+   "pbr": 10.7081,
+   "bps": 2302,
    "roe_ttm": -4.5,
-   "ttm_window": "2025Q3~2026Q2",
+   "ttm_window": null,
    "ttm_np_owner": -2599182456,
-   "pbr_krx": 11.87,
+   "ccy": "KRW",
+   "bps_src": "자체",
+   "eps_src": "공시",
+   "pbr_krx": 10.78,
    "bps_krx": 2287.0,
    "basis": "PER·EPS·PBR·BPS 모두 자체 산출(네이버·토스와 동일 방식) · 배당은 DART 공시 주당현금배당금(보완:KRX) ÷ 현재가",
    "dps": 0.0,
-   "div": 0.0
+   "div": 0.0,
+   "hidden": {
+    "per": "loss"
+   }
   }
  }
 }

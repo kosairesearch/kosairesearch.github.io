@@ -1,227 +1,217 @@
 {
  "title": {
-  "ko": "2나노 수주 기대, 수익성 시험대",
-  "en": "2nm Order Hopes Face a Profitability Test"
+  "ko": "적자 확대 후 2나노 양산이 관전 포인트",
+  "en": "After Wider Losses, 2nm Ramp-Up Is the Key Watch Point"
  },
  "lead": {
-  "ko": "가온칩스는 2025년 매출 감소와 영업손실 전환을 겪었고 2026년 1분기에도 적자가 이어지는 가운데, 삼성 파운드리 2나노 AI칩 프로젝트의 매출 전환 시점이 다음 국면을 좌우할 변수로 떠올랐다.",
-  "en": "Gaonchips slid into an operating loss in 2025 and remained in the red in Q1 2026, leaving the timing of revenue recognition from its Samsung Foundry 2nm AI-chip project as the key variable for the next phase."
+  "ko": "가온칩스는 2025년 대형 프로젝트 인력 집중과 매출 인식 지연으로 상장 후 최대 적자를 냈지만, 2025년 4분기와 2026년 2분기 두 차례 소폭 흑자를 기록하며 2나노 프로젝트의 양산 전환 여부가 향후 실적의 관건으로 떠올랐다.",
+  "en": "Gaonchips posted its largest loss since listing in 2025 due to concentrated manpower on large projects and delayed revenue recognition, but returned to small operating profit twice—in the fourth quarter of 2025 and the second quarter of 2026—making the transition of its 2nm projects into mass production the key variable for future earnings."
  },
  "keypoints": [
   {
-   "ko": "2025년 연결 매출 685억원(전년 대비 -29.0%), 영업손실 167억원으로 2022년 이후 첫 적자전환",
-   "en": "2025 consolidated revenue fell 29.0% YoY to KRW 68.5bn, with an operating loss of KRW 16.7bn — the first annual loss since 2022"
+   "ko": "2025년 연간 매출 685억원(-29% 감소), 영업손실 167억원으로 상장 이후 가장 부진한 연간 실적을 기록했다.",
+   "en": "2025 annual revenue fell 29% to KRW 68.5 billion, with an operating loss of KRW 16.7 billion, the weakest annual result since listing."
   },
   {
-   "ko": "2025년 4분기 매출 331억원·영업이익 17억원으로 분기 기준 흑자전환했으나 2026년 1분기 다시 영업손실 39억원 기록",
-   "en": "Q4 2025 swung to a KRW 1.7bn operating profit on KRW 33.1bn revenue, but Q1 2026 reverted to a KRW 3.9bn operating loss"
+   "ko": "2025년 4분기와 2026년 2분기에 각각 소폭 영업이익을 내며 두 차례 흑자 전환이 확인됐다.",
+   "en": "The company returned to small operating profit twice, in the fourth quarter of 2025 and the second quarter of 2026."
   },
   {
-   "ko": "부채비율이 1년 만에 62.5%에서 191.3%로 급등, 무이자 전환사채(CB) 전환청구가 진행 중이어 잠재 물량 부담",
-   "en": "Debt ratio jumped from 62.5% to 191.3% in a year, and ongoing conversion of a zero-coupon CB adds potential share-supply pressure"
+   "ko": "일본 프리퍼드 네트웍스(PFN), 국내 팹리스 딥엑스 등과 진행 중인 2나노 프로젝트가 시제품 단계로 넘어갔다.",
+   "en": "2nm projects with Japan's Preferred Networks (PFN) and domestic fabless firm DeepX have advanced to the prototype stage."
   },
   {
-   "ko": "삼성 파운드리 SAFE-DSP 지위를 기반으로 2나노 AI칩 설계 과제를 수주, 2026년 상반기 테이프아웃을 목표로 진행 중",
-   "en": "Leveraging its Samsung Foundry SAFE-DSP status, the company is targeting a 2nm AI-chip tape-out in H1 2026"
+   "ko": "부채비율이 2024년 62.5%에서 2025년 191.3%로 급등해 재무 부담이 커졌다.",
+   "en": "The debt ratio surged from 62.5% in 2024 to 191.3% in 2025, increasing financial strain."
   },
   {
-   "ko": "현재 순자산가치 대비 주가 프리미엄이 큰 구간에 놓여 있어, 실적 회복 속도와 밸류에이션 간 괴리가 관찰 포인트",
-   "en": "The stock trades at a large premium to book value, making the gap between the pace of earnings recovery and valuation a key point to watch"
+   "ko": "일본·미국에 이어 2026년 2월 중국 상하이 법인을 설립하며 해외 거점을 3개로 확대했다.",
+   "en": "Following Japan and the United States, the company established a Shanghai subsidiary in February 2026, expanding to three overseas bases."
   }
  ],
  "business": {
-  "ko": "가온칩스는 2012년 설립된 시스템 반도체 개발 전문기업으로, 삼성 파운드리의 디자인 솔루션 파트너(SAFE-DSP)이자 Arm의 디자인 파트너(AADP) 자격을 보유하고 있다. 팹리스가 그린 설계도를 파운드리 공정에 맞춰 구현하는 디자인하우스로서, 기획·설계·디자인·생산·테스트·공급까지 아우르는 원스톱 턴키 솔루션을 제공한다. 국내에서는 삼성 파운드리 DSP 5개사 중 하나로 자리매김했으며, 텔레칩스·넥스트칩·아나패스·아이닉스·매크로영상기술 등 국내 팹리스와 오랜 파트너십을 구축해왔다. 해외에서는 일본 프리퍼드 네트웍스(PFN)의 2나노 AI 가속기 턴키 수주, 토요타그룹 계열 토멘디바이스와의 MOU 등으로 고객 저변을 넓히고 있으며, 미국 실리콘밸리에도 법인을 설립해 글로벌 마케팅을 강화하고 있다. 사업 영역은 AI/HPC용 반도체와 차량용 시스템반도체 두 축으로 구성돼 있어 특정 전방산업 의존도를 낮추는 구조다. 최근에는 단순 설계 용역 매출에서 벗어나, 개발 완료 후 파운드리 생산분을 직접 공급하는 제품 매출 비중을 확대하는 방향으로 사업모델을 전환 중이다. 전체 인력의 86%가 연구개발·기술 인력으로 구성돼 고급 엔지니어 확보와 설계 인프라(서버·에뮬레이터 등) 투자가 지속적으로 요구되는 구조다. 국내 경쟁 구도로는 세미파이브 등 복수의 디자인하우스가 삼성 파운드리 생태계 안에서 경쁘하고 있다.",
-  "en": "Founded in 2012, Gaonchips is a system-semiconductor design specialist that holds status as a Samsung Foundry Design Solution Partner (SAFE-DSP) and an Arm Approved Design Partner (AADP). As a design house that translates fabless companies' chip designs into foundry-ready implementations, it offers a one-stop turnkey solution spanning planning, design, production, testing and supply. Domestically it is one of five Samsung Foundry DSP firms, having built long-standing partnerships with local fabless companies including Telechips, Nextchip, Anapass, Ainix, and Macro Image Technology. Overseas, it has expanded its customer base through a turnkey win for Japan's Preferred Networks' 2nm AI accelerator and an MOU with Toyota Tsusho Group's Tomen Device unit, while also setting up a U.S. subsidiary in Silicon Valley to bolster global marketing. Its business spans two tracks — AI/HPC semiconductors and automotive system semiconductors — reducing dependence on any single end market. More recently, the company has been shifting its model from pure design-service revenue toward product revenue, supplying post-development foundry output directly to customers. About 86% of its workforce is R&D and technical staff, requiring continuous investment in senior engineers and design infrastructure such as servers and emulators. Domestically, it competes with other design houses such as SemiFive within the broader Samsung Foundry ecosystem."
+  "ko": "가온칩스는 2012년 설립된 반도체 디자인하우스로, 삼성전자 파운드리의 공식 디자인솔루션파트너(DSP)다. 팹리스 고객사의 칩 설계를 삼성 공정에 최적화해 실제 양산 가능한 형태로 구현하는 역할을 맡고 있다. 단순 설계 용역이 아닌 RTL 설계부터 검증, 패키징, 테스트, 양산까지 포함하는 턴키 프로젝트 수행 역량을 보유한 것이 특징이다. 매출 비중은 2024년 3분기 기준 AI·HPC(고성능 컴퓨팅) 부문이 60%, 오토모티브(차량용) 반도체가 21%를 차지했다. 미세 공정 쪽에서는 3나노 이하 제품의 매출 비중이 2023년 0%에서 2024년 약 25%로, 5나노 이하 비중은 11%에서 52%로 늘었다. 차량용 분야에서는 텔레칩스·LX세미콘·넥스트칩 등과 협업하고 있으며, AI 반도체 분야에서는 일본 프리퍼드 네트웍스(PFN)와 국내 팹리스 딥엑스 등을 상대로 2나노 프로젝트를 진행 중이다. 국내에서는 에이디테크놀로지·세미파이브·코아시아 등이, 해외에서는 TSMC 밸류체인얼라이언스(VCA) 소속 에이직랜드·알파웨이브 등이 경쟁 구도를 형성하고 있다. 이처럼 가온칩스는 차량용과 AI/HPC 양쪽에 걸친 포트폴리오와 선단공정 레퍼런스를 동시에 확보해 나가는 단계에 있다.",
+  "en": "Founded in 2012, Gaonchips is a semiconductor design house and an official Design Solution Partner (DSP) of Samsung Foundry. Its role is to optimize fabless customers' chip designs for Samsung's process nodes and turn them into mass-producible chips. Rather than simple design outsourcing, the company offers turnkey project capabilities spanning RTL design, verification, packaging, testing, and mass production. As of the third quarter of 2024, revenue mix was weighted toward AI/HPC (high-performance computing) at 60% and automotive semiconductors at 21%. On process technology, revenue from sub-3nm products rose from 0% in 2023 to about 25% in 2024, while sub-5nm revenue rose from 11% to 52% over the same period. In automotive, the company collaborates with Telechips, LX Semicon, and Nextchip, while in AI semiconductors it is running 2nm projects with Japan's Preferred Networks (PFN) and domestic fabless firm DeepX. Domestically, competitors include ADTechnology, SemiFive, and COASIA, while overseas, Alchip and Alphawave belong to TSMC's Value Chain Alliance (VCA). Gaonchips is thus in the process of building both a dual automotive/AI-HPC portfolio and leading-edge process references."
  },
  "earnings": {
-  "ko": "가온칩스는 2022년부터 2024년까지 매출과 영업이익이 꾸준히 늘며 성장세를 이어왔으나, 2025년에는 매출 685억원(전년 965억원 대비 -29.0%), 영업손실 167억원(영업이익률 -24.4%), 지배주주 순손실 144억원(EPS -1,239원)을 기록하며 적자로 전환했다. 2024년 매출 965억원·영업이익 35억원·순이익 75억원, 2023년 매출 636억원·영업이익 44억원·순이익 63억원과 비교하면 2025년의 실적 훼손이 뚜렷하다. 분기별로 보면 2025년 1~3분기 연속 영업손실(각각 -64억원, -47억원, -73억원)을 기록한 뒤 4분기에는 매출 331억원, 영업이익 17억원으로 흑자전환했는데, 이는 지연됐던 대형 개발과제의 진행률 인식이 4분기에 몰린 결과로 해석된다. 그러나 2026년 1분기에는 매출 206억원에 영업손실 39억원, 순손실 15억원을 다시 기록해 수익성 회복이 아직 안정적으로 정착하지 못했음을 보여준다. 실적 훼손의 핵심 배경은 대형 2나노 AI칩 개발 과제로, 240여 명의 엔지니어 중 과반이 투입되며 매출 인식보다 비용이 먼저 반영되는 구조가 나타났다. 연구개발비도 2023년 23억원에서 2024년 32억원, 2025년 36억원으로 늘며 매출 대비 비중이 5.2%까지 높아졌다. 아울러 CB 관련 이자비용과 파생상품 평가손실 등 비영업적 요인도 순손실 확대에 일부 기여한 것으로 파악된다. 2025년 말 기준 지배주주지분은 547억원으로 전년(694억원) 대비 21.1% 줄었고, 부채총계는 1,046억원으로 241% 증가하며 부채비율이 62.5%에서 191.3%로 뛰었다.",
-  "en": "Gaonchips grew steadily from 2022 through 2024, but in 2025 revenue fell 29.0% YoY to KRW 68.5bn, the operating margin turned to -24.4% (an operating loss of KRW 16.7bn), and net loss attributable to owners reached KRW 14.4bn (EPS of -KRW 1,239) — a swing into losses. This contrasts sharply with 2024 (revenue KRW 96.5bn, operating profit KRW 3.5bn, net profit KRW 7.5bn) and 2023 (revenue KRW 63.6bn, operating profit KRW 4.4bn, net profit KRW 6.3bn). Quarterly, operating losses persisted through Q1–Q3 2025 (-KRW 6.4bn, -KRW 4.7bn, and -KRW 7.3bn respectively) before Q4 swung to an operating profit of KRW 1.7bn on revenue of KRW 33.1bn, a pattern consistent with delayed development-project progress being recognized in bulk in the fourth quarter. Yet Q1 2026 again posted an operating loss of KRW 3.9bn and a net loss of KRW 1.5bn on revenue of KRW 20.6bn, indicating that a durable profitability recovery has not yet taken hold. The core driver of the deterioration was a large-scale 2nm AI-chip development project that absorbed more than half of the roughly 240-person engineering staff, causing costs to be recognized ahead of revenue. R&D spending rose from KRW 2.3bn in 2023 to KRW 3.2bn in 2024 and KRW 3.6bn in 2025, lifting its share of revenue to 5.2%. Non-operating factors such as CB-related interest expense and derivative valuation losses also appear to have contributed to the widened net loss. Owners' equity fell 21.1% YoY to KRW 54.7bn at year-end 2025, while total liabilities surged 241% to KRW 104.6bn, pushing the debt ratio from 62.5% to 191.3%."
+  "ko": "가온칩스의 2025년 연결 매출액은 685억 100만원으로 2024년 964억 9200만원 대비 크게 줄었고, 영업손실은 167억 2100만원으로 상장 후 최대 규모의 적자를 기록했다. 지배주주순손실도 143억 6900만원에 달해 2024년 순이익 75억 3000만원에서 완전한 적자 전환이 이뤄졌다. 영업이익률은 -24.4%까지 낮아졌는데, 2022~2024년 각각 9.0%, 6.8%, 3.7%로 점진적으로 낮아지던 흐름이 한 단계 더 악화된 결과다. 부채비율도 2024년 62.5%에서 2025년 191.3%로 급등했고, 영업활동현금흐름은 -8억 4900만원으로 2024년 108억 400만원에서 마이너스로 돌아섰다. 분기별로 보면 2025년 2분기(-47억 3000만원)와 3분기(-72억 7700만원) 영업손실이 연속으로 확대됐다가, 4분기 매출이 331억원으로 급증하며 영업이익 17억 1200만원, 순이익 13억 2900만원으로 흑자 전환했다. 그러나 2026년 1분기에는 매출 205억 7000만원에도 영업손실 39억 600만원을 기록하며 다시 적자로 돌아섰고, 2분기에는 매출 213억 1000만원, 영업이익 3억 2800만원, 순이익 7억 2900만원으로 소폭 흑자를 냈다. 회사 측은 이러한 실적 변동을 선단공정 프로젝트와 대형 개발 과제에 핵심 인력이 집중 투입되면서 일부 일정이 지연된 영향으로 설명하고 있다. 결과적으로 최근 네 개 분기(2025년 3분기~2026년 2분기) 누적으로도 지배주주순손실 상태를 벗어나지 못한 상황이다.",
+  "en": "Gaonchips' 2025 consolidated revenue fell sharply to KRW 68.5 billion from KRW 96.5 billion in 2024, and the operating loss reached KRW 16.7 billion, the largest since listing. Net loss attributable to owners also totaled KRW 14.4 billion, a complete reversal from the KRW 7.5 billion net profit recorded in 2024. The operating margin dropped to -24.4%, worsening further from a gradual decline seen in 2022-2024 (9.0%, 6.8%, and 3.7%, respectively). The debt ratio also jumped from 62.5% in 2024 to 191.3% in 2025, and operating cash flow turned negative at KRW -0.8 billion, reversing from KRW 10.8 billion in 2024. On a quarterly basis, operating losses widened consecutively in the second quarter of 2025 (KRW -4.7 billion) and third quarter (KRW -7.3 billion), before revenue surged to KRW 33.1 billion in the fourth quarter, delivering an operating profit of KRW 1.7 billion and net profit of KRW 1.3 billion. However, the first quarter of 2026 slipped back into loss with an operating loss of KRW 3.9 billion despite revenue of KRW 20.6 billion, before the second quarter posted a small operating profit of KRW 0.3 billion and net profit of KRW 0.7 billion on revenue of KRW 21.3 billion. The company attributes this volatility to key personnel being concentrated on leading-edge process projects and large development tasks, which delayed some schedules. As a result, the company remained in a net loss position attributable to owners even on a trailing four-quarter basis (Q3 2025-Q2 2026)."
  },
  "industry": {
-  "ko": "글로벌 빅테크들이 자체적으로 반도체 칩을 개발·설계하는 사례가 늘면서 이런 설계를 조율해줄 반도체 디자인하우스의 역할이 중요해지고 있다. 국내 완성차 업체가 5나노 공정으로 ADAS용 차량용 반도체를 직접 개발하기로 결정하고 국내 IT 업체들의 NPU 개발이 확대되는 등, 국내 디자인하우스 전반에 우호적인 환경이 조성되고 있다. 가온칩스는 국내 삼성 파운드리 DSP 5개사 중 한 곳으로, 삼성전자의 2나노 GAA(게이트올어라운드) 공정 램프업과 궤를 같이하는 포지션에 있다. 삼성전자는 삼성 파운드리 포럼·SAFE 포럼 등에서 파운드리·메모리·패키지를 묶은 '원스톱' 턴키 솔루션 전략을 강조해왔고, 가온칩스와의 협력으로 일본 PFN의 2나노 AI 가속기 턴키 수주 사례를 공개한 바 있다. 다만 파운드리 고객 확보 여부에 실적이 연동되는 구조여서, 삼성 파운드리가 선단공정 고객을 확보하지 못하면 가온칩스도 함께 타격받을 수 있다. 국내에는 세미파이브 등 유사한 사업모델의 경쟁 디자인하우스가 존재해 대형 과제 수주 경쟁이 이어지고 있다. AI 데이터센터 투자와 자율주행·전기차 수요가 디자인하우스 수주의 주요 변수로 작용하는 구조라, 전방산업 사이클에 따라 개별사 실적 변동성이 커질 수 있다.",
-  "en": "As global big-tech firms increasingly design their own chips in-house, the role of semiconductor design houses that coordinate such designs with foundries has grown more important. Favorable conditions are building for domestic design houses as local automakers commit to directly developing 5nm ADAS automotive chips and domestic IT firms expand NPU development. Gaonchips, one of five domestic Samsung Foundry DSP firms, is positioned in step with Samsung's 2nm GAA process ramp-up. Samsung has emphasized a \"one-stop\" turnkey strategy combining foundry, memory and packaging at its Foundry and SAFE forums, and has publicized a collaboration with Gaonchips on a turnkey win for Japan's PFN 2nm AI accelerator. However, because results are tied to whether Samsung Foundry secures leading-edge customers, Gaonchips could be hurt if Samsung loses ground in advanced nodes. Domestically, competing design houses with similar business models, such as SemiFive, continue to compete for large-scale project wins. Because AI data-center investment and autonomous-driving/EV demand are the key swing factors behind design-house order flow, individual companies' results can be volatile depending on the end-market cycle."
+  "ko": "삼성전자 파운드리는 2나노 GAA(Gate-All-Around) 공정 확대에 속도를 내고 있으며, 최근 테슬라의 차세대 AI 반도체 'AI5'가 테이프아웃을 완료해 미국 텍사스 테일러 공장에서 2나노 공정 가동을 준비하고 있다. 테슬라는 삼성전자와 약 22조 7000억원 규모의 반도체 공급 계약을 체결한 바 있어, 이러한 대형 고객 확보는 삼성 파운드리 생태계 전반의 수주 확대로 이어질 잠재력이 있다. 선단공정 수요가 늘어날수록 팹리스와 파운드리를 잇는 디자인솔루션파트너(DSP)의 역할이 커지는데, 가온칩스는 국내 삼성 파운드리 DSP 가운데 2나노 프로젝트에 참여하고 있는 업체 중 하나다. 다만 국내에는 에이디테크놀로지·세미파이브·코아시아 등 경쟁 DSP가 있고, TSMC 밸류체인에는 에이직랜드·알파웨이브 등이 자리하고 있어 경쟁 구도가 만만치 않다. 반도체 설계 하우스 업계는 EUV 노광 공정과 하이엔드 설계 노하우가 요구되는 초미세 공정으로 이동하면서, 소수 업체만이 선단공정 레퍼런스를 확보할 수 있는 구조로 재편되고 있다. AI 가속기와 자율주행 차량용 반도체 수요가 동시에 늘어나는 국면에서, 두 영역을 모두 커버하는 디자인하우스는 상대적으로 유리한 위치에 있을 수 있으나 검증 절차가 길고 리스크가 크다는 점도 함께 고려할 부분이다.",
+  "en": "Samsung Foundry is accelerating its expansion of 2nm Gate-All-Around (GAA) process technology, and Tesla's next-generation AI chip 'AI5' recently completed tape-out, preparing for 2nm process operation at the Taylor, Texas facility. Tesla previously signed a semiconductor supply contract with Samsung worth roughly KRW 22.7 trillion, and securing such a large customer has the potential to expand orders across the broader Samsung Foundry ecosystem. As demand for leading-edge processes grows, the role of Design Solution Partners (DSPs) connecting fabless firms and foundries becomes more important, and Gaonchips is one of the domestic Samsung Foundry DSPs participating in 2nm projects. However, competition remains intense, with domestic rivals including ADTechnology, SemiFive, and COASIA, and Alchip and Alphawave positioned within TSMC's value chain. The design house industry is being reshaped as it moves toward ultra-fine processes requiring EUV lithography and high-end design know-how, a structure in which only a small number of firms can secure leading-edge process references. In an environment where demand for both AI accelerators and autonomous-vehicle semiconductors is rising simultaneously, design houses covering both areas may hold a relatively favorable position, though lengthy qualification processes and elevated risk should also be considered."
  },
  "outlook": {
-  "ko": "가온칩스는 EUV 노광 공정에 최적화된 설계 라이브러리와 하이엔드 공정 노하우를 바탕으로 2026년 상반기 2나노 AI칩 테이프아웃을 목표로 진행 중이며, 성공 시 2027년 양산이 예고돼 있다. 업계에서는 삼성전자 파운드리 2나노 공정에서 글로벌 최초로 AI칩 설계 과제를 공식 수주한 것으로 알려져 있어, 성공적으로 완료되면 국내에서는 유일하게 대형 다이(빅다이) 개발 레퍼런스를 확보하는 사례가 될 것으로 평가된다. 텔레칩스·넥스트칩 등 오토모티브 고객사와 진행해온 차량용 칩 개발은 검증을 마치고 본격 양산 단계로 이동하는 국면으로, 양산 확대가 실적 규모에 영향을 줄 변수로 지목된다. 딥엑스(DeepX) M1 칩 수요 확대도 2026년 실적 개선 변수로 거론되고 있다. 회사는 2025년 하반기에 594억원 규모의 신규 ASIC 개발 계약 3건을 추가로 확보했으며, 이 물량은 향후 매출로 인식될 가능성이 있다. 해외에서는 미국·일본 법인을 중심으로 글로벌 고객 확대를 지속하고 있다. 다만 개발 일정과 비용 구조에 실적이 크게 영향받는 사업 특성상, 프로젝트 진행 속도와 매출 인식 시점에 따라 향후에도 실적 변동성이 이어질 가능성이 있다.",
-  "en": "Building on EUV-optimized design libraries and high-end process know-how, Gaonchips is targeting a 2nm AI-chip tape-out in H1 2026, with mass production slated for 2027 if successful. Industry sources indicate the company was the first design house globally to formally win an AI-chip design task on Samsung Foundry's 2nm process, and a successful completion would give it what is described as the only big-die development reference domestically. Automotive chip development with customers such as Telechips and Nextchip has completed verification and is moving toward full-scale mass production, a factor cited as likely to influence future revenue scale. Growing demand for DeepX's M1 chip is also cited as a potential driver of 2026 earnings improvement. In H2 2025, the company secured three additional new ASIC development contracts worth a combined KRW 59.4bn, which could be recognized as revenue going forward. Overseas, it continues to expand its global customer base centered on its U.S. and Japan subsidiaries. However, given that results are heavily influenced by development timelines and cost structure, earnings volatility is likely to persist depending on project progress and revenue-recognition timing."
+  "ko": "리서치업체 그로쓰리서치는 2026년 4월 30일 보도를 통해 가온칩스가 삼성파운드리와의 협업을 바탕으로 첨단 공정 중심의 수주 확대 국면에 진입했다며, 약 1000억원 규모의 수주잔고를 근거로 연간 실적 턴어라운드를 전망했다. 해당 리서치는 가온칩스의 연간 매출을 1078억원, 영업이익을 87억원으로 예상하며 전년 영업손실 167억원에서의 흑자 전환을 제시했다. 2026년 6월에는 일본 프리퍼드 네트웍스(PFN)와 진행 중인 2나노·2.5D 패키징 기반 AI 가속기 프로젝트가 시제품 제작 단계에 들어간 것으로 전해졌으며, 회사 관계자는 턴키 형태의 공급인 만큼 후속 검증과 양산 셋업 과정이 남아 있다고 밝혔다. 딥엑스의 2세대 AI 칩 'DX-M2' 설계 역시 가온칩스가 지원하고 있으며, 삼성전자 파운드리 2나노 공정 기반으로 2027년부터 양산이 예정돼 있다. 가온칩스는 2022년 일본, 2023년 미국에 이어 2026년 2월 중국 상하이에도 신규 법인을 설립하며 해외 거점을 3개로 확대했고, 최근에는 일본에서 신규 고객사도 추가 확보한 것으로 전해졌다. 반도체 업계의 한 전문가는 회사가 2026년부터 수주 잔고를 매출로 전환하며 기업 체급이 달라지는 구간에 진입할 수 있다는 전망을 내놓기도 했다. 다만 이러한 전망들은 모두 프로젝트 일정이 계획대로 진행된다는 전제를 깔고 있어, 실제 양산 반영 시점의 변동 가능성은 열려 있다.",
+  "en": "Research firm Growth Research reported on April 30, 2026 that Gaonchips had entered a phase of expanding orders centered on leading-edge processes based on its collaboration with Samsung Foundry, forecasting an annual earnings turnaround backed by an order backlog of roughly KRW 100 billion. The research projected annual revenue of KRW 107.8 billion and operating profit of KRW 8.7 billion, representing a turnaround from the prior year's operating loss of KRW 16.7 billion. In June 2026, the 2nm/2.5D packaging-based AI accelerator project with Japan's Preferred Networks (PFN) reportedly entered the prototype production stage, with a company representative noting that as a turnkey supply arrangement, further verification and mass-production setup steps remain. Gaonchips is also supporting the design of DeepX's second-generation AI chip 'DX-M2', which is scheduled for mass production from 2027 based on Samsung Foundry's 2nm process. Following Japan in 2022 and the United States in 2023, the company established a new subsidiary in Shanghai, China in February 2026, expanding to three overseas bases, and reportedly secured an additional new customer in Japan recently. One semiconductor industry expert suggested the company could enter a phase where its order backlog converts into revenue starting in 2026, changing its overall scale. However, all such forecasts assume project schedules proceed as planned, leaving room for the actual timing of mass-production revenue recognition to shift."
  },
  "valuation_comment": {
-  "ko": "가온칩스는 2025년 적자전환과 2026년 1분기까지 이어진 영업손실로 최근 12개월 기준 주당순이익이 마이너스(-887원)를 나타내고 있어 통상적인 이익 대비 가격 비교가 어려운 구간에 있다. 반면 순자산가치(BPS 4,639원) 대비 주가는 상당한 프리미엄이 형성돼 있는 편으로, 이는 실적보다 2나노 AI칩 및 차량용 양산 전환 등 미래 수주 기대가 가격에 먼저 반영된 결과로 해석할 수 있다. 배당의 경우 최근 결산 기준 현금배당이 없어 배당수익률로 접근하는 투자자에게는 매력이 제한적인 구조다. 2024년까지 이어진 이익 증가 흐름이 2025년 적자로 꺾인 뒤 2026년 1분기까지 완전한 회복이 확인되지 않은 만큼, 프리미엄 밸류에이션이 향후 실적 회복 속도와 얼마나 부합하는지가 관찰 포인트로 남는다. 부채비율 급등과 CB 전환에 따른 잠재 물량 이슈도 순자산가치 변화에 영향을 줄 수 있는 변수다.",
-  "en": "With Gaonchips having swung to a loss in 2025 and remaining in an operating loss through Q1 2026, trailing per-share earnings are negative (-KRW 887), leaving typical earnings-based price comparisons of limited use in this stretch. By contrast, the share price sits at a substantial premium to book value (BPS of KRW 4,639), suggesting that expectations around future orders — such as the 2nm AI chip and automotive mass-production transition — are being priced in ahead of realized earnings. There is currently no cash dividend based on the most recent fiscal year, limiting the appeal for yield-focused investors. Given that the earnings-growth trend through 2024 reversed into losses in 2025 and a full recovery has yet to be confirmed through Q1 2026, whether the premium valuation keeps pace with the actual speed of earnings recovery remains a point to monitor. The sharp rise in the debt ratio and the potential share supply from CB conversion are additional variables that could affect book value going forward."
+  "ko": "가온칩스는 최근 네 개 분기(2025년 3분기~2026년 2분기) 기준으로도 지배주주순손실 상태를 벗어나지 못해 주가수익비율 산정이 어려운 구간에 있다. 주가순자산비율은 순자산 대비 상당한 프리미엄이 반영된 수준에서 거래되고 있는데, 이는 2026년 이후 2나노 양산 매출 전환 기대가 가격에 일부 반영된 결과로 해석할 수 있다. 회사는 현재 배당을 지급하지 않고 있어 배당과 관련된 지표는 형성되지 않는다. 2022~2024년 순이익을 냈던 흐름이 2025년 적자로 전환됐다가 2026년 2분기 소폭 흑자로 이어진 만큼, 이 흐름이 이어질지와 대형 프로젝트의 양산 전환 시점이 실제로 언제 도래할지가 향후 밸류에이션 판단의 핵심 변수로 남아 있다.",
+  "en": "Gaonchips remains in a net loss position attributable to owners even on a trailing four-quarter basis (Q3 2025-Q2 2026), making a price-to-earnings ratio difficult to calculate at this time. The price-to-book ratio trades at a level reflecting a substantial premium over net asset value, which can be interpreted as partly pricing in expectations of a 2nm mass-production revenue transition from 2026 onward. The company currently pays no dividend, so dividend-related metrics are not formed. Given that the profitable trend seen in 2022-2024 turned into a loss in 2025 before a small profit returned in the second quarter of 2026, whether this trend continues and when large projects actually transition into mass production remain the key variables for future valuation assessments."
  },
  "bull": [
   {
    "title": {
-    "ko": "삼성 파운드리 2나노 레퍼런스 선점",
-    "en": "First-mover reference on Samsung's 2nm node"
+    "ko": "2나노 선단공정 레퍼런스 확보",
+    "en": "Securing 2nm Leading-Edge Process References"
    },
    "body": {
-    "ko": "가온칩스는 삼성전자 파운드리 2나노 공정에서 글로벌 최초로 AI칩 설계 과제를 공식 수주한 것으로 알려져 있다. 2026년 상반기 테이프아웃, 2027년 양산이 예고돼 있어 성공 시 국내 유일의 빅다이 개발 레퍼런스를 확보하게 된다. 이는 향후 추가 대형 과제 수주에 기술적 근거로 활용될 수 있다.",
-    "en": "Gaonchips is reported to be the first design house globally to formally win an AI-chip design task on Samsung Foundry's 2nm process. With tape-out targeted for H1 2026 and mass production slated for 2027, a successful outcome would give it the only domestic big-die development reference. This could serve as a technical basis for winning additional large-scale projects."
+    "ko": "가온칩스는 삼성전자 파운드리 2나노 공정에서 일본 프리퍼드 네트웍스(PFN) 및 딥엑스와의 프로젝트를 통해 국내 디자인하우스 가운데 드물게 빅다이 양산 레퍼런스를 확보할 가능성이 있다. 프로젝트가 성공적으로 완료되면 향후 신규 수주 유치에서 기술 경쟁력을 입증하는 근거가 될 수 있다. 다만 이는 아직 시제품 단계로, 실제 양산 완료까지는 추가 검증 절차가 남아 있다.",
+    "en": "Through projects with Japan's Preferred Networks (PFN) and DeepX on Samsung Foundry's 2nm process, Gaonchips has the potential to secure big-die mass production references rarely achieved among domestic design houses. If these projects are completed successfully, they could serve as proof of technical competitiveness in attracting future orders. However, these remain at the prototype stage, with further verification steps required before actual mass production is completed."
    }
   },
   {
    "title": {
-    "ko": "4분기 흑자전환, 매출 인식 시점 문제 시사",
-    "en": "Q4 turnaround suggests a timing issue, not a demand issue"
+    "ko": "실적 저점 통과 조짐",
+    "en": "Signs of Passing the Earnings Trough"
    },
    "body": {
-    "ko": "2025년 4분기 매출 331억원, 영업이익 17억원으로 3개 분기 연속 적자에서 흑자로 전환했다. 이는 지연됐던 대형 개발과제의 진행률 인식이 4분기에 집중된 결과로, 수요 둔화가 아니라 개발 일정과 비용 구조의 문제였다는 해석에 무게를 더한다. 다만 2026년 1분기 다시 적자를 낸 만큼 지속성은 추가 확인이 필요하다.",
-    "en": "Q4 2025 revenue of KRW 33.1bn and an operating profit of KRW 1.7bn marked a swing to profit after three consecutive quarters of losses. This is consistent with delayed development-project progress being recognized in a concentrated manner in Q4, supporting the view that the issue was development timing and cost structure rather than weaker demand. However, since Q1 2026 posted another loss, sustainability still needs confirmation."
+    "ko": "2025년 4분기와 2026년 2분기에 각각 소폭 영업이익을 내며 두 차례 흑자 전환이 확인됐다. 회사 측은 2025년 실적 부진이 대형 프로젝트 인력 집중에 따른 일정 지연 때문이었다고 설명하고 있어, 해당 프로젝트가 정상화되면 실적 개선 여지가 있다. 다만 2026년 1분기에 다시 적자로 돌아선 만큼 흑자 기조가 안정적으로 이어질지는 추가 확인이 필요하다.",
+    "en": "The company returned to small operating profit twice, in the fourth quarter of 2025 and the second quarter of 2026. Management has attributed the 2025 earnings weakness to schedule delays from concentrating personnel on large projects, suggesting room for improvement once those projects normalize. However, since the first quarter of 2026 slipped back into loss, further confirmation is needed on whether the profitable trend can be sustained."
    }
   },
   {
    "title": {
-    "ko": "차량용·해외 확장으로 고객 다변화",
-    "en": "Diversification via automotive and overseas expansion"
+    "ko": "해외 거점 다변화",
+    "en": "Diversifying Overseas Bases"
    },
    "body": {
-    "ko": "가온칩스는 AI/HPC와 차량용 시스템반도체를 동시에 다루며 특정 전방산업 의존도를 낮추고 있다. 일본 PFN의 2나노 AI 가속기 턴키 수주와 토멘디바이스와의 MOU, 미국 실리콘밸리 법인 설립 등으로 해외 고객 저변을 넓히고 있다. 2025년 하반기에는 594억원 규모의 신규 ASIC 계약 3건도 추가로 확보했다.",
-    "en": "By covering both AI/HPC and automotive system semiconductors, Gaonchips reduces reliance on any single end market. It has broadened its overseas customer base through a turnkey win for Japan's PFN 2nm AI accelerator, an MOU with Tomen Device, and the establishment of a Silicon Valley subsidiary. In H2 2025 it also secured three additional new ASIC contracts worth a combined KRW 59.4bn."
+    "ko": "일본, 미국에 이어 2026년 2월 중국 상하이에도 법인을 설립하며 해외 거점을 3개로 늘렸다. 일본에서는 신규 고객사를 추가로 확보한 것으로 전해지는 등 해외 수주 기반이 점차 넓어지고 있다. 차량용과 AI/HPC 양쪽 포트폴리오를 함께 보유하고 있어 한쪽 업황이 부진해도 다른 쪽에서 보완할 여지가 있다.",
+    "en": "Following Japan and the United States, the company established a subsidiary in Shanghai, China in February 2026, expanding to three overseas bases. In Japan, the company reportedly secured an additional new customer, gradually broadening its overseas order base. Holding both automotive and AI/HPC portfolios provides some room for one segment to offset weakness in the other."
    }
   }
  ],
  "bear": [
   {
    "title": {
-    "ko": "적자 지속, 완전한 턴어라운드 미확인",
-    "en": "Losses persist; a full turnaround remains unconfirmed"
+    "ko": "프로젝트 집중에 따른 실적 변동성",
+    "en": "Earnings Volatility from Project Concentration"
    },
    "body": {
-    "ko": "2025년 연간 영업손실 167억원에 이어 2026년 1분기에도 영업손실 39억원을 기록했다. 4분기 일시적 흑자전환이 지속적인 수익성 회복으로 이어지는지는 아직 확인되지 않았다. 대형 개발과제의 진행 상황에 따라 향후에도 분기별 실적이 크게 출렁일 수 있다.",
-    "en": "Following a full-year 2025 operating loss of KRW 16.7bn, Q1 2026 posted another operating loss of KRW 3.9bn. Whether the temporary Q4 swing to profit translates into a sustained profitability recovery has not yet been confirmed. Quarterly results could continue to swing sharply depending on the progress of large development projects."
+    "ko": "핵심 인력이 대형 과제에 집중 투입되는 사업 구조상 특정 프로젝트의 일정이 지연되면 분기별 실적이 크게 흔들릴 수 있다. 실제로 2025년 2~3분기 연속 영업손실이 확대됐고, 2026년 1분기에도 다시 적자로 돌아섰다. 매출 인식 시점을 예측하기 어렵다는 점은 실적 가시성을 낮추는 요인이다.",
+    "en": "Because the business structure concentrates key personnel on large projects, delays in any single project's schedule can significantly swing quarterly results. Operating losses widened consecutively in the second and third quarters of 2025, and the company slipped back into loss again in the first quarter of 2026. The difficulty in predicting revenue recognition timing lowers earnings visibility."
    }
   },
   {
    "title": {
-    "ko": "부채비율 급등과 CB 전환 물량 부담",
-    "en": "Sharp rise in debt ratio and CB conversion overhang"
+    "ko": "재무구조 악화",
+    "en": "Deteriorating Financial Structure"
    },
    "body": {
-    "ko": "부채비율이 1년 만에 62.5%에서 191.3%로 급등했고, 이익잉여금도 41.5% 줄며 자본총계가 21.1% 감소했다. 2025년 4월 발행된 345억원 규모 무이자 전환사채(CB)는 전환가액 4만3,410원 기준 발행주식총수의 6.4%까지 전환될 수 있으며, 2026년 4월부터 일부 전환청구가 실제로 발생했다. 보호예수 조항이 없어 전환 물량은 전량 유통 가능해 단기 수급에 부담을 줄 수 있다.",
-    "en": "The debt ratio jumped from 62.5% to 191.3% in a year, while retained earnings fell 41.5% and total equity declined 21.1%. A zero-coupon CB worth KRW 34.5bn issued in April 2025 could convert into up to 6.4% of outstanding shares at a conversion price of KRW 43,410, and conversion requests have already begun since April 2026. With no lock-up provisions, the converted shares are fully tradable and could weigh on short-term supply-demand balance."
+    "ko": "2025년 영업손실과 순손실이 확대되면서 자본이 줄어든 반면 부채는 유지돼 부채비율이 2024년 62.5%에서 2025년 191.3%로 급등했다. 영업활동현금흐름도 2024년 108억원 유입에서 2025년 마이너스로 전환됐다. 적자가 지속될 경우 재무 완충력이 추가로 약화될 수 있다.",
+    "en": "As operating and net losses widened in 2025, equity declined while liabilities remained, pushing the debt ratio up from 62.5% in 2024 to 191.3% in 2025. Operating cash flow also turned negative in 2025 after an inflow of KRW 10.8 billion in 2024. Continued losses could further erode the company's financial buffer."
    }
   },
   {
    "title": {
-    "ko": "프로젝트 집중형 매출구조에 따른 변동성",
-    "en": "Volatility from a project-concentrated revenue structure"
+    "ko": "양산 전환 지연 리스크",
+    "en": "Risk of Delayed Mass-Production Transition"
    },
    "body": {
-    "ko": "가온칩스는 소수의 대형 개발과제에 인력과 비용이 집중되는 사업구조를 가지고 있어, 하나의 프로젝트 지연이 곧바로 실적에 반영된다. 2025년 실적 악화도 대형 2나노 AI칩 과제에 엔지니어 과반이 투입되며 비용이 매출보다 먼저 반영된 결과였다. 연구개발비도 2023년 23억원에서 2025년 36억원으로 늘어 매출 대비 비중이 5.2%까지 높아졌다.",
-    "en": "Gaonchips' business model concentrates staff and cost on a small number of large development projects, so a delay in a single project shows up directly in results. The 2025 deterioration stemmed from more than half its engineers being assigned to a large 2nm AI-chip project, causing costs to be recognized ahead of revenue. R&D spending also rose from KRW 2.3bn in 2023 to KRW 3.6bn in 2025, lifting its share of revenue to 5.2%."
+    "ko": "프리퍼드 네트웍스(PFN)와의 2나노 프로젝트는 2026년 6월 기준 아직 시제품 제작 단계에 머물러 있으며, 딥엑스 DX-M2의 양산도 2027년부터로 예정돼 시차가 있다. 시장의 기대가 반영된 프로젝트들이 계획대로 진행되지 않을 경우 실적 개선 시점이 뒤로 밀릴 수 있다.",
+    "en": "As of June 2026, the 2nm project with Preferred Networks (PFN) remained at the prototype production stage, and DeepX's DX-M2 mass production is not scheduled until 2027, implying a time lag. If projects that carry market expectations do not proceed as planned, the timing of earnings improvement could be pushed further back."
    }
   }
  ],
  "risks": [
   {
    "cat": {
-    "ko": "재무·자본구조 리스크",
-    "en": "Financial/capital-structure risk"
+    "ko": "고객·프로젝트 집중 리스크",
+    "en": "Customer and Project Concentration Risk"
    },
    "body": {
-    "ko": "부채비율이 191.3%까지 상승한 가운데 잔여 전환사채(약 241.5억원, 전환 가능 주식 약 55.6만주)의 추가 전환 가능성이 남아 있다. 2026년에도 적자가 이어질 경우 추가 자금조달 필요성이 커질 수 있다. 이 경우 기존 주주 지분 희석이 발생할 수 있다.",
-    "en": "With the debt ratio having risen to 191.3%, further conversion remains possible on the outstanding CB balance (about KRW 24.15bn, convertible into roughly 556,000 shares). If losses continue into 2026, the need for additional funding could increase, potentially diluting existing shareholders."
+    "ko": "가온칩스의 실적은 프리퍼드 네트웍스, 딥엑스 등 소수의 대형 프로젝트에 크게 의존하는 구조다. 이들 프로젝트의 일정이 지연되거나 취소될 경우 매출과 이익에 즉각적인 영향을 줄 수 있다. 2025년 실적 부진도 대형 개발 과제에 인력이 집중되면서 발생한 일정 지연이 주요 원인으로 지목됐다.",
+    "en": "Gaonchips' earnings depend heavily on a small number of large projects with clients such as Preferred Networks and DeepX. Delays or cancellations of these projects could immediately affect revenue and profit. The 2025 earnings weakness was also attributed mainly to schedule delays caused by concentrating personnel on large development tasks."
    }
   },
   {
    "cat": {
-    "ko": "수주·매출 인식 리스크",
-    "en": "Order/revenue-recognition risk"
+    "ko": "재무 안정성 리스크",
+    "en": "Financial Stability Risk"
    },
    "body": {
-    "ko": "매출이 소수의 대형 개발과제 진행률에 크게 좌우되는 구조여서 프로젝트 지연이 곧 실적 변동으로 이어진다. 2나노 AI칩 테이프아웃 일정이 지연될 경우 2026~2027년 매출·양산 계획에도 영향을 줄 수 있다. 자동차용 칩 양산 확대 일정도 완성차·팹리스 고객사의 계획 변경에 따라 유동적일 수 있다.",
-    "en": "Because revenue depends heavily on the progress of a handful of large development projects, project delays translate directly into results volatility. A delay in the 2nm AI-chip tape-out schedule could affect 2026-2027 revenue and mass-production plans. The timeline for expanding automotive chip mass production may also shift depending on changes in automaker or fabless customer plans."
+    "ko": "부채비율이 2025년 191.3%까지 상승했고 영업활동현금흐름도 마이너스로 전환돼 자체 자금 조달 여력이 약화됐다. 적자가 추가로 누적될 경우 외부 자금 조달 의존도가 높아질 수 있다. 재무구조 변화는 향후 신규 프로젝트 투자 여력에도 영향을 줄 수 있는 변수다.",
+    "en": "The debt ratio rose to 191.3% in 2025 and operating cash flow turned negative, weakening the company's capacity for self-funding. If losses continue to accumulate, reliance on external financing could increase. Changes in the financial structure are also a variable that could affect the company's capacity to invest in new projects going forward."
    }
   },
   {
    "cat": {
-    "ko": "업황·경쟁 리스크",
-    "en": "Industry/competitive risk"
+    "ko": "공시·거버넌스 리스크",
+    "en": "Disclosure and Governance Risk"
    },
    "body": {
-    "ko": "실적이 삼성 파운드리의 선단공정 고객 확보 여부에 연동되는 구조여서, 삼성 파운드리가 경쟁 파운드리에 고객을 뺏길 경우 가온칩스도 함께 영향을 받을 수 있다. 국내에는 세미파이브 등 유사한 디자인하우스가 존재해 대형 과제 수주 경쟁이 이어지고 있다. AI 데이터센터 투자 사이클이나 완성차의 자체 칩 개발 전략 변화도 수주 환경에 영향을 줄 수 있다.",
-    "en": "Because results are tied to whether Samsung Foundry secures leading-edge customers, Gaonchips could be affected if Samsung loses customers to rival foundries. Domestically, similar design houses such as SemiFive compete for large-scale project wins. Shifts in the AI data-center investment cycle or automakers' in-house chip-development strategies could also affect the order environment."
+    "ko": "한국거래소 상장공시시스템(KIND)에는 가온칩스의 2025년 사업보고서 관련 공시가 기재 불충분 등의 사유로 정정요구를 받았다는 안내가 게시된 바 있다. 이는 공시 절차 관리와 투자자 정보 전달의 정확성 측면에서 지속적으로 확인해야 할 요소다.",
+    "en": "Korea Exchange's disclosure system (KIND) has posted a notice indicating that a filing related to Gaonchips' 2025 business report received a correction request due to insufficient disclosure content, among other reasons. This is a factor that warrants ongoing monitoring in terms of disclosure process management and the accuracy of information provided to investors."
    }
   }
  ],
  "checkpoints": [
   {
    "when": {
-    "ko": "2026년 3분기 실적 발표(통상 11월 중)",
-    "en": "Q3 2026 earnings release (typically mid-November)"
+    "ko": "2026년 11월 중순",
+    "en": "Mid-November 2026"
    },
    "what": {
-    "ko": "2026년 1분기 적자 이후 매출총이익률과 영업이익이 안정적으로 흑자권에 진입하는지 확인이 필요하다.",
-    "en": "Check whether gross margin and operating profit stabilize in positive territory following the Q1 2026 loss."
+    "ko": "2026년 3분기 실적 발표 예정 시점으로, 2분기에 확인된 소폭 흑자 기조가 이어지는지, 매출 규모가 추가로 확대되는지를 확인해야 한다.",
+    "en": "Expected timing of the third-quarter 2026 earnings release; check whether the small profit trend seen in the second quarter continues and whether revenue scale expands further."
    }
   },
   {
    "when": {
-    "ko": "2026년 상반기 중(2나노 AI칩 테이프아웃 목표 시점)",
-    "en": "During H1 2026 (targeted 2nm AI-chip tape-out window)"
+    "ko": "2026년 4분기",
+    "en": "Fourth quarter of 2026"
    },
    "what": {
-    "ko": "2나노 AI칩 테이프아웃이 목표대로 완료되는지, 2027년 양산 일정에 변동이 없는지 관련 공시·IR을 통해 확인해야 한다.",
-    "en": "Verify via disclosures/IR whether the 2nm AI-chip tape-out is completed on schedule and whether the 2027 mass-production timeline remains intact."
+    "ko": "프리퍼드 네트웍스(PFN)와의 2나노 프로젝트가 시제품 검증을 마치고 양산 셋업 단계로 넘어가는지 확인이 필요하다.",
+    "en": "Check whether the 2nm project with Preferred Networks (PFN) completes prototype verification and moves into the mass-production setup stage."
    }
   },
   {
    "when": {
-    "ko": "수시(전환사채 전환청구 공시 발생 시)",
-    "en": "Ongoing (upon each CB conversion disclosure)"
+    "ko": "2026년 하반기 중",
+    "en": "During the second half of 2026"
    },
    "what": {
-    "ko": "잔여 전환사채(약 241.5억원)의 전환청구 진행 상황과 신규 발행주식 규모를 확인해 지분 희석 속도를 점검해야 한다.",
-    "en": "Track the progress of conversion requests on the remaining CB balance (about KRW 24.15bn) and the scale of newly issued shares to gauge the pace of dilution."
+    "ko": "2026년 2월 설립된 중국 상하이 법인의 신규 수주 성과가 공개되는지, 일본에서 추가 확보한 고객사와의 후속 계약이 이뤄지는지 확인할 필요가 있다.",
+    "en": "Check whether the Shanghai subsidiary established in February 2026 discloses new order wins, and whether follow-on contracts materialize with the additional customer secured in Japan."
    }
   },
   {
    "when": {
-    "ko": "2026년 하반기(자동차용 칩 양산 확대 시점)",
-    "en": "H2 2026 (automotive chip mass-production ramp)"
+    "ko": "2027년 양산 예정 시점 이전까지",
+    "en": "Ahead of the scheduled 2027 mass-production timing"
    },
    "what": {
-    "ko": "텔레칩스·넥스트칩 등과 진행 중인 차량용 칩의 본격 양산 개시 여부와 매출 반영 규모를 확인해야 한다.",
-    "en": "Confirm whether full-scale mass production begins for automotive chips developed with Telechips and Nextchip, and the resulting revenue contribution."
-   }
-  },
-  {
-   "when": {
-    "ko": "매 분기 정기공시 시점",
-    "en": "Each quarterly regulatory filing"
-   },
-   "what": {
-    "ko": "부채비율이 200%를 넘어서는지, 이익잉여금·자본총계 추이가 개선되는지를 지속적으로 확인할 필요가 있다.",
-    "en": "Continue to monitor whether the debt ratio breaches 200% and whether retained earnings and total equity trends improve."
+    "ko": "딥엑스 DX-M2의 삼성전자 2나노 공정 양산 일정이 구체화되는지, 실제 양산 매출 반영 시점이 예정대로 진행되는지를 지속적으로 확인해야 한다.",
+    "en": "Continue to monitor whether the schedule for DeepX's DX-M2 mass production on Samsung's 2nm process becomes more concrete and whether actual mass-production revenue recognition proceeds as planned."
    }
   }
  ],
  "verdict": {
   "body": {
-   "ko": "가온칩스는 2024년까지의 이익 성장 흐름이 2025년 적자전환으로 꺾인 뒤, 2026년 1분기까지도 수익성 회복이 완전히 확인되지 않은 국면에 있다. 2025년 4분기 일시적 흑자전환은 지연된 개발과제의 진행률 인식이 몰린 결과로 해석되며, 이것이 지속적인 흐름인지는 향후 분기 실적으로 확인이 필요하다. 삼성 파운드리 2나노 AI칩 프로젝트와 차량용 칩 양산 확대는 중장기 성장 스토리로 거론되지만, 아직 실적으로 증명되지 않은 기대 요인이다. 동시에 부채비율 급등과 전환사채 전환에 따른 잠재적 지분 희석은 재무구조 측면에서 주시해야 할 변수다. 현재 주가는 순자산가치 대비 상당한 프리미엄이 형성돼 있어, 향후 실적 회복 속도와 밸류에이션 간 간극이 어떻게 좁혀지는지가 관찰의 핵심이 될 것으로 보인다. 투자 판단에 앞서 다가오는 분기 실적과 2나노 프로젝트 진행 상황, CB 전환 추이를 함께 점검할 필요가 있다.",
-   "en": "Gaonchips' earnings-growth trend through 2024 reversed into a loss in 2025, and a full profitability recovery has yet to be confirmed even through Q1 2026. The temporary swing to profit in Q4 2025 appears driven by a concentrated recognition of progress on delayed development projects, and whether this proves durable requires confirmation in upcoming quarters. The Samsung Foundry 2nm AI-chip project and expanding automotive chip production are cited as medium-to-long-term growth stories, but remain expectations not yet proven in results. At the same time, the sharp rise in the debt ratio and potential dilution from CB conversion are financial-structure variables that warrant continued attention. The current share price carries a substantial premium to book value, making the gap between the pace of any earnings recovery and the valuation a central point to watch going forward. Ahead of any investment decision, it would be worth tracking upcoming quarterly results, progress on the 2nm project, and the trajectory of CB conversions together."
+   "ko": "가온칩스는 삼성전자 파운드리의 디자인솔루션파트너(DSP)로서 차량용과 AI/HPC 반도체 설계를 양대 축으로 사업을 운영해 왔다. 2025년에는 대형 프로젝트에 인력이 집중되고 매출 인식이 지연되면서 연간 영업손실 167억원, 부채비율 191.3%라는 상장 후 가장 부진한 재무 성적표를 받았다. 그러나 2025년 4분기와 2026년 2분기에 각각 소폭 영업이익을 내며 두 차례 흑자 전환을 기록했고, 프리퍼드 네트웍스·딥엑스 등과의 2나노 프로젝트가 시제품 단계로 넘어가는 등 사업 진행 자체는 이어지고 있다. 다만 실제 양산은 2027년 전후로 예정돼 있어 매출 본격화까지는 시차가 남아 있고, 그 사이 재무 건전성 관리와 프로젝트 일정 준수 여부가 관찰 포인트로 남는다. 투자자들은 향후 분기 실적에서 흑자 기조가 이어지는지, 대형 프로젝트의 양산 전환이 예정대로 이뤄지는지를 함께 확인할 필요가 있다.",
+   "en": "Gaonchips has operated its business around two pillars—automotive and AI/HPC semiconductor design—as a Design Solution Partner (DSP) of Samsung Foundry. In 2025, concentrated personnel on large projects and delayed revenue recognition led to the weakest financial results since listing, with an annual operating loss of KRW 16.7 billion and a debt ratio of 191.3%. However, the company returned to small operating profit twice—in the fourth quarter of 2025 and the second quarter of 2026—and business progress has continued, with 2nm projects involving Preferred Networks and DeepX advancing to the prototype stage. Still, actual mass production is scheduled around 2027, leaving a time lag before revenue fully materializes, and financial health management along with adherence to project schedules remain points to watch in the interim. Investors will want to monitor whether the profitable trend continues in upcoming quarterly results and whether the transition of large projects into mass production proceeds as scheduled."
   }
  },
  "sources": [
   "https://m.thinkpool.com/compDiscuss/cont/1012311",
-  "https://www.epnc.co.kr/news/articleView.html?idxno=309270",
-  "https://www.epnc.co.kr/news/articleView.html?idxno=401569",
-  "https://alphasquare.co.kr/home/stock-summary?code=399720",
   "https://wealthmoa.com/%EC%A3%BC%EC%8B%9D-%ED%88%AC%EC%9E%90/gaonchips-399720-stock-forecast-2026/",
+  "https://www.epnc.co.kr/news/articleView.html?idxno=401569",
+  "https://www.threads.com/@stockhandbook_friends/post/DUHf9njDOHI/%EA%B0%80%EC%98%A8%EC%B9%A9%EC%8A%A4%EB%8A%94-2026%EB%85%84-1%EC%9B%94-9%EC%9D%BC-%EA%B8%B0%EC%A4%80-ai-%EB%B0%8F-%EC%B0%A8%EB%9F%89%EC%9A%A9-%EB%B0%98%EB%8F%84%EC%B2%B4%EC%97%90%EC%84%9C-%EC%A4%91%EC%9E%A5%EA%B8%B0-%EC%84%B1%EC%9E%A5%EC%9D%B4-%EA%B8%B0%EB%8C%80%EB%90%98%EB%8A%94-%EB%94%94%EC%9E%90%EC%9D%B8%ED%95%98%EC%9A%B0%EC%8A%A4%EB%8B%A42025%EB%85%84-%EC%8B%A4%EC%A0%81-%EB%B6%80%EC%A7%84-%ED%9B%84-2026%EB%85%84-%ED%84%B4%EC%96%B4%EB%9D%BC%EC%9A%B4",
+  "https://alphasquare.co.kr/home/stock-summary?code=399720",
   "https://m.thinkpool.com/compDiscuss/cont/1012787",
+  "https://www.epnc.co.kr/news/articleView.html?idxno=309270",
   "https://rootingview.com/2026-%EA%B0%80%EC%98%A8%EC%B9%A9%EC%8A%A4-%EC%A3%BC%EA%B0%80%EC%A0%84%EB%A7%9D-ai-%EB%B0%98%EB%8F%84%EC%B2%B4-%EB%94%94%EC%9E%90%EC%9D%B8%ED%95%98%EC%9A%B0%EC%8A%A4-%EC%88%98%EC%A3%BC-%EC%9E%94/",
+  "https://m.irgo.co.kr/IR-COMP/399720",
   "https://kind.krx.co.kr/common/disclsviewer.do?method=search&acptno=20250515002683",
-  "https://www.ksdaily.co.kr/news/articleView.html?idxno=107315",
-  "https://v.daum.net/v/70Qg0HjJeL",
-  "https://m.ddaily.co.kr/page/view/2024061209051564519",
-  "https://www.gaonchips.com/kr/sub/news/view.php?idx=174",
-  "https://zdnet.co.kr/view/?no=20240610163024",
-  "https://www.gaonchips.com/kr/sub/company/partnerShip.php",
-  "https://m.thinkpool.com/stockDiscuss/399720/cont/11661637",
-  "https://www.gaonchips.com/kr/",
-  "https://www.tfmedia.co.kr/news/article.html?no=165891",
-  "https://kind.krx.co.kr/common/disclsviewer.do?method=search&acptno=20260515002084"
+  "https://kind.krx.co.kr/common/disclsviewer.do?method=search&acptno=20260515002084",
+  "https://www.investing.com/equities/gaonchips",
+  "https://news.infostock.co.kr/a",
+  "https://www.bondweb.co.kr/_research/downloadPage.asp?number=801956&gn=1",
+  "https://m.thinkpool.com/compDiscuss/cont/1011144",
+  "https://alphadistill.com/report/1088",
+  "https://judal.co.kr/?shareToken=ZJJVaN6cZl65Fng0&view=stockAI",
+  "https://littlebproject.com/stock/399720/54/9322"
  ],
  "v": 2,
  "model": "claude-sonnet-5",
@@ -233,11 +223,11 @@
   "반도체"
  ],
  "market": "코스닥",
- "reportDate": "2026-08-15",
- "reportTs": "2026-08-15 18:20",
- "dataDate": "20260821",
+ "reportDate": "2026-09-05",
+ "reportTs": "2026-09-05 05:51",
+ "dataDate": "20260904",
  "quant": {
-  "asOf": "2026-08-21",
+  "asOf": "2026-09-04",
   "fs_basis": "연결(CFS) · DART 공시 확정치 · 지배주주 기준 순이익",
   "annual": [
    {
@@ -248,6 +238,7 @@
     "np_owner": -14369143365,
     "equity": 54688158517,
     "equity_owner": 54688158517,
+    "equity_nci": null,
     "liab": 104622741139,
     "cfo": -848730459,
     "eps_basic": -1239,
@@ -263,6 +254,7 @@
     "np_owner": 7530549168,
     "equity": 69355020044,
     "equity_owner": 69355020044,
+    "equity_nci": null,
     "liab": 43353386403,
     "cfo": 10803918403,
     "eps_basic": 655,
@@ -278,6 +270,7 @@
     "np_owner": 6344445918,
     "equity": 62019549707,
     "equity_owner": 62019549707,
+    "equity_nci": null,
     "liab": 32590129089,
     "cfo": 5666350939,
     "eps_basic": 552,
@@ -293,6 +286,7 @@
     "np_owner": 4418777712,
     "equity": 54389374240,
     "equity_owner": 54389374240,
+    "equity_nci": 0,
     "liab": 18791727827,
     "cfo": 5920392540,
     "eps_basic": 413,
@@ -334,23 +328,29 @@
    }
   ],
   "valuation": {
-   "price": 45200,
-   "mcap": 0.536,
+   "price": 42100,
+   "mcap": 0.4993,
    "shares": 11858844,
    "total_shares": 11600420,
    "wavg_shares": 11744946,
    "per": null,
    "eps": -471,
-   "pbr": 7.4,
-   "bps": 6112,
+   "pbr": 6.887,
+   "bps": 6113,
    "roe_ttm": -8.3,
    "ttm_window": "2025Q3~2026Q2",
    "ttm_np_owner": -5466841703,
-   "pbr_krx": 9.55,
+   "ccy": "KRW",
+   "bps_src": "자체",
+   "eps_src": "공시",
+   "pbr_krx": 8.93,
    "bps_krx": 4714.0,
    "basis": "PER·EPS·PBR·BPS 모두 자체 산출(네이버·토스와 동일 방식) · 배당은 DART 공시 주당현금배당금(보완:KRX) ÷ 현재가",
    "dps": 0.0,
-   "div": 0.0
+   "div": 0.0,
+   "hidden": {
+    "per": "loss"
+   }
   }
  }
 }

@@ -1,208 +1,217 @@
 {
  "title": {
-  "ko": "수주 공백 딛고 반등 시동 건 검사장비주",
-  "en": "Test Equipment Maker Signals Rebound After Order Gap"
+  "ko": "SSD 테스터 강자, CXL·HBM로 영역 확장",
+  "en": "SSD Tester Leader Expanding into CXL and HBM"
  },
  "lead": {
-  "ko": "SSD·CXL 검사장비 강소기업 네오셈이 2025년 실적 부진을 딛고 4분기부터 수주 회복 조짐을 보이고 있다.",
-  "en": "Neosem, a niche SSD and CXL test equipment maker, is showing signs of order recovery from Q4 2025 after a weak 2025 overall."
+  "ko": "네오셈은 메모리 반도체 후공정 검사장비 전문기업으로, 2026년 2분기 실적이 최근 5개 분기 중 가장 큰 폭으로 반등했지만 분기별 수주 편차가 여전히 실적의 핵심 변수로 남아있다.",
+  "en": "Neosem is a specialist in back-end semiconductor memory test equipment, and its 2Q26 results rebounded the most sharply among the last five quarters, though quarter-to-quarter order volatility remains the key variable for its earnings."
  },
  "keypoints": [
   {
-   "ko": "2025년 매출 639억원으로 전년 대비 대폭 감소, 영업이익률도 6.3%로 하락",
-   "en": "2025 revenue fell sharply to KRW 63.9bn, with operating margin dropping to 6.3%"
+   "ko": "2026년 2분기 매출 360.0억원·영업이익 114.2억원으로 직전 분기 대비 큰 폭 증가, 영업이익률도 31%대로 급상승했다.",
+   "en": "2Q26 revenue reached KRW 36.0 billion with operating profit of KRW 11.4 billion, a sharp jump from the prior quarter, with operating margin surging to the low-30% range."
   },
   {
-   "ko": "2025년 4분기 매출 225.6억원으로 직전 분기 대비 급증하며 반등 조짐",
-   "en": "Q4 2025 revenue surged to KRW 22.56bn versus the prior quarter"
+   "ko": "2025년 연간 매출은 639.4억원으로 2024년 1,052.4억원 대비 약 39% 줄었고 영업이익률도 15.6%에서 6.3%로 낮아졌다.",
+   "en": "Annual 2025 revenue fell roughly 39% to KRW 63.9 billion from KRW 105.2 billion in 2024, with operating margin compressing from 15.6% to 6.3%."
   },
   {
-   "ko": "어드반테스트 SSD 테스터 사업 철수 이후 Gen5 SSD 테스터 공급사 지위 부각",
-   "en": "Positioned as a key Gen5 SSD tester supplier following Advantest's exit from the business"
+   "ko": "Gen5 SSD 테스터 중심 사업에서 CXL(1.1·2.0 상용화, 3.1 개발 중)과 HBM 번인테스터(삼성전자 QA 단계)로 제품군을 다각화하고 있다.",
+   "en": "Beyond its core Gen5 SSD tester business, the company is diversifying into CXL (1.1 and 2.0 commercialized, 3.1 under development) and HBM burn-in testers, the latter at the QA stage with Samsung Electronics."
   },
   {
-   "ko": "CXL 3.1 양산 테스터 2026년 상반기 공급 계획, Gen6 SSD 테스터는 고객사 데모 단계",
-   "en": "CXL 3.1 production tester supply planned for H1 2026; Gen6 SSD tester in customer demo stage"
+   "ko": "미국 자회사 NEOSEM TECHNOLOGY INC.를 통한 해외 공급계약이 2026년 3~5월 연이어 공시되며 수주 재개 신호가 나타났다.",
+   "en": "A series of overseas supply contracts through US subsidiary NEOSEM TECHNOLOGY INC. were disclosed from March to May 2026, signaling a resumption of order flow."
   },
   {
-   "ko": "미국 자회사 대상 공급계약이 2026년 3~5월 잇달아 공시되며 수주 재개 신호",
-   "en": "Consecutive supply contracts with US subsidiary disclosed March–May 2026 signal order resumption"
+   "ko": "증권사 커버리지가 얇은 소형주로, 분기별 실적 변동성과 고객사 설비투자 시점에 대한 노출도가 크다.",
+   "en": "As a small-cap with thin brokerage coverage, the stock carries significant exposure to quarterly earnings volatility and the timing of customer capital expenditure."
   }
  ],
  "business": {
-  "ko": "네오셈은 2002년 설립된 메모리 반도체 후공정 검사장비 전문기업으로, SSD 테스터·번인(Burn-in) 테스터·CXL 메모리 검사장비를 주력 제품으로 생산한다. 회사의 캐시카우는 SSD 출하 후 정상 작동 여부를 검증하는 SSD 테스터 부문으로, 과거 자료에서는 매출의 상당 부분을 SSD 검사장비가 차지하는 것으로 알려졌다. 주요 고객사는 삼성전자, SK하이닉스, 마이크론 등 글로벌 메모리 반도체 상위 기업들이며, 신제품 개발 단계에서부터 협력하는 사례도 있는 것으로 전해진다. 경쟁구도 측면에서는 테라다인, 어드반테스트 등 글로벌 대형 장비사가 반도체 검사장비 시장 전반을 장악하고 있으나, PCIe 5세대(Gen5) CPU 기반 SSD 테스터 분야에서는 일본 어드반테스트가 지난 1월 SSD 사업부를 철수하면서 네오셈이 유일한 글로벌 공급자로 남았다는 평가가 나온다. 번인 테스터 라인업은 코러스(Corus) 시리즈와 BX 시리즈 2종으로 구성되며, BX 번인 테스터는 HBM·PRAM도 테스트가 가능하지만 HBM 전용으로 설계된 장비는 아니어서 회사 스스로도 실제 테스트 항목이 부족하다고 판단하고 있으며, HBM 전용 번인 장비 개발을 고민 중이라고 밝힌 바 있다. 차세대 성장동력으로는 CXL(Compute Express Link) 메모리 검사장비가 꼽히며, 네오셈은 세계 최초로 CXL 1.1 및 2.0 검사장비를 상용화한 이력이 있다. 국내 경쟁사로는 CXL 테스터를 개발 중인 엑시콘, HBM 번인 테스터 분야의 유니테스트·테크윙 등이 거론된다.",
-  "en": "Founded in 2002, Neosem specializes in back-end test equipment for memory semiconductors, with SSD testers, burn-in testers, and CXL memory test equipment as its core products. Its cash-cow segment is the SSD tester business, which verifies proper SSD operation after shipment and historically accounted for a large share of revenue. Major customers include top-tier global memory makers such as Samsung Electronics, SK hynix, and Micron, with some collaboration reportedly occurring even at the new-product development stage. While large global players like Teradyne and Advantest dominate the broader test equipment market, Advantest's withdrawal from the SSD business in January left Neosem as the only global supplier of PCIe Gen5 CPU-based SSD testers, according to a company executive. Its burn-in tester lineup consists of the Corus and BX series; the BX burn-in tester can test HBM and PRAM but was not purpose-built for HBM, so the company itself judges its test items insufficient and is considering developing a dedicated HBM burn-in device. CXL memory test equipment is viewed as the next growth driver, with Neosem having commercialized CXL 1.1 and 2.0 test equipment for the first time globally. Domestic competitors include Exicon in CXL testers and Unitest/Techwing in HBM burn-in testers."
+  "ko": "네오셈은 2002년 설립된 반도체 후공정 검사장비 전문기업으로, 메모리반도체 제조 공정에서 제품의 성능과 신뢰성을 검사하는 장비를 만든다. 사업은 크게 SSD(솔리드스테이트드라이브)의 성능·신뢰성을 검사하는 SSD 테스터 사업과, 메모리반도체에 가혹 조건을 적용해 검사하는 MBT(모니터링 번인 테스터) 사업으로 나뉜다. 이 외에도 해외 기업의 어셈블리 머신, 파티클 디텍터 등에 대한 총판 사업도 병행하고 있다. 네오셈은 2023년 세계 최초로 CXL 1.1 메모리 검사장비 상용화에 성공했고, 이어 CXL 2.0 검사장비도 세계 최초로 개발해 양산 장비를 고객사에 납품한 바 있다. HBM(고대역폭메모리) 관련해서는 'BX 번인 테스터'라는 고온 스트레스 검사 장비를 개발했으며, 회사 측은 해당 장비가 삼성전자의 품질평가(QA) 단계에 있다고 밝혔다. 주요 거래·수주 상대방은 미국 소재 종속회사 NEOSEM TECHNOLOGY INC.이며, 최종 수요처는 삼성전자·SK하이닉스 등 글로벌 메모리 반도체 기업들로 파악된다. 매출은 대부분 수출에서 발생해 환율 변동에 노출되는 구조다. 국내 경쟁구도에서는 유니테스트, 테크윙, 엑시콘 등이 번인·모듈 테스트 장비 시장에서 경쟁하고 있으며, CXL·HBM 검사장비 분야로도 경쟁이 확산되는 양상이다.",
+  "en": "Founded in 2002, Neosem specializes in back-end semiconductor test equipment that verifies the performance and reliability of memory chips during the manufacturing process. Its business is split largely between SSD (solid-state drive) testers that check performance and reliability, and MBT (monitoring burn-in tester) equipment that subjects memory chips to stress conditions. The company also runs a distribution business for overseas-made assembly machines and particle detectors. In 2023, Neosem became the first in the world to commercialize a CXL 1.1 memory test device, and it later developed and shipped a CXL 2.0 test device to customers, again a world first. For HBM (high-bandwidth memory), the company developed a high-temperature stress test device called the 'BX burn-in tester,' which the company has stated is at the quality-assurance (QA) stage with Samsung Electronics. Its main contracting counterparty is US-based subsidiary NEOSEM TECHNOLOGY INC., while end customers are understood to be global memory makers such as Samsung Electronics and SK Hynix. Most of its revenue comes from exports, exposing results to currency movements. Domestically, Unitest, TechWing, and Exicon compete in burn-in and module test equipment, with competition increasingly extending into CXL and HBM test equipment as well."
  },
  "earnings": {
-  "ko": "네오셈의 2025년 연결 매출액은 639억 3,675만원으로 2024년 1,052억 3,708만원 대비 큰 폭으로 줄었고, 영업이익도 40억 5,538만원(영업이익률 6.3%)으로 2024년 164억 6,671만원(영업이익률 15.6%)에서 대폭 후퇴했다. 지배주주 순이익 역시 53억 4,219만원으로 전년 192억 1,518만원 대비 크게 감소했다. 분기별로 보면 2025년 1분기 매출 148.75억원·영업이익 15.24억원으로 양호하게 출발했으나, 2분기는 매출 163.27억원에 영업이익이 4.95억원으로 줄고 지배주주순이익은 -15.72억원 적자로 전환했다. 3분기에는 매출이 101.75억원까지 줄고 영업손실 4.81억원을 기록하며 수익성이 가장 부진했던 구간으로 나타났다. 그러나 4분기 매출은 225.60억원으로 직전 분기 대비 크게 늘었고 영업이익 25.19억원, 지배주주순이익 44.34억원으로 큰 폭 개선되며 한 해를 마무리했다. 이러한 흐름은 상반기 수주 공백과 신제품(Gen6 SSD 테스터, CXL 3.1) 개발에 대한 연구개발 자원 집중이 겹치며 매출 인식이 하반기, 특히 4분기에 쏠린 결과로 해석할 수 있다. 2026년 1분기에는 매출 145.17억원, 영업이익 5.98억원, 지배주주순이익 23.10억원을 기록하며 전 분기 대비 매출과 영업이익은 둔화됐지만 순이익은 견조한 수준을 유지했다. 2022년부터 2025년까지의 연간 흐름을 보면 영업이익률은 11.2%→8.0%→15.6%→6.3%로 등락이 컸고, 부채비율은 2022년 110.0%에서 2024년 22.4%, 2025년 30.1%로 크게 낮아져 재무 구조는 개선된 모습이다.",
-  "en": "Neosem's 2025 consolidated revenue was KRW 63.94bn, down sharply from KRW 105.24bn in 2024, while operating profit fell to KRW 4.06bn (6.3% margin) from KRW 16.47bn (15.6% margin) the prior year. Owner's net income also dropped to KRW 5.34bn from KRW 19.22bn in 2024. Quarterly, Q1 2025 started solidly with revenue of KRW 14.88bn and operating profit of KRW 1.52bn, but Q2 revenue rose to KRW 16.33bn while operating profit shrank to KRW 0.49bn and owner's net income turned negative at -KRW 1.57bn. Q3 was the weakest quarter, with revenue falling to KRW 10.17bn and an operating loss of KRW 0.48bn. Q4, however, saw a strong rebound with revenue of KRW 22.56bn, operating profit of KRW 2.52bn, and owner's net income of KRW 4.43bn. This pattern reflects an order gap in the first half combined with R&D resources concentrated on new products (Gen6 SSD tester, CXL 3.1), pushing revenue recognition toward the second half, particularly Q4. In Q1 2026, revenue was KRW 14.52bn, operating profit KRW 0.60bn, and owner's net income KRW 2.31bn — revenue and operating profit slowed from the prior quarter while net income held up relatively well. Looking at the 2022-2025 annual trend, operating margin fluctuated between 11.2%, 8.0%, 15.6%, and 6.3%, while the debt ratio improved markedly from 110.0% in 2022 to 22.4% in 2024 and 30.1% in 2025, indicating a stronger balance sheet."
+  "ko": "네오셈의 연간 실적은 2022년 매출 746.7억원, 영업이익 83.6억원(영업이익률 11.2%)에서 2024년 매출 1,052.4억원, 영업이익 164.7억원(영업이익률 15.6%)까지 늘며 성장세를 보였다. 그러나 2025년에는 매출이 639.4억원으로 전년 대비 약 39% 줄었고 영업이익도 40.6억원(영업이익률 6.3%)으로 급감해, 지배주주 순이익 역시 192.2억원에서 53.4억원으로 큰 폭 축소됐다. 분기 흐름을 보면 이런 부진과 회복이 뚜렷하게 교차한다. 2025년 2분기 매출은 163.3억원, 영업이익 4.9억원에 그쳤고 순이익은 -15.7억원으로 적자를 냈다. 3분기에는 매출이 101.7억원으로 더 줄고 영업이익은 -4.8억원 적자를 기록했으나, 순이익은 7.2억원으로 흑자 전환했다. 4분기에는 매출이 225.6억원으로 직전 분기의 두 배 이상 뛰었고 영업이익 25.2억원, 순이익 44.3억원으로 실적이 크게 개선됐다. 2026년 1분기에는 매출이 145.2억원으로 다시 줄며 영업이익 6.0억원, 순이익 23.1억원으로 다소 숨고르기를 했지만, 2분기에는 매출 360.0억원, 영업이익 114.2억원(영업이익률 약 31.7%), 순이익 88.0억원으로 최근 5개 분기 중 가장 큰 실적을 기록했다. 이처럼 분기별로 매출과 이익이 큰 폭으로 출렁이는 것은 장비업체 특성상 대형 공급계약의 인도·매출인식 시점에 따라 실적이 몰리는 수주형 사업 구조 때문으로 해석된다.",
+  "en": "Neosem's annual results grew from KRW 74.7 billion in revenue and KRW 8.4 billion in operating profit (11.2% margin) in 2022 to KRW 105.2 billion in revenue and KRW 16.5 billion in operating profit (15.6% margin) in 2024. In 2025, however, revenue fell roughly 39% year-over-year to KRW 63.9 billion, and operating profit dropped sharply to KRW 4.1 billion (6.3% margin), with owners' net income shrinking from KRW 19.2 billion to KRW 5.3 billion. The quarterly pattern shows a clear alternation between weakness and recovery. In 2Q25, revenue was only KRW 16.3 billion with operating profit of KRW 0.5 billion, and the company posted a net loss of KRW 1.6 billion. In 3Q25, revenue fell further to KRW 10.2 billion with an operating loss of KRW 0.5 billion, though net income turned positive at KRW 0.7 billion. In 4Q25, revenue more than doubled quarter-on-quarter to KRW 22.6 billion, with operating profit of KRW 2.5 billion and net income of KRW 4.4 billion, marking a significant improvement. Revenue eased again to KRW 14.5 billion in 1Q26 with operating profit of KRW 0.6 billion and net income of KRW 2.3 billion, but 2Q26 delivered the strongest quarter in the recent five-quarter window, with revenue of KRW 36.0 billion, operating profit of KRW 11.4 billion (roughly 31.7% margin), and net income of KRW 8.8 billion. This large quarter-to-quarter swing in revenue and profit reflects the order-driven nature of the equipment business, where results cluster around the delivery and revenue-recognition timing of large supply contracts."
  },
  "industry": {
-  "ko": "네오셈이 속한 반도체 후공정 검사장비 시장은 AI 서버·데이터센터 확산에 따른 고성능 메모리 검증 수요 확대라는 구조적 성장 동력을 안고 있다. 관련 리서치에 따르면 2026년 글로벌 반도체 장비 시장은 1,390억 달러 규모로 전망되며, 그 중 테스트 장비 시장은 93억 달러(+23.2% YoY)로 역대 최대치를 경신할 전망(SEMI 기준)이라는 분석이 있다. HBM 테스트 장비 시장에 대해서는 2026년 전년 대비 105% 성장한 1조 4,800억 원 규모로 예상되며, 번인 테스트 장비 필요 대수도 80% 이상 증가할 전망이라는 민간 리서치 추정치도 제시된 바 있다. 다만 이 시장은 테라다인·어드반테스트 등 대형 장비사가 여전히 주도하고 있고, HBM 번인 테스터 분야에는 유니테스트·테크윙 등 국내 경쟁사도 진입해 있어 네오셈의 위치는 SSD·CXL이라는 특화 영역에서의 틈새 경쟁력에 기반한다. CXL 시장은 아직 초기 단계로, CXL 메모리 시장의 상업적 개화 시점이 2026년 하반기 이후로 지연될 경우 신규 매출원의 기여가 제한적일 수 있다는 우려도 존재한다. 반대로 삼성전자와 SK하이닉스가 '넥스트 HBM'으로 불리는 CXL 메모리 양산에 나선다는 소식이 이어지며 관련 검사장비 수요에 대한 기대가 유지되고 있다. 업황 사이클 측면에서는 2025년 상반기 메모리 업체들의 투자 집행이 HBM 위주로 편중되며 SSD 테스터 발주가 선별적으로 이뤄졌던 것으로 파악되고, 이후 발주 정상화 여부가 향후 실적의 핵심 변수로 남아 있다.",
-  "en": "Neosem's back-end test equipment market is underpinned by structural growth in high-performance memory verification demand driven by AI servers and data centers. According to one research estimate, the global semiconductor equipment market is projected at $139bn in 2026, with the test equipment segment reaching a record $9.3bn (+23.2% YoY), per SEMI. For HBM test equipment specifically, a private research report suggested the market could grow 105% year-on-year in 2026 to about KRW 1.48tn, with required burn-in tester units rising over 80%. However, the market remains dominated by large players like Teradyne and Advantest, and domestic rivals such as Unitest and Techwing have also entered the HBM burn-in tester space, meaning Neosem's position rests on niche competitiveness in SSD and CXL segments. The CXL market is still in an early stage, and there are concerns that if commercial adoption of the CXL memory market is delayed beyond H2 2026, the contribution from this new revenue source could be limited. Conversely, expectations persist as Samsung Electronics and SK hynix reportedly move toward mass production of CXL memory, dubbed the 'next HBM'. In terms of cycle positioning, memory makers' capex in H1 2025 was reportedly concentrated on HBM, leading to selective SSD tester orders, and whether ordering normalizes going forward remains a key variable for future results."
+  "ko": "네오셈이 속한 반도체 후공정 검사장비 산업은 AI 서버·데이터센터 투자 확대에 따른 메모리 수요 구조 변화의 영향을 크게 받는다. AI 수요 증가로 고대역폭 메모리 및 서버용 D램 수요가 급증하고 있으며, 모바일·범용 메모리 수요도 하반기부터 빠르게 늘고 있는 것으로 파악된다. 업계 관계자는 서버 한 대당 메모리 용량을 크게 늘릴 수 있는 CXL이 클라우드 기업들에 선택이 아닌 필수가 되고 있다고 평가하고 있으며, 기술 규격이 고도화될수록 검사장비사의 부가가치가 커질 것으로 보고 있다. AI 서버 한 대가 만들어질 때 HBM·CXL·SSD 검사장비를 모두 팔 기회가 생기는 구조여서, 네오셈은 이 세 영역의 최종 검사 단계를 모두 다루는 위치에 있다. 다만 이 산업은 고객사(메모리 3사)의 설비투자 결정과 발주 시점에 따라 검사장비 및 부품 수주가 좌우되는 특성이 있어, 업황 반등이 시작되더라도 실적으로 이어지는 시차가 존재한다. 경쟁구도 측면에서는 유니테스트, 테크윙, 엑시콘 등 국내 후공정 검사장비 기업들이 번인·모듈 테스트 분야에서 경쟁하고 있으며, CXL·HBM 검사장비로 경쟁이 확산되는 흐름이 나타나고 있다.",
+  "en": "The back-end semiconductor test equipment industry in which Neosem operates is heavily influenced by shifting memory demand driven by expanding AI server and data center investment. Demand for high-bandwidth memory and server DRAM has surged due to rising AI demand, and demand for mobile and general-purpose memory is also reported to have picked up quickly from the second half. Industry participants view CXL, which can substantially expand memory capacity per server, as having become a necessity rather than an option for cloud companies, with test equipment makers expected to capture more value as specifications advance. Because each AI server built creates an opportunity to sell HBM, CXL, and SSD test equipment, Neosem is positioned across the final test stage of all three categories. That said, the industry's order flow is dictated by the capital-expenditure decisions and procurement timing of a small number of memory makers, meaning there is typically a lag between a cyclical upturn and its translation into equipment-maker results. Domestically, competitors such as Unitest, TechWing, and Exicon compete in burn-in and module test equipment, with competition increasingly spreading into CXL and HBM test equipment as well."
  },
  "outlook": {
-  "ko": "회사 측 설명과 공시를 종합하면 2026년 상반기 실적 경로에는 몇 가지 확인 가능한 이정표가 있다. 우선 PCIe 6세대 SSD 테스트 장비도 올해 개발 완료하고 주요 고객사 데모 테스트 중이라고 밝힌 바 있어, 데모 테스트 통과 후 정식 수주로 이어지는지가 관건이다. CXL 부문에서는 CXL 3.1 사양에 최적화된 양산 테스터를 2026년 상반기 내 고객사에 공급할 계획이라고 밝혔으며, 실제 출하 시점과 규모가 다음 확인 포인트다. 수주 측면에서는 2026년 3~5월에 걸쳐 미국 자회사 NEOSEM TECHNOLOGY INC.를 대상으로 한 공급계약이 잇달아 공시됐는데, 3월 23일에는 56억 2천만 원 규모, 4월 14일에는 Gen5 SSD 테스터 62억 984만 9,911원(최근 매출액 대비 9.71%) 규모, 4월 3일에는 Gen6 SSD 테스터 47억원(매출액 대비 7.35%) 규모, 5월 6일에는 Gen6 SSD 테스터 및 모듈 85억 3,408만 2,042원(매출액 대비 13.35%) 규모 계약이 각각 공시됐다. 자동화 장비 분야에서는 자동화 장비 수주가 내년(2026년)부터 큰 규모로 이뤄질 것이며, 소형압축부착형 메모리모듈(SOCAMM) 전용 제미나이3 장비도 수주 목표로 개발 중이라는 회사 측 언급이 있어 신규 제품군의 진행 상황도 지켜볼 부분이다. 수출탑 관련해서는 2027년 1억 달러 수출탑 달성 가능성도 언급되고 있다는 시장의 기대가 있으나 이는 아직 확정된 목표치가 아니라 전망 수준이다.",
-  "en": "Combining company statements and disclosures, several verifiable milestones exist for the H1 2026 earnings trajectory. First, the company has stated that PCIe Gen6 SSD test equipment was completed this year and is undergoing demo testing with major customers, making conversion from demo to formal orders a key item to watch. On CXL, the company said it plans to supply a CXL 3.1-optimized production tester to customers within H1 2026, with actual shipment timing and volume as the next checkpoint. On the order front, multiple supply contracts with US subsidiary NEOSEM TECHNOLOGY INC. were disclosed between March and May 2026: KRW 5.62bn on March 23, KRW 6.21bn for Gen5 SSD testers (9.71% of recent revenue) on April 14, KRW 4.7bn for Gen6 SSD testers (7.35% of revenue) on April 3, and KRW 8.53bn for Gen6 SSD testers and modules (13.35% of revenue) on May 6. In automation equipment, the company noted automation equipment orders are expected to be sizable starting in 2026, with a dedicated Gemini3 unit for SOCAMM modules under development as a target order, making progress on this new product line worth monitoring. Regarding export targets, market commentary references the possibility of reaching a $100 million export tower by 2027, though this remains an aspirational figure rather than a confirmed company target."
+  "ko": "네오셈은 2026년 3월 27일 SSD·CXL 검사장비를 중심으로 한 기업가치 제고 계획을 공시하며, GEN5·GEN6 SSD와 CXL 3.1, CLT, 테스트 자동화 등 차세대 제품군의 성능을 지속적으로 끌어올리겠다는 방침을 제시했다. 회사 관계자는 2025년 10월 초 CXL 3.1 메모리 검사장비 개발이 90%를 넘어선 거의 완료 단계이며 고객사와 계속 협의 중이라고 밝힌 바 있다. 실제로 2026년 들어 미국 자회사 NEOSEM TECHNOLOGY INC.를 통한 해외 공급계약이 연이어 공시됐는데, 4월 14일에는 GEN5 SSD 테스터 계약(62.1억원, 2026년 4월 14일~8월 31일), 4월 3일에는 GEN6 SSD 테스터 계약(46.97억원, 2026년 4월 3일~11월 30일), 5월 6일에는 GEN6 SSD 테스터 및 모듈 계약(85.3억원, 2026년 5월 6일~8월 31일)이 각각 체결됐다. 이에 앞서 2025년 11월에는 141억원 규모의 검사장비 공급계약(2025년 11월 14일~2026년 6월 30일)도 있었다. HBM 쪽에서는 BX 번인테스터가 삼성전자 QA 단계에 있다고 회사가 밝힌 만큼, 이 장비가 양산 단계로 전환되는지가 중요한 관찰 포인트다. CXL 시장에 대해서는 시장조사업체 욜 인텔리전스가 2026년 21억달러, 2028년 150억달러 규모로 성장할 것으로 전망한 바 있어, 검사장비 수요 확대 여부를 함께 지켜볼 필요가 있다.",
+  "en": "On March 27, 2026, Neosem disclosed a corporate value-up plan centered on SSD and CXL test equipment, committing to continuously enhance performance across next-generation product lines including Gen5/Gen6 SSD, CXL 3.1, CLT, and test automation. A company representative stated in early October 2025 that development of the CXL 3.1 memory test device had passed 90% completion and was nearly finished, with discussions with customers ongoing. Indeed, through 2026 a series of overseas supply contracts via US subsidiary NEOSEM TECHNOLOGY INC. were disclosed: a GEN5 SSD tester contract worth KRW 6.21 billion (April 14 to August 31, 2026) on April 14; a GEN6 SSD tester contract worth KRW 4.70 billion (April 3 to November 30, 2026) on April 3; and a GEN6 SSD tester and module contract worth KRW 8.53 billion (May 6 to August 31, 2026) on May 6. Prior to these, a KRW 14.1 billion test equipment supply contract (November 14, 2025 to June 30, 2026) was also disclosed in November 2025. On the HBM side, given the company's statement that its BX burn-in tester is at the QA stage with Samsung Electronics, whether this device transitions to mass production is an important point to watch. On the CXL market, Yole Intelligence has forecast the market to reach $2.1 billion in 2026 and $15 billion by 2028, making it worth monitoring whether test equipment demand expands in line with this."
  },
  "valuation_comment": {
-  "ko": "네오셈은 2025년 실적 부진과 4분기 이후의 회복 조짐이 교차하며 시장의 밸류에이션 평가가 엇갈리는 구간에 있다. 순자산가치 대비 주가 수준을 보면 현재 자기자본 대비 프리미엄이 형성돼 있는 편으로, 이는 실적 변동성이 큰 소형 반도체 장비주에 흔히 나타나는 특징이기도 하다. 이익 측면에서는 2025년 한 해 순이익이 크게 위축됐다가 2025년 4분기와 2026년 1분기에 걸쳐 이익 회복 조짐이 나타나는 국면으로, 향후 분기 실적이 이러한 회복 흐름을 이어가는지가 밸류에이션 재평가의 핵심 변수로 남아 있다. 배당 측면에서는 주당 100원의 현금배당이 확정된 바 있으며, 이는 이익 규모 대비 상대적으로 높은 배당성향을 반영한 결과로 해석된다. 증권가 일각에서는 미래에셋증권이 유일하게 네오셈을 커버하고 있으나 투자의견은 NR(Not Rated), 목표가 미제시 상태라고 언급하는 등 커버리지가 제한적인 소형주 특성상 시장 컨센서스 형성이 더딘 편이다. 결과적으로 밸류에이션 판단은 CXL·Gen6 신제품의 실제 매출 기여 시점과 규모에 대한 확신 수준에 따라 크게 갈릴 수 있는 구간으로 보인다.",
-  "en": "Neosem sits at a valuation crossroads where weak 2025 results intersect with recovery signs emerging from Q4 onward. Relative to net asset value, the stock trades at a premium to book value, a pattern common among small-cap semiconductor equipment names with volatile earnings. On the earnings side, net income contracted sharply over 2025 before showing signs of recovery in Q4 2025 and Q1 2026, and whether this recovery trend continues in coming quarters remains the key variable for any valuation re-rating. On dividends, a cash dividend of KRW 100 per share has been confirmed, reflecting a relatively high payout ratio against the scale of profits. Coverage remains limited, with one report noting Mirae Asset Securities as the sole covering broker, rated Not Rated with no target price presented, meaning market consensus formation is slower than for more widely covered names. Ultimately, valuation judgments may diverge significantly depending on conviction around the timing and scale of actual revenue contribution from new CXL and Gen6 products."
+  "ko": "네오셈의 주가는 2024년 실적 정점 국면에서 형성된 과거 거래 밴드의 상단권에 가까운 수준에서 움직이고 있으며, 순자산가치 대비로는 상당한 프리미엄이 반영된 구간에서 거래되는 모습이다. 이는 2025년 실적이 크게 위축된 이후 2026년 2분기에 나타난 이익 회복 흐름이 주가에 어느 정도 선반영된 결과로 해석될 수 있다. 배당 측면에서는 현금배당이 일부 이뤄지고 있으나, 배당수익률 자체는 성장형 소형 장비주 특성상 업종 평균 대비 낮은 편에 속한다. 증권사 커버리지가 두 곳 안팎으로 제한적이어서, 향후 실적 추정치가 갈릴 경우 밸류에이션 판단에 유의가 필요한 구간이다. 다년간의 실적을 보면 2022~2024년 이익 성장 후 2025년 위축, 2026년 상반기 회복이라는 흐름이 나타나고 있어, 이 같은 이익 사이클의 위치를 함께 살펴볼 필요가 있다.",
+  "en": "Neosem's share price is trading near the upper end of the historical range established during the 2024 earnings peak, and it is changing hands at a level that reflects a meaningful premium to net asset value. This can be interpreted as the market partially pricing in the earnings recovery seen in 2Q26 following the sharp contraction in 2025 results. On the dividend side, the company does pay a partial cash dividend, but the yield itself sits below the sector average, consistent with characteristics typical of a growth-oriented small-cap equipment maker. With brokerage coverage limited to around two firms, valuation judgments warrant caution given the potential for wide dispersion in future earnings estimates. Looking at the multi-year pattern of profit growth from 2022 to 2024, contraction in 2025, and recovery in the first half of 2026, it is worth considering where the company currently stands within this earnings cycle."
  },
  "bull": [
   {
    "title": {
-    "ko": "Gen5 SSD 테스터 사실상 단독 공급",
-    "en": "De facto sole supplier of Gen5 SSD testers"
+    "ko": "Gen5 SSD 테스터의 구조적 지위",
+    "en": "Structural Position in Gen5 SSD Testers"
    },
    "body": {
-    "ko": "글로벌 대형 장비사인 어드반테스트가 SSD 테스터 사업에서 철수했다는 보도가 나오면서, 관련 업계에서는 PCIe 5세대 CPU 기반 SSD 테스터 분야에서 네오셈이 유일한 공급자로 남았다는 평가가 나온다. 삼성전자, SK하이닉스, 마이크론 등 상위 메모리 기업들이 주요 고객사로 확보돼 있어, eSSD 수요 확대 시 수혜가 집중될 수 있는 구조다. 2026년 3~5월에 걸쳐 미국 자회사 대상 공급계약이 연이어 공시되며 수주 재개 신호가 감지되고 있다."
+    "ko": "네오셈은 세계 최초로 CXL 1.1과 2.0 메모리 검사장비를 상용화한 기술력을 보유하고 있으며, 이를 기반으로 SSD 테스터 시장에서 오랜 업력을 축적해왔다. AI 서버·데이터센터 확산에 따라 eSSD 등 저장장치 수요가 늘어나면 관련 검사장비 발주도 함께 증가할 여지가 있다. 2026년 들어 미국 자회사를 통한 GEN5·GEN6 SSD 테스터 공급계약이 잇달아 공시된 점은 이 사업의 수주 재개를 뒷받침하는 사실이다.",
+    "en": "Neosem holds proprietary technology as the world's first company to commercialize CXL 1.1 and 2.0 memory test devices, building on a long track record in the SSD tester market. As AI servers and data centers proliferate, growing demand for storage devices such as eSSDs creates room for related test equipment orders to increase. The series of GEN5 and GEN6 SSD tester supply contracts disclosed through the US subsidiary in 2026 supports the fact that order flow in this business has resumed."
    }
   },
   {
    "title": {
-    "ko": "CXL 검사장비 세계 최초 상용화 이력",
-    "en": "First-mover track record in CXL test equipment"
+    "ko": "CXL·HBM 신제품 다각화",
+    "en": "Diversification into CXL and HBM"
    },
    "body": {
-    "ko": "네오셈은 CXL 1.1 및 2.0 검사장비를 세계 최초로 상용화한 이력을 보유하고 있으며, CXL 3.1 양산 테스터도 2026년 상반기 내 고객사 공급을 계획하고 있다고 밝혔다. CXL 시장은 AI 서버·데이터센터 확산과 맞물려 중장기 성장이 기대되는 영역으로 꼽힌다. 다만 상업적 개화 시점은 여전히 불확실성이 남아 있다."
+    "ko": "네오셈은 SSD 테스터 단일 축에서 CXL 3.1 개발과 HBM용 BX 번인테스터로 제품군을 확장하고 있다. CXL 3.1은 개발이 거의 완료 단계에 이른 것으로 회사가 밝혔고, HBM 번인테스터는 삼성전자 QA 단계에 있는 것으로 알려졌다. 이 두 제품이 양산 단계로 전환될 경우 매출원의 다변화 효과를 기대할 수 있다.",
+    "en": "Neosem is expanding beyond its core SSD tester business into CXL 3.1 development and a BX burn-in tester for HBM. The company has stated that CXL 3.1 development is nearly complete, and the HBM burn-in tester is reported to be at the QA stage with Samsung Electronics. If these two products transition to mass production, a diversification effect on revenue sources could be expected."
    }
   },
   {
    "title": {
-    "ko": "재무구조 개선",
-    "en": "Improving balance sheet"
+    "ko": "2026년 2분기 실적의 뚜렷한 회복",
+    "en": "A Clear Earnings Recovery in 2Q26"
    },
    "body": {
-    "ko": "부채비율이 2022년 110.0%에서 2024년 22.4%, 2025년 30.1%로 크게 낮아지며 재무 안정성이 개선된 모습이다. 2025년 순이익이 위축됐음에도 영업활동현금흐름은 37억 4,087만원으로 플러스를 유지했다. 이러한 재무 여력은 신제품 연구개발 투자를 뒷받침하는 기반이 될 수 있다."
+    "ko": "2026년 2분기 매출 360.0억원, 영업이익 114.2억원, 영업이익률 약 31.7%로 최근 5개 분기 중 가장 큰 실적을 기록했다. 이는 직전 분기의 부진에서 벗어난 뚜렷한 반등으로, 수주형 사업 특성상 이익 레버리지가 크게 작동했음을 보여준다. 이런 흐름이 이어질지는 향후 발표되는 분기 실적에서 확인이 필요하다.",
+    "en": "In 2Q26, revenue reached KRW 36.0 billion with operating profit of KRW 11.4 billion and an operating margin of roughly 31.7%, the strongest quarter in the recent five-quarter window. This marks a clear rebound from the weakness of the prior quarter and demonstrates the large operating leverage inherent to the order-driven business model. Whether this trend continues will need to be confirmed in future quarterly results."
    }
   }
  ],
  "bear": [
   {
    "title": {
-    "ko": "2025년 실적 급감과 변동성",
-    "en": "Sharp 2025 earnings decline and volatility"
+    "ko": "분기 실적의 큰 변동성",
+    "en": "High Quarterly Earnings Volatility"
    },
    "body": {
-    "ko": "2025년 매출은 639억원으로 전년 1,052억원 대비 큰 폭 감소했고, 영업이익률도 15.6%에서 6.3%로 낮아졌다. 분기별로는 2분기 순손실, 3분기 영업손실을 기록하는 등 변동성이 매우 컸다. 수주 비선형성이 큰 사업 특성상 향후에도 분기별 편차가 이어질 가능성이 있다."
+    "ko": "2025년 2분기부터 2026년 2분기까지 다섯 개 분기의 매출과 영업이익은 적자와 흑자를 오가며 큰 폭으로 출렁였다. 3분기 영업손실, 4분기 급반등, 1분기 재차 둔화, 2분기 재반등의 패턴은 수주 시점에 따라 실적이 몰리는 구조적 특성을 보여준다. 이런 변동성은 특정 분기 실적만으로 추세를 단정하기 어렵게 한다.",
+    "en": "Across the five quarters from 2Q25 to 2Q26, revenue and operating profit swung sharply between losses and gains. The pattern of an operating loss in 3Q, a sharp rebound in 4Q, renewed softness in 1Q, and another rebound in 2Q reflects the structural characteristic of results clustering around order timing. This volatility makes it difficult to draw firm trend conclusions from any single quarter."
    }
   },
   {
    "title": {
-    "ko": "고객 집중도와 경쟁 심화",
-    "en": "Customer concentration and intensifying competition"
+    "ko": "2025년 연간 실적의 급격한 위축",
+    "en": "Sharp Annual Contraction in 2025"
    },
    "body": {
-    "ko": "매출이 소수 대형 메모리 고객사에 집중돼 있는 것으로 추정되며, 이들의 발주 정책 변화에 실적이 크게 좌우될 수 있다. HBM 번인 테스터 분야에는 유니테스트, 테크윙 등 경쟁사가 이미 진입해 있어 가격 경쟁 심화 가능성도 제기된다. CXL 분야에서도 엑시콘 등 국내 경쟁사가 추격하고 있다."
+    "ko": "2024년 사상 최대 실적을 기록한 이후 2025년 매출은 39% 감소했고 영업이익률은 15.6%에서 6.3%로 크게 낮아졌다. 이는 고객사의 설비투자 시점 변화에 실적이 그대로 노출된다는 점을 보여주는 사례다. 향후에도 유사한 수주 공백기가 재현될 가능성을 배제할 수 없다.",
+    "en": "After posting record results in 2024, revenue fell 39% in 2025 and operating margin dropped sharply from 15.6% to 6.3%. This illustrates how directly results are exposed to shifts in customer capital-expenditure timing. The possibility of a similar order gap recurring in the future cannot be ruled out."
    }
   },
   {
    "title": {
-    "ko": "교환사채 발행에 따른 희석 우려",
-    "en": "Dilution risk from exchangeable bond issuance"
+    "ko": "제한적인 증권사 커버리지",
+    "en": "Limited Brokerage Coverage"
    },
    "body": {
-    "ko": "2025년 12월 자사주를 담보로 한 교환사채(EB)가 발행된 것으로 파악되며, 교환대상 주식수는 발행주식총수의 약 2.0% 수준으로 전해진다. 교환청구권이 행사될 경우 주식 수 증가에 따른 희석 효과가 발생할 수 있다. 향후 교환청구 진행 상황을 지켜볼 필요가 있다."
+    "ko": "네오셈에 대한 증권사 커버리지는 소수에 그치고 있어, 시장 컨센서스 형성이 상대적으로 제한적이다. 이는 실적 추정치의 신뢰 구간이 넓어질 수 있음을 의미하며, 정보 비대칭에 따른 주가 변동성을 키울 수 있는 요인이다.",
+    "en": "Brokerage coverage of Neosem remains limited to a small number of firms, meaning market consensus formation is relatively constrained. This implies a wider confidence range around earnings estimates and can be a factor that amplifies share price volatility due to information asymmetry."
    }
   }
  ],
  "risks": [
   {
    "cat": {
-    "ko": "업황 사이클 리스크",
-    "en": "Industry cycle risk"
+    "ko": "고객 집중 리스크",
+    "en": "Customer Concentration Risk"
    },
    "body": {
-    "ko": "메모리 반도체 업체들의 설비투자 사이클에 따라 검사장비 발주 규모가 크게 좌우된다. AI 투자 사이클이 예상보다 빠르게 둔화될 경우 SSD·CXL 테스터 발주가 다시 위축될 수 있다. 2025년 상반기의 수주 공백이 재현될 가능성도 배제할 수 없다."
+    "ko": "네오셈의 최종 수요처는 삼성전자, SK하이닉스 등 소수의 글로벌 메모리 반도체 기업에 집중돼 있는 것으로 파악된다. 이들 기업의 설비투자 계획이 축소되거나 지연될 경우 검사장비 발주에도 직접적인 영향이 미칠 수 있다. 특히 HBM 번인테스터가 삼성전자 QA 단계에 머물러 있어, 양산 전환 여부와 시점이 불확실하다.",
+    "en": "Neosem's end customers appear concentrated among a small number of global memory chipmakers such as Samsung Electronics and SK Hynix. If these companies scale back or delay their capital expenditure plans, test equipment orders could be directly affected. In particular, the HBM burn-in tester remains at the QA stage with Samsung Electronics, leaving the timing and likelihood of a transition to mass production uncertain."
    }
   },
   {
    "cat": {
-    "ko": "신제품 일정 지연 리스크",
-    "en": "New product schedule delay risk"
+    "ko": "경쟁 심화 리스크",
+    "en": "Intensifying Competition Risk"
    },
    "body": {
-    "ko": "Gen6 SSD 테스터는 아직 고객사 데모 테스트 단계에 머물러 있으며, CXL 3.1 양산 테스터 역시 공급 계획 시점을 지키지 못할 가능성이 있다. CXL 메모리 시장의 상업적 개화가 2026년 하반기 이후로 지연될 경우 신규 매출원의 기여가 제한적일 수 있다는 우려도 제기된 바 있다."
+    "ko": "유니테스트, 테크윙, 엑시콘 등 국내 후공정 검사장비 기업들이 번인·모듈 테스트 시장에서 경쟁하고 있으며, CXL·HBM 검사장비 영역으로도 경쟁이 확산되고 있다. 신기술 분야에서 경쟁사가 유사한 제품을 상용화할 경우 가격 경쟁이 심화될 가능성이 있다.",
+    "en": "Domestic back-end test equipment companies such as Unitest, TechWing, and Exicon compete in the burn-in and module test market, and competition is also spreading into CXL and HBM test equipment. If competitors commercialize similar products in these newer technology areas, price competition could intensify."
    }
   },
   {
    "cat": {
-    "ko": "소형주 유동성·정보 비대칭 리스크",
-    "en": "Small-cap liquidity and information asymmetry risk"
+    "ko": "수출 비중에 따른 환율·수주 편차 리스크",
+    "en": "Export Exposure and Order Volatility Risk"
    },
    "body": {
-    "ko": "시가총액이 상대적으로 작고 증권사 커버리지가 제한적인 종목 특성상 정보 비대칭성과 주가 변동성이 클 수 있다. 실적 발표나 수주 공시 등 개별 이벤트에 주가가 민감하게 반응하는 경향이 관찰된다."
+    "ko": "네오셈은 매출 대부분이 수출에서 발생하는 구조로, 원달러 환율 변동이 실적에 영향을 줄 수 있다. 또한 장비 산업 특성상 수주가 특정 분기에 몰리는 비선형적 패턴이 나타날 수 있어, 특정 시점의 실적만으로 향후 추세를 단정하기 어렵다.",
+    "en": "Since most of Neosem's revenue comes from exports, fluctuations in the KRW/USD exchange rate can affect its results. In addition, given the nature of the equipment industry, orders can show a non-linear pattern concentrated in specific quarters, making it difficult to draw firm conclusions about future trends from results in any single period."
    }
   }
  ],
  "checkpoints": [
   {
    "when": {
-    "ko": "2026년 8월 중순 이후",
-    "en": "From mid-August 2026"
+    "ko": "2026년 11월 중순",
+    "en": "Mid-November 2026"
    },
    "what": {
-    "ko": "2026년 2분기 실적 발표 여부와 매출·영업이익 회복세가 1분기 대비 이어지는지 확인 필요.",
-    "en": "Watch for Q2 2026 earnings release and whether revenue/operating profit recovery continues from Q1 levels."
+    "ko": "2026년 3분기보고서 법정 제출기한(공시일 기준)이 도래하는 시점으로, 2분기의 실적 반등이 이어지는지 확인이 필요하다.",
+    "en": "The statutory filing deadline for the 3Q26 quarterly report approaches, making it important to check whether the 2Q26 earnings rebound continues."
    }
   },
   {
    "when": {
-    "ko": "2026년 하반기",
-    "en": "H2 2026"
+    "ko": "2026년 11월 30일",
+    "en": "November 30, 2026"
    },
    "what": {
-    "ko": "CXL 3.1 양산 테스터의 실제 고객사 출하 여부와 규모, Gen6 SSD 테스터의 데모 테스트 통과 후 정식 수주 전환 여부 점검.",
-    "en": "Check whether the CXL 3.1 production tester is actually shipped to customers and at what scale, and whether the Gen6 SSD tester converts from demo testing to formal orders."
+    "ko": "2026년 4월 체결된 GEN6 SSD 테스터 공급계약(46.97억원)의 계약기간 종료 시점으로, 후속 계약 체결 여부와 매출인식 규모를 확인할 필요가 있다.",
+    "en": "This marks the end of the contract period for the GEN6 SSD tester supply agreement (KRW 4.70 billion) signed in April 2026, warranting a check on whether follow-on contracts are signed and the scale of revenue recognized."
    }
   },
   {
    "when": {
-    "ko": "수시(공시 기준)",
-    "en": "Ongoing (per disclosures)"
+    "ko": "2026년 4분기 중",
+    "en": "During 4Q26"
    },
    "what": {
-    "ko": "미국 자회사 등 대상 단일판매·공급계약 공시가 이어지는지, 계약 규모와 빈도가 회복 추세를 뒷받침하는지 확인.",
-    "en": "Monitor whether single sales/supply contract disclosures with the US subsidiary continue, and whether their size and frequency support a recovery trend."
+    "ko": "CXL 3.1 양산 테스터의 고객사 납품 및 매출 인식 진행 상황을 공시나 IR 자료를 통해 확인할 필요가 있다.",
+    "en": "Progress on customer delivery and revenue recognition for the CXL 3.1 mass-production tester should be checked via disclosures or IR materials."
    }
   },
   {
    "when": {
-    "ko": "교환사채 관련 공시 시점",
-    "en": "Timing of exchangeable bond-related disclosures"
+    "ko": "2027년 초",
+    "en": "Early 2027"
    },
    "what": {
-    "ko": "2025년 12월 발행된 교환사채의 교환청구 진행 상황과 주식 수 희석 여부 점검.",
-    "en": "Track progress of exchange requests on the December 2025 exchangeable bond and any resulting share dilution."
+    "ko": "삼성전자 QA 단계에 있는 HBM용 BX 번인테스터가 양산 전환 단계로 진입하는지 여부를 추가로 확인할 필요가 있다.",
+    "en": "Whether the HBM BX burn-in tester, currently at the QA stage with Samsung Electronics, advances to mass production should be further monitored."
    }
   }
  ],
  "verdict": {
   "body": {
-   "ko": "네오셈은 2025년 한 해 큰 폭의 실적 위축을 겪었으나, 4분기 매출 급증과 2026년 1분기 순이익 회복을 계기로 반등의 초입에 서 있는 것으로 보인다. Gen5 SSD 테스터 분야에서의 사실상 독점적 지위와 CXL 검사장비 세계 최초 상용화 이력은 구조적 강점으로 꼽히지만, 이러한 강점이 실제 매출·이익으로 얼마나, 언제 이어질지는 아직 확정되지 않았다. 2026년 3~5월 이어진 미국 자회사 대상 공급계약 공시는 수주 재개의 긍정적 신호이나, 계약 규모는 여전히 분기 매출 대비 10% 내외 수준에 그쳐 추세 전환을 단정하기는 이르다. 고객 집중도, 경쟁사 진입, 교환사채 희석 가능성 등은 균형 있게 살펴야 할 요인이다. 다가오는 2분기 실적 발표와 CXL 3.1·Gen6 제품의 실제 공급 시점이 향후 실적 경로를 가늠할 핵심 변수가 될 전망이다. 투자 판단에 앞서 공시와 분기 실적을 지속적으로 확인하는 것이 필요하다.",
-   "en": "Neosem experienced a significant earnings contraction throughout 2025, but appears to be at the early stage of a rebound following the Q4 revenue surge and Q1 2026 net income recovery. Its de facto exclusive position in Gen5 SSD testers and its track record as the first to commercialize CXL test equipment are structural strengths, though how much and when these translate into actual revenue and profit remains unconfirmed. The string of supply contract disclosures with the US subsidiary from March to May 2026 is a positive signal for order resumption, but contract sizes remain around 10% or less of quarterly revenue, making it premature to declare a definitive trend reversal. Customer concentration, competitive entry, and potential dilution from the exchangeable bond are factors that warrant balanced consideration. The upcoming Q2 earnings release and the actual supply timing of CXL 3.1 and Gen6 products are likely to be key variables shaping the future earnings path. Continuous monitoring of disclosures and quarterly results is advisable before forming any investment judgment."
+   "ko": "네오셈은 Gen5 SSD 테스터 사업을 축으로 CXL과 HBM 검사장비로 제품군을 넓혀가고 있는 반도체 후공정 검사장비 전문기업이다. 2022~2024년 이익 성장을 이어가다 2025년 매출과 영업이익률이 크게 축소됐고, 2026년 들어서는 1분기 숨고르기 후 2분기에 최근 5개 분기 중 가장 강한 실적을 기록하는 등 분기별로 뚜렷한 등락이 이어지고 있다. 미국 자회사를 통한 해외 공급계약이 2026년 들어 여러 차례 공시되며 수주 재개 신호가 나타났고, CXL 3.1과 HBM 번인테스터 등 신제품의 진행 상황이 중장기 성장동력으로 거론된다. 다만 증권사 커버리지가 제한적이고 고객사 설비투자 시점에 실적이 크게 좌우되는 구조여서, 향후 발표되는 분기 실적과 신제품 매출화 여부를 함께 확인하는 것이 중요하다. 종합적으로 이 리포트는 투자의견이나 목표주가를 제시하지 않으며, 정보 제공을 목적으로 작성됐다.",
+   "en": "Neosem is a back-end semiconductor test equipment specialist that is expanding beyond its core Gen5 SSD tester business into CXL and HBM test equipment. After sustained profit growth from 2022 to 2024, revenue and operating margin contracted sharply in 2025, and 2026 has shown pronounced quarter-to-quarter swings, with a soft 1Q followed by the strongest quarter in the recent five-quarter window in 2Q. A series of overseas supply contracts disclosed through its US subsidiary in 2026 signaled a resumption of order flow, and progress on new products such as the CXL 3.1 tester and HBM burn-in tester is cited as a potential mid- to long-term growth driver. However, with limited brokerage coverage and results heavily dependent on the timing of customer capital expenditure, it will be important to monitor both upcoming quarterly results and the commercialization progress of new products. Overall, this report does not present an investment opinion or target price and is intended for informational purposes only."
   }
  },
  "sources": [
-  "https://www.thelec.kr/news/articleView.html?idxno=44031",
-  "https://www.xn--9v2b23mi6ckvf86n.com/report/46?ch=open",
-  "https://alphadistill.com/report/487",
-  "https://www.widedaily.com/news/articleView.html?idxno=259244",
-  "https://news.jkn.co.kr/post/857447",
+  "https://m.thinkpool.com/compDiscuss/cont/1023727",
   "https://news.nate.com/view/20260414n18766",
-  "https://m.thinkpool.com/news/view/16822392",
+  "https://www.digitaltoday.co.kr/news/articleView.html?idxno=648847",
+  "https://www.neosem.com/s3/s3_1.php",
+  "https://www.xn--9v2b23mi6ckvf86n.com/report/46?ch=open",
+  "https://m.thinkpool.com/stockDiscuss/253590/cont/11854462",
   "https://www.digitaltoday.co.kr/news/articleView.html?idxno=662800",
-  "https://m.thinkpool.com/compDiscuss/cont/1021105",
-  "https://itooza.com/vscore/253590",
-  "https://www.financialpost.co.kr/news/articleView.html?idxno=206514",
-  "https://stockinfo7.com/theme/list?page=0&search=SK%ED%95%98%EC%9D%B4%EB%8B%89%EC%8A%A4",
-  "https://files-scs.pstatic.net/2025/12/13/bkYYoN46xM/[%EB%B8%8C%EB%A6%AC%ED%95%91]%20HBM%20IC%20%ED%85%8C%EC%8A%A4%ED%8A%B8%20%EC%9E%A5%EB%B9%84%20%EC%8B%9C%EC%9E%A5%EC%A1%B0%EC%82%AC%EB%B3%B4%EA%B3%A0%EC%84%9C_qyresearch%20korea.pdf",
-  "https://psalm231.com/entry/%EB%84%A4%EC%98%A4%EC%85%88-%EC%82%AC%EC%97%85-%EA%B0%9C%EC%9A%94-%EB%B0%8F-%EA%B8%B0%EC%88%A0%EB%A0%A5-%ED%88%AC%EC%9E%90-%ED%8F%AC%EC%9D%B8%ED%8A%B8",
-  "https://www.komachine.com/ko/companies/techwing",
-  "https://www.betanews.net/article/view/beta202608120009",
-  "https://kind.krx.co.kr/common/disclsviewer.do?method=search&acptno=20251113000782&docno=&viewerhost=",
-  "https://alphasquare.co.kr/home/stock-summary?code=253590"
+  "https://comp.fnguide.com/SVO2/ASP/SVD_Main.asp?gicode=A253590",
+  "https://wcomp.fnguide.com/CompanyInfo/Snapshot?cmp_cd=253590",
+  "https://www.digitaltoday.co.kr/news/articleView.html?idxno=653407",
+  "https://www.epnc.co.kr/news/articleView.html?idxno=327108",
+  "https://finance.thesmileinfo.com/2026/09/semiconductor.html",
+  "https://alphasquare.co.kr/home/stock-summary?code=253590",
+  "https://m.thinkpool.com/compDiscuss/cont/1016541",
+  "https://m.thinkpool.com/compDiscuss/cont/1013525",
+  "https://www.investing.com/equities/daishin-balance-3rd-special-purpose-earnings",
+  "https://w4.kirs.or.kr/download/research/250929_%EB%84%A4%EC%98%A4%EC%85%88(%EB%9D%BC%EC%9D%B4%EC%A7%95).pdf",
+  "https://alphadistill.com/report/487"
  ],
  "v": 2,
  "model": "claude-sonnet-5",
@@ -214,11 +223,11 @@
   "반도체"
  ],
  "market": "코스닥",
- "reportDate": "2026-08-15",
- "reportTs": "2026-08-15 18:20",
- "dataDate": "20260821",
+ "reportDate": "2026-09-05",
+ "reportTs": "2026-09-05 05:51",
+ "dataDate": "20260904",
  "quant": {
-  "asOf": "2026-08-22",
+  "asOf": "2026-09-04",
   "fs_basis": "연결(CFS) · DART 공시 확정치 · 지배주주 기준 순이익",
   "annual": [
    {
@@ -229,6 +238,7 @@
     "np_owner": 5342193959,
     "equity": 119203555288,
     "equity_owner": 119203555288,
+    "equity_nci": null,
     "liab": 35852715793,
     "cfo": 3740873104,
     "eps_basic": 126,
@@ -244,6 +254,7 @@
     "np_owner": 19215187089,
     "equity": 115895048429,
     "equity_owner": 115895048429,
+    "equity_nci": null,
     "liab": 26009826668,
     "cfo": 19293385194,
     "eps_basic": 453,
@@ -259,6 +270,7 @@
     "np_owner": 8281863319,
     "equity": 86808779775,
     "equity_owner": 86808779775,
+    "equity_nci": null,
     "liab": 19633622819,
     "cfo": 10575534431,
     "eps_basic": 219,
@@ -274,6 +286,7 @@
     "np_owner": 9998738550,
     "equity": 62280243724,
     "equity_owner": 62280243724,
+    "equity_nci": null,
     "liab": 68533207174,
     "cfo": 13275738498,
     "eps_basic": 273,
@@ -315,23 +328,26 @@
    }
   ],
   "valuation": {
-   "price": 10460,
-   "mcap": 0.4589,
+   "price": 11290,
+   "mcap": 0.4953,
    "shares": 43869164,
    "total_shares": 43869164,
    "wavg_shares": 43059283,
-   "per": 27.5,
+   "per": 29.711,
    "eps": 380,
-   "pbr": 3.36,
+   "pbr": 3.6314,
    "bps": 3109,
    "roe_ttm": 13.2,
    "ttm_window": "2025Q3~2026Q2",
    "ttm_np_owner": 16263523509,
-   "pbr_krx": 3.73,
+   "ccy": "KRW",
+   "bps_src": "자체",
+   "eps_src": "공시",
+   "pbr_krx": 4.02,
    "bps_krx": 2805.0,
    "basis": "PER·EPS·PBR·BPS 모두 자체 산출(네이버·토스와 동일 방식) · 배당은 DART 공시 주당현금배당금(보완:KRX) ÷ 현재가",
    "dps": 100.0,
-   "div": 0.96
+   "div": 0.89
   }
  }
 }
