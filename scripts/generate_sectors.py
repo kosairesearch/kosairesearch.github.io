@@ -17,15 +17,15 @@ data/sectors.js (window.KOS_SECTORS) 를 만든다. 업종별 상위 종목·집
 
 ■ 언제 도는가
 
-  분기 1회, 4·6·9·12월 5일. 정기보고서가 제출된 뒤로 날짜를 잡았다.
+  분기 1회, 정기보고서 마감 한 주 뒤.
 
-    사업보고서   3월 31일  →  4월 5일
-    1분기        5월 15일  →  6월 5일
-    반기         8월 14일  →  9월 5일
-    3분기       11월 14일  →  12월 5일
+    사업보고서   3월 31일  →   4월  7일
+    1분기        5월 15일  →   5월 21일
+    반기         8월 14일  →   8월 21일
+    3분기       11월 14일  →  11월 21일
 
-  전에는 1·4·7·10월 1일이었는데, 그건 실적 시즌이 시작되기 직전이라 새
-  숫자를 못 본 글을 다음 분기까지 걸어 두는 일정이었다.
+  마감 당일로 붙이지 않는다. 그날은 제출이 몰려 데이터가 다음 날에야
+  정리되고, 업황 해설도 아직 안 나와 검색할 것이 없다.
 
 모드: submit / collect / auto(기본)
 환경변수: ANTHROPIC_API_KEY(필수), REPORT_MODEL(기본 claude-sonnet-5), SECTOR_FORCE, BATCH_MAX_WAIT_SEC
@@ -157,10 +157,44 @@ def build_prompt(sec, info):
     )
 
 
+# 지난 실행에서 걸러진 업종을 적어 두는 파일.
+RETRY = ROOT / "data" / "sector_retry.json"
+
+
+def load_retry():
+    """지난 실행에서 걸러진 업종. 파일이 없거나 깨졌으면 빈 목록."""
+    try:
+        return set(json.loads(RETRY.read_text(encoding="utf-8")).get("failed") or [])
+    except Exception:
+        return set()
+
+
+def save_retry(failed, as_of):
+    """이번에 걸러진 업종을 적어 둔다. 없으면 파일을 치운다."""
+    if failed:
+        RETRY.write_text(json.dumps({"at": as_of, "failed": sorted(failed)},
+                                    ensure_ascii=False, indent=2), encoding="utf-8")
+    elif RETRY.exists():
+        RETRY.unlink()
+
+
 def submit(cl, as_of):
     sectors = load_sectors()
     existing = load_existing()
-    targets = [s for s in sectors if FORCE or s not in existing]
+    # 걸러진 업종을 다시 대상에 넣는다.
+    #
+    # defects() 가 잡아낸 업종은 저장되지 않으므로 옛 글이 그대로 남는다.
+    # 그런데 대상을 고르는 조건이 's not in existing'(없는 업종) 뿐이라,
+    # 옛 글이 남아 있는 그 업종은 다음 실행에서도 건너뛰어졌다 — 영영 낡은
+    # 채로 갇힌다. FORCE 로 전부 다시 만드는 길밖에 없었고, 그건 멀쩡한
+    # 스물몇 개까지 다시 만드는 것이라 돈이 그만큼 더 든다.
+    #
+    # 2026-09-04 실행에서 30개 중 11개가 걸러졌다(영문이 비거나 글자가 깨진
+    # 출력). 그때 이 목록이 없어서 11개가 8월 글 그대로 남았다.
+    retry = load_retry()
+    targets = [s for s in sectors if FORCE or s not in existing or s in retry]
+    if retry and not FORCE:
+        log(f"- 지난번에 걸러진 {len(retry)}개를 다시 만든다: {', '.join(sorted(retry))}")
     # '기타'는 업종 분석 의미가 적어 제외
     targets = [s for s in targets if s != "기타"]
     log(f"## 업종 분석 batch 제출 — 대상 {len(targets)}개 / 전체 {len(sectors)}개 · 모델 {MODEL}")
@@ -289,7 +323,9 @@ def defects(rep, message=None, info=None):
     """저장하면 안 되는 결함 목록. 비어 있으면 정상.
 
     2026-08 생성분에서 실제로 나온 것들이다. 한 번 저장되면 다음 분기까지 그대로
-    사이트에 걸리므로, 여기서 걸러 다음 실행 때 다시 만들게 한다(대상은 '없는 업종').
+    사이트에 걸리므로 여기서 거른다. 걸러진 업종은 save_retry 가 적어 두고
+    다음 실행이 그것만 다시 만든다 — 그 목록이 없던 동안에는 옛 글이 남아
+    있다는 이유로 '이미 있는 업종' 으로 분류돼 영영 건너뛰어졌다.
       · 영어 본문이 통째로 빈 채로 저장 → 영어 모드에서 한국어가 그대로 노출
       · max_tokens 로 잘려 json_repair 가 문장 중간을 닫아버림
       · 인코딩이 깨진 자리(U+FFFD)가 본문에 박힘
@@ -372,20 +408,23 @@ def collect(cl, as_of):
     # 제출할 때 적어 둔 집계를 쓴다. 옛 state 에는 없으므로 그때만 다시 읽는다.
     agg = st.get("agg") or load_sectors()
     use = defaultdict(int)
+    dropped = []                       # 결함으로 저장하지 않은 업종
     ok = fail = 0
     for result in cl.messages.batches.results(st["batch_id"]):
         sec = cid_map.get(result.custom_id)
         if not sec:
             continue
         if result.result.type != "succeeded":
-            fail += 1; log(f"  · ⚠️ {sec} {result.result.type}"); continue
+            fail += 1; dropped.append(sec)
+            log(f"  · ⚠️ {sec} {result.result.type}"); continue
         _tally(use, result.result.message)
         try:
             text = g.extract_text(result.result.message)
             rep = g.parse_report(text)
             why = defects(rep, result.result.message, agg.get(sec))
             if why:
-                fail += 1; log(f"  · ⚠️ {sec} 불완전 — 건너뜀 ({'; '.join(why)})"); continue
+                fail += 1; dropped.append(sec)
+                log(f"  · ⚠️ {sec} 불완전 — 건너뜀 ({'; '.join(why)})"); continue
             srcs = g.collect_sources(result.result.message)
             if srcs:
                 rep["sources"] = srcs[:10]
@@ -396,7 +435,10 @@ def collect(cl, as_of):
             sectors[sec] = rep
             ok += 1
         except Exception as e:
-            fail += 1; log(f"  · ⚠️ {sec} 파싱 실패: {e}")
+            fail += 1; dropped.append(sec)
+            log(f"  · ⚠️ {sec} 파싱 실패: {e}")
+    # 걸러진 업종을 적어 둔다. 다음 실행이 이 목록만 다시 만든다.
+    save_retry(dropped, as_of)
     _log_usage(use, st.get("model", MODEL))
     payload = {"lastUpdated": as_of, "model": st.get("model", MODEL), "sectors": sectors}
     OUT_JS.write_text("// KOS ai — 업종 AI 분석 (자동 생성). 직접 수정 금지.\n"

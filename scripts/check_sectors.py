@@ -148,7 +148,29 @@ miss = [k for k, v in secs.items() if not (v or {}).get("generatedAt")]
 check(not miss, f"업종 {len(secs)}개 전부 작성 시점이 있다", ",".join(miss[:5]))
 check("rep[\"generatedAt\"] = as_of" in gen, "새로 만들 때 작성 시점을 찍는다")
 
-# ── 7) 사용량이 기록되는가 ───────────────────────────────────
+# ── 7) 걸러진 업종을 다시 만들 길이 있는가 ──────────────────
+#
+#    defects() 가 잡아낸 업종은 저장되지 않아 옛 글이 그대로 남는다. 그런데
+#    대상을 고르는 조건이 '없는 업종' 뿐이면, 옛 글이 남아 있다는 이유로
+#    다음 실행에서도 건너뛴다 — 영영 낡은 채로 갇힌다.
+#
+#    2026-09-04 실행에서 30개 중 11개가 그렇게 됐다. FORCE 로 전부 다시
+#    만드는 길밖에 없었고, 그건 멀쩡한 열아홉 개까지 다시 만드는 것이다.
+check("s in retry" in gen, "걸러진 업종이 다음 실행 대상에 들어간다")
+check("save_retry" in gen, "걸러진 업종을 적어 둔다")
+check("def load_retry" in gen and "def save_retry" in gen, "그 목록을 읽고 쓰는 자리가 있다")
+# 목록이 실제 업종 이름인지 — 오타가 있으면 영영 안 걸린다
+RETRY = ROOT / "data" / "sector_retry.json"
+if RETRY.exists():
+    try:
+        want = set(json.loads(RETRY.read_text(encoding="utf-8")).get("failed") or [])
+        unknown = sorted(want - set(secs))
+        check(not unknown, f"다시 만들 목록의 이름이 실제 업종과 맞는다({len(want)}개)",
+              ",".join(unknown[:4]))
+    except Exception as e:
+        check(False, "다시 만들 목록이 읽힌다", e.__class__.__name__)
+
+# ── 8) 사용량이 기록되는가 ───────────────────────────────────
 #
 #    이게 없어서 "월 1회로 늘리면 얼마 더 드나" 를 기록으로 답할 수 없었다.
 check("_tally" in gen and "_log_usage" in gen, "쓴 토큰과 웹 검색 횟수를 로그에 남긴다")
