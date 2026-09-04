@@ -483,6 +483,15 @@ def main():
     # 되풀이는 확률이 아니다. 걸러진 것만 다시 내므로 회차마다 대상이 줄고,
     # 요금도 그만큼만 더 든다. 두 번째 회차부터는 FORCE 를 끈다 — 켜 두면
     # 멀쩡한 것까지 통째로 다시 만든다.
+    #
+    # 끝까지 못 만든 것이 있으면 0 이 아닌 값으로 끝낸다.
+    #
+    # 조용히 성공으로 끝나면 아무도 모른다. 이 파이프라인은 분기에 한 번만
+    # 도니까 '모른다' 는 곧 '다음 분기까지 낡은 글이 걸려 있다' 는 뜻이다.
+    # 실제로 7·8월 크론이 아무것도 안 하고 성공으로 끝난 적이 있다.
+    #
+    # 만들어진 것은 그대로 저장된다 — 워크플로의 커밋 단계가 if: always()
+    # 라서, 실패로 끝나도 19개가 새로 쓰였으면 그 19개는 올라간다.
     for rnd in range(1, ROUNDS + 1):
         if rnd > 1:
             as_of = datetime.datetime.now(
@@ -491,16 +500,20 @@ def main():
         if not bid:
             break                                  # 만들 것이 없다
         if not poll(cl, bid):
-            log(f"- {rnd}차 배치가 시간 안에 안 끝났다. 여기서 멈춘다."); break
+            log(f"\n❌ {rnd}차 배치가 {MAX_WAIT // 60}분 안에 안 끝났다.")
+            log("   만들어진 것이 없다. 실행 기록을 보고 다시 돌릴 것.")
+            sys.exit(1)
         collect(cl, as_of)
         left = load_retry()
         if not left:
-            log(f"\n■ {rnd}차에서 전부 저장됐다."); break
+            log(f"\n■ {rnd}차에서 전부 저장됐다.")
+            return
         if rnd == ROUNDS:
-            log(f"\n■ {ROUNDS}차까지 했는데 {len(left)}개가 남았다: {', '.join(sorted(left))}")
-            log("  다음 실행이 이 목록만 다시 만든다.")
-        else:
-            log(f"\n■ {rnd}차에서 {len(left)}개가 걸러졌다 — 그것만 다시 만든다: {', '.join(sorted(left))}")
+            log(f"\n❌ {ROUNDS}차까지 했는데 {len(left)}개가 남았다: {', '.join(sorted(left))}")
+            log("   그 업종은 지난번 글이 그대로 걸려 있다.")
+            log("   워치독이 하루 뒤에 이 목록만 다시 만든다.")
+            sys.exit(1)
+        log(f"\n■ {rnd}차에서 {len(left)}개가 걸러졌다 — 그것만 다시 만든다: {', '.join(sorted(left))}")
 
 
 def _entry():

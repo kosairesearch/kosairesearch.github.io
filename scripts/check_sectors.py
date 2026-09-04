@@ -187,6 +187,48 @@ check(i_en > 0, "영어를 비우지 말라는 규칙이 있다")
 check(i_en > gen.find("한자를 섞지 말 것"), "그 규칙이 다른 규칙들 뒤에 온다(끝에 둔다)")
 check("빈 자리가 하나라도 있는지 세어 보고" in gen, "내보내기 전에 스스로 세어 보게 한다")
 
+# ── 8) 실패가 조용히 성공으로 끝나지 않는가 ──────────────────
+#
+#    이 파이프라인은 분기에 한 번만 돈다. 실패가 안 보이면 다음 분기까지
+#    낡은 글이 걸려 있고, 그동안 아무도 모른다. 7·8월 크론이 실제로
+#    아무것도 안 하고 '성공' 으로 끝났다.
+#
+#    tee 로 로그를 남기는데 pipefail 이 없으면 파이프의 끝(tee)이 성공했다는
+#    이유로 단계가 초록이 된다 — 파이썬이 죽어도, 열쇠가 없어도.
+#    주석이 아니라 실제로 도는 줄을 본다. 왜 두었는지 설명한 주석에도
+#    같은 글자가 들어 있어서, 그냥 'in wf' 로 보면 명령을 지워도 주석
+#    때문에 통과한다 — 실제로 그렇게 헛통과했다.
+check(bool(re.search(r"^\s*set -o pipefail\s*$", wf, re.M)),
+      "파이썬이 죽으면 실행이 빨개진다(pipefail)")
+#    그 pipefail 이 생성 명령과 같은 단계에 있어야 한다. 다른 단계에만
+#    있으면 정작 생성이 조용히 성공한다.
+gen_step = re.search(r"run: \|\n(.*?generate_sectors\.py.*?)\n", wf, re.S)
+check(bool(gen_step) and "set -o pipefail" in gen_step.group(1),
+      "그 pipefail 이 업종 분석을 돌리는 단계에 있다")
+check("sys.exit(1)" in gen and "안 끝났다" in gen, "배치가 시간 안에 안 끝나면 실패로 끝난다")
+check(gen.count("sys.exit(1)") >= 2, "끝까지 못 만든 업종이 남으면 실패로 끝난다")
+# 실패로 끝나도 만들어진 것은 올라가야 한다
+check("if: always()" in wf, "실패로 끝나도 만들어진 것은 커밋된다")
+
+# ── 8-1) 남은 것을 사람 없이 다시 만드는가 ───────────────────
+#
+#    걸러진 업종을 적어 두기만 하면 다음 정기 실행까지 석 달을 기다린다.
+#    워치독이 하루 한 번 그 목록을 보고 남은 것만 다시 만든다.
+WD = ROOT / ".github" / "workflows" / "sectors_watchdog.yml"
+check(WD.exists(), "업종 분석 워치독이 있다")
+if WD.exists():
+    wd = WD.read_text(encoding="utf-8")
+    check("sector_retry.json" in wd, "워치독이 남은 목록을 본다")
+    check("force=no" in wd, "워치독은 남은 것만 다시 만든다(전체 재생성이 아니다)")
+    check("tries" in wd and ">= 5" in wd, "같은 목록으로 계속 실패하면 스스로 멈춘다")
+    check("group: kos-data" in wd, "생성 워크플로와 겹쳐 돌지 않는다")
+    m = re.search(r"-\s*cron:\s*'([^']+)'", wd)
+    check(bool(m), "워치독에 크론이 있다")
+    if m:
+        ho = m.group(1).split()[1]
+        check(ho.isdigit() and 0 <= int(ho) <= 14,
+              "워치독 시각도 한국 날짜를 밀지 않는다", f"{ho}시 UTC")
+
 # ── 9) 사용량이 기록되는가 ───────────────────────────────────
 #
 #    이게 없어서 "월 1회로 늘리면 얼마 더 드나" 를 기록으로 답할 수 없었다.

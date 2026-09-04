@@ -74,7 +74,14 @@ jobs:
           # 31개 배치 회수까지 최대 5시간 대기(기본 80분으로는 부족).
           BATCH_MAX_WAIT_SEC: '18000'
         # schedule 이벤트에는 inputs 가 없어 빈 문자열이 넘어간다 → auto 로 명시.
-        run: python scripts/generate_sectors.py "${{ inputs.mode || 'auto' }}" 2>&1 | tee -a data/sectors_run.log
+        #
+        # set -o pipefail 이 없으면 파이프의 끝(tee)이 성공했다는 이유로 이 단계가
+        # 초록으로 끝난다. 파이썬이 죽어도, 열쇠가 없어도, 아무것도 못 만들어도
+        # 실행 기록은 '성공' 이다 — 7·8월 크론이 아무것도 안 하고 성공으로
+        # 끝났던 것과 같은 종류의 조용한 실패다. 여기서 막는다.
+        run: |
+          set -o pipefail
+          python scripts/generate_sectors.py "${{ inputs.mode || 'auto' }}" 2>&1 | tee -a data/sectors_run.log
       - name: 커밋 & 푸시
         if: always()
         run: |
