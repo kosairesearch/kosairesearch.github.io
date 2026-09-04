@@ -31,27 +31,38 @@ jobs:
         with:
           python-version: '3.11'
 
-      # 병렬 리포트 run은 종목 JSON만 커밋하므로, 목록 페이지용 reports-index.js는
-      # 여기서 단일 직렬로 전체 v2에서 재생성한다(충돌 없음, 표준 라이브러리만 사용).
-      - name: 리포트 인덱스 재생성(직렬)
+      # 병렬 리포트 run은 종목 JSON만 커밋하므로, 전역 파일 세 개는 여기서 단일
+      # 직렬로 재생성한다(표준 라이브러리만 사용).
+      #   · data/reports-index.js  목록 페이지 제목·날짜
+      #   · index.html             랜딩 페이지 숫자
+      #   · data/valuation.js      상단 그리드 EPS·BPS — 리포트 quant 를 그대로 옮긴다.
+      #     원래 collect_valuation 이 맞추는데 두 시간에 한 번 돌아서, 전 종목을 다시
+      #     만드는 동안에는 화면과 본문의 숫자가 몇 시간씩 다르게 보였다(20종목).
+      #
+      # 셋 다 저장소 내용만 보고 만드는 파일이라, 미는 사이에 남이 먼저 밀었으면
+      # rebase 로 붙이지 말고 새 main 에서 다시 만드는 게 맞다 — 한 줄짜리 JSON 이라
+      # rebase 는 어차피 충돌한다.
+      - name: 전역 인덱스·그리드 재생성(직렬)
         run: |
           git config --global user.email "bot@kosairesearch.github.io"
           git config --global user.name "KOS ai Bot"
-          python scripts/_reindex.py || true
-          # 랜딩 페이지 숫자도 같이 맞춘다(scripts/stamp_counts.py 설명 참고)
-          python scripts/stamp_counts.py || true
-          git add data/reports-index.js index.html
-          if git diff --cached --quiet; then
-            echo "인덱스 변경 없음"
-          else
-            git commit -m "🔄 리포트 인덱스 동기화 $(TZ='Asia/Seoul' date +'%Y-%m-%d %H:%M KST')"
-            for i in $(seq 1 25); do
-              git fetch origin main -q 2>/dev/null || true
-              if git rebase origin/main 2>/dev/null && git push origin main 2>/dev/null; then break; fi
-              git rebase --abort 2>/dev/null || true
-              sleep $(( (RANDOM % 9) + 2 ))
-            done
-          fi
+          for i in $(seq 1 25); do
+            git fetch origin main -q 2>/dev/null && git reset --hard FETCH_HEAD -q 2>/dev/null || true
+            python scripts/_reindex.py || true
+            python scripts/stamp_counts.py || true
+            python scripts/_sync_grid.py || true
+            git add data/reports-index.js data/valuation.js index.html
+            if git diff --cached --quiet; then
+              echo "인덱스·그리드 변경 없음"
+              break
+            fi
+            git commit -q -m "🔄 리포트 인덱스 동기화 $(TZ='Asia/Seoul' date +'%Y-%m-%d %H:%M KST')"
+            if git push origin main 2>/dev/null; then
+              echo "인덱스·그리드 반영"
+              break
+            fi
+            sleep $(( (RANDOM % 9) + 2 ))
+          done
 
       - name: 남은 리포트 점검 후 필요 시 재가동
         env:

@@ -846,6 +846,46 @@ M.pickup(cl3, "2026-09-05 03:00")
 ok(not (S.OUT_DIR / "000020.json").exists() and fm3.sent == [], "잘린 글은 버리고 돈을 더 쓰지 않는다", f"calls={len(fm3.sent)}")
 ok(S.fail_count("000020") >= 1, "실패로 세어 다음 run 이 다시 만든다")
 
+
+print()
+print("⑫ 그리드 동기화 — 화면 위 숫자는 리포트에서 나온다")
+import _sync_grid as G                                  # noqa: E402
+G.OUT = DATA / "valuation.js"
+
+ok(S.grid_summary({"eps": 81, "bps": 3793, "roe_ttm": 2.1, "dps": 270.0}, [{"rev": 110}, {"rev": 100}])
+   == {"eps": 81, "bps": 3793, "roe": 2.1, "dps": 270.0, "rev_g": 10.0}, "요약은 리포트 값을 그대로 옮긴다")
+ok(S.grid_summary({"eps": None, "bps": 1}, []) == {"bps": 1}, "없는 값은 넣지 않는다")
+ok(S.grid_summary({}, [{"rev": 10}, {"rev": 0}]) == {}, "작년 매출이 0이면 성장률을 만들지 않는다")
+
+for p in S.OUT_DIR.glob("*.json"):
+    p.unlink()
+def grid_rep(tk, eps, bps):
+    (S.OUT_DIR / f"{tk}.json").write_text(json.dumps(
+        {"ticker": tk, "quant": {"valuation": {"eps": eps, "bps": bps}, "annual": []}}), encoding="utf-8")
+grid_rep("451800", 81, 3793)        # 그리드는 80·3792 — 갱신돼야 한다
+grid_rep("005930", 22626, 85688)    # 그리드와 같다 — 날짜까지 그대로여야 한다
+grid_rep("000020", 5, 50)           # 그리드에 없다 — 새로 들어와야 한다
+G.OUT.write_text("// x\nwindow.KOS_VALUATION = " + json.dumps({
+    "asOf": "2026-09-04 10:00", "dataDate": "20260904", "count": 3,
+    "stocks": {"451800": {"eps": 80, "bps": 3792, "_v": "r8", "_d": "2026-09-04"},
+               "005930": {"eps": 22626, "bps": 85688, "_v": "r8", "_d": "2026-08-01"},
+               "999999": {"eps": 1, "_v": "r8", "_d": "2026-08-01"}}}) + ";\n", encoding="utf-8")
+G.main()
+got = json.loads(G.OUT.read_text(encoding="utf-8").split("=", 1)[1].strip().rstrip(";"))
+gs, TD = got["stocks"], S.today_kst().isoformat()
+ok(gs["451800"] == {"eps": 81, "bps": 3793, "_v": "r8", "_d": TD}, "달라진 종목은 리포트 값으로", str(gs["451800"]))
+ok(gs["005930"]["_d"] == "2026-08-01", "값이 같으면 날짜도 건드리지 않는다", str(gs["005930"]))
+ok(gs["000020"] == {"eps": 5, "bps": 50, "_v": "r8", "_d": TD}, "리포트만 있던 종목이 들어온다", str(gs.get("000020")))
+ok(gs["999999"] == {"eps": 1, "_v": "r8", "_d": "2026-08-01"}, "리포트 없는 종목은 그대로 둔다")
+ok(got["dataDate"] == "20260904" and got["count"] == 4 and got["asOf"] != "2026-09-04 10:00",
+   "나머지는 지키고 개수·시각만 갱신", f"count={got['count']} asOf={got['asOf']}")
+before = G.OUT.read_text(encoding="utf-8")
+G.main()
+ok(G.OUT.read_text(encoding="utf-8") == before, "바뀐 값이 없으면 파일을 다시 쓰지 않는다")
+G.OUT.write_text("망가진 파일", encoding="utf-8")
+G.main()
+ok(G.OUT.read_text(encoding="utf-8") == "망가진 파일", "못 읽는 그리드는 건드리지 않는다")
+
 print()
 print(f"통과 {passed} · 실패 {failed}")
 sys.exit(1 if failed else 0)
