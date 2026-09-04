@@ -263,6 +263,7 @@ ok(df is not None and df.n == 1 and "reprt_code" not in buf.getvalue(), "정상 
 
 # collect_all_quant: 한도에 걸리면 모은 것만 돌려주고 unavailable 을 표시한다
 REAL_COLLECT_QUANT, REAL_CROSS, REAL_KRX, REAL_GET_DART = M.collect_quant, M.cross_check, M.krx_fundamentals, M.g.get_dart
+REAL_COLLECT_ALL = M.collect_all_quant
 calls = {"n": 0}
 def quant_or_die(dart, tk, row, stock):
     calls["n"] += 1
@@ -378,7 +379,7 @@ def fake_collect_all(targets, data, die_after=None, no_data=()):
 
 cl = FakeClient()
 os.environ["REPORT_FILL_TO"] = "3000"; M.TOP_N = 100
-M.collect_all_quant = lambda targets, data: fake_collect_all(targets, data, no_data={"000040"})
+M.collect_all_quant = lambda targets, data, allow_reuse=False: fake_collect_all(targets, data, no_data={"000040"})
 S.REFRESH_FILE.write_text("2026-09-01\n", encoding="utf-8")
 for p in S.BATCH_DIR.glob("*.json"):
     p.unlink()
@@ -401,7 +402,7 @@ ok(r2["batch_id"] is None and len(cl.messages.batches.created) == 1, "진행 중
 S.clear_hold("000890")
 for p in S.BATCH_DIR.glob("*.json"):
     p.unlink()
-M.collect_all_quant = lambda targets, data: fake_collect_all(targets, data, die_after=2)
+M.collect_all_quant = lambda targets, data, allow_reuse=False: fake_collect_all(targets, data, die_after=2)
 r3 = M.submit(cl, "2026-09-05 02:02")
 ok(r3["batch_id"] is not None and r3["unavailable"] is not None and len(r3["tickers"]) == 2, "한도에 걸려도 모은 만큼 주문 + unavailable", f"{r3['tickers']} {r3['unavailable']}")
 ok(not (set(S.load_skip()) - {"000040"}), "한도로 못 모은 종목은 skip 이 아니다", str(S.load_skip()))
@@ -623,6 +624,94 @@ rep = json.loads((S.OUT_DIR / "000020.json").read_text(encoding="utf-8"))
 ok("比" not in rep["earnings"]["ko"] and "전년 대비" in rep["earnings"]["ko"], "한자 '比' 가 '대비' 로", rep["earnings"]["ko"][:60])
 ok("저평가된" not in rep["earnings"]["ko"] and "순자산을 밑도는" in rep["earnings"]["ko"], "교정된 문장이 저장된다")
 ok(not T.check(rep), "저장된 리포트는 검사를 통과한다")
+
+# ═══ ⑩ 정량 재사용 — 이미 맞다는 것이 확인될 때만 ═══════════════════════
+print("⑩ 정량 재사용")
+M.collect_all_quant = REAL_COLLECT_ALL          # ⑥에서 가짜로 바꿔 둔 것을 되돌린다
+TODAY = REAL_DATE(2026, 9, 5)
+ok(M.latest_quarter_label(TODAY) == "2026Q2", "9월이면 최근 분기는 2026Q2")
+ok(M.latest_quarter_label(REAL_DATE(2026, 4, 24)) == "2025Q4", "1분기 마감 전이면 작년 Q4")
+ok(not M._reprt_available("11014", 2026, TODAY), "9월엔 3분기 보고서를 묻지 않는다")
+ok(M._reprt_available("11012", 2026, TODAY) and M._reprt_available("11014", 2025, TODAY), "반기·지난해 보고서는 묻는다")
+
+# 스스로 앞뒤가 맞는 표본: 분기 4개 합 = TTM = EPS × 주식수, BPS × 주식수 = 지배자본
+GOOD = {"asOf": "2026-08-23", "annual": [
+            {"year": y, "rev": 2_000_000_000, "op": 200_000_000, "np": 100_000_000, "np_owner": 100_000_000,
+             "equity": 500_000_000, "equity_owner": 500_000_000, "equity_nci": 0, "liab": 200_000_000,
+             "opm": 10.0, "roe": 20.0, "debt_ratio": 40.0} for y in (2025, 2024, 2023, 2022)],
+        "quarterly": [{"q": q, "rev": 500_000_000, "op": 50_000_000, "np_owner": 25_000_000} for q in
+                      ("2025Q2", "2025Q3", "2025Q4", "2026Q1", "2026Q2")],
+        "valuation": {"price": 1000, "eps": 100, "per": 10.0, "bps": 500, "pbr": 2.0, "dps": 10.0, "div": 1.0,
+                      "ttm_window": "2025Q3~2026Q2", "ttm_np_owner": 100_000_000, "shares": 1_000_000,
+                      "total_shares": 1_000_000, "wavg_shares": 1_000_000, "eps_src": "순이익÷주식수",
+                      "bps_src": "자체", "bps_krx": 520.0}}
+STK = {"ticker": "000020", "name": "동화약품", "price": 1200, "mcap": 0.3, "shares": 1_000_000}
+
+def put(tk, quant):
+    S.OUT_DIR.mkdir(exist_ok=True)
+    (S.OUT_DIR / f"{tk}.json").write_text(json.dumps({"ticker": tk, "quant": quant}, ensure_ascii=False), encoding="utf-8")
+
+put("000020", GOOD)
+q, why = M.reusable_quant("000020", STK, today=TODAY)
+ok(q is not None and why is None, "완전·최신 정량은 재사용", str(why))
+v = (q or {}).get("valuation", {})
+ok(v.get("price") == 1200 and v.get("per") == 12.0 and v.get("pbr") == 2.4 and v.get("div") == 0.83,
+   "가격 딸린 값만 오늘 시세로 다시 계산", str({k: v.get(k) for k in ("price", "per", "pbr", "div")}))
+ok(v.get("eps") == 100 and v.get("bps") == 500 and q["annual"][0]["rev"] == 2_000_000_000, "재무 숫자는 그대로")
+ok(json.loads((S.OUT_DIR / "000020.json").read_text(encoding="utf-8"))["quant"]["valuation"]["price"] == 1000,
+   "원본 파일은 건드리지 않는다(복사본을 고친다)")
+
+def refuse(mut, label):
+    d = json.loads(json.dumps(GOOD)); mut(d); put("000020", d)
+    q, why = M.reusable_quant("000020", STK, today=TODAY)
+    ok(q is None, label, f"why={why}")
+
+refuse(lambda d: d["valuation"].update(ttm_window="2025Q2~2026Q1"), "최근 분기가 빠졌으면 재수집")
+refuse(lambda d: d.__setitem__("annual", d["annual"][:3]), "연간 3년치면 재수집")
+refuse(lambda d: d["quarterly"][2].update(np_owner=None), "분기 빈칸이면 재수집")
+refuse(lambda d: d["valuation"].update(bps=None), "BPS 가 없으면 재수집")
+refuse(lambda d: d["valuation"].update(hidden={"eps": "mismatch"}), "추출 문제로 숨겼으면 재수집")
+refuse(lambda d: d["valuation"].update(eps=5, per=200.0), "항등식(EPS×주식수≠TTM)이 깨지면 재수집")
+refuse(lambda d: d["valuation"].update(bps_krx=200.0), "KRX 공표 BPS 와 30% 초과 차이면 재수집")
+# 비지배지분까지 나눈 BPS (SKC 형) — 항등식은 통과하지만 재사용하지 않는다
+def nci_bug(d):
+    d["annual"][0].update(equity=500_000_000, equity_owner=200_000_000, equity_nci=300_000_000)
+    d["valuation"].update(bps_krx=490.0)     # BPS 500 × 100만주 = 5억 = 자본총계(지배 2억이 아니다)
+refuse(nci_bug, "BPS 가 비지배지분까지 나눈 값이면 재수집")
+# 회사 사정(적자·무배당)은 재사용을 막지 않는다
+d = json.loads(json.dumps(GOOD))
+d["valuation"].update(eps=-100, per=None, dps=None, div=None, ttm_np_owner=-100_000_000,
+                      hidden={"per": "loss", "dps": "no_div"})
+for x in d["quarterly"]:
+    x["np_owner"] = -25_000_000
+for r in d["annual"]:
+    r.update(np=-100_000_000, np_owner=-100_000_000, roe=-20.0)
+put("000020", d)
+q, why = M.reusable_quant("000020", STK, today=TODAY)
+ok(q is not None, "적자·무배당은 재사용을 막지 않는다", f"why={why}")
+ok(q and q["valuation"].get("per") is None, "적자면 PER 은 계산하지 않는다")
+put("000020", GOOD)
+
+# collect_all_quant: 재사용은 DART 를 부르지 않는다
+put("005930", GOOD)
+called = []
+M.collect_quant = lambda dart, tk, row, stock: (called.append(tk), GOOD)[1]
+M.cross_check = lambda *a, **k: None
+M.krx_fundamentals = lambda d: None
+M.g.get_dart = lambda: object()
+tgt = [dict(STK), {"ticker": "005930", "name": "삼성전자", "price": 90000, "mcap": 500.0, "shares": 5_000_000},
+       {"ticker": "000040", "name": "KR모터스", "price": 500, "mcap": 0.05, "shares": 100_000}]
+out, errors, un = M.collect_all_quant(tgt, {"dataDate": "20260904"}, allow_reuse=True)
+ok(set(out) == {"000020", "005930", "000040"} and called == ["000040"], "재사용 2 · DART 는 리포트 없는 1개만", str(called))
+ok(out["005930"]["valuation"]["price"] == 90000, "재사용분도 오늘 시세로")
+called.clear()
+M.collect_all_quant(tgt, {"dataDate": "20260904"}, allow_reuse=False)
+ok(len(called) == 3, "allow_reuse=False 면 전부 다시 받는다(patch 모드)", str(called))
+os.environ["REPORT_NO_REUSE"] = "1"
+called.clear()
+M.collect_all_quant(tgt, {"dataDate": "20260904"}, allow_reuse=True)
+ok(len(called) == 3, "REPORT_NO_REUSE=1 로 재사용을 끌 수 있다", str(called))
+os.environ.pop("REPORT_NO_REUSE")
 
 print()
 print(f"통과 {passed} · 실패 {failed}")

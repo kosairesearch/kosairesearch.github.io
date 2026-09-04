@@ -589,6 +589,10 @@ def collect_quant(dart, ticker, krx_row, stock):
     cur_qi, d_cur = 0, None
     base_fs = annual_fs.get(py)
     for qi, code in enumerate(Q_CODE, 1):
+        # 아직 제출 시기가 아닌 보고서는 묻지 않는다. 없는 것을 묻는 데도 CFS·OFS
+        # 두 번이 나가는데, 전 종목이면 그것만으로 하루 한도의 4분의 1이다.
+        if not _reprt_available(code, cur):
+            continue
         d = fin(cur, code)
         if not d:
             continue
@@ -1764,7 +1768,110 @@ def cross_check(tk, name, valuation):
             f"{' · EPS 는 자체 대조로 확인(참조값 시차)' if skip_eps_ref else ''}")
 
 
-def collect_all_quant(targets, data):
+# 저장된 정량을 그대로 써도 되는지 가른다. 전 종목 갱신은 '글' 을 다시 쓰는 일인데,
+# 숫자까지 전부 다시 받으면 DART 하루 한도(2만 건)를 넘겨 며칠이 걸린다. 종목당
+# 호출이 15회쯤이라 2,547종목이면 3만~6만 회다.
+#
+# 그렇다고 아무거나 재사용하면 옛 코드의 버그가 그대로 굳는다. 그래서 '이미 맞다는
+# 것이 확인되는' 것만 재사용한다 — 최신 분기까지 반영됐고, 표가 다 차 있고, 항등식을
+# 통과하고, 외부 공표값과도 크게 어긋나지 않는 것.
+#
+# 실제로 세어 보니 2,552장 중 1,865장이 여기 해당했고 재수집 대상은 687장이었다
+# (DART 약 1만 회 — 하루 한도 안).
+_REUSE_HIDDEN_OK = {"loss", "no_div"}          # 회사 사정이라 다시 받아도 안 바뀐다
+
+# 정기보고서 제출 마감. 그 전에는 그 분기 보고서가 없으므로 아예 부르지 않는다
+# (없는 보고서 하나를 물어보는 데 CFS·OFS 두 번을 쓴다).
+_REPRT_OPEN = {"11013": (4, 25), "11012": (7, 25), "11014": (10, 25)}
+
+
+def _reprt_available(code, year, today=None):
+    """그 해 그 보고서가 나왔을 만한 시점인가. 지난 해는 언제나 참."""
+    today = today or datetime.date.today()
+    if year < today.year:
+        return True
+    m, d = _REPRT_OPEN.get(code, (1, 1))
+    return (today.month, today.day) >= (m, d)
+
+
+def latest_quarter_label(today=None):
+    """공시 마감이 지나 '있어야 하는' 가장 최근 분기. 2026년 9월이면 2026Q2."""
+    today = today or datetime.date.today()
+    y, md = today.year, (today.month, today.day)
+    if md >= (10, 25):
+        return f"{y}Q3"
+    if md >= (7, 25):
+        return f"{y}Q2"
+    if md >= (4, 25):
+        return f"{y}Q1"
+    return f"{y - 1}Q4"
+
+
+def _repriced(q, stock):
+    """저장된 정량의 '가격에 딸린 값' 만 오늘 시세로 다시 계산한다(DART 호출 없음).
+    재무 숫자는 그대로 둔다 — 같은 공시에서 온 값이라 바뀔 이유가 없다."""
+    q = json.loads(json.dumps(q))
+    v = q.get("valuation") or {}
+    price = stock.get("price")
+    if not price:
+        return q
+    v["price"] = price
+    v["mcap"] = stock.get("mcap")
+    v["shares"] = stock.get("shares")
+    eps, bps, dps = v.get("eps"), v.get("bps"), v.get("dps")
+    v["per"] = round(price / eps, 3) if (eps and eps > 0) else None
+    v["pbr"] = round(price / bps, 4) if bps else None
+    v["div"] = round(dps / price * 100, 2) if dps is not None else None
+    q["valuation"] = v
+    return q
+
+
+def reusable_quant(tk, stock, today=None):
+    """저장된 리포트의 정량을 그대로 쓸 수 있으면 (오늘 시세로 고친) 정량을, 아니면 None.
+    돌려주지 않는 이유는 로그로 남긴다 — 왜 다시 받는지 알 수 있어야 한다."""
+    p = OUT_DIR / f"{tk}.json"
+    if not p.exists():
+        return None, "리포트 없음"
+    try:
+        q = (json.loads(p.read_text(encoding="utf-8")) or {}).get("quant") or {}
+    except Exception:
+        return None, "리포트를 읽지 못함"
+    v = q.get("valuation") or {}
+    a = q.get("annual") or []
+    qs = q.get("quarterly") or []
+    last_q = latest_quarter_label(today)
+    if not str(v.get("ttm_window", "")).endswith(last_q):
+        return None, f"최근 분기({last_q})가 반영되지 않음"
+    if len(a) < 4:
+        return None, f"연간 표가 {len(a)}년치"
+    if len(qs) < 5 or any(x.get("np_owner") is None or x.get("rev") is None for x in qs):
+        return None, "분기 표에 빈칸"
+    if v.get("eps") is None or v.get("bps") is None:
+        return None, "EPS·BPS 가 없음"
+    # hidden 은 {지표: 사유} 다. 막아야 하는 것은 '사유' 가 추출 문제일 때다
+    # (적자·무배당은 회사 사정이라 다시 받아도 그대로다).
+    extra = set((v.get("hidden") or {}).values()) - _REUSE_HIDDEN_OK
+    if extra:
+        return None, f"숨긴 사유({', '.join(sorted(extra))})"
+    bad = check_valuation.check_quant(q)
+    if bad:
+        return None, f"항등식 {bad[0][0]}"
+    # 옛 코드는 분기 지배지분을 못 읽으면 자본총계(비지배 포함)로 대신했다. 그 값은
+    # 항등식을 통과하면서도 틀렸다(SKC BPS 52,663 · KRX 22,956). 되짚어 잡는다.
+    a0, den = a[0], (v.get("wavg_shares") or v.get("total_shares"))
+    eq, eqo, nci = a0.get("equity"), a0.get("equity_owner"), a0.get("equity_nci")
+    if den and eq and eqo and nci and abs(nci) > abs(eq) * 0.05:
+        imp = v["bps"] * den
+        if abs(imp / eq - 1) < 0.15 and abs(imp / eqo - 1) > 0.15:
+            return None, "BPS 가 비지배지분까지 나눈 값으로 보임"
+    # KRX 가 매일 공표하는 BPS 와 크게 어긋나면 어느 쪽이 맞는지 여기서 못 가린다.
+    # 이익이 급증한 해에는 우리 쪽이 맞는 경우가 많지만, 확인 없이 옛 값을 물려주지 않는다.
+    if v.get("bps_krx") and v.get("bps_src") == "자체" and abs(v["bps"] / v["bps_krx"] - 1) > 0.30:
+        return None, f"BPS {v['bps']:,} 가 KRX 공표값 {v['bps_krx']:,.0f} 과 30% 초과 차이"
+    return _repriced(q, stock), None
+
+
+def collect_all_quant(targets, data, allow_reuse=False):
     """(quants, errors, unavailable).
 
     quants      {ticker: quant} — 수집된 것
@@ -1776,15 +1883,36 @@ def collect_all_quant(targets, data):
                 없음' 과 구분되지 않아 한 run 의 종목 전부가 생성 불가로 영구
                 기록됐다.
     """
+    # 이미 맞다는 것이 확인되는 정량은 다시 받지 않는다(reusable_quant 참고).
+    # 글을 다시 쓰는 갱신에서 DART 하루 한도를 아끼는 유일한 방법이다.
+    reused, need = {}, []
+    if allow_reuse and os.getenv("REPORT_NO_REUSE") != "1":
+        why_count = {}
+        for st in targets:
+            q, why = reusable_quant(st["ticker"], st)
+            if q is not None:
+                reused[st["ticker"]] = q
+            else:
+                need.append(st)
+                why_count[why] = why_count.get(why, 0) + 1
+        if reused:
+            log(f"- 정량 재사용 {len(reused)}개(숫자가 이미 최신·완전) · 다시 받을 {len(need)}개")
+            for why, c in sorted(why_count.items(), key=lambda x: -x[1])[:6]:
+                log(f"    · 다시 받는 이유 {c}개: {why}")
+    else:
+        need = list(targets)
+    if not need:
+        return reused, {}, None
+
     dart = g.get_dart()
     if not dart:
         log("❌ DART 초기화 실패 — 정량 수집 불가")
         why = getattr(g, "_dart_err", "") or "키 없음"
         m = _DART_STATUS.search(why)
-        return {}, {}, DartUnavailable(m.group(1) if m else "init", f"DART 초기화 실패({why[:120]})")
+        return reused, {}, DartUnavailable(m.group(1) if m else "init", f"DART 초기화 실패({why[:120]})")
     fund = krx_fundamentals(data.get("dataDate", ""))
-    out, errors = {}, {}
-    for st in targets:
+    out, errors = dict(reused), {}
+    for st in need:
         tk = st["ticker"]
         log(f"- 정량 수집 {tk} {st['name']}...")
         krx_row = None
@@ -1838,7 +1966,7 @@ def submit(cl, as_of):
     # 전체 universe 시총 순위(1=최대) → 종목별 모델 결정
     rank_of = {s["ticker"]: i + 1 for i, s in enumerate(_ranked(data))}
     log(f"## 🤖 리포트 v2 Batch 제출 — {len(targets)}개 · 상위{MODEL_TOP_N} {MODEL_TOP} / 나머지 {MODEL_REST}")
-    quants, errors, unavailable = collect_all_quant(targets, data)
+    quants, errors, unavailable = collect_all_quant(targets, data, allow_reuse=True)
     result["unavailable"] = unavailable
 
     fill_mode = os.getenv("REPORT_FILL_TO", "0") not in ("0", "")
