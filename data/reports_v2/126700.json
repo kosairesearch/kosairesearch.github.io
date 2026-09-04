@@ -1,217 +1,227 @@
 {
  "title": {
-  "ko": "적자터널 속 ESS 대형수주로 반등 모색",
-  "en": "Losses Persist as ESS Orders Signal a Possible Turn"
+  "ko": "적자 지속 속 2차전지·ESS로 사업 재편",
+  "en": "Persistent Losses, Pivot Toward Battery ESS"
  },
  "lead": {
-  "ko": "하이비젼시스템은 스마트폰 카메라 모듈 검사장비를 주력으로 성장해왔으나 2025년 IT·모바일 수요 둔화로 적자전환했고, 최근에는 북미향 ESS(에너지저장장치) 대형 수주와 인도 신공장 가동을 통해 사업 구조 전환을 시도하고 있다.",
-  "en": "HyVISION System built its business on smartphone camera module inspection equipment, but slid into losses in 2025 amid weak IT/mobile demand, and is now pursuing a business shift through large North American ESS orders and the launch of its new India plant."
+  "ko": "스마트폰 카메라 모듈 검사장비가 주력이던 하이비젼시스템이 최근 5개 분기 연속 영업손실을 기록하는 가운데, 2차전지·ESS 수주 확대와 해외 생산기지 확충으로 사업 구조 전환을 시도하고 있다.",
+  "en": "HyVISION SYSTEM, long focused on smartphone camera module inspection equipment, has posted operating losses for five consecutive quarters while attempting to restructure its business around expanding secondary battery and ESS orders and new overseas production sites."
  },
  "keypoints": [
   {
-   "ko": "2025년 매출 1,711억원, 영업손실 326억원으로 2024년 흑자(영업이익 310억원)에서 적자로 전환",
-   "en": "2025 revenue came to KRW 171.1bn with an operating loss of KRW 32.6bn, swinging from 2024's operating profit of KRW 31.0bn"
+   "ko": "2025년 연결 매출은 1,711억원으로 전년(3,120억원) 대비 약 45% 줄었고, 영업이익은 -325.5억원으로 적자전환했다.",
+   "en": "2025 consolidated revenue fell about 45% year over year to KRW 171.1 billion from KRW 312.0 billion, and operating profit swung to a loss of KRW 32.5 billion."
   },
   {
-   "ko": "2026년 들어 분기 순손실 폭이 축소되는 흐름 — 1분기 지배주주순손실 28억원에서 2분기 3억원 수준으로 감소",
-   "en": "Quarterly net losses have narrowed through 2026, from KRW 2.8bn in Q1 to about KRW 0.3bn in Q2"
+   "ko": "2025Q2~2026Q2 5개 분기 모두 영업손실을 기록했지만, 2026Q2 손실 규모(영업손실 57.2억원, 지배주주순손실 3.3억원)는 직전 분기들보다 축소됐다.",
+   "en": "All five quarters from 2025Q2 through 2026Q2 posted operating losses, but the 2026Q2 loss (operating loss of KRW 5.72 billion, owners' net loss of KRW 0.33 billion) narrowed from prior quarters."
   },
   {
-   "ko": "2026년 6월 북미 AI 데이터센터용 ESS 배터리팩 조립라인 약 950억원 수주 — 2차전지 진출 이후 최대 단일 규모",
-   "en": "In June 2026 the company won a roughly KRW 95bn ESS battery-pack assembly line order for North American AI data centers, its largest single project since entering the battery equipment business"
+   "ko": "2026년 상반기 미국향 ESS 배터리팩 조립설비 수주(5월 191.6억원)에 이어 6월에는 950억원 규모의 대형 ESS 라인 수주가 알려지며 2차전지·ESS 사업이 확대되고 있다.",
+   "en": "Following a KRW 19.16 billion US-bound ESS battery pack assembly order in May 2026, a larger ESS production line contract worth roughly KRW 95 billion was reported in June, expanding the battery/ESS business."
   },
   {
-   "ko": "인도 뱅갈루루 신공장이 2025년 11월 준공돼 2026년부터 EMS 고객사 대상 신규 모바일기기 장비 공급 개시",
-   "en": "The new Bengaluru, India plant was completed in November 2025 and is set to begin supplying equipment to EMS customers for new mobile devices from 2026"
+   "ko": "인도 카르나타카주 생산기지는 2025년 11월 완공을 목표로 추진돼 왔으며, 완공 이후 2026년부터 설비 제조·납품이 본격화할 것이라는 증권사 전망이 있었다(확정 실적 아님).",
+   "en": "The company's Karnataka, India plant targeted completion around November 2025, with a brokerage projecting equipment manufacturing and shipments to ramp up from 2026 — though this remains a forecast, not confirmed results."
   },
   {
-   "ko": "부채비율 15.4%로 낮은 재무 레버리지를 유지하고 있으나 2025년 영업활동현금흐름은 마이너스 107억원 기록",
-   "en": "Debt ratio stood at a low 15.4%, but operating cash flow turned negative at KRW 10.7bn in 2025"
+   "ko": "현재 주가는 주당순자산 대비 낮은 수준에서 거래되고 있으나, 최근 4개 분기 합산 순이익이 적자여서 통상적인 주가수익비율 산출이 어려운 구간에 있다.",
+   "en": "The stock trades below its per-share net asset value, while the sum of net income over the trailing four quarters remains negative, making a conventional price-to-earnings comparison difficult."
   }
  ],
  "business": {
-  "ko": "하이비젼시스템은 스마트폰 등에 탑재되는 초소형 카메라 모듈의 생산·검사 자동화 장비를 주력으로 하며, 국내에서는 LG이노텍·삼성전자 등에, 해외에서는 Sharp·Sony·Cowell·Primax·Oflim·Foxconn 등 글로벌 카메라모듈 업체에 납품하고 있다. 2022년부터 2차전지 사업에 진입해 셀 생산공정용 비전 검사장비와 보조배터리(P-LBM) 생산라인을 시작으로, 2023년 세방리튬배터리의 EV용 배터리 생산라인, 2024년 이후 ESS 배터리팩 조립 생산라인까지 포트폴리오를 넓혀왔다. 최근에는 자사가 강점을 가진 비전 검사장비뿐 아니라 공정·조립·자동화 설비 전반을 묶은 턴키 라인을 공급하며 검사장비 전문기업에서 종합 자동화 설비 기업으로 확장을 추진하고 있다. 이 밖에 자율주행용 센싱카메라를 포함한 전장 부문, 자회사 큐비콘을 통한 3D프린터 사업, 반도체 AOI(자동광학검사) 장비 사업도 병행하고 있다. 연결대상 종속회사로는 국내 퓨런티어·큐비콘·하이라이프에프에스가 있으며, 해외에는 베트남·중국·인도 법인을 두고 생산·영업 거점을 다변화하고 있다. 2024년 설립된 인도 법인은 2025년 11월 뱅갈루루에 현지 제1공장을 준공했으며, 글로벌 EMS 고객사의 생산기지 이전 전략에 대응해 신규 모바일 디바이스 제조 장비를 공급할 계획이다. 경쟁 구도는 국내 검사·자동화 장비 업체인 고영, 뷰웍스, 코윈테크, 에스에프에이 등과 비교되는 구조다.",
-  "en": "HyVISION System's core business is automated manufacturing and inspection equipment for miniature camera modules used in smartphones, supplying domestic customers such as LG Innotek and Samsung Electronics as well as global camera-module makers including Sharp, Sony, Cowell, Primax, Oflim, and Foxconn. Since entering the secondary battery equipment business in 2022, the company has expanded from cell-process vision inspection gear and auxiliary battery (P-LBM) lines to an EV battery line for Sebang Litheum Battery in 2023 and ESS battery-pack assembly lines from 2024 onward. More recently it has begun offering turnkey lines that bundle its core vision inspection strength with process, assembly, and automation equipment, positioning itself as moving from an inspection-equipment specialist toward a comprehensive automation equipment company. The company also runs an automotive segment centered on autonomous-driving sensing cameras, a 3D printer business through subsidiary Cubicon, and a semiconductor AOI (automated optical inspection) equipment business. Its consolidated subsidiaries include Furonteer, Cubicon, and Hylife FS domestically, alongside overseas operations in Vietnam, China, and India. The India subsidiary, established in 2024, completed its first local plant in Bengaluru in November 2025 and plans to supply new mobile-device manufacturing equipment in response to global EMS customers relocating production bases. The company's competitive set is generally compared with domestic inspection and automation equipment makers such as Koh Young, Vieworks, Cowintech, and SFA."
+  "ko": "하이비젼시스템은 2002년 설립, 2012년 코스닥에 상장된 머신비전 기반 검사·자동화 장비 기업이다. 성남 본사와 구미공장을 중심으로 IT/모바일 카메라 모듈 검사·조립 자동화 장비, 2차전지 검사장비, 자율주행 센싱카메라, 3D프린터, 산업용 로보틱스 등을 주력 제품으로 두고 있다. 전통적으로 매출 비중이 가장 큰 부문은 스마트폰 카메라 모듈용 검사·자동화 장비로, 2025년 3분기 기준 IT/모바일 부문 매출비중이 60%대를 차지했다. 종속회사인 퓨런티어는 자율주행 센서·ToF/Lidar 센싱카메라 핵심 공정 장비를 담당하며 코스닥에 별도 상장돼 있고, 큐비콘은 3D프린터 및 AI 로보틱스 부품을 개발하는 자회사다. 준성하이테크는 장비의 조립·생산을 맡는 제조 관계사로 그룹 내 생산 기반을 보완한다. 2022년부터는 2차전지 셀 생산공정용 비전 검사장비 공급을 시작으로 2차전지·ESS 영역에 진출했고, 2024년 첫 ESS 배터리팩 조립라인 수주 이후 관련 사업을 단계적으로 확대해왔다. 고객 기반은 스마트폰 제조사·부품사, 국내 2차전지 셀 업체, 제약·바이오 설비 수요기업 등으로 다변화돼 있으며, 국내 동종·유사 업종으로는 고영, 뷰웍스, 코윈테크, 에스에프에이 등이 꼽힌다. 해외 거점은 미국(캘리포니아), 중국(동관), 베트남, 싱가포르, 인도(카르나타카) 법인으로 구성돼 글로벌 고객 대응 체계를 갖추고 있다.",
+  "en": "Founded in 2002 and listed on KOSDAQ in 2012, HyVISION SYSTEM is a machine-vision-based inspection and automation equipment company. Centered on its Seongnam headquarters and Gumi plant, its core products span camera module inspection and assembly automation for IT/mobile devices, secondary battery inspection equipment, autonomous-driving sensing cameras, 3D printers, and industrial robotics. The largest revenue segment has traditionally been smartphone camera module inspection and automation equipment, which accounted for roughly 60% of revenue in the third quarter of 2025. Subsidiary FURENTiER, separately listed on KOSDAQ, handles core process equipment for autonomous sensors and ToF/Lidar sensing cameras, while subsidiary Cubicon develops 3D printers and AI robotics components. Affiliate Junsung Hi-Tech, a manufacturing partner, handles equipment assembly and production, complementing the group's manufacturing base. Starting in 2022, the company entered the secondary battery and ESS space by supplying vision inspection equipment for battery cell production lines, and it has progressively expanded this business since winning its first ESS battery pack assembly line order in 2024. Its customer base has diversified to include smartphone makers and component suppliers, domestic battery cell manufacturers, and pharmaceutical/bio equipment buyers, while domestic peers in similar or adjacent businesses include Koh Young, Vieworks, Cowintech, and SFA Engineering. Overseas operations span the United States (California), China (Dongguan), Vietnam, Singapore, and India (Karnataka), forming a global customer-support network."
  },
  "earnings": {
-  "ko": "실적은 뚜렷한 사이클을 보였다. 2023년 매출 3,483억원, 영업이익 588억원(영업이익률 16.9%)으로 정점을 찍은 뒤, 2024년에는 매출 3,120억원, 영업이익 310억원(영업이익률 9.9%)으로 다소 둔화됐지만 여전히 견조한 흑자를 유지했다. 그러나 2025년에는 매출이 1,711억원으로 전년 대비 큰 폭 감소했고, 영업손실 326억원, 지배주주순손실 171억원을 기록하며 적자로 전환했다. 분기별로 보면 2025년 3분기 매출 587억원에 영업손실 87억원, 4분기에는 매출 484억원에 영업손실 151억원으로 손실 규모가 오히려 확대되는 흐름을 보였다. 이는 IT·모바일 부문 수요 둔화와 연결 종속회사 실적 악화, 사업 다각화에 따른 비용 증가가 겹친 결과로 해석된다. 다만 2026년 들어서는 변화가 감지된다. 1분기 매출 280억원, 영업손실 75억원, 지배주주순손실 28억원을 거쳐 2분기에는 매출이 503억원으로 반등했고 영업손실은 57억원, 지배주주순손실은 3억원 수준까지 축소됐다. 현금흐름 측면에서는 2024년 영업활동현금흐름이 1,017억원의 큰 폭 플러스를 기록했던 반면 2025년에는 마이너스 107억원으로 전환돼, 이익 회복이 현금 창출로 이어지는지는 앞으로 확인이 필요한 부분이다. 재무건전성 측면에서는 부채비율이 2023년 36.0%에서 2025년 15.4%로 낮아지며 레버리지 부담은 크지 않은 상태를 유지하고 있다.",
-  "en": "Earnings have followed a clear cycle. Revenue peaked at KRW 348.3bn with operating profit of KRW 58.8bn (16.9% margin) in 2023, before easing to KRW 312.0bn in revenue and KRW 31.0bn in operating profit (9.9% margin) in 2024, still a solid profit. In 2025, however, revenue fell sharply to KRW 171.1bn and the company swung to an operating loss of KRW 32.6bn and a controlling-interest net loss of KRW 17.1bn. On a quarterly basis, the loss actually widened through the year, from an operating loss of KRW 8.7bn on revenue of KRW 58.7bn in Q3 2025 to an operating loss of KRW 15.1bn on revenue of KRW 48.4bn in Q4 2025, reflecting weaker IT/mobile demand, deteriorating results at consolidated subsidiaries, and rising costs tied to diversification. A shift became visible in 2026: after Q1 revenue of KRW 28.0bn with an operating loss of KRW 7.5bn and a controlling-interest net loss of KRW 2.8bn, Q2 revenue rebounded to KRW 50.3bn while the operating loss narrowed to KRW 5.7bn and the net loss shrank to roughly KRW 0.3bn. On the cash flow side, operating cash flow swung from a strongly positive KRW 101.7bn in 2024 to negative KRW 10.7bn in 2025, leaving open the question of whether the earnings recovery will translate into cash generation. On the balance sheet, the debt ratio fell from 36.0% in 2023 to 15.4% in 2025, keeping leverage relatively modest."
+  "ko": "연간 실적은 2023년을 정점으로 뚜렷한 하강 국면을 보였다. 2023년 매출 3,483억원, 영업이익 588.0억원(영업이익률 16.9%)으로 최근 4개 연도 중 최고치를 기록했으나, 2024년에는 매출이 3,120억원으로 줄고 영업이익률도 9.9%로 낮아졌다. 2025년에는 매출이 1,711억원까지 급감하고 영업이익은 -325.5억원(영업이익률 -19.0%), 지배주주순손실 170.6억원으로 완전한 적자전환을 기록했다. 분기별로 보면 2025Q2 매출 411.7억원·영업손실 64.6억원에서 2025Q3 매출 586.7억원·영업손실 86.9억원으로 손실이 오히려 확대됐고, 2025Q4에는 매출 484.3억원에 영업손실이 150.6억원까지 늘었다. 참고로 일부 증권사는 2025년 11월 시점 리포트에서 4분기 매출 796억원, 영업이익 66억원의 흑자전환을 전망했으나, 확정 공시 기준 4분기는 매출 484억원, 영업손실 150.6억원으로 실제 결과는 해당 전망과 크게 달랐다. 2026년 들어서는 1분기 매출 279.8억원·영업손실 74.8억원, 2분기 매출 503.4억원·영업손실 57.2억원으로 손실 규모가 점진적으로 줄어드는 흐름을 보였고, 2026Q2 지배주주순손실은 3.3억원으로 손익분기에 근접했다. 현금흐름 측면에서는 2025년 영업활동현금흐름이 -106.6억원으로 이익 악화와 함께 현금창출력도 저하됐으며, 2022년(-242.0억원)에도 음(-)의 흐름을 보인 바 있어 사업 다각화 국면에서 현금흐름 변동성이 크다는 점을 확인할 수 있다. 부채비율은 2022년 38.7%에서 2025년 15.4%로 낮아졌는데, 이는 외형(매출) 축소와 함께 부채 부담도 함께 줄어든 결과로 해석된다.",
+  "en": "Annual results peaked in 2023 and have shown a clear downward trend since. Revenue reached KRW 348.3 billion in 2023 with operating profit of KRW 58.8 billion (a 16.9% operating margin), the highest among the past four years, but 2024 revenue slipped to KRW 312.0 billion with the operating margin narrowing to 9.9%. In 2025, revenue plunged to KRW 171.1 billion, operating profit turned to a loss of KRW 32.5 billion (a -19.0% margin), and the owners' net loss reached KRW 17.1 billion — a full swing into losses. On a quarterly basis, the operating loss widened from KRW 6.46 billion in 2025Q2 (on revenue of KRW 41.2 billion) to KRW 8.69 billion in 2025Q3 (revenue of KRW 58.7 billion), and further to KRW 15.1 billion in 2025Q4 (revenue of KRW 48.4 billion). Notably, one brokerage's November 2025 report had projected a 2025Q4 swing to profit with revenue of KRW 79.6 billion and operating profit of KRW 6.6 billion, but confirmed disclosures show the quarter actually posted revenue of KRW 48.4 billion and an operating loss of KRW 15.1 billion — a substantial divergence from that forecast. Moving into 2026, the operating loss gradually narrowed, from KRW 7.48 billion in Q1 (on revenue of KRW 28.0 billion) to KRW 5.72 billion in Q2 (revenue of KRW 50.3 billion), with the owners' net loss shrinking to just KRW 0.33 billion in 2026Q2, approaching breakeven. On the cash flow side, 2025 operating cash flow was negative at KRW 10.66 billion, reflecting deteriorating cash generation alongside the earnings decline; a similarly negative reading occurred in 2022 (-KRW 24.2 billion), underscoring that cash flow volatility has accompanied the company's business diversification phases. The debt ratio fell from 38.7% in 2022 to 15.4% in 2025, a shift that appears to reflect shrinking liabilities alongside the contraction in revenue scale."
  },
  "industry": {
-  "ko": "전방산업인 스마트폰 시장은 성숙기에 접어들어 수요 변동성이 크며, 2025년 실적 부진의 핵심 배경도 여기에 있다. 다만 폴더블폰 확대와 XR기기 등 신규 폼팩터 등장은 카메라 모듈·검사장비 수요에 새로운 변수로 작용할 여지가 있다. 한편 2차전지·ESS 시장은 전기차 수요와 더불어 최근에는 인공지능(AI) 데이터센터 확산에 따른 전력 수요 급증이 새로운 성장축으로 부각되고 있으며, 회사가 수주한 북미향 대형 ESS 라인도 이러한 흐름과 맞닿아 있다. 국내 검사·자동화 장비 업계에서는 고영, 뷰웍스, 코윈테크, 에스에프에이 등이 동종·유사 업체로 거론되며, 하이비젼시스템은 카메라모듈 검사에서의 오랜 업력을 바탕으로 2차전지·전장·반도체 등으로 영역을 넓히는 다각화 전략을 취하고 있다. 글로벌 생산기지 재편 흐름 속에서 주요 고객사들이 생산 거점을 중국에서 인도 등으로 이전하는 추세도 나타나고 있어, 회사의 인도 신공장 투자와 맞물려 있다. 검사장비 산업 특성상 고객사의 설비투자 사이클에 실적이 연동되는 구조여서, 전방산업 업황 변화가 매출 변동성으로 직결되는 점은 구조적 특징이다.",
-  "en": "The smartphone market, HyVISION's traditional end market, has matured with high demand volatility, which was a core driver of the 2025 downturn. Still, the expansion of foldable phones and emergence of new form factors such as XR devices could introduce new variables for camera-module and inspection equipment demand. Meanwhile, the secondary battery and ESS market is being reshaped by a new growth driver beyond EV demand: a surge in power needs tied to the expansion of AI data centers, a trend directly connected to the large North American ESS line the company recently won. In Korea's inspection and automation equipment industry, companies such as Koh Young, Vieworks, Cowintech, and SFA are commonly cited as peers, and HyVISION is pursuing a diversification strategy that leverages its long track record in camera-module inspection to expand into batteries, automotive, and semiconductors. Amid a broader reshuffling of global production bases, major customers have been shifting manufacturing from China toward India, a trend that aligns with the company's investment in its new India plant. Given the structural nature of the inspection equipment industry, where revenue is closely tied to customers' capital expenditure cycles, shifts in end-market conditions translate directly into revenue volatility."
+  "ko": "하이비젼시스템의 전통적 전방시장은 스마트폰 카메라 모듈·부품 공급망으로, 글로벌 스마트폰 수요 사이클과 신제품 폼팩터 변화에 실적이 크게 연동된다. 최근에는 스마트폰 시장의 일부 수요 감소와 종속회사 매출 부진이 실적 악화의 주된 배경으로 지목됐다. 다만 장기적으로는 폴더블폰 등 신규 폼팩터 성장과 XR 기기 등 새로운 IT 기기 시장 확대가 카메라·센싱 검사장비 수요를 다시 자극할 요인으로 거론된다. 동시에 2차전지 산업에서는 전기차와 에너지저장장치(ESS) 수요 증가가 중장기 성장 동력으로 지목되며, 회사도 이 영역에 사업 비중을 넓혀가는 중이다. 북미 ESS 시장은 관련 세액공제 등 정책 지원을 배경으로 확대되는 추세로 알려져 있으며, 국내 2차전지 셀 업체들의 북미 거점 투자가 관련 설비 수주로 이어지는 구조다. 경쟁 구도 면에서는 국내 정밀 검사·자동화 장비 분야에서 고영, 뷰웍스, 코윈테크, 에스에프에이 등과 함께 거론되며, 각사가 반도체·디스플레이·2차전지 등 서로 다른 응용 분야에 특화돼 있어 직접적인 시장점유율 비교보다는 응용 분야별 포지셔닝 차이가 크다. 하이비젼시스템은 검사장비 단품 공급을 넘어 공정·조립·검사·자동화를 묶은 턴키 라인 공급으로 사업모델을 확장하려는 시도를 하고 있다.",
+  "en": "HyVISION SYSTEM's traditional end market is the smartphone camera module and component supply chain, so its results are heavily tied to global smartphone demand cycles and new form-factor transitions. Recently, a partial slowdown in smartphone demand and weaker subsidiary revenue have been cited as the main drivers of earnings deterioration. Over the longer term, however, growth in new form factors such as foldable phones and the expansion of new IT device categories like XR devices are cited as factors that could reignite demand for camera and sensing inspection equipment. At the same time, growing demand for electric vehicles and energy storage systems (ESS) in the battery industry is cited as a mid-to-long-term growth driver, an area where the company has been expanding its business weight. The North American ESS market is reportedly expanding on the back of policy support including tax credits, with domestic battery cell makers' North American investments translating into related equipment orders. In terms of competitive positioning, the company is mentioned alongside Koh Young, Vieworks, Cowintech, and SFA Engineering in Korea's precision inspection and automation equipment space, though each firm specializes in different application areas such as semiconductors, displays, or batteries, making direct market-share comparisons less meaningful than differences in application focus. HyVISION SYSTEM has been attempting to expand its business model beyond standalone inspection equipment toward turnkey lines that bundle process, assembly, inspection, and automation."
  },
  "outlook": {
-  "ko": "회사는 인도 뱅갈루루 신공장을 2026년부터 본격 가동해 EMS 고객사 대상으로 100여종이 넘는 신규 모바일 디바이스 제조 관련 장비를 생산·납품할 계획이며, EMS 고객사향 설비 수요가 향후 수년에 걸쳐 확대될 것으로 보고 제2·3공장 건설도 계획하고 있다. 2차전지·ESS 부문에서는 2026년 5월 미국향 약 192억원 규모 ESS 팩 조립 설비 계약(선금 57% 확보)에 이어, 6월에는 북미 AI 데이터센터향 약 950억원 규모의 ESS 배터리팩 조립 생산라인을 수주하며 관련 사업의 외형을 빠르게 키우고 있다. 최두원 대표이사는 이번 대형 수주와 관련해 \"북미향 신규 수주를 통해 ESS 분야에서 사업 확장성을 높이고 있으며, 추가 생산라인 수주 확보에도 역량을 집중하겠다\"고 밝혔다. 회사는 이 같은 흐름을 통해 기존 검사장비 전문기업에서 공정·조립·검사·자동화를 아우르는 종합 자동화 설비 기업으로의 전환을 추진하고 있다고 설명하고 있다. 반도체 AOI 장비 사업도 첫 수주 이후 매출화 단계에 진입해 있어 추가 성장축으로 거론된다. 2026년 상반기 분기 실적에서 손실 폭이 축소되는 흐름이 나타난 만큼, 하반기 이후 ESS 수주 물량의 매출 반영 속도와 IT·모바일 부문의 회복 정도가 실적 방향을 좌우할 변수로 꼽힌다.",
-  "en": "The company plans to bring its new Bengaluru, India plant into full operation from 2026, producing and supplying equipment for more than 100 new mobile device types to EMS customers, and is planning second and third plants given expectations that EMS-related equipment demand will keep growing over the next several years. In its battery and ESS segment, following a roughly KRW 19.2bn U.S.-bound ESS pack assembly equipment contract in May 2026 (with 57% of the payment secured upfront), the company won a roughly KRW 95bn order in June 2026 for an ESS battery-pack assembly line serving North American AI data centers, rapidly scaling up this business. CEO Choi Doo-won stated regarding the large order that \"북미향 신규 수주를 통해 ESS 분야에서 사업 확장성을 높이고 있으며, 추가 생산라인 수주 확보에도 역량을 집중하겠다\". The company describes these moves as part of a shift from a specialist inspection equipment maker toward a comprehensive automation equipment company spanning process, assembly, inspection, and automation. Its semiconductor AOI equipment business has also entered a revenue-generating stage following its first order, and is cited as an additional growth avenue. With quarterly losses narrowing through the first half of 2026, the pace at which ESS order backlogs convert into recognized revenue, and the degree of recovery in the IT/mobile segment, are seen as the key variables shaping the earnings trajectory in the second half and beyond."
+  "ko": "회사는 2022년부터 이어온 2차전지·ESS 사업 다각화를 통해 신규 성장축을 확보하려는 행보를 지속하고 있다. 2026년 5월 미국향 ESS 배터리팩 조립설비 191.6억원 수주에 이어, 6월에는 국내 2차전지 업체의 북미 거점용 대형 ESS 생산라인(약 950억원 규모) 수주가 알려지면서 턴키형 자동화 라인 공급으로의 사업 확장 시도가 이어지고 있다. 두 계약 모두 선급금 확보 등 계약금 회수 구조가 포함된 것으로 알려져, 실현될 경우 향후 현금흐름 개선에도 기여할 수 있는 요인으로 거론된다. 인도 카르나타카주 생산기지는 2025년 2월 착공 이후 연내 완공을 목표로 추진돼 왔으며, 한 증권사는 2025년 11월 보고서에서 해당 공장이 11월경 완공되고 2026년부터 설비 제조·납품이 본격화할 것으로 전망했다(이는 브로커리지 전망으로, 확정 실적은 아니다). 회사 측은 인도 진출이 글로벌 고객사의 생산 거점 이전 수요에 대응하기 위한 전략이라고 설명한 바 있다. IT/모바일 부문에서는 폼팩터 변화와 XR 기기 확대에 따른 관련 수요 회복 가능성이 거론되는 한편, 자회사 퓨런티어의 자율주행 센싱카메라 사업 실적 회복 여부도 그룹 전체 실적에 영향을 줄 변수로 남아 있다. 종합적으로 회사의 향후 실적 개선 경로는 2차전지·ESS 부문의 수주 지속성과 인도 등 신규 생산기지의 매출 기여 시점에 좌우될 것으로 보인다.",
+  "en": "The company continues to pursue new growth pillars through the secondary battery and ESS diversification it began in 2022. Following a KRW 19.16 billion US-bound ESS battery pack assembly order in May 2026, a large-scale ESS production line contract for a domestic battery maker's North American site (roughly KRW 95 billion) was reported in June, extending the company's push into turnkey automation line supply. Both contracts reportedly included advance-payment structures for contract proceeds, a factor cited as potentially supporting future cash flow if realized. The Karnataka, India production site, which broke ground in February 2025, has been targeted for completion within that year; one brokerage's November 2025 report projected the plant would be completed around November and that equipment manufacturing and shipments would ramp up from 2026 — a brokerage forecast, not a confirmed result. The company has described its India entry as a strategy to respond to global customers' shift of production bases. In the IT/mobile segment, potential demand recovery tied to form-factor changes and expanding XR devices has been cited, while the recovery trajectory of subsidiary FURENTiER's autonomous sensing camera business remains a variable that could affect group-wide results. Overall, the path to earnings improvement appears to hinge on the continuity of secondary battery/ESS orders and the timing of revenue contribution from new production sites such as India."
  },
  "valuation_comment": {
-  "ko": "2025년 적자전환으로 이익 기준 밸류에이션 지표를 단순 비교하기는 어려운 구간에 있으며, 순자산가치와의 관계를 통해 위치를 가늠하는 편이 현실적이다. 제공된 지표 기준 주당순자산은 19,505원 수준으로, 현재 주가는 이 값을 상당폭 밑도는 수준에서 형성돼 있어 순자산 대비 할인된 상태로 거래되고 있다. 배당 측면에서는 주당 현금배당금이 80원 수준으로 파악되며, 이를 감안한 배당수익률은 업종 평균을 밑도는 편으로 분류된다. 과거 흑자 국면이었던 2023~2024년에는 주가수익비율이 6~7배 수준에서 거래된 이력이 있다는 증권사 리포트도 있어, 이익이 회복될 경우 참고할 수 있는 과거 밴드로 볼 수 있다. 다년간 흐름을 보면 2023~2024년 흑자에서 2025년 적자로 전환된 뒤 2026년 상반기 분기 손실 폭이 점차 축소되는 이익 회복 조짐이 관찰되고 있으나, 이것이 연간 기준 흑자전환으로 이어질지는 아직 확인되지 않았다.",
-  "en": "With the swing to a loss in 2025, earnings-based valuation metrics are difficult to compare in a simple way, making the relationship to book value a more practical reference point. Based on the provided metrics, book value per share stands at about KRW 19,505, and the current stock price sits well below that level, meaning shares trade at a discount to net asset value. On the dividend side, the per-share cash dividend is around KRW 80, and the resulting dividend yield is classified as below the industry average. Brokerage research has noted that during the profitable years of 2023–2024 the price-to-earnings ratio traded in roughly the 6–7 times range, which can serve as a historical reference band if earnings recover. Looking at the multi-year pattern, profitability shifted from gains in 2023–2024 to a loss in 2025, and signs of earnings recovery have emerged as quarterly losses narrowed through the first half of 2026, though whether this will translate into a full-year return to profit has not yet been confirmed."
+  "ko": "최근 4개 분기 합산 순이익이 적자를 기록하고 있어 통상적인 주가수익비율(PER) 산출이 어려운 구간에 있으며, 이는 실적 방향성이 아직 뚜렷한 회복 신호로 전환되지 않았음을 반영한다. 주가는 주당순자산가치보다 낮은 수준에서 거래되고 있는데, 이는 2025년 적자전환 이후 시장이 자산가치 대비 할인된 가격을 부여하고 있는 상태로 해석될 수 있다. 배당 측면에서는 회사가 실적 악화 국면에서도 소액의 현금배당을 유지해온 것으로 나타나며, 배당수익률 수준 자체는 성장주보다는 안정형 자산 관점에서 참고할 지표에 가깝다. 과거 3개년(2022~2024) 흑자 국면에서 형성됐던 거래 배수와 비교하면, 현재는 이익 기반이 약화된 상태에서 밸류에이션을 판단해야 하는 국면이라는 점이 특징적이다. 2026년 들어 분기별 손실 규모가 점진적으로 줄어드는 흐름이 나타나고 있어, 향후 이익 회복이 가시화될 경우 밸류에이션에 대한 시장의 해석도 달라질 수 있다는 점은 참고할 만하다.",
+  "en": "With the sum of net income over the trailing four quarters remaining negative, a conventional price-to-earnings comparison is difficult to apply, reflecting that earnings direction has not yet shown a clear recovery signal. The stock trades below its per-share net asset value, which can be interpreted as the market applying a discount to book value following the 2025 swing into losses. On the dividend side, the company has reportedly maintained a small cash dividend even through the earnings downturn, making the dividend yield level more relevant as a reference point for stability-oriented rather than growth-oriented investors. Compared with the trading multiples that prevailed during the profitable 2022–2024 period, the current situation is notable in that valuation must now be assessed against a weakened earnings base. Since 2026, quarterly losses have shown a gradual narrowing trend, which is worth noting because a more visible earnings recovery, if it materializes, could change how the market interprets the current valuation."
  },
  "bull": [
   {
    "title": {
-    "ko": "ESS 대형 수주로 신성장축 확보",
-    "en": "Large ESS Orders Establishing a New Growth Pillar"
+    "ko": "2차전지·ESS 신사업 확장",
+    "en": "Expansion into Battery/ESS New Business"
    },
    "body": {
-    "ko": "2026년 5월과 6월 연이어 북미향 ESS 배터리팩 조립설비를 수주하며, 특히 6월 계약은 950억원 규모로 2차전지 진출 이후 최대 단일 프로젝트로 확인됐다. 5월 계약은 선금 57%를 확보하는 구조로, 향후 현금흐름 개선에 기여할 가능성이 있다. AI 데이터센터 확산에 따른 전력 수요 증가가 ESS 투자로 이어지는 흐름과 맞물려 있어, 관련 수주가 추가로 이어질지가 관건이다.",
-    "en": "The company won consecutive North American-bound ESS battery-pack assembly equipment orders in May and June 2026, with the June contract worth roughly KRW 95bn, its largest single project since entering the battery equipment business. The May contract secured 57% of payment upfront, a structure that could support cash flow going forward. This aligns with rising ESS investment driven by growing power demand from AI data center expansion, and whether further orders follow will be a key watch point."
+    "ko": "2026년 상반기 미국향 ESS 배터리팩 조립설비 191.6억원 수주에 이어 6월에는 약 950억원 규모의 대형 ESS 생산라인 수주가 알려지며 사업 다각화가 구체적 성과로 이어지고 있다. 두 계약 모두 선급금 확보 구조가 포함된 것으로 알려져 수주 실현 시 현금흐름에도 긍정적으로 작용할 여지가 있다. 2022년 2차전지 검사장비 공급을 시작으로 축적해온 레퍼런스가 대형 턴키 계약으로 이어지는 흐름이 확인된다.",
+    "en": "Following a KRW 19.16 billion US-bound ESS battery pack assembly order in the first half of 2026, a roughly KRW 95 billion ESS production line contract was reported in June, turning business diversification into concrete order wins. Both contracts reportedly include advance-payment structures, which could support cash flow if realized. The track record built since the company began supplying battery inspection equipment in 2022 now appears to be translating into large-scale turnkey contracts."
    }
   },
   {
    "title": {
-    "ko": "인도 신공장 가동을 통한 신규 매출원",
-    "en": "New Revenue Stream from India Plant Launch"
+    "ko": "분기별 손실 축소 흐름",
+    "en": "Narrowing Quarterly Losses"
    },
    "body": {
-    "ko": "2025년 11월 준공된 인도 뱅갈루루 공장은 2026년부터 본격 가동에 들어가며, 글로벌 EMS 고객사를 대상으로 신규 모바일 디바이스 제조 장비를 공급할 예정이다. 글로벌 고객사의 생산기지가 중국에서 인도로 이전되는 흐름과 맞물려 있어, 기존 IT·모바일 부문 외 새로운 매출 창구가 될 수 있다. 회사는 수요 확대에 대비해 제2·3공장 건설도 계획하고 있다.",
-    "en": "The Bengaluru, India plant, completed in November 2025, is set to begin full-scale operation in 2026, supplying new mobile-device manufacturing equipment to global EMS customers. This aligns with the shift of global customers' production bases from China to India, potentially opening a new revenue channel beyond the existing IT/mobile segment. The company is also planning second and third plants to prepare for expected demand growth."
+    "ko": "2025Q4 영업손실 150.6억원을 정점으로 2026Q1 74.8억원, 2026Q2 57.2억원으로 손실 규모가 점진적으로 줄었다. 2026Q2 지배주주순손실은 3.3억원으로 손익분기점에 근접한 수준까지 개선됐다. 이러한 흐름이 이어질 경우 향후 실적 방향성에 긍정적 신호가 될 수 있다.",
+    "en": "After peaking at an operating loss of KRW 15.1 billion in 2025Q4, the loss narrowed to KRW 7.48 billion in 2026Q1 and KRW 5.72 billion in 2026Q2. The owners' net loss in 2026Q2 improved to just KRW 0.33 billion, close to breakeven. If this trend continues, it could serve as a positive signal for future earnings direction."
    }
   },
   {
    "title": {
-    "ko": "2026년 상반기 손실 폭 축소 흐름",
-    "en": "Narrowing Losses Through First Half of 2026"
+    "ko": "글로벌 생산기지 다변화",
+    "en": "Diversified Global Production Base"
    },
    "body": {
-    "ko": "지배주주순손실이 2026년 1분기 28억원에서 2분기 3억원 수준으로 크게 줄었고, 매출액도 1분기 280억원에서 2분기 503억원으로 반등했다. 영업손실 역시 1분기 75억원에서 2분기 57억원으로 축소됐다. 다만 아직 흑자 전환에는 이르지 못한 상태로, 개선 추세가 지속될지 확인이 필요하다.",
-    "en": "Controlling-interest net losses shrank sharply from KRW 2.8bn in Q1 2026 to about KRW 0.3bn in Q2, while revenue rebounded from KRW 28.0bn to KRW 50.3bn over the same period, and the operating loss narrowed from KRW 7.5bn to KRW 5.7bn. The company has not yet returned to profit, however, so whether this improving trend continues remains to be seen."
+    "ko": "미국, 중국, 베트남, 싱가포르, 인도 등에 걸친 해외 법인망을 갖추고 있어 글로벌 고객사의 생산 거점 이전 수요에 대응할 수 있는 구조다. 인도 카르나타카주 신규 공장은 첨단 스마트기기 완제품 제조 전반에 대응하는 신규 비즈니스로 추진되고 있다. 고객사 생산기지 이전에 발맞춘 현지화 전략이 신규 매출원 확보로 이어질 가능성이 거론된다.",
+    "en": "The company operates overseas subsidiaries across the United States, China, Vietnam, Singapore, and India, positioning it to respond to global customers' relocation of production bases. The new Karnataka, India plant is being pursued as a new business line covering manufacturing for finished advanced smart devices. A localization strategy aligned with customers' shifting production bases has been cited as a potential source of new revenue."
    }
   }
  ],
  "bear": [
   {
    "title": {
-    "ko": "IT·모바일 의존도와 수요 둔화",
-    "en": "Dependence on IT/Mobile and Demand Slowdown"
+    "ko": "매출 급감과 연속 적자",
+    "en": "Sharp Revenue Decline and Consecutive Losses"
    },
    "body": {
-    "ko": "2025년 매출이 전년 대비 큰 폭으로 감소한 배경에는 스마트폰 시장 수요 둔화가 자리하고 있으며, 이 부문에 대한 매출 의존도가 여전히 높다. 전방산업인 스마트폰 시장의 회복 시점이 불확실한 상태에서 신규 부문의 매출 기여가 충분히 커지기 전까지는 실적 변동성이 이어질 수 있다.",
-    "en": "Behind the sharp revenue decline in 2025 was slowing smartphone market demand, and the company's revenue remains heavily dependent on this segment. With the timing of a smartphone market recovery uncertain, earnings volatility could persist until new segments contribute a larger share of revenue."
+    "ko": "2025년 매출은 1,711억원으로 전년(3,120억원) 대비 약 45% 줄었고, 2025Q2부터 2026Q2까지 5개 분기 연속 영업손실을 기록했다. 2023년 588.0억원에 달했던 연간 영업이익이 2025년 -325.5억원으로 전환된 낙폭이 크다. 매출 규모 자체가 축소된 상태에서 이익 회복을 논하기에는 아직 이르다는 평가가 가능하다.",
+    "en": "2025 revenue fell about 45% year over year to KRW 171.1 billion from KRW 312.0 billion, and the company posted operating losses for five consecutive quarters from 2025Q2 through 2026Q2. The swing from an annual operating profit of KRW 58.8 billion in 2023 to a loss of KRW 32.5 billion in 2025 represents a large reversal. With revenue scale itself having contracted, it may be premature to characterize this as an earnings recovery."
    }
   },
   {
    "title": {
-    "ko": "현금흐름 악화와 자회사 부진",
-    "en": "Deteriorating Cash Flow and Weak Subsidiary Results"
+    "ko": "모바일 부문 의존과 자회사 부진",
+    "en": "Mobile Segment Dependence and Subsidiary Weakness"
    },
    "body": {
-    "ko": "2025년 영업활동현금흐름이 마이너스 107억원을 기록해, 2024년의 1,017억원 플러스와 대비된다. 연결 대상 종속회사의 실적 악화가 연결 손익에 부담을 준 것으로 파악되며, 다각화에 따른 인력·비용 증가도 수익성 회복을 늦추는 요인으로 지목된다.",
-    "en": "Operating cash flow turned negative at KRW 10.7bn in 2025, a sharp reversal from positive KRW 101.7bn in 2024. Weaker results at consolidated subsidiaries have weighed on consolidated earnings, and rising headcount and costs tied to diversification are also cited as factors delaying a profitability recovery."
+    "ko": "IT/모바일 부문은 2025년 3분기 기준 매출의 60%대를 차지해 스마트폰 수요 사이클에 대한 의존도가 여전히 높다. 3분기 실적 부진의 원인으로 모바일 부문 부진과 함께 자회사 퓨런티어의 실적 악화가 함께 지목됐다. 자회사 실적이 그룹 전체 손익에 미치는 변동성이 크다는 점이 부담 요인으로 남아있다.",
+    "en": "The IT/mobile segment accounted for roughly 60% of revenue as of the third quarter of 2025, leaving the company still heavily exposed to the smartphone demand cycle. Weakness in the mobile segment together with deteriorating performance at subsidiary FURENTiER were both cited as causes of the third-quarter earnings decline. The volatility that subsidiary performance introduces to group-wide results remains a lingering concern."
    }
   },
   {
    "title": {
-    "ko": "실적 전망과 실제치 간 괴리 이력",
-    "en": "History of Gaps Between Forecasts and Actual Results"
+    "ko": "사업 다각화에 따른 비용 부담",
+    "en": "Cost Burden from Business Diversification"
    },
    "body": {
-    "ko": "유진투자증권은 2025년 11월 보고서에서 4분기 흑자전환을 전망했으나, 확정 실적 기준 2025년 4분기 영업손실은 오히려 150억원대로 확대됐다. 이는 회사에 대한 실적 전망이 실제 결과와 괴리를 보인 사례로, 향후 제시되는 실적 가이던스나 컨센서스를 해석할 때 참고할 필요가 있다.",
-    "en": "Eugene Investment & Securities projected in a November 2025 report that operating profit would turn positive in Q4 2025, but confirmed results showed the operating loss instead widening to over KRW 15bn that quarter. This is an example of a gap between forecasts and actual outcomes for the company, worth bearing in mind when interpreting future guidance or consensus estimates."
+    "ko": "사업 다각화 추진과 인력 증가에 따른 비용 증가가 매출 감소와 겹치면서 실적 악화를 심화시킨 것으로 설명된다. 2025년 영업활동현금흐름은 -106.6억원으로, 이익 악화와 함께 현금창출력도 함께 저하됐다. 신사업이 안정적 매출 기여로 이어지기 전까지는 이 같은 비용-매출 간 시차 부담이 지속될 수 있다.",
+    "en": "Rising costs from business diversification and headcount growth, combined with declining revenue, have been cited as intensifying the earnings deterioration. 2025 operating cash flow was negative at KRW 10.66 billion, reflecting weakened cash generation alongside the earnings decline. Until new businesses translate into stable revenue contribution, this cost-revenue timing mismatch could persist."
    }
   }
  ],
  "risks": [
   {
    "cat": {
-    "ko": "고객·전방산업 집중 리스크",
-    "en": "Customer/End-Market Concentration Risk"
+    "ko": "전방산업 집중 리스크",
+    "en": "End-Market Concentration Risk"
    },
    "body": {
-    "ko": "스마트폰 카메라모듈 부문은 소수의 대형 고객사에 대한 매출 의존도가 높은 구조로, 고객사의 설비투자 시점 변경이나 발주 축소가 실적에 직접적인 영향을 줄 수 있다. 신규로 확대 중인 2차전지·ESS 부문 역시 초기 단계로, 특정 프로젝트에 대한 의존도가 아직 높은 편이다.",
-    "en": "The smartphone camera-module segment depends heavily on a small number of large customers, so changes in their capex timing or order volumes can directly affect results. The newly expanding battery/ESS segment is also at an early stage and still relies heavily on specific projects."
+    "ko": "매출의 상당 부분이 스마트폰 카메라 모듈 관련 설비에 집중돼 있어 특정 고객사의 투자 사이클 변화에 실적이 크게 흔들릴 수 있다. 폴더블폰·XR 기기 등 신규 폼팩터로의 수요 이전이 예상만큼 빠르게 일어나지 않을 경우 회복 시점이 지연될 수 있다. 신사업(2차전지·ESS) 비중이 아직 절대적으로 크지 않아 단기간 내 이 리스크를 상쇄하기는 어려운 구조다.",
+    "en": "A substantial portion of revenue is concentrated in smartphone camera module-related equipment, making results vulnerable to shifts in specific customers' investment cycles. If demand migration toward new form factors such as foldables and XR devices proceeds more slowly than expected, the recovery timeline could be delayed. Because the new secondary battery/ESS business is not yet a large share of revenue, it may not be enough to offset this concentration risk in the near term."
    }
   },
   {
    "cat": {
-    "ko": "해외 법인 운영 리스크",
-    "en": "Overseas Subsidiary Operating Risk"
+    "ko": "신사업 실행 리스크",
+    "en": "New Business Execution Risk"
    },
    "body": {
-    "ko": "베트남, 중국, 인도 등 다수의 해외 생산·영업 법인을 운영하고 있어 환율 변동, 현지 인허가, 인건비 상승 등 다양한 리스크에 노출돼 있다. 특히 인도 신공장은 가동 초기 단계로, 예상보다 가동률 상승이 지연될 가능성도 배제할 수 없다.",
-    "en": "Operating multiple overseas production and sales subsidiaries in Vietnam, China, and India exposes the company to currency fluctuations, local licensing issues, and rising labor costs. The new India plant in particular is in its early operating stage, and utilization could ramp up more slowly than expected."
+    "ko": "대형 ESS 수주가 실제 매출·이익으로 전환되는 시점과 수익성은 아직 확정되지 않았으며, 턴키 라인 공급 과정에서 원가·일정 관리 이슈가 발생할 가능성이 있다. 인도 신규 공장의 가동 및 매출 기여 시점도 브로커리지 전망 단계로, 확정된 실적으로 이어질지는 추가 확인이 필요하다. 자회사(퓨런티어, 큐비콘) 실적의 변동성도 그룹 전체 손익에 영향을 줄 수 있다.",
+    "en": "The timing and profitability of converting large ESS orders into actual revenue and profit have not yet been confirmed, and cost or schedule management issues could arise during turnkey line delivery. The timing of the new India plant's ramp-up and revenue contribution also remains at the brokerage-forecast stage, requiring further confirmation before it can be treated as realized performance. Volatility at subsidiaries (FURENTiER, Cubicon) could also affect group-wide results."
    }
   },
   {
    "cat": {
-    "ko": "수익성 회복 지연 리스크",
-    "en": "Risk of Delayed Profitability Recovery"
+    "ko": "재무건전성 및 현금흐름 리스크",
+    "en": "Financial Health and Cash Flow Risk"
    },
    "body": {
-    "ko": "2026년 상반기 손실 폭이 축소되고는 있으나 여전히 분기 적자가 이어지고 있어, 사업 다각화에 따른 비용 부담이 지속될 경우 흑자 전환 시점이 지연될 수 있다. 영업활동현금흐름이 마이너스로 전환된 상태가 장기화되면 재무 여력에도 영향을 줄 수 있다.",
-    "en": "While losses have narrowed in the first half of 2026, quarterly losses have continued, and if costs tied to business diversification persist, the timing of a return to profit could be delayed. A prolonged period of negative operating cash flow could also affect financial flexibility."
+    "ko": "2025년 영업활동현금흐름이 -106.6억원을 기록했고, 2022년(-242.0억원)에도 음(-)의 흐름을 보인 바 있어 사업 확장 국면에서 현금흐름이 불안정해질 수 있음을 보여준다. 매출 축소와 함께 부채비율은 낮아졌지만(2022년 38.7%→2025년 15.4%), 이는 외형 자체가 줄어든 결과이기도 해 재무 구조 개선으로 단순 해석하기는 어렵다. 신사업 투자 확대 시 추가 자금조달 필요성이 발생할 수 있다.",
+    "en": "Operating cash flow was negative at KRW 10.66 billion in 2025, and a similarly negative reading occurred in 2022 (-KRW 24.2 billion), indicating that cash flow can become unstable during business expansion phases. While the debt ratio declined from 38.7% in 2022 to 15.4% in 2025, this partly reflects the shrinking revenue base itself, making it difficult to interpret simply as a strengthening of the financial structure. Expanded investment in new businesses could create a need for additional financing."
    }
   }
  ],
  "checkpoints": [
   {
    "when": {
-    "ko": "2026년 11월 중순경",
+    "ko": "2026년 11월 중순",
     "en": "Mid-November 2026"
    },
    "what": {
-    "ko": "3분기 실적 발표에서 매출·손익 개선 흐름이 이어지는지, 특히 흑자전환 여부를 확인할 필요가 있다.",
-    "en": "Check the Q3 earnings release for whether the revenue and profit improvement trend continues, and in particular whether the company returns to profit."
+    "ko": "3분기 정기 분기보고서 공시 예정으로, 2026Q2까지 이어진 손실 축소 흐름이 3분기에도 지속되는지 확인이 필요하다.",
+    "en": "The regular Q3 quarterly report is due, making it important to check whether the loss-narrowing trend seen through 2026Q2 continued into the third quarter."
    }
   },
   {
    "when": {
-    "ko": "지속적 모니터링",
-    "en": "Ongoing"
+    "ko": "2026년 4분기 중",
+    "en": "During Q4 2026"
    },
    "what": {
-    "ko": "6월 수주한 950억원 규모 ESS 라인의 매출 인식 시점과 진행률 관련 공시를 확인해 실적 반영 속도를 가늠할 수 있다.",
-    "en": "Monitor disclosures on revenue recognition timing and progress for the roughly KRW 95bn ESS line won in June, to gauge how quickly it flows into reported results."
+    "ko": "인도 카르나타카주 신규 공장의 가동 개시 및 매출 반영 여부를 공시·IR 자료를 통해 확인할 필요가 있다.",
+    "en": "It will be worth checking, via disclosures and IR materials, whether the new Karnataka, India plant has begun operations and whether it is contributing to revenue."
    }
   },
   {
    "when": {
-    "ko": "2026년 하반기",
-    "en": "Second half of 2026"
+    "ko": "2026년 하반기 중",
+    "en": "During the second half of 2026"
    },
    "what": {
-    "ko": "인도 신공장의 가동률 상승 및 EMS 고객사향 첫 매출 반영 여부를 확인할 필요가 있다.",
-    "en": "Watch for rising utilization at the new India plant and whether initial revenue from EMS customers begins to show up."
+    "ko": "북미 ESS 부문에서 191.6억원, 950억원 규모 수주에 이은 후속 계약이 추가로 발생하는지, 그리고 기존 수주의 매출 인식 시점을 확인할 필요가 있다.",
+    "en": "It will be important to monitor whether additional follow-on contracts emerge in the North American ESS segment beyond the KRW 19.16 billion and roughly KRW 95 billion orders already announced, and when revenue recognition from the existing orders begins."
    }
   },
   {
    "when": {
-    "ko": "수시",
-    "en": "As they occur"
+    "ko": "2026년 11월경",
+    "en": "Around November 2026"
    },
    "what": {
-    "ko": "대표이사가 언급한 추가 ESS·2차전지 생산라인 수주 공시 여부를 확인할 필요가 있다.",
-    "en": "Watch for disclosure of additional ESS/battery production line orders, as referenced by the CEO."
+    "ko": "자회사 퓨런티어의 3분기 실적 공시를 통해 자율주행 센싱카메라 사업의 회복 여부를 점검할 필요가 있다.",
+    "en": "Subsidiary FURENTiER's Q3 earnings disclosure will be worth reviewing to gauge whether its autonomous sensing camera business is recovering."
+   }
+  },
+  {
+   "when": {
+    "ko": "2027년 3월경",
+    "en": "Around March 2027"
+   },
+   "what": {
+    "ko": "2026년 사업연도 사업보고서(연간 확정 실적) 공시를 통해 2차전지·ESS·인도 공장 효과가 연간 실적에 얼마나 반영됐는지 종합적으로 확인할 필요가 있다.",
+    "en": "The annual business report for fiscal year 2026 will offer a comprehensive check on how much the secondary battery/ESS business and the India plant contributed to full-year results."
    }
   }
  ],
  "verdict": {
   "body": {
-   "ko": "하이비젼시스템은 2023~2024년 견조한 흑자를 기록하다가 2025년 스마트폰 수요 둔화와 자회사 실적 악화 등으로 적자전환한 이후, 2026년 상반기 들어 분기 손실 폭이 점차 줄어드는 흐름을 보이고 있다. 동시에 북미향 ESS 배터리팩 조립라인 대형 수주(2026년 6월 950억원)와 인도 신공장 가동 개시라는 두 가지 구조적 변화 요인이 겹쳐 있어, 기존 IT·모바일 중심 사업에서 2차전지·글로벌 EMS向 자동화 설비로 매출 기반을 넓히는 시도가 본격화되고 있다. 다만 2025년 영업활동현금흐름이 마이너스로 전환됐고, 과거 증권사 전망(2025년 4분기 흑자전환)과 실제 결과 사이에 괴리가 있었던 사례도 있어, 개선 흐름이 지속가능한지는 추가 분기 실적으로 확인이 필요한 단계다. 밸류에이션 측면에서는 이익 기준 지표 산출이 어려운 가운데 주가가 순자산가치를 밑도는 수준에서 거래되고 있으며, 배당수익률은 업종 평균을 하회하는 편이다. 강세 요인으로는 ESS 수주 모멘텀과 인도공장發 신규 매출원을, 약세 요인으로는 IT·모바일 의존도와 현금흐름 부담을 함께 고려할 필요가 있다. 향후 분기 실적 발표와 수주 공시가 사업 전환의 실질적 진행 정도를 가늠하는 핵심 지표가 될 것으로 보인다.",
-   "en": "HyVISION System posted solid profits in 2023–2024 before swinging to a loss in 2025 amid weak smartphone demand and deteriorating subsidiary results, though quarterly losses have gradually narrowed through the first half of 2026. At the same time, two structural changes are converging: a large North American ESS battery-pack assembly line order (roughly KRW 95bn in June 2026) and the launch of the new India plant, marking a concrete push to broaden the revenue base from its traditional IT/mobile focus toward battery equipment and automation gear for global EMS customers. However, operating cash flow turned negative in 2025, and there has been at least one case where brokerage forecasts (a projected Q4 2025 return to profit) diverged from actual results, so whether the improving trend is sustainable requires confirmation through further quarterly results. On valuation, earnings-based metrics are difficult to compute given the loss, while the stock trades below book value and the dividend yield runs below the industry average. Bullish factors include ESS order momentum and a new revenue stream from the India plant, while bearish factors include reliance on IT/mobile and cash flow pressure; upcoming quarterly results and order disclosures will be key indicators of how the business transition is actually progressing."
+   "ko": "하이비젼시스템은 2023년 정점 이후 매출과 이익이 큰 폭으로 축소되며 2025년 완전한 적자전환을 겪었고, 이 흐름은 2026년 상반기까지도 이어졌다. 다만 2026Q1~Q2에 걸쳐 분기별 손실 규모가 점진적으로 줄어드는 모습이 확인되며, 2026Q2 지배주주순손실은 손익분기에 가까운 수준까지 개선됐다. 동시에 2026년 상반기 두 차례의 미국향 ESS 대형 수주(191.6억원, 약 950억원)와 인도 생산기지 추진은 회사가 스마트폰 카메라 모듈 중심 사업에서 2차전지·ESS·해외 생산기지로 사업축을 넓히려는 시도를 구체화하고 있음을 보여준다. 반면 IT/모바일 부문에 대한 높은 매출 의존도, 자회사 실적 변동성, 신사업의 매출·이익 전환 시점에 대한 불확실성은 여전히 관찰이 필요한 요인이다. 주가는 주당순자산 대비 낮은 수준에서 거래되고 있으나, 최근 4개 분기 순이익이 적자인 만큼 통상적인 밸류에이션 지표 해석에는 제약이 있다. 향후 실적 경로는 2차전지·ESS 수주의 매출 전환 속도와 인도 공장의 실제 가동·매출 기여 시점에 크게 좌우될 것으로 보이며, 다음 분기 공시와 후속 수주 소식이 중요한 판단 근거가 될 것이다.",
+   "en": "HyVISION SYSTEM saw revenue and profit contract sharply after peaking in 2023, culminating in a full swing to losses in 2025, a trend that persisted through the first half of 2026. That said, quarterly losses have gradually narrowed across 2026Q1 and Q2, with the 2026Q2 owners' net loss improving to a level close to breakeven. At the same time, two large US-bound ESS orders in the first half of 2026 (KRW 19.16 billion and roughly KRW 95 billion) and the pursuit of an India production base illustrate the company's concrete attempt to broaden its business axis from smartphone camera modules toward secondary battery, ESS, and overseas manufacturing. On the other hand, heavy revenue dependence on the IT/mobile segment, volatility in subsidiary performance, and uncertainty over when new businesses will convert into revenue and profit remain factors that warrant continued observation. The stock trades below its per-share net asset value, though the negative net income over the trailing four quarters limits how conventional valuation metrics can be interpreted. The future earnings path appears to hinge heavily on how quickly battery/ESS orders convert into revenue and when the India plant begins contributing meaningfully, making upcoming quarterly disclosures and any follow-on order news key points to watch."
   }
  },
  "sources": [
-  "https://www.newspim.com/news/view/20260617000451",
-  "https://comp.wisereport.co.kr/company/c1010001.aspx?cmp_cd=126700",
   "https://www.eugenefn.com/common/files/amail//20251117_126700_jongsun.park_2493.pdf",
-  "https://www.judal.co.kr/?view=stockAI&shareToken=iGLC6QMzK3t3Hjpf",
-  "https://alphasquare.co.kr/home/stock-summary?code=126700",
+  "https://comp.wisereport.co.kr/company/c1010001.aspx?cmp_cd=126700",
   "https://m.irgo.co.kr/IR-COMP/126700/-IR-PAGE",
-  "https://comp.wisereport.co.kr/company/c1080001.aspx?cmp_cd=126700",
   "https://comp.wisereport.co.kr/company/c1050001.aspx?cmp_cd=126700",
+  "https://alphasquare.co.kr/home/stock-summary?code=126700",
+  "https://comp.wisereport.co.kr/company/c1080001.aspx?cmp_cd=126700",
+  "https://www.judal.co.kr/?view=stockAI&shareToken=iGLC6QMzK3t3Hjpf",
   "https://www.investing.com/equities/hyvision-system-inc-earnings",
   "https://w4.kirs.or.kr/download/research/250124_%ED%95%98%EC%9D%B4%EB%B9%84%EC%A0%BC%EC%8B%9C%EC%8A%A4%ED%85%9C%20%EC%B5%9C%EC%A2%85.pdf",
-  "https://www.aseanexpress.co.kr/news/article.html?no=12826",
   "https://www.tokenpost.kr/news/economy/358457",
-  "https://www.edaily.co.kr/News/Read?newsId=03417766645482704",
-  "https://m.thinkpool.com/item/126700",
   "https://kind.krx.co.kr/common/disclsviewer.do?method=search&acptno=20260319001210&docno=&viewerhost=",
-  "https://www.sentv.co.kr/article/view/sentv202108170060",
-  "https://www.tipranks.com/stocks/tse:hai/earnings/q2-2026-report",
-  "https://www.investing.com/equities/hyvision-system-inc"
+  "https://www.fnnews.com/news/202608031820564791",
+  "https://finance.thesmileinfo.com/2026/09/semiconductor.html",
+  "https://alphasquare.co.kr/home/theme-factor?theme-id=307",
+  "https://www.aseanexpress.co.kr/news/article.html?no=12826",
+  "https://www.investing.com/equities/hyvision-system-inc",
+  "https://www.stockplus.com/m/stocks/KOREA-A126700",
+  "https://comp.fnguide.com/SVO2/ASP/SVD_Main.asp?gicode=A126700"
  ],
  "v": 2,
  "model": "claude-sonnet-5",
@@ -223,9 +233,9 @@
   "기계·장비"
  ],
  "market": "코스닥",
- "reportDate": "2026-08-18",
- "reportTs": "2026-08-18 00:50",
- "dataDate": "20260821",
+ "reportDate": "2026-09-05",
+ "reportTs": "2026-09-05 07:07",
+ "dataDate": "20260904",
  "quant": {
   "asOf": "2026-08-21",
   "fs_basis": "연결(CFS) · DART 공시 확정치 · 지배주주 기준 순이익",
@@ -324,14 +334,14 @@
    }
   ],
   "valuation": {
-   "price": 10500,
-   "mcap": 0.1569,
+   "price": 11500,
+   "mcap": 0.1718,
    "shares": 14942112,
    "total_shares": 14942112,
    "wavg_shares": 12637574,
    "per": null,
    "eps": -1152,
-   "pbr": 0.54,
+   "pbr": 0.5896,
    "bps": 19505,
    "roe_ttm": -6.4,
    "ttm_window": "2025Q3~2026Q2",
@@ -340,7 +350,7 @@
    "bps_krx": 19368.0,
    "basis": "PER·EPS·PBR·BPS 모두 자체 산출(네이버·토스와 동일 방식) · 배당은 DART 공시 주당현금배당금(보완:KRX) ÷ 현재가",
    "dps": 80.0,
-   "div": 0.76
+   "div": 0.7
   }
  }
 }

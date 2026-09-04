@@ -1,217 +1,227 @@
 {
  "title": {
-  "ko": "로보틱스 신사업과 원가 압박의 교차점",
-  "en": "Robotics Push Meets Cost Pressure"
+  "ko": "매출 1조 넘은 전장부품, 로봇으로 영역 확장",
+  "en": "Past KRW1tn Sales, Auto Parts Maker Expands Into Robotics"
  },
  "lead": {
-  "ko": "모베이스전자는 2025년 매출 1조원을 처음 돌파하며 순이익 회복세를 이어갔지만, 2026년 상반기에는 원자재 가격 상승으로 영업이익이 크게 줄어드는 등 본업 수익성과 신사업 기대가 엇갈리는 국면에 있다.",
-  "en": "Mobase Electronics crossed the 1-trillion-won revenue mark for the first time in 2025 with recovering net income, but in the first half of 2026 rising raw material costs sharply cut operating profit, creating a split picture between core-business margins and new-business expectations."
+  "ko": "모베이스전자는 2025년 처음으로 연결매출 1조원을 넘어섰지만 2026년 2분기 원자재 비용 부담으로 영업이익이 급감하며, 자동차 전장부품의 안정적 성장과 로보틱스 신사업 기대가 마진 변동성과 함께 공존하는 국면에 있다.",
+  "en": "Mobase Electronics surpassed KRW1 trillion in consolidated annual sales for the first time in 2025, but operating profit fell sharply in the second quarter of 2026 amid raw material cost pressure, leaving steady auto-electronics growth and new robotics ambitions coexisting with earnings volatility."
  },
  "keypoints": [
   {
-   "ko": "2025년 연결 매출액 1조440억원으로 사상 첫 1조원 돌파, 지배주주순이익도 199억원으로 증가",
-   "en": "2025 consolidated revenue reached KRW 1,044.1bn, the first time topping 1 trillion won, with net income attributable to owners rising to KRW 19.9bn"
+   "ko": "2025년 연결매출 1조440억원(전년 대비 7.5% 증가)으로 창사 이래 처음 매출 1조원을 돌파했고, 지배주주 순이익은 199억원으로 전년보다 크게 늘었다.",
+   "en": "2025 consolidated revenue reached KRW1.044 trillion, up 7.5% year over year and the first time surpassing KRW1 trillion, while owner-attributable net profit rose sharply to KRW19.9 billion."
   },
   {
-   "ko": "2026년 상반기 영업이익은 원자재(메모리반도체·금) 가격 상승으로 전년 동기 대비 41.2% 감소",
-   "en": "H1 2026 operating profit fell 41.2% year over year due to rising raw material costs (memory semiconductors and gold)"
+   "ko": "2025년 2분기 지배주주 순이익이 적자(-9억원)를 기록한 뒐 3~4분기 흑자전환했으나, 2026년 2분기 영업이익이 28.4억원으로 1분기 74.2억원 대비 급감했다.",
+   "en": "After a net loss in the second quarter of 2025, the company turned profitable in the third and fourth quarters, but operating profit in the second quarter of 2026 fell sharply to KRW2.84 billion from KRW7.42 billion in the first quarter."
   },
   {
-   "ko": "현대차그룹 모바일 로봇 플랫폼 '모베드(MobED)'에 메인보드·와이어링을 공급하며 로보틱스 부품시장 진입",
-   "en": "Entered the robotics parts market by supplying mainboards and wiring for Hyundai Motor Group's MobED mobile robot platform"
+   "ko": "현대차그룹의 모바일 로봇 플랫폼 '모베드(MobED)'에 메인보드·와이어링을 공급하며 2026년 2월부터 양산 공급을 시작, 자동차 부품에서 로보틱스로 사업영역을 넓히고 있다.",
+   "en": "The company began mass-production supply of mainboards and wiring harnesses to Hyundai Motor Group's mobile robot platform MobED starting February 2026, expanding its business scope from auto parts into robotics."
   },
   {
-   "ko": "멕시코 신설 공장이 2026년 1분기부터 가동되며 해외 법인 매출이 50% 이상 성장",
-   "en": "New Mexico plant began full operation in Q1 2026, with overseas subsidiary revenue growing over 50%"
+   "ko": "현대차·기아 매출 비중이 2024년 말 약 70%에서 2025년 말 약 67%로 낮아지며 고객 다변화가 서서히 진행되고 있다.",
+   "en": "The revenue share from Hyundai and Kia declined from about 70% at the end of 2024 to about 67% at the end of 2025, indicating gradual customer diversification."
   },
   {
-   "ko": "부채비율은 2023년 258.3%에서 2025년 208.6%로 낮아지는 추세지만 여전히 200%대 수준",
-   "en": "Debt ratio declined from 258.3% in 2023 to 208.6% in 2025, but remains in the 200% range"
+   "ko": "부채비율이 2022년 247.6%에서 2025년 208.6%로 4년 연속 낮아졌고, 3년 만에 배당을 재개했다.",
+   "en": "The debt ratio declined for four consecutive years from 247.6% in 2022 to 208.6% in 2025, and the company resumed dividend payments after a three-year hiatus."
   }
  ],
  "business": {
-  "ko": "모베이스전자는 자동차용 전자부품을 주력으로 하는 코스닥 상장 전장부품 기업이다. 스마트키 시스템, 도어락 세트, 파워윈도우 스위치 등 완성차용 입력장치·HMI(휴먼머신인터페이스) 부품이 핵심 제품군이다. 전기차 시장 대응을 위해 배터리 관리 관련 BMM, BMS 등도 수주해 양산하고 있다. 고객사는 현대차·기아를 중심으로 볼보 등 글로벌 완성차업체로 다변화돼 있으며, 주요 고객사의 발주 물량 확대가 본사 매출 성장을 이끌어왔다. 해외 생산기지로는 멕시코 법인을 두고 있고, 현대차 미국 서배너 전기차 공장 가동과 기아 멕시코 공장 공급품목 확대에 따라 해외 법인의 HMI 매출도 함께 늘었다. 최근에는 자동차 부품 제조 노하우를 응용해 로보틱스 분야로 사업 영역을 넓히고 있으며, 현대차그룹의 모바일 로봇 플랫폼 '모베드(MobED)'에 메인보드와 와이어링을 공급한다. 모베드는 2026년 1월 CES에서 로보틱스 부문 최고 혁신상을 수상했고, 회사는 2월부터 부품 공급을 시작했다. 소프트웨어 자회사 모베이스 에스펙(ASEC)과 협업해 AI 제어, 클라우드 등 소프트웨어 영역까지 사업을 확장하며 산업용 모빌리티 솔루션 공급을 목표로 하고 있다. 회사는 월드클래스 300 프로젝트 선정, 품질경쟁력 우수기업 6년 연속 수상 등 품질 경쟁력도 인정받고 있다.",
-  "en": "Mobase Electronics is a KOSDAQ-listed automotive electronic components maker whose core products include smart key systems, door lock sets, and power window switches for HMI (human-machine interface) applications in passenger vehicles. To address the EV market, the company also produces battery management-related components such as BMM and BMS. Its customer base centers on Hyundai and Kia, diversified with global automakers including Volvo, and expanded order volumes from major clients have driven headquarters revenue growth. The company operates an overseas production base in Mexico, and HMI revenue from overseas subsidiaries has grown alongside the startup of Hyundai's Savannah EV plant in the US and expanded supply items to Kia's Mexico plant. More recently, the company has extended its automotive component know-how into robotics, supplying mainboards and wiring for Hyundai Motor Group's mobile robot platform MobED. MobED won the Best of Innovation award in the robotics category at CES 2026 in January, and the company began supplying components in February. In collaboration with its software subsidiary Mobase ASEC, the company is also expanding into AI control and cloud software areas, aiming to supply comprehensive industrial mobility solutions. The company has also been recognized for quality competitiveness, including selection for the World Class 300 project and six consecutive years as an outstanding quality-competitiveness company."
+  "ko": "모베이스전자는 자동차 전장부품을 주력으로 하는 코스닥 상장사로, 스위치·HMI(휴먼머신인터페이스) 부품에서 출발해 차체제어컨트롤러(BDC), 전기차 무선충전 시스템 등으로 제품군을 넓혀왔다. 최대 고객사는 현대차·기아로, 매출 비중은 2024년 말 약 70%에서 2025년 말 약 67%로 소폭 낮아졌다. 해외 생산기지로 멕시코·폴란드·인도에 법인을 운영 중이며, 멕시코 신공장이 2026년 1분기부터 본격 가동되면서 해당 법인 매출이 50% 이상 성장했다. 최근에는 자동차 전장 기술력을 기반으로 로보틱스 분야에 진출해, 현대차그룹의 모바일 로봇 플랫폼 '모베드(MobED)'에 메인보드와 와이어링을 공급하고 있다. 소프트웨어 전문 자회사 모베이스ASEC과 협업해 AI 제어·클라우드 등 SW 영역까지 사업 범위를 넓히는 전략도 병행하고 있다. 아울러 차량용 입력장치와 미세압력 감지 기술을 로봇 분야에 접목한 그리퍼(로봇손) 개발에도 나서며 로봇 부품 시장 진출을 추진 중이다. 고객 다변화 차원에서는 일본 완성차업체에 후석 탑승자 감지 레이더 기술을 제안해 테스트를 마쳤고, 유럽 상용차업체와는 졸음운전 모니터링 시스템을 공동 개발하고 있다. 다만 시장에서는 경쟁사 대비 영업이익률이 낮은 편이라는 평가도 제기된 바 있어, 수익성 측면에서는 상대적으로 개선의 여지가 남아있는 것으로 파악된다.",
+  "en": "Mobase Electronics is a KOSDAQ-listed automotive electronics maker that started with switches and HMI (human-machine interface) components and has since expanded into body control controllers (BDC) and EV wireless charging systems. Its largest customer is the Hyundai-Kia group, whose share of revenue eased from about 70% at the end of 2024 to about 67% at the end of 2025. The company operates overseas plants in Mexico, Poland, and India, and its new Mexico plant, which ramped up in the first quarter of 2026, drove more than 50% revenue growth at that subsidiary. Building on its automotive electronics expertise, the company has recently moved into robotics, supplying mainboards and wiring harnesses for Hyundai Motor Group's mobile robot platform MobED. It is also collaborating with its software subsidiary Mobase ASEC to extend into AI control and cloud software areas. In addition, the company is developing robot grippers by applying its vehicle input-device and micro-pressure sensing technologies to the robotics field. In terms of customer diversification, it has proposed rear-seat occupancy radar technology to a Japanese automaker, which has completed testing, and is co-developing drowsy-driving monitoring systems with a European commercial vehicle maker. That said, some market commentary has noted that its operating margin runs lower than peers, suggesting room for profitability improvement remains."
  },
  "earnings": {
-  "ko": "2025년 연결 매출액은 1조440.9억원으로 전년 9,715.5억원 대비 늘며 사상 처음 매출 1조원을 넘어섰다. 같은 기간 영업이익은 367.9억원으로 전년 343.9억원 대비 증가했지만, 영업이익률은 3.5%로 전년과 같은 수준에 머물렀다. 지배주주순이익은 199.2억원으로 전년 158.2억원 대비 늘며 순이익 회복세를 이어갔다. 다만 분기별로는 흐름이 엇갈렸는데, 2025년 4분기 매출은 2,799.1억원, 영업이익은 98.0억원으로 분기 최대 수준을 기록했으나 2026년 1분기 영업이익은 74.2억원으로 둔화됐고 2분기에는 28.4억원까지 줄었다. 2026년 2분기 영업이익률은 매출 2,627.9억원 대비 1%대로 낮아지며 최근 분기 중 최저 수준을 나타냈다. 회사 측은 상반기 영업이익 감소의 배경으로 메모리반도체와 금 등 원자재 가격 상승을 꼽았다. 반면 지배주주순이익은 2026년 1분기 59.9억원, 2분기 16.4억원으로 영업이익 감소폭 대비 상대적으로 방어됐는데, 이는 원달러 환율 상승에 따른 환산이익과 이자비용 감소 효과가 반영된 결과로 풀이된다. 회사는 원자재 가격 상승분에 대해 고객사와 단가 인상을 협의 중이며 하반기 중 반영될 것으로 예상한다고 밝혔다. 부채비율은 2023년 258.3%, 2024년 245.5%에서 2025년 208.6%로 낮아지는 추세를 보였다.",
-  "en": "Consolidated revenue in 2025 reached KRW 1,044.09bn, up from KRW 971.55bn a year earlier, marking the first time the company surpassed KRW 1 trillion in annual sales. Operating profit for the period rose to KRW 36.79bn from KRW 34.39bn, though the operating margin held steady at 3.5%, unchanged from the prior year. Net income attributable to owners grew to KRW 19.92bn from KRW 15.82bn, continuing a recovery trend. Quarterly trends diverged, however: Q4 2025 revenue of KRW 279.91bn and operating profit of KRW 9.80bn marked a quarterly high, but Q1 2026 operating profit slowed to KRW 7.42bn and fell further to KRW 2.84bn in Q2 2026. The Q2 2026 operating margin dropped to roughly 1% on revenue of KRW 262.79bn, the lowest level in recent quarters. The company attributed the H1 operating profit decline mainly to rising prices of raw materials such as memory semiconductors and gold. By contrast, net income attributable to owners was relatively more resilient, at KRW 5.99bn in Q1 2026 and KRW 1.64bn in Q2 2026, reflecting foreign currency translation gains from a weaker won and reduced interest expenses. The company said it is negotiating price increases with customers to offset raw material cost increases, with reflection expected in the second half. The debt ratio declined from 258.3% in 2023 and 245.5% in 2024 to 208.6% in 2025."
+  "ko": "2025년 연결 매출액은 1조440억8,700만원으로 2024년 9,715억4,900만원 대비 7.5% 늘어 창사 이래 처음으로 매출 1조원을 넘어섰다. 영업이익은 367억8,900만원으로 전년 343억8,900만원 대비 늘었지만 영업이익률은 3.5%로 전년과 동일한 수준에 머물렀다. 지배주주 순이익은 199억1,800만원으로 전년 158억2,400만원 대비 크게 늘었으며, 2023년 77억원, 2022년 68억원으로 이어지던 이익 회복 흐름이 이어졌다. 분기별로 보면 2025년 2분기 지배주주 순이익은 -8억9,600만원으로 적자를 냈으나 3분기 76억2,700만원, 4분기 80억7,900만원으로 흑자전환에 성공했다. 이 회복세는 2026년 1분기 59억8,500만원까지 이어졌지만 2분기에는 16억3,500만원으로 다시 둔화됐다. 영업이익도 2026년 1분기 74억2,400만원에서 2분기 28억4,300만원으로 급감했는데, 메모리반도체와 금 등 원자재 가격 상승과 부품사 화재로 인한 주요 고객사 생산 차질이 주요 배경으로 지목된다. 회사는 하반기 중 고객사와의 단가 인상 협의를 통해 원가상승분을 회수할 계획이라고 밝혔다. 현금창출력 측면에서는 영업활동현금흐름이 2025년 688억3,000만원으로 2024년 223억8,000만원 대비 크게 늘어 이익의 질도 함께 개선되는 모습을 보였다.",
+  "en": "Consolidated revenue in 2025 reached KRW1.0441 trillion, up 7.5% from KRW971.5 billion in 2024, marking the first time the company surpassed KRW1 trillion in annual sales. Operating profit rose to KRW36.79 billion from KRW34.39 billion the prior year, though the operating margin held steady at 3.5%. Owner-attributable net profit jumped to KRW19.92 billion from KRW15.82 billion, extending a recovery trend that followed KRW7.7 billion in 2023 and KRW6.8 billion in 2022. On a quarterly basis, owner net profit was negative KRW896 million in the second quarter of 2025 before turning positive at KRW7.63 billion in the third quarter and KRW8.08 billion in the fourth quarter. That recovery continued into the first quarter of 2026 at KRW5.99 billion but eased again to KRW1.64 billion in the second quarter. Operating profit likewise fell sharply from KRW7.42 billion in the first quarter of 2026 to KRW2.84 billion in the second quarter, with rising memory-chip and gold prices along with production disruptions at a major customer caused by a parts supplier fire cited as key factors. The company said it is negotiating price adjustments with customers in the second half to recover the cost increases. Operating cash flow rose sharply to KRW68.83 billion in 2025 from KRW22.38 billion in 2024, indicating an improvement in the quality of earnings as well."
  },
  "industry": {
-  "ko": "자동차 전장부품 산업은 완성차 생산량과 밀접하게 연동되며, 전동화 전환 속에 내연기관용 부품 수요는 줄고 전장·전동화 고부가가치 부품 수요는 늘어나는 구조적 변화가 진행 중이다. 시장 조사에 따르면 글로벌 자동차 부품 시장은 2026년 약 1조8,533억달러 규모로 성장할 것으로 전망되며, 기술력과 소프트웨어 역량이 경쟁의 핵심 요소로 부상하고 있다. 모베이스전자는 이 시장에서 경쟁사 대비 영업이익률이 낮은 편으로 평가받아 왔다. 최근에는 물류·제조·서비스 현장에 투입되는 모바일 로봇, 이른바 '피지컬 AI' 시장이 급성장하며 완성차업체들이 로보틱스 부문으로 사업을 확장하고 있고, 이 과정에서 부품 경쟁력이 상용화의 핵심 변수로 꼽힌다. 현대차그룹은 CES 2026에서 모베드로 로보틱스 부문 최고 혁신상을 받으며 기술력을 인정받았고, 1분기부터 양산에 들어가 물류·제조·서비스 분야에 순차 투입되고 있다. 이 구도에서 모베이스전자는 기존 전장부품 제조 노하우를 로봇용 메인보드·와이어링 개발에 접목하며 완성차 부품업체에서 로보틱스 부품업체로 사업 영역을 넓히는 초기 단계에 있다.",
-  "en": "The automotive electronic components industry is closely tied to vehicle production volumes, and a structural shift is underway as EV transition reduces demand for internal-combustion parts while increasing demand for higher value-added electrification components. Market research projects the global auto parts market will grow to about USD 1.8533 trillion in 2026, with technology and software capability emerging as key competitive factors. Within this market, Mobase Electronics has been assessed as having one of the lowest operating margins compared with peers. More recently, the mobile robot market serving logistics, manufacturing, and service applications—often described as the 'physical AI' market—has grown rapidly, prompting automakers to expand into robotics, with component competitiveness cited as a key variable for commercialization. Hyundai Motor Group's MobED won the Best of Innovation award in the robotics category at CES 2026, and mass production began in Q1, with sequential deployment across logistics, manufacturing, and service sectors. Within this landscape, Mobase Electronics is at an early stage of applying its existing electronic-parts manufacturing know-how to develop robot mainboards and wiring, expanding from an auto-parts supplier toward a robotics-parts supplier."
+  "ko": "글로벌 자동차 부품 시장은 2026년 약 1조 8,533억 달러 규모로 성장할 것으로 전망되며, 기술력과 소프트웨어 역량이 경쟁의 핵심 요소로 부상하고 있다. 전기차 전환으로 내연기관 부품 수요는 감소하는 반면 전장·전동화 고부가가치 부품 수요는 증가하는 구조적 변화가 진행 중이다. 완성차 OEM의 생산량과 재고 정책에 실적이 크게 연동되는 산업 특성상, 반도체·금속 등 원자재 가격 변동과 공급망 리스크가 부품업체 마진에 직접적인 영향을 미친다. 최근에는 물리적 AI(Physical AI)와 로보틱스가 자동차 전장부품 기술의 새로운 응용처로 부상하면서, 현대차그룹의 모바일 로봇 플랫폼 '모베드'가 CES 2026 로보틱스 부문 최고혁신상을 수상하는 등 완성차업체들이 관련 부품 생태계 구축에 나서고 있다. 현대차·기아는 2026년 3월 모베드 얼라이언스를 출범해 부품사·로봇 솔루션 기업·유관기관이 참여하는 협력체계를 구축했다. 이 협력체계에는 현대트랜시스·SL 등 10개 부품사가 센서·전장·배터리 등 핵심 부품 공급을 담당하는 것으로 알려졌다. 다만 경쟁사 대비 영업이익률이 낮은 편이라는 시장 평가가 있어, 동종업계 내 수익성 포지션에서는 상대적으로 열위에 있다는 지적도 나온다.",
+  "en": "The global automotive parts market is projected to grow to roughly $1.8533 trillion in 2026, with technology and software capability emerging as key competitive factors. A structural shift is under way as the transition to electric vehicles reduces demand for internal-combustion parts while boosting demand for higher value-added electrification and electronics components. Because earnings in this industry are closely tied to OEM production volumes and inventory policies, fluctuations in semiconductor and metal raw material prices, along with supply chain risk, directly affect parts-maker margins. More recently, physical AI and robotics have emerged as new application areas for automotive electronics technology, exemplified by Hyundai Motor Group's mobile robot platform MobED winning a Best of Innovation award in the robotics category at CES 2026, prompting automakers to build out related component ecosystems. In March 2026, Hyundai and Kia launched the MobED Alliance, a cooperative framework involving parts suppliers, robotics solution companies, and related institutions. Ten parts suppliers including Hyundai Transys and SL are reported to be responsible for supplying core components such as sensors, electronics, and batteries within this framework. That said, market commentary noting the company's operating margin runs on the lower side relative to peers suggests it holds a relatively weaker profitability position within the industry."
  },
  "outlook": {
-  "ko": "회사는 2026년 하반기에 원가상승분 회수와 원가 구조 안정화를 통해 수익성이 개선될 것으로 기대한다고 밝혔다. 멕시코 신설 공장은 2026년 1분기부터 본격 가동되며 해당 법인 매출이 50% 이상 성장했고, 회사는 북미 등 해외 주요 고객사 대상 매출 확대가 이어질 것으로 예상하고 있다. 로보틱스 부문에서는 모베드용 메인보드·와이어링 공급이 이어지고 있으며, 회사는 이 신규 매출이 기존 실적에 큰 영향을 주지 않는 선에서 본궤도에 오를 수 있도록 역량을 집중할 방침이라고 설명했다. 아울러 로봇의 손 역할을 하는 그리퍼(로봇손) 개발을 통해 글로벌 로봇 부품 시장 추가 진출을 계획하고 있다고 밝혔다. 운전자 모니터링(DMS), 비접촉 제스처 컨트롤 등 SDV(소프트웨어 정의 차량) 관련 신기술도 국내외 완성차업체에 제안 중이라고 설명했다. 다만 상반기 실적에서 나타났듯 원자재 가격, 환율, 완성차 고객사의 생산 일정 변동은 여전히 분기별 실적 변동성을 키우는 요인으로 작용하고 있다.",
-  "en": "The company stated it expects profitability to improve in the second half of 2026 through recovery of cost increases and stabilization of its cost structure. The new Mexico plant began full operation in Q1 2026, driving over 50% growth in that subsidiary's revenue, and the company expects continued sales expansion with major overseas customers, including in North America. In robotics, mainboard and wiring supply for MobED continues, and the company said it plans to focus resources on scaling this new revenue stream without materially disrupting existing results. It also stated plans for further entry into the global robot parts market through development of a gripper, the robotic equivalent of a hand. The company is also proposing driver monitoring systems (DMS) and non-contact gesture control technologies related to software-defined vehicles (SDV) to domestic and overseas automakers. However, as seen in first-half results, volatility in raw material prices, exchange rates, and production schedules at major automotive customers continues to be a factor amplifying quarterly earnings variability."
+  "ko": "회사 대표이사는 2026년 3월 인터뷰에서 향후 5년간 매출 20% 성장을 달성하겠다는 목표를 제시했다. 멕시코 신공장 가동 확대와 함께 폴란드·인도 법인도 경영 안정화 단계에 진입했다고 언급했으며, 미국 공장 건설도 장기적으로 검토 대상으로 거론했다. 로보틱스 부문에서는 모베드용 메인보드·와이어링 공급이 2026년 2월부터 시작됐고, 그리퍼(로봇손) 개발을 통한 로봇 부품 시장 추가 진출도 추진 중이다. 하반기에는 원자재 가격 상승분을 고객사와의 단가 협의를 통해 회수해 수익성을 개선하겠다는 계획을 밝혔다. 고객 다변화 노력으로 일본·유럽 완성차업체와의 신규 기술 협력이 진행되고 있어, 현대차·기아 의존도를 낮추는 방향으로 사업구조가 점진적으로 재편되고 있다. 다만 로보틱스 신사업이 실제 매출·이익에 기여하는 시점과 규모는 아직 초기 단계로, 향후 공시와 실적 발표를 통해 구체화될 부분이 많다.",
+  "en": "The company's CEO stated in a March 2026 interview that the group aims to achieve 20% revenue growth over the next five years. He noted that the expansion of the Mexico plant is under way while the Poland and India subsidiaries have entered a stabilization phase, and mentioned that building a U.S. plant is being considered as a longer-term option. In robotics, mainboard and wiring harness supply for MobED began in February 2026, and the company is also pursuing further entry into the robot parts market through gripper development. For the second half, management said it plans to improve profitability by recovering raw material cost increases through price negotiations with customers. Customer diversification efforts are progressing through new technology collaborations with a Japanese automaker and a European commercial vehicle maker, gradually restructuring the business away from heavy reliance on Hyundai and Kia. That said, the timing and scale at which the new robotics business will contribute to actual revenue and profit remain at an early stage, with much still to be clarified through future disclosures and earnings reports."
  },
  "valuation_comment": {
-  "ko": "주가는 순자산가치 대비로 볼 때 장부가치를 밑도는 수준에서 거래되고 있어, 시장이 자산가치를 온전히 반영하지는 않는 모습이다. 이익 측면에서는 2023년 이후 순이익이 뚜렷한 회복세를 보여온 반면, 2026년 들어 분기 영업이익률이 낮아지는 국면이 겹치면서 시장의 평가가 엇갈리는 배경이 되고 있다. 배당은 주당 40원 수준의 현금배당을 이어오고 있으며, 배당수익률은 업종 평균을 밑도는 편으로 파악된다. 로보틱스 신사업에 대한 관심이 2026년 초 주가 급등으로 반영된 바 있으나, 이후 원가 부담이 부각되며 밸류에이션에 대한 평가가 다시 갈리는 흐름을 보이고 있다. 결국 자동차 전장부품 본업의 마진 회복 속도와 로보틱스 부문의 매출 기여 시점이 향후 시장 판단의 기준이 될 것으로 보인다.",
-  "en": "The share price trades at a level below net asset value per share, suggesting the market is not fully pricing in the company's book value. On the earnings side, net income has shown a clear recovery trend since 2023, while quarterly operating margins have weakened through 2026, creating a mixed backdrop for market assessment. Dividends have been maintained at around KRW 40 per share in cash, with a yield that appears to fall below the industry average. Market interest in the robotics business was reflected in a sharp share price surge in early 2026, but subsequent attention to cost pressures has led to a divided view on valuation. Ultimately, the pace of margin recovery in the core auto-parts business and the timing of revenue contribution from robotics are likely to be the key factors shaping future market judgment."
+  "ko": "현재 주가는 주당순자산 대비 낮은 수준에서 거래되는 편으로, 순자산 대비 프리미엄이 크지 않은 구간에 위치한 것으로 파악된다. 다만 최근 실적은 2025년 2분기 적자에서 흑자로 전환한 뒤 2026년 들어 다시 이익 규모가 줄어드는 등 분기별 변동성이 뚜렷해, 밸류에이션을 단선적으로 해석하기는 쉽지 않은 구간이다. 배당은 3년 만에 재개된 상태로, 배당 수준 자체보다는 재개라는 신호가 갖는 의미에 주목할 필요가 있다. 과거 로보틱스 테마가 부각된 시기에는 관련 뉴스에 따라 주가가 단기간에 큰 폭으로 움직인 이력이 있어, 사업 펀더멘털에 기반한 판단과 테마성 수급 요인을 구분해서 볼 필요가 있다.",
+  "en": "The current share price trades at a level below net asset value per share, suggesting the stock sits in a range without a large premium to net assets. However, recent earnings have shown pronounced quarterly volatility, swinging from a loss in the second quarter of 2025 to profitability and then a shrinking profit scale again through 2026, which makes a straightforward valuation read difficult. Dividends resumed after a three-year gap, and the signal of resumption itself may be more notable than the payout level. During past periods when the robotics theme drew attention, the share price has shown large short-term swings tied to related news, so it may be useful to distinguish business-fundamentals-based judgment from theme-driven trading flows."
  },
  "bull": [
   {
    "title": {
-    "ko": "로보틱스 신사업 진입",
-    "en": "Entry into Robotics"
+    "ko": "로보틱스 신사업 확장",
+    "en": "Robotics business expansion"
    },
    "body": {
-    "ko": "현대차그룹 모베드에 메인보드·와이어링을 공급하며 로보틱스 부품시장에 진입했고, 2026년 1월 CES 최고 혁신상 수상 이후 2월부터 양산 공급이 시작됐다. 자동차 전장 제조 노하우를 로봇용 전원관리·통신 부품에 접목해 신규 매출원을 확보했다는 점이 특징이다. 다만 회사 스스로도 이 신규 매출을 기존 실적에 큰 영향을 주지 않는 선에서 키워가겠다고 설명해 초기 단계임을 시사했다.",
-    "en": "The company entered the robotics parts market by supplying mainboards and wiring for Hyundai Motor Group's MobED, beginning mass production supply in February 2026 following the CES Best of Innovation award in January. A key feature is securing a new revenue stream by applying automotive electronics manufacturing know-how to robot power management and communication components. However, the company itself indicated this remains an early-stage effort, stating it aims to scale this new revenue without materially affecting existing results."
+    "ko": "현대차그룹의 모바일 로봇 플랫폼 모베드에 메인보드·와이어링을 공급하며 2026년 2월부터 양산 공급을 시작했고, 해당 플랫폼은 CES 2026 로보틱스 부문 최고혁신상을 수상했다. 자동차 전장 기술을 로봇 분야에 접목한 그리퍼 개발도 추진 중이어서, 성공적으로 안착할 경우 신규 매출원이 될 수 있다. 소프트웨어 자회사와의 협업을 통해 AI 제어·클라우드 영역까지 사업범위를 확대하려는 시도도 병행되고 있다.",
+    "en": "The company began mass-production supply of mainboards and wiring harnesses for Hyundai Motor Group's MobED mobile robot platform in February 2026, and the platform won a Best of Innovation award in the robotics category at CES 2026. It is also developing robot grippers by applying automotive electronics technology to robotics, which could become a new revenue source if successful. In parallel, it is working with its software subsidiary to expand into AI control and cloud areas."
    }
   },
   {
    "title": {
-    "ko": "매출 1조원 돌파 및 해외법인 성장",
-    "en": "Crossing KRW 1 Trillion in Revenue and Overseas Subsidiary Growth"
+    "ko": "해외 생산기지 확장과 고객 다변화",
+    "en": "Overseas plant expansion and customer diversification"
    },
    "body": {
-    "ko": "2025년 연결 매출액이 처음으로 1조원을 넘어섰고, 멕시코 신설 공장이 2026년 1분기부터 가동되며 현지 법인 매출이 50% 이상 늘었다. 현대차 서배너 공장 가동, 기아 멕시코 공급품목 확대 등 북미 고객사 대상 매출 확대가 성장을 뒷받침하고 있다. 국내외 고객사와의 장기 공급 파트너십이 매출 확대의 기반이 되고 있다.",
-    "en": "Consolidated revenue surpassed KRW 1 trillion for the first time in 2025, and the new Mexico plant, which began full operation in Q1 2026, drove over 50% growth in that subsidiary's revenue. Expanded sales to North American customers, supported by Hyundai's Savannah plant startup and expanded supply items to Kia's Mexico plant, underpin this growth. Long-term supply partnerships with domestic and overseas customers form the basis for this revenue expansion."
+    "ko": "멕시코 신공장이 2026년 1분기부터 본격 가동되며 해당 법인 매출이 50% 이상 성장했고, 폴란드·인도 법인도 경영 안정화 단계에 들어섰다. 현대차·기아 매출 비중이 2024년 말 약 70%에서 2025년 말 약 67%로 낮아지는 등 고객 다변화도 서서히 진행되고 있다. 일본·유럽 완성차업체와의 신규 기술 협력도 추가 매출원 확보 가능성을 보여준다.",
+    "en": "The new Mexico plant ramped up in the first quarter of 2026, driving more than 50% revenue growth at that subsidiary, while the Poland and India operations have entered a stabilization phase. Customer diversification is also gradually progressing, with the Hyundai-Kia revenue share declining from about 70% at the end of 2024 to about 67% at the end of 2025. New technology collaborations with a Japanese and a European automaker point to potential additional revenue sources."
    }
   },
   {
    "title": {
-    "ko": "순이익 회복 흐름",
-    "en": "Net Income Recovery Trend"
+    "ko": "재무구조 개선과 배당 재개",
+    "en": "Improved balance sheet and dividend resumption"
    },
    "body": {
-    "ko": "지배주주순이익은 2022년 68.0억원에서 2025년 199.2억원으로 매년 증가해왔으며, 2026년 상반기에도 영업이익 감소에도 불구하고 순이익은 전년 동기 대비 91.5% 늘었다. 환율 상승에 따른 외화환산이익과 이자비용 감소가 순이익 방어에 기여한 것으로 풀이된다.",
-    "en": "Net income attributable to owners has grown every year, from KRW 6.80bn in 2022 to KRW 19.92bn in 2025, and even in H1 2026, despite declining operating profit, net income rose 91.5% year over year. This is attributed to foreign currency translation gains from a weaker won and reduced interest expense supporting net income."
+    "ko": "부채비율이 2022년 247.6%에서 2025년 208.6%로 4년 연속 낮아졌고, 영업활동현금흐름도 2024년 224억원에서 2025년 688억원으로 크게 늘었다. 이익의 질이 개선되는 가운데 3년 만에 배당을 재개해 주주환원 측면에서도 긍정적 신호를 보냈다. 2022~2025년 지배주주 순이익이 68억원에서 199억원으로 이어지는 회복 흐름도 재무 안정성 개선을 뒷받침한다.",
+    "en": "The debt ratio declined for four straight years from 247.6% in 2022 to 208.6% in 2025, while operating cash flow rose sharply from KRW22.4 billion in 2024 to KRW68.8 billion in 2025. Alongside improving earnings quality, the company resumed dividend payments after a three-year gap, sending a positive signal on shareholder returns. A recovery trend in owner-attributable net profit from KRW6.8 billion in 2022 to KRW19.9 billion in 2025 also supports the improving financial stability."
    }
   }
  ],
  "bear": [
   {
    "title": {
-    "ko": "원가 부담에 따른 영업이익률 둔화",
-    "en": "Margin Compression from Cost Pressure"
+    "ko": "원자재 비용 부담에 따른 마진 변동성",
+    "en": "Margin volatility from raw material cost pressure"
    },
    "body": {
-    "ko": "2026년 2분기 영업이익은 28.4억원으로 매출 대비 영업이익률이 1%대까지 낮아졌으며, 상반기 누적 영업이익도 전년 동기 대비 41.2% 감소했다. 회사는 메모리반도체와 금 등 원자재 가격 상승을 주된 원인으로 꼽았다. 단가 인상 협상이 하반기에 계획대로 반영되지 않을 경우 마진 회복이 지연될 수 있다.",
-    "en": "Operating profit in Q2 2026 fell to KRW 2.84bn, pushing the operating margin down to around 1%, while cumulative H1 operating profit declined 41.2% year over year. The company cited rising prices for raw materials such as memory semiconductors and gold as the main cause. If price increase negotiations are not reflected as planned in the second half, margin recovery could be delayed."
+    "ko": "2026년 2분기 영업이익은 28억4,300만원으로 1분기 74억2,400만원 대비 급감했으며, 메모리반도체와 금 등 원자재 가격 상승이 주요 원인으로 지목된다. 부품사 화재로 인한 주요 고객사 생산 차질도 영향을 미쳤다. 고객사와의 단가 인상 협의가 하반기에 완료되지 않으면 수익성 회복이 지연될 수 있다.",
+    "en": "Operating profit in the second quarter of 2026 fell sharply to KRW2.843 billion from KRW7.424 billion in the first quarter, with rising memory-chip and gold prices cited as the main causes. Production disruptions at a major customer caused by a parts supplier fire also had an impact. If price negotiations with customers are not completed in the second half, the recovery in profitability could be delayed."
    }
   },
   {
    "title": {
-    "ko": "업종 내 낮은 수익성",
-    "en": "Below-Peer Profitability"
+    "ko": "여전히 높은 고객 집중도",
+    "en": "Still-high customer concentration"
    },
    "body": {
-    "ko": "시장 자료에 따르면 모베이스전자는 경쟁사 대비 영업이익률이 가장 낮은 편으로 평가된다. 매출 증가에도 불구하고 원가 부담으로 수익성 개선이 제한적이라는 평가가 반복적으로 나오고 있다.",
-    "en": "Market data indicates Mobase Electronics has one of the lowest operating margins compared with competitors. Despite revenue growth, assessments repeatedly note that profitability improvement remains limited due to cost burdens."
+    "ko": "현대차·기아 비중이 2025년 말 기준 약 67%로 낮아졌지만 여전히 매출의 절대 다수를 차지한다. 완성차 OEM의 생산량과 재고 정책 변화에 실적이 크게 좌우되는 구조가 지속되고 있다. 고객 다변화 성과가 아직 본격적인 매출 비중 변화로 이어지지 않은 상태다.",
+    "en": "Although the Hyundai-Kia share fell to about 67% by the end of 2025, it still accounts for the large majority of revenue. The company's earnings structure remains highly dependent on the production volumes and inventory policy changes of major OEMs. The results of customer diversification efforts have not yet translated into a substantial shift in revenue mix."
    }
   },
   {
    "title": {
-    "ko": "고객·환율 의존도",
-    "en": "Customer and FX Dependence"
+    "ko": "분기별 실적 변동성",
+    "en": "Quarterly earnings volatility"
    },
    "body": {
-    "ko": "매출 상당 부분이 현대차·기아 등 소수 완성차 그룹에 연동돼 있어 완성차 생산 일정이나 발주 물량 변화에 실적이 민감하게 반응한다. 2026년 1분기에는 통상임금 이슈로 영업이익이 감소했고, 순이익은 환율 효과에 상당 부분 기대는 모습을 보였다.",
-    "en": "A significant portion of revenue is linked to a small number of automaker groups, including Hyundai and Kia, making performance sensitive to changes in production schedules or order volumes. In Q1 2026, operating profit declined due to an ordinary wage issue, and net income relied considerably on foreign exchange effects."
+    "ko": "2025년 2분기 지배주주 순이익이 -8억9,600만원으로 적자를 기록한 이력이 있고, 2026년에도 1분기 대비 2분기 이익 규모가 크게 줄었다. 이런 분기별 편차는 수익 예측의 불확실성을 높이는 요인이다. 로보틱스 신사업이 아직 손익에 본격 기여하지 않는 만큼 기존 전장부품 사업의 원가 구조 변화에 실적이 민감하게 반응하고 있다.",
+    "en": "Owner-attributable net profit was negative KRW896 million in the second quarter of 2025, and in 2026 the profit scale again dropped significantly from the first to the second quarter. Such quarter-to-quarter swings add uncertainty to earnings predictability. Since the new robotics business has not yet contributed materially to profit, results remain highly sensitive to cost structure changes in the existing auto electronics business."
    }
   }
  ],
  "risks": [
   {
    "cat": {
-    "ko": "원자재·환율 변동성",
-    "en": "Raw Material and FX Volatility"
+    "ko": "원자재·공급망 리스크",
+    "en": "Raw material and supply chain risk"
    },
    "body": {
-    "ko": "반도체, 금 등 원자재 가격과 원달러 환율 변동이 원가와 순이익에 직접 영향을 미친다. 환율이 우호적으로 작용하지 않을 경우 최근 나타난 순이익 방어 효과가 약화될 수 있다.",
-    "en": "Fluctuations in raw material prices such as semiconductors and gold, as well as the won-dollar exchange rate, directly affect costs and net income. If exchange rates move unfavorably, the recent net income cushioning effect could weaken."
+    "ko": "메모리반도체와 금 등 원자재 가격 상승이 2026년 2분기 영업이익 급감의 직접적 원인으로 작용했다. 부품사 화재로 인한 주요 고객사 생산 차질도 매출·수익성에 영향을 미쳤다. 원자재 가격이 추가로 상승하거나 공급망 이슈가 재발할 경우 유사한 마진 압박이 반복될 수 있다.",
+    "en": "Rising prices for raw materials such as memory chips and gold were a direct cause of the sharp decline in operating profit in the second quarter of 2026. Production disruptions at a major customer caused by a parts supplier fire also affected revenue and profitability. If raw material prices rise further or supply chain issues recur, similar margin pressure could repeat."
    }
   },
   {
    "cat": {
-    "ko": "완성차 고객사 생산 차질",
-    "en": "Automaker Customer Production Disruption"
+    "ko": "고객 집중 리스크",
+    "en": "Customer concentration risk"
    },
    "body": {
-    "ko": "원자재 가격 상승과 함께 부품사 화재 등으로 주요 고객사의 생산 차질이 발생한 사례가 있었으며, 이는 매출과 원가 회수 시점에 영향을 줄 수 있다.",
-    "en": "There have been instances of production disruption at major customers due to factors such as a parts supplier fire alongside rising raw material costs, which could affect the timing of revenue and cost recovery."
+    "ko": "현대차·기아 비중이 2025년 말 약 67%에 달해 여전히 특정 고객사에 대한 의존도가 높다. 완성차 OEM의 생산 계획이나 재고 정책 변화가 곧바로 실적에 반영되는 구조다. 고객 다변화가 진행되고 있지만 아직 매출 비중을 크게 바꾸지는 못한 상태다.",
+    "en": "The Hyundai-Kia share stood at about 67% at the end of 2025, indicating continued high dependence on specific customers. Changes in OEM production plans or inventory policy are directly reflected in results. Customer diversification is under way but has not yet meaningfully shifted the revenue mix."
    }
   },
   {
    "cat": {
-    "ko": "로보틱스 신사업 실행 리스크",
-    "en": "Robotics New Business Execution Risk"
+    "ko": "신사업 실행 리스크",
+    "en": "New business execution risk"
    },
    "body": {
-    "ko": "로보틱스 부문은 아직 초기 단계로 매출 기여 규모가 크지 않으며, 현대차그룹 로봇 사업의 상용화 속도와 물량 확대 여부에 따라 성과가 좌우된다.",
-    "en": "The robotics segment remains at an early stage with limited revenue contribution, and outcomes depend on the pace of commercialization and volume expansion of Hyundai Motor Group's robotics business."
+    "ko": "로보틱스 부문은 아직 초기 단계로, 모베드 부품 공급 물량이 실제 손익에 기여하는 규모와 시점이 명확하지 않다. 그리퍼 등 추가 로봇 부품 개발도 상용화까지 시간이 소요될 수 있다. 신사업 투자 확대가 기존 전장부품 사업의 수익성 개선 속도와 조화를 이루지 못할 경우 재무 부담으로 이어질 가능성도 배제할 수 없다.",
+    "en": "The robotics segment remains at an early stage, and the scale and timing at which MobED component supply will contribute to actual profit are not yet clear. Development of additional robot components such as grippers may also take time to reach commercialization. If expanded new-business investment fails to keep pace with profitability improvement in the existing auto electronics business, it could also become a financial burden."
    }
   }
  ],
  "checkpoints": [
   {
    "when": {
-    "ko": "2026년 11월경(3분기 실적 발표)",
-    "en": "Around November 2026 (Q3 earnings release)"
+    "ko": "2026년 11월 중순",
+    "en": "Mid-November 2026"
    },
    "what": {
-    "ko": "3분기 실적에서 하반기 원가상승분 반영에 따른 영업이익률 회복 여부를 확인할 필요가 있다.",
-    "en": "Check whether Q3 results show operating margin recovery from reflecting H2 cost increases."
+    "ko": "2026년 3분기 잠정 실적 발표를 통해 원자재 비용 회수 여부와 영업이익률 회복 속도를 확인할 시점이다.",
+    "en": "The preliminary third-quarter 2026 earnings release will show whether raw material cost recovery has progressed and how quickly the operating margin is rebounding."
    }
   },
   {
    "when": {
     "ko": "2026년 하반기 중",
-    "en": "During H2 2026"
+    "en": "During the second half of 2026"
    },
    "what": {
-    "ko": "원자재(반도체·금) 가격 및 고객사와의 단가 인상 협상 진행 상황을 확인해야 한다.",
-    "en": "Monitor raw material (semiconductor, gold) prices and progress on price increase negotiations with customers."
+    "ko": "고객사와의 단가 인상 협의 결과와 원가구조 안정화 여부를 확인해야 한다.",
+    "en": "The outcome of price negotiations with customers and whether the cost structure has stabilized should be checked."
    }
   },
   {
    "when": {
-    "ko": "향후 분기 공시 시점",
-    "en": "Upcoming quarterly disclosures"
+    "ko": "2026년 4분기 중",
+    "en": "During the fourth quarter of 2026"
    },
    "what": {
-    "ko": "모베드 등 로보틱스 부문 매출 규모가 공시나 IR을 통해 구체적으로 공개되는지, 물량 확대 여부를 확인해야 한다.",
-    "en": "Check whether robotics segment revenue, including MobED-related sales, is disclosed with specific figures and whether volumes are expanding."
+    "ko": "모베드용 부품 공급 물량 확대와 그리퍼 등 신규 로봇 부품 개발 진전 여부를 점검할 필요가 있다.",
+    "en": "Progress on expanding MobED component supply volume and on developing new robot parts such as grippers should be monitored."
    }
   },
   {
    "when": {
-    "ko": "2026년 하반기~2027년",
-    "en": "H2 2026 through 2027"
+    "ko": "2027년 2월 말경",
+    "en": "Around late February 2027"
    },
    "what": {
-    "ko": "멕시코 법인 가동률 추이와 북미 고객사 대상 추가 수주 여부를 지속 확인할 필요가 있다.",
-    "en": "Continue to monitor the Mexico subsidiary's utilization rate trend and any additional orders from North American customers."
+    "ko": "2026년 연간 확정 실적과 배당 정책 발표를 통해 연간 성장률 목표 달성 여부를 확인할 수 있다.",
+    "en": "The confirmed full-year 2026 results and dividend policy announcement will indicate whether the annual growth target was met."
+   }
+  },
+  {
+   "when": {
+    "ko": "향후 공시 시점",
+    "en": "Upon future disclosure"
+   },
+   "what": {
+    "ko": "미국 공장 건설 검토와 관련한 구체적 공시나 발표가 나올 경우 해외 생산기지 전략의 방향을 재확인할 필요가 있다.",
+    "en": "Should a concrete disclosure or announcement emerge regarding consideration of a U.S. plant, the direction of the overseas production strategy should be reassessed."
    }
   }
  ],
  "verdict": {
   "body": {
-   "ko": "모베이스전자는 2025년 매출 1조원 돌파와 순이익 회복이라는 성과를 냈지만, 2026년 상반기 들어 원자재 가격 상승에 따른 영업이익률 둔화라는 과제에 직면해 있다. 자동차 전장부품 본업은 현대차·기아 중심의 안정적 수요 기반과 멕시코 법인 등 해외 생산기지 확대로 매출 성장을 이어가고 있으나, 경쟁사 대비 낮은 마진 구조는 여전히 해결 과제로 남아 있다. 동시에 현대차그룹 모베드 부품 공급을 계기로 로보틱스 분야에 진출한 것은 새로운 성장 축으로 주목받고 있으나, 아직 매출 기여도는 초기 단계에 머물러 있다. 회사는 하반기 원가상승분 회수와 단가 인상 협상을 통한 수익성 개선을 기대하고 있으며, 이 계획의 실행 여부가 향후 실적 흐름을 가늠하는 핵심 변수가 될 전망이다. 밸류에이션 측면에서는 장부가치 대비 할인된 거래 수준과 업종 평균을 밑도는 배당수익률이 나타나는 가운데, 로보틱스 사업 기대와 원가 부담 우려가 동시에 반영되며 시장의 평가가 엇갈리고 있다. 투자 판단에 앞서 3분기 실적 발표와 원자재·단가 협상 진행 상황, 로보틱스 매출 기여 시점 등을 종합적으로 확인할 필요가 있다.",
-   "en": "Mobase Electronics achieved milestones in 2025—surpassing KRW 1 trillion in revenue and recovering net income—but faces a challenge in H1 2026 with operating margin compression driven by rising raw material costs. The core auto-parts business continues to grow on a stable demand base centered on Hyundai and Kia, along with expanding overseas production capacity such as the Mexico subsidiary, though its margin structure, lower than peers, remains an unresolved issue. At the same time, entry into robotics through MobED component supply for Hyundai Motor Group has drawn attention as a new growth axis, though its revenue contribution remains at an early stage. The company expects profitability improvement in the second half through recovery of cost increases and price negotiations, and execution of this plan will be a key variable shaping future earnings. In terms of valuation, the stock trades at a discount to book value with a dividend yield below the industry average, while expectations around the robotics business and concerns over cost pressures create a mixed market assessment. Before making any investment decision, it is worth comprehensively reviewing the Q3 earnings release, progress on raw material and price negotiations, and the timing of robotics revenue contribution."
+   "ko": "모베이스전자는 2025년 처음으로 매출 1조원을 돌파하며 외형과 이익이 함께 성장하는 모습을 보였으나, 2026년 들어서는 원자재 가격 상승과 고객사 생산차질 영향으로 영업이익이 분기별로 크게 흔들리고 있다. 자동차 전장부품이라는 안정적 매출 기반 위에 로보틱스라는 신사업을 얹으려는 시도가 진행 중이며, 현대차그룹 모베드 부품 공급이 그 시작점이 됐다. 고객 다변화와 해외 생산기지 확대, 부채비율 개선 등 재무체력 강화 노력도 함께 나타나고 있다. 다만 로보틱스 매출이 실제 손익에 기여하는 시점과 규모는 아직 명확하지 않고, 원자재 비용 부담이 얼마나 빨리 고객사와의 단가 협의로 해소될지가 단기 실적의 관전 포인트다. 향후 분기 실적 발표와 원가구조 안정화 여부, 로보틱스 부품 공급 확대 속도를 함께 살펴볼 필요가 있다.",
+   "en": "Mobase Electronics surpassed KRW1 trillion in revenue for the first time in 2025, growing both in size and profit, but operating profit has swung sharply on a quarterly basis in 2026 amid rising raw material prices and customer production disruptions. The company is attempting to layer a new robotics business on top of its stable auto electronics revenue base, with component supply for Hyundai Motor Group's MobED marking the starting point. Efforts to strengthen its financial footing are also evident through customer diversification, overseas plant expansion, and an improving debt ratio. However, the timing and scale at which robotics revenue will actually contribute to profit remain unclear, and how quickly the raw material cost burden is resolved through customer price negotiations is a key near-term watch point. Future quarterly earnings releases, cost structure stabilization, and the pace of robotics component supply expansion all warrant continued monitoring."
   }
  },
  "sources": [
   "https://kr.investing.com/equities/seoyon-electronics-co-ltd-earnings",
-  "https://m.thinkpool.com/compDiscuss/cont/1024249",
   "https://comp.wisereport.co.kr/company/c1010001.aspx?cmp_cd=101330",
+  "https://m.thinkpool.com/compDiscuss/cont/1024249",
   "https://kind.krx.co.kr/common/disclsviewer.do?method=search&acptno=20260318000494&docno=&viewerhost=",
   "https://www.paxnet.co.kr/stock/analysis/main?abbrSymbol=012860",
   "https://m.irgo.co.kr/IR-ROOM/101330/%EB%AA%A8%EB%B2%A0%EC%9D%B4%EC%8A%A4-IR-ROOM",
+  "https://www.investing.com/equities/seoyon-electronics-co-ltd",
+  "https://news.nate.com/view/20260225n15723",
   "https://comp.wisereport.co.kr/company/c1010001.aspx?cmp_cd=012860",
   "https://www.newspim.com/news/view/20260813000975",
-  "https://news.nate.com/view/20260225n15723",
-  "https://stockplus.newat.biz/stock_detail.php?code=012860&name=%EB%AA%A8%EB%B2%A0%EC%9D%B4%EC%8A%A4%EC%A0%84%EC%9E%90&prev_url=%2Frealtime2.php",
   "https://comp.wisereport.co.kr/company/c1020001.aspx?cmp_cd=012860",
-  "https://www.catch.co.kr/Comp/CompSummary/385662",
   "https://www.newspim.com/news/view/20260514000850",
+  "https://www.catch.co.kr/Comp/CompSummary/385662",
   "https://m.thinkpool.com/news/view/16851968",
-  "https://news.infostock.co.kr/a",
   "https://www.etnews.com/20260122000312",
-  "https://v.daum.net/v/20260112155807583",
-  "https://marketin.edaily.co.kr/News/ReadE?newsId=03817926645317064"
+  "https://v.daum.net/v/UKdy973GNR?f=p",
+  "https://www.joongangenews.com/news/articleView.html?idxno=485185",
+  "https://redhorseblog.co.kr/%ED%98%84%EB%8C%80%EC%B0%A8-%EB%AA%A8%EB%B2%A0%EB%93%9C-%EA%B4%80%EB%A0%A8%EC%A3%BC-mobed-%EB%8C%80%EC%9E%A5%EC%A3%BC-%ED%85%8C%EB%A7%88%EC%A3%BC-%EC%88%98%ED%98%9C%EC%A3%BC/"
  ],
  "v": 2,
  "model": "claude-sonnet-5",
@@ -223,9 +233,9 @@
   "전자·부품"
  ],
  "market": "코스닥",
- "reportDate": "2026-08-18",
- "reportTs": "2026-08-18 00:50",
- "dataDate": "20260821",
+ "reportDate": "2026-09-05",
+ "reportTs": "2026-09-05 07:07",
+ "dataDate": "20260904",
  "quant": {
   "asOf": "2026-08-21",
   "fs_basis": "연결(CFS) · DART 공시 확정치 · 지배주주 기준 순이익",
@@ -324,14 +334,14 @@
    }
   ],
   "valuation": {
-   "price": 2250,
-   "mcap": 0.1648,
+   "price": 2215,
+   "mcap": 0.1622,
    "shares": 73233457,
    "total_shares": 73233457,
    "wavg_shares": 72579507,
-   "per": 6.8,
+   "per": 6.692,
    "eps": 331,
-   "pbr": 0.63,
+   "pbr": 0.6206,
    "bps": 3569,
    "roe_ttm": 9.7,
    "ttm_window": "2025Q3~2026Q2",
@@ -340,7 +350,7 @@
    "bps_krx": 3346.0,
    "basis": "PER·EPS·PBR·BPS 모두 자체 산출(네이버·토스와 동일 방식) · 배당은 DART 공시 주당현금배당금(보완:KRX) ÷ 현재가",
    "dps": 40.0,
-   "div": 1.78
+   "div": 1.81
   }
  }
 }

@@ -1,230 +1,220 @@
 {
  "title": {
-  "ko": "2026년 1분기 반등, 실적 회복 사이클 진입 주목",
-  "en": "Sharp Q1 2026 Rebound — Watching Whether an Earnings Recovery Cycle Has Begun"
+  "ko": "반도체 검사용 디텍터 성장과 실적 변동성 공존",
+  "en": "Semiconductor Inspection Growth Meets Earnings Volatility"
  },
  "lead": {
-  "ko": "전방시장 수요 위축으로 2025년 연간 영업적자를 기록한 레이언스가 2026년 1분기 매출과 영업이익 모두 큰 폭으로 반등했으며, VET(동물용) 부문의 구조적 성장과 산업용 AXI 신제품이 중장기 포트폴리오를 확장하는 국면이다.",
-  "en": "After posting a full-year operating loss in 2025 amid weak downstream demand, Rayence staged a sharp rebound in both revenue and operating profit in Q1 2026; the structural growth of its VET segment and newly launched industrial AXI product are broadening the long-term portfolio."
+  "ko": "레이언스는 반도체 검사장비용 디텍터 판매 확대에 힘입어 2026년 상반기 연속 영업흑자를 기록했으나, 2025년 연간 및 4분기 실적은 적자를 기록하는 등 분기별 변동성이 큰 구간을 지나고 있다.",
+  "en": "Rayence posted two consecutive quarters of operating profit in the first half of 2026 on the back of growing semiconductor inspection detector sales, but full-year and fourth-quarter 2025 results swung to a loss, underscoring the quarter-to-quarter volatility the company is navigating."
  },
  "keypoints": [
   {
-   "ko": "2026년 1분기 매출 약 368억원·영업이익 약 36억원 — 전분기·전년 동기 대비 모두 뚜렷한 실적 반등",
-   "en": "Q1 2026 revenue ~KRW 36.8bn and operating profit ~KRW 3.6bn mark a clear recovery versus both the prior quarter and prior-year period"
+   "ko": "2026년 1·2분기 연속 영업흑자 전환, 반도체 검사장비용 CMOS 디텍터 판매 확대가 성장을 견인",
+   "en": "Operating profit turned positive in both Q1 and Q2 2026, driven by expanding CMOS detector sales for semiconductor inspection equipment"
   },
   {
-   "ko": "VET(동물용 디텍터) 부문, 2025년 2분기까지 18분기 연속 전년 동기 대비 성장 유지 — 중장기 구조적 성장 엔진",
-   "en": "The VET (veterinary detector) segment sustained 18+ consecutive quarters of year-over-year growth through Q2 2025, serving as a long-term structural growth engine"
+   "ko": "2025년 연간 매출 1,147억원(-8.6% YoY), 영업손실 39.5억원, 지배주주 순손실 52.8억원으로 전년 대비 적자 전환",
+   "en": "Full-year 2025 revenue was KRW 114.7 billion (-8.6% YoY), with an operating loss of KRW 3.95 billion and a net loss attributable to owners of KRW 5.28 billion, swinging from prior-year profit"
   },
   {
-   "ko": "2026년 2월 HBM·AI칩 검사용 산업용 AXI 'Flash Series' 출시 — AI 인프라 투자 확대 수혜 포지셔닝",
-   "en": "February 2026 launch of 'Flash Series' industrial AXI detector optimized for HBM and AI-chip inspection — positioning for AI infrastructure spending tailwind"
+   "ko": "동물용(VET) 디텍터가 18개 분기 이상 연속 성장, 산업용 디텍터는 HBM·AI칩 검사 수요 확대로 신제품 출시",
+   "en": "Veterinary detector sales have grown for over 18 consecutive quarters, while the industrial segment launched a new product targeting HBM/AI chip inspection demand"
   },
   {
-   "ko": "순현금이 시가총액을 상회하는 초저부채 재무구조, 연간 적자에도 일반주주 DPS 300원 차등배당 실시",
-   "en": "Net cash exceeds market cap with near-zero leverage; KRW 300 DPS paid to general shareholders even through the 2025 loss year"
+   "ko": "부채비율 10%대의 견고한 재무구조, 순이익 적자에도 영업활동현금흐름은 매년 양(+)의 흐름 유지",
+   "en": "The balance sheet remains solid with a debt ratio around 10%, and operating cash flow has stayed positive every year even during net loss periods"
   },
   {
-   "ko": "주력 TFT·CMOS 시장 경쟁 심화와 전방시장 수요 회복 속도가 실적 정상화의 핵심 변수",
-   "en": "Intensifying competition in core TFT/CMOS markets and the pace of downstream demand recovery are the key swing factors for earnings normalization"
+   "ko": "유럽 의료기기 규정(CE MDR) 35개 모델 인증 완료로 유럽 및 신흥시장 공급 기반 강화",
+   "en": "The company completed CE MDR certification for 35 models, reinforcing its supply base for Europe and emerging markets"
   }
  ],
  "business": {
-  "ko": "레이언스는 2011년 5월 치과 의료기기 전문 그룹 바텍 네트웍스의 DR(디지털방사선) 사업본부가 물적분할해 설립된 디지털 엑스레이 디텍터 전문기업으로, 2016년 4월 코스닥에 상장됐다. 주력 제품은 TFT(박막트랜지스터) 디텍터, CMOS 디텍터, I/O 센서(치과용 구강센서) 세 가지이며, 2024년 기준 매출 구성은 CMOS 50.4%, TFT 32.6%, I/O 센서 12.3%, 기타 4.7%로 파악된다(유진투자증권, 2025년 5월). 응용 분야는 의료·치과·동물(VET)·산업·보안용으로 다각화되어 있으며, 세계 최초로 이 4개 분야 전 라인업을 구축한 국내 유일의 기업임을 표방하고 있다. CMOS 웨이퍼 설계기술, TFT 패널 독자 개발, 방사선 검출용 섬광체(scintillator) 핵심 기술을 내재화한 수직계열화 구조를 갖추고 있다. 자회사 우리엔·우리엔팜을 통해 동물용 영상진단의료기기 시장에도 진출, VET 부문 매출을 꾸준히 확대하고 있다. 치과용 구강센서(I/O 센서) 분야와 경주마용 디텍터 분야에서 글로벌 1위 점유율을 보유하고 있다고 밝히고 있다. 2026년 2월에는 HBM·AI 반도체 검사를 겨냥한 49.5μm 픽셀·최대 70fps 성능의 산업용 AXI 'Flash Series'를 출시하며 반도체 제조 검사 시장으로 포트폴리오를 확장했다. 매출액 대비 10% 이상을 R&D에 투자하고 전체 임직원의 약 30%가 연구인력으로 구성되는 기술 중심 기업 구조를 유지하고 있다.",
-  "en": "Rayence was established in May 2011 as a physical spin-off of Vatech Networks' digital radiography (DR) division and was listed on KOSDAQ in April 2016. Its three core products are TFT (thin-film transistor) detectors, CMOS detectors, and I/O sensors (dental intraoral sensors); 2024 product-mix data (Eugene Investment Securities, May 2025) shows CMOS at ~50.4% of revenue, TFT at ~32.6%, I/O sensors at ~12.3%, and other products at ~4.7%. Applications span medical, dental, veterinary, industrial, and security sectors, making Rayence the only Korean company — and reportedly the world's first — to offer a full product lineup across all four application categories. The company has vertically integrated CMOS wafer design, proprietary TFT panel development, and scintillator materials technology in-house. Through subsidiaries Woorien and Woorien Farm, Rayence actively serves the veterinary diagnostic imaging market. It claims global No. 1 market share in dental intraoral sensors and equine (racehorse) detectors. In February 2026, it launched the industrial AXI 'Flash Series' featuring 49.5μm pixel size and up to 70fps speed, targeting HBM and AI-chip inspection in semiconductor manufacturing, thereby expanding its portfolio into industrial inspection. R&D spending consistently exceeds 10% of revenue, with approximately 30% of total staff comprising research personnel."
+  "ko": "레이언스는 2011년 바텍의 디지털방사선(DR) 사업부문이 물적분할해 설립된 X-ray 디텍터 전문기업으로, 글로벌 헬스케어 그룹 바텍 네트웍스의 상장 계열사다. TFT(박막트랜지스터)와 CMOS(상보형 금속산화반도체) 두 가지 디텍터 기술을 국내에서 유일하게 모두 보유하고 있으며, 치과·의료·동물·산업용 전 분야에 걸친 제품 라인업을 구축했다. 2026년 2분기 기준 제품별로는 CMOS 디텍터 매출이 130.6억원으로 전체 성장을 이끌었고, 반도체 검사장비를 비롯해 덴탈·동물용 등 여러 응용 분야에서 판매가 확대됐다. 산업용 디텍터는 71.1억원으로 전년 동기 대비 140.9% 늘며 가장 높은 성장률을 보였고, 동물용은 110.3억원(+30.4%), 덴탈용은 126.1억원(+13.2%)을 기록했다. 동물용 사업은 자회사 우리엔·우리엔팜을 통해 공급되며 신성장동력으로 육성되고 있다. 사업 모델은 글로벌 의료기기 제조사에 디텍터와 이미징 솔루션을 공급하는 OEM 파트너십이 핵심이며, CE MDR과 같은 인증이 계약 신뢰성을 판단하는 기준으로 작용해 수주 경쟁력에 직결된다. 구강 내 엑스레이 센서(IOS) 부문에서는 누적 생산량 20만 대를 돌파하며 글로벌 생산 1위 지위를 확보하고 있다. 경쟁 구도에서는 뷰웍스 등 국내 TFT 디텍터 업체와 해외 대형 이미징 부품사들과 경쟁하며, CMOS 디텍터 분야에서는 국내 유일 제조사라는 기술적 차별성을 갖고 있다.",
+  "en": "Rayence is an X-ray detector specialist established in 2011 through a spin-off of Vatech's digital radiography business, and it operates as a listed affiliate of global healthcare group Vatech Networks. It is the only Korean company to hold both TFT (thin-film transistor) and CMOS (complementary metal-oxide semiconductor) detector technologies, and it has built a full product lineup spanning dental, medical, veterinary, and industrial applications. In the second quarter of 2026, CMOS detector revenue of KRW 13.06 billion led overall growth, with sales expanding across semiconductor inspection equipment, dental, and veterinary applications. Industrial detectors posted the strongest growth at KRW 7.11 billion, up 140.9% year over year, while veterinary revenue reached KRW 11.03 billion (+30.4%) and dental revenue KRW 12.61 billion (+13.2%). The veterinary business, supplied through subsidiaries Woorien and Woorien Pharm, is being cultivated as a new growth driver. The core business model is an OEM partnership supplying detectors and imaging solutions to global medical device makers, where certifications such as CE MDR serve as a key criterion for contract reliability and directly affect order competitiveness. In intraoral sensors (IOS), the company has surpassed cumulative production of 200,000 units, securing the position of the world's largest producer. In the competitive landscape, Rayence competes with domestic TFT detector makers such as Vieworks and large overseas imaging component suppliers, while holding a technical differentiation as the sole domestic manufacturer in the CMOS detector segment."
  },
  "earnings": {
-  "ko": "레이언스의 연결 기준 실적은 2022년 매출 1,472억원·영업이익률 17.2%를 정점으로 3년 연속 내리막을 걸었다. 2023년 매출 1,430억원·영업이익률 13.8%, 2024년 매출 1,256억원·영업이익률 5.3%로 하락했고, 2025년에는 매출 1,147억원에 영업손실 40억원(영업이익률 -3.4%)으로 적자 전환됐다. 분기 흐름을 보면 2025년 1분기 영업손실 17억원, 2분기 영업손실 3억원으로 적자가 이어졌고, 3분기에는 영업이익 10억원으로 일시 반등했으나 4분기에 영업손실 29억원·지배주주 순손실 67억원의 대규모 부진이 재발하며 연간 실적을 끌어내렸다. 실적 악화의 주된 원인은 글로벌 전방시장(병원·치과) 투자 위축에 따른 TFT·CMOS 디텍터 수요 급감과 원가 상승이며, 특히 2025년 상반기 TFT·CMOS 매출이 각각 두 자릿수 이상 급감했다. 반면 2026년 1분기에는 매출 368억원(전년 동기 272억원 대비 약 35% 증가), 영업이익 36억원, 지배주주 순이익 59억원으로 대폭 개선됐다. 영업현금흐름(CFO)은 2025년에도 92억원 플러스를 유지, 영업이익 적자 상황에서도 현금 창출력이 완전히 훼손되지 않았음을 확인해 주었다. 2025년 지배주주 기준 기말 순자산은 2,370억원으로 견고한 수준을 유지하고 있다.",
-  "en": "Rayence's consolidated earnings peaked in 2022 at revenue of KRW 147.2bn and an operating margin of 17.2%, then declined for three consecutive years. Revenue fell to KRW 143.0bn in 2023 (OPM 13.8%), KRW 125.6bn in 2024 (OPM 5.3%), and KRW 114.7bn in 2025, when the company swung to an operating loss of KRW 4.0bn (OPM -3.4%). Quarterly, operating losses persisted through Q1 2025 (-KRW 1.7bn) and Q2 2025 (-KRW 0.3bn), with a brief return to profit in Q3 2025 (+KRW 1.0bn), followed by a sharp Q4 2025 setback (operating loss -KRW 2.9bn; controlling-interest net loss -KRW 6.7bn). The primary drivers were sharp declines in TFT and CMOS detector volumes caused by weakened capex at hospitals and dental clinics, compounded by cost inflation. Q1 2026 marked a significant rebound: revenue rose to approximately KRW 36.8bn (~35% year-over-year vs. Q1 2025's KRW 27.2bn), operating profit recovered to KRW 3.6bn, and controlling-interest net income came in at KRW 5.9bn. Operating cash flow (CFO) remained positive at KRW 9.2bn in 2025, indicating that underlying cash generation was not entirely impaired during the loss year. Controlling-interest equity at end-2025 stood at a solid KRW 236.9bn."
+  "ko": "연간 실적은 2022년 매출 1,471.6억원, 영업이익 253.6억원(영업이익률 17.2%)의 정점을 기록한 이후 2023년 1,429.9억원(영업이익률 13.8%), 2024년 1,255.6억원(영업이익률 5.3%)으로 매출과 마진이 동반 축소되는 흐름을 보였다. 2025년에는 매출 1,147.2억원(전년 대비 -8.6%)에 영업손실 39.5억원, 지배주주 순손실 52.8억원을 기록하며 적자로 전환했다. 분기 흐름을 보면 2025년 2분기 매출 289.9억원에 영업손실 3.1억원을 냈고, 3분기에는 매출 293.5억원, 영업이익 10.1억원으로 일시 흑자를 회복했으나 4분기에는 매출 291.3억원에 영업손실 29.2억원, 지배주주 순손실 67.1억원으로 크게 악화됐다. 이후 2026년 1분기에는 매출이 367.5억원으로 뛰어오르며 영업이익 35.8억원, 지배주주 순이익 58.9억원으로 큰 폭의 개선을 보였고, 2분기에도 매출 364.6억원, 영업이익 25.1억원, 지배주주 순이익 25.4억원을 기록해 두 개 분기 연속 흑자 기조를 이어갔다. 최근 네 개 분기(2025년 3분기~2026년 2분기) 누적 지배주주 순이익은 41.9억원으로, 2025년 4분기의 대규모 손실 영향이 여전히 남아 있는 구간이다. 이러한 실적 흐름은 반도체 검사장비용 디텍터 판매 확대가 매출 회복의 핵심 동력이었음을 보여주며, 동시에 전방 산업 투자 사이클에 따라 분기별 실적이 크게 출렁이는 구조적 특성도 함께 드러낸다. 한편 순이익이 적자를 기록한 2025년에도 영업활동현금흐름은 92.1억원의 양(+)의 흐름을 유지했으며, 이는 2022~2024년 166억~248억원대의 견조한 현금창출력과 비교하면 축소됐지만 순손실 국면에서도 현금흐름 기반은 유지됐음을 시사한다.",
+  "en": "Annual results peaked in 2022 with revenue of KRW 147.16 billion and operating profit of KRW 25.36 billion (17.2% operating margin), before both revenue and margin contracted through 2023 (KRW 142.99 billion, 13.8% margin) and 2024 (KRW 125.56 billion, 5.3% margin). In 2025, revenue fell to KRW 114.72 billion (-8.6% year over year), and the company swung to an operating loss of KRW 3.95 billion and a net loss attributable to owners of KRW 5.28 billion. On a quarterly basis, Q2 2025 revenue was KRW 28.99 billion with an operating loss of KRW 0.31 billion; Q3 2025 briefly returned to profit with revenue of KRW 29.35 billion and operating profit of KRW 1.01 billion, but Q4 2025 deteriorated sharply to revenue of KRW 29.13 billion, an operating loss of KRW 2.92 billion, and a net loss attributable to owners of KRW 6.71 billion. Revenue then jumped to KRW 36.75 billion in Q1 2026, with operating profit of KRW 3.58 billion and net profit attributable to owners of KRW 5.89 billion marking a substantial improvement, followed by Q2 2026 revenue of KRW 36.46 billion, operating profit of KRW 2.51 billion, and net profit attributable to owners of KRW 2.54 billion, extending the profitable streak to two consecutive quarters. Over the trailing four quarters (Q3 2025 through Q2 2026), cumulative net profit attributable to owners stood at KRW 4.19 billion, still reflecting the drag from the large Q4 2025 loss. This pattern shows that growing sales of detectors for semiconductor inspection equipment have been the core driver of the revenue recovery, while also revealing the structural characteristic of large quarter-to-quarter swings tied to the investment cycle of downstream industries. Meanwhile, even in the net-loss year of 2025, operating cash flow remained positive at KRW 9.21 billion, a level lower than the KRW 16.6 billion to KRW 24.8 billion range seen from 2022 to 2024 but still indicating that the cash flow base held up even during the net loss phase."
  },
  "industry": {
-  "ko": "글로벌 디지털 엑스레이 기기 시장은 2026년 약 142억 달러 규모로 추산되며 2033년까지 연평균 7.6% 성장이 전망된다. 아날로그에서 디지털(DR)로의 전환 수요는 신흥국 중심으로 꾸준히 이어지고 있으나, 선진국 시장에서는 고사양 제품의 평준화(commoditization)와 중저가 경쟁자 부상이 가격 압박을 심화시키고 있다. 특히 CMOS 및 TFT 디텍터 시장에서 보급형 제품 출시가 확산되며 레이언스 같은 프리미엄 공급자의 마진을 지속 압박하고 있다. 경쟁사는 GE Healthcare, Carestream, Canon Medical, Siemens Healthineers 등 글로벌 대형 업체와 함께 중국계 신흥 제조사들이 시장 점유율 확대를 노리고 있다. 반면 산업용 AXI 시장은 AI·HBM 반도체 제조 공정에서 미세 패턴 검사 수요가 급증하며 새로운 성장 분야로 부상하고 있다. 동물용 의료기기(VET) 시장은 반려동물 인구 증가와 동물 의료비 지출 확대에 힘입어 구조적 성장세를 이어가고 있으며, 레이언스가 선점한 포지션의 중장기 가치가 높다. 북미·유럽 헬스케어 인프라 투자 재개 속도가 2026년 하반기 전방 수요 회복의 핵심 변수로 남아 있다.",
-  "en": "The global digital X-ray devices market is estimated at approximately USD 14.2bn in 2026 and is forecast to grow at a CAGR of ~7.6% through 2033. Analog-to-digital conversion continues to drive demand primarily in emerging markets, but in developed markets, the commoditization of high-spec products and the rise of budget suppliers are intensifying pricing pressure. CMOS and TFT detector markets in particular are experiencing proliferation of entry-level products, persistently squeezing margins for premium suppliers like Rayence. Competitors include global majors such as GE Healthcare, Carestream, Canon Medical, and Siemens Healthineers, as well as emerging Chinese manufacturers aggressively seeking market share. On the other hand, the industrial AXI market is rapidly emerging as a high-growth opportunity as semiconductor fabs require increasingly precise inspection of HBM and AI chips. The veterinary medical device (VET) market is structurally expanding on the back of rising pet ownership and higher veterinary care spending, areas where Rayence holds first-mover positioning. The pace at which North American and European healthcare infrastructure investment resumes will be a pivotal swing factor for downstream demand recovery in H2 2026."
+  "ko": "레이언스가 속한 산업용 X-ray 검사 시장은 AI 인프라 투자 확대와 HBM(고대역폭메모리) 생산 증가로 검사 정밀도·속도에 대한 요구가 높아지는 국면에 있다. HBM과 AI 칩은 다층·적층 기반의 복잡한 구조로 미세 결함 검출 난이도가 높아, 기존 광학검사(AOI) 방식을 넘어 AXI(자동 엑스레이 검사) 및 3D X-ray CT 기반 정밀검사 수요가 확대되는 추세다. 레이언스는 국내 유일 CMOS 엑스레이 디텍터 제조사로서 이러한 흐름의 수혜 구조에 위치해 있으며, 2026년 2월 HBM·AI칩 검사장비용 고도화 제품 '플래시 시리�즈'를 공개해 시장 공략을 강화했다. 의료기기 부문에서는 유럽의 CE MDR 규정 강화가 산업 재편을 이끌고 있는데, EU 집행위원회 의뢰 조사에 따르면 EU 내 의료기기 기업의 절반 이상이 MDR의 복잡성을 이유로 제품 포트폴리오를 축소한 것으로 나타났다. 이런 환경에서 레이언스는 의료용·덴탈 제품 35개 모델에 대해 MDR 인증을 일괄 완료해 규제 장벽이 오히려 진입장벽으로 작용하는 구도에서 상대적 우위를 확보했다. 동물용 영상진단 시장은 반려동물 의료비 지출 확대 흐름 속에서 레이언스의 VET 부문이 장기간 연속 성장세를 유지하는 등 안정적 성장축으로 자리잡고 있다. 다만 전체 매출의 상당 부분을 차지하는 덴탈·의료용 디텍터는 여전히 전방 의료기기 시장의 투자 사이클에 민감하게 반응하는 구조로, 최근 수년간 매출·마진 등락의 주요 원인이 되어 왔다.",
+  "en": "The industrial X-ray inspection market Rayence operates in is entering a phase of rising demand for inspection precision and speed, driven by expanding AI infrastructure investment and growing HBM (high-bandwidth memory) production. HBM and AI chips have multilayer, stacked structures that make micro-defect detection difficult, and this has fueled a shift in demand from traditional optical inspection (AOI) toward AXI (automated X-ray inspection) and 3D X-ray CT-based precision inspection. As the only domestic manufacturer of CMOS X-ray detectors, Rayence is positioned to benefit from this trend, and in February 2026 it unveiled an upgraded 'Flash Series' product targeting HBM and AI chip inspection equipment. In the medical device segment, tightening EU CE MDR regulations are reshaping the industry; a study commissioned by the European Commission found that more than half of EU medical device companies had trimmed their product portfolios due to the complexity of MDR compliance. Against this backdrop, Rayence completed MDR certification across 35 medical and dental models in a single batch, gaining relative advantage in a landscape where regulatory hurdles function as barriers to entry. The veterinary imaging market has become a stable growth pillar for Rayence, with its VET segment maintaining a long streak of consecutive growth amid rising spending on companion animal healthcare. That said, the dental and medical detector businesses, which still account for a substantial share of revenue, remain sensitive to the investment cycles of downstream medical device markets, a factor that has been a major driver of revenue and margin fluctuations in recent years."
  },
  "outlook": {
-  "ko": "2026년 1분기의 급반등은 전방시장 수요의 점진적 회복과 매출처 다변화 효과가 맞물린 결과로 해석된다. 동물용 디텍터(VET) 부문은 2025년 2분기까지 18분기 연속 전년 동기 대비 성장세를 기록했으며, 유진투자증권 리포트(2025년 8월)에 따르면 VET 디텍터 매출은 2019년 123억원에서 2024년 286억원으로 연평균 15.1% 성장했다. 2026년 2월 출시한 Flash Series 산업용 AXI 디텍터는 AI 인프라 투자 확대에 따른 HBM·AI칩 검사 수요 포착이 기대되며, 회사 측은 AI 반도체 및 첨단 제조 분야에서 핵심 파트너로서의 입지를 강화하겠다는 방향성을 제시했다. 2026년 1월에는 수원사업장이 새로 개설되어 생산·연구 거점이 보완됐다. 원가혁신 및 수율 향상 추진을 통한 수익성 개선이 지속적으로 진행되고 있으며, 덴탈용 전방시장의 점진적 회복도 기대되고 있다. 다만 2025년 4분기와 같은 분기 변동성 재발 가능성과 Flash Series 신사업의 본격 수주 시점이 불확실하다는 점은 유의해야 한다. 주주환원 측면에서는 연간 적자 상황에서도 일반주주에게 주당 300원의 차등배당을 실시해 보유 현금 기반의 주주 친화적 의지를 유지했다.",
-  "en": "The sharp Q1 2026 rebound is interpreted as a confluence of gradual downstream demand recovery and revenue-source diversification. The VET segment maintained 18 consecutive quarters of year-over-year growth through Q2 2025; per Eugene Investment Securities (August 2025), VET detector revenue has grown from KRW 12.3bn in 2019 to KRW 28.6bn in 2024 at a CAGR of 15.1%. The February 2026 Flash Series industrial AXI detector — optimized for HBM and AI-chip inspection — is positioned to capture demand from the global AI infrastructure build-out, with management signaling intent to become a key partner in AI semiconductor and advanced manufacturing inspection. A new Suwon facility opened in January 2026, supplementing production and R&D capacity. Ongoing cost innovation and yield improvement initiatives continue, and a gradual recovery in the dental end-market is also anticipated. However, the risk of quarterly earnings volatility recurrence (as seen in Q4 2025) and uncertainty around the order ramp for the Flash Series are important caveats. On shareholder returns, Rayence paid a differentiated dividend of KRW 300 per share to general shareholders even in a loss year, signaling continued commitment to returns backed by its net cash position."
+  "ko": "회사는 하반기에도 반도체 검사장비용 디텍터 판매 확대를 기반으로 산업용 사업 성장을 이어갈 계획이라고 밝혔다. 서영권 대표는 2분기 실적 발표에서 하반기에는 반도체 검사장비 시장의 고객 기반을 확대하고 다양한 응용 분야에 최적화된 디텍터 공급을 통해 성장세를 이어가겠다고 밝혔다. 구체적으로는 신규 고객사 확보와 양산 전환 확대, 신제품 공급으로 산업용 경쟁력을 강화하고 덴탈·동물용 시장에서도 주요 고객과의 협력을 넓힐 계획이라고 설명했다. 2026년 2월 공개한 HBM·AI칩 검사용 '플래시 시리즈'는 글로벌 톱티어 검사장비 기업에 이미 공급 이력이 있는 기존 제품을 고도화한 것으로, AI 반도체 및 첨단 제조 분야에서 핵심 공급자 지위를 강화하겠다는 목표를 밝혔다. 2026년 9월 초에는 의료용·덴탈 이미징 제품 35개 모델에 대한 유럽 CE MDR 인증을 취득했으며, 회사는 이번 인증이 단순한 인허가 획득을 넘어 유럽 시장 공급 확대와 글로벌 OEM 고객 확보를 위한 중요한 기반이 될 것이라고 밝혔다. 이 인증의 효과는 유럽에 국한되지 않고 CE 인증을 자국 의료기기 허가 기준으로 활용하는 동남아시아·중동·중남미 등 신흥시장에서의 사업 확대에도 긍정적으로 작용할 전망이다. 다만 회사 측이 제시한 구체적 수치 가이던스는 확인되지 않아, 향후 실적 회복의 지속성은 분기별 공시를 통해 확인이 필요하다.",
+  "en": "The company stated that it plans to continue growing its industrial business in the second half of the year based on expanded sales of detectors for semiconductor inspection equipment. At the Q2 earnings release, CEO Young Kwon Seo said the company would expand its customer base in the semiconductor inspection equipment market and continue its growth momentum by supplying detectors optimized for various applications in the second half. Specifically, the company explained plans to strengthen industrial competitiveness through securing new customers, expanding mass-production conversion, and supplying new products, while also broadening cooperation with key customers in the dental and veterinary markets. The 'Flash Series' unveiled in February 2026 for HBM and AI chip inspection is an upgraded version of an existing product already supplied to a top-tier global inspection equipment maker, and the company stated its goal of strengthening its position as a core supplier in AI semiconductors and advanced manufacturing. In early September 2026, the company obtained European CE MDR certification for 35 medical and dental imaging models, stating that this certification would serve as an important foundation for expanding European market supply and securing global OEM customers beyond simple regulatory approval. The effect of this certification is expected to extend beyond Europe, positively impacting business expansion in emerging markets such as Southeast Asia, the Middle East, and Latin America, where CE certification is often used as a benchmark for domestic medical device approval. However, no specific numerical guidance from the company has been confirmed, so the sustainability of the earnings recovery will need to be verified through upcoming quarterly disclosures."
  },
  "valuation_comment": {
-  "ko": "현재 주가는 회사의 BPS(주당순자산 15,203원) 대비 큰 폭의 할인 구간에 형성되어 있어, 장부가치 이하 거래라는 점에서 동종 코스닥 기업들과 비교해 이례적인 수준이다. 유진투자증권 리포트(2025년 4월)에 따르면 순현금 규모가 시가총액을 상회하는 재무 구조는 이익 회복 과정에서의 하방 안전망으로 기능한다. 이익 지표 측면에서는 2025년 연간 적자에 이어 최근 4분기 누적 지배주주 순이익(EPS 24원)이 극히 소규모에 그쳐, 이익 기반 밸류에이션은 실적 회복 경로에 크게 의존하는 구조다. 2026년 1분기의 뚜렷한 흑자 전환이 이후 분기에도 지속될 경우, 이익 정상화에 따른 배수 재평가 여지가 생긴다. DPS 300원의 현금배당은 보유 순현금을 기반으로 유지 가능하며, 업종 내 배당 매력도의 상대적 위치는 향후 이익 회복 속도에 따라 달라질 전망이다.",
-  "en": "The current share price trades at a substantial discount to the company's BPS (book value per share of KRW 15,203), which is unusual relative to KOSDAQ peers and implies the market is pricing shares below net asset value. Per Eugene Investment Securities (April 2025), the net-cash-exceeds-market-cap structure provides a floor on downside risk during the earnings recovery process. From an earnings-based perspective, the trailing four-quarter controlling-interest EPS of KRW 24 is minimal, meaning earnings-driven valuation is highly dependent on the recovery trajectory. Should the Q1 2026 profitability rebound prove sustainable across subsequent quarters, there would be meaningful room for a multiple re-rating as earnings normalize. The KRW 300 DPS cash dividend is supportable from the net cash base; its relative attractiveness within the sector will evolve depending on the speed at which earnings recover."
+  "ko": "주가는 순자산가치 대비 여전히 할인된 수준에서 거래되고 있어, 시장이 회사의 자산가치를 온전히 반영하지 않고 있다는 해석과 최근 몇 년간의 실적 변동성을 반영한 결과라는 해석이 공존한다. 과거 국내 증권사들이 적용해온 목표 배수는 대체로 10배대 초중반 수준이었는데, 2026년 상반기 실적 회복 이후 거래되는 배수는 이러한 과거 밴드의 상단을 웃도는 구간에 위치한다. 이는 2025년 연간 적자와 4분기의 큰 손실 이후 최근 네 개 분기 기준 이익 규모가 아직 완전히 회복되지 않은 가운데, 최근 두 개 분기의 흑자 전환과 반도체 검사장비 수요 확대에 대한 기대가 일부 반영된 결과로 풀이할 수 있다. 배당은 최근 순이익의 등락에도 일정 수준을 유지하며 지급되고 있어, 자본정책 측면에서는 안정성을 보여주는 요소로 평가할 수 있다. 부채비율이 낮고 자기자본 규모가 매출 대비 두터운 재무구조는 밸류에이션 논의에서 종종 언급되는 배경이지만, 이는 자산가치에 대한 평가이며 향후 수익성 회복의 지속 여부와는 별도로 판단할 필요가 있다.",
+  "en": "The stock continues to trade at a discount to net asset value, a pattern that can be read either as the market not fully reflecting the company's asset base or as a reflection of the earnings volatility of recent years. The target multiples domestic brokerages have historically applied were generally in the low-to-mid teens, and the multiple at which the stock has traded following the first-half 2026 earnings recovery sits above the upper end of that historical band. This can be interpreted as a combination of the earnings base over the trailing four quarters not yet having fully recovered from the 2025 annual loss and the large Q4 2025 loss, alongside some expectation being priced in for the recent two-quarter return to profit and growing semiconductor inspection demand. Dividends have continued to be paid at a fairly consistent level despite fluctuations in net income, which can be viewed as an element of stability in the company's capital policy. The low debt ratio and the size of shareholders' equity relative to revenue are background factors often cited in valuation discussions, but this reflects an assessment of asset value and should be considered separately from the question of whether the profitability recovery proves durable going forward."
  },
  "bull": [
   {
    "title": {
-    "ko": "2026년 1분기 급반등 — 회복 사이클 진입 신호",
-    "en": "Q1 2026 Sharp Rebound — Signal of a Recovery Cycle Entry"
+    "ko": "반도체 검사 수요 확대의 직접 수혜",
+    "en": "Direct Beneficiary of Growing Semiconductor Inspection Demand"
    },
    "body": {
-    "ko": "2026년 1분기 매출 368억원·영업이익 36억원은 2025년 4분기(영업손실 29억원·순손실 67억원)에서의 급반등으로, 실적 바닥 통과 가능성을 시사한다. 전년 동기(매출 272억원·영업손실 17억원) 대비 매출과 수익성 모두 대폭 개선됐으며, 전방시장 수요 회복과 매출처 다변화가 동시에 작용한 결과로 해석된다. 이 추세가 2026년 하반기까지 이어질 경우 연간 기준 흑자 전환 및 이익 재평가 가능성이 높아진다.",
-    "en": "Q1 2026 revenue of KRW 36.8bn and operating profit of KRW 3.6bn represent a sharp bounce-back from Q4 2025 (operating loss KRW 2.9bn, net loss KRW 6.7bn), signaling the company may have passed an earnings trough. The improvement versus Q1 2025 (revenue KRW 27.2bn, operating loss KRW 1.7bn) was substantial in both revenue and profitability, suggesting a combination of downstream demand recovery and client diversification. If the trend holds into H2 2026, the probability of full-year profit recovery and an associated earnings re-rating increases meaningfully."
+    "ko": "AI 인프라 투자와 HBM 생산 증가로 정밀 X-ray 검사 수요가 커지는 가운데, 레이언스는 국내 유일 CMOS 엑스레이 디텍터 제조사로서 이 흐름의 중심에 있다. 2026년 2월 공개한 신제품 '플래시 시리즈'는 이미 글로벌 톱티어 검사장비 기업에 공급된 이력이 있는 제품을 고도화한 것으로 물량 확대 여지를 보여준다. 실제로 2026년 상반기 산업용 디텍터 매출은 전년 동기 대비 140.9% 증가하며 전체 성장을 견인했다.",
+    "en": "Amid growing demand for precision X-ray inspection driven by AI infrastructure investment and rising HBM production, Rayence stands at the center of this trend as the only domestic maker of CMOS X-ray detectors. The 'Flash Series' unveiled in February 2026 is an upgraded version of a product already supplied to a top-tier global inspection equipment maker, indicating room for volume expansion. Indeed, industrial detector revenue grew 140.9% year over year in the first half of 2026, driving overall growth."
    }
   },
   {
    "title": {
-    "ko": "순현금 > 시가총액 — 견고한 재무 안전판",
-    "en": "Net Cash Exceeds Market Cap — Robust Financial Safety Net"
+    "ko": "다각화된 사업 포트폴리오와 동물용 사업 성장",
+    "en": "Diversified Portfolio with a Growing Veterinary Business"
    },
    "body": {
-    "ko": "유진투자증권(2025년 4월)에 따르면 레이언스의 순현금은 2019년 738억원에서 2024년 1,456억원으로 매년 증가하며 시가총액을 상회하는 수준을 지속 유지하고 있다. 연결 기준 부채비율은 2025년에도 10.0%에 불과하고 2025년 영업현금흐름도 92억원 플러스를 기록해 현금 창출 기반이 훼손되지 않았음을 확인했다. 보유 현금 기반의 배당 지속 능력과 추가 투자·M&A 여력은 잠재적 주주가치 제고 요소다.",
-    "en": "Per Eugene Investment Securities (April 2025), Rayence's net cash has grown from KRW 73.8bn in 2019 to KRW 145.6bn in 2024, consistently exceeding its market capitalization. The consolidated debt ratio stood at just 10.0% in 2025, and operating cash flow remained positive at KRW 9.2bn even in the loss year, confirming the underlying cash generation base remains intact. The ability to sustain dividends and maintain capacity for further investment or M&A from the cash position is a latent source of shareholder value."
+    "ko": "레이언스는 의료·덴탈·동물·산업용 4개 부문에 걸쳐 매출이 분산되어 있어 특정 전방 시장 둔화의 충격을 완화할 수 있는 구조다. 동물용(VET) 디텍터는 18개 분기 이상 연속 전년 대비 성장세를 유지하며 안정적 성장축 역할을 하고 있다. 세계 1위 구강 내 엑스레이 센서(IOS) 생산 지위와 CE MDR 인증 확보는 덴탈·의료 부문에서의 글로벌 공급 기반을 뒷받침한다.",
+    "en": "Rayence's revenue is spread across four segments—medical, dental, veterinary, and industrial—providing a structure that can cushion the impact of a slowdown in any single downstream market. The veterinary (VET) detector business has maintained year-over-year growth for more than 18 consecutive quarters, serving as a stable growth pillar. Its position as the world's largest producer of intraoral X-ray sensors (IOS) and its CE MDR certification support a global supply base in the dental and medical segments."
    }
   },
   {
    "title": {
-    "ko": "VET·산업용 AXI — 포트폴리오 다각화의 구조적 성장 축",
-    "en": "VET and Industrial AXI — Structural Growth Pillars Diversifying the Portfolio"
+    "ko": "견고한 재무구조와 현금창출력",
+    "en": "Solid Balance Sheet and Cash Generation"
    },
    "body": {
-    "ko": "동물용 디텍터(VET) 매출은 2019년~2024년 CAGR 15.1%로 18분기 이상 연속 전년 동기 대비 성장을 이어왔다(유진투자증권, 2025년 8월). 2026년 2월 출시한 Flash Series는 국내 산업용 디텍터 중 최고 수준의 해상도를 구현했으며 HBM·AI 칩 검사 수요라는 고성장 수요처를 정조준하고 있어, 의료·치과 중심의 기존 사업에서 벗어난 새로운 성장 축이 될 가능성이 있다. 두 부문 모두 주력 TFT·CMOS 시장 대비 경쟁 강도가 상대적으로 낮아 마진 방어에 유리한 특성을 지닌다.",
-    "en": "VET detector revenue has grown at a CAGR of 15.1% from 2019 to 2024, sustaining 18+ consecutive quarters of year-over-year growth (Eugene Investment Securities, August 2025). The Flash Series launched in February 2026 delivers the highest resolution among domestic industrial detectors and targets the high-growth HBM and AI-chip inspection demand, potentially becoming a new growth axis beyond the traditional medical and dental focus. Both segments face comparatively lower competitive intensity than the core TFT/CMOS markets, providing more favorable margin dynamics."
+    "ko": "2025년 순이익이 적자를 기록했음에도 영업활동현금흐름은 92.1억원의 양(+)의 흐름을 유지했으며, 부채비율은 10%대로 낮은 수준을 이어가고 있다. 2022~2024년에는 매년 166억~248억원대의 견조한 영업현금흐름을 창출해왔다. 이러한 재무 안정성은 반도체 검사장비 등 신사업 투자와 실적 변동성 국면을 버텨낼 수 있는 완충 역할을 할 수 있다.",
+    "en": "Even as net income fell into loss in 2025, operating cash flow remained positive at KRW 9.21 billion, and the debt ratio has stayed at a low level around 10%. From 2022 to 2024, the company generated solid operating cash flow of KRW 16.6 billion to KRW 24.8 billion annually. This financial stability can serve as a buffer to withstand periods of earnings volatility while investing in new businesses such as semiconductor inspection equipment."
    }
   }
  ],
  "bear": [
   {
    "title": {
-    "ko": "주력 TFT·CMOS 시장 경쟁 심화 — 구조적 마진 압박",
-    "en": "Intensifying Competition in Core TFT/CMOS Markets — Structural Margin Pressure"
+    "ko": "분기별 실적 변동성이 크다",
+    "en": "Significant Quarter-to-Quarter Earnings Volatility"
    },
    "body": {
-    "ko": "글로벌 의료·치과용 디텍터 시장에서 고사양 제품의 평준화와 보급형 공급자 부상이 가격 압박을 강화하고 있다. 2025년 상반기에 TFT 및 CMOS 디텍터 매출이 전년 동기 대비 두 자릿수 이상 급감한 것은 단순 경기 둔화를 넘어 구조적 경쟁 심화 가능성을 내포한다. 원가혁신만으로 이 구조적 마진 압박을 완전히 상쇄하기에는 한계가 있을 수 있다.",
-    "en": "The commoditization of high-spec products and the rise of budget suppliers are intensifying pricing pressure in global medical and dental detector markets. The double-digit year-over-year declines in TFT and CMOS detector revenues in the first half of 2025 suggest structural competitive headwinds extending beyond a cyclical downturn. Cost innovation alone may be insufficient to fully offset this structural margin compression."
+    "ko": "2025년 3분기 흑자 이후 4분기에 영업손실 29.2억원, 지배주주 순손실 67.1억원으로 급격히 악화된 사례는 실적 예측 가능성이 낮음을 보여준다. 이후 2026년 1분기에는 다시 큰 폭의 흑자로 전환하는 등 분기 간 진폭이 상당히 크다. 이런 변동성은 전방 산업의 투자 사이클과 개별 고객사 발주 시점에 크게 의존하는 사업 구조에서 비롯된다.",
+    "en": "The sharp deterioration from a Q3 2025 profit to a Q4 2025 operating loss of KRW 2.92 billion and a net loss attributable to owners of KRW 6.71 billion illustrates the low predictability of quarterly earnings. This was followed by a large swing back to profit in Q1 2026, showing considerable amplitude between quarters. This volatility stems from a business structure heavily dependent on the investment cycles of downstream industries and the order timing of individual customers."
    }
   },
   {
    "title": {
-    "ko": "2025년 연간 적자·4분기 대규모 손실 — 분기 변동성 재발 위험",
-    "en": "2025 Full-Year Loss and Large Q4 Loss — Risk of Recurring Quarterly Volatility"
+    "ko": "핵심 사업(덴탈·의료)의 성장 둔화",
+    "en": "Slowing Growth in Core Dental and Medical Businesses"
    },
    "body": {
-    "ko": "2025년 연간 영업손실 40억원·지배주주 순손실 53억원은 수익 창출 능력의 명확한 훼손을 의미한다. 특히 4분기 지배주주 순손실 67억원은 일회성 비용 가능성을 시사하지만, 그 원인이 명확히 해소되지 않는다면 분기 변동성 재발 위험이 남아 있다. 이익 회복까지 예상보다 시간이 걸릴 경우, 주당 300원 배당 지속 가능성에도 불확실성이 생길 수 있다.",
-    "en": "The 2025 annual operating loss of KRW 4.0bn and controlling-interest net loss of KRW 5.3bn represent a clear impairment of earnings power. The Q4 2025 controlling-interest net loss of KRW 6.7bn suggests possible one-time charges, but if the root causes are not fully resolved, the risk of recurrent quarterly earnings volatility remains. A prolonged recovery timeline could also introduce uncertainty around maintaining the KRW 300 DPS."
+    "ko": "2022년 매출 1,471.6억원을 정점으로 2023년, 2024년, 2025년 연속으로 매출이 감소하는 흐름을 보였으며, 이는 산업용 부문의 최근 성장에도 회사 전체 매출이 아직 과거 정점을 회복하지 못했음을 의미한다. 덴탈·의료용 디텍터는 전방 의료기기 시장의 투자 사이클에 민감해 수요 회복 시점을 예단하기 어렵다. 모회사 바텍의 신제품 판매 확대에 대한 의존도가 있다는 점도 독자적 성장 동력 측면에서는 고려할 부분이다.",
+    "en": "After peaking at KRW 147.16 billion in revenue in 2022, sales declined in 2023, 2024, and 2025, meaning overall company revenue has not yet recovered to its prior peak despite recent growth in the industrial segment. Dental and medical detectors remain sensitive to the investment cycle of downstream medical device markets, making the timing of demand recovery difficult to predict. The degree of dependence on expanded sales of new products from parent company Vatech is also a factor worth considering in terms of independent growth drivers."
    }
   },
   {
    "title": {
-    "ko": "전방시장 투자 회복 불확실성 — 외부 수요 의존 구조",
-    "en": "Uncertain Downstream Capex Recovery — Structural Dependency on External Demand"
+    "ko": "규제 대응 비용과 소형주 특성",
+    "en": "Regulatory Compliance Costs and Small-Cap Characteristics"
    },
    "body": {
-    "ko": "병원·치과 등 전방 고객의 장비 투자 사이클에 매출이 크게 의존하는 구조다. 글로벌 고금리 지속, 경기 둔화, 헬스케어 예산 긴축 등이 전방 투자 회복을 지연시킬 경우 2026년 실적 개선 시나리오가 약화될 수 있다. 2026년 1분기의 반등이 구조적 수요 회복에 의한 것인지, 계절성·재고 조정에 의한 일시적 효과인지는 추가 분기 실적으로 검증이 필요하다.",
-    "en": "Revenue is heavily tied to the capex cycle of downstream customers in hospitals and dental clinics. Prolonged high interest rates, a global slowdown, or healthcare budget tightening could delay recovery, weakening the 2026 earnings improvement thesis. It remains to be confirmed through subsequent quarters whether Q1 2026's rebound reflects durable structural demand recovery or a transient seasonal or inventory-normalization effect."
+    "ko": "CE MDR과 같은 강화된 규제 대응에는 임상평가, 품질경영시스템 심사 등 상당한 비용과 시간이 소요되며, 이는 연구개발비 부담으로 이어질 수 있다. 시가총액이 상대적으로 작은 코스닥 종목 특성상 유동성이 제한적일 수 있으며, 주가 변동성도 커질 수 있다. R&D 투자 규모가 확대되어 온 점은 중장기 경쟁력에는 긍정적이나 단기 수익성에는 부담 요인으로 작용할 수 있다.",
+    "en": "Complying with tightened regulations such as CE MDR requires substantial cost and time for clinical evaluation and quality management system reviews, which can add to R&D expense burdens. Given its relatively small market capitalization as a KOSDAQ-listed stock, liquidity may be limited and share price volatility can be elevated. The expansion of R&D investment is positive for medium- to long-term competitiveness but can weigh on near-term profitability."
    }
   }
  ],
  "risks": [
   {
    "cat": {
-    "ko": "환율·통상 리스크",
-    "en": "FX and Trade Policy Risk"
+    "ko": "고객 집중 위험",
+    "en": "Customer Concentration Risk"
    },
    "body": {
-    "ko": "매출의 상당 부분이 수출로 구성되어 있어 원/달러·원/유로 환율 변동에 실적이 민감하다. 미국의 의료기기 수입 관세 정책 변화나 FTA 적용 여부에 따라 북미·중남미 매출에 직접적인 영향이 발생할 수 있다. 중국·대만 경쟁사와의 가격 경쟁에서 환율은 상대적 경쟁력을 좌우하는 중요한 변수로 작용한다.",
-    "en": "A significant portion of revenue comes from exports, making earnings sensitive to KRW/USD and KRW/EUR fluctuations. Changes in US medical device tariff policy or FTA eligibility could directly impact North American and Latin American sales. Exchange rates are also a critical variable in price competition against Chinese and Taiwanese rivals."
+    "ko": "산업용 디텍터 사업은 특정 글로벌 톱티어 검사장비 기업에 대한 공급 이력에 기반해 성장하고 있어, 해당 고객사의 발주 정책이나 자체 공급망 전략 변화가 실적에 직접적인 영향을 줄 수 있다. 신규 고객 다변화가 진행 중이나 아직 초기 단계로 판단된다.",
+    "en": "The industrial detector business has grown based on a supply history with a specific top-tier global inspection equipment maker, meaning that changes in that customer's order policy or supply chain strategy could directly affect results. New customer diversification is underway but appears to be in an early stage."
    }
   },
   {
    "cat": {
-    "ko": "기술 전환·R&D 리스크",
-    "en": "Technology Transition and R&D Risk"
+    "ko": "규제·인증 리스크",
+    "en": "Regulatory and Certification Risk"
    },
    "body": {
-    "ko": "CMOS, SPAD 등 차세대 센서 기술 경쟁이 빠르게 전개되고 있어 R&D 투자 효율성과 기술 전환 속도가 장기 경쟁력을 결정한다. 레이언스는 연세대와 SPAD 기반 차세대 엑스레이 센서 공동연구를 진행해 왔으나, 신기술 상용화가 지연되거나 경쟁사가 유사 기술을 먼저 출시할 경우 기술 우위가 희석될 수 있다. 증가 추세의 무형자산 관련 손상 리스크도 수반된다.",
-    "en": "Competition in next-generation sensor technologies — including CMOS and SPAD — is evolving rapidly, making R&D investment efficiency and the pace of technology transitions critical to long-term competitiveness. While Rayence has been co-developing SPAD-based detectors with Yonsei University, delays in commercialization or a competitor launching comparable technology first could erode the technical edge. Growing intangible assets also carry impairment risk."
+    "ko": "유럽 CE MDR을 포함한 각국 의료기기 규제가 지속적으로 강화되는 추세로, 인증 유지와 신규 취득에 지속적인 비용 투입이 필요하다. 규제 강화가 경쟁사 정리로 이어져 반사이익이 될 수도 있으나, 반대로 인증 갱신 실패나 지연 시 공급 차질 위험도 존재한다.",
+    "en": "Medical device regulations, including the EU's CE MDR, are on a continuous tightening trend across countries, requiring ongoing investment to maintain and obtain new certifications. While tightening regulations could benefit the company through competitor attrition, there is also a risk of supply disruption if certification renewal or acquisition is delayed or fails."
    }
   },
   {
    "cat": {
-    "ko": "지배구조·유동주식 리스크",
-    "en": "Governance and Free-Float Liquidity Risk"
+    "ko": "전방 산업 사이클 리스크",
+    "en": "Downstream Industry Cycle Risk"
    },
    "body": {
-    "ko": "최대주주인 바텍 및 관련 계열사가 전체 지분의 상당 부분을 보유하고 있어 유통 주식 비율이 낮고 주가 유동성이 제한된다. 2025년 정기주총에서 일반주주 주당 300원·최대주주 등 주당 100원의 차등배당을 결의한 것은 소수주주 이익 제고 측면에서 긍정적이나, 대주주 집중 지배구조가 의사결정에 미치는 영향에 대한 지속적 모니터링이 필요하다. 코스닥 소형주 특성상 유동성 부족이 주가 변동폭을 확대할 수 있다.",
-    "en": "Vatech and its related affiliates hold a significant portion of total shares, resulting in a thin public float and limited share price liquidity. The 2025 AGM resolution to pay a differentiated dividend (KRW 300 for general shareholders vs. KRW 100 for major shareholders) is a positive signal for minority shareholder interests, but ongoing monitoring of the controlling-shareholder concentration's influence on corporate decisions remains warranted. As a small-cap KOSDAQ stock, low liquidity can amplify share price volatility."
+    "ko": "반도체 검사장비 발주는 HBM·AI칩 관련 설비투자 사이클에 연동되어 있어, 관련 투자가 둔화될 경우 최근 성장을 이끈 산업용 디텍터 매출에도 영향을 줄 수 있다. 덴탈·의료 부문 역시 전방 의료기기 시장의 경기 민감도가 높아 복합적인 사이클 리스크에 노출되어 있다.",
+    "en": "Orders for semiconductor inspection equipment are tied to the capital expenditure cycle related to HBM and AI chips, so a slowdown in such investment could affect the industrial detector revenue that has driven recent growth. The dental and medical segments are also highly sensitive to the economic cycle of downstream medical device markets, exposing the company to compounded cyclical risk."
    }
   }
  ],
  "checkpoints": [
   {
    "when": {
-    "ko": "2026년 8월 초",
-    "en": "Early August 2026"
-   },
-   "what": {
-    "ko": "2026년 2분기 잠정실적 발표. 1분기 회복 흐름의 연속성 여부 — 매출·영업이익 증가세 지속, 덴탈·의료용 전방시장 회복 신호 확인이 핵심이다.",
-    "en": "Q2 2026 preliminary earnings release. Key check: whether the Q1 recovery has continuity — sustained revenue and operating profit growth, and signals of recovery in dental and medical end-markets."
-   }
-  },
-  {
-   "when": {
-    "ko": "2026년 하반기 (수시 공시)",
-    "en": "H2 2026 (Ad-Hoc Disclosures)"
-   },
-   "what": {
-    "ko": "Flash Series 산업용 AXI 디텍터의 초도 수주·납품 실적 및 파트너십 공시 여부. HBM·AI칩 검사 시장에서의 가시적 성과가 나올 경우 신사업 가치를 재조명하는 계기가 된다.",
-    "en": "Initial order intake and delivery results for the Flash Series industrial AXI detector, and any partnership announcements. Visible traction in the HBM/AI-chip inspection market would be a catalyst to re-examine the new business segment's value."
-   }
-  },
-  {
-   "when": {
     "ko": "2026년 11월 초",
     "en": "Early November 2026"
    },
    "what": {
-    "ko": "2026년 3분기 잠정실적 발표. 계절적 하반기 성수기 효과를 바탕으로 연간 흑자 전환 달성 여부, 원가 구조 개선이 영업이익률에 반영되는지 확인 필요.",
-    "en": "Q3 2026 preliminary results. Confirm whether the seasonally stronger H2 supports a full-year return to profitability and whether ongoing cost improvements are translating into higher operating margins."
+    "ko": "2026년 3분기 잠정실적 공시 예정 시점으로, 산업용 디텍터 성장세와 2개 분기 연속 흑자 기조의 지속 여부를 확인할 필요가 있다.",
+    "en": "Preliminary Q3 2026 results are expected to be disclosed around this time, warranting a check on whether industrial detector growth and the two-quarter streak of operating profit continue."
    }
   },
   {
    "when": {
-    "ko": "2027년 3월 (정기주총)",
-    "en": "March 2027 (AGM)"
+    "ko": "2026년 4분기 중",
+    "en": "During Q4 2026"
    },
    "what": {
-    "ko": "2026년 연간 실적 확정 및 배당 결정. 연간 흑자 전환 여부와 DPS 300원 수준 배당 지속 가능성, 차등배당 정책 유지 여부가 주주 친화성 평가의 기준이 된다.",
-    "en": "2026 full-year results finalization and dividend decision. Confirm return to annual profitability, sustainability of the KRW 300 DPS, and continuation of the differentiated dividend policy as a benchmark for shareholder friendliness."
+    "ko": "CE MDR 인증 취득 이후 유럽 시장 대상 매출 확대 효과가 실제 수주·매출로 이어지는지 후속 공시나 IR 자료를 통해 확인이 필요하다.",
+    "en": "Following-up disclosures or IR materials should be checked to see whether the expanded European market opportunity from CE MDR certification translates into actual orders and revenue."
    }
   },
   {
    "when": {
-    "ko": "2026년 연중 (분기 실적 내)",
-    "en": "Throughout 2026 (Within Quarterly Reports)"
+    "ko": "2026년 하반기 지속 확인",
+    "en": "Ongoing through H2 2026"
    },
    "what": {
-    "ko": "VET 부문 매출 성장세 지속 여부 및 수원사업장 가동 효과 발현 여부 모니터링. 분기 보고서 내 VET 관련 코멘트와 R&D 비용 추이 변화가 중장기 성장 방향성을 가늠하는 지표다.",
-    "en": "Track continuation of VET segment growth and the operational impact of the new Suwon facility. VET-related commentary and R&D spending trends within quarterly reports serve as indicators of the medium-to-long-term growth trajectory."
+    "ko": "HBM·AI칩 검사장비 시장의 발주 동향과 '플래시 시리즈'의 신규 고객사 확보 여부는 산업용 사업 성장의 지속성을 판단하는 핵심 지표다.",
+    "en": "Order trends in the HBM/AI chip inspection equipment market and whether the 'Flash Series' secures new customers are key indicators for assessing the sustainability of growth in the industrial business."
+   }
+  },
+  {
+   "when": {
+    "ko": "차기 정기 IR 및 실적설명회 시점",
+    "en": "At the next regular IR session or earnings briefing"
+   },
+   "what": {
+    "ko": "모회사 바텍의 신제품(그린엑스21 등) 판매 확대가 레이언스 덴탈·의료 부문 매출에 미치는 영향과 회사의 구체적 하반기 가이던스를 확인할 필요가 있다.",
+    "en": "It is worth confirming the impact of expanded sales of parent company Vatech's new products (such as GreenX 21) on Rayence's dental and medical segment revenue, along with any specific second-half guidance from the company."
    }
   }
  ],
  "verdict": {
   "body": {
-   "ko": "레이언스는 디지털 엑스레이 디텍터 전 분야(의료·치과·동물·산업용) 풀 라인업을 갖춘 국내 유일의 기업으로, 원천 기술 내재화와 글로벌 틈새 시장 선점이 차별화된 경쟁 기반이다. 2022년 이후 3년간 전방시장 침체와 경쟁 심화로 실적이 급격히 악화됐으나, 2026년 1분기의 뚜렷한 매출·영업이익 반등은 실적 회복 사이클 진입 가능성을 시사하고 있다. VET 부문의 구조적 성장 지속과 HBM·AI칩 검사를 겨냥한 Flash Series 출시, 수원사업장 신설 등은 중장기 포트폴리오 다각화의 방향성을 보여주는 사실 기반 근거다. 재무적으로는 순현금이 시가총액을 웃도는 초저부채 구조가 이익 회복 과정의 안전망으로 기능하며, 연간 적자에도 불구한 일반주주 DPS 300원 유지는 주주환원 의지를 확인시켜 준다. 반면 주력 TFT·CMOS 시장의 구조적 경쟁 심화, 전방 수요 회복 속도의 불확실성, 4분기형 대규모 손실 재발 가능성은 여전히 실재하는 약세 요인이다. 향후 수 분기의 실적 흐름과 Flash Series 수주 성과가 실적 정상화의 진위를 판단하는 핵심 증거가 될 것이다.",
-   "en": "Rayence is the only Korean company with a full product lineup across all four digital X-ray detector application categories — medical, dental, veterinary, and industrial — underpinned by in-house core technologies and global niche market leadership. After three years of sharp earnings deterioration from 2022 highs due to downstream demand weakness and competitive pressure, the Q1 2026 rebound in revenue and operating profit signals a potential entry into an earnings recovery cycle. The sustained structural growth of the VET segment, the launch of the Flash Series targeting HBM and AI-chip inspection, and the opening of a new Suwon facility provide fact-based evidence for long-term portfolio diversification. Financially, the net-cash-exceeds-market-cap structure with near-zero leverage serves as a floor during recovery, and maintaining DPS of KRW 300 through a loss year confirms commitment to shareholder returns. Conversely, structural competitive pressure in the core TFT/CMOS markets, uncertainty over the pace of downstream demand recovery, and the risk of recurring large quarterly losses remain material bear factors. The trajectory of earnings over the next several quarters and the order performance of the Flash Series will be the critical evidence for determining whether genuine earnings normalization is underway."
+   "ko": "레이언스는 2025년 연간 적자와 4분기의 큰 손실을 거친 뒤 2026년 상반기 두 개 분기 연속 영업흑자로 전환하며 회복 국면에 들어선 모습을 보이고 있다. 회복의 핵심 동력은 반도체 검사장비용 디텍터 판매 확대이며, 이는 HBM·AI칩 검사 수요 증가라는 산업 흐름과 맞닿아 있다. 동시에 덴탈·의료 등 핵심 사업은 2022년 정점 이후 매출이 연속 감소해온 만큼, 전체 매출이 과거 수준을 회복했다고 보기는 아직 이르다. 재무구조는 낮은 부채비율과 순이익 적자에도 유지된 양(+)의 영업현금흐름 등 안정적인 기반을 보여주고 있어 사업 투자와 실적 변동성을 버텨낼 여력이 있는 것으로 판단된다. 최근 4개 분기 기준 이익 규모는 4분기의 손실 영향이 남아 아직 완전한 회복 단계로 보기 어려우며, 향후 분기별 실적과 신규 고객·인증 확대 효과의 지속성이 관전 포인트가 될 것이다. 투자 판단에 있어서는 산업용 사업의 구조적 성장 가능성과 핵심 사업의 사이클 민감성을 함께 고려할 필요가 있다.",
+   "en": "Rayence appears to have entered a recovery phase, turning to two consecutive quarters of operating profit in the first half of 2026 after posting a full-year loss in 2025 and a particularly large loss in the fourth quarter. The core driver of this recovery is expanding sales of detectors for semiconductor inspection equipment, which aligns with the broader industry trend of rising HBM and AI chip inspection demand. At the same time, core businesses such as dental and medical have seen revenue decline for consecutive years since peaking in 2022, so it is still premature to conclude that total company revenue has recovered to past levels. The financial structure shows a stable foundation, with a low debt ratio and positive operating cash flow maintained even during the net-loss year, suggesting the company has room to withstand business investment needs and earnings volatility. The trailing four-quarter earnings base still reflects the drag from the fourth-quarter loss and cannot yet be characterized as a full recovery, making the sustainability of future quarterly results and the effects of new customer and certification expansion key points to watch. In forming an investment judgment, both the structural growth potential of the industrial business and the cyclical sensitivity of the core businesses warrant consideration together."
   }
  },
  "sources": [
-  "https://valueline.co.kr/finance/summary/228850",
-  "https://www.digitaltoday.co.kr/news/articleView.html?idxno=644767",
-  "https://m.irgo.co.kr/IR-COMP/228850/",
-  "https://comp.fnguide.com/SVO2/ASP/SVD_Main.asp?gicode=A228850&MenuYn=Y",
-  "https://www.thinkpool.com/item/228850",
-  "https://file.alphasquare.co.kr/media/pdfs/company-report/_250403%20%EB%A0%88%EC%9D%B4%EC%96%B8%EC%8A%A4_%EC%98%A8%EB%9D%BC%EC%9D%B8_%EC%A0%95%ED%99%8D%EC%8B%9D_1244_Online%20report%20_%206_10p_%EB%A0%88%EC%9D%B4%EC%96%B8%EC%8A%A4.pdf",
-  "https://www.investing.com/equities/rayence-co-ltd-financial-summary",
-  "https://www.eugenefn.com/common/files/amail/20250514_228850_jongsun.park_2370.pdf",
-  "https://www.investing.com/equities/rayence-co-ltd",
-  "https://www.google.com/finance/quote/228850:KOSDAQ?hl=en",
-  "https://www.mt.co.kr/stock/2026/02/27/2026022715275975179",
-  "https://www.newsprime.co.kr/news/article/?no=351114",
-  "https://www.saramin.co.kr/zf_user/company-info/view/csn/bHBHMXI3c201NEZpR3dsdWhkbTNmQT09/company_nm/(%EC%A3%BC)%EB%A0%88%EC%9D%B4%EC%96%B8%EC%8A%A4",
-  "https://www.fortunebusinessinsights.com/medical-x-ray-market-104862",
-  "https://www.etnews.com/20180816000441",
-  "https://mdtoday.co.kr/news/view/179532375720417",
+  "https://www.mt.co.kr/stock/2026/08/11/2026081116281867209",
+  "https://m.irgo.co.kr/IR-COMP/228850/%EB%A0%88%EC%9D%B4%EC%96%B8%EC%8A%A4-IR-PAGE",
   "https://www.rayence.com/news",
-  "https://www.coherentmarketinsights.com/market-insight/digital-x-ray-devices-market-5619"
+  "https://www.saramin.co.kr/zf_user/company-info/view/csn/bHBHMXI3c201NEZpR3dsdWhkbTNmQT09/company_nm/(%EC%A3%BC)%EB%A0%88%EC%9D%B4%EC%96%B8%EC%8A%A4",
+  "https://www.vatechnetworks.com/en/post/rayence-announces-q2-2026-results-driven-by-growth-in-semiconductor-inspection-x-ray-detectors",
+  "http://www.dailyinvest.kr/news/articleView.html?idxno=65423",
+  "https://www.rayence.com/",
+  "http://www.dailyinvest.kr/news/articleView.html?idxno=61663",
+  "https://jasoseol.com/companies/8479/insights",
+  "https://file.alphasquare.co.kr/media/pdfs/company-report/_250403%20%EB%A0%88%EC%9D%B4%EC%96%B8%EC%8A%A4_%EC%98%A8%EB%9D%BC%EC%9D%B8_%EC%A0%95%ED%99%8D%EC%8B%9D_1244_Online%20report%20_%206_10p_%EB%A0%88%EC%9D%B4%EC%96%B8%EC%8A%A4.pdf",
+  "https://www.thinkpool.com/item/228850",
+  "https://www.eugenefn.com/common/files/amail/20250514_228850_jongsun.park_2370.pdf",
+  "https://comp.fnguide.com/SVO2/ASP/SVD_Main.asp?gicode=A228850&MenuYn=Y",
+  "https://m.thinkpool.com/breakingNews/cont/201880",
+  "https://paxnet.co.kr/tbbs/list?id=228850&tbbsType=L",
+  "https://m.newspim.com/news/view/20210812000798",
+  "http://www.paxnet.co.kr/WWW/data/researchCenter/attach/20250812084224579.pdf",
+  "https://purplenty.com/228850-21y4q-stock-analysis-target-stock/"
  ],
  "v": 2,
- "model": "claude-sonnet-4-6",
+ "model": "claude-sonnet-5",
  "ticker": "228850",
  "name": "레이언스",
  "name_en": "RAYENCE CO.,LTD.",
@@ -233,9 +223,9 @@
   "전자·부품"
  ],
  "market": "코스닥",
- "reportDate": "2026-06-19",
- "reportTs": "2026-06-19 01:30",
- "dataDate": "20260821",
+ "reportDate": "2026-09-05",
+ "reportTs": "2026-09-05 07:07",
+ "dataDate": "20260904",
  "quant": {
   "asOf": "2026-08-23",
   "fs_basis": "연결(CFS) · DART 공시 확정치 · 지배주주 기준 순이익",
@@ -338,14 +328,14 @@
    }
   ],
   "valuation": {
-   "price": 7700,
-   "mcap": 0.1278,
+   "price": 7080,
+   "mcap": 0.1175,
    "shares": 16591014,
    "total_shares": 16591014,
    "wavg_shares": 15725588,
-   "per": 28.947,
+   "per": 26.617,
    "eps": 266,
-   "pbr": 0.5011,
+   "pbr": 0.4607,
    "bps": 15367,
    "roe_ttm": 1.7,
    "ttm_window": "2025Q3~2026Q2",
@@ -356,7 +346,7 @@
    "bps_krx": 15058.0,
    "basis": "PER·EPS·PBR·BPS 모두 자체 산출(네이버·토스와 동일 방식) · 배당은 DART 공시 주당현금배당금(보완:KRX) ÷ 현재가",
    "dps": 300.0,
-   "div": 3.9
+   "div": 4.24
   }
  }
 }

@@ -1,230 +1,220 @@
 {
  "title": {
-  "ko": "새만금 램프업이 좌우하는 흑자 전환 속도",
-  "en": "Saemangeum Ramp-Up Speed: The Swing Factor for Profit Recovery"
+  "ko": "전구체 증설 완료, 수익성은 아직 불안정",
+  "en": "Precursor Capacity Expanded, Profitability Still Unsteady"
  },
  "lead": {
-  "ko": "연산 3.5만 톤으로 확충된 전구체 생산 체제 아래, 에코앤드림의 수익성 회복은 새만금캠퍼스 가동률 정상화 속도와 고객사 수요 회복에 달려 있다.",
-  "en": "With precursor production capacity expanded to 35,000 tonnes per year, Eco&Dream's return to profitability hinges on how quickly the Saemangeum campus reaches target utilization and downstream customer demand recovers."
+  "ko": "에코앤드림은 새만금 캠퍼스 가동으로 전구체 생산능력을 연 3만5천톤으로 확대했지만, 2026년 들어 매출과 이익이 큰 폭으로 흔들리고 있다.",
+  "en": "Eco&Dream has expanded its precursor capacity to 35,000 tons per year with the Saemangeum campus coming online, but revenue and earnings have swung sharply since early 2026."
  },
  "keypoints": [
   {
-   "ko": "2025년 1월 준공·8월 본격 양산된 새만금캠퍼스(연산 3만 톤)로 총 생산능력 35,000톤 체제 완성—기존 청주공장 대비 7배 규모 확장",
-   "en": "Saemangeum Campus (30,000 t/yr) commissioned in January 2025 and commenced mass production in August 2025, completing a 35,000-tonne total capacity system—a 7× expansion over the prior Cheongju plant alone."
+   "ko": "2025년 연간 매출은 1,419억원으로 전년 대비 35.3% 늘었지만 영업이익은 흑자에서 적자로 돌아섰다.",
+   "en": "Full-year 2025 revenue rose 35.3% year-on-year to KRW 141.9 billion, but operating profit swung from a gain to a loss."
   },
   {
-   "ko": "2025년 연간 매출 1,420억원(+35% YoY)으로 외형 성장 지속, 그러나 신공장 고정비 부담에 영업손실 6.1억원(OPM -0.4%) 기록",
-   "en": "FY2025 revenue reached ₩141.9bn (+35% YoY) sustaining top-line momentum, yet new-factory fixed-cost pressure produced an operating loss of ₩0.6bn (OPM -0.4%)."
+   "ko": "2026년 1분기·2분기 매출이 전년 동기 대비 크게 줄고 순손실 규모가 확대되며 실적 변동성이 커졌다.",
+   "en": "Revenue fell sharply year-on-year in both Q1 and Q2 2026, and the net loss widened, increasing earnings volatility."
   },
   {
-   "ko": "2026년 1분기 매출 162억원으로 전 분기(373억원) 대비 급감—새만금 가동률 확보 속도가 연간 실적의 최대 변수로 부상",
-   "en": "2026Q1 revenue fell sharply to ₩16.2bn from ₩37.3bn in the prior quarter, elevating Saemangeum utilization pace as the single most critical variable for the full year."
+   "ko": "새만금캠퍼스(연 3만톤) 가동으로 청주공장(연 5천톤)과 합산 총 생산능력이 연 3만5천톤으로 늘었으며, 2026년 초 완전 가동을 목표로 하고 있다.",
+   "en": "With the Saemangeum campus (30,000 tons/year) online, combined capacity with the Cheongju plant (5,000 tons/year) reached 35,000 tons/year, with full utilization targeted for early 2026."
   },
   {
-   "ko": "유미코아 5년 장기 공급계약(2024년 체결) 및 미국 OBBBA의 PFE 조항 신설로 비중국 전구체 수요 확대 기대—글로벌 공급망 탈중국화의 잠재 수혜자",
-   "en": "A 5-year Umicore supply contract (signed 2024) and the U.S. OBBBA's new 'Prohibited Foreign Entity' (PFE) provision create structural demand tailwinds for non-Chinese precursor suppliers, positioning Eco&Dream as a potential beneficiary of supply-chain de-Sinicization."
+   "ko": "유미코아와의 5년 장기 공급계약에 이어 신규 양극재 고객사와의 추가 공급 논의가 진행 중이다.",
+   "en": "Following a five-year supply agreement with Umicore, discussions on additional supply with a new cathode material customer are underway."
   },
   {
-   "ko": "2026년 3월 오창 이노베이션센터 LFP 전구체 샘플 라인 가동 개시 및 전고체 배터리용 황화물계 전해질 소재 사업 진출 선언—중장기 제품 포트폴리오 다변화 추진",
-   "en": "An LFP precursor sample line was activated at the Ochang Innovation Center in March 2026, and the company announced entry into sulfide solid electrolyte materials for next-generation batteries, signaling medium-to-long-term product diversification."
+   "ko": "LFP 전구체 국산화와 전고체 배터리용 황화물계 전해질 소재 등 차세대 포트폴리오 확장을 추진하고 있다.",
+   "en": "The company is pursuing next-generation portfolio expansion, including domestic LFP precursor development and sulfide-based electrolyte materials for solid-state batteries."
   }
  ],
  "business": {
-  "ko": "에코앤드림은 2004년 설립 이후 자동차 배출가스 저감용 촉매 사업을 기반으로 성장했으며, 2008년 전구체 연구개발에 착수해 2014년부터 NCM계열 양극활물질 전구체를 양산하며 이차전지 소재 사업으로 피벗했다. 현재 이차전지소재(전구체), 촉매소재, 촉매시스템 세 부문을 운영하며, DART 사업보고서 기준 2025년 매출 비중은 이차전지소재 66%, 촉매소재 22%, 기타 12%로 전구체 부문이 핵심 축이다. 주력 제품은 소입경 하이니켈(니켈 90% 이상) NCM 전구체로, 배터리 양극재 원가의 60~70%를 차지하는 핵심 원료다. 주요 고객사는 유럽 최대 양극재 업체 유미코아(Umicore)이며, 2024년 5년 장기 공급계약을 체결해 수주 안정성을 높였다. '에코앤드림-유미코아-SK온-현대차'로 이어지는 글로벌 밸류체인에 진입해 있으며, 복수의 해외 다국적 기업과의 단기 PO 계약도 지속 체결되고 있다. 생산 기지는 충북 청주공장(연산 5,000톤)과 2025년 1월 준공해 8월 본격 양산을 개시한 전북 새만금캠퍼스(연산 30,000톤)로 이루어지며, 합산 연산 35,000톤의 생산능력을 갖췄다. 글로벌 전구체 시장에서 중국 기업이 약 90%의 점유율을 차지하는 과점 구조 속에서, 에코앤드림은 해외 자본 없이 자체 기술로 소입경 하이니켈 전구체 양산에 성공한 희소한 비중국 공급자로 자리매김해 있다. 2026년 3월에는 오창 이노베이션센터에서 LFP 전구체 샘플 라인을 가동하고, 전고체 배터리용 황화물계 전해질 소재 사업 진출도 중장기 성장 축으로 선언했다.",
-  "en": "Founded in 2004 as an auto emission-reduction catalyst specialist, Eco&Dream pivoted into battery materials after initiating precursor R&D in 2008 and launching NCM-type cathode precursor mass production in 2014. The company now operates three segments—battery materials (precursors), catalyst materials, and catalyst systems—with DART-disclosed 2025 revenue split of 66% battery materials, 22% catalyst materials, and 12% other, placing the precursor segment firmly at the center. The core product is a small-particle high-nickel (Ni ≥90%) NCM precursor, which accounts for 60–70% of cathode active material costs. The primary customer is Umicore, Europe's largest cathode material producer, with whom a 5-year long-term supply contract was signed in 2024 to anchor order visibility. The company is embedded in the Eco&Dream-Umicore-SK On-Hyundai Motor value chain, supplemented by ongoing short-term purchase orders with multiple multinational firms. Production capacity comprises the Cheongju Plant (5,000 tonnes/year, fully operational) and the Saemangeum Campus in North Jeolla Province (30,000 tonnes/year, commissioned January 2025, mass production launched August 2025), for a combined 35,000 tonnes per year. In a global precursor market where Chinese firms hold approximately 90% of supply, Eco&Dream stands as a rare non-Chinese producer that independently developed small-particle high-nickel precursor technology without foreign capital. In March 2026, the company activated an LFP precursor sample line at its Ochang Innovation Center and announced entry into sulfide-based solid electrolyte materials as a longer-term growth pillar."
+  "ko": "에코앤드림은 2004년 설립된 환경소재 기업으로, 배출가스 저감 촉매 기술을 바탕으로 이차전지소재(양극활물질 전구체), 촉매소재, 촉매시스템 세 개 사업부문을 영위한다. 사업보고서에 따르면 당사는 환경소재분야의 원천기술을 활용하여 이차전지소재(양극활물질 전구체), 촉매소재, 촉매시스템 사업을 영위하고 있으며, 2014년 NCM계열의 양극활물질 전구체 양산을 시작하며 이차전지 소재 사업에 진출했다. 이차전지소재 부문은 니켈·코발트·망간을 합성한 NCM 전구체를 생산해 전기차용 배터리를 비롯한 다양한 이차전지 분야에 공급하며, 촉매소재 부문은 자동차·선박·가전 등의 배출가스 규제 대응 제품을 제조한다. 생산기지는 청주공장(연 5천톤)과 새만금캠퍼스(연 3만톤)로, 이차전지소재 부문 매출 비중은 2024년 3분기 누계 기준 이미 50%를 넘어선 것으로 파악된다. 핵심 고객은 벨기에 유미코아로, 2024년 1월 5년간 장기 공급계약을 체결했으며 이 물량은 SK온을 거쳐 현대차의 신형 전기차 플랫폼 배터리에 활용되는 것으로 알려져 있다. 사업보고서는 전 세계적으로 전구체 제조업체가 약 20여개 존재하며 상위권은 대부분 중국 기업이 차지하고 있다고 밝히면서, 국내에서 온전히 전구체 사업을 영위하는 업체는 소수이고 당사는 해외 자본 유입 없이 국내 자본과 자체 기술로 소입경 하이니켈 전구체 양산기술을 확보해 시장에 진입했다고 설명한다. 최근에는 국내 전구체 기업 최초로 LFP(리튬인산철) 전구체 개발에 나서 오창 이노베이션센터에 생산 설비를 구축했고, 전고체 배터리용 황화물계 전해질 소재 사업을 새로운 성장 축으로 제시하고 있다. 2026년 3월에는 새만금캠퍼스 가동을 알리는 하이니켈 NCM 전구체 162억원 규모 공급주문을 공시했다.",
+  "en": "Founded in 2004, Eco&Dream is an environmental materials company that operates three business segments—secondary battery materials (cathode active material precursors), catalyst materials, and catalyst systems—built on its emission-reduction catalyst technology. According to its business report, the company leverages proprietary environmental materials technology across these three segments, and it entered the battery materials business in 2014 when it began mass-producing NCM-series cathode precursors. The battery materials segment produces NCM precursors synthesized from nickel, cobalt, and manganese for electric-vehicle and other battery applications, while the catalyst materials segment manufactures products addressing emission regulations for automobiles, ships, and appliances. Production sites consist of the Cheongju plant (5,000 tons/year) and the Saemangeum campus (30,000 tons/year), and the battery materials segment's revenue share had already exceeded 50% on a cumulative basis through the third quarter of 2024. The core customer is Belgium's Umicore, with which the company signed a five-year long-term supply agreement in January 2024; this volume reportedly flows through SK On into batteries for Hyundai's newer EV platform. The business report notes that roughly 20 precursor manufacturers operate globally, with the top tier dominated mostly by Chinese firms, and states that few domestic companies fully operate a precursor business, while Eco&Dream entered the market using only domestic capital and its own technology to achieve mass production of small-particle high-nickel precursors without foreign capital inflow. More recently, the company became the first domestic precursor firm to pursue LFP (lithium iron phosphate) precursor development, building production facilities at its Ochang Innovation Center, and has positioned a sulfide-based electrolyte material business for solid-state batteries as a new growth pillar. In March 2026, the company disclosed a KRW 16.2 billion high-nickel NCM precursor supply order marking the start of Saemangeum campus operations."
  },
  "earnings": {
-  "ko": "연간 실적은 전구체 사업 성장과 신공장 고정비 부담이 교차하는 흐름을 보여왔다. 2022년 매출 605억원, 영업이익 22.5억원(OPM 3.7%)으로 흑자를 달성했으나, 2023년에는 전기차 업황 냉각 및 투자 선행 비용으로 매출 515억원, 영업손실 29.7억원(OPM -5.8%), 지배주주 귀속 순손실 101.5억원을 기록했다. 2024년에는 청주공장 전구체 램프업 성공과 유미코아향 매출 확대로 매출 1,049억원으로 배 이상 성장하고 영업이익도 4.9억원으로 흑자 전환했다. 2025년에는 새만금캠퍼스 준공과 양산 준비 과정에서 고정비가 급증해 매출 1,420억원(+35%)에도 불구하고 영업손실 6.1억원(OPM -0.4%)을 기록했다. 분기별로는 2025년 1분기(영업이익 3.9억원)와 3분기(3.2억원)에 소폭 흑자를 달성했으나, 2분기(-2.8억원)와 4분기(-10.4억원)에 적자가 반복됐다. 2025년 4분기에는 이연법인세자산 평가 감소에 따른 비현금성 법인세비용이 일시 인식되면서 지배주주 귀속 분기 순손실이 89.3억원에 달했고, 연간 지배주주 귀속 순손실도 86억원으로 확대됐다. 이는 현금 유출 없는 회계상 손실이므로 영업 실질과 분리해 해석해야 한다. 2026년 1분기에는 매출이 162억원으로 전 분기 대비 크게 감소하고 영업손실 7.6억원을 기록했으며, 신공장 초기 출하 정상화 지연과 주요 고객사 수요 조정이 복합적으로 작용한 결과로 추정된다. 영업현금흐름은 2025년 -111억원, 2024년 -219억원으로 신공장 투자 선행에 따른 현금 부담이 2년 연속 지속되고 있으며, 부채비율도 2024년 83.1%에서 2025년 117.5%로 상승했다.",
-  "en": "Annual results have alternated between top-line growth and new-factory overhead pressure. In 2022, revenue of ₩60.5bn generated operating profit of ₩2.25bn (OPM 3.7%). In 2023, EV sector cooling and investment lead costs pushed revenue down to ₩51.5bn with an operating loss of ₩2.97bn (OPM -5.8%) and a net loss attributable to controlling interests of ₩10.15bn. In 2024, successful ramp-up of the Cheongju precursor plant and growing Umicore shipments more than doubled revenue to ₩104.9bn, turning operating income positive at ₩0.49bn. In 2025, commissioning and pre-launch costs at Saemangeum sharply raised fixed costs, yielding revenue of ₩141.9bn (+35%) but an operating loss of ₩0.61bn (OPM -0.4%). On a quarterly basis, 2025Q1 (₩0.39bn) and Q3 (₩0.32bn) managed small operating profits, while Q2 (−₩0.28bn) and Q4 (−₩1.04bn) logged losses. In Q4 2025, recognition of non-cash deferred tax asset write-downs inflated the quarterly net loss attributable to controlling shareholders to ₩8.93bn, lifting full-year net loss to ₩8.6bn—an accounting charge not accompanied by cash outflow. In 2026Q1, revenue fell sharply to ₩16.2bn and the operating loss widened to ₩0.76bn, likely reflecting a combination of delayed output normalization at Saemangeum and customer demand adjustments. Operating cash flow remained negative at −₩11.1bn (2025) and −₩21.9bn (2024), with the debt-to-equity ratio rising from 83.1% (2024) to 117.5% (2025) as investment outlays preceded revenue."
+  "ko": "에코앤드림의 연간 실적은 뚜렷한 변동성을 보여왔다. 2022년 매출 605억원, 영업이익 22.5억원(영업이익률 3.7%)으로 소폭 흑자를 냈으나 2023년에는 매출이 515억원으로 줄고 영업손실 29.7억원(-5.8%), 순손실 101.5억원을 기록했다. 2024년에는 매출이 1,049억원으로 전년 대비 두 배 이상 늘고 영업이익 4.9억원(0.5%)으로 흑자 전환했으며 순이익도 135.2억원으로 크게 개선됐다. 그러나 2025년 매출은 1,420억원으로 35.3% 더 늘었음에도 영업손실 6.1억원(-0.4%), 순손실 86.0억원으로 다시 적자로 돌아섰다. 분기별로 보면 2025년 3분기에는 매출 350억원, 영업이익 3.2억원, 순이익 3.2억원으로 짧게 흑자를 기록했으나, 4분기에는 매출 373억원에도 영업손실 10.4억원, 순손실 89.3억원으로 손실 규모가 크게 확대됐다. 2026년에는 이 흐름이 더 나빠져 1분기 매출이 162억원으로 급감(영업손실 7.6억원, 순손실 1.2억원)했고, 2분기에는 매출 202억원에 영업손실 52.8억원, 순손실 53.5억원으로 손실이 한층 커졌다. 와이즈리포트 기업 모니터에 따르면 2026년 1분기 연결기준 매출액은 전년동기 대비 46.1% 감소했으며 영업이익과 순이익 모두 적자로 전환했는데, 이는 전기차 시장 성장 둔화와 고객사 재고 조정에 따른 전구체 출하량 감소가 주된 요인으로 지목됐다. 2025년 실적에 대해서는 언론 보도를 통해 판관비 증가와 투자세액공제 효과, 이연법인세자산 평가 감소에 따른 비현금성 법인세비용 인식 등 일회성 요인이 손익에 영향을 미쳤다는 설명이 나온 바 있다.",
+  "en": "Eco&Dream's annual results have shown pronounced volatility. In 2022, revenue was KRW 60.5 billion with a modest operating profit of KRW 2.25 billion (3.7% margin), but in 2023 revenue fell to KRW 51.5 billion with an operating loss of KRW 2.97 billion (-5.8%) and a net loss of KRW 10.15 billion. In 2024, revenue more than doubled year-on-year to KRW 104.9 billion, operating profit turned positive at KRW 0.49 billion (0.5% margin), and net income improved sharply to KRW 13.5 billion. However, in 2025, even as revenue grew a further 35.3% to KRW 142.0 billion, the company swung back to an operating loss of KRW 0.61 billion (-0.4%) and a net loss of KRW 8.6 billion. On a quarterly basis, Q3 2025 briefly turned profitable with revenue of KRW 35.0 billion, operating income of KRW 0.32 billion, and net income of KRW 0.32 billion, but Q4 2025 saw losses widen sharply to an operating loss of KRW 1.04 billion and a net loss of KRW 8.93 billion despite revenue of KRW 37.3 billion. This trend worsened further in 2026: Q1 revenue plunged to KRW 16.2 billion (operating loss of KRW 0.76 billion, net loss of KRW 0.12 billion), and Q2 losses deepened further with revenue of KRW 20.2 billion, an operating loss of KRW 5.28 billion, and a net loss of KRW 5.35 billion. According to corporate monitor data from WiseReport, consolidated Q1 2026 revenue fell 46.1% year-on-year with both operating and net income turning negative, attributed mainly to slowing EV market growth and reduced precursor shipment volumes tied to customer inventory adjustments. Media reports on 2025 results cited one-off factors affecting earnings, including higher selling and administrative expenses, investment tax credit effects, and non-cash tax expense recognition from a reduction in deferred tax asset valuation."
  },
  "industry": {
-  "ko": "2026년 1분기 글로벌 전기차용 배터리 사용량은 244.6GWh로 전년 동기 대비 9.1% 성장했으나, 국내 배터리 3사의 합산 점유율은 15.6%로 전년 동기 대비 2.1%p 하락하며 한국 배터리 소재 생태계에 대한 수요 압박이 지속되고 있다. 특히 미국 전기차 판매가 전년 대비 28.4% 감소한 점이 국내 배터리 기업에 직접적 타격을 줬으며, CATL을 중심으로 한 중국 업체들의 점유율 확대는 이어지고 있다. 글로벌 전구체 시장에서 중국 기업이 약 90%를 점유하는 과점 구조 속에서도, 미국 OBBBA의 PFE 조항 신설로 중국산 전구체 사용이 제한되면서 비중국 공급자에 대한 관심이 높아지고 있다. 에코앤드림과 같은 비중국 전구체 기업은 공급망 탈중국화의 잠재적 수혜자로 꼽히지만, 실질적 수요 전환은 고객사의 배터리 수주 회복과 연동된다는 점에서 기대와 현실 사이의 간극이 존재한다. ESS(에너지저장장치) 시장은 전기차 수요 둔화 속에서도 빠른 성장세를 보이며 배터리 소재 수요의 새로운 완충재 역할을 하고 있다. 전고체 배터리 등 차세대 배터리 기술로의 전환은 기존 NCM 전구체 수요 구조를 장기적으로 변화시킬 구조적 변수다.",
-  "en": "Global EV battery usage in 2026Q1 reached 244.6GWh, growing 9.1% year-on-year, yet the combined market share of Korea's three battery makers fell 2.1 percentage points to 15.6%, sustaining demand pressure across the domestic battery materials ecosystem. A 28.4% year-on-year decline in U.S. EV sales delivered a direct blow to Korean battery producers, while CATL-led Chinese firms continued to expand share. Although Chinese firms hold approximately 90% of the global precursor market, the U.S. OBBBA's newly enacted PFE provision restricting Chinese precursor usage has raised interest in non-Chinese suppliers. Companies like Eco&Dream are viewed as potential structural beneficiaries, though actual demand diversion remains coupled to a recovery in battery customers' order books, leaving a gap between expectation and near-term reality. The ESS market is growing rapidly even amid EV softness, providing a new demand buffer for battery materials. The long-term transition toward next-generation battery chemistries, including solid-state, represents a structural variable that may reshape the demand profile for conventional NCM precursors."
+  "ko": "글로벌 이차전지 전구체 시장은 중국 기업이 생산능력 상위권을 장악하고 있는 구조로, 사업보고서에서도 전 세계 전구체 제조업체 약 20여개 중 상위권은 대부분 중국 기업이라고 설명한다. 미국은 IRA 세액공제 혜택을 제한하는 해외우려집단(FEOC) 세부 규정을 발표했고 여기에는 중국·러시아·북한·이란이 포함돼, 글로벌 배터리·양극재 기업이 이들 국가와 거래하거나 합작사를 세울 경우 보조금 대상에서 제외되는 구조가 만들어졌다. 이 때문에 중국과의 지분 연계가 없는 국내 순수 기술 기반 전구체 기업에 대한 관심이 상대적으로 부각되는 환경이 조성되고 있다는 평가가 나온다. 다만 2026년 들어서는 전기차 수요 성장 둔화와 고객사들의 재고 조정이 이어지며 전구체 출하량이 줄어드는 등 업황 자체는 아직 완전한 회복 국면에 들어서지 못한 것으로 보인다. 언론 보도에 따르면 2026년 5월 무렵에는 고유가 지속에 따른 미국·유럽 전기차 수요 회복 조짐과 함께 이차전지 소재기업들의 공급계약 체결이 이어지는 모습도 나타났다. 국내 경쟁 구도를 보면 포스코퓨처엠·LG화학·미래나노텍 등이 중국 기업과의 합작을 통한 전구체 진출을 추진했으나 지분율 등 이슈로 지연되고 있는 반면, 에코앤드림과 엘엔에프·LS의 합작 공장은 순수 국내 기술 기반으로 새만금에서 증설을 이어가고 있다는 평가가 업계에서 나온다.",
+  "en": "The global secondary battery precursor market remains structurally dominated by Chinese producers at the top of the capacity rankings; the company's own business report notes that of roughly 20 global precursor manufacturers, the top tier is mostly Chinese. The United States has issued detailed Foreign Entity of Concern (FEOC) rules restricting IRA tax credit eligibility, covering China, Russia, North Korea, and Iran, meaning global battery and cathode makers that trade with or form joint ventures with these countries can be excluded from subsidy eligibility. This has drawn relatively more attention toward domestic, technology-driven precursor companies with no Chinese equity ties. That said, the industry itself does not yet appear to be in a full recovery phase, as slowing EV demand growth and customer inventory adjustments continued to reduce precursor shipment volumes into 2026. Media reports around May 2026 pointed to signs of EV demand recovery in the US and Europe amid sustained high oil prices, alongside a series of new supply contracts among battery materials companies. In the domestic competitive landscape, POSCO Future M, LG Chem, and Miraenanotech have pursued precursor entry through joint ventures with Chinese partners but have faced delays over equity-related issues, while industry observers note that Eco&Dream's expansion, along with the L&F-LS joint venture plant, is proceeding at Saemangeum on a purely domestic technology basis."
  },
  "outlook": {
-  "ko": "회사는 2026년을 새만금캠퍼스 가동률 정상화를 통한 본격 성장 진입의 해로 설정하고 있다. 새만금 공장은 2025년 8월 본격 양산에 돌입했으나, 실제 2026년 1분기 매출이 162억원에 그치면서 가동률 확보 속도가 당초 기대를 밑돌고 있음을 시사한다. 회사 측은 청주공장의 안정적 운영과 새만금캠퍼스 가동 증가가 맞물리면 연간 실적의 성장 흐름이 이어질 것이라고 밝혔다. 제품 포트폴리오 다변화 측면에서는 2026년 3월 LFP 전구체 샘플 라인을 오창 이노베이션센터에서 가동해 중국 의존도가 높은 LFP 소재 시장 대응을 준비하고 있으며, 전고체 배터리용 황화물계 전해질 소재 사업 진출도 중장기 성장 축으로 제시하고 있다. LMR 및 HVM 등 엔트리 EV용 고에너지밀도 전구체 개발에도 역량을 집중하며 프리미엄 제품 비중 확대를 추진 중이다. 2024년 체결한 유미코아 5년 장기 공급계약이 수주 안정성의 핵심이며, 2026년 3월 이후 복수의 단일판매 공급계약 공시가 이어지면서 고객 다변화 행보도 이어지고 있다. 회사 측은 2028년을 기점으로 예상되는 글로벌 배터리 시장 수요 확대에 대비해 기술 완성도와 제품 경쟁력을 강화하는 해로 2026년을 활용한다는 전략을 공개했다.",
-  "en": "The company has designated 2026 as the year in which Saemangeum Campus utilization normalizes and revenue growth reaches full scale. Saemangeum commenced mass production in August 2025, but the actual 2026Q1 revenue of ₩16.2bn suggests utilization ramp-up is proceeding below initial expectations. Management has indicated that stable Cheongju operations combined with increasing Saemangeum throughput should sustain top-line growth momentum through the year. On product diversification, the company activated an LFP precursor sample line at the Ochang Innovation Center in March 2026 to address the Chinese-dominated LFP material market, and has announced entry into sulfide-based solid electrolyte materials for solid-state batteries as a longer-term growth pillar. R&D is also being directed toward high-energy-density LMR and HVM precursors for entry-level EVs, with an emphasis on expanding the share of premium products. The 2024 Umicore five-year supply contract remains the cornerstone of order visibility, and multiple supply contract disclosures since March 2026 indicate ongoing customer diversification efforts. The company has publicly positioned 2026 as a year for strengthening technology completeness and product competitiveness in preparation for anticipated global battery market demand expansion beginning around 2028."
+  "ko": "회사는 2026년 초 새만금캠퍼스 완전 가동을 목표로 내걸었으며, 2공장 가동률을 2분기 30~40%, 3분기 50~60%, 4분기 80% 수준까지 순차적으로 끌어올린다는 계획을 공개한 바 있다. 2026년 3월에는 하이니켈 NCM 전구체 162억원 규모 공급주문을 확보하며 새만금캠퍼스의 상업 가동을 알렸고, 같은 달 '인터배터리 2026'에 처음 참가해 차세대 90% 이상 하이니켈 NCM 전구체로 인터배터리 어워즈를 수상했다. 회사는 LMR(리튬망간리치), 고전압 미드니켈, 프리히팅 전구체, 이종원소도핑 등 차세대 하이엔드 전구체 기술을 순차적으로 공개하며 고객사와의 기술 커뮤니케이션 경쟁력을 강화하겠다는 계획을 밝히고 있다. 2026년 5월에는 기존 거래처가 아닌 새로운 양극재 제조사와 NCM 전구체 공급 재개를 논의 중이며, 늦어도 다음달 초순까지 논의를 마친 뒤 연말 또는 이듬해 초부터 납품을 시작할 수 있다는 회사 관계자의 언급이 언론에 보도됐다. 오창 이노베이션센터에서는 LFP 전구체 샘플 생산이 진행되고 있으며, 전고체 배터리용 황화물계 전해질 소재도 새로운 성장 축으로 제시되고 있다. 사업보고서는 이차전지 원료 제조 및 리사이클링 사업에 대해 2026년까지 사업성 검토, 인허가, 원재료 수급 방안 검토, 양산화 개발 검토 등 제반 작업을 진행할 계획이라고 밝히고 있다.",
+  "en": "The company has set a target of full utilization at the Saemangeum campus by early 2026, having previously outlined a phased ramp-up plan for the second plant—utilization of 30-40% in Q2, 50-60% in Q3, and 80% in Q4. In March 2026, it secured a KRW 16.2 billion high-nickel NCM precursor supply order marking the commercial start of Saemangeum operations, and in the same month it made its first appearance at 'InterBattery 2026,' where it won an InterBattery Award for its next-generation 90%-plus high-nickel NCM precursor. The company has stated plans to sequentially unveil next-generation high-end precursor technologies—including lithium-manganese-rich (LMR), high-voltage mid-nickel, pre-heating precursors, and heteroatom doping—to strengthen technical engagement with customers. In May 2026, media reports quoted a company official saying discussions were underway to resume NCM precursor supply with a new cathode maker outside its existing customer base, with talks expected to conclude by early the following month and deliveries potentially starting by year-end or early the next year. At the Ochang Innovation Center, LFP precursor sample production is proceeding, and sulfide-based electrolyte materials for solid-state batteries have been positioned as a new growth pillar. The business report states that for its battery raw material manufacturing and recycling business, the company plans to conduct feasibility review, permitting, raw material supply planning, and mass-production development review through 2026."
  },
  "valuation_comment": {
-  "ko": "현재 주가는 주당순자산(BPS 12,330원)을 하회하는 순자산 할인 구간에 위치해 있으며, 지속된 적자로 PER은 산출되지 않는 상태다. 주당손실(EPS -527원) 기준으로는 이익 창출력 회복이 선결 과제임을 반영하고 있다. 동종 국내 양극재·전구체 기업군은 일반적으로 장부가 대비 상당한 프리미엄을 형성해왔으나, 에코앤드림은 새만금 가동률 불확실성과 높아진 부채비율을 반영해 할인 배수에 거래되고 있는 것으로 해석된다. 배당 지급 이력이 없으며, 흑자 전환 이전까지 배당 가시성은 낮다. 순자산 대비 할인 폭이 좁혀지려면 새만금 공장의 빠른 가동률 정상화와 영업이익 전환이 선결 조건이며, 이 두 조건의 충족 시점이 밸류에이션 재평가의 핵심 트리거다.",
-  "en": "The share price currently sits below the company's net asset value per share (BPS ₩12,330), placing it in a book-value discount range, and no P/E multiple is calculable given the ongoing net loss. The headline loss per share (EPS −₩527) reflects the market's demand for a demonstrated earnings recovery. Domestic cathode and precursor peers have historically traded at significant premiums to book value, while Eco&Dream's discount appears to price in Saemangeum utilization uncertainty and the elevated debt-to-equity ratio. The company has no dividend payment history, and dividend visibility remains low ahead of a return to profitability. Narrowing the discount to net asset value requires swift utilization normalization at Saemangeum and a return to operating profit; the timing at which these conditions are met will be the primary re-rating catalyst."
+  "ko": "회사의 순자산가치 대비 주가는 순자산을 하회하는 수준에서 거래되는 편으로, 이는 2025년 이후 이어진 손익 불안정성과 맞물려 시장이 신중한 배수를 적용하고 있음을 시사한다. 과거 흑자를 기록한 2024년과 달리 2025년과 2026년 상반기 들어 다시 적자 국면으로 전환된 만큼, 이익 회복 여부가 향후 배수 산정에 중요한 변수로 작용할 것으로 보인다. 최근 회계연도 기준으로 배당은 지급되지 않은 것으로 확인되며, 이는 이익 변동성이 큰 성장 초기 기업의 전형적인 특징과 부합한다. 신규 공장 가동과 신규 고객 확보가 진전되며 매출 규모 자체는 확대되는 추세이지만, 이익률 개선이 뒤따르지 않는다면 순자산 대비 거래 수준에 대한 시장의 평가는 계속 보수적으로 유지될 가능성이 있다. 부채비율이 2024년 83.1%에서 2025년 117.5%로 높아진 점도 자본구조 측면에서 함께 살펴볼 필요가 있는 지표다.",
+  "en": "The stock trades at a level below its net asset value, suggesting the market is applying a cautious multiple amid the profit instability seen since 2025. Unlike 2024, when the company posted a profit, both 2025 and the first half of 2026 saw a return to losses, making the pace of any earnings recovery an important variable for how multiples are assessed going forward. No dividend appears to have been paid based on the most recent fiscal year, consistent with a growth-stage company still experiencing significant earnings volatility. While revenue scale continues to expand as new plants ramp up and new customers are added, the market's assessment of the level relative to net assets could remain conservative unless margin improvement follows. The rise in the debt ratio from 83.1% in 2024 to 117.5% in 2025 is another capital-structure metric worth monitoring alongside these trends."
  },
  "bull": [
   {
    "title": {
-    "ko": "탈중국 공급망 재편의 희소 비중국 공급자",
-    "en": "A Rare Non-Chinese Supplier in the De-Sinicization Playbook"
+    "ko": "생산능력 확대와 고객 다변화",
+    "en": "Capacity Expansion and Customer Diversification"
    },
    "body": {
-    "ko": "글로벌 전구체 시장에서 중국 기업이 약 90%를 점유하는 구조 속에서, 에코앤드림은 자체 기술 기반 소입경 하이니켈 전구체 양산이 가능한 몇 안 되는 비중국 공급자다. 미국 OBBBA의 PFE 조항 신설로 중국산 전구체 사용이 제한됨에 따라 비중국 공급자의 전략적 가치가 부각되고 있다. 배터리 공급망 탈중국화 흐름이 강화될수록 에코앤드림의 협상력과 고객사 확대 가능성이 커지는 구조이며, 2026 인터배터리 어워즈 수상(90% 이상 하이니켈 NCM 전구체)은 기술 경쟁력을 대외적으로 입증한 사례다.",
-    "en": "In a global precursor market roughly 90% dominated by Chinese firms, Eco&Dream is one of the few non-Chinese producers capable of mass-producing small-particle high-nickel NCM precursors with proprietary technology. The U.S. OBBBA's PFE provision restricting Chinese precursor usage elevates the strategic value of non-Chinese alternatives. As supply-chain de-Sinicization intensifies, Eco&Dream's negotiating leverage and customer-expansion potential structurally increase; its 2026 InterBattery Award win for Ni ≥90% high-nickel NCM precursor provides external validation of its technology credentials."
+    "ko": "새만금캠퍼스 가동으로 총 전구체 생산능력이 연 3만5천톤으로 늘었고, 유미코아와의 5년 장기 공급계약에 이어 신규 양극재 고객사와의 추가 공급 논의도 진행 중이다. 고객군이 다변화되면 특정 거래처 의존도가 낮아지고 매출 기반이 넓어질 여지가 있다. 다만 신규 계약의 규모와 시점은 아직 확정 공시 전이다.",
+    "en": "Total precursor capacity has grown to 35,000 tons/year with the Saemangeum campus online, and beyond the five-year Umicore supply agreement, discussions are underway with a new cathode material customer. Broader customer diversification could reduce dependence on any single client and widen the revenue base. However, the scale and timing of any new contract have not yet been formally disclosed."
    }
   },
   {
    "title": {
-    "ko": "새만금 풀가동 시 대규모 매출 레버리지 잠재력",
-    "en": "Substantial Revenue Leverage at Full Saemangeum Utilization"
+    "ko": "탈중국 공급망 재편의 정책 수혜 구도",
+    "en": "Policy Tailwind from De-risking Supply Chains from China"
    },
    "body": {
-    "ko": "새만금캠퍼스(연산 30,000톤)가 풀가동될 경우 청주공장(5,000톤) 포함 총 35,000톤 기준 연간 약 7,000억원 수준의 매출 달성이 가능하다는 업계 추정이 있다. 이는 2025년 실제 매출 1,420억원의 약 5배에 달하는 규모로, 가동률 정상화에 따른 매출 레버리지가 매우 크다. 고정비 회수 구간에 진입한 이후에는 영업이익률도 빠르게 개선될 수 있어 손익 구조의 질적 전환이 기대되며, 2,200억원 규모의 신규 시설 투자가 이미 집행 완료됐다는 점에서 추가 대규모 투자 없이 매출 성장이 가능한 국면이다.",
-    "en": "At full utilization of the Saemangeum Campus (30,000 t/yr) combined with Cheongju (5,000 t/yr), industry estimates suggest annual revenue potential of approximately ₩700bn—roughly five times the ₩141.9bn actually recorded in 2025. Revenue leverage from utilization normalization is therefore substantial. Once beyond the fixed-cost breakeven threshold, operating margins could improve sharply, representing a qualitative earnings structure shift. Crucially, the approximately ₩220bn in capital expenditure has already been deployed, meaning revenue growth can now be pursued without further large-scale investment."
+    "ko": "미국의 FEOC 규정과 유럽의 핵심원자재법 논의는 중국 지분 연계가 없는 전구체 기업에 상대적으로 유리한 환경을 만들 수 있다. 에코앤드림은 해외 자본 유입 없이 국내 기술로 하이니켈 전구체 양산 기술을 확보했다는 점을 강점으로 제시하고 있다. 다만 이는 업계 전반의 구조적 흐름으로, 개별 기업의 실제 수주로 이어지는 속도는 지켜볼 필요가 있다.",
+    "en": "US FEOC rules and discussions around Europe's Critical Raw Materials Act could create a relatively favorable environment for precursor companies with no Chinese equity ties. Eco&Dream highlights that it achieved high-nickel precursor mass-production technology using domestic capital and its own technology without foreign capital inflow. Still, this is a broader industry-wide structural trend, and the pace at which it translates into actual orders for the company bears watching."
    }
   },
   {
    "title": {
-    "ko": "유미코아 장기계약과 안정적 밸류체인 포지션",
-    "en": "Umicore Long-Term Contract and Stable Value-Chain Position"
+    "ko": "차세대 제품 포트폴리오 확장",
+    "en": "Next-Generation Product Portfolio Expansion"
    },
    "body": {
-    "ko": "2024년 유럽 최대 양극재 업체 유미코아와 체결한 5년 장기 공급계약은 중기 수주 예측 가능성의 핵심 기반으로, 청주공장에서의 성공적 공급 이력을 바탕으로 기술 신뢰도도 검증됐다. '에코앤드림-유미코아-SK온-현대차'로 이어지는 글로벌 밸류체인 진입은 대형 완성차와의 간접 연결 고리를 제공한다. 2026년 3월 이후 연속 단일판매 공급계약 공시와 해외 다국적 기업향 PO 계약 지속 체결은 유미코아 외 고객 다변화 가능성을 시사한다.",
-    "en": "The five-year supply contract signed with Umicore in 2024 provides a foundation for medium-term order predictability, backed by a track record of successful Cheongju deliveries that has verified technical credibility. Positioning within the Eco&Dream-Umicore-SK On-Hyundai Motor value chain provides indirect linkage to large-scale OEM volumes. Multiple consecutive supply contract disclosures and ongoing purchase orders from multinational firms since March 2026 signal customer diversification potential beyond the Umicore anchor relationship."
+    "ko": "LFP 전구체 국산화, 전고체 배터리용 황화물계 전해질 소재, LMR·고전압 미드니켈 등 차세대 전구체 기술을 순차적으로 공개하며 인터배터리 2026 어워즈도 수상했다. 제품 라인업이 다양해지면 특정 배터리 화학 트렌드 변화에 대한 대응력이 높아질 수 있다. 다만 이들 신사업은 아직 샘플·초기 단계로, 매출 기여 시점은 불확실하다.",
+    "en": "The company is sequentially unveiling next-generation precursor technologies—domestic LFP precursor development, sulfide-based electrolyte materials for solid-state batteries, and LMR/high-voltage mid-nickel—and won an award at InterBattery 2026. A more diverse product lineup could improve responsiveness to shifts in battery chemistry trends. However, these new businesses remain at the sample or early stage, and the timing of any revenue contribution is uncertain."
    }
   }
  ],
  "bear": [
   {
    "title": {
-    "ko": "2026년 1분기 매출 급감—램프업 가시성 저하",
-    "en": "Sharp 2026Q1 Revenue Decline Reduces Ramp-Up Visibility"
+    "ko": "실적 변동성과 수요 둔화",
+    "en": "Earnings Volatility and Demand Slowdown"
    },
    "body": {
-    "ko": "2026년 1분기 매출이 162억원으로 2025년 분기 평균(약 355억원)의 절반에도 미치지 못한 것은, 새만금 공장의 초기 가동 단계에서의 출하 정상화 지연과 주요 고객사 수요 조정이 복합적으로 반영된 결과로 추정된다. K-배터리 3사의 글로벌 점유율이 구조적으로 하락하는 흐름은 전방 고객의 전구체 수요 회복 속도를 제약할 수 있다. 시장 일각에서 제시된 2026년 연간 매출 전망치와 실제 출발점 간의 큰 괴리는 연간 목표 달성 불확실성을 크게 높이고 있다.",
-    "en": "2026Q1 revenue of ₩16.2bn fell to less than half the 2025 quarterly average of approximately ₩35.5bn, suggesting a combination of delayed output normalization at Saemangeum and demand adjustments by key customers. The structural decline in Korean battery makers' global market share constrains the pace at which upstream precursor demand recovers. The large gap between some sell-side FY2026 revenue forecasts and the actual Q1 starting point materially elevates uncertainty around full-year target achievement."
+    "ko": "2025년 매출 성장에도 영업이익과 순이익은 다시 적자로 돌아섰고, 2026년 1분기와 2분기 모두 매출이 크게 줄며 손실 규모가 확대됐다. 와이즈리포트는 이를 전기차 시장 성장 둔화와 고객사 재고 조정에 따른 전구체 출하량 감소로 설명한다. 전방 수요 회복 속도가 예상보다 느릴 경우 실적 불안정성이 이어질 수 있다.",
+    "en": "Despite revenue growth in 2025, operating and net income swung back into losses, and both Q1 and Q2 2026 saw sharply lower revenue with widening losses. WiseReport attributes this to slowing EV market growth and reduced precursor shipment volumes tied to customer inventory adjustments. If end-demand recovery is slower than expected, earnings instability could persist."
    }
   },
   {
    "title": {
-    "ko": "부채 증가와 2년 연속 영업현금흐름 마이너스",
-    "en": "Rising Debt and Two Consecutive Years of Negative Operating Cash Flow"
+    "ko": "새만금 가동 램프업 실행 리스크",
+    "en": "Saemangeum Ramp-Up Execution Risk"
    },
    "body": {
-    "ko": "약 2,200억원 규모의 새만금 설비 투자로 인해 부채비율이 2024년 83.1%에서 2025년 117.5%로 상승했다. 영업현금흐름은 2024년 -219억원, 2025년 -111억원으로 2년 연속 마이너스를 기록하며 투자 재원 조달과 차입금 관리 부담이 지속된다. 가동률 상승이 예상보다 늦어질수록 이자비용이 수익성 회복을 지연시키는 악순환 구조가 장기화될 리스크가 있다.",
-    "en": "Capital expenditure of approximately ₩220bn for the Saemangeum build-out has pushed the debt-to-equity ratio from 83.1% (2024) to 117.5% (2025). Operating cash flow has been negative for two consecutive years at −₩21.9bn (2024) and −₩11.1bn (2025), sustaining pressure on investment financing and debt management. A slower-than-expected utilization ramp creates the risk of a prolonged negative feedback loop, where interest expense burden delays the return to profitability."
+    "ko": "회사는 2공장 가동률을 단계적으로 높여 2026년 초 완전 가동을 목표로 제시했으나, 실제 가동률 상승 속도는 고객사 발주 흐름에 좌우된다. 2026년 2분기 영업손실이 대폭 확대된 점은 가동률 목표와 실제 수요 사이에 괴리가 있었을 가능성을 시사한다. 대규모 설비의 고정비 부담이 가동률 목표에 못 미칠 경우 손익에 부담으로 작용할 수 있다.",
+    "en": "The company targeted a phased increase in second-plant utilization toward full operation by early 2026, but the actual pace depends on customer order flow. The sharp widening of the operating loss in Q2 2026 suggests a possible gap between the utilization target and actual demand. If utilization falls short of the target, the fixed-cost burden of the large-scale facility could weigh on earnings."
    }
   },
   {
    "title": {
-    "ko": "원재료 가격 변동성과 중국 전구체 가격 경쟁",
-    "en": "Raw Material Price Volatility and Chinese Precursor Price Competition"
+    "ko": "재무구조 및 자본조달 부담",
+    "en": "Financial Structure and Funding Burden"
    },
    "body": {
-    "ko": "전구체의 주요 원재료인 니켈·코발트·망간 가격의 변동은 판매가격과 수익성에 직접 영향을 미치며, 금속 가격 하락 시 매출 규모 자체가 줄어드는 패스스루 구조의 특성도 있다. 중국 전구체 업체들의 대규모 생산 능력 확장과 가격 경쟁 심화는 비중국 업체들의 마진을 지속적으로 압박하는 요인이다. 2023년과 같은 전기차 업황 냉각 사이클이 반복될 경우 고객사의 발주량 감소와 함께 수익성 악화가 동시에 진행될 수 있다.",
-    "en": "Fluctuations in nickel, cobalt, and manganese prices directly affect selling prices and profitability; the metal cost pass-through structure means sharp metal price declines can compress reported revenue independently of volume. Ongoing large-scale capacity expansion and intensifying price competition from Chinese precursor producers persistently pressure margins for non-Chinese players. A renewed EV demand slowdown cycle similar to that of 2023 could simultaneously reduce customer order volumes and compress unit margins."
+    "ko": "부채비율은 2024년 83.1%에서 2025년 117.5%로 높아졌고, 2026년 들어 전환사채 발행 관련 우려가 제기된 바 있다. 2025년 4분기 순손실 확대에는 이연법인세자산 평가 감소에 따른 비현금성 법인세비용 인식이라는 일회성 요인도 포함돼 있었다. 대규모 증설을 이어가는 과정에서 추가 자금조달이 필요할 경우 기존 주주 지분 희석 우려가 남는다.",
+    "en": "The debt ratio rose from 83.1% in 2024 to 117.5% in 2025, and concerns over convertible bond issuance emerged in 2026. The widened net loss in Q4 2025 also included a one-off, non-cash tax expense tied to a reduction in deferred tax asset valuation. If additional funding is required to sustain large-scale capacity expansion, dilution concerns for existing shareholders remain."
    }
   }
  ],
  "risks": [
   {
    "cat": {
-    "ko": "원재료 가격 및 패스스루 리스크",
-    "en": "Raw Material Price and Pass-Through Risk"
+    "ko": "수요·업황 리스크",
+    "en": "Demand and Industry Cycle Risk"
    },
    "body": {
-    "ko": "니켈·코발트·망간 등 전구체 핵심 원재료 가격의 급변동은 원가 구조와 수익성에 직접적으로 영향을 미친다. 금속 가격 패스스루 구조상 가격 하락 시 매출 총액이 축소될 수 있으며, 원재료 가격 하락 기조가 지속되면 전구체 판매 물량 증가에도 매출 성장세가 가려질 수 있다. 광물 가격 변동성에 따른 실적 편차를 사업 펀더멘털과 분리해 분석하는 것이 중요하다.",
-    "en": "Sharp fluctuations in key raw material prices—nickel, cobalt, and manganese—directly affect cost structure and profitability. The metal cost pass-through mechanism means falling metal prices can compress headline revenue, potentially masking volume growth. Separating the impact of commodity price swings from underlying business fundamentals is essential for accurate operational assessment."
+    "ko": "전기차 시장 성장 둔화와 고객사 재고 조정이 2026년 상반기 전구체 출하량 감소의 주된 원인으로 지목됐다. 캐즘 국면이 예상보다 길어지면 신규 가동 설비의 손익 개선 시점이 지연될 수 있다. 국제 금속가격 변동에 따른 판가 및 원가 변동성도 상시 존재한다.",
+    "en": "Slowing EV market growth and customer inventory adjustments were cited as the main causes of reduced precursor shipments in the first half of 2026. If the demand chasm persists longer than expected, the timing of earnings improvement at newly operating facilities could be delayed. Price and cost volatility tied to fluctuating international metal prices also remains an ongoing factor."
    }
   },
   {
    "cat": {
-    "ko": "전기차 정책 및 전방 수요 불확실성",
-    "en": "EV Policy and Downstream Demand Uncertainty"
+    "ko": "재무·자본조달 리스크",
+    "en": "Financial and Funding Risk"
    },
    "body": {
-    "ko": "트럼프 행정부의 IRA 조정 가능성, 미국 전기차 판매 부진(-28.4% YoY, 2026년 1분기), 주요 완성차 업체의 전기차 투자 속도 조절 등 전방 시장 불확실성이 전구체 발주량에 영향을 미칠 수 있다. 에코앤드림은 IRA 직접 수혜 대상은 아니지만, 전방 배터리 기업들의 수익성 악화와 가동률 하락은 전구체 구매량 감소로 이어진다. 미국·유럽 전기차 수요 회복이 예상보다 느릴 경우 새만금 공장 가동률 정상화 일정도 지연될 수 있다.",
-    "en": "Potential IRA adjustments under the Trump administration, weak U.S. EV sales (−28.4% YoY in 2026Q1), and major OEMs moderating EV investment pace all represent downstream demand uncertainties that could affect precursor order volumes. Although Eco&Dream is not a direct IRA beneficiary, deteriorating profitability and utilization at battery cell producers directly translates into reduced precursor procurement. A slower-than-expected recovery in U.S. and European EV demand could delay Saemangeum utilization normalization beyond the company's current schedule."
+    "ko": "부채비율이 2024년 83.1%에서 2025년 117.5%로 상승했고, 전환사채 발행에 따른 시장 신뢰도 우려가 제기된 바 있다. 대규모 증설 지속 시 추가 차입이나 자본조달이 필요할 수 있으며, 이는 재무 건전성 지표에 추가 영향을 줄 수 있다. 이연법인세자산 평가와 같은 비현금성 항목의 변동도 손익에 영향을 미칠 수 있다.",
+    "en": "The debt ratio rose from 83.1% in 2024 to 117.5% in 2025, and concerns over market confidence emerged following convertible bond issuance. Continued large-scale expansion may require additional borrowing or capital raising, which could further affect financial soundness metrics. Changes in non-cash items such as deferred tax asset valuation can also affect reported earnings."
    }
   },
   {
    "cat": {
-    "ko": "재무 레버리지 및 유동성 관리 리스크",
-    "en": "Financial Leverage and Liquidity Management Risk"
+    "ko": "경쟁·정책 리스크",
+    "en": "Competitive and Policy Risk"
    },
    "body": {
-    "ko": "약 2,200억원 규모의 신규 시설 투자 집행으로 부채비율이 2025년 말 117.5%로 상승했으며, 영업현금흐름이 2년 연속 마이너스를 기록하고 있다. 가동률 상승 지연 시 이자비용 부담이 누적되어 수익성 개선 속도를 제약하고, 경우에 따라 추가 자금 조달 필요성이 발생할 수 있다. 차입금 만기 구조와 이자 부담 현황에 대한 지속적 모니터링이 투자 분석의 중요 항목이다.",
-    "en": "The approximately ₩220bn Saemangeum investment has lifted the debt-to-equity ratio to 117.5% at end-2025, with operating cash flow negative for two consecutive years. Delayed utilization ramp-up would cause interest costs to accumulate, constraining the pace of margin improvement and potentially necessitating additional financing. Continuous monitoring of the company's debt maturity profile and interest burden is an important component of the investment case."
+    "ko": "글로벌 전구체 시장은 중국 기업이 상위권을 장악하고 있어 가격 경�쟁 압력이 상존한다. IRA FEOC나 유럽 핵심원자재법 등 정책 기조가 향후 변경될 경우 탈중국 공급망 수혜 구도 자체가 흔들릴 수 있다. 포스코퓨처엠 등 경쟁사들의 전구체 내재화 시도가 재개될 경우 경쟁 구도가 달라질 수 있다.",
+    "en": "Chinese firms dominate the top tier of the global precursor market, creating persistent pricing pressure. If policy frameworks such as the IRA's FEOC rules or Europe's Critical Raw Materials Act change in the future, the de-risking-from-China supply chain tailwind itself could shift. If competitors such as POSCO Future M resume efforts to internalize precursor production, the competitive landscape could change."
    }
   }
  ],
  "checkpoints": [
   {
    "when": {
-    "ko": "2026년 8월 중순",
-    "en": "Mid-August 2026"
-   },
-   "what": {
-    "ko": "2026년 상반기(2분기) 실적 공시: 새만금캠퍼스의 분기 전구체 매출이 2026년 1분기(162억원) 대비 유의미하게 반등했는지 확인. 회복 폭이 연간 흑자 전환 경로의 가시성을 좌우하는 핵심 지표다.",
-    "en": "1H 2026 (Q2) earnings disclosure: assess whether quarterly precursor revenue rebounds materially from the 2026Q1 level of ₩16.2bn. The magnitude of sequential recovery is a key indicator of the full-year path to operating profit."
-   }
-  },
-  {
-   "when": {
-    "ko": "2026년 11월 중순",
+    "ko": "2026년 11월 중",
     "en": "Mid-November 2026"
    },
    "what": {
-    "ko": "2026년 3분기 실적 공시: 새만금 가동률이 의미 있는 수준(약 70% 이상)으로 상승했는지, 영업이익 흑자 전환이 실현됐는지 확인. 가동률 70% 이상이 손익분기점 돌파의 임계치로 분석된 바 있다.",
-    "en": "Q3 2026 earnings disclosure: confirm whether Saemangeum utilization meaningfully accelerates toward approximately 70%—the threshold identified for the plant to achieve breakeven—and whether operating profit returns to positive territory."
+    "ko": "2026년 3분기 실적 발표에서 매출·영업손익이 1·2분기의 부진에서 벗어나 개선되는지 확인이 필요하다.",
+    "en": "Check whether Q3 2026 results, to be released in mid-November, show revenue and operating profit improving from the weakness seen in Q1 and Q2."
    }
   },
   {
    "when": {
-    "ko": "상시—DART·KRX 공시",
-    "en": "Ongoing—DART/KRX Disclosures"
+    "ko": "2026년 4분기",
+    "en": "Q4 2026"
    },
    "what": {
-    "ko": "단일판매·공급계약 체결 공시: 계약 규모, 계약기간, 신규 해외 고객사 여부 확인. 유미코아 외 신규 고객 다변화가 확인될 경우 수주 기반 확대의 증거가 된다.",
-    "en": "Monitor single-supply and purchase order contract disclosures for contract size, duration, and new overseas customer wins. New client diversification beyond Umicore would constitute evidence of an expanding and more resilient order base."
+    "ko": "새만금캠퍼스가 회사가 제시한 완전 가동 목표에 실제로 근접했는지, 가동률 추이를 점검할 필요가 있다.",
+    "en": "Monitor whether the Saemangeum campus actually approaches the company's stated full-utilization target, and track the utilization trend."
    }
   },
   {
    "when": {
     "ko": "2026년 하반기",
-    "en": "H2 2026"
+    "en": "Second half of 2026"
    },
    "what": {
-    "ko": "LFP 전구체 샘플 가동(2026년 3월 시작)의 고객사 샘플 테스트 통과 및 상용 계약 전환 여부. 기술 검증이 확인될 경우 NCM 의존도 분산과 중장기 제품 포트폴리오 가시성이 높아진다.",
-    "en": "Track whether the LFP precursor sample line (activated March 2026) passes customer qualification tests and converts to commercial supply agreements. Confirmed technical approval would reduce NCM concentration risk and raise mid-to-long-term product portfolio visibility."
+    "ko": "2026년 5월 언급된 신규 양극재 고객사와의 NCM 전구체 공급 재개 논의가 실제 계약 및 공시로 이어지는지 확인이 필요하다.",
+    "en": "Check whether the NCM precursor supply discussions with a new cathode material customer, mentioned in May 2026, result in an actual contract and disclosure."
    }
   },
   {
    "when": {
-    "ko": "2027년 1분기 초",
-    "en": "Early Q1 2027"
+    "ko": "2026년 하반기~2027년 초",
+    "en": "Second half of 2026 through early 2027"
    },
    "what": {
-    "ko": "2026년 연간 실적 확정 발표: 새만금캠퍼스 풀가동 1년차 실적과 영업이익 전환 여부 최종 확인. 이 결과가 향후 3공장 증설 및 추가 성장 전략의 판단 기준이 된다.",
-    "en": "FY2026 annual results disclosure: verify Saemangeum's first full operating year results and confirm whether the operating profit turnaround materialized. This outcome will define the baseline for evaluating any future third-plant expansion and broader growth strategy decisions."
+    "ko": "오창 이노베이션센터에서 진행 중인 LFP 전구체 샘플 생산이 고객 승인 및 양산 단계로 진전되는지 지켜볼 필요가 있다.",
+    "en": "Watch whether LFP precursor sample production underway at the Ochang Innovation Center progresses to customer approval and mass production stages."
    }
   }
  ],
  "verdict": {
   "body": {
-   "ko": "에코앤드림은 국내 독자 기술 기반 비중국 전구체 전문기업으로, 글로벌 공급망 탈중국화라는 구조적 기회에 가장 직접적으로 노출된 국내 2차전지 소재 기업 중 하나다. 약 2,200억원을 투자해 연산 35,000톤 규모의 생산 체제를 완성했으며, 유미코아와의 5년 장기 공급계약이 수주 기반을 뒷받침하고 있다. 그러나 2025년 연간 영업손실 지속, 2025년 4분기 대규모 비현금 순손실, 2026년 1분기 매출의 급격한 감소는 신공장 가동률 정상화가 당초 기대보다 지연되고 있음을 시사한다. 부채비율 상승과 2년 연속 마이너스 영업현금흐름은 가동률 확보 이전까지 재무 부담이 지속됨을 보여준다. 새만금 가동률이 의미 있는 수준으로 회복되고 영업이익이 전환되는 시점이 기업 가치 재평가의 핵심 분기점이며, LFP 전구체와 전고체 배터리 소재 등 신규 사업의 사업화 성과도 중장기 성장 궤도를 결정하는 중요 변수로 주목된다.",
-   "en": "Eco&Dream is one of the most directly positioned domestic battery materials companies relative to the structural opportunity created by global supply-chain de-Sinicization, operating as a rare non-Chinese precursor specialist built entirely on proprietary technology. The approximately ₩220bn investment in the 35,000-tonne Saemangeum capacity system is complete, supported by a five-year Umicore supply agreement. However, the persistence of operating losses in FY2025, a large non-cash net loss in Q4 2025, and a sharp revenue decline in 2026Q1 collectively suggest that Saemangeum utilization normalization is proceeding more slowly than initially anticipated. Elevated financial leverage and two consecutive years of negative operating cash flow indicate that balance sheet pressure will continue until meaningful utilization is achieved. The timing of a Saemangeum utilization inflection and return to operating profit represents the pivotal re-rating trigger, while the commercialization trajectory of LFP precursors and solid-state battery materials will be closely monitored as determinants of the medium-to-long-term growth path."
+   "ko": "에코앤드림은 촉매소재 사업에서 출발해 이차전지 전구체로 사업 축을 옮긴 회사로, 새만금캠퍼스 가동을 통해 생산능력을 연 3만5천톤으로 늘리며 외형 확장의 발판을 마련했다. 그러나 2025년 매출 성장에도 영업이익과 순이익은 다시 적자로 전환됐고, 2026년 1분기와 2분기 모두 매출이 크게 줄고 손실이 확대되는 등 실적 변동성이 뚜렷하게 나타나고 있다. 회사 측은 이를 전기차 시장 성장 둔화와 고객사 재고 조정에 따른 일시적 출하량 감소로 설명하며, 유미코아 외 신규 양극재 고객사와의 추가 공급 논의, LFP 전구체·전고체 전해질 등 차세대 제품 개발을 통해 성장 동력을 다변화하려는 움직임을 보이고 있다. 부채비율이 1년 사이 큰 폭으로 높아진 점은 대규모 증설 과정에서의 자본구조 부담을 보여준다. 미국 FEOC 규정 등 탈중국 공급망 재편 흐름은 구조적으로 우호적인 환경을 제공하지만, 실제 수주와 가동률 개선으로 이어지는 속도는 여전히 지켜봐야 하는 변수다. 결국 새만금 캠퍼스의 실질 가동률 상승과 신규 고객 확보의 구체적 성과가 향후 실적 방향을 가늠하는 핵심 변수가 될 것으로 보인다.",
+   "en": "Eco&Dream, which started in catalyst materials and shifted its business axis toward secondary battery precursors, has laid the groundwork for scale expansion by raising capacity to 35,000 tons/year with the Saemangeum campus coming online. However, despite 2025 revenue growth, operating and net income swung back into losses, and both Q1 and Q2 2026 saw sharply lower revenue and widening losses, showing pronounced earnings volatility. The company attributes this to temporary shipment declines from slowing EV market growth and customer inventory adjustments, while pursuing growth diversification through additional supply discussions with a new cathode maker beyond Umicore and next-generation product development in LFP precursors and solid-state electrolytes. The sharp rise in the debt ratio over the past year reflects the capital-structure burden of large-scale expansion. While the shift away from China-linked supply chains under US FEOC rules provides a structurally favorable backdrop, the pace at which this translates into actual orders and utilization improvement remains a variable to watch. Ultimately, the actual pace of utilization increase at the Saemangeum campus and concrete progress in securing new customers are likely to be the key variables shaping the direction of future earnings."
   }
  },
  "sources": [
-  "https://m.irgo.co.kr/IR-COMP/101360/%EC%9D%B4%EC%97%94%EB%93%9C%EB%94%94-%EA%B8%B0%EC%97%85%EC%A0%95%EB%B3%B4",
-  "https://wcomp.fnguide.com/?cmp_cd=101360",
-  "https://stock.pstatic.net/stock-research/company/74/20250522_company_233239000.pdf",
-  "https://kr.tradingview.com/symbols/KRX-101360/financials-overview/",
-  "https://comp.fnguide.com/SVO2/ASP/SVD_Main.asp?pGB=1&gicode=A101360&cID=&MenuYn=Y&ReportGB=&NewMenuID=101&stkGb=701",
-  "https://itooza.com/vscore/101360",
-  "https://m.thinkpool.com/item/101360",
+  "https://markets.hankyung.com/stock/101360/consensus",
+  "https://insight.goover.ai/report/202603/go-public-report-ko-f4f00cf0-8f01-44c3-8e0d-b05c9ea300ad-0-0.html",
+  "https://insight.goover.ai/report/202605/go-public-report-ko-0343393e-52cc-4367-b11c-402244c991b7-0-0.html",
+  "https://alphasquare.co.kr/home/stock-summary?code=101360",
+  "https://kr.investing.com/equities/e-d-co-ltd-earnings",
+  "https://www.judal.co.kr/?view=stockAI&shareToken=KeAEnlyxTp8OpPAF",
+  "https://www.judal.co.kr/?view=stockAI&shareToken=8PfQWKaAFwcZEnQy",
+  "https://www.judal.co.kr/?view=stockAI&shareToken=ELDChvY9uVjPiIHC",
+  "https://m.thinkpool.com/compDiscuss/cont/1011598",
+  "https://www.stockplus.com/m/stocks/KOREA-A101360",
   "https://www.finance-scope.com/article/view/scp202503070009",
   "https://comp.wisereport.co.kr/company/c1010001.aspx?cmp_cd=101360",
-  "https://kind.krx.co.kr/external/2026/04/03/000800/20260403001411/11011.htm",
-  "https://file.alphasquare.co.kr/media/pdfs/market-report/%EC%9E%90%EB%8F%99%EC%B0%A82026%EB%85%8420260414%EA%B5%90%EB%B3%B4%EC%A6%9D%EA%B6%8C.",
-  "https://news.jkn.co.kr/post/858615",
-  "https://www.endss.com/news/?mod=document&uid=224",
-  "https://www.bondweb.co.kr/_research/downloadPage.asp?number=888455&gn=1",
-  "http://www.dailyinvest.kr/news/articleView.html?idxno=66829",
-  "https://www.thelec.kr/news/articleView.html?idxno=55876",
+  "https://www.fnnews.com/news/202605281819065926",
   "https://www.endss.com/news/",
-  "https://m.irgo.co.kr/IR-COMP/247540"
+  "https://news.jkn.co.kr/post/858615",
+  "https://m.irgo.co.kr/IR-COMP/101360/%EC%9D%B4%EC%97%94%EB%93%9C%EB%94%94-%EA%B8%B0%EC%97%85%EC%A0%95%EB%B3%B4",
+  "https://m.ddaily.co.kr/page/view/2024052418332021183",
+  "https://kind.krx.co.kr/external/2026/04/03/000800/20260403001411/11011.htm"
  ],
  "v": 2,
- "model": "claude-sonnet-4-6",
+ "model": "claude-sonnet-5",
  "ticker": "101360",
  "name": "에코앤드림",
  "name_en": "Eco&Dream Co., Ltd.",
@@ -233,9 +223,9 @@
   "2차전지"
  ],
  "market": "코스닥",
- "reportDate": "2026-06-18",
- "reportTs": "2026-06-18 23:43",
- "dataDate": "20260821",
+ "reportDate": "2026-09-05",
+ "reportTs": "2026-09-05 07:07",
+ "dataDate": "20260904",
  "quant": {
   "asOf": "2026-08-23",
   "fs_basis": "연결(CFS) · DART 공시 확정치 · 지배주주 기준 순이익",
@@ -338,14 +328,14 @@
    }
   ],
   "valuation": {
-   "price": 7330,
-   "mcap": 0.1304,
+   "price": 8190,
+   "mcap": 0.1457,
    "shares": 17786114,
    "total_shares": 17786114,
    "wavg_shares": 17532858,
    "per": null,
    "eps": -806,
-   "pbr": 0.6182,
+   "pbr": 0.6907,
    "bps": 11857,
    "roe_ttm": -6.6,
    "ttm_window": "2025Q3~2026Q2",

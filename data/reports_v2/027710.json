@@ -1,230 +1,220 @@
 {
  "title": {
-  "ko": "사료→육가공 수직계열화 완성, 재무 개선 가속화",
-  "en": "Full Livestock Value Chain Integrated: Debt Reduction and Earnings Recovery in Focus"
+  "ko": "사료 이익안정 속 배당 확대, 육가공 과제",
+  "en": "Feed Margin Stability, Dividend Growth, Meat Turnaround Watch"
  },
  "lead": {
-  "ko": "팜스토리는 배합사료·양돈·육가공·가금 전 공정을 아우르는 수직계열화를 완성한 코스닥 축산 전주기 기업으로, 2022년 순손실·현금흐름 저점에서 탈피해 2025년 순이익 대폭 반등과 4년 연속 부채비율 개선이라는 재무 구조 전환점을 통과하고 있다.",
-  "en": "Farmstory is a KOSDAQ full-value-chain livestock company with vertical integration spanning compound feed, pig farming, meat processing, and poultry, and is passing through a financial inflection point with sharply rebounding net profit and four consecutive years of debt ratio improvement following the 2022 loss trough."
+  "ko": "팜스토리는 사료 부문의 판가 연동 구조로 이익 안정성을 유지하며 배당을 크게 늘렸지만, 육가공·양돈 자회사의 손익 정상화가 지속될지가 다음 관전 포인트다.",
+  "en": "Farmstory has maintained earnings stability in its feed business through cost pass-through pricing and sharply raised dividends, while whether its meat-processing and hog subsidiary's earnings turnaround can be sustained remains the next watch point."
  },
  "keypoints": [
   {
-   "ko": "배합사료→양돈농장→도축·육가공→가금의 수직계열화 완성으로 원재료 수급 안정성과 공정 간 원가 경쟁력 확보",
-   "en": "Full vertical integration from compound feed through pig farming, meat processing, and poultry secures raw material supply stability and inter-process cost competitiveness."
+   "ko": "2026년 상반기 매출 비중은 사료 49.6%, 육가공 41.6%, 가금 7.3%로 구성되며, 사료 부문은 판가 연동 구조로 영업이익률이 3.6~4.4% 범위에서 안정적으로 유지돼 왔다.",
+   "en": "In H1 2026, revenue mix was feed 49.6%, meat processing 41.6%, and poultry 7.3%, with the feed segment maintaining an operating margin stable in the 3.6-4.4% range through cost pass-through pricing."
   },
   {
-   "ko": "2025년 연결 순이익(지배) 약 301억 원으로 대폭 반등 — 돈육·한우 시세 상승 및 환율 하락에 따른 외환이익이 주요 기여 요인",
-   "en": "Net profit attributable to controlling shareholders rebounded sharply to approximately 30.1 billion KRW in 2025, primarily driven by higher pork and hanwoo prices and foreign exchange gains from won appreciation."
+   "ko": "2025년 결산배당은 2023~2024년 대비 4배로 확대됐고 배당성향은 36.7%를 기록했다.",
+   "en": "The FY2025 year-end dividend was expanded fourfold versus 2023-2024, with a payout ratio of 36.7%."
   },
   {
-   "ko": "부채비율 291.3%(2022) → 186.6%(2025)으로 4년 연속 하락, CFO 2022년 -796억에서 2025년 +774억으로 대폭 개선",
-   "en": "Debt-to-equity ratio fell for four consecutive years from 291.3% in 2022 to 186.6% in 2025, and operating cash flow swung from -79.6 billion KRW in 2022 to +77.4 billion KRW in 2025."
+   "ko": "종속기업 팜스월드는 2025년 9월 500억원 규모 유상증자로 완전자본잠식을 해소했고, 2026년 상반기 순이익률 11.6%를 기록했다.",
+   "en": "Subsidiary Farms World resolved full capital impairment through a KRW 50 billion rights offering in September 2025 and posted an 11.6% net margin in H1 2026."
   },
   {
-   "ko": "2026년 1분기 매출 2.6% 감소에도 영업이익 136% 급증(YoY) — 원가 절감·비용 효율화의 실질 효과 확인",
-   "en": "Despite a 2.6% revenue decline in Q1 2026, operating profit surged 135.9% year-on-year, confirming the tangible impact of ongoing cost reduction and efficiency programs."
+   "ko": "2026년 1분기 영업이익은 전년 동기 대비 135.9% 증가했으나 같은 기간 순이익은 적자로 전환했다.",
+   "en": "Q1 2026 operating profit rose 135.9% year-on-year, but net profit turned negative in the same period."
   },
   {
-   "ko": "국제 곡물가격·환율 상승, ASF 산발적 발생, 소비 부진이 수익성 변동성을 높이는 구조적 리스크 요인으로 상존",
-   "en": "Rising global grain prices, exchange rate pressures, sporadic domestic ASF outbreaks, and weak consumer spending remain structural risk factors amplifying earnings volatility."
+   "ko": "지배주주 순이익은 2022년 적자에서 2025년 301.1억원으로 개선됐지만 분기별로는 흑자·적자를 오가는 변동성이 이어지고 있다.",
+   "en": "Attributable net profit improved from a loss in 2022 to KRW 30.1 billion in 2025, though quarterly results continue to swing between profit and loss."
   }
  ],
  "business": {
-  "ko": "팜스토리는 1991년 설립되어 1996년 코스닥에 상장된 축산용 배합사료 전문 회사로, 현재는 사료·육가공·가금 부문을 아우르는 축산 전주기 기업으로 성장했다. 사업 구조는 사료사업부, 육가공사업부, 가금사업부의 세 축으로 구성된다. 사료사업부는 돼지·소·닭 등 다양한 축종을 대상으로 배합사료를 제조·판매하며, 연간 1조 4천억 원대 연결 매출의 핵심 기반을 제공한다. 육가공사업부는 자회사 농업회사법인 팜스월드를 통해 양돈 농장을 직접 운영하고, 도축·가공 및 계열화 사업과 브랜드육 유통 확대를 추진하고 있다. 가금사업부는 자회사 마니커에프앤지를 통해 닭고기 가공식품을 생산·판매한다. 사료 제조에서 양돈 농장 경영, 도축·가공, 브랜드육 유통에 이르는 수직계열화를 통해 원재료 수급 안정성과 공정 간 시너지를 확보하고 있으며, HACCP 인증 위생 관리 체계를 갖추고 있다. 국내 신선식품 및 배합사료 시장은 팜스코(하림그룹), 선진, 팜스토리 등이 주도하는 과점 구조로, 환경 규제 강화와 대규모 설비 투자 부담이 신규 진입 장벽으로 작용한다. 사료 원료인 옥수수 등 주요 곡물의 90% 이상을 수입에 의존하는 구조여서 국제 곡물가격과 원·달러 환율이 원가에 직접적인 영향을 미치며, 이는 실적 변동성의 핵심 외생 변수다.",
-  "en": "Farmstory was founded in 1991 and listed on KOSDAQ in 1996 as a specialized livestock feed manufacturer, growing into a full-value-chain livestock company spanning feed, meat processing, and poultry. Its business is organized into three main segments: the Feed Division, the Meat Processing Division, and the Poultry Division. The Feed Division manufactures and sells compound feed for multiple livestock species including pigs, cattle, and poultry, forming the core revenue driver of the company's consolidated annual revenue in the approximately 1.46 trillion KRW range. The Meat Processing Division operates pig farms directly through subsidiary Farmworld Co., and pursues expansion of slaughtering, processing, vertical integration activities, and branded-meat distribution. The Poultry Division produces and sells processed chicken products through subsidiary Manicor F&G. Full vertical integration from feed manufacturing through pig farm operations, slaughtering, processing, and branded-meat distribution secures raw material supply stability and inter-process synergies, supported by a HACCP-certified quality management system. The domestic fresh livestock products and compound feed market has an oligopolistic structure led by Farmco (Harim Group), Sungjin, and Farmstory, with tightening environmental regulations and the need for large capital outlays acting as meaningful barriers to new entrants. As more than 90% of key feed ingredients such as corn are imported, international grain prices and the Korean won exchange rate against the US dollar have a direct and material bearing on input costs and represent the primary external drivers of earnings volatility."
+  "ko": "팜스토리는 1991년 설립된 축산용 배합사료와 육가공을 주력으로 하는 기업으로, 최대주주는 지분 48.72%를 보유한 이지홀딩스그룹이다. 최대주주는 지분 48.72%를 보유한 이지홀딩스로, 사료·축산·육가공 등 농축산 식품 밸류체인을 수직계열화한 지주회사다. 2026년 상반기 기준 매출 비중은 사료 49.6%, 육가공 41.6%, 가금 7.3%, 기타 1.6%로 구성돼 있다. 사료 부문은 원가 변동분을 판매가격에 전가하는 구조를 갖춰 곡물가와 환율 변동에도 안정적 수익성을 유지해왔다. 육가공·양돈 부문은 종속기업 팜스월드(지분율 90%)를 통해 양돈 계열화 사업을 영위한다. 육가공사업부는 수직 계열화를 통한 안정적 원재료 수급과 브랜드육 유통 확대로 수익성을 방어하고 있다. 이지홀딩스그룹 계열사로 배합 사료 제조업 업계 4위 위치에 있다. 국내에서는 농협사료, 카길애그리퓨리나, 팜스코, 제일사료, 사조동아원, 우성사료, 대한사료, 동원팜스, 티에스사료 등과 경쟁하는 구조다. 연결회사는 배합사료 제조, 축산물 임가공 도축 및 관련 도ㆍ소매업을 주 사업으로 영위하고 있으며, 축산업을 영위하는 농장 거래처 및 특수관계자와 거래관계가 존재한다.",
+  "en": "Farmstory, established in 1991, focuses on livestock compound feed and meat processing, with EG Holdings group as its controlling shareholder. The largest shareholder is EG Holdings, which holds a 48.72% stake and is a holding company that has vertically integrated the agri-food value chain including feed, livestock, and meat processing. As of H1 2026, revenue mix consisted of feed at 49.6%, meat processing at 41.6%, poultry at 7.3%, and other at 1.6%. The feed segment has a structure that passes cost changes through to selling prices, maintaining stable profitability despite grain price and exchange rate swings. The meat processing and hog business operates through subsidiary Farms World (90% stake), which runs an integrated hog-raising operation. The meat processing division defends profitability through stable raw material supply via vertical integration and expanded distribution of branded meat. As part of the EG Holdings group, the company ranks fourth in the domestic compound feed manufacturing industry. Domestically it competes with players such as Nonghyup Feed, Cargill Agri Purina, Farmsco, Jeil Feed, Sajo Dongaone, Woosung Feed, Daehan Feed, Dongwon Farm's, and TS Feed. The consolidated group's main businesses are compound feed manufacturing and livestock processing/slaughtering and related wholesale/retail, with lending relationships to farm customers and related parties engaged in livestock farming."
  },
  "earnings": {
-  "ko": "2022년에는 영업이익 315억 원(영업이익률 2.2%)을 기록했음에도 지배주주 순손실 약 48억 원(EPS -43원)이 발생했고, 영업현금흐름(CFO)도 -796억 원으로 저점을 형성했다. 2023년에는 매출 1조 5,002억 원을 기록하며 영업이익이 262억 원(영업이익률 1.7%)으로 회복됐고, 지배주주 순이익도 흑자 전환(약 98억 원)에 성공했다. 2024년에는 영업이익이 408억 원(영업이익률 2.8%)으로 최근 4년 중 가장 높은 수준을 기록했으나, 세전 손실 요인으로 인해 지배주주 순이익은 약 39억 원에 그쳤다. 2025년에는 매출 1조 4,558억 원(전년 대비 +0.13%)으로 소폭 증가에 그쳤고, 영업이익은 350억 원(영업이익률 2.4%)으로 전년 대비 14.3% 감소했음에도, 돈육·한우 시세 상승과 환율 하락에 따른 외환이익 증가 등 비영업 부문 개선으로 지배주주 순이익이 약 301억 원으로 전년 약 39억 원 대비 크게 반등했다. 2025년 CFO는 774억 원으로 2022년 -796억 원 대비 1,570억 원 이상 개선됐으며, 부채비율도 291.3%(2022) → 267.7%(2023) → 223.4%(2024) → 186.6%(2025)로 4년 연속 하락했다. 분기별 계절성이 뚜렷한데, 2025년 2분기(영업이익 159억 원)·3분기(193억 원)에 이익이 집중되고, 4분기(영업손실 39억 원)·1분기(영업이익 37억 원)가 상대적으로 약한 패턴이 반복된다. 2026년 1분기는 매출 3,471억 원으로 전년 동기 대비 2.6% 줄었으나, 영업이익은 87억 원으로 전년 동기(37억 원) 대비 136% 급증해 원가 절감·비용 효율화의 실질 효과가 확인됐다. 다만 2026년 1분기 지배주주 순이익은 -20억 원으로 적자 전환, 영업이익 개선에도 비영업 항목이 이익을 잠식했다는 점은 이익의 질 관점에서 주의가 필요하다.",
-  "en": "In 2022, despite an operating profit of 31.5 billion KRW (OPM 2.2%), the company posted a net loss attributable to controlling shareholders of approximately 4.8 billion KRW (EPS -43 KRW), and operating cash flow (CFO) bottomed out at -79.6 billion KRW. In 2023, revenue reached 1,500.2 billion KRW and operating profit recovered to 26.2 billion KRW (OPM 1.7%), with net income attributable to controlling shareholders turning positive at approximately 9.8 billion KRW. In 2024, operating profit climbed to 40.8 billion KRW (OPM 2.8%), the highest in the four-year series, but a pre-tax loss reduced net income attributable to controlling shareholders to just approximately 3.9 billion KRW. In 2025, revenue grew a marginal 0.13% to 1,455.8 billion KRW and operating profit fell 14.3% to 35.0 billion KRW (OPM 2.4%), yet net income attributable to controlling shareholders rebounded sharply to approximately 30.1 billion KRW from approximately 3.9 billion KRW in 2024, driven by higher pork and hanwoo prices and foreign exchange gains from won appreciation. CFO improved dramatically to 77.4 billion KRW in 2025 from -79.6 billion KRW in 2022, and the debt-to-equity ratio fell for four consecutive years from 291.3% to 186.6%. Quarterly earnings show a pronounced seasonal pattern, with earnings concentrated in Q2 2025 (operating profit 15.9 billion KRW) and Q3 2025 (19.3 billion KRW), while Q4 posted an operating loss of 3.9 billion KRW and Q1 remained subdued at 3.7 billion KRW. In Q1 2026, revenue declined 2.6% year-on-year to 347.1 billion KRW, but operating profit surged 135.9% to 8.7 billion KRW from 3.7 billion KRW in the prior-year period, confirming the effectiveness of cost reduction measures; however, net income attributable to controlling shareholders swung to a loss of 2.0 billion KRW as below-the-line items offset operating gains, warranting attention to earnings quality."
+  "ko": "연결 매출액은 2022년 1조 4,264억원, 2023년 1조 5,002억원, 2024년 1조 4,539억원, 2025년 1조 4,559억원으로 최근 4년간 1조 4천억~1조 5천억원대에서 등락했다. 영업이익은 2022년 314.6억원, 2023년 262.5억원, 2024년 407.8억원, 2025년 349.7억원을 기록했고, 영업이익률은 2.2%, 1.7%, 2.8%, 2.4%로 완만하게 변동했다. 지배주주 순이익은 2022년 -75.5억원 적자에서 2023년 100.1억원, 2024년 38.9억원으로 흑자를 유지했고, 2025년에는 301.1억원으로 크게 늘었다. 이 같은 실적 변동은 돈육 및 한우시세 상승에 따른 매출 증가와 환율 하락에 따른 외환이익 증가로 인한 것으로 공시됐다. 분기별로는 2025년 3분기 지배주주 순이익 109.2억원 흑자 이후 4분기에는 영업이익 -39.3억원, 순이익 -33.7억원으로 적자 전환했다. 2026년 1분기에도 영업이익은 86.9억원으로 개선됐지만 순이익은 -20.3억원 적자를 기록했으며, 2분기에는 영업이익 176.4억원, 순이익 113.0억원으로 다시 흑자 전환했다. 2026년 1분기는 전년동기 대비 연결기준 매출액이 2.6% 감소했음에도 영업이익은 135.9% 증가했는데, 배합사료 시장 성장 둔화와 생산량 감소 속에서도 원가 절감 및 비용 효율화로 매출총이익과 영업이익이 개선됐다. 이처럼 팜스토리의 이익은 사료 부문의 안정적 마진과 축산물 시세, 환율 변동성이 겹쳐 분기별로 편차가 크게 나타나는 구조를 보인다.",
+  "en": "Consolidated revenue was KRW 1.4264 trillion in 2022, KRW 1.5002 trillion in 2023, KRW 1.4539 trillion in 2024, and KRW 1.4559 trillion in 2025, fluctuating within the KRW 1.4-1.5 trillion range over the past four years. Operating profit came in at KRW 31.46 billion in 2022, KRW 26.25 billion in 2023, KRW 40.78 billion in 2024, and KRW 34.97 billion in 2025, with operating margin moving modestly at 2.2%, 1.7%, 2.8%, and 2.4%. Attributable net profit went from a loss of KRW 7.55 billion in 2022 to profits of KRW 10.01 billion in 2023 and KRW 3.89 billion in 2024, then jumped to KRW 30.11 billion in 2025. This earnings swing was disclosed as resulting from higher revenue from rising pork and Korean beef prices along with increased foreign exchange gains from a weaker exchange rate. By quarter, after an attributable net profit of KRW 10.92 billion in Q3 2025, the company swung to an operating loss of KRW 3.93 billion and a net loss of KRW 3.37 billion in Q4 2025. In Q1 2026 operating profit improved to KRW 8.69 billion but net profit posted a loss of KRW 2.03 billion, before Q2 2026 turned profitable again with operating profit of KRW 17.64 billion and net profit of KRW 11.30 billion. In Q1 2026, consolidated revenue fell 2.6% year-on-year while operating profit rose 135.9%, as gross profit and operating profit improved through cost reduction and efficiency measures despite slowing compound feed market growth and lower production volumes. Overall, Farmstory's earnings show a structure where stable feed-segment margins overlap with livestock price and exchange rate volatility, producing large quarter-to-quarter swings."
  },
  "industry": {
-  "ko": "국내 축산 배합사료 및 신선육 시장은 팜스코(하림그룹), 선진, 팜스토리 등 소수 대형 업체가 주도하는 과점 구조로, 엄격해진 환경 규제와 대규모 시설 투자 요건이 진입장벽으로 작용하고 있다. 배합사료 수요는 전방 축산업 규모에 연동되는데, 2026년 2월 기준 사육돼지 두수가 전년 대비 약 3.2% 감소한 약 363만 두 수준으로 나타나는 등 사육 규모 축소가 사료 판매량 성장을 제약하는 요인으로 부각되고 있다. 2026년 한우 도축 마릿수는 사육 마릿수 감소로 전년 대비 약 8% 감소한 86만 2천 마리 수준으로 예상되며, 공급 감소에 따라 한우 거세우 가격은 '두당 평균 1천만 원 시대'가 언급될 정도로 강세를 보이고 있다. 돼지 도축 마릿수는 2025년 대비 소폭 늘어난 1,853만~1,901만 마리로 전망되어 돈육 원재료 수급은 비교적 안정적 흐름이 예상된다. 국제 곡물가격과 환율은 사료 원가의 최대 변수로, 2025년 11월~2026년 2월 사이 배합사료 평균 가격이 kg당 597원에서 615원으로 3% 상승하는 등 비용 압박이 실제 지표로 확인되고 있다. ASF(아프리카돼지열병)는 2026년에도 국내 산발적 발생이 이어지고 있어 양돈 농가 운영 리스크와 사료 수요 감소 가능성이 상존한다. 소비자 물가 상승과 경기 부진이 중첩되며 고가 축산물 소비가 위축되고 있으나, 할인 채널 확대와 외식 수요 회복은 하방을 일부 지지하고 있다.",
-  "en": "The domestic compound feed and fresh meat market is an oligopoly dominated by a small number of large players including Farmco (Harim Group), Sungjin, and Farmstory, with tightening environmental regulations and large capital investment requirements acting as significant entry barriers. Demand for compound feed is tightly linked to the size of the upstream livestock industry; the number of pigs raised declined approximately 3.2% year-on-year to around 3.63 million head as of February 2026, with this contraction in herd size emerging as a constraint on feed volume growth. Korean cattle slaughter in 2026 is forecast to fall approximately 8% year-on-year to around 862,000 head due to a declining breeding population, with hanwoo steer prices strengthening into what is being described as a new high-price era. Pork slaughter is projected to be slightly higher at approximately 18.53 to 19.01 million head in 2026, suggesting relatively stable conditions for pork raw material supply. International grain prices and foreign exchange rates are the most critical cost variables; compound feed average prices rose 3% from 597 KRW/kg in November 2025 to 615 KRW/kg in February 2026, reflecting imported raw material cost pressure in real-time data. African Swine Fever (ASF) continues to generate sporadic domestic outbreaks in 2026, maintaining operational risk at pig farms and a potential drag on feed demand. Rising consumer prices and prolonged economic weakness are suppressing demand for premium livestock products, though expansion of discount retail channels and a partial food-service recovery provide some floor support."
+  "ko": "국내 배합사료 산업은 사육 여건 변화와 시장 성장 둔화, 국내 생산량 감소 국면에 있는 것으로 파악된다. 사료 부문 영업이익률은 2019년 이후 3.6~4.4% 범위에서 형성됐으며 2026년 상반기에도 4.21%를 기록했다. 사료용 곡물의 달러 기준 수입단가는 오르는 추세지만, 최근 원/달러 환율 하락이 원화 기준 원재료비 상승 폭을 제한하는 요인으로 지목된다. 상반기 국내 배합사료 생산량과 판매량 감소로 사료 부문 매출이 줄었으나, 하반기 판매가격 인상이 이를 일부 상쇄할 것으로 예상된다. 2023년부터 2025년 사이 매출액이 12.3% 줄어드는 동안에도 영업이익 감소폭은 5.9%에 그쳐 외형 변화 대비 이익 변동이 제한적이었다. 육가공·양돈 부문은 돼지·한우 등 축산물 시세와 도축·판매물량에 실적이 연동되는 특성을 가진다. 육가공 부문은 도축·양돈 판매물량 감소로 매출은 소폭 줄겠지만 팜스월드를 중심으로 수익성은 개선될 것으로 전망됐다. 국내 배합사료 상장사 5곳(한일사료, 선진, 팜스코, 고려산업, 대주산업)으로 구성한 피어그룹과 비교했을 때 팜스토리의 주가 대비 자산가치 배수는 피어그룹 평균과 유사한 수준으로 거론된다.",
+  "en": "The domestic compound feed industry appears to be in a phase of slowing market growth and declining domestic production. The feed segment's operating margin stayed in the 3.6-4.4% range since 2019 and recorded 4.21% in H1 2026. The dollar-denominated import price of feed grains is trending higher, but a recent decline in the won-dollar exchange rate has been cited as limiting the won-denominated rise in raw material costs. Feed segment revenue fell in H1 due to lower domestic compound feed production and sales volumes, but a H2 price increase is expected to partly offset this. Between 2023 and 2025, revenue fell 12.3% while operating profit declined only 5.9%, showing limited profit swings relative to top-line changes. The meat processing and hog segment has performance tied to livestock prices for pork and Korean beef along with slaughter and sales volumes. The meat processing segment's revenue is expected to decline slightly due to lower slaughter and hog sales volumes, but profitability is expected to improve, centered on Farms World. Compared with a peer group of five domestic listed feed companies (Hanil Feed, Sunjin, Farmsco, Koryo Industry, and Daeju Industrial), Farmstory's price-to-book multiple has been described as similar to the peer group average."
  },
  "outlook": {
-  "ko": "팜스토리는 2026년에도 수직계열화 기반의 원가 효율화 전략을 지속하고 있으며, 2026년 1분기 영업이익 136% 급증이 이를 뒷받침한다. 한우 공급 감소에 따른 가격 강세 사이클은 육가공사업부 수익성 개선에 우호적인 환경을 제공하고 있다. 반면 중동 긴장 등에 따른 국제 곡물가격 상승 압력과 환율 상승은 사료 원가를 끌어올려 마진 스프레드를 압박하는 역풍으로 작용할 수 있다. ASF 산발적 발생이 이어지는 상황에서 방역 체계 유지와 브랜드육 유통 채널 확대가 사업 연속성의 주요 관건이다. 2025년에 본격화된 부채 감축 기조는 이자비용 절감을 통해 영업이익 대비 세전·세후 이익 전환율 개선에 기여할 전망이며, CFO 개선 추세가 유지될 경우 재무 유연성도 높아질 수 있다. 정부는 2027년도 축산 예산을 생산성 향상·탄소중립 중심으로 편성할 방침이며, 이는 중장기적으로 친환경·고생산성 사료 솔루션 수요가 구조적으로 확대될 가능성을 시사한다. 현재 공개된 신규 대규모 증설·M&A·구체적 가이던스는 확인되지 않으며, 사료 가격 전가 여부·축산물 시황·환율 흐름이 단기 실적의 방향성을 결정할 핵심 변수다.",
-  "en": "Farmstory continues to execute its vertical integration-based cost efficiency strategy in 2026, supported by the 135.9% year-on-year operating profit surge in Q1 2026. The tighter hanwoo supply and strengthening price cycle is creating favorable conditions for Meat Processing Division profitability. Conversely, international grain price pressures driven by Middle East tensions and a weaker Korean won could push up feed input costs and compress margin spreads as a headwind. With sporadic ASF outbreaks continuing, maintaining robust biosecurity and expanding branded-meat distribution channels are the primary factors for business continuity. The debt reduction momentum that accelerated in 2025 is expected to reduce interest expenses and improve pre- and post-tax profit conversion relative to operating profit; sustained CFO improvement could also enhance financial flexibility going forward. The Korean government has announced plans to focus its 2027 livestock budget on productivity improvement and carbon neutrality, which may structurally expand demand for eco-friendly and high-productivity feed solutions over the medium to long term. No major publicly disclosed capacity expansion plans, M&A announcements, or specific earnings guidance have been identified; the ability to pass through feed price increases, livestock market conditions, and exchange rate trends will be the decisive variables for near-term earnings direction."
+  "ko": "한국IR협의회 기업리서치센터는 9월 2일 발간한 기업분석 보고서에서 팜스토리의 투자포인트로 사료 부문의 이익 안정성에 기반한 배당 확대와 종속기업 팜스월드의 손익 정상화를 꼽았다. 해당 보고서는 팜스토리의 2026년 실적을 매출액 1조 4,545억원(-0.1%, 전년 대비), 영업이익 390억원(+11.4%)으로 전망했으며, 부문별로는 사료 8,133억원(-1.3%), 육가공 6,903억원(-0.9%), 가금 1,124억원(+5.2%)이 예상된다고 밝혔다. 육가공 부문 수익성 개선에 힘입어 전사 영업이익률은 2025년 2.4%에서 2026년 2.7%로 오를 것으로 제시됐다. 보고서는 2025년 9월 500억원 규모 유상증자(팜스토리 450억원 출자)로 팜스월드의 차입금이 1,494억원에서 1,039억원으로 줄고 자본총계가 278억원으로 전환됐다고 설명했다. 2026년 상반기 팜스월드 순이익은 102억원, 순이익률은 11.6%를 기록한 것으로 전해졌다. 2026년에도 유사한 수준의 주주환원이 예상된다는 전망도 함께 제시됐다. 다만 이는 특정 리서치센터가 9월 초 시점에 내놓은 추정치로, 회사가 확정한 가이던스와는 구분해서 볼 필요가 있다. 사료 부문은 하반기 판매가격 인상 시행 여부와 곡물 수입단가, 원/달러 환율 추이가 원가 부담 방향을 좌우할 변수로 남아 있다.",
+  "en": "The Korea IR Service Corporate Research Center, in an analysis report published on September 2, cited dividend expansion backed by feed-segment earnings stability and the earnings normalization of subsidiary Farms World as investment points for Farmstory. The report forecast Farmstory's 2026 results at revenue of KRW 1.4545 trillion (-0.1% year-on-year) and operating profit of KRW 39.0 billion (+11.4%), with segment estimates of feed at KRW 813.3 billion (-1.3%), meat processing at KRW 690.3 billion (-0.9%), and poultry at KRW 112.4 billion (+5.2%). Driven by improved meat-processing profitability, the company-wide operating margin was projected to rise from 2.4% in 2025 to 2.7% in 2026. The report explained that a KRW 50 billion rights offering in September 2025 (with Farmstory contributing KRW 45 billion) reduced Farms World's borrowings from KRW 149.4 billion to KRW 103.9 billion and turned total equity positive at KRW 27.8 billion. Farms World's H1 2026 net profit was reported at KRW 10.2 billion with an 11.6% net margin. A similar level of shareholder returns was also projected for 2026. However, this is an estimate from a specific research center as of early September and should be distinguished from confirmed company guidance. For the feed segment, whether H2 price increases are implemented, along with grain import cost and won-dollar exchange rate trends, remain the key variables determining the direction of cost pressure."
  },
  "valuation_comment": {
-  "ko": "현재 주가는 BPS(주당순자산 2,421원) 대비 절반 이하 구간에서 거래되고 있어 순자산 대비 상당한 할인 구간에 위치한다. 주당순이익(EPS) 209원 기준 배수는 동종 코스닥 식음료 업종의 역사적 거래 밴드 상단을 크게 하회하는 한 자릿수 수준으로, 낮은 이익 배수 구간임을 나타낸다. DPS 100원 기준 배당수익률은 코스닥 식음료 업종 평균을 크게 상회하는 수준으로, 주주환원 관점에서 상대적으로 부각될 수 있다. 다만 영업이익률이 2~3%대의 박리다매 구조이고, 분기별 이익 변동성이 크며, 최근 4개 분기 순이익이 외환이익 등 비영업 항목 기여에 일부 의존하고 있다는 점이 현 할인 수준을 정당화하는 요인으로 작용하고 있다. 부채비율의 지속적 개선과 CFO 회복 추세가 유지되고, 비영업 의존 없는 영업이익 안정화가 가시화될 경우, 현재의 순자산 대비 할인 폭이 좁혀질 수 있는 환경이 조성될 수 있다.",
-  "en": "The stock is currently trading at a substantial discount to net asset value, with the share price well below half the book value per share (BPS of 2,421 KRW per the most recent annual calculation). Based on an EPS of 209 KRW over the most recent four-quarter window, the implied earnings multiple is in the single-digit range, significantly below the historical trading band observed for comparable KOSDAQ food and beverage peers. The DPS of 100 KRW supports a dividend yield that materially exceeds the KOSDAQ food and beverage sector average, making the shareholder return profile relatively visible. That said, the structurally thin operating margin in the 2–3% range, high inter-quarter earnings volatility, and the partial reliance on non-operating items such as foreign exchange gains in the most recent four-quarter earnings period serve as structural factors justifying the current discount. Should the trends of sustained debt ratio improvement and CFO recovery continue, and should stabilization of operating profit without reliance on non-operating contributions become visible, conditions may develop for the current deep discount to net asset value to narrow."
+  "ko": "한국IR협의회 기업리서치센터는 9월 2일 보고서에서 팜스토리 주가가 2021년 이후 주가순자산비율(PBR) 0.3배에서 2.5배 사이에서 형성돼 왔으며, 2026년 추정 실적 기준으로는 그 밴드의 하단 부근에 위치한 것으로 평가했다. 같은 보고서는 국내 배합사료 상장사 5곳으로 구성한 피어그룹과 비교해도 팜스토리의 주가 대비 자산가치 배수가 피어그룹 평균과 유사한 수준을 나타냈다고 밝혔다. 배당 측면에서는 2025년 결산배당이 2023~2024년 대비 4배로 확대됐고 배당성향은 36.7%를 기록했다. 이런 배당 확대 흐름은 사료 부문의 판가 연동 구조에 기반한 이익 안정성이 뒷받침하고 있다는 설명이다. 이는 특정 시점 리서치센터의 평가이며, 시장 참여자별로 밸류에이션에 대한 시각은 달라질 수 있다.",
+  "en": "The Korea IR Service Corporate Research Center noted in its September 2 report that Farmstory's price-to-book ratio (PBR) has ranged from 0.3x to 2.5x since 2021, and that on a 2026 estimated basis it sits near the lower end of that band. The same report stated that, compared with a peer group of five domestic listed feed companies, Farmstory's price-to-book multiple was similar to the peer group average. On dividends, the FY2025 year-end dividend was expanded fourfold versus 2023-2024, with a payout ratio of 36.7%. This dividend expansion trend is described as being supported by earnings stability rooted in the feed segment's cost pass-through pricing structure. This reflects one research center's assessment at a specific point in time, and views on valuation may differ across market participants."
  },
  "bull": [
   {
    "title": {
-    "ko": "수직계열화 기반 원가 효율화",
-    "en": "Cost Efficiency via Completed Vertical Integration"
+    "ko": "사료 부문 이익 안정성과 배당 확대",
+    "en": "Feed Segment Earnings Stability and Dividend Growth"
    },
    "body": {
-    "ko": "사료→양돈농장→도축·육가공에 이르는 수직계열화는 외부 원재료 조달 리스크를 줄이고 공정 간 시너지를 창출하며, 수익성 방어의 구조적 기반이 된다. 2026년 1분기 원가 절감·비용 효율화가 영업이익 136% 증가로 실증된 만큼, 이 기조가 유지될 경우 연간 영업이익 개선 여지가 있다. HACCP 인증과 브랜드육 유통 확대를 통한 품질 차별화는 단순 원가 경쟁을 넘어선 포지셔닝을 지원한다.",
-    "en": "Vertical integration from feed manufacturing through pig farming, slaughtering, and meat processing reduces reliance on external raw material procurement, generates inter-process synergies, and forms a structural foundation for margin defense. The 135.9% year-on-year operating profit surge in Q1 2026 demonstrates that ongoing cost reduction and efficiency measures can drive meaningful operating improvement on a full-year basis if sustained. HACCP certification and branded-meat distribution expansion support a quality-differentiated positioning that goes beyond simple cost competition."
+    "ko": "사료 부문은 원가 변동분을 판매가격에 전가하는 구조를 갖춰 곡물가와 환율 변동 속에서도 영업이익률이 2019년 이후 3.6~4.4% 범위에서 유지됐고 2026년 상반기에도 4.21%를 기록했다. 이 같은 이익 안정성을 바탕으로 2025년 결산배당은 2023~2024년 대비 4배로 확대됐고 배당성향은 36.7%를 기록했다. 특정 리서치센터는 2026년에도 유사한 수준의 주주환원이 이어질 것으로 전망했다.",
+    "en": "The feed segment's structure of passing cost changes through to selling prices kept its operating margin in the 3.6-4.4% range since 2019 despite grain price and exchange rate swings, recording 4.21% in H1 2026. Backed by this earnings stability, the FY2025 year-end dividend was expanded fourfold versus 2023-2024, with a payout ratio of 36.7%. A research center projected a similar level of shareholder returns to continue in 2026."
    }
   },
   {
    "title": {
-    "ko": "한우 가격 강세 사이클 및 재무 구조 개선",
-    "en": "Hanwoo Price Strength Cycle and Structural Balance Sheet Improvement"
+    "ko": "팜스월드 손익 정상화",
+    "en": "Farms World Earnings Normalization"
    },
    "body": {
-    "ko": "2026년 한우 도축 마릿수가 전년 대비 약 8% 감소할 것으로 전망되며, '거세우 두당 평균 1천만 원 시대'로 불리는 한우 가격 강세가 육가공사업부 수익성 개선의 유리한 여건을 조성한다. 부채비율이 2022년 291.3%에서 2025년 186.6%로 4년 연속 하락하며 이자비용 절감 효과가 점차 세전이익으로 전환되고 있다. 영업현금흐름이 2022년 -796억에서 2025년 +774억으로 대폭 반등해 재무 유연성이 회복되고 있는 구간이다.",
-    "en": "Korean cattle slaughter is projected to fall approximately 8% in 2026, and hanwoo steer prices have entered what is being described as a new high-price era, creating favorable conditions for Meat Processing Division profitability improvement. The debt-to-equity ratio has declined for four consecutive years from 291.3% in 2022 to 186.6% in 2025, with interest expense savings increasingly flowing through to pre-tax profit. Operating cash flow has swung dramatically from -79.6 billion KRW in 2022 to +77.4 billion KRW in 2025, indicating the company is in a phase of recovering financial flexibility."
+    "ko": "양돈 계열화 자회사 팜스월드는 2022~2023년 영업적자를 냈으나 2024년 흑자로 전환했고 2025년 영업이익은 37억원으로 전년 대비 81.9% 늘었다. 2025년 9월 500억원 규모 유상증자를 통해 완전자본잠식을 해소하고 차입금을 1,494억원에서 1,039억원으로 줄였다. 2026년 상반기 순이익은 102억원, 순이익률은 11.6%를 기록한 것으로 전해졌다.",
+    "en": "Hog integration subsidiary Farms World posted operating losses in 2022-2023 but turned profitable in 2024, with 2025 operating profit rising 81.9% year-on-year to KRW 3.7 billion. A KRW 50 billion rights offering in September 2025 resolved full capital impairment and cut borrowings from KRW 149.4 billion to KRW 103.9 billion. H1 2026 net profit was reported at KRW 10.2 billion with an 11.6% net margin."
    }
   },
   {
    "title": {
-    "ko": "순자산 대비 깊은 할인 및 높은 배당 가시성",
-    "en": "Deep Book Value Discount and High Dividend Visibility"
+    "ko": "연간 순이익 개선 흐름",
+    "en": "Improving Annual Net Profit Trend"
    },
    "body": {
-    "ko": "현재 주가는 BPS 2,421원 대비 절반 이하 구간에서 거래되고 있어, 이익 구조의 안정화가 가시화될 경우 밸류에이션 재평가의 트리거가 될 수 있다. DPS 100원은 업종 평균을 상회하는 배당수익률을 제공해 주주환원 관점에서 방어적 특성을 갖는다. 적자(2022년)에서 흑자로 전환한 이후 이익 회복 추세가 이어지고 있어 재무 신뢰도 회복을 지지하는 근거로 작용할 수 있다.",
-    "en": "The current share price trades at less than half the book value per share (BPS of 2,421 KRW), meaning visible stabilization of the earnings structure could serve as a re-rating catalyst. A DPS of 100 KRW delivers a dividend yield above the sector average, providing a defensive income characteristic from a shareholder return perspective. The multi-year trend of recovering from a net loss in 2022 to sustained profitability may further reinforce financial credibility with the market as progress continues."
+    "ko": "지배주주 순이익은 2022년 -75.5억원 적자에서 2023년 100.1억원, 2024년 38.9억원으로 흑자를 유지했고 2025년에는 301.1억원으로 크게 늘었다. 이 확대는 돈육 및 한우 시세 상승에 따른 매출 증가와 환율 하락에 따른 외환이익 증가가 반영된 결과로 공시됐다. 다만 분기별로는 2025년 4분기와 2026년 1분기에 순이익이 적자를 기록하는 등 변동성이 상존한다.",
+    "en": "Attributable net profit went from a loss of KRW 7.55 billion in 2022 to profits of KRW 10.01 billion in 2023 and KRW 3.89 billion in 2024, then rose sharply to KRW 30.11 billion in 2025. This expansion was disclosed as reflecting higher revenue from rising pork and Korean beef prices along with increased foreign exchange gains from a weaker exchange rate. However, volatility persists, with net losses recorded in Q4 2025 and Q1 2026."
    }
   }
  ],
  "bear": [
   {
    "title": {
-    "ko": "구조적 저마진 및 분기별 이익 변동성",
-    "en": "Structurally Thin Margins and High Quarterly Earnings Volatility"
+    "ko": "사료 판매량 감소와 시장 성장 둔화",
+    "en": "Declining Feed Volumes and Slowing Market Growth"
    },
    "body": {
-    "ko": "영업이익률이 2~3%대에 머무르는 박리다매 구조로, 원재료 가격이나 축산물 시세가 소폭만 불리해져도 이익이 크게 훼손된다. 2025년 4분기 영업손실(39억 원), 2026년 1분기 지배주주 순손실(-20억 원) 등 분기별 적자가 반복되며 연간 이익의 지속 가능성에 대한 불확실성이 존재한다. 2025년 순이익 급반등이 외환이익 등 비영업 항목에 크게 의존한 만큼, 이를 영업 본업의 회복으로 일반화하는 데 주의가 필요하다.",
-    "en": "With operating margins consistently in the 2–3% range, earnings are highly sensitive to even modest adverse moves in raw material costs or livestock prices. Recurring quarterly losses — including a Q4 2025 operating loss of 3.9 billion KRW and a Q1 2026 net loss attributable to controlling shareholders of 2.0 billion KRW — leave uncertainty over the sustainability of annual earnings. The large 2025 net profit rebound was substantially driven by non-operating items such as foreign exchange gains, and caution is warranted before treating this as a straightforward improvement in core operating fundamentals."
+    "ko": "배합사료 시장 성장 둔화와 국내 생산량 감소로 상반기 사료 부문 매출이 줄었다. 2023년부터 2025년 사이 매출액은 12.3% 감소했으며, 2026년에도 사료 부문 매출은 전년 대비 1.3% 줄어들 것으로 전망됐다. 하반기 판매가격 인상이 매출 감소를 일부 상쇄할 수 있을지가 관전 포인트다.",
+    "en": "Slowing compound feed market growth and lower domestic production reduced feed segment revenue in H1. Revenue fell 12.3% between 2023 and 2025, and feed segment revenue in 2026 is also expected to decline 1.3% year-on-year. Whether H2 price increases can offset the revenue decline remains a point to watch."
    }
   },
   {
    "title": {
-    "ko": "국제 곡물가격·환율 상승에 따른 원가 압박",
-    "en": "Input Cost Pressure from Rising Grain Prices and Exchange Rate Weakness"
+    "ko": "분기별 실적 변동성",
+    "en": "Quarterly Earnings Volatility"
    },
    "body": {
-    "ko": "사료 원료 곡물의 90% 이상을 수입에 의존하는 구조로, 환율 상승과 국제 곡물가격 변동이 원가에 직격한다. 2025년 11월~2026년 2월 사이 배합사료 평균 가격이 kg당 597원에서 615원으로 3% 상승하는 등 원가 압박이 지표로 나타나고 있으며, 중동 지역 긴장으로 추가 급등 가능성도 거론된다. 원가 상승분을 판매가격에 적시 전가하기 어려운 시장 구조에서, 마진 스프레드는 외생 변수에 의해 쉽게 잠식될 수 있다.",
-    "en": "More than 90% of key feed raw materials including corn are imported, meaning exchange rate depreciation and global grain price volatility directly inflate input costs. Compound feed average prices already rose 3% from 597 KRW/kg in November 2025 to 615 KRW/kg in February 2026, with the risk of further sharp increases cited amid Middle East geopolitical tensions. In a market structure where passing through cost increases to customers in a timely manner is difficult, margin spreads can be quickly eroded by external variables outside management's control."
+    "ko": "2025년 3분기 지배주주 순이익 109.2억원 흑자 이후 4분기에는 영업이익 -39.3억원, 순이익 -33.7억원으로 적자 전환했다. 2026년 1분기에도 영업이익은 86.9억원으로 개선됐지만 순이익은 -20.3억원 적자를 기록했고, 2분기에 다시 176.4억원 영업이익과 113.0억원 순이익으로 흑자 전환했다. 이처럼 분기별 편차가 커 특정 분기 실적만으로 추세를 단정하기 어렵다.",
+    "en": "After an attributable net profit of KRW 10.92 billion in Q3 2025, the company swung to an operating loss of KRW 3.93 billion and a net loss of KRW 3.37 billion in Q4 2025. Q1 2026 operating profit improved to KRW 8.69 billion but net profit posted a loss of KRW 2.03 billion, before Q2 2026 turned profitable again with operating profit of KRW 17.64 billion and net profit of KRW 11.30 billion. With such large quarter-to-quarter swings, it is difficult to draw a trend from any single quarter's results."
    }
   },
   {
    "title": {
-    "ko": "ASF 등 가축 전염병 및 소비 부진 리스크",
-    "en": "Livestock Disease Risk (ASF) and Persistent Consumer Spending Weakness"
+    "ko": "육가공·양돈 판매물량 감소",
+    "en": "Declining Meat Processing and Hog Sales Volumes"
    },
    "body": {
-    "ko": "ASF는 2026년에도 국내 양돈 농장에서 산발적 발생이 이어지고 있으며, 대규모 확산 시 양돈 농장 운영과 돈육 원재료 수급, 사료 수요에 동시 충격을 줄 수 있다. 경기 침체 장기화에 따른 소비 위축으로 고가 축산물 판매 부진이 계속되고 있어 육가공사업부의 단가·판매량 양면에서 하방 압력이 존재한다. 조류인플루엔자(AI) 등 다른 가축 전염병의 동시 발생 가능성도 가금사업부(마니커에프앤지) 수익성을 위협하는 잠재 리스크다.",
-    "en": "ASF continues to generate sporadic domestic outbreaks at pig farms in 2026, with the risk that a large-scale spread could simultaneously disrupt pig farm operations, pork raw material supply, and feed demand. A prolonged consumer spending slowdown is sustaining weak demand for premium livestock products, creating downward pressure on both unit prices and volumes in the Meat Processing Division. The additional risk of simultaneous outbreaks of other livestock diseases such as avian influenza (AI) represents a latent threat to the profitability of the Poultry Division (Manicor F&G)."
+    "ko": "육가공 부문은 도축·양돈 판매물량 감소로 매출이 소폭 줄어들 것으로 전망됐다. 2026년 육가공 매출은 전년 대비 0.9% 감소가 예상되며, 수익성은 팜스월드를 중심으로 개선되겠지만 외형 성장은 제한적인 구조다. 축산물 시세와 물량 변화에 실적이 민감하게 반응하는 사업 특성이 이어지고 있다.",
+    "en": "The meat processing segment's revenue is expected to decline slightly due to lower slaughter and hog sales volumes. Meat processing revenue in 2026 is expected to fall 0.9% year-on-year, and while profitability is expected to improve centered on Farms World, top-line growth remains limited. The business continues to show sensitivity to changes in livestock prices and sales volumes."
    }
   }
  ],
  "risks": [
   {
    "cat": {
-    "ko": "원자재 및 환율 리스크",
-    "en": "Raw Material and Foreign Exchange Risk"
+    "ko": "곡물가·환율 리스크",
+    "en": "Grain Price and FX Risk"
    },
    "body": {
-    "ko": "옥수수 등 주요 사료 원료의 90% 이상을 수입에 의존하는 구조상, 국제 곡물가격 급등이나 원·달러 환율 상승은 원가를 직접 끌어올린다. 중동 지역 지정학적 긴장 등 외생 변수로 글로벌 곡물가격 급등 가능성이 업계에서 거론되고 있으며, 유가 상승까지 겹칠 경우 '삼중고'가 발생할 수 있다. 원가 상승분이 판매가격에 적시에 전가되지 못할 경우, 이미 얇은 영업이익률이 추가 압박을 받을 수 있다.",
-    "en": "The structural reliance on imports for more than 90% of key feed raw materials such as corn means that a sharp rise in international grain prices or a weaker Korean won directly and immediately inflates input costs. External factors including geopolitical tensions in the Middle East have raised the possibility of a sudden spike in global grain prices, with the simultaneous rise in oil prices potentially creating a triple cost burden. Failure to pass through cost increases to customers in a timely manner could place further pressure on already thin operating margins."
+    "ko": "사료용 곡물의 달러 기준 수입단가는 상승 추세에 있으며, 원/달러 환율 변동은 원화 기준 원재료비에 직접적 영향을 준다. 판가 연동 구조가 있더라도 급격한 환율·곡물가 변동 시 일시적으로 마진이 압박받을 수 있다. 환율이 다시 상승 전환할 경우 원재료비 상승 폭을 제한해온 우호적 효과가 약화될 수 있다.",
+    "en": "Dollar-denominated import prices for feed grains are on an upward trend, and won-dollar exchange rate movements directly affect won-denominated raw material costs. Even with a cost pass-through structure, sharp swings in exchange rates or grain prices could temporarily pressure margins. If the exchange rate reverses toward strengthening of the dollar, the favorable effect that has limited raw material cost increases could weaken."
    }
   },
   {
    "cat": {
-    "ko": "가축 전염병 리스크",
-    "en": "Livestock Disease Risk"
+    "ko": "축산물 시세 변동성",
+    "en": "Livestock Price Volatility"
    },
    "body": {
-    "ko": "ASF는 치사율이 최고 100%에 달하는 바이러스성 질병으로 양돈 산업 전체에 심각한 경제적 피해를 줄 수 있다. 2026년에도 국내 산발적 발생이 지속되고 있으며, 대규모 확산 시 팜스토리의 양돈 농장 운영과 사료 수요, 육가공 원재료 수급이 동시에 타격을 받을 수 있다. 조류인플루엔자 발생은 가금사업부(마니커에프앤지)에 직접적인 타격을 주는 추가 리스크 요인이다.",
-    "en": "ASF is a viral disease with a fatality rate of up to 100% in acute cases, capable of causing severe economic damage across the entire domestic pork industry. Sporadic outbreaks have continued into 2026, and a large-scale spread could simultaneously disrupt Farmstory's pig farm operations, feed demand, and raw material supply for meat processing. Avian influenza outbreaks represent an additional direct risk factor that could materially impact the Poultry Division (Manicor F&G)."
+    "ko": "육가공·양돈·가금 부문 실적은 돼지·한우·닭 등 축산물 시세와 도축·판매물량에 연동돼 있다. 2025년 실적 개선에는 돈육·한우 시세 상승이 긍정적으로 작용했으나, 시세가 역방향으로 움직일 경우 실적이 다시 악화될 수 있다. 축산물 시세는 국내외 수급, 가축전염병 등 외부 요인에 크게 좌우된다.",
+    "en": "Performance in the meat processing, hog, and poultry segments is tied to livestock prices for pork, Korean beef, and chicken along with slaughter and sales volumes. Rising pork and Korean beef prices contributed positively to the 2025 earnings improvement, but a reversal in these prices could weigh on results again. Livestock prices are heavily influenced by external factors such as domestic and international supply-demand conditions and livestock disease outbreaks."
    }
   },
   {
    "cat": {
-    "ko": "축산물 소비 둔화 및 경쟁 심화 리스크",
-    "en": "Livestock Consumption Slowdown and Intensifying Competition Risk"
+    "ko": "관계사·자회사 신용 및 재무 리스크",
+    "en": "Related-Party and Subsidiary Credit/Financial Risk"
    },
    "body": {
-    "ko": "소비자 물가 상승과 경기 침체 장기화로 고가 축산물(한우 등심 등) 소비가 위축되고, 가성비 소비 트렌드가 심화되고 있어 육가공사업부 수익성에 구조적 하방 압력이 존재한다. 수입육과의 경쟁 심화는 국내산 축산물의 가격 책정력을 제한하며, 유통업체의 수수료 확대도 마진 확보를 어렵게 만든다. 배합사료 시장의 성장 둔화와 사육두수 감소가 겹칠 경우, 사료사업부 매출 성장이 중장기적으로 정체될 수 있다.",
-    "en": "Prolonged consumer price inflation and economic weakness are suppressing demand for premium livestock products such as hanwoo loin cuts, with the deepening value-for-money consumption trend creating structural downward pressure on Meat Processing Division margins. Intensifying competition from imported meat limits pricing power for domestic livestock products, while expanding retail distributor fees make margin capture increasingly difficult. Should compound feed market growth stagnation coincide with a further decline in livestock head counts, feed segment revenue growth could face medium- to long-term stagnation."
+    "ko": "연결회사는 농장 거래처 및 특수관계자에 장·단기대여금을 제공하고 있으며, 해당 거래처의 신용상태나 거래관계로 인해 대여금의 손상위험에 노출돼 있다. 팜스월드는 유상증자를 통해 완전자본잠식을 해소했지만, 추가적인 손익 정상화가 지속되지 못할 경우 재무구조 개선 효과가 제한될 수 있다. 연결 기준 부채비율은 2022년 291.3%에서 2025년 186.6%로 낮아졌으나 여전히 높은 수준이다.",
+    "en": "The consolidated group provides long- and short-term loans to farm customers and related parties, exposing it to impairment risk on those loans depending on the credit status and relationship of the counterparties. Although Farms World resolved full capital impairment through a rights offering, the benefit to its financial structure could be limited if further earnings normalization is not sustained. The consolidated debt ratio fell from 291.3% in 2022 to 186.6% in 2025 but remains elevated."
    }
   }
  ],
  "checkpoints": [
   {
    "when": {
-    "ko": "2026년 8월 중순",
-    "en": "Mid-August 2026"
+    "ko": "2026년 11월 중순경",
+    "en": "Mid-to-late November 2026"
    },
    "what": {
-    "ko": "2026년 2분기 실적 발표: 계절적 성수기인 2분기 영업이익이 전년 동기(약 159억 원)를 회복·초과하는지, 원가 절감 효과가 매출 감소를 상쇄하는지가 연간 이익 가시화의 핵심 확인 지점이다.",
-    "en": "Q2 2026 earnings release: The key verification point is whether Q2 operating profit — historically the seasonal peak quarter — can recover to or exceed the prior-year Q2 level (approximately 15.9 billion KRW), and whether cost reduction effects are sufficient to offset any revenue shortfall."
+    "ko": "2026년 3분기(7~9월) 실적 공시 예정 시기로, 사료 부문 영업이익률이 4%대를 유지하는지와 팜스월드의 손익 정상화가 지속되는지를 확인할 시점이다.",
+    "en": "Expected timing for the release of Q3 2026 (July-September) results; a point to check whether the feed segment's operating margin holds in the 4% range and whether Farms World's earnings normalization continues."
    }
   },
   {
    "when": {
-    "ko": "2026년 매월 (지속 모니터링)",
-    "en": "Monthly, throughout 2026"
+    "ko": "2026년 하반기 중",
+    "en": "During the second half of 2026"
    },
    "what": {
-    "ko": "국제 옥수수·대두박 선물가격 및 원·달러 환율 동향: 사료 원가의 90% 이상이 수입 곡물 의존 구조이므로, 이 두 지표가 실적 방향성을 결정하는 선행 변수 역할을 한다.",
-    "en": "International corn and soybean meal futures prices and the KRW/USD exchange rate: Given that over 90% of feed input costs are linked to imported grains, these serve as the primary leading variables determining the direction of Farmstory's near-term earnings."
+    "ko": "사료 판매가격 인상 시행 여부와 원/달러 환율, 국제 곡물가 추이를 확인해 원가 부담 완화 여부를 가늠할 필요가 있다.",
+    "en": "Check whether feed price increases are implemented and monitor the won-dollar exchange rate and international grain price trends to gauge whether cost pressure eases."
    }
   },
   {
    "when": {
-    "ko": "2026년 하반기 (지속 모니터링)",
-    "en": "Ongoing, H2 2026"
+    "ko": "2027년 1월경",
+    "en": "Around January 2027"
    },
    "what": {
-    "ko": "ASF 국내 발생 동향: 추가 확산 여부가 양돈 농장 운영 리스크, 돈육 원재료 수급, 사료 수요에 직접적 영향을 미치므로 농림축산식품부 공시 및 방역 당국 발표를 지속 모니터링해야 한다.",
-    "en": "Domestic ASF outbreak trends: The extent of further spread directly impacts pig farm operations, pork raw material supply, and feed demand, requiring ongoing monitoring of Ministry of Agriculture, Food and Rural Affairs disclosures and official biosecurity authority announcements."
+    "ko": "2026년 4분기 잠정실적 공시 시점으로, 연간 실적 전망치(매출 1조 4,545억원, 영업이익 390억원)의 달성 여부와 육가공 부문 수익성 개선 폭을 점검할 시점이다.",
+    "en": "Timing for Q4 2026 preliminary results; a point to check whether the full-year 2026 forecast (revenue of KRW 1.4545 trillion, operating profit of KRW 39.0 billion) is being met and how much meat-processing profitability improves."
    }
   },
   {
    "when": {
-    "ko": "2026년 3분기 말~4분기 초",
-    "en": "Late Q3 to Early Q4 2026"
+    "ko": "2027년 2월경",
+    "en": "Around February 2027"
    },
    "what": {
-    "ko": "한우 공급 감소 및 경락 가격 추이: 한국농촌경제연구원이 전망한 2026년 한우 도축 마릿수 약 8% 감소가 실제 경락 가격 상승으로 연결되는지 확인하면 육가공사업부 수익성 개선의 강도를 가늠할 수 있다.",
-    "en": "Hanwoo supply decline and auction price trajectory: Confirming whether the KREI-projected approximately 8% decline in 2026 cattle slaughter is translating into higher auction prices provides visibility into the degree of profitability improvement achievable in the Meat Processing Division."
-   }
-  },
-  {
-   "when": {
-    "ko": "2026년 11월 중순",
-    "en": "Mid-November 2026"
-   },
-   "what": {
-    "ko": "2026년 3분기 실적 발표: 성수기(2·3분기) 누적 실적을 통해 연간 영업이익 흑자 지속 여부와 비영업 항목 기여 없이 순이익 방어가 가능한지 확인하는 중요한 시점이다.",
-    "en": "Q3 2026 earnings release: The key period to assess whether cumulative peak-season results support a full-year operating profit and whether net profit can be sustained without the support of significant non-operating contributions, as was the case in 2025."
+    "ko": "2026년 결산배당 발표 시점으로, 2025년 결산배당(2023~2024년 대비 4배 확대) 이후 주주환원 정책이 유지되는지를 확인할 시점이다.",
+    "en": "Timing for the FY2026 year-end dividend announcement; a point to check whether the shareholder-return policy is maintained following the FY2025 dividend hike (a fourfold increase versus 2023-2024)."
    }
   }
  ],
  "verdict": {
   "body": {
-   "ko": "팜스토리는 사료→양돈→육가공→가금의 수직계열화를 완성한 코스닥 축산 전주기 기업으로, 2022년 순손실·현금흐름 저점에서 2025년 순이익 대폭 반등·부채비율 4년 연속 개선이라는 재무 구조 전환에 성공했다. 영업이익률 2~3%대의 박리다매 구조와 2025년 순이익 급반등이 외환이익 등 비영업 항목에 일부 의존했다는 점은 이익의 질 관점에서 투자자의 추가 검증을 요구한다. 2026년 한우 공급 감소에 따른 가격 강세 사이클은 육가공사업부에 우호적이나, 사료 원가 상승 압박(국제 곡물가격·환율)과 ASF 리스크, 소비 부진이 동시에 맞서야 할 역풍이다. 주가는 순자산 대비 상당한 할인 구간에 있고, 배당수익률은 업종 평균을 크게 상회하는 수준이어서 현 밸류에이션은 낮은 마진과 이익 변동성을 상당 부분 반영한 것으로 볼 수 있다. 재무 구조 개선 추세의 지속, 원가 전가력 확보, 비영업 항목에 의존하지 않는 영업이익 안정화가 중장기적 재평가의 핵심 조건이다. 단기적으로는 2026년 2분기 실적(계절적 성수기)과 곡물가격·환율 동향이 향후 이익 방향성을 판단하는 가장 중요한 체크포인트가 될 것이다.",
-   "en": "Farmstory has completed full vertical integration from feed manufacturing through pig farming, meat processing, and poultry, and has successfully navigated a financial inflection point from the 2022 net loss and deeply negative cash flow trough to a sharply rebounding net profit and four consecutive years of debt ratio improvement through 2025. The structurally thin operating margin in the 2–3% range and the large contribution of non-operating items such as foreign exchange gains to the 2025 net profit rebound require investors to conduct further scrutiny of earnings quality. The tighter hanwoo supply and strengthening price cycle in 2026 is a positive tailwind for the Meat Processing Division, but rising feed input costs driven by international grain prices and exchange rates, ongoing ASF risk, and weak consumer spending represent headwinds that must be navigated simultaneously. With the stock trading at a substantial discount to net asset value and offering a dividend yield well above the sector average, the current valuation appears to reflect a significant portion of the structural risks from thin margins and earnings volatility. The key conditions for a medium- to long-term re-rating are the continuation of the balance sheet improvement trend, the ability to pass through input cost increases, and stabilization of operating profit without reliance on non-operating contributions. In the near term, Q2 2026 earnings — the seasonal peak quarter — and trends in grain prices and exchange rates will serve as the most critical checkpoints for assessing the direction of future earnings."
+   "ko": "팜스토리는 사료·육가공·양돈(가금 포함)을 축으로 하는 축산식품 밸류체인 기업으로, 최대주주는 이지홀딩스그룹이다. 사료 부문은 원가를 판매가격에 전가하는 구조로 곡물가·환율 변동 속에서도 안정적인 영업이익률을 유지해왔고, 이를 기반으로 2025년 결산배당을 2023~2024년 대비 4배로 확대했다. 종속기업 팜스월드는 2025년 유상증자를 통해 완전자본잠식을 해소하고 2026년 상반기 순이익률 11.6%를 기록하며 손익 정상화가 진행되고 있다. 다만 연간 매출은 2022~2025년 1조 4천억~1조 5천억원대에서 정체돼 있고, 지배주주 순이익은 분기별로 흑자와 적자를 오가는 변동성을 보였다. 특정 리서치센터는 2026년 매출 1조 4,545억원, 영업이익 390억원, 영업이익률 2.7%로의 개선을 전망했지만 이는 회사의 확정 가이던스가 아닌 외부 추정치다. 사료 부문 판매가격 인상 시행 여부, 원/달러 환율, 축산물 시세 흐름이 향후 실적의 방향을 가늠하는 핵심 변수로 남아 있다.",
+   "en": "Farmstory is an agri-food value chain company centered on feed, meat processing, and hog/poultry integration, with EG Holdings group as its controlling shareholder. The feed segment has maintained a stable operating margin through a cost pass-through pricing structure despite grain price and exchange rate swings, and on this basis, the FY2025 year-end dividend was expanded fourfold versus 2023-2024. Subsidiary Farms World resolved full capital impairment through a 2025 rights offering and is progressing through earnings normalization, posting an 11.6% net margin in H1 2026. However, annual revenue has been stagnant in the KRW 1.4-1.5 trillion range from 2022 to 2025, and attributable net profit has shown volatility, swinging between profit and loss on a quarterly basis. A specific research center projected 2026 revenue of KRW 1.4545 trillion, operating profit of KRW 39.0 billion, and an improvement in operating margin to 2.7%, though this is an external estimate rather than confirmed company guidance. Whether feed price increases are implemented, along with won-dollar exchange rate and livestock price trends, remain the key variables shaping the future direction of earnings."
   }
  },
  "sources": [
-  "https://comp.fnguide.com/SVO2/ASP/SVD_Main.asp?gicode=A027710",
-  "https://news.nate.com/view/20260316n36440",
-  "https://comp.fnguide.com/SVO2/asp/SVD_Corp.asp?pGB=1&gicode=A027710&cID=&MenuYn=Y&ReportGB=&NewMenuID=102&stkGb=701",
-  "https://ssl.pstatic.net/imgstock/upload/research/company/1605831224214.pdf",
-  "https://invest.deepsearch.com/stock/027710/",
-  "https://w4.kirs.or.kr/download/research/%ED%8C%9C%EC%8A%A4%ED%86%A0%EB%A6%AC(%EC%B5%9C%EC%A2%85v).pdf",
+  "https://littlebproject.com/stock/027710",
   "https://alphasquare.co.kr/home/stock-summary?code=027710",
-  "https://www.paxnet.co.kr/tbbs/list?tbbsType=L&id=027710",
-  "https://m.finance.daum.net/quotes/A027710/news/disclosure/20260316029948",
-  "https://comp.fnguide.com/SVO2/asp/SVD_Invest.asp?pGB=1&gicode=A027710&cID=&MenuYn=Y&ReportGB=B&NewMenuID=105&stkGb=701",
-  "https://www.pinpointnews.co.kr/news/articleView.html?idxno=431306",
-  "https://comp.wisereport.co.kr/company/c1030001.aspx?cmp_cd=027710&cn=",
-  "https://m.saramin.co.kr/job-search/company-info-view?csn=bk5GU2hobzg2cUFQQkcwMm1mcjNCdz09",
-  "https://moneypie.net/wiki/v/%ED%8C%9C%EC%8A%A4%EC%BD%94",
-  "https://www.atfis.or.kr/home/board/FB0028.do?act=read&subSkinYn=N&bpoId=4627&bcaId=0&pageIndex=1",
-  "https://news.infostock.co.kr/a",
+  "https://www.withbuyer.com/news/articleView.html?idxno=33225",
+  "https://kr.investing.com/equities/farmstory-co-ltd-earnings",
+  "https://ssl.pstatic.net/imgstock/upload/research/company/1605831224214.pdf",
   "https://m.thinkpool.com/item/027710",
-  "https://www.investing.com/equities/maniker"
+  "https://www.paxnet.co.kr/tbbs/list?tbbsType=L&id=027710",
+  "https://comp.fnguide.com/SVO2/ASP/SVD_Main.asp?gicode=A027710",
+  "https://kind.krx.co.kr/common/disclsviewer.do?method=search&acptno=20250515001838&docno=&viewerhost=",
+  "https://m.finance.daum.net/quotes/A027710/news/disclosure/20260316029948",
+  "https://m.irgo.co.kr/IR-COMP/136480/%ED%95%98%EB%A6%BC-IR-PAGE",
+  "https://dart.fss.or.kr/navi/searchNavi.do?naviCrpCik=00857727&naviCrpNm=%ED%95%98%EB%A6%BC&naviCode=A002",
+  "https://bbn.kiwoom.com/rfCR12012",
+  "https://www.jobkorea.co.kr/company/1839980",
+  "https://m.catch.co.kr/Comp/GroupSummary/M62",
+  "https://goinsider.kr/stock/00192499",
+  "https://www.jobkorea.co.kr/Company/1692332/Info",
+  "http://www.dodrambnf.co.kr/fckeditor/upload/[%ED%8C%9C%EC%8A%A4%ED%86%A0%EB%A6%AC]%EC%97%B0%EA%B2%B0%EA%B0%90%EC%82%AC%EB%B3%B4%EA%B3%A0%EC%84%9C(2025.03.21).pdf"
  ],
  "v": 2,
- "model": "claude-sonnet-4-6",
+ "model": "claude-sonnet-5",
  "ticker": "027710",
  "name": "팜스토리",
  "name_en": "FarmStory CO.,LTD.",
@@ -233,9 +223,9 @@
   "식음료"
  ],
  "market": "코스닥",
- "reportDate": "2026-06-19",
- "reportTs": "2026-06-19 01:30",
- "dataDate": "20260821",
+ "reportDate": "2026-09-05",
+ "reportTs": "2026-09-05 07:07",
+ "dataDate": "20260904",
  "quant": {
   "asOf": "2026-08-23",
   "fs_basis": "연결(CFS) · DART 공시 확정치 · 지배주주 기준 순이익",
@@ -338,14 +328,14 @@
    }
   ],
   "valuation": {
-   "price": 1057,
-   "mcap": 0.1178,
+   "price": 1142,
+   "mcap": 0.1272,
    "shares": 111416600,
    "total_shares": 111416600,
    "wavg_shares": 110409067,
-   "per": 6.954,
+   "per": 7.513,
    "eps": 152,
-   "pbr": 0.4083,
+   "pbr": 0.4411,
    "bps": 2589,
    "roe_ttm": 6.1,
    "ttm_window": "2025Q3~2026Q2",
@@ -356,7 +346,7 @@
    "bps_krx": 2550.0,
    "basis": "PER·EPS·PBR·BPS 모두 자체 산출(네이버·토스와 동일 방식) · 배당은 DART 공시 주당현금배당금(보완:KRX) ÷ 현재가",
    "dps": 100.0,
-   "div": 9.46
+   "div": 8.76
   }
  }
 }

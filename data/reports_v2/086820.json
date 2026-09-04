@@ -1,227 +1,217 @@
 {
  "title": {
-  "ko": "카티라이프 중국 진출, 수익성 전환 시험대",
-  "en": "CartiLife's China Entry Tests Path to Profitability"
+  "ko": "카티라이프 중국 진출, 흑자전환 지속성 시험대",
+  "en": "CartiLife's China Debut Tests Durability of Profit Turn"
  },
  "lead": {
-  "ko": "바이오솔루션은 2026년 카티라이프의 중국 하이난 상업화를 발판으로 매출 성장을 이어가고 있으나, 영업적자는 여전히 지속되고 있다.",
-  "en": "Bio Solution continues to grow revenue on the back of CartiLife's commercialization in China's Hainan province in 2026, but operating losses have yet to be resolved."
+  "ko": "바이오솔루션은 매출이 4년 연속 증가하며 2025년 처음으로 연간 순이익 흑자를 냈지만, 본업인 영업손익은 여전히 적자이고 순이익 전환은 자회사 지분법 관련 비영업 요인의 영향이 컸다.",
+  "en": "Bio Solution posted four straight years of revenue growth and its first annual net profit in 2025, but core operating losses persisted and the swing to net profit was heavily driven by non-operating equity-method gains from its subsidiary."
  },
  "keypoints": [
   {
-   "ko": "2025년 연결 매출 152.0억원으로 전년 대비 증가했고, 지배주주순이익은 2.7억원으로 흑자 전환했다.",
-   "en": "2025 consolidated revenue rose to KRW 15.2 billion year-on-year, and net income attributable to owners turned positive at KRW 273 million."
+   "ko": "2025년 연결 매출 152.0억원, 순이익 2.7억원으로 7년 만에 연간 흑자 전환했으나 영업손실은 43.4억원으로 4년째 지속됐다.",
+   "en": "2025 consolidated revenue reached KRW 15.2 billion with net profit of KRW 0.27 billion, the first annual net profit in seven years, while the operating loss of KRW 4.3 billion marked a fourth straight loss year."
   },
   {
-   "ko": "카티라이프가 2026년 4월 중국 하이난성 최종 판매승인을 획득했고, 8월 보아오 국제의원과 파트너십을 체결해 현지 첫 환자 시술까지 이어졌다.",
-   "en": "CartiLife obtained final sales approval in Hainan, China in April 2026, and secured a partnership with Boao International Hospital in August 2026, resulting in the first patient treatment locally."
+   "ko": "핵심 제품 카티라이프는 2025년 4월 국내 정식 품목허가를, 2026년 4월 중국 하이난성 판매승인을 획득해 국산 세포치료제 최초로 중국 상업화 단계에 진입했다.",
+   "en": "Flagship product CartiLife obtained formal domestic approval in April 2025 and Hainan provincial sales approval in April 2026, marking the first commercialization of a Korean cell therapy in China."
   },
   {
-   "ko": "영업손익은 2022년부터 2025년까지 4년 연속 적자를 기록했으며, 2026년 상반기에도 적자가 지속되고 있다.",
-   "en": "Operating losses have persisted for four consecutive years from 2022 to 2025, continuing into the first half of 2026."
+   "ko": "2026년 1분기(-13.0억원)와 2분기(-4.8억원) 모두 영업손실을 기록했고, 분기 매출은 37.6억~47.0억원 사이에서 등락했다.",
+   "en": "Both Q1 2026 (-KRW 1.3 billion) and Q2 2026 (-KRW 0.48 billion) posted operating losses, with quarterly revenue fluctuating between KRW 3.76 billion and KRW 4.70 billion."
   },
   {
-   "ko": "차세대 파이프라인인 동종 세포치료제 '카티로이드'와 주사형 골관절염 치료제 '스페로큐어'가 각각 호주·국내에서 임상 절차를 밟고 있다.",
-   "en": "Next-generation pipeline assets, the allogeneic therapy 'CartiRoid' and the injectable osteoarthritis treatment 'SpheroCure', are progressing through clinical procedures in Australia and Korea, respectively."
+   "ko": "최대주주 지분 18.25%를 보유한 헬릭스미스의 실적 개선과 주가 회복이 지분법 손익·손상차손 환입을 통해 연결 순이익에 큰 영향을 줬다.",
+   "en": "Improved performance and share price recovery at 18.25%-owned affiliate Helixmith materially affected consolidated net profit through equity-method gains and impairment reversals."
   },
   {
-   "ko": "분기별 순이익 변동성이 커 2025년 4분기 순이익이 55.0억원으로 급증한 반면, 2026년 1분기와 2분기는 다시 순손실을 기록했다.",
-   "en": "Quarterly net income has been volatile, surging to KRW 5.5 billion in Q4 2025 before reverting to net losses in Q1 and Q2 2026."
+   "ko": "카티로이드(호주 1·2상 IND 승인)와 스페로큐어(국내 임상 신청) 등 후속 파이프라인이 카티라이프에 이어 다음 성장 동력으로 대기 중이다.",
+   "en": "Follow-on pipeline candidates CartiLoid (Australia Phase 1/2 IND approved) and SpheroCure (domestic clinical trial application filed) stand as the next growth drivers after CartiLife."
   }
  ],
  "business": {
-  "ko": "바이오솔루션은 2000년 설립된 세포치료제 전문기업으로, 피부세포치료제·연골세포치료제·인체조직모델·바이오융합소재 네 개 사업 영역을 운영한다. 회사의 매출 대부분은 화상 및 피부궤양 치료에 쓰이는 각질세포치료제 '케라힐'·'케라힐-알로'와 무릎 연골 결손 치료제 '카티라이프'에서 발생한다. 카티라이프는 환자 본인의 늑연골(갈비뼈 연골)에서 채취한 세포를 배양해 무릎 연골 결손 부위에 이식하는 자가유래 세포치료제로, 국내 임상 3상을 거쳐 품목허가를 획득한 첨단바이오의약품이다. 케라힐 계열 제품은 산재보험 및 건강보험에 등재돼 화상치료 분야에서 안정적인 처방 기반을 확보하고 있다. 인체조직모델 사업은 독성 및 효능 검증용 인공피부·각막 모델을 화장품·의약품 기업에 공급하며, 각막·피부모델의 OECD 국제표준시험법 등재를 기반으로 국내외 대체시험 시장을 공략하고 있다. 바이오융합소재 부문에서는 줄기세포 배양액 기반 화장품 원료 '스템수', 'BSP-11', 엑소좀 농축기술 '셀로페린-엑소좀' 등을 B2B 방식으로 화장품 기업에 공급한다. 경쟁 구도상 골관절염 세포치료제 영역에서는 코오롱티슈진·메디포스트·지씨셀 등이 유사 파이프라인을 보유하고 있으며, 메디포스트는 자사의 카티스템에 대해 미국과 일본에서 별도로 임상을 진행 중이다. 회사는 차세대 파이프라인으로 동종 유래 연골세포치료제 '카티로이드'와 주사형 골관절염 치료제 '스페로큐어'를 개발 중이며, 이를 통해 자가유래 치료제 중심 사업구조를 다각화하려 하고 있다.",
-  "en": "Founded in 2000, Bio Solution is a cell therapy specialist operating across four business lines: skin cell therapeutics, cartilage cell therapeutics, human tissue models, and bio-convergence materials. Most of the company's revenue comes from the keratinocyte therapies Keraheal and Keraheal-Allo, used for burns and skin ulcers, and CartiLife, a knee cartilage defect treatment. CartiLife is an autologous cell therapy that cultures cells harvested from a patient's own rib cartilage and implants them into knee cartilage defects, having received product approval as an advanced biopharmaceutical following domestic Phase 3 trials. The Keraheal product line is registered under industrial accident and health insurance, providing a stable prescription base in burn treatment. The human tissue model business supplies artificial skin and cornea models for toxicity and efficacy testing to cosmetics and pharmaceutical companies, leveraging OECD international standard test method registrations to target domestic and overseas alternative testing markets. In bio-convergence materials, the company supplies stem cell culture-based cosmetic ingredients such as Stemsoo, BSP-11, and the exosome concentration technology CelloFerrin-Exosome to cosmetics firms on a B2B basis. In the competitive osteoarthritis cell therapy landscape, Kolon TissueGene, Medipost, and GC Cell hold similar pipelines, with Medipost separately advancing clinical trials for its Cartistem in the United States and Japan. The company is developing next-generation pipelines including the allogeneic cartilage therapy CartiRoid and the injectable osteoarthritis treatment SpheroCure, aiming to diversify beyond its autologous therapy-centered business structure."
+  "ko": "바이오솔루션은 세포치료제 개발·상업화를 핵심으로 하는 첨단바이오의약품 전문기업으로, 피부세포치료제, 연골세포치료제, 인체조직모델, 바이오융합소재 등 네 개 사업 부문을 운영한다. 피부세포치료제 부문은 화상 치료용 자가 피부유래 각질세포치료제 '케라힐'과 동종 제품 '케라힐-알로'가 주력이며 두 제품 모두 첨단바이오의약품 품목허가를 취득했다. 연골세포치료제 부문의 핵심 제품은 무릎 연골 결손 및 골관절염 환자를 위한 자가유래 연골세포치료제 '카티라이프'로, 환자 본인의 늑연골에서 세포를 채취해 배양한 뒤 이식하는 방식이다. 인체조직모델 부문은 피부모델 '케라스킨', 각막모델 'MCTT HCE', 호흡기모델 'SoluAirway', 구강점막모델 'SoluOral' 등을 통해 동물대체시험 및 CRO 서비스를 제공하며, 2026년 8월 CPHI 코리아에서는 독일 머크의 생명과학 사업부인 머크 라이프사이언스와 '동물대체시험 솔루션'을 주제로 공동부스를 운영했다. 회사는 2023년 말 관계기업 헬릭스미스 지분을 인수해 최대주주가 됐으며, 올해 상반기 말 기준 헬릭스미스 주식 840만3471주(지분율 18.25%)를 보유하고 있다. 경쟁구도 측면에서는 지씨셀의 '카티스템', 메디포스트의 동종 줄기세포치료제, 유전자치료제 계열의 코오롱티슈진 '인보사' 등이 연골·관절 재생 치료제 시장에서 경쟁 또는 인접 포지션에 있다. 국내 연골결손·골관절염 치료제 시장은 약 4000억 원 규모로, 환자 수는 약 400만 명에 이르는 것으로 추산되지만, 실제 카티라이프의 타깃 시장은 1000억원대로 추산돼 국내 시장만으로는 성장 여력이 제한적이라는 평가가 나온다. 이에 회사는 미국·중국·일본 등 해외 시장 진출을 병행 추진하며 자가유래 방식의 한계를 보완하기 위해 동종세포 기반의 '카티로이드'와 주사형 치료제 '스페로큐어' 등 후속 파이프라인도 함께 개발하고 있다.",
+  "en": "Bio Solution is an advanced biopharmaceutical company focused on developing and commercializing cell therapies, operating four business segments: skin cell therapy, cartilage cell therapy, human tissue models, and bio-convergence materials. The skin cell therapy segment is anchored by 'Keraheal,' an autologous keratinocyte therapy for burn treatment, and its allogeneic counterpart 'Keraheal-Allo,' both of which have obtained advanced biopharmaceutical product approvals. The cartilage cell therapy segment's flagship product is 'CartiLife,' an autologous cartilage cell therapy for knee cartilage defects and osteoarthritis, produced by culturing cells harvested from a patient's own rib cartilage before implantation. The human tissue model segment offers animal-alternative testing and CRO services through products such as the skin model 'KeraSkin,' corneal model 'MCTT HCE,' respiratory model 'SoluAirway,' and oral mucosa model 'SoluOral,' and at CPHI Korea in August 2026 the company ran a joint booth with Merck Life Science, the life science division of Germany's Merck, on the theme of animal-alternative testing solutions. The company became the largest shareholder of affiliate Helixmith after acquiring its stake in late 2023, and as of the end of the first half of this year it held 8,403,471 shares of Helixmith, a 18.25% stake. In terms of competitive positioning, GC Cell's 'Cartistem,' Mediphostem's allogeneic stem cell therapies, and Kolon TissueGene's gene therapy 'Invossa' occupy competing or adjacent positions in the cartilage and joint regeneration therapy market. The domestic market for cartilage defect and osteoarthritis treatments is estimated at around KRW 400 billion, with roughly 4 million patients, but CartiLife's actual target market is estimated at around KRW 100 billion, suggesting the domestic market alone offers limited growth potential. As a result, the company is pursuing overseas expansion into the US, China, and Japan in parallel, while developing follow-on pipeline candidates such as the allogeneic 'CartiLoid' and injectable 'SpheroCure' to address the limitations of the autologous approach."
  },
  "earnings": {
-  "ko": "바이오솔루션의 연결 매출액은 2022년 101.0억원에서 2023년 124.6억원, 2024년 128.9억원, 2025년 152.0억원으로 4년 연속 증가세를 이어갔다. 반면 영업손익은 같은 기간 각각 -52.9억원, -50.3억원, -50.7억원, -43.4억원으로 4년 연속 적자를 기록했으며, 2025년 영업손실률은 -28.6%로 2024년 -39.3% 대비 다소 개선됐다. 지배주주순이익은 2022년 -80.9억원, 2023년 -12.5억원, 2024년 -119.3억원으로 변동성이 컸으며, 2025년에는 2.7억원으로 흑자 전환했다. 다만 2025년 연간 흑자는 영업손익 흐름과 괴리를 보이는데, 이는 분기별 실적을 보면 뚜렷하게 드러난다. 2025년 3분기 지배주주순이익은 -18.6억원, 4분기는 영업손실 -4.8억원에도 불구하고 순이익이 55.0억원으로 급증하며 연간 실적을 흑자로 견인했다. 그러나 2026년 1분기 순이익은 다시 -20.4억원, 2분기는 -7.4억원으로 적자 전환하며 분기 실적의 변동성이 재확인됐다. 현금흐름 측면에서도 영업활동현금흐름은 2023년 21.6억원 유입을 제외하면 2022년 -38.1억원, 2024년 -22.9억원, 2025년 -13.1억원으로 대체로 유출 기조를 보였다. 부채비율은 2022년 109.5%에서 2025년 114.0%로 대체로 100%대 초중반 수준을 유지하고 있다.",
-  "en": "Bio Solution's consolidated revenue grew for four consecutive years, from KRW 10.1 billion in 2022 to KRW 12.5 billion in 2023, KRW 12.9 billion in 2024, and KRW 15.2 billion in 2025. Operating losses, however, persisted throughout the period at KRW -5.29 billion, -5.03 billion, -5.07 billion, and -4.34 billion respectively, with the 2025 operating margin of -28.6% improving somewhat from -39.3% in 2024. Net income attributable to owners was volatile, at KRW -8.09 billion in 2022, KRW -1.25 billion in 2023, and KRW -11.93 billion in 2024, before turning positive at KRW 273 million in 2025. This annual profit, however, diverges from the operating trend, as evident in quarterly data: Q3 2025 net income was KRW -1.86 billion, while Q4 2025 net income surged to KRW 5.50 billion despite an operating loss of KRW -0.48 billion, driving the full-year figure into positive territory. Net income reverted to losses of KRW -2.04 billion in Q1 2026 and KRW -0.74 billion in Q2 2026, reaffirming the volatility of quarterly results. Operating cash flow was also mostly negative, at KRW -3.81 billion in 2022, KRW -2.29 billion in 2024, and KRW -1.31 billion in 2025, with 2023's inflow of KRW 2.16 billion the exception. The debt ratio remained in the low-to-mid 100% range, from 109.5% in 2022 to 114.0% in 2025."
+  "ko": "바이오솔루션의 연결 매출액은 2022년 101.0억원, 2023년 124.6억원, 2024년 128.9억원, 2025년 152.0억원으로 4년 연속 증가세를 이어갔다. 다만 영업손실은 2022년 -52.9억원, 2023년 -50.3억원, 2024년 -50.7억원, 2025년 -43.4억원으로 4년 연속 적자를 기록했으며, 영업이익률도 2025년 -28.6%로 개선됐지만 여전히 큰 폭의 마이너스에 머물렀다. 순이익 흐름은 더 극적인데, 2022년 -80.9억원, 2023년 -12.5억원 순손실을 내다가 2024년 -119.3억원으로 손실이 크게 확대된 후 2025년 +2.7억원으로 흑자 전환했다. 이 흑자 전환의 배경에는 최대주주로 있는 관계기업 헬릭스미스의 실적 개선과 주가 회복이 있는데, 헬릭스미스의 실적 개선과 기업가치 회복이 가시화되면서 과거 인식했던 관계기업 투자자산 손상액 중 약 48억 원이 환입되었고, 이는 연결 기준 당기순이익 흑자 전환의 핵심 요인으로 작용했다는 점이 확인된다. 분기별로 보면 2025년 3분기 매출 45.1억원, 영업손실 -11.0억원, 순손실 -18.6억원을 기록한 뒤, 2025년 4분기에는 매출 44.2억원, 영업손실 -4.8억원으로 영업 적자는 축소됐고 순이익은 +55.0억원으로 크게 흑자를 냈는데 이 역시 헬릭스미스 관련 비영업 손익 환입 효과가 상당 부분 반영된 결과로 해석된다. 2026년에 들어서는 1분기 매출 37.6억원, 영업손실 -13.0억원, 순손실 -20.4억원으로 다시 적자가 확대됐고, 2분기에는 매출 47.0억원으로 반등했지만 영업손실 -4.8억원, 순손실 -7.4억원으로 여전히 적자가 이어졌다. 최근 네 개 분기(2025년 3분기~2026년 2분기) 합산으로는 지배주주 순이익이 8.7억원 수준으로 소폭의 이익 구간에 머물러 있어, 연간 흑자 전환이 매 분기 안정적으로 재현되고 있다고 보기에는 아직 이르다. 종합하면 매출 성장은 뚜렷하지만 본업의 수익성 개선은 완만하고, 순이익 레벨의 등락은 관계기업 관련 비영업 손익의 영향을 크게 받는 구조라는 점이 실적의 핵심 특징이다.",
+  "en": "Bio Solution's consolidated revenue rose for four consecutive years, from KRW 10.1 billion in 2022 to KRW 12.5 billion in 2023, KRW 12.9 billion in 2024, and KRW 15.2 billion in 2025. However, operating losses persisted over the same four years at -KRW 5.29 billion, -KRW 5.03 billion, -KRW 5.07 billion, and -KRW 4.34 billion respectively, with the 2025 operating margin improving to -28.6% but still deeply negative. The net profit trajectory was more dramatic: net losses of -KRW 8.09 billion in 2022 and -KRW 1.25 billion in 2023 widened sharply to -KRW 11.93 billion in 2024 before swinging to a net profit of +KRW 0.27 billion in 2025. Behind this turnaround was improved performance and value recovery at affiliate Helixmith, of which Bio Solution is the largest shareholder; as confirmed in reporting, as improvement in Helixmith's performance and recovery of corporate value became evident, about KRW 4.8 billion of previously recognized impairment on the associate investment asset was reversed, which was the key factor behind the swing to consolidated net profit. On a quarterly basis, Q3 2025 revenue was KRW 4.51 billion with an operating loss of -KRW 1.10 billion and a net loss of -KRW 1.86 billion; in Q4 2025, revenue was KRW 4.42 billion, the operating loss narrowed to -KRW 0.48 billion, and net profit surged to +KRW 5.50 billion, a result also largely attributable to non-operating gains related to Helixmith. Moving into 2026, Q1 revenue fell to KRW 3.76 billion with the operating loss widening again to -KRW 1.30 billion and a net loss of -KRW 2.04 billion, while Q2 revenue rebounded to KRW 4.70 billion but the operating loss of -KRW 0.48 billion and net loss of -KRW 0.74 billion continued. Over the trailing four quarters (Q3 2025 through Q2 2026), cumulative owner net profit stood at a modest KRW 0.87 billion, suggesting it is still premature to conclude that the annual profit swing is being consistently reproduced each quarter. In sum, revenue growth is clear, but core profitability improvement remains gradual, and net profit swings are heavily influenced by non-operating items tied to the affiliate."
  },
  "industry": {
-  "ko": "글로벌 골관절염 세포치료제 시장은 중국이 약 1억 1,000만 명의 무릎 골관절염 환자를 보유한 세계 최대 시장으로 꼽히며, 국내외 기업들의 진출 경쟁이 본격화되고 있다. 미국에서는 베리셀의 자가 연골세포치료제 마시(MACI)가 이미 상용화돼 있으며, 국내에서는 코오롱티슈진·메디포스트·지씨셀 등이 유사 파이프라인을 통해 시장을 공략하고 있다. 메디포스트는 카티스템에 대해 미국 임상 3상을 승인받았고 일본에서는 임상 3상을 완료하는 등 자력 진출을 추진 중이며, 코오롱티슈진은 글로벌 최종 임상 단계에 근접해 있다. 중국은 자국 내 세포·조직 기반 개인맞춤형 생물의학 기술의 임상전환을 촉진하는 국무원 제818호령과 하이난 보아오 러청 의료특구의 신기술 선행 적용 정책을 통해 해외 첨단 치료제의 진입장벽을 낮추고 있으며, 이는 국내 세포치료제 기업들에 새로운 진출 경로를 제공하고 있다. 국내에서는 첨단재생바이오법 체계 하에서 세포치료제 개발이 이뤄지고 있으며, 일본의 재생의료 제도와 유사한 규제 프레임워크가 아시아 각국에서 형성되는 추세다. 대체시험법 시장에서는 인체조직모델을 활용한 동물대체시험이 규제 당국 및 학계에서 주목받고 있으며, OECD 국제표준시험법 등재가 시장 진입의 핵심 요건으로 작용하고 있다.",
-  "en": "China represents the world's largest osteoarthritis cell therapy market, with an estimated 110 million knee osteoarthritis patients, and competition among domestic and international firms to enter this market is intensifying. In the United States, Vericel's autologous cartilage cell therapy MACI is already commercialized, while in Korea, Kolon TissueGene, Medipost, and GC Cell are pursuing the market with similar pipelines. Medipost has secured US Phase 3 approval for Cartistem and completed Phase 3 trials in Japan as it pursues independent overseas expansion, while Kolon TissueGene is approaching the final stage of its global clinical trials. China is lowering entry barriers for advanced foreign therapies through State Council Order No. 818, which facilitates clinical translation of cell- and tissue-based personalized biomedical technologies, and through the fast-track new technology policy at Hainan's Boao Lecheng medical tourism pilot zone, providing new entry pathways for Korean cell therapy companies. In Korea, cell therapy development proceeds under the Advanced Regenerative Bio Act framework, with similar regulatory structures forming across Asia, resembling Japan's regenerative medicine system. In the alternative testing market, animal-free testing using human tissue models is drawing attention from regulators and academia, with OECD international standard test method registration serving as a key market entry requirement."
+  "ko": "글로벌 골관절염 및 연골재생 치료제 시장은 2019년 73억 달러(약 9조8000억 원)에서 2025년 110억 달러(약 15조 원)로 성장할 것으로 전망되며, 이 중 미국 시장이 가장 크고 환자 수도 많은 것으로 알려져 있다. 국내에서는 카티라이프가 조건부 허가를 넘어 정식 품목허가를 받은 이후, 기존에 먼저 승인받은 M사의 줄기세포 치료제와 함께 두 가지 치료제가 시장의 양대 축을 이룰 것이라는 회사 측 설명대로 국내 경쟁구도가 형성되고 있다. 중국은 하이난 등 4개 구역을 대상으로 한 의료 개방 정책을 2024년 11월 상무부를 통해 처음 발표했고, 이 제도를 활용해 카티라이프가 통상 10년 이상 소요되는 정식 허가 절차를 하이난 의료특구의 '신기술 선행적용 정책'을 통해 단기간에 돌파한 것이 산업적으로 의미 있는 선례로 평가된다. 경쟁사 동향을 보면 메디포스트는 동종 중간엽 줄기세포치료제인 카티스템에 대해 미국 임상 3상을 승인받았고, 일본에서는 이미 임상 3상을 완료했으며, 파트너십이 아닌 자력 진출을 시도하는 것으로 알려져 바이오솔루션과는 해외 진출 전략에서 차이를 보인다. 시술 방식 측면에서도 카티라이프는 두 차례 시술이 필요한 구조로 인해 편의성에 한계가 존재해, 단회 시술이 가능한 동종세포·주사형 치료제로의 진화가 산업 전반의 트렌드로 부각되고 있다. 인체조직모델·동물대체시험 CRO 부문은 규제 변화(화장품·의약품 원료 평가에서 동물실험 축소 요구 증가)에 따른 수요 확대가 기대되는 영역으로, 글로벌 대형 생명과학 기업과의 협업이 늘어나는 추세다. 전반적으로 산업은 세포·유전자치료제(첨단재생의료)의 상업화 초기 국면에서 각국 규제기관의 신속 승인 제도(RMAT, 하이난 선행적용 등)를 활용한 조기 시장 진입 경쟁이 본격화되는 단계로 평가된다.",
+  "en": "The global market for osteoarthritis and cartilage regeneration therapies is projected to grow from USD 7.3 billion in 2019 to USD 11 billion by 2025, with the United States representing the largest market by both value and patient population. Domestically, following CartiLife's transition from conditional to formal product approval, a two-way competitive structure is emerging, as the company itself noted that together with an already-approved stem cell therapy from another domestic company, the two treatments would form the two main pillars of the market. In China, the government first announced a medical opening policy covering four zones including Hainan through the Ministry of Commerce in November 2024, and CartiLife's use of this framework to bypass the normally decade-plus formal approval process via Hainan's fast-track new-technology policy is viewed as an industrially significant precedent. Among competitors, Mediphostem has received US Phase 3 approval for its allogeneic mesenchymal stem cell therapy Cartistem, and has already completed Phase 3 trials in Japan, pursuing an independent overseas expansion strategy that differs from Bio Solution's partnership-oriented approach. On the procedural side, CartiLife also faces convenience limitations due to its two-step procedure structure, underscoring an industry-wide shift toward single-administration allogeneic and injectable therapies. The human tissue model and animal-alternative testing CRO segment is expected to benefit from expanding regulatory demand to reduce animal testing in cosmetics and pharmaceutical ingredient evaluation, with growing collaboration between global life science majors. Overall, the industry is in an early commercialization phase for cell and gene therapies (advanced regenerative medicine), where competition to secure early market entry via expedited regulatory pathways such as RMAT designation and Hainan's fast-track policy is intensifying."
  },
  "outlook": {
-  "ko": "바이오솔루션은 2026년 4월 카티라이프의 중국 하이난성 최종 판매승인을 획득한 데 이어, 8월 하이난 보아오 국제의원과 공급 및 시술 파트너십 본계약을 체결하며 현지 첫 환자 시술까지 이어갔다. 회사는 하이난 GMP 시설을 활용해 병원당 연간 1,000명 규모의 시술이 가능한 체계를 구축하고 있으며, 현지 진료 과정에서 확보되는 실사용데이터(RWD)를 중국 국가약품감독관리국(NMPA) 본토 등록의 임상 근거로 활용해 이르면 1년 내 본토 진출을 추진한다는 계획이다. 하이난 현지 등록가격은 1유닛당 15만위안으로 책정돼 미국 경쟁 치료제 마시(MACI) 대비 낮은 가격 수준을 형성하고 있다. 회사는 이번 중국 진출 성과를 발판 삼아 미국 임상 3상 진입과 차세대 치료제 조기 상용화를 함께 추진한다는 방침을 밝혔다. 차세대 파이프라인 중 동종 연골세포치료제 '카티로이드'는 호주 임상 1·2상 IND 승인을 받았으며, 백인 대상 글로벌 임상 데이터 확보를 통해 해외 기술이전 가능성을 높이는 전략을 추진하고 있다. 주사형 골관절염 치료제 '스페로큐어'는 비임상에서 염증 감소와 연골재생 관련 데이터를 확보한 뒤 국내 식약처 임상시험계획 신청을 완료했으며, 2026년 중 임상 1·2a상 돌입을 준비하고 있다.",
-  "en": "Following its April 2026 final sales approval for CartiLife in Hainan, China, Bio Solution signed a supply and treatment partnership contract with Hainan Boao International Hospital in August 2026, leading to the first patient treatment locally. The company is building a system capable of treating up to 1,000 patients annually per hospital using its Hainan GMP facility, and plans to leverage real-world data (RWD) gathered from local treatment as clinical evidence for mainland registration with China's National Medical Products Administration (NMPA), targeting mainland market entry within as soon as one year. The registered local price in Hainan is set at 150,000 yuan per unit, positioning it below the price of the competing US therapy MACI. The company stated it plans to leverage this China entry as a springboard to pursue US Phase 3 trial entry and early commercialization of next-generation therapies in parallel. Among next-generation pipelines, the allogeneic cartilage therapy CartiRoid has received IND approval for Phase 1/2 trials in Australia, pursuing a strategy to secure global clinical data on Caucasian patients to strengthen prospects for overseas licensing. The injectable osteoarthritis treatment SpheroCure, having confirmed inflammation reduction and cartilage regeneration signals in preclinical studies, has completed a clinical trial application with Korea's Ministry of Food and Drug Safety, and is preparing to enter Phase 1/2a trials in 2026."
+  "ko": "회사는 카티라이프의 중국 사업을 단계적으로 확대할 계획을 제시했는데, 2027년 연간 1000명 시술을 시작으로 3년 내 누적 5000명까지 규모를 키울 계획이라고 밝혔다. 하이난 보아오 국제의원에서는 병원당 연간 1000명 이상의 환자에게 카티라이프를 공급·시술할 수 있는 운영 체계 구축도 추진하고 있으며, 향후 하이난을 시작으로 베이징, 상하이, 항저우 등 주요 내륙 도시 뿐 아니라 싱가폴까지 시장 확대를 추진할 계획이라고 회사는 설명했다. 중국 본토 진출과 관련해서는 현지 규제 완화 지역에서 RWD를 축적하여 중국 국가약품감독관리국(NMPA) 승인 및 본토 등록 과정에 활용, 이르면 1년 내 본토 진출을 추진할 계획이라고 밝혔다. 미국 시장에 대해서는 임상 뿐 아니라 허가, 생산, 유통까지 고려하면 단독 추진엔 한계가 있는 만큼 글로벌 파트너와 공동으로 3상을 추진하겠다는 전략이며, 회사 관계자는 \"3상 이후 상업화까지 고려해 생산, CMC, GMP, 마케팅 역량을 모두 갖춘 파트너를 찾고 있다\"며 \"연내 파트너십을 기반으로 3상 진입을 목표로 하고 있다\"고 설명했다. 후속 파이프라인인 카티로이드는 2026년 1월 호주 1/2상 IND 승인을 획득하며 글로벌 임상을 개시했고, 스페로큐어는 국내 식약처 임상 신청을 마쳤으며, 2026년 1·2a상 돌입을 준비 중인 것으로 전해진다. 회사 측은 2026년을 두고 \"카티라이프의 글로벌 확장과 스페로큐어, 카티로이드 등 차세대 파이프라인의 임상 진전과 글로벌 확장을 통해 2026년을 글로벌 도약의 원년으로 만들겠다\"는 목표를 제시했다. 다만 이러한 계획들은 대부분 회사 발표 기준의 목표치이며, 중국 시술 확대 속도나 미국 파트너십 체결 여부, 국내 임상 개시 시점 등은 향후 공시와 후속 뉴스로 확인이 필요한 단계다.",
+  "en": "The company has outlined a phased expansion plan for CartiLife's China business, stating it plans to start with 1,000 annual procedures in 2027 and scale up to a cumulative 5,000 within three years. At Boao International Hospital in Hainan, the company is also pursuing an operating system capable of supplying and administering CartiLife to more than 1,000 patients per hospital annually, and plans to expand from Hainan into major inland cities such as Beijing, Shanghai, and Hangzhou, as well as Singapore. Regarding mainland China market entry, the company stated it plans to accumulate real-world data in the regulatory-relaxed zone for use in NMPA approval and mainland registration, aiming to enter the mainland market within a year at the earliest. For the US market, the strategy is to pursue Phase 3 jointly with a global partner, given the limitations of going it alone considering approval, manufacturing, and distribution beyond the clinical trial itself, with a company representative explaining, \"we are looking for a partner with manufacturing, CMC, GMP, and marketing capabilities in mind for commercialization after Phase 3,"
  },
  "valuation_comment": {
-  "ko": "바이오솔루션은 다년간의 적자 흐름을 거쳐 2025년 연간 기준 순이익이 흑자로 전환됐으나, 분기별로는 여전히 손익 변동성이 큰 상태다. 주가순자산비율은 순자산가치 대비 상당한 프리미엄이 반영된 구간에서 형성돼 있으며, 이는 카티라이프의 중국 상업화 및 차세대 파이프라인 임상 진전에 대한 시장의 기대가 자산가치보다 실적 성장 잠재력에 더 무게를 두고 있음을 시사한다. 주당순자산가치는 1,637원 수준으로, 현재 주가는 이 대비 배수로 거래되고 있다. 회사는 현재 배당을 지급하지 않는 무배당 정책을 유지하고 있어, 배당 관련 투자 매력은 제한적이다. 밸류에이션 판단에 있어서는 아직 확정되지 않은 중국 매출 실현 속도와 미국·호주 임상 진행 상황이 향후 실적 추정치의 변수로 작용할 수 있다는 점을 함께 고려할 필요가 있다.",
-  "en": "After years of losses, Bio Solution's annual net income turned positive in 2025, though quarterly results remain highly volatile. The price-to-book ratio sits in a range that reflects a considerable premium over net asset value, suggesting the market is weighting expectations around CartiLife's commercialization in China and progress in next-generation pipeline trials more heavily than current book value. Book value per share stands at KRW 1,637, with the current share price trading at a multiple of this figure. The company currently maintains a no-dividend policy, limiting the dividend-related investment appeal. In assessing valuation, it is also worth considering that the pace of realized China revenue and the progress of US and Australian clinical trials, both not yet finalized, remain variables that could affect future earnings estimates."
+  "ko": "바이오솔루션의 주가순자산비율은 순자산 대비 상당한 프리미엄이 반영된 구간에서 거래되고 있어, 자산가치 대비로는 할인이 아닌 웃돈이 형성된 상태로 볼 수 있다. 주가수익비율은 2025년 연간 흑자 전환에도 불구하고 이익 규모 자체가 아직 작아 배수가 매우 높게 나타나는데, 이는 이익 안정성이 낮은 초기 흑자 국면에서 흔히 관찰되는 특징으로 지표의 설명력이 제한적인 구간이라 할 수 있다. 회사는 현재까지 무배당 정책을 유지하고 있어 배당 관련 지표로 밸류에이션을 설명하기는 어렵다. 과거 여러 해에 걸친 대규모 영업손실과 순손실 이력을 감안하면, 최근의 흑자 전환이 지속되는 흐름인지 자회사 관련 일회성 효과가 재차 반복되지 않는지를 확인하는 것이 향후 지표 해석에서 중요한 변수가 될 것으로 보인다.",
+  "en": "Bio Solution's price-to-book ratio trades in a range reflecting a meaningful premium over net asset value, indicating the market is pricing in a premium rather than a discount to book value. The price-to-earnings ratio appears very high despite the 2025 swing to annual profit, because the absolute profit base remains small—a characteristic commonly observed in early-stage profit transitions where earnings stability is still low, limiting the explanatory power of the multiple. The company has maintained a no-dividend policy to date, making dividend-based valuation metrics inapplicable. Given the company's history of substantial operating and net losses over multiple prior years, whether the recent swing to profit proves sustainable, or whether affiliate-related one-off effects recur, will be an important variable in interpreting these metrics going forward."
  },
  "bull": [
   {
    "title": {
-    "ko": "중국 상업화 초기 단계 진입",
-    "en": "Entering Early-Stage China Commercialization"
+    "ko": "국산 세포치료제 최초 중국 상업화",
+    "en": "First Korean Cell Therapy to Commercialize in China"
    },
    "body": {
-    "ko": "카티라이프는 2026년 4월 중국 하이난성 최종 판매승인을 획득했고, 8월 보아오 국제의원과 파트너십을 체결해 현지 첫 환자 시술까지 이어졌다. 하이난 현지 등록가격은 1유닛당 15만위안으로 미국 경쟁 치료제 마시(MACI) 대비 낮은 수준이면서도 국내보다는 높은 가격을 확보해 초기 수익성 확보 여지가 있다. 회사는 병원당 연간 1,000명 규모의 시술 체계를 구축하고 있으며, 복수의 현지 대형병원과 추가 협의를 진행 중이라고 밝혔다.",
-    "en": "CartiLife obtained final sales approval in Hainan, China in April 2026 and signed a partnership with Boao International Hospital in August 2026, leading to the first local patient treatment. The registered price in Hainan of 150,000 yuan per unit is lower than the competing US therapy MACI while still exceeding the domestic Korean price, providing room for early profitability. The company is building a treatment system capable of serving 1,000 patients annually per hospital and stated it is in discussions with multiple additional large hospitals locally."
+    "ko": "카티라이프는 2026년 4월 하이난성 판매승인, 5월 가격 승인을 잇달아 획득하며 1회 치료기준 1유닛당 15만위안(약 3195만원), 4유닛 기준 최대 19만5000위안(4154만원)의 공식 가격체계를 확보했다. 2026년 7월 하이난 보아오에서 첫 환자 시술도 마쳤다. 이는 국산 세포치료제가 중국에서 실제 환자를 대상으로 상업화 단계에 진입한 첫 사례라는 점에서 상징성이 크며, 향후 미국·일본 등 다른 시장 진출 시 참고할 가격·데이터 레퍼런스로 활용될 수 있다.",
+    "en": "CartiLife secured Hainan provincial sales approval in April 2026 followed by official pricing approval in May, establishing a formal price structure of KRW 31.95 million per unit for one syringe and up to KRW 41.54 million for four units per treatment. The first patient procedure was completed in Boao, Hainan in July 2026. This marks the first instance of a Korean cell therapy entering commercial-stage treatment of actual patients in China, which carries significant symbolic value and could serve as a pricing and data reference for future entry into markets such as the US and Japan."
    }
   },
   {
    "title": {
-    "ko": "매출 성장세와 손실률 개선",
-    "en": "Revenue Growth and Improving Loss Margin"
+    "ko": "4년 연속 매출 성장과 첫 연간 흑자",
+    "en": "Four Straight Years of Revenue Growth and First Annual Profit"
    },
    "body": {
-    "ko": "연결 매출액은 2022년 101.0억원에서 2025년 152.0억원으로 4년 연속 증가세를 이어왔다. 같은 기간 영업손실률은 -52.4%에서 -28.6%로 축소되며 손익 구조가 점진적으로 개선되고 있음을 보여준다. 2025년에는 지배주주순이익이 2.7억원으로 흑자 전환한 점도 긍정적 신호로 해석될 수 있다.",
-    "en": "Consolidated revenue has grown for four consecutive years, from KRW 10.1 billion in 2022 to KRW 15.2 billion in 2025. Over the same period, the operating loss margin narrowed from -52.4% to -28.6%, indicating a gradually improving cost structure. Net income attributable to owners turning positive at KRW 273 million in 2025 can also be read as a favorable signal."
+    "ko": "매출은 2022년 101.0억원에서 2025년 152.0억원까지 매년 증가했고, 2025년에는 연간 순이익 2.7억원을 기록하며 7년 만에 흑자로 전환했다. 영업손실률도 2022년 -52.4%에서 2025년 -28.6%로 개선되는 흐름을 보였다. 카티라이프 정식 허가와 병원 채택 확대가 본업 매출 성장의 배경으로 지목된다.",
+    "en": "Revenue grew every year from KRW 10.1 billion in 2022 to KRW 15.2 billion in 2025, and the company posted its first annual net profit of KRW 0.27 billion in seven years in 2025. The operating margin also improved from -52.4% in 2022 to -28.6% in 2025. CartiLife's formal approval and expanding hospital adoption are cited as drivers of core revenue growth."
    }
   },
   {
    "title": {
-    "ko": "다각화된 파이프라인 모멘텀",
-    "en": "Diversified Pipeline Momentum"
+    "ko": "후속 파이프라인의 다각화",
+    "en": "Diversification of Follow-On Pipeline"
    },
    "body": {
-    "ko": "동종 연골세포치료제 '카티로이드'는 호주 임상 1·2상 IND 승인을 받아 백인 대상 글로벌 데이터 확보를 추진 중이며, 이는 해외 기술이전 가능성을 뒷받침할 수 있는 요소다. 주사형 골관절염 치료제 '스페로큐어'는 비임상에서 염증 감소 및 연골재생 관련 데이터를 확보하고 국내 임상시험계획 신청을 완료했다. 자가유래 치료제 중심에서 동종·주사형 치료제로 파이프라인을 다각화하면서 향후 여러 임상 이벤트가 예정돼 있다.",
-    "en": "The allogeneic cartilage therapy CartiRoid has received IND approval for Phase 1/2 trials in Australia and is pursuing global data from Caucasian patients, a factor that could support overseas licensing prospects. The injectable osteoarthritis treatment SpheroCure has confirmed inflammation reduction and cartilage regeneration signals in preclinical studies and completed a clinical trial application in Korea. As the pipeline diversifies from autologous-centered therapies toward allogeneic and injectable formats, multiple future clinical milestones are anticipated."
+    "ko": "카티로이드는 2026년 1월 호주 1/2상 IND 승인을 획득하며 글로벌 임상을 개시했고, 편의성을 높인 동종·기성품형 치료제로 시장을 넓힐 잠재력을 갖고 있다. 주사형 치료제 스페로큐어는 국내 식약처 임상 신청을 마쳤으며, 2026년 1·2a상 돌입을 준비 중으로, 수술 없이 투여 가능한 형태로 개발돼 시장을 더 크게 확장할 가능성이 제기된다. 카티라이프 하나에 의존하지 않는 파이프라인 구조가 리스크 분산 요인으로 작용할 수 있다.",
+    "en": "CartiLoid began global clinical trials after receiving Australian Phase 1/2 IND approval in January 2026, offering an allogeneic, off-the-shelf format with greater convenience and potential market reach. The injectable candidate SpheroCure has filed a clinical trial application with Korea's drug regulator and is preparing to enter Phase 1/2a trials in 2026, developed as a non-surgical administration format that could further expand the addressable market. A pipeline structure not solely dependent on CartiLife could serve as a risk-diversifying factor."
    }
   }
  ],
  "bear": [
   {
    "title": {
-    "ko": "4년 연속 영업적자",
-    "en": "Four Consecutive Years of Operating Losses"
+    "ko": "본업 영업손실 4년째 지속",
+    "en": "Core Operating Losses Persist for Four Years"
    },
    "body": {
-    "ko": "영업손익은 2022년부터 2025년까지 매년 적자를 기록했으며 -43억원에서 -53억원 사이를 오갔다. 2026년 1분기와 2분기에도 각각 -13.0억원, -4.8억원의 영업손실이 이어지며 흑자전환 시점은 아직 확인되지 않고 있다. 영업활동현금흐름 역시 2023년을 제외하고 대체로 유출 기조를 보여 자체 현금창출력이 아직 안정적이지 않다.",
-    "en": "Operating losses have persisted every year from 2022 through 2025, ranging between KRW -4.3 billion and KRW -5.3 billion. Operating losses of KRW -1.30 billion and KRW -0.48 billion continued in Q1 and Q2 2026 respectively, with the timing of a sustained operating profit turnaround not yet confirmed. Operating cash flow has also mostly remained negative except in 2023, indicating the company's internal cash generation capability is not yet stable."
+    "ko": "영업손실은 2022년 -52.9억원부터 2025년 -43.4억원까지 4년 연속 이어졌고, 2026년 들어서도 1분기 -13.0억원, 2분기 -4.8억원으로 적자가 계속됐다. 매출 성장에도 불구하고 손익분기점 도달 시점은 아직 불확실한 상태다.",
+    "en": "Operating losses continued for four straight years, from -KRW 5.29 billion in 2022 to -KRW 4.34 billion in 2025, and persisted into 2026 with -KRW 1.30 billion in Q1 and -KRW 0.48 billion in Q2. Despite revenue growth, the timing of reaching breakeven remains uncertain."
    }
   },
   {
    "title": {
-    "ko": "순이익의 큰 분기별 변동성",
-    "en": "Significant Quarterly Net Income Volatility"
+    "ko": "순이익 흑자의 비영업적 성격",
+    "en": "Non-Operating Nature of the Net Profit Swing"
    },
    "body": {
-    "ko": "2025년 4분기 지배주주순이익은 55.0억원으로 급증했으나, 이는 같은 분기 영업손실 -4.8억원과 괴리를 보여 비영업적 요인의 영향을 시사한다. 이후 2026년 1분기와 2분기에는 각각 -20.4억원, -7.4억원의 순손실로 재차 전환되며 이익의 지속가능성에 대한 판단이 쉽지 않은 상황이다.",
-    "en": "Net income attributable to owners surged to KRW 5.50 billion in Q4 2025, but this diverges from the same quarter's operating loss of KRW -0.48 billion, suggesting the influence of non-operating factors. Net income then reverted to losses of KRW -2.04 billion and KRW -0.74 billion in Q1 and Q2 2026 respectively, making it difficult to assess the sustainability of earnings."
+    "ko": "2025년 연간 순이익 흑자 전환은 헬릭스미스 관련 관계기업 투자자산 손상액 중 약 48억 원이 환입된 데 크게 기인했다. 이는 본업 매출·영업이익의 개선과는 별개의 회계상 요인으로, 헬릭스미스의 주가나 실적이 다시 악화될 경우 손상차손이 재차 발생하며 순이익이 반전될 가능성도 배제할 수 없다. 최근 네 개 분기 합산 지배주주 순이익도 8.7억원 수준의 소폭 이익에 그쳐, 매 분기 안정적인 흑자가 재현되는 구조는 아니다.",
+    "en": "The 2025 swing to annual net profit was largely attributable to a roughly KRW 4.8 billion reversal of impairment on the Helixmith-related associate investment asset. This is a separate accounting factor from improvement in core revenue or operating profit, and if Helixmith's share price or performance weakens again, renewed impairment charges could reverse net profit. Cumulative owner net profit over the trailing four quarters was also a modest KRW 0.87 billion, not a structure that consistently reproduces profit each quarter."
    }
   },
   {
    "title": {
-    "ko": "중국 매출 실현의 초기 단계",
-    "en": "China Revenue Still in Early Realization Stage"
+    "ko": "제한적인 국내 시장과 경쟁 심화",
+    "en": "Limited Domestic Market and Intensifying Competition"
    },
    "body": {
-    "ko": "중국 진출은 2026년 4월 판매승인, 8월 첫 병원 파트너십 및 첫 환자 시술로 이어졌으나, 실제 매출 규모가 재무제표에 유의미하게 반영되기까지는 시간이 필요할 것으로 보인다. NMPA 본토 등록은 '이르면 1년 내'로 제시된 목표일 뿐 확정된 일정은 아니며, 현지 RWD가 규제 근거로 얼마나 인정받을지도 불확실하다.",
-    "en": "China market entry progressed from sales approval in April 2026 to the first hospital partnership and patient treatment in August 2026, but it will likely take time before actual revenue is meaningfully reflected in financial statements. NMPA mainland registration has only been presented as a target of 'as soon as one year,' not a confirmed timeline, and how much regulatory weight local RWD will carry remains uncertain."
+    "ko": "카티라이프의 실질 타깃 시장은 1000억원대로 추산돼 국내 시장만으로는 성장 여력이 제한적이며, 시술 자체도 두 차례 시술이 필요한 구조로 인해 편의성에 한계가 존재한다. 국내에서는 이미 승인된 경쟁 줄기세포치료제와 시장을 양분해야 하는 상황이고, 메디포스트 등 경쟁사도 미국·일본 임상에서 성과를 내고 있어 해외 시장에서도 경쟁이 심화될 가능성이 있다.",
+    "en": "CartiLife's realistic target market is estimated at around KRW 100 billion, limiting domestic growth potential, and the procedure itself faces convenience limitations due to its two-step structure. Domestically the company must share the market with an already-approved competing stem cell therapy, and competitors such as Mediphostem are also making progress in US and Japan trials, raising the possibility of intensifying competition abroad as well."
    }
   }
  ],
  "risks": [
   {
    "cat": {
-    "ko": "규제 리스크",
-    "en": "Regulatory Risk"
+    "ko": "임상·규제 리스크",
+    "en": "Clinical and Regulatory Risk"
    },
    "body": {
-    "ko": "중국 하이난 특구에서 확보한 실사용데이터(RWD)가 NMPA 본토 등록 심사에서 얼마나 임상 근거로 인정받을지는 아직 확정되지 않았다. 국내외 첨단재생의료 관련 규제 변화 역시 사업 일정에 영향을 줄 수 있는 변수다.",
-    "en": "It remains unconfirmed how much clinical evidentiary weight the real-world data (RWD) gathered in China's Hainan pilot zone will carry in NMPA mainland registration review. Changes in domestic and international advanced regenerative medicine regulations are also variables that could affect the business timeline."
+    "ko": "회사는 과거 임상시험 품질관리 미흡으로 식품의약품안전처의 경고 처분을 받은 바 있다. 미국 임상은 글로벌 파트너십을 기반으로 3상 진입을 목표로 하고 있다고 밝혔으나 아직 파트너가 확정되지 않았으며, 국내 임상 신청이 규제기관과의 이견으로 지연된 전례도 있어 향후 임상·허가 일정이 계획대로 진행되지 않을 가능성이 있다.",
+    "en": "The company previously received a warning from the Ministry of Food and Drug Safety due to inadequate clinical trial quality management. It has stated its US clinical strategy is to aim for Phase 3 entry based on a global partnership, but no partner has yet been finalized, and there is precedent of domestic trial applications being delayed due to disagreements with regulators, raising the possibility that future clinical and approval timelines may not proceed as planned."
    }
   },
   {
    "cat": {
-    "ko": "재무 리스크",
-    "en": "Financial Risk"
+    "ko": "관계기업 회계 변동성",
+    "en": "Associate Accounting Volatility"
    },
    "body": {
-    "ko": "부채비율은 2022년 109.5%에서 2025년 114.0%로 100%대 초중반 수준을 유지하고 있으며, 영업활동현금흐름은 대체로 마이너스 기조를 보여왔다. 지속적인 영업적자로 인해 향후 추가 자금조달이 필요할 경우 기존 주주가치 희석 가능성을 배제할 수 없다.",
-    "en": "The debt ratio has remained in the low-to-mid 100% range, from 109.5% in 2022 to 114.0% in 2025, while operating cash flow has generally trended negative. Given the ongoing operating losses, the possibility of shareholder value dilution cannot be ruled out if additional future funding is required."
+    "ko": "헬릭스미스 지분에 대한 지분법 손익과 손상차손·환입은 헬릭스미스의 주가와 실적에 연동돼 있어, 헬릭스미스 관련 보유 지분의 주가 하락에 따른 투자 손실과 실적 악화에 따른 지분법 평가손실이 재차 발생하면 바이오솔루션의 연결 순이익이 다시 크게 흔들릴 수 있다. 이는 본업과 무관한 외부 변수에 실적이 좌우되는 구조적 리스크다.",
+    "en": "Equity-method gains/losses and impairment/reversal on the Helixmith stake are linked to Helixmith's own share price and performance, so if investment losses from share price declines and equity-method valuation losses from performance deterioration related to Helixmith recur, Bio Solution's consolidated net profit could again swing significantly. This represents a structural risk in which results are driven by external variables unrelated to the core business."
    }
   },
   {
    "cat": {
-    "ko": "경쟁 리스크",
-    "en": "Competitive Risk"
+    "ko": "해외 사업 초기 단계 리스크",
+    "en": "Early-Stage International Business Risk"
    },
    "body": {
-    "ko": "골관절염 세포치료제 시장에서 코오롱티슈진·메디포스트·지씨셀 등 국내 경쟁사들이 각자 미국·일본 등 해외 임상을 진행 중이며, 미국에는 이미 베리셀의 마시(MACI)가 상용화돼 있다. 경쟁사들의 임상·상업화 진전 속도에 따라 시장 선점 경쟁이 치열해질 수 있다.",
-    "en": "In the osteoarthritis cell therapy market, domestic competitors such as Kolon TissueGene, Medipost, and GC Cell are each pursuing overseas clinical trials in the US and Japan, while Vericel's MACI is already commercialized in the United States. Competition for market leadership could intensify depending on the pace of competitors' clinical and commercialization progress."
+    "ko": "중국 사업은 아직 하이난 한 개 병원에서 시작된 초기 상업화 단계로, 총 의료비는 해당 의료기관과 약품감독관리기관 간 협의를 거쳐 산정 중이며 향후 내륙 도시 확대나 본토 진입 시점, 규제 변화에 따라 사업 진도가 달라질 수 있다. 계획된 시술 인원 목표 달성 여부와 현지 파트너 병원과의 협력 확대 속도도 불확실성 요인이다.",
+    "en": "The China business is still in an early commercialization stage starting from a single hospital in Hainan, where total medical costs are still being determined through consultation between the medical institution and drug regulatory authority, and future progress could vary depending on inland city expansion timing, mainland entry, and regulatory changes. Whether planned procedure volume targets are met and the pace of expanded cooperation with local partner hospitals also remain sources of uncertainty."
    }
   }
  ],
  "checkpoints": [
   {
    "when": {
-    "ko": "2026년 11월경",
+    "ko": "2026년 11월 중",
     "en": "Around November 2026"
    },
    "what": {
-    "ko": "2026년 3분기 실적 발표에서 중국 하이난 첫 매출 반영 여부와 영업손익 개선 흐름을 확인할 필요가 있다.",
-    "en": "In the Q3 2026 earnings release, it will be important to check whether initial China Hainan revenue is reflected and whether the operating loss trend continues to improve."
+    "ko": "2026년 3분기 잠정실적 공시 예정으로, 카티라이프 국내·중국 매출 반영 정도와 영업손실 축소 여부를 확인할 시점이다.",
+    "en": "Q3 2026 preliminary earnings are expected to be disclosed, a point to check how much CartiLife's domestic and China sales are reflected and whether the operating loss continues to narrow."
    }
   },
   {
    "when": {
-    "ko": "지속적으로 확인 필요",
-    "en": "Ongoing"
+    "ko": "2026년 4분기~2027년 초",
+    "en": "Q4 2026 to early 2027"
    },
    "what": {
-    "ko": "하이난 보아오 국제의원 외 추가 대형병원과의 파트너십 체결 여부와 시술 건수 확대 속도를 점검해야 한다.",
-    "en": "Additional partnerships with large hospitals beyond Boao International Hospital in Hainan, and the pace of expanding treatment volumes, should be monitored."
+    "ko": "하이난 카티라이프 시술 확대 추이와 2027년 연간 1000명 시술 목표 달성 경로, 내륙 도시·싱가포르 등 추가 진출 협의 진행 상황을 확인해야 한다.",
+    "en": "Track the pace of CartiLife procedure expansion in Hainan, progress toward the 2027 target of 1,000 annual procedures, and negotiations for further expansion into inland cities and Singapore."
    }
   },
   {
    "when": {
-    "ko": "확정 시점 미정",
-    "en": "Timing not yet confirmed"
+    "ko": "2026년 하반기 이후",
+    "en": "Second half of 2026 onward"
    },
    "what": {
-    "ko": "미국 임상 3상 IND 신청 및 개시 여부, NMPA 본토 등록 절차의 구체적 진행 상황을 확인해야 한다.",
-    "en": "The filing and initiation of the US Phase 3 IND, as well as the concrete progress of NMPA mainland registration procedures, should be checked."
+    "ko": "미국 임상 3상 관련 글로벌 파트너십 체결 여부와 스페로큐어의 1·2a상 개시 시점을 확인할 필요가 있다.",
+    "en": "Monitor whether a global partnership for the US Phase 3 trial is finalized and when SpheroCure's Phase 1/2a trial officially begins."
    }
   },
   {
    "when": {
-    "ko": "2026년 중",
-    "en": "During 2026"
+    "ko": "2027년 초",
+    "en": "Early 2027"
    },
    "what": {
-    "ko": "주사형 골관절염 치료제 '스페로큐어'의 국내 임상 1·2a상 개시 여부를 확인해야 한다.",
-    "en": "Whether SpheroCure's domestic Phase 1/2a trial begins during 2026 should be confirmed."
-   }
-  },
-  {
-   "when": {
-    "ko": "분기별 지속 확인",
-    "en": "Each quarter"
-   },
-   "what": {
-    "ko": "분기별 순이익의 변동성이 커 영업손익과의 괴리 원인이 반복되는지 향후 실적에서 재확인이 필요하다.",
-    "en": "Given high quarterly net income volatility, future results should be checked to see whether the divergence from operating income recurs."
+    "ko": "카티로이드의 호주 1/2상 초기 데이터 발표 여부와 헬릭스미스 지분 관련 지분법 손익 추이를 함께 점검할 시점이다.",
+    "en": "Check for initial data readouts from CartiLoid's Australian Phase 1/2 trial and the trend in equity-method gains/losses related to the Helixmith stake."
    }
   }
  ],
  "verdict": {
   "body": {
-   "ko": "바이오솔루션은 2025년 연간 매출 152.0억원, 순이익 2.7억원으로 흑자 전환에 성공했으나, 영업손익 자체는 4년 연속 적자를 벗어나지 못했다. 2026년 들어 카티라이프의 중국 하이난 상업화가 판매승인, 파트너십 체결, 첫 환자 시술로 순차적으로 진전되며 해외 매출원 확보의 초기 신호가 나타나고 있다. 다만 실제 매출 기여 규모와 NMPA 본토 등록 시점은 아직 확정되지 않았으며, 분기별 순이익 변동성도 커 이익의 질과 지속가능성을 판단하기에는 이르다. 차세대 파이프라인인 카티로이드와 스페로큐어의 임상 진전도 향후 기업가치에 영향을 줄 수 있는 변수로 남아 있다. 재무구조 측면에서는 부채비율이 100%대 초중반을 유지하고 영업현금흐름이 대체로 마이너스 기조를 보이는 만큼, 지속적인 자금조달 필요성 여부도 함께 살펴볼 필요가 있다. 투자 판단에 앞서 다가오는 분기 실적과 중국·미국·호주에서의 임상·상업화 이벤트를 지속적으로 확인하는 것이 바람직하다.",
-   "en": "Bio Solution achieved a net income turnaround in 2025, posting annual revenue of KRW 15.2 billion and net income of KRW 273 million, though operating income itself has remained in the red for four consecutive years. Entering 2026, CartiLife's commercialization in Hainan, China has progressed sequentially through sales approval, a hospital partnership, and the first patient treatment, signaling early progress toward securing an overseas revenue source. However, the actual scale of revenue contribution and the timing of NMPA mainland registration remain unconfirmed, and quarterly net income volatility remains high, making it premature to assess the quality and sustainability of earnings. Progress on next-generation pipelines CartiRoid and SpheroCure also remains a variable that could affect future corporate value. On the financial structure side, with the debt ratio holding in the low-to-mid 100% range and operating cash flow mostly trending negative, the ongoing need for additional funding also warrants attention. Ahead of any investment decision, it would be advisable to continue monitoring upcoming quarterly results and clinical and commercialization events in China, the US, and Australia."
+   "ko": "바이오솔루션은 매출이 4년 연속 늘고 2025년 처음 연간 순이익 흑자를 기록했지만, 이 흑자는 헬릭스미스 관련 손상차손 환입이라는 비영업 요인의 비중이 컸고 영업손실 자체는 4년째 지속되고 있다. 2026년 1분기와 2분기 모두 다시 영업손실을 냈고 최근 네 개 분기 합산 순이익도 소폭에 그쳐, 흑자 기조가 매 분기 안정적으로 이어지는 구조인지는 아직 더 확인이 필요하다. 한편 카티라이프는 국내 정식 허가에 이어 2026년 중국 하이난 상업화까지 성공하며 국산 세포치료제 최초로 해외 실적을 만들어내기 시작했고, 카티로이드·스페로큐어 등 후속 파이프라인도 임상 단계에 진입했다. 다만 중국 사업은 여전히 한 개 병원 단위의 초기 단계이며, 미국 임상은 파트너 확정이 남아 있고, 관계기업 관련 회계 변동성이 향후에도 순이익에 영향을 줄 수 있는 구조적 요인으로 남아 있다. 투자 판단에 앞서 다음 분기 실적에서 영업손실 축소 지속 여부와 중국 시술 확대 속도, 미국 파트너십 진행 상황을 함께 확인하는 것이 유효할 것으로 보인다.",
+   "en": "Bio Solution has grown revenue for four straight years and posted its first annual net profit in 2025, but that profit was heavily weighted toward the non-operating factor of an impairment reversal related to Helixmith, while the operating loss itself has continued for a fourth year. Both Q1 and Q2 2026 posted operating losses again, and cumulative net profit over the trailing four quarters was modest, meaning it remains to be seen whether the profit trend can be consistently reproduced each quarter. Meanwhile, CartiLife has followed its formal domestic approval with successful 2026 commercialization in Hainan, China, becoming the first Korean cell therapy to generate overseas commercial results, and follow-on pipeline candidates CartiLoid and SpheroCure have entered clinical stages. However, the China business remains at an early, single-hospital stage, the US trial still requires a finalized partner, and accounting volatility related to the affiliate remains a structural factor that could continue to affect net profit going forward. Before forming any investment judgment, it would be useful to confirm in coming quarters whether the operating loss continues to narrow, the pace of China procedure expansion, and progress on the US partnership."
   }
  },
  "sources": [
-  "https://littlebproject.com/stock/086820",
-  "https://m.thinkpool.com/item/086820",
-  "https://www.thinkpool.com/item/086820/news/16807255",
-  "https://www.investing.com/equities/bio-solution-co-ltd",
+  "https://www.hankyung.com/article/202608248218i",
+  "https://www.mt.co.kr/stock/2025/08/21/2025082114599661778",
+  "https://www.hankyung.com/article/202504304960i",
+  "https://www.sisajournal-e.com/news/articleView.html?idxno=420258",
+  "https://www.hankyung.com/article/202602134040i",
+  "https://www.edaily.co.kr/News/Read?newsId=03283286645420384&mediaCodeNo=257",
   "https://thevc.kr/biosolution",
-  "https://www.google.com/finance/quote/086820:KOSDAQ?hl=en",
-  "https://kbthink.com/securities-view.html?docId=20250508161829103K",
-  "https://www.innoforest.co.kr/company/CP00016669/%EB%B0%94%EC%9D%B4%EC%98%A4%EC%86%94%EB%A3%A8%EC%85%98",
-  "https://biosolutions.co.kr/%ED%9A%8C%EC%82%AC%EC%86%8C%EA%B0%9C",
-  "https://comp.fnguide.com/SVO2/ASP/SVD_Main.asp?gicode=A086820",
-  "https://comp.wisereport.co.kr/company/c1050001.aspx?cmp_cd=086820&cn=",
-  "https://www.sisajournal-e.com/news/articleView.html?idxno=413193",
-  "https://www.jobkorea.co.kr/recruit/co_read/c/mtt00",
-  "https://www.cosinkorea.com/news/article.html?no=38156",
-  "https://biz.irgo.co.kr/auto_irroom_branch.asp?tcomp_seq=3434",
-  "https://comp.wisereport.co.kr/company/c1020001.aspx?cmp_cd=086820&cn=",
-  "https://www.medipharmhealth.co.kr/news/article.html?no=118686",
-  "https://www.thebionews.net/news/articleView.html?idxno=27169"
+  "https://www.mt.co.kr/stock/2026/04/27/2026042713140399743",
+  "https://www.kpanews.co.kr/news/articleView.html?idxno=540651",
+  "https://www.dailyinvest.kr/news/articleView.html?idxno=70194",
+  "https://biz.heraldcorp.com/article/10733640",
+  "http://www.docdocdoc.co.kr/news/articleView.html?idxno=3026370",
+  "https://www.thebell.co.kr/front/newsview.asp?key=202508211435163160101328",
+  "https://m.irgo.co.kr/IR-COMP/086820/%EB%B0%94%EC%9D%B4%EC%98%A4%EC%86%94%EB%A3%A8%EC%85%98-IR-PAGE",
+  "https://littlebproject.com/stock/086820",
+  "https://www.judal.co.kr/?view=stockAI&shareToken=bhh3P6hR1V4PDidk",
+  "https://www.investing.com/equities/bio-solution-co-ltd",
+  "https://kbthink.com/securities-view.html?docId=20250508161829103K"
  ],
  "v": 2,
  "model": "claude-sonnet-5",
@@ -233,11 +223,11 @@
   "바이오·제약"
  ],
  "market": "코스닥",
- "reportDate": "2026-08-18",
- "reportTs": "2026-08-18 00:50",
- "dataDate": "20260821",
+ "reportDate": "2026-09-05",
+ "reportTs": "2026-09-05 07:07",
+ "dataDate": "20260904",
  "quant": {
-  "asOf": "2026-08-21",
+  "asOf": "2026-09-04",
   "fs_basis": "연결(CFS) · DART 공시 확정치 · 지배주주 기준 순이익",
   "annual": [
    {
@@ -248,6 +238,7 @@
     "np_owner": 273360996,
     "equity": 32003384947,
     "equity_owner": 32003384947,
+    "equity_nci": null,
     "liab": 36477252082,
     "cfo": -1311613033,
     "eps_basic": 11,
@@ -263,6 +254,7 @@
     "np_owner": -11928380884,
     "equity": 31257447786,
     "equity_owner": 31257447786,
+    "equity_nci": null,
     "liab": 36206631843,
     "cfo": -2286373911,
     "eps_basic": -1487,
@@ -278,6 +270,7 @@
     "np_owner": -1249012363,
     "equity": 42190126159,
     "equity_owner": 42190126159,
+    "equity_nci": null,
     "liab": 50217819492,
     "cfo": 2160073255,
     "eps_basic": -156,
@@ -293,6 +286,7 @@
     "np_owner": -8087231575,
     "equity": 43775099282,
     "equity_owner": 43775099282,
+    "equity_nci": null,
     "liab": 47955451542,
     "cfo": -3813679328,
     "eps_basic": -1009,
@@ -334,19 +328,22 @@
    }
   ],
   "valuation": {
-   "price": 6730,
-   "mcap": 0.1745,
+   "price": 6130,
+   "mcap": 0.1589,
    "shares": 25924085,
    "total_shares": 25924085,
    "wavg_shares": 25224426,
-   "per": 164.1,
+   "per": 149.512,
    "eps": 41,
-   "pbr": 4.11,
-   "bps": 1637,
+   "pbr": 3.7424,
+   "bps": 1638,
    "roe_ttm": 2.5,
    "ttm_window": "2025Q3~2026Q2",
    "ttm_np_owner": 868958354,
-   "pbr_krx": 5.08,
+   "ccy": "KRW",
+   "bps_src": "자체",
+   "eps_src": "공시",
+   "pbr_krx": 4.63,
    "bps_krx": 1324.0,
    "basis": "PER·EPS·PBR·BPS 모두 자체 산출(네이버·토스와 동일 방식) · 배당은 DART 공시 주당현금배당금(보완:KRX) ÷ 현재가",
    "dps": 0.0,
