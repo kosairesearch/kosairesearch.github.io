@@ -1,230 +1,220 @@
 {
  "title": {
-  "ko": "HBM 수주 확대 기대 vs 단기 실적 불확실성",
-  "en": "HBM Order Recovery Anticipated, Near-Term Earnings Visibility Still Low"
+  "ko": "HBM 훈풍 속 급등락하는 분기 실적",
+  "en": "Genesem: HBM Tailwinds Meet Earnings Volatility"
  },
  "lead": {
-  "ko": "제너셈은 SK하이닉스 HBM 장비 계약과 하이브리드 본딩 등 신제품 라인업을 기반으로 2026년 전년비 60%+ 매출 성장을 목표하고 있으나, 2026년 1분기 실적 급감으로 연간 목표(900억원+) 달성까지의 경로는 여전히 가파르다.",
-  "en": "Genesem targets 60%-plus revenue growth in 2026 on the back of SK Hynix HBM equipment orders and a new hybrid-bonding lineup, yet a deeply negative Q1 2026 result means the path to its 90-billion-KRW annual target remains steep."
+  "ko": "제너셈은 EMI 실드·쏘우 싱귤레이션·HBM 자동화 장비를 축으로 하는 반도체 후공정 장비 기업으로, 2025년 실적 급락 이후 2026년 2분기 흑자 반등을 보였으나 분기별 변동성이 여전히 크다.",
+  "en": "Genesem is a semiconductor back-end automation equipment maker built around EMI shielding, saw singulation, and HBM automation gear, and after a sharp 2025 earnings decline it swung back to a quarterly profit in Q2 2026, though quarter-to-quarter volatility remains pronounced."
  },
  "keypoints": [
   {
-   "ko": "SK하이닉스와 HBM 후공정 장비 단일판매 계약(60억원) 체결 — 핵심 고객사와의 공급 관계 유지 확인",
-   "en": "Signed a 6-billion-KRW HBM back-end equipment supply contract with SK Hynix, confirming ongoing supply-chain ties with a key customer"
+   "ko": "2025년 연간 매출은 567.6억원으로 2024년(687.4억원) 대비 감소했고, 영업이익률은 1.8%까지 낮아졌다.",
+   "en": "Annual 2025 revenue fell to KRW 56.76 billion from KRW 68.74 billion in 2024, with operating margin shrinking to 1.8%."
   },
   {
-   "ko": "2026년 세미콘 코리아에서 HBM 5종·하이브리드 본딩·PLP·2.5D 패키징 장비 전방위 라인업과 연간 매출 900억원+ 목표 공표",
-   "en": "Announced a full lineup at Semicon Korea 2026 — HBM (5 types), hybrid bonding, PLP, 2.5D packaging — alongside a stated 2026 revenue target exceeding 90 billion KRW"
+   "ko": "2026년 1분기 영업손실 이후 2분기에는 매출 232.9억원, 영업이익 41.7억원으로 뚜렷한 반등이 나타났다.",
+   "en": "After an operating loss in Q1 2026, the company rebounded sharply in Q2 2026 with revenue of KRW 23.29 billion and operating profit of KRW 4.17 billion."
   },
   {
-   "ko": "2025년 영업이익률 1.8%로 급락, 2026년 1분기 영업손실 심화(-24.7억원) — 실적 회복 모멘텀 아직 미가시화",
-   "en": "Operating margin collapsed to 1.8% in FY2025 and deepened into a -2.47-billion-KRW operating loss in Q1 2026, leaving earnings recovery momentum still unproven"
+   "ko": "회사는 6월 말 기준 수주잔고 750억원을 확보했다고 밝혔으며, 이를 근거로 2026년 연간 매출 40% 이상 성장을 목표로 제시했다.",
+   "en": "The company stated it held an order backlog of KRW 75 billion as of end-June and set a target of over 40% annual revenue growth for 2026 based on this backlog."
   },
   {
-   "ko": "전기차 파워모듈 풀패키지 인라인 자동화 설비 첫 수주(글로벌 OSAT) 추진 — 차량용 반도체 설비 신시장 진입 시도",
-   "en": "Pursued its first full-package EV power-module inline automation order from a global OSAT, marking entry into the automotive semiconductor equipment market"
+   "ko": "SK하이닉스와 HBM 관련 후공정 장비 단일판매·공급계약을 잇달아 체결하며 고객사 내 신규 프로젝트 매출화가 진행 중이다.",
+   "en": "The company has signed a series of single-sale supply contracts with SK hynix for HBM-related back-end equipment, reflecting ongoing monetization of new customer projects."
   },
   {
-   "ko": "2025년 11월 무상증자(발행주식 877만→1,315만주), 2025년 3월 각자대표 체제 전환 등 지배구조 변화 진행 중",
-   "en": "Governance changes include a free share distribution in November 2025 (shares outstanding up from 8.77M to 13.15M) and a dual-CEO structure adopted in March 2025"
+   "ko": "SEMI 등은 2026년 글로벌 반도체 장비 시장이 HBM·첨단 패키징 수요를 축으로 두 자릿수 성장할 것으로 전망하고 있어 업황 자체는 확장 국면에 있다.",
+   "en": "SEMI and other trackers project double-digit growth in the global semiconductor equipment market in 2026, driven by HBM and advanced packaging demand, indicating the broader industry remains in an expansion phase."
   }
  ],
  "business": {
-  "ko": "제너셈은 2000년 설립되어 2015년 코스닥에 상장한 반도체 후공정 자동화 장비 전문기업이다. 주력 제품군은 Saw Singulation(웨이퍼 개별 칩 분리), EMI Shield Solution(전자파 차폐), HBM Automation(고대역폭 메모리 후공정), Laser Marking/Cutting, Pick & Place, Test Handler, Inspection 장비로 구성되며, 고객의 공정 요건에 맞춘 커스터마이징 역량이 핵심 경쟁력이다. 주요 고객은 SK하이닉스(HBM 캐파 확대 관련 장비 공급)와 국내외 OSAT(반도체 후공정 외주) 업체들이며, 2025년 1분기 기준 매출의 약 82%가 수출에서 발생하는 수출 중심 구조다. 최근에는 CoWoS 공정 트레이-투-보트(Tray to Boat) 이송 장비를 글로벌 OSAT에 납품하고, 싱가포르 OSAT에 패널레벨패키징(PLP) 장비를 공급해 양산이 본격화됨에 따라 추가 수주가 이어지는 등 2.5D·첨단 패키징 시장으로 제품군을 확장하고 있다. 2025년 11월에는 국내 글로벌 OSAT로부터 전기차 파워모듈 인라인 자동화 시스템 수주를 추진하며 차량용 반도체 설비 시장에도 진입을 시도하고 있다. 2025년 11월 무상증자(877만주→1,315만주)를 실시했으며, 같은 해 3월 한기현 대표가 신규 취임해 한복우 대표와 각자대표 체제로 운영 중이다. 경쟁 구도 면에서는 반도체 후공정 자동화 장비 시장의 특성상 한미반도체 등 국내 대형사와 글로벌 OSAT 내재화 장비 사이에서 틈새 포지션을 유지하고 있다.",
-  "en": "Genesem was founded in 2000 and listed on KOSDAQ in 2015 as a specialist in semiconductor back-end automation equipment. Its core product lineup spans Saw Singulation, EMI Shield Solution, HBM Automation, Laser Marking/Cutting, Pick & Place, Test Handler, and Inspection systems, all delivered as customized solutions for specific customer processes. Key customers include SK Hynix (HBM capacity expansion equipment) and domestic/global OSAT companies; roughly 82% of revenue was export-driven as of Q1 2025. Recent expansions include CoWoS Tray-to-Boat transfer equipment delivered to a global OSAT, and Panel Level Packaging (PLP) equipment supplied to a Singapore OSAT where production is ramping and follow-on orders are being received. In November 2025, the company pursued its first full-package EV power-module inline automation order from a domestic OSAT, marking entry into the automotive semiconductor equipment space. A free-share distribution in November 2025 increased shares outstanding from 8.77 million to 13.15 million, and a dual-CEO structure has been in place since March 2025. Competitively, Genesem occupies a customization-focused niche in the back-end automation space alongside larger domestic peers such as Hanmi Semiconductor, with pressure from OSAT in-housing trends on one side and smaller domestic equipment makers on the other."
+  "ko": "제너셈은 2000년 설립되어 2015년 코스닥에 상장한 반도체 후공정 자동화 장비 전문기업으로, 인천 송도에 본사를 두고 있다. 핵심 장비군은 전자파 차폐 장비인 EMI 실드, 웨이퍼를 개별 칩으로 절단하는 쏘우 싱귤레이션, 그리고 HBM 생산 후공정에서 웨이퍼 마운터·디본더·리무버 역할을 하는 HBM 오토메이션 장비다. 한 보도에 따르면 2024년 매출 기준으로는 EMI 실드가 31%, HBM 관련 장비가 21%, 쏘우 싱귤레이션이 14%, 기타 장비가 33%를 차지했다. 다만 다른 보도는 완전 자동화 무인 프리미엄 모델의 국내 대형 IDM 고객사 납품이 본격화되면서 2024년 전체 매출의 약 17% 수준이던 쏘 싱귤레이션 장비의 비중은 2025년 37% 이상으로 껑충 뛰며 매출 성장에 기여했다고 전해, 연도별 제품 믹스가 상당히 유동적임을 보여준다. 주요 고객사는 국내외 IDM, OSAT 등 반도체 후공정 검사 이송장비를 고객 맞춤형으로 설계·제조하여 납품하는 구조이며, EMI 실드 부문에서는 경쟁사 한미반도체와 시장 점유율을 두고 경쟁해왔다. 회사는 차세대 성장동력으로 하이브리드 본딩용 3D 스태킹 장비를 개발 중인데, 지난해 7월부터 과학기술정보통신부 국책과제로 초고집적 하이브리드 본딩용 3D 스태킹 장비 개발에 착수했으며 이는 AI반도체와 HBM 생산에 필요한 여러 개의 반도체 칩을 초정밀로 적층하고 구리 배선을 직접 연결하는 차세대 패키징 장비를 개발하는 사업이다. 또한 자회사 딥시어를 통해 AI 자회사 '딥시어(DeepSheer)'를 통해 장비 내 온디바이스 AI 탑재를 추진하는 등 검사 공정의 지능화도 병행하고 있다. 사업 구조상 매출은 전방 반도체 제조사와 OSAT 업체의 설비투자 사이클에 크게 좌우되는 특성을 지닌다.",
+  "en": "Founded in 2000 and listed on KOSDAQ in 2015, Genesem is a semiconductor back-end automation equipment specialist headquartered in Songdo, Incheon. Its core equipment lines are EMI shielding gear for electromagnetic interference protection, saw singulation equipment that cuts wafers into individual chips, and HBM automation equipment covering wafer mounters, debonders, and removers used in HBM back-end processes. According to one report, based on 2024 revenue, EMI shield equipment accounted for 31%, HBM-related equipment 21%, saw singulation 14%, and other equipment 33%. However, another report noted that the saw singulation equipment share of total revenue, which had been about 17% in 2024, jumped to more than 37% in 2025, contributing to revenue growth, as deliveries of a fully automated unmanned premium model to a major domestic IDM customer ramped up—illustrating that the product mix shifts substantially year to year. Major customers are domestic and overseas IDMs and OSATs, for which the company designs and manufactures customized back-end inspection and transfer equipment for delivery. In the EMI shield segment, the company has competed with rival Hanmi Semiconductor for market share. As a next-generation growth driver, the company is developing hybrid-bonding 3D stacking equipment; per company statements, it began developing ultra-high-density hybrid bonding 3D stacking equipment under a government project from the Ministry of Science and ICT starting last July, aimed at developing next-generation packaging equipment that ultra-precisely stacks multiple semiconductor chips and directly connects copper wiring for AI chips and HBM production. The company is also pursuing intelligent inspection through its AI subsidiary, as it is pushing to embed on-device AI within equipment through its AI subsidiary DeepSheer. Given this structure, revenue is highly dependent on the capex cycles of front-end chipmakers and OSAT customers."
  },
  "earnings": {
-  "ko": "제너셈의 연간 실적은 반도체 장비 업황 사이클에 따른 변동성이 뚜렷하다. 2022년 매출 596억원·영업이익 85억원(OPM 14.3%)으로 역대 최고 수준의 수익성을 기록했으나, 2023년에는 반도체 업황 하강으로 매출 565억원·영업이익 36억원(OPM 6.3%)으로 수익성이 크게 후퇴했다. 2024년은 HBM 투자 확대에 힘입어 매출 687억원·영업이익 65억원(OPM 9.5%)으로 의미 있는 회복세를 보였으나, 2025년에는 반도체 장비 시장 가격 경쟁 과열(DART 공시)로 매출 568억원·영업이익 10억원(OPM 1.8%)으로 수익성이 다시 급락했다. 2025년 분기별로는 1분기(-13.2억원 영업손실)·3분기(-3.7억원)가 적자, 2분기(매출 186억원·영업이익 26.6억원)는 강한 반등, 4분기(매출 140억원·영업이익 0.5억원)는 소폭 흑자에 그치는 등 수주 타이밍에 따른 편차가 극단적이었다. 2025년 영업현금흐름은 -21.3억원으로, 전년 +101.4억원에서 크게 악화되어 이익 감소가 운전자본 압박으로 이어진 구조를 보여준다. 2026년 1분기는 매출 67억원·영업손실 -24.7억원으로, 전년 동기 대비 매출 20.2% 감소·영업손실 87.8% 확대되며 연초 실적 모멘텀은 가장 취약한 상태다. 최근 12개월 기준 지배주주귀속 순이익은 약 4.86억원 수준에 그쳐 이익 체력의 회복 속도가 시장 기대를 밑돌고 있다.",
-  "en": "Genesem's annual results show pronounced cyclicality tied to the semiconductor equipment demand cycle. Revenue peaked at 59.6 billion KRW with an operating margin of 14.3% in 2022, then contracted to 56.5 billion KRW at a 6.3% margin in 2023 as the industry downturn hit. A partial recovery emerged in 2024 (68.7 billion KRW revenue, OPM 9.5%) on the back of HBM investment expansion. FY2025 saw another sharp deterioration—revenue fell to 56.8 billion KRW and the operating margin compressed to just 1.8%, as intensifying price competition in the equipment market (per DART disclosure) eroded profitability. Quarterly patterns in 2025 were highly uneven: Q1 (−1.32 billion KRW operating loss) and Q3 (−0.37 billion KRW) were loss-making; Q2 was the standout quarter (18.6 billion KRW revenue, +2.66 billion KRW operating income); Q4 was barely breakeven (+54 million KRW operating income). Operating cash flow swung to −2.13 billion KRW in FY2025 from +10.1 billion in FY2024, indicating working-capital pressure from thin margins. Q1 2026 deteriorated further—revenue of 6.73 billion KRW and an operating loss of −2.47 billion KRW—a 20.2% revenue decline and 87.8% widening of operating losses year-on-year. Net income attributable to controlling shareholders over the most recent twelve-month period stood at approximately 486 million KRW, leaving earning power far from recovered."
+  "ko": "제너셈의 연간 실적은 2022년 매출 596.0억원, 영업이익 85.2억원(영업이익률 14.3%)으로 정점을 찍은 뒤, 2023년 매출 564.5억원, 영업이익 35.6억원(영업이익률 6.3%)으로 큰 폭 둔화됐다. 2024년에는 매출이 687.4억원으로 반등하고 영업이익도 65.4억원(영업이익률 9.5%)으로 개선되며 지배주주순이익 60.8억원을 기록했으나, 2025년에는 매출이 567.6억원으로 다시 줄고 영업이익은 10.3억원(영업이익률 1.8%)까지 낮아지는 등 수익성이 급격히 훼손됐다. 분기별로 보면 2025년 2분기 매출 185.7억원·영업이익 26.6억원이었던 흐름이 3분기에는 매출 157.7억원·영업손실 3.7억원으로 적자 전환했고, 4분기에는 매출 139.8억원까지 줄었지만 영업이익은 소폭(0.5억원) 흑자를 유지했다. 2026년 1분기에는 매출이 67.3억원으로 급감하며 영업손실이 24.7억원, 지배주주순손실이 16.8억원으로 확대되는 등 상반기 초반 실적 부진이 심화됐다. 그러나 2026년 2분기에는 매출이 232.9억원으로 크게 늘고 영업이익도 41.7억원(영업이익률 약 17.9% 수준)으로 반등해, 최근 4개 분기(2025년 3분기~2026년 2분기) 합산 지배주주순이익은 약 18.8억원으로 집계됐다. 이러한 흐름은 주요 고객사의 프로젝트 발주와 장비 인수 시점에 따라 매출과 수익성이 분기 단위로 큰 편차를 보이는 수주형 장비업체의 특성을 잘 보여준다. 2024년 현금흐름표 기준 영업활동현금흐름은 101.4억원의 유입이었으나, 2025년에는 -21.3억원으로 순유출로 전환되어 실적 둔화가 현금창출력에도 반영됐다.",
+  "en": "Genesem's annual results peaked in 2022 with revenue of KRW 59.6 billion and operating profit of KRW 8.52 billion (14.3% operating margin), before slowing sharply in 2023 to revenue of KRW 56.45 billion and operating profit of KRW 3.56 billion (6.3% margin). In 2024, revenue rebounded to KRW 68.74 billion with operating profit improving to KRW 6.54 billion (9.5% margin) and owner net income of KRW 6.08 billion, but in 2025 revenue declined again to KRW 56.76 billion while operating profit collapsed to KRW 1.03 billion (1.8% margin), reflecting sharply impaired profitability. On a quarterly basis, revenue of KRW 18.57 billion and operating profit of KRW 2.66 billion in Q2 2025 gave way to an operating loss of KRW 0.37 billion on revenue of KRW 15.77 billion in Q3, and revenue fell further to KRW 13.98 billion in Q4 though operating profit stayed marginally positive at KRW 0.05 billion. Q1 2026 saw a sharp deterioration, with revenue plunging to KRW 6.73 billion, the operating loss widening to KRW 2.47 billion, and the owner net loss reaching KRW 1.68 billion. However, Q2 2026 revenue rebounded strongly to KRW 23.29 billion with operating profit recovering to KRW 4.17 billion (an operating margin of roughly 17.9%), leaving the combined owner net income for the most recent four quarters (Q3 2025 through Q2 2026) at approximately KRW 1.88 billion. This pattern illustrates the characteristics of an order-driven equipment maker where revenue and profitability can swing widely quarter to quarter depending on customer project timing and equipment acceptance. Operating cash flow was a KRW 10.14 billion inflow in 2024 under the cash flow statement, but turned to a KRW 2.13 billion net outflow in 2025, showing the earnings slowdown also weighed on cash generation."
  },
  "industry": {
-  "ko": "세계반도체무역통계기구(WSTS)는 2026년 글로벌 반도체 시장이 전년비 25% 이상 성장해 약 9,750억 달러에 이를 것으로 전망하며, AI 수요가 주도하는 메모리 슈퍼사이클이 2026년에도 이어질 것이라는 관측이 우세하다. 삼성전자와 SK하이닉스는 HBM 시장 주도권 확보를 위해 2026년 합산 약 70조원 수준의 역대 최대 설비투자를 단행 중이며, SK하이닉스는 \"향후 3년치 HBM 고객사 수요가 현재 캐파를 능가한다\"고 공언했다. HBM 세대 전환 측면에서는 2026년은 HBM3E가 주력이고 HBM4의 점진적 비중 확대가 예상되며, HBM4E 샘플은 2026년 하반기, 양산은 2027년이 목표다. 특히 HBM4 이후 세대에서 하이브리드 본딩(구리 배선 직접 접합) 공정이 핵심 기술로 부상하면서 관련 후공정 장비 수요가 새로운 성장 축으로 주목받고 있다. 후공정 장비 시장은 기존 Saw Singulation·레이저 마킹 외에 2.5D/3D 패키징, PLP 등 첨단 패키징 분야로 경쟁이 확장되고 있어 기술 차별화 없는 중소 장비사는 시장 내 입지 유지가 어려운 구조다. 중국 반도체 업체의 추격이 거세지고 있으나, 미·중 갈등에 따른 첨단 장비 조달 제한으로 HBM 분야에서는 한국 업체들의 기술 격차가 단기간 유지될 것이라는 분석이 우세하다.",
-  "en": "WSTS projects global semiconductor market growth of 25%-plus in 2026 to approximately $975 billion, with broad consensus that the AI-driven memory super-cycle extends through the year. Samsung and SK Hynix are deploying a combined record capex of roughly 70 trillion KRW in 2026 to secure HBM market leadership; SK Hynix stated that three years of customer demand already exceeds current capacity. The generational transition sees HBM3E as the dominant product in 2026, with HBM4 gradually ramping, HBM4E samples targeted for H2 2026, and full production in 2027. Hybrid bonding—copper-to-copper direct interconnect—is emerging as the core process for post-HBM4 production, creating an entirely new category of back-end equipment demand. The broader back-end equipment market is expanding from legacy Saw Singulation and Laser Marking into 2.5D/3D packaging and PLP, intensifying competition and accelerating technology differentiation requirements that disadvantage smaller players without proprietary process know-how. While Chinese semiconductor companies are advancing rapidly, U.S.-China trade restrictions continue to limit their access to advanced equipment, preserving Korea's technical lead in HBM-class packaging for the near term."
+  "ko": "글로벌 반도체 장비 시장은 AI 서버 확산에 따른 HBM·첨단 패키징 투자를 축으로 확장 국면을 이어가고 있다. SEMI는 글로벌 반도체 장비 매출액이 2026년 전년 대비 23.2% 증가한 1,659억 달러를 기록할 것이며, 이러한 성장세는 2028년까지 지속되어 역대 최대치인 2,295억 달러에 이를 것으로 전망했다. 특히 후공정 장비 부문에서 2025년 55.3% 급증한 반도체 테스트 장비 매출액은 2026년에도 31.0% 증가해 153억 달러에 이를 것이며, 조립 및 패키징 장비 매출액도 2026년 9.6% 증가한 67억 달러를 기록할 것으로 전망되어, 제너셈이 속한 후공정 자동화 장비 시장의 확장이 이어지고 있다. 한 하나증권 분석에 따르면 2026년 하반기부터 2027년까지 반도체 투자 사이클에서 가장 중요한 변화는 'HBM 중심의 전환 투자'에서 'HBM + 범용 DRAM·NAND 증설'로 투자 성격이 바뀌고 있다는 점이며, 이 사이클의 수혜가 검사·계측에서 패키징 장비까지 순차적으로 확산될 가능성이 있다고 분석된다. 경쟁 구도 측면에서는 EMI 실드 장비 시장에서 2020년까지 확고한 1위 사업자였던 한미반도체를 꺾고 국내외 시장점유율을 확대한 전례가 있어, 특정 세부 장비군에서는 국내 경쟁사 대비 우위를 확보한 실적이 있다. 다만 후공정 장비 시장 자체는 삼성전자·SK하이닉스·마이크론 등 소수 메모리 대형사의 투자 결정에 크게 의존하는 구조여서, 전방 고객사의 투자 시점 조정에 따라 중소형 장비업체의 수주·매출이 크게 출렁이는 특성이 존재한다. 대신증권은 최근 리포트에서 제너셈이 EMI 실드, 쏘우 싱귤레이션, HBM용 디본더 및 리무버 장비 등을 핵심 사업으로 보유한 기업으로, 균형 잡힌 매출 구조 속에서도 HBM과 EMI 장비의 중요도는 더욱 커지는 추세라고 평가했다.",
+  "en": "The global semiconductor equipment market continues to expand, driven largely by HBM and advanced packaging investment tied to AI server proliferation. SEMI forecasts that global semiconductor equipment sales will rise 23.2% year-over-year to USD 165.9 billion in 2026, with growth continuing through 2028 to reach a record USD 229.5 billion. In the back-end segment specifically, semiconductor test equipment sales, which surged 55.3% in 2025, are expected to grow a further 31.0% to USD 15.3 billion in 2026, while assembly and packaging equipment sales are projected to grow 9.6% to USD 6.7 billion, indicating continued expansion in the back-end automation equipment market in which Genesem operates. One Hana Securities analysis observes that the most important shift in the semiconductor investment cycle from the second half of 2026 through 2027 is a change in investment character from 'HBM-centric conversion investment' to 'HBM plus general-purpose DRAM/NAND capacity expansion,' with benefits potentially spreading sequentially from inspection and metrology to packaging equipment. On competitive positioning, in the EMI shield equipment market the company has a track record of overtaking Hanmi Semiconductor, which had been the dominant player through 2020, and expanding domestic and overseas market share, indicating an established edge in certain equipment niches versus domestic rivals. That said, the back-end equipment market as a whole remains heavily dependent on the capex decisions of a handful of large memory makers such as Samsung Electronics, SK hynix, and Micron, meaning order flow and revenue at smaller equipment makers can swing substantially with shifts in customer investment timing. In a recent report, Daishin Securities assessed that Genesem holds EMI shield, saw singulation, and HBM debonder/remover equipment as its core businesses, and that even within a balanced revenue structure, the importance of HBM and EMI equipment is growing."
  },
  "outlook": {
-  "ko": "제너셈은 2026년 2월 세미콘 코리아에서 전년비 60% 이상 성장한 900억원 이상의 연간 매출 목표를 공표했다. 핵심 동력으로는 ① HBM 후공정 장비 5종의 SK하이닉스향 추가 수주 확대, ② CoWoS 트레이-투-보트 납품 지속, ③ 싱가포르 OSAT 거점 PLP 장비 추가 수주, ④ 하이브리드 본딩용 진공 마운터·다이 리콘 신규 장비 고객사 평가 진행(통과 시 양산 수주 기대), ⑤ 2.5D 픽앤플레이스 장비 고객사 평가 진입을 제시했다. 전기차 파워모듈 풀라인 자동화 설비는 2026년 상반기 납품이 예정되어 단기 매출 기여 가능성이 있다. 하이브리드 본딩 양산이 본격화되는 시점은 2026년 하반기~2027년 이후로 예상되며, 관련 신규 장비 매출 실현은 중장기 과제로 남아 있다. 플립 마운터는 개발 완료 후 생산성 평가 단계로 양산 적용까지 추가 시간이 필요하다. 2026년 1분기 매출이 67억원에 불과해 연간 900억원+ 목표를 달성하려면 2~4분기 평균 280억원 이상의 분기 매출이 요구되는 극단적 후반부 집중 구조로, 수주 실현 속도가 2026년 연간 실적의 핵심 변수다.",
-  "en": "At Semicon Korea in February 2026, Genesem announced a 2026 annual revenue target exceeding 90 billion KRW, representing over 60% growth from 2025. Stated growth drivers include: (1) incremental SK Hynix HBM equipment orders across a five-product lineup; (2) continued CoWoS Tray-to-Boat shipments to a global OSAT; (3) follow-on PLP orders from its Singapore OSAT customer where production is ramping; (4) hybrid-bonding Vacuum Mounter and Die Recon equipment currently undergoing customer qualification (volume orders expected if qualification is passed); and (5) 2.5D Pick & Place equipment entering customer evaluation. The EV power-module inline automation system is on schedule for H1 2026 delivery, offering a near-term revenue contribution. Hybrid bonding mass production is not expected to commence fully until late 2026 or 2027, making new equipment revenue from that segment a medium-term catalyst. The Flip Mounter is in productivity evaluation following development completion and requires further time before production deployment. With Q1 2026 revenue of only 6.73 billion KRW, hitting the 90+ billion KRW annual target requires quarterly revenue averaging over 28 billion KRW across Q2–Q4, creating extreme back-half dependency on order execution."
+  "ko": "회사는 2026년 4월 21일 '2026년 기업가치 제고 계획'을 공시하며 핵심 기술 분야 R&D 투자를 이어가 제품 포트폴리오 경쟁력을 강화하고, 안정적인 주주환원 정책을 기반으로 기업가치 제고를 추진하겠다는 방침을 밝혔고, 조세특례제한법 제104조의27에 따른 고배당기업에 해당한다고 덧붙였다. 실적 측면에서는 경영진이 2026년 2분기 실적 발표 시 6월 말 기준 수주잔고 750억원을 확보하고 있으며, 해당 물량의 연내 납품을 바탕으로 2026년 연간 전년 대비 40% 이상의 외형 성장을 목표로 하고 있다고 밝혔다. 대표이사들은 \"HBM 고단화와 첨단 패키징 확산이 지속될수록 장비 수요도 함께 증가할 것으로 기대하는 만큼, 하반기 수주잔고의 매출 반영을 통해 실적 개선 흐름을 이어가겠다\"고 언급했다. 실제 고객사 확보 측면에서 회사는 2026년 4월 SK하이닉스와 HBM 관련 후공정 장비 계약(계약금액 60억 100만원, 계약기간 2026.04.15~2026.09.15)을 체결한 데 이어, 6월에도 SK하이닉스를 상대로 73억6974만원 규모의 반도체 후공정 장비 공급 계약을 맺었으며, 이는 전년 연결 기준 매출액의 12.98% 수준이라고 공시했다. 중장기적으로는 하이브리드 본딩용 3D 스태킹 장비 개발이 진행 중이며, 한 대표는 \"2027년 고객사 평가용 시제품 출시를 목표로 하고 있다\"고 밝혔다. 다만 이러한 목표 매출·수주 실적 반영 속도와 하이브리드 본딩 장비의 실제 상용화 시점은 향후 공시와 분기 실적을 통해 지속적으로 확인이 필요한 사안이다.",
+  "en": "On April 21, 2026, the company disclosed a '2026 Value-Up Plan,' stating its intention to continue R&D investment in core technology areas to strengthen product portfolio competitiveness and pursue value enhancement based on a stable shareholder return policy, and noted it qualifies as a high-dividend company under Article 104-27 of the Restriction of Special Taxation Act. On the earnings front, management stated at the Q2 2026 results release that it held an order backlog of KRW 75 billion as of end-June, and based on delivering this volume within the year, is targeting more than 40% annual revenue growth for 2026 versus the prior year. The co-CEOs remarked that \"as demand for higher-layer HBM and advanced packaging continues to expand, equipment demand is expected to grow accordingly, and we will sustain the earnings improvement trend by converting the second-half order backlog into revenue\". In terms of secured customer contracts, the company signed an HBM-related back-end equipment contract with SK hynix in April 2026 worth KRW 6.001 billion (contract period April 15, 2026 to September 15, 2026), followed by another disclosure in June that it signed a semiconductor back-end equipment supply contract with SK hynix worth KRW 7.36974 billion, equivalent to 12.98% of the prior year's consolidated revenue. Longer term, development of hybrid-bonding 3D stacking equipment is underway, with the co-CEO stating the goal is a \"customer evaluation prototype launch in 2027\". However, the pace at which these revenue and order targets materialize, and the actual commercialization timeline for hybrid-bonding equipment, remain items that require ongoing confirmation through future disclosures and quarterly results."
  },
  "valuation_comment": {
-  "ko": "현재 주당순이익(EPS) 36원을 기준으로 산출되는 주가수익배수는, 제너셈의 과거 5년 평균 거래 배수(약 22배 내외)를 큰 폭 상회하는 수준에 형성되어 있어, 현재의 저조한 이익 체력이 아닌 2026~2027년 HBM 수주 확대·신제품 기여를 통한 이익 회복 시나리오를 상당 부분 선반영하고 있음을 시사한다. 주당순자산(BPS) 3,644원 대비 현재 주가는 순자산 대비 프리미엄 구간에 위치해 있으며, 이 프리미엄의 지속 여부는 분기별 실적 가시성 확보에 달려 있다. 주당 배당금(DPS) 50원 기준 배당수익률은 업종 평균을 하회하는 낮은 수준으로, 수익 회수보다 성장 모멘텀에 의해 주가가 형성되는 구조다. 과거 이익 회복기(2024년 등)에서도 주가는 기대치를 앞서 움직이는 경향이 있었던 만큼, 2026년 하반기 수주·납품 성과가 밸류에이션 프리미엄 유지 여부를 결정하는 분기점이 될 전망이다.",
-  "en": "The price-earnings multiple implied by the current EPS of 36 KRW stands well above Genesem's five-year historical trading average of roughly 22x, suggesting the market is pricing in a significant earnings recovery through HBM order expansion and new-product contribution in 2026–2027 rather than current depressed profitability. With a book value per share (BPS) of 3,644 KRW, the stock trades at a meaningful premium to net assets, and the sustainability of that premium hinges on quarterly earnings visibility. The dividend per share (DPS) of 50 KRW implies a subdued yield below the semiconductor equipment sector average, pointing to a growth-over-income valuation structure. As the stock has historically tended to run ahead of earnings during recovery cycles, H2 2026 order execution and delivery confirmation will likely be the decisive test of whether the current premium can be sustained."
+  "ko": "제너셈은 2022~2024년 두 자릿수 안팎의 영업이익률을 보이다 2025년 1%대까지 낮아진 뒤 2026년 2분기에 다시 두 자릿수 마진으로 반등하는 등, 수익성이 적자와 흑자 구간을 오가는 궤적을 보여왔다. 이 때문에 최근 4개 분기 합산 실적을 기준으로 산출한 가격 배수는 과거 실적 기준 밸류에이션 밴드와 비교할 때 편차가 큰 구간에 위치하는 경향이 있다. 주가순자산 관점에서는 순자산 대비 일정 수준의 프리미엄이 형성된 상태이며, 이는 향후 HBM·하이브리드 본딩 관련 장비 수요 확대에 대한 시장의 기대가 일부 반영된 결과로 해석될 수 있다. 배당 정책은 회사가 스스로 고배당기업으로 분류하고 있으나, 실제 배당 수준은 연도별 순이익 변동에 따라 함께 출렁일 수 있는 구조다. 이러한 밸류에이션 지표는 향후 분기 실적 발표와 수주 공시에 따라 빠르게 재조정될 수 있는 만큼, 특정 시점의 수치보다는 실적 방향성과 수주잔고 이행 속도를 함께 살펴보는 것이 필요하다.",
+  "en": "Genesem's profitability trajectory has swung between roughly double-digit operating margins in 2022–2024, a decline to about 1% in 2025, and a rebound to double-digit margins again in Q2 2026, reflecting an earnings path that has moved between loss and profit territory. As a result, price multiples calculated on a trailing four-quarter combined basis tend to sit in a range that diverges meaningfully from historical earnings-based valuation bands. From a price-to-book perspective, the stock carries a certain premium over net asset value, which may partly reflect market expectations for future demand growth in HBM and hybrid-bonding related equipment. On dividends, the company classifies itself as a high-dividend company, but the actual payout level is structurally tied to year-to-year swings in net income. Because these valuation metrics can be recalibrated quickly around future quarterly results and order disclosures, it is worth tracking the direction of earnings and the pace of backlog conversion rather than focusing on any single point-in-time figure."
  },
  "bull": [
   {
    "title": {
-    "ko": "HBM 슈퍼사이클과 고객사 역대 최대 캐파 투자",
-    "en": "HBM Super-Cycle and Record Customer Capex"
+    "ko": "HBM·첨단 패키징 수요 확대",
+    "en": "Expanding HBM and Advanced Packaging Demand"
    },
    "body": {
-    "ko": "삼성전자와 SK하이닉스는 2026년 HBM 생산능력 확대를 위해 합산 약 70조원의 역대 최대 설비투자를 단행 중이다. SK하이닉스는 향후 3년치 HBM 수요가 현재 생산능력을 초과한다고 공언했으며, 이는 후공정 장비 발주 물량의 구조적 증가를 의미한다. 제너셈은 이미 SK하이닉스와 60억원 규모의 HBM 장비 공급 계약을 체결하며 공급망 내 입지를 확인했으며, HBM 단수 증가(향후 8단→16단 이상)는 장비 세트당 수주 단가를 높이는 방향으로 작용할 수 있다.",
-    "en": "Samsung and SK Hynix are deploying a combined record capex of roughly 70 trillion KRW in 2026 to expand HBM production. SK Hynix stated that three years of customer demand already exceeds current capacity, implying structural growth in back-end equipment orders. Genesem has already signed a 6-billion-KRW HBM equipment contract with SK Hynix, confirming its supply-chain position, while the rising HBM stack count from current levels toward 16-layer configurations could expand per-system equipment order values."
+    "ko": "SEMI는 2026년 조립 및 패키징 장비, 테스트 장비 매출이 모두 두 자릿수 성장할 것으로 전망하고 있어 제너셈이 속한 후공정 장비 시장의 확장이 이어지고 있다. 회사는 SK하이닉스와 HBM 관련 계약을 잇달아 체결하며 실제 고객사 프로젝트를 확보하고 있다. 하이브리드 본딩용 3D 스태킹 장비 개발도 진행 중으로, 성공 시 신규 장비군으로 확장될 여지가 있다.",
+    "en": "SEMI projects double-digit growth in both assembly/packaging and test equipment sales in 2026, indicating continued expansion in the back-end equipment market Genesem operates in. The company has secured a series of actual customer projects through HBM-related contracts with SK hynix. Development of hybrid-bonding 3D stacking equipment is also underway, offering potential expansion into a new equipment category if successful."
    }
   },
   {
    "title": {
-    "ko": "하이브리드 본딩·PLP·2.5D 다층 신제품 파이프라인",
-    "en": "Multi-Layer New Product Pipeline: Hybrid Bonding, PLP, and 2.5D"
+    "ko": "6월 말 750억원 수주잔고",
+    "en": "KRW 75 Billion Order Backlog at End-June"
    },
    "body": {
-    "ko": "제너셈은 2025년에 하이브리드 본딩 공정용 진공 마운터·다이 리콘 신규 버전 개발을 완료하고 고객사 평가를 진행 중이다. 싱가포르 OSAT 고객의 PLP 장비는 양산이 본격화되며 추가 수주가 이어지고 있고, 2.5D 픽앤플레이스는 고객사 평가를 앞두고 있으며, 플립 마운터도 개발 완료 후 생산성 평가 단계에 있다. 이처럼 HBM4 이후 세대 공정 장비의 다층화는 특정 장비 의존도를 낮추고 매출 안정성을 높이는 방향으로 작용할 전망이며, 고객 평가 통과 시 양산 수주로 이어지는 구조가 중장기 성장 동력이 된다.",
-    "en": "Genesem completed development of next-generation Vacuum Mounter and Die Recon systems for hybrid bonding processes in 2025 and is currently undergoing customer qualification. PLP equipment at the Singapore OSAT is generating follow-on orders as production ramps, and 2.5D Pick & Place is entering customer evaluation while the Flip Mounter is in productivity assessment following development completion. This expanding product matrix targeting post-HBM4 process generations may reduce reliance on any single device type, and successful qualifications converting into volume orders represent the key medium-term earnings catalyst."
+    "ko": "회사는 6월 말 기준 750억원의 수주잔고를 확보했다고 밝혔으며, 이를 근거로 연간 40% 이상 매출 성장 목표를 제시했다. 2026년 2분기 실적이 1분기 대비 큰 폭으로 개선된 것은 이 수주 물량의 순차 매출화가 시작된 결과로 해석된다. 하반기에도 잔여 물량의 매출 반영이 이어질 경우 실적 개선 흐름이 지속될 수 있다.",
+    "en": "The company stated it held an order backlog of KRW 75 billion as of end-June and set an annual revenue growth target of over 40% on this basis. The sharp improvement in Q2 2026 results versus Q1 is interpreted as the start of sequential revenue recognition from this backlog. If the remaining backlog continues to convert to revenue in the second half, the earnings improvement trend could continue."
    }
   },
   {
    "title": {
-    "ko": "전기차·OSAT 다변화로 비메모리·차량용 시장 진입",
-    "en": "EV and OSAT Diversification Extends Beyond Memory Semiconductors"
+    "ko": "특정 장비군 내 경쟁력",
+    "en": "Competitive Position in Select Equipment Categories"
    },
    "body": {
-    "ko": "제너셈은 2025년 11월 글로벌 OSAT 업체로부터 전기차 파워모듈 생산용 칩 실장~패키징 인라인 자동화 시스템 수주를 추진하며 2026년 상반기 납품을 목표하고 있다. 이는 전통적인 HBM·범용 반도체 후공정 시장 외에 전기차 파워반도체라는 새로운 수요처를 확보한다는 점에서 고객 집중 리스크 분산에 기여한다. 싱가포르 OSAT 등 해외 고객사 레퍼런스 축적은 중장기 글로벌 OSAT 시장 내 입지를 넓히는 기반이 될 수 있다.",
-    "en": "Genesem has been pursuing an order for an inline EV power-module automation line—covering chip placement through packaging—from a global OSAT, targeting H1 2026 delivery. This represents a meaningful diversification beyond the traditional HBM and general back-end semiconductor market into power semiconductor equipment, helping reduce customer-concentration risk. Establishing references with overseas OSAT customers, including the Singapore facility, builds a foundation for broadening its medium-to-long-term position across the global OSAT supply chain."
+    "ko": "EMI 실드 장비 시장에서 국내 경쟁사인 한미반도체의 점유율을 앞서는 성과를 낸 바 있어, 특정 세부 장비 분야에서는 기술 경쟁력을 입증한 이력이 있다. 이러한 경쟁력이 HBM·하이브리드 본딩 등 신규 장비군으로 확장될 경우 사업 다각화에 기여할 수 있다. 회사는 자율주행·6G 등 신규 응용 분야로의 EMI 차폐 수요 확대 가능성도 언급하고 있다.",
+    "en": "The company has previously outperformed domestic rival Hanmi Semiconductor in EMI shield equipment market share, demonstrating proven technical competitiveness in certain specific equipment segments. If this competitiveness extends into new equipment categories such as HBM and hybrid bonding, it could contribute to business diversification. The company has also flagged potential demand growth for EMI shielding in new application areas such as autonomous driving and 6G."
    }
   }
  ],
  "bear": [
   {
    "title": {
-    "ko": "2026년 1분기 급감과 900억원+ 목표의 극단적 후반부 집중",
-    "en": "Q1 2026 Slump Creates Extreme Back-Half Loading for the 90B+ Target"
+    "ko": "분기 실적의 높은 변동성",
+    "en": "High Quarterly Earnings Volatility"
    },
    "body": {
-    "ko": "2026년 1분기 매출은 67억원으로 전년 동기 대비 20.2% 감소했고 영업손실은 24.7억원으로 87.8% 확대됐다. 연간 목표 900억원+ 달성을 위해서는 나머지 3개 분기 평균 280억원 이상의 매출이 필요하며, 이는 2025년 최강 분기였던 2분기(186억원)를 50% 가까이 상회하는 수준이다. 반도체 장비는 고객사 발주 시점에 매출이 집중되는 특성상 수주 잔고가 분기마다 가시적으로 확인되어야 하며, 현 시점에서는 목표 달성의 경로가 불확실하다.",
-    "en": "Q1 2026 revenue fell to 6.73 billion KRW (−20.2% YoY) while the operating loss widened to −2.47 billion KRW (−87.8% YoY). Hitting the 90+ billion KRW annual target requires quarterly revenue averaging over 28 billion KRW across Q2–Q4, substantially above the strongest quarter of 2025 (18.6 billion in Q2). Given the lumpy, order-driven nature of equipment revenue recognition, backlog must be confirmed each quarter, and visibility into full-year target achievement is currently limited."
+    "ko": "2025년 3분기와 2026년 1분기에 연속으로 영업손실을 기록한 뒤 다음 분기에 흑자로 전환하는 등 실적이 분기별로 큰 편차를 보이고 있다. 이는 소수 대형 고객사의 발주·인수 시점에 매출이 집중되는 수주형 비즈니스 모델의 구조적 특성에서 기인한다. 향후에도 유사한 변동성이 재현될 가능성을 배제할 수 없다.",
+    "en": "The company has recorded consecutive operating losses in Q3 2025 and Q1 2026 followed by a return to profit the next quarter, showing substantial quarter-to-quarter variance in results. This stems from the structural nature of an order-driven business model where revenue is concentrated around the ordering and acceptance timing of a small number of large customers. Similar volatility recurring in the future cannot be ruled out."
    }
   },
   {
    "title": {
-    "ko": "장비 시장 가격 경쟁 심화 및 고객 집중 리스크",
-    "en": "Intensifying Price Competition and High Customer Concentration Risk"
+    "ko": "2025년 연간 수익성 급락",
+    "en": "Sharp Profitability Decline in FY2025"
    },
    "body": {
-    "ko": "제너셈은 2025년 실적 급감의 원인으로 DART 공시를 통해 '반도체 시장 침체 및 장비 시장 가격 경쟁 과열'을 명시했다. SK하이닉스와 삼성전자에 대한 고객 집중도가 높은 구조에서는 주요 고객사의 투자 사이클 변화나 장비 내재화 전략 수정이 실적에 직접적이고 즉각적인 영향을 준다. 글로벌 OSAT 업체들의 장비 내재화 강화 시 외부 장비 발주 규모가 축소될 수 있으며, 중소형 장비사 간 수주 경쟁 격화는 영업이익률 방어를 구조적으로 어렵게 만든다.",
-    "en": "Genesem explicitly cited 'semiconductor market weakness and intensified equipment price competition' in its DART disclosure to explain the 2025 earnings deterioration. Its concentrated customer base—predominantly SK Hynix and Samsung—means that shifts in those companies' investment cycles or equipment in-housing strategies can cause immediate, large-scale revenue impacts. If global OSATs expand equipment in-sourcing, third-party order volumes could contract, and ongoing price competition among mid-tier equipment makers makes structural margin defense challenging."
+    "ko": "2025년 연간 영업이익률은 1.8%로 2024년 9.5%에서 크게 낮아졌고, 영업활동현금흐름도 순유출로 전환됐다. 이는 신규 프로젝트 지연이나 원가 부담 증가 등 구조적 요인이 작용했을 가능성을 시사한다. 2026년 2분기의 반등이 지속적인 개선으로 이어질지는 추가 분기 실적으로 확인이 필요하다.",
+    "en": "The FY2025 annual operating margin fell sharply to 1.8% from 9.5% in 2024, and operating cash flow also turned to a net outflow. This suggests structural factors such as delayed new projects or rising cost burdens may have been at play. Whether the Q2 2026 rebound translates into sustained improvement requires confirmation through additional quarterly results."
    }
   },
   {
    "title": {
-    "ko": "신제품 양산 전환 불확실성 및 개발 비용 리스크",
-    "en": "New-Product Mass-Production Timing Uncertainty and Development Cost Risk"
+    "ko": "소수 고객·소수 장비군 의존",
+    "en": "Dependence on a Small Number of Customers and Equipment Lines"
    },
    "body": {
-    "ko": "하이브리드 본딩 장비는 고객사 평가 진행 중이며, 양산 수주로 이어지기까지 수개월~1년 이상 소요될 수 있다. 2.5D 픽앤플레이스 역시 고객사 평가 진입 직전 단계로 실제 매출 기여까지 시간이 필요하며, 평가 미통과·일정 지연 시 2026년 연간 목표에 차질이 생길 수 있다. 신제품 개발·평가 기간 중 연구개발비 및 고정비 부담은 이미 압박받고 있는 수익성을 추가로 악화시키는 요인이다.",
-    "en": "Hybrid bonding equipment is still undergoing customer qualification and could take several months to over a year before converting to volume production orders. 2.5D Pick & Place is similarly at the pre-qualification stage with real revenue contribution yet to materialize; qualification failures or schedule delays would create gaps in the 2026 earnings plan. R&D expenditure and fixed overhead costs incurred during development and qualification phases add further pressure on already-thin profitability."
+    "ko": "매출이 SK하이닉스 등 소수 대형 메모리·OSAT 고객사의 설비투자 결정에 크게 좌우되는 구조여서, 고객사의 투자 축소나 프로젝트 지연 시 매출 타격이 즉각적으로 나타날 수 있다. 하이브리드 본딩과 같은 신규 장비군은 아직 상용화 이전 단계로, 개발 지연이나 고객 평가 결과에 따라 기대와 다른 결과가 나올 가능성도 존재한다.",
+    "en": "Because revenue is heavily dependent on the capex decisions of a small number of large memory and OSAT customers such as SK hynix, any reduction in customer investment or project delays can immediately affect revenue. New equipment categories such as hybrid bonding remain pre-commercial, and there is a possibility that development delays or customer evaluation outcomes could differ from expectations."
    }
   }
  ],
  "risks": [
   {
    "cat": {
-    "ko": "반도체 투자 사이클 및 매크로 리스크",
-    "en": "Semiconductor Investment Cycle and Macro Risk"
+    "ko": "업황·수주 리스크",
+    "en": "Industry and Order Risk"
    },
    "body": {
-    "ko": "반도체 장비 수요는 칩 메이커의 설비 투자 계획에 직결된다. 글로벌 경기 침체, 미·중 무역 갈등 심화, 또는 AI 수요 조정이 발생할 경우 삼성전자·SK하이닉스의 CAPEX 계획이 수정되고 HBM 장비 발주가 감소할 수 있다. 반도체 장비 특성상 고객사 투자 지연은 매출 인식의 급격한 감소로 이어지며, 이 경우 제너셈의 고정비 구조를 감안할 때 영업손실이 재차 확대될 수 있다.",
-    "en": "Semiconductor equipment demand is directly tied to chipmakers' capital expenditure plans. A global economic slowdown, escalation of U.S.-China trade tensions, or moderation in AI investment could prompt Samsung and SK Hynix to revise capex downward, reducing HBM equipment orders. Given the binary nature of equipment revenue recognition, any customer investment deferral can trigger a sharp, sudden revenue drop that—given Genesem's fixed-cost structure—risks returning the company to meaningful operating losses."
+    "ko": "반도체 후공정 장비 수요는 삼성전자·SK하이닉스 등 소수 메모리 대형사의 투자 스케줄에 좌우되며, 이들의 캐펙스 조정 시 수주 공시 자체가 지연되거나 축소될 수 있다. 2025년 3분기 누적 기준으로 고객사 설비투자 축소와 신규 프로젝트 지연이 실적 부진의 직접 원인으로 지목된 바 있어, 유사한 상황이 재발할 가능성이 있다. 이러한 변동성은 회사가 제시한 연간 40% 성장 목표의 달성 여부에도 영향을 줄 수 있다.",
+    "en": "Demand for back-end semiconductor equipment is dictated by the investment schedules of a small number of large memory makers such as Samsung Electronics and SK hynix, and any adjustment in their capex could delay or reduce order disclosures. On a cumulative basis through Q3 2025, customer capex reductions and delayed new projects were cited as direct causes of weak results, and a similar situation could recur. This volatility could also affect whether the company's stated 40% annual growth target is achieved."
    }
   },
   {
    "cat": {
-    "ko": "연간 목표 미달 및 가이던스 하향 조정 리스크",
-    "en": "Annual Target Miss and Downside Guidance Revision Risk"
+    "ko": "기술·경쟁 리스크",
+    "en": "Technology and Competitive Risk"
    },
    "body": {
-    "ko": "2026년 회사 목표(900억원+)는 2026년 1분기 실적(매출 67억원)에 비춰 달성 가능성이 불확실한 상황이다. 연간 목표 달성 실패 시 시장 기대가 재조정되며 주가 하락 압력이 발생할 수 있다. 특히 반도체 장비 특성상 수주 인식 시점과 매출 반영 시점 간 시차가 있어, 수주가 이루어지더라도 당해 연도 매출로 이어지지 않을 수 있는 점이 가이던스 신뢰성을 제약한다.",
-    "en": "The company's stated 2026 target of 90+ billion KRW looks highly challenging against Q1 2026 revenue of 6.73 billion. If the target proves unachievable, market expectations will need to reset, creating downward pressure on the share price. The inherent lag between order booking and revenue recognition in semiconductor equipment means even confirmed orders may not translate into current-year revenue, limiting near-term guidance reliability."
+    "ko": "EMI 실드, 쏘우 싱귤레이션 등 기존 주력 장비군에서는 한미반도체 등 경쟁사와 지속적인 점유율 경쟁이 벌어지고 있으며, 신규 진입자의 가격 경쟁이 마진을 압박할 수 있다. 하이브리드 본딩 등 차세대 장비는 2027년을 목표로 시제품을 준비 중인 초기 단계로, 개발 지연이나 경쟁사의 선점 가능성도 배제할 수 없다. 특허 관련 분쟁 이력도 있어 지식재산권 리스크에 대한 지속적인 확인이 필요하다.",
+    "en": "In existing core equipment lines such as EMI shield and saw singulation, the company faces ongoing market share competition with rivals such as Hanmi Semiconductor, and price competition from new entrants could pressure margins. Next-generation equipment such as hybrid bonding is at an early stage targeting a 2027 prototype, and delays in development or the possibility of competitors gaining a first-mover advantage cannot be ruled out. There is also a history of patent-related disputes, warranting ongoing monitoring of intellectual property risk."
    }
   },
   {
    "cat": {
-    "ko": "하이브리드 본딩 기술 전환 속도 지연 리스크",
-    "en": "Hybrid Bonding Technology Transition Timing Risk"
+    "ko": "재무·수익성 리스크",
+    "en": "Financial and Profitability Risk"
    },
    "body": {
-    "ko": "하이브리드 본딩은 HBM4 이후 세대에서 핵심 공정으로 전망되나, 기술 난도가 높고 양산 전환 시점은 고객사의 개발 완료 여부에 달려 있다. SK하이닉스는 HBM4E 양산을 2027년으로 제시하고 있어 관련 장비 수요의 본격화는 2027년 이후 가능성이 높다. 제너셈의 신규 하이브리드 본딩 장비가 고객 평가를 통과하지 못하거나 사양 변경이 발생하면 개발 투자 비용이 손실로 전환될 수 있어 중장기 성장 시나리오에 차질이 생긴다.",
-    "en": "Hybrid bonding is expected to be a core process for post-HBM4 generations, but its technical complexity means mass-production adoption timing depends on customer development completion. SK Hynix targets HBM4E production in 2027, suggesting that related equipment demand may not fully materialize until 2027 or later. If Genesem's new hybrid-bonding equipment fails customer qualification or faces specification changes, associated development investment could become a sunk cost, undermining the medium-to-long-term growth scenario."
+    "ko": "2025년 영업활동현금흐름이 순유출로 전환된 데 이어 2026년 1분기에도 대규모 영업손실이 발생한 점은 단기 자금 운용 부담으로 이어질 수 있다. 부채비율은 2022~2024년 사이 70~90%대 후반 수준을 오갔던 만큼, 실적 부진이 장기화될 경우 재무 여력에 대한 점검이 필요하다. 분기 실적의 큰 편차는 실적 예측 신뢰도를 낮추는 요인으로 작용할 수 있다.",
+    "en": "Following the shift to negative operating cash flow in 2025, a large operating loss also occurred in Q1 2026, which could translate into short-term funding pressure. The debt ratio ranged in the high 70s to high 90s percent between 2022 and 2024, meaning financial capacity would warrant closer scrutiny if the earnings downturn were to persist. The wide swings in quarterly results can also reduce the reliability of forward earnings estimates."
    }
   }
  ],
  "checkpoints": [
   {
    "when": {
-    "ko": "2026년 8월 중순",
-    "en": "Mid-August 2026"
-   },
-   "what": {
-    "ko": "2026년 2분기 실적 발표 — 분기 매출이 200억원 이상 회복 궤도에 진입했는지 여부가 연간 목표 900억원+ 달성 가능성을 판단하는 첫 번째 핵심 근거가 된다.",
-    "en": "Q2 2026 earnings release — whether quarterly revenue has recovered to 20+ billion KRW is the first key data point for assessing feasibility of the 90+ billion KRW full-year target."
-   }
-  },
-  {
-   "when": {
-    "ko": "2026년 하반기 (수시 공시)",
-    "en": "H2 2026 (rolling disclosure)"
-   },
-   "what": {
-    "ko": "하이브리드 본딩 장비 고객사 평가 결과 또는 수주 공시 — 평가 통과 여부가 중장기 신성장 동력의 가시화 시점과 규모를 결정하는 분기점이다.",
-    "en": "Customer qualification result or new order announcement for hybrid bonding equipment — pass/fail determines the commercialization timeline and scale of the company's most critical long-term growth driver."
-   }
-  },
-  {
-   "when": {
     "ko": "2026년 11월 중순",
     "en": "Mid-November 2026"
    },
    "what": {
-    "ko": "2026년 3분기 실적 발표 — 수주 잔고와 분기 매출 추이를 확인하며, 하반기 급증 없이는 연간 목표 달성이 불가능한 만큼 3분기 실적이 연간 가이던스 조정 여부를 사실상 결정한다.",
-    "en": "Q3 2026 earnings release — without a significant H2 ramp, the annual guidance will need revision; Q3 results will effectively determine whether the year-end target remains credible."
+    "ko": "2026년 3분기 실적 발표를 통해 2분기의 반등이 이어지는지, 수주잔고의 매출 반영 속도가 예상대로 진행되는지 확인이 필요하다.",
+    "en": "The Q3 2026 earnings release will show whether the Q2 rebound continues and whether the pace of order backlog conversion into revenue is proceeding as expected."
    }
   },
   {
    "when": {
-    "ko": "2026년 하반기 ~ 2027년 상반기",
-    "en": "H2 2026–H1 2027"
+    "ko": "2026년 4분기 중",
+    "en": "Q4 2026"
    },
    "what": {
-    "ko": "SK하이닉스·삼성전자의 HBM4·HBM4E 캐파 증설 계획 및 장비 발주 동향 — 관련 수주 공시가 제너셈의 2026~2027년 실적 모멘텀을 좌우하며, 발주 연기 여부도 면밀히 모니터링해야 한다.",
-    "en": "SK Hynix and Samsung capacity expansion plans and order dynamics for HBM4/HBM4E — related supply-contract disclosures will be the primary catalyst for Genesem's 2026–2027 earnings momentum, and any investment deferrals warrant close monitoring."
+    "ko": "6월 말 기준 750억원 수주잔고의 연내 납품 완료 여부와 연간 매출 40% 이상 성장 목표의 달성 가능성을 점검할 시점이다.",
+    "en": "This is the point to check whether the KRW 75 billion order backlog as of end-June is fully delivered within the year and whether the stated target of over 40% annual revenue growth is achievable."
    }
   },
   {
    "when": {
-    "ko": "2026년 2월 (연간 실적 확정 공시)",
-    "en": "February 2027 (FY2026 results disclosure)"
+    "ko": "SK하이닉스 등과의 추가 계약 공시 시점",
+    "en": "Timing of Any Additional SK hynix Contract Disclosures"
    },
    "what": {
-    "ko": "2026년 연간 실적 확정치 발표 — 회사가 공표한 900억원+ 목표 달성 여부와 함께 2025년 11월 무상증자 이후 주당 지표(EPS·BPS)의 연간 기준 비교가 처음으로 정상화되는 시점이다.",
-    "en": "FY2026 annual results — confirmation of whether the 90+ billion KRW target was met, and the first clean full-year per-share comparison (EPS, BPS) after the November 2025 free share distribution normalizes the baseline."
+    "ko": "2026년 4월과 6월에 이어 SK하이닉스와의 추가 단일판매·공급계약이 공시되는지, 계약 규모가 확대되는지를 지속적으로 확인할 필요가 있다.",
+    "en": "Following the April and June 2026 disclosures, it is worth continuously monitoring whether additional single-sale supply contracts with SK hynix are disclosed and whether contract sizes expand."
+   }
+  },
+  {
+   "when": {
+    "ko": "2027년 예정된 시제품 출시 시점",
+    "en": "The Planned 2027 Prototype Launch"
+   },
+   "what": {
+    "ko": "하이브리드 본딩용 3D 스태킹 장비의 고객사 평가용 시제품 출시가 계획대로 진행되는지, 국책과제 진행 상황에 대한 추가 공시가 있는지 확인이 필요하다.",
+    "en": "It is necessary to confirm whether the customer-evaluation prototype launch for the hybrid-bonding 3D stacking equipment proceeds as planned, and whether further disclosures on the government project's progress are made."
    }
   }
  ],
  "verdict": {
   "body": {
-   "ko": "제너셈은 HBM 후공정 자동화 장비 분야에서 SK하이닉스 등 핵심 고객사와의 공급 관계를 유지하며, AI 반도체 슈퍼사이클의 구조적 수혜 포지션에 위치해 있다. 2026년 세미콘 코리아에서 공표한 900억원+ 매출 목표와 하이브리드 본딩·PLP·2.5D·전기차 파워모듈 등 신제품 라인업은 중장기 성장 스토리를 뒷받침한다. 그러나 2025년 영업이익률 1.8% 급락과 2026년 1분기 영업손실 심화(-24.7억원)는 실적 모멘텀이 아직 회복 궤도에 오르지 못했음을 보여주며, 연간 목표 달성을 위해서는 2~4분기 평균 280억원 이상의 분기 매출 회복이라는 극단적 후반부 집중이 요구된다. 하이브리드 본딩 신제품의 고객사 평가 통과 여부와 SK하이닉스·삼성전자의 HBM 캐파 증설 계획 실행이 2026~2027년 실적 가시성을 결정하는 핵심 변수이며, 2026년 2·3분기 분기 실적이 연간 목표 달성 가능성의 실질적 판단 근거가 될 전망이다.",
-   "en": "Genesem occupies a structural position to benefit from the AI semiconductor super-cycle through its back-end automation equipment supply relationships with SK Hynix and other leading chipmakers. The 90+ billion KRW revenue target announced at Semicon Korea 2026 and the expanding product portfolio—hybrid bonding, PLP, 2.5D packaging, and EV power modules—underpin a credible medium-term growth narrative. However, the collapse in operating margin to 1.8% in FY2025 and the deepening operating loss in Q1 2026 (−2.47 billion KRW) confirm that earnings recovery momentum has not yet materialized; achieving the annual target requires extreme back-half execution with quarterly revenue of 28+ billion KRW on average across Q2–Q4. Customer qualification outcomes for hybrid bonding equipment and the pace of SK Hynix and Samsung HBM capacity investment will be the decisive factors for 2026–2027 earnings visibility, with Q2 and Q3 2026 results serving as the practical litmus test for full-year target credibility."
+   "ko": "제너셈은 EMI 실드, 쏘우 싱귤레이션, HBM 오토메이션이라는 세 축을 중심으로 반도체 후공정 자동화 장비를 공급하는 코스닥 상장사로, 2025년 연간 실적이 크게 둔화된 이후 2026년 1분기 부진을 거쳐 2분기에 매출과 영업이익이 동시에 반등하는 흐름을 보였다. 회사는 6월 말 기준 750억원의 수주잔고를 근거로 연간 40% 이상의 매출 성장을 목표로 제시했으며, SK하이닉스와의 HBM 관련 계약도 잇달아 공시되고 있다. 다만 2025년 3분기와 2026년 1분기에 연이어 영업손실을 기록한 전례는 이 회사의 실적이 소수 고객사의 발주 시점에 따라 분기별로 크게 출렁일 수 있음을 보여준다. 글로벌 반도체 장비 시장은 HBM·첨단 패키징 수요를 축으로 확장 국면에 있어 산업 자체의 성장 여력은 확인되지만, 그 수혜가 제너셈의 분기 실적으로 안정적으로 이어질지는 향후 몇 개 분기의 수주잔고 이행 속도와 신규 장비(하이브리드 본딩)의 상용화 진행을 통해 추가로 확인할 필요가 있다. 투자 판단에 앞서 이러한 실적 변동성과 산업 성장성을 함께 고려하는 것이 바람직하다.",
+   "en": "Genesem is a KOSDAQ-listed supplier of semiconductor back-end automation equipment built around three core lines—EMI shielding, saw singulation, and HBM automation—and after a significant slowdown in FY2025 results followed by a weak Q1 2026, it posted a simultaneous rebound in revenue and operating profit in Q2 2026. The company has set a target of over 40% annual revenue growth based on an order backlog of KRW 75 billion as of end-June, and has disclosed a series of HBM-related contracts with SK hynix. However, the precedent of consecutive operating losses in Q3 2025 and Q1 2026 shows that the company's results can swing substantially quarter to quarter depending on the order timing of a small number of customers. The global semiconductor equipment market remains in an expansion phase centered on HBM and advanced packaging demand, confirming growth potential at the industry level, but whether these benefits translate into stable quarterly results for Genesem requires further confirmation over the coming quarters through the pace of backlog conversion and progress in commercializing new equipment such as hybrid bonding. Readers should weigh this earnings volatility alongside the industry's growth potential before forming any investment view."
   }
  },
  "sources": [
-  "https://comp.fnguide.com/SVO2/ASP/SVD_Main.asp?gicode=A217190&MenuYn=Y",
+  "https://www.sedaily.com/article/20060641",
+  "https://comp.fnguide.com/SVO2/ASP/SVD_Main.asp?MenuYn=Y&NewMenuID=Y&ReportGB=D&cID=&gicode=A217190&pGB=1&stkGb=701",
+  "https://www.semi.org/ko/node/173876",
+  "https://finance.thesmileinfo.com/2026/09/semiconductor.html",
+  "https://www.thebell.co.kr/free/content/ArticleView.asp?key=202304031526057240104396&lcode=00",
+  "https://www.pinpointnews.co.kr/news/articleView.html?idxno=359306",
+  "https://www.digitaltoday.co.kr/news/articleView.html?idxno=659020",
+  "https://www.newspim.com/news/view/20260813001101",
   "https://www.butler.works/ko/companies/00666204",
-  "https://goinsider.kr/stock/00666204",
-  "https://www.thinkpool.com/item/217190/news",
-  "https://m.irgo.co.kr/IR-ROOM/217190/%EC%A0%9C%EB%84%88%EC%85%88-IR-ROOM",
-  "https://itooza.com/vscore/217190",
-  "https://comp.wisereport.co.kr/company/c1010001.aspx?cmp_cd=217190",
+  "https://v.daum.net/v/B7Yl8bb0X5?f=p",
+  "https://moneyland.co.kr/stock/217190.html",
+  "https://m.irgo.co.kr/IR-COMP/217190/%EC%A0%9C%EB%84%88%EC%85%88-IR-ROOM",
   "https://www.k5.co.kr/stock/217190",
-  "https://www.asiae.co.kr/article/2025111913393789879",
-  "https://littlebproject.com/stock/217190",
-  "https://www.thelec.kr/news/articleView.html?idxno=52232",
-  "https://m.thinkpool.com/stockDiscuss/039030/cont/11859610",
-  "https://comp.wisereport.co.kr/wiseReport/summary/ReportSummary.aspx?cmp_cd=294870",
-  "https://www.pinpointnews.co.kr/news/articleView.html?idxno=431082",
-  "https://alphasquare.co.kr/home/stock-summary?code=036930",
-  "https://www.shinyoung.com/files/20240821/70334694aacdf.pdf",
-  "https://www.eugenefn.com/common/files/amail/20231016_B45_sophie.yim_1.pdf",
-  "https://tb.kibo.or.kr/ktbs/board/tech-trend/tech_trend.do?mode=download&articleNo=824&attachNo=1667"
+  "http://genesem.com/s3/s3_6_3.php",
+  "https://goinsider.kr/stock/00666204",
+  "https://www.investing.com/equities/genesem-inc",
+  "https://kr.investing.com/news/transcripts/article-93CH-2083744",
+  "https://alphasquare.co.kr/home/stock-summary?code=217190"
  ],
  "v": 2,
- "model": "claude-sonnet-4-6",
+ "model": "claude-sonnet-5",
  "ticker": "217190",
  "name": "제너셈",
  "name_en": "Genesem Inc.",
@@ -233,9 +223,9 @@
   "반도체"
  ],
  "market": "코스닥",
- "reportDate": "2026-06-19",
- "reportTs": "2026-06-19 03:56",
- "dataDate": "20260821",
+ "reportDate": "2026-09-05",
+ "reportTs": "2026-09-05 08:21",
+ "dataDate": "20260904",
  "quant": {
   "asOf": "2026-08-23",
   "fs_basis": "연결(CFS) · DART 공시 확정치 · 지배주주 기준 순이익",
@@ -338,14 +328,14 @@
    }
   ],
   "valuation": {
-   "price": 6290,
-   "mcap": 0.0827,
+   "price": 6040,
+   "mcap": 0.0794,
    "shares": 13153761,
    "total_shares": 13153761,
    "wavg_shares": 13064204,
-   "per": 449.286,
+   "per": 431.429,
    "eps": 14,
-   "pbr": 1.6671,
+   "pbr": 1.6008,
    "bps": 3773,
    "roe_ttm": 0.4,
    "ttm_window": "2025Q3~2026Q2",
@@ -356,7 +346,7 @@
    "bps_krx": 3826.0,
    "basis": "PER·EPS·PBR·BPS 모두 자체 산출(네이버·토스와 동일 방식) · 배당은 DART 공시 주당현금배당금(보완:KRX) ÷ 현재가",
    "dps": 50.0,
-   "div": 0.79
+   "div": 0.83
   }
  }
 }

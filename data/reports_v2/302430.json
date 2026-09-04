@@ -1,230 +1,220 @@
 {
  "title": {
-  "ko": "배터리·유리기판 검사 확장, 2026 실적 회복 진입",
-  "en": "Battery & Glass Substrate Inspection Expansion — Entering 2026 Earnings Recovery"
+  "ko": "배터리 회복 신호와 반도체 전환점",
+  "en": "Battery Recovery Signals, Semiconductor Pivot"
  },
  "lead": {
-  "ko": "2026년 1분기 매출이 전년 동기 대비 두 배 수준으로 급증하고 영업흑자로 전환하며 사이클 저점 통과 가능성을 시사했으나, 고객 편중 구조 해소와 유리기판(TGV) 신사업 상용화 속도가 회복 경로의 신뢰도를 좌우한다.",
-  "en": "Revenue roughly doubling year-on-year in 2026Q1 and a return to operating profit suggest a potential cyclical trough exit, but the pace of customer diversification and glass substrate (TGV) inspection commercialization will determine the credibility of the recovery path."
+  "ko": "이노메트리는 2차전지 검사장비 사업의 실적 변동성이 이어지는 가운데, 유리기판·HBM·CPO 등 반도체 신사업이 성장축으로 부상하는 전환기에 있다.",
+  "en": "Innometry is at a transition point where earnings volatility continues in its secondary battery inspection equipment business, while new semiconductor businesses such as glass substrate, HBM, and CPO inspection emerge as a growth axis."
  },
  "keypoints": [
   {
-   "ko": "2026Q1 매출 175억원(전년동기 87억원 대비 +102%)·영업흑자 전환 — 주요 고객사의 발주 재개가 직접 원인이며, 2025년 분기 평균(약 97억원)을 크게 상회하는 수준으로 연간 회복의 기반이 마련됐다.",
-   "en": "2026Q1 revenue of ₩17.5bn (+102% YoY vs. ₩8.7bn) with a return to operating profit — driven by customer order normalization and well above the 2025 quarterly average (~₩9.7bn), laying the groundwork for a full-year recovery."
+   "ko": "2025년 연결 매출은 385.7억원으로 전년 대비 감소했고 영업손실은 축소됐으나 지배주주 순손실은 오히려 확대됐다.",
+   "en": "2025 consolidated revenue fell year-over-year to KRW 38.57 billion, and while the operating loss narrowed, the net loss attributable to owners actually widened."
   },
   {
-   "ko": "유리기판(TGV) 검사장비를 JWMT·익스톨에 공급 개시, 국책과제 2단계 선정으로 반도체 신사업이 파일럿 단계를 넘어 실질 매출 단계에 진입했다.",
-   "en": "TGV inspection equipment deliveries to JWMT and Exstoll, combined with selection as Phase 2 lead institution in a national R&D project, mark the semiconductor business's transition from pilot to revenue-generating phase."
+   "ko": "2026년 상반기 분기 실적은 1분기 흑자(영업이익 2.46억원) 이후 2분기 재차 적자(영업손실 21.55억원)로 변동성이 크다.",
+   "en": "First-half 2026 quarterly results show high volatility, swinging from a Q1 operating profit of KRW 246 million back to a Q2 operating loss of KRW 2.16 billion."
   },
   {
-   "ko": "2025년말 부채비율 29.3%, 영업활동 현금흐름 +57억원 — 2년 연속 영업손실에도 재무 안정성 유지로 단기 유동성 우려가 제한적이다.",
-   "en": "Debt ratio of 29.3% at end-2025 and positive operating cash flow of ₩5.7bn keep near-term liquidity concerns limited despite two consecutive years of operating losses."
+   "ko": "유리기판(TGV), HBM, CPO 등 반도체 첨단패키징 검사장비가 신규 매출원으로 구체화되고 있다.",
+   "en": "Inspection equipment for advanced semiconductor packaging areas such as glass substrate (TGV), HBM, and CPO is materializing as a new revenue source."
   },
   {
-   "ko": "ESS 배터리 수요 급증(2024년 230GWh → 2026년 359GWh 전망)과 삼성SDI 46파이·전고체 라인 투자 재개가 중기 수주 회복의 구조적 동력으로 부상하고 있다.",
-   "en": "Surging ESS demand (230GWh in 2024 → est. 359GWh in 2026) and Samsung SDI's resumed 46Φ/solid-state line capex are emerging as structural mid-term order recovery drivers."
+   "ko": "북미 ESS·유럽 전기차 배터리 대상 검사장비 수주 협의가 진행 중이며 회사는 연간 수주액이 전년보다 늘어날 것으로 전망하고 있다.",
+   "en": "Order discussions for North American ESS and European EV battery inspection equipment are ongoing, with the company expecting full-year order intake to exceed last year's level."
   },
   {
-   "ko": "노스볼트 파산 여파·EV 캐즘 복합 충격으로 2023년 사상 최대(매출 838억원·OPM 9.8%)에서 2025년 매출 386억원·영업손실로 급격히 조정 — 고객·지역 집중도 리스크가 가시화됐다.",
-   "en": "Combined Northvolt bankruptcy fallout and EV chasm caused a steep correction from the 2023 record peak (revenue ₩83.8bn, OPM 9.8%) to 2025 revenue of ₩38.6bn with an operating loss — customer and geographic concentration risk made evident."
+   "ko": "부채비율 29.3%의 무차입 구조 속에서 자사주 매입·소각 등 주주환원 조치가 이어지고 있다.",
+   "en": "Amid a low, effectively debt-free structure with a 29.3% debt ratio, shareholder return measures such as treasury stock buybacks and retirements continue."
   }
  ],
  "business": {
-  "ko": "이노메트리는 2008년 설립되어 2018년 코스닥에 상장한 X-ray·CT 비파괴검사 솔루션 전문기업이다. 주력 제품은 2차전지 내부의 전극·간극 검사장비, 이물 검사장비, 3D-CT 검사장비이며, AI 기반 영상처리 소프트웨어를 결합한 하드웨어·소프트웨어 통합 솔루션을 제공한다. 주요 고객사는 삼성SDI·LG에너지솔루션·SK온 등 국내 배터리 3사로, 삼성SDI 46파이 원통형·각형·전고체 배터리 양산라인에 검사장비를 공급하며 삼성SDI 우수협력사로 선정된 이력을 보유한다. 해외 고객으로는 스웨덴 노스볼트와 거래 이력이 있었으나, 노스볼트 파산으로 2024년 일시적 비용이 발생했다. 중국에서는 BAK와 공급 계약을 체결하며 현지 수주를 본격화하고 있으며 상하이 법인을 통한 영업을 강화 중이다. '간극·이물' 통합 하이브리드 검사장비를 세계 최초로 개발·공급한 실적도 보유하며, ESS 배터리 라인에 CT 및 간극·이물 검사기 일괄 수주를 기록했다. 최근에는 사업 포트폴리오를 반도체 유리기판(TGV) 검사 및 HBM 패키징 검사 영역으로 확장해, JWMT·익스톨에 TGV용 X-ray 검사장비를 공급하고 삼성전기·코닝 등과 기술 협력을 진행 중이다. 산업통상자원부 국책과제 주관기관으로 선정돼 AI 기반 TGV 결함 검사 시스템 개발 2단계를 수행하고 있다.",
-  "en": "Innometry was founded in 2008 and listed on KOSDAQ in 2018 as a specialist in X-ray and CT non-destructive inspection solutions. Its core products include electrode/gap inspection systems, foreign substance inspection equipment, and 3D-CT inspection machines for secondary batteries, all integrated with AI-based imaging software into a unified hardware-software solution. Primary customers are Korea's three battery majors—Samsung SDI, LG Energy Solution, and SK On—with inspection systems supplied to Samsung SDI's 46Φ cylindrical, prismatic, and all-solid-state production lines; the company has earned Samsung SDI Preferred Partner status. Overseas, Innometry historically supplied Sweden's Northvolt, but that customer's bankruptcy triggered one-time charges in 2024. In China, a supply agreement with BAK has initiated formal market entry, supported by a local Shanghai subsidiary. The company claims the world's first development and supply of an integrated gap-and-foreign-substance hybrid inspection system, and has received bulk orders covering CT and gap/foreign-substance inspection for ESS battery lines. More recently, Innometry has expanded into semiconductor glass substrate (TGV) inspection and HBM packaging inspection, delivering TGV X-ray systems to JWMT and Exstoll, and collaborating with Samsung Electro-Mechanics and Corning. It has been selected as the lead institution for Phase 2 of an MOTIE national R&D project to develop AI-based TGV defect inspection systems."
+  "ko": "이노메트리는 2008년 설립되어 2018년 코스닥에 상장한 X-ray·CT 기반 비파괴검사 장비 전문기업이다. 주력 제품은 전기차용 2차전지 내부의 전극 정렬 상태와 이물·기공 등 결함을 실시간으로 검출하는 X-ray 및 3D-CT 검사솔루션이며, 국내외 배터리 제조사에 장비를 공급하고 있다. 회사는 중국, 헝가리, 미국 등 4개 해외법인을 운영하며 글로벌 생산·영업 거점을 갖추고 있다. 주요 고객사로는 국내 배터리 3사와 중국 BYD·BAK 등 글로벌 셀 메이커가 있으며, 과거 노스볼트에도 장비를 공급한 바 있다. 최근에는 반도체 패키지, 폴더블 스마트폰 등 첨단산업 분야로 사업 포트폴리오를 다각화하고 있다. 2025년 10월 유리기판 관통전극(TGV) 검사장비를 유리가공 전문기업 JWMT와 금속표면처리 기업 익스톨에 처음 공급하며 반도체 유리기판 시장에 진입했고, 이후 애니캐스팅 등 TGV 밸류체인 기업으로 공급을 확대했다. 2026년 5월에는 반도체 후공정 레이저 장비 기업 레이저쎌과 CPO(광통신 패키지) 및 첨단 패키징 부품용 검사 솔루션 공동개발을 위한 업무협약을 체결했다. 2차전지 비파괴검사 분야에서는 오랜 공급 경력을 바탕으로 안정적 지위를 확보한 반면, 유리기판·HBM·CPO 등 신사업 분야는 아직 시장 형성 초기 단계로 경쟁구도가 명확히 자리잡지 않은 상태다.",
+  "en": "Innometry was founded in 2008 and listed on KOSDAQ in 2018 as a specialized manufacturer of X-ray and CT-based non-destructive inspection equipment. Its core products are X-ray and 3D-CT inspection solutions that detect electrode alignment and internal defects such as foreign matter and voids in real time within EV secondary batteries, supplied to domestic and overseas battery makers. The company operates four overseas subsidiaries in China, Hungary, and the United States, giving it a global production and sales footprint. Key customers include Korea's three major battery makers and global cell makers such as China's BYD and BAK, and the company previously supplied equipment to Northvolt. More recently, the company has been diversifying its portfolio into semiconductor packaging and foldable smartphone inspection. In October 2025, it entered the semiconductor glass substrate market by supplying Through Glass Via (TGV) inspection equipment for the first time to glass processing firm JWMT and metal surface treatment firm EXTOL, later expanding supply to TGV value-chain firms such as Anycasting. In May 2026, it signed an MOU with backend semiconductor laser equipment maker LaserSSEL for joint development of inspection solutions for CPO (co-packaged optics) and other advanced packaging components. While Innometry holds an established position in secondary battery non-destructive inspection built on a long supply track record, the newer glass substrate, HBM, and CPO businesses remain at an early market-formation stage where the competitive landscape has not yet clearly settled."
  },
  "earnings": {
-  "ko": "이노메트리의 연결 실적은 2022~2023년 급성장 후 2024~2025년 급격한 조정 사이클을 겪었다. 2022년 매출 757억원·영업이익 38억원(OPM 5.0%)에서 2023년 매출 838억원·영업이익 82억원(OPM 9.8%)으로 사상 최대 실적을 달성했다. 그러나 2024년에는 전기차 캐즘과 노스볼트 파산에 따른 일시적 비용이 겹치면서 매출이 530억원(-36.7% YoY)으로 급감하고 영업손실 72억원(OPM -13.6%)으로 전환됐으며, 지배주주 순손실은 15억원에 그쳤다. 2025년에는 매출이 386억원으로 추가 감소(-27.2% YoY)하고 영업손실 57억원(OPM -14.8%), 지배주주 순손실 43억원으로 적자 폭이 확대됐다. 분기별로는 2025년 2분기에 매출 106억원·영업이익 10억원으로 일시 반등했으나, 4분기에 영업손실 42억원이 집중 발생하면서 연간 손익을 크게 압박했다. 영업활동 현금흐름은 2024년 +148억원, 2025년 +57억원으로 2년 연속 영업손실에도 플러스를 유지해 현금 창출 능력이 손익 악화보다 양호했음을 보여준다. 2026년 1분기에는 매출이 175억원(전년동기 87억원 대비 +102%)으로 급증하며 영업이익 약 2.5억원을 기록, 2025년 1분기 영업손실(-22억원) 대비 분기 기준 뚜렷한 반전을 이뤘다. 2026Q1의 지배주주 순이익도 13억원으로 흑자 전환, 이익 회복의 실질적 진행을 확인시켰다.",
-  "en": "Innometry's consolidated earnings experienced rapid growth in 2022–2023 followed by a sharp correction cycle through 2024–2025. Revenue grew from ₩75.7bn with operating profit of ₩3.8bn (OPM 5.0%) in 2022 to record ₩83.8bn and ₩8.2bn (OPM 9.8%) in 2023. However, 2024 was severely impacted by the EV chasm and Northvolt-related one-time charges, causing revenue to plunge to ₩53.0bn (-36.7% YoY) and flipping to an operating loss of ₩7.2bn (OPM -13.6%), while the attributable net loss was a more contained ₩1.5bn. In 2025, revenue contracted further to ₩38.6bn (-27.2% YoY), with an operating loss widening to ₩5.7bn (OPM -14.8%) and an attributable net loss of ₩4.3bn. On a quarterly basis, 2025Q2 posted a brief rebound (revenue ₩10.6bn, operating profit ₩0.99bn), but an operating loss of ₩4.2bn was concentrated in 2025Q4, heavily weighing on the full-year result. Operating cash flow remained positive at ₩14.8bn in 2024 and ₩5.7bn in 2025, demonstrating cash generation ability that held up better than reported operating profit figures during both loss years. In 2026Q1, revenue surged to ₩17.5bn (+102% YoY vs. ₩8.7bn in 2025Q1) with operating profit of approximately ₩0.25bn, a decisive quarterly reversal versus the ₩2.2bn operating loss a year earlier; attributable net profit also returned to positive at ₩1.3bn, confirming tangible earnings recovery progress."
+  "ko": "2025년 연결 매출액은 385.7억원으로 2024년 530.0억원 대비 감소했으며, 2023년 837.8억원의 정점과 비교하면 두 해 연속 큰 폭의 축소가 이어졌다. 영업손실은 2025년 57.0억원으로 2024년 72.3억원 손실보다는 축소됐으나, 지배주주 순손실은 2025년 42.8억원으로 2024년 14.7억원 손실보다 확대됐다. 이는 2024년 노스볼트 관련 일시적 비용 반영 이후에도 손익 변동 요인이 이어지고 있음을 시사한다. 분기별로 보면 2025년 2분기 영업이익 9.9억원으로 흑자를 냈다가 3분기 영업손실 2.7억원, 4분기에는 42.3억원의 대규모 영업손실을 기록하는 등 진폭이 컸다. 2026년 1분기에는 매출이 175.2억원으로 급증하며 영업이익 2.5억원, 지배주주 순이익 13.1억원으로 흑자 전환에 성공했으나, 2분기에는 매출이 146.3억원으로 줄고 영업손실 21.6억원, 순손실 20.4억원을 기록해 다시 적자로 돌아섰다. 최근 네 개 분기(2025년 3분기~2026년 2분기) 합산 매출은 약 514.4억원, 지배주주 순손실은 약 35.7억원으로, 연간 기준으로도 아직 이익 안정화 국면에 진입하지 못한 모습이다. 이러한 변동성은 수주산업 특성상 프로젝트별 진행률에 따라 매출 인식 시점이 분기마다 달라지는 구조와 맞물려 있다. 2022~2023년의 흑자 국면과 2024~2025년의 적자 국면이 뚜렷이 대비되면서, 전기차 캐즘에 따른 고객사 설비투자 지연이 실적에 직접적인 영향을 미쳤음을 확인할 수 있다.",
+  "en": "2025 consolidated revenue came to KRW 38.57 billion, down from KRW 53.0 billion in 2024, and the decline extends a two-year drop from the 2023 peak of KRW 83.78 billion. The operating loss narrowed to KRW 5.70 billion in 2025 from KRW 7.23 billion in 2024, yet net loss attributable to owners widened to KRW 4.28 billion from KRW 1.47 billion, suggesting that profit-and-loss swing factors persisted even after the one-off Northvolt-related costs booked in 2024. On a quarterly basis, the company posted an operating profit of KRW 989 million in Q2 2025, then swung to an operating loss of KRW 273 million in Q3 and a large KRW 4.23 billion operating loss in Q4, showing wide swings. In Q1 2026, revenue jumped to KRW 17.52 billion, with operating profit of KRW 246 million and net profit attributable to owners of KRW 1.31 billion, marking a return to profitability, but Q2 2026 revenue fell to KRW 14.63 billion with an operating loss of KRW 2.16 billion and a net loss of KRW 2.04 billion, reverting to the red. Over the trailing four quarters (Q3 2025 through Q2 2026), combined revenue was about KRW 51.4 billion, while the net loss attributable to owners was about KRW 3.57 billion, indicating that profitability has yet to stabilize even on an annualized basis. This volatility is tied to the project-based revenue recognition structure typical of order-driven industries, where recognition timing varies quarter to quarter depending on project progress. The clear contrast between the profitable 2022-2023 period and the loss-making 2024-2025 period illustrates how the EV demand chasm and resulting delays in customer capital spending directly affected results."
  },
  "industry": {
-  "ko": "2차전지 검사장비 시장은 전기차(EV) 캐즘과 ESS 수요 급증이라는 상반된 흐름 속에서 구조적 분화가 진행 중이다. ESS 배터리 수요는 2024년 230GWh에서 2026년 359GWh로 확대될 전망이며, AI 데이터센터 전력 수요가 ESS 설치를 추가로 끌어올리는 구조적 동력으로 부각되고 있다. 전기차 시장은 2023년 이후 이중고(EV 캐즘·고금리)를 겪어왔으나, 2025년부터 이어진 고유가 환경이 EV의 가격 매력도를 높여 완만한 수요 회복을 뒷받침하고 있다. 증권가에서는 한국 2차전지 섹터가 최악의 수익성 국면을 통과해 회복 초입에 위치한다는 평가가 우세하다. 삼성SDI의 46파이·전고체 배터리 양산 준비, LG에너지솔루션의 46시리즈 생산 계획 등 차세대 배터리 전환이 검사장비의 교체·신규 수요를 창출하는 구조다. 글로벌 배터리 검사장비 시장은 2025년 약 5.75억 달러에서 2032년 8.33억 달러로 성장이 전망되며, 비파괴검사 정밀도 요구 증대가 핵심 성장 동력이다. 반도체 유리기판(TGV) 검사 분야는 아직 전 세계적으로 상용화 전단계이나, 삼성전기 등 주요 반도체 패키징 업체들의 파일럿 라인 가동으로 시장 형성 초기 국면에 진입 중이다.",
-  "en": "The battery inspection equipment market is experiencing structural bifurcation, navigating divergent currents: a prolonged EV chasm on one side and rapidly expanding ESS demand on the other. ESS battery demand is forecast to grow from 230GWh in 2024 to 359GWh in 2026, with AI data center power requirements emerging as an additional structural demand driver for ESS installation. The EV market has endured compound headwinds since 2023 (chasm plus high interest rates), but sustained high oil prices since 2025 are improving EV cost competitiveness and supporting a gradual recovery. The market consensus is that Korea's secondary battery sector has passed its worst profitability phase and is entering early recovery. Next-generation battery transitions—Samsung SDI's 46Φ and all-solid-state ramp preparations, LG Energy Solution's 46-series production plans—are generating replacement and incremental inspection equipment demand. The global battery test equipment market is projected to grow from approximately $575mn in 2025 to $833mn by 2032, with rising non-destructive inspection precision requirements as the core growth driver. The semiconductor glass substrate (TGV) inspection segment remains pre-commercialization globally, but pilot line launches at major semiconductor packaging players such as Samsung Electro-Mechanics signal early market formation."
+  "ko": "이노메트리의 주력 전방산업인 전기차용 2차전지 시장은 2024~2025년 캐즘(일시적 수요 정체)을 겪었으나, 2026년 들어 ESS와 다양한 배터리 폼팩터를 중심으로 주요 셀 제조사의 투자가 재개되며 점진적인 회복 국면에 접어들었다는 진단이 나온다. 특히 인공지능(AI) 데이터센터 확산과 재생에너지 보급으로 ESS용 배터리 생산능력 확대 수요가 커지면서, 생산 과정의 결함을 비파괴 방식으로 확인하는 X-ray·CT 검사장비 수요도 동반 확대될 것으로 기대되고 있다. 동시에 AI 반도체 산업에서는 유리기판(TGV)이 신호 손실이 적고 대형 기판 적용에 유리한 차세대 패키징 핵심 기술로 평가되며 관련 공급망이 형성되는 초기 국면에 있다. HBM과 CPO 등 첨단 패키징 영역 역시 AI 반도체 수요 확대에 힘입어 검사·품질관리 수요가 늘어날 잠재력을 갖고 있다는 평가가 나온다. 이노메트리는 2차전지 분야에서 검증된 비파괴검사 기술을 유리기판·HBM·CPO 영역에 순차적으로 적용하는 전략을 취하고 있어, 기존 사업의 기술 자산을 신사업으로 확장하는 구도다. 다만 유리기판·HBM·CPO 시장은 아직 표준 공정과 대표 검사장비 사양이 확립되지 않은 초기 단계로, 다양한 장비업체들의 진입 가능성이 열려 있는 상태다.",
+  "en": "Innometry's core end market, EV secondary batteries, went through a demand chasm in 2024-2025, but assessments suggest a gradual recovery began in 2026 as major cell makers resumed investment centered on ESS and various battery form factors. In particular, as AI data center expansion and renewable energy adoption increase demand for ESS battery capacity expansion, demand for X-ray and CT inspection equipment that verifies production defects non-destructively is also expected to grow in tandem. At the same time, in the AI semiconductor industry, glass substrate (TGV) technology is regarded as a next-generation packaging technology with low signal loss and advantages for large substrate applications, with the related supply chain still in an early formation stage. HBM and CPO advanced packaging areas are also seen as having potential for increased inspection and quality-control demand driven by growing AI semiconductor demand. Innometry is pursuing a strategy of sequentially applying its proven non-destructive inspection technology from the battery segment to the glass substrate, HBM, and CPO areas, extending existing technological assets into new businesses. However, the glass substrate, HBM, and CPO markets remain at an early stage where standardized processes and representative equipment specifications have not yet been established, leaving the field open to entry by various equipment makers."
  },
  "outlook": {
-  "ko": "이노메트리는 2026년 들어 ESS·LFP·46파이 등 복수 전략 라인에서 주요 고객사의 발주가 재개되며 수주 회복세가 가시화되고 있다. 회사 측은 ESS 배터리 라인에 CT 및 간극·이물 검사기를 일괄 수주했으며, LFP 라인에 간극·이물 통합 하이브리드 장비를 세계 최초로 개발·공급했다고 공시했다. 유리기판(TGV) 신사업은 JWMT·익스톨 공급을 시작으로 실질 매출 단계에 진입했고, 삼성전기의 세종 사업장 파일럿 라인 가동 준비에 맞춰 주요 검사 협력사로 포지셔닝이 진행 중이다. 산업부 국책과제 2단계 수행을 통해 TGV 검사 기술을 고도화하고 있으며, 전자부품·반도체·도금·화학소재 등 다양한 분야 기업들과 기술제휴 논의도 병행하고 있다. 중국 시장에서는 BAK 외에 추가 고객 수주를 추진 중이며, HBM 패키징 검사 등 고부가가치 반도체 검사 분야도 새로운 성장 축으로 준비하고 있다. 2025년 4분기에 집중됐던 영업손실(-42억원)의 원인 해소 여부와 2026년 하반기 수주 가시성이 연간 흑자 전환의 핵심 불확실성으로 남아 있다. 삼성SDI의 전고체 배터리 로드맵 구체화와 GM 합작 법인 가동 일정이 이노메트리의 중기 수주 모멘텀을 좌우하는 외부 변수다.",
-  "en": "Innometry's order recovery is becoming visible in 2026 as major customers resume equipment orders across multiple strategic battery lines including ESS, LFP, and 46Φ. The company has publicly disclosed bulk orders covering CT and gap/foreign-substance inspection for ESS battery lines, and delivered the world's first integrated gap-and-foreign-substance hybrid inspection equipment to LFP lines. The glass substrate (TGV) business has entered revenue-generating phase with JWMT and Exstoll deliveries, with Innometry positioning itself as a key inspection partner aligned with Samsung Electro-Mechanics' Sejong pilot line launch preparations. Phase 2 of the national R&D project is advancing TGV inspection technology development, while discussions for technology alliances and equipment supply span electronics, semiconductors, plating, and chemical materials sectors. In China, additional customer orders beyond BAK are being pursued, and high-value semiconductor inspection segments such as HBM packaging inspection are being prepared as new growth pillars. Whether the concentrated operating loss of 2025Q4 (-₩4.2bn) has been fully resolved, and the visibility of second-half 2026 order flow, remain the key uncertainties for a full-year return to profitability. Samsung SDI's all-solid-state battery roadmap concretization and the operational timeline of its U.S. joint venture are key external variables that will shape Innometry's medium-term order momentum."
+  "ko": "회사는 배터리 생산라인의 장비 결정이 통상 수개월에서 1년 이상 사전 논의를 거쳐 이뤄진다는 점을 근거로, 북미를 포함한 주요 고객사들과 ESS용 X-ray 검사장비 추가 공급 협의를 지속하고 있으며 2026년 전체 수주액이 전년 대비 증가할 것으로 전망하고 있다. 하반기에는 유럽과 미주 지역을 중심으로 주요 프로젝트의 발주와 장비 공급이 본격화되면서 수주 규모가 상반기보다 크게 확대될 것으로 회사는 기대하고 있다. 실제로 46파이 원통형 배터리 양산라인용 검사장비 출하가 이뤄졌고, 북미 ESS용 및 유럽 전기차용 각형 배터리 검사장비 프로젝트가 동시에 진행 중이다. 신사업 측면에서는 유리기판(TGV) 검사장비가 올해 복수 고객사에 공급되며 실적 레퍼런스를 쌓고 있고, HBM 등 첨단 패키징 분야에서는 글로벌 반도체 제조사와 장비 공급을 협의하고 있다고 회사는 밝혔다. CPO 영역에서는 레이저쎌과 공동개발에 착수했으며, 영국 UCL과는 2026년 7월부터 2029년 6월까지 3년간 유리기판 미세크랙 검출 기술을 공동 개발하는 국책과제를 수행 중이다. 회사는 수주 및 신사업 확대에 대응해 R&D 인력을 포함한 대규모 채용을 진행하고 있다고 밝혔다. 다만 이러한 협의 단계의 프로젝트들이 실제 매출로 전환되는 시점과 규모는 아직 확정되지 않은 상태다.",
+  "en": "Citing that equipment decisions for battery production lines typically follow months to over a year of prior discussion, the company continues supply discussions for additional ESS X-ray inspection equipment with major customers including those in North America, and expects full-year order intake in 2026 to exceed the prior year. The company expects order volume to expand significantly in the second half compared to the first half, as major projects and equipment supply in Europe and the Americas ramp up. Indeed, inspection equipment for a mass-production line of 46-phi cylindrical batteries has been shipped, and projects for North American ESS and European EV prismatic battery inspection equipment are proceeding simultaneously. On the new-business front, glass substrate (TGV) inspection equipment has been supplied to multiple customers this year, building a track record, and the company states it is in discussions with global semiconductor makers on supplying equipment for HBM and other advanced packaging areas. In the CPO area, the company has begun joint development with LaserSSEL, and it is carrying out a three-year government-backed research project with UCL in the UK, running from July 2026 to June 2029, to jointly develop glass substrate micro-crack detection technology. The company states it is conducting large-scale hiring, including R&D personnel, in response to order and new-business expansion. That said, the timing and scale at which these discussion-stage projects will convert into actual revenue remain unconfirmed."
  },
  "valuation_comment": {
-  "ko": "현재 주가는 주당 순자산가치(BPS 6,202원)를 소폭 웃도는 수준에 형성되어 순자산 대비 프리미엄이 제한적인 구간에 위치하며, 2023년 흑자 시기와 비교하면 이익 기대치 하락을 반영한 할인 구간임이 확인된다. 2년 연속 손실로 주당 손실(EPS -108원)이 지속되는 구간에서는 이익 배수 기반 평가를 의미 있게 적용하기 어렵다. 배당 지급 이력이 없어 배당수익률은 사실상 0%로, 인컴 수요에는 부합하지 않는 구조다. 52주 가격 밴드 하반부에서 거래되는 현재 수준은 2023년 사상 최대 실적 달성 시기의 고점 대비 큰 폭의 조정을 반영하고 있다. 2026Q1 영업흑자 전환이 이후 분기에서도 지속·확대되어 이익 회복의 가시성이 높아질 경우, 순자산 배수의 재평가 계기가 형성될 수 있다.",
-  "en": "The current share price stands at a modest premium over book value per share (BPS ₩6,202), placing it in a zone of limited net asset premium, and well below levels seen during the profitable 2023 period, confirming a discount that reflects the de-rating from lower profit expectations. With two consecutive years of losses (EPS at -₩108 per share), earnings-multiple-based valuation is difficult to apply meaningfully. The absence of any dividend history renders effective dividend yield at zero, providing no income-based valuation support. Trading in the lower half of the 52-week price band, the current level reflects a substantial correction from the highs reached during the record-earnings period of 2023. Should the operating profit recovery evident in 2026Q1 prove durable and expand in subsequent quarters—raising earnings visibility—a catalyst for re-rating of the current book value multiple could emerge."
+  "ko": "이노메트리는 2023년까지 흑자를 냈던 이력이 있으나 2024~2025년 적자로 전환된 이후 아직 안정적인 이익 기반으로 복귀하지 못한 상태여서, 표준적인 이익 대비 배수를 산정하기 어려운 국면에 있다. 주가는 순자산가치 대비 일정한 프리미엄이 반영된 구간에서 거래되는 모습을 보이는데, 이는 신사업(유리기판·HBM·CPO) 확장에 대한 시장의 기대가 일부 반영된 결과로 해석될 수 있다. 회사는 최근 몇 년간 별도의 현금배당을 실시하지 않아왔으며, 대신 자사주 매입과 소각을 통한 주주환원 방식을 택하고 있다. 부채비율이 30% 안팎에 머무는 무차입에 가까운 재무구조는 신사업 투자 여력 측면에서 긍정적으로 볼 수 있는 요소다. 다만 실적의 분기별 변동성이 커서, 특정 시점의 순자산이나 배수 지표만으로 현재 국면을 단정하기는 쉽지 않다.",
+  "en": "Innometry has a history of profitability through 2023, but after turning to losses in 2024-2025 it has yet to return to a stable earnings base, making it difficult to calculate a standard earnings-based multiple at this stage. The stock appears to trade in a range that reflects a certain premium over net asset value, which could be interpreted as partly reflecting market expectations for the expansion of new businesses such as glass substrate, HBM, and CPO. The company has not paid cash dividends in recent years, instead opting for shareholder returns through treasury stock buybacks and retirements. A debt ratio hovering around 30%, close to a debt-free structure, can be viewed positively in terms of capacity to fund new-business investment. However, given the large quarter-to-quarter earnings volatility, it is not straightforward to characterize the current phase based solely on net asset value or multiple metrics at any single point in time."
  },
  "bull": [
   {
    "title": {
-    "ko": "2026Q1 급반등과 발주 정상화 신호",
-    "en": "Sharp 2026Q1 Rebound and Order Normalization Signal"
+    "ko": "반도체 신사업 다각화",
+    "en": "Semiconductor New-Business Diversification"
    },
    "body": {
-    "ko": "2026년 1분기 매출이 175억원으로 전년 동기 대비 약 두 배 급증하며 영업흑자로 전환됐다. 주요 고객사들이 ESS·LFP·46파이 등 전략 라인의 장비 발주를 재개하면서 수주 회복세가 뚜렷하고, 2025년 분기 평균(약 97억원)을 크게 상회하는 매출 수준이 연간 실적 회복의 기반이 되고 있다. 2026Q1 지배주주 순이익도 13억원으로 흑자 전환, 수익성 회복이 실질적으로 진행 중임을 확인했다.",
-    "en": "Revenue surged to ₩17.5bn in 2026Q1—roughly double the year-ago level—with a return to operating profitability. Major customers have resumed equipment orders across ESS, LFP, and 46Φ strategic lines, with revenue well above the 2025 quarterly average (~₩9.7bn), laying the groundwork for a full-year recovery. Attributable net income also returned to positive at ₩1.3bn in 2026Q1, confirming that profitability recovery is materially underway."
+    "ko": "유리기판(TGV) 검사장비가 JWMT·익스톨·애니캐스팅 등 복수 고객사에 공급되며 실적 레퍼런스를 확보하고 있고, HBM은 글로벌 반도체 제조사와 공급을 협의 중이며, CPO는 레이저쎌과 공동개발에 착수했다. AI 반도체 패키징 시장 확대와 맞물려 검사장비 수요가 함께 늘어날 잠재력이 있다. 2차전지에서 검증된 비파괴검사 기술을 그대로 응용할 수 있다는 점이 진입 속도를 높이는 요인으로 꼽힌다.",
+    "en": "Glass substrate (TGV) inspection equipment has been supplied to multiple customers including JWMT, EXTOL, and Anycasting, building a track record, while HBM equipment supply is under discussion with global semiconductor makers and CPO joint development has begun with LaserSSEL. There is potential for inspection equipment demand to grow alongside the expanding AI semiconductor packaging market. The ability to directly apply non-destructive inspection technology proven in batteries is cited as a factor accelerating market entry."
    }
   },
   {
    "title": {
-    "ko": "유리기판·반도체 신사업의 실질 매출 개화",
-    "en": "Glass Substrate and Semiconductor New Business Entering Revenue Phase"
+    "ko": "배터리 수주 회복 조짐",
+    "en": "Signs of Battery Order Recovery"
    },
    "body": {
-    "ko": "TGV용 X-ray 검사장비를 JWMT·익스톨에 공급하며 반도체 유리기판 검사가 실질 매출 단계에 진입했고, 삼성전기 파일럿 라인과의 협력 논의도 진전 중이다. 국책과제 2단계 수행 선정으로 기술 신뢰도를 높이고 있으며, 전자·반도체·도금·화학소재 등 다양한 분야로 고객 기반을 확장하고 있다. 유리기판이 AI 반도체·HBM 패키징의 핵심 소재로 자리잡을수록 비파괴검사 수요가 비례 성장할 가능성이 있어 이노메트리의 신사업 레버리지가 높아질 수 있다.",
-    "en": "TGV X-ray inspection equipment deliveries to JWMT and Exstoll mark the semiconductor glass substrate inspection business as commercially active, while collaboration discussions with Samsung Electro-Mechanics' pilot line are progressing. Phase 2 national R&D project selection is enhancing technology credibility, and the customer base is expanding across electronics, semiconductors, plating, and chemical materials. As glass substrates increasingly become a key material for AI semiconductors and HBM packaging, non-destructive inspection demand could scale proportionately, amplifying Innometry's new-business leverage."
+    "ko": "북미 ESS용 및 유럽 전기차용 각형 배터리 검사장비 프로젝트가 동시에 진행되고 있으며, 회사는 올해 전체 수주액이 전년보다 증가할 것으로 전망하고 있다. 46파이 원통형 배터리 양산라인용 검사장비 출하도 이뤄지는 등 다양한 폼팩터에 대응하는 공급 레퍼런스가 쌓이고 있다. AI 데이터센터 확산에 따른 ESS 수요 증가가 이러한 회복의 배경으로 지목된다.",
+    "en": "Projects for North American ESS and European EV prismatic battery inspection equipment are proceeding simultaneously, and the company expects full-year order intake this year to exceed last year's level. Shipments of inspection equipment for 46-phi cylindrical battery mass-production lines have also occurred, building a supply track record across various form factors. Growing ESS demand driven by AI data center expansion is cited as the backdrop for this recovery."
    }
   },
   {
    "title": {
-    "ko": "저부채·플러스 현금흐름의 재무 완충력",
-    "en": "Low-Leverage and Positive Cash Flow as Financial Buffer"
+    "ko": "무차입 재무구조와 주주환원",
+    "en": "Debt-Free Balance Sheet and Shareholder Returns"
    },
    "body": {
-    "ko": "2025년말 부채비율 29.3%로 업종 내 낮은 수준을 유지하며, 2년 연속 영업손실에도 영업활동 현금흐름은 2024년 +148억원, 2025년 +57억원으로 플러스를 기록했다. 이는 자본 침식 없이 신사업 투자와 연구개발을 지속할 수 있는 재무적 완충 역할을 한다. 연속 적자 구간에서도 자기자본이 595억원(2025년말)으로 안정적으로 유지되어 재무 리스크가 제한적이다.",
-    "en": "A debt ratio of 29.3% at end-2025 remains low within the sector, and operating cash flow stayed positive at ₩14.8bn in 2024 and ₩5.7bn in 2025 despite two consecutive operating loss years. This financial cushion enables continued new-business investment and R&D without material capital impairment. Equity of ₩59.5bn at end-2025 has been stably maintained through the loss period, keeping financial risk limited."
+    "ko": "2025년 부채비율은 29.3%로 낮은 수준을 유지하고 있으며, 회사는 자기주식취득 신탁계약 체결과 자사주 소각을 병행하는 주주환원 정책을 이어가고 있다. 이러한 재무 여력은 신사업 투자와 생산능력 확충에 필요한 자금 조달 부담을 완화하는 요인으로 작용할 수 있다.",
+    "en": "The 2025 debt ratio remained low at 29.3%, and the company continues a shareholder return policy combining treasury stock trust agreements with share retirements. This financial flexibility can help ease the funding burden needed for new-business investment and capacity expansion."
    }
   }
  ],
  "bear": [
   {
    "title": {
-    "ko": "2025Q4 집중 손실의 원인·재발 불확실성",
-    "en": "Uncertainty Over Cause and Non-Recurrence of 2025Q4 Concentrated Loss"
+    "ko": "매출 규모 축소 지속",
+    "en": "Continued Revenue Contraction"
    },
    "body": {
-    "ko": "2025년 4분기에만 영업손실 42억원이 집중 발생해 연간 영업손실(57억원)의 대부분을 차지했다. 해당 손실의 구체적 원인(재고 평가손, 채권 손상, 추가 충당금 등)이 일회성으로 완전히 해소됐는지 공시 수준에서 확인이 필요하다. 유사한 대규모 일회성 비용이 재발할 경우, 분기 영업흑자에도 불구하고 연간 흑자 전환에 다시 제약이 생길 수 있다.",
-    "en": "An operating loss of ₩4.2bn was concentrated in 2025Q4 alone, accounting for the majority of the full-year operating loss of ₩5.7bn. The specific cause of this loss (inventory write-downs, receivable impairments, additional provisions, etc.) and whether it has been fully resolved as a one-time item require disclosure-level verification. Should a similar large one-time charge recur, a full-year return to profitability could again be constrained despite quarterly operating profit turns."
+    "ko": "2023년 837.8억원에 달했던 매출액이 2024년 530.0억원, 2025년 385.7억원으로 2년 연속 크게 줄었다. 전기차 캐즘에 따른 주요 고객사 설비투자 지연이 주된 원인으로 지목되며, 매출 정상화 시점은 아직 불확실하다.",
+    "en": "Revenue, which reached KRW 83.78 billion in 2023, fell sharply for two consecutive years to KRW 53.0 billion in 2024 and KRW 38.57 billion in 2025. Delayed capital spending by major customers amid the EV demand chasm is cited as the main cause, and the timing of revenue normalization remains uncertain."
    }
   },
   {
    "title": {
-    "ko": "고객 편중 및 EV 캐즘 장기화 리스크",
-    "en": "Customer Concentration and Prolonged EV Chasm Risk"
+    "ko": "분기 실적 변동성과 매출인식 불확실성",
+    "en": "Quarterly Earnings Volatility and Revenue Recognition Uncertainty"
    },
    "body": {
-    "ko": "매출의 상당 부분이 삼성SDI 등 소수 대형 고객사에 집중되어 있어, 특정 고객의 설비투자 지연이 분기 매출 변동성을 크게 확대한다. 전기차 캐즘이 예상보다 길어지면 배터리 3사의 설비투자 재개가 지연되고 이노메트리의 수주 회복도 후행된다. 노스볼트 파산 사례처럼 주요 해외 고객사의 부실이 재현될 경우, 채권 손실과 성장 축 훼손이 반복될 수 있다.",
-    "en": "Revenue is concentrated among a small number of large customers led by Samsung SDI, meaning capex delays by any single customer can cause substantial quarterly revenue volatility. If the EV chasm persists beyond expectations, the battery majors' capex resumption could be deferred, causing Innometry's order recovery to lag. A repeat of Northvolt-type overseas customer distress could again result in receivable impairments and setbacks to growth pillars."
+    "ko": "2025년 4분기 영업손실 42.3억원, 2026년 2분기 영업손실 21.6억원 등 분기별 손익 편차가 크며, 2026년 1분기 흑자 이후 2분기 재차 적자로 돌아섰다. 감사보고서에서는 수주산업 진행률에 따른 매출인식이 핵심감사사항으로 지정돼 경영진의 판단과 추정에 따른 불확실성이 있다는 점이 지적됐다.",
+    "en": "Quarterly swings are large, with an operating loss of KRW 4.23 billion in Q4 2025 and KRW 2.16 billion in Q2 2026, reverting to loss after the Q1 2026 profit. The audit report flagged revenue recognition based on order-industry progress rates as a key audit matter, noting uncertainty stemming from management judgment and estimates."
    }
   },
   {
    "title": {
-    "ko": "유리기판 신사업 상용화 지연 리스크",
-    "en": "Glass Substrate Business Commercialization Delay Risk"
+    "ko": "신사업 초기 단계의 불확실성",
+    "en": "Early-Stage Uncertainty in New Businesses"
    },
    "body": {
-    "ko": "유리기판 TGV 검사장비는 아직 파일럿·소량 공급 단계이며, 본격 양산 적용까지는 고객사의 기술 검증, 규격 확정, 투자 결정이 선행돼야 한다. 반도체 유리기판 자체가 전 세계적으로 상용화 사례가 없는 신기술로 수요 창출 시점의 불확실성이 크다. 신사업의 의미 있는 매출 기여 시점이 늦어질수록, 이노메트리는 2차전지 업황 의존도를 유지할 수밖에 없어 실적 변동성 구조가 지속된다.",
-    "en": "TGV glass substrate inspection remains at the pilot/small-batch supply stage; full production-scale adoption requires customer technical validation, specification finalization, and investment decisions. Glass substrate technology itself has no global commercialization precedent, creating significant uncertainty around demand timing. The longer the semiconductor new business takes to generate meaningful revenue, the more Innometry remains structurally dependent on the secondary battery industry cycle, sustaining elevated earnings volatility."
+    "ko": "유리기판·HBM·CPO 신사업은 아직 매출 기여가 제한적이며, HBM은 협의 단계, CPO는 공동개발 착수 단계로 실제 양산 공급까지는 시간이 필요하다. 신사업 매출이 본격화되기 전까지는 기존 2차전지 사업의 수주 회복 속도에 실적이 크게 좌우될 가능성이 있다.",
+    "en": "New businesses in glass substrate, HBM, and CPO still contribute limited revenue, with HBM at the discussion stage and CPO only beginning joint development, meaning time is needed before actual mass-production supply. Until new-business revenue becomes substantial, results are likely to remain heavily dependent on the pace of order recovery in the existing battery equipment business."
    }
   }
  ],
  "risks": [
   {
    "cat": {
-    "ko": "업황·거시 리스크",
-    "en": "Industry Cycle & Macro Risk"
+    "ko": "회계·현금흐름 리스크",
+    "en": "Accounting and Cash Flow Risk"
    },
    "body": {
-    "ko": "전기차 수요 회복 속도는 미국 IRA 보조금 정책 변화, 유가 추이, 유럽 CO₂ 규제 이행 여부 등 거시 변수에 크게 좌우된다. 무역 분쟁 심화나 지정학적 리스크가 완성차 업체의 투자 계획 변경으로 이어지면 2차전지 장비 발주 타이밍이 다시 지연될 수 있다. 글로벌 경기 둔화가 ESS 투자 수요에까지 영향을 미칠 경우 이노메트리의 수주 다변화 시나리오도 약화된다.",
-    "en": "EV demand recovery pace is highly sensitive to macro variables including U.S. IRA subsidy policy changes, oil price trajectory, and European CO₂ regulation implementation. Escalating trade disputes or geopolitical risks could cause automakers to revise capex plans, again delaying battery equipment order timing. If a global economic slowdown extends to ESS investment demand, Innometry's order diversification scenario would also be weakened."
+    "ko": "2025사업연도 감사보고서에서 '적정의견'을 받았으나 수주산업 진행률에 따른 매출인식이 핵심감사사항으로 지정됐다. 매출 감소에도 매출채권이 증가하고, 대규모 투자활동현금흐름 유출로 현금성자산이 줄어드는 모습이 나타나 자금 관리 측면의 점검이 필요하다는 지적이 있다.",
+    "en": "The 2025 fiscal year audit report received an 'unqualified opinion,' but revenue recognition based on order-industry progress rates was designated a key audit matter. Despite declining revenue, accounts receivable increased, and cash and cash equivalents declined due to large investing cash outflows, prompting calls for closer scrutiny of cash management."
    }
   },
   {
    "cat": {
-    "ko": "중국 장비 경쟁 리스크",
-    "en": "Chinese Equipment Competitor Risk"
+    "ko": "고객·전방산업 집중 리스크",
+    "en": "Customer and End-Market Concentration Risk"
    },
    "body": {
-    "ko": "중국 배터리 검사장비 업체들이 CATL·BYD 등 자국 배터리 대기업과 함께 성장하며 기술력 격차를 좁히고 있다. 중국 장비사의 글로벌 시장 진출 가속화는 이노메트리의 수출 단가와 수주 점유율을 압박할 수 있다. 중국 고객사와의 협력 확대 과정에서 기술 유출이나 클론 장비 출현 가능성도 중장기 리스크로 존재한다.",
-    "en": "Chinese battery inspection equipment makers are narrowing the technology gap as they scale alongside domestic battery giants such as CATL and BYD. Their accelerating global market push could pressure Innometry's export unit prices and order share. The risk of technology leakage or competitive cloning through expanded Chinese customer cooperation also persists as a medium-to-long-term risk."
+    "ko": "2차전지 부문 매출은 국내 배터리 3사와 소수의 글로벌 셀 메이커에 대한 의존도가 높은 것으로 파악된다. 글로벌 전기차 시장의 성장 둔화나 주요 고객사의 설비투자 지연이 재발할 경우 실적에 직접적인 영향을 받을 수 있다.",
+    "en": "Revenue in the secondary battery segment is understood to be heavily dependent on Korea's three major battery makers and a small number of global cell makers. A recurrence of slowing global EV market growth or delays in capital spending by major customers could directly affect results."
    }
   },
   {
    "cat": {
-    "ko": "실적 변동성·운전자본 리스크",
-    "en": "Earnings Volatility & Working Capital Risk"
+    "ko": "신사업 경쟁·표준화 리스크",
+    "en": "New-Business Competition and Standardization Risk"
    },
    "body": {
-    "ko": "대형 발주 프로젝트에서 고객사의 검수 지연이나 납기 변동이 발생할 경우 매출 인식 시기가 이연되어 분기 간 실적 변동성이 확대된다. 2025년 연간 수주가 회복 국면임에도 4분기에 대규모 손실이 집중된 사례는 분기 간 실적 가시성의 한계를 보여준다. 발행 주식 수(9,833,208주) 규모가 소형이어서 거래량 대비 주가 변동성이 코스닥 장비주 평균 대비 높게 나타날 수 있다.",
-    "en": "Delivery schedule changes or customer acceptance delays on large projects can defer revenue recognition, amplifying quarter-to-quarter earnings volatility. The large loss concentrated in 2025Q4 despite an overall improving order environment illustrates the inherent limitations of quarterly earnings visibility. The relatively small number of issued shares (9,833,208) may result in above-average price volatility relative to KOSDAQ equipment sector peers."
+    "ko": "유리기판(TGV)·HBM·CPO 검사장비 시장은 아직 표준 공정과 대표 사양이 확립되지 않은 초기 단계로, 경쟁사의 진입이나 기술 표준 변화에 따라 이노메트리의 초기 우위가 유지되지 않을 가능성이 있다. 국책과제 등 정부 지원을 받고 있으나 상용화까지는 추가 시간이 필요하다.",
+    "en": "The glass substrate (TGV), HBM, and CPO inspection equipment markets are still at an early stage without established standard processes or representative specifications, so Innometry's early advantage may not be sustained if competitors enter or technology standards shift. While the company receives government support through national R&D projects, additional time is needed before commercialization."
    }
   }
  ],
  "checkpoints": [
   {
    "when": {
-    "ko": "2026년 8월 중순",
-    "en": "Mid-August 2026"
-   },
-   "what": {
-    "ko": "2026년 2분기 실적 발표 — 2026Q1에 이은 영업흑자 유지·확대 여부와 수주잔고 수준을 확인, 연간 흑자 전환 가능성의 1차 검증 시점.",
-    "en": "2026Q2 earnings release — verify whether operating profitability sustained/expanded from 2026Q1 and check order backlog level; first formal test of the full-year profitability recovery scenario."
-   }
-  },
-  {
-   "when": {
-    "ko": "2026년 하반기 중 (DART 수시 공시)",
-    "en": "2H 2026 (DART on-occurrence disclosures)"
-   },
-   "what": {
-    "ko": "삼성SDI 46파이·전고체 양산라인 설비 투자 재개 규모 및 이노메트리 수주 반영 여부 확인 — 공시될 경우 2027년 실적의 선행 지표로 기능.",
-    "en": "Scale of Samsung SDI 46Φ/solid-state production line capex recommencement and whether Innometry orders are captured in DART disclosures — if visible, functions as a leading indicator for 2027 earnings."
-   }
-  },
-  {
-   "when": {
-    "ko": "2026년 하반기~2027년 상반기",
-    "en": "2H 2026 – 1H 2027"
-   },
-   "what": {
-    "ko": "삼성전기 세종 유리기판 파일럿 라인 정식 가동 후 이노메트리의 TGV 검사장비 확대 공급 여부 — 반도체 신사업의 실질 매출 기여가 본격화되는 시점.",
-    "en": "Whether Innometry secures expanded TGV inspection equipment orders following Samsung Electro-Mechanics' Sejong glass substrate pilot line launch — the anticipated inflection point for semiconductor new business to contribute materially to revenue."
-   }
-  },
-  {
-   "when": {
-    "ko": "수시 (DART 공시)",
-    "en": "On-occurrence (DART disclosures)"
-   },
-   "what": {
-    "ko": "중국 BAK 외 추가 해외 수주 공시, ESS 배터리 대형 수주 계약 공시 — 고객·지역 다변화의 실질 진행 속도를 실시간 추적하는 핵심 지표.",
-    "en": "DART disclosures of additional overseas order wins beyond BAK and large-scale ESS battery supply contracts — real-time tracking indicators of the actual pace of customer and geographic diversification."
-   }
-  },
-  {
-   "when": {
     "ko": "2026년 11월 중순",
     "en": "Mid-November 2026"
    },
    "what": {
-    "ko": "2026년 3분기 실적 발표 — 수주잔고 및 영업이익 지속성 확인과 함께, 2025Q4형 대규모 일회성 비용 재발 여부를 확인해 연간 흑자 전환 가능성을 최종 점검하는 시점.",
-    "en": "2026Q3 earnings release — confirm order backlog and operating profit sustainability, verify non-recurrence of 2025Q4-style one-time charges; the final checkpoint for assessing the probability of a full-year return to profitability."
+    "ko": "2026년 3분기 실적 발표에서 하반기 유럽·미주 프로젝트 발주 본격화 여부와 매출·수익성 회복 정도를 확인할 필요가 있다.",
+    "en": "The Q3 2026 earnings release should reveal whether second-half European and Americas project orders are ramping up and to what extent revenue and profitability are recovering."
+   }
+  },
+  {
+   "when": {
+    "ko": "2026년 4분기",
+    "en": "Fourth quarter of 2026"
+   },
+   "what": {
+    "ko": "북미 ESS용 및 유럽 각형 배터리 검사장비 프로젝트의 실제 발주·공급계약 공시 여부를 확인할 시점이다.",
+    "en": "This is the point to check whether North American ESS and European prismatic battery inspection equipment projects convert into actual order and supply contract disclosures."
+   }
+  },
+  {
+   "when": {
+    "ko": "2026년 하반기",
+    "en": "Second half of 2026"
+   },
+   "what": {
+    "ko": "HBM 첨단패키징 분야에서 글로벌 반도체 제조사와의 공급계약 체결 여부와 CPO 공동개발 진척 상황을 확인할 필요가 있다.",
+    "en": "It is worth monitoring whether a supply contract is signed with a global semiconductor maker in the HBM advanced packaging area, as well as progress on the CPO joint development."
+   }
+  },
+  {
+   "when": {
+    "ko": "2026년 하반기",
+    "en": "Second half of 2026"
+   },
+   "what": {
+    "ko": "추가 자사주 매입·소각 등 주주환원 후속 조치와 재무건전성 지표(부채비율, 현금성자산) 변화를 점검할 시점이다.",
+    "en": "This period warrants checking for further treasury stock buyback/retirement follow-up actions and changes in financial health indicators such as the debt ratio and cash balance."
    }
   }
  ],
  "verdict": {
   "body": {
-   "ko": "이노메트리는 X-ray·CT 비파괴검사 기술을 기반으로 국내 배터리 3사 전체에 납품하는 시장 선도 지위를 보유한 소형 장비주이나, 노스볼트 파산과 EV 캐즘의 복합 충격으로 2023년 사상 최대 실적(매출 838억원·영업이익률 9.8%)에서 2025년 매출 386억원·2년 연속 영업손실로 급격히 조정됐다. 2026년 1분기 매출의 전년 동기 대비 두 배 급증과 영업흑자 전환은 사이클 저점 통과를 시사하는 가장 유의미한 신호다. ESS 수요 구조적 확대, 삼성SDI 46파이·전고체 배터리 전환, 중국 시장 진출 등이 중기 수주 회복의 동력이며, 유리기판(TGV) 검사 신사업이 파일럿을 넘어 실질 매출 단계에 진입한 것은 사업 다변화 진전으로 평가된다. 한편 2025년 4분기에 집중된 대규모 손실의 완전한 해소 여부, 소수 고객 편중 구조, 유리기판 상용화 속도의 불확실성은 회복 경로의 잠재적 장애물로 남아 있다. 부채비율 29.3%의 저부채 구조와 플러스 영업 현금흐름이 재무 안정성을 뒷받침하므로 단기 유동성 우려는 제한적이다. 2026년 2분기 이후 영업흑자 지속성과 신규 수주 확대 가시성이 이노메트리의 실적 회복 내러티브가 실현 가능한지를 판가름하는 핵심 시험대가 될 것이다.",
-   "en": "Innometry is a small-cap equipment company holding a market-leading position as a supplier to all three of Korea's major battery makers, grounded in X-ray/CT non-destructive inspection technology. However, the combined impact of Northvolt's bankruptcy and the EV chasm caused a steep correction from the 2023 record peak (revenue ₩83.8bn, OPM 9.8%) to 2025 revenue of ₩38.6bn with two consecutive operating losses. The near-doubling of revenue year-on-year in 2026Q1 coupled with a return to operating profit is the most meaningful signal yet of a cyclical trough passage. Structural ESS demand expansion, Samsung SDI's 46Φ and all-solid-state battery transition, and China market entry provide mid-term order recovery drivers, while the glass substrate (TGV) inspection business moving from pilot to revenue-generating phase represents genuine portfolio diversification progress. Key obstacles to the recovery path remain: the completeness of resolution of the concentrated 2025Q4 losses, customer concentration among a small number of buyers, and uncertainty over the glass substrate commercialization timeline. The low-leverage balance sheet (debt ratio 29.3%) and positive operating cash flow provide financial stability, limiting near-term liquidity concerns. The sustainability of operating profitability from 2026Q2 onward and the visibility of new order expansion will serve as the pivotal test of whether Innometry's earnings recovery narrative can be credibly realized."
+   "ko": "이노메트리는 2차전지 검사장비 사업의 실적 회복이 아직 안정적인 흐름으로 자리잡지 못한 가운데, 유리기판·HBM·CPO 등 반도체 신사업을 통해 사업구조를 다각화하는 국면에 있다. 2025년 매출과 영업손익은 전년 대비 일부 개선됐으나 지배주주 순손실은 확대됐고, 2026년 상반기에도 분기별로 흑자와 적자를 오가는 변동성이 이어졌다. 북미 ESS·유럽 각형 배터리 프로젝트를 중심으로 한 수주 회복 조짐과, 유리기판·HBM·CPO 분야의 신규 공급 레퍼런스 확대는 긍정적 요인으로 꼽힌다. 반면 매출 규모가 2023년 정점 대비 절반 이하로 줄어든 상태이고, 감사보고서상 매출인식 관련 핵심감사사항이 지정된 점, 신사업의 실제 매출 기여가 아직 제한적인 점은 유의할 부분이다. 무차입에 가까운 재무구조와 자사주 소각을 통한 주주환원은 재무적 안정성 측면의 긍정적 신호로 볼 수 있다. 향후 분기 실적과 수주 공시, 신사업 공급계약 체결 여부가 실적 정상화 경로를 가늠하는 핵심 지표가 될 것으로 보인다.",
+   "en": "Innometry is diversifying its business structure through semiconductor new businesses such as glass substrate, HBM, and CPO, even as the recovery in its secondary battery inspection equipment business has not yet settled into a stable pattern. In 2025, revenue and operating loss improved somewhat versus the prior year, but the net loss attributable to owners widened, and volatility between quarterly profit and loss continued through the first half of 2026. Signs of order recovery centered on North American ESS and European prismatic battery projects, along with expanding new supply references in glass substrate, HBM, and CPO, stand out as positive factors. On the other hand, revenue scale has fallen to less than half of its 2023 peak, a key audit matter was designated regarding revenue recognition in the audit report, and the actual revenue contribution from new businesses remains limited—points that warrant attention. A near debt-free financial structure and shareholder returns via treasury stock retirement can be viewed as positive signals of financial stability. Going forward, quarterly results, order disclosures, and whether new-business supply contracts are signed will likely serve as key indicators for gauging the path to earnings normalization."
   }
  },
  "sources": [
   "https://m.irgo.co.kr/IR-COMP/302430/%EC%9D%B4%EB%85%B8%EB%A9%94%ED%8A%B8%EB%A6%AC-IR-PAGE",
-  "https://www.investing.com/equities/innometry-co-ltd",
-  "https://m.thinkpool.com/item/302430/stockIndicator",
   "https://aistockinsight.kr/stock/302430",
+  "https://link2003.com/?bid=123&m=vd&no=4893&q=%EC%9D%B4%EB%85%B8%EB%A9%94%ED%8A%B8%EB%A6%AC%28302430%29",
+  "https://www.etnews.com/20251014000009",
+  "https://comp.fnguide.com/SVO2/ASP/SVD_Main.asp?pGB=1&gicode=A302430&NewMenuID=11&cID=&MenuYn=Y",
   "https://itooza.com/vscore/302430",
-  "https://m.thinkpool.com/compDiscuss/cont/1011166",
-  "https://kind.krx.co.kr/common/disclsviewer.do?method=searchInitInfo&acptNo=20251114003180&docno=",
-  "https://kbthink.com/securities-view.html?docId=20240426164648983K",
-  "https://kind.krx.co.kr/common/disclsviewer.do?method=search&acptno=20260320001280&docno=&viewerhost=",
   "https://v.daum.net/v/BzRnKM71Ie",
   "https://www.innometry.com/pr/pr_view.html?code=news&idx=90",
-  "https://www.innometry.com/product/product_sub03.html",
-  "https://m.irgo.co.kr/IR%EC%9E%90%EB%A3%8C/67503/TB/%EC%9D%B4%EB%85%B8%EB%A9%94%ED%8A%B8%EB%A6%AC-%EC%9D%B4%EB%85%B8%EB%A9%94%ED%8A%B8%EB%A6%AC-%EC%82%BC%EC%84%B1%EC%A0%84%EA%B8%B0%EC%BD%94%EB%8B%9D%EA%B3%BC-%EC%9C%A0%EB%A6%AC%EA%B8%B0%ED%8C%90-%EC%BB%A8%ED%8D%BC%EB%9F%B0%EC%8A%A4-%EC%B0%B8%EA%B0%80-TGV%EC%9A%A9-%EB%B9%84%ED%8C%8C%EA%B4%B4%EA%B2%80%EC%82%AC%EA%B8%B0%EC%88%A0-%EC%84%A0%EB%B4%AC",
-  "https://www.cstimes.com/news/articleView.html?idxno=637695",
-  "https://www.moip.go.kr/club/front/menu/common/print.do?clubId=semiconductor&menuId=6&curPage=5&searchField=&searchQuery=&messageId=17274",
-  "https://www.innometry.com/",
-  "https://kr.linkedin.com/posts/innometry_%EC%9D%B4%EB%85%B8%EB%A9%94%ED%8A%B8%EB%A6%AC-%EB%B0%98%EB%8F%84%EC%B2%B4-%EC%9C%A0%EB%A6%AC%EA%B8%B0%ED%8C%90-%EC%BB%A8%ED%8D%BC%EB%9F%B0%EC%8A%A4-%EC%B0%B8%EA%B0%80-tgv-%EB%B9%84%ED%8C%8C%EA%B4%B4%EA%B2%80%EC%82%AC%EA%B8%B0%EC%88%A0%EC%9D%98-%ED%98%84%EC%9E%AC%EC%99%80-activity-7368513611725463552-rT3S",
-  "https://nextinsol.com/ko/%E7%BE%8E%EB%8F%85%EC%A0%90-%EB%B0%98%EB%8F%84%EC%B2%B4-%EC%9B%A8%EC%9D%B4%ED%8D%BC-%EA%B2%80%EC%82%AC%EC%9E%A5%EB%B9%84-%EC%B2%98%EC%9D%8C%EC%9C%BC%EB%A1%9C-%EB%9A%AB%EC%96%B4-%EC%98%AC-2/"
+  "https://www.paxnet.co.kr/stock/analysis/main?abbrSymbol=302430",
+  "https://www.judal.co.kr/?view=stockAI&shareToken=kBObbgZ6lrhZQbJC",
+  "https://www.enetnews.co.kr/news/articleView.html?idxno=53679",
+  "https://www.financialpost.co.kr/news/articleView.html?idxno=273891",
+  "https://zdnet.co.kr/view/?no=20260813142957",
+  "https://www.dailyan.com/news/article.html?no=776753",
+  "https://www.fnnews.com/news/202311070939367719",
+  "https://www.judal.co.kr/?view=stockAI&shareToken=wpnHEufNnbCnpq2A",
+  "https://alphasquare.co.kr/home/stock-summary?code=302430",
+  "https://www.innometry.com/mobile/pr/pr_view.html?code=news&idx=45&page=1&searchopt=&keyword="
  ],
  "v": 2,
- "model": "claude-sonnet-4-6",
+ "model": "claude-sonnet-5",
  "ticker": "302430",
  "name": "이노메트리",
  "name_en": "INNOMETRY Co., Ltd.",
@@ -233,9 +223,9 @@
   "반도체"
  ],
  "market": "코스닥",
- "reportDate": "2026-06-19",
- "reportTs": "2026-06-19 03:56",
- "dataDate": "20260821",
+ "reportDate": "2026-09-05",
+ "reportTs": "2026-09-05 08:21",
+ "dataDate": "20260904",
  "quant": {
   "asOf": "2026-08-21",
   "fs_basis": "연결(CFS) · DART 공시 확정치 · 지배주주 기준 순이익",
@@ -334,14 +324,14 @@
    }
   ],
   "valuation": {
-   "price": 6650,
-   "mcap": 0.0654,
+   "price": 7230,
+   "mcap": 0.0711,
    "shares": 9833208,
    "total_shares": 9833208,
    "wavg_shares": null,
    "per": null,
    "eps": -363,
-   "pbr": 1.13,
+   "pbr": 1.2294,
    "bps": 5881,
    "roe_ttm": -5.9,
    "ttm_window": "2025Q3~2026Q2",

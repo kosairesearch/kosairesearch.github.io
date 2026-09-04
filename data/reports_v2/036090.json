@@ -1,230 +1,220 @@
 {
  "title": {
-  "ko": "AI 반도체 부품 회복세 속 수익 귀속 구조가 과제",
-  "en": "Semiconductor Parts Recovery Intact; Profit Attribution Structure Remains Key Challenge"
+  "ko": "디스플레이에서 반도체 소부장으로 체질 전환",
+  "en": "Wizit's Shift From Display Parts To Semiconductor Materials"
  },
  "lead": {
-  "ko": "반도체·디스플레이 소모성 부품 전문기업 위지트는 파워넷 연결 편입으로 연 매출 5,000억 원대 그룹으로 도약하고 2025년 영업이익이 전년 대비 87% 급증하였으나, 지배주주 귀속 이익 비중이 낮고 2026년 1분기 수익성이 둔화되어 성장의 질적 검증이 요구되는 국면이다.",
-  "en": "Wizit, a specialist in consumable parts for semiconductor and display equipment, leaped into the KRW 480+ billion revenue tier after fully consolidating subsidiary Powernet; operating profit surged 87% YoY in 2025, yet weak controlling-shareholder profit attribution and softening 1Q 2026 margins call for closer scrutiny of earnings quality."
+  "ko": "위지트는 자회사 파워넷 편입으로 외형은 크게 커졌지만, 지배주주 귀속 순이익은 여전히 작고 최근 분기로 올수록 변동성이 커지고 있다.",
+  "en": "Wizit's scale expanded sharply after consolidating subsidiary Powernet, but profit attributable to owners remains small and has grown more volatile in recent quarters."
  },
  "keypoints": [
   {
-   "ko": "파워넷 연결 편입으로 연 매출이 352억(2023) → 4,830억(2025)으로 비약적 확대; 그룹 외형 성장의 핵심 축은 SMPS 사업",
-   "en": "Full Powernet consolidation drove revenue from KRW 35.2 billion (2023) to KRW 483.0 billion (2025), with the SMPS segment as the primary revenue engine at the group level"
+   "ko": "2025년 연결 매출 4,830억원(+35.0%), 영업이익 258억원(+86.6%)으로 외형이 크게 늘었으나 지배주주 순이익은 78억원으로 절대 규모는 작다.",
+   "en": "2025 consolidated revenue rose 35.0% to KRW 483.0bn and operating profit rose 86.6% to KRW 25.8bn, but profit attributable to owners was only KRW 7.8bn."
   },
   {
-   "ko": "2025년 연결 영업이익 258억·OPM 5.3%로 뚜렷한 수익성 개선 달성, 다만 지배주주 귀속 순이익은 연결 총 순이익의 약 33% 수준",
-   "en": "2025 consolidated operating profit reached KRW 25.8 billion (OPM 5.3%), a sharp improvement YoY, though controlling-shareholder net profit represented only ~33% of total consolidated net profit"
+   "ko": "2026년 2분기에는 영업이익률이 6.8%로 회복됐음에도 지배주주 순이익은 -6.6억원으로 적자 전환했다.",
+   "en": "In Q2 2026 the operating margin recovered to 6.8%, yet owners' net profit turned negative at about -KRW 0.66bn."
   },
   {
-   "ko": "2026년 1분기 별도 기준 반도체 사업 매출 전년 동기 대비 115% 성장, 국가전략기술 사업화 시설 지정으로 공급 기반 경쟁력 공인",
-   "en": "Semiconductor segment revenue (standalone) surged 115% YoY in 1Q 2026, with government national strategic technology designation reinforcing competitive supply-base credibility"
+   "ko": "2026년 3월 3대 1 무상감자, 6월 제3자배정 유상증자를 잇달아 실시해 최대주주 지분율이 35.2%에서 38.9%로 높아졌다.",
+   "en": "A 3-for-1 reverse stock split in March 2026 was followed by a third-party rights offering in June, raising the controlling shareholder's stake from 35.2% to 38.9%."
   },
   {
-   "ko": "2026년 6월 최대주주 대상 40억 원 제3자 배정 유상증자 결정, 반도체 제조시설 증설·생산 캐파 확대 재원으로 활용 예정",
-   "en": "A KRW 4 billion third-party rights offering targeting the largest shareholder was decided in June 2026, with proceeds earmarked for semiconductor facility expansion and production capacity ramp-up"
+   "ko": "독립리서치 밸류파인더는 TSMC(샘플 5종 중 2종)·키옥시아(샘플 2종) 평가가 진행 중이라고 분석했다.",
+   "en": "Independent research house Value Finder reported that sample evaluations are under way with TSMC (2 of 5 samples) and Kioxia (2 samples)."
   },
   {
-   "ko": "2026년 1분기 연결 OPM 3.5%·지배주주 귀속 순이익 2.6억 원으로 분기 이익 변동성 확대, 수익 개선 지속성 검증 필요",
-   "en": "1Q 2026 consolidated OPM of 3.5% and controlling-shareholder net profit of KRW 256 million signal elevated quarterly earnings volatility, with profitability recovery durability still under examination"
+   "ko": "2025년 말 연결 자본 중 비지배지분(2,614억원)이 지배주주지분(1,447억원)보다 커, 이익의 상당 부분이 비지배주주 몫으로 배분되는 구조다.",
+   "en": "At end-2025, non-controlling interests (KRW 261.4bn) exceeded owners' equity (KRW 144.7bn) within consolidated equity, meaning a large share of profit accrues to non-controlling shareholders."
   }
  ],
  "business": {
-  "ko": "위지트는 1997년 설립되어 1999년 코스닥에 상장된 반도체·디스플레이 제조장비 핵심 소모성 부품 전문기업이다. 국내 최초로 디스플레이 상부전극을 국산화하는 데 성공하였으며, 이후 증착(CVD)·노광·식각 공정 장비 부품으로 사업 범위를 넓혀왔다. 주력 제품은 반도체 박막공정(CVD)의 핵심 소모성 부품인 샤워헤드(Shower Head)·페이스 플레이트(Face Plate)·샤워 페드(Shower Ped)이며, 초정밀 홀 가공·나노 단위 표면처리·특수 코팅 기술이 핵심 경쟁력이다. 주요 고객은 삼성전자·SK하이닉스(반도체)와 삼성디스플레이·LG디스플레이(디스플레이)이며, 정부로부터 HBM·D램·낸드플래시 소재·부품 제조 국가전략기술 사업화 시설로 지정받아 기술적 지위를 인정받고 있다. 2017년 인수한 전력변환장치(SMPS) 전문기업 파워넷이 2024년부터 연결 종속회사로 편입되면서 그룹 연결 매출의 대부분을 차지하는 핵심 기여 축이 되었다. 파워넷은 IT·OA·가전·산업용 전자제품 전원공급용 SMPS를 주력으로 하며, 베트남 생산법인을 운영하고 LFP(리튬·인산·철) 2차전지 분야로 사업을 다각화하고 있다. 또 다른 종속회사 옴니텔은 응용소프트웨어 개발·공급 사업을 영위하여 그룹 포트폴리오는 반도체·디스플레이 부품, 전력변환장치, 소프트웨어로 구성된 복합 구조다. 2025년 중소기업기술혁신개발사업에 선정되며 방위산업·우주항공 및 HBM 핵심부품 분야 진출을 가속화하고 있고, 차세대 유리기판 소부장 시장에도 진출하여 신성장 동력을 탐색 중이다.",
-  "en": "Wizit was founded in 1997 and listed on KOSDAQ in 1999, specializing in consumable parts for semiconductor and display manufacturing equipment. The company was the first in Korea to domestically develop the display upper electrode, subsequently expanding into parts for CVD deposition, photolithography, and etching processes. Core products include the Shower Head, Face Plate, and Shower Ped—critical consumable parts for CVD thin-film processes—underpinned by ultra-precision hole machining, nano-scale surface treatment, and proprietary coating technologies. Key customers include Samsung Electronics and SK Hynix in semiconductors, and Samsung Display and LG Display in displays; the company has been designated a national strategic technology commercialization facility for HBM, DRAM, and NAND flash components by the Korean government. Powernet, a switched-mode power supply (SMPS) specialist acquired in 2017, became a fully consolidated subsidiary in 2024 and now constitutes the dominant share of group-level consolidated revenue. Powernet manufactures power supplies for IT, OA, home appliance, and industrial electronics, and is diversifying into LFP (lithium iron phosphate) secondary batteries, with a production subsidiary in Vietnam. Another subsidiary, Omnitel, operates in application software development, giving the group a composite portfolio spanning semiconductor and display parts, power conversion, and software. Wizit was selected for a government SME technology innovation development program in 2025 and is actively pursuing entry into the defense, aerospace, and HBM core-parts markets, while also targeting the emerging next-generation glass substrate materials segment."
+  "ko": "위지트는 1997년 설립돼 1999년 코스닥 시장에 상장한 반도체·디스플레이 장비 부품 전문기업으로, 국내 최초로 디스플레이 공정용 소모성 부품인 상부전극 국산화에 성공한 뒤 증착(CVD)·노광·식각 공정에 쓰이는 정밀 부품을 생산해 왔다. 대표 제품 중 하나는 유리기판과 웨이퍼 표면에 미세한 구멍을 뚫어 가스를 균일하게 분사하는 소모성 부품으로, 반도체 식각·박막 공정에서 핵심적으로 쓰인다. 주요 거래처는 LG디스플레이, 삼성디스플레이, 삼성전자, SK하이닉스 등이며, 소수의 대형 고객사에 매출이 집중되는 구조다. 독립리서치 밸류파인더에 따르면 2026년 1분기 기준 매출 비중은 디스플레이 장비 부품 63.8%, 반도체 장비 부품 36.2%로 아직 디스플레이 비중이 절반을 넘는다. 2017년 인수한 종속회사 파워넷은 IT·가전·산업용 전자제품에 전원을 공급하는 전력변환장치(SMPS) 전문기업으로, 최근 이차전지 LFP 소재 사업까지 영역을 넓히고 있다. 위지트는 2023년 말 주주총회 참석률 등을 근거로 파워넷에 대한 실질지배력을 인정받아 관계기업에서 종속기업으로 분류를 변경했고, 이에 따라 2024년부터 파워넷 매출이 연결 재무제표에 온기 반영되기 시작했다. 이 밖에 위지트는 티사이언티픽 지분 30.77%, 한성크린텍 지분 3.51%를 보유하고 있다. 회사는 정부로부터 첨단 메모리반도체(D램·낸드플래시·HBM) 소재·부품을 생산하는 국가전략기술 사업화 시설로 지정받아, 반도체 후공정 고부가가치 부품 중심으로 포트폴리오를 넓히는 전략을 취하고 있다.",
+  "en": "Founded in 1997 and listed on KOSDAQ in 1999, Wizit is a semiconductor and display equipment parts specialist that first localized the consumable top-electrode part for display processes before expanding into precision parts for deposition (CVD), lithography, and etching. One of its key products is a consumable component that disperses gas evenly through thousands of fine holes drilled into glass substrates and wafers, used in semiconductor etching and thin-film processes. Its major customers are LG Display, Samsung Display, Samsung Electronics, and SK hynix, and revenue is concentrated among a small number of large customers. According to independent research house Value Finder, revenue in Q1 2026 was split 63.8% display equipment parts and 36.2% semiconductor equipment parts, with display parts still accounting for more than half. Subsidiary Powernet, acquired in 2017, makes switch-mode power supplies (SMPS) for IT, home appliance, and industrial electronics, and has recently expanded into LFP secondary-battery materials. Based on shareholder-meeting attendance and other factors, Wizit determined at the end of 2023 that it held de facto control over Powernet and reclassified it from an equity-method affiliate to a consolidated subsidiary, causing Powernet's full-year revenue to enter Wizit's consolidated statements starting in 2024. Wizit also holds a 30.77% stake in T Scientific and a 3.51% stake in Hansung CleanTech. The company has been designated by the government as a national strategic technology production facility for advanced memory semiconductor (DRAM, NAND, HBM) materials and parts, and is pursuing a strategy of expanding its portfolio toward higher-value-added semiconductor back-end parts."
  },
  "earnings": {
-  "ko": "파워넷 연결 편입 이전인 2022~2023년에는 별도 기준 연 매출이 352억 원 내외로 정체되어 있었으나, 2024년 파워넷이 연결 종속회사로 편입되면서 그룹 매출이 3,578억 원(OPM 3.9%)으로 급팽창하였다. 2025년에는 글로벌 반도체 시장 회복과 AI 서버·데이터센터 투자 확대에 힘입어 샤워헤드 등 CVD 공정 부품 수요가 늘면서 연결 매출 4,830억 원(전년 대비 +35%), 영업이익 258억 원(전년 대비 +87%, OPM 5.3%)을 달성하였다. 분기별 OPM은 2025년 2분기 7.6%를 정점으로 3분기 6.6%, 4분기 3.4%, 2026년 1분기 3.5%로 점진적 하락 추세를 보이고 있어 수익성 모멘텀의 지속성이 주목된다. 지배주주 귀속 순이익은 2023년 대규모 비경상 손실로 적자를 기록한 이후 2024년 흑자로 전환하고 2025년에는 78억 원으로 뚜렷하게 회복되었으나, 2026년 1분기에는 2.6억 원에 그쳐 분기 이익 변동성이 확대된 양상이다. 2025년 연결 총 당기순이익(240억 원)에서 지배주주 귀속 비중이 약 33%에 불과한 이유는 파워넷 지분율이 약 38.9%에 머물러 자회사 이익의 상당 부분이 비지배주주에게 귀속되는 구조이기 때문이다. 영업활동현금흐름은 2025년 237억 원으로 영업이익과 근접한 수준을 유지하며 2024년(262억 원)에 이어 2년 연속 200억 원대 현금을 창출하는 안정적인 흐름을 보여주었다. 부채비율은 파워넷 연결 편입으로 2022년 15.4%에서 2024년 74.5%로 급등한 이후 2025년 67.4%로 소폭 개선에 그쳤다. 2026년 1분기에는 별도 기준 영업이익이 전년 동기 대비 137% 급증하며 모회사 반도체 부품 사업의 자체 회복세가 확인되었으나, 연결 기준 영업이익은 40억 원 수준에 머물러 종속회사 파워넷의 수익성 기여도 변화를 함께 점검할 필요가 있다.",
-  "en": "Prior to the Powernet consolidation, Wizit's standalone revenue hovered around KRW 35 billion annually in 2022 and 2023; the 2024 consolidation propelled group revenue to KRW 357.8 billion (OPM 3.9%). In 2025, a global semiconductor market recovery and surging AI server and data center investment drove demand for CVD consumable parts, lifting consolidated revenue to KRW 483.0 billion (+35% YoY) and operating profit to KRW 25.8 billion (+87% YoY, OPM 5.3%). Quarterly OPM peaked at 7.6% in 2Q 2025 before declining to 6.6% in 3Q, 3.4% in 4Q, and 3.5% in 1Q 2026—a trend that raises questions about profitability momentum durability. Controlling-shareholder net profit swung from a sizeable non-recurring loss in 2023 to a modest profit in 2024, recovering to KRW 7.8 billion in 2025, but fell sharply to KRW 256 million in 1Q 2026, highlighting elevated quarterly earnings volatility. Total consolidated net profit in 2025 (KRW 24.0 billion) far exceeded the controlling-shareholder portion (KRW 7.8 billion) because Wizit's ~38.9% stake in Powernet routes the majority of subsidiary profits to non-controlling shareholders. Operating cash flow remained solid at KRW 23.7 billion in 2025—closely tracking operating profit—marking the second consecutive year of KRW 20+ billion cash generation following KRW 26.2 billion in 2024. The debt-to-equity ratio spiked from 15.4% (2022) to 74.5% (2024) upon Powernet's consolidation, easing only modestly to 67.4% in 2025. On a standalone basis, 1Q 2026 operating profit surged 137% YoY, confirming genuine recovery in the parent's semiconductor parts segment, yet consolidated operating profit of roughly KRW 4 billion underscores the importance of simultaneously tracking Powernet's earnings contribution."
+  "ko": "2025년 연결 매출액은 4,830억 2,616만원으로 2024년 3,577억 6,055만원 대비 35.0% 증가했고, 영업이익은 258억 3,957만원으로 전년 138억 4,663만원 대비 86.6% 늘었다. 반면 지배주주 귀속 순이익은 77억 8,596만원으로 2024년 8억 5,081만원보다 9배 이상 늘었지만, 매출·영업이익 증가폭에 비하면 절대 규모는 여전히 작다. 이는 2023년 말 파워넷을 종속기업으로 재분류한 이후 연결 매출과 자산이 급증했지만, 파워넷 지분의 상당 부분이 비지배주주 몫으로 남아 이익의 많은 부분이 비지배지분으로 배분되기 때문으로 해석된다. 실제로 2025년 말 연결 자본총계 4,060억 7,393만원 중 지배주주지분은 1,447억 671만원, 비지배지분은 2,613억 6,722만원으로 비지배지분이 지배주주지분의 약 1.8배에 이른다. 2023년에는 영업이익 36억 5,491만원(영업이익률 10.4%)을 내고도 지배주주 순손실 240억 5,859만원을 기록해, 영업 성과와 지배주주 손익 간 괴리가 두드러진 해도 있었다. 최근 네 개 분기 흐름을 보면 매출은 2025년 3분기 1,103억 5,550만원, 4분기 1,334억 8,717만원, 2026년 1분기 1,160억 1,586만원, 2분기 1,146억 9,662만원으로 1,100억~1,335억원대에서 등락했고, 영업이익률은 3분기 6.6%에서 4분기 3.4%, 1분기 3.5%로 낮아졌다가 2분기 6.8%로 다시 올라오는 톱니 모양의 흐름을 보였다. 그런데 지배주주 순이익은 3분기 27억 3,646만원에서 4분기 13억 3,599만원, 1분기 2억 5,651만원으로 계속 줄었고, 2분기에는 영업이익률이 회복됐음에도 6억 5,791만원의 순손실로 전환됐다. 이는 3월 무상감자와 6월 제3자배정 유상증자 등 자본구조 재편 관련 요인이나 비지배지분 배분 확대가 영업외 손익에 영향을 준 결과로 추정된다. 연결 영업활동현금흐름은 2025년 237억 1,446만원으로 2024년 262억 4,590만원과 비슷한 수준을 유지해, 손익의 변동성에도 현금창출력 자체는 비교적 안정적으로 나타났다.",
+  "en": "Consolidated revenue in 2025 was KRW 483.03bn, up 35.0% from KRW 357.76bn in 2024, while operating profit rose 86.6% to KRW 25.84bn from KRW 13.85bn. Profit attributable to owners, however, was only KRW 7.79bn, more than nine times the KRW 0.85bn recorded in 2024 but still small in absolute terms relative to the jump in revenue and operating profit. This gap appears to stem from Powernet's reclassification as a consolidated subsidiary at the end of 2023, after which consolidated revenue and assets surged, but a substantial portion of Powernet's equity remains held by non-controlling shareholders, so much of the profit is allocated to non-controlling interests. Indeed, of total consolidated equity of KRW 406.07bn at end-2025, owners' equity was KRW 144.71bn versus non-controlling interests of KRW 261.37bn, roughly 1.8 times larger. In 2023 the company posted operating profit of KRW 3.65bn (a 10.4% margin) yet still recorded a net loss attributable to owners of KRW 24.06bn, illustrating a year in which operating performance and owners' bottom line diverged sharply. Looking at the last four quarters, revenue oscillated between roughly KRW 110bn and KRW 133.5bn — KRW 110.36bn in Q3 2025, KRW 133.49bn in Q4 2025, KRW 116.02bn in Q1 2026, and KRW 114.70bn in Q2 2026 — while the operating margin traced a saw-tooth pattern, falling from 6.6% in Q3 2025 to 3.4% in Q4 and 3.5% in Q1 2026 before rebounding to 6.8% in Q2 2026. Profit attributable to owners, by contrast, kept declining, from KRW 2.74bn in Q3 2025 to KRW 1.34bn in Q4 and KRW 0.26bn in Q1 2026, before flipping to a net loss of about KRW 0.66bn in Q2 2026 even as the operating margin recovered. This is likely tied to factors surrounding the March reverse stock split and the June third-party rights offering, or to a larger allocation of profit to non-controlling interests below the operating line. Consolidated operating cash flow was KRW 23.71bn in 2025, close to the KRW 26.25bn recorded in 2024, suggesting cash generation stayed relatively stable despite the swings in reported profit."
  },
  "industry": {
-  "ko": "전방시장인 반도체 소모성 부품 시장은 AI 서버 확산과 고사양 HBM·DRAM 생산 확대를 배경으로 CVD·식각 공정용 부품 수요가 구조적으로 증가하는 국면에 있다. 글로벌 주요 반도체 제조사의 설비투자(Capex) 확대가 소재·부품·장비 기업들의 수주 증가로 이어지는 낙수효과가 본격화되고 있으며, 위지트의 핵심 고객사인 삼성전자·SK하이닉스의 투자 사이클이 업황 방향성을 결정하는 핵심 변수다. 반도체 소모성 부품 시장의 특성상 기술 진입장벽과 국산화 인증 요건이 강하여, 국가전략기술 지정 기업은 일정한 수주 안정성을 확보할 수 있는 구조다. 한편 파워넷이 속한 SMPS·전력변환장치 시장은 데이터센터용 전원공급장치 수요 증가로 추가 성장 기회를 맞이하고 있으나, LFP 2차전지 분야는 글로벌 공급 과잉과 가격 하락 압력이 지속되어 수익성 확보가 녹록치 않다. 경쟁 구도 측면에서 반도체 부품 국산화 분야는 진입장벽이 높지만 일부 국내 경쟁사 및 해외 업체와의 가격·품질 경쟁이 심화되는 추세다. AI·5G·서버·자동차 전장화 등 IT 전방 산업의 구조적 수요 확대가 중장기 업황을 우호적으로 견인하고 있으나, 반도체 업황의 강한 사이클성으로 인해 고객사 설비투자 사이클이 꺾일 경우 소모성 부품 수요가 빠르게 감소할 수 있다는 리스크도 상존한다. 방산·우주항공·유리기판 등 신규 진출 분야는 기술장벽이 높고 일단 공급망에 진입하면 거래 관계가 장기화되는 특성이 있어, 초기 포지셔닝을 확보한 기업에게 진입 성공 시 상당한 안정적 수요 기반이 생성될 수 있다.",
-  "en": "The consumable-parts market for semiconductor equipment is in a phase of structural demand growth, driven by AI server proliferation and high-bandwidth memory (HBM) and DRAM production ramp-ups requiring CVD and etch-process consumables. Global chipmaker capex expansions are triggering a trickle-down effect for materials, components, and equipment suppliers; the investment cycles of Samsung Electronics and SK Hynix—Wizit's primary customers—are the pivotal demand drivers. High technological barriers and domestic certification requirements in semiconductor consumable parts confer a degree of order stability for companies holding national strategic technology designation. Powernet's SMPS market is gaining incremental tailwinds from rising data-center power-supply demand, though its nascent LFP battery segment faces persistent global oversupply and pricing pressure. In the competitive landscape, domestic semiconductor part localization remains a high-barrier niche, yet price and quality competition from domestic rivals and overseas players continues to intensify. Structural demand from AI, 5G, server, and automotive electrification trends supports a constructive mid-to-long-term sector outlook, but the semiconductor industry's inherent cyclicality means a reversal in chipmaker capex can rapidly dampen consumable-part orders. New verticals such as defense, aerospace, and glass substrates carry high entry barriers but offer long-term supply relationship stability once a position is secured."
+  "ko": "반도체 장비 부품 시장은 AI 서버·데이터센터 투자 확대에 따른 고사양 D램과 HBM 수요 증가에 힘입어 최근 빠르게 커지고 있다. 시장 정보업체 FnGuide는 AI, 5G, 서버, 자동차 전장화 등 전방 산업의 수요 확대에 따라 고사양 D램 수요와 대규모 데이터센터 구축이 진행되며 반도체 시장이 폭발적으로 성장하고 있다고 짚었다. 반면 위지트가 오랫동안 주력해 온 디스플레이 장비 부품 시장은 상대적으로 정체된 모습이다. 회사 스스로도 주요 사업 영역인 반도체 및 디스플레이 산업이 전반적으로 정체돼 있다고 언급하며, 친환경 세정 사업 진출 및 고부가가치 신제품 공급 확대로 포트폴리오를 넓히고 있다고 설명했다. 이런 배경에서 위지트는 매출 비중을 디스플레이에서 반도체 쪽으로 옮기는 중이며, 독립리서치 밸류파인더는 SK하이닉스 등 메모리 반도체 기업들의 설비투자 확대에 따른 수혜가 이어질 것으로 전망했다. 경쟁 구도 측면에서 위지트는 국내에서 디스플레이·반도체 소모성 부품 국산화 이력을 보유한 소수 업체 중 하나로 꼽히지만, 글로벌 대형 장비·부품업체와 비교하면 매출 규모나 연구개발 자원 면에서 상대적으로 작은 편이다. 글로벌 고객 다변화 여부가 앞으로 시장 지위를 가늠하는 핵심 변수로 꼽힌다.",
+  "en": "The market for semiconductor equipment parts has been expanding quickly, driven by rising demand for high-spec DRAM and HBM tied to AI server and data-center capital spending. Market data provider FnGuide noted that demand from AI, 5G, servers, and automotive electrification is driving high-spec DRAM demand and large-scale data-center buildouts, fueling explosive growth in the semiconductor market. By contrast, the display equipment parts market that Wizit has long focused on looks comparatively stagnant; the company itself has said its core semiconductor and display businesses are generally flat, and that it is broadening its portfolio through an eco-friendly cleaning business and higher-value-added new products. Against this backdrop, Wizit is shifting its revenue mix from display toward semiconductor parts, and Value Finder projected that the company would continue to benefit from capital-expenditure expansion at memory chipmakers such as SK hynix. Competitively, Wizit is regarded as one of a small number of domestic firms with a track record of localizing consumable display and semiconductor parts, but it remains relatively small next to major global equipment and parts suppliers in terms of revenue scale and R&D resources. Whether it can diversify its global customer base is seen as a key variable for its future market position."
  },
  "outlook": {
-  "ko": "위지트는 2026년 6월 2일 최대주주 제이에스아이홀딩스를 대상으로 40억 원 규모의 제3자 배정 유상증자를 결정하였고, 발행 신주 308만6419주는 2026년 6월 30일 상장될 예정이다. 증자 자금은 AI 반도체 시장 성장에 대응한 반도체 제조시설 증설과 생산 캐파 확대에 사용할 계획이며, 고부가가치 반도체 부품 중심의 사업 경쟁력 강화 전략을 가속화하겠다는 방침이다. 2026년 1분기 별도 기준 반도체 사업 매출이 전년 동기 대비 115% 성장하며 모회사 핵심 사업의 회복세가 확인되고 있어, 증설 투자가 완료되면 공급 역량 확대를 통한 추가 수주 확보 가능성이 열린다. 회사는 2025년 중소기업기술혁신개발사업 선정으로 방위산업·우주항공 부품 및 HBM 핵심부품 분야 진출을 가속화하고 있으며, 이들 신사업은 중장기 포트폴리오 다각화의 성장축이 될 수 있다. 차세대 반도체 기판으로 주목받는 유리기판 소부장 시장에도 진출을 선언하였으나, 이들 신사업의 구체적인 수주 규모와 양산 시점은 아직 확인된 공시가 없어 기여 가시성은 제한적인 단계다. 파워넷은 베트남 생산법인을 통해 글로벌 공급망 운영을 지속하고 LFP 배터리 사업을 확장 중이어서 연결 기준 매출 성장의 방향성은 유지될 전망이나, 구체적인 수주 목표 및 수익성 달성 시점은 추가 공시 확인이 필요하다. 유상증자 이후 제이에스아이홀딩스의 지분율이 약 23.6%로 높아지며, 특수관계인 포함 지배주주 전체 지분율이 약 39%에 달하게 되어 최대주주의 책임경영 의지가 강화되는 측면은 긍정적으로 평가된다.",
-  "en": "Wizit decided a KRW 4 billion third-party rights offering targeting its largest shareholder, JSI Holdings, on June 2, 2026; the 3,086,419 new shares are scheduled to list on June 30, 2026. Proceeds are earmarked for semiconductor manufacturing facility expansion and production capacity ramp-up in response to AI semiconductor market growth, accelerating the strategy of strengthening competitiveness around high-value-added semiconductor parts. With standalone semiconductor segment revenue already up 115% YoY in 1Q 2026, completion of the capacity expansion could unlock additional order opportunities as supply capability grows. The company's 2025 selection for a government SME technology innovation development program is accelerating entry into defense, aerospace, and HBM core-parts markets, verticals that could serve as medium-to-long-term growth pillars. Entry into the next-generation glass substrate materials market has also been announced, though concrete order volumes and volume-production timelines for these new businesses have yet to be confirmed through public disclosures, limiting near-term visibility. Powernet continues to expand its global supply chain via its Vietnamese production subsidiary and grow its LFP battery business, supporting a continued upward direction for consolidated group revenues, though specific order targets and profitability milestones require further disclosure. Post-offering, JSI Holdings' stake will rise to approximately 23.6%—with related parties collectively holding roughly 39%—signaling a stronger commitment to responsible management by the controlling shareholder."
+  "ko": "위지트는 반도체 부문에서 고부가가치 제품 중심으로 포트폴리오를 재편해 반도체 부품 매출 비중을 지속적으로 확대하겠다는 방침을 밝혔다. 회사는 정부로부터 첨단 메모리반도체(D램·낸드플래시·HBM) 소재·부품을 생산하는 국가전략기술 사업화 시설로 지정받아 관련 투자를 이어가고 있다. 자본 조달 측면에서는 2026년 3월 3대 1 무상감자를 통해 자본금을 591억원에서 197억원으로 줄이는 절차를 확정했고, 감자 이후인 6월에는 최대주주 대상 약 40억원 규모의 제3자배정 유상증자를 실시해 최대주주 제이에스아이홀딩스의 지분율을 35.2%에서 38.9%로 높였다. 회사 측은 이번에 확보한 재원으로 생산능력(CAPA) 확장을 추진할 계획이라고 밝혔다. 글로벌 고객 다변화와 관련해서는 TSMC와 샘플 5종 중 2종, 키옥시아와 샘플 2종에 대한 평가가 진행 중인 것으로 파악됐으며, 과거 중국 YMTC에 납품한 이력도 있는 것으로 전해졌다. 독립리서치 밸류파인더는 보수적인 기준으로도 2029년까지 해외 시장에서 약 500억원의 추가 매출 창출이 가능할 것으로 추정했다. 다만 이는 외부 리서치의 전망치로, 실제 공급계약 체결 여부와 시기는 아직 확정되지 않았다.",
+  "en": "Wizit has stated its intention to keep restructuring its semiconductor portfolio toward higher-value-added products and to keep expanding the share of semiconductor-parts revenue. The company continues to invest around its designation as a national strategic technology production facility for advanced memory semiconductor (DRAM, NAND, HBM) materials and parts. On the capital-raising front, it completed a 3-for-1 reverse stock split in March 2026 that reduced capital stock from KRW 59.2bn to KRW 19.7bn, and, following the split, carried out a roughly KRW 4.0bn third-party rights offering to its controlling shareholder in June, raising JS I Holdings' stake from 35.2% to 38.9%. The company said it plans to use the proceeds to expand production capacity. On global customer diversification, sample evaluations were reported to be under way with TSMC (2 of 5 samples) and Kioxia (2 samples), and the company reportedly has a past supply history with China's YMTC. Value Finder estimated that, even on conservative assumptions, additional overseas revenue of about KRW 50bn could be generated by 2029. This figure, however, is an external research estimate, and the timing and conclusion of any actual supply contracts remain unconfirmed."
  },
  "valuation_comment": {
-  "ko": "현재 주가는 연결 기준 장부가액(순자산) 대비 상당폭 할인된 구간에서 형성되어 있으며, 순자산 대비 시장 평가 배수가 코스닥 기계·장비 업종 평균을 하회하는 수준이다. 이익의 방향성 측면에서는 대규모 손실 구간을 지나 흑자로 전환한 뒤 꾸준히 회복 경로를 걸어온 점은 긍정적이지만, 2026년 1분기 지배주주 귀속 순이익의 급감은 이익 회복 지속성에 대한 검증 부담을 남긴다. 파워넷 비지배주주 지분 구조와 분기 이익 변동성을 고려할 때, 순자산 대비 현재의 낮은 배수는 순수 사이클적 디스카운트보다 구조적 요인에 기인하는 부분이 크다는 점을 독립적으로 평가할 필요가 있다. 배당은 최근 사업연도 기준 실시되지 않아 배당 매력도가 낮은 편으로, 현 단계에서는 주주환원보다 생산시설 투자와 신사업 진출에 자원이 집중되고 있다. 2026년 6월 말 신주 상장으로 유통주식이 소폭 증가하며 주당 지표 희석이 수반될 수 있다는 점도 함께 고려할 필요가 있다.",
-  "en": "The current share price trades at a meaningful discount to consolidated book value (net assets), with the price-to-book multiple sitting below the KOSDAQ machinery and equipment sector average. On the earnings trajectory, the recovery from significant losses to sustained profitability is constructive, but the sharp drop in controlling-shareholder net profit in 1Q 2026 requires continued validation of the earnings recovery's durability. Given the non-controlling interest structure tied to the Powernet stake and high quarterly earnings variability, the current low multiple relative to book value warrants independent assessment as partly structural rather than purely cyclical. No dividends were declared for the most recent fiscal year, indicating that capital is directed toward facility investment and new business entry rather than shareholder returns, keeping dividend attractiveness below sector norms. The listing of new shares at end-June 2026 will modestly increase the share count, with some per-share dilution to be factored into forward analysis."
+  "ko": "위지트의 주가는 최근 네 개 분기 동안 이어진 지배주주 순이익의 큰 변동성—흑자에서 소폭 적자로, 다시 회복되는 흐름—을 반영해 움직이고 있다. 연결 자산과 매출 규모는 파워넷 편입 이후 크게 불어났지만, 그중 상당 부분이 비지배지분으로 귀속되는 구조여서 지배주주 몫 기준으로 보면 주가는 주당 순자산가치를 상당히 밑도는 수준에서 거래되는 편이다. 최근 배당은 지급되지 않고 있어 주주환원 측면의 비교 기준은 제한적이다. 3대 1 무상감자와 뒤이은 제3자배정 유상증자 등 잇따른 자본구조 변경은 발행주식수와 지배구조를 다시 바꿔 놓아, 과거 시점의 주당 지표를 그대로 현재와 비교하기 어렵게 만드는 요인이다. 밸류에이션을 해석할 때는 연결 실적의 외형과 지배주주 귀속 이익 간 괴리, 그리고 최근의 자본구조 변경 이력을 함께 고려할 필요가 있다.",
+  "en": "Wizit's share price has moved in tandem with the wide swings in profit attributable to owners over the last four quarters—from positive, to a modest loss, and back toward recovery. Consolidated assets and revenue have grown substantially since Powernet's consolidation, but because a large share of that base is attributed to non-controlling interests, the stock trades at a level well below book value per share on an owners'-equity basis. The company currently pays no dividend, which limits comparisons on a shareholder-return basis. Successive capital actions—the 3-for-1 reverse stock split followed by a third-party rights offering—have repeatedly reshaped the share count and ownership structure, making it difficult to compare past per-share metrics directly with the present. Interpreting valuation requires weighing both the gap between headline consolidated results and profit attributable to owners, and the recent history of capital-structure changes."
  },
  "bull": [
   {
    "title": {
-    "ko": "AI 반도체 소모성 부품의 구조적 수요 확대",
-    "en": "Structural Demand Growth for AI Semiconductor Consumable Parts"
+    "ko": "반도체 부품 마진 회복 조짐",
+    "en": "Signs of Margin Recovery in Semiconductor Parts"
    },
    "body": {
-    "ko": "AI 서버·데이터센터 구축 가속화가 고사양 메모리반도체(HBM·DRAM) 생산 확대를 이끌면서 CVD 공정 핵심 소모성 부품 수요가 구조적으로 증가하는 국면이다. 위지트는 국가전략기술 사업화 시설로 지정받아 삼성전자·SK하이닉스 등 최상위 고객사와의 공급 관계를 구축하고 있어, 이러한 수요 흐름의 직접적 수혜를 받을 수 있는 위치에 있다. 2026년 1분기 별도 기준 반도체 부문 매출이 전년 동기 대비 115% 성장하며 회복이 이미 현실화되고 있다.",
-    "en": "Accelerating AI server and data center construction is structurally expanding demand for CVD consumable parts as high-spec memory (HBM, DRAM) production ramps at leading chipmakers. Wizit's designation as a national strategic technology facility and established supply relationships with Samsung Electronics and SK Hynix position the company to benefit directly from this demand cycle. Standalone semiconductor segment revenue already growing 115% YoY in 1Q 2026 confirms the recovery is materializing."
+    "ko": "2026년 2분기 연결 영업이익률은 6.8%로 전분기 3.5%에서 큰 폭으로 개선됐다. 회사는 정부로부터 첨단 메모리반도체 소재·부품 생산을 위한 국가전략기술 사업화 시설로 지정받아 고부가가치 부품으로의 전환 기반을 다지고 있다. 반도체 부품 매출 비중이 아직 36.2%(2026년 1분기)에 그치지만, 회사는 이를 지속적으로 확대하겠다는 방침을 밝혔다. 마진 개선이 다음 분기 이후에도 이어지는지가 관전 포인트다.",
+    "en": "The consolidated operating margin rebounded sharply to 6.8% in Q2 2026 from 3.5% in the prior quarter. The company's designation as a national strategic technology facility for advanced memory semiconductor materials and parts underpins its shift toward higher-value products. Semiconductor parts still made up only 36.2% of revenue as of Q1 2026, but the company has stated its intention to keep expanding that share. Whether the margin improvement persists in subsequent quarters remains the key point to watch."
    }
   },
   {
    "title": {
-    "ko": "파워넷 연결 편입에 따른 규모 확대와 현금창출력 강화",
-    "en": "Scale Expansion and Enhanced Cash Generation Through Powernet Consolidation"
+    "ko": "자회사 지분가치, 시가총액 상회 분석",
+    "en": "Subsidiary Stake Value Reported Above Market Cap"
    },
    "body": {
-    "ko": "파워넷 연결 편입으로 그룹 매출 기반이 수십 배 확대되었고, 전력변환장치 분야의 안정적 현금흐름이 그룹 전체 투자 여력을 뒷받침한다. 2025년 영업활동현금흐름이 237억 원으로 양호하게 유지된 점은 반도체 제조시설 증설 및 신사업 진출 재원 확보의 기반이 된다. 파워넷의 데이터센터용 전원공급장치 수요 확대와 LFP 배터리 사업 성장이 더해질 경우 연결 기준 외형 성장이 추가로 가속화될 수 있다.",
-    "en": "Powernet's consolidation expanded group revenue many-fold, and stable SMPS cash flows provide the group with meaningful capacity for ongoing investment. Operating cash flow of KRW 23.7 billion in 2025 underpins sustained capex and new business entry without excessive reliance on external financing. Further data-center power supply demand and LFP battery business growth at Powernet could add additional momentum to consolidated top-line expansion."
+    "ko": "독립리서치 밸류파인더는 2026년 6월 23일 기준 위지트가 보유한 파워넷(37.7%)·티사이언티픽(30.77%)·한성크린텍(3.51%) 지분의 시가총액 기준 가치를 합산 약 582억원으로 추산하며, 이는 당시 위지트 시가총액(약 529억원)을 상회한다고 분석했다. 밸류파인더는 이를 근거로 위지트가 “디스플레이 장비 부품 기업이라는 기존 인식에서 벗어나 반도체 소부장 기업으로 재평가받을 시점에 진입했다”고 평가했다. 다만 이는 특정 시점의 지분가치 추정치로, 자회사 주가 변동에 따라 그 관계는 달라질 수 있다.",
+    "en": "As of June 23, 2026, independent research house Value Finder estimated the combined market value of Wizit's stakes in Powernet (37.7%), T Scientific (30.77%), and Hansung CleanTech (3.51%) at about KRW 58.2bn, which it said exceeded Wizit's own market capitalization at the time (about KRW 52.9bn). On that basis, Value Finder assessed that Wizit had reached a point where it should be reassessed as a semiconductor materials, parts, and equipment company rather than a legacy display parts maker. This figure, however, is a point-in-time estimate, and the relationship can shift as the subsidiaries' own share prices move."
    }
   },
   {
    "title": {
-    "ko": "방산·우주항공·유리기판 등 신사업 옵션가치",
-    "en": "Latent Option Value from Defense, Aerospace, and Glass Substrate Ventures"
+    "ko": "글로벌 고객 다변화 시도",
+    "en": "Attempts to Diversify the Global Customer Base"
    },
    "body": {
-    "ko": "2025년 중소기업기술혁신개발사업 선정으로 방위산업·우주항공 분야 핵심부품 공급 기회가 열리고 있으며, 국내 방산·우주 투자 확대 기조와 맞닿아 있다. 차세대 반도체 기판인 유리기판 소부장 시장 진출 선언도 중장기 포트폴리오 다각화 측면에서 주목할 만한 방향성이다. 기술장벽이 높은 분야에서 초기 포지셔닝을 확보했다는 점은 현재 재무적으로 가시화되지 않더라도 장기 성장 옵션으로서 잠재 가치를 보유하고 있다.",
-    "en": "The company's 2025 selection for a government SME technology innovation program opens concrete opportunities to supply critical parts for Korea's growing defense and aerospace sectors. Entry into next-generation glass substrate materials aligns with the industry's forward-looking direction and adds meaningful medium-to-long-term diversification potential. Early-stage positioning in high-barrier-to-entry segments carries latent option value as a long-term growth catalyst, even if not yet financially visible in near-term results."
+    "ko": "위지트는 TSMC와 샘플 5종 중 2종, 키옥시아와 샘플 2종에 대한 평가를 진행하고 있는 것으로 파악됐다. 과거 중국 YMTC에 납품한 이력도 있어, 신규 고객 확보를 위한 트랙레코드가 일부 존재한다. 밸류파인더는 이러한 논의가 진전될 경우 중장기 해외 매출 확대에 주목할 필요가 있다고 밝혔다. 다만 이는 아직 샘플 평가 단계로, 정식 공급계약 체결 여부와 시기는 확인되지 않았다.",
+    "en": "Wizit was reported to be undergoing sample evaluation with TSMC (2 of 5 samples) and Kioxia (2 samples). It also reportedly has a past supply track record with China's YMTC, giving it some history of winning new customers. Value Finder said this progress warrants attention for potential mid- to long-term overseas revenue expansion. That said, these relationships remain at the sample-evaluation stage, and the timing or conclusion of any formal supply contracts has not been confirmed."
    }
   }
  ],
  "bear": [
   {
    "title": {
-    "ko": "지배주주 귀속 이익 비중의 구조적 제한",
-    "en": "Structurally Limited Controlling-Shareholder Profit Attribution"
+    "ko": "지배주주 귀속이익 미미·변동성",
+    "en": "Small, Volatile Profit Attributable to Owners"
    },
    "body": {
-    "ko": "파워넷 지분율이 약 38.9%에 불과하여 연결 기준 총 당기순이익의 약 67%가 비지배주주에게 귀속되는 구조다. 2025년 총 당기순이익은 240억 원이었으나 지배주주 귀속 순이익은 78억 원에 그쳤고, 2026년 1분기에는 귀속 비중이 더욱 낮아졌다. 파워넷 추가 지분 취득 없이는 자회사 성장의 과실이 모회사 주주에게 충분히 귀속되지 않는다는 구조적 한계가 지속된다.",
-    "en": "With Wizit holding only ~38.9% of Powernet, approximately 67% of consolidated net profit is attributable to non-controlling interests. In 2025, total consolidated net profit was KRW 24.0 billion while controlling-shareholder net profit was only KRW 7.8 billion—a ratio that worsened further in 1Q 2026. Without additional Powernet share acquisitions, the structural gap between subsidiary profit generation and parent-shareholder returns will persist."
+    "ko": "2025년 말 연결 자본 중 비지배지분(2,614억원)이 지배주주지분(1,447억원)보다 커, 파워넷 실적 확대의 상당 부분이 비지배주주 몫으로 귀속되는 구조다. 2026년 2분기에는 영업이익률이 회복됐음에도 지배주주 순이익이 -6.6억원으로 적자 전환했다. 2023년에도 영업이익 흑자(36.5억원)를 내고도 지배주주 순손실(-240.6억원)을 기록한 바 있어, 연결 실적과 지배주주 손익 사이의 괴리가 반복적으로 나타나고 있다.",
+    "en": "At end-2025, non-controlling interests (KRW 261.4bn) within consolidated equity exceeded owners' equity (KRW 144.7bn), meaning a large portion of Powernet's expanded earnings accrues to non-controlling shareholders. In Q2 2026, profit attributable to owners turned negative at about -KRW 0.66bn even as the operating margin recovered. A similar disconnect occurred in 2023, when the company posted a positive operating profit (KRW 3.65bn) yet a net loss attributable to owners of KRW 24.06bn, illustrating a recurring gap between consolidated results and the owners' bottom line."
    }
   },
   {
    "title": {
-    "ko": "분기 이익 변동성 확대 및 수익성 하락 추세",
-    "en": "Widening Quarterly Earnings Volatility and Declining Profitability Trend"
+    "ko": "잇따른 자본구조 변경",
+    "en": "Repeated Capital Structure Changes"
    },
    "body": {
-    "ko": "분기별 OPM이 2025년 2분기 7.6%에서 2026년 1분기 3.5%로 꾸준히 하락하고 있으며, 영업이익은 2025년 2분기 95억 원에서 2026년 1분기 40억 원으로 절반 수준으로 줄었다. 반도체 부품 발주 계절성, SMPS 사업의 업황 변동, 원가 압력 등 복합 요인이 이익 변동폭을 확대시키고 있다. 이 같은 분기 이익 변동성은 실적 예측 가시성을 낮추고 안정적인 밸류에이션 형성을 제한하는 요인으로 작용한다.",
-    "en": "Quarterly OPM has declined steadily from 7.6% in 2Q 2025 to 3.5% in 1Q 2026, and operating profit nearly halved from KRW 9.5 billion (2Q 2025) to KRW 4.0 billion (1Q 2026). Multiple factors—seasonal fluctuations in semiconductor part orders, SMPS business cycles, and cost pressures—are amplifying earnings swings. This degree of quarterly volatility reduces earnings predictability and limits the stability of valuation formation."
+    "ko": "위지트는 2026년 3월 3대 1 무상감자로 자본금을 591억원에서 197억원으로 줄였으며, 이는 코스닥 동전주 관리종목 지정 요건(1,000원 미만 30거래일 지속)을 피하기 위한 조치였다. 이후 6월에는 최대주주 대상 제3자배정 유상증자를 실시해 지배력을 강화했다. 단기간에 감자와 증자가 연속으로 이뤄지면서 주식 수와 지배구조가 거듭 바뀌어, 주주 입장에서는 자본정책의 방향성을 지속적으로 확인해야 하는 부담이 남는다.",
+    "en": "In March 2026 Wizit carried out a 3-for-1 reverse stock split that cut capital stock from KRW 59.2bn to KRW 19.7bn, a move aimed at avoiding KOSDAQ's penny-stock administrative-issue designation trigger (share price below KRW 1,000 for 30 consecutive trading days). It then conducted a third-party rights offering to its controlling shareholder in June, strengthening that shareholder's control. With a reverse split and a rights offering occurring in quick succession, the share count and ownership structure have changed repeatedly, leaving shareholders needing to keep tracking the direction of the company's capital policy."
    }
   },
   {
    "title": {
-    "ko": "재무 레버리지 상승 및 추가 자본 소요 가능성",
-    "en": "Rising Financial Leverage and Potential Additional Capital Requirements"
+    "ko": "부채비율 상승과 결손금 부담",
+    "en": "Rising Debt Ratio and Accumulated Deficit"
    },
    "body": {
-    "ko": "파워넷 연결 편입 이후 부채비율이 2022년 15.4%에서 2024년 74.5%로 급등한 이후 2025년 67.4%로 소폭 개선에 그쳤다. 반도체 제조시설 증설, LFP 배터리 사업 확장, 유리기판·방산 신사업 투자 등 예정된 투자를 감안하면 레버리지가 추가 상승할 가능성을 배제하기 어렵다. 이번 유상증자(40억 원)는 자본 확충에 기여하나 증설 규모 대비 제한적이어서, 향후 추가 외부 자금 조달 여부와 조건이 주주가치에 영향을 줄 수 있다.",
-    "en": "The debt-to-equity ratio surged from 15.4% (2022) to 74.5% (2024) upon Powernet's consolidation, recovering only modestly to 67.4% in 2025. Planned investments in semiconductor facility expansion, LFP battery scale-up, and new ventures in glass substrates and defense leave open the possibility of further leverage increases. While the KRW 4 billion rights offering provides some capital relief, it is limited relative to the overall investment pipeline, and future external financing terms could affect shareholder value."
+    "ko": "부채비율은 2022년 15.4%에서 파워넷 편입 이후 2024년 74.5%까지 뛰었고, 2025년에는 67.4%로 소폭 낮아졌으나 여전히 편입 이전보다 높은 수준이다. 거래소 공시에 따르면 2025년 말 결손금은 약 2,680억원 수준으로, 감자 이후에도 영업손실이 지속될 경우 자본잠식에 이를 수 있다는 점이 명시됐다. 이는 향후 실적 흐름을 지켜봐야 하는 재무적 부담 요인이다.",
+    "en": "The debt ratio jumped from 15.4% in 2022 to 74.5% in 2024 after Powernet's consolidation, before easing slightly to 67.4% in 2025—still well above pre-consolidation levels. According to a KRX disclosure, accumulated deficit stood at about KRW 268.0bn at end-2025, and the filing explicitly noted that continued operating losses after the capital reduction could lead to capital impairment. This remains a financial factor that will need to be monitored against future earnings trends."
    }
   }
  ],
  "risks": [
   {
    "cat": {
-    "ko": "반도체 업황 사이클 리스크",
-    "en": "Semiconductor Industry Cycle Risk"
+    "ko": "지배구조·계열사 리스크",
+    "en": "Governance and Affiliate Risk"
    },
    "body": {
-    "ko": "전방 반도체 제조사의 설비투자 축소 또는 가동률 하락이 발생하면 소모성 부품 수요가 빠르게 감소할 수 있다. AI 수요 둔화, 글로벌 메모리 공급 과잉 재연, 거시경기 침체 등이 트리거로 작용할 수 있으며, 과거 반도체 다운사이클 구간에서의 실적 정체가 이 리스크를 실증한 바 있다. 연결 실적 전반이 반도체 업황과 데이터센터 투자 사이클에 동시에 노출되어 있어 집중 리스크도 존재한다.",
-    "en": "A reduction in chipmaker capex or utilization rates could rapidly depress consumable-part demand. Triggers include an AI demand slowdown, recurrence of global memory oversupply, or a macroeconomic downturn; historical earnings stagnation during past semiconductor downturns underscores this risk. With both the semiconductor parts and SMPS businesses sensitive to overall tech and data-center investment cycles, there is meaningful concentration risk in a sector downturn."
+    "ko": "위지트의 최대주주 제이에스아이홀딩스는 김상우 대표가 지분 100%를 보유한 개인 지배 회사이며, 김 대표는 종속회사 파워넷의 대표이사도 겸임하는 것으로 확인된다. 최대주주가 여러 계열사의 경영을 동시에 맡는 구조는 계열사 간 거래나 이해관계 조정 과정에서 소수주주와의 이해상충 가능성을 완전히 배제하기 어렵게 한다. 최근 무상감자·유상증자 과정에서도 최대주주 지분율이 확대된 점은 지배구조 변화를 지속적으로 살펴봐야 하는 이유다.",
+    "en": "Wizit's controlling shareholder, JS I Holdings, is wholly owned by an individual, Kim Sang-woo, who is also confirmed to serve as CEO of consolidated subsidiary Powernet. A structure in which the controlling shareholder simultaneously manages multiple group affiliates makes it difficult to fully rule out potential conflicts of interest with minority shareholders in intra-group transactions or decision-making. The fact that the controlling shareholder's stake rose further through the recent reverse split and rights offering is a reason to keep monitoring governance developments."
    }
   },
   {
    "cat": {
-    "ko": "비지배주주 지분 구조 및 파워넷 사업 리스크",
-    "en": "Non-Controlling Interest Structure and Powernet Business Risk"
+    "ko": "재무건전성 리스크",
+    "en": "Financial Soundness Risk"
    },
    "body": {
-    "ko": "파워넷 지분율이 약 38.9%로, 연결 실적의 대부분을 차지하면서도 이익의 상당 부분이 외부 주주에게 귀속되는 구조다. LFP 배터리 사업이 글로벌 가격 경쟁 심화로 손실을 유발하거나 파워넷의 주요 고객사 매출이 감소할 경우 위지트 연결 실적에도 직접적인 타격을 준다. 파워넷이 별도로 코스닥에 상장된 기업이라는 점에서 파워넷 주주와 위지트 주주 간의 이해관계 충돌 가능성도 지속적으로 모니터링이 필요한 사항이다.",
-    "en": "Wizit's ~38.9% stake in Powernet means that while Powernet drives the majority of group revenues, a large portion of subsidiary profits flows to outside shareholders. If Powernet's LFP battery foray incurs losses due to global pricing competition, or if Powernet's core customer revenue declines, Wizit's consolidated results would be directly impacted. As Powernet is separately listed on KOSDAQ, potential conflicts of interest between Powernet's and Wizit's shareholders merit ongoing monitoring."
+    "ko": "이번 무상감자는 코스닥 동전주 관리종목 지정 요건을 피하기 위한 목적이 있었던 것으로 파악된다. 거래소 공시는 2025년 말 결손금이 약 2,680억원 수준이며, 감자 이후에도 영업손실이 이어질 경우 자본잠식에 이를 수 있다고 명시했다. 부채비율 역시 파워넷 편입 이후 구조적으로 높아진 상태로, 향후 이익 안정성이 재무건전성을 좌우할 변수다.",
+    "en": "The reverse stock split appears to have been partly intended to avoid triggering KOSDAQ's penny-stock administrative-issue designation. A KRX filing stated that accumulated deficit stood at about KRW 268.0bn at end-2025 and noted that continued operating losses after the reduction could result in capital impairment. The debt ratio has also risen structurally since Powernet's consolidation, making future earnings stability a key variable for financial soundness."
    }
   },
   {
    "cat": {
-    "ko": "신주 발행·지분 희석 및 지배구조 리스크",
-    "en": "Share Issuance Dilution and Governance Risk"
+    "ko": "고객·업황 집중 리스크",
+    "en": "Customer and End-Market Concentration Risk"
    },
    "body": {
-    "ko": "2026년 6월 30일 예정된 308만여 주의 신주 상장으로 유통주식이 증가하며 주당 이익·순자산 지표의 희석이 발생한다. 신주 전량에 대한 1년간 보호예수 해제 이후 대량 매도 물량이 출회될 경우 주가 수급 측면에서 부담이 될 수 있다. 방산·유리기판·LFP 등 신사업 투자가 본격화될 경우 추가 외부 자금 조달이 필요해질 수 있으며, 이는 또 다른 희석 가능성을 내포한다.",
-    "en": "The listing of approximately 3.09 million new shares on June 30, 2026 will dilute per-share earnings and book value metrics. Lock-up expiration one year after issuance introduces potential overhang risk as the largest shareholder's restricted shares become freely tradable. Should additional financing be required for defense, glass substrate, or LFP battery investment programs, further dilution risk cannot be ruled out."
+    "ko": "위지트의 매출은 삼성전자, SK하이닉스, 삼성디스플레이, LG디스플레이 등 소수의 대형 고객사에 집중돼 있어 이들의 설비투자 계획 변화에 영향을 크게 받는다. 2026년 1분기 기준으로도 디스플레이 장비 부품이 매출의 63.8%를 차지해, 반도체로의 전환이 아직 완료되지 않았다. TSMC·키옥시아와의 협력은 샘플 평가 단계에 머물러 있어, 실제 공급계약으로 이어지지 않을 가능성도 배제할 수 없다.",
+    "en": "Wizit's revenue is concentrated among a small number of large customers—Samsung Electronics, SK hynix, Samsung Display, and LG Display—making it highly sensitive to changes in their capital-spending plans. As of Q1 2026, display equipment parts still accounted for 63.8% of revenue, meaning the shift toward semiconductor parts is not yet complete. Cooperation with TSMC and Kioxia remains at the sample-evaluation stage, and the possibility that it may not translate into actual supply contracts cannot be ruled out."
    }
   }
  ],
  "checkpoints": [
   {
    "when": {
-    "ko": "2026년 6월 30일",
-    "en": "June 30, 2026"
+    "ko": "2026년 11월 중순",
+    "en": "Mid-November 2026"
    },
    "what": {
-    "ko": "제3자 배정 유상증자 신주 308만여 주 상장 예정일. 실제 상장 완료 여부와 함께 증자 대금의 반도체 설비투자 세부 집행 계획 관련 추가 공시 여부를 확인한다.",
-    "en": "Scheduled listing of ~3.09 million new shares from the third-party rights offering; confirm actual listing completion and monitor any supplementary disclosure on detailed semiconductor facility investment plans and capex timeline."
+    "ko": "2026년 3분기 분기보고서 공시 확인 — 2분기에 회복된 영업이익률 흐름이 이어지는지, 지배주주 순이익이 흑자로 복귀하는지를 살펴볼 시점이다.",
+    "en": "Check the Q3 2026 quarterly report disclosure — a key point to see whether the operating margin recovery seen in Q2 continues and whether profit attributable to owners returns to positive territory."
    }
   },
   {
    "when": {
-    "ko": "2026년 7월 말~8월 초",
-    "en": "Late July–Early August 2026"
+    "ko": "2026년 4분기 중",
+    "en": "Q4 2026"
    },
    "what": {
-    "ko": "2026년 2분기 연결 실적 발표 예정. 별도 반도체 부문 매출 115% 성장 모멘텀이 연결 기준 영업이익 및 지배주주 귀속 순이익 개선으로 이어지는지 여부가 핵심 확인 포인트다.",
-    "en": "Expected 2Q 2026 consolidated earnings release; the key check is whether the 115% YoY standalone semiconductor segment momentum translates into improved consolidated operating profit and controlling-shareholder net income."
+    "ko": "TSMC(샘플 5종 중 2종)·키옥시아(샘플 2종) 평가가 정식 공급계약으로 이어지는지 확인이 필요하다.",
+    "en": "Watch for whether the sample evaluations with TSMC (2 of 5 samples) and Kioxia (2 samples) progress into formal supply agreements."
    }
   },
   {
    "when": {
-    "ko": "2026년 하반기 수시 공시",
-    "en": "Throughout 2H 2026 (event-driven)"
+    "ko": "2026년 9월~12월",
+    "en": "September-December 2026"
    },
    "what": {
-    "ko": "방산·우주항공 부품 및 HBM 핵심부품 관련 수주 또는 공급계약 공시 여부를 모니터링. 신사업 매출 기여 가시성과 규모를 판단하는 첫 번째 이정표가 될 것이다.",
-    "en": "Watch for order or supply contract disclosures related to defense, aerospace, and HBM core parts; such announcements would serve as the first tangible milestones for assessing new-business revenue visibility and scale."
+    "ko": "3월 무상감자 이후 코스닥 동전주 관리종목 지정 요건(1,000원 미만 30거래일 지속) 재충족 여부를 지속적으로 확인할 필요가 있다.",
+    "en": "Continue to monitor whether the stock avoids re-triggering KOSDAQ's penny-stock administrative-issue rule (share price below KRW 1,000 for 30 consecutive trading days) following the March reverse split."
    }
   },
   {
    "when": {
-    "ko": "2026년 분기별 지속 모니터링",
-    "en": "Quarterly (ongoing)"
+    "ko": "2027년 3월 전후",
+    "en": "Around March 2027"
    },
    "what": {
-    "ko": "삼성전자·SK하이닉스의 반도체 설비투자(Capex) 가이던스 및 가동률 동향. 위지트 소모성 부품 수요와 직결되는 핵심 선행 지표로, 분기 영업이익 방향성을 결정한다.",
-    "en": "Capex guidance and utilization rate trends from Samsung Electronics and SK Hynix; these are key leading indicators directly tied to Wizit's consumable-part order flow and quarterly operating profit trajectory."
-   }
-  },
-  {
-   "when": {
-    "ko": "2026년 하반기~2027년 초",
-    "en": "2H 2026–Early 2027"
-   },
-   "what": {
-    "ko": "파워넷의 LFP 배터리 사업 매출 및 수익성 공시 추이. 신사업 진출의 성과 또는 실패 여부가 연결 실적 변동성과 레버리지 방향성에 미치는 영향을 판단하는 데 핵심 변수다.",
-    "en": "Track Powernet's LFP battery business revenue and profitability disclosures; outcomes in this new venture will be material for assessing its impact on consolidated earnings volatility and the direction of group-level financial leverage."
+    "ko": "2026년 사업연도 잠정 실적 공시를 통해 반도체 부품 매출 비중 확대가 지배주주 귀속 이익 개선으로 이어졌는지 확인할 시점이다.",
+    "en": "The FY2026 preliminary earnings disclosure will be the point to check whether the growing semiconductor-parts revenue mix translated into improved profit attributable to owners."
    }
   }
  ],
  "verdict": {
   "body": {
-   "ko": "위지트는 반도체·디스플레이 소모성 부품 국산화라는 고유한 기술 기반을 보유하면서, 파워넷 연결 편입을 통해 연 매출 5,000억 원대 복합 그룹으로 성장한 기업이다. 2025년 영업이익이 전년 대비 87% 증가하고 현금창출력이 안정적으로 유지된 점은 주목할 만한 성과이며, 2026년 1분기 별도 기준 반도체 사업의 빠른 회복세도 긍정적인 방향성이다. 그러나 파워넷 지분율 약 38.9%에서 비롯되는 지배주주 귀속 이익의 낮은 비중, 분기 이익 변동성 확대, 레버리지 상승이라는 세 가지 구조적 과제가 동시에 해소되어야 그룹 성장의 과실이 모회사 주주에게 온전히 귀속될 수 있다. 2026년 6월 신주 상장으로 생산시설 투자 재원을 확보한 것은 중장기 성장을 위한 포석이나, 구체적인 수주 및 양산 일정이 공시를 통해 뒷받침될 때 비로소 실질적 가치 창출 여부를 판단할 수 있다. 방산·우주항공·유리기판 등 신사업 옵션의 현실화 여부와 2분기 이후 연결 실적 개선 여부가 향후 6~12개월간 핵심 관전 포인트가 될 것이다.",
-   "en": "Wizit is a hybrid enterprise with proprietary technology in domestic semiconductor and display consumable-part manufacturing, which has grown into a KRW 480+ billion group through the full consolidation of Powernet. The 87% YoY surge in operating profit in 2025 and consistently solid operating cash flow are meaningful achievements, and the rapid standalone semiconductor segment recovery in 1Q 2026 points in an encouraging direction. That said, three structural challenges must be resolved concurrently for group growth to fully flow through to controlling shareholders: the low profit-attribution ratio from the ~38.9% Powernet stake, elevated quarterly earnings volatility, and the leverage increase brought on by the consolidation. The June 2026 rights offering secures funding for capacity investment—a constructive strategic step—but the actual value creation can only be assessed once concrete order flow and production timelines are supported by public disclosures. The realization of new-business options in defense, aerospace, and glass substrates, alongside consolidated earnings improvement from 2Q 2026 onward, will be the critical watchpoints over the coming 6–12 months."
+   "ko": "위지트는 전통적인 디스플레이 장비 부품 회사에서 반도체 소부장 기업으로 사업 구조를 넓혀가는 전환기에 있다. 2025년 연결 매출과 영업이익은 파워넷 편입 효과로 크게 늘었지만, 지배주주 귀속 순이익은 절대 규모가 작고 최근 분기로 올수록 변동성이 커지는 모습을 보였다. 2026년 2분기에는 영업이익률이 회복됐음에도 지배주주 순이익이 적자로 전환돼, 연결 실적의 외형과 지배주주 몫 사이의 괴리가 여전한 과제로 남아 있다. 회사는 3대 1 무상감자와 제3자배정 유상증자로 자본구조를 재편했고, 이 재원을 생산능력 확장에 투입할 계획이라고 밝혔다. TSMC·키옥시아 샘플 평가, 자회사 지분가치 등 독립리서치가 제기한 투자 포인트들은 아직 계약 체결이나 가치 실현으로 이어졌는지 추가 확인이 필요한 단계다. 투자자 입장에서는 반도체 부문 매출 비중 확대와 마진 개선의 지속성, 그리고 지배주주 귀속 이익의 회복 속도를 함께 지켜볼 필요가 있다.",
+   "en": "Wizit is in a transitional phase, expanding from a traditional display equipment parts maker into a broader semiconductor materials, parts, and equipment company. Consolidated revenue and operating profit grew sharply in 2025 on the effect of Powernet's consolidation, but profit attributable to owners remains small in absolute terms and has grown more volatile in recent quarters. In Q2 2026, profit attributable to owners turned negative even as the operating margin recovered, leaving the gap between headline consolidated results and the owners' share of profit as an ongoing issue. The company restructured its capital base through a 3-for-1 reverse stock split and a third-party rights offering, and said it plans to use the proceeds to expand production capacity. Investment points raised by independent research—such as the TSMC and Kioxia sample evaluations and subsidiary stake values—still require further confirmation as to whether they translate into signed contracts or realized value. Investors should watch both the durability of the shift toward semiconductor-parts revenue and margin improvement, and the pace of recovery in profit attributable to owners."
   }
  },
  "sources": [
-  "https://news.nate.com/view/20260316n36107",
   "https://www.k5.co.kr/stock/036090",
+  "https://w4.kirs.or.kr/download/research/20250926_%EC%82%B0%EC%97%85%EC%9E%AC_%EC%9C%84%EC%A7%80%ED%8A%B8(036090)_%EB%94%94%EC%8A%A4%ED%94%8C%EB%A0%88%EC%9D%B4%C2%B7%EB%B0%98%EB%8F%84%EC%B2%B4%20%EC%9E%A5%EB%B9%84%20%ED%95%B5%EC%8B%AC%20%EC%86%8C%EB%AA%A8%EC%84%B1%20%EB%B6%80%ED%92%88%20%EC%A0%95%EB%B0%80%EA%B0%80%EA%B3%B5%20%EB%B0%8F%20%ED%91%9C%EB%A9%B4%EC%B2%98%EB%A6%AC%20%EC%A0%84%EB%AC%B8%EA%B8%B0%EC%97%85_NICE%ED%8F%89%EA%B0%80%EC%A0%95%EB%B3%B4.pdf",
+  "https://m.thinkpool.com/compDiscuss/cont/1027003",
+  "https://kind.krx.co.kr/common/disclsviewer.do?method=searchInitInfo&acptNo=20260326000001&docno=",
+  "https://news.nate.com/view/20260316n36107",
+  "http://www.thedailymoney.com/news/articleView.html?idxno=1142093",
+  "https://kind.krx.co.kr/common/disclsviewer.do?method=search&acptno=20250321002333&docno=&viewerhost=",
+  "https://view.asiae.co.kr/article/2026062307485050843",
   "https://comp.fnguide.com/SVO2/ASP/SVD_Main.asp?gicode=A036090",
   "https://comp.wisereport.co.kr/company/c1010001.aspx?cn=&cmp_cd=036090",
+  "https://m.thinkpool.com/item/036090",
+  "https://www.google.com/finance/quote/036090:KOSDAQ?hl=en",
+  "https://www.investing.com/equities/wizit-co-ltd-earnings",
+  "https://www.investing.com/equities/wizit-co-ltd",
   "https://news.infostock.co.kr/a",
-  "https://w4.kirs.or.kr/download/research/20250926_%EC%82%B0%EC%97%85%EC%9E%AC_%EC%9C%84%EC%A7%80%ED%8A%B8(036090)_%EB%94%94%EC%8A%A4%ED%94%8C%EB%A0%88%EC%9D%B4%C2%B7%EB%B0%98%EB%8F%84%EC%B2%B4%20%EC%9E%A5%EB%B9%84%20%ED%95%B5%EC%8B%AC%20%EC%86%8C%EB%AA%A8%EC%84%B1%20%EB%B6%80%ED%92%88%20%EC%A0%95%EB%B0%80%EA%B0%80%EA%B3%B5%20%EB%B0%8F%20%ED%91%9C%EB%A9%B4%EC%B2%98%EB%A6%AC%20%EC%A0%84%EB%AC%B8%EA%B8%B0%EC%97%85_NICE%ED%8F%89%EA%B0%80%EC%A0%95%EB%B3%B4.pdf",
-  "https://comp.fnguide.com/SVO2/asp/SVD_Invest.asp?pGB=1&gicode=A036090&cID=&MenuYn=Y&ReportGB=B&NewMenuID=105&stkGb=701",
-  "https://ssl.pstatic.net/imgstock/upload/research/company/1641174592739.pdf",
-  "https://alphasquare.co.kr/home/stock-summary?code=036090",
-  "https://www.kirs.or.kr/misc/info_search_pop.html?code=",
-  "https://core.asiae.co.kr/article/2023032409160518295",
-  "https://v.daum.net/v/9Gzd7F4qhT?f=p",
-  "https://www.fnnews.com/news/202303241509156458",
-  "https://www.etoday.co.kr/news/view/2565993",
-  "https://www.etoday.co.kr/news/view/2233760",
-  "https://comp.wisereport.co.kr/company/c1020001.aspx?cmp_cd=036090&cn=",
-  "https://mfinance.finup.co.kr/Stock/036090",
-  "https://www.asiae.co.kr/article/2026060408282999684"
+  "https://www.datatooza.com/article/20260313173551444052ef35695b_80",
+  "https://www.thebell.co.kr/front/newsview.asp?key=202603161417394480104237",
+  "https://www.youtube.com/watch?v=tZUs0bw6UbM"
  ],
  "v": 2,
- "model": "claude-sonnet-4-6",
+ "model": "claude-sonnet-5",
  "ticker": "036090",
  "name": "위지트",
  "name_en": "WIZIT Co., Ltd.",
@@ -233,9 +223,9 @@
   "기계·장비"
  ],
  "market": "코스닥",
- "reportDate": "2026-06-19",
- "reportTs": "2026-06-19 03:56",
- "dataDate": "20260821",
+ "reportDate": "2026-09-05",
+ "reportTs": "2026-09-05 08:21",
+ "dataDate": "20260904",
  "quant": {
   "asOf": "2026-08-23",
   "fs_basis": "연결(CFS) · DART 공시 확정치 · 지배주주 기준 순이익",
@@ -338,14 +328,14 @@
    }
   ],
   "valuation": {
-   "price": 1399,
-   "mcap": 0.0595,
+   "price": 1361,
+   "mcap": 0.0579,
    "shares": 42550514,
    "total_shares": 118392284,
    "wavg_shares": 40140154,
-   "per": 14.726,
+   "per": 14.326,
    "eps": 95,
-   "pbr": 0.3724,
+   "pbr": 0.3623,
    "bps": 3757,
    "roe_ttm": 2.7,
    "ttm_window": "2025Q3~2026Q2",

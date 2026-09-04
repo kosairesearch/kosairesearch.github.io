@@ -1,230 +1,220 @@
 {
  "title": {
-  "ko": "신사업 비용 직격·FOUP 개발이 반전의 열쇠",
-  "en": "New-Business Costs Hit Hard; Front-End FOUP Is the Pivot"
+  "ko": "웨이퍼캐리어 유일기업, 새 경영진 체제로 재편",
+  "en": "Sole Wafer-Carrier Maker Resets Under New Board"
  },
  "lead": {
-  "ko": "FOSB 단가 평준화와 FA 신사업 초기 비용 급증이 겹쳐 FY2025 영업손실률 –20.1%를 기록했으나, FA 추가 영업 중단·HBM 전용 캐리어 공급 개시·전공정 FOUP 퀄테스트 진입이라는 세 가지 전환점이 동시에 진행 중이다.",
-  "en": "The confluence of FOSB price normalization and surging FA business startup costs drove FY2025 operating margin to -20.1%, but three simultaneous turning points—FA activity cessation, HBM carrier supply commencement, and front-end FOUP qualification entry—define the path to potential recovery."
+  "ko": "국내 유일의 반도체 웨이퍼캐리어(FOSB) 생산업체 3S는 2025년 최대주주 교체와 경영권 분쟁을 거쳐 새 이사회 체제로 전환됐으며, 실적은 대규모 순손실 이후 2026년 1분기 영업이익 흑자 전환 조짐을 보이고 있다.",
+  "en": "3S, the sole domestic producer of semiconductor wafer carriers (FOSB), transitioned to a new board after a 2025 controlling-shareholder change and governance dispute, and its operating results show early signs of a return to operating profit in the first quarter of fiscal 2026 following a large net loss."
  },
  "keypoints": [
   {
-   "ko": "FY2025(3월 결산) 연결 매출 290억 원(전년 대비 –33%)·영업손실 –58억 원(OPM –20.1%)·지배주주 순손실 –101억 원 — 3개 분기 연속 영업적자",
-   "en": "FY2025 (March FY) consolidated revenue KRW 29.0 bn (-33% YoY), operating loss KRW -5.8 bn (OPM -20.1%), attributable net loss KRW -10.1 bn — operating losses in three consecutive quarters"
+   "ko": "2025년 최대주주가 NAMUGA(SUZHOU)에서 사모펀드 기반 한국웨이퍼홀딩스로 변경되며 경영권 분쟁 발생, 2025년 7월 주총에서 신규 이사회로 정리됨",
+   "en": "The controlling shareholder changed from NAMUGA(Suzhou) to private-equity-backed Korea Wafer Holdings in 2025, triggering a governance dispute that was settled with a new board elected at the July 2025 shareholder meeting"
   },
   {
-   "ko": "FOSB 양산 25년 이상 경과로 단가 평준화·재사용 시장 확대가 웨이퍼캐리어 부문의 구조적 수익성 압박 요인",
-   "en": "FOSB commoditization after 25+ years of production — unit-price normalization and expanding reuse market create structural margin headwinds for the wafer carrier segment"
+   "ko": "FY2025(2024.4~2025.3) 매출 290억원, 영업손실 58억원, 지배주주 순손실 101억원으로 전년 흑자에서 큰 폭 적자전환",
+   "en": "FY2025 (April 2024-March 2025) revenue was KRW 29.0 billion with an operating loss of KRW 5.8 billion and an owner net loss of KRW 10.1 billion, a sharp swing from the prior year's profit"
   },
   {
-   "ko": "2026년 6월 기준 전공정 FOUP 금형 개발 완료·퀄테스트 준비 단계 진입 — 국내 본격 양산 업체 부재 시장으로 승인 시 고마진 기대",
-   "en": "As of June 2026, front-end process FOUP mold development completed and qualification test preparation entered — no established domestic mass producer means high-margin upside upon approval"
+   "ko": "2026년 1분기 매출 55.7억원, 영업이익 5.7백만원으로 미소하게 흑자 전환했으나 지배주주 순손실은 4.8억원으로 지속",
+   "en": "In the first quarter labeled 2026Q1, revenue was KRW 5.57 billion and operating profit turned marginally positive at KRW 5.7 million, though the owner net loss of KRW 0.48 billion continued"
   },
   {
-   "ko": "글로벌 반도체 제조사에 HBM 생산라인 전용 웨이퍼 캐리어 공급 개시 — 세계 최초 칩렛 캐리어 개발사 지위도 병행 보유",
-   "en": "HBM production-line dedicated carrier supply initiated with a global chipmaker — the company also holds the distinction of developing the world's first chiplet carrier"
+   "ko": "웨이퍼캐리어 국내 유일 생산 지위에 더해 세계 최초 칩렛캐리어 개발, 싱가포르 실리콘박스사 공급계약 등 신기술 다각화 진행 중",
+   "en": "In addition to being the sole domestic wafer-carrier producer, the company has diversified into new technology including the world's first chiplet carrier and a supply agreement with Singapore's Silicon Box"
   },
   {
-   "ko": "FA 물류자동화 추가 영업활동 중단으로 고정비 부담 경감 예상 — 2026Q1(4~6월) 실적이 비용 해소 여부를 확인하는 첫 시금석",
-   "en": "Halted FA logistics automation additional activities expected to reduce the fixed-cost burden; FY2026 Q1 (April–June 2025) earnings will be the first tangible test of cost normalization"
+   "ko": "이보다 최신 분기(2026Q1 이후) 실적은 아직 공시 확정 전이므로 다음 분기·반기 보고서 공시 시점 확인이 필요",
+   "en": "Results for quarters more recent than 2026Q1 have not yet been confirmed by disclosure, so the timing of the next quarterly or half-year report should be checked"
   }
  ],
  "business": {
-  "ko": "3S(삼에스코리아)는 1991년 설립·2002년 코스닥 상장의 전기장비·정밀기기 전문기업으로, 크게 ①반도체 웨이퍼캐리어 사업과 ②환경시험장치 사업 두 축으로 구성된다. 웨이퍼캐리어 사업에서는 FOSB(Front-Opening Shipping Box)와 FOUP(Front-Opening Unified Pod) 등을 국내 유일하게 생산하며, 삼성전자·SK하이닉스 등 주요 반도체 제조사에 납품한다. 환경시험장치 사업은 칼로리메타·환경제어시스템·자동차 시험설비를 제조해 삼성전자·LG전자·한온시스템·국립연구소·대학 등 국내외 고객에 공급하며, 중국 시장 대응을 위해 종속회사 상해삼에스공조기술유한공사를 운영하고 있다. 2024년에는 경기도 화성에 제조사업장을 마련하고 FA(공장자동화) 물류설비 사업에 신규 진출했으나, 2026년 6월 기준 추가 영업활동이 중단된 상태이다. 세계 최초로 칩렛 캐리어를 개발해 싱가포르 실리콘박스 등 글로벌 칩렛 패키징 업체와 공급 계약을 체결한 이력이 있고, HBM 생산라인 전용 웨이퍼 캐리어 공급도 개시했다. 중국에서는 PLP-FOUP 관련 특허 등록을 2024년 11월 완료해 현지 첨단 패키징 업체로부터 공급 문의가 늘고 있다. 이차전지 시험 대행·무냉매 항온항습기 개발 등 신사업도 병행 추진 중이며, 전공정 FOUP 개발로 고부가 시장 진입을 준비하고 있다.",
-  "en": "3S (Samess Korea) was founded in 1991 and listed on KOSDAQ in 2002, operating across two primary segments: ① semiconductor wafer carriers and ② environmental test equipment. In the wafer carrier segment, 3S is Korea's only domestic mass producer of FOSB and FOUP products, supplying Samsung Electronics, SK Hynix, and other major chipmakers. The environmental test equipment segment manufactures calorimeters, environment control systems, and automotive test systems for Samsung Electronics, LG Electronics, Hanon Systems, universities, and national research institutes; a subsidiary, Shanghai Samess HVAC Technology, serves the Chinese market. In 2024 the company established a Hwaseong, Gyeonggi-do manufacturing site to launch an FA (factory automation) logistics equipment business, though additional sales activities in that segment were halted as of June 2026. The company developed the world's first chiplet carrier and executed a supply agreement with Singapore-based Silicon Box, and has commenced supply of HBM production-line dedicated carriers to a global chipmaker. A PLP-FOUP patent registered in China in November 2024 is generating growing inquiries from domestic Chinese semiconductor firms. Secondary-battery test services and refrigerant-free constant-temperature humidity controllers are additional emerging initiatives, alongside ongoing front-end FOUP development targeting the high-margin front-end process market."
+  "ko": "3S는 1991년 설립돼 2002년 코스닥에 상장한 반도체 웨이퍼캐리어 및 환경시험장치 전문 제조업체다. 반도체 웨이퍼 이송박스와 환경제어시스템, 자동차 분야 및 배터리 시험설비 등을 생산하고 삼성전자, LG전자 등 주요 고객사에 납품한다. 웨이퍼캐리어박스(FOSB)는 세계적으로 4개사만 생산기술을 보유하고 있으며, 3S가 국내 유일의 생산·납품 업체다. 환경시험장치 사업에서는 칼로리메타와 환경구현장치 등을 생산하며 삼성전자, LG전자, 한온시스템 등 국내외 고객사에 공급한다. 최근에는 세계 최초로 칩렛 캐리어를 개발했고, 싱가포르 반도체 칩렛 패키징 전문기업 실리콘박스사와 칩렛 공정용 캐리어 공급 계약을 체결했다. HBM 등 특수 제품용 FOUP와 대형 패널레벨패키지(PLP), 유리기판(GP) FOUP 분야에서도 대형 고객사들과 개발 협의를 진행하고 있다고 회사 측은 밝혔다. 유상증자·전환사채로 조달한 자금을 바탕으로 공장자동화(FA)·물류자동화 신사업에도 진출했으나, 최근에는 관련 추가 영업활동을 중단하며 일부 적자 요인을 해소하는 국면이다. 지배구조 측면에서는 2025년 4월 최대주주가 기존 NAMUGA(SUZHOU) TECHNOLOGIES에서 사모펀드(PEF) 기반 투자목적회사인 한국웨이퍼홀딩스 유한회사로 변경됐고, 경영권 참여를 목적으로 지분 12.0%를 확보한 이후 경영권 분쟁을 거쳐 2025년 7월 주총에서 삼성전자 반도체 부문 출신 인사들을 포함한 새 이사회로 정리됐다.",
+  "en": "3S was founded in 1991 and listed on KOSDAQ in 2002 as a specialized manufacturer of semiconductor wafer carriers and environmental test equipment. The company produces wafer transport boxes and environmental control systems as well as automotive and battery test equipment, supplying major customers such as Samsung Electronics and LG Electronics. Only four companies worldwide possess wafer-carrier-box (FOSB) production technology, and 3S is the sole domestic producer and supplier. In its environmental test equipment business, the company makes calorimeters and environmental simulation chambers supplied to domestic and overseas customers including Samsung Electronics, LG Electronics, and Hanon Systems. More recently, the company developed what is described as the world's first chiplet carrier and signed a supply agreement for chiplet-process carriers with Singapore-based chiplet packaging specialist Silicon Box. Company officials have said development discussions are underway with large customers for special-purpose FOUP for products such as HBM, along with large panel-level-package (PLP) and glass-panel (GP) FOUP formats. Using funds raised through rights offerings and convertible bonds, the company also entered a factory-automation and logistics-automation business, though it has recently halted additional sales activity in that area, resolving part of the related losses. On the governance side, the controlling shareholder changed in April 2025 from NAMUGA(Suzhou) Technologies to private-equity-backed investment vehicle Korea Wafer Holdings, which secured a 12.0% stake for the purpose of management participation; the resulting dispute was resolved with a new board, including individuals with Samsung Electronics semiconductor backgrounds, elected at the July 2025 shareholder meeting."
  },
  "earnings": {
-  "ko": "FY2022~FY2024(3월 결산 기준) 기간 매출은 271억 → 419억 → 436억 원으로 성장했고, 영업이익률은 5.4%→5.2%→2.7%로 완만히 하락했지만 흑자를 유지했다. FY2025에는 매출이 290억 원으로 전년 대비 약 33% 급감하고 영업손실 –58억 원(OPM –20.1%), 지배주주 기준 순손실 –101억 원을 기록하며 수익성이 크게 훼손됐다. 분기별로 보면 FY2025 1분기(2024년 4~6월)는 매출 99억 원·영업이익 +2.5억 원으로 출발했으나, 2분기(7~9월)에 매출 60억 원·영업손실 –27억 원으로 급격히 악화됐다. 3분기(10~12월)와 4분기(2025년 1~3월)에도 각각 영업손실 –11억 원, –23억 원이 이어졌고, 4분기 지배주주 순손실은 –68억 원으로 연간 전체 손실의 상당 부분이 이 분기에 집중됐다. 이는 FA사업 관련 자산 감액·비영업 손실 등 일회성 요인이 반영된 것으로 추정된다. 영업현금흐름(CFO)도 FY2024 +10억 원에서 FY2025 –44억 원으로 전환됐으며, 부채비율은 FY2024 31.7%에서 FY2025 51.0%로 상승했다. 유상증자(38억 원)·전환사채(50억 원) 발행을 통한 자본 조달로 자기자본 급감을 일부 방어했으나, 기존 주주에게는 희석 부담을 안겼다.",
-  "en": "Over FY2022–FY2024 (March fiscal year), revenue grew from KRW 27.1 bn to KRW 41.9 bn and then KRW 43.6 bn; operating margins slipped gradually from 5.4% to 5.2% to 2.7% but remained in the black. FY2025 delivered a sharp reversal: revenue fell roughly 33% to KRW 29.0 bn, operating loss widened to KRW -5.8 bn (OPM -20.1%), and net loss attributable to controlling shareholders reached KRW -10.1 bn. On a quarterly breakdown, FY2025 Q1 (April–June 2024) posted KRW 9.9 bn in revenue and a slim operating profit of KRW +0.25 bn, but Q2 (July–September 2024) swung to a KRW 5.95 bn top line with a KRW -2.7 bn operating loss, and Q3 and Q4 sustained losses of KRW -1.1 bn and KRW -2.3 bn respectively. Q4 alone registered an attributable net loss of KRW -6.75 bn—roughly two-thirds of the full-year figure—suggesting a concentration of one-time charges such as FA-related asset write-downs and non-operating items. CFO flipped from +KRW 1.0 bn in FY2024 to -KRW 4.4 bn in FY2025, and the debt ratio climbed from 31.7% to 51.0%. Capital raised through a rights offering and convertible bond issuance partially cushioned equity erosion but introduced dilution for existing shareholders."
+  "ko": "3S의 연간 실적은 2022년 매출 271억원, 영업이익 15억원에서 2023년 매출 419억원(전년 대비 큰 폭 증가), 영업이익 22억원으로 개선됐고 2024년에도 매출 436억원, 영업이익 12억원으로 흑자 기조를 유지했다. 그러나 2025년(2024.4~2025.3)에는 매출이 290억원으로 줄고 영업손실 58억원, 지배주주 순손실 101억원을 기록하며 큰 폭의 적자전환이 나타났다. 영업이익률은 2022년 5.4%, 2023년 5.2%, 2024년 2.7%에서 2025년 -20.1%로 급격히 악화됐다. 분기별로 보면 2025년 1분기는 매출 98.7억원, 영업이익 2.5억원, 지배주주 순이익 0.3억원으로 양호했으나, 이후 2025년 2분기 매출 59.5억원(영업손실 26.8억원), 3분기 매출 54.3억원(영업손실 10.6억원), 4분기 매출 77.7억원(영업손실 23.4억원, 지배주주 순손실 67.5억원)으로 손실 규모가 확대됐다. 4분기 순손실이 영업손실보다 크게 늘어난 점은 영업외 손실 등 일회성 요인이 반영됐을 가능성을 시사한다. 2026년 1분기(매출 55.7억원)에는 영업이익이 소폭(0.057억원) 흑자로 돌아섰지만 지배주주 순손실은 4.8억원으로 이어졌다. 최근 4개 분기(2025년 2분기~2026년 1분기) 지배주주 순손실 합계는 106억원 수준으로, 여전히 손익 회복이 완결되지 않은 상태다. 재무구조 측면에서는 2025년 부채비율이 51.0%로 2024년 31.7%에서 상승했고 영업활동현금흐름도 2024년 +10억원에서 2025년 -44억원으로 순유출 전환해, 손익과 현금창출력 모두에서 부담이 커졌다.",
+  "en": "3S's annual results improved from revenue of KRW 27.1 billion and operating profit of KRW 1.5 billion in 2022 to revenue of KRW 41.9 billion and operating profit of KRW 2.2 billion in 2023, then held a profitable trend in 2024 with revenue of KRW 43.6 billion and operating profit of KRW 1.2 billion. In fiscal 2025 (April 2024-March 2025), however, revenue fell to KRW 29.0 billion and the company recorded an operating loss of KRW 5.8 billion and an owner net loss of KRW 10.1 billion, marking a sharp swing into deficit. The operating margin deteriorated from 5.4% in 2022 and 5.2% in 2023 to 2.7% in 2024 before dropping to negative 20.1% in 2025. On a quarterly basis, the period labeled 2025Q1 was solid with revenue of KRW 9.87 billion, operating profit of KRW 0.25 billion, and an owner net profit of KRW 0.03 billion, but losses widened afterward: 2025Q2 revenue of KRW 5.95 billion with an operating loss of KRW 2.68 billion, 2025Q3 revenue of KRW 5.43 billion with an operating loss of KRW 1.06 billion, and 2025Q4 revenue of KRW 7.77 billion with an operating loss of KRW 2.34 billion and an owner net loss of KRW 6.75 billion. The fact that the fourth-quarter net loss expanded well beyond the operating loss suggests non-operating or one-off items were likely involved. In the quarter labeled 2026Q1, revenue was KRW 5.57 billion and operating profit turned marginally positive at about KRW 5.7 million, though the owner net loss continued at KRW 0.48 billion. Over the most recent four quarters (2025Q2 through 2026Q1), cumulative owner net losses totaled roughly KRW 10.6 billion, indicating the earnings recovery is not yet complete. On the balance sheet, the debt ratio rose to 51.0% in 2025 from 31.7% in 2024, and operating cash flow swang from positive KRW 1.0 billion in 2024 to negative KRW 4.4 billion in 2025, adding pressure on both profitability and cash generation."
  },
  "industry": {
-  "ko": "글로벌 반도체 FOUP·FOSB 시장은 2025년 기준 약 13~14억 달러 규모로 추정되며, 2032년까지 연평균 7% 내외의 성장이 전망된다. 수요 동인은 AI 서버용 HBM 생산 확대, EUV 도입에 따른 전공정 캐리어 교체 수요, 300mm 웨이퍼 출하 회복 등이다. 다만 3S의 주력 제품인 FOSB는 양산 25년 이상이 경과해 단가가 이미 평준화됐고, 반도체 제조사의 FOSB 재사용 비중 증가가 신규 출하를 구조적으로 잠식하는 역풍으로 작용하고 있다. 반면 전공정 FOUP는 화학적 안정성·청정도 요건이 엄격해 진입장벽이 높고 단가도 FOSB 대비 현저히 높아, 국내 본격 양산 업체가 아직 없는 공백 시장으로 평가된다. 글로벌 경쟁에서는 신에쓰폴리머(일본)가 TSMC·삼성전자에 공급하는 선두 업체이며, 3S는 국내 독점적 지위를 발판으로 고부가 제품군 확장을 모색하고 있다. 환경시험장치 시장은 글로벌 HVAC 수요와 친환경차 설비투자에 연동되지만, 전기차 투자 속도 조정으로 단기 수주 불확실성이 일부 잔존한다.",
-  "en": "The global semiconductor FOUP/FOSB market is estimated at approximately $1.3–1.4 billion in 2025, with a roughly 7% CAGR forecast through 2032. Key demand drivers include HBM capacity expansion for AI servers, cleanroom carrier replacement driven by EUV adoption, and recovering 300mm wafer shipments. However, 3S's flagship FOSB product—after more than 25 years of mass production—faces structural headwinds from normalized unit prices and the semiconductor industry's rising preference for FOSB reuse, which structurally cannibalizes new-unit demand. In contrast, front-end process FOUP commands strict chemical-stability and cleanroom requirements, presenting high barriers to entry and meaningfully higher unit prices than FOSB; no established domestic Korean mass producer currently exists in this sub-segment. Globally, Shin-Etsu Polymer (Japan) leads the market supplying TSMC and Samsung, while 3S seeks to leverage its domestic near-monopoly in FOSB to expand into higher-value product lines. The environmental test equipment market is tied to global HVAC demand and EV infrastructure capex, with some near-term order uncertainty remaining as electric-vehicle investment pacing has moderated."
+  "ko": "웨이퍼캐리어(FOSB)는 반도체 제조공정에서 웨이퍼를 오염과 충격으로부터 보호해 운반하는 특수 용기로, 특허와 소재 기술의 진입장벽이 높아 전 세계적으로 미국 엔터그리스와 일본 시네츠·미라이얼 등 소수 기업만 공급하고 있으며 3S가 국내 유일의 생산업체다. 다만 현재 주력 생산 중인 FOSB는 양산한 지 약 25년이 지나면서 단가가 평준화됐고, 재사용 시장 확대 영향으로 수익성이 낮아진 상황이어서 회사는 기존 FOSB 중심 사업구조에서 벗어나 고부가가치 캐리어 개발을 확대하고 있다. 반도체 업황 측면에서는 AI 모멘텀에 따른 엣지 컴퓨팅 확산으로 친환경자동차 및 2차전지 시험설비 시장이 빠르게 성장하고 있어, 환경시험장치 부문에는 긍정적 수요 환경이 조성되고 있다. 첨단 패키징 분야에서는 칩렛(Chiplet)·컴퓨트익스프레스링크(CXL) 등 기술이 반도체 산업의 핵심 경쟁력으로 부각되면서 캐리어 수요 구조가 다변화되는 추세이며, 3S는 이 흐름에 맞춰 칩렛 캐리어와 대형 패널레벨패키지(PLP-FOUP) 개발을 선도해왔다. 중국 반도체 시장은 정부 주도로 첨단 패키징 투자가 활발히 이뤄지고 있어 3S의 PLP-FOUP 중국 특허 등록 이후 현지 기업들의 공급 문의가 이어지고 있는 것으로 전해진다. 다만 중국 냉동공조 경기의 더딘 회복은 환경장치 중국법인 실적에 제약 요인으로 작용하고 있다.",
+  "en": "The wafer carrier (FOSB) is a specialized container that protects wafers from contamination and impact during semiconductor manufacturing; high barriers from patents and materials technology mean only a small number of global companies, including US-based Entegris and Japan's Shin-Etsu and Miraial, supply this product, with 3S being the sole domestic producer. However, the FOSB product the company currently produces has been in mass production for roughly 25 years, leading to standardized pricing, and profitability has declined amid growth of the reuse market, prompting the company to expand development of higher-value-added carriers beyond its traditional FOSB-centered business. On the semiconductor demand side, the spread of edge computing tied to the AI theme is rapidly growing the market for eco-friendly vehicle and secondary battery test equipment, creating a favorable demand backdrop for the environmental test equipment segment. In advanced packaging, technologies such as chiplets and Compute Express Link (CXL) are emerging as core competitive factors in the semiconductor industry, diversifying carrier demand structures; 3S has positioned itself in this trend by leading development of chiplet carriers and large panel-level-package (PLP-FOUP) formats. China's semiconductor market has seen active government-led investment in advanced packaging, and following registration of 3S's PLP-FOUP patent in China, inquiries from local companies are reported to have continued. That said, the slow recovery of China's refrigeration and air-conditioning market remains a constraint on the performance of the environmental equipment business's Chinese subsidiary."
  },
  "outlook": {
-  "ko": "2026년 6월 기준 3S는 반도체 전공정 FOUP 금형 개발을 완료하고 주요 고객사의 퀄리피케이션 테스트 준비 단계에 진입했으며, 이 결과가 전공정 캐리어 본격 매출 발생 시기를 결정하는 핵심 분기점이다. FA 물류자동화 사업은 추가 영업활동이 중단된 것으로 확인됐고, FY2026부터 해당 부문의 고정비·인건비 부담이 완화될 것으로 기대된다. HBM 생산라인 전용 웨이퍼 캐리어는 글로벌 제조사에 공급이 이미 개시됐으며, 고객사의 HBM 라인 증설 속도에 따라 공급량 확대가 예상된다. 이차전지 시험설비 분야에서는 2024년 12월 기준 5건(총 약 70억 원) 계약을 연이어 체결했고, 전기차 전환 기조가 이어질 경우 추가 수주가 가능하다. 중국 시장에서는 PLP-FOUP 특허 등록 완료 후 현지 기업 문의가 지속되고 있어 해외 매출 기반 다변화 가능성이 존재한다. 2026Q1(2025년 4~6월) 실적은 아직 미공시 상태이며, FA 비용 부담 해소·HBM 캐리어 매출 기여도·환경시험장치 수주 회복 여부가 분기 방향성의 핵심 지표가 될 것이다.",
-  "en": "As of June 2026, 3S has completed front-end process FOUP mold development and entered the qualification test preparation stage with major semiconductor customers—the pass/fail outcome will determine when material front-end FOUP revenues can materialize. The FA logistics automation business has confirmed a halt to additional sales activities, with the corresponding fixed-cost and personnel burden expected to ease from FY2026 onward. Supply of HBM production-line dedicated wafer carriers to a global chipmaker has already commenced, and volume growth is anticipated in line with customers' HBM capacity expansion roadmaps. In secondary-battery test equipment, five contracts totaling approximately KRW 7 billion were secured as of December 2024, with further wins plausible if the EV transition trend sustains. In China, the completed PLP-FOUP patent is generating steady supply inquiries from local semiconductor firms, offering a path to export revenue diversification. FY2026 Q1 (April–June 2025) results remain unpublished; alleviation of FA cost drag, HBM carrier revenue contribution, and recovery in environmental test equipment orders will be the primary directional indicators."
+  "ko": "회사는 웨이퍼캐리어 국내 유일 기업으로서 재도약 발판을 마련하는 것이 향후 관전 포인트로 꼽히며, 새 경영진이 중국 합작·기존 최대주주였던 나무가 지분 문제를 어떻게 해소하느냐가 기업가치 회복의 변수로 지목된다. 신규 사내이사로는 삼성전자 반도체 부문에서 30년 이상 근무하고 중국총괄팀장을 지낸 인물과 삼성전자 반도체 장비 자회사 세메스에서 20년 이상 재직한 인물이 이름을 올려, 반도체 고객사와의 관계 강화 및 기술 경쟁력 제고가 기대되는 지점이다. 사업 측면에서는 공장자동화(FA)·물류자동화 사업의 추가 영업활동 중단으로 관련 적자 요인이 일부 해소되고 있어, 비핵심 사업 축소를 통한 손익 구조 개선 여지가 있다. 웨이퍼캐리어 부문에서는 HBM 특수 제품용 FOUP, 다양한 크기의 PLP·GP FOUP 개발을 대형 고객사들과 협의 중이라고 회사 측이 밝힌 바 있어, 개발이 실제 양산·공급계약으로 이어지는지가 중요한 확인 포인트다. 칩렛 캐리어의 경우 실리콘박스사 공급계약 이후 칩렛 생태계 확장 속도에 따라 매출 반영 시점이 달라질 수 있어 관련 후속 공시를 주시할 필요가 있다. 2026년 1분기 영업이익이 미소하게 흑자로 전환된 점은 손익 저점을 지나고 있을 가능성을 시사하지만, 다음 분기 이후 지배주주 순이익이 실제로 개선되는지 확인이 필요한 상태다.",
+  "en": "As the sole domestic wafer-carrier producer, how the company builds a platform for renewed growth is seen as a key point to watch, and how the new management resolves the equity stake issue tied to former controlling shareholder NAMUGA's China joint venture is flagged as a variable for value recovery. New inside directors include an individual with more than 30 years at Samsung Electronics' semiconductor division, including a stint heading its China operations, and another with more than 20 years at Samsung Electronics' semiconductor equipment affiliate Semes, raising expectations for stronger customer relationships and technical competitiveness. On the business side, halting additional sales activity in the factory-automation and logistics-automation business has resolved part of the related losses, leaving room for profit-and-loss improvement through scaling back non-core operations. In the wafer-carrier segment, the company has said it is in discussions with large customers on developing special-purpose FOUP for HBM and various sizes of PLP and GP FOUP, making it important to confirm whether these development efforts translate into actual mass production and supply contracts. For the chiplet carrier, the timing of revenue contribution following the Silicon Box supply agreement may depend on the pace of chiplet ecosystem expansion, warranting attention to subsequent disclosures. The marginal return to operating profit in the quarter labeled 2026Q1 suggests the company may be past the trough, but confirmation of an actual improvement in owner net income in subsequent quarters is still needed."
  },
  "valuation_comment": {
-  "ko": "현재 주가는 주당순자산(KRX 기준 BPS 933원) 대비 프리미엄 구간에 형성되어 있어, 전공정 FOUP 퀄 성공·HBM 캐리어 물량 확대 등 미래 성장 옵션이 일정 부분 반영된 국면으로 읽힌다. 연간 순손실이 발생한 구간에는 주가수익비율(PER) 산출 자체가 의미를 갖기 어려우며, 이익 회복 경로의 가시성이 확보되기 전까지는 현재의 순자산 대비 프리미엄 수준이 검증을 요하는 상태다. 배당 지급 실적이 없어 배당 매력은 현재 사실상 부재하다. 유상증자(38억 원)·전환사채(50억 원) 발행으로 발행주식 수가 증가해 기존 주주의 희석 영향이 이미 반영됐고, 전환사채 전환 청구 시 추가 희석이 예정되어 있다. FY2023·FY2024의 흑자 구간 대비 현재 순자산 프리미엄이 확대된 상태인 만큼, 이익 가시성 회복이 뒷받침되지 않을 경우 프리미엄 축소 압력이 존재한다.",
-  "en": "The current share price sits in a premium zone relative to book value (KRX BPS of KRW 933), suggesting that a portion of the upside optionality from potential front-end FOUP qualification and HBM carrier volume ramp has already been priced in. With the company recording a full-year net loss, traditional price-to-earnings valuation carries limited analytical weight, and the current premium to book value requires earnings visibility to sustain. The absence of any dividend payout means income-oriented appeal is essentially absent at present. The rights offering and convertible bond issuance have already increased the share count, and outstanding convertible bonds represent a source of further dilution upon conversion. Compared with the profitable FY2023–FY2024 period, the current premium-to-book level is wider, implying a need for demonstrated earnings recovery to underpin that level."
+  "ko": "3S는 최근 4개 분기 동안 지배주주 순손실이 이어지고 있어 주가수익비율(PER) 산정이 어려운 구간에 있으며, 이는 손익 회복이 아직 완결되지 않았음을 보여준다. 주가는 순자산가치 대비 일정한 프리미엄이 형성된 구간에서 거래되는 모습으로, 웨이퍼캐리어·칩렛캐리어 관련 기술 스토리와 국내 유일 생산업체라는 지위에 대한 시장의 기대가 일부 반영된 결과로 해석될 수 있다. 다만 이러한 프리미엄은 2025년의 대규모 적자전환과 부채비율 상승, 영업활동현금흐름 순유출 전환이라는 재무 부담과 함께 평가돼야 한다. 배당의 경우 최근 지급 내역이 확인되지 않아, 배당수익률 관점의 투자 매력은 제한적인 편이다. 과거 실적이 2023~2024년 흑자 기조에서 2025년 적자로, 다시 2026년 1분기 영업이익 미소 흑자로 방향을 바꾼 만큼, 향후 밸류에이션에 대한 평가는 이러한 이익 회복의 지속성 여부에 크게 좌우될 것으로 보인다.",
+  "en": "With owner net losses continuing over the most recent four quarters, 3S is in a range where the price-to-earnings ratio is difficult to calculate, reflecting that its earnings recovery is not yet complete. The stock trades at a level carrying a certain premium relative to net asset value, which can be interpreted as the market partially pricing in the wafer-carrier and chiplet-carrier technology narrative along with the company's status as the sole domestic producer. However, this premium should be weighed against financial burdens including the sharp swing to losses in 2025, the rise in the debt ratio, and the shift of operating cash flow into net outflow. On dividends, no recent payment has been confirmed, so the investment appeal from a dividend-yield perspective remains limited. Given that past performance moved from a profitable trend in 2023-2024 to losses in 2025 and then to a marginal operating profit in the quarter labeled 2026Q1, future valuation assessments are likely to hinge heavily on whether this earnings recovery proves durable."
  },
  "bull": [
   {
    "title": {
-    "ko": "전공정 FOUP: 국내 공백 시장 진입 옵션",
-    "en": "Front-End FOUP: Entering a Domestic Blank-Space Market"
+    "ko": "국내 유일 FOSB 생산업체의 구조적 지위",
+    "en": "Structural Position as the Sole Domestic FOSB Producer"
    },
    "body": {
-    "ko": "전공정 FOUP는 화학적 안정성과 청정도 요건이 매우 높아 진입장벽이 뚜렷하고, 국내에서는 아직 본격 양산 업체가 없는 시장이다. 3S는 2026년 6월 기준 FOUP 금형 개발을 완료하고 고객 퀄리피케이션 테스트 준비 단계에 진입했으며, 승인 통과 시 수익성 구조가 근본적으로 개선될 수 있다. FOSB 25년 이상의 클린룸 소재·정밀성형 기술 노하우가 전공정 FOUP 개발의 기술적 토대를 이루고 있다.",
-    "en": "Front-end process FOUP faces strict chemical-stability and cleanroom-purity requirements, creating high barriers, and no domestic Korean mass producer has yet established itself in this sub-segment. As of June 2026, 3S has completed FOUP mold development and entered the customer qualification test preparation stage; a successful approval could fundamentally transform the company's margin profile. Over 25 years of cleanroom materials and precision-molding expertise accumulated through FOSB production provides the technical foundation for this transition."
+    "ko": "웨이퍼캐리어박스(FOSB)는 전 세계 4개사만 생산기술을 보유한 고진입장벽 제품이며, 3S는 국내 유일의 생산·납품 업체다. 삼성전자, SK하이닉스 관계 웨이퍼업체 등 국내 대형 반도체 공급망에 대한 접근성을 갖추고 있다는 점은 경쟁사 대비 구조적 강점으로 볼 수 있다. 반도체 국산화 이슈가 부각될 때마다 이러한 지위가 시장의 관심을 받는 배경이 되어 왔다.",
+    "en": "The wafer-carrier box (FOSB) is a high-barrier product for which only four companies worldwide hold production technology, and 3S is the sole domestic producer and supplier. Its access to large domestic semiconductor supply chains, including Samsung Electronics and SK Hynix-affiliated wafer makers, can be viewed as a structural advantage relative to competitors. This position has repeatedly drawn market attention whenever domestic semiconductor material localization becomes a focus."
    }
   },
   {
    "title": {
-    "ko": "HBM·칩렛 AI 반도체 수혜 포지셔닝",
-    "en": "Direct Positioning for HBM and Chiplet AI Semiconductor Demand"
+    "ko": "칩렛·고부가 캐리어로의 기술 다각화",
+    "en": "Technology Diversification into Chiplet and Higher-Value Carriers"
    },
    "body": {
-    "ko": "3S는 글로벌 반도체 제조사에 HBM 생산라인 전용 웨이퍼 캐리어 공급을 이미 개시했으며, 고객사 HBM 라인 증설에 따라 공급량 확대가 예상된다. 세계 최초로 칩렛 캐리어를 개발한 기업으로서 칩렛 패키징 시장 성장의 직접 수혜 포지션을 보유하고 있다. 글로벌 반도체 FOUP·FOSB 시장은 AI·HBM 수요를 기반으로 2032년까지 연평균 7% 내외 성장이 전망되며, 이는 중장기 물량 성장의 구조적 토대다.",
-    "en": "3S has already commenced supply of HBM production-line dedicated wafer carriers to a global semiconductor manufacturer, with volumes expected to scale as HBM capacity expands. As the world's first developer of chiplet carriers, the company is directly positioned to benefit from the growth of chiplet packaging. The global FOUP/FOSB market is projected to grow at approximately 7% CAGR through 2032, driven by AI and HBM demand, providing a structural long-term volume tailwind."
+    "ko": "3S는 세계 최초로 칩렛 캐리어를 개발한 것으로 알려져 있으며, 싱가포르 실리콘박스사와 칩렛 공정용 캐리어 공급 계약을 체결한 바 있다. HBM 특수 제품용 FOUP, 대형 PLP·GP FOUP 등 다양한 신제품을 대형 고객사들과 개발 협의 중이라고 회사 측이 밝혔다. 이는 단가가 평준화된 기존 FOSB 중심 구조에서 벗어나 고부가가치 제품군으로 사업 포트폴리오를 넓히려는 시도로 해석된다.",
+    "en": "3S is reported to have developed the world's first chiplet carrier and has signed a supply agreement for chiplet-process carriers with Singapore's Silicon Box. Company officials have said development discussions with large customers are underway for various new products including special-purpose FOUP for HBM and large PLP and GP FOUP formats. This can be interpreted as an attempt to broaden the business portfolio toward higher-value-added products beyond the standardized-pricing legacy FOSB structure."
    }
   },
   {
    "title": {
-    "ko": "FA 비용 해소와 손익 구조 정상화 가능성",
-    "en": "FA Cost Elimination and Path to Earnings Normalization"
+    "ko": "삼성전자 반도체 출신 신규 경영진 합류",
+    "en": "New Management with Samsung Electronics Semiconductor Backgrounds"
    },
    "body": {
-    "ko": "2026년 6월 기준 FA 물류자동화 추가 영업활동이 중단돼 신사업 초기 고정비 부담이 경감될 전망이다. FY2025 영업손실의 상당 부분이 FA사업 관련 비용에서 비롯된 것으로 추정되므로, 이 부담이 해소되면 기존 웨이퍼캐리어·환경시험장치 사업 본연의 손익이 회복될 여지가 있다. 이차전지 시험 설비 수주(2024년 12월 기준 5건·총 약 70억 원)와 중국 PLP-FOUP 공급 문의 증가도 매출 기반 다변화에 기여할 수 있다.",
-    "en": "The confirmed halt to FA logistics automation additional sales activities as of June 2026 is expected to reduce the early-stage fixed-cost overhang materially. Given that a significant portion of FY2025's operating loss appears attributable to FA-related costs, their removal could allow the core wafer carrier and environmental test equipment businesses to restore underlying profitability. Secondary-battery test equipment orders (five contracts totaling approximately KRW 7 billion as of December 2024) and growing PLP-FOUP supply inquiries from China also offer incremental revenue diversification."
+    "ko": "2025년 7월 주총을 통해 삼성전자 반도체 부문에서 30년 이상 근무하고 중국총괄팀장을 지낸 인물, 삼성전자 반도체 장비 자회사 세메스 출신 인사 등이 새 이사회에 합류했다. 대형 고객사 실무 경험을 갖춘 인력이 경영에 참여하는 것은 고객 관계 강화와 기술 로드맵 정교화 측면에서 긍정적으로 해석될 수 있는 요인이다.",
+    "en": "Following the July 2025 shareholder meeting, new board members joined including an individual with more than 30 years at Samsung Electronics' semiconductor division and a stint heading its China operations, along with a person from Samsung Electronics semiconductor equipment affiliate Semes. The involvement of personnel with hands-on experience at large customers can be viewed positively for strengthening customer relationships and refining the technology roadmap."
    }
   }
  ],
  "bear": [
   {
    "title": {
-    "ko": "FOSB 구조적 단가 하락과 재사용 시장 잠식",
-    "en": "Structural FOSB Price Erosion and Reuse Market Cannibalization"
+    "ko": "2025년 대규모 적자전환과 현금흐름 악화",
+    "en": "Large Swing to Losses and Deteriorating Cash Flow in 2025"
    },
    "body": {
-    "ko": "FOSB는 양산 시작 이후 25년 이상 경과해 단가가 이미 평준화됐고, 반도체 제조사의 재사용 비중 증가가 신규 출하를 구조적으로 잠식하고 있다. 이 문제는 고부가 신제품으로의 포트폴리오 전환이 완료되기 전까지 웨이퍼캐리어 부문 수익성 회복을 제한하는 핵심 구조적 리스크이다. FY2025 매출 급감(-33%)이 이 리스크의 실제 사례이기도 하다.",
-    "en": "FOSB has been in mass production for over 25 years, with unit prices already normalized, and the semiconductor industry's rising preference for FOSB reuse is structurally cannibalizing new-unit demand. This dynamic will continue to cap wafer-carrier segment margin recovery until a meaningful portfolio transition toward higher-value products is completed. The sharp FY2025 revenue decline of -33% is a concrete illustration of this structural risk materializing."
+    "ko": "3S는 2024년 매출 436억원, 영업이익 12억원의 흑자 기조에서 2025년 매출 290억원, 영업손실 58억원, 지배주주 순손실 101억원으로 크게 악화됐다. 영업활동현금흐름도 2024년 +10억원에서 2025년 -44억원으로 순유출 전환했으며 부채비율은 31.7%에서 51.0%로 상승했다. 최근 4개 분기 지배주주 순손실 합계도 106억원 수준으로 여전히 손익 회복이 완결되지 않았다.",
+    "en": "3S swung from a profitable trend in 2024, with revenue of KRW 43.6 billion and operating profit of KRW 1.2 billion, to a sharp deterioration in 2025, with revenue of KRW 29.0 billion, an operating loss of KRW 5.8 billion, and an owner net loss of KRW 10.1 billion. Operating cash flow also shifted from positive KRW 1.0 billion in 2024 to negative KRW 4.4 billion in 2025, and the debt ratio rose from 31.7% to 51.0%. Cumulative owner net losses over the most recent four quarters remained around KRW 10.6 billion, indicating the earnings recovery is still incomplete."
    }
   },
   {
    "title": {
-    "ko": "전공정 FOUP 퀄 취득의 불확실성",
-    "en": "Front-End FOUP Qualification Approval Uncertainty"
+    "ko": "FOSB 재사용 확대에 따른 핵심 제품 수익성 저하",
+    "en": "Declining Core Product Profitability Amid FOSB Reuse Expansion"
    },
    "body": {
-    "ko": "3S는 과거에도 FOUP 개발을 진행했으나 반도체 제조사의 승인 단계를 통과하지 못한 이력이 있다. 전공정 캐리어는 화학적 안정성·청정도 요건이 매우 엄격해 인증 절차가 길고 통과를 보장할 수 없다. 퀄 취득이 지연되거나 실패할 경우 개발비 손실로 전환되고 현재 주가 프리미엄의 핵심 근거가 약화될 수 있다.",
-    "en": "3S previously attempted FOUP development but did not achieve semiconductor customer qualification approval at the time. Front-end process carriers face extremely stringent chemical stability and cleanroom-purity requirements, making the certification timeline long with no guaranteed outcome. A delayed or failed qualification would convert R&D investment into losses and materially weaken the primary growth narrative underlying the current valuation premium."
+    "ko": "3S의 주력 제품인 FOSB는 양산한 지 약 25년이 지나면서 단가가 평준화됐고, 재사용 시장 확대로 신규 판매 수익성이 낮아지고 있다는 점이 지적된다. 웨이퍼캐리어 부문은 실제로 재사용 증가에 따른 실적 부진을 겪은 것으로 나타났다. 신규 고부가 제품이 상용화 단계에 이르기까지는 시간이 걸릴 수 있어, 그 사이 핵심 사업의 매출 기반이 약화될 가능성이 있다.",
+    "en": "It has been noted that 3S's core FOSB product has seen standardized pricing after roughly 25 years in mass production, with new-sale profitability declining as the reuse market expands. The wafer-carrier segment has indeed experienced weak performance tied to increased reuse. Given that new higher-value products may take time to reach commercialization, the revenue base of the core business could weaken in the interim."
    }
   },
   {
    "title": {
-    "ko": "연속 손실에 따른 재무 건전성 약화와 희석 리스크",
-    "en": "Financial Health Deterioration and Dilution Risk from Sustained Losses"
+    "ko": "지배구조 전환기의 잔여 불확실성",
+    "en": "Residual Uncertainty from the Governance Transition"
    },
    "body": {
-    "ko": "FY2025 부채비율은 51.0%(전년 31.7%)로 상승했고, 영업현금흐름이 –44억 원으로 역전됐다. 유상증자·전환사채 발행(합계 88억 원)으로 자본을 보강했으나 기존 주주에게 희석 부담을 안겼으며, 전환사채 잔액의 주식 전환 시 유통 주식 수가 추가로 늘어날 수 있다. 손실이 FY2026에도 이어질 경우 추가 자본 조달 또는 자산 처분 가능성이 열려 있다.",
-    "en": "The FY2025 debt ratio rose to 51.0% from 31.7% the prior year, and operating cash flow turned negative at KRW -4.4 bn. Capital raised through a rights offering and convertible bond issuance totaling KRW 8.8 bn partially shored up equity but imposed dilution on existing shareholders, with further share count increases possible upon CB conversion. Should losses continue into FY2026, additional capital raises or asset disposals remain plausible."
+    "ko": "2025년 최대주주 교체와 경영권 분쟁을 거쳐 새 이사회로 정리됐지만, 기존 최대주주였던 나무가 관련 중국 합작 지분 문제는 여전히 해소 과제로 남아있는 것으로 언급된다. 경영진 교체 직후 조직 안정화와 신사업 전략 실행에는 일정한 시간이 필요할 수 있으며, 그 과정에서 추가적인 잡음이나 지연이 발생할 가능성도 배제할 수 없다.",
+    "en": "Although the 2025 controlling-shareholder change and governance dispute were settled with a new board, the equity stake issue tied to former controlling shareholder NAMUGA's China joint venture is reported to remain an unresolved task. Organizational stabilization and execution of new business strategy immediately after a management change may take time, and additional friction or delay during that process cannot be ruled out."
    }
   }
  ],
  "risks": [
   {
    "cat": {
-    "ko": "전방 수요 리스크 — 반도체 투자 사이클",
-    "en": "Demand Risk — Semiconductor Capex Cycle"
+    "ko": "지배구조·경영권 리스크",
+    "en": "Governance and Ownership Risk"
    },
    "body": {
-    "ko": "웨이퍼캐리어 매출은 반도체 제조사의 신규 팹 건설·증설 투자와 밀접하게 연동된다. 글로벌 반도체 경기가 하강 사이클에 진입하거나 주요 고객의 투자 계획이 축소될 경우 캐리어 신규 수요가 급감할 수 있다. FY2025의 매출 급감은 이러한 사이클 리스크가 현실화된 대표적 사례이다.",
-    "en": "Wafer carrier revenues are closely correlated with semiconductor manufacturers' fab construction and capacity-expansion decisions. If the global semiconductor cycle turns down or key customers reduce capex plans, new carrier demand could decline sharply. The FY2025 revenue contraction is a concrete example of this cyclical risk materializing."
+    "ko": "2025년 최대주주가 한국웨이퍼홀딩스로 변경되고 경영권 분쟁을 거쳐 새 이사회가 구성됐으나, 이 과정에서 제기된 중국 법인 출자 관련 의혹과 나무가 지분 문제 등은 아직 완전히 해소되지 않은 것으로 보인다. 향후 이사회·경영진 운영 방식이나 전략 방향이 추가로 변경될 가능성이 있어 지배구조 안정성을 지속적으로 확인할 필요가 있다.",
+    "en": "The controlling shareholder changed to Korea Wafer Holdings in 2025 and a new board was formed after a governance dispute, but allegations raised during that process regarding China subsidiary capital contributions and the NAMUGA equity stake issue appear not to be fully resolved. There is a possibility that board or management operations and strategic direction could change further, warranting ongoing monitoring of governance stability."
    }
   },
   {
    "cat": {
-    "ko": "고객·제품 집중도 리스크",
-    "en": "Customer and Product Concentration Risk"
+    "ko": "고객 집중·경쟁 리스크",
+    "en": "Customer Concentration and Competitive Risk"
    },
    "body": {
-    "ko": "수익 기반이 삼성전자·SK하이닉스 등 소수 대형 고객에 편중돼 있어, 특정 고객의 정책 변경이나 공급업체 교체가 실적에 직접적인 충격을 준다. 주력 제품 FOSB 단일 품목 의존도가 높아 재사용 비율 추가 확대 또는 대체 기술 등장 시 매출이 급변할 수 있다. 신제품 포트폴리오 다각화가 실현되기 전까지 이 리스크는 상존한다.",
-    "en": "Revenue is concentrated among a small number of major customers including Samsung Electronics and SK Hynix, making the company vulnerable to policy changes or supplier switches by any key account. High reliance on FOSB as the flagship product means further acceleration in reuse rates or the emergence of substitute technologies could trigger rapid revenue change. This risk persists until new-product portfolio diversification is meaningfully achieved."
+    "ko": "3S의 웨이퍼캐리어 매출은 삼성전자, SK하이닉스 관계 웨이퍼업체 등 소수 대형 고객에 집중돼 있으며, 글로벌 시장에서는 미국 엔터그리스와 일본 시네츠·미라이얼 등 훨씬 큰 규모의 경쟁사와 맞서야 한다. 특정 고객사의 발주 정책 변화나 대형 경쟁사의 가격·기술 대응에 따라 실적이 영향을 받을 수 있다.",
+    "en": "3S's wafer-carrier revenue is concentrated among a small number of large customers, including Samsung Electronics and SK Hynix-affiliated wafer makers, and in the global market it must compete against much larger rivals such as US-based Entegris and Japan's Shin-Etsu and Miraial. Results could be affected by changes in a specific customer's procurement policy or by pricing and technology responses from larger competitors."
    }
   },
   {
    "cat": {
-    "ko": "전환사채 희석 및 유동성 리스크",
-    "en": "Convertible Bond Dilution and Liquidity Risk"
+    "ko": "재무·자금조달 리스크",
+    "en": "Financial and Funding Risk"
    },
    "body": {
-    "ko": "발행된 전환사채(50억 원)가 주식으로 전환될 경우 유통 주식 수가 추가 증가해 기존 주주의 주당 가치가 희석된다. 손실이 지속되고 영업현금흐름이 마이너스 상태를 유지할 경우 단기 유동성 압박이 커지며 추가 차입 또는 자본 조달 필요성이 생길 수 있다. FA 사업 정리 과정에서 잔여 비용·배상 책임 등 잠재적 부담이 남아 있을 수도 있다.",
-    "en": "Conversion of the outstanding convertible bond (KRW 5.0 bn) into shares would further dilute per-share value for existing investors. Continued losses and persistently negative operating cash flow could amplify near-term liquidity pressure, potentially necessitating additional borrowing or capital market transactions. The FA business wind-down process may also carry residual liabilities or settlement costs not yet fully reflected."
+    "ko": "2025년 영업활동현금흐름이 -44억원으로 순유출 전환하고 부채비율이 51.0%로 상승한 가운데, 회사는 과거 신사업(FA·물류자동화) 재원 마련을 위해 유상증자와 전환사채 발행을 활용해왔다. 손익 회복이 지연될 경우 추가적인 외부 자금조달이나 지분 희석 가능성을 배제할 수 없다.",
+    "en": "With operating cash flow turning to a net outflow of KRW 4.4 billion in 2025 and the debt ratio rising to 51.0%, the company has previously relied on rights offerings and convertible bond issuance to fund new businesses such as factory automation and logistics automation. If the earnings recovery is delayed, the possibility of further external funding or equity dilution cannot be ruled out."
    }
   }
  ],
  "checkpoints": [
   {
    "when": {
-    "ko": "2026년 7~8월",
-    "en": "July–August 2026"
+    "ko": "2026년 11월 중",
+    "en": "Around November 2026"
    },
    "what": {
-    "ko": "FY2026 1분기(2025년 4~6월) 분기 실적 공시 — FA 비용 부담 해소 여부, HBM 전용 캐리어 매출 기여도, 환경시험장치 수주 회복 추이를 처음으로 확인하는 시점이다.",
-    "en": "FY2026 Q1 (April–June 2025) earnings disclosure — the first opportunity to assess whether FA cost drag has materially eased, HBM carrier revenues are contributing, and environmental test equipment orders are recovering."
+    "ko": "2026Q1 이후 분기 실적을 담은 다음 정기 공시(반기·3분기 보고서) 시점으로, 영업이익 흑자 전환이 이어지는지와 지배주주 순손실 축소 여부를 확인해야 한다.",
+    "en": "This is the likely timing of the next periodic filing (half-year or third-quarter report) covering results after 2026Q1, when it should be checked whether the return to operating profit continues and whether the owner net loss narrows."
    }
   },
   {
    "when": {
-    "ko": "2026년 하반기 중",
-    "en": "Second Half 2026"
+    "ko": "2026년 4분기",
+    "en": "Q4 2026"
    },
    "what": {
-    "ko": "전공정 FOUP 퀄리피케이션 테스트 결과 — 통과 여부에 따라 전공정 캐리어 매출 발생 시기와 고마진 제품 비중이 결정되며, 중장기 성장 내러티브의 핵심 분기점이다.",
-    "en": "Front-end process FOUP qualification test outcome — whether approved or not will define the timeline for front-end carrier revenues and the margin mix shift, representing the pivotal mid-to-long-term growth catalyst."
+    "ko": "칩렛 캐리어, HBM 특수 FOUP, PLP·GP FOUP 등 신제품의 실제 양산·공급계약 관련 수시공시가 나오는지 확인할 필요가 있다.",
+    "en": "It is worth checking whether ad-hoc disclosures emerge regarding actual mass production or supply contracts for new products such as the chiplet carrier, special-purpose HBM FOUP, and PLP/GP FOUP."
    }
   },
   {
    "when": {
-    "ko": "상시 모니터링",
-    "en": "Ongoing Monitoring"
+    "ko": "2026년 하반기",
+    "en": "Second half of 2026"
    },
    "what": {
-    "ko": "HBM 생산라인 전용 캐리어 공급량 추이 — 주요 고객사의 HBM 라인 증설 속도에 따른 3S 공급 물량 확대 여부를 분기 실적 및 수주 계약 공시로 확인.",
-    "en": "HBM production-line carrier supply volume trends — track via quarterly results and supply contract disclosures whether volumes are scaling in step with HBM fab expansions at key customers."
+    "ko": "새 이사회가 기존 최대주주였던 나무가 관련 중국 합작 지분 문제를 어떻게 정리하는지, 관련 공시나 발표가 있는지 살펴볼 필요가 있다.",
+    "en": "It is worth monitoring whether the new board addresses the China joint venture equity stake issue tied to former controlling shareholder NAMUGA, and whether related disclosures or announcements appear."
    }
   },
   {
    "when": {
-    "ko": "2026년 내 수시 공시",
-    "en": "Ad-Hoc Disclosures Throughout 2026"
+    "ko": "2026년 하반기~2027년",
+    "en": "Second half of 2026 through 2027"
    },
    "what": {
-    "ko": "전환사채 전환 청구 및 신규 수주 계약 공시 — 전환사채 주식 전환 규모(기존 주주 희석 정도)와 이차전지·환경시험장치 신규 수주 계약 규모가 단기 실적 가시성에 직접 영향을 준다.",
-    "en": "Convertible bond conversion requests and new contract announcements — the scale of CB-to-equity conversions (shareholder dilution) and newly signed secondary-battery or test equipment contracts are direct leading indicators of near-term earnings visibility."
-   }
-  },
-  {
-   "when": {
-    "ko": "2027년 초 (FY2026 연간 결산)",
-    "en": "Early 2027 (FY2026 Annual Results)"
-   },
-   "what": {
-    "ko": "FY2026(2025년 4월~2026년 3월) 연간 실적 확인 — FA 비용 해소 효과·HBM 캐리어 물량 기여·FOUP 퀄 성과가 합산된 결과를 통해 흑자 전환 여부와 이익 회복의 지속성을 최종 검증.",
-    "en": "FY2026 (April 2025–March 2026) full-year results — the definitive validation of whether FA cost elimination, HBM carrier ramp, and potential FOUP revenues collectively deliver a return to profitability and whether any earnings recovery proves durable."
+    "ko": "공장자동화(FA)·물류자동화 사업의 추가 영업활동 중단이 실제 손익에 미치는 효과가 후속 분기 실적에 얼마나 반영되는지 확인해야 한다.",
+    "en": "It should be confirmed how much the effect of halting additional sales activity in the factory-automation and logistics-automation business is reflected in subsequent quarterly results."
    }
   }
  ],
  "verdict": {
   "body": {
-   "ko": "3S는 국내 유일의 반도체 FOSB 양산 기업이자 세계 최초 칩렛 캐리어 개발사라는 희소한 기술 포지션을 보유하고 있으나, FY2025에는 FA 신사업 초기 비용과 FOSB 단가 하락이 겹치며 매출 급감(-33%)·영업손실률 –20.1%라는 심각한 수익성 훼손을 경험했다. FA 추가 영업 중단, HBM 전용 캐리어 공급 개시, 전공정 FOUP 퀄테스트 진입이라는 세 가지 전환점이 동시에 진행 중이어서 FY2026 부터의 실적 방향이 바뀔 여지는 존재한다. 그러나 FOSB 재사용 시장 확대에 따른 구조적 단가 압박, FOUP 퀄 취득의 불확실성, 전환사채 희석 리스크는 현재 순자산 대비 프리미엄이 지속되기 위한 전제 조건으로 실적 가시성 회복을 요구한다. 핵심 관찰 변수는 전공정 FOUP 퀄 통과 시점과 HBM 캐리어 공급 물량 확대 속도이며, 두 요소의 가시적 진전이 FY2026 이익 회복의 크기와 지속성을 결정한다. 2026년 하반기 FOUP 퀄 결과와 FY2026 1분기 실적 공시를 통해 전환의 실질적 방향성을 보다 명확하게 가늠할 수 있을 것이다.",
-   "en": "3S holds two rare competitive assets—the status of Korea's only mass producer of semiconductor FOSB carriers and the track record of developing the world's first chiplet carrier—yet FY2025 delivered severe damage: revenue fell 33% and operating margin sank to -20.1%, driven by FA business startup costs and FOSB price erosion. Three simultaneous turning-point dynamics—FA activity cessation, HBM carrier supply commencement, and front-end FOUP qualification test entry—create genuine scope for a directional shift in FY2026 earnings. Counterbalancing concerns include the structural pricing headwind from FOSB reuse market expansion, meaningful uncertainty around FOUP qualification success, and convertible bond dilution risk; collectively, these factors mean the current premium to book value requires demonstrated earnings recovery to be sustained. The two pivotal variables are the timing of front-end FOUP qualification approval and the pace of HBM carrier volume ramp—together they will determine both the magnitude and durability of any profitability recovery. The FOUP qualification outcome expected in H2 2026 and the upcoming FY2026 Q1 earnings disclosure will provide substantially clearer evidence of the turnaround's trajectory."
+   "ko": "3S는 국내 유일의 반도체 웨이퍼캐리어(FOSB) 생산업체라는 구조적 지위와 칩렛캐리어·PLP-FOUP 등 신기술 다각화라는 강세 요인을 지니고 있으나, 2025년 대규모 적자전환과 부채비율 상승, 영업활동현금흐름 순유출이라는 재무 부담을 동시에 안고 있다. 2025년 최대주주 교체와 경영권 분쟁은 2025년 7월 주총을 거쳐 삼성전자 반도체 출신 인사들이 합류한 새 이사회로 정리됐으나, 기존 최대주주였던 나무가 관련 중국 합작 지분 문제 등 잔여 과제는 남아 있다. 2026년 1분기 영업이익이 미소하게 흑자로 전환된 점은 손익 저점 통과 가능성을 시사하지만 지배주주 순손실은 여전히 지속되고 있어, 향후 분기 실적에서 이러한 흑자 전환이 지속되는지가 핵심 관찰 포인트다. 웨이퍼캐리어 핵심 제품인 FOSB는 양산 25년을 지나며 단가가 평준화되고 재사용 시장 확대로 수익성이 낮아진 상태여서, 신규 고부가 제품의 상용화 속도가 향후 실적 방향을 가를 변수로 보인다. 투자자는 다음 분기·반기 보고서, 신제품 공급계약 관련 수시공시, 지배구조 정리 관련 발표 등을 통해 회사의 재도약 여부를 지속적으로 확인할 필요가 있다.",
+   "en": "3S holds structural strengths as the sole domestic producer of semiconductor wafer carriers (FOSB) and through technology diversification into chiplet carriers and PLP-FOUP, but it simultaneously carries financial burdens from the sharp swing to losses in 2025, a rising debt ratio, and a net outflow in operating cash flow. The 2025 controlling-shareholder change and governance dispute were settled with a new board that includes individuals with Samsung Electronics semiconductor backgrounds, elected at the July 2025 shareholder meeting, though residual issues such as the China joint venture equity stake tied to former controlling shareholder NAMUGA remain. The marginal return to operating profit in the quarter labeled 2026Q1 suggests the company may have passed the earnings trough, but the owner net loss has continued, making the persistence of this turnaround in subsequent quarters a key point to watch. With the core FOSB product's pricing standardized after 25 years in mass production and profitability lowered by reuse-market expansion, the pace at which new higher-value products reach commercialization appears to be a key variable for future performance direction. Investors should continue to monitor upcoming quarterly and half-year reports, ad-hoc disclosures related to new product supply contracts, and announcements regarding the resolution of governance issues to track whether the company achieves a renewed growth footing."
   }
  },
  "sources": [
-  "https://comp.fnguide.com/SVO2/ASP/SVD_Main.asp?gicode=A060310",
-  "https://comp.fnguide.com/SVO2/asp/SVD_Invest.asp?pGB=1&MenuYn=Y&ReportGB=D&NewMenuID=105&stkGb=701&gicode=A060310",
-  "https://www.valueline.co.kr/finance/summary/060310",
-  "https://antwinner.com/stocks_analysis/3S",
-  "http://asp01.fnguide.com/SVO2/ASP/SVD_Main.asp?pGB=1&gicode=A060310&cID=50&MenuYn=Y&ReportGB=D&NewMenuID=Y&stkGb=701",
-  "https://m.finance.daum.net/quotes/A060310/news/stock/20250908144516969",
-  "https://www.investing.com/equities/3s-korea-co-ltd",
-  "https://kind.krx.co.kr/listinvstg/listingcompany.do?method=searchListingTypeMain",
-  "https://m.thinkpool.com/compDiscuss/cont/1010210",
-  "http://m.comp.fnguide.com/m2/company_01.asp?pGB=1&gicode=A060310&cID=AA&MenuYn=Y&color_type=W&menu_type=1&foot=Y&use_icon=111",
-  "https://m.thinkpool.com/compDiscuss/cont/1017620",
   "https://comp.wisereport.co.kr/company/c1010001.aspx?cmp_cd=060310",
+  "https://m.irgo.co.kr/IR-COMP/060310/3S-IR-PAGE",
+  "https://comp.wisereport.co.kr/company/c1020001.aspx?cmp_cd=060310&cn=",
   "https://www.k5.co.kr/stock/060310",
-  "https://m.thinkpool.com/compDiscuss/cont/1017810",
-  "https://www.financialpost.co.kr/news/articleView.html?idxno=214703",
-  "https://news.nate.com/view/20241023n06538",
+  "http://comp.fnguide.com/SVO2/asp/SVD_Main.asp?pGB=1&gicode=A060310&cID=&MenuYn=N&ReportGB=&NewMenuID=101&stkGb=1",
+  "https://deepsearch.com/analytics/company-analysis/KRX:060310?c-name=3S&c-symbol=KRX%3A060310&cd-cat=topic&cd-df=2024-05-23&cd-dt=2024-05-30",
+  "https://kind.krx.co.kr/common/disclsviewer.do?method=search&acptno=20260617000613&docno=&viewerhost=",
+  "https://markets.hankyung.com/stock/060310/financial-summary",
+  "https://markets.hankyung.com/stock/060310",
+  "https://littlebproject.com/stock/060310",
+  "http://www.thinkpool.com/itemanal/i/index.jsp?code=060310&Gcode=001_041_003",
   "https://paxnet.co.kr/tbbs/list?id=060310&tbbsType=L",
-  "https://www.reportprime.com/ko/Foup-%EC%BA%90%EB%A6%AC%EC%96%B4-r5728/company"
+  "https://comp.fnguide.com/SVO2/ASP/SVD_main.asp?MenuYn=Y&NewMenuID=11&ReportGB=&amp=&amp=&amp=&amp=&amp=&amp=&amp=&cID=&gicode=A060310&pGB=1&stkGb=&strResearchYN=",
+  "https://m.thinkpool.com/item/060310",
+  "https://m.thinkpool.com/compDiscuss/cont/1010210",
+  "https://highsso.com/3s/",
+  "https://m.thinkpool.com/compDiscuss/cont/1017620",
+  "https://www.sedaily.com/NewsView/1VLKQWNK8E"
  ],
  "v": 2,
- "model": "claude-sonnet-4-6",
+ "model": "claude-sonnet-5",
  "ticker": "060310",
  "name": "3S",
  "name_en": "3S KOREA CO., LTD",
@@ -233,11 +223,11 @@
   "전기장비"
  ],
  "market": "코스닥",
- "reportDate": "2026-06-18",
- "reportTs": "2026-06-18 05:22",
- "dataDate": "20260821",
+ "reportDate": "2026-09-05",
+ "reportTs": "2026-09-05 08:21",
+ "dataDate": "20260904",
  "quant": {
-  "asOf": "2026-08-23",
+  "asOf": "2026-09-04",
   "fs_basis": "연결(CFS) · DART 공시 확정치 · 지배주주 기준 순이익",
   "annual": [
    {
@@ -338,25 +328,29 @@
    }
   ],
   "valuation": {
-   "price": 1062,
-   "mcap": 0.0563,
+   "price": 1137,
+   "mcap": 0.0603,
    "shares": 53059040,
    "total_shares": 53059040,
    "wavg_shares": 53508178,
    "per": null,
    "eps": -205,
-   "pbr": 1.2826,
+   "pbr": 1.3732,
    "bps": 828,
    "roe_ttm": -22.6,
    "ttm_window": "2025Q2~2026Q1",
    "ttm_np_owner": -10580207137,
    "ccy": "KRW",
    "bps_src": "자체",
-   "pbr_krx": 1.14,
+   "eps_src": "공시",
+   "pbr_krx": 1.22,
    "bps_krx": 933.0,
    "basis": "PER·EPS·PBR·BPS 모두 자체 산출(네이버·토스와 동일 방식) · 배당은 DART 공시 주당현금배당금(보완:KRX) ÷ 현재가",
    "dps": 0.0,
-   "div": 0.0
+   "div": 0.0,
+   "hidden": {
+    "per": "loss"
+   }
   }
  }
 }

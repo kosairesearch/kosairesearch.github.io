@@ -1,230 +1,220 @@
 {
  "title": {
-  "ko": "수주 공백 장기화 속 미국·항만 신사업 가시화 가늠자",
-  "en": "Testing Whether U.S. Expansion and Port AGV Can Bridge the Order Gap"
+  "ko": "본업 위축 속 항만·로봇 신사업 전환기",
+  "en": "Core Business Contracts as Port, Robotics Pivot Begins"
  },
  "lead": {
-  "ko": "삼성전자 반도체 설비투자 둔화로 2025년 매출이 전년 대비 약 64% 급감·대규모 적자로 전환된 제닉스로보틱스는 고객 다변화·미국 법인 설립·스마트 항만 AGV 등 신사업으로 반등 경로를 모색 중이나, 2026년 1분기에도 영업손실이 지속돼 실적 반전 시점이 최대 관전 포인트다.",
-  "en": "With FY2025 revenue down approximately 64% YoY and the company swinging to a large net loss following a sharp curtailment of Samsung Electronics' capex, Zenix Robotics is pursuing a recovery path via customer diversification, a U.S. subsidiary, and smart-port AGV development—but the timing of an earnings turnaround remains the central question, as operating losses persisted into Q1 2026."
+  "ko": "반도체·디스플레이 물류자동화 본업이 고객사 투자 지연으로 크게 위축된 가운데, 스마트항만·유통물류·해외 파트너십 등 신사업이 성장의 다음 축으로 부상하고 있다.",
+  "en": "With its core semiconductor and display logistics automation business sharply contracting due to customer capex delays, smart port, retail logistics, and overseas partnerships are emerging as the next growth axis."
  },
  "keypoints": [
   {
-   "ko": "삼성전자 반도체 스마트팩토리 스토커 약 70% 공급이라는 독점적 지위 보유, 동시에 단일 고객 과의존 리스크 내재",
-   "en": "Near-exclusive stocker supplier (≈70% share) to Samsung Electronics' semiconductor smart-factories—a significant moat, but paired with concentrated customer risk"
+   "ko": "2025년 매출은 227억원으로 전년(635억원) 대비 크게 줄었고 영업손실 123억원으로 적자전환했다.",
+   "en": "2025 revenue fell sharply to KRW 22.7bn from KRW 63.5bn a year earlier, swinging to an operating loss of KRW 12.3bn."
   },
   {
-   "ko": "2025년 연간 매출 226.7억원·영업손실 123.1억원(OPM –54.3%)으로 상장 이후 최악의 실적 기록, 2026Q1에도 손실 지속",
-   "en": "FY2025 revenue of ₩22.7bn and operating loss of ₩12.3bn (OPM –54.3%) represent the weakest annual performance since listing, with losses extending into Q1 2026"
+   "ko": "2026년 들어 분기 매출은 완만히 회복(1분기 43억원→2분기 45억원)되고 순손실 규모도 좁혀지는 흐름이 나타난다.",
+   "en": "In 2026, quarterly revenue has shown a mild recovery (Q1 KRW 4.3bn to Q2 KRW 4.5bn) with the net loss narrowing sequentially."
   },
   {
-   "ko": "2026년 4월 ESS 이송용 고하중 AMR 공급계약(30.1억원) 체결—사업 다각화의 첫 공시 성과",
-   "en": "A ₩3.0bn ESS high-load AMR supply contract signed in April 2026 marks the first publicly disclosed win from the diversification strategy"
+   "ko": "부산항 PoC 업무협약, 포스코와의 65톤급 AGV 개발, 서진시스템과의 베트남 로봇 파운드리 MOU 등 신사업 파이프라인이 확대되고 있다.",
+   "en": "The new-business pipeline is expanding via a Busan Port PoC agreement, 65-ton AGV development with POSCO, and a Vietnam robot-foundry MOU with Seojin System."
   },
   {
-   "ko": "스마트 항만 대형 AGV(65톤급 개발 완료, 100톤급 개발 중) 및 미국 현지법인(Zenix Robotics USA) 설립으로 중장기 성장 경로 구체화",
-   "en": "Long-term growth pipeline includes 65-ton port AGV (complete) and 100-ton (in development), plus a newly established California subsidiary"
+   "ko": "2026년 4월 ESS 이송용 고하중 AMR 공급계약을 체결했고, 7월에는 10억원 규모 자사주 매입 신탁계약을 공시했다.",
+   "en": "In April 2026 the company signed a heavy-load AMR supply contract for ESS transport, and in July disclosed a KRW 1bn treasury-stock trust purchase."
   },
   {
-   "ko": "2025년 12월 전환사채(약 120~150억원) 발행으로 단기 유동성 확보, CB 전환 시 주식 희석 리스크 상존",
-   "en": "~₩12–15bn CB issuance in December 2025 bolstered near-term liquidity, but conversion into equity introduces ongoing dilution risk"
+   "ko": "엔비디아 CEO 젠슨 황의 한국 로보틱스 발언(2026년 6월) 이후 국내 로봇 테마주 전반이 강세를 보이며 동반 주목을 받았다.",
+   "en": "Following NVIDIA CEO Jensen Huang's comments on Korean robotics in June 2026, domestic robotics-themed stocks broadly attracted attention together."
   }
  ],
  "business": {
-  "ko": "제닉스로보틱스는 2010년 설립된 자동화 물류 시스템(AMHS) 전문 기업으로, 코스닥에는 2024년 9월 상장했다. 주력 제품은 반도체·디스플레이 공정용 스토커(Stocker)·무인운반차(AGV)·자율이동로봇(AMR) 및 통합 관제 소프트웨어다. 스토커는 반도체 웨이퍼가 담긴 운송용기(FOUP)의 저장·반입·반출을 자동화하는 장비로, 삼성전자 반도체 스마트팩토리 공정용 스토커의 약 70%를 공급하고 있으며, 회사 측은 삼성전자 특수 스토커의 유일한 공급사임을 강조한다. 주요 고객은 삼성전자, 삼성디스플레이, 세메스, 현대자동차, 현대로템, 중국 BOE 등 글로벌 제조 대기업이며, 2025년 3분기 기준 특정 단일 고객이 누적 매출의 약 74%를 점유하는 고객 집중 구조다. 현재 회사는 반도체·디스플레이 외에 2차전지, 자동차 생산라인, 스마트 항만 물류 자동화로 사업 다각화를 추진 중이다. 항만용 대형 AGV(65톤급 개발 완료·100톤급 개발 중)·AI 기반 통합 관제 플랫폼을 신성장 동력으로 육성하고 있으며, 포스코와의 협업을 통해 200대 이상의 AGV를 동시에 제어하는 시스템 역량도 확보했다. 미국 캘리포니아에 Zenix Robotics USA를 설립해 삼성전자 텍사스 테일러·오스틴 팹, 현대차 조지아 공장 등을 대상으로 북미 영업을 본격화하고 있다. 경쟁사로는 반도체·디스플레이 물류 자동화 분야에서 에스에프에이·에이테크솔루션 등이 있으며, 항만 AGV 분야에서는 향후 글로벌 업체와의 경쟁이 예상된다.",
-  "en": "Founded in 2010 and listed on KOSDAQ in September 2024, Zenix Robotics specializes in automated material handling systems (AMHS) for semiconductor, display, secondary battery, and automotive production environments. Core products are semiconductor-process Stockers, AGVs (Automated Guided Vehicles), AMRs (Autonomous Mobile Robots), and integrated fleet-management software. The Stocker automates the storage, loading, and unloading of FOUPs (Front Opening Unified Pods) in fab cleanrooms; the company supplies roughly 70% of Samsung Electronics' smart-factory semiconductor stocker demand and states it is the sole supplier of Samsung-specific special-purpose stocker systems. Key customers include Samsung Electronics, Samsung Display, SEMES, Hyundai Motor, Hyundai Rotem, and China's BOE, with a single major customer (reportedly Samsung Electronics) accounting for approximately 74% of cumulative revenue as of Q3 2025—a significant concentration. The company is actively diversifying into secondary batteries, automotive assembly, and smart-port logistics automation. A 65-ton port AGV system is complete and a 100-ton unit is in development; in collaboration with POSCO, Zenix has demonstrated simultaneous control of 200+ AGVs. Zenix Robotics USA was established in California to address Samsung's Texas Taylor and Austin fabs, Hyundai Motor's Georgia plant, and other North American customers. Domestic rivals in semiconductor/display AMHS include SFA and Atech Solution, while competition in the port-AGV segment is expected from global players."
+  "ko": "제닉스로보틱스는 충청남도 천안에 본사를 둔 자동화 물류 시스템(AMHS) 전문기업으로, 반도체·디스플레이·2차전지·자동차 등 첨단 제조 현장에 필요한 무인운반차(AGV), 자율주행로봇(AMR), 스토커(Stocker)를 개발·공급한다. 회사는 자동화 물류 시스템(AMHS) 전문 업체로 AGV 및 AMR의 전체 제어 시스템을 자체 내재화했다는 평가를 받으며, 반도체·디스플레이·2차전지·자동차 등 다양한 산업군에 자동화 물류 시스템을 공급하고 있다. 글로벌 대기업 제조 라인에 AGV와 AMR을 700대 이상 공급하며 기술력을 검증받은 것으로 알려졌다. 최근에는 포스코와의 협업을 통해 스마트 항만에서 요구되는 최대 65톤급 AGV 시스템 개발에 성공했으며, 200대 이상의 AGV를 동시에 제어할 수 있는 컨트롤 시스템을 보유하고 있다. 신사업 축으로는 유통 물류 자동화가 있는데, 대구 농수산물도매시장에서 무인지게차와 AMR을 활용한 자동화 솔루션 시연을 진행해 고밀도 물류 현장으로 영역을 넓히고 있다. 아울러 지난 3월 부산항과 항만 자동화를 위한 개념검증(PoC) 업무협약을 체결하며 글로벌 스마트 항만 구축이라는 대형 프로젝트에 본격 진입했다. 글로벌 제조 파트너십 측면에서는 서진시스템과 'AI 기반 로봇 파운드리 기술 협력' 양해각서를 체결해 베트남 생산기지를 활용한 현지 생산·조립 협력, 공동 기술 검증(PoC), 글로벌 고객 대상 공동 사업 기회 발굴을 단계적으로 추진하기로 했다. 경쟁 구도는 로보스타, 뉴로메카, 레인보우로보틱스, 두산로보틱스 등 국내 로봇·자동화 기업들과 함께 형성되어 있으며, 회사는 반도체·디스플레이 라인에서 축적한 레퍼런스를 바탕으로 항만·물류·ESS 등으로 응용 영역을 확장하는 전략을 취하고 있다.",
+  "en": "Zenix Robotics, headquartered in Cheonan, Chungnam Province, is an automated material handling system (AMHS) specialist that develops and supplies automated guided vehicles (AGV), autonomous mobile robots (AMR), and stockers for advanced manufacturing sites in semiconductors, displays, secondary batteries, and automobiles. The company is regarded as having internalized the entire control system for its AGV and AMR products, and it supplies automated logistics systems across the semiconductor, display, battery, and automotive industries. It is reported to have supplied more than 700 AGV and AMR units to global manufacturing lines, establishing a track record of proven technology. More recently, in collaboration with POSCO, the company succeeded in developing an AGV system capable of carrying up to 65 tons for smart port applications, and it holds a control system capable of simultaneously operating more than 200 AGVs. On the new-business front, the company has expanded into retail logistics automation, demonstrating automated forklift and AMR solutions at the Daegu Agricultural and Marine Products Wholesale Market to extend its reach into high-density logistics sites. In March it also signed a proof-of-concept (PoC) memorandum of understanding with Busan Port for port automation, formally entering the large-scale smart port project. On the global manufacturing partnership side, it signed an \"AI-based robot foundry technology cooperation\" memorandum with Seojin System to pursue, in stages, local production and assembly in Vietnam, joint technology verification, and joint business development for global customers. The competitive landscape includes domestic robotics and automation companies such as Robostar, Neuromeka, Rainbow Robotics, and Doosan Robotics, and the company's strategy is to leverage its accumulated reference base in semiconductor and display lines to expand applications into ports, logistics, and energy storage systems."
  },
  "earnings": {
-  "ko": "2024년(연결 기준) 매출 634.7억원·영업이익 43.1억원(OPM 6.8%)·순이익 60.5억원을 기록하며 상장 첫 해 흑자 기조를 유지했다. 그러나 2025년은 매출이 226.7억원으로 전년 대비 약 64% 급감하고, 영업손실 123.1억원(OPM –54.3%)·순손실 73.2억원을 기록하며 대규모 적자로 전환됐다. 부채비율은 2024년 40.6%에서 2025년 51.0%로 상승했으며, 자기자본은 484.1억원으로 감소했다. 분기별로 손실이 단계적으로 확대돼 2025Q1 영업손실 15.4억원→Q2 29.1억원→Q3 37.9억원→Q4 40.7억원으로 악화됐으며, 특히 2025Q4 매출은 18.9억원으로 극도로 위축됐다. 2026Q1에는 매출 43.2억원으로 전 분기 대비 약 2.3배 반등했으나 영업손실은 31.1억원으로 여전히 적자 구조가 지속 중이다. 2025년 영업활동현금흐름은 16.98억원으로 간신히 플러스를 유지했으나, 이는 운전자본 변동 효과가 반영된 것으로 영업이익 수준의 수익성 회복과는 구분해야 한다. 2025년 실적 악화의 핵심 원인은 반도체 공정 내 웨이퍼 재고관리 효율성 저하, 삼성전자 생산라인 가동률 감소, 자동차 생산라인용 AGV 수요 감소 및 신규 프로젝트 지연이었다. 2025년 3분기 기준 스토커 수출 단가가 2024년(약 13.4억원) 대비 약 4.5억원 수준으로 급락하며 원가 부담이 가중된 점도 손익에 추가 압박을 줬다.",
-  "en": "In FY2024 (consolidated), Zenix posted revenue of ₩63.5bn, operating profit of ₩4.3bn (OPM 6.8%), and net profit of ₩6.0bn, maintaining profitability in its listing year. FY2025, however, saw revenue collapse 64% to ₩22.7bn, with an operating loss of ₩12.3bn (OPM –54.3%) and net loss of ₩7.3bn—a sharp swing to large losses. The debt-to-equity ratio climbed from 40.6% (2024) to 51.0% (2025), and equity fell to ₩48.4bn. On a quarterly basis, losses progressively deepened: Q1 2025 operating loss of ₩1.5bn widened to ₩2.9bn in Q2, ₩3.8bn in Q3, and ₩4.1bn in Q4, with Q4 revenue collapsing to just ₩1.9bn. Q1 2026 showed partial recovery—revenue rebounded to ₩4.3bn (roughly 2.3× Q4 2025)—but the operating loss of ₩3.1bn confirms that the underlying loss structure persists. FY2025 operating cash flow was marginally positive at ₩1.7bn, though this reflects working-capital movements rather than genuine operating profitability. The main drivers of the 2025 deterioration were declining wafer inventory-management efficiency in semiconductor lines, reduced Samsung Electronics fab utilization, weaker AGV demand from automotive assembly lines, and new project delays. A sharp decline in stocker export unit prices through Q3 2025 (reported at approximately ₩450mn versus ₩1.34bn in 2024) added further margin pressure."
+  "ko": "2025년 연결 매출은 227억원으로 2024년 635억원, 2023년 613억원과 비교해 크게 줄었으며, 이는 2년 연속 이어진 매출 성장세가 단절된 것이다. 영업이익 역시 2023년 32억원, 2024년 43억원 흑자에서 2025년 영업손실 123억원으로 적자전환했고, 영업이익률은 2024년 6.8%에서 2025년 -54.3%로 급격히 악화됐다. 순이익(지배주주)도 2023년 31억원, 2024년 60억원 흑자에서 2025년 순손실 73억원으로 돌아섰다. 한 매체는 이러한 손실 확대의 배경으로 주력 고객사들의 투자가 지연된 가운데 신규 장비 개발을 위한 연구개발 비용과 판관비 등 고정비 부담이 가중됐다고 짚었다. 분기별로 보면 2025년 2분기 매출 71억원·영업손실 29억원에서 4분기에는 매출이 19억원으로 급감하며 영업손실이 41억원까지 확대됐으나, 2026년 1분기 매출 43억원·영업손실 31억원, 2분기 매출 45억원·영업손실 25억원으로 매출이 완만히 회복되고 영업손실 규모는 점차 좁혀지는 흐름을 보인다. 특히 순손실은 2026년 1분기 24억원에서 2분기 5.5억원으로 크게 축소돼 손익 개선의 신호로 해석될 여지가 있다. 같은 매체는 올해 1분기에도 약 31억원의 손실을 기록했다고 전해, 본 데이터의 2026년 1분기 영업손실(31억원)과 일치하는 모습을 보였다. 재무구조 측면에서는 부채비율이 2023년 192.3%에서 2024년 40.6%로 크게 낮아졌다가 2025년 순손실 영향으로 51.0%로 다시 상승했으며, 영업활동현금흐름은 2025년에도 17억원의 양(+)의 흐름을 유지했다는 점이 눈에 띈다.",
+  "en": "Consolidated revenue in 2025 came to KRW 22.7bn, sharply down from KRW 63.5bn in 2024 and KRW 61.3bn in 2023, breaking a two-year growth streak. Operating profit also reversed from gains of KRW 3.2bn in 2023 and KRW 4.3bn in 2024 to an operating loss of KRW 12.3bn in 2025, with the operating margin deteriorating sharply from 6.8% in 2024 to -54.3% in 2025. Net income attributable to owners likewise swung from profits of KRW 3.1bn in 2023 and KRW 6.0bn in 2024 to a net loss of KRW 7.3bn in 2025. One outlet attributed the widening losses to delayed capital expenditure by major customers alongside a growing fixed-cost burden from R&D spending on new equipment development and SG&A. By quarter, revenue of KRW 7.1bn and an operating loss of KRW 2.9bn in Q2 2025 gave way to a sharp revenue drop to KRW 1.9bn and an operating loss widening to KRW 4.1bn in Q4 2025, before revenue recovered mildly to KRW 4.3bn in Q1 2026 and KRW 4.5bn in Q2 2026, with operating losses narrowing to KRW 3.1bn and KRW 2.5bn, respectively. Notably, the net loss shrank substantially from KRW 2.4bn in Q1 2026 to KRW 0.55bn in Q2 2026, which may be read as an early sign of improving bottom-line performance. The same outlet reported an operating loss of roughly KRW 3.1bn in the first quarter of this year, consistent with the KRW 3.1bn operating loss for Q1 2026 in the underlying data. On the balance sheet, the debt-to-equity ratio fell sharply from 192.3% in 2023 to 40.6% in 2024 before rising again to 51.0% in 2025 amid the net loss, while operating cash flow remained positive at KRW 1.7bn even in 2025."
  },
  "industry": {
-  "ko": "글로벌 반도체 설비투자는 2024년 하반기부터 HBM 및 AI 반도체 수요 확대를 중심으로 점진적 회복세에 접어들었으며, 이에 따라 반도체 공정 장비 및 물류 자동화 수요도 증가하는 추세다. 삼성전자의 평택·테일러(미국) 등 신규 팹 증설이 재추진될 경우 스토커·AMHS 업체에 직접적인 수혜가 예상되며, 회사 측도 삼성전자 평택 공장 증설 재개를 핵심 수주 회복 계기로 기대하고 있다. 스마트 항만 AGV 시장은 2022~2026년 약 1.2조원, 2027~2031년 약 3.9조원 규모로 성장이 전망돼 중장기 신시장으로 부각되고 있다. 국내 반도체 장비·부품 업체들은 고객사 설비 투자 사이클에 따라 실적 변동성이 크며, 단일 고객사 의존도가 높을수록 사이클 민감도가 높아 제닉스의 2025년 실적이 이를 단적으로 보여줬다. 엔비디아 젠슨 황 CEO가 한국 로보틱스 생태계에 대한 관심을 언급하면서 2026년 6월 국내 로봇 관련주에 투자자 이목이 집중됐으나, 개별 기업의 실제 매출 연결 여부는 별도 검증이 필요하다. 삼성전자가 이르면 2026년 하반기 휴머노이드 로봇을 반도체 공정에 시범 투입할 계획이라는 보도도 있어 정밀 제어·이송 솔루션 업체에 대한 구조적 관심이 이어지고 있다. 미국·일본 등 주요국의 반도체 공장 건설 투자 확대는 현지 AMHS 수요 창출이라는 새로운 기회 환경을 조성하고 있다.",
-  "en": "Global semiconductor capex entered a gradual recovery phase in H2 2024, led by HBM and AI-chip investment, which is lifting demand for both semiconductor process equipment and in-fab logistics automation. A restart of Samsung Electronics' Pyeongtaek and Texas Taylor fab expansions would directly benefit stocker and AMHS suppliers—a scenario the company itself cites as its primary order-recovery catalyst. The smart-port AGV market is projected to grow from approximately ₩1.2tn (2022–2026) to around ₩3.9tn (2027–2031), making it a compelling medium-term addressable market. Korean semiconductor equipment and component makers are highly sensitive to customer capex cycles; Zenix's 2025 earnings are a clear illustration of how sharply single-customer concentration amplifies this risk. NVIDIA CEO Jensen Huang's June 2026 comments on Korean robotics drove a broad rally in domestic robotics-related stocks, though actual revenue linkages for individual companies remain to be confirmed. Reports that Samsung Electronics plans to begin trialling humanoid robots in semiconductor processes as early as H2 2026 sustain structural investor interest in precision-control and material-handling solution providers. Ongoing fab construction investment in the U.S. and Japan is creating new international demand for AMHS, which Zenix's U.S. subsidiary is positioned to capture."
+  "ko": "회사의 본업인 반도체·디스플레이 물류자동화는 전방 고객사의 설비투자(CAPEX) 사이클에 크게 좌우되는 구조다. 한 매체는 전방 산업인 반도체 업황이 기나긴 침체기를 지나 회복 사이클에 진입하면서 고객사들의 미뤄졌던 설비투자가 재개된 것이 최근 신사업 확장의 배경이라고 짚었다. 동시에 회사는 항만·유통물류·에너지저장장치(ESS) 등으로 응용 분야를 넓히며 반도체·디스플레이 의존도를 낮추는 다각화를 추진하고 있다. 2026년 6월에는 엔비디아 CEO 젠슨 황이 한국 로보틱스 산업에 관심을 표하며 방한한 것을 계기로 로보스타, 레인보우로보틱스, 뉴로메카, 두산로보틱스 등과 함께 제닉스로보틱스도 국내 로봇 테마주로 동반 주목을 받았다. 다만 이러한 테마성 관심은 개별 기업의 수주·실적과는 별개로 시장 전반의 관심도 변화에 따라 출렁이는 경향이 있다는 점도 함께 고려할 필요가 있다. 항만 자동화 분야에서는 부산항과의 PoC 협약, 포스코와의 65톤급 AGV 개발 등으로 대형 물류 현장 진출 초기 단계에 있으며, 이 분야는 HD현대그룹 계열의 AI 화물운영 솔루션 개발 등 대기업들도 뛰어들고 있어 경쟁이 형성되는 중이다. 종합적으로 회사는 기존 반도체·디스플레이 중심 AMHS 공급사에서 항만·물류·ESS까지 응용 영역을 넓히는 전환기에 있으며, 성과의 상당 부분은 아직 PoC·MOU 단계에 머물러 있어 본계약·매출 반영까지는 시일이 필요한 구조다.",
+  "en": "The company's core semiconductor and display logistics automation business is heavily dependent on the capital expenditure cycles of its front-end customers. One outlet noted that the recent expansion into new businesses comes as the semiconductor industry emerges from a prolonged downturn into a recovery cycle, with customers resuming previously delayed capex. At the same time, the company is diversifying into ports, retail logistics, and energy storage systems (ESS) to reduce its reliance on semiconductors and displays. In June 2026, following NVIDIA CEO Jensen Huang's visit to Korea and his comments expressing interest in the country's robotics industry, Zenix Robotics drew attention together with other domestic robotics-themed names such as Robostar, Rainbow Robotics, Neuromeka, and Doosan Robotics. It should be noted, however, that such thematic attention tends to fluctuate with broad market sentiment independent of any individual company's order flow or earnings. In port automation, the company is at an early stage of entering large-scale logistics sites through its PoC agreement with Busan Port and 65-ton AGV development with POSCO, a field in which large conglomerates such as the HD Hyundai group, developing its own AI cargo operation solutions, are also active, creating a competitive landscape. Overall, the company is in a transition from being primarily a semiconductor and display AMHS supplier to expanding into ports, logistics, and ESS applications, though much of this progress remains at the PoC or MOU stage, meaning time is needed before it converts into firm contracts and recognized revenue."
  },
  "outlook": {
-  "ko": "2026년 전망의 핵심 변수는 삼성전자 반도체 팹 증설 재개 여부다. 회사 관계자는 평택 공장 증설이 재추진될 경우 스토커 수주가 살아날 것으로 기대하나, 현시점에서 확정 물량은 없다고 밝혔다. 삼성전자 텍사스 테일러 팹·오스틴 공장 향 스토커 공급 협의가 병행 진행 중이며, 국내 평택·기흥·화성·천안 사업장과도 공급 논의를 확대하고 있다. 2026년 4월에는 ESS 이송용 고하중 AMR 공급계약(30.1억원)이 공시돼 사업 다각화의 첫 구체적 성과가 나타났다. 200mm 반도체 공정용 스토커도 신규 개발해 미국 내 노후 장비 교체 수요를 겨냥한 영업을 확장하고 있다. 스마트 항만 부문에서는 65톤급 AGV가 이미 완성됐고 100톤급은 수년 내 완료를 목표로 개발 중이나, 항만 자동화 물류 시스템 양산 목표 시점은 2027년으로 단기 매출 기여는 제한적이다. 회사는 AI 기반 관제 플랫폼과 통합 물류 자동화 시스템을 2026년까지 완성해 글로벌 스마트팩토리 시장 내 핵심 공급사로 도약하겠다는 중장기 전략을 제시한 바 있다.",
-  "en": "The key near-term variable is whether Samsung Electronics resumes fab expansion. A company representative has indicated that a Pyeongtaek restart would revive stocker orders, but no confirmed volume exists at present. Supply discussions for Samsung's Texas Taylor and Austin fabs are ongoing in parallel, alongside negotiations covering Samsung's domestic Pyeongtaek, Giheung, Hwaseong, and Cheonan sites. In April 2026, Zenix disclosed its first diversification contract win—a ₩3.0bn ESS high-load AMR supply agreement—providing tangible evidence of broadening revenue streams. A newly developed 200mm semiconductor-process stocker targets the U.S. replacement market for aging legacy equipment. In the smart-port segment, the 65-ton AGV is complete and the 100-ton unit is under development with a multi-year timeline; mass production of port-automation logistics systems is targeted for 2027, limiting near-term revenue contribution from this segment. The company's publicly stated medium-term ambition is to complete an AI-based integrated logistics platform by 2026 and establish itself as a key global smart-factory supplier."
+  "ko": "가장 가까운 확인 포인트는 2026년 4월 체결한 ESS 이송용 고하중 AMR 공급계약으로, 계약기간이 2026년 4월 28일부터 12월 31일까지로 설정돼 있어 연내 설치·인도 완료 여부가 매출 반영의 관전 포인트다. 항만 부문에서는 부산항과의 PoC 협약 이후 실증 결과와 후속 본계약 전환 여부가 핵심 변수이며, 포스코와 협업 중인 65톤급 AGV를 기반으로 회사가 목표로 하는 100톤급 대형 AGV 개발 진행 상황도 함께 살펴볼 필요가 있다. 서진시스템과의 로봇 파운드리 MOU는 베트남 현지 생산·조립 협력과 공동 기술검증(PoC)을 단계적으로 추진한다는 계획이어서, 실무 협의체 구성 이후 구체적 협력 과제의 진척 여부가 관찰 대상이다. 회사는 2026년 7월 한국투자증권과 10억원 규모의 자기주식 취득 신탁계약을 체결했으며, 이는 계약 체결일로부터 6개월간 유지될 예정이어서 매입 완료 시점과 실제 매입 규모도 확인이 필요하다. 유통물류 분야에서는 대구 농수산물도매시장 시연 이후 유사한 고밀도 물류 현장으로의 추가 확산 여부가 신사업 다각화의 진행 속도를 보여줄 지표가 될 수 있다. 2026년 1분기에서 2분기로 이어지며 순손실이 축소된 흐름이 하반기에도 이어질지, 반도체·디스플레이 고객사의 투자 재개 속도와 맞물려 지켜볼 대목이다.",
+  "en": "The nearest checkpoint is the heavy-load AMR supply contract for ESS transport signed in April 2026, which runs from April 28 to December 31, 2026, making the timing of installation and delivery completion within the year a key watch point for revenue recognition. In the port segment, the outcome of the Busan Port PoC and whether it converts into a follow-on definitive contract are central variables, alongside progress on the 100-ton AGV the company aims to develop building on the 65-ton platform already achieved with POSCO. The robot-foundry MOU with Seojin System calls for phased progress on local production and assembly cooperation in Vietnam and joint technology verification, so the concrete advancement of cooperation tasks after the working-level committee is formed will be worth monitoring. The company signed a KRW 1bn treasury-stock trust purchase agreement with Korea Investment & Securities in July 2026, set to run for six months from the contract date, so the completion timing and the actual purchase volume also warrant confirmation. In retail logistics, further expansion into similar high-density logistics sites following the Daegu wholesale market demonstration could serve as an indicator of the pace of new-business diversification. Whether the narrowing net loss trend seen from Q1 to Q2 2026 continues into the second half, in tandem with the pace of capex resumption among semiconductor and display customers, is a point worth watching closely."
  },
  "valuation_comment": {
-  "ko": "지속적인 영업손실로 이익 기반 밸류에이션 지표(PER)는 현재 의미 있는 비교 기준을 제공하지 못하는 상황이다. 주당순자산(BPS)은 3,468원(자체 산출 기준)으로, 현재 주가는 순자산 대비 상당한 프리미엄이 형성돼 있어 미래 실적 회복에 대한 기대가 주가에 선반영된 구간임을 시사한다. 배당은 실시되지 않아 배당수익률이 없으며, 현금 수익을 중시하는 투자자에게는 유의미한 고려 요인이다. 주가는 삼성전자 설비투자 재개 기대, 엔비디아 CEO의 한국 로보틱스 언급 등 외부 이벤트에 민감하게 반응하는 경향을 보여 왔다. 실적 기반의 주가 재평가가 이루어지려면 스토커 수주 회복 또는 신사업(ESS AMR·항만 AGV) 매출의 가시적 확대가 선행돼야 하며, 이를 검증하기 위한 후속 분기 실적 확인이 핵심 관전 포인트다.",
-  "en": "Sustained operating losses render earnings-based valuation metrics (PER) uninformative at present. Book value per share (BPS) stands at ₩3,468 (self-calculated basis), and the current share price trades at a material premium to net asset value—implying that the market is pricing in an eventual earnings recovery rather than current fundamentals. No dividends have been paid and the dividend yield is zero, which is a meaningful consideration for income-oriented investors. The stock has shown a pattern of sharp short-term moves driven by external catalysts such as Samsung capex-resumption expectations and Jensen Huang's remarks on Korean robotics. A fundamental re-rating would require tangible evidence of stocker order recovery or meaningful revenue contributions from new verticals (ESS AMR, port AGV), making upcoming quarterly earnings releases the critical datapoints to watch."
+  "ko": "회사는 2025년 순손실을 기록해 최근 네 개 분기(2025년 1분기~2025년 4분기) 기준으로도 이익이 나지 않는 구간에 있어, 통상적인 주가수익비율(PER) 방식의 비교는 의미를 갖기 어려운 상태다. 반면 주가는 순자산(자기자본) 대비로는 프리미엄이 있는 구간에서 거래되는 편이며, 이는 항만·유통물류 등 신사업에 대한 시장의 성장 기대가 일부 반영된 결과로 해석될 수 있다. 회사는 현재 배당을 지급하지 않고 있어 배당 관점에서의 매력은 제한적이다. 다년간의 실적 흐름을 보면 2023~2024년의 이익 구간에서 2025년 적자로 전환된 뒤 2026년 들어 분기 손실 규모가 점차 좁혀지는 방향을 보이고 있으나, 아직 이익 회복이 확인된 단계는 아니다. 이러한 밸류에이션 구도는 신사업의 본계약 전환 속도와 반도체·디스플레이 고객사의 투자 재개 시점에 따라 달라질 수 있는 구조로 이해할 필요가 있다.",
+  "en": "Because the company recorded a net loss in 2025 and remains unprofitable on a trailing four-quarter basis (Q1 2025 through Q4 2025), a conventional price-to-earnings comparison is difficult to apply meaningfully. On the other hand, the stock tends to trade at a premium relative to net asset value, which may partly reflect market expectations for growth from new businesses such as ports and retail logistics. The company currently does not pay a dividend, limiting its appeal from an income perspective. Looking at the multi-year earnings pattern, profitability seen in 2023-2024 turned to a loss in 2025, and while quarterly losses have progressively narrowed through 2026, a confirmed recovery to profitability has not yet been established. This valuation picture should be understood as one that could shift depending on how quickly new businesses convert into definitive contracts and when semiconductor and display customers resume capital spending."
  },
  "bull": [
   {
    "title": {
-    "ko": "삼성전자 설비투자 재개 시 스토커 독점 수혜",
-    "en": "Near-Exclusive Stocker Position to Benefit Directly When Samsung Capex Resumes"
+    "ko": "항만·유통물류 신사업 파이프라인 확대",
+    "en": "Expanding Port and Retail Logistics Pipeline"
    },
    "body": {
-    "ko": "제닉스로보틱스는 삼성전자 반도체 스마트팩토리 공정용 스토커의 약 70%를 공급하는 사실상 독점적 공급사로, 삼성전자 특수 스토커는 자체 기술로만 구현 가능하다고 회사 측은 밝히고 있다. 삼성전자가 평택·테일러 등 주요 팹 증설을 재개할 경우 스토커 수주량이 빠르게 확대될 수 있다. AI 반도체·HBM 수요 증가에 따른 삼성전자의 투자 확대는 중기 수혜 시나리오를 뒷받침한다.",
-    "en": "Zenix supplies approximately 70% of Samsung Electronics' in-fab semiconductor stocker demand and states it is the sole supplier of Samsung-specific stocker systems—with proprietary capabilities in airflow analysis, particle measurement, and FOUP alignment. A resumption of Samsung's Pyeongtaek and Taylor fab expansions could rapidly rebuild stocker order volumes. Rising AI-chip and HBM demand provides a credible medium-term catalyst for Samsung's capex resumption."
+    "ko": "부산항과의 PoC 업무협약과 포스코와의 65톤급 AGV 개발 성공으로 대형 물류 현장 진출의 초기 발판을 마련했다. 대구 농수산물도매시장 시연을 통해 유통물류라는 새로운 응용 영역도 확인했다. 이러한 신사업들이 본계약으로 이어질 경우 반도체·디스플레이 의존도를 낮추는 다각화 효과를 기대할 수 있다.",
+    "en": "The PoC memorandum with Busan Port and the successful development of a 65-ton AGV with POSCO have laid an early foothold for entry into large-scale logistics sites. A demonstration at the Daegu wholesale market also validated retail logistics as a new application area. If these new businesses convert into definitive contracts, they could help diversify away from dependence on semiconductor and display customers."
    }
   },
   {
    "title": {
-    "ko": "신사업 다각화로 삼성 의존도 구조적 완화 경로",
-    "en": "New Business Lines Offer a Path to Structurally Reducing Samsung Concentration"
+    "ko": "글로벌 제조 파트너십을 통한 확장 시도",
+    "en": "Expansion Attempts via Global Manufacturing Partnership"
    },
    "body": {
-    "ko": "2026년 4월 ESS 이송용 고하중 AMR 계약(30.1억원) 체결은 다각화 전략의 첫 가시적 성과다. 현대자동차 미국 조지아 서배너 공장에 자동화 제품 공급을 완료했고, 추가 증설 및 계열사 향 공급도 협의 중이다. 2차전지·자동차·스마트 항만 수직 시장 확장이 성공적으로 이어진다면 삼성전자 단일 의존도를 낮추고 실적 안정성을 높일 수 있다.",
-    "en": "The April 2026 ESS high-load AMR contract (₩3.0bn) is the first publicly disclosed win from the diversification strategy. Delivery of automation products to Hyundai Motor's Georgia Savannah plant has been completed, with follow-on supply for further expansions and other Hyundai group entities under discussion. Successful penetration into secondary batteries, automotive assembly, and smart-port logistics could structurally reduce Samsung concentration and improve earnings resilience."
+    "ko": "서진시스템과의 로봇 파운드리 MOU를 통해 베트남 현지 생산·조립 협력과 글로벌 고객 발굴을 단계적으로 추진하고 있다. 서진시스템의 대규모 생산 인프라를 활용하면 가격 경쟁력과 공급 안정성을 확보할 잠재력이 있다. 반도체, ESS, 항만, 물류 등 다양한 산업군을 목표로 한 협력이라는 점에서 응용 범위가 넓다.",
+    "en": "Through the robot-foundry MOU with Seojin System, the company is pursuing phased local production and assembly cooperation in Vietnam and joint discovery of global customers. Leveraging Seojin System's large-scale production infrastructure has the potential to secure price competitiveness and supply stability. The cooperation targets a broad range of industries including semiconductors, ESS, ports, and logistics."
    }
   },
   {
    "title": {
-    "ko": "스마트 항만 AGV 시장 선점 잠재력",
-    "en": "First-Mover Potential in a High-Growth Smart-Port AGV Market"
+    "ko": "손실 축소 흐름과 자사주 매입",
+    "en": "Narrowing Losses and Treasury Stock Purchase"
    },
    "body": {
-    "ko": "스마트 항만 AGV 시장은 2027~2031년 약 3.9조원 규모로 성장이 전망되는 고성장 분야다. 제닉스로보틱스는 65톤급 AGV 개발 완료 및 항만 관련 면허를 취득해 하드웨어·소프트웨어 통합 공급이 가능한 국내 최초 업체가 될 잠재력을 갖추고 있다. 포스코와의 협업으로 200대 이상 AGV 동시 제어 시스템 역량을 확보한 점은 대형 항만 프로젝트 수주 시 경쟁 우위로 작용할 수 있다.",
-    "en": "The smart-port AGV market is projected to grow to approximately ₩3.9tn during 2027–2031. Zenix has completed a 65-ton port AGV system, holds the required smart-port operating license, and through collaboration with POSCO has demonstrated simultaneous control of 200+ AGVs—positioning it as a potential first domestic integrated hardware-and-software supplier. This capability could prove a competitive differentiator when bidding for large-scale port contracts."
+    "ko": "2026년 1분기에서 2분기로 이어지며 매출이 완만히 회복되고 순손실 규모가 크게 좁혀지는 흐름이 나타났다. 회사는 같은 시기 10억원 규모의 자사주 매입 신탁계약을 체결했으며, 자본시장에서는 이를 수주잔고 반등과 신사업 확장에 대한 경영진의 자신감으로 해석하고 있다. 영업활동현금흐름이 순손실에도 양(+)의 흐름을 유지한 점도 재무 안정성 측면에서 참고할 만하다.",
+    "en": "From Q1 to Q2 2026, revenue showed a mild recovery and the net loss narrowed substantially. Around the same period, the company signed a KRW 1bn treasury-stock trust purchase agreement, which capital markets have interpreted as reflecting management's confidence in a rebound in order backlog and new-business expansion. The fact that operating cash flow remained positive despite the net loss is also worth noting from a financial stability perspective."
    }
   }
  ],
  "bear": [
   {
    "title": {
-    "ko": "삼성전자 단일 고객 과의존에 따른 구조적 실적 변동성",
-    "en": "Structural Earnings Volatility from Single-Customer Concentration"
+    "ko": "본업 매출의 급격한 위축",
+    "en": "Sharp Contraction in Core Revenue"
    },
    "body": {
-    "ko": "2025년 3분기 기준 특정 단일 고객이 누적 매출의 약 74%를 점유하는 구조는 해당 고객의 설비투자 사이클에 직접 노출됨을 의미한다. 삼성전자의 투자 둔화가 2025년 매출 64% 급감과 대규모 적자를 초래했다는 사실이 이 리스크를 명확히 보여줬다. 투자 재개 일정이 불확실한 상황에서 영업적자 구조가 2026Q1까지 지속되고 있어 수익 분기점 도달 시점을 예단하기 어렵다.",
-    "en": "With a single customer accounting for approximately 74% of cumulative revenue as of Q3 2025, the company is directly exposed to that customer's capex cycle. Samsung Electronics' investment slowdown drove a 64% revenue collapse and large losses in 2025—a stark demonstration of this concentration risk. With the capex resumption timeline uncertain and operating losses persisting into Q1 2026, the path to breakeven remains difficult to predict."
+    "ko": "2025년 매출은 227억원으로 전년 635억원에서 크게 줄었고, 영업이익률도 6.8%에서 -54.3%로 급격히 악화됐다. 주력 고객사들의 투자 지연이 직접적인 원인으로 지목됐다. 매출 기반이 축소된 상태에서 고정비 부담이 그대로 유지되며 손익 악화가 심화된 구조다.",
+    "en": "2025 revenue fell sharply to KRW 22.7bn from KRW 63.5bn a year earlier, and the operating margin deteriorated drastically from 6.8% to -54.3%. Delayed investment by major customers was cited as a direct cause. With the revenue base shrinking while fixed costs remained largely unchanged, the deterioration in profitability was compounded."
    }
   },
   {
    "title": {
-    "ko": "빠른 현금 소진과 CB 발행에 따른 자본 희석 우려",
-    "en": "Rapid Cash Burn and Equity Dilution Risk from CB Issuance"
+    "ko": "지속되는 분기 적자와 고정비 부담",
+    "en": "Persistent Quarterly Losses and Fixed-Cost Burden"
    },
    "body": {
-    "ko": "2025년 3분기 말 유동자산이 2024년 말 대비 약 48% 감소하며 재무 체력이 급격히 소진됐다. 2025년 12월 전환사채(약 120~150억원) 발행으로 단기 유동성을 확보했으나, CB 전환 시 주식 수 증가로 기존 주주의 지분이 희석된다. 적자가 지속될 경우 추가 자금 조달 필요성이 재대두될 수 있어 재무 건전성 모니터링이 중요하다.",
-    "en": "Liquid assets fell by approximately 48% in the nine months to Q3 2025, rapidly eroding financial headroom. The December 2025 CB issuance (~₩12–15bn) provided near-term liquidity, but conversion into equity would dilute existing shareholders. If losses continue, the need for further capital raises could re-emerge, making financial health monitoring an ongoing priority."
+    "ko": "2025년 2분기부터 2026년 2분기까지 확인 가능한 모든 분기에서 영업손실이 지속되고 있다. 손실 규모가 점차 좁혀지고는 있으나 아직 흑자전환이 확인되지 않았다. 신규 장비 개발을 위한 연구개발비와 판관비 등 고정비 부담이 매출 회복 속도를 앞지를 경우 손익 개선이 지연될 수 있다.",
+    "en": "Operating losses have persisted in every quarter for which data is available, from Q2 2025 through Q2 2026. While the loss size has been gradually narrowing, a return to profitability has not yet been confirmed. If the fixed-cost burden from R&D spending on new equipment development and SG&A outpaces the speed of revenue recovery, the improvement in profitability could be delayed."
    }
   },
   {
    "title": {
-    "ko": "신사업 매출 기여 시점 불확실·초기 가이던스 미달 이력",
-    "en": "Uncertain New-Business Revenue Timing and Track Record of Missing Guidance"
+    "ko": "신사업의 초기 단계 리스크",
+    "en": "Early-Stage Risk of New Businesses"
    },
    "body": {
-    "ko": "항만 자동화 물류 시스템 양산 목표가 2027년으로 단기 실적 기여가 어렵고, 미국 법인 설립·200mm 스토커 개발 등 신사업 관련 비용이 단기 손익에 부담을 준다. 상장 당시 제시한 2024년 매출 638억원·영업이익 61억원 목표와 실제 실적 사이의 큰 괴리는 가이던스 신뢰도를 낮추는 요인이다. 고정비 구조 상 매출 회복 속도가 더디면 흑자 전환이 상당히 지연될 수 있다.",
-    "en": "Port-automation mass production is targeted for 2027, limiting near-term revenue contribution, while costs from the U.S. subsidiary and 200mm stocker development weigh on margins. Significant gaps between IPO-era guidance (2024 revenue ₩63.8bn, operating profit ₩6.1bn) and actual results have created a credibility overhang with investors. Given the fixed-cost structure, a slow revenue recovery could substantially delay a return to profitability."
+    "ko": "부산항 PoC, 서진시스템 MOU 등 신사업 대부분이 아직 개념검증(PoC)이나 업무협약(MOU) 단계에 머물러 있어 매출로 이어지기까지는 시일이 필요하다. 항만 자동화 분야에는 HD현대그룹 등 대형 자본력을 가진 경쟁자들도 뛰어들고 있어 경쟁 강도가 높아질 가능성이 있다. 로봇 테마 전반에 대한 시장의 관심이 개별 기업의 수주 실적과 반드시 일치하지는 않는다는 점도 유의할 부분이다.",
+    "en": "Most new businesses, including the Busan Port PoC and the Seojin System MOU, remain at the proof-of-concept or memorandum stage, meaning time is needed before they translate into revenue. In port automation, competitors with substantial capital, such as the HD Hyundai group, are also entering the field, raising the possibility of intensifying competition. It is also worth noting that broad market interest in the robotics theme does not necessarily align with any individual company's actual order performance."
    }
   }
  ],
  "risks": [
   {
    "cat": {
-    "ko": "고객 집중·설비투자 사이클 리스크",
-    "en": "Customer Concentration & Capex Cycle Risk"
+    "ko": "고객 집중 및 전방산업 의존",
+    "en": "Customer Concentration and Front-End Industry Dependence"
    },
    "body": {
-    "ko": "삼성전자 단일 고객 의존도가 70% 이상으로 주요 고객의 설비투자 계획 변경이 제닉스의 실적에 즉각적이고 크게 영향을 미친다. 반도체 업황 둔화 시 스토커 수주량이 급감하는 구조적 취약점이 2025년 실적에서 이미 확인됐다. 삼성전자의 팹 가동률·증설 계획 동향이 실적의 가장 핵심적인 선행 지표로 지속 모니터링이 필요하다.",
-    "en": "Over 70% revenue concentration with Samsung Electronics means any revision to the key customer's capex plans directly and materially impacts Zenix's financials. The structural vulnerability to rapid stocker-order contraction during semiconductor downturns was clearly demonstrated in FY2025. Samsung's fab utilization and expansion plans are the single most important leading indicator for Zenix's earnings and must be closely tracked."
+    "ko": "회사의 매출은 삼성전자·삼성디스플레이·현대자동차 등 소수 대형 고객사의 설비투자 일정에 크게 좌우되는 구조다. 2025년 매출 급감의 직접적 배경도 주력 고객사의 투자 지연으로 지목됐다. 향후에도 특정 산업·고객사의 투자 시점이 지연될 경우 실적 변동성이 재차 확대될 수 있다.",
+    "en": "The company's revenue is heavily dependent on the capex schedules of a small number of large customers such as Samsung Electronics, Samsung Display, and Hyundai Motor. The sharp revenue decline in 2025 was directly attributed to delayed investment by major customers. If investment timing in specific industries or customers is delayed again in the future, earnings volatility could widen once more."
    }
   },
   {
    "cat": {
-    "ko": "유동성 및 자본 희석 리스크",
-    "en": "Liquidity & Dilution Risk"
+    "ko": "신사업 실행 리스크",
+    "en": "New-Business Execution Risk"
    },
    "body": {
-    "ko": "지속적인 영업손실로 현금이 소진되고 있으며, 2025년 12월 발행한 전환사채가 주식으로 전환될 경우 지분 희석이 발생한다. 실적 회복이 늦어질 경우 추가적인 자금 조달 가능성이 있으며, 이는 기존 주주 가치에 부정적 영향을 줄 수 있다. 부채비율이 2024년 40.6%에서 2025년 51.0%로 상승한 점도 재무 레버리지 관리 측면에서 유의해야 할 부분이다.",
-    "en": "Sustained operating losses continue to erode cash, and conversion of the December 2025 CB into equity would dilute existing shareholders. If the earnings recovery is delayed, further financing rounds may be necessary, potentially impacting existing shareholder value. The rise in the debt ratio from 40.6% (2024) to 51.0% (2025) also warrants attention from a financial-leverage management perspective."
+    "ko": "부산항 PoC, 서진시스템 MOU, 100톤급 AGV 개발 목표 등 신사업 관련 발표는 대부분 구속력이 낮은 업무협약이나 개발 단계에 머물러 있다. 계약 규모나 일정이 구체적으로 공개되지 않은 경우가 많아 실제 매출 반영까지 불확실성이 남아있다. 신규 응용 분야 진입에는 기존 반도체·디스플레이 사업과는 다른 기술·인증 요건이 수반될 수 있다.",
+    "en": "Announcements related to new businesses, such as the Busan Port PoC, the Seojin System MOU, and the 100-ton AGV development target, mostly remain at the stage of low-binding memoranda or ongoing development. Contract size and timing are often not disclosed in detail, leaving uncertainty until they are actually reflected in revenue. Entering new application areas may involve different technical and certification requirements than the existing semiconductor and display business."
    }
   },
   {
    "cat": {
-    "ko": "신사업 실행 및 기술 개발 리스크",
-    "en": "New Business Execution & Technology Development Risk"
+    "ko": "재무구조 및 자본 리스크",
+    "en": "Financial Structure and Capital Risk"
    },
    "body": {
-    "ko": "스마트 항만 AGV·AI 관제 플랫폼 등 신사업은 개발·상용화 초기 단계로, 기술 개발 지연이나 시장 진입 실패 시 투자 비용 회수가 어려울 수 있다. 미국 시장 진출은 현지 인허가·경쟁 환경·고객사 관계 구축에 상당한 시간과 비용이 소요된다. 상장 당시 제시된 2030년 매출 3,000억원 목표와 현재 실적 추이 사이의 큰 괴리는 실행 리스크의 실재를 보여준다.",
-    "en": "Smart-port AGV and AI fleet-management platforms are in early development/commercialization stages; delays or market-entry failures could impair capital recovery. U.S. market penetration requires substantial time and cost for regulatory approvals, competitive positioning, and customer relationship-building. The large gap between the IPO-era ₩300bn-by-2030 revenue target and the current trajectory is a salient reminder of the execution risks involved."
+    "ko": "지배주주 자기자본은 2024년 572억원에서 2025년 484억원으로 순손실 영향에 따라 축소됐고, 부채비율도 40.6%에서 51.0%로 다시 높아졌다. 적자가 장기화될 경우 추가적인 자본 확충이나 외부 조달이 필요해질 가능성을 배제할 수 없다. 다만 2025년에도 영업활동현금흐름이 17억원의 양(+)의 흐름을 유지한 점은 즉각적인 유동성 위험을 완화하는 요인이다.",
+    "en": "Owners' equity contracted from KRW 57.2bn in 2024 to KRW 48.4bn in 2025 due to the net loss, and the debt-to-equity ratio rose again from 40.6% to 51.0%. If losses persist over an extended period, the possibility of needing additional capital raises or external funding cannot be ruled out. However, the fact that operating cash flow remained positive at KRW 1.7bn even in 2025 mitigates immediate liquidity risk."
    }
   }
  ],
  "checkpoints": [
   {
    "when": {
-    "ko": "2026년 8월 중순",
-    "en": "Mid-August 2026"
+    "ko": "2026년 12월 31일까지",
+    "en": "By December 31, 2026"
    },
    "what": {
-    "ko": "2026Q2 분기 실적 발표: 매출 회복 속도(스토커 수주 반영 여부)·영업손실 개선 폭 확인, 수주잔고 증가 여부가 핵심 관찰 지표.",
-    "en": "Q2 2026 earnings release: monitor the pace of revenue recovery (especially whether stocker orders are flowing through), the magnitude of operating-loss improvement, and the order-backlog trend."
+    "ko": "4월 체결한 ESS 이송용 고하중 AMR 공급계약의 설치·인도 완료 여부와 매출 반영 규모를 확인해야 한다.",
+    "en": "Check whether the heavy-load AMR supply contract for ESS transport signed in April is completed for installation and delivery, and how much revenue it contributes."
    }
   },
   {
    "when": {
-    "ko": "2026년 하반기 지속",
-    "en": "Throughout H2 2026"
+    "ko": "2026년 11월 중순경(3분기 보고서 공시 시점)",
+    "en": "Around mid-November 2026 (Q3 report filing)"
    },
    "what": {
-    "ko": "삼성전자 평택·테일러 팹 증설 재개 여부 및 스토커 발주 공시: 삼성전자의 투자 재개 공식 발표 시점과 수주 규모·납품 일정이 실적 방향성을 좌우하는 결정적 변수.",
-    "en": "Official confirmation of Samsung Electronics' Pyeongtaek/Taylor fab expansion restart and any disclosed stocker orders—these would be decisive for determining Zenix's earnings trajectory."
+    "ko": "2026년 3분기 실적에서 매출 회복과 손실 축소 흐름이 이어지는지, 신사업 관련 매출 기여가 나타나는지 확인해야 한다.",
+    "en": "Check whether Q3 2026 results continue the trend of revenue recovery and narrowing losses, and whether new businesses begin contributing to revenue."
    }
   },
   {
    "when": {
-    "ko": "2026년 상시(CB 전환 동향)",
-    "en": "Ongoing 2026 (CB conversion monitoring)"
+    "ko": "2027년 1월 14일까지",
+    "en": "By January 14, 2027"
    },
    "what": {
-    "ko": "전환사채(CB) 전환 동향 및 신규 자금 조달 공시: CB 전환에 따른 주식 수 변화와 추가 자본 조달 여부가 희석 리스크와 재무 여력을 직접 결정.",
-    "en": "CB conversion activity and any new financing disclosures: track changes in share count from CB conversions and whether additional capital raises occur, as these directly determine dilution risk and financial runway."
+    "ko": "한국투자증권과 체결한 10억원 규모 자사주 매입 신탁계약의 매입 완료 시점과 실제 매입 규모를 확인해야 한다.",
+    "en": "Check the completion timing and actual purchase volume of the KRW 1bn treasury-stock trust purchase agreement signed with Korea Investment & Securities."
    }
   },
   {
    "when": {
-    "ko": "2026년 4분기~2027년 초",
-    "en": "Q4 2026 – Early 2027"
+    "ko": "2026년 하반기 중",
+    "en": "During the second half of 2026"
    },
    "what": {
-    "ko": "100톤급 스마트 항만 AGV 개발 완료 일정 업데이트 및 항만 분야 첫 수주 공시 여부: 신사업 매출 기여 가능성을 실질적으로 검증하는 이정표.",
-    "en": "Development completion timeline update for the 100-ton smart-port AGV and first publicly announced port-logistics contract: these would be concrete milestones validating new-segment revenue potential."
-   }
-  },
-  {
-   "when": {
-    "ko": "2026년 하반기",
-    "en": "H2 2026"
-   },
-   "what": {
-    "ko": "미국 현지법인(Zenix Robotics USA)을 통한 북미 수주 공시 여부: 삼성전자 테일러 팹·현대차 계열사 향 추가 납품 계약이 확정되면 글로벌 다각화 전략 진전을 확인할 수 있다.",
-    "en": "North American order disclosures via Zenix Robotics USA: confirmed contracts for Samsung's Taylor fab or Hyundai Motor affiliates would be key milestones validating the global diversification strategy."
+    "ko": "부산항 PoC 실증 결과와 후속 본계약 전환 여부, 100톤급 대형 AGV 개발 진행 상황을 확인해야 한다.",
+    "en": "Check the outcome of the Busan Port PoC demonstration, whether it converts into a follow-on definitive contract, and progress on developing the 100-ton large AGV."
    }
   }
  ],
  "verdict": {
   "body": {
-   "ko": "제닉스로보틱스는 삼성전자 반도체 공정용 스토커 사실상 독점 공급이라는 강력한 진입 장벽을 보유하고 있으나, 2025년 삼성전자 설비투자 급감이 직격하면서 매출·이익 모두 크게 악화됐고 2026년 1분기에도 영업손실이 이어지고 있다. AGV·AMR 기술력을 바탕으로 현대차 미국 공장 납품 완료, ESS AMR 신규 계약 등 다각화의 초기 성과가 나타나고 있으며, 스마트 항만·북미 시장 진출도 구체화 단계에 접어들고 있다. 그러나 주력 고객 설비투자 재개 일정의 불확실성과 신사업 양산 시점(2027년 이후)을 감안하면 단기 실적 개선 여력은 제한적이다. 2025년 12월 CB 발행으로 유동성을 확보했지만 손실이 지속될 경우 추가 자본 조달 가능성과 지분 희석 위험이 잔존한다. 투자자 입장에서는 삼성전자 스토커 발주 재개 여부, 분기 매출 회복 속도, 신규 수주잔고 추이를 핵심 지표로 삼아 실적 개선 여부를 점진적으로 검증하는 것이 합리적인 접근이다.",
-   "en": "Zenix Robotics holds a powerful competitive position as the near-exclusive stocker supplier to Samsung Electronics' semiconductor fabs, but the sharp curtailment of Samsung's capex drove a severe deterioration in FY2025 revenue and earnings, with operating losses extending into Q1 2026. Early diversification wins—delivery to Hyundai Motor's Georgia plant, the ESS AMR contract—and advancing plans for smart-port AGV and North American market entry are encouraging developments. However, the uncertain timeline for Samsung's fab-expansion restart and the 2027+ horizon for new-segment mass production limit near-term earnings improvement prospects. The December 2025 CB issuance provided a liquidity buffer, but sustained losses keep dilution risk on the table. The most disciplined approach for investors is to use Samsung's stocker order resumption, quarterly revenue recovery momentum, and order-backlog trends as the primary indicators of a genuine earnings turnaround, rather than relying on event-driven sentiment catalysts."
+   "ko": "제닉스로보틱스는 반도체·디스플레이 물류자동화라는 기존 본업이 고객사 투자 지연으로 크게 위축되며 2025년 적자전환을 겪었으나, 2026년 들어 분기 매출이 완만히 회복되고 순손실 규모가 좁혀지는 흐름을 보이고 있다. 동시에 부산항 PoC, 포스코와의 대형 AGV 개발, 서진시스템과의 베트남 로봇 파운드리 MOU, ESS AMR 공급계약 등 신사업 파이프라인이 다각적으로 확대되고 있다. 다만 이들 신사업의 상당 부분이 아직 PoC·MOU 단계에 머물러 있어 실제 매출 기여까지는 시간이 필요하며, 본업 회복 속도 역시 반도체·디스플레이 고객사의 투자 재개 시점에 달려 있다. 재무적으로는 2025년 순손실로 자기자본이 줄고 부채비율이 다시 높아졌으나, 영업활동현금흐름은 양(+)을 유지하고 있다. 2026년 6월 로보틱스 테마 전반에 대한 시장 관심이 확대된 국면에서 회사도 함께 주목을 받았지만, 이는 개별 기업 펀더멘털과는 별개로 움직일 수 있는 요인이라는 점을 함께 고려할 필요가 있다. 종합적으로 본업 회복과 신사업의 본계약 전환 속도가 향후 실적 궤적을 가늠하는 핵심 변수가 될 것으로 보인다.",
+   "en": "Zenix Robotics saw its core semiconductor and display logistics automation business contract sharply amid delayed customer investment, tipping the company into a loss in 2025, though quarterly revenue has shown a mild recovery and net losses have narrowed since early 2026. At the same time, the new-business pipeline is expanding on multiple fronts, including the Busan Port PoC, large AGV development with POSCO, the Vietnam robot-foundry MOU with Seojin System, and the ESS AMR supply contract. However, much of this new business remains at the PoC or MOU stage, meaning time is needed before it meaningfully contributes to revenue, and the pace of core-business recovery still hinges on when semiconductor and display customers resume investment. Financially, owners' equity declined and the debt ratio rose again due to the 2025 net loss, though operating cash flow has remained positive. The company also drew attention alongside a broader market focus on the robotics theme in June 2026, though this is a factor that can move independently of individual company fundamentals. Overall, the pace of core-business recovery and the conversion of new businesses into definitive contracts appear to be the key variables shaping the company's earnings trajectory going forward."
   }
  },
  "sources": [
-  "https://www.butler.works/ko/companies/01293485",
-  "https://m.thinkpool.com/compDiscuss/cont/1021870",
-  "https://comp.fnguide.com/SVO2/ASP/SVD_Main.asp?gicode=A381620&MenuYn=Y",
-  "https://comp.fnguide.com/SVO2/asp/SVD_Invest.asp?pGB=1&gicode=A381620&cID=&MenuYn=Y&ReportGB=B&NewMenuID=105&stkGb=701",
-  "https://m.irgo.co.kr/IR-COMP/381620/",
-  "https://kind.krx.co.kr/common/disclsviewer.do?method=search&acptno=20260313000612&rcpno=20260313000454&orgid=F&tran=Y&langTpCd=0",
   "https://m.invest.zum.com/stock/381620/",
-  "https://m.thinkpool.com/item/381620",
-  "https://m.finance.daum.net/quotes/A381620/news/disclosure/20251128091826",
-  "https://valueline.co.kr/finance/summary/381620",
-  "https://littlebproject.com/stock/381620/421/65241",
+  "https://m.irgo.co.kr/IR-COMP/381620/",
+  "https://www.valueline.co.kr/finance/mri/381620",
+  "https://m.thinkpool.com/compDiscuss/cont/1021870",
   "https://thevc.kr/zenixrobotics",
+  "https://stockhandbook.blog/2025/09/17/%EC%A0%9C%EB%8B%89%EC%8A%A4%EB%A1%9C%EB%B3%B4%ED%8B%B1%EC%8A%A4/",
+  "https://m.thinkpool.com/item/381620",
+  "https://comp.fnguide.com/SVO2/ASP/SVD_Main.asp?gicode=A381620",
+  "https://m.thinkpool.com/stockDiscuss/381620/cont/11826195",
+  "https://www.butler.works/ko/companies/01293485",
+  "https://dartpoint.ai/01293485",
+  "https://www.saramin.co.kr/zf_user/company-info/view/csn/THRkcXlPamluYzNOVHJqL0JEZFJjZz09/company_nm/%EC%A0%9C%EB%8B%89%EC%8A%A4%EB%A1%9C%EB%B3%B4%ED%8B%B1%EC%8A%A4(%EC%A3%BC)",
+  "https://www.judal.co.kr/?view=stockAI&shareToken=Q9U7fQAmHa7fhYfK",
+  "https://littlebproject.com/stock/381620/421/65241",
+  "https://kr.investing.com/equities",
   "https://www.judal.co.kr/?view=stockAI&shareToken=rTYFbbSaxbQ8jl56",
   "https://www.nicebizinfo.com/ep/EP0100M002GE.nice?kiscode=G92652",
-  "https://www.judal.co.kr/?view=stockAI&shareToken=Q9U7fQAmHa7fhYfK",
-  "https://news.dealsitetv.com/articles/162719",
-  "https://v.daum.net/v/20260507141703644",
-  "https://www.etoday.co.kr/news/view/2582371"
+  "https://www.mt.co.kr/stock/2026/06/02/2026060209473342940"
  ],
  "v": 2,
- "model": "claude-sonnet-4-6",
+ "model": "claude-sonnet-5",
  "ticker": "381620",
  "name": "제닉스로보틱스",
  "name_en": "ZENIX ROBOTICS CO.,LTD",
@@ -234,11 +224,11 @@
   "로봇"
  ],
  "market": "코스닥",
- "reportDate": "2026-06-19",
- "reportTs": "2026-06-19 01:03",
- "dataDate": "20260821",
+ "reportDate": "2026-09-05",
+ "reportTs": "2026-09-05 08:21",
+ "dataDate": "20260904",
  "quant": {
-  "asOf": "2026-08-23",
+  "asOf": "2026-09-04",
   "fs_basis": "연결(CFS) · DART 공시 확정치 · 지배주주 기준 순이익",
   "annual": [
    {
@@ -272,6 +262,23 @@
     "opm": 6.8,
     "roe": 10.6,
     "debt_ratio": 40.6
+   },
+   {
+    "year": 2023,
+    "rev": 61300434302,
+    "op": 3188518338,
+    "np": 3131959943,
+    "np_owner": 3131959943,
+    "equity": 20184687613,
+    "equity_owner": 20184687613,
+    "equity_nci": null,
+    "liab": 38810955753,
+    "cfo": 756018864,
+    "eps_basic": 990,
+    "src": "전기 비교치",
+    "opm": 5.2,
+    "roe": 15.5,
+    "debt_ratio": 192.3
    }
   ],
   "quarterly": [
@@ -307,25 +314,29 @@
    }
   ],
   "valuation": {
-   "price": 6060,
-   "mcap": 0.0795,
+   "price": 5980,
+   "mcap": 0.0784,
    "shares": 13117920,
    "total_shares": 13117920,
    "wavg_shares": 13055507,
    "per": null,
    "eps": -561,
-   "pbr": 1.6343,
+   "pbr": 1.6127,
    "bps": 3708,
    "roe_ttm": -15.1,
    "ttm_window": "2025Q1~2025Q4",
    "ttm_np_owner": -7324139547,
    "ccy": "KRW",
    "bps_src": "자체",
-   "pbr_krx": 1.62,
+   "eps_src": "공시",
+   "pbr_krx": 1.6,
    "bps_krx": 3730.0,
    "basis": "PER·EPS·PBR·BPS 모두 자체 산출(네이버·토스와 동일 방식) · 배당은 DART 공시 주당현금배당금(보완:KRX) ÷ 현재가",
    "dps": 0.0,
-   "div": 0.0
+   "div": 0.0,
+   "hidden": {
+    "per": "loss"
+   }
   }
  }
 }
