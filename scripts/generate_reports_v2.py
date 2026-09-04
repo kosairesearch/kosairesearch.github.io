@@ -1529,50 +1529,203 @@ def _sanitize(obj):
     return obj
 
 
-def _bi(o):
-    """ko·en 이 둘 다 비어 있지 않은 문자열인가."""
-    return (isinstance(o, dict) and isinstance(o.get("ko"), str) and o["ko"].strip() != ""
-            and isinstance(o.get("en"), str) and o["en"].strip() != "")
+def _bi(o, en=True):
+    """{ko, en} 자리가 채워져 있는가. en=False 면 한국어만 본다."""
+    if not (isinstance(o, dict) and isinstance(o.get("ko"), str) and o["ko"].strip() != ""):
+        return False
+    return not en or (isinstance(o.get("en"), str) and o["en"].strip() != "")
 
 
-def valid_v2(rep):
+# 스키마가 {ko, en} 을 요구하는 자리. 구조를 고칠 때 여기만 본다.
+_BI_ITEM_FIELDS = {"bull": ("title", "body"), "bear": ("title", "body"),
+                   "risks": ("cat", "body"), "checkpoints": ("when", "what")}
+_BI_TOP = ("title", "lead", "business", "earnings", "industry", "outlook", "valuation_comment")
+# 저장 뒤에 붙는 메타 키. 곁키를 걷을 때 건드리면 안 된다.
+_KEEP_EN = ("name_en",)
+
+
+def _items(rep, k):
+    """rep[k] 가 리스트일 때만 그 리스트를, 아니면 빈 리스트를 돌려준다."""
+    v = rep.get(k)
+    return v if isinstance(v, list) else []
+
+
+def _bilingual_slots(rep):
+    """{ko, en} 이 들어가야 하는 자리를 (담은 것, 키) 로 모두 돌려준다.
+
+    담은 것은 dict 이거나 list(keypoints) 다. 값의 모양은 보지 않는다 —
+    문자열만 온 자리도 고쳐야 하므로 부르는 쪽에서 걸러 쓴다."""
+    out = [(rep, k) for k in _BI_TOP if k in rep]
+    kp = rep.get("keypoints")
+    if isinstance(kp, list):
+        out += [(kp, i) for i in range(len(kp))]
+    for k, fields in _BI_ITEM_FIELDS.items():
+        for x in _items(rep, k):
+            if isinstance(x, dict):
+                out += [(x, f) for f in fields if f in x]
+    v = rep.get("verdict")
+    if isinstance(v, dict) and "body" in v:
+        out.append((v, "body"))
+    return out
+
+
+def _set_en(c, k, val):
+    """(담은 것, 키) 자리의 영문을 val 로 채운다. 채웠으면 True.
+
+    이미 영문이 있으면 건드리지 않는다 — 곁키보다 제자리 값이 우선이다."""
+    if not isinstance(val, str) or not val.strip():
+        return False
+    cur = c[k] if (isinstance(c, dict) and k in c) or (isinstance(c, list) and k < len(c)) else None
+    if isinstance(cur, str) and cur.strip():        # 한국어만 문자열로 온 자리
+        c[k] = {"ko": cur, "en": val.strip()}
+        return True
+    if isinstance(cur, dict) and isinstance(cur.get("ko"), str) and cur["ko"].strip():
+        if not (cur.get("en") or "").strip():
+            cur["en"] = val.strip()
+            return True
+    return False
+
+
+def _wrap_ko(rep):
+    """{ko, en} 자리에 문자열만 온 것을 {"ko": 그 문자열, "en": ""} 로 감싼다.
+
+    모델이 가끔 bull 항목을 {"title": "한국어", "body": "한국어"} 로만 쓴다.
+    감싸 두면 영문 채우기가 그 자리를 찾아낸다."""
+    n = 0
+    for c, k in _bilingual_slots(rep):
+        if isinstance(c[k], str) and c[k].strip():
+            c[k] = {"ko": c[k].strip(), "en": ""}
+            n += 1
+    return n
+
+
+def _absorb_en_siblings(rep):
+    """모델이 영문을 딴 데 적어 둔 것을 제자리로 옮긴다. 옮긴 개수를 돌려준다.
+
+    회수분에서 두 가지를 봤다.
+      · 최상위 bull_en·risks_en — 한국어 목록과 길이가 같은 영문 목록
+      · 항목 안의 body_en_placeholder·body_en_note 같은 곁키
+    둘 다 화면에서는 읽히지 않아 영어 리포트가 빈칸이 된다."""
+    n = 0
+    # ① <섹션>_en — 한국어 목록과 길이가 같아야만 짝으로 인정한다.
+    for k, fields in _BI_ITEM_FIELDS.items():
+        side, items = rep.pop(f"{k}_en", None), _items(rep, k)
+        if not (isinstance(side, list) and len(side) == len(items) and items):
+            continue
+        for x, s in zip(items, side):
+            if not isinstance(x, dict) or not isinstance(s, dict):
+                continue
+            for f in fields:
+                n += _set_en(x, f, s.get(f))
+    side, kp = rep.pop("keypoints_en", None), _items(rep, "keypoints")
+    if isinstance(side, list) and len(side) == len(kp) and kp:
+        for i, s in enumerate(side):
+            n += _set_en(kp, i, s if isinstance(s, str) else (s or {}).get("en") if isinstance(s, dict) else None)
+    # ② 곁키 — 최상위와 항목 안 양쪽에 생긴다.
+    for x in [rep] + [y for k in _BI_ITEM_FIELDS for y in _items(rep, k) if isinstance(y, dict)] \
+            + ([rep["verdict"]] if isinstance(rep.get("verdict"), dict) else []):
+        for key in [j for j in list(x)
+                    if j.endswith(("_en_placeholder", "_en_note", "_en")) and j not in _KEEP_EN]:
+            n += _set_en(x, key.rsplit("_en", 1)[0], x.pop(key))
+    return n
+
+
+def _strip_unknown(rep):
+    """스키마에 없는 키를 걷어낸다 — 저장소에 쓰레기를 남기지 않는다."""
+    def keep(d, allowed):
+        if isinstance(d, dict):
+            for junk in [j for j in d if j not in allowed]:
+                d.pop(junk)
+    for k, fields in _BI_ITEM_FIELDS.items():
+        for x in _items(rep, k):
+            keep(x, fields)
+    keep(rep.get("verdict"), ("body",))
+    for c, k in _bilingual_slots(rep):
+        keep(c[k], ("ko", "en"))
+
+
+def normalize_shape(rep):
+    """검증 전에 공짜로 고칠 수 있는 구조 결함을 고친다. 고친 자리 수를 돌려준다.
+
+    회수한 100개 중 9개가 영문을 빠뜨리거나 곁키에 적어 두는 바람에 통째로
+    버려졌다 — 한 장에 0.6달러가 이미 나간 뒤였다. 돈도 글도 이미 있으니
+    옮겨 담을 수 있는 것은 옮겨 담고 나서 검증한다."""
+    n = _wrap_ko(rep)
+    n += _absorb_en_siblings(rep)
+    _strip_unknown(rep)
+    return n
+
+
+def fill_missing_en(cl, rep, model=None):
+    """en 이 빈 자리를 한국어에서 옮겨 채운다. 채운 개수를 돌려준다.
+
+    글을 다시 만들 것 없이 있는 한국어를 옮기면 된다. 값싼 모델로 그 자리만
+    채운다. 한국어가 온전한 리포트에만 부르는 것은 부르는 쪽 책임이다."""
+    nodes = [(c, k) for c, k in _bilingual_slots(rep)
+             if isinstance(c[k], dict) and isinstance(c[k].get("ko"), str) and c[k]["ko"].strip()
+             and not (c[k].get("en") or "").strip()]
+    if not nodes:
+        return 0
+    payload = {str(i): c[k]["ko"] for i, (c, k) in enumerate(nodes)}
+    resp = cl.messages.create(
+        model=model or os.getenv("REPORT_REPAIR_MODEL", "claude-sonnet-5"),
+        max_tokens=16000, thinking={"type": "adaptive"},
+        messages=[{"role": "user", "content":
+                   "아래 JSON 은 한국어 기업 리서치 리포트의 일부다. 각 값을 같은 뜻의 "
+                   "영어로 옮겨라.\n"
+                   "· 같은 키를 그대로 쓰고, 값만 영어로 바꾼 JSON 하나만 출력한다.\n"
+                   "· 회사·제품·기관 이름은 로마자 또는 영문 명칭으로 쓴다. 영어에 한글을 쓰지 않는다.\n"
+                   "· 숫자·단위·사실을 바꾸지 않는다. 문장 수도 원문과 맞춘다.\n"
+                   "· ===JSON_START=== 와 ===JSON_END=== 사이에만 쓴다.\n\n"
+                   + json.dumps(payload, ensure_ascii=False)}])
+    text = "".join(getattr(b, "text", "") for b in resp.content if getattr(b, "type", "") == "text")
+    got = check_report_text._parse_json(text)
+    if not isinstance(got, dict):
+        return 0
+    n = 0
+    for i, (c, k) in enumerate(nodes):
+        v = got.get(str(i))
+        if isinstance(v, str) and v.strip():
+            c[k]["en"] = v.strip()
+            n += 1
+    return n
+
+
+def valid_v2(rep, en=True, quiet=False):
+    """스키마를 지키는가. en=False 면 영문을 뺀 나머지만 본다(되살릴 수 있는지 판단용)."""
+    def bad(msg):
+        if not quiet:
+            log(f"    (검증 실패: {msg})")
+        return False
     try:
         need = ("title", "lead", "keypoints", "business", "earnings", "industry",
                 "outlook", "valuation_comment", "bull", "bear", "risks",
                 "checkpoints", "verdict")
         missing = [k for k in need if k not in rep]
         if missing:
-            log(f"    (검증 실패: 누락 키 {missing})")
-            return False
+            return bad(f"누락 키 {missing}")
         # 모양도 본다. 모델이 가끔 bull 을 한국어만 쓰고 bull_en 을 따로 만들거나,
         # 항목의 en 을 빠뜨린다(012450). 그러면 영어 화면에 빈칸·undefined 가 뜬다.
         for k in ("title", "lead", "business", "earnings", "industry", "outlook", "valuation_comment"):
-            if not _bi(rep[k]):
-                log(f"    (검증 실패: {k} 에 ko/en 이 없다)")
-                return False
-        if not all(_bi(x) for x in rep["keypoints"]):
-            log("    (검증 실패: keypoints 항목에 ko/en 이 없다)")
-            return False
+            if not _bi(rep[k], en):
+                return bad(f"{k} 에 ko/en 이 없다")
+        if not all(_bi(x, en) for x in rep["keypoints"]):
+            return bad("keypoints 항목에 ko/en 이 없다")
         for k, fields in (("bull", ("title", "body")), ("bear", ("title", "body")),
                           ("risks", ("cat", "body")), ("checkpoints", ("when", "what"))):
             for x in rep[k]:
-                if not isinstance(x, dict) or not all(_bi(x.get(f)) for f in fields):
-                    log(f"    (검증 실패: {k} 항목 구조 {list(x) if isinstance(x, dict) else type(x).__name__})")
-                    return False
-        if not _bi((rep.get("verdict") or {}).get("body")):
-            log("    (검증 실패: verdict.body 에 ko/en 이 없다)")
-            return False
+                if not isinstance(x, dict) or not all(_bi(x.get(f), en) for f in fields):
+                    return bad(f"{k} 항목 구조 {list(x) if isinstance(x, dict) else type(x).__name__}")
+        if not _bi((rep.get("verdict") or {}).get("body"), en):
+            return bad("verdict.body 에 ko/en 이 없다")
         for k in ("business", "earnings", "industry", "outlook"):
-            if len(rep[k]["ko"]) < 150 or len(rep[k]["en"]) < 150:
-                log(f"    (검증 실패: {k} 분량 부족 ko={len(rep[k]['ko'])} en={len(rep[k]['en'])})")
-                return False
+            if len(rep[k]["ko"]) < 150 or (en and len(rep[k]["en"]) < 150):
+                return bad(f"{k} 분량 부족 ko={len(rep[k]['ko'])} en={len(rep[k].get('en') or '')}")
         for k, n in (("bull", 3), ("bear", 3), ("risks", 3), ("checkpoints", 3)):
             if len(rep[k]) < n:
-                log(f"    (검증 실패: {k} {len(rep[k])}<{n})")
-                return False
+                return bad(f"{k} {len(rep[k])}<{n}")
         if len(rep["verdict"]["body"]["ko"]) <= 80:
-            log(f"    (검증 실패: verdict 분량 부족)")
-            return False
+            return bad("verdict 분량 부족")
         return True
     except Exception as e:
         log(f"    (검증 예외: {type(e).__name__}: {e})")
@@ -2201,11 +2354,25 @@ def collect(cl, as_of, state):
             text = g.extract_text(result.result.message)
             rep = g.parse_report(text)
             _sanitize(rep)
-            if not valid_v2(rep):
-                fail += 1
-                n = S.bump_fail(tk)
-                log(f"  · ⚠️ {tk} 스키마 불완전 — 건너뜀 ({n}번째 실패)")
-                continue
+            # 곁키에 적어 둔 영문을 제자리로 옮기고 쓰레기 키를 걷어낸 뒤에 검증한다.
+            # 돈이 이미 나간 글을 구조 하나 때문에 버리지 않는다. 여기까지는 공짜다.
+            moved = normalize_shape(rep)
+            if not valid_v2(rep, quiet=True):
+                # 한국어가 온전하면 남은 건 영문뿐이다 — 값싼 모델로 그 자리만 옮긴다.
+                # 통째로 잘린 응답(섹션이 없는 것)은 살릴 수 없으니 그대로 버리고
+                # 다음 run 이 다시 만든다. 그런 글에 돈을 더 쓰지 않는다.
+                filled = 0
+                if valid_v2(rep, en=False, quiet=True):
+                    try:
+                        filled = fill_missing_en(cl, rep)
+                    except Exception as e:
+                        log(f"  · ({tk} 영문 채우기 실패: {type(e).__name__}: {e})")
+                if not valid_v2(rep):          # 실패 사유는 여기서 로그에 남는다
+                    fail += 1
+                    n = S.bump_fail(tk)
+                    log(f"  · ⚠️ {tk} 스키마 불완전 — 건너뜀 ({n}번째 실패)")
+                    continue
+                log(f"  · 🈯 {tk} 영문 {moved + filled}곳을 채워 되살렸다")
             srcs = collect_sources_v2(result.result.message)
             if srcs:
                 rep["sources"] = srcs[:18]
